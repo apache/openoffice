@@ -45,7 +45,7 @@ msgstr ""
 
 #: source/all/crashrep.ulf#%WELCOME_BODY2%
 msgid  "It's easy - just send the report without any further effort on your part by clicking 'Send' in the next dialog, or you can briefly describe how the error occurred and then click 'Send'. If you want to see the report, click the 'Show Report' button. No data will be sent if you click 'Do Not Send'.\n\n"
-msgstr ""
+msgstr "हे काम सोपे - तुमी आनिक काय न करता मुखावेल्या संदेशान  'धाडात' क्लिक करून अहवाल धाडात, वा त्रुटी कशी जाली हाचे थोडक्यांत वर्णन करून मागीर 'धाडात' क्लिक करू येता. जर  तुमकां अहवाल पळोवपाचो आसा, जाल्यार 'अहवाल दाखयात' कळ क्लिक करात. तुमीं जर 'धाडू नाकात' क्लिक केले जाल्यार म्हायती धाडली वचची ना.\n\n"
 
 #: source/all/crashrep.ulf#%WELCOME_BODY3%
 msgid  "Customer Privacy\nThe information gathered is limited to data concerning the state of %PRODUCTNAME% %PRODUCTVERSION% when the error occurred. Other information about passwords or document contents is not collected.\n\nThe information will only be used to improve the quality of %PRODUCTNAME% and will not be shared with third parties.\nFor more information on Apache OpenOffice's privacy policy, visit\n"
@@ -81,7 +81,7 @@ msgstr ""
 
 #: source/all/crashrep.ulf#%ENTER_TITLE%
 msgid  "Which type of document (e.g. presentation) were you using when the error occurred?"
-msgstr ""
+msgstr "त्रुटी जाली तेन्ना तुमी कसल्या तरेचो दस्तावेज (देखीक सादरीकरण) वापरताले?"
 
 #: source/all/crashrep.ulf#%ALLOW_CONTACT%
 msgid  "~I allow Apache OpenOffice to contact me regarding this report."
@@ -121,23 +121,23 @@ msgstr "हातूंत अहवाल जतनाय करात"
 
 #: source/all/crashrep.ulf#%ERROR_MSG_SIMPLE_MAPI%
 msgid  "The error report could not be sent because the default e-mail program does not support MAPI.\n Please use a MAPI-compatible e-mail program."
-msgstr ""
+msgstr "त्रुटी अहवाल धाडपाक शकना कारण मुळाव्या ईमेल कार्यक्रमांत MAPI क फांटबळ ना.\nउपकार करून MAPI-क योग्य ईमेल कार्यक्रम वापरात."
 
 #: source/all/crashrep.ulf#%ERROR_MSG_DISK_FULL%
 msgid  "The error report could not be temporarily saved and could therefore not be sent."
-msgstr ""
+msgstr "त्रुटी अहवालाची तात्पुरती  जतनाय करपाक येना आनिक ताकालागून धाडपाक येना."
 
 #: source/all/crashrep.ulf#%ERROR_MSG_SENDMAIL%
 msgid  "The error report could not be sent because 'sendmail' could not be started.\nPlease check the 'sendmail' settings."
-msgstr ""
+msgstr "त्रुटी अहवाल धाडपाक शकना कारण 'मेल धाडात' सुरू जायना.\nउपकार करून 'मेल धाडात' स्थापितां तपासात."
 
 #: source/all/crashrep.ulf#%ERROR_MSG_PROXY%
 msgid  "The error report could not be sent. Please check the proxy settings under 'Options' in the Error Report Tool."
-msgstr ""
+msgstr "त्रुटी अहवाल धाडपाक शकना. उपकार करून त्रुटी अहवाल सादनातल्या 'पर्याय' खाला आशिल्ली प्रॉक्सी स्थापितां तपासात."
 
 #: source/all/crashrep.ulf#%ERROR_MSG_NOCONNECT%
 msgid  "The error report could not be sent because there is no Internet connection. Please check your Internet settings."
-msgstr ""
+msgstr "त्रुटी अहवाल धाडपाक शकना कारण इंटरनेट जोडणी उपलब्द ना. उपकार करून तुमची इंटरनेट स्थापितां तपासात."
 
 #: source/all/crashrep.ulf#%OPTIONS_BUTTON%
 msgid  "~Options..."
@@ -173,7 +173,7 @@ msgstr "पोर्ट"
 
 #: source/all/crashrep.ulf#%PROXY_SETTINGS_DESCRIPTION%
 msgid  "The %PRODUCTNAME% Error Report tool needs to be connected to the Internet to be able to send error reports.\n\nCompanies often use proxy servers in conjunction with a firewall to protect the network.\n\nIf this applies to your situation, you have to specify the address and port for the server."
-msgstr ""
+msgstr "%PRODUCTNAME%  त्रुटी अहवाल सादन त्रुटी अहवाल धाडपाखातीर इंटरनेटाक जोडिल्ले आसप गरजेचे.\n\nनेटवर्काक सांबाळपाखातीर कंपन्यो  खूपदां फायरवॉलच्या पालवान प्रॉक्सी सर्वर वापरतात.\n\nजर तुमच्या परिस्थितीक हे लागू आसा, जाल्यार सर्वराचो नामो आनिक पोर्ट तुमकां स्पश्ट करचो पडटलो."
 
 #: source/all/crashrep.ulf#%SENDING_REPORT_HEADER%
 msgid  "Sending Error Report"
@@ -205,4 +205,4 @@ msgstr " %PRODUCTNAME% प्रक्रिया ID (PID) त्रुटी �
 
 #: source/all/crashrep.ulf#%MSG_PARAM_HELP_DESCRIPTION%
 msgid  "Shows this help text.\nDetailed information can be found in the Setup Guide."
-msgstr ""
+msgstr "हो मदतीविशीचो मजकूर दाखयता.\nसविस्तर म्हायती स्थापित उबारणी मार्गदर्शकांत मेळटली."

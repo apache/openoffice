@@ -36,7 +36,6 @@ msgid  "%PRODUCTNAME% %PRODUCTVERSION% Error Report"
 msgstr "%PRODUCTNAME% %PRODUCTVERSION% jejavy rehegua marandu."
 
 #: source/all/crashrep.ulf#%WELCOME_HEADER%
-#, fuzzy
 msgid  "Welcome to the %PRODUCTNAME% %PRODUCTVERSION% Error Report"
 msgstr "Tereĝuahẽ porã %PRODUCTNAME% %PRODUCTVERSION% jejavy rehegua marandúpe."
 
@@ -45,8 +44,9 @@ msgid  "This error report tool gathers information about how %PRODUCTNAME% is wo
 msgstr ""
 
 #: source/all/crashrep.ulf#%WELCOME_BODY2%
+#, fuzzy
 msgid  "It's easy - just send the report without any further effort on your part by clicking 'Send' in the next dialog, or you can briefly describe how the error occurred and then click 'Send'. If you want to see the report, click the 'Show Report' button. No data will be sent if you click 'Do Not Send'.\n\n"
-msgstr ""
+msgstr "Marandu ñemondo ndahasyiete, ejopýnte ambue ñomongetapýpe votõ 'Mondo'. Ehecha haĝua ejopy votõ 'Ehechauka marandu'. Noñemondomo'ãi mba'eveichagua marandu rejopýramo 'Ani remondo'.\n\n"
 
 #: source/all/crashrep.ulf#%WELCOME_BODY3%
 msgid  "Customer Privacy\nThe information gathered is limited to data concerning the state of %PRODUCTNAME% %PRODUCTVERSION% when the error occurred. Other information about passwords or document contents is not collected.\n\nThe information will only be used to improve the quality of %PRODUCTNAME% and will not be shared with third parties.\nFor more information on Apache OpenOffice's privacy policy, visit\n"
@@ -86,8 +86,9 @@ msgid  "The %PRODUCTNAME% %PRODUCTVERSION% Error Report has gathered information
 msgstr ""
 
 #: source/all/crashrep.ulf#%ENTER_TITLE%
+#, fuzzy
 msgid  "Which type of document (e.g. presentation) were you using when the error occurred?"
-msgstr ""
+msgstr "Mba'eichagua kuatiápa reipurureínakuri oikórõguare pe jejavy (haipy, techaukaha, ambue)."
 
 #: source/all/crashrep.ulf#%ALLOW_CONTACT%
 msgid  "~I allow Apache OpenOffice to contact me regarding this report."
@@ -99,8 +100,9 @@ msgid  "Please enter your e-mail address."
 msgstr "Emoĩnge nde pareha. "
 
 #: source/all/crashrep.ulf#%ENTER_DESCRIPTION%
+#, fuzzy
 msgid  "~How were you using %PRODUCTNAME% when the error occurred ?"
-msgstr ""
+msgstr "~Emombe'umi mba'e tembiapópa rejaporeínakuri %PRODUCTNAME%-pe oikórõ jejavy."
 
 #: source/all/crashrep.ulf#%BACK_BUTTON%
 #, fuzzy
@@ -133,24 +135,29 @@ msgid  "Save Report to"
 msgstr "~Eñongatu ko marandu            ramo."
 
 #: source/all/crashrep.ulf#%ERROR_MSG_SIMPLE_MAPI%
+#, fuzzy
 msgid  "The error report could not be sent because the default e-mail program does not support MAPI.\n Please use a MAPI-compatible e-mail program."
-msgstr ""
+msgstr "Ndaikatúi ojerahauka marandu rehegua programa pe ñe'ẽrahauka rehegua programa ypy ndojokupytýi rupi MAPI ndive.\nTekotevẽ reipuru ñe'ẽrahauka rehegua programa ojokupytýva MAPI ndive."
 
 #: source/all/crashrep.ulf#%ERROR_MSG_DISK_FULL%
+#, fuzzy
 msgid  "The error report could not be temporarily saved and could therefore not be sent."
-msgstr ""
+msgstr "Ndaikatúikuri oñeñongatu sapy'a marandu jejavy rehegua ha upévare ndaikatúi ojerahauka."
 
 #: source/all/crashrep.ulf#%ERROR_MSG_SENDMAIL%
+#, fuzzy
 msgid  "The error report could not be sent because 'sendmail' could not be started.\nPlease check the 'sendmail' settings."
-msgstr ""
+msgstr "Ndaikatúikuri ojerahauka ko marandu jejavy rehegua  'sendmail' ndoikói rupi.\nEhechami mba'éichapa oĩ 'sendmail' reko."
 
 #: source/all/crashrep.ulf#%ERROR_MSG_PROXY%
+#, fuzzy
 msgid  "The error report could not be sent. Please check the proxy settings under 'Options' in the Error Report Tool."
-msgstr ""
+msgstr "Ndaikatúikuri ojerahauka ko marandu jejavy rehegua. Ehechamína oĩ porãpa proxy ñemboheko 'Poravopyã'-me, marandu jejevy rehegua programa-pe."
 
 #: source/all/crashrep.ulf#%ERROR_MSG_NOCONNECT%
+#, fuzzy
 msgid  "The error report could not be sent because there is no Internet connection. Please check your Internet settings."
-msgstr ""
+msgstr "Ndaikatúikuri ojerahauka ko marandu jejavy rehegua ndaipóri rupi Internet. Ehechamína oĩ porãpa Internet ñemboheko."
 
 #: source/all/crashrep.ulf#%OPTIONS_BUTTON%
 #, fuzzy
@@ -193,8 +200,9 @@ msgid  "~Port"
 msgstr "~Marandu pytu'uha"
 
 #: source/all/crashrep.ulf#%PROXY_SETTINGS_DESCRIPTION%
+#, fuzzy
 msgid  "The %PRODUCTNAME% Error Report tool needs to be connected to the Internet to be able to send error reports.\n\nCompanies often use proxy servers in conjunction with a firewall to protect the network.\n\nIf this applies to your situation, you have to specify the address and port for the server."
-msgstr ""
+msgstr "%PRODUCTNAME-pegua marandu jejavy rehegua programa ojoajuva'erã Internet rehe ojerahauka haĝua marandu.\n\nheta empresa py'ỹi oipuru servidores de proxy tata mbogueha ykére oñangareko haĝua ñanduti rehe.\n\nPéva nde kásoramo tekotevẽ ere servidor rape ha i-puerto."
 
 #: source/all/crashrep.ulf#%SENDING_REPORT_HEADER%
 #, fuzzy
@@ -231,5 +239,6 @@ msgid  "Assigns the %PRODUCTNAME% process ID (PID) to the Error Report Tool"
 msgstr "Emoĩ %PRODUCTNAME% PID marandu jejavy rehegua programa-pe."
 
 #: source/all/crashrep.ulf#%MSG_PARAM_HELP_DESCRIPTION%
+#, fuzzy
 msgid  "Shows this help text.\nDetailed information can be found in the Setup Guide."
-msgstr ""
+msgstr "Ehechauka ko Ñepytyvõ haipy.\nRejuhuvéta marandu hakã'íva instalación arandukápe. "

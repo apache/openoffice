@@ -817,7 +817,7 @@ msgstr "Құжатты толықтай сақтау мүмкiн емес"
 
 #: source/ui/app/error.src#RID_SW_ERRHDL.WARN_CODE ( ERRCODE_CLASS_WRITE , WARN_SWG_HTML_NO_MACROS).String.Text
 msgid  "This HTML document contains %PRODUCTNAME Basic macros.\nThey were not saved with the current export settings."
-msgstr ""
+msgstr "Бұл HTML құжатынның құрамында %PRODUCTNAME Basic макростары бар.\nКөрсетiлген құжаттарды экспорттау баптауларынан олар сақталмаған.\n"
 
 #: source/ui/app/error.src#RID_SW_ERRHDL.ERR_CODE ( ERRCODE_CLASS_WRITE , WARN_WRITE_ERROR_FILE ).String.Text
 msgid  "Error in writing sub-document $(ARG1)."
@@ -1076,8 +1076,8 @@ msgid  "Adapt Objects..."
 msgstr "Обьектiнi икемдеу..."
 
 #: source/ui/app/app.src#MSG_COMCORE_ASKSEARCH.QueryBox.Message
-msgid  "To proceed with this action, you must first turn off the "undo" function. Do you want to turn off the "undo" function?"
-msgstr ""
+msgid  "To proceed with this action, you must first turn off the \"undo\" function. Do you want to turn off the \"undo\" function?"
+msgstr "Бұл амалды болдырмау үшiн жады да өте үлкен орын керек. \nБолдырмау керек пе?"
 
 #: source/ui/app/app.src#STR_TABLE_DEFNAME.String.Text
 msgid  "Table"
@@ -1109,15 +1109,15 @@ msgstr "Бос парақ"
 
 #: source/ui/app/app.src#MSG_CLPBRD_CLEAR.QueryBox.Message
 msgid  "You have a large amount of data saved in the clipboard.\nShould the clipboard contents remain available for other applications?"
-msgstr ""
+msgstr "Сiз алмасу буферiнде өте үлкен көлемдi деректердi сақтадыңыз.\nСiз басқа қосымшалар үшiн алмасу буферiнiң құрамы рұқсат етiлуiн қалайсыз ба?"
 
 #: source/ui/app/app.src#MSG_SAVE_HTML_QUERY.QueryBox.Message
 msgid  "Conversion into HTML format \nmay cause information loss. \nDo you want to save the document?"
-msgstr ""
+msgstr "HTML пiшiнiне көшу ақпараттың \nжоғалуына келтiредi.\nБұл құжатты сақтау керек пе?\n"
 
 #: source/ui/app/app.src#MSG_SAVEAS_HTML_QUERY.QueryBox.Message
 msgid  "The source code can only be displayed if the document is saved in HTML format.\nWould you like to save the document as HTML?"
-msgstr ""
+msgstr "Бастапқы құпия кiлт құжатты HTML пiшiнiнде сақталған болса көрiнедi.\nҚұжатты HTML пiшiнiнде сақтау керек пе?"
 
 #: source/ui/app/app.src#STR_ABSTRACT_TITLE.String.Text
 msgid  "Abstract: "
@@ -1161,11 +1161,11 @@ msgstr ""
 
 #: source/ui/app/app.src#MSG_DISABLE_UNDO_QUESTION.WarningBox.Message
 msgid  "This action deletes the list of actions that can be undone. Previous changes made to the document are still valid, but cannot be undone. Do you want to continue formatting?"
-msgstr ""
+msgstr "Бұл амал арқылы болдырмауға мүмкiн амалдар тiзiмi жойылады.Осы уақытқа дейiн құжатта жасалған өзгерiстер сақталады, бiрақ оларды болдырмау мүмкiн емес. Пiшiндеудi әрi қарай жалғастырғыңыз келеме?"
 
 #: source/ui/app/app.src#MSG_PRINT_AS_MERGE.QueryBox.Message
 msgid  "Your document contains address database fields. Do you want to print a form letter?"
-msgstr ""
+msgstr "Сiздiң құжатыңыздың құрамында мекен-жайлар деректер негiзiнiң өрiсi бар. Орама түрiнде басу керек пе?"
 
 #: source/ui/app/app.src#DLG_MERGE_SOURCE_UNAVAILABLE.ST_MERGE_SOURCE_UNAVAILABLE.FixedText.Text
 msgid  "The data source \'%1\' was not found. Thus the connection to the data source could not be established.\n\nPlease check the connections settings."
@@ -1177,7 +1177,7 @@ msgstr ""
 
 #: source/ui/app/app.src#MSG_DATA_SOURCES_UNAVAILABLE.WarningBox.Message
 msgid  "No data source has been set up yet. You need a data source, such as a database, to supply data (for example, names and addresses) for the fields."
-msgstr ""
+msgstr "Деректер көзi тапсырылған жоқ. Деректер көзi(мысалға, деректер негiзi) өрiстердi деректтермен толтыру үшiн қажет(мысалға, аттармен және мекен-жайлармен)."
 
 #: source/ui/app/app.src#RID_MODULE_TOOLBOX.String.Text
 msgid  "Function Bar (viewing mode)"
@@ -1193,7 +1193,7 @@ msgstr ""
 
 #: source/ui/app/app.src#MSG_DISABLE_READLINE_QUESTION.WarningBox.Message
 msgid  "In the current document, changes are being recorded but not shown as such. In large documents, delays can occur when the document is edited. Do you want to show the changes to avoid delays?"
-msgstr ""
+msgstr "Бұл құжатта өзгерiстер жазылған, бiрақ олар өзгерiс ретiнде көрсетiлмейдi. Үлкен құжаттарда құжатты түзетуде мүдiрiс болуы мүмкiн. Мүдiрiс болмау үшiн өзгерiстердi көрсеткiңiз келеме?"
 
 #: source/ui/app/mn.src#MN_TXT.FN_FORMAT_PAGE_DLG.MenuItem.Text
 msgid  "Pa~ge..."
@@ -2041,7 +2041,7 @@ msgstr ""
 
 #: source/ui/chrdlg/chrdlg.src#MSG_ILLEGAL_PAGENUM.InfoBox.Message
 msgid  "Page numbers cannot be applied to the current page.  Even numbers can be used on left pages, odd numbers on right pages."
-msgstr ""
+msgstr "Берiлген парақта нөмiр қою мүмкiн емес. Сол жақтағы парақтарда тек қана жұп сандар қойыла алады,оң жақтағыларда тек қана дақ сандар"
 
 #: source/ui/chrdlg/swbreak.src#DLG_BREAK.ModalDialog.Text
 msgid  "Insert Break"
@@ -2797,7 +2797,7 @@ msgstr "<Қолданушы баптаулары>"
 
 #: source/ui/config/optcomp.src#TP_OPTCOMPATIBILITY_PAGE.STR_QRYBOX_USEASDEFAULT.String.Text
 msgid  "Do you want to change the compatibility options of the default template?\nThis will affect all new documents based on the default template."
-msgstr ""
+msgstr "Сiз үнсiз келiсiм бойынша қалып үшiн келiсiм параметрлердi өзгерткiңiз келеме?\nБұл үнсiз келiсiм бойынша қалпының негiзiнде құрылған барлық құжаттарға әсерiн тигiзедi"
 
 #: source/ui/config/optcomp.src#TP_OPTCOMPATIBILITY_PAGE.STR_PRINTER_METRICS.String.Text
 msgid  "Use printer metrics for document formatting"
@@ -2809,11 +2809,11 @@ msgstr "Қайырмалармен кестелер арасында шегiнi�
 
 #: source/ui/config/optcomp.src#TP_OPTCOMPATIBILITY_PAGE.STR_MERGE_PARA_DIST_PAGESTART.String.Text
 msgid  "Add paragraph and table spacing at tops of pages (in current document)"
-msgstr ""
+msgstr "Қайырмалармен кестелер арасында шегiнiс  жоғарыдан қосу ( ағымдағы құжатта) "
 
 #: source/ui/config/optcomp.src#TP_OPTCOMPATIBILITY_PAGE.STR_TAB_ALIGNMENT.String.Text
 msgid  "Use %WRITERCOMPATIBILITYVERSIONOOO11 tabstop formatting"
-msgstr ""
+msgstr " %WRITERCOMPATIBILITYVERSIONOOO11келiсетiн кестелеудi пiшiндеу үшiн қолдану"
 
 #: source/ui/config/optcomp.src#TP_OPTCOMPATIBILITY_PAGE.STR_EXTERNAL_LEADING.String.Text
 msgid  "Do not add leading (extra space) between lines of text"
@@ -2833,7 +2833,7 @@ msgstr "%WRITERCOMPATIBILITYVERSIONOOO11келiсетiн обьектiлер о�
 
 #: source/ui/config/optcomp.src#TP_OPTCOMPATIBILITY_PAGE.STR_USE_OURTEXTWRAPPING.String.Text
 msgid  "Use %WRITERCOMPATIBILITYVERSIONOOO11 text wrapping around objects"
-msgstr ""
+msgstr "%WRITERCOMPATIBILITYVERSIONOOO11келiсетiн обьект айналасындағы мәтiн аймалауын қолдану"
 
 #: source/ui/config/optcomp.src#TP_OPTCOMPATIBILITY_PAGE.STR_CONSIDER_WRAPPINGSTYLE.String.Text
 msgid  "Consider wrapping style when positioning objects"
@@ -2897,7 +2897,7 @@ msgstr ""
 
 #: source/ui/config/optload.src#TP_OPTCAPTION_PAGE.FT_OBJECTS.FixedText.Text
 msgid  "Add captions automatically\nwhen inserting:"
-msgstr ""
+msgstr "Қою кезiнде тақырыптарды автоматты\n түрде қосу:"
 
 #: source/ui/config/optload.src#TP_OPTCAPTION_PAGE.FT_ORDER.FixedText.Text
 msgid  "Caption order"
@@ -3129,7 +3129,7 @@ msgstr "Ойдағыдай емес"
 
 #: source/ui/config/mailconfigpage.src#DLG_MM_TESTACCOUNTSETTINGS.ST_ERROR_SERVER.String.Text
 msgid  "%PRODUCTNAME could not connect to the outgoing mail server. Check your system's settings and the settings in %PRODUCTNAME. Check the server name, the port and the secure connections settings"
-msgstr ""
+msgstr " %PRODUCTNAME шығу мәлiметтер серверiне қосыла алмайды. Жүйелiк баптау және  %PRODUCTNAME баптауларын тексерiңiз. Сервердiң атын және қауiпсiз қосылу баптауларын тексерiңiз"
 
 #: source/ui/config/mailconfigpage.src#DLG_MM_SERVERAUTHENTICATION.ModalDialog.Text
 msgid  "Server Authentication"
@@ -3157,7 +3157,7 @@ msgstr "~Құпия кiлт"
 
 #: source/ui/config/mailconfigpage.src#DLG_MM_SERVERAUTHENTICATION.RB_SMPTAFTERPOP.RadioButton.Text
 msgid  "The outgoing mail server uses the same authentication as the ~incoming mail server. Enter the settings of the incoming mail server."
-msgstr ""
+msgstr "Шығу поштасының серверi кiру поштасының серверiнiң баптауларын қолданады. Кiру поштасының баптауларын енгiзiңiз."
 
 #: source/ui/config/mailconfigpage.src#DLG_MM_SERVERAUTHENTICATION.FT_INCOMINGSERVER.FixedText.Text
 msgid  "Incoming mail server:"
@@ -3197,7 +3197,7 @@ msgstr "Мекен-жай тiзiмiн таңдаңыз"
 
 #: source/ui/dbui/addresslistdialog.src#DLG_MM_ADDRESSLISTDIALOG.FI_DESCRIPTION.FixedText.Text
 msgid  "Select an address list. Click '%1' to select recipients from a different list. If you do not have an address list you can create one by clicking '%2'."
-msgstr ""
+msgstr "Мекен-жай тiзiмiн таңдау. Әр түрлi тiзiмдерден алушыларды таңдау үшiн '%1' шертiңiз. Егерде сiзде мекен-жай тiзiмi жоқ болса сiз оны  '%2' шерту арқылы құра аласыз."
 
 #: source/ui/dbui/addresslistdialog.src#DLG_MM_ADDRESSLISTDIALOG.FT_LIST.FixedText.Text
 msgid  "Your recipients are currently selected from:"
@@ -3249,7 +3249,7 @@ msgstr ""
 
 #: source/ui/dbui/mmaddressblockpage.src#DLG_MM_ADDRESSBLOCK_PAGE.FI_ADDRESSLIST.FixedText.Text
 msgid  "Select the address list containing the address data you want to use. This data is needed to create the address block."
-msgstr ""
+msgstr "Сiз қолданғыңыз келетiн мекен-жай деректерi бар мекен-жай тiзiмiн таңдаңыз. Бұл дерекке мекен-жай бөлiгiн жасау қажет"
 
 #: source/ui/dbui/mmaddressblockpage.src#DLG_MM_ADDRESSBLOCK_PAGE.PB_ADDRESSLIST.PushButton.Text
 msgid  "Select A~ddress List..."
@@ -3347,6 +3347,10 @@ msgstr "~Әр қашанда елi/ауданын қосу"
 msgid  "Only ~include the country/region if it is not:"
 msgstr "Тек қана ел/ауданды ғана қосу егерде ол:"
 
+#: source/ui/dbui/mmaddressblockpage.src#WORKAROUND.#define.Text
+msgid  "New Address Block"
+msgstr ""
+
 #: source/ui/dbui/mmaddressblockpage.src#DLG_MM_CUSTOMIZEADDRESSBLOCK.ST_TITLE_EDIT.String.Text
 msgid  "Edit Address Block"
 msgstr "Мекен-жайлар бөлiгiн түзетiңiз"
@@ -3357,7 +3361,7 @@ msgstr "Тапсырыс бойынша сәлемдесу (Қосатын ал�
 
 #: source/ui/dbui/mmaddressblockpage.src#DLG_MM_CUSTOMIZEADDRESSBLOCK.ST_TITLE_FEMALE.String.Text
 msgid  "Custom Salutation (Female Recipients)"
-msgstr ""
+msgstr "Тапсырыс бойынша құрылған сәлемдесу (Егерде алушылар әйел адамдар болса)"
 
 #: source/ui/dbui/mmaddressblockpage.src#DLG_MM_CUSTOMIZEADDRESSBLOCK.FT_ADDRESSELEMENTS.FixedText.Text
 msgid  "Address ~elements"
@@ -3481,11 +3485,11 @@ msgstr "Өрiстердi сәйкестiру"
 
 #: source/ui/dbui/mmaddressblockpage.src#DLG_MM_ASSIGNFIELDS.FI_MATCHING.FixedText.Text
 msgid  "Assign the fields from your data source to match the address elements."
-msgstr ""
+msgstr "Өзiңiздiң деректер көзiңiзден мекен-жай элементтерiмен сәйкестiруге өрiс тағайындаңыз"
 
 #: source/ui/dbui/mmaddressblockpage.src#DLG_MM_ASSIGNFIELDS.ST_SALUTATIONMATCHING.String.Text
 msgid  "Assign the fields from your data source to match the salutation elements."
-msgstr ""
+msgstr "Өзiңiздiң деректер көзiңiзден сәлемдесу элементтерiмен сәйкестiруге өрiс тағайындаңыз"
 
 #: source/ui/dbui/mmaddressblockpage.src#DLG_MM_ASSIGNFIELDS.FI_PREVIEW.FixedText.Text
 msgid  "Address block preview"
@@ -3515,17 +3519,13 @@ msgstr ""
 msgid  "< none >"
 msgstr ""
 
-#: source/ui/dbui/mmaddressblockpage.src#WORKAROUND.#define.Text
-msgid  "New Address Block"
-msgstr ""
-
 #: source/ui/dbui/selectdbtabledialog.src#DLG_MM_SELECTDBTABLEDDIALOG.ModalDialog.Text
 msgid  "Select Table"
 msgstr "Кестенi ерекшелеу"
 
 #: source/ui/dbui/selectdbtabledialog.src#DLG_MM_SELECTDBTABLEDDIALOG.FI_SELECT.FixedText.Text
 msgid  "The file you have selected contains more than one table. Please select the table containing the address list you want to use."
-msgstr ""
+msgstr "Сiз таңдаған файлда бiр кестеден де артық кесте бар. Өтiнемiн, қолданғыңыз келетiн мекен-жай тiзiмiнiң кестесiн таңдаңыз"
 
 #: source/ui/dbui/selectdbtabledialog.src#DLG_MM_SELECTDBTABLEDDIALOG.PB_PREVIEW.PushButton.Text
 msgid  "~Preview"
@@ -3741,7 +3741,7 @@ msgstr "Поштамен бiрiктiрiлген құжаттарды жекел�
 
 #: source/ui/dbui/mmmergepage.src#DLG_MM_MERGE_PAGE.FI_EDIT.FixedText.Text
 msgid  "You can personalize particular documents. Clicking '%1' will temporarily reduce the wizard to a small window so you can edit your document. After editing the document, return to the wizard by clicking 'Return to Mail Merge Wizard' in the small window."
-msgstr ""
+msgstr "Сiз жеке құжаттарды жекелендiре аласыз. '%1' шертсеңiз сiз уақытша шебердi кiшiрейтiп құжатты түзете аласыз. Түзетiп болғаннан кейiн кiшкентай терезедегi 'Поштаны бiрiктiру шеберiн\" шертсеңiз, шебер қалпына келедi\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n ."
 
 #: source/ui/dbui/mmmergepage.src#DLG_MM_MERGE_PAGE.PB_EDIT.PushButton.Text
 msgid  "~Edit individual document..."
@@ -3909,7 +3909,7 @@ msgstr "Құжат"
 
 #: source/ui/dbui/mmoutputpage.src#DLG_MM_OUTPUT_PAGE.ST_SUBJECTQUERY.String.Text
 msgid  "You did not specify a subject for this message. If you would like to provide one, please type it now."
-msgstr ""
+msgstr "Сiз бұл мәлiмдеменiң тақырыбын тапсырған жоқсыз. Егерде сiз бiрiн тапсырғыңыз келсе, оны мына жерге терiңiз."
 
 #: source/ui/dbui/mmoutputpage.src#DLG_MM_OUTPUT_PAGE.ST_NOSUBJECT.String.Text
 msgid  "No subject"
@@ -3917,11 +3917,11 @@ msgstr "Тақырыпсыз"
 
 #: source/ui/dbui/mmoutputpage.src#DLG_MM_OUTPUT_PAGE.ST_NOATTACHMENTNAME.String.Text
 msgid  "You did not specify a new name for the attachment. If you would like to provide one, please type it now."
-msgstr ""
+msgstr "Сiз жаңа қосымшаның атын тапсырған жоқсыз. Егерде сiз оны тапсырғыңыз келсе, оны мына жерге терiңiз"
 
 #: source/ui/dbui/mmoutputpage.src#DLG_MM_OUTPUT_PAGE.ST_CONFIGUREMAIL.String.Text
 msgid  "In order to be able to send mail merge documents by e-mail, %PRODUCTNAME requires information about the e-mail account to be used.\n\n Do you want to enter e-mail account information now?"
-msgstr ""
+msgstr "Сiз электрондық пошта арқылық поштаға бiрiккен құжаттарды жiбере алғыңыз келсе, %PRODUCTNAME сiзге электрондық пошта есептеулерiн қолдану жайлы ақпаратты ұсынады.   \n\n Сiз электрондық пошта есептеулер жайлы ақпаратқа қазiр кiргiңiз келеме?"
 
 #: source/ui/dbui/mmoutputpage.src#DLG_MM_COPYTO.ModalDialog.Text
 msgid  "Copy To"
@@ -3941,11 +3941,11 @@ msgstr "~Жасырылған көшiрме"
 
 #: source/ui/dbui/mmoutputpage.src#DLG_MM_COPYTO.FI_NOTE.FixedText.Text
 msgid  "Note:\nSeparate e-mail addresses with a semicolon (;)."
-msgstr ""
+msgstr "Ескерту:\nМекен-жайларды нүктелi үтiрмен бөлiңiз (;)."
 
 #: source/ui/dbui/mmoutputpage.src#DLG_MM_SAVEWARNING.FI_WARNING.FixedText.Text
 msgid  "A document with the name '%1' already exists. Please save this document under a different name."
-msgstr ""
+msgstr " Құжат '%1' атымен бұрынан бар едi. Өтiнемiн, құжатты басқа атпен сақтаңыз. "
 
 #: source/ui/dbui/mmoutputpage.src#DLG_MM_SAVEWARNING.FT_FILENAME.FixedText.Text
 msgid  "New document name"
@@ -4131,6 +4131,10 @@ msgstr ""
 msgid  "~Close"
 msgstr ""
 
+#: source/ui/dbui/mailmergechildwindow.src#WORKAROUND.#define.Text
+msgid  "Return to Mail Merge Wizard"
+msgstr "Ұстамен бiрiккен поштаны қайтарады"
+
 #: source/ui/dbui/mailmergechildwindow.src#DLG_MAILMERGECHILD.FloatingWindow.Text
 msgid  "Mail Merge Wizard"
 msgstr ""
@@ -4209,7 +4213,7 @@ msgstr "Жiберу ойдағыдай аяқталған жоқ (бұрыс м�
 
 #: source/ui/dbui/mailmergechildwindow.src#DLG_MM_SENDMAILS.ST_TERMINATEQUERY.String.Text
 msgid  "There are still e-mail messages in your %PRODUCTNAME Outbox.\nWould you like to exit anyway?"
-msgstr ""
+msgstr "Сiздiң %PRODUCTNAME Outbox әлiге дейiн электрондық мәлiмдеме бар.\nСiз оны қалайда ашқыңыз келеме?\n"
 
 #: source/ui/dbui/mailmergechildwindow.src#DLG_MM_SENDWARNING.ModalDialog.Text
 msgid  "E-Mails could not be sent"
@@ -4222,10 +4226,6 @@ msgstr "Келесi қате кездеседi:"
 #: source/ui/dbui/mailmergechildwindow.src#DLG_MM_SENDWARNING.FT_DETAILS.FixedText.Text
 msgid  "Detailed information"
 msgstr "Егжей-тегжейлi ақпарат"
-
-#: source/ui/dbui/mailmergechildwindow.src#WORKAROUND.#define.Text
-msgid  "Return to Mail Merge Wizard"
-msgstr "Ұстамен бiрiккен поштаны қайтарады"
 
 #: source/ui/dbui/dbtablepreviewdialog.src#DLG_MM_DBTABLEPREVIEWDIALOG.ModalDialog.Text
 msgid  "Mail Merge Recipients"
@@ -4265,11 +4265,11 @@ msgstr "E-Mail-дың мәлемдемесi :"
 
 #: source/ui/dbui/mmoutputtypepage.src#DLG_MM_OUTPUTTYPE_PAGE.ST_LETTERHINT.String.Text
 msgid  "Send letters to a group of recipients. The letters can contain an address block and a salutation. The letters can be personalized for each recipient."
-msgstr ""
+msgstr "Алушылар тобына хаттар жiберiңiз. Хаттар құрамына мекен-жайлар бөлiгi және сәлемдесу кiре алады. Хат әр алушыға жекелендiрiле алады."
 
 #: source/ui/dbui/mmoutputtypepage.src#DLG_MM_OUTPUTTYPE_PAGE.ST_MAILHINT.String.Text
 msgid  "Send e-mail messages to a group of recipients. The e-mail messages can contain a salutation. The e-mail messages can be personalized for each recipient."
-msgstr ""
+msgstr "Алушылар тобына хаттар жiберiңiз. Хаттар құрамына сәлемдесу кiре алады. Хат әр алушыға жекелендiрiле алады."
 
 #: source/ui/dbui/mmpreparemergepage.src#DLG_MM_PREPAREMERGE_PAGE.FI_HEADER.FixedText.Text
 msgid  "Preview and edit the document"
@@ -4277,7 +4277,7 @@ msgstr "Құжатты алдын-ала көру және түзету"
 
 #: source/ui/dbui/mmpreparemergepage.src#DLG_MM_PREPAREMERGE_PAGE.FI_PREVIEW.FixedText.Text
 msgid  "The preview of a merged document is visible now. To see the preview of another document click one of the arrows."
-msgstr ""
+msgstr "Бiрiккен құжаттарды алдын-ала көру қазiр мүмкiн. Басқа құжатты көру үшiн бағдарды шертiңiз"
 
 #: source/ui/dbui/mmpreparemergepage.src#DLG_MM_PREPAREMERGE_PAGE.FT_RECIPIENT.FixedText.Text
 msgid  "~Recipient"
@@ -4309,7 +4309,7 @@ msgstr "Құжатты түзету"
 
 #: source/ui/dbui/mmpreparemergepage.src#DLG_MM_PREPAREMERGE_PAGE.FI_EDIT.FixedText.Text
 msgid  "Write or edit your document now if you have not already done so. The changes will effect all merged documents.\n\nClicking 'Edit Document...' will temporarily reduce the wizard to a small window so you can edit the mail merge document. After editing the document, return to the wizard by clicking 'Return to Mail Merge Wizard' in the small window."
-msgstr ""
+msgstr "Қазiрге дейiн өзiңiздiң құжатыңызды жазбаған немесе түзетпеген болсаңыз оны қазiр жасаңыз. Өзгерiстер барлық бiрiккен құжаттарға әсерiн тигiзедi.\n\n\"Құжатты түзету\" шерту шебердi уақытша кiшiрейтiп сiзге поштамен бiрiккен құжатты түзетуге мүмкiншiлiк тудырады. Түзетiп болғаннан соң шебердi қайтару үшiн кiшкентай терезедегi  \"Поштаны бiрiктiру шеберiне қайтару\" шертiңiз.  "
 
 #: source/ui/dbui/mmpreparemergepage.src#DLG_MM_PREPAREMERGE_PAGE.PB_EDIT.PushButton.Text
 msgid  "~Edit Document..."
@@ -4535,6 +4535,66 @@ msgstr ""
 msgid  "Characters:"
 msgstr ""
 
+#: source/ui/dialog/regionsw.src#FT_SUBREG_TEXT.#define.Text
+msgid  "~Section"
+msgstr "~Тарау"
+
+#: source/ui/dialog/regionsw.src#CB_HIDE_TEXT.#define.Text
+msgid  "H~ide"
+msgstr "Ж~асыру"
+
+#: source/ui/dialog/regionsw.src#FL_HIDE_TEXT.#define.Text
+msgid  "Hide"
+msgstr ""
+
+#: source/ui/dialog/regionsw.src#CB_CONDITION_TEXT.#define.Text
+msgid  "~With Condition"
+msgstr "~Шарт бойынша"
+
+#: source/ui/dialog/regionsw.src#FL_PROPERTIES_TEXT.#define.Text
+msgid  "Properties"
+msgstr ""
+
+#: source/ui/dialog/regionsw.src#CB_EDIT_IN_READONLY_TEXT.#define.Text
+msgid  "E~ditable in read-only document"
+msgstr "~Оқылымда ғана түзетiлетiн құжат"
+
+#: source/ui/dialog/regionsw.src#FL_FILE_TEXT.#define.Text
+msgid  "Link"
+msgstr "Байланыс"
+
+#: source/ui/dialog/regionsw.src#CB_FILE_TEXT.#define.Text
+msgid  "~Link"
+msgstr "~Байланыстыру"
+
+#: source/ui/dialog/regionsw.src#CB_DDE_TEXT.#define.Text
+msgid  "DD~E"
+msgstr "DD~E"
+
+#: source/ui/dialog/regionsw.src#FT_DDE_TEXT.#define.Text
+msgid  "DDE ~command"
+msgstr "DDE ~тапсырмасы"
+
+#: source/ui/dialog/regionsw.src#FT_FILE_TEXT.#define.Text
+msgid  "~File name"
+msgstr "~Файлдың аты"
+
+#: source/ui/dialog/regionsw.src#GB_HIDE_TEXT.#define.Text
+msgid  "Hide"
+msgstr ""
+
+#: source/ui/dialog/regionsw.src#GB_OPTIONS_TEXT.#define.Text
+msgid  "Options"
+msgstr ""
+
+#: source/ui/dialog/regionsw.src#FL_PROTECT_TEXT.#define.Text
+msgid  "Write protection"
+msgstr "Өзгерiстерден қорғаныс"
+
+#: source/ui/dialog/regionsw.src#CB_PASSWD_TEXT.#define.Text
+msgid  "Wit~h password"
+msgstr "Құпия кiлтiмен"
+
 #: source/ui/dialog/regionsw.src#MD_EDIT_REGION.ModalDialog.Text
 msgid  "Edit Sections"
 msgstr "Тарауларды түзету"
@@ -4565,7 +4625,7 @@ msgstr "Бөлiмнiң қосарланатын аты"
 
 #: source/ui/dialog/regionsw.src#QB_CONNECT.QueryBox.Message
 msgid  "A file connection will delete the contents of the current section. Connect anyway?"
-msgstr ""
+msgstr "Тараудың ағымды мазмұнын жойып байланысты орнату. Еш нәрсеге қарамай, орнатайын ба?"
 
 #: source/ui/dialog/regionsw.src#REG_WRONG_PASSWORD.InfoBox.Message
 msgid  "The password entered is invalid."
@@ -4699,66 +4759,6 @@ msgstr "~Бөлiмге дейiн"
 msgid  "~After section"
 msgstr "~Тараудан кейiн"
 
-#: source/ui/dialog/regionsw.src#FT_SUBREG_TEXT.#define.Text
-msgid  "~Section"
-msgstr "~Тарау"
-
-#: source/ui/dialog/regionsw.src#CB_HIDE_TEXT.#define.Text
-msgid  "H~ide"
-msgstr "Ж~асыру"
-
-#: source/ui/dialog/regionsw.src#FL_HIDE_TEXT.#define.Text
-msgid  "Hide"
-msgstr ""
-
-#: source/ui/dialog/regionsw.src#CB_CONDITION_TEXT.#define.Text
-msgid  "~With Condition"
-msgstr "~Шарт бойынша"
-
-#: source/ui/dialog/regionsw.src#FL_PROPERTIES_TEXT.#define.Text
-msgid  "Properties"
-msgstr ""
-
-#: source/ui/dialog/regionsw.src#CB_EDIT_IN_READONLY_TEXT.#define.Text
-msgid  "E~ditable in read-only document"
-msgstr "~Оқылымда ғана түзетiлетiн құжат"
-
-#: source/ui/dialog/regionsw.src#FL_FILE_TEXT.#define.Text
-msgid  "Link"
-msgstr "Байланыс"
-
-#: source/ui/dialog/regionsw.src#CB_FILE_TEXT.#define.Text
-msgid  "~Link"
-msgstr "~Байланыстыру"
-
-#: source/ui/dialog/regionsw.src#CB_DDE_TEXT.#define.Text
-msgid  "DD~E"
-msgstr "DD~E"
-
-#: source/ui/dialog/regionsw.src#FT_DDE_TEXT.#define.Text
-msgid  "DDE ~command"
-msgstr "DDE ~тапсырмасы"
-
-#: source/ui/dialog/regionsw.src#FT_FILE_TEXT.#define.Text
-msgid  "~File name"
-msgstr "~Файлдың аты"
-
-#: source/ui/dialog/regionsw.src#GB_HIDE_TEXT.#define.Text
-msgid  "Hide"
-msgstr ""
-
-#: source/ui/dialog/regionsw.src#GB_OPTIONS_TEXT.#define.Text
-msgid  "Options"
-msgstr ""
-
-#: source/ui/dialog/regionsw.src#FL_PROTECT_TEXT.#define.Text
-msgid  "Write protection"
-msgstr "Өзгерiстерден қорғаныс"
-
-#: source/ui/dialog/regionsw.src#CB_PASSWD_TEXT.#define.Text
-msgid  "Wit~h password"
-msgstr "Құпия кiлтiмен"
-
 #: source/ui/dialog/abstract.src#DLG_INSERT_ABSTRACT.FL_1.FixedLine.Text
 msgid  "Properties"
 msgstr ""
@@ -4773,7 +4773,7 @@ msgstr "Деңгейдегi қайырмалар"
 
 #: source/ui/dialog/abstract.src#DLG_INSERT_ABSTRACT.FT_DESC.FixedText.Text
 msgid  "The abstract contains the selected number of paragraphs from the included outline levels."
-msgstr ""
+msgstr "Көрiнiстiң құрамына құрылымның қосылған деңгейлерiнен таңдалған қайырмалар саны кiредi"
 
 #: source/ui/dialog/abstract.src#DLG_INSERT_ABSTRACT.HelpButton.Text
 msgid  "Create AutoAbstract"
@@ -4853,7 +4853,7 @@ msgstr ""
 
 #: source/ui/dochdl/dochdl.src#STR_NO_TABLE.String.Text
 msgid  "A table cannot be inserted into another table. However, you can paste the data into the document when the cursor is not in a table."
-msgstr ""
+msgstr "Қазiр кестенi қоюға мүмкiн емес."
 
 #: source/ui/dochdl/dochdl.src#MSG_ERR_INSERT_GLOS.InfoBox.Message
 msgid  "AutoText could not be created."
@@ -4865,7 +4865,7 @@ msgstr "Алмастыру буферiнiн керектi пiшiмiне рұқс
 
 #: source/ui/dochdl/dochdl.src#MSG_UPDATE_NEW_GLOS_FMT.QueryBox.Message
 msgid  "The section format is outdated.\nIt needs to be converted so that changes\ncan be saved.\nShould it be converted now?"
-msgstr ""
+msgstr "Тарау ескi пiшiмде көрсетiлген. \nӨзгерiстердi сақтау үшiн \nоны түрлендiру керек. Түрлендiрiйiн ба?\n"
 
 #: source/ui/dochdl/dochdl.src#STR_PRIVATETEXT.String.Text
 msgid  "%PRODUCTNAME Writer"
@@ -5039,42 +5039,6 @@ msgstr "Бастапқы жақтау байланыс көзi болып таб
 msgid  "A closed link is not possible."
 msgstr "Байланыс өз-өзiнде тұйықтала алмайды"
 
-#: source/ui/docvw/docvw.src#STR_ENDNOTE.String.Text
-msgid  "Endnote: "
-msgstr "Соңғы нұсқама:"
-
-#: source/ui/docvw/docvw.src#STR_FTNNOTE.String.Text
-msgid  "Footnote: "
-msgstr "Түсiрiндi:"
-
-#: source/ui/docvw/docvw.src#MSG_READONLY_CONTENT.InfoBox.Message
-msgid  "Readonly content cannot be changed.\nNo modifications will be accepted"
-msgstr ""
-
-#: source/ui/docvw/docvw.src#STR_TABLE_COL_ADJUST.String.Text
-msgid  "Adjust table column"
-msgstr "Кесте бағанын ретке келтiру"
-
-#: source/ui/docvw/docvw.src#STR_TABLE_ROW_ADJUST.String.Text
-msgid  "Adjust table row"
-msgstr ""
-
-#: source/ui/docvw/docvw.src#STR_TABLE_SELECT_ALL.String.Text
-msgid  "Select whole table"
-msgstr "Барлық кестенi ерекшелеу"
-
-#: source/ui/docvw/docvw.src#STR_TABLE_SELECT_ROW.String.Text
-msgid  "Select table row"
-msgstr "Кестенiн қатарын ерекшелеу"
-
-#: source/ui/docvw/docvw.src#STR_TABLE_SELECT_COL.String.Text
-msgid  "Select table column"
-msgstr "Кестенiн бағанын ерекшелеу"
-
-#: source/ui/docvw/docvw.src#STR_SMARTTAG_CLICK.String.Text
-msgid  "%s-click to open Smart Tag menu"
-msgstr ""
-
 #: source/ui/docvw/docvw.src#STR_REDLINE_INSERT.String.Text
 msgid  "Inserted"
 msgstr "Қойылған"
@@ -5094,6 +5058,42 @@ msgstr "Кесте өзгертiлген"
 #: source/ui/docvw/docvw.src#STR_REDLINE_FMTCOLL.String.Text
 msgid  "Applied Paragraph Styles"
 msgstr "Қайырманын түрi қолданған"
+
+#: source/ui/docvw/docvw.src#STR_ENDNOTE.String.Text
+msgid  "Endnote: "
+msgstr "Соңғы нұсқама:"
+
+#: source/ui/docvw/docvw.src#STR_FTNNOTE.String.Text
+msgid  "Footnote: "
+msgstr "Түсiрiндi:"
+
+#: source/ui/docvw/docvw.src#MSG_READONLY_CONTENT.InfoBox.Message
+msgid  "Readonly content cannot be changed.\nNo modifications will be accepted"
+msgstr "\"Тек қана оқу үшiн\" параметрiн өзгертуге мүмкiн емес. \nӨзгерiстер қабылдалмайды."
+
+#: source/ui/docvw/docvw.src#STR_TABLE_COL_ADJUST.String.Text
+msgid  "Adjust table column"
+msgstr "Кесте бағанын ретке келтiру"
+
+#: source/ui/docvw/docvw.src#STR_TABLE_ROW_ADJUST.String.Text
+msgid  "Adjust table row"
+msgstr "Кесте қатарын икемдеу                                                                                                                                                                                                                     "
+
+#: source/ui/docvw/docvw.src#STR_TABLE_SELECT_ALL.String.Text
+msgid  "Select whole table"
+msgstr "Барлық кестенi ерекшелеу"
+
+#: source/ui/docvw/docvw.src#STR_TABLE_SELECT_ROW.String.Text
+msgid  "Select table row"
+msgstr "Кестенiн қатарын ерекшелеу"
+
+#: source/ui/docvw/docvw.src#STR_TABLE_SELECT_COL.String.Text
+msgid  "Select table column"
+msgstr "Кестенiн бағанын ерекшелеу"
+
+#: source/ui/docvw/docvw.src#STR_SMARTTAG_CLICK.String.Text
+msgid  "%s-click to open Smart Tag menu"
+msgstr ""
 
 #: source/ui/docvw/access.src#STR_ACCESS_DOC_NAME.String.Text
 msgid  "Document view"
@@ -5214,6 +5214,10 @@ msgstr "-Баспа орнатылмаған-"
 #: source/ui/envelp/envprt.src#TP_ENV_PRT.BTN_PRTSETUP.PushButton.Text
 msgid  "Setup..."
 msgstr ""
+
+#: source/ui/envelp/mailmrge.src#_MAIL_MERGE_STRING_.#define.Text
+msgid  "Mail Merge"
+msgstr "Хаттарды жiберу"
 
 #: source/ui/envelp/mailmrge.src#DLG_MAILMERGE.RB_ALL.RadioButton.Text
 msgid  "~All"
@@ -5337,11 +5341,7 @@ msgstr "~Жаңа қосылуды жасау"
 
 #: source/ui/envelp/mailmrge.src#DLG_MERGE_FIELD_CONNECTIONS.FT_INFO.FixedText.Text
 msgid  "Fields are used to personalize form letters. The fields are placeholders for data from a data source, such as a database. The fields in the form letter must be connected to the data source."
-msgstr ""
-
-#: source/ui/envelp/mailmrge.src#_MAIL_MERGE_STRING_.#define.Text
-msgid  "Mail Merge"
-msgstr "Хаттарды жiберу"
+msgstr "Өрiс хат кескiнiн жекелендiру үшiн қолданылады. Өрiс дегенiмiз деректер көздерден алынған деректердi салатын жер, деректер негiзi сияқтыларды. Хат кескiнiнiң өрiстерi деректер көзiмен байланысты болу керек."
 
 #: source/ui/envelp/labprt.src#TP_LAB_PRT.BTN_PAGE.RadioButton.Text
 msgid  "~Entire page"
@@ -5397,7 +5397,7 @@ msgstr "~Жаңа құжат"
 
 #: source/ui/envelp/envelp.src#STR_SENDER_TOKENS.String.Text
 msgid  "COMPANY;CR;FIRSTNAME; ;LASTNAME;CR;ADDRESS;CR;CITY; ;STATEPROV; ;POSTALCODE;CR;COUNTRY;CR;"
-msgstr ""
+msgstr "COMPANY;CR;FIRSTNAME; ;LASTNAME;CR;ADDRESS;CR;CITY; ;STATEPROV; ;POSTALCODE;CR;COUNTRY;CR;"
 
 #: source/ui/envelp/envfmt.src#TP_ENV_FMT.FL_ADDRESSEE.FixedLine.Text
 msgid  "Addressee"
@@ -5470,6 +5470,14 @@ msgstr "Б~елгiлер..."
 #: source/ui/envelp/envfmt.src#MNU_EDIT.MID_PARA.MenuItem.Text
 msgid  "P~aragraph..."
 msgstr "~Қайырма..."
+
+#: source/ui/envelp/label.src#LABEL_STRING.#define.Text
+msgid  "Labels"
+msgstr ""
+
+#: source/ui/envelp/label.src#BUSINESS_CARD_STRING.#define.Text
+msgid  "Business Cards"
+msgstr "Бизнес карточкалар"
 
 #: source/ui/envelp/label.src#DLG_LAB.1.TP_PRIVATE_DATA.PageItem.Text
 msgid  "Private"
@@ -5639,14 +5647,6 @@ msgstr "Факс"
 msgid  "Ho~mepage / e-mail"
 msgstr "Па ~рақ/электрондық пошта"
 
-#: source/ui/envelp/label.src#LABEL_STRING.#define.Text
-msgid  "Labels"
-msgstr ""
-
-#: source/ui/envelp/label.src#BUSINESS_CARD_STRING.#define.Text
-msgid  "Business Cards"
-msgstr "Бизнес карточкалар"
-
 #: source/ui/envelp/labfmt.src#TP_LAB_FMT.TXT_HDIST.FixedText.Text
 msgid  "Hori~zontal pitch"
 msgstr "Көл ~денен бойынша қадам"
@@ -5728,8 +5728,8 @@ msgid  "Options"
 msgstr ""
 
 #: source/ui/envelp/labfmt.src#DLG_SAVE_LABEL.MB_QUERY.QueryBox.Message
-msgid  "The label "%1 / %2" already exists.\nDo you want to overwrite it?"
-msgstr ""
+msgid  "The label \"%1 / %2\" already exists.\nDo you want to overwrite it?"
+msgstr " \"%1 / %2\"  қол таңбасы бұрынан бар едi.\nҚайта жазайын ба?"
 
 #: source/ui/envelp/labfmt.src#DLG_SAVE_LABEL.QueryBox.Text
 msgid  "Save Label Format"
@@ -6609,7 +6609,7 @@ msgstr ""
 
 #: source/ui/fldui/changedb.src#DLG_CHANGE_DB.FT_DESC.FixedText.Text
 msgid  "Use this dialog to replace the databases you access in your document via database fields, with other databases. You can only make one change at a time. Multiple selection is possible in the list on the left.\nUse the browse button to select a database file."
-msgstr ""
+msgstr "Бұл сұхбатта сiз деректер көзiн таңдай аласыз, оларға рұқсат пiшiнде орналасқан басқару элементтерi көмегiмен.Бiр операция кезiнде сiз бiр өзгерiс жасай аласыз. Сол жақтағы тiзiмде топтық ерекшелендiру рұқсатетiлген"
 
 #: source/ui/fldui/changedb.src#DLG_CHANGE_DB.FT_DOCDBTEXT.FixedText.Text
 msgid  "Database applied to document:"
@@ -7388,6 +7388,14 @@ msgid  "~Position"
 msgstr "~Ұстамы"
 
 #: source/ui/frmdlg/column.src#TP_COLUMN.LB_POSITION.Default.StringList.item
+msgid  "Top"
+msgstr "Жоғарыға"
+
+#: source/ui/frmdlg/column.src#TP_COLUMN.LB_POSITION.Default.StringList.item
+msgid  "Centered"
+msgstr "Ортасынан"
+
+#: source/ui/frmdlg/column.src#TP_COLUMN.LB_POSITION.Default.StringList.item
 msgid  "Bottom"
 msgstr "Төменде"
 
@@ -7450,14 +7458,6 @@ msgstr ""
 #: source/ui/frmdlg/column.src#STR_ACCESS_COLUMN_WIDTH.String.Text
 msgid  "Column %1 Width"
 msgstr ""
-
-#: source/ui/frmdlg/column.src#TP_COLUMN.LB_POSITION.Default.StringList.item
-msgid  "Top"
-msgstr "Жоғарыға"
-
-#: source/ui/frmdlg/column.src#TP_COLUMN.LB_POSITION.Default.StringList.item
-msgid  "Centered"
-msgstr "Ортасынан"
 
 #: source/ui/frmdlg/frmui.src#STR_TOP.String.Text
 msgid  "~Top"
@@ -7667,6 +7667,10 @@ msgstr "Мазмұндық мәтiн"
 msgid  "%PRODUCTNAME %PRODUCTVERSION Master Document"
 msgstr " (%PRODUCTNAME %PRODUCTXMLFILEFORMATVERSION) Мазмұнды құжат"
 
+#: source/ui/index/idxmrk.src#IDX_PHONETIC_LISTBOX_DESCRIPTION.#define.Text
+msgid  "Phonetic reading"
+msgstr "Фонетикалық оқуы"
+
 #: source/ui/index/idxmrk.src#IDX_DIALOG_WINDOW.WIN_DLG.BT_OK.OKButton.Text
 msgid  "Insert"
 msgstr ""
@@ -7805,11 +7809,7 @@ msgstr "Бибилиографиялық сiлтеменi қою"
 
 #: source/ui/index/idxmrk.src#DLG_CHANGE_AUTH_ENTRY.QueryBox.Message
 msgid  "The document already contains the bibliography entry but with different data. Do you want to adjust the existing entries?"
-msgstr ""
-
-#: source/ui/index/idxmrk.src#IDX_PHONETIC_LISTBOX_DESCRIPTION.#define.Text
-msgid  "Phonetic reading"
-msgstr "Фонетикалық оқуы"
+msgstr "Осы құжатта библиография бұрынан бар едi, бiрақтан басқа деректермен.Бұрынан бар сiлтемелердi келiстiрейiн ба?"
 
 #: source/ui/index/cnttab.src#STR_TITLE.String.Text
 msgid  "Title"
@@ -7824,8 +7824,8 @@ msgid  "Level "
 msgstr "Деңгей"
 
 #: source/ui/index/cnttab.src#STR_FILE_NOT_FOUND.String.Text
-msgid  "The file, "%1" in the "%2" path could not be found."
-msgstr ""
+msgid  "The file, \"%1\" in the \"%2\" path could not be found."
+msgstr " \"%2\" жол бойынша  \"%1\" файлды табуға мүмкiн емес."
 
 #: source/ui/index/cnttab.src#DLG_MULTI_TOX.1.TP_TOX_SELECT.PageItem.Text
 msgid  "Index/Table"
@@ -8557,7 +8557,7 @@ msgstr "~Жолы..."
 
 #: source/ui/misc/glossary.src#DLG_GLOSSARY.ST_READONLY_PATH.String.Text
 msgid  "The 'AutoText' directories are read-only. Do you want to call the path settings dialog?"
-msgstr ""
+msgstr "'Автомәтiн'  топтамасы оқу үшiн ғана. Жол тапсыру сұхбатын шақыру керек пе?"
 
 #: source/ui/misc/glossary.src#DLG_GLOSSARY.MNU_EDIT.FN_GL_DEFINE.MenuItem.Text
 msgid  "~New"
@@ -8672,6 +8672,14 @@ msgid  "~Position"
 msgstr "~Жағдай"
 
 #: source/ui/misc/pgfnote.src#TP_FOOTNOTE_PAGE.DLB_LINEPOS.Default.StringList.item
+msgid  "Left"
+msgstr ""
+
+#: source/ui/misc/pgfnote.src#TP_FOOTNOTE_PAGE.DLB_LINEPOS.Default.StringList.item
+msgid  "Centered"
+msgstr ""
+
+#: source/ui/misc/pgfnote.src#TP_FOOTNOTE_PAGE.DLB_LINEPOS.Default.StringList.item
 msgid  "Right"
 msgstr ""
 
@@ -8690,14 +8698,6 @@ msgstr "~Түсiрiндi мәтiнiне дейiн қашықтық"
 #: source/ui/misc/pgfnote.src#TP_FOOTNOTE_PAGE.FL_LINE.FixedLine.Text
 msgid  "Separator line"
 msgstr "Бөлу сызығы"
-
-#: source/ui/misc/pgfnote.src#TP_FOOTNOTE_PAGE.DLB_LINEPOS.Default.StringList.item
-msgid  "Left"
-msgstr ""
-
-#: source/ui/misc/pgfnote.src#TP_FOOTNOTE_PAGE.DLB_LINEPOS.Default.StringList.item
-msgid  "Centered"
-msgstr ""
 
 #: source/ui/misc/num.src#TP_NUM_POSITION.FL_LEVEL.FixedLine.Text
 msgid  "Level"
@@ -10065,7 +10065,7 @@ msgstr ""
 
 #: source/ui/shells/shells.src#STR_REDLINE_MSG.String.Text
 msgid  "AutoCorrect completed.\nYou can accept or reject all changes,\nor accept or reject particular changes."
-msgstr ""
+msgstr "Автопiшiндеу аяқталды. \n Қазiр сiз барлық өзгерiстердi қабылдай аласыз немесе оларды керi қайтара аласыз, немес оларды бiртiндеп қабылдап, керi қайтара аласыз"
 
 #: source/ui/shells/shells.src#STR_REDLINE_ACCEPT_ALL.String.Text
 msgid  "Accept All"
@@ -10081,7 +10081,7 @@ msgstr "Өзгерiстердi түзету"
 
 #: source/ui/shells/shells.src#DLG_IMPORT_DBNAME.QueryBox.Message
 msgid  "Use database name as default database for the document?"
-msgstr ""
+msgstr "Осы құжатқа үшiн деректер қорды үнсiз келiсiм бойыншағы деректер қоры ретiнде қолданайын ба?"
 
 #: source/ui/shells/shells.src#STR_PAGE.String.Text
 msgid  "Page "
@@ -10309,7 +10309,7 @@ msgstr "Сомма"
 
 #: source/ui/table/tautofmt.src#DLG_AUTOFMT_TABLE.STR_INVALID_AFNAME.String.Text
 msgid  "You have entered an invalid name.\nThe desired AutoFormat could not be created. \nTry again using a different name."
-msgstr ""
+msgstr "Атты дұрыс емес ретiнде енгiзiлген. \n Қалаған өзпiшiмдегiштi жасауға мүмкiн емес. \n Басқа атты қолданыңыз."
 
 #: source/ui/table/mergetbl.src#DLG_MERGE_TABLE.FL_MERGE.FixedLine.Text
 msgid  "Mode"
@@ -10493,7 +10493,7 @@ msgstr "~Бiрiншi баған тақырыбы ретiнде"
 
 #: source/ui/table/chartins.src#DLG_INSERT_CHART.FT_TEXT.FixedText.Text
 msgid  "If the selected cells do not contain the desired data, select the data range now.\n\nInclude the cells containing column and row labels if you want them to be included in your chart."
-msgstr ""
+msgstr "Егер ерекшеленген ұяшықтардың мазмұныңда талап етiлген деректер жоқ болса, онда қажеттi  мазмұнмен ұяшықтардың ауқымын қазiр ерекшелеңiз. \n\n Егер ұящықтың бағандарың немесе қатарларың диаграмада көрсетуге керек болса, онда оларды ерекшелеңiз. "
 
 #: source/ui/table/chartins.src#DLG_INSERT_CHART.BT_PREV.PushButton.Text
 msgid  "<< ~Back"
@@ -10506,6 +10506,10 @@ msgstr "~Келесi >>"
 #: source/ui/table/chartins.src#DLG_INSERT_CHART.BT_FINISH.PushButton.Text
 msgid  "Cre~ate"
 msgstr "~Құру"
+
+#: source/ui/table/tabledlg.src#TEXT_TEXTFLOW.#define.Text
+msgid  "Text Flow"
+msgstr "Парақта"
 
 #: source/ui/table/tabledlg.src#DLG_FORMAT_TABLE.TabDialog.Text
 msgid  "Table Format"
@@ -10597,7 +10601,7 @@ msgstr ""
 
 #: source/ui/table/tabledlg.src#TP_FORMAT_TABLE.FT_TEXTDIRECTION.FixedText.Text
 msgid  "Text ~direction"
-msgstr "~Мәтiндi бағыттау"
+msgstr "Мәтiндi ~бағыттау"
 
 #: source/ui/table/tabledlg.src#TP_FORMAT_TABLE.LB_TEXTDIRECTION.0.StringList.item
 msgid  "Left-to-right"
@@ -10715,10 +10719,6 @@ msgstr "Төменнен"
 msgid  "The name of the table must not contain spaces."
 msgstr "Кестенiң атыңда жол тастау жоқ болу керек."
 
-#: source/ui/table/tabledlg.src#TEXT_TEXTFLOW.#define.Text
-msgid  "Text Flow"
-msgstr "Парақта"
-
 #: source/ui/table/splittbl.src#DLG_SPLIT_TABLE.FL_SPLIT.FixedLine.Text
 msgid  "Mode"
 msgstr ""
@@ -10753,7 +10753,7 @@ msgstr "Басты мәтiндi тексеру?"
 
 #: source/ui/uiview/view.src#DLG_PRT_FIELDNAME.QueryBox.Message
 msgid  "Show field commands option is checked.\nDo you want to print the document with field names?"
-msgstr ""
+msgstr " 'өрiстiң атын көрсету ' параметрi орнатылған. \nҚұжатты өрiстердiң атауымен басу керек пе?"
 
 #: source/ui/uiview/view.src#DLG_SPECIAL.QueryBox.Message
 msgid  "Do you want check the special regions?"
@@ -10761,23 +10761,27 @@ msgstr "Арнайы аймақтарды тексеру?"
 
 #: source/ui/uiview/view.src#DLG_THESAURUS.QueryBox.Message
 msgid  "This word appears in the list of words you want to avoid! Start thesaurus?"
-msgstr ""
+msgstr "Бұл сөздi қолданудан бас тарту керек! Тезаурусты қосу керек пе?"
 
 #: source/ui/uiview/view.src#DLG_SPECIAL_FORCED.QueryBox.Message
 msgid  "Check special regions is deactivated. Check anyway?"
-msgstr ""
+msgstr "Арнайы аймақтарды тексеру қосылмаған. Бұған қарамастан тексеру керек пе."
 
 #: source/ui/uiview/view.src#MSG_SEARCH_END.QueryBox.Message
 msgid  "%PRODUCTNAME Writer has searched to the end of the document. Do you want to continue at the beginning?"
-msgstr ""
+msgstr "%PRODUCTNAME Writer құжаттың соңына дейiн тексерiп шықты. Тексерудi басынан бастау керек пе?"
 
 #: source/ui/uiview/view.src#MSG_SEARCH_START.QueryBox.Message
 msgid  "%PRODUCTNAME Writer has searched to the beginning of the document. Do you want to continue at the end?"
-msgstr ""
+msgstr "%PRODUCTNAME Writer құжаттың басына дейiн тексерiп шықты. Тексерудi соңынан бастау керек пе?"
 
 #: source/ui/uiview/view.src#MSG_NO_MERGE_ENTRY.InfoBox.Message
 msgid  "Could not merge documents."
 msgstr "Құжаттарды бiрiктiру мүмкiн емес."
+
+#: source/ui/uiview/view.src#MSG_ERR_INSERT_GLOS.InfoBox.Message
+msgid  "AutoText could not be created."
+msgstr "Өзпiшiмдегiштi жасауға мүмкiн емес."
 
 #: source/ui/uiview/view.src#MSG_ERR_SRCSTREAM.InfoBox.Message
 msgid  "The source cannot be loaded."
@@ -10845,7 +10849,7 @@ msgstr "Ерекшеленген үзiндiнi баспаға шығару"
 
 #: source/ui/uiview/view.src#STR_PRINT_MSG.String.Text
 msgid  "Do you want to print the selection or the entire document?"
-msgstr ""
+msgstr "Барлық құжатты немесе тек қана ерекшеленген құжатты  баспаға шығарайын ба?"
 
 #: source/ui/uiview/view.src#STR_PRINT_ALL.String.Text
 msgid  "All"
@@ -10870,10 +10874,6 @@ msgstr "~Бастапқы мәтiн HTML пiшiмiнде"
 #: source/ui/uiview/view.src#MN_SRCVIEW_POPUPMENU.SID_SOURCEVIEW.MenuItem.Text
 msgid  "HTML Source"
 msgstr "HTML пiшiмiнде бастапқы мәтiн"
-
-#: source/ui/uiview/view.src#MSG_ERR_INSERT_GLOS.InfoBox.Message
-msgid  "AutoText could not be created."
-msgstr "Өзпiшiмдегiштi жасауға мүмкiн емес."
 
 #: source/ui/uiview/pview.src#DLG_PAGEPREVIEW_ZOOM.ModalDialog.Text
 msgid  "Multiple Pages"
@@ -10908,7 +10908,7 @@ msgid  "Capitalize first letter of sentences"
 msgstr "Әр сөйлемдi кiшi әрiптен бастау"
 
 #: source/ui/utlui/utlui.src#RID_SHELLRES_AUTOFMTSTRS.STR_AUTOFMTREDL_TYPO+1.String.Text
-msgid  "Replace "standard" quotes with %1 \bcustom%2 quotes"
+msgid  "Replace \"standard\" quotes with %1 \bcustom%2 quotes"
 msgstr ""
 
 #: source/ui/utlui/utlui.src#RID_SHELLRES_AUTOFMTSTRS.STR_AUTOFMTREDL_USER_STYLE+1.String.Text
@@ -10948,28 +10948,28 @@ msgid  "Combine single line paragraphs"
 msgstr "Бiр қатарлық қайырмаларды бiрiктiру "
 
 #: source/ui/utlui/utlui.src#RID_SHELLRES_AUTOFMTSTRS.STR_AUTOFMTREDL_SET_TMPL_TEXT +1.String.Text
-msgid  "Set "Text body" Style"
-msgstr ""
+msgid  "Set \"Text body\" Style"
+msgstr "\"Негiзгi мәтiн\" түрiн орнату"
 
 #: source/ui/utlui/utlui.src#RID_SHELLRES_AUTOFMTSTRS.STR_AUTOFMTREDL_SET_TMPL_INDENT.String.Text
-msgid  "Set "Text body indent" Style"
+msgid  "Set \"Text body indent\" Style"
 msgstr ""
 
 #: source/ui/utlui/utlui.src#RID_SHELLRES_AUTOFMTSTRS.STR_AUTOFMTREDL_SET_TMPL_NEG_INDENT.String.Text
-msgid  "Set "Hanging indent" Style"
-msgstr ""
+msgid  "Set \"Hanging indent\" Style"
+msgstr "\"Керi шегiнiс\" түрiн орнату"
 
 #: source/ui/utlui/utlui.src#RID_SHELLRES_AUTOFMTSTRS.STR_AUTOFMTREDL_SET_TMPL_TEXT_INDENT +1.String.Text
-msgid  "Set "Text body indent" Style"
+msgid  "Set \"Text body indent\" Style"
 msgstr ""
 
 #: source/ui/utlui/utlui.src#RID_SHELLRES_AUTOFMTSTRS.STR_AUTOFMTREDL_SET_TMPL_HEADLINE +1.String.Text
-msgid  "Set "Heading $(ARG1)" Style"
-msgstr ""
+msgid  "Set \"Heading $(ARG1)\" Style"
+msgstr "\" $(ARG1) тақырыбы\" түрiн орнату"
 
 #: source/ui/utlui/utlui.src#RID_SHELLRES_AUTOFMTSTRS.STR_AUTOFMTREDL_SET_NUMBULET +1.String.Text
-msgid  "Set "Bullet" or "Numbering" Style"
-msgstr ""
+msgid  "Set \"Bullet\" or \"Numbering\" Style"
+msgstr "\"Тiзiм\" немесе \"Нөмiрлеу\" түрiн орнату"
 
 #: source/ui/utlui/utlui.src#RID_SHELLRES_AUTOFMTSTRS.STR_AUTOFMTREDL_DEL_MORELINES +1.String.Text
 msgid  "Combine paragraphs"
@@ -11137,11 +11137,11 @@ msgstr "[Жүйе]"
 
 #: source/ui/utlui/utlui.src#STR_MULT_INTERACT_SPELL_WARN.String.Text
 msgid  "The interactive spellcheck is already active\nin a different document"
-msgstr ""
+msgstr "Емленiң интербелсiндi тексеруi басқа құжатта бұрынан қосылған едi. "
 
 #: source/ui/utlui/utlui.src#STR_MULT_INTERACT_HYPH_WARN.String.Text
 msgid  "The interactive hyphenation is already active\nin a different document"
-msgstr ""
+msgstr "Тасымалдаудың интербелсендi орналастырылуы\n қосылып тұр"
 
 #: source/ui/utlui/utlui.src#STR_SPELL_TITLE.String.Text
 msgid  "Spellcheck"
@@ -12667,6 +12667,18 @@ msgstr "Тiгiнен ортасына"
 msgid  "at bottom"
 msgstr "Төменде"
 
+#: source/ui/utlui/attrdesc.src#STR_LINE_TOP.String.Text
+msgid  "Top of line"
+msgstr "Қатар жоғарда"
+
+#: source/ui/utlui/attrdesc.src#STR_LINE_CENTER.String.Text
+msgid  "Line centered"
+msgstr "Сызыққа қатынас бойынша тiгiнен орталау"
+
+#: source/ui/utlui/attrdesc.src#STR_LINE_BOTTOM.String.Text
+msgid  "Bottom of line"
+msgstr "Қатар төменде"
+
 #: source/ui/utlui/attrdesc.src#STR_REGISTER_ON.String.Text
 msgid  "Register-true"
 msgstr "Келтiру"
@@ -12834,18 +12846,6 @@ msgstr "Шекараларды бiрiктiру"
 #: source/ui/utlui/attrdesc.src#STR_CONNECT_BORDER_OFF.String.Text
 msgid  "Do not merge borders"
 msgstr "Шекараларды бiрiктiрмеу"
-
-#: source/ui/utlui/attrdesc.src#STR_LINE_TOP.String.Text
-msgid  "Top of line"
-msgstr "Қатар жоғарда"
-
-#: source/ui/utlui/attrdesc.src#STR_LINE_CENTER.String.Text
-msgid  "Line centered"
-msgstr "Сызыққа қатынас бойынша тiгiнен орталау"
-
-#: source/ui/utlui/attrdesc.src#STR_LINE_BOTTOM.String.Text
-msgid  "Bottom of line"
-msgstr "Қатар төменде"
 
 #: source/ui/web/web.src#STR_HUMAN_SWWEBDOC_NAME.String.Text
 msgid  "HTML"

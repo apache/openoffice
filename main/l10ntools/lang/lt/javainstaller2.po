@@ -125,7 +125,7 @@ msgstr "Perskaitykite licencijos sutartį."
 
 #: src/Localization/setupstrings.ulf#STRING_ACCEPTLICENSE3
 msgid  "If you have read and accept all the terms of the entire Software License Agreement, click 'Accept License' to continue with the installation."
-msgstr ""
+msgstr "Jei perskaitėte programinės įrangos licencijos sutartį ir sutinkate su jos sąlygomis, spustelėkite „Sutinku“, kad tęstumėte diegimą."
 
 #: src/Localization/setupstrings.ulf#STRING_CHOOSEDIRECTORY1
 msgid  "Select Installation Directory"
@@ -153,11 +153,11 @@ msgstr "Sukurti naują katalogą"
 
 #: src/Localization/setupstrings.ulf#STRING_CHOOSEDIRECTORY5_QUESTION_MESSAGE
 msgid  "The directory '${DIR}' does not exist.\nDo you want to create it now?"
-msgstr ""
+msgstr "Katalogo „${DIR}“ nėra.\nAr sukurti jį dabar?"
 
 #: src/Localization/setupstrings.ulf#STRING_CHOOSEDIRECTORY5_QUESTION_MESSAGE2
 msgid  "The directory '${DIR}' does not exist.\nDo you want to create it now or choose another directory?"
-msgstr ""
+msgstr "Katalogo „${DIR}“ nėra.\nAr norite jį sukurti, ar parinkti kitą katalogą?"
 
 #: src/Localization/setupstrings.ulf#STRING_CHOOSEDIRECTORY6
 msgid  "Select root directory"
@@ -209,11 +209,11 @@ msgstr "Pasirinkite diegimo tipą"
 
 #: src/Localization/setupstrings.ulf#STRING_CHOOSEINSTALLATIONTYPE4
 msgid  "The main components will be installed. Recommended for most users."
-msgstr ""
+msgstr "Bus įdiegti pagrindiniai komponentai. Rekomenduojama daugumai naudotojų."
 
 #: src/Localization/setupstrings.ulf#STRING_CHOOSEINSTALLATIONTYPE5
 msgid  "You choose the components you want to install and where they are stored. Recommended for advanced users."
-msgstr ""
+msgstr "Galima pasirinkti, kur ir kokius komponentus įdiegti. Rekomenduojama patyrusiems naudotojams."
 
 #: src/Localization/setupstrings.ulf#STRING_CHOOSEINSTALLATIONTYPE6
 msgid  "Typical"
@@ -253,7 +253,7 @@ msgstr "Sveiki"
 
 #: src/Localization/setupstrings.ulf#STRING_PROLOGUE2
 msgid  "This Installation Wizard will install ${PRODUCT_FULLNAME} on your computer."
-msgstr ""
+msgstr "Šiuo diegimo vedikliu į kompiuterį bus įdiegtas „${PRODUCT_FULLNAME}“."
 
 #: src/Localization/setupstrings.ulf#STRING_PROLOGUE3
 msgid  "To continue, click 'Next'."
@@ -261,7 +261,7 @@ msgstr "Jei norite tęsti, spustelėkite „Toliau“."
 
 #: src/Localization/setupstrings.ulf#STRING_PROLOGUE4
 msgid  "Note: This installation will be done without root privileges. Therefore you will have a reduced functionality (Java Runtime Environment (JRE) not installable, system integration not possible).\nClick 'Cancel' and change your privileges to root privileges, if you want to use the complete functionality."
-msgstr ""
+msgstr "Pastaba: Šis diegimas vykdomas be administratoriaus teisių, todėl nebus kai kurių funkcijų (neįdiegta „Java“ aplinka (JRE), negalima sistemos integracija).\nSpustelėkite „Atsisakyti“ ir pakeiskite prieigos teises, jei norite naudotis visomis programos funkcijomis."
 
 #: src/Localization/setupstrings.ulf#STRING_INSTALLATIONCOMPLETED1
 msgid  "Installation Completed"
@@ -277,15 +277,15 @@ msgstr "Diegimas nepavyko"
 
 #: src/Localization/setupstrings.ulf#STRING_INSTALLATIONCOMPLETED2
 msgid  "The Installation Wizard has successfully installed ${PRODUCT_FULLNAME} on your computer."
-msgstr ""
+msgstr "„${PRODUCT_FULLNAME}“ sėkmingai įdiegtas kompiuteryje."
 
 #: src/Localization/setupstrings.ulf#STRING_INSTALLATIONCOMPLETED2_ABORT
 msgid  "The Installation Wizard was aborted. ${PRODUCT_NAME} is not installed on your computer."
-msgstr ""
+msgstr "Diegimo vediklis buvo nutrauktas. „${PRODUCT_NAME}“ neįdiegtas kompiuteryje."
 
 #: src/Localization/setupstrings.ulf#STRING_INSTALLATIONCOMPLETED2_ERROR
 msgid  "An error has occurred. Thus the Installation Wizard could not install ${PRODUCT_NAME} on your computer successfully. Click 'Details...' for more information."
-msgstr ""
+msgstr "Įvyko klaida. „${PRODUCT_NAME}“ įdiegti kompiuteryje nepavyko. Spustelėkite „Išsamiau...“, jei norite daugiau informacijos."
 
 #: src/Localization/setupstrings.ulf#STRING_INSTALLATIONCOMPLETED3
 msgid  "Click 'Finish' to exit the Wizard."
@@ -297,15 +297,15 @@ msgstr "Išsamiau..."
 
 #: src/Localization/setupstrings.ulf#STRING_UNINSTALLATIONPROLOGUE2
 msgid  "The ${PRODUCT_FULLNAME} Uninstallation Wizard will remove ${PRODUCT_FULLNAME} from your computer."
-msgstr ""
+msgstr "„${PRODUCT_FULLNAME}“ šalinimo vedikliu „${PRODUCT_FULLNAME}“ bus pašalintas iš kompiuterio."
 
 #: src/Localization/setupstrings.ulf#STRING_UNINSTALLATION_PROLOGUE_WRONG_PRIVILEGES_CURRENT_ROOT
 msgid  "Sorry, wrong privileges. Installation was done with User privilges, but you have Root privileges."
-msgstr ""
+msgstr "Netinkamos prieigos teisės. Įdiegta naudotojo teisėmis, o dabartinės teisės yra administratoriaus."
 
 #: src/Localization/setupstrings.ulf#STRING_UNINSTALLATION_PROLOGUE_WRONG_PRIVILEGES_CURRENT_USER
 msgid  "Sorry, wrong privileges. Installation was done with Root privilges, but you have User privileges."
-msgstr ""
+msgstr "Netinkamos prieigos teisės. Įdiegta administratoriaus teisėmis, o dabartinės teisės yra naudotojo."
 
 #: src/Localization/setupstrings.ulf#STRING_CHOOSEUNINSTALLATIONTYPE1
 msgid  "Select the Type of Uninstallation"
@@ -321,7 +321,7 @@ msgstr "Dalinis"
 
 #: src/Localization/setupstrings.ulf#STRING_CHOOSEUNINSTALLATIONTYPE4
 msgid  "Completely removes ${PRODUCT_FULLNAME} and all its components from your system."
-msgstr ""
+msgstr "„${PRODUCT_FULLNAME}“ ir visi jo komponentai visiškai pašalinami iš kompiuterio."
 
 #: src/Localization/setupstrings.ulf#STRING_CHOOSEUNINSTALLATIONTYPE5
 msgid  "You choose the program features you want to remove."
@@ -333,7 +333,7 @@ msgstr "Visiškas"
 
 #: src/Localization/setupstrings.ulf#STRING_CHOOSEUNINSTALLATIONCOMPONENTS2
 msgid  "Components marked with an X will be removed. Mark the components you want to remove."
-msgstr ""
+msgstr "Bus pašalinti pažymėti komponentai. Pažymėkite norimus komponentus."
 
 #: src/Localization/setupstrings.ulf#STRING_UNINSTALLATIONIMMINENT1
 msgid  "Ready to Remove"
@@ -361,19 +361,19 @@ msgstr "Šalinimas nepavyko"
 
 #: src/Localization/setupstrings.ulf#STRING_UNINSTALLATIONCOMPLETED2
 msgid  "The Uninstallation Wizard has successfully removed ${PRODUCT_FULLNAME} from your computer."
-msgstr ""
+msgstr "„${PRODUCT_FULLNAME}“ sėkmingai pašalintas iš kompiuterio."
 
 #: src/Localization/setupstrings.ulf#STRING_UNINSTALLATIONCOMPLETED2_PARTIAL
 msgid  "The Uninstallation Wizard has successfully removed the selected components of ${PRODUCT_NAME} from your computer."
-msgstr ""
+msgstr "Pasirinkti „${PRODUCT_NAME}“ komponentai sėkmingai pašalinti iš kompiuterio."
 
 #: src/Localization/setupstrings.ulf#STRING_UNINSTALLATIONCOMPLETED2_ABORT
 msgid  "The Uninstallation Wizard was aborted before completely removing ${PRODUCT_NAME} from your computer."
-msgstr ""
+msgstr "Šalinimo vediklis buvo nutrauktas nebaigus šalinti „${PRODUCT_NAME}“ iš kompiuterio."
 
 #: src/Localization/setupstrings.ulf#STRING_UNINSTALLATIONCOMPLETED2_ERROR
 msgid  "An error has occurred. Thus the Uninstallation Wizard could not remove ${PRODUCT_NAME} from your computer successfully. Click 'Details...' for more information."
-msgstr ""
+msgstr "Įvyko klaida. „${PRODUCT_NAME}“ pašalinti iš kompiuterio nepavyko. Spustelėkite „Išsamiau...“, jei norite daugiau informacijos."
 
 #: src/Localization/setupstrings.ulf#STRING_INSTALLERFACTORY_OS_NOT_SUPPORTED
 msgid  "Sorry, this Operating System is not supported yet."
@@ -385,7 +385,7 @@ msgstr "Kompiuteryje rasta senesnė „${PRODUCT_NAME}“ versija:"
 
 #: src/Localization/setupstrings.ulf#STRING_OLDER_VERSION_INSTALLED_REMOVE
 msgid  "You have to remove the older version of ${PRODUCT_NAME} before you can install the newer one."
-msgstr ""
+msgstr "Prieš diegiant naujesnę versiją, senąją „${PRODUCT_NAME}“ versiją reikia pašalinti."
 
 #: src/Localization/setupstrings.ulf#STRING_NEWER_VERSION_INSTALLED_FOUND
 msgid  "A newer version of ${PRODUCT_NAME} was found on your system in:"
@@ -393,7 +393,7 @@ msgstr "Kompiuteryje rasta naujesnė „${PRODUCT_NAME}“ versija:"
 
 #: src/Localization/setupstrings.ulf#STRING_NEWER_VERSION_INSTALLED_REMOVE
 msgid  "You have to remove the newer version of ${PRODUCT_NAME} before you can install the older one."
-msgstr ""
+msgstr "Prieš diegiant senesnę „${PRODUCT_NAME}“ versiją reikia pašalinti naujesnę."
 
 #: src/Localization/setupstrings.ulf#STRING_NEWER_VERSION_DATABASE
 msgid  "Database"
@@ -409,7 +409,7 @@ msgstr "Įsiregistravus šiuo naudotoju diegimo vediklio paleisti negalima."
 
 #: src/Localization/setupstrings.ulf#STRING_ROOT_PRIVILEGES_REQUIRED_2
 msgid  "Please log out and log back in as a user with system administrator rights."
-msgstr ""
+msgstr "Išsiregistruokite ir įsiregistruokite iš naujo naudotojo, turinčio administratoriaus teises, vardu."
 
 #: src/Localization/setupstrings.ulf#STRING_DISCSPACE_INSUFFICIENT
 msgid  "Not enough discspace available for installation."
@@ -425,7 +425,7 @@ msgstr "Laisva vieta diske"
 
 #: src/Localization/setupstrings.ulf#STRING_DISCSPACE_TIP
 msgid  "Please use another directory for installation or change your module selection."
-msgstr ""
+msgstr "Parinkite kitą diegimo katalogą arba pasirinkite mažiau modulių."
 
 #: src/Localization/setupstrings.ulf#STRING_ANALYZING_DATABASE1
 msgid  "Analyzing ..."
@@ -433,11 +433,11 @@ msgstr "Analizuojama..."
 
 #: src/Localization/setupstrings.ulf#STRING_ANALYZING_DATABASE2
 msgid  "Analyzing database\nPlease wait a moment ..."
-msgstr ""
+msgstr "Analizuojama duomenų bazė.\nPalaukite..."
 
 #: src/Localization/setupstrings.ulf#STRING_PROLOGUE_1
 msgid  "Welcome to the Installation Wizard.<p>This wizard asks you to supply configuration settings.<p>At the bottom of each page are navigation buttons that let you move through the Installation Wizard:"
-msgstr ""
+msgstr "Rekomenduojama diegti programą į vediklio siūlomą katalogą. <p>Jei norite parinkti kitą diegimo katalogą, spustelėkite „Parinkti...“, arba įveskite visą kelią iki norimo katalogo teksto laukelyje žemiau. <p>If this product is already installed, you cannot change the destination directory."
 
 #: src/Localization/setupstrings.ulf#STRING_PROLOGUE_2
 msgid  "'Back' returns you to the previous page."
@@ -445,7 +445,7 @@ msgstr "„Atgal“ grąžina į ankstesnį langą."
 
 #: src/Localization/setupstrings.ulf#STRING_PROLOGUE_3
 msgid  "'Next' takes you to the next page. "
-msgstr "„Toliau“ perkelia į kitą langą."
+msgstr "„Toliau“ perkelia į kitą langą. "
 
 #: src/Localization/setupstrings.ulf#STRING_PROLOGUE_4
 msgid  "'Cancel' ends the Installation Wizard without installing this software."
@@ -453,7 +453,7 @@ msgstr "„Atsisakyti“ užveria diegimo vediklį neįdiegus programos."
 
 #: src/Localization/setupstrings.ulf#STRING_PROLOGUE_5
 msgid  "'Help' displays the Help with further information about the page currently displayed."
-msgstr ""
+msgstr "„Žinynas“ atveria esamą vediklio langą atitinkantį žinyno skyrių."
 
 #: src/Localization/setupstrings.ulf#STRING_PROLOGUE_6
 msgid  "'OK' exits the Help page and returns you to the Installation Wizard."
@@ -461,7 +461,7 @@ msgstr "„Gerai“ užveria žinyno langą ir grąžina į diegimo vediklį."
 
 #: src/Localization/setupstrings.ulf#STRING_UNINSTALLATIONPROLOGUE_1
 msgid  "Welcome to the Uninstallation Wizard.<p>This wizard asks you to supply configuration settings.<p>At the bottom of each page are navigation buttons that let you move through the Uninstallation Wizard:"
-msgstr ""
+msgstr "Sveiki! Tai šalinimo vediklis.<p>Naudodamiesi vedikliu nurodysite norimą sąranką.<p>Kiekvieno lango apačioje yra mygtukai, kuriais naudodamiesi galite naršyti šalinimo vediklio langus:"
 
 #: src/Localization/setupstrings.ulf#STRING_UNINSTALLATIONPROLOGUE_2
 msgid  "'Back' returns you to the previous page."
@@ -477,7 +477,7 @@ msgstr "„Atsisakyti“ užveria šalinimo vediklį nepašalinus programos."
 
 #: src/Localization/setupstrings.ulf#STRING_UNINSTALLATIONPROLOGUE_5
 msgid  "'Help' displays the Help with further information about the page currently displayed."
-msgstr ""
+msgstr "„Žinynas“ atveria esamą vediklio langą atitinkantį žinyno skyrių."
 
 #: src/Localization/setupstrings.ulf#STRING_UNINSTALLATIONPROLOGUE_6
 msgid  "'OK' exits the Help page and returns you to the Uninstallation Wizard."
@@ -485,55 +485,55 @@ msgstr "„Gerai“ užveria žinyno langą ir grąžina į šalinimo vediklį."
 
 #: src/Localization/setupstrings.ulf#STRING_ACCEPTLICENSE_1
 msgid  "Before you install this product, you must read and accept the entire Software License Agreement under which this software is licensed for your use."
-msgstr ""
+msgstr "Prieš diegdami šią programą turite perskaityti programinės įrangos licencijos sutartį ir sutikti su joje išdėstytomis šios programos naudojimo sąlygomis."
 
 #: src/Localization/setupstrings.ulf#STRING_ACCEPTLICENSE_2
 msgid  "If you have read and accept all the terms of the entire Software License Agreement, click 'Accept License' to continue with the installation."
-msgstr ""
+msgstr "Jei perskaitėte programinės įrangos licencijos sutartį ir sutinkate su jos sąlygomis, spustelėkite „Sutinku“, kad tęstumėte diegimą."
 
 #: src/Localization/setupstrings.ulf#STRING_ACCEPTLICENSE_3
 msgid  "If you do not accept all the terms of the Software License Agreement, click 'Decline' to end the Installation Wizard without installing this product."
-msgstr ""
+msgstr "Jei nesutinkate su programinės įrangos licencijos sutarties sąlygomis, spustelėkite „Nesutinku“, kad užvertumėte diegimo vediklį neįdiegę programos."
 
 #: src/Localization/setupstrings.ulf#STRING_CHOOSEINSTALLATIONTYPE_1
 msgid  "Select the type of product installation to perform from the following choices. This will determine how much information you need to provide for product configuration."
-msgstr ""
+msgstr "Pasirinkite vieną iš siūlomų programos diegimo tipų. Nuo to priklausys, kiek informacijos turėsite pateikti nurodydami sąranką."
 
 #: src/Localization/setupstrings.ulf#STRING_CHOOSEDIRECTORY_1
 msgid  "It is recommended that you install this product in the directory suggested by this Installation Wizard. <p>To choose a different location, click 'Browse...' or specify the full path of the directory to use in the text box below. <p>If this product is already installed, you cannot change the destination directory."
-msgstr ""
+msgstr "Rekomenduojama diegti programą į vediklio siūlomą katalogą. <p>Jei norite parinkti kitą diegimo katalogą, spustelėkite „Parinkti...“, arba įveskite visą kelią iki norimo katalogo teksto laukelyje žemiau. <p>Jei ši programa jau įdiegta, negalėsite pakeisti diegimo katalogo."
 
 #: src/Localization/setupstrings.ulf#STRING_CHOOSECOMPONENTS_1
 msgid  "Components marked in color will be installed. Click the icon of a component to mark or unmark the component.<p>All already installed components cannot be selected for installation."
-msgstr ""
+msgstr "Bus įdiegti spalvotai pažymėti komponentai. Jei norite pažymėti komponentą ar panaikinti jo žymėjimą, spustelėkite komponento piktogramą.<p>Jau įdiegtų komponentų negalima pasirinkti vėl įdiegti."
 
 #: src/Localization/setupstrings.ulf#STRING_INSTALLATIONIMMINENT_1
 msgid  "The listed components are ready for installation based on your configuration settings. <p>If you are satisfied with your selection, click 'Install Now' to begin. <p>To check or modify your settings on the previous pages, click 'Back'."
-msgstr ""
+msgstr "Išvardinti komponentai paruošti diegti. <p>Jei sąranka tenkina, spustelėkite „Diegti“, kad pradėtumėte diegimą. <p>Jei norite peržiūrėti ar pakeisti nuostatas ankstesniuose languose, spustelėkite „Atgal“."
 
 #: src/Localization/setupstrings.ulf#STRING_UNINSTALLATIONIMMINENT_1
 msgid  "The listed components are ready for uninstallation based on your configuration settings. <p>If you are satisfied with your selection, click 'Remove Now' to begin. <p>To check or modify your settings on the previous pages, click 'Back'."
-msgstr ""
+msgstr "Išvardinti komponentai paruošti šalinti. <p>Jei sąranka tenkina, spustelėkite „Šalinti“, kad pradėtumėte šalinimą. <p>Jei norite peržiūrėti ar pakeisti nuostatas ankstesniuose languose, spustelėkite „Atgal“."
 
 #: src/Localization/setupstrings.ulf#STRING_INSTALLATIONONGOING_1
 msgid  "This page indicates the progress of the installation with the aid of a progress bar. To abort the installation process, click 'Stop'."
-msgstr ""
+msgstr "Šiame lange rodoma diegimo eiga. Jei norite nutraukti diegimą, spustelėkite „Stabdyti“."
 
 #: src/Localization/setupstrings.ulf#STRING_UNINSTALLATIONONGOING_1
 msgid  "This page indicates the progress of the uninstallation with the aid of a progress bar. To abort the uninstallation, click 'Stop'."
-msgstr ""
+msgstr "Šiame lange rodoma šalinimo eiga. Jei norite nutraukti šalinimą, spustelėkite „Stabdyti“."
 
 #: src/Localization/setupstrings.ulf#STRING_CHOOSEUNINSTALLATIONTYPE_1
 msgid  "Complete: This will remove all installed components of your version.<p>Partial: This removes only the components you will choose out of the components list."
-msgstr ""
+msgstr "Visiškas: Bus pašalinti visi įdiegtos versijos komponentai.<p>Dalinis: Bus pašalinti tik pasirinkti komponentai."
 
 #: src/Localization/setupstrings.ulf#STRING_CHOOSEUNINSTALLATIONCOMPONENTS_1
 msgid  "Components marked with an X will be removed. Click next to a component to mark or unmark it with an X."
-msgstr ""
+msgstr "„X“ pažymėti komponentai bus pašalinti. Jei norite pažymėti komponentą ar panaikinti jo žymėjimą, spustelėkite šalia komponento pavadinimo."
 
 #: src/Localization/setupstrings.ulf#STRING_PACKAGEFORMAT_NOT_SUPPORTED
 msgid  "This package format is currently not supported for your operating system!"
-msgstr ""
+msgstr "Šis paketo formatas nesuderinamas su naudojama operacine sistema!"
 
 #: src/Localization/setupstrings.ulf#STRING_OPERATING_SYSTEM
 msgid  "Operating system"
@@ -553,7 +553,7 @@ msgstr "Diegimui nepasirinkta komponentų."
 
 #: src/Localization/setupstrings.ulf#STRING_NO_COMPONENTS_SELECTED_2
 msgid  "Click 'OK' to select one or more components for installation or to exit the Installation Wizard."
-msgstr ""
+msgstr "Spustelėkite „Gerai“, jei norite pasirinkti komponentus diegimui arba užverti diegimo vediklį."
 
 #: src/Localization/setupstrings.ulf#STRING_NO_LANGUAGE_SELECTED_1
 msgid  "No languages have been selected for installation."
@@ -561,7 +561,7 @@ msgstr "Nepasirinkta diegti jokių kalbų."
 
 #: src/Localization/setupstrings.ulf#STRING_NO_LANGUAGE_SELECTED_2
 msgid  "Click 'OK' to select one or more languages for installation or to exit the Installation Wizard."
-msgstr ""
+msgstr "Spustelėkite „Gerai“, jei norite pasirinkti vieną ar keletą kalbų diegimui arba užverti diegimo vediklį."
 
 #: src/Localization/setupstrings.ulf#STRING_NO_APPLICATION_SELECTED_1
 msgid  "No applications have been selected for installation."
@@ -569,7 +569,7 @@ msgstr "Nepasirinkta diegti jokių programų."
 
 #: src/Localization/setupstrings.ulf#STRING_NO_APPLICATION_SELECTED_2
 msgid  "Click 'OK' to select one or more application for installation or to exit the Installation Wizard."
-msgstr ""
+msgstr "Spustelėkite „Gerai“, jei norite pasirinkti vieną ar keletą programų diegimui arba užverti diegimo vediklį."
 
 #: src/Localization/setupstrings.ulf#STRING_NOTHING_TO_UNINSTALL
 msgid  "Nothing to uninstall"
@@ -581,7 +581,7 @@ msgstr "Šalinimui nepasirinkta komponentų."
 
 #: src/Localization/setupstrings.ulf#STRING_NO_UNINSTALLCOMPONENTS_SELECTED_2
 msgid  "Click 'OK' to select one or more components for uninstallation or to exit the Uninstallation Wizard."
-msgstr ""
+msgstr "Spustelėkite „Gerai“, jei norite pasirinkti komponentus šalinimui arba užverti diegimo vediklį."
 
 #: src/Localization/setupstrings.ulf#STRING_ALL_LANGUAGECOMPONENTS_SELECTED_1
 msgid  "All language components have been selected for uninstallation."
@@ -589,7 +589,7 @@ msgstr "Šalinimui pasirinkti visi kalbos komponentai."
 
 #: src/Localization/setupstrings.ulf#STRING_ALL_LANGUAGECOMPONENTS_SELECTED_2
 msgid  "Click 'OK' to select one or more language components not for uninstallation or to exit the Uninstallation Wizard."
-msgstr ""
+msgstr "Spustelėkite „Gerai“, jei norite išbraukti vieną ar keletą kalbos komponentų iš šalinimo sąrašo arba užverti diegimo vediklį."
 
 #: src/Localization/setupstrings.ulf#STRING_ALL_APPLICATIONCOMPONENTS_SELECTED_1
 msgid  "All application components have been selected for uninstallation."
@@ -597,7 +597,7 @@ msgstr "Šalinimui pasirinkti visi programos komponentai."
 
 #: src/Localization/setupstrings.ulf#STRING_ALL_APPLICATIONCOMPONENTS_SELECTED_2
 msgid  "Click 'OK' to select one or more application components not for uninstallation or to exit the Uninstallation Wizard."
-msgstr ""
+msgstr "Spustelėkite „Gerai“, jei norite išbraukti vieną ar keletą programos komponentų iš šalinimo sąrašo arba užverti šalinimo vediklį."
 
 #: src/Localization/setupstrings.ulf#STRING_CHANGE_SELECTION
 msgid  "Please change selection"

@@ -32,8 +32,8 @@ msgstr ""
 
 
 #: source/app/desktop.src#STR_RECOVER_QUERY.String.Text
-msgid  "Should the file "$1" be restored?"
-msgstr ""
+msgid  "Should the file \"$1\" be restored?"
+msgstr "پزئ عس۪ی \"$1\" فایل واپز اننن"
 
 #: source/app/desktop.src#STR_RECOVER_TITLE.String.Text
 msgid  "File Recovery"
@@ -41,15 +41,15 @@ msgstr "فائل دوبارئ حئصل"
 
 #: source/app/desktop.src#STR_RECOVER_PREPARED.WarningBox.Message
 msgid  "An unrecoverable error has occurred.\n\nAll modified files have been saved and can\nprobably be recovered at program restart."
-msgstr ""
+msgstr "نئ ٹھیك گژھن واجین غلطی آی.\n \n سارے تبدیل كرمئژئ فایلئ چھئ آمئژ محفوظ تھئونئ تئ ہیكن  \n واپس انییتھ یلئ پروگرام شروع كرئو۔"
 
 #: source/app/desktop.src#STR_BOOTSTRAP_ERR_CANNOT_START.String.Text
 msgid  "The application cannot be started. "
 msgstr "ایپلكیشن ہیكئو نئ شروع كیتھ۔"
 
 #: source/app/desktop.src#STR_BOOTSTRAP_ERR_DIR_MISSING.String.Text
-msgid  "The configuration directory "$1" could not be found."
-msgstr ""
+msgid  "The configuration directory \"$1\" could not be found."
+msgstr "ہیت ڈایریكٹری  \"$1\" آی نئ اتھ۪ی"
 
 #: source/app/desktop.src#STR_BOOTSTRAP_ERR_PATH_INVALID.String.Text
 msgid  "The installation path is invalid."
@@ -64,16 +64,16 @@ msgid  "An internal error occurred."
 msgstr "اندریم  غلطی آ  ئ۪ی"
 
 #: source/app/desktop.src#STR_BOOTSTRAP_ERR_FILE_CORRUPT.String.Text
-msgid  "The configuration file "$1" is corrupt."
-msgstr ""
+msgid  "The configuration file \"$1\" is corrupt."
+msgstr "ہییت فایل \"$1\"  چھئ كورپٹ"
 
 #: source/app/desktop.src#STR_BOOTSTRAP_ERR_FILE_MISSING.String.Text
-msgid  "The configuration file "$1" was not found."
-msgstr ""
+msgid  "The configuration file \"$1\" was not found."
+msgstr "ہییت فایل \"$1\"  آی نئ اتھ۪ی"
 
 #: source/app/desktop.src#STR_BOOTSTRAP_ERR_NO_SUPPORT.String.Text
-msgid  "The configuration file "$1" does not support the current version."
-msgstr ""
+msgid  "The configuration file \"$1\" does not support the current version."
+msgstr "ہییت فایل \"$1\"  چھئ  نئ یتھ ورجنس تعاون كران۔"
 
 #: source/app/desktop.src#STR_BOOTSTRAP_ERR_LANGUAGE_MISSING.String.Text
 msgid  "The user interface language cannot be determined."
@@ -93,11 +93,11 @@ msgstr ""
 
 #: source/app/desktop.src#STR_ASK_START_SETUP_MANUALLY.String.Text
 msgid  "Start the setup application to repair the installation from the CD or the folder containing the installation packages."
-msgstr ""
+msgstr "سیٹ اپ كریو شروع CD  پیٹھ انسٹالیشن ٹھیك كرنئ خعطرئ یا تئ فولڈر پیٹھئ یتھ منز انسٹالیشن پیكیج چھُ"
 
 #: source/app/desktop.src#STR_CONFIG_ERR_SETTINGS_INCOMPLETE.String.Text
 msgid  "The startup settings for accessing the central configuration are incomplete. "
-msgstr ""
+msgstr "شروع چئ سیٹینگس  سینٹرال كنفیوگریشنس واتنس تام چھئ نئ مكمكل "
 
 #: source/app/desktop.src#STR_CONFIG_ERR_CANNOT_CONNECT.String.Text
 msgid  "A connection to the central configuration could not be established. "
@@ -105,7 +105,7 @@ msgstr "سینٹرل كنفیوگریشنس تام  ہیوك نئ رئبطئ ق�
 
 #: source/app/desktop.src#STR_CONFIG_ERR_RIGHTS_MISSING.String.Text
 msgid  "You cannot access the central configuration because of missing access rights. "
-msgstr ""
+msgstr "تہئ ہیكیو نئ سیٹینگس  سینٹرال كنفیوگریشنس تام وئتیتھ كیازئ كئ ایكسیس حقوق چھئ نئ موجود۔"
 
 #: source/app/desktop.src#STR_CONFIG_ERR_ACCESS_GENERAL.String.Text
 msgid  "A general error occurred while accessing your central configuration. "
@@ -113,11 +113,11 @@ msgstr "اكھ آم غلطی گيی سیٹینگس  سینٹرال كنفیوگ�
 
 #: source/app/desktop.src#STR_CONFIG_ERR_NO_WRITE_ACCESS.String.Text
 msgid  "The changes to your personal settings cannot be stored centrally because of missing access rights. "
-msgstr ""
+msgstr "تہنزن ذيتی سیٹینگسن ہنز تبدیلی ہیكئو نئ سینٹرئلی محفوظ تھئویتھ كیازئ كئ ایكسیس حقوق چھئ نئ  موجود۔"
 
 #: source/app/desktop.src#STR_BOOTSTRAP_ERR_CFG_DATAACCESS.String.Text
 msgid  "%PRODUCTNAME cannot be started due to an error in accessing the %PRODUCTNAME configuration data.\n\nPlease contact your system administrator."
-msgstr ""
+msgstr "%PRODUCTNAME  ہیكئو نئ شروع كریتھ كیازئ كئ %PRODUCTNAME  ہیت ڈاٹاس تام واتنس منز آی غلطی\n\n پنئ نِس سیسٹم انطظامیس كریو رئبطئ۔"
 
 #: source/app/desktop.src#STR_INTERNAL_ERRMSG.String.Text
 msgid  "The following internal error has occurred: "
@@ -125,7 +125,7 @@ msgstr "مندر جئ زیل اندریم غلطی چھئ سپدیمئژ"
 
 #: source/app/desktop.src#QBX_USERDATALOCKED.QueryBox.Message
 msgid  "Either another instance of %PRODUCTNAME is accessing your personal settings or your personal settings are locked.\nSimultaneous access can lead to inconsistencies in your personal settings. Before continuing, you should make sure user '$u' closes %PRODUCTNAME on host '$h'.\n\nDo you really want to continue?"
-msgstr ""
+msgstr "یاتئ چھئ بدل كاہں  صورت %PRODUCTNAME  یچ تہنزئ زئتی سیٹینگس وصیل كران نتئ چھئوئ تہنزن سینٹینگسن كُلف.\n اكی ویز۪ی وصالت ہیك۪ی تہنزن زئتی سیٹینگسن منز بے قئدگی پئدئ كریتھ۔ برونٹھ پكنئ برونٹھ پز۪ی تہئ یقین كرُن كئ  '$u' گژھ۪ی بنز  '$h' ہوسٹس پیٹھ.\n\n تہئ چھئوئ یژھان برونٹھ پكُن؟"
 
 #: source/app/desktop.src#STR_TITLE_USERDATALOCKED.String.Text
 msgid  "%PRODUCTNAME %PRODUCTVERSION"
@@ -672,15 +672,15 @@ msgid  "Extension Software License Agreement of $NAME:"
 msgstr ""
 
 #: source/deployment/unopkg/unopkg.src#RID_STR_UNOPKG_ACCEPT_LIC_2.String.Text
-msgid  "Read the complete License Agreement displayed above. Accept the License Agreement by typing "yes" on the console then press the Return key. Type "no" to decline and to abort the extension setup."
+msgid  "Read the complete License Agreement displayed above. Accept the License Agreement by typing \"yes\" on the console then press the Return key. Type \"no\" to decline and to abort the extension setup."
 msgstr ""
 
 #: source/deployment/unopkg/unopkg.src#RID_STR_UNOPKG_ACCEPT_LIC_3.String.Text
-msgid  "[Enter "yes" or "no"]:"
+msgid  "[Enter \"yes\" or \"no\"]:"
 msgstr ""
 
 #: source/deployment/unopkg/unopkg.src#RID_STR_UNOPKG_ACCEPT_LIC_4.String.Text
-msgid  "Your input was not correct. Please enter "yes" or "no":"
+msgid  "Your input was not correct. Please enter \"yes\" or \"no\":"
 msgstr ""
 
 #: source/deployment/unopkg/unopkg.src#RID_STR_UNOPKG_ACCEPT_LIC_YES.String.Text
@@ -737,7 +737,7 @@ msgstr " رجسٹریشن "
 
 #: source/migration/wizard.src#STR_WELCOME_MIGRATION.String.Text
 msgid  "This wizard will guide you through the license agreement, the transfer of user data from %OLD_VERSION and the registration of %PRODUCTNAME.\n\nClick 'Next' to continue."
-msgstr ""
+msgstr "ویذارڈ  دیوئ تہئ  ہدایت  لایسنس معاہدہس منز ، ڈاٹا %OLD_VERSION  پیٹھئ  تئ %PRODUCTNAME   ریجیسٹریشنس تبدیل كرنس منز  .\n\n برونٹھ پكنئ خعطرئ كریو 'برونٹھ' كلیك                                                                                                                                                                                      "
 
 #: source/migration/wizard.src#STR_WELCOME_WITHOUT_LICENSE.String.Text
 msgid  "This wizard will guide you through the registration of %PRODUCTNAME.\n\nClick 'Next' to continue."
@@ -753,7 +753,7 @@ msgstr ""
 
 #: source/migration/wizard.src#ERRBOX_REG_NOSYSBROWSER.ErrorBox.Message
 msgid  "An error occurred in starting the web browser.\nPlease check the %PRODUCTNAME and web browser settings."
-msgstr ""
+msgstr "ویب براؤزر  شروع كرنس منز آی  غلطی ۔\n                          مہربئنی كریتھ  وچھیو%PRODUCTNAME  تئ ویب براؤزر کی سیٹینگس  ۔"
 
 #: source/migration/wizard.src#QB_ASK_DECLINE.QueryBox.Message
 msgid  "Do you really want to decline?"
@@ -765,7 +765,7 @@ msgstr "%PRODUCTNAME %PRODUCTVERSION  منز چھُ تہئ خوش آمدید"
 
 #: source/migration/wizard.src#TP_WELCOME.FT_WELCOME_BODY.FixedText.Text
 msgid  "This wizard will guide you through the license agreement and the registration of %PRODUCTNAME.\n\nClick 'Next' to continue."
-msgstr ""
+msgstr "ویذارڈ  دیوئ تہئ  ہدایت  لایسنس معاہدہس منز تئ ریجیسٹریشنس %PRODUCTNAME منز.\n\nبرونٹھ پكنئ خعطرئ دبئویو' برونٹھ'۔"
 
 #: source/migration/wizard.src#TP_LICENSE.FT_LICENSE_HEADER.FixedText.Text
 msgid  "Please follow these steps to accept the license"
@@ -777,7 +777,7 @@ msgstr "1۔ "
 
 #: source/migration/wizard.src#TP_LICENSE.FT_LICENSE_BODY_1_TXT.FixedText.Text
 msgid  "View the complete License Agreement. Please use the scrollbar or the '%PAGEDOWN' button in this dialog to view the entire license text."
-msgstr ""
+msgstr "مكمل لایسنس معاہدئ وچھیو۔   یتھ ڈایلاگس منز سئوری لایسنس مواد ئچھنئ خعطرئ  كریو مہربئنی كریتھ سكرول بار  یا '%PAGEDOWN' بٹن  استیمال۔"
 
 #: source/migration/wizard.src#TP_LICENSE.FT_LICENSE_BODY_2.FixedText.Text
 msgid  "2."
@@ -805,7 +805,7 @@ msgstr "ذئتی ڈاٹا كریوو منتقل"
 
 #: source/migration/wizard.src#TP_MIGRATION.FT_MIGRATION_BODY.FixedText.Text
 msgid  "Most personal data from %OLDPRODUCT installation can be reused in %PRODUCTNAME %PRODUCTVERSION.\n\nIf you do not want to reuse any settings in %PRODUCTNAME %PRODUCTVERSION, unmark the check box."
-msgstr ""
+msgstr "واریاح ذئتی ڈاٹا %OLDPRODUCT  انسٹالیشن    ہیكئو دوبارئ استیمال كریتھ            %PRODUCTNAME %PRODUCTVERSION.\n  منز\nاگرنئ تہئ %PRODUCTNAME %PRODUCTVERSIONمنز كہین سیٹینگس چھئونئ یژھان استیمال كرین تیل۪ی مئ چیک بکس  منز نشان۔"
 
 #: source/migration/wizard.src#TP_MIGRATION.CB_MIGRATION.CheckBox.Text
 msgid  "Transfer personal data"
@@ -829,7 +829,7 @@ msgstr "پنُن پورئ ناو تئ   ابتدائیہ  كریو مہیا "
 
 #: source/migration/wizard.src#TP_USER.FT_USER_BODY.FixedText.Text
 msgid  "The user name will be used in the document properties, templates and when you record changes made to documents."
-msgstr ""
+msgstr "استیمال كرن وئل سند ناو یی دستاویز خصوصیاتن منز ، ٹیملیٹس منز تئ  یلي تہئ   دستاویزس منز  تبدیلی درج  كریو  تتھ منز استیمال كرنئ۔"
 
 #: source/migration/wizard.src#TP_USER.FT_USER_FIRST.FixedText.Text
 msgid  "~First name"
@@ -853,7 +853,7 @@ msgstr "%PRODUCTNAME رجیسٹریشن  "
 
 #: source/migration/wizard.src#TP_REGISTRATION.FT_REGISTRATION_BODY.FixedText.Text
 msgid  "You now have the opportunity to register as a %PRODUCTNAME user. Registration is voluntary and is without obligation.\n\nIf you register, we can inform you about new developments concerning this product."
-msgstr ""
+msgstr "تہئ چھئوئ موقعئ %PRODUCTNAME  استیمال كرن وئل سیندس ناو س پیٹھ ریجیسٹر كرنُك۔ ریجیسٹریشن چھئوئ تہنزئ مرزی پیٹھ تئ چھئ نئ كایں پابندی.\n\n اگر تہئ ریجسٹر كریو عس ہیكئو تہئ پروڈكٹس ك۪ین نئوین تبدیلین  متعلق  مولومات دیتھ۔"
 
 #: source/migration/wizard.src#TP_REGISTRATION.RB_REGISTRATION_NOW.RadioButton.Text
 msgid  "I want to register ~now"
@@ -869,7 +869,7 @@ msgstr "بئ چھُس ني  یژھان کر ُن۔   رجسٹر"
 
 #: source/migration/wizard.src#TP_REGISTRATION.FT_REGISTRATION_END.FixedText.Text
 msgid  "We hope you enjoy working with %PRODUCTNAME.\n\nTo exit the wizard, click 'Finish'."
-msgstr ""
+msgstr "عس۪ی چھئ امید تہئ آس۪ی وئ   %PRODUCTNAMEسعتھ كئم كرنس منز مزئ آمُت.\n\n ویزارڈ منز ن۪یبر نیرنئ خعطرئ دبئویو 'مكلیو'"
 
 #: win32/source/rebase/rebasegui.ulf#%APP_TITLE%
 msgid  "Installation Status"
@@ -886,6 +886,10 @@ msgstr ""
 #: win32/source/rebase/rebasegui.ulf#%MSG_NO_INSTALLATION_FOUND%
 msgid  "Cannot find Office installation."
 msgstr ""
+
+#: win32/source/setup/setup.ulf#%APP_TITLE%
+msgid  "Setup"
+msgstr "سیٹ اپ "
 
 #: win32/source/setup/setup.ulf#%APP_PROD_TITLE%
 msgid  "The %PRODUCTNAME Setup"
@@ -905,7 +909,7 @@ msgstr "سیٹ اپ چھُ  منسوخ آمُت كرنئ  "
 
 #: win32/source/setup/setup.ulf#%REQUIRES_ADMIN_PRIV%
 msgid  "Administrator privileges are required for upgrading the Windows Installer."
-msgstr ""
+msgstr "ونڈوز انسٹالر   اپگریڈ كرنئ خعطرئ چھئ  ایڈمینیسٹریٹر  پریویلیجیز  ضروری  ۔"
 
 #: win32/source/setup/setup.ulf#%FILE_NOT_FOUND%
 msgid  "Setup was unable to find the file '%s'."
@@ -913,7 +917,7 @@ msgstr "سیٹ اپ '%s'  گئو فائل  ژھانڈنس منز ناكام"
 
 #: win32/source/setup/setup.ulf#%INVALID_PARAM%
 msgid  "Invalid command line option '%s'. Please use '/?' for help."
-msgstr ""
+msgstr "غئر منظور کمانڈلائن اوپشن '%s'۔ مہر بئنی كریتھ كریو مدد   '/?' استمیال ۔"
 
 #: win32/source/setup/setup.ulf#%SETUP_TO_OLD%
 msgid  "This package requires at least the version '%s' of the Windows Installer. \nYou have Windows Installer '%s' on your system!"
@@ -925,7 +929,7 @@ msgstr ""
 
 #: win32/source/setup/setup.ulf#%USAGE%
 msgid  "Usage:\n   /? :  Shows this dialog.\n   /a :  Performs an administrative installation.\n   /j[u|m] :  Performs an advertising installation.\n   /q[n] : Do not show any user interface (silent mode).\n"
-msgstr ""
+msgstr "استیمال :\n /? :یہ ڈائیلوگ چھُ ہاوان۔\\  /a :انتظامئ انسٹالیشن انجام انان.\n   /j[u|m] :اشتہار بئزی  ہنز كئم انجام انان .\n كاہں تئ استیمال كرن وئل سند انٹرفیس (خاموش موڈ) مئ ہئویو  .\n                                                                                                                                                                            "
 
 #: win32/source/setup/setup.ulf#%ALREADY_RUNNING%
 msgid  "There is already a setup process running."
@@ -1046,7 +1050,3 @@ msgstr "چینی(سہل)"
 #: win32/source/setup/setup.ulf#%LANGUAGE_PT_PT%
 msgid  "Portuguese (Portugal)"
 msgstr "پرتگالی(پرتگال)"
-
-#: win32/source/setup/setup.ulf#%APP_TITLE%
-msgid  "Setup"
-msgstr "سیٹ اپ "

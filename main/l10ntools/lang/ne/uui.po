@@ -137,7 +137,7 @@ msgstr "लक्ष्य पहिल्यै अवस्थित छ ।"
 
 #: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_IO_MODULESIZEEXCEEDED & ERRCODE_RES_MASK).String.Text
 msgid  "You are about to save/export a password protected basic library containing module(s) \n$(ARG1)\nwhich are too large to store in binary format. If you wish users that don't have access to the library password to be able to run macros in those module(s) you must split those modules into a number of smaller modules. Do you wish to continue to save/export this library?"
-msgstr ""
+msgstr "बाइनरी ढाँचामा भण्डारण गर्न तपाइँ सुरक्षित आधारभूत पुस्तकालय समावेस भएको मोड्यूलहरु\n$(ARG1)\nर पासवर्ड बचत/निर्यात गर्नेमा हुनुहुन्छ । यदि तपाइँ प्रयोगकर्तासँग मोड्यूलमा म्याक्रो चलाउन सक्षम बनाउनको लागि पुस्तकालय पासवर्डमा पहुँच चाहनु हुन्न भने साना मोड्यूलको सङ्ख्यामा मोड्यूलहरूलाई बिभाजन गर्नै पर्दछ । तपाइँ यो पुस्तकालयलाई बचत/निर्यात गर्नको लागि निरन्तर गर्न चाहानुहुन्छ ?"
 
 #: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_IO_BADCRC & ERRCODE_RES_MASK).String.Text
 msgid  "The data from $(ARG1) has an incorrect checksum."
@@ -241,11 +241,11 @@ msgstr "$(ARG1) मा बायाँ तिर खालिस्थान छ
 
 #: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_IO_TOOMANYOPENFILES & ERRCODE_RES_MASK).String.Text
 msgid  "The operation on $(ARG1) cannot be performed because too many files are already open."
-msgstr ""
+msgstr "$(ARG1) मा सञ्चालन प्रस्तुत हुन सक्दैन किनकि अति धेरै फाइल पहिल्यै खुलेका छन् ।"
 
 #: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_IO_OUTOFMEMORY & ERRCODE_RES_MASK).String.Text
 msgid  "The operation on $(ARG1) cannot be performed because there is no more memory available."
-msgstr ""
+msgstr "$(ARG1) मा सञ्चालन प्रस्तुत हुन सक्दैन किनकि पर्याप्त स्मृति उपलव्ध छैन ।"
 
 #: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_IO_PENDING & ERRCODE_RES_MASK).String.Text
 msgid  "The operation on $(ARG1) cannot continue because more data is pending."
@@ -289,11 +289,11 @@ msgstr "स्थापना भएको जाभा संस्करण $(
 
 #: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_WRONGJAVA_MIN & ERRCODE_RES_MASK).String.Text
 msgid  "The installed Java version is not supported, at least version $(ARG1) is required."
-msgstr ""
+msgstr "स्थापना भएको जाभा संस्करण समर्थित छैन, कम्तिमा संस्करण $(ARG1) को आवश्यकता पर्दछ ।"
 
 #: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_WRONGJAVA_VERSION_MIN & ERRCODE_RES_MASK).String.Text
 msgid  "The installed Java version $(ARG1) is not supported, at least version $(ARG2) is required."
-msgstr ""
+msgstr "स्थापना भएको जाभा संस्करण $(ARG1) समर्थित छैन, कम्तिमा संस्करण $(ARG2) को आवश्यकता पर्दछ ।"
 
 #: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_BADPARTNERSHIP & ERRCODE_RES_MASK).String.Text
 msgid  "The data associated with the partnership is corrupted."
@@ -325,31 +325,31 @@ msgstr "वस्तु डाइरेक्टरी $(ARG1) मा सिर�
 
 #: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_IO_UNSUPPORTEDOVERWRITE & ERRCODE_RES_MASK).String.Text
 msgid  "%PRODUCTNAME cannot keep files from being overwritten when this transmission protocol is used. Do you want to continue anyway?"
-msgstr ""
+msgstr "%PRODUCTNAME जब यो प्रसारणमा प्रोटोकोल प्रयोग गरिन्छ ,अधिलेखन सुरुआत बाट फाइलहरू राख्न सकिँदैन । तपाईँ जे भए पनि निरन्तरता दिनुहुन्छ ?"
 
 #: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_IO_BROKENPACKAGE & ERRCODE_RES_MASK).String.Text
 msgid  "The file '$(ARG1)' is corrupt and therefore cannot be opened. %PRODUCTNAME can try to repair the file.\n\nThe corruption could be the result of document manipulation or of structural document damage due to data transmission.\n\nWe recommend that you do not trust the content of the repaired document.\nExecution of macros is disabled for this document.\n\nShould %PRODUCTNAME repair the file?\n"
-msgstr ""
+msgstr "फाइल '$(ARG1)' अनुपयोगी छ र खोल्न सकिएन । के '%PRODUCTNAME ले फाइल मर्मत गर्छ ?"
 
 #: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_IO_BROKENPACKAGE_CANTREPAIR & ERRCODE_RES_MASK).String.Text
 msgid  "The file '$(ARG1)' could not be repaired and therefore cannot be opened."
-msgstr ""
+msgstr "फाइल '$(ARG1)'मर्मत गर्न सकिएन र खोल्न सकिएन ।"
 
 #: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_CONFIGURATION_BROKENDATA_NOREMOVE & ERRCODE_RES_MASK).String.Text
 msgid  "Configuration data in '$(ARG1)' is corrupted. Without this data some functions may not operate correctly.\nDo you want to continue startup of %PRODUCTNAME without the corrupted configuration data?"
-msgstr ""
+msgstr "'$(ARG1)'मा कन्फिगरेसन डेटा अनुपयोगी छ । यो डेटा बिना केही प्रकार्यहरू ठीक सँग संञ्चालन हुँदैन । \nतपाईँ अनुपयोगी गरिएको कन्फिगरेसन डेटा बिना %PRODUCTNAME को सुरुआत निरन्तरता दिन चाहनुहुन्छ ?"
 
 #: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_CONFIGURATION_BROKENDATA_WITHREMOVE & ERRCODE_RES_MASK).String.Text
 msgid  "The personal configuration file '$(ARG1)' is corrupted and must be deleted to continue. Some of your personal settings may be lost.\nDo you want to continue startup of %PRODUCTNAME without the corrupted configuration data?"
-msgstr ""
+msgstr "व्यक्तिगत कन्फिगरेसन फाइल '$(ARG1)' अनुपयोगी छ र जारी राख्नका लागि मेट्नुनै पर्छ । तपाईँंको केही व्यक्तिगत सेटिङहरू नष्ट हुन सक्छन् । \n तपाईँं अनुपयोगी कन्फिगरेसन डेटा बिना %PRODUCTNAME को स्टार्टप जारी राख्न चाहनुहुन्छ ?"
 
 #: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_CONFIGURATION_BACKENDMISSING & ERRCODE_RES_MASK).String.Text
 msgid  "The configuration data source '$(ARG1)' is unavailable. Without this data some functions may not operate correctly."
-msgstr ""
+msgstr "कन्फिगरेसन डेटा स्रोत '$(ARG1)'उपलब्ध छैन । यो डेटा बिना केही प्रकार्यहरू ठीक सँग सञ्चालन हुन सक्ने छैन ।"
 
 #: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_CONFIGURATION_BACKENDMISSING_WITHRECOVER & ERRCODE_RES_MASK).String.Text
 msgid  "The configuration data source '$(ARG1)' is unavailable. Without this data some functions may not operate correctly.\nDo you want to continue startup of %PRODUCTNAME without the missing configuration data?"
-msgstr ""
+msgstr "कन्फिगरेसन डेटा स्रोत  '$(ARG1)' उपलब्ध छैन । यो डेटा बिना केही प्रकार्यहरू ठीकसँग सञ्चाल हुन सक्ने छैन । \n तपाईँं गल्ति भैरहेका कन्फिगरेसन डेटा बिना %PRODUCTNAME को स्टार्टप गर्न चाहनुहुन्छ ?"
 
 #: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_INVALID_XFORMS_SUBMISSION_DATA & ERRCODE_RES_MASK).STRING.Text
 msgid  "The form contains invalid data. Do you still want to continue?"
@@ -373,19 +373,19 @@ msgstr ""
 
 #: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_UNKNOWNAUTH_UNTRUSTED).STRING.Text
 msgid  "Unable to verify the identity of $(ARG1) site.\n\nBefore accepting this certificate, you should examine this site's certificate carefully. Are you willing to accept this certificate for the purpose of identifying the Web site $(ARG1)?"
-msgstr ""
+msgstr "$(ARG1) को साइट पहिचाहन रूजु गर्न असक्षम छ ।\n\nयो प्रमाणपत्र स्विकार गर्नु अघि, तपाइँले होसियारि पूर्वक यो साइटको प्रमाणपत्रको जाँच गर्नु पर्दछ । तपाइँ वेब साइट $(ARG1) पहिचानको उदेश्यको लागि यो प्रमाणपत्र स्विकार गर्न चाहिरहनु भएको छ ?"
 
 #: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_SSLWARN_EXPIRED_1).STRING.Text
 msgid  "$(ARG1) is a site that uses a security certificate to encrypt data during transmission, but its certificate expired on $(ARG2).\n\nYou should check to make sure that your computer's time is correct."
-msgstr ""
+msgstr "$(ARG1) गुप्तिकरण डेटा स्थान्तरण गर्ने अवधिमा यो साइटले सुरक्षा प्रमाणपत्र प्रयोग गर्दछ , तर यो प्रमाणपत्र $(ARG2) मा समाप्त भयो ।\n\nतपाइँले तपाइँको कम्पूटरको ठिक समय छ छैन भनेर जाँच गर्नुपर्दछ ।"
 
 #: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_SSLWARN_DOMAINMISMATCH_1).STRING.Text
 msgid  "You have attempted to establish a connection with $(ARG1). However, the security certificate presented belongs to $(ARG2). It is possible, though unlikely, that someone may be trying to intercept your communication with this web site.\n\nIf you suspect the certificate shown does not belong to $(ARG1), please cancel the connection and notify the site administrator.\n\nWould you like to continue anyway?"
-msgstr ""
+msgstr "तपाइँले $(ARG1) सँग जडान स्थापना गर्न पुरा प्रयास गर्नुभएको छ । त्यसैले सुरक्षा प्रमाणपत्रले $(ARG2) मा अधिकार प्रस्तुत गर्यो । कसैले प्रयास गरीरहँदा यो वेब साइटसँग तपाइँको सञ्चार मिल्न गयो भने यो उपयुक्त जस्तो देखिन्छ ।\n\nयदि तपाइँ $(ARG1) सँग अधिकार नभएको प्रमाणपत्र देखाउन गोप्य गर्नुहुन्छ भने, कृपया जडानलाई रद्द गर्नुहोस् र साइट प्रसाशकलाई जानकरीदिनुहोस् ।\n\nकुनै तरिकाले कार्य सुचारू गर्न चाहानुहुन्छ ?"
 
 #: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_SSLWARN_INVALID_1).STRING.Text
 msgid  "The certificate could not be validated. You should examine this site's certificate carefully.\n\nIf you suspect the certificate shown, please cancel the connection and notify the site administrator."
-msgstr ""
+msgstr "प्रमाणपत्र वैध गर्न सकिएन । तपाइँले यो साइटको प्रमाणपत्र होसियारी पूर्वक जाँच गर्नु पर्ने छ ।\n\nयदि तपाइँ प्रमाणपत्र देखाउन गोप्य चाहानुहुन्छ भने, कृपया जडान रद्द गर्नुहोस् र साइट प्रसाशकलाई जानकारी दिनुहोस् ।"
 
 #: source/ids.src#RID_UUI_ERRHDL.(TITLE_UUI_SSLWARN_DOMAINMISMATCH).STRING.Text
 msgid  "Security Warning: Domain Name Mismatch"
@@ -416,8 +416,8 @@ msgid  "Enter user name and password for: \n%1"
 msgstr ""
 
 #: source/logindlg.src#DLG_UUI_LOGIN.STR_LOGIN_REALM.String.Text
-msgid  "Enter user name and password for: \n"%2" on %1"
-msgstr ""
+msgid  "Enter user name and password for: \n\"%2\" on %1"
+msgstr "कृपया, यहाँ %1 मा \"%2\"का लागि  प्रयोगकर्ता नाम र पासवर्ड प्रविष्ट गर्नुहोस् ।"
 
 #: source/logindlg.src#DLG_UUI_LOGIN.FT_LOGIN_PATH.FixedText.Text
 msgid  "~Path"
@@ -469,7 +469,7 @@ msgstr "पठाउनुहोस्"
 
 #: source/cookiedg.src#STR_COOKIES_RECV_START.String.Text
 msgid  "The '${HOST}' server wishes to set one or more cookies.\nCookies contain information referring to certain URL classes. If %PRODUCTNAME later requests a document with a URL corresponding to the class of a previously set cookie, %PRODUCTNAME will send this information to the server. This allows a server to recognize the status of a WWW application, e.g., when shopping online.\n\nThe following Cookies should be set:\n\n"
-msgstr ""
+msgstr "'${HOST}' सर्भरले एक वा सो भन्दा बढी कुकीहरू सेट गर्न चाहान्छ ।\nकुकीहरूमा निश्चित URL वर्गहरूलाई अपिल गर्ने सूचना समावेश छ । यदि %PRODUCTNAME पछिका अनुरोधहरूको कागजात पहिलेका कुकिसेटको वर्गमा URL सँग सम्बन्धित छ भने, %PRODUCTNAME को यो सूचना सर्भरसँग पठाइने छ । यसले WWW अनुप्रयोगको वस्तुस्थिति पहिचान गर्ने सर्भरलाई अनुमति दिन्छ,उदाहरण का लागि-अनलाइनमा किनमेल गरींदा ।\n\n निम्न कुकीहरू सेट हुनै पर्दछ:\n\n"
 
 #: source/cookiedg.src#STR_COOKIES_RECV_COOKIES.String.Text
 msgid  "Domain: ${DOMAIN}, Path: ${PATH}, Cookie: ${COOKIE}.\n"
@@ -481,7 +481,7 @@ msgstr "कुकी सोधपुछ"
 
 #: source/cookiedg.src#STR_COOKIES_SEND_START.String.Text
 msgid  "%PRODUCTNAME has saved cookies for the server '${HOST}' which will be sent when requesting the document ${PATH}.\nCookies contain information which refers to certain URL classes. They are sent by some servers to %PRODUCTNAME where they are saved when certain documents are accessed. If %PRODUCTNAME loads a document that, according to the URL, corresponds to a class of one of the previously received Cookies, %PRODUCTNAME will send this information to that server. This enables a server to keep track of the status of a WWW application, e.g., when shopping online.\n\nThe following Cookies should be set:\n\n"
-msgstr ""
+msgstr "%PRODUCTNAME सर्भरका लागि '${HOST}कुकीहरू बचत गरिएको छ,जब कागजात अनुरोध गरिन्छ तब त्यसलाई पठाइने छ । ${PATH}\nनिश्चित URL वर्गहरूमा प्रेषित गरिंदा कुकीहरूको सूचना समावेश गरिन्छ । तिनीहरू केही सर्भरहरूद्वारा %PRODUCTNAME मा पठाइन्छ, जहाँ तिनीहरू बचत गरिएकाछन्, त्यहाँ निश्चित कागजातहरू पहुँच प्राप्त हुन्छन् । यदि %PRODUCTNAME कागजात लोड गरिन्छन् कि URL को अनुसार ति पहिलेका प्राप्त कुकीहरू को एउटा वर्ग मा सम्बन्धित हुन्छ , %PRODUCTNAME को यो सूचना त्यो सर्भर मा पठाइने छ । यो योग्य बनाइने सर्भर अनुप्रयोग WWW को स्तरको ट्राकमा राखिन्छ, उदाहरणका लागि -अनलाइनमा किनमेल गरिंदा ।\n\n निम्न कुकीहरू सेट हुनै पर्दछ:\n\n"
 
 #: source/cookiedg.src#STR_COOKIES_SEND_COOKIES.String.Text
 msgid  "Domain: ${DOMAIN}, Path: ${PATH}, Cookie: ${COOKIE}.\n"
@@ -501,7 +501,7 @@ msgstr ""
 
 #: source/passworderrs.src#STR_ERROR_MASTERPASSWORD_WRONG.String.Text
 msgid  "The master password is incorrect."
-msgstr ""
+msgstr "एउटा गलत मुख्य पासवर्ड प्रविष्टि भयो । कृपया यसलाई फेरि प्रविष्ट गर्नुहोस् ।"
 
 #: source/passworderrs.src#STR_ERROR_SIMPLE_PASSWORD_WRONG.String.Text
 msgid  "The password is incorrect."
@@ -561,7 +561,7 @@ msgstr "%PRODUCTNAME अद्यावधिक उपलब्ध"
 
 #: source/newerverwarn.src#RID_DLG_NEWER_VERSION_WARNING.FT_INFO.FixedText.Text
 msgid  "This document was created by a newer version of %PRODUCTNAME. It may contain features not supported by your current version.\n\nClick 'Update Now...' to run online update and get the latest version of %PRODUCTNAME."
-msgstr ""
+msgstr "यो कागजात %PRODUCTNAME को नयाँ संस्करणद्वारा सिर्जना गरिएको थियो । यसमा तपाईँको हालको संस्करणले समर्थन नगर्ने विशेषता समाविष्ट हुनसक्छ ।\n\nअनलाइन अद्यावधिक चलाउन 'अहिले अद्यावधिक गर्नुहोस्...' बटनमा क्लिक गर्नुहोस् र %PRODUCTNAME को सबैभन्दा पछिल्लो संस्करण प्राप्त गर्नुहोस् ।"
 
 #: source/newerverwarn.src#RID_DLG_NEWER_VERSION_WARNING.PB_UPDATE.PushButton.Text
 msgid  "~Update Now..."
@@ -609,7 +609,7 @@ msgstr "दृश्य हस्ताक्षर..."
 
 #: source/secmacrowarnings.src#RID_XMLSECDLG_MACROWARN.FI_DESCR2.FixedText.Text
 msgid  "Macros may contain viruses. Disabling macros for a document is always safe. If you disable macros you may lose functionality provided by the document macros."
-msgstr ""
+msgstr "म्याक्रोले भाइरस समावेस गर्न सक्छ । सँदै सुरक्षित रहने कागजातको लागि म्याक्रो अक्षम पार्दै छ । यदि तपाइँले म्याक्रो अक्षम बनाउनुभयो भने तपाइँले कागजात म्याक्रोद्वारा प्रदान गरिएको प्रकार्य हराउन सक्नु हुने छ ।"
 
 #: source/secmacrowarnings.src#RID_XMLSECDLG_MACROWARN.CB_ALWAYSTRUST.CheckBox.Text
 msgid  "Always trust macros from this source"

@@ -82,8 +82,9 @@ msgid  "Dear Mr. <2>,"
 msgstr "ძვირფასო ბატონო. <2>"
 
 #: registry/data/org/openoffice/Office/Writer.xcu#..Writer.MailMergeWizard.NeutralGreetingLines
+#, fuzzy
 msgid  "To whom it may concern,;Dear Friends,;Dear Sir or Madam,;Hello,"
-msgstr ""
+msgstr "ვისაც უნდა ეხებოდეს, ძვირფასო მეგობრებო, პატივცემულო ბატონებო და ქალბატონებიო,;გამარჯობათ,"
 
 #: registry/data/org/openoffice/Office/Writer.xcu#..Writer.Insert.Caption.CaptionOrderNumberingFirst
 msgid  "true"
@@ -194,52 +195,42 @@ msgid  "740"
 msgstr ""
 
 #: registry/data/org/openoffice/Office/Embedding.xcu#..Embedding.Verbs.SHOW.VerbUIName
-#, fuzzy
 msgid  "~Edit"
 msgstr "~რედაქტირება"
 
 #: registry/data/org/openoffice/Office/Embedding.xcu#..Embedding.Verbs.OPEN.VerbUIName
-#, fuzzy
 msgid  "~Open"
 msgstr "~გახსნა"
 
 #: registry/data/org/openoffice/Office/Embedding.xcu#..Embedding.Verbs.PROPERTIES.VerbUIName
-#, fuzzy
 msgid  "Propert~ies..."
 msgstr "~თვისებები"
 
 #: registry/data/org/openoffice/Office/Embedding.xcu#..Embedding.Verbs.SAVECOPYAS.VerbUIName
-#, fuzzy
 msgid  "Save Copy ~as..."
 msgstr "შეინახე ასლი ~როგორც..."
 
 #: registry/data/org/openoffice/Office/Embedding.xcu#..Embedding.ObjectNames.Calc.ObjectUIName
-#, fuzzy
 msgid  "%PRODUCTNAME %PRODUCTVERSION Spreadsheet"
 msgstr "%PRODUCTNAME %PRODUCTVERSION ელექტრონული ცხრილი"
 
 #: registry/data/org/openoffice/Office/Embedding.xcu#..Embedding.ObjectNames.Chart.ObjectUIName
-#, fuzzy
 msgid  "%PRODUCTNAME %PRODUCTVERSION Chart"
 msgstr "%PRODUCTNAME %PRODUCTVERSION დიაგრამა"
 
 #: registry/data/org/openoffice/Office/Embedding.xcu#..Embedding.ObjectNames.Draw.ObjectUIName
-#, fuzzy
 msgid  "%PRODUCTNAME %PRODUCTVERSION Drawing"
 msgstr "%PRODUCTNAME %PRODUCTVERSION ნახატი"
 
 #: registry/data/org/openoffice/Office/Embedding.xcu#..Embedding.ObjectNames.Impress.ObjectUIName
-#, fuzzy
 msgid  "%PRODUCTNAME %PRODUCTVERSION Presentation"
 msgstr "%PRODUCTNAME %PRODUCTVERSION პრეზენტაცია"
 
 #: registry/data/org/openoffice/Office/Embedding.xcu#..Embedding.ObjectNames.Math.ObjectUIName
-#, fuzzy
 msgid  "%PRODUCTNAME %PRODUCTVERSION Formula"
 msgstr "%PRODUCTNAME %PRODUCTVERSION ფორმულა"
 
 #: registry/data/org/openoffice/Office/Embedding.xcu#..Embedding.ObjectNames.Writer.ObjectUIName
-#, fuzzy
 msgid  "%PRODUCTNAME %PRODUCTVERSION Text"
 msgstr "%PRODUCTNAME %PRODUCTVERSION ტექსტი"
 
@@ -252,587 +243,470 @@ msgid  "10"
 msgstr ""
 
 #: registry/data/org/openoffice/Office/Common.xcu#..Common.Menus.New.m0.Title
-#, fuzzy
 msgid  "~Text Document"
 msgstr "~ტექსტური დოკუმენტი"
 
 #: registry/data/org/openoffice/Office/Common.xcu#..Common.Menus.New.m1.Title
-#, fuzzy
 msgid  "~Spreadsheet"
 msgstr "~ელექტრონული ცხრილი"
 
 #: registry/data/org/openoffice/Office/Common.xcu#..Common.Menus.New.m2.Title
-#, fuzzy
 msgid  "~Presentation"
 msgstr "~პრეზენტაცია"
 
 #: registry/data/org/openoffice/Office/Common.xcu#..Common.Menus.New.m3.Title
-#, fuzzy
 msgid  "~Drawing"
 msgstr "~ნახატი"
 
 #: registry/data/org/openoffice/Office/Common.xcu#..Common.Menus.New.m4.Title
-#, fuzzy
 msgid  "Database"
 msgstr "მონაცემთა ბაზა"
 
 #: registry/data/org/openoffice/Office/Common.xcu#..Common.Menus.New.m6.Title
-#, fuzzy
 msgid  "~HTML Document"
 msgstr "~HTML დოკუმენტი"
 
 #: registry/data/org/openoffice/Office/Common.xcu#..Common.Menus.New.m7.Title
-#, fuzzy
 msgid  "~XML Form Document"
 msgstr "~XML ფორმის დოკუმენტი"
 
 #: registry/data/org/openoffice/Office/Common.xcu#..Common.Menus.New.m8.Title
-#, fuzzy
 msgid  "M~aster Document"
 msgstr "~მთავარი დოკუმენტი"
 
 #: registry/data/org/openoffice/Office/Common.xcu#..Common.Menus.New.m10.Title
-#, fuzzy
 msgid  "F~ormula"
 msgstr "~ფორმულა"
 
 #: registry/data/org/openoffice/Office/Common.xcu#..Common.Menus.New.m11.Title
-#, fuzzy
 msgid  "~Labels"
 msgstr "~წარწერები"
 
 #: registry/data/org/openoffice/Office/Common.xcu#..Common.Menus.New.m12.Title
-#, fuzzy
 msgid  "B~usiness Cards"
 msgstr "~ბიზნეს ბარათები"
 
 #: registry/data/org/openoffice/Office/Common.xcu#..Common.Menus.New.m14.Title
-#, fuzzy
 msgid  "Templates a~nd Documents"
 msgstr "შაბლონები ~და დოკუმენტები"
 
 #: registry/data/org/openoffice/Office/Common.xcu#..Common.Menus.Wizard.m0.Title
-#, fuzzy
 msgid  "~Letter..."
 msgstr "~წერილი..."
 
 #: registry/data/org/openoffice/Office/Common.xcu#..Common.Menus.Wizard.m1.Title
-#, fuzzy
 msgid  "~Fax..."
 msgstr "~ფაქსი..."
 
 #: registry/data/org/openoffice/Office/Common.xcu#..Common.Menus.Wizard.m2.Title
-#, fuzzy
 msgid  "~Agenda..."
 msgstr "~აგენდა..."
 
 #: registry/data/org/openoffice/Office/Common.xcu#..Common.Menus.Wizard.m5.Title
-#, fuzzy
 msgid  "~Presentation..."
 msgstr "~პრეზენტაცია..."
 
 #: registry/data/org/openoffice/Office/Common.xcu#..Common.Menus.Wizard.m7.Title
-#, fuzzy
 msgid  "~Web Page..."
 msgstr "~ვებ გვერდი..."
 
 #: registry/data/org/openoffice/Office/Common.xcu#..Common.Menus.Wizard.m11.Title
-#, fuzzy
 msgid  "Document ~Converter..."
 msgstr "დოკუმენტის ~გადამყვანი..."
 
 #: registry/data/org/openoffice/Office/Common.xcu#..Common.Menus.Wizard.m12.Title
-#, fuzzy
 msgid  "~Euro Converter..."
 msgstr "~ევროს გადამყვანი..."
 
 #: registry/data/org/openoffice/Office/Common.xcu#..Common.Menus.Wizard.m14.Title
-#, fuzzy
 msgid  "Address Data Source..."
 msgstr "მისამართების მონაცემთა წყარო"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#..TableWizard.TableWizard.business.Name
-#, fuzzy
 msgid  "Business"
 msgstr "ბიზნესი"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#..TableWizard.TableWizard.business.Tables.categories.Name
-#, fuzzy
 msgid  "Categories"
 msgstr "კატეგორიები"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#..TableWizard.TableWizard.business.Tables.categories.Fields.categoryID.Name
-#, fuzzy
 msgid  "CategoryID"
 msgstr "CategoryID"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#..TableWizard.TableWizard.business.Tables.categories.Fields.categoryID.ShortName
-#, fuzzy
 msgid  "CategoryID"
 msgstr "CategoryID"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#..TableWizard.TableWizard.business.Tables.categories.Fields.categoryname.Name
-#, fuzzy
 msgid  "CategoryName"
 msgstr "კატეგორიის სახლეი"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#..TableWizard.TableWizard.business.Tables.categories.Fields.categoryname.ShortName
-#, fuzzy
 msgid  "CategName"
 msgstr "CategName"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#..TableWizard.TableWizard.business.Tables.products.Name
-#, fuzzy
 msgid  "Products"
 msgstr "პროდუქტები"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#..TableWizard.TableWizard.business.Tables.products.Fields.productID.Name
-#, fuzzy
 msgid  "ProductID"
 msgstr "ProductID"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#..TableWizard.TableWizard.business.Tables.products.Fields.productID.ShortName
-#, fuzzy
 msgid  "ProductID"
 msgstr "ProductID"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#..TableWizard.TableWizard.business.Tables.products.Fields.productname.Name
-#, fuzzy
 msgid  "ProductName"
 msgstr "ProductName"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#..TableWizard.TableWizard.business.Tables.products.Fields.productname.ShortName
-#, fuzzy
 msgid  "ProdName"
 msgstr "ProdName"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#..TableWizard.TableWizard.business.Tables.products.Fields.productdescription.Name
-#, fuzzy
 msgid  "ProductDescription"
 msgstr "ProductDescription"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#..TableWizard.TableWizard.business.Tables.products.Fields.productdescription.ShortName
-#, fuzzy
 msgid  "ProdDescr"
 msgstr "ProdDescr"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#..TableWizard.TableWizard.business.Tables.products.Fields.categoryID.Name
-#, fuzzy
 msgid  "CategoryID"
 msgstr "CategoryID"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#..TableWizard.TableWizard.business.Tables.products.Fields.categoryID.ShortName
-#, fuzzy
 msgid  "CategoryID"
 msgstr "ProductID"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#..TableWizard.TableWizard.business.Tables.products.Fields.supplierID.Name
-#, fuzzy
 msgid  "SupplierID"
 msgstr "SupplierID"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#..TableWizard.TableWizard.business.Tables.products.Fields.supplierID.ShortName
-#, fuzzy
 msgid  "SupplierID"
 msgstr "SupplierID"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#..TableWizard.TableWizard.business.Tables.products.Fields.serialnumber.Name
-#, fuzzy
 msgid  "Serialnumber"
 msgstr "Serialnumber"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#..TableWizard.TableWizard.business.Tables.products.Fields.serialnumber.ShortName
-#, fuzzy
 msgid  "SerialNo"
 msgstr "SerialNo"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#..TableWizard.TableWizard.business.Tables.products.Fields.unitsinstock.Name
-#, fuzzy
 msgid  "UnitsInStock"
 msgstr "UnitsInStock"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#..TableWizard.TableWizard.business.Tables.products.Fields.unitsinstock.ShortName
-#, fuzzy
 msgid  "UnitsStock"
 msgstr "UnitsStock"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#..TableWizard.TableWizard.business.Tables.products.Fields.unitsonorder.Name
-#, fuzzy
 msgid  "UnitsOnOrder"
 msgstr "UnitsOnOrder"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#..TableWizard.TableWizard.business.Tables.products.Fields.unitsonorder.ShortName
-#, fuzzy
 msgid  "UnitsOrder"
 msgstr "UnitsOrder"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#..TableWizard.TableWizard.business.Tables.products.Fields.unitprice.Name
-#, fuzzy
 msgid  "UnitPrice"
 msgstr "UnitPrice"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#..TableWizard.TableWizard.business.Tables.products.Fields.unitprice.ShortName
-#, fuzzy
 msgid  "UnitPrice"
 msgstr "UnitPrice"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#..TableWizard.TableWizard.business.Tables.products.Fields.reorderlevel.Name
-#, fuzzy
 msgid  "ReorderLevel"
 msgstr "ReorderLevel"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#..TableWizard.TableWizard.business.Tables.products.Fields.reorderlevel.ShortName
-#, fuzzy
 msgid  "ReordLevel"
 msgstr "ReordLevel"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#..TableWizard.TableWizard.business.Tables.products.Fields.discontinued.Name
-#, fuzzy
 msgid  "Discontinued"
 msgstr "Discontinued"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#..TableWizard.TableWizard.business.Tables.products.Fields.discontinued.ShortName
-#, fuzzy
 msgid  "Discontin"
 msgstr "Discontin"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#..TableWizard.TableWizard.business.Tables.products.Fields.leadtime.Name
-#, fuzzy
 msgid  "LeadTime"
 msgstr "LeadTime"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#..TableWizard.TableWizard.business.Tables.products.Fields.leadtime.ShortName
-#, fuzzy
 msgid  "LeadTime"
 msgstr "LeadTime"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#..TableWizard.TableWizard.business.Tables.suppliers.Name
-#, fuzzy
 msgid  "Suppliers"
 msgstr "მომწოდებლები"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#..TableWizard.TableWizard.business.Tables.suppliers.Fields.supplierID.Name
-#, fuzzy
 msgid  "SupplierID"
 msgstr "SupplierID"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#..TableWizard.TableWizard.business.Tables.suppliers.Fields.supplierID.ShortName
-#, fuzzy
 msgid  "SupplierID"
 msgstr "SupplierID"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#..TableWizard.TableWizard.business.Tables.suppliers.Fields.suppliername.Name
-#, fuzzy
 msgid  "SupplierName"
 msgstr "SupplierName"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#..TableWizard.TableWizard.business.Tables.suppliers.Fields.suppliername.ShortName
-#, fuzzy
 msgid  "SupplName"
 msgstr "SupplName"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#..TableWizard.TableWizard.business.Tables.suppliers.Fields.contactname.Name
-#, fuzzy
 msgid  "ContactName"
 msgstr "ContactName"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#..TableWizard.TableWizard.business.Tables.suppliers.Fields.contactname.ShortName
-#, fuzzy
 msgid  "ContctName"
 msgstr "ContctName"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#..TableWizard.TableWizard.business.Tables.suppliers.Fields.contacttitle.Name
-#, fuzzy
 msgid  "ContactTitle"
 msgstr "ContactTitle"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#..TableWizard.TableWizard.business.Tables.suppliers.Fields.contacttitle.ShortName
-#, fuzzy
 msgid  "ContctTitl"
 msgstr "ContctTitl"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#..TableWizard.TableWizard.business.Tables.suppliers.Fields.address.Name
-#, fuzzy
 msgid  "Address"
 msgstr "მისამართი"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#..TableWizard.TableWizard.business.Tables.suppliers.Fields.address.ShortName
-#, fuzzy
 msgid  "Address"
 msgstr "მისამართი"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#..TableWizard.TableWizard.business.Tables.suppliers.Fields.city.Name
-#, fuzzy
 msgid  "City"
 msgstr "ქალაქი"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#..TableWizard.TableWizard.business.Tables.suppliers.Fields.city.ShortName
-#, fuzzy
 msgid  "City"
 msgstr "ქალაქი"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#..TableWizard.TableWizard.business.Tables.suppliers.Fields.postalcode.Name
-#, fuzzy
 msgid  "PostalCode"
 msgstr "PostalCode"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#..TableWizard.TableWizard.business.Tables.suppliers.Fields.postalcode.ShortName
-#, fuzzy
 msgid  "PostalCode"
 msgstr "PostalCode"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#..TableWizard.TableWizard.business.Tables.suppliers.Fields.stateorprovince.Name
-#, fuzzy
 msgid  "StateOrProvince"
 msgstr "StateOrProvince"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#..TableWizard.TableWizard.business.Tables.suppliers.Fields.stateorprovince.ShortName
-#, fuzzy
 msgid  "StateProvi"
 msgstr "StateProvi"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#..TableWizard.TableWizard.business.Tables.suppliers.Fields.countryorregion.Name
-#, fuzzy
 msgid  "CountryOrRegion"
 msgstr "CountryOrRegion"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#..TableWizard.TableWizard.business.Tables.suppliers.Fields.countryorregion.ShortName
-#, fuzzy
 msgid  "CountryReg"
 msgstr "CountryReg"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#..TableWizard.TableWizard.business.Tables.suppliers.Fields.phonenumber.Name
-#, fuzzy
 msgid  "PhoneNumber"
 msgstr "PhoneNumber"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#..TableWizard.TableWizard.business.Tables.suppliers.Fields.phonenumber.ShortName
-#, fuzzy
 msgid  "PhoneNo"
 msgstr "PhoneNo"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#..TableWizard.TableWizard.business.Tables.suppliers.Fields.faxnumber.Name
-#, fuzzy
 msgid  "FaxNumber"
 msgstr "FaxNumber"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#..TableWizard.TableWizard.business.Tables.suppliers.Fields.faxnumber.ShortName
-#, fuzzy
 msgid  "FaxNo"
 msgstr "FaxNo"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#..TableWizard.TableWizard.business.Tables.suppliers.Fields.paymentterms.Name
-#, fuzzy
 msgid  "PaymentTerms"
 msgstr "PaymentTerms"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#..TableWizard.TableWizard.business.Tables.suppliers.Fields.paymentterms.ShortName
-#, fuzzy
 msgid  "PaymntTerm"
 msgstr "PaymntTerm"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#..TableWizard.TableWizard.business.Tables.suppliers.Fields.emailaddress.Name
-#, fuzzy
 msgid  "EmailAddress"
 msgstr "EmailAddress"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#..TableWizard.TableWizard.business.Tables.suppliers.Fields.emailaddress.ShortName
-#, fuzzy
 msgid  "EmailAddr"
 msgstr "EmailAddr"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#..TableWizard.TableWizard.business.Tables.suppliers.Fields.notes.Name
-#, fuzzy
 msgid  "Notes"
 msgstr "შენიშვნები"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#..TableWizard.TableWizard.business.Tables.suppliers.Fields.notes.ShortName
-#, fuzzy
 msgid  "Notes"
 msgstr "შენიშვნები"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#..TableWizard.TableWizard.business.Tables.mailinglist.Name
-#, fuzzy
 msgid  "MailingList"
 msgstr "MailingList"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#..TableWizard.TableWizard.business.Tables.mailinglist.Fields.mailinglistID.Name
-#, fuzzy
 msgid  "MailingListID"
 msgstr "MailingListID"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#..TableWizard.TableWizard.business.Tables.mailinglist.Fields.mailinglistID.ShortName
-#, fuzzy
 msgid  "MailingID"
 msgstr "MailingID"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#..TableWizard.TableWizard.business.Tables.mailinglist.Fields.prefix.Name
-#, fuzzy
 msgid  "Prefix"
 msgstr "პრეფიქსი"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#..TableWizard.TableWizard.business.Tables.mailinglist.Fields.prefix.ShortName
-#, fuzzy
 msgid  "Prefix"
 msgstr "პრეფიქსი"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#..TableWizard.TableWizard.business.Tables.mailinglist.Fields.firstname.Name
-#, fuzzy
 msgid  "FirstName"
 msgstr "FirstName"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#..TableWizard.TableWizard.business.Tables.mailinglist.Fields.firstname.ShortName
-#, fuzzy
 msgid  "FirstName"
 msgstr "FirstName"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#..TableWizard.TableWizard.business.Tables.mailinglist.Fields.middlename.Name
-#, fuzzy
 msgid  "MiddleName"
 msgstr "MiddleName"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#..TableWizard.TableWizard.business.Tables.mailinglist.Fields.middlename.ShortName
-#, fuzzy
 msgid  "MiddleName"
 msgstr "MiddleName"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#..TableWizard.TableWizard.business.Tables.mailinglist.Fields.lastlame.Name
-#, fuzzy
 msgid  "LastName"
 msgstr "LastName"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#..TableWizard.TableWizard.business.Tables.mailinglist.Fields.lastlame.ShortName
-#, fuzzy
 msgid  "LastName"
 msgstr "LastName"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#..TableWizard.TableWizard.business.Tables.mailinglist.Fields.suffix.Name
-#, fuzzy
 msgid  "Suffix"
 msgstr "სუფიქსი"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#..TableWizard.TableWizard.business.Tables.mailinglist.Fields.suffix.ShortName
-#, fuzzy
 msgid  "Suffix"
 msgstr "სუფიქსი"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#..TableWizard.TableWizard.business.Tables.mailinglist.Fields.title.Name
-#, fuzzy
 msgid  "Title"
 msgstr "სათაური"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#..TableWizard.TableWizard.business.Tables.mailinglist.Fields.title.ShortName
-#, fuzzy
 msgid  "Title"
 msgstr "სათაური"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#..TableWizard.TableWizard.business.Tables.mailinglist.Fields.organizationname.Name
-#, fuzzy
 msgid  "OrganizationName"
 msgstr "OrganizationName"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#..TableWizard.TableWizard.business.Tables.mailinglist.Fields.organizationname.ShortName
-#, fuzzy
 msgid  "OrgName"
 msgstr "OrgName"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#..TableWizard.TableWizard.business.Tables.mailinglist.Fields.address.Name
-#, fuzzy
 msgid  "Address"
 msgstr "მისამართი"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#..TableWizard.TableWizard.business.Tables.mailinglist.Fields.address.ShortName
-#, fuzzy
 msgid  "Address"
 msgstr "მისამართი"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#..TableWizard.TableWizard.business.Tables.mailinglist.Fields.city.Name
-#, fuzzy
 msgid  "City"
 msgstr "ქალაქი"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#..TableWizard.TableWizard.business.Tables.mailinglist.Fields.city.ShortName
-#, fuzzy
 msgid  "City"
 msgstr "ქალაქი"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#..TableWizard.TableWizard.business.Tables.mailinglist.Fields.postalcode.Name
-#, fuzzy
 msgid  "PostalCode"
 msgstr "PostalCode"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#..TableWizard.TableWizard.business.Tables.mailinglist.Fields.postalcode.ShortName
-#, fuzzy
 msgid  "PostalCode"
 msgstr "PostalCode"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#..TableWizard.TableWizard.business.Tables.mailinglist.Fields.stateorprovince.Name
-#, fuzzy
 msgid  "StateOrProvince"
 msgstr "StateOrProvince"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#..TableWizard.TableWizard.business.Tables.mailinglist.Fields.stateorprovince.ShortName
-#, fuzzy
 msgid  "StateProvi"
 msgstr "StateProvi"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#..TableWizard.TableWizard.business.Tables.mailinglist.Fields.countryorregion.Name
-#, fuzzy
 msgid  "CountryOrRegion"
 msgstr "CountryOrRegion"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#..TableWizard.TableWizard.business.Tables.mailinglist.Fields.countryorregion.ShortName
-#, fuzzy
 msgid  "CountryReg"
 msgstr "CountryReg"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#..TableWizard.TableWizard.business.Tables.mailinglist.Fields.phonenumber.Name
-#, fuzzy
 msgid  "PhoneNumber"
 msgstr "PhoneNumber"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#..TableWizard.TableWizard.business.Tables.mailinglist.Fields.phonenumber.ShortName
-#, fuzzy
 msgid  "PhoneNo"
 msgstr "PhoneNo"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#..TableWizard.TableWizard.business.Tables.mailinglist.Fields.faxnumber.Name
-#, fuzzy
 msgid  "FaxNumber"
 msgstr "FaxNumber"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#..TableWizard.TableWizard.business.Tables.mailinglist.Fields.faxnumber.ShortName
-#, fuzzy
 msgid  "FaxNo"
 msgstr "FaxNo"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#..TableWizard.TableWizard.business.Tables.mailinglist.Fields.mobilenumber.Name
-#, fuzzy
 msgid  "MobileNumber"
 msgstr "MobileNumber"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#..TableWizard.TableWizard.business.Tables.mailinglist.Fields.mobilenumber.ShortName
-#, fuzzy
 msgid  "MobileNo"
 msgstr "MobileNo"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#..TableWizard.TableWizard.business.Tables.mailinglist.Fields.emailaddress.Name
-#, fuzzy
 msgid  "EmailAddress"
 msgstr "EmailAddress"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#..TableWizard.TableWizard.business.Tables.mailinglist.Fields.emailaddress.ShortName
-#, fuzzy
 msgid  "EmailAddr"
 msgstr "EmailAddr"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#..TableWizard.TableWizard.business.Tables.mailinglist.Fields.birthdate.Name
-#, fuzzy
 msgid  "Birthdate"
 msgstr "დაბადების თარიღი"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#..TableWizard.TableWizard.business.Tables.mailinglist.Fields.birthdate.ShortName
-#, fuzzy
 msgid  "Birthdate"
 msgstr "დაბადების თარიღი"
 
@@ -5627,197 +5501,158 @@ msgid  "Notes"
 msgstr "შენიშვნები"
 
 #: registry/data/org/openoffice/Office/DataAccess.xcu#..DataAccess.DriverSettings.com.sun.star.comp.sdbc.MozabDriver.MozillaPreferences.PabDescription
-#, fuzzy
 msgid  "Personal Address book"
 msgstr "პერსონალური მისამართების წიგნი"
 
 #: registry/data/org/openoffice/Office/DataAccess.xcu#..DataAccess.DriverSettings.com.sun.star.comp.sdbc.MozabDriver.MozillaPreferences.HisDescription
-#, fuzzy
 msgid  "Collected Addresses"
 msgstr "შეგროვებული მისამართები"
 
 #: registry/data/org/openoffice/Office/DataAccess.xcu#..DataAccess.DriverSettings.com.sun.star.comp.sdbc.MozabDriver.ColumnAliases.FirstName
-#, fuzzy
 msgid  "First Name"
 msgstr "სახელი"
 
 #: registry/data/org/openoffice/Office/DataAccess.xcu#..DataAccess.DriverSettings.com.sun.star.comp.sdbc.MozabDriver.ColumnAliases.LastName
-#, fuzzy
 msgid  "Last Name"
 msgstr "გვარი"
 
 #: registry/data/org/openoffice/Office/DataAccess.xcu#..DataAccess.DriverSettings.com.sun.star.comp.sdbc.MozabDriver.ColumnAliases.DisplayName
-#, fuzzy
 msgid  "Display Name"
 msgstr "სახელი ეკრანზე"
 
 #: registry/data/org/openoffice/Office/DataAccess.xcu#..DataAccess.DriverSettings.com.sun.star.comp.sdbc.MozabDriver.ColumnAliases.NickName
-#, fuzzy
 msgid  "Nickname"
 msgstr "მეტსახელი"
 
 #: registry/data/org/openoffice/Office/DataAccess.xcu#..DataAccess.DriverSettings.com.sun.star.comp.sdbc.MozabDriver.ColumnAliases.PrimaryEmail
-#, fuzzy
 msgid  "E-mail"
 msgstr "ელ.ფოსტა"
 
 #: registry/data/org/openoffice/Office/DataAccess.xcu#..DataAccess.DriverSettings.com.sun.star.comp.sdbc.MozabDriver.ColumnAliases.SecondEmail
-#, fuzzy
 msgid  "E-mail (2)"
 msgstr "ელ.ფოსტა (2)"
 
 #: registry/data/org/openoffice/Office/DataAccess.xcu#..DataAccess.DriverSettings.com.sun.star.comp.sdbc.MozabDriver.ColumnAliases.PreferMailFormat
-#, fuzzy
 msgid  "Mail Format"
 msgstr "წერილის ფორმატი"
 
 #: registry/data/org/openoffice/Office/DataAccess.xcu#..DataAccess.DriverSettings.com.sun.star.comp.sdbc.MozabDriver.ColumnAliases.WorkPhone
-#, fuzzy
 msgid  "Phone (Work)"
 msgstr "ტელეფონი (სამსახური)"
 
 #: registry/data/org/openoffice/Office/DataAccess.xcu#..DataAccess.DriverSettings.com.sun.star.comp.sdbc.MozabDriver.ColumnAliases.HomePhone
-#, fuzzy
 msgid  "Phone (Home)"
 msgstr "ტელეფონი (სახლი)"
 
 #: registry/data/org/openoffice/Office/DataAccess.xcu#..DataAccess.DriverSettings.com.sun.star.comp.sdbc.MozabDriver.ColumnAliases.FaxNumber
-#, fuzzy
 msgid  "Fax"
 msgstr "ფაქსი"
 
 #: registry/data/org/openoffice/Office/DataAccess.xcu#..DataAccess.DriverSettings.com.sun.star.comp.sdbc.MozabDriver.ColumnAliases.PagerNumber
-#, fuzzy
 msgid  "Pager"
 msgstr "პეიჯერი"
 
 #: registry/data/org/openoffice/Office/DataAccess.xcu#..DataAccess.DriverSettings.com.sun.star.comp.sdbc.MozabDriver.ColumnAliases.CellularNumber
-#, fuzzy
 msgid  "Mobile"
 msgstr "მობილური"
 
 #: registry/data/org/openoffice/Office/DataAccess.xcu#..DataAccess.DriverSettings.com.sun.star.comp.sdbc.MozabDriver.ColumnAliases.HomeAddress
-#, fuzzy
 msgid  "Address 1"
 msgstr "მისამართი 1"
 
 #: registry/data/org/openoffice/Office/DataAccess.xcu#..DataAccess.DriverSettings.com.sun.star.comp.sdbc.MozabDriver.ColumnAliases.HomeAddress2
-#, fuzzy
 msgid  "Address 2"
 msgstr "მისამართი 2"
 
 #: registry/data/org/openoffice/Office/DataAccess.xcu#..DataAccess.DriverSettings.com.sun.star.comp.sdbc.MozabDriver.ColumnAliases.HomeCity
-#, fuzzy
 msgid  "City"
 msgstr "ქალაქი"
 
 #: registry/data/org/openoffice/Office/DataAccess.xcu#..DataAccess.DriverSettings.com.sun.star.comp.sdbc.MozabDriver.ColumnAliases.HomeState
-#, fuzzy
 msgid  "State"
 msgstr "შტატი"
 
 #: registry/data/org/openoffice/Office/DataAccess.xcu#..DataAccess.DriverSettings.com.sun.star.comp.sdbc.MozabDriver.ColumnAliases.HomeZipCode
-#, fuzzy
 msgid  "ZIP/Postal (Home)"
 msgstr "საფოსტო ინდექსი (სახლი)"
 
 #: registry/data/org/openoffice/Office/DataAccess.xcu#..DataAccess.DriverSettings.com.sun.star.comp.sdbc.MozabDriver.ColumnAliases.HomeCountry
-#, fuzzy
 msgid  "Country"
 msgstr "ქვეყანა"
 
 #: registry/data/org/openoffice/Office/DataAccess.xcu#..DataAccess.DriverSettings.com.sun.star.comp.sdbc.MozabDriver.ColumnAliases.WorkAddress
-#, fuzzy
 msgid  "Work Address"
 msgstr "სამსახურის მისამართი"
 
 #: registry/data/org/openoffice/Office/DataAccess.xcu#..DataAccess.DriverSettings.com.sun.star.comp.sdbc.MozabDriver.ColumnAliases.WorkAddress2
-#, fuzzy
 msgid  "Work Address 2"
 msgstr "სამსახურის მისამართი 2"
 
 #: registry/data/org/openoffice/Office/DataAccess.xcu#..DataAccess.DriverSettings.com.sun.star.comp.sdbc.MozabDriver.ColumnAliases.WorkCity
-#, fuzzy
 msgid  "City (Work)"
 msgstr "ქალაქი (სამსახური)"
 
 #: registry/data/org/openoffice/Office/DataAccess.xcu#..DataAccess.DriverSettings.com.sun.star.comp.sdbc.MozabDriver.ColumnAliases.WorkState
-#, fuzzy
 msgid  "State (Work)"
 msgstr "შტატი (სამსახური)"
 
 #: registry/data/org/openoffice/Office/DataAccess.xcu#..DataAccess.DriverSettings.com.sun.star.comp.sdbc.MozabDriver.ColumnAliases.WorkZipCode
-#, fuzzy
 msgid  "Zip/Postal (Work)"
 msgstr "საფოსტო ინდექსი (სამსახური)"
 
 #: registry/data/org/openoffice/Office/DataAccess.xcu#..DataAccess.DriverSettings.com.sun.star.comp.sdbc.MozabDriver.ColumnAliases.WorkCountry
-#, fuzzy
 msgid  "Country (Work)"
 msgstr "ქვეყანა (სამსახური)"
 
 #: registry/data/org/openoffice/Office/DataAccess.xcu#..DataAccess.DriverSettings.com.sun.star.comp.sdbc.MozabDriver.ColumnAliases.JobTitle
-#, fuzzy
 msgid  "Job Title"
 msgstr "თანამდებობა"
 
 #: registry/data/org/openoffice/Office/DataAccess.xcu#..DataAccess.DriverSettings.com.sun.star.comp.sdbc.MozabDriver.ColumnAliases.Department
-#, fuzzy
 msgid  "Department"
 msgstr "განყოფილება"
 
 #: registry/data/org/openoffice/Office/DataAccess.xcu#..DataAccess.DriverSettings.com.sun.star.comp.sdbc.MozabDriver.ColumnAliases.Company
-#, fuzzy
 msgid  "Company"
 msgstr "კომპანია"
 
 #: registry/data/org/openoffice/Office/DataAccess.xcu#..DataAccess.DriverSettings.com.sun.star.comp.sdbc.MozabDriver.ColumnAliases.WebPage1
-#, fuzzy
 msgid  "Web Page (Work)"
 msgstr "ვებ გვერდი (სასახური)"
 
 #: registry/data/org/openoffice/Office/DataAccess.xcu#..DataAccess.DriverSettings.com.sun.star.comp.sdbc.MozabDriver.ColumnAliases.WebPage2
-#, fuzzy
 msgid  "Web Page (Home)"
 msgstr "ვებ გვერდი (სახლი)"
 
 #: registry/data/org/openoffice/Office/DataAccess.xcu#..DataAccess.DriverSettings.com.sun.star.comp.sdbc.MozabDriver.ColumnAliases.BirthYear
-#, fuzzy
 msgid  "Birth Year"
 msgstr "დაბადების წელი"
 
 #: registry/data/org/openoffice/Office/DataAccess.xcu#..DataAccess.DriverSettings.com.sun.star.comp.sdbc.MozabDriver.ColumnAliases.BirthMonth
-#, fuzzy
 msgid  "Birth Month"
 msgstr "დაბადების თვე"
 
 #: registry/data/org/openoffice/Office/DataAccess.xcu#..DataAccess.DriverSettings.com.sun.star.comp.sdbc.MozabDriver.ColumnAliases.BirthDay
-#, fuzzy
 msgid  "Birth Day"
 msgstr "დაბადების დღე"
 
 #: registry/data/org/openoffice/Office/DataAccess.xcu#..DataAccess.DriverSettings.com.sun.star.comp.sdbc.MozabDriver.ColumnAliases.Custom1
-#, fuzzy
 msgid  "Custom 1"
 msgstr "მორგებული 1"
 
 #: registry/data/org/openoffice/Office/DataAccess.xcu#..DataAccess.DriverSettings.com.sun.star.comp.sdbc.MozabDriver.ColumnAliases.Custom2
-#, fuzzy
 msgid  "Custom 2"
 msgstr "მორგებული 2"
 
 #: registry/data/org/openoffice/Office/DataAccess.xcu#..DataAccess.DriverSettings.com.sun.star.comp.sdbc.MozabDriver.ColumnAliases.Custom3
-#, fuzzy
 msgid  "Custom 3"
 msgstr "მორგებული 3"
 
 #: registry/data/org/openoffice/Office/DataAccess.xcu#..DataAccess.DriverSettings.com.sun.star.comp.sdbc.MozabDriver.ColumnAliases.Custom4
-#, fuzzy
 msgid  "Custom 4"
 msgstr "მორგებული 4"
 
 #: registry/data/org/openoffice/Office/DataAccess.xcu#..DataAccess.DriverSettings.com.sun.star.comp.sdbc.MozabDriver.ColumnAliases.Notes
-#, fuzzy
 msgid  "Comments"
 msgstr "კომენტარები"
 
@@ -17805,8 +17640,9 @@ msgid  "Flower"
 msgstr "ყვავილი"
 
 #: registry/data/org/openoffice/Office/UI/GenericCommands.xcu#..GenericCommands.UserInterface.Commands..uno:SymbolShapes.forbidden.Label
-msgid  ""Prohibited" Symbol"
-msgstr ""
+#, fuzzy
+msgid  "\"Prohibited\" Symbol"
+msgstr "\"Prohibited\" სიმბოლო"
 
 #: registry/data/org/openoffice/Office/UI/GenericCommands.xcu#..GenericCommands.UserInterface.Commands..uno:SymbolShapes.heart.Label
 #, fuzzy

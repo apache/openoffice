@@ -56,8 +56,9 @@ msgid  "Accept this certificate temporarily for this session"
 msgstr "ഈ സെഷനുവേണ്ടി താല്‍ക്കാലികമായി ഈ സര്‍ട്ടിഫിക്കേറ്റ് സ്വീകരിക്കുക"
 
 #: source/unknownauthdlg.src#DLG_UUI_UNKNOWNAUTH.RB_DONTACCEPT_2.RadioButton.Text
+#, fuzzy
 msgid  "Do not accept this certificate and do not connect to this Web site"
-msgstr ""
+msgstr "ഈ സര്‍ട്ടിഫിക്കേറ്റ് സ്വീകരിക്കുകയോ ഈ വെബ്സൈറ്റുമായി ബന്ധപ്പെടുകയോ പാടില്ല."
 
 #: source/unknownauthdlg.src#DLG_UUI_UNKNOWNAUTH.FT_LABEL_1.FixedText.Text
 #, fuzzy
@@ -65,12 +66,10 @@ msgid  "No Text"
 msgstr "പദാവലി ലഭ്യമല്ല"
 
 #: source/passworddlg.src#DLG_UUI_PASSWORD.STR_ENTER_PASSWORD_TO_OPEN.String.Text
-#, fuzzy
 msgid  "Enter password to open file: \n"
 msgstr "ഫയല്‍ തുറക്കുന്നതിനുള്ള രഹസ്യവാക്ക് നല്‍കുക: \n"
 
 #: source/passworddlg.src#DLG_UUI_PASSWORD.STR_ENTER_PASSWORD_TO_MODIFY.String.Text
-#, fuzzy
 msgid  "Enter password to modify file: \n"
 msgstr "ഫയല്‍ തുറക്കുന്നതിനുള്ള രഹസ്യവാക്ക് നല്‍കുക: \n"
 
@@ -102,8 +101,9 @@ msgid  "Document in Use"
 msgstr "രേഖ ഉപയോഗത്തില്‍"
 
 #: source/trylater.src#STR_TRYLATER_MSG.String.Text
+#, fuzzy
 msgid  "Document file '$(ARG1)' is locked for editing by:\n\n$(ARG2)\n\nTry again later to save document or save a copy of that document.\n\n"
-msgstr ""
+msgstr "'$(ARG1)' രേഖ ചിട്ടപ്പെടുത്തുന്നതിനായി പൂട്ടിയിരിക്കുന്നതു്:\n\n$(ARG2)\n\nഈ രേഖയോ രേഖയുടെ ഒരു പകര്‍പ്പോ സൂക്ഷിക്കുന്നതിനായി വീണ്ടും ശ്രമിക്കുക.\n\n"
 
 #: source/trylater.src#STR_TRYLATER_RETRYSAVING_BTN.String.Text
 #, fuzzy
@@ -116,17 +116,14 @@ msgid  "~Save As..."
 msgstr "പേരു് മാറ്റി ~സൂക്ഷിക്കുക..."
 
 #: source/ids.src#RID_KEEP_PASSWORD.String.Text
-#, fuzzy
 msgid  "~Remember password until end of session"
 msgstr "സെക്ഷന്റെ അവസാനം വരെ പാസ്‌വേര്‍ഡ് ~സൂക്ഷിക്കുക"
 
 #: source/ids.src#RID_SAVE_PASSWORD.String.Text
-#, fuzzy
 msgid  "~Remember password"
 msgstr "പാസ്‌വേര്‍ഡ് ~‌സൂക്ഷിക്കുക"
 
 #: source/ids.src#STR_WARNING_BROKENSIGNATURE_TITLE.String.Text
-#, fuzzy
 msgid  "Invalid Document Signature"
 msgstr "രേഖയില്‍ തെറ്റായ ഒപ്പ്"
 
@@ -136,20 +133,17 @@ msgstr ""
 
 #: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_IO_ABORT & ERRCODE_RES_MASK).String.Text
 msgid  "The operation executed on $(ARG1) was aborted."
-msgstr ""
+msgstr "$(ARG1)-ല്‍ പ്രവര്‍ത്തിപ്പിച്ചുകൊണ്ടിരിക്കുന്ന പ്രക്രിയ നിര്‍ത്തിയിരിക്കുന്നു."
 
 #: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_IO_ACCESSDENIED & ERRCODE_RES_MASK).String.Text
-#, fuzzy
 msgid  "Access to $(ARG1) was denied."
 msgstr "$(ARG1)-ലേക്കുള്ള പ്രവേശനം നിഷേധിച്ചിരിക്കുന്നു."
 
 #: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_IO_ALREADYEXISTS & ERRCODE_RES_MASK).String.Text
-#, fuzzy
 msgid  "$(ARG1) already exists."
 msgstr "$(ARG1) നിലവിലുണ്ടു്."
 
 #: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_IO_TARGETALREADYEXISTS & ERRCODE_RES_MASK).String.Text
-#, fuzzy
 msgid  "Target already exists."
 msgstr "ലക്ഷ്യസ്ഥാനം നിലവിലുണ്ടു്."
 
@@ -158,226 +152,192 @@ msgid  "You are about to save/export a password protected basic library containi
 msgstr ""
 
 #: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_IO_BADCRC & ERRCODE_RES_MASK).String.Text
-#, fuzzy
 msgid  "The data from $(ARG1) has an incorrect checksum."
 msgstr "$(ARG1)-ല്‍ നിന്നുള്ള ഡേറ്റായില്‍ തെറ്റായ checksum ഉണ്ടു്."
 
 #: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_IO_CANTCREATE & ERRCODE_RES_MASK).String.Text
-#, fuzzy
 msgid  "The object $(ARG1) cannot be created in directory $(ARG2)."
 msgstr "$(ARG1) വസ്തു $(ARG2) എന്ന ഡയറക്ടറിയില്‍‌ ഉണ്ടാക്കുവാന്‍ സാധ്യമല്ല."
 
 #: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_IO_CANTREAD & ERRCODE_RES_MASK).String.Text
-#, fuzzy
 msgid  "Data of $(ARG1) could not be read."
 msgstr "$(ARG1)-നുള്ള ഡേറ്റാ ലഭ്യമാക്കുവാന്‍ സാധ്യമായില്ല."
 
 #: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_IO_CANTSEEK & ERRCODE_RES_MASK).String.Text
-#, fuzzy
 msgid  "The seek operation on $(ARG1) could not be performed."
 msgstr "$(ARG1)-ലുള്ള seek പ്രക്രിയ നടപ്പിലാക്കുവാന്‍ സാധ്യമായില്ല."
 
 #: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_IO_CANTTELL & ERRCODE_RES_MASK).String.Text
-#, fuzzy
 msgid  "The tell operation on $(ARG1) could not be performed."
 msgstr "$(ARG1)-ലുള്ള tell പ്രക്രിയ നടപ്പിലാക്കുവാന്‍ സാധ്യമായില്ല."
 
 #: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_IO_CANTWRITE & ERRCODE_RES_MASK).String.Text
-#, fuzzy
 msgid  "Data for $(ARG1) could not be written."
 msgstr "$(ARG1)-നുള്ള ഡേറ്റാ സൂക്ഷിക്കുവാന്‍ സാധ്യമായില്ല."
 
 #: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_IO_CURRENTDIR & ERRCODE_RES_MASK).String.Text
-#, fuzzy
 msgid  "Action impossible: $(ARG1) is the current directory."
 msgstr "അസാധ്യമായ പ്രവൃത്തി: $(ARG1) ആണു് നിലവിലുള്ള ഡയറക്ടറി."
 
 #: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_IO_NOTREADY & ERRCODE_RES_MASK).String.Text
-#, fuzzy
 msgid  "$(ARG1) is not ready."
 msgstr "$(ARG1) ലഭ്യമല്ല."
 
 #: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_IO_NOTSAMEDEVICE & ERRCODE_RES_MASK).String.Text
 msgid  "Action impossible: $(ARG1) and $(ARG2) are different devices (drives)."
-msgstr ""
+msgstr "അസാധ്യമായ പ്രവൃത്തി: $(ARG1), $(ARG2) എന്നിവ വേറെ ഡിവൈസുകളാണു് (ഡ്രൈവുകള്‍)."
 
 #: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_IO_GENERAL & ERRCODE_RES_MASK).String.Text
 msgid  "General input/output error while accessing $(ARG1)."
-msgstr ""
+msgstr "$(ARG1)-ലേക്കു് പ്രവേശിക്കുമ്പോള്‍ സാധാരണയുള്ള ഇന്‍പുട്ട്/ഔട്ട്പുട്ട് പിശക്."
 
 #: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_IO_INVALIDACCESS & ERRCODE_RES_MASK).String.Text
-#, fuzzy
 msgid  "An attempt was made to access $(ARG1) in an invalid way."
 msgstr "തെറ്റായ രീതിയില്‍ $(ARG1)-ലേക്കു് പ്രവേശിക്കുവാന്‍ ശ്രമിച്ചു."
 
 #: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_IO_INVALIDCHAR & ERRCODE_RES_MASK).String.Text
-#, fuzzy
 msgid  "$(ARG1) contains invalid characters."
 msgstr "$(ARG1)-നില്‍ തെറ്റായ അക്ഷരങ്ങളുണ്ടു്."
 
 #: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_IO_INVALIDDEVICE & ERRCODE_RES_MASK).String.Text
-#, fuzzy
 msgid  "The device (drive) $(ARG1) is invalid."
 msgstr "$(ARG1) എന്ന ഡിവൈസ് (ഡ്രൈവ്) തെറ്റാണു്."
 
 #: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_IO_INVALIDLENGTH & ERRCODE_RES_MASK).String.Text
-#, fuzzy
 msgid  "The data from $(ARG1) has an invalid length."
 msgstr "$(ARG1)-ല്‍ നിന്നുള്ള ഡേറ്റായ്ക്ക് തെറ്റായ അളവ്."
 
 #: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_IO_INVALIDPARAMETER & ERRCODE_RES_MASK).String.Text
 msgid  "The operation on $(ARG1) was started with an invalid parameter."
-msgstr ""
+msgstr "$(ARG1)-ലുള്ള പ്രക്രിയ തെറ്റായ ഒരു പരാമീറ്റര്‍ ഉപയോഗിച്ചു് ആരംഭിച്ചിരിക്കുന്നു."
 
 #: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_IO_ISWILDCARD & ERRCODE_RES_MASK).String.Text
 msgid  "The operation cannot be performed because $(ARG1) contains wildcards."
-msgstr ""
+msgstr "$(ARG1)-ല്‍ വൈള്‍ഡ്കാര്‍ഡുകള്‍ ഉള്ളതിനാല്‍ പ്രക്രിയ നടത്തുവാന്‍ സാധ്യമല്ല."
 
 #: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_IO_LOCKVIOLATION & ERRCODE_RES_MASK).String.Text
-#, fuzzy
 msgid  "Error during shared access to $(ARG1)."
 msgstr "$(ARG1) ഷെയര് ചെയ്തു പ്രവര്ത്തിച്ചപ്പോള് തെറ്റുണ്ടായി"
 
 #: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_IO_MISPLACEDCHAR & ERRCODE_RES_MASK).String.Text
-#, fuzzy
 msgid  "$(ARG1) contains misplaced characters."
 msgstr "$(ARG1)-ല്‍ തെറ്റായ സ്ഥാനമുള്ള അക്ഷരങ്ങളുണ്ടു്."
 
 #: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_IO_NAMETOOLONG & ERRCODE_RES_MASK).String.Text
-#, fuzzy
 msgid  "The name $(ARG1) contains too many characters."
 msgstr "$(ARG1) എന്ന പേരില്‍ അനവധി അക്ഷരങ്ങളുണ്ടു്."
 
 #: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_IO_NOTEXISTS & ERRCODE_RES_MASK).String.Text
-#, fuzzy
 msgid  "$(ARG1) does not exist."
 msgstr "$(ARG1) നിലവിലില്ല."
 
 #: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_IO_NOTEXISTSPATH & ERRCODE_RES_MASK).String.Text
-#, fuzzy
 msgid  "The path $(ARG1) does not exist."
 msgstr "$(ARG1) എന്ന പാഥ് നിലവിലില്ല."
 
 #: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_IO_NOTSUPPORTED & ERRCODE_RES_MASK).String.Text
 msgid  "The operation on $(ARG1) is not supported on this operating system."
-msgstr ""
+msgstr "$(ARG1)-ലുള്ള പ്രക്രിയ ഈ ഓപ്പറേറ്റിങ് സിസ്റ്റമില്‍ പിന്തുണയ്ക്കുന്നില്ല."
 
 #: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_IO_NOTADIRECTORY & ERRCODE_RES_MASK).String.Text
-#, fuzzy
 msgid  "$(ARG1) is not a directory."
 msgstr "$(ARG1) ഒരു ഡയറക്ടറി അല്ല."
 
 #: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_IO_NOTAFILE & ERRCODE_RES_MASK).String.Text
-#, fuzzy
 msgid  "$(ARG1) is not a file."
 msgstr "$(ARG1) ഒരു ഫയല്‍ അല്ല."
 
 #: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_IO_OUTOFSPACE & ERRCODE_RES_MASK).String.Text
-#, fuzzy
 msgid  "There is no space left on device $(ARG1)."
 msgstr "$(ARG1) ഡിവൈസില്‍ സ്ഥലം ലഭ്യമല്ല."
 
 #: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_IO_TOOMANYOPENFILES & ERRCODE_RES_MASK).String.Text
 msgid  "The operation on $(ARG1) cannot be performed because too many files are already open."
-msgstr ""
+msgstr "അനവധി ഫയലുകള്‍ തുറന്നിട്ടുള്ളതിനാല്‍ $(ARG1)-ന്റെ പ്രക്രിയ തുടരുവാന്‍ സാധ്യമല്ല."
 
 #: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_IO_OUTOFMEMORY & ERRCODE_RES_MASK).String.Text
 msgid  "The operation on $(ARG1) cannot be performed because there is no more memory available."
-msgstr ""
+msgstr "മെമ്മറി ലഭ്യമല്ലാത്തതിനാല്‍ $(ARG1)-ന്റെ പ്രക്രിയ തുടരുവാന്‍ സാധ്യമല്ല."
 
 #: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_IO_PENDING & ERRCODE_RES_MASK).String.Text
 msgid  "The operation on $(ARG1) cannot continue because more data is pending."
-msgstr ""
+msgstr "കൂടുതല്‍ ഡേറ്റ ബാക്കിയുള്ളതിനാല്‍ $(ARG1)-ന്റെ പ്രക്രിയ തുടരുവാന്‍ സാധ്യമല്ല."
 
 #: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_IO_RECURSIVE & ERRCODE_RES_MASK).String.Text
-#, fuzzy
 msgid  "$(ARG1) cannot be copied into itself."
 msgstr "$(ARG1), അതിലേക്കു് തന്നെ പകര്‍ത്തുവാന്‍ സാധ്യമല്ല."
 
 #: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_IO_UNKNOWN & ERRCODE_RES_MASK).String.Text
 msgid  "Unknown input/output error while accessing $(ARG1)."
-msgstr ""
+msgstr "$(ARG1)-ലേക്കു് പ്രവേശിക്കുമ്പോള്‍ അപരിചിതമായ ഇന്‍പുട്ട്/ഔട്ട്പുട്ട് പിശക് ."
 
 #: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_IO_WRITEPROTECTED & ERRCODE_RES_MASK).String.Text
-#, fuzzy
 msgid  "$(ARG1) is write protected."
 msgstr "$(ARG1)-ലേക്കു് ഒന്നും സൂക്ഷിക്കുവാന്‍ സാധ്യമല്ല."
 
 #: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_IO_WRONGFORMAT & ERRCODE_RES_MASK).String.Text
-#, fuzzy
 msgid  "$(ARG1) is not in the correct format."
 msgstr "$(ARG1) ശരിയായ ശൈലിയില്‍ അല്ല."
 
 #: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_IO_WRONGVERSION & ERRCODE_RES_MASK).String.Text
-#, fuzzy
 msgid  "The version of $(ARG1) is not correct."
 msgstr "$(ARG1)-നുള്ള പതിപ്പു് ശരിയല്ല."
 
 #: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_IO_NOTEXISTS_VOLUME & ERRCODE_RES_MASK).String.Text
-#, fuzzy
 msgid  "Drive $(ARG1) does not exist."
 msgstr "$(ARG1) എന്ന ഡ്രൈവര്‍ ലഭ്യമല്ല."
 
 #: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_IO_NOTEXISTS_FOLDER & ERRCODE_RES_MASK).String.Text
-#, fuzzy
 msgid  "Folder $(ARG1) does not exist."
 msgstr "$(ARG1) എന്ന ഫോള്‍ഡര്‍ ലഭ്യമല്ല."
 
 #: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_WRONGJAVA & ERRCODE_RES_MASK).String.Text
-#, fuzzy
 msgid  "The installed Java version is not supported."
 msgstr "ഇന്‍സ്റ്റോള്‍ ചെയ്തിരിക്കുന്ന ജാവാ പതിപ്പിനുള്ള പിന്തുണ ലഭ്യമല്ല."
 
 #: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_WRONGJAVA_VERSION & ERRCODE_RES_MASK).String.Text
 msgid  "The installed Java version $(ARG1) is not supported."
-msgstr ""
+msgstr "ഇന്‍സ്റ്റോള്‍ ചെയ്തിരിക്കുന്ന $(ARG1) എന്ന ജാവാ പതിപ്പിനുള്ള പിന്തുണ ലഭ്യമല്ല. "
 
 #: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_WRONGJAVA_MIN & ERRCODE_RES_MASK).String.Text
 msgid  "The installed Java version is not supported, at least version $(ARG1) is required."
-msgstr ""
+msgstr "ഇന്‍സ്റ്റോള്‍ ചെയ്തിരിക്കുന്ന ജാവാ പതിപ്പിനുള്ള പിന്തുണ ലഭ്യമല്ല. കുറഞ്ഞതു് $(ARG1) പതിപ്പു് എങ്കിലും ആവശ്യമുണ്ടു്."
 
 #: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_WRONGJAVA_VERSION_MIN & ERRCODE_RES_MASK).String.Text
 msgid  "The installed Java version $(ARG1) is not supported, at least version $(ARG2) is required."
-msgstr ""
+msgstr "ഇന്‍സ്റ്റോള്‍ ചെയ്തിരിക്കുന്ന $(ARG1) എന്ന ജാവാ പതിപ്പിനുള്ള പിന്തുണ ലഭ്യമല്ല. കുറഞ്ഞതു് $(ARG2) പതിപ്പു് എങ്കിലും ആവശ്യമുണ്ടു്."
 
 #: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_BADPARTNERSHIP & ERRCODE_RES_MASK).String.Text
-#, fuzzy
 msgid  "The data associated with the partnership is corrupted."
 msgstr "കൂട്ടുക്കെട്ടുമായി ബന്ധപ്പെട്ട  ഡേറ്റായില് നാശമുണ്ടായി."
 
 #: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_BADPARTNERSHIP_NAME & ERRCODE_RES_MASK).String.Text
-#, fuzzy
 msgid  "The data associated with the partnership $(ARG1) is corrupted."
 msgstr " $(ARG1) കൂട്ടുക്കെട്ടുമായി ബന്ധപ്പെട്ട  ഡേറ്റായില് നാശമുണ്ടായി."
 
 #: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_IO_NOTREADY_VOLUME & ERRCODE_RES_MASK).String.Text
-#, fuzzy
 msgid  "Volume $(ARG1) is not ready."
 msgstr "$(ARG1) വോള്യം ലഭ്യമല്ല."
 
 #: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_IO_NOTREADY_REMOVABLE & ERRCODE_RES_MASK).String.Text
-#, fuzzy
 msgid  "$(ARG1) is not ready; please insert a storage medium."
 msgstr "$(ARG1) ലഭ്യമല്ല; ദയവായി ഒരു സ്റ്റോറേജ് സംവിധാനം ലഭ്യമാക്കുക."
 
 #: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_IO_NOTREADY_VOLUME_REMOVABLE & ERRCODE_RES_MASK).String.Text
-#, fuzzy
 msgid  "Volume $(ARG1) is not ready; please insert a storage medium."
 msgstr "$(ARG1) വോള്യം ലഭ്യമല്ല; ദയവായി ഒരു സ്റ്റോറേജ് സംവിധാനം ലഭ്യമാക്കുക."
 
 #: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_WRONGMEDIUM & ERRCODE_RES_MASK).String.Text
-#, fuzzy
 msgid  "Please insert disk $(ARG1)."
 msgstr "$(ARG1) ഡിസ്ക് ദയവായി കമ്പ്യൂട്ടറില്‍ ഇടുക."
 
 #: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_IO_CANTCREATE_NONAME & ERRCODE_RES_MASK).String.Text
-#, fuzzy
 msgid  "The object cannot be created in directory $(ARG1)."
 msgstr "$(ARG1) ഡയറക്ടറിയില്‍ വസ്തു ഉണ്ടാക്കുവാന്‍ സാധ്യമല്ല."
 
 #: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_IO_UNSUPPORTEDOVERWRITE & ERRCODE_RES_MASK).String.Text
 msgid  "%PRODUCTNAME cannot keep files from being overwritten when this transmission protocol is used. Do you want to continue anyway?"
-msgstr ""
+msgstr "%PRODUCTNAME cannot keep files from being overwritten when this transmission protocol is used. Do you want to continue anyway?"
 
 #: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_IO_BROKENPACKAGE & ERRCODE_RES_MASK).String.Text
 msgid  "The file '$(ARG1)' is corrupt and therefore cannot be opened. %PRODUCTNAME can try to repair the file.\n\nThe corruption could be the result of document manipulation or of structural document damage due to data transmission.\n\nWe recommend that you do not trust the content of the repaired document.\nExecution of macros is disabled for this document.\n\nShould %PRODUCTNAME repair the file?\n"
@@ -385,26 +345,25 @@ msgstr ""
 
 #: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_IO_BROKENPACKAGE_CANTREPAIR & ERRCODE_RES_MASK).String.Text
 msgid  "The file '$(ARG1)' could not be repaired and therefore cannot be opened."
-msgstr ""
+msgstr "ഫയല്  '$(ARG1)' റിപ്പയര് ചെയ്യാന് കഴിഞ്ഞില്ല അതുകൊണ്ട് അത് തുറക്കാനാവില്ല."
 
 #: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_CONFIGURATION_BROKENDATA_NOREMOVE & ERRCODE_RES_MASK).String.Text
 msgid  "Configuration data in '$(ARG1)' is corrupted. Without this data some functions may not operate correctly.\nDo you want to continue startup of %PRODUCTNAME without the corrupted configuration data?"
-msgstr ""
+msgstr "'$(ARG1)'  രൂപരേഖ ചെയ്ത ഡേറ്റായില് നാശമുണ്ടായി. ഈ ഡേറ്റാ ഇല്ലാതെ ചില ഫങ്ഷനുകള് ശരിയായി പ്രവര്ത്തിക്കില്ല. താങ്കള്ക്ക്  നശിച്ച രൂപരേഖ ഡേറ്റയില്ലാതെ  %PRODUCTNAME  ആരംഭിക്കണോ?"
 
 #: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_CONFIGURATION_BROKENDATA_WITHREMOVE & ERRCODE_RES_MASK).String.Text
 msgid  "The personal configuration file '$(ARG1)' is corrupted and must be deleted to continue. Some of your personal settings may be lost.\nDo you want to continue startup of %PRODUCTNAME without the corrupted configuration data?"
-msgstr ""
+msgstr "'$(ARG1)' വ്യക്തിഗത രൂപരേഖ ഫയലില് നാശമുണ്ടായി. ഇത് നീക്കം ചെയ്താല് മാത്രമേ മുന്നോട്ട് പോകാനാകൂ. ഇതുമൂലം താങ്കളുടെ ചില വ്യക്തിപരമായ സജ്ജീകരണങ്ങള് നഷ്ടപ്പെടാനിടയുണ്ട്."
 
 #: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_CONFIGURATION_BACKENDMISSING & ERRCODE_RES_MASK).String.Text
 msgid  "The configuration data source '$(ARG1)' is unavailable. Without this data some functions may not operate correctly."
-msgstr ""
+msgstr "'$(ARG1) രൂപരേഖ ഡേറ്റാ ഉറവിടം ലഭ്യമല്ല.  ഈ ഡേറ്റായില്ലാതെ ചില ഫങ്ഷനുകള് ശരിയായി പ്രവര്ത്തിക്കില്ല."
 
 #: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_CONFIGURATION_BACKENDMISSING_WITHRECOVER & ERRCODE_RES_MASK).String.Text
 msgid  "The configuration data source '$(ARG1)' is unavailable. Without this data some functions may not operate correctly.\nDo you want to continue startup of %PRODUCTNAME without the missing configuration data?"
-msgstr ""
+msgstr "'$(ARG1) രൂപരേഖ ഡേറ്റാ ഉറവിടം ലഭ്യമല്ല.  ഈ ഡേറ്റായില്ലാതെ ചില ഫങ്ഷനുകള് ശരിയായി പ്രവര്ത്തിക്കില്ല."
 
 #: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_INVALID_XFORMS_SUBMISSION_DATA & ERRCODE_RES_MASK).STRING.Text
-#, fuzzy
 msgid  "The form contains invalid data. Do you still want to continue?"
 msgstr "ഫോമില്  അസാധുവായ ഡേറ്റായാണ‍ുള്ളത്."
 
@@ -441,21 +400,18 @@ msgid  "The certificate could not be validated. You should examine this site's c
 msgstr ""
 
 #: source/ids.src#RID_UUI_ERRHDL.(TITLE_UUI_SSLWARN_DOMAINMISMATCH).STRING.Text
-#, fuzzy
 msgid  "Security Warning: Domain Name Mismatch"
 msgstr "സുരക്ഷ മുന്നറിയിപ്പു്: ഡൊമെയിന്‍ നാമം ചേരുന്നില്ല"
 
 #: source/ids.src#RID_UUI_ERRHDL.(TITLE_UUI_SSLWARN_EXPIRED).STRING.Text
 msgid  "Security Warning: Server Certificate Expired"
-msgstr ""
+msgstr "സുരക്ഷ മുന്നറിയിപ്പു്: സര്‍വര്‍ സര്‍ട്ടിഫിക്കേറ്റിന്റെ കാലാവധി അവസാനിച്ചു"
 
 #: source/ids.src#RID_UUI_ERRHDL.(TITLE_UUI_SSLWARN_INVALID).STRING.Text
-#, fuzzy
 msgid  "Security Warning: Server Certificate Invalid"
 msgstr "സുരക്ഷ മുന്നറിയിപ്പു്: സര്‍വര്‍ സര്‍ട്ടിഫിക്കേറ്റിന്റെ അസാധുവാണു്"
 
 #: source/fltdlg.src#DLG_FILTER_SELECT.ModalDialog.Text
-#, fuzzy
 msgid  "Filter Selection"
 msgstr "ഫില്‍ട്ടര്‍ തെരഞ്ഞെടുക്കുക"
 
@@ -464,7 +420,6 @@ msgid  "Authentication Required"
 msgstr ""
 
 #: source/logindlg.src#DLG_UUI_LOGIN.FT_LOGIN_ERROR.FixedText.Text
-#, fuzzy
 msgid  "Message from server:"
 msgstr "സെര്‍വറില് നിന്നുള്ള സന്ദേശം"
 
@@ -473,31 +428,26 @@ msgid  "Enter user name and password for: \n%1"
 msgstr ""
 
 #: source/logindlg.src#DLG_UUI_LOGIN.STR_LOGIN_REALM.String.Text
-msgid  "Enter user name and password for: \n"%2" on %1"
+msgid  "Enter user name and password for: \n\"%2\" on %1"
 msgstr ""
 
 #: source/logindlg.src#DLG_UUI_LOGIN.FT_LOGIN_PATH.FixedText.Text
-#, fuzzy
 msgid  "~Path"
 msgstr "മാര്ഗ്ഗം"
 
 #: source/logindlg.src#DLG_UUI_LOGIN.FT_LOGIN_USERNAME.FixedText.Text
-#, fuzzy
 msgid  "~User name"
 msgstr "ഉപഭോക്തൃ നാമം"
 
 #: source/logindlg.src#DLG_UUI_LOGIN.FT_LOGIN_PASSWORD.FixedText.Text
-#, fuzzy
 msgid  "Pass~word"
 msgstr "സങ്കേതപദം"
 
 #: source/logindlg.src#DLG_UUI_LOGIN.FT_LOGIN_ACCOUNT.FixedText.Text
-#, fuzzy
 msgid  "A~ccount"
 msgstr "ആക്കൌണ്ട്"
 
 #: source/logindlg.src#DLG_UUI_LOGIN.CB_LOGIN_SAVEPASSWORD.CheckBox.Text
-#, fuzzy
 msgid  "~Remember password"
 msgstr "പാസ്‌വേര്‍ഡ് ~‌സൂക്ഷിക്കുക"
 
@@ -506,60 +456,50 @@ msgid  "~Use system credentials"
 msgstr ""
 
 #: source/cookiedg.src#DLG_COOKIES.RB_INFUTURE_SEND.RadioButton.Text
-#, fuzzy
 msgid  "~Send"
 msgstr "~അയയ്ക്കുക"
 
 #: source/cookiedg.src#DLG_COOKIES.RB_INFUTURE_IGNORE.RadioButton.Text
-#, fuzzy
 msgid  "I~gnore"
 msgstr "അവഗണിക്കുക"
 
 #: source/cookiedg.src#DLG_COOKIES.RB_INFUTURE_INTERACTIVE.RadioButton.Text
-#, fuzzy
 msgid  "I~nteractive"
 msgstr "~പരസ്പരം ഇടപെടല്‍"
 
 #: source/cookiedg.src#DLG_COOKIES.GB_INFUTURE.GroupBox.Text
-#, fuzzy
 msgid  "Future Cookie Handling"
 msgstr "ഭാവിയില്‍ കുക്കി കൈകാര്യം ചെയ്യുന്ന പ്രയോഗം"
 
 #: source/cookiedg.src#DLG_COOKIES.BTN_COOKIES_CANCEL.PushButton.Text
-#, fuzzy
 msgid  "~Ignore"
 msgstr "അവഗണിക്കുക"
 
 #: source/cookiedg.src#DLG_COOKIES.BTN_COOKIES_OK.PushButton.Text
-#, fuzzy
 msgid  "~Send"
 msgstr "~അയയ്ക്കുക"
 
 #: source/cookiedg.src#STR_COOKIES_RECV_START.String.Text
 msgid  "The '${HOST}' server wishes to set one or more cookies.\nCookies contain information referring to certain URL classes. If %PRODUCTNAME later requests a document with a URL corresponding to the class of a previously set cookie, %PRODUCTNAME will send this information to the server. This allows a server to recognize the status of a WWW application, e.g., when shopping online.\n\nThe following Cookies should be set:\n\n"
-msgstr ""
+msgstr " '${HOST}' ഒന്നോ അതില്കൂടുതലോ കുക്കികളുണ്ട്.\nചില URL ക്ലാസ്സുകളെപ്പറ്റിയുള്ള വിവരങ്ങള് കുക്കിയിലുണ്ട്. %PRODUCTNAME  പിന്നീട് നേരത്തെ സജ്ജീകരിച്ച കുക്കിയുടെ വിഭാഗത്തില് പ്പെട്ട URL  ഉള്ള ഒരു ഡോക്കുമെന്റ് ആവശ്യമാണെങ്കില്,  %PRODUCTNAME  ഈ വിവരം  സെര്‌വറിനെ അറിയിക്കും :\n\n"
 
 #: source/cookiedg.src#STR_COOKIES_RECV_COOKIES.String.Text
-#, fuzzy
 msgid  "Domain: ${DOMAIN}, Path: ${PATH}, Cookie: ${COOKIE}.\n"
 msgstr "ഡോമെയിന്‍: ${DOMAIN}, മാര്‍ഗ്ഗം: ${PATH}, കുക്കി: ${COOKIE}.\n"
 
 #: source/cookiedg.src#STR_COOKIES_RECV_TITLE.String.Text
-#, fuzzy
 msgid  "Cookie Reception"
 msgstr "കുക്കി സ്വീകരിക്കുക"
 
 #: source/cookiedg.src#STR_COOKIES_SEND_START.String.Text
 msgid  "%PRODUCTNAME has saved cookies for the server '${HOST}' which will be sent when requesting the document ${PATH}.\nCookies contain information which refers to certain URL classes. They are sent by some servers to %PRODUCTNAME where they are saved when certain documents are accessed. If %PRODUCTNAME loads a document that, according to the URL, corresponds to a class of one of the previously received Cookies, %PRODUCTNAME will send this information to that server. This enables a server to keep track of the status of a WWW application, e.g., when shopping online.\n\nThe following Cookies should be set:\n\n"
-msgstr ""
+msgstr "%PRODUCTNAME has saved cookies for the server '${HOST}' which will be sent when requesting the document ${PATH}.\nCookies contain information which refers to certain URL classes. They are sent by some servers to %PRODUCTNAME where they are saved when certain documents are accessed. If %PRODUCTNAME loads a document that, according to the URL, corresponds to a class of one of the previously received Cookies, %PRODUCTNAME will send this information to that server. This enables a server to keep track of the status of a WWW application, e.g., when shopping online.\n\nThe following Cookies should be set:\n\n"
 
 #: source/cookiedg.src#STR_COOKIES_SEND_COOKIES.String.Text
-#, fuzzy
 msgid  "Domain: ${DOMAIN}, Path: ${PATH}, Cookie: ${COOKIE}.\n"
 msgstr "ഡോമെയിന്‍: ${DOMAIN}, മാര്‍ഗ്ഗം: ${PATH}, കുക്കി: ${COOKIE}.\n"
 
 #: source/cookiedg.src#STR_COOKIES_SEND_TITLE.String.Text
-#, fuzzy
 msgid  "Send Cookies"
 msgstr "കുക്കികള്‍ അയയ്ക്കുക"
 
@@ -574,12 +514,14 @@ msgid  "The password is incorrect. The file cannot be modified."
 msgstr "തെറ്റായ സങ്കേതപദമാണ‌് പ്രവേശിപ്പിച്ചത്. ദയവായി വീണ്ടും പ്രവേശിപ്പിക്കുക"
 
 #: source/passworderrs.src#STR_ERROR_MASTERPASSWORD_WRONG.String.Text
+#, fuzzy
 msgid  "The master password is incorrect."
-msgstr ""
+msgstr "തെറ്റായ മുഖ്യ സങ്കേതപദമാണ‍് പ്രവേശിപ്പിച്ചത്. ദയവായി വീണ്ടും പ്രവേശിപ്പിക്കുക"
 
 #: source/passworderrs.src#STR_ERROR_SIMPLE_PASSWORD_WRONG.String.Text
+#, fuzzy
 msgid  "The password is incorrect."
-msgstr ""
+msgstr "തെറ്റായ മുഖ്യ സങ്കേതപദമാണ‍് പ്രവേശിപ്പിച്ചത്. ദയവായി വീണ്ടും പ്രവേശിപ്പിക്കുക"
 
 #: source/passworderrs.src#STR_ERROR_PASSWORDS_NOT_IDENTICAL.String.Text
 #, fuzzy
@@ -599,26 +541,22 @@ msgid  "Rename"
 msgstr ""
 
 #: source/openlocked.src#STR_OPENLOCKED_TITLE.String.Text
-#, fuzzy
 msgid  "Document in Use"
 msgstr "രേഖ ഉപയോഗത്തില്‍"
 
 #: source/openlocked.src#STR_OPENLOCKED_MSG.String.Text
 msgid  "Document file '$(ARG1)' is locked for editing by:\n\n$(ARG2)\n\nOpen document read-only or open a copy of the document for editing.\n\n"
-msgstr ""
+msgstr "'$(ARG1)' രേഖ ചിട്ടപ്പെടുത്തുന്നതിനായി പൂട്ടിയിരിക്കുന്നതു്:\n\n$(ARG2)\n\nറീഡ്-ഒണ്‍ലി ആയി രേഖ തുറക്കുക അല്ലെങ്കില്‍ ചിട്ടപ്പെടുത്തുന്നതിനായി രേഖയുടെ ഒരു പകര്‍പ്പു് തുറക്കുക.\n\n"
 
 #: source/openlocked.src#STR_OPENLOCKED_OPENREADONLY_BTN.String.Text
-#, fuzzy
 msgid  "Open ~Read-Only"
 msgstr "~റീഡ്-ഒണ്‍ലി തുറക്കുക"
 
 #: source/openlocked.src#STR_OPENLOCKED_OPENCOPY_BTN.String.Text
-#, fuzzy
 msgid  "Open ~Copy"
 msgstr "~പകര്‍പ്പു് തുറക്കുക"
 
 #: source/openlocked.src#STR_UNKNOWNUSER.String.Text
-#, fuzzy
 msgid  "Unknown User"
 msgstr "അപരിചിതനായ ഉപയോക്താവു്"
 
@@ -631,12 +569,10 @@ msgid  "The file has been changed since it was opened for editing in %PRODUCTNAM
 msgstr ""
 
 #: source/filechanged.src#STR_FILECHANGED_SAVEANYWAY_BTN.String.Text
-#, fuzzy
 msgid  "~Save Anyway"
 msgstr "എങ്ങനെയെങ്കിലും ~സൂക്ഷിക്കുക"
 
 #: source/newerverwarn.src#RID_DLG_NEWER_VERSION_WARNING.ModalDialog.Text
-#, fuzzy
 msgid  "%PRODUCTNAME Update Available"
 msgstr "%PRODUCTNAME പരിഷ്കരണം ലഭ്യമാണു്"
 
@@ -645,12 +581,10 @@ msgid  "This document was created by a newer version of %PRODUCTNAME. It may con
 msgstr ""
 
 #: source/newerverwarn.src#RID_DLG_NEWER_VERSION_WARNING.PB_UPDATE.PushButton.Text
-#, fuzzy
 msgid  "~Update Now..."
 msgstr "ഉടന്‍ ~പരിഷ്കരിക്കുക..."
 
 #: source/newerverwarn.src#RID_DLG_NEWER_VERSION_WARNING.PB_LATER.CancelButton.Text
-#, fuzzy
 msgid  "~Later"
 msgstr "~പിന്നീടു്"
 
@@ -719,17 +653,14 @@ msgid  "~Disable Macros"
 msgstr "മാക്രോസ് ~പ്രവര്‍ത്തന രഹിതമാക്കുക"
 
 #: source/masterpassworddlg.src#DLG_UUI_MASTERPASSWORD.FT_MASTERPASSWORD.FixedText.Text
-#, fuzzy
 msgid  "Enter password"
 msgstr "മുഖ്യ സങ്കേതപദം"
 
 #: source/masterpassworddlg.src#DLG_UUI_MASTERPASSWORD.HelpButton.Text
-#, fuzzy
 msgid  "Enter Master Password"
 msgstr "മുഖ്യ സങ്കേതപദം പ്രവേശിപ്പിക്കുക"
 
 #: source/masterpasscrtdlg.src#DLG_UUI_MASTERPASSWORD_CRT.ModalDialog.Text
-#, fuzzy
 msgid  "Set Master Password"
 msgstr "മുഖ്യ സങ്കേതപദം പ്രവേശിപ്പിക്കുക"
 
@@ -738,12 +669,10 @@ msgid  "Passwords for web connections are protected by a master password. You wi
 msgstr ""
 
 #: source/masterpasscrtdlg.src#DLG_UUI_MASTERPASSWORD_CRT.FT_MASTERPASSWORD_CRT.FixedText.Text
-#, fuzzy
 msgid  "~Enter password"
 msgstr "മുഖ്യ സങ്കേതപദം"
 
 #: source/masterpasscrtdlg.src#DLG_UUI_MASTERPASSWORD_CRT.FT_MASTERPASSWORD_REPEAT.FixedText.Text
-#, fuzzy
 msgid  "~Reenter password"
 msgstr "മുഖ്യ സങ്കേതപദം ഉറപ്പാക്കുക"
 
@@ -756,12 +685,10 @@ msgid  "Document file '$(ARG1)' is locked for editing by yourself on a different
 msgstr ""
 
 #: source/alreadyopen.src#STR_ALREADYOPEN_READONLY_BTN.String.Text
-#, fuzzy
 msgid  "Open ~Read-Only"
 msgstr "~റീഡ്-ഒണ്‍ലി ആയി തുറക്കുക"
 
 #: source/alreadyopen.src#STR_ALREADYOPEN_OPEN_BTN.String.Text
-#, fuzzy
 msgid  "~Open"
 msgstr "~തുറക്കുക"
 
@@ -770,12 +697,10 @@ msgid  "Document file '$(ARG1)' is locked for editing by yourself on a different
 msgstr ""
 
 #: source/alreadyopen.src#STR_ALREADYOPEN_RETRY_SAVE_BTN.String.Text
-#, fuzzy
 msgid  "~Retry Saving"
 msgstr "~വീണ്ടും സൂക്ഷിക്കുവാന്‍ ശ്രമിക്കുക"
 
 #: source/alreadyopen.src#STR_ALREADYOPEN_SAVE_BTN.String.Text
-#, fuzzy
 msgid  "~Save"
 msgstr "~സൂക്ഷിക്കുക"
 

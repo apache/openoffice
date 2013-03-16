@@ -125,7 +125,7 @@ msgstr "Mee waliigaltee hayyamtaa armaan gadii haalaan dubbiisi."
 
 #: src/Localization/setupstrings.ulf#STRING_ACCEPTLICENSE3
 msgid  "If you have read and accept all the terms of the entire Software License Agreement, click 'Accept License' to continue with the installation."
-msgstr ""
+msgstr "Jechoota mara Waliigaltee Hayyamtaa Mosaajjii waamaraa dubbistee yoo fudhatte, ijaarsa itti fufuuf 'Hayyamtaa Fudhu' cuqaasi."
 
 #: src/Localization/setupstrings.ulf#STRING_CHOOSEDIRECTORY1
 msgid  "Select Installation Directory"
@@ -153,11 +153,11 @@ msgstr "Galeeloo Haaraa Uumi"
 
 #: src/Localization/setupstrings.ulf#STRING_CHOOSEDIRECTORY5_QUESTION_MESSAGE
 msgid  "The directory '${DIR}' does not exist.\nDo you want to create it now?"
-msgstr ""
+msgstr "Galeeloon '${DIR}' hin jiru.\nGaleeloo kana amma uumuu barbaaddaa?"
 
 #: src/Localization/setupstrings.ulf#STRING_CHOOSEDIRECTORY5_QUESTION_MESSAGE2
 msgid  "The directory '${DIR}' does not exist.\nDo you want to create it now or choose another directory?"
-msgstr ""
+msgstr "Galeeloon '${DIR}' hin jiru.\nGaleeloo kana amma uumuu moo galeeloo biroo filachuu barbaadda?"
 
 #: src/Localization/setupstrings.ulf#STRING_CHOOSEDIRECTORY6
 msgid  "Select root directory"
@@ -213,7 +213,7 @@ msgstr "Qaamonni duraasaan ni ijaaramu. Fayyadamtoota irra jiraaf kan gorfamu."
 
 #: src/Localization/setupstrings.ulf#STRING_CHOOSEINSTALLATIONTYPE5
 msgid  "You choose the components you want to install and where they are stored. Recommended for advanced users."
-msgstr ""
+msgstr "Qaamota ijaaruu barbaadduu fi eessatti akka kuufaman filatta. Fayyadamtoota olaanoof kan gorfamu."
 
 #: src/Localization/setupstrings.ulf#STRING_CHOOSEINSTALLATIONTYPE6
 msgid  "Typical"
@@ -253,7 +253,7 @@ msgstr "Baga nagaan dhuftee"
 
 #: src/Localization/setupstrings.ulf#STRING_PROLOGUE2
 msgid  "This Installation Wizard will install ${PRODUCT_FULLNAME} on your computer."
-msgstr ""
+msgstr "Masakni Ijaarsaa kun ${PRODUCT_FULLNAME} kompiyuutara keerratti ijaara."
 
 #: src/Localization/setupstrings.ulf#STRING_PROLOGUE3
 msgid  "To continue, click 'Next'."
@@ -261,7 +261,7 @@ msgstr "Itti fufuuf,'Itti aanee' cuqaasi."
 
 #: src/Localization/setupstrings.ulf#STRING_PROLOGUE4
 msgid  "Note: This installation will be done without root privileges. Therefore you will have a reduced functionality (Java Runtime Environment (JRE) not installable, system integration not possible).\nClick 'Cancel' and change your privileges to root privileges, if you want to use the complete functionality."
-msgstr ""
+msgstr "Yaadannoo: Ijaarsi kun mirgoota hundee malee hojjatama. Kanaaf fayyadama hir'uu argatta(Qeeyyaa Yeroo Ka'iinsaa Jaavaa (JRE) ijaaramuu hin dandeenye, walqabatoon sirnaa hin dnada'amu).\nFayyadama guutuu argachuu yoo barbaadde, 'Dhiisi' cuqaasiitii mirgoota kee mirgoota hundeetti jijjiiri."
 
 #: src/Localization/setupstrings.ulf#STRING_INSTALLATIONCOMPLETED1
 msgid  "Installation Completed"
@@ -277,15 +277,15 @@ msgstr "Ijaarsi Dadhabeera"
 
 #: src/Localization/setupstrings.ulf#STRING_INSTALLATIONCOMPLETED2
 msgid  "The Installation Wizard has successfully installed ${PRODUCT_FULLNAME} on your computer."
-msgstr ""
+msgstr "Masakni Ijaarsaa ${PRODUCT_FULLNAME} kompiyuutara keerratti milkaa'inaan ijaareera."
 
 #: src/Localization/setupstrings.ulf#STRING_INSTALLATIONCOMPLETED2_ABORT
 msgid  "The Installation Wizard was aborted. ${PRODUCT_NAME} is not installed on your computer."
-msgstr ""
+msgstr "Masakni Ijaarsaa kutameera. ${PRODUCT_NAME} kompiyuutara keerratti hin fe'amne."
 
 #: src/Localization/setupstrings.ulf#STRING_INSTALLATIONCOMPLETED2_ERROR
 msgid  "An error has occurred. Thus the Installation Wizard could not install ${PRODUCT_NAME} on your computer successfully. Click 'Details...' for more information."
-msgstr ""
+msgstr "Dogoggorri uumameera. Kanaaf Masakni Ijaarsaa ${PRODUCT_NAME} kompiyuutara keerratti milkaa'inaan ijaaruu hin dandeenye. Odeeffannoo dabalataaf 'Baldhintaa...' cuqaasi."
 
 #: src/Localization/setupstrings.ulf#STRING_INSTALLATIONCOMPLETED3
 msgid  "Click 'Finish' to exit the Wizard."
@@ -297,15 +297,15 @@ msgstr "Baldhintaa..."
 
 #: src/Localization/setupstrings.ulf#STRING_UNINSTALLATIONPROLOGUE2
 msgid  "The ${PRODUCT_FULLNAME} Uninstallation Wizard will remove ${PRODUCT_FULLNAME} from your computer."
-msgstr ""
+msgstr "Masakni Diiginsa ${PRODUCT_FULLNAME} kompiyuutara keerraa ${PRODUCT_FULLNAME} haqa."
 
 #: src/Localization/setupstrings.ulf#STRING_UNINSTALLATION_PROLOGUE_WRONG_PRIVILEGES_CURRENT_ROOT
 msgid  "Sorry, wrong privileges. Installation was done with User privilges, but you have Root privileges."
-msgstr ""
+msgstr "Mirgoota dogoggoraa. Ijaarsi kun kan hojjatame mirgoota fayyadamaatiini, kan kee garuu mirgoota hundeeti."
 
 #: src/Localization/setupstrings.ulf#STRING_UNINSTALLATION_PROLOGUE_WRONG_PRIVILEGES_CURRENT_USER
 msgid  "Sorry, wrong privileges. Installation was done with Root privilges, but you have User privileges."
-msgstr ""
+msgstr "Mirgoota dogoggoraa. Ijaarsi kun kan hojjatame mirgoota hundeetiini, kan kee garuu mirgoota fayyadamaati."
 
 #: src/Localization/setupstrings.ulf#STRING_CHOOSEUNINSTALLATIONTYPE1
 msgid  "Select the Type of Uninstallation"
@@ -321,7 +321,7 @@ msgstr "Walakkee"
 
 #: src/Localization/setupstrings.ulf#STRING_CHOOSEUNINSTALLATIONTYPE4
 msgid  "Completely removes ${PRODUCT_FULLNAME} and all its components from your system."
-msgstr ""
+msgstr "${PRODUCT_FULLNAME} fi qaamota isaa mara kompiyuutara keerraa haqa."
 
 #: src/Localization/setupstrings.ulf#STRING_CHOOSEUNINSTALLATIONTYPE5
 msgid  "You choose the program features you want to remove."
@@ -333,7 +333,7 @@ msgstr "Xumuri"
 
 #: src/Localization/setupstrings.ulf#STRING_CHOOSEUNINSTALLATIONCOMPONENTS2
 msgid  "Components marked with an X will be removed. Mark the components you want to remove."
-msgstr ""
+msgstr "Qamonni Xdhaan mallatteeffan marti ni haqamu. Qaamota akka haqaman barbaaddu mallatteessi."
 
 #: src/Localization/setupstrings.ulf#STRING_UNINSTALLATIONIMMINENT1
 msgid  "Ready to Remove"
@@ -361,19 +361,19 @@ msgstr "Diiginsi Dadhabeera"
 
 #: src/Localization/setupstrings.ulf#STRING_UNINSTALLATIONCOMPLETED2
 msgid  "The Uninstallation Wizard has successfully removed ${PRODUCT_FULLNAME} from your computer."
-msgstr ""
+msgstr "Masakni Diiginsaa ${PRODUCT_FULLNAME} kompiyuutara keerraa milkaa'inaan diigeera."
 
 #: src/Localization/setupstrings.ulf#STRING_UNINSTALLATIONCOMPLETED2_PARTIAL
 msgid  "The Uninstallation Wizard has successfully removed the selected components of ${PRODUCT_NAME} from your computer."
-msgstr ""
+msgstr "Masakni Diiginsaa qaamota ${PRODUCT_NAME} filataman kompiyuutara keerraa milkaa'inaan haqee jira."
 
 #: src/Localization/setupstrings.ulf#STRING_UNINSTALLATIONCOMPLETED2_ABORT
 msgid  "The Uninstallation Wizard was aborted before completely removing ${PRODUCT_NAME} from your computer."
-msgstr ""
+msgstr "Masakni Diiginsaa ${PRODUCT_NAME} kompiyuutara keerraa guutuumaa guutuutti diiguun dura kutame."
 
 #: src/Localization/setupstrings.ulf#STRING_UNINSTALLATIONCOMPLETED2_ERROR
 msgid  "An error has occurred. Thus the Uninstallation Wizard could not remove ${PRODUCT_NAME} from your computer successfully. Click 'Details...' for more information."
-msgstr ""
+msgstr "Dogoggori uumameera. Kanaaf Masakni Diiginsaa ${PRODUCT_NAME} kompiyuutara keerraa milkaa'inaan haquu hin dandeenye. Odeeffannoo dabalataaf 'Baldhintaa...' cuqaasi."
 
 #: src/Localization/setupstrings.ulf#STRING_INSTALLERFACTORY_OS_NOT_SUPPORTED
 msgid  "Sorry, this Operating System is not supported yet."
@@ -381,19 +381,19 @@ msgstr "Sirni Dalagaa kun ammas hin deeggaramu."
 
 #: src/Localization/setupstrings.ulf#STRING_OLDER_VERSION_INSTALLED_FOUND
 msgid  "An older version of ${PRODUCT_NAME} was found on your system in:"
-msgstr ""
+msgstr "Fooyya'aa moofaan kan ${PRODUCT_NAME} sirna keetirraa kana keessatti argameera:"
 
 #: src/Localization/setupstrings.ulf#STRING_OLDER_VERSION_INSTALLED_REMOVE
 msgid  "You have to remove the older version of ${PRODUCT_NAME} before you can install the newer one."
-msgstr ""
+msgstr "Fooyya'aa haaraa ijaaruu keen dura fooyya'aa moofaa ${PRODUCT_NAME} haquu qabda."
 
 #: src/Localization/setupstrings.ulf#STRING_NEWER_VERSION_INSTALLED_FOUND
 msgid  "A newer version of ${PRODUCT_NAME} was found on your system in:"
-msgstr ""
+msgstr "Fooyya'aa haaraan kan ${PRODUCT_NAME} sirna keetirraa kana keessatti argameera:"
 
 #: src/Localization/setupstrings.ulf#STRING_NEWER_VERSION_INSTALLED_REMOVE
 msgid  "You have to remove the newer version of ${PRODUCT_NAME} before you can install the older one."
-msgstr ""
+msgstr "Fooyya'aa moofaa ijaaruu keen dura fooyya'aa haaraa ${PRODUCT_NAME} haquu qabda."
 
 #: src/Localization/setupstrings.ulf#STRING_NEWER_VERSION_DATABASE
 msgid  "Database"
@@ -409,7 +409,7 @@ msgstr "Fayyadamaan ati itti seente Masaka Ijaarsaa kaasuu hin danda'u."
 
 #: src/Localization/setupstrings.ulf#STRING_ROOT_PRIVILEGES_REQUIRED_2
 msgid  "Please log out and log back in as a user with system administrator rights."
-msgstr ""
+msgstr "Kana keessaa bahiitii akka fayyadamaa mirgoota taliigaa sirnaa qabutti seeni."
 
 #: src/Localization/setupstrings.ulf#STRING_DISCSPACE_INSUFFICIENT
 msgid  "Not enough discspace available for installation."
@@ -425,7 +425,7 @@ msgstr "Iddoon baxxee jiru"
 
 #: src/Localization/setupstrings.ulf#STRING_DISCSPACE_TIP
 msgid  "Please use another directory for installation or change your module selection."
-msgstr ""
+msgstr "Mee ijaarsaaf galeeloo biroo fayyadami ykn filannoo moojuulii kee jijjiiri."
 
 #: src/Localization/setupstrings.ulf#STRING_ANALYZING_DATABASE1
 msgid  "Analyzing ..."
@@ -433,19 +433,19 @@ msgstr "Xiinxalaa jira ..."
 
 #: src/Localization/setupstrings.ulf#STRING_ANALYZING_DATABASE2
 msgid  "Analyzing database\nPlease wait a moment ..."
-msgstr ""
+msgstr "Kuusdeetaa xiinxalaa jira\nMee yeroo xiqqoo eegii ..."
 
 #: src/Localization/setupstrings.ulf#STRING_PROLOGUE_1
 msgid  "Welcome to the Installation Wizard.<p>This wizard asks you to supply configuration settings.<p>At the bottom of each page are navigation buttons that let you move through the Installation Wizard:"
-msgstr ""
+msgstr "Baga Masaka Ijaarsaatti Nagaan Dhufte.<p>Masakni kun Qindaa'inoota akka kennitu si gaafata.<p>Jala fuula tokkoon tokkooniirratti qabdoonni naanna'iinsaa Masaka Ijaarsaa keessa si qajeelchan ni jiru:"
 
 #: src/Localization/setupstrings.ulf#STRING_PROLOGUE_2
 msgid  "'Back' returns you to the previous page."
-msgstr "'Duuba' gara fuula duraat sideebisa."
+msgstr "'Duubatti' fuula darbetti si deebisa."
 
 #: src/Localization/setupstrings.ulf#STRING_PROLOGUE_3
 msgid  "'Next' takes you to the next page. "
-msgstr "Itti aanee' gara fuula itti aanuut sigesaa. "
+msgstr "'Itti aanee' fuula itti aanutti si geessa. "
 
 #: src/Localization/setupstrings.ulf#STRING_PROLOGUE_4
 msgid  "'Cancel' ends the Installation Wizard without installing this software."
@@ -453,7 +453,7 @@ msgstr "'Dhiisi' mosaajjii kana osoo hin ijaarin Masaka Ijaarsaa dhaaba."
 
 #: src/Localization/setupstrings.ulf#STRING_PROLOGUE_5
 msgid  "'Help' displays the Help with further information about the page currently displayed."
-msgstr ""
+msgstr "'Gargaarsa' Gargaarsa odeeffannoo dabalataa waa'ee fuula amma."
 
 #: src/Localization/setupstrings.ulf#STRING_PROLOGUE_6
 msgid  "'OK' exits the Help page and returns you to the Installation Wizard."
@@ -461,7 +461,7 @@ msgstr "'Tole' fuula Gargaarsaa keessaa bahee Masaka Ijaarsaatti si deebisa."
 
 #: src/Localization/setupstrings.ulf#STRING_UNINSTALLATIONPROLOGUE_1
 msgid  "Welcome to the Uninstallation Wizard.<p>This wizard asks you to supply configuration settings.<p>At the bottom of each page are navigation buttons that let you move through the Uninstallation Wizard:"
-msgstr ""
+msgstr "Gara Ijaaru Masakatti baggaa naagaan dhuftee.<p>Masakan kun ijaarsa qindaayina akka galchiituuf sigaafaataa.<p>ijaarsaa masaka siqsif akka sigaargaruf tokkon tokkon barruu jala qabduu naanna'insa:"
 
 #: src/Localization/setupstrings.ulf#STRING_UNINSTALLATIONPROLOGUE_2
 msgid  "'Back' returns you to the previous page."
@@ -477,7 +477,7 @@ msgstr "'Dhiisi' mosajjii kana ittu hin ijaarin Ijaaru Masaka xumura."
 
 #: src/Localization/setupstrings.ulf#STRING_UNINSTALLATIONPROLOGUE_5
 msgid  "'Help' displays the Help with further information about the page currently displayed."
-msgstr ""
+msgstr "'Gargaarsa' Gargaarsa odeeffannoo wa'ee fuula amma agarsiifamuu waliin agarsiisa."
 
 #: src/Localization/setupstrings.ulf#STRING_UNINSTALLATIONPROLOGUE_6
 msgid  "'OK' exits the Help page and returns you to the Uninstallation Wizard."
@@ -485,55 +485,55 @@ msgstr "'Tole' fuula Gargaarsaa keessaa baasee Masaka Diiginsaatti sideebisa."
 
 #: src/Localization/setupstrings.ulf#STRING_ACCEPTLICENSE_1
 msgid  "Before you install this product, you must read and accept the entire Software License Agreement under which this software is licensed for your use."
-msgstr ""
+msgstr "Oomisha kana ijaaruun dura, Waliigaltee Hayyamtaa Mosaajjii waamaraa mosaajjiin kun faayidaa keetiif jecha jalatti hayyamteessame dubbistee fudhachuu qabda."
 
 #: src/Localization/setupstrings.ulf#STRING_ACCEPTLICENSE_2
 msgid  "If you have read and accept all the terms of the entire Software License Agreement, click 'Accept License' to continue with the installation."
-msgstr ""
+msgstr "Jechoota Waliigaltee Hayyamtaa Mosaajjii waamaraa mara yoo dubbistee fudhatte, ijaarsa itti fufuuf 'Hayyamtaa Fudhu' cuqaasi."
 
 #: src/Localization/setupstrings.ulf#STRING_ACCEPTLICENSE_3
 msgid  "If you do not accept all the terms of the Software License Agreement, click 'Decline' to end the Installation Wizard without installing this product."
-msgstr ""
+msgstr "Jechoota Waliigaltee Hayyamtaa Mosaajjii waamaraa mara yoo fudhachuu didde, oomisha kana osoo hin ijaarin Masaka Ijaarsaa dhaabuuf 'Didi' cuqaasi."
 
 #: src/Localization/setupstrings.ulf#STRING_CHOOSEINSTALLATIONTYPE_1
 msgid  "Select the type of product installation to perform from the following choices. This will determine how much information you need to provide for product configuration."
-msgstr ""
+msgstr "Filannoolee armaan gadii keessaa akaakuu ijaarsa oomishaa hujeeffamu filadhu. Kun ammoo qindaa'ina oomishaatiif odeeffannoo hammamii kennuu akka barbaaddu murteessa."
 
 #: src/Localization/setupstrings.ulf#STRING_CHOOSEDIRECTORY_1
 msgid  "It is recommended that you install this product in the directory suggested by this Installation Wizard. <p>To choose a different location, click 'Browse...' or specify the full path of the directory to use in the text box below. <p>If this product is already installed, you cannot change the destination directory."
-msgstr ""
+msgstr "Oomisha kana galeeloo Masaka Ijaarsaa kanaan dhiyaate keessatti akka ijaartu gorfamta. <p>Iddoo biroo filachuuf, 'Sakatta'i...' cuqaasi ykn saanduqa barruu armaan gadii keessatti xurree guutuu kan galeeloo fayyadamtuu ifteessi. <p>Oomishni kun kanaan dura kan ijaarame yoo tahe, galeeloo gahumsaa jijjiiruu hin dandeessu."
 
 #: src/Localization/setupstrings.ulf#STRING_CHOOSECOMPONENTS_1
 msgid  "Components marked in color will be installed. Click the icon of a component to mark or unmark the component.<p>All already installed components cannot be selected for installation."
-msgstr ""
+msgstr "Qaamonni halluudhaan malkateessaman ni ijaaramu. Qaama malkateessuuf ykn malkataleessuuf sajoo qaamichaa cuqaasi. <p>Qaamonni ijaaramnii jiran marti ijaarsaaf filatamuu hin danda'an."
 
 #: src/Localization/setupstrings.ulf#STRING_INSTALLATIONIMMINENT_1
 msgid  "The listed components are ready for installation based on your configuration settings. <p>If you are satisfied with your selection, click 'Install Now' to begin. <p>To check or modify your settings on the previous pages, click 'Back'."
-msgstr ""
+msgstr "Qindaa'inoota keerratti hundaa'ee qaamonni tarreeffaman ijaarsaaf qophaaniiru. <p>Filannoon kee sitti taanaan, ijaarsa jalqabuuf 'Amma Ijaari' cuqaasi. <p>Qindaa'inoota kee kan fuulota darbeerraa mirkaneeffachuuf ykn fooyyessuuf,  'Duubatti' cuqaasi."
 
 #: src/Localization/setupstrings.ulf#STRING_UNINSTALLATIONIMMINENT_1
 msgid  "The listed components are ready for uninstallation based on your configuration settings. <p>If you are satisfied with your selection, click 'Remove Now' to begin. <p>To check or modify your settings on the previous pages, click 'Back'."
-msgstr ""
+msgstr "Qindaa'inoota keerratti hundaa'ee qaamonni tarreeffaman diiginsaaf qophaaniiru. <p>Filannoon kee sitti taanaan, ijaarsa jalqabuuf 'Amma Balleessi' cuqaasi. <p>Qindaa'inoota kee kan fuulota darbeerraa mirkaneeffachuuf ykn fooyyessuuf,  'Duubatti' cuqaasi."
 
 #: src/Localization/setupstrings.ulf#STRING_INSTALLATIONONGOING_1
 msgid  "This page indicates the progress of the installation with the aid of a progress bar. To abort the installation process, click 'Stop'."
-msgstr ""
+msgstr "Fuulli kun kabala tarkaanffiitiin gargaaramee tarkaanfii ijaarsaa agarsiisa. Hojii ijaarsaa addaan kutuuf, 'Dhaabi' cuqaasi."
 
 #: src/Localization/setupstrings.ulf#STRING_UNINSTALLATIONONGOING_1
 msgid  "This page indicates the progress of the uninstallation with the aid of a progress bar. To abort the uninstallation, click 'Stop'."
-msgstr ""
+msgstr "Fuulli kun kabala tarkaanffiitiin gargaaramee tarkaanfii diiginsaa agarsiisa. Hojii diiginsaa addaan kutuuf, 'Dhaabi' cuqaasi."
 
 #: src/Localization/setupstrings.ulf#STRING_CHOOSEUNINSTALLATIONTYPE_1
 msgid  "Complete: This will remove all installed components of your version.<p>Partial: This removes only the components you will choose out of the components list."
-msgstr ""
+msgstr "Guutuu: Kun qaamota fooyya'aa keetii ijaaraman mara haqa. <p>Walakkee: kun qaamota tarree qaamotaa keessaa ati filatte qofa haqa."
 
 #: src/Localization/setupstrings.ulf#STRING_CHOOSEUNINSTALLATIONCOMPONENTS_1
 msgid  "Components marked with an X will be removed. Click next to a component to mark or unmark it with an X."
-msgstr ""
+msgstr "Qaamonni Xdhaan malkateessamn ni haqamu. Xdhaan malkateessuu ykn malkataleessuuf qaamatti aansii cuqaasi."
 
 #: src/Localization/setupstrings.ulf#STRING_PACKAGEFORMAT_NOT_SUPPORTED
 msgid  "This package format is currently not supported for your operating system!"
-msgstr ""
+msgstr "Dhangiin qarqabaa kun sirna dalagaa keerrattu ammaaaf hin deeggaramu!"
 
 #: src/Localization/setupstrings.ulf#STRING_OPERATING_SYSTEM
 msgid  "Operating system"
@@ -553,7 +553,7 @@ msgstr "Ijaarsaaf qamonni homtuu hin filatamane."
 
 #: src/Localization/setupstrings.ulf#STRING_NO_COMPONENTS_SELECTED_2
 msgid  "Click 'OK' to select one or more components for installation or to exit the Installation Wizard."
-msgstr ""
+msgstr "Ijaarsaaf qaama tokko ykn isaa ol filachuuf ykn Masaka Ijaarsaa keessaa bahuuf 'Tole' cuqaasi."
 
 #: src/Localization/setupstrings.ulf#STRING_NO_LANGUAGE_SELECTED_1
 msgid  "No languages have been selected for installation."
@@ -561,7 +561,7 @@ msgstr "Ijaarsaaf afaanota homtuu hin filamne."
 
 #: src/Localization/setupstrings.ulf#STRING_NO_LANGUAGE_SELECTED_2
 msgid  "Click 'OK' to select one or more languages for installation or to exit the Installation Wizard."
-msgstr ""
+msgstr "Ijaarsaaf afaan tokko ykn isaa ol filachuuf ykn Masaka Ijaarsaa keessaa bahuuf 'Tole' cuqaasi."
 
 #: src/Localization/setupstrings.ulf#STRING_NO_APPLICATION_SELECTED_1
 msgid  "No applications have been selected for installation."
@@ -569,7 +569,7 @@ msgstr "Ijaarsaaf fayyadamoota homtuu hin filatamne."
 
 #: src/Localization/setupstrings.ulf#STRING_NO_APPLICATION_SELECTED_2
 msgid  "Click 'OK' to select one or more application for installation or to exit the Installation Wizard."
-msgstr ""
+msgstr "Ijaarsaaf fayyadama tokko ykn isaa ol filachuuf ykn Masaka Ijaarsaa keessaa bahuuf 'Tole' cuqaasi."
 
 #: src/Localization/setupstrings.ulf#STRING_NOTHING_TO_UNINSTALL
 msgid  "Nothing to uninstall"
@@ -581,7 +581,7 @@ msgstr "Diiginsaaf qaamota homtuu hin filamne."
 
 #: src/Localization/setupstrings.ulf#STRING_NO_UNINSTALLCOMPONENTS_SELECTED_2
 msgid  "Click 'OK' to select one or more components for uninstallation or to exit the Uninstallation Wizard."
-msgstr ""
+msgstr "Diiginsaaf qaama tokko ykn isaa ol filachuuf ykn Masaka Diiginsaa keessaa bahuuf 'Tole' cuqaasi."
 
 #: src/Localization/setupstrings.ulf#STRING_ALL_LANGUAGECOMPONENTS_SELECTED_1
 msgid  "All language components have been selected for uninstallation."
@@ -589,7 +589,7 @@ msgstr "Qaamonni afaanii marti diiginsaaf filamani."
 
 #: src/Localization/setupstrings.ulf#STRING_ALL_LANGUAGECOMPONENTS_SELECTED_2
 msgid  "Click 'OK' to select one or more language components not for uninstallation or to exit the Uninstallation Wizard."
-msgstr ""
+msgstr "Qaama afaanii tokko ykn isaa ol kan diiginsaa hin taane filachuuf ykn Masaka Diiginsaa keessaa bahuuf 'Tole' cuqaasi."
 
 #: src/Localization/setupstrings.ulf#STRING_ALL_APPLICATIONCOMPONENTS_SELECTED_1
 msgid  "All application components have been selected for uninstallation."
@@ -597,7 +597,7 @@ msgstr "Qaamonni fayyadamaa marti diiginsaaf filamani."
 
 #: src/Localization/setupstrings.ulf#STRING_ALL_APPLICATIONCOMPONENTS_SELECTED_2
 msgid  "Click 'OK' to select one or more application components not for uninstallation or to exit the Uninstallation Wizard."
-msgstr ""
+msgstr "Qaama tokko ykn isaa ol kan diiginsaa hin taane filachuuf ykn Masaka Ijaarsaa keessaa bahuuf 'Tole' cuqaasi."
 
 #: src/Localization/setupstrings.ulf#STRING_CHANGE_SELECTION
 msgid  "Please change selection"

@@ -33,7 +33,7 @@ msgstr ""
 
 #: source/component/warnbox.src#RID_XMLSECWB_NO_MOZILLA_PROFILE.WarningBox.Message
 msgid  "Digital signatures functionality could not be used, because no Mozilla user profile was found. Please check the Mozilla installation."
-msgstr ""
+msgstr "മോസിലാ ഉപയോക്താവിനുള്ള വിശദാംശങ്ങള്‍ ലഭ്യമാകാത്തതിനാല്‍ ഡിജിറ്റല്‍ കൈയ്യൊപ്പ് പ്രവര്‍ത്തനം ഉപയോഗിക്കുവാന്‍ സാധ്യമായില്ല. ദയവായി മോസിലാ ഇന്‍സ്റ്റലേഷന്‍ പരിശോധിക്കുക."
 
 #: source/dialogs/macrosecurity.src#RID_XMLSECTP_MACROSEC.TabDialog.Text
 msgid  "Macro Security"
@@ -53,19 +53,19 @@ msgstr "പുനഃസ്ഥാപിക്കുക"
 
 #: source/dialogs/macrosecurity.src#RID_XMLSECTP_SECLEVEL.RB_VERYHIGH.RadioButton.Text
 msgid  "~Very high.\nOnly macros from trusted file locations are allowed to run. All other macros, regardless whether signed or not, are disabled."
-msgstr ""
+msgstr "~വളരെ കൂടുതല്‍.\nവിശ്വസ്തമായ ഫയല്‍ സ്ഥാനങ്ങളില്‍ നിന്നുള്ള മാക്രോകള്‍ മാത്രമേ പ്രവര്‍ത്തിപ്പിക്കുവാന്‍ സാധ്യമാകൂ. മറ്റെല്ലാ മാക്രോകളും (ഒപ്പുള്ളതും ഇല്ലാത്തതും) നിര്‍ജ്ജീവമാണു്."
 
 #: source/dialogs/macrosecurity.src#RID_XMLSECTP_SECLEVEL.RB_HIGH.RadioButton.Text
 msgid  "H~igh.\nOnly signed macros from trusted sources are allowed to run. Unsigned macros are disabled."
-msgstr ""
+msgstr "ഉയര്‍ന്ന .\n വിശ്വസ്ത ഉറവിടത്തില്‍ നിന്നുള്ള  മാക്രോകള്‍ മാത്രമേ പ്രവര്‍ത്തിക്കുവാന്‍ അനുവദിക്കുള്ളു. സാക്ഷ്യപ്പെടുത്താത്ത മാക്രോകള്‍ നിഷ്ക്രിയമാക്കുന്നു."
 
 #: source/dialogs/macrosecurity.src#RID_XMLSECTP_SECLEVEL.RB_MEDIUM.RadioButton.Text
 msgid  "~Medium.\nConfirmation required before executing macros from untrusted sources."
-msgstr ""
+msgstr "~മദ്ധ്യത്തില്‍.\nഅവിശ്വസനീയമായ ഉറവിടങ്ങളില്‍ നിന്നും മാക്രോകള്‍ പ്രവര്‍ത്തിപ്പിക്കുന്നതിനു് മുമ്പ് അവ ഉറപ്പാക്കേണ്ടതുണ്ടു്."
 
 #: source/dialogs/macrosecurity.src#RID_XMLSECTP_SECLEVEL.RB_LOW.RadioButton.Text
 msgid  "~Low (not recommended).\nAll macros will be executed without confirmation. Use this setting only if you are certain that all documents that will be opened are safe."
-msgstr ""
+msgstr "~കുറഞ്ഞ (ഉത്തമമല്ല).\nഉറപ്പാക്കാതെ എല്ലാ മാക്രോകളും പ്രവര്‍ത്തിപ്പിക്കുന്നു. തുറക്കുന്ന എല്ലാ രേഖകളും ശരിയാണു് എന്നുറപ്പുണ്ടെങ്കില്‍ മാത്രം ഈ ക്രമീകരണം ഉപയോഗിക്കുക."
 
 #: source/dialogs/macrosecurity.src#RID_XMLSECTP_TRUSTSOURCES.FL_TRUSTCERT.FixedLine.Text
 msgid  "Trusted certificates"
@@ -93,7 +93,7 @@ msgstr "വിശ്വസിക്കാവുന്ന ഫയല്‍ സ്�
 
 #: source/dialogs/macrosecurity.src#RID_XMLSECTP_TRUSTSOURCES.FI_TRUSTFILELOC.FixedText.Text
 msgid  "Document macros are always executed if they have been opened from one of the following locations."
-msgstr ""
+msgstr "താഴെ പറഞ്ഞിരിക്കുന്ന ഒരു സ്ഥലത്തു് നിന്നാണു് ഇവ തുറക്കുപ്പെട്ടിരുന്നതു് എങ്കില്‍ രേഖയിലുള്ള മാക്രോസ് എപ്പോഴും പ്രവര്‍ത്തിപ്പിക്കുവാന്‍ സാധിക്കുന്നു. "
 
 #: source/dialogs/macrosecurity.src#RID_XMLSECTP_TRUSTSOURCES.FL_ADD_TRUSTFILELOC.PushButton.Text
 msgid  "Add..."
@@ -145,11 +145,11 @@ msgstr "ഡിജിറ്റല് കൈയ്യോപ്പ്"
 
 #: source/dialogs/digitalsignaturesdialog.src#RID_XMLSECDLG_DIGSIG.FT_HINT_DOC.FixedText.Text
 msgid  "The following have signed the document content:"
-msgstr ""
+msgstr "താഴെ കൊടുത്തിരിക്കുന്നവരാണ‍് ഈ  ഡോക്കുമെന്റ് ഉള്ളടക്കം ഒപ്പിട്ടിരിക്കുന്നത്"
 
 #: source/dialogs/digitalsignaturesdialog.src#RID_XMLSECDLG_DIGSIG.FT_HINT_BASIC.FixedText.Text
 msgid  "The following have signed the document macro:"
-msgstr ""
+msgstr "താഴെ കൊടുത്തിരിക്കുന്നവരാണ‍് ഈ  ഡോക്കുമെന്റ് മാക്രോ  ഒപ്പിട്ടിരിക്കുന്നത്"
 
 #: source/dialogs/digitalsignaturesdialog.src#RID_XMLSECDLG_DIGSIG.FT_HINT_PACK.FixedText.Text
 msgid  "The following have signed this package:"
@@ -205,7 +205,7 @@ msgstr ""
 
 #: source/dialogs/digitalsignaturesdialog.src#MSG_XMLSECDLG_QUERY_REMOVEDOCSIGNBEFORESIGN.QueryBox.Message
 msgid  "Adding or removing a macro signature will remove all document signatures.\nDo you really want to continue?"
-msgstr ""
+msgstr "ഒരു മാക്രോ സിഗ്നേച്ചര്‍ ചേര്‍ക്കുകയോ നീക്കം ചെയ്യുകയോ ചെയ്യുന്നതു്, എല്ലാ രേഖകളിലുനുള്ള സിഗ്നേച്ചര്‍ നീക്കം ചെയ്യുന്നു.\nനിങ്ങള്‍ക്കു് തുടരണമോ?"
 
 #: source/dialogs/certificateviewer.src#RID_XMLSECDLG_CERTVIEWER.TabDialog.Text
 msgid  "View Certificate"
@@ -337,7 +337,7 @@ msgstr "സര്‍ട്ടിഫിക്കേറ്റ് തെരഞ്�
 
 #: source/dialogs/certificatechooser.src#RID_XMLSECDLG_CERTCHOOSER.FT_HINT_SELECT.FixedText.Text
 msgid  "Select the certificate you want to use for signing"
-msgstr ""
+msgstr "നിങ്ങള്‍ക്കു് ഒപ്പിടുന്നതിനു് ആവശ്യമായ സര്‍ട്ടിഫിക്കേറ്റ് തെരഞ്ഞെടുക്കുക"
 
 #: source/dialogs/certificatechooser.src#RID_XMLSECDLG_CERTCHOOSER.STR_HEADERBAR.String.Text
 msgid  "Issued to\tIssued by\tExpiration date"

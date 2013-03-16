@@ -245,23 +245,23 @@ msgstr ""
 
 #: inc_openoffice/windows/msi_languages/Error.ulf#OOO_ERROR_29
 msgid  "Error writing to file [2].  Verify that you have access to that directory."
-msgstr ""
+msgstr "Eroare la scrierea fișierului [2]. Verificați că aveți acces la acest director."
 
 #: inc_openoffice/windows/msi_languages/Error.ulf#OOO_ERROR_30
 msgid  "Error reading from file [2].  Verify that the file exists and that you can access it."
-msgstr ""
+msgstr "Eroare la citirea fișierului [2]. Verificați că fișierul există și că îl puteți accesa."
 
 #: inc_openoffice/windows/msi_languages/Error.ulf#OOO_ERROR_31
 msgid  "Another application has exclusive access to the file [2].  Please shut down all other applications, then click Retry."
-msgstr ""
+msgstr "O altă aplicație are acces exclusiv la fișierul [2]. Vă rugăm să opriți celelalte aplicații, după care să apăsați „Încearcă din nou”."
 
 #: inc_openoffice/windows/msi_languages/Error.ulf#OOO_ERROR_32
 msgid  "There is not enough disk space to install the file [2].  Free some disk space and click Retry, or click Cancel to exit."
-msgstr ""
+msgstr "Nu este suficient spațiu pe disc pentru a instala fișierul [2]. Creați spațiu liber pe disc, apoi apăsați „Încearcă din nou” sau apăsați „Renunță” pentru a ieși."
 
 #: inc_openoffice/windows/msi_languages/Error.ulf#OOO_ERROR_33
 msgid  "Source file not found: [2].  Verify that the file exists and that you can access it."
-msgstr ""
+msgstr "Fișierul sursă nu a fost găsit: [2]. Verificați că există fișierul și că îl puteți accesa."
 
 #: inc_openoffice/windows/msi_languages/Error.ulf#OOO_ERROR_34
 msgid  "Error reading from file: [3]. {{ System error [2].}}  Verify that the file exists and that you can access it."
@@ -269,15 +269,15 @@ msgstr ""
 
 #: inc_openoffice/windows/msi_languages/Error.ulf#OOO_ERROR_35
 msgid  "Error writing to file: [3]. {{ System error [2].}}  Verify that you have access to that directory."
-msgstr ""
+msgstr "Eroare la scrierea in fișierul: [3]. {{ Eroare de sistem [2].}}  Verificați dacă aveți acces la acel director."
 
 #: inc_openoffice/windows/msi_languages/Error.ulf#OOO_ERROR_36
 msgid  "Source file not found{{(cabinet)}}: [2].  Verify that the file exists and that you can access it."
-msgstr ""
+msgstr "Fișierul sursă negăsit{{(cabinet)}}: [2]. Verificați dacă acel fișier există și că îl puteți accesa."
 
 #: inc_openoffice/windows/msi_languages/Error.ulf#OOO_ERROR_37
 msgid  "Cannot create the directory [2].  A file with this name already exists.  Please rename or remove the file and click Retry, or click Cancel to exit."
-msgstr ""
+msgstr "Nu se poate crea directorul [2]. Există deja un fișier cu acest nume. Vă rugăm să redenumiți sau să ștergeți fișierul după care să apăsați „Încearcă din nou” sau apăsați „Renunță” pentru a ieși."
 
 #: inc_openoffice/windows/msi_languages/Error.ulf#OOO_ERROR_38
 msgid  "The volume [2] is currently unavailable.  Please select another."
@@ -293,7 +293,7 @@ msgstr "Nu se poate scrie în directorul [2] specificat."
 
 #: inc_openoffice/windows/msi_languages/Error.ulf#OOO_ERROR_41
 msgid  "A network error occurred while attempting to read from the file [2]"
-msgstr ""
+msgstr "A apărut o eroare în rețea în timpul încercării citirii din fișierul [2]"
 
 #: inc_openoffice/windows/msi_languages/Error.ulf#OOO_ERROR_42
 msgid  "An error occurred while attempting to create the directory [2]"
@@ -301,11 +301,11 @@ msgstr "A apărut o eroare în timpul încercării creării directorului [2]"
 
 #: inc_openoffice/windows/msi_languages/Error.ulf#OOO_ERROR_43
 msgid  "A network error occurred while attempting to create the directory [2]"
-msgstr ""
+msgstr "A apărut o eroare în rețea în timpul încercării creării directorului [2]"
 
 #: inc_openoffice/windows/msi_languages/Error.ulf#OOO_ERROR_44
 msgid  "A network error occurred while attempting to open the source file cabinet [2]."
-msgstr ""
+msgstr "A apărut o eroare în rețea în timpul încercării deschiderii fișierului sursă arhivă [2]."
 
 #: inc_openoffice/windows/msi_languages/Error.ulf#OOO_ERROR_45
 msgid  "The specified path is too long [2]."
@@ -313,11 +313,11 @@ msgstr "Calea specificată este prea lungă [2]."
 
 #: inc_openoffice/windows/msi_languages/Error.ulf#OOO_ERROR_46
 msgid  "The Installer has insufficient privileges to modify the file [2]."
-msgstr ""
+msgstr "Programul de instalare nu are suficiente privilegii să modifice fișierul [2]."
 
 #: inc_openoffice/windows/msi_languages/Error.ulf#OOO_ERROR_47
 msgid  "A portion of the path [2] exceeds the length allowed by the system."
-msgstr ""
+msgstr "O porțiune a căii [2] depășește lungimea maximă permisă de către sistem."
 
 #: inc_openoffice/windows/msi_languages/Error.ulf#OOO_ERROR_48
 msgid  "The path [2] contains words that are not valid in folders."
@@ -417,7 +417,7 @@ msgstr ""
 
 #: inc_openoffice/windows/msi_languages/Error.ulf#OOO_ERROR_72
 msgid  "Out of disk space -- Volume: [2]; required space: [3] KB; available space: [4] KB.  If rollback is disabled, enough space is available. Click Cancel to quit, Retry to check available disk space again, or Ignore to continue without rollback."
-msgstr ""
+msgstr "Nu mai este spațiu liber pe disc -- Volum: [2]; spațiu necesar: [3] KO; spațiu disponibil: [4] KO. Dacă este dezactivată opțiunea de anulare a pașilor anteriori, atunci există spațiu suficient. Apăsați „Renunță” pentru a ieși, „Încearcă din nou” pentru a verifica din nou spațiul pe disc sau „Ignoră” pentru a continua fără posibilitatea de a anula pașii făcuți anterior."
 
 #: inc_openoffice/windows/msi_languages/Error.ulf#OOO_ERROR_73
 msgid  "Could not access network location [2]."
@@ -425,7 +425,7 @@ msgstr "Nu se poate accesa locația [2] din rețea."
 
 #: inc_openoffice/windows/msi_languages/Error.ulf#OOO_ERROR_74
 msgid  "The following applications should be closed before continuing the installation:"
-msgstr ""
+msgstr "Pentru a continua instalarea, următoarele aplicații trebuiesc închise:"
 
 #: inc_openoffice/windows/msi_languages/Error.ulf#OOO_ERROR_75
 msgid  "Could not find any previously installed compliant products on the machine for installing this product."
@@ -453,7 +453,7 @@ msgstr ""
 
 #: inc_openoffice/windows/msi_languages/Error.ulf#OOO_ERROR_81
 msgid  "No valid source could be found for product [2].  The Windows Installer cannot continue."
-msgstr ""
+msgstr "Nu a putut fi găsită nici o sursă valabilă pentru produsul [2]. Windows Installer nu poate continua."
 
 #: inc_openoffice/windows/msi_languages/Error.ulf#OOO_ERROR_82
 msgid  "Installation operation completed successfully."
@@ -473,7 +473,7 @@ msgstr ""
 
 #: inc_openoffice/windows/msi_languages/Error.ulf#OOO_ERROR_86
 msgid  "An error occurred while writing installation information to disk.  Check to make sure enough disk space is available, and click Retry, or Cancel to end the installation."
-msgstr ""
+msgstr "A apărut o eroare în timpul scrierii informațiilor de instalare pe disc. Verificați dacă există spațiu liber suficient și apăsați „Încearcă din nou” sau „Renunță” pentru a părăsi instalarea."
 
 #: inc_openoffice/windows/msi_languages/Error.ulf#OOO_ERROR_87
 msgid  "One or more of the files required to restore your computer to its previous state could not be found.  Restoration will not be possible."
@@ -505,7 +505,7 @@ msgstr ""
 
 #: inc_openoffice/windows/msi_languages/Error.ulf#OOO_ERROR_94
 msgid  "The folder [2] does not exist.  Please enter a path to an existing folder."
-msgstr ""
+msgstr "Dosarul [2] nu există. Vă rugăm să introduceți o cale către un dosar existent."
 
 #: inc_openoffice/windows/msi_languages/Error.ulf#OOO_ERROR_95
 msgid  "You have insufficient privileges to read this folder."
@@ -513,7 +513,7 @@ msgstr "Nu aveți drepturi suficiente pentru a citi acest dosar."
 
 #: inc_openoffice/windows/msi_languages/Error.ulf#OOO_ERROR_96
 msgid  "A valid destination folder for the installation could not be determined."
-msgstr ""
+msgstr "Nu s-a putut determina un dosar de destinație valid pentru instalare."
 
 #: inc_openoffice/windows/msi_languages/Error.ulf#OOO_ERROR_97
 msgid  "Error attempting to read from the source installation database: [2]."
@@ -521,19 +521,19 @@ msgstr ""
 
 #: inc_openoffice/windows/msi_languages/Error.ulf#OOO_ERROR_98
 msgid  "Scheduling reboot operation: Renaming file [2] to [3]. Must reboot to complete operation."
-msgstr ""
+msgstr "Se programează repornirea: Se redenumește fișierul [2] în [3]. Trebuie să reporniți pentru a încheia operația."
 
 #: inc_openoffice/windows/msi_languages/Error.ulf#OOO_ERROR_99
 msgid  "Scheduling reboot operation: Deleting file [2]. Must reboot to complete operation."
-msgstr ""
+msgstr "Se programează repornirea. Se șterge fișierul [2]. Trebuie să reporniți pentru a încheia operația."
 
 #: inc_openoffice/windows/msi_languages/Error.ulf#OOO_ERROR_100
 msgid  "Module [2] failed to register.  HRESULT [3].  Contact your support personnel."
-msgstr ""
+msgstr "Înregistrarea modulului [2] a eșuat. HRESULT [3]. Contactați personalul de suport."
 
 #: inc_openoffice/windows/msi_languages/Error.ulf#OOO_ERROR_101
 msgid  "Module [2] failed to unregister.  HRESULT [3].  Contact your support personnel."
-msgstr ""
+msgstr "Eșec la dezînregistrarea modulului [2]. HRESULT [3]. Contactați personalul de suport."
 
 #: inc_openoffice/windows/msi_languages/Error.ulf#OOO_ERROR_102
 msgid  "Failed to cache package [2]. Error: [3]. Contact your support personnel."
@@ -541,23 +541,23 @@ msgstr ""
 
 #: inc_openoffice/windows/msi_languages/Error.ulf#OOO_ERROR_103
 msgid  "Could not register font [2].  Verify that you have sufficient permissions to install fonts, and that the system supports this font."
-msgstr ""
+msgstr "Nu s-a putut înregistra fontul [2]. Verificați că aveți drepturi suficiente pentru a instala fonturi și că sistemul suportă acest font."
 
 #: inc_openoffice/windows/msi_languages/Error.ulf#OOO_ERROR_104
 msgid  "Could not unregister font [2]. Verify that you have sufficient permissions to remove fonts."
-msgstr ""
+msgstr "Nu s-a putut dezînregistra fontul [2]. Verificați că aveți drepturi suficiente pentru a elimina fonturi."
 
 #: inc_openoffice/windows/msi_languages/Error.ulf#OOO_ERROR_105
 msgid  "Could not create shortcut [2]. Verify that the destination folder exists and that you can access it."
-msgstr ""
+msgstr "Nu se poate crea scurtătura [2]. Verificați că dosarul de destinație există și că îl puteți accesa."
 
 #: inc_openoffice/windows/msi_languages/Error.ulf#OOO_ERROR_106
 msgid  "Could not remove shortcut [2]. Verify that the shortcut file exists and that you can access it."
-msgstr ""
+msgstr "Nu s-a putut elimina scurtătura [2]. Verificați că fișierul scurtătură există și că îl puteți accesa."
 
 #: inc_openoffice/windows/msi_languages/Error.ulf#OOO_ERROR_107
 msgid  "Could not register type library for file [2].  Contact your support personnel."
-msgstr ""
+msgstr "Nu s-a putut înregistra tipul librărie pentru fișierul [2]. Contactați personalul de suport."
 
 #: inc_openoffice/windows/msi_languages/Error.ulf#OOO_ERROR_108
 msgid  "Could not unregister type library for file [2].  Contact your support personnel."
@@ -565,19 +565,19 @@ msgstr ""
 
 #: inc_openoffice/windows/msi_languages/Error.ulf#OOO_ERROR_109
 msgid  "Could not update the INI file [2][3].  Verify that the file exists and that you can access it."
-msgstr ""
+msgstr "Nu s-a putut actualiza fișierul INI [2][3]. Verificați că fișierul există și că îl puteți accesa."
 
 #: inc_openoffice/windows/msi_languages/Error.ulf#OOO_ERROR_110
 msgid  "Could not schedule file [2] to replace file [3] on reboot.  Verify that you have write permissions to file [3]."
-msgstr ""
+msgstr "Nu se poate programa înlocuirea fișierului [2] cu [3] la repornire. Verificați că aveți permisiuni de a scrie în fișierul [3]."
 
 #: inc_openoffice/windows/msi_languages/Error.ulf#OOO_ERROR_111
 msgid  "Error removing ODBC driver manager, ODBC error [2]: [3]. Contact your support personnel."
-msgstr ""
+msgstr "Eroare la eliminarea managerului de drivere ODBC, eroare ODBC [2]: [3]. Contactați personalul de suport."
 
 #: inc_openoffice/windows/msi_languages/Error.ulf#OOO_ERROR_112
 msgid  "Error installing ODBC driver manager, ODBC error [2]: [3]. Contact your support personnel."
-msgstr ""
+msgstr "Eroare la instalarea managerului de drivere ODBC, eroare ODBC [2]: [3]. Contactați personalul de suport."
 
 #: inc_openoffice/windows/msi_languages/Error.ulf#OOO_ERROR_113
 msgid  "Error removing ODBC driver [4], ODBC error [2]: [3]. Verify that you have sufficient privileges to remove ODBC drivers."
@@ -625,11 +625,11 @@ msgstr ""
 
 #: inc_openoffice/windows/msi_languages/Error.ulf#OOO_ERROR_124
 msgid  "Error registering COM+ application.  Contact your support personnel for more information."
-msgstr ""
+msgstr "Eroare la înregistrarea aplicației COM+. Contactați personalul de suport pentru mai multe informații."
 
 #: inc_openoffice/windows/msi_languages/Error.ulf#OOO_ERROR_125
 msgid  "Error unregistering COM+ application.  Contact your support personnel for more information."
-msgstr ""
+msgstr "Eroare la ștergerea înregistrării aplicației COM+. Contactați personalul de suport pentru mai multe informații."
 
 #: inc_openoffice/windows/msi_languages/Error.ulf#OOO_ERROR_126
 msgid  "The description for service '[2]' ([3]) could not be changed."
@@ -653,7 +653,7 @@ msgstr ""
 
 #: inc_openoffice/windows/msi_languages/CustomAc.ulf#OOO_CUSTOMACTION_1
 msgid  "A newer version of [ProductName] was found. To install an older version, the newer version needs to be removed first."
-msgstr ""
+msgstr "A fost găsită o nouă versiune a [ProductName]. Pentru a instala o versiune mai veche, mai întâi trebuie eliminată versiunea nouă."
 
 #: inc_openoffice/windows/msi_languages/CustomAc.ulf#OOO_CUSTOMACTION_2
 msgid  "The same version of this product is already installed."
@@ -661,11 +661,11 @@ msgstr "Această versiune a produsului este deja instalată."
 
 #: inc_openoffice/windows/msi_languages/CustomAc.ulf#OOO_CUSTOMACTION_3
 msgid  "An older version of [ProductName] was found. To install a newer version, the older version needs to be removed first."
-msgstr ""
+msgstr "A fost găsită o versiune mai veche a [ProductName]. Înainte de a instala o versiune nouă, trebuie eliminată cea veche."
 
 #: inc_openoffice/windows/msi_languages/CustomAc.ulf#OOO_CUSTOMACTION_4
 msgid  "Please exit [DEFINEDPRODUCT] [DEFINEDVERSION] and the [DEFINEDPRODUCT] [DEFINEDVERSION] Quickstarter before you continue. If you are using a multi-user system, also make sure that no other user has [DEFINEDPRODUCT] [DEFINEDVERSION] open."
-msgstr ""
+msgstr "Trebuie să ieșiți din [DEFINEDPRODUCT] [DEFINEDVERSION] și din lansatorul rapid [DEFINEDPRODUCT] [DEFINEDVERSION] pentru a putea continua. Dacă lucrați pe un sistem multi-utilizator, asigurați-vă că nici un alt utilizator nu a deschis [DEFINEDPRODUCT] [DEFINEDVERSION]."
 
 #: inc_openoffice/windows/msi_languages/UIText.ulf#OOO_UITEXT_1
 msgid  "bytes"
@@ -693,15 +693,15 @@ msgstr "Această funcționalitate va fi instalată când este nevoie de ea."
 
 #: inc_openoffice/windows/msi_languages/UIText.ulf#OOO_UITEXT_7
 msgid  "This feature, and all subfeatures, will be installed to run from the CD."
-msgstr ""
+msgstr "Această funcționalitate și toate cele subordonate vor fi instalate pentru a rula de pe CD."
 
 #: inc_openoffice/windows/msi_languages/UIText.ulf#OOO_UITEXT_8
 msgid  "This feature, and all subfeatures, will be installed on local hard drive."
-msgstr ""
+msgstr "Această funcționalitate și toate cele subordonate vor fi instalate pe discul local."
 
 #: inc_openoffice/windows/msi_languages/UIText.ulf#OOO_UITEXT_9
 msgid  "This feature, and all subfeatures, will be installed to run from the network."
-msgstr ""
+msgstr "Această funcționalitate și toate cele subordonate vor fi instalate să ruleze din rețea."
 
 #: inc_openoffice/windows/msi_languages/UIText.ulf#OOO_UITEXT_10
 msgid  "This feature will be installed to run from CD."
@@ -725,7 +725,7 @@ msgstr "Această funcționalitate va rămâne neinstalată."
 
 #: inc_openoffice/windows/msi_languages/UIText.ulf#OOO_UITEXT_15
 msgid  "This feature will be set to be installed when required."
-msgstr ""
+msgstr "Această funcționalitate va fi setată pentru a fi instalată când este necesară."
 
 #: inc_openoffice/windows/msi_languages/UIText.ulf#OOO_UITEXT_16
 msgid  "This feature will be installed to run from CD."
@@ -761,11 +761,11 @@ msgstr "Această funcționalitate va fi disponibilă pentru a rula din rețea."
 
 #: inc_openoffice/windows/msi_languages/UIText.ulf#OOO_UITEXT_24
 msgid  "This feature will be uninstalled completely, and you won't be able to run it from CD."
-msgstr ""
+msgstr "Această funcționalitate va fi dezinstalată complet și nu veți putea să o rulați de pe CD."
 
 #: inc_openoffice/windows/msi_languages/UIText.ulf#OOO_UITEXT_25
 msgid  "This feature was run from the CD but will be set to be installed when required."
-msgstr ""
+msgstr "Această funcționalitate a rulat de pe CD dar va fi setată pentru a fi instalată când este necesară."
 
 #: inc_openoffice/windows/msi_languages/UIText.ulf#OOO_UITEXT_26
 msgid  "This feature will continue to be run from the CD"
@@ -773,7 +773,7 @@ msgstr "Această funcționalitate va continua să ruleze de pe CD"
 
 #: inc_openoffice/windows/msi_languages/UIText.ulf#OOO_UITEXT_27
 msgid  "This feature was run from the CD but will be installed on the local hard drive."
-msgstr ""
+msgstr "Această funcționalitate a rulat de pe CD dar va fi instalată pe discul local."
 
 #: inc_openoffice/windows/msi_languages/UIText.ulf#OOO_UITEXT_28
 msgid  "This feature frees up [1] on your hard drive."
@@ -793,11 +793,11 @@ msgstr "Această funcționalitate va fi eliminată complet."
 
 #: inc_openoffice/windows/msi_languages/UIText.ulf#OOO_UITEXT_32
 msgid  "This feature will be removed from your local hard drive but will be set to be installed when required."
-msgstr ""
+msgstr "Această funcționalitate va fi eliminată de pe discul local dar va fi setată pentru a fi instalată când este necesară."
 
 #: inc_openoffice/windows/msi_languages/UIText.ulf#OOO_UITEXT_33
 msgid  "This feature will be removed from your local hard drive but will still be available to run from CD."
-msgstr ""
+msgstr "Această funcționalitate va fi eliminată de pe discul local dar va fi disponibilă pentru rularea de pe CD."
 
 #: inc_openoffice/windows/msi_languages/UIText.ulf#OOO_UITEXT_34
 msgid  "This feature will remain on your local hard drive."
@@ -805,19 +805,19 @@ msgstr "Această funcționalitate va rămâne pe discul local."
 
 #: inc_openoffice/windows/msi_languages/UIText.ulf#OOO_UITEXT_35
 msgid  "This feature will be removed from your local hard drive, but will be still available to run from the network."
-msgstr ""
+msgstr "Această funcționalitate va fi eliminată de pe discul local, dar va fi disponibilă pentru rularea din rețea."
 
 #: inc_openoffice/windows/msi_languages/UIText.ulf#OOO_UITEXT_36
 msgid  "This feature will be uninstalled completely, and you won't be able to run it from the network."
-msgstr ""
+msgstr "Această funcționalitate va fi dezinstalată complet și nu veți putea să o rulați din rețea."
 
 #: inc_openoffice/windows/msi_languages/UIText.ulf#OOO_UITEXT_37
 msgid  "This feature was run from the network but will be installed when required."
-msgstr ""
+msgstr "Această funcționalitate a rulat din rețea dar acum va fi instalată când este necesară."
 
 #: inc_openoffice/windows/msi_languages/UIText.ulf#OOO_UITEXT_38
 msgid  "This feature was run from the network but will be installed on the local hard drive."
-msgstr ""
+msgstr "Această funcționalitate a rulat din rețea dar va fi instalată pe discul local."
 
 #: inc_openoffice/windows/msi_languages/UIText.ulf#OOO_UITEXT_39
 msgid  "This feature will continue to be run from the network"
@@ -825,19 +825,19 @@ msgstr "Această funcționalitate va continua să ruleze din rețea"
 
 #: inc_openoffice/windows/msi_languages/UIText.ulf#OOO_UITEXT_40
 msgid  "This feature frees up [1] on your hard drive. It has [2] of [3] subfeatures selected. The subfeatures free up [4] on your hard drive."
-msgstr ""
+msgstr "Această funcționalitate eliberează [1] din spațiul ocupat pe disc. Are [2] din [3] funcționalități secundare selectate. Funcționalitățile secundare eliberează [4] din spațiul ocupat pe disc."
 
 #: inc_openoffice/windows/msi_languages/UIText.ulf#OOO_UITEXT_41
 msgid  "This feature frees up [1] on your hard drive. It has [2] of [3] subfeatures selected. The subfeatures require [4] on your hard drive."
-msgstr ""
+msgstr "Funcționalitatea eliberează [1] din spațiul ocupat pe disc. Are [2] din [3] funcționalități secundare selectate. Funcționalitatea necesită [4] spațiu liber pe disc."
 
 #: inc_openoffice/windows/msi_languages/UIText.ulf#OOO_UITEXT_42
 msgid  "This feature requires [1] on your hard drive. It has [2] of [3] subfeatures selected. The subfeatures free up [4] on your hard drive."
-msgstr ""
+msgstr "Funcționalitatea are nevoie de [1] pe disc. Are [2] din [3] funcționalitățile secundare selectate. Funcționalitățile secundare eliberează [4] din spațiul ocupat pe disc."
 
 #: inc_openoffice/windows/msi_languages/UIText.ulf#OOO_UITEXT_43
 msgid  "This feature requires [1] on your hard drive. It has [2] of [3] subfeatures selected. The subfeatures require [4] on your hard drive."
-msgstr ""
+msgstr "Funcționalitatea are nevoie de [1] pe disc. Are [2] din [3] funcționalitățile secundare selectate. Funcționalitățile secundare au nevoie de [4] pe disc."
 
 #: inc_openoffice/windows/msi_languages/UIText.ulf#OOO_UITEXT_44
 msgid  "Time remaining: {[1] min }[2] sec"
@@ -1361,7 +1361,7 @@ msgstr "Cheie: [1], Nume: [2], Valoare: [3]"
 
 #: inc_openoffice/windows/msi_languages/LaunchCo.ulf#OOO_LAUNCH_1
 msgid  "The Installation Wizard cannot be run properly because you are logged in as a user without sufficient administrator rights for this system."
-msgstr ""
+msgstr "Asistentul de instalare nu poate fi rulat corect din cauză că sunteți autentificat ca utilizator fără suficiente drepturi de administrare pentru acest sistem."
 
 #: inc_openoffice/windows/msi_languages/LaunchCo.ulf#OOO_LAUNCH_2
 msgid  "Please use the file setup.exe to start the installation."
@@ -1413,7 +1413,7 @@ msgstr "Despachetare"
 
 #: inc_openoffice/windows/msi_languages/Nsis.ulf#MUI_TEXT_INSTALLING_SUBTITLE
 msgid  "Please wait while the installation files are being unpacked."
-msgstr ""
+msgstr "Vă rugăm să așteptați până când fișierele de instalare sunt despachetate."
 
 #: inc_openoffice/windows/msi_languages/Nsis.ulf#Extract
 msgid  "Extract: "
@@ -1421,7 +1421,7 @@ msgstr "Extragere: "
 
 #: inc_openoffice/windows/msi_languages/Nsis.ulf#MUI_TEXT_ABORTWARNING
 msgid  "Are you sure you want to quit the %PRODUCTNAME %PRODUCTVERSION Installation Preparation"
-msgstr ""
+msgstr "Sigur doriți să renunțați la pregătirea pentru instalarea %PRODUCTNAME %PRODUCTVERSION"
 
 #: inc_openoffice/windows/msi_languages/SIS.ulf#OOO_SIS_TITLE
 msgid  "Installation database"
@@ -1529,7 +1529,7 @@ msgstr "{&TahomaBold10}Bun venit la instalarea [ProductName]"
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_28
 msgid  "The Installation Wizard will create a server image of [ProductName] at a specified network location. To continue, click Next."
-msgstr ""
+msgstr "Asistentul de instalare va crea o imagine de server pentru [ProductName] în locul specificat din rețea. Pentru a continua, apăsați Înainte."
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_29
 msgid  "&No"
@@ -1609,7 +1609,7 @@ msgstr "Selectați funcționalitățile programului pe care le doriți instalate
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_53
 msgid  "Click on an icon in the list below to change how a feature is installed."
-msgstr ""
+msgstr "Apăsați pe o iconiță din lista de mai jos pentru a schimba modul în care este instalată o funcționalitate."
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_54
 msgid  "{&MSSansBold8}Custom Setup"
@@ -1645,7 +1645,7 @@ msgstr "Mărimea funcționalității"
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_64
 msgid  "Custom Setup allows you to selectively install program features."
-msgstr ""
+msgstr "Instalarea personalizată vă permite să selectați funcționalitățile ce vor fi instalate."
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_65
 msgid  "{&MSSansBold8}Custom Setup Tips"
@@ -1657,7 +1657,7 @@ msgstr "Nu se va instala."
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_67
 msgid  "Will be installed on first use. (Available only if the feature supports this option.)"
-msgstr ""
+msgstr "Se va instala la prima utilizare (doar dacă funcționalitatea suportă această opțiune)."
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_68
 msgid  "This install state means the feature..."
@@ -1669,11 +1669,11 @@ msgstr ""
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_70
 msgid  "The icon next to the feature name indicates the install state of the feature. Click the icon to drop down the install state menu for each feature."
-msgstr ""
+msgstr "Iconița de lângă funcționalitate indică starea instalării. Apăsați pe iconiță pentru a afișa starea instalării fiecărei funcționalități."
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_71
 msgid  "Will be installed to run from the network. (Available only if the feature supports this option.)"
-msgstr ""
+msgstr "Se va instala pentru a rula din rețea (doar dacă funcționalitatea suportă această opțiune)."
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_72
 msgid  "OK"
@@ -1681,7 +1681,7 @@ msgstr "OK"
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_73
 msgid  "Will have some subfeatures installed to the local hard drive. (Available only if the feature has subfeatures.)"
-msgstr ""
+msgstr "Va avea anumite funcționalități secundare instalate pe discul local (doar dacă are funcționalități secundare)."
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_74
 msgid  "< &Back"
@@ -1753,7 +1753,7 @@ msgstr "Spațiul pe disc necesar pentru instalarea funcționalităților selecta
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_97
 msgid  "The highlighted volumes do not have enough disk space available for the currently selected features. You can remove files from the highlighted volumes, choose to install less features onto local drives, or select different destination drives."
-msgstr ""
+msgstr "Volumele evidențiate nu au spațiu suficient pentru funcționalitățile selectate. Puteți să eliminați fișiere din volumele evidențiate, să instalați mai puține componente pe unitățile locale sau să selectați unități diferite de destinație."
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_98
 msgid  "{&MSSansBold8}Disk Space Requirements"
@@ -1841,7 +1841,7 @@ msgstr "{&TahomaBold10}Bun venit la instalarea [ProductName]"
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_127
 msgid  "The Installation Wizard will install [ProductName] on your computer. To continue, click Next."
-msgstr ""
+msgstr "Asistentul de instalare va instala [ProductName] pe calculatorul dumneavoastră. Pentru a continua, apăsați Înainte."
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_128
 msgid  "< &Back"
@@ -1885,7 +1885,7 @@ msgstr "Î&nainte >"
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_143
 msgid  "Change which program features are installed. This option displays the Custom Selection dialog in which you can change the way features are installed."
-msgstr ""
+msgstr "Schimbați funcționalitățile programului care sunt instalate. Această opțiune afișează dialogul de selecție personalizată în care puteți schimba modul în care sunt instalate funcționalitățile."
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_144
 msgid  "Repair installation errors in the program. This option fixes missing or corrupt files, shortcuts, and registry entries."
@@ -1913,15 +1913,15 @@ msgstr "{&TahomaBold10}Bun venit la instalarea [ProductName]"
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_150
 msgid  "The Installation Wizard will allow you to modify, repair, or remove [ProductName]. To continue, click Next."
-msgstr ""
+msgstr "Asistentul de instalare vă permite să modificați, să reparați sau să eliminați [ProductName]. Pentru a continua, apăsați „Înainte”."
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_153
 msgid  "Disk space required for the installation exceeds available disk space."
-msgstr ""
+msgstr "Spațiul pe disc necesar pentru instalare depășește spațiul disponibil pe disc."
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_154
 msgid  "The highlighted volumes do not have enough disk space available for the currently selected features. You can remove files from the highlighted volumes, choose to install less features onto local drives, or select different destination drives."
-msgstr ""
+msgstr "Volumele evidențiate nu au spațiu suficient pentru funcționalitățile selectate. Puteți să eliminați fișiere din volumele evidențiate, să instalați mai puține componente pe unitățile locale sau să selectați unități diferite de destinație."
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_155
 msgid  "{&MSSansBold8}Out of Disk Space"
@@ -1953,7 +1953,7 @@ msgstr "{&TahomaBold10}Bun venit la peticul pentru [ProductName]"
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_162
 msgid  "The Installation Wizard will install the Patch for [ProductName] on your computer.  To continue, click Update."
-msgstr ""
+msgstr "Asistentul de instalare va instala corecția pentru [ProductName] pe calculatorul dumneavoastră. Pentru a continua, apăsați „Actualizează”."
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_163
 msgid  "< &Back"
@@ -1973,7 +1973,7 @@ msgstr "Apăsați Instalare pentru a începe instalarea."
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_169
 msgid  "If you want to review or change any of your installation settings, click Back. Click Cancel to exit the wizard."
-msgstr ""
+msgstr "Dacă doriți să schimbați sau să verificați opțiunile instalării, apăsați „Înapoi”. Apăsați „Renunță” pentru a părăsi asistentul."
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_170
 msgid  "{&MSSansBold8}Ready to Modify the Program"
@@ -2009,7 +2009,7 @@ msgstr ""
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_180
 msgid  "If you want to review or change any settings, click Back."
-msgstr ""
+msgstr "Dacă doriți să verificați sau să schimbați orice opțiune, apăsați „Înapoi”."
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_181
 msgid  "{&MSSansBold8}Remove the Program"
@@ -2033,7 +2033,7 @@ msgstr "În&cheiere"
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_186
 msgid  "Your system has not been modified. To complete installation at another time, please run setup again."
-msgstr ""
+msgstr "Sistemul dumneavoastră nu a fost modificat. Pentru a încheia instalarea altă dată, vă rugăm să o porniți din nou."
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_187
 msgid  "Click Finish to exit the wizard."
@@ -2041,7 +2041,7 @@ msgstr "Apăsați „Încheiere” pentru a părăsi asistentul."
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_188
 msgid  "You can either keep any existing installed elements on your system to continue this installation at a later time or you can restore your system to its original state prior to the installation."
-msgstr ""
+msgstr "Puteți să păstrați ce este deja instalat pe sistem pentru a continua instalarea altă dată sau puteți restaura sistemul dumneavoastră la starea lui dinainte de instalare."
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_189
 msgid  "Click Restore or Continue Later to exit the wizard."
@@ -2085,11 +2085,11 @@ msgstr "{&TahomaBold10}Instalarea s-a încheiat."
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_199
 msgid  "The Installation Wizard has successfully installed [ProductName]. Click Finish to exit the wizard."
-msgstr ""
+msgstr "Asistentul de instalare a instalat cu succes [ProductName]. Apăsați „Încheiere” pentru a părăsi asistentul."
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_200
 msgid  "The Installation Wizard has successfully uninstalled [ProductName]. Click Finish to exit the wizard."
-msgstr ""
+msgstr "Asistentul de instalare a dezinstalat cu succes [ProductName]. Apăsați „Încheiere” pentru a părăsi asistentul."
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_201
 msgid  "Setup has finished installing [ProductName]."
@@ -2169,7 +2169,7 @@ msgstr ""
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_222
 msgid  "Your system has not been modified. To install this program at a later time, please run the installation again."
-msgstr ""
+msgstr "Sistemul dumneavoastră nu a fost modificat. Pentru a instala programul altă dată, vă rugăm reluați instalarea din nou."
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_223
 msgid  "Click Finish to exit the wizard."
@@ -2257,11 +2257,11 @@ msgstr "Î&nainte >"
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_248
 msgid  "The Installation Wizard will complete the installation of [ProductName] on your computer. To continue, click Next."
-msgstr ""
+msgstr "Asistentul de instalare va completa instalarea [ProductName] pe calculatorul dumneavoastră. Pentru a continua, apăsați Înainte."
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_249
 msgid  "The Installation Wizard will complete the suspended installation of [ProductName] on your computer. To continue, click Next."
-msgstr ""
+msgstr "Asistentul de instalare va completa instalarea suspendată a [ProductName] pe calculatorul dumneavoastră. Pentru a continua, apăsați Înainte."
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_250
 msgid  "{&TahomaBold10}Resuming the Installation Wizard for [ProductName]"
@@ -2277,11 +2277,11 @@ msgstr "Renunță"
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_255
 msgid  "The main components will be installed. Recommended for most users."
-msgstr ""
+msgstr "Se vor instala toate funcționalitățile programului (necesită cel mai mult spațiu pe disc)."
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_256
 msgid  "Choose which program features you want installed and where they will be installed. Recommended for advanced users."
-msgstr ""
+msgstr "Alegeți care dintre funcționalitățile programului doriți să fie instalate și unde să fie instalate. Recomandat pentru utilizatori avansați."
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_257
 msgid  "Choose the setup type that best suits your needs."
@@ -2380,15 +2380,15 @@ msgid  "Check the destination folder."
 msgstr "Verificați directorul destinație."
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_305
-msgid  "To continue, click "Next"."
+msgid  "To continue, click \"Next\"."
 msgstr ""
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_306
-msgid  "To select a different version, click "Change". Otherwise click "Cancel" to abort the Installation Wizard."
+msgid  "To select a different version, click \"Change\". Otherwise click \"Cancel\" to abort the Installation Wizard."
 msgstr ""
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_307
-msgid  "To select a different folder, click "Change"."
+msgid  "To select a different folder, click \"Change\"."
 msgstr ""
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_308

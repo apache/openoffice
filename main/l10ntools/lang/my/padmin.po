@@ -33,7 +33,7 @@ msgstr ""
 
 #: source/padialog.src#RID_FONTIMPORT_DIALOG.RID_FIMP_TXT_HELP.FixedText.Text
 msgid  "Please select the folder from which you want to import fonts. Add the selected fonts by clicking the OK button."
-msgstr ""
+msgstr "သင်အလိုရှိသည့် စာလုံးများကို ထည့်သွင်းရန် ဖိုင်တွဲရွေးချယ်မှုပြုပါ။ ‘အိုကေ’ ခလုတ်ကို ကလစ်နှိပ်ြခင်းဖြင့် ရွေးချယ်ထားသည့် စာလုံးများ ထည့်ပါ။"
 
 #: source/padialog.src#RID_FONTIMPORT_DIALOG.RID_FIMP_FL_FROM.FixedLine.Text
 msgid  "Source directory"
@@ -61,7 +61,7 @@ msgstr "စာလုံးများထပ်ထည့်ပါ"
 
 #: source/padialog.src#RID_FONTIMPORT_DIALOG.RID_FIMP_STR_QUERYOVERWRITE.String.Text
 msgid  "Do you really want to overwrite this font file?\n   %s"
-msgstr ""
+msgstr "ဤစာလုံးဖိုင်ရှိရှိပြီးအချက်အလက်ဟောင်းများကိုဖျက်ပြီးအသစ်များဖြင့် အစားထိုးလိုပါသလား \n   %s"
 
 #: source/padialog.src#RID_FONTIMPORT_DIALOG.RID_FIMP_STR_OVERWRITEALL.String.Text
 msgid  "All"
@@ -73,19 +73,19 @@ msgstr "ဘာမျှမရှိပါ"
 
 #: source/padialog.src#RID_FONTIMPORT_DIALOG.RID_FIMP_STR_NOAFM.String.Text
 msgid  "A format file (with an .afm extension) has not been found for the font\n%s\ntherefore, the font cannot be installed. Format files can be created with ghostscript, for example, and have to be located in the same directory as the font files or its afm subdirectory."
-msgstr ""
+msgstr "စာလုံးများအတွက် .afm နှင့် အဆုံးသတ်သော ဖိုင်ကို ရှာမတွေ့ပါ။ \n%s\nထို့ကြောင့် စာလုံးကို ထည့်သွင်းရန် မဖြစ်နိုင်ပါ။ Ghostscript ဖြင့် ဖိုင်များဖန်တီးနိုင်သည်။ ဥပမာအားဖြင့် စာလုံးဖိုင်များရှိသည့် ဒိုင်ယာထရီ (သို့) ၎င်း၏ afm ဒိုင်ယာထရီခွဲများတွင် ရရှိနိုင်သည်။   "
 
 #: source/padialog.src#RID_FONTIMPORT_DIALOG.RID_FIMP_STR_AFMCOPYFAILED.String.Text
 msgid  "The metric file for the font file\n   %s\ncould not be copied. The font will not be installed."
-msgstr ""
+msgstr "စာလုံးဖိုင်အတွက် မက်ထရစ်စနစ်ဖိုင် \n   %s\nမိတ္တူ မကူးယူနိုင်ပါ။ စာလုံး စတင် အသုံးပြု နိုင်လိမ့်မည် မဟုတ်ပါ။"
 
 #: source/padialog.src#RID_FONTIMPORT_DIALOG.RID_FIMP_STR_FONTCOPYFAILED.String.Text
 msgid  "The font file\n   %s\ncould not be copied. The font will not be installed."
-msgstr ""
+msgstr "စာလုံးဖိုင်\n   %s\nမိတ္တူ မကူးယူနိုင်ပါ။ စာလုံး စတင် အသုံးပြုရလိမ့်မည် မဟုတ်ပါ။"
 
 #: source/padialog.src#RID_FONTIMPORT_DIALOG.RID_FIMP_STR_NOWRITEABLEFONTSDIR.String.Text
 msgid  "A directory containing a writable fonts.dir file is not located in the Fontpath. Therefore, fonts cannot be installed."
-msgstr ""
+msgstr "ဒိုင်ယာထရီတွင် ပါဝင်သည့် fonts.dir သည် စာလုံးဆိုင်ရာ လမ်းကြောင်းတွင် မရှိပါ။ ထို့ကြောင့် စာလုံး ထည့်သွင်းရန် မဖြစ်နိုင်ပါ။"
 
 #: source/padialog.src#RID_FONTIMPORT_DIALOG.RID_FIMP_STR_NUMBEROFFONTSIMPORTED.String.Text
 msgid  "%d new fonts were added."
@@ -289,7 +289,7 @@ msgstr "ဤဖိုင်တွင် မက်ထရစ်စနစ်တစ�
 
 #: source/padialog.src#RID_AFMERROR_BOX_TXT.String.Text
 msgid  "The metric\n\n%s\n\ncould not be converted for the following reason:\n\n"
-msgstr ""
+msgstr "အောက်ပါ အကြောင်းပြချက်အတွက် မက်ထရစ်စနစ် \n\n%s\n\n မပြောင်းလဲနိုင်ပါ။n\n"
 
 #: source/padialog.src#RID_PROGRESS_DLG.RID_PROGRESS_PROGRESS_TXT.FixedText.Text
 msgid  "Progress"
@@ -320,8 +320,8 @@ msgid  "~Selection of drivers"
 msgstr "~ဒရိုင်ဘာရွေးချယ်မှုများ"
 
 #: source/padialog.src#RID_PPDIMPORT_DLG.RID_PPDIMP_TXT_DRIVER.FixedText.Text
-msgid  "Please select the drivers to install and press "%s"."
-msgstr ""
+msgid  "Please select the drivers to install and press \"%s\"."
+msgstr "ဒရိုင်ဘာများ ထည့်သွင်းရန် ရွေးချယ်ပြီး \"%s\" ကိုနှိပ်ပါ။"
 
 #: source/padialog.src#RID_PPDIMPORT_DLG.RID_PPDIMP_STR_LOADINGPPD.String.Text
 msgid  "Searching for drivers"
@@ -332,8 +332,8 @@ msgid  "Driver Installation"
 msgstr "ဒရိုင်ဘာထည့်သွင်းခြင်း"
 
 #: source/padialog.src#RID_QUERY_REMOVEDRIVER.String.Text
-msgid  "Do you really want to remove the driver "%s"?"
-msgstr ""
+msgid  "Do you really want to remove the driver \"%s\"?"
+msgstr "ဒရိုင်ဘာ %s\" ကိုဖယ်ရှားရန် အမှန်တကယ် ဆန္ဒရှိပါသလား။"
 
 #: source/padialog.src#RID_QUERY_REMOVEPRINTER.String.Text
 msgid  "Do you really want to remove this printer ?"
@@ -344,40 +344,40 @@ msgid  "Do you really want to remove the selected fonts ?"
 msgstr "ရွေးချယ်ထားသော စာလုံးများ ဖယ်ရှားရန် အမှန်တကယ် ဆန္ဒရှိပါသလား။"
 
 #: source/padialog.src#RID_QUERY_DRIVERUSED.String.Text
-msgid  "There are still printers using the driver "%s". Do you really want to remove it? The corresponding printers will also be removed."
-msgstr ""
+msgid  "There are still printers using the driver \"%s\". Do you really want to remove it? The corresponding printers will also be removed."
+msgstr "ပရင်တာများအနေဖြင့် ဒရိုင်ဘာ \"%s\"  ကို ယခုတိုင် အသုံးပြုနေဆဲ ဖြစ်သည်။ ဖယ်ရှားရန် အမှန်တကယ် ဆန္ဒရှိပါသလား။ သက်ဆိုင်ရာ ပရင်တာများအားလုံးကို ဖယ်ရှားမှုပြုလိမ့်မည်။"
 
 #: source/padialog.src#RID_ERR_REMOVESGENPRT.String.Text
-msgid  "The driver "%s" is always needed and can therefore not be removed."
-msgstr ""
+msgid  "The driver \"%s\" is always needed and can therefore not be removed."
+msgstr "ဒရိုင်ဘာ \"%s\" သည် အစဉ် လိုအပ်လျက် ရှိသောကြောင့် မဖယ်ရှားနိုင်ပါ။"
 
 #: source/padialog.src#RID_ERR_REMOVEDRIVERFAILED.String.Text
-msgid  "The driver "%s1" could not be removed. It was not possible to remove the file\n\n%s2."
-msgstr ""
+msgid  "The driver \"%s1\" could not be removed. It was not possible to remove the file\n\n%s2."
+msgstr "ဒရိုင်ဘာ \"%s1\" ကိုမဖယ်ရှားနိုင်ပါ။\n\n%s2 ဖိုင်ကို ဖယ်ရှားရန် မဖြစ်နိုင်ပါ။"
 
 #: source/padialog.src#RID_ERR_REMOVEDEFAULTDRIVER.String.Text
-msgid  "The driver "%s" is used by your default printer. Therefore, it cannot be removed."
-msgstr ""
+msgid  "The driver \"%s\" is used by your default printer. Therefore, it cannot be removed."
+msgstr "နဂိုမူလအသုံးပြု ပရင်တာအနေဖြင့် ဒရိုင်ဘာ \"%s\" ကိုအသုံးပြုထားသည်။ ထို့ကြောင့် ၎င်းကို မဖယ်ရှားနိုင်ပါ။"
 
 #: source/padialog.src#RID_ERR_PRINTERNOTREMOVEABLE.String.Text
 msgid  "The printer %s cannot be removed."
 msgstr "ပရင်တာ  %s မဖယ်ရှားနိုင်ပါ။"
 
 #: source/padialog.src#RID_TXT_PRINTERALREADYEXISTS.String.Text
-msgid  "A printer named "%s" already exists. This printer will not be imported."
-msgstr ""
+msgid  "A printer named \"%s\" already exists. This printer will not be imported."
+msgstr "\"%s\" အမည်ဖြင့် ပရင်တာတစ်ခု အဆင်သင့်ရှိသည်။ ဤပရင်တာကို ထည့်သွင်းနိုင်လိမ့်မည် မဟုတ်ပါ။"
 
 #: source/padialog.src#RID_TXT_PRINTERWITHOUTCOMMAND.String.Text
-msgid  "The printer "%s" has no valid configuration and, therefore, cannot be imported."
-msgstr ""
+msgid  "The printer \"%s\" has no valid configuration and, therefore, cannot be imported."
+msgstr "ပရင်တာ \"%s\" ၏ အစိတ်အပိုင်း ဖွဲ့စည်းပုံ မခိုင်လုံသောကြောင့် ထည့်သွင်းရန်မဖြစ်နိုင်ပါ။ "
 
 #: source/padialog.src#RID_TXT_DRIVERDOESNOTEXIST.String.Text
-msgid  "The driver for the printer "%s1" (%s2) is not installed. Therefore the printer cannot be imported."
-msgstr ""
+msgid  "The driver for the printer \"%s1\" (%s2) is not installed. Therefore the printer cannot be imported."
+msgstr "ပရင်တာ \"%s1\" (%s2) အတွက် ဒရိုင်ဘာ အသုံးမပြု နိုင်ပါ။ ထို့ကြောင့် ပရင်တာ ထည့်သွင်းရန် မဖြစ်နိုင်ပါ။"
 
 #: source/padialog.src#RID_TXT_PRINTERADDFAILED.String.Text
-msgid  "The printer "%s" could not be added."
-msgstr ""
+msgid  "The printer \"%s\" could not be added."
+msgstr "ပရင်တာ \"%s\" ကို မထည့်နိုင်ပါ။"
 
 #: source/padialog.src#RID_ADD_PRINTER_DIALOG.RID_ADDP_BTN_FINISH.OKButton.Text
 msgid  "~Finish"
@@ -398,7 +398,7 @@ msgstr "ပရင်တာထည့်ပါ"
 #: source/padialog.src#RID_ADDP_PAGE_CHOOSEDRIVER.RID_ADDP_STR_TITLE.String.Text
 #, fuzzy
 msgid  "Choose a driver"
-msgstr "ဒရိုင်ဘာ တစ်ခု ရွေးချယ်ပါ"
+msgstr "ဒရိုင်ဘာရွေးချယ်ပါ"
 
 #: source/padialog.src#RID_ADDP_PAGE_CHOOSEDRIVER.RID_ADDP_CHDRV_TXT_DRIVER.FixedText.Text
 #, fuzzy
@@ -511,12 +511,14 @@ msgid  "~Help"
 msgstr "~ကူညီသည်"
 
 #: source/padialog.src#RID_ADDP_PAGE_COMMAND.RID_ADDP_CMD_STR_PDFHELP.String.Text
-msgid  "The command line for PDF converters is executed as follows: for each document printed, "(TMP)" in the command line is replaced by a temporary file and "(OUTFILE)" in the command line is replaced by the target PDF file name. If "(TMP)" is in the command line, the PostScript code will be supplied via a file, otherwise via standard input (i.e. as a pipe)."
-msgstr ""
+#, fuzzy
+msgid  "The command line for PDF converters is executed as follows: for each document printed, \"(TMP)\" in the command line is replaced by a temporary file and \"(OUTFILE)\" in the command line is replaced by the target PDF file name. If \"(TMP)\" is in the command line, the PostScript code will be supplied via a file, otherwise via standard input (i.e. as a pipe)."
+msgstr "PDF ကူး​ပြောင်းမှု ညွှန်ကြားချက် အနေဖြင့် အောက်ပါအတိုင်း ဆောင်ရွက်ခဲ့သည်။ ညွှန်ကြားချက်မျဉ်းရှိ မှတ်တမ်းမှတ်ရာ \"(TMP)\"သည် ယာယီဖိုင်တစ်ခုအနေဖြင့် အစားထိုးခဲ့ပြီး \"(OUTFILE)\" သည် PDF ဖိုင်အနေဖြင့် အစားထိုးဝင်ရောက်ခဲ့သည်။ \"(TMP)\" သည် ဖိုင်တစ်ခုကို PostScript အနေဖြင့် အထောက်အကူပြုမည်ဆိုလျှင် ၎င်းသည် အခြားတစ်ခုအနေဖြင့် စံအသုံးပြုနိုင်သည့် အချက်အလက်သွင်းမှုတစ်ခုဖြစ်နိုင်သည်။ (ဆိုလိုသည်မှာ ပိုက်တစ်ခုအဖြစ်)"
 
 #: source/padialog.src#RID_ADDP_PAGE_COMMAND.RID_ADDP_CMD_STR_FAXHELP.String.Text
-msgid  "The command line for fax connections is executed as follows: for each fax sent, "(TMP)" in the command line is replaced by a temporary file and "(PHONE)" in the command line is replaced by the fax number. If "(TMP)" appears in the command line, the PostScript code will be supplied via a file, otherwise it is passed as standard input (i.e. as a pipe)."
-msgstr ""
+#, fuzzy
+msgid  "The command line for fax connections is executed as follows: for each fax sent, \"(TMP)\" in the command line is replaced by a temporary file and \"(PHONE)\" in the command line is replaced by the fax number. If \"(TMP)\" appears in the command line, the PostScript code will be supplied via a file, otherwise it is passed as standard input (i.e. as a pipe)."
+msgstr "ဖက်စ်ချိတ်ဆက်မှုအတွက် ညွှန်ကြားချက်တစ်ခုအနေဖြင့် ဖက်စ်ပေးပို့နိုင်ရန် အောက်ပါအတိုင်း စီမံဆောင်ရွက်သည်။ ညွှန်ကြားချက်မျဉ်းရှိ \"(TMP)\" သည် ယာယီဖိုင်အနေဖြင့် အစားထိုးဝင်ရောက်ခဲ့ပြီး \"(PHONE)\" သည် ဖက်စ်နံပါတ် အနေဖြင့် အစားထိုး ဝင်ရောက်ခဲ့သည်။ အကယ်၍ \"(TMP)\" သည် ကွန်ပျူတာ ညွှန်ကြားချက် မျဉ်းတွင် ပေါ်လာပါက စာပို့ လက်ရေး (PostScript) သည် ဖိုင်တစ်ခုမှ တစ်ဆင့် ထောက်ပံ့လိမ့်မည်။ တနည်းအားဖြင့် စံနှုန်းအသွင်းတစ်ခုကဲ့သို့ အသုံးပြု နိုင်သည် (ဥပမာ - ပိုက်တစ်ခုကဲ့သို့)။"
 
 #: source/padialog.src#RID_ADDP_PAGE_OLDPRINTERS.RID_ADDP_STR_TITLE.String.Text
 #, fuzzy
@@ -524,8 +526,9 @@ msgid  "Import printers from old versions"
 msgstr "တင်ဆင်မှုပုံစံ အဟောင်းများမှ ပရင်တာများ ထည့်သွင်းပါ"
 
 #: source/padialog.src#RID_ADDP_PAGE_OLDPRINTERS.RID_ADDP_OLD_TXT_PRINTERS.FixedText.Text
+#, fuzzy
 msgid  "~These printers can be imported. Please select the ones you want to import."
-msgstr ""
+msgstr "~ဤပရင်တာများ ထည့်သွင်းနိုင်သည်။ ထည့်သွင်းရန် သင်လိုချင်သည့် တစ်ခုကို ရွေးချယ်ပေးပါ။"
 
 #: source/padialog.src#RID_ADDP_PAGE_OLDPRINTERS.RID_ADDP_OLD_BTN_SELECTALL.PushButton.Text
 #, fuzzy
@@ -535,7 +538,7 @@ msgstr "~အားလုံးရွေးချယ်ပါ"
 #: source/padialog.src#RID_ADDP_PAGE_FAXDRIVER.RID_ADDP_STR_TITLE.String.Text
 #, fuzzy
 msgid  "Choose a driver"
-msgstr "ဒရိုင်ဘာတစ်ခု ရွေးချယ်ပါ"
+msgstr "ဒရိုင်ဘာ တစ်ခု ရွေးချယ်ပါ"
 
 #: source/padialog.src#RID_ADDP_PAGE_FAXDRIVER.RID_ADDP_FAXDRV_TXT_DRIVER.FixedText.Text
 #, fuzzy
@@ -545,11 +548,12 @@ msgstr "ဤဖက်စ် ချိတ်ဆက်မှုအတွက် အ�
 #: source/padialog.src#RID_ADDP_PAGE_FAXDRIVER.RID_ADDP_FAXDRV_BTN_DEFAULT.RadioButton.Text
 #, fuzzy
 msgid  "T~he default driver"
-msgstr "နဂိုမူလ ဒရိုင်ဘာ"
+msgstr "နဂိုမူလဒရိုင်ဘာ"
 
 #: source/padialog.src#RID_ADDP_PAGE_FAXDRIVER.RID_ADDP_FAXDRV_BTN_SELECT.RadioButton.Text
+#, fuzzy
 msgid  "A speci~fic driver, to adapt the format to another printer"
-msgstr ""
+msgstr "အခြားပရင်တာကို ပြင်ဆင်ချိန်ညှိမှုပြုရန် သေချာသော ဒရိုင်ဘာတစ်ခုကို အသုံးပြုပါ"
 
 #: source/padialog.src#RID_ADDP_PAGE_PDFDRIVER.RID_ADDP_STR_TITLE.String.Text
 #, fuzzy
@@ -572,8 +576,9 @@ msgid  "The Adobe D~istiller(tm) driver"
 msgstr "Adobe အနှစ်ချုပ် (tm) ဒရိုင်ဘာ"
 
 #: source/padialog.src#RID_ADDP_PAGE_PDFDRIVER.RID_ADDP_PDFDRV_BTN_SELECT.RadioButton.Text
+#, fuzzy
 msgid  "A spec~ific driver, to adapt the format to another printer"
-msgstr ""
+msgstr "အခြားပရင်တာကို ပြင်ဆင်ချိန်ညှိမှုပြုရန် သေချာသော ဒရိုင်ဘာတစ်ခုကို အသုံးပြုပါ"
 
 #: source/padialog.src#RID_TXT_FONT_ITALIC.String.Text
 #, fuzzy
@@ -875,16 +880,19 @@ msgid  "~Remove"
 msgstr "~ဖယ်ရှားပါ"
 
 #: source/rtsetup.src#RID_RTS_COMMANDPAGE.RID_RTS_CMD_STR_PDFHELP.String.Text
-msgid  "The command line for PDF converters is executed as follows: for each document printed, "(TMP)" in the command line is replaced by a temporary file and "(OUTFILE)" in the command line is replaced by the target PDF file name. If "(TMP)" is in the command line, the PostScript code will be supplied via a file, otherwise via standard input (i.e. as a pipe)."
-msgstr ""
+#, fuzzy
+msgid  "The command line for PDF converters is executed as follows: for each document printed, \"(TMP)\" in the command line is replaced by a temporary file and \"(OUTFILE)\" in the command line is replaced by the target PDF file name. If \"(TMP)\" is in the command line, the PostScript code will be supplied via a file, otherwise via standard input (i.e. as a pipe)."
+msgstr "PDF ပြောင်းလဲမှုအတွက် ညွှန်ကြားချက်တစ်ခုအနေဖြင့် ဖက်စ်ပေးပို့နိုင်ရန် အောက်ပါအတိုင်း စီမံဆောင်ရွက်သည်။ ညွှန်ကြားချက်မျဉ်းရှိ \"(TMP)\" သည် ယာယီဖိုင်အနေဖြင့် အစားထိုးဝင်ရောက်ခဲ့ပြီး \"(OUTFILE)\"သည် PDF ဖိုင်အနေဖြင့် အစားထိုး ဝင်ရောက်ခဲ့သည်။ အကယ်၍ \"(TMP)\" သည် ကွန်ပျူတာ ညွှန်ကြားချက် မျဉ်းတွင် ရှိပါက စာပို့ လက်ရေး (PostScript) သည် ဖိုင်တစ်ခုမှ တစ်ဆင့် ထောက်ပံ့လိမ့်မည်။ တနည်းအားဖြင့် စံနှုန်းအသွင်းတစ်ခုကဲ့သို့ အသုံးပြု နိုင်သည် (ဥပမာ - ပိုက်တစ်ခုကဲ့သို့)။"
 
 #: source/rtsetup.src#RID_RTS_COMMANDPAGE.RID_RTS_CMD_STR_PRINTERHELP.String.Text
+#, fuzzy
 msgid  "The command line for printer devices is executed as follows: the generated PostScript code is supplied as standard input (i.e. as a pipe) to the command line."
-msgstr ""
+msgstr "ပရင်တာနှင့်ပတ်သက်သည့် ကိရိယာများအတွက် အောက်ပါအတိုင်း စီမံဆောင်ရွက်သည်။ စာပို့ လက်ရေး (PostScript) သည် ညွှန်ကြားချက်မျဉ်းအတွက် စံအသုံးပြု နိုင်သည့် အချက်အလက်သွင်းမှုတစ်ခု ဖြစ်သည်။ (ဆိုလိုသည်မှာ - ပိုက်ကဲ့သို့)"
 
 #: source/rtsetup.src#RID_RTS_COMMANDPAGE.RID_RTS_CMD_STR_FAXHELP.String.Text
-msgid  "The command line for fax devices is executed as follows: for each fax sent, "(TMP)" in the command line is replaced by a temporary file and "(PHONE)" in the command line is replaced by the fax number. If "(TMP)" appears in the command line, the PostScript code will be supplied via a file, otherwise it is passed as standard input (i.e. as a pipe)."
-msgstr ""
+#, fuzzy
+msgid  "The command line for fax devices is executed as follows: for each fax sent, \"(TMP)\" in the command line is replaced by a temporary file and \"(PHONE)\" in the command line is replaced by the fax number. If \"(TMP)\" appears in the command line, the PostScript code will be supplied via a file, otherwise it is passed as standard input (i.e. as a pipe)."
+msgstr "ဖက်စ် ကိရိယာများအတွက် ညွှန်ကြားမျဉ်းအနေဖြင့် အောက်ပါအတိုင်း စီမံ ဆောင်ရွက်သည်- ဖက်စ်ပေးပို့မှုအတွက်၊ \"(TMP)\" သည် ယာယီဖိုင်တစ်ခုအနေဖြင့် အစားထိုးပြီး ဖက်စ် နံပါတ်အားဖြင့် \"(PHONE)\" အစားထိုးသည်။ အကယ်၍ \"(TMP)\" သည် ကွန်ပျူတာ ညွှန်ကြားချက် မျဉ်းတွင် ပေါ်လာပါက စာပို့ လက်ရေး (PostScript) သည် ဖိုင်တစ်ခုမှ တစ်ဆင့် ထောက်ပံ့လိမ့်မည်။ တနည်းအားဖြင့် စံနှုန်းအသွင်းတစ်ခုကဲ့သို့ အသုံးပြု နိုင်သည် (ဥပမာ - ပိုက်တစ်ခုကဲ့သို့)။"
 
 #: source/rtsetup.src#RID_RTS_OTHERPAGE.RID_RTS_OTHER_LEFTMARGIN_TXT.FixedText.Text
 #, fuzzy
@@ -927,8 +935,9 @@ msgid  "Authentication request"
 msgstr "စစ်မှန်ကြောင်း အထောက်အထားပြမှု တောင်းဆိုသည်"
 
 #: source/rtsetup.src#RID_RTS_PWDIALOG.RID_RTS_PWDIALOG_TXT.FixedText.Text
+#, fuzzy
 msgid  "Please enter your authentication data for server %s"
-msgstr ""
+msgstr "ဆာဗာ %s အတွက် စစ်မှန်ကြောင်း အထောက်အထားပြမှု အချက်အလက်များ ရိုက်ထည့်ပေးပါ။"
 
 #: source/rtsetup.src#RID_RTS_PWDIALOG.RID_RTS_PWDIALOG_USER_TXT.FixedText.Text
 #, fuzzy

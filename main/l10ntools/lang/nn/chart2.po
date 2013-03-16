@@ -41,6 +41,11 @@ msgstr "Vel innstillingar for titlar, forklaring og rutenett"
 msgid  "Display grids"
 msgstr "Vis rutenett"
 
+#: source/controller/dialogs/tp_3D_SceneGeometry.src#CUSTOMUNITTEXT_DEGREE.#define.CustomUnitText
+#, fuzzy
+msgid  " degrees"
+msgstr " grader"
+
 #: source/controller/dialogs/tp_3D_SceneGeometry.src#TP_3D_SCENEGEOMETRY.CBX_RIGHT_ANGLED_AXES.CheckBox.Text
 #, fuzzy
 msgid  "~Right-angled axes"
@@ -65,11 +70,6 @@ msgstr "~Z-rotasjon"
 #, fuzzy
 msgid  "~Perspective"
 msgstr "~Perspektiv"
-
-#: source/controller/dialogs/tp_3D_SceneGeometry.src#CUSTOMUNITTEXT_DEGREE.#define.CustomUnitText
-#, fuzzy
-msgid  " degrees"
-msgstr " grader"
 
 #: source/controller/dialogs/Strings_AdditionalControls.src#STR_3DSCHEME_SIMPLE.String.Text
 #, fuzzy
@@ -132,7 +132,6 @@ msgid  "Pyramid"
 msgstr "Pyramide"
 
 #: source/controller/dialogs/dlg_DataSource.src#DLG_DATA_SOURCE.TabDialog.Text
-#, fuzzy
 msgid  "Data Ranges"
 msgstr "Dataområde"
 
@@ -314,12 +313,14 @@ msgid  "The major interval requires a positive number. Check your input."
 msgstr "Hovudintervallet må vera eit positivt tal. Kontroller det du tasta inn."
 
 #: source/controller/dialogs/Strings_Scale.src#STR_BAD_LOGARITHM.String.Text
+#, fuzzy
 msgid  "The logarithmic scale requires positive numbers. Check your input."
-msgstr ""
+msgstr "Den logaritmiske skalaen krev positive tal. Kontroller det du tasta inn."
 
 #: source/controller/dialogs/Strings_Scale.src#STR_MIN_GREATER_MAX.String.Text
+#, fuzzy
 msgid  "The minimum must be lower than the maximum. Check your input."
-msgstr ""
+msgstr "Minimumstalet må vera lågare enn maksimumstalet. Kontroller det du tasta inn."
 
 #: source/controller/dialogs/Strings_Scale.src#STR_INVALID_INTERVALS.String.Text
 msgid  "The major interval needs to be greater than the minor interval. Check your input."
@@ -334,12 +335,10 @@ msgid  "Data Table"
 msgstr ""
 
 #: source/controller/dialogs/dlg_DataEditor.src#DLG_DIAGRAM_DATA.TBX_DATA.TBI_DATA_INSERT_ROW.ToolBoxItem.Text
-#, fuzzy
 msgid  "Insert Row"
 msgstr "Set inn rad"
 
 #: source/controller/dialogs/dlg_DataEditor.src#DLG_DIAGRAM_DATA.TBX_DATA.TBI_DATA_INSERT_COL.ToolBoxItem.Text
-#, fuzzy
 msgid  "Insert Series"
 msgstr "Set inn serie"
 
@@ -348,22 +347,18 @@ msgid  "Insert Text Column"
 msgstr ""
 
 #: source/controller/dialogs/dlg_DataEditor.src#DLG_DIAGRAM_DATA.TBX_DATA.TBI_DATA_DELETE_ROW.ToolBoxItem.Text
-#, fuzzy
 msgid  "Delete Row"
 msgstr "Slett rad"
 
 #: source/controller/dialogs/dlg_DataEditor.src#DLG_DIAGRAM_DATA.TBX_DATA.TBI_DATA_DELETE_COL.ToolBoxItem.Text
-#, fuzzy
 msgid  "Delete Series"
 msgstr "Slett serie"
 
 #: source/controller/dialogs/dlg_DataEditor.src#DLG_DIAGRAM_DATA.TBX_DATA.TBI_DATA_SWAP_COL.ToolBoxItem.Text
-#, fuzzy
 msgid  "Move Series Right"
 msgstr "Flytt serie til høgre"
 
 #: source/controller/dialogs/dlg_DataEditor.src#DLG_DIAGRAM_DATA.TBX_DATA.TBI_DATA_SWAP_ROW.ToolBoxItem.Text
-#, fuzzy
 msgid  "Move Row Down"
 msgstr "Flytt rad ned"
 
@@ -846,37 +841,30 @@ msgid  "~Rounded edges"
 msgstr "~Avrunda hjørne"
 
 #: source/controller/dialogs/dlg_InsertAxis_Grid.src#DLG_AXIS_OR_GRID.FL_PRIMARY_AXIS.FixedLine.Text
-#, fuzzy
 msgid  "Axes"
 msgstr "Aksar"
 
 #: source/controller/dialogs/dlg_InsertAxis_Grid.src#DLG_AXIS_OR_GRID.FL_PRIMARY_GRID.FixedLine.Text
-#, fuzzy
 msgid  "Major grids"
 msgstr "Hovudrutenett"
 
 #: source/controller/dialogs/dlg_InsertAxis_Grid.src#DLG_AXIS_OR_GRID.CB_X_PRIMARY.CheckBox.Text
-#, fuzzy
 msgid  "~X axis"
 msgstr "~X-akse"
 
 #: source/controller/dialogs/dlg_InsertAxis_Grid.src#DLG_AXIS_OR_GRID.CB_Y_PRIMARY.CheckBox.Text
-#, fuzzy
 msgid  "~Y axis"
 msgstr "~Y-akse"
 
 #: source/controller/dialogs/dlg_InsertAxis_Grid.src#DLG_AXIS_OR_GRID.CB_Z_PRIMARY.CheckBox.Text
-#, fuzzy
 msgid  "~Z axis"
 msgstr "~Z-akse"
 
 #: source/controller/dialogs/dlg_InsertAxis_Grid.src#DLG_AXIS_OR_GRID.FL_SECONDARY_AXIS.FixedLine.Text
-#, fuzzy
 msgid  "Secondary axes"
 msgstr "Sekundære aksar"
 
 #: source/controller/dialogs/dlg_InsertAxis_Grid.src#DLG_AXIS_OR_GRID.FL_SECONDARY_GRID.FixedLine.Text
-#, fuzzy
 msgid  "Minor grids"
 msgstr "Støtterutenett"
 
@@ -1076,8 +1064,9 @@ msgid  "Asian Typography"
 msgstr "Asiatisk typografi"
 
 #: source/controller/dialogs/Strings.src#STR_OBJECT_AVERAGE_LINE_WITH_PARAMETERS.String.Text
+#, fuzzy
 msgid  "Mean value line with value %AVERAGE_VALUE and standard deviation %STD_DEVIATION"
-msgstr ""
+msgstr "Snittverdilinje med verdi %AVERAGE_VALUE og standardavvik %STD_DEVIATION"
 
 #: source/controller/dialogs/Strings.src#STR_OBJECT_AXIS.String.Text
 #, fuzzy
@@ -1334,12 +1323,14 @@ msgid  "Values: %POINTVALUES"
 msgstr "Verdiar: %POINTVALUES"
 
 #: source/controller/dialogs/Strings.src#STR_TIP_DATAPOINT.String.Text
+#, fuzzy
 msgid  "Data Point %POINTNUMBER, data series %SERIESNUMBER, values: %POINTVALUES"
-msgstr ""
+msgstr "Datapunkt %POINTNUMBER, dataserie %SERIESNUMBER, verdiar: %POINTVALUES"
 
 #: source/controller/dialogs/Strings.src#STR_STATUS_DATAPOINT_MARKED.String.Text
+#, fuzzy
 msgid  "Data point %POINTNUMBER in data series %SERIESNUMBER selected, values: %POINTVALUES"
-msgstr ""
+msgstr "Datapunktet %POINTNUMBER i dataserien %SERIESNUMBER er valt, verdiar: %POINTVALUES"
 
 #: source/controller/dialogs/Strings.src#STR_STATUS_OBJECT_MARKED.String.Text
 #, fuzzy
@@ -1531,8 +1522,9 @@ msgid  "Select Range for Negative Error Bars"
 msgstr "Vel område for negative feillinjer"
 
 #: source/controller/dialogs/Strings.src#STR_DATA_EDITOR_INCORRECT_INPUT.String.Text
+#, fuzzy
 msgid  "Your last input is incorrect.\nIgnore this change and close the dialog?"
-msgstr ""
+msgstr "Dei siste inndataa dine var feil.\nVil du oversjå denne endringa og lukka dialogvindauget?"
 
 #: source/controller/dialogs/Strings.src#STR_TEXT_DIRECTION_LTR.String.Text
 #, fuzzy

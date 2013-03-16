@@ -163,6 +163,22 @@ msgstr ""
 msgid  "ACOTH"
 msgstr ""
 
+#: source/core/resource/core_resource.src#RID_STRLIST_FUNCTION_NAMES.SC_OPCODE_COSECANT.String.Text
+msgid  "CSC"
+msgstr ""
+
+#: source/core/resource/core_resource.src#RID_STRLIST_FUNCTION_NAMES.SC_OPCODE_SECANT.String.Text
+msgid  "SEC"
+msgstr ""
+
+#: source/core/resource/core_resource.src#RID_STRLIST_FUNCTION_NAMES.SC_OPCODE_COSECANT_HYP.String.Text
+msgid  "CSCH"
+msgstr ""
+
+#: source/core/resource/core_resource.src#RID_STRLIST_FUNCTION_NAMES.SC_OPCODE_SECANT_HYP.String.Text
+msgid  "SECH"
+msgstr ""
+
 #: source/core/resource/core_resource.src#RID_STRLIST_FUNCTION_NAMES.SC_OPCODE_EXP.String.Text
 msgid  "EXP"
 msgstr ""
@@ -1227,21 +1243,9 @@ msgstr ""
 msgid  "#N/A"
 msgstr ""
 
-#: source/core/resource/core_resource.src#RID_STRLIST_FUNCTION_NAMES.SC_OPCODE_COSECANT.String.Text
-msgid  "CSC"
-msgstr ""
-
-#: source/core/resource/core_resource.src#RID_STRLIST_FUNCTION_NAMES.SC_OPCODE_SECANT.String.Text
-msgid  "SEC"
-msgstr ""
-
-#: source/core/resource/core_resource.src#RID_STRLIST_FUNCTION_NAMES.SC_OPCODE_COSECANT_HYP.String.Text
-msgid  "CSCH"
-msgstr ""
-
-#: source/core/resource/core_resource.src#RID_STRLIST_FUNCTION_NAMES.SC_OPCODE_SECANT_HYP.String.Text
-msgid  "SECH"
-msgstr ""
+#: source/ui/dlg/formdlgs.src#RID_FORMULATAB_FUNCTION.LB_CATEGORY.Default.StringList.item
+msgid  "Last Used"
+msgstr "ਆਖਰੀ ਵਰਤੋਂ"
 
 #: source/ui/dlg/formdlgs.src#RID_FORMULATAB_FUNCTION.LB_CATEGORY.Default.StringList.item
 msgid  "All"
@@ -1269,7 +1273,7 @@ msgstr "ਗਲਤੀ"
 
 #: source/ui/dlg/formdlgs.src#RID_FORMULADLG_FORMULA_MODAL.TC_FUNCTION.TP_FUNCTION.PageItem.Text
 msgid  "Functions"
-msgstr "ਫੰਕਸ਼ਨ"
+msgstr "ਫੰਕਸ਼ਨ"
 
 #: source/ui/dlg/formdlgs.src#RID_FORMULADLG_FORMULA_MODAL.TC_FUNCTION.TP_STRUCT.PageItem.Text
 msgid  "Structure"
@@ -1281,7 +1285,7 @@ msgstr "ਫਾਰਮੂਲਾ(~m)"
 
 #: source/ui/dlg/formdlgs.src#RID_FORMULADLG_FORMULA_MODAL.FT_RESULT.FixedText.Text
 msgid  "Function result"
-msgstr "ਫੰਕਸ਼ਨ ਨਤੀਜੇ"
+msgstr "ਫੰਕਸ਼ਨ ਨਤੀਜਾ"
 
 #: source/ui/dlg/formdlgs.src#RID_FORMULADLG_FORMULA_MODAL.FT_FORMULA_RESULT.FixedText.Text
 msgid  "Result"
@@ -1363,9 +1367,9 @@ msgstr "ਫੰਕਸ਼ਨ ਸਹਾਇਕ -"
 msgid  "~End"
 msgstr "ਅੰਤ(~e)"
 
-#: source/ui/dlg/formdlgs.src#RID_FORMULATAB_FUNCTION.LB_CATEGORY.Default.StringList.item
-msgid  "Last Used"
-msgstr "ਆਖਰੀ ਵਰਤੋਂ"
+#: source/ui/dlg/parawin.src#RB_ARGBLOCK( y ).#define.QuickHelpText
+msgid  "Select"
+msgstr "ਚੁਣੋ"
 
 #: source/ui/dlg/parawin.src#RID_FORMULATAB_PARAMETER.FT_EDITDESC.FixedText.Text
 msgid  "Function not known"
@@ -1378,7 +1382,3 @@ msgstr "(ਚੋਣਵਾਂ)"
 #: source/ui/dlg/parawin.src#RID_FORMULATAB_PARAMETER.STR_REQUIRED.String.Text
 msgid  "(required)"
 msgstr "(ਲੋੜੀਦਾ)"
-
-#: source/ui/dlg/parawin.src#RB_ARGBLOCK( y ).#define.QuickHelpText
-msgid  "Select"
-msgstr "ਚੁਣੋ"

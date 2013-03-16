@@ -45,7 +45,7 @@ msgstr ""
 
 #: source/all/crashrep.ulf#%WELCOME_BODY2%
 msgid  "It's easy - just send the report without any further effort on your part by clicking 'Send' in the next dialog, or you can briefly describe how the error occurred and then click 'Send'. If you want to see the report, click the 'Show Report' button. No data will be sent if you click 'Do Not Send'.\n\n"
-msgstr ""
+msgstr "데이터를 보내는 것은 아주 쉽습니다. 보내려면 다음 대화 상자에 있는 [보내기]를 누릅니다. 오류 보고를 둘러 보려면 [보고 표시]를 누릅니다. [보내지 않음]을 누르면 데이터는 전송되지 않습니다.\n\n"
 
 #: source/all/crashrep.ulf#%WELCOME_BODY3%
 msgid  "Customer Privacy\nThe information gathered is limited to data concerning the state of %PRODUCTNAME% %PRODUCTVERSION% when the error occurred. Other information about passwords or document contents is not collected.\n\nThe information will only be used to improve the quality of %PRODUCTNAME% and will not be shared with third parties.\nFor more information on Apache OpenOffice's privacy policy, visit\n"
@@ -81,7 +81,7 @@ msgstr ""
 
 #: source/all/crashrep.ulf#%ENTER_TITLE%
 msgid  "Which type of document (e.g. presentation) were you using when the error occurred?"
-msgstr ""
+msgstr "오류가 발생했을 때 사용 중이던 문서 유형(예: 프레젠테이션)"
 
 #: source/all/crashrep.ulf#%ALLOW_CONTACT%
 msgid  "~I allow Apache OpenOffice to contact me regarding this report."
@@ -121,23 +121,23 @@ msgstr "보고를 다음 이름으로 저장"
 
 #: source/all/crashrep.ulf#%ERROR_MSG_SIMPLE_MAPI%
 msgid  "The error report could not be sent because the default e-mail program does not support MAPI.\n Please use a MAPI-compatible e-mail program."
-msgstr ""
+msgstr "기본 전자 메일 프로그램이 MAPI를 지원하지 않는 이유로 오류 보고를 보내지 못했습니다.\nMAPI 호환 전자 메일 프로그램을 사용해주십시오."
 
 #: source/all/crashrep.ulf#%ERROR_MSG_DISK_FULL%
 msgid  "The error report could not be temporarily saved and could therefore not be sent."
-msgstr ""
+msgstr "오류 보고를 임시 저장하지 못했습니다. 오류 보고를 보낼 수 없습니다. "
 
 #: source/all/crashrep.ulf#%ERROR_MSG_SENDMAIL%
 msgid  "The error report could not be sent because 'sendmail' could not be started.\nPlease check the 'sendmail' settings."
-msgstr ""
+msgstr "'sendmail'을 시작하지 못한 이유로 오류 보고를 보내지 못했습니다.\n'sendmail'의 설정을 확인해주십시오."
 
 #: source/all/crashrep.ulf#%ERROR_MSG_PROXY%
 msgid  "The error report could not be sent. Please check the proxy settings under 'Options' in the Error Report Tool."
-msgstr ""
+msgstr "오류 보고를 보내지 못했습니다. 오류 보고 툴의 [옵션] 메뉴에 있는 프록시 설정을 확인해보십시오. "
 
 #: source/all/crashrep.ulf#%ERROR_MSG_NOCONNECT%
 msgid  "The error report could not be sent because there is no Internet connection. Please check your Internet settings."
-msgstr ""
+msgstr "인터넷이 연결되지 않은 이유로 오류 보고를 보내지 못했습니다. 인터넷 설정을 확인해보십시오."
 
 #: source/all/crashrep.ulf#%OPTIONS_BUTTON%
 msgid  "~Options..."
@@ -173,7 +173,7 @@ msgstr "포트(~P)"
 
 #: source/all/crashrep.ulf#%PROXY_SETTINGS_DESCRIPTION%
 msgid  "The %PRODUCTNAME% Error Report tool needs to be connected to the Internet to be able to send error reports.\n\nCompanies often use proxy servers in conjunction with a firewall to protect the network.\n\nIf this applies to your situation, you have to specify the address and port for the server."
-msgstr ""
+msgstr "%PRODUCTNAME% 오류 보고 툴이 오류 보고를 보내려면 인터넷으로 연결되어야 합니다.\n\n회사들의 경우 네트워크를 보호하기 위해 방화벽(firewall)이 결합된 프록시 서버를 많이 사용합니다.\n\n이러한 경우, 서버의 포트와 주소를 지정해야 합니다."
 
 #: source/all/crashrep.ulf#%SENDING_REPORT_HEADER%
 msgid  "Sending Error Report"
@@ -205,4 +205,4 @@ msgstr "%PRODUCTNAME% 프로세스 ID(PID)를 오류 보고 툴에 할당합니�
 
 #: source/all/crashrep.ulf#%MSG_PARAM_HELP_DESCRIPTION%
 msgid  "Shows this help text.\nDetailed information can be found in the Setup Guide."
-msgstr ""
+msgstr "이 도움말을 표시합니다.\n자세한 정보는 설치 안내서에서 볼 수 있습니다."

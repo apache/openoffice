@@ -126,12 +126,12 @@ msgstr "%PRODUCTNAME ವಿಸ್ತರಣೆ"
 #: desktop/share/documents.ulf#ms-excel-sheet-12
 #, fuzzy
 msgid  "Microsoft Excel Worksheet"
-msgstr "ಮೈಕ್ರೋಸಾಫ್ಟ್ ಎಕ್ಸೆಲ್ ವರ್ಕ್-ಶೀಟ್"
+msgstr "ಮೈಕ್ರೋಸಾಫ್ಟ್ ಎಕ್ಸೆಲ್ ವರ್ಕ್-ಶೀಟ್‌"
 
 #: desktop/share/documents.ulf#ms-excel-template-12
 #, fuzzy
 msgid  "Microsoft Excel Worksheet Template"
-msgstr "ಮೈಕ್ರೋಸೊಫ್ಟ್ ಎಕ್ಸೆಲ್ ವರ್ಕ್-ಶೀಟ್ ನಮೂನೆ"
+msgstr "ಮೈಕ್ರೋಸೊಫ್ಟ್ ಎಕ್ಸೆಲ್ ವರ್ಕ್-ಶೀಟ್‌ ನಮೂನೆ"
 
 #: desktop/share/documents.ulf#ms-powerpoint-presentation-12
 #, fuzzy
@@ -151,7 +151,7 @@ msgstr "ಮೈಕ್ರೋಸಾಫ್ಟ್ ವರ್ಡ್ ದಸ್ತಾವ�
 #: desktop/share/documents.ulf#ms-word-template-12
 #, fuzzy
 msgid  "Microsoft Word Document Template"
-msgstr "ಮೈಕ್ರೋಸೊಫ್ಟ್ ವರ್ಡ್ ದಸ್ತಾವೇಜು ನಮೂನೆ"
+msgstr "ಮೈಕ್ರೋಸೊಫ್ಟ್  ಪದ ದಸ್ತಾವೇಜು ನಮೂನೆ"
 
 #: desktop/share/documents.ulf#openxmlformats-officedocument-presentationml-presentation
 #, fuzzy
@@ -234,28 +234,34 @@ msgid  "%PRODUCTNAME Printer Administration"
 msgstr "%PRODUCTNAME ಮುದ್ರಕ ನಿರ್ವಹಣೆ"
 
 #: desktop/share/launcher_comment.ulf#writer
+#, fuzzy
 msgid  "Create and edit text and graphics in letters, reports, documents and Web pages by using Writer."
-msgstr ""
+msgstr "ರೈಟರನ್ನು ಬಳಸಿ ಪತ್ರಗಳಲ್ಲಿ, ವರದಿಗಳಲ್ಲಿ, ದಸ್ತಾವೇಜು ಮತ್ತು ಜಾಲಪುಟಗಳಲ್ಲಿನ ಪಠ್ಯ ಮತ್ತು ಗ್ರಾಫಿಕ್ಸನ್ನು ರಚಿಸಿ ಮತ್ತು ಸಂಪಾದಿಸಿ."
 
 #: desktop/share/launcher_comment.ulf#impress
+#, fuzzy
 msgid  "Create and edit presentations for slideshows, meeting and Web pages by using Impress."
-msgstr ""
+msgstr "ಇಂಪ್ರೆಸ್ ಬಳಸಿ ಜಾರುಫಲಕ ಪ್ರದರ್ಶನಗಳಿಗಾಗಿ, ಸಭೆಗಳಲ್ಲಿ ಬಳಸಲು, ಮತ್ತು ಜಾಲ ಪುಟಗಳನ್ನು ಪ್ರಸ್ತುತಿಗಳನ್ನು ಸೃಷ್ಟಿಸಿ ಮತ್ತು ಸಂಪಾದಿಸಿ."
 
 #: desktop/share/launcher_comment.ulf#draw
+#, fuzzy
 msgid  "Create and edit drawings, flow charts, and logos by using Draw."
-msgstr ""
+msgstr "ಡ್ರಾ ಉಪಯೋಗಿಸಿಕೊಂಡು ಚಿತ್ರಗಳನ್ನು, ಹರಿವು(ಫ್ಲೋ) ನಕ್ಷೆಗಳನ್ನು ಹಾಗೂ ಲಾಂಛನಗಳನ್ನು ರಚಿಸಿ ಮತ್ತು ಸಂಪಾದಿಸಿ."
 
 #: desktop/share/launcher_comment.ulf#calc
+#, fuzzy
 msgid  "Perform calculation, analyze information and manage lists in spreadsheets by using Calc."
-msgstr ""
+msgstr "ಕ್ಯಾಲ್ಕುಲೇಟರ್ ಬಳಸಿ ಲೆಕ್ಕಮಾಡಿ, ಮಾಹಿತಿಯನ್ನು ವಿಶ್ಲೇಷಿಸಿ, ಹಾಗೂ ಸ್ಪ್ರೆಡ್‌ಶೀಟ್‌ನಲ್ಲಿನ ಪಟ್ಟಿಗಳನ್ನು ನಿರ್ವಹಿಸಿ."
 
 #: desktop/share/launcher_comment.ulf#math
+#, fuzzy
 msgid  "Create and edit scientific formulas and equations by using Math."
-msgstr ""
+msgstr "ಮ್ಯಾಥ್ ಬಳಸಿ ವೈಜ್ಞಾನಿಕ ಸೂತ್ರಗಳನ್ನು ಮತ್ತು ಸಮೀಕರಣಗಳನ್ನು ರಚಿಸಿ ಮತ್ತು ಸಂಪಾದಿಸಿ."
 
 #: desktop/share/launcher_comment.ulf#base
+#, fuzzy
 msgid  "Manage databases, create queries and reports to track and manage your information by using Base."
-msgstr ""
+msgstr "ಬೇಸ್ ಬಳಸಿ ದತ್ತಸಂಚಯಗಳನ್ನು ನಿರ್ವಹಿಸಿ, ವರದಿಗಳ ಜಾಡನ್ನು ಇರಿಸಲು ಹಾಗೂ ನಿರ್ವಹಿಸಲು ಪ್ರಶ್ನೆ ಮತ್ತು ವರದಿಗಳನ್ನು ಸೃಷ್ಟಿಸಿ."
 
 #: desktop/share/launcher_comment.ulf#startcenter
 msgid  "The office productivity suite compatible to the open and standardized ODF document format. Supported by Apache OpenOffice."

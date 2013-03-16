@@ -53,7 +53,7 @@ msgstr "Гэрчилгээг энэ суултыг дуустал зөвшөөр
 
 #: source/unknownauthdlg.src#DLG_UUI_UNKNOWNAUTH.RB_DONTACCEPT_2.RadioButton.Text
 msgid  "Do not accept this certificate and do not connect to this Web site"
-msgstr ""
+msgstr "Энэ гэрчилгээг хүлээн зөвшөөрөх хэрэггүй ба энэ вэб сайт руу битгий холбогд"
 
 #: source/unknownauthdlg.src#DLG_UUI_UNKNOWNAUTH.FT_LABEL_1.FixedText.Text
 msgid  "No Text"
@@ -137,7 +137,7 @@ msgstr "Товлолт хэдийнээ байна."
 
 #: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_IO_MODULESIZEEXCEEDED & ERRCODE_RES_MASK).String.Text
 msgid  "You are about to save/export a password protected basic library containing module(s) \n$(ARG1)\nwhich are too large to store in binary format. If you wish users that don't have access to the library password to be able to run macros in those module(s) you must split those modules into a number of smaller modules. Do you wish to continue to save/export this library?"
-msgstr ""
+msgstr "Хоёртын форматаар хадгалахад хэтэрхий том \n$(ARG1)\nмодулиудыг нууц үгийн хамгаалалтай үндсэн санд та хадгалаад экспортлох боломжтой. Хэрэв та хэрэглэгчид энэ модулиудын макрог ажиллуулахаар сангийн нууц үгэнд хандах боломжгүй гэж үзвэл модулиудыг хэд хэдэн жижиг модулиуд болгон хувааж салгах хэрэгтэй. Та энэ санд хадгалаад экспортол горимоор үргэлжлүүлж ажиллах уу?  "
 
 #: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_IO_BADCRC & ERRCODE_RES_MASK).String.Text
 msgid  "The data from $(ARG1) has an incorrect checksum."
@@ -241,15 +241,15 @@ msgstr "$(ARG1) хэрэгсэл дээр сул зай үлдсэнгүй."
 
 #: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_IO_TOOMANYOPENFILES & ERRCODE_RES_MASK).String.Text
 msgid  "The operation on $(ARG1) cannot be performed because too many files are already open."
-msgstr ""
+msgstr "Хэт олон файл нэгэн зэрэг нээлттэй байгаа тул $(ARG1) үйлдэл биелэх боломжгүй."
 
 #: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_IO_OUTOFMEMORY & ERRCODE_RES_MASK).String.Text
 msgid  "The operation on $(ARG1) cannot be performed because there is no more memory available."
-msgstr ""
+msgstr "Санах ойн сул зай байхгүй тул $(ARG1) үйлдэл биелэх боломжгүй."
 
 #: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_IO_PENDING & ERRCODE_RES_MASK).String.Text
 msgid  "The operation on $(ARG1) cannot continue because more data is pending."
-msgstr ""
+msgstr "Цаашдын өгөгдлүүд хүлээгдэж байгаа тул $(ARG1) дээрх үйлдлийг үргэлжлүүлэх боломжгүй."
 
 #: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_IO_RECURSIVE & ERRCODE_RES_MASK).String.Text
 msgid  "$(ARG1) cannot be copied into itself."
@@ -289,11 +289,11 @@ msgstr "Суусан Жава хувилбар $(ARG1) дэмжигдээгүй.
 
 #: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_WRONGJAVA_MIN & ERRCODE_RES_MASK).String.Text
 msgid  "The installed Java version is not supported, at least version $(ARG1) is required."
-msgstr ""
+msgstr "Суусан Жава хувилбар дэмжигдээгүй, ядаж $(ARG1) хувилбар шаардлагатай."
 
 #: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_WRONGJAVA_VERSION_MIN & ERRCODE_RES_MASK).String.Text
 msgid  "The installed Java version $(ARG1) is not supported, at least version $(ARG2) is required."
-msgstr ""
+msgstr "Суусан Жава хувилбар $(ARG1) дэмжигдээгүй, ядаж $(ARG1) хувилбар шаардлагатай."
 
 #: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_BADPARTNERSHIP & ERRCODE_RES_MASK).String.Text
 msgid  "The data associated with the partnership is corrupted."
@@ -325,31 +325,31 @@ msgstr "Объектыг $(ARG1) лавлах дотор үүсгэх болом
 
 #: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_IO_UNSUPPORTEDOVERWRITE & ERRCODE_RES_MASK).String.Text
 msgid  "%PRODUCTNAME cannot keep files from being overwritten when this transmission protocol is used. Do you want to continue anyway?"
-msgstr ""
+msgstr " %PRODUCTNAME нь дамжуулах протоколыг ашиглаж дарж бичиж байхад файлыг хадгалан үлдэж чадахгүй. Та цааш үргэлжлүүлэн ажиллах уу?"
 
 #: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_IO_BROKENPACKAGE & ERRCODE_RES_MASK).String.Text
 msgid  "The file '$(ARG1)' is corrupt and therefore cannot be opened. %PRODUCTNAME can try to repair the file.\n\nThe corruption could be the result of document manipulation or of structural document damage due to data transmission.\n\nWe recommend that you do not trust the content of the repaired document.\nExecution of macros is disabled for this document.\n\nShould %PRODUCTNAME repair the file?\n"
-msgstr ""
+msgstr "'$(ARG1)' файл эвдэрсэн тул нээж чадахгүй байна. %PRODUCTNAME-ээр файлыг засах уу?"
 
 #: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_IO_BROKENPACKAGE_CANTREPAIR & ERRCODE_RES_MASK).String.Text
 msgid  "The file '$(ARG1)' could not be repaired and therefore cannot be opened."
-msgstr ""
+msgstr "'$(ARG1)' файл засагдаж чадахгүй байгаа тул нээгдэх боломжгүй байна."
 
 #: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_CONFIGURATION_BROKENDATA_NOREMOVE & ERRCODE_RES_MASK).String.Text
 msgid  "Configuration data in '$(ARG1)' is corrupted. Without this data some functions may not operate correctly.\nDo you want to continue startup of %PRODUCTNAME without the corrupted configuration data?"
-msgstr ""
+msgstr "'$(ARG1)' дахь өгөгдлийн хувилбар эвдэрсэн байна. Зарим функцүүд энэ өгөгдөлгүйгээр зөв ажиллахгүй байж магад.\nТа %PRODUCTNAME-г эвдрэлгүй өгөгдөлтэйгөөр шинээр эхлүүлэн(startup) ажиллах уу?"
 
 #: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_CONFIGURATION_BROKENDATA_WITHREMOVE & ERRCODE_RES_MASK).String.Text
 msgid  "The personal configuration file '$(ARG1)' is corrupted and must be deleted to continue. Some of your personal settings may be lost.\nDo you want to continue startup of %PRODUCTNAME without the corrupted configuration data?"
-msgstr ""
+msgstr " '$(ARG1)' хувийн өгөгдлийн файл эвдэрсэн бөгөөд зарим нь устгагдсан байна. Таны хувийн тохиргооны зарим хэсэг мэдээлэл алга болсон байж магад.\nТа %PRODUCTNAME-г эвдрэлгүй өгөгдөлтэйгөөр шинээр эхлүүлэн(startup) ажиллах уу?"
 
 #: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_CONFIGURATION_BACKENDMISSING & ERRCODE_RES_MASK).String.Text
 msgid  "The configuration data source '$(ARG1)' is unavailable. Without this data some functions may not operate correctly."
-msgstr ""
+msgstr "'$(ARG1)' гэх өгөгдлийн эх хувилбар олдоогүй. Зарим функцүүд энэ өгөгдөлгүйгээр зөв ажиллахгүй байж магад."
 
 #: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_CONFIGURATION_BACKENDMISSING_WITHRECOVER & ERRCODE_RES_MASK).String.Text
 msgid  "The configuration data source '$(ARG1)' is unavailable. Without this data some functions may not operate correctly.\nDo you want to continue startup of %PRODUCTNAME without the missing configuration data?"
-msgstr ""
+msgstr "'$(ARG1)' гэх өгөгдлийн эх хувилбар олдоогүй. Зарим функцүүд энэ өгөгдөлгүйгээр зөв ажиллахгүй байж магад.\nТа %PRODUCTNAME-г эвдрэлгүй өгөгдөлтэйгөөр шинээр эхлүүлэн(startup) ажиллах уу?"
 
 #: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_INVALID_XFORMS_SUBMISSION_DATA & ERRCODE_RES_MASK).STRING.Text
 msgid  "The form contains invalid data. Do you still want to continue?"
@@ -373,19 +373,19 @@ msgstr ""
 
 #: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_UNKNOWNAUTH_UNTRUSTED).STRING.Text
 msgid  "Unable to verify the identity of $(ARG1) site.\n\nBefore accepting this certificate, you should examine this site's certificate carefully. Are you willing to accept this certificate for the purpose of identifying the Web site $(ARG1)?"
-msgstr ""
+msgstr "$(ARG1) сайтыг танин нотлох боломжгүй.\n\nЭнэ гэрчилгээг зөвшөөрөхөөс өмнө та энэ сайтын гэрчилгээг нягтлан хянаж шалга.Та $(ARG1) вэб сайтыг таних үүднээс энэ гэрчилгээг зөвшөөрөх хүсэлтэй байна уу?"
 
 #: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_SSLWARN_EXPIRED_1).STRING.Text
 msgid  "$(ARG1) is a site that uses a security certificate to encrypt data during transmission, but its certificate expired on $(ARG2).\n\nYou should check to make sure that your computer's time is correct."
-msgstr ""
+msgstr "$(ARG1) сайт нь дамжууллын үед өгөгдөл нууцлах аюулгүйн гэрчилгээг ашигладаг, гэхдээ $(ARG2)-д гэрчилгээ хүчингүй болно.\n\nТа компьютерынхоо цаг хугацааны утга зөв эсэхийг шалгаж нягтлаарай. "
 
 #: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_SSLWARN_DOMAINMISMATCH_1).STRING.Text
 msgid  "You have attempted to establish a connection with $(ARG1). However, the security certificate presented belongs to $(ARG2). It is possible, though unlikely, that someone may be trying to intercept your communication with this web site.\n\nIf you suspect the certificate shown does not belong to $(ARG1), please cancel the connection and notify the site administrator.\n\nWould you like to continue anyway?"
-msgstr ""
+msgstr "Тантай $(ARG1) холбоос тогтоох гэж оролдлоо. Түүний аюулгүйн гэрчилгээ нь $(ARG2) -д байна. Магадгүй таны энэ вэб сайттай харилцах харилцааг хэн нэг нь чагнах гэж олдсон байж болно.\n\nХэрэв энэ гэрчилгээ $(ARG1)-ийх биш гэж танд эргэлзээтэй санагдвал, холболтыг цуцалж сайтын захирагчид мэдэгдэнэ үү.\n\nТа цааш үргэлжлүүлэн ажиллах уу?"
 
 #: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_SSLWARN_INVALID_1).STRING.Text
 msgid  "The certificate could not be validated. You should examine this site's certificate carefully.\n\nIf you suspect the certificate shown, please cancel the connection and notify the site administrator."
-msgstr ""
+msgstr "Энэ гэрчилгээ хүчинтэй болох боломжгүй. Энэ сайтын гэрчилгээг нягтлан хянаж үз.\n\nХэрэв энэ гэрчилгээ танд эргэлзээтэй санагдвал, холболтыг цуцалж сайтын захирагчид мэдэгдэнэ үү?"
 
 #: source/ids.src#RID_UUI_ERRHDL.(TITLE_UUI_SSLWARN_DOMAINMISMATCH).STRING.Text
 msgid  "Security Warning: Domain Name Mismatch"
@@ -416,8 +416,8 @@ msgid  "Enter user name and password for: \n%1"
 msgstr ""
 
 #: source/logindlg.src#DLG_UUI_LOGIN.STR_LOGIN_REALM.String.Text
-msgid  "Enter user name and password for: \n"%2" on %1"
-msgstr ""
+msgid  "Enter user name and password for: \n\"%2\" on %1"
+msgstr "Та энд %1 дэх \"%2\"-н хувьд хэрэглэгчийн нэр болон нууц үгээ оруулна уу."
 
 #: source/logindlg.src#DLG_UUI_LOGIN.FT_LOGIN_PATH.FixedText.Text
 msgid  "~Path"
@@ -469,7 +469,7 @@ msgstr "~Илгээх"
 
 #: source/cookiedg.src#STR_COOKIES_RECV_START.String.Text
 msgid  "The '${HOST}' server wishes to set one or more cookies.\nCookies contain information referring to certain URL classes. If %PRODUCTNAME later requests a document with a URL corresponding to the class of a previously set cookie, %PRODUCTNAME will send this information to the server. This allows a server to recognize the status of a WWW application, e.g., when shopping online.\n\nThe following Cookies should be set:\n\n"
-msgstr ""
+msgstr "'${HOST}' сервер нэг эсвэл хэд хэдэн күүкий олгохыг хүсэж байна.\nКүүкий нь тухайн URL класстай холбоотой мэдээлэл юм.  Хэрэв  %PRODUCTNAME урьд нь олгогдсон күүкий бүхий URL классын  баримт шаардвал, энэ мэдээлэл %PRODUCTNAME -р сервер рүү илгээгдэнэ. Ингэж сервер WWW програмын (Жишээ нь: онлайн худалдааны системийн сагсанд хийсэн бараа) төлөвийг ажигладаг.\n\nДараах күүкий олгогдоно:\n\n"
 
 #: source/cookiedg.src#STR_COOKIES_RECV_COOKIES.String.Text
 msgid  "Domain: ${DOMAIN}, Path: ${PATH}, Cookie: ${COOKIE}.\n"
@@ -481,7 +481,7 @@ msgstr "Күүкий хүлээн авалт"
 
 #: source/cookiedg.src#STR_COOKIES_SEND_START.String.Text
 msgid  "%PRODUCTNAME has saved cookies for the server '${HOST}' which will be sent when requesting the document ${PATH}.\nCookies contain information which refers to certain URL classes. They are sent by some servers to %PRODUCTNAME where they are saved when certain documents are accessed. If %PRODUCTNAME loads a document that, according to the URL, corresponds to a class of one of the previously received Cookies, %PRODUCTNAME will send this information to that server. This enables a server to keep track of the status of a WWW application, e.g., when shopping online.\n\nThe following Cookies should be set:\n\n"
-msgstr ""
+msgstr "${PATH} баримт шаардах үед  '${HOST}' сервер лүү илгээх зориулалтаар күүкийг %PRODUCTNAME -р хадгалдаг.\nКүүкийн тодорхой URL-н классууд бүхий мэдээлийг агуулна. Тодорхой баримтуудыг ачаалах үед тэд зарим серверээс PRODUCTNAME руу илгээгдэж тэнд хадгалагддаг. Хэрэв %PRODUCTNAME нь өмнө хүлээж авсан Күүкийнүүдийн аль нэг классын URL-ийн баримт ачаалбал, %PRODUCTNAME нь сервер лүү энэ мэдээллийг илгээнэ. Ингэж сервер (Онлайн худалдаа гэх мэт) WWW програмын төлөвийн явцийг хянах боломжтой болдог.\n\nДараах күүкий олгогдоно:\n\n"
 
 #: source/cookiedg.src#STR_COOKIES_SEND_COOKIES.String.Text
 msgid  "Domain: ${DOMAIN}, Path: ${PATH}, Cookie: ${COOKIE}.\n"
@@ -529,7 +529,7 @@ msgstr "Баримтыг хэрэглэж байна"
 
 #: source/openlocked.src#STR_OPENLOCKED_MSG.String.Text
 msgid  "Document file '$(ARG1)' is locked for editing by:\n\n$(ARG2)\n\nOpen document read-only or open a copy of the document for editing.\n\n"
-msgstr ""
+msgstr "'$(ARG1)' баримт файлыг засварлаж буй:\n\n$(ARG2)\n\nБаримтыг зөвхөн уншигдах эсвэл хуулбарыг засварлахаар нээх боломжтой."
 
 #: source/openlocked.src#STR_OPENLOCKED_OPENREADONLY_BTN.String.Text
 msgid  "Open ~Read-Only"
@@ -561,7 +561,7 @@ msgstr "%PRODUCTNAME Шинэчлэл боломжтой байна"
 
 #: source/newerverwarn.src#RID_DLG_NEWER_VERSION_WARNING.FT_INFO.FixedText.Text
 msgid  "This document was created by a newer version of %PRODUCTNAME. It may contain features not supported by your current version.\n\nClick 'Update Now...' to run online update and get the latest version of %PRODUCTNAME."
-msgstr ""
+msgstr "Энэ баримт нь %PRODUCTNAME ийн шинэ хувилбараар үүсгэгдсэн байна. Магадгүй таны одоогийн байгаа хувилбараар дэмжигдээгүй боломжууд агуулж байж болно.\n\n\"Одоо шинэчлэх...\" ийг дарж онлайн шинэчлэлийг ажиллуулснаар %PRODUCTNAME ийн хамгийн сүүлийн үеийн хувилбарыг авч болно."
 
 #: source/newerverwarn.src#RID_DLG_NEWER_VERSION_WARNING.PB_UPDATE.PushButton.Text
 msgid  "~Update Now..."
@@ -597,7 +597,7 @@ msgstr "%PRODUCTNAME - Хамгаалалтын сануулга"
 
 #: source/secmacrowarnings.src#RID_XMLSECDLG_MACROWARN.FI_DESCR1A.FixedText.Text
 msgid  "The document contains document macros signed by:"
-msgstr ""
+msgstr "Баримт дараах хүнээр гарын үсэг зурагдсан баримтын макрогуудыг агуулж байна:"
 
 #: source/secmacrowarnings.src#RID_XMLSECDLG_MACROWARN.FI_DESCR1B.FixedText.Text
 msgid  "The document contains document macros."
@@ -609,7 +609,7 @@ msgstr "Гарын үсэгнүүдийг харах..."
 
 #: source/secmacrowarnings.src#RID_XMLSECDLG_MACROWARN.FI_DESCR2.FixedText.Text
 msgid  "Macros may contain viruses. Disabling macros for a document is always safe. If you disable macros you may lose functionality provided by the document macros."
-msgstr ""
+msgstr "Макронууд вирус агуулж байх боломжтой. Баримтуудад макрогуудыг идэвхжүүлэхгүй байх нь үргэлж аюулгүй байдаг. Хэрэв макрогуудыг идэвхжүүлэхгүй бол, баримтын макрогуудаар хангагдаж буй үйл ажиллагаа алдаж магадгүй."
 
 #: source/secmacrowarnings.src#RID_XMLSECDLG_MACROWARN.CB_ALWAYSTRUST.CheckBox.Text
 msgid  "Always trust macros from this source"

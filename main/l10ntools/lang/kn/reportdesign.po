@@ -61,11 +61,11 @@ msgstr "ವರದಿಯ ಅಡಿಲೇಖ"
 
 #: source/core/resource/strings.src#RID_STR_PROPERTY_CHANGE_NOT_ALLOWED.String.Text
 msgid  "The name '#1' already exists and can not be asssigned again."
-msgstr ""
+msgstr "'#1' ಎಂಬ ಹೆಸರು ಈಗಾಗಲೇ ಅಸ್ತಿತ್ವದಲ್ಲಿದೆ ಹಾಗು ಇದನ್ನು ಇನ್ನೊಮ್ಮೆ ನಿಯೋಜಿಸಲು ಸಾಧ್ಯವಿಲ್ಲ."
 
 #: source/core/resource/strings.src#RID_STR_ERROR_WRONG_ARGUMENT.String.Text
 msgid  "You tried to set an illegal argument. Please have a look at '#1' for valid arguments."
-msgstr ""
+msgstr "ನೀವು ಅಮಾನ್ಯವಾದ ಆರ್ಗ್ಯುಮೆಂಟನ್ನು ಹೊಂದಲು ಪ್ರಯತ್ನಿಸುತ್ತಿದೀರಿ. ದಯವಿಟ್ಟು ಸರಿಯಾದ ಆರ್ಗ್ಯುಮೆಂಟಿಗಾಗಿ '#1' ಇದನ್ನು ನೋಡಿ."
 
 #: source/core/resource/strings.src#RID_STR_ARGUMENT_IS_NULL.String.Text
 msgid  "The element is invalid."
@@ -152,6 +152,11 @@ msgstr "ಗುಂಪಿನ ಶಿರೋಲೇಖ"
 
 #: source/ui/dlg/GroupsSorting.src#RID_GROUPS_SORTING.LST_HEADERLST.Default.StringList.item
 #, fuzzy
+msgid  "Present"
+msgstr "ಅಸ್ತಿತ್ವದಲ್ಲಿದೆ"
+
+#: source/ui/dlg/GroupsSorting.src#RID_GROUPS_SORTING.LST_HEADERLST.Default.StringList.item
+#, fuzzy
 msgid  "Not present"
 msgstr "ಅಸ್ತಿತ್ವದಲ್ಲಿಲ್ಲ"
 
@@ -159,6 +164,11 @@ msgstr "ಅಸ್ತಿತ್ವದಲ್ಲಿಲ್ಲ"
 #, fuzzy
 msgid  "Group Footer"
 msgstr "ಗುಂಪಿನ ಅಡಿಲೇಖ"
+
+#: source/ui/dlg/GroupsSorting.src#RID_GROUPS_SORTING.LST_FOOTERLST.Default.StringList.item
+#, fuzzy
+msgid  "Present"
+msgstr "ಅಸ್ತಿತ್ವದಲ್ಲಿದೆ"
 
 #: source/ui/dlg/GroupsSorting.src#RID_GROUPS_SORTING.LST_FOOTERLST.Default.StringList.item
 #, fuzzy
@@ -261,8 +271,9 @@ msgid  "Interval"
 msgstr "ಅವಧಿ"
 
 #: source/ui/dlg/GroupsSorting.src#STR_RPT_HELP_FIELD.String.Text
+#, fuzzy
 msgid  "Select a field or type an expression to sort or group on."
-msgstr ""
+msgstr "ಯಾವ ಆಧಾರದ ಮೇರೆಗೆ ವಿಂಗಡಿಸಬೇಕು ಅಥವ ಗುಂಪುಗೂಡಿಸಬೇಕು ಎಂದು ಒಂದು ವರ್ಗ ಅಥವ ಗಣಿತೋಕ್ತಿಯನ್ನು ಆಯ್ಕೆ ಮಾಡಿ."
 
 #: source/ui/dlg/GroupsSorting.src#STR_RPT_HELP_HEADER.String.Text
 #, fuzzy
@@ -290,18 +301,9 @@ msgid  "Keep group together on one page?"
 msgstr "ಗುಂಪುಗಳನ್ನು ಒಂದೇ ಪುಟದಲ್ಲಿ ಇರಿಸಬೇಕೆ?"
 
 #: source/ui/dlg/GroupsSorting.src#STR_RPT_HELP_SORT.String.Text
+#, fuzzy
 msgid  "Select ascending or descending sort order. Ascending means from A to Z or 0 to 9"
-msgstr ""
-
-#: source/ui/dlg/GroupsSorting.src#RID_GROUPS_SORTING.LST_HEADERLST.Default.StringList.item
-#, fuzzy
-msgid  "Present"
-msgstr "ಅಸ್ತಿತ್ವದಲ್ಲಿದೆ"
-
-#: source/ui/dlg/GroupsSorting.src#RID_GROUPS_SORTING.LST_FOOTERLST.Default.StringList.item
-#, fuzzy
-msgid  "Present"
-msgstr "ಅಸ್ತಿತ್ವದಲ್ಲಿದೆ"
+msgstr "ಏರಿಕೆ ಅಥವ ಇಳಿಕೆ ಕ್ರಮವನ್ನು ಆಯ್ಕೆ ಮಾಡಿ. ಏರಿಕೆ ಎಂದರೆ A ಇಂದ Z ವರೆಗೆ ಅಥವ ೦ ಇಂದ ೯ ವರೆಗೆ"
 
 #: source/ui/dlg/PageNumber.src#RID_PAGENUMBERS.ModalDialog.Text
 #, fuzzy
@@ -350,6 +352,16 @@ msgstr "ಹೊಂದಿಕೆ:"
 
 #: source/ui/dlg/PageNumber.src#RID_PAGENUMBERS.LST_ALIGNMENT.Default.StringList.item
 #, fuzzy
+msgid  "Left"
+msgstr "ಎಡ"
+
+#: source/ui/dlg/PageNumber.src#RID_PAGENUMBERS.LST_ALIGNMENT.Default.StringList.item
+#, fuzzy
+msgid  "Center"
+msgstr "ಮಧ್ಯ"
+
+#: source/ui/dlg/PageNumber.src#RID_PAGENUMBERS.LST_ALIGNMENT.Default.StringList.item
+#, fuzzy
 msgid  "Right"
 msgstr "ಬಲ"
 
@@ -364,117 +376,91 @@ msgid  "~Help"
 msgstr "ಸಹಾಯ(~H)"
 
 #: source/ui/dlg/PageNumber.src#STR_RPT_PN_PAGE.String.Text
-msgid  ""Page " & #PAGENUMBER#"
-msgstr ""
+#, fuzzy
+msgid  "\"Page \" & #PAGENUMBER#"
+msgstr "\"ಪುಟ \" & #PAGENUMBER#"
 
 #: source/ui/dlg/PageNumber.src#STR_RPT_PN_PAGE_OF.String.Text
-msgid  " & " of " & #PAGECOUNT#"
-msgstr ""
-
-#: source/ui/dlg/PageNumber.src#RID_PAGENUMBERS.LST_ALIGNMENT.Default.StringList.item
 #, fuzzy
-msgid  "Left"
-msgstr "ಎಡ"
-
-#: source/ui/dlg/PageNumber.src#RID_PAGENUMBERS.LST_ALIGNMENT.Default.StringList.item
-#, fuzzy
-msgid  "Center"
-msgstr "ಮಧ್ಯ"
+msgid  " & \" of \" & #PAGECOUNT#"
+msgstr "& #PAGECOUNT# \" ರಲ್ಲಿ \" &"
 
 #: source/ui/dlg/dlgpage.src#RID_PAGEDIALOG_PAGE.TabDialog.Text
-#, fuzzy
 msgid  "Page Setup"
 msgstr "ಪುಟ ಸಿದ್ಧತಾ ಆದೇಶ"
 
 #: source/ui/dlg/dlgpage.src#RID_PAGEDIALOG_PAGE.1.RID_SVXPAGE_PAGE.PageItem.Text
-#, fuzzy
 msgid  "Page"
 msgstr "ಪುಟ"
 
 #: source/ui/dlg/dlgpage.src#RID_PAGEDIALOG_PAGE.1.RID_SVXPAGE_BACKGROUND.PageItem.Text
-#, fuzzy
 msgid  "Background"
 msgstr "ಹಿನ್ನೆಲೆ"
 
 #: source/ui/dlg/dlgpage.src#RID_PAGEDIALOG_PAGE.1.PushButton.Text
-#, fuzzy
 msgid  "Return"
 msgstr "ಹಿಂದಿರುಗು"
 
 #: source/ui/dlg/dlgpage.src#RID_PAGEDIALOG_PAGE.1.String.Text
-#, fuzzy
 msgid  "Page"
 msgstr "ಪುಟ"
 
 #: source/ui/dlg/dlgpage.src#RID_PAGEDIALOG_PAGE.2.String.Text
-#, fuzzy
 msgid  "Background"
 msgstr "ಹಿನ್ನೆಲೆ"
 
 #: source/ui/dlg/dlgpage.src#RID_PAGEDIALOG_BACKGROUND.TabDialog.Text
-#, fuzzy
 msgid  "Section Setup"
 msgstr "ವಿಭಾಗದ ಸಿದ್ಧತೆ"
 
 #: source/ui/dlg/dlgpage.src#RID_PAGEDIALOG_BACKGROUND.1.PushButton.Text
-#, fuzzy
 msgid  "Return"
 msgstr "ಹಿಂದಿರುಗು"
 
 #: source/ui/dlg/dlgpage.src#RID_PAGEDIALOG_BACKGROUND.1.String.Text
-#, fuzzy
 msgid  "Background"
 msgstr "ಹಿನ್ನೆಲೆ"
 
 #: source/ui/dlg/dlgpage.src#RID_PAGEDIALOG_CHAR.TabDialog.Text
-#, fuzzy
 msgid  "Character Settings"
 msgstr "ಅಕ್ಷರ ಸಿದ್ಧತೆಗಳು"
 
 #: source/ui/dlg/dlgpage.src#RID_PAGEDIALOG_CHAR.1.RID_PAGE_CHAR.PageItem.Text
-#, fuzzy
 msgid  "Font"
 msgstr "ಅಕ್ಷರಶೈಲಿ"
 
 #: source/ui/dlg/dlgpage.src#RID_PAGEDIALOG_CHAR.1.RID_PAGE_EFFECTS.PageItem.Text
-#, fuzzy
 msgid  "Font Effects"
 msgstr "ಅಕ್ಷರಶೈಲಿ ಪರಿಣಾಮಗಳು"
 
 #: source/ui/dlg/dlgpage.src#RID_PAGEDIALOG_CHAR.1.RID_PAGE_POSITION.PageItem.Text
-#, fuzzy
 msgid  "Position"
 msgstr "ಸ್ಥಾನ"
 
 #: source/ui/dlg/dlgpage.src#RID_PAGEDIALOG_CHAR.1.RID_PAGE_TWOLN.PageItem.Text
-#, fuzzy
 msgid  "Asian Layout"
 msgstr "ಏಷಿಯಾದ ರೂಪವಿನ್ಯಾಸ"
 
 #: source/ui/dlg/dlgpage.src#RID_PAGEDIALOG_CHAR.1.RID_PAGE_BACKGROUND.PageItem.Text
-#, fuzzy
 msgid  "Background"
 msgstr "ಹಿನ್ನೆಲೆ"
 
 #: source/ui/dlg/dlgpage.src#RID_PAGEDIALOG_CHAR.1.RID_PAGE_ALIGNMENT.PageItem.Text
-#, fuzzy
 msgid  "Alignment"
 msgstr "ಹೊಂದಿಕೆ"
 
 #: source/ui/dlg/dlgpage.src#RID_PAGEDIALOG_CHAR.1.PushButton.Text
-#, fuzzy
 msgid  "Return"
 msgstr "ಹಿಂದಿರುಗು"
 
 #: source/ui/dlg/dlgpage.src#RID_PAGEDIALOG_CHAR.1.String.Text
-#, fuzzy
 msgid  "Character"
 msgstr "ಅಕ್ಷರ"
 
 #: source/ui/dlg/dlgpage.src#RID_PAGEDIALOG_LINE.TabDialog.Text
 #, fuzzy
 msgid  "Line"
-msgstr "ಸಾಲು"
+msgstr "ರೇಖೆ"
 
 #: source/ui/dlg/dlgpage.src#RID_PAGEDIALOG_LINE.1.RID_SVXPAGE_LINE.PageItem.Text
 #, fuzzy
@@ -542,1017 +528,817 @@ msgid  "Properties..."
 msgstr "ಗುಣಗಳು..."
 
 #: source/ui/dlg/CondFormat.src#WIN_CONDITION.LB_COND_TYPE.Default.StringList.item
-#, fuzzy
+msgid  "Field Value Is"
+msgstr "ವರ್ಗದ ಮೌಲ್ಯವು"
+
+#: source/ui/dlg/CondFormat.src#WIN_CONDITION.LB_COND_TYPE.Default.StringList.item
 msgid  "Expression Is"
 msgstr "ಗಣಿತೋಕ್ತಿಯು"
 
 #: source/ui/dlg/CondFormat.src#WIN_CONDITION.LB_OP.0.StringList.item
-#, fuzzy
 msgid  "between"
 msgstr "ನಡುವೆ"
 
 #: source/ui/dlg/CondFormat.src#WIN_CONDITION.LB_OP.1.StringList.item
-#, fuzzy
 msgid  "not between"
 msgstr "ನಡುವೆಯಲ್ಲ"
 
 #: source/ui/dlg/CondFormat.src#WIN_CONDITION.LB_OP.2.StringList.item
-#, fuzzy
 msgid  "equal to"
 msgstr "ಇದಕ್ಕೆ ಸಮ"
 
 #: source/ui/dlg/CondFormat.src#WIN_CONDITION.LB_OP.3.StringList.item
-#, fuzzy
 msgid  "not equal to"
 msgstr "ಸಮವಲ್ಲದ"
 
 #: source/ui/dlg/CondFormat.src#WIN_CONDITION.LB_OP.4.StringList.item
-#, fuzzy
 msgid  "greater than"
 msgstr "ಇದಕ್ಕಿಂತ ಹೆಚ್ಚಿನ"
 
 #: source/ui/dlg/CondFormat.src#WIN_CONDITION.LB_OP.5.StringList.item
-#, fuzzy
 msgid  "less than"
 msgstr "ಇದಕ್ಕಿಂತ ಕಡಿಮೆ"
 
 #: source/ui/dlg/CondFormat.src#WIN_CONDITION.LB_OP.6.StringList.item
-#, fuzzy
 msgid  "greater than or equal to"
 msgstr "ಇದಕ್ಕಿಂತಲೂ ಹೆಚ್ಚಿನ ಅಥವಾ ಇದಕ್ಕೆ ಸಮನಾದ"
 
 #: source/ui/dlg/CondFormat.src#WIN_CONDITION.LB_OP.7.StringList.item
-#, fuzzy
 msgid  "less than or equal to"
 msgstr "ಇದಕ್ಕಿಂತ ಕಡಿಮೆಯಾದ ಅಥವ ಇದಕ್ಕೆ ಸಮನಾದ"
 
 #: source/ui/dlg/CondFormat.src#WIN_CONDITION.FT_AND.FixedText.Text
-#, fuzzy
 msgid  "and"
 msgstr "ಮತ್ತು"
 
 #: source/ui/dlg/CondFormat.src#WIN_CONDITION.CRTL_FORMAT_PREVIEW.Window.Text
-#, fuzzy
 msgid  "Example"
 msgstr "ಉದಾಹರಣೆ"
 
 #: source/ui/dlg/CondFormat.src#RID_CONDFORMAT.ModalDialog.Text
-#, fuzzy
 msgid  "Conditional Formatting"
 msgstr "ಷರತ್ತುಸಹಿತ ರಚನೆ"
 
 #: source/ui/dlg/CondFormat.src#RID_CONDFORMAT.PB_HELP.HelpButton.Text
-#, fuzzy
 msgid  "~Help"
 msgstr "ಸಹಾಯ(~H)"
 
 #: source/ui/dlg/CondFormat.src#STR_NUMBERED_CONDITION.String.Text
-#, fuzzy
 msgid  "Condition $number$"
 msgstr "ನಿಬಂಧನೆ $number$"
 
 #: source/ui/dlg/CondFormat.src#STR_COLOR_WHITE.String.Text
-#, fuzzy
 msgid  "White"
 msgstr "ಬಿಳಿ"
 
 #: source/ui/dlg/CondFormat.src#STR_CHARCOLOR.String.Text
-#, fuzzy
 msgid  "Font color"
 msgstr "ಅಕ್ಷರಶೈಲಿ ಬಣ್ಣ"
 
 #: source/ui/dlg/CondFormat.src#STR_CHARBACKGROUND.String.Text
-#, fuzzy
 msgid  "Background"
 msgstr "ಹಿನ್ನೆಲೆ"
 
 #: source/ui/dlg/CondFormat.src#STR_TRANSPARENT.String.Text
-#, fuzzy
 msgid  "No Fill"
 msgstr "ಭರ್ತಿ ಇಲ್ಲ"
 
 #: source/ui/dlg/CondFormat.src#RID_TB_SORTING.SID_FM_SORTUP.ToolBoxItem.Text
-#, fuzzy
 msgid  "Sort Ascending"
 msgstr "ಏರಿಕೆಕ್ರಮದಲ್ಲಿ ವಿಂಗಡಿಸು"
 
 #: source/ui/dlg/CondFormat.src#RID_TB_SORTING.SID_FM_SORTDOWN.ToolBoxItem.Text
-#, fuzzy
 msgid  "Sort Descending"
 msgstr "ಇಳಿಕೆಕ್ರಮದಲ್ಲಿ ವಿಂಗಡಿಸು"
 
 #: source/ui/dlg/CondFormat.src#RID_TB_SORTING.SID_FM_REMOVE_FILTER_SORT.ToolBoxItem.Text
-#, fuzzy
 msgid  "Remove sorting"
 msgstr "ವಿಂಗಡಣೆಯನ್ನು ತೆಗೆದುಹಾಕು"
 
 #: source/ui/dlg/CondFormat.src#RID_TB_SORTING.SID_ADD_CONTROL_PAIR.ToolBoxItem.Text
-#, fuzzy
 msgid  "Insert"
 msgstr "ಸೇರಿಸು"
 
 #: source/ui/dlg/CondFormat.src#ADDFIELD_FL_HELP_SEPARATOR.FixedLine.Text
-#, fuzzy
 msgid  "Help"
 msgstr "ಸಹಾಯ"
 
 #: source/ui/dlg/CondFormat.src#ADDFIELD_HELP_FIELD.FixedText.Text
 msgid  "Highlight the fields to insert into the selected section of the template, then click Insert or press Enter."
-msgstr ""
-
-#: source/ui/dlg/CondFormat.src#WIN_CONDITION.LB_COND_TYPE.Default.StringList.item
-#, fuzzy
-msgid  "Field Value Is"
-msgstr "ವರ್ಗದ ಮೌಲ್ಯವು"
+msgstr "ನಮೂನೆಯಲ್ಲಿ ಆಯ್ಕೆ ಮಾಡಲಾದ ಜಾಗಕ್ಕೆ ಸೇರಿಸಲು ಸ್ಥಳಗಳನ್ನು ಹೈಲೈಟ್ ಮಾಡಿ, ಹಾಗು ನಂತರ ಒಳಕ್ಕೆ ಸೇರಿಸಿ ಅಥವ ಎಂಟರ್ ಅನ್ನು ಒತ್ತಿ."
 
 #: source/ui/dlg/DateTime.src#RID_DATETIME_DLG.ModalDialog.Text
-#, fuzzy
 msgid  "Date and Time"
 msgstr "ದಿನಾಂಕ ಹಾಗು ಸಮಯ"
 
 #: source/ui/dlg/DateTime.src#RID_DATETIME_DLG.CB_DATE.CheckBox.Text
-#, fuzzy
 msgid  "Include Date"
 msgstr "ದಿನಾಂಕವನ್ನು ಸೇರಿಸು"
 
 #: source/ui/dlg/DateTime.src#RID_DATETIME_DLG.FT_DATE_FORMAT.FixedText.Text
-#, fuzzy
 msgid  "Format"
 msgstr "ರೂಪಿಸು"
 
 #: source/ui/dlg/DateTime.src#RID_DATETIME_DLG.CB_TIME.CheckBox.Text
-#, fuzzy
 msgid  "Include Time"
 msgstr "ಸಮಯವನ್ನು ಸೇರಿಸು"
 
 #: source/ui/dlg/DateTime.src#RID_DATETIME_DLG.FT_TIME_FORMAT.FixedText.Text
-#, fuzzy
 msgid  "Format"
 msgstr "ರೂಪಿಸು"
 
 #: source/ui/dlg/DateTime.src#RID_DATETIME_DLG.PB_HELP.HelpButton.Text
-#, fuzzy
 msgid  "~Help"
 msgstr "ಸಹಾಯ(~H)"
 
 #: source/ui/inspection/inspection.src#RID_STR_PROPPAGE_DEFAULT.String.Text
-#, fuzzy
 msgid  "General"
 msgstr "ಸಾಮಾನ್ಯ"
 
 #: source/ui/inspection/inspection.src#RID_STR_PROPPAGE_DATA.String.Text
-#, fuzzy
 msgid  "Data"
 msgstr "ದತ್ತ"
 
 #: source/ui/inspection/inspection.src#RID_STR_BOOL.1.String.Text
-#, fuzzy
 msgid  "No"
 msgstr "ಇಲ್ಲ"
 
 #: source/ui/inspection/inspection.src#RID_STR_BOOL.2.String.Text
-#, fuzzy
 msgid  "Yes"
 msgstr "ಹೌದು"
 
 #: source/ui/inspection/inspection.src#RID_STR_FORCENEWPAGE.String.Text
-#, fuzzy
 msgid  "Force New Page"
 msgstr "ಹೊಸ ಪುಟಕ್ಕಾಗಿ ಒತ್ತಾಯಿಸು"
 
 #: source/ui/inspection/inspection.src#RID_STR_FORCENEWPAGE_CONST.1.String.Text
-#, fuzzy
 msgid  "None"
 msgstr "ಏನೂ ಇಲ್ಲ"
 
 #: source/ui/inspection/inspection.src#RID_STR_FORCENEWPAGE_CONST.2.String.Text
-#, fuzzy
 msgid  "Before Section"
 msgstr "ವಿಭಾಗದ ಮೊದಲು"
 
 #: source/ui/inspection/inspection.src#RID_STR_FORCENEWPAGE_CONST.3.String.Text
-#, fuzzy
 msgid  "After Section"
 msgstr "ವಿಭಾಗದ ನಂತರ"
 
 #: source/ui/inspection/inspection.src#RID_STR_FORCENEWPAGE_CONST.4.String.Text
-#, fuzzy
 msgid  "Before & After Section"
 msgstr "ವಿಭಾಗ ಮೊದಲು ಹಾಗು ನಂತರ"
 
 #: source/ui/inspection/inspection.src#RID_STR_NEWROWORCOL.String.Text
-#, fuzzy
 msgid  "New Row Or Column"
 msgstr "ಹೊಸ ಅಡ್ಡಸಾಲು ಅಥವ ಲಂಬಸಾಲು"
 
 #: source/ui/inspection/inspection.src#RID_STR_KEEPTOGETHER.String.Text
-#, fuzzy
 msgid  "Keep Together"
 msgstr "ಒಟ್ಟಾಗಿ ಇರಿಸು"
 
 #: source/ui/inspection/inspection.src#RID_STR_KEEPTOGETHER_CONST.1.String.Text
-#, fuzzy
 msgid  "No"
 msgstr "ಇಲ್ಲ"
 
 #: source/ui/inspection/inspection.src#RID_STR_KEEPTOGETHER_CONST.2.String.Text
-#, fuzzy
 msgid  "Whole Group"
 msgstr "ಸಂಪೂರ್ಣ ಗುಂಪು"
 
 #: source/ui/inspection/inspection.src#RID_STR_KEEPTOGETHER_CONST.3.String.Text
-#, fuzzy
 msgid  "With First Detail"
 msgstr "ಮೊದಲಿನ ಮಾಹಿತಿಯೊಂದಿಗೆ"
 
 #: source/ui/inspection/inspection.src#RID_STR_CANGROW.String.Text
-#, fuzzy
 msgid  "Can Grow"
 msgstr "ಬೆಳೆಯಬಹುದು"
 
 #: source/ui/inspection/inspection.src#RID_STR_CANSHRINK.String.Text
-#, fuzzy
 msgid  "Can Shrink"
 msgstr "ಕುಗ್ಗಬಹುದು"
 
 #: source/ui/inspection/inspection.src#RID_STR_REPEATSECTION.String.Text
-#, fuzzy
 msgid  "Repeat Section"
 msgstr "ವಿಭಾಗವನ್ನು ಪುನರಾವರ್ತಿಸು"
 
 #: source/ui/inspection/inspection.src#RID_STR_PRINTREPEATEDVALUES.String.Text
-#, fuzzy
 msgid  "Print repeated values"
 msgstr "ಪುನರಾವರ್ತಿತ ಮೌಲ್ಯಗಳನ್ನು ಮುದ್ರಿಸು"
 
 #: source/ui/inspection/inspection.src#RID_STR_CONDITIONALPRINTEXPRESSION.String.Text
-#, fuzzy
 msgid  "Conditional Print Expression"
 msgstr "ನಿಬಂಧಾತ್ಮಕ ಮುದ್ರಣ ಎಕ್ಸ್‍ಪ್ರೆಶನ್"
 
 #: source/ui/inspection/inspection.src#RID_STR_STARTNEWCOLUMN.String.Text
-#, fuzzy
 msgid  "Start new column"
 msgstr "ಹೊಸ ಲಂಬಸಾಲನ್ನು ಆರಂಭಿಸು"
 
 #: source/ui/inspection/inspection.src#RID_STR_STARTNEWPAGE.String.Text
-#, fuzzy
 msgid  "Start new page"
 msgstr "ಹೊಸ ಪುಟವನ್ನು ಆರಂಭಿಸು"
 
 #: source/ui/inspection/inspection.src#RID_STR_RESETPAGENUMBER.String.Text
-#, fuzzy
 msgid  "Reset page number"
 msgstr "ಪುಟದ ಸಂಖ್ಯೆಯನ್ನು ಮರಳಿಹೊಂದಿಸು"
 
 #: source/ui/inspection/inspection.src#RID_STR_CHARTTYPE.String.Text
-#, fuzzy
 msgid  "Chart type"
 msgstr "ನಕ್ಷೆಯ ಬಗೆ"
 
 #: source/ui/inspection/inspection.src#RID_STR_PRINTWHENGROUPCHANGE.String.Text
-#, fuzzy
 msgid  "Print When Group Change"
 msgstr "ಗುಂಪು ಬದಲಾದಾಗ ಮುದ್ರಿಸು"
 
 #: source/ui/inspection/inspection.src#RID_STR_VISIBLE.String.Text
-#, fuzzy
 msgid  "Visible"
 msgstr "ಗೋಚರ"
 
 #: source/ui/inspection/inspection.src#RID_STR_GROUPKEEPTOGETHER.String.Text
-#, fuzzy
 msgid  "Group keep together"
 msgstr "ಗುಂಪನ್ನು ಒಟ್ಟಿಗೆ ಇರಿಸು"
 
 #: source/ui/inspection/inspection.src#RID_STR_GROUPKEEPTOGETHER_CONST.1.String.Text
-#, fuzzy
 msgid  "Per Page"
 msgstr "ಪ್ರತಿ ಪುಟಕ್ಕೆ"
 
 #: source/ui/inspection/inspection.src#RID_STR_GROUPKEEPTOGETHER_CONST.2.String.Text
-#, fuzzy
 msgid  "Per Column"
 msgstr "ಪ್ರತಿ ಲಂಬಸಾಲಿಗೆ"
 
 #: source/ui/inspection/inspection.src#RID_STR_SECTIONPAGEBREAK_CONST.1.String.Text
-#, fuzzy
 msgid  "None"
 msgstr "ಏನೂ ಇಲ್ಲ"
 
 #: source/ui/inspection/inspection.src#RID_STR_SECTIONPAGEBREAK_CONST.2.String.Text
-#, fuzzy
 msgid  "Section"
 msgstr "ವಿಭಾಗ"
 
 #: source/ui/inspection/inspection.src#RID_STR_SECTIONPAGEBREAK_CONST.3.String.Text
-#, fuzzy
 msgid  "Automatic"
 msgstr "ಸ್ವಯಂಚಾಲಿತ"
 
 #: source/ui/inspection/inspection.src#RID_STR_PAGEHEADEROPTION.String.Text
-#, fuzzy
 msgid  "Page header"
 msgstr "ಪುಟದ ಅಡಿಲೇಖ"
 
 #: source/ui/inspection/inspection.src#RID_STR_PAGEFOOTEROPTION.String.Text
-#, fuzzy
 msgid  "Page footer"
 msgstr "ಪುಟದ ಅಡಿಲೇಖ"
 
 #: source/ui/inspection/inspection.src#RID_STR_REPORTPRINTOPTION_CONST.1.String.Text
-#, fuzzy
 msgid  "All Pages"
 msgstr "ಎಲ್ಲಾ ಪುಟಗಳು"
 
 #: source/ui/inspection/inspection.src#RID_STR_REPORTPRINTOPTION_CONST.2.String.Text
-#, fuzzy
 msgid  "Not With Report Header"
 msgstr "ವರದಿ ಶಿರೋಲೇಖದೊಂದಿಗೆ ಅಲ್ಲ"
 
 #: source/ui/inspection/inspection.src#RID_STR_REPORTPRINTOPTION_CONST.3.String.Text
-#, fuzzy
 msgid  "Not With Report Footer"
 msgstr "ವರದಿ ಅಡಿಲೇಖದೊಂದಿಗೆ ಅಲ್ಲ"
 
 #: source/ui/inspection/inspection.src#RID_STR_REPORTPRINTOPTION_CONST.4.String.Text
-#, fuzzy
 msgid  "Not With Report Header/Footer"
 msgstr "ವರದಿ ಶಿರೋಲೇಖ/ಅಡಿಲೇಖದೊಂದಿಗೆ ಅಲ್ಲ"
 
 #: source/ui/inspection/inspection.src#RID_STR_DEEPTRAVERSING.String.Text
-#, fuzzy
 msgid  "Deep traversing"
 msgstr "ಆಳವಾದ ಚಲನೆ"
 
 #: source/ui/inspection/inspection.src#RID_STR_PREEVALUATED.String.Text
-#, fuzzy
 msgid  "Pre evaluation"
 msgstr "ಪರಿಶೀಲನಾ ಪೂರ್ವ"
 
 #: source/ui/inspection/inspection.src#RID_STR_POSITIONX.String.Text
-#, fuzzy
 msgid  "Position X"
 msgstr "ಸ್ಥಾನ X"
 
 #: source/ui/inspection/inspection.src#RID_STR_POSITIONY.String.Text
-#, fuzzy
 msgid  "Position Y"
 msgstr "ಸ್ಥಾನ Y"
 
 #: source/ui/inspection/inspection.src#RID_STR_WIDTH.String.Text
-#, fuzzy
 msgid  "Width"
 msgstr "ಅಗಲ"
 
 #: source/ui/inspection/inspection.src#RID_STR_HEIGHT.String.Text
-#, fuzzy
 msgid  "Height"
 msgstr "ಎತ್ತರ"
 
 #: source/ui/inspection/inspection.src#RID_STR_INITIALFORMULA.String.Text
-#, fuzzy
 msgid  "Initial value"
 msgstr "ಆರಂಭಿಕ ಮೌಲ್ಯ"
 
 #: source/ui/inspection/inspection.src#RID_STR_PRESERVEIRI.String.Text
-#, fuzzy
 msgid  "Preserve as Link"
 msgstr "ಕೊಂಡಿಯಾಗಿ ಇರಿಸಿಕೊ"
 
 #: source/ui/inspection/inspection.src#RID_STR_FORMULA.String.Text
-#, fuzzy
 msgid  "Formula"
 msgstr "ಸೂತ್ರ"
 
 #: source/ui/inspection/inspection.src#RID_STR_DATAFIELD.String.Text
-#, fuzzy
 msgid  "Data field"
 msgstr "ದತ್ತ ವರ್ಗ"
 
 #: source/ui/inspection/inspection.src#RID_STR_FONT.String.Text
-#, fuzzy
 msgid  "Font"
 msgstr "ಅಕ್ಷರಶೈಲಿ"
 
 #: source/ui/inspection/inspection.src#RID_STR_BACKCOLOR.String.Text
-#, fuzzy
 msgid  "Background color"
 msgstr "ಹಿನ್ನೆಲೆ ಬಣ್ಣ"
 
 #: source/ui/inspection/inspection.src#RID_STR_BACKTRANSPARENT.String.Text
-#, fuzzy
 msgid  "Background Transparent"
 msgstr "ಹಿನ್ನೆಲೆ ಪಾರದರ್ಶಕತೆ"
 
 #: source/ui/inspection/inspection.src#RID_STR_CONTROLBACKGROUNDTRANSPARENT.String.Text
-#, fuzzy
 msgid  "Background Transparent"
 msgstr "ಹಿನ್ನೆಲೆ ಪಾರದರ್ಶಕತೆ"
 
 #: source/ui/inspection/inspection.src#RID_STR_OVERLAP_OTHER_CONTROL.String.Text
-#, fuzzy
 msgid  "This operation is not allowed. The control overlaps with another one."
 msgstr "ಈ ಕಾರ್ಯಕ್ಕೆ ಅನುಮತಿ ಇಲ್ಲ. ಒಂದು ನಿಯಂತ್ರಣವು ಇನ್ನೊಂದರ ಮೇಲೆ ಹೇರಲ್ಪಡುತ್ತದೆ."
 
 #: source/ui/inspection/inspection.src#RID_STR_ILLEGAL_POSITION.String.Text
-#, fuzzy
 msgid  "This position can not be set. It is invalid."
 msgstr "ಈ ಸ್ಥಾನವನ್ನು ಹೊಂದಿಸಲು ಸಾಧ್ಯವಾಗಿಲ್ಲ. ಇದು ಅಮಾನ್ಯವಾಗಿದೆ."
 
 #: source/ui/inspection/inspection.src#RID_STR_SCOPE_GROUP.String.Text
-#, fuzzy
 msgid  "Group: %1"
 msgstr "ಗುಂಪು: %1"
 
 #: source/ui/inspection/inspection.src#RID_STR_FORMULALIST.String.Text
-#, fuzzy
 msgid  "Function"
 msgstr "ಕಾರ್ಯಭಾರ"
 
 #: source/ui/inspection/inspection.src#RID_STR_SCOPE.String.Text
-#, fuzzy
 msgid  "Scope"
 msgstr "ವ್ಯಾಪ್ತಿ"
 
 #: source/ui/inspection/inspection.src#RID_STR_TYPE.String.Text
-#, fuzzy
 msgid  "Data Field Type"
 msgstr "ದತ್ತಾಂಶ ವರ್ಗದ ಬಗೆ"
 
 #: source/ui/inspection/inspection.src#RID_STR_TYPE_CONST.1.String.Text
-#, fuzzy
 msgid  "Field or Formula"
 msgstr "ಕ್ಷೇತ್ರ ಅಥವ ಸೂತ್ರ"
 
 #: source/ui/inspection/inspection.src#RID_STR_TYPE_CONST.2.String.Text
-#, fuzzy
 msgid  "Function"
 msgstr "ಕಾರ್ಯಭಾರ"
 
 #: source/ui/inspection/inspection.src#RID_STR_TYPE_CONST.3.String.Text
-#, fuzzy
 msgid  "Counter"
 msgstr "ಗಣಕ"
 
 #: source/ui/inspection/inspection.src#RID_STR_TYPE_CONST.4.String.Text
-#, fuzzy
 msgid  "User defined Function"
 msgstr "ಬಳಕೆದಾರರಿಂದ ಸೂಚಿತವಾದ ಕ್ರಿಯೆ"
 
 #: source/ui/inspection/inspection.src#RID_STR_MASTERFIELDS.String.Text
-#, fuzzy
 msgid  "Link master fields"
 msgstr "ಮುಖ್ಯ ವರ್ಗಗಳಲ್ಲಿ ಸಂಪರ್ಕ ಏರ್ಪಡಿಸು"
 
 #: source/ui/inspection/inspection.src#RID_STR_DETAILFIELDS.String.Text
-#, fuzzy
 msgid  "Link slave fields"
 msgstr "ಸೇವಕ ವರ್ಗಗಳಲ್ಲಿ ಸಂಪರ್ಕ ಏರ್ಪಡಿಸು"
 
 #: source/ui/inspection/inspection.src#RID_STR_EXPLANATION.String.Text
 msgid  "Charts can be used to display detailed data about the current record of the report. To do this, you can specify which columns in the chart match which columns in the report."
-msgstr ""
+msgstr "ವರದಿಯ ಪ್ರಸಕ್ತ ದಾಖಲೆಯ ಬಗೆಗಿನ ವಿವರವಾದ ದತ್ತಾಂಶವನ್ನು ತೋರಿಸಲು ನಕ್ಷೆಗಳನ್ನು ಬಳಸಬಹುದು. ಹೀಗೆ ಮಾಡಲು ನಕ್ಷೆಯ ಯಾವ ಲಂಬಸಾಲುಗಳು ವರದಿಯ ಯಾವ ಲಂಬಸಾಲಿಗೆ ತಾಳೆಯಾಗಬೇಕು ಎಂದು ನೀವು ಸೂಚಿಸಬಹುದು."
 
 #: source/ui/inspection/inspection.src#RID_STR_DETAILLABEL.String.Text
-#, fuzzy
 msgid  "Chart"
 msgstr "ನಕ್ಷೆ"
 
 #: source/ui/inspection/inspection.src#RID_STR_MASTERLABEL.String.Text
-#, fuzzy
 msgid  "Report"
 msgstr "ವರದಿ"
 
 #: source/ui/inspection/inspection.src#RID_STR_PREVIEW_COUNT.String.Text
-#, fuzzy
 msgid  "Preview Row(s)"
 msgstr "ಅಡ್ಡಸಾಲು(ಗಳ) ಮುನ್ನೋಟ"
 
 #: source/ui/inspection/inspection.src#RID_STR_AREA.String.Text
-#, fuzzy
 msgid  "Area"
 msgstr "ಕ್ಷೇತ್ರ"
 
 #: source/ui/inspection/inspection.src#RID_STR_MIMETYPE.String.Text
-#, fuzzy
 msgid  "Report Output Format"
 msgstr "ವರದಿಯ ಫಲಿತಾಂಶದ ಆಕಾರ"
 
 #: source/ui/inspection/inspection.src#RID_STR_VERTICALALIGN.String.Text
-#, fuzzy
 msgid  "Vert. Alignment"
 msgstr "ಲಂಬ ಹೊಂದಿಕೆ"
 
 #: source/ui/inspection/inspection.src#RID_STR_VERTICAL_ALIGN_CONST.1.String.Text
-#, fuzzy
 msgid  "Top"
 msgstr "ಮೇಲೆ"
 
 #: source/ui/inspection/inspection.src#RID_STR_VERTICAL_ALIGN_CONST.2.String.Text
-#, fuzzy
 msgid  "Middle"
 msgstr "ಮಧ್ಯ"
 
 #: source/ui/inspection/inspection.src#RID_STR_VERTICAL_ALIGN_CONST.3.String.Text
-#, fuzzy
 msgid  "Bottom"
 msgstr "ಕೆಳಗೆ"
 
 #: source/ui/inspection/inspection.src#RID_STR_PARAADJUST.String.Text
-#, fuzzy
 msgid  "Horz. Alignment"
 msgstr "ಅಡ್ಡ ಹೊಂದಿಕೆ"
 
 #: source/ui/inspection/inspection.src#RID_STR_PARAADJUST_CONST.1.String.Text
-#, fuzzy
 msgid  "Left"
 msgstr "ಎಡ"
 
 #: source/ui/inspection/inspection.src#RID_STR_PARAADJUST_CONST.2.String.Text
-#, fuzzy
 msgid  "Right"
 msgstr "ಬಲ"
 
 #: source/ui/inspection/inspection.src#RID_STR_PARAADJUST_CONST.3.String.Text
-#, fuzzy
 msgid  "Block"
 msgstr "ಬ್ಲಾಕ್"
 
 #: source/ui/inspection/inspection.src#RID_STR_PARAADJUST_CONST.4.String.Text
-#, fuzzy
 msgid  "Center"
 msgstr "ಮಧ್ಯ"
 
 #: source/ui/inspection/inspection.src#RID_STR_F_COUNTER.String.Text
-#, fuzzy
 msgid  "Counter"
 msgstr "ಗಣಕ"
 
 #: source/ui/inspection/inspection.src#RID_STR_F_ACCUMULATION.String.Text
-#, fuzzy
 msgid  "Accumulation"
 msgstr "ಒಗ್ಗೂಡಿಕೆ"
 
 #: source/ui/inspection/inspection.src#RID_STR_F_MINIMUM.String.Text
-#, fuzzy
 msgid  "Minimum"
 msgstr "ಕನಿಷ್ಟ"
 
 #: source/ui/inspection/inspection.src#RID_STR_F_MAXIMUM.String.Text
-#, fuzzy
 msgid  "Maximum"
 msgstr "ಗರಿಷ್ಟ"
 
 #: source/ui/report/report.src#RID_STR_BRWTITLE_PROPERTIES.String.Text
-#, fuzzy
 msgid  "Properties: "
 msgstr "ಗುಣಗಳು: "
 
 #: source/ui/report/report.src#RID_STR_BRWTITLE_NO_PROPERTIES.String.Text
-#, fuzzy
 msgid  "No Control marked"
 msgstr "ಯಾವ ನಿಯಂತ್ರಣವನ್ನೂ ಗುರುತು ಹಾಕಿಲ್ಲ"
 
 #: source/ui/report/report.src#RID_STR_BRWTITLE_MULTISELECT.String.Text
-#, fuzzy
 msgid  "Multiselection"
 msgstr "ಬಹುಆಯ್ಕೆ"
 
 #: source/ui/report/report.src#RID_STR_PROPTITLE_IMAGECONTROL.String.Text
-#, fuzzy
 msgid  "Image Control"
 msgstr "ಬಿಂಬದ ನಿಯಂತ್ರಣ"
 
 #: source/ui/report/report.src#RID_STR_PROPTITLE_FIXEDTEXT.String.Text
-#, fuzzy
 msgid  "Label field"
 msgstr "ಗುರುತುಪಟ್ಟಿ ವರ್ಗ"
 
 #: source/ui/report/report.src#RID_STR_PROPTITLE_FIXEDLINE.String.Text
-#, fuzzy
 msgid  "Line"
 msgstr "ಸಾಲು"
 
 #: source/ui/report/report.src#RID_STR_PROPTITLE_FORMATTED.String.Text
-#, fuzzy
 msgid  "Formatted Field"
 msgstr "ಫಾರ್ಮಾಟ್‌ ಮಾಡಲಾದ ವರ್ಗ"
 
 #: source/ui/report/report.src#RID_STR_PROPTITLE_SHAPE.String.Text
-#, fuzzy
 msgid  "Shape"
 msgstr "ಆಕಾರ"
 
 #: source/ui/report/report.src#RID_STR_PROPTITLE_REPORT.String.Text
-#, fuzzy
 msgid  "Report"
 msgstr "ವರದಿ"
 
 #: source/ui/report/report.src#RID_STR_PROPTITLE_SECTION.String.Text
-#, fuzzy
 msgid  "Section"
 msgstr "ವಿಭಾಗ"
 
 #: source/ui/report/report.src#RID_STR_PROPTITLE_FUNCTION.String.Text
-#, fuzzy
 msgid  "Function"
 msgstr "ಕಾರ್ಯಭಾರ"
 
 #: source/ui/report/report.src#RID_STR_PROPTITLE_GROUP.String.Text
-#, fuzzy
 msgid  "Group"
 msgstr "ಗುಂಪು"
 
 #: source/ui/report/report.src#STR_SHOW_RULER.String.Text
-#, fuzzy
 msgid  "Show ruler"
 msgstr "ಮಾಪಕವನ್ನು ತೋರಿಸು"
 
 #: source/ui/report/report.src#STR_SHOW_GRID.String.Text
-#, fuzzy
 msgid  "Show grid"
 msgstr "ಚೌಕಜಾಲವನ್ನು ತೋರಿಸು"
 
 #: source/ui/report/report.src#RID_STR_UNDO_CHANGEPOSITION.String.Text
-#, fuzzy
 msgid  "Change Object"
 msgstr "ವಸ್ತುವನ್ನ ಬದಲಿಸಿ"
 
 #: source/ui/report/report.src#RID_STR_UNDO_MOVE_GROUP.String.Text
-#, fuzzy
 msgid  "Move Group(s)"
 msgstr "ಗುಂಪ(ಗಳ)ನ್ನು ಜರುಗಿಸಿ"
 
 #: source/ui/report/report.src#RID_STR_UNDO_CONDITIONAL_FORMATTING.String.Text
-#, fuzzy
 msgid  "Conditional Formatting"
 msgstr "ನಿಬಂಧನೆಯ ಫಾರ್ಮಾಟ್ ಪದ್ಧತಿ"
 
 #: source/ui/report/report.src#RID_STR_UNDO_REMOVE_REPORTHEADERFOOTER.String.Text
-#, fuzzy
 msgid  "Remove report header / report footer"
 msgstr "ವರದಿಯ ಶಿರೊಲೇಖ / ವರದಿಯ ಅಡಿಲೇಖವನ್ನು ತಗೆದು ಹಾಕು"
 
 #: source/ui/report/report.src#RID_STR_UNDO_ADD_REPORTHEADERFOOTER.String.Text
-#, fuzzy
 msgid  "Add report header / report footer"
 msgstr "ವರದಿಯ ಶಿರೊಲೇಖ / ವರದಿಯ ಅಡಿಲೇಖವನ್ನು ಸೇರಿಸು"
 
 #: source/ui/report/report.src#RID_STR_UNDO_REMOVE_PAGEHEADERFOOTER.String.Text
-#, fuzzy
 msgid  "Remove page header / page footer"
 msgstr "ಹಾಳೆಯ ಶಿರೊಲೇಖ / ಹಾಳೆಯ ಅಡಿಲೇಖವನ್ನು ಸೇರಿಸು"
 
 #: source/ui/report/report.src#RID_STR_UNDO_ADD_PAGEHEADERFOOTER.String.Text
-#, fuzzy
 msgid  "Add page header / page footer"
 msgstr "ಹಾಳೆಯ ಶಿರೊಲೇಖ / ಹಾಳೆಯ ಅಡಿಲೇಖವನ್ನು ತೆಗೆದು ಹಾಕು"
 
 #: source/ui/report/report.src#RID_STR_UNDO_PROPERTY.String.Text
-#, fuzzy
 msgid  "Change property '#'"
 msgstr "ಗುಣ '#' ಅನ್ನು ಬದಲಿಸು"
 
 #: source/ui/report/report.src#RID_STR_UNDO_ADD_GROUP_HEADER.String.Text
-#, fuzzy
 msgid  "Add group header "
 msgstr "ಗುಂಪು ಶಿರೊಲೇಖವನ್ನು ಸೇರಿಸು "
 
 #: source/ui/report/report.src#RID_STR_UNDO_REMOVE_GROUP_HEADER.String.Text
-#, fuzzy
 msgid  "Remove group header "
 msgstr "ಗುಂಪು ಶಿರೊಲೇಖವನ್ನು ತೆಗೆದು ಹಾಕು "
 
 #: source/ui/report/report.src#RID_STR_UNDO_ADD_GROUP_FOOTER.String.Text
-#, fuzzy
 msgid  "Add group footer "
 msgstr "ಗುಂಪು ಅಡಿಲೇಖವನ್ನು ಸೇರಿಸು"
 
 #: source/ui/report/report.src#RID_STR_UNDO_REMOVE_GROUP_FOOTER.String.Text
-#, fuzzy
 msgid  "Remove group footer "
 msgstr "ಗುಂಪು ಅಡಿಲೇಖವನ್ನು ತೆಗೆದು ಹಾಕು"
 
 #: source/ui/report/report.src#RID_STR_UNDO_ADDFUNCTION.String.Text
-#, fuzzy
 msgid  "Add function"
 msgstr "ಕಾರ್ಯವನ್ನು ಸೇರಿಸು"
 
 #: source/ui/report/report.src#RID_STR_UNDO_DELETEFUNCTION.String.Text
-#, fuzzy
 msgid  "Delete function"
 msgstr "ಕಾರ್ಯವನ್ನು ತೆಗೆದುಹಾಕು"
 
 #: source/ui/report/report.src#RID_STR_DESIGN_VIEW.String.Text
-#, fuzzy
 msgid  "Design"
 msgstr "ವಿನ್ಯಾಸ"
 
 #: source/ui/report/report.src#RID_STR_PREVIEW_VIEW.String.Text
-#, fuzzy
 msgid  "Preview"
 msgstr "ಮುನ್ನೋಟ"
 
 #: source/ui/report/report.src#STR_RPT_TITLE.String.Text
-#, fuzzy
 msgid  "Report #"
 msgstr "ವರದಿ #"
 
 #: source/ui/report/report.src#STR_RPT_LABEL.String.Text
-#, fuzzy
 msgid  "~Report name"
 msgstr "ವರದಿಯ ಹೆಸರು(~R)"
 
 #: source/ui/report/report.src#RID_STR_UNDO_REMOVE_GROUP.String.Text
-#, fuzzy
 msgid  "Delete Group"
 msgstr "ಗುಂಪನ್ನು ತೆಗೆ"
 
 #: source/ui/report/report.src#RID_STR_UNDO_APPEND_GROUP.String.Text
-#, fuzzy
 msgid  "Add Group"
 msgstr "ಗುಂಪನ್ನ ಸೇರಿಸು"
 
 #: source/ui/report/report.src#RID_STR_UNDO_REMOVE_SELECTION.String.Text
-#, fuzzy
 msgid  "Delete Selection"
 msgstr "ಆಯ್ಕೆಯನ್ನು ತೆಗೆ"
 
 #: source/ui/report/report.src#RID_STR_UNDO_REMOVE_FUNCTION.String.Text
-#, fuzzy
 msgid  "Delete Function"
 msgstr "ಕಾರ್ಯವನ್ನು ತೆಗೆ"
 
 #: source/ui/report/report.src#RID_STR_UNDO_CHANGE_SIZE.String.Text
-#, fuzzy
 msgid  "Change Size"
 msgstr "ಗಾತ್ರವನ್ನು ಬದಲಿಸು"
 
 #: source/ui/report/report.src#RID_STR_UNDO_PASTE.String.Text
-#, fuzzy
 msgid  "Paste"
 msgstr "ಅಂಟಿಸು"
 
 #: source/ui/report/report.src#RID_STR_UNDO_INSERT_CONTROL.String.Text
-#, fuzzy
 msgid  "Insert Control"
 msgstr "ನಿಯಂತ್ರಣವನ್ನು ಸೇರ್ಪಡಿಸಿ"
 
 #: source/ui/report/report.src#RID_STR_UNDO_DELETE_CONTROL.String.Text
-#, fuzzy
 msgid  "Delete Control"
 msgstr "ನಿಯಂತ್ರಣವನ್ನು ತೆಗೆಯಿರಿ"
 
 #: source/ui/report/report.src#RID_STR_UNDO_GROUP.String.Text
-#, fuzzy
 msgid  "Insert Group"
 msgstr "ಗುಂಪನ್ನು ಅಳವಡಿಸು"
 
 #: source/ui/report/report.src#RID_STR_UNDO_UNGROUP.String.Text
-#, fuzzy
 msgid  "Delete Group"
 msgstr "ಗುಂಪನ್ನು ತೆಗೆ"
 
 #: source/ui/report/report.src#RID_STR_GROUPHEADER.String.Text
-#, fuzzy
 msgid  "GroupHeader"
 msgstr "ಗುಂಪುಶಿರೊಲೇಖ"
 
 #: source/ui/report/report.src#RID_STR_GROUPFOOTER.String.Text
-#, fuzzy
 msgid  "GroupFooter"
 msgstr "ಗುಂಪುಅಡಿಲೇಖ"
 
 #: source/ui/report/report.src#RID_MENU_REPORT.SID_SORTINGANDGROUPING.MenuItem.Text
-#, fuzzy
 msgid  "Sorting and Grouping..."
 msgstr "ವಿಂಗಡಣೆ ಹಾಗು ವರ್ಗೀಕರಣ..."
 
 #: source/ui/report/report.src#RID_MENU_REPORT.SID_ATTR_CHAR_COLOR_BACKGROUND.MenuItem.Text
-#, fuzzy
 msgid  "Background Color..."
 msgstr "ಹಿನ್ನೆಲೆ ಬಣ್ಣ..."
 
 #: source/ui/report/report.src#RID_MENU_REPORT.SID_RULER.MenuItem.Text
-#, fuzzy
 msgid  "Ruler..."
 msgstr "ಮಾಪಕ..."
 
 #: source/ui/report/report.src#RID_MENU_REPORT.SID_GRID_VISIBLE.MenuItem.Text
-#, fuzzy
 msgid  "Grid..."
 msgstr "ಚೌಕಜಾಲ..."
 
 #: source/ui/report/report.src#RID_MENU_REPORT.SID_ARRANGEMENU.MenuItem.Text
-#, fuzzy
 msgid  "~Arrange"
 msgstr "ಹೊಂದಿಸು(~A)"
 
 #: source/ui/report/report.src#RID_MENU_REPORT.SID_ARRANGEMENU.SID_FRAME_UP.MenuItem.Text
-#, fuzzy
 msgid  "Bring ~Forward"
 msgstr "ಮುಂದಕ್ಕೆ ಕಳುಹಿಸು(~F)"
 
 #: source/ui/report/report.src#RID_MENU_REPORT.SID_ARRANGEMENU.SID_FRAME_DOWN.MenuItem.Text
-#, fuzzy
 msgid  "Send Back~ward"
 msgstr "ಹಿಂದಕ್ಕೆ ಕಳುಹಿಸು(~w)"
 
 #: source/ui/report/report.src#RID_MENU_REPORT.SID_OBJECT_RESIZING.MenuItem.Text
-#, fuzzy
 msgid  "~Object Resizing"
 msgstr "ವಸ್ತುವಿನ ಗಾತ್ರ ಬದಲಿಕೆ(~O)"
 
 #: source/ui/report/report.src#RID_MENU_REPORT.SID_OBJECT_RESIZING.SID_OBJECT_SMALLESTWIDTH.MenuItem.Text
-#, fuzzy
 msgid  "~Fit to smallest width"
 msgstr "ಅತಿ ಚಿಕ್ಕ ಅಗಲಕ್ಕೆ ಸರಿಹೊಂದಿಸು(~F)"
 
 #: source/ui/report/report.src#RID_MENU_REPORT.SID_OBJECT_RESIZING.SID_OBJECT_GREATESTWIDTH.MenuItem.Text
-#, fuzzy
 msgid  "~Fit to greatest width"
 msgstr "ಅತಿ ದೊಡ್ಡ ಅಗಲಕ್ಕೆ ಸರಿಹೊಂದಿಸು(~F)"
 
 #: source/ui/report/report.src#RID_MENU_REPORT.SID_OBJECT_RESIZING.SID_OBJECT_SMALLESTHEIGHT.MenuItem.Text
-#, fuzzy
 msgid  "~Fit to smallest height"
 msgstr "ಅತಿ ಚಿಕ್ಕ ಎತ್ತರಕ್ಕೆ ಸರಿಹೊಂದಿಸು(~F)"
 
 #: source/ui/report/report.src#RID_MENU_REPORT.SID_OBJECT_RESIZING.SID_OBJECT_GREATESTHEIGHT.MenuItem.Text
-#, fuzzy
 msgid  "~Fit to greatest height"
 msgstr "ಅತಿ ದೊಡ್ಡ ಎತ್ತರಕ್ಕೆ ಸರಿಹೊಂದಿಸು(~F)"
 
 #: source/ui/report/report.src#RID_MENU_REPORT.SID_SECTION_SHRINK_MENU.MenuItem.Text
-#, fuzzy
 msgid  "Section"
 msgstr "ವಿಭಾಗ"
 
 #: source/ui/report/report.src#RID_MENU_REPORT.SID_SECTION_SHRINK_MENU.SID_SECTION_SHRINK.MenuItem.Text
-#, fuzzy
 msgid  "Shrink"
 msgstr "ಕುಗ್ಗಿಸು"
 
 #: source/ui/report/report.src#RID_MENU_REPORT.SID_SECTION_SHRINK_MENU.SID_SECTION_SHRINK_TOP.MenuItem.Text
-#, fuzzy
 msgid  "Shrink from top"
 msgstr "ಮೇಲ್ಭಾಗದಿಂದ ಕುಗ್ಗಿಸು"
 
 #: source/ui/report/report.src#RID_MENU_REPORT.SID_SECTION_SHRINK_MENU.SID_SECTION_SHRINK_BOTTOM.MenuItem.Text
-#, fuzzy
 msgid  "Shrink from bottom"
 msgstr "ಕೆಳಭಾಗದಿಂದ ಕುಗ್ಗಿಸು"
 
 #: source/ui/report/report.src#RID_MENU_REPORT.SID_DISTRIBUTION.MenuItem.Text
-#, fuzzy
 msgid  "Distribution..."
 msgstr "ವಿತರಣೆ..."
 
 #: source/ui/report/report.src#RID_MENU_REPORT.SID_SHOW_PROPERTYBROWSER.MenuItem.Text
-#, fuzzy
 msgid  "Properties..."
 msgstr "ಗುಣಗಳು..."
 
 #: source/ui/report/report.src#RID_STR_FIELDSELECTION.String.Text
-#, fuzzy
 msgid  "Add field:"
 msgstr "ವರ್ಗ ಸೇರಿಸು:"
 
 #: source/ui/report/report.src#RID_STR_FILTER.String.Text
-#, fuzzy
 msgid  "Filter"
 msgstr "ಶೋಧಕ"
 
 #: source/ui/report/report.src#RID_APP_TITLE.String.Text
-#, fuzzy
 msgid  " - %PRODUCTNAME Base Report"
 msgstr "- %PRODUCTNAME ಮೂಲ ವರದಿ"
 
 #: source/ui/report/report.src#RID_APP_NEW_DOC.String.Text
-#, fuzzy
 msgid  "Untitled"
 msgstr "ಶೀರ್ಷಿಕೆರಹಿತ"
 
 #: source/ui/report/report.src#RID_STR_UNDO_ALIGNMENT.String.Text
-#, fuzzy
 msgid  "Change Alignment"
 msgstr "ಹೊಂದಿಕೆಯನ್ನು ಬದಲಾಯಿಸು"
 
 #: source/ui/report/report.src#RID_STR_HEADER.String.Text
-#, fuzzy
 msgid  "# Header"
 msgstr "# ಶಿರೊಲೇಖ"
 
 #: source/ui/report/report.src#RID_STR_FOOTER.String.Text
-#, fuzzy
 msgid  "# Footer"
 msgstr "# ಅಡಿಲೇಖ"
 
 #: source/ui/report/report.src#RID_STR_IMPORT_GRAPHIC.String.Text
-#, fuzzy
 msgid  "Insert graphics"
 msgstr "ಚಿತ್ರಗಳನ್ನು ಅಳವಡಿಸು"
 
 #: source/ui/report/report.src#RID_STR_DELETE.String.Text
-#, fuzzy
 msgid  "Delete"
 msgstr "ಅಳಿಸು"
 
 #: source/ui/report/report.src#RID_STR_FUNCTION.String.Text
-#, fuzzy
 msgid  "Function"
 msgstr "ಕಾರ್ಯಭಾರ"
 
 #: source/ui/report/report.src#RID_STR_COULD_NOT_CREATE_REPORT.String.Text
-#, fuzzy
 msgid  "An error occurred while creating the report."
 msgstr "ವರದಿಯನ್ನು ರಚಿಸುವಲ್ಲಿ ದೋಷ ಉಂಟಾಗಿದೆ."
 
 #: source/ui/report/report.src#RID_STR_CAUGHT_FOREIGN_EXCEPTION.String.Text
-#, fuzzy
 msgid  "An exception of type $type$ was caught."
 msgstr "$type$ ಬಗೆಯ ಒಂದು ಅಪವಾದವು ತಲೆದೋರಿದೆ."
 
 #: source/ui/report/report.src#RID_STR_UNDO_CHANGEFONT.String.Text
-#, fuzzy
 msgid  "Change font"
 msgstr "ಅಕ್ಷರಶೈಲಿಯನ್ನು ಬದಲಾಯಿಸು"
 
 #: source/ui/report/report.src#RID_STR_UNDO_CHANGEPAGE.String.Text
-#, fuzzy
 msgid  "Change page attributes"
 msgstr "ಹಾಳೆಯ ಲಕ್ಷಣಗಳನ್ನು ಬದಲಿಸು"
 
 #: source/ui/report/report.src#RID_STR_PAGEHEADERFOOTER_INSERT.String.Text
-#, fuzzy
 msgid  "Insert Page Header/Footer"
 msgstr "ಹಾಳೆಯ ಶಿರೊಲೇಖ / ಅಡಿಲೇಖವನ್ನು ಸೇರಿಸು"
 
 #: source/ui/report/report.src#RID_STR_PAGEHEADERFOOTER_DELETE.String.Text
-#, fuzzy
 msgid  "Delete Page Header/Footer"
 msgstr "ಹಾಳೆಯ ಶಿರೊಲೇಖ / ಅಡಿಲೇಖವನ್ನು ತೆಗೆದುಹಾಕು"
 
 #: source/ui/report/report.src#RID_STR_COLUMNHEADERFOOTER_INSERT.String.Text
-#, fuzzy
 msgid  "Insert Column Header/Footer"
 msgstr "ಲಂಬಸಾಲಿನ ಶಿರೊಲೇಖ / ಅಡಿಲೇಖವನ್ನು ಸೇರಿಸು"
 
 #: source/ui/report/report.src#RID_STR_COLUMNHEADERFOOTER_DELETE.String.Text
-#, fuzzy
 msgid  "Delete Column Header/Footer"
 msgstr "ಲಂಬಸಾಲಿನ ಶಿರೊಲೇಖ / ಅಡಿಲೇಖವನ್ನು ತೆಗೆದುಹಾಕು"
 
 #: source/ui/report/report.src#RID_STR_REPORTHEADERFOOTER_INSERT.String.Text
-#, fuzzy
 msgid  "Insert Report Header/Footer"
 msgstr "ವರದಿಯ ಶಿರೊಲೇಖ / ಅಡಿಲೇಖವನ್ನು ಸೇರಿಸು"
 
 #: source/ui/report/report.src#RID_STR_REPORTHEADERFOOTER_DELETE.String.Text
-#, fuzzy
 msgid  "Delete Report Header/Footer"
 msgstr "ವರದಿಯ ಶಿರೊಲೇಖ / ಅಡಿಲೇಖವನ್ನು ತೆಗೆದುಹಾಕು"
 
 #: source/ui/report/report.src#RID_ERR_NO_COMMAND.String.Text
 msgid  "The report can not be executed unless it is bound to content."
-msgstr ""
+msgstr "ವರದಿಯು ಅದರ ವಿಷಯಕ್ಕೆ ಬದ್ಧವಾಗಿರದೆ ಹೋದಲ್ಲಿ ಅದನ್ನು ಕಾರ್ಯಗತಗೊಳಿಸಲು ಸಾಧ್ಯವಿಲ್ಲ."
 
 #: source/ui/report/report.src#RID_ERR_NO_OBJECTS.String.Text
 msgid  "The report can not be executed unless at least one object has been inserted."
-msgstr ""
+msgstr "ವರದಿಗೆ ಕನಿಷ್ಟ ಒಂದು ವಸ್ತುವನ್ನು ಸೇರಿಸದೆ ಹೋದಲ್ಲಿ ಅದನ್ನು ಕಾರ್ಯಗತಗೊಳಿಸಲು ಸಾಧ್ಯವಿಲ್ಲ."
 
 #: source/ui/report/report.src#RID_STR_UNDO_SHRINK.String.Text
-#, fuzzy
 msgid  "Shrink Section"
 msgstr "ವಿಭಾಗವನ್ನು ಕುಗ್ಗಿಸು"
 
-#: source/ui/report/report.src#RID_STR_INSERT.String.Text
-#, fuzzy
-msgid  "Insert"
-msgstr "ಅಳವಡಿಸು"
-
 #: source/ui/report/report.src#RID_STR_DETAIL.String.Text
-#, fuzzy
 msgid  "Detail"
 msgstr "ವಿವರ"
 
 #: source/ui/report/report.src#RID_STR_PAGE_HEADER.String.Text
-#, fuzzy
 msgid  "Page Header"
 msgstr "ಪುಟದ ಶಿರೊಲೇಖ"
 
 #: source/ui/report/report.src#RID_STR_PAGE_FOOTER.String.Text
-#, fuzzy
 msgid  "Page Footer"
 msgstr "ಪುಟದ ಅಡಿಲೇಖ"
 
 #: source/ui/report/report.src#RID_STR_REPORT_HEADER.String.Text
-#, fuzzy
 msgid  "Report Header"
 msgstr "ವರದಿಯ ಶಿರೊಲೇಖ"
 
 #: source/ui/report/report.src#RID_STR_REPORT_FOOTER.String.Text
-#, fuzzy
 msgid  "Report Footer"
 msgstr "ವರದಿಯ ಅಡಿಲೇಖ"
+
+#: source/ui/report/report.src#RID_STR_INSERT.String.Text
+msgid  "Insert"
+msgstr "ಅಳವಡಿಸು"

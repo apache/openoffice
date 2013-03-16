@@ -73,7 +73,7 @@ msgstr "ओळख"
 
 #: source/minimizer/registry/data/org/openoffice/Office/extension/SunPresentationMinimizer.xcu#.SunPresentationMinimizer.Strings.STR_INTRODUCTION_T
 msgid  "The @MINIMIZEREXTENSIONPRODUCTNAME@ is used to reduce the file size of the current presentation. Images will be compressed and data, that is no longer needed, will be removed. At the last step of the wizard you can choose to apply the changes to the current presentation or to create an optimized new version of the presentation."
-msgstr ""
+msgstr "Oracle Presentation Minimizer वर्तमान प्रस्तुतिचे फाइल आकार कमी करण्याकरीता वापरले जाते. प्रतिमा संकुचीत केली जाईल व अनावश्यक माहिती, काढूण टाकली जाईल. सहाय्यकाची शेवटची पद्धत म्हणजे बदल वर्तमान प्रस्तुतिकरीता लागू करण्यासाठी तुम्ही निवड करू शकता किंवा प्रस्तुतिची अनुकूल नवीन आवृत्ती बनवू शकता."
 
 #: source/minimizer/registry/data/org/openoffice/Office/extension/SunPresentationMinimizer.xcu#.SunPresentationMinimizer.Strings.STR_CHOSE_SETTINGS
 msgid  "~Choose settings for @MINIMIZEREXTENSIONPRODUCTNAME@"
@@ -153,11 +153,11 @@ msgstr "OpenDocument स्वरूप वरील आधारीत नस�
 
 #: source/minimizer/registry/data/org/openoffice/Office/extension/SunPresentationMinimizer.xcu#.SunPresentationMinimizer.Strings.STR_OLE_OBJECTS_DESC
 msgid  "Object Linking and Embedding (OLE) is a technology that allows embedding and linking to documents and other objects. The current presentation contains OLE objects."
-msgstr ""
+msgstr "Object Linking and Embedding (OLE) तंत्रज्ञाण दस्तऐवज व इतर ऑबजेक्टच्या एम्बेडींग व लिंकींग करीता परवानगी देते. वर्तमान प्रस्तुती अंतर्गत OLE ऑबजेक्टस् समाविष्टीत आहे."
 
 #: source/minimizer/registry/data/org/openoffice/Office/extension/SunPresentationMinimizer.xcu#.SunPresentationMinimizer.Strings.STR_NO_OLE_OBJECTS_DESC
 msgid  "Object Linking and Embedding (OLE) is a technology that allows embedding and linking to documents and other objects. The current presentation contains no OLE objects."
-msgstr ""
+msgstr "Object Linking and Embedding (OLE) तंत्रज्ञाण दस्तऐवज व इतर ऑबजेक्टच्या एम्बेडींग व लिंकींग करीता परवानगी देते. वर्तमान प्रस्तुती अंतर्गत OLE ऑबजेक्ट समाविष्टीत नाही."
 
 #: source/minimizer/registry/data/org/openoffice/Office/extension/SunPresentationMinimizer.xcu#.SunPresentationMinimizer.Strings.STR_SLIDES
 msgid  "Slides"
@@ -225,7 +225,7 @@ msgstr "%SLIDES स्लाइडस् नष्ट करा."
 
 #: source/minimizer/registry/data/org/openoffice/Office/extension/SunPresentationMinimizer.xcu#.SunPresentationMinimizer.Strings.STR_OPTIMIZE_IMAGES
 msgid  "Optimize %IMAGES graphics to %QUALITY% JPEG quality at %RESOLUTION DPI."
-msgstr ""
+msgstr "%IMAGES चित्रलेख यांना %QUALITY% JPEG दर्जाशी %RESOLUTION DPI यानुरूप अनुकूल करा."
 
 #: source/minimizer/registry/data/org/openoffice/Office/extension/SunPresentationMinimizer.xcu#.SunPresentationMinimizer.Strings.STR_CREATE_REPLACEMENT
 msgid  "Create replacement graphics for %OLE objects."
@@ -253,7 +253,7 @@ msgstr "पूर्वनिर्धारीत सत्र"
 
 #: source/minimizer/registry/data/org/openoffice/Office/extension/SunPresentationMinimizer.xcu#.SunPresentationMinimizer.Strings.STR_MODIFY_WARNING
 msgid  "The optimization will modify the current document. Do you want to continue?"
-msgstr ""
+msgstr "अनुकूलता वर्तमान दस्तऐवज संपादीत करण्यास मदत करेल. तुम्हाला नक्की पुढे जायचे?"
 
 #: source/minimizer/registry/data/org/openoffice/Office/extension/SunPresentationMinimizer.xcu#.SunPresentationMinimizer.Strings.STR_YES
 msgid  "~Yes"
@@ -265,19 +265,19 @@ msgstr "ठीक आहे"
 
 #: source/minimizer/registry/data/org/openoffice/Office/extension/SunPresentationMinimizer.xcu#.SunPresentationMinimizer.Strings.STR_INFO_1
 msgid  "The @MINIMIZEREXTENSIONPRODUCTNAME@ has successfully updated the presentation '%TITLE'. The file size has changed from %OLDFILESIZE MB to %NEWFILESIZE MB."
-msgstr ""
+msgstr "%EXTENSIONNAME ने यशस्वीरित्या प्रस्तुति '%TITLE' अद्ययावत केले. फाइल आकारात %OLDFILESIZE MB पासून %NEWFILESIZE MB यानुरूप बदलाव आढळला."
 
 #: source/minimizer/registry/data/org/openoffice/Office/extension/SunPresentationMinimizer.xcu#.SunPresentationMinimizer.Strings.STR_INFO_2
 msgid  "The @MINIMIZEREXTENSIONPRODUCTNAME@ has successfully updated the presentation '%TITLE'. The file size has changed from %OLDFILESIZE MB to approximated %NEWFILESIZE MB."
-msgstr ""
+msgstr "%EXTENSIONNAME ने यशस्वीरित्या प्रस्तुति '%TITLE' अद्ययावत केले. फाइल आकारात %OLDFILESIZE MB पासून अंदाजे %NEWFILESIZE MB असा बदलाव आढळला."
 
 #: source/minimizer/registry/data/org/openoffice/Office/extension/SunPresentationMinimizer.xcu#.SunPresentationMinimizer.Strings.STR_INFO_3
 msgid  "The @MINIMIZEREXTENSIONPRODUCTNAME@ has successfully updated the presentation '%TITLE'. The file size has changed to %NEWFILESIZE MB."
-msgstr ""
+msgstr "%EXTENSIONNAME ने यशस्वीरित्या प्रस्तुति '%TITLE' अद्ययावत केले. फाइल आकारात %NEWFILESIZE MB असा बदलाव आढळला."
 
 #: source/minimizer/registry/data/org/openoffice/Office/extension/SunPresentationMinimizer.xcu#.SunPresentationMinimizer.Strings.STR_INFO_4
 msgid  "The @MINIMIZEREXTENSIONPRODUCTNAME@ has successfully updated the presentation '%TITLE'. The file size has changed to approximated %NEWFILESIZE MB."
-msgstr ""
+msgstr "%EXTENSIONNAME ने यशस्वीरित्या प्रस्तुति '%TITLE' अद्ययावत केले. फाइल आकारात अंदाजे %NEWFILESIZE MB असा बदलाव आढळला."
 
 #: source/minimizer/registry/data/org/openoffice/Office/extension/SunPresentationMinimizer.xcu#.SunPresentationMinimizer.Strings.STR_DUPLICATING_PRESENTATION
 msgid  "Duplicating presentation..."
@@ -329,7 +329,7 @@ msgstr "Oracle प्रेसेंटर कंसोल कळफलक श�
 
 #: source/presenter/help/en-US/com.sun.PresenterScreen/presenter.xhp#par_id0921201912165656
 msgid  "When running a slide show using the @PRESENTEREXTENSIONPRODUCTNAME@, you can use the following keys:"
-msgstr ""
+msgstr "Oracle प्रेसेंटर कंसोलचा वापर करून स्लाइड चालवतेवेळी, तुम्ही खालील किजचा वापर करू शकता:"
 
 #: source/presenter/help/en-US/com.sun.PresenterScreen/presenter.xhp#par_id0921200901104028
 msgid  "Action"
@@ -345,7 +345,7 @@ msgstr "पुढची स्लाइड, किंवा पुढचा प�
 
 #: source/presenter/help/en-US/com.sun.PresenterScreen/presenter.xhp#par_id0921200901104120
 msgid  "Left click, right arrow, down arrow, spacebar, page down, enter, return, 'N'"
-msgstr ""
+msgstr "डावी क्लिक, उजवा बाण, खालचा बाण, स्पेसबार, पेड डाउन, एंटर, रिटर्न, 'N'"
 
 #: source/presenter/help/en-US/com.sun.PresenterScreen/presenter.xhp#par_id0921200901104165
 msgid  "Previous slide, or previous effect"
@@ -505,7 +505,7 @@ msgstr "बंद करा"
 
 #: source/presenter/registry/data/org/openoffice/Office/extension/PresenterScreen.xcu#..PresenterScreen.PresenterScreenSettings.HelpView.HelpStrings.a.Left
 msgid  "Left click, right or down arrow, spacebar, page down, enter, return, 'N'"
-msgstr ""
+msgstr "डावा क्लिक, उजवा किंवा खालचा बाण, स्पेसबार,  खालून  पाने  बघणे, परत या, 'N'"
 
 #: source/presenter/registry/data/org/openoffice/Office/extension/PresenterScreen.xcu#..PresenterScreen.PresenterScreenSettings.HelpView.HelpStrings.a.Right
 msgid  "Next slide, or next effect"
@@ -693,7 +693,7 @@ msgstr "चालू स्लाइड (%SLIDE_COUNT% चे %CURRENT_SLIDE_NUM
 
 #: source/presenter/registry/data/org/openoffice/Office/extension/PresenterScreen.xcu#..PresenterScreen.Presenter.Views.CurrentSlidePreview.AccessibleTitle
 msgid  "Current Slide, %CURRENT_SLIDE_NAME%, %CURRENT_SLIDE_NUMBER% of %SLIDE_COUNT%"
-msgstr ""
+msgstr "सध्याची स्लाइड, %CURRENT_SLIDE_NAME%, %SLIDE_COUNT% पैकी %CURRENT_SLIDE_NUMBER%"
 
 #: source/presenter/registry/data/org/openoffice/Office/extension/PresenterScreen.xcu#..PresenterScreen.Presenter.Views.CurrentSlidePreview.Strings.ClickToExitPresentationText.String
 msgid  "Click to exit presentation..."
@@ -713,7 +713,7 @@ msgstr "टिपां"
 
 #: source/presenter/registry/data/org/openoffice/Office/extension/PresenterScreen.xcu#..PresenterScreen.Presenter.Views.SlideSorter.AccessibleTitle
 msgid  "Slide Overview, %CURRENT_SLIDE_NAME%, %CURRENT_SLIDE_NUMBER% of %SLIDE_COUNT%"
-msgstr ""
+msgstr "स्लाइड पूर्वदृष्य, %CURRENT_SLIDE_NAME%, %SLIDE_COUNT% %CURRENT_SLIDE_NUMBER%"
 
 #: source/presenter/registry/data/org/openoffice/Office/extension/PresenterScreen.xcu#..PresenterScreen.Presenter.Views.HelpView.Title
 msgid  "Help"

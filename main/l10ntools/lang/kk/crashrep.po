@@ -45,7 +45,7 @@ msgstr ""
 
 #: source/all/crashrep.ulf#%WELCOME_BODY2%
 msgid  "It's easy - just send the report without any further effort on your part by clicking 'Send' in the next dialog, or you can briefly describe how the error occurred and then click 'Send'. If you want to see the report, click the 'Show Report' button. No data will be sent if you click 'Do Not Send'.\n\n"
-msgstr ""
+msgstr "Бұл оңай -  келесi сұхбатта есептi, немесе 'Жiберу' батырмасын шертiп  қысқаша қалай қате пайда болғанын жазып жiберуге болады. Егер де есептi көргiңiз келсе 'Есептi көрсету' батырмасын шертiңiз. Егер сiз 'Жiбермеу' деген батырманы таңдасаңыз деректер жiберiлмейдi.\n\n"
 
 #: source/all/crashrep.ulf#%WELCOME_BODY3%
 msgid  "Customer Privacy\nThe information gathered is limited to data concerning the state of %PRODUCTNAME% %PRODUCTVERSION% when the error occurred. Other information about passwords or document contents is not collected.\n\nThe information will only be used to improve the quality of %PRODUCTNAME% and will not be shared with third parties.\nFor more information on Apache OpenOffice's privacy policy, visit\n"
@@ -81,7 +81,7 @@ msgstr ""
 
 #: source/all/crashrep.ulf#%ENTER_TITLE%
 msgid  "Which type of document (e.g. presentation) were you using when the error occurred?"
-msgstr ""
+msgstr "Қате пайда болғанда қандай құжат түрiмен (мысалы, тұсау кесер бағдарламасы) сiз жұмыс iстедiңiз?"
 
 #: source/all/crashrep.ulf#%ALLOW_CONTACT%
 msgid  "~I allow Apache OpenOffice to contact me regarding this report."
@@ -121,23 +121,23 @@ msgstr "Есептi сақтау "
 
 #: source/all/crashrep.ulf#%ERROR_MSG_SIMPLE_MAPI%
 msgid  "The error report could not be sent because the default e-mail program does not support MAPI.\n Please use a MAPI-compatible e-mail program."
-msgstr ""
+msgstr "Қате есебiң жiберуге мүмкiндiк жоқ, себебi үнсiз келiсiм бойынша пошталық клиент  MAPI-нi қолдамайды.\n Пошталық клиенттiң MAPI-үйлесiмдi бағдарламасын қолданыңыз."
 
 #: source/all/crashrep.ulf#%ERROR_MSG_DISK_FULL%
 msgid  "The error report could not be temporarily saved and could therefore not be sent."
-msgstr ""
+msgstr "Уақытша файлда қате мәлiмдемесiн сақтауға мүмкiндiк болмай тұр, сондықтан ол жiберiлмедi."
 
 #: source/all/crashrep.ulf#%ERROR_MSG_SENDMAIL%
 msgid  "The error report could not be sent because 'sendmail' could not be started.\nPlease check the 'sendmail' settings."
-msgstr ""
+msgstr "Қате мәлiмдемесiн жiберуге мүмкiндiк болмай тұр, себебi  'sendmail' орындалмайды.\n  'sendmail'-дiң баптауларын тексерiңiз."
 
 #: source/all/crashrep.ulf#%ERROR_MSG_PROXY%
 msgid  "The error report could not be sent. Please check the proxy settings under 'Options' in the Error Report Tool."
-msgstr ""
+msgstr "Қате мәлiмдiмесiн жiберуге мүмкiндiк болмай тұр. 'Баптаулар' қойындысында прокси-сервердiң  баптауларын тексерiңiз."
 
 #: source/all/crashrep.ulf#%ERROR_MSG_NOCONNECT%
 msgid  "The error report could not be sent because there is no Internet connection. Please check your Internet settings."
-msgstr ""
+msgstr "Интернетпен байланыс болмағанынан қате мәлiмдемесiн жiберуге мүмкiндiк болмай тұр. Қосылу баптауларын тексерiңiз."
 
 #: source/all/crashrep.ulf#%OPTIONS_BUTTON%
 msgid  "~Options..."
@@ -173,7 +173,7 @@ msgstr "~Порт"
 
 #: source/all/crashrep.ulf#%PROXY_SETTINGS_DESCRIPTION%
 msgid  "The %PRODUCTNAME% Error Report tool needs to be connected to the Internet to be able to send error reports.\n\nCompanies often use proxy servers in conjunction with a firewall to protect the network.\n\nIf this applies to your situation, you have to specify the address and port for the server."
-msgstr ""
+msgstr "Қате туралы есептi жiберу үшiн  %PRODUCTNAME% қате есебiнiң құрылғысын интернет желiсiне қосу қажет.\n\n Өз желiсiн қауiпсiздiндыру үшiн компаниялар прокси-сервердi файерволлмен байланысын жиi қолданады.\n\n Егер бұл сiздiң жағдайыңызға сәйкес келсе сервердiң мекен-жайын және портын атап кетуiңiз керек."
 
 #: source/all/crashrep.ulf#%SENDING_REPORT_HEADER%
 msgid  "Sending Error Report"
@@ -201,8 +201,8 @@ msgstr "-p <iс ретiнiң жалпылауышы>"
 
 #: source/all/crashrep.ulf#%MSG_PARAM_PROCESSID_DESCRIPTION%
 msgid  "Assigns the %PRODUCTNAME% process ID (PID) to the Error Report Tool"
-msgstr ""
+msgstr "Қате есебiнiң құрылғысында iс ретiнiң жалпылауышын (PID) %PRODUCTNAME% қосу"
 
 #: source/all/crashrep.ulf#%MSG_PARAM_HELP_DESCRIPTION%
 msgid  "Shows this help text.\nDetailed information can be found in the Setup Guide."
-msgstr ""
+msgstr "Бұл анықтамалық ақпаратты көрсетiп жатыр. Орнату нұсқауында толық ақпаратты табуға болады."

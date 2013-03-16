@@ -119,6 +119,18 @@ msgstr "Thunderbird nafnaskrá"
 msgid  "LDAP Address Book"
 msgstr "LDAP nafnaskrá"
 
+#: source/drivers/mozab/mozab2.xcu#.Drivers.Installed.sdbc:address:mozilla:.DriverTypeDisplayName
+msgid  "SeaMonkey Address Book"
+msgstr "SeaMonkey nafnaskrá"
+
+#: source/drivers/mozab/mozab2.xcu#.Drivers.Installed.sdbc:address:thunderbird:.DriverTypeDisplayName
+msgid  "Thunderbird Address Book"
+msgstr "Thunderbird nafnaskrá"
+
+#: source/drivers/mozab/mozab2.xcu#.Drivers.Installed.sdbc:address:ldap:*.DriverTypeDisplayName
+msgid  "LDAP Address Book"
+msgstr "LDAP nafnaskrá"
+
 #: source/drivers/mysql/mysql.xcu#.Drivers.Installed.sdbc:mysql:jdbc:*.DriverTypeDisplayName
 msgid  "MySQL (JDBC)"
 msgstr "MySQL (JDBC)"
@@ -161,11 +173,11 @@ msgstr "Get ekki búið til nýjar nafnskrár þegar Mozilla er keyrandi."
 
 #: source/resource/conn_shared_res.src#STR_COULD_NOT_RETRIEVE_AB_ENTRY.String.Text
 msgid  "An address book entry could not be retrieved, an unknown error occurred."
-msgstr ""
+msgstr "Ekki tókst að ná í færslu í nafnaskrá, óþekkt villa kom upp."
 
 #: source/resource/conn_shared_res.src#STR_COULD_NOT_GET_DIRECTORY_NAME.String.Text
 msgid  "An address book directory name could not be retrieved, an unknown error occurred."
-msgstr ""
+msgstr "Ekki tókst að ná í möppunafn nafnaskrár, óþekkt villa kom upp."
 
 #: source/resource/conn_shared_res.src#STR_TIMEOUT_WAITING.String.Text
 msgid  "Timed out while waiting for the result."
@@ -177,11 +189,11 @@ msgstr "Villa kom upp við að keyra/framkvæma fyrirspurnina."
 
 #: source/resource/conn_shared_res.src#STR_MOZILLA_IS_RUNNIG_NO_CHANGES.String.Text
 msgid  "You can't make any changes to mozilla address book when mozilla is running."
-msgstr ""
+msgstr "Ekki er hægt að gera neinar breytingar á mozilla nafnaskránni þegar mozilla er þegar keyrandi."
 
 #: source/resource/conn_shared_res.src#STR_FOREIGN_PROCESS_CHANGED_AB.String.Text
 msgid  "Mozilla Address Book has been changed out of this process, we can't modify it in this condition."
-msgstr ""
+msgstr "Mozilla nafnaskránni var breytt annarstaðar, ekki er hægt að breyta henni í þessu ástandi."
 
 #: source/resource/conn_shared_res.src#STR_CANT_FIND_ROW.String.Text
 msgid  "Can't find the requested row."
@@ -193,7 +205,7 @@ msgstr "Fann ekki spjaldið í umbeðinni röð."
 
 #: source/resource/conn_shared_res.src#STR_QUERY_AT_LEAST_ONE_TABLES.String.Text
 msgid  "The query can not be executed. It needs at least one table."
-msgstr ""
+msgstr "Ekki er hægt að keyra fyrirspurnina. Fyrirspurnin verður að innihalda að minnsta kosti eina töflu."
 
 #: source/resource/conn_shared_res.src#STR_NO_COUNT_SUPPORT.String.Text
 msgid  "The driver does not support the 'COUNT' function."
@@ -233,7 +245,7 @@ msgstr "Ekki var hægt að búa til nýja röð."
 
 #: source/resource/conn_shared_res.src#STR_QUERY_INVALID_IS_NULL_COLUMN.String.Text
 msgid  "The query can not be executed. The 'IS NULL' can only be used with a column name."
-msgstr ""
+msgstr "Ekki er hægt að keyra fyrirspurninga. Aðeins er hægt að nota 'IS NULL' með dálkanafni."
 
 #: source/resource/conn_shared_res.src#STR_ILLEGAL_MOVEMENT.String.Text
 msgid  "Illegal cursor movement occured."
@@ -241,7 +253,7 @@ msgstr "Uppgötvaði óleyfilega bendilfærslu."
 
 #: source/resource/conn_shared_res.src#STR_COMMIT_ROW.String.Text
 msgid  "Please commit row '$position$' before update rows or insert new rows."
-msgstr ""
+msgstr "Staðfestu röð '$position$' áður en þú uppfærir raðir eða setur inn nýjar raðir."
 
 #: source/resource/conn_shared_res.src#STR_INVALID_ROW_UPDATE.String.Text
 msgid  "The update call can not be executed. The row is invalid."
@@ -268,12 +280,12 @@ msgid  "It doesn't exist a connection to the database."
 msgstr "Engin tenging við gagngrunninn er til."
 
 #: source/resource/conn_shared_res.src#STR_WRONG_PARAM_INDEX.String.Text
-msgid  "You tried to set a parameter at position '$pos$' but there is/are only '$count$' parameter(s) allowed. One reason may be that the property "ParameterNameSubstitution" is not set to TRUE in the data source."
-msgstr ""
+msgid  "You tried to set a parameter at position '$pos$' but there is/are only '$count$' parameter(s) allowed. One reason may be that the property \"ParameterNameSubstitution\" is not set to TRUE in the data source."
+msgstr "Þú reyndir að setja breytu í sæti '$pos$' en aðeins eru leyfðar '$count$' breytur. Ein ástæða fyrir því gæti verið að breyta \"ParameterNameSubstitution\" sé ekki skilgreindur sem TRUE í gagnagjafanum."
 
 #: source/resource/conn_shared_res.src#STR_INPUTSTREAM_WRONG_LEN.String.Text
 msgid  "End of InputStream reached before satisfying length specified when InputStream was set."
-msgstr ""
+msgstr "Náði endanum á InputStream áður en þeirri lengd var náð sem var skilgreind þegar InputStream var skilgreindur."
 
 #: source/resource/conn_shared_res.src#STR_NO_INPUTSTREAM.String.Text
 msgid  "The input stream was not set."
@@ -313,7 +325,7 @@ msgstr "Rekillinn styður ekki fallið '$functionname$'."
 
 #: source/resource/conn_shared_res.src#STR_UNSUPPORTED_FEATURE.String.Text
 msgid  "The driver does not support the functionality for '$featurename$'. It is not implemented."
-msgstr ""
+msgstr "Rekillinn styður ekki virknina fyrir '$featurename$'. Þessi virkni er ekki studd."
 
 #: source/resource/conn_shared_res.src#STR_FORMULA_WRONG.String.Text
 msgid  "The formula for TypeInfoSettings is wrong!"
@@ -321,11 +333,11 @@ msgstr "Formúlan fyrir TypeInfoSettings er röng!"
 
 #: source/resource/conn_shared_res.src#STR_STRING_LENGTH_EXCEEDED.String.Text
 msgid  "The string '$string$' exceeds the maximum length of $maxlen$ characters when converted to the target character set '$charset$'."
-msgstr ""
+msgstr "Strengurinn '$string$' er stærri heldur hámarkslengdin $maxlen$ stafir þegar honum er varpað yfir í stafasettið '$charset$'."
 
 #: source/resource/conn_shared_res.src#STR_CANNOT_CONVERT_STRING.String.Text
 msgid  "The string '$string$' cannot be converted using the encoding '$charset$'."
-msgstr ""
+msgstr "Ekki er hægt að varpa breytunni '$string$' með stafasetti '$charset$'."
 
 #: source/resource/conn_shared_res.src#STR_URI_SYNTAX_ERROR.String.Text
 msgid  "The connection URL is invalid."
@@ -341,23 +353,23 @@ msgstr "Ekki er hægt að framkvæma fyrirspurnina. Virkinn er of flókinn."
 
 #: source/resource/conn_shared_res.src#STR_QUERY_INVALID_LIKE_COLUMN.String.Text
 msgid  "The query can not be executed. You cannot use 'LIKE' with columns of this type."
-msgstr ""
+msgstr "Ekki er hægt að framkvæma fyrirspurnina. Þú getur ekki notað 'LIKE' með dálkum af þessari tegund."
 
 #: source/resource/conn_shared_res.src#STR_QUERY_INVALID_LIKE_STRING.String.Text
 msgid  "The query can not be executed. 'LIKE' can be used with a string argument only."
-msgstr ""
+msgstr "Ekki er hægt að framkvæma fyrirspurnina. 'LIKE' er bara hægt að nota með strengjabreytu."
 
 #: source/resource/conn_shared_res.src#STR_QUERY_NOT_LIKE_TOO_COMPLEX.String.Text
 msgid  "The query can not be executed. The 'NOT LIKE' condition is too complex."
-msgstr ""
+msgstr "Ekki er hægt að framkvæma fyrirspurnina. 'NOT LIKE' skilyrðið er of flókið."
 
 #: source/resource/conn_shared_res.src#STR_QUERY_LIKE_WILDCARD.String.Text
 msgid  "The query can not be executed. The 'LIKE' condition contains wildcard in the middle."
-msgstr ""
+msgstr "Ekki er hægt að framkvæma fyrirspurnina. 'LIKE' skilyrðið inniheldur algildisstaf í miðjunni."
 
 #: source/resource/conn_shared_res.src#STR_QUERY_LIKE_WILDCARD_MANY.String.Text
 msgid  "The query can not be executed. The 'LIKE' condition contains too many wildcards."
-msgstr ""
+msgstr "Ekki er hægt að framkvæma fyrirspurnina. 'LIKE' skilyrðið inniheldur of marga algildisstafi."
 
 #: source/resource/conn_shared_res.src#STR_INVALID_COLUMNNAME.String.Text
 msgid  "The column name '$columnname$' is not valid."
@@ -377,7 +389,7 @@ msgstr "Ekki var hægt að lesa inn skrána $filename$."
 
 #: source/resource/conn_shared_res.src#STR_LOAD_FILE_ERROR_MESSAGE.String.Text
 msgid  "The attempt to load the file resulted in the following error message ($exception_type$):\n\n$error_message$"
-msgstr ""
+msgstr "Reyndi að hlaða inn skránni en fékk eftirfarandi villuboð ($exception_type$):\n\n$error_message$"
 
 #: source/resource/conn_shared_res.src#STR_TYPE_NOT_CONVERT.String.Text
 msgid  "The type could not be converted."
@@ -417,15 +429,15 @@ msgstr "Gat ekki búið til sýn: enginn stjórnhlutur."
 
 #: source/resource/conn_shared_res.src#STR_NO_CONNECTION.String.Text
 msgid  "The connection could not be created. May be the necessary data provider is not installed."
-msgstr ""
+msgstr "Ekki tókst að búa til tengingu. Kannski er ekki búið að setja upp nauðsynlegan gagnagjafa."
 
 #: source/resource/conn_shared_res.src#STR_COULD_NOT_DELETE_INDEX.String.Text
 msgid  "The index could not be deleted. An unknown error while accessing the file system occured."
-msgstr ""
+msgstr "Ekki tókst að eyða vísinum. Óþekkt villa kom upp við lestur á skráarkerfinu."
 
 #: source/resource/conn_shared_res.src#STR_ONL_ONE_COLUMN_PER_INDEX.String.Text
 msgid  "The index could not be created. Only one column per index is allowed."
-msgstr ""
+msgstr "Ekki tókst að búa til vísinn. Aðeins er leyfður einn dálkur fyrir hvern vísi."
 
 #: source/resource/conn_shared_res.src#STR_COULD_NOT_CREATE_INDEX_NOT_UNIQUE.String.Text
 msgid  "The index could not be created. The values are not unique."
@@ -437,11 +449,11 @@ msgstr "Ekki tókst að búa til vísinn. Óþekkt villa kom upp."
 
 #: source/resource/conn_shared_res.src#STR_COULD_NOT_CREATE_INDEX_NAME.String.Text
 msgid  "The index could not be created. The file '$filename$' is used by an other index."
-msgstr ""
+msgstr "Ekki tókst að búa til vísinn. Skráin '$filename$' er í notkun í öðrum vísi."
 
 #: source/resource/conn_shared_res.src#STR_COULD_NOT_CREATE_INDEX_KEYSIZE.String.Text
 msgid  "The index could not be created. The size of the chosen column is to big."
-msgstr ""
+msgstr "Ekki tókst að búa til vísinn. Stærð valins dálks er of stór."
 
 #: source/resource/conn_shared_res.src#STR_SQL_NAME_ERROR.String.Text
 msgid  "The name '$name$' doesn't match SQL naming constraints."
@@ -472,28 +484,28 @@ msgid  "Duplicate value found in column '$columnname$'."
 msgstr "Tvöföld gildi fundust í dálk '$columnname$'."
 
 #: source/resource/conn_shared_res.src#STR_INVALID_COLUMN_DECIMAL_VALUE.String.Text
-msgid  "The '$columnname$' column has been defined as a "Decimal" type, the max. length is $precision$ characters (with $scale$ decimal places).\n\nThe specified value "$value$ is longer than the number of digits allowed."
-msgstr ""
+msgid  "The '$columnname$' column has been defined as a \"Decimal\" type, the max. length is $precision$ characters (with $scale$ decimal places).\n\nThe specified value \"$value$ is longer than the number of digits allowed."
+msgstr "Dálkurinn '$columnname$' er skilgreindur sem tegundin \"Tugabrot\", hámarkslengd er $precision$ stafir (með $scale$ tugabrotsstöfum).\n\nGildið \"$value$ er lengra heldur en fjöldi leyfðra stafa."
 
 #: source/resource/conn_shared_res.src#STR_COLUMN_NOT_ALTERABLE.String.Text
 msgid  "The column '$columnname$' could not be altered. May be the file system is write protected."
-msgstr ""
+msgstr "Dálknum '$columnname$' var ekki hægt að breyta, er skráarkerfið ritvarið ?."
 
 #: source/resource/conn_shared_res.src#STR_INVALID_COLUMN_VALUE.String.Text
 msgid  "The column '$columnname$' could not be updated. The value is invalid for that column."
-msgstr ""
+msgstr "Ekki var hægt að uppfæra dálkinn '$columnname$'. Gildið er ógilt fyrir þennan dálk."
 
 #: source/resource/conn_shared_res.src#STR_COLUMN_NOT_ADDABLE.String.Text
 msgid  "The column '$columnname$' could not be added. May be the file system is write protected."
-msgstr ""
+msgstr "Ekki var hægt að bæta dálknum '$columnname$' við töfluna, er skráarkerfið ritvarið ?."
 
 #: source/resource/conn_shared_res.src#STR_COLUMN_NOT_DROP.String.Text
 msgid  "The column at position '$position$' could not be dropped. May be the file system is write protected."
-msgstr ""
+msgstr "Ekki var hægt að eyða dálknum á staðsetningu '$position$'. Kannski er skráarkerfið ritvarið."
 
 #: source/resource/conn_shared_res.src#STR_TABLE_NOT_DROP.String.Text
 msgid  "The table '$tablename$' could not be dropped. May be the file system is write protected."
-msgstr ""
+msgstr "Ekki var hægt að eyða töflunni '$tablename$'. Kannski er skráarkerfið ritvarið."
 
 #: source/resource/conn_shared_res.src#STR_COULD_NOT_ALTER_TABLE.String.Text
 msgid  "The table could not be altered."
@@ -512,12 +524,12 @@ msgid  "Can only sort by table columns."
 msgstr "Aðeins er hægt að raða eftir dálkum töflu."
 
 #: source/resource/conn_shared_res.src#STR_QUERY_COMPLEX_COUNT.String.Text
-msgid  "The query can not be executed. It is too complex. Only "COUNT(*)" is supported."
-msgstr ""
+msgid  "The query can not be executed. It is too complex. Only \"COUNT(*)\" is supported."
+msgstr "Ekki er hægt að keyra fyrirspurnina. Hún er of flókin. Aðeins er stuðningur við \"COUNT(*)\"."
 
 #: source/resource/conn_shared_res.src#STR_QUERY_INVALID_BETWEEN.String.Text
 msgid  "The query can not be executed. The 'BETWEEN' arguments are not correct."
-msgstr ""
+msgstr "Ekki er hægt að keyra fyrirspurnina. Breyturnar fyrir 'BETWEEN' eru ekki réttar."
 
 #: source/resource/conn_shared_res.src#STR_QUERY_FUNCTION_NOT_SUPPORTED.String.Text
 msgid  "The query can not be executed. The function is not supported."
@@ -528,8 +540,8 @@ msgid  "The table can not be changed. It is read only."
 msgstr "Ekki er hægt að breyta töflu. Hún er lesvarin."
 
 #: source/resource/conn_shared_res.src#STR_DELETE_ROW.String.Text
-msgid  "The row could not be deleted. The option "Display inactive records" is set."
-msgstr ""
+msgid  "The row could not be deleted. The option \"Display inactive records\" is set."
+msgstr "Ekki tókst að eyða röðinni. Valkosturinn \"Birta óvirkar færslur\" er stilltur."
 
 #: source/resource/conn_shared_res.src#STR_ROW_ALREADY_DELETED.String.Text
 msgid  "The row could not be deleted. It is already deleted."
@@ -537,7 +549,7 @@ msgstr "Ekki er hægt að eyða röðinni. Henni hefur þegar verið eytt."
 
 #: source/resource/conn_shared_res.src#STR_QUERY_MORE_TABLES.String.Text
 msgid  "The query can not be executed. It contains more than one table."
-msgstr ""
+msgstr "Ekki er hægt að keyra fyrirspurnina. Hún inniheldur fleiri en eina töflu."
 
 #: source/resource/conn_shared_res.src#STR_QUERY_NO_TABLE.String.Text
 msgid  "The query can not be executed. It contains no valid table."
@@ -545,7 +557,7 @@ msgstr "Ekki er hægt að keyra fyrirspurnina. Hún inniheldur enga gilda töflu
 
 #: source/resource/conn_shared_res.src#STR_QUERY_NO_COLUMN.String.Text
 msgid  "The query can not be executed. It contains no valid columns."
-msgstr ""
+msgstr "Ekki er hægt að keyra fyrirspurnina. Hún inniheldur ekki neina gilda dálka."
 
 #: source/resource/conn_shared_res.src#STR_INVALID_PARA_COUNT.String.Text
 msgid  "The count of the given parameter values doesn't match the parameters."
@@ -589,15 +601,15 @@ msgstr "Engin nothæf KDE uppsetning fannst."
 
 #: source/resource/conn_shared_res.src#STR_KDE_VERSION_TOO_OLD.String.Text
 msgid  "KDE version $major$.$minor$ or higher is required to access the KDE Address Book."
-msgstr ""
+msgstr "KDE útgáfa $major$.$minor$ eða hærri er nauðsynleg til að nota KDE nafnaskránna."
 
 #: source/resource/conn_shared_res.src#STR_KDE_VERSION_TOO_NEW.String.Text
 msgid  "The found KDE version is too new. Only KDE up to version $major$.$minor$ is known to work with this product.\n"
-msgstr ""
+msgstr "KDE útgáfan sem fannst er of nýleg. Aðeins KDE útgáfa að $major$.$minor$ er hægt að nota með þessu forriti.\n"
 
 #: source/resource/conn_shared_res.src#STR_KDE_VERSION_TOO_NEW_WORK_AROUND.String.Text
 msgid  "If you are sure that your KDE version works, you might execute the following Basic macro to disable this version check:\n\n"
-msgstr ""
+msgstr "Ef þú ert viss um að KDE útgáfan virki, geturðu keyrt eftirfarandi Basic fjölva til slökkva á þessari útgáfuprófun:\n\n"
 
 #: source/resource/conn_shared_res.src#STR_PARA_ONLY_PREPARED.String.Text
 msgid  "Parameters can appear only in prepared statements."
@@ -613,19 +625,19 @@ msgstr "Engin nothæf Mac OS uppsetning fannst."
 
 #: source/resource/conn_shared_res.src#STR_NO_DISK_SPACE.String.Text
 msgid  "The database file '$filename$' could not be created. Please check your disk space."
-msgstr ""
+msgstr "Ekki tókst að búa til gagnagrunnsskránna '$filename$'. Athugaðu laust pláss á diski."
 
 #: source/resource/conn_shared_res.src#STR_COMMAND_NOT_FOUND.String.Text
 msgid  "The database '$databasename$' could not be started because the command '$progname$' could not be executed."
-msgstr ""
+msgstr "Ekki var hægt að ræsa gagnagrunninn '$databasename$', vegna þess að ekki var hægt að keyra skipunina '$progname$'."
 
 #: source/resource/conn_shared_res.src#STR_DATABASE_NEEDS_CONVERTING.String.Text
 msgid  "The current database need to be converted. Please insert control user  and password."
-msgstr ""
+msgstr "Nauðsynlegt er að umbreyta núverandi gagnagrunni. Sláðu inn kerfisnotanda  og lykilorð."
 
 #: source/resource/conn_shared_res.src#STR_USER_NO_DELETE.String.Text
 msgid  "This user couldn't be deleted. Otherwise the database stays in a inconsistent state."
-msgstr ""
+msgstr "Ekki er hægt að eyða þessum notanda. Annars er hætta á því að gagnagrunnurinn verði í mótsagnakenndu ástandi."
 
 #: source/resource/conn_shared_res.src#STR_NO_STROAGE.String.Text
 msgid  "The connection can not be established. No storage or URL was given."
@@ -633,7 +645,7 @@ msgstr "Ekki er hægt að tengjast. Engin vefslóð eða geymsla var skilgreind.
 
 #: source/resource/conn_shared_res.src#STR_INVALID_FILE_URL.String.Text
 msgid  "The given URL contains no valid local file system path. Please check the location of your database file."
-msgstr ""
+msgstr "Uppgefin vefslóð inniheldur ekki gildan staðbundin slóða. Athugaðu slóða fyrir gagnagrunnsskrá."
 
 #: source/resource/conn_shared_res.src#STR_NO_TABLE_CONTAINER.String.Text
 msgid  "An error occured while obtaining the connection's table container."
@@ -685,16 +697,4 @@ msgstr "$1$ er ekki til."
 
 #: source/resource/conn_error_message.src#256 + 2*550 + 0.String.Text
 msgid  "Unable to display the complete table content. Please apply a filter."
-msgstr ""
-
-#: source/drivers/mozab/mozab2.xcu#.Drivers.Installed.sdbc:address:mozilla:.DriverTypeDisplayName
-msgid  "SeaMonkey Address Book"
-msgstr "SeaMonkey nafnaskrá"
-
-#: source/drivers/mozab/mozab2.xcu#.Drivers.Installed.sdbc:address:thunderbird:.DriverTypeDisplayName
-msgid  "Thunderbird Address Book"
-msgstr "Thunderbird nafnaskrá"
-
-#: source/drivers/mozab/mozab2.xcu#.Drivers.Installed.sdbc:address:ldap:*.DriverTypeDisplayName
-msgid  "LDAP Address Book"
-msgstr "LDAP nafnaskrá"
+msgstr "Get ekki sýnt allt innihald töflunnar. Vinsamlega þrengdu leitarskilyrðin."

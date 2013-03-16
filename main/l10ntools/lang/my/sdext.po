@@ -73,7 +73,7 @@ msgstr "နိဒါန်း"
 
 #: source/minimizer/registry/data/org/openoffice/Office/extension/SunPresentationMinimizer.xcu#.SunPresentationMinimizer.Strings.STR_INTRODUCTION_T
 msgid  "The @MINIMIZEREXTENSIONPRODUCTNAME@ is used to reduce the file size of the current presentation. Images will be compressed and data, that is no longer needed, will be removed. At the last step of the wizard you can choose to apply the changes to the current presentation or to create an optimized new version of the presentation."
-msgstr ""
+msgstr "Sun Presentation Minimizer ကို လက်ရှိတင်ဆက်မှုပုံစံ၏ ဖိုင်အရွယ်အစားများ လျော့ချရန် အသုံးပြုခဲ့သည်။ ရုပ်ပုံများနှင့်အချက်အလက်များကို ရေရှည်လျော့ချရန် မလိုအပ်သောကြောင့် ဖယ်ရှားမှုများ ပြုလိမ့်မည်။ လမ်းညွှန်၀ဇ္ဇတ်၏ နောက်ဆုံးအချက်အနေဖြင့် လက်ရှိတင်ဆက်မှုပုံစံတွင် ပြောင်းလဲပြင်ဆင်မှုများပြုပါ (သို့) တင်ဆက်မှုဗားရှင်းပုံစံအသစ် ဖန်တီးတည်ဆောက်မှုများ ပြုပါ။"
 
 #: source/minimizer/registry/data/org/openoffice/Office/extension/SunPresentationMinimizer.xcu#.SunPresentationMinimizer.Strings.STR_CHOSE_SETTINGS
 msgid  "~Choose settings for @MINIMIZEREXTENSIONPRODUCTNAME@"
@@ -149,15 +149,15 @@ msgstr "~OLE အရာ၀တ္ထုများအားလုံးအတွ�
 
 #: source/minimizer/registry/data/org/openoffice/Office/extension/SunPresentationMinimizer.xcu#.SunPresentationMinimizer.Strings.STR_ALIEN_OLE_OBJECTS_ONLY
 msgid  "~For OLE objects not based on OpenDocument format"
-msgstr ""
+msgstr "~OpenDocument ပြင်ဆင်ဖွဲ့စည်းမှုပုံစံပေါ်တွင် အခြေတည်မထားသည့် OLE အရာ၀တ္ထုများ "
 
 #: source/minimizer/registry/data/org/openoffice/Office/extension/SunPresentationMinimizer.xcu#.SunPresentationMinimizer.Strings.STR_OLE_OBJECTS_DESC
 msgid  "Object Linking and Embedding (OLE) is a technology that allows embedding and linking to documents and other objects. The current presentation contains OLE objects."
-msgstr ""
+msgstr "(OLE) နည်းပညာပိုင်းအရ အရာ၀တ္ထုများ ချိတ်ဆက်မှုနှင့် ပြောင်းလဲမှုများပြုနေသည်။ မှတ်တမ်းမှတ်ရာများနှင့် အခြားအရာ၀တ္ထုများအားလုံးကို ခွင့်ပြုသည်။ လက်ရှိ တင်ဆက်မှုပုံစံတွင် OLE အရာ၀တ္ထုများ ပါဝင်ခြင်းမရှိပါ။ "
 
 #: source/minimizer/registry/data/org/openoffice/Office/extension/SunPresentationMinimizer.xcu#.SunPresentationMinimizer.Strings.STR_NO_OLE_OBJECTS_DESC
 msgid  "Object Linking and Embedding (OLE) is a technology that allows embedding and linking to documents and other objects. The current presentation contains no OLE objects."
-msgstr ""
+msgstr "(OLE) နည်းပညာပိုင်းအရ အရာ၀တ္ထုများ ချိတ်ဆက်မှုနှင့် ပြောင်းလဲမှုများပြုနေသည်။ မှတ်တမ်းမှတ်ရာများနှင့် အခြားအရာ၀တ္ထုများအားလုံးကို ခွင့်ပြုသည်။ လက်ရှိ တင်ဆက်မှုပုံစံတွင် OLE အရာ၀တ္ထုများ ပါဝင်ခြင်းမရှိပါ။ "
 
 #: source/minimizer/registry/data/org/openoffice/Office/extension/SunPresentationMinimizer.xcu#.SunPresentationMinimizer.Strings.STR_SLIDES
 msgid  "Slides"
@@ -225,7 +225,7 @@ msgstr "%SLIDES ဆလိုက်များကို ဖျက်ပါ။"
 
 #: source/minimizer/registry/data/org/openoffice/Office/extension/SunPresentationMinimizer.xcu#.SunPresentationMinimizer.Strings.STR_OPTIMIZE_IMAGES
 msgid  "Optimize %IMAGES graphics to %QUALITY% JPEG quality at %RESOLUTION DPI."
-msgstr ""
+msgstr "%IMAGES ရုပ်ပုံများကို ပုံရိပ်ပြတ်သားမှု %RESOLUTION DPI တွင် JPEG အရည်အသွေး %QUALITY% သို့ မြှင့်တင်ပါ"
 
 #: source/minimizer/registry/data/org/openoffice/Office/extension/SunPresentationMinimizer.xcu#.SunPresentationMinimizer.Strings.STR_CREATE_REPLACEMENT
 msgid  "Create replacement graphics for %OLE objects."
@@ -253,7 +253,7 @@ msgstr "နဂိုမူလ အပိုင်းကဏ္ဏ"
 
 #: source/minimizer/registry/data/org/openoffice/Office/extension/SunPresentationMinimizer.xcu#.SunPresentationMinimizer.Strings.STR_MODIFY_WARNING
 msgid  "The optimization will modify the current document. Do you want to continue?"
-msgstr ""
+msgstr "လက်ရှိမှတ်တမ်းမှတ်ရာကို အကောင်းဆုံး မြှင့်တင်မှုများပြုနေသည်။ ဆက်လက်လုပ်ဆောင်ရန် ဆန္ဒရှိပါသလား။"
 
 #: source/minimizer/registry/data/org/openoffice/Office/extension/SunPresentationMinimizer.xcu#.SunPresentationMinimizer.Strings.STR_YES
 msgid  "~Yes"
@@ -265,19 +265,19 @@ msgstr "အိုကေ"
 
 #: source/minimizer/registry/data/org/openoffice/Office/extension/SunPresentationMinimizer.xcu#.SunPresentationMinimizer.Strings.STR_INFO_1
 msgid  "The @MINIMIZEREXTENSIONPRODUCTNAME@ has successfully updated the presentation '%TITLE'. The file size has changed from %OLDFILESIZE MB to %NEWFILESIZE MB."
-msgstr ""
+msgstr "%EXTENSIONNAMEကို တင်ဆက်မှုပုံစံ '%TITLE' အနေဖြင့် နောက်ဆုံးအချက်အလက်များ ပြည့်စုံစွာ သိမ်းဆည်းပြီး ဖြစ်သည်။ ဖိုင်အရွယ်အစား %OLDFILESIZE MB ကို NEWFILESIZE MB သို့ ပြောင်းလဲခဲ့သည်။"
 
 #: source/minimizer/registry/data/org/openoffice/Office/extension/SunPresentationMinimizer.xcu#.SunPresentationMinimizer.Strings.STR_INFO_2
 msgid  "The @MINIMIZEREXTENSIONPRODUCTNAME@ has successfully updated the presentation '%TITLE'. The file size has changed from %OLDFILESIZE MB to approximated %NEWFILESIZE MB."
-msgstr ""
+msgstr "%EXTENSIONNAMEကို တင်ဆက်မှုပုံစံ '%TITLE' အနေဖြင့် နောက်ဆုံးအချက်အလက်များ ပြည့်စုံစွာ သိမ်းဆည်းပြီး ဖြစ်သည်။ ဖိုင်အရွယ်အစား %OLDFILESIZE MB ကို ခန့်မှန်းတန်ဖိုး NEWFILESIZE MB သို့ ပြောင်းလဲခဲ့သည်။"
 
 #: source/minimizer/registry/data/org/openoffice/Office/extension/SunPresentationMinimizer.xcu#.SunPresentationMinimizer.Strings.STR_INFO_3
 msgid  "The @MINIMIZEREXTENSIONPRODUCTNAME@ has successfully updated the presentation '%TITLE'. The file size has changed to %NEWFILESIZE MB."
-msgstr ""
+msgstr "%EXTENSIONNAMEကို တင်ဆက်မှုပုံစံ '%TITLE' အနေဖြင့် နောက်ဆုံးအချက်အလက်များ ပြည့်စုံစွာ သိမ်းဆည်းပြီး ဖြစ်သည်။ ဖိုင်အရွယ်အစား NEWFILESIZE MB သို့ ပြောင်းလဲခဲ့သည်။"
 
 #: source/minimizer/registry/data/org/openoffice/Office/extension/SunPresentationMinimizer.xcu#.SunPresentationMinimizer.Strings.STR_INFO_4
 msgid  "The @MINIMIZEREXTENSIONPRODUCTNAME@ has successfully updated the presentation '%TITLE'. The file size has changed to approximated %NEWFILESIZE MB."
-msgstr ""
+msgstr "%EXTENSIONNAMEကို တင်ဆက်မှုပုံစံ '%TITLE' အနေဖြင့် နောက်ဆုံးအချက်အလက်များ ပြည့်စုံစွာ သိမ်းဆည်းပြီး ဖြစ်သည်။ ဖိုင်အရွယ်အစား ခန့်မှန်းတန်ဖိုး NEWFILESIZE MB သို့ ပြောင်းလဲခဲ့သည်။"
 
 #: source/minimizer/registry/data/org/openoffice/Office/extension/SunPresentationMinimizer.xcu#.SunPresentationMinimizer.Strings.STR_DUPLICATING_PRESENTATION
 msgid  "Duplicating presentation..."
@@ -345,7 +345,7 @@ msgstr "နောက် ဆလိုက် (သို့) နောက်သ�
 
 #: source/presenter/help/en-US/com.sun.PresenterScreen/presenter.xhp#par_id0921200901104120
 msgid  "Left click, right arrow, down arrow, spacebar, page down, enter, return, 'N'"
-msgstr ""
+msgstr "ဘယ်ဘက်ကလစ်၊ ညာဘက်မြှား၊ အောက်မြှား၊ စပေ့ဘား၊ အောက်စာမျက်နှာ၊ အဝင်၊ အပြန်၊ 'N'"
 
 #: source/presenter/help/en-US/com.sun.PresenterScreen/presenter.xhp#par_id0921200901104165
 msgid  "Previous slide, or previous effect"
@@ -505,7 +505,7 @@ msgstr "ပိတ်ပါ"
 
 #: source/presenter/registry/data/org/openoffice/Office/extension/PresenterScreen.xcu#..PresenterScreen.PresenterScreenSettings.HelpView.HelpStrings.a.Left
 msgid  "Left click, right or down arrow, spacebar, page down, enter, return, 'N'"
-msgstr ""
+msgstr "ဘယ်ဘက်ကလစ်၊ ညာဘက် (သို့) အောက်သို့မြှား၊ စပေ့ဘား၊ စာမျက်နှာအောက်သို့၊ ဝင်ပါ၊ ပြန်ပေးပါ၊​ 'N'"
 
 #: source/presenter/registry/data/org/openoffice/Office/extension/PresenterScreen.xcu#..PresenterScreen.PresenterScreenSettings.HelpView.HelpStrings.a.Right
 msgid  "Next slide, or next effect"
@@ -513,7 +513,7 @@ msgstr "နောက်ထပ်ဆလိုက်၊ (သို့) နော�
 
 #: source/presenter/registry/data/org/openoffice/Office/extension/PresenterScreen.xcu#..PresenterScreen.PresenterScreenSettings.HelpView.HelpStrings.b.Left
 msgid  "Right click, left or up arrow, page up, backspace, 'P'"
-msgstr ""
+msgstr "ညာဘက်ကလစ်၊ ဘယ်ဘက်၊​ (သို့) အပေါ်သို့မြှား၊ စာမျက်နှာအထက်သို့၊​ အနောက်သို့ဖျက်သည့်ဘား၊ 'P'"
 
 #: source/presenter/registry/data/org/openoffice/Office/extension/PresenterScreen.xcu#..PresenterScreen.PresenterScreenSettings.HelpView.HelpStrings.b.Right
 msgid  "Previous slide, or previous effect"
@@ -693,7 +693,7 @@ msgstr "လက်ရှိဆလိုက် (%SLIDE_COUNT% ပုံ %CURRENT_S
 
 #: source/presenter/registry/data/org/openoffice/Office/extension/PresenterScreen.xcu#..PresenterScreen.Presenter.Views.CurrentSlidePreview.AccessibleTitle
 msgid  "Current Slide, %CURRENT_SLIDE_NAME%, %CURRENT_SLIDE_NUMBER% of %SLIDE_COUNT%"
-msgstr ""
+msgstr "လက်ရှိဆလိုက် %CURRENT_SLIDE_NAME%၊ %SLIDE_COUNT% ပုံ %CURRENT_SLIDE_NUMBER% ပုံ"
 
 #: source/presenter/registry/data/org/openoffice/Office/extension/PresenterScreen.xcu#..PresenterScreen.Presenter.Views.CurrentSlidePreview.Strings.ClickToExitPresentationText.String
 msgid  "Click to exit presentation..."
@@ -713,7 +713,7 @@ msgstr "မှတ်စုများ"
 
 #: source/presenter/registry/data/org/openoffice/Office/extension/PresenterScreen.xcu#..PresenterScreen.Presenter.Views.SlideSorter.AccessibleTitle
 msgid  "Slide Overview, %CURRENT_SLIDE_NAME%, %CURRENT_SLIDE_NUMBER% of %SLIDE_COUNT%"
-msgstr ""
+msgstr "ဆလိုက်ကြည့်ပါ၊ %CURRENT_SLIDE_NAME%၊ %SLIDE_COUNT% ပုံ %CURRENT_SLIDE_NUMBER% ပုံ"
 
 #: source/presenter/registry/data/org/openoffice/Office/extension/PresenterScreen.xcu#..PresenterScreen.Presenter.Views.HelpView.Title
 msgid  "Help"

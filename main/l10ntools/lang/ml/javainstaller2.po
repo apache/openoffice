@@ -125,7 +125,7 @@ msgstr "താഴെ കൊടുത്തിട്ടുള്ള ലൈസന�
 
 #: src/Localization/setupstrings.ulf#STRING_ACCEPTLICENSE3
 msgid  "If you have read and accept all the terms of the entire Software License Agreement, click 'Accept License' to continue with the installation."
-msgstr ""
+msgstr "സോഫ്റ്റ്‌വെയര്‍ ലൈസന്‍സ് എഗ്രീമെന്റ് സ്വീകാര്യമെങ്കില്‍ ലൈസന്‍സ് അംഗീകരിച്ചു് തുടരുക."
 
 #: src/Localization/setupstrings.ulf#STRING_CHOOSEDIRECTORY1
 msgid  "Select Installation Directory"
@@ -153,11 +153,11 @@ msgstr "പുതിയ ഡയറക്ടറി ഉണ്ടാക്കുക"
 
 #: src/Localization/setupstrings.ulf#STRING_CHOOSEDIRECTORY5_QUESTION_MESSAGE
 msgid  "The directory '${DIR}' does not exist.\nDo you want to create it now?"
-msgstr ""
+msgstr "'${DIR}'നിലവിലില്ല,\nനിര്‍മ്മിക്കണമോ?"
 
 #: src/Localization/setupstrings.ulf#STRING_CHOOSEDIRECTORY5_QUESTION_MESSAGE2
 msgid  "The directory '${DIR}' does not exist.\nDo you want to create it now or choose another directory?"
-msgstr ""
+msgstr "'${DIR}'നിലവിലില്ല,\nനിര്‍മ്മിക്കണമോ അതോ മറ്റൊരെണ്ണം തെരഞ്ഞെടുക്കണമോ?"
 
 #: src/Localization/setupstrings.ulf#STRING_CHOOSEDIRECTORY6
 msgid  "Select root directory"
@@ -209,11 +209,11 @@ msgstr "ഇന്‍സ്റ്റലേഷന്‍ രീതി തെരഞ�
 
 #: src/Localization/setupstrings.ulf#STRING_CHOOSEINSTALLATIONTYPE4
 msgid  "The main components will be installed. Recommended for most users."
-msgstr ""
+msgstr "പൂരിഭാഗം ഉപയോക്താക്കളും ഉപയോഗിക്കുന്ന പ്രധാന ഘടകങ്ങള്‍ ഇന്‍സ്റ്റോള്‍ ചെയ്യപ്പെടും."
 
 #: src/Localization/setupstrings.ulf#STRING_CHOOSEINSTALLATIONTYPE5
 msgid  "You choose the components you want to install and where they are stored. Recommended for advanced users."
-msgstr ""
+msgstr "പ്രാവീണ്യമുള്ള ഉപയോക്താക്കള്‍ക്കു് ഇഷ്ടമുള്ള ഘടകങ്ങള്‍ യഥാസ്ഥാനത്തു് നിന്നും തെരഞ്ഞെടുക്കാം."
 
 #: src/Localization/setupstrings.ulf#STRING_CHOOSEINSTALLATIONTYPE6
 msgid  "Typical"
@@ -253,7 +253,7 @@ msgstr "സ്വാഗതം"
 
 #: src/Localization/setupstrings.ulf#STRING_PROLOGUE2
 msgid  "This Installation Wizard will install ${PRODUCT_FULLNAME} on your computer."
-msgstr ""
+msgstr "ഇന്‍സ്റ്റലേഷന്‍ സഹായി ${PRODUCT_FULLNAME} ഇന്‍സ്റ്റോള്‍ ചെയ്യും."
 
 #: src/Localization/setupstrings.ulf#STRING_PROLOGUE3
 msgid  "To continue, click 'Next'."
@@ -261,7 +261,7 @@ msgstr "തുടരുന്നതിനായി 'അടുത്തതു്'
 
 #: src/Localization/setupstrings.ulf#STRING_PROLOGUE4
 msgid  "Note: This installation will be done without root privileges. Therefore you will have a reduced functionality (Java Runtime Environment (JRE) not installable, system integration not possible).\nClick 'Cancel' and change your privileges to root privileges, if you want to use the complete functionality."
-msgstr ""
+msgstr "കുറിപ്പു്: റൂട്ടിനുള്ള സര്‍‌വ്വാധികാരങ്ങളും ഉള്‍പ്പെടുത്തതാതെയുള്ള ഇന്‍സ്റ്റലേഷന്‍ കാരണം പൂര്‍ണ്ണമായ ഉപയോഗം ലഭ്യമാകുകയില്ല. (ജാവാ റണ്‍ടൈം എന്‍വയോണ്മെന്റ് (JRE) ഇന്‍സ്റ്റോള്‍ ചെയ്യപ്പെടില്ല, ആയതിനാല്‍ സിസ്റ്റവുമായുള്ള സമന്വയം അസാധ്യം).\nറൂട്ടിനുള്ള സര്‍‌വ്വാധികാരങ്ങളും ലഭ്യമാക്കണമെങ്കില്‍ 'റദ്ദാക്കുക' ക്ലിക്ക് ചെയ്യുക."
 
 #: src/Localization/setupstrings.ulf#STRING_INSTALLATIONCOMPLETED1
 msgid  "Installation Completed"
@@ -277,15 +277,15 @@ msgstr "ഇന്‍സ്റ്റലേഷന്‍‍ പരാജയം"
 
 #: src/Localization/setupstrings.ulf#STRING_INSTALLATIONCOMPLETED2
 msgid  "The Installation Wizard has successfully installed ${PRODUCT_FULLNAME} on your computer."
-msgstr ""
+msgstr "${PRODUCT_FULLNAME}-ന്റെ ഇന്‍സ്റ്റലേഷന്‍ വിജയിച്ചു."
 
 #: src/Localization/setupstrings.ulf#STRING_INSTALLATIONCOMPLETED2_ABORT
 msgid  "The Installation Wizard was aborted. ${PRODUCT_NAME} is not installed on your computer."
-msgstr ""
+msgstr "ഇന്‍സ്റ്റലേഷന്‍ സഹായി നിരാകരിക്കപ്പെട്ടു. ${PRODUCT_NAME} ഇന്‍സ്റ്റോള്‍ ചെയ്യപ്പെട്ടില്ല."
 
 #: src/Localization/setupstrings.ulf#STRING_INSTALLATIONCOMPLETED2_ERROR
 msgid  "An error has occurred. Thus the Installation Wizard could not install ${PRODUCT_NAME} on your computer successfully. Click 'Details...' for more information."
-msgstr ""
+msgstr "ഒരു പിശകു് കാരണം ${PRODUCT_NAME} ഇന്‍സ്റ്റലേഷന്‍ സാധ്യമായില്ല. കൂടുതല്‍ വിവരങ്ങള്‍ക്കായി 'വിശദവിവരങ്ങള്‍...' ക്ലിക്ക് ചെയ്യുക."
 
 #: src/Localization/setupstrings.ulf#STRING_INSTALLATIONCOMPLETED3
 msgid  "Click 'Finish' to exit the Wizard."
@@ -297,15 +297,15 @@ msgstr "വിശദവിവരങ്ങള്‍..."
 
 #: src/Localization/setupstrings.ulf#STRING_UNINSTALLATIONPROLOGUE2
 msgid  "The ${PRODUCT_FULLNAME} Uninstallation Wizard will remove ${PRODUCT_FULLNAME} from your computer."
-msgstr ""
+msgstr "${PRODUCT_FULLNAME} നീക്കം ചെയ്യല്‍ സഹായി ${PRODUCT_FULLNAME} നീക്കം ചെയ്യും."
 
 #: src/Localization/setupstrings.ulf#STRING_UNINSTALLATION_PROLOGUE_WRONG_PRIVILEGES_CURRENT_ROOT
 msgid  "Sorry, wrong privileges. Installation was done with User privilges, but you have Root privileges."
-msgstr ""
+msgstr "ഖേദിക്കുന്നു, അധികാര ക്രമീകരണങ്ങളില്‍ പിശകുണ്ടു്! ഉപയോക്താവിനുള്ള അധികാര രീതിയിലാണു് ഇന്‍സ്റ്റോള്‍‌ ചെയ്തതു്, എന്നാല്‍ നിങ്ങള്‍ക്കു് റൂട്ട് അധികാരമാണുള്ളതു്."
 
 #: src/Localization/setupstrings.ulf#STRING_UNINSTALLATION_PROLOGUE_WRONG_PRIVILEGES_CURRENT_USER
 msgid  "Sorry, wrong privileges. Installation was done with Root privilges, but you have User privileges."
-msgstr ""
+msgstr "ഖേദിക്കുന്നു, അധികാര ക്രമീകരണങ്ങളില്‍ പിശകുണ്ടു്! റൂട്ടിനുള്ള അധികാര രീതിയിലാണു് ഇന്‍സ്റ്റോള്‍‌ ചെയ്തതു്, എന്നാല്‍ നിങ്ങള്‍ക്കു് ഉപയോക്താവിനുള്ള അധികാരമാണുള്ളതു്."
 
 #: src/Localization/setupstrings.ulf#STRING_CHOOSEUNINSTALLATIONTYPE1
 msgid  "Select the Type of Uninstallation"
@@ -321,7 +321,7 @@ msgstr "ഭാഗീകം"
 
 #: src/Localization/setupstrings.ulf#STRING_CHOOSEUNINSTALLATIONTYPE4
 msgid  "Completely removes ${PRODUCT_FULLNAME} and all its components from your system."
-msgstr ""
+msgstr "${PRODUCT_FULLNAME}-ഉം അതിന്റെ ഘടകങ്ങളും പൂര്‍ണ്ണമായി നീക്കം ചെയ്യുന്നു."
 
 #: src/Localization/setupstrings.ulf#STRING_CHOOSEUNINSTALLATIONTYPE5
 msgid  "You choose the program features you want to remove."
@@ -333,7 +333,7 @@ msgstr "പൂര്‍ണ്ണം"
 
 #: src/Localization/setupstrings.ulf#STRING_CHOOSEUNINSTALLATIONCOMPONENTS2
 msgid  "Components marked with an X will be removed. Mark the components you want to remove."
-msgstr ""
+msgstr "X ചിഹ്നമുള്ള ഘടകങ്ങള്‍ നീക്കപ്പെടുന്നു. "
 
 #: src/Localization/setupstrings.ulf#STRING_UNINSTALLATIONIMMINENT1
 msgid  "Ready to Remove"
@@ -361,19 +361,19 @@ msgstr "നീക്കം ചെയ്യല്‍ പരാജയപ്പെ�
 
 #: src/Localization/setupstrings.ulf#STRING_UNINSTALLATIONCOMPLETED2
 msgid  "The Uninstallation Wizard has successfully removed ${PRODUCT_FULLNAME} from your computer."
-msgstr ""
+msgstr "നീക്കം ചെയ്യല്‍ സഹായി ${PRODUCT_FULLNAME} വിജയകരമായി നീക്കം ചെയ്തിരിക്കുന്നു. "
 
 #: src/Localization/setupstrings.ulf#STRING_UNINSTALLATIONCOMPLETED2_PARTIAL
 msgid  "The Uninstallation Wizard has successfully removed the selected components of ${PRODUCT_NAME} from your computer."
-msgstr ""
+msgstr "${PRODUCT_NAME}-ന്റെ തെരഞ്ഞെടുത്ത ഘടകങ്ങള്‍ സഹായി വിജയകരമായി നീക്കം ചെയ്തിരിക്കുന്നു."
 
 #: src/Localization/setupstrings.ulf#STRING_UNINSTALLATIONCOMPLETED2_ABORT
 msgid  "The Uninstallation Wizard was aborted before completely removing ${PRODUCT_NAME} from your computer."
-msgstr ""
+msgstr "${PRODUCT_NAME} നീക്കം ചെയ്യല്‍ പ്രക്രിയ പൂര്‍ണ്ണമാകുന്നതിനു് മുമ്പു് സഹായിയുടെ പ്രവര്‍ത്തനം തടസ്സപ്പെട്ടു."
 
 #: src/Localization/setupstrings.ulf#STRING_UNINSTALLATIONCOMPLETED2_ERROR
 msgid  "An error has occurred. Thus the Uninstallation Wizard could not remove ${PRODUCT_NAME} from your computer successfully. Click 'Details...' for more information."
-msgstr ""
+msgstr "ഒരു പിശകു് കാരണം ${PRODUCT_NAME} നീക്കം ചെയ്യല്‍ സാധ്യമായില്ല. കൂടുതല്‍ വിവരങ്ങള്‍ക്കായി 'വിശദവിവരങ്ങള്‍...' ക്ലിക്ക് ചെയ്യുക."
 
 #: src/Localization/setupstrings.ulf#STRING_INSTALLERFACTORY_OS_NOT_SUPPORTED
 msgid  "Sorry, this Operating System is not supported yet."
@@ -385,7 +385,7 @@ msgstr "${PRODUCT_NAME}-ന്റെ പഴയ പതിപ്പ് ഇവി�
 
 #: src/Localization/setupstrings.ulf#STRING_OLDER_VERSION_INSTALLED_REMOVE
 msgid  "You have to remove the older version of ${PRODUCT_NAME} before you can install the newer one."
-msgstr ""
+msgstr "പുതിയ പതിപ്പു് ഇന്‍സ്റ്റോള്‍ ചെയ്യുന്നതിനായി ${PRODUCT_NAME}-ന്റെ പഴയ പതിപ്പു് നീക്കം ചെയ്യുക."
 
 #: src/Localization/setupstrings.ulf#STRING_NEWER_VERSION_INSTALLED_FOUND
 msgid  "A newer version of ${PRODUCT_NAME} was found on your system in:"
@@ -393,7 +393,7 @@ msgstr "${PRODUCT_NAME}-ന്റെ പുതിയ പതിപ്പ് ഇ�
 
 #: src/Localization/setupstrings.ulf#STRING_NEWER_VERSION_INSTALLED_REMOVE
 msgid  "You have to remove the newer version of ${PRODUCT_NAME} before you can install the older one."
-msgstr ""
+msgstr "പഴയ പതിപ്പു് ഇന്‍സ്റ്റോള്‍ ചെയ്യുന്നതിനായി ${PRODUCT_NAME}-ന്റെ പുതിയ പതിപ്പു് നീക്കം ചെയ്യുക."
 
 #: src/Localization/setupstrings.ulf#STRING_NEWER_VERSION_DATABASE
 msgid  "Database"
@@ -405,11 +405,11 @@ msgstr "മറ്റേതെങ്കിലും ഇന്‍സ്റ്റ�
 
 #: src/Localization/setupstrings.ulf#STRING_ROOT_PRIVILEGES_REQUIRED_1
 msgid  "The user you are logged in as cannot run the Installation Wizard."
-msgstr ""
+msgstr "ലോഗിന്‍ ചെയ്ത ഉപയോക്താവിനു് ഇന്‍സ്റ്റലേഷന്‍ സഹായി പ്രവര്‍ത്തിപ്പിക്കുവാന്‍ സാധിക്കില്ല."
 
 #: src/Localization/setupstrings.ulf#STRING_ROOT_PRIVILEGES_REQUIRED_2
 msgid  "Please log out and log back in as a user with system administrator rights."
-msgstr ""
+msgstr "ലോഗൌട്ട് ചെയ്തു് സിസ്റ്റം അഡ്മിനിസ്ട്രേറ്ററായി ലോഗിന്‍ ചെയ്യുക."
 
 #: src/Localization/setupstrings.ulf#STRING_DISCSPACE_INSUFFICIENT
 msgid  "Not enough discspace available for installation."
@@ -425,7 +425,7 @@ msgstr "സ്ഥല ലഭ്യത"
 
 #: src/Localization/setupstrings.ulf#STRING_DISCSPACE_TIP
 msgid  "Please use another directory for installation or change your module selection."
-msgstr ""
+msgstr "വേറൊരു ഡയറക്ടറിയോ അല്ലെങ്കില്‍ മറ്റൊരു ഘടകമോ തെരഞ്ഞെടുക്കുക."
 
 #: src/Localization/setupstrings.ulf#STRING_ANALYZING_DATABASE1
 msgid  "Analyzing ..."
@@ -433,11 +433,11 @@ msgstr "വിശദമായി പരിശോധന ..."
 
 #: src/Localization/setupstrings.ulf#STRING_ANALYZING_DATABASE2
 msgid  "Analyzing database\nPlease wait a moment ..."
-msgstr ""
+msgstr "ഡേറ്റാബെയിസ് വിശദമായി പരിശോധിക്കുന്നു.\nഒരു നിമിഷം ......."
 
 #: src/Localization/setupstrings.ulf#STRING_PROLOGUE_1
 msgid  "Welcome to the Installation Wizard.<p>This wizard asks you to supply configuration settings.<p>At the bottom of each page are navigation buttons that let you move through the Installation Wizard:"
-msgstr ""
+msgstr "ഇന്‍സ്റ്റലേഷന്‍ സഹായിയിലേക്ക് സ്വാഗതം.<p>ക്രമീകരണത്തിനുള്ള ചോദ്യങ്ങള്‍ക്കുള്ള ഉത്തരം നല്‍കേണ്ടതുണ്ടു്.<p>ഓരോ താളിന്റെ അടിയിലുള്ള ദിശ ബട്ടണുകള്‍ ഉപയോഗിച്ചു് ക്രമീകരിക്കാം."
 
 #: src/Localization/setupstrings.ulf#STRING_PROLOGUE_2
 msgid  "'Back' returns you to the previous page."
@@ -449,19 +449,19 @@ msgstr "അടുത്ത താളിലേക്കു് പോകുവാ�
 
 #: src/Localization/setupstrings.ulf#STRING_PROLOGUE_4
 msgid  "'Cancel' ends the Installation Wizard without installing this software."
-msgstr ""
+msgstr "സോഫ്റ്റ്‌വെയര്‍ ഇന്‍സ്റ്റോള്‍ ചെയ്യാതെ ഇന്‍സ്റ്റലേഷന്‍ സഹായിയില്‍ നിന്നും പുറത്തു് കടക്കുന്നതിനായി 'റദ്ദാക്കുക' തെരഞ്ഞെടുക്കുക."
 
 #: src/Localization/setupstrings.ulf#STRING_PROLOGUE_5
 msgid  "'Help' displays the Help with further information about the page currently displayed."
-msgstr ""
+msgstr "ഈ താളിനെപ്പറ്റിയുള്ള കൂടുതല്‍ വിവരങ്ങള്‍ക്കായി 'സഹായം' ക്ലിക്ക് ചെയ്യുക."
 
 #: src/Localization/setupstrings.ulf#STRING_PROLOGUE_6
 msgid  "'OK' exits the Help page and returns you to the Installation Wizard."
-msgstr ""
+msgstr "സഹായ താളില്‍ നിന്നും ഇന്‍സ്റ്റലേഷന്‍ സഹായിലേക്കു് പോകുന്നതിനായി 'ശരി' ക്ലിക്ക് ചെയ്യുക."
 
 #: src/Localization/setupstrings.ulf#STRING_UNINSTALLATIONPROLOGUE_1
 msgid  "Welcome to the Uninstallation Wizard.<p>This wizard asks you to supply configuration settings.<p>At the bottom of each page are navigation buttons that let you move through the Uninstallation Wizard:"
-msgstr ""
+msgstr "നീക്കം ചെയ്യല്‍ സഹായിയിലേക്ക് സ്വാഗതം.<p>ക്രമീകരണത്തിനുള്ള ചോദ്യങ്ങള്‍ക്കുള്ള ഉത്തരം നല്‍കേണ്ടതുണ്ടു്.<p>ഓരോ താളിന്റെ അടിയിലുള്ള ദിശ ബട്ടണുകള്‍ ഉപയോഗിച്ചു് ക്രമീകരിക്കാം."
 
 #: src/Localization/setupstrings.ulf#STRING_UNINSTALLATIONPROLOGUE_2
 msgid  "'Back' returns you to the previous page."
@@ -473,67 +473,67 @@ msgstr "അടുത്ത താളിലേക്കു് പോകുവാ�
 
 #: src/Localization/setupstrings.ulf#STRING_UNINSTALLATIONPROLOGUE_4
 msgid  "'Cancel' ends the Uninstallation Wizard without removing this software."
-msgstr ""
+msgstr "സോഫ്റ്റ്‌വെയര്‍ നീക്കം ചെയ്യുന്നതിനു് സഹായിയില്‍ നിന്നും പുറത്തു് കടക്കുന്നതിനായി 'റദ്ദാക്കുക' തെരഞ്ഞെടുക്കുക."
 
 #: src/Localization/setupstrings.ulf#STRING_UNINSTALLATIONPROLOGUE_5
 msgid  "'Help' displays the Help with further information about the page currently displayed."
-msgstr ""
+msgstr "ഈ താളിനെപ്പറ്റിയുള്ള കൂടുതല്‍ വിവരങ്ങള്‍ക്കായി 'സഹായം' ക്ലിക്ക് ചെയ്യുക."
 
 #: src/Localization/setupstrings.ulf#STRING_UNINSTALLATIONPROLOGUE_6
 msgid  "'OK' exits the Help page and returns you to the Uninstallation Wizard."
-msgstr ""
+msgstr "സഹായ താളില്‍ നിന്നും നീക്കം ചെയ്യല്‍ സഹായിലേക്കു് പോകുന്നതിനായി 'ശരി' ക്ലിക്ക് ചെയ്യുക."
 
 #: src/Localization/setupstrings.ulf#STRING_ACCEPTLICENSE_1
 msgid  "Before you install this product, you must read and accept the entire Software License Agreement under which this software is licensed for your use."
-msgstr ""
+msgstr "ഇന്‍സ്റ്റലേഷനു മുമ്പായി, ലൈസന്‍സ് എഗ്രീമെന്റ് അംഗീകരിച്ചു എന്നുറപ്പാക്കുക. "
 
 #: src/Localization/setupstrings.ulf#STRING_ACCEPTLICENSE_2
 msgid  "If you have read and accept all the terms of the entire Software License Agreement, click 'Accept License' to continue with the installation."
-msgstr ""
+msgstr "സോഫ്റ്റ്‌വെയര്‍ ലൈസന്‍സ് എഗ്രീമെന്റ് സ്വീകാര്യമെങ്കില്‍ ലൈസന്‍സ് അംഗീകരിച്ചു് തുടരുക."
 
 #: src/Localization/setupstrings.ulf#STRING_ACCEPTLICENSE_3
 msgid  "If you do not accept all the terms of the Software License Agreement, click 'Decline' to end the Installation Wizard without installing this product."
-msgstr ""
+msgstr "സോഫ്റ്റ്‌വെയര്‍ ലൈസന്‍സ് എഗ്രീമെന്റ് സ്വീകാര്യമല്ലെങ്കില്‍, 'അസ്വീകാര്യം' തെരഞ്ഞെടുക്കുക."
 
 #: src/Localization/setupstrings.ulf#STRING_CHOOSEINSTALLATIONTYPE_1
 msgid  "Select the type of product installation to perform from the following choices. This will determine how much information you need to provide for product configuration."
-msgstr ""
+msgstr "പ്രയോഗ ക്രമീകരണത്തിനാവശ്യമായ വിവരങ്ങള്‍ നിജപ്പെടുത്തുന്നതിനായി, അനുയോജ്യമായ ഇന്‍സ്റ്റലേഷന്‍ രീതി തെരഞ്ഞെടുക്കുക."
 
 #: src/Localization/setupstrings.ulf#STRING_CHOOSEDIRECTORY_1
 msgid  "It is recommended that you install this product in the directory suggested by this Installation Wizard. <p>To choose a different location, click 'Browse...' or specify the full path of the directory to use in the text box below. <p>If this product is already installed, you cannot change the destination directory."
-msgstr ""
+msgstr "ഇന്‍സ്റ്റോള്‍ ചെയ്തിട്ടുള്ള പ്രയോഗത്തിന്റെ ഡയറക്ടറി മാറ്റുവാന്‍ സാധ്യമല്ല.ഇന്‍സ്റ്റലേഷന്‍ സഹായി നിര്‍ദ്ദേശിക്കുന്ന ഡയറക്ടറിയില്‍ ഇന്‍സ്റ്റോള്‍ ചെയ്യുക. <p>വ്യത്യസ്ഥമായ സ്ഥലത്തു് ഇന്‍സ്റ്റോള്‍ ചെയ്യണമെങ്കില്‍, 'തെരയുക' അമര്‍ത്തി തെരഞ്ഞെടുക്കുകയോ അല്ലെങ്കില്‍ ആ ഡയറക്ടറിയുടെ പൂര്‍ണ്ണ രൂപം ടെക്സ്റ്റ് ബോക്സില്‍ ടൈപ്പ് ചെയ്യുക.<p>"
 
 #: src/Localization/setupstrings.ulf#STRING_CHOOSECOMPONENTS_1
 msgid  "Components marked in color will be installed. Click the icon of a component to mark or unmark the component.<p>All already installed components cannot be selected for installation."
-msgstr ""
+msgstr "ഇന്‍സ്റ്റോള്‍ ചെയ്ത ഘടകങ്ങള്‍ വീണ്ടും ഇന്‍സ്റ്റോള്‍ ചെയ്യപ്പെടുകയില്ല. ഘടകങ്ങളില്‍ ക്ലിക്ക് ചെയ്തു് തെരഞ്ഞെടുക്കുകയോ തെരഞ്ഞെടുക്കാതിരിക്കുകയോ ചെയ്യാം. തെരഞ്ഞെടുക്കുമ്പോള്‍ നിറത്തില്‍ അടയാളപ്പെടുന്നവ ഇന്‍സ്റ്റോള്‍ ചെയ്യപ്പെടും."
 
 #: src/Localization/setupstrings.ulf#STRING_INSTALLATIONIMMINENT_1
 msgid  "The listed components are ready for installation based on your configuration settings. <p>If you are satisfied with your selection, click 'Install Now' to begin. <p>To check or modify your settings on the previous pages, click 'Back'."
-msgstr ""
+msgstr "തെരഞ്ഞെടുത്ത ക്രമീകരണപ്രകാരം ഘടകങ്ങള്‍ ഇന്‍സ്റ്റോള്‍ ചെയ്യുപ്പെടുന്നതാണു്. <p>ഇന്‍സ്റ്റലേഷനു് വേണ്ടി 'ഇന്‍സ്റ്റോള്‍' ക്ലിക്ക് ചെയ്യുക. <p> മുമ്പുള്ള താളുകളില്‍ സജ്ജീകരണങ്ങള്‍ക്കു് മാറ്റം വരുത്തുന്നതിനായി 'പുറകോട്ട്' ക്ലിക്ക് ചെയ്യുക."
 
 #: src/Localization/setupstrings.ulf#STRING_UNINSTALLATIONIMMINENT_1
 msgid  "The listed components are ready for uninstallation based on your configuration settings. <p>If you are satisfied with your selection, click 'Remove Now' to begin. <p>To check or modify your settings on the previous pages, click 'Back'."
-msgstr ""
+msgstr "തെരഞ്ഞെടുത്ത ക്രമീകരണപ്രകാരം ഘടകങ്ങള്‍ നീക്കം ചെയ്യുപ്പെടുന്നതാണു്. <p>ഇതിനായി 'നീക്കം ചെയ്യുക' ക്ലിക്ക് ചെയ്യുക. <p> മുമ്പുള്ള താളുകളില്‍ സജ്ജീകരണങ്ങള്‍ക്കു് മാറ്റം വരുത്തുന്നതിനായി 'പുറകോട്ട്' ക്ലിക്ക് ചെയ്യുക."
 
 #: src/Localization/setupstrings.ulf#STRING_INSTALLATIONONGOING_1
 msgid  "This page indicates the progress of the installation with the aid of a progress bar. To abort the installation process, click 'Stop'."
-msgstr ""
+msgstr "ഇവിടെ കാണുന്നതു് ഇന്‍സ്റ്റലേഷന്‍ പുരോഗതി... ഇന്‍സ്റ്റലേഷന്‍ നിരാകരിക്കുന്നതിനായി 'നിര്‍ത്തുക' ക്ലിക്ക് ചെയ്യുക."
 
 #: src/Localization/setupstrings.ulf#STRING_UNINSTALLATIONONGOING_1
 msgid  "This page indicates the progress of the uninstallation with the aid of a progress bar. To abort the uninstallation, click 'Stop'."
-msgstr ""
+msgstr "ഇവിടെ കാണുന്നതു് നീക്കം ചെയ്യല്‍ പുരോഗതി... ഈ പ്രക്രിയ നിരാകരിക്കുന്നതിനായി 'നിര്‍ത്തുക' ക്ലിക്ക് ചെയ്യുക."
 
 #: src/Localization/setupstrings.ulf#STRING_CHOOSEUNINSTALLATIONTYPE_1
 msgid  "Complete: This will remove all installed components of your version.<p>Partial: This removes only the components you will choose out of the components list."
-msgstr ""
+msgstr "പൂര്‍ണ്ണം: എല്ലാ ഘടകങ്ങളും പരിപൂര്‍ണ്ണമായി നീക്കപ്പെടും.<p>ഭാഗീകം: തെരഞ്ഞെടുത്ത ഘടകങ്ങള്‍ മാത്രം നീക്കപ്പെടും"
 
 #: src/Localization/setupstrings.ulf#STRING_CHOOSEUNINSTALLATIONCOMPONENTS_1
 msgid  "Components marked with an X will be removed. Click next to a component to mark or unmark it with an X."
-msgstr ""
+msgstr "X ചിഹ്നമുള്ള ഘടകങ്ങള്‍ നീക്കപ്പെടുന്നു. X ചിഹ്നം നീക്കം ചെയ്യുന്നതിനോ ഇടുന്നതിനോ ആ ഘടകത്തില്‍ ക്ലിക്ക് ചെയ്യുക."
 
 #: src/Localization/setupstrings.ulf#STRING_PACKAGEFORMAT_NOT_SUPPORTED
 msgid  "This package format is currently not supported for your operating system!"
-msgstr ""
+msgstr "പാക്കേജ് രൂപകല്‍പ്പനയ്ക്ക് ഓപ്പറേറ്റിങ് സിസ്റ്റം പിന്തുണയില്ല!"
 
 #: src/Localization/setupstrings.ulf#STRING_OPERATING_SYSTEM
 msgid  "Operating system"
@@ -553,7 +553,7 @@ msgstr "ഇന്‍സ്റ്റലേഷന്‍ ഘടകങ്ങള്�
 
 #: src/Localization/setupstrings.ulf#STRING_NO_COMPONENTS_SELECTED_2
 msgid  "Click 'OK' to select one or more components for installation or to exit the Installation Wizard."
-msgstr ""
+msgstr "തിരഞ്ഞെടുക്കുന്ന ഘടകങ്ങള്‍ ഇന്‍സ്റ്റോള്‍ ചെയ്യുന്നു. സഹായയില്‍ നിന്നും പുറത്തു് കടക്കുന്നതിനായി 'ശരി' അമര്‍ത്തുക."
 
 #: src/Localization/setupstrings.ulf#STRING_NO_LANGUAGE_SELECTED_1
 msgid  "No languages have been selected for installation."
@@ -561,7 +561,7 @@ msgstr "ഭാഷ തെരഞ്ഞെടുത്തിട്ടില്ല."
 
 #: src/Localization/setupstrings.ulf#STRING_NO_LANGUAGE_SELECTED_2
 msgid  "Click 'OK' to select one or more languages for installation or to exit the Installation Wizard."
-msgstr ""
+msgstr "തിരഞ്ഞെടുക്കുന്ന ഭാഷ/കള്‍ ഇന്‍സ്റ്റോള്‍ ചെയ്യുന്നു. സഹായയില്‍ നിന്നും പുറത്തു് കടക്കുന്നതിനായി 'ശരി' അമര്‍ത്തുക."
 
 #: src/Localization/setupstrings.ulf#STRING_NO_APPLICATION_SELECTED_1
 msgid  "No applications have been selected for installation."
@@ -569,7 +569,7 @@ msgstr "ഇന്‍സ്റ്റലേഷനുവേണ്ടി പ്ര�
 
 #: src/Localization/setupstrings.ulf#STRING_NO_APPLICATION_SELECTED_2
 msgid  "Click 'OK' to select one or more application for installation or to exit the Installation Wizard."
-msgstr ""
+msgstr "തിരഞ്ഞെടുക്കുന്ന പ്രയോഗം ഇന്‍സ്റ്റോള്‍ ചെയ്യുന്നു. സഹായയില്‍ നിന്നും പുറത്തു് കടക്കുന്നതിനായി 'ശരി' അമര്‍ത്തുക."
 
 #: src/Localization/setupstrings.ulf#STRING_NOTHING_TO_UNINSTALL
 msgid  "Nothing to uninstall"
@@ -581,7 +581,7 @@ msgstr "നീക്കം ചെയ്യപ്പെടേണ്ട ഘടക�
 
 #: src/Localization/setupstrings.ulf#STRING_NO_UNINSTALLCOMPONENTS_SELECTED_2
 msgid  "Click 'OK' to select one or more components for uninstallation or to exit the Uninstallation Wizard."
-msgstr ""
+msgstr "തിരഞ്ഞെടുക്കുന്ന ഘടകങ്ങള്‍ നീക്കപ്പെടുകയില്ല. സഹായയില്‍ നിന്നും പുറത്തു് കടക്കുന്നതിനായി 'ശരി' അമര്‍ത്തുക."
 
 #: src/Localization/setupstrings.ulf#STRING_ALL_LANGUAGECOMPONENTS_SELECTED_1
 msgid  "All language components have been selected for uninstallation."
@@ -589,7 +589,7 @@ msgstr "നീക്കം ചെയ്യുന്നതിനുള്ള എ�
 
 #: src/Localization/setupstrings.ulf#STRING_ALL_LANGUAGECOMPONENTS_SELECTED_2
 msgid  "Click 'OK' to select one or more language components not for uninstallation or to exit the Uninstallation Wizard."
-msgstr ""
+msgstr "തിരഞ്ഞെടുക്കുന്ന ഭാഷാ ഘടകങ്ങള്‍ നീക്കപ്പെടുകയില്ല. സഹായയില്‍ നിന്നും പുറത്തു് കടക്കുന്നതിനായി 'ശരി' അമര്‍ത്തുക."
 
 #: src/Localization/setupstrings.ulf#STRING_ALL_APPLICATIONCOMPONENTS_SELECTED_1
 msgid  "All application components have been selected for uninstallation."
@@ -597,7 +597,7 @@ msgstr "നീക്കം ചെയ്യുന്നതിനുള്ള എ�
 
 #: src/Localization/setupstrings.ulf#STRING_ALL_APPLICATIONCOMPONENTS_SELECTED_2
 msgid  "Click 'OK' to select one or more application components not for uninstallation or to exit the Uninstallation Wizard."
-msgstr ""
+msgstr "തിരഞ്ഞെടുക്കുന്ന ഘടകങ്ങള്‍ നീക്കപ്പെടുകയില്ല. സഹായയില്‍ നിന്നും പുറത്തു് കടക്കുന്നതിനായി 'ശരി' അമര്‍ത്തുക."
 
 #: src/Localization/setupstrings.ulf#STRING_CHANGE_SELECTION
 msgid  "Please change selection"

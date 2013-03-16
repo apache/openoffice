@@ -45,7 +45,7 @@ msgstr ""
 
 #: source/all/crashrep.ulf#%WELCOME_BODY2%
 msgid  "It's easy - just send the report without any further effort on your part by clicking 'Send' in the next dialog, or you can briefly describe how the error occurred and then click 'Send'. If you want to see the report, click the 'Show Report' button. No data will be sent if you click 'Do Not Send'.\n\n"
-msgstr ""
+msgstr "E ușor, nu trebuie decât să trimiteți raportul apăsând butonul „Trimite” din următorul dialog. Înainte de asta puteți să descrieți pe scurt cum a apărut eroarea. Dacă doriți să vedeți conținutul raportului, apăsați butonul „Arată raportul”. Dacă apăsați „Nu trimite” nu se va trimite nicio informație.\n\n"
 
 #: source/all/crashrep.ulf#%WELCOME_BODY3%
 msgid  "Customer Privacy\nThe information gathered is limited to data concerning the state of %PRODUCTNAME% %PRODUCTVERSION% when the error occurred. Other information about passwords or document contents is not collected.\n\nThe information will only be used to improve the quality of %PRODUCTNAME% and will not be shared with third parties.\nFor more information on Apache OpenOffice's privacy policy, visit\n"
@@ -81,7 +81,7 @@ msgstr ""
 
 #: source/all/crashrep.ulf#%ENTER_TITLE%
 msgid  "Which type of document (e.g. presentation) were you using when the error occurred?"
-msgstr ""
+msgstr "Ce tip de document (de exemplu, o prezentare) foloseați când a apărut eroarea?"
 
 #: source/all/crashrep.ulf#%ALLOW_CONTACT%
 msgid  "~I allow Apache OpenOffice to contact me regarding this report."
@@ -121,23 +121,23 @@ msgstr "Salvează raportul în"
 
 #: source/all/crashrep.ulf#%ERROR_MSG_SIMPLE_MAPI%
 msgid  "The error report could not be sent because the default e-mail program does not support MAPI.\n Please use a MAPI-compatible e-mail program."
-msgstr ""
+msgstr "Raportul erorii nu a putut fi trimis pentru că programul implicit de corespondență electronică nu suportă MAPI.\n Vă rugăm să încercați să folosiți un program de email compatibil MAPI."
 
 #: source/all/crashrep.ulf#%ERROR_MSG_DISK_FULL%
 msgid  "The error report could not be temporarily saved and could therefore not be sent."
-msgstr ""
+msgstr "Raportul erorii nu a putut fi salvat temporar și din acest motiv nu a putut fi trimis."
 
 #: source/all/crashrep.ulf#%ERROR_MSG_SENDMAIL%
 msgid  "The error report could not be sent because 'sendmail' could not be started.\nPlease check the 'sendmail' settings."
-msgstr ""
+msgstr "Raportul erorii nu a putut fi trimis deoarece nu poate fi pornit „sendmail”.\nVă rugăm să verificați setările „sendmail”."
 
 #: source/all/crashrep.ulf#%ERROR_MSG_PROXY%
 msgid  "The error report could not be sent. Please check the proxy settings under 'Options' in the Error Report Tool."
-msgstr ""
+msgstr "Raportul erorii nu a putut fi trimis. Vă rugăm să verificați setările pentru proxy din meniul „Opțiuni” al uneltei de raportat erori."
 
 #: source/all/crashrep.ulf#%ERROR_MSG_NOCONNECT%
 msgid  "The error report could not be sent because there is no Internet connection. Please check your Internet settings."
-msgstr ""
+msgstr "Raportul de eroare nu a putut fi trimis deoarece nu există conexiune la Internet. Vă rugăm să vă verificați setările pentru Internet."
 
 #: source/all/crashrep.ulf#%OPTIONS_BUTTON%
 msgid  "~Options..."
@@ -173,7 +173,7 @@ msgstr "~Port"
 
 #: source/all/crashrep.ulf#%PROXY_SETTINGS_DESCRIPTION%
 msgid  "The %PRODUCTNAME% Error Report tool needs to be connected to the Internet to be able to send error reports.\n\nCompanies often use proxy servers in conjunction with a firewall to protect the network.\n\nIf this applies to your situation, you have to specify the address and port for the server."
-msgstr ""
+msgstr "Unealta de raportare a erorilor din %PRODUCTNAME% are nevoie sa fie conectată la Internet pentru a putea trimite rapoartele de erori.\n\nAdesea companiile folosesc servere proxy împreună cu paravane de protecție pentru a-și proteja rețeaua.\n\nDacă vă aflați în această situație, trebuie să specificați adresa și portul serverului."
 
 #: source/all/crashrep.ulf#%SENDING_REPORT_HEADER%
 msgid  "Sending Error Report"
@@ -201,8 +201,8 @@ msgstr "-p <ID proces>"
 
 #: source/all/crashrep.ulf#%MSG_PARAM_PROCESSID_DESCRIPTION%
 msgid  "Assigns the %PRODUCTNAME% process ID (PID) to the Error Report Tool"
-msgstr ""
+msgstr "Atribuie identificatorul de proces (PID) %PRODUCTNAME% uneltei de raportat erori"
 
 #: source/all/crashrep.ulf#%MSG_PARAM_HELP_DESCRIPTION%
 msgid  "Shows this help text.\nDetailed information can be found in the Setup Guide."
-msgstr ""
+msgstr "Afișează acest text de ajutor.\nInformații detaliate pot fi găsite în ghidul de instalare."

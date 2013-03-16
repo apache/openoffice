@@ -437,7 +437,7 @@ msgstr "FACTDOUBLE"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Workday.1.String.Text
 msgid  "Returns the serial number of the date before or after a specified number of workdays"
-msgstr ""
+msgstr "നിര്‍ദ്ദിഷ്ട പ്രവര്‍ത്തനദിവസങ്ങള്‍ക്കു് മുമ്പോ കഴിഞ്ഞോ ഉള്ള തീയതിയുടെ ക്രമ സംഖ്യ തിരികെ നല്കുന്നു"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Workday.2.String.Text
 msgid  "Start date"
@@ -461,11 +461,11 @@ msgstr "അവധികള്‍"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Workday.7.String.Text
 msgid  "List of date values of days off (vacation, holidays, etc.)"
-msgstr ""
+msgstr "അവധി ദിവസങ്ങളുടെ തീയതി മൂല്യങ്ങള്‍ ലിസ്റ്റ് ചെയ്യുക (വിശ്രമകാലം, പൊതുഅവധു, മുതലായവ)."
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Yearfrac.1.String.Text
 msgid  "Returns the number of whole days between 'start date' and 'end date' as a year fraction"
-msgstr ""
+msgstr "ആരംഭതീയതിയ്ക്കും അവസാനതീയതിയ്ക്കും മദ്ധ്യയുള്ള മുഴുവന്‍ തീയതിയകുളെടുയും എണ്ണം ഒരു വര്‍ഷത്തിന്റെ ഭാഗമായി തിരികെ നല്കുന്നു."
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Yearfrac.2.String.Text
 msgid  "Start date"
@@ -493,7 +493,7 @@ msgstr "പലിശ ദിവങ്ങളുടെ നിര്‍ണ്ണയ�
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Edate.1.String.Text
 msgid  "Returns the serial number of the date that is a specified number of months before or after the start date"
-msgstr ""
+msgstr "നിര്‍ദ്ദിഷ്ട ആരംഭ തീയതികള്‍ക്കു് മുമ്പോ കഴിഞ്ഞോ ഉള്ള മാസങ്ങളുടെ എണ്ണം തീയതിയുടെ ക്രമ സംഖ്യ ആയി തിരികെ നല്കുന്നു"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Edate.2.String.Text
 msgid  "Start date"
@@ -513,7 +513,7 @@ msgstr "ആരംഭ ദിവസത്തിനു് മുമ്പോ ശേ
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Weeknum.1.String.Text
 msgid  "Returns the number of the calendar week in which the specified date occurs."
-msgstr ""
+msgstr "നിര്‍ദ്ദിഷ്ട തീയതിയുള്ള ആകെ കലണ്ടര്‍ ആഴ്ച തിരികെ നല്കുന്നു."
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Weeknum.2.String.Text
 msgid  "Date"
@@ -533,7 +533,7 @@ msgstr "1 മുതല്‍ മൂന്നു വരെയുള്ള സം�
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Eomonth.1.String.Text
 msgid  "Returns the serial number of the last day of the month that comes a certain number of months before or after the start date"
-msgstr ""
+msgstr "നിര്‍ദ്ദിഷ്ട ആരംഭ തീയതിക്ക് മുമ്പോ കഴിഞ്ഞോ ഉള്ള ചില മാസങ്ങള്‍ മാസത്തിന്റെ അവസാന ദിവസത്തിന്റെ ക്രമ സംഖ്യ തിരികെ നല്കുന്നു"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Eomonth.2.String.Text
 msgid  "Start date"
@@ -577,7 +577,7 @@ msgstr "അവധികള്‍"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Networkdays.7.String.Text
 msgid  "List of date values representing days off (vacation, holidays, etc.)"
-msgstr ""
+msgstr "അവധി ദിവസങ്ങളുടെ തീയതി മൂല്യങ്ങള്‍ ലിസ്റ്റ് ചെയ്യുക (വിശ്രമകാലം, പൊതുഅവധു, മുതലായവ)."
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Iseven.1.String.Text
 msgid  "Returns the value 'true' if the number is even"
@@ -613,7 +613,7 @@ msgstr "സംഖ്യ"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Multinomial.3.String.Text
 msgid  "Number or list of numbers for which you want the multinomial coefficient"
-msgstr ""
+msgstr "താങ്കള്‍ക്ക് അനേക നോമിനല്‍  കോയിഫിഷ്യന്റ് ആവശ്യമായ സംഖ്യ അഥവാ സംഖ്യകളുടെ ലിസ്റ്റ്."
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Seriessum.1.String.Text
 msgid  "Returns the sum of a power series"
@@ -649,7 +649,7 @@ msgstr "ഗുണകം"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Seriessum.9.String.Text
 msgid  "Set of coefficients by which each successive power of the variable x is multiplied"
-msgstr ""
+msgstr "കോയിഫിഷന്റിന്റെ കൂട്ടത്തിനെ ഓരോന്നിന്റെയും വെരിയബിള്‍ x പടിപടിയായ പവറുകള്‍ കൌണ്ട് ഗുണിക്കുക."
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Quotient.1.String.Text
 msgid  "Returns the integer portion of a division"
@@ -673,7 +673,7 @@ msgstr "ഹാരകം"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Mround.1.String.Text
 msgid  "Returns a number rounded to a specified multiple"
-msgstr ""
+msgstr "നിര്‍ദ്ദിഷ്ട ഗുണനത്തിന്റെ സംഖ്യ ഗുണിതത്തിന്റെ പൂര്‍ണ്ണ സംഖ്യ ആക്കി തിരികെ നല്കും."
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Mround.2.String.Text
 msgid  "Number"
@@ -705,7 +705,7 @@ msgstr "പൈ ഗുണിച്ച സംഖ്യ"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Randbetween.1.String.Text
 msgid  "Returns a random integer between the numbers you specify"
-msgstr ""
+msgstr "തങ്കള്‍ നിര്‍ദ്ദേശിച്ച സംഖ്യകളുടെ മദ്ധ്യയുള്ള ക്രമത്തിലല്ലാത്ത പൂര്‍ണ്ണ സംഖ്യ തിരികെ നല്കും."
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Randbetween.2.String.Text
 msgid  "Bottom"
@@ -1173,7 +1173,7 @@ msgstr "വിഷമ സംഖ്യ ഉയര്‍ത്തേണ്ട കഴ
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Imargument.1.String.Text
 msgid  "Returns the argument theta, an angle expressed in radians"
-msgstr ""
+msgstr "തീറ്റാ ആര്‍ഗ്യുമെന്റ് തിരികെ നല്കുന്നു, റേഡിയനില്‍ ആവിഷ്കരിച്ചിരിക്കുന്ന കോണ്‍."
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Imargument.2.String.Text
 msgid  "Complex number"
@@ -1461,7 +1461,7 @@ msgstr ""
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Complex.1.String.Text
 msgid  "Converts real and imaginary coefficients into a complex number"
-msgstr ""
+msgstr "യഥാര്‍ത്ഥവും സാങ്കല്പികവുമായ ഗുണകം വിഷയസംഖ്യയിലേക്ക് പരിവര്‍ത്തനം ചെയ്യുക."
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Complex.2.String.Text
 msgid  "Real num"
@@ -1489,7 +1489,7 @@ msgstr "പ്രത്യയം"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Convert.1.String.Text
 msgid  "Converts a number from one measurement system to another"
-msgstr ""
+msgstr "ഒരു അളക്കുന്ന സിസ്റ്റത്തില്‍ നിന്നും മറ്റൊന്നിലേക്ക് പരിവര്‍ത്തനം ചെയ്യുക."
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Convert.2.String.Text
 msgid  "Number"
@@ -1517,7 +1517,7 @@ msgstr "ഫലത്തിന്റെ ഏകകം"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Amordegrc.1.String.Text
 msgid  "Returns the prorated linear depreciation of an asset for each accounting period"
-msgstr ""
+msgstr "ഓരോ അക്കൌണ്ടിങ്ങ് കാലത്തും നേരത്തെ നിശ്ചയിച്ച ആസ്തിയുടെ ലീനിയര്‍ മൂല്യശോഷണം തിരികെ നല്കുക."
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Amordegrc.2.String.Text
 msgid  "Cost"
@@ -1577,7 +1577,7 @@ msgstr "ഉപയോഗിക്കുവാനുള്ള വര്‍ഷം"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Amorlinc.1.String.Text
 msgid  "Returns the prorated linear depreciation of an asset for each accounting period"
-msgstr ""
+msgstr "ഓരോ അക്കൌണ്ടിങ്ങ് കാലത്തും നേരത്തെ നിശ്ചയിച്ച ആസ്തിയുടെ ലീനിയര്‍ മൂല്യശോഷണം തിരികെ നല്കുക."
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Amorlinc.2.String.Text
 msgid  "Cost"
@@ -1637,7 +1637,7 @@ msgstr "ഉപയോഗിക്കുവാനുള്ള വര്‍ഷം"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Accrint.1.String.Text
 msgid  "Returns the accrued interest for a security that pays periodic interest"
-msgstr ""
+msgstr "കാലാകാലങ്ങളില്‍ സുരക്ഷിതത്വത്തിനായി പലിശ നല്കുന്നതിന്റെ കൂട്ടുപലിശ തിരികെ നല്കുക."
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Accrint.2.String.Text
 msgid  "Issue"
@@ -1697,7 +1697,7 @@ msgstr "ബേസിസ്"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Accrintm.1.String.Text
 msgid  "Returns the accrued interest for a security that pays interest at maturity"
-msgstr ""
+msgstr "കാലാവധി പൂര്‍ത്തിയാകുമ്പോള്‍ പലിശ നല്കുന്ന കൂട്ടുപലിശ തിരികെ നല്കുക."
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Accrintm.2.String.Text
 msgid  "Issue"
@@ -1741,7 +1741,7 @@ msgstr "ബേസിസ്"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Received.1.String.Text
 msgid  "Returns the amount paid out at maturity for a fully invested security"
-msgstr ""
+msgstr "മുഴുവനായി നിക്ഷേപിച്ച സെക്യുരിറ്റിയ്ക്ക്  കാലാവധി പൂര്‍ത്തിയാകുമ്പോള്‍ തുക അടയ്ക്കുന്നത് തിരിച്ചു നല്കുക."
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Received.2.String.Text
 msgid  "Settlement"
@@ -1829,7 +1829,7 @@ msgstr "ബേസിസ്"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Duration.1.String.Text
 msgid  "Returns the annual Macaulay duration of a security with periodic interest payments"
-msgstr ""
+msgstr "കാലാകാലങ്ങളില്‍ പലിശ നല്കുന്ന വാര്‍ഷിക മാക്യൂലെ കാലാവധി തിരികെ നല്കുക"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Duration.2.String.Text
 msgid  "Settlement"
@@ -1901,7 +1901,7 @@ msgstr "കാലാവധി"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Cumprinc.1.String.Text
 msgid  "Returns the cumulative principal on a loan to be paid between two periods"
-msgstr ""
+msgstr "രണ്ട് കാലങ്ങളിലേയും കൂട്ടിയ മുതലിനു് അടയ്ക്കേണ്ട ലോണ്‍ തിരികെ നല്കുന്നു."
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Cumprinc.2.String.Text
 msgid  "Rate"
@@ -2005,7 +2005,7 @@ msgstr "പക്വതയുടെ വിഭാഗം"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Price.1.String.Text
 msgid  "Returns the price per 100 currency units face value of a security that pays periodic interest"
-msgstr ""
+msgstr "കാലാകാലങ്ങളില്‍ പലിശ നല്കുന്ന 100 നാണ്യ യൂണിറ്റിന‌് ആനുപാതികമായ വിലയുള്ള സെക്യൂരിറ്റിയുടെ ഫേസ് മൂല്യം തിരികെ നല്കുക."
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Price.2.String.Text
 msgid  "Settlement"
@@ -2065,7 +2065,7 @@ msgstr "ബേസിസ്"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Pricedisc.1.String.Text
 msgid  "Returns the price per 100 currency units face value of a discounted security"
-msgstr ""
+msgstr "കാലാകാലങ്ങളില്‍ പലിശ നല്കുന്ന 100 കറന്‍സി യൂണിറ്റിനു് ആനുപാതികമായ വിലയുള്ള ഇളവുകളുള്ള സെക്യൂരിറ്റിയുടെ ഫേസ് മൂല്യം തിരികെ നല്കുക."
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Pricedisc.2.String.Text
 msgid  "Settlement"
@@ -2109,7 +2109,7 @@ msgstr "ബേസിസ്"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Pricemat.1.String.Text
 msgid  "Returns the price per 100 currency units face value of a security that pays interest at maturity"
-msgstr ""
+msgstr "കാലാവധി പൂര്‍ത്തിയാകുമ്പോള്‍ പലിശ നല്കുന്ന 100 കറന്‍സി യൂണിറ്റിന് ആനുപാതികമായ വിലയുള്ള സെക്യൂരിറ്റിയുടെ ഫേസ് മൂല്യം തിരികെ നല്കുക."
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Pricemat.2.String.Text
 msgid  "Settlement"
@@ -2161,7 +2161,7 @@ msgstr "ബേസിസ്"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Mduration.1.String.Text
 msgid  "Returns the Macaulay modified duration for a security with an assumed par value of 100 currency units"
-msgstr ""
+msgstr "Returns the Macaulay modified duration for a security with an assumed par value of 100 currency units"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Mduration.2.String.Text
 msgid  "Settlement"
@@ -2233,7 +2233,7 @@ msgstr "കാലാവധി"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Dollarfr.1.String.Text
 msgid  "Converts a price expressed as a decimal into a price expressed as a fraction"
-msgstr ""
+msgstr "ദശാംശത്തിലുള്ള വില ഭിന്നസംഖ്യയിലുള്ള വിലയിലേക്ക് പരിവര്‍ത്തനം ചെയ്യുക."
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Dollarfr.2.String.Text
 msgid  "Decimal dollar"
@@ -2253,7 +2253,7 @@ msgstr "ഹാരകം"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Dollarde.1.String.Text
 msgid  "Converts a price expressed as a fraction into a price expressed as a decimal"
-msgstr ""
+msgstr "ഭിന്ന സംഖ്യയിലുള്ള വില ദശാംശ സംഖ്യയിലുള്ള വിലയിലേക്ക് പരിവര്‍ത്തനം ചെയ്യുക."
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Dollarde.2.String.Text
 msgid  "Fractional dollar"
@@ -2377,7 +2377,7 @@ msgstr "ബേസിസ്"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Yieldmat.1.String.Text
 msgid  "Returns the annual yield of a security that pays interest at maturity"
-msgstr ""
+msgstr "കാലാവധി പൂര്‍ത്തിയാകുമ്പോള്‍ പലിശ നല്കുന്ന സെക്യൂരിറ്റിയുടെ വരുമാനം തിരികെ നല്കുക."
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Yieldmat.2.String.Text
 msgid  "Settlement"
@@ -2513,7 +2513,7 @@ msgstr "വില"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Oddfprice.1.String.Text
 msgid  "Returns the price per $100 face value of a security with an odd first period"
-msgstr ""
+msgstr " ഫേസ് മൂല്യം $ 100  വിലയുള്ള ഒറ്റസംഖ്യ ആദ്യത്തെ കാലാവധിയുള്ള സെക്യൂരിറ്റി  തിരികെ നല്കുക"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Oddfprice.2.String.Text
 msgid  "Settlement"
@@ -2665,7 +2665,7 @@ msgstr "ബേസിസ്"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Oddlprice.1.String.Text
 msgid  "Returns the price per $100 face value of a security with an odd last period"
-msgstr ""
+msgstr "ഫേസ് മൂല്യം $ 100  വിലയുള്ള ഒറ്റസംഖ്യ അവസാനത്തെ കാലാവധിയുള്ള സെക്യൂരിറ്റി തിരികെ നല്കുക"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Oddlprice.2.String.Text
 msgid  "Settlement"
@@ -2801,7 +2801,7 @@ msgstr "ബേസിസ്"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Xirr.1.String.Text
 msgid  "Returns the internal rate of return for a non-periodic schedule of payments"
-msgstr ""
+msgstr "കാലാവധിയിലില്ലാത്ത ഷെഡ്യൂള്‍ പെയ്മന്റിന്റെ ആന്തരിക വരവിന്റെ നിരക്ക് തിരികെ നല്കുക"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Xirr.2.String.Text
 msgid  "Values"
@@ -2829,7 +2829,7 @@ msgstr "അനുമാനം"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Xnpv.1.String.Text
 msgid  "Returns the net present value for a non-periodic schedule of payments"
-msgstr ""
+msgstr "കാലാവധിയിലില്ലാത്ത ഷെഡ്യൂള്‍ പെയ്മന്റിന്റെ  ഇപ്പോഴത്തെ മുഴുവന്‍ മൂല്യവും തിരികെ നല്കുക"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Xnpv.2.String.Text
 msgid  "Rate"
@@ -2901,7 +2901,7 @@ msgstr "ബേസിസ്"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Coupncd.1.String.Text
 msgid  "Returns the first coupon date after the settlement date"
-msgstr ""
+msgstr "ഒത്തുതീര്‍പ്പ് തീയതിയ്ക്ക് ശേഷമുള്ള ആദ്യത്തെ കൂപ്പണ്‍ തീയതി തിരികെ നല്കുക."
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Coupncd.2.String.Text
 msgid  "Settlement"
@@ -2937,7 +2937,7 @@ msgstr "ബേസിസ്"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Coupdays.1.String.Text
 msgid  "Returns the number of days in the coupon period containing the settlement date"
-msgstr ""
+msgstr "ഒത്തുതീര്‍പ്പ് തീയതിയുള്ള കൂപ്പണ്‍ കാലാവധിയിലെ ദിവസങ്ങള്‍ തിരികെ നല്കുക."
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Coupdays.2.String.Text
 msgid  "Settlement"
@@ -2973,7 +2973,7 @@ msgstr "ബേസിസ്"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Coupdaysnc.1.String.Text
 msgid  "Returns the number of days from the settlement date to the next coupon date"
-msgstr ""
+msgstr "ഒത്തുതീര്‍പ്പ് തീയതി മുതല്‍ അടുത്ത കൂപ്പണ്‍ തീയതി വരെയുള്ള ദിവസങ്ങള്‍ തിരികെ നല്കുക."
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Coupdaysnc.2.String.Text
 msgid  "Settlement"
@@ -3009,7 +3009,7 @@ msgstr "ബേസിസ്"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Coupdaybs.1.String.Text
 msgid  "Returns the number of days from the beginning of the coupon period to the settlement date"
-msgstr ""
+msgstr "കൂപ്പണ്‍ കാലാവധി ആരംഭിക്കുന്നതു മുതല്‍ ഒത്തുതീര്‍പ്പ് വരെയുള്ള ദിവസങ്ങള്‍ തിരികെ നല്കുക."
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Coupdaybs.2.String.Text
 msgid  "Settlement"
@@ -3045,7 +3045,7 @@ msgstr "ബേസിസ്"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Couppcd.1.String.Text
 msgid  "Returns the last coupon date preceding the settlement date"
-msgstr ""
+msgstr "ഒത്തുതീര്‍പ്പ് തീയതിയ്ക്ക് മുന്നേയുള്ള അവസാന കൂപ്പണ്‍ തീയതി തിരികെ നല്കുന്നു."
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Couppcd.2.String.Text
 msgid  "Settlement"
@@ -3081,7 +3081,7 @@ msgstr "ബേസിസ്"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Coupnum.1.String.Text
 msgid  "Returns the number of coupons payable between the settlement and maturity dates"
-msgstr ""
+msgstr "ഒത്തുതീര്‍പ്പിനും കാലാവധി പൂര്‍ത്തിയാകുന്നകുന്ന തീയതികള്‍ക്കും മദ്ധ്യയുള്ള അടയ്ക്കേണ്ട കൂപ്പണുകളുടെ എണ്ണം തിരികെ നല്കുക."
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Coupnum.2.String.Text
 msgid  "Settlement"
@@ -3117,7 +3117,7 @@ msgstr "ബേസിസ്"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Fvschedule.1.String.Text
 msgid  "Returns the future value of the initial principal after a series of compound interest rates are applied"
-msgstr ""
+msgstr "Returns the future value of the initial principal after a series of compound interest rates are applied"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Fvschedule.2.String.Text
 msgid  "Principal"
@@ -3161,7 +3161,7 @@ msgstr "രീതി"
 
 #: source/datefunc/datefunc.src#RID_DATE_FUNCTION_DESCRIPTIONS.DATE_FUNCDESC_DiffWeeks.7.String.Text
 msgid  "Type of calculation: Type=0 means the time interval, Type=1 means calendar weeks."
-msgstr ""
+msgstr "കണക്ക്കൂട്ടുന്ന വിഭാഗം: വിഭാഗം=0 അര്ത്ഥം സമയ ഇടവേള, വിഭാഗം =1 അര്ത്ഥം കലണ്ടര് ആഴ്ചകള്."
 
 #: source/datefunc/datefunc.src#RID_DATE_FUNCTION_DESCRIPTIONS.DATE_FUNCDESC_DiffMonths.1.String.Text
 msgid  "Determines the number of months in a specific period."
@@ -3189,7 +3189,7 @@ msgstr "രീതി"
 
 #: source/datefunc/datefunc.src#RID_DATE_FUNCTION_DESCRIPTIONS.DATE_FUNCDESC_DiffMonths.7.String.Text
 msgid  "Type of calculation: Type=0 means the time interval, Type=1 means calendar months."
-msgstr ""
+msgstr "ഗണിക്കുന്ന വിഭാഗം: വിഭാഗം=0 അര്ത്ഥം, സമയ ഇടവേള, വിഭാഗം =1അര്ത്ഥം,  കലണ്ടര് ആഴ്ചകള്."
 
 #: source/datefunc/datefunc.src#RID_DATE_FUNCTION_DESCRIPTIONS.DATE_FUNCDESC_DiffYears.1.String.Text
 msgid  "Calculates the number of years in a specific period."
@@ -3217,11 +3217,11 @@ msgstr "രീതി"
 
 #: source/datefunc/datefunc.src#RID_DATE_FUNCTION_DESCRIPTIONS.DATE_FUNCDESC_DiffYears.7.String.Text
 msgid  "Type of calculation: Type=0 means the time interval, Type=1 means calendar years."
-msgstr ""
+msgstr "വിവിധ ഗണന വിഭാഗം: മോഡ്=0  ശരാശരി  ഇടവേള, മോഡ്=1 കലണ്ടര് വര്ഷത്തിലെ ശരാശരി."
 
 #: source/datefunc/datefunc.src#RID_DATE_FUNCTION_DESCRIPTIONS.DATE_FUNCDESC_IsLeapYear.1.String.Text
 msgid  "Returns 1 (TRUE) if the date is a day of a leap year, otherwise 0 (FALSE)."
-msgstr ""
+msgstr " 1 തിരിച്ച് കിട്ടുക (TRUE)  ആധിവര്ഷം ഉപയോഗിക്കുകയാണെങ്കില് , അല്ലെങ്കില്  0 (FALSE)  തിരിച്ച് കിട്ടും"
 
 #: source/datefunc/datefunc.src#RID_DATE_FUNCTION_DESCRIPTIONS.DATE_FUNCDESC_IsLeapYear.2.String.Text
 msgid  "Date"
@@ -3233,7 +3233,7 @@ msgstr "വിചാരിച്ച വര്ഷത്തിലെ ഏതെങ�
 
 #: source/datefunc/datefunc.src#RID_DATE_FUNCTION_DESCRIPTIONS.DATE_FUNCDESC_DaysInMonth.1.String.Text
 msgid  "Returns the number of days of the month in which the date entered occurs"
-msgstr ""
+msgstr "ആ തീയതിയുള്ള മാസത്തിലെ ആകെ ദിവസങ്ങള് തിരികെ നല്കുക"
 
 #: source/datefunc/datefunc.src#RID_DATE_FUNCTION_DESCRIPTIONS.DATE_FUNCDESC_DaysInMonth.2.String.Text
 msgid  "Date"
@@ -3245,7 +3245,7 @@ msgstr "വിചാരിച്ച മാസത്തിലെ ഏതെങ്�
 
 #: source/datefunc/datefunc.src#RID_DATE_FUNCTION_DESCRIPTIONS.DATE_FUNCDESC_DaysInYear.1.String.Text
 msgid  "Returns the number of days of the year in which the date entered occurs."
-msgstr ""
+msgstr "ആ തീയതിയുള്ള വര്ഷത്തിലെ ആകെ ദിവസങ്ങള് തിരികെ നല്കുക"
 
 #: source/datefunc/datefunc.src#RID_DATE_FUNCTION_DESCRIPTIONS.DATE_FUNCDESC_DaysInYear.2.String.Text
 msgid  "Date"
@@ -3257,7 +3257,7 @@ msgstr "വിചാരിച്ച വര്ഷത്തിലെ ഏതെങ�
 
 #: source/datefunc/datefunc.src#RID_DATE_FUNCTION_DESCRIPTIONS.DATE_FUNCDESC_WeeksInYear.1.String.Text
 msgid  "Returns the number of weeks of the year in which the date entered occurs"
-msgstr ""
+msgstr "ആ തീയതിയുള്ള മാസത്തിലെ ആകെ ആഴ്ചകള് തിരികെ നല്കുക"
 
 #: source/datefunc/datefunc.src#RID_DATE_FUNCTION_DESCRIPTIONS.DATE_FUNCDESC_WeeksInYear.2.String.Text
 msgid  "Date"
@@ -3269,7 +3269,7 @@ msgstr "വിചാരിച്ച വര്ഷത്തിലെ ഏതെങ�
 
 #: source/datefunc/datefunc.src#RID_DATE_FUNCTION_DESCRIPTIONS.DATE_FUNCDESC_Rot13.1.String.Text
 msgid  "Encrypts or decrypts a text using the ROT13 algorithm"
-msgstr ""
+msgstr " ROT13 അല്ഗോരിതം ഉപയോഗിച്ച് ഒരു ടെക്സ്റ്റ് എന്ക്രിപ്റ്റ് ചെയ്യുക അഥവാ ഡിക്രിപ്റ്റ് ചെയ്യുക"
 
 #: source/datefunc/datefunc.src#RID_DATE_FUNCTION_DESCRIPTIONS.DATE_FUNCDESC_Rot13.2.String.Text
 msgid  "Text"

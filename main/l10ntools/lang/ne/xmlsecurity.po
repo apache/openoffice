@@ -33,7 +33,7 @@ msgstr ""
 
 #: source/component/warnbox.src#RID_XMLSECWB_NO_MOZILLA_PROFILE.WarningBox.Message
 msgid  "Digital signatures functionality could not be used, because no Mozilla user profile was found. Please check the Mozilla installation."
-msgstr ""
+msgstr "डिजिटल हस्ताक्षर प्रकार्य रूपले प्रयोग गर्न सकिँदैन ,किनकि मोजिला प्रयोगकर्ता प्रोफाइल फेला परेन । कृपया मोजिला स्थापना जाँच गर्नुहोस् ।"
 
 #: source/dialogs/macrosecurity.src#RID_XMLSECTP_MACROSEC.TabDialog.Text
 msgid  "Macro Security"
@@ -53,19 +53,19 @@ msgstr "रिसेट गर्नुहोस् "
 
 #: source/dialogs/macrosecurity.src#RID_XMLSECTP_SECLEVEL.RB_VERYHIGH.RadioButton.Text
 msgid  "~Very high.\nOnly macros from trusted file locations are allowed to run. All other macros, regardless whether signed or not, are disabled."
-msgstr ""
+msgstr "धेरै उच्च ।\nविश्वासिलो फाइल स्थानहरूबाट म्याक्रोहरू मात्र चलाउन अनुमति छ । अरू सबै म्यक्रोहरू, हस्ताक्षर भएपनि, नभएपनि अक्षम छन् ।"
 
 #: source/dialogs/macrosecurity.src#RID_XMLSECTP_SECLEVEL.RB_HIGH.RadioButton.Text
 msgid  "H~igh.\nOnly signed macros from trusted sources are allowed to run. Unsigned macros are disabled."
-msgstr ""
+msgstr "अग्लो\nविश्वासिलो स्रोतहरूबाट हस्ताक्षर गरिएको म्याक्रोहरू मात्र चलाउन का लागि अनुमति छ । हस्ताक्षर नगरिएको म्याक्रोहरू असक्षम छ ।"
 
 #: source/dialogs/macrosecurity.src#RID_XMLSECTP_SECLEVEL.RB_MEDIUM.RadioButton.Text
 msgid  "~Medium.\nConfirmation required before executing macros from untrusted sources."
-msgstr ""
+msgstr "मध्यम ।\nअविश्वासिला स्रोतहरूबाट म्याक्रोहरू कार्यान्वयन गर्न अघि यकीनको आवश्यक छ ।"
 
 #: source/dialogs/macrosecurity.src#RID_XMLSECTP_SECLEVEL.RB_LOW.RadioButton.Text
 msgid  "~Low (not recommended).\nAll macros will be executed without confirmation. Use this setting only if you are certain that all documents that will be opened are safe."
-msgstr ""
+msgstr "कम (सिफारिस छैन) ।\nसबै म्याक्रोहरू यकीन बिना कार्यन्वयन हुनेछन् । यदि तपाईँ खोलिने सबै कागजातहरू सुरक्षित छन् भन्ने निश्चित हुनुहुन्छ भने मात्र यो सेटिङ प्रयोग गर्नुहोस् ।"
 
 #: source/dialogs/macrosecurity.src#RID_XMLSECTP_TRUSTSOURCES.FL_TRUSTCERT.FixedLine.Text
 msgid  "Trusted certificates"
@@ -93,7 +93,7 @@ msgstr "विश्वासिलो फाइल स्थानहरू"
 
 #: source/dialogs/macrosecurity.src#RID_XMLSECTP_TRUSTSOURCES.FI_TRUSTFILELOC.FixedText.Text
 msgid  "Document macros are always executed if they have been opened from one of the following locations."
-msgstr ""
+msgstr "यदि कागजात म्याक्रोहरू निम्न स्थानहरू मध्ये एउटाबाट खोलिन्छ भने तिनीहरू सधै कार्यान्वयन हुन्छन् ।"
 
 #: source/dialogs/macrosecurity.src#RID_XMLSECTP_TRUSTSOURCES.FL_ADD_TRUSTFILELOC.PushButton.Text
 msgid  "Add..."
@@ -125,7 +125,7 @@ msgstr "दृश्य हस्ताक्षरहरू..."
 
 #: source/dialogs/warnings.src#RID_XMLSECTP_MACROWARN.FI_DESCR2.FixedText.Text
 msgid  "Macros may contain viruses. Disabling macros for a document is always save. If you disable macros you may lose functionality provided by the document macros."
-msgstr ""
+msgstr "म्याक्रोले भाइरस समाबेस गर्न सक्छ । सँधैं बचत हुने कागजातको लागि म्याक्रो अक्षम पार्दै छ । यदि तपाइँ म्याक्रोलाई अक्षम पार्नुहुन्छ भने तपाइँले कागजात म्याक्रोद्वारा प्रदान गरिएको प्रकार्य घुमाउन सक्नुहुन्छ ।"
 
 #: source/dialogs/warnings.src#RID_XMLSECTP_MACROWARN.CB_ALWAYSTRUST.CheckBox.Text
 msgid  "Always trust macros from this source"
@@ -341,7 +341,7 @@ msgstr "तपाईँले हस्ताक्षर का लागि �
 
 #: source/dialogs/certificatechooser.src#RID_XMLSECDLG_CERTCHOOSER.STR_HEADERBAR.String.Text
 msgid  "Issued to\tIssued by\tExpiration date"
-msgstr ""
+msgstr "_: certificatechooser.src#RID_XMLSECDLG_CERTCHOOSER.STR_HEADERBAR.string.text\nIssued to\tIssued by\tExpiration date"
 
 #: source/dialogs/certificatechooser.src#RID_XMLSECDLG_CERTCHOOSER.BTN_VIEWCERT.PushButton.Text
 msgid  "View Certificate..."

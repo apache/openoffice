@@ -157,7 +157,7 @@ msgstr "Erro durante a avaliação"
 
 #: source/resource/xforms.src#RID_STR_XFORMS_PATTERN_DOESNT_MATCH.String.Text
 msgid  "The string '$1' does not match the required regular expression '$2'."
-msgstr ""
+msgstr "A cadeia de caracteres '$1' não corresponde à expressão regular necessária '$2'."
 
 #: source/resource/xforms.src#RID_STR_XFORMS_BINDING_UI_NAME.String.Text
 msgid  "Binding"
@@ -165,7 +165,7 @@ msgstr "Vinculação"
 
 #: source/resource/strings.src#RID_BASELISTBOX_ERROR_FILLLIST.String.Text
 msgid  "The contents of a combo box or list field could not be determined."
-msgstr ""
+msgstr "Não foi possível determinar o conteúdo de uma caixa de combinação ou de um campo de listagem."
 
 #: source/resource/strings.src#RID_STR_IMPORT_GRAPHIC.String.Text
 msgid  "Insert graphics"
@@ -177,7 +177,7 @@ msgstr "substituído"
 
 #: source/resource/strings.src#RID_STR_CONTROL_SUBSTITUTED_EPXPLAIN.String.Text
 msgid  "An error occurred while this control was being loaded. It was therefore replaced with a placeholder."
-msgstr ""
+msgstr "Erro ao carregar este controle. Por isso, ele foi substituído por um atalho."
 
 #: source/resource/strings.src#RID_STR_READERROR.String.Text
 msgid  "Error reading data from database"
@@ -233,7 +233,7 @@ msgstr "Erro de sintaxe na expressão da consulta"
 
 #: source/resource/strings.src#RID_STR_INCOMPATIBLE_TYPES.String.Text
 msgid  "The value types supported by the binding cannot be used for exchanging data with this control."
-msgstr ""
+msgstr "Os tipos de valores aceitos pela ligação não podem ser usados para trocar dados com este controle."
 
 #: source/resource/strings.src#RID_STR_LABEL_RECORD.String.Text
 msgid  "Record"
@@ -241,7 +241,7 @@ msgstr "Registro"
 
 #: source/resource/strings.src#RID_STR_INVALID_VALIDATOR.String.Text
 msgid  "The control is connected to an external value binding, which at the same time acts as validator. You need to revoke the value binding, before you can set a new validator."
-msgstr ""
+msgstr "O controle é conectado a uma ligação de valor externa, que ao mesmo tempo age como validadora. É preciso anular a ligação de valor para definir um novo validador."
 
 #: source/resource/strings.src#RID_STR_LABEL_OF.String.Text
 msgid  "of"
@@ -249,7 +249,7 @@ msgstr "de"
 
 #: source/resource/strings.src#RID_STR_QUERY_SAVE_MODIFIED_ROW.String.Text
 msgid  "The content of the current form has been modified.\nDo you want to save your changes?"
-msgstr ""
+msgstr "O conteúdo do formulário atual foi modificado.\nDeseja salvar suas alterações?"
 
 #: source/resource/strings.src#RID_STR_COULD_NOT_SET_ORDER.String.Text
 msgid  "Error setting the sort criteria"

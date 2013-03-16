@@ -81,7 +81,7 @@ msgstr "Dear Mr. <2>,"
 
 #: registry/data/org/openoffice/Office/Writer.xcu#..Writer.MailMergeWizard.NeutralGreetingLines
 msgid  "To whom it may concern,;Dear Friends,;Dear Sir or Madam,;Hello,"
-msgstr ""
+msgstr "ୟାହାକୁ ମଧ୍ଯ ଏହା ବୁଝାଇପାରେ,;ପ୍ରିଯ ବନ୍ଧୁଗଣ,;ପ୍ରିଯ ସାର୍ କିମ୍ବା ମାଡମ୍,;ହାଲୋ,"
 
 #: registry/data/org/openoffice/Office/Writer.xcu#..Writer.Insert.Caption.CaptionOrderNumberingFirst
 msgid  "true"
@@ -8082,8 +8082,9 @@ msgid  "Unprotect sheet"
 msgstr "ଅସୁରକ୍ଷିତ ସିଟ"
 
 #: registry/data/org/openoffice/Office/UI/WriterCommands.xcu#..WriterCommands.UserInterface.Commands..uno:RowSplit.Label
+#, fuzzy
 msgid  "Allow Row to Break Across Pages and Columns"
-msgstr ""
+msgstr "ସଂପୂର୍ଣ୍ଣ ପୃଷ୍ଠାଗୁଡିକ ଏବଂ ସ୍ତମ୍ଭଗୁଡିକ ଭାଙ୍ଗିବା ପାଇଁ  ପଂକ୍ତିଗୁଡିକ ଅନୁମତିଦିଅ"
 
 #: registry/data/org/openoffice/Office/UI/WriterCommands.xcu#..WriterCommands.UserInterface.Commands..uno:Ruler.Label
 msgid  "Ruler"
@@ -11356,27 +11357,22 @@ msgid  "Controls"
 msgstr "ନିଯନ୍ତ୍ରଣଗୁଡିକ"
 
 #: registry/data/org/openoffice/Office/UI/BaseWindowState.xcu#..BaseWindowState.UIElements.States.private:resource/toolbar/tableobjectbar.UIName
-#, fuzzy
 msgid  "Table"
 msgstr "ସାରଣୀ"
 
 #: registry/data/org/openoffice/Office/UI/BaseWindowState.xcu#..BaseWindowState.UIElements.States.private:resource/toolbar/queryobjectbar.UIName
-#, fuzzy
 msgid  "Query"
 msgstr "ପ୍ରଶ୍ନ"
 
 #: registry/data/org/openoffice/Office/UI/BaseWindowState.xcu#..BaseWindowState.UIElements.States.private:resource/toolbar/reportobjectbar.UIName
-#, fuzzy
 msgid  "Report"
 msgstr "ରିପୋର୍ଟ"
 
 #: registry/data/org/openoffice/Office/UI/BaseWindowState.xcu#..BaseWindowState.UIElements.States.private:resource/toolbar/formobjectbar.UIName
-#, fuzzy
 msgid  "Form"
 msgstr "ଫର୍ମ"
 
 #: registry/data/org/openoffice/Office/UI/BaseWindowState.xcu#..BaseWindowState.UIElements.States.private:resource/toolbar/toolbar.UIName
-#, fuzzy
 msgid  "Standard"
 msgstr "ମାନକ"
 
@@ -11578,17 +11574,14 @@ msgid  "Column Arrangement..."
 msgstr ""
 
 #: registry/data/org/openoffice/Office/UI/BibliographyCommands.xcu#..BibliographyCommands.UserInterface.Commands..uno:Bib/autoFilter.Label
-#, fuzzy
 msgid  "AutoFilter"
 msgstr "ସ୍ୱୟଂଚାଳିତ ଛାଣକ"
 
 #: registry/data/org/openoffice/Office/UI/BibliographyCommands.xcu#..BibliographyCommands.UserInterface.Commands..uno:Bib/query.Label
-#, fuzzy
 msgid  "Search Key"
 msgstr "ତଦନ୍ତ କି "
 
 #: registry/data/org/openoffice/Office/UI/BibliographyCommands.xcu#..BibliographyCommands.UserInterface.Commands..uno:Bib/removeFilter.Label
-#, fuzzy
 msgid  "Remove Filter"
 msgstr "ଛାଣକକୁ  ହଟାଅ"
 
@@ -11597,7 +11590,6 @@ msgid  "Choose Data Source..."
 msgstr ""
 
 #: registry/data/org/openoffice/Office/UI/BibliographyCommands.xcu#..BibliographyCommands.UserInterface.Commands..uno:Bib/source.Label
-#, fuzzy
 msgid  "Table"
 msgstr "ସାରଣୀ"
 
@@ -12226,7 +12218,6 @@ msgid  "Cancel"
 msgstr "ରଦ୍ଦ କରନ୍ତୁ"
 
 #: registry/data/org/openoffice/Office/UI/CalcCommands.xcu#..CalcCommands.UserInterface.Commands..uno:ChooseDesign.Label
-#, fuzzy
 msgid  "Choose Themes"
 msgstr "ବିଷଯଗୁଡିକ ବାଛ"
 
@@ -12418,7 +12409,6 @@ msgid  "Undo Selection"
 msgstr "ମନୋନଯନକୁ ଆନାବୃତିକରନ୍ତୁ"
 
 #: registry/data/org/openoffice/Office/UI/CalcCommands.xcu#..CalcCommands.UserInterface.Commands..uno:DrawChart.Label
-#, fuzzy
 msgid  "Insert Chart"
 msgstr "ଚାର୍ଟ  ଭର୍ତ୍ତିକରନ୍ତୁ"
 
@@ -12443,7 +12433,6 @@ msgid  "Edit..."
 msgstr ""
 
 #: registry/data/org/openoffice/Office/UI/CalcCommands.xcu#..CalcCommands.UserInterface.Commands..uno:EuroConverter.Label
-#, fuzzy
 msgid  "Euro Converter"
 msgstr "ଯୁରୋ ରୁପାନ୍ତରକ"
 
@@ -12777,12 +12766,10 @@ msgid  "Number Format: Add Decimal Place"
 msgstr "ସଂଖ୍ଯା ଫର୍ମାଟ:ଦଶାଂଶ ସ୍ଥାନ ମିଶାଅ"
 
 #: registry/data/org/openoffice/Office/UI/CalcCommands.xcu#..CalcCommands.UserInterface.Commands..uno:ObjectMirrorHorizontal.Label
-#, fuzzy
 msgid  "Flip Object Horizontally"
 msgstr "ଦିଗବଳୀଯଭାବରେ ବସ୍ତୁକୁ  ଆଘାତଦିଅ"
 
 #: registry/data/org/openoffice/Office/UI/CalcCommands.xcu#..CalcCommands.UserInterface.Commands..uno:ObjectMirrorVertical.Label
-#, fuzzy
 msgid  "Flip Vertically"
 msgstr "ଲମ୍ବଭାବରେ ଆଘାତ ଦିଅ"
 
@@ -16707,8 +16694,9 @@ msgid  "Flower"
 msgstr "ଫୁଲ"
 
 #: registry/data/org/openoffice/Office/UI/GenericCommands.xcu#..GenericCommands.UserInterface.Commands..uno:SymbolShapes.forbidden.Label
-msgid  ""Prohibited" Symbol"
-msgstr ""
+#, fuzzy
+msgid  "\"Prohibited\" Symbol"
+msgstr "\"ନିଷେଧକରିବା\" ସଙ୍କେତ"
 
 #: registry/data/org/openoffice/Office/UI/GenericCommands.xcu#..GenericCommands.UserInterface.Commands..uno:SymbolShapes.heart.Label
 #, fuzzy

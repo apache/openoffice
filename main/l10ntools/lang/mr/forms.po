@@ -177,7 +177,7 @@ msgstr "प्रतिस्थानिक केलेले"
 
 #: source/resource/strings.src#RID_STR_CONTROL_SUBSTITUTED_EPXPLAIN.String.Text
 msgid  "An error occurred while this control was being loaded. It was therefore replaced with a placeholder."
-msgstr ""
+msgstr "हा नियंत्रक लोड करताना दोष आढळला. म्हणून इथे स्थानधारक ठेवला आहे."
 
 #: source/resource/strings.src#RID_STR_READERROR.String.Text
 msgid  "Error reading data from database"
@@ -233,7 +233,7 @@ msgstr "शंका सूत्रांत वाक्यरचनेत द
 
 #: source/resource/strings.src#RID_STR_INCOMPATIBLE_TYPES.String.Text
 msgid  "The value types supported by the binding cannot be used for exchanging data with this control."
-msgstr ""
+msgstr "या नियंत्रकाद्वारे बाइंडिंग आधार दिलेल्या मूल्य प्रकारांचा उपयोग डाटाची अदलाबदल करण्यासाठी होऊ शकत नाही."
 
 #: source/resource/strings.src#RID_STR_LABEL_RECORD.String.Text
 msgid  "Record"
@@ -241,7 +241,7 @@ msgstr "नोंद"
 
 #: source/resource/strings.src#RID_STR_INVALID_VALIDATOR.String.Text
 msgid  "The control is connected to an external value binding, which at the same time acts as validator. You need to revoke the value binding, before you can set a new validator."
-msgstr ""
+msgstr "नियंत्रक एका बाह्य मूल्य बाइंडिंगशी जोडलेले आहे, जे एकाचवेळी तपासकाच्या रूपात पण काम करते. नवा तपासक स्थापित करायच्या आधी तुम्ही मूल्य बाइंडिंग गैरलागू केले पाहिजे."
 
 #: source/resource/strings.src#RID_STR_LABEL_OF.String.Text
 msgid  "of"
@@ -249,7 +249,7 @@ msgstr "चे"
 
 #: source/resource/strings.src#RID_STR_QUERY_SAVE_MODIFIED_ROW.String.Text
 msgid  "The content of the current form has been modified.\nDo you want to save your changes?"
-msgstr ""
+msgstr "चालू नमुन्याचा विषय सुधारित करण्यात आला आहे.\nआपणास आपले बदल जतन करायचे आहेत का?"
 
 #: source/resource/strings.src#RID_STR_COULD_NOT_SET_ORDER.String.Text
 msgid  "Error setting the sort criteria"

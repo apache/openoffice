@@ -137,7 +137,7 @@ msgstr "लक्ष्य पयलीसावन आसा."
 
 #: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_IO_MODULESIZEEXCEEDED & ERRCODE_RES_MASK).String.Text
 msgid  "You are about to save/export a password protected basic library containing module(s) \n$(ARG1)\nwhich are too large to store in binary format. If you wish users that don't have access to the library password to be able to run macros in those module(s) you must split those modules into a number of smaller modules. Do you wish to continue to save/export this library?"
-msgstr ""
+msgstr "तुमी तुमी गुप्तशब्द संरक्षित मुळावे पुस्तकालय जतनाय वा निर्यात करपाचे आसात. \n$(ARG1) मॉड्युल आशिल्ले\nजे बायनरी पद्दतीन साठोवपाक खूप व्हड आसा. जर तुमका दिसता की ह्या मॉड्युलांत ज्या वापरप्यांक पुस्तकालय गुप्तशब्दांत प्रवेश ना, तांका मॅक्रो चलोवपाक दिवचे, जाल्यात तुमी ती मॉड्युलां  ल्हान मॉड्युलांनी विभागपाक जाय. तुमी हे पुस्तकालय जतनाय वा निर्यात करपाक सोदता?"
 
 #: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_IO_BADCRC & ERRCODE_RES_MASK).String.Text
 msgid  "The data from $(ARG1) has an incorrect checksum."
@@ -241,11 +241,11 @@ msgstr " $(ARG1) उपकरणार आनिक जागो उरूंक
 
 #: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_IO_TOOMANYOPENFILES & ERRCODE_RES_MASK).String.Text
 msgid  "The operation on $(ARG1) cannot be performed because too many files are already open."
-msgstr ""
+msgstr " $(ARG1) वयली कारवाय करपाक जायना, कारण खूप धारिका पयलीसावन उगड्यो आसात."
 
 #: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_IO_OUTOFMEMORY & ERRCODE_RES_MASK).String.Text
 msgid  "The operation on $(ARG1) cannot be performed because there is no more memory available."
-msgstr ""
+msgstr " $(ARG1)  वयली कारवाय जावपाक शकना कारण आनिक स्मृती उपलब्द ना."
 
 #: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_IO_PENDING & ERRCODE_RES_MASK).String.Text
 msgid  "The operation on $(ARG1) cannot continue because more data is pending."
@@ -289,11 +289,11 @@ msgstr "प्रतिष्ठापन केल्ल्या जावा 
 
 #: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_WRONGJAVA_MIN & ERRCODE_RES_MASK).String.Text
 msgid  "The installed Java version is not supported, at least version $(ARG1) is required."
-msgstr ""
+msgstr "प्रतिष्ठापन केल्ल्या जावा आवृत्तीक फांटबळ ना, किमान आवृत्ती $(ARG1) आसप गरजेचे."
 
 #: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_WRONGJAVA_VERSION_MIN & ERRCODE_RES_MASK).String.Text
 msgid  "The installed Java version $(ARG1) is not supported, at least version $(ARG2) is required."
-msgstr ""
+msgstr "प्रतिष्ठापन केल्ल्या जावा आवृत्ती $(ARG1) क फांटबळ ना. किमान आवृत्ती $(ARG2) आसप गरजेचे."
 
 #: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_BADPARTNERSHIP & ERRCODE_RES_MASK).String.Text
 msgid  "The data associated with the partnership is corrupted."
@@ -325,31 +325,31 @@ msgstr "$(ARG1) निदेशिकेंत वस्त तयार कर�
 
 #: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_IO_UNSUPPORTEDOVERWRITE & ERRCODE_RES_MASK).String.Text
 msgid  "%PRODUCTNAME cannot keep files from being overwritten when this transmission protocol is used. Do you want to continue anyway?"
-msgstr ""
+msgstr "  जेन्ना तुमी हो प्रक्षेपण शिष्टाचार वापरतले, तेन्ना %PRODUCTNAME धारिकांक वयर बरोवपापासून पयस दवरपाक शकना. तुमका तशे करपाक जाय हंय?"
 
 #: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_IO_BROKENPACKAGE & ERRCODE_RES_MASK).String.Text
 msgid  "The file '$(ARG1)' is corrupt and therefore cannot be opened. %PRODUCTNAME can try to repair the file.\n\nThe corruption could be the result of document manipulation or of structural document damage due to data transmission.\n\nWe recommend that you do not trust the content of the repaired document.\nExecution of macros is disabled for this document.\n\nShould %PRODUCTNAME repair the file?\n"
-msgstr ""
+msgstr " '$(ARG1)' धारिका पिड्ड्यार जाल्या ताकालागून ती उगडना. %PRODUCTNAME धारिकेक सारकी करपाक शकता?"
 
 #: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_IO_BROKENPACKAGE_CANTREPAIR & ERRCODE_RES_MASK).String.Text
 msgid  "The file '$(ARG1)' could not be repaired and therefore cannot be opened."
-msgstr ""
+msgstr " '$(ARG1)'  धारिका सारकी करपाक येना आनिक ताकालागून ती उगडपाक येना."
 
 #: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_CONFIGURATION_BROKENDATA_NOREMOVE & ERRCODE_RES_MASK).String.Text
 msgid  "Configuration data in '$(ARG1)' is corrupted. Without this data some functions may not operate correctly.\nDo you want to continue startup of %PRODUCTNAME without the corrupted configuration data?"
-msgstr ""
+msgstr "संरचनाय म्हायती  '$(ARG!)' पिड्ड्यार जाल्या.  ह्या म्हायतीशिवाय कांय वैशिश्ट्यांची सारकी कारवाय ना जांव येता.\nपिड्ड्यार जाल्ल्या संरचनायेच्या म्हायतीशिवाय तुमी %PRODUCTNAME चालू करूंक सोदता हंय?"
 
 #: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_CONFIGURATION_BROKENDATA_WITHREMOVE & ERRCODE_RES_MASK).String.Text
 msgid  "The personal configuration file '$(ARG1)' is corrupted and must be deleted to continue. Some of your personal settings may be lost.\nDo you want to continue startup of %PRODUCTNAME without the corrupted configuration data?"
-msgstr ""
+msgstr "वैयक्तिक संरचनाय धारिका '$(ARG1)' पिड्ड्यार जाल्या आनिक फुडे वचपाखातीर ती काडून उडोवपाक जाय. तुमची काय वैयक्तिक म्हायती  शेणू येता. \nपिड्ड्यार जाल्ल्या संरचनायेच्या म्हायतीशिवाय तुमी %PRODUCTNAME चालू करूंक सोदता हंय?"
 
 #: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_CONFIGURATION_BACKENDMISSING & ERRCODE_RES_MASK).String.Text
 msgid  "The configuration data source '$(ARG1)' is unavailable. Without this data some functions may not operate correctly."
-msgstr ""
+msgstr "संरचनाय म्हायती स्त्रोत '$(ARG1)' उपलब्द ना.  ह्या म्हायतीशिवाय काय वैशिश्ट्यां सारकी चालू जावची ना."
 
 #: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_CONFIGURATION_BACKENDMISSING_WITHRECOVER & ERRCODE_RES_MASK).String.Text
 msgid  "The configuration data source '$(ARG1)' is unavailable. Without this data some functions may not operate correctly.\nDo you want to continue startup of %PRODUCTNAME without the missing configuration data?"
-msgstr ""
+msgstr "संरचनाय म्हायती स्त्रोत  '$(ARG1)' उपलब्द ना. ह्या  म्हायतीशिवाय कांय वैशिश्ट्यां सारकी चालू जावची ना.\nशेणील्ल्या संरचनाय म्हायतीशिवाय तुमी  %PRODUCTNAME चालू करपाक सोदतात हंय?"
 
 #: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_INVALID_XFORMS_SUBMISSION_DATA & ERRCODE_RES_MASK).STRING.Text
 msgid  "The form contains invalid data. Do you still want to continue?"
@@ -416,8 +416,8 @@ msgid  "Enter user name and password for: \n%1"
 msgstr ""
 
 #: source/logindlg.src#DLG_UUI_LOGIN.STR_LOGIN_REALM.String.Text
-msgid  "Enter user name and password for: \n"%2" on %1"
-msgstr ""
+msgid  "Enter user name and password for: \n\"%2\" on %1"
+msgstr "उपकार करून  \"%2\" खातीर %1  हांगा वापरप्याचे नाव आनिक गुप्त शब्द घालात."
 
 #: source/logindlg.src#DLG_UUI_LOGIN.FT_LOGIN_PATH.FixedText.Text
 msgid  "~Path"
@@ -469,7 +469,7 @@ msgstr "धाडात"
 
 #: source/cookiedg.src#STR_COOKIES_RECV_START.String.Text
 msgid  "The '${HOST}' server wishes to set one or more cookies.\nCookies contain information referring to certain URL classes. If %PRODUCTNAME later requests a document with a URL corresponding to the class of a previously set cookie, %PRODUCTNAME will send this information to the server. This allows a server to recognize the status of a WWW application, e.g., when shopping online.\n\nThe following Cookies should be set:\n\n"
-msgstr ""
+msgstr " '${HOST}' सर्वर एक वा अदिक कुकीजची रचना करपाक सोदता.\nकांय URL वर्गांविशीची म्हायती कुकींनी आसता. जर  % PRODUCTNAME  मागीर पयलीसावन रचना केल्ल्या कुकीच्या वर्गासारकोच URL आशिल्लो दस्तावेज मागीत जाल्यार, %PRODUCTNAME ही म्हायती सर्वराक धाडटले. हाकालागून सर्वराक WWW अनुप्रयोगाची स्थिती वळखूपाक येता. देखीक, जेन्ना ऑनलायन शॉपिंग करता.\n\nमुखावेल्या कुकीजची रचना करपाक जाय:\n\n"
 
 #: source/cookiedg.src#STR_COOKIES_RECV_COOKIES.String.Text
 msgid  "Domain: ${DOMAIN}, Path: ${PATH}, Cookie: ${COOKIE}.\n"
@@ -481,7 +481,7 @@ msgstr "कुकी स्वागतकक्ष"
 
 #: source/cookiedg.src#STR_COOKIES_SEND_START.String.Text
 msgid  "%PRODUCTNAME has saved cookies for the server '${HOST}' which will be sent when requesting the document ${PATH}.\nCookies contain information which refers to certain URL classes. They are sent by some servers to %PRODUCTNAME where they are saved when certain documents are accessed. If %PRODUCTNAME loads a document that, according to the URL, corresponds to a class of one of the previously received Cookies, %PRODUCTNAME will send this information to that server. This enables a server to keep track of the status of a WWW application, e.g., when shopping online.\n\nThe following Cookies should be set:\n\n"
-msgstr ""
+msgstr "%PRODUCTNAME हाणी   '${HOST}' सर्वराखातीर कुकीजची जतनाय केल्या, ज्यो दस्तावेजाचे  ${PATH}मागणे करता आस्तना धाडल्यो वतल्यो.\nकुकीजांनी कांय URL वर्गांच्या संदर्बातली म्हायती आसा. त्यो  जेन्ना कांय दस्तावेजांत प्रवेश घेतात, तेन्ना कांय सर्वराकडल्यान %PRODUCTNAME  क धाडल्यो वतात, जांची  थंय जतनाय जाता. जर  %PRODUCTNAME असो दस्तावेज चालू करता, जो URL प्रमाण पयली मेळिल्ल्या  एकाद्या कुकीजच्या गटा सारकिलो  आसा, जाल्यार %PRODUCTNAME  ती म्हायती त्या सर्वराक धाडटले. हाकालागून त्या सर्वराक WWW अनुप्रयोगाचेर लक्ष दवरप शक्य जातले., देखीक - ऑनलायन शॉपिंग करतास्तना.\n\nमुखावेल्या कुकीजची रचना करपाक जाय:\n\n"
 
 #: source/cookiedg.src#STR_COOKIES_SEND_COOKIES.String.Text
 msgid  "Domain: ${DOMAIN}, Path: ${PATH}, Cookie: ${COOKIE}.\n"

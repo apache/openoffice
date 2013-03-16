@@ -33,7 +33,7 @@ msgstr ""
 
 #: source/component/warnbox.src#RID_XMLSECWB_NO_MOZILLA_PROFILE.WarningBox.Message
 msgid  "Digital signatures functionality could not be used, because no Mozilla user profile was found. Please check the Mozilla installation."
-msgstr ""
+msgstr "ელ ხელმოცერა ფუნქციურად ვერ იქნა გამოყენებული, რადგან მოზილას პროპილი არ იქნა  ნაპოვნი, გთხოვთ შეამოწმეთ მოზილას ინსტალაცია."
 
 #: source/dialogs/macrosecurity.src#RID_XMLSECTP_MACROSEC.TabDialog.Text
 #, fuzzy
@@ -56,20 +56,24 @@ msgid  "Reset"
 msgstr "ხელახალი კონფიგურაცია"
 
 #: source/dialogs/macrosecurity.src#RID_XMLSECTP_SECLEVEL.RB_VERYHIGH.RadioButton.Text
+#, fuzzy
 msgid  "~Very high.\nOnly macros from trusted file locations are allowed to run. All other macros, regardless whether signed or not, are disabled."
-msgstr ""
+msgstr "~ძალიან მაღალი.\nმხოლოდ სანდო მდებარეობების მაკროებია ნებადართული გასაშვებად. ყველა სხვა მაკრო,ხელმოწერილია თუ არა,გაუქმებულია."
 
 #: source/dialogs/macrosecurity.src#RID_XMLSECTP_SECLEVEL.RB_HIGH.RadioButton.Text
+#, fuzzy
 msgid  "H~igh.\nOnly signed macros from trusted sources are allowed to run. Unsigned macros are disabled."
-msgstr ""
+msgstr "მ~აღალი.\nგაიშვება მხოლოდ ხელმოწერილი მაკროები სანდო წყაროებიდან. ხელმოუწერელი მაკროები გაუქმებულია."
 
 #: source/dialogs/macrosecurity.src#RID_XMLSECTP_SECLEVEL.RB_MEDIUM.RadioButton.Text
+#, fuzzy
 msgid  "~Medium.\nConfirmation required before executing macros from untrusted sources."
-msgstr ""
+msgstr "~საშუალო.\nარასანდო წყაროებიდან მაკროების შესრულებამდე მოითხოვება დადასტურება."
 
 #: source/dialogs/macrosecurity.src#RID_XMLSECTP_SECLEVEL.RB_LOW.RadioButton.Text
+#, fuzzy
 msgid  "~Low (not recommended).\nAll macros will be executed without confirmation. Use this setting only if you are certain that all documents that will be opened are safe."
-msgstr ""
+msgstr "~დაბალი (არარეკომენდებულია).\nყველა მაკრო შესრულდება ინფორმაციის გარეშე.  გამოიყენეთ ეს სექცია მხოლოდ მაშინ,როცა დარწმუნებული ხართ,რომ ყველა გახსნილი დოკუმენტი უსაფრთხოა."
 
 #: source/dialogs/macrosecurity.src#RID_XMLSECTP_TRUSTSOURCES.FL_TRUSTCERT.FixedLine.Text
 #, fuzzy
@@ -101,8 +105,9 @@ msgid  "Trusted file locations"
 msgstr "ფაილების სანდო მდებარეობები"
 
 #: source/dialogs/macrosecurity.src#RID_XMLSECTP_TRUSTSOURCES.FI_TRUSTFILELOC.FixedText.Text
+#, fuzzy
 msgid  "Document macros are always executed if they have been opened from one of the following locations."
-msgstr ""
+msgstr "დოკუმენტების მაკროები ყოველთვის სრულდება,თუ ისინი ერთ-ერთი შემდეგი მდებაროებიდან გაიხსნა."
 
 #: source/dialogs/macrosecurity.src#RID_XMLSECTP_TRUSTSOURCES.FL_ADD_TRUSTFILELOC.PushButton.Text
 #, fuzzy
@@ -392,7 +397,6 @@ msgid  "Select Certificate"
 msgstr "სერტიფიკატის არჩევა"
 
 #: source/dialogs/certificatechooser.src#RID_XMLSECDLG_CERTCHOOSER.FT_HINT_SELECT.FixedText.Text
-#, fuzzy
 msgid  "Select the certificate you want to use for signing"
 msgstr "მონიშნეთ სერტიფიკატი,რომლის გამოყენებაც გსურთ ხელმოსაწერად"
 

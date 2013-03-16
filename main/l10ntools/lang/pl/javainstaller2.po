@@ -125,7 +125,7 @@ msgstr "Przeczytaj uważnie poniższą umowę licencyjną."
 
 #: src/Localization/setupstrings.ulf#STRING_ACCEPTLICENSE3
 msgid  "If you have read and accept all the terms of the entire Software License Agreement, click 'Accept License' to continue with the installation."
-msgstr ""
+msgstr "Po przeczytaniu i zaakceptowaniu wszystkich postanowień Umowy licencyjnej oprogramowania kliknij przycisk „Zaakceptuj licencję”, aby kontynuować instalację."
 
 #: src/Localization/setupstrings.ulf#STRING_CHOOSEDIRECTORY1
 msgid  "Select Installation Directory"
@@ -153,11 +153,11 @@ msgstr "Utwórz nowy katalog"
 
 #: src/Localization/setupstrings.ulf#STRING_CHOOSEDIRECTORY5_QUESTION_MESSAGE
 msgid  "The directory '${DIR}' does not exist.\nDo you want to create it now?"
-msgstr ""
+msgstr "Katalog '${DIR}' nie istnieje.\nCzy chcesz go teraz utworzyć?"
 
 #: src/Localization/setupstrings.ulf#STRING_CHOOSEDIRECTORY5_QUESTION_MESSAGE2
 msgid  "The directory '${DIR}' does not exist.\nDo you want to create it now or choose another directory?"
-msgstr ""
+msgstr "Katalog '${DIR}' nie istnieje.\nCzy chcesz go teraz utworzyć lub wybrać inny katalog?"
 
 #: src/Localization/setupstrings.ulf#STRING_CHOOSEDIRECTORY6
 msgid  "Select root directory"
@@ -185,7 +185,7 @@ msgstr "Wybierz składniki dodatkowe"
 
 #: src/Localization/setupstrings.ulf#STRING_CHOOSECOMPONENTS2
 msgid  "Marked components will be installed. Please mark them accordingly"
-msgstr ""
+msgstr "Zostaną zainstalowane zaznaczone składniki. Zaznacz odpowiednie składniki"
 
 #: src/Localization/setupstrings.ulf#STRING_CHOOSECOMPONENTS3
 msgid  "Feature Description"
@@ -209,11 +209,11 @@ msgstr "Wybierz typ instalacji"
 
 #: src/Localization/setupstrings.ulf#STRING_CHOOSEINSTALLATIONTYPE4
 msgid  "The main components will be installed. Recommended for most users."
-msgstr ""
+msgstr "Zostaną zainstalowane główne składniki programu: Zalecane dla większości użytkowników."
 
 #: src/Localization/setupstrings.ulf#STRING_CHOOSEINSTALLATIONTYPE5
 msgid  "You choose the components you want to install and where they are stored. Recommended for advanced users."
-msgstr ""
+msgstr "Użytkownik wybiera składniki, które chce zainstalować, i określa miejsce ich zapisania. Zalecane dla użytkowników zaawansowanych."
 
 #: src/Localization/setupstrings.ulf#STRING_CHOOSEINSTALLATIONTYPE6
 msgid  "Typical"
@@ -233,7 +233,7 @@ msgstr "Gotowy do aktualizacji"
 
 #: src/Localization/setupstrings.ulf#STRING_INSTALLATIONIMMINENT2
 msgid  "The following ${PRODUCT_FULLNAME} components will be installed:"
-msgstr ""
+msgstr "Zostaną zainstalowane następujące składniki programu ${PRODUCT_FULLNAME}:"
 
 #: src/Localization/setupstrings.ulf#STRING_INSTALLATIONONGOING1
 msgid  "Installing..."
@@ -253,7 +253,7 @@ msgstr "Powitanie"
 
 #: src/Localization/setupstrings.ulf#STRING_PROLOGUE2
 msgid  "This Installation Wizard will install ${PRODUCT_FULLNAME} on your computer."
-msgstr ""
+msgstr "Kreator instalacji zainstaluje [${PRODUCT_FULLNAME} na Twoim komputerze."
 
 #: src/Localization/setupstrings.ulf#STRING_PROLOGUE3
 msgid  "To continue, click 'Next'."
@@ -261,7 +261,7 @@ msgstr "Aby kontynuować, kliknij przycisk „Dalej”."
 
 #: src/Localization/setupstrings.ulf#STRING_PROLOGUE4
 msgid  "Note: This installation will be done without root privileges. Therefore you will have a reduced functionality (Java Runtime Environment (JRE) not installable, system integration not possible).\nClick 'Cancel' and change your privileges to root privileges, if you want to use the complete functionality."
-msgstr ""
+msgstr "Uwaga: Instalacja zostanie przeprowadzona bez uprawnień administratora. Z tego powodu funkcjonalność programu będzie ograniczona (środowisko JRE (Java Runtime Environment) nie będzie mogło zostać zainstalowane).\nKliknij przycisk Anuluj i zmień uprawnienia na uprawnienia administratora, jeżeli chcesz korzystać z pełnej funkcjonalności programu."
 
 #: src/Localization/setupstrings.ulf#STRING_INSTALLATIONCOMPLETED1
 msgid  "Installation Completed"
@@ -277,15 +277,15 @@ msgstr "Instalacja nie powiodła się"
 
 #: src/Localization/setupstrings.ulf#STRING_INSTALLATIONCOMPLETED2
 msgid  "The Installation Wizard has successfully installed ${PRODUCT_FULLNAME} on your computer."
-msgstr ""
+msgstr "Kreator instalacji pomyślnie zainstalował ${PRODUCT_FULLNAME} na Twoim komputerze."
 
 #: src/Localization/setupstrings.ulf#STRING_INSTALLATIONCOMPLETED2_ABORT
 msgid  "The Installation Wizard was aborted. ${PRODUCT_NAME} is not installed on your computer."
-msgstr ""
+msgstr "Działanie Kreatora instalacji zostało przerwane. Program ${PRODUCT_NAME} nie został zainstalowany."
 
 #: src/Localization/setupstrings.ulf#STRING_INSTALLATIONCOMPLETED2_ERROR
 msgid  "An error has occurred. Thus the Installation Wizard could not install ${PRODUCT_NAME} on your computer successfully. Click 'Details...' for more information."
-msgstr ""
+msgstr "Wystąpił błąd. Kreator instalacji nie mógł zainstalować ${PRODUCT_NAME} na tym komputerze. Kliknij przycisk „Szczegóły...”, aby uzyskać więcej informacji."
 
 #: src/Localization/setupstrings.ulf#STRING_INSTALLATIONCOMPLETED3
 msgid  "Click 'Finish' to exit the Wizard."
@@ -297,15 +297,15 @@ msgstr "Szczegóły..."
 
 #: src/Localization/setupstrings.ulf#STRING_UNINSTALLATIONPROLOGUE2
 msgid  "The ${PRODUCT_FULLNAME} Uninstallation Wizard will remove ${PRODUCT_FULLNAME} from your computer."
-msgstr ""
+msgstr "Kreator deinstalacji ${PRODUCT_FULLNAME} usunie program ${PRODUCT_FULLNAME} z Twojego komputera."
 
 #: src/Localization/setupstrings.ulf#STRING_UNINSTALLATION_PROLOGUE_WRONG_PRIVILEGES_CURRENT_ROOT
 msgid  "Sorry, wrong privileges. Installation was done with User privilges, but you have Root privileges."
-msgstr ""
+msgstr "Nieprawidłowe uprawnienia. Instalacja została przeprowadzona przy zastosowaniu Uprawnień użytkownika, a posiadasz Uprawnienia główne."
 
 #: src/Localization/setupstrings.ulf#STRING_UNINSTALLATION_PROLOGUE_WRONG_PRIVILEGES_CURRENT_USER
 msgid  "Sorry, wrong privileges. Installation was done with Root privilges, but you have User privileges."
-msgstr ""
+msgstr "Nieprawidłowe uprawnienia. Instalacja została przeprowadzona przy zastosowaniu Uprawnień głównych, a posiadasz Uprawnienia użytkownika."
 
 #: src/Localization/setupstrings.ulf#STRING_CHOOSEUNINSTALLATIONTYPE1
 msgid  "Select the Type of Uninstallation"
@@ -321,7 +321,7 @@ msgstr "Częściowa"
 
 #: src/Localization/setupstrings.ulf#STRING_CHOOSEUNINSTALLATIONTYPE4
 msgid  "Completely removes ${PRODUCT_FULLNAME} and all its components from your system."
-msgstr ""
+msgstr "Całkowicie usuwa z systemu program ${PRODUCT_FULLNAME} i jego składniki."
 
 #: src/Localization/setupstrings.ulf#STRING_CHOOSEUNINSTALLATIONTYPE5
 msgid  "You choose the program features you want to remove."
@@ -333,7 +333,7 @@ msgstr "Pełna"
 
 #: src/Localization/setupstrings.ulf#STRING_CHOOSEUNINSTALLATIONCOMPONENTS2
 msgid  "Components marked with an X will be removed. Mark the components you want to remove."
-msgstr ""
+msgstr "Składniki oznaczone symbolem X zostaną usunięte. Zaznacz składniki, które chcesz usunąć:"
 
 #: src/Localization/setupstrings.ulf#STRING_UNINSTALLATIONIMMINENT1
 msgid  "Ready to Remove"
@@ -361,19 +361,19 @@ msgstr "Dezinstalacja nie powiodła się"
 
 #: src/Localization/setupstrings.ulf#STRING_UNINSTALLATIONCOMPLETED2
 msgid  "The Uninstallation Wizard has successfully removed ${PRODUCT_FULLNAME} from your computer."
-msgstr ""
+msgstr "Kreator deinstalacji pomyślnie odinstalował ${PRODUCT_FULLNAME} z Twojego komputera."
 
 #: src/Localization/setupstrings.ulf#STRING_UNINSTALLATIONCOMPLETED2_PARTIAL
 msgid  "The Uninstallation Wizard has successfully removed the selected components of ${PRODUCT_NAME} from your computer."
-msgstr ""
+msgstr "Kreator deinstalacji pomyślnie odinstalował wybrane składniki ${PRODUCT_NAME} z Twojego komputera."
 
 #: src/Localization/setupstrings.ulf#STRING_UNINSTALLATIONCOMPLETED2_ABORT
 msgid  "The Uninstallation Wizard was aborted before completely removing ${PRODUCT_NAME} from your computer."
-msgstr ""
+msgstr "Działanie Kreatora deinstalacji zostało przerwane przed całkowitym usunięciem ${PRODUCT_NAME} z komputera."
 
 #: src/Localization/setupstrings.ulf#STRING_UNINSTALLATIONCOMPLETED2_ERROR
 msgid  "An error has occurred. Thus the Uninstallation Wizard could not remove ${PRODUCT_NAME} from your computer successfully. Click 'Details...' for more information."
-msgstr ""
+msgstr "Wystąpił błąd. Kreator deinstalacji nie mógł usunąć ${PRODUCT_NAME} z tego komputera. Kliknij przycisk „Szczegóły...”, aby uzyskać więcej informacji."
 
 #: src/Localization/setupstrings.ulf#STRING_INSTALLERFACTORY_OS_NOT_SUPPORTED
 msgid  "Sorry, this Operating System is not supported yet."
@@ -381,11 +381,11 @@ msgstr "Niestety, ten system operacyjny nie jest jeszcze obsługiwany."
 
 #: src/Localization/setupstrings.ulf#STRING_OLDER_VERSION_INSTALLED_FOUND
 msgid  "An older version of ${PRODUCT_NAME} was found on your system in:"
-msgstr ""
+msgstr "W systemie znaleziono starszą wersję programu ${PRODUCT_NAME} w następującej lokalizacji:"
 
 #: src/Localization/setupstrings.ulf#STRING_OLDER_VERSION_INSTALLED_REMOVE
 msgid  "You have to remove the older version of ${PRODUCT_NAME} before you can install the newer one."
-msgstr ""
+msgstr "Musisz usunąć starszą wersję programu ${PRODUCT_NAME} przed zainstalowaniem nowszej."
 
 #: src/Localization/setupstrings.ulf#STRING_NEWER_VERSION_INSTALLED_FOUND
 msgid  "A newer version of ${PRODUCT_NAME} was found on your system in:"
@@ -393,7 +393,7 @@ msgstr "W systemie znaleziono nowszą wersję ${PRODUCT_NAME} w:"
 
 #: src/Localization/setupstrings.ulf#STRING_NEWER_VERSION_INSTALLED_REMOVE
 msgid  "You have to remove the newer version of ${PRODUCT_NAME} before you can install the older one."
-msgstr ""
+msgstr "Najpierw trzeba usunąć nowszą wersję ${PRODUCT_NAME}, aby zainstalować starszą wersję programu. "
 
 #: src/Localization/setupstrings.ulf#STRING_NEWER_VERSION_DATABASE
 msgid  "Database"
@@ -409,11 +409,11 @@ msgstr "Zalogowany użytkownik nie może uruchomić Kreatora instalacji."
 
 #: src/Localization/setupstrings.ulf#STRING_ROOT_PRIVILEGES_REQUIRED_2
 msgid  "Please log out and log back in as a user with system administrator rights."
-msgstr ""
+msgstr "Wyloguj się i zaloguj ponownie jako użytkownik posiadający uprawnienia administratora systemu."
 
 #: src/Localization/setupstrings.ulf#STRING_DISCSPACE_INSUFFICIENT
 msgid  "Not enough discspace available for installation."
-msgstr ""
+msgstr "Brak wystarczającej ilości wolnego miejsca na dysku do instalacji produktu."
 
 #: src/Localization/setupstrings.ulf#STRING_DISCSPACE_REQUIRED
 msgid  "Required disc space"
@@ -425,7 +425,7 @@ msgstr "Dostępne miejsce na dysku"
 
 #: src/Localization/setupstrings.ulf#STRING_DISCSPACE_TIP
 msgid  "Please use another directory for installation or change your module selection."
-msgstr ""
+msgstr "Wskaż inny katalog do instalacji lub zmień wybór modułów."
 
 #: src/Localization/setupstrings.ulf#STRING_ANALYZING_DATABASE1
 msgid  "Analyzing ..."
@@ -433,107 +433,107 @@ msgstr "Trwa analizowanie..."
 
 #: src/Localization/setupstrings.ulf#STRING_ANALYZING_DATABASE2
 msgid  "Analyzing database\nPlease wait a moment ..."
-msgstr ""
+msgstr "Trwa analizowanie bazy danych.\nCzekaj..."
 
 #: src/Localization/setupstrings.ulf#STRING_PROLOGUE_1
 msgid  "Welcome to the Installation Wizard.<p>This wizard asks you to supply configuration settings.<p>At the bottom of each page are navigation buttons that let you move through the Installation Wizard:"
-msgstr ""
+msgstr "Witamy w Kreatorze instalacji.<p>Kreator poprosi o podanie ustawień konfiguracyjnych.<p>U dołu każdej strony znajdują się przyciski nawigacji, umożliwiające poruszanie się w Kreatorze instalacji."
 
 #: src/Localization/setupstrings.ulf#STRING_PROLOGUE_2
 msgid  "'Back' returns you to the previous page."
-msgstr ""
+msgstr "Kliknięcie przycisku „Wstecz” powoduje przeniesienie do poprzedniej strony."
 
 #: src/Localization/setupstrings.ulf#STRING_PROLOGUE_3
 msgid  "'Next' takes you to the next page. "
-msgstr ""
+msgstr "Kliknięcie przycisku „Dalej” powoduje przeniesienie do następnej strony. "
 
 #: src/Localization/setupstrings.ulf#STRING_PROLOGUE_4
 msgid  "'Cancel' ends the Installation Wizard without installing this software."
-msgstr ""
+msgstr "Kliknięcie przycisku „Anuluj” kończy pracę Kreatora bez zainstalowania oprogramowania."
 
 #: src/Localization/setupstrings.ulf#STRING_PROLOGUE_5
 msgid  "'Help' displays the Help with further information about the page currently displayed."
-msgstr ""
+msgstr "Kliknięcie przycisku „Pomoc” wyświetla Pomoc wraz z dalszymi informacjami na temat wyświetlanej strony."
 
 #: src/Localization/setupstrings.ulf#STRING_PROLOGUE_6
 msgid  "'OK' exits the Help page and returns you to the Installation Wizard."
-msgstr ""
+msgstr "Kliknięcie przycisku „OK” powoduje zamknięcie strony Pomocy i powrót do Kreatora instalacji."
 
 #: src/Localization/setupstrings.ulf#STRING_UNINSTALLATIONPROLOGUE_1
 msgid  "Welcome to the Uninstallation Wizard.<p>This wizard asks you to supply configuration settings.<p>At the bottom of each page are navigation buttons that let you move through the Uninstallation Wizard:"
-msgstr ""
+msgstr "Witamy w Kreatorze deinstalacji.<p>Kreator poprosi o podanie ustawień konfiguracyjnych.<p>U dołu każdej strony znajdują się przyciski nawigacji, umożliwiające poruszanie się w Kreatorze deinstalacji."
 
 #: src/Localization/setupstrings.ulf#STRING_UNINSTALLATIONPROLOGUE_2
 msgid  "'Back' returns you to the previous page."
-msgstr ""
+msgstr "Kliknięcie przycisku „Wstecz” powoduje przeniesienie do poprzedniej strony."
 
 #: src/Localization/setupstrings.ulf#STRING_UNINSTALLATIONPROLOGUE_3
 msgid  "'Next' takes you to the next page. "
-msgstr ""
+msgstr "Kliknięcie przycisku „Dalej” powoduje przeniesienie do następnej strony. "
 
 #: src/Localization/setupstrings.ulf#STRING_UNINSTALLATIONPROLOGUE_4
 msgid  "'Cancel' ends the Uninstallation Wizard without removing this software."
-msgstr ""
+msgstr "Kliknięcie przycisku „Anuluj” kończy pracę Kreatora bez usunięcia oprogramowania."
 
 #: src/Localization/setupstrings.ulf#STRING_UNINSTALLATIONPROLOGUE_5
 msgid  "'Help' displays the Help with further information about the page currently displayed."
-msgstr ""
+msgstr "Kliknięcie przycisku „Pomoc” wyświetla Pomoc wraz z dalszymi informacjami na temat wyświetlanej strony."
 
 #: src/Localization/setupstrings.ulf#STRING_UNINSTALLATIONPROLOGUE_6
 msgid  "'OK' exits the Help page and returns you to the Uninstallation Wizard."
-msgstr ""
+msgstr "Kliknięcie przycisku „OK” powoduje zamknięcie strony Pomocy i powrót do Kreatora deinstalacji."
 
 #: src/Localization/setupstrings.ulf#STRING_ACCEPTLICENSE_1
 msgid  "Before you install this product, you must read and accept the entire Software License Agreement under which this software is licensed for your use."
-msgstr ""
+msgstr "Przed instalacją należy przeczytać i zaakceptować całą Umowę licencyjną oprogramowania, której podlega ten produkt."
 
 #: src/Localization/setupstrings.ulf#STRING_ACCEPTLICENSE_2
 msgid  "If you have read and accept all the terms of the entire Software License Agreement, click 'Accept License' to continue with the installation."
-msgstr ""
+msgstr "Po przeczytaniu i zaakceptowaniu wszystkich postanowień Umowy licencyjnej oprogramowania kliknij przycisk „Zaakceptuj licencję”, aby kontynuować instalację."
 
 #: src/Localization/setupstrings.ulf#STRING_ACCEPTLICENSE_3
 msgid  "If you do not accept all the terms of the Software License Agreement, click 'Decline' to end the Installation Wizard without installing this product."
-msgstr ""
+msgstr "Jeżeli nie akceptujesz wszystkich postanowień Umowy licencyjnej oprogramowania, kliknij przycisk „Odrzuć”, aby zakończyć pracę Kreatora instalacji bez instalowania produktu."
 
 #: src/Localization/setupstrings.ulf#STRING_CHOOSEINSTALLATIONTYPE_1
 msgid  "Select the type of product installation to perform from the following choices. This will determine how much information you need to provide for product configuration."
-msgstr ""
+msgstr "Spośród podanych propozycji wybierz żądany typ instalacji produktu. To wpływa na ilość informacji, które trzeba będzie podać w celu skonfigurowania produktu."
 
 #: src/Localization/setupstrings.ulf#STRING_CHOOSEDIRECTORY_1
 msgid  "It is recommended that you install this product in the directory suggested by this Installation Wizard. <p>To choose a different location, click 'Browse...' or specify the full path of the directory to use in the text box below. <p>If this product is already installed, you cannot change the destination directory."
-msgstr ""
+msgstr "Zaleca się instalację tego produktu w katalogu sugerowanym przez Kreatora instalacji. <p>Aby wybrać inną lokalizację, kliknij przycisk „Przeglądaj...” lub w polu tekstowym poniżej podaj pełną ścieżkę katalogu. <p>Jeśli produkt jest już zainstalowany, nie można zmienić katalogu docelowego."
 
 #: src/Localization/setupstrings.ulf#STRING_CHOOSECOMPONENTS_1
 msgid  "Components marked in color will be installed. Click the icon of a component to mark or unmark the component.<p>All already installed components cannot be selected for installation."
-msgstr ""
+msgstr "Zostaną zainstalowane składniki oznaczone kolorem. Kliknij ikonę składnika, aby go zaznaczyć lub cofnąć wybór.<p>Nie można wybrać już zainstalowanych składników."
 
 #: src/Localization/setupstrings.ulf#STRING_INSTALLATIONIMMINENT_1
 msgid  "The listed components are ready for installation based on your configuration settings. <p>If you are satisfied with your selection, click 'Install Now' to begin. <p>To check or modify your settings on the previous pages, click 'Back'."
-msgstr ""
+msgstr "Wymienione składniki są przygotowane do zainstalowania w oparciu o ustawienia konfiguracji. <p>Jeśli dokonany wybór jest odpowiedni, kliknij przycisk „Instaluj teraz”, aby rozpocząć instalację. <p>Aby sprawdzić lub zmienić ustawienia na poprzednich stronach, kliknij przycisk „Wstecz”."
 
 #: src/Localization/setupstrings.ulf#STRING_UNINSTALLATIONIMMINENT_1
 msgid  "The listed components are ready for uninstallation based on your configuration settings. <p>If you are satisfied with your selection, click 'Remove Now' to begin. <p>To check or modify your settings on the previous pages, click 'Back'."
-msgstr ""
+msgstr "Wymienione składniki są przygotowane do usunięcia w oparciu o ustawienia konfiguracji. <p>Jeśli dokonany wybór jest odpowiedni, kliknij przycisk „Usuń teraz”, aby rozpocząć deinstalację. <p>Aby sprawdzić lub zmienić ustawienia na poprzednich stronach, kliknij przycisk „Wstecz”."
 
 #: src/Localization/setupstrings.ulf#STRING_INSTALLATIONONGOING_1
 msgid  "This page indicates the progress of the installation with the aid of a progress bar. To abort the installation process, click 'Stop'."
-msgstr ""
+msgstr "Pasek postępu znajdujący się na tej stronie wskazuje postęp procesu instalacji. Aby przerwać proces instalacji, kliknij przycisk „Zatrzymaj”."
 
 #: src/Localization/setupstrings.ulf#STRING_UNINSTALLATIONONGOING_1
 msgid  "This page indicates the progress of the uninstallation with the aid of a progress bar. To abort the uninstallation, click 'Stop'."
-msgstr ""
+msgstr "Pasek postępu znajdujący się na tej stronie wskazuje postęp procesu deinstalacji. Aby przerwać proces deinstalacji, kliknij przycisk „Zatrzymaj”."
 
 #: src/Localization/setupstrings.ulf#STRING_CHOOSEUNINSTALLATIONTYPE_1
 msgid  "Complete: This will remove all installed components of your version.<p>Partial: This removes only the components you will choose out of the components list."
-msgstr ""
+msgstr "Wykonano: Wszystkie zainstalowane składniki bieżącej wersji zostaną usunięte.<p>Częściowa: Usunięte zostaną tylko składniki wybrane z listy."
 
 #: src/Localization/setupstrings.ulf#STRING_CHOOSEUNINSTALLATIONCOMPONENTS_1
 msgid  "Components marked with an X will be removed. Click next to a component to mark or unmark it with an X."
-msgstr ""
+msgstr "Składniki oznaczone symbolem X zostaną usunięte. Kliknij obok składnika, aby oznaczyć go znakiem X lub cofnąć zaznaczenie."
 
 #: src/Localization/setupstrings.ulf#STRING_PACKAGEFORMAT_NOT_SUPPORTED
 msgid  "This package format is currently not supported for your operating system!"
-msgstr ""
+msgstr "Ten format pakietu nie jest aktualnie obsługiwany przez ten system operacyjny!"
 
 #: src/Localization/setupstrings.ulf#STRING_OPERATING_SYSTEM
 msgid  "Operating system"
@@ -553,7 +553,7 @@ msgstr "Nie zaznaczono żadnych składników do zainstalowania."
 
 #: src/Localization/setupstrings.ulf#STRING_NO_COMPONENTS_SELECTED_2
 msgid  "Click 'OK' to select one or more components for installation or to exit the Installation Wizard."
-msgstr ""
+msgstr "Kliknij przycisk „OK”, aby wybrać jeden lub więcej składników do zainstalowania albo zakończyć działanie Kreatora instalacji."
 
 #: src/Localization/setupstrings.ulf#STRING_NO_LANGUAGE_SELECTED_1
 msgid  "No languages have been selected for installation."
@@ -561,7 +561,7 @@ msgstr "Nie wybrano żadnych wersji językowych do zainstalowania."
 
 #: src/Localization/setupstrings.ulf#STRING_NO_LANGUAGE_SELECTED_2
 msgid  "Click 'OK' to select one or more languages for installation or to exit the Installation Wizard."
-msgstr ""
+msgstr "Kliknij przycisk 'OK', aby zaznaczyć co najmniej jedną wersję językową do zainstalowania lub aby zamknąć Kreatora instalacji."
 
 #: src/Localization/setupstrings.ulf#STRING_NO_APPLICATION_SELECTED_1
 msgid  "No applications have been selected for installation."
@@ -569,7 +569,7 @@ msgstr "Nie wybrano żadnych aplikacji do zainstalowania."
 
 #: src/Localization/setupstrings.ulf#STRING_NO_APPLICATION_SELECTED_2
 msgid  "Click 'OK' to select one or more application for installation or to exit the Installation Wizard."
-msgstr ""
+msgstr "Kliknij przycisk 'OK', aby zaznaczyć co najmniej jedną aplikację do zainstalowania lub aby zamknąć Kreatora instalacji."
 
 #: src/Localization/setupstrings.ulf#STRING_NOTHING_TO_UNINSTALL
 msgid  "Nothing to uninstall"
@@ -581,23 +581,23 @@ msgstr "Nie zaznaczono żadnych składników do deinstalacji."
 
 #: src/Localization/setupstrings.ulf#STRING_NO_UNINSTALLCOMPONENTS_SELECTED_2
 msgid  "Click 'OK' to select one or more components for uninstallation or to exit the Uninstallation Wizard."
-msgstr ""
+msgstr "Kliknij przycisk „OK”, aby wybrać jeden lub więcej składników do deinstalacji albo zakończyć działanie Kreatora deinstalacji."
 
 #: src/Localization/setupstrings.ulf#STRING_ALL_LANGUAGECOMPONENTS_SELECTED_1
 msgid  "All language components have been selected for uninstallation."
-msgstr ""
+msgstr "Wszystkie wersje językowe zostały zaznaczone jako elementy do odinstalowania."
 
 #: src/Localization/setupstrings.ulf#STRING_ALL_LANGUAGECOMPONENTS_SELECTED_2
 msgid  "Click 'OK' to select one or more language components not for uninstallation or to exit the Uninstallation Wizard."
-msgstr ""
+msgstr "Kliknij przycisk 'OK', aby usunąć zaznaczenie części składników wybranych wcześniej do odinstalowania lub aby zamknąć Kreatora dezinstalacji."
 
 #: src/Localization/setupstrings.ulf#STRING_ALL_APPLICATIONCOMPONENTS_SELECTED_1
 msgid  "All application components have been selected for uninstallation."
-msgstr ""
+msgstr "Wszystkie składniki aplikacji zostały zaznaczone jako elementy do odinstalowania."
 
 #: src/Localization/setupstrings.ulf#STRING_ALL_APPLICATIONCOMPONENTS_SELECTED_2
 msgid  "Click 'OK' to select one or more application components not for uninstallation or to exit the Uninstallation Wizard."
-msgstr ""
+msgstr "Kliknij przycisk 'OK', aby usunąć zaznaczenie części składników wybranych wcześniej do odinstalowania lub aby zamknąć Kreatora dezinstalacji."
 
 #: src/Localization/setupstrings.ulf#STRING_CHANGE_SELECTION
 msgid  "Please change selection"

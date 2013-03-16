@@ -437,7 +437,7 @@ msgstr "FACTDOUBLE"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Workday.1.String.Text
 msgid  "Returns the serial number of the date before or after a specified number of workdays"
-msgstr ""
+msgstr "ನಿರ್ದಿಷ್ಟ ಸಂಖ್ಯೆಯ ಕಾರ್ಯದಿನಗಳ ನಂತರದ ಹಿಂದಿನ ಅಥವಾ ಮುಂದಿನ ದಿನಾಂಕದ ಕ್ರಮಸಂಖ್ಯೆಯನ್ನು ಹಿಂದಿರುಗಿಸುತ್ತದೆ"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Workday.2.String.Text
 msgid  "Start date"
@@ -465,7 +465,7 @@ msgstr "ರಜಾ ದಿನಗಳ ದಿನಾಂಕ ಮೌಲ್ಯಗಳ ಪ�
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Yearfrac.1.String.Text
 msgid  "Returns the number of whole days between 'start date' and 'end date' as a year fraction"
-msgstr ""
+msgstr "ಆರಂಭ ದಿನಾಂಕ ಮತ್ತು ಅಂತ್ಯ ದಿನಾಂಕದ ನಡುವಿನ ಪೂರ್ಣ ದಿನಗಳನ್ನು ವರ್ಷದ ಭಿನ್ನಾಂಕದಂತೆ ಹಿಂದಿರುಗಿಸುತ್ತದೆ"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Yearfrac.2.String.Text
 msgid  "Start date"
@@ -493,7 +493,7 @@ msgstr "ಬಡ್ಡಿ ನೀಡುವ ದಿನಗಳ ಅವಧಿಯನ್ನ
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Edate.1.String.Text
 msgid  "Returns the serial number of the date that is a specified number of months before or after the start date"
-msgstr ""
+msgstr "ಆರಂಭ ದಿನಾಂಕದ ನಂತರದ ಹಿಂದಿನ ಅಥವಾ ಮುಂದಿನ ದಿನಾಂಕದ ಕ್ರಮಸಂಖ್ಯೆಯನ್ನು ಹಿಂದಿರುಗಿಸುತ್ತದೆ"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Edate.2.String.Text
 msgid  "Start date"
@@ -513,7 +513,7 @@ msgstr "ಆರಂಭ ದಿನಾಂಕದ ಹಿಂದಿನ ಅಥವಾ ಮ�
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Weeknum.1.String.Text
 msgid  "Returns the number of the calendar week in which the specified date occurs."
-msgstr ""
+msgstr "ನಿರ್ದಿಷ್ಟ ದಿನಾಂಕವು ಸಂಭವವಾಗುವ ಕ್ಯಾಲೆಂಡರ್ ವಾರಗಳ ಸಂಖ್ಯೆಯನ್ನು ಹಿಂದಿರುಗಿಸುತ್ತದೆ."
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Weeknum.2.String.Text
 msgid  "Date"
@@ -533,7 +533,7 @@ msgstr "ವಾರ ಆರಂಭವಾಗುವ ದಿನವನ್ನು ೧ ರ�
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Eomonth.1.String.Text
 msgid  "Returns the serial number of the last day of the month that comes a certain number of months before or after the start date"
-msgstr ""
+msgstr "ಆರಂಭ ದಿನಾಂಕದ ಹಿಂದೆ ಅಥವಾ ಮುಂದೆ ಬರುವ ನಿರ್ದಿಷ್ಟ ತಿಂಗಳುಗಳಲ್ಲಿನ ತಿಂಗಳಿನ ಕೊನೆಯ ದಿನದ ಕ್ರಮಸಂಖ್ಯೆಯನ್ನು ಹಿಂದಿರುಗಿಸುತ್ತದೆ"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Eomonth.2.String.Text
 msgid  "Start date"
@@ -613,7 +613,7 @@ msgstr "ಸಂಖ್ಯೆ(ಗಳು)"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Multinomial.3.String.Text
 msgid  "Number or list of numbers for which you want the multinomial coefficient"
-msgstr ""
+msgstr "ವಿವಿಧಹೆಸರಿನ ಸಹಾಂಕ ಬೇಕಾದ ಸಂಖ್ಯೆ ಅಥವಾ ಸಂಖ್ಯೆಗಳ ಪಟ್ಟಿ"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Seriessum.1.String.Text
 msgid  "Returns the sum of a power series"
@@ -649,7 +649,7 @@ msgstr "ಸಹಾಂಕಗಳು"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Seriessum.9.String.Text
 msgid  "Set of coefficients by which each successive power of the variable x is multiplied"
-msgstr ""
+msgstr "x ಚರಾಂಶದ ಪ್ರತಿಯೊಂದು ಅನುಕ್ರಮಣಿಕೆ ಘಾತವನ್ನು ಗುಣಿಸಿದ ಸಹಾಂಕಗಳ ಸಮೂಹ"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Quotient.1.String.Text
 msgid  "Returns the integer portion of a division"
@@ -705,7 +705,7 @@ msgstr "ಪೈ ಯನ್ನು ಗುಣಿಸಬೇಕಾದ ಸಂಖ್ಯೆ
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Randbetween.1.String.Text
 msgid  "Returns a random integer between the numbers you specify"
-msgstr ""
+msgstr "ನೀವು ನಿರ್ದಿಷ್ಟಪಡಿಸುವ ಸಂಖ್ಯೆಗಳ ಮಧ್ಯದ ಯಾದೃಚ್ಛಿಕ ಪೂರ್ಣಾಂಕವನ್ನು ಹಿಂದಿರುಗಿಸುತ್ತದೆ"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Randbetween.2.String.Text
 msgid  "Bottom"
@@ -1153,7 +1153,7 @@ msgstr "ಮಿಶ್ರಸಂಖ್ಯೆ"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Impower.1.String.Text
 msgid  "Returns a complex number raised to an integer power"
-msgstr ""
+msgstr "ಪೂರ್ಣಾಂಕದ ಘಾತಕ್ಕೆ ಮಿಶ್ರಸಂಖ್ಯೆಯನ್ನು ಹಾಕಿದಾಗ ಬರುವ ಸಂಖ್ಯೆಯನ್ನು ಹಿಂದಿರುಗಿಸುತ್ತದೆ"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Impower.2.String.Text
 msgid  "Complex number"
@@ -1517,7 +1517,7 @@ msgstr "ಫಲಿತಾಂಶಕ್ಕಾಗಿ ಅಳತೆಯ ಮಾನ\t"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Amordegrc.1.String.Text
 msgid  "Returns the prorated linear depreciation of an asset for each accounting period"
-msgstr ""
+msgstr "ಪ್ರತಿಯೊಂದು ಲೆಕ್ಕ ಕಾಲಾವಧಿಗೆ ಆಸ್ತಿಯ ಪೂರ್ವನಿರ್ಧಾರಿತ ರೇಖಾತ್ಮಕ ಸವಕಳಿಯನ್ನು ಹಿಂದಿರುಗಿಸುತ್ತದೆ"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Amordegrc.2.String.Text
 msgid  "Cost"
@@ -1577,7 +1577,7 @@ msgstr "ಬಳಸಬೇಕಾದ ವರ್ಷ ಆಧಾರ"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Amorlinc.1.String.Text
 msgid  "Returns the prorated linear depreciation of an asset for each accounting period"
-msgstr ""
+msgstr "ಪ್ರತಿಯೊಂದು ಲೆಕ್ಕ ಕಾಲಾವಧಿಗೆ ಆಸ್ತಿಯ ಪೂರ್ವನಿರ್ಧಾರಿತ ರೇಖಾತ್ಮಕ ಸವಕಳಿಯನ್ನು ಹಿಂದಿರುಗಿಸುತ್ತದೆ"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Amorlinc.2.String.Text
 msgid  "Cost"
@@ -1637,7 +1637,7 @@ msgstr "ಬಳಸಬೇಕಾದ ವರ್ಷ ಆಧಾರ"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Accrint.1.String.Text
 msgid  "Returns the accrued interest for a security that pays periodic interest"
-msgstr ""
+msgstr "ನಿಯತಕಾಲಿಕ ಬಡ್ಡಿಯನ್ನು ಪಾವತಿಸುವ ಭದ್ರತೆಗೆ ಪ್ರಾಪ್ತವಾಗುವ ಬಡ್ಡಿಯನ್ನು ಹಿಂದಿರುಗಿಸುತ್ತದೆ"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Accrint.2.String.Text
 msgid  "Issue"
@@ -1697,7 +1697,7 @@ msgstr "ಆಧಾರ"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Accrintm.1.String.Text
 msgid  "Returns the accrued interest for a security that pays interest at maturity"
-msgstr ""
+msgstr "ಪಕ್ವತೆಯಾದಾಗ ಬಡ್ಡಿಯನ್ನು ಪಾವತಿಸುವ ಭದ್ರತೆಗೆ ಪ್ರಾಪ್ತವಾಗುವ ಬಡ್ಡಿಯನ್ನು ಹಿಂದಿರುಗಿಸುತ್ತದೆ"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Accrintm.2.String.Text
 msgid  "Issue"
@@ -1829,7 +1829,7 @@ msgstr "ಆಧಾರ"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Duration.1.String.Text
 msgid  "Returns the annual Macaulay duration of a security with periodic interest payments"
-msgstr ""
+msgstr "ನಿಯತಕಾಲಿಕ ಬಡ್ಡಿ ಪಾವತಿಗಳೊಂದಿಗಿನ ಭದ್ರತೆಯ ವಾರ್ಷಿಕ ಮ್ಯಾಕ್ಲೆ ಅವಧಿಯನ್ನು ಹಿಂದಿರುಗಿಸುತ್ತದೆ"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Duration.2.String.Text
 msgid  "Settlement"
@@ -1901,7 +1901,7 @@ msgstr "ಅವಧಿಗಳು"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Cumprinc.1.String.Text
 msgid  "Returns the cumulative principal on a loan to be paid between two periods"
-msgstr ""
+msgstr "ಎರಡು ಅವಧಿಗಳ ಮಧ್ಯೆ ಪಾವತಿಯಾಗುವ ಸಾಲದ ಮೇಲಿನ ಸಂಚಿತ ಬಂಡವಾಳವನ್ನು ಹಿಂದಿರುಗಿಸುತ್ತದೆ"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Cumprinc.2.String.Text
 msgid  "Rate"
@@ -2005,7 +2005,7 @@ msgstr "ಪಕ್ವತೆಯ ಬಗೆ"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Price.1.String.Text
 msgid  "Returns the price per 100 currency units face value of a security that pays periodic interest"
-msgstr ""
+msgstr "ನಿಯತಕಾಲಿಕ ಬಡ್ಡಿಯನ್ನು ಪಾವತಿಸುವ ಭದ್ರತೆಯ ೧೦೦ ಕರೆನ್ಸಿ ಮಾನಗಳ ಮುಖಬೆಲೆ ಮೌಲ್ಯವನ್ನು ಹಿಂದಿರುಗಿಸುತ್ತದೆ"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Price.2.String.Text
 msgid  "Settlement"
@@ -2065,7 +2065,7 @@ msgstr "ಆಧಾರ"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Pricedisc.1.String.Text
 msgid  "Returns the price per 100 currency units face value of a discounted security"
-msgstr ""
+msgstr "ರಿಯಾಯಿತಿ ಭದ್ರತೆಯ ೧೦೦ ಕರೆನ್ಸಿ ಮಾನಗಳ ಮುಖಬೆಲೆ ಮೌಲ್ಯವನ್ನು ಹಿಂದಿರುಗಿಸುತ್ತದೆ"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Pricedisc.2.String.Text
 msgid  "Settlement"
@@ -2109,7 +2109,7 @@ msgstr "ಆಧಾರ"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Pricemat.1.String.Text
 msgid  "Returns the price per 100 currency units face value of a security that pays interest at maturity"
-msgstr ""
+msgstr "ಪಕ್ವತೆಯಾದಾಗ ಬಡ್ಡಿಯನ್ನು ಸಂದಾಯಿಸುವ ಭದ್ರತೆಯ ಮುಖಬೆಲೆ ೧೦೦ ಚಲಾಯಿತ ನಾಣ್ಯ ಮಾನಗಳ ಬೆಲೆಯನ್ನು ಹಿಂದಿರುಗಿಸುತ್ತದೆ"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Pricemat.2.String.Text
 msgid  "Settlement"
@@ -2161,7 +2161,7 @@ msgstr "ಆಧಾರ"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Mduration.1.String.Text
 msgid  "Returns the Macaulay modified duration for a security with an assumed par value of 100 currency units"
-msgstr ""
+msgstr "ಭಾವಿಸಿದ ೧೦೦ ಕರೆನ್ಸಿ ಮಾನಗಳ ಸಮ ಮೌಲ್ಯಗಳೊಂದಿಗಿನ ಭದ್ರತೆಗೆ ಮ್ಯಾಕ್ಲಿ ಮಾರ್ಪಾಡು ಅವಧಿಯನ್ನು ಹಿಂದಿರುಗಿಸುತ್ತದೆ "
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Mduration.2.String.Text
 msgid  "Settlement"
@@ -2233,7 +2233,7 @@ msgstr "ಅವಧಿಗಳು"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Dollarfr.1.String.Text
 msgid  "Converts a price expressed as a decimal into a price expressed as a fraction"
-msgstr ""
+msgstr "ದಶಮಾಂಶದಂತೆ ಪ್ರಕಟಿಸಲಾಗುವ ಬೆಲೆಯನ್ನು ಅಲ್ಪಭಾಗದಂತೆ ಪ್ರಕಟಿಸಲಾಗುವ ಬೆಲೆಗೆ ರೂಪಾಂತರಿಸುತ್ತದೆ"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Dollarfr.2.String.Text
 msgid  "Decimal dollar"
@@ -2253,7 +2253,7 @@ msgstr "ಭಾಜಕ"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Dollarde.1.String.Text
 msgid  "Converts a price expressed as a fraction into a price expressed as a decimal"
-msgstr ""
+msgstr "ಭಿನ್ನಾಂಕದಂತೆ ಪ್ರಕಟಿಸಲಾಗುವ ಬೆಲೆಯನ್ನು ದಶಮಾಂಶದಂತೆ ಪ್ರಕಟಿಸಲಾಗುವ ಬೆಲೆಗೆ ರೂಪಾಂತರಿಸುತ್ತದೆ"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Dollarde.2.String.Text
 msgid  "Fractional dollar"
@@ -2273,7 +2273,7 @@ msgstr "ಭಾಜಕ"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Yield.1.String.Text
 msgid  "Returns the yield on a security that pays periodic interest"
-msgstr ""
+msgstr "ನಿಯತಕಾಲಿಕ ಬಡ್ಡಿಯನ್ನು ಪಾವತಿಸುವ ಭದ್ರತೆಯ ಮೇಲಿನ ಇಳುವರಿಯನ್ನು ಹಿಂದಿರುಗಿಸುತ್ತದೆ"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Yield.2.String.Text
 msgid  "Settlement"
@@ -2377,7 +2377,7 @@ msgstr "ಆಧಾರ"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Yieldmat.1.String.Text
 msgid  "Returns the annual yield of a security that pays interest at maturity"
-msgstr ""
+msgstr "ಅವಧಿ ಮುಕ್ತಾಯ ಸಮಯದಲ್ಲಿ ಸಂದಾಯವಾಗುವ ಬಡ್ಡಿಯನ್ನು ಕೊಡುವ ಭದ್ರತೆಯ ವಾರ್ಷಿಕ ಇಳುವರಿಯನ್ನು ಹಿಂದಿರುಗಿಸುತ್ತದೆ"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Yieldmat.2.String.Text
 msgid  "Settlement"
@@ -2457,7 +2457,7 @@ msgstr "ರಿಯಾಯಿತಿ ದರ"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Tbillprice.1.String.Text
 msgid  "Returns the price of 100 currency units face value for a treasury bill"
-msgstr ""
+msgstr "ಖಜಾನೆ ಬಿಲ್ಲಿಗೆ ೧೦೦ ಚಲಾಯಿತ ನಾಣ್ಯ ಮುಖಬೆಲೆ ಅಳತೆಮಾನ ಬೆಲೆಯನ್ನು ಹಿಂದಿರುಗಿಸುತ್ತದೆ"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Tbillprice.2.String.Text
 msgid  "Settlement"
@@ -2513,7 +2513,7 @@ msgstr "ಬೆಲೆ"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Oddfprice.1.String.Text
 msgid  "Returns the price per $100 face value of a security with an odd first period"
-msgstr ""
+msgstr "ಬೆಸಸಂಖ್ಯೆ ಮೊದಲ ಅವಧಿಯೊಂದಿಗಿನ ಭದ್ರತೆಯ ಪ್ರತಿ $೧೦೦ ಮುಖಬೆಲೆಯನ್ನು ಹಿಂದಿರುಗಿಸುತ್ತದೆ"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Oddfprice.2.String.Text
 msgid  "Settlement"
@@ -2665,7 +2665,7 @@ msgstr "ಆಧಾರ"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Oddlprice.1.String.Text
 msgid  "Returns the price per $100 face value of a security with an odd last period"
-msgstr ""
+msgstr "ಬೆಸಸಂಖ್ಯೆ ಕೊನೆಯ ಅವಧಿಯೊಂದಿಗಿನ ಭದ್ರತೆಯ ಪ್ರತಿ $೧೦೦ ಮುಖಬೆಲೆಯನ್ನು ಹಿಂದಿರುಗಿಸುತ್ತದೆ"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Oddlprice.2.String.Text
 msgid  "Settlement"
@@ -2801,7 +2801,7 @@ msgstr "ಆಧಾರ"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Xirr.1.String.Text
 msgid  "Returns the internal rate of return for a non-periodic schedule of payments"
-msgstr ""
+msgstr "ನಿಯತಕಾಲಿಕವಲ್ಲದ ಪಾವತಿಗಳ ಕಾರ್ಯಕ್ರಮಕ್ಕೆ  ಹಿಂದಿರುಗಿಸಬೇಕಾದ ಆಂತರಿಕ ದರವನ್ನು ಹಿಂದಿರುಗಿಸುತ್ತದೆ"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Xirr.2.String.Text
 msgid  "Values"
@@ -2937,7 +2937,7 @@ msgstr "ಆಧಾರ"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Coupdays.1.String.Text
 msgid  "Returns the number of days in the coupon period containing the settlement date"
-msgstr ""
+msgstr "ಇತ್ಯರ್ಥ ದಿನಾಂಕವನ್ನು ಒಳಗೊಂಡ ಕೂಪನ್‌ ಅವಧಿಯಲ್ಲಿನ ದಿನಗಳ ಸಂಖ್ಯೆಯನ್ನು ಹಿಂದಿರುಗಿಸುತ್ತದೆ"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Coupdays.2.String.Text
 msgid  "Settlement"
@@ -2973,7 +2973,7 @@ msgstr "ಆಧಾರ"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Coupdaysnc.1.String.Text
 msgid  "Returns the number of days from the settlement date to the next coupon date"
-msgstr ""
+msgstr "ಇತ್ಯರ್ಥ ದಿನಾಂಕದಿಂದ ಮುಂದಿನ ಕೂಪನ್‌ ದಿನಾಂಕದವರೆಗಿನ ದಿನಗಳ ಸಂಖ್ಯೆಯನ್ನು ಹಿಂದಿರುಗಿಸುತ್ತದೆ"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Coupdaysnc.2.String.Text
 msgid  "Settlement"
@@ -3009,7 +3009,7 @@ msgstr "ಆಧಾರ"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Coupdaybs.1.String.Text
 msgid  "Returns the number of days from the beginning of the coupon period to the settlement date"
-msgstr ""
+msgstr "ಕೂಪನ್‌ನ ಅವಧಿಯ ಪ್ರಾರಂಭದಿಂದ ಇತ್ಯರ್ಥದ ದಿನಾಂಕದವರೆಗಿನ ದಿನಗಳನ್ನು ಹಿಂದಿರುಗಿಸುತ್ತದೆ"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Coupdaybs.2.String.Text
 msgid  "Settlement"
@@ -3081,7 +3081,7 @@ msgstr "ಆಧಾರ"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Coupnum.1.String.Text
 msgid  "Returns the number of coupons payable between the settlement and maturity dates"
-msgstr ""
+msgstr "ಇತ್ಯರ್ಥ ಮತ್ತು ಪಕ್ವತೆ ದಿನಾಂಕದ ಮಧ್ಯೆ ಪಾವತಿ ಮಾಡಬೇಕಾದ ಕೂಪನ್‌ಗಳ ಸಂಖ್ಯೆಯನ್ನು ಹಿಂದಿರುಗಿಸುತ್ತದೆ"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Coupnum.2.String.Text
 msgid  "Settlement"
@@ -3117,7 +3117,7 @@ msgstr "ಆಧಾರ"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Fvschedule.1.String.Text
 msgid  "Returns the future value of the initial principal after a series of compound interest rates are applied"
-msgstr ""
+msgstr "ಸರಣಿಯಲ್ಲಿ ಅನೇಕ ಚಕ್ರಬಡ್ಡಿಯ ದರಗಳನ್ನು ಅನ್ವಯಿಸಿದ ನಂತರ ಬರುವ ಮೂಲಧನದ ಭವಿಷ್ಯದ ಮೌಲ್ಯವನ್ನು ಹಿಂದಿರುಗಿಸುತ್ತದೆ"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Fvschedule.2.String.Text
 msgid  "Principal"
@@ -3161,7 +3161,7 @@ msgstr "ಬಗೆ"
 
 #: source/datefunc/datefunc.src#RID_DATE_FUNCTION_DESCRIPTIONS.DATE_FUNCDESC_DiffWeeks.7.String.Text
 msgid  "Type of calculation: Type=0 means the time interval, Type=1 means calendar weeks."
-msgstr ""
+msgstr "ಲೆಕ್ಕದ ರೀತಿ: ರೀತಿ=೦ ಅಂದರೆ ಸಮಯದ ಅಂತರ, ರೀತಿ=೧ ಅಂದರೆ ಕ್ಯಾಲೆಂಡರ್ ವಾರಗಳು."
 
 #: source/datefunc/datefunc.src#RID_DATE_FUNCTION_DESCRIPTIONS.DATE_FUNCDESC_DiffMonths.1.String.Text
 msgid  "Determines the number of months in a specific period."
@@ -3189,7 +3189,7 @@ msgstr "ಬಗೆ"
 
 #: source/datefunc/datefunc.src#RID_DATE_FUNCTION_DESCRIPTIONS.DATE_FUNCDESC_DiffMonths.7.String.Text
 msgid  "Type of calculation: Type=0 means the time interval, Type=1 means calendar months."
-msgstr ""
+msgstr "ಲೆಕ್ಕದ ರೀತಿ: ರೀತಿ=೦ ಅಂದರೆ ಸಮಯದ ಅಂತರ, ರೀತಿ=೧ ಅಂದರೆ ಕ್ಯಾಲೆಂಡರ್ ತಿಂಗಳುಗಳು."
 
 #: source/datefunc/datefunc.src#RID_DATE_FUNCTION_DESCRIPTIONS.DATE_FUNCDESC_DiffYears.1.String.Text
 msgid  "Calculates the number of years in a specific period."
@@ -3217,11 +3217,11 @@ msgstr "ಬಗೆ"
 
 #: source/datefunc/datefunc.src#RID_DATE_FUNCTION_DESCRIPTIONS.DATE_FUNCDESC_DiffYears.7.String.Text
 msgid  "Type of calculation: Type=0 means the time interval, Type=1 means calendar years."
-msgstr ""
+msgstr "ಲೆಕ್ಕದ ರೀತಿ: ರೀತಿ=೦ ಅಂದರೆ ಸಮಯದ ಅಂತರ, ರೀತಿ=೧ ಅಂದರೆ ಕ್ಯಾಲೆಂಡರ್ ವರ್ಷಗಳು."
 
 #: source/datefunc/datefunc.src#RID_DATE_FUNCTION_DESCRIPTIONS.DATE_FUNCDESC_IsLeapYear.1.String.Text
 msgid  "Returns 1 (TRUE) if the date is a day of a leap year, otherwise 0 (FALSE)."
-msgstr ""
+msgstr "ದಿನಾಂಕವು ಅಧಿಕವರ್ಷದ ದಿನವಾದರೆ ೧(ಸರಿ), ಇಲ್ಲದಿದ್ದರೆ ೦ (ತಪ್ಪು) ಎಂದು ಹಿಂದಿರುಗಿಸುತ್ತದೆ."
 
 #: source/datefunc/datefunc.src#RID_DATE_FUNCTION_DESCRIPTIONS.DATE_FUNCDESC_IsLeapYear.2.String.Text
 msgid  "Date"
@@ -3233,7 +3233,7 @@ msgstr "ಅಪೇಕ್ಷಿಸಿದ ವರ್ಷದ ಯಾವುದಾದರ�
 
 #: source/datefunc/datefunc.src#RID_DATE_FUNCTION_DESCRIPTIONS.DATE_FUNCDESC_DaysInMonth.1.String.Text
 msgid  "Returns the number of days of the month in which the date entered occurs"
-msgstr ""
+msgstr "ನಮೂದಿಸಿದ ದಿನಾಂಕವಿರುವ ತಿಂಗಳಿನಲ್ಲಿರುವ ಒಟ್ಟು ದಿನಗಳನ್ನು ಹಿಂದಿರುಗಿಸುತ್ತದೆ"
 
 #: source/datefunc/datefunc.src#RID_DATE_FUNCTION_DESCRIPTIONS.DATE_FUNCDESC_DaysInMonth.2.String.Text
 msgid  "Date"
@@ -3245,7 +3245,7 @@ msgstr "ಅಪೇಕ್ಷಿಸಿದ ತಿಂಗಳ ಯಾವುದಾದರ�
 
 #: source/datefunc/datefunc.src#RID_DATE_FUNCTION_DESCRIPTIONS.DATE_FUNCDESC_DaysInYear.1.String.Text
 msgid  "Returns the number of days of the year in which the date entered occurs."
-msgstr ""
+msgstr "ನಮೂದಿಸಿದ ದಿನಾಂಕವಿರುವ ವರ್ಷದಲ್ಲಿರುವ ಒಟ್ಟು ದಿನಗಳನ್ನು ಹಿಂದಿರುಗಿಸುತ್ತದೆ."
 
 #: source/datefunc/datefunc.src#RID_DATE_FUNCTION_DESCRIPTIONS.DATE_FUNCDESC_DaysInYear.2.String.Text
 msgid  "Date"
@@ -3257,7 +3257,7 @@ msgstr "ಅಪೇಕ್ಷಿಸಿದ ವರ್ಷದ ಯಾವುದಾದರ�
 
 #: source/datefunc/datefunc.src#RID_DATE_FUNCTION_DESCRIPTIONS.DATE_FUNCDESC_WeeksInYear.1.String.Text
 msgid  "Returns the number of weeks of the year in which the date entered occurs"
-msgstr ""
+msgstr "ನಮೂದಿಸಿದ ದಿನಾಂಕವಿರುವ ವರ್ಷದಲ್ಲಿರುವ ಒಟ್ಟು ವಾರಗಳನ್ನು ಹಿಂದಿರುಗಿಸುತ್ತದೆ"
 
 #: source/datefunc/datefunc.src#RID_DATE_FUNCTION_DESCRIPTIONS.DATE_FUNCDESC_WeeksInYear.2.String.Text
 msgid  "Date"
@@ -3269,7 +3269,7 @@ msgstr "ಅಪೇಕ್ಷಿಸಿದ ವರ್ಷದ ಯಾವುದಾದರ�
 
 #: source/datefunc/datefunc.src#RID_DATE_FUNCTION_DESCRIPTIONS.DATE_FUNCDESC_Rot13.1.String.Text
 msgid  "Encrypts or decrypts a text using the ROT13 algorithm"
-msgstr ""
+msgstr "ROT13 ಅಲ್ಗಾರಿತಮ್‌ ಬಳಸಿ ಪಠ್ಯವನ್ನು ಗೂಢಲಿಪೀಕರಣಗೊಳಿಸುತ್ತದೆ ಅಥವಾ ಗೂಢಲಿಪಿ ವಿಮುಕ್ತಗೊಳಿಸುತ್ತದೆ"
 
 #: source/datefunc/datefunc.src#RID_DATE_FUNCTION_DESCRIPTIONS.DATE_FUNCDESC_Rot13.2.String.Text
 msgid  "Text"

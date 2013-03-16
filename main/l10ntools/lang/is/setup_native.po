@@ -41,7 +41,7 @@ msgstr "Setja upp"
 
 #: source/mac/macinstall.ulf#AbortLabel
 msgid  "Abort"
-msgstr "Hætta við"
+msgstr "Hætta"
 
 #: source/mac/macinstall.ulf#IntroText1
 msgid  "Welcome to the [FULLPRODUCTNAME] Installation Wizard"
@@ -61,7 +61,7 @@ msgstr "Ekki skráð (veldu staðsetningu í aukaskrefi)"
 
 #: source/mac/macinstall.ulf#ListPromptText
 msgid  "Choose [PRODUCTNAME] [PRODUCTVERSION] installation for which you want to install the [FULLPRODUCTNAME]"
-msgstr ""
+msgstr "Veldu [PRODUCTNAME] [PRODUCTVERSION] uppsetningu þar sem þú vilt setja upp [FULLPRODUCTNAME]"
 
 #: source/mac/macinstall.ulf#ChooseManualText
 msgid  "Point the dialog to your [PRODUCTNAME] [PRODUCTVERSION] installation."
@@ -77,11 +77,11 @@ msgstr "Hætta við"
 
 #: source/mac/macinstall.ulf#AppInvalidText1
 msgid  "This is not a valid [PRODUCTNAME] [PRODUCTVERSION] installation."
-msgstr ""
+msgstr "Þessi uppsetning er ekki gild [PRODUCTNAME] [PRODUCTVERSION] uppsetning."
 
 #: source/mac/macinstall.ulf#AppInvalidText2
 msgid  "Run the installer again and choose a valid [PRODUCTNAME] [PRODUCTVERSION] installation"
-msgstr ""
+msgstr "Keyrðu uppsetningarforritið aftur og veldu rétta [PRODUCTNAME] [PRODUCTVERSION] uppsetningu"
 
 #: source/mac/macinstall.ulf#StartInstallText1
 msgid  "Click Install to start the installation"
@@ -93,7 +93,7 @@ msgstr "Uppsetning gæti tekið dálítinn tíma..."
 
 #: source/mac/macinstall.ulf#IdentifyQText
 msgid  "Installation failed, most likely your account does not have the necessary privileges."
-msgstr ""
+msgstr "Uppsetning mistókst, líklegast er að aðgangurinn þinn hafi ekki nægjanlegar heimildir."
 
 #: source/mac/macinstall.ulf#IdentifyQText2
 msgid  "Do you want to identify as administrator and try again?"
@@ -117,7 +117,7 @@ msgstr "Uppsetning [PRODUCTNAME] tungumálapakka er lokið."
 
 #: source/mac/macinstall.ulf#InstallCompleteText2
 msgid  "Call '[PRODUCTNAME]-Preferences-Language Settings-Languages' to change the user interface language."
-msgstr ""
+msgstr "Farðu í '[PRODUCTNAME]-Verkfæri-Valkostir-Tungumálastillingar' til að breyta tungumáli notandaviðmótsins."
 
 #: source/mac/macinstall.ulf#InstallCompleteTextPatch
 msgid  "Installation of [FULLPRODUCTNAME] completed"

@@ -45,7 +45,7 @@ msgstr ""
 
 #: source/all/crashrep.ulf#%WELCOME_BODY2%
 msgid  "It's easy - just send the report without any further effort on your part by clicking 'Send' in the next dialog, or you can briefly describe how the error occurred and then click 'Send'. If you want to see the report, click the 'Show Report' button. No data will be sent if you click 'Do Not Send'.\n\n"
-msgstr ""
+msgstr "ងាយ​ស្រួល​ណាស់​ ផ្ញើ​របាយ​ការណ៍នេះ​ ដោយ​​គ្រាន់​តែ​​ចុច ផ្ញើ់' នៅក្នុងប្រអប់បន្ទាប់ ឬ​អ្នក​អាច​ពិពណ៌នា​ដោយ​សង្ខេប​ថា​ តើ​កំហុស​បាន​កើតឡើង​យ៉ាង​ដូចម្តេច ហើយ​ បន្ទាប់​មក​ចុច 'ផ្ញើ' ។ ប្រសិន​បើ​ អ្នក​ចង់​ឃើញ​របាយ​ការណ៍​នេះ ​ចុច​លើ​ប៊ូតុង​ 'បង្ហាញ​របាយការណ៍' ​។​ គ្មាន​ទិន្នន័យ​ណាមួយ​នឹង​​ត្រូវ​បាន​ផ្ញើ​ឡើយ​​ ប្រសិន​បើ​អ្នក​ចុច ​ 'កុំផ្ញើ' ។\n\n"
 
 #: source/all/crashrep.ulf#%WELCOME_BODY3%
 msgid  "Customer Privacy\nThe information gathered is limited to data concerning the state of %PRODUCTNAME% %PRODUCTVERSION% when the error occurred. Other information about passwords or document contents is not collected.\n\nThe information will only be used to improve the quality of %PRODUCTNAME% and will not be shared with third parties.\nFor more information on Apache OpenOffice's privacy policy, visit\n"
@@ -73,7 +73,7 @@ msgstr "របាយ​​ការណ៍​​​កំហុស​ %PRODUCTNAM
 
 #: source/all/crashrep.ulf#%REPORT_HEADER%
 msgid  "An error occurred while running %PRODUCTNAME% %PRODUCTVERSION%"
-msgstr ""
+msgstr "កំហុស​​​មួយ​​បាន​​​កើត​​​ឡើង ​​​ខណៈ​​​ពេល​​​កំពុង​​រត់​​ %PRODUCTNAME% %PRODUCTVERSION%"
 
 #: source/all/crashrep.ulf#%REPORT_BODY%
 msgid  "The %PRODUCTNAME% %PRODUCTVERSION% Error Report has gathered information that could help Apache OpenOffice improve %PRODUCTNAME%.\nIn the spaces below, you can enter a title for your crash report and describe the action you were trying to carry out when the error occurred. Then click 'Send'.\n"
@@ -81,7 +81,7 @@ msgstr ""
 
 #: source/all/crashrep.ulf#%ENTER_TITLE%
 msgid  "Which type of document (e.g. presentation) were you using when the error occurred?"
-msgstr ""
+msgstr "តើ​​ឯកសារ​ប្រភេទ​​​​ណា​​​មួយ​​ (ឧទាហរណ៍​ ការ​បង្ហាញ​) ​ដែល​​​អ្នក​​​កំពុង​​​ប្រើ​ ​ពេល​​​​ដែល​​​​កំហុស​​​​បាន​​​​កើត​​​​ឡើង​ ?"
 
 #: source/all/crashrep.ulf#%ALLOW_CONTACT%
 msgid  "~I allow Apache OpenOffice to contact me regarding this report."
@@ -93,7 +93,7 @@ msgstr "សូម​​​ប​ញ្ចូល​​​អាសយ​ដ្ឋ
 
 #: source/all/crashrep.ulf#%ENTER_DESCRIPTION%
 msgid  "~How were you using %PRODUCTNAME% when the error occurred ?"
-msgstr ""
+msgstr "តើ​​​​​អ្នក​​​​​បាន​​​​​​ប្រើ​​ ​%PRODUCTNAME% យ៉ាង​​​​ដូច​​​​ម្តេច​​​ ​​ពេល​​​​​ដែល​​​​​កំហុស​​​​​​បាន​​​​កើត​​​​​ឡើង ?​ ​"
 
 #: source/all/crashrep.ulf#%BACK_BUTTON%
 msgid  " << ~Back"
@@ -121,23 +121,23 @@ msgstr "រក្សា​​ទុក​​​របាយ​ការណ៍​
 
 #: source/all/crashrep.ulf#%ERROR_MSG_SIMPLE_MAPI%
 msgid  "The error report could not be sent because the default e-mail program does not support MAPI.\n Please use a MAPI-compatible e-mail program."
-msgstr ""
+msgstr "មិន​​អាច​​​ផ្ញើ​​​​របាយ​​​​​ការណ៍​​​​កំហុស​​​​​​បាន ​ពី​ព្រោះ​​កម្ម​វិធី​​អ៊ី​ម៉ែល​​លំនាំ​​ដើម​​មិន​គាំ​ទ្រ​ MAPI ។\n​​សូម​ប្រើ​កម្មវិធី​អ៊ីមែល​ដែល​ឆប​ជាមួយ MAPI ។​"
 
 #: source/all/crashrep.ulf#%ERROR_MSG_DISK_FULL%
 msgid  "The error report could not be temporarily saved and could therefore not be sent."
-msgstr ""
+msgstr "មិន​អាច​រក្សា​ទុក​របាយការណ៍​កំហុស​ជា​បណ្តោះ​អាសន្ន ​ដូច្នេះ​ក៏​​មិន​អាច​ផ្ញើ​ដែរ​ ។"
 
 #: source/all/crashrep.ulf#%ERROR_MSG_SENDMAIL%
 msgid  "The error report could not be sent because 'sendmail' could not be started.\nPlease check the 'sendmail' settings."
-msgstr ""
+msgstr "មិន​អាច​ផ្ញើ​របាយការណ៍​កំហុស ពីព្រោះ 'sendmail' មិន​អាច​ចាប់ផ្តើម​បាន ។\nសូម​ពិនិត្យ​មើល​ការកំណត់ 'sendmail' ។"
 
 #: source/all/crashrep.ulf#%ERROR_MSG_PROXY%
 msgid  "The error report could not be sent. Please check the proxy settings under 'Options' in the Error Report Tool."
-msgstr ""
+msgstr "មិន​​អាច​​ផ្ញើ​​របាយ​​ការណ៍​​កំហុស​ ​។ ​សូម​ពិនិត្យ​​មើល​​ការ​​កំណត់​​ប្រូក​​ស៊ី​​ក្រោម​ 'ជម្រើស' ក្នុង​​ឧបករណ៍​​របាយ​​ការណ៍​​កំហុស ​។"
 
 #: source/all/crashrep.ulf#%ERROR_MSG_NOCONNECT%
 msgid  "The error report could not be sent because there is no Internet connection. Please check your Internet settings."
-msgstr ""
+msgstr "មិន​​អាច​​ផ្ញើ​​របាយ​​ការណ៍​​កំហុស​បាន​​​ ​ពីព្រោះ​​គ្មាន​​ការ​​ត​ភ្ជាប់​​ទៅ​​​​អ៊ិន​ធឺណិត​ ។ ​សូម​​ពិនិត្យ​​មើល​​ការ​កំណត់​​អ៊ិន​ធឺណិត​​​របស់​​អ្នក​ ។"
 
 #: source/all/crashrep.ulf#%OPTIONS_BUTTON%
 msgid  "~Options..."
@@ -173,7 +173,7 @@ msgstr "ច្រក "
 
 #: source/all/crashrep.ulf#%PROXY_SETTINGS_DESCRIPTION%
 msgid  "The %PRODUCTNAME% Error Report tool needs to be connected to the Internet to be able to send error reports.\n\nCompanies often use proxy servers in conjunction with a firewall to protect the network.\n\nIf this applies to your situation, you have to specify the address and port for the server."
-msgstr ""
+msgstr "ឧបករណ៍​របាយការណ៍​កំហុស​របស់ %PRODUCTNAME% ចាំបាច់​ត្រូវ​តភ្ជាប់​ទៅ​អ៊ីនធឺណិត ដើម្បី​អាច​ផ្ញើ​របាយ​ការណ៍​កំហុស ។\n\nក្រុមហ៊ុន​ជា​រឿយៗ​ ប្រើ​ម៉ាស៊ីន​បម្រើ​ប្រូក​ស៊ី ភ្ជាប់​ជាមួយ​ជញ្ជាំង​ភ្លើង ដើម្បី​ការពារ​បណ្តាញ ។\n\nប្រសិន​បើ​អ្នក​ជួប​លក្ខខណ្ឌ​ដូច​ករណី​ខាង​លើ អ្នក​ត្រូវ​តែ​បញ្ជាក់​អាសយដ្ឋាន និង​ច្រក​ សម្រាប់​ម៉ាស៊ីន​បម្រើ ។"
 
 #: source/all/crashrep.ulf#%SENDING_REPORT_HEADER%
 msgid  "Sending Error Report"
@@ -201,8 +201,8 @@ msgstr "-p <លេខ​​​សម្គាល់​​​ដំណើរ​�
 
 #: source/all/crashrep.ulf#%MSG_PARAM_PROCESSID_DESCRIPTION%
 msgid  "Assigns the %PRODUCTNAME% process ID (PID) to the Error Report Tool"
-msgstr ""
+msgstr "ផ្តល់​​លេខ​​សម្គាល់​​ដំណើរ​​ការ​ ​(​PID) ​%PRODUCTNAME% ទៅ​​ឧបករណ៍​​របាយការណ៍​​កំហុស"
 
 #: source/all/crashrep.ulf#%MSG_PARAM_HELP_DESCRIPTION%
 msgid  "Shows this help text.\nDetailed information can be found in the Setup Guide."
-msgstr ""
+msgstr "បង្ហាញ​​​អត្ថបទ​​​ជំនួយ​​​នេះ​ ។\nព័ត៌​មាន​​លម្អិត​​អាច​រក​បាន​ ​ក្នុង​​​មគ្គុទ្ទេសក៍​​ដំឡើង​ ។​"

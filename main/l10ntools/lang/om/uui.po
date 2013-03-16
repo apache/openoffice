@@ -104,8 +104,9 @@ msgid  "Document in Use"
 msgstr "Galmeen Banaa jira"
 
 #: source/trylater.src#STR_TRYLATER_MSG.String.Text
+#, fuzzy
 msgid  "Document file '$(ARG1)' is locked for editing by:\n\n$(ARG2)\n\nTry again later to save document or save a copy of that document.\n\n"
-msgstr ""
+msgstr "Faayiliin galmee '$(ARG1)' gulaaluuf nama armaan gadiin cufamee jira:\n\n$(ARG2)\n$(ARG2)\n\nGalmee kana booda olkaa'i ykn garagalcha kamee  olkaa'i.\n\n"
 
 #: source/trylater.src#STR_TRYLATER_RETRYSAVING_BTN.String.Text
 #, fuzzy
@@ -118,7 +119,6 @@ msgid  "~Save As..."
 msgstr "Akkanatti Olkaa'i..."
 
 #: source/ids.src#RID_KEEP_PASSWORD.String.Text
-#, fuzzy
 msgid  "~Remember password until end of session"
 msgstr "Iggita hamma dhuma turtiittii yaadadhu"
 
@@ -157,8 +157,9 @@ msgid  "Target already exists."
 msgstr "Galteen durumayyuu jira."
 
 #: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_IO_MODULESIZEEXCEEDED & ERRCODE_RES_MASK).String.Text
+#, fuzzy
 msgid  "You are about to save/export a password protected basic library containing module(s) \n$(ARG1)\nwhich are too large to store in binary format. If you wish users that don't have access to the library password to be able to run macros in those module(s) you must split those modules into a number of smaller modules. Do you wish to continue to save/export this library?"
-msgstr ""
+msgstr "Galmee beezikii ittisaan hayyifame kan muraawwan \n$(ARG1)\nof keessaa qabu olkaa'uuf/alerguuf deemta. Muraawwan kanas dhangii lameetin olkaa'uuf baay'ee gurguddoo dha. Yoo fayyadamtootni ittisa hin qabne galmee kana keessaa maakiroowwan akka kaasan barbaadde muraawwan sana gara muraa xixinnoo hedduutti addabaasuu qabda. Mana galmee kana keesstti olkaa'uu/alerguu itti fufuu ni feetaa?"
 
 #: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_IO_BADCRC & ERRCODE_RES_MASK).String.Text
 #, fuzzy
@@ -236,8 +237,9 @@ msgid  "The operation on $(ARG1) was started with an invalid parameter."
 msgstr "Dalagaan $(ARG1) irraattii ulaagaa fashalaan eegalame."
 
 #: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_IO_ISWILDCARD & ERRCODE_RES_MASK).String.Text
+#, fuzzy
 msgid  "The operation cannot be performed because $(ARG1) contains wildcards."
-msgstr ""
+msgstr "Sababa $(ARG1) turbaa abbaalaa of keesaa qabuuf, dalagaan kun hojii irra oluu hin danda'u."
 
 #: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_IO_LOCKVIOLATION & ERRCODE_RES_MASK).String.Text
 #, fuzzy
@@ -285,16 +287,19 @@ msgid  "There is no space left on device $(ARG1)."
 msgstr "Mi'a $(ARG1) irratti iddoon hafe hin jiru."
 
 #: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_IO_TOOMANYOPENFILES & ERRCODE_RES_MASK).String.Text
+#, fuzzy
 msgid  "The operation on $(ARG1) cannot be performed because too many files are already open."
-msgstr ""
+msgstr "Sababa faayiloonni baayyeen durumayyuu banaa jiraniif dalagaan $(ARG1) irrattii hojjatamuu hin danda'u."
 
 #: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_IO_OUTOFMEMORY & ERRCODE_RES_MASK).String.Text
+#, fuzzy
 msgid  "The operation on $(ARG1) cannot be performed because there is no more memory available."
-msgstr ""
+msgstr "Sababa iddoon kuufannoo gahaan hin jirreef dalagaan $(ARG1) irrattii hojjatamuu hin danda'u."
 
 #: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_IO_PENDING & ERRCODE_RES_MASK).String.Text
+#, fuzzy
 msgid  "The operation on $(ARG1) cannot continue because more data is pending."
-msgstr ""
+msgstr "Sababa deetaan dabalataa eeggachaa jiruuf dalagaan $(ARG1) irrattii itti fufuu hin danda'u."
 
 #: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_IO_RECURSIVE & ERRCODE_RES_MASK).String.Text
 #, fuzzy
@@ -302,8 +307,9 @@ msgid  "$(ARG1) cannot be copied into itself."
 msgstr "$(ARG1) ofumarrati garagalfamuu hin danda'u."
 
 #: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_IO_UNKNOWN & ERRCODE_RES_MASK).String.Text
+#, fuzzy
 msgid  "Unknown input/output error while accessing $(ARG1)."
-msgstr ""
+msgstr "Yammuu gahiinsa $(ARG1) dogongora sirna bu'uura naqaa/bahaa hin beekamne."
 
 #: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_IO_WRITEPROTECTED & ERRCODE_RES_MASK).String.Text
 #, fuzzy
@@ -341,12 +347,14 @@ msgid  "The installed Java version $(ARG1) is not supported."
 msgstr "Fooyya'iinsi $(ARG1) ijaarsa Jaavaa kan deeggaramuu miti."
 
 #: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_WRONGJAVA_MIN & ERRCODE_RES_MASK).String.Text
+#, fuzzy
 msgid  "The installed Java version is not supported, at least version $(ARG1) is required."
-msgstr ""
+msgstr "Fooyya'iinsi ijaarsa Jaavaa kan deeggaramuu miti, yoo xinnaatee xinnate fooyya'a $(ARG1)tu barbaadama."
 
 #: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_WRONGJAVA_VERSION_MIN & ERRCODE_RES_MASK).String.Text
+#, fuzzy
 msgid  "The installed Java version $(ARG1) is not supported, at least version $(ARG2) is required."
-msgstr ""
+msgstr "Fooyya'iinsi $(ARG1) ijaarsa Jaavaa kan deeggaramuu miti,yoo xinnaatee xinnate fooyya'a $(ARG2)tu barbaadama."
 
 #: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_BADPARTNERSHIP & ERRCODE_RES_MASK).String.Text
 #, fuzzy
@@ -384,32 +392,39 @@ msgid  "The object cannot be created in directory $(ARG1)."
 msgstr "Wantichi galeeloo $(ARG1) keessatti uumamuu hin danda'u."
 
 #: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_IO_UNSUPPORTEDOVERWRITE & ERRCODE_RES_MASK).String.Text
+#, fuzzy
 msgid  "%PRODUCTNAME cannot keep files from being overwritten when this transmission protocol is used. Do you want to continue anyway?"
-msgstr ""
+msgstr "Yoo aaloon tamsaasaa kuni faayidaarra oole %PRODUCTNAME faayilii kana irraba irraa dhoorkuu hin danda'au. Ta'uyyuu ittifufuu feetaa?"
 
 #: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_IO_BROKENPACKAGE & ERRCODE_RES_MASK).String.Text
+#, fuzzy
 msgid  "The file '$(ARG1)' is corrupt and therefore cannot be opened. %PRODUCTNAME can try to repair the file.\n\nThe corruption could be the result of document manipulation or of structural document damage due to data transmission.\n\nWe recommend that you do not trust the content of the repaired document.\nExecution of macros is disabled for this document.\n\nShould %PRODUCTNAME repair the file?\n"
-msgstr ""
+msgstr "Faayiliin '$(ARG1)' faalamaa waan ta'eef banamuu hin danda'u. %PRODUCTNAME faayilicha suuphuuf yaaluu ni danda'a.\n\nBadiinsichi jijjiirraa galmeerratti ta'een ykn badii ogguu daddabarsa galee dhalateen ta'uu mala.\n\nNuti qabeentaa galmee suphamee akka hin amanne si gorsina.\nGalmee kanaaf ka'iinsi maakiroowwanii hin dandeessifamu.\n\n%PRODUCTNAME faayilicha haa suphuu?\n"
 
 #: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_IO_BROKENPACKAGE_CANTREPAIR & ERRCODE_RES_MASK).String.Text
+#, fuzzy
 msgid  "The file '$(ARG1)' could not be repaired and therefore cannot be opened."
-msgstr ""
+msgstr "Faayiliin '$(ARG1)' suphamuu waan hin dandeenyef banamuu hin danda'u."
 
 #: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_CONFIGURATION_BROKENDATA_NOREMOVE & ERRCODE_RES_MASK).String.Text
+#, fuzzy
 msgid  "Configuration data in '$(ARG1)' is corrupted. Without this data some functions may not operate correctly.\nDo you want to continue startup of %PRODUCTNAME without the corrupted configuration data?"
-msgstr ""
+msgstr "Deetaan qindaayinaa '$(ARG1)' keessaa faalamaa dha. Deetaa kana malee fankishinoonni tokko tokko siirriti hojjechuu baachuu danda'u ta'a.\nQindaayina deetaa faalamaa kana malee %PRODUCTNAME eegaluu itti fufuu barbaaddaa?"
 
 #: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_CONFIGURATION_BROKENDATA_WITHREMOVE & ERRCODE_RES_MASK).String.Text
+#, fuzzy
 msgid  "The personal configuration file '$(ARG1)' is corrupted and must be deleted to continue. Some of your personal settings may be lost.\nDo you want to continue startup of %PRODUCTNAME without the corrupted configuration data?"
-msgstr ""
+msgstr "Deetaan qindaayinaa dhuunfaa keetii '$(ARG1)' keessaa faalamaa waan ta'eef itti fufuuf haqmuu qaba. Qindaayinoonni dhuunfaa keetii muraasni dhabamuun ni mala.\nQindaayina deetaa faalamaa kana malee %PRODUCTNAME eegaluu itti fufuu barbaaddaa?"
 
 #: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_CONFIGURATION_BACKENDMISSING & ERRCODE_RES_MASK).String.Text
+#, fuzzy
 msgid  "The configuration data source '$(ARG1)' is unavailable. Without this data some functions may not operate correctly."
-msgstr ""
+msgstr "Maddi deetaa qindaayinaa '$(ARG1)'hin jiru. Deetaa kana malee fankishinoonni tokko tokko siirriti hojjechuu baachuu danda'u ta'a."
 
 #: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_CONFIGURATION_BACKENDMISSING_WITHRECOVER & ERRCODE_RES_MASK).String.Text
+#, fuzzy
 msgid  "The configuration data source '$(ARG1)' is unavailable. Without this data some functions may not operate correctly.\nDo you want to continue startup of %PRODUCTNAME without the missing configuration data?"
-msgstr ""
+msgstr "addi deetaa qindaayinaa '$(ARG1)'hin jiru. Deetaa kana malee fankishinoonni tokko tokko siirriti hojjechuu baachuu danda'u ta'a.\nQindaayina deetaa hin jirre kana malee %PRODUCTNAME eegaluu itti fufuu barbaaddaa?"
 
 #: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_INVALID_XFORMS_SUBMISSION_DATA & ERRCODE_RES_MASK).STRING.Text
 #, fuzzy
@@ -433,20 +448,24 @@ msgid  "The previously obtained lock for file $(ARG1) has expired.\nThis can hap
 msgstr ""
 
 #: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_UNKNOWNAUTH_UNTRUSTED).STRING.Text
+#, fuzzy
 msgid  "Unable to verify the identity of $(ARG1) site.\n\nBefore accepting this certificate, you should examine this site's certificate carefully. Are you willing to accept this certificate for the purpose of identifying the Web site $(ARG1)?"
-msgstr ""
+msgstr "eenymmaa iddoola $(ARG1) mirkaneessuu hin dandeenye.\n\nRagaa kana fudhachuu kee dura, ragaa iddoola kanaa ofegannoon ilaaluu qabda. Eenyummaa iddoola kana gargar baafachuuf jecha ragaa $(ARG1) fudhachuu ni feetaa?"
 
 #: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_SSLWARN_EXPIRED_1).STRING.Text
+#, fuzzy
 msgid  "$(ARG1) is a site that uses a security certificate to encrypt data during transmission, but its certificate expired on $(ARG2).\n\nYou should check to make sure that your computer's time is correct."
-msgstr ""
+msgstr "$(ARG1) iddoola ragaa ittisaa fayyadamuun deetaa daddabarsu ta'uyyuu ragaan isaa $(ARG2)tti guyyaan irra darbeera.\n\nSa'aatiin kompitara keetii sirrii ta'uu isaa mirkaneeffachuu qabda."
 
 #: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_SSLWARN_DOMAINMISMATCH_1).STRING.Text
+#, fuzzy
 msgid  "You have attempted to establish a connection with $(ARG1). However, the security certificate presented belongs to $(ARG2). It is possible, though unlikely, that someone may be trying to intercept your communication with this web site.\n\nIf you suspect the certificate shown does not belong to $(ARG1), please cancel the connection and notify the site administrator.\n\nWould you like to continue anyway?"
-msgstr ""
+msgstr "$(ARG1) waliin walindhuuf yaalii gootee turte. Haa ta'u malee, ragaan ittisaa dhiheeffame kan $(ARG2)ti. Kan fakkatu ta'uu baatuyyuu, namni biraa wahii iddoola kanaan fakkeeffatee qunnamtii kee gufachiisuuf yaalaa jiraachuu danda'a.\n\nYoo ragaan mul'ifame kan $(ARG1) miti jettee shakkite, maaloo walindhaa kana dhiisitii bulchaa Iddoola kana yaadachiisi.\n\nHata'uu malee itti fufuu ni barbaaddaa?"
 
 #: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_SSLWARN_INVALID_1).STRING.Text
+#, fuzzy
 msgid  "The certificate could not be validated. You should examine this site's certificate carefully.\n\nIf you suspect the certificate shown, please cancel the connection and notify the site administrator."
-msgstr ""
+msgstr "Ragaan kun gataa'uu hin dandeenye. Ragaa iddoola kanaa ofeeggannoon qorchuu qabda.\n\nRagaa dhiyaate shakkite, maaloo walindhaa kana dhiisitii bulchaa Iddoola kana yaadachiisi."
 
 #: source/ids.src#RID_UUI_ERRHDL.(TITLE_UUI_SSLWARN_DOMAINMISMATCH).STRING.Text
 #, fuzzy
@@ -464,7 +483,6 @@ msgid  "Security Warning: Server Certificate Invalid"
 msgstr "Dhaamsa OfEeggannoo: Ragaa Kaadima Fashalaa"
 
 #: source/fltdlg.src#DLG_FILTER_SELECT.ModalDialog.Text
-#, fuzzy
 msgid  "Filter Selection"
 msgstr "Filannoo Gingilchi"
 
@@ -481,7 +499,7 @@ msgid  "Enter user name and password for: \n%1"
 msgstr ""
 
 #: source/logindlg.src#DLG_UUI_LOGIN.STR_LOGIN_REALM.String.Text
-msgid  "Enter user name and password for: \n"%2" on %1"
+msgid  "Enter user name and password for: \n\"%2\" on %1"
 msgstr ""
 
 #: source/logindlg.src#DLG_UUI_LOGIN.FT_LOGIN_PATH.FixedText.Text
@@ -514,60 +532,50 @@ msgid  "~Use system credentials"
 msgstr ""
 
 #: source/cookiedg.src#DLG_COOKIES.RB_INFUTURE_SEND.RadioButton.Text
-#, fuzzy
 msgid  "~Send"
 msgstr "Ergi"
 
 #: source/cookiedg.src#DLG_COOKIES.RB_INFUTURE_IGNORE.RadioButton.Text
-#, fuzzy
 msgid  "I~gnore"
 msgstr "Tuffadhu"
 
 #: source/cookiedg.src#DLG_COOKIES.RB_INFUTURE_INTERACTIVE.RadioButton.Text
-#, fuzzy
 msgid  "I~nteractive"
 msgstr "Haasoo"
 
 #: source/cookiedg.src#DLG_COOKIES.GB_INFUTURE.GroupBox.Text
-#, fuzzy
 msgid  "Future Cookie Handling"
 msgstr "Haala Qabiinsa Kuukii Fuulduraafii"
 
 #: source/cookiedg.src#DLG_COOKIES.BTN_COOKIES_CANCEL.PushButton.Text
-#, fuzzy
 msgid  "~Ignore"
 msgstr "Tuffadhu"
 
 #: source/cookiedg.src#DLG_COOKIES.BTN_COOKIES_OK.PushButton.Text
-#, fuzzy
 msgid  "~Send"
 msgstr "Ergi"
 
 #: source/cookiedg.src#STR_COOKIES_RECV_START.String.Text
 msgid  "The '${HOST}' server wishes to set one or more cookies.\nCookies contain information referring to certain URL classes. If %PRODUCTNAME later requests a document with a URL corresponding to the class of a previously set cookie, %PRODUCTNAME will send this information to the server. This allows a server to recognize the status of a WWW application, e.g., when shopping online.\n\nThe following Cookies should be set:\n\n"
-msgstr ""
+msgstr "Kaadimaan '${HOST}' kuukiiwwan tokko ykn sanaa ol ijaaruu barbaada.\nKuukiiwwan odeeffannoo waa'ee kutaalee URL murtaawanii of keessatti qabatu. Yoo %PRODUCTNAME booda galmee kutaa URL wajiin walfakkaatanii banuuf gaafate, %PRODUCTNAME odeeffannoo kana gara Kaadimatti eerga. Kun Kaadiman akka haalojii fayyadama WWW baru fayyada, fkn, bittaa karaarraa.\n\nKuukiiwwan armaan gadii ijaaramuu qabu:\n\n"
 
 #: source/cookiedg.src#STR_COOKIES_RECV_COOKIES.String.Text
-#, fuzzy
 msgid  "Domain: ${DOMAIN}, Path: ${PATH}, Cookie: ${COOKIE}.\n"
 msgstr "Qayee: ${DOMAIN}, Xurree: ${PATH}, Kuukii: ${COOKIE}.\n"
 
 #: source/cookiedg.src#STR_COOKIES_RECV_TITLE.String.Text
-#, fuzzy
 msgid  "Cookie Reception"
 msgstr "Simannaa Kuukii"
 
 #: source/cookiedg.src#STR_COOKIES_SEND_START.String.Text
 msgid  "%PRODUCTNAME has saved cookies for the server '${HOST}' which will be sent when requesting the document ${PATH}.\nCookies contain information which refers to certain URL classes. They are sent by some servers to %PRODUCTNAME where they are saved when certain documents are accessed. If %PRODUCTNAME loads a document that, according to the URL, corresponds to a class of one of the previously received Cookies, %PRODUCTNAME will send this information to that server. This enables a server to keep track of the status of a WWW application, e.g., when shopping online.\n\nThe following Cookies should be set:\n\n"
-msgstr ""
+msgstr "%PRODUCTNAME kuukii yammuu galmeen ${PATH} barbaadame ergamu kaadimaa '${HOST}'f olkaa'era. \nKuukiiwwan odeeffannoo waa'ee kutaalee URL murtaawanii of keessatti qabatu. Isaanis kan kaadmaa wayiitiin gara %PRODUCTNAME ergamanii egir olkaa'amanii dha. Yoo %PRODUCTNAME galmee, akkaataa URLichaatin, kutaa kuukiiwwan kana dura fudhatamaniin walgitu ta'e, %PRODUCTNAME odeeffannicha gara kaadimaatti erga. Kunis akka kaadimichi haalojii fayyadama WWW hordofu garagaara. \n\nKuukiiwwan armaan gadii ijaaramuu qabu:\n\n  "
 
 #: source/cookiedg.src#STR_COOKIES_SEND_COOKIES.String.Text
-#, fuzzy
 msgid  "Domain: ${DOMAIN}, Path: ${PATH}, Cookie: ${COOKIE}.\n"
 msgstr "Qayee: ${DOMAIN}, Xurree: ${PATH}, Kuukii: ${COOKIE}.\n"
 
 #: source/cookiedg.src#STR_COOKIES_SEND_TITLE.String.Text
-#, fuzzy
 msgid  "Send Cookies"
 msgstr "Kuukiiwwan Ergi"
 
@@ -610,8 +618,9 @@ msgid  "Document in Use"
 msgstr "Galmeetti fayyadamaa jiru"
 
 #: source/openlocked.src#STR_OPENLOCKED_MSG.String.Text
+#, fuzzy
 msgid  "Document file '$(ARG1)' is locked for editing by:\n\n$(ARG2)\n\nOpen document read-only or open a copy of the document for editing.\n\n"
-msgstr ""
+msgstr "Galmeen faayilii '$(ARG1)' gulaalaaf \n\n$(ARG2) n cufamee jira\n\nGalmee dubbis-qofaa bani ykn gulaaluuf garagalcha galmee kanaa bani.\n\n"
 
 #: source/openlocked.src#STR_OPENLOCKED_OPENREADONLY_BTN.String.Text
 #, fuzzy
@@ -634,10 +643,9 @@ msgstr ""
 
 #: source/filechanged.src#STR_FILECHANGED_MSG.String.Text
 msgid  "The file has been changed since it was opened for editing in %PRODUCTNAME. Saving your version of the document will overwrite changes made by others.\n\nDo you want to save anyway?\n\n"
-msgstr ""
+msgstr "Faayilichi gulaalamuuf erga %PRODUCTNAME n banamee jijjiiramee jira. Fooyya'a mataa keetii olkaa'uun jijjiiramoota namoota biraan taasifaman irraba.\n\nTa'uyyuu olkaa'uu feetaa?\n\n"
 
 #: source/filechanged.src#STR_FILECHANGED_SAVEANYWAY_BTN.String.Text
-#, fuzzy
 msgid  "~Save Anyway"
 msgstr "Ta'uyyuu Olkaa'i"
 
@@ -647,8 +655,9 @@ msgid  "%PRODUCTNAME Update Available"
 msgstr "Haaromsi %PRODUCTNAME Jira"
 
 #: source/newerverwarn.src#RID_DLG_NEWER_VERSION_WARNING.FT_INFO.FixedText.Text
+#, fuzzy
 msgid  "This document was created by a newer version of %PRODUCTNAME. It may contain features not supported by your current version.\n\nClick 'Update Now...' to run online update and get the latest version of %PRODUCTNAME."
-msgstr ""
+msgstr "Galmeen kun fooyya'a %PRODUCTNAME haaraan uumame. Tasa dalagaawwan fooyya'a ammeen hin deeggaramne qabaachuu dand'a.\n\nHaaromsa karaarraa kaasufi fooyya'a %PRODUCTNAME isa haaraa argachuuf 'Amma Haaromsi...' cuqaasi."
 
 #: source/newerverwarn.src#RID_DLG_NEWER_VERSION_WARNING.PB_UPDATE.PushButton.Text
 #, fuzzy
@@ -706,8 +715,9 @@ msgid  "View Signatures..."
 msgstr "Mallattoolee Mul'isi..."
 
 #: source/secmacrowarnings.src#RID_XMLSECDLG_MACROWARN.FI_DESCR2.FixedText.Text
+#, fuzzy
 msgid  "Macros may contain viruses. Disabling macros for a document is always safe. If you disable macros you may lose functionality provided by the document macros."
-msgstr ""
+msgstr "Maakroowwan qinqanii of keessaa qabaachuu ni malu. Galmee keessaa maakroo dhaamsuun yeroo maraa waan gaari dha. Yoo maakroowwan dhaamsite hojiiwwan maakroon dalagaman muraasa dhabuu dandeessa."
 
 #: source/secmacrowarnings.src#RID_XMLSECDLG_MACROWARN.CB_ALWAYSTRUST.CheckBox.Text
 #, fuzzy
@@ -740,8 +750,9 @@ msgid  "Set Master Password"
 msgstr "Iggita Hundataa Qindeessi"
 
 #: source/masterpasscrtdlg.src#DLG_UUI_MASTERPASSWORD_CRT.FT_INFOTEXT.FixedText.Text
+#, fuzzy
 msgid  "Passwords for web connections are protected by a master password. You will be asked to enter it once per session, if %PRODUCTNAME retrieves a password from the protected password list."
-msgstr ""
+msgstr "Iggitootni waliindhaa fuulota saphaphuu iggita hundataan ittifamu. Yoo %PRODUCTNAME tarree iggitoota ittifamoo keessaa argate, tursa tokkoof altokko akka galchitu gaafatamta."
 
 #: source/masterpasscrtdlg.src#DLG_UUI_MASTERPASSWORD_CRT.FT_MASTERPASSWORD_CRT.FixedText.Text
 #, fuzzy
@@ -759,29 +770,25 @@ msgstr ""
 
 #: source/alreadyopen.src#STR_ALREADYOPEN_MSG.String.Text
 msgid  "Document file '$(ARG1)' is locked for editing by yourself on a different system since $(ARG2)\n\nOpen document read-only, or ignore own file locking and open the document for editing.\n\n"
-msgstr ""
+msgstr "Faayiliin galmee '$(ARG1)' gulaaluuf sirna biraarratti $(ARG2) irraa eegalee mataa keetin cufameet jira\n\nGalmee dubbis-qofa bani, ykn faayilii ofii keettin cufuu tuffadhuutii galmee kana gulaaluuf bani.\n"
 
 #: source/alreadyopen.src#STR_ALREADYOPEN_READONLY_BTN.String.Text
-#, fuzzy
 msgid  "Open ~Read-Only"
 msgstr "Dubbis-qofa Bani"
 
 #: source/alreadyopen.src#STR_ALREADYOPEN_OPEN_BTN.String.Text
-#, fuzzy
 msgid  "~Open"
 msgstr "Bani"
 
 #: source/alreadyopen.src#STR_ALREADYOPEN_SAVE_MSG.String.Text
 msgid  "Document file '$(ARG1)' is locked for editing by yourself on a different system since $(ARG2)\n\nClose document on other system and retry saving or ignore own file locking and save current document.\n\n"
-msgstr ""
+msgstr "Faayiliin galmee '$(ARG1)' gulaaluuf sirna biraarratti $(ARG2) irraa eegalee mataa keetin cufameet jira\n\nGalmee sirna biraa irraa cufiitii olkaa'uu lamyaali ykn faayilii ofiin cufuu tuffadhuutii galmee ammee cufi.\n\n"
 
 #: source/alreadyopen.src#STR_ALREADYOPEN_RETRY_SAVE_BTN.String.Text
-#, fuzzy
 msgid  "~Retry Saving"
 msgstr "Olkaa'uu Lamyaali"
 
 #: source/alreadyopen.src#STR_ALREADYOPEN_SAVE_BTN.String.Text
-#, fuzzy
 msgid  "~Save"
 msgstr "Olkaa'i"
 

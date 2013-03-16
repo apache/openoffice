@@ -32,8 +32,8 @@ msgstr ""
 
 
 #: source/app/desktop.src#STR_RECOVER_QUERY.String.Text
-msgid  "Should the file "$1" be restored?"
-msgstr ""
+msgid  "Should the file \"$1\" be restored?"
+msgstr "\"$1\" ഫയല്‍ വീണ്ടെടുക്കണമോ?"
 
 #: source/app/desktop.src#STR_RECOVER_TITLE.String.Text
 msgid  "File Recovery"
@@ -41,15 +41,15 @@ msgstr "ഫയല്‍ പുനഃസ്ഥാപനം"
 
 #: source/app/desktop.src#STR_RECOVER_PREPARED.WarningBox.Message
 msgid  "An unrecoverable error has occurred.\n\nAll modified files have been saved and can\nprobably be recovered at program restart."
-msgstr ""
+msgstr "പരിഹരിക്കുവാന്‍ സാധ്യമല്ലാത്ത പിശക് സംഭവിച്ചിരിക്കുന്നു.\n\nമാറ്റം വരുത്തിയിരിക്കുന്ന എല്ലാ ഫയലുകളും സൂക്ഷിച്ചിരിക്കുന്നു.\nപ്രോഗ്രാം വീണ്ടും ആരംഭിക്കുമ്പോള്‍ ഇവ തിരികെ ലഭിക്കുന്നു."
 
 #: source/app/desktop.src#STR_BOOTSTRAP_ERR_CANNOT_START.String.Text
 msgid  "The application cannot be started. "
 msgstr "പ്രയോഗം ആരംഭിക്കുവാന്‍ സാധ്യമായില്ല. "
 
 #: source/app/desktop.src#STR_BOOTSTRAP_ERR_DIR_MISSING.String.Text
-msgid  "The configuration directory "$1" could not be found."
-msgstr ""
+msgid  "The configuration directory \"$1\" could not be found."
+msgstr "ക്രമീകരണ ഡയറക്ടറി \"$1\" ലഭ്യമായില്ല."
 
 #: source/app/desktop.src#STR_BOOTSTRAP_ERR_PATH_INVALID.String.Text
 msgid  "The installation path is invalid."
@@ -64,16 +64,16 @@ msgid  "An internal error occurred."
 msgstr "ആന്തരിക പിശകുണ്ടായി."
 
 #: source/app/desktop.src#STR_BOOTSTRAP_ERR_FILE_CORRUPT.String.Text
-msgid  "The configuration file "$1" is corrupt."
-msgstr ""
+msgid  "The configuration file \"$1\" is corrupt."
+msgstr "ക്രമീകരണ ഫയല്‍ \"$1\"-ല്‍ തകരാറു സംഭവിച്ചിരിക്കുന്നു."
 
 #: source/app/desktop.src#STR_BOOTSTRAP_ERR_FILE_MISSING.String.Text
-msgid  "The configuration file "$1" was not found."
-msgstr ""
+msgid  "The configuration file \"$1\" was not found."
+msgstr "ക്രമീകരണ ഫയല്‍ \"$1\" ലഭ്യമായില്ല."
 
 #: source/app/desktop.src#STR_BOOTSTRAP_ERR_NO_SUPPORT.String.Text
-msgid  "The configuration file "$1" does not support the current version."
-msgstr ""
+msgid  "The configuration file \"$1\" does not support the current version."
+msgstr "ക്രമീകരണ ഫയല്‍ \"$1\" നിലവിലുള്ള പതിപ്പു് പിന്തുണയ്ക്കുന്നില്ല."
 
 #: source/app/desktop.src#STR_BOOTSTRAP_ERR_LANGUAGE_MISSING.String.Text
 msgid  "The user interface language cannot be determined."
@@ -93,11 +93,11 @@ msgstr ""
 
 #: source/app/desktop.src#STR_ASK_START_SETUP_MANUALLY.String.Text
 msgid  "Start the setup application to repair the installation from the CD or the folder containing the installation packages."
-msgstr ""
+msgstr "സിഡിയില്‍ നിന്നോ ഇന്‍സ്റ്റലേഷന്‍ പാക്കേജുകള്‍ അടങ്ങുന്ന ഫോള്‍ഡറില്‍ നിന്നോ ഉള്ള ഇന്‍സ്റ്റലേഷന്‍ ശരിയാക്കുന്നതിനായി സജ്ജീകരണങ്ങള്‍ക്കുള്ള പ്രയോഗം ആരംഭിക്കുക."
 
 #: source/app/desktop.src#STR_CONFIG_ERR_SETTINGS_INCOMPLETE.String.Text
 msgid  "The startup settings for accessing the central configuration are incomplete. "
-msgstr ""
+msgstr "ക്രമീകരണങ്ങള്‍ ലഭ്യമാക്കുന്നതിനുള്ള പ്രാരംഭ സജ്ജീകരണങ്ങള്‍ പൂര്‍ണ്ണമല്ല. "
 
 #: source/app/desktop.src#STR_CONFIG_ERR_CANNOT_CONNECT.String.Text
 msgid  "A connection to the central configuration could not be established. "
@@ -105,19 +105,19 @@ msgstr "ക്രമീകരണങ്ങളിലേക്കുള്ള ക�
 
 #: source/app/desktop.src#STR_CONFIG_ERR_RIGHTS_MISSING.String.Text
 msgid  "You cannot access the central configuration because of missing access rights. "
-msgstr ""
+msgstr "നിങ്ങള്‍ക്കു് ചില അനുമതികള്‍ ലഭ്യമല്ലാത്തതിനാല്‍ ക്രമീകരണങ്ങളിലേക്കു് പ്രവേശിക്കുവാന്‍ സാധ്യമല്ല."
 
 #: source/app/desktop.src#STR_CONFIG_ERR_ACCESS_GENERAL.String.Text
 msgid  "A general error occurred while accessing your central configuration. "
-msgstr ""
+msgstr "നിങ്ങളുടെ ക്രമീകരണത്തിലേക്കുള്ള പ്രവേശനത്തിനിടയില്‍ ഒരു പിശകു് ഉണ്ടായിരിക്കുന്നു. "
 
 #: source/app/desktop.src#STR_CONFIG_ERR_NO_WRITE_ACCESS.String.Text
 msgid  "The changes to your personal settings cannot be stored centrally because of missing access rights. "
-msgstr ""
+msgstr "ആവശ്യമായ ആനുകൂല്യങ്ങള്‍ ലഭ്യമല്ലാത്തതിനാല്‍ സ്വകാര്യ ക്രമീകരണങ്ങളിലുള്ള മാറ്റങ്ങള്‍ സൂക്ഷിക്കുവാന്‍ സാധ്യമല്ല."
 
 #: source/app/desktop.src#STR_BOOTSTRAP_ERR_CFG_DATAACCESS.String.Text
 msgid  "%PRODUCTNAME cannot be started due to an error in accessing the %PRODUCTNAME configuration data.\n\nPlease contact your system administrator."
-msgstr ""
+msgstr "%PRODUCTNAME ക്രമീകരണ ഡേറ്റാ ലഭ്യമാക്കുന്നതില്‍ പിശക് കാരണം, %PRODUCTNAME ആരംഭിക്കുവാന്‍ സാധ്യമല്ല.\n\nദയവായി നിങ്ങളുടെ സിസ്റ്റം അഡ്മിനിസ്ട്രേറ്ററുമായി ബന്ധപ്പെടുക."
 
 #: source/app/desktop.src#STR_INTERNAL_ERRMSG.String.Text
 msgid  "The following internal error has occurred: "
@@ -125,7 +125,7 @@ msgstr "താഴെ പറഞ്ഞിരിക്കുന്ന ആന്ത�
 
 #: source/app/desktop.src#QBX_USERDATALOCKED.QueryBox.Message
 msgid  "Either another instance of %PRODUCTNAME is accessing your personal settings or your personal settings are locked.\nSimultaneous access can lead to inconsistencies in your personal settings. Before continuing, you should make sure user '$u' closes %PRODUCTNAME on host '$h'.\n\nDo you really want to continue?"
-msgstr ""
+msgstr "Either another instance of %PRODUCTNAME is accessing your personal settings or your personal settings are locked.\nSimultaneous access can lead to inconsistencies in your personal settings. Before continuing, you should make sure user '$u' closes %PRODUCTNAME on host '$h'.\n\nDo you really want to continue?"
 
 #: source/app/desktop.src#STR_TITLE_USERDATALOCKED.String.Text
 msgid  "%PRODUCTNAME %PRODUCTVERSION"
@@ -133,7 +133,7 @@ msgstr "%PRODUCTNAME %PRODUCTVERSION"
 
 #: source/app/desktop.src#EBX_ERR_PRINTDISABLED.ErrorBox.Message
 msgid  "Printing is disabled. No documents can be printed."
-msgstr ""
+msgstr "പ്രിന്റിങ് നിര്‍ജ്ജീവമാക്കിയിരിക്കുന്നു. അതിനാല്‍‍ രേഖകള്‍ പ്രിന്റ് ചെയ്യുവാന്‍ സാധ്യമല്ല."
 
 #: source/app/desktop.src#INFOBOX_EXPIRED.InfoBox.Message
 msgid  "This Evaluation Version has expired. To find out more about %PRODUCTNAME,\nvisit http://www.openoffice.org"
@@ -149,11 +149,11 @@ msgstr "പാഥ് നിരീക്ഷകന്‍ ലഭ്യമല്ല.
 
 #: source/app/desktop.src#STR_BOOSTRAP_ERR_NOTENOUGHDISKSPACE.String.Text
 msgid  "%PRODUCTNAME user installation could not be completed due to insufficient free disk space. Please free more disc space at the following location and restart %PRODUCTNAME:\n\n"
-msgstr ""
+msgstr "%PRODUCTNAME user installation could not be completed due to insufficient free disk space. Please free more disc space at the following location and restart %PRODUCTNAME:\n\n"
 
 #: source/app/desktop.src#STR_BOOSTRAP_ERR_NOACCESSRIGHTS.String.Text
 msgid  "%PRODUCTNAME user installation could not be processed due to missing access rights. Please make sure that you have sufficient access rights for the following location and restart %PRODUCTNAME:\n\n"
-msgstr ""
+msgstr "%PRODUCTNAME user installation could not be processed due to missing access rights. Please make sure that you have sufficient access rights for the following location and restart %PRODUCTNAME:\n\n"
 
 #: source/deployment/gui/dp_gui_versionboxes.src#RID_WARNINGBOX_VERSION_LESS.WarningBox.Message
 msgid  "You are about to install version $NEW of the extension \'$NAME\'.\nThe newer version $DEPLOYED is already installed.\nClick \'OK\' to replace the installed extension.\nClick \'Cancel\' to stop the installation."
@@ -547,27 +547,22 @@ msgid  "Make sure that no further users are working with the same %PRODUCTNAME, 
 msgstr ""
 
 #: source/deployment/manager/dp_manager.src#RID_STR_COPYING_PACKAGE.String.Text
-#, fuzzy
 msgid  "Copying: "
 msgstr "പകര്‍ത്തുന്നു: "
 
 #: source/deployment/manager/dp_manager.src#RID_STR_ERROR_WHILE_ADDING.String.Text
-#, fuzzy
 msgid  "Error while adding: "
 msgstr "ചേര്‍ക്കുമ്പോള്‍ ഉണ്ടായ പിശകു്: "
 
 #: source/deployment/manager/dp_manager.src#RID_STR_ERROR_WHILE_REMOVING.String.Text
-#, fuzzy
 msgid  "Error while removing: "
 msgstr "നീക്കം ചെയ്യുമ്പോള്‍ ഉണ്ടായ പിശകു്: "
 
 #: source/deployment/manager/dp_manager.src#RID_STR_PACKAGE_ALREADY_ADDED.String.Text
-#, fuzzy
 msgid  "Extension has already been added: "
 msgstr "എക്സ്റ്റെന്‍ഷന്‍ ചേര്‍ത്തിട്ടുണ്ടു്: "
 
 #: source/deployment/manager/dp_manager.src#RID_STR_NO_SUCH_PACKAGE.String.Text
-#, fuzzy
 msgid  "There is no such extension deployed: "
 msgstr "ഇത്തരത്തിലുള്ള ഒരു എക്സ്റ്റെന്‍ഷന്‍ നല്‍കിയിട്ടില്ല: "
 
@@ -576,7 +571,6 @@ msgid  "Synchronizing repository for %NAME extensions"
 msgstr ""
 
 #: source/deployment/misc/dp_misc.src#RID_DEPLYOMENT_DEPENDENCIES_UNKNOWN.String.Text
-#, fuzzy
 msgid  "Unknown"
 msgstr "അപരിചിതം"
 
@@ -589,47 +583,38 @@ msgid  "Extension doesn't support versions greater than: Apache OpenOffice %VERS
 msgstr ""
 
 #: source/deployment/registry/dp_registry.src#RID_STR_REGISTERING_PACKAGE.String.Text
-#, fuzzy
 msgid  "Enabling: "
 msgstr "പ്രവര്‍ത്തന സജ്ജമാക്കുന്നു: "
 
 #: source/deployment/registry/dp_registry.src#RID_STR_REVOKING_PACKAGE.String.Text
-#, fuzzy
 msgid  "Disabling: "
 msgstr "നിഷ്ക്രിയമാക്കുന്നു: "
 
 #: source/deployment/registry/dp_registry.src#RID_STR_CANNOT_DETECT_MEDIA_TYPE.String.Text
-#, fuzzy
 msgid  "Cannot detect media-type: "
 msgstr "മാദ്ധ്യമ-വിഭാഗം കണ്ടുപിടിക്കാന്‍ കഴിയുന്നില്ല: "
 
 #: source/deployment/registry/dp_registry.src#RID_STR_UNSUPPORTED_MEDIA_TYPE.String.Text
-#, fuzzy
 msgid  "This media-type is not supported: "
 msgstr "ഈ മാദ്ധ്യമ-വിഭാഗത്തിനുള്ള പിന്തുണ ലഭ്യമല്ല: "
 
 #: source/deployment/registry/dp_registry.src#RID_STR_ERROR_WHILE_REGISTERING.String.Text
-#, fuzzy
 msgid  "An error occurred while enabling: "
 msgstr "പ്രവര്‍ത്തന സജ്ജമാക്കുമ്പോള്‍ ഒരു പിശക് സംഭവിച്ചു: "
 
 #: source/deployment/registry/dp_registry.src#RID_STR_ERROR_WHILE_REVOKING.String.Text
-#, fuzzy
 msgid  "An error occurred while disabling: "
 msgstr "നിഷ്ക്രിയമാക്കുമ്പോള്‍ ഒരു പിശക് സംഭവിച്ചു: "
 
 #: source/deployment/registry/component/dp_component.src#RID_STR_DYN_COMPONENT.String.Text
-#, fuzzy
 msgid  "UNO Dynamic Library Component"
 msgstr "UNO ഡൈനാമിക് ഗ്രന്ഥശാല ഘടകം"
 
 #: source/deployment/registry/component/dp_component.src#RID_STR_JAVA_COMPONENT.String.Text
-#, fuzzy
 msgid  "UNO Java Component"
 msgstr "UNO ജാവാ ഘടകം"
 
 #: source/deployment/registry/component/dp_component.src#RID_STR_PYTHON_COMPONENT.String.Text
-#, fuzzy
 msgid  "UNO Python Component"
 msgstr "UNO ഫൈറ്റോണ് ഘടകം"
 
@@ -638,65 +623,54 @@ msgid  "UNO Components"
 msgstr ""
 
 #: source/deployment/registry/component/dp_component.src#RID_STR_RDB_TYPELIB.String.Text
-#, fuzzy
 msgid  "UNO RDB Type Library"
 msgstr "UNO RDB വിഭാഗം ഗ്രന്ഥശാല"
 
 #: source/deployment/registry/component/dp_component.src#RID_STR_JAVA_TYPELIB.String.Text
-#, fuzzy
 msgid  "UNO Java Type Library"
 msgstr "UNO ജാവാ വിഭാഗം ഗ്രന്ഥശാല"
 
 #: source/deployment/registry/configuration/dp_configuration.src#RID_STR_CONF_SCHEMA.String.Text
-#, fuzzy
 msgid  "Configuration Schema"
 msgstr "രൂപരേഖ മാതൃക"
 
 #: source/deployment/registry/configuration/dp_configuration.src#RID_STR_CONF_DATA.String.Text
-#, fuzzy
 msgid  "Configuration Data"
 msgstr "ഡേറ്റാ രൂപരേഖ"
 
 #: source/deployment/registry/help/dp_help.src#RID_STR_HELP.String.Text
-#, fuzzy
 msgid  "Help"
 msgstr "സഹായം"
 
 #: source/deployment/registry/help/dp_help.src#RID_STR_HELPPROCESSING_GENERAL_ERROR.String.Text
-#, fuzzy
 msgid  "The extension cannot be installed because:\n"
 msgstr "എക്സ്റ്റെന്‍ഷന്‍ ഇന്‍സ്റ്റോള്‍ ചെയ്യുവാന്‍ സാധ്യമല്ല, കാരണം:\n"
 
 #: source/deployment/registry/help/dp_help.src#RID_STR_HELPPROCESSING_XMLPARSING_ERROR.String.Text
 msgid  "The extension will not be installed because an error occurred in the Help files:\n"
-msgstr ""
+msgstr "എക്സ്റ്റെന്‍ഷന്‍ ഇന്‍സ്റ്റോള്‍ ചെയ്യുവാന്‍ സാധ്യമല്ല, കാരണം സഹായത്തിനുള്ള ഫയലുകളില്‍ ഒരു പിശക് ഉണ്ടായിരിക്കുന്നു:\n"
 
 #: source/deployment/registry/package/dp_package.src#RID_STR_PACKAGE_BUNDLE.String.Text
-#, fuzzy
 msgid  "Extension"
 msgstr "എക്സ്റ്റെന്‍ഷന്‍"
 
 #: source/deployment/registry/script/dp_script.src#RID_STR_BASIC_LIB.String.Text
-#, fuzzy
 msgid  "%PRODUCTNAME Basic Library"
 msgstr "%PRODUCTNAME Basic Library"
 
 #: source/deployment/registry/script/dp_script.src#RID_STR_DIALOG_LIB.String.Text
-#, fuzzy
 msgid  "Dialog Library"
 msgstr "സംഭാഷണ ഗ്രന്ഥശാല"
 
 #: source/deployment/registry/script/dp_script.src#RID_STR_CANNOT_DETERMINE_LIBNAME.String.Text
-#, fuzzy
 msgid  "The library name could not be determined."
 msgstr "ഗ്രന്ഥശാലയുടെ പേര‍് നിര്ണ്ണയിക്കാന് കഴിയുന്നില്ല"
 
 #: source/deployment/registry/script/dp_script.src#RID_STR_LIBNAME_ALREADY_EXISTS.String.Text
 msgid  "This library name already exists. Please choose a different name."
-msgstr ""
+msgstr "ഗ്രന്ഥശാലയുടെ നാമം നേരത്തെ തന്നെ നിലവിലുണ്ട്. ദയവായി മറ്റൊരു നാമം തിരഞ്ഞെടുക്കുക."
 
 #: source/deployment/registry/sfwk/dp_sfwk.src#RID_STR_SFWK_LIB.String.Text
-#, fuzzy
 msgid  "%MACROLANG Library"
 msgstr " %MACROLANG Library"
 
@@ -705,91 +679,78 @@ msgid  "Extension Software License Agreement of $NAME:"
 msgstr ""
 
 #: source/deployment/unopkg/unopkg.src#RID_STR_UNOPKG_ACCEPT_LIC_2.String.Text
-msgid  "Read the complete License Agreement displayed above. Accept the License Agreement by typing "yes" on the console then press the Return key. Type "no" to decline and to abort the extension setup."
-msgstr ""
+msgid  "Read the complete License Agreement displayed above. Accept the License Agreement by typing \"yes\" on the console then press the Return key. Type \"no\" to decline and to abort the extension setup."
+msgstr "മുകളില്‍ കാണിച്ചിരിക്കുന്ന പൂര്‍ണ്ണ ലൈസന്‍സ് എഗ്രീമെന്റ് വായിക്കുക. ലൈസന്‍സ് എഗ്രീമെന്റ് അംഗീകരിക്കുന്നതിനായി കണ്‍സോളില്‍ \"yes\" ടൈപ്പ് ചെയ്തു് Return കീ അമര്‍ത്തുക. നിങ്ങള്‍ക്കു് സമ്മതമല്ലെങ്കില്‍ എക്സ്റ്റെന്‍ഷന്‍ ക്രമീകരണം നിര്‍ത്തുന്നതിനായി \"no\" ടൈപ്പ് ചെയ്യുക."
 
 #: source/deployment/unopkg/unopkg.src#RID_STR_UNOPKG_ACCEPT_LIC_3.String.Text
-msgid  "[Enter "yes" or "no"]:"
-msgstr ""
+msgid  "[Enter \"yes\" or \"no\"]:"
+msgstr "[\"yes\" അല്ലെങ്കില്‍ \"no\" നല്‍കുക]:"
 
 #: source/deployment/unopkg/unopkg.src#RID_STR_UNOPKG_ACCEPT_LIC_4.String.Text
-msgid  "Your input was not correct. Please enter "yes" or "no":"
-msgstr ""
+msgid  "Your input was not correct. Please enter \"yes\" or \"no\":"
+msgstr "നിങ്ങളുടെ മറുപടി ശരിയല്ല. ദയവായി \"yes\" അല്ലെങ്കില്‍ \"no\" നല്‍കുക:"
 
 #: source/deployment/unopkg/unopkg.src#RID_STR_UNOPKG_ACCEPT_LIC_YES.String.Text
-#, fuzzy
 msgid  "YES"
 msgstr "YES"
 
 #: source/deployment/unopkg/unopkg.src#RID_STR_UNOPKG_ACCEPT_LIC_Y.String.Text
-#, fuzzy
 msgid  "Y"
 msgstr "Y"
 
 #: source/deployment/unopkg/unopkg.src#RID_STR_UNOPKG_ACCEPT_LIC_NO.String.Text
-#, fuzzy
 msgid  "NO"
 msgstr "NO"
 
 #: source/deployment/unopkg/unopkg.src#RID_STR_UNOPKG_ACCEPT_LIC_N.String.Text
-#, fuzzy
 msgid  "N"
 msgstr "N"
 
 #: source/deployment/unopkg/unopkg.src#RID_STR_CONCURRENTINSTANCE.String.Text
 msgid  "unopkg cannot be started. The lock file indicates it as already running. If this does not apply, delete the lock file at:"
-msgstr ""
+msgstr "unopkg ആരംഭിക്കുവാന്‍ സാധ്യമായില്ല. ലോക്ക് ഫയല്‍ സൂചിപ്പിക്കുന്നതു് ഇതു് നിലവില്‍ പ്രവര്‍ത്തിക്കുന്നു എന്നാണു്. ഇതു് ബാധകമല്ലെങ്കില്‍, താഴെ പറയുന്നിടത്തുള്ള ലോക്ക് ഫയല്‍ വെട്ടി നീക്കുക:"
 
 #: source/deployment/unopkg/unopkg.src#RID_STR_UNOPKG_ERROR.String.Text
-#, fuzzy
 msgid  "ERROR: "
 msgstr "പിശക്:"
 
 #: source/migration/wizard.src#DLG_FIRSTSTART_WIZARD.ModalDialog.Text
-#, fuzzy
 msgid  "Welcome to %PRODUCTNAME %PRODUCTVERSION"
 msgstr "%PRODUCTNAME %PRODUCTVERSION-ലേക്ക് സ്വാഗതം"
 
 #: source/migration/wizard.src#STR_STATE_WELCOME.String.Text
-#, fuzzy
 msgid  "Welcome"
 msgstr "സ്വാഗതം"
 
 #: source/migration/wizard.src#STR_STATE_LICENSE.String.Text
-#, fuzzy
 msgid  "License Agreement"
 msgstr "ലൈസന്സ് എഗ്രിമെന്റ് "
 
 #: source/migration/wizard.src#STR_STATE_MIGRATION.String.Text
-#, fuzzy
 msgid  "Personal Data"
 msgstr "വ്യക്തിഗത വിവരങ്ങള്"
 
 #: source/migration/wizard.src#STR_STATE_USER.String.Text
-#, fuzzy
 msgid  "User name"
 msgstr "ഉപഭോക്തൃനാമം"
 
 #: source/migration/wizard.src#STR_STATE_UPDATE_CHECK.String.Text
-#, fuzzy
 msgid  "Online Update"
 msgstr "ഓണ്‍ലൈന്‍ പരിഷ്കരിക്കുക"
 
 #: source/migration/wizard.src#STR_STATE_REGISTRATION.String.Text
-#, fuzzy
 msgid  "Registration"
 msgstr "Registration"
 
 #: source/migration/wizard.src#STR_WELCOME_MIGRATION.String.Text
 msgid  "This wizard will guide you through the license agreement, the transfer of user data from %OLD_VERSION and the registration of %PRODUCTNAME.\n\nClick 'Next' to continue."
-msgstr ""
+msgstr "ലൈസന്സ് എഗ്രിമെന്റ് മനസ്സിലാക്കാനും  %OLD_VERSION നിന്നും %PRODUCTNAME രജിസ്റ്ററേഷനില് നിന്നും ഡേറ്റാ  മാറ്റാനും ഈ വിസാര്ഡ് താങ്കളെ സഹായിക്കും. \n\n 'അടുത്തത് ക്ലിക് ചെയ്ത് തുടരുക."
 
 #: source/migration/wizard.src#STR_WELCOME_WITHOUT_LICENSE.String.Text
 msgid  "This wizard will guide you through the registration of %PRODUCTNAME.\n\nClick 'Next' to continue."
-msgstr ""
+msgstr "%PRODUCTNAME രജിസ്റ്ററേഷനു് ഈ വിസാര്‍ഡ് നിങ്ങളെ സഹായിക്കുന്നു. \n\nതുടരുന്നതിനായി 'അടുത്തതു്' ക്ലിക്ക് ചെയ്യുക."
 
 #: source/migration/wizard.src#STR_FINISH.String.Text
-#, fuzzy
 msgid  "~Finish"
 msgstr "തീര്ന്നു"
 
@@ -799,76 +760,65 @@ msgstr ""
 
 #: source/migration/wizard.src#ERRBOX_REG_NOSYSBROWSER.ErrorBox.Message
 msgid  "An error occurred in starting the web browser.\nPlease check the %PRODUCTNAME and web browser settings."
-msgstr ""
+msgstr " വെബ് ബ്രൌസര് ആരംഭിക്കുന്നതില് ഒരു തെറ്റു പറ്റി . ദയവായു %PRODUCTNAMEഉം വെബ് ബ്രൌസര് സജ്ജീകരണങ്ങളും പരിശോധിക്കുക"
 
 #: source/migration/wizard.src#QB_ASK_DECLINE.QueryBox.Message
-#, fuzzy
 msgid  "Do you really want to decline?"
 msgstr "താങ്കള് ശരിക്കും തിരസ്ക്കരിക്കുന്നോ?"
 
 #: source/migration/wizard.src#TP_WELCOME.FT_WELCOME_HEADER.FixedText.Text
-#, fuzzy
 msgid  "Welcome to %PRODUCTNAME %PRODUCTVERSION"
 msgstr "%PRODUCTNAME %PRODUCTVERSION-ലേക്ക് സ്വാഗതം"
 
 #: source/migration/wizard.src#TP_WELCOME.FT_WELCOME_BODY.FixedText.Text
 msgid  "This wizard will guide you through the license agreement and the registration of %PRODUCTNAME.\n\nClick 'Next' to continue."
-msgstr ""
+msgstr "ലൈസന്സ് എഗ്രിമെന്റ് മനസ്സിലാക്കാനും  %PRODUCTNAME രജിസ്റ്ററേഷനും  ഈ വിസാര്ഡ് താങ്കളെ സഹായിക്കും. \n\n 'അടുത്തത് ക്ലിക് ചെയ്ത് തുടരുക."
 
 #: source/migration/wizard.src#TP_LICENSE.FT_LICENSE_HEADER.FixedText.Text
-#, fuzzy
 msgid  "Please follow these steps to accept the license"
 msgstr "ലൈസന്സ് സ്വീകരിക്കുന്നതിന്‍ ദയവായി  ഈ കാര്യങ്ങള്  മനസ്സിലാക്കുക"
 
 #: source/migration/wizard.src#TP_LICENSE.FT_LICENSE_BODY_1.FixedText.Text
-#, fuzzy
 msgid  "1."
 msgstr "1."
 
 #: source/migration/wizard.src#TP_LICENSE.FT_LICENSE_BODY_1_TXT.FixedText.Text
 msgid  "View the complete License Agreement. Please use the scrollbar or the '%PAGEDOWN' button in this dialog to view the entire license text."
-msgstr ""
+msgstr "മുഴുവന്  ലൈസന്സ് എഗ്രിമെന്റ് വീക്ഷിക്കുക.  ദയവായി സ്ക്രോള് ബാര് അഥവാ '%PAGEDOWN' ബട്ടണ് ഉപയോഗിച്ച്  മുഴുവന് ലൈസന്സ് ടെക്സ്റ്റും വായിക്കുക."
 
 #: source/migration/wizard.src#TP_LICENSE.FT_LICENSE_BODY_2.FixedText.Text
-#, fuzzy
 msgid  "2."
 msgstr "2."
 
 #: source/migration/wizard.src#TP_LICENSE.FT_LICENSE_BODY_2_TXT.FixedText.Text
 msgid  "Click 'Accept' to accept the terms of the Agreement."
-msgstr ""
+msgstr "എഗ്രിമെന്റിലെ ഘടകങ്ങള് സ്വീകരിക്കാന്  'സ്വീകരിക്കുക ' ബട്ടണ് ക്ലിക് ചെയ്യുക"
 
 #: source/migration/wizard.src#TP_LICENSE.PB_LICENSE_DOWN.PushButton.Text
-#, fuzzy
 msgid  "Scroll Do~wn"
 msgstr "താഴോട്ട് സ്ക്രോള്  ചെയ്യുക"
 
 #: source/migration/wizard.src#STR_LICENSE_ACCEPT.String.Text
-#, fuzzy
 msgid  "~Accept"
 msgstr "സ്വീകരിക്കുക"
 
 #: source/migration/wizard.src#STR_LICENSE_DECLINE.String.Text
-#, fuzzy
 msgid  "~Decline"
 msgstr "അധഃപതിക്കുക"
 
 #: source/migration/wizard.src#TP_MIGRATION.FT_MIGRATION_HEADER.FixedText.Text
-#, fuzzy
 msgid  "Transfer personal data"
 msgstr "സ്വകാര്യ ഡേറ്റാ നീക്കുക"
 
 #: source/migration/wizard.src#TP_MIGRATION.FT_MIGRATION_BODY.FixedText.Text
 msgid  "Most personal data from %OLDPRODUCT installation can be reused in %PRODUCTNAME %PRODUCTVERSION.\n\nIf you do not want to reuse any settings in %PRODUCTNAME %PRODUCTVERSION, unmark the check box."
-msgstr ""
+msgstr "%OLDPRODUCT ലെ മുഴുവന് ഡേറ്റായും  %PRODUCTNAME %PRODUCTVERSION സ്ഥാപിക്കുന്പോള് വീണ്ടും ഉപയോഗിക്കാം. \n\n "
 
 #: source/migration/wizard.src#TP_MIGRATION.CB_MIGRATION.CheckBox.Text
-#, fuzzy
 msgid  "Transfer personal data"
 msgstr "സ്വകാര്യ ഡേറ്റാ നീക്കുക"
 
 #: source/migration/wizard.src#TP_UPDATE_CHECK.FT_UPDATE_CHECK_HEADER.FixedText.Text
-#, fuzzy
 msgid  "Online Update"
 msgstr "ഓണ്‍ലൈന്‍ പരിഷ്കരിക്കുക"
 
@@ -877,66 +827,56 @@ msgid  "%PRODUCTNAME searches automatically at regular intervals for new version
 msgstr ""
 
 #: source/migration/wizard.src#TP_UPDATE_CHECK.CB_UPDATE_CHECK.CheckBox.Text
-#, fuzzy
 msgid  "~Check for updates automatically"
 msgstr "സ്വയമായി പരിഷ്കാരങ്ങള്‍ക്കായി ~പരിശോധിക്കുക"
 
 #: source/migration/wizard.src#TP_USER.FT_USER_HEADER.FixedText.Text
-#, fuzzy
 msgid  "Provide your full name and initials below"
 msgstr "താങ്കളുടെ മുഴുവന് പേരും  ഇനിഷ്യലും താഴെ  എഴുതുക"
 
 #: source/migration/wizard.src#TP_USER.FT_USER_BODY.FixedText.Text
 msgid  "The user name will be used in the document properties, templates and when you record changes made to documents."
-msgstr ""
+msgstr "താങ്കള് ഡോക്കുമെന്റിനു മാറ്റം വരുത്തുന്പോള്  ഡോക്കുമെന്റ് സവിശഷതകളിലും ടെന്പലേറ്റുകളിലും  ഉപഭോക്തൃ നാമം  ഉപയോഗിക്കും"
 
 #: source/migration/wizard.src#TP_USER.FT_USER_FIRST.FixedText.Text
-#, fuzzy
 msgid  "~First name"
 msgstr "പ്രഥമ പേര‍്"
 
 #: source/migration/wizard.src#TP_USER.FT_USER_LAST.FixedText.Text
-#, fuzzy
 msgid  "~Last name"
 msgstr "അവസാന പേര‍്"
 
 #: source/migration/wizard.src#TP_USER.FT_USER_INITIALS.FixedText.Text
-#, fuzzy
 msgid  "~Initials"
 msgstr "ഇനിഷ്യല്"
 
 #: source/migration/wizard.src#TP_USER.FT_USER_FATHER.FixedText.Text
-#, fuzzy
 msgid  "~Father's name"
 msgstr "അച്ഛന്റെ പേര‍്"
 
 #: source/migration/wizard.src#TP_REGISTRATION.FT_REGISTRATION_HEADER.FixedText.Text
-#, fuzzy
 msgid  "%PRODUCTNAME Registration"
 msgstr "%PRODUCTNAME രജിസ്റ്ററേഷന്"
 
 #: source/migration/wizard.src#TP_REGISTRATION.FT_REGISTRATION_BODY.FixedText.Text
 msgid  "You now have the opportunity to register as a %PRODUCTNAME user. Registration is voluntary and is without obligation.\n\nIf you register, we can inform you about new developments concerning this product."
-msgstr ""
+msgstr "താങ്കള്ക്ക് ഇപ്പോള് %PRODUCTNAME  യുസറില് രജിസ്റ്റര് ചെയ്യാന് അവസരമുണ്ട്. രജിസ്റ്ററേഷന് സ്വേച്ഛവും ഉടന്പടിയില്ലാത്തതുമാണ്‍. \n താങ്കള് രജിസ്റ്റര് ചെയ്യുവാണെങ്കില് ഈ ഉല്പാദനത്തെപ്പറ്റിയുള്ള പുതിയ വിവരങ്ങള് ഞങ്ങള് താങ്കളെ അറിയിക്കും."
 
 #: source/migration/wizard.src#TP_REGISTRATION.RB_REGISTRATION_NOW.RadioButton.Text
-#, fuzzy
 msgid  "I want to register ~now"
 msgstr "എനിക്ക് ഇപ്പോള് രജിസ്റ്റര് ചെയ്യണം"
 
 #: source/migration/wizard.src#TP_REGISTRATION.RB_REGISTRATION_LATER.RadioButton.Text
-#, fuzzy
 msgid  "I want to register ~later"
 msgstr "ഞാന് പിന്നീട് രജിസ്റ്റര് ചെയ്തോളം"
 
 #: source/migration/wizard.src#TP_REGISTRATION.RB_REGISTRATION_NEVER.RadioButton.Text
-#, fuzzy
 msgid  "I do not want to ~register"
 msgstr "ഞാന് രജിസ്റ്റര് ചെയ്യാന് ആഗ്രഹിക്കുന്നില്ല"
 
 #: source/migration/wizard.src#TP_REGISTRATION.FT_REGISTRATION_END.FixedText.Text
 msgid  "We hope you enjoy working with %PRODUCTNAME.\n\nTo exit the wizard, click 'Finish'."
-msgstr ""
+msgstr "ഞങ്ങള് കരുതുന്നു താങ്കള്  %PRODUCTNAME ന്റെ കൂടെ ജോലിചെയ്യുന്നത് ആസ്വദിക്കുന്നുവെന്ന്. \n\n വിസാര്ഡില് നിന്നും പുറത്തു കടക്കണമെങ്കില് 'തീര്ന്നു' ക്ലിക് ചെയ്യുക"
 
 #: win32/source/rebase/rebasegui.ulf#%APP_TITLE%
 msgid  "Installation Status"
@@ -954,38 +894,37 @@ msgstr ""
 msgid  "Cannot find Office installation."
 msgstr ""
 
+#: win32/source/setup/setup.ulf#%APP_TITLE%
+msgid  "Setup"
+msgstr "സ്ഥിതി"
+
 #: win32/source/setup/setup.ulf#%APP_PROD_TITLE%
-#, fuzzy
 msgid  "The %PRODUCTNAME Setup"
 msgstr "The %PRODUCTNAME Setup"
 
 #: win32/source/setup/setup.ulf#%OUTOFMEM%
-#, fuzzy
 msgid  "Out of Memory"
 msgstr "മെമ്മറി ഇല്ല"
 
 #: win32/source/setup/setup.ulf#%NOMSI%
-#, fuzzy
 msgid  "Setup was unable to find the msi package."
 msgstr "എം എസ്സ് ഐ പാക്കേജ്  കണ്ടുപിടിക്കാന് സെറ്റപ്പിന‍് കഴിഞ്ഞില്ല."
 
 #: win32/source/setup/setup.ulf#%USER_CANCELLED%
-#, fuzzy
 msgid  "Setup was cancelled"
 msgstr "സെറ്റപ്പ് റദ്ദാക്കി"
 
 #: win32/source/setup/setup.ulf#%REQUIRES_ADMIN_PRIV%
 msgid  "Administrator privileges are required for upgrading the Windows Installer."
-msgstr ""
+msgstr "വിന്ഡോസ് ഇന്സ്റ്റാളര് അപ്ഗ്രേഡ് ചെയ്യണമെങ്കില് കാര്യകര്ത്താവിന്റെ സ്വാധികാരം ആവശ്യമാണ‍്"
 
 #: win32/source/setup/setup.ulf#%FILE_NOT_FOUND%
-#, fuzzy
 msgid  "Setup was unable to find the file '%s'."
 msgstr "സെറ്റ്പ്പിന‍് '%s' ഫയല് കണ്ടുപിടിക്കാന് കഴിഞ്ഞില്ല."
 
 #: win32/source/setup/setup.ulf#%INVALID_PARAM%
 msgid  "Invalid command line option '%s'. Please use '/?' for help."
-msgstr ""
+msgstr "നിര്ദ്ദേശ ഐഛ്ഛികം  '%s'  അസാധുവായ വാക്യമാണ‍്. ദയവായി സഹായത്തിന‍്  '/? ' ഉപയോഗിക്കുക"
 
 #: win32/source/setup/setup.ulf#%SETUP_TO_OLD%
 msgid  "This package requires at least the version '%s' of the Windows Installer. \nYou have Windows Installer '%s' on your system!"
@@ -997,120 +936,97 @@ msgstr ""
 
 #: win32/source/setup/setup.ulf#%USAGE%
 msgid  "Usage:\n   /? :  Shows this dialog.\n   /a :  Performs an administrative installation.\n   /j[u|m] :  Performs an advertising installation.\n   /q[n] : Do not show any user interface (silent mode).\n"
-msgstr ""
+msgstr "ഉപയോഗം:\n   /? :  ഈ സംഭാഷണം കാണിക്കുക.\n   /a :   അഡ്മിനിസ്ട്രേറ്റിവ് ഇന്സ്റ്റലേഷന് നടത്തുക.\n   /j[u|m] :  പരസ്യത്തിനുവേണ്ടി ഇന്സ്റ്റലേഷന് നടത്തുക.\n   /q[n] : ഒരു ഉപഭോക്തൃ ഇന്റ്റര്ഫേസും കാണിക്കരുത്(നിശ്ശബ്ദ രീതി).\n"
 
 #: win32/source/setup/setup.ulf#%ALREADY_RUNNING%
-#, fuzzy
 msgid  "There is already a setup process running."
 msgstr "സെറ്റപ്പ് പ്രക്രിയ നേരത്തെ തന്നെ പ്രവര്ത്തിക്കുന്നുണ്ട് "
 
 #: win32/source/setup/setup.ulf#%UNKNOWN_ERROR%
-#, fuzzy
 msgid  "An Unknown Error occured!"
 msgstr "അവ്യക്തമായ തെറ്റുണ്ടായി!"
 
 #: win32/source/setup/setup.ulf#%INVALID_PROFILE%
-#, fuzzy
 msgid  "Invalid or incomplete profile."
 msgstr "അസാധുവായ അഥവാ അപൂര്ണ്ണമായ ജീവചരിത്രവിവരണം"
 
 #: win32/source/setup/setup.ulf#%UNKNOWN_LANG%
-#, fuzzy
 msgid  "Unknown Language: %d"
 msgstr "അജ്ഞാതഭാഷ: %d"
 
 #: win32/source/setup/setup.ulf#%LANGUAGE_ZH_TW%
-#, fuzzy
 msgid  "Chinese (traditional)"
 msgstr "ചൈനീസ് (പാരന്പര്യം)"
 
 #: win32/source/setup/setup.ulf#%LANGUAGE_CS%
-#, fuzzy
 msgid  "Czech"
 msgstr "സെക്ക്"
 
 #: win32/source/setup/setup.ulf#%LANGUAGE_DA%
-#, fuzzy
 msgid  "Danish"
 msgstr "ഡാനിഷ്"
 
 #: win32/source/setup/setup.ulf#%LANGUAGE_DE_DE%
-#, fuzzy
 msgid  "German (Germany)"
 msgstr "ജര്മ്മന് (ജര്മ്മനി)"
 
 #: win32/source/setup/setup.ulf#%LANGUAGE_EL%
-#, fuzzy
 msgid  "Greek"
 msgstr "ഗ്രീക്ക്"
 
 #: win32/source/setup/setup.ulf#%LANGUAGE_EN_US%
-#, fuzzy
 msgid  "English (USA)"
 msgstr "ഇംഗ്ലീഷ് (USA)"
 
 #: win32/source/setup/setup.ulf#%LANGUAGE_ES%
-#, fuzzy
 msgid  "Spanish (Spain)"
 msgstr "സ്പാനിഷ് (സ്പെയിന്)"
 
 #: win32/source/setup/setup.ulf#%LANGUAGE_FI%
-#, fuzzy
 msgid  "Finnish"
 msgstr "ഫിന്നിഷ്"
 
 #: win32/source/setup/setup.ulf#%LANGUAGE_FR_FR%
-#, fuzzy
 msgid  "French (France)"
 msgstr "ഫ്രഞ്ച് (ഫ്രാന്സ്)"
 
 #: win32/source/setup/setup.ulf#%LANGUAGE_HE%
-#, fuzzy
 msgid  "Hebrew"
 msgstr "ഹിബ്രൂ"
 
 #: win32/source/setup/setup.ulf#%LANGUAGE_HU%
-#, fuzzy
 msgid  "Hungarian"
 msgstr "ഹംഗേറിയന്"
 
 #: win32/source/setup/setup.ulf#%LANGUAGE_IT_IT%
-#, fuzzy
 msgid  "Italian (Italy)"
 msgstr "ഇറ്റാലിയന് (ഇറ്റലി)"
 
 #: win32/source/setup/setup.ulf#%LANGUAGE_JA%
-#, fuzzy
 msgid  "Japanese"
 msgstr "ജാപ്പാനീസ"
 
 #: win32/source/setup/setup.ulf#%LANGUAGE_KO%
-#, fuzzy
 msgid  "Korean"
 msgstr "കൊറിയന്"
 
 #: win32/source/setup/setup.ulf#%LANGUAGE_NL_NL%
-#, fuzzy
 msgid  "Dutch (Netherlands)"
 msgstr "ഡച്ച് (നെതര്‍ലാന്റ്)"
 
 #: win32/source/setup/setup.ulf#%LANGUAGE_NO_NO%
-#, fuzzy
 msgid  "Norwegian (Bokmål)"
 msgstr "നോര്‍വീജിയന് (ബോക്മാല്)"
 
 #: win32/source/setup/setup.ulf#%LANGUAGE_PL%
-#, fuzzy
 msgid  "Polish"
 msgstr "പോളീഷ്"
 
 #: win32/source/setup/setup.ulf#%LANGUAGE_PT_BR%
-#, fuzzy
 msgid  "Portuguese (Brazil)"
 msgstr "പോര്ച്ചുഗീസ് (ബ്രസീല്)"
 
 #: win32/source/setup/setup.ulf#%LANGUAGE_RU%
-#, fuzzy
 msgid  "Russian"
 msgstr "റഷ്യന്"
 
@@ -1119,36 +1035,25 @@ msgid  "Slovak"
 msgstr ""
 
 #: win32/source/setup/setup.ulf#%LANGUAGE_SV_SE%
-#, fuzzy
 msgid  "Swedish (Sweden)"
 msgstr "സ്വീഡിഷ് (സ്വീഡന്)"
 
 #: win32/source/setup/setup.ulf#%LANGUAGE_TH%
-#, fuzzy
 msgid  "Thai"
 msgstr "തായ്"
 
 #: win32/source/setup/setup.ulf#%LANGUAGE_TR%
-#, fuzzy
 msgid  "Turkish"
 msgstr "ടര്ക്കിഷ്"
 
 #: win32/source/setup/setup.ulf#%LANGUAGE_ET%
-#, fuzzy
 msgid  "Estonian"
 msgstr "എസ്റ്റോണിയന്"
 
 #: win32/source/setup/setup.ulf#%LANGUAGE_ZH_CN%
-#, fuzzy
 msgid  "Chinese (Simplified)"
 msgstr "ചൈനീസ് (ലഘൂകരിച്ച)"
 
 #: win32/source/setup/setup.ulf#%LANGUAGE_PT_PT%
-#, fuzzy
 msgid  "Portuguese (Portugal)"
 msgstr "പോര്ച്ചുഗീസ് (പോര്ച്ചുഗല്)"
-
-#: win32/source/setup/setup.ulf#%APP_TITLE%
-#, fuzzy
-msgid  "Setup"
-msgstr "സ്ഥിതി"

@@ -37,11 +37,11 @@ msgstr "ActiveX Control"
 
 #: source/activex/module_activex.ulf#STR_DESC_MODULE_OPTIONAL_ACTIVEXCONTROL
 msgid  "Component to enable Microsoft Internet Explorer to display %PRODUCTNAME documents."
-msgstr ""
+msgstr "សមាសភាគ​ដើម្បី​ធ្វើ​ឲ្យ Microsoft Internet Explorer អាច​បង្ហាញ​ឯកសារ %PRODUCTNAME ។"
 
 #: source/base/folderitem_base.ulf#STR_FI_TOOLTIP_BASE
 msgid  "Manage databases, create queries and reports to track and manage your information by using Base."
-msgstr ""
+msgstr "គ្រប់គ្រង​មូលដ្ឋាន​ទិន្នន័យ បង្កើត​សំណួរ និង​របាយការណ៍ ដើម្បី​តាមដាន និង​ចាត់ចែង​ព័ត៌មាន​របស់អ្នក​ដោយ​ប្រើ Base ។"
 
 #: source/base/registryitem_base.ulf#STR_REG_VAL_OO_DATABASE
 msgid  "OpenDocument Database"
@@ -121,7 +121,11 @@ msgstr "សៀវភៅ​បញ្ជ​"
 
 #: source/calc/folderitem_calc.ulf#STR_FI_TOOLTIP_CALC
 msgid  "Perform calculation, analyze information and manage lists in spreadsheets by using Calc."
-msgstr ""
+msgstr "ធ្វើ​ការគណនា វិភាគ​ព័ត៌មាន និង​រៀបចំបញ្ជី​នៅក្នុង​សៀវភៅ​បញ្ជី ដោយប្រើ​ Calc ។"
+
+#: source/calc/registryitem_calc.ulf#STR_REG_VAL_NEW
+msgid  "&New"
+msgstr "ថ្មី"
 
 #: source/calc/registryitem_calc.ulf#STR_REG_VAL_SO60_SPREADSHEET
 msgid  "%SXWFORMATNAME %SXWFORMATVERSION Spreadsheet"
@@ -155,17 +159,13 @@ msgstr "ពុម្ព Microsoft Excel 97-2003"
 msgid  "Microsoft Excel Template"
 msgstr "ពុម្ព Microsoft Excel"
 
-#: source/calc/registryitem_calc.ulf#STR_REG_VAL_NEW
-msgid  "&New"
-msgstr "ថ្មី"
-
 #: source/calc/module_calc.ulf#STR_NAME_MODULE_PRG_CALC
 msgid  "%PRODUCTNAME Calc"
 msgstr "%PRODUCTNAME Calc"
 
 #: source/calc/module_calc.ulf#STR_DESC_MODULE_PRG_CALC
 msgid  "Perform calculation, analyze information and manage lists in spreadsheets by using %PRODUCTNAME Calc."
-msgstr ""
+msgstr "ធ្វើ​​ការ​គណនា វិភាគ​ព័ត៌មាន និង​រៀបចំ​បញ្ជី​ក្នុង​សៀវភៅ​បញ្ជី ដោយ​ប្រើ %PRODUCTNAME Calc ។"
 
 #: source/calc/module_calc.ulf#STR_NAME_MODULE_PRG_CALC_BIN
 msgid  "Program Module"
@@ -189,7 +189,11 @@ msgstr "កម្មវិធី​បន្ថែម​ខាងក្នុង
 
 #: source/calc/module_calc.ulf#STR_DESC_MODULE_OPTIONAL_ADDINS
 msgid  "Add-ins are additional programs that make new functions available in %PRODUCTNAME Calc."
-msgstr ""
+msgstr "កម្មវិធីបន្ថែម​​ខាង​ក្នុង​គឺ​ជា​កម្មវិធី​បន្ថែម​ដែល​បង្កើត​អនុគមន៍​ថ្មី​ដែល​​​អាច​ប្រើ​បាន​ក្នុង​ ​%PRODUCTNAME Calc ។"
+
+#: source/draw/registryitem_draw.ulf#STR_REG_VAL_NEW
+msgid  "&New"
+msgstr "ថ្មី"
 
 #: source/draw/registryitem_draw.ulf#STR_REG_VAL_SO60_DRAWING
 msgid  "%SXWFORMATNAME %SXWFORMATVERSION Drawing"
@@ -207,17 +211,13 @@ msgstr "គំនូរ OpenDocument"
 msgid  "OpenDocument Drawing Template"
 msgstr "ពុម្ព​គំនូរ OpenDocument"
 
-#: source/draw/registryitem_draw.ulf#STR_REG_VAL_NEW
-msgid  "&New"
-msgstr "ថ្មី"
-
 #: source/draw/folderitem_draw.ulf#STR_FI_NAME_ZEICHNUNG
 msgid  "Drawing"
 msgstr "គំនូរ"
 
 #: source/draw/folderitem_draw.ulf#STR_FI_TOOLTIP_DRAW
 msgid  "Create and edit drawings, flow charts, and logos by using Draw."
-msgstr ""
+msgstr "បង្កើត និង​កែ​សម្រួល​គំនូរ គំនូស​តាង​​លំហូរ និង​រូបសញ្ញា​ដោយ​ប្រើ Draw ។"
 
 #: source/draw/module_draw.ulf#STR_NAME_MODULE_PRG_DRAW
 msgid  "%PRODUCTNAME Draw"
@@ -225,7 +225,7 @@ msgstr "%PRODUCTNAME Draw"
 
 #: source/draw/module_draw.ulf#STR_DESC_MODULE_PRG_DRAW
 msgid  "Create and edit drawings, flow charts, and logos by using %PRODUCTNAME Draw."
-msgstr ""
+msgstr "បង្កើត និង​កែសម្រួល​គំនូរ ដ្យាក្រាម​លំហូរ និង​រូបសញ្ញា​ដោយ​ប្រើ %PRODUCTNAME Draw ។"
 
 #: source/draw/module_draw.ulf#STR_NAME_MODULE_PRG_DRAW_BIN
 msgid  "Program Module"
@@ -249,7 +249,7 @@ msgstr "ការ​រួម​បញ្ចូល​ជាមួយ GNOME"
 
 #: source/gnome/module_gnome.ulf#STR_DESC_MODULE_OPTIONAL_GNOME
 msgid  "System integration of %PRODUCTNAME %PRODUCTVERSION into Gnome Desktop Environment."
-msgstr ""
+msgstr "ការ​រួម​បញ្ចូល​ប្រព័ន្ធ​របស់ %PRODUCTNAME %PRODUCTVERSION ជាមួយ​បរិស្ថាន​ផ្ទៃតុ Gnome ។"
 
 #: source/graphicfilter/module_graphicfilter.ulf#STR_NAME_MODULE_OPTIONAL_GRFFLT
 msgid  "Graphics Filters"
@@ -377,7 +377,11 @@ msgstr "ការ​បង្ហាញ"
 
 #: source/impress/folderitem_impress.ulf#STR_FI_TOOLTIP_IMPRESS
 msgid  "Create and edit presentations for slideshows, meeting and Web pages by using Impress."
-msgstr ""
+msgstr "បង្កើត និង​កែ​សម្រួល​ការ​បង្ហាញ​សម្រាប់​បង្ហាញ​ស្លាយ កិច្ច​ប្រជុំ និង​ទំព័រ​បណ្តាញ​ដោយ​ប្រើ Impress ។"
+
+#: source/impress/registryitem_impress.ulf#STR_REG_VAL_NEW
+msgid  "&New"
+msgstr "ថ្មី"
 
 #: source/impress/registryitem_impress.ulf#STR_REG_VAL_SO60_SHOW
 msgid  "Show"
@@ -419,17 +423,13 @@ msgstr "ពុម្ព Microsoft PowerPoint 97-2003"
 msgid  "Microsoft PowerPoint Template"
 msgstr "ពុម្ព Microsoft PowerPoint"
 
-#: source/impress/registryitem_impress.ulf#STR_REG_VAL_NEW
-msgid  "&New"
-msgstr "ថ្មី"
-
 #: source/impress/module_impress.ulf#STR_NAME_MODULE_PRG_IMPRESS
 msgid  "%PRODUCTNAME Impress"
 msgstr "%PRODUCTNAME Impress"
 
 #: source/impress/module_impress.ulf#STR_DESC_MODULE_PRG_IMPRESS
 msgid  "Create and edit presentations for slideshows, meeting and Web pages by using %PRODUCTNAME Impress."
-msgstr ""
+msgstr "បង្កើត និង​កែសម្រួល​ការ​បង្ហាញ សម្រាប់​បង្ហាញ​ស្លាយ កិច្ចប្រជុំ និង​ទំព័រ​បណ្តាញ ដោយ​ប្រើ %PRODUCTNAME Impress ។"
 
 #: source/impress/module_impress.ulf#STR_NAME_MODULE_PRG_IMPRESS_BIN
 msgid  "Program Module"
@@ -461,7 +461,7 @@ msgstr "តម្រង​ឧបករណ៍​ចល័ត"
 
 #: source/javafilter/module_javafilter.ulf#STR_DESC_MODULE_OPTIONAL_JAVAFILTER
 msgid  "Text and spreadsheet filters to support import/export for Palm handheld or Pocket PC (Java required)."
-msgstr ""
+msgstr "តម្រង​​អត្ថបទ និង​សៀវភៅ​បញ្ជី ដែល​ត្រូវគាំទ្រ​ការ​​នាំចេញ​/​នាំ​ចូល សម្រាប់ Palm handheld ឬ Pocket PC (ត្រូវ​ការ​ Java) ។"
 
 #: source/javafilter/module_javafilter.ulf#STR_NAME_MODULE_OPTIONAL_JAVAFILTER_PALM
 msgid  "Palm"
@@ -485,7 +485,7 @@ msgstr "Pocket PC"
 
 #: source/javafilter/module_javafilter.ulf#STR_DESC_MODULE_OPTIONAL_JAVAFILTER_POCKETPC_WNT
 msgid  "Filters and ActiveSync support for Pocket PC compatible handhelds"
-msgstr ""
+msgstr "តម្រង និង​ការ​គាំទ្រ ActiveSync សម្រាប់ Pocket PC ដែល​ឆប​គ្នា​នឹង handhelds"
 
 #: source/javafilter/module_javafilter.ulf#STR_DESC_MODULE_OPTIONAL_JAVAFILTER_POCKETPC_UNIX
 msgid  "Filters for Pocket PC compatible handhelds."
@@ -565,7 +565,7 @@ msgstr "%PRODUCTNAME Math"
 
 #: source/math/module_math.ulf#STR_DESC_MODULE_PRG_MATH
 msgid  "Create and edit scientific formulas and equations by using %PRODUCTNAME Math."
-msgstr ""
+msgstr "បង្កើត និង​កែសម្រួល​រូបមន្ត​វិទ្យាសាស្ត្រ និង​សមីការ ដោយ​ប្រើ %PRODUCTNAME Math ។"
 
 #: source/math/module_math.ulf#STR_NAME_MODULE_PRG_MATH_BIN
 msgid  "Program Module"
@@ -587,6 +587,10 @@ msgstr "ជំនួយ​អំពី %PRODUCTNAME Math"
 msgid  "Create and edit scientific formulas and equations by using Math."
 msgstr "បង្កើត និង​កែ​សម្រួល​រូបមន្ត​វិទ្យាសាស្ត្រ និង​សមីការ​ដោយ​ប្រើ Math ។"
 
+#: source/math/registryitem_math.ulf#STR_REG_VAL_NEW
+msgid  "&New"
+msgstr "ថ្មី"
+
 #: source/math/registryitem_math.ulf#STR_REG_VAL_SO60_FORMULA
 msgid  "%SXWFORMATNAME %SXWFORMATVERSION Formula"
 msgstr "រូបមន្ត %SXWFORMATNAME %SXWFORMATVERSION "
@@ -595,17 +599,17 @@ msgstr "រូបមន្ត %SXWFORMATNAME %SXWFORMATVERSION "
 msgid  "OpenDocument Formula"
 msgstr "រូបមន្ត OpenDocument"
 
-#: source/math/registryitem_math.ulf#STR_REG_VAL_NEW
-msgid  "&New"
-msgstr "ថ្មី"
-
 #: source/onlineupdate/module_onlineupdate.ulf#STR_NAME_MODULE_OPT_ONLINEUPDATE
 msgid  "Online Update"
 msgstr "បច្ចុប្បន្នភាព​នៅ​លើ​បណ្ដាញ"
 
 #: source/onlineupdate/module_onlineupdate.ulf#STR_DESC_MODULE_OPT_ONLINEUPDATE
 msgid  "Get automatically notified when a new update of %PRODUCTNAME becomes available."
-msgstr ""
+msgstr "ជូន​ដំណឹង​ដោយស្វ័យ​ប្រវត្តិ នៅពេល​ដែល​មាន​បច្ចុប្បន្នភាព​ថ្មី​របស់ %PRODUCTNAME ។"
+
+#: source/ooo/registryitem_ooo.ulf#STR_REG_VAL_NEW
+msgid  "&New"
+msgstr "ថ្មី "
 
 #: source/ooo/registryitem_ooo.ulf#STR_REG_VAL_INSTALL
 msgid  "&Install"
@@ -615,17 +619,13 @@ msgstr "ដំឡើង "
 msgid  "OpenOffice.org 1.1 Configuration File"
 msgstr ""
 
-#: source/ooo/registryitem_ooo.ulf#STR_REG_VAL_APPCAPABILITY_DESCRIPTION_OOO
-msgid  "office productivity suite based on Apache OpenOffice project"
-msgstr ""
-
-#: source/ooo/registryitem_ooo.ulf#STR_REG_VAL_NEW
-msgid  "&New"
-msgstr "ថ្មី "
-
 #: source/ooo/registryitem_ooo.ulf#STR_REG_VAL_SO50_TEMPLATE_OOO
 msgid  "StarOffice 5.0 Template"
 msgstr "ពុម្ព StarOffice 5.0"
+
+#: source/ooo/registryitem_ooo.ulf#STR_REG_VAL_APPCAPABILITY_DESCRIPTION_OOO
+msgid  "office productivity suite based on Apache OpenOffice project"
+msgstr ""
 
 #: source/ooo/module_systemint.ulf#STR_NAME_MODULE_OPTIONAL_SYSTEMINTEGRATION
 msgid  "Desktop integration"
@@ -657,7 +657,7 @@ msgstr "សមាសភាគ​ស្រេច​​ចិត្ត"
 
 #: source/ooo/module_ooo.ulf#STR_DESC_MODULE_OPTIONAL
 msgid  "Common components and additional programs shared by all %PRODUCTNAME programs."
-msgstr ""
+msgstr "សមាសភាគ​​ទូទៅ​​ ​និង​កម្មវិធី​​បន្ថែម​​ទៀត​​ ដែល​​បាន​​ចែក​​រំលែក​​ដោយ​​កម្មវិធី​​ %PRODUCTNAME ​​ទាំងអស់ ។"
 
 #: source/ooo/module_ooo.ulf#STR_NAME_MODULE_DICTIONARIES
 msgid  "Dictionaries"
@@ -725,7 +725,7 @@ msgstr "បើក​ឯកសារ"
 
 #: source/ooo/folderitem_ooo.ulf#STR_FI_TOOLTIP_SOFFICE
 msgid  "The office productivity suite compatible to the open and standardized ODF document format. Supported by The Apache Software Foundation."
-msgstr ""
+msgstr "ឈុត​ផលិតភាព​ការិយាល័យ​ឆបគ្នា​នឹង​ទ្រង់ទ្រាយ​ឯកសារ ODF ចំហ និង​មាន​ស្តង់ដារ ។ គាំទ្រ​ដោយ Oracle ។"
 
 #: source/ooo/module_langpack.ulf#STR_NAME_MODULE_ROOT_LANGPACK
 msgid  "Additional language packs"
@@ -821,7 +821,7 @@ msgstr "ចិន (សាមញ្ញ)"
 
 #: source/ooo/module_langpack.ulf#STR_DESC_MODULE_LANGPACK_ZH_CN
 msgid  "Installs Chinese (simplified) support in %PRODUCTNAME %PRODUCTVERSION"
-msgstr ""
+msgstr "ដំឡើង​ការ​គាំទ្រ​ភាសា​​ចិន​ (សាមញ្ញ)​ ​ក្នុង %PRODUCTNAME %PRODUCTVERSION"
 
 #: source/ooo/module_langpack.ulf#STR_NAME_MODULE_LANGPACK_ZH_TW
 msgid  "Chinese (traditional)"
@@ -997,7 +997,7 @@ msgstr "ស៊ូធូ​ខាង​ត្បូង (ស៊ូធូ)"
 
 #: source/ooo/module_langpack.ulf#STR_DESC_MODULE_LANGPACK_ST
 msgid  "Installs Southern Sotho (Sutu) support in %PRODUCTNAME %PRODUCTVERSION"
-msgstr ""
+msgstr "ដំឡើង​ការ​គាំទ្រ​​ភាសា​ស៊ូធូ​ខាងត្បូង (ស៊ូធូ) ក្នុង %PRODUCTNAME %PRODUCTVERSION"
 
 #: source/ooo/module_langpack.ulf#STR_NAME_MODULE_LANGPACK_TN
 msgid  "Tswana"
@@ -1077,7 +1077,7 @@ msgstr "បេន្កាលី (បង់ក្លាដេស)"
 
 #: source/ooo/module_langpack.ulf#STR_DESC_MODULE_LANGPACK_BN_BD
 msgid  "Installs Bengali (Bangladesh) support in %PRODUCTNAME %PRODUCTVERSION"
-msgstr ""
+msgstr "ដំឡើង​ការ​គាំទ្រ​ភាសា​បេន្កាលី (បង់ក្លាដេស) ក្នុង %PRODUCTNAME %PRODUCTVERSION"
 
 #: source/ooo/module_langpack.ulf#STR_NAME_MODULE_LANGPACK_BN_IN
 msgid  "Bengali (India)"
@@ -1085,7 +1085,7 @@ msgstr "បេន្កាលី (ឥណ្ឌា)"
 
 #: source/ooo/module_langpack.ulf#STR_DESC_MODULE_LANGPACK_BN_IN
 msgid  "Installs Bengali (India) support in %PRODUCTNAME %PRODUCTVERSION"
-msgstr ""
+msgstr "ដំឡើង​ការ​គាំទ្រ​ភាសា​បេន្កាលី (ឥណ្ឌា) ក្នុង %PRODUCTNAME %PRODUCTVERSION"
 
 #: source/ooo/module_langpack.ulf#STR_NAME_MODULE_LANGPACK_OR
 msgid  "Oriya"
@@ -1189,7 +1189,7 @@ msgstr "ន័រវែស (បុកម៉ាល)"
 
 #: source/ooo/module_langpack.ulf#STR_DESC_MODULE_LANGPACK_NB
 msgid  "Installs Norwegian (Bokmål) support in %PRODUCTNAME %PRODUCTVERSION"
-msgstr ""
+msgstr "ដំឡើង​ការ​គាំទ្រ​ភាសា​ន័រវែស (បុកម៉ាល) ក្នុង %PRODUCTNAME %PRODUCTVERSION"
 
 #: source/ooo/module_langpack.ulf#STR_NAME_MODULE_LANGPACK_NN
 msgid  "Norwegian (Nynorsk)"
@@ -1197,7 +1197,7 @@ msgstr "​ន័រវែស (​នីនូស​)"
 
 #: source/ooo/module_langpack.ulf#STR_DESC_MODULE_LANGPACK_NN
 msgid  "Installs Norwegian (Nynorsk) support in %PRODUCTNAME %PRODUCTVERSION"
-msgstr ""
+msgstr "ដំឡើង​ការគាំទ្រភាសា​​ន័រវែស (នីនូស) នៅក្នុង %PRODUCTNAME %PRODUCTVERSION"
 
 #: source/ooo/module_langpack.ulf#STR_NAME_MODULE_LANGPACK_RM
 msgid  "Rhaeto-Romance"
@@ -1205,7 +1205,7 @@ msgstr "Rhaeto-រ៉ូម៉ាំង"
 
 #: source/ooo/module_langpack.ulf#STR_DESC_MODULE_LANGPACK_RM
 msgid  "Installs Rhaeto-Romance support in %PRODUCTNAME %PRODUCTVERSION"
-msgstr ""
+msgstr "ដំឡើង​ការ​គាំទ្រ​ភាសា Rhaeto-រ៉ូម៉ាំង ក្នុង in %PRODUCTNAME %PRODUCTVERSION"
 
 #: source/ooo/module_langpack.ulf#STR_NAME_MODULE_LANGPACK_RO
 msgid  "Romanian"
@@ -1357,7 +1357,7 @@ msgstr "សែប៊ី (ស៊ីរីលីក)"
 
 #: source/ooo/module_langpack.ulf#STR_DESC_MODULE_LANGPACK_SR_CS
 msgid  "Installs Serbian (Cyrillic) support in %PRODUCTNAME %PRODUCTVERSION"
-msgstr ""
+msgstr "ដំឡើង​ការ​គាំទ្រ​ភាសាសែប៊ី (ស៊ីរីលីក) ក្នុង %PRODUCTNAME %PRODUCTVERSION"
 
 #: source/ooo/module_langpack.ulf#STR_NAME_MODULE_LANGPACK_SR
 msgid  "Serbian (Cyrillic)"
@@ -1365,7 +1365,7 @@ msgstr "សែប៊ី (ស៊ីរីលីក)"
 
 #: source/ooo/module_langpack.ulf#STR_DESC_MODULE_LANGPACK_SR
 msgid  "Installs Serbian (Cyrillic) support in %PRODUCTNAME %PRODUCTVERSION"
-msgstr ""
+msgstr "ដំឡើង​ការ​គាំទ្រ​ភាសា​សែប៊ី (ស៊ីរីលីក) ក្នុង %PRODUCTNAME %PRODUCTVERSION"
 
 #: source/ooo/module_langpack.ulf#STR_NAME_MODULE_LANGPACK_BS
 msgid  "Bosnian"
@@ -1461,7 +1461,7 @@ msgstr "នដិបិលិ ខាង​ត្បូង"
 
 #: source/ooo/module_langpack.ulf#STR_DESC_MODULE_LANGPACK_NR
 msgid  "Installs Ndebele South support in %PRODUCTNAME %PRODUCTVERSION"
-msgstr ""
+msgstr "ដំឡើង​ការ​គាំទ្រ​ភាសា នដិបិលិ ខាង​ត្បូង ក្នុង %PRODUCTNAME %PRODUCTVERSION"
 
 #: source/ooo/module_langpack.ulf#STR_NAME_MODULE_LANGPACK_SS
 msgid  "Swazi"
@@ -1493,7 +1493,7 @@ msgstr "​​ម៉ាឡេស៊ី (ម៉ាឡេស៊ី)"
 
 #: source/ooo/module_langpack.ulf#STR_DESC_MODULE_LANGPACK_MS
 msgid  "Installs Malay (Malaysian) support in %PRODUCTNAME %PRODUCTVERSION"
-msgstr ""
+msgstr "ដំឡើង​ការ​គាំទ្រ​ភាសា ម៉ាឡេស៊ី (ម៉ាឡេស៊ី) ក្នុង %PRODUCTNAME %PRODUCTVERSION"
 
 #: source/ooo/module_langpack.ulf#STR_NAME_MODULE_LANGPACK_TG
 msgid  "Tajik"
@@ -1501,7 +1501,7 @@ msgstr "តាដហ្ស៊ីគីស្តង់"
 
 #: source/ooo/module_langpack.ulf#STR_DESC_MODULE_LANGPACK_TG
 msgid  "Installs Tajik support in %PRODUCTNAME %PRODUCTVERSION"
-msgstr ""
+msgstr "ដំឡើង​ការ​គាំទ្រ​ភាសា តាដហ្ស៊ីគីស្តង់ ក្នុង %PRODUCTNAME %PRODUCTVERSION"
 
 #: source/ooo/module_langpack.ulf#STR_NAME_MODULE_LANGPACK_KU
 msgid  "Kurdish"
@@ -1549,7 +1549,7 @@ msgstr "ភាសា​អង់គ្លេស (អាហ្វ្រិក​�
 
 #: source/ooo/module_langpack.ulf#STR_DESC_MODULE_LANGPACK_EN_ZA
 msgid  "Installs English (South Africa) support in %PRODUCTNAME %PRODUCTVERSION"
-msgstr ""
+msgstr "ដំឡើង​ការគាំទ្រ​ភាសា​អង់គ្លេស (អាហ្វ្រិក​ខាង​ត្បូង) នៅ​ក្នុង %PRODUCTNAME %PRODUCTVERSION"
 
 #: source/ooo/module_langpack.ulf#STR_NAME_MODULE_LANGPACK_EN_GB
 msgid  "English (United Kingdom)"
@@ -1557,7 +1557,7 @@ msgstr "ភាសា​អង់គ្លេស (ចក្រភពអង់គ�
 
 #: source/ooo/module_langpack.ulf#STR_DESC_MODULE_LANGPACK_EN_GB
 msgid  "Installs English (United Kingdom) support in %PRODUCTNAME %PRODUCTVERSION"
-msgstr ""
+msgstr "ដំឡើង​ការ​គាំទ្រ​ភាសា​អង់គ្លេស (ចក្រភពអង់គ្លេស) នៅ​ក្នុង %PRODUCTNAME %PRODUCTVERSION"
 
 #: source/ooo/module_langpack.ulf#STR_NAME_MODULE_LANGPACK_UR_IN
 msgid  "Urdu"
@@ -1669,7 +1669,7 @@ msgstr "Python-UNO Bridge"
 
 #: source/python/module_python.ulf#STR_DESC_MODULE_OPTIONAL_PYTHON
 msgid  "Adds the ability to automate %PRODUCTNAME with the python scripting language. See http://udk.openoffice.org/python/python-bridge.html for a complete documentation."
-msgstr ""
+msgstr "បន្ថែម​​លទ្ធភាព​ដើម្បី​ធ្វើ​ឲ្យ​​ %PRODUCTNAME ដើរ​ដោយ​ស្វ័យប្រវត្តិ​​ជាមួយ​​​នឹងភាសា​​​​ស្គ្រីប python ។ចំពោះ​​​ឯកសារ​​ពេញលេញសូម មើល http://udk.openoffice.org/python/python-bridge.htm  ។"
 
 #: source/quickstart/module_quickstart.ulf#STR_NAME_MODULE_OPTIONAL_QUICKSTART
 msgid  "Quickstarter"
@@ -1677,7 +1677,7 @@ msgstr "អ្នក​ចាប់​ផ្តើម​រហ័ស​"
 
 #: source/quickstart/module_quickstart.ulf#STR_DESC_MODULE_OPTIONAL_QUICKSTART
 msgid  "Loads basic components on system start to accelerate start up time of %PRODUCTNAME %PRODUCTVERSION."
-msgstr ""
+msgstr "ផ្ទុក​សមាសភាគ​មូលដ្ឋាន​នៅពេល​​ប្រព័ន្ធ​​ចាប់​ផ្តើម​ ដើម្បី​ពន្លឿន​ពេល​វេលា​របស់​ %PRODUCTNAME %PRODUCTVERSION ។"
 
 #: source/sdkoo/module_sdkoo.ulf#STR_NAME_MODULE_OPTIONAL_SDKOO
 msgid  "Software Development Kit (SDK)"
@@ -1685,7 +1685,7 @@ msgstr "កម្មវិធី​អភិវឌ្ឍន៍ (Software Develop
 
 #: source/sdkoo/module_sdkoo.ulf#STR_DESC_MODULE_OPTIONAL_SDKOO
 msgid  "The SDK provides all necessary tools, examples and documentation to program with and for the office."
-msgstr ""
+msgstr "SDK ផ្ដល់​នូវ​ឧបករណ៍​ចាំបាច់​ទាំងអស់ ឧទាហរណ៍ និង​ឯកសារ​ដែល​មាន​ជាមួយ​កម្មវិធី និង​សម្រាប់​ការិយាល័យ ។"
 
 #: source/winexplorerext/module_winexplorerext.ulf#STR_NAME_MODULE_OPTIONAL_WINDOWS_EXPLORER_EXTENSIONS
 msgid  "Windows Explorer Extension"
@@ -1693,7 +1693,7 @@ msgstr "ផ្នែក​បន្ថែម​វីនដូ Explorer"
 
 #: source/winexplorerext/module_winexplorerext.ulf#STR_DESC_MODULE_OPTIONAL_WINDOWS_EXPLORER_EXTENSIONS
 msgid  "Enables the Microsoft Windows Explorer to show information about %PRODUCTNAME documents, such as thumbnail previews."
-msgstr ""
+msgstr "អនុញ្ញាត​ឲ្យ​ម៉ៃក្រូសូហ្វវីនដូ Explorer ​បង្ហាញ​ព័ត៌មាន​អំពី​ឯកសារ​របស់ %PRODUCTNAME ដូចជា​ការ​មើល​រូបភាព​តូច​ជា​មុន ។"
 
 #: source/writer/folderitem_writer.ulf#STR_FI_NAME_HTMLDOKUMENT
 msgid  "HTML Document"
@@ -1705,7 +1705,11 @@ msgstr "ឯកសារ​​អត្ថបទ"
 
 #: source/writer/folderitem_writer.ulf#STR_FI_TOOLTIP_WRITER
 msgid  "Create and edit text and graphics in letters, reports, documents and Web pages by using Writer."
-msgstr ""
+msgstr "បង្កើត និង​កែ​សម្រួល​អត្ថបទ និង​ក្រាហ្វិក​ជា​លក្ខណៈ​សំបុត្រ របាយការណ៍ ឯកសារ និង​ទំព័រ​បណ្តាញ​ដោយ​ប្រើ Writer ។"
+
+#: source/writer/registryitem_writer.ulf#STR_REG_VAL_NEW
+msgid  "&New"
+msgstr "ថ្មី"
 
 #: source/writer/registryitem_writer.ulf#STR_REG_VAL_SO60_TEXT
 msgid  "%SXWFORMATNAME %SXWFORMATVERSION Text Document"
@@ -1755,17 +1759,13 @@ msgstr "ពុម្ព Microsoft Word"
 msgid  "Rich Text Document"
 msgstr "ឯកសារ​អត្ថបទ​សម្បូរ​បែប"
 
-#: source/writer/registryitem_writer.ulf#STR_REG_VAL_NEW
-msgid  "&New"
-msgstr "ថ្មី"
-
 #: source/writer/module_writer.ulf#STR_NAME_MODULE_PRG_WRT
 msgid  "%PRODUCTNAME Writer"
 msgstr "%PRODUCTNAME Writer"
 
 #: source/writer/module_writer.ulf#STR_DESC_MODULE_PRG_WRT
 msgid  "Create and edit text and graphics in letters, reports, documents and Web pages by using %PRODUCTNAME Writer."
-msgstr ""
+msgstr "បង្កើត និង​កែសម្រួល​អត្ថបទ​ ហើយ​និង​ក្រាហ្វិក​នៅ​ក្នុង​សំបុត្រ របាយការណ៍ ឯកសារ និង​ទំព័រ​បណ្ដាញ​ដោយ​ប្រើ %PRODUCTNAME Writer ។"
 
 #: source/writer/module_writer.ulf#STR_NAME_MODULE_PRG_WRT_BIN
 msgid  "Program Module"

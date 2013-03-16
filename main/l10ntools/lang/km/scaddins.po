@@ -437,7 +437,7 @@ msgstr "FACTDOUBLE"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Workday.1.String.Text
 msgid  "Returns the serial number of the date before or after a specified number of workdays"
-msgstr ""
+msgstr "ត្រឡប់​លេខ​ស៊េរី​​កាលបរិច្ឆេទ​​មុន ឬ​ក្រោយ ចំនួន​ថ្ងៃ​ធ្វើការ​ដែល​បាន​បញ្ជាក់"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Workday.2.String.Text
 msgid  "Start date"
@@ -465,7 +465,7 @@ msgstr "បញ្ជី​តម្លៃ​កាលបរិច្ឆេទ​
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Yearfrac.1.String.Text
 msgid  "Returns the number of whole days between 'start date' and 'end date' as a year fraction"
-msgstr ""
+msgstr "ត្រឡប់​ចំនួន​ថ្ងៃ​ទាំងអស់​រវាង​ 'កាលបរិច្ឆេទ​ចាប់ផ្តើម'​ និង​'កាលបរិច្ឆេទ​បញ្ចប់' ​ជា​ប្រភាគ​នៃ​ឆ្នាំ​"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Yearfrac.2.String.Text
 msgid  "Start date"
@@ -493,7 +493,7 @@ msgstr "មូលដ្ឋាន​ សម្រាប់​កំណត់​�
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Edate.1.String.Text
 msgid  "Returns the serial number of the date that is a specified number of months before or after the start date"
-msgstr ""
+msgstr "ត្រឡប់​លេខ​ស៊េរី​នៃ​កាល​បរិច្ឆេទ​ដែល​ជា​ចំនួន​ខែ​ដែល​បាន​បញ្ជាក់ មុន ឬ​បន្ទាប់​ពី​កាលបរិច្ឆេទ​ចាប់ផ្តើម"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Edate.2.String.Text
 msgid  "Start date"
@@ -509,11 +509,11 @@ msgstr "ខែ"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Edate.5.String.Text
 msgid  "Number of months before or after the start date"
-msgstr "ចំនួន​ខែ មុន​ ឬ​ក្រោយ​កាលបរិច្ឆេទ​ចាប់ផ្តើម​"
+msgstr "ចំនួន​ខែ មុន​ ឬ​ ក្រោយ​កាលបរិច្ឆេទ​ចាប់ផ្តើម​"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Weeknum.1.String.Text
 msgid  "Returns the number of the calendar week in which the specified date occurs."
-msgstr ""
+msgstr "ត្រឡប់​ចំនួន​សប្តាហ៍​ប្រតិទិន​នៃ​កាល​បរិច្ឆេទ​ដែល​បាន​បញ្ជាក់ ។"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Weeknum.2.String.Text
 msgid  "Date"
@@ -533,7 +533,7 @@ msgstr "ចំនួន​ពី​ ១ ​ដល់ ៣​ ​​​បញ្�
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Eomonth.1.String.Text
 msgid  "Returns the serial number of the last day of the month that comes a certain number of months before or after the start date"
-msgstr ""
+msgstr "ត្រឡប់​លេខ​ស៊េរី​នៃ​ថ្ងៃ​ចុង​ក្រោយ​នៃ​ខែ ដែល​ជា​ចំនួន​ខែ​ជាក់លាក់ មុន ឬ​បន្ទាប់​ពី​កាល​បរិច្ឆេទ​ចាប់ផ្តើម"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Eomonth.2.String.Text
 msgid  "Start date"
@@ -577,7 +577,7 @@ msgstr "ថ្ងៃ​សម្រាក"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Networkdays.7.String.Text
 msgid  "List of date values representing days off (vacation, holidays, etc.)"
-msgstr ""
+msgstr "បញ្ជី​តម្លៃ​កាលបរិច្ឆេទ តំណាង​ឲ្យ​ថ្ងៃ​ឈប់​ (វិស្សមកាល ថ្ងៃ​សម្រាក​ ។ល។)"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Iseven.1.String.Text
 msgid  "Returns the value 'true' if the number is even"
@@ -613,7 +613,7 @@ msgstr "ចំនួន"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Multinomial.3.String.Text
 msgid  "Number or list of numbers for which you want the multinomial coefficient"
-msgstr ""
+msgstr "ចំនួន ​ឬ​ បញ្ជី​ចំនួន​​ដែល​អ្នក​ចង់​គណនា​រក​​មេគុណ​ពហុធា"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Seriessum.1.String.Text
 msgid  "Returns the sum of a power series"
@@ -649,7 +649,7 @@ msgstr "មេគុណ"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Seriessum.9.String.Text
 msgid  "Set of coefficients by which each successive power of the variable x is multiplied"
-msgstr ""
+msgstr "សំណុំ​​មេគុណ ដែល​ស្វ័យគុណ​បន្ត​គ្នា​នីមួយៗ​​​នៃ​អថេរ​ x ​ត្រូវ​បាន​គុណ​"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Quotient.1.String.Text
 msgid  "Returns the integer portion of a division"
@@ -1517,7 +1517,7 @@ msgstr "ឯកតា​រង្វាស់​សម្រាប់​លទ្
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Amordegrc.1.String.Text
 msgid  "Returns the prorated linear depreciation of an asset for each accounting period"
-msgstr ""
+msgstr "ត្រឡប់​ការ​រំលោះ​ជា​​បន្តបន្ទាប់​ដែល​អាច​លៃ​តាម​ចំនួន​នៃ​ទ្រព្យសកម្ម ​សម្រាប់​កំឡុង​ពេល​គណនេយ្យ​នីមួយៗ"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Amordegrc.2.String.Text
 msgid  "Cost"
@@ -1577,7 +1577,7 @@ msgstr "មូលដ្ឋាន​ឆ្នាំ​ដែល​ត្រូវ
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Amorlinc.1.String.Text
 msgid  "Returns the prorated linear depreciation of an asset for each accounting period"
-msgstr ""
+msgstr "ត្រឡប់​ការ​រំលោះ​ជា​​បន្តបន្ទាប់​ដែល​អាច​លៃ​តាម​ចំនួន​នៃ​ទ្រព្យសកម្ម ​សម្រាប់​កំឡុង​ពេល​គណនេយ្យ​នីមួយៗ"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Amorlinc.2.String.Text
 msgid  "Cost"
@@ -1637,7 +1637,7 @@ msgstr "មូលដ្ឋាន​ឆ្នាំ​ដែល​ត្រូវ
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Accrint.1.String.Text
 msgid  "Returns the accrued interest for a security that pays periodic interest"
-msgstr ""
+msgstr "ត្រឡប់​​​ប្រាក់​ការ​កើន​ឡើង សម្រាប់​មូលប័ត្រ​​ដែល​បង់​ការ​ប្រាក់​តាម​ពេល​​កំណត់"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Accrint.2.String.Text
 msgid  "Issue"
@@ -1697,7 +1697,7 @@ msgstr "មូលដ្ឋាន"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Accrintm.1.String.Text
 msgid  "Returns the accrued interest for a security that pays interest at maturity"
-msgstr ""
+msgstr "ត្រឡប់​ប្រាក់​ការ​កើន​ឡើង សម្រាប់​មូលប័ត្រ​​ដែល​បង់​ការ​ប្រាក់​នៅ​ថ្ងៃ​ដល់​កំណត់​បង់"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Accrintm.2.String.Text
 msgid  "Issue"
@@ -1741,7 +1741,7 @@ msgstr "មូលដ្ឋាន"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Received.1.String.Text
 msgid  "Returns the amount paid out at maturity for a fully invested security"
-msgstr ""
+msgstr "ត្រឡប់​ចំនួន​ត្រូវ​បង់​នៅ​ថ្ងៃ​ដល់​កំណត់​បង់ សម្រាប់​មូលប័ត្រ​ដែល​បាន​វិនិយោគ​ទាំងស្រុង"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Received.2.String.Text
 msgid  "Settlement"
@@ -1829,7 +1829,7 @@ msgstr "មូលដ្ឋាន"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Duration.1.String.Text
 msgid  "Returns the annual Macaulay duration of a security with periodic interest payments"
-msgstr ""
+msgstr "ត្រឡប់​កំឡុងពេល ​Macaulay ប្រចាំ​ឆ្នាំ របស់​មូលប័ត្រ​ដោយ​​បង់​ការ​ប្រាក់​តាម​កាលកំណត់"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Duration.2.String.Text
 msgid  "Settlement"
@@ -1901,7 +1901,7 @@ msgstr "កំឡុងពេល"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Cumprinc.1.String.Text
 msgid  "Returns the cumulative principal on a loan to be paid between two periods"
-msgstr ""
+msgstr "ត្រឡប់​ប្រាក់​ដើម​សន្សំ​លើ​ប្រាក់​កម្ចី ​ដែល​ត្រូវ​បង់​រវាង​កំឡុងពេល​ពីរ ។"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Cumprinc.2.String.Text
 msgid  "Rate"
@@ -2005,7 +2005,7 @@ msgstr "ប្រភេទ​ថ្ងៃ​ដល់​កំណត់​បង
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Price.1.String.Text
 msgid  "Returns the price per 100 currency units face value of a security that pays periodic interest"
-msgstr ""
+msgstr "ត្រឡប់​ថ្លៃ​ក្នុង​ឯកតា​តម្លៃ​សន្មត​នៃ​រូបិយប័ណ្ណ ១០០ របស់​មូលប័ត្រ​ដែល​បង់​ការ​ប្រាក់​តាម​ពេល​កំណត់"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Price.2.String.Text
 msgid  "Settlement"
@@ -2065,7 +2065,7 @@ msgstr "មូលដ្ឋាន"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Pricedisc.1.String.Text
 msgid  "Returns the price per 100 currency units face value of a discounted security"
-msgstr ""
+msgstr "ត្រឡប់​ថ្លៃ​ក្នុង​ឯកតា​តម្លៃ​​សន្មត​នៃ​រូបិយប័ណ្ណ ១០០ របស់​​មូលប័ត្រ​អប្បហារ"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Pricedisc.2.String.Text
 msgid  "Settlement"
@@ -2109,7 +2109,7 @@ msgstr "មូលដ្ឋាន"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Pricemat.1.String.Text
 msgid  "Returns the price per 100 currency units face value of a security that pays interest at maturity"
-msgstr ""
+msgstr "ត្រឡប់​ថ្លៃ​ក្នុង​ឯកតា​តម្លៃ​​សន្មត​នៃ​រូបិយប័ណ្ណ ១០០ របស់​មូលប័ត្រ​​ដែល​បង់​ការ​ប្រាក់​នៅ​ថ្ងៃ​ដល់​កំណត់​បង់"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Pricemat.2.String.Text
 msgid  "Settlement"
@@ -2161,7 +2161,7 @@ msgstr "មូលដ្ឋាន"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Mduration.1.String.Text
 msgid  "Returns the Macaulay modified duration for a security with an assumed par value of 100 currency units"
-msgstr ""
+msgstr "ត្រឡប់​កំឡុង​ពេល​ដែល​បាន​កែ​ប្រែ Macaulay សម្រាប់​​មូលប័ត្រ ដោយ​តម្លៃ​ធម្មតា​ដែល​បាន​សន្មត​នៃ​ឯកតា​រូបិយប័ណ្ណ ​១០០"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Mduration.2.String.Text
 msgid  "Settlement"
@@ -2233,7 +2233,7 @@ msgstr "កំឡុងពេល"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Dollarfr.1.String.Text
 msgid  "Converts a price expressed as a decimal into a price expressed as a fraction"
-msgstr ""
+msgstr "បម្លែង​ថ្លៃ​គិត​ជា​ទសភាគ ទៅ​ជា​ថ្លៃ​គិត​ជា​ប្រភាគ"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Dollarfr.2.String.Text
 msgid  "Decimal dollar"
@@ -2253,7 +2253,7 @@ msgstr "តួ​ចែក"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Dollarde.1.String.Text
 msgid  "Converts a price expressed as a fraction into a price expressed as a decimal"
-msgstr ""
+msgstr "បម្លែងថ្លៃ​គិត​ជា​ប្រភាគ ទៅ​ជា​ថ្លៃ​គិត​ជា​ទសភាគ"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Dollarde.2.String.Text
 msgid  "Fractional dollar"
@@ -2377,7 +2377,7 @@ msgstr "មូលដ្ឋាន"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Yieldmat.1.String.Text
 msgid  "Returns the annual yield of a security that pays interest at maturity"
-msgstr ""
+msgstr "ត្រឡប់​ចំណូល​ប្រចាំ​ឆ្នាំ​នៃ​មូលប័ត្រ​មួយ ដែល​បង់​​ការ​​ប្រាក់​​នៅ​​ថ្ងៃ​ដល់​កំណត់​បង់"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Yieldmat.2.String.Text
 msgid  "Settlement"
@@ -2457,7 +2457,7 @@ msgstr "អត្រា​អប្បហារ"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Tbillprice.1.String.Text
 msgid  "Returns the price of 100 currency units face value for a treasury bill"
-msgstr ""
+msgstr "ត្រឡប់​ថ្លៃ​ក្នុង​ឯកតា​តម្លៃសន្មត​នៃ​រូបិយប័ណ្ណ ១០០ សម្រាប់​​ប័ណ្ណ​រតនាគារ"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Tbillprice.2.String.Text
 msgid  "Settlement"
@@ -2513,7 +2513,7 @@ msgstr "ថ្លៃ"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Oddfprice.1.String.Text
 msgid  "Returns the price per $100 face value of a security with an odd first period"
-msgstr ""
+msgstr "ត្រឡប់​ថ្លៃ​ក្នុង​ឯកតា​តម្លៃសន្មត $១០០ របស់​មូលប័ត្រ​ ដោយ​កំឡុង​ពេល​ដំបូង​​សេស"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Oddfprice.2.String.Text
 msgid  "Settlement"
@@ -2545,7 +2545,7 @@ msgstr "គូប៉ុង​ដំបូង"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Oddfprice.9.String.Text
 msgid  "The first coupon date"
-msgstr "កាលបរិច្ឆេទ​គូប៉ុង​​ដំបូង"
+msgstr "កាលបរិច្ឆេទ​គូប៉ុង​ដំបូង"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Oddfprice.10.String.Text
 msgid  "Rate"
@@ -2665,7 +2665,7 @@ msgstr "មូលដ្ឋាន"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Oddlprice.1.String.Text
 msgid  "Returns the price per $100 face value of a security with an odd last period"
-msgstr ""
+msgstr "ត្រឡប់​ថ្លៃ​ក្នុង​ឯកតា​តម្លៃ​សន្មត $១០០ របស់​មូលប័ត្រ​ ដោយ​កំឡុង​ពេល​ចុង​ក្រោយ​​សេស"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Oddlprice.2.String.Text
 msgid  "Settlement"
@@ -2801,7 +2801,7 @@ msgstr "មូលដ្ឋាន"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Xirr.1.String.Text
 msgid  "Returns the internal rate of return for a non-periodic schedule of payments"
-msgstr ""
+msgstr "ត្រឡប់​អត្រា​ខាង​ក្នុង​នៃ​ការ​ត្រឡប់ សម្រាប់​ការ​បង់​ប្រាក់​តាម​តារាង​ពេល​មិន​កំណត់​មួយ"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Xirr.2.String.Text
 msgid  "Values"
@@ -2829,7 +2829,7 @@ msgstr "ការស្មាន"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Xnpv.1.String.Text
 msgid  "Returns the net present value for a non-periodic schedule of payments"
-msgstr ""
+msgstr "ត្រឡប់​តម្លៃ​បច្ចុប្បន្ន​សុទ្ធ សម្រាប់​ការ​បង់​ប្រាក់​តាម​តារាង​ពេល​មិន​កំណត់​មួយ"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Xnpv.2.String.Text
 msgid  "Rate"
@@ -2937,7 +2937,7 @@ msgstr "មូលដ្ឋាន"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Coupdays.1.String.Text
 msgid  "Returns the number of days in the coupon period containing the settlement date"
-msgstr ""
+msgstr "ត្រឡប់​ចំនួន​ថ្ងៃ​​ ក្នុង​​រយៈពេល​គូប៉ុង​ដែល​មាន​កាលបរិច្ឆេទ​ទូទាត់"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Coupdays.2.String.Text
 msgid  "Settlement"
@@ -2973,7 +2973,7 @@ msgstr "មូលដ្ឋាន"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Coupdaysnc.1.String.Text
 msgid  "Returns the number of days from the settlement date to the next coupon date"
-msgstr ""
+msgstr "ត្រឡប់​ចំនួន​ថ្ងៃ​ ចាប់​ពី​កាល​បរិច្ឆេទ​ទូទាត់​ រហូត​ដល់​កាលបរិច្ឆេទ​គូប៉ុង​បន្ទាប់"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Coupdaysnc.2.String.Text
 msgid  "Settlement"
@@ -3009,7 +3009,7 @@ msgstr "មូលដ្ឋាន"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Coupdaybs.1.String.Text
 msgid  "Returns the number of days from the beginning of the coupon period to the settlement date"
-msgstr ""
+msgstr "ត្រឡប់​ចំនួន​នៃ​ថ្ងៃ ពី​ដើម​នៃ​រយៈពេល​គូប៉ុង រហូត​ដល់​កាលបរិច្ឆេទ​ទូទាត់"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Coupdaybs.2.String.Text
 msgid  "Settlement"
@@ -3081,7 +3081,7 @@ msgstr "មូលដ្ឋាន"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Coupnum.1.String.Text
 msgid  "Returns the number of coupons payable between the settlement and maturity dates"
-msgstr ""
+msgstr "ត្រឡប់​ចំនួន​គូប៉ុង​ដែល​អាច​បង់ រវាង​កាលបរិច្ឆេទ​ទូទាត់ និង​ថ្ងៃ​ដល់​កំណត់​បង់"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Coupnum.2.String.Text
 msgid  "Settlement"
@@ -3117,7 +3117,7 @@ msgstr "មូលដ្ឋាន"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Fvschedule.1.String.Text
 msgid  "Returns the future value of the initial principal after a series of compound interest rates are applied"
-msgstr ""
+msgstr "ត្រឡប់​តម្លៃ​អនាគត​ប្រាក់​ដើម​ដំបូង ​បន្ទាប់​ពី​អនុវត្ត​ស៊េរី​នៃ​អត្រា​ការ​ប្រាក់​សមាស"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Fvschedule.2.String.Text
 msgid  "Principal"
@@ -3161,7 +3161,7 @@ msgstr "ប្រភេទ"
 
 #: source/datefunc/datefunc.src#RID_DATE_FUNCTION_DESCRIPTIONS.DATE_FUNCDESC_DiffWeeks.7.String.Text
 msgid  "Type of calculation: Type=0 means the time interval, Type=1 means calendar weeks."
-msgstr ""
+msgstr "ប្រភេទ​គណនា​ ៖ ​ប្រភេទ=0 ​មាន​ន័យ​ថា​ចន្លោះ​ពេល​ ប្រភេទ=1​ មាន​ន័យ​ថា​សប្តាហ៍​ប្រតិទិន​ ។"
 
 #: source/datefunc/datefunc.src#RID_DATE_FUNCTION_DESCRIPTIONS.DATE_FUNCDESC_DiffMonths.1.String.Text
 msgid  "Determines the number of months in a specific period."
@@ -3189,7 +3189,7 @@ msgstr "ប្រភេទ"
 
 #: source/datefunc/datefunc.src#RID_DATE_FUNCTION_DESCRIPTIONS.DATE_FUNCDESC_DiffMonths.7.String.Text
 msgid  "Type of calculation: Type=0 means the time interval, Type=1 means calendar months."
-msgstr ""
+msgstr "ប្រភេទ​គណនា​ ៖ ប្រភេទ=0​ មាន​ន័យ​ថា​ចន្លោះ​ពេល ​ប្រភេទ=1 ​មាន​ន័យ​ថា​ខែ​ប្រតិទិន​ ។"
 
 #: source/datefunc/datefunc.src#RID_DATE_FUNCTION_DESCRIPTIONS.DATE_FUNCDESC_DiffYears.1.String.Text
 msgid  "Calculates the number of years in a specific period."
@@ -3217,11 +3217,11 @@ msgstr "ប្រភេទ"
 
 #: source/datefunc/datefunc.src#RID_DATE_FUNCTION_DESCRIPTIONS.DATE_FUNCDESC_DiffYears.7.String.Text
 msgid  "Type of calculation: Type=0 means the time interval, Type=1 means calendar years."
-msgstr ""
+msgstr "ប្រភេទ​នៃ​ការ​គណនា ៖ Type=0 មាន​ន័យ​ថា​ចន្លោះ​ពេល​វេលា Type=1 មាន​ន័យ​ថា​ឆ្នាំ​ប្រតិទិន ។"
 
 #: source/datefunc/datefunc.src#RID_DATE_FUNCTION_DESCRIPTIONS.DATE_FUNCDESC_IsLeapYear.1.String.Text
 msgid  "Returns 1 (TRUE) if the date is a day of a leap year, otherwise 0 (FALSE)."
-msgstr ""
+msgstr "ត្រឡប់​ 1 ​(TRUE) ​បើ​កាលបរិច្ឆេទ​ជា​ថ្ងៃ​នៃ​ឆ្នាំ​បង្គ្រប់ ផ្សេង​ពី​នោះ​ 0 (FALSE) ។"
 
 #: source/datefunc/datefunc.src#RID_DATE_FUNCTION_DESCRIPTIONS.DATE_FUNCDESC_IsLeapYear.2.String.Text
 msgid  "Date"
@@ -3233,7 +3233,7 @@ msgstr "ថ្ងៃ​ណា​មួយ​ក្នុង​ឆ្នាំ​
 
 #: source/datefunc/datefunc.src#RID_DATE_FUNCTION_DESCRIPTIONS.DATE_FUNCDESC_DaysInMonth.1.String.Text
 msgid  "Returns the number of days of the month in which the date entered occurs"
-msgstr ""
+msgstr "ត្រឡប់​ចំនួន​ថ្ងៃ​នៃ​ខែ​របស់​កាល​បរិច្ឆេទ​ដែល​បាន​បញ្ចូល"
 
 #: source/datefunc/datefunc.src#RID_DATE_FUNCTION_DESCRIPTIONS.DATE_FUNCDESC_DaysInMonth.2.String.Text
 msgid  "Date"
@@ -3245,7 +3245,7 @@ msgstr "ថ្ងៃ​ណា​មួយ​ក្នុង​ខែ​ដែល
 
 #: source/datefunc/datefunc.src#RID_DATE_FUNCTION_DESCRIPTIONS.DATE_FUNCDESC_DaysInYear.1.String.Text
 msgid  "Returns the number of days of the year in which the date entered occurs."
-msgstr ""
+msgstr "ត្រឡប់​ចំនួន​ថ្ងៃ​នៃ​ឆ្នាំ​របស់​កាល​បរិច្ឆេទ​ដែល​បាន​បញ្ចូល ។"
 
 #: source/datefunc/datefunc.src#RID_DATE_FUNCTION_DESCRIPTIONS.DATE_FUNCDESC_DaysInYear.2.String.Text
 msgid  "Date"
@@ -3257,7 +3257,7 @@ msgstr "ថ្ងៃ​ណា​មួយ​ក្នុង​ឆ្នាំ​
 
 #: source/datefunc/datefunc.src#RID_DATE_FUNCTION_DESCRIPTIONS.DATE_FUNCDESC_WeeksInYear.1.String.Text
 msgid  "Returns the number of weeks of the year in which the date entered occurs"
-msgstr ""
+msgstr "ត្រឡប់​ចំនួន​សប្តាហ៍​នៃ​ឆ្នាំ​របស់​កាល​បរិច្ឆេទ​ដែល​បាន​បញ្ចូល"
 
 #: source/datefunc/datefunc.src#RID_DATE_FUNCTION_DESCRIPTIONS.DATE_FUNCDESC_WeeksInYear.2.String.Text
 msgid  "Date"

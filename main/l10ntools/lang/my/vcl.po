@@ -136,6 +136,10 @@ msgid  "km"
 msgstr "ကီလိုမီတာ"
 
 #: source/src/units.src#SV_FUNIT_STRINGS.FUNIT_TWIP.ItemList.item
+msgid  "twips"
+msgstr "တွစ်များ"
+
+#: source/src/units.src#SV_FUNIT_STRINGS.FUNIT_TWIP.ItemList.item
 msgid  "twip"
 msgstr "တွစ်"
 
@@ -148,31 +152,15 @@ msgid  "pi"
 msgstr "ပိုင်"
 
 #: source/src/units.src#SV_FUNIT_STRINGS.FUNIT_INCH.ItemList.item
-msgid  "inch"
-msgstr "လက်မ"
-
-#: source/src/units.src#SV_FUNIT_STRINGS.FUNIT_FOOT.ItemList.item
-msgid  "feet"
-msgstr "ပေများ"
-
-#: source/src/units.src#SV_FUNIT_STRINGS.FUNIT_MILE.ItemList.item
-msgid  "mile"
-msgstr "မိုင်"
-
-#: source/src/units.src#SV_FUNIT_STRINGS.FUNIT_PERCENT.ItemList.item
-msgid  "%"
-msgstr "ရာခိုင်နှုန်း"
-
-#: source/src/units.src#SV_FUNIT_STRINGS.FUNIT_TWIP.ItemList.item
-msgid  "twips"
-msgstr "တွစ်များ"
-
-#: source/src/units.src#SV_FUNIT_STRINGS.FUNIT_INCH.ItemList.item
-msgid  """
-msgstr ""
+msgid  "\""
+msgstr "\""
 
 #: source/src/units.src#SV_FUNIT_STRINGS.FUNIT_INCH.ItemList.item
 msgid  "in"
+msgstr "လက်မ"
+
+#: source/src/units.src#SV_FUNIT_STRINGS.FUNIT_INCH.ItemList.item
+msgid  "inch"
 msgstr "လက်မ"
 
 #: source/src/units.src#SV_FUNIT_STRINGS.FUNIT_FOOT.ItemList.item
@@ -187,13 +175,25 @@ msgstr "ပေ"
 msgid  "foot"
 msgstr "ပေ"
 
+#: source/src/units.src#SV_FUNIT_STRINGS.FUNIT_FOOT.ItemList.item
+msgid  "feet"
+msgstr "ပေများ"
+
 #: source/src/units.src#SV_FUNIT_STRINGS.FUNIT_MILE.ItemList.item
 msgid  "miles"
 msgstr "မိုင်များ"
 
+#: source/src/units.src#SV_FUNIT_STRINGS.FUNIT_MILE.ItemList.item
+msgid  "mile"
+msgstr "မိုင်"
+
+#: source/src/units.src#SV_FUNIT_STRINGS.FUNIT_PERCENT.ItemList.item
+msgid  "%"
+msgstr "ရာခိုင်နှုန်း"
+
 #: source/src/stdtext.src#SV_STDTEXT_SERVICENOTAVAILABLE.String.Text
 msgid  "The component (%s) could not be loaded.\nPlease start setup with the repair option."
-msgstr ""
+msgstr "(%s)အစိတ်အပိုင်းများမဆွဲတင်နိုင်ပါ။\nရွေးပိုင်ခွင့်များပြုပြင်မှုနှင့်အတူ စတင်လုပ်ဆောင်ပါ။"
 
 #: source/src/stdtext.src#SV_STDTEXT_DONTHINTAGAIN.String.Text
 msgid  "Do not show this information again."
@@ -213,11 +213,11 @@ msgstr "ဗားရှင်းပုံစံအမှား"
 
 #: source/src/stdtext.src#SV_ACCESSERROR_BRIDGE_MSG.String.Text
 msgid  "%PRODUCTNAME %PRODUCTVERSION requires a Java Access Bridge 1.0.3 or later version to support accessibility."
-msgstr ""
+msgstr "%PRODUCTNAME %PRODUCTVERSION အနေဖြင့် Java Access Bridge 1.0.3 တစ်ခုလိုအပ်သည်။ (သို့) ရယူသုံးစွဲခွင့်များကို အထောက်အကူပြုရန် နောက်ထပ်ဗားရှင်းတစ်ခုလိုအပ်သည်။"
 
 #: source/src/stdtext.src#SV_ACCESSERROR_OK_CANCEL_MSG.String.Text
 msgid  "Click '%OK' to start %PRODUCTNAME %PRODUCTVERSION without accessibility support, or click '%CANCEL' to exit %PRODUCTNAME %PRODUCTVERSION."
-msgstr ""
+msgstr "သုံးခွင့်ရသောအထောက်အပံ့မရှိဘဲ %PRODUCTNAME %PRODUCTVERSION  ကို စရန် '%OK'  ကို ကလစ်နှိပ်ပါ။  ၎င်းမှထွက်ရန် '%CANCEL' ကို ကလစ်နှိပ်ပါ။"
 
 #: source/src/stdtext.src#SV_ACCESSERROR_MISSING_BRIDGE.String.Text
 msgid  "No Java Access Bridge"
@@ -229,7 +229,7 @@ msgstr "ဂျာဗားထည့်သွင်းမှုပြုစဉ်
 
 #: source/src/stdtext.src#SV_ACCESSERROR_JAVA_MSG.String.Text
 msgid  "%PRODUCTNAME %PRODUCTVERSION requires Java 1.4.0_02 or later version to support accessibility."
-msgstr ""
+msgstr "%PRODUCTNAME %PRODUCTVERSION အနေဖြင့် Java Access Bridge 1.0.3 တစ်ခုလိုအပ်သည်။ (သို့) ရယူသုံးစွဲခွင့်များကို အထောက်အကူပြုရန် နောက်ထပ်ဗားရှင်းတစ်ခုလိုအပ်သည်။"
 
 #: source/src/stdtext.src#SV_ACCESSERROR_MISSING_JAVA.String.Text
 msgid  "No Java Installation"
@@ -261,7 +261,7 @@ msgstr "ဦးစားပေးများ..."
 
 #: source/src/stdtext.src#SV_EDIT_WARNING_BOX.WarningBox.Message
 msgid  "The inserted text exceeded the maximum length of this text field. The text was truncated."
-msgstr ""
+msgstr "ဤစာသားနေရာကွက်တွင် ထည့်သွင်းထားသည့် စာသားသည် အများဆုံးလက်ခံနိုင်သည့် ပမာဏထက်ကျော်လွန်နေသည်။ စာသားတုံးတိ ဖြစ်နေသည်။ "
 
 #: source/src/stdtext.src#SV_MAC_SCREENNNAME.String.Text
 msgid  "Screen %d"

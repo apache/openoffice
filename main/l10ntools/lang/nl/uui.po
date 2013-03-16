@@ -85,7 +85,7 @@ msgstr "Wachtwoord invoeren"
 
 #: source/passworddlg.src#DLG_UUI_PASSWORD.STR_PASSWORD_MISMATCH.String.Text
 msgid  "The confirmation password did not match the password. Set the password again by entering the same password in both boxes."
-msgstr ""
+msgstr "Het wachtwoord voor bevestiging komt niet overeen met het wachtwoord. Stel het wachtwoord opnieuw in door hetzelfde wachtwoord in beide vakken in te voeren."
 
 #: source/trylater.src#STR_TRYLATER_TITLE.String.Text
 msgid  "Document in Use"
@@ -93,7 +93,7 @@ msgstr "Document in gebruik"
 
 #: source/trylater.src#STR_TRYLATER_MSG.String.Text
 msgid  "Document file '$(ARG1)' is locked for editing by:\n\n$(ARG2)\n\nTry again later to save document or save a copy of that document.\n\n"
-msgstr ""
+msgstr "Documentbestand '$(ARG1)' is vergrendeld voor bewerking door:\n\n$(ARG2)\n\nProbeer het document later op te slaan of sla een kopie van dat document op.\n\n"
 
 #: source/trylater.src#STR_TRYLATER_RETRYSAVING_BTN.String.Text
 msgid  "~Retry Saving"
@@ -137,7 +137,7 @@ msgstr "Het doel bestaat reeds."
 
 #: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_IO_MODULESIZEEXCEEDED & ERRCODE_RES_MASK).String.Text
 msgid  "You are about to save/export a password protected basic library containing module(s) \n$(ARG1)\nwhich are too large to store in binary format. If you wish users that don't have access to the library password to be able to run macros in those module(s) you must split those modules into a number of smaller modules. Do you wish to continue to save/export this library?"
-msgstr ""
+msgstr "U staat op het punt een met een wachtwoord beveiligde BASIC-bibliotheek op te slaan/te exporteren met modules \n$(ARG1)\ndie te groot zijn om in binaire indeling op te slaan. Wilt u dat gebruikers die geen toegang tot het wachtwoord van de bibliotheek hebben, macro's in die module(s) kunnen uitvoeren, dan moet u die modules in een aantal kleinere modules opsplitsen. Wilt u verdergaan met het opslaan/exporteren van deze bibliotheek?"
 
 #: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_IO_BADCRC & ERRCODE_RES_MASK).String.Text
 msgid  "The data from $(ARG1) has an incorrect checksum."
@@ -173,7 +173,7 @@ msgstr "$(ARG1) is niet gereed."
 
 #: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_IO_NOTSAMEDEVICE & ERRCODE_RES_MASK).String.Text
 msgid  "Action impossible: $(ARG1) and $(ARG2) are different devices (drives)."
-msgstr ""
+msgstr "Deze handeling kan niet worden uitgevoerd: $(ARG1) en $(ARG2) zijn verschillende apparaten (stations)."
 
 #: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_IO_GENERAL & ERRCODE_RES_MASK).String.Text
 msgid  "General input/output error while accessing $(ARG1)."
@@ -181,7 +181,7 @@ msgstr "Algemene in-/uitvoerfout bij toegang tot $(ARG1)."
 
 #: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_IO_INVALIDACCESS & ERRCODE_RES_MASK).String.Text
 msgid  "An attempt was made to access $(ARG1) in an invalid way."
-msgstr ""
+msgstr "Er is een poging gedaan op ongeldige wijze toegang te verkrijgen tot $(ARG1)."
 
 #: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_IO_INVALIDCHAR & ERRCODE_RES_MASK).String.Text
 msgid  "$(ARG1) contains invalid characters."
@@ -201,7 +201,7 @@ msgstr "De bewerking op $(ARG1) is met een ongeldige parameter gestart."
 
 #: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_IO_ISWILDCARD & ERRCODE_RES_MASK).String.Text
 msgid  "The operation cannot be performed because $(ARG1) contains wildcards."
-msgstr ""
+msgstr "Deze bewerking kan niet worden uitgevoerd omdat $(ARG1) jokertekens bevat."
 
 #: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_IO_LOCKVIOLATION & ERRCODE_RES_MASK).String.Text
 msgid  "Error during shared access to $(ARG1)."
@@ -225,7 +225,7 @@ msgstr "Het pad $(ARG1) bestaat niet."
 
 #: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_IO_NOTSUPPORTED & ERRCODE_RES_MASK).String.Text
 msgid  "The operation on $(ARG1) is not supported on this operating system."
-msgstr ""
+msgstr "De bewerking op $(ARG1) wordt niet ondersteund door het gebruikte besturingssysteem."
 
 #: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_IO_NOTADIRECTORY & ERRCODE_RES_MASK).String.Text
 msgid  "$(ARG1) is not a directory."
@@ -241,15 +241,15 @@ msgstr "Op $(ARG1) is geen ruimte meer beschikbaar."
 
 #: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_IO_TOOMANYOPENFILES & ERRCODE_RES_MASK).String.Text
 msgid  "The operation on $(ARG1) cannot be performed because too many files are already open."
-msgstr ""
+msgstr "De bewerking op $(ARG1) kan niet worden uitgevoerd omdat er te veel bestanden geopend zijn."
 
 #: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_IO_OUTOFMEMORY & ERRCODE_RES_MASK).String.Text
 msgid  "The operation on $(ARG1) cannot be performed because there is no more memory available."
-msgstr ""
+msgstr "De bewerking op $(ARG1) kan niet worden uitgevoerd omdat er niet voldoende geheugen beschikbaar is."
 
 #: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_IO_PENDING & ERRCODE_RES_MASK).String.Text
 msgid  "The operation on $(ARG1) cannot continue because more data is pending."
-msgstr ""
+msgstr "De bewerking op $(ARG1) kan niet worden voortgezet omdat er nog meer gegevens in behandeling zijn."
 
 #: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_IO_RECURSIVE & ERRCODE_RES_MASK).String.Text
 msgid  "$(ARG1) cannot be copied into itself."
@@ -289,11 +289,11 @@ msgstr "De beschikbare Java-versie $(ARG1) wordt niet ondersteund."
 
 #: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_WRONGJAVA_MIN & ERRCODE_RES_MASK).String.Text
 msgid  "The installed Java version is not supported, at least version $(ARG1) is required."
-msgstr ""
+msgstr "De beschikbare Java-versie wordt niet ondersteund. U hebt minimaal versie $(ARG1) nodig."
 
 #: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_WRONGJAVA_VERSION_MIN & ERRCODE_RES_MASK).String.Text
 msgid  "The installed Java version $(ARG1) is not supported, at least version $(ARG2) is required."
-msgstr ""
+msgstr "De beschikbare Java-versie $(ARG1) wordt niet ondersteund. U hebt minimaal versie $(ARG2) nodig."
 
 #: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_BADPARTNERSHIP & ERRCODE_RES_MASK).String.Text
 msgid  "The data associated with the partnership is corrupted."
@@ -301,7 +301,7 @@ msgstr "De gegevens die bij de relatie zijn opgeslagen, zijn defect."
 
 #: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_BADPARTNERSHIP_NAME & ERRCODE_RES_MASK).String.Text
 msgid  "The data associated with the partnership $(ARG1) is corrupted."
-msgstr ""
+msgstr "De gegevens die bij de relatie $(ARG1) zijn opgeslagen, zijn beschadigd."
 
 #: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_IO_NOTREADY_VOLUME & ERRCODE_RES_MASK).String.Text
 msgid  "Volume $(ARG1) is not ready."
@@ -325,31 +325,31 @@ msgstr "Object kan niet in map $(ARG1) worden gemaakt."
 
 #: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_IO_UNSUPPORTEDOVERWRITE & ERRCODE_RES_MASK).String.Text
 msgid  "%PRODUCTNAME cannot keep files from being overwritten when this transmission protocol is used. Do you want to continue anyway?"
-msgstr ""
+msgstr "%PRODUCTNAME kan er niet voor zorgen dat bestanden niet worden overschreven, wanneer dit transmissieprotocol wordt gebruikt. Wilt u toch doorgaan?"
 
 #: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_IO_BROKENPACKAGE & ERRCODE_RES_MASK).String.Text
 msgid  "The file '$(ARG1)' is corrupt and therefore cannot be opened. %PRODUCTNAME can try to repair the file.\n\nThe corruption could be the result of document manipulation or of structural document damage due to data transmission.\n\nWe recommend that you do not trust the content of the repaired document.\nExecution of macros is disabled for this document.\n\nShould %PRODUCTNAME repair the file?\n"
-msgstr ""
+msgstr "Het bestand $(ARG1) is beschadigd en kan daarom niet worden geopend. %PRODUCTNAME kan proberen het bestand te repareren.\n\nDe beschadiging kan het resultaat zijn van het manipuleren van het document of van structurele schade aan het document tijdens de gegevensoverdracht.\n\nWe raden u aan om de inhoud van het gerepareerde document niet te vertrouwen.\nHet uitvoeren van macro's is voor dit document uitgeschakeld.\n\nMoet %PRODUCTNAME het bestand repareren?\n"
 
 #: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_IO_BROKENPACKAGE_CANTREPAIR & ERRCODE_RES_MASK).String.Text
 msgid  "The file '$(ARG1)' could not be repaired and therefore cannot be opened."
-msgstr ""
+msgstr "Het bestand $(ARG1) kan niet gerepareerd worden en daarom ook niet geopend worden."
 
 #: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_CONFIGURATION_BROKENDATA_NOREMOVE & ERRCODE_RES_MASK).String.Text
 msgid  "Configuration data in '$(ARG1)' is corrupted. Without this data some functions may not operate correctly.\nDo you want to continue startup of %PRODUCTNAME without the corrupted configuration data?"
-msgstr ""
+msgstr "Configuratiegegevens in '$(ARG1)' zijn beschadigd. Het kan zijn dat sommige functies niet goed werken zonder deze gegevens.\nWilt u %PRODUCTNAME toch starten zonder de beschadigde configuratiegegevens?"
 
 #: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_CONFIGURATION_BROKENDATA_WITHREMOVE & ERRCODE_RES_MASK).String.Text
 msgid  "The personal configuration file '$(ARG1)' is corrupted and must be deleted to continue. Some of your personal settings may be lost.\nDo you want to continue startup of %PRODUCTNAME without the corrupted configuration data?"
-msgstr ""
+msgstr "Het persoonlijke-configuratiebestand $(ARG1) is beschadigd en moet verwijderd worden om verder te kunnen gaan. Enkele persoonlijke instellingen kunnen verloren gaan.\nWilt u %PRODUCTNAME toch starten zonder de beschadigde configuratiegegevens?"
 
 #: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_CONFIGURATION_BACKENDMISSING & ERRCODE_RES_MASK).String.Text
 msgid  "The configuration data source '$(ARG1)' is unavailable. Without this data some functions may not operate correctly."
-msgstr ""
+msgstr "De configuratiegegevensbron $(ARG1) is niet beschikbaar. Het kan zijn dat sommige functies niet goed werken zonder deze gegevens."
 
 #: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_CONFIGURATION_BACKENDMISSING_WITHRECOVER & ERRCODE_RES_MASK).String.Text
 msgid  "The configuration data source '$(ARG1)' is unavailable. Without this data some functions may not operate correctly.\nDo you want to continue startup of %PRODUCTNAME without the missing configuration data?"
-msgstr ""
+msgstr "De configuratiegegevensbron $(ARG1) is niet beschikbaar. Het kan zijn dat sommige functies niet goed werken zonder deze gegevens.\nWilt u %PRODUCTNAME toch starten zonder de ontbrekende configuratiegegevens?"
 
 #: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_INVALID_XFORMS_SUBMISSION_DATA & ERRCODE_RES_MASK).STRING.Text
 msgid  "The form contains invalid data. Do you still want to continue?"
@@ -357,11 +357,11 @@ msgstr "Het formulier bevat ongeldige gegevens. Wilt u toch verdergaan?"
 
 #: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_LOCKING_LOCKED & ERRCODE_RES_MASK).String.Text
 msgid  "The file $(ARG1) is locked by another user. Currently, another write access to this file cannot be granted."
-msgstr ""
+msgstr "Het bestand $(ARG1) is vergrendeld door een andere gebruiker. Momenteel kunnen geen schrijfrechten voor dit bestand worden toegekend."
 
 #: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_LOCKING_LOCKED_SELF & ERRCODE_RES_MASK).String.Text
 msgid  "The file $(ARG1) is locked by yourself. Currently, another write access to this file cannot be granted."
-msgstr ""
+msgstr "Het bestand $(ARG1) is door uzelf vergrendeld. Momenteel kunnen geen schrijfrechten voor dit bestand worden toegekend."
 
 #: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_LOCKING_NOT_LOCKED & ERRCODE_RES_MASK).String.Text
 msgid  "The file $(ARG1) is currently not locked by yourself."
@@ -369,23 +369,23 @@ msgstr "Het bestand $(ARG1) is momenteel niet door uzelf vergrendeld."
 
 #: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_LOCKING_LOCK_EXPIRED & ERRCODE_RES_MASK).String.Text
 msgid  "The previously obtained lock for file $(ARG1) has expired.\nThis can happen due to problems on the server managing the file lock. It cannot be guaranteed that write operations on this file will not overwrite changes done by other users!"
-msgstr ""
+msgstr "De vorige verkregen vergrendeling voor het bestand $(ARG1) is verlopen.\nDit kan gebeuren door problemen op de server die de vergrendeling voor het bestand beheert. Er kan geen garantie worden gegeven dat schrijfbewerkingen aan dit bestand geen wijzigingen, die door andere gebruikers gemaakt zijn, niet zal overschrijven!"
 
 #: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_UNKNOWNAUTH_UNTRUSTED).STRING.Text
 msgid  "Unable to verify the identity of $(ARG1) site.\n\nBefore accepting this certificate, you should examine this site's certificate carefully. Are you willing to accept this certificate for the purpose of identifying the Web site $(ARG1)?"
-msgstr ""
+msgstr "Kan de identiteit van de site $(ARG1) niet verifiëren.\n\nVoordat u dit certificaat accepteert moet u het zorgvuldig controleren. Wilt u dit certificaat accepteren voor de identificatie van de website $(ARG1)?"
 
 #: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_SSLWARN_EXPIRED_1).STRING.Text
 msgid  "$(ARG1) is a site that uses a security certificate to encrypt data during transmission, but its certificate expired on $(ARG2).\n\nYou should check to make sure that your computer's time is correct."
-msgstr ""
+msgstr "$(ARG1) is een site die een beveiligingscertificaat gebruikt om verzonden gegevens te versleutelen, maar dit certificaat is verlopen op $(ARG2).\n\nControleer of de tijd van uw computer gelijkloopt."
 
 #: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_SSLWARN_DOMAINMISMATCH_1).STRING.Text
 msgid  "You have attempted to establish a connection with $(ARG1). However, the security certificate presented belongs to $(ARG2). It is possible, though unlikely, that someone may be trying to intercept your communication with this web site.\n\nIf you suspect the certificate shown does not belong to $(ARG1), please cancel the connection and notify the site administrator.\n\nWould you like to continue anyway?"
-msgstr ""
+msgstr "U hebt geprobeerd een verbinding tot stand te brengen met $(ARG1). Het gepresenteerde beveiligingscertificaat behoort echter tot $(ARG2). Het is mogelijk, hoewel onwaarschijnlijk, dat iemand probeert uw communicatie te onderscheppen door middel van deze website.\n\nAls u vermoedt dat het getoonde certificaat niet toebehoort aan $(ARG1), verbreek dan de verbinding en meld het probleem aan de beheerder van de website.\n\nToch doorgaan?"
 
 #: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_SSLWARN_INVALID_1).STRING.Text
 msgid  "The certificate could not be validated. You should examine this site's certificate carefully.\n\nIf you suspect the certificate shown, please cancel the connection and notify the site administrator."
-msgstr ""
+msgstr "De geldigheid van het certificaat kan niet worden vastgesteld. Controleer het certificaat van deze site zorgvuldig.\n\nAls u het certificaat niet vertrouwt, verbreek dan de verbinding en meld het probleem aan de beheerder van de site."
 
 #: source/ids.src#RID_UUI_ERRHDL.(TITLE_UUI_SSLWARN_DOMAINMISMATCH).STRING.Text
 msgid  "Security Warning: Domain Name Mismatch"
@@ -413,11 +413,11 @@ msgstr "Bericht van server:"
 
 #: source/logindlg.src#DLG_UUI_LOGIN.FT_INFO_LOGIN_REQUEST.FixedText.Text
 msgid  "Enter user name and password for: \n%1"
-msgstr ""
+msgstr "Voer gebruikersnaam en wachtwoord in voor: \n%1"
 
 #: source/logindlg.src#DLG_UUI_LOGIN.STR_LOGIN_REALM.String.Text
-msgid  "Enter user name and password for: \n"%2" on %1"
-msgstr ""
+msgid  "Enter user name and password for: \n\"%2\" on %1"
+msgstr "Voer gebruikersnaam en wachtwoord in voor: \n\"%2\" op %1"
 
 #: source/logindlg.src#DLG_UUI_LOGIN.FT_LOGIN_PATH.FixedText.Text
 msgid  "~Path"
@@ -469,7 +469,7 @@ msgstr "Ver~zenden"
 
 #: source/cookiedg.src#STR_COOKIES_RECV_START.String.Text
 msgid  "The '${HOST}' server wishes to set one or more cookies.\nCookies contain information referring to certain URL classes. If %PRODUCTNAME later requests a document with a URL corresponding to the class of a previously set cookie, %PRODUCTNAME will send this information to the server. This allows a server to recognize the status of a WWW application, e.g., when shopping online.\n\nThe following Cookies should be set:\n\n"
-msgstr ""
+msgstr "Server '${HOST}' wil een of meer cookies toepassen.\nCookies zijn gegevens die betrekking hebben op bepaalde klassen van URL's. Vraagt %PRODUCTNAME later een document op met een URL-klasse die overeenkomt met de klasse van een eerder ontvangen cookie, dan wordt deze informatie naar de server verzonden. Zo kan een server de status van een WWW-toepassing onthouden (bijv. tijdens winkelen on line).\n\nDe volgende cookies zouden moeten zijn ingesteld:\n\n"
 
 #: source/cookiedg.src#STR_COOKIES_RECV_COOKIES.String.Text
 msgid  "Domain: ${DOMAIN}, Path: ${PATH}, Cookie: ${COOKIE}.\n"
@@ -481,7 +481,7 @@ msgstr "Cookieontvangst"
 
 #: source/cookiedg.src#STR_COOKIES_SEND_START.String.Text
 msgid  "%PRODUCTNAME has saved cookies for the server '${HOST}' which will be sent when requesting the document ${PATH}.\nCookies contain information which refers to certain URL classes. They are sent by some servers to %PRODUCTNAME where they are saved when certain documents are accessed. If %PRODUCTNAME loads a document that, according to the URL, corresponds to a class of one of the previously received Cookies, %PRODUCTNAME will send this information to that server. This enables a server to keep track of the status of a WWW application, e.g., when shopping online.\n\nThe following Cookies should be set:\n\n"
-msgstr ""
+msgstr "%PRODUCTNAME heeft voor server '${HOST}' cookies opgeslagen die bij het opvragen van het document ${PATH} moeten worden verzonden.\nCookies zijn gegevens die betrekking hebben op bepaalde klassen URL's. Ze worden door veel servers bij het oproepen van bepaalde documenten naar %PRODUCTNAME verzonden en daar opgeslagen. Vraagt %PRODUCTNAME later een document op met een URL-klasse die overeenkomt met een klasse van een eerder ontvangen cookie, dan wordt deze informatie door %PRODUCTNAME naar de server verzonden. Zo kunnen servers de status van een WWW-toepassing onthouden (bijv. tijdens winkelen on line).\n\nDe volgende cookies moeten worden toegepast:\n\n"
 
 #: source/cookiedg.src#STR_COOKIES_SEND_COOKIES.String.Text
 msgid  "Domain: ${DOMAIN}, Path: ${PATH}, Cookie: ${COOKIE}.\n"
@@ -501,7 +501,7 @@ msgstr "Het wachtwoord is niet juist. Het bestand kan niet worden aangepast."
 
 #: source/passworderrs.src#STR_ERROR_MASTERPASSWORD_WRONG.String.Text
 msgid  "The master password is incorrect."
-msgstr ""
+msgstr "Een foutief hoofd-wachtwoord werd ingevoerd. %PRODUCTNAME kreeg geen toegang tot de web login-informatie die is beveiligd door het hoofd-wachtwoord.\n\nOpmerking: Wachtwoorden zijn hoofdlettergevoelig en ten minste vijf tekens lang."
 
 #: source/passworderrs.src#STR_ERROR_SIMPLE_PASSWORD_WRONG.String.Text
 msgid  "The password is incorrect."
@@ -529,7 +529,7 @@ msgstr "Document in gebruik"
 
 #: source/openlocked.src#STR_OPENLOCKED_MSG.String.Text
 msgid  "Document file '$(ARG1)' is locked for editing by:\n\n$(ARG2)\n\nOpen document read-only or open a copy of the document for editing.\n\n"
-msgstr ""
+msgstr "Documentbestand '$(ARG1)' is vergrendeld voor bewerking door:\n\n$(ARG2)\n\nOpen het document alleen-lezen of open een kopie van het document om te bewerken.\n\n"
 
 #: source/openlocked.src#STR_OPENLOCKED_OPENREADONLY_BTN.String.Text
 msgid  "Open ~Read-Only"
@@ -549,7 +549,7 @@ msgstr "Document is door anderen gewijzigd"
 
 #: source/filechanged.src#STR_FILECHANGED_MSG.String.Text
 msgid  "The file has been changed since it was opened for editing in %PRODUCTNAME. Saving your version of the document will overwrite changes made by others.\n\nDo you want to save anyway?\n\n"
-msgstr ""
+msgstr "Het bestand is gewijzigd sinds het werd geopend voor bewerking in %PRODUCTNAME. Opslaan van uw versie van het document zal de wijzigingen die door anderen zijn gemaakt overschrijven.\n\nWilt u toch opslaan?\n\n"
 
 #: source/filechanged.src#STR_FILECHANGED_SAVEANYWAY_BTN.String.Text
 msgid  "~Save Anyway"
@@ -561,7 +561,7 @@ msgstr "%PRODUCTNAME Update beschikbaar"
 
 #: source/newerverwarn.src#RID_DLG_NEWER_VERSION_WARNING.FT_INFO.FixedText.Text
 msgid  "This document was created by a newer version of %PRODUCTNAME. It may contain features not supported by your current version.\n\nClick 'Update Now...' to run online update and get the latest version of %PRODUCTNAME."
-msgstr ""
+msgstr "Dit document werd gemaakt door een nieuwere versie van %PRODUCTNAME. Het kan mogelijkheden bevatten die niet worden ondersteund door uw huidige versie.\n\nKlik op 'Nu bijwerken...' om het online updaten uit te voeren en de laatste versie van %PRODUCTNAME te krijgen."
 
 #: source/newerverwarn.src#RID_DLG_NEWER_VERSION_WARNING.PB_UPDATE.PushButton.Text
 msgid  "~Update Now..."
@@ -609,7 +609,7 @@ msgstr "Handtekeningen bekijken..."
 
 #: source/secmacrowarnings.src#RID_XMLSECDLG_MACROWARN.FI_DESCR2.FixedText.Text
 msgid  "Macros may contain viruses. Disabling macros for a document is always safe. If you disable macros you may lose functionality provided by the document macros."
-msgstr ""
+msgstr "Macro's kunnen virussen bevatten. Het is altijd veilig macro's voor een document uit te schakelen. Als u macro's uitschakelt, kunt u functionaliteit verliezen die door de documentmacro's geleverd wordt."
 
 #: source/secmacrowarnings.src#RID_XMLSECDLG_MACROWARN.CB_ALWAYSTRUST.CheckBox.Text
 msgid  "Always trust macros from this source"
@@ -637,7 +637,7 @@ msgstr "Hoofdwachtwoord instellen"
 
 #: source/masterpasscrtdlg.src#DLG_UUI_MASTERPASSWORD_CRT.FT_INFOTEXT.FixedText.Text
 msgid  "Passwords for web connections are protected by a master password. You will be asked to enter it once per session, if %PRODUCTNAME retrieves a password from the protected password list."
-msgstr ""
+msgstr "Wachtwoorden voor webverbindingen worden beschermd door een hoofd-wachtwoord. U zult één maal per sessie gevraagd worden om het in te voeren, als %PRODUCTNAME een wachtwoord ophaalt uit de lijst met beveiligde wachtwoorden."
 
 #: source/masterpasscrtdlg.src#DLG_UUI_MASTERPASSWORD_CRT.FT_MASTERPASSWORD_CRT.FixedText.Text
 msgid  "~Enter password"
@@ -649,11 +649,11 @@ msgstr "Wachtwoord op~nieuw invoeren"
 
 #: source/masterpasscrtdlg.src#DLG_UUI_MASTERPASSWORD_CRT.FT_CAUTIONTEXT.FixedText.Text
 msgid  "Caution: If you forget the master password, you will be unable to access any of the information protected by it. Passwords are case-sensitive."
-msgstr ""
+msgstr "Waarschuwing: Zorg er voor dat u het hoofd-wachtwoord dat u instelt onthoudt. Als u uw hoofd-wachtwoord vergeet, zult u niet meer in staat zijn ook maar enige informatie te bereiken die er door beveiligd wordt. Wachtwoorden zijn hoofdlettergevoelig en ten minste vijf tekens lang."
 
 #: source/alreadyopen.src#STR_ALREADYOPEN_MSG.String.Text
 msgid  "Document file '$(ARG1)' is locked for editing by yourself on a different system since $(ARG2)\n\nOpen document read-only, or ignore own file locking and open the document for editing.\n\n"
-msgstr ""
+msgstr "Documentbestand '$(ARG1)' is vergrendeld tegen bewerkingen door uzelf op een ander systeem sinds $(ARG2)\n\nOpen het document als alleen-lezen, of negeer uw eigen bestandsvergrendeling en open het document voor bewerking.\n\n"
 
 #: source/alreadyopen.src#STR_ALREADYOPEN_READONLY_BTN.String.Text
 msgid  "Open ~Read-Only"
@@ -665,7 +665,7 @@ msgstr "~Openen"
 
 #: source/alreadyopen.src#STR_ALREADYOPEN_SAVE_MSG.String.Text
 msgid  "Document file '$(ARG1)' is locked for editing by yourself on a different system since $(ARG2)\n\nClose document on other system and retry saving or ignore own file locking and save current document.\n\n"
-msgstr ""
+msgstr "Documentbestand '$(ARG1)' is vergrendeld tegen bewerkingen door uzelf op een ander systeem sinds $(ARG2)\n\nSluit het document op het andere systeem en probeer het opnieuw op te slaan of negeer uw eigen bestandsvergrendeling en sla het huidige document op.\n\n"
 
 #: source/alreadyopen.src#STR_ALREADYOPEN_RETRY_SAVE_BTN.String.Text
 msgid  "~Retry Saving"
@@ -677,4 +677,4 @@ msgstr "Op~slaan"
 
 #: source/lockfailed.src#STR_LOCKFAILED_MSG.String.Text
 msgid  "The file could not be locked for exclusive access by %PRODUCTNAME, due to missing permission to create a lock file on that file location."
-msgstr ""
+msgstr "Het bestand kon niet worden vergrendeld voor exclusieve toegang door %PRODUCTNAME wegens het feit dat op die bestandslocatie de toestemming ontbrak om een vergendelingsbestand te maken."

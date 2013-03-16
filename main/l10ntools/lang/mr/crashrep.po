@@ -45,7 +45,7 @@ msgstr ""
 
 #: source/all/crashrep.ulf#%WELCOME_BODY2%
 msgid  "It's easy - just send the report without any further effort on your part by clicking 'Send' in the next dialog, or you can briefly describe how the error occurred and then click 'Send'. If you want to see the report, click the 'Show Report' button. No data will be sent if you click 'Do Not Send'.\n\n"
-msgstr ""
+msgstr "अत्यंत सोपे आहे - काहीही न करता फक्त पुढील संवादातील 'पाठवा' वर क्लिक करून किंवा दोष  घडला याचे विवरण करून मग 'पाठवा' वर क्लिक करून अहवाल पाठवा. आपणास अहवाल पहायचा असल्यास,'अहवाल दाखवा' वर क्लिक करा. आपण जर 'पाठवू नका' वर क्लिक केले तर डाटा पाठवला जाणार नाही. \n"
 
 #: source/all/crashrep.ulf#%WELCOME_BODY3%
 msgid  "Customer Privacy\nThe information gathered is limited to data concerning the state of %PRODUCTNAME% %PRODUCTVERSION% when the error occurred. Other information about passwords or document contents is not collected.\n\nThe information will only be used to improve the quality of %PRODUCTNAME% and will not be shared with third parties.\nFor more information on Apache OpenOffice's privacy policy, visit\n"
@@ -81,7 +81,7 @@ msgstr ""
 
 #: source/all/crashrep.ulf#%ENTER_TITLE%
 msgid  "Which type of document (e.g. presentation) were you using when the error occurred?"
-msgstr ""
+msgstr "दोष घडला तेव्हा आपण कोणते कागदपत्र (उदा. सादरीकरण) वापरत होता?"
 
 #: source/all/crashrep.ulf#%ALLOW_CONTACT%
 msgid  "~I allow Apache OpenOffice to contact me regarding this report."
@@ -93,7 +93,7 @@ msgstr "कृपया आपला ई-मेल पत्ता एंटर 
 
 #: source/all/crashrep.ulf#%ENTER_DESCRIPTION%
 msgid  "~How were you using %PRODUCTNAME% when the error occurred ?"
-msgstr ""
+msgstr "जेव्हा दोष घडला तेव्हा आपण %PRODUCTNAME% ला कशा प्रकारे वापरत होता (~H)?"
 
 #: source/all/crashrep.ulf#%BACK_BUTTON%
 msgid  " << ~Back"
@@ -121,23 +121,23 @@ msgstr "अहवाल यात साठवा"
 
 #: source/all/crashrep.ulf#%ERROR_MSG_SIMPLE_MAPI%
 msgid  "The error report could not be sent because the default e-mail program does not support MAPI.\n Please use a MAPI-compatible e-mail program."
-msgstr ""
+msgstr "दोष अहवाल पाठवता आला नाही कारण मूळस्थिती ई-मेल आज्ञावली MAPI ला आधार देत नाही.\nकृपया MAPI-सुसंगत ई-मेल आज्ञावलीचा उपयोग करा."
 
 #: source/all/crashrep.ulf#%ERROR_MSG_DISK_FULL%
 msgid  "The error report could not be temporarily saved and could therefore not be sent."
-msgstr ""
+msgstr "दोष अहवाल तात्पुरता जतन करता न आल्याने पाठवता आला नाही."
 
 #: source/all/crashrep.ulf#%ERROR_MSG_SENDMAIL%
 msgid  "The error report could not be sent because 'sendmail' could not be started.\nPlease check the 'sendmail' settings."
-msgstr ""
+msgstr "दोष अहवाल पाठवता आला नाही कारण 'ई-मेल पाठवा' सुरू करता आले नाही.\nकृपया 'ई-मेल पाठवा' नियंत्रणाना तपासा."
 
 #: source/all/crashrep.ulf#%ERROR_MSG_PROXY%
 msgid  "The error report could not be sent. Please check the proxy settings under 'Options' in the Error Report Tool."
-msgstr ""
+msgstr "दोष अहवाल पाठवता आला नाही. कृपया दोष अहवाल साधना खालील 'पर्याय' मधील प्रॉक्सी संरचना तपासा."
 
 #: source/all/crashrep.ulf#%ERROR_MSG_NOCONNECT%
 msgid  "The error report could not be sent because there is no Internet connection. Please check your Internet settings."
-msgstr ""
+msgstr "दोष अहवाल पाठवता आला नाही कारण इंटरनेट जुळणी नाही. कृपया आपली इंटरनेट नियंत्रणाना तपासा."
 
 #: source/all/crashrep.ulf#%OPTIONS_BUTTON%
 msgid  "~Options..."
@@ -173,7 +173,7 @@ msgstr "पोर्ट (~P)"
 
 #: source/all/crashrep.ulf#%PROXY_SETTINGS_DESCRIPTION%
 msgid  "The %PRODUCTNAME% Error Report tool needs to be connected to the Internet to be able to send error reports.\n\nCompanies often use proxy servers in conjunction with a firewall to protect the network.\n\nIf this applies to your situation, you have to specify the address and port for the server."
-msgstr ""
+msgstr "दोष अहवाल पाठविण्यासाठी %PRODUCTNAME% दोष अहवाल साधन इंटरनेटशी जोडणे आवश्यक आहे.\n\nनेटवर्कच्या सुरक्षिततेसाठी फायरवॉल बरोबर जोडण्यासाठी कंपन्या नेहमी प्रॉक्झी सर्वरचा उपयोग करतात.\n\nजर हे आपल्या परिस्थितीत लागू होत असेल तर आपणास सर्वरसाठी पत्ता आणि पोर्ट निर्देशित  करावा लागेल."
 
 #: source/all/crashrep.ulf#%SENDING_REPORT_HEADER%
 msgid  "Sending Error Report"
@@ -205,4 +205,4 @@ msgstr "दोष अहवाल साधनाला %PRODUCTNAME% प्र�
 
 #: source/all/crashrep.ulf#%MSG_PARAM_HELP_DESCRIPTION%
 msgid  "Shows this help text.\nDetailed information can be found in the Setup Guide."
-msgstr ""
+msgstr "या मदत मजकूर दाखवते.\nतपशीलवार माहिती पूर्वतयारी मार्गदर्शकातून मिळू शकेल."

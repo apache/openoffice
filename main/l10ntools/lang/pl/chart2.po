@@ -39,6 +39,10 @@ msgstr "Wybierz tytuły, legendę i ustawienia siatki"
 msgid  "Display grids"
 msgstr "Wyświetl siatki"
 
+#: source/controller/dialogs/tp_3D_SceneGeometry.src#CUSTOMUNITTEXT_DEGREE.#define.CustomUnitText
+msgid  " degrees"
+msgstr " st."
+
 #: source/controller/dialogs/tp_3D_SceneGeometry.src#TP_3D_SCENEGEOMETRY.CBX_RIGHT_ANGLED_AXES.CheckBox.Text
 msgid  "~Right-angled axes"
 msgstr "Osie pod kątem p~rostym"
@@ -58,10 +62,6 @@ msgstr "Obrót wokół osi ~Z"
 #: source/controller/dialogs/tp_3D_SceneGeometry.src#TP_3D_SCENEGEOMETRY.CBX_PERSPECTIVE.CheckBox.Text
 msgid  "~Perspective"
 msgstr "~Perspektywa"
-
-#: source/controller/dialogs/tp_3D_SceneGeometry.src#CUSTOMUNITTEXT_DEGREE.#define.CustomUnitText
-msgid  " degrees"
-msgstr " st."
 
 #: source/controller/dialogs/Strings_AdditionalControls.src#STR_3DSCHEME_SIMPLE.String.Text
 msgid  "Simple"
@@ -269,11 +269,11 @@ msgstr "Minimum musi być mniejsze niż maksimum. Sprawdź dane wejściowe."
 
 #: source/controller/dialogs/Strings_Scale.src#STR_INVALID_INTERVALS.String.Text
 msgid  "The major interval needs to be greater than the minor interval. Check your input."
-msgstr ""
+msgstr "Większy odstęp musi być większy niż mniejszy. Sprawdź dane wejściowe."
 
 #: source/controller/dialogs/Strings_Scale.src#STR_INVALID_TIME_UNIT.String.Text
 msgid  "The major and minor interval need to be greater or equal to the resolution. Check your input."
-msgstr ""
+msgstr "Większy oraz mniejszy odstęp musi być większy lub równy rozdzielczości. Sprawdź dane wejściowe."
 
 #: source/controller/dialogs/dlg_DataEditor.src#DLG_DIAGRAM_DATA.ModalDialog.Text
 msgid  "Data Table"
@@ -889,7 +889,7 @@ msgstr "Typografia azjatycka"
 
 #: source/controller/dialogs/Strings.src#STR_OBJECT_AVERAGE_LINE_WITH_PARAMETERS.String.Text
 msgid  "Mean value line with value %AVERAGE_VALUE and standard deviation %STD_DEVIATION"
-msgstr ""
+msgstr "Linia wartości średniej %AVERAGE_VALUE i odchylenie standardowe %STD_DEVIATION"
 
 #: source/controller/dialogs/Strings.src#STR_OBJECT_AXIS.String.Text
 msgid  "Axis"
@@ -1097,11 +1097,11 @@ msgstr "Wartości: %POINTVALUES"
 
 #: source/controller/dialogs/Strings.src#STR_TIP_DATAPOINT.String.Text
 msgid  "Data Point %POINTNUMBER, data series %SERIESNUMBER, values: %POINTVALUES"
-msgstr ""
+msgstr "Punkt danych %POINTNUMBER, seria danych %SERIESNUMBER,wartości: %POINTVALUES"
 
 #: source/controller/dialogs/Strings.src#STR_STATUS_DATAPOINT_MARKED.String.Text
 msgid  "Data point %POINTNUMBER in data series %SERIESNUMBER selected, values: %POINTVALUES"
-msgstr ""
+msgstr "Zaznaczono punkt danych $(PT_NUM) w wierszu $(ROW_NUM), wartość: $(VALUE)"
 
 #: source/controller/dialogs/Strings.src#STR_STATUS_OBJECT_MARKED.String.Text
 msgid  "%OBJECTNAME selected"
@@ -1153,7 +1153,7 @@ msgstr "Automatyczny układ"
 
 #: source/controller/dialogs/Strings.src#STR_ACTION_NOTPOSSIBLE.String.Text
 msgid  "This function cannot be completed with the selected objects."
-msgstr ""
+msgstr "Funkcja nie może zostać wykonana \nz zaznaczonymi obiektami."
 
 #: source/controller/dialogs/Strings.src#STR_ACTION_EDIT_TEXT.String.Text
 msgid  "Edit text"
@@ -1257,7 +1257,7 @@ msgstr "Wybierz zakres dla wskaźników błędów części ujemnej osi"
 
 #: source/controller/dialogs/Strings.src#STR_DATA_EDITOR_INCORRECT_INPUT.String.Text
 msgid  "Your last input is incorrect.\nIgnore this change and close the dialog?"
-msgstr ""
+msgstr "Ostatnie wprowadzone dane są niepoprawne.\nCzy zignorować tę zmianę i zamknąć okno dialogowe?"
 
 #: source/controller/dialogs/Strings.src#STR_TEXT_DIRECTION_LTR.String.Text
 msgid  "Left-to-right"

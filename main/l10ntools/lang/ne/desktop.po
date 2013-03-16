@@ -32,8 +32,8 @@ msgstr ""
 
 
 #: source/app/desktop.src#STR_RECOVER_QUERY.String.Text
-msgid  "Should the file "$1" be restored?"
-msgstr ""
+msgid  "Should the file \"$1\" be restored?"
+msgstr "फाइल \"$1\" लाई पूर्वावस्थामा ल्याउनु पर्दछ ?"
 
 #: source/app/desktop.src#STR_RECOVER_TITLE.String.Text
 msgid  "File Recovery"
@@ -41,15 +41,15 @@ msgstr "फाइल पुन: प्राप्ति"
 
 #: source/app/desktop.src#STR_RECOVER_PREPARED.WarningBox.Message
 msgid  "An unrecoverable error has occurred.\n\nAll modified files have been saved and can\nprobably be recovered at program restart."
-msgstr ""
+msgstr "एउटा सच्याउन नसकिने त्रुटि रहन गयो ।\n\nसबै परिमार्जित फाइल बचत  गरियो र\nसायद कार्यक्रम पुन: सुरु गर्दा सच्याउन सकिन्छ कि ।"
 
 #: source/app/desktop.src#STR_BOOTSTRAP_ERR_CANNOT_START.String.Text
 msgid  "The application cannot be started. "
 msgstr "अनुप्रयोग पुन: सुरु गर्न सकिँदैन ।"
 
 #: source/app/desktop.src#STR_BOOTSTRAP_ERR_DIR_MISSING.String.Text
-msgid  "The configuration directory "$1" could not be found."
-msgstr ""
+msgid  "The configuration directory \"$1\" could not be found."
+msgstr "कन्फिगरेसन डाइरेक्टरी \"$1\" फेला पार्न सकिएन ।"
 
 #: source/app/desktop.src#STR_BOOTSTRAP_ERR_PATH_INVALID.String.Text
 msgid  "The installation path is invalid."
@@ -64,16 +64,16 @@ msgid  "An internal error occurred."
 msgstr "एउटा आन्तरिक त्रुटि रहन गयो ।"
 
 #: source/app/desktop.src#STR_BOOTSTRAP_ERR_FILE_CORRUPT.String.Text
-msgid  "The configuration file "$1" is corrupt."
-msgstr ""
+msgid  "The configuration file \"$1\" is corrupt."
+msgstr "कन्फिगरेसन फाइल \"$1\" दूषित छ ।"
 
 #: source/app/desktop.src#STR_BOOTSTRAP_ERR_FILE_MISSING.String.Text
-msgid  "The configuration file "$1" was not found."
-msgstr ""
+msgid  "The configuration file \"$1\" was not found."
+msgstr "कन्फिगरेसन फाइल \"$1\" फेला परेन ।"
 
 #: source/app/desktop.src#STR_BOOTSTRAP_ERR_NO_SUPPORT.String.Text
-msgid  "The configuration file "$1" does not support the current version."
-msgstr ""
+msgid  "The configuration file \"$1\" does not support the current version."
+msgstr "यो कन्फिगरेसन फाइल \"$1\"  ले हालको संस्करणलाई समर्थन गर्दैन ।"
 
 #: source/app/desktop.src#STR_BOOTSTRAP_ERR_LANGUAGE_MISSING.String.Text
 msgid  "The user interface language cannot be determined."
@@ -93,11 +93,11 @@ msgstr ""
 
 #: source/app/desktop.src#STR_ASK_START_SETUP_MANUALLY.String.Text
 msgid  "Start the setup application to repair the installation from the CD or the folder containing the installation packages."
-msgstr ""
+msgstr "स्थापना मर्मत गर्नलाई सेटअप अनुप्रयोग CD बाट वा स्थापना प्याकेजहरू सम्मिलित फोल्डर सुरु गर्नुहोस् ।"
 
 #: source/app/desktop.src#STR_CONFIG_ERR_SETTINGS_INCOMPLETE.String.Text
 msgid  "The startup settings for accessing the central configuration are incomplete. "
-msgstr ""
+msgstr "केन्द्रीय कन्फिगरेसन पहुँच गर्नका लागि गरिने सुरुआत सेटिङहरू अपूर्ण छन् ।"
 
 #: source/app/desktop.src#STR_CONFIG_ERR_CANNOT_CONNECT.String.Text
 msgid  "A connection to the central configuration could not be established. "
@@ -105,19 +105,19 @@ msgstr "केन्द्रीय कन्फिगरेसनमा गर�
 
 #: source/app/desktop.src#STR_CONFIG_ERR_RIGHTS_MISSING.String.Text
 msgid  "You cannot access the central configuration because of missing access rights. "
-msgstr ""
+msgstr "तपाईँले पहुँच अधिकारहरू हराएको कारणले केन्द्रीय कन्फिगरेसन पहुँच गर्न सक्नुहुन्न ।"
 
 #: source/app/desktop.src#STR_CONFIG_ERR_ACCESS_GENERAL.String.Text
 msgid  "A general error occurred while accessing your central configuration. "
-msgstr ""
+msgstr "तपाईँले केन्द्रीय कन्फिगरेसन पहुँच गरेको बेलामा एउटा साधारण त्रुटि रहन गयो ।"
 
 #: source/app/desktop.src#STR_CONFIG_ERR_NO_WRITE_ACCESS.String.Text
 msgid  "The changes to your personal settings cannot be stored centrally because of missing access rights. "
-msgstr ""
+msgstr "तपाईँले पहुँच अधिकारहरू हराएको कारणले तपाईँको व्यक्तिगत सेटिङहरूमा गरिएको परिवर्तनहरू सङ्ग्रह गर्न सकिँदैन ।"
 
 #: source/app/desktop.src#STR_BOOTSTRAP_ERR_CFG_DATAACCESS.String.Text
 msgid  "%PRODUCTNAME cannot be started due to an error in accessing the %PRODUCTNAME configuration data.\n\nPlease contact your system administrator."
-msgstr ""
+msgstr "%PRODUCTNAME कन्फिगरेसन डेटा पहुँच गर्दा भएको एउटा त्रुटिको कारणले गर्दा %PRODUCTNAME सुरु हुन सक्तैन ।\n\nकृपया तपाईँको प्रणाली प्रशासकलाई सम्पर्क गर्नुहोस् ।"
 
 #: source/app/desktop.src#STR_INTERNAL_ERRMSG.String.Text
 msgid  "The following internal error has occurred: "
@@ -125,7 +125,7 @@ msgstr "निम्न आन्तरिक त्रुटि रहन ग�
 
 #: source/app/desktop.src#QBX_USERDATALOCKED.QueryBox.Message
 msgid  "Either another instance of %PRODUCTNAME is accessing your personal settings or your personal settings are locked.\nSimultaneous access can lead to inconsistencies in your personal settings. Before continuing, you should make sure user '$u' closes %PRODUCTNAME on host '$h'.\n\nDo you really want to continue?"
-msgstr ""
+msgstr "या %PRODUCTNAME को अर्को दृष्टान्त तपाईँको व्यक्तिगत सेटिङहरू पहुँच गर्देछ वा तपाईँका व्यक्तिगत सेटिङहरूमा ताल्चा मारिएका छन् ।\nसमकालिन पहुँचले तपाईँको व्यक्तिगत सेटिङहरूमा अवरोध ल्याउन सक्छन् । निरन्तर गर्नुभन्दा पहिले, तपाईँले प्रयोगकर्ता '$u' ले होस्ट '$h' मा  %PRODUCTNAME लाई बन्द गर्छ भन्ने कुरामा निश्चित हुनुपर्दछ ।\n\nके तपाईँले साच्चिकै जारी राख्न चाहनुहुन्छ ?"
 
 #: source/app/desktop.src#STR_TITLE_USERDATALOCKED.String.Text
 msgid  "%PRODUCTNAME %PRODUCTVERSION"
@@ -149,11 +149,11 @@ msgstr "मार्ग प्रबन्धक उपलब्ध छैन �
 
 #: source/app/desktop.src#STR_BOOSTRAP_ERR_NOTENOUGHDISKSPACE.String.Text
 msgid  "%PRODUCTNAME user installation could not be completed due to insufficient free disk space. Please free more disc space at the following location and restart %PRODUCTNAME:\n\n"
-msgstr ""
+msgstr "%PRODUCTNAME प्रयोगकर्ता स्थापना अपर्याप्त खाली डिस्क स्थानको कारणले गर्दा पूरा हुन सकेन । कृपया निम्न स्थान धेरै डिस्क खाली स्थान छोड्नुहोस् र %PRODUCTNAME पुन: सुरुआत गर्नुहोस्:\n\n"
 
 #: source/app/desktop.src#STR_BOOSTRAP_ERR_NOACCESSRIGHTS.String.Text
 msgid  "%PRODUCTNAME user installation could not be processed due to missing access rights. Please make sure that you have sufficient access rights for the following location and restart %PRODUCTNAME:\n\n"
-msgstr ""
+msgstr "%PRODUCTNAME प्रयोगकर्ता स्थापना पहुँच अधिकार हराएको कारणले गर्दा प्रक्रिया गर्न सकिएन । कृपया तपाईँसँग निम्न स्थानका लागि पर्याप्त पहुँच अधिकारहरू छ भन्ने कुरा निश्चित गर्नुहोस् र %PRODUCTNAME पुन: सुरु गर्नुहोस्:\n\n"
 
 #: source/deployment/gui/dp_gui_versionboxes.src#RID_WARNINGBOX_VERSION_LESS.WarningBox.Message
 msgid  "You are about to install version $NEW of the extension \'$NAME\'.\nThe newer version $DEPLOYED is already installed.\nClick \'OK\' to replace the installed extension.\nClick \'Cancel\' to stop the installation."
@@ -185,7 +185,7 @@ msgstr "प्रणाली निर्भरता जाँच"
 
 #: source/deployment/gui/dp_gui_dependencydialog.src#RID_DLG_DEPENDENCIES.RID_DLG_DEPENDENCIES_TEXT.FixedText.Text
 msgid  "The extension cannot be installed as the following\nsystem dependencies are not fulfilled:"
-msgstr ""
+msgstr "विस्तार स्थापना गर्न सकिँदैन जसले गर्दा\nनिम्न प्रणाली निर्भरताहरू पूरा हुन सकेन:"
 
 #: source/deployment/gui/dp_gui_dialog.src#RID_STR_ADD_PACKAGES.String.Text
 msgid  "Add Extension(s)"
@@ -273,7 +273,7 @@ msgstr "विस्तार सफ्टवेयर इजाजतपत्�
 
 #: source/deployment/gui/dp_gui_dialog.src#RID_DLG_LICENSE.FT_LICENSE_HEADER.FixedText.Text
 msgid  "Please follow these steps to proceed with the installation of the extension:"
-msgstr ""
+msgstr "विस्तारको स्थापनासँग प्रक्रिया गर्न कृपया यी चरणहरू अनुशरण गर्नुहोस्:"
 
 #: source/deployment/gui/dp_gui_dialog.src#RID_DLG_LICENSE.FT_LICENSE_BODY_1.FixedText.Text
 msgid  "1."
@@ -437,7 +437,7 @@ msgstr "नयाँ अद्यावधिकहरू उपलब्ध छ
 
 #: source/deployment/gui/dp_gui_updatedialog.src#RID_DLG_UPDATE.RID_DLG_UPDATE_NOINSTALLABLE.String.Text
 msgid  "No installable updates are available. To see ignored or disabled updates, mark the check box 'Show all updates'."
-msgstr ""
+msgstr "स्थापनायोग्य अद्यावधिकहरू उपलब्ध छैनन् । सबै अद्यावधिकहरू हेर्न, जाँच बाकस 'सबै अद्यावधिकहरू देखाउनुहोस्' मा चिन्ह लगाउनुहोस् ।"
 
 #: source/deployment/gui/dp_gui_updatedialog.src#RID_DLG_UPDATE.RID_DLG_UPDATE_FAILURE.String.Text
 msgid  "An error occurred:"
@@ -641,7 +641,7 @@ msgstr "The extension cannot be installed because:\n"
 
 #: source/deployment/registry/help/dp_help.src#RID_STR_HELPPROCESSING_XMLPARSING_ERROR.String.Text
 msgid  "The extension will not be installed because an error occurred in the Help files:\n"
-msgstr ""
+msgstr "The extension will not be installed because an error occured in the Help files:\n"
 
 #: source/deployment/registry/package/dp_package.src#RID_STR_PACKAGE_BUNDLE.String.Text
 msgid  "Extension"
@@ -672,16 +672,16 @@ msgid  "Extension Software License Agreement of $NAME:"
 msgstr "विस्तार इजाजतपत्र सम्झौता:"
 
 #: source/deployment/unopkg/unopkg.src#RID_STR_UNOPKG_ACCEPT_LIC_2.String.Text
-msgid  "Read the complete License Agreement displayed above. Accept the License Agreement by typing "yes" on the console then press the Return key. Type "no" to decline and to abort the extension setup."
-msgstr ""
+msgid  "Read the complete License Agreement displayed above. Accept the License Agreement by typing \"yes\" on the console then press the Return key. Type \"no\" to decline and to abort the extension setup."
+msgstr "माथि प्रदर्शन भएको पूरा इजाजतपत्र सम्झौता पढ्नुहोस् । कन्सोलमा \"हो\" टाइप गरेर इजाजतपत्र सम्झौता स्वीकार गर्नुहोस् र फर्कने कुञ्जी थिच्नुहोस् । विस्तार सेटअप घटाउन वा परित्याग गर्न \"होइन\" टाइप गर्नुहोस् ।"
 
 #: source/deployment/unopkg/unopkg.src#RID_STR_UNOPKG_ACCEPT_LIC_3.String.Text
-msgid  "[Enter "yes" or "no"]:"
-msgstr ""
+msgid  "[Enter \"yes\" or \"no\"]:"
+msgstr "[\"हो\" वा \"होइन\" प्रविष्ट गर्नुहोस्]:"
 
 #: source/deployment/unopkg/unopkg.src#RID_STR_UNOPKG_ACCEPT_LIC_4.String.Text
-msgid  "Your input was not correct. Please enter "yes" or "no":"
-msgstr ""
+msgid  "Your input was not correct. Please enter \"yes\" or \"no\":"
+msgstr "तपाईँको आगत सही छैन । कृपया \"हो\" वा \"होइन\" प्रविष्ट गर्नुहोस्:"
 
 #: source/deployment/unopkg/unopkg.src#RID_STR_UNOPKG_ACCEPT_LIC_YES.String.Text
 msgid  "YES"
@@ -737,11 +737,11 @@ msgstr "दर्ता"
 
 #: source/migration/wizard.src#STR_WELCOME_MIGRATION.String.Text
 msgid  "This wizard will guide you through the license agreement, the transfer of user data from %OLD_VERSION and the registration of %PRODUCTNAME.\n\nClick 'Next' to continue."
-msgstr ""
+msgstr "यो विजार्डले तपाईँले इजाजतपत्र सम्झौता, %OLD_VERSION बाट प्रयोगकर्ताको डेटाको स्थानान्तरण र %PRODUCTNAME को दर्ता मार्गदर्शन गर्दछ ।\n\nजारी राख्नका लागि 'अगाडि' मा क्लिक गर्नुहोस् ।"
 
 #: source/migration/wizard.src#STR_WELCOME_WITHOUT_LICENSE.String.Text
 msgid  "This wizard will guide you through the registration of %PRODUCTNAME.\n\nClick 'Next' to continue."
-msgstr ""
+msgstr "यो विजार्डले तपाईँलाई %PRODUCTNAME को दर्ता मार्फत मार्गदर्शन गर्नेछ ।\n\nजारी राख्न 'पछिल्लो' क्लिक गर्नुहोस् ।"
 
 #: source/migration/wizard.src#STR_FINISH.String.Text
 msgid  "~Finish"
@@ -753,7 +753,7 @@ msgstr ""
 
 #: source/migration/wizard.src#ERRBOX_REG_NOSYSBROWSER.ErrorBox.Message
 msgid  "An error occurred in starting the web browser.\nPlease check the %PRODUCTNAME and web browser settings."
-msgstr ""
+msgstr "वेब ब्राउजर सुरु गर्दा एउटा त्रुटि भयो ।\nकृपया %PRODUCTNAME र वेब ब्राउजर सेटिङहरू जाँच गर्नुहोस् ।"
 
 #: source/migration/wizard.src#QB_ASK_DECLINE.QueryBox.Message
 msgid  "Do you really want to decline?"
@@ -765,7 +765,7 @@ msgstr "%PRODUCTNAME %PRODUCTVERSION मा स्वागत छ"
 
 #: source/migration/wizard.src#TP_WELCOME.FT_WELCOME_BODY.FixedText.Text
 msgid  "This wizard will guide you through the license agreement and the registration of %PRODUCTNAME.\n\nClick 'Next' to continue."
-msgstr ""
+msgstr "यो विजार्डले तपाईँलाई इजाजतपत्र सम्झौता र %PRODUCTNAME को दर्ता मार्गदर्शन गर्नेछ ।\n\nजारी राख्नका लागि 'पछिल्लो' बटनमा क्लिक गर्नुहोस् ।"
 
 #: source/migration/wizard.src#TP_LICENSE.FT_LICENSE_HEADER.FixedText.Text
 msgid  "Please follow these steps to accept the license"
@@ -777,7 +777,7 @@ msgstr "१."
 
 #: source/migration/wizard.src#TP_LICENSE.FT_LICENSE_BODY_1_TXT.FixedText.Text
 msgid  "View the complete License Agreement. Please use the scrollbar or the '%PAGEDOWN' button in this dialog to view the entire license text."
-msgstr ""
+msgstr "सम्पूर्ण इजाजतपत्र सम्झौता हेर्नुहोस् । सम्पूर्ण इजाजतपत्र पाठ हेर्न कृपया यो संवादमा स्क्रोलपट्टी वा '%PAGEDOWN' बटन प्रयोग गर्नुहोस् ।"
 
 #: source/migration/wizard.src#TP_LICENSE.FT_LICENSE_BODY_2.FixedText.Text
 msgid  "2."
@@ -805,7 +805,7 @@ msgstr "व्यक्तिगत डेटा स्थान्तरण ग
 
 #: source/migration/wizard.src#TP_MIGRATION.FT_MIGRATION_BODY.FixedText.Text
 msgid  "Most personal data from %OLDPRODUCT installation can be reused in %PRODUCTNAME %PRODUCTVERSION.\n\nIf you do not want to reuse any settings in %PRODUCTNAME %PRODUCTVERSION, unmark the check box."
-msgstr ""
+msgstr "%OLDPRODUCT स्थापनाबाट धेरै जसो व्यक्तिगत डेटा %PRODUCTNAME %PRODUCTVERSION मा पुन: प्रयोग गर्न सकिन्छ ।\n\nयदि तपाईँले %PRODUCTNAME %PRODUCTVERSION मा कुनै पनि सेटिङहरू पुन: प्रयोग गर्न चाहनुहुन्न भने, जाँच बाकसबाट चिनो हटाउनुहोस् ।"
 
 #: source/migration/wizard.src#TP_MIGRATION.CB_MIGRATION.CheckBox.Text
 msgid  "Transfer personal data"
@@ -817,7 +817,7 @@ msgstr "अनलाइन अद्यावधिक गर्नुहोस�
 
 #: source/migration/wizard.src#TP_UPDATE_CHECK.FT_UPDATE_CHECK_BODY.FixedText.Text
 msgid  "%PRODUCTNAME searches automatically at regular intervals for new versions.\nIn doing so online update does not transfer personal data.\nAs soon as a new version is available, you will be notified.\n\nYou can configure this feature at Tools / Options... / %PRODUCTNAME / Online Update."
-msgstr ""
+msgstr "%PRODUCTNAME ले नयाँ संस्करणका लागि नियमित अन्तरालमा स्वचालित रूपमा खोजी गर्दछ ।\nसो कार्यमा अनलाइन अद्यावधिकले व्यक्तिगत डेटा स्थानान्तरण गर्दैन ।\nनयाँ संस्करण उपलब्ध हुने बित्तिकै, तपाईँलाई सूचित गरिनेछ ।\n\nतपाईँ यो विशेषतालाई उपकरण / विकल्प... / %PRODUCTNAME / अनलाइन अद्यावधिकमा कन्फिगर गर्न सक्नुहुन्छ ।"
 
 #: source/migration/wizard.src#TP_UPDATE_CHECK.CB_UPDATE_CHECK.CheckBox.Text
 msgid  "~Check for updates automatically"
@@ -829,7 +829,7 @@ msgstr "तपाईँको पूरा नाम र प्रथमाक�
 
 #: source/migration/wizard.src#TP_USER.FT_USER_BODY.FixedText.Text
 msgid  "The user name will be used in the document properties, templates and when you record changes made to documents."
-msgstr ""
+msgstr "प्रयोगकर्ता नाम कागजात गुणहरू, टेम्प्लेटहरू र तपाईँले कागजातहरूमा गरिएको परिवर्तनहरू रेकर्ड गर्दा प्रयोग हुनेछ ।"
 
 #: source/migration/wizard.src#TP_USER.FT_USER_FIRST.FixedText.Text
 msgid  "~First name"
@@ -853,7 +853,7 @@ msgstr "%PRODUCTNAME दर्ता"
 
 #: source/migration/wizard.src#TP_REGISTRATION.FT_REGISTRATION_BODY.FixedText.Text
 msgid  "You now have the opportunity to register as a %PRODUCTNAME user. Registration is voluntary and is without obligation.\n\nIf you register, we can inform you about new developments concerning this product."
-msgstr ""
+msgstr "तपाईँलाई अहिले %PRODUCTNAME को रूपमा दर्ता गर्ने अवसर छ । दर्ता स्वयंसेवी र कुनै रोकावट बिनाको काम हो ।\n\nयदि तपाईँ दर्ता गर्नुहुन्छ भने, हामीले तपाईँलाई यो उत्पादनसँग सम्बन्धित नयाँ विकासहरूको बारेमा सूचना दिन सक्छौँ ।"
 
 #: source/migration/wizard.src#TP_REGISTRATION.RB_REGISTRATION_NOW.RadioButton.Text
 msgid  "I want to register ~now"
@@ -869,7 +869,7 @@ msgstr "म दर्ता गर्न चाहन्न"
 
 #: source/migration/wizard.src#TP_REGISTRATION.FT_REGISTRATION_END.FixedText.Text
 msgid  "We hope you enjoy working with %PRODUCTNAME.\n\nTo exit the wizard, click 'Finish'."
-msgstr ""
+msgstr "तपाईँ %PRODUCTNAME सँग कार्य गर्दा रमाउनुहुनेछ भन्ने आशा हामीले गरेका छौ ।\n\nविजार्डबाट बाहिरिन 'समाप्त' बटनमा क्लिक गर्नुहोस् ।"
 
 #: win32/source/rebase/rebasegui.ulf#%APP_TITLE%
 msgid  "Installation Status"
@@ -886,6 +886,10 @@ msgstr ""
 #: win32/source/rebase/rebasegui.ulf#%MSG_NO_INSTALLATION_FOUND%
 msgid  "Cannot find Office installation."
 msgstr ""
+
+#: win32/source/setup/setup.ulf#%APP_TITLE%
+msgid  "Setup"
+msgstr "सेटअप"
 
 #: win32/source/setup/setup.ulf#%APP_PROD_TITLE%
 msgid  "The %PRODUCTNAME Setup"
@@ -905,7 +909,7 @@ msgstr "सेटअप रद्ध गरियो ।"
 
 #: win32/source/setup/setup.ulf#%REQUIRES_ADMIN_PRIV%
 msgid  "Administrator privileges are required for upgrading the Windows Installer."
-msgstr ""
+msgstr "प्रशासक विशेषाधिकारहरू सञ्झ्याल स्थापनाकर्ता अभिवृद्धि गर्नलाई आवश्यक पर्दछ ।"
 
 #: win32/source/setup/setup.ulf#%FILE_NOT_FOUND%
 msgid  "Setup was unable to find the file '%s'."
@@ -925,7 +929,7 @@ msgstr ""
 
 #: win32/source/setup/setup.ulf#%USAGE%
 msgid  "Usage:\n   /? :  Shows this dialog.\n   /a :  Performs an administrative installation.\n   /j[u|m] :  Performs an advertising installation.\n   /q[n] : Do not show any user interface (silent mode).\n"
-msgstr ""
+msgstr "उपयोगीता:\n   /? :यो संवाद देखाउँछ ।\n   /a :प्रशासनिक स्थापना सम्पादन गर्दछ । \n   /j[u|m]: प्रचार प्रसार स्थापना सम्पादन गर्दछ ।\n   /q[n]; कुनै पनि प्रयोगकर्ता ईन्टरफेस (शान्त मोड) नदेखाउनुहोस् ।\n"
 
 #: win32/source/setup/setup.ulf#%ALREADY_RUNNING%
 msgid  "There is already a setup process running."
@@ -1046,7 +1050,3 @@ msgstr "चिनिया (सरलिकृत)"
 #: win32/source/setup/setup.ulf#%LANGUAGE_PT_PT%
 msgid  "Portuguese (Portugal)"
 msgstr "पोर्चुगाली (पोर्चुगल)"
-
-#: win32/source/setup/setup.ulf#%APP_TITLE%
-msgid  "Setup"
-msgstr "सेटअप"

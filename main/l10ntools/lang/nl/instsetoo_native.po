@@ -193,7 +193,7 @@ msgstr "Resterende tijd: {[1] minuten }{[2] seconden}"
 
 #: inc_openoffice/windows/msi_languages/Error.ulf#OOO_ERROR_16
 msgid  "Out of memory. Shut down other applications before retrying."
-msgstr ""
+msgstr "Onvoldoende geheugen. Sluit andere toepassingen af en probeer het opnieuw."
 
 #: inc_openoffice/windows/msi_languages/Error.ulf#OOO_ERROR_17
 msgid  "Installer is no longer responding."
@@ -205,7 +205,7 @@ msgstr "Installer voortijdig beëindigd."
 
 #: inc_openoffice/windows/msi_languages/Error.ulf#OOO_ERROR_19
 msgid  "Please wait while Windows configures [ProductName]"
-msgstr ""
+msgstr "Een ogenblik geduld. Windows is bezig met het configureren van [ProductName]"
 
 #: inc_openoffice/windows/msi_languages/Error.ulf#OOO_ERROR_20
 msgid  "Gathering required information..."
@@ -217,7 +217,7 @@ msgstr "Oudere versies van deze toepassing worden verwijderd"
 
 #: inc_openoffice/windows/msi_languages/Error.ulf#OOO_ERROR_22
 msgid  "Preparing to remove older versions of this application"
-msgstr ""
+msgstr "Bezig met de voorbereiding voor het verwijderen van oudere versies van deze toepassing"
 
 #: inc_openoffice/windows/msi_languages/Error.ulf#OOO_ERROR_23
 msgid  "{[ProductName] }Setup completed successfully."
@@ -229,11 +229,11 @@ msgstr "{[ProductName] }Set-up mislukt."
 
 #: inc_openoffice/windows/msi_languages/Error.ulf#OOO_ERROR_25
 msgid  "Error reading from file: [2]. {{ System error [3].}}  Verify that the file exists and that you can access it."
-msgstr ""
+msgstr "Fout bij lezen uit bestand: [2]. {{ Systeemfout [3].}}  Controleer of het bestand bestaat en dat u er toegang toe hebt."
 
 #: inc_openoffice/windows/msi_languages/Error.ulf#OOO_ERROR_26
 msgid  "Cannot create the file [3].  A directory with this name already exists.  Cancel the installation and try installing to a different location."
-msgstr ""
+msgstr "Kan het bestand niet maken [3]. Een map met deze naam bestaat al. Annuleer de installatie en probeer opnieuw te installeren naar een andere locatie."
 
 #: inc_openoffice/windows/msi_languages/Error.ulf#OOO_ERROR_27
 msgid  "Please insert the disk: [2]"
@@ -241,43 +241,43 @@ msgstr "Voer de schijf in: [2]"
 
 #: inc_openoffice/windows/msi_languages/Error.ulf#OOO_ERROR_28
 msgid  "The installer has insufficient privileges to access this directory: [2].  The installation cannot continue.  Log on as an administrator or contact your system administrator."
-msgstr ""
+msgstr "De installer heeft onvoldoende rechten voor toegang tot deze map: [2]. De installatie kan niet worden voortgezet. Meld u als beheerder aan of neem contact op met uw systeembeheerder."
 
 #: inc_openoffice/windows/msi_languages/Error.ulf#OOO_ERROR_29
 msgid  "Error writing to file [2].  Verify that you have access to that directory."
-msgstr ""
+msgstr "Fout bij schrijven naar bestand [2].  Controleer of u toegang hebt tot deze map."
 
 #: inc_openoffice/windows/msi_languages/Error.ulf#OOO_ERROR_30
 msgid  "Error reading from file [2].  Verify that the file exists and that you can access it."
-msgstr ""
+msgstr "Fout bij lezen uit bestand: [2].  Controleer of het bestand bestaat en dat u er toegang toe hebt."
 
 #: inc_openoffice/windows/msi_languages/Error.ulf#OOO_ERROR_31
 msgid  "Another application has exclusive access to the file [2].  Please shut down all other applications, then click Retry."
-msgstr ""
+msgstr "Een andere toepassing heeft momenteel exclusief toegang tot het bestand [2].  Sluit alle andere toepassingen en klik dan op 'Opnieuw proberen'."
 
 #: inc_openoffice/windows/msi_languages/Error.ulf#OOO_ERROR_32
 msgid  "There is not enough disk space to install the file [2].  Free some disk space and click Retry, or click Cancel to exit."
-msgstr ""
+msgstr "Er is onvoldoende schijfruimte om het bestand [2] te installeren.  Maak ruimte op de schijf vrij en klik op 'Opnieuw proberen', of klik op 'Annuleren' om af te sluiten."
 
 #: inc_openoffice/windows/msi_languages/Error.ulf#OOO_ERROR_33
 msgid  "Source file not found: [2].  Verify that the file exists and that you can access it."
-msgstr ""
+msgstr "Bronbestand niet gevonden [2]. Controleer of het bestand bestaat en dat u er toegang toe hebt."
 
 #: inc_openoffice/windows/msi_languages/Error.ulf#OOO_ERROR_34
 msgid  "Error reading from file: [3]. {{ System error [2].}}  Verify that the file exists and that you can access it."
-msgstr ""
+msgstr "Fout bij lezen uit bestand: [3]. {{ Systeemfout [2].}}  Controleer of het bestand bestaat en dat u er toegang toe hebt."
 
 #: inc_openoffice/windows/msi_languages/Error.ulf#OOO_ERROR_35
 msgid  "Error writing to file: [3]. {{ System error [2].}}  Verify that you have access to that directory."
-msgstr ""
+msgstr "Fout bij schrijven naar bestand: [3]. {{ Systeemfout [2].}}  Controleer of u toegang hebt tot deze map."
 
 #: inc_openoffice/windows/msi_languages/Error.ulf#OOO_ERROR_36
 msgid  "Source file not found{{(cabinet)}}: [2].  Verify that the file exists and that you can access it."
-msgstr ""
+msgstr "Bronbestand niet gevonden {{(cabinet)}}: [2].  Controleer of het bestand bestaat en dat u er toegang toe hebt."
 
 #: inc_openoffice/windows/msi_languages/Error.ulf#OOO_ERROR_37
 msgid  "Cannot create the directory [2].  A file with this name already exists.  Please rename or remove the file and click Retry, or click Cancel to exit."
-msgstr ""
+msgstr "Kan de map niet maken [2]. Er bestaat al een bestand met deze naam. Hernoem of verwijder het bestand en klik op 'Opnieuw proberen', of klik op 'Annuleren' om af te sluiten."
 
 #: inc_openoffice/windows/msi_languages/Error.ulf#OOO_ERROR_38
 msgid  "The volume [2] is currently unavailable.  Please select another."
@@ -305,7 +305,7 @@ msgstr "Er is een netwerkfout opgetreden bij het maken van de map [2]"
 
 #: inc_openoffice/windows/msi_languages/Error.ulf#OOO_ERROR_44
 msgid  "A network error occurred while attempting to open the source file cabinet [2]."
-msgstr ""
+msgstr "Er is een netwerkfout opgetreden bij het openen van het broncabinetbestand [2]."
 
 #: inc_openoffice/windows/msi_languages/Error.ulf#OOO_ERROR_45
 msgid  "The specified path is too long [2]."
@@ -317,7 +317,7 @@ msgstr "De Installer heeft onvoldoende rechten om het bestand te wijzigen [2]."
 
 #: inc_openoffice/windows/msi_languages/Error.ulf#OOO_ERROR_47
 msgid  "A portion of the path [2] exceeds the length allowed by the system."
-msgstr ""
+msgstr "Een deel van het pad [2] is groter dan de door het systeem toegestane lengte."
 
 #: inc_openoffice/windows/msi_languages/Error.ulf#OOO_ERROR_48
 msgid  "The path [2] contains words that are not valid in folders."
@@ -341,67 +341,67 @@ msgstr "Ongeldig station: [2]"
 
 #: inc_openoffice/windows/msi_languages/Error.ulf#OOO_ERROR_53
 msgid  "Error applying patch to file [2].  It has probably been updated by other means, and can no longer be modified by this patch.  For more information contact your patch vendor.  {{System Error: [3]}}"
-msgstr ""
+msgstr "Fout bij toepassen van patch op bestand [2]. Het is waarschijnlijk op een andere manier bijgewerkt, en kan niet langer door deze patch worden gewijzigd. Neem contact op met de leverancier van de patch voor meer informatie.  {{Systeemfout: [3]}}"
 
 #: inc_openoffice/windows/msi_languages/Error.ulf#OOO_ERROR_54
 msgid  "Could not create key [2]. {{ System error [3].}}  Verify that you have sufficient access to that key, or contact your support personnel."
-msgstr ""
+msgstr "Kan sleutel [2] niet maken. {{ Systeemfout [3].}}  Controleer of u voldoende toegangsrechten hebt tot de sleutel, of neem contact op met het ondersteuningspersoneel."
 
 #: inc_openoffice/windows/msi_languages/Error.ulf#OOO_ERROR_55
 msgid  "Could not open key: [2]. {{ System error [3].}}  Verify that you have sufficient access to that key, or contact your support personnel."
-msgstr ""
+msgstr "Kan sleutel [2] niet openen. {{ Systeemfout [3].}}  Controleer of u voldoende toegangsrechten hebt tot de sleutel, of neem contact op met het ondersteuningspersoneel."
 
 #: inc_openoffice/windows/msi_languages/Error.ulf#OOO_ERROR_56
 msgid  "Could not delete value [2] from key [3]. {{ System error [4].}}  Verify that you have sufficient access to that key, or contact your support personnel."
-msgstr ""
+msgstr "Kan waarde [2] niet verwijderen uit sleutel [3]. {{ Systeemfout [4].}}  Controleer of u voldoende toegangsrechten hebt tot de sleutel, of neem contact op met het ondersteuningspersoneel."
 
 #: inc_openoffice/windows/msi_languages/Error.ulf#OOO_ERROR_57
 msgid  "Could not delete key [2]. {{ System error [3].}}  Verify that you have sufficient access to that key, or contact your support personnel."
-msgstr ""
+msgstr "Kan sleutel [2] niet verwijderen. {{ Systeemfout [3].}}  Controleer of u voldoende toegangsrechten hebt tot de sleutel, of neem contact op met het ondersteuningspersoneel."
 
 #: inc_openoffice/windows/msi_languages/Error.ulf#OOO_ERROR_58
 msgid  "Could not read value [2] from key [3]. {{ System error [4].}}  Verify that you have sufficient access to that key, or contact your support personnel."
-msgstr ""
+msgstr "Kan waarde [2] niet lezen uit sleutel [3]. {{ Systeemfout [4].}}  Controleer of u voldoende toegangsrechten hebt tot de sleutel, of neem contact op met het ondersteuningspersoneel."
 
 #: inc_openoffice/windows/msi_languages/Error.ulf#OOO_ERROR_59
 msgid  "Could not write value [2] to key [3]. {{ System error [4].}}  Verify that you have sufficient access to that key, or contact your support personnel."
-msgstr ""
+msgstr "Kan waarde [2] niet schrijven naar sleutel [3]. {{ Systeemfout [4].}}  Controleer of u voldoende toegangsrechten hebt tot de sleutel, of neem contact op met het ondersteuningspersoneel."
 
 #: inc_openoffice/windows/msi_languages/Error.ulf#OOO_ERROR_60
 msgid  "Could not get value names for key [2]. {{ System error [3].}}  Verify that you have sufficient access to that key, or contact your support personnel."
-msgstr ""
+msgstr "Kan geen waardenamen opvragen voor sleutel [2]. {{ Systeemfout [3].}}  Controleer of u voldoende toegangsrechten hebt tot de sleutel, of neem contact op met het ondersteuningspersoneel."
 
 #: inc_openoffice/windows/msi_languages/Error.ulf#OOO_ERROR_61
 msgid  "Could not get sub key names for key [2]. {{ System error [3].}}  Verify that you have sufficient access to that key, or contact your support personnel."
-msgstr ""
+msgstr "Kan geen subsleutelnamen opvragen voor sleutel [2]. {{ Systeemfout [3].}}  Controleer of u voldoende toegangsrechten hebt tot de sleutel, of neem contact op met het ondersteuningspersoneel."
 
 #: inc_openoffice/windows/msi_languages/Error.ulf#OOO_ERROR_62
 msgid  "Could not read security information for key [2]. {{ System error [3].}}  Verify that you have sufficient access to that key, or contact your support personnel."
-msgstr ""
+msgstr "Kan geen beveiligingsinformatie opvragen voor sleutel [2]. {{ Systeemfout [3].}}  Controleer of u voldoende toegangsrechten hebt tot de sleutel, of neem contact op met het ondersteuningspersoneel."
 
 #: inc_openoffice/windows/msi_languages/Error.ulf#OOO_ERROR_63
 msgid  "Could not increase the available registry space. [2] KB of free registry space is required for the installation of this application."
-msgstr ""
+msgstr "Kan de beschikbare ruimte voor het systeemregister niet vergroten. [2] KB vrije registerruimte is nodig voor de installatie van deze toepassing."
 
 #: inc_openoffice/windows/msi_languages/Error.ulf#OOO_ERROR_64
 msgid  "Another installation is in progress. You must complete that installation before continuing this one."
-msgstr ""
+msgstr "Er wordt al een andere installatie uitgevoerd. Voordat u met de installatie door kunt gaan, moet u die eerst voltooien."
 
 #: inc_openoffice/windows/msi_languages/Error.ulf#OOO_ERROR_65
 msgid  "Error accessing secured data. Please make sure the Windows Installer is configured properly and try the installation again."
-msgstr ""
+msgstr "Fout bij toegang tot beveiligde gegevens. Controleer of de Windows Installer juist geconfigureerd is, en probeer daarna opnieuw te installeren."
 
 #: inc_openoffice/windows/msi_languages/Error.ulf#OOO_ERROR_66
 msgid  "User [2] has previously initiated an installation for product [3].  That user will need to run that installation again before using that product.  Your current installation will now continue."
-msgstr ""
+msgstr "Gebruiker [2] heeft eerder een installatie voor product [3] gestart. Die gebruiker moet de installatie opnieuw uitvoeren alvorens het product te gebruiken. Uw huidige installatie wordt nu voortgezet."
 
 #: inc_openoffice/windows/msi_languages/Error.ulf#OOO_ERROR_67
 msgid  "User [2] has previously initiated an installation for product [3].  That user will need to run that installation again before using that product."
-msgstr ""
+msgstr "Gebruiker [2] heeft eerder een installatie voor product [3] gestart.  Die gebruiker moet de installatie opnieuw uitvoeren alvorens het product te gebruiken."
 
 #: inc_openoffice/windows/msi_languages/Error.ulf#OOO_ERROR_68
 msgid  "Out of disk space -- Volume: '[2]'; required space: [3] KB; available space: [4] KB.  Free some disk space and retry."
-msgstr ""
+msgstr "Onvoldoende schijfruimte -- Volume: '[2]'; benodigde ruimte: [3] KB; beschikbare ruimte: [4] KB.  Maak schijfruimte beschikbaar en probeer het opnieuw."
 
 #: inc_openoffice/windows/msi_languages/Error.ulf#OOO_ERROR_69
 msgid  "Are you sure you want to cancel?"
@@ -409,15 +409,15 @@ msgstr "Weet u zeker dat u wilt annuleren?"
 
 #: inc_openoffice/windows/msi_languages/Error.ulf#OOO_ERROR_70
 msgid  "The file [2][3] is being held in use {by the following process: Name: [4], ID: [5], Window Title: [6]}.  Close that application and retry."
-msgstr ""
+msgstr "Het bestand [2][3] is momenteel in gebruik {door het volgende proces: Naam: [4], ID: [5], Venstertitel: [6]}.  Sluit die toepassing en probeer het opnieuw."
 
 #: inc_openoffice/windows/msi_languages/Error.ulf#OOO_ERROR_71
 msgid  "The product [2] is already installed, preventing the installation of this product.  The two products are incompatible."
-msgstr ""
+msgstr "Het product [2] is al geïnstalleerd. Hierdoor kan dit product niet worden geïnstalleerd. Deze twee producten zijn niet compatibel."
 
 #: inc_openoffice/windows/msi_languages/Error.ulf#OOO_ERROR_72
 msgid  "Out of disk space -- Volume: [2]; required space: [3] KB; available space: [4] KB.  If rollback is disabled, enough space is available. Click Cancel to quit, Retry to check available disk space again, or Ignore to continue without rollback."
-msgstr ""
+msgstr "Onvoldoende schijfruimte -- Volume: [2]; benodigde ruimte: [3] KB; beschikbare ruimte: [4] KB. Zonder de functie voor ongedaan maken is er voldoende schijfruimte beschikbaar. Klik op 'Annuleren' om te stoppen, op 'Opnieuw proberen' om de beschikbare schijfruimte opnieuw te controleren, of op 'Negeren' als u zonder de optie voor ongedaan maken wilt doorgaan."
 
 #: inc_openoffice/windows/msi_languages/Error.ulf#OOO_ERROR_73
 msgid  "Could not access network location [2]."
@@ -425,35 +425,35 @@ msgstr "Fout bij toegang tot netwerklocatie [2]."
 
 #: inc_openoffice/windows/msi_languages/Error.ulf#OOO_ERROR_74
 msgid  "The following applications should be closed before continuing the installation:"
-msgstr ""
+msgstr "De volgende toepassingen moeten worden afgesloten alvorens de installatie voort te zetten:"
 
 #: inc_openoffice/windows/msi_languages/Error.ulf#OOO_ERROR_75
 msgid  "Could not find any previously installed compliant products on the machine for installing this product."
-msgstr ""
+msgstr "Kan geen eerder geïnstalleerde in aanmerking komende producten op de computer vinden om dit product te installeren."
 
 #: inc_openoffice/windows/msi_languages/Error.ulf#OOO_ERROR_76
 msgid  "The key [2] is not valid.  Verify that you entered the correct key."
-msgstr ""
+msgstr "De sleutel [2] is ongeldig.  Controleer of u de juiste sleutel hebt ingevoerd."
 
 #: inc_openoffice/windows/msi_languages/Error.ulf#OOO_ERROR_77
 msgid  "The installer must restart your system before configuration of [2] can continue.  Click Yes to restart now or No if you plan to restart later."
-msgstr ""
+msgstr "Het systeem moet opnieuw worden gestart voordat de configuratie van [2] kan worden voortgezet. Klik op Ja om nu te herstarten of op Nee als u van plan bent later te herstarten."
 
 #: inc_openoffice/windows/msi_languages/Error.ulf#OOO_ERROR_78
 msgid  "You must restart your system for the configuration changes made to [2] to take effect. Click Yes to restart now or No if you plan to restart later."
-msgstr ""
+msgstr "Het systeem moet opnieuw worden gestart opdat de gewijzigde configuratie van [2] van kracht wordt. Klik op Ja om nu te herstarten of op Nee als u van plan bent later te herstarten."
 
 #: inc_openoffice/windows/msi_languages/Error.ulf#OOO_ERROR_79
 msgid  "An installation for [2] is currently suspended.  You must undo the changes made by that installation to continue.  Do you want to undo those changes?"
-msgstr ""
+msgstr "De installatie van [2] is momenteel onderbroken. Als u door wilt gaan, moet u de wijzigingen van die installatie ongedaan maken. Wilt u die wijzigingen ongedaan maken?"
 
 #: inc_openoffice/windows/msi_languages/Error.ulf#OOO_ERROR_80
 msgid  "A previous installation for this product is in progress.  You must undo the changes made by that installation to continue.  Do you want to undo those changes?"
-msgstr ""
+msgstr "Er wordt al een eerdere installatie voor dit product uitgevoerd. Als u door wilt gaan moet u de wijzigingen van die installatie ongedaan maken. Wilt u die wijzigingen ongedaan maken?"
 
 #: inc_openoffice/windows/msi_languages/Error.ulf#OOO_ERROR_81
 msgid  "No valid source could be found for product [2].  The Windows Installer cannot continue."
-msgstr ""
+msgstr "Geen geldige bron gevonden voor product [2].  De Windows Installer kan niet worden voortgezet."
 
 #: inc_openoffice/windows/msi_languages/Error.ulf#OOO_ERROR_82
 msgid  "Installation operation completed successfully."
@@ -469,23 +469,23 @@ msgstr "Product: [2] -- [3]"
 
 #: inc_openoffice/windows/msi_languages/Error.ulf#OOO_ERROR_85
 msgid  "You may either restore your computer to its previous state or continue the installation later. Would you like to restore?"
-msgstr ""
+msgstr "U kunt de computer herstellen in de oorspronkelijke staat, of de installatie later voortzetten. Wilt u de oorspronkelijke configuratie herstellen?"
 
 #: inc_openoffice/windows/msi_languages/Error.ulf#OOO_ERROR_86
 msgid  "An error occurred while writing installation information to disk.  Check to make sure enough disk space is available, and click Retry, or Cancel to end the installation."
-msgstr ""
+msgstr "Er is een fout opgetreden tijdens het schrijven van installatiegegevens naar de schijf. Controleer of er voldoende schijfruimte is en klik op 'Opnieuw proberen' of op 'Annuleren' om de installatie af te breken."
 
 #: inc_openoffice/windows/msi_languages/Error.ulf#OOO_ERROR_87
 msgid  "One or more of the files required to restore your computer to its previous state could not be found.  Restoration will not be possible."
-msgstr ""
+msgstr "Bestanden die nodig zijn om de oorspronkelijke configuratie te herstellen kunnen niet worden gevonden.  Herstel is niet mogelijk."
 
 #: inc_openoffice/windows/msi_languages/Error.ulf#OOO_ERROR_88
 msgid  "[2] cannot install one of its required products. Contact your technical support group.  {{System Error: [3].}}"
-msgstr ""
+msgstr "[2] kan een van de vereiste producten niet installeren. Neem contact op met uw technische ondersteuning.  {{Systeemfout: [3].}}"
 
 #: inc_openoffice/windows/msi_languages/Error.ulf#OOO_ERROR_89
 msgid  "The older version of [2] cannot be removed.  Contact your technical support group.  {{System Error [3].}}"
-msgstr ""
+msgstr "De oudere versie van [2] kan niet worden verwijderd. Neem contact op met uw technische ondersteuning. {{Systeemfout: [3].}}"
 
 #: inc_openoffice/windows/msi_languages/Error.ulf#OOO_ERROR_90
 msgid  "The path [2] is not valid.  Please specify a valid path."
@@ -493,19 +493,19 @@ msgstr "Het pad [2] is ongeldig.  Geef een geldig pad op."
 
 #: inc_openoffice/windows/msi_languages/Error.ulf#OOO_ERROR_91
 msgid  "Out of memory. Shut down other applications before retrying."
-msgstr ""
+msgstr "Onvoldoende geheugen. Sluit andere toepassingen af alvorens het opnieuw te proberen."
 
 #: inc_openoffice/windows/msi_languages/Error.ulf#OOO_ERROR_92
 msgid  "There is no disk in drive [2]. Please insert one and click Retry, or click Cancel to go back to the previously selected volume."
-msgstr ""
+msgstr "Er is geen schijf in station [2]. Plaats een schijf en klik op 'Opnieuw proberen', of klik op 'Annuleren' om terug te gaan naar het eerder geselecteerde volume."
 
 #: inc_openoffice/windows/msi_languages/Error.ulf#OOO_ERROR_93
 msgid  "There is no disk in drive [2]. Please insert one and click Retry, or click Cancel to return to the browse dialog and select a different volume."
-msgstr ""
+msgstr "Er is geen schijf in station [2]. Plaats een schijf en klik 'Opnieuw proberen', of klik op 'Annuleren' om een ander volume te kiezen."
 
 #: inc_openoffice/windows/msi_languages/Error.ulf#OOO_ERROR_94
 msgid  "The folder [2] does not exist.  Please enter a path to an existing folder."
-msgstr ""
+msgstr "De map [2] bestaat niet. Voer een pad naar een bestaande map in."
 
 #: inc_openoffice/windows/msi_languages/Error.ulf#OOO_ERROR_95
 msgid  "You have insufficient privileges to read this folder."
@@ -513,7 +513,7 @@ msgstr "U hebt onvoldoende rechten om deze map te lezen."
 
 #: inc_openoffice/windows/msi_languages/Error.ulf#OOO_ERROR_96
 msgid  "A valid destination folder for the installation could not be determined."
-msgstr ""
+msgstr "Er kan geen geldige doelmap voor de installatie worden bepaald."
 
 #: inc_openoffice/windows/msi_languages/Error.ulf#OOO_ERROR_97
 msgid  "Error attempting to read from the source installation database: [2]."
@@ -521,115 +521,115 @@ msgstr "Fout bij het lezen van de broninstallatiedatabase: [2]."
 
 #: inc_openoffice/windows/msi_languages/Error.ulf#OOO_ERROR_98
 msgid  "Scheduling reboot operation: Renaming file [2] to [3]. Must reboot to complete operation."
-msgstr ""
+msgstr "Bezig met plannen van een opstartbewerking: bestand [2] wordt hernoemd naar [3]. Herstarten is nodig om de bewerking te voltooien."
 
 #: inc_openoffice/windows/msi_languages/Error.ulf#OOO_ERROR_99
 msgid  "Scheduling reboot operation: Deleting file [2]. Must reboot to complete operation."
-msgstr ""
+msgstr "Bezig met plannen van een opstartbewerking: bestand [2] wordt verwijderd. Herstarten is nodig om de bewerking te voltooien."
 
 #: inc_openoffice/windows/msi_languages/Error.ulf#OOO_ERROR_100
 msgid  "Module [2] failed to register.  HRESULT [3].  Contact your support personnel."
-msgstr ""
+msgstr "Module [2] kan niet worden geregistreerd.  HRESULT [3].  Neem contact op met het ondersteuningspersoneel."
 
 #: inc_openoffice/windows/msi_languages/Error.ulf#OOO_ERROR_101
 msgid  "Module [2] failed to unregister.  HRESULT [3].  Contact your support personnel."
-msgstr ""
+msgstr "Registratie van module [2] kan niet ongedaan worden gemaakt.  HRESULT [3].  Neem contact op met het ondersteuningspersoneel."
 
 #: inc_openoffice/windows/msi_languages/Error.ulf#OOO_ERROR_102
 msgid  "Failed to cache package [2]. Error: [3]. Contact your support personnel."
-msgstr ""
+msgstr "Kan pakket [2] niet opslaan in cache. Fout: [3]. Neem contact op met het ondersteuningspersoneel."
 
 #: inc_openoffice/windows/msi_languages/Error.ulf#OOO_ERROR_103
 msgid  "Could not register font [2].  Verify that you have sufficient permissions to install fonts, and that the system supports this font."
-msgstr ""
+msgstr "Kan lettertype [2] niet registreren.  Controleer of u voldoende rechten hebt om lettertypen te installeren, en dat het systeem dit lettertype ondersteunt."
 
 #: inc_openoffice/windows/msi_languages/Error.ulf#OOO_ERROR_104
 msgid  "Could not unregister font [2]. Verify that you have sufficient permissions to remove fonts."
-msgstr ""
+msgstr "Kan de registratie van lettertype [2] niet ongedaan maken. Controleer of u voldoende rechten hebt om lettertypen te verwijderen."
 
 #: inc_openoffice/windows/msi_languages/Error.ulf#OOO_ERROR_105
 msgid  "Could not create shortcut [2]. Verify that the destination folder exists and that you can access it."
-msgstr ""
+msgstr "Kan snelkoppeling [2] niet maken. Controleer of de doelmap bestaat en dat u er toegang toe hebt."
 
 #: inc_openoffice/windows/msi_languages/Error.ulf#OOO_ERROR_106
 msgid  "Could not remove shortcut [2]. Verify that the shortcut file exists and that you can access it."
-msgstr ""
+msgstr "Kan snelkoppeling [2] niet verwijderen. Controleer of het snelkoppelingsbestand bestaat en dat u er toegang toe hebt."
 
 #: inc_openoffice/windows/msi_languages/Error.ulf#OOO_ERROR_107
 msgid  "Could not register type library for file [2].  Contact your support personnel."
-msgstr ""
+msgstr "Kan typebibliotheek voor bestand [2] niet registreren.  Neem contact op met het ondersteuningspersoneel."
 
 #: inc_openoffice/windows/msi_languages/Error.ulf#OOO_ERROR_108
 msgid  "Could not unregister type library for file [2].  Contact your support personnel."
-msgstr ""
+msgstr "Kan de registratie van typebibliotheek voor bestand [2] niet ongedaan maken.  Neem contact op met het ondersteuningspersoneel."
 
 #: inc_openoffice/windows/msi_languages/Error.ulf#OOO_ERROR_109
 msgid  "Could not update the INI file [2][3].  Verify that the file exists and that you can access it."
-msgstr ""
+msgstr "Kan het INI-bestand [2][3] niet bijwerken.  Controleer of het bestand bestaat en of u er toegang toe hebt."
 
 #: inc_openoffice/windows/msi_languages/Error.ulf#OOO_ERROR_110
 msgid  "Could not schedule file [2] to replace file [3] on reboot.  Verify that you have write permissions to file [3]."
-msgstr ""
+msgstr "Kan het vervangen door bestand [2] van bestand [3] bij herstart niet plannen.  Controleer of u schrijfrechten hebt voor bestand [3]."
 
 #: inc_openoffice/windows/msi_languages/Error.ulf#OOO_ERROR_111
 msgid  "Error removing ODBC driver manager, ODBC error [2]: [3]. Contact your support personnel."
-msgstr ""
+msgstr "Fout bij verwijderen van het beheerprogramma voor ODBC-stuurprogramma's, ODBC-fout [2]: [3]. Neem contact op met het ondersteuningspersoneel."
 
 #: inc_openoffice/windows/msi_languages/Error.ulf#OOO_ERROR_112
 msgid  "Error installing ODBC driver manager, ODBC error [2]: [3]. Contact your support personnel."
-msgstr ""
+msgstr "Fout bij installeren van het beheerprogramma voor ODBC-stuurprogramma's, ODBC-fout [2]: [3]. Neem contact op met het ondersteuningspersoneel."
 
 #: inc_openoffice/windows/msi_languages/Error.ulf#OOO_ERROR_113
 msgid  "Error removing ODBC driver [4], ODBC error [2]: [3]. Verify that you have sufficient privileges to remove ODBC drivers."
-msgstr ""
+msgstr "Fout bij verwijderen van ODBC-stuurprogramma [4], ODBC-fout [2]: [3]. Controleer of u voldoende rechten hebt om ODBC-stuurprogramma's te verwijderen."
 
 #: inc_openoffice/windows/msi_languages/Error.ulf#OOO_ERROR_114
 msgid  "Error installing ODBC driver [4], ODBC error [2]: [3]. Verify that the file [4] exists and that you can access it."
-msgstr ""
+msgstr "Fout bij installeren van ODBC-stuurprogramma [4], ODBC-fout [2]: [3]. Controleer of het bestand [4] bestaat en u er toegang toe hebt."
 
 #: inc_openoffice/windows/msi_languages/Error.ulf#OOO_ERROR_115
 msgid  "Error configuring ODBC data source [4], ODBC error [2]: [3]. Verify that the file [4] exists and that you can access it."
-msgstr ""
+msgstr "Fout bij configureren van ODBC-gegevensbron [4], ODBC-fout [2]: [3]. Controleer of het bestand [4] bestaat en u er toegang toe hebt."
 
 #: inc_openoffice/windows/msi_languages/Error.ulf#OOO_ERROR_116
 msgid  "Service [2] ([3]) failed to start.  Verify that you have sufficient privileges to start system services."
-msgstr ""
+msgstr "Kan service [2] ([3]) niet starten.  Controleer of u voldoende rechten hebt om systeemservices te starten."
 
 #: inc_openoffice/windows/msi_languages/Error.ulf#OOO_ERROR_117
 msgid  "Service [2] ([3]) could not be stopped.  Verify that you have sufficient privileges to stop system services."
-msgstr ""
+msgstr "Kan service [2] ([3]) niet stoppen.  Controleer of u voldoende rechten hebt om systeemservices te stoppen."
 
 #: inc_openoffice/windows/msi_languages/Error.ulf#OOO_ERROR_118
 msgid  "Service [2] ([3]) could not be deleted.  Verify that you have sufficient privileges to remove system services."
-msgstr ""
+msgstr "Kan service [2] ([3]) niet verwijderen.  Controleer of u voldoende rechten hebt om systeemservices te verwijderen."
 
 #: inc_openoffice/windows/msi_languages/Error.ulf#OOO_ERROR_119
 msgid  "Service [2] ([3]) could not be installed.  Verify that you have sufficient privileges to install system services."
-msgstr ""
+msgstr "Kan service [2] ([3]) niet installeren.  Controleer of u voldoende rechten hebt om systeemservices te installeren."
 
 #: inc_openoffice/windows/msi_languages/Error.ulf#OOO_ERROR_120
 msgid  "Could not update environment variable [2].  Verify that you have sufficient privileges to modify environment variables."
-msgstr ""
+msgstr "Kan omgevingsvariabele [2] niet bijwerken.  Controleer of u voldoende rechten hebt om omgevingsvariabelen te wijzigen."
 
 #: inc_openoffice/windows/msi_languages/Error.ulf#OOO_ERROR_121
 msgid  "You do not have sufficient privileges to complete this installation for all users of the machine.  Log on as an administrator and then retry this installation."
-msgstr ""
+msgstr "U hebt onvoldoende rechten om deze installatie te voltooien voor alle gebruikers op de machine. Meld u aan als een beheerder en probeer de installatie opnieuw."
 
 #: inc_openoffice/windows/msi_languages/Error.ulf#OOO_ERROR_122
 msgid  "Could not set file security for file [3]. Error: [2].  Verify that you have sufficient privileges to modify the security permissions for this file."
-msgstr ""
+msgstr "Kan geen bestandsbeveiliging instellen voor bestand [3]. Fout: [2].  Controleer of u voldoende rechten hebt om de beveiligingsmachtigingen voor dit bestand te wijzigen."
 
 #: inc_openoffice/windows/msi_languages/Error.ulf#OOO_ERROR_123
 msgid  "Component Services (COM+ 1.0) are not installed on this computer.  This installation requires Component Services in order to complete successfully.  Component Services are available on Windows 2000."
-msgstr ""
+msgstr "Component Services (COM+ 1.0) is niet op deze computer geïnstalleerd. Component Services is nodig om de installatie te kunnen voltooien. Component Services is beschikbaar in Windows 2000."
 
 #: inc_openoffice/windows/msi_languages/Error.ulf#OOO_ERROR_124
 msgid  "Error registering COM+ application.  Contact your support personnel for more information."
-msgstr ""
+msgstr "Fout bij registreren van COM+-toepassing.  Neem contact op met het ondersteuningspersoneel."
 
 #: inc_openoffice/windows/msi_languages/Error.ulf#OOO_ERROR_125
 msgid  "Error unregistering COM+ application.  Contact your support personnel for more information."
-msgstr ""
+msgstr "Fout bij ongedaan maken van de registratie van een COM+-toepassing.  Neem contact op met het ondersteuningspersoneel."
 
 #: inc_openoffice/windows/msi_languages/Error.ulf#OOO_ERROR_126
 msgid  "The description for service '[2]' ([3]) could not be changed."
@@ -637,23 +637,23 @@ msgstr "De beschrijving voor service '[2]' ([3]) kan niet worden gewijzigd."
 
 #: inc_openoffice/windows/msi_languages/Error.ulf#OOO_ERROR_127
 msgid  "The Windows Installer service cannot update the system file [2] because the file is protected by Windows.  You may need to update your operating system for this program to work correctly. {{Package version: [3], OS Protected version: [4]}}"
-msgstr ""
+msgstr "De Windows Installer-service kan het systeembestand [2] niet bijwerken omdat het beveiligd is door Windows.  Wellicht moet u uw besturingssysteem bijwerken voor correcte werking van dit programma. {{Pakketversie: [3], Beveiligde versie besturingssysteem: [4]}}"
 
 #: inc_openoffice/windows/msi_languages/Error.ulf#OOO_ERROR_128
 msgid  "The Windows Installer service cannot update the protected Windows file [2]. {{Package version: [3], OS Protected version: [4], SFP Error: [5]}}"
-msgstr ""
+msgstr "De Windows Installer-service kan het beveiligde Windows-bestand [2] niet bijwerken. {{Pakketversie: [3], Beveiligde versie besturingssysteem: [4], SFP-fout: [5]}}"
 
 #: inc_openoffice/windows/msi_languages/Error.ulf#OOO_ERROR_129
 msgid  "This setup requires Internet Information Server 4.0 or higher for configuring IIS Virtual Roots. Please make sure that you have IIS 4.0 or higher."
-msgstr ""
+msgstr "Deze installatie vereist Internet Information Server 4.0 of hoger voor het configureren van IIS Virtuele Hoofdmaptabellen. Zorg er voor dat u IIS 4.0 of hoger gebruikt."
 
 #: inc_openoffice/windows/msi_languages/Error.ulf#OOO_ERROR_130
 msgid  "This setup requires Administrator privileges for configuring IIS Virtual Roots."
-msgstr ""
+msgstr "Deze installatie vereist beheerdersrechten voor het configureren van IIS Virtuele Hoofdmaptabellen."
 
 #: inc_openoffice/windows/msi_languages/CustomAc.ulf#OOO_CUSTOMACTION_1
 msgid  "A newer version of [ProductName] was found. To install an older version, the newer version needs to be removed first."
-msgstr ""
+msgstr "Er is een nieuwere versie van [ProductName] gevonden. Wilt u een oudere versie installeren, dan moet u eerst de nieuwere verwijderen."
 
 #: inc_openoffice/windows/msi_languages/CustomAc.ulf#OOO_CUSTOMACTION_2
 msgid  "The same version of this product is already installed."
@@ -661,11 +661,11 @@ msgstr "Deze versie van het product is al geïnstalleerd."
 
 #: inc_openoffice/windows/msi_languages/CustomAc.ulf#OOO_CUSTOMACTION_3
 msgid  "An older version of [ProductName] was found. To install a newer version, the older version needs to be removed first."
-msgstr ""
+msgstr "Er is een oudere versie van [ProductName] gevonden. U moet eerst de oudere versie verwijderen om een nieuwere versie te installeren."
 
 #: inc_openoffice/windows/msi_languages/CustomAc.ulf#OOO_CUSTOMACTION_4
 msgid  "Please exit [DEFINEDPRODUCT] [DEFINEDVERSION] and the [DEFINEDPRODUCT] [DEFINEDVERSION] Quickstarter before you continue. If you are using a multi-user system, also make sure that no other user has [DEFINEDPRODUCT] [DEFINEDVERSION] open."
-msgstr ""
+msgstr "Sluit [DEFINEDPRODUCT] [DEFINEDVERSION] en de [DEFINEDPRODUCT] [DEFINEDVERSION] Snelstarter af voordat u verder gaat. Zorg er ook voor dat geen andere gebruiker [DEFINEDPRODUCT] [DEFINEDVERSION] heeft geopend, indien u een systeem voor meerdere gebruikers gebruikt."
 
 #: inc_openoffice/windows/msi_languages/UIText.ulf#OOO_UITEXT_1
 msgid  "bytes"
@@ -693,15 +693,15 @@ msgstr "Dit onderdeel zal indien nodig worden geïnstalleerd."
 
 #: inc_openoffice/windows/msi_languages/UIText.ulf#OOO_UITEXT_7
 msgid  "This feature, and all subfeatures, will be installed to run from the CD."
-msgstr ""
+msgstr "Dit onderdeel en alle subonderdelen worden geïnstalleerd voor uitvoeren vanaf de cd."
 
 #: inc_openoffice/windows/msi_languages/UIText.ulf#OOO_UITEXT_8
 msgid  "This feature, and all subfeatures, will be installed on local hard drive."
-msgstr ""
+msgstr "Dit onderdeel en alle subonderdelen worden geïnstalleerd op de lokale harde schijf."
 
 #: inc_openoffice/windows/msi_languages/UIText.ulf#OOO_UITEXT_9
 msgid  "This feature, and all subfeatures, will be installed to run from the network."
-msgstr ""
+msgstr "Dit onderdeel en alle subonderdelen worden geïnstalleerd voor uitvoeren vanaf het netwerk."
 
 #: inc_openoffice/windows/msi_languages/UIText.ulf#OOO_UITEXT_10
 msgid  "This feature will be installed to run from CD."
@@ -761,11 +761,11 @@ msgstr "Dit onderdeel wordt geïnstalleerd voor uitvoeren vanaf het netwerk."
 
 #: inc_openoffice/windows/msi_languages/UIText.ulf#OOO_UITEXT_24
 msgid  "This feature will be uninstalled completely, and you won't be able to run it from CD."
-msgstr ""
+msgstr "Dit onderdeel wordt geheel gedeïnstalleerd, zodat u het ook niet meer kunt uitvoeren vanaf cd."
 
 #: inc_openoffice/windows/msi_languages/UIText.ulf#OOO_UITEXT_25
 msgid  "This feature was run from the CD but will be set to be installed when required."
-msgstr ""
+msgstr "Dit onderdeel werd uitgevoerd vanaf de cd maar zal indien nodig worden geïnstalleerd."
 
 #: inc_openoffice/windows/msi_languages/UIText.ulf#OOO_UITEXT_26
 msgid  "This feature will continue to be run from the CD"
@@ -773,7 +773,7 @@ msgstr "Dit onderdeel zal nog steeds vanaf de cd worden uitgevoerd"
 
 #: inc_openoffice/windows/msi_languages/UIText.ulf#OOO_UITEXT_27
 msgid  "This feature was run from the CD but will be installed on the local hard drive."
-msgstr ""
+msgstr "Dit onderdeel werd uitgevoerd vanaf de cd maar zal worden geïnstalleerd op de lokale harde schijf."
 
 #: inc_openoffice/windows/msi_languages/UIText.ulf#OOO_UITEXT_28
 msgid  "This feature frees up [1] on your hard drive."
@@ -793,11 +793,11 @@ msgstr "Dit onderdeel wordt geheel verwijderd."
 
 #: inc_openoffice/windows/msi_languages/UIText.ulf#OOO_UITEXT_32
 msgid  "This feature will be removed from your local hard drive but will be set to be installed when required."
-msgstr ""
+msgstr "Dit onderdeel wordt verwijderd van uw lokale harde schijf maar zal indien nodig opnieuw worden geïnstalleerd."
 
 #: inc_openoffice/windows/msi_languages/UIText.ulf#OOO_UITEXT_33
 msgid  "This feature will be removed from your local hard drive but will still be available to run from CD."
-msgstr ""
+msgstr "Dit onderdeel wordt verwijderd van uw lokale harde schijf maar kan nog steeds vanaf de cd worden uitgevoerd."
 
 #: inc_openoffice/windows/msi_languages/UIText.ulf#OOO_UITEXT_34
 msgid  "This feature will remain on your local hard drive."
@@ -805,19 +805,19 @@ msgstr "Dit onderdeel blijft op de lokale harde schijf."
 
 #: inc_openoffice/windows/msi_languages/UIText.ulf#OOO_UITEXT_35
 msgid  "This feature will be removed from your local hard drive, but will be still available to run from the network."
-msgstr ""
+msgstr "Dit onderdeel wordt verwijderd van uw lokale harde schijf maar kan nog steeds vanaf het netwerk worden uitgevoerd."
 
 #: inc_openoffice/windows/msi_languages/UIText.ulf#OOO_UITEXT_36
 msgid  "This feature will be uninstalled completely, and you won't be able to run it from the network."
-msgstr ""
+msgstr "Dit onderdeel wordt geheel gedeïnstalleerd, zodat u het ook niet meer kunt uitvoeren vanaf het netwerk."
 
 #: inc_openoffice/windows/msi_languages/UIText.ulf#OOO_UITEXT_37
 msgid  "This feature was run from the network but will be installed when required."
-msgstr ""
+msgstr "Dit onderdeel werd uitgevoerd vanaf het netwerk maar zal indien nodig worden geïnstalleerd."
 
 #: inc_openoffice/windows/msi_languages/UIText.ulf#OOO_UITEXT_38
 msgid  "This feature was run from the network but will be installed on the local hard drive."
-msgstr ""
+msgstr "Dit onderdeel werd uitgevoerd vanaf het netwerk maar zal worden geïnstalleerd op de lokale harde schijf."
 
 #: inc_openoffice/windows/msi_languages/UIText.ulf#OOO_UITEXT_39
 msgid  "This feature will continue to be run from the network"
@@ -825,19 +825,19 @@ msgstr "Dit onderdeel zal nog steeds vanaf het netwerk worden uitgevoerd"
 
 #: inc_openoffice/windows/msi_languages/UIText.ulf#OOO_UITEXT_40
 msgid  "This feature frees up [1] on your hard drive. It has [2] of [3] subfeatures selected. The subfeatures free up [4] on your hard drive."
-msgstr ""
+msgstr "Dit onderdeel maakt [1] vrij op de harde schijf. Er zijn [2] van [3] subonderdelen geselecteerd. Deze maken [4] vrij op de harde schijf."
 
 #: inc_openoffice/windows/msi_languages/UIText.ulf#OOO_UITEXT_41
 msgid  "This feature frees up [1] on your hard drive. It has [2] of [3] subfeatures selected. The subfeatures require [4] on your hard drive."
-msgstr ""
+msgstr "Dit onderdeel maakt [1] vrij op de harde schijf. Er zijn [2] van [3] subonderdelen geselecteerd. Deze vereisen [4] op de harde schijf."
 
 #: inc_openoffice/windows/msi_languages/UIText.ulf#OOO_UITEXT_42
 msgid  "This feature requires [1] on your hard drive. It has [2] of [3] subfeatures selected. The subfeatures free up [4] on your hard drive."
-msgstr ""
+msgstr "Dit onderdeel vereist [1] op de harde schijf. Er zijn [2] van [3] subonderdelen geselecteerd. Deze maken [4] vrij op de harde schijf."
 
 #: inc_openoffice/windows/msi_languages/UIText.ulf#OOO_UITEXT_43
 msgid  "This feature requires [1] on your hard drive. It has [2] of [3] subfeatures selected. The subfeatures require [4] on your hard drive."
-msgstr ""
+msgstr "Dit onderdeel vereist [1] op de harde schijf. Er zijn [2] van [3] subonderdelen geselecteerd. Deze vereisen [4] op de harde schijf."
 
 #: inc_openoffice/windows/msi_languages/UIText.ulf#OOO_UITEXT_44
 msgid  "Time remaining: {[1] min }[2] sec"
@@ -901,7 +901,7 @@ msgstr "Virtuele hoofdmappen van IIS worden verwijderd..."
 
 #: inc_openoffice/windows/msi_languages/ActionTe.ulf#OOO_ACTIONTEXT_10
 msgid  "Searching for qualifying products"
-msgstr "Bezig met zoeken naar in aanmerking komende producten"
+msgstr "Zoeken naar in aanmerking komende producten"
 
 #: inc_openoffice/windows/msi_languages/ActionTe.ulf#OOO_ACTIONTEXT_11
 msgid  "Computing space requirements"
@@ -1137,11 +1137,11 @@ msgstr "Bestand: [1], map: [9]"
 
 #: inc_openoffice/windows/msi_languages/ActionTe.ulf#OOO_ACTIONTEXT_69
 msgid  "Updating environment strings"
-msgstr "Omgevingstekenreeksen worden bijgewerkt"
+msgstr "Omgevingstekenreeksen worden geregistreerd"
 
 #: inc_openoffice/windows/msi_languages/ActionTe.ulf#OOO_ACTIONTEXT_70
 msgid  "Name: [1], Value: [2], Action [3]"
-msgstr "Naam: [1], Waarde: [2], Handeling [3]"
+msgstr "Naam: [1], waarde: [2], handeling [3]"
 
 #: inc_openoffice/windows/msi_languages/ActionTe.ulf#OOO_ACTIONTEXT_71
 msgid  "Removing applications"
@@ -1289,7 +1289,7 @@ msgstr "Klasse-ID: [1]"
 
 #: inc_openoffice/windows/msi_languages/ActionTe.ulf#OOO_ACTIONTEXT_107
 msgid  "Unregistering COM+ Applications and Components"
-msgstr ""
+msgstr "Registratie van COM+-toepassingen en -componenten wordt ongedaan gemaakt"
 
 #: inc_openoffice/windows/msi_languages/ActionTe.ulf#OOO_ACTIONTEXT_108
 msgid  "AppId: [1]{{, AppType: [2]}}"
@@ -1361,7 +1361,7 @@ msgstr "Sleutel: [1], Naam: [2], Waarde: [3]"
 
 #: inc_openoffice/windows/msi_languages/LaunchCo.ulf#OOO_LAUNCH_1
 msgid  "The Installation Wizard cannot be run properly because you are logged in as a user without sufficient administrator rights for this system."
-msgstr ""
+msgstr "De Installatiewizard kan niet goed werken omdat u aangemeld bent als gebruiker zonder voldoende beheerdersrechten voor dit systeem."
 
 #: inc_openoffice/windows/msi_languages/LaunchCo.ulf#OOO_LAUNCH_2
 msgid  "Please use the file setup.exe to start the installation."
@@ -1385,7 +1385,7 @@ msgstr "Map selecteren"
 
 #: inc_openoffice/windows/msi_languages/Nsis.ulf#MUI_TEXT_DIRECTORY_SUBTITLE
 msgid  "Select the folder in which to save the unpacked files."
-msgstr ""
+msgstr "Selecteer de map waarin de uitgepakte bestanden opgeslagen moeten worden."
 
 #: inc_openoffice/windows/msi_languages/Nsis.ulf#InstallBtn
 msgid  "&Unpack"
@@ -1421,7 +1421,7 @@ msgstr "Uitpakken: "
 
 #: inc_openoffice/windows/msi_languages/Nsis.ulf#MUI_TEXT_ABORTWARNING
 msgid  "Are you sure you want to quit the %PRODUCTNAME %PRODUCTVERSION Installation Preparation"
-msgstr ""
+msgstr "Weet u zeker dat u de installatievoorbereiding van %PRODUCTNAME %PRODUCTVERSION wilt afsluiten"
 
 #: inc_openoffice/windows/msi_languages/SIS.ulf#OOO_SIS_TITLE
 msgid  "Installation database"
@@ -1493,11 +1493,11 @@ msgstr "Annuleren"
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_19
 msgid  "Specify a network location for the server image of the product."
-msgstr ""
+msgstr "De netwerklocatie voor de installatiekopie van het product specificeren."
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_20
 msgid  "Enter the network location or click Change to browse to a location.  Click Install to create a server image of [ProductName] at the specified network location or click Cancel to exit the wizard."
-msgstr ""
+msgstr "Geef de netwerklocatie op of klik op Wijzigen als u een locatie wilt zoeken. Klik op 'Installeren' als u de installatiekopie van [ProductName] op de opgegeven locatie in het netwerk wilt neerzetten, of klik op 'Annuleren' als u de wizard wilt sluiten."
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_21
 msgid  "{&MSSansBold8}Network Location"
@@ -1525,11 +1525,11 @@ msgstr "&Volgende >"
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_27
 msgid  "{&TahomaBold10}Welcome to the Installation Wizard for [ProductName]"
-msgstr "{&TahomaBold10}Welkom bij de installatiewizard voor [ProductName]"
+msgstr "{&TahomaBold10}Welkom bij de Installatiewizard voor [ProductName]"
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_28
 msgid  "The Installation Wizard will create a server image of [ProductName] at a specified network location. To continue, click Next."
-msgstr ""
+msgstr "De Installatiewizard maakt een installatiekopie van [ProductName] op een opgegeven netwerklocatie. Klik op 'Volgende' om door te gaan."
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_29
 msgid  "&No"
@@ -1609,7 +1609,7 @@ msgstr "Selecteer de programmaonderdelen die u wilt installeren."
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_53
 msgid  "Click on an icon in the list below to change how a feature is installed."
-msgstr ""
+msgstr "Klik op een pictogram in onderstaande lijst om een onderdeel van de installatie te wijzigen."
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_54
 msgid  "{&MSSansBold8}Custom Setup"
@@ -1645,7 +1645,7 @@ msgstr "Grootte van onderdeel"
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_64
 msgid  "Custom Setup allows you to selectively install program features."
-msgstr ""
+msgstr "Met 'Aangepaste installatie' kunt u kiezen welke programmaonderdelen worden geïnstalleerd."
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_65
 msgid  "{&MSSansBold8}Custom Setup Tips"
@@ -1657,7 +1657,7 @@ msgstr "Zal niet worden geïnstalleerd."
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_67
 msgid  "Will be installed on first use. (Available only if the feature supports this option.)"
-msgstr ""
+msgstr "Zal worden geïnstalleerd bij eerste gebruik. (Alleen beschikbaar als het onderdeel deze optie ondersteunt.)"
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_68
 msgid  "This install state means the feature..."
@@ -1669,11 +1669,11 @@ msgstr "het onderdeel geheel wordt geïnstalleerd op de lokale harde schijf."
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_70
 msgid  "The icon next to the feature name indicates the install state of the feature. Click the icon to drop down the install state menu for each feature."
-msgstr ""
+msgstr "Het pictogram naast de onderdeelnaam geeft de installatiestatus van het onderdeel aan. Klik op het pictogram om het installatiestatusmenu voor elk onderdeel uit te klappen."
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_71
 msgid  "Will be installed to run from the network. (Available only if the feature supports this option.)"
-msgstr ""
+msgstr "het onderdeel geheel wordt geïnstalleerd om vanaf het netwerk uit te voeren. (Alleen beschikbaar als het onderdeel deze optie ondersteunt.)"
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_72
 msgid  "OK"
@@ -1681,7 +1681,7 @@ msgstr "OK"
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_73
 msgid  "Will have some subfeatures installed to the local hard drive. (Available only if the feature has subfeatures.)"
-msgstr ""
+msgstr "een aantal subonderdelen van het onderdeel op de lokale harde schijf wordt geïnstalleerd. (Alleen beschikbaar als het onderdeel subonderdelen heeft.)"
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_74
 msgid  "< &Back"
@@ -1697,7 +1697,7 @@ msgstr "&Wijzigen..."
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_79
 msgid  "Click Next to install to this folder, or click Change to install to a different folder."
-msgstr ""
+msgstr "Klik op 'Volgende' om de bestanden in deze doelmap te installeren, of op 'Wijzigen' om de bestanden in een andere map te installeren."
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_80
 msgid  "{&MSSansBold8}Database Folder"
@@ -1729,7 +1729,7 @@ msgstr "&Wijzigen..."
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_89
 msgid  "Click Next to install to this folder, or click Change to install to a different folder."
-msgstr ""
+msgstr "Klik op 'Volgende' om de bestanden in deze map te installeren, of op Wijzigen om de bestanden in een andere map te installeren."
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_90
 msgid  "{&MSSansBold8}Destination Folder"
@@ -1749,11 +1749,11 @@ msgstr "&Volgende >"
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_96
 msgid  "The disk space required for the installation of the selected features."
-msgstr ""
+msgstr "De schijfruimte die vereist is voor de installatie van de geselecteerde onderdelen."
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_97
 msgid  "The highlighted volumes do not have enough disk space available for the currently selected features. You can remove files from the highlighted volumes, choose to install less features onto local drives, or select different destination drives."
-msgstr ""
+msgstr "De gemarkeerde stations hebben niet voldoende schijfruimte voor de geselecteerde onderdelen. U kunt bestanden ervan verwijderen, ervoor kiezen minder onderdelen op de lokale schijven te installeren, of andere doelstations selecteren."
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_98
 msgid  "{&MSSansBold8}Disk Space Requirements"
@@ -1765,11 +1765,11 @@ msgstr "OK"
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_103
 msgid  "Some files that need to be updated are currently in use."
-msgstr ""
+msgstr "Bepaalde bestanden die moeten worden bijgewerkt zijn momenteel in gebruik."
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_104
 msgid  "The following applications are using files that need to be updated by this setup. Close these applications and click Retry to continue."
-msgstr ""
+msgstr "De volgende toepassingen gebruiken bestanden die moeten worden bijgewerkt door deze installatie. Sluit deze toepassingen en klik op 'Opnieuw proberen' om door te gaan."
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_105
 msgid  "{&MSSansBold8}Files in Use"
@@ -1785,7 +1785,7 @@ msgstr "&Negeren"
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_108
 msgid  "&Retry"
-msgstr "&Opnieuw proberen"
+msgstr "&Opnieuw"
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_111
 msgid  "Cancel"
@@ -1837,11 +1837,11 @@ msgstr "&Volgende >"
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_126
 msgid  "{&TahomaBold10}Welcome to the Installation Wizard for [ProductName]"
-msgstr "{&TahomaBold10}Welkom bij de installatiewizard voor [ProductName]"
+msgstr "{&TahomaBold10}Welkom bij de Installatiewizard voor [ProductName]"
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_127
 msgid  "The Installation Wizard will install [ProductName] on your computer. To continue, click Next."
-msgstr ""
+msgstr "De Installatiewizard installeert [ProductName] op uw computer. Klik op 'Volgende' om door te gaan."
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_128
 msgid  "< &Back"
@@ -1885,11 +1885,11 @@ msgstr "&Volgende >"
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_143
 msgid  "Change which program features are installed. This option displays the Custom Selection dialog in which you can change the way features are installed."
-msgstr ""
+msgstr "Wijzigen welke onderdelen worden geïnstalleerd. Als u deze optie kiest, wordt het dialoogvenster Aangepaste selectie weergegeven waarin u kunt bepalen hoe onderdelen moeten worden geïnstalleerd."
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_144
 msgid  "Repair installation errors in the program. This option fixes missing or corrupt files, shortcuts, and registry entries."
-msgstr ""
+msgstr "Installatiefouten in het programma repareren. Deze optie herstelt ontbrekende of beschadigde bestanden, snelkoppelingen en systeemregistervermeldingen."
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_145
 msgid  "Remove [ProductName] from your computer."
@@ -1913,15 +1913,15 @@ msgstr "{&TahomaBold10}Welkom bij de Installatiewizard voor [ProductName]"
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_150
 msgid  "The Installation Wizard will allow you to modify, repair, or remove [ProductName]. To continue, click Next."
-msgstr ""
+msgstr "Met de Installatiewizard kunt u [ProductName] aanpassen, repareren of verwijderen. Klik op 'Volgende' om door te gaan."
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_153
 msgid  "Disk space required for the installation exceeds available disk space."
-msgstr ""
+msgstr "De benodigde schijfruimte voor deze installatie is groter dan de beschikbare schijfruimte."
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_154
 msgid  "The highlighted volumes do not have enough disk space available for the currently selected features. You can remove files from the highlighted volumes, choose to install less features onto local drives, or select different destination drives."
-msgstr ""
+msgstr "De gemarkeerde stations hebben niet voldoende schijfruimte voor de geselecteerde onderdelen. U kunt bestanden ervan verwijderen, ervoor kiezen minder onderdelen op de lokale schijven te installeren, of andere doelstations selecteren."
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_155
 msgid  "{&MSSansBold8}Out of Disk Space"
@@ -1953,7 +1953,7 @@ msgstr "{&TahomaBold10}Welkom bij de Patch voor [ProductName]"
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_162
 msgid  "The Installation Wizard will install the Patch for [ProductName] on your computer.  To continue, click Update."
-msgstr ""
+msgstr "De Installatiewizard installeert de Patch voor [ProductName] op uw computer. Klik op 'Bijwerken' om door te gaan."
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_163
 msgid  "< &Back"
@@ -1973,7 +1973,7 @@ msgstr "Klik op 'Installeren' om de installatie te beginnen."
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_169
 msgid  "If you want to review or change any of your installation settings, click Back. Click Cancel to exit the wizard."
-msgstr ""
+msgstr "Als u een installatie-instelling wilt weergeven of wijzigen, klikt u op 'Vorige'. Klik op 'Annuleren' om de wizard af te sluiten."
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_170
 msgid  "{&MSSansBold8}Ready to Modify the Program"
@@ -2005,7 +2005,7 @@ msgstr "U hebt ervoor gekozen het programma van uw systeem te verwijderen."
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_179
 msgid  "Click Remove to remove [ProductName] from your computer. After removal, this program will no longer be available for use."
-msgstr ""
+msgstr "Klik op 'Verwijderen' om [ProductName] van uw computer te verwijderen. Hierna zal het programma niet meer voor gebruik beschikbaar zijn."
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_180
 msgid  "If you want to review or change any settings, click Back."
@@ -2033,7 +2033,7 @@ msgstr "&Voltooien"
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_186
 msgid  "Your system has not been modified. To complete installation at another time, please run setup again."
-msgstr ""
+msgstr "Uw systeem is niet gewijzigd. Teneinde de installatie later te voltooien moet u de Setup opnieuw uitvoeren."
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_187
 msgid  "Click Finish to exit the wizard."
@@ -2041,7 +2041,7 @@ msgstr "Klik op 'Voltooien' om de wizard af te sluiten."
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_188
 msgid  "You can either keep any existing installed elements on your system to continue this installation at a later time or you can restore your system to its original state prior to the installation."
-msgstr ""
+msgstr "U kunt ofwel bestaande geïnstalleerde elementen op uw systeem behouden om later door te gaan met deze installatie, of u kunt uw systeem terugbrengen naar de toestand van voor de installatie."
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_189
 msgid  "Click Restore or Continue Later to exit the wizard."
@@ -2053,7 +2053,7 @@ msgstr "{&TahomaBold10}Installatiewizard voltooid"
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_191
 msgid  "The wizard was interrupted before [ProductName] could be completely installed."
-msgstr ""
+msgstr "De wizard werd onderbroken voordat [ProductName] volledig kon worden geïnstalleerd."
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_192
 msgid  "< &Back"
@@ -2065,7 +2065,7 @@ msgstr "Annuleren"
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_194
 msgid  "&Yes, check for program updates (Recommended) after the setup completes."
-msgstr ""
+msgstr "&Ja, op updates controleren (aanbevolen) nadat de installatie is voltooid."
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_195
 msgid  "Launch the program"
@@ -2085,11 +2085,11 @@ msgstr "{&TahomaBold10}Installatiewizard voltooid"
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_199
 msgid  "The Installation Wizard has successfully installed [ProductName]. Click Finish to exit the wizard."
-msgstr ""
+msgstr "De Installatiewizard heeft [ProductName] geïnstalleerd. Klik op 'Voltooien' om de wizard af te sluiten."
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_200
 msgid  "The Installation Wizard has successfully uninstalled [ProductName]. Click Finish to exit the wizard."
-msgstr ""
+msgstr "De Installatiewizard heeft [ProductName] verwijderd. Klik op 'Voltooien' om de wizard af te sluiten."
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_201
 msgid  "Setup has finished installing [ProductName]."
@@ -2097,11 +2097,11 @@ msgstr "Setup heeft de installatie van [ProductName] voltooid."
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_202
 msgid  "Some program files might have been updated since you purchased your copy of [ProductName]."
-msgstr ""
+msgstr "Bepaalde programmabestanden kunnen zijn bijgewerkt nadat u uw licentie van [ProductName] hebt aangeschaft."
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_203
 msgid  "Your Internet connection can be used to make sure that you have the latest updates."
-msgstr ""
+msgstr "U kunt uw internetverbinding gebruiken om te controleren of u de nieuwste updates hebt."
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_204
 msgid  "&Abort"
@@ -2113,7 +2113,7 @@ msgstr "&Annuleren"
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_206
 msgid  "error text goes here  error text goes here  error text goes here  error text goes here  error text goes here  error text goes here  error text goes here  error text goes here  error text goes here  error text goes here"
-msgstr ""
+msgstr "error text goes here  error text goes here  error text goes here  error text goes here  error text goes here  error text goes here  error text goes here  error text goes here  error text goes here  error text goes here"
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_207
 msgid  "&Ignore"
@@ -2153,7 +2153,7 @@ msgstr "{&TahomaBold10}Welkom bij de installatiewizard voor [ProductName]"
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_218
 msgid  "[ProductName] Setup is preparing the Installation Wizard which will guide you through the program setup process.  Please wait."
-msgstr ""
+msgstr "[ProductName] Set-up initialiseert de installatiewizard die u zal begeleiden door het installatieproces. Een ogenblik geduld."
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_219
 msgid  "< &Back"
@@ -2169,7 +2169,7 @@ msgstr "&Voltooien"
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_222
 msgid  "Your system has not been modified. To install this program at a later time, please run the installation again."
-msgstr ""
+msgstr "Uw systeem is niet gewijzigd. Voer de installatie opnieuw uit om het programma later te installeren."
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_223
 msgid  "Click Finish to exit the wizard."
@@ -2177,7 +2177,7 @@ msgstr "Klik op 'Voltooien' om de wizard af te sluiten."
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_224
 msgid  "You can either keep any existing installed elements on your system to continue this installation at a later time or you can restore your system to its original state prior to the installation."
-msgstr ""
+msgstr "U kunt ofwel bestaande geïnstalleerde elementen op uw systeem behouden, om later door te gaan met deze installatie, of u kunt uw systeem terugbrengen naar de toestand van voor de installatie."
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_225
 msgid  "Click Restore or Continue Later to exit the wizard."
@@ -2189,7 +2189,7 @@ msgstr "{&TahomaBold10}Installatiewizard voltooid"
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_227
 msgid  "The wizard was interrupted before [ProductName] could be completely installed."
-msgstr ""
+msgstr "De wizard werd onderbroken voordat [ProductName] volledig kon worden geïnstalleerd."
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_228
 msgid  "Progress done"
@@ -2213,11 +2213,11 @@ msgstr "De geselecteerde programmaonderdelen worden gedeïnstalleerd."
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_236
 msgid  "Please wait while the Installation Wizard installs [ProductName]. This may take several minutes."
-msgstr ""
+msgstr "Een ogenblik geduld terwijl de installatiewizard [ProductName] installeert. Dit kan enkele minuten duren."
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_237
 msgid  "Please wait while the Installation Wizard uninstalls [ProductName]. This may take several minutes."
-msgstr ""
+msgstr "Een ogenblik geduld terwijl de installatiewizard [ProductName] deïnstalleert. Dit kan enkele minuten duren."
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_238
 msgid  "{&MSSansBold8}Installing [ProductName]"
@@ -2257,11 +2257,11 @@ msgstr "&Volgende >"
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_248
 msgid  "The Installation Wizard will complete the installation of [ProductName] on your computer. To continue, click Next."
-msgstr ""
+msgstr "De installatiewizard voltooit de installatie van [ProductName] op uw computer. Klik op 'Volgende' om door te gaan."
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_249
 msgid  "The Installation Wizard will complete the suspended installation of [ProductName] on your computer. To continue, click Next."
-msgstr ""
+msgstr "De installatiewizard zet de uitgestelde installatie van [ProductName] op uw computer voort. Klik op 'Volgende' om door te gaan."
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_250
 msgid  "{&TahomaBold10}Resuming the Installation Wizard for [ProductName]"
@@ -2277,11 +2277,11 @@ msgstr "Annuleren"
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_255
 msgid  "The main components will be installed. Recommended for most users."
-msgstr ""
+msgstr "De belangrijkste componenten zullen worden geïnstalleerd. Aanbevolen voor de meeste gebruikers."
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_256
 msgid  "Choose which program features you want installed and where they will be installed. Recommended for advanced users."
-msgstr ""
+msgstr "Kies de programmaonderdelen die u wilt installeren en geef op waar u deze onderdelen wilt installeren. Aanbevolen voor ervaren gebruikers."
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_257
 msgid  "Choose the setup type that best suits your needs."
@@ -2341,11 +2341,11 @@ msgstr "&[ProductName] Writer/Web"
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_274
 msgid  "Set [DEFINEDPRODUCT] to be the default application for Microsoft Office file types."
-msgstr ""
+msgstr "Stel [DEFINEDPRODUCT] in als de standaard toepassing voor deze bestandstypen."
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_275
 msgid  "[ProductName] can be set as the default application to open Microsoft Office file types. This means, for instance, that if you double click on one of these files, [ProductName] will open it, not the program that opens it now."
-msgstr ""
+msgstr "[ProductName] kan worden ingesteld als de standaard toepassing om Microsoft Office bestandstypen te openen. Dit betekent bijvoorbeeld dat als u op een van deze bestanden dubbelklikt, het geopend wordt door [ProductName], niet door het programma waar het nu door geopend wordt."
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_276
 msgid  "File types"
@@ -2361,11 +2361,11 @@ msgstr "{&MSSansBold8}Bestandstype"
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_300
 msgid  "A version of [DEFINEDPRODUCT] [DEFINEDVERSION] was found by the [ProductName] Installation Wizard. This version will be updated."
-msgstr ""
+msgstr "De Installatiewizard van [ProductName] heeft een versie van [DEFINEDPRODUCT] [DEFINEDVERSION] gevonden. Deze versie wordt bijgewerkt."
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_301
 msgid  "The destination folder specified below does not contain a [DEFINEDPRODUCT] [DEFINEDVERSION] version."
-msgstr ""
+msgstr "In de hieronder opgegeven doelmap staat geen versie van [DEFINEDPRODUCT] [DEFINEDVERSION]."
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_302
 msgid  "A newer [DEFINEDPRODUCT] [DEFINEDVERSION] has been found."
@@ -2380,15 +2380,15 @@ msgid  "Check the destination folder."
 msgstr "Controleer de doelmap."
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_305
-msgid  "To continue, click "Next"."
+msgid  "To continue, click \"Next\"."
 msgstr ""
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_306
-msgid  "To select a different version, click "Change". Otherwise click "Cancel" to abort the Installation Wizard."
+msgid  "To select a different version, click \"Change\". Otherwise click \"Cancel\" to abort the Installation Wizard."
 msgstr ""
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_307
-msgid  "To select a different folder, click "Change"."
+msgid  "To select a different folder, click \"Change\"."
 msgstr ""
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_308
@@ -2397,15 +2397,15 @@ msgstr "[ProductName] installeren in:"
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_309
 msgid  "If you are just trying out [ProductName], you probably don't want this to happen, so leave the boxes unchecked."
-msgstr ""
+msgstr "Als u [ProductName] gewoon uitprobeert, wilt u waarschijnlijk niet dat dit gebeurt. Selecteer deze vakjes daarom niet."
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_317
 msgid  "No languages have been selected for installation. Click OK to select one or more languages for installation."
-msgstr ""
+msgstr "Er zijn geen talen geselecteerd voor de installatie. Klik op OK om één of meer talen voor de installatie te selecteren."
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_318
 msgid  "No applications have been selected for installation. Click OK to select one or more applications for installation."
-msgstr ""
+msgstr "Er zijn geen toepassingen geselecteerd voor de installatie. Klik op OK om één of meer toepassingen te selecteren voor de installatie."
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_319
 msgid  "Create a start link on desktop"

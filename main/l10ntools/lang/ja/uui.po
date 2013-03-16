@@ -85,7 +85,7 @@ msgstr "パスワードの入力"
 
 #: source/passworddlg.src#DLG_UUI_PASSWORD.STR_PASSWORD_MISMATCH.String.Text
 msgid  "The confirmation password did not match the password. Set the password again by entering the same password in both boxes."
-msgstr ""
+msgstr "確認用パスワードが入力したパスワードと一致しませんでした。入力欄の両方に再度同じパスワードを入力してパスワードを設定してください。"
 
 #: source/trylater.src#STR_TRYLATER_TITLE.String.Text
 msgid  "Document in Use"
@@ -93,7 +93,7 @@ msgstr "ドキュメントは使用中です"
 
 #: source/trylater.src#STR_TRYLATER_MSG.String.Text
 msgid  "Document file '$(ARG1)' is locked for editing by:\n\n$(ARG2)\n\nTry again later to save document or save a copy of that document.\n\n"
-msgstr ""
+msgstr "ドキュメントファイル '$(ARG1)' は次の人が編集中のためロックされています:\n\n$(ARG2)\n\nドキュメントを後でもう一度保存するか、ドキュメントのコピーを保存してください。\n\n"
 
 #: source/trylater.src#STR_TRYLATER_RETRYSAVING_BTN.String.Text
 msgid  "~Retry Saving"
@@ -137,7 +137,7 @@ msgstr "ターゲットがすでに存在します。"
 
 #: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_IO_MODULESIZEEXCEEDED & ERRCODE_RES_MASK).String.Text
 msgid  "You are about to save/export a password protected basic library containing module(s) \n$(ARG1)\nwhich are too large to store in binary format. If you wish users that don't have access to the library password to be able to run macros in those module(s) you must split those modules into a number of smaller modules. Do you wish to continue to save/export this library?"
-msgstr ""
+msgstr "バイナリ形式で保存するには大きすぎるモジュール \n$(ARG1)\n を含むパスワード保護された Basic ライブラリを保存またはエクスポートしようとしています。ライブラリパスワードにアクセス権のないユーザーがこれらのモジュールでマクロを実行できるようにするには、これらのモジュールを小さなモジュールに分割する必要があります。このライブラリの保存またはエクスポートを続けますか。"
 
 #: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_IO_BADCRC & ERRCODE_RES_MASK).String.Text
 msgid  "The data from $(ARG1) has an incorrect checksum."
@@ -241,11 +241,11 @@ msgstr "デバイス $(ARG1) には空き容量はありません。"
 
 #: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_IO_TOOMANYOPENFILES & ERRCODE_RES_MASK).String.Text
 msgid  "The operation on $(ARG1) cannot be performed because too many files are already open."
-msgstr ""
+msgstr "すでに多くのファイルが開かれているため、$(ARG1) への操作は実行できません。"
 
 #: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_IO_OUTOFMEMORY & ERRCODE_RES_MASK).String.Text
 msgid  "The operation on $(ARG1) cannot be performed because there is no more memory available."
-msgstr ""
+msgstr "$(ARG1) への操作は空き容量不足のため実行できません。"
 
 #: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_IO_PENDING & ERRCODE_RES_MASK).String.Text
 msgid  "The operation on $(ARG1) cannot continue because more data is pending."
@@ -289,11 +289,11 @@ msgstr "インストールされているバージョン $(ARG1) の Java はサ
 
 #: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_WRONGJAVA_MIN & ERRCODE_RES_MASK).String.Text
 msgid  "The installed Java version is not supported, at least version $(ARG1) is required."
-msgstr ""
+msgstr "インストールされているバージョンの Java はサポートされません。バージョン $(ARG1) 以上のものが必要です。"
 
 #: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_WRONGJAVA_VERSION_MIN & ERRCODE_RES_MASK).String.Text
 msgid  "The installed Java version $(ARG1) is not supported, at least version $(ARG2) is required."
-msgstr ""
+msgstr "インストールされているバージョン $(ARG1) の Java はサポートされません。バージョン $(ARG2) 以上が必要です。"
 
 #: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_BADPARTNERSHIP & ERRCODE_RES_MASK).String.Text
 msgid  "The data associated with the partnership is corrupted."
@@ -325,31 +325,31 @@ msgstr "ディレクトリ $(ARG1) にオブジェクトを作成できません
 
 #: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_IO_UNSUPPORTEDOVERWRITE & ERRCODE_RES_MASK).String.Text
 msgid  "%PRODUCTNAME cannot keep files from being overwritten when this transmission protocol is used. Do you want to continue anyway?"
-msgstr ""
+msgstr "この転送プロトコルを使用すると、%PRODUCTNAME ではファイルが上書きされることがあります。処理を続行しますか。"
 
 #: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_IO_BROKENPACKAGE & ERRCODE_RES_MASK).String.Text
 msgid  "The file '$(ARG1)' is corrupt and therefore cannot be opened. %PRODUCTNAME can try to repair the file.\n\nThe corruption could be the result of document manipulation or of structural document damage due to data transmission.\n\nWe recommend that you do not trust the content of the repaired document.\nExecution of macros is disabled for this document.\n\nShould %PRODUCTNAME repair the file?\n"
-msgstr ""
+msgstr "ファイル '$(ARG1)' は汚染されているため、開くことができません。%PRODUCTNAME で修復を試してください。\n\nこの汚染は、データ送信に伴う、ドキュメントの改ざんまたは構造的なドキュメントの損傷により引き起こされた可能性があります。\n\n修復されたドキュメントの内容は信用しないことを推奨します。\nこのドキュメントのマクロの実行は無効化されます。\n\n%PRODUCTNAME で、ドキュメントの修復を試みますか?\n"
 
 #: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_IO_BROKENPACKAGE_CANTREPAIR & ERRCODE_RES_MASK).String.Text
 msgid  "The file '$(ARG1)' could not be repaired and therefore cannot be opened."
-msgstr ""
+msgstr "ファイル '$(ARG1)' は修復できませんでした。開くことはできません。"
 
 #: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_CONFIGURATION_BROKENDATA_NOREMOVE & ERRCODE_RES_MASK).String.Text
 msgid  "Configuration data in '$(ARG1)' is corrupted. Without this data some functions may not operate correctly.\nDo you want to continue startup of %PRODUCTNAME without the corrupted configuration data?"
-msgstr ""
+msgstr "'$(ARG1)' 内の設定データが壊れています。このデータがないと、一部の機能が正常に動作しません。\nこの壊れた設定データなしで %PRODUCTNAME のスタートアップを続行しますか。"
 
 #: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_CONFIGURATION_BROKENDATA_WITHREMOVE & ERRCODE_RES_MASK).String.Text
 msgid  "The personal configuration file '$(ARG1)' is corrupted and must be deleted to continue. Some of your personal settings may be lost.\nDo you want to continue startup of %PRODUCTNAME without the corrupted configuration data?"
-msgstr ""
+msgstr "個人用設定ファイル '$(ARG1)' が壊れています。続行するには、このファイルを削除する必要があります。削除する場合、個人設定の一部が失われる可能性があります。\nこの壊れた設定データなしで %PRODUCTNAME のスタートアップを続行しますか。"
 
 #: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_CONFIGURATION_BACKENDMISSING & ERRCODE_RES_MASK).String.Text
 msgid  "The configuration data source '$(ARG1)' is unavailable. Without this data some functions may not operate correctly."
-msgstr ""
+msgstr "設定データソース '$(ARG1)' を使用できません。このデータがないと、一部の機能が正常に動作しません。"
 
 #: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_CONFIGURATION_BACKENDMISSING_WITHRECOVER & ERRCODE_RES_MASK).String.Text
 msgid  "The configuration data source '$(ARG1)' is unavailable. Without this data some functions may not operate correctly.\nDo you want to continue startup of %PRODUCTNAME without the missing configuration data?"
-msgstr ""
+msgstr "設定データソース '$(ARG1)' を使用できません。このデータがないと、一部の機能が正常に動作しません。\nこの設定データなしで %PRODUCTNAME のスタートアップを続行しますか。"
 
 #: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_INVALID_XFORMS_SUBMISSION_DATA & ERRCODE_RES_MASK).STRING.Text
 msgid  "The form contains invalid data. Do you still want to continue?"
@@ -357,11 +357,11 @@ msgstr "フォームには無効なデータが含まれています。それで
 
 #: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_LOCKING_LOCKED & ERRCODE_RES_MASK).String.Text
 msgid  "The file $(ARG1) is locked by another user. Currently, another write access to this file cannot be granted."
-msgstr ""
+msgstr "ファイル $(ARG1) は他のユーザーが使用中のためロックされています。書き込みアクセスは現在できません。"
 
 #: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_LOCKING_LOCKED_SELF & ERRCODE_RES_MASK).String.Text
 msgid  "The file $(ARG1) is locked by yourself. Currently, another write access to this file cannot be granted."
-msgstr ""
+msgstr "ファイル $(ARG1) はロックして使用中です。書き込みアクセスは現在できません。"
 
 #: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_LOCKING_NOT_LOCKED & ERRCODE_RES_MASK).String.Text
 msgid  "The file $(ARG1) is currently not locked by yourself."
@@ -369,23 +369,23 @@ msgstr "ファイル $(ARG1) に、このプログラムからのロックはさ
 
 #: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_LOCKING_LOCK_EXPIRED & ERRCODE_RES_MASK).String.Text
 msgid  "The previously obtained lock for file $(ARG1) has expired.\nThis can happen due to problems on the server managing the file lock. It cannot be guaranteed that write operations on this file will not overwrite changes done by other users!"
-msgstr ""
+msgstr "ファイル  $(ARG1) のロックは有効期限を過ぎています。\nファイルのロックを管理しているサーバーに問題があるかも知れません。このファイルへ書き込むと他のユーザーが修正した内容を上書きする可能性があります。"
 
 #: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_UNKNOWNAUTH_UNTRUSTED).STRING.Text
 msgid  "Unable to verify the identity of $(ARG1) site.\n\nBefore accepting this certificate, you should examine this site's certificate carefully. Are you willing to accept this certificate for the purpose of identifying the Web site $(ARG1)?"
-msgstr ""
+msgstr "$(ARG1) サイトの ID を確認できません。\n\nこの証明書を受け入れる前に、このサイトの証明書を慎重に調べるようにしてください。 Web サイト $(ARG1) を識別するために、この証明書を受け入れますか ?"
 
 #: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_SSLWARN_EXPIRED_1).STRING.Text
 msgid  "$(ARG1) is a site that uses a security certificate to encrypt data during transmission, but its certificate expired on $(ARG2).\n\nYou should check to make sure that your computer's time is correct."
-msgstr ""
+msgstr "$(ARG1) は、転送中にデータを暗号化するためにセキュリティー証明書を使用するサイトですが、$(ARG2) 上で証明書の有効期限が切れました。\n\nコンピュータの時間が正しいことを確認してください。"
 
 #: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_SSLWARN_DOMAINMISMATCH_1).STRING.Text
 msgid  "You have attempted to establish a connection with $(ARG1). However, the security certificate presented belongs to $(ARG2). It is possible, though unlikely, that someone may be trying to intercept your communication with this web site.\n\nIf you suspect the certificate shown does not belong to $(ARG1), please cancel the connection and notify the site administrator.\n\nWould you like to continue anyway?"
-msgstr ""
+msgstr "$(ARG1) との接続を確立しようとしましたが、提示されたセキュリティー証明書は $(ARG2) に属しています。 だれかがこの Web サイトとの通信を妨害しようとしている可能性がわずかですがあります。\n\n表示された証明書が $(ARG1) に属していないことが疑われる場合は、接続を中断して、サイト管理者に知らせてください。\n\nそれでも続行しますか ?"
 
 #: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_SSLWARN_INVALID_1).STRING.Text
 msgid  "The certificate could not be validated. You should examine this site's certificate carefully.\n\nIf you suspect the certificate shown, please cancel the connection and notify the site administrator."
-msgstr ""
+msgstr "証明書を検証できませんでした。 このサイトの証明書を慎重に調べるようにしてください。\n\n表示された証明書が疑わしい場合は、接続を中断して、サイト管理者に知らせてください。"
 
 #: source/ids.src#RID_UUI_ERRHDL.(TITLE_UUI_SSLWARN_DOMAINMISMATCH).STRING.Text
 msgid  "Security Warning: Domain Name Mismatch"
@@ -413,11 +413,11 @@ msgstr "サーバーからのメッセージ"
 
 #: source/logindlg.src#DLG_UUI_LOGIN.FT_INFO_LOGIN_REQUEST.FixedText.Text
 msgid  "Enter user name and password for: \n%1"
-msgstr ""
+msgstr "次の場所に使うユーザー名とパスワードを入力してください: \n%1"
 
 #: source/logindlg.src#DLG_UUI_LOGIN.STR_LOGIN_REALM.String.Text
-msgid  "Enter user name and password for: \n"%2" on %1"
-msgstr ""
+msgid  "Enter user name and password for: \n\"%2\" on %1"
+msgstr "次の場所に使うユーザー名とパスワードを入力してください: \n%1 の \"%2\" "
 
 #: source/logindlg.src#DLG_UUI_LOGIN.FT_LOGIN_PATH.FixedText.Text
 msgid  "~Path"
@@ -469,7 +469,7 @@ msgstr "受け入れる(~S)"
 
 #: source/cookiedg.src#STR_COOKIES_RECV_START.String.Text
 msgid  "The '${HOST}' server wishes to set one or more cookies.\nCookies contain information referring to certain URL classes. If %PRODUCTNAME later requests a document with a URL corresponding to the class of a previously set cookie, %PRODUCTNAME will send this information to the server. This allows a server to recognize the status of a WWW application, e.g., when shopping online.\n\nThe following Cookies should be set:\n\n"
-msgstr ""
+msgstr "サーバー '${HOST}' は1つ以上のクッキーの設定が必要です。\nクッキーはURLのあるクラスに関連する情報です。すでに受信しているクッキーと同じURLのドキュメントを %PRODUCTNAME が要求したとき、この情報が %PRODUCTNAME からサーバーに送られます。そしてサーバーが WWW の使用状態(オンライン購買の際に買い物かごの中に入れた商品など)を覚えておきます。\n\n以下のクッキーを設定します。\n\n"
 
 #: source/cookiedg.src#STR_COOKIES_RECV_COOKIES.String.Text
 msgid  "Domain: ${DOMAIN}, Path: ${PATH}, Cookie: ${COOKIE}.\n"
@@ -481,7 +481,7 @@ msgstr "クッキーの受信"
 
 #: source/cookiedg.src#STR_COOKIES_SEND_START.String.Text
 msgid  "%PRODUCTNAME has saved cookies for the server '${HOST}' which will be sent when requesting the document ${PATH}.\nCookies contain information which refers to certain URL classes. They are sent by some servers to %PRODUCTNAME where they are saved when certain documents are accessed. If %PRODUCTNAME loads a document that, according to the URL, corresponds to a class of one of the previously received Cookies, %PRODUCTNAME will send this information to that server. This enables a server to keep track of the status of a WWW application, e.g., when shopping online.\n\nThe following Cookies should be set:\n\n"
-msgstr ""
+msgstr "%PRODUCTNAME はサーバー '${HOST}' 用に、ドキュメント ${PATH} 要求の際に送信されるクッキーを保存しました。\nクッキーは UR Lのあるクラスに関連する情報で、あるドキュメントがいくつかのサーバーから呼び出された際に %PRODUCTNAME に送信され、そこで保存されます。すでに受信したクッキーと同じ URL のドキュメントを %PRODUCTNAME が要求したとき、この情報が %PRODUCTNAME からサーバーに送られます。そしてサーバーが WWW の使用状態(オンライン購買の際に買い物かごの中に入れた商品など)を覚えておきます。\n\n以下のクッキーを設定します。\n\n"
 
 #: source/cookiedg.src#STR_COOKIES_SEND_COOKIES.String.Text
 msgid  "Domain: ${DOMAIN}, Path: ${PATH}, Cookie: ${COOKIE}.\n"
@@ -529,7 +529,7 @@ msgstr "ドキュメントは使用中です"
 
 #: source/openlocked.src#STR_OPENLOCKED_MSG.String.Text
 msgid  "Document file '$(ARG1)' is locked for editing by:\n\n$(ARG2)\n\nOpen document read-only or open a copy of the document for editing.\n\n"
-msgstr ""
+msgstr "ドキュメントファイル '$(ARG1)' は次の人が編集中のためロックされています:\n\n$(ARG2)\n\n読み取り専用で開くか、ドキュメントのコピーを開いて編集してください。\n\n"
 
 #: source/openlocked.src#STR_OPENLOCKED_OPENREADONLY_BTN.String.Text
 msgid  "Open ~Read-Only"
@@ -549,7 +549,7 @@ msgstr "他の人がドキュメントを更新しました"
 
 #: source/filechanged.src#STR_FILECHANGED_MSG.String.Text
 msgid  "The file has been changed since it was opened for editing in %PRODUCTNAME. Saving your version of the document will overwrite changes made by others.\n\nDo you want to save anyway?\n\n"
-msgstr ""
+msgstr "このファイルは、編集のために %PRODUCTNAME で開かれ変更されました。ドキュメントを保存すると、他の人が変更した内容を上書きすることになります。\n\n強制的に保存しますか ?\n\n"
 
 #: source/filechanged.src#STR_FILECHANGED_SAVEANYWAY_BTN.String.Text
 msgid  "~Save Anyway"
@@ -561,7 +561,7 @@ msgstr "%PRODUCTNAME の更新が入手可能"
 
 #: source/newerverwarn.src#RID_DLG_NEWER_VERSION_WARNING.FT_INFO.FixedText.Text
 msgid  "This document was created by a newer version of %PRODUCTNAME. It may contain features not supported by your current version.\n\nClick 'Update Now...' to run online update and get the latest version of %PRODUCTNAME."
-msgstr ""
+msgstr "このドキュメントは、新しいバージョンの %PRODUCTNAME で作成されました。このドキュメントには、現在のバージョンでサポートされていない機能が含まれている可能性があります。\n「今すぐ更新...」をクリックしてオンライン更新を実行して最新バージョンの %PRODUCTNAME を入手してください。"
 
 #: source/newerverwarn.src#RID_DLG_NEWER_VERSION_WARNING.PB_UPDATE.PushButton.Text
 msgid  "~Update Now..."
@@ -609,7 +609,7 @@ msgstr "署名を表示..."
 
 #: source/secmacrowarnings.src#RID_XMLSECDLG_MACROWARN.FI_DESCR2.FixedText.Text
 msgid  "Macros may contain viruses. Disabling macros for a document is always safe. If you disable macros you may lose functionality provided by the document macros."
-msgstr ""
+msgstr "マクロには、ウィルスが含まれていることがあります。安全のためには、ドキュメントのマクロを無効にすることをお勧めします。ただし、マクロを無効にすると、ドキュメントマクロの機能を使用できなくなります。"
 
 #: source/secmacrowarnings.src#RID_XMLSECDLG_MACROWARN.CB_ALWAYSTRUST.CheckBox.Text
 msgid  "Always trust macros from this source"
@@ -637,7 +637,7 @@ msgstr "マスターパスワードの設定"
 
 #: source/masterpasscrtdlg.src#DLG_UUI_MASTERPASSWORD_CRT.FT_INFOTEXT.FixedText.Text
 msgid  "Passwords for web connections are protected by a master password. You will be asked to enter it once per session, if %PRODUCTNAME retrieves a password from the protected password list."
-msgstr ""
+msgstr "Web 接続用のパスワードはマスターパスワードによって保護されています。%PRODUCTNAME が保護されたパスワードリストからパスワードを取得する場合、セッションごとにパスターパスワードを入力するよう求められます。"
 
 #: source/masterpasscrtdlg.src#DLG_UUI_MASTERPASSWORD_CRT.FT_MASTERPASSWORD_CRT.FixedText.Text
 msgid  "~Enter password"
@@ -649,11 +649,11 @@ msgstr "パスワードの再入力(~R)"
 
 #: source/masterpasscrtdlg.src#DLG_UUI_MASTERPASSWORD_CRT.FT_CAUTIONTEXT.FixedText.Text
 msgid  "Caution: If you forget the master password, you will be unable to access any of the information protected by it. Passwords are case-sensitive."
-msgstr ""
+msgstr "注意: マスターパスワードを忘れた場合、マスターパスワードで保護されたすべての情報にアクセスできなくなります。パスワードは大文字と小文字が区別されます。"
 
 #: source/alreadyopen.src#STR_ALREADYOPEN_MSG.String.Text
 msgid  "Document file '$(ARG1)' is locked for editing by yourself on a different system since $(ARG2)\n\nOpen document read-only, or ignore own file locking and open the document for editing.\n\n"
-msgstr ""
+msgstr "ドキュメントファイル '$(ARG1)' は、あなた自身が $(ARG2) から他のシステム上で編集中のためロックされています。\n\n読み取り専用でドキュメントを開くか、ファイルのロックを無視してドキュメントを開き編集してください。\n\n"
 
 #: source/alreadyopen.src#STR_ALREADYOPEN_READONLY_BTN.String.Text
 msgid  "Open ~Read-Only"
@@ -665,7 +665,7 @@ msgstr "開く(~O)"
 
 #: source/alreadyopen.src#STR_ALREADYOPEN_SAVE_MSG.String.Text
 msgid  "Document file '$(ARG1)' is locked for editing by yourself on a different system since $(ARG2)\n\nClose document on other system and retry saving or ignore own file locking and save current document.\n\n"
-msgstr ""
+msgstr "ドキュメントファイル '$(ARG1)' は、あなた自身が $(ARG2) から他のシステム上で編集中のためロックされています。\n\n他のシステム上のドキュメントを閉じて保存を再び試みるか、ファイルのロックを無視して現在のドキュメントを保存してください。\n\n"
 
 #: source/alreadyopen.src#STR_ALREADYOPEN_RETRY_SAVE_BTN.String.Text
 msgid  "~Retry Saving"
@@ -677,4 +677,4 @@ msgstr "保存(~S)"
 
 #: source/lockfailed.src#STR_LOCKFAILED_MSG.String.Text
 msgid  "The file could not be locked for exclusive access by %PRODUCTNAME, due to missing permission to create a lock file on that file location."
-msgstr ""
+msgstr "%PRODUCTNAME は、ファイルがある場所にロックファイルを生成する権利がないため、ファイルを排他的アクセス用にロックできませんでした。"

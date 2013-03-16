@@ -39,6 +39,10 @@ msgstr ""
 msgid  "Display grids"
 msgstr ""
 
+#: source/controller/dialogs/tp_3D_SceneGeometry.src#CUSTOMUNITTEXT_DEGREE.#define.CustomUnitText
+msgid  " degrees"
+msgstr "ഡിഗ്രി"
+
 #: source/controller/dialogs/tp_3D_SceneGeometry.src#TP_3D_SCENEGEOMETRY.CBX_RIGHT_ANGLED_AXES.CheckBox.Text
 msgid  "~Right-angled axes"
 msgstr ""
@@ -58,10 +62,6 @@ msgstr ""
 #: source/controller/dialogs/tp_3D_SceneGeometry.src#TP_3D_SCENEGEOMETRY.CBX_PERSPECTIVE.CheckBox.Text
 msgid  "~Perspective"
 msgstr ""
-
-#: source/controller/dialogs/tp_3D_SceneGeometry.src#CUSTOMUNITTEXT_DEGREE.#define.CustomUnitText
-msgid  " degrees"
-msgstr "ഡിഗ്രി"
 
 #: source/controller/dialogs/Strings_AdditionalControls.src#STR_3DSCHEME_SIMPLE.String.Text
 msgid  "Simple"
@@ -481,17 +481,14 @@ msgid  "Light Preview"
 msgstr ""
 
 #: source/controller/dialogs/Strings_Statistic.src#STR_INDICATE_BOTH.String.Text
-#, fuzzy
 msgid  "Negative and Positive"
 msgstr "സൂചനകള് മുകളിലും താഴെയും"
 
 #: source/controller/dialogs/Strings_Statistic.src#STR_INDICATE_DOWN.String.Text
-#, fuzzy
 msgid  "Negative"
 msgstr "താഴ്ന്ന സൂചകം"
 
 #: source/controller/dialogs/Strings_Statistic.src#STR_INDICATE_UP.String.Text
-#, fuzzy
 msgid  "Positive"
 msgstr "ഉയര്ന്ന സൂചകം"
 
@@ -633,7 +630,6 @@ msgid  "F~irst column as label"
 msgstr ""
 
 #: source/controller/dialogs/tp_AxisLabel.src#TP_AXIS_LABEL.CB_AXIS_LABEL_SCHOW_DESCR.CheckBox.Text
-#, fuzzy
 msgid  "Sho~w labels"
 msgstr "ലേബല് കാണിക്കുക "
 
@@ -716,7 +712,6 @@ msgid  "Sche~me"
 msgstr ""
 
 #: source/controller/dialogs/tp_3D_SceneAppearance.src#TP_3D_SCENEAPPEARANCE.CB_SHADING.CheckBox.Text
-#, fuzzy
 msgid  "~Shading"
 msgstr "അകലം"
 
@@ -729,37 +724,30 @@ msgid  "~Rounded edges"
 msgstr ""
 
 #: source/controller/dialogs/dlg_InsertAxis_Grid.src#DLG_AXIS_OR_GRID.FL_PRIMARY_AXIS.FixedLine.Text
-#, fuzzy
 msgid  "Axes"
 msgstr "മുഖ്യ അക്ഷധ്രുവം"
 
 #: source/controller/dialogs/dlg_InsertAxis_Grid.src#DLG_AXIS_OR_GRID.FL_PRIMARY_GRID.FixedLine.Text
-#, fuzzy
 msgid  "Major grids"
 msgstr "മുഖ്യ ചട്ടക്കൂട്"
 
 #: source/controller/dialogs/dlg_InsertAxis_Grid.src#DLG_AXIS_OR_GRID.CB_X_PRIMARY.CheckBox.Text
-#, fuzzy
 msgid  "~X axis"
 msgstr "~X ആക്സിസ്"
 
 #: source/controller/dialogs/dlg_InsertAxis_Grid.src#DLG_AXIS_OR_GRID.CB_Y_PRIMARY.CheckBox.Text
-#, fuzzy
 msgid  "~Y axis"
 msgstr "~Y ആക്സിസ്"
 
 #: source/controller/dialogs/dlg_InsertAxis_Grid.src#DLG_AXIS_OR_GRID.CB_Z_PRIMARY.CheckBox.Text
-#, fuzzy
 msgid  "~Z axis"
 msgstr "~Z ആക്സിസ്"
 
 #: source/controller/dialogs/dlg_InsertAxis_Grid.src#DLG_AXIS_OR_GRID.FL_SECONDARY_AXIS.FixedLine.Text
-#, fuzzy
 msgid  "Secondary axes"
 msgstr "രണ്ടാമത്തെ അക്ഷധ്രുവം"
 
 #: source/controller/dialogs/dlg_InsertAxis_Grid.src#DLG_AXIS_OR_GRID.FL_SECONDARY_GRID.FixedLine.Text
-#, fuzzy
 msgid  "Minor grids"
 msgstr "ചെറിയ ചട്ടക്കൂട്"
 
@@ -872,7 +860,6 @@ msgid  "Numbers"
 msgstr ""
 
 #: source/controller/dialogs/Strings.src#STR_PAGE_POSITION.String.Text
-#, fuzzy
 msgid  "Position"
 msgstr "പദവി"
 
@@ -933,7 +920,6 @@ msgid  "Mean value line with value %AVERAGE_VALUE and standard deviation %STD_DE
 msgstr ""
 
 #: source/controller/dialogs/Strings.src#STR_OBJECT_AXIS.String.Text
-#, fuzzy
 msgid  "Axis"
 msgstr "മുഖ്യ അക്ഷധ്രുവം"
 
@@ -950,17 +936,14 @@ msgid  "Z Axis"
 msgstr ""
 
 #: source/controller/dialogs/Strings.src#STR_OBJECT_SECONDARY_X_AXIS.String.Text
-#, fuzzy
 msgid  "Secondary X Axis"
 msgstr "ദ്വീമാന Y അക്ഷധ്രുവം"
 
 #: source/controller/dialogs/Strings.src#STR_OBJECT_SECONDARY_Y_AXIS.String.Text
-#, fuzzy
 msgid  "Secondary Y Axis"
 msgstr "ദ്വീമാന Y അക്ഷധ്രുവം"
 
 #: source/controller/dialogs/Strings.src#STR_OBJECT_AXES.String.Text
-#, fuzzy
 msgid  "Axes"
 msgstr "മുഖ്യ അക്ഷധ്രുവം"
 
@@ -1001,12 +984,10 @@ msgid  "Legend"
 msgstr ""
 
 #: source/controller/dialogs/Strings.src#STR_OBJECT_TITLE.String.Text
-#, fuzzy
 msgid  "Title"
 msgstr "ടൈല്"
 
 #: source/controller/dialogs/Strings.src#STR_OBJECT_TITLES.String.Text
-#, fuzzy
 msgid  "Titles"
 msgstr "ടൈല്"
 
@@ -1015,7 +996,6 @@ msgid  "Main Title"
 msgstr ""
 
 #: source/controller/dialogs/Strings.src#STR_OBJECT_TITLE_SUB.String.Text
-#, fuzzy
 msgid  "Subtitle"
 msgstr "~Subtitle"
 

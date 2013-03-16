@@ -31,6 +31,10 @@ msgstr ""
 "X-Generator: genLang\n"
 
 
+#: source/customize/selector.src#FIXEDTEXT_DIALOG_DESCRIPTION.#define.Text
+msgid  "Select the library that contains the macro you want. Then select the macro under 'Macro name'."
+msgstr ""
+
 #: source/customize/selector.src#STR_SELECTOR_ADD_COMMANDS.String.TEXT
 msgid  "Add Commands"
 msgstr ""
@@ -91,9 +95,41 @@ msgstr ""
 msgid  "Description"
 msgstr ""
 
-#: source/customize/selector.src#FIXEDTEXT_DIALOG_DESCRIPTION.#define.Text
-msgid  "Select the library that contains the macro you want. Then select the macro under 'Macro name'."
-msgstr ""
+#: source/customize/acccfg.src#PUSHBUTTON_TEXT_SAVE.#define.Text
+msgid  "~Save..."
+msgstr "~သိမ်းပါ..."
+
+#: source/customize/acccfg.src#PUSHBUTTON_TEXT_RESET.#define.Text
+msgid  "R~eset"
+msgstr "ပြန်လည်~စတင်ပါ"
+
+#: source/customize/acccfg.src#PUSHBUTTON_TEXT_LOAD.#define.Text
+msgid  "~Load..."
+msgstr "~အလုပ်လုပ်ပါ..."
+
+#: source/customize/acccfg.src#PUSHBUTTON_TEXT_REMOVE.#define.Text
+msgid  "~Delete"
+msgstr "~ဖျက်ပါ"
+
+#: source/customize/acccfg.src#PUSHBUTTON_TEXT_CHANGE.#define.Text
+msgid  "~Modify"
+msgstr "~အထူးပြုပါ"
+
+#: source/customize/acccfg.src#PUSHBUTTON_TEXT_NEW.#define.Text
+msgid  "~New"
+msgstr "~အသစ်"
+
+#: source/customize/acccfg.src#FIXEDTEXT_TEXT_GROUP.#define.Text
+msgid  "~Category"
+msgstr "~အမျိုးအစား"
+
+#: source/customize/acccfg.src#FIXEDTEXT_TEXT_FUNCTION.#define.Text
+msgid  "Function"
+msgstr "ဖန်ရှင်"
+
+#: source/customize/acccfg.src#GROUPBOX_TEXT_FUNCTIONS.#define.Text
+msgid  "Functions"
+msgstr "ဖန်ရှင်များ"
 
 #: source/customize/acccfg.src#RID_SVXPAGE_KEYBOARD.GRP_ACC_KEYBOARD.FixedLine.Text
 msgid  "Shortcut keys"
@@ -135,49 +171,13 @@ msgstr "%PRODUCTNAME မက်ခရိုများ"
 msgid  "Styles"
 msgstr "စတိုင်များ"
 
-#: source/customize/acccfg.src#PUSHBUTTON_TEXT_SAVE.#define.Text
-msgid  "~Save..."
-msgstr "~သိမ်းပါ..."
-
-#: source/customize/acccfg.src#PUSHBUTTON_TEXT_RESET.#define.Text
-msgid  "R~eset"
-msgstr "ပြန်လည်~စတင်ပါ"
-
-#: source/customize/acccfg.src#PUSHBUTTON_TEXT_LOAD.#define.Text
-msgid  "~Load..."
-msgstr "~အလုပ်လုပ်ပါ..."
-
-#: source/customize/acccfg.src#PUSHBUTTON_TEXT_REMOVE.#define.Text
-msgid  "~Delete"
-msgstr "~ဖျက်ပါ"
-
-#: source/customize/acccfg.src#PUSHBUTTON_TEXT_CHANGE.#define.Text
-msgid  "~Modify"
-msgstr "~အထူးပြုပါ"
-
-#: source/customize/acccfg.src#PUSHBUTTON_TEXT_NEW.#define.Text
-msgid  "~New"
-msgstr "~အသစ်"
-
-#: source/customize/acccfg.src#FIXEDTEXT_TEXT_GROUP.#define.Text
-msgid  "~Category"
-msgstr "~အမျိုးအစား"
-
-#: source/customize/acccfg.src#FIXEDTEXT_TEXT_FUNCTION.#define.Text
-msgid  "Function"
-msgstr "ဖန်ရှင်"
-
-#: source/customize/acccfg.src#GROUPBOX_TEXT_FUNCTIONS.#define.Text
-msgid  "Functions"
-msgstr "ဖန်ရှင်များ"
-
 #: source/customize/eventdlg.src#RID_SVXPAGE_EVENTS.STR_EVENT.String.Text
 msgid  "Event"
 msgstr "ဖြစ်ရပ်"
 
 #: source/customize/eventdlg.src#RID_SVXPAGE_EVENTS.STR_ASSMACRO.String.Text
 msgid  "Assigned Action"
-msgstr ""
+msgstr "သတ်မှတ်ထားသည့် အမိန့်ပေးလိုက်သည်နှင့် လိုချင်သမျှ အဆင့်ဆင့် လုပ်ပေးခြင်း "
 
 #: source/customize/eventdlg.src#RID_SVXPAGE_EVENTS.TXT_SAVEIN.FixedText.Text
 msgid  "Save In"
@@ -205,7 +205,7 @@ msgstr "ဖြစ်ရပ်"
 
 #: source/customize/macropg.src#RID_SVXPAGE_MACROASSIGN.STR_ASSMACRO.String.Text
 msgid  "Assigned Action"
-msgstr ""
+msgstr "သတ်မှတ်ထားသည့် အမိန့်ပေးလိုက်သည်နှင့် လိုချင်သမျှ အဆင့်ဆင့် လုပ်ပေးခြင်း "
 
 #: source/customize/macropg.src#RID_SVXPAGE_MACROASSIGN.FT_ASSIGN.FixedText.Text
 msgid  "Assign:"
@@ -547,6 +547,50 @@ msgstr ""
 msgid  "Events"
 msgstr "ဖြစ်ရပ်"
 
+#: source/customize/cfg.src#TEXT_MENU.#define.Text
+msgid  "Menu"
+msgstr ""
+
+#: source/customize/cfg.src#TEXT_BEGIN_GROUP.#define.Text
+msgid  "Begin a Group"
+msgstr ""
+
+#: source/customize/cfg.src#TEXT_RENAME.#define.Text
+msgid  "Rename..."
+msgstr ""
+
+#: source/customize/cfg.src#TEXT_DELETE.#define.Text
+msgid  "Delete..."
+msgstr ""
+
+#: source/customize/cfg.src#TEXT_DELETE_NODOTS.#define.Text
+msgid  "Delete"
+msgstr "~ဖျက်ပါ"
+
+#: source/customize/cfg.src#TEXT_MOVE.#define.Text
+msgid  "Move..."
+msgstr ""
+
+#: source/customize/cfg.src#TEXT_DEFAULT_STYLE.#define.Text
+msgid  "Restore Default Settings"
+msgstr ""
+
+#: source/customize/cfg.src#TEXT_DEFAULT_COMMAND.#define.Text
+msgid  "Restore Default Command"
+msgstr ""
+
+#: source/customize/cfg.src#TEXT_TEXT_ONLY.#define.Text
+msgid  "Text only"
+msgstr ""
+
+#: source/customize/cfg.src#TEXT_TOOLBAR_NAME.#define.Text
+msgid  "Toolbar Name"
+msgstr ""
+
+#: source/customize/cfg.src#TEXT_SAVE_IN.#define.Text
+msgid  "Save In"
+msgstr ""
+
 #: source/customize/cfg.src#RID_SVXPAGE_MENUS.GRP_MENUS.FixedLine.Text
 msgid  "%PRODUCTNAME %MODULENAME Menus"
 msgstr ""
@@ -751,50 +795,6 @@ msgstr ""
 msgid  "Down"
 msgstr ""
 
-#: source/customize/cfg.src#TEXT_MENU.#define.Text
-msgid  "Menu"
-msgstr ""
-
-#: source/customize/cfg.src#TEXT_BEGIN_GROUP.#define.Text
-msgid  "Begin a Group"
-msgstr ""
-
-#: source/customize/cfg.src#TEXT_RENAME.#define.Text
-msgid  "Rename..."
-msgstr ""
-
-#: source/customize/cfg.src#TEXT_DELETE.#define.Text
-msgid  "Delete..."
-msgstr ""
-
-#: source/customize/cfg.src#TEXT_DELETE_NODOTS.#define.Text
-msgid  "Delete"
-msgstr "~ဖျက်ပါ"
-
-#: source/customize/cfg.src#TEXT_MOVE.#define.Text
-msgid  "Move..."
-msgstr ""
-
-#: source/customize/cfg.src#TEXT_DEFAULT_STYLE.#define.Text
-msgid  "Restore Default Settings"
-msgstr ""
-
-#: source/customize/cfg.src#TEXT_DEFAULT_COMMAND.#define.Text
-msgid  "Restore Default Command"
-msgstr ""
-
-#: source/customize/cfg.src#TEXT_TEXT_ONLY.#define.Text
-msgid  "Text only"
-msgstr ""
-
-#: source/customize/cfg.src#TEXT_TOOLBAR_NAME.#define.Text
-msgid  "Toolbar Name"
-msgstr ""
-
-#: source/customize/cfg.src#TEXT_SAVE_IN.#define.Text
-msgid  "Save In"
-msgstr ""
-
 #: source/dialogs/commonlingui.src#RID_SVX_WND_COMMON_LINGU.FT_WORD.FixedText.Text
 msgid  "Origi~nal"
 msgstr "မူ~လ"
@@ -987,28 +987,34 @@ msgid  "The scripting language %LANGUAGENAME is not supported."
 msgstr "ကွန်ပျူတာသုံးဘာသာစကား(စခရစ်) %LANGUAGENAME မှ အထောက်အကူမပြုပါ။"
 
 #: source/dialogs/scriptdlg.src#RID_SVXSTR_ERROR_RUNNING.String.Text
+#, fuzzy
 msgid  "An error occurred while running the %LANGUAGENAME script %SCRIPTNAME."
-msgstr ""
+msgstr "ကွန်ပျူတာသုံးဘာသာစကား (စခရစ်) %LANGUAGENAME script %SCRIPTNAME အလုပ်လုပ်စဉ် အမှားတစ်ခု ဖြစ်ပွားသည်။"
 
 #: source/dialogs/scriptdlg.src#RID_SVXSTR_EXCEPTION_RUNNING.String.Text
+#, fuzzy
 msgid  "An exception occurred while running the %LANGUAGENAME script %SCRIPTNAME."
-msgstr ""
+msgstr "ကွန်ပျူတာသုံးဘာသာစကား (စခရစ်) %LANGUAGENAME script %SCRIPTNAME အလုပ်လုပ်စဉ် ခြွင်းချက်တစ်ခု ဖြစ်ပွားသည်။"
 
 #: source/dialogs/scriptdlg.src#RID_SVXSTR_ERROR_AT_LINE.String.Text
+#, fuzzy
 msgid  "An error occurred while running the %LANGUAGENAME script %SCRIPTNAME at line: %LINENUMBER."
-msgstr ""
+msgstr "လိုင်းနံပါတ် %LINENUMBER တွင် ကွန်ပျူတာသုံး ဘာသာစကား (စခရစ်) %LANGUAGENAME script %SCRIPTNAME အလုပ်လုပ်စဉ် အမှားဖြစ်ပွားသည်။"
 
 #: source/dialogs/scriptdlg.src#RID_SVXSTR_EXCEPTION_AT_LINE.String.Text
+#, fuzzy
 msgid  "An exception occurred while running the %LANGUAGENAME script %SCRIPTNAME at line: %LINENUMBER."
-msgstr ""
+msgstr "ကွန်ပျူတာသုံးဘာသာစကား (စခရစ်) %LANGUAGENAME script %SCRIPTNAME အလုပ်လုပ်စဉ် ခြွင်းချက်တစ်ခု ဖြစ်ပွားသည်။"
 
 #: source/dialogs/scriptdlg.src#RID_SVXSTR_FRAMEWORK_ERROR_RUNNING.String.Text
+#, fuzzy
 msgid  "A Scripting Framework error occurred while running the %LANGUAGENAME script %SCRIPTNAME."
-msgstr ""
+msgstr "ကွန်ပျူတာသုံး ဘာသာစကား (စခရစ်) %LANGUAGENAME script %SCRIPTNAME အလုပ်လုပ်စဉ် အမှားဖြစ်ပွားသည်။"
 
 #: source/dialogs/scriptdlg.src#RID_SVXSTR_FRAMEWORK_ERROR_AT_LINE.String.Text
+#, fuzzy
 msgid  "A Scripting Framework error occurred while running the %LANGUAGENAME script %SCRIPTNAME at line: %LINENUMBER."
-msgstr ""
+msgstr "လိုင်းနံပါတ် %LINENUMBER တွင် ကွန်ပျူတာသုံး ဘာသာစကား (စခရစ်) %LANGUAGENAME script %SCRIPTNAME အလုပ်လုပ်စဉ် အမှားဖြစ်ပွားသည်။"
 
 #: source/dialogs/scriptdlg.src#RID_SVXSTR_ERROR_TYPE_LABEL.String.Text
 #, fuzzy
@@ -1021,27 +1027,22 @@ msgid  "Message:"
 msgstr "အမှာစာ -"
 
 #: source/dialogs/hlmarkwn.src#RID_SVXFLOAT_HYPERLINK_MARKWND.ModalDialog.Text
-#, fuzzy
 msgid  "Target in Document"
 msgstr "မှတ်တမ်းမှတ်ရာရှိ ပစ်မှတ်"
 
 #: source/dialogs/hlmarkwn.src#RID_SVXFLOAT_HYPERLINK_MARKWND.BT_APPLY.PushButton.Text
-#, fuzzy
 msgid  "Apply"
 msgstr "အသုံးချပါ"
 
 #: source/dialogs/hlmarkwn.src#RID_SVXFLOAT_HYPERLINK_MARKWND.BT_CLOSE.PushButton.Text
-#, fuzzy
 msgid  "Close"
 msgstr "ပိတ်ပါ"
 
 #: source/dialogs/hlmarkwn.src#RID_SVXSTR_HYPDLG_ERR_LERR_NOENTRIES.String.Text
-#, fuzzy
 msgid  "Targets do not exist in the document."
 msgstr "မှတ်တမ်းမှတ်ရာတွင် ပစ်မှတ်များ မတည်ရှိပါ။"
 
 #: source/dialogs/hlmarkwn.src#RID_SVXSTR_HYPDLG_ERR_LERR_DOCNOTOPEN.String.Text
-#, fuzzy
 msgid  "Couldn't open the document."
 msgstr "မှတ်တမ်းမှတ်ရာကို မဖွင့်နိုင်ပါ။"
 
@@ -1050,167 +1051,134 @@ msgid  "Mark Tree"
 msgstr ""
 
 #: source/dialogs/gallery.src#RID_SVXTABDLG_GALLERY.TabDialog.Text
-#, fuzzy
 msgid  "Properties of "
 msgstr "၏ ဂုဏ်သတ္တိများ"
 
 #: source/dialogs/gallery.src#RID_SVXTABDLG_GALLERY.1.RID_SVXTABPAGE_GALLERY_GENERAL.PageItem.Text
-#, fuzzy
 msgid  "General"
 msgstr "အထွေထွေ"
 
 #: source/dialogs/gallery.src#RID_SVXTABDLG_GALLERYTHEME.TabDialog.Text
-#, fuzzy
 msgid  "Properties of "
 msgstr "ဂုဏ်သတ္တိများ"
 
 #: source/dialogs/gallery.src#RID_SVXTABDLG_GALLERYTHEME.1.RID_SVXTABPAGE_GALLERY_GENERAL.PageItem.Text
-#, fuzzy
 msgid  "General"
 msgstr "အထွေထွေ"
 
 #: source/dialogs/gallery.src#RID_SVXTABDLG_GALLERYTHEME.1.RID_SVXTABPAGE_GALLERYTHEME_FILES.PageItem.Text
-#, fuzzy
 msgid  "Files"
 msgstr "ဖိုင်များ"
 
 #: source/dialogs/gallery.src#RID_SVXTABPAGE_GALLERY_GENERAL.FT_MS_TYPE.FixedText.Text
-#, fuzzy
 msgid  "Type:"
 msgstr "အမျိုးအစား"
 
 #: source/dialogs/gallery.src#RID_SVXTABPAGE_GALLERY_GENERAL.FT_MS_PATH.FixedText.Text
-#, fuzzy
 msgid  "Location:"
 msgstr "နေရာ-"
 
 #: source/dialogs/gallery.src#RID_SVXTABPAGE_GALLERY_GENERAL.FT_MS_CONTENT.FixedText.Text
-#, fuzzy
 msgid  "Contents:"
 msgstr "မာတိကာများ-"
 
 #: source/dialogs/gallery.src#RID_SVXTABPAGE_GALLERY_GENERAL.FT_MS_CHANGEDATE.FixedText.Text
-#, fuzzy
 msgid  "Modified:"
 msgstr "အထူးပြုခြင်းများ-"
 
 #: source/dialogs/gallery.src#RID_SVXTABPAGE_GALLERYTHEME_FILES.FT_FILETYPE.FixedText.Text
-#, fuzzy
 msgid  "~File type"
 msgstr "ဖိုင် ပုံစံ ရိုက်ပါ"
 
 #: source/dialogs/gallery.src#RID_SVXTABPAGE_GALLERYTHEME_FILES.BTN_SEARCH.PushButton.Text
-#, fuzzy
 msgid  "~Find Files..."
 msgstr "ဖိုင်များ ရှာပါ..."
 
 #: source/dialogs/gallery.src#RID_SVXTABPAGE_GALLERYTHEME_FILES.BTN_TAKE.PushButton.Text
-#, fuzzy
 msgid  "~Add"
 msgstr "ပေါင်းထည့်ပါ"
 
 #: source/dialogs/gallery.src#RID_SVXTABPAGE_GALLERYTHEME_FILES.BTN_TAKEALL.PushButton.Text
-#, fuzzy
 msgid  "A~dd All"
 msgstr "အားလုံး ပေါင်းထည့်ပါ"
 
 #: source/dialogs/gallery.src#RID_SVXTABPAGE_GALLERYTHEME_FILES.CBX_PREVIEW.CheckBox.Text
-#, fuzzy
 msgid  "Pr~eview"
 msgstr "အသေးစိတ်ကြည့်ပါ"
 
 #: source/dialogs/gallery.src#RID_SVXTABPAGE_GALLERYTHEME_FILES.BTN_MADDIN1.PushButton.Text
-#, fuzzy
 msgid  "Maddin1"
 msgstr "မာဒင် ၁"
 
 #: source/dialogs/gallery.src#RID_SVXTABPAGE_GALLERYTHEME_FILES.BTN_MADDIN2.PushButton.Text
-#, fuzzy
 msgid  "Maddin2"
 msgstr "မာဒင် ၂"
 
 #: source/dialogs/gallery.src#RID_SVXDLG_GALLERY_TITLE.ModalDialog.Text
-#, fuzzy
 msgid  "Enter Title"
 msgstr "ခေါင်းစဉ်သို့ ဝင်ပါ"
 
 #: source/dialogs/gallery.src#RID_SVXDLG_GALLERY_TITLE.FL_TITLE.FixedLine.Text
-#, fuzzy
 msgid  "Title"
 msgstr "ခေါင်းစဉ်"
 
 #: source/dialogs/gallery.src#RID_SVXDLG_GALLERY_SEARCH_PROGRESS.ModalDialog.Text
-#, fuzzy
 msgid  "Find"
 msgstr "ရှာပါ"
 
 #: source/dialogs/gallery.src#RID_SVXDLG_GALLERY_SEARCH_PROGRESS.FL_SEARCH_DIR.FixedLine.Text
-#, fuzzy
 msgid  "Directory"
 msgstr "အညွှန်း"
 
 #: source/dialogs/gallery.src#RID_SVXDLG_GALLERY_SEARCH_PROGRESS.FL_SEARCH_TYPE.FixedLine.Text
-#, fuzzy
 msgid  "File type"
 msgstr "ဖိုင် ပုံစံ ရိုက်ပါ"
 
 #: source/dialogs/gallery.src#RID_SVXDLG_GALLERY_TAKE_PROGRESS.ModalDialog.Text
-#, fuzzy
 msgid  "Apply"
 msgstr "အသုံးချပါ"
 
 #: source/dialogs/gallery.src#RID_SVXDLG_GALLERY_TAKE_PROGRESS.FL_TAKE_PROGRESS.FixedLine.Text
-#, fuzzy
 msgid  "File"
 msgstr "ဖိုင်"
 
 #: source/dialogs/gallery.src#RID_SVXDLG_GALLERY_ACTUALIZE_PROGRESS.ModalDialog.Text
-#, fuzzy
 msgid  "Update"
 msgstr "နောက်ဆုံးပေါ်အခြေအနေ"
 
 #: source/dialogs/gallery.src#RID_SVXDLG_GALLERY_ACTUALIZE_PROGRESS.FL_ACTUALIZE_PROGRESS.FixedLine.Text
-#, fuzzy
 msgid  "File"
 msgstr "ဖိုင်"
 
 #: source/dialogs/gallery.src#RID_SVXDLG_GALLERY_THEMEID.ModalDialog.Text
-#, fuzzy
 msgid  "Theme ID"
 msgstr "ID အဓိက ဆိုလိုရင်း"
 
 #: source/dialogs/gallery.src#RID_SVXDLG_GALLERY_THEMEID.FL_ID.FixedLine.Text
-#, fuzzy
 msgid  "ID"
 msgstr "အိုင်ဒီ"
 
 #: source/dialogs/gallery.src#RID_SVXSTR_GALLERY_NOFILES.String.Text
-#, fuzzy
 msgid  "<No Files>"
 msgstr "<ဖိုင်များ မရှိပါ>"
 
 #: source/dialogs/gallery.src#RID_SVXSTR_GALLERY_SEARCH.String.Text
-#, fuzzy
 msgid  "Do you want to update the file list?"
 msgstr "ဖိုင်စာရင်း နောက်ဆုံးပေါ်အခြေအနေ ပြုလုပ်ရန် ဆန္ဒရှိပါသလား?"
 
 #: source/dialogs/gallery.src#RID_SVXSTR_GALLERYPROPS_OBJECT.String.Text
-#, fuzzy
 msgid  "Object;Objects"
 msgstr "အရာဝတ္ထု - အရာဝတ္ထုများ"
 
 #: source/dialogs/gallery.src#RID_SVXSTR_GALLERY_READONLY.String.Text
-#, fuzzy
 msgid  " (read-only)"
 msgstr " (ဖတ်ရန်သာ)"
 
 #: source/dialogs/gallery.src#RID_SVXSTR_GALLERY_ALLFILES.String.Text
-#, fuzzy
 msgid  "<All Files>"
 msgstr "<ဖိုင်များအားလုံး>"
 
 #: source/dialogs/gallery.src#RID_SVXSTR_GALLERY_ID_EXISTS.String.Text
-#, fuzzy
 msgid  "This ID already exists..."
 msgstr "ဤ ID အဆင်သင့် တည်ရှိသည်..."
 
@@ -1265,189 +1233,160 @@ msgid  "Number of rows:"
 msgstr "အတန်းအရေအတွက်"
 
 #: source/dialogs/hyperdlg.src#RID_SVXPAGE_HYPERLINK_INTERNET.TabPage.Text
-#, fuzzy
 msgid  "Hyperlink"
 msgstr "လိုသလို ရှာယူနိုင်ခြင်း (လက်ပုံပါ)"
 
 #: source/dialogs/hyperdlg.src#RID_SVXPAGE_HYPERLINK_INTERNET.GRP_LINKTYPE.FixedLine.Text
-#, fuzzy
 msgid  "Hyperlink type"
 msgstr "လိုသလို ရှာယူနိုင်ခြင်း (လက်ပုံပါ) ပုံစံ/ ရိုက်သည်"
 
 #: source/dialogs/hyperdlg.src#RID_SVXPAGE_HYPERLINK_INTERNET.RB_LINKTYP_INTERNET.RadioButton.Text
-#, fuzzy
 msgid  "~Web"
 msgstr "ကွန်ရက်"
 
 #: source/dialogs/hyperdlg.src#RID_SVXPAGE_HYPERLINK_INTERNET.RB_LINKTYP_FTP.RadioButton.Text
-#, fuzzy
 msgid  "~FTP"
 msgstr "~FTP"
 
 #: source/dialogs/hyperdlg.src#RID_SVXPAGE_HYPERLINK_INTERNET.RB_LINKTYP_TELNET.RadioButton.Text
-#, fuzzy
 msgid  "~Telnet"
 msgstr "အင်တာနက်နှင့် ဆက်သွယ်ထားသော အဝေးထိန်း ကွန်ပျူတာ သုံးခြင်း"
 
 #: source/dialogs/hyperdlg.src#RID_SVXPAGE_HYPERLINK_INTERNET.FT_TARGET_HTML.FixedText.Text
-#, fuzzy
 msgid  "Tar~get"
 msgstr "ပစ်မှတ်"
 
 #: source/dialogs/hyperdlg.src#RID_SVXPAGE_HYPERLINK_INTERNET.FT_LOGIN.FixedText.Text
-#, fuzzy
 msgid  "~Login name"
 msgstr "အသုံးပြုရန် ဖွင့်သော အမည်"
 
 #: source/dialogs/hyperdlg.src#RID_SVXPAGE_HYPERLINK_INTERNET.FT_PASSWD.FixedText.Text
-#, fuzzy
 msgid  "~Password"
 msgstr "စကားဝှက်"
 
 #: source/dialogs/hyperdlg.src#RID_SVXPAGE_HYPERLINK_INTERNET.CBX_ANONYMOUS.CheckBox.Text
-#, fuzzy
 msgid  "Anonymous ~user"
 msgstr "အမည်မသိသော အသုံးပြုသူ"
 
 #: source/dialogs/hyperdlg.src#RID_SVXPAGE_HYPERLINK_INTERNET.BTN_BROWSE.ImageButton.Text
-#, fuzzy
 msgid  "WWW Browser"
 msgstr "WWW အညွှန်း"
 
 #: source/dialogs/hyperdlg.src#RID_SVXPAGE_HYPERLINK_INTERNET.BTN_BROWSE.ImageButton.QuickHelpText
-#, fuzzy
 msgid  "WWW Browser"
 msgstr "WWW အညွှန်း"
 
 #: source/dialogs/hyperdlg.src#RID_SVXPAGE_HYPERLINK_INTERNET.BTN_TARGET.ImageButton.Text
-#, fuzzy
 msgid  "Target in Document"
 msgstr "မှတ်တမ်းမှတ်ရာရှိ ပစ်မှတ်"
 
 #: source/dialogs/hyperdlg.src#RID_SVXPAGE_HYPERLINK_INTERNET.BTN_TARGET.ImageButton.QuickHelpText
-#, fuzzy
 msgid  "Target in Document"
-msgstr "Target in Document"
+msgstr "မှတ်တမ်းမှတ်ရာရှိ ပစ်မှတ်"
 
 #: source/dialogs/hyperdlg.src#RID_SVXPAGE_HYPERLINK_INTERNET.GRP_MORE.FixedLine.Text
-#, fuzzy
 msgid  "Further settings"
 msgstr "ပိုသာ၍ ရွေးနိုင်ခြင်းများ"
 
 #: source/dialogs/hyperdlg.src#RID_SVXPAGE_HYPERLINK_INTERNET.FT_FRAME.FixedText.Text
-#, fuzzy
 msgid  "F~rame"
 msgstr "ကန့်သတ်ချက်ဘောင်"
 
 #: source/dialogs/hyperdlg.src#RID_SVXPAGE_HYPERLINK_INTERNET.FT_FORM.FixedText.Text
-#, fuzzy
 msgid  "F~orm"
 msgstr "ပုံစံ"
 
 #: source/dialogs/hyperdlg.src#RID_SVXPAGE_HYPERLINK_INTERNET.LB_FORM.Default.StringList.item
-#, fuzzy
+msgid  "Text"
+msgstr "စာသား"
+
+#: source/dialogs/hyperdlg.src#RID_SVXPAGE_HYPERLINK_INTERNET.LB_FORM.Default.StringList.item
 msgid  "Button"
 msgstr "နှိပ်ရန် ခလုတ်"
 
 #: source/dialogs/hyperdlg.src#RID_SVXPAGE_HYPERLINK_INTERNET.FT_INDICATION.FixedText.Text
-#, fuzzy
 msgid  "Te~xt"
 msgstr "စာသား"
 
 #: source/dialogs/hyperdlg.src#RID_SVXPAGE_HYPERLINK_INTERNET.FT_TEXT.FixedText.Text
-#, fuzzy
 msgid  "N~ame"
 msgstr "အမည်"
 
 #: source/dialogs/hyperdlg.src#RID_SVXPAGE_HYPERLINK_INTERNET.BTN_SCRIPT.ImageButton.QuickHelpText
-#, fuzzy
 msgid  "Events"
 msgstr "ဖြစ်ရပ်များ"
 
 #: source/dialogs/hyperdlg.src#RID_SVXPAGE_HYPERLINK_INTERNET.BTN_SCRIPT.ButtonImage.Text
-#, fuzzy
 msgid  "Events"
 msgstr "ဖြစ်ရပ်များ"
 
 #: source/dialogs/hyperdlg.src#RID_SVXPAGE_HYPERLINK_MAIL.TabPage.Text
-#, fuzzy
 msgid  "Hyperlink"
 msgstr "လိုသလို ရှာယူနိုင်ခြင်း (လက်ပုံပါ)"
 
 #: source/dialogs/hyperdlg.src#RID_SVXPAGE_HYPERLINK_MAIL.GRP_MAILNEWS.FixedLine.Text
-#, fuzzy
 msgid  "Mail & news"
 msgstr "အီးမေးလ်နှင့် သတင်း"
 
 #: source/dialogs/hyperdlg.src#RID_SVXPAGE_HYPERLINK_MAIL.RB_LINKTYP_MAIL.RadioButton.Text
-#, fuzzy
 msgid  "~E-mail"
 msgstr "အီးမေးလ်"
 
 #: source/dialogs/hyperdlg.src#RID_SVXPAGE_HYPERLINK_MAIL.RB_LINKTYP_NEWS.RadioButton.Text
-#, fuzzy
 msgid  "~News"
 msgstr "သတင်း"
 
 #: source/dialogs/hyperdlg.src#RID_SVXPAGE_HYPERLINK_MAIL.FT_RECEIVER.FixedText.Text
-#, fuzzy
 msgid  "Re~ceiver"
 msgstr "လက်ခံရရှိသူ"
 
 #: source/dialogs/hyperdlg.src#RID_SVXPAGE_HYPERLINK_MAIL.FT_SUBJECT.FixedText.Text
-#, fuzzy
 msgid  "~Subject"
 msgstr "အကြောင်းကိစ္စ"
 
 #: source/dialogs/hyperdlg.src#RID_SVXPAGE_HYPERLINK_MAIL.BTN_ADRESSBOOK.ButtonImage.Text
-#, fuzzy
 msgid  "Data Sources..."
 msgstr "မူရင်း ဒေတာ..."
 
 #: source/dialogs/hyperdlg.src#RID_SVXPAGE_HYPERLINK_MAIL.BTN_ADRESSBOOK.ButtonImage.QuickHelpText
-#, fuzzy
 msgid  "Data Sources..."
 msgstr "မူရင်း ဒေတာ..."
 
 #: source/dialogs/hyperdlg.src#RID_SVXPAGE_HYPERLINK_MAIL.GRP_MORE.FixedLine.Text
-#, fuzzy
 msgid  "Further settings"
 msgstr "ပိုသာ၍ ရွေးနိုင်ခြင်းများ"
 
 #: source/dialogs/hyperdlg.src#RID_SVXPAGE_HYPERLINK_MAIL.FT_FRAME.FixedText.Text
-#, fuzzy
 msgid  "F~rame"
 msgstr "ကန့်သတ်ချက်ဘောင်"
 
 #: source/dialogs/hyperdlg.src#RID_SVXPAGE_HYPERLINK_MAIL.FT_FORM.FixedText.Text
-#, fuzzy
 msgid  "F~orm"
 msgstr "ပုံစံ"
 
 #: source/dialogs/hyperdlg.src#RID_SVXPAGE_HYPERLINK_MAIL.LB_FORM.Default.StringList.item
-#, fuzzy
+msgid  "Text"
+msgstr "စာသား"
+
+#: source/dialogs/hyperdlg.src#RID_SVXPAGE_HYPERLINK_MAIL.LB_FORM.Default.StringList.item
 msgid  "Button"
 msgstr "နှိပ်ရန် ခလုတ်"
 
 #: source/dialogs/hyperdlg.src#RID_SVXPAGE_HYPERLINK_MAIL.FT_INDICATION.FixedText.Text
-#, fuzzy
 msgid  "Te~xt"
 msgstr "စာသား"
 
 #: source/dialogs/hyperdlg.src#RID_SVXPAGE_HYPERLINK_MAIL.FT_TEXT.FixedText.Text
-#, fuzzy
 msgid  "N~ame"
 msgstr "အမည်"
 
 #: source/dialogs/hyperdlg.src#RID_SVXPAGE_HYPERLINK_MAIL.BTN_SCRIPT.ImageButton.QuickHelpText
-#, fuzzy
 msgid  "Events"
 msgstr "ဖြစ်ရပ်များ"
 
 #: source/dialogs/hyperdlg.src#RID_SVXPAGE_HYPERLINK_MAIL.BTN_SCRIPT.ButtonImage.Text
-#, fuzzy
 msgid  "Events"
-msgstr "ဖြစ်ရပ်များ"
+msgstr "Events"
 
 #: source/dialogs/hyperdlg.src#RID_SVXPAGE_HYPERLINK_DOCUMENT.TabPage.Text
 #, fuzzy
@@ -1455,94 +1394,82 @@ msgid  "Hyperlink"
 msgstr "လိုသလို ရှာယူနိုင်ခြင်း (လက်ပုံပါ)"
 
 #: source/dialogs/hyperdlg.src#RID_SVXPAGE_HYPERLINK_DOCUMENT.GRP_DOCUMENT.FixedLine.Text
-#, fuzzy
 msgid  "Document"
 msgstr "မှတ်တမ်းမှတ်ရာ"
 
 #: source/dialogs/hyperdlg.src#RID_SVXPAGE_HYPERLINK_DOCUMENT.FT_PATH_DOC.FixedText.Text
-#, fuzzy
 msgid  "~Path"
 msgstr "လမ်းကြောင်း"
 
 #: source/dialogs/hyperdlg.src#RID_SVXPAGE_HYPERLINK_DOCUMENT.BTN_FILEOPEN.ImageButton.QuickHelpText
-#, fuzzy
 msgid  "Open File"
 msgstr "ဖိုင် ဖွင့်ပါ"
 
 #: source/dialogs/hyperdlg.src#RID_SVXPAGE_HYPERLINK_DOCUMENT.BTN_FILEOPEN.ButtonImage.Text
-#, fuzzy
 msgid  "Open File"
 msgstr "Open File"
 
 #: source/dialogs/hyperdlg.src#RID_SVXPAGE_HYPERLINK_DOCUMENT.GRP_TARGET.FixedLine.Text
-#, fuzzy
 msgid  "Target in document"
 msgstr "မှတ်တမ်းမှတ်ရာရှိ ပစ်မှတ်"
 
 #: source/dialogs/hyperdlg.src#RID_SVXPAGE_HYPERLINK_DOCUMENT.FT_TARGET_DOC.FixedText.Text
-#, fuzzy
 msgid  "Targ~et"
 msgstr "ပစ်မှတ်"
 
 #: source/dialogs/hyperdlg.src#RID_SVXPAGE_HYPERLINK_DOCUMENT.FT_URL.FixedText.Text
-#, fuzzy
 msgid  "URL"
 msgstr "URL"
 
 #: source/dialogs/hyperdlg.src#RID_SVXPAGE_HYPERLINK_DOCUMENT.FT_FULL_URL.FixedText.Text
-#, fuzzy
 msgid  "Test text"
 msgstr "စာသား စစ်ဆေးပါ"
 
 #: source/dialogs/hyperdlg.src#RID_SVXPAGE_HYPERLINK_DOCUMENT.BTN_BROWSE.ImageButton.QuickHelpText
-#, fuzzy
 msgid  "Target in Document"
-msgstr "Target in Document"
+msgstr "မှတ်တမ်းမှတ်ရာရှိ ပစ်မှတ်"
 
 #: source/dialogs/hyperdlg.src#RID_SVXPAGE_HYPERLINK_DOCUMENT.BTN_BROWSE.ButtonImage.Text
-#, fuzzy
 msgid  "Target in Document"
 msgstr "Target in Document"
 
 #: source/dialogs/hyperdlg.src#RID_SVXPAGE_HYPERLINK_DOCUMENT.GRP_MORE.FixedLine.Text
-#, fuzzy
 msgid  "Further settings"
 msgstr "ပိုသာ၍ ရွေးနိုင်ခြင်းများ"
 
 #: source/dialogs/hyperdlg.src#RID_SVXPAGE_HYPERLINK_DOCUMENT.FT_FRAME.FixedText.Text
-#, fuzzy
 msgid  "F~rame"
 msgstr "ကန့်သတ်ချက်ဘောင်"
 
 #: source/dialogs/hyperdlg.src#RID_SVXPAGE_HYPERLINK_DOCUMENT.FT_FORM.FixedText.Text
-#, fuzzy
 msgid  "F~orm"
 msgstr "ပုံစံ"
 
 #: source/dialogs/hyperdlg.src#RID_SVXPAGE_HYPERLINK_DOCUMENT.LB_FORM.Default.StringList.item
-#, fuzzy
+msgid  "Text"
+msgstr "စာသား"
+
+#: source/dialogs/hyperdlg.src#RID_SVXPAGE_HYPERLINK_DOCUMENT.LB_FORM.Default.StringList.item
 msgid  "Button"
 msgstr "နှိပ်ရန် ခလုတ်"
 
 #: source/dialogs/hyperdlg.src#RID_SVXPAGE_HYPERLINK_DOCUMENT.FT_INDICATION.FixedText.Text
-#, fuzzy
 msgid  "Te~xt"
 msgstr "စာသား"
 
 #: source/dialogs/hyperdlg.src#RID_SVXPAGE_HYPERLINK_DOCUMENT.FT_TEXT.FixedText.Text
-#, fuzzy
 msgid  "N~ame"
 msgstr "အမည်"
 
 #: source/dialogs/hyperdlg.src#RID_SVXPAGE_HYPERLINK_DOCUMENT.BTN_SCRIPT.ImageButton.QuickHelpText
 #, fuzzy
 msgid  "Events"
-msgstr "Events"
+msgstr "ဖြစ်ရပ်များ"
 
 #: source/dialogs/hyperdlg.src#RID_SVXPAGE_HYPERLINK_DOCUMENT.BTN_SCRIPT.ButtonImage.Text
 #, fuzzy
 msgid  "Events"
-msgstr "ဖြစ်ရပ်များ"
+msgstr "Events"
 
 #: source/dialogs/hyperdlg.src#RID_SVXPAGE_HYPERLINK_NEWDOCUMENT.TabPage.Text
 #, fuzzy
@@ -1601,6 +1528,11 @@ msgstr "ပုံစံ"
 
 #: source/dialogs/hyperdlg.src#RID_SVXPAGE_HYPERLINK_NEWDOCUMENT.LB_FORM.Default.StringList.item
 #, fuzzy
+msgid  "Text"
+msgstr "စာသား"
+
+#: source/dialogs/hyperdlg.src#RID_SVXPAGE_HYPERLINK_NEWDOCUMENT.LB_FORM.Default.StringList.item
+#, fuzzy
 msgid  "Button"
 msgstr "နှိပ်ရန် ခလုတ်"
 
@@ -1617,7 +1549,7 @@ msgstr "အမည်"
 #: source/dialogs/hyperdlg.src#RID_SVXPAGE_HYPERLINK_NEWDOCUMENT.BTN_SCRIPT.ImageButton.QuickHelpText
 #, fuzzy
 msgid  "Events"
-msgstr "Events"
+msgstr "ဖြစ်ရပ်များ"
 
 #: source/dialogs/hyperdlg.src#RID_SVXPAGE_HYPERLINK_NEWDOCUMENT.BTN_SCRIPT.ButtonImage.Text
 #, fuzzy
@@ -1665,8 +1597,9 @@ msgid  "Internet"
 msgstr "အင်တာနက်"
 
 #: source/dialogs/hyperdlg.src#RID_SVXSTR_HYPERDLG_HLINETTP_HELP.String.Text
+#, fuzzy
 msgid  "This is where you create a hyperlink to a Web page, FTP server or Telnet connection."
-msgstr ""
+msgstr "ဤနေရာသည် ကွန်ရက် စာမျက်နှာ တစ်ခုသို့ လိုသလို ရှာယူနိုင်ခြင်း (လက်ပုံပါ) တစ်ခု၊  FTP ချိတ်ထားသော ကွန်ပျူတာများသို့ အချက်အလက် ပေးပို့ခြင်း (သို့) Telnet အချိတ်အဆက် ဖန်တီးသည်။"
 
 #: source/dialogs/hyperdlg.src#RID_SVXSTR_HYPERDLG_HLMAILTP.String.Text
 #, fuzzy
@@ -1674,8 +1607,9 @@ msgid  "Mail & News"
 msgstr "အီးမေးလ်နှင့် သတင်း"
 
 #: source/dialogs/hyperdlg.src#RID_SVXSTR_HYPERDLG_HLMAILTP_HELP.String.Text
+#, fuzzy
 msgid  "This is where you create a hyperlink to an e-mail address or newsgroup."
-msgstr ""
+msgstr "ဤနေရာသည် အီးမေးလ်လိပ်စာ တစ်ခု (သို့) သတင်းအုပ်စုသို့ လိုသလို ရှာယူနိုင်ခြင်း (လက်ပုံပါ) တစ်ခု  ဖန်တီးသည်။"
 
 #: source/dialogs/hyperdlg.src#RID_SVXSTR_HYPERDLG_HLDOCTP.String.Text
 #, fuzzy
@@ -1683,8 +1617,9 @@ msgid  "Document"
 msgstr "မှတ်တမ်းမှတ်ရာ"
 
 #: source/dialogs/hyperdlg.src#RID_SVXSTR_HYPERDLG_HLDOCTP_HELP.String.Text
+#, fuzzy
 msgid  "This is where you create a hyperlink to an existing document or a target within a document."
-msgstr ""
+msgstr "ဤနေရာသည် မှတ်တမ်းမှတ်ရာတစ်ခုအတွင်း တည်ရှိသည့် မှတ်တမ်းမှတ်ရာတစ်ခု (သို့) ပစ်မှတ် တစ်ခုသို့ လိုသလို ရှာယူနိုင်ခြင်း (လက်ပုံပါ) တစ်ခု ဖန်တီးသည်။"
 
 #: source/dialogs/hyperdlg.src#RID_SVXSTR_HYPERDLG_HLDOCNTP.String.Text
 #, fuzzy
@@ -1692,8 +1627,9 @@ msgid  "New Document"
 msgstr "မှတ်တမ်းမှတ်ရာအသစ်"
 
 #: source/dialogs/hyperdlg.src#RID_SVXSTR_HYPERDLG_HLDOCNTP_HELP.String.Text
+#, fuzzy
 msgid  "This is where you create a new document to which the new link points."
-msgstr ""
+msgstr "ဤနေရာသည် အစက်အပြောက်အမှတ်များ ကွင်းဆက်အသစ်သို့ မှတ်တမ်းမှတ်ရာအသစ်တစ်ခု ဖန်တီးသည်။"
 
 #: source/dialogs/hyperdlg.src#RID_SVXSTR_HYPERDLG_FORM_BUTTON.String.Text
 #, fuzzy
@@ -1706,28 +1642,9 @@ msgid  "Text"
 msgstr "စာသား"
 
 #: source/dialogs/hyperdlg.src#RID_SVXSTR_HYPERDLG_QUERYOVERWRITE.String.Text
+#, fuzzy
 msgid  "The file already exists. Overwrite?"
-msgstr ""
-
-#: source/dialogs/hyperdlg.src#RID_SVXPAGE_HYPERLINK_INTERNET.LB_FORM.Default.StringList.item
-#, fuzzy
-msgid  "Text"
-msgstr "စာသား"
-
-#: source/dialogs/hyperdlg.src#RID_SVXPAGE_HYPERLINK_MAIL.LB_FORM.Default.StringList.item
-#, fuzzy
-msgid  "Text"
-msgstr "စာသား"
-
-#: source/dialogs/hyperdlg.src#RID_SVXPAGE_HYPERLINK_DOCUMENT.LB_FORM.Default.StringList.item
-#, fuzzy
-msgid  "Text"
-msgstr "စာသား"
-
-#: source/dialogs/hyperdlg.src#RID_SVXPAGE_HYPERLINK_NEWDOCUMENT.LB_FORM.Default.StringList.item
-#, fuzzy
-msgid  "Text"
-msgstr "စာသား"
+msgstr "ဖိုင် အဆင်သင့် တည်ရှိသည်။ ဖိုင်ဟောင်းတွင် အချက်အလက်သစ်များ ထပ်မံ ဖြည့်စွပ် သိမ်းဆည်းမလား?"
 
 #: source/dialogs/passwdomdlg.src#RID_DLG_PASSWORD_TO_OPEN_MODIFY.ModalDialog.Text
 #, fuzzy
@@ -1789,309 +1706,253 @@ msgid  "Fewer ~Options"
 msgstr "ပိုနည်းသော~ရွေးပိုင်ခွင့်များ"
 
 #: source/dialogs/passwdomdlg.src#RID_DLG_PASSWORD_TO_OPEN_MODIFY.STR_ONE_PASSWORD_MISMATCH.String.Text
+#, fuzzy
 msgid  "The confirmation password did not match the password. Set the password again by entering the same password in both boxes."
-msgstr ""
+msgstr "နောက်တစ်ခါပြန်ရိုက်သောစကားဝှက်သည် ရိုက်ပြီးသားစကားဝှက်နှင့်မကိုက်ပါ။ အကွက်နှစ်ခုတွင် တူညီသောစကားဝှက်ကို ထပ်ရိုက်ပါ။"
 
 #: source/dialogs/passwdomdlg.src#RID_DLG_PASSWORD_TO_OPEN_MODIFY.STR_TWO_PASSWORDS_MISMATCH.String.Text
+#, fuzzy
 msgid  "The confirmation passwords did not match the original passwords. Set the passwords again."
-msgstr ""
+msgstr "နောက်တစ်ခါပြန်ရိုက်သောစကားဝှက်သည် မူလစကားဝှက်နှင့်မကိုက်ပါ။ စကားဝှက်ကို ထပ်ရိုက်ပါ။"
 
 #: source/dialogs/passwdomdlg.src#RID_DLG_PASSWORD_TO_OPEN_MODIFY.STR_INVALID_STATE_FOR_OK_BUTTON.String.Text
+#, fuzzy
 msgid  "Please enter a password to open or to modify, or check the open read-only option to continue."
-msgstr ""
+msgstr "ဖွင့်ရန်(သို့)မွမ်းမံရန် စကားသှက်ရိုက်ပါ (သို့) ဆက်လက်ရန် ဖတ်ရန်အတွက်ကိုသာ ဖွင့်ခြင်းဖြစ်ကြောင်းစစ်ပါ။"
 
 #: source/dialogs/grfflt.src#RID_SVX_GRFFILTER_DLG_MOSAIC.ModalDialog.Text
-#, fuzzy
 msgid  "Mosaic"
 msgstr "ရောင်စုံရုပ်ပုံ"
 
 #: source/dialogs/grfflt.src#RID_SVX_GRFFILTER_DLG_MOSAIC.FL_PARAMETER.FixedLine.Text
-#, fuzzy
 msgid  "Parameters"
 msgstr "ကိုယ်စားပြုတန်ဖိုးများ"
 
 #: source/dialogs/grfflt.src#RID_SVX_GRFFILTER_DLG_MOSAIC.DLG_FILTERMOSAIC_FT_WIDTH.FixedText.Text
-#, fuzzy
 msgid  "~Width"
 msgstr "~အကျယ်"
 
 #: source/dialogs/grfflt.src#RID_SVX_GRFFILTER_DLG_MOSAIC.DLG_FILTERMOSAIC_FT_HEIGHT.FixedText.Text
-#, fuzzy
 msgid  "H~eight"
 msgstr "အ~မြင့်"
 
 #: source/dialogs/grfflt.src#RID_SVX_GRFFILTER_DLG_MOSAIC.DLG_FILTERMOSAIC_CBX_EDGES.CheckBox.Text
-#, fuzzy
 msgid  "E~nhance edges"
 msgstr "အနားစွန်းများကို ပိုကောင်း~အောင်လုပ်ပါ"
 
 #: source/dialogs/grfflt.src#RID_SVX_GRFFILTER_DLG_SOLARIZE.ModalDialog.Text
-#, fuzzy
 msgid  "Solarization"
 msgstr "အလင်းများလွန်းခြင်း"
 
 #: source/dialogs/grfflt.src#RID_SVX_GRFFILTER_DLG_SOLARIZE.FL_PARAMETER.FixedLine.Text
-#, fuzzy
 msgid  "Parameters"
 msgstr "ကိုယ်စားပြုတန်ဖိုးများ"
 
 #: source/dialogs/grfflt.src#RID_SVX_GRFFILTER_DLG_SOLARIZE.DLG_FILTERSOLARIZE_FT_THRESHOLD.FixedText.Text
-#, fuzzy
 msgid  "Threshold ~value"
 msgstr "အစဦး~တန်ဖိုး"
 
 #: source/dialogs/grfflt.src#RID_SVX_GRFFILTER_DLG_SOLARIZE.DLG_FILTERSOLARIZE_CBX_INVERT.CheckBox.Text
-#, fuzzy
 msgid  "~Invert"
 msgstr "~ပြောင်းပြန်လှန်ပါ"
 
 #: source/dialogs/grfflt.src#RID_SVX_GRFFILTER_DLG_SEPIA.ModalDialog.Text
-#, fuzzy
 msgid  "Aging"
 msgstr "ပုံဟောင်းပုံစံ"
 
 #: source/dialogs/grfflt.src#RID_SVX_GRFFILTER_DLG_SEPIA.FL_PARAMETER.FixedLine.Text
-#, fuzzy
 msgid  "Parameters"
 msgstr "ကိုယ်စားပြုတန်ဖိုးများ"
 
 #: source/dialogs/grfflt.src#RID_SVX_GRFFILTER_DLG_SEPIA.DLG_FILTERSEPIA_FT_SEPIA.FixedText.Text
-#, fuzzy
 msgid  "Aging degree"
 msgstr "ပုံဟောင်းပုံစံ ဒီဂရီ"
 
 #: source/dialogs/grfflt.src#RID_SVX_GRFFILTER_DLG_POSTER.ModalDialog.Text
-#, fuzzy
 msgid  "Posterize"
 msgstr "ပိုစတာအရောင်"
 
 #: source/dialogs/grfflt.src#RID_SVX_GRFFILTER_DLG_POSTER.FL_PARAMETER.FixedLine.Text
-#, fuzzy
 msgid  "Parameters"
 msgstr "ကိုယ်စားပြုတန်ဖိုးများ"
 
 #: source/dialogs/grfflt.src#RID_SVX_GRFFILTER_DLG_POSTER.DLG_FILTERPOSTER_FT_POSTER.FixedText.Text
-#, fuzzy
 msgid  "Poster colors"
 msgstr "ပိုစတာအရောင်များ"
 
 #: source/dialogs/grfflt.src#RID_SVX_GRFFILTER_DLG_EMBOSS.ModalDialog.Text
-#, fuzzy
 msgid  "Relief"
 msgstr "ရုပ်ကြွ"
 
 #: source/dialogs/grfflt.src#RID_SVX_GRFFILTER_DLG_EMBOSS.FL_PARAMETER.FixedLine.Text
-#, fuzzy
 msgid  "Parameters"
 msgstr "ကိုယ်စားပြုတန်ဖိုးများ"
 
 #: source/dialogs/grfflt.src#RID_SVX_GRFFILTER_DLG_EMBOSS.DLG_FILTEREMBOSS_FT_LIGHT.FixedText.Text
-#, fuzzy
 msgid  "Light source"
 msgstr "အလင်းရင်းမြစ်"
 
 #: source/dialogs/hangulhanjadlg.src#RID_SVX_MDLG_HANGULHANJA.ModalDialog.Text
-#, fuzzy
 msgid  "Hangul/Hanja Conversion"
 msgstr "ဟန်ဂူ /ဟန်ဂျာ ပြောင်းလဲခြင်း ကိစ္စ"
 
 #: source/dialogs/hangulhanjadlg.src#RID_SVX_MDLG_HANGULHANJA.PB_FIND.PushButton.Text
-#, fuzzy
 msgid  "~Find"
 msgstr "ရှာပါ"
 
 #: source/dialogs/hangulhanjadlg.src#RID_SVX_MDLG_HANGULHANJA.FT_FORMAT.FixedText.Text
-#, fuzzy
 msgid  "Format"
 msgstr "စီစဉ် ဖွဲ့စည်းမှု ပုံစံ"
 
 #: source/dialogs/hangulhanjadlg.src#RID_SVX_MDLG_HANGULHANJA.RB_SIMPLE_CONVERSION.RadioButton.Text
-#, fuzzy
 msgid  "~Hangul/Hanja"
 msgstr "ဟန်ဂူ / ဟန်ဂျာ"
 
 #: source/dialogs/hangulhanjadlg.src#RID_SVX_MDLG_HANGULHANJA.RB_HANJA_HANGUL_BRACKETED.RadioButton.Text
-#, fuzzy
 msgid  "Hanja (Han~gul)"
 msgstr "ဟန်ဂျာ (ဟန်ဂူ)"
 
 #: source/dialogs/hangulhanjadlg.src#RID_SVX_MDLG_HANGULHANJA.RB_HANGUL_HANJA_BRACKETED.RadioButton.Text
-#, fuzzy
 msgid  "Hang~ul (Hanja)"
 msgstr "ဟန်ဂူ (ဟန်ဂျာ)"
 
 #: source/dialogs/hangulhanjadlg.src#RID_SVX_MDLG_HANGULHANJA.RB_HANGUL_HANJA_ABOVE.RadioButton.Text
-#, fuzzy
 msgid  "Hangu~l"
 msgstr "ဟန်ဂူ"
 
 #: source/dialogs/hangulhanjadlg.src#RID_SVX_MDLG_HANGULHANJA.RB_HANGUL_HANJA_BELOW.RadioButton.Text
-#, fuzzy
 msgid  "Hang~ul"
 msgstr "ဟန်ဂူ"
 
 #: source/dialogs/hangulhanjadlg.src#RID_SVX_MDLG_HANGULHANJA.RB_HANJA_HANGUL_ABOVE.RadioButton.Text
-#, fuzzy
 msgid  "Han~ja"
 msgstr "ဟန်ဂျာ"
 
 #: source/dialogs/hangulhanjadlg.src#RID_SVX_MDLG_HANGULHANJA.RB_HANJA_HANGUL_BELOW.RadioButton.Text
-#, fuzzy
 msgid  "Ha~nja"
 msgstr "ဟန်ဂျာ"
 
 #: source/dialogs/hangulhanjadlg.src#RID_SVX_MDLG_HANGULHANJA.FT_CONVERSION.FixedText.Text
-#, fuzzy
 msgid  "Conversion"
 msgstr "ပြောင်းလဲခြင်းကိစ္စ"
 
 #: source/dialogs/hangulhanjadlg.src#RID_SVX_MDLG_HANGULHANJA.CB_HANGUL_ONLY.CheckBox.Text
-#, fuzzy
 msgid  "Hangul ~only"
 msgstr "ဟန်ဂူသာ"
 
 #: source/dialogs/hangulhanjadlg.src#RID_SVX_MDLG_HANGULHANJA.CB_HANJA_ONLY.CheckBox.Text
-#, fuzzy
 msgid  "Hanja onl~y"
 msgstr "ဟန်ဂျာသာ"
 
 #: source/dialogs/hangulhanjadlg.src#RID_SVX_MDLG_HANGULHANJA.CB_REPLACE_BY_CHARACTER.CheckBox.Text
-#, fuzzy
 msgid  "Replace b~y character"
 msgstr "အက္ခရာ၊သင်္ကေတအားဖြင့် အစားထိုးပါ"
 
 #: source/dialogs/hangulhanjadlg.src#RID_SVX_MDLG_HANGULHANJA.STR_HANGUL.String.Text
-#, fuzzy
 msgid  "Hangul"
 msgstr "ဟန်ဂူ"
 
 #: source/dialogs/hangulhanjadlg.src#RID_SVX_MDLG_HANGULHANJA.STR_HANJA.String.Text
-#, fuzzy
 msgid  "Hanja"
 msgstr "ဟန်ဂျာ"
 
 #: source/dialogs/hangulhanjadlg.src#RID_SVX_MDLG_HANGULHANJA_OPT.ModalDialog.Text
-#, fuzzy
 msgid  "Hangul/Hanja Options"
 msgstr "ဟန်ဂူ / ဟန်ဂျာ ရွေးပိုင်ခွင့်များ"
 
 #: source/dialogs/hangulhanjadlg.src#RID_SVX_MDLG_HANGULHANJA_OPT.FT_USERDEFDICT.FixedText.Text
-#, fuzzy
 msgid  "User-defined dictionaries"
 msgstr "အသုံးပြုသူ - အဓိပ္ပါယ်ဖေါ်ခြင်း အဘိဓာန်များ"
 
 #: source/dialogs/hangulhanjadlg.src#RID_SVX_MDLG_HANGULHANJA_OPT.FL_OPTIONS.FixedLine.Text
-#, fuzzy
 msgid  "Options"
 msgstr "ရွေးပိုင်ခွင့်များ"
 
 #: source/dialogs/hangulhanjadlg.src#RID_SVX_MDLG_HANGULHANJA_OPT.CB_IGNOREPOST.CheckBox.Text
-#, fuzzy
 msgid  "Ignore post-positional word"
 msgstr "ပို့သော-အနေအထား စကားလုံး ဂရုမစိုက်ပါ"
 
 #: source/dialogs/hangulhanjadlg.src#RID_SVX_MDLG_HANGULHANJA_OPT.CB_SHOWRECENTLYFIRST.CheckBox.Text
-#, fuzzy
 msgid  "Show recently used entries first"
 msgstr "မကြာမီက အသုံးပြုထားသည့် အဝင် ပထမဆုံးကို ပြပါ"
 
 #: source/dialogs/hangulhanjadlg.src#RID_SVX_MDLG_HANGULHANJA_OPT.CB_AUTOREPLACEUNIQUE.CheckBox.Text
-#, fuzzy
 msgid  "Replace all unique entries automatically"
 msgstr "အလိုအလျောက် တမူထူးခြားသော အဝင်များ အားလုံး အစားထိုးပါ"
 
 #: source/dialogs/hangulhanjadlg.src#RID_SVX_MDLG_HANGULHANJA_OPT.PB_HHO_NEW.PushButton.Text
-#, fuzzy
 msgid  "New..."
 msgstr "အသစ်..."
 
 #: source/dialogs/hangulhanjadlg.src#RID_SVX_MDLG_HANGULHANJA_OPT.PB_HHO_EDIT.PushButton.Text
-#, fuzzy
 msgid  "Edit..."
 msgstr "တည်းဖြတ်ပါ..."
 
 #: source/dialogs/hangulhanjadlg.src#RID_SVX_MDLG_HANGULHANJA_OPT.PB_HHO_DELETE.PushButton.Text
-#, fuzzy
 msgid  "Delete"
 msgstr "ဖျက်ပါ"
 
 #: source/dialogs/hangulhanjadlg.src#RID_SVX_MDLG_HANGULHANJA_NEWDICT.ModalDialog.Text
-#, fuzzy
 msgid  "New Dictionary"
 msgstr "အညွှန်းသစ်"
 
 #: source/dialogs/hangulhanjadlg.src#RID_SVX_MDLG_HANGULHANJA_NEWDICT.FL_NEWDICT.FixedLine.Text
-#, fuzzy
 msgid  "Dictionary"
 msgstr "အညွှန်း"
 
 #: source/dialogs/hangulhanjadlg.src#RID_SVX_MDLG_HANGULHANJA_NEWDICT.FT_DICTNAME.FixedText.Text
-#, fuzzy
 msgid  "~Name"
 msgstr "အမည်"
 
 #: source/dialogs/hangulhanjadlg.src#RID_SVX_MDLG_HANGULHANJA_EDIT.ModalDialog.Text
-#, fuzzy
 msgid  "Edit Custom Dictionary"
 msgstr "ထုံးစံ အညွှန်း တည်းဖြတ်ပါ"
 
 #: source/dialogs/hangulhanjadlg.src#RID_SVX_MDLG_HANGULHANJA_EDIT.STR_EDITHINT.String.Text
-#, fuzzy
 msgid  "[Enter text here]"
 msgstr "[ဤစာသားနေရာသို့ ဝင်ပါ]"
 
 #: source/dialogs/hangulhanjadlg.src#RID_SVX_MDLG_HANGULHANJA_EDIT.FT_BOOK.FixedText.Text
-#, fuzzy
 msgid  "Book"
 msgstr "စာအုပ်"
 
 #: source/dialogs/hangulhanjadlg.src#RID_SVX_MDLG_HANGULHANJA_EDIT.FT_ORIGINAL.FixedText.Text
-#, fuzzy
 msgid  "Original"
 msgstr "မူလ"
 
 #: source/dialogs/hangulhanjadlg.src#RID_SVX_MDLG_HANGULHANJA_EDIT.FT_SUGGESTIONS.FixedText.Text
-#, fuzzy
 msgid  "Suggestions (max. 8)"
 msgstr "အကြံပြုချက်များ (max. 8)"
 
 #: source/dialogs/hangulhanjadlg.src#RID_SVX_MDLG_HANGULHANJA_EDIT.PB_HHE_NEW.PushButton.Text
-#, fuzzy
 msgid  "New"
 msgstr "အသစ်"
 
 #: source/dialogs/hangulhanjadlg.src#RID_SVX_MDLG_HANGULHANJA_EDIT.PB_HHE_DELETE.PushButton.Text
-#, fuzzy
 msgid  "Delete"
 msgstr "ဖျက်ပါ"
 
 #: source/dialogs/hangulhanjadlg.src#RID_SVX_MDLG_HANGULHANJA_EDIT.PB_HHE_CLOSE.CancelButton.Text
-#, fuzzy
 msgid  "Close"
 msgstr "ပိတ်ပါ"
 
 #: source/dialogs/charmap.src#RID_SVXDLG_CHARMAP.ModalDialog.Text
-#, fuzzy
 msgid  "Special Characters"
 msgstr "အထူး အက္ခရာ၊သင်္ကေတများ"
 
 #: source/dialogs/charmap.src#RID_SVXDLG_CHARMAP.FT_FONT.FixedText.Text
-#, fuzzy
 msgid  "~Font"
 msgstr "စာလုံး"
 
 #: source/dialogs/charmap.src#RID_SVXDLG_CHARMAP.FT_SUBSET.FixedText.Text
-#, fuzzy
 msgid  "~Subset"
 msgstr "ပြဌာန်းငယ်"
 
 #: source/dialogs/charmap.src#RID_SVXDLG_CHARMAP.FT_SYMBOLE.FixedText.Text
-#, fuzzy
 msgid  "Characters:"
 msgstr "အက္ခရာ၊သင်္ကေတများ-"
 
 #: source/dialogs/charmap.src#RID_SVXDLG_CHARMAP.BTN_DELETE.PushButton.Text
-#, fuzzy
 msgid  "~Delete"
 msgstr "ဖျက်ပါ"
 
@@ -2124,8 +1985,9 @@ msgid  "Notice"
 msgstr ""
 
 #: source/dialogs/hyphen.src#RID_SVXSTR_HMERR_CHECKINSTALL.String.Text
+#, fuzzy
 msgid  "is not available for spellchecking\nPlease check your installation and install the desired language\n"
-msgstr ""
+msgstr "စာလုံးပေါင်း စစ်ဆေးမှုကို အသုံးမပြုနိုင်ပါ။ \nဆော့ဖ်ဝဲထည့်သွင်းထားမှုများ (သို့) ဘာသာစကားထည့်သွင်းထားမှုများကို ပြန်စစ်ဆေးပေးပါ\n"
 
 #: source/dialogs/hyphen.src#RID_SVXDLG_HYPHENATE.ModalDialog.Text
 #, fuzzy
@@ -2813,62 +2675,50 @@ msgid  " Columns"
 msgstr "ကော်လံများ"
 
 #: source/dialogs/dlgname.src#RID_SVXDLG_NAME.ModalDialog.Text
-#, fuzzy
 msgid  "Name"
 msgstr "အမည်"
 
 #: source/dialogs/dlgname.src#RID_SVXDLG_OBJECT_NAME.ModalDialog.Text
-#, fuzzy
 msgid  "Name"
 msgstr "အမည်"
 
 #: source/dialogs/dlgname.src#RID_SVXDLG_OBJECT_NAME.NTD_FT_NAME.FixedText.Text
-#, fuzzy
 msgid  "~Name"
 msgstr "အမည်"
 
 #: source/dialogs/dlgname.src#RID_SVXDLG_OBJECT_TITLE_DESC.ModalDialog.Text
-#, fuzzy
 msgid  "Description"
 msgstr "ဖေါ်ပြချက်"
 
 #: source/dialogs/dlgname.src#RID_SVXDLG_OBJECT_TITLE_DESC.NTD_FT_TITLE.FixedText.Text
-#, fuzzy
 msgid  "~Title"
 msgstr "ခေါင်းစဉ်"
 
 #: source/dialogs/dlgname.src#RID_SVXDLG_OBJECT_TITLE_DESC.NTD_FT_DESC.FixedText.Text
-#, fuzzy
 msgid  "~Description"
 msgstr "~ဖေါ်ပြချက်"
 
 #: source/dialogs/cuiimapdlg.src#RID_SVXDLG_IMAPURL.ModalDialog.Text
-#, fuzzy
 msgid  "Properties"
 msgstr "ဖေါ်ပြချက်"
 
 #: source/dialogs/cuiimapdlg.src#RID_SVXDLG_IMAPURL.FT_URL1.FixedText.Text
-#, fuzzy
 msgid  "~URL"
 msgstr "~URL"
 
 #: source/dialogs/cuiimapdlg.src#RID_SVXDLG_IMAPURL.FT_TARGET.FixedText.Text
-#, fuzzy
 msgid  "F~rame"
 msgstr "ကန့်သတ်ချက်ဘောင်"
 
 #: source/dialogs/cuiimapdlg.src#RID_SVXDLG_IMAPURL.FT_NAME.FixedText.Text
-#, fuzzy
 msgid  "~Name"
 msgstr "အမည်"
 
 #: source/dialogs/cuiimapdlg.src#RID_SVXDLG_IMAPURL.FT_URLDESCRIPTION.FixedText.Text
-#, fuzzy
 msgid  "Alternative ~text"
 msgstr "စာသား အခြားနည်းလမ်း"
 
 #: source/dialogs/cuiimapdlg.src#RID_SVXDLG_IMAPURL.FT_DESCRIPTION.FixedText.Text
-#, fuzzy
 msgid  "~Description"
 msgstr "~ဖေါ်ပြချက်"
 
@@ -2997,8 +2847,9 @@ msgid  "~Book mode"
 msgstr "~စာအုပ်နည်းနာ"
 
 #: source/dialogs/showcols.src#RID_SVX_DLG_SHOWGRIDCOLUMNS.1.FixedText.Text
+#, fuzzy
 msgid  "The following columns are currently hidden. Please mark the fields you want to show and choose OK."
-msgstr ""
+msgstr "အောက်ပါ ကော်လံအကန့်များ လောလောဆယ် ခေတ္တ ဖျောက်ထားသည်။ ပြရန် နေရာကွက်များ မှတ်သားပေးပြီး အိုကေ ရွေးပါ။"
 
 #: source/dialogs/showcols.src#RID_SVX_DLG_SHOWGRIDCOLUMNS.CancelButton.Text
 #, fuzzy
@@ -3006,191 +2857,154 @@ msgid  "Show columns"
 msgstr "ကော်လံအကန့်များ ပြပါ"
 
 #: source/dialogs/fmsearch.src#RID_SVXDLG_SEARCHFORM.ModalDialog.Text
-#, fuzzy
 msgid  "Record Search"
 msgstr "ရှာဖွေမှုမှတ်တမ်း"
 
 #: source/dialogs/fmsearch.src#RID_SVXDLG_SEARCHFORM.FL_SEARCHFOR.FixedLine.Text
-#, fuzzy
 msgid  "Search for"
 msgstr "အတွက် ရှာဖွေပါ"
 
 #: source/dialogs/fmsearch.src#RID_SVXDLG_SEARCHFORM.RB_SEARCHFORTEXT.RadioButton.Text
-#, fuzzy
 msgid  "~Text"
 msgstr "~စာသား"
 
 #: source/dialogs/fmsearch.src#RID_SVXDLG_SEARCHFORM.RB_SEARCHFORNULL.RadioButton.Text
-#, fuzzy
 msgid  "Field content is ~NULL"
 msgstr "နေရာကွက်တွင် ပါဝင်သည်မှာ ~NULL ဖြစ်သည်"
 
 #: source/dialogs/fmsearch.src#RID_SVXDLG_SEARCHFORM.RB_SEARCHFORNOTNULL.RadioButton.Text
-#, fuzzy
 msgid  "Field content is not NU~LL"
 msgstr "နေရာကွက်တွင် ပါဝင်သည်မှာ NU~LL မဟုတ်ပါ"
 
 #: source/dialogs/fmsearch.src#RID_SVXDLG_SEARCHFORM.FL_WHERE.FixedLine.Text
-#, fuzzy
 msgid  "Where to search"
 msgstr "ဘယ်နေရာမှာ ရှာဖွေမလဲ"
 
 #: source/dialogs/fmsearch.src#RID_SVXDLG_SEARCHFORM.FT_FORM.FixedText.Text
-#, fuzzy
 msgid  "Form"
 msgstr "ပုံစံ"
 
 #: source/dialogs/fmsearch.src#RID_SVXDLG_SEARCHFORM.RB_ALLFIELDS.RadioButton.Text
-#, fuzzy
 msgid  "All Fields"
 msgstr "နေရာကွက်များအားလုံး"
 
 #: source/dialogs/fmsearch.src#RID_SVXDLG_SEARCHFORM.RB_SINGLEFIELD.RadioButton.Text
-#, fuzzy
 msgid  "Single field"
 msgstr "နေရာကွက်တစ်ခု"
 
 #: source/dialogs/fmsearch.src#RID_SVXDLG_SEARCHFORM.FL_OPTIONS.FixedLine.Text
-#, fuzzy
 msgid  "Settings"
 msgstr "ပြင်ဆင်ချိန်ညှိနိုင်မှုများ"
 
 #: source/dialogs/fmsearch.src#RID_SVXDLG_SEARCHFORM.FT_POSITION.FixedText.Text
-#, fuzzy
 msgid  "Position"
 msgstr "တည်နေရာ"
 
 #: source/dialogs/fmsearch.src#RID_SVXDLG_SEARCHFORM.CB_USEFORMATTER.CheckBox.Text
-#, fuzzy
 msgid  "Apply field format"
 msgstr "နေရာကွက်ပြင်ဆင်ချိန်ညှိမှုကို အသုံးပြုပါ"
 
 #: source/dialogs/fmsearch.src#RID_SVXDLG_SEARCHFORM.CB_CASE.CheckBox.Text
-#, fuzzy
 msgid  "Match case"
 msgstr "ကိစ္စရပ်တစ်ခုနှင့်ယှဉ်တွဲပါ"
 
 #: source/dialogs/fmsearch.src#RID_SVXDLG_SEARCHFORM.CB_BACKWARD.CheckBox.Text
-#, fuzzy
 msgid  "Search backwards"
 msgstr "အနောက်ဖက်များသို့ ရှာဖွေပါ"
 
 #: source/dialogs/fmsearch.src#RID_SVXDLG_SEARCHFORM.CB_STARTOVER.CheckBox.Text
-#, fuzzy
 msgid  "From Beginning"
 msgstr "အစပြုခြင်းမှ"
 
 #: source/dialogs/fmsearch.src#RID_SVXDLG_SEARCHFORM.CB_WILDCARD.CheckBox.Text
-#, fuzzy
 msgid  "Wildcard expression"
 msgstr "အထူးသင်္ကေတဖော်ပြချက်"
 
 #: source/dialogs/fmsearch.src#RID_SVXDLG_SEARCHFORM.CB_REGULAR.CheckBox.Text
-#, fuzzy
 msgid  "Regular expression"
 msgstr "ပုံမှန်ဖော်ပြချက်"
 
 #: source/dialogs/fmsearch.src#RID_SVXDLG_SEARCHFORM.CB_APPROX.CheckBox.Text
-#, fuzzy
 msgid  "Similarity Search"
 msgstr "တူညီသော ရှာဖွေချက်"
 
 #: source/dialogs/fmsearch.src#RID_SVXDLG_SEARCHFORM.PB_APPROXSETTINGS.PushButton.Text
-#, fuzzy
 msgid  "..."
 msgstr "..."
 
 #: source/dialogs/fmsearch.src#RID_SVXDLG_SEARCHFORM.CB_HALFFULLFORMS.CheckBox.Text
-#, fuzzy
 msgid  "Match character width"
 msgstr "အက္ခရာများ၏ အကျယ်ကို ယှဉ်တွဲပါ"
 
 #: source/dialogs/fmsearch.src#RID_SVXDLG_SEARCHFORM.CB_SOUNDSLIKECJK.CheckBox.Text
-#, fuzzy
 msgid  "Sounds like (Japanese)"
 msgstr "(ဂျပန်သံ) ကဲ့သို့ အသံများ"
 
 #: source/dialogs/fmsearch.src#RID_SVXDLG_SEARCHFORM.PB_SOUNDSLIKESETTINGS.PushButton.Text
-#, fuzzy
 msgid  "..."
 msgstr "..."
 
 #: source/dialogs/fmsearch.src#RID_SVXDLG_SEARCHFORM.FL_STATE.FixedLine.Text
-#, fuzzy
 msgid  "State"
 msgstr "ပြည်"
 
 #: source/dialogs/fmsearch.src#RID_SVXDLG_SEARCHFORM.FT_RECORDLABEL.FixedText.Text
-#, fuzzy
 msgid  "Record :"
 msgstr "မှတ်တမ်း -"
 
 #: source/dialogs/fmsearch.src#RID_SVXDLG_SEARCHFORM.PB_SEARCH.PushButton.Text
-#, fuzzy
 msgid  "Search"
 msgstr "ရှာဖွေပါ"
 
 #: source/dialogs/fmsearch.src#RID_SVXDLG_SEARCHFORM.1.CancelButton.Text
-#, fuzzy
 msgid  "~Close"
 msgstr "~ပိတ်ပါ"
 
 #: source/dialogs/fmsearch.src#RID_SVXDLG_SEARCHFORM.1.HelpButton.Text
-#, fuzzy
 msgid  "~Help"
 msgstr "~ကူညီပါ"
 
 #: source/dialogs/fmsearch.src#RID_STR_SEARCH_ANYWHERE.String.Text
-#, fuzzy
 msgid  "anywhere in the field"
 msgstr "နေရာကွက်တွင်းရှိ မည်သည့်နေရာကိုမဆို"
 
 #: source/dialogs/fmsearch.src#RID_STR_SEARCH_BEGINNING.String.Text
-#, fuzzy
 msgid  "beginning of field"
 msgstr "နေရာကွက်အစ"
 
 #: source/dialogs/fmsearch.src#RID_STR_SEARCH_END.String.Text
-#, fuzzy
 msgid  "end of field"
 msgstr "နေရာကွက်အဆုံး"
 
 #: source/dialogs/fmsearch.src#RID_STR_SEARCH_WHOLE.String.Text
-#, fuzzy
 msgid  "entire field"
 msgstr "နေရာကွက်တစ်ခုလုံး"
 
 #: source/dialogs/fmsearch.src#RID_STR_FROM_TOP.String.Text
-#, fuzzy
 msgid  "From top"
 msgstr "ထိပ်မှ"
 
 #: source/dialogs/fmsearch.src#RID_STR_FROM_BOTTOM.String.Text
-#, fuzzy
 msgid  "From bottom"
 msgstr "အောက်ခြေမှ"
 
 #: source/dialogs/fmsearch.src#RID_SVXERR_SEARCH_NORECORD.ErrorBox.Message
 msgid  "No records corresponding to your data found."
-msgstr ""
+msgstr "သင်ရှာဖွေတွေ့ရှိထားသည့် အချက်အလက်များနှင့် သက်ဆိုင်သော မည်သည့်မှတ်တမ်းမှ မရှိပါ။"
 
 #: source/dialogs/fmsearch.src#RID_SVXERR_SEARCH_GENERAL_ERROR.ErrorBox.Message
-#, fuzzy
 msgid  "An unknown error occurred. The search could not be finished."
 msgstr "အမည်မသိ အမှားတစ်ခု ဖြစ်ပွားသည်။ ရှာဖွေမှုကို အဆုံးမသတ်နိုင်ပါ။"
 
 #: source/dialogs/fmsearch.src#RID_STR_OVERFLOW_FORWARD.String.Text
-#, fuzzy
 msgid  "Overflow, search continued at the beginning"
 msgstr "များပြားလွန်းသည်၊ ရှာဖွေမှုကို အစမှ ဆက်လုပ်ပါ"
 
 #: source/dialogs/fmsearch.src#RID_STR_OVERFLOW_BACKWARD.String.Text
-#, fuzzy
 msgid  "Overflow, search continued at the end"
 msgstr "များပြားလွန်းသည်၊ ရှာဖွေမှုကို အဆုံးမှ ဆက်လုပ်ပါ"
 
 #: source/dialogs/fmsearch.src#RID_STR_SEARCH_COUNTING.String.Text
-#, fuzzy
 msgid  "counting records"
 msgstr "မှတ်တမ်းများ ရေတွက်နေသည်"
 
@@ -3400,12 +3214,14 @@ msgid  "~Manual"
 msgstr "~တစ်ဆင့်ချင်း"
 
 #: source/options/optinet2.src#RID_SVXPAGE_INET_PROXY.ST_MSG_255_0.String.Text
+#, fuzzy
 msgid  "is not a valid entry for this field. Please specify a value between 0 and 255."
-msgstr ""
+msgstr "ဤနေရာကွက်အတွက် မှန်ကန်သော ညွှန်ကြားချက်တစ်ခု မဟုတ်ပါ။ ၀ နှင့် ၂၅၅ အကြား တန်ဖိုးတစ်ခု သတ်မှတ်ပေးပါ။"
 
 #: source/options/optinet2.src#RID_SVXPAGE_INET_PROXY.ST_MSG_255_1.String.Text
+#, fuzzy
 msgid  "is not a valid entry for this field. Please specify a value between 1 and 255."
-msgstr ""
+msgstr "ဤနေရာကွက်အတွက် မှန်ကန်သော ညွှန်ကြားချက်တစ်ခု မဟုတ်ပါ။ ၀ နှင့် ၂၅၅ အကြား တန်ဖိုးတစ်ခု သတ်မှတ်ပေးပါ။"
 
 #: source/options/optinet2.src#RID_SVXPAGE_INET_SEARCH.TabPage.Text
 #, fuzzy
@@ -3512,8 +3328,9 @@ msgid  "Security options and warnings"
 msgstr "လုံခြုံရေးဆိုင်ရာ ရွေးပိုင်ခွင့်များနှင့် သတိပေးချက်များ"
 
 #: source/options/optinet2.src#RID_SVXPAGE_INET_SECURITY.FI_SEC_SECURITYOPTIONS.FixedText.Text
+#, fuzzy
 msgid  "Adjust security related options and define warnings for hidden information in documents."
-msgstr ""
+msgstr "မှတ်တမ်းမှတ်ရာများရှိ ဝှက်ထားသော သတင်းအချက်အလက်များအတွက် လုံခြုံရေးဆိုင်ရာ ရွေးပိုင်ခွင့်များကို ကောင်းမွန်အောင် ပြုလုပ်ပြီး သတိပေးချက်များ သတ်မှတ်ပါ။"
 
 #: source/options/optinet2.src#RID_SVXPAGE_INET_SECURITY.PB_SEC_SECURITYOPTIONS.PushButton.Text
 #, fuzzy
@@ -3541,8 +3358,9 @@ msgid  "Protected by a master password (recommended)"
 msgstr "ပင်မစကားဝှက်တစ်ခုဖြင့် ကာကွယ်ထားသည် (အကြံပေးချက်)"
 
 #: source/options/optinet2.src#RID_SVXPAGE_INET_SECURITY.FI_SEC_MASTERPASSWORD.FixedText.Text
+#, fuzzy
 msgid  "Passwords are protected by a master password. You will be asked to enter it once per session, if %PRODUCTNAME retrieves a password from the protected password list."
-msgstr ""
+msgstr "ပင်မစကားဝှက်တစ်ခုဖြင့် စကားဝှက်များကို ကာကွယ်ထားသည်။ ကာကွယ်ထားသည့် စကားဝှက်စာရင်းမှ စကားဝှက်တစ်ခုကို %PRODUCTNAME မှ ပြန်လည်ရယူလျှင် သင့်အနေဖြင့် အပိုင်းကဏ္ဏတစ်ခုသို့ တစ်ကြိမ်ဝင်ရောက်တိုင်း စုံစမ်းမေးမြန်းရမည်။"
 
 #: source/options/optinet2.src#RID_SVXPAGE_INET_SECURITY.PB_SEC_MASTERPASSWORD.PushButton.Text
 #, fuzzy
@@ -3555,8 +3373,9 @@ msgid  "Macro security"
 msgstr "မက်ခရိုလုံခြုံရေး"
 
 #: source/options/optinet2.src#RID_SVXPAGE_INET_SECURITY.FI_SEC_MACROSEC.FixedText.Text
+#, fuzzy
 msgid  "Adjust the security level for executing macros and specify trusted macro developers."
-msgstr ""
+msgstr "လုပ်ဆောင်မှုပြုနေသော မက်ခရိုများအတွက် လုံခြုံရေးအဆင့်ကို ကောင်းမွန်အောင်ပြုလုပ်ပြီး စိတ်ချယုံကြည်ရသော မက်ခရိုများ ဖန်တီးသတ်မှတ်ပါ။"
 
 #: source/options/optinet2.src#RID_SVXPAGE_INET_SECURITY.PB_SEC_MACROSEC.PushButton.Text
 #, fuzzy
@@ -3564,16 +3383,19 @@ msgid  "Macro Security..."
 msgstr "မက်ခရို လုံခြုံရေး..."
 
 #: source/options/optinet2.src#RID_SVXPAGE_INET_SECURITY.STR_SEC_NOPASSWDSAVE.String.Text
+#, fuzzy
 msgid  "Disabling the function to persistently store passwords deletes the list of passwords stored and resets the master password.\n\nDo you want to delete password list and reset master password?"
-msgstr ""
+msgstr "သိမ်းဆည်းထားသည့် စကားဝှက်များစာရင်းမှ စွဲမြဲစွာ သိမ်းဆည်းထားသော စကားဝှက်များကို ဖျက်ပစ်ရန် မလုပ်ဆောင်နိုင်ပါ။ ပင်မစကားဝှက်ကို ပြန်လည်ပေးပေးပါ။\n\nစကားဝှက်များ စာရင်းကို ဖျက်ပစ်ပြီး ပင်မစကားဝှက်ကို ပြန်လည်ပေးလိုပါသလား?"
 
 #: source/options/optinet2.src#RID_SVXERR_OPT_PROXYPORTS.ErrorBox.Message
+#, fuzzy
 msgid  "Invalid value!\n\nThe maximum value for a port number is 65535."
-msgstr ""
+msgstr "မှားယွင်းသော တန်ဖိုး။\n\nပေါ့ထ်နံပါတ်တစ်ခုအတွက် အကြီးဆုံး တန်ဖိုးသည် ၆၅၅၃၅ ဖြစ်သည်။"
 
 #: source/options/optinet2.src#RID_SVXDLG_OPT_JAVASCRIPT_DISABLE.FT_JSCPT_WARNING.FixedText.Text
+#, fuzzy
 msgid  "Please note that with Java\nyou disable Javascript as well.\n\nDo you still want to disable Java?"
-msgstr ""
+msgstr "ဂျာဗားကို အလုပ်မလုပ်နိုင်အောင်လုပ်လျှင်\nဂျာ ဗားစခရစ်ပါအလုပ်မလုပ်နိုင်ပါ။\n\nဂျာဗာ အလုပ်မလုပ်နိုင်ရန် အထိ ဆန္ဒရှိပါသလား။"
 
 #: source/options/optinet2.src#RID_SVXDLG_OPT_JAVASCRIPT_DISABLE.CB_JSCPT_DISABLE.CheckBox.Text
 #, fuzzy
@@ -3671,8 +3493,9 @@ msgid  "City/State/Zip"
 msgstr "မြို့/ပြည်/ဇစ်"
 
 #: source/options/optgenrl.src#RID_SFXPAGE_GENERAL.STR_QUERY_REG.String.Text
+#, fuzzy
 msgid  "Note that street, Zip code and city are used to generate the registration key. You will not be able to change the user data again until the registration has been carried out. Do you want to modify the user data now?"
-msgstr ""
+msgstr "မှတ်ပုံတင်ရာတွင် သော့ချက်အဖြစ် သုံးနိုင်ရန် လမ်းအမည်၊ ဇစ်ကုဒ်နှင့် မြို့အမည်တို့အား မှတ်သားထားပါ။ မှတ်ပုံတင်ခြင်း ပြီးဆုံးသွားသောအခါ အသုံးပြုသူ၏ အချက်အလက်များကို နောက်ထပ်တစ်ဖန် ပြောင်းလဲနိုင်မည် မဟုတ်ပါ။ အသုံးပြုသူ၏ အချက်အလက်များကို ယခုပင်ထပ်မံဖြည့်စွက်လိုပါသလား။"
 
 #: source/options/optgenrl.src#RID_SVXQB_CHANGEDATA.QueryBox.Message
 msgid  "The User Data have been changed.\nDo you really want to change your User Data?"
@@ -4247,16 +4070,19 @@ msgid  "Create Database Link"
 msgstr "အချက်အလက်များ စနစ်တကျ သိုလှောင်ထားသော ကွင်းဆက် ဖန်တီးပါ"
 
 #: source/options/doclinkdialog.src#STR_LINKEDDOC_DOESNOTEXIST.String.Text
+#, fuzzy
 msgid  "The file\n$file$\ndoes not exist."
-msgstr ""
+msgstr "$file$\nဖိုင် မတည်ရှိပါ။\n "
 
 #: source/options/doclinkdialog.src#STR_LINKEDDOC_NO_SYSTEM_FILE.String.Text
+#, fuzzy
 msgid  "The file\n$file$\ndoes not exist in the local file system."
-msgstr ""
+msgstr "ဖိုင်\n$ဖိုင်$\nကွန်ပျူတာဖိုင်စနစ်တွင် မပါဝင်ပါ။"
 
 #: source/options/doclinkdialog.src#STR_NAME_CONFLICT.String.Text
+#, fuzzy
 msgid  "The name '$file$' is already used for another database.\nPlease choose a different name."
-msgstr ""
+msgstr " '$file$' အမည်သည် နောက်ထပ် အချက်အလက်များ စနစ်တကျ သိုလှောင်ထားခြင်းအတွက် အဆင်သင့် အသုံးပြုထားသည်။ \nခြားနားသော အမည်တစ်ခု ရွေးပေးပါ။"
 
 #: source/options/doclinkdialog.src#QUERY_DELETE_CONFIRM.QueryBox.Message
 #, fuzzy
@@ -4279,52 +4105,64 @@ msgid  "The selected module could not be loaded."
 msgstr "ရွေးချယ်ထားသည့် ယူနစ်တစ်ခုသည် ဆွဲတင်ထားနိုင်လိမ့်မည် မဟုတ်ပါ။"
 
 #: source/options/treeopt.src#RID_OFADLG_OPTIONS_TREE.STR_HELPTEXTS.SID_GENERAL_OPTIONS.ItemList.item
+#, fuzzy
 msgid  "This dialog is used to define general settings when working with %PRODUCTNAME. Enter your personal data, the defaults to be used when saving documents, and paths to important files. These settings will be saved automatically and used in later sessions as well."
-msgstr ""
+msgstr "%PRODUCTNAME နှင့်အတူ အလုပ်လုပ်နေသောအခါ အထွေထွေ ရွေးနိုင်ခြင်းများ အဓိပ္ပါယ်ဖေါ်ရန် ဤပြန်လှန်ပြောခြင်း အသုံးပြုထားသည်။ နဂိုတည်ရှိသော နောက်ခံ အသုံးပြုရန်နှင့် အရေးကြီးဖိုင်များသို့ လမ်းကြောင်းများ မှတ်တမ်းမှတ်ရာ သိမ်းနေသောအခါ သင့်ကိုယ်ရေး အချက်အလက်ကြမ်းသို့ ဝင်ပါ၊ ဤရွေးနိုင်ခြင်းများသည် ကောင်းစွာပင် မကြာမီ ကဏ္ဍများတွင် အလိုအလျောက် အသုံးပြုပြီး သိမ်းထားလိမ့်မည်။"
 
 #: source/options/treeopt.src#RID_OFADLG_OPTIONS_TREE.STR_HELPTEXTS.SID_LANGUAGE_OPTIONS.ItemList.item
+#, fuzzy
 msgid  "This is where you make settings concerning language and writing aids for your work with %PRODUCTNAME."
-msgstr ""
+msgstr "%PRODUCTNAME နှင့်အတူ သင့် အလုပ်အတွက် သင်ပြုလုပ်သည့် နေရာ ရွေးနိုင်ခြင်းများသည် ပတ်သက်သော နည်းစနစ်ကျစွာ အသုံးပြုသော သင်္ကေတများအစုနှင့် စာရေးစဉ် အကူအညီများ ဖြစ်သည်။"
 
 #: source/options/treeopt.src#RID_OFADLG_OPTIONS_TREE.STR_HELPTEXTS.SID_INET_DLG.ItemList.item
+#, fuzzy
 msgid  "This is where you configure %PRODUCTNAME for the Internet. You can define search engines or save your proxy settings."
-msgstr ""
+msgstr "အင်တာနက်အတွက် %PRODUCTNAME သီးသန့် စီမံပေးထားသည့်နေရာ ဖြစ်သည်။ ရှာဖွေအင်ဂျင်စက်များ အဓိပ္ပါယ် ဖွင့်ဆိုနိုင်လိမ့်မည် (သို့) သင့် ကိုယ်စားလှယ် ရွေးနိုင်ခြင်းများ သိမ်းနိုင်လိမ့်မည်။"
 
 #: source/options/treeopt.src#RID_OFADLG_OPTIONS_TREE.STR_HELPTEXTS.SID_SW_EDITOPTIONS.ItemList.item
+#, fuzzy
 msgid  "This is where you specify various settings for text documents. These settings determine how your text documents are handled in %PRODUCTNAME and are valid for all new %PRODUCTNAME Writer documents. You can also define a few settings for the active text document if you save it afterwards."
-msgstr ""
+msgstr "စာသား မှတ်တမ်းမှတ်ရာများအတွက် အမျိုးမျိုး ရွေးနိုင်ခြင်းများ သတ်မှတ်သည့်နေရာဖြစ်သည်။ ဘယ်လို သင့်စာသား မှတ်တမ်းမှတ်ရာများသည် %PRODUCTNAME တွင် ကိုင်တွယ်သည် ပြီးတော့ %PRODUCTNAME ရေးသူ မှတ်တမ်းမှတ်ရာအသစ်များအားလုံးအတွက် ခိုင်လုံကြောင်း သက်သေပြသည်ကို  ဤရွေးနိုင်ခြင်းများက ဆုံးဖြတ်ချက်ချသည်။ အကယ်၍ ဤအရာများ သိမ်းပြီးနောက် စာသား မှတ်တမ်းမှတ်ရာ အသုံးပြုသူ လောလောဆယ် သုံးခြင်းအတွက် အနည်းငယ်သော ရွေးနိုင်ခြင်းများလဲပဲ အဓိပ္ပါယ် ဖေါ်နိုင်လိမ့်မည်။"
 
 #: source/options/treeopt.src#RID_OFADLG_OPTIONS_TREE.STR_HELPTEXTS.SID_SW_ONLINEOPTIONS.ItemList.item
+#, fuzzy
 msgid  "This is where you define the basic settings for %PRODUCTNAME documents in HTML format. For example, you decide which contents should be displayed on the screen or printed, how the pages are scrolled on the screen, in which color keywords are highlighted in the source text and much more."
-msgstr ""
+msgstr "HTML စီစဉ် ဖွဲ့စည်းမှု ပုံစံတွင် %PRODUCTNAME မှတ်တမ်းမှတ်ရာများအတွက် အခြေခံ ရွေးနိုင်ခြင်းများ အဓိပ္ပါယ်ဖေါ်သောနေရာဖြစ်သည်။ ဥပမာ - ဖန်သားမျက်နှာပြင်ပေါ် (သို့) ပရင့်ထုတ်ခြင်းပေါ် မည်သည့် မာတိကာများ ပြသသင့်ကြောင်း၊ ဖန်သားမျက်နှာပြင်ပေါ် ဘယ်လို စာမျက်နှာများ ထက်အောက် ရွှေ့ကြောင်း၊ မူရင်း စာသားနှင့် ထိုထက်ပိုရှိသော အဓိကစာလုံးများကို မည်သည့် အရောင်ဖြင့် အသားပေးထားကြောင်း စသည်တို့ကို ဆုံးဖြတ်ပါ။"
 
 #: source/options/treeopt.src#RID_OFADLG_OPTIONS_TREE.STR_HELPTEXTS.SID_SC_EDITOPTIONS.ItemList.item
+#, fuzzy
 msgid  "This is where you define various global settings for spreadsheets. For example, you can define which contents should be displayed and in which direction the cursor will move after you enter data in a cell. You also define sort lists, the number of the decimal places displayed, etc."
-msgstr ""
+msgstr "ဖြန့်သောအလွှာချပ်များအတွက် အမျိုးမျိုးသော ကမ္ဘာအနှံ့ ရွေးနိုင်ခြင်းများ အဓိပ္ပါယ်ဖေါ်သည့်နေရာ ဖြစ်သည်။ ဥပမာ - မည်သည့်မာတိကာများ ပြသထားသင့်သည်ကို အဓိပ္ပါယ်ဖေါ်နိုင်ပြီး အကွက်တစ်ခုတွင် အချက်အလက်ကြမ်း ဝင်ပြီးနောက် မည်သည့် ဦးတည်ချက်တွင် နေရာပြ အမှတ်အသား ရွှေ့လိမ့်မည်တို့ဖြစ်သည်။ စနစ်တကျ စီထားသည့် စာရင်းများ၊ ပြသထားသည့် ဆယ်လီစိတ် နေရာများ၏ နံပါတ်တို့လဲ အဓိပ္ပါယ် ဖေါ်ရန် စသည်တို့ ဖြစ်သည်။"
 
 #: source/options/treeopt.src#RID_OFADLG_OPTIONS_TREE.STR_HELPTEXTS.SID_SD_EDITOPTIONS.ItemList.item
+#, fuzzy
 msgid  "This is where you define the settings that apply to all newly saved presentations. Among other things, you decide which contents are displayed on the slides, which default unit of measure is used, if and how grid alignment is used, and if notes and handouts are always printed."
-msgstr ""
+msgstr "သိမ်းထားသည့် တင်ပြချက် အသစ်များ အားလုံးသို့ လက်တွေ့ အသုံးချရန် ရွေးနိုင်ခြင်းများ အဓိပ္ပါယ်ဖေါ်သည့် နေရာဖြစ်သည်။ အခြားအရာများကြားတွင်၊ ဆလိုက်ရုပ်ပုံများပေါ် မည်သည့် မာတိကာများ ပြသထားကြောင်း၊ မည်သည့် အတိုင်းအတာ၏ နဂိုတည်ရှိသော နောက်ခံ ယူနစ် သုံးထားကြောင်း၊ အကယ်၍ ဘယ်လို အကွက်ချ ဖြောင့်တန်းမှု သုံးထားကြောင်း၊ နှင့် အကယ်၍ မှတ်ချက်များနှင့် လက်ကမ်း စာလွှာများ အမြဲတမ်း ပရင့်ထုတ်ထားကြောင်းတို့ကို ဆုံးဖြတ်ပါ။"
 
 #: source/options/treeopt.src#RID_OFADLG_OPTIONS_TREE.STR_HELPTEXTS.SID_SD_GRAPHIC_OPTIONS.ItemList.item
+#, fuzzy
 msgid  "This is where you define the settings for drawing documents. Among other things, you determine which contents are displayed on the pages, which scale is used, if and how grid alignment is used, and which contents are printed by default."
-msgstr ""
+msgstr "မှတ်တမ်းမှတ်ရာများ ပုံဆွဲခြင်းအတွက် ရွေးနိုင်ခြင်းများ အဓိပ္ပါယ်ဖေါ်သည့် နေရာဖြစ်သည်။ အခြားအရာများကြားတွင်၊ စာမျက်နှာများပေါ် မည်သည့် မာတိကာများ ပြသထားကြောင်း၊ မည်သည့် စကေး သုံးထားကြောင်း၊ နှင့် အကယ်၍ ဘယ်လို အကွက်ချ ဖြောင့်တန်းမှု သုံးထားကြောင်း၊ နှင့် မည်သည့် မာတိကာများ နဂိုတည်ရှိသော နောက်ခံအားဖြင့် ပရင့်ထုတ်ထားကြောင်းတို့ကို အဆုံးအဖြတ်ပေးပါ။"
 
 #: source/options/treeopt.src#RID_OFADLG_OPTIONS_TREE.STR_HELPTEXTS.SID_SM_EDITOPTIONS.ItemList.item
+#, fuzzy
 msgid  "This is where you select the print format and print options for all newly saved formula documents. These options take effect when you want to print a formula directly from %PRODUCTNAME Math."
-msgstr ""
+msgstr "ပရင့်ထုတ်သည့် စီစဉ် ဖွဲ့စည်းမှု ပုံစံကို ရွေးချယ်ပြီး သိမ်းထားသည့် ပုံသေနည်း မှတ်တမ်းမှတ်ရာအသစ်များ အားလုံးအတွက် ပရင့်ထုတ်သည့် ရွေးပိုင်ခွင့်များ နေရာ ဖြစ်သည်။ ဤရွေးပိုင်ခွင့်များသည်%PRODUCTNAME သင်္ချာမှ တိုက်ရိုက် ပုံသေနည်း ပရင့်ထုတ်ရန် လိုချင်သောအခါ အကျိုး သက်ရောက်မှုရှိသည်။"
 
 #: source/options/treeopt.src#RID_OFADLG_OPTIONS_TREE.STR_HELPTEXTS.SID_SCH_EDITOPTIONS.ItemList.item
+#, fuzzy
 msgid  "This is where you specify general default settings for your %PRODUCTNAME Charts. Set the colors you want for all new charts."
-msgstr ""
+msgstr "သင့် %PRODUCTNAME ပုံစံကားချပ်များအတွက် အထွေထွေ နဂိုတည်ရှိသော နောက်ခံ ရွေးနိုင်ခြင်းများ သတ်မှတ်သည့် နေရာ ဖြစ်သည်။ ပုံစံကားချပ်အသစ်များအားလုံးအတွက် လိုချင်သော အရောင်များ တည်ရှိစေပါ။"
 
 #: source/options/treeopt.src#RID_OFADLG_OPTIONS_TREE.STR_HELPTEXTS.SID_SB_STARBASEOPTIONS.ItemList.item
+#, fuzzy
 msgid  "This is where you define general settings for accessing external data sources."
-msgstr ""
+msgstr "ပြင်ပ အချက်အလက်ကြမ်း မူရင်းများ သွားရောက်ရယူခြင်းအတွက် အထွေထွေ ရွေးနိုင်ခြင်းများ အဓိပ္ပါယ်ဖေါ်သည့် နေရာဖြစ်သည်။ "
 
 #: source/options/treeopt.src#RID_OFADLG_OPTIONS_TREE.STR_HELPTEXTS.SID_FILTER_DLG.ItemList.item
+#, fuzzy
 msgid  "This is where you define general settings for opening and saving documents in external formats. You can control the behavior of macros or OLE objects in Microsoft Office documents or define settings for HTML documents."
-msgstr ""
+msgstr "ပြင်ပ စီစဉ် ဖွဲ့စည်းမှု ပုံစံများတွင် မှတ်တမ်းမှတ်ရာများ ဖွင့်ခြင်းနှင့် သိမ်းခြင်းအတွက် အထွေထွေ ရွေးနိုင်ခြင်းများ အဓိပ္ပါယ်ဖေါ်သည့် နေရာဖြစ်သည်။ အမိန့်တစ်ခုပေးလိုက်သည်နှင့် လိုချင်သမျှ အဆင့်ဆင့် လုပ်ပေးခြင်းများ၏ အမူအကျင့် (သို့) Microsoft Office မှတ်တမ်းမှတ်ရာများတွင် OLE အရာဝတ္ထုများ(သို့) HTML အတွက် ရွေးနိုင်ခြင်းများ အဓိပ္ပါယ်ဖေါ်ပြီး ထိန်းချုပ်ထားနိုင်သည်။"
 
 #: source/options/treeopt.src#RID_OFADLG_OPTIONS_TREE_PAGES.SID_GENERAL_OPTIONS.0.ItemList.item
 #, fuzzy
@@ -4910,75 +4748,73 @@ msgid  "~Remove"
 msgstr "~ဖယ်ရှားပါ"
 
 #: source/options/optjava.src#RID_SVXERR_JRE_NOT_RECOGNIZED.ErrorBox.Message
+#, fuzzy
 msgid  "The folder you selected does not contain a Java runtime environment.\nPlease select a different folder."
-msgstr ""
+msgstr "သင်ရွေးချယ်ထားသော ဖိုဒါတွင် ဂျာဗားဝန်းကျင်လုပ်ဆောင်မှုတစ်ခု မပါဝင်ပါ။\nအခြားဖိုဒါတစ်ခုရွေးချယ်ပေးပါ။"
 
 #: source/options/optjava.src#RID_SVXERR_JRE_FAILED_VERSION.ErrorBox.Message
+#, fuzzy
 msgid  "The Java runtime environment you selected is not the required version.\nPlease select a different folder."
-msgstr ""
+msgstr "သင်ရွေးချယ်ထားသော ဂျာဗားဝန်းကျင်လုပ်ဆောင်မှုကို ဤဗားရှင်းအတွက် မလိုအပ်ပါ။\nအခြားဖိုဒါတစ်ခု ရွေးချယ်ပေးပါ။"
 
 #: source/options/optjava.src#RID_SVX_MSGBOX_JAVA_RESTART.WarningBox.Message
+#, fuzzy
 msgid  "For the selected Java runtime environment to work properly, %PRODUCTNAME must be restarted.\nPlease restart %PRODUCTNAME now."
-msgstr ""
+msgstr "ရွေးချယ်ထားသော ဂျာဗားဝန်းကျင်လုပ်ဆောင်မှု ကောင်းမွန်စွာ လုပ်ဆောင်နိုင်ရန် %PRODUCTNAME ပြန်လည်စတင်ရမည်။\n%PRODUCTNAME ကို ယခုပင် ပြန်လည်စတင်ပေးပါ။"
 
 #: source/options/optjava.src#RID_SVX_MSGBOX_JAVA_RESTART2.WarningBox.Message
+#, fuzzy
 msgid  "You have to restart %PRODUCTNAME so the new or modified values can take effect.\nPlease restart %PRODUCTNAME now."
-msgstr ""
+msgstr "အသစ်ပြုလုပ်ထားမှုများ (သို့) အထူးပြုတန်ဖိုးများ အကျိုးသက်ရောက်မှုရှိစေရန် %PRODUCTNAME ကို ပြန်လည်စတင်ရမည်။\n%PRODUCTNAME ကို ယခုပင် ပြန်လည်စတင်လိုပါသလား။"
 
 #: source/options/connpooloptions.src#RID_OFAPAGE_CONNPOOLOPTIONS.FL_POOLING.FixedLine.Text
-#, fuzzy
 msgid  "Connection pool"
 msgstr "အိုင် အချိတ်အဆက်"
 
 #: source/options/connpooloptions.src#RID_OFAPAGE_CONNPOOLOPTIONS.CB_POOL_CONNS.CheckBox.Text
-#, fuzzy
 msgid  "Connection pooling enabled"
 msgstr "အလုပ်လုပ်နိုင်သော အိုင် အချိတ်အဆက်"
 
 #: source/options/connpooloptions.src#RID_OFAPAGE_CONNPOOLOPTIONS.FT_DRIVERS.FixedText.Text
-#, fuzzy
 msgid  "Drivers known in %PRODUCTNAME"
 msgstr "%PRODUCTNAME ရှိ ဒရိုင်ဘာများကို ခေါ်ဆိုသည်"
 
 #: source/options/connpooloptions.src#RID_OFAPAGE_CONNPOOLOPTIONS.FT_DRIVERLABEL.FixedText.Text
-#, fuzzy
 msgid  "Current driver:"
 msgstr "လက်ရှိ ဒရိုင်ဘာ"
 
 #: source/options/connpooloptions.src#RID_OFAPAGE_CONNPOOLOPTIONS.CB_DRIVERPOOLING.CheckBox.Text
-#, fuzzy
 msgid  "Enable pooling for this driver"
 msgstr "ဤမောင်းနှင်သူအတွက် အလုပ်လုပ်နိုင်သော အိုင်"
 
 #: source/options/connpooloptions.src#RID_OFAPAGE_CONNPOOLOPTIONS.FT_TIMEOUT.FixedText.Text
-#, fuzzy
 msgid  "Timeout (seconds)"
 msgstr "အချိန်စေ့ပြီ (စက္ကန့်)"
 
 #: source/options/connpooloptions.src#RID_OFAPAGE_CONNPOOLOPTIONS.STR_DRIVER_NAME.String.Text
-#, fuzzy
 msgid  "Driver name"
 msgstr "ဒရိုင်ဘာ အမည်"
 
 #: source/options/connpooloptions.src#RID_OFAPAGE_CONNPOOLOPTIONS.STR_POOLED_FLAG.String.Text
-#, fuzzy
 msgid  "Pool"
 msgstr "အိုင်"
 
 #: source/options/connpooloptions.src#RID_OFAPAGE_CONNPOOLOPTIONS.STR_POOL_TIMEOUT.String.Text
-#, fuzzy
 msgid  "Timeout"
 msgstr "အချိန်စေ့ပြီ"
 
 #: source/options/connpooloptions.src#RID_OFAPAGE_CONNPOOLOPTIONS.STR_YES.String.Text
-#, fuzzy
 msgid  "Yes"
 msgstr "ဟုတ်သည်"
 
 #: source/options/connpooloptions.src#RID_OFAPAGE_CONNPOOLOPTIONS.STR_NO.String.Text
-#, fuzzy
 msgid  "No"
 msgstr "မဟုတ်ပါ"
+
+#: source/options/optsave.src#TEXT_SAVEPAGE.#define.Text
+#, fuzzy
+msgid  "Save"
+msgstr "သိမ်းပါ"
 
 #: source/options/optsave.src#RID_SFXPAGE_SAVE.LB_LOAD.FixedLine.Text
 #, fuzzy
@@ -4986,8 +4822,9 @@ msgid  "Load"
 msgstr "ဆွဲတင်ပါ"
 
 #: source/options/optsave.src#RID_SFXPAGE_SAVE.CB_LOAD_SETTINGS.CheckBox.Text
+#, fuzzy
 msgid  "Load user-specific settings with the document"
-msgstr ""
+msgstr "မှတ်တမ်းမှတ်ရာနှင့်အတူ အသုံးပြုသူ၏ သီးခြားပြင်ဆင်ချိန်ညှိမှုများ အသုံးပြုပါ"
 
 #: source/options/optsave.src#RID_SFXPAGE_SAVE.CB_LOAD_DOCPRINTER.CheckBox.Text
 #, fuzzy
@@ -5108,17 +4945,14 @@ msgid  "Formula"
 msgstr "ပုံသေနည်း"
 
 #: source/options/optsave.src#RID_SFXPAGE_SAVE.FT_WARN.FixedText.Text
+#, fuzzy
 msgid  "Not using ODF 1.2 Extended may cause infomation to be lost."
-msgstr ""
+msgstr "သတင်းအချက်အလက်များ ပျောက်ဆုံးနိုင်သောကြောင့် ODF 1.2 တိုးချဲ့မှု အသုံးမပြုနိုင်ပါ။"
 
 #: source/options/optsave.src#RID_SVXDLG_FILTER_WARNING.FT_FILTER_WARNING.FixedText.Text
-msgid  "Using "%1" as default file format may cause information loss.\n"
-msgstr ""
-
-#: source/options/optsave.src#TEXT_SAVEPAGE.#define.Text
 #, fuzzy
-msgid  "Save"
-msgstr "သိမ်းပါ"
+msgid  "Using \"%1\" as default file format may cause information loss.\n"
+msgstr "သတင်းအချက်များ ပျောက်ဆုံးနိုင်သောကြောင့် ပုံသေဖိုင်ပြင်ဆင်မှုအဖြစ် ‘‘%၁’’ ကို အသုံးပြုပါ။\n"
 
 #: source/options/optimprove.src#RID_SVXPAGE_IMPROVEMENT.TabPage.Text
 #, fuzzy
@@ -5131,12 +4965,14 @@ msgid  "Improvement Program"
 msgstr "တိုးတက်မှုပရိုဂရမ်"
 
 #: source/options/optimprove.src#RID_SVXPAGE_IMPROVEMENT.FT_INVITATION.FixedText.Text
+#, fuzzy
 msgid  "We invite you to join our %PRODUCTNAME Improvement Program to help optimize the quality of %PRODUCTNAME.\n\nIf you are willing to participate, we will collect anonymous statistics about how you use %PRODUCTNAME. The data is used to identify usage patterns.\n\nThe %PRODUCTNAME Improvement Program will not collect any personal data, or document content."
-msgstr ""
+msgstr "%PRODUCTNAME ၏အရည်အသွေးတိုး တက်အောင်ကူညီဖို့အတွက် ကျွန်ုပ်တို့၏%PRODUCTNAME တိုးတက်မှုပရိုဂရမ်ကို ဆက်သွယ်ရန် သင့်ကိုဖိတ် ခေါ်ပါသည်။\n\nပါဝင်ရန်ဆန္ဒရှိလျှင် သင် %PRODUCTNAME ဘယ်လိုအသုံးပြုကြောင်းကိန်းဂဏန်းများကို ကျွန်ုပ်တို့အမည်မသိစွာစုဆောင်းလိမ့်မည်။ အချက်အလက်များကို အသုံးပြုပုံစံများ မှတ်တမ်းတင်လေ့ရှိသည်။\n\n%PRODUCTNAME တိုးတက်မှုပရိုဂရမ်သည် မည်သည့်ကိုယ်ရေးကိုယ်တာအချက်အလက်များ (သို့) မှတ်တမ်းမှတ်ရာပါဝင်မှုများကို စုဆောင်းလိမ့်မည်မဟုတ်ပါ။"
 
 #: source/options/optimprove.src#RID_SVXPAGE_IMPROVEMENT.RB_YES.RadioButton.Text
+#, fuzzy
 msgid  "~Yes, I am willing to participate in the %PRODUCTNAME Improvement Program"
-msgstr ""
+msgstr "~ဟုတ်ကဲ့။ %PRODUCTNAME တိုးတက်မှုပရိုဂရမ်တွင် ပါဝင်ရန်ဆန္ဒရှိပါသည်"
 
 #: source/options/optimprove.src#RID_SVXPAGE_IMPROVEMENT.RB_NO.RadioButton.Text
 #, fuzzy
@@ -5274,8 +5110,9 @@ msgid  "Edit Paths: %1"
 msgstr "လမ်းတည်းဖြတ်ပါ-%1"
 
 #: source/options/optpath.src#RID_SVXERR_OPT_DOUBLEPATHS.ErrorBox.Message
+#, fuzzy
 msgid  "The configuration and mail directories must be specified as separate directories.\nPlease choose a new path."
-msgstr ""
+msgstr "အစိတ်အပိုင်း ဖွဲ့စည်းပုံနှင့် အီးမေးလ် အညွှန်းများသည် အကန့် အညွှန်းများအဖြစ် သတ်မှတ်ထားရလိမ့်မည်။ \nလမ်းကြောင်းအသစ်တစ်ခု ရွေးပေးပါ။"
 
 #: source/options/optpath.src#RID_SVXSTR_KEY_CONFIG_DIR.String.Text
 #, fuzzy
@@ -5393,12 +5230,14 @@ msgid  "Miscellaneous options"
 msgstr "အချက်အလက်မျိုးစုံပါဝင်သော ရွေးပိုင်ခွင့်များ"
 
 #: source/options/optaccessibility.src#RID_SVXPAGE_ACCESSIBILITYCONFIG.CB_ACCESSIBILITY_TOOL.CheckBox.Text
+#, fuzzy
 msgid  "Support ~assistive technology tools (program restart required)"
-msgstr ""
+msgstr "အကူအညီပေးသည့် နည်းပညာကိရိယာများ ~အထောက်အပံ့ရရန် (ပရိုဂရမ် ပြန်လည်စတင်ရန် လိုသည်)"
 
 #: source/options/optaccessibility.src#RID_SVXPAGE_ACCESSIBILITYCONFIG.CB_TEXTSELECTION.CheckBox.Text
+#, fuzzy
 msgid  "Use te~xt selection cursor in read-only text documents"
-msgstr ""
+msgstr "ဖတ်ရုံသာ ဖတ်နိုင်သော စာသားမှတ်တမ်းမှတ်ရာရှိ စာ~သား ရွေးချယ်မှု ကာဆာကို အသုံးပြုပါ"
 
 #: source/options/optaccessibility.src#RID_SVXPAGE_ACCESSIBILITYCONFIG.CB_ANIMATED_GRAPHICS.CheckBox.Text
 #, fuzzy
@@ -5426,8 +5265,9 @@ msgid  "Options for high contrast appearance"
 msgstr "အရောင်ဆန့်ကျင်ကွဲလွဲချက် အမြင့်ဆုံးအတွက် ရွေးပိုင်ခွင့်များ"
 
 #: source/options/optaccessibility.src#RID_SVXPAGE_ACCESSIBILITYCONFIG.CB_AUTO_DETECT_HC.CheckBox.Text
+#, fuzzy
 msgid  "Automatically ~detect high contrast mode of operating system"
-msgstr ""
+msgstr "ကွန်ပျူတာစနစ်ရှိ အမြင့်ဆုံး အရောင်ဆန့်ကျင်ကွဲလွဲချက် နည်းလမ်းကို အလိုအလျောက် ~ကာကွယ်ပါ"
 
 #: source/options/optaccessibility.src#RID_SVXPAGE_ACCESSIBILITYCONFIG.CB_AUTOMATIC_FONT_COLOR.CheckBox.Text
 #, fuzzy
@@ -5510,8 +5350,9 @@ msgid  "Document status"
 msgstr "မှတ်တမ်းမှတ်ရာ အခြေအနေ"
 
 #: source/options/optgdlg.src#OFA_TP_MISC.CB_DOCSTATUS.CheckBox.Text
-msgid  "~Printing sets "document modified" status"
-msgstr ""
+#, fuzzy
+msgid  "~Printing sets \"document modified\" status"
+msgstr "~‘‘မှတ်တမ်းမှတ်ရာ အထူးပြုအခြေအနေ’’ကို ပရင့်ထုတ်ရန်ထားရှိသည်"
 
 #: source/options/optgdlg.src#OFA_TP_MISC.FL_TWOFIGURE.FixedLine.Text
 #, fuzzy
@@ -5801,8 +5642,9 @@ msgid  "Show UI elements for B~i-Directional writing"
 msgstr ""
 
 #: source/options/optgdlg.src#RID_SVX_MSGBOX_LANGUAGE_RESTART.InfoBox.Message
+#, fuzzy
 msgid  "The language setting of the user interface has been updated and will take effect the next time you start %PRODUCTNAME %PRODUCTVERSION"
-msgstr ""
+msgstr "ကွန်ပျူတာအသုံးပြုသူများအတွက် ဘာသာစကားပြင်ဆင်ချိန်ညှိမှုကို နောက်ဆုံးသစ်လွင်မှုပြုပြီးဖြစ်သည်။ %PRODUCTNAME %PRODUCTVERSION နောက်တစ်ကြိမ် စတင်အသုံးပြုချိန်တွင် အကျိုးသက်ရောက်မှု ရှိမည်ဖြစ်သည်။"
 
 #: source/options/optspell.src#RID_SFXPAGE_SPELL.TabPage.Text
 #, fuzzy
@@ -5985,8 +5827,9 @@ msgid  "~Close"
 msgstr "~ပိတ်ပါ"
 
 #: source/options/optdict.src#RID_SVXSTR_OPT_DOUBLE_DICTS.String.Text
+#, fuzzy
 msgid  "The specified name already exists.\nPlease enter a new name."
-msgstr ""
+msgstr "သီးခြားအမည်တစ်ခု ရှိပြီးဖြစ်သည်\nအခြားအမည်သစ်တစ်ခုဖြင့် ဝင်ရောက်ပေးပါ။"
 
 #: source/options/optdict.src#RID_SFXQB_SET_LANGUAGE.QueryBox.Message
 #, fuzzy
@@ -6208,22 +6051,18 @@ msgid  "Registered databases"
 msgstr "အချက်အလက်များ စနစ်တကျ သိုလှောင်ထားသော မှတ်ပုံတင်ခြင်း"
 
 #: source/options/dbregister.src#RID_SFXPAGE_DBREGISTER.FT_TYPE.FixedText.Text
-#, fuzzy
 msgid  "Registered name"
 msgstr "မှတ်ပုံတင်ထားသည့် အမည်"
 
 #: source/options/dbregister.src#RID_SFXPAGE_DBREGISTER.FT_PATH.FixedText.Text
-#, fuzzy
 msgid  "Database file"
 msgstr "အချက်အလက်များ စနစ်တကျ သိုလှောင်ထားသော ဖိုင်"
 
 #: source/options/dbregister.src#RID_SFXPAGE_DBREGISTER.BTN_NEW.PushButton.Text
-#, fuzzy
 msgid  "~New..."
 msgstr "အသစ်..."
 
 #: source/options/dbregister.src#RID_SFXPAGE_DBREGISTER.BTN_EDIT.PushButton.Text
-#, fuzzy
 msgid  "~Edit..."
 msgstr "တည်းဖြတ်ပါ..."
 
@@ -6323,8 +6162,9 @@ msgid  "Excel to %PRODUCTNAME Calc or reverse"
 msgstr "Excel မှ %PRODUCTNAME Calc သို့ %PRODUCTNAME Calc မှ Excel သို့"
 
 #: source/options/optfltr.src#RID_OFAPAGE_MSFILTEROPT2.ST_CHG_IMPRESS.String.Text
+#, fuzzy
 msgid  "PowerPoint to %PRODUCTNAME Impress or reverse"
-msgstr ""
+msgstr "PowerPoint မှ %PRODUCTNAME Impress သို့ / %PRODUCTNAME Impress မှ PowerPoint သို့"
 
 #: source/options/optupdt.src#RID_SVXPAGE_ONLINEUPDATE.TabPage.Text
 #, fuzzy
@@ -6397,8 +6237,9 @@ msgid  "Security warnings"
 msgstr "လုံခြုံမှုသတိပေးချက်များ"
 
 #: source/options/securityoptions.src#RID_SVXDLG_SECURITY_OPTIONS.FI_WARNINGS.FixedText.Text
+#, fuzzy
 msgid  "Warn if document contains recorded changes, versions, hidden information or notes:"
-msgstr ""
+msgstr "မှတ်တမ်းမှတ်ရာတွင် မှတ်သားပြီးသားပြောင်းလဲမှုများ၊ ဗားရှင်းများ၊ ဝှက်ထားသောသတင်းအချက်အလက်များ၊ (သို့)မှတ်ချက်များ ပါဝင်လျှင် သတိပေးပါ။ "
 
 #: source/options/securityoptions.src#RID_SVXDLG_SECURITY_OPTIONS.CB_SAVESENDDOCS.CheckBox.Text
 #, fuzzy
@@ -6501,8 +6342,9 @@ msgid  "Not at end of line:"
 msgstr "လိုင်း၏အဆုံး၌မဟုတ်-"
 
 #: source/options/optasian.src#RID_SVXPAGE_ASIAN_LAYOUT.FT_HINT.FixedText.Text
+#, fuzzy
 msgid  "Without user-defined line break symbols"
-msgstr ""
+msgstr "သင်္ကေတ အမှတ်လက္ခဏာများ ပြတ်တောက်လိုင်း အသုံးပြုသူ - အဓိပ္ပါယ်ဖေါ်ခြင်း မပါဘဲ"
 
 #: source/options/optasian.src#RID_SVXPAGE_ASIAN_LAYOUT.FixedText.Text
 #, fuzzy
@@ -6706,6 +6548,31 @@ msgstr "အမျိုး~အစား"
 
 #: source/tabpages/tabarea.src#RID_SVXPAGE_TRANSPARENCE.LB_TRGR_GRADIENT_TYPES.Default.StringList.item
 #, fuzzy
+msgid  "Linear"
+msgstr "အစဉ်အတိုင်း"
+
+#: source/tabpages/tabarea.src#RID_SVXPAGE_TRANSPARENCE.LB_TRGR_GRADIENT_TYPES.Default.StringList.item
+#, fuzzy
+msgid  "Axial"
+msgstr "ဝင်ရိုးတန်းမျဉ်း"
+
+#: source/tabpages/tabarea.src#RID_SVXPAGE_TRANSPARENCE.LB_TRGR_GRADIENT_TYPES.Default.StringList.item
+#, fuzzy
+msgid  "Radial"
+msgstr "ဗဟိုမှပတ်လည်အတန်းလိုက်ဖြာထွက်မှု"
+
+#: source/tabpages/tabarea.src#RID_SVXPAGE_TRANSPARENCE.LB_TRGR_GRADIENT_TYPES.Default.StringList.item
+#, fuzzy
+msgid  "Ellipsoid"
+msgstr "ဘဲဥပုံ"
+
+#: source/tabpages/tabarea.src#RID_SVXPAGE_TRANSPARENCE.LB_TRGR_GRADIENT_TYPES.Default.StringList.item
+#, fuzzy
+msgid  "Quadratic"
+msgstr "နှစ်ထပ်ကိန်း"
+
+#: source/tabpages/tabarea.src#RID_SVXPAGE_TRANSPARENCE.LB_TRGR_GRADIENT_TYPES.Default.StringList.item
+#, fuzzy
 msgid  "Square"
 msgstr "စတုရန်း"
 
@@ -6758,6 +6625,26 @@ msgstr "ဧရိယာ"
 #, fuzzy
 msgid  "Fill"
 msgstr "ဖြည့်ပါ"
+
+#: source/tabpages/tabarea.src#RID_SVXPAGE_AREA.LB_AREA_TYPE.Default.StringList.item
+#, fuzzy
+msgid  "None"
+msgstr "ဘာမျှမရှိပါ"
+
+#: source/tabpages/tabarea.src#RID_SVXPAGE_AREA.LB_AREA_TYPE.Default.StringList.item
+#, fuzzy
+msgid  "Color"
+msgstr "အရောင်"
+
+#: source/tabpages/tabarea.src#RID_SVXPAGE_AREA.LB_AREA_TYPE.Default.StringList.item
+#, fuzzy
+msgid  "Gradient"
+msgstr "အရောင်ပြောင်းလဲနှုန်း"
+
+#: source/tabpages/tabarea.src#RID_SVXPAGE_AREA.LB_AREA_TYPE.Default.StringList.item
+#, fuzzy
+msgid  "Hatching"
+msgstr "အစင်းအကွက်"
 
 #: source/tabpages/tabarea.src#RID_SVXPAGE_AREA.LB_AREA_TYPE.Default.StringList.item
 #, fuzzy
@@ -6911,6 +6798,16 @@ msgstr "~မျဉ်းအမျိုးအစား"
 
 #: source/tabpages/tabarea.src#RID_SVXPAGE_HATCH.LB_LINE_TYPE.Default.StringList.item
 #, fuzzy
+msgid  "Single"
+msgstr "တစ်ခုချင်း"
+
+#: source/tabpages/tabarea.src#RID_SVXPAGE_HATCH.LB_LINE_TYPE.Default.StringList.item
+#, fuzzy
+msgid  "Crossed"
+msgstr "ကန့်လန့်ဖြတ်သည်"
+
+#: source/tabpages/tabarea.src#RID_SVXPAGE_HATCH.LB_LINE_TYPE.Default.StringList.item
+#, fuzzy
 msgid  "Triple"
 msgstr "သုံးဆ"
 
@@ -7021,6 +6918,31 @@ msgstr "အမျိုး~အစား"
 
 #: source/tabpages/tabarea.src#RID_SVXPAGE_GRADIENT.LB_GRADIENT_TYPES.Default.StringList.item
 #, fuzzy
+msgid  "Linear"
+msgstr "အစဉ်အတိုင်း"
+
+#: source/tabpages/tabarea.src#RID_SVXPAGE_GRADIENT.LB_GRADIENT_TYPES.Default.StringList.item
+#, fuzzy
+msgid  "Axial"
+msgstr "ဝင်ရိုးတန်းမျဉ်း"
+
+#: source/tabpages/tabarea.src#RID_SVXPAGE_GRADIENT.LB_GRADIENT_TYPES.Default.StringList.item
+#, fuzzy
+msgid  "Radial"
+msgstr "ဗဟိုမှပတ်လည်အတန်းလိုက်ဖြာထွက်မှု"
+
+#: source/tabpages/tabarea.src#RID_SVXPAGE_GRADIENT.LB_GRADIENT_TYPES.Default.StringList.item
+#, fuzzy
+msgid  "Ellipsoid"
+msgstr "ဘဲဥပုံ"
+
+#: source/tabpages/tabarea.src#RID_SVXPAGE_GRADIENT.LB_GRADIENT_TYPES.Default.StringList.item
+#, fuzzy
+msgid  "Square"
+msgstr "စတုရန်း"
+
+#: source/tabpages/tabarea.src#RID_SVXPAGE_GRADIENT.LB_GRADIENT_TYPES.Default.StringList.item
+#, fuzzy
 msgid  "Rectangular"
 msgstr "ထောင့်မှန် စတုဂံပုံ"
 
@@ -7111,6 +7033,11 @@ msgstr "ဇယား အရောင်"
 
 #: source/tabpages/tabarea.src#RID_SVXPAGE_COLOR.LB_COLORMODEL.Default.StringList.item
 #, fuzzy
+msgid  "RGB"
+msgstr "နီစိမ်းပြာ"
+
+#: source/tabpages/tabarea.src#RID_SVXPAGE_COLOR.LB_COLORMODEL.Default.StringList.item
+#, fuzzy
 msgid  "CMYK"
 msgstr "စိမ်းပြာရမ်းဝါနက်"
 
@@ -7191,91 +7118,6 @@ msgstr ""
 #: source/tabpages/tabarea.src#STR_CUI_COLORMODEL.String.Text
 msgid  "Color Mode"
 msgstr ""
-
-#: source/tabpages/tabarea.src#RID_SVXPAGE_TRANSPARENCE.LB_TRGR_GRADIENT_TYPES.Default.StringList.item
-#, fuzzy
-msgid  "Linear"
-msgstr "အစဉ်အတိုင်း"
-
-#: source/tabpages/tabarea.src#RID_SVXPAGE_TRANSPARENCE.LB_TRGR_GRADIENT_TYPES.Default.StringList.item
-#, fuzzy
-msgid  "Axial"
-msgstr "ဝင်ရိုးတန်းမျဉ်း"
-
-#: source/tabpages/tabarea.src#RID_SVXPAGE_TRANSPARENCE.LB_TRGR_GRADIENT_TYPES.Default.StringList.item
-#, fuzzy
-msgid  "Radial"
-msgstr "ဗဟိုမှပတ်လည်အတန်းလိုက်ဖြာထွက်မှု"
-
-#: source/tabpages/tabarea.src#RID_SVXPAGE_TRANSPARENCE.LB_TRGR_GRADIENT_TYPES.Default.StringList.item
-#, fuzzy
-msgid  "Ellipsoid"
-msgstr "ဘဲဥပုံ"
-
-#: source/tabpages/tabarea.src#RID_SVXPAGE_TRANSPARENCE.LB_TRGR_GRADIENT_TYPES.Default.StringList.item
-#, fuzzy
-msgid  "Quadratic"
-msgstr "နှစ်ထပ်ကိန်း"
-
-#: source/tabpages/tabarea.src#RID_SVXPAGE_AREA.LB_AREA_TYPE.Default.StringList.item
-#, fuzzy
-msgid  "None"
-msgstr "ဘာမျှမရှိပါ"
-
-#: source/tabpages/tabarea.src#RID_SVXPAGE_AREA.LB_AREA_TYPE.Default.StringList.item
-#, fuzzy
-msgid  "Color"
-msgstr "အရောင်"
-
-#: source/tabpages/tabarea.src#RID_SVXPAGE_AREA.LB_AREA_TYPE.Default.StringList.item
-#, fuzzy
-msgid  "Gradient"
-msgstr "အရောင်ပြောင်းလဲနှုန်း"
-
-#: source/tabpages/tabarea.src#RID_SVXPAGE_AREA.LB_AREA_TYPE.Default.StringList.item
-#, fuzzy
-msgid  "Hatching"
-msgstr "အစင်းအကွက်"
-
-#: source/tabpages/tabarea.src#RID_SVXPAGE_HATCH.LB_LINE_TYPE.Default.StringList.item
-#, fuzzy
-msgid  "Single"
-msgstr "တစ်ခုချင်း"
-
-#: source/tabpages/tabarea.src#RID_SVXPAGE_HATCH.LB_LINE_TYPE.Default.StringList.item
-#, fuzzy
-msgid  "Crossed"
-msgstr "ကန့်လန့်ဖြတ်သည်"
-
-#: source/tabpages/tabarea.src#RID_SVXPAGE_GRADIENT.LB_GRADIENT_TYPES.Default.StringList.item
-#, fuzzy
-msgid  "Linear"
-msgstr "အစဉ်အတိုင်း"
-
-#: source/tabpages/tabarea.src#RID_SVXPAGE_GRADIENT.LB_GRADIENT_TYPES.Default.StringList.item
-#, fuzzy
-msgid  "Axial"
-msgstr "ဝင်ရိုးတန်းမျဉ်း"
-
-#: source/tabpages/tabarea.src#RID_SVXPAGE_GRADIENT.LB_GRADIENT_TYPES.Default.StringList.item
-#, fuzzy
-msgid  "Radial"
-msgstr "ဗဟိုမှပတ်လည်အတန်းလိုက်ဖြာထွက်မှု"
-
-#: source/tabpages/tabarea.src#RID_SVXPAGE_GRADIENT.LB_GRADIENT_TYPES.Default.StringList.item
-#, fuzzy
-msgid  "Ellipsoid"
-msgstr "ဘဲဥပုံ"
-
-#: source/tabpages/tabarea.src#RID_SVXPAGE_GRADIENT.LB_GRADIENT_TYPES.Default.StringList.item
-#, fuzzy
-msgid  "Square"
-msgstr "စတုရန်း"
-
-#: source/tabpages/tabarea.src#RID_SVXPAGE_COLOR.LB_COLORMODEL.Default.StringList.item
-#, fuzzy
-msgid  "RGB"
-msgstr "နီစိမ်းပြာ"
 
 #: source/tabpages/frmdirlbox.src#RID_SVXSTR_FRAMEDIR_LTR.String.Text
 #, fuzzy
@@ -7394,6 +7236,21 @@ msgstr "စာမျက်နှာ အဆင်အပြင်"
 
 #: source/tabpages/page.src#RID_SVXPAGE_PAGE.LB_LAYOUT.Default.StringList.item
 #, fuzzy
+msgid  "Right and left"
+msgstr "ညာနှင့်ဘယ်"
+
+#: source/tabpages/page.src#RID_SVXPAGE_PAGE.LB_LAYOUT.Default.StringList.item
+#, fuzzy
+msgid  "Mirrored"
+msgstr "ကြေးမုံပြင်"
+
+#: source/tabpages/page.src#RID_SVXPAGE_PAGE.LB_LAYOUT.Default.StringList.item
+#, fuzzy
+msgid  "Only right"
+msgstr "ညာဖက်သာ"
+
+#: source/tabpages/page.src#RID_SVXPAGE_PAGE.LB_LAYOUT.Default.StringList.item
+#, fuzzy
 msgid  "Only left"
 msgstr "ဘယ်ဖက်သာ"
 
@@ -7401,6 +7258,31 @@ msgstr "ဘယ်ဖက်သာ"
 #, fuzzy
 msgid  "For~mat"
 msgstr "စီစဉ် ~ဖွဲ့စည်းမှု ပုံစံ"
+
+#: source/tabpages/page.src#RID_SVXPAGE_PAGE.LB_NUMBER_FORMAT.Default.StringList.item
+#, fuzzy
+msgid  "A, B, C, ..."
+msgstr "A, B, C, ..."
+
+#: source/tabpages/page.src#RID_SVXPAGE_PAGE.LB_NUMBER_FORMAT.Default.StringList.item
+#, fuzzy
+msgid  "a, b, c, ..."
+msgstr "a, b, c, ..."
+
+#: source/tabpages/page.src#RID_SVXPAGE_PAGE.LB_NUMBER_FORMAT.Default.StringList.item
+#, fuzzy
+msgid  "I, II, III, ..."
+msgstr "I, II, III, ..."
+
+#: source/tabpages/page.src#RID_SVXPAGE_PAGE.LB_NUMBER_FORMAT.Default.StringList.item
+#, fuzzy
+msgid  "i, ii, iii, ..."
+msgstr "i, ii, iii, ..."
+
+#: source/tabpages/page.src#RID_SVXPAGE_PAGE.LB_NUMBER_FORMAT.Default.StringList.item
+#, fuzzy
+msgid  "1, 2, 3, ..."
+msgstr "၁၊၂၊၃..."
 
 #: source/tabpages/page.src#RID_SVXPAGE_PAGE.LB_NUMBER_FORMAT.Default.StringList.item
 #, fuzzy
@@ -7448,8 +7330,9 @@ msgid  "O~uter"
 msgstr "အပြင်~ပိုင်း"
 
 #: source/tabpages/page.src#RID_SVXPAGE_PAGE.STR_QUERY_PRINTRANGE.String.Text
+#, fuzzy
 msgid  "The margin settings are out of print range.\n\nDo you still want to apply these settings?"
-msgstr ""
+msgstr "ဘေးမျဉ်းသည် သတ်မှတ်စာရွက်၏ အပြင်ဘက်သို့ရောက်နေသည်။\n\nဤပုံစံအတိုင်းပင် ဆက်လက်အသုံးပြုလိုပါသလား။"
 
 #: source/tabpages/page.src#RID_SVXSTRARY_PAPERSIZE_STD.PAPERSIZE_A6.ItemList.item
 msgid  "A6"
@@ -7734,46 +7617,6 @@ msgstr "ဒိုင်ယာဆလိုက်"
 msgid  "Screen"
 msgstr "ကွန်ပျူတာမျက်နှာပြင်"
 
-#: source/tabpages/page.src#RID_SVXPAGE_PAGE.LB_LAYOUT.Default.StringList.item
-#, fuzzy
-msgid  "Right and left"
-msgstr "ညာနှင့်ဘယ်"
-
-#: source/tabpages/page.src#RID_SVXPAGE_PAGE.LB_LAYOUT.Default.StringList.item
-#, fuzzy
-msgid  "Mirrored"
-msgstr "ကြေးမုံပြင်"
-
-#: source/tabpages/page.src#RID_SVXPAGE_PAGE.LB_LAYOUT.Default.StringList.item
-#, fuzzy
-msgid  "Only right"
-msgstr "ညာဖက်သာ"
-
-#: source/tabpages/page.src#RID_SVXPAGE_PAGE.LB_NUMBER_FORMAT.Default.StringList.item
-#, fuzzy
-msgid  "A, B, C, ..."
-msgstr "A, B, C, ..."
-
-#: source/tabpages/page.src#RID_SVXPAGE_PAGE.LB_NUMBER_FORMAT.Default.StringList.item
-#, fuzzy
-msgid  "a, b, c, ..."
-msgstr "a, b, c, ..."
-
-#: source/tabpages/page.src#RID_SVXPAGE_PAGE.LB_NUMBER_FORMAT.Default.StringList.item
-#, fuzzy
-msgid  "I, II, III, ..."
-msgstr "I, II, III, ..."
-
-#: source/tabpages/page.src#RID_SVXPAGE_PAGE.LB_NUMBER_FORMAT.Default.StringList.item
-#, fuzzy
-msgid  "i, ii, iii, ..."
-msgstr "i, ii, iii, ..."
-
-#: source/tabpages/page.src#RID_SVXPAGE_PAGE.LB_NUMBER_FORMAT.Default.StringList.item
-#, fuzzy
-msgid  "1, 2, 3, ..."
-msgstr "၁၊၂၊၃..."
-
 #: source/tabpages/numfmt.src#RID_SVXPAGE_NUMBERFORMAT.TabPage.Text
 #, fuzzy
 msgid  "Number Format"
@@ -7783,6 +7626,56 @@ msgstr "နံပါတ် စီစဉ် ဖွဲ့စည်းမှု ပ
 #, fuzzy
 msgid  "~Category"
 msgstr "~အမျိုးအစား"
+
+#: source/tabpages/numfmt.src#RID_SVXPAGE_NUMBERFORMAT.LB_CATEGORY.Default.StringList.item
+#, fuzzy
+msgid  "All"
+msgstr "အားလုံး"
+
+#: source/tabpages/numfmt.src#RID_SVXPAGE_NUMBERFORMAT.LB_CATEGORY.Default.StringList.item
+#, fuzzy
+msgid  "User-defined"
+msgstr "အသုံးပြုသူ - သတ်မှတ်ချက်"
+
+#: source/tabpages/numfmt.src#RID_SVXPAGE_NUMBERFORMAT.LB_CATEGORY.Default.StringList.item
+#, fuzzy
+msgid  "Number"
+msgstr "ကိန်းဂဏန်း"
+
+#: source/tabpages/numfmt.src#RID_SVXPAGE_NUMBERFORMAT.LB_CATEGORY.Default.StringList.item
+#, fuzzy
+msgid  "Percent"
+msgstr "ရာခိုင်နှုန်း"
+
+#: source/tabpages/numfmt.src#RID_SVXPAGE_NUMBERFORMAT.LB_CATEGORY.Default.StringList.item
+#, fuzzy
+msgid  "Currency"
+msgstr "အများလက်ခံနိုင်သော"
+
+#: source/tabpages/numfmt.src#RID_SVXPAGE_NUMBERFORMAT.LB_CATEGORY.Default.StringList.item
+#, fuzzy
+msgid  "Date"
+msgstr "ရက်စွဲ"
+
+#: source/tabpages/numfmt.src#RID_SVXPAGE_NUMBERFORMAT.LB_CATEGORY.Default.StringList.item
+#, fuzzy
+msgid  "Time"
+msgstr "အချိန်"
+
+#: source/tabpages/numfmt.src#RID_SVXPAGE_NUMBERFORMAT.LB_CATEGORY.Default.StringList.item
+#, fuzzy
+msgid  "Scientific"
+msgstr "သိပ္ပံဆိုင်ရာ"
+
+#: source/tabpages/numfmt.src#RID_SVXPAGE_NUMBERFORMAT.LB_CATEGORY.Default.StringList.item
+#, fuzzy
+msgid  "Fraction"
+msgstr "အပိုင်းဂဏန်း"
+
+#: source/tabpages/numfmt.src#RID_SVXPAGE_NUMBERFORMAT.LB_CATEGORY.Default.StringList.item
+#, fuzzy
+msgid  "Boolean Value"
+msgstr "ဘိုလီယမ်တန်ဖိုး"
 
 #: source/tabpages/numfmt.src#RID_SVXPAGE_NUMBERFORMAT.LB_CATEGORY.Default.StringList.item
 #, fuzzy
@@ -7858,56 +7751,6 @@ msgstr "သုံးသပ်ချက်များတည်းဖြတ်ပ
 #, fuzzy
 msgid  "Automatic"
 msgstr "အလိုအလျောက်"
-
-#: source/tabpages/numfmt.src#RID_SVXPAGE_NUMBERFORMAT.LB_CATEGORY.Default.StringList.item
-#, fuzzy
-msgid  "All"
-msgstr "အားလုံး"
-
-#: source/tabpages/numfmt.src#RID_SVXPAGE_NUMBERFORMAT.LB_CATEGORY.Default.StringList.item
-#, fuzzy
-msgid  "User-defined"
-msgstr "အသုံးပြုသူ - သတ်မှတ်ချက်"
-
-#: source/tabpages/numfmt.src#RID_SVXPAGE_NUMBERFORMAT.LB_CATEGORY.Default.StringList.item
-#, fuzzy
-msgid  "Number"
-msgstr "ကိန်းဂဏန်း"
-
-#: source/tabpages/numfmt.src#RID_SVXPAGE_NUMBERFORMAT.LB_CATEGORY.Default.StringList.item
-#, fuzzy
-msgid  "Percent"
-msgstr "ရာခိုင်နှုန်း"
-
-#: source/tabpages/numfmt.src#RID_SVXPAGE_NUMBERFORMAT.LB_CATEGORY.Default.StringList.item
-#, fuzzy
-msgid  "Currency"
-msgstr "အများလက်ခံနိုင်သော"
-
-#: source/tabpages/numfmt.src#RID_SVXPAGE_NUMBERFORMAT.LB_CATEGORY.Default.StringList.item
-#, fuzzy
-msgid  "Date"
-msgstr "ရက်စွဲ"
-
-#: source/tabpages/numfmt.src#RID_SVXPAGE_NUMBERFORMAT.LB_CATEGORY.Default.StringList.item
-#, fuzzy
-msgid  "Time"
-msgstr "အချိန်"
-
-#: source/tabpages/numfmt.src#RID_SVXPAGE_NUMBERFORMAT.LB_CATEGORY.Default.StringList.item
-#, fuzzy
-msgid  "Scientific"
-msgstr "သိပ္ပံဆိုင်ရာ"
-
-#: source/tabpages/numfmt.src#RID_SVXPAGE_NUMBERFORMAT.LB_CATEGORY.Default.StringList.item
-#, fuzzy
-msgid  "Fraction"
-msgstr "အပိုင်းဂဏန်း"
-
-#: source/tabpages/numfmt.src#RID_SVXPAGE_NUMBERFORMAT.LB_CATEGORY.Default.StringList.item
-#, fuzzy
-msgid  "Boolean Value"
-msgstr "ဘိုလီယမ်တန်ဖိုး"
 
 #: source/tabpages/numpages.src#RID_SVXPAGE_PICK_BULLET.FL_VALUES.FixedLine.Text
 #, fuzzy
@@ -8409,53 +8252,52 @@ msgstr "နေရာ~လွတ်"
 msgid  "~Bottom"
 msgstr "~အောက်ခြေ"
 
+#: source/tabpages/backgrnd.src#UNLINKED_IMAGE.#define.Text
+msgid  "Unlinked graphic"
+msgstr "ချိတ်ဆက်မှုမရှိသည့်ရုပ်ပုံဒီဇိုင်း"
+
 #: source/tabpages/backgrnd.src#RID_SVXPAGE_BACKGROUND.TabPage.Text
 #, fuzzy
 msgid  "Background"
 msgstr "နောက်ခံ"
 
 #: source/tabpages/backgrnd.src#RID_SVXPAGE_BACKGROUND.FT_SELECTOR.FixedText.Text
-#, fuzzy
 msgid  "A~s"
 msgstr "အ~ဖြစ်"
 
 #: source/tabpages/backgrnd.src#RID_SVXPAGE_BACKGROUND.LB_SELECTOR.Default.StringList.item
-#, fuzzy
+msgid  "Color"
+msgstr "အရောင်"
+
+#: source/tabpages/backgrnd.src#RID_SVXPAGE_BACKGROUND.LB_SELECTOR.Default.StringList.item
 msgid  "Graphic"
 msgstr "ရုပ်ပုံဒီဇိုင်း"
 
 #: source/tabpages/backgrnd.src#RID_SVXPAGE_BACKGROUND.FT_TBL_DESC.FixedText.Text
-#, fuzzy
 msgid  "F~or"
 msgstr "အ~တွက်"
 
 #: source/tabpages/backgrnd.src#RID_SVXPAGE_BACKGROUND.LB_TBL_BOX.item1.StringList.item
-#, fuzzy
 msgid  "Cell"
 msgstr "ဆဲလ်အကွက်"
 
 #: source/tabpages/backgrnd.src#RID_SVXPAGE_BACKGROUND.LB_TBL_BOX.item2.StringList.item
-#, fuzzy
 msgid  "Row"
 msgstr "အတန်း"
 
 #: source/tabpages/backgrnd.src#RID_SVXPAGE_BACKGROUND.LB_TBL_BOX.item3.StringList.item
-#, fuzzy
 msgid  "Table"
 msgstr "ဇယား"
 
 #: source/tabpages/backgrnd.src#RID_SVXPAGE_BACKGROUND.LB_PARA_BOX.item1.StringList.item
-#, fuzzy
 msgid  "Paragraph"
 msgstr "စာပိုဒ်"
 
 #: source/tabpages/backgrnd.src#RID_SVXPAGE_BACKGROUND.LB_PARA_BOX.item2.StringList.item
-#, fuzzy
 msgid  "Character"
 msgstr "အက္ခရာ"
 
 #: source/tabpages/backgrnd.src#RID_SVXPAGE_BACKGROUND.GB_BGDCOLOR.FixedLine.Text
-#, fuzzy
 msgid  "Background color"
 msgstr "နောက်ခံ အရောင်"
 
@@ -8514,16 +8356,6 @@ msgstr "နမူနာ~ကြည့်ပါ"
 msgid  "Find graphics"
 msgstr "ရုပ်ပုံဒီဇိုင်းရှာပါ"
 
-#: source/tabpages/backgrnd.src#UNLINKED_IMAGE.#define.Text
-#, fuzzy
-msgid  "Unlinked graphic"
-msgstr "ချိတ်ဆက်မှုမရှိသည့်ရုပ်ပုံဒီဇိုင်း"
-
-#: source/tabpages/backgrnd.src#RID_SVXPAGE_BACKGROUND.LB_SELECTOR.Default.StringList.item
-#, fuzzy
-msgid  "Color"
-msgstr "အရောင်"
-
 #: source/tabpages/macroass.src#RID_SVXPAGE_EVENTASSIGN.TabPage.Text
 #, fuzzy
 msgid  "Assign Macro"
@@ -8560,240 +8392,194 @@ msgid  "Macros"
 msgstr "မက်ခရိုများ"
 
 #: source/tabpages/autocdlg.src#RID_OFA_AUTOCORR_DLG.TabDialog.Text
-#, fuzzy
 msgid  "AutoCorrect"
 msgstr "အလိုအလျောက်မှန်ကန်စေမှု"
 
 #: source/tabpages/autocdlg.src#RID_OFA_AUTOCORR_DLG.1.RID_OFAPAGE_AUTOCORR_REPLACE.PageItem.Text
-#, fuzzy
 msgid  "Replace"
 msgstr "အစားထိုးပါ"
 
 #: source/tabpages/autocdlg.src#RID_OFA_AUTOCORR_DLG.1.RID_OFAPAGE_AUTOCORR_EXCEPT.PageItem.Text
-#, fuzzy
 msgid  "Exceptions"
 msgstr "ချွင်းချက်များ"
 
 #: source/tabpages/autocdlg.src#RID_OFA_AUTOCORR_DLG.1.RID_OFAPAGE_AUTOCORR_OPTIONS.PageItem.Text
-#, fuzzy
 msgid  "Options"
 msgstr "ရွေးပိုင်ခွင့်များ"
 
 #: source/tabpages/autocdlg.src#RID_OFA_AUTOCORR_DLG.1.RID_OFAPAGE_AUTOFMT_APPLY.PageItem.Text
-#, fuzzy
 msgid  "Options"
 msgstr "ရွေးပိုင်ခွင့်များ"
 
 #: source/tabpages/autocdlg.src#RID_OFA_AUTOCORR_DLG.1.RID_OFAPAGE_AUTOCORR_QUOTE.PageItem.Text
-#, fuzzy
 msgid  "Localized Options"
 msgstr "သီးခြားရွေးပိုင်ခွင့်များ"
 
 #: source/tabpages/autocdlg.src#RID_OFA_AUTOCORR_DLG.1.RID_OFAPAGE_AUTOCOMPLETE_OPTIONS.PageItem.Text
-#, fuzzy
 msgid  "Word Completion"
 msgstr "စကားလုံးအပြီးသတ်ခြင်း"
 
 #: source/tabpages/autocdlg.src#RID_OFA_AUTOCORR_DLG.1.RID_OFAPAGE_SMARTTAG_OPTIONS.PageItem.Text
-#, fuzzy
 msgid  "Smart Tags"
 msgstr "အဖွင့်အပိတ်သင်္ကေတများ"
 
 #: source/tabpages/autocdlg.src#RID_OFA_AUTOCORR_DLG.FT_LANG.FixedText.Text
-#, fuzzy
 msgid  "Replacements and exceptions for language:"
 msgstr "ဘာသာစကားဆိုင်ရာခြွင်းချက်များနှင့်အစားထိုးမှုများ"
 
 #: source/tabpages/autocdlg.src#COMMON_CLB_ENTRIES.ST_USE_REPLACE.String.Text
-#, fuzzy
 msgid  "Use replacement table"
 msgstr "ဇယားများအစားထိုးသုံးစွဲမည်"
 
 #: source/tabpages/autocdlg.src#COMMON_CLB_ENTRIES.ST_CPTL_STT_WORD.String.Text
-#, fuzzy
 msgid  "Correct TWo INitial CApitals"
 msgstr "ရှေ့စာလုံးနှစ်လုံးကို အကြီးစာလုံးသုံးမည်"
 
 #: source/tabpages/autocdlg.src#COMMON_CLB_ENTRIES.ST_CPTL_STT_SENT.String.Text
-#, fuzzy
 msgid  "Capitalize first letter of every sentence"
 msgstr "ဝါကျတိုင်း၏ ရှေ့စာလုံးကို အကြီးစာလုံးသုံးမည်"
 
 #: source/tabpages/autocdlg.src#COMMON_CLB_ENTRIES.ST_BOLD_UNDER.String.Text
-#, fuzzy
 msgid  "Automatic *bold* and _underline_"
 msgstr "စာလုံးကို အလိုအလျောက်မဲပြီး အောက်ခံမျဉ်းသားစေမည်"
 
 #: source/tabpages/autocdlg.src#COMMON_CLB_ENTRIES.STR_NO_DBL_SPACES.String.Text
-#, fuzzy
 msgid  "Ignore double spaces"
 msgstr "စာလုံးနေရာလွတ်နှစ်ခုရှိမှုကို လက်ခံမည်"
 
 #: source/tabpages/autocdlg.src#COMMON_CLB_ENTRIES.ST_DETECT_URL.String.Text
-#, fuzzy
 msgid  "URL Recognition"
 msgstr "URL ကိုအသိအမှတ်ပြုသုံးစွဲမည်"
 
 #: source/tabpages/autocdlg.src#COMMON_CLB_ENTRIES.ST_DASH.String.Text
-#, fuzzy
 msgid  "Replace dashes"
 msgstr "မျဉ်းရှည်သင်္ကေတဖြင့် အစားထိုးသုံးမည်"
 
 #: source/tabpages/autocdlg.src#RID_OFAPAGE_AUTOCORR_OPTIONS.TabPage.Text
-#, fuzzy
 msgid  "Settings"
 msgstr "ပြင်ဆင်ချိန်ညှိနိုင်မှုများ"
 
 #: source/tabpages/autocdlg.src#RID_OFAPAGE_AUTOFMT_APPLY.PB_EDIT.PushButton.Text
-#, fuzzy
 msgid  "~Edit..."
 msgstr "~တည်းဖြတ်ပါ..."
 
 #: source/tabpages/autocdlg.src#RID_OFAPAGE_AUTOFMT_APPLY.STR_HEADER1.String.Text
-#, fuzzy
 msgid  "[M]"
 msgstr "[M]"
 
 #: source/tabpages/autocdlg.src#RID_OFAPAGE_AUTOFMT_APPLY.STR_HEADER2.String.Text
-#, fuzzy
 msgid  "[T]"
 msgstr "[T]"
 
 #: source/tabpages/autocdlg.src#RID_OFAPAGE_AUTOFMT_APPLY.FT_HEADER1_EXPLANATION.FixedText.Text
-#, fuzzy
 msgid  "[M]: Replace while modifying existing text"
 msgstr "[M]: - ရှိပြီးစာသားကို ပိုကောင်းအောင်ပြုစဉ် အစားထိုးထည့်သွင်းမှု"
 
 #: source/tabpages/autocdlg.src#RID_OFAPAGE_AUTOFMT_APPLY.FT_HEADER2_EXPLANATION.FixedText.Text
-#, fuzzy
 msgid  "[T]: AutoFormat/AutoCorrect while typing"
 msgstr "[T]:စာရိုက်နေစဉ် အလိုအလျောက် ပြင်ဆင်စေမှု၊ မှန်ကန်စေမှု"
 
 #: source/tabpages/autocdlg.src#RID_OFAPAGE_AUTOFMT_APPLY.ST_DEL_EMPTY_PARA.String.Text
-#, fuzzy
 msgid  "Remove blank paragraphs"
 msgstr "စာပိုဒ်အလွတ်များဖယ်ရှားမည်"
 
 #: source/tabpages/autocdlg.src#RID_OFAPAGE_AUTOFMT_APPLY.ST_USER_STYLE.String.Text
-#, fuzzy
 msgid  "Replace Custom Styles"
 msgstr "စိတ်ကြိုက်ပုံစံများဖြင့်အစားထိုးမည်"
 
 #: source/tabpages/autocdlg.src#RID_OFAPAGE_AUTOFMT_APPLY.ST_BULLET.String.Text
-#, fuzzy
 msgid  "Replace bullets with: "
 msgstr "သင်္ကေတအရုပ်များဖြင့်အစားထိုးမည်-"
 
 #: source/tabpages/autocdlg.src#RID_OFAPAGE_AUTOFMT_APPLY.ST_RIGHT_MARGIN.String.Text
 msgid  "Combine single line paragraphs if length greater than"
-msgstr ""
+msgstr "စာကြောင်းအရှည်သည် ၅၀%ထက်ကျော်လွန်လျှင် တစ်ကြောင်းချင်းစီရေးထားသော စာပိုဒ်များကိုပေါင်းမည်"
 
 #: source/tabpages/autocdlg.src#RID_OFAPAGE_AUTOFMT_APPLY.STR_NUM.String.Text
-#, fuzzy
 msgid  "Apply numbering - symbol: "
 msgstr "နံပါတ်စဉ်တပ်ခြင်း အသုံးပြုမည်-"
 
 #: source/tabpages/autocdlg.src#RID_OFAPAGE_AUTOFMT_APPLY.STR_BORDER.String.Text
-#, fuzzy
 msgid  "Apply border"
 msgstr "ဘောင်ခတ်ခြင်း အသုံးပြုမည်"
 
 #: source/tabpages/autocdlg.src#RID_OFAPAGE_AUTOFMT_APPLY.STR_TABLE.String.Text
-#, fuzzy
 msgid  "Create table"
 msgstr "ဇယားဖန်တီးတည်ဆောက်မည်"
 
 #: source/tabpages/autocdlg.src#RID_OFAPAGE_AUTOFMT_APPLY.STR_REPLACE_TEMPLATES.String.Text
-#, fuzzy
 msgid  "Apply Styles"
 msgstr "အခြားပုံစံများအသုံးပြုမည်"
 
 #: source/tabpages/autocdlg.src#RID_OFAPAGE_AUTOFMT_APPLY.STR_DEL_SPACES_AT_STT_END.String.Text
 msgid  "Delete spaces and tabs at beginning and end of paragraph"
-msgstr ""
+msgstr "စာပိုဒ်များ၏ အစနှင့်အဆုံးတွင် နေရာလွတ်များ၊ တက်ဘ်ခုန်ထားမှုများရှိက ဖျက်မည်"
 
 #: source/tabpages/autocdlg.src#RID_OFAPAGE_AUTOFMT_APPLY.STR_DEL_SPACES_BETWEEN_LINES.String.Text
-#, fuzzy
 msgid  "Delete spaces and tabs at end and start of line"
 msgstr "မျဉ်းအစနှင့်အဆုံးတွင် နေရာလွတ်များ၊ တက်ဘ်ခုန်ထားမှုများရှိက ဖျက်မည်"
 
 #: source/tabpages/autocdlg.src#RID_OFADLG_PRCNT_SET.FL_PRCNT.FixedLine.Text
-#, fuzzy
 msgid  "Minimum size"
 msgstr "အသေးဆုံး အရွယ်အစား"
 
 #: source/tabpages/autocdlg.src#RID_OFADLG_PRCNT_SET.MetricField.Text
-#, fuzzy
 msgid  "Combine"
 msgstr "ပေါင်းစပ်ပါ"
 
 #: source/tabpages/autocdlg.src#RID_OFAPAGE_AUTOCORR_REPLACE.FT_SHORT.FixedText.Text
-#, fuzzy
 msgid  "Repla~ce"
 msgstr "အစား~ထိုးပါ"
 
 #: source/tabpages/autocdlg.src#RID_OFAPAGE_AUTOCORR_REPLACE.FT_REPLACE.FixedText.Text
-#, fuzzy
 msgid  "~With:"
 msgstr "~နှင့်အတူ -"
 
 #: source/tabpages/autocdlg.src#RID_OFAPAGE_AUTOCORR_REPLACE.CB_TEXT_ONLY.CheckBox.Text
-#, fuzzy
 msgid  "~Text only"
 msgstr "~စာသားသာ"
 
 #: source/tabpages/autocdlg.src#RID_OFAPAGE_AUTOCORR_REPLACE.PB_NEW_REPLACE.PushButton.Text
-#, fuzzy
 msgid  "~New"
 msgstr "~အသစ်"
 
 #: source/tabpages/autocdlg.src#RID_OFAPAGE_AUTOCORR_REPLACE.PB_DELETE_REPLACE.PushButton.Text
-#, fuzzy
 msgid  "~Delete"
 msgstr "~ဖျက်ပါ"
 
 #: source/tabpages/autocdlg.src#RID_OFAPAGE_AUTOCORR_REPLACE.STR_MODIFY.String.Text
-#, fuzzy
 msgid  "~Replace"
 msgstr "~အစားထိုးပါ"
 
 #: source/tabpages/autocdlg.src#RID_OFAPAGE_AUTOCORR_EXCEPT.FL_ABBREV.FixedLine.Text
-#, fuzzy
 msgid  "Abbreviations (no subsequent capital)"
 msgstr "အတိုကောက်များ (နောက်တွင်မည်သည့်စာလုံးကြီးမျှမရှိရ)"
 
 #: source/tabpages/autocdlg.src#RID_OFAPAGE_AUTOCORR_EXCEPT.PB_NEWABBREV.PushButton.Text
-#, fuzzy
 msgid  "~New"
 msgstr "~အသစ်"
 
 #: source/tabpages/autocdlg.src#RID_OFAPAGE_AUTOCORR_EXCEPT.PB_DELABBREV.PushButton.Text
-#, fuzzy
 msgid  "~Delete"
 msgstr "~ဖျက်ပါ"
 
 #: source/tabpages/autocdlg.src#RID_OFAPAGE_AUTOCORR_EXCEPT.CB_AUTOABBREV.CheckBox.Text
-#, fuzzy
 msgid  "~AutoInclude"
 msgstr "အလိုအလျောက်ပါဝင်စေမှု"
 
 #: source/tabpages/autocdlg.src#RID_OFAPAGE_AUTOCORR_EXCEPT.FL_DOUBLECAPS.FixedLine.Text
-#, fuzzy
 msgid  "Words with TWo INitial CApitals"
 msgstr "အစစာလုံးနှစ်လုံးကိုသာ အကြီးစာလုံးဖြင့်"
 
 #: source/tabpages/autocdlg.src#RID_OFAPAGE_AUTOCORR_EXCEPT.PB_NEWDOUBLECAPS.PushButton.Text
-#, fuzzy
 msgid  "Ne~w"
 msgstr "အ~သစ်"
 
 #: source/tabpages/autocdlg.src#RID_OFAPAGE_AUTOCORR_EXCEPT.PB_DELDOUBLECAPS.PushButton.Text
-#, fuzzy
 msgid  "Dele~te"
 msgstr "ဖျက်~ပါ"
 
 #: source/tabpages/autocdlg.src#RID_OFAPAGE_AUTOCORR_EXCEPT.CB_AUTOCAPS.CheckBox.Text
-#, fuzzy
 msgid  "A~utoInclude"
 msgstr "အလိုအလျောက်~ပါဝင်စေမှု"
 
@@ -8814,91 +8600,74 @@ msgid  "Delete words with two initial capitals"
 msgstr ""
 
 #: source/tabpages/autocdlg.src#RID_OFAPAGE_AUTOCORR_QUOTE.TabPage.Text
-#, fuzzy
 msgid  "Localized Options"
 msgstr "သီးခြားရွေးပိုင်ခွင့်များ"
 
 #: source/tabpages/autocdlg.src#RID_OFAPAGE_AUTOCORR_QUOTE.STR_HEADER1.String.Text
-#, fuzzy
 msgid  "[M]"
 msgstr "[M]"
 
 #: source/tabpages/autocdlg.src#RID_OFAPAGE_AUTOCORR_QUOTE.STR_HEADER2.String.Text
-#, fuzzy
 msgid  "[T]"
 msgstr "[T]"
 
 #: source/tabpages/autocdlg.src#RID_OFAPAGE_AUTOCORR_QUOTE.ST_NON_BREAK_SPACE.String.Text
 msgid  "Add non breaking space before specific punctuation marks in french text"
-msgstr ""
+msgstr "ပြင်သစ်စာများတွင် ပုဒ်ဖြတ်၊ ပုဒ်ရပ်သင်္ကေတများမတိုင်မှီ နေရာလွတ်များမထားရှိမှုကို သုံးပါ"
 
 #: source/tabpages/autocdlg.src#RID_OFAPAGE_AUTOCORR_QUOTE.ST_ORDINAL.String.Text
-#, fuzzy
 msgid  "Format ordinal numbers suffixes (1st -> 1^st)"
 msgstr "အစီအစဉ်ကျသော နောက်ဆက်တွဲ ကိန်းဂဏန်များ (1st -> 1^st)"
 
 #: source/tabpages/autocdlg.src#RID_OFAPAGE_AUTOCORR_QUOTE.FL_SINGLE.FixedLine.Text
-#, fuzzy
 msgid  "Single quotes"
 msgstr "ကုဒ်သင်္ကေတ တစ်ခု"
 
 #: source/tabpages/autocdlg.src#RID_OFAPAGE_AUTOCORR_QUOTE.CB_SGL_TYPO.CheckBox.Text
-#, fuzzy
 msgid  "Repla~ce"
 msgstr "အစား~ထိုးပါ"
 
 #: source/tabpages/autocdlg.src#RID_OFAPAGE_AUTOCORR_QUOTE.FT_SGL_STARTQUOTE.FixedText.Text
-#, fuzzy
 msgid  "~Start quote:"
 msgstr "~အဖွင့်ကုဒ်"
 
 #: source/tabpages/autocdlg.src#RID_OFAPAGE_AUTOCORR_QUOTE.FT_SGL_ENDQUOTE.FixedText.Text
-#, fuzzy
 msgid  "~End quote:"
 msgstr "~အပိတ်ကုဒ်"
 
 #: source/tabpages/autocdlg.src#RID_OFAPAGE_AUTOCORR_QUOTE.PB_SGL_STD.PushButton.Text
-#, fuzzy
 msgid  "~Default"
 msgstr "~ပုံသေ"
 
 #: source/tabpages/autocdlg.src#RID_OFAPAGE_AUTOCORR_QUOTE.FL_DOUBLE.FixedLine.Text
-#, fuzzy
 msgid  "Double quotes"
 msgstr "ကုဒ်သင်္ကေတ နှစ်ခု"
 
 #: source/tabpages/autocdlg.src#RID_OFAPAGE_AUTOCORR_QUOTE.CB_TYPO.CheckBox.Text
-#, fuzzy
 msgid  "Repl~ace"
 msgstr "အစား~ထိုးပါ"
 
 #: source/tabpages/autocdlg.src#RID_OFAPAGE_AUTOCORR_QUOTE.FT_STARTQUOTE.FixedText.Text
-#, fuzzy
 msgid  "Start q~uote:"
 msgstr "အဖွင့်~ကုဒ်-"
 
 #: source/tabpages/autocdlg.src#RID_OFAPAGE_AUTOCORR_QUOTE.FT_ENDQUOTE.FixedText.Text
-#, fuzzy
 msgid  "E~nd quote:"
 msgstr "အပိတ်~ကုဒ်-"
 
 #: source/tabpages/autocdlg.src#RID_OFAPAGE_AUTOCORR_QUOTE.PB_DBL_STD.PushButton.Text
-#, fuzzy
 msgid  "De~fault"
 msgstr "ပုံ~သေ"
 
 #: source/tabpages/autocdlg.src#RID_OFAPAGE_AUTOCORR_QUOTE.STR_CHANGE_START.String.Text
-#, fuzzy
 msgid  "Start quote"
 msgstr "အဖွင့်ကုဒ်"
 
 #: source/tabpages/autocdlg.src#RID_OFAPAGE_AUTOCORR_QUOTE.STR_CHANGE_END.String.Text
-#, fuzzy
 msgid  "End quote"
 msgstr "အပိတ်ကုဒ်"
 
 #: source/tabpages/autocdlg.src#RID_OFAPAGE_AUTOCORR_QUOTE.ST_STANDARD.String.Text
-#, fuzzy
 msgid  "Default"
 msgstr "ပုံသေ"
 
@@ -8927,71 +8696,58 @@ msgid  "End quote of double quotes"
 msgstr ""
 
 #: source/tabpages/autocdlg.src#RID_OFAPAGE_AUTOCOMPLETE_OPTIONS.CB_ACTIV.CheckBox.Text
-#, fuzzy
 msgid  "Enable word ~completion"
 msgstr "ပြီပြည့်စုံသော စကားလုံး~ဆောက်ရွက်မှု အသုံးပြုပါ"
 
 #: source/tabpages/autocdlg.src#RID_OFAPAGE_AUTOCOMPLETE_OPTIONS.CB_APPEND_SPACE.CheckBox.Text
-#, fuzzy
 msgid  "~Append space"
 msgstr "~နေရာလွတ်များဖျက်သိမ်းမှု"
 
 #: source/tabpages/autocdlg.src#RID_OFAPAGE_AUTOCOMPLETE_OPTIONS.CB_AS_TIP.CheckBox.Text
-#, fuzzy
 msgid  "~Show as tip"
 msgstr "~အရိပ်အမြွက်အဖြစ် ပြပါ"
 
 #: source/tabpages/autocdlg.src#RID_OFAPAGE_AUTOCOMPLETE_OPTIONS.CB_COLLECT.CheckBox.Text
-#, fuzzy
 msgid  "C~ollect words"
 msgstr "စကား~လုံးများ စုစည်းပါ"
 
 #: source/tabpages/autocdlg.src#RID_OFAPAGE_AUTOCOMPLETE_OPTIONS.CB_REMOVE_LIST.CheckBox.Text
 msgid  "~When closing a document, remove the words collected from it from the list"
-msgstr ""
+msgstr "~ဖိုင်တစ်ခုကို ပိတ်လိုက်သောအခါ၊ စာရင်းထဲမှ စုစည်းထားသော စကားလုံးများကို ဖယ်ရှားမည်"
 
 #: source/tabpages/autocdlg.src#RID_OFAPAGE_AUTOCOMPLETE_OPTIONS.FT_EXPAND_KEY.FixedText.Text
-#, fuzzy
 msgid  "Acc~ept with"
 msgstr "နှင့်အတူ လက်~ခံပါ"
 
 #: source/tabpages/autocdlg.src#RID_OFAPAGE_AUTOCOMPLETE_OPTIONS.FT_MIN_WORDLEN.FixedText.Text
-#, fuzzy
 msgid  "Mi~n. word length"
 msgstr "အသေး~ဆုံးစာလုံးအလျား"
 
 #: source/tabpages/autocdlg.src#RID_OFAPAGE_AUTOCOMPLETE_OPTIONS.FT_MAX_ENTRIES.FixedText.Text
-#, fuzzy
 msgid  "~Max. entries"
 msgstr "~အများဆုံး ထည့်သွင်းနိုင်မှု"
 
 #: source/tabpages/autocdlg.src#RID_OFAPAGE_AUTOCOMPLETE_OPTIONS.PB_ENTRIES.PushButton.Text
-#, fuzzy
 msgid  "~Delete Entry"
 msgstr "~ထည့်သွင်းမှုများကို ဖျက်ပါ"
 
 #: source/tabpages/autocdlg.src#RID_OFAPAGE_AUTOCOMPLETE_OPTIONS.PushButton.Text
-#, fuzzy
 msgid  "Word Completion"
 msgstr "စာလုံးပြည့်စုံမှု"
 
 #: source/tabpages/autocdlg.src#RID_OFAPAGE_SMARTTAG_OPTIONS.TabPage.Text
-#, fuzzy
 msgid  "Smart Tags"
 msgstr "အဖွင့်အပိတ်သင်္ကေတများ"
 
 #: source/tabpages/autocdlg.src#RID_OFAPAGE_SMARTTAG_OPTIONS.CB_SMARTTAGS.CheckBox.Text
-#, fuzzy
 msgid  "Label text with smart tags"
 msgstr "အဖွင့်အပိတ်သင်္ကေတများဖြင့် စာသားအညွှန်းတပ်ပါ"
 
 #: source/tabpages/autocdlg.src#RID_OFAPAGE_SMARTTAG_OPTIONS.FT_SMARTTAGS.FixedText.Text
-#, fuzzy
 msgid  "Currently installed smart tags"
 msgstr "အဖွင့်အပိတ်သင်္ကေများကို လက်ရှိထည့်သွင်းထားပြီးဖြစ်သည်"
 
 #: source/tabpages/autocdlg.src#RID_OFAPAGE_SMARTTAG_OPTIONS.PB_SMARTTAGS.PushButton.Text
-#, fuzzy
 msgid  "Properties..."
 msgstr "ဂုဏ်သတ္တိများ..."
 
@@ -9006,8 +8762,9 @@ msgid  "Do you want to delete the gradient?"
 msgstr "အရောင်ပြောင်းလဲမှုကို ဖျက်ပစ်လိုပါသလား။"
 
 #: source/tabpages/strings.src#RID_SVXSTR_ASK_CHANGE_GRADIENT.String.Text
+#, fuzzy
 msgid  "The gradient was modified without saving. \nModify the selected gradient or add a new gradient."
-msgstr ""
+msgstr "သိမ်းဆည်းမှုမပြုဘဲ အရောင်ပြောင်းလဲမှုကို အထူးပြုထားသည်။\nရွေးချယ်ထားသည့် အရောင်ကိုပင် အထူးပြုလိုပါသလား (သို့) အသစ်ထပ်ထည့်လိုပါသလား။"
 
 #: source/tabpages/strings.src#RID_SVXSTR_DESC_NEW_BITMAP.String.Text
 #, fuzzy
@@ -9025,8 +8782,9 @@ msgid  "Are you sure you want to delete the bitmap?"
 msgstr "ပုံရိပ်ကို ဖျက်ပစ်ရန် ဆန္ဒရှိပါသလား?"
 
 #: source/tabpages/strings.src#RID_SVXSTR_ASK_CHANGE_BITMAP.String.Text
+#, fuzzy
 msgid  "The bitmap was modified without saving. \nModify the selected bitmap or add a new bitmap."
-msgstr ""
+msgstr "သိမ်းဆည်းမှုမပြုဘဲ ပုံရိပ်ကို အထူးပြုထားသည်။\nရွေးချယ်ထားသည့် ပုံရိပ်ကိုပင် အထူးပြုလိုပါသလား (သို့) အသစ်ထပ်ထည့်လိုပါသလား။"
 
 #: source/tabpages/strings.src#RID_SVXSTR_DESC_LINESTYLE.String.Text
 #, fuzzy
@@ -9039,8 +8797,9 @@ msgid  "Do you want to delete the line style?"
 msgstr "မျဉ်းပုံစံကို ဖျက်ပစ်လိုပါသလား။"
 
 #: source/tabpages/strings.src#RID_SVXSTR_ASK_CHANGE_LINESTYLE.String.Text
+#, fuzzy
 msgid  "The line style was modified without saving. \nModify the selected line style or add a new line style."
-msgstr ""
+msgstr "သိမ်းဆည်းမှုမပြုဘဲ မျဉ်းပုံစံကို အထူးပြုထားသည်။\nရွေးချယ်ထားသည့် မျဉ်းပုံစံကိုပင် အထူးပြုလိုပါသလား (သို့) အသစ်ထပ်ထည့်လိုပါသလား။"
 
 #: source/tabpages/strings.src#RID_SVXSTR_DESC_HATCH.String.Text
 #, fuzzy
@@ -9053,8 +8812,9 @@ msgid  "Do you want to delete the hatching?"
 msgstr "အစင်းအကွက်ကို ဖျက်ပစ်ရန် ဆန္ဒရှိပါသလား?"
 
 #: source/tabpages/strings.src#RID_SVXSTR_ASK_CHANGE_HATCH.String.Text
+#, fuzzy
 msgid  "The hatching type was modified but not saved. \nModify the selected hatching type or add a new hatching type."
-msgstr ""
+msgstr "သိမ်းဆည်းမှုမပြုဘဲ အစင်းအကွက်ပြောင်းလဲမှုကို အထူးပြုထားသည်။\nရွေးချယ်ထားသည့် အစင်းအကွက်ကိုပင် အထူးပြုလိုပါသလား (သို့) အသစ်ထပ်ထည့်လိုပါသလား။"
 
 #: source/tabpages/strings.src#RID_SVXSTR_CHANGE.String.Text
 #, fuzzy
@@ -9077,8 +8837,9 @@ msgid  "Do you want to delete the color?"
 msgstr "အရောင်ကို ဖျက်ပစ်လိုပါသလား။"
 
 #: source/tabpages/strings.src#RID_SVXSTR_ASK_CHANGE_COLOR.String.Text
+#, fuzzy
 msgid  "The color was modified without saving.\nModify the selected color or add a new color."
-msgstr ""
+msgstr "သိမ်းဆည်းမှုမပြုဘဲ အရောင်ပြောင်းလဲမှုကို အထူးပြုထားသည်။\nရွေးချယ်ထားသည့် အရောင်ကိုပင် အထူးပြုလိုပါသလား (သို့) အသစ်ထပ်ထည့်လိုပါသလား။"
 
 #: source/tabpages/strings.src#RID_SVXSTR_TABLE.String.Text
 #, fuzzy
@@ -9096,12 +8857,14 @@ msgid  "The file could not be loaded!"
 msgstr "ဖိုင် ဆွဲမတင်နိုင်ပါ!"
 
 #: source/tabpages/strings.src#RID_SVXSTR_WARN_TABLE_OVERWRITE.String.Text
+#, fuzzy
 msgid  "The list was modified without saving. Would you like to save the list now?"
-msgstr ""
+msgstr "သိမ်းဆည်းခြင်းမရှိဘဲ စာရင်းကို အထူးပြုထားသည်။ စာရင်းကို ယခုပင် သိမ်းဆည်းလိုပါသလား။"
 
 #: source/tabpages/strings.src#RID_SVXSTR_WARN_NAME_DUPLICATE.String.Text
+#, fuzzy
 msgid  "The name you have entered already exists. \nPlease choose another name."
-msgstr ""
+msgstr "သင်ထည့်သွင်းခဲ့သော အမည် ရှိပြီးဖြစ်သည်။\nအခြားအမည်တစ်ခု ရွေးချယ်ပေးပါ။"
 
 #: source/tabpages/strings.src#RID_SVXSTR_DESC_LINEEND.String.Text
 #, fuzzy
@@ -9114,8 +8877,9 @@ msgid  "Do you want to delete the arrowhead?"
 msgstr "မြှားခေါင်းကို ဖျက်ပစ်ရန် ဆန္ဒရှိပါသလား?"
 
 #: source/tabpages/strings.src#RID_SVXSTR_ASK_CHANGE_LINEEND.String.Text
+#, fuzzy
 msgid  "The arrowhead was modified without saving.\nWould you like to save the arrowhead now?"
-msgstr ""
+msgstr "သိမ်းဆည်းမှုမပြုဘဲ မြှားခေါင်းပြောင်းလဲမှုကို အထူးပြုထားသည်။\nမြှားခေါင်းအသစ်ကို ယခုပင်သိမ်းဆည်းလိုပါသလား။"
 
 #: source/tabpages/paragrph.src#RID_SVXPAGE_STD_PARAGRAPH.TabPage.Text
 #, fuzzy
@@ -9161,6 +8925,31 @@ msgstr "စာပိုဒ် အောက်"
 #, fuzzy
 msgid  "Spacing"
 msgstr "နေရာလပ်"
+
+#: source/tabpages/paragrph.src#RID_SVXPAGE_STD_PARAGRAPH.LB_LINEDIST.Default.StringList.item
+#, fuzzy
+msgid  "Single"
+msgstr "တစ်ခုချင်း"
+
+#: source/tabpages/paragrph.src#RID_SVXPAGE_STD_PARAGRAPH.LB_LINEDIST.Default.StringList.item
+#, fuzzy
+msgid  "1.5 lines"
+msgstr "၁.၅ လိုင်း"
+
+#: source/tabpages/paragrph.src#RID_SVXPAGE_STD_PARAGRAPH.LB_LINEDIST.Default.StringList.item
+#, fuzzy
+msgid  "Double"
+msgstr "နှစ်ဆ"
+
+#: source/tabpages/paragrph.src#RID_SVXPAGE_STD_PARAGRAPH.LB_LINEDIST.Default.StringList.item
+#, fuzzy
+msgid  "Proportional"
+msgstr "အချိုးကျဖြစ်သော"
+
+#: source/tabpages/paragrph.src#RID_SVXPAGE_STD_PARAGRAPH.LB_LINEDIST.Default.StringList.item
+#, fuzzy
+msgid  "At least"
+msgstr "အနည်းဆုံး"
 
 #: source/tabpages/paragrph.src#RID_SVXPAGE_STD_PARAGRAPH.LB_LINEDIST.Default.StringList.item
 #, fuzzy
@@ -9236,6 +9025,21 @@ msgstr "ညာ~ဖက်/အောက်ခြေ"
 #, fuzzy
 msgid  "~Last line"
 msgstr "~နောက်ဆုံးလိုင်း"
+
+#: source/tabpages/paragrph.src#RID_SVXPAGE_ALIGN_PARAGRAPH.LB_LASTLINE.Default.StringList.item
+#, fuzzy
+msgid  "Default"
+msgstr "ပုံသေ"
+
+#: source/tabpages/paragrph.src#RID_SVXPAGE_ALIGN_PARAGRAPH.LB_LASTLINE.Default.StringList.item
+#, fuzzy
+msgid  "Left"
+msgstr "ဘယ်ဖက်"
+
+#: source/tabpages/paragrph.src#RID_SVXPAGE_ALIGN_PARAGRAPH.LB_LASTLINE.Default.StringList.item
+#, fuzzy
+msgid  "Centered"
+msgstr "ဗဟိုချက်"
 
 #: source/tabpages/paragrph.src#RID_SVXPAGE_ALIGN_PARAGRAPH.LB_LASTLINE.Default.StringList.item
 #, fuzzy
@@ -9446,46 +9250,6 @@ msgstr "ဥပမာ"
 msgid  "Page Style"
 msgstr ""
 
-#: source/tabpages/paragrph.src#RID_SVXPAGE_STD_PARAGRAPH.LB_LINEDIST.Default.StringList.item
-#, fuzzy
-msgid  "Single"
-msgstr "တစ်ခုချင်း"
-
-#: source/tabpages/paragrph.src#RID_SVXPAGE_STD_PARAGRAPH.LB_LINEDIST.Default.StringList.item
-#, fuzzy
-msgid  "1.5 lines"
-msgstr "၁.၅ လိုင်း"
-
-#: source/tabpages/paragrph.src#RID_SVXPAGE_STD_PARAGRAPH.LB_LINEDIST.Default.StringList.item
-#, fuzzy
-msgid  "Double"
-msgstr "နှစ်ဆ"
-
-#: source/tabpages/paragrph.src#RID_SVXPAGE_STD_PARAGRAPH.LB_LINEDIST.Default.StringList.item
-#, fuzzy
-msgid  "Proportional"
-msgstr "အချိုးကျဖြစ်သော"
-
-#: source/tabpages/paragrph.src#RID_SVXPAGE_STD_PARAGRAPH.LB_LINEDIST.Default.StringList.item
-#, fuzzy
-msgid  "At least"
-msgstr "အနည်းဆုံး"
-
-#: source/tabpages/paragrph.src#RID_SVXPAGE_ALIGN_PARAGRAPH.LB_LASTLINE.Default.StringList.item
-#, fuzzy
-msgid  "Default"
-msgstr "ပုံသေ"
-
-#: source/tabpages/paragrph.src#RID_SVXPAGE_ALIGN_PARAGRAPH.LB_LASTLINE.Default.StringList.item
-#, fuzzy
-msgid  "Left"
-msgstr "ဘယ်ဖက်"
-
-#: source/tabpages/paragrph.src#RID_SVXPAGE_ALIGN_PARAGRAPH.LB_LASTLINE.Default.StringList.item
-#, fuzzy
-msgid  "Centered"
-msgstr "ဗဟိုချက်"
-
 #: source/tabpages/textanim.src#RID_SVXPAGE_TEXTANIMATION.TabPage.Text
 #, fuzzy
 msgid  "Animation"
@@ -9500,6 +9264,26 @@ msgstr "သက်ဝင်လှုပ်ရှားမှုရှိသည့
 #, fuzzy
 msgid  "E~ffect"
 msgstr "အကျိုး~သက်ရောက်မှု"
+
+#: source/tabpages/textanim.src#RID_SVXPAGE_TEXTANIMATION.LB_EFFECT.Default.StringList.item
+#, fuzzy
+msgid  "No Effect"
+msgstr "အကျိုးသက်ရောက်မှုမရှိပါ"
+
+#: source/tabpages/textanim.src#RID_SVXPAGE_TEXTANIMATION.LB_EFFECT.Default.StringList.item
+#, fuzzy
+msgid  "Blink"
+msgstr "မျက်တောင်ခတ်ပါ"
+
+#: source/tabpages/textanim.src#RID_SVXPAGE_TEXTANIMATION.LB_EFFECT.Default.StringList.item
+#, fuzzy
+msgid  "Scroll Through"
+msgstr "စာကြောင်းများ ထက်အောက်ရွှေ့ပါ"
+
+#: source/tabpages/textanim.src#RID_SVXPAGE_TEXTANIMATION.LB_EFFECT.Default.StringList.item
+#, fuzzy
+msgid  "Scroll Back and Forth"
+msgstr "အနောက်သို့လေးကြိမ်ရွေ့ပါ"
 
 #: source/tabpages/textanim.src#RID_SVXPAGE_TEXTANIMATION.LB_EFFECT.Default.StringList.item
 #, fuzzy
@@ -9590,26 +9374,6 @@ msgstr "စာသား"
 #, fuzzy
 msgid  "Text Animation"
 msgstr "စာသားသက်ဝင်လှုပ်ရှားခြင်း"
-
-#: source/tabpages/textanim.src#RID_SVXPAGE_TEXTANIMATION.LB_EFFECT.Default.StringList.item
-#, fuzzy
-msgid  "No Effect"
-msgstr "အကျိုးသက်ရောက်မှုမရှိပါ"
-
-#: source/tabpages/textanim.src#RID_SVXPAGE_TEXTANIMATION.LB_EFFECT.Default.StringList.item
-#, fuzzy
-msgid  "Blink"
-msgstr "မျက်တောင်ခတ်ပါ"
-
-#: source/tabpages/textanim.src#RID_SVXPAGE_TEXTANIMATION.LB_EFFECT.Default.StringList.item
-#, fuzzy
-msgid  "Scroll Through"
-msgstr "စာကြောင်းများ ထက်အောက်ရွှေ့ပါ"
-
-#: source/tabpages/textanim.src#RID_SVXPAGE_TEXTANIMATION.LB_EFFECT.Default.StringList.item
-#, fuzzy
-msgid  "Scroll Back and Forth"
-msgstr "အနောက်သို့လေးကြိမ်ရွေ့ပါ"
 
 #: source/tabpages/measure.src#RID_SVXPAGE_MEASURE.TabPage.Text
 #, fuzzy
@@ -10011,6 +9775,11 @@ msgstr "~ထောင့်ချိုး"
 msgid  " degrees"
 msgstr "ဒီဂရီ"
 
+#: source/tabpages/transfrm.src#_POS_SIZE_TEXT.#define.Text
+#, fuzzy
+msgid  "Position and Size"
+msgstr "တည်နေရာနှင့်အရွယ်အစား"
+
 #: source/tabpages/transfrm.src#RID_SVXDLG_TRANSFORM.TabDialog.Text
 #, fuzzy
 msgid  "Position and Size"
@@ -10025,11 +9794,6 @@ msgstr "လှည့်ပတ်မှု"
 #, fuzzy
 msgid  "Slant & Corner Radius"
 msgstr "အစွေသားနှင့် ထောင့်ချိုးအချင်းဝက်"
-
-#: source/tabpages/transfrm.src#_POS_SIZE_TEXT.#define.Text
-#, fuzzy
-msgid  "Position and Size"
-msgstr "တည်နေရာနှင့်အရွယ်အစား"
 
 #: source/tabpages/textattr.src#RID_SVXPAGE_TEXTATTR.TabPage.Text
 #, fuzzy
@@ -10177,142 +9941,114 @@ msgid  "~Original Size"
 msgstr "~မူလအရွယ်အစား"
 
 #: source/tabpages/align.src#RID_SVXPAGE_ALIGNMENT.TabPage.Text
-#, fuzzy
 msgid  "Alignment"
 msgstr "ဖြောင့်တန်းမှု"
 
 #: source/tabpages/align.src#RID_SVXPAGE_ALIGNMENT.FL_ALIGNMENT.FixedLine.Text
-#, fuzzy
 msgid  "Text alignment"
 msgstr "စာသား ဖြောင့်တန်းမှု"
 
 #: source/tabpages/align.src#RID_SVXPAGE_ALIGNMENT.FT_HORALIGN.FixedText.Text
-#, fuzzy
 msgid  "Hori~zontal"
 msgstr "ရေပြင်~ညီ"
 
 #: source/tabpages/align.src#RID_SVXPAGE_ALIGNMENT.LB_HORALIGN.ALIGNDLG_HORALIGN_STD.StringList.item
-#, fuzzy
 msgid  "Default"
 msgstr "ပုံသေ"
 
 #: source/tabpages/align.src#RID_SVXPAGE_ALIGNMENT.LB_HORALIGN.ALIGNDLG_HORALIGN_LEFT.StringList.item
-#, fuzzy
 msgid  "Left"
 msgstr "ဘယ်ဖက်"
 
 #: source/tabpages/align.src#RID_SVXPAGE_ALIGNMENT.LB_HORALIGN.ALIGNDLG_HORALIGN_CENTER.StringList.item
-#, fuzzy
 msgid  "Center"
 msgstr "ဗဟို"
 
 #: source/tabpages/align.src#RID_SVXPAGE_ALIGNMENT.LB_HORALIGN.ALIGNDLG_HORALIGN_RIGHT.StringList.item
-#, fuzzy
 msgid  "Right"
 msgstr "ညာဖက်"
 
 #: source/tabpages/align.src#RID_SVXPAGE_ALIGNMENT.LB_HORALIGN.ALIGNDLG_HORALIGN_BLOCK.StringList.item
-#, fuzzy
 msgid  "Justified"
 msgstr "စာကြောင်း ဘယ်ညာညှိသည်"
 
 #: source/tabpages/align.src#RID_SVXPAGE_ALIGNMENT.LB_HORALIGN.ALIGNDLG_HORALIGN_FILL.StringList.item
-#, fuzzy
 msgid  "Filled"
 msgstr "ဖြည့်သည်"
 
 #: source/tabpages/align.src#RID_SVXPAGE_ALIGNMENT.FT_INDENT.FixedText.Text
-#, fuzzy
 msgid  "I~ndent"
 msgstr "ဘယ်ဘက်မှ စာများကို~ညာဘက်တွင်နေရာချခြင်း"
 
 #: source/tabpages/align.src#RID_SVXPAGE_ALIGNMENT.FT_VERALIGN.FixedText.Text
-#, fuzzy
 msgid  "~Vertical"
 msgstr "~ဒေါင်လိုက်"
 
 #: source/tabpages/align.src#RID_SVXPAGE_ALIGNMENT.LB_VERALIGN.ALIGNDLG_VERALIGN_STD.StringList.item
-#, fuzzy
 msgid  "Default"
 msgstr "ပုံသေ"
 
 #: source/tabpages/align.src#RID_SVXPAGE_ALIGNMENT.LB_VERALIGN.ALIGNDLG_VERALIGN_TOP.StringList.item
-#, fuzzy
 msgid  "Top"
 msgstr "ထိပ်"
 
 #: source/tabpages/align.src#RID_SVXPAGE_ALIGNMENT.LB_VERALIGN.ALIGNDLG_VERALIGN_MID.StringList.item
-#, fuzzy
 msgid  "Middle"
 msgstr "အလယ်"
 
 #: source/tabpages/align.src#RID_SVXPAGE_ALIGNMENT.LB_VERALIGN.ALIGNDLG_VERALIGN_BOTTOM.StringList.item
-#, fuzzy
 msgid  "Bottom"
 msgstr "အောက်ခြေ"
 
 #: source/tabpages/align.src#RID_SVXPAGE_ALIGNMENT.FL_ORIENTATION.FixedLine.Text
-#, fuzzy
 msgid  "Text orientation"
 msgstr "စာသားအနေအထား"
 
 #: source/tabpages/align.src#RID_SVXPAGE_ALIGNMENT.BTN_TXTSTACKED.TriStateBox.Text
-#, fuzzy
 msgid  "Ve~rtically stacked"
 msgstr "ဒေါင်လိုက်~အစီအရီဆင့်ထားသည်"
 
 #: source/tabpages/align.src#RID_SVXPAGE_ALIGNMENT.FT_DEGREES.FixedText.Text
-#, fuzzy
 msgid  "De~grees"
 msgstr "ဒီဂရီ~များ"
 
 #: source/tabpages/align.src#RID_SVXPAGE_ALIGNMENT.FT_BORDER_LOCK.FixedText.Text
-#, fuzzy
 msgid  "Re~ference edge"
 msgstr "အနားစွန်း~များ ရည်ညွှန်းချက်"
 
 #: source/tabpages/align.src#RID_SVXPAGE_ALIGNMENT.BTN_ASIAN_VERTICAL.TriStateBox.Text
-#, fuzzy
 msgid  "Asian layout ~mode"
 msgstr "အာရှ အဆင်အပြင်~နည်းလမ်း"
 
 #: source/tabpages/align.src#RID_SVXPAGE_ALIGNMENT.FL_WRAP.FixedLine.Text
-#, fuzzy
 msgid  "Properties"
 msgstr "ဂုဏ်သတ္တိများ"
 
 #: source/tabpages/align.src#RID_SVXPAGE_ALIGNMENT.BTN_WRAP.TriStateBox.Text
-#, fuzzy
 msgid  "~Wrap text automatically"
 msgstr "~စာရိုက်စဉ် အလိုအလျောက်နောက်တစ်ကြောင်း ရောက်သွားစေခြင်း"
 
 #: source/tabpages/align.src#RID_SVXPAGE_ALIGNMENT.BTN_HYPH.TriStateBox.Text
-#, fuzzy
 msgid  "Hyphenation ~active"
 msgstr "တုံးတိုနည်း~သုံးမည်"
 
 #: source/tabpages/align.src#RID_SVXPAGE_ALIGNMENT.BTN_SHRINK.TriStateBox.Text
-#, fuzzy
 msgid  "~Shrink to fit cell size"
 msgstr "~ဆဲလ်အကွက်အရွယ်အစားနှင့်ကိုက်ညီစေခြင်း"
 
 #: source/tabpages/align.src#RID_SVXPAGE_ALIGNMENT.FT_TEXTFLOW.FixedText.Text
-#, fuzzy
 msgid  "Te~xt direction"
 msgstr "စာသား~ဦးတည်ရာ"
 
 #: source/tabpages/align.src#RID_SVXPAGE_ALIGNMENT.STR_BOTTOMLOCK.String.Text
-#, fuzzy
 msgid  "Text Extension From Lower Cell Border"
 msgstr "ပိုနိမ့်သော ဆဲလ်အကွက်ဘောင်မှ စာသားတိုးချဲ့ခြင်း"
 
 #: source/tabpages/align.src#RID_SVXPAGE_ALIGNMENT.STR_TOPLOCK.String.Text
-#, fuzzy
 msgid  "Text Extension From Upper Cell Border"
 msgstr "ပိုမြင့်သော ဆဲလ်အကွက်ဘောင်မှ စာသားတိုးချဲ့ခြင်း"
 
 #: source/tabpages/align.src#RID_SVXPAGE_ALIGNMENT.STR_CELLLOCK.String.Text
-#, fuzzy
 msgid  "Text Extension Inside Cell"
 msgstr "ဆဲလ်အကွက်အတွင်း စာသားတိုးချဲ့မှု"
 
@@ -10643,6 +10379,26 @@ msgstr "-အကျိုးသက်ရောက်မှုများ"
 
 #: source/tabpages/chardlg.src#RID_SVXPAGE_CHAR_EFFECTS.LB_EFFECTS2.Default.StringList.item
 #, fuzzy
+msgid  "(Without)"
+msgstr "(မပါရှိဘဲ)"
+
+#: source/tabpages/chardlg.src#RID_SVXPAGE_CHAR_EFFECTS.LB_EFFECTS2.Default.StringList.item
+#, fuzzy
+msgid  "Capitals"
+msgstr "စာလုံးကြီးများ"
+
+#: source/tabpages/chardlg.src#RID_SVXPAGE_CHAR_EFFECTS.LB_EFFECTS2.Default.StringList.item
+#, fuzzy
+msgid  "Lowercase"
+msgstr "စာလုံးသေး"
+
+#: source/tabpages/chardlg.src#RID_SVXPAGE_CHAR_EFFECTS.LB_EFFECTS2.Default.StringList.item
+#, fuzzy
+msgid  "Title"
+msgstr "ခေါင်းစဉ်"
+
+#: source/tabpages/chardlg.src#RID_SVXPAGE_CHAR_EFFECTS.LB_EFFECTS2.Default.StringList.item
+#, fuzzy
 msgid  "Small capitals"
 msgstr "အရွယ်ငယ်သော စာလုံးကြီးများ"
 
@@ -10650,6 +10406,16 @@ msgstr "အရွယ်ငယ်သော စာလုံးကြီးမျ�
 #, fuzzy
 msgid  "~Relief"
 msgstr "~ရုပ်ကြွ"
+
+#: source/tabpages/chardlg.src#RID_SVXPAGE_CHAR_EFFECTS.LB_RELIEF.Default.StringList.item
+#, fuzzy
+msgid  "(Without)"
+msgstr "(မပါရှိဘဲ)"
+
+#: source/tabpages/chardlg.src#RID_SVXPAGE_CHAR_EFFECTS.LB_RELIEF.Default.StringList.item
+#, fuzzy
+msgid  "Embossed"
+msgstr "ဖေါင်းကြွ"
 
 #: source/tabpages/chardlg.src#RID_SVXPAGE_CHAR_EFFECTS.LB_RELIEF.Default.StringList.item
 #, fuzzy
@@ -10913,6 +10679,26 @@ msgstr "အရေးပါသော~အမှတ်အသား"
 
 #: source/tabpages/chardlg.src#RID_SVXPAGE_CHAR_EFFECTS.LB_EMPHASIS.default.StringList.item
 #, fuzzy
+msgid  "(Without)"
+msgstr "(မပါရှိဘဲ)"
+
+#: source/tabpages/chardlg.src#RID_SVXPAGE_CHAR_EFFECTS.LB_EMPHASIS.default.StringList.item
+#, fuzzy
+msgid  "Dot"
+msgstr "အစက်"
+
+#: source/tabpages/chardlg.src#RID_SVXPAGE_CHAR_EFFECTS.LB_EMPHASIS.default.StringList.item
+#, fuzzy
+msgid  "Circle"
+msgstr "စက်ဝိုင်း"
+
+#: source/tabpages/chardlg.src#RID_SVXPAGE_CHAR_EFFECTS.LB_EMPHASIS.default.StringList.item
+#, fuzzy
+msgid  "Disc"
+msgstr "ဓါတ်ပြား"
+
+#: source/tabpages/chardlg.src#RID_SVXPAGE_CHAR_EFFECTS.LB_EMPHASIS.default.StringList.item
+#, fuzzy
 msgid  "Accent"
 msgstr "သံပြောင်းပြသင်္ကေတ"
 
@@ -10939,7 +10725,7 @@ msgstr "ဥပမာ"
 #: source/tabpages/chardlg.src#RID_SVXPAGE_CHAR_EFFECTS.STR_EFFECTS_CAPITALS.String.Text
 #, fuzzy
 msgid  "Capitals"
-msgstr "စာလုံးကြီးများ"
+msgstr "စာလုံးအကြီး"
 
 #: source/tabpages/chardlg.src#RID_SVXPAGE_CHAR_EFFECTS.STR_EFFECTS_LOWERCASE.String.Text
 #, fuzzy
@@ -11053,6 +10839,16 @@ msgstr "နေရာလပ်"
 
 #: source/tabpages/chardlg.src#RID_SVXPAGE_CHAR_POSITION.LB_KERNING2.Default.StringList.item
 #, fuzzy
+msgid  "Default"
+msgstr "ပုံသေ"
+
+#: source/tabpages/chardlg.src#RID_SVXPAGE_CHAR_POSITION.LB_KERNING2.Default.StringList.item
+#, fuzzy
+msgid  "Expanded"
+msgstr "တိုးချဲ့စေသည်"
+
+#: source/tabpages/chardlg.src#RID_SVXPAGE_CHAR_POSITION.LB_KERNING2.Default.StringList.item
+#, fuzzy
 msgid  "Condensed"
 msgstr "ချုံ့စေသည်"
 
@@ -11152,66 +10948,6 @@ msgstr "အခြား အက္ခရာများ..."
 #, fuzzy
 msgid  "Example"
 msgstr "ဥပမာ"
-
-#: source/tabpages/chardlg.src#RID_SVXPAGE_CHAR_EFFECTS.LB_EFFECTS2.Default.StringList.item
-#, fuzzy
-msgid  "(Without)"
-msgstr "(မပါရှိဘဲ)"
-
-#: source/tabpages/chardlg.src#RID_SVXPAGE_CHAR_EFFECTS.LB_EFFECTS2.Default.StringList.item
-#, fuzzy
-msgid  "Capitals"
-msgstr "စာလုံးအကြီး"
-
-#: source/tabpages/chardlg.src#RID_SVXPAGE_CHAR_EFFECTS.LB_EFFECTS2.Default.StringList.item
-#, fuzzy
-msgid  "Lowercase"
-msgstr "စာလုံးသေး"
-
-#: source/tabpages/chardlg.src#RID_SVXPAGE_CHAR_EFFECTS.LB_EFFECTS2.Default.StringList.item
-#, fuzzy
-msgid  "Title"
-msgstr "ခေါင်းစဉ်"
-
-#: source/tabpages/chardlg.src#RID_SVXPAGE_CHAR_EFFECTS.LB_RELIEF.Default.StringList.item
-#, fuzzy
-msgid  "(Without)"
-msgstr "(မပါရှိဘဲ)"
-
-#: source/tabpages/chardlg.src#RID_SVXPAGE_CHAR_EFFECTS.LB_RELIEF.Default.StringList.item
-#, fuzzy
-msgid  "Embossed"
-msgstr "ဖေါင်းကြွ"
-
-#: source/tabpages/chardlg.src#RID_SVXPAGE_CHAR_EFFECTS.LB_EMPHASIS.default.StringList.item
-#, fuzzy
-msgid  "(Without)"
-msgstr "(မပါရှိဘဲ)"
-
-#: source/tabpages/chardlg.src#RID_SVXPAGE_CHAR_EFFECTS.LB_EMPHASIS.default.StringList.item
-#, fuzzy
-msgid  "Dot"
-msgstr "အစက်"
-
-#: source/tabpages/chardlg.src#RID_SVXPAGE_CHAR_EFFECTS.LB_EMPHASIS.default.StringList.item
-#, fuzzy
-msgid  "Circle"
-msgstr "စက်ဝိုင်း"
-
-#: source/tabpages/chardlg.src#RID_SVXPAGE_CHAR_EFFECTS.LB_EMPHASIS.default.StringList.item
-#, fuzzy
-msgid  "Disc"
-msgstr "ဓါတ်ပြား"
-
-#: source/tabpages/chardlg.src#RID_SVXPAGE_CHAR_POSITION.LB_KERNING2.Default.StringList.item
-#, fuzzy
-msgid  "Default"
-msgstr "ပုံသေ"
-
-#: source/tabpages/chardlg.src#RID_SVXPAGE_CHAR_POSITION.LB_KERNING2.Default.StringList.item
-#, fuzzy
-msgid  "Expanded"
-msgstr "တိုးချဲ့စေသည်"
 
 #: source/tabpages/border.src#RID_SVXPAGE_BORDER.TabPage.Text
 #, fuzzy
@@ -11450,6 +11186,11 @@ msgstr "အသင့်ဆုံးဖြစ်သော"
 
 #: source/tabpages/labdlg.src#RID_SVXPAGE_CAPTION.LB_ANSATZ.3.StringList.item
 #, fuzzy
+msgid  "From top"
+msgstr "ထိပ်မှ"
+
+#: source/tabpages/labdlg.src#RID_SVXPAGE_CAPTION.LB_ANSATZ.3.StringList.item
+#, fuzzy
 msgid  "From left"
 msgstr "ဘယ်ဖက်မှ"
 
@@ -11513,6 +11254,11 @@ msgstr "ထိပ်၊ အလယ်၊ အောက်ခြေ"
 msgid  "Left;Middle;Right"
 msgstr "ဘယ်ဖက်၊ အလယ်၊ ညာဖက်"
 
+#: source/tabpages/labdlg.src#_POS_SIZE_TEXT.#define.Text
+#, fuzzy
+msgid  "Position and Size"
+msgstr "တည်နေရာနှင့်အရွယ်အစား"
+
 #: source/tabpages/labdlg.src#RID_SVXDLG_CAPTION.TabDialog.Text
 #, fuzzy
 msgid  "Callouts"
@@ -11522,16 +11268,6 @@ msgstr "စကားပြောပုံစံများ"
 #, fuzzy
 msgid  "Callout"
 msgstr "စကားပြောပုံစံ"
-
-#: source/tabpages/labdlg.src#_POS_SIZE_TEXT.#define.Text
-#, fuzzy
-msgid  "Position and Size"
-msgstr "တည်နေရာနှင့်အရွယ်အစား"
-
-#: source/tabpages/labdlg.src#RID_SVXPAGE_CAPTION.LB_ANSATZ.3.StringList.item
-#, fuzzy
-msgid  "From top"
-msgstr "ထိပ်မှ"
 
 #: source/tabpages/tabline.src#RID_SVXPAGE_LINE.TabPage.Text
 #, fuzzy
@@ -11735,8 +11471,18 @@ msgstr "~အမျိုးအစား"
 
 #: source/tabpages/tabline.src#RID_SVXPAGE_LINE_DEF.LB_TYPE_1.Default.StringList.item
 #, fuzzy
+msgid  "Dot"
+msgstr "အစက်"
+
+#: source/tabpages/tabline.src#RID_SVXPAGE_LINE_DEF.LB_TYPE_1.Default.StringList.item
+#, fuzzy
 msgid  "Dash"
 msgstr "မျဉ်းရှည်"
+
+#: source/tabpages/tabline.src#RID_SVXPAGE_LINE_DEF.LB_TYPE_2.Default.StringList.item
+#, fuzzy
+msgid  "Dot"
+msgstr "အစက်"
 
 #: source/tabpages/tabline.src#RID_SVXPAGE_LINE_DEF.LB_TYPE_2.Default.StringList.item
 #, fuzzy
@@ -11891,13 +11637,3 @@ msgstr "မျဉ်းပုံစံများ"
 #, fuzzy
 msgid  "Arrow Styles"
 msgstr "မြှားပုံစံများ"
-
-#: source/tabpages/tabline.src#RID_SVXPAGE_LINE_DEF.LB_TYPE_1.Default.StringList.item
-#, fuzzy
-msgid  "Dot"
-msgstr "အစက်"
-
-#: source/tabpages/tabline.src#RID_SVXPAGE_LINE_DEF.LB_TYPE_2.Default.StringList.item
-#, fuzzy
-msgid  "Dot"
-msgstr "အစက်"

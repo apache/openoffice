@@ -41,63 +41,51 @@ msgstr "शीर्षकांना, लेजेंड, आणि ग्र�
 msgid  "Display grids"
 msgstr "ग्रिडसला प्रदर्शित करा"
 
+#: source/controller/dialogs/tp_3D_SceneGeometry.src#CUSTOMUNITTEXT_DEGREE.#define.CustomUnitText
+msgid  " degrees"
+msgstr "अंश"
+
 #: source/controller/dialogs/tp_3D_SceneGeometry.src#TP_3D_SCENEGEOMETRY.CBX_RIGHT_ANGLED_AXES.CheckBox.Text
-#, fuzzy
 msgid  "~Right-angled axes"
 msgstr "काटकोनाचे अक्ष (~R)"
 
 #: source/controller/dialogs/tp_3D_SceneGeometry.src#TP_3D_SCENEGEOMETRY.FT_X_ROTATION.FixedText.Text
-#, fuzzy
 msgid  "~X rotation"
 msgstr "भ्रमण (~X)"
 
 #: source/controller/dialogs/tp_3D_SceneGeometry.src#TP_3D_SCENEGEOMETRY.FT_Y_ROTATION.FixedText.Text
-#, fuzzy
 msgid  "~Y rotation"
 msgstr "भ्रमण (~Y)"
 
 #: source/controller/dialogs/tp_3D_SceneGeometry.src#TP_3D_SCENEGEOMETRY.FT_Z_ROTATION.FixedText.Text
-#, fuzzy
 msgid  "~Z rotation"
 msgstr "भ्रमण (~Z)"
 
 #: source/controller/dialogs/tp_3D_SceneGeometry.src#TP_3D_SCENEGEOMETRY.CBX_PERSPECTIVE.CheckBox.Text
-#, fuzzy
 msgid  "~Perspective"
 msgstr "दृष्टिकोन (~P)"
 
-#: source/controller/dialogs/tp_3D_SceneGeometry.src#CUSTOMUNITTEXT_DEGREE.#define.CustomUnitText
-#, fuzzy
-msgid  " degrees"
-msgstr "अंश"
-
 #: source/controller/dialogs/Strings_AdditionalControls.src#STR_3DSCHEME_SIMPLE.String.Text
-#, fuzzy
 msgid  "Simple"
 msgstr "सोपे"
 
 #: source/controller/dialogs/Strings_AdditionalControls.src#STR_3DSCHEME_REALISTIC.String.Text
-#, fuzzy
 msgid  "Realistic"
 msgstr "यथार्थ"
 
 #: source/controller/dialogs/Strings_AdditionalControls.src#STR_3DSCHEME_CUSTOM.String.Text
-#, fuzzy
 msgid  "Custom"
 msgstr "मनपसंत"
 
 #: source/controller/dialogs/Strings_AdditionalControls.src#STR_BAR_GEOMETRY.String.Text
-#, fuzzy
 msgid  "Shape"
 msgstr "आकार"
 
 #: source/controller/dialogs/Strings_AdditionalControls.src#STR_NUMBER_OF_LINES.String.Text
-#, fuzzy
 msgid  "~Number of lines"
 msgstr "एकूण ओळी (~N)"
 
 #: source/controller/dialogs/Strings_AdditionalControls.src#STR_TEXT_SEPARATOR.String.Text
-#, fuzzy
 msgid  "Separator"
 msgstr "विभाजक"
 
@@ -112,218 +100,176 @@ msgid  "~Insert in sheet"
 msgstr "पत्रकात अंतर्भूत करा (~I)"
 
 #: source/controller/dialogs/res_BarGeometry.src#LB_BAR_GEOMETRY.item1.StringList.item
-#, fuzzy
 msgid  "Box"
 msgstr "बॉक्स"
 
 #: source/controller/dialogs/res_BarGeometry.src#LB_BAR_GEOMETRY.item2.StringList.item
-#, fuzzy
 msgid  "Cylinder"
 msgstr "दंडगोल"
 
 #: source/controller/dialogs/res_BarGeometry.src#LB_BAR_GEOMETRY.item3.StringList.item
-#, fuzzy
 msgid  "Cone"
 msgstr "शंकु"
 
 #: source/controller/dialogs/res_BarGeometry.src#LB_BAR_GEOMETRY.item4.StringList.item
-#, fuzzy
 msgid  "Pyramid"
 msgstr "शुण्डाकार स्तंभ"
 
 #: source/controller/dialogs/dlg_DataSource.src#DLG_DATA_SOURCE.TabDialog.Text
-#, fuzzy
 msgid  "Data Ranges"
 msgstr "डाटा व्याप्ती"
 
 #: source/controller/dialogs/Strings_ChartTypes.src#STR_TYPE_COLUMN.String.Text
-#, fuzzy
 msgid  "Column"
 msgstr "रकाना"
 
 #: source/controller/dialogs/Strings_ChartTypes.src#STR_TYPE_BAR.String.Text
-#, fuzzy
 msgid  "Bar"
 msgstr "पट्टी"
 
 #: source/controller/dialogs/Strings_ChartTypes.src#STR_TYPE_AREA.String.Text
-#, fuzzy
 msgid  "Area"
 msgstr "क्षेत्र"
 
 #: source/controller/dialogs/Strings_ChartTypes.src#STR_TYPE_PIE.String.Text
-#, fuzzy
 msgid  "Pie"
 msgstr "पाई"
 
 #: source/controller/dialogs/Strings_ChartTypes.src#STR_PIE_EXPLODED.String.Text
-#, fuzzy
 msgid  "Exploded Pie Chart"
 msgstr "एक्सप्लोडेड पाई कोष्टक"
 
 #: source/controller/dialogs/Strings_ChartTypes.src#STR_DONUT_EXPLODED.String.Text
-#, fuzzy
 msgid  "Exploded Donut Chart"
 msgstr "एक्सप्लोडेड् डोनट कोष्टक"
 
 #: source/controller/dialogs/Strings_ChartTypes.src#STR_DONUT.String.Text
-#, fuzzy
 msgid  "Donut"
 msgstr "डोनट"
 
 #: source/controller/dialogs/Strings_ChartTypes.src#STR_TYPE_LINE.String.Text
-#, fuzzy
 msgid  "Line"
 msgstr "रेघ"
 
 #: source/controller/dialogs/Strings_ChartTypes.src#STR_TYPE_XY.String.Text
-#, fuzzy
 msgid  "XY (Scatter)"
 msgstr "XY (पसरलेले)"
 
 #: source/controller/dialogs/Strings_ChartTypes.src#STR_POINTS_AND_LINES.String.Text
-#, fuzzy
 msgid  "Points and Lines"
 msgstr "बिंदू आणि रेषा"
 
 #: source/controller/dialogs/Strings_ChartTypes.src#STR_POINTS_ONLY.String.Text
-#, fuzzy
 msgid  "Points Only"
 msgstr "फक्त बिंदू"
 
 #: source/controller/dialogs/Strings_ChartTypes.src#STR_LINES_ONLY.String.Text
-#, fuzzy
 msgid  "Lines Only"
 msgstr "केवळ रेषा"
 
 #: source/controller/dialogs/Strings_ChartTypes.src#STR_LINES_3D.String.Text
-#, fuzzy
 msgid  "3D Lines"
 msgstr "3D रेषा"
 
 #: source/controller/dialogs/Strings_ChartTypes.src#STR_TYPE_COMBI_COLUMN_LINE.String.Text
-#, fuzzy
 msgid  "Column and Line"
 msgstr "स्तंभ आणि ओळी"
 
 #: source/controller/dialogs/Strings_ChartTypes.src#STR_LINE_COLUMN.String.Text
-#, fuzzy
 msgid  "Columns and Lines"
 msgstr "स्तंभ आणि ओळी"
 
 #: source/controller/dialogs/Strings_ChartTypes.src#STR_LINE_STACKEDCOLUMN.String.Text
-#, fuzzy
 msgid  "Stacked Columns and Lines"
 msgstr "स्टॅक्ड् स्तंभ आणि ओळी"
 
 #: source/controller/dialogs/Strings_ChartTypes.src#STR_TYPE_NET.String.Text
-#, fuzzy
 msgid  "Net"
 msgstr "निव्वळ"
 
 #: source/controller/dialogs/Strings_ChartTypes.src#STR_TYPE_STOCK.String.Text
-#, fuzzy
 msgid  "Stock"
 msgstr "साठा"
 
 #: source/controller/dialogs/Strings_ChartTypes.src#STR_STOCK_1.String.Text
-#, fuzzy
 msgid  "Stock Chart 1"
 msgstr "स्टॉक कोष्टक 1"
 
 #: source/controller/dialogs/Strings_ChartTypes.src#STR_STOCK_2.String.Text
-#, fuzzy
 msgid  "Stock Chart 2"
 msgstr "स्टॉक कोष्टक 2"
 
 #: source/controller/dialogs/Strings_ChartTypes.src#STR_STOCK_3.String.Text
-#, fuzzy
 msgid  "Stock Chart 3"
 msgstr "स्टॉक कोष्टक 3"
 
 #: source/controller/dialogs/Strings_ChartTypes.src#STR_STOCK_4.String.Text
-#, fuzzy
 msgid  "Stock Chart 4"
 msgstr "स्टॉक कोष्टक 4"
 
 #: source/controller/dialogs/Strings_ChartTypes.src#STR_NORMAL.String.Text
-#, fuzzy
 msgid  "Normal"
 msgstr "सामान्य"
 
 #: source/controller/dialogs/Strings_ChartTypes.src#STR_STACKED.String.Text
-#, fuzzy
 msgid  "Stacked"
 msgstr "स्टॅकड्"
 
 #: source/controller/dialogs/Strings_ChartTypes.src#STR_PERCENT.String.Text
-#, fuzzy
 msgid  "Percent Stacked"
 msgstr "टक्केवारी"
 
 #: source/controller/dialogs/Strings_ChartTypes.src#STR_DEEP.String.Text
-#, fuzzy
 msgid  "Deep"
 msgstr "खोल"
 
 #: source/controller/dialogs/Strings_ChartTypes.src#STR_FILLED.String.Text
-#, fuzzy
 msgid  "Filled"
 msgstr "भरलेले"
 
 #: source/controller/dialogs/Strings_ChartTypes.src#STR_TYPE_BUBBLE.String.Text
-#, fuzzy
 msgid  "Bubble"
 msgstr "बुडबुडा"
 
 #: source/controller/dialogs/Strings_ChartTypes.src#STR_BUBBLE_1.String.Text
-#, fuzzy
 msgid  "Bubble Chart"
 msgstr "बबल कोष्टक"
 
 #: source/controller/dialogs/dlg_ShapeFont.src#DLG_SHAPE_FONT.TabDialog.Text
-#, fuzzy
 msgid  "Character"
 msgstr "अक्षर"
 
 #: source/controller/dialogs/dlg_ShapeFont.src#DLG_SHAPE_FONT.1.RID_SVXPAGE_CHAR_NAME.PageItem.Text
-#, fuzzy
 msgid  "Font"
 msgstr "फॉन्ट"
 
 #: source/controller/dialogs/dlg_ShapeFont.src#DLG_SHAPE_FONT.1.RID_SVXPAGE_CHAR_EFFECTS.PageItem.Text
-#, fuzzy
 msgid  "Font Effects"
 msgstr "फॉन्ट प्रभाव"
 
 #: source/controller/dialogs/dlg_ShapeFont.src#DLG_SHAPE_FONT.1.RID_SVXPAGE_CHAR_POSITION.PageItem.Text
-#, fuzzy
 msgid  "Font Position"
 msgstr "फॉन्टचे स्थान"
 
 #: source/controller/dialogs/dlg_View3D.src#DLG_3D_VIEW.TabDialog.Text
-#, fuzzy
 msgid  "3D View"
 msgstr "त्रिमितीय दृश्य "
 
 #: source/controller/dialogs/Strings_Scale.src#STR_INVALID_NUMBER.String.Text
-#, fuzzy
 msgid  "Numbers are required. Check your input."
 msgstr "संख्येची आवश्यकता आहे.  आपले आत घातलेले तपासा."
 
 #: source/controller/dialogs/Strings_Scale.src#STR_STEP_GT_ZERO.String.Text
-#, fuzzy
 msgid  "The major interval requires a positive number. Check your input."
 msgstr "मुख्य कालावधीला धन संख्येची आवश्यकता आहे. आपली आत घातलेली संख्या तपासा."
 
 #: source/controller/dialogs/Strings_Scale.src#STR_BAD_LOGARITHM.String.Text
-#, fuzzy
 msgid  "The logarithmic scale requires positive numbers. Check your input."
 msgstr "लघुगणक प्रमाणास धन संख्येची आवश्यकता. आपण घातलेली संख्या तपासा."
 
 #: source/controller/dialogs/Strings_Scale.src#STR_MIN_GREATER_MAX.String.Text
 msgid  "The minimum must be lower than the maximum. Check your input."
-msgstr ""
+msgstr "किमान मूल्य कमाल मूल्यापेक्षा कमी असलेच पाहिजे.  आपण घातलेली संख्या तपासा."
 
 #: source/controller/dialogs/Strings_Scale.src#STR_INVALID_INTERVALS.String.Text
 msgid  "The major interval needs to be greater than the minor interval. Check your input."
@@ -334,42 +280,34 @@ msgid  "The major and minor interval need to be greater or equal to the resoluti
 msgstr ""
 
 #: source/controller/dialogs/dlg_DataEditor.src#DLG_DIAGRAM_DATA.ModalDialog.Text
-#, fuzzy
 msgid  "Data Table"
 msgstr "डाटा कोष्टक"
 
 #: source/controller/dialogs/dlg_DataEditor.src#DLG_DIAGRAM_DATA.TBX_DATA.TBI_DATA_INSERT_ROW.ToolBoxItem.Text
-#, fuzzy
 msgid  "Insert Row"
 msgstr "पंक्ति अंतर्भूत करा"
 
 #: source/controller/dialogs/dlg_DataEditor.src#DLG_DIAGRAM_DATA.TBX_DATA.TBI_DATA_INSERT_COL.ToolBoxItem.Text
-#, fuzzy
 msgid  "Insert Series"
 msgstr "श्रृंखला अंतर्भूत करा"
 
 #: source/controller/dialogs/dlg_DataEditor.src#DLG_DIAGRAM_DATA.TBX_DATA.TBI_DATA_INSERT_TEXT_COL.ToolBoxItem.Text
-#, fuzzy
 msgid  "Insert Text Column"
 msgstr "मजकूर स्तंभ अंतर्भूत करा"
 
 #: source/controller/dialogs/dlg_DataEditor.src#DLG_DIAGRAM_DATA.TBX_DATA.TBI_DATA_DELETE_ROW.ToolBoxItem.Text
-#, fuzzy
 msgid  "Delete Row"
 msgstr "पंक्ति काढून टाका"
 
 #: source/controller/dialogs/dlg_DataEditor.src#DLG_DIAGRAM_DATA.TBX_DATA.TBI_DATA_DELETE_COL.ToolBoxItem.Text
-#, fuzzy
 msgid  "Delete Series"
 msgstr "श्रृंखला काढून टाका"
 
 #: source/controller/dialogs/dlg_DataEditor.src#DLG_DIAGRAM_DATA.TBX_DATA.TBI_DATA_SWAP_COL.ToolBoxItem.Text
-#, fuzzy
 msgid  "Move Series Right"
 msgstr "उजवीकडे श्रृंखला हलवा"
 
 #: source/controller/dialogs/dlg_DataEditor.src#DLG_DIAGRAM_DATA.TBX_DATA.TBI_DATA_SWAP_ROW.ToolBoxItem.Text
-#, fuzzy
 msgid  "Move Row Down"
 msgstr "खाली पंक्ति हलवा"
 
@@ -553,12 +491,10 @@ msgid  "Include ~values from hidden cells"
 msgstr "लपवलेल्या कप्प्यातून मूल्ये समावेश करा (~v)"
 
 #: source/controller/dialogs/tp_3D_SceneIllumination.src#TP_3D_SCENEILLUMINATION.FT_LIGHTSOURCE.FixedText.Text
-#, fuzzy
 msgid  "~Light source"
 msgstr "हलका स्त्रोत (~L)"
 
 #: source/controller/dialogs/tp_3D_SceneIllumination.src#TP_3D_SCENEILLUMINATION.FT_AMBIENTLIGHT.FixedText.Text
-#, fuzzy
 msgid  "~Ambient light"
 msgstr "एम्बिएन्ट प्रकाश (~A)"
 
@@ -567,22 +503,18 @@ msgid  "Light Preview"
 msgstr ""
 
 #: source/controller/dialogs/Strings_Statistic.src#STR_INDICATE_BOTH.String.Text
-#, fuzzy
 msgid  "Negative and Positive"
 msgstr "ऋण आणि धन"
 
 #: source/controller/dialogs/Strings_Statistic.src#STR_INDICATE_DOWN.String.Text
-#, fuzzy
 msgid  "Negative"
 msgstr "ऋण"
 
 #: source/controller/dialogs/Strings_Statistic.src#STR_INDICATE_UP.String.Text
-#, fuzzy
 msgid  "Positive"
 msgstr "धन"
 
 #: source/controller/dialogs/Strings_Statistic.src#STR_CONTROLTEXT_ERROR_BARS_FROM_DATA.String.Text
-#, fuzzy
 msgid  "From Data Table"
 msgstr "कोष्टक डाटा पासून"
 
@@ -747,7 +679,6 @@ msgid  "F~irst column as label"
 msgstr "लेबलप्रमाणे पहिला स्तंभ (~i)"
 
 #: source/controller/dialogs/tp_AxisLabel.src#TP_AXIS_LABEL.CB_AXIS_LABEL_SCHOW_DESCR.CheckBox.Text
-#, fuzzy
 msgid  "Sho~w labels"
 msgstr "लेबल दाखवा (~w)"
 
@@ -812,77 +743,62 @@ msgid  "Te~xt direction"
 msgstr "मजकूर दिशा (~x)"
 
 #: source/controller/dialogs/res_TextSeparator.src#LB_TEXT_SEPARATOR.item1.StringList.item
-#, fuzzy
 msgid  "Space"
 msgstr "अंतर"
 
 #: source/controller/dialogs/res_TextSeparator.src#LB_TEXT_SEPARATOR.item2.StringList.item
-#, fuzzy
 msgid  "Comma"
 msgstr "स्वल्पविराम"
 
 #: source/controller/dialogs/res_TextSeparator.src#LB_TEXT_SEPARATOR.item3.StringList.item
-#, fuzzy
 msgid  "Semicolon"
 msgstr "अर्धविराम"
 
 #: source/controller/dialogs/res_TextSeparator.src#LB_TEXT_SEPARATOR.item4.StringList.item
-#, fuzzy
 msgid  "New line"
 msgstr "नवीन ओळ"
 
 #: source/controller/dialogs/tp_3D_SceneAppearance.src#TP_3D_SCENEAPPEARANCE.FT_SCHEME.FixedText.Text
-#, fuzzy
 msgid  "Sche~me"
 msgstr "योजना (~m)"
 
 #: source/controller/dialogs/tp_3D_SceneAppearance.src#TP_3D_SCENEAPPEARANCE.CB_SHADING.CheckBox.Text
-#, fuzzy
 msgid  "~Shading"
 msgstr "छटा वापरा (~S)"
 
 #: source/controller/dialogs/tp_3D_SceneAppearance.src#TP_3D_SCENEAPPEARANCE.CB_OBJECTLINES.CheckBox.Text
-#, fuzzy
 msgid  "~Object borders"
 msgstr "वस्तूची सीमा (~O)"
 
 #: source/controller/dialogs/tp_3D_SceneAppearance.src#TP_3D_SCENEAPPEARANCE.CB_ROUNDEDEDGE.Checkbox.Text
-#, fuzzy
 msgid  "~Rounded edges"
 msgstr "गोलाकार कडा (~R)"
 
 #: source/controller/dialogs/dlg_InsertAxis_Grid.src#DLG_AXIS_OR_GRID.FL_PRIMARY_AXIS.FixedLine.Text
-#, fuzzy
 msgid  "Axes"
 msgstr "अक्ष"
 
 #: source/controller/dialogs/dlg_InsertAxis_Grid.src#DLG_AXIS_OR_GRID.FL_PRIMARY_GRID.FixedLine.Text
-#, fuzzy
 msgid  "Major grids"
 msgstr "मुख्य ग्रिडस"
 
 #: source/controller/dialogs/dlg_InsertAxis_Grid.src#DLG_AXIS_OR_GRID.CB_X_PRIMARY.CheckBox.Text
-#, fuzzy
 msgid  "~X axis"
 msgstr "X अक्ष (~X)"
 
 #: source/controller/dialogs/dlg_InsertAxis_Grid.src#DLG_AXIS_OR_GRID.CB_Y_PRIMARY.CheckBox.Text
-#, fuzzy
 msgid  "~Y axis"
 msgstr "Y अक्ष (~Y)"
 
 #: source/controller/dialogs/dlg_InsertAxis_Grid.src#DLG_AXIS_OR_GRID.CB_Z_PRIMARY.CheckBox.Text
-#, fuzzy
 msgid  "~Z axis"
 msgstr "Z अक्ष (~Z)"
 
 #: source/controller/dialogs/dlg_InsertAxis_Grid.src#DLG_AXIS_OR_GRID.FL_SECONDARY_AXIS.FixedLine.Text
-#, fuzzy
 msgid  "Secondary axes"
 msgstr "दुय्यम अक्ष"
 
 #: source/controller/dialogs/dlg_InsertAxis_Grid.src#DLG_AXIS_OR_GRID.FL_SECONDARY_GRID.FixedLine.Text
-#, fuzzy
 msgid  "Minor grids"
 msgstr "गौण ग्रिडस"
 
@@ -922,102 +838,82 @@ msgid  "Te~xt direction"
 msgstr "मजकूर दिशा (~x)"
 
 #: source/controller/dialogs/dlg_ShapeParagraph.src#DLG_SHAPE_PARAGRAPH.TabDialog.Text
-#, fuzzy
 msgid  "Paragraph"
 msgstr "परिच्छेद"
 
 #: source/controller/dialogs/dlg_ShapeParagraph.src#DLG_SHAPE_PARAGRAPH.1.RID_SVXPAGE_STD_PARAGRAPH.PageItem.Text
-#, fuzzy
 msgid  "Indents & Spacing"
 msgstr "इंडेंटस् व अंतर"
 
 #: source/controller/dialogs/dlg_ShapeParagraph.src#DLG_SHAPE_PARAGRAPH.1.RID_SVXPAGE_ALIGN_PARAGRAPH.PageItem.Text
-#, fuzzy
 msgid  "Alignment"
 msgstr "संरेषन"
 
 #: source/controller/dialogs/dlg_ShapeParagraph.src#DLG_SHAPE_PARAGRAPH.1.RID_SVXPAGE_PARA_ASIAN.PageItem.Text
-#, fuzzy
 msgid  "Asian Typography"
 msgstr "एशीयाई टंकलेखन"
 
 #: source/controller/dialogs/dlg_ShapeParagraph.src#DLG_SHAPE_PARAGRAPH.1.RID_SVXPAGE_TABULATOR.PageItem.Text
-#, fuzzy
 msgid  "Tab"
 msgstr "टॅब"
 
 #: source/controller/dialogs/Strings.src#STR_DLG_CHART_WIZARD.String.Text
-#, fuzzy
 msgid  "Chart Wizard"
 msgstr "कोष्टक सहाय्यक"
 
 #: source/controller/dialogs/Strings.src#STR_DLG_SMOOTH_LINE_PROPERTIES.String.Text
-#, fuzzy
 msgid  "Smooth Lines"
 msgstr "स्मुथ रेषा"
 
 #: source/controller/dialogs/Strings.src#STR_DLG_NUMBERFORMAT_FOR_PERCENTAGE_VALUE.String.Text
-#, fuzzy
 msgid  "Number Format for Percentage Value"
 msgstr "टक्केवारी मूल्यासाठी संख्येचे स्वरूप"
 
 #: source/controller/dialogs/Strings.src#STR_PAGE_CHARTTYPE.String.Text
-#, fuzzy
 msgid  "Chart Type"
 msgstr "कोष्टक प्रकार"
 
 #: source/controller/dialogs/Strings.src#STR_PAGE_DATA_RANGE.String.Text
-#, fuzzy
 msgid  "Data Range"
 msgstr "डाटा व्याप्ती"
 
 #: source/controller/dialogs/Strings.src#STR_PAGE_CHART_ELEMENTS.String.Text
-#, fuzzy
 msgid  "Chart Elements"
 msgstr "कोष्टक घटक"
 
 #: source/controller/dialogs/Strings.src#STR_PAGE_CHART_LOCATION.String.Text
-#, fuzzy
 msgid  "Chart Location"
 msgstr "कोष्टक स्थान"
 
 #: source/controller/dialogs/Strings.src#STR_PAGE_LINE.String.Text
-#, fuzzy
 msgid  "Line"
 msgstr "रेघ"
 
 #: source/controller/dialogs/Strings.src#STR_PAGE_BORDER.String.Text
-#, fuzzy
 msgid  "Borders"
 msgstr "सीमारेखा"
 
 #: source/controller/dialogs/Strings.src#STR_PAGE_AREA.String.Text
-#, fuzzy
 msgid  "Area"
 msgstr "क्षेत्र"
 
 #: source/controller/dialogs/Strings.src#STR_PAGE_TRANSPARENCY.String.Text
-#, fuzzy
 msgid  "Transparency"
 msgstr "पारदर्शकता"
 
 #: source/controller/dialogs/Strings.src#STR_PAGE_FONT.String.Text
-#, fuzzy
 msgid  "Font"
 msgstr "फॉन्ट"
 
 #: source/controller/dialogs/Strings.src#STR_PAGE_FONT_EFFECTS.String.Text
-#, fuzzy
 msgid  "Font Effects"
 msgstr "फॉन्ट प्रभाव"
 
 #: source/controller/dialogs/Strings.src#STR_PAGE_NUMBERS.String.Text
-#, fuzzy
 msgid  "Numbers"
 msgstr "संख्या/क्रमांक"
 
 #: source/controller/dialogs/Strings.src#STR_PAGE_POSITION.String.Text
-#, fuzzy
 msgid  "Position"
 msgstr "स्थिती"
 
@@ -1030,389 +926,314 @@ msgid  "Down"
 msgstr ""
 
 #: source/controller/dialogs/Strings.src#STR_PAGE_LAYOUT.String.Text
-#, fuzzy
 msgid  "Layout"
 msgstr "मांडणी"
 
 #: source/controller/dialogs/Strings.src#STR_PAGE_OPTIONS.String.Text
-#, fuzzy
 msgid  "Options"
 msgstr "पर्याय"
 
 #: source/controller/dialogs/Strings.src#STR_PAGE_SCALE.String.Text
-#, fuzzy
 msgid  "Scale"
 msgstr "मोजमाप"
 
 #: source/controller/dialogs/Strings.src#STR_PAGE_POSITIONING.String.Text
-#, fuzzy
 msgid  "Positioning"
 msgstr "स्थित"
 
 #: source/controller/dialogs/Strings.src#STR_PAGE_TRENDLINE_TYPE.String.Text
-#, fuzzy
 msgid  "Type"
 msgstr "प्रकार"
 
 #: source/controller/dialogs/Strings.src#STR_PAGE_YERROR_BARS.String.Text
-#, fuzzy
 msgid  "Y Error Bars"
 msgstr "Y दोष पट्टी"
 
 #: source/controller/dialogs/Strings.src#STR_PAGE_ALIGNMENT.String.Text
-#, fuzzy
 msgid  "Alignment"
 msgstr "संरेषन"
 
 #: source/controller/dialogs/Strings.src#STR_PAGE_PERSPECTIVE.String.Text
-#, fuzzy
 msgid  "Perspective"
 msgstr "दृष्टीकोन"
 
 #: source/controller/dialogs/Strings.src#STR_PAGE_APPEARANCE.String.Text
-#, fuzzy
 msgid  "Appearance"
 msgstr "स्वरूप"
 
 #: source/controller/dialogs/Strings.src#STR_PAGE_ILLUMINATION.String.Text
-#, fuzzy
 msgid  "Illumination"
 msgstr "चमक"
 
 #: source/controller/dialogs/Strings.src#STR_PAGE_ASIAN.String.Text
-#, fuzzy
 msgid  "Asian Typography"
 msgstr "एशीयाई टंकलेखन"
 
 #: source/controller/dialogs/Strings.src#STR_OBJECT_AVERAGE_LINE_WITH_PARAMETERS.String.Text
 msgid  "Mean value line with value %AVERAGE_VALUE and standard deviation %STD_DEVIATION"
-msgstr ""
+msgstr "%AVERAGE_VALUE मूल्यांसह सरासरीची ओळ आणि ठराविक विचलन %STD_DEVIATION"
 
 #: source/controller/dialogs/Strings.src#STR_OBJECT_AXIS.String.Text
-#, fuzzy
 msgid  "Axis"
 msgstr "अक्ष"
 
 #: source/controller/dialogs/Strings.src#STR_OBJECT_AXIS_X.String.Text
-#, fuzzy
 msgid  "X Axis"
 msgstr "X अक्ष"
 
 #: source/controller/dialogs/Strings.src#STR_OBJECT_AXIS_Y.String.Text
-#, fuzzy
 msgid  "Y Axis"
 msgstr "Y अक्ष"
 
 #: source/controller/dialogs/Strings.src#STR_OBJECT_AXIS_Z.String.Text
-#, fuzzy
 msgid  "Z Axis"
 msgstr "Z अक्ष"
 
 #: source/controller/dialogs/Strings.src#STR_OBJECT_SECONDARY_X_AXIS.String.Text
-#, fuzzy
 msgid  "Secondary X Axis"
 msgstr "दुय्यम X अक्ष"
 
 #: source/controller/dialogs/Strings.src#STR_OBJECT_SECONDARY_Y_AXIS.String.Text
-#, fuzzy
 msgid  "Secondary Y Axis"
 msgstr "दुय्यम Y अक्ष"
 
 #: source/controller/dialogs/Strings.src#STR_OBJECT_AXES.String.Text
-#, fuzzy
 msgid  "Axes"
 msgstr "अक्ष"
 
 #: source/controller/dialogs/Strings.src#STR_OBJECT_GRIDS.String.Text
-#, fuzzy
 msgid  "Grids"
 msgstr "ग्रिड्स्"
 
 #: source/controller/dialogs/Strings.src#STR_OBJECT_GRID.String.Text
-#, fuzzy
 msgid  "Grid"
 msgstr "ग्रिड"
 
 #: source/controller/dialogs/Strings.src#STR_OBJECT_GRID_MAJOR_X.String.Text
-#, fuzzy
 msgid  "X Axis Major Grid"
 msgstr "X अक्षाचे मुख्य ग्रिड"
 
 #: source/controller/dialogs/Strings.src#STR_OBJECT_GRID_MAJOR_Y.String.Text
-#, fuzzy
 msgid  "Y Axis Major Grid"
 msgstr "Y अक्षाचे मुख्य ग्रिड"
 
 #: source/controller/dialogs/Strings.src#STR_OBJECT_GRID_MAJOR_Z.String.Text
-#, fuzzy
 msgid  "Z Axis Major Grid"
 msgstr "Z अक्षाचे मुख्य ग्रिड"
 
 #: source/controller/dialogs/Strings.src#STR_OBJECT_GRID_MINOR_X.String.Text
-#, fuzzy
 msgid  "X Axis Minor Grid"
 msgstr "X अक्षाचे गौण ग्रिड"
 
 #: source/controller/dialogs/Strings.src#STR_OBJECT_GRID_MINOR_Y.String.Text
-#, fuzzy
 msgid  "Y Axis Minor Grid"
 msgstr "Y अक्षाचे गौण ग्रिड"
 
 #: source/controller/dialogs/Strings.src#STR_OBJECT_GRID_MINOR_Z.String.Text
-#, fuzzy
 msgid  "Z Axis Minor Grid"
 msgstr "Z अक्षाचे गौण ग्रिड"
 
 #: source/controller/dialogs/Strings.src#STR_OBJECT_LEGEND.String.Text
-#, fuzzy
 msgid  "Legend"
 msgstr "लेजेंड"
 
 #: source/controller/dialogs/Strings.src#STR_OBJECT_TITLE.String.Text
-#, fuzzy
 msgid  "Title"
 msgstr "शीर्षक"
 
 #: source/controller/dialogs/Strings.src#STR_OBJECT_TITLES.String.Text
-#, fuzzy
 msgid  "Titles"
 msgstr "शीर्षक"
 
 #: source/controller/dialogs/Strings.src#STR_OBJECT_TITLE_MAIN.String.Text
-#, fuzzy
 msgid  "Main Title"
 msgstr " मुख्य शीर्षक"
 
 #: source/controller/dialogs/Strings.src#STR_OBJECT_TITLE_SUB.String.Text
-#, fuzzy
 msgid  "Subtitle"
 msgstr " उपशीर्षक"
 
 #: source/controller/dialogs/Strings.src#STR_OBJECT_TITLE_X_AXIS.String.Text
-#, fuzzy
 msgid  "X Axis Title"
 msgstr "X अक्षाचे शीर्षक"
 
 #: source/controller/dialogs/Strings.src#STR_OBJECT_TITLE_Y_AXIS.String.Text
-#, fuzzy
 msgid  "Y Axis Title"
 msgstr "Y  अक्षाचे शीर्षक"
 
 #: source/controller/dialogs/Strings.src#STR_OBJECT_TITLE_Z_AXIS.String.Text
-#, fuzzy
 msgid  "Z Axis Title"
 msgstr "Z  अक्षाचे शीर्षक"
 
 #: source/controller/dialogs/Strings.src#STR_OBJECT_TITLE_SECONDARY_X_AXIS.String.Text
-#, fuzzy
 msgid  "Secondary X Axis Title"
 msgstr "दुय्यम X अक्षाचे शीर्षक"
 
 #: source/controller/dialogs/Strings.src#STR_OBJECT_TITLE_SECONDARY_Y_AXIS.String.Text
-#, fuzzy
 msgid  "Secondary Y Axis Title"
 msgstr "दुय्यम Y अक्षाचे शीर्षक"
 
 #: source/controller/dialogs/Strings.src#STR_OBJECT_LABEL.String.Text
-#, fuzzy
 msgid  "Label"
 msgstr "लेबल"
 
 #: source/controller/dialogs/Strings.src#STR_OBJECT_DATALABELS.String.Text
-#, fuzzy
 msgid  "Data Labels"
 msgstr "डाटा लेबल"
 
 #: source/controller/dialogs/Strings.src#STR_OBJECT_DATAPOINT.String.Text
-#, fuzzy
 msgid  "Data Point"
 msgstr "डाटा बिंदू"
 
 #: source/controller/dialogs/Strings.src#STR_OBJECT_DATAPOINTS.String.Text
-#, fuzzy
 msgid  "Data Points"
 msgstr "डाटा बिंदू"
 
 #: source/controller/dialogs/Strings.src#STR_OBJECT_LEGEND_SYMBOL.String.Text
-#, fuzzy
 msgid  "Legend Key"
 msgstr "लेजेंड कि"
 
 #: source/controller/dialogs/Strings.src#STR_OBJECT_DATASERIES.String.Text
-#, fuzzy
 msgid  "Data Series"
 msgstr "डाटा श्रृंखला"
 
 #: source/controller/dialogs/Strings.src#STR_OBJECT_DATASERIES_PLURAL.String.Text
-#, fuzzy
 msgid  "Data Series"
 msgstr "डाटा श्रृंखला"
 
 #: source/controller/dialogs/Strings.src#STR_OBJECT_CURVE.String.Text
-#, fuzzy
 msgid  "Trend Line"
 msgstr "ट्रेन्ड ओळ"
 
 #: source/controller/dialogs/Strings.src#STR_OBJECT_CURVES.String.Text
-#, fuzzy
 msgid  "Trend Lines"
 msgstr "ट्रेंड  ओळी"
 
 #: source/controller/dialogs/Strings.src#STR_OBJECT_CURVE_WITH_PARAMETERS.String.Text
-#, fuzzy
 msgid  "Trend line %FORMULA with accuracy R² = %RSQUARED"
 msgstr "अचूक R² = %RSQUARED सह ट्रेन्ड ओळ %FORMULA"
 
 #: source/controller/dialogs/Strings.src#STR_OBJECT_AVERAGE_LINE.String.Text
-#, fuzzy
 msgid  "Mean Value Line"
 msgstr "सरासरीची ओळ"
 
 #: source/controller/dialogs/Strings.src#STR_OBJECT_CURVE_EQUATION.String.Text
-#, fuzzy
 msgid  "Equation"
 msgstr "समीकरण"
 
 #: source/controller/dialogs/Strings.src#STR_OBJECT_ERROR_BARS.String.Text
-#, fuzzy
 msgid  "Error Bars"
 msgstr "त्रुटी पट्ट्या"
 
 #: source/controller/dialogs/Strings.src#STR_OBJECT_STOCK_LOSS.String.Text
-#, fuzzy
 msgid  "Stock Loss"
 msgstr "स्टॉक तोटा"
 
 #: source/controller/dialogs/Strings.src#STR_OBJECT_STOCK_GAIN.String.Text
-#, fuzzy
 msgid  "Stock Gain"
 msgstr "स्टॉक नफा"
 
 #: source/controller/dialogs/Strings.src#STR_OBJECT_PAGE.String.Text
-#, fuzzy
 msgid  "Chart Area"
 msgstr "कोष्टक क्षेत्र"
 
 #: source/controller/dialogs/Strings.src#STR_OBJECT_DIAGRAM.String.Text
-#, fuzzy
 msgid  "Chart"
 msgstr "कोष्टक"
 
 #: source/controller/dialogs/Strings.src#STR_OBJECT_DIAGRAM_WALL.String.Text
-#, fuzzy
 msgid  "Chart Wall"
 msgstr "कोष्टक भिंत"
 
 #: source/controller/dialogs/Strings.src#STR_OBJECT_DIAGRAM_FLOOR.String.Text
-#, fuzzy
 msgid  "Chart Floor"
 msgstr "कोष्टक फ्लोअर"
 
 #: source/controller/dialogs/Strings.src#STR_OBJECT_SHAPE.String.Text
-#, fuzzy
 msgid  "Drawing Object"
 msgstr "रेखांकन वस्तु"
 
 #: source/controller/dialogs/Strings.src#STR_TIP_SELECT_RANGE.String.Text
-#, fuzzy
 msgid  "Select data range"
 msgstr "डाटाची व्याप्ती नीवडा"
 
 #: source/controller/dialogs/Strings.src#STR_TIP_CHOOSECOLOR.String.Text
-#, fuzzy
 msgid  "Select a color using the color dialog"
 msgstr "रंग संवाद वापरून रंग नीवडा"
 
 #: source/controller/dialogs/Strings.src#STR_TIP_LIGHTSOURCE_X.String.Text
-#, fuzzy
 msgid  "Light Source %LIGHTNUMBER"
 msgstr "हलका स्त्रोत %LIGHTNUMBER"
 
 #: source/controller/dialogs/Strings.src#STR_TIP_DATASERIES.String.Text
-#, fuzzy
 msgid  "Data Series '%SERIESNAME'"
 msgstr "डाटा श्रृंखला '%SERIESNAME'"
 
 #: source/controller/dialogs/Strings.src#STR_TIP_DATAPOINT_INDEX.String.Text
-#, fuzzy
 msgid  "Data Point %POINTNUMBER"
 msgstr "डाटा बिंदू %POINTNUMBER"
 
 #: source/controller/dialogs/Strings.src#STR_TIP_DATAPOINT_VALUES.String.Text
-#, fuzzy
 msgid  "Values: %POINTVALUES"
 msgstr "मूल्ये: %POINTVALUES"
 
 #: source/controller/dialogs/Strings.src#STR_TIP_DATAPOINT.String.Text
 msgid  "Data Point %POINTNUMBER, data series %SERIESNUMBER, values: %POINTVALUES"
-msgstr ""
+msgstr "डाटा बिंदू %POINTNUMBER, डाटा श्रृंखला %SERIESNUMBER, मूल्ये : %POINTVALUES"
 
 #: source/controller/dialogs/Strings.src#STR_STATUS_DATAPOINT_MARKED.String.Text
 msgid  "Data point %POINTNUMBER in data series %SERIESNUMBER selected, values: %POINTVALUES"
-msgstr ""
+msgstr "डाटा श्रृंखलेतील डाटा बिंदू %POINTNUMBER निवडलेला SERIESNUMBER, मूल्ये : %POINTVALUES"
 
 #: source/controller/dialogs/Strings.src#STR_STATUS_OBJECT_MARKED.String.Text
-#, fuzzy
 msgid  "%OBJECTNAME selected"
 msgstr "%OBJECTNAME निवडले"
 
 #: source/controller/dialogs/Strings.src#STR_STATUS_PIE_SEGMENT_EXPLODED.String.Text
-#, fuzzy
 msgid  "Pie exploded by %PERCENTVALUE percent"
 msgstr "%PERCENTVALUE ने पायला एक्सप्लोड केले"
 
 #: source/controller/dialogs/Strings.src#STR_OBJECT_FOR_SERIES.String.Text
-#, fuzzy
 msgid  "%OBJECTNAME for Data Series '%SERIESNAME'"
 msgstr "डाटा श्रृंखला '%SERIESNAME' करीता %OBJECTNAME"
 
 #: source/controller/dialogs/Strings.src#STR_OBJECT_FOR_ALL_SERIES.String.Text
-#, fuzzy
 msgid  "%OBJECTNAME for all Data Series"
 msgstr "सर्व डाटा स्रोत करीता %OBJECTNAME"
 
 #: source/controller/dialogs/Strings.src#STR_ACTION_EDIT_CHARTTYPE.String.Text
-#, fuzzy
 msgid  "Edit chart type"
 msgstr "कोष्टक प्रकार संपादीत करा"
 
 #: source/controller/dialogs/Strings.src#STR_ACTION_EDIT_DATA_RANGES.String.Text
-#, fuzzy
 msgid  "Edit data ranges"
 msgstr "डाटा व्याप्ती संपादीत करा"
 
 #: source/controller/dialogs/Strings.src#STR_ACTION_EDIT_3D_VIEW.String.Text
-#, fuzzy
 msgid  "Edit 3D view"
 msgstr "3D दृष्य संपादीत करा"
 
 #: source/controller/dialogs/Strings.src#STR_ACTION_EDIT_CHART_DATA.String.Text
-#, fuzzy
 msgid  "Edit chart data"
 msgstr "कोष्टक डाटास संपादीत करा"
 
 #: source/controller/dialogs/Strings.src#STR_ACTION_TOGGLE_LEGEND.String.Text
-#, fuzzy
 msgid  "Legend on/off"
 msgstr "लेजेंड चालू/बंद"
 
 #: source/controller/dialogs/Strings.src#STR_ACTION_TOGGLE_GRID_HORZ.String.Text
-#, fuzzy
 msgid  "Horizontal grid on/off"
 msgstr "आडवे ग्रिड चालू/बंद"
 
 #: source/controller/dialogs/Strings.src#STR_ACTION_SCALE_TEXT.String.Text
-#, fuzzy
 msgid  "Scale Text"
 msgstr "मजकूर प्रमाणबद्ध करा"
 
 #: source/controller/dialogs/Strings.src#STR_ACTION_REARRANGE_CHART.String.Text
-#, fuzzy
 msgid  "Automatic Layout"
 msgstr "स्वयंचलित मांडणी"
 
 #: source/controller/dialogs/Strings.src#STR_ACTION_NOTPOSSIBLE.String.Text
-#, fuzzy
 msgid  "This function cannot be completed with the selected objects."
 msgstr "निवडलेल्या वस्तूंबरोबर हे कार्य पूर्ण होऊ शकत नाही."
 
@@ -1421,141 +1242,114 @@ msgid  "Edit text"
 msgstr ""
 
 #: source/controller/dialogs/Strings.src#STR_COLUMN_LABEL.String.Text
-#, fuzzy
 msgid  "Column %COLUMNNUMBER"
 msgstr "स्तंभ%COLUMNNUMBER"
 
 #: source/controller/dialogs/Strings.src#STR_ROW_LABEL.String.Text
-#, fuzzy
 msgid  "Row %ROWNUMBER"
 msgstr "पंक्ति %ROWNUMBER"
 
 #: source/controller/dialogs/Strings.src#STR_DATA_ROLE_LABEL.String.Text
-#, fuzzy
 msgid  "Name"
 msgstr "नाव"
 
 #: source/controller/dialogs/Strings.src#STR_DATA_ROLE_X.String.Text
-#, fuzzy
 msgid  "X-Values"
 msgstr "X-मूल्ये"
 
 #: source/controller/dialogs/Strings.src#STR_DATA_ROLE_Y.String.Text
-#, fuzzy
 msgid  "Y-Values"
 msgstr "Y-मूल्ये"
 
 #: source/controller/dialogs/Strings.src#STR_DATA_ROLE_SIZE.String.Text
-#, fuzzy
 msgid  "Bubble Sizes"
 msgstr "बुडबुड्यांचे आकार"
 
 #: source/controller/dialogs/Strings.src#STR_DATA_ROLE_X_ERROR.String.Text
-#, fuzzy
 msgid  "X-Error-Bars"
 msgstr "X-त्रुटी-पट्टया"
 
 #: source/controller/dialogs/Strings.src#STR_DATA_ROLE_X_ERROR_POSITIVE.String.Text
-#, fuzzy
 msgid  "Positive X-Error-Bars"
 msgstr "धन X-दोष-पट्ट्या"
 
 #: source/controller/dialogs/Strings.src#STR_DATA_ROLE_X_ERROR_NEGATIVE.String.Text
-#, fuzzy
 msgid  "Negative X-Error-Bars"
 msgstr "ऋण X-दोष-पट्ट्या"
 
 #: source/controller/dialogs/Strings.src#STR_DATA_ROLE_Y_ERROR.String.Text
-#, fuzzy
 msgid  "Y-Error-Bars"
 msgstr "Y-दोष-पट्ट्या"
 
 #: source/controller/dialogs/Strings.src#STR_DATA_ROLE_Y_ERROR_POSITIVE.String.Text
-#, fuzzy
 msgid  "Positive Y-Error-Bars"
 msgstr "धन Y-दोष-पट्ट्या"
 
 #: source/controller/dialogs/Strings.src#STR_DATA_ROLE_Y_ERROR_NEGATIVE.String.Text
-#, fuzzy
 msgid  "Negative Y-Error-Bars"
 msgstr "ऋण Y-दोष-पट्ट्या"
 
 #: source/controller/dialogs/Strings.src#STR_DATA_ROLE_FIRST.String.Text
-#, fuzzy
 msgid  "Open Values"
 msgstr "मूल्यांना उघडा"
 
 #: source/controller/dialogs/Strings.src#STR_DATA_ROLE_LAST.String.Text
-#, fuzzy
 msgid  "Close Values"
 msgstr "मूल्यांना बंद करा"
 
 #: source/controller/dialogs/Strings.src#STR_DATA_ROLE_MIN.String.Text
-#, fuzzy
 msgid  "Low Values"
 msgstr "न्युनत्तम मूल्ये"
 
 #: source/controller/dialogs/Strings.src#STR_DATA_ROLE_MAX.String.Text
-#, fuzzy
 msgid  "High Values"
 msgstr "उच्च मूल्ये"
 
 #: source/controller/dialogs/Strings.src#STR_DATA_ROLE_CATEGORIES.String.Text
-#, fuzzy
 msgid  "Categories"
 msgstr "वर्ग"
 
 #: source/controller/dialogs/Strings.src#STR_DATA_UNNAMED_SERIES.String.Text
-#, fuzzy
 msgid  "Unnamed Series"
 msgstr "नावरहित श्रृंखला"
 
 #: source/controller/dialogs/Strings.src#STR_DATA_UNNAMED_SERIES_WITH_INDEX.String.Text
-#, fuzzy
 msgid  "Unnamed Series %NUMBER"
 msgstr "नावरहित श्रृंखला %NUMBER"
 
 #: source/controller/dialogs/Strings.src#STR_DATA_SELECT_RANGE_FOR_SERIES.String.Text
-#, fuzzy
 msgid  "Select Range for %VALUETYPE of %SERIESNAME"
 msgstr "%SERIESNAME च्या %VALUETYPE साठी व्याप्ती नीवडा"
 
 #: source/controller/dialogs/Strings.src#STR_DATA_SELECT_RANGE_FOR_CATEGORIES.String.Text
-#, fuzzy
 msgid  "Select Range for Categories"
 msgstr "वर्गांसाठी व्याप्ती नीवडा"
 
 #: source/controller/dialogs/Strings.src#STR_DATA_SELECT_RANGE_FOR_DATALABELS.String.Text
-#, fuzzy
 msgid  "Select Range for data labels"
 msgstr "डाटा लेबलसाठी व्याप्ती नीवडा"
 
 #: source/controller/dialogs/Strings.src#STR_DATA_SELECT_RANGE_FOR_POSITIVE_ERRORBARS.String.Text
-#, fuzzy
 msgid  "Select Range for Positive Error Bars"
 msgstr "धन दोष पट्ट्यासाठी व्याप्ती नीवडा"
 
 #: source/controller/dialogs/Strings.src#STR_DATA_SELECT_RANGE_FOR_NEGATIVE_ERRORBARS.String.Text
-#, fuzzy
 msgid  "Select Range for Negative Error Bars"
 msgstr "ऋण दोष पट्ट्यासाठी व्याप्ती नीवडा"
 
 #: source/controller/dialogs/Strings.src#STR_DATA_EDITOR_INCORRECT_INPUT.String.Text
 msgid  "Your last input is incorrect.\nIgnore this change and close the dialog?"
-msgstr ""
+msgstr "आपला शेवटचे आत घातलेले चुकीचे आहे.\nहा बदल दुर्लक्षित करायचे  आणि संवादास बंद करायचे का?"
 
 #: source/controller/dialogs/Strings.src#STR_TEXT_DIRECTION_LTR.String.Text
-#, fuzzy
 msgid  "Left-to-right"
 msgstr "डावी-ते-उजवी"
 
 #: source/controller/dialogs/Strings.src#STR_TEXT_DIRECTION_RTL.String.Text
-#, fuzzy
 msgid  "Right-to-left"
 msgstr "उजवी-ते-डावी"
 
 #: source/controller/dialogs/Strings.src#STR_TEXT_DIRECTION_SUPER.String.Text
-#, fuzzy
 msgid  "Use superordinate object settings"
 msgstr "निबंधक वस्तु संयोजनाचे वापर करा"
 

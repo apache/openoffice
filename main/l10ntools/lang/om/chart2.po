@@ -41,6 +41,11 @@ msgstr "Mataduroota, waayoo fi qindaa'inoota tarsaa fili"
 msgid  "Display grids"
 msgstr "Tarsaalee agarsiisi"
 
+#: source/controller/dialogs/tp_3D_SceneGeometry.src#CUSTOMUNITTEXT_DEGREE.#define.CustomUnitText
+#, fuzzy
+msgid  " degrees"
+msgstr " digiroota"
+
 #: source/controller/dialogs/tp_3D_SceneGeometry.src#TP_3D_SCENEGEOMETRY.CBX_RIGHT_ANGLED_AXES.CheckBox.Text
 #, fuzzy
 msgid  "~Right-angled axes"
@@ -65,11 +70,6 @@ msgstr "Marsaa ~Z"
 #, fuzzy
 msgid  "~Perspective"
 msgstr "Yaadaan"
-
-#: source/controller/dialogs/tp_3D_SceneGeometry.src#CUSTOMUNITTEXT_DEGREE.#define.CustomUnitText
-#, fuzzy
-msgid  " degrees"
-msgstr " digiroota"
 
 #: source/controller/dialogs/Strings_AdditionalControls.src#STR_3DSCHEME_SIMPLE.String.Text
 #, fuzzy
@@ -132,7 +132,6 @@ msgid  "Pyramid"
 msgstr "Sadakara"
 
 #: source/controller/dialogs/dlg_DataSource.src#DLG_DATA_SOURCE.TabDialog.Text
-#, fuzzy
 msgid  "Data Ranges"
 msgstr "Hangii Deetaa"
 
@@ -308,12 +307,14 @@ msgid  "Numbers are required. Check your input."
 msgstr "Lakkoofsonni ni barbaacisu. Naqa kee mirkaneeffadhu."
 
 #: source/controller/dialogs/Strings_Scale.src#STR_STEP_GT_ZERO.String.Text
+#, fuzzy
 msgid  "The major interval requires a positive number. Check your input."
-msgstr ""
+msgstr "Addaan fageegni buraalaa lakkoofsa poozatiivii barbaada. Naqa kee mirkaneeffadhu."
 
 #: source/controller/dialogs/Strings_Scale.src#STR_BAD_LOGARITHM.String.Text
+#, fuzzy
 msgid  "The logarithmic scale requires positive numbers. Check your input."
-msgstr ""
+msgstr "Madaalli logaarizimii kun lakkoofsa poozatiivii barbaada. Naqa kee mirkaneeffadhu."
 
 #: source/controller/dialogs/Strings_Scale.src#STR_MIN_GREATER_MAX.String.Text
 #, fuzzy
@@ -329,17 +330,14 @@ msgid  "The major and minor interval need to be greater or equal to the resoluti
 msgstr ""
 
 #: source/controller/dialogs/dlg_DataEditor.src#DLG_DIAGRAM_DATA.ModalDialog.Text
-#, fuzzy
 msgid  "Data Table"
 msgstr "Gabatee Deetaa"
 
 #: source/controller/dialogs/dlg_DataEditor.src#DLG_DIAGRAM_DATA.TBX_DATA.TBI_DATA_INSERT_ROW.ToolBoxItem.Text
-#, fuzzy
 msgid  "Insert Row"
 msgstr "Tarree Saagi"
 
 #: source/controller/dialogs/dlg_DataEditor.src#DLG_DIAGRAM_DATA.TBX_DATA.TBI_DATA_INSERT_COL.ToolBoxItem.Text
-#, fuzzy
 msgid  "Insert Series"
 msgstr "Walfaannee Saagi"
 
@@ -348,22 +346,18 @@ msgid  "Insert Text Column"
 msgstr ""
 
 #: source/controller/dialogs/dlg_DataEditor.src#DLG_DIAGRAM_DATA.TBX_DATA.TBI_DATA_DELETE_ROW.ToolBoxItem.Text
-#, fuzzy
 msgid  "Delete Row"
 msgstr "Tarree Haqi"
 
 #: source/controller/dialogs/dlg_DataEditor.src#DLG_DIAGRAM_DATA.TBX_DATA.TBI_DATA_DELETE_COL.ToolBoxItem.Text
-#, fuzzy
 msgid  "Delete Series"
 msgstr "Walfaannee Haqi"
 
 #: source/controller/dialogs/dlg_DataEditor.src#DLG_DIAGRAM_DATA.TBX_DATA.TBI_DATA_SWAP_COL.ToolBoxItem.Text
-#, fuzzy
 msgid  "Move Series Right"
 msgstr "Walfaannee Mirgatti Siqsi"
 
 #: source/controller/dialogs/dlg_DataEditor.src#DLG_DIAGRAM_DATA.TBX_DATA.TBI_DATA_SWAP_ROW.ToolBoxItem.Text
-#, fuzzy
 msgid  "Move Row Down"
 msgstr "Tarree Gadi Siqsi"
 
@@ -1070,8 +1064,9 @@ msgid  "Asian Typography"
 msgstr ""
 
 #: source/controller/dialogs/Strings.src#STR_OBJECT_AVERAGE_LINE_WITH_PARAMETERS.String.Text
+#, fuzzy
 msgid  "Mean value line with value %AVERAGE_VALUE and standard deviation %STD_DEVIATION"
-msgstr ""
+msgstr "Walakkeessa gatii %AVERAGE_VALUE fi garagarummaa waaltinaa %STD_DEVIATION"
 
 #: source/controller/dialogs/Strings.src#STR_OBJECT_AXIS.String.Text
 #, fuzzy
@@ -1328,12 +1323,14 @@ msgid  "Values: %POINTVALUES"
 msgstr "Gatiilee: %POINTVALUES"
 
 #: source/controller/dialogs/Strings.src#STR_TIP_DATAPOINT.String.Text
+#, fuzzy
 msgid  "Data Point %POINTNUMBER, data series %SERIESNUMBER, values: %POINTVALUES"
-msgstr ""
+msgstr "Tuqaa Deetaa %POINTNUMBER, walfaannee deetaa %SERIESNUMBER, gatiilee: %POINTVALUES"
 
 #: source/controller/dialogs/Strings.src#STR_STATUS_DATAPOINT_MARKED.String.Text
+#, fuzzy
 msgid  "Data point %POINTNUMBER in data series %SERIESNUMBER selected, values: %POINTVALUES"
-msgstr ""
+msgstr "Tuqaa deetaa %POINTNUMBER walfaannee deetaa %SERIESNUMBER keessaa filatame, gatiilee: %POINTVALUES"
 
 #: source/controller/dialogs/Strings.src#STR_STATUS_OBJECT_MARKED.String.Text
 #, fuzzy
@@ -1525,8 +1522,9 @@ msgid  "Select Range for Negative Error Bars"
 msgstr "Kabaloota Dogoggora Neegaatiiviitiif Hangii Fili"
 
 #: source/controller/dialogs/Strings.src#STR_DATA_EDITOR_INCORRECT_INPUT.String.Text
+#, fuzzy
 msgid  "Your last input is incorrect.\nIgnore this change and close the dialog?"
-msgstr ""
+msgstr "Naqni dhumaa kee dogogggora.\nGaeddara kana dhiisii qaqaa cufi?"
 
 #: source/controller/dialogs/Strings.src#STR_TEXT_DIRECTION_LTR.String.Text
 #, fuzzy

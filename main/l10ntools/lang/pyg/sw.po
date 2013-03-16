@@ -293,7 +293,7 @@ msgstr "Ejoko heko"
 #: source/core/undo/undo.src#STR_AUTOCORRECT.String.Text
 #, fuzzy
 msgid  "AutoCorrect"
-msgstr "Jeheguiñemyatyrõ"
+msgstr "Jehegui ñemyatyrõ"
 
 #: source/core/undo/undo.src#STR_MERGE_TABLE.String.Text
 #, fuzzy
@@ -778,37 +778,30 @@ msgid  "Change object description of $1"
 msgstr ""
 
 #: source/core/unocore/unocore.src#STR_CHART2_ROW_LABEL_TEXT.String.Text
-#, fuzzy
 msgid  "Row %ROWNUMBER"
 msgstr "Row %ROWNUMBER"
 
 #: source/core/unocore/unocore.src#STR_CHART2_COL_LABEL_TEXT.String.Text
-#, fuzzy
 msgid  "Column %COLUMNLETTER"
 msgstr "Column %COLUMNLETTER"
 
 #: source/core/unocore/unocore.src#STR_STYLE_FAMILY_CHARACTER.String.Text
-#, fuzzy
 msgid  "Character"
 msgstr "Tai"
 
 #: source/core/unocore/unocore.src#STR_STYLE_FAMILY_PARAGRAPH.String.Text
-#, fuzzy
 msgid  "Paragraph"
 msgstr "Haipyvo"
 
 #: source/core/unocore/unocore.src#STR_STYLE_FAMILY_FRAME.String.Text
-#, fuzzy
 msgid  "Frame"
 msgstr "Marco"
 
 #: source/core/unocore/unocore.src#STR_STYLE_FAMILY_PAGE.String.Text
-#, fuzzy
 msgid  "Pages"
 msgstr "Togue"
 
 #: source/core/unocore/unocore.src#STR_STYLE_FAMILY_NUMBERING.String.Text
-#, fuzzy
 msgid  "Numbering"
 msgstr "Papapy"
 
@@ -1209,7 +1202,7 @@ msgid  "Adapt Objects..."
 msgstr ""
 
 #: source/ui/app/app.src#MSG_COMCORE_ASKSEARCH.QueryBox.Message
-msgid  "To proceed with this action, you must first turn off the "undo" function. Do you want to turn off the "undo" function?"
+msgid  "To proceed with this action, you must first turn off the \"undo\" function. Do you want to turn off the \"undo\" function?"
 msgstr ""
 
 #: source/ui/app/app.src#STR_TABLE_DEFNAME.String.Text
@@ -3480,6 +3473,10 @@ msgstr ""
 msgid  "Only ~include the country/region if it is not:"
 msgstr ""
 
+#: source/ui/dbui/mmaddressblockpage.src#WORKAROUND.#define.Text
+msgid  "New Address Block"
+msgstr ""
+
 #: source/ui/dbui/mmaddressblockpage.src#DLG_MM_CUSTOMIZEADDRESSBLOCK.ST_TITLE_EDIT.String.Text
 msgid  "Edit Address Block"
 msgstr ""
@@ -3646,10 +3643,6 @@ msgstr ""
 
 #: source/ui/dbui/mmaddressblockpage.src#DLG_MM_ASSIGNFIELDS.ST_NONE.String.Text
 msgid  "< none >"
-msgstr ""
-
-#: source/ui/dbui/mmaddressblockpage.src#WORKAROUND.#define.Text
-msgid  "New Address Block"
 msgstr ""
 
 #: source/ui/dbui/selectdbtabledialog.src#DLG_MM_SELECTDBTABLEDDIALOG.ModalDialog.Text
@@ -4264,6 +4257,10 @@ msgstr ""
 msgid  "~Close"
 msgstr ""
 
+#: source/ui/dbui/mailmergechildwindow.src#WORKAROUND.#define.Text
+msgid  "Return to Mail Merge Wizard"
+msgstr ""
+
 #: source/ui/dbui/mailmergechildwindow.src#DLG_MAILMERGECHILD.FloatingWindow.Text
 msgid  "Mail Merge Wizard"
 msgstr ""
@@ -4354,10 +4351,6 @@ msgstr ""
 
 #: source/ui/dbui/mailmergechildwindow.src#DLG_MM_SENDWARNING.FT_DETAILS.FixedText.Text
 msgid  "Detailed information"
-msgstr ""
-
-#: source/ui/dbui/mailmergechildwindow.src#WORKAROUND.#define.Text
-msgid  "Return to Mail Merge Wizard"
 msgstr ""
 
 #: source/ui/dbui/dbtablepreviewdialog.src#DLG_MM_DBTABLEPREVIEWDIALOG.ModalDialog.Text
@@ -4668,6 +4661,66 @@ msgstr ""
 msgid  "Characters:"
 msgstr ""
 
+#: source/ui/dialog/regionsw.src#FT_SUBREG_TEXT.#define.Text
+msgid  "~Section"
+msgstr ""
+
+#: source/ui/dialog/regionsw.src#CB_HIDE_TEXT.#define.Text
+msgid  "H~ide"
+msgstr ""
+
+#: source/ui/dialog/regionsw.src#FL_HIDE_TEXT.#define.Text
+msgid  "Hide"
+msgstr ""
+
+#: source/ui/dialog/regionsw.src#CB_CONDITION_TEXT.#define.Text
+msgid  "~With Condition"
+msgstr ""
+
+#: source/ui/dialog/regionsw.src#FL_PROPERTIES_TEXT.#define.Text
+msgid  "Properties"
+msgstr ""
+
+#: source/ui/dialog/regionsw.src#CB_EDIT_IN_READONLY_TEXT.#define.Text
+msgid  "E~ditable in read-only document"
+msgstr ""
+
+#: source/ui/dialog/regionsw.src#FL_FILE_TEXT.#define.Text
+msgid  "Link"
+msgstr ""
+
+#: source/ui/dialog/regionsw.src#CB_FILE_TEXT.#define.Text
+msgid  "~Link"
+msgstr ""
+
+#: source/ui/dialog/regionsw.src#CB_DDE_TEXT.#define.Text
+msgid  "DD~E"
+msgstr ""
+
+#: source/ui/dialog/regionsw.src#FT_DDE_TEXT.#define.Text
+msgid  "DDE ~command"
+msgstr ""
+
+#: source/ui/dialog/regionsw.src#FT_FILE_TEXT.#define.Text
+msgid  "~File name"
+msgstr ""
+
+#: source/ui/dialog/regionsw.src#GB_HIDE_TEXT.#define.Text
+msgid  "Hide"
+msgstr ""
+
+#: source/ui/dialog/regionsw.src#GB_OPTIONS_TEXT.#define.Text
+msgid  "Options"
+msgstr ""
+
+#: source/ui/dialog/regionsw.src#FL_PROTECT_TEXT.#define.Text
+msgid  "Write protection"
+msgstr ""
+
+#: source/ui/dialog/regionsw.src#CB_PASSWD_TEXT.#define.Text
+msgid  "Wit~h password"
+msgstr ""
+
 #: source/ui/dialog/regionsw.src#MD_EDIT_REGION.ModalDialog.Text
 msgid  "Edit Sections"
 msgstr ""
@@ -4832,66 +4885,6 @@ msgstr ""
 msgid  "~After section"
 msgstr ""
 
-#: source/ui/dialog/regionsw.src#FT_SUBREG_TEXT.#define.Text
-msgid  "~Section"
-msgstr ""
-
-#: source/ui/dialog/regionsw.src#CB_HIDE_TEXT.#define.Text
-msgid  "H~ide"
-msgstr ""
-
-#: source/ui/dialog/regionsw.src#FL_HIDE_TEXT.#define.Text
-msgid  "Hide"
-msgstr ""
-
-#: source/ui/dialog/regionsw.src#CB_CONDITION_TEXT.#define.Text
-msgid  "~With Condition"
-msgstr ""
-
-#: source/ui/dialog/regionsw.src#FL_PROPERTIES_TEXT.#define.Text
-msgid  "Properties"
-msgstr ""
-
-#: source/ui/dialog/regionsw.src#CB_EDIT_IN_READONLY_TEXT.#define.Text
-msgid  "E~ditable in read-only document"
-msgstr ""
-
-#: source/ui/dialog/regionsw.src#FL_FILE_TEXT.#define.Text
-msgid  "Link"
-msgstr ""
-
-#: source/ui/dialog/regionsw.src#CB_FILE_TEXT.#define.Text
-msgid  "~Link"
-msgstr ""
-
-#: source/ui/dialog/regionsw.src#CB_DDE_TEXT.#define.Text
-msgid  "DD~E"
-msgstr ""
-
-#: source/ui/dialog/regionsw.src#FT_DDE_TEXT.#define.Text
-msgid  "DDE ~command"
-msgstr ""
-
-#: source/ui/dialog/regionsw.src#FT_FILE_TEXT.#define.Text
-msgid  "~File name"
-msgstr ""
-
-#: source/ui/dialog/regionsw.src#GB_HIDE_TEXT.#define.Text
-msgid  "Hide"
-msgstr ""
-
-#: source/ui/dialog/regionsw.src#GB_OPTIONS_TEXT.#define.Text
-msgid  "Options"
-msgstr ""
-
-#: source/ui/dialog/regionsw.src#FL_PROTECT_TEXT.#define.Text
-msgid  "Write protection"
-msgstr ""
-
-#: source/ui/dialog/regionsw.src#CB_PASSWD_TEXT.#define.Text
-msgid  "Wit~h password"
-msgstr ""
-
 #: source/ui/dialog/abstract.src#DLG_INSERT_ABSTRACT.FL_1.FixedLine.Text
 msgid  "Properties"
 msgstr ""
@@ -4973,12 +4966,10 @@ msgid  "The spellcheck is complete."
 msgstr ""
 
 #: source/ui/dochdl/selglos.src#DLG_SEL_GLOS.ModalDialog.Text
-#, fuzzy
 msgid  "Insert AutoText"
 msgstr "Emoinge Haipy ijeheguíva. "
 
 #: source/ui/dochdl/selglos.src#DLG_SEL_GLOS.FL_GLOS.FixedLine.Text
-#, fuzzy
 msgid  "AutoTexts for shortcut "
 msgstr "Haipy ijeheguíva ñemombykyrã."
 
@@ -4988,39 +4979,33 @@ msgstr ""
 
 #: source/ui/dochdl/dochdl.src#STR_NO_TABLE.String.Text
 msgid  "A table cannot be inserted into another table. However, you can paste the data into the document when the cursor is not in a table."
-msgstr ""
+msgstr "Ndaikatúi oñemoinge peteĩ tabla ambuéva ryepýpe. Katu umi marandu oñembojakuaa upe kuatiápe cursor noĩri jave tabla-pe. "
 
 #: source/ui/dochdl/dochdl.src#MSG_ERR_INSERT_GLOS.InfoBox.Message
-#, fuzzy
 msgid  "AutoText could not be created."
 msgstr "Ndaikatúi oñemoñepyrũ Haipy ijeheguíva. "
 
 #: source/ui/dochdl/dochdl.src#MSG_CLPBRD_FORMAT_ERROR.InfoBox.Message
-#, fuzzy
 msgid  "Requested clipboard format is not available."
 msgstr "Portapapeles ñemboheko reipotáva ndaipóri."
 
 #: source/ui/dochdl/dochdl.src#MSG_UPDATE_NEW_GLOS_FMT.QueryBox.Message
 msgid  "The section format is outdated.\nIt needs to be converted so that changes\ncan be saved.\nShould it be converted now?"
-msgstr ""
+msgstr "ko tenda ñemboheko itujáma.\nTekotevẽ rembohekoambue umi ñemoambue\noñeñongatu haĝua.\nRembohekoambuesépa ko'áĝa?"
 
 #: source/ui/dochdl/dochdl.src#STR_PRIVATETEXT.String.Text
-#, fuzzy
 msgid  "%PRODUCTNAME Writer"
 msgstr "%PRODUCTNAME Writer"
 
 #: source/ui/dochdl/dochdl.src#STR_PRIVATEGRAPHIC.String.Text
-#, fuzzy
 msgid  "Graphics [%PRODUCTNAME Writer]"
 msgstr "Graphics [%PRODUCTNAME Writer]"
 
 #: source/ui/dochdl/dochdl.src#STR_PRIVATEOLE.String.Text
-#, fuzzy
 msgid  "Object [%PRODUCTNAME Writer]"
 msgstr "Object [%PRODUCTNAME Writer]"
 
 #: source/ui/dochdl/dochdl.src#STR_DDEFORMAT.String.Text
-#, fuzzy
 msgid  "DDE link"
 msgstr "DDE joajuha"
 
@@ -5217,6 +5202,31 @@ msgstr "Marco ypy ningo peteĩ joajuha fuente-mavoi."
 msgid  "A closed link is not possible."
 msgstr "Ndaikatúi oiko sekuéncia oñembotýva. "
 
+#: source/ui/docvw/docvw.src#STR_REDLINE_INSERT.String.Text
+#, fuzzy
+msgid  "Inserted"
+msgstr "Oñemoĩmbyre"
+
+#: source/ui/docvw/docvw.src#STR_REDLINE_DELETE.String.Text
+#, fuzzy
+msgid  "Deleted"
+msgstr "Oñemboguepyre"
+
+#: source/ui/docvw/docvw.src#STR_REDLINE_FORMAT.String.Text
+#, fuzzy
+msgid  "Formatted"
+msgstr "Oñembolajapyre."
+
+#: source/ui/docvw/docvw.src#STR_REDLINE_TABLE.String.Text
+#, fuzzy
+msgid  "Table changed"
+msgstr "Tabla oñemoambuepyréva"
+
+#: source/ui/docvw/docvw.src#STR_REDLINE_FMTCOLL.String.Text
+#, fuzzy
+msgid  "Applied Paragraph Styles"
+msgstr "Ko haipýpe oñembojáma teko."
+
 #: source/ui/docvw/docvw.src#STR_ENDNOTE.String.Text
 #, fuzzy
 msgid  "Endnote: "
@@ -5228,8 +5238,9 @@ msgid  "Footnote: "
 msgstr "Haipy mbykymi kuatia rogue pýpe:"
 
 #: source/ui/docvw/docvw.src#MSG_READONLY_CONTENT.InfoBox.Message
+#, fuzzy
 msgid  "Readonly content cannot be changed.\nNo modifications will be accepted"
-msgstr ""
+msgstr "Ko jeporavo oĩ tenda oñeñangarekohápe.\nUpévare ndaikatúi oñemoneĩ ñemoambue ojejaposéva. "
 
 #: source/ui/docvw/docvw.src#STR_TABLE_COL_ADJUST.String.Text
 #, fuzzy
@@ -5261,98 +5272,59 @@ msgstr "Eiporavo kolúna."
 msgid  "%s-click to open Smart Tag menu"
 msgstr "%s-click reipevu haĝua Smart Tag rehegua menu"
 
-#: source/ui/docvw/docvw.src#STR_REDLINE_INSERT.String.Text
-#, fuzzy
-msgid  "Inserted"
-msgstr "Oñemoĩmbyre"
-
-#: source/ui/docvw/docvw.src#STR_REDLINE_DELETE.String.Text
-#, fuzzy
-msgid  "Deleted"
-msgstr "Oñemboguepyre"
-
-#: source/ui/docvw/docvw.src#STR_REDLINE_FORMAT.String.Text
-#, fuzzy
-msgid  "Formatted"
-msgstr "Oñembolajapyre."
-
-#: source/ui/docvw/docvw.src#STR_REDLINE_TABLE.String.Text
-#, fuzzy
-msgid  "Table changed"
-msgstr "Tabla oñemoambuepyréva"
-
-#: source/ui/docvw/docvw.src#STR_REDLINE_FMTCOLL.String.Text
-#, fuzzy
-msgid  "Applied Paragraph Styles"
-msgstr "Ko haipýpe oñembojáma teko."
-
 #: source/ui/docvw/access.src#STR_ACCESS_DOC_NAME.String.Text
-#, fuzzy
 msgid  "Document view"
 msgstr "Kuatia hechaukapy"
 
 #: source/ui/docvw/access.src#STR_ACCESS_DOC_DESC.String.Text
-#, fuzzy
 msgid  "Document view"
 msgstr "Kuatia hechaukapy"
 
 #: source/ui/docvw/access.src#STR_ACCESS_HEADING_WITH_NUM_DESC.String.Text
-#, fuzzy
 msgid  "Heading number $(ARG2): $(ARG1)"
 msgstr "Papapy iñakãmegua $(ARG2): $(ARG1)"
 
 #: source/ui/docvw/access.src#STR_ACCESS_HEADER_NAME.String.Text
-#, fuzzy
 msgid  "Header $(ARG1)"
 msgstr "Akã $(ARG1)"
 
 #: source/ui/docvw/access.src#STR_ACCESS_HEADER_DESC.String.Text
-#, fuzzy
 msgid  "Header page $(ARG1)"
 msgstr "Akã rogue papapy $(ARG1)"
 
 #: source/ui/docvw/access.src#STR_ACCESS_FOOTER_NAME.String.Text
-#, fuzzy
 msgid  "Footer $(ARG1)"
 msgstr "Kuatia rogue py papapy $(ARG1)"
 
 #: source/ui/docvw/access.src#STR_ACCESS_FOOTER_DESC.String.Text
-#, fuzzy
 msgid  "Footer page $(ARG1)"
 msgstr "Kuatia rogue py papapy $(ARG1)"
 
 #: source/ui/docvw/access.src#STR_ACCESS_FOOTNOTE_NAME.String.Text
-#, fuzzy
 msgid  "Footnote $(ARG1)"
 msgstr "Haipy mbykymi ipýpe $(ARG1)"
 
 #: source/ui/docvw/access.src#STR_ACCESS_FOOTNOTE_DESC.String.Text
-#, fuzzy
 msgid  "Footnote $(ARG1)"
 msgstr "Haipy mbykymi ipýpe $(ARG1)"
 
 #: source/ui/docvw/access.src#STR_ACCESS_ENDNOTE_NAME.String.Text
-#, fuzzy
 msgid  "Endnote $(ARG1)"
 msgstr "Haipy mbykymi ipahápe $(ARG1)"
 
 #: source/ui/docvw/access.src#STR_ACCESS_ENDNOTE_DESC.String.Text
-#, fuzzy
 msgid  "Endnote $(ARG1)"
 msgstr "Haipy mbykymi ipahápe $(ARG1)"
 
 #: source/ui/docvw/access.src#STR_ACCESS_TABLE_DESC.String.Text
-#, fuzzy
 msgid  "$(ARG1) on page $(ARG2)"
 msgstr "$(ARG1) togue $(ARG2)-pe"
 
 #: source/ui/docvw/access.src#STR_ACCESS_PAGE_NAME.String.Text
-#, fuzzy
 msgid  "Page $(ARG1)"
 msgstr "Togue $(ARG1)"
 
 #: source/ui/docvw/access.src#STR_ACCESS_PAGE_DESC.String.Text
-#, fuzzy
 msgid  "Page: $(ARG1)"
 msgstr "Togue: $(ARG1)"
 
@@ -5419,6 +5391,10 @@ msgstr ""
 
 #: source/ui/envelp/envprt.src#TP_ENV_PRT.BTN_PRTSETUP.PushButton.Text
 msgid  "Setup..."
+msgstr ""
+
+#: source/ui/envelp/mailmrge.src#_MAIL_MERGE_STRING_.#define.Text
+msgid  "Mail Merge"
 msgstr ""
 
 #: source/ui/envelp/mailmrge.src#DLG_MAILMERGE.RB_ALL.RadioButton.Text
@@ -5543,10 +5519,6 @@ msgstr ""
 
 #: source/ui/envelp/mailmrge.src#DLG_MERGE_FIELD_CONNECTIONS.FT_INFO.FixedText.Text
 msgid  "Fields are used to personalize form letters. The fields are placeholders for data from a data source, such as a database. The fields in the form letter must be connected to the data source."
-msgstr ""
-
-#: source/ui/envelp/mailmrge.src#_MAIL_MERGE_STRING_.#define.Text
-msgid  "Mail Merge"
 msgstr ""
 
 #: source/ui/envelp/labprt.src#TP_LAB_PRT.BTN_PAGE.RadioButton.Text
@@ -5675,6 +5647,14 @@ msgstr ""
 
 #: source/ui/envelp/envfmt.src#MNU_EDIT.MID_PARA.MenuItem.Text
 msgid  "P~aragraph..."
+msgstr ""
+
+#: source/ui/envelp/label.src#LABEL_STRING.#define.Text
+msgid  "Labels"
+msgstr ""
+
+#: source/ui/envelp/label.src#BUSINESS_CARD_STRING.#define.Text
+msgid  "Business Cards"
 msgstr ""
 
 #: source/ui/envelp/label.src#DLG_LAB.1.TP_PRIVATE_DATA.PageItem.Text
@@ -5845,14 +5825,6 @@ msgstr ""
 msgid  "Ho~mepage / e-mail"
 msgstr ""
 
-#: source/ui/envelp/label.src#LABEL_STRING.#define.Text
-msgid  "Labels"
-msgstr ""
-
-#: source/ui/envelp/label.src#BUSINESS_CARD_STRING.#define.Text
-msgid  "Business Cards"
-msgstr ""
-
 #: source/ui/envelp/labfmt.src#TP_LAB_FMT.TXT_HDIST.FixedText.Text
 msgid  "Hori~zontal pitch"
 msgstr ""
@@ -5934,7 +5906,7 @@ msgid  "Options"
 msgstr ""
 
 #: source/ui/envelp/labfmt.src#DLG_SAVE_LABEL.MB_QUERY.QueryBox.Message
-msgid  "The label "%1 / %2" already exists.\nDo you want to overwrite it?"
+msgid  "The label \"%1 / %2\" already exists.\nDo you want to overwrite it?"
 msgstr ""
 
 #: source/ui/envelp/labfmt.src#DLG_SAVE_LABEL.QueryBox.Text
@@ -6930,227 +6902,182 @@ msgid  "Functions"
 msgstr ""
 
 #: source/ui/fmtui/tmpdlg.src#DLG_TEMPLATE_1.TabDialog.Text
-#, fuzzy
 msgid  "Character Style"
 msgstr "Tai reko"
 
 #: source/ui/fmtui/tmpdlg.src#DLG_TEMPLATE_1.1.TP_CHAR_STD.PageItem.Text
-#, fuzzy
 msgid  "Font"
 msgstr "Fuente"
 
 #: source/ui/fmtui/tmpdlg.src#DLG_TEMPLATE_1.1.TP_CHAR_EXT.PageItem.Text
-#, fuzzy
 msgid  "Font Effects"
 msgstr "Fuente rapykuere"
 
 #: source/ui/fmtui/tmpdlg.src#DLG_TEMPLATE_1.1.TP_CHAR_POS.PageItem.Text
-#, fuzzy
 msgid  "Position"
 msgstr "Henda"
 
 #: source/ui/fmtui/tmpdlg.src#DLG_TEMPLATE_1.1.TP_CHAR_TWOLN.PageItem.Text
-#, fuzzy
 msgid  "Asian Layout"
 msgstr "Asiagua diséño"
 
 #: source/ui/fmtui/tmpdlg.src#DLG_TEMPLATE_1.1.TP_BACKGROUND.PageItem.Text
-#, fuzzy
 msgid  "Background"
 msgstr "Iguypegua"
 
 #: source/ui/fmtui/tmpdlg.src#DLG_TEMPLATE_2.TabDialog.Text
-#, fuzzy
 msgid  "Paragraph Style"
 msgstr "Haipyvo reko"
 
 #: source/ui/fmtui/tmpdlg.src#DLG_TEMPLATE_2.1.TP_PARA_STD.PageItem.Text
-#, fuzzy
 msgid  "Indents & Spacing"
 msgstr "Pa'ũ jepuru."
 
 #: source/ui/fmtui/tmpdlg.src#DLG_TEMPLATE_2.1.TP_PARA_ALIGN.PageItem.Text
-#, fuzzy
 msgid  "Alignment"
 msgstr "Líño mbojojaha"
 
 #: source/ui/fmtui/tmpdlg.src#DLG_TEMPLATE_2.1.TP_PARA_EXT.PageItem.Text
-#, fuzzy
 msgid  "Text Flow"
 msgstr "Haipy rysýi"
 
 #: source/ui/fmtui/tmpdlg.src#DLG_TEMPLATE_2.1.TP_PARA_ASIAN.PageItem.Text
-#, fuzzy
 msgid  "Asian Typography"
 msgstr "Asiagua tipografía "
 
 #: source/ui/fmtui/tmpdlg.src#DLG_TEMPLATE_2.1.TP_CHAR_STD.PageItem.Text
-#, fuzzy
 msgid  "Font"
 msgstr "Fuente"
 
 #: source/ui/fmtui/tmpdlg.src#DLG_TEMPLATE_2.1.TP_CHAR_EXT.PageItem.Text
-#, fuzzy
 msgid  "Font Effects"
 msgstr "Fuente rapykuere"
 
 #: source/ui/fmtui/tmpdlg.src#DLG_TEMPLATE_2.1.TP_CHAR_POS.PageItem.Text
-#, fuzzy
 msgid  "Position"
 msgstr "Henda"
 
 #: source/ui/fmtui/tmpdlg.src#DLG_TEMPLATE_2.1.TP_CHAR_TWOLN.PageItem.Text
-#, fuzzy
 msgid  "Asian Layout"
 msgstr "Asiagua diséño"
 
 #: source/ui/fmtui/tmpdlg.src#DLG_TEMPLATE_2.1.TP_NUMPARA.PageItem.Text
-#, fuzzy
 msgid  "Outline & Numbering"
 msgstr "Esquema ha papapy"
 
 #: source/ui/fmtui/tmpdlg.src#DLG_TEMPLATE_2.1.TP_TABULATOR.PageItem.Text
-#, fuzzy
 msgid  "Tabs"
 msgstr "Tabulador"
 
 #: source/ui/fmtui/tmpdlg.src#DLG_TEMPLATE_2.1.TP_DROPCAPS.PageItem.Text
-#, fuzzy
 msgid  "Drop Caps"
 msgstr "Ñepyrũha"
 
 #: source/ui/fmtui/tmpdlg.src#DLG_TEMPLATE_2.1.TP_BACKGROUND.PageItem.Text
-#, fuzzy
 msgid  "Background"
 msgstr "Iguypegua"
 
 #: source/ui/fmtui/tmpdlg.src#DLG_TEMPLATE_2.1.TP_BORDER.PageItem.Text
-#, fuzzy
 msgid  "Borders"
 msgstr "Hembe'y"
 
 #: source/ui/fmtui/tmpdlg.src#DLG_TEMPLATE_2.1.TP_CONDCOLL.PageItem.Text
-#, fuzzy
 msgid  "Condition"
 msgstr "Condición"
 
 #: source/ui/fmtui/tmpdlg.src#DLG_TEMPLATE_4.TabDialog.Text
-#, fuzzy
 msgid  "Page Style"
 msgstr "Kuatia rogue reko"
 
 #: source/ui/fmtui/tmpdlg.src#DLG_TEMPLATE_4.1.TP_BACKGROUND.PageItem.Text
-#, fuzzy
 msgid  "Background"
 msgstr "Iguypegua"
 
 #: source/ui/fmtui/tmpdlg.src#STR_PAGE_STD.String.Text
-#, fuzzy
 msgid  "Page"
 msgstr "Togue"
 
 #: source/ui/fmtui/tmpdlg.src#STR_PAGE_BORDER.String.Text
-#, fuzzy
 msgid  "Borders"
 msgstr "Hembe'y"
 
 #: source/ui/fmtui/tmpdlg.src#STR_PAGE_HEADER.String.Text
-#, fuzzy
 msgid  "Header"
 msgstr "Akã"
 
 #: source/ui/fmtui/tmpdlg.src#STR_PAGE_FOOTER.String.Text
-#, fuzzy
 msgid  "Footer"
 msgstr "Kuatia rogue py"
 
 #: source/ui/fmtui/tmpdlg.src#STR_PAGE_TEXTGRID.String.Text
-#, fuzzy
 msgid  "Text Grid"
 msgstr "Haipy renda"
 
 #: source/ui/fmtui/tmpdlg.src#STR_PAGE_COLUMN.String.Text
-#, fuzzy
 msgid  "Columns"
 msgstr "Kolúna"
 
 #: source/ui/fmtui/tmpdlg.src#STR_PAGE_FOOTNOTE.String.Text
-#, fuzzy
 msgid  "Footnote"
 msgstr "Haipy ipýpe"
 
 #: source/ui/fmtui/tmpdlg.src#DLG_TEMPLATE_3.TabDialog.Text
-#, fuzzy
 msgid  "Frame Style"
 msgstr "Marco reko"
 
 #: source/ui/fmtui/tmpdlg.src#DLG_TEMPLATE_3.1.TP_FRM_STD.PageItem.Text
-#, fuzzy
 msgid  "Type"
 msgstr "Lája"
 
 #: source/ui/fmtui/tmpdlg.src#DLG_TEMPLATE_3.1.TP_FRM_ADD.PageItem.Text
-#, fuzzy
 msgid  "Options"
 msgstr "Poravopyrã"
 
 #: source/ui/fmtui/tmpdlg.src#DLG_TEMPLATE_3.1.TP_FRM_WRAP.PageItem.Text
-#, fuzzy
 msgid  "Wrap"
 msgstr "Ñemyatyrõ"
 
 #: source/ui/fmtui/tmpdlg.src#DLG_TEMPLATE_3.1.TP_BACKGROUND.PageItem.Text
-#, fuzzy
 msgid  "Background"
 msgstr "Iguypegua"
 
 #: source/ui/fmtui/tmpdlg.src#DLG_TEMPLATE_3.1.TP_BORDER.PageItem.Text
-#, fuzzy
 msgid  "Borders"
 msgstr "Hembe'y"
 
 #: source/ui/fmtui/tmpdlg.src#DLG_TEMPLATE_3.1.TP_COLUMN.PageItem.Text
-#, fuzzy
 msgid  "Columns"
 msgstr "Kolúna"
 
 #: source/ui/fmtui/tmpdlg.src#DLG_TEMPLATE_3.1.TP_MACRO_ASSIGN.PageItem.Text
-#, fuzzy
 msgid  "Macro"
 msgstr "Macro"
 
 #: source/ui/fmtui/tmpdlg.src#DLG_TEMPLATE_5.1.RID_SVXPAGE_PICK_BULLET.PageItem.Text
-#, fuzzy
 msgid  "Bullets"
 msgstr "Viñéta"
 
 #: source/ui/fmtui/tmpdlg.src#DLG_TEMPLATE_5.1.RID_SVXPAGE_PICK_SINGLE_NUM.PageItem.Text
-#, fuzzy
 msgid  "Numbering Style"
 msgstr "Papapy reko"
 
 #: source/ui/fmtui/tmpdlg.src#DLG_TEMPLATE_5.1.RID_SVXPAGE_PICK_NUM.PageItem.Text
-#, fuzzy
 msgid  "Outline"
 msgstr "Esquema"
 
 #: source/ui/fmtui/tmpdlg.src#DLG_TEMPLATE_5.1.RID_SVXPAGE_PICK_BMP.PageItem.Text
-#, fuzzy
 msgid  "Graphics"
 msgstr "Ta'ãnga"
 
 #: source/ui/fmtui/tmpdlg.src#DLG_TEMPLATE_5.1.RID_SVXPAGE_NUM_POSITION.PageItem.Text
-#, fuzzy
 msgid  "Position"
 msgstr "Henda"
 
 #: source/ui/fmtui/tmpdlg.src#DLG_TEMPLATE_5.1.RID_SVXPAGE_NUM_OPTIONS.PageItem.Text
-#, fuzzy
 msgid  "Options"
 msgstr "Poravopyrã"
 
 #: source/ui/fmtui/tmpdlg.src#DLG_TEMPLATE_5.PageItem.Text
-#, fuzzy
 msgid  "Numbering Style"
 msgstr "Papapy reko"
 
@@ -7639,6 +7566,14 @@ msgid  "~Position"
 msgstr ""
 
 #: source/ui/frmdlg/column.src#TP_COLUMN.LB_POSITION.Default.StringList.item
+msgid  "Top"
+msgstr ""
+
+#: source/ui/frmdlg/column.src#TP_COLUMN.LB_POSITION.Default.StringList.item
+msgid  "Centered"
+msgstr ""
+
+#: source/ui/frmdlg/column.src#TP_COLUMN.LB_POSITION.Default.StringList.item
 msgid  "Bottom"
 msgstr ""
 
@@ -7700,14 +7635,6 @@ msgstr ""
 
 #: source/ui/frmdlg/column.src#STR_ACCESS_COLUMN_WIDTH.String.Text
 msgid  "Column %1 Width"
-msgstr ""
-
-#: source/ui/frmdlg/column.src#TP_COLUMN.LB_POSITION.Default.StringList.item
-msgid  "Top"
-msgstr ""
-
-#: source/ui/frmdlg/column.src#TP_COLUMN.LB_POSITION.Default.StringList.item
-msgid  "Centered"
 msgstr ""
 
 #: source/ui/frmdlg/frmui.src#STR_TOP.String.Text
@@ -7911,14 +7838,16 @@ msgid  "Numbering first"
 msgstr ""
 
 #: source/ui/globdoc/globdoc.src#STR_HUMAN_SWGLOBDOC_NAME.String.Text
-#, fuzzy
 msgid  "Master Document"
 msgstr "Kuatia ruvicha"
 
 #: source/ui/globdoc/globdoc.src#STR_WRITER_GLOBALDOC_FULLTYPE.String.Text
-#, fuzzy
 msgid  "%PRODUCTNAME %PRODUCTVERSION Master Document"
 msgstr "%PRODUCTNAME %PRODUCTVERSION kuatia ruvicha "
+
+#: source/ui/index/idxmrk.src#IDX_PHONETIC_LISTBOX_DESCRIPTION.#define.Text
+msgid  "Phonetic reading"
+msgstr ""
 
 #: source/ui/index/idxmrk.src#IDX_DIALOG_WINDOW.WIN_DLG.BT_OK.OKButton.Text
 msgid  "Insert"
@@ -8060,10 +7989,6 @@ msgstr ""
 msgid  "The document already contains the bibliography entry but with different data. Do you want to adjust the existing entries?"
 msgstr ""
 
-#: source/ui/index/idxmrk.src#IDX_PHONETIC_LISTBOX_DESCRIPTION.#define.Text
-msgid  "Phonetic reading"
-msgstr ""
-
 #: source/ui/index/cnttab.src#STR_TITLE.String.Text
 msgid  "Title"
 msgstr ""
@@ -8077,7 +8002,7 @@ msgid  "Level "
 msgstr ""
 
 #: source/ui/index/cnttab.src#STR_FILE_NOT_FOUND.String.Text
-msgid  "The file, "%1" in the "%2" path could not be found."
+msgid  "The file, \"%1\" in the \"%2\" path could not be found."
 msgstr ""
 
 #: source/ui/index/cnttab.src#DLG_MULTI_TOX.1.TP_TOX_SELECT.PageItem.Text
@@ -8697,57 +8622,46 @@ msgid  "Entry"
 msgstr ""
 
 #: source/ui/lingu/olmenu.src#MN_SPELL_POPUP.MN_IGNORE_WORD.MenuItem.Text
-#, fuzzy
 msgid  "Ignore All"
 msgstr "Ehejareínte oĩhaguéicha"
 
 #: source/ui/lingu/olmenu.src#MN_SPELL_POPUP.MN_ADD_TO_DIC.MenuItem.Text
-#, fuzzy
 msgid  "~Add"
 msgstr "~Moĩve"
 
 #: source/ui/lingu/olmenu.src#MN_SPELL_POPUP.MN_AUTOCORR.MenuItem.Text
-#, fuzzy
 msgid  "AutoCorrect"
 msgstr "Ñemyatyrõ ijeheguíva"
 
 #: source/ui/lingu/olmenu.src#MN_SPELL_POPUP.MN_SPELLING_DLG.MenuItem.Text
-#, fuzzy
 msgid  "~Spellcheck..."
 msgstr "Hai~katu..."
 
 #: source/ui/lingu/olmenu.src#MN_SPELL_POPUP.MN_SET_LANGUAGE_SELECTION.MenuItem.Text
-#, fuzzy
 msgid  "Set Language for Selection"
 msgstr "Ere mba'e ñe'ẽpa reipota ko'ã ojeporavopyrévape ĝuarã."
 
 #: source/ui/lingu/olmenu.src#MN_SPELL_POPUP.MN_SET_LANGUAGE_PARAGRAPH.MenuItem.Text
-#, fuzzy
 msgid  "Set Language for Paragraph"
 msgstr "Ere mba'e ñe'ẽpa reipota ko haipyvo ojeporavopyrévape ĝuarã."
 
 #: source/ui/lingu/olmenu.src#STR_WORD.String.Text
-#, fuzzy
 msgid  "Word is "
 msgstr "Ñe'ẽ ..."
 
 #: source/ui/lingu/olmenu.src#STR_PARAGRAPH.String.Text
-#, fuzzy
 msgid  "Paragraph is "
 msgstr "Haipyvo ..."
 
 #: source/ui/lingu/olmenu.src#STR_SPELL_OK.String.Text
-#, fuzzy
 msgid  "The spellcheck is complete."
 msgstr "Haikatu jehecha oĝuahẽ hu'ãme. "
 
 #: source/ui/lingu/olmenu.src#STR_HYP_OK.String.Text
-#, fuzzy
 msgid  "Hyphenation completed"
 msgstr "Ñe'ẽ ñemopehẽ oĝuahẽ hu'ãme."
 
 #: source/ui/lingu/olmenu.src#STR_LANGSTATUS_NONE.String.Text
-#, fuzzy
 msgid  "None (Do not check spelling)"
 msgstr "Ni peteĩ (Ndohechakuaái haikatu)"
 
@@ -8756,12 +8670,10 @@ msgid  "Reset to Default Language"
 msgstr ""
 
 #: source/ui/lingu/olmenu.src#STR_LANGSTATUS_MORE.String.Text
-#, fuzzy
 msgid  "More..."
 msgstr "Oĩve..."
 
 #: source/ui/lingu/olmenu.src#STR_IGNORE_SELECTION.String.Text
-#, fuzzy
 msgid  "Ignore"
 msgstr "Ehejareínte"
 
@@ -8938,6 +8850,14 @@ msgid  "~Position"
 msgstr ""
 
 #: source/ui/misc/pgfnote.src#TP_FOOTNOTE_PAGE.DLB_LINEPOS.Default.StringList.item
+msgid  "Left"
+msgstr ""
+
+#: source/ui/misc/pgfnote.src#TP_FOOTNOTE_PAGE.DLB_LINEPOS.Default.StringList.item
+msgid  "Centered"
+msgstr ""
+
+#: source/ui/misc/pgfnote.src#TP_FOOTNOTE_PAGE.DLB_LINEPOS.Default.StringList.item
 msgid  "Right"
 msgstr ""
 
@@ -8955,14 +8875,6 @@ msgstr ""
 
 #: source/ui/misc/pgfnote.src#TP_FOOTNOTE_PAGE.FL_LINE.FixedLine.Text
 msgid  "Separator line"
-msgstr ""
-
-#: source/ui/misc/pgfnote.src#TP_FOOTNOTE_PAGE.DLB_LINEPOS.Default.StringList.item
-msgid  "Left"
-msgstr ""
-
-#: source/ui/misc/pgfnote.src#TP_FOOTNOTE_PAGE.DLB_LINEPOS.Default.StringList.item
-msgid  "Centered"
 msgstr ""
 
 #: source/ui/misc/num.src#TP_NUM_POSITION.FL_LEVEL.FixedLine.Text
@@ -9842,42 +9754,34 @@ msgid  "~Start"
 msgstr ""
 
 #: source/ui/ribbar/inputwin.src#RID_TBX_FORMULA.FN_FORMULA_CALC.ToolBoxItem.Text
-#, fuzzy
 msgid  "Formula"
 msgstr "Fórmula"
 
 #: source/ui/ribbar/inputwin.src#RID_TBX_FORMULA.FN_FORMULA_CANCEL.ToolBoxItem.Text
-#, fuzzy
 msgid  "Cancel"
-msgstr "Ehejareínte"
+msgstr "Ehejajeýnte"
 
 #: source/ui/ribbar/inputwin.src#RID_TBX_FORMULA.FN_FORMULA_APPLY.ToolBoxItem.Text
-#, fuzzy
 msgid  "Apply"
 msgstr "Mboja"
 
 #: source/ui/ribbar/inputwin.src#MN_CALC_POPUP.MN_CALC_SUM.MenuItem.Text
-#, fuzzy
 msgid  "Sum"
 msgstr "Súma"
 
 #: source/ui/ribbar/inputwin.src#MN_CALC_POPUP.MN_CALC_ROUND.MenuItem.Text
-#, fuzzy
 msgid  "Round"
 msgstr "Mboapu'a"
 
 #: source/ui/ribbar/inputwin.src#MN_CALC_POPUP.MN_CALC_PHD.MenuItem.Text
-#, fuzzy
 msgid  "Percent"
 msgstr "Porcentaje"
 
 #: source/ui/ribbar/inputwin.src#MN_CALC_POPUP.MN_CALC_SQRT.MenuItem.Text
-#, fuzzy
 msgid  "Square Root"
 msgstr "Raiz Cuadrada"
 
 #: source/ui/ribbar/inputwin.src#MN_CALC_POPUP.MN_CALC_POW.MenuItem.Text
-#, fuzzy
 msgid  "Power"
 msgstr "Potencia"
 
@@ -9887,47 +9791,38 @@ msgid  "Operators"
 msgstr "~Operadores"
 
 #: source/ui/ribbar/inputwin.src#MN_CALC_POPUP.MN_POP_OPS.MN_CALC_LISTSEP.MenuItem.Text
-#, fuzzy
 msgid  "List Separator"
 msgstr "Tysýi mopa'ũha"
 
 #: source/ui/ribbar/inputwin.src#MN_CALC_POPUP.MN_POP_OPS.MN_CALC_EQ.MenuItem.Text
-#, fuzzy
 msgid  "Equal"
 msgstr "="
 
 #: source/ui/ribbar/inputwin.src#MN_CALC_POPUP.MN_POP_OPS.MN_CALC_NEQ.MenuItem.Text
-#, fuzzy
 msgid  "Not Equal"
 msgstr "Ndaupéichai"
 
 #: source/ui/ribbar/inputwin.src#MN_CALC_POPUP.MN_POP_OPS.MN_CALC_LEQ.MenuItem.Text
-#, fuzzy
 msgid  "Less Than or Equal"
 msgstr "Sa'ive térã ojoja"
 
 #: source/ui/ribbar/inputwin.src#MN_CALC_POPUP.MN_POP_OPS.MN_CALC_GEQ.MenuItem.Text
-#, fuzzy
 msgid  "Greater Than or Equal"
 msgstr "Hetave térã ojoja"
 
 #: source/ui/ribbar/inputwin.src#MN_CALC_POPUP.MN_POP_OPS.MN_CALC_LES.MenuItem.Text
-#, fuzzy
 msgid  "Less"
 msgstr "Sa'ive"
 
 #: source/ui/ribbar/inputwin.src#MN_CALC_POPUP.MN_POP_OPS.MN_CALC_GRE.MenuItem.Text
-#, fuzzy
 msgid  "Greater"
 msgstr "Hetave"
 
 #: source/ui/ribbar/inputwin.src#MN_CALC_POPUP.MN_POP_OPS.MN_CALC_OR.MenuItem.Text
-#, fuzzy
 msgid  "Boolean Or"
 msgstr "~0 lógico"
 
 #: source/ui/ribbar/inputwin.src#MN_CALC_POPUP.MN_POP_OPS.MN_CALC_XOR.MenuItem.Text
-#, fuzzy
 msgid  "Boolean Xor"
 msgstr "~0 lógico ha'eñoite"
 
@@ -10362,67 +10257,54 @@ msgid  "Navigation"
 msgstr "Navegación"
 
 #: source/ui/shells/shells.src#MSG_NO_RULER.InfoBox.Message
-#, fuzzy
 msgid  "There are no bitmaps in the Gallery theme 'Rulers'."
 msgstr "Ndaipóri ta'ãnga Galeria 'Rulers' ñe'ẽrãme."
 
 #: source/ui/shells/shells.src#STR_GRFILTER_OPENERROR.String.Text
-#, fuzzy
 msgid  "Graphics file cannot be opened"
 msgstr "Ndaikatúi ojepevu ko ta'ãnga ñongatupyre."
 
 #: source/ui/shells/shells.src#STR_GRFILTER_IOERROR.String.Text
-#, fuzzy
 msgid  "Graphics file cannot be read"
 msgstr "Ndaikatúi oñemoñe'ẽ ko ta'ãnga ñongatupyre."
 
 #: source/ui/shells/shells.src#STR_GRFILTER_FORMATERROR.String.Text
-#, fuzzy
 msgid  "Unknown graphic format"
 msgstr "Ta'ãnga lája ndojekuaái. "
 
 #: source/ui/shells/shells.src#STR_GRFILTER_VERSIONERROR.String.Text
-#, fuzzy
 msgid  "This graphic file version is not supported"
 msgstr "Ndaijái ta'ãnga ñongatupyre versión."
 
 #: source/ui/shells/shells.src#STR_GRFILTER_FILTERERROR.String.Text
-#, fuzzy
 msgid  "Graphics filter not found"
 msgstr "Ndojejuhúi ta'ãnga mboguaha."
 
 #: source/ui/shells/shells.src#STR_GRFILTER_TOOBIG.String.Text
-#, fuzzy
 msgid  "Not enough memory to insert the picture."
 msgstr "Imemória ndaipu'akái oñemoinge haĝua ko ta'ãnga. "
 
 #: source/ui/shells/shells.src#STR_INSERT_GRAPHIC.String.Text
-#, fuzzy
 msgid  "Insert picture"
 msgstr "Emoinge ta'ãnga."
 
 #: source/ui/shells/shells.src#STR_NO_ADDRESSBOOK.String.Text
-#, fuzzy
 msgid  "An Address Book does not exist"
 msgstr "Ndaipóri dirección renda iporupyrã"
 
 #: source/ui/shells/shells.src#STR_NOTIZ_INSERT.String.Text
-#, fuzzy
 msgid  "Insert Note"
 msgstr "Emoinge haipy mbykymi"
 
 #: source/ui/shells/shells.src#STR_REDLINE_COMMENT.String.Text
-#, fuzzy
 msgid  "Comment: "
 msgstr "Temimo'ã:"
 
 #: source/ui/shells/shells.src#STR_REDLINE_INSERTED.String.Text
-#, fuzzy
 msgid  "Insertion"
 msgstr "Moingepy"
 
 #: source/ui/shells/shells.src#STR_REDLINE_DELETED.String.Text
-#, fuzzy
 msgid  "Deletion"
 msgstr "Mbogue"
 
@@ -10431,17 +10313,14 @@ msgid  "AutoCorrect"
 msgstr ""
 
 #: source/ui/shells/shells.src#STR_REDLINE_FORMATED.String.Text
-#, fuzzy
 msgid  "Formats"
 msgstr "Lája"
 
 #: source/ui/shells/shells.src#STR_REDLINE_TABLECHG.String.Text
-#, fuzzy
 msgid  "Table Changes"
 msgstr "Tabla ñemoambue"
 
 #: source/ui/shells/shells.src#STR_REDLINE_FMTCOLLSET.String.Text
-#, fuzzy
 msgid  "Applied Paragraph Styles"
 msgstr "Oñemboguatáma haipyvo lája. "
 
@@ -10450,8 +10329,9 @@ msgid  "AutoCorrect"
 msgstr ""
 
 #: source/ui/shells/shells.src#STR_REDLINE_MSG.String.Text
+#, fuzzy
 msgid  "AutoCorrect completed.\nYou can accept or reject all changes,\nor accept or reject particular changes."
-msgstr ""
+msgstr "Ñembolája ijehegui oñemboguatáma.\nko'áĝa ikatu remoneĩ ỹrõ rembotove umi oñemoambuéva,\noñondivepa ỹrõ peteĩteĩ."
 
 #: source/ui/shells/shells.src#STR_REDLINE_ACCEPT_ALL.String.Text
 #, fuzzy
@@ -10469,8 +10349,9 @@ msgid  "Edit Changes"
 msgstr "Ehaijey umi ñemoambue."
 
 #: source/ui/shells/shells.src#DLG_IMPORT_DBNAME.QueryBox.Message
+#, fuzzy
 msgid  "Use database name as default database for the document?"
-msgstr ""
+msgstr "Reipurusépa ko marandu renda réra marandu renda ypýramo ko kuatiápe ĝuarã."
 
 #: source/ui/shells/shells.src#STR_PAGE.String.Text
 #, fuzzy
@@ -10623,7 +10504,6 @@ msgid  "Footer"
 msgstr "Kuatia rogue py"
 
 #: source/ui/smartmenu/stmenu.src#MN_SMARTTAG_POPUP.MN_SMARTTAG_OPTIONS.MenuItem.Text
-#, fuzzy
 msgid  "Smart Tag Options..."
 msgstr "Smart Tag poravopyrã..."
 
@@ -10927,6 +10807,10 @@ msgstr ""
 msgid  "Cre~ate"
 msgstr ""
 
+#: source/ui/table/tabledlg.src#TEXT_TEXTFLOW.#define.Text
+msgid  "Text Flow"
+msgstr ""
+
 #: source/ui/table/tabledlg.src#DLG_FORMAT_TABLE.TabDialog.Text
 msgid  "Table Format"
 msgstr ""
@@ -11135,10 +11019,6 @@ msgstr ""
 msgid  "The name of the table must not contain spaces."
 msgstr ""
 
-#: source/ui/table/tabledlg.src#TEXT_TEXTFLOW.#define.Text
-msgid  "Text Flow"
-msgstr ""
-
 #: source/ui/table/splittbl.src#DLG_SPLIT_TABLE.FL_SPLIT.FixedLine.Text
 msgid  "Mode"
 msgstr ""
@@ -11197,6 +11077,10 @@ msgstr ""
 
 #: source/ui/uiview/view.src#MSG_NO_MERGE_ENTRY.InfoBox.Message
 msgid  "Could not merge documents."
+msgstr ""
+
+#: source/ui/uiview/view.src#MSG_ERR_INSERT_GLOS.InfoBox.Message
+msgid  "AutoText could not be created."
 msgstr ""
 
 #: source/ui/uiview/view.src#MSG_ERR_SRCSTREAM.InfoBox.Message
@@ -11291,10 +11175,6 @@ msgstr ""
 msgid  "HTML Source"
 msgstr ""
 
-#: source/ui/uiview/view.src#MSG_ERR_INSERT_GLOS.InfoBox.Message
-msgid  "AutoText could not be created."
-msgstr ""
-
 #: source/ui/uiview/pview.src#DLG_PAGEPREVIEW_ZOOM.ModalDialog.Text
 msgid  "Multiple Pages"
 msgstr ""
@@ -11328,7 +11208,7 @@ msgid  "Capitalize first letter of sentences"
 msgstr ""
 
 #: source/ui/utlui/utlui.src#RID_SHELLRES_AUTOFMTSTRS.STR_AUTOFMTREDL_TYPO+1.String.Text
-msgid  "Replace "standard" quotes with %1 \bcustom%2 quotes"
+msgid  "Replace \"standard\" quotes with %1 \bcustom%2 quotes"
 msgstr ""
 
 #: source/ui/utlui/utlui.src#RID_SHELLRES_AUTOFMTSTRS.STR_AUTOFMTREDL_USER_STYLE+1.String.Text
@@ -11368,27 +11248,27 @@ msgid  "Combine single line paragraphs"
 msgstr ""
 
 #: source/ui/utlui/utlui.src#RID_SHELLRES_AUTOFMTSTRS.STR_AUTOFMTREDL_SET_TMPL_TEXT +1.String.Text
-msgid  "Set "Text body" Style"
+msgid  "Set \"Text body\" Style"
 msgstr ""
 
 #: source/ui/utlui/utlui.src#RID_SHELLRES_AUTOFMTSTRS.STR_AUTOFMTREDL_SET_TMPL_INDENT.String.Text
-msgid  "Set "Text body indent" Style"
+msgid  "Set \"Text body indent\" Style"
 msgstr ""
 
 #: source/ui/utlui/utlui.src#RID_SHELLRES_AUTOFMTSTRS.STR_AUTOFMTREDL_SET_TMPL_NEG_INDENT.String.Text
-msgid  "Set "Hanging indent" Style"
+msgid  "Set \"Hanging indent\" Style"
 msgstr ""
 
 #: source/ui/utlui/utlui.src#RID_SHELLRES_AUTOFMTSTRS.STR_AUTOFMTREDL_SET_TMPL_TEXT_INDENT +1.String.Text
-msgid  "Set "Text body indent" Style"
+msgid  "Set \"Text body indent\" Style"
 msgstr ""
 
 #: source/ui/utlui/utlui.src#RID_SHELLRES_AUTOFMTSTRS.STR_AUTOFMTREDL_SET_TMPL_HEADLINE +1.String.Text
-msgid  "Set "Heading $(ARG1)" Style"
+msgid  "Set \"Heading $(ARG1)\" Style"
 msgstr ""
 
 #: source/ui/utlui/utlui.src#RID_SHELLRES_AUTOFMTSTRS.STR_AUTOFMTREDL_SET_NUMBULET +1.String.Text
-msgid  "Set "Bullet" or "Numbering" Style"
+msgid  "Set \"Bullet\" or \"Numbering\" Style"
 msgstr ""
 
 #: source/ui/utlui/utlui.src#RID_SHELLRES_AUTOFMTSTRS.STR_AUTOFMTREDL_DEL_MORELINES +1.String.Text
@@ -13087,6 +12967,18 @@ msgstr ""
 msgid  "at bottom"
 msgstr ""
 
+#: source/ui/utlui/attrdesc.src#STR_LINE_TOP.String.Text
+msgid  "Top of line"
+msgstr ""
+
+#: source/ui/utlui/attrdesc.src#STR_LINE_CENTER.String.Text
+msgid  "Line centered"
+msgstr ""
+
+#: source/ui/utlui/attrdesc.src#STR_LINE_BOTTOM.String.Text
+msgid  "Bottom of line"
+msgstr ""
+
 #: source/ui/utlui/attrdesc.src#STR_REGISTER_ON.String.Text
 msgid  "Register-true"
 msgstr ""
@@ -13255,99 +13147,70 @@ msgstr ""
 msgid  "Do not merge borders"
 msgstr ""
 
-#: source/ui/utlui/attrdesc.src#STR_LINE_TOP.String.Text
-msgid  "Top of line"
-msgstr ""
-
-#: source/ui/utlui/attrdesc.src#STR_LINE_CENTER.String.Text
-msgid  "Line centered"
-msgstr ""
-
-#: source/ui/utlui/attrdesc.src#STR_LINE_BOTTOM.String.Text
-msgid  "Bottom of line"
-msgstr ""
-
 #: source/ui/web/web.src#STR_HUMAN_SWWEBDOC_NAME.String.Text
-#, fuzzy
 msgid  "HTML"
 msgstr "HTML"
 
 #: source/ui/web/web.src#STR_WRITER_WEBDOC_FULLTYPE_40.String.Text
-#, fuzzy
 msgid  "%PRODUCTNAME 4.0 HTML"
 msgstr "%PRODUCTNAME 4.0 HTML"
 
 #: source/ui/web/web.src#STR_WRITER_WEBDOC_FULLTYPE_50.String.Text
-#, fuzzy
 msgid  "%PRODUCTNAME 5.0 HTML"
 msgstr "%PRODUCTNAME 5.0 HTML"
 
 #: source/ui/web/web.src#STR_WRITER_WEBDOC_FULLTYPE.String.Text
-#, fuzzy
 msgid  "%PRODUCTNAME %PRODUCTVERSION HTML Document"
 msgstr "%PRODUCTNAME %PRODUCTVERSION HTML kuatia"
 
 #: source/ui/web/web.src#STR_SHELLNAME_WEBTEXT.String.Text
-#, fuzzy
 msgid  "Text/Web"
 msgstr "Haipy/Web"
 
 #: source/ui/web/web.src#STR_SHELLNAME_WEBFRAME.String.Text
-#, fuzzy
 msgid  "Frame/Web"
 msgstr "Marco/Web"
 
 #: source/ui/web/web.src#RID_WEBTOOLS_TOOLBOX.String.Text
-#, fuzzy
 msgid  "Main Toolbar/Web"
 msgstr "Tembiporu renda/Web"
 
 #: source/ui/web/web.src#RID_WEBTEXT_TOOLBOX.String.Text
-#, fuzzy
 msgid  "Text Object Bar/Web"
 msgstr "Mba'e haipy renda/Web"
 
 #: source/ui/web/web.src#RID_WEBFRAME_TOOLBOX.String.Text
-#, fuzzy
 msgid  "Frame Object Bar/Web"
 msgstr "Mba'e marco rehegua renda/Web"
 
 #: source/ui/web/web.src#RID_WEBGRAPHIC_TOOLBOX.String.Text
-#, fuzzy
 msgid  "Graphics Object Bar/Web"
 msgstr "Mba'e ta'ãnga rehegua renda/Web"
 
 #: source/ui/web/web.src#RID_WEBOLE_TOOLBOX.String.Text
-#, fuzzy
 msgid  "Object/Web"
 msgstr "Mba'e/Web"
 
 #: source/ui/wrtsh/wrtsh.src#STR_DDEERROR_APP1.String.Text
-#, fuzzy
 msgid  "Application ["
 msgstr "Tembiapo mboguataha ["
 
 #: source/ui/wrtsh/wrtsh.src#STR_DDEERROR_APP2.String.Text
-#, fuzzy
 msgid  "] is not responding."
 msgstr "] nombohovái"
 
 #: source/ui/wrtsh/wrtsh.src#STR_DDEERROR_DATA1.String.Text
-#, fuzzy
 msgid  "Data for ["
 msgstr "Marandu ["
 
 #: source/ui/wrtsh/wrtsh.src#STR_DDEERROR_DATA2.String.Text
-#, fuzzy
 msgid  "] cannot be obtained"
 msgstr "] ndojejuhúi"
 
 #: source/ui/wrtsh/wrtsh.src#STR_DDEERROR_LINK1.String.Text
-#, fuzzy
 msgid  "Link to ["
 msgstr "Pe joajuha ["
 
 #: source/ui/wrtsh/wrtsh.src#STR_DDEERROR_LINK2.String.Text
-#, fuzzy
 msgid  "] cannot be established"
 msgstr "] ndaikatúi ojoapy "

@@ -41,23 +41,23 @@ msgstr "Холболт тавих оролдлого бүтэлгүй болло
 
 #: source/core/resource/strings.src#RID_STR_TABLE_IS_FILTERED.String.Text
 msgid  "The table $name$ already exists. It is not visible because it has been filtered out."
-msgstr ""
+msgstr "$name$ хүснэгт аль хэдийнэ үүссэн байна. Шүүлтүүрээр шүүгдсэн тул харагдахгүй байна."
 
 #: source/core/resource/strings.src#RID_STR_NEED_CONFIG_WRITE_ACCESS.String.Text
 msgid  "You have no write access to the configuration data the object is based on."
-msgstr ""
+msgstr "Танд энэ объект суурилсан тохируулгын өгөгдөл рүү бичих зөвшөөрөл байхгүй байна"
 
 #: source/core/resource/strings.src#RID_STR_COULDNOTCONNECT_UNSPECIFIED.String.Text
 msgid  "The connection to the external data source could not be established. An unknown error occurred. The driver is probably defective."
-msgstr ""
+msgstr "Гадаад өгөгдлийн эх үүсвэр лүү хийсэн холболт тогтоох оролдлого бүтэлгүй боллоо. Тодорхойгүй алдаа гарлаа. Драйвер алдаатай байж болзошгүй."
 
 #: source/core/resource/strings.src#RID_STR_COULDNOTCONNECT_NODRIVER.String.Text
 msgid  "The connection to the external data source could not be established. No SDBC driver was found for the given URL."
-msgstr ""
+msgstr "Гадаад өгөгдлийн эх сурвалж руу хийсэн холболт тогтоох оролдлого бүтэлгүй боллоо. Өгөгдсөн Хаяг (URL)-д зориулагдсан SDBC драйвер менежер олдсонгүй."
 
 #: source/core/resource/strings.src#RID_STR_COULDNOTLOAD_MANAGER.String.Text
 msgid  "The connection to the external data source could not be established. The SDBC driver manager could not be loaded."
-msgstr ""
+msgstr "Гадаад өгөгдлийн эх сурвалж руу хийсэн холболт тогтоох оролдлого бүтэлгүй боллоо. SDBC драйвер менежер ачаалагдаж чадсангүй."
 
 #: source/core/resource/strings.src#RID_STR_FORM.String.Text
 msgid  "Form"
@@ -69,11 +69,11 @@ msgstr "Тайлан"
 
 #: source/core/resource/strings.src#RID_STR_DATASOURCE_NOT_STORED.String.Text
 msgid  "The data source was not saved. Please use the interface XStorable to save the data source."
-msgstr ""
+msgstr "Өгөгдлийн эх сурвалж хадгалагдсангүй.  Өгөгдлийн эх сурвалжийг хадгалахдаа XStorable интерфейсийг ашиглана уу."
 
 #: source/core/resource/strings.src#RID_STR_ONLY_QUERY.String.Text
 msgid  "The given command is not a SELECT statement.\nOnly queries are allowed."
-msgstr ""
+msgstr "Өгөгдсөн команд  SELECT илэрхийлэл биш байна.\nЗөвхөн Асуулгууд л зөвшөөрөгдөнө."
 
 #: source/core/resource/strings.src#RID_STR_NO_VALUE_CHANGED.String.Text
 msgid  "No values were modified."
@@ -81,11 +81,11 @@ msgstr "Ямар ч утга өөрчлөгдсөнгүй."
 
 #: source/core/resource/strings.src#RID_STR_NO_XROWUPDATE.String.Text
 msgid  "Values could not be inserted. The XRowUpdate interface is not supported by ResultSet."
-msgstr ""
+msgstr "Утгуудыг нэмэх бүтэлгүй боллоо. XRowUpdate интерфейс ResultSet-ээр дэмжигдээгүй."
 
 #: source/core/resource/strings.src#RID_STR_NO_XRESULTSETUPDATE.String.Text
 msgid  "Values could not be inserted. The XResultSetUpdate interface is not supported by ResultSet."
-msgstr ""
+msgstr "Утгуудыг нэмэх бүтэлгүй боллоо. XResultSetUpdate интерфейс ResultSet-ээр дэмжигдээгүй."
 
 #: source/core/resource/strings.src#RID_STR_NO_UPDATE_MISSING_CONDITION.String.Text
 msgid  "Values could not be modified, due to a missing condition statement."
@@ -141,11 +141,11 @@ msgstr "Энэ төлөвт харьцангуй байршуулалт зөвш
 
 #: source/core/resource/strings.src#RID_STR_NO_REFESH_AFTERLAST.String.Text
 msgid  "A row cannot be refreshed when the ResultSet is positioned after the last row."
-msgstr ""
+msgstr " ResultSet төгсгөлийн мөрний дараа байршуулагдсан үед мөрийг шинэчлэх боломжгүй."
 
 #: source/core/resource/strings.src#RID_STR_NO_MOVETOINSERTROW_CALLED.String.Text
 msgid  "A new row cannot be inserted when the ResultSet is not first moved to the insert row."
-msgstr ""
+msgstr "Шинээр нэмж оруулах мөрөнд ResultSet шилжээгүй байхад шинэ мөр нэмж болохгүй."
 
 #: source/core/resource/strings.src#RID_STR_NO_UPDATEROW.String.Text
 msgid  "A row cannot be modified in this state"
@@ -165,31 +165,31 @@ msgstr "Энэ драйвер нь баганын тайлбарыг өөрчл�
 
 #: source/core/resource/strings.src#RID_STR_COLUMN_ALTER_BY_NAME.String.Text
 msgid  "The driver does not support the modification of column descriptions by changing the name."
-msgstr ""
+msgstr "Нэрийг нь өөрчилсөнөөр баганын тайлбарыг өөрчлөхийг энэ драйвер дэмждэггүй."
 
 #: source/core/resource/strings.src#RID_STR_COLUMN_ALTER_BY_INDEX.String.Text
 msgid  "The driver does not support the modification of column descriptions by changing the index."
-msgstr ""
+msgstr "Индексийг нь өөрчилсөнөөр баганын тайлбарыг өөрчлөхийг энэ драйвер дэмждэггүй."
 
 #: source/core/resource/strings.src#RID_STR_FILE_DOES_NOT_EXIST.String.Text
-msgid  "The file "$file$" does not exist."
-msgstr ""
+msgid  "The file \"$file$\" does not exist."
+msgstr "\"$file$\"  файл байхгүй байна."
 
 #: source/core/resource/strings.src#RID_STR_TABLE_DOES_NOT_EXIST.String.Text
-msgid  "There exists no table named "$table$"."
-msgstr ""
+msgid  "There exists no table named \"$table$\"."
+msgstr "\"$table$\" нэртэй хүснэгт байхгүй байна."
 
 #: source/core/resource/strings.src#RID_STR_QUERY_DOES_NOT_EXIST.String.Text
-msgid  "There exists no query named "$table$"."
+msgid  "There exists no query named \"$table$\"."
 msgstr ""
 
 #: source/core/resource/strings.src#RID_STR_CONFLICTING_NAMES.String.Text
 msgid  "There are tables in the database whose names conflict with the names of existing queries. To make full use of all queries and tables, make sure they have distinct names."
-msgstr ""
+msgstr "Энд оршиж буй Асуулгуудын нэртэй зөрчилдсөн хүснэгтүүд өгөгдлийн санд байна. Бүх хүснэгт болон Кюри-г ашиглахын тулд тэдгээрийн нэр давхардаагүй байгааг сайн шалга."
 
 #: source/core/resource/strings.src#RID_STR_COMMAND_LEADING_TO_ERROR.String.Text
 msgid  "The SQL command leading to this error is:\n\n$command$"
-msgstr ""
+msgstr "Энэ алдаа гарахад нөлөөлсөн SQL команд бол:\n\n$command$"
 
 #: source/core/resource/strings.src#RID_STR_STATEMENT_WITHOUT_RESULT_SET.String.Text
 msgid  "The SQL command does not describe a result set."
@@ -228,7 +228,7 @@ msgid  "Error accessing data source '$name$':\n$error$"
 msgstr ""
 
 #: source/core/resource/strings.src#RID_STR_NO_SUB_FOLDER.String.Text
-msgid  "There exists no folder named "$folder$"."
+msgid  "There exists no folder named \"$folder$\"."
 msgstr ""
 
 #: source/core/resource/strings.src#RID_STR_NO_DELETE_BEFORE_AFTER.String.Text
@@ -296,7 +296,7 @@ msgid  "Embedding of database documents is not supported."
 msgstr ""
 
 #: source/core/resource/strings.src#RID_STR_CONNECTION_REQUEST.String.Text
-msgid  "A connection for the following URL was requested "$name$"."
+msgid  "A connection for the following URL was requested \"$name$\"."
 msgstr ""
 
 #: source/core/resource/strings.src#RID_STR_MISSING_EXTENSION.String.Text
@@ -428,8 +428,8 @@ msgid  "The specified file name or directory does not exist."
 msgstr "Ийм нэртэй файл болон хавтас алга."
 
 #: source/ext/adabas/AdabasNewDb.src#STR_ERROR_IN_ADABAS_INSTALLATION.String.Text
-msgid  "No new database can be created.\nPlease check your Adabas D installation, especially the variables "DBROOT" and "DBWORK"."
-msgstr ""
+msgid  "No new database can be created.\nPlease check your Adabas D installation, especially the variables \"DBROOT\" and \"DBWORK\"."
+msgstr "Ямар ч өгөгдлийн сан шинээр үүсгэж чадахгүй.\nAdabas D-н суулгацыг болон \"DBROOT\", \"DBWORK\" хувьсагчуудыг шалгана уу."
 
 #: source/ext/adabas/AdabasNewDb.src#STR_STAT_WARNING.String.Text
 msgid  "Warning!"
@@ -453,15 +453,15 @@ msgstr "Оруулсан нэр хэдийнэ байна."
 
 #: source/ext/adabas/AdabasNewDb.src#STR_ADABAS_NO_DEFAULTNAME.String.Text
 msgid  "No default names could be set for the database files. The total length is more than 40 characters."
-msgstr ""
+msgstr "Нэрийн урт нь 40-н тэмдэгтээс их учир энэ нэрээр өгөгдлийн сангийн файлыг нэрлэж болохгүй."
 
 #: source/ext/adabas/AdabasNewDb.src#STR_ADABAS_NO_ACCESSRIGHTS.String.Text
 msgid  "No default names could be set for the database files. There is no write access."
-msgstr ""
+msgstr "Бичих эрх байхгүй учир энэ нэрээр өгөгдлийн сангийн файлыг нэрлэсэнгүй."
 
 #: source/ext/adabas/AdabasNewDb.src#STR_ADABAS_CANNOT_CONVERT.String.Text
 msgid  "The current database need to be converted. Please insert control user  and password."
-msgstr ""
+msgstr "Идэвхтэй өгөгдлийн санг хөрвүүлэх хэрэгтэй. Хянагч хэрэглэгчийн нэр болон нууц үгийг оруулна уу."
 
 #: source/ext/adabas/AdabasNewDb.src#STR_ADABAS_PASSWORD_ILLEGAL.String.Text
 msgid  "Spaces are not permitted in the password. Please enter a new password."
@@ -493,11 +493,11 @@ msgstr "Өгөгдлийн сангийн макро шилжүүлэгт зал
 
 #: source/ext/macromigration/macromigration.src#TP_PREPARE.FT_INTRODUCTION.FixedText.Text
 msgid  "This wizard will guide you through the task of migrating your macros.\n\nAfter you finished it, all macros which were formerly embedded into the forms and reports of the current database document will have been moved to the document itself. In this course, libraries will be renamed as needed.\n\nIf your forms and reports contain references to those macros, they will be adjusted, where possible.\n\nBefore the migration can start, all forms, reports, queries and tables belonging to the document must be closed. Press 'Next' to do so."
-msgstr ""
+msgstr "Энэ залуурч таны макро болон скриптүүдийг шилжүүлэх ажлыг хөтөлнө.\n\nЭнэ дууссаны дараа өмнө нь таны маягт болон тайланд шигтгэсэн бүх макро болон скриптүүдийг өгөгдлийн сангийн баримт руу зөөсөн байх болно.\n\nХэрэв таны маягт болон тайлан макро, скриптүүд рүү заасан заалт агуулж байвал, тэднийг боломжийн хэрээр тааруулна.\n\nШилжүүлэгийг эхлүүлэхийн өмнө бүх маягт, тайлан, асуулга болон хүснэгтүүд хаагдсан байх ёстой. Объектуудыг хаахын тулд 'Дараагийн' дээр дарна уу."
 
 #: source/ext/macromigration/macromigration.src#TP_PREPARE.FT_CLOSE_DOC_ERROR.FixedText.Text
 msgid  "Not all objects could be closed. Please close them manually, and re-start the wizard."
-msgstr ""
+msgstr "Зарим объектууд хаагдсангүй. Тэдгээрийг гараар хаагаад, залуурчийг шинээр эхлүүлнэ үү."
 
 #: source/ext/macromigration/macromigration.src#TP_SAVE_DBDOC_AS.FT_HEADER.FixedText.Text
 msgid  "Backup your Document"
@@ -505,7 +505,7 @@ msgstr "Баримтаа нөөцөлнө үү"
 
 #: source/ext/macromigration/macromigration.src#TP_SAVE_DBDOC_AS.FT_EXPLANATION.FixedText.Text
 msgid  "To allow you to go back to the state before the migration, the database document will be backed up to a location of your choice. Every change done by the wizard will be made to the original document, the backup will stay untouched."
-msgstr ""
+msgstr "Шилжүүлэгийн өмнөх төлөвийг эргэн сэргээх боломжтой байлгахын тулд таны сонгосон байрлалд өгөгдлийн сангийн баримтын хуулбар хадгалагдана. Залуурчийн бүх өөрчлөлтүүд зөвхөн эх баримтад хийгдэх ба нөөц хуулбар өөрчлөгдөхгүй үлдэнэ."
 
 #: source/ext/macromigration/macromigration.src#TP_SAVE_DBDOC_AS.FT_SAVE_AS_LABEL.FixedText.Text
 msgid  "Save To:"
@@ -517,7 +517,7 @@ msgstr "Гүйлгэн үзэх..."
 
 #: source/ext/macromigration/macromigration.src#TP_SAVE_DBDOC_AS.FT_START_MIGRATION.FixedText.Text
 msgid  "Press 'Next' to save a copy of your document, and to begin the migration."
-msgstr ""
+msgstr "Баримтын хуулбарыг хадгалан шилжүүлэгийг эхлүүлэхийн тулд 'Дараагийн' дээр дарна уу."
 
 #: source/ext/macromigration/macromigration.src#TP_MIGRATE.FT_HEADER.FixedText.Text
 msgid  "Migration Progress"
@@ -525,7 +525,7 @@ msgstr "Шилжүүлгийн явц"
 
 #: source/ext/macromigration/macromigration.src#TP_MIGRATE.FT_OBJECT_COUNT.FixedText.Text
 msgid  "The database document contains $forms$ form(s) and $reports$ report(s), which are currently being processed:"
-msgstr ""
+msgstr "Өгөгдлийн сангийн баримт одоо боловсруулагдаж буй $forms$ Маягт ба $reports$ тайлан агуулж байна:"
 
 #: source/ext/macromigration/macromigration.src#TP_MIGRATE.FT_CURRENT_OBJECT_LABEL.FixedText.Text
 msgid  "Current object:"
@@ -545,7 +545,7 @@ msgstr " $overall$ -н $current$ баримт"
 
 #: source/ext/macromigration/macromigration.src#TP_MIGRATE.FT_MIGRATION_DONE.FixedText.Text
 msgid  "All forms and reports have been successfully processed. Press 'Next' to show a detailed summary."
-msgstr ""
+msgstr "Бүх баримтуудыг амжилттай боловсрууллаа. 'Дараагийн' дээр дарж нарийвчилсан дүгнэлтийг үзнэ үү."
 
 #: source/ext/macromigration/macromigration.src#TP_SUMMARY.FT_HEADER.FixedText.Text
 msgid  "Summary"
@@ -645,7 +645,7 @@ msgstr ""
 
 #: source/sdbtools/resource/sdbt_strings.src#STR_QUERY_AND_TABLE_DISTINCT_NAMES.String.Text
 msgid  "You cannot give a table and a query the same name. Please use a name which is not yet used by a query or table."
-msgstr ""
+msgstr "Та хүснэгт болон асуулгад ижил нэр өгч болохгүй. Ямар нэгэн ашиглагдаагүй нэр өгнө үү."
 
 #: source/sdbtools/resource/sdbt_strings.src#STR_BASENAME_TABLE.String.Text
 msgid  "Table"
@@ -657,7 +657,7 @@ msgstr "Асуулга"
 
 #: source/sdbtools/resource/sdbt_strings.src#STR_CONN_WITHOUT_QUERIES_OR_TABLES.String.Text
 msgid  "The given connection is no valid query and/or tables supplier."
-msgstr ""
+msgstr "Өгөгдсөн холболт нь хүчинтэй асуулга ба/эсвэл хүснэгт нийлүүлэгч биш байна."
 
 #: source/sdbtools/resource/sdbt_strings.src#STR_NO_TABLE_OBJECT.String.Text
 msgid  "The given object is no table object."
@@ -665,11 +665,11 @@ msgstr "Өгөгдсөн объект нь хүснэгт объект биш б
 
 #: source/sdbtools/resource/sdbt_strings.src#STR_INVALID_COMPOSITION_TYPE.String.Text
 msgid  "Invalid composition type - need a value from com.sun.star.sdb.tools.CompositionType."
-msgstr ""
+msgstr "Хүчингүй нийлмэл төрөл. Утга com.sun.star.sdb.tools.CompositionType -с байх ёстой."
 
 #: source/sdbtools/resource/sdbt_strings.src#STR_INVALID_COMMAND_TYPE.String.Text
 msgid  "Invalid command type - only TABLE and QUERY from com.sun.star.sdb.CommandType are allowed."
-msgstr ""
+msgstr "Хүчингүй командын төрөл. Зөвхөн com.sun.star.sdb.CommandType-аас авсан ХҮСНЭГТ болон АСУУЛГА зөвшөөрөгдөнө."
 
 #: source/ui/app/app.src#RID_STR_NEW_FORM.String.Text
 msgid  "Create Form in Design View..."
@@ -801,15 +801,15 @@ msgstr " - %PRODUCTNAME Base"
 
 #: source/ui/app/app.src#RID_STR_REPORTS_HELP_TEXT_WIZARD.String.Text
 msgid  "The wizard will guide you through the steps necessary to create a report."
-msgstr ""
+msgstr "Энэ залуурч таныг тайлан үүсгэхэд шаардлагатай алхмуудад хөтөлнө."
 
 #: source/ui/app/app.src#RID_STR_FORMS_HELP_TEXT.String.Text
 msgid  "Create a form by specifying the record source, controls, and control properties."
-msgstr ""
+msgstr "Бичлэгийн эх, контрол, болон контролын шинжүүдийг тодорхойлж маягт үүсгэх."
 
 #: source/ui/app/app.src#RID_STR_REPORT_HELP_TEXT.String.Text
 msgid  "Create a report by specifying the record source, controls, and control properties."
-msgstr ""
+msgstr "Бичлэгийн эх, контрол болон контролын шинжүүдийг тодорхойлж Тайлан үүсгэх."
 
 #: source/ui/app/app.src#RID_STR_FORMS_HELP_TEXT_WIZARD.String.Text
 msgid  "The wizard will guide you through the steps necessary to create a form."
@@ -817,7 +817,7 @@ msgstr "Энэ залуурч таныг маягт үүсгэхэд шаард�
 
 #: source/ui/app/app.src#RID_STR_QUERIES_HELP_TEXT.String.Text
 msgid  "Create a query by specifying the filters, input tables, field names,  and  properties for sorting or grouping."
-msgstr ""
+msgstr "Шүүлтүүрүүд, оруулалтын хүснэгтүүд, талбарын нэрс, болон шинжүүдийг оруулж асуулга үүсгэн, эрэмбэлэх эсвэл бүлэглэх."
 
 #: source/ui/app/app.src#RID_STR_QUERIES_HELP_TEXT_SQL.String.Text
 msgid  "Create a query  entering an SQL statement directly."
@@ -825,19 +825,19 @@ msgstr "SQL илэрхийллүүдийг шууд оруулан Асуулг�
 
 #: source/ui/app/app.src#RID_STR_QUERIES_HELP_TEXT_WIZARD.String.Text
 msgid  "The wizard will guide you through the steps necessary to create a query."
-msgstr ""
+msgstr "Энэ залуурч таныг Асуулга үүсгэхэд шаардлагатай алхмуудад хөтөлнө."
 
 #: source/ui/app/app.src#RID_STR_TABLES_HELP_TEXT_DESIGN.String.Text
 msgid  "Create a table by specifying the field names and properties, as well as the data types."
-msgstr ""
+msgstr "Талбарын нэр ба шинжүүд түүнчлэн өгөгдлийн төрлийг тодорхойлон хүснэгт үүсгэх."
 
 #: source/ui/app/app.src#RID_STR_TABLES_HELP_TEXT_WIZARD.String.Text
 msgid  "Choose from a selection of business and personal table samples, which you customize to create a table."
-msgstr ""
+msgstr "Та жишээ business болон personal хүснэгтийг өөриймсгөн хүснэгт үүсгэхийг хүсэж байгаа бол сонголтоо хийнэ үү."
 
 #: source/ui/app/app.src#RID_STR_VIEWS_HELP_TEXT_DESIGN.String.Text
 msgid  "Create a view by specifying the tables and field names you would like to have visible."
-msgstr ""
+msgstr "Харагдах хүснэгт болон талбарын нэрсийг тодорхойлон Дүрслэл үүсгэнэ."
 
 #: source/ui/app/app.src#RID_STR_VIEWS_HELP_TEXT_WIZARD.String.Text
 msgid  "Opens the view wizard"
@@ -865,11 +865,11 @@ msgstr "Нягтлан харахыг хаах"
 
 #: source/ui/app/app.src#APP_SAVEMODIFIED.QueryBox.Message
 msgid  "The database has been modified.\nDo you want to save the changes?"
-msgstr ""
+msgstr "Өгөгдлийн сан өөрчлөгдсөн байна.\nӨөрчлөлтүүдийг хадгалах уу?"
 
 #: source/ui/app/app.src#APP_CLOSEDOCUMENTS.QueryBox.Message
 msgid  "The connection type has been altered.\nFor the changes to take effect, all forms, reports, queries and tables must be closed.\n\nDo you want to close all documents now?"
-msgstr ""
+msgstr "Холболтын төрөл хуучирчээ.\nӨөрчлөлт хийхийн тулд бүх маягт, тайлан, асуулга, хүснэгтүүдийг хаах хэрэгтэй.\n\nТа одоо бүх баримтуудыг хаахыг хүсэж байна уу?"
 
 #: source/ui/app/app.src#RID_MENU_APP_PREVIEW.SID_DB_APP_DISABLE_PREVIEW.MenuItem.Text
 msgid  "None"
@@ -882,6 +882,14 @@ msgstr "Баримтын мэдээлэл"
 #: source/ui/app/app.src#RID_MENU_APP_PREVIEW.SID_DB_APP_VIEW_DOC_PREVIEW.MenuItem.Text
 msgid  "Document"
 msgstr "Баримт"
+
+#: source/ui/app/app.src#RID_STR_FORM.String.Text
+msgid  "Form"
+msgstr "Маягт"
+
+#: source/ui/app/app.src#RID_STR_REPORT.String.Text
+msgid  "Report"
+msgstr "Тайлан"
 
 #: source/ui/app/app.src#STR_FRM_LABEL.String.Text
 msgid  "F~orm name"
@@ -897,11 +905,11 @@ msgstr "~Хавтасны нэр"
 
 #: source/ui/app/app.src#STR_SUB_DOCS_WITH_SCRIPTS.String.Text
 msgid  "The document contains forms or reports with embedded macros."
-msgstr ""
+msgstr "Баримт макро болон/эсвэл скрипт шигтгэсэн маягт ба/буюу тайлан агуулж байна."
 
 #: source/ui/app/app.src#STR_SUB_DOCS_WITH_SCRIPTS_DETAIL.String.Text
 msgid  "Macros should be embedded into the database document itself.\n\nYou can continue to use your document as before, however, you are encouraged to migrate your macros. The menu item 'Tools / Migrate Macros ...' will assist you with this.\n\nNote that you won't be able to embed macros into the database document itself until this migration is done. "
-msgstr ""
+msgstr "Макро ба скриптүүд одоо өгөгдлийн баазын баримтын өөрт нь хадгалагдахёстой.\n\nТа баримтаа хэдийгээр өмнөх шигээ ашиглаж болох боловч макро болон скриптээ шилжүүлэхийг зөвлөж байна. Үүнийг та 'Хэрэгсэл / Скрипт ба макрог шилжүүлэх...' цэсийг сонгон хийх боломжтой.\n\nЭнэ шилжүүлэгийг хийхээс нааш скрипт ба макрог өгөгдлийн баазын баримтад шигтгэх боломжгүй болохыг танп сануулж байна."
 
 #: source/ui/app/app.src#RID_STR_EMBEDDED_DATABASE.String.Text
 msgid  "Embedded database"
@@ -915,17 +923,9 @@ msgstr ""
 msgid  "Unsupported object type found ($type$)."
 msgstr ""
 
-#: source/ui/app/app.src#RID_STR_FORM.String.Text
-msgid  "Form"
-msgstr "Маягт"
-
-#: source/ui/app/app.src#RID_STR_REPORT.String.Text
-msgid  "Report"
-msgstr "Тайлан"
-
 #: source/ui/browser/sbabrw.src#QUERY_BRW_SAVEMODIFIED.QueryBox.Message
 msgid  "The current record has been changed.\nDo you want to save the changes?"
-msgstr ""
+msgstr "Идэвхтэй бичлэг өөрчлөгдсөн.\nТа өөрчлөлтүүдийг хадгалахыг хүсэж байна уу?"
 
 #: source/ui/browser/sbabrw.src#QUERY_BRW_DELETE_ROWS.QueryBox.Message
 msgid  "Do you want to delete the selected data?"
@@ -955,6 +955,18 @@ msgstr "Асуулгууд"
 msgid  "Tables"
 msgstr "Хүснэгтүүд"
 
+#: source/ui/browser/sbabrw.src#ID_TREE_EDIT_DATABASE.#define.Text
+msgid  "Edit ~Database File..."
+msgstr "~Өгөгдлийн сан файл засах..."
+
+#: source/ui/browser/sbabrw.src#ID_TREE_ADMINISTRATE.#define.Text
+msgid  "Registered databases ..."
+msgstr "Бүртгэгдсэн өгөгдлийн сан..."
+
+#: source/ui/browser/sbabrw.src#ID_TREE_CLOSE_CONN.#define.Text
+msgid  "Disco~nnect"
+msgstr "Холболт ~тасал"
+
 #: source/ui/browser/sbabrw.src#STR_TITLE_CONFIRM_DELETION.String.Text
 msgid  "Confirm Deletion"
 msgstr "Устгал батал"
@@ -977,11 +989,11 @@ msgstr "Сануулгууд гарлаа"
 
 #: source/ui/browser/sbabrw.src#STR_OPENTABLES_WARNINGS_DETAILS.String.Text
 msgid  "While retrieving the tables, warnings were reported by the database connection."
-msgstr ""
+msgstr "Хүснэгтүүдийг уншиж байхад өгөгдлийн сангийн холболтоос сануулгууд ирлээ."
 
 #: source/ui/browser/sbabrw.src#STR_CONNECTING_DATASOURCE.String.Text
-msgid  "Connecting to "$name$" ..."
-msgstr ""
+msgid  "Connecting to \"$name$\" ..."
+msgstr "\"$name$\" руу холбогдож байна..."
 
 #: source/ui/browser/sbabrw.src#STR_LOADING_QUERY.String.Text
 msgid  "Loading query $name$ ..."
@@ -996,24 +1008,12 @@ msgid  "No table format could be found."
 msgstr "Хүснэгтийн формат олдсонгүй."
 
 #: source/ui/browser/sbabrw.src#STR_COULDNOTCONNECT_DATASOURCE.String.Text
-msgid  "The connection to the data source "$name$" could not be established."
-msgstr ""
+msgid  "The connection to the data source \"$name$\" could not be established."
+msgstr "\"$name$\" өгөгдлийн эх рүү холболт хийх боломжгүй байна."
 
 #: source/ui/browser/sbabrw.src#RID_MENU_REFRESH_DATA.ID_BROWSER_REFRESH_REBUILD.MenuItem.Text
 msgid  "Rebuild"
 msgstr "Дахин хийх"
-
-#: source/ui/browser/sbabrw.src#ID_TREE_EDIT_DATABASE.#define.Text
-msgid  "Edit ~Database File..."
-msgstr "~Өгөгдлийн сан файл засах..."
-
-#: source/ui/browser/sbabrw.src#ID_TREE_ADMINISTRATE.#define.Text
-msgid  "Registered databases ..."
-msgstr "Бүртгэгдсэн өгөгдлийн сан..."
-
-#: source/ui/browser/sbabrw.src#ID_TREE_CLOSE_CONN.#define.Text
-msgid  "Disco~nnect"
-msgstr "Холболт ~тасал"
 
 #: source/ui/browser/sbagrid.src#RID_SBA_GRID_COLCTXMENU.ID_BROWSER_COLATTRSET.MenuItem.Text
 msgid  "Column ~Format..."
@@ -1052,8 +1052,8 @@ msgid  "View #"
 msgstr "Харагдац #"
 
 #: source/ui/browser/sbagrid.src#STR_NAME_ALREADY_EXISTS.String.Text
-msgid  "The name "#" already exists."
-msgstr ""
+msgid  "The name \"#\" already exists."
+msgstr "\"#\" нэр хэдийнэ байна."
 
 #: source/ui/browser/sbagrid.src#STR_NO_COLUMNNAME_MATCHING.String.Text
 msgid  "No matching column names were found."
@@ -1137,7 +1137,7 @@ msgstr "Идэвхтэй тохиргоог шалгана уу, Жишээлб�
 
 #: source/ui/control/tabletree.src#STR_NOTABLEINFO.String.Text
 msgid  "Successfully connected, but information about database tables is not available."
-msgstr ""
+msgstr "Амжилттай холбогдлоо, гэвч өгөгдлийн сангийн хүснэгтийн талаарх мэдээлэл боломжгүй байна."
 
 #: source/ui/control/tabletree.src#STR_ALL_TABLES.String.Text
 msgid  "All tables"
@@ -1236,12 +1236,12 @@ msgid  "Do you want to save the changes made to the current index?"
 msgstr "Та өөрчилсөн индексээ хадгалахыг хүсэж байна уу?"
 
 #: source/ui/dlg/indexdialog.src#STR_INDEX_NAME_ALREADY_USED.String.Text
-msgid  "There is already another index named "$name$"."
-msgstr ""
+msgid  "There is already another index named \"$name$\"."
+msgstr "\"$name$\" нэртэй индекс хэдийнэ байна."
 
 #: source/ui/dlg/indexdialog.src#STR_INDEXDESIGN_DOUBLE_COLUMN_NAME.String.Text
-msgid  "In an index definition, no table column may occur more than once. However, you have entered column "$name$" twice."
-msgstr ""
+msgid  "In an index definition, no table column may occur more than once. However, you have entered column \"$name$\" twice."
+msgstr "Индексийн тодорхойлолтонд хүснэгтийн багана нэгээс илүү байх ёсгүй. Харин та \"$name$\" баганыг хоёр удаа оруулжээ."
 
 #: source/ui/dlg/paramdialog.src#DLG_PARAMETERS.FL_PARAMS.FixedLine.Text
 msgid  "~Parameters"
@@ -1260,8 +1260,8 @@ msgid  "Parameter Input"
 msgstr "Параметр оролт"
 
 #: source/ui/dlg/paramdialog.src#DLG_PARAMETERS.STR_COULD_NOT_CONVERT_PARAM.String.Text
-msgid  "The entry could not be converted to a valid value for the "$name$"column"
-msgstr ""
+msgid  "The entry could not be converted to a valid value for the \"$name$\"column"
+msgstr "Бичлэг \"$name$\" баганын хувьд хүчинтэй утгатай хөрвүүлэгдэх боломжгүй"
 
 #: source/ui/dlg/sqlmessage.src#DLG_SQLEXCEPTIONCHAIN.ModalDialog.Text
 msgid  "%PRODUCTNAME Base"
@@ -1289,7 +1289,7 @@ msgstr "Алдааны код"
 
 #: source/ui/dlg/sqlmessage.src#STR_EXPLAN_STRINGCONVERSION_ERROR.String.Text
 msgid  "A frequent reason for this error is an inappropriate character set setting for the language of your database. Check the setting by choosing Edit - Database - Properties."
-msgstr ""
+msgstr "Энэ алдааны түгээмэл шалтгаан нь таны өгөгдлийн сангийн хэлний хувьд таарамжгүй тэмдэгтийн олонлогийн тохиргоо байдаг. Засах - Өгөгдлийн сан - Шинж чанар дотор энэ тохиргоог шалгана уу."
 
 #: source/ui/dlg/sqlmessage.src#STR_EXCEPTION_ERROR.String.Text
 msgid  "Error"
@@ -1312,8 +1312,16 @@ msgid  "Standard Filter"
 msgstr "Стандарт шүүлтүүр"
 
 #: source/ui/dlg/queryfilter.src#DLG_FILTERCRIT.LB_WHERECOND2.Default.StringList.item
+msgid  "AND"
+msgstr "БА"
+
+#: source/ui/dlg/queryfilter.src#DLG_FILTERCRIT.LB_WHERECOND2.Default.StringList.item
 msgid  "OR"
 msgstr "БУЮУ"
+
+#: source/ui/dlg/queryfilter.src#DLG_FILTERCRIT.LB_WHERECOND3.Default.StringList.item
+msgid  "AND"
+msgstr "БА"
 
 #: source/ui/dlg/queryfilter.src#DLG_FILTERCRIT.LB_WHERECOND3.Default.StringList.item
 msgid  "OR"
@@ -1346,14 +1354,6 @@ msgstr "- байхгүй -"
 #: source/ui/dlg/queryfilter.src#DLG_FILTERCRIT.STR_COMPARE_OPERATORS.String.Text
 msgid  "=;<>;<;<=;>;>=;like;not like;null;not null"
 msgstr "=;<>;<;<=;>;>=;тэнцүү;тэнцүү биш;тэг;тэг биш"
-
-#: source/ui/dlg/queryfilter.src#DLG_FILTERCRIT.LB_WHERECOND2.Default.StringList.item
-msgid  "AND"
-msgstr "БА"
-
-#: source/ui/dlg/queryfilter.src#DLG_FILTERCRIT.LB_WHERECOND3.Default.StringList.item
-msgid  "AND"
-msgstr "БА"
 
 #: source/ui/dlg/RelationDlg.src#DLG_REL_PROPERTIES.ModalDialog.Text
 msgid  "Relations"
@@ -1412,12 +1412,24 @@ msgid  "Sort Order"
 msgstr "Эрэмбэлэх дараалал"
 
 #: source/ui/dlg/queryorder.src#DLG_ORDERCRIT.LB_ORDERVALUE1.Default.StringList.item
+msgid  "ascending"
+msgstr "өсөхөөр"
+
+#: source/ui/dlg/queryorder.src#DLG_ORDERCRIT.LB_ORDERVALUE1.Default.StringList.item
 msgid  "descending"
 msgstr "буурахаар"
 
 #: source/ui/dlg/queryorder.src#DLG_ORDERCRIT.LB_ORDERVALUE2.Default.StringList.item
+msgid  "ascending"
+msgstr "өсөхөөр"
+
+#: source/ui/dlg/queryorder.src#DLG_ORDERCRIT.LB_ORDERVALUE2.Default.StringList.item
 msgid  "descending"
 msgstr "буурахаар"
+
+#: source/ui/dlg/queryorder.src#DLG_ORDERCRIT.LB_ORDERVALUE3.Default.StringList.item
+msgid  "ascending"
+msgstr "өсөхөөр"
 
 #: source/ui/dlg/queryorder.src#DLG_ORDERCRIT.LB_ORDERVALUE3.Default.StringList.item
 msgid  "descending"
@@ -1450,18 +1462,6 @@ msgstr "Эрэмбэлэх дараалал"
 #: source/ui/dlg/queryorder.src#DLG_ORDERCRIT.STR_NOENTRY.String.Text
 msgid  "<none>"
 msgstr "<хоосон>"
-
-#: source/ui/dlg/queryorder.src#DLG_ORDERCRIT.LB_ORDERVALUE1.Default.StringList.item
-msgid  "ascending"
-msgstr "өсөхөөр"
-
-#: source/ui/dlg/queryorder.src#DLG_ORDERCRIT.LB_ORDERVALUE2.Default.StringList.item
-msgid  "ascending"
-msgstr "өсөхөөр"
-
-#: source/ui/dlg/queryorder.src#DLG_ORDERCRIT.LB_ORDERVALUE3.Default.StringList.item
-msgid  "ascending"
-msgstr "өсөхөөр"
 
 #: source/ui/dlg/advancedsettings.src#AUTO_DATAHANDLING(AUTO_Y).FL_DATAHANDLING.FixedLine.Text
 msgid  "Options"
@@ -1532,6 +1532,18 @@ msgid  "Respect the result set type from the database driver"
 msgstr ""
 
 #: source/ui/dlg/advancedsettings.src#WORKAROUND.Default.StringList.item
+msgid  "Default"
+msgstr "Өгөгдмөл"
+
+#: source/ui/dlg/advancedsettings.src#WORKAROUND.Default.StringList.item
+msgid  "SQL"
+msgstr "SQL"
+
+#: source/ui/dlg/advancedsettings.src#WORKAROUND.Default.StringList.item
+msgid  "Mixed"
+msgstr "Холимог"
+
+#: source/ui/dlg/advancedsettings.src#WORKAROUND.Default.StringList.item
 msgid  "MS Access"
 msgstr "MS Access"
 
@@ -1571,18 +1583,6 @@ msgstr "Тусгай тохиргоо"
 msgid  "Advanced Settings"
 msgstr "Нарийвчилсан шинж чанар"
 
-#: source/ui/dlg/advancedsettings.src#WORKAROUND.Default.StringList.item
-msgid  "Default"
-msgstr "Өгөгдмөл"
-
-#: source/ui/dlg/advancedsettings.src#WORKAROUND.Default.StringList.item
-msgid  "SQL"
-msgstr "SQL"
-
-#: source/ui/dlg/advancedsettings.src#WORKAROUND.Default.StringList.item
-msgid  "Mixed"
-msgstr "Холимог"
-
 #: source/ui/dlg/CollectionView.src#DLG_COLLECTION_VIEW.ModalDialog.Text
 msgid  "Save"
 msgstr "Хадгалах"
@@ -1616,12 +1616,12 @@ msgid  "The file already exists. Overwrite?"
 msgstr "Файл хэдийнэ үүсжээ. Дарж бичих үү?"
 
 #: source/ui/dlg/dbadmin2.src#STR_ENTER_CONNECTION_PASSWORD.String.Text
-msgid  "A password is needed to connect to the data source "$name$"."
-msgstr ""
+msgid  "A password is needed to connect to the data source \"$name$\"."
+msgstr "\"$name$\" өгөгдлийн эх сурвалжтай холбохын тулд нууц үг хэрэгтэй."
 
 #: source/ui/dlg/dbadmin2.src#STR_ASK_FOR_DIRECTORY_CREATION.String.Text
 msgid  "The directory\n\n$path$\n\ndoes not exist. Should it be created?"
-msgstr ""
+msgstr "$path$\n\nлавлах\n\nбайхгүй байна. Үүсгэх үү?"
 
 #: source/ui/dlg/dbadmin2.src#STR_COULD_NOT_CREATE_DIRECTORY.String.Text
 msgid  "The directory $name$ could not be created."
@@ -1773,7 +1773,7 @@ msgstr "%PRODUCTNAME өгөгдлийн сангийн залуурчид тав
 
 #: source/ui/dlg/dbadmin.src#PAGE_GENERAL.FT_GENERALHELPTEXT.FixedText.Text
 msgid  "Use the Database Wizard to create a new database, open an existing database file, or connect to a database stored on a server."
-msgstr ""
+msgstr "Өгөгдлийн сангийн залуурчийг ашиглаж шинэ өгөгдлийн санг үүсгэх, өгөгдлийн сангийн файлыг нээж үзэх эсвэл сервер дээр хадгалагдах өгөгдлийн сантай холбогдоно."
 
 #: source/ui/dlg/dbadmin.src#PAGE_GENERAL.FT_DATASOURCEHEADER.FixedText.Text
 msgid  "What do you want to do?"
@@ -1797,7 +1797,7 @@ msgstr "Өгөгдлийн ~сантай холбох"
 
 #: source/ui/dlg/dbadmin.src#PAGE_GENERAL.FT_DATASOURCETYPE_PRE.FixedText.Text
 msgid  "Select the type of database to which you want to establish a connection."
-msgstr ""
+msgstr "Холболт үүсгэх өгөгдлийн сангийн төрлийг сонгоно уу."
 
 #: source/ui/dlg/dbadmin.src#PAGE_GENERAL.FT_DATATYPE.FixedText.Text
 msgid  "Database ~type "
@@ -1809,7 +1809,7 @@ msgstr "Өгөгдлийн сан"
 
 #: source/ui/dlg/dbadmin.src#PAGE_GENERAL.FT_DATASOURCETYPE_POST.FixedText.Text
 msgid  "On the following pages, you can make detailed settings for the connection.\n\nThe new settings you make will overwrite your existing settings."
-msgstr ""
+msgstr "Дараагийн хуудсууд дээр та холболтын тохиргоонуудыг нарийвчлан хийж болно.\n\nТаны хийсэн шинэ тохиргоонууд одоогийн тохиргоонуудыг дарах болно."
 
 #: source/ui/dlg/dbadmin.src#PAGE_GENERAL.STR_MYSQLENTRY.String.Text
 msgid  "MySQL"
@@ -1821,11 +1821,11 @@ msgstr "Өгөгдлийн эхийн шинж чанар: #"
 
 #: source/ui/dlg/dbadmin.src#PAGE_GENERAL.STR_COULDNOTLOAD_ODBCLIB.String.Text
 msgid  "Could not load the program library #lib# or it is corrupted. The ODBC data source selection is not available."
-msgstr ""
+msgstr "Програмын сан #lib# ачаалагдах боломжгүй эсвэл эвдэрсэн байна. ODBC өгөгдлийн эх сурвалжийн сонголт хийх боломжгүй."
 
 #: source/ui/dlg/dbadmin.src#PAGE_GENERAL.STR_UNSUPPORTED_DATASOURCE_TYPE.String.Text
 msgid  "This kind of data source is not supported on this platform.\nYou are allowed to change the settings, but you probably will not be able to connect to the database."
-msgstr ""
+msgstr "Энэ төрлийн өгөгдлийн эх сурвалж энэ платформд дэмжигдээгүй.\nТа тохиргоонуудыг өөрчлөх зөвшөөрөлтэй боловч өгөгдлийн сантай холбогдох боломжгүй байж магадгүй."
 
 #: source/ui/dlg/dbadmin.src#PAGE_GENERAL.String.Text
 msgid  "General"
@@ -1841,7 +1841,7 @@ msgstr "Устсан бичлэгүүдийг мөн харуул"
 
 #: source/ui/dlg/dbadmin.src#PAGE_DBASE.FT_SPECIAL_MESSAGE.FixedText.Text
 msgid  "Note: When deleted, and thus inactive, records are  displayed, you will not be able to delete records from the data source."
-msgstr ""
+msgstr "Санамж: Хэрэв устгагдсан идэвхгүй бичлэгүүдийг харуулсан бол та өгөгдлийн эхээс бичлэгүүдийг устгаж чадахгүй."
 
 #: source/ui/dlg/dbadmin.src#PAGE_DBASE.PB_INDICIES.PushButton.Text
 msgid  "Indexes..."
@@ -2025,7 +2025,7 @@ msgstr "Microsoft Access өгөгдлийн сан файл"
 
 #: source/ui/dlg/AutoControls.src#STR_NO_ADDITIONAL_SETTINGS.String.Text
 msgid  "No more settings are necessary. To verify that the connection is working, click the '%test' button."
-msgstr ""
+msgstr "Өөр тохиргоо шаардлагагүй. '%тест' товчин дээр дарж холболт ажиллаж байгаа эсэхийг батал."
 
 #: source/ui/dlg/AutoControls.src#STR_COMMONURL.String.Text
 msgid  "Datasource URL"
@@ -2197,7 +2197,7 @@ msgstr "Одоогоор ашигласан санах ой"
 
 #: source/ui/dlg/AdabasStat.src#STR_ADABAS_ERROR_SYSTEMTABLES.String.Text
 msgid  "No information could be displayed because no access rights exist for the required system tables."
-msgstr ""
+msgstr "Шаардлагатай системийн хүснэгтэд хандах эрх байхгүй байгаа тул мэдээлэл харуулах боломжгүй."
 
 #: source/ui/dlg/directsql.src#DLG_DIRECTSQL.FL_SQL.FixedLine.Text
 msgid  "SQL command"
@@ -2233,7 +2233,7 @@ msgstr "Тушаал амжилттай гүйцэтгэгдсэн."
 
 #: source/ui/dlg/directsql.src#STR_DIRECTSQL_CONNECTIONLOST.String.Text
 msgid  "The connection to the database has been lost. This dialog will be closed."
-msgstr ""
+msgstr "Өгөгдлийн сангийн холболт тасарслаа. Энэ диалог хаагдана."
 
 #: source/ui/dlg/dbfindex.src#DLG_DBASE_INDEXES.ModalDialog.Text
 msgid  "Indexes"
@@ -2288,8 +2288,8 @@ msgid  "The database does not support user administration."
 msgstr "Өгөгдлийн сан хэрэглэгчийн удирдлагыг дэмжихгүй."
 
 #: source/ui/dlg/UserAdmin.src#DLG_PASSWORD.FL_USER.FixedLine.Text
-msgid  "User "$name$:  $""
-msgstr ""
+msgid  "User \"$name$:  $\""
+msgstr "\"$name$:  $\" хэрэглэгч"
 
 #: source/ui/dlg/UserAdmin.src#DLG_PASSWORD.FT_OLDPASSWORD.FixedText.Text
 msgid  "Old p~assword"
@@ -2389,7 +2389,7 @@ msgstr "MySQL Өгөгдлийн сан руу холболт үүсгэх"
 
 #: source/ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_MYSQL_INTRO.FT_MYSQL_HELPTEXT.FixedText.Text
 msgid  "You can connect to a MySQL database using either ODBC or JDBC.\nPlease contact your system administrator if you are unsure about the following settings."
-msgstr ""
+msgstr "ODBC эсвэл JDBC хэрэглэдэг MySQL өгөгдлийн сантай та холбогдох боломжтой .\nЭдгээр тохиргоонууддаа та итгэлтэй биш байвал системийн захирагчдаа хандана уу."
 
 #: source/ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_MYSQL_INTRO.FT_MYSQLCONNECTIONMODE.FixedText.Text
 msgid  "How do you want to connect to your MySQL database?"
@@ -2433,7 +2433,7 @@ msgstr "Өгөгдлийн санг хадгалсны дараа яаж үрг�
 
 #: source/ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_FINAL.FT_FINALHELPTEXT.FixedText.Text
 msgid  "Do you want the wizard to register the database in %PRODUCTNAME?"
-msgstr ""
+msgstr "Залуурч хэрэглэн %PRODUCTNAME-д өгөгдлийн сан бүртгүүлэхийг хүсэж байна уу ?"
 
 #: source/ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_FINAL.RB_REGISTERDATASOURCE.RadioButton.Text
 msgid  "~Yes, register the database for me"
@@ -2465,7 +2465,7 @@ msgstr "JDBC хэрэглэдэг MySQL Өгөгдлийн сан руу хол�
 
 #: source/ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_MYSQL_JDBC.STR_MYSQLJDBC_HELPTEXT.String.Text
 msgid  "Please enter the required information to connect to a MySQL database using JDBC. Note that a JDBC driver class must be installed on your system and registered with %PRODUCTNAME.\nPlease contact your system administrator if you are unsure about the following settings."
-msgstr ""
+msgstr "JDBC хэрэглэдэг MySQL өгөгдлийн сантай холбогдохын тулд шаардлагатай мэдээллүүдийг оруулна уу . Зөвлөмж:  Энэ JDBC драйвер анги таны Системд суулгагдах болон %PRODUCTNAME.\n бүртгэгдэх ёстой.Хэрэвээ та дараах тохиргоондоо итгэлтэй биш байвал системийн захирагчдаа хандана уу."
 
 #: source/ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_MYSQL_JDBC.STR_MYSQL_DRIVERCLASSTEXT.String.Text
 msgid  "MySQL JDBC d~river class:"
@@ -2497,7 +2497,7 @@ msgstr "Бичвэр файлууд руу холболт үүсгэх"
 
 #: source/ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_TEXT.STR_TEXT_HELPTEXT.String.Text
 msgid  "Select the folder where the CSV (Comma Separated Values) text files are stored. %PRODUCTNAME Base will open these files in read-only mode."
-msgstr ""
+msgstr " CSV (Comma Separated Values) бичвэр файлыг хадгалсан хавтсаа сонгоно уу. %PRODUCTNAME сангийн зөвхөн-унших горимд байгаа файлууд нээгдэнэ."
 
 #: source/ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_TEXT.STR_TEXT_PATH_OR_FILE.String.Text
 msgid  "Path to text files"
@@ -2517,7 +2517,7 @@ msgstr "LDAP лавлах дээр холболтыг тохируул."
 
 #: source/ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_LDAP.FT_LDAP_HELPTEXT.FixedText.Text
 msgid  "Please enter the required information to connect to an LDAP directory.\nPlease contact your system administrator if you are unsure about the following settings."
-msgstr ""
+msgstr "PLDAP лавлахад холбогдохын тулд шаардлагатай мэдээллийг оруулна уу.\nХэрэвээ та дараах тохиргоондоо итгэлтэй биш байвал системийн захирагчдаа хандана уу."
 
 #: source/ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_LDAP.STR_LDAP_DEFAULT.String.Text
 msgid  "Default: 389"
@@ -2533,7 +2533,7 @@ msgstr "Adabas D өгөгдлийн сан дээр холболт тавья"
 
 #: source/ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_ADABAS.STR_ADABAS_HELPTEXT.String.Text
 msgid  "Enter the name of the Adabas D database you want to connect to.\nClick 'Browse...' to select an Adabas D database that is already registered in %PRODUCTNAME."
-msgstr ""
+msgstr "Та холбогдохыг хүссэн  Adabas D мэдээлэлийн сангийн нэрийг оруулна уу.\n'Гүйлгэн үзэх...' Дарж  %PRODUCTNAME д бүртгэгдсэн  Adabas D өгөгдлийн санг сонго."
 
 #: source/ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_ADO.STR_ADO_HEADERTEXT.String.Text
 msgid  "Set up a connection to an ADO database"
@@ -2541,7 +2541,7 @@ msgstr "ADO өгөгдлийн сантай холболтыг хийж тохи
 
 #: source/ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_ADO.STR_ADO_HELPTEXT.String.Text
 msgid  "Please enter the URL of the ADO data source you want to connect to.\nClick 'Browse' to configure provider-specific settings.\nPlease contact your system administrator if you are unsure about the following settings."
-msgstr ""
+msgstr "Та холбогдохыг хүсэж буй ADO өгөгдлийн эх сурвалжийн URL  оруулна уу.\nхангагч -тодорхойлогч тохиргоонуудыг тохируулахын тулд 'Гүйлгэн үзэх...' дарна уу.\nХэрэвээ та дараах тохиргоондоо итгэлтэй биш байвал системийн захирагчдаа хандана уу."
 
 #: source/ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_ODBC.STR_ODBC_HEADERTEXT.String.Text
 msgid  "Set up a connection to an ODBC database"
@@ -2549,7 +2549,7 @@ msgstr "ODBC өгөгдлийн сантай холболтыг хийж тох�
 
 #: source/ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_ODBC.STR_ODBC_HELPTEXT.String.Text
 msgid  "Enter the name of the ODBC database you want to connect to.\nClick 'Browse...' to select an ODBC database that is already registered in %PRODUCTNAME.\nPlease contact your system administrator if you are unsure about the following settings."
-msgstr ""
+msgstr "Та холбогдохыг хүсэж буй ODBC өгөгдлийн сангийн нэрийг оруулна уу.\n%PRODUCTNAME-д бүртгэгдсэн ODBC өгөгдлийн санг сонгохдоо 'Гүйлгэн үзэх...' товш.\nХэрэвээ та дараах тохиргоондоо итгэлтэй биш байвал системийн захирагчдаа хандана уу."
 
 #: source/ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_JDBC.STR_JDBC_HEADERTEXT.String.Text
 msgid  "Set up a connection to a JDBC database"
@@ -2557,7 +2557,7 @@ msgstr " JDBC өгөгдлийн сангийн холболтыг тавья "
 
 #: source/ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_JDBC.STR_JDBC_HELPTEXT.String.Text
 msgid  "Please enter the required information to connect to a JDBC database.\nPlease contact your system administrator if you are unsure about the following settings."
-msgstr ""
+msgstr "JDBC хавтсанд холбогдохын тулд шаардлагатай мэдээлэлээ оруулна уу.\nХэрэвээ та дараах тохиргоондоо итгэлтэй биш байвал системийн захирагчдаа хандана уу."
 
 #: source/ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_ORACLE.STR_ORACLE_HEADERTEXT.String.Text
 msgid  "Set up a connection to an Oracle database"
@@ -2573,7 +2573,7 @@ msgstr "Oracle JDBC ~драйвер анги"
 
 #: source/ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_ORACLE.STR_ORACLE_HELPTEXT.String.Text
 msgid  "Please enter the required information to connect to an Oracle database.Note that a JDBC Driver Class must be installed on your system and registered with %PRODUCTNAME.\nPlease contact your system administrator if you are unsure about the following settings."
-msgstr ""
+msgstr "Oracle өгөгдлийн санд  холбогдохын тулд шаардлагатай мэдээлэлээ оруулна уу.Зөвлөмж:  Энэ JDBC драйвер анги таны Системд суулгагдах болон %PRODUCTNAME.\nХэрэвээ та дараах тохиргоондоо итгэлтэй биш байвал системийн захирагчдаа хандана уу."
 
 #: source/ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_SPREADSHEET.STR_SPREADSHEET_HEADERTEXT.String.Text
 msgid  "Set up a connection to spreadsheets"
@@ -2581,7 +2581,7 @@ msgstr "Ажлын талбарын холболтыг тавья"
 
 #: source/ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_SPREADSHEET.STR_SPREADSHEET_HELPTEXT.String.Text
 msgid  "Click 'Browse...' to select a %PRODUCTNAME spreadsheet or Microsoft Excel workbook.\n%PRODUCTNAME will open this file in read-only mode."
-msgstr ""
+msgstr "%PRODUCTNAME хүснэгт эсвэл Microsoft Excel хүснэгт сонгохын тулд 'Гүйлгэн үзэх...' дээр дар .\n%PRODUCTNAME энэ файлыг зөвхөн-унших горимоор нээнэ."
 
 #: source/ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_SPREADSHEET.STR_SPREADSHEETPATH.String.Text
 msgid  "~Location and file name"
@@ -2723,6 +2723,50 @@ msgstr ""
 msgid  "Socket"
 msgstr ""
 
+#: source/ui/inc/toolbox_tmpl.hrc#ID_BROWSER_REFRESH.#define.Text
+msgid  "Refresh"
+msgstr "Шинэчлэх"
+
+#: source/ui/inc/toolbox_tmpl.hrc#ID_NEW_VIEW_DESIGN.#define.Text
+msgid  "New ~View Design"
+msgstr "Шинэ ~Дүрслэлийн дизайн"
+
+#: source/ui/inc/toolbox_tmpl.hrc#ID_NEW_TABLE_DESIGN.#define.Text
+msgid  "New ~Table Design"
+msgstr "Шинэ ~Хүснэгтийн дизайн"
+
+#: source/ui/inc/toolbox_tmpl.hrc#ID_NEW_QUERY_WIZARD.#define.Text
+msgid  "Query AutoPilot..."
+msgstr "Асуулгын автомат залуурч..."
+
+#: source/ui/inc/toolbox_tmpl.hrc#ID_NEW_QUERY_DESIGN.#define.Text
+msgid  "New ~Query (Design View)"
+msgstr "Шинэ ~Асуулга (Зохиомж харагдац)"
+
+#: source/ui/inc/toolbox_tmpl.hrc#ID_EDIT_QUERY_DESIGN.#define.Text
+msgid  "~Edit Query"
+msgstr "Асуулга ~засах"
+
+#: source/ui/inc/toolbox_tmpl.hrc#ID_NEW_QUERY_SQL.#define.Text
+msgid  "New Query (~SQL View)"
+msgstr "Шинэ асуулга (~SQL харагдац)"
+
+#: source/ui/inc/toolbox_tmpl.hrc#ID_QUERY_EDIT_JOINCONNECTION.#define.Text
+msgid  "Edit..."
+msgstr "Засах..."
+
+#: source/ui/inc/toolbox_tmpl.hrc#ID_BROWSER_COLWIDTH.#define.Text
+msgid  "Column ~Width..."
+msgstr "Баганын ~өргөн..."
+
+#: source/ui/inc/toolbox_tmpl.hrc#ID_DOCUMENT_CREATE_REPWIZ.#define.Text
+msgid  "Report Wizard..."
+msgstr "Тайлангийн залуурч..."
+
+#: source/ui/inc/toolbox_tmpl.hrc#SID_DB_FORM_NEW_PILOT.#define.Text
+msgid  "Form AutoPilot..."
+msgstr "Маягтын автомат залуурч..."
+
 #: source/ui/misc/dbumiscres.src#RSC_CHARSETS.1.String.Text
 msgid  "System"
 msgstr "Систем"
@@ -2736,12 +2780,12 @@ msgid  "An unexpected error occurred. The operation could not be performed."
 msgstr "Тодорхойгүй алдаа гарлаа. Үйлдлийг гүйцэтгэх боломжгүй."
 
 #: source/ui/misc/dbumiscres.src#STR_COULDNOTOPEN_LINKEDDOC.String.Text
-msgid  "The document "$file$" could not be opened."
-msgstr ""
+msgid  "The document \"$file$\" could not be opened."
+msgstr "\"$file$\" баримт нээгдэх боломжгүй."
 
 #: source/ui/misc/dbumiscres.src#STR_MISSING_TABLES_XDROP.String.Text
 msgid  "The table cannot be deleted because the database connection does not support this."
-msgstr ""
+msgstr "Өгөгдлийн сангийн холболт устгалыг дэмжээгүй учир хүснэгтийг устгах боломжгүй."
 
 #: source/ui/misc/dbumiscres.src#STR_BUTTON_TEXT_ALL.String.Text
 msgid  "~All"
@@ -2760,19 +2804,19 @@ msgid  "No corresponding column type could be found for column '#1'."
 msgstr "'#1' баганатай дүйцэх баганын төрөл олдсонгүй."
 
 #: source/ui/misc/dbumiscres.src#STR_FILE_DOES_NOT_EXIST.String.Text
-msgid  "The file "$file$" does not exist."
-msgstr ""
+msgid  "The file \"$file$\" does not exist."
+msgstr "\"$file$\" файл алга."
 
 #: source/ui/misc/dbumiscres.src#STR_WARNINGS_DURING_CONNECT.String.Text
-msgid  "Warnings were encountered while connecting to the data source. Press "$buttontext$" to view them."
-msgstr ""
+msgid  "Warnings were encountered while connecting to the data source. Press \"$buttontext$\" to view them."
+msgstr "Өгөгдлийн эх рүү холбогдож байхад сануулга авлаа. Түүнийг үзэхийг хүсвэл \"$buttontext$\" дээр дарна уу."
 
 #: source/ui/misc/dbumiscres.src#STR_NAMED_OBJECT_ALREADY_EXISTS.String.Text
 msgid  "The name '$#$' already exists.\nPlease enter another name."
-msgstr ""
+msgstr "'$#$' хэр хэдийнэ байна.\nӨөр нэр сонгоно уу."
 
 #: source/ui/misc/dbumiscres.src#RID_STR_EXTENSION_NOT_PRESENT.String.Text
-msgid  "The report, "$file$", requires the extension Oracle Report Builder."
+msgid  "The report, \"$file$\", requires the extension Oracle Report Builder."
 msgstr ""
 
 #: source/ui/misc/WizardPages.src#STR_WIZ_COLUMN_SELECT_TITEL.String.Text
@@ -2901,7 +2945,7 @@ msgstr ""
 
 #: source/ui/misc/WizardPages.src#STR_SUGGEST_APPEND_TABLE_DATA.String.Text
 msgid  "Choose the option 'Append data' on the first page to append data to an existing table."
-msgstr ""
+msgstr "Оршин буй хүснэгт рүү өгөгдөл залгахыг хүсвэл эхний хуудаснаас 'Өгөгдөл залгах' тохиргоог сонгоно уу."
 
 #: source/ui/misc/WizardPages.src#STR_INVALID_TABLE_NAME_LENGTH.String.Text
 msgid  "Please change the table name. It is too long."
@@ -2957,11 +3001,11 @@ msgstr "Зарим өгөгдлийн сангууд энэ залгалтын �
 
 #: source/ui/querydesign/querydlg.src#STR_QUERY_INNER_JOIN.String.Text
 msgid  "Includes only records for which the contents of the related fields of both tables are identical."
-msgstr ""
+msgstr "Хоёр хүснэгтийн холбогдсон талбарын агуулга зөвхөн ижилхэн бичлэгийг агуулна."
 
 #: source/ui/querydesign/querydlg.src#STR_QUERY_LEFTRIGHT_JOIN.String.Text
 msgid  "Contains ALL records from table '%1' but only records from table '%2' where the values in the related fields are matching."
-msgstr ""
+msgstr "'%1' хүснэгтийн БҮХ харин '%2' хүснэгтийн зөвхөн хоёр хүснэгтийн холбогдсон талбарын агуулга ижилхэн бичлэгүүдийг агуулна."
 
 #: source/ui/querydesign/querydlg.src#STR_QUERY_FULL_JOIN.String.Text
 msgid  "Contains ALL records from '%1' and from '%2'."
@@ -2973,7 +3017,7 @@ msgstr "'%1' ба '%2' -с БҮХ бичлэгийн Картесиан үржв
 
 #: source/ui/querydesign/querydlg.src#STR_QUERY_NATURAL_JOIN.String.Text
 msgid  "Contains only one column for each pair of equally-named columns from '%1' and from '%2'."
-msgstr ""
+msgstr "'%1' ба '%2' -с ижил нэртэй багануудын хос тус бүрийн хувьд зөвхөн нэг баганыг нь агуулна."
 
 #: source/ui/querydesign/query.src#STR_QUERY_UNDO_TABWINSHOW.String.Text
 msgid  "Add Table Window"
@@ -3017,7 +3061,7 @@ msgstr "Хүчингүй илэрхийлэл, '$name$' талбарын нэр 
 
 #: source/ui/querydesign/query.src#RID_STR_TOMUCHTABLES.String.Text
 msgid  "The query covers #num# tables. The selected database type, however, can only process a maximum of #maxnum# table(s) per statement."
-msgstr ""
+msgstr "Сонгосон өгөгдлийн сангийн төрөл тушаал бүрд хамгийн ихдээ #maxnum# хүснэгттэй ажиллах боломжтой байтал асуулга #num# хүснэгтийг хамаарч байна."
 
 #: source/ui/querydesign/query.src#STR_QUERY_UNDO_TABWINDELETE.String.Text
 msgid  "Delete Table Window"
@@ -3105,7 +3149,7 @@ msgstr "Хэт олон хүснэгт."
 
 #: source/ui/querydesign/query.src#STR_QRY_NATIVE.String.Text
 msgid  "The statement will not be applied when querying in the SQL dialect of the database."
-msgstr ""
+msgstr "Өгөгдлийн сангийн SQL Асуулга харьцахад энэ тушаал хэрэглэгдэхгүй."
 
 #: source/ui/querydesign/query.src#ERR_QRY_AMB_FIELD.ErrorBox.Message
 msgid  "Field name not found or not unique"
@@ -3141,7 +3185,7 @@ msgstr "Ямар ч талбар сонгогдоогүй учир Асуулг�
 
 #: source/ui/querydesign/query.src#STR_DATASOURCE_DELETED.String.Text
 msgid  "The corresponding data source has been deleted. Therefore, data relevant to that data source cannot be saved."
-msgstr ""
+msgstr "Зохицох өгөгдлийн эх устжээ. Тиймээс өгөгдлийн эхтэй хамаатай өгөгдөл хадгалагдах боломжгүй."
 
 #: source/ui/querydesign/query.src#STR_QRY_COLUMN_NOT_FOUND.String.Text
 msgid  "The column '$name$' is unknown."
@@ -3157,7 +3201,7 @@ msgstr "Та \"LIKE\"-н өмнө багана хэрэглэх ёстой."
 
 #: source/ui/querydesign/query.src#STR_QRY_CHECK_CASESENSITIVE.String.Text
 msgid  "The column could not be found. Please note that the database is case-sensitive."
-msgstr ""
+msgstr "Багана олдсонгүй. Өгөгдлийн сан том жижиг үсэг ялгахыг анхаарна уу."
 
 #: source/ui/querydesign/query.src#STR_QUERYDESIGN.String.Text
 msgid  " - %PRODUCTNAME Base: Query Design"
@@ -3169,14 +3213,14 @@ msgstr " - %PRODUCTNAME Base: Дүрслэл зохиомж"
 
 #: source/ui/querydesign/query.src#STR_QUERY_SAVEMODIFIED.String.Text
 msgid  "$object$ has been changed.\nDo you want to save the changes?"
-msgstr ""
+msgstr "$object$ өөрчлөгдлөө.\nТа өөрчлөлтүүдийг хадгалахыг хүсэж байна уу?"
 
 #: source/ui/querydesign/query.src#STR_ERROR_PARSING_STATEMENT.String.Text
-msgid  "$object$ is based on an SQL command which could not be parsed.(except "SQL command", which doesn't make sense here) will be inserted."
+msgid  "$object$ is based on an SQL command which could not be parsed.(except \"SQL command\", which doesn't make sense here) will be inserted."
 msgstr ""
 
 #: source/ui/querydesign/query.src#STR_INFO_OPENING_IN_SQL_VIEW.String.Text
-msgid  "$object$ will be opened in SQL view.(except "SQL command", which doesn't make sense here) will be inserted."
+msgid  "$object$ will be opened in SQL view.(except \"SQL command\", which doesn't make sense here) will be inserted."
 msgstr ""
 
 #: source/ui/querydesign/query.src#RSC_QUERY_OBJECT_TYPE.1.String.Text
@@ -3193,15 +3237,15 @@ msgstr "SQL илэрхийлэл"
 
 #: source/ui/querydesign/query.src#STR_STATEMENT_WITHOUT_RESULT_SET.String.Text
 msgid  "The query does not create a result set, and thus cannot be part of another query."
-msgstr ""
+msgstr "Асуулга үр дүнгийн олонлогийг үүсгээгүй тул өөр асуулгын хэсэг байх боломжгүй."
 
 #: source/ui/querydesign/query.src#STR_NO_DATASOURCE_OR_CONNECTION.String.Text
 msgid  "Both the ActiveConnection and the DataSourceName parameter are missing or wrong - cannot initialize the query designer."
-msgstr ""
+msgstr "ActiveConnection ба DataSourceName параметр хоёулаа дутуу эсвэл буруу - Асуулга зохиогчийг эхлүүлэх боломжгүй."
 
 #: source/ui/relationdesign/relation.src#STR_QUERY_REL_EDIT_RELATION.String.Text
 msgid  "This relation already exists. Do you want to edit it or create a new one?"
-msgstr ""
+msgstr "Энэ хамаарал хэдийнэ байна. Та үүнийг засах уу эсвэл шинээр үүсгэх үү?"
 
 #: source/ui/relationdesign/relation.src#STR_QUERY_REL_EDIT.String.Text
 msgid  "Edit..."
@@ -3221,11 +3265,11 @@ msgstr "Өгөгдлийн сан энэ хамаарлыг дэмжээгүй �
 
 #: source/ui/relationdesign/relation.src#RELATION_DESIGN_SAVEMODIFIED.QueryBox.Message
 msgid  "The relation design has been changed.\nDo you want to save the changes?"
-msgstr ""
+msgstr "Хамаарлын дизайн өөрчлөгдлөө.\nТа тэдгээр өөрчлөлтүүдийг хадгалахыг хүсэж байна уу?"
 
 #: source/ui/relationdesign/relation.src#STR_QUERY_REL_DELETE_WINDOW.String.Text
 msgid  "When you delete this table all corresponding relations will be deleted as well. Continue?"
-msgstr ""
+msgstr "Хэрэв та энэ хүснэгтийг устгавал бүх холбоотой хамаарлууд мөн устана. Үргэлжлүүлэх үү?"
 
 #: source/ui/relationdesign/relation.src#STR_QUERY_REL_COULD_NOT_CREATE.String.Text
 msgid  "The database could not create the relation. May be foreign keys for this kind of table aren't supported.\nPlease check your documentation of the database."
@@ -3233,7 +3277,7 @@ msgstr ""
 
 #: source/ui/tabledesign/table.src#STR_TABLEDESIGN_DBFIELDTYPES.String.Text
 msgid  "Unknown;Text;Number;Date/Time;Date;Time;Yes/No;Currency;Memo;Counter;Image;Text (fix);Decimal;Binary (fix);Binary;BigInt;Double;Float;Real;Integer;Small Integer;Tiny Integer;SQL Null;Object;Distinct;Structure;Field;BLOB;CLOB;REF;OTHER;Bit (fix)"
-msgstr ""
+msgstr "Тодорхойгүй;Бичвэр;Тоо;Огноо/Цаг;Огноо;Цаг;Тийм/Үгүй;Мөнгөн тэмдэгт;Мемо;Тоолуур;Зураг;Бичвэр (хатуу);Аравтын;Бинар (fix);Бинар;Том бүхэл тоо;Бутархай тоо;Бутархай тоо;Бодит тоо;Бүхэл тоо;Бага бүхэл тоо;Маш бага бүхэл тоо;SQL Null;Объект;Distinct;Бүтэц;Талбар;BLOB;CLOB;REF;БУСАД"
 
 #: source/ui/tabledesign/table.src#STR_TABLEDESIGN_UNDO_PRIMKEY.String.Text
 msgid  "Insert/remove primary key"
@@ -3377,15 +3421,15 @@ msgstr "Жишээ хэлбэржүүлэлт"
 
 #: source/ui/tabledesign/table.src#STR_HELP_BOOL_DEFAULT.String.Text
 msgid  "Select a value that is to appear in all new records as default.\nIf the field is not to have a default value, select the empty string."
-msgstr ""
+msgstr "Бүх шинэ бичлэгт өгөгдмөлөөр харагдах утгыг сонго.\nХэрэв талбар өгөгдмөл утгагүй байх ёстой бол, хоосон тэмдэгт мөр сонгоно уу."
 
 #: source/ui/tabledesign/table.src#STR_HELP_DEFAULT_VALUE.String.Text
 msgid  "Enter a default value for this field.\n\nWhen you later enter data in the table, this string will be used in each new record for the field selected. It should, therefore, correspond to the cell format that needs to be entered below."
-msgstr ""
+msgstr "Энэ талбарын өгөгдмөл утгыг оруулна уу.\n\nХэрэв та хожим хүснэгтэнд өгөгдөл оруулбал, шинэ бичлэг бүрд идэвхтэй талбарын энэ тэмдэгт мөр хэрэглэгдэнэ. Тиймээс энэ нь доор өгөгдөх нүдний хэлбэржүүлэлтийг хийхэд хангалттай."
 
 #: source/ui/tabledesign/table.src#STR_HELP_FIELD_REQUIRED.String.Text
 msgid  "Activate this option if this field cannot contain NULL values, i.e. the user must always enter data."
-msgstr ""
+msgstr "Хэрэв энэ талбар NULL утга агуулах боломжгүй бол идэвхжүүл. Хэрэглэгч заавал өгөгдөл оруулах ёстой гэсэн үг."
 
 #: source/ui/tabledesign/table.src#STR_HELP_TEXT_LENGTH.String.Text
 msgid  "Enter the maximum text length permitted."
@@ -3397,7 +3441,7 @@ msgstr "Тооны формат оруулах."
 
 #: source/ui/tabledesign/table.src#STR_HELP_LENGTH.String.Text
 msgid  "Determine the length data can have in this field.\n\nIf decimal fields, then the maximum length of the number to be entered, if binary fields, then the length of the data block.\nThe value will be corrected accordingly when it exceeds the maximum for this database."
-msgstr ""
+msgstr "Та энэ талбарт өгөгдлийн уртыг оруулна уу.\n\nАравтын талбарын хувьд өгөгдсөн тооны хамгийн их урт, хоёртын талбарын хувьд өгөгдлийн блокын урт байна.\nХэрэв утга энэ өгөгдлийн сангийн хамгийн их утгаас хэтэрвэл тохирох утгаар засагдана."
 
 #: source/ui/tabledesign/table.src#STR_HELP_SCALE.String.Text
 msgid  "Specify the number of decimal places permitted in this field."
@@ -3405,27 +3449,27 @@ msgstr "Энэ талбарт зөвшөөрөгдөх аравтын орныг
 
 #: source/ui/tabledesign/table.src#STR_HELP_FORMAT_CODE.String.Text
 msgid  "This is where you see how the data would be displayed in the current format (use the button on the right to modify the format)."
-msgstr ""
+msgstr "Энд та идэвхтэй баганын өгөгдөл идэвхтэй хэлбэржүүлэлтийн хувьд хэрхэн дүрслэгдэхийг харна.Та баруун товчны тусламжтай хэлбэржүүлэлтийг өөрчилж болно."
 
 #: source/ui/tabledesign/table.src#STR_HELP_FORMAT_BUTTON.String.Text
 msgid  "This is where you determine the output format of the data."
-msgstr ""
+msgstr "Үүгээр та хүснэгтийн өгөгдлийн гаралтын хэлбэржүүлэлтийг тогтоох боломжтой."
 
 #: source/ui/tabledesign/table.src#STR_HELP_AUTOINCREMENT.String.Text
 msgid  "Choose if this field should contain AutoIncrement values.\n\nYou can not enter data in fields of this type. An intrinsic value will be assigned to each new record automatically (resulting from the increment of the previous record)."
-msgstr ""
+msgstr "Энэ талбар AutoIncrement утга агуулах эсэхийг сонгоно уу.\n\nТа түүнд шууд өгөгдөл оруулах боломжгүй болох ба харин шинэ өгөгдлийн бичлэг бүрийн хувьд автоматаар өөрийн утга нь (өмнөх бичлэгийн утга дээр нэгээр нэмэгдэн) олгогдоно."
 
 #: source/ui/tabledesign/table.src#PB_FORMAT.PushButton.Text
 msgid  "~..."
 msgstr "~..."
 
 #: source/ui/tabledesign/table.src#STR_TABLEDESIGN_DUPLICATE_NAME.String.Text
-msgid  "The table cannot be saved because column name "$column$" was assigned twice."
-msgstr ""
+msgid  "The table cannot be saved because column name \"$column$\" was assigned twice."
+msgstr "Баганын нэр \"$column$\" хоёр удаа өгөгдсөн тул хүснэгт хадгалагдах боломжгүй."
 
 #: source/ui/tabledesign/table.src#STR_TBL_COLUMN_IS_KEYCOLUMN.String.Text
-msgid  "The column "$column$" belongs to the primary key. If the column is deleted, the primary key will also be deleted. Do you really want to continue?"
-msgstr ""
+msgid  "The column \"$column$\" belongs to the primary key. If the column is deleted, the primary key will also be deleted. Do you really want to continue?"
+msgstr "\"$column$\" багана анхдагч түлхүүрт харьяалагдаж байна. Хэрэв багана уствал анхдагч түлхүүр мөн устана. Та үнэхээр үргэлжлүүлэхийг хүсэж байна уу?"
 
 #: source/ui/tabledesign/table.src#STR_TBL_COLUMN_IS_KEYCOLUMN_TITLE.String.Text
 msgid  "Primary Key Affected"
@@ -3439,25 +3483,29 @@ msgstr "Багана"
 msgid  "Continue anyway?"
 msgstr "Ямар ч гэсэн үргэлжлүүлэх үү?"
 
+#: source/ui/tabledesign/table.src#STR_STAT_WARNING.String.Text
+msgid  "Warning!"
+msgstr "Сануулга!"
+
 #: source/ui/tabledesign/table.src#TABLE_DESIGN_SAVEMODIFIED.QueryBox.Message
 msgid  "The table has been changed.\nDo you want to save the changes?"
-msgstr ""
+msgstr "Хүснэгт өөрчлөгдлөө.\nТа өөрчлөлтүүдийг хадгалахыг хүсэж байна уу?"
 
 #: source/ui/tabledesign/table.src#TABLE_QUERY_CONNECTION_LOST.QueryBox.Message
 msgid  "The connection to the database was lost! The table design can only be used with limited functionality without a connection.\nReconnect?"
-msgstr ""
+msgstr "Өгөгдлийн сангийн холболт устсан! Холболтгүйгээр хүснэгтийн дизайн зөвхөн хязгаарлагдмал байдлаар хэрэглэгдэнэ \nӨгөгдлийн сангийн холболтыг дахин үүсгэх үү?"
 
 #: source/ui/tabledesign/table.src#STR_TABLEDESIGN_CONNECTION_MISSING.String.Text
 msgid  "The table could not be saved due to problems connecting to the database."
-msgstr ""
+msgstr "Өгөгдлийн сангийн холболтод асуудал гарсан тул хүснэгт хадгалагдах боломжгүй."
 
 #: source/ui/tabledesign/table.src#STR_TABLEDESIGN_DATASOURCE_DELETED.String.Text
 msgid  "The table filter could not be adjusted because the data source has been deleted."
-msgstr ""
+msgstr "Хүснэгтийн шүүлтүүрийг нийцүүлэх боломжгүй. Учир нь өгөгдлийн эх нь устсан байна."
 
 #: source/ui/tabledesign/table.src#QUERY_SAVE_TABLE_EDIT_INDEXES.QueryBox.Message
 msgid  "Before you can edit the indexes of a table, you have to save it.\nDo you want to save the changes now?"
-msgstr ""
+msgstr "Та хүснэгтийн индекс өөрчлөхийнхөө өмнө түүнийг хадгалах хэрэгтэй.\nТа хүснэгтийн бүтцэд хийсэн өөрчлөлтөө хадгалахыг хүсэж байна уу?"
 
 #: source/ui/tabledesign/table.src#STR_TABLEDESIGN_NO_PRIM_KEY_HEAD.String.Text
 msgid  "No primary key"
@@ -3465,15 +3513,15 @@ msgstr "Анхдагч түлхүүр байхгүй"
 
 #: source/ui/tabledesign/table.src#STR_TABLEDESIGN_NO_PRIM_KEY.String.Text
 msgid  "A unique index or primary key is required for data record identification in this database.\nYou can only enter data into this table when one of these two structural conditions has been met.\n\nShould a primary key be created now?"
-msgstr ""
+msgstr "Өгөгдлийн бичлэгийг ялгахын тулд энэ өгөгдлийн санд ялгуур индекс эсвэл анхдагч түлхүүр шаардлагатай.\nЗөвхөн энэ хоёр бүтэцийн нөхцөлийн аль нэгийг хангасан тохиолдолд та хүснэгтэнд утга оруулах боломжтой болно.\n\nОдоо анхдагч түлхүүрийг олгох уу?"
 
 #: source/ui/tabledesign/table.src#STR_TABLEDESIGN_TITLE.String.Text
 msgid  " - %PRODUCTNAME Base: Table Design"
 msgstr " - %PRODUCTNAME Base: Хүснэгтийн дизайн"
 
 #: source/ui/tabledesign/table.src#STR_TABLEDESIGN_ALTER_ERROR.String.Text
-msgid  "The column "$column$" could not be changed. Should the column instead be deleted and the new format appended?"
-msgstr ""
+msgid  "The column \"$column$\" could not be changed. Should the column instead be deleted and the new format appended?"
+msgstr "\"$column$\" багана өөрчлөгдөх боломжгүй. Түүний оронд устгаад шинээр хэлбэржүүлэлт хийх үү?"
 
 #: source/ui/tabledesign/table.src#STR_TABLEDESIGN_SAVE_ERROR.String.Text
 msgid  "Error while saving the table design"
@@ -3485,7 +3533,7 @@ msgstr "$column$ баганыг устгах боломжгүй."
 
 #: source/ui/tabledesign/table.src#TABLE_DESIGN_ALL_ROWS_DELETED.QueryBox.Message
 msgid  "You are trying to delete all the columns in the table. A table cannot exist without columns. Should the table be deleted from the database? If not, the table will remain unchanged."
-msgstr ""
+msgstr "Та энэ хүснэгтийн бүх баганыг устгахыг санаархлаа. Баганагүйгээр хүснэгт орших боломжгүй. Тиймээс хүснэгтийг өгөгдлийн сангаас устгах уу? Хэрэв үгүй бол хүснэгт өөрчлөгдөхгүй үлдэнэ."
 
 #: source/ui/tabledesign/table.src#STR_AUTOINCREMENT_VALUE.String.Text
 msgid  "A~uto-increment statement"
@@ -3493,11 +3541,11 @@ msgstr "A~uto-increment тушаал"
 
 #: source/ui/tabledesign/table.src#STR_HELP_AUTOINCREMENT_VALUE.String.Text
 msgid  "Enter an SQL statement for the auto-increment field.\n\nThis statement will be directly transferred to the database when the table is created."
-msgstr ""
+msgstr "Та энд auto-increment талбарын хувьд SQL илэрхийлэл оруулна уу.\n\nЭнэ илэрхийлэл нь хүснэгт үүсгэж байхад шууд өгөгдлийн сан руу дамжуулагдана."
 
 #: source/ui/tabledesign/table.src#STR_NO_TYPE_INFO_AVAILABLE.String.Text
 msgid  "No type information could be retrieved from the database.\nThe table design mode is not available for this data source."
-msgstr ""
+msgstr "Өгөгдлийн сангаас төрлийн мэдээлэл авах боломжгүй байна.\nЭнэ өгөгдлийн эхийн хувьд хүснэгтийн дизайн горим алга."
 
 #: source/ui/tabledesign/table.src#STR_CHANGE_COLUMN_NAME.String.Text
 msgid  "change field name"
@@ -3514,10 +3562,6 @@ msgstr "талбарын тайлбарыг солих"
 #: source/ui/tabledesign/table.src#STR_CHANGE_COLUMN_ATTRIBUTE.String.Text
 msgid  "change field attribute"
 msgstr "талбарын атрибутыг солих"
-
-#: source/ui/tabledesign/table.src#STR_STAT_WARNING.String.Text
-msgid  "Warning!"
-msgstr "Сануулга!"
 
 #: source/ui/uno/dbinteraction.src#STR_REMEMBERPASSWORD_SESSION.String.Text
 msgid  "~Remember password until end of session"
@@ -3537,7 +3581,7 @@ msgstr "Товлосон өгөгдлийн сан үндсэн түлхүүри
 
 #: source/ui/uno/copytablewizard.src#STR_CTW_INVALID_DATA_ACCESS_DESCRIPTOR.String.Text
 msgid  "no data access descriptor found, or no data access descriptor able to provide all necessary information"
-msgstr ""
+msgstr "Өгөгдлийн хандалтын тодорхойлогч олдсонгүй, эсвэл өгөгдлийн хандалтын тодорхойлогч шаардлагатай бүх мэдээллийг нийлүүлсэнгүй"
 
 #: source/ui/uno/copytablewizard.src#STR_CTW_ONLY_TABLES_AND_QUERIES_SUPPORT.String.Text
 msgid  "Only tables and queries are supported at the moment."
@@ -3570,47 +3614,3 @@ msgstr ""
 #: source/ui/uno/copytablewizard.src#STR_CTW_ERROR_INVALID_INTERACTIONHANDLER.String.Text
 msgid  "The given interaction handler is invalid."
 msgstr ""
-
-#: source/ui/inc/toolbox_tmpl.hrc#ID_BROWSER_REFRESH.#define.Text
-msgid  "Refresh"
-msgstr "Шинэчлэх"
-
-#: source/ui/inc/toolbox_tmpl.hrc#ID_NEW_VIEW_DESIGN.#define.Text
-msgid  "New ~View Design"
-msgstr "Шинэ ~Дүрслэлийн дизайн"
-
-#: source/ui/inc/toolbox_tmpl.hrc#ID_NEW_TABLE_DESIGN.#define.Text
-msgid  "New ~Table Design"
-msgstr "Шинэ ~Хүснэгтийн дизайн"
-
-#: source/ui/inc/toolbox_tmpl.hrc#ID_NEW_QUERY_WIZARD.#define.Text
-msgid  "Query AutoPilot..."
-msgstr "Асуулгын автомат залуурч..."
-
-#: source/ui/inc/toolbox_tmpl.hrc#ID_NEW_QUERY_DESIGN.#define.Text
-msgid  "New ~Query (Design View)"
-msgstr "Шинэ ~Асуулга (Зохиомж харагдац)"
-
-#: source/ui/inc/toolbox_tmpl.hrc#ID_EDIT_QUERY_DESIGN.#define.Text
-msgid  "~Edit Query"
-msgstr "Асуулга ~засах"
-
-#: source/ui/inc/toolbox_tmpl.hrc#ID_NEW_QUERY_SQL.#define.Text
-msgid  "New Query (~SQL View)"
-msgstr "Шинэ асуулга (~SQL харагдац)"
-
-#: source/ui/inc/toolbox_tmpl.hrc#ID_QUERY_EDIT_JOINCONNECTION.#define.Text
-msgid  "Edit..."
-msgstr "Засах..."
-
-#: source/ui/inc/toolbox_tmpl.hrc#ID_BROWSER_COLWIDTH.#define.Text
-msgid  "Column ~Width..."
-msgstr "Баганын ~өргөн..."
-
-#: source/ui/inc/toolbox_tmpl.hrc#ID_DOCUMENT_CREATE_REPWIZ.#define.Text
-msgid  "Report Wizard..."
-msgstr "Тайлангийн залуурч..."
-
-#: source/ui/inc/toolbox_tmpl.hrc#SID_DB_FORM_NEW_PILOT.#define.Text
-msgid  "Form AutoPilot..."
-msgstr "Маягтын автомат залуурч..."

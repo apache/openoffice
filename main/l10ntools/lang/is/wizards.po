@@ -49,7 +49,7 @@ msgstr "~Umbreyta"
 
 #: source/euro/euro.src#STEP_ZERO + 4.String.Text
 msgid  "Note: Currency amounts from external links and currency conversion factors in formulas cannot be converted."
-msgstr ""
+msgstr "Athugaðu: Upphæðum gjaldmiðla sem koma úr ytri tilvísunum og gengishlutföllum úr formúlum er ekki hægt að umbreyta."
 
 #: source/euro/euro.src#STEP_ZERO + 5.String.Text
 msgid  "First, unprotect all sheets."
@@ -153,7 +153,7 @@ msgstr "Staða umbreytingar á forsniðum reita:"
 
 #: source/euro/euro.src#STATUSLINE + 2.String.Text
 msgid  "Registration of the relevant ranges: Sheet %1Number%1 of %2TotPageCount%2"
-msgstr ""
+msgstr "Skráning viðkomandi gagnasviða: Blað %1Number%1 af %2TotPageCount%2"
 
 #: source/euro/euro.src#STATUSLINE + 3.String.Text
 msgid  "Entry of the ranges to be converted..."
@@ -221,11 +221,11 @@ msgstr "Ekki er hægt að afvernda blaðið"
 
 #: source/euro/euro.src#MESSAGES + 13.String.Text
 msgid  "The Wizard cannot edit this document as cell formats cannot be modified in documents containing protected spreadsheets."
-msgstr ""
+msgstr "Leiðsagnarforritið betur ekki breytt þessu skjali þar sem ekki er hægt að breyta sniðum reita í skjölum sem innihalda varin töflureikniblöð."
 
 #: source/euro/euro.src#MESSAGES + 14.String.Text
 msgid  "Please note that the Euro Converter will, otherwise, not be able to edit this document!"
-msgstr ""
+msgstr "Athugaðu að Evru-umbreytirinn getur eða öðrum kosti ekki breytt þessu skjali!"
 
 #: source/euro/euro.src#MESSAGES + 15.String.Text
 msgid  "Please choose a currency to be converted first!"
@@ -333,11 +333,11 @@ msgstr "Slóvensk korúna"
 
 #: source/euro/euro.src#CURRENCIES + 16.String.Text
 msgid  "The currency set for the document is not a European currency!"
-msgstr ""
+msgstr "Gjaldmiðillinn sem er skilgreindur fyrir skjalið er ekki evrópskur gjaldmiðill!"
 
 #: source/euro/euro.src#CURRENCIES + 17.String.Text
 msgid  "The language set for your operating system is not a language of the European Monetary Union."
-msgstr ""
+msgstr "Tungumálið sem stýrikerfið þitt hefur stillt tilheyrir ekki Efnahags- og myntbandalagi Evrópu (EMU)."
 
 #: source/euro/euro.src#STEP_LASTPAGE.String.Text
 msgid  "Progress"
@@ -361,35 +361,35 @@ msgstr "Blað er alltaf óvarið"
 
 #: source/formwizard/dbwizres.src#RID_COMMON_START + 0.String.Text
 msgid  "The directory '%1' could not be created.<BR>There may not be enough space left on your hard disk."
-msgstr ""
+msgstr "Ekki var hægt að búa til möppuna '%1'.<BR>Hugsanlega er ekki nóg diskpláss á harða diskinum."
 
 #: source/formwizard/dbwizres.src#RID_COMMON_START + 1.String.Text
 msgid  "The text document could not be created.<BR>Please check if the module 'PRODUCTNAME Writer' is installed."
-msgstr ""
+msgstr "Ekki tókst að búa til skjalið.<BR>Athugaðu hvort forritið 'PRODUCTNAME Writer' er uppsett."
 
 #: source/formwizard/dbwizres.src#RID_COMMON_START + 2.String.Text
 msgid  "The spreadsheet could not be created.<BR>Please check if the module 'PRODUCTNAME Calc' is installed."
-msgstr ""
+msgstr "Ekki tókst að búa til töflureikniskjalið.<BR>Athugaðu hvort forritið 'PRODUCTNAME Calc' er uppsett."
 
 #: source/formwizard/dbwizres.src#RID_COMMON_START + 3.String.Text
 msgid  "The presentation could not be created.<BR>Please check if the module 'PRODUCTNAME Impress' is installed."
-msgstr ""
+msgstr "Ekki tókst að búa til kynningu.<BR>Athugaðu hvort forritið 'PRODUCTNAME Impress' er uppsett."
 
 #: source/formwizard/dbwizres.src#RID_COMMON_START + 4.String.Text
 msgid  "The drawing could not be created.<BR>Please check if the module 'PRODUCTNAME Draw' is installed."
-msgstr ""
+msgstr "Ekki tókst að búa til teikningu.<BR>Athugaðu hvort forritið 'PRODUCTNAME Draw' er uppsett."
 
 #: source/formwizard/dbwizres.src#RID_COMMON_START + 5.String.Text
 msgid  "The formula could not be created.<BR>Please check if the module 'PRODUCTNAME Math' is installed."
-msgstr ""
+msgstr "Ekki tókst að búa til formúlu.<BR>Athugaðu hvort forritið 'PRODUCTNAME Math' er uppsett."
 
 #: source/formwizard/dbwizres.src#RID_COMMON_START + 6.String.Text
 msgid  "The files required could not be found.<BR>Please start the %PRODUCTNAME Setup and choose 'Repair'."
-msgstr ""
+msgstr "Fann ekki nauðsynlegar skrár.<BR>Ræstu %PRODUCTNAME uppsetninguna og veldu þar 'Lagfæra'."
 
 #: source/formwizard/dbwizres.src#RID_COMMON_START + 7.String.Text
 msgid  "The file '<PATH>' already exists.<BR><BR>Would you like to overwrite the existing file?"
-msgstr ""
+msgstr "Slóðin '<PATH>' er þegar til.<BR><BR>Viltu skrifa yfir skrána?"
 
 #: source/formwizard/dbwizres.src#RID_COMMON_START + 8.String.Text
 msgid  "Yes"
@@ -445,7 +445,7 @@ msgstr "Sniðmát búið til með <wizard_name> þann <current_date>."
 
 #: source/formwizard/dbwizres.src#RID_COMMON_START + 21.String.Text
 msgid  "The wizard could not be run, because important files were not found.\nUnder 'Tools - Options - %PRODUCTNAME - Paths' click the 'Default' button to reset the paths to the original default settings.\nThen run the wizard again."
-msgstr ""
+msgstr "Ekki tókst að keyra leiðarvísinn, þar sem mikilvægar skrár fundust ekki.\nFarðu í 'Verkfæri - Valkostir - %PRODUCTNAME - Slóðir' smelltu á 'Sjálfgefið' hnappinn til að endursetja slóðirnar á upprunalegar stillingar.\nKeyrðu svo aftur leiðarvísinn."
 
 #: source/formwizard/dbwizres.src#RID_DB_COMMON_START + 0.String.Text
 msgid  "C~reate"
@@ -473,7 +473,7 @@ msgstr "Heiti ~töflu"
 
 #: source/formwizard/dbwizres.src#RID_DB_COMMON_START + 6.String.Text
 msgid  "An error occurred while running the wizard. The wizard will be terminated."
-msgstr ""
+msgstr "Villa kom upp við að keyra leiðarvísi. Leiðarvísirinn mun hætta."
 
 #: source/formwizard/dbwizres.src#RID_DB_COMMON_START + 14.String.Text
 msgid  "No connection to the database could be established."
@@ -553,11 +553,11 @@ msgstr "Gagnasvið á e~yðublaðinu"
 
 #: source/formwizard/dbwizres.src#RID_DB_FORM_WIZARD_START + 2.String.Text
 msgid  "Binary fields are always listed and selectable from the left list.\nIf possible, they are interpreted as images."
-msgstr ""
+msgstr "Gagnareitir eru alltaf birtir og valdir frá vinstri listanum.\nEf það er hægt, þá eru þeir túlkaðir sem myndir."
 
 #: source/formwizard/dbwizres.src#RID_DB_FORM_WIZARD_START + 3.String.Text
 msgid  "A subform is a form that is inserted in another form.\nUse subforms to show data from tables or queries with a one-to-many relationship."
-msgstr ""
+msgstr "Undireyðublað er eyðublað sem er sett inn í önnur eyðublöð.\nNotaðu undireyðublöð til að birta gögn úr töflum eða fyrirspurnum sem eru með einn á móti mörgum venslum."
 
 #: source/formwizard/dbwizres.src#RID_DB_FORM_WIZARD_START + 4.String.Text
 msgid  "~Add Subform"
@@ -593,7 +593,7 @@ msgstr "Gagnasvið á eyðublaði"
 
 #: source/formwizard/dbwizres.src#RID_DB_FORM_WIZARD_START + 19.String.Text
 msgid  "The join '<FIELDNAME1>' and '<FIELDNAME2>' has been selected twice.\nBut joins may only be used once."
-msgstr ""
+msgstr "Töflutengingin '<FIELDNAME1>' og '<FIELDNAME2>' hefur verið valin tvisvar.\nEn aðeins má velja töflutengingu einu sinni."
 
 #: source/formwizard/dbwizres.src#RID_DB_FORM_WIZARD_START + 20.String.Text
 msgid  "~First joined subform field"
@@ -805,7 +805,7 @@ msgstr "Setja nafn á eyðublaðið"
 
 #: source/formwizard/dbwizres.src#RID_DB_FORM_WIZARD_START + 98.String.Text
 msgid  "A form with the name '%FORMNAME' already exists.\nChoose another name."
-msgstr ""
+msgstr "Eyðublað með heitinu '%FORMNAME' er þegar til.\nVeldu annað nafn."
 
 #: source/formwizard/dbwizres.src#RID_DB_QUERY_WIZARD_START + 0.String.Text
 msgid  "Query Wizard"
@@ -1097,15 +1097,15 @@ msgstr "Yfirlit"
 
 #: source/formwizard/dbwizres.src#RID_DB_QUERY_WIZARD_START + 88.String.Text
 msgid  "A field that has not been assigned an aggregate function must be used in a group."
-msgstr ""
+msgstr "Svið sem er ekki notað í samlagningu verður að vera notuð í hóp."
 
 #: source/formwizard/dbwizres.src#RID_DB_QUERY_WIZARD_START + 89.String.Text
 msgid  "The condition '<FIELDNAME> <LOGICOPERATOR> <VALUE>' was chosen twice. Each condition can only be chosen once"
-msgstr ""
+msgstr "Skilyrðið '<FIELDNAME> <LOGICOPERATOR> <VALUE>' var valið tvisvar. Hvert skilyrði er aðeins hægt að velja einu sinni"
 
 #: source/formwizard/dbwizres.src#RID_DB_QUERY_WIZARD_START + 90.String.Text
 msgid  "The aggregate function <FUNCTION> has been assigned twice to the fieldname '<NUMERICFIELD>'."
-msgstr ""
+msgstr "Samlagningarfallið <FUNCTION> hefur verið notað tvisvar fyrir sviðið '<NUMERICFIELD>'."
 
 #: source/formwizard/dbwizres.src#RID_DB_QUERY_WIZARD_START + 91.String.Text
 msgid  ", "
@@ -1321,11 +1321,11 @@ msgstr "Eyðublaðið '<REPORTFORM>' er ekki til."
 
 #: source/formwizard/dbwizres.src#RID_DB_REPORT_WIZARD_START + 65.String.Text
 msgid  "The query with the statement <BR>'<STATEMENT>' <BR> could not be run. <BR> Check your data source."
-msgstr ""
+msgstr "Ekki var hægt að keyra fyrirspurnina með skipuninni <BR>'<STATEMENT>' <BR>. <BR> Athugaðu gagnagjafa."
 
 #: source/formwizard/dbwizres.src#RID_DB_REPORT_WIZARD_START + 66.String.Text
 msgid  "The following hidden control in the form '<REPORTFORM>' could not be read: '<CONTROLNAME>'."
-msgstr ""
+msgstr "Ekki tókst að lesa eftirfarandi falið stjórntæki í eyðublaðinu '<REPORTFORM>': '<CONTROLNAME>'."
 
 #: source/formwizard/dbwizres.src#RID_DB_REPORT_WIZARD_START + 67.String.Text
 msgid  "Importing data..."
@@ -1349,7 +1349,7 @@ msgstr "Gagnasvið"
 
 #: source/formwizard/dbwizres.src#RID_DB_REPORT_WIZARD_START + 72.String.Text
 msgid  "An error occurred in the wizard.<BR>The template '%PATH' could be erroneous.<BR>Either the required sections or tables do not exist or exist under the wrong name.<BR>See the Help for more detailed information.<BR>Please select another template."
-msgstr ""
+msgstr "Upp kom villa í leiðarvísinum.<BR>Sniðmátið '%PATH' gæti verið vitlaust.<BR>Annaðhvort vantar nauðsynleg svæði eða töflur eða þau eru með rangt nafn.<BR>Kíktu á hjálpina fyrir meiri upplýsingar.<BR>Veldu annað sniðmát."
 
 #: source/formwizard/dbwizres.src#RID_DB_REPORT_WIZARD_START + 73.String.Text
 msgid  "There is an invalid user field in a table."
@@ -1357,15 +1357,15 @@ msgstr "Ógilt notandasvið er í töflu."
 
 #: source/formwizard/dbwizres.src#RID_DB_REPORT_WIZARD_START + 74.String.Text
 msgid  "The sort criterium '<FIELDNAME>' was chosen twice. Each criterium can only be chosen once."
-msgstr ""
+msgstr "Röðunarskilyrðið '<FIELDNAME>' var valið tvisvar. Aðeins er hægt að velja hvert skilyrði einu sinni."
 
 #: source/formwizard/dbwizres.src#RID_DB_REPORT_WIZARD_START + 75.String.Text
 msgid  "Note: The dummy text will be replaced by data from the database when the report is created."
-msgstr ""
+msgstr "Athugið: Fyllitextinn verður skipt út með gögnum frá gagnagrunninum þegar skýrslan er búinn til."
 
 #: source/formwizard/dbwizres.src#RID_DB_REPORT_WIZARD_START + 76.String.Text
 msgid  "A report '%REPORTNAME' already exists in the database. Please assign another name."
-msgstr ""
+msgstr "Skýrslan '%REPORTNAME' er þegar til í gagnagrunninum. Veldu annað nafn."
 
 #: source/formwizard/dbwizres.src#RID_DB_REPORT_WIZARD_START + 78.String.Text
 msgid  "How do you want to proceed after creating the report?"
@@ -1465,7 +1465,7 @@ msgstr "Búa til töflu"
 
 #: source/formwizard/dbwizres.src#RID_DB_TABLE_WIZARD_START + 14.String.Text
 msgid  "This wizard helps you to create a table for your database. After selecting a table category and a sample table, choose the fields you want to include in your table. You can include fields from more than one sample table."
-msgstr ""
+msgstr "Þessi leiðarvísir mun hjálpa þér að búa til töflu fyrir gagnagrunninn. Eftir að þú velur töflutegund og töfludæmi, veldu þá þau svið sem þú vilt að séu í töflunni. Þú getur valið svið frá fleiri en einni töflu."
 
 #: source/formwizard/dbwizres.src#RID_DB_TABLE_WIZARD_START + 15.String.Text
 msgid  "Ca~tegory"
@@ -1509,7 +1509,7 @@ msgstr "~Valin svæði"
 
 #: source/formwizard/dbwizres.src#RID_DB_TABLE_WIZARD_START + 26.String.Text
 msgid  "A primary key uniquely identifies each record in a database table. Primary keys ease the linking of information in separate tables, and it is recommended that you have a primary key in every table. Without a primary key, it will not be possible to enter data into this table."
-msgstr ""
+msgstr "Aðallykill er notaður til að auðkenna hverja einustu færslu í gagnagrunnstöflu. Aðallyklar auðvelda tengingar gagna í aðskildum töflum, þess vegna er mælt með því að láta búa til aðallykla í öllum töflum. Án slíks aðallykils verður ekki hægt að setja gögn inn í þessa töflu."
 
 #: source/formwizard/dbwizres.src#RID_DB_TABLE_WIZARD_START + 27.String.Text
 msgid  "~Create a primary key"
@@ -1545,7 +1545,7 @@ msgstr "Hvað viltu að taflan heiti?"
 
 #: source/formwizard/dbwizres.src#RID_DB_TABLE_WIZARD_START + 35.String.Text
 msgid  "Congratulations. You have entered all the information needed to create your table."
-msgstr ""
+msgstr "Til hamingju. Þú ert búinn að setja inn allar þær upplýsingar sem þarf til að búa til töfluna."
 
 #: source/formwizard/dbwizres.src#RID_DB_TABLE_WIZARD_START + 36.String.Text
 msgid  "What do you want to do next?"
@@ -1569,11 +1569,11 @@ msgstr "Ekki tókst að opna töfluna sem þú varst að búa til."
 
 #: source/formwizard/dbwizres.src#RID_DB_TABLE_WIZARD_START + 41.String.Text
 msgid  "The table name '%TABLENAME' contains a character ('%SPECIALCHAR') that might not be supported by the database."
-msgstr ""
+msgstr "Töflunafnið '%TABLENAME' inniheldur staf ('%SPECIALCHAR') sem hugsanlega er ekki studdur af gagnagrunninum."
 
 #: source/formwizard/dbwizres.src#RID_DB_TABLE_WIZARD_START + 42.String.Text
 msgid  "The field name '%FIELDNAME' contains a special character ('%SPECIALCHAR') that might not be supported by the database."
-msgstr ""
+msgstr "Sviðið '%FIELDNAME' inniheldur sértákn ('%SPECIALCHAR') sem hugsanlega er ekki studdur af gagnagrunninum."
 
 #: source/formwizard/dbwizres.src#RID_DB_TABLE_WIZARD_START + 43.String.Text
 msgid  "Field"
@@ -1593,11 +1593,11 @@ msgstr "Fjarlægja valið gagnasvið"
 
 #: source/formwizard/dbwizres.src#RID_DB_TABLE_WIZARD_START + 47.String.Text
 msgid  "The field cannot be inserted because this would exceed the maximum number of %COUNT possible fields in the database table"
-msgstr ""
+msgstr "Ekki tókst að bæta við sviði þar sem fjöldi sviða fer yfir %COUNT sem er hámarksfjöldi mögulegra sviða sem geta verið í gagnagrunnstöflu"
 
 #: source/formwizard/dbwizres.src#RID_DB_TABLE_WIZARD_START + 48.String.Text
 msgid  "The name '%TABLENAME' already exists.\nPlease enter another name."
-msgstr ""
+msgstr "Þegar er til tafla sem heitir '%TABLENAME'.\nSláðu inn annað nafn."
 
 #: source/formwizard/dbwizres.src#RID_DB_TABLE_WIZARD_START + 49.String.Text
 msgid  "Catalog of the table"
@@ -1733,7 +1733,7 @@ msgstr "Hönnun síðu"
 
 #: source/formwizard/dbwizres.src#RID_LETTERWIZARDDIALOG_START + 31.String.Text
 msgid  "This wizard helps you to create a letter template. You can then use the template as the basis for writing letters as often as desired."
-msgstr ""
+msgstr "Þessi leiðarvísir hjálpar þér við að búa til sniðmát fyrir bréfsefni. Svo er hægt að nota sniðmátið sem grunn til að búa til eins mörg bréf og þurfa þykir."
 
 #: source/formwizard/dbwizres.src#RID_LETTERWIZARDDIALOG_START + 32.String.Text
 msgid  "~Height:"
@@ -1801,11 +1801,11 @@ msgstr "Síðufótur"
 
 #: source/formwizard/dbwizres.src#RID_LETTERWIZARDDIALOG_START + 48.String.Text
 msgid  "This wizard creates a letter template which enables you to create multiple letters with the same layout and settings."
-msgstr ""
+msgstr "Þetta leiðsagnarforrit aðstoðar við að búa til bréfasniðmát sem gerir kleift að senda mörg bréf með sama útliti og stillingum."
 
 #: source/formwizard/dbwizres.src#RID_LETTERWIZARDDIALOG_START + 49.String.Text
 msgid  "To create another new letter out of the template just navigate to the template location and double-click it."
-msgstr ""
+msgstr "Til að búa til annað bréf út frá sniðmáti farðu þá á staðsetningu sniðmátsins og tvísmelltu á það."
 
 #: source/formwizard/dbwizres.src#RID_LETTERWIZARDDIALOG_START + 50.String.Text
 msgid  "Template name:"
@@ -1957,7 +1957,7 @@ msgstr "Hönnun síðu"
 
 #: source/formwizard/dbwizres.src#RID_FAXWIZARDDIALOG_START + 17.String.Text
 msgid  "This wizard helps you to create a fax template. The template can then be used to create a fax whenever needed."
-msgstr ""
+msgstr "Þetta leiðsagnarforrit aðstoðar við að búa til faxsniðmát. Sniðmátið er síðan hægt að nota til að búa til fax, hvenær sem á því þarf að halda."
 
 #: source/formwizard/dbwizres.src#RID_FAXWIZARDDIALOG_START + 18.String.Text
 msgid  "Return address"
@@ -1981,11 +1981,11 @@ msgstr "Síðufótur"
 
 #: source/formwizard/dbwizres.src#RID_FAXWIZARDDIALOG_START + 23.String.Text
 msgid  "This wizard creates a fax template which enables you to create multiple faxes with the same layout and settings."
-msgstr ""
+msgstr "Þetta leiðsagnarforrit aðstoðar við að búa til faxsniðmát sem gerir kleift að senda mörg símbréf með sama útliti og stillingum."
 
 #: source/formwizard/dbwizres.src#RID_FAXWIZARDDIALOG_START + 24.String.Text
 msgid  "To create another new fax out of the template, go to the location where you saved the template and double-click the file."
-msgstr ""
+msgstr "Til að búa til nýtt fax út frá þessu sniðmáti, farðu þá í möppuna þar sem þú vistaðir sniðmátið og tvísmelltu á skrána."
 
 #: source/formwizard/dbwizres.src#RID_FAXWIZARDDIALOG_START + 25.String.Text
 msgid  "Template Name:"
@@ -2121,7 +2121,7 @@ msgstr "Vefleiðsagnarforrit"
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +2.String.Text
 msgid  "This Web Wizard is to aid you in publishing documents on the Internet.\n\nIt will convert the documents so that they can be viewed by a web browser. In addition, it will generate a Table of Contents page with links for easy access to the documents. The Web Wizard will also allow you to customize the design and layout of your web site.\n\nYou will be able to keep the documents you have published on the web up-to-date and add or remove documents at any time."
-msgstr ""
+msgstr "Þetta vefleiðsagnarforrit er hugsað til að hjálpa þér að birta skjöl á internetinu.\n\nÞað mun umbreyta skjölum svo hægt sé að skoða þau með vefvafra. Þar að auki býr það til sérstaka efnisyfirlitssíðu með tenglum/stiklum til að auðvelda aðgang að efni skjalanna. Vefleiðsagnarforritið gefur þér líka kost á að sérsníða hönnun og útlit vefsvæðisins.\n\nÞú getur síðan haldið efninu uppfærðu sem þú hefur þegar birt eða fjarlægt skjöl þegar það hentar."
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +4.String.Text
 msgid  "~Delete"
@@ -2305,7 +2305,7 @@ msgstr "Sérsníða valda framsetningu"
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +61.String.Text
 msgid  "Include the following information for each document in the table of contents:"
-msgstr ""
+msgstr "Láta fylgja með eftirfarandi upplýsingar í hverju skjali í efnisyfirliti:"
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +62.String.Text
 msgid  "Optimize the layout for screen resolution:"
@@ -2345,19 +2345,19 @@ msgstr "Staðværa úttakið '%FILENAME' er skrá."
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +75.String.Text
 msgid  "The ZIP target '%FILENAME' already exists. Do you want to overwrite the existing target? "
-msgstr ""
+msgstr "ZIP skráin '%FILENAME' er þegar til. Viltu yfirskrifa skránna? "
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +76.String.Text
 msgid  "The FTP target directory '%FILENAME' is not empty. Some files might be overwritten. Do you want to continue?"
-msgstr ""
+msgstr "FTP mappan '%FILENAME' er ekki tóm. Hugsanlega verða einhverjar skrár yfirskrifaðar. Viltu halda áfram?"
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +77.String.Text
 msgid  "The local target directory '%FILENAME' is not empty. Some files might be overwritten. Do you want to continue?"
-msgstr ""
+msgstr "Mappan '%FILENAME' er ekki tóm. Hugsanlega verða einhverjar skrár yfirskrifaðar. Viltu halda áfram?"
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +78.String.Text
 msgid  "Settings already exist under the given name. Do you want to overwrite the existing settings? "
-msgstr ""
+msgstr "Þegar eru til stillingar með sama nafni. Viltu yfirskrifa eldri stillingar? "
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +79.String.Text
 msgid  "Exporting documents..."
@@ -2457,7 +2457,7 @@ msgstr "Villa kom upp við að afrita umbrotskrár. "
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +108.String.Text
 msgid  "An error occurred while gathering document information for '%FILENAME'. "
-msgstr ""
+msgstr "Villa kom upp við að ná í upplýsingar skjals fyrir '%FILENAME'. "
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +109.String.Text
 msgid  "An error occurred while exporting the document '%FILENAME'."
@@ -2473,7 +2473,7 @@ msgstr "Öryggisvilla kom upp við að flytja út skjalið '%FILENAME'."
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +112.String.Text
 msgid  "An input/output error occurred while exporting the document '%FILENAME'."
-msgstr ""
+msgstr "Inntaks/úttaksvilla kom upp við að flytja út skjalið '%FILENAME'."
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +113.String.Text
 msgid  "An error occurred while copying media files to the temporary directory."
@@ -2541,7 +2541,7 @@ msgstr "Forskoða"
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +130.String.Text
 msgid  "The selected settings will be deleted.\n\nDo you really want to delete these settings? "
-msgstr ""
+msgstr "Völdum stillingum verður eytt.\n\nErtu viss um að þú viljir eyða þessum stillingum? "
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +131.String.Text
 msgid  "%NUMBER pages"
@@ -2609,19 +2609,19 @@ msgstr "Ekki tókst að búa til FTP möppu '%FILENAME'."
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +147.String.Text
 msgid  "The FTP directory '%FILENAME' does not exist. \nCreate the directory now?"
-msgstr ""
+msgstr "FTP mappan '%FILENAME' er ekki til. \nViltu búa til möppuna núna?"
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +148.String.Text
 msgid  "The Zip file '%FILENAME' cannot be created: a directory of the same name already exists."
-msgstr ""
+msgstr "Ekki er hægt að búa til Zip skránna '%FILENAME': þegar er til mappa með sama nafni."
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +149.String.Text
 msgid  "The local directory '%FILENAME' cannot be created. \nPlease check your write-access."
-msgstr ""
+msgstr "Ekki er hægt að búa til möppu '%FILENAME'. \nAthugaðu skrifréttindi."
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +150.String.Text
 msgid  "The local directory '%FILENAME' does not exist. \nCreate the directory now?"
-msgstr ""
+msgstr "Mappan '%FILENAME' er ekki til. \nViltu búa til möppuna núna?"
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +151.String.Text
 msgid  "Size: %NUMBERKB"
@@ -2733,7 +2733,7 @@ msgstr "Veldu hönnun á síðu fyrir dagskrána"
 
 #: source/formwizard/dbwizres.src#RID_AGENDAWIZARDDIALOG_START +7.String.Text
 msgid  "Please select the headings you wish to include in your agenda template"
-msgstr ""
+msgstr "Vinsamlega veldu þær fyrirsagnir sem þú vilt láta fylgja með í dagskrársniðinu"
 
 #: source/formwizard/dbwizres.src#RID_AGENDAWIZARDDIALOG_START +8.String.Text
 msgid  "Please enter general information for the event"
@@ -2757,7 +2757,7 @@ msgstr "Hafa með reitaform til að skrá mínútur"
 
 #: source/formwizard/dbwizres.src#RID_AGENDAWIZARDDIALOG_START +13.String.Text
 msgid  "This wizard helps you to create an agenda template. The template can then be used to create an agenda whenever needed."
-msgstr ""
+msgstr "Þetta leiðsagnarforrit aðstoðar við að búa til dagskrársniðmát. Sniðmátið er síðan hægt að nota til að búa til dagskrá, hvenær sem á því þarf að halda."
 
 #: source/formwizard/dbwizres.src#RID_AGENDAWIZARDDIALOG_START +14.String.Text
 msgid  "Time:"
@@ -2773,7 +2773,7 @@ msgstr "Staðsetning:"
 
 #: source/formwizard/dbwizres.src#RID_AGENDAWIZARDDIALOG_START +17.String.Text
 msgid  "Placeholders will be used in empty fields. You can replace placeholders with text later."
-msgstr ""
+msgstr "Í auðum gagnareitum verða gagnastaðgenglar. Þú getur síðar skrifað yfir þá með texta."
 
 #: source/formwizard/dbwizres.src#RID_AGENDAWIZARDDIALOG_START +18.String.Text
 msgid  "..."
@@ -2785,7 +2785,7 @@ msgstr "Búa til dagskrá út frá þessu dagskrársniðmáti"
 
 #: source/formwizard/dbwizres.src#RID_AGENDAWIZARDDIALOG_START +20.String.Text
 msgid  "To create a new agenda out of the template, go to the location where you saved the template and double-click the file."
-msgstr ""
+msgstr "Til að búa til nýja dagskrá út frá þessu sniðmáti, farðu þá í möppuna þar sem þú vistaðir sniðmátið og tvísmelltu á skrána."
 
 #: source/formwizard/dbwizres.src#RID_AGENDAWIZARDDIALOG_START +21.String.Text
 msgid  "Agenda item"
@@ -2829,7 +2829,7 @@ msgstr "Starfsmenn"
 
 #: source/formwizard/dbwizres.src#RID_AGENDAWIZARDDIALOG_START +31.String.Text
 msgid  "The agenda template will include placeholders for the names of the selected people. When creating an agenda from the template, you can replace these placeholder with the appropriate names."
-msgstr ""
+msgstr "Sniðmátið fyrir dagskrárgerð mun innihalda staðgöngusvæði fyrir nöfn fólksins sem valið er. Þegar dagskrá er búin til út frá sniðmátinu, geturðu skipt þessum svæðum út fyrir viðeiganfi nöfn."
 
 #: source/formwizard/dbwizres.src#RID_AGENDAWIZARDDIALOG_START +32.String.Text
 msgid  "Type of meeting"
@@ -2857,7 +2857,7 @@ msgstr "Dagsetning:"
 
 #: source/formwizard/dbwizres.src#RID_AGENDAWIZARDDIALOG_START +39.String.Text
 msgid  "This wizard creates an agenda template which enables you to create multiple agendas with the same layout and settings."
-msgstr ""
+msgstr "Þetta leiðsagnarforrit aðstoðar við að búa til dagskrársniðmát sem síðan er hægt að nota til að búa til margar dagskrár með sömu framsetningu og stillingum."
 
 #: source/formwizard/dbwizres.src#RID_AGENDAWIZARDDIALOG_START +40.String.Text
 msgid  "Page design:"
@@ -3009,11 +3009,11 @@ msgstr "~Loka"
 
 #: source/importwizard/importwi.src#sWelcometextLabel1.String.Text
 msgid  "This wizard converts documents in %PRODUCTNAME format and Microsoft Office documents to the new OpenDocument format."
-msgstr ""
+msgstr "Þetta leiðsagnarforrit umbreytir skjölum á %PRODUCTNAME sniði sem og Microsoft Office skjölum yfir á nýja OpenDocument sniðið."
 
 #: source/importwizard/importwi.src#sWelcometextLabel2.String.Text
 msgid  "Please note that when converting Microsoft documents any attached VBA macros lose their functionality."
-msgstr ""
+msgstr "Athugaðu að við umbreytingu Microsoft skjala geta margir VBA fjölvar misst virkni sína."
 
 #: source/importwizard/importwi.src#sWelcometextLabel3.String.Text
 msgid  "Select the document type for conversion:"
@@ -3241,59 +3241,59 @@ msgstr "Þetta verður flutt út í eftirfarandi möppu:"
 
 #: source/importwizard/importwi.src#sSumSOTextDocuments.String.Text
 msgid  "All %PRODUCTNAME text documents contained in the following directory will be imported:"
-msgstr ""
+msgstr "Öll %PRODUCTNAME textaskjöl inni í eftirfarandi möppu verða flutt inn:"
 
 #: source/importwizard/importwi.src#sSumSOTableDocuments.String.Text
 msgid  "All %PRODUCTNAME spreadsheets contained in the following directory will be imported:"
-msgstr ""
+msgstr "Öll %PRODUCTNAME töflureikniskjöl inni í eftirfarandi möppu verða flutt inn:"
 
 #: source/importwizard/importwi.src#sSumSODrawDocuments.String.Text
 msgid  "All %PRODUCTNAME drawing and presentation documents contained in the following directory will be imported:"
-msgstr ""
+msgstr "Allar %PRODUCTNAME teikningar og kynningarskjöl inni í eftirfarandi möppu verða flutt inn:"
 
 #: source/importwizard/importwi.src#sSumSOMathDocuments.String.Text
 msgid  "All %PRODUCTNAME formula documents contained in the following directory will be imported:"
-msgstr ""
+msgstr "Öll %PRODUCTNAME formúluskjöl inni í eftirfarandi möppu verða flutt inn:"
 
 #: source/importwizard/importwi.src#sSumSOTextTemplates.String.Text
 msgid  "All %PRODUCTNAME text templates contained in the following directory will be imported:"
-msgstr ""
+msgstr "Öll sniðmát fyrir %PRODUCTNAME textaskjöl inni í eftirfarandi möppu verða flutt inn:"
 
 #: source/importwizard/importwi.src#sSumSOTableTemplates.String.Text
 msgid  "All %PRODUCTNAME table templates contained in the following directory will be imported:"
-msgstr ""
+msgstr "Öll %PRODUCTNAME töflusniðmát inni í eftirfarandi möppu verða flutt inn:"
 
 #: source/importwizard/importwi.src#sSumSODrawTemplates.String.Text
 msgid  "All %PRODUCTNAME drawing and presentation templates contained in the following directory will be imported:"
-msgstr ""
+msgstr "Öll sniðmát fyrir %PRODUCTNAME teikningar og kynningarskjöl inni í eftirfarandi möppu verða flutt inn:"
 
 #: source/importwizard/importwi.src#sSumSOGlobalDocuments.String.Text
 msgid  "All %PRODUCTNAME master documents contained in the following directory will be imported:"
-msgstr ""
+msgstr "Öll %PRODUCTNAME yfirskjöl inni í eftirfarandi möppu verða flutt inn:"
 
 #: source/importwizard/importwi.src#sSumMSTextDocuments.String.Text
 msgid  "All Word documents contained in the following directory will be imported:"
-msgstr ""
+msgstr "Öll Word skjöl inni í eftirfarandi möppu verða flutt inn:"
 
 #: source/importwizard/importwi.src#sSumMSTableDocuments.String.Text
 msgid  "All Excel documents contained in the following directory will be imported:"
-msgstr ""
+msgstr "Öll Excel skjöl inni í eftirfarandi möppu verða flutt inn:"
 
 #: source/importwizard/importwi.src#sSumMSDrawDocuments.String.Text
 msgid  "All PowerPoint documents contained in the following directory will be imported:"
-msgstr ""
+msgstr "Öll PowerPoint skjöl inni í eftirfarandi möppu verða flutt inn:"
 
 #: source/importwizard/importwi.src#sSumMSTextTemplates.String.Text
 msgid  "All Word templates contained in the following directory will be imported:"
-msgstr ""
+msgstr "Öll Word sniðmát inni í eftirfarandi möppu verða flutt inn:"
 
 #: source/importwizard/importwi.src#sSumMSTableTemplates.String.Text
 msgid  "All Excel templates contained in the following directory will be imported:"
-msgstr ""
+msgstr "Öll Excel sniðmát inni í eftirfarandi möppu verða flutt inn:"
 
 #: source/importwizard/importwi.src#sSumMSDrawTemplates.String.Text
 msgid  "All PowerPoint templates contained in the following directory will be imported:"
-msgstr ""
+msgstr "Öll PowerPoint sniðmát inni í eftirfarandi möppu verða flutt inn:"
 
 #: source/schedule/schedule.src#dlgCalTitle.String.Text
 msgid  "%PRODUCTNAME Calendar"
@@ -3481,7 +3481,7 @@ msgstr "Framvinda:"
 
 #: source/template/template.src#SAMPLES.String.Text
 msgid  "In order to use the full functionality of this sample, create a document that is based on this template."
-msgstr ""
+msgstr "Til að geta notað alla eiginleika þessa sýnishorns, búðu til skjal sem byggist á þessu sniðmáti."
 
 #: source/template/template.src#SAMPLES + 1.String.Text
 msgid  "Remarks"
@@ -3493,7 +3493,7 @@ msgstr "Val á þema"
 
 #: source/template/template.src#STYLES + 1.String.Text
 msgid  "Error while saving the document to the clipboard! The following action cannot be undone."
-msgstr ""
+msgstr "Villa við að vista skjalið á klippispjaldið! Eftirfarandi aðgerð er ekki hægt að afturkalla."
 
 #: source/template/template.src#STYLES + 2.String.Text
 msgid  "~Cancel"

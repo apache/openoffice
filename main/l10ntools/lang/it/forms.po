@@ -157,7 +157,7 @@ msgstr "Errore durante la valutazione"
 
 #: source/resource/xforms.src#RID_STR_XFORMS_PATTERN_DOESNT_MATCH.String.Text
 msgid  "The string '$1' does not match the required regular expression '$2'."
-msgstr ""
+msgstr "La stringa '$1' non corrisponde all'espressione regolare richiesta '$2'."
 
 #: source/resource/xforms.src#RID_STR_XFORMS_BINDING_UI_NAME.String.Text
 msgid  "Binding"
@@ -165,7 +165,7 @@ msgstr "Associazione"
 
 #: source/resource/strings.src#RID_BASELISTBOX_ERROR_FILLLIST.String.Text
 msgid  "The contents of a combo box or list field could not be determined."
-msgstr ""
+msgstr "Non è stato possibile determinare il contenuto di una casella combinata o di una casella di riepilogo."
 
 #: source/resource/strings.src#RID_STR_IMPORT_GRAPHIC.String.Text
 msgid  "Insert graphics"
@@ -177,7 +177,7 @@ msgstr "sostituito"
 
 #: source/resource/strings.src#RID_STR_CONTROL_SUBSTITUTED_EPXPLAIN.String.Text
 msgid  "An error occurred while this control was being loaded. It was therefore replaced with a placeholder."
-msgstr ""
+msgstr "Durante il caricamento del control si è verificato un errore. Pertanto è stato sostituito con una variabile."
 
 #: source/resource/strings.src#RID_STR_READERROR.String.Text
 msgid  "Error reading data from database"
@@ -233,7 +233,7 @@ msgstr "Errore nell'analizzare dell'espressione di ricerca"
 
 #: source/resource/strings.src#RID_STR_INCOMPATIBLE_TYPES.String.Text
 msgid  "The value types supported by the binding cannot be used for exchanging data with this control."
-msgstr ""
+msgstr "I tipi di valore supportati dall'associazione non possono essere usati per lo scambio di dati con questo controllo."
 
 #: source/resource/strings.src#RID_STR_LABEL_RECORD.String.Text
 msgid  "Record"
@@ -241,7 +241,7 @@ msgstr "Record"
 
 #: source/resource/strings.src#RID_STR_INVALID_VALIDATOR.String.Text
 msgid  "The control is connected to an external value binding, which at the same time acts as validator. You need to revoke the value binding, before you can set a new validator."
-msgstr ""
+msgstr "Il controllo è collegato a un'associazione a un valore esterno che funge anche da verifica. Per poter impostare un nuovo parametro di verifica dovete revocare l'associazione del valore."
 
 #: source/resource/strings.src#RID_STR_LABEL_OF.String.Text
 msgid  "of"
@@ -249,7 +249,7 @@ msgstr "di"
 
 #: source/resource/strings.src#RID_STR_QUERY_SAVE_MODIFIED_ROW.String.Text
 msgid  "The content of the current form has been modified.\nDo you want to save your changes?"
-msgstr ""
+msgstr "Il contenuto della forma corrente è stato modificato.\nVolete salvare le modifiche?"
 
 #: source/resource/strings.src#RID_STR_COULD_NOT_SET_ORDER.String.Text
 msgid  "Error setting the sort criteria"
@@ -265,7 +265,7 @@ msgstr "Per eseguire questa funzione, sono necessari i parametri."
 
 #: source/resource/strings.src#RID_STR_FEATURE_NOT_EXECUTABLE.String.Text
 msgid  "This function cannot be executed, but is only for status queries."
-msgstr ""
+msgstr "Questa funzione non può essere eseguita, ma è valida solo per le ricerche sullo stato."
 
 #: source/resource/strings.src#RID_STR_FEATURE_UNKNOWN.String.Text
 msgid  "Unknown function."

@@ -49,7 +49,7 @@ msgstr "~Түрлендiру"
 
 #: source/euro/euro.src#STEP_ZERO + 4.String.Text
 msgid  "Note: Currency amounts from external links and currency conversion factors in formulas cannot be converted."
-msgstr ""
+msgstr "Ескертпе: сыртқы сiлтемелермен байланысқан валютталардың соммалары және сонымен қатар ұяшықтардың формулаларындағы валюталардың аудару дәрежелерi түрлендiрiлмейдi."
 
 #: source/euro/euro.src#STEP_ZERO + 5.String.Text
 msgid  "First, unprotect all sheets."
@@ -153,7 +153,7 @@ msgstr "Ұяшықтар стильдерiнiң түрлендiру күйi:"
 
 #: source/euro/euro.src#STATUSLINE + 2.String.Text
 msgid  "Registration of the relevant ranges: Sheet %1Number%1 of %2TotPageCount%2"
-msgstr ""
+msgstr " %2Tot Page Count%2 -тан %1Number%1 парағы: түрлендiретiн аймақтардың жазбасы. "
 
 #: source/euro/euro.src#STATUSLINE + 3.String.Text
 msgid  "Entry of the ranges to be converted..."
@@ -221,11 +221,11 @@ msgstr "Парақтан қорғанысты алуға мүмкiн емес!"
 
 #: source/euro/euro.src#MESSAGES + 13.String.Text
 msgid  "The Wizard cannot edit this document as cell formats cannot be modified in documents containing protected spreadsheets."
-msgstr ""
+msgstr "Қорғалған парақтармен құжаттарда ұяшықтардың түрлерiн өзгертуге мүмкiн емес болғандықтан, шебер осы құжатты өзгертамайды."
 
 #: source/euro/euro.src#MESSAGES + 14.String.Text
 msgid  "Please note that the Euro Converter will, otherwise, not be able to edit this document!"
-msgstr ""
+msgstr "Назар аударыңыз,  осы құжатты Евро конверторы басқаша өзгертамайды!"
 
 #: source/euro/euro.src#MESSAGES + 15.String.Text
 msgid  "Please choose a currency to be converted first!"
@@ -321,7 +321,7 @@ msgstr "Осы құжаттқа орындалған валюта Еуропал
 
 #: source/euro/euro.src#CURRENCIES + 13.String.Text
 msgid  "Cypriot Pound"
-msgstr "Сiздiң амалдық жүйеге орындалған тiл, Еуропалық  Экономикалық бiрлiкке (ЕЭБ) "
+msgstr "Сiздiң амалдық жүйеге орындалған тiл, Еуропалық  Экономикалық бiрлiкке (ЕЭБ) кiрмейтiн елдiн тiлi емес.\n"
 
 #: source/euro/euro.src#CURRENCIES + 14.String.Text
 msgid  "Maltese Lira"
@@ -361,35 +361,35 @@ msgstr "Парақ әрқашанда қорғалмаған"
 
 #: source/formwizard/dbwizres.src#RID_COMMON_START + 0.String.Text
 msgid  "The directory '%1' could not be created.<BR>There may not be enough space left on your hard disk."
-msgstr ""
+msgstr " '%1' бумасын жасауға мүмкiндiк жоқ. <BR> Мүмкiн, қатты дискiнде орын жеткiлiксiз. "
 
 #: source/formwizard/dbwizres.src#RID_COMMON_START + 1.String.Text
 msgid  "The text document could not be created.<BR>Please check if the module 'PRODUCTNAME Writer' is installed."
-msgstr ""
+msgstr "Мәтiндiк құжатты жасауға мүмкiндiк жоқ. <BR> Тексерiңiз, Writer құрауышы орнатылған едi ма. "
 
 #: source/formwizard/dbwizres.src#RID_COMMON_START + 2.String.Text
 msgid  "The spreadsheet could not be created.<BR>Please check if the module 'PRODUCTNAME Calc' is installed."
-msgstr ""
+msgstr "Электрондық кестенi жасауға мүмкiндiк жоқ.  <BR> Тексерiңiз, Calc құрауышы орнатылған едi ма."
 
 #: source/formwizard/dbwizres.src#RID_COMMON_START + 3.String.Text
 msgid  "The presentation could not be created.<BR>Please check if the module 'PRODUCTNAME Impress' is installed."
-msgstr ""
+msgstr "Презентацияны жасауға мүмкiндiк жоқ. <BR>Тексерiңiз,  Impress құрауышы орнатылған едi ма."
 
 #: source/formwizard/dbwizres.src#RID_COMMON_START + 4.String.Text
 msgid  "The drawing could not be created.<BR>Please check if the module 'PRODUCTNAME Draw' is installed."
-msgstr ""
+msgstr "Суреттi жасауға мүмкiндiк жоқ.  <BR>Тексерiңiз,  Draw құрауышы орнатылған едi ма."
 
 #: source/formwizard/dbwizres.src#RID_COMMON_START + 5.String.Text
 msgid  "The formula could not be created.<BR>Please check if the module 'PRODUCTNAME Math' is installed."
-msgstr ""
+msgstr "Формуланы жазуға мүмкiндiк жоқ. <BR>Тексерiңiз,  Math құрауышы орнатылған едi ма."
 
 #: source/formwizard/dbwizres.src#RID_COMMON_START + 6.String.Text
 msgid  "The files required could not be found.<BR>Please start the %PRODUCTNAME Setup and choose 'Repair'."
-msgstr ""
+msgstr "Қажеттi файлдарды табуға мүмкiндiк жоқ.  <BR>  %PRODUCTNAME орнатуды iске қосып және \"Қалпына келтiру\"-нi басыңыз."
 
 #: source/formwizard/dbwizres.src#RID_COMMON_START + 7.String.Text
 msgid  "The file '<PATH>' already exists.<BR><BR>Would you like to overwrite the existing file?"
-msgstr ""
+msgstr " '<PATH>' файлы бұрынан бар едi.  <BR><BR> Бұрынан бар файлды қайта жазайын ба?"
 
 #: source/formwizard/dbwizres.src#RID_COMMON_START + 8.String.Text
 msgid  "Yes"
@@ -445,7 +445,7 @@ msgstr " <current_date>-дегi қалып <wizard_name> Ұстамен жаса
 
 #: source/formwizard/dbwizres.src#RID_COMMON_START + 21.String.Text
 msgid  "The wizard could not be run, because important files were not found.\nUnder 'Tools - Options - %PRODUCTNAME - Paths' click the 'Default' button to reset the paths to the original default settings.\nThen run the wizard again."
-msgstr ""
+msgstr "Ұста, кейбiр файлдарды табалмағаннан соң iске қосылмайды.\n Баптауларды алып тастау үшiн  Саймандар- Параметрлер - %PRODUCTNAME - Жолдар мәзiрде  \"Үнсiз келiсiм бойынша\" батырманы басыңыз. \n Сонымен Ұстаны қайта iске қосыңыз."
 
 #: source/formwizard/dbwizres.src#RID_DB_COMMON_START + 0.String.Text
 msgid  "C~reate"
@@ -473,7 +473,7 @@ msgstr "~Кестенiң аты"
 
 #: source/formwizard/dbwizres.src#RID_DB_COMMON_START + 6.String.Text
 msgid  "An error occurred while running the wizard. The wizard will be terminated."
-msgstr ""
+msgstr "Ұста жұмысының  қатесi. Ұстанын жұмысы үзiледi."
 
 #: source/formwizard/dbwizres.src#RID_DB_COMMON_START + 14.String.Text
 msgid  "No connection to the database could be established."
@@ -553,11 +553,11 @@ msgstr "Өрiстер үлгiлерде"
 
 #: source/formwizard/dbwizres.src#RID_DB_FORM_WIZARD_START + 2.String.Text
 msgid  "Binary fields are always listed and selectable from the left list.\nIf possible, they are interpreted as images."
-msgstr ""
+msgstr "Екеулiк өрiстер әрқашан атап өтiледi және тiзiмнен таңдалады.\n Егер осы мүмкiн болса, олар бейне ретiнде көрсетiледi. "
 
 #: source/formwizard/dbwizres.src#RID_DB_FORM_WIZARD_START + 3.String.Text
 msgid  "A subform is a form that is inserted in another form.\nUse subforms to show data from tables or queries with a one-to-many relationship."
-msgstr ""
+msgstr "Үлгi басқа үлгiге салынған ретiнде саналады.\nIшкi үлгiнi кестедегi деректердi немесе  «бiр көптерге» түрi сияқты сұранысты көрсетуге үшiн қолданыңыз."
 
 #: source/formwizard/dbwizres.src#RID_DB_FORM_WIZARD_START + 4.String.Text
 msgid  "~Add Subform"
@@ -593,7 +593,7 @@ msgstr "Үлгiдегi өрiстер"
 
 #: source/formwizard/dbwizres.src#RID_DB_FORM_WIZARD_START + 19.String.Text
 msgid  "The join '<FIELDNAME1>' and '<FIELDNAME2>' has been selected twice.\nBut joins may only be used once."
-msgstr ""
+msgstr " «<FIELDNAME1>»  және «<FIELDNAME2>» бiрiктiруi екi рет таңдалған.\n Бiрiктiруге бiр рет қана рұқсат берiледi."
 
 #: source/formwizard/dbwizres.src#RID_DB_FORM_WIZARD_START + 20.String.Text
 msgid  "~First joined subform field"
@@ -857,7 +857,7 @@ msgstr "~Бөлшектiлген сұраныс (сұраныстың барлы
 
 #: source/formwizard/dbwizres.src#RID_DB_QUERY_WIZARD_START + 12.String.Text
 msgid  "~Summary query (Shows only results of aggregate functions.)"
-msgstr ""
+msgstr "~Қорытындылған сұраныс (Тек қана агрегаттық функциялардың жазбасын көрсету)"
 
 #: source/formwizard/dbwizres.src#RID_DB_QUERY_WIZARD_START + 16.String.Text
 msgid  "Aggregate functions"
@@ -1097,15 +1097,15 @@ msgstr "Шолу"
 
 #: source/formwizard/dbwizres.src#RID_DB_QUERY_WIZARD_START + 88.String.Text
 msgid  "A field that has not been assigned an aggregate function must be used in a group."
-msgstr ""
+msgstr "Агрегаттық функциямен тағайындалған өрiс, топтамада қолданбайды."
 
 #: source/formwizard/dbwizres.src#RID_DB_QUERY_WIZARD_START + 89.String.Text
 msgid  "The condition '<FIELDNAME> <LOGICOPERATOR> <VALUE>' was chosen twice. Each condition can only be chosen once"
-msgstr ""
+msgstr "«<FIELDNAME> <LOGICOPERATOR> <VALUE>» шарты екi рет таңдалған едi. Әр шарт тек қана бiр рет таңдалады."
 
 #: source/formwizard/dbwizres.src#RID_DB_QUERY_WIZARD_START + 90.String.Text
 msgid  "The aggregate function <FUNCTION> has been assigned twice to the fieldname '<NUMERICFIELD>'."
-msgstr ""
+msgstr "Агрегаттық  <FUNCTION> функциясы  «<NUMERICFIELD>» өрiске екi рет тағайындалды."
 
 #: source/formwizard/dbwizres.src#RID_DB_QUERY_WIZARD_START + 91.String.Text
 msgid  ", "
@@ -1321,11 +1321,11 @@ msgstr " '<REPORTFORM>' түрi жоқ."
 
 #: source/formwizard/dbwizres.src#RID_DB_REPORT_WIZARD_START + 65.String.Text
 msgid  "The query with the statement <BR>'<STATEMENT>' <BR> could not be run. <BR> Check your data source."
-msgstr ""
+msgstr "<BR>\"<STATEMENT>\"<BR> нұсқаумен сұраныс орындалмайды.<BR> Өзiнiздiң деректер көзiн тексерiңiз."
 
 #: source/formwizard/dbwizres.src#RID_DB_REPORT_WIZARD_START + 66.String.Text
 msgid  "The following hidden control in the form '<REPORTFORM>' could not be read: '<CONTROLNAME>'."
-msgstr ""
+msgstr "Келесi жасырылған басқару '<REPORTFORM>' кескiнiнде оқыла алмайды: '<CONTROLNAME>'."
 
 #: source/formwizard/dbwizres.src#RID_DB_REPORT_WIZARD_START + 67.String.Text
 msgid  "Importing data..."
@@ -1349,7 +1349,7 @@ msgstr ""
 
 #: source/formwizard/dbwizres.src#RID_DB_REPORT_WIZARD_START + 72.String.Text
 msgid  "An error occurred in the wizard.<BR>The template '%PATH' could be erroneous.<BR>Either the required sections or tables do not exist or exist under the wrong name.<BR>See the Help for more detailed information.<BR>Please select another template."
-msgstr ""
+msgstr "Ұстанын жұмыс қатесi. <BR>  Мүмкiн \"%PATH\" қалыбында қате бар. <BR> Бөлiм немесе кесте жоқ немесе олар дұрыс емес аттар бойынша бар.  <BR> Толық ақпаратты бiлу үшiн анықтамада  көрiңiз. <BR> Басқа қалыпты таңдаңыз."
 
 #: source/formwizard/dbwizres.src#RID_DB_REPORT_WIZARD_START + 73.String.Text
 msgid  "There is an invalid user field in a table."
@@ -1357,15 +1357,15 @@ msgstr "Кестеде пайдаланушының дұрыс емес өрiсi
 
 #: source/formwizard/dbwizres.src#RID_DB_REPORT_WIZARD_START + 74.String.Text
 msgid  "The sort criterium '<FIELDNAME>' was chosen twice. Each criterium can only be chosen once."
-msgstr ""
+msgstr " '<FIELDNAME>'сұрыптауның өлшемi екi рет таңдалған. Әр өлшем бiр мәрте қана қолданылады.  "
 
 #: source/formwizard/dbwizres.src#RID_DB_REPORT_WIZARD_START + 75.String.Text
 msgid  "Note: The dummy text will be replaced by data from the database when the report is created."
-msgstr ""
+msgstr "Назар аударыңыз: Есептi құрған уақытта жалған мәтiн деректер корындағы деректерге ауыстырылады."
 
 #: source/formwizard/dbwizres.src#RID_DB_REPORT_WIZARD_START + 76.String.Text
 msgid  "A report '%REPORTNAME' already exists in the database. Please assign another name."
-msgstr ""
+msgstr " «%REPORTNAME» есебi деректер қорында бұрынан бар едi. Басқа атты енгiзiңiз."
 
 #: source/formwizard/dbwizres.src#RID_DB_REPORT_WIZARD_START + 78.String.Text
 msgid  "How do you want to proceed after creating the report?"
@@ -1465,7 +1465,7 @@ msgstr ""
 
 #: source/formwizard/dbwizres.src#RID_DB_TABLE_WIZARD_START + 14.String.Text
 msgid  "This wizard helps you to create a table for your database. After selecting a table category and a sample table, choose the fields you want to include in your table. You can include fields from more than one sample table."
-msgstr ""
+msgstr "Ұста деректер қорына арналған кестелердi жасауға көмектеседi. Өлшемдердi және кестелер мысалдарды таңдаған кейiн кестеге қосатын  өрiстердi таңдаңыз."
 
 #: source/formwizard/dbwizres.src#RID_DB_TABLE_WIZARD_START + 15.String.Text
 msgid  "Ca~tegory"
@@ -1509,7 +1509,7 @@ msgstr "~Таңдалған өрiстер"
 
 #: source/formwizard/dbwizres.src#RID_DB_TABLE_WIZARD_START + 26.String.Text
 msgid  "A primary key uniquely identifies each record in a database table. Primary keys ease the linking of information in separate tables, and it is recommended that you have a primary key in every table. Without a primary key, it will not be possible to enter data into this table."
-msgstr ""
+msgstr "Бiрiншi кiлтiң шектеу шарты әрбiр деректер қорының кестесiнiң жазбасын теңдестiредi.Бiрiншi кiлттер жеке кестелердiң арасындағы байланыстын құруын жеңiлдетедi және әрбiр кестелердiң iшiнде бiрiншi кiлттердiң құруын ұсынады. Бiрiншi кiлтсiз осы кестеге деректердi енгiзуге мүмкiн емес. "
 
 #: source/formwizard/dbwizres.src#RID_DB_TABLE_WIZARD_START + 27.String.Text
 msgid  "~Create a primary key"
@@ -1545,7 +1545,7 @@ msgstr "Сiз өзiнiздiң кестенiздi атайсыз ба?"
 
 #: source/formwizard/dbwizres.src#RID_DB_TABLE_WIZARD_START + 35.String.Text
 msgid  "Congratulations. You have entered all the information needed to create your table."
-msgstr ""
+msgstr "Құттықтаймыз! Сiз қазiр қана кестенi құру үшiн барлық керектi ақпаратты еңгiзгесiз."
 
 #: source/formwizard/dbwizres.src#RID_DB_TABLE_WIZARD_START + 36.String.Text
 msgid  "What do you want to do next?"
@@ -1569,11 +1569,11 @@ msgstr "Сiз құрған кестенi ашу мүмкiн емес"
 
 #: source/formwizard/dbwizres.src#RID_DB_TABLE_WIZARD_START + 41.String.Text
 msgid  "The table name '%TABLENAME' contains a character ('%SPECIALCHAR') that might not be supported by the database."
-msgstr ""
+msgstr " '%TABLENAME'  кестесi деректер қорымен сүйемелденбейтiн   ('%SPECIALCHAR')  арнайы\nбелгiнi орналастырған."
 
 #: source/formwizard/dbwizres.src#RID_DB_TABLE_WIZARD_START + 42.String.Text
 msgid  "The field name '%FIELDNAME' contains a special character ('%SPECIALCHAR') that might not be supported by the database."
-msgstr ""
+msgstr " '%FIELDNAME' өрiсi деректер қорымен сүйемелденбейтiн ('%SPECIALCHAR') арнайы белгiнi орналыстырған. "
 
 #: source/formwizard/dbwizres.src#RID_DB_TABLE_WIZARD_START + 43.String.Text
 msgid  "Field"
@@ -1593,11 +1593,11 @@ msgstr "Ерекшеленген өрiстi жою"
 
 #: source/formwizard/dbwizres.src#RID_DB_TABLE_WIZARD_START + 47.String.Text
 msgid  "The field cannot be inserted because this would exceed the maximum number of %COUNT possible fields in the database table"
-msgstr ""
+msgstr " Деректер қордағы  %COUNT өрiстердiн максималдық мәнiн арттыру себебiне қарай өрiстi қоюға мүмкiндiк жоқ."
 
 #: source/formwizard/dbwizres.src#RID_DB_TABLE_WIZARD_START + 48.String.Text
 msgid  "The name '%TABLENAME' already exists.\nPlease enter another name."
-msgstr ""
+msgstr " '%TABLENAME' аты бұрынан бар едi. \n Басқа атты енгiзiңiз."
 
 #: source/formwizard/dbwizres.src#RID_DB_TABLE_WIZARD_START + 49.String.Text
 msgid  "Catalog of the table"
@@ -1733,7 +1733,7 @@ msgstr ""
 
 #: source/formwizard/dbwizres.src#RID_LETTERWIZARDDIALOG_START + 31.String.Text
 msgid  "This wizard helps you to create a letter template. You can then use the template as the basis for writing letters as often as desired."
-msgstr ""
+msgstr " Хаттын қалыпын құру үшiн сiзге Ұста көмектеседi. Сiзге осы қалыпты хаттарды  жазуының негiзi ретiнде қолдансаңыз болады."
 
 #: source/formwizard/dbwizres.src#RID_LETTERWIZARDDIALOG_START + 32.String.Text
 msgid  "~Height:"
@@ -1801,11 +1801,11 @@ msgstr ""
 
 #: source/formwizard/dbwizres.src#RID_LETTERWIZARDDIALOG_START + 48.String.Text
 msgid  "This wizard creates a letter template which enables you to create multiple letters with the same layout and settings."
-msgstr ""
+msgstr "Ұста бiр - бiрiне сәйкес келетiн  сыртқы түрмен  және басқа орнатулармен көп хаттарды жазу үшiн хаттын қалыбын құрады."
 
 #: source/formwizard/dbwizres.src#RID_LETTERWIZARDDIALOG_START + 49.String.Text
 msgid  "To create another new letter out of the template just navigate to the template location and double-click it."
-msgstr ""
+msgstr "Қалыптың негiзiнде басқа жаңа хатты жазу үшiн қалыпты және екi рет шерту қажет."
 
 #: source/formwizard/dbwizres.src#RID_LETTERWIZARDDIALOG_START + 50.String.Text
 msgid  "Template name:"
@@ -1957,7 +1957,7 @@ msgstr ""
 
 #: source/formwizard/dbwizres.src#RID_FAXWIZARDDIALOG_START + 17.String.Text
 msgid  "This wizard helps you to create a fax template. The template can then be used to create a fax whenever needed."
-msgstr ""
+msgstr "Ұста сiзге факс қалпын құруға көмек бередi. Келесiде, сiз бұл қалыпты керек кезде қолдана аласыз"
 
 #: source/formwizard/dbwizres.src#RID_FAXWIZARDDIALOG_START + 18.String.Text
 msgid  "Return address"
@@ -1981,11 +1981,11 @@ msgstr ""
 
 #: source/formwizard/dbwizres.src#RID_FAXWIZARDDIALOG_START + 23.String.Text
 msgid  "This wizard creates a fax template which enables you to create multiple faxes with the same layout and settings."
-msgstr ""
+msgstr "Бiрдей түрлi және басқа орнатулармен көп факстар жасау үщiн шебер факс қалпын құрады"
 
 #: source/formwizard/dbwizres.src#RID_FAXWIZARDDIALOG_START + 24.String.Text
 msgid  "To create another new fax out of the template, go to the location where you saved the template and double-click the file."
-msgstr ""
+msgstr "Қалыптан жаңа факс жасау үшiн, сiз қалып таңдау керексiз және сол қалыпты ықшамдағышпен екi рет шерту керек"
 
 #: source/formwizard/dbwizres.src#RID_FAXWIZARDDIALOG_START + 25.String.Text
 msgid  "Template Name:"
@@ -2121,7 +2121,7 @@ msgstr "Веб-Ұста"
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +2.String.Text
 msgid  "This Web Wizard is to aid you in publishing documents on the Internet.\n\nIt will convert the documents so that they can be viewed by a web browser. In addition, it will generate a Table of Contents page with links for easy access to the documents. The Web Wizard will also allow you to customize the design and layout of your web site.\n\nYou will be able to keep the documents you have published on the web up-to-date and add or remove documents at any time."
-msgstr ""
+msgstr "Веб-Ұста сiздiң құжатыңызды Интернетте басып шығаруға көмектеседi.\n\n Ол құжатты жай қарапайым Интернет шолу компьтерiнде оқу үшiн түрлендiредi. Сонымен қатар. Ұста сiзге сiздiң Веб-сайтыңызды ерекше дизайн және сыртқы пiшiнге түрлендiредi.\n\n Сiз өзiңiздiң Веб-сайтыңыздағы құжатты өзектiлермен сүйемелдей аласыз. Сонымен қатар, сiз құжатты жоя және қоса аласыз."
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +4.String.Text
 msgid  "~Delete"
@@ -2305,7 +2305,7 @@ msgstr "Таңдалған сыртқы көрiнiстi өзгертiңiз (қо
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +61.String.Text
 msgid  "Include the following information for each document in the table of contents:"
-msgstr ""
+msgstr "Әр құжаттың мазмұнының iшiне келесi ақпаратты қойыңыз"
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +62.String.Text
 msgid  "Optimize the layout for screen resolution:"
@@ -2345,19 +2345,19 @@ msgstr "'%FILENAME' жергiлiктi мақсаты негiзiнде файл"
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +75.String.Text
 msgid  "The ZIP target '%FILENAME' already exists. Do you want to overwrite the existing target? "
-msgstr ""
+msgstr "ZIP мұрағаты '%FILENAME' бұрыннан бар. Сiз оны жаңасына алмастырғыңыз келеме?"
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +76.String.Text
 msgid  "The FTP target directory '%FILENAME' is not empty. Some files might be overwritten. Do you want to continue?"
-msgstr ""
+msgstr " FTP топтама '%FILENAME' бос емес. Кейбiр файлдар алмастырылуы мүмкiн. Әрi қарай жалғастырасыз ба?"
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +77.String.Text
 msgid  "The local target directory '%FILENAME' is not empty. Some files might be overwritten. Do you want to continue?"
-msgstr ""
+msgstr "'%FILENAME' жергiлiктi топтамасы бос емес. Кейбiр файлдар алмастырылуы мүмкiн. Әрi қарай жалғастырасыз ба?"
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +78.String.Text
 msgid  "Settings already exist under the given name. Do you want to overwrite the existing settings? "
-msgstr ""
+msgstr "Орнатулар берiлген атпен тұр. Оларды керi жазғыңыз келеме?"
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +79.String.Text
 msgid  "Exporting documents..."
@@ -2445,7 +2445,7 @@ msgstr "Сiздiң Веб-сайтыңыз ойдағыдай: %FILENAME iшiн�
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +105.String.Text
 msgid  "One or more errors occurred when generating the web site."
-msgstr ""
+msgstr "Сiздiң Веб-сайтыңызды генерациялау кезiнде бiр немесе бiрнеше қате жасалған"
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +106.String.Text
 msgid  "An error occurred while generating the table of contents page(s). "
@@ -2457,7 +2457,7 @@ msgstr "Белгiлеу файлын көшiру кезiнде  қате жас�
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +108.String.Text
 msgid  "An error occurred while gathering document information for '%FILENAME'. "
-msgstr ""
+msgstr "'%FILENAME' үшiн ақпарат алу кезiнде  қате жасалған. "
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +109.String.Text
 msgid  "An error occurred while exporting the document '%FILENAME'."
@@ -2473,7 +2473,7 @@ msgstr "'%FILENAME' құжатын экспорттау  кезiнде қорғ�
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +112.String.Text
 msgid  "An input/output error occurred while exporting the document '%FILENAME'."
-msgstr ""
+msgstr "'%FILENAME' құжатын экспорттауда енгiзу/шығару қатесi жасалған."
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +113.String.Text
 msgid  "An error occurred while copying media files to the temporary directory."
@@ -2541,7 +2541,7 @@ msgstr "Алдын-ала көру"
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +130.String.Text
 msgid  "The selected settings will be deleted.\n\nDo you really want to delete these settings? "
-msgstr ""
+msgstr "Таңдалған орнатулар жойылады.\n\n Сiз оларды жоюға көзiңiз жетiп тұрма?"
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +131.String.Text
 msgid  "%NUMBER pages"
@@ -2609,19 +2609,19 @@ msgstr " FTP топтама '% FILENAME' жасауға мүмкiндiк жоқ.
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +147.String.Text
 msgid  "The FTP directory '%FILENAME' does not exist. \nCreate the directory now?"
-msgstr ""
+msgstr "FTP топтамы '%FILENAME' жоқ. \n Топтаманы қазiр жасау керек пе?\n"
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +148.String.Text
 msgid  "The Zip file '%FILENAME' cannot be created: a directory of the same name already exists."
-msgstr ""
+msgstr "'% FILENAME' ZIP мұрағатты құру мүмкiн емес: аттас топтама бар"
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +149.String.Text
 msgid  "The local directory '%FILENAME' cannot be created. \nPlease check your write-access."
-msgstr ""
+msgstr "'%FILENAME' жергiлiктi топтамасын құру мүмкiн емес. \n Жазбаға рұқсатты тексерiңiз \n"
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +150.String.Text
 msgid  "The local directory '%FILENAME' does not exist. \nCreate the directory now?"
-msgstr ""
+msgstr " '%FILENAME' жергiлiктi топтамасы жоқ. \n Топтаманы қазiр құру қажет пе?\n"
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +151.String.Text
 msgid  "Size: %NUMBERKB"
@@ -2733,7 +2733,7 @@ msgstr "Күн тәртiбi үшiн парақ дизайнын көрсетiңi
 
 #: source/formwizard/dbwizres.src#RID_AGENDAWIZARDDIALOG_START +7.String.Text
 msgid  "Please select the headings you wish to include in your agenda template"
-msgstr ""
+msgstr "Өзiңiздiң күн тәртiбi қалпыңызға қосқыңыз келетiн тақырыптарды көрсетiңiз"
 
 #: source/formwizard/dbwizres.src#RID_AGENDAWIZARDDIALOG_START +8.String.Text
 msgid  "Please enter general information for the event"
@@ -2757,7 +2757,7 @@ msgstr "Жазылған жиналыстар үшiн түрлерiн қосу "
 
 #: source/formwizard/dbwizres.src#RID_AGENDAWIZARDDIALOG_START +13.String.Text
 msgid  "This wizard helps you to create an agenda template. The template can then be used to create an agenda whenever needed."
-msgstr ""
+msgstr "Ұста күн тәртiбi қалпын жасауға көмек бередi. Бұндай қалып сiз қалаған кезде қайта қолданылуы мүмкiн."
 
 #: source/formwizard/dbwizres.src#RID_AGENDAWIZARDDIALOG_START +14.String.Text
 msgid  "Time:"
@@ -2773,7 +2773,7 @@ msgstr "Орналасуы:"
 
 #: source/formwizard/dbwizres.src#RID_AGENDAWIZARDDIALOG_START +17.String.Text
 msgid  "Placeholders will be used in empty fields. You can replace placeholders with text later."
-msgstr ""
+msgstr "Толтыру-белгiлер бос өрiстердi толтыру үшiн қолданылады. Келесi жолы сiз белгiлердi мәтiнге алмастыра аласыз"
 
 #: source/formwizard/dbwizres.src#RID_AGENDAWIZARDDIALOG_START +18.String.Text
 msgid  "..."
@@ -2785,7 +2785,7 @@ msgstr "Күн тәртiбiн қалыптан жазу"
 
 #: source/formwizard/dbwizres.src#RID_AGENDAWIZARDDIALOG_START +20.String.Text
 msgid  "To create a new agenda out of the template, go to the location where you saved the template and double-click the file."
-msgstr ""
+msgstr "Жаңа күн тәртiбiн қалыптан жазу үшiн, сақталған қалыптарды көрсетiңз және оны екi рет тiнiткiшпен шертiңiз."
 
 #: source/formwizard/dbwizres.src#RID_AGENDAWIZARDDIALOG_START +21.String.Text
 msgid  "Agenda item"
@@ -2829,7 +2829,7 @@ msgstr ""
 
 #: source/formwizard/dbwizres.src#RID_AGENDAWIZARDDIALOG_START +31.String.Text
 msgid  "The agenda template will include placeholders for the names of the selected people. When creating an agenda from the template, you can replace these placeholder with the appropriate names."
-msgstr ""
+msgstr "Күн тәртiбi қалпында таңдалған адамдардың толтыру-белгiлерiнiң барлығы болады. Күн тәртiбiн қалыптан жасаған кезде, Сiз белгiлердi сай аттармен алмастыра аласыз"
 
 #: source/formwizard/dbwizres.src#RID_AGENDAWIZARDDIALOG_START +32.String.Text
 msgid  "Type of meeting"
@@ -2857,7 +2857,7 @@ msgstr ""
 
 #: source/formwizard/dbwizres.src#RID_AGENDAWIZARDDIALOG_START +39.String.Text
 msgid  "This wizard creates an agenda template which enables you to create multiple agendas with the same layout and settings."
-msgstr ""
+msgstr "Ұста күн тәртiбi қалпын жасайды,сiзге көптеген бiрдей белгiлермен, дизайнмен, орнатулармен күн тәртiбiн жазуға мүмкiншiлiк бередi."
 
 #: source/formwizard/dbwizres.src#RID_AGENDAWIZARDDIALOG_START +40.String.Text
 msgid  "Page design:"
@@ -3009,11 +3009,11 @@ msgstr "~Жабу"
 
 #: source/importwizard/importwi.src#sWelcometextLabel1.String.Text
 msgid  "This wizard converts documents in %PRODUCTNAME format and Microsoft Office documents to the new OpenDocument format."
-msgstr ""
+msgstr "Ұста ескi StarOffice және Microsoft Office құжаттарын жаңа OpenDocument пiшiмiне түрлендiредi."
 
 #: source/importwizard/importwi.src#sWelcometextLabel2.String.Text
 msgid  "Please note that when converting Microsoft documents any attached VBA macros lose their functionality."
-msgstr ""
+msgstr "Microsoft құжаттарын түрлендiрген кезде, оларға енгiзiлген VBA макростары өздерiнiң функционалдығын жоғалтады."
 
 #: source/importwizard/importwi.src#sWelcometextLabel3.String.Text
 msgid  "Select the document type for conversion:"
@@ -3241,59 +3241,59 @@ msgstr "экспорт келесi топтамаға:"
 
 #: source/importwizard/importwi.src#sSumSOTextDocuments.String.Text
 msgid  "All %PRODUCTNAME text documents contained in the following directory will be imported:"
-msgstr ""
+msgstr "%PRODUCTNAME барлық мәтiндiк құжаттары келесi топтамадан импортталады"
 
 #: source/importwizard/importwi.src#sSumSOTableDocuments.String.Text
 msgid  "All %PRODUCTNAME spreadsheets contained in the following directory will be imported:"
-msgstr ""
+msgstr "Барлық %PRODUCTNAME электрондық кестелерi келесi топтамадан импортталады"
 
 #: source/importwizard/importwi.src#sSumSODrawDocuments.String.Text
 msgid  "All %PRODUCTNAME drawing and presentation documents contained in the following directory will be imported:"
-msgstr ""
+msgstr "Барлық %PRODUCTNAME суреттерi жәнекөрiнiстерi келесi топтамадан импортталады"
 
 #: source/importwizard/importwi.src#sSumSOMathDocuments.String.Text
 msgid  "All %PRODUCTNAME formula documents contained in the following directory will be imported:"
-msgstr ""
+msgstr "Барлық %PRODUCTNAME формула құжаттары келесi топтамадан импортталады"
 
 #: source/importwizard/importwi.src#sSumSOTextTemplates.String.Text
 msgid  "All %PRODUCTNAME text templates contained in the following directory will be imported:"
-msgstr ""
+msgstr "Барлық %PRODUCTNAME эмәтiндiк қалыптар келесi топтамадан импортталады"
 
 #: source/importwizard/importwi.src#sSumSOTableTemplates.String.Text
 msgid  "All %PRODUCTNAME table templates contained in the following directory will be imported:"
-msgstr ""
+msgstr "Барлық %PRODUCTNAME электрондық кестелерi қалыптары келесi топтамадан импортталады"
 
 #: source/importwizard/importwi.src#sSumSODrawTemplates.String.Text
 msgid  "All %PRODUCTNAME drawing and presentation templates contained in the following directory will be imported:"
-msgstr ""
+msgstr "Барлық %PRODUCTNAME барлық суретжәне көрiнiс қалыптары келесi топтамадан импортталады"
 
 #: source/importwizard/importwi.src#sSumSOGlobalDocuments.String.Text
 msgid  "All %PRODUCTNAME master documents contained in the following directory will be imported:"
-msgstr ""
+msgstr "Барлық %PRODUCTNAME мазмұндық құжаттары келесi топтамадан импортталады"
 
 #: source/importwizard/importwi.src#sSumMSTextDocuments.String.Text
 msgid  "All Word documents contained in the following directory will be imported:"
-msgstr ""
+msgstr "Барлық Word құжаттары келесi топтамадан импортталады"
 
 #: source/importwizard/importwi.src#sSumMSTableDocuments.String.Text
 msgid  "All Excel documents contained in the following directory will be imported:"
-msgstr ""
+msgstr "Барлық Excel құжаттары келесi топтамадан импортталады"
 
 #: source/importwizard/importwi.src#sSumMSDrawDocuments.String.Text
 msgid  "All PowerPoint documents contained in the following directory will be imported:"
-msgstr ""
+msgstr "Барлық PowerPoint құжаттары келесi топтамадан импортталады"
 
 #: source/importwizard/importwi.src#sSumMSTextTemplates.String.Text
 msgid  "All Word templates contained in the following directory will be imported:"
-msgstr ""
+msgstr "Барлық Word қалыптары келесi топтамадан импортталады"
 
 #: source/importwizard/importwi.src#sSumMSTableTemplates.String.Text
 msgid  "All Excel templates contained in the following directory will be imported:"
-msgstr ""
+msgstr "Барлық Excel қалыптары келесi топтамадан импортталады"
 
 #: source/importwizard/importwi.src#sSumMSDrawTemplates.String.Text
 msgid  "All PowerPoint templates contained in the following directory will be imported:"
-msgstr ""
+msgstr "Барлық PowerPoint қалыптары келесi топтамадан импортталады"
 
 #: source/schedule/schedule.src#dlgCalTitle.String.Text
 msgid  "%PRODUCTNAME Calendar"
@@ -3481,7 +3481,7 @@ msgstr "Орындалуы:"
 
 #: source/template/template.src#SAMPLES.String.Text
 msgid  "In order to use the full functionality of this sample, create a document that is based on this template."
-msgstr ""
+msgstr "Осы қалып негiзiнде құжат жасау керек, бұл мысалдың барлық функциялары рұқсат етiлу үшiн"
 
 #: source/template/template.src#SAMPLES + 1.String.Text
 msgid  "Remarks"
@@ -3493,7 +3493,7 @@ msgstr "Тақырып таңдау"
 
 #: source/template/template.src#STYLES + 1.String.Text
 msgid  "Error while saving the document to the clipboard! The following action cannot be undone."
-msgstr ""
+msgstr "Алмасу буферiнде сақтауда кеткен қате! Келесi амалды болдырмау мүмкiн емес"
 
 #: source/template/template.src#STYLES + 2.String.Text
 msgid  "~Cancel"

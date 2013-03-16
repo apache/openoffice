@@ -41,23 +41,23 @@ msgstr "كہین  تعلق  ہ۪یوك نئ   قئیم كریتھ۔"
 
 #: source/core/resource/strings.src#RID_STR_TABLE_IS_FILTERED.String.Text
 msgid  "The table $name$ already exists. It is not visible because it has been filtered out."
-msgstr ""
+msgstr " $name$  ٹیبل چھُ گُڈئ پیٹھٲی موجود   اَس ہیكٲو نئ وچھیتھ كیازئ   فلٹر آؤٹ چھئ  گمُت۔"
 
 #: source/core/resource/strings.src#RID_STR_NEED_CONFIG_WRITE_ACCESS.String.Text
 msgid  "You have no write access to the configuration data the object is based on."
-msgstr ""
+msgstr "تُہی چھاونئ  ڈاٹا دئخل گژ نیچ   ہیئت  لیچھمئژ    یتھ پ۪یٹھ آبجیكٹ چھُ   منحصر  ۔"
 
 #: source/core/resource/strings.src#RID_STR_COULDNOTCONNECT_UNSPECIFIED.String.Text
 msgid  "The connection to the external data source could not be established. An unknown error occurred. The driver is probably defective."
-msgstr ""
+msgstr "   بیرونی ڈاٹا  زریئس سعتھ ہ۪یوك نئ  تعلق  قئیم  گژیتھ   ۔اكھ                            نامولوم خئمی گئی  واقع  ممکن چھُ   ڈرائیور آس۪ی نا قصں  ۔"
 
 #: source/core/resource/strings.src#RID_STR_COULDNOTCONNECT_NODRIVER.String.Text
 msgid  "The connection to the external data source could not be established. No SDBC driver was found for the given URL."
-msgstr ""
+msgstr "بیرونی ڈاٹا سورسس سعتھ ہیوك نئ  تعلق  قائم گژیتھ  كہین    SDBC  ڈرائیور آو نئ URLخعطرئ اَتھ۪ی"
 
 #: source/core/resource/strings.src#RID_STR_COULDNOTLOAD_MANAGER.String.Text
 msgid  "The connection to the external data source could not be established. The SDBC driver manager could not be loaded."
-msgstr ""
+msgstr " بیرونی ڈاٹا  زریس سعتھ ہ۪یوك نئ  تعلق  قئئم  گژیتھ   SDBCڈرائیورمینجر   ہیكٲو نئ  لوڈ  كریتھ"
 
 #: source/core/resource/strings.src#RID_STR_FORM.String.Text
 msgid  "Form"
@@ -69,7 +69,7 @@ msgstr "رپورٹ"
 
 #: source/core/resource/strings.src#RID_STR_DATASOURCE_NOT_STORED.String.Text
 msgid  "The data source was not saved. Please use the interface XStorable to save the data source."
-msgstr ""
+msgstr "ڈاٹازرئی اوس نئ  محفوظ  ۔ براہ کرم مشترک سطح  جمع  کریتھ كریو  ڈاٹا سورسس منز    محفوظ کریں۔X"
 
 #: source/core/resource/strings.src#RID_STR_ONLY_QUERY.String.Text
 msgid  "The given command is not a SELECT statement.\nOnly queries are allowed."
@@ -81,11 +81,11 @@ msgstr " كہین قئمتھ اوس نئ  تبدیل كرمُت۔"
 
 #: source/core/resource/strings.src#RID_STR_NO_XROWUPDATE.String.Text
 msgid  "Values could not be inserted. The XRowUpdate interface is not supported by ResultSet."
-msgstr ""
+msgstr "قئمتھ ہیكَن نئ  دئخل گژیتھ۔ Xقطراپڈیٹ  اینٹرفیسَس چھُنئ ریزلٹ سیٹُك معاوُن"
 
 #: source/core/resource/strings.src#RID_STR_NO_XRESULTSETUPDATE.String.Text
 msgid  "Values could not be inserted. The XResultSetUpdate interface is not supported by ResultSet."
-msgstr ""
+msgstr "قئمتھ ہیكٲو نئ  دئخل كریتھ  ۔Xقطراپڈیٹ  اینٹرفیسَس چھُنئ ریزلٹ سیٹُك معاوُن"
 
 #: source/core/resource/strings.src#RID_STR_NO_UPDATE_MISSING_CONDITION.String.Text
 msgid  "Values could not be modified, due to a missing condition statement."
@@ -141,11 +141,11 @@ msgstr "متعلقہ پوزبشنس چھَنئ یتھ   سٹیٹ منز  اجا�
 
 #: source/core/resource/strings.src#RID_STR_NO_REFESH_AFTERLAST.String.Text
 msgid  "A row cannot be refreshed when the ResultSet is positioned after the last row."
-msgstr ""
+msgstr "ٲخری سطر رزیلٹ منتخبس منز ینئ پتئ   ہ۪یكئ نئ  ریفریش گژیتھ۔"
 
 #: source/core/resource/strings.src#RID_STR_NO_MOVETOINSERTROW_CALLED.String.Text
 msgid  "A new row cannot be inserted when the ResultSet is not first moved to the insert row."
-msgstr ""
+msgstr "  نئو قطار ہیك۪ی نئ  دئخل گژیتھ  یُتامتھ  ریزلٹ سیٹ  دئخلئ قطارس منز  تراوئو۔"
 
 #: source/core/resource/strings.src#RID_STR_NO_UPDATEROW.String.Text
 msgid  "A row cannot be modified in this state"
@@ -161,26 +161,26 @@ msgstr "  جدولس   دوبارہ نا و دینئ خعطرئ ہیك۪ی نئ 
 
 #: source/core/resource/strings.src#RID_STR_NO_ALTER_COLUMN_DEF.String.Text
 msgid  "The driver does not support the modification of column descriptions."
-msgstr ""
+msgstr "کالم ك۪ین  وضاحتن منز   یۄس  تبدیلی  آی كرنئ   ‏ڈرائیور چھُنئ تَتھ  تعاون كران۔"
 
 #: source/core/resource/strings.src#RID_STR_COLUMN_ALTER_BY_NAME.String.Text
 msgid  "The driver does not support the modification of column descriptions by changing the name."
-msgstr ""
+msgstr "کالممس منز یم  وضاحتك ناو تبدیل گئی  ڈرائیور ہ۪یك۪ی نئ تَتھ تعاوُن كریتھ۔"
 
 #: source/core/resource/strings.src#RID_STR_COLUMN_ALTER_BY_INDEX.String.Text
 msgid  "The driver does not support the modification of column descriptions by changing the index."
-msgstr ""
+msgstr "فہرستس منز یم   کالم وضاحت  كئر  ڈرائیور ۪یك۪ی نئ تَتھ تعاوُن كریتھ۔"
 
 #: source/core/resource/strings.src#RID_STR_FILE_DOES_NOT_EXIST.String.Text
-msgid  "The file "$file$" does not exist."
-msgstr ""
+msgid  "The file \"$file$\" does not exist."
+msgstr "  فایل \"$file$\"  چھُنئ موجود    "
 
 #: source/core/resource/strings.src#RID_STR_TABLE_DOES_NOT_EXIST.String.Text
-msgid  "There exists no table named "$table$"."
+msgid  "There exists no table named \"$table$\"."
 msgstr ""
 
 #: source/core/resource/strings.src#RID_STR_QUERY_DOES_NOT_EXIST.String.Text
-msgid  "There exists no query named "$table$"."
+msgid  "There exists no query named \"$table$\"."
 msgstr ""
 
 #: source/core/resource/strings.src#RID_STR_CONFLICTING_NAMES.String.Text
@@ -228,7 +228,7 @@ msgid  "Error accessing data source '$name$':\n$error$"
 msgstr ""
 
 #: source/core/resource/strings.src#RID_STR_NO_SUB_FOLDER.String.Text
-msgid  "There exists no folder named "$folder$"."
+msgid  "There exists no folder named \"$folder$\"."
 msgstr ""
 
 #: source/core/resource/strings.src#RID_STR_NO_DELETE_BEFORE_AFTER.String.Text
@@ -296,7 +296,7 @@ msgid  "Embedding of database documents is not supported."
 msgstr ""
 
 #: source/core/resource/strings.src#RID_STR_CONNECTION_REQUEST.String.Text
-msgid  "A connection for the following URL was requested "$name$"."
+msgid  "A connection for the following URL was requested \"$name$\"."
 msgstr ""
 
 #: source/core/resource/strings.src#RID_STR_MISSING_EXTENSION.String.Text
@@ -428,7 +428,7 @@ msgid  "The specified file name or directory does not exist."
 msgstr ""
 
 #: source/ext/adabas/AdabasNewDb.src#STR_ERROR_IN_ADABAS_INSTALLATION.String.Text
-msgid  "No new database can be created.\nPlease check your Adabas D installation, especially the variables "DBROOT" and "DBWORK"."
+msgid  "No new database can be created.\nPlease check your Adabas D installation, especially the variables \"DBROOT\" and \"DBWORK\"."
 msgstr ""
 
 #: source/ext/adabas/AdabasNewDb.src#STR_STAT_WARNING.String.Text
@@ -801,11 +801,11 @@ msgstr "  - %PRODUCTNAME Base"
 
 #: source/ui/app/app.src#RID_STR_REPORTS_HELP_TEXT_WIZARD.String.Text
 msgid  "The wizard will guide you through the steps necessary to create a report."
-msgstr ""
+msgstr "  رپورٹ بنٲونئ خعطرئ كرو۪ی تُہہ  ویزارڈ  ضروری مرحلن منز مدد ۔                          "
 
 #: source/ui/app/app.src#RID_STR_FORMS_HELP_TEXT.String.Text
 msgid  "Create a form by specifying the record source, controls, and control properties."
-msgstr ""
+msgstr "ریکارڈ زریی كئ  حوالئ سعتھ  بنٲویو  کنٹرولز، تئ     کنٹرول   خصوصیات ۔                                                          "
 
 #: source/ui/app/app.src#RID_STR_REPORT_HELP_TEXT.String.Text
 msgid  "Create a report by specifying the record source, controls, and control properties."
@@ -817,27 +817,27 @@ msgstr "            فارم بنٲونئ خعطرئ كرو۪ی تُہہ  ویز
 
 #: source/ui/app/app.src#RID_STR_QUERIES_HELP_TEXT.String.Text
 msgid  "Create a query by specifying the filters, input tables, field names,  and  properties for sorting or grouping."
-msgstr ""
+msgstr "کیوری  بنٲویو  فلٹرس  ، انپوٹ جدول،شبعے ناو  ،یاخصوصیت  كئ حوالئ سعتھ۔۔۔"
 
 #: source/ui/app/app.src#RID_STR_QUERIES_HELP_TEXT_SQL.String.Text
 msgid  "Create a query  entering an SQL statement directly."
-msgstr ""
+msgstr "کیوری بنٲویو         SQL سٹیٹ مینٹ منز  ڈایریکٹ ترئویتھ۔۔۔                                                                                                                                                           "
 
 #: source/ui/app/app.src#RID_STR_QUERIES_HELP_TEXT_WIZARD.String.Text
 msgid  "The wizard will guide you through the steps necessary to create a query."
-msgstr ""
+msgstr "  كویری بنٲونئ خعطرئ كرو۪ی تُہہ  ویزارڈ  ضروری مرحلن منز  مدد۔"
 
 #: source/ui/app/app.src#RID_STR_TABLES_HELP_TEXT_DESIGN.String.Text
 msgid  "Create a table by specifying the field names and properties, as well as the data types."
-msgstr ""
+msgstr "جدول بنٲیو  شبعہ ناو تئ   پروپرٹیس تئ   ڈاٹا  ٹائپس كئ حوالئ سعتھ۔"
 
 #: source/ui/app/app.src#RID_STR_TABLES_HELP_TEXT_WIZARD.String.Text
 msgid  "Choose from a selection of business and personal table samples, which you customize to create a table."
-msgstr ""
+msgstr " تجارت تئ ذئتی  ژئرمِت منز بنٲویوجدول نمونہ  یم تہہ   کسٹمائز  كران چھئو  جدول بنٳونئ خعترئ ۔"
 
 #: source/ui/app/app.src#RID_STR_VIEWS_HELP_TEXT_DESIGN.String.Text
 msgid  "Create a view by specifying the tables and field names you would like to have visible."
-msgstr ""
+msgstr "منظر  بنٲویو جدول تئ شبعہ ناو كئ حوالئ سعتھ یم تہہ پتئ پسند كریو وچھُن۔"
 
 #: source/ui/app/app.src#RID_STR_VIEWS_HELP_TEXT_WIZARD.String.Text
 msgid  "Opens the view wizard"
@@ -865,11 +865,11 @@ msgstr "حسب ضرورت منظر "
 
 #: source/ui/app/app.src#APP_SAVEMODIFIED.QueryBox.Message
 msgid  "The database has been modified.\nDo you want to save the changes?"
-msgstr ""
+msgstr " ڈاٹابیس تبدیل گئمت۔\nتہہ چھئو یژھان  تبدیلی محفوظ كر۪ین؟"
 
 #: source/ui/app/app.src#APP_CLOSEDOCUMENTS.QueryBox.Message
 msgid  "The connection type has been altered.\nFor the changes to take effect, all forms, reports, queries and tables must be closed.\n\nDo you want to close all documents now?"
-msgstr ""
+msgstr "رعبتئ ٹایپ چھُ بدلیمُت\nتبدیلی عملئ  منز انَنئ خعترئ  كریو  ، تمام فورمس، رپوٹس کیوریس تئ جدولس بند ۔\n\nDo you want to close all documents now?"
 
 #: source/ui/app/app.src#RID_MENU_APP_PREVIEW.SID_DB_APP_DISABLE_PREVIEW.MenuItem.Text
 msgid  "None"
@@ -882,6 +882,14 @@ msgstr "دستاویز مولومات"
 #: source/ui/app/app.src#RID_MENU_APP_PREVIEW.SID_DB_APP_VIEW_DOC_PREVIEW.MenuItem.Text
 msgid  "Document"
 msgstr "دستاویز"
+
+#: source/ui/app/app.src#RID_STR_FORM.String.Text
+msgid  "Form"
+msgstr "فارم"
+
+#: source/ui/app/app.src#RID_STR_REPORT.String.Text
+msgid  "Report"
+msgstr "رپورٹ"
 
 #: source/ui/app/app.src#STR_FRM_LABEL.String.Text
 msgid  "F~orm name"
@@ -915,17 +923,9 @@ msgstr ""
 msgid  "Unsupported object type found ($type$)."
 msgstr ""
 
-#: source/ui/app/app.src#RID_STR_FORM.String.Text
-msgid  "Form"
-msgstr "فارم"
-
-#: source/ui/app/app.src#RID_STR_REPORT.String.Text
-msgid  "Report"
-msgstr "رپورٹ"
-
 #: source/ui/browser/sbabrw.src#QUERY_BRW_SAVEMODIFIED.QueryBox.Message
 msgid  "The current record has been changed.\nDo you want to save the changes?"
-msgstr ""
+msgstr "برونٹھہ۪یم ریكاڈ چھُ     تبدیل گئمُت\nتُہہ چھئو یژھان  تبدیلی محفوظ ر كرین؟"
 
 #: source/ui/browser/sbabrw.src#QUERY_BRW_DELETE_ROWS.QueryBox.Message
 msgid  "Do you want to delete the selected data?"
@@ -955,6 +955,18 @@ msgstr "کیوریز"
 msgid  "Tables"
 msgstr "جدول  "
 
+#: source/ui/browser/sbabrw.src#ID_TREE_EDIT_DATABASE.#define.Text
+msgid  "Edit ~Database File..."
+msgstr "خئمی ڈاٹا بیس فائل۔۔۔"
+
+#: source/ui/browser/sbabrw.src#ID_TREE_ADMINISTRATE.#define.Text
+msgid  "Registered databases ..."
+msgstr ""
+
+#: source/ui/browser/sbabrw.src#ID_TREE_CLOSE_CONN.#define.Text
+msgid  "Disco~nnect"
+msgstr "تعلق ژھیون"
+
 #: source/ui/browser/sbabrw.src#STR_TITLE_CONFIRM_DELETION.String.Text
 msgid  "Confirm Deletion"
 msgstr "خئرج  كریو  تصدیق  "
@@ -977,11 +989,11 @@ msgstr "وارنیگس اینکوٹرڈ"
 
 #: source/ui/browser/sbabrw.src#STR_OPENTABLES_WARNINGS_DETAILS.String.Text
 msgid  "While retrieving the tables, warnings were reported by the database connection."
-msgstr ""
+msgstr " جدول ریٹریو كران دیژ  ،ڈاٹا بیس تعلقاتن آگئہی۔"
 
 #: source/ui/browser/sbabrw.src#STR_CONNECTING_DATASOURCE.String.Text
-msgid  "Connecting to "$name$" ..."
-msgstr ""
+msgid  "Connecting to \"$name$\" ..."
+msgstr " \"$name$\"رعبطئ كران۔۔۔"
 
 #: source/ui/browser/sbabrw.src#STR_LOADING_QUERY.String.Text
 msgid  "Loading query $name$ ..."
@@ -996,24 +1008,12 @@ msgid  "No table format could be found."
 msgstr "كہین  جدول ْشكل آیی نئ اَتھ۪ی۔"
 
 #: source/ui/browser/sbabrw.src#STR_COULDNOTCONNECT_DATASOURCE.String.Text
-msgid  "The connection to the data source "$name$" could not be established."
-msgstr ""
+msgid  "The connection to the data source \"$name$\" could not be established."
+msgstr " ڈاٹاسورسس سعتھ رعبطئ  ۔\"$name$\""
 
 #: source/ui/browser/sbabrw.src#RID_MENU_REFRESH_DATA.ID_BROWSER_REFRESH_REBUILD.MenuItem.Text
 msgid  "Rebuild"
 msgstr "ریبیلڈ "
-
-#: source/ui/browser/sbabrw.src#ID_TREE_EDIT_DATABASE.#define.Text
-msgid  "Edit ~Database File..."
-msgstr "خئمی ڈاٹا بیس فائل۔۔۔"
-
-#: source/ui/browser/sbabrw.src#ID_TREE_ADMINISTRATE.#define.Text
-msgid  "Registered databases ..."
-msgstr ""
-
-#: source/ui/browser/sbabrw.src#ID_TREE_CLOSE_CONN.#define.Text
-msgid  "Disco~nnect"
-msgstr "تعلق ژھیون"
 
 #: source/ui/browser/sbagrid.src#RID_SBA_GRID_COLCTXMENU.ID_BROWSER_COLATTRSET.MenuItem.Text
 msgid  "Column ~Format..."
@@ -1052,8 +1052,8 @@ msgid  "View #"
 msgstr "ویو # "
 
 #: source/ui/browser/sbagrid.src#STR_NAME_ALREADY_EXISTS.String.Text
-msgid  "The name "#" already exists."
-msgstr ""
+msgid  "The name \"#\" already exists."
+msgstr "ناو چھُ كڈئ پ۪یٹھٲے موجود"
 
 #: source/ui/browser/sbagrid.src#STR_NO_COLUMNNAME_MATCHING.String.Text
 msgid  "No matching column names were found."
@@ -1137,7 +1137,7 @@ msgstr "برائےکرم حالیئ سیٹینگس ہ۪یوند جائزئ كر�
 
 #: source/ui/control/tabletree.src#STR_NOTABLEINFO.String.Text
 msgid  "Successfully connected, but information about database tables is not available."
-msgstr ""
+msgstr " رعبطئ کامیاب    ڈاٹا بیس جدولچ   مولومات چھَنئ دستیاب۔"
 
 #: source/ui/control/tabletree.src#STR_ALL_TABLES.String.Text
 msgid  "All tables"
@@ -1236,12 +1236,12 @@ msgid  "Do you want to save the changes made to the current index?"
 msgstr "تہہ چھئو یژھان حالچ تبدیلیئ محفوظ كرین؟"
 
 #: source/ui/dlg/indexdialog.src#STR_INDEX_NAME_ALREADY_USED.String.Text
-msgid  "There is already another index named "$name$"."
-msgstr ""
+msgid  "There is already another index named \"$name$\"."
+msgstr "یم ناوك فہرست چھئ گُڈٲی موجود۔\"$name$\""
 
 #: source/ui/dlg/indexdialog.src#STR_INDEXDESIGN_DOUBLE_COLUMN_NAME.String.Text
-msgid  "In an index definition, no table column may occur more than once. However, you have entered column "$name$" twice."
-msgstr ""
+msgid  "In an index definition, no table column may occur more than once. However, you have entered column \"$name$\" twice."
+msgstr "فہرستچئ خلاصس منز   ، كہین جدول  کالم ہیك۪ی نئ یتھ اكئ ہوتئ زیادو لٹ۪ی۔۔البتئ تہہ چھئو كرمُت  کالم  دئخل دوی  پھیرئ ,\"$name$\" "
 
 #: source/ui/dlg/paramdialog.src#DLG_PARAMETERS.FL_PARAMS.FixedLine.Text
 msgid  "~Parameters"
@@ -1260,8 +1260,8 @@ msgid  "Parameter Input"
 msgstr "پیرامیٹران پٹ"
 
 #: source/ui/dlg/paramdialog.src#DLG_PARAMETERS.STR_COULD_NOT_CONVERT_PARAM.String.Text
-msgid  "The entry could not be converted to a valid value for the "$name$"column"
-msgstr ""
+msgid  "The entry could not be converted to a valid value for the \"$name$\"column"
+msgstr "اینٹری ہیك نئ تبدیل كریتھ صحیح    قئمتس منز  \"$name$\"کالم "
 
 #: source/ui/dlg/sqlmessage.src#DLG_SQLEXCEPTIONCHAIN.ModalDialog.Text
 msgid  "%PRODUCTNAME Base"
@@ -1289,7 +1289,7 @@ msgstr "غلطی کوڈ"
 
 #: source/ui/dlg/sqlmessage.src#STR_EXPLAN_STRINGCONVERSION_ERROR.String.Text
 msgid  "A frequent reason for this error is an inappropriate character set setting for the language of your database. Check the setting by choosing Edit - Database - Properties."
-msgstr ""
+msgstr "اكھ  وجئ یمئ غلطی ہ۪یوند چھُ حرف سیٹ اپ سیٹینگس یم زبان خعطرئ چھئ تہندئ ڈاٹا بیث منز ۔ ثیٹنگس كریو  جانچ ایڈیٹس منز گژھیتھ۔ ڈاٹابیس پراپرٹیز۔"
 
 #: source/ui/dlg/sqlmessage.src#STR_EXCEPTION_ERROR.String.Text
 msgid  "Error"
@@ -1312,8 +1312,16 @@ msgid  "Standard Filter"
 msgstr "معیاری  فلٹر"
 
 #: source/ui/dlg/queryfilter.src#DLG_FILTERCRIT.LB_WHERECOND2.Default.StringList.item
+msgid  "AND"
+msgstr "بےی"
+
+#: source/ui/dlg/queryfilter.src#DLG_FILTERCRIT.LB_WHERECOND2.Default.StringList.item
 msgid  "OR"
 msgstr "یا"
+
+#: source/ui/dlg/queryfilter.src#DLG_FILTERCRIT.LB_WHERECOND3.Default.StringList.item
+msgid  "AND"
+msgstr "بےی"
 
 #: source/ui/dlg/queryfilter.src#DLG_FILTERCRIT.LB_WHERECOND3.Default.StringList.item
 msgid  "OR"
@@ -1346,14 +1354,6 @@ msgstr "كہین نئ"
 #: source/ui/dlg/queryfilter.src#DLG_FILTERCRIT.STR_COMPARE_OPERATORS.String.Text
 msgid  "=;<>;<;<=;>;>=;like;not like;null;not null"
 msgstr "=;<>;<;<=;>;>=;پسند;نہ پسند;نل؛نل چھُنئ"
-
-#: source/ui/dlg/queryfilter.src#DLG_FILTERCRIT.LB_WHERECOND2.Default.StringList.item
-msgid  "AND"
-msgstr "بےی"
-
-#: source/ui/dlg/queryfilter.src#DLG_FILTERCRIT.LB_WHERECOND3.Default.StringList.item
-msgid  "AND"
-msgstr "بےی"
 
 #: source/ui/dlg/RelationDlg.src#DLG_REL_PROPERTIES.ModalDialog.Text
 msgid  "Relations"
@@ -1412,12 +1412,24 @@ msgid  "Sort Order"
 msgstr "سورٹ آرڈر"
 
 #: source/ui/dlg/queryorder.src#DLG_ORDERCRIT.LB_ORDERVALUE1.Default.StringList.item
+msgid  "ascending"
+msgstr "ہ۪یر۪ی  پیٹھئ بوْن  كُن"
+
+#: source/ui/dlg/queryorder.src#DLG_ORDERCRIT.LB_ORDERVALUE1.Default.StringList.item
 msgid  "descending"
 msgstr "ہ۪یر۪ی پ۪یٹھئ بوْن كُن"
 
 #: source/ui/dlg/queryorder.src#DLG_ORDERCRIT.LB_ORDERVALUE2.Default.StringList.item
+msgid  "ascending"
+msgstr "ہ۪یر۪ی  پیٹھئ بوْن  كُن"
+
+#: source/ui/dlg/queryorder.src#DLG_ORDERCRIT.LB_ORDERVALUE2.Default.StringList.item
 msgid  "descending"
 msgstr "ہ۪یر۪ی پ۪یٹھئ بوْن كُن"
+
+#: source/ui/dlg/queryorder.src#DLG_ORDERCRIT.LB_ORDERVALUE3.Default.StringList.item
+msgid  "ascending"
+msgstr "ہ۪یر۪ی  پیٹھئ بوْن  كُن"
 
 #: source/ui/dlg/queryorder.src#DLG_ORDERCRIT.LB_ORDERVALUE3.Default.StringList.item
 msgid  "descending"
@@ -1450,18 +1462,6 @@ msgstr "سورٹ  آرڈر"
 #: source/ui/dlg/queryorder.src#DLG_ORDERCRIT.STR_NOENTRY.String.Text
 msgid  "<none>"
 msgstr "<كہین نئ>"
-
-#: source/ui/dlg/queryorder.src#DLG_ORDERCRIT.LB_ORDERVALUE1.Default.StringList.item
-msgid  "ascending"
-msgstr "ہ۪یر۪ی  پیٹھئ بوْن  كُن"
-
-#: source/ui/dlg/queryorder.src#DLG_ORDERCRIT.LB_ORDERVALUE2.Default.StringList.item
-msgid  "ascending"
-msgstr "ہ۪یر۪ی  پیٹھئ بوْن  كُن"
-
-#: source/ui/dlg/queryorder.src#DLG_ORDERCRIT.LB_ORDERVALUE3.Default.StringList.item
-msgid  "ascending"
-msgstr "ہ۪یر۪ی  پیٹھئ بوْن  كُن"
 
 #: source/ui/dlg/advancedsettings.src#AUTO_DATAHANDLING(AUTO_Y).FL_DATAHANDLING.FixedLine.Text
 msgid  "Options"
@@ -1532,8 +1532,20 @@ msgid  "Respect the result set type from the database driver"
 msgstr ""
 
 #: source/ui/dlg/advancedsettings.src#WORKAROUND.Default.StringList.item
+msgid  "Default"
+msgstr "ڈیفالٹ"
+
+#: source/ui/dlg/advancedsettings.src#WORKAROUND.Default.StringList.item
+msgid  "SQL"
+msgstr "SQL"
+
+#: source/ui/dlg/advancedsettings.src#WORKAROUND.Default.StringList.item
+msgid  "Mixed"
+msgstr "dbadmin.src#PAGE_DS_PROPERTIES_1.LB_B   OOLEANCOMPARISON.3.stringlist.text\nرَلئ "
+
+#: source/ui/dlg/advancedsettings.src#WORKAROUND.Default.StringList.item
 msgid  "MS Access"
-msgstr ""
+msgstr "dbadmin.src#PAGE_DS_PROPERTIES_1.LB_BOOLEANCOMPARISON.4.stringlist.text\nMS  ایكسیس "
 
 #: source/ui/dlg/advancedsettings.src#AUTO_BOOLEANCOMPARISON(AUTO_Y).FT_BOOLEANCOMPARISON.FixedText.Text
 msgid  "Comparison of Boolean values"
@@ -1571,18 +1583,6 @@ msgstr "خاص سیٹینگس"
 msgid  "Advanced Settings"
 msgstr "برونٹھیم پراپرٹیز"
 
-#: source/ui/dlg/advancedsettings.src#WORKAROUND.Default.StringList.item
-msgid  "Default"
-msgstr "ڈیفالٹ"
-
-#: source/ui/dlg/advancedsettings.src#WORKAROUND.Default.StringList.item
-msgid  "SQL"
-msgstr "SQL"
-
-#: source/ui/dlg/advancedsettings.src#WORKAROUND.Default.StringList.item
-msgid  "Mixed"
-msgstr ""
-
 #: source/ui/dlg/CollectionView.src#DLG_COLLECTION_VIEW.ModalDialog.Text
 msgid  "Save"
 msgstr "محفوظ"
@@ -1616,12 +1616,12 @@ msgid  "The file already exists. Overwrite?"
 msgstr "فائلچھئ گوڈئی موجود ۔اوررائٹ؟"
 
 #: source/ui/dlg/dbadmin2.src#STR_ENTER_CONNECTION_PASSWORD.String.Text
-msgid  "A password is needed to connect to the data source "$name$"."
-msgstr ""
+msgid  "A password is needed to connect to the data source \"$name$\"."
+msgstr "خفیہ لفظ چھئ  ڈ اٹاسورس س سعتھ زریی بنئاونس ضُرت  \"$name$\"."
 
 #: source/ui/dlg/dbadmin2.src#STR_ASK_FOR_DIRECTORY_CREATION.String.Text
 msgid  "The directory\n\n$path$\n\ndoes not exist. Should it be created?"
-msgstr ""
+msgstr "ڈائریکٹری\n\n$path$\n\nچھنئ موجود٫ تہہ چھئی یژھان بنئاون؟"
 
 #: source/ui/dlg/dbadmin2.src#STR_COULD_NOT_CREATE_DIRECTORY.String.Text
 msgid  "The directory $name$ could not be created."
@@ -1737,7 +1737,7 @@ msgstr "ڈاٹابیس پ۪یٹھ _ فایل خعطرئ كریو  کیٹلوگ  
 
 #: source/ui/dlg/dbadmin.src#AUTO_FIXEDLINE_CONNSETTINGS(AUTO_Y).FL_SEPARATOR1.FixedLine.Text
 msgid  "Connection Settings"
-msgstr ""
+msgstr "dbadmin.src#AUTO_SPECIAL_JDBC_AUTO_Y_.FL_SEPARATOR1.fixedline.text\n رئطئ كریو طے "
 
 #: source/ui/dlg/dbadmin.src#AUTO_HOST_AND_PORT(AUTO_Y).FT_HOSTNAME.FixedText.Text
 msgid  "~Host name"
@@ -1773,7 +1773,7 @@ msgstr "ڈاٹابیس ویزارڈ %PRODUCTNAME خوش آمدید"
 
 #: source/ui/dlg/dbadmin.src#PAGE_GENERAL.FT_GENERALHELPTEXT.FixedText.Text
 msgid  "Use the Database Wizard to create a new database, open an existing database file, or connect to a database stored on a server."
-msgstr ""
+msgstr "ڈاٹابیس ویزراڈ  کریو استیامل نئو ڈاٹابیس بنٲونئ خعطرئ، حالچ  ڈاٹا بیس فایل  كھولیو،  سرورس پ۪یٹھ یس ڈاتا بیس چھئ تَتھ سعتھ كریو رئبطئ "
 
 #: source/ui/dlg/dbadmin.src#PAGE_GENERAL.FT_DATASOURCEHEADER.FixedText.Text
 msgid  "What do you want to do?"
@@ -1797,7 +1797,7 @@ msgstr "ہال كس ڈاٹا بیسس سعتھ كریو رئبطئ "
 
 #: source/ui/dlg/dbadmin.src#PAGE_GENERAL.FT_DATASOURCETYPE_PRE.FixedText.Text
 msgid  "Select the type of database to which you want to establish a connection."
-msgstr ""
+msgstr "ڈاٹابیسك ٹائپ  ژئریو ویتھ سعتھ تہہ رئبطئ چھئو یژھان كرُن ۔"
 
 #: source/ui/dlg/dbadmin.src#PAGE_GENERAL.FT_DATATYPE.FixedText.Text
 msgid  "Database ~type "
@@ -1809,7 +1809,7 @@ msgstr "ڈاٹابیس "
 
 #: source/ui/dlg/dbadmin.src#PAGE_GENERAL.FT_DATASOURCETYPE_POST.FixedText.Text
 msgid  "On the following pages, you can make detailed settings for the connection.\n\nThe new settings you make will overwrite your existing settings."
-msgstr ""
+msgstr "بروںٹھمین صفن پ۪یٹھ ہیكیو تہہ تفصیلات سیٹینگس بنٲویتھ رئبطئ خعطرئ۔/n                      /n  نئو سیٹینگس لیكھن موجودئ سیٹینگسن پیٹھ۔"
 
 #: source/ui/dlg/dbadmin.src#PAGE_GENERAL.STR_MYSQLENTRY.String.Text
 msgid  "MySQL"
@@ -1821,11 +1821,11 @@ msgstr "ڈاٹاسورس پروپرٹیس: # "
 
 #: source/ui/dlg/dbadmin.src#PAGE_GENERAL.STR_COULDNOTLOAD_ODBCLIB.String.Text
 msgid  "Could not load the program library #lib# or it is corrupted. The ODBC data source selection is not available."
-msgstr ""
+msgstr "پروگرام   فائل  ہیوك نئ  لوڈ  كریتھ #lib# کرپٹیٹ چھئ یا ڈاٹاسورس   سلیکشن  چھُنئ موجود ODBC "
 
 #: source/ui/dlg/dbadmin.src#PAGE_GENERAL.STR_UNSUPPORTED_DATASOURCE_TYPE.String.Text
 msgid  "This kind of data source is not supported on this platform.\nYou are allowed to change the settings, but you probably will not be able to connect to the database."
-msgstr ""
+msgstr "  یتھ پلیٹ   فورمس پیٹھ چھُنئ معاون ڈاٹا سورسس      \nتہہ ہیكیو سیٹینگس بدلئیویتھ مگر تہہ نئ شاید رئبطئ كریتھ۔ ڈاٹا بیسس سعتھ"
 
 #: source/ui/dlg/dbadmin.src#PAGE_GENERAL.String.Text
 msgid  "General"
@@ -1841,7 +1841,7 @@ msgstr "خئریج كرمت ریكارڈس تئ ہئویو"
 
 #: source/ui/dlg/dbadmin.src#PAGE_DBASE.FT_SPECIAL_MESSAGE.FixedText.Text
 msgid  "Note: When deleted, and thus inactive, records are  displayed, you will not be able to delete records from the data source."
-msgstr ""
+msgstr "نوٹ : یلئ خئرج كریو تئ بےی یلِ بند آسئ، تہہ ہیكیو نئ ریكارڈس خئرج كریتھ ڈاٹآ سورس منزئ"
 
 #: source/ui/dlg/dbadmin.src#PAGE_DBASE.PB_INDICIES.PushButton.Text
 msgid  "Indexes..."
@@ -1857,7 +1857,7 @@ msgstr "ODBC اوپشنس"
 
 #: source/ui/dlg/dbadmin.src#PAGE_ADABAS.FL_SEPARATOR1.FixedLine.Text
 msgid  "Connection Settings"
-msgstr ""
+msgstr "dbadmin.src#AUTO_SPECIAL_JDBC_AUTO_Y_.FL_SEPARATOR1.fixedline.text\n رئطئ كریو طے "
 
 #: source/ui/dlg/dbadmin.src#PAGE_ADABAS.FT_HOSTNAME.FixedText.Text
 msgid  "~Host name"
@@ -2025,7 +2025,7 @@ msgstr "مائکروسوفٹ  ایکس   ڈاٹابیس فائل"
 
 #: source/ui/dlg/AutoControls.src#STR_NO_ADDITIONAL_SETTINGS.String.Text
 msgid  "No more settings are necessary. To verify that the connection is working, click the '%test' button."
-msgstr ""
+msgstr "زیادہ سیٹینگس چھنئ ضُرت۔ویریفائے کرو   رئبطئ چھا چلان'%test' بٹن۔"
 
 #: source/ui/dlg/AutoControls.src#STR_COMMONURL.String.Text
 msgid  "Datasource URL"
@@ -2081,7 +2081,7 @@ msgstr "تصدیق كریو  استیمال  "
 
 #: source/ui/dlg/ConnectionPage.src#PAGE_CONNECTION.FT_USERNAME.FixedText.Text
 msgid  "~User name"
-msgstr ""
+msgstr "ConnectionPage.src#PAGE_CONNECTION.FT_USERNAME.fixedtext.text\n استیمال كرن وئل سوْند  ناو "
 
 #: source/ui/dlg/ConnectionPage.src#PAGE_CONNECTION.CB_PASSWORD_REQUIRED.CheckBox.Text
 msgid  "Password required"
@@ -2197,7 +2197,7 @@ msgstr "میمری استعمال كرمئژ"
 
 #: source/ui/dlg/AdabasStat.src#STR_ADABAS_ERROR_SYSTEMTABLES.String.Text
 msgid  "No information could be displayed because no access rights exist for the required system tables."
-msgstr ""
+msgstr " كہین مولومات ہیكٲو نئ ظٲہر كریتھ سسٹم جدولس تام واتنُك چھُنئ حق"
 
 #: source/ui/dlg/directsql.src#DLG_DIRECTSQL.FL_SQL.FixedLine.Text
 msgid  "SQL command"
@@ -2233,7 +2233,7 @@ msgstr "كماںڈ آی انجام آسئنی سان     ۔ "
 
 #: source/ui/dlg/directsql.src#STR_DIRECTSQL_CONNECTIONLOST.String.Text
 msgid  "The connection to the database has been lost. This dialog will be closed."
-msgstr ""
+msgstr "ڈاٹابیسس سعتھ ژھیون رئبطئ   ۔یہ كتھ باتھ گژھ۪ی بند  ۔"
 
 #: source/ui/dlg/dbfindex.src#DLG_DBASE_INDEXES.ModalDialog.Text
 msgid  "Indexes"
@@ -2288,8 +2288,8 @@ msgid  "The database does not support user administration."
 msgstr "ڈاٹابیس  چُھنئ استیمال كرن وئلس تعاوُن كران۔"
 
 #: source/ui/dlg/UserAdmin.src#DLG_PASSWORD.FL_USER.FixedLine.Text
-msgid  "User "$name$:  $""
-msgstr ""
+msgid  "User \"$name$:  $\""
+msgstr "استیمال كرن وۄل   \"$name$:  $\""
 
 #: source/ui/dlg/UserAdmin.src#DLG_PASSWORD.FT_OLDPASSWORD.FixedText.Text
 msgid  "Old p~assword"
@@ -2389,7 +2389,7 @@ msgstr " زریی كریو سیٹ اپ  MySQL ڈاٹابیس سعتھ"
 
 #: source/ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_MYSQL_INTRO.FT_MYSQL_HELPTEXT.FixedText.Text
 msgid  "You can connect to a MySQL database using either ODBC or JDBC.\nPlease contact your system administrator if you are unsure about the following settings."
-msgstr ""
+msgstr "تہہ ہیكیو استیامال كریتھ ڈاٹا بیس  زریی یمن سعتھMySQL ODBC or JDBC.\nبرائےمہربانی  سیسٹم كِس انتظامیئ سعتھ كریو رئبطئ اگر نئ تہہ یمن سیٹینكسن ہنز پورئ مولومات چھٲو ۔"
 
 #: source/ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_MYSQL_INTRO.FT_MYSQLCONNECTIONMODE.FixedText.Text
 msgid  "How do you want to connect to your MySQL database?"
@@ -2417,7 +2417,7 @@ msgstr " كیہین ڈاٹا بیسن چھُئ  تہُند استیما ل نا�
 
 #: source/ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_AUTHENTIFICATION.FT_GENERALUSERNAME.FixedText.Text
 msgid  "~User name"
-msgstr ""
+msgstr "ConnectionPage.src#PAGE_CONNECTION.FT_USERNAME.fixedtext.text\n استیمال كرن وئل سوْند  ناو "
 
 #: source/ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_AUTHENTIFICATION.CB_GENERALPASSWORDREQUIRED.CheckBox.Text
 msgid  "Password re~quired"
@@ -2465,7 +2465,7 @@ msgstr "JDBC  استیمال كریتھ كریو MySQL سعتھ رئبطئ سی�
 
 #: source/ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_MYSQL_JDBC.STR_MYSQLJDBC_HELPTEXT.String.Text
 msgid  "Please enter the required information to connect to a MySQL database using JDBC. Note that a JDBC driver class must be installed on your system and registered with %PRODUCTNAME.\nPlease contact your system administrator if you are unsure about the following settings."
-msgstr ""
+msgstr "برائےمہربانی مطالبہ کی گئی معلومات سےڈاٹابیس کے MYSQL تعلقات کواستعمال کرےJDBCنوٹ:ڈرائیورکلاس آپ کےسیسٹم کےساتھ انسٹول ہے۔%PRODUCTNAME./nبرائےمہربانی آپ سیسٹم نظم ونسق کومعلوم کرے یااگرآپ فولوئنگس یٹینگسس پرآپ کویقین نہیں۔"
 
 #: source/ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_MYSQL_JDBC.STR_MYSQL_DRIVERCLASSTEXT.String.Text
 msgid  "MySQL JDBC d~river class:"
@@ -2497,7 +2497,7 @@ msgstr "  ٹیکسٹ فائلن  سعتھ كریو ریبطئ سیٹ اپ"
 
 #: source/ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_TEXT.STR_TEXT_HELPTEXT.String.Text
 msgid  "Select the folder where the CSV (Comma Separated Values) text files are stored. %PRODUCTNAME Base will open these files in read-only mode."
-msgstr ""
+msgstr "فولڈر ژئریو یتھ منز   CSV    (كاما سیپریٹیڈ ویلیوز) ٹییكسٹ فایلئ چھئ جمئ۔ %PRODUCTNAME بیس كھولن یم فایلئ ریڈ۔ انلی موڈس منز"
 
 #: source/ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_TEXT.STR_TEXT_PATH_OR_FILE.String.Text
 msgid  "Path to text files"
@@ -2517,7 +2517,7 @@ msgstr "  رئبطئ كریو سیٹ اپ LDAP ڈرائیکٹری سعتھ"
 
 #: source/ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_LDAP.FT_LDAP_HELPTEXT.FixedText.Text
 msgid  "Please enter the required information to connect to an LDAP directory.\nPlease contact your system administrator if you are unsure about the following settings."
-msgstr ""
+msgstr "مہربئنی كریتھ كریو ضروری مولومات دئخل  LDAPڈایریكٹری سعتھ رئبطئ كرنئ خعطرئ۔ an LDAPمہربئنی كریتھ كریو  سیسٹم انتظامیا سعتھ رئبطئ اكر نئ تہہ یم سیٹینگس پئی چھئو"
 
 #: source/ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_LDAP.STR_LDAP_DEFAULT.String.Text
 msgid  "Default: 389"
@@ -2533,7 +2533,7 @@ msgstr "  Adabas D  ڈاٹابیس سعتھ كریو روبطئ سیٹ اپ"
 
 #: source/ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_ADABAS.STR_ADABAS_HELPTEXT.String.Text
 msgid  "Enter the name of the Adabas D database you want to connect to.\nClick 'Browse...' to select an Adabas D database that is already registered in %PRODUCTNAME."
-msgstr ""
+msgstr " ڈاٹا بیسك ناو كریو انٹر یتھ سعتھ تہہ ریبطئ چھئو یژھان كرُن  'براؤس دبئویو  '  Adabas D ڈاٹابیس ژارنئ خعطرئ  یس گُڈٲی موجود چھُ  %PRODUCTNAME."
 
 #: source/ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_ADO.STR_ADO_HEADERTEXT.String.Text
 msgid  "Set up a connection to an ADO database"
@@ -2541,7 +2541,7 @@ msgstr "  ADO ڈاٹابیس كریو رئبطئ سیٹ اپ"
 
 #: source/ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_ADO.STR_ADO_HELPTEXT.String.Text
 msgid  "Please enter the URL of the ADO data source you want to connect to.\nClick 'Browse' to configure provider-specific settings.\nPlease contact your system administrator if you are unsure about the following settings."
-msgstr ""
+msgstr "مہربئنی كریتھ كریو ADO  سورسك URL  درج یتھ سعتھ تہہ رئبطئ چھئو یژھان كرُن \n 'براؤس  دبئیویو   پرووائڈ سپسفِقس  سیٹنگسن ہیئت  دنئ خعطرئ' \nمہربئنی كریتھ كریو سیسٹم انتظامیس سعتھ رئبطئ اگر تہہ سیٹینگسن متعلق چھاونئ پٲی"
 
 #: source/ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_ODBC.STR_ODBC_HEADERTEXT.String.Text
 msgid  "Set up a connection to an ODBC database"
@@ -2549,7 +2549,7 @@ msgstr " ODBC ڈاٹابیسس سعتھ كریو رئبطئ سیٹ اپ "
 
 #: source/ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_ODBC.STR_ODBC_HELPTEXT.String.Text
 msgid  "Enter the name of the ODBC database you want to connect to.\nClick 'Browse...' to select an ODBC database that is already registered in %PRODUCTNAME.\nPlease contact your system administrator if you are unsure about the following settings."
-msgstr ""
+msgstr "ڈاٹابیسك ناو دیو یتھ سعتھ تہہ رئبطئ چھئو یژھان كرُن  ODBC \n 'براؤس دبئویو...'   ODBC  ڈاٹا بیس ژارنئ خعطرئ یس گُڈٲی موجودچھُPRODUCTNAME.\nمہربئنی كریتھ كریو سیسٹم ایڈمنسٹریٹر س سعتھ رئبطئ اگر نئ تہہ سیٹینگسن متَلق مولومات چھئ "
 
 #: source/ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_JDBC.STR_JDBC_HEADERTEXT.String.Text
 msgid  "Set up a connection to a JDBC database"
@@ -2557,7 +2557,7 @@ msgstr " JDBCڈاٹابیسس سعتھ كریو رئبطئ سیٹ اپ"
 
 #: source/ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_JDBC.STR_JDBC_HELPTEXT.String.Text
 msgid  "Please enter the required information to connect to a JDBC database.\nPlease contact your system administrator if you are unsure about the following settings."
-msgstr ""
+msgstr "مہربئنی كریتھ كریو ضروری مولومات دئخل  JDBCڈاٹا بیس سعتھ رئبطئ كرنئ خعطرئ۔  مہربئنی كریتھ كریو  سیسٹم انتظامیا سعتھ رئبطئ اكر نئ تہہ یم سیٹینگس پئی چھئو"
 
 #: source/ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_ORACLE.STR_ORACLE_HEADERTEXT.String.Text
 msgid  "Set up a connection to an Oracle database"
@@ -2573,7 +2573,7 @@ msgstr "اوریکل JDBC ڈرائیور کلاس"
 
 #: source/ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_ORACLE.STR_ORACLE_HELPTEXT.String.Text
 msgid  "Please enter the required information to connect to an Oracle database.Note that a JDBC Driver Class must be installed on your system and registered with %PRODUCTNAME.\nPlease contact your system administrator if you are unsure about the following settings."
-msgstr ""
+msgstr " مہربئنی كریتھ كریو ضروری مولومات درج  اوریكل ڈاٹا بیسس سعتھ  رئبطئ كرنئ خعطرئ نوٹ ڈرایور كلاس گژھی انسٹال آسُن كرمُت  تئ درج كرمُت  %PRODUCTNAME.\n مہربئنی كریتھ كریو سیسٹم انتظامیس سعتھ رئبطئ اگر تہہ سیٹینگسن متعلق چھاونئ پٲی"
 
 #: source/ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_SPREADSHEET.STR_SPREADSHEET_HEADERTEXT.String.Text
 msgid  "Set up a connection to spreadsheets"
@@ -2581,7 +2581,7 @@ msgstr "سپریڈشیٹس سعتھ كریو رئبطئ سیٹ اپ"
 
 #: source/ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_SPREADSHEET.STR_SPREADSHEET_HELPTEXT.String.Text
 msgid  "Click 'Browse...' to select a %PRODUCTNAME spreadsheet or Microsoft Excel workbook.\n%PRODUCTNAME will open this file in read-only mode."
-msgstr ""
+msgstr "  'براؤس دئبئویو ۔۔۔'  % PRODUCTNAME  ژارنئ  خعطرئ  سپرڈ شیٹ یا  مائکروسرفٹ ایکسل ورک بوک.\n%PRODUCTNAME كھولئ یئ فایل پرنیكس موڈس منز ۔"
 
 #: source/ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_SPREADSHEET.STR_SPREADSHEETPATH.String.Text
 msgid  "~Location and file name"
@@ -2723,6 +2723,50 @@ msgstr ""
 msgid  "Socket"
 msgstr ""
 
+#: source/ui/inc/toolbox_tmpl.hrc#ID_BROWSER_REFRESH.#define.Text
+msgid  "Refresh"
+msgstr "ریفریش"
+
+#: source/ui/inc/toolbox_tmpl.hrc#ID_NEW_VIEW_DESIGN.#define.Text
+msgid  "New ~View Design"
+msgstr "نئو منظر ڈیزائن"
+
+#: source/ui/inc/toolbox_tmpl.hrc#ID_NEW_TABLE_DESIGN.#define.Text
+msgid  "New ~Table Design"
+msgstr "نئو جدول ڈیزائن"
+
+#: source/ui/inc/toolbox_tmpl.hrc#ID_NEW_QUERY_WIZARD.#define.Text
+msgid  "Query AutoPilot..."
+msgstr " پانئی  پائیلٹ كویری۔۔۔۔۔"
+
+#: source/ui/inc/toolbox_tmpl.hrc#ID_NEW_QUERY_DESIGN.#define.Text
+msgid  "New ~Query (Design View)"
+msgstr "نئئو کیوری(منظرڈیزائن"
+
+#: source/ui/inc/toolbox_tmpl.hrc#ID_EDIT_QUERY_DESIGN.#define.Text
+msgid  "~Edit Query"
+msgstr "کیوری ادارت"
+
+#: source/ui/inc/toolbox_tmpl.hrc#ID_NEW_QUERY_SQL.#define.Text
+msgid  "New Query (~SQL View)"
+msgstr "نئو کیوری (~SQL View)"
+
+#: source/ui/inc/toolbox_tmpl.hrc#ID_QUERY_EDIT_JOINCONNECTION.#define.Text
+msgid  "Edit..."
+msgstr "ادارت"
+
+#: source/ui/inc/toolbox_tmpl.hrc#ID_BROWSER_COLWIDTH.#define.Text
+msgid  "Column ~Width..."
+msgstr "کالمك كَھجر"
+
+#: source/ui/inc/toolbox_tmpl.hrc#ID_DOCUMENT_CREATE_REPWIZ.#define.Text
+msgid  "Report Wizard..."
+msgstr ""
+
+#: source/ui/inc/toolbox_tmpl.hrc#SID_DB_FORM_NEW_PILOT.#define.Text
+msgid  "Form AutoPilot..."
+msgstr " پانئی پائیلٹ فارم"
+
 #: source/ui/misc/dbumiscres.src#RSC_CHARSETS.1.String.Text
 msgid  "System"
 msgstr "سسٹم"
@@ -2736,12 +2780,12 @@ msgid  "An unexpected error occurred. The operation could not be performed."
 msgstr "غئر مُتوقئ غلطی آی  اوپریشن  ہیكئو نئ انجام دیتھ"
 
 #: source/ui/misc/dbumiscres.src#STR_COULDNOTOPEN_LINKEDDOC.String.Text
-msgid  "The document "$file$" could not be opened."
+msgid  "The document \"$file$\" could not be opened."
 msgstr ""
 
 #: source/ui/misc/dbumiscres.src#STR_MISSING_TABLES_XDROP.String.Text
 msgid  "The table cannot be deleted because the database connection does not support this."
-msgstr ""
+msgstr "جدول ہیكئ نئ خئرج  گژھیتھ كیاز كئ   ڈاٹابیسُك رعبطئ چھُنئ معاوُن كران"
 
 #: source/ui/misc/dbumiscres.src#STR_BUTTON_TEXT_ALL.String.Text
 msgid  "~All"
@@ -2760,11 +2804,11 @@ msgid  "No corresponding column type could be found for column '#1'."
 msgstr " کالم  ٹایپس  مطئبق آی نئ كہین  کالم اَتھ۪ی '#1'."
 
 #: source/ui/misc/dbumiscres.src#STR_FILE_DOES_NOT_EXIST.String.Text
-msgid  "The file "$file$" does not exist."
-msgstr ""
+msgid  "The file \"$file$\" does not exist."
+msgstr "  فایل \"$file$\"  چھُنئ موجود    "
 
 #: source/ui/misc/dbumiscres.src#STR_WARNINGS_DURING_CONNECT.String.Text
-msgid  "Warnings were encountered while connecting to the data source. Press "$buttontext$" to view them."
+msgid  "Warnings were encountered while connecting to the data source. Press \"$buttontext$\" to view them."
 msgstr ""
 
 #: source/ui/misc/dbumiscres.src#STR_NAMED_OBJECT_ALREADY_EXISTS.String.Text
@@ -2772,7 +2816,7 @@ msgid  "The name '$#$' already exists.\nPlease enter another name."
 msgstr ""
 
 #: source/ui/misc/dbumiscres.src#RID_STR_EXTENSION_NOT_PRESENT.String.Text
-msgid  "The report, "$file$", requires the extension Oracle Report Builder."
+msgid  "The report, \"$file$\", requires the extension Oracle Report Builder."
 msgstr ""
 
 #: source/ui/misc/WizardPages.src#STR_WIZ_COLUMN_SELECT_TITEL.String.Text
@@ -2837,11 +2881,11 @@ msgstr "گڈنیچ  کنز"
 
 #: source/ui/misc/WizardPages.src#TAB_WIZ_NAME_MATCHING.FT_TABLE_LEFT.FixedText.Text
 msgid  "Source table: \n"
-msgstr ""
+msgstr " جدول زرئی  : \n   "
 
 #: source/ui/misc/WizardPages.src#TAB_WIZ_NAME_MATCHING.FT_TABLE_RIGHT.FixedText.Text
 msgid  "Destination table: \n"
-msgstr ""
+msgstr "ڈیزٹینیشن جدول : \n   "
 
 #: source/ui/misc/WizardPages.src#TAB_WIZ_NAME_MATCHING.PB_ALL.PushButton.Text
 msgid  "~All"
@@ -2957,11 +3001,11 @@ msgstr "برائےمہربانی نوٹ كریو كیہں ڈاٹابیسن چھ�
 
 #: source/ui/querydesign/querydlg.src#STR_QUERY_INNER_JOIN.String.Text
 msgid  "Includes only records for which the contents of the related fields of both tables are identical."
-msgstr ""
+msgstr "صرف ڈاٹابیس  شئمل کران  یمئ خعطرئ متعلقہ شعبہ  مشمولات دوْنوئی  جدول چھئ ہیوی۔"
 
 #: source/ui/querydesign/querydlg.src#STR_QUERY_LEFTRIGHT_JOIN.String.Text
 msgid  "Contains ALL records from table '%1' but only records from table '%2' where the values in the related fields are matching."
-msgstr ""
+msgstr "جدول'%1'منز چھئ ALLریکارڈز شئمل مگر جدول'%2' ریکارڈزیمیك  قئمتھ متعلقہ شعبہس سعتھ چھئ   میچ كران۔"
 
 #: source/ui/querydesign/querydlg.src#STR_QUERY_FULL_JOIN.String.Text
 msgid  "Contains ALL records from '%1' and from '%2'."
@@ -3105,7 +3149,7 @@ msgstr " ات۪ی واریاح  جدول چھئ ۔"
 
 #: source/ui/querydesign/query.src#STR_QRY_NATIVE.String.Text
 msgid  "The statement will not be applied when querying in the SQL dialect of the database."
-msgstr ""
+msgstr "بیان ہیكٲو نئ  لاگو كریتھ یل۪ی  ڈاٹابیس كس  SQLکلامس منز  آس۪ی کویری گژھان   ۔"
 
 #: source/ui/querydesign/query.src#ERR_QRY_AMB_FIELD.ErrorBox.Message
 msgid  "Field name not found or not unique"
@@ -3141,7 +3185,7 @@ msgstr " كہین كویری آی نئ بنٲونئ  كیازئ كہین شعب�
 
 #: source/ui/querydesign/query.src#STR_DATASOURCE_DELETED.String.Text
 msgid  "The corresponding data source has been deleted. Therefore, data relevant to that data source cannot be saved."
-msgstr ""
+msgstr " مطابقئ  ڈاٹا  سورس چھُئ  خئرج  آمُت كرنئ  ۔   ڈاٹا ریویلینٹ ڈاٹاسورس ہیكٲو نئ محفوظ كریتھ۔"
 
 #: source/ui/querydesign/query.src#STR_QRY_COLUMN_NOT_FOUND.String.Text
 msgid  "The column '$name$' is unknown."
@@ -3157,7 +3201,7 @@ msgstr "كالم ناو پزوئ گُڈئی استیمال كرُن 'LIKE'."
 
 #: source/ui/querydesign/query.src#STR_QRY_CHECK_CASESENSITIVE.String.Text
 msgid  "The column could not be found. Please note that the database is case-sensitive."
-msgstr ""
+msgstr "کالم آو نئ اَتھ۪ی - نوٹ کریو ڈاٹا بیس چھُ كیس سینزٹیو۔"
 
 #: source/ui/querydesign/query.src#STR_QUERYDESIGN.String.Text
 msgid  " - %PRODUCTNAME Base: Query Design"
@@ -3172,11 +3216,11 @@ msgid  "$object$ has been changed.\nDo you want to save the changes?"
 msgstr ""
 
 #: source/ui/querydesign/query.src#STR_ERROR_PARSING_STATEMENT.String.Text
-msgid  "$object$ is based on an SQL command which could not be parsed.(except "SQL command", which doesn't make sense here) will be inserted."
+msgid  "$object$ is based on an SQL command which could not be parsed.(except \"SQL command\", which doesn't make sense here) will be inserted."
 msgstr ""
 
 #: source/ui/querydesign/query.src#STR_INFO_OPENING_IN_SQL_VIEW.String.Text
-msgid  "$object$ will be opened in SQL view.(except "SQL command", which doesn't make sense here) will be inserted."
+msgid  "$object$ will be opened in SQL view.(except \"SQL command\", which doesn't make sense here) will be inserted."
 msgstr ""
 
 #: source/ui/querydesign/query.src#RSC_QUERY_OBJECT_TYPE.1.String.Text
@@ -3221,11 +3265,11 @@ msgstr "ڈاٹا بیس ریلیشنس چھُنئ سپورٹ ۔"
 
 #: source/ui/relationdesign/relation.src#RELATION_DESIGN_SAVEMODIFIED.QueryBox.Message
 msgid  "The relation design has been changed.\nDo you want to save the changes?"
-msgstr ""
+msgstr "ریلیشن  ڈیزائنس منز چھئ   تبدیلی آمژ\nتہہ چھئو یژھان   تبدیلی محفوظ   کر ن ؟"
 
 #: source/ui/relationdesign/relation.src#STR_QUERY_REL_DELETE_WINDOW.String.Text
 msgid  "When you delete this table all corresponding relations will be deleted as well. Continue?"
-msgstr ""
+msgstr "اگرتہہ سئری  جدول خئرج  چھئو یژھان كرِن مطابقئ   ریلیشنس تئہ گژھن  خئرج ۔جئری تھئویو؟"
 
 #: source/ui/relationdesign/relation.src#STR_QUERY_REL_COULD_NOT_CREATE.String.Text
 msgid  "The database could not create the relation. May be foreign keys for this kind of table aren't supported.\nPlease check your documentation of the database."
@@ -3233,7 +3277,7 @@ msgstr ""
 
 #: source/ui/tabledesign/table.src#STR_TABLEDESIGN_DBFIELDTYPES.String.Text
 msgid  "Unknown;Text;Number;Date/Time;Date;Time;Yes/No;Currency;Memo;Counter;Image;Text (fix);Decimal;Binary (fix);Binary;BigInt;Double;Float;Real;Integer;Small Integer;Tiny Integer;SQL Null;Object;Distinct;Structure;Field;BLOB;CLOB;REF;OTHER;Bit (fix)"
-msgstr ""
+msgstr "نا مولو م ;  مواد؛شماریات؛تاریخ وقت؛تاریخ؛وقت؛آ نئ ؛کرنسی؛میمو؛کونٹر؛ایمیج؛مواد  اشاری؛باینری (fix);(fix);بائنری;BigInt;دوبارئ;فلوٹ;اصلی;صحیح عدد;لكُٹ صحیح عدد;ٹاینی صحیح عدد;SQL Null;Object;Distinct;Structure;Field;BLOB;CLOB;REF;OTHER"
 
 #: source/ui/tabledesign/table.src#STR_TABLEDESIGN_UNDO_PRIMKEY.String.Text
 msgid  "Insert/remove primary key"
@@ -3377,15 +3421,15 @@ msgstr "مسال وضع "
 
 #: source/ui/tabledesign/table.src#STR_HELP_BOOL_DEFAULT.String.Text
 msgid  "Select a value that is to appear in all new records as default.\nIf the field is not to have a default value, select the empty string."
-msgstr ""
+msgstr "سئری نئو ریکورڈ ژئریوغئرموجود  قئمتس منز  اگرشعبہ ك   قئمت چھُ  غئرموجود صرف  ژئریو خئلی  سٹرینگ  "
 
 #: source/ui/tabledesign/table.src#STR_HELP_DEFAULT_VALUE.String.Text
 msgid  "Enter a default value for this field.\n\nWhen you later enter data in the table, this string will be used in each new record for the field selected. It should, therefore, correspond to the cell format that needs to be entered below."
-msgstr ""
+msgstr "غیرموجود قئمتھ شبعہ كریو دئخل\n\nیلئ تُہ پتئ ڈآٹا ترئویو جدولس منز  یئ سٹینرگ گژھ۪ی ہر كُن۪ی نئوس  ریکورڈس منز  استیمال تئ شبعہ س منز  ژعریتھ   زاویہ كس  ضرورت شکلئ  منز پتئ  دئخل "
 
 #: source/ui/tabledesign/table.src#STR_HELP_FIELD_REQUIRED.String.Text
 msgid  "Activate this option if this field cannot contain NULL values, i.e. the user must always enter data."
-msgstr ""
+msgstr "یئ  اوپشن كریو چالو   اگر یتھ  شبعہس منز  قئمتھ آس۪ی NULL  ت۪یلئ پزئ استیمال كرن وئلس ہمیشئ   ڈاٹا دئخل كرُن٫"
 
 #: source/ui/tabledesign/table.src#STR_HELP_TEXT_LENGTH.String.Text
 msgid  "Enter the maximum text length permitted."
@@ -3397,7 +3441,7 @@ msgstr "    ‏شمارن كریو فورمیٹ  ۔"
 
 #: source/ui/tabledesign/table.src#STR_HELP_LENGTH.String.Text
 msgid  "Determine the length data can have in this field.\n\nIf decimal fields, then the maximum length of the number to be entered, if binary fields, then the length of the data block.\nThe value will be corrected accordingly when it exceeds the maximum for this database."
-msgstr ""
+msgstr "یمئ  شوْبہك زیچھر  كریو مكَرر زیچرس منز٫/n /n اگراشاری شعبہ ت۪یلئ زیچھر  شماریاتن منز  زیادئ  ،اگربائنر ی شعبہ ت۪یلئ زیچھر ڈاٹابلوک .\n قئمتھ گژھ۪ی پٲنئی ٹھیك یل۪ی بئڈ۪ی  ڈاٹا بیس  كس حدس ./n  "
 
 #: source/ui/tabledesign/table.src#STR_HELP_SCALE.String.Text
 msgid  "Specify the number of decimal places permitted in this field."
@@ -3405,7 +3449,7 @@ msgstr "یمئ  شعبہك   شماریات كریو  واضاح  تاكئ  اش
 
 #: source/ui/tabledesign/table.src#STR_HELP_FORMAT_CODE.String.Text
 msgid  "This is where you see how the data would be displayed in the current format (use the button on the right to modify the format)."
-msgstr ""
+msgstr "تُہہ چھئو وچھان یئ كَتھ شكلئ منز یئ بوزنئ (دَچھُن بٹن كریو استیمال شكل بدلاو نئ خعطرئ)"
 
 #: source/ui/tabledesign/table.src#STR_HELP_FORMAT_BUTTON.String.Text
 msgid  "This is where you determine the output format of the data."
@@ -3413,19 +3457,19 @@ msgstr "یت۪یتھ چھٲو تہہ نَنان آؤٹ پوٹ شکل  ۔"
 
 #: source/ui/tabledesign/table.src#STR_HELP_AUTOINCREMENT.String.Text
 msgid  "Choose if this field should contain AutoIncrement values.\n\nYou can not enter data in fields of this type. An intrinsic value will be assigned to each new record automatically (resulting from the increment of the previous record)."
-msgstr ""
+msgstr " ژعریو اگر یتھ منز گژ۪ی شئمل گژھں آٹو انكریمیننٹ ویلیو.\n\n یم ٹایپ كس شوبس منز ہیكیو نئ تُہہ ڈاٹآ شئمل كریتھ۔انٹرینس قئمتھ یی پٲنی منتھل كرنئ نئوس ریكاڈس ۔ ( پت۪یمئ ریكاڈ  كئ نتیجئ پ۪یٹھئ)۔ "
 
 #: source/ui/tabledesign/table.src#PB_FORMAT.PushButton.Text
 msgid  "~..."
 msgstr "~... "
 
 #: source/ui/tabledesign/table.src#STR_TABLEDESIGN_DUPLICATE_NAME.String.Text
-msgid  "The table cannot be saved because column name "$column$" was assigned twice."
-msgstr ""
+msgid  "The table cannot be saved because column name \"$column$\" was assigned twice."
+msgstr " یئ  جدول ہیكٲو نئ محفوظ كریتھ كیاز كئ کالم ناو   \"$column$\"   عئس دئیم۪ی پھ۪یرئ منتقل كرنئ آمژ۔"
 
 #: source/ui/tabledesign/table.src#STR_TBL_COLUMN_IS_KEYCOLUMN.String.Text
-msgid  "The column "$column$" belongs to the primary key. If the column is deleted, the primary key will also be deleted. Do you really want to continue?"
-msgstr ""
+msgid  "The column \"$column$\" belongs to the primary key. If the column is deleted, the primary key will also be deleted. Do you really want to continue?"
+msgstr "  ‎کالم\"$column$\" چھُ پرایمری كی ہ۪یوند٫   اگرکالم گژھ۪ی  خئرج  پرائمری کی تئ گژھ۪ی  خئرج ۔      تُہہ چھوئ یژھان جئری تھٲوُن؟"
 
 #: source/ui/tabledesign/table.src#STR_TBL_COLUMN_IS_KEYCOLUMN_TITLE.String.Text
 msgid  "Primary Key Affected"
@@ -3439,25 +3483,29 @@ msgstr "کالم "
 msgid  "Continue anyway?"
 msgstr "  جئاریتھٲویو؟"
 
+#: source/ui/tabledesign/table.src#STR_STAT_WARNING.String.Text
+msgid  "Warning!"
+msgstr "آگہی "
+
 #: source/ui/tabledesign/table.src#TABLE_DESIGN_SAVEMODIFIED.QueryBox.Message
 msgid  "The table has been changed.\nDo you want to save the changes?"
-msgstr ""
+msgstr "جدول چھُ  تبدیل گوْمت\nتُہہ چھئوئ یژھان   تبدیلیی   محفوظ تھٲون؟"
 
 #: source/ui/tabledesign/table.src#TABLE_QUERY_CONNECTION_LOST.QueryBox.Message
 msgid  "The connection to the database was lost! The table design can only be used with limited functionality without a connection.\nReconnect?"
-msgstr ""
+msgstr "ڈاٹابیسك رئبتئ اوس رئومُت !جدول  ڈیزائن ہیكٲ و صرف محدود فنكشن س منز   استیمال کریتھ۔/n۔دوبارئ كریو رئبطئ"
 
 #: source/ui/tabledesign/table.src#STR_TABLEDESIGN_CONNECTION_MISSING.String.Text
 msgid  "The table could not be saved due to problems connecting to the database."
-msgstr ""
+msgstr "جدول ہ۪یوك نئ  محفوظ گژھیتھ كیازئ  ڈاٹابیسس سعتھ پریشئٲنی منز جھئ دقت یوان  ۔"
 
 #: source/ui/tabledesign/table.src#STR_TABLEDESIGN_DATASOURCE_DELETED.String.Text
 msgid  "The table filter could not be adjusted because the data source has been deleted."
-msgstr ""
+msgstr "جدول فلٹر  ہیكٲو نئ شیریتھ كیاز ڈاٹا زریی چھُ خئرج گوْمُت      ۔"
 
 #: source/ui/tabledesign/table.src#QUERY_SAVE_TABLE_EDIT_INDEXES.QueryBox.Message
 msgid  "Before you can edit the indexes of a table, you have to save it.\nDo you want to save the changes now?"
-msgstr ""
+msgstr "جدولك فہرست  ادارت كرنئ برونٹھ كریو  سُئ محفوظ /n.ک ۔  نُہہ چھئو یژھان محفوظ كرُن ؟"
 
 #: source/ui/tabledesign/table.src#STR_TABLEDESIGN_NO_PRIM_KEY_HEAD.String.Text
 msgid  "No primary key"
@@ -3465,15 +3513,15 @@ msgstr "پرائمری کی چھنئ"
 
 #: source/ui/tabledesign/table.src#STR_TABLEDESIGN_NO_PRIM_KEY.String.Text
 msgid  "A unique index or primary key is required for data record identification in this database.\nYou can only enter data into this table when one of these two structural conditions has been met.\n\nShould a primary key be created now?"
-msgstr ""
+msgstr " یتھ ڈاٹا بیسس منز  پرزناونئ خئطرئ چھئ یونیق كی یا پرایمری كی  ضورتتُہہ ہیكیو ت۪یل۪ی ڈاٹا یتھ جدولس منز دئخل كریتھ یلئ یم زئ شرطئ غژھن پورئ"
 
 #: source/ui/tabledesign/table.src#STR_TABLEDESIGN_TITLE.String.Text
 msgid  " - %PRODUCTNAME Base: Table Design"
 msgstr " - %PRODUCTNAME Base: ٹیبل ڈیزائن "
 
 #: source/ui/tabledesign/table.src#STR_TABLEDESIGN_ALTER_ERROR.String.Text
-msgid  "The column "$column$" could not be changed. Should the column instead be deleted and the new format appended?"
-msgstr ""
+msgid  "The column \"$column$\" could not be changed. Should the column instead be deleted and the new format appended?"
+msgstr "\"$column$\" کالم ہیكٲو نئ  تبدیل  كریتھ۔ ام۪ی بدلئ كروئ یئ کالم   خئرج تئ نئو كالم جوڈئو    ؟"
 
 #: source/ui/tabledesign/table.src#STR_TABLEDESIGN_SAVE_ERROR.String.Text
 msgid  "Error while saving the table design"
@@ -3485,7 +3533,7 @@ msgstr ""
 
 #: source/ui/tabledesign/table.src#TABLE_DESIGN_ALL_ROWS_DELETED.QueryBox.Message
 msgid  "You are trying to delete all the columns in the table. A table cannot exist without columns. Should the table be deleted from the database? If not, the table will remain unchanged."
-msgstr ""
+msgstr " تُو چھئو سئری كالم خئرج کرنچ كوشش كران۔ كالم روْس ہ۪یكئ نئ جدول بن۪یتھ۔  ام۪ی خعترئ كروئ ڈاٹا بیس منز جدول خئرج  ؟اگرنئ جدول روز۪ی  تبدیلی روْستی"
 
 #: source/ui/tabledesign/table.src#STR_AUTOINCREMENT_VALUE.String.Text
 msgid  "A~uto-increment statement"
@@ -3493,11 +3541,11 @@ msgstr "پانٲی سٹیٹ مینٹ منز اضافہ"
 
 #: source/ui/tabledesign/table.src#STR_HELP_AUTOINCREMENT_VALUE.String.Text
 msgid  "Enter an SQL statement for the auto-increment field.\n\nThis statement will be directly transferred to the database when the table is created."
-msgstr ""
+msgstr "SQL سٹیٹ مینٹ  كریو دئخل آٹو انكریمینٹ خعطرئ۔\n\nیہ  سٹیٹ مینٹ یی  ڈاریکٹ ڈاٹابیس  منز تراونئ یلئ  جدول یی بنٲونئ"
 
 #: source/ui/tabledesign/table.src#STR_NO_TYPE_INFO_AVAILABLE.String.Text
 msgid  "No type information could be retrieved from the database.\nThe table design mode is not available for this data source."
-msgstr ""
+msgstr "كوْنئ قسمچ مولومات  گژھ۪ی  نئ ریٹرریو  ڈاٹا بیس منز \nجدول   ڈیزائن موڈ چھُنئ دستیاب یتھ ڈاٹا زریی خئطرئ۔"
 
 #: source/ui/tabledesign/table.src#STR_CHANGE_COLUMN_NAME.String.Text
 msgid  "change field name"
@@ -3514,10 +3562,6 @@ msgstr "شعبہچ  وضاحت كریو تبدیل"
 #: source/ui/tabledesign/table.src#STR_CHANGE_COLUMN_ATTRIBUTE.String.Text
 msgid  "change field attribute"
 msgstr "شعبہ ایٹریبیوٹ كریو تبدیل   "
-
-#: source/ui/tabledesign/table.src#STR_STAT_WARNING.String.Text
-msgid  "Warning!"
-msgstr "آگہی "
 
 #: source/ui/uno/dbinteraction.src#STR_REMEMBERPASSWORD_SESSION.String.Text
 msgid  "~Remember password until end of session"
@@ -3570,47 +3614,3 @@ msgstr ""
 #: source/ui/uno/copytablewizard.src#STR_CTW_ERROR_INVALID_INTERACTIONHANDLER.String.Text
 msgid  "The given interaction handler is invalid."
 msgstr ""
-
-#: source/ui/inc/toolbox_tmpl.hrc#ID_BROWSER_REFRESH.#define.Text
-msgid  "Refresh"
-msgstr "ریفریش"
-
-#: source/ui/inc/toolbox_tmpl.hrc#ID_NEW_VIEW_DESIGN.#define.Text
-msgid  "New ~View Design"
-msgstr "نئو منظر ڈیزائن"
-
-#: source/ui/inc/toolbox_tmpl.hrc#ID_NEW_TABLE_DESIGN.#define.Text
-msgid  "New ~Table Design"
-msgstr "نئو جدول ڈیزائن"
-
-#: source/ui/inc/toolbox_tmpl.hrc#ID_NEW_QUERY_WIZARD.#define.Text
-msgid  "Query AutoPilot..."
-msgstr " پانئی  پائیلٹ كویری۔۔۔۔۔"
-
-#: source/ui/inc/toolbox_tmpl.hrc#ID_NEW_QUERY_DESIGN.#define.Text
-msgid  "New ~Query (Design View)"
-msgstr "نئئو کیوری(منظرڈیزائن"
-
-#: source/ui/inc/toolbox_tmpl.hrc#ID_EDIT_QUERY_DESIGN.#define.Text
-msgid  "~Edit Query"
-msgstr "کیوری ادارت"
-
-#: source/ui/inc/toolbox_tmpl.hrc#ID_NEW_QUERY_SQL.#define.Text
-msgid  "New Query (~SQL View)"
-msgstr "نئو کیوری (~SQL View)"
-
-#: source/ui/inc/toolbox_tmpl.hrc#ID_QUERY_EDIT_JOINCONNECTION.#define.Text
-msgid  "Edit..."
-msgstr "ادارت"
-
-#: source/ui/inc/toolbox_tmpl.hrc#ID_BROWSER_COLWIDTH.#define.Text
-msgid  "Column ~Width..."
-msgstr "کالمك كَھجر"
-
-#: source/ui/inc/toolbox_tmpl.hrc#ID_DOCUMENT_CREATE_REPWIZ.#define.Text
-msgid  "Report Wizard..."
-msgstr ""
-
-#: source/ui/inc/toolbox_tmpl.hrc#SID_DB_FORM_NEW_PILOT.#define.Text
-msgid  "Form AutoPilot..."
-msgstr " پانئی پائیلٹ فارم"

@@ -45,7 +45,7 @@ msgstr ""
 
 #: source/all/crashrep.ulf#%WELCOME_BODY2%
 msgid  "It's easy - just send the report without any further effort on your part by clicking 'Send' in the next dialog, or you can briefly describe how the error occurred and then click 'Send'. If you want to see the report, click the 'Show Report' button. No data will be sent if you click 'Do Not Send'.\n\n"
-msgstr ""
+msgstr "ਇਹ ਆਸਾਨ ਹੈ - ਤੁਹਾਡੇ ਆਪਣੇ ਹਿੱਸੇ ਦੀ ਅਗਲੀ ਕੋਸ਼ਿਸ਼ ਤੋ ਬਿਨਾਂ ਅਗਲੇ ਡਾਈਲਾਗ ਵਿੱਚ 'ਭੇਜੋ'ਤੇ ਕਲਿੱਕ ਕਰਕੇ ਰਿਪੋਰਟ ਭੇਜੋ, ਜਾਂ ਤੁਸੀਂ ਸੰਖੇਪ ਵਿੱਚ ਦੱਸੋ ਕਿ ਗਲਤੀ ਕਿਸ ਤਰਾਂ ਵਾਪਰੀ ਅਤੇ 'ਭੇਜੋ' ਨੂੰ ਦਬਾਉ। ਜੇ ਤੁਸੀਂ ਰਿਪੋਰਟ ਵੇਖਣਾ ਚਾਹੁੰਦੇ ਹੋ, 'ਰਿਪੋਰਟ ਵੇਖਾਓ' ਬਟਨ ਨੂੰ ਦਬਾਉ। ਜੇ ਤੁਸੀਂ 'ਨਾ ਭੇਜੋ' ਨੂੰ ਦਬਾਇਆ ਤਾਂ ਕੋਈ ਡਾਟਾ ਨਹੀਂ ਭੇਜਿਆ ਜਾਵੇਗਾ।\n\n"
 
 #: source/all/crashrep.ulf#%WELCOME_BODY3%
 msgid  "Customer Privacy\nThe information gathered is limited to data concerning the state of %PRODUCTNAME% %PRODUCTVERSION% when the error occurred. Other information about passwords or document contents is not collected.\n\nThe information will only be used to improve the quality of %PRODUCTNAME% and will not be shared with third parties.\nFor more information on Apache OpenOffice's privacy policy, visit\n"
@@ -81,7 +81,7 @@ msgstr ""
 
 #: source/all/crashrep.ulf#%ENTER_TITLE%
 msgid  "Which type of document (e.g. presentation) were you using when the error occurred?"
-msgstr ""
+msgstr "ਜਦੋਂ ਗਲਤੀ ਵਾਪਰੀ ਤਾਂ ਤੁਸੀਂ ਕਿਸ ਕਿਸਮ (ਜਿਵੇਂ ਪਰਿਜ਼ੈੱਨਟੇਸ਼ਨ) ਦਾ ਡੌਕੂਮੈਂਟ ਵਰਤ ਰਹੇ ਸੀ?"
 
 #: source/all/crashrep.ulf#%ALLOW_CONTACT%
 msgid  "~I allow Apache OpenOffice to contact me regarding this report."
@@ -121,23 +121,23 @@ msgstr "ਰਿਪੋਰਟ ਇੱਥੇ ਸੰਭਾਲੋ"
 
 #: source/all/crashrep.ulf#%ERROR_MSG_SIMPLE_MAPI%
 msgid  "The error report could not be sent because the default e-mail program does not support MAPI.\n Please use a MAPI-compatible e-mail program."
-msgstr ""
+msgstr "ਗਲਤੀ ਰਿਪੋਰਟ ਭੇਜੀ ਨਹੀਂ ਜਾ ਸਕਦੀ, ਕਿਉਂਕਿ ਮੂਲ ਈ-ਮੇਲ ਪ੍ਰੋਗਰਾਮ ਦਾ MAPI ਨੂੰ ਸਹਿਯੋਗ ਨਹੀਂ।\n MAPI ਨਾਲ ਸਹਿਯੋਗੀ ਈ-ਮੇਲ ਪ੍ਰੋਗਰਾਮ ਲਵੋ।"
 
 #: source/all/crashrep.ulf#%ERROR_MSG_DISK_FULL%
 msgid  "The error report could not be temporarily saved and could therefore not be sent."
-msgstr ""
+msgstr "ਗਲਤੀ ਰਿਪੋਰਟ ਆਰਜੀ ਤੌਰ ਤੇ ਸੰਭਾਲੀ ਅਤੇ ਭੇਜੀ ਨਹੀਂ ਜਾ ਸਕਦੀ ਹੈ?"
 
 #: source/all/crashrep.ulf#%ERROR_MSG_SENDMAIL%
 msgid  "The error report could not be sent because 'sendmail' could not be started.\nPlease check the 'sendmail' settings."
-msgstr ""
+msgstr "ਗਲਤੀ ਰਿਪੋਰਟ ਭੇਜੀ ਨਹੀਂ ਜਾ ਸਕਦੀ, ਕਿਉਂਕਿ 'sendmail' ਸ਼ੁਰੂ ਨਹੀਂ ਹੋ ਸਕਦਾ।\n'sendmail' ਸੈਟਿੰਗ ਦੀ ਜਾਂਚ ਕਰੋ।"
 
 #: source/all/crashrep.ulf#%ERROR_MSG_PROXY%
 msgid  "The error report could not be sent. Please check the proxy settings under 'Options' in the Error Report Tool."
-msgstr ""
+msgstr "ਗਲਤੀ ਰਿਪੋਰਟ ਭੇਜੀ ਨਹੀਂ ਜਾ ਸਕਦੀ। ਕਿਰਪਾ ਕਰਕੇ ਗਲਤੀ ਰਿਪੋਰਟ ਸੰਦ ਵਿੱਚ 'ਚੋਣ' ਹੇਠਾਂ ਪਰਾਕਸੀ ਸੈਟਿੰਗ ਦੀ ਜਾਂਚ ਕਰੋ।"
 
 #: source/all/crashrep.ulf#%ERROR_MSG_NOCONNECT%
 msgid  "The error report could not be sent because there is no Internet connection. Please check your Internet settings."
-msgstr ""
+msgstr "ਗਲਤੀ ਰਿਪੋਰਟ ਭੇਜੀ ਨਹੀਂ ਜਾ ਸਕਦੀ, ਕਿਉਕਿ ਕੋਈ ਇੰਟਰਨੈੱਟ ਸੰਬੰਧ ਨਹੀਂ ਹੈ। ਕਿਰਪਾ ਕਰਕੇ ਆਪਣੀਆਂ ਇੰਟਰਨੈੱਟ ਸੈਟਿੰਗ ਦੀ ਜਾਂਚ ਕਰੋ।"
 
 #: source/all/crashrep.ulf#%OPTIONS_BUTTON%
 msgid  "~Options..."
@@ -173,7 +173,7 @@ msgstr "ਪੋਰਟ(~P)"
 
 #: source/all/crashrep.ulf#%PROXY_SETTINGS_DESCRIPTION%
 msgid  "The %PRODUCTNAME% Error Report tool needs to be connected to the Internet to be able to send error reports.\n\nCompanies often use proxy servers in conjunction with a firewall to protect the network.\n\nIf this applies to your situation, you have to specify the address and port for the server."
-msgstr ""
+msgstr "%PRODUCTNAME% ਗਲਤੀ ਰਿਪੋਰਟ ਸੰਦ ਗਲਤੀ ਰਿਪੋਰਟਾਂ ਭੇਜਣ ਲਈ ਇੰਟਰਨੈੱਟ ਨਾਲ ਨਾਲ ਜੁੜਨਾ ਚਾਹੁੰਦਾ ਹੈ।\n\nਕੰਪਨੀਆਂ ਵੀ ਪਰਾਕਸੀ ਸਰਵਰ ਵਰਤਦੀਆਂ ਹਨ, ਭਾਵੇ ਨੈੱਟਵਰਕ ਨੂੰ ਬਚਾਉਣ ਲਈ ਫਾਇਰਵਾਲ ਲੱਗਾ ਹੈ।\n\nਜੇ ਇਹ ਤੁਹਾਡੀ ਸਥਿਤੀ ਉੱਪਰ ਲਾਗੂ ਕੀਤਾ ਜਾਵੇ ਤਾਂ ਤੁਹਾਨੂੰ ਸਰਵਰ ਲਈ ਐਡਰੈੱਸ ਅਤੇ ਪੋਰਟ ਦੇਣੇ ਪੈਣਗੇ।"
 
 #: source/all/crashrep.ulf#%SENDING_REPORT_HEADER%
 msgid  "Sending Error Report"
@@ -205,4 +205,4 @@ msgstr "%PRODUCTNAME% ਪਰੋਸੈੱਸ ID (PID) ਗਲਤੀ ਰਿਪੋ�
 
 #: source/all/crashrep.ulf#%MSG_PARAM_HELP_DESCRIPTION%
 msgid  "Shows this help text.\nDetailed information can be found in the Setup Guide."
-msgstr ""
+msgstr "ਮੱਦਦ ਟੈਕਸਟ ਵੇਖਾਓ।\nਵੇਰਵੇ ਸਮੇਤ ਜਾਣਕਾਰੀ ਸੈੱਟਅੱਪ ਗਾਈਡ ਵਿੱਚ ਲੱਭੀ ਜਾ ਸਕਦੀ ਹੈ।"

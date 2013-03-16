@@ -57,7 +57,7 @@ msgstr "ದತ್ತ ಆಕರ ಶೀರ್ಷಿಕೆ"
 
 #: source/abpilot/abspilot.src#RID_PAGE_SELECTABTYPE.FT_TYPE_HINTS.FixedText.Text
 msgid  "%PRODUCTNAME lets you access address data already present in your system. To do this, a %PRODUCTNAME data source will be created in which your address data is available in tabular form.\n\nThis wizard helps you create the data source."
-msgstr ""
+msgstr "ಈಗಾಗಲೆ ನಿಮ್ಮ ಗಣಕದಲ್ಲಿರುವ ವಿಳಾಸ ಪುಸ್ತಕವನ್ನು ನಿಲುಕಿಸಿಕೊಳ್ಳಲು %PRODUCTNAME ವು ನೆರವಾಗುತ್ತದೆ. ಹೀಗೆ ಮಾಡಲು,  ಕೋಷ್ಟಕದ ರೂಪದಲ್ಲಿರುವಂತಹ ನಿಮ್ಮ ವಿಳಾಸ ಪುಸ್ತಕವನ್ನು ಹೊಂದಿರುವ ಒಂದು %PRODUCTNAME ದತ್ತ ಆಕರವನ್ನು ರಚಿಸಲಾಗುವುದು.\n\nಈ ಗಾರುಡಿಯು ದತ್ತ ಆಕರವನ್ನು ರಚಿಸುವಲ್ಲಿ ನಿಮಗೆ ನೆರವಾಗುತ್ತದೆ."
 
 #: source/abpilot/abspilot.src#RID_PAGE_SELECTABTYPE.FL_TYPE.FixedLine.Text
 msgid  "Please select the type of your external address book:"
@@ -109,7 +109,7 @@ msgstr "ಇತರೆ ಹೊರಗಿನ ದತ್ತ ಆಕರ"
 
 #: source/abpilot/abspilot.src#RID_PAGE_ADMININVOKATION.FT_ADMINEXPLANATION.FixedText.Text
 msgid  "To set up the new data source, additional information is required.\n\nClick the following button to open another dialog in which you then enter the necessary information."
-msgstr ""
+msgstr "ಹೊಸ ದತ್ತ ಆಕರವನ್ನು ಸಿದ್ಧಪಡಿಸಲು, ಮತ್ತಷ್ಟು ಮಾಹಿತಿಯ ಅಗತ್ಯವಿದೆ. \n\nಮತ್ತೊಂದು ಸಂವಾದವನ್ನು ತೆರೆಯಲು ಕೆಳಗಿನ ಗುಂಡಿಯನ್ನು ಕ್ಲಿಕ್ಕಿಸಿ ಹಾಗು ಅಲ್ಲಿ ನೀವು ಅಗತ್ಯವಾದ ಮಾಹಿತಿಯನ್ನು ನಮೂದಿಸಬಹುದು."
 
 #: source/abpilot/abspilot.src#RID_PAGE_ADMININVOKATION.PB_INVOKE_ADMIN_DIALOG.PushButton.Text
 msgid  "Settings"
@@ -117,15 +117,15 @@ msgstr "ಸಿದ್ಧತೆಗಳು"
 
 #: source/abpilot/abspilot.src#RID_PAGE_ADMININVOKATION.FT_ERROR.FixedText.Text
 msgid  "The connection to the data source could not be established.\nBefore you proceed, please check the settings made, or (on the previous page) choose another address data source type."
-msgstr ""
+msgstr "ದತ್ತ ಆಕರಕ್ಕೆ ಸಂಪರ್ಕವನ್ನು ಪಡೆಯಲಾಗಲಿಲ್ಲ.\nಮುಂದುವರಿಯುವುದಕ್ಕೆ ಮೊದಲು, ದಯಮಾಡಿ ನೀವು ಮಾಡಿರುವ ಸಿದ್ಧತೆಗಳನ್ನು ಪರೀಕ್ಷಿಸಿ. ಅಥವಾ (ಹಿಂದಿನ ಪುಟದಲ್ಲಿ) ಬೇರೆ ದತ್ತ ಆಕರ ನಮೂನೆಯನ್ನು ಆಯ್ಕೆ ಮಾಡಿ."
 
 #: source/abpilot/abspilot.src#RID_PAGE_TABLESELECTION_AB.FL_TOOMUCHTABLES.FixedText.Text
 msgid  "The external data source you have chosen contains more than one address book.\nPlease select the one you mainly want to work with:"
-msgstr ""
+msgstr "ನೀವು ಆಯ್ಕೆ ಮಾಡಿರುವ ಹೊರಗಿನ ದತ್ತ ಆಕರವು ಒಂದಕ್ಕಿಂತ ಹೆಚ್ಚು ವಿಳಾಸ ಪುಸ್ತಕವನ್ನು ಹೊಂದಿದೆ.\nದಯಮಾಡಿ ನೀವು ಮುಖ್ಯವಾಗಿ ಕೆಲಸ ಮಾಡುವುದನ್ನು ಆಯ್ಕೆ ಮಾಡಿ:"
 
 #: source/abpilot/abspilot.src#RID_PAGE_FIELDMAPPING.FT_FIELDASSIGMENTEXPL.FixedText.Text
-msgid  "To incorporate the address data in your templates, %PRODUCTNAME has to know which fields contain which data.\n\nFor instance, you could have stored the e-mail addresses in a field named "email", or "E-mail" or "EM" - or something completely different.\n\nClick the button below to open another dialog where you can enter the settings for your data source."
-msgstr ""
+msgid  "To incorporate the address data in your templates, %PRODUCTNAME has to know which fields contain which data.\n\nFor instance, you could have stored the e-mail addresses in a field named \"email\", or \"E-mail\" or \"EM\" - or something completely different.\n\nClick the button below to open another dialog where you can enter the settings for your data source."
+msgstr "ವಿಳಾಸ ದತ್ತವನ್ನು ನಿಮ್ಮ ಸಿದ್ಧವಿನ್ಯಾಸ ಪುಟದಲ್ಲಿ ಅಳವಡಿಸಲು,ಯಾವ ವರ್ಗದಲ್ಲಿ ಯಾವ ದತ್ತಾಂಶವಿದೆ ಎನ್ನುವುದು %PRODUCTNAME ಗೆ ತಿಳಿಯಬೇಕು\n. \nಉದಾಹರಣೆಗೆ ನಿಮ್ಮ ವಿ-ಅಂಚೆ ವಿಳಾಸಗಳನ್ನು \"email\" ಅಥವಾ \"E-mail\" ಅಥವಾ \"EM\" ಅಥವಾ ಪೂರ್ತಿ ಬೇರೆಯಾಗಿ ಉಳಿಸಿರಬಹುದು. \n\nಮತ್ತೊಂದು ಸಂವಾದವನ್ನು ತೆರೆಯಲು ಕೆಳಗಿನ ಗುಂಡಿಯನ್ನು ಕ್ಲಿಕ್ಕಿಸಿ ಹಾಗು ಅಲ್ಲಿ ನಿಮ್ಮ ದತ್ತ ಆಕರಕ್ಕೆ ಸಿದ್ಧತೆಗಳನ್ನು ನಮೂದಿಸಬಹುದು."
 
 #: source/abpilot/abspilot.src#RID_PAGE_FIELDMAPPING.PB_INVOKE_FIELDS_DIALOG.PushButton.Text
 msgid  "Field Assignment"
@@ -133,7 +133,7 @@ msgstr "ವರ್ಗ ನಿಗದೀಕರಣ"
 
 #: source/abpilot/abspilot.src#RID_PAGE_FINAL.FT_FINISH_EXPL.FixedText.Text
 msgid  "That was all the information necessary to integrate your address data into %PRODUCTNAME.\n\nNow, just enter the name under which you want to register the data source in %PRODUCTNAME."
-msgstr ""
+msgstr "%PRODUCTNAME ಜೊತೆ ನಿಮ್ಮ ವಿಳಾಸ ದತ್ತವನ್ನು ಸೇರಿಸಲು ಆ ಮಾಹಿತಿ ಮಾತ್ರವೇ ಅವಶ್ಯಕವಾಗಿತ್ತು.\n\nಈಗ %PRODUCTNAME ನಲ್ಲಿ ನೀವು ದತ್ತ ಆಕರವನ್ನು ನೋಂದಯಿಸ ಬೇಕಾದ ಹೆಸರನ್ನು ನಮೂದಿಸಿ."
 
 #: source/abpilot/abspilot.src#RID_PAGE_FINAL.FT_LOCATION.FixedText.Text
 msgid  "Location"
@@ -153,7 +153,7 @@ msgstr "ವಿಳಾಸ ಪುಸ್ತಕದ ಹೆಸರು"
 
 #: source/abpilot/abspilot.src#RID_PAGE_FINAL.FT_DUPLICATENAME.FixedText.Text
 msgid  "Another data source already has this name. As data sources have to have globally unique names, you need to choose another one."
-msgstr ""
+msgstr "ಮತ್ತೊಂದು ದತ್ತ ಆಕರವು ಈಗಾಗಲೇ ಈ ಹೆಸರನ್ನು ಹೊಂದಿದೆ. ದತ್ತ ಆಕರಗಳು ಸಮಗ್ರವಾಗಿ ವಿಶಿಷ್ಟ ಹೆಸರನ್ನು ಹೊಂದಿರಬೇಕು. ಆದ್ದರಿಂದ ನೀವು ಬೇರೆ ಹೆಸರನ್ನು ಆಯ್ಕೆ ಮಾಡಬೇಕಾಗುತ್ತದೆ."
 
 #: source/abpilot/abspilot.src#RID_ERR_NEEDTYPESELECTION.ErrorBox.Message
 msgid  "Please select a type of address book."
@@ -161,7 +161,7 @@ msgstr "ದಯಮಾಡಿ ವಿಳಾಸ ಪುಸ್ತಕದ ಬಗೆಯನ
 
 #: source/abpilot/abspilot.src#RID_QRY_NOTABLES.QueryBox.Message
 msgid  "The data source does not contain any tables.\nDo you want to set it up as an address data source, anyway?"
-msgstr ""
+msgstr "ದತ್ತಆಕರವು ಯಾವ ಕೋಷ್ಟಕವನ್ನು ಹೊಂದಿಲ್ಲ. ಹಾಗಿದ್ದರೂ ಅದನ್ನು ವಿಳಾಸ \nದತ್ತ ಆಕರದಂತೆ ಸಿದ್ಧ ಪಡಿಸ ಬೇಕೇ?"
 
 #: source/abpilot/abspilot.src#RID_STR_DEFAULT_NAME.String.Text
 msgid  "Addresses"
@@ -184,8 +184,8 @@ msgid  "Address Data - Field Assignment"
 msgstr "ವಿಳಾಸ ದತ್ತ - ವರ್ಗ ನಿಗದೀಕರಣ"
 
 #: source/abpilot/abspilot.src#RID_STR_NOFIELDSASSIGNED.String.Text
-msgid  "There are no fields assigned at this time.\nYou can either assign fields now or do so later by first choosing:\n"File - Template - Address Book Source...""
-msgstr ""
+msgid  "There are no fields assigned at this time.\nYou can either assign fields now or do so later by first choosing:\n\"File - Template - Address Book Source...\""
+msgstr "ಪ್ರಸಕ್ತ ಯಾವುದೆ ವರ್ಗಗಳನ್ನು ನಿಯೋಜಿಸಲಾಗಿಲ್ಲ.\nನೀವು ಈಗಲೆ ವರ್ಗಗಳನ್ನು ನಿಯೋಜಿಸಬಹುದು ಅಥವ ಈ ಕೆಳಗಿನದನ್ನು ಅನುಸರಿಸಿಕೊಂಡು ಆಮೇಲೆಯೂ ಸಹ ನಿಯೋಜಿಸಬಹುದು:\n\"ಕಡತ - ನಮೂನೆ - ವಿಳಾಸ ಪುಸ್ತಕ ಆಕರ...\""
 
 #: source/bibliography/toolbar.src#RID_BIB_TOOLBAR.TBC_FT_SOURCE.ToolBoxItem.Text
 msgid  "Table"
@@ -493,7 +493,7 @@ msgstr "ನಿಯಂತ್ರಣ"
 
 #: source/dbpilots/listcombopages.src#RID_PAGE_LCW_CONTENTSELECTION_TABLE.FT_SELECTTABLE_LABEL.FixedText.Text
 msgid  "On the right side, you see all the tables from the data source of the form.\n\n\nChoose the table from which the data should be used as basis for the list content:"
-msgstr ""
+msgstr "ಬಲಗಡೆ, ಆ ನಮೂನೆಯ ದತ್ತ ಆಕರದ ಎಲ್ಲ ಕೋಷ್ಟಕಗಳನ್ನು ಕಾಣುತ್ತದೆ.\n\n\nಪಟ್ಟಿಯ ವಿಷಯಕ್ಕೆ ಆಧಾರವನ್ನು ಬಳಸಬೇಕಾದ ಕೋಷ್ಟಕವನ್ನು ಆಯ್ಕೆ ಮಾಡಿ:"
 
 #: source/dbpilots/listcombopages.src#RID_PAGE_LCW_CONTENTSELECTION_FIELD.TabPage.Text
 msgid  "Field Selection"
@@ -513,7 +513,7 @@ msgstr "ಆಯ್ಕೆ ಮಾಡಿದ ವರ್ಗಗಳ ವಿವರವನ್
 
 #: source/dbpilots/listcombopages.src#RID_PAGE_LCW_CONTENTSELECTION_FIELD.STR_FIELDINFO_LISTBOX.String.Text
 msgid  "The contents of the selected field will be shown in the list box if the linked fields are identical."
-msgstr ""
+msgstr "ಸಂಪರ್ಕ ಪಡೆದ ವರ್ಗಗಳು ಸಮಾನರೂಪ ಹೊಂದಿದ್ದರೆ ಆಯ್ಕೆ ಮಾಡಿದ ವರ್ಗಗಳ ವಿವರವನ್ನು ಪಟ್ಟಿ ಚೌಕದಲ್ಲಿ ತೋರಿಸಲಾಗುತ್ತದೆ."
 
 #: source/dbpilots/listcombopages.src#RID_PAGE_LCW_FIELDLINK.TabPage.Text
 msgid  "Field Link"
@@ -521,7 +521,7 @@ msgstr "ವರ್ಗ ಸಂಪರ್ಕ"
 
 #: source/dbpilots/listcombopages.src#RID_PAGE_LCW_FIELDLINK.FT_FIELDLINK_DESC.FixedText.Text
 msgid  "This is where you select fields with matching contents so that the value from the display field will be shown."
-msgstr ""
+msgstr "ಈ ಜಾಗವೇ ನೀವು ಹೋಲಿಕೆಯುಳ್ಳ ವಿಷಯಗಳ ವರ್ಗಗಳನ್ನು ಆಯ್ಕೆಮಾಡ ಬಹುದಾದ ಜಾಗ ಮತ್ತು ಅದರ ಮೂಲಕ ಪ್ರದರ್ಶಕ ವರ್ಗದ ಮೌಲ್ಯವನ್ನು ತೋರಿಸಬಹುದಾಗಿದೆ."
 
 #: source/dbpilots/listcombopages.src#RID_PAGE_LCW_FIELDLINK.FT_VALUELISTFIELD.FixedText.Text
 msgid  "Field from the ~Value Table"
@@ -533,7 +533,7 @@ msgstr "ಪಟ್ಟಿ ಕೋಷ್ಟಕದಿಂದ ವರ್ಗ(~L)"
 
 #: source/dbpilots/listcombopages.src#RID_STR_COMBOWIZ_DBFIELD.String.Text
 msgid  "You can either save the value of the combo box in a database field or use it for display purposes."
-msgstr ""
+msgstr "ಸಂಯೋಜನಾ ಚೌಕದ  ಮೌಲ್ಯವನ್ನು ದತ್ತಸಂಚಯದಲ್ಲಿ ಉಳಿಸಬಹುದು ಅಥವಾ ಪ್ರದರ್ಶನ ಕಾರ್ಯಗಳಿಗೆ ಬಳಸಬಹುದು."
 
 #: source/dbpilots/gridpages.src#RID_PAGE_GW_FIELDSELECTION.TabPage.Text
 msgid  "Field Selection"
@@ -589,7 +589,7 @@ msgstr "ದತ್ತಾಂಶ"
 
 #: source/dbpilots/commonpagesdbp.src#RID_PAGE_TABLESELECTION.FT_EXPLANATION.FixedText.Text
 msgid  "Currently, the form the control belongs to is not (or not completely) bound to a data source.\n\nPlease choose a data source and a table.\n\n\nPlease note that the settings made on this page will take effect immediately upon leaving the page."
-msgstr ""
+msgstr "ಪ್ರಸ್ತುತ, ನಿಯಂತ್ರಣವು ಇರುವ ನಮೂನೆಯು (ಅಥವಾ ಪೂರ್ಣವಾಗಿ) ದತ್ತ ಆಕರಕ್ಕೆ ಬಂಧಿತವಾಗಿಲ್ಲ.\n\nದಯವಿಟ್ಟು ಒಂದು ದತ್ತ ಆಕರವನ್ನು ಮತ್ತು ಕೋಷ್ಟಕವನ್ನು ಆಯ್ಕೆ ಮಾಡಿ.\n\n\nಈ ಪುಟದಲ್ಲಿ ಮಾಡುವ ಸಿದ್ಧತೆಗಳು, ಪುಟದಿಂದ ಹೊರಬಂದ ಕೂಡಲೇ ಜಾರಿಗೆ ಬರುತ್ತವೆ ಎಂಬುದನ್ನು ದಯಮಾಡಿ ಗಮನಿಸಿ."
 
 #: source/dbpilots/commonpagesdbp.src#RID_PAGE_TABLESELECTION.FT_DATASOURCE.FixedText.Text
 msgid  "~Data source:"
@@ -657,7 +657,7 @@ msgstr "ಆಯ್ಕೆ ವರ್ಗಗಳಿಗೆ ಯಾವ ಹೆಸರುಗ
 
 #: source/dbpilots/groupboxpages.src#RID_PAGE_GROUPRADIOSELECTION.FT_RADIOBUTTONS.FixedText.Text
 msgid  "~Option fields"
-msgstr "ಐಚ್ಛಿಕ ವರ್ಗಗಳು(~O)"
+msgstr "ಆಯ್ಕೆಯ ವರ್ಗಗಳು(~O)"
 
 #: source/dbpilots/groupboxpages.src#RID_PAGE_DEFAULTFIELDSELECTION.TabPage.Text
 msgid  "Default Field Selection"
@@ -681,7 +681,7 @@ msgstr "ವರ್ಗದ ಮೌಲ್ಯಗಳು"
 
 #: source/dbpilots/groupboxpages.src#RID_PAGE_OPTIONVALUES.FT_OPTIONVALUES_EXPL.FixedText.Text
 msgid  "When you select an option, the option group is given a specific value."
-msgstr ""
+msgstr "ಒಂದು ಆಯ್ಕೆಯನ್ನು ಆರಿಸಿದರೆ, ಆಯ್ಕೆ ಮಾಡಿದ ಸಮೂಹಕ್ಕೆ ನಿರ್ದಿಷ್ಟ ಮೌಲ್ಯವನ್ನು ಕೊಡಲಾಗುತ್ತದೆ."
 
 #: source/dbpilots/groupboxpages.src#RID_PAGE_OPTIONVALUES.FT_OPTIONVALUES.FixedText.Text
 msgid  "Which ~value do you want to assign to each option?"
@@ -705,7 +705,7 @@ msgstr "ಆಯ್ಕೆಯ ಗುಂಪನ್ನು ತಯಾರಿಸಲು ಈ
 
 #: source/dbpilots/groupboxpages.src#RID_STR_GROUPWIZ_DBFIELD.String.Text
 msgid  "You can either save the value of the option group in a database field or use it for a later action."
-msgstr ""
+msgstr "ಐಚ್ಛಿಕ ಸಮೂಹದ ಮೌಲ್ಯವನ್ನು ಒಂದು ದತ್ತಸಂಚಯ ವರ್ಗದಲ್ಲಿ ಉಳಿಸಬಹುದು ಅಥವಾ ಮುಂದಿನ ಕಾರ್ಯಗಳಲ್ಲಿ ಬಳಸಬಹುದು."
 
 #: source/preload/preload.src#RID_DLG_OEMWIZARD.PB_PREV.PushButton.Text
 msgid  "<< Back"
@@ -737,7 +737,7 @@ msgstr "ಸ್ವಾಗತ"
 
 #: source/preload/preload.src#RID_TP_WELCOME.FT_INFO.FixedText.Text
 msgid  "Welcome to %PRODUCTNAME %PRODUCTVERSION OEM\n\nTo start the %PRODUCTNAME %PRODUCTVERSION OEM, please enter your personal data in the dialog following the license text. Important information is contained in the readme files which are located in the %PRODUCTNAME product directory. Please read these files carefully. You can also find detailed information at the Oracle website \n\nhttp://www.oracle.com/us/products/applications/open-office."
-msgstr ""
+msgstr "%PRODUCTNAME %PRODUCTVERSION OEM ಗೆ ಸ್ವಾಗತ\n\n%PRODUCTNAME %PRODUCTVERSION OEM ಅನ್ನು ಆರಂಭಿಸಲು, ದಯವಿಟ್ಟು ನಿಮ್ಮ ವೈಯಕ್ತಿಕ ಮಾಹಿತಿಯನ್ನು ಪರವಾನಗಿ ಪಠ್ಯದ ನಂತರ ಕಾಣಿಸಿಕೊಳ್ಳುವ ಸಂವಾದದಲ್ಲಿ ನಮೂದಿಸಿ. ಪ್ರಮುಕವಾದ ಮಾಹಿತಿಯನ್ನು %PRODUCTNAME ಉತ್ಪನ್ನ ಕೋಶದಲ್ಲಿನ ರೀಡ್‌ಮಿ ಕಡತದಲ್ಲಿ ಇರುತ್ತದೆ . ದಯವಿಟ್ಟು ಈ ಕಡತಗಳನ್ನು ಎಚ್ಚರಿಕೆಯಿಂದ ಓದಿ. Oracle ಜಾಲತಾಣದ ಬಗೆಗಿನ ಹೆಚ್ಚಿನ ಮಾಹಿತಿಯನ್ನೂ ಸಹ ನೀವು \n\nhttp://www.oracle.com/us/products/applications/open-office ನಲ್ಲಿ ನೋಡಬಹುದು."
 
 #: source/preload/preload.src#RID_TP_LICENSE.TabPage.Text
 msgid  "License Agreement"
@@ -753,7 +753,7 @@ msgstr "೧."
 
 #: source/preload/preload.src#RID_TP_LICENSE.FT_INFO2.FixedText.Text
 msgid  "View the complete License Agreement. Please use the scroll bar or the '%PAGEDOWN' button in this dialog to view the entire license text."
-msgstr ""
+msgstr "ಸಂಪೂರ್ಣ ಪರವಾನಗಿ ಒಪ್ಪಂದವನ್ನು ನೋಡಿ. ಈ ಸಂವಾದದಲ್ಲಿ ಸಂಪೂರ್ಣ ಪರವಾನಗಿ ಪಠ್ಯವನ್ನು ನೋಡಲು ದಯವಿಟ್ಟು ಚಲನಪಟ್ಟಿಕೆ ಅಥವ '%PAGEDOWN' ಗುಂಡಿಯನ್ನು ಬಳಸಿ."
 
 #: source/preload/preload.src#RID_TP_LICENSE.PB_PAGEDOWN.PushButton.Text
 msgid  "Page Down"
@@ -801,7 +801,7 @@ msgstr "ಸ್ವಯಂಚಾಲಿತ ವಿಂಗಡಣೆ"
 
 #: source/propctrlr/selectlabeldialog.src#RID_DLG_SELECTLABELCONTROL.1.FixedText.Text
 msgid  "These are control fields that can be used as label fields for the $control_class$ $control_name$."
-msgstr ""
+msgstr "ಇವು $control_class$ $control_name$ ಗಳಿಗೆ ಲೇಬಲ್ ವರ್ಗಗಳಂತೆ ಬಳಸಬಹುದಾದ ನಿಯಂತ್ರಣ ವರ್ಗಗಳು."
 
 #: source/propctrlr/selectlabeldialog.src#RID_DLG_SELECTLABELCONTROL.1.CheckBox.Text
 msgid  "~No assignment"
@@ -817,7 +817,7 @@ msgstr "ನಮೂನೆಗಳು"
 
 #: source/propctrlr/pcrmiscres.src#RID_STR_CONFIRM_DELETE_DATA_TYPE.String.Text
 msgid  "Do you want to delete the data type '#type#' from the model?\nPlease note that this will affect all controls which are bound to this data type."
-msgstr ""
+msgstr "ಮಾದರಿಯಿಂದ ನೀವು ದತ್ತಾಂಶದ ಬಗೆ '#type#' ಅನ್ನು ಅಳಿಸಿಹಾಕಲು ಬಯಸುತ್ತೀರೆ?\nಈ ದತ್ತಾಂಶ ಬಗೆಗೆ ಬದ್ಧವಾಗಿರುವ ಎಲ್ಲಾ ನಿಯಂತ್ರಣಗಳ ಮೇಲೆ ಇದು ಪರಿಣಾಮ ಬೀರುತ್ತದೆ ಎಂಬುದನ್ನು ದಯವಿಟ್ಟು ನೆನಪಿನಲ್ಲಿಡಿ."
 
 #: source/propctrlr/pcrmiscres.src#RID_STR_PROPTITLE_PUSHBUTTON.String.Text
 msgid  "Button"
@@ -905,7 +905,7 @@ msgstr "ಜೋಡಣಾ ವರ್ಗಗಳು"
 
 #: source/propctrlr/formlinkdialog.src#RID_DLG_FORMLINKS.FT_EXPLANATION.FixedText.Text
 msgid  "Sub forms can be used to display detailed data about the current record of the master form. To do this, you can specify which columns in the sub form match which columns in the master form."
-msgstr ""
+msgstr "ಪ್ರಮುಖ ಫಾರ್ಮಿನ ಪ್ರಸಕ್ತ ದಾಖಲೆಯ ಬಗೆಗಿನ ವಿವರವಾದ ಮಾಹಿತಿಯನ್ನು ತೋರಿಸಲು ಉಪ ಫಾರ್ಮುಗಳನ್ನು ಬಳಸಲಾಗುತ್ತದೆ. ಹೀಗೆ ಮಾಡಲು, ಉಪ ಫಾರ್ಮಿನಲ್ಲಿ ಯಾವ ಲಂಬಸಾಲುಗಳನ್ನು ಪ್ರಮುಖ ಫಾರ್ಮಿನ ಯಾವ ಲಂಬಸಾಲಿಗೆ ತಾಳೆಯಾಗಬೇಕು ಎಂದು ನೀವು ಸೂಚಿಸಬಹುದು."
 
 #: source/propctrlr/formlinkdialog.src#RID_DLG_FORMLINKS.PB_SUGGEST.PushButton.Text
 msgid  "Suggest"
@@ -1864,8 +1864,8 @@ msgid  "Help"
 msgstr "ಸಹಾಯ"
 
 #: source/propctrlr/formres.src#RID_STR_UNABLETOCONNECT.String.Text
-msgid  "The connection to the data source "$name$" could not be established."
-msgstr ""
+msgid  "The connection to the data source \"$name$\" could not be established."
+msgstr "ದತ್ತ ಆಕರ \"$name$\"ಕ್ಕೆ ಸಂಪರ್ಕವನ್ನು ಸಾಧಿಸಲಾಗಲಿಲ್ಲ."
 
 #: source/propctrlr/formres.src#RID_STR_TEXT.String.Text
 msgid  "Text"
@@ -2297,11 +2297,11 @@ msgstr "ಹೊಸ ದತ್ತಾಂಶ ಬಗೆಗಾಗಿ ಒಂದು ಹ�
 
 #: source/scanner/sanedlg.src#RID_SANE_DIALOG.RID_DEVICEINFO_BTN.PushButton.Text
 msgid  "About\n Dev~ice"
-msgstr ""
+msgstr "ಸಾಧನದ\n ಬಗ್ಗೆ(~i)"
 
 #: source/scanner/sanedlg.src#RID_SANE_DIALOG.RID_PREVIEW_BTN.PushButton.Text
 msgid  "Create\nPreview"
-msgstr ""
+msgstr "ಮುನ್ನೋಟವನ್ನು\nತಯಾರಿಸು"
 
 #: source/scanner/sanedlg.src#RID_SANE_DIALOG.RID_PREVIEW_BOX.FixedLine.Text
 msgid  "Preview"
@@ -2357,7 +2357,7 @@ msgstr "ಪರಿಶೋಧಕ"
 
 #: source/scanner/sanedlg.src#RID_SANE_DEVICEINFO_TXT.String.Text
 msgid  "Device: %s\nVendor: %s\nModel: %s\nType: %s"
-msgstr ""
+msgstr "ಸಾಧನ: %s\nಮಾರಾಟಗಾರ: %s\nಮಾದರಿ: %s\nಬಗೆ %s"
 
 #: source/scanner/sanedlg.src#RID_SANE_SCANERROR_TXT.String.Text
 msgid  "An error occurred while scanning."
@@ -2365,11 +2365,11 @@ msgstr "ಪರಿಶೋಧನೆ ಮಾಡುವಾಗ ದೋಷ ಸಂಭವಿ
 
 #: source/scanner/sanedlg.src#RID_SANE_NORESOLUTIONOPTION_TXT.String.Text
 msgid  "The device does not offer a preview option. Therefore, a normal scan will be used as a preview instead. This may take a considerable amount of time."
-msgstr ""
+msgstr "ಈ ಸಾಧನವು ಮುನ್ನೋಟದ ಆಯ್ಕೆಯನ್ನು ಒದಗಿಸುವುದಿಲ್ಲ. ಆದ್ದರಿಂದ, ಮುನ್ನೋಟಕ್ಕೆ ಬದಲಾಗಿ ಸಾಮಾನ್ಯ ಪರಿಶೋಧನೆಯನ್ನು ಬಳಸಲಾಗುತ್ತದೆ. ಇದು ಸಾಕಷ್ಟು ಸಮಯವನ್ನು ತೆಗೆದುಕೊಳ್ಳಬಹುದು."
 
 #: source/scanner/sanedlg.src#RID_SANE_NOSANELIB_TXT.String.Text
 msgid  "The SANE interface could not be initialized. Scanning is not possible."
-msgstr ""
+msgstr "SANE  ಸಂಪರ್ಕಸಾಧನವನ್ನು ಪ್ರಾರಂಭಿಸಲಾಗಲಿಲ್ಲ. ಪರಿಶೋಧನೆಯು (Scanning) ಸಾಧ್ಯವಿಲ್ಲ."
 
 #: source/scanner/grid.src#GRID_DIALOG.GRID_DIALOG_RESET_BTN.PushButton.Text
 msgid  "Set"
@@ -2405,7 +2405,7 @@ msgstr "%PRODUCTNAME %PRODUCTVERSION ವು ಅಪ್‌ಡೇಟ್‌ ಆಗ�
 
 #: source/update/check/updatehdl.src#RID_UPDATE_STR_UPD_FOUND.String.Text
 msgid  "%PRODUCTNAME %NEXTVERSION is available.\n\nThe installed version is %PRODUCTNAME %PRODUCTVERSION.\n\nNote: Before downloading  an update, please ensure that you have sufficient access rights to install it.\nA password, usually the administrator's or root password, may be required."
-msgstr ""
+msgstr "%PRODUCTNAME %NEXTVERSION ಲಭ್ಯವಿದೆ.\n\nಅನುಸ್ಥಾಪಿತ ಆವೃತ್ತಿಯು %PRODUCTNAME %PRODUCTVERSION ಆಗಿದೆ.\n\nಸೂಚನೆ: ಒಂದು ಅಪ್‌ಡೇಟ್‌ ಅನ್ನು ಡೌನ್‌ಲೋಡ್‌ ಮಾಡಿಕೊಳ್ಳುವ ಮೊದಲು ನಿಮಗೆ ಅದನ್ನು ಅನುಸ್ಥಾಪಿಸಲು ಸಾಕಷ್ಟು ನಿಲುಕಣಾ ಹಕ್ಕುಗಳು ಇವೆ ಎಂದು ಖಚಿತಪಡಿಸಿಕೊಳ್ಳಿ.\nಒಂದು ಗುಪ್ತಪದ, ಸಾಮಾನ್ಯವಾಗಿ ವ್ಯವಸ್ಥಾಪಕ ಅಥವ ನಿರ್ವಾಹಕ ಗುಪ್ತಪದದ ಅಗತ್ಯವಿರುತ್ತದೆ."
 
 #: source/update/check/updatehdl.src#RID_UPDATE_STR_DLG_TITLE.String.Text
 msgid  "Check for Updates"
@@ -2421,7 +2421,7 @@ msgstr "%PRODUCTNAME %NEXTVERSION ನ ಡೌನ್‌ಲೋಡ್‌ ಇಲ್�
 
 #: source/update/check/updatehdl.src#RID_UPDATE_STR_DOWNLOAD_WARN.String.Text
 msgid  "The download location is: %DOWNLOAD_PATH.\n\nUnder Tools – Options... - %PRODUCTNAME – Online Update you can change the download location."
-msgstr ""
+msgstr "ಡೌನ್‌ಲೋಡ್‌ ಸ್ಥಳ: %DOWNLOAD_PATH.\n\nಉಪಕರಣಗಳು – ಆಯ್ಕೆಗಳು... - %PRODUCTNAME – ಆನ್‌ಲೈನ್‌ ಅಪ್‌ಡೇಟ್‌ ಅಡಿಯಲ್ಲಿ ನೀವು ಡೌನ್‌ಲೋಡ್‌ ಸ್ಥಳವನ್ನು ಬದಲಾಯಿಸಬಹುದು."
 
 #: source/update/check/updatehdl.src#RID_UPDATE_STR_DOWNLOAD_DESCR.String.Text
 msgid  "%FILE_NAME has been downloaded to %DOWNLOAD_PATH."
@@ -2429,7 +2429,7 @@ msgstr "%FILE_NAME ಅನ್ನು %DOWNLOAD_PATH ಗೆ ಡೌನ್‌ಲೋ�
 
 #: source/update/check/updatehdl.src#RID_UPDATE_STR_DOWNLOAD_UNAVAIL.String.Text
 msgid  "The automatic download of the update is currently not available.\n\nClick 'Download...' to download %PRODUCTNAME %NEXTVERSION manually from the web site."
-msgstr ""
+msgstr "ಪ್ರಸಕ್ತ ಅಪ್‌ಡೇಟ್‌ನ ಸ್ವಯಂಚಾಲಿತ ಡೌನ್‌ಲೋಡ್‌ ಲಭ್ಯವಿಲ್ಲ.\n\n%PRODUCTNAME %NEXTVERSION ಅನ್ನು ಜಾಲ ತಾಣದಿಂದ ಕೈಯಾರೆ ಡೌನ್‌ಲೋಡ್‌ ಮಾಡಲು 'Download...' ಅನ್ನು ಕ್ಲಿಕ್‌ ಮಾಡಿ."
 
 #: source/update/check/updatehdl.src#RID_UPDATE_STR_DOWNLOADING.String.Text
 msgid  "Downloading %PRODUCTNAME %NEXTVERSION..."
@@ -2437,7 +2437,7 @@ msgstr "%PRODUCTNAME %NEXTVERSION ಅನ್ನು ಡೌನ್‌ಲೋಡ್‌
 
 #: source/update/check/updatehdl.src#RID_UPDATE_STR_READY_INSTALL.String.Text
 msgid  "Download of %PRODUCTNAME %NEXTVERSION completed. Ready for installation."
-msgstr ""
+msgstr "%PRODUCTNAME %NEXTVERSION ಡೌನ್‌ಲೋಡ್‌ ಪೂರ್ಣಗೊಂಡಿದೆ. ಅನುಸ್ಥಾಪನೆಗೆ ಸಿದ್ಧಗೊಂಡಿದೆ."
 
 #: source/update/check/updatehdl.src#RID_UPDATE_STR_CANCEL_TITLE.String.Text
 msgid  "%PRODUCTNAME %PRODUCTVERSION"
@@ -2449,7 +2449,7 @@ msgstr "ನೀವು ನಿಜವಾಗಿಯೂ ಡೌನ್‌ಲೋಡ್‌ 
 
 #: source/update/check/updatehdl.src#RID_UPDATE_STR_BEGIN_INSTALL.String.Text
 msgid  "To install the update, %PRODUCTNAME %PRODUCTVERSION needs to be closed. Do you want to install the update now?"
-msgstr ""
+msgstr "ಅಪ್‌ಡೇಟ್‌ ಅನ್ನು ಅನುಸ್ಥಾಪಿಸಲು, %PRODUCTNAME %PRODUCTVERSION ಅನ್ನು ಮುಚ್ಚಬೇಕಾಗುತ್ತದೆ. ನೀವು ಈಗಲೆ ಅಪ್‌ಡೇಟನ್ನು ಅನುಸ್ಥಾಪಿಸಲು ಬಯಸುತ್ತೀರೆ?"
 
 #: source/update/check/updatehdl.src#RID_UPDATE_STR_INSTALL_NOW.String.Text
 msgid  "Install ~now"
@@ -2461,15 +2461,15 @@ msgstr "ಆಮೇಲೆ ಅನುಸ್ಥಾಪಿಸು(~l)"
 
 #: source/update/check/updatehdl.src#RID_UPDATE_STR_INSTALL_ERROR.String.Text
 msgid  "Could not run the installer application, please run %FILE_NAME in %DOWNLOAD_PATH manually."
-msgstr ""
+msgstr "ಅನುಸ್ಥಾಪಕ ಅನ್ವಯವನ್ನು ಚಲಾಯಿಸಲು ಸಾಧ್ಯವಾಗಿಲ್ಲ, ದಯವಿಟ್ಟು %FILE_NAME ಅನ್ನು %DOWNLOAD_PATH ನಲ್ಲಿ ಕೈಯಾರೆ ಚಲಾಯಿಸಿ."
 
 #: source/update/check/updatehdl.src#RID_UPDATE_STR_OVERWRITE_WARNING.String.Text
 msgid  "A file with that name already exists! Do you want to overwrite the existing file?"
-msgstr ""
+msgstr "ಈ ಹೆಸರಿನ ಒಂದು ಕಡತವು ಈಗಾಗಲೆ ಲಭ್ಯವಿದೆ! ಈಗಿರುವ ಕಡತದ ಮೇಲೆಯೆ ನೀವು ತಿದ್ದಿ ಬರೆಯಲು ಬಯಸುತ್ತೀರೆ?"
 
 #: source/update/check/updatehdl.src#RID_UPDATE_STR_RELOAD_WARNING.String.Text
 msgid  "A file with the name '%FILENAME' already exists in '%DOWNLOAD_PATH'! Do you want to continue with the download or delete and reload the file?"
-msgstr ""
+msgstr "'%FILENAME' ಎಂಬ ಹೆಸರಿನ ಒಂದು ಕಡತವು ಈಗಾಗಲೆ '%DOWNLOAD_PATH' ನಲ್ಲಿದೆ! ನೀವು ಡೌನ್‌ಲೋಡ್‌ನೊಂದಿಗೆ ಮುಂದುವರೆಯಲು ಬಯಸುತ್ತೀರೆ ಅಥವ ಕಡತವನ್ನು ಅಳಿಸಿಹಾಕಿ ನಂತರ ಮರಳಿ ಲೋಡ್ ಮಾಡಲು ಬಯಸುತ್ತೀರೆ?"
 
 #: source/update/check/updatehdl.src#RID_UPDATE_STR_RELOAD_RELOAD.String.Text
 msgid  "Reload File"
@@ -2516,24 +2516,20 @@ msgid  "Cancel"
 msgstr "ವಜಾಮಾಡು"
 
 #: source/update/check/updatehdl.src#RID_UPDATE_BUBBLE_T_UPDATE_AVAIL.String.Text
-#, fuzzy
 msgid  "%PRODUCTNAME update available"
-msgstr "%PRODUCTNAME ಅಪ್‌ಡೇಟ್‌ ಲಭ್ಯವಿದೆ"
+msgstr "%PRODUCTNAME ನ ಅಪ್‌ಡೇಟ್‌ ಲಭ್ಯವಿದೆ"
 
 #: source/update/check/updatehdl.src#RID_UPDATE_BUBBLE_UPDATE_AVAIL.String.Text
-#, fuzzy
 msgid  "Click here to start the download."
 msgstr "ಡೌನ್‌ಲೋಡ್‌ ಅನ್ನು ಆರಂಭಿಸಲು ಇಲ್ಲಿ ಕ್ಲಿಕ್‌ ಮಾಡಿ."
 
 #: source/update/check/updatehdl.src#RID_UPDATE_BUBBLE_T_UPDATE_NO_DOWN.String.Text
-#, fuzzy
 msgid  "%PRODUCTNAME update available"
-msgstr "%PRODUCTNAME ಅಪ್‌ಡೇಟ್‌ ಲಭ್ಯವಿದೆ"
+msgstr "%PRODUCTNAME ನ ಅಪ್‌ಡೇಟ್‌ ಲಭ್ಯವಿದೆ"
 
 #: source/update/check/updatehdl.src#RID_UPDATE_BUBBLE_UPDATE_NO_DOWN.String.Text
-#, fuzzy
 msgid  "Click here for more information."
-msgstr "ಹೆಚ್ಚಿನ ಮಾಹಿತಿಗಾಗಿ ಇಲ್ಲಿ ಕ್ಲಿಕ್ಕಿಸಿ."
+msgstr "ಹೆಚ್ಚಿನ ಮಾಹಿತಿಗಾಗಿ ಇಲ್ಲಿ ಕ್ಲಿಕ್ಕಿಸಿ"
 
 #: source/update/check/updatehdl.src#RID_UPDATE_BUBBLE_T_AUTO_START.String.Text
 #, fuzzy

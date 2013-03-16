@@ -97,7 +97,7 @@ msgstr "দোকুমেন্ত হান্না হাংদুনা ল
 
 #: source/appl/app.src#MSG_ERR_NO_WEBBROWSER_FOUND.ErrorBox.Message
 msgid  "%PRODUCTNAME could not find a web browser on your system. Please check your Desktop Preferences or install a web browser (for example, Mozilla) in the default  location requested during the browser installation."
-msgstr ""
+msgstr "অদোমগী সিস্তেমদা %PRODUCTNAME না ৱেব ব্ৰাউজর অমা ফংবা ঙমদ্রে. চানবিদুনা অদোমগী দেস্কতোপ প্রিফরেন্সশিং য়েংশিনবিয়ু নত্রগা ব্ৰাউজর ইনস্তোলেসনগী মতমদা দিফোল্ত লৈফমদা হায়জবদা ৱেব ব্ৰাউজর অমা ইনস্তোল তৌবিয়ু (খুদম ওইনা, মোজিল্লা). "
 
 #: source/appl/app.src#GID_INTERN.String.Text
 msgid  "Internal"
@@ -205,7 +205,7 @@ msgstr "কন্ত্রোলশিং"
 
 #: source/appl/app.src#MSG_CANT_QUIT.InfoBox.Message
 msgid  "The application cannot be terminated at the moment.\nPlease wait until all print jobs and/or\nOLE actions have finished and close all dialogs."
-msgstr ""
+msgstr "শিজিন্নরিবদু মিকুপশিদা লৌথোকপা ঙমদ্রে.\nচানবিদুনা নমথোকপগী থবক পুম্নমক অমসুং/নত্রগা\nOLE থবকশিং লোয়শিনবফাও অমসুং দাইলোগশিং পুম্নমক লোয়শিনবা ঙাইবিয়ু."
 
 #: source/appl/app.src#STR_ISMODIFIED.String.Text
 msgid  "Do you want to save the changes to %1?"
@@ -237,7 +237,7 @@ msgstr "মথৌগী বার"
 
 #: source/appl/app.src#RID_SPECIALCONFIG_ERROR.String.Text
 msgid  "An error has occurred in the special configuration.\nPlease contact your administrator."
-msgstr ""
+msgstr "অখন্নবা কনফিগ্যুরেসন্দা অশোয়বা অমা থোক্লে.\nচানবিদুনা অদোমগী ৱায়েন থৌদারোয়গা তান্নবিয়ু."
 
 #: source/appl/app.src#STR_QUICKSTART_EXIT.String.Text
 msgid  "Exit Quickstarter"
@@ -288,12 +288,12 @@ msgid  "DDE link to % for % area % are not available."
 msgstr "% গীদমক % মফম % শিংদা DDE মরী ফংদে."
 
 #: source/appl/app.src#RID_SECURITY_WARNING_HYPERLINK.WarningBox.Message
-msgid  "This hyperlink is going to open "%s". Do you want to proceed?"
-msgstr ""
+msgid  "This hyperlink is going to open \"%s\". Do you want to proceed?"
+msgstr "মসিগী হাইপরলিংকনা \"%s\" হাংগনি. অদোম্না মখা তানা চংশিনবা পাম্বিবরা?"
 
 #: source/appl/app.src#RID_SECURITY_WARNING_NO_HYPERLINKS.WarningBox.Message
 msgid  "For security reasons, the hyperlink cannot be executed.\nThe stated address will not be opened."
-msgstr ""
+msgstr "সেক্যুরিতিগী মরম ওইদুনা, হাপরলিংক পাংথোকপা ঙমদে.\n পীরিবা লৈফম অসি হাংদোক্লোইদবনি."
 
 #: source/appl/app.src#RID_SECURITY_WARNING_TITLE.String.Text
 msgid  "Security Warning"
@@ -301,15 +301,15 @@ msgstr "সেক্যুরিতিগী চেকশিনৱা"
 
 #: source/appl/app.src#RID_XMLSEC_QUERY_LOSINGSIGNATURE.QueryBox.Message
 msgid  "Saving will remove all existing signatures.\nDo you want to continue saving the document?"
-msgstr ""
+msgstr "লৈরিবা শোই পুম্নমক সেভ তৌবনা লৌথোক্লগনি.\nঅদোম দোকুমেন্ত সেভ তৌবা মখা চত্থবা পাম্বিবরা?\n"
 
 #: source/appl/app.src#RID_XMLSEC_QUERY_SAVEBEFORESIGN.QueryBox.Message
 msgid  "The document has to be saved before it can be signed.\nDo you want to save the document?"
-msgstr ""
+msgstr "শোই তৌগ্রিঙৈগী মমাংদা দোকুমেন্ততু সেভ তৌগদবনি.\nঅদোম দোকুমেন্ততু সেভ তৌবা পাম্বিবরা?"
 
 #: source/appl/app.src#RID_XMLSEC_INFO_WRONGDOCFORMAT.InfoBox.Message
 msgid  "This document must be saved in OpenDocument file format before it can be digitally signed."
-msgstr ""
+msgstr "দিজিতে ওইনা সোই তৌদ্রিঙৈগী মমাংদা ওপনদোকুমেন্ত ফাইল ফোর্মেত্তা মসিগী দোকুমেন্তসি সেভ তৌগদবনি."
 
 #: source/appl/app.src#RID_XMLSEC_DOCUMENTSIGNED.String.Text
 msgid  " (Signed)"
@@ -509,11 +509,11 @@ msgstr "~%PRODUCTNAME %MODULENAM হৌগত্পদা মতেং ফোঙ
 
 #: source/bastyp/fltfnc.src#STR_FILTER_NOT_INSTALLED.String.Text
 msgid  "The selected filter $(FILTER) has not been installed.\nWould you like to do this now?"
-msgstr ""
+msgstr "খনগতলবা ফিল্তর $(FILTER) দু ইনস্তোল তৌদ্রি.\nঅদোম্না মসি হৌদিক তৌবা পাম্বরা?"
 
 #: source/bastyp/fltfnc.src#STR_FILTER_CONSULT_SERVICE.String.Text
 msgid  "The selected filter $(FILTER) is not included in your edition.\nYou can find information about orders on our homepage."
-msgstr ""
+msgstr "খনগতলবা $(FILTER) ফাইলদু অদোমগী চেফোংদা য়াওদে.\nঐখোয়গী মরুওইবা লমাইদা অদোম্না মথং-মনাও শিন্দোকপগী মরমদা ঈ-পাউশিং ফংবিগনি."
 
 #: source/dialog/printopt.src#TP_COMMONPRINTOPTIONS.GB_REDUCE.FixedLine.Text
 msgid  "Reduce print data"
@@ -572,6 +572,26 @@ msgid  "Reso~lution"
 msgstr "রিজোলুসন"
 
 #: source/dialog/printopt.src#TP_COMMONPRINTOPTIONS.LB_REDUCEBITMAPS_RESOLUTION.0.StringList.item
+msgid  "72 DPI"
+msgstr "72 DPI"
+
+#: source/dialog/printopt.src#TP_COMMONPRINTOPTIONS.LB_REDUCEBITMAPS_RESOLUTION.0.StringList.item
+msgid  "96 DPI"
+msgstr "96 DPI"
+
+#: source/dialog/printopt.src#TP_COMMONPRINTOPTIONS.LB_REDUCEBITMAPS_RESOLUTION.0.StringList.item
+msgid  "150 DPI (Fax)"
+msgstr "150 DPI (ফেক্স)"
+
+#: source/dialog/printopt.src#TP_COMMONPRINTOPTIONS.LB_REDUCEBITMAPS_RESOLUTION.0.StringList.item
+msgid  "200 DPI (default)"
+msgstr "200 DPI (দিফোল্ত)"
+
+#: source/dialog/printopt.src#TP_COMMONPRINTOPTIONS.LB_REDUCEBITMAPS_RESOLUTION.0.StringList.item
+msgid  "300 DPI"
+msgstr "300 DPI"
+
+#: source/dialog/printopt.src#TP_COMMONPRINTOPTIONS.LB_REDUCEBITMAPS_RESOLUTION.0.StringList.item
 msgid  "600 DPI"
 msgstr "600 DPI"
 
@@ -605,7 +625,7 @@ msgstr "চেকশিনৱা"
 
 #: source/dialog/printopt.src#RID_WARN_PRINTTRANSPARENCY.FT_PRINTTRANSWARN.FixedText.Text
 msgid  "Your document contains transparent objects.\nThis may lead to longer printing time on certain\nprinters. Should the aspect of transparency\nbe reduced?"
-msgstr ""
+msgstr "অদোমগী দোকুমেন্ততা মনুং মপাল ফাওনা উবা ঙম্বা পোত্শক য়াওই.\nমসিনা প্রিন্তর খরদা \nনমথোকপগী মতম শাংদোকহনবা থোকহনবা য়াই. মনুং মপাল ফাওনা উবা ঙম্বগী\nমওং হন্থহনগদ্রা?"
 
 #: source/dialog/printopt.src#RID_WARN_PRINTTRANSPARENCY.BTN_PRINTTRANS_YES.OKButton.Text
 msgid  "~Yes"
@@ -622,26 +642,6 @@ msgstr "~ককথত্পা"
 #: source/dialog/printopt.src#RID_WARN_PRINTTRANSPARENCY.CBX_NOPRINTTRANSWARN.CheckBox.Text
 msgid  "~Do not show warning again"
 msgstr "~চেকশিনৱা অমুক হন্না উত্কনু"
-
-#: source/dialog/printopt.src#TP_COMMONPRINTOPTIONS.LB_REDUCEBITMAPS_RESOLUTION.0.StringList.item
-msgid  "72 DPI"
-msgstr "72 DPI"
-
-#: source/dialog/printopt.src#TP_COMMONPRINTOPTIONS.LB_REDUCEBITMAPS_RESOLUTION.0.StringList.item
-msgid  "96 DPI"
-msgstr "96 DPI"
-
-#: source/dialog/printopt.src#TP_COMMONPRINTOPTIONS.LB_REDUCEBITMAPS_RESOLUTION.0.StringList.item
-msgid  "150 DPI (Fax)"
-msgstr "150 DPI (ফেক্স)"
-
-#: source/dialog/printopt.src#TP_COMMONPRINTOPTIONS.LB_REDUCEBITMAPS_RESOLUTION.0.StringList.item
-msgid  "200 DPI (default)"
-msgstr "200 DPI (দিফোল্ত)"
-
-#: source/dialog/printopt.src#TP_COMMONPRINTOPTIONS.LB_REDUCEBITMAPS_RESOLUTION.0.StringList.item
-msgid  "300 DPI"
-msgstr "300 DPI"
 
 #: source/dialog/templdlg.src#RID_STYLECATALOG.ModalDialog.Text
 msgid  "Style Catalog"
@@ -1116,8 +1116,8 @@ msgid  "to frame"
 msgstr "ফিবান"
 
 #: source/dialog/dinfdlg.src#TP_DOCINFORELOAD.STR_FORWARD_ERRMSSG.String.Text
-msgid  "If you select the option "%PLACEHOLDER%", you must enter a URL."
-msgstr ""
+msgid  "If you select the option \"%PLACEHOLDER%\", you must enter a URL."
+msgstr "করিগুম্বা অদোম্না \"%PLACEHOLDER%\" অপাম্বা খল্লবদি, অদোম্না URL অমা চংশিনগদবনি."
 
 #: source/dialog/dinfdlg.src#TP_CUSTOMPROPERTIES.FT_PROPERTIES.FixedText.Text
 msgid  "~Properties"
@@ -1397,7 +1397,7 @@ msgstr "মেক্রো রেকোর্দ তৌবা"
 
 #: source/dialog/recfloat.src#STR_MACRO_LOSS.String.Text
 msgid  "Do you really want to cancel the recording? Any steps recorded up to this point will be lost."
-msgstr ""
+msgstr "অদোম্না তশেংনা রেকোর্দিংদু ককথত্পা পাম্বিবরা? হৌজিকফাওবদা রেকোর্দ তৌখ্রবা খোঙথাং খুদিংমক মাংলগনি."
 
 #: source/dialog/recfloat.src#STR_CANCEL_RECORDING.String.Text
 msgid  "Cancel Recording"
@@ -1405,7 +1405,7 @@ msgstr "রেকোর্দিং ককথত্পা"
 
 #: source/dialog/mailwindow.src#RID_ERRBOX_MAIL_CONFIG.ErrorBox.MESSAGE
 msgid  "%PRODUCTNAME was unable to find a working e-mail configuration. Please save this document locally instead and attach it from within your e-mail client."
-msgstr ""
+msgstr "%PRODUCTNAME না মথৌ তৌরিবা ই-মেইল কনফিগ্যুরেসন ফংবা ঙমদ্রে. চানবিদুনা মসিগী মহুত্তা দোকুমেন্তসি মফমদুদা সেভ তৌবিয়ু অমসুং অদোমগী ঈ-মেইল শিজিন্নবগী মনুংদা নপশিনবিয়ু."
 
 #: source/dialog/dialog.src#STR_RESET.String.Text
 msgid  "~Reset"
@@ -1429,11 +1429,11 @@ msgstr "মসিগী স্তাইল অসি লৈতে."
 
 #: source/dialog/dialog.src#MSG_TABPAGE_INVALIDPARENT.InfoBox.Message
 msgid  "This Style cannot be used as a base Style,\nbecause it would result in a recursive reference."
-msgstr ""
+msgstr "মসিগী মওংসি য়ুমফমগী মওং অমা ওইনা শিজিন্নবা য়াদে,\nমরমদি মসিনা অমুক হন্না মমাংগী রিফরেন্স থোকহল্লক্কনি."
 
 #: source/dialog/dialog.src#MSG_POOL_STYLE_NAME.InfoBox.Message
 msgid  "Name already exists as a default Style.\nPlease choose another name."
-msgstr ""
+msgstr "দিফোল্ত মওংগুম্না মমিংসি হান্না লৈরে.\nচানবিদুনা অতোপ্পা মমিং অমা খনবিয়ু."
 
 #: source/dialog/dialog.src#STR_DELETE_STYLE.String.Text
 msgid  "Do you really want to delete Style $1?"
@@ -1581,27 +1581,27 @@ msgstr "~শিল্লাংবা"
 
 #: source/doc/doc.src#MSG_CONFIRM_FILTER.QueryBox.Message
 msgid  "Saving in external formats may have caused\n information loss. Do you still want to close?"
-msgstr ""
+msgstr "মপানগী ওইবা ফোর্মেতশিংদা\nসেভ তৌবনা ঈপাউশিং মাংখিবগী মরম ওইবা য়াই. অদোম্না হৌজিক লোয়শিনবা পাম্বিবরা?"
 
 #: source/doc/doc.src#MSG_CONFIRM_OVERWRITE_TEMPLATE.QueryBox.Message
 msgid  "Name already in use.\nDo you want to overwrite document template?"
-msgstr ""
+msgstr "মমিংদু হান্না শিজিন্নরে.\nঅদোম্না দোকুমেন্ত নোমুনাদু মথক্তা হন্না ইশিনবা পাম্বিবরা?"
 
 #: source/doc/doc.src#STR_DELETE_REGION.String.Text
-msgid  "Are you sure you want to delete the region "$1"?"
-msgstr ""
+msgid  "Are you sure you want to delete the region \"$1\"?"
+msgstr "অদোম্না \"$1\" মফমসি মুত্থত্পা পাম্মী হায়বসি তশেংনা শোয়দ্রব্রা?"
 
 #: source/doc/doc.src#STR_DELETE_TEMPLATE.String.Text
-msgid  "Are you sure you want to delete the entry "$1"?"
-msgstr ""
+msgid  "Are you sure you want to delete the entry \"$1\"?"
+msgstr "অদোম্না \"$1\" এন্ত্রিসি মুত্থত্পা পাম্মী হায়বসি তশেংনা শোয়দ্রব্রা?"
 
 #: source/doc/doc.src#MSG_REGION_NOTEMPTY.QueryBox.Message
 msgid  "The category is not empty.\nDelete anyway?"
-msgstr ""
+msgstr "কাংলুপসি অহাংবা নত্তে.\nঅদুবু মুত্থত্কদ্রা?"
 
 #: source/doc/doc.src#STR_QUERY_SAVE_DOCUMENT.String.Text
-msgid  "The document "$(DOC)" has been modified.\nDo you want to save your changes?"
-msgstr ""
+msgid  "The document \"$(DOC)\" has been modified.\nDo you want to save your changes?"
+msgstr "\"$(DOC)\" দোকুমেন্ত শেমদোক্লে.\nঅদোমগী অহোংবশিং অসি সেভ তৌবা পাম্বিবরা?"
 
 #: source/doc/doc.src#STR_STYLES.String.Text
 msgid  "Styles"
@@ -1648,16 +1648,16 @@ msgid  "Templates"
 msgstr "নোমুনা"
 
 #: source/doc/doc.src#STR_ERROR_COPY_TEMPLATE.String.Text
-msgid  "Error copying template "$1". \nA template with this name may already exist."
-msgstr ""
+msgid  "Error copying template \"$1\". \nA template with this name may already exist."
+msgstr "নোমুনা শিনবদা শোয়রে\"$1\". \nমমিং অসি থোনবা নোমুনা হান্না লৈরম্বা য়াই."
 
 #: source/doc/doc.src#STR_ERROR_DELETE_TEMPLATE.String.Text
-msgid  "The template "$1" can not be deleted."
-msgstr ""
+msgid  "The template \"$1\" can not be deleted."
+msgstr "নোমুনা \"$1\" মুত্থত্পা ঙমদে."
 
 #: source/doc/doc.src#STR_ERROR_MOVE_TEMPLATE.String.Text
-msgid  "Error moving template "$1"."
-msgstr ""
+msgid  "Error moving template \"$1\"."
+msgstr "নোমুনা মফম হোংবদা শোয়বা\"$1\"."
 
 #: source/doc/doc.src#MSG_ERROR_RESCAN.ErrorBox.Message
 msgid  "The update could not be saved."
@@ -1681,11 +1681,11 @@ msgstr "চানবিদুনা অককনবা মমিং অমা �
 
 #: source/doc/doc.src#MSG_ERROR_UNIQ_NAME.ErrorBox.Message
 msgid  "Please specify a unique name.\nEntries must not be case specific."
-msgstr ""
+msgstr "চানবিদুনা তোপ-তোপ্পা মমিং অমা অককনবা পীবিয়ু. এন্ত্রিশিং অককনবা ময়েক ওইরোয়দবনি."
 
 #: source/doc/doc.src#STR_QUERY_DEFAULT_TEMPLATE.String.Text
-msgid  "Should the template "$(TEXT)" become the default template?"
-msgstr ""
+msgid  "Should the template \"$(TEXT)\" become the default template?"
+msgstr "নোমুনা \"$(TEXT)\" দিফোল্ত নোমুনা ওইগদ্রা?"
 
 #: source/doc/doc.src#MSG_QUERY_RESET_DEFAULT_TEMPLATE.QueryBox.Message
 msgid  "Do you want to reset the default template?"
@@ -1693,7 +1693,7 @@ msgstr "দিফোল্ত নোমুনা হন্না শেম্ব
 
 #: source/doc/doc.src#MSG_TEMPLATE_DIR_NOT_EXIST.InfoBox.Message
 msgid  "Template directory\n$(DIR)\ndoes not exist."
-msgstr ""
+msgstr "নোমুনা দাইরেক্তোরি\n$(DIR)\nলৈতে."
 
 #: source/doc/doc.src#MSG_DOCINFO_CANTREAD.InfoBox.Message
 msgid  "Document info cannot be read."
@@ -1705,7 +1705,7 @@ msgstr "খল্লবা ফাইলদা চুমদবা ফোর্ম
 
 #: source/doc/doc.src#STR_QUERY_MUSTOWNFORMAT.String.Text
 msgid  "Documents cannot be saved in $(FORMAT) format. Do you\nwant to save your changes using the $(OWNFORMAT) format?"
-msgstr ""
+msgstr "$(FORMAT) ফোর্মেত্তা দোকুমেন্ত সেভ তৌবা ঙমদ্রে. অদোম্না\nঅদোমগী অহোংবশিং $(OWNFORMAT) ফোর্মেত শিজিন্নদুনা সেভ তৌবা পাম্বিবরা?"
 
 #: source/doc/doc.src#STR_SAVEDOC.String.Text
 msgid  "~Save"
@@ -1744,8 +1744,8 @@ msgid  "%PRODUCTNAME Basic libraries"
 msgstr "%PRODUCTNAME মরুওইবা লাইব্রেরীশিং"
 
 #: source/doc/doc.src#RID_STR_WARNSTYLEOVERWRITE.String.Text
-msgid  "Should the "$(ARG1)" Style be replaced?"
-msgstr ""
+msgid  "Should the \"$(ARG1)\" Style be replaced?"
+msgstr "\"$(ARG1)\" মওং শিন্দোক্কদ্রা?"
 
 #: source/doc/doc.src#STR_DOC_LOADING.String.Text
 msgid  "Loading Document"
@@ -1769,7 +1769,7 @@ msgstr "শম্নদ্রে"
 
 #: source/doc/doc.src#MSG_OPEN_READONLY.QueryBox.Message
 msgid  "Document cannot be opened for editing.\nDo you want to open it as read-only?"
-msgstr ""
+msgstr "শেমদোককনবগীদমক দোকুমেন্ত হাংবা য়াদ্রে.\nঅদোম্না মসি পানবাতমক্কী হাংবা পাম্বিবরা?"
 
 #: source/doc/doc.src#STR_EDIT.String.Text
 msgid  "Edit"
@@ -1792,12 +1792,12 @@ msgid  "%PRODUCTNAME Frame Document"
 msgstr "%PRODUCTNAME ফিবানগী দোকুমেন্ত"
 
 #: source/doc/doc.src#STR_TEMPL_MOVED.String.Text
-msgid  "The template "$(TEMPLATE)" was not found at the original location. A template with the same name exists at "$(FOUND)". Should this template be used in the future when comparing?"
-msgstr ""
+msgid  "The template \"$(TEMPLATE)\" was not found at the original location. A template with the same name exists at \"$(FOUND)\". Should this template be used in the future when comparing?"
+msgstr "\"$(TEMPLATE)\" নোমু্নাসি মশাগী অশেংবা লৈফমদা ফংদ্রে. চপ মান্নবা নোমুনা মিং অমা \"$(FOUND)\" দা লৈরে. মতুমদা চাংদম্নবা মতমদা মসিগী নোমুনাসি শিজিন্নগদ্রা?"
 
 #: source/doc/doc.src#STR_TEMPL_RESET.String.Text
-msgid  "The template "$(TEMPLATE)" has not been found. Should the template be looked for the next time the document is opened ?"
-msgstr ""
+msgid  "The template \"$(TEMPLATE)\" has not been found. Should the template be looked for the next time the document is opened ?"
+msgstr "\"$(TEMPLATE)\" নোমুনা ফংদ্রে. মথং দোকুমেন্তসি হাংবা মতমদা নোমুনাসি থিখিগদ্রা?"
 
 #: source/doc/doc.src#STR_AUTOMATICVERSION.String.Text
 msgid  "Automatically saved version"
@@ -1865,7 +1865,7 @@ msgstr "শিজিন্নগনু"
 
 #: source/doc/doc.src#FT_CANCEL.String.Text
 msgid  "According to the security settings, the macros in this document should not be run. Do you want to run them anyway?"
-msgstr ""
+msgstr "সেক্যুরিতি সেত্তিংশিংগী মতুংইন্না, দোকুমেন্ত অসিদা মেক্রোদু শিজিন্নরোয়দবনি. অদোম্না মখোয়শিং হেক্তা শিজিন্নবা পাম্বিবরা?"
 
 #: source/doc/doc.src#FT_OK.String.Text
 msgid  "Do you want to allow these macros to be run?"
@@ -1893,7 +1893,7 @@ msgstr "ফাইল ফোর্মেত:"
 
 #: source/doc/doc.src#STR_HIDDENINFO_CONTAINS.String.Text
 msgid  "This document contains:\n\n"
-msgstr ""
+msgstr "মসিগী দোকুমেন্তসিদা য়াওই:\n\n"
 
 #: source/doc/doc.src#STR_HIDDENINFO_RECORDCHANGES.String.Text
 msgid  "Recorded changes"
@@ -1933,7 +1933,7 @@ msgstr "অদোম্না PDF ফাইল অমা শেমগত্প�
 
 #: source/doc/doc.src#STR_NEW_FILENAME_SAVE.String.Text
 msgid  "If you do not want to overwrite the original document, you should save your work under a new filename."
-msgstr ""
+msgstr "করিগুম্বা অদোম্না মশাগী অশেংবা দোকুমেন্ত মথক্তা হন্না ইশিনবা পামদ্রবদি, অদোম্না অদোমগী থবক অনৌবা ফাইল মমিং অমদা সেভ তৌগদবনি."
 
 #: source/doc/doc.src#STR_ERROR_DELETE_TEMPLATE_DIR.String.Text
 msgid  "Some template files are protected and can not be deleted."
@@ -1984,8 +1984,16 @@ msgid  "~Address Book..."
 msgstr "~এদ্রেস বুক"
 
 #: source/doc/docvor.src#DLG_ORGANIZE.LB_LEFT_TYP.Default.StringList.item
+msgid  "Templates"
+msgstr "নোমুনা"
+
+#: source/doc/docvor.src#DLG_ORGANIZE.LB_LEFT_TYP.Default.StringList.item
 msgid  "Documents"
 msgstr "দোকুমেন্তশিং"
+
+#: source/doc/docvor.src#DLG_ORGANIZE.LB_RIGHT_TYP.Default.StringList.item
+msgid  "Templates"
+msgstr "নোমুনা"
 
 #: source/doc/docvor.src#DLG_ORGANIZE.LB_RIGHT_TYP.Default.StringList.item
 msgid  "Documents"
@@ -2034,14 +2042,6 @@ msgstr "দিফোল্ত নোমুনাগুম্না সেত ত
 #: source/doc/docvor.src#DLG_ORGANIZE.BTN_EDIT.ID_RESET_DEFAULT_TEMPLATE.MenuItem.Text
 msgid  "Reset Default Template"
 msgstr "দিফোল্ত নোমুনা রিসেত তৌবা"
-
-#: source/doc/docvor.src#DLG_ORGANIZE.LB_LEFT_TYP.Default.StringList.item
-msgid  "Templates"
-msgstr "নোমুনা"
-
-#: source/doc/docvor.src#DLG_ORGANIZE.LB_RIGHT_TYP.Default.StringList.item
-msgid  "Templates"
-msgstr "নোমুনা"
 
 #: source/doc/new.src#DLG_NEW_FILE.ModalDialog.Text
 msgid  "New"
@@ -2153,15 +2153,15 @@ msgstr ""
 
 #: source/view/view.src#STR_NODEFPRINTER.String.Text
 msgid  "No default printer found.\nPlease choose a printer and try again."
-msgstr ""
+msgstr "দিফোল্ত প্রিনেতর থীবা ফংদ্রে.\nচানবিদুনা প্রিন্তর অমা খনবিয়ু অমশুং অমুক হন্না হোতনবিয়ু."
 
 #: source/view/view.src#STR_NOSTARTPRINTER.String.Text
 msgid  "Could not start printer.\nPlease check your printer configuration."
-msgstr ""
+msgstr "নম্নবা খুতলায় থবক হৌবা ঙমদ্রে.\n চানবিদুনা অদোমগী প্রিন্তর কনফিগুরেশন য়েংশিনবিয়ু."
 
 #: source/view/view.src#STR_PRINTER_NOTAVAIL.String.Text
 msgid  "This document has been formatted for the printer $1. The specified printer is not available. \nDo you want to use the standard printer $2 ?"
-msgstr ""
+msgstr "$1 নম্নবা খুলায়গীদমক দোকুমেন্তসি ফোর্মেত তৌরে. অককনবা নম্নাবা খুতলায় ফংদ্রে. অদোম্না স্তেন্দর্দ প্রিন্তর  $2 শিজিন্নবা পাম্বরা?"
 
 #: source/view/view.src#STR_PRINT_OPTIONS.String.Text
 msgid  "Options..."
@@ -2187,33 +2187,41 @@ msgstr "নম্লিবা"
 msgid  "Page "
 msgstr "লমাই"
 
+#: source/view/view.src#STR_ERROR_SAVE_TEMPLATE.String.Text
+msgid  "Error saving template "
+msgstr "নোমুনা সেভ তৌবদা শোয়রে"
+
 #: source/view/view.src#STR_READONLY.String.Text
 msgid  " (read-only)"
 msgstr "(পানবখক)"
 
 #: source/view/view.src#STR_PRINT_NEWORI.String.Text
 msgid  "The page size and orientation have been modified.\nWould you like to save the new settings in the\nactive document?"
-msgstr ""
+msgstr "লমাইগী অচৌ-অপিক অমশুং মাইকৈ খনবা শেমদোক্লে.\nশিজিন্নবা য়ারিবা দোকুমেন্ততা \nঅদোম্না অনৌবা সেতিংসশিং সেভ তৌবা পাম্বিবরা?"
 
 #: source/view/view.src#STR_PRINT_NEWSIZE.String.Text
 msgid  "The page size has been modified.\nShould the new settings be saved\nin the active document?"
-msgstr ""
+msgstr "লমাইগী অচৌ-অপিক শেমদোক্লে.\nশিজিন্নবা য়ারিবা দোকুমেন্ততা\nঅনৌবা সেতিংসশিং সেভ তৌগদ্রা?"
 
 #: source/view/view.src#STR_PRINT_NEWORISIZE.String.Text
 msgid  "The page size and orientation have been modified.\nWould you like to save the new settings in the\nactive document?"
-msgstr ""
+msgstr "লমাইগী অচৌ-অপিক অমশুং মাইকৈ খনবা শেমদোক্লে.\nশিজিন্নবা য়ারিবা দোকুমেন্ততা \nঅদোম্না অনৌবা সেতিংসশিং সেভ তৌবা পাম্বিবরা?"
 
 #: source/view/view.src#STR_PREVIEW_DOCINFO.String.Text
-msgid  "<html><body BGCOLOR="#c0c0c0"><font FACE="Arial"><dl><dt><b>Title:</b><dd>$(TITEL)<dt><b>Subject:</b><dd>$(THEME)<dt><b>Keywords:</b><dd>$(KEYWORDS)<dt><b>Description:</b><dd>$(TEXT)</dl></font></body></html>"
-msgstr ""
+msgid  "<html><body BGCOLOR=\"#c0c0c0\"><font FACE=\"Arial\"><dl><dt><b>Title:</b><dd>$(TITEL)<dt><b>Subject:</b><dd>$(THEME)<dt><b>Keywords:</b><dd>$(KEYWORDS)<dt><b>Description:</b><dd>$(TEXT)</dl></font></body></html>"
+msgstr "<html><body BGCOLOR=\"#c0c0c0\"><আখৰ FACE=\"এরিয়েল\"><dl><dt><b>মিংথোল:</b><dd>$(TITEL)<dt><b>হীরম:</b><dd>$(THEME)<dt><b>মরুওইবা ৱাহৈশিং:</b><dd>$(KEYWORDS)<dt><b>শন্দোকনা তাকপা:</b><dd>$(TEXT)</dl></ময়েক></মশা></html>"
 
 #: source/view/view.src#STR_PREVIEW_NODOCINFO.String.Text
-msgid  "<HTML><BODY BGCOLOR="#c0c0c0"><BR><BR><P><FONT FACE="Arial"><B>No document properties found.</B></FONT></P></BODY></HTML>"
-msgstr ""
+msgid  "<HTML><BODY BGCOLOR=\"#c0c0c0\"><BR><BR><P><FONT FACE=\"Arial\"><B>No document properties found.</B></FONT></P></BODY></HTML>"
+msgstr "<HTML><BODY BGCOLOR=\"#c0c0c0\"><BR><BR><P><FONT FACE=\"এরিয়েল\"><B>দোকুমেন্ত মগুন অমত্তা ফংদ্রে.</B></FONT></P></BODY></HTML>"
 
 #: source/view/view.src#MSG_CANT_CLOSE.InfoBox.Message
 msgid  "The document cannot be closed because a\n print job is being carried out."
-msgstr ""
+msgstr "ছপা নম্বগী থবক চত্থরিবা মরমনা\nদোকুমেন্ততু লোয়শিনবা য়াদ্রে."
+
+#: source/view/view.src#DLG_PRINTMONITOR_TEXT.#define.Text
+msgid  "Print Monitor"
+msgstr "নম্নবগী মোনিতর"
 
 #: source/view/view.src#DLG_PRINTMONITOR.FT_PRINTING.FixedText.Text
 msgid  "is being printed on"
@@ -2225,11 +2233,11 @@ msgstr ""
 
 #: source/view/view.src#MSG_ERROR_SEND_MAIL.InfoBox.Message
 msgid  "An error occurred in sending the message. Possible errors could be a missing user account or a defective setup.\nPlease check the %PRODUCTNAME settings or your e-mail program settings."
-msgstr ""
+msgstr "পাউদু থাবদা অশোয়বা অমা থোক্লে. ওইবা য়াবা অশোয়বশিং মাংখিবা শিজিন্নরিবা একাউন্ত অমা নত্ত্রগা অশোয়বা সেতঅপ অমা ওইবা য়াই.\n চানবিদুনা %PRODUCTNAME সেতিংসশিং নত্ত্রগা অদোমগী ঈ-মেইল প্ৰোগ্ৰাম সেতিংসশিং য়েংশিনবিয়ু."
 
 #: source/view/view.src#MSG_QUERY_OPENASTEMPLATE.QueryBox.Message
 msgid  "This document cannot be edited, possibly due to missing access rights. Do you want to edit a copy of the document?"
-msgstr ""
+msgstr "ইশিনবা য়াবগী হক মাংখিবনা মরম ওইদুনা ওইবা য়াই মসিগী দোকুমেন্তসি শেমদোক-শাদোকপা য়াররোয়. অদোম্না দোকুমেন্ততুগী কোপি অমা শেমদোক-শাদোকপা পাম্বিবরা?"
 
 #: source/view/view.src#STR_REPAIREDDOCUMENT.String.Text
 msgid  " (repaired document)"
@@ -2238,11 +2246,3 @@ msgstr "অমুক হন্না শেমজিল্লবা দোকু
 #: source/view/view.src#MSG_ERROR_NO_WEBBROWSER_FOUND.ErrorBox.Message
 msgid  "%PRODUCTNAME could not find a web browser on your system. Please check your Desktop Preferences or install a web browser (for example, Mozilla) in the default  location requested during the browser installation."
 msgstr ""
-
-#: source/view/view.src#DLG_PRINTMONITOR_TEXT.#define.Text
-msgid  "Print Monitor"
-msgstr "নম্নবগী মোনিতর"
-
-#: source/view/view.src#STR_ERROR_SAVE_TEMPLATE.String.Text
-msgid  "Error saving template "
-msgstr "নোমুনা সেভ তৌবদা শোয়রে"

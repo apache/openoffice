@@ -136,6 +136,10 @@ msgid  "km"
 msgstr "គ.ម."
 
 #: source/src/units.src#SV_FUNIT_STRINGS.FUNIT_TWIP.ItemList.item
+msgid  "twips"
+msgstr "ធ្វីប"
+
+#: source/src/units.src#SV_FUNIT_STRINGS.FUNIT_TWIP.ItemList.item
 msgid  "twip"
 msgstr "ធ្វីប"
 
@@ -148,32 +152,16 @@ msgid  "pi"
 msgstr "pi"
 
 #: source/src/units.src#SV_FUNIT_STRINGS.FUNIT_INCH.ItemList.item
-msgid  "inch"
-msgstr "អ៊ិន្ឈ៍"
-
-#: source/src/units.src#SV_FUNIT_STRINGS.FUNIT_FOOT.ItemList.item
-msgid  "feet"
-msgstr "ហ្វ៊ីតថ៍"
-
-#: source/src/units.src#SV_FUNIT_STRINGS.FUNIT_MILE.ItemList.item
-msgid  "mile"
-msgstr "ម៉ាយល៍"
-
-#: source/src/units.src#SV_FUNIT_STRINGS.FUNIT_PERCENT.ItemList.item
-msgid  "%"
-msgstr "%"
-
-#: source/src/units.src#SV_FUNIT_STRINGS.FUNIT_TWIP.ItemList.item
-msgid  "twips"
-msgstr "ធ្វីប"
-
-#: source/src/units.src#SV_FUNIT_STRINGS.FUNIT_INCH.ItemList.item
-msgid  """
-msgstr ""
+msgid  "\""
+msgstr "\""
 
 #: source/src/units.src#SV_FUNIT_STRINGS.FUNIT_INCH.ItemList.item
 msgid  "in"
 msgstr "គិត​ជា"
+
+#: source/src/units.src#SV_FUNIT_STRINGS.FUNIT_INCH.ItemList.item
+msgid  "inch"
+msgstr "អ៊ិន្ឈ៍"
 
 #: source/src/units.src#SV_FUNIT_STRINGS.FUNIT_FOOT.ItemList.item
 msgid  "'"
@@ -187,13 +175,25 @@ msgstr "ft"
 msgid  "foot"
 msgstr "ហ៊្វុតថ៍"
 
+#: source/src/units.src#SV_FUNIT_STRINGS.FUNIT_FOOT.ItemList.item
+msgid  "feet"
+msgstr "ហ្វ៊ីតថ៍"
+
 #: source/src/units.src#SV_FUNIT_STRINGS.FUNIT_MILE.ItemList.item
 msgid  "miles"
 msgstr "ម៉ាយល៍"
 
+#: source/src/units.src#SV_FUNIT_STRINGS.FUNIT_MILE.ItemList.item
+msgid  "mile"
+msgstr "ម៉ាយល៍"
+
+#: source/src/units.src#SV_FUNIT_STRINGS.FUNIT_PERCENT.ItemList.item
+msgid  "%"
+msgstr "%"
+
 #: source/src/stdtext.src#SV_STDTEXT_SERVICENOTAVAILABLE.String.Text
 msgid  "The component (%s) could not be loaded.\nPlease start setup with the repair option."
-msgstr ""
+msgstr "មិន​​អាច​​ផ្ទុក​​សមាសភាគ (%s) ។​\nសូម​​ចាប់ផ្តើម​​ដំឡើង​​ជាមួយ​​ជម្រើស​​ជួសជុល ។"
 
 #: source/src/stdtext.src#SV_STDTEXT_DONTHINTAGAIN.String.Text
 msgid  "Do not show this information again."
@@ -213,11 +213,11 @@ msgstr "ខុស​កំណែ"
 
 #: source/src/stdtext.src#SV_ACCESSERROR_BRIDGE_MSG.String.Text
 msgid  "%PRODUCTNAME %PRODUCTVERSION requires a Java Access Bridge 1.0.3 or later version to support accessibility."
-msgstr ""
+msgstr "%PRODUCTNAME %PRODUCTVERSION ត្រូវ​ការកំណែ Java Access Bridge 1.0.3 ឬ ថ្មី​ជាង ដើម្បី​គាំទ្រ​ភាព​អាច​ចូល​ដំណើរការ​បាន ។"
 
 #: source/src/stdtext.src#SV_ACCESSERROR_OK_CANCEL_MSG.String.Text
 msgid  "Click '%OK' to start %PRODUCTNAME %PRODUCTVERSION without accessibility support, or click '%CANCEL' to exit %PRODUCTNAME %PRODUCTVERSION."
-msgstr ""
+msgstr "ចុច '%OK' ដើម្បី​ចាប់ផ្តើម %PRODUCTNAME ​%PRODUCTVERSION ​ដោយ​គ្មាន​ការ​គាំទ្រ​​ភាព​ចូល​ដំណើរការ ឬ ​ចុច '%CANCEL' ដើម្បី​ចេញ​ពី %PRODUCTNAME %PRODUCTVERSION ។"
 
 #: source/src/stdtext.src#SV_ACCESSERROR_MISSING_BRIDGE.String.Text
 msgid  "No Java Access Bridge"
@@ -229,7 +229,7 @@ msgstr "ដំឡើង Java ខុស"
 
 #: source/src/stdtext.src#SV_ACCESSERROR_JAVA_MSG.String.Text
 msgid  "%PRODUCTNAME %PRODUCTVERSION requires Java 1.4.0_02 or later version to support accessibility."
-msgstr ""
+msgstr "%PRODUCTNAME %PRODUCTVERSION ត្រូវការ​កំណែ Java 1.4.0_02 ឬ ថ្មី​ជាង ​ដើម្បី​គាំទ្រ​ភាព​អាច​ចូល​ដំណើរការ​បាន ។"
 
 #: source/src/stdtext.src#SV_ACCESSERROR_MISSING_JAVA.String.Text
 msgid  "No Java Installation"
@@ -261,7 +261,7 @@ msgstr "ចំណូល​ចិត្ត..."
 
 #: source/src/stdtext.src#SV_EDIT_WARNING_BOX.WarningBox.Message
 msgid  "The inserted text exceeded the maximum length of this text field. The text was truncated."
-msgstr ""
+msgstr "អត្ថបទ​ដែល​បាន​បញ្ចូល​នេះ​លើ​ប្រវែង​អតិបរមា​នៃ​វាល​អត្ថបទ​នេះ ។ អត្ថបទ​ត្រូវ​បាន​កាត់​ឲ្យ​ខ្លី ។"
 
 #: source/src/stdtext.src#SV_MAC_SCREENNNAME.String.Text
 msgid  "Screen %d"
@@ -473,11 +473,11 @@ msgstr "ទំព័រ %p នៃ​ %n"
 
 #: source/src/print.src#SV_PRINT_NOPRINTERWARNING.ErrorBox.Message
 msgid  "No default printer found.\nPlease choose a printer and try again."
-msgstr ""
+msgstr "ស្វែងរកមិនឃើញម៉ាស៊ីនបោះពុម្ពលំនាំដើមឡើយ​​ ។\nសូម​ជ្រើស​ម៉ាស៊ីនបោះពុម្ព​ និង​ព្យាយាមម្តងទៀត ។​"
 
 #: source/src/print.src#SV_PRINT_NOCONTENT.ErrorBox.Message
 msgid  "There are no pages to be printed. Please check your document for ranges relevant to printing."
-msgstr ""
+msgstr "គ្មាន​ទំព័រត្រូវ​​បោះពុម្ព​ឡើយ​ ។ សូមពិនិត្យ​​​ឯកសាររបស់អ្នក​​សម្រាប់ជួរដែលទាក់ទងត្រូវបោះពុម្ព​ ។"
 
 #: source/src/print.src#SV_PRINT_NATIVE_STRINGS.item1.ItemList.item
 msgid  "Preview"

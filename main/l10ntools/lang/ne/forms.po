@@ -177,7 +177,7 @@ msgstr "प्रतिस्थापन गरिएको"
 
 #: source/resource/strings.src#RID_STR_CONTROL_SUBSTITUTED_EPXPLAIN.String.Text
 msgid  "An error occurred while this control was being loaded. It was therefore replaced with a placeholder."
-msgstr ""
+msgstr "यो नियन्त्रण लोड गरि राखिएको बखतमा एउटा त्रुटि रहन गयो । त्यसकारण यो प्लेसहोल्डरसँग प्रतिस्थापम गरियो ।"
 
 #: source/resource/strings.src#RID_STR_READERROR.String.Text
 msgid  "Error reading data from database"
@@ -233,7 +233,7 @@ msgstr "क्वेरी अभिव्यक्तिमा वाक्य 
 
 #: source/resource/strings.src#RID_STR_INCOMPATIBLE_TYPES.String.Text
 msgid  "The value types supported by the binding cannot be used for exchanging data with this control."
-msgstr ""
+msgstr "बाइन्डिङद्वारा समर्थन गरिएको मान प्रकारहरू नियन्त्रणसँग डेटा साटासाट गर्नलाई प्रयोग गर्न सकिँदैन ।"
 
 #: source/resource/strings.src#RID_STR_LABEL_RECORD.String.Text
 msgid  "Record"
@@ -241,7 +241,7 @@ msgstr "रेकर्ड"
 
 #: source/resource/strings.src#RID_STR_INVALID_VALIDATOR.String.Text
 msgid  "The control is connected to an external value binding, which at the same time acts as validator. You need to revoke the value binding, before you can set a new validator."
-msgstr ""
+msgstr "नियन्त्रण बाह्य मान बाईन्डिङमा जडान गरिएको छ जसले उही समयमा वैधकर्ताको रूपमा क्रिया गर्दछ । तपाईँले नयाँ वैधकर्ता सेट गर्नुभन्दा पहिले तपाईँले मान बाईन्डिङ वोलाउनु आवश्यक हुन्छ ।"
 
 #: source/resource/strings.src#RID_STR_LABEL_OF.String.Text
 msgid  "of"
@@ -249,7 +249,7 @@ msgstr "को"
 
 #: source/resource/strings.src#RID_STR_QUERY_SAVE_MODIFIED_ROW.String.Text
 msgid  "The content of the current form has been modified.\nDo you want to save your changes?"
-msgstr ""
+msgstr "हालको फारामको सामग्री परिमार्जन गरिएको छ ।\nतपाईँ आफ्नो परिवर्तनहरू बचत गर्न चाहनुहुन्छ ?"
 
 #: source/resource/strings.src#RID_STR_COULD_NOT_SET_ORDER.String.Text
 msgid  "Error setting the sort criteria"
@@ -265,7 +265,7 @@ msgstr "यो प्रकार्य कार्यान्वयन गर
 
 #: source/resource/strings.src#RID_STR_FEATURE_NOT_EXECUTABLE.String.Text
 msgid  "This function cannot be executed, but is only for status queries."
-msgstr ""
+msgstr "यो प्रकार्य कार्यान्वयन गर्न सकिँदैन, तर वस्तुस्थिति क्वेरीका लागी मात्र हो ।"
 
 #: source/resource/strings.src#RID_STR_FEATURE_UNKNOWN.String.Text
 msgid  "Unknown function."

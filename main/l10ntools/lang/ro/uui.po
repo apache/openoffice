@@ -93,7 +93,7 @@ msgstr "Document în uz"
 
 #: source/trylater.src#STR_TRYLATER_MSG.String.Text
 msgid  "Document file '$(ARG1)' is locked for editing by:\n\n$(ARG2)\n\nTry again later to save document or save a copy of that document.\n\n"
-msgstr ""
+msgstr "Fișierul document „$(ARG1)” este blocat pentru editare de către:\n\n$(ARG2)\n\nÎncercați din nou să salvați documentul mai târziu sau salvați o copie a documentului.\n\n"
 
 #: source/trylater.src#STR_TRYLATER_RETRYSAVING_BTN.String.Text
 msgid  "~Retry Saving"
@@ -137,7 +137,7 @@ msgstr "Ținta există deja."
 
 #: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_IO_MODULESIZEEXCEEDED & ERRCODE_RES_MASK).String.Text
 msgid  "You are about to save/export a password protected basic library containing module(s) \n$(ARG1)\nwhich are too large to store in binary format. If you wish users that don't have access to the library password to be able to run macros in those module(s) you must split those modules into a number of smaller modules. Do you wish to continue to save/export this library?"
-msgstr ""
+msgstr "Sunteți pe cale să salvați sau să exportați o bibliotecă protejată prin parolă care conține modulele\n$(ARG1)\n, module prea mari pentru a fi salvate în format binar. Pentru ca utilizatorii care nu au acces la parolă să poată rula macrouri în aceste module trebuie să împărțiți aceste module în module mai mici. Doriți să continuați cu salvarea sau exportarea bibliotecii?"
 
 #: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_IO_BADCRC & ERRCODE_RES_MASK).String.Text
 msgid  "The data from $(ARG1) has an incorrect checksum."
@@ -173,7 +173,7 @@ msgstr "$(ARG1) nu este gata."
 
 #: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_IO_NOTSAMEDEVICE & ERRCODE_RES_MASK).String.Text
 msgid  "Action impossible: $(ARG1) and $(ARG2) are different devices (drives)."
-msgstr ""
+msgstr "Acțiune imposibilă: $(ARG1) și $(ARG2) sunt dispozitive (unități) diferite."
 
 #: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_IO_GENERAL & ERRCODE_RES_MASK).String.Text
 msgid  "General input/output error while accessing $(ARG1)."
@@ -241,11 +241,11 @@ msgstr "Nu mai este spațiu pe discul $(ARG1)"
 
 #: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_IO_TOOMANYOPENFILES & ERRCODE_RES_MASK).String.Text
 msgid  "The operation on $(ARG1) cannot be performed because too many files are already open."
-msgstr ""
+msgstr "Operația pe $(ARG1) nu poate fi executată deoarece sunt prea multe fișiere deschise."
 
 #: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_IO_OUTOFMEMORY & ERRCODE_RES_MASK).String.Text
 msgid  "The operation on $(ARG1) cannot be performed because there is no more memory available."
-msgstr ""
+msgstr "Operația pe $(ARG1) nu poate fi executată deoarece nu mai este memorie disponibilă."
 
 #: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_IO_PENDING & ERRCODE_RES_MASK).String.Text
 msgid  "The operation on $(ARG1) cannot continue because more data is pending."
@@ -289,11 +289,11 @@ msgstr "Versiunea $(ARG1) instalată de Java nu este suportată."
 
 #: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_WRONGJAVA_MIN & ERRCODE_RES_MASK).String.Text
 msgid  "The installed Java version is not supported, at least version $(ARG1) is required."
-msgstr ""
+msgstr "Versiunea instalată de Java nu este suportată, este nevoie de cel puțin versiunea $(ARG1)."
 
 #: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_WRONGJAVA_VERSION_MIN & ERRCODE_RES_MASK).String.Text
 msgid  "The installed Java version $(ARG1) is not supported, at least version $(ARG2) is required."
-msgstr ""
+msgstr "Versiunea $(ARG1) instalată de Java nu este suportată, este nevoie de cel puțin versiunea $(ARG2)."
 
 #: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_BADPARTNERSHIP & ERRCODE_RES_MASK).String.Text
 msgid  "The data associated with the partnership is corrupted."
@@ -313,7 +313,7 @@ msgstr "$(ARG1) nu este gata; introduceți vă rog un nou mediu de stocare."
 
 #: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_IO_NOTREADY_VOLUME_REMOVABLE & ERRCODE_RES_MASK).String.Text
 msgid  "Volume $(ARG1) is not ready; please insert a storage medium."
-msgstr ""
+msgstr "Volumul $(ARG1) nu este gata; introduceți vă rog un nou mediu de stocare."
 
 #: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_WRONGMEDIUM & ERRCODE_RES_MASK).String.Text
 msgid  "Please insert disk $(ARG1)."
@@ -325,7 +325,7 @@ msgstr "Obiectul nu poate fi creat în directorul $(ARG1)."
 
 #: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_IO_UNSUPPORTEDOVERWRITE & ERRCODE_RES_MASK).String.Text
 msgid  "%PRODUCTNAME cannot keep files from being overwritten when this transmission protocol is used. Do you want to continue anyway?"
-msgstr ""
+msgstr "%PRODUCTNAME nu poate salva fișierele de la suprascriere atunci când este utilizat acest protocol de transmisie. Doriți să continuați oricum?"
 
 #: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_IO_BROKENPACKAGE & ERRCODE_RES_MASK).String.Text
 msgid  "The file '$(ARG1)' is corrupt and therefore cannot be opened. %PRODUCTNAME can try to repair the file.\n\nThe corruption could be the result of document manipulation or of structural document damage due to data transmission.\n\nWe recommend that you do not trust the content of the repaired document.\nExecution of macros is disabled for this document.\n\nShould %PRODUCTNAME repair the file?\n"
@@ -333,23 +333,23 @@ msgstr ""
 
 #: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_IO_BROKENPACKAGE_CANTREPAIR & ERRCODE_RES_MASK).String.Text
 msgid  "The file '$(ARG1)' could not be repaired and therefore cannot be opened."
-msgstr ""
+msgstr "Fișierul „$(ARG1)” este corupt și deci nu poate fi deschis."
 
 #: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_CONFIGURATION_BROKENDATA_NOREMOVE & ERRCODE_RES_MASK).String.Text
 msgid  "Configuration data in '$(ARG1)' is corrupted. Without this data some functions may not operate correctly.\nDo you want to continue startup of %PRODUCTNAME without the corrupted configuration data?"
-msgstr ""
+msgstr "Datele de configurare din „$(ARG1)” sunt corupte. Fără aceste date e posibil ca unele funcții să nu opereze corect.\nDoriți să continuați pornirea %PRODUCTNAME fără datele de configurare corupte ?"
 
 #: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_CONFIGURATION_BROKENDATA_WITHREMOVE & ERRCODE_RES_MASK).String.Text
 msgid  "The personal configuration file '$(ARG1)' is corrupted and must be deleted to continue. Some of your personal settings may be lost.\nDo you want to continue startup of %PRODUCTNAME without the corrupted configuration data?"
-msgstr ""
+msgstr "Fișierul personal de configurare „$(ARG1)” este corupt și trebuie șters pentru a continua. O parte din setările dumneavoastră personale s-ar putea pierde.\nDoriți să continuați pornirea %PRODUCTNAME fără datele de configurare corupte ?"
 
 #: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_CONFIGURATION_BACKENDMISSING & ERRCODE_RES_MASK).String.Text
 msgid  "The configuration data source '$(ARG1)' is unavailable. Without this data some functions may not operate correctly."
-msgstr ""
+msgstr "Sursa de date de configurare „$(ARG1)” nu este disponibilă. Fără aceste date, unele funcții ar putea opera incorect."
 
 #: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_CONFIGURATION_BACKENDMISSING_WITHRECOVER & ERRCODE_RES_MASK).String.Text
 msgid  "The configuration data source '$(ARG1)' is unavailable. Without this data some functions may not operate correctly.\nDo you want to continue startup of %PRODUCTNAME without the missing configuration data?"
-msgstr ""
+msgstr "Sursa de date de configurare „$(ARG1)” nu este disponibilă. Fără aceste date e posibil ca unele funcții să nu opereze corect.\nDoriți să continuați pornirea %PRODUCTNAME fără datele de configurare lipsă ?"
 
 #: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_INVALID_XFORMS_SUBMISSION_DATA & ERRCODE_RES_MASK).STRING.Text
 msgid  "The form contains invalid data. Do you still want to continue?"
@@ -373,19 +373,19 @@ msgstr ""
 
 #: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_UNKNOWNAUTH_UNTRUSTED).STRING.Text
 msgid  "Unable to verify the identity of $(ARG1) site.\n\nBefore accepting this certificate, you should examine this site's certificate carefully. Are you willing to accept this certificate for the purpose of identifying the Web site $(ARG1)?"
-msgstr ""
+msgstr "Nu se poate verifica identitatea saitului $(ARG1).\n\nÎnainte de a accepta acest certificat, examinați-l cu grijă. Doriți să acceptați acest certificat pentru a identifica saitul web $(ARG1)?"
 
 #: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_SSLWARN_EXPIRED_1).STRING.Text
 msgid  "$(ARG1) is a site that uses a security certificate to encrypt data during transmission, but its certificate expired on $(ARG2).\n\nYou should check to make sure that your computer's time is correct."
-msgstr ""
+msgstr "$(ARG1) este un sait ce folosește un certificat de securitate pentru a cripta datele în timpul transmisiei, dar certificatul a expirat la $(ARG2).\n\nVerificați că data și ora de pe calculatorul dumneavoastră sunt corecte."
 
 #: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_SSLWARN_DOMAINMISMATCH_1).STRING.Text
 msgid  "You have attempted to establish a connection with $(ARG1). However, the security certificate presented belongs to $(ARG2). It is possible, though unlikely, that someone may be trying to intercept your communication with this web site.\n\nIf you suspect the certificate shown does not belong to $(ARG1), please cancel the connection and notify the site administrator.\n\nWould you like to continue anyway?"
-msgstr ""
+msgstr "Ați încercat să stabiliți o conexiune cu $(ARG1). Cu toate acestea, certificatul prezentat aparține $(ARG2). Este posibil, deși puțin probabil, ca cineva să încerce să vă intercepteze comunicația cu acest sait web.\n\nDacă suspectați că certificatul arătat nu aparține $(ARG1), anulați conexiunea și înștiințați administratorul saitului.\n\nDoriți să continuați oricum ?"
 
 #: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_SSLWARN_INVALID_1).STRING.Text
 msgid  "The certificate could not be validated. You should examine this site's certificate carefully.\n\nIf you suspect the certificate shown, please cancel the connection and notify the site administrator."
-msgstr ""
+msgstr "Certificatul nu a putut fi validat. Ar trebui să examinați certificatul saitului cu atenție.\n\nDacă nu aveți încredere în certificatul afișat, vă rugăm să anulați conexiunea și să anunțați administratorul saitului."
 
 #: source/ids.src#RID_UUI_ERRHDL.(TITLE_UUI_SSLWARN_DOMAINMISMATCH).STRING.Text
 msgid  "Security Warning: Domain Name Mismatch"
@@ -416,8 +416,8 @@ msgid  "Enter user name and password for: \n%1"
 msgstr ""
 
 #: source/logindlg.src#DLG_UUI_LOGIN.STR_LOGIN_REALM.String.Text
-msgid  "Enter user name and password for: \n"%2" on %1"
-msgstr ""
+msgid  "Enter user name and password for: \n\"%2\" on %1"
+msgstr "Vă rugăm să introduceți numele de utilizator și parola pentru „%2” pe %1 de aici."
 
 #: source/logindlg.src#DLG_UUI_LOGIN.FT_LOGIN_PATH.FixedText.Text
 msgid  "~Path"
@@ -469,7 +469,7 @@ msgstr "~Trimite"
 
 #: source/cookiedg.src#STR_COOKIES_RECV_START.String.Text
 msgid  "The '${HOST}' server wishes to set one or more cookies.\nCookies contain information referring to certain URL classes. If %PRODUCTNAME later requests a document with a URL corresponding to the class of a previously set cookie, %PRODUCTNAME will send this information to the server. This allows a server to recognize the status of a WWW application, e.g., when shopping online.\n\nThe following Cookies should be set:\n\n"
-msgstr ""
+msgstr "Serverul '${HOST}' dorește să configureze unul sau mai multe cookie-uri. Dacă %PRODUCTNAME solicită ulterior un document de la URL corespunzând unei clase de cookie-uri configurate anterior, %PRODUCTNAME va trimite aceste informații către server. Aceasta permite recunoașterea stării unei aplicații WWW.\n\nUrmătoarele cookie-uri trebuie configurate:\n\n  "
 
 #: source/cookiedg.src#STR_COOKIES_RECV_COOKIES.String.Text
 msgid  "Domain: ${DOMAIN}, Path: ${PATH}, Cookie: ${COOKIE}.\n"
@@ -481,7 +481,7 @@ msgstr "Primire cookie"
 
 #: source/cookiedg.src#STR_COOKIES_SEND_START.String.Text
 msgid  "%PRODUCTNAME has saved cookies for the server '${HOST}' which will be sent when requesting the document ${PATH}.\nCookies contain information which refers to certain URL classes. They are sent by some servers to %PRODUCTNAME where they are saved when certain documents are accessed. If %PRODUCTNAME loads a document that, according to the URL, corresponds to a class of one of the previously received Cookies, %PRODUCTNAME will send this information to that server. This enables a server to keep track of the status of a WWW application, e.g., when shopping online.\n\nThe following Cookies should be set:\n\n"
-msgstr ""
+msgstr "%PRODUCTNAME a salvat cookie-uri pentru serverul '${HOST}' care vor fi trimise la solicitarea documentului  ${PATH}.\nCookie-urile conțin informații care se referă la anumite clase URL. Ele sunt trimise de anumite servere la %PRODUCTNAME unde sunt salvate la accesarea anumitor documente. Dacă %PRODUCTNAME încarcă un document care, conform URL-ului, corespunde unei clase de cookie-uri recepționate anterior, %PRODUCTNAME va trimite aceste informații la server. Acest lucru permite serverului să țină evidența stării unei aplicații WWW, de exemplu pentru comerț on-line.\n\nUrmătoarele cookie-uri trebuie comnfigurate:\n\n "
 
 #: source/cookiedg.src#STR_COOKIES_SEND_COOKIES.String.Text
 msgid  "Domain: ${DOMAIN}, Path: ${PATH}, Cookie: ${COOKIE}.\n"
@@ -501,7 +501,7 @@ msgstr ""
 
 #: source/passworderrs.src#STR_ERROR_MASTERPASSWORD_WRONG.String.Text
 msgid  "The master password is incorrect."
-msgstr ""
+msgstr "S-a introdus o parolă generală greșită. %PRODUCTNAME nu a putut accesa informațiile de autentificare pe web protejate de parola generală.\n\nNotă: parolele au cel puțin 5 caractere și literele mici sunt considerate diferite de cele mari."
 
 #: source/passworderrs.src#STR_ERROR_SIMPLE_PASSWORD_WRONG.String.Text
 msgid  "The password is incorrect."
@@ -529,7 +529,7 @@ msgstr "Document în uz"
 
 #: source/openlocked.src#STR_OPENLOCKED_MSG.String.Text
 msgid  "Document file '$(ARG1)' is locked for editing by:\n\n$(ARG2)\n\nOpen document read-only or open a copy of the document for editing.\n\n"
-msgstr ""
+msgstr "Fișierul document „$(ARG1)” este blocat pentru editare de către:\n\n$(ARG2)\n\nDeschideți documentul numai pentru citire sau deschideți o copie a documentului pentru editare."
 
 #: source/openlocked.src#STR_OPENLOCKED_OPENREADONLY_BTN.String.Text
 msgid  "Open ~Read-Only"
@@ -561,7 +561,7 @@ msgstr "Este disponibilă o actualizare de %PRODUCTNAME"
 
 #: source/newerverwarn.src#RID_DLG_NEWER_VERSION_WARNING.FT_INFO.FixedText.Text
 msgid  "This document was created by a newer version of %PRODUCTNAME. It may contain features not supported by your current version.\n\nClick 'Update Now...' to run online update and get the latest version of %PRODUCTNAME."
-msgstr ""
+msgstr "Acest document a fost creat cu o versiune mai noua de %PRODUCTNAME. Ar putea conține elemente nesuportate de versiunea pe care o rulați.\n\nApăsați „Actualizează acum...” pentru a rula actualizarea online și a obține ultima versiune de %PRODUCTNAME."
 
 #: source/newerverwarn.src#RID_DLG_NEWER_VERSION_WARNING.PB_UPDATE.PushButton.Text
 msgid  "~Update Now..."
@@ -609,7 +609,7 @@ msgstr "Vizualizare semnături..."
 
 #: source/secmacrowarnings.src#RID_XMLSECDLG_MACROWARN.FI_DESCR2.FixedText.Text
 msgid  "Macros may contain viruses. Disabling macros for a document is always safe. If you disable macros you may lose functionality provided by the document macros."
-msgstr ""
+msgstr "Macrourile pot conține viruși. Dezactivarea macrourilor pentru un document oferă un plus de siguranță. Totuși dacă dezactivați macrourile, s-ar putea să pierdeți funcționalitatea care o oferă acestea."
 
 #: source/secmacrowarnings.src#RID_XMLSECDLG_MACROWARN.CB_ALWAYSTRUST.CheckBox.Text
 msgid  "Always trust macros from this source"
@@ -653,7 +653,7 @@ msgstr ""
 
 #: source/alreadyopen.src#STR_ALREADYOPEN_MSG.String.Text
 msgid  "Document file '$(ARG1)' is locked for editing by yourself on a different system since $(ARG2)\n\nOpen document read-only, or ignore own file locking and open the document for editing.\n\n"
-msgstr ""
+msgstr "Documentul „$(ARG1)” este blocat de dumneavoastră pentru editare pe un alt sistem de la $(ARG2)\n\nDeschideți documentul numai pentru citire sau ignorați propriul blocaj și deschideți documentul pentru editare.\n\n"
 
 #: source/alreadyopen.src#STR_ALREADYOPEN_READONLY_BTN.String.Text
 msgid  "Open ~Read-Only"
@@ -665,7 +665,7 @@ msgstr ""
 
 #: source/alreadyopen.src#STR_ALREADYOPEN_SAVE_MSG.String.Text
 msgid  "Document file '$(ARG1)' is locked for editing by yourself on a different system since $(ARG2)\n\nClose document on other system and retry saving or ignore own file locking and save current document.\n\n"
-msgstr ""
+msgstr "Documentul „$(ARG1)” este blocat de dumneavoastră pentru editare pe un alt sistem de la $(ARG2)\n\nÎnchideți documentul pe celălalt sistem și încercați încă odată să salvați sau ignorați propriul blocaj și salvați documentul curent.\n\n"
 
 #: source/alreadyopen.src#STR_ALREADYOPEN_RETRY_SAVE_BTN.String.Text
 msgid  "~Retry Saving"
@@ -677,4 +677,4 @@ msgstr ""
 
 #: source/lockfailed.src#STR_LOCKFAILED_MSG.String.Text
 msgid  "The file could not be locked for exclusive access by %PRODUCTNAME, due to missing permission to create a lock file on that file location."
-msgstr ""
+msgstr "Fișierul nu a putut fi blocat spre a fi folosit exclusiv de %PRODUCTNAME deoarece nu există drepturi pentru a crea un fișier de blocare acolo unde se află fișierul."

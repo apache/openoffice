@@ -45,7 +45,7 @@ msgstr ""
 
 #: source/all/crashrep.ulf#%WELCOME_BODY2%
 msgid  "It's easy - just send the report without any further effort on your part by clicking 'Send' in the next dialog, or you can briefly describe how the error occurred and then click 'Send'. If you want to see the report, click the 'Show Report' button. No data will be sent if you click 'Do Not Send'.\n\n"
-msgstr ""
+msgstr "ეს ადვილია - უბრალოდ გააგზავნეთ რეპორტი  შემდეგ დიალოგურ ფანჯარაში 'გაგზავნა'-ზე დაჭერით, ან თქვენ შეგიძლიათ მოკლედ აღწეროთ ის, თუ როგორ მოხდა შეცდომა და შემდეგ დააჭიროთ 'გაგზავნას'. თუ თქვენ გსურთ რეპორტის ნახვა, დააჭირეთ 'რეპორტის ჩვენებას'. არანაირი მონაცემები არ გაიგზავნება, თუ თქვენ დააჭერთ 'არ გააგზავნო'-ს.\n\n"
 
 #: source/all/crashrep.ulf#%WELCOME_BODY3%
 msgid  "Customer Privacy\nThe information gathered is limited to data concerning the state of %PRODUCTNAME% %PRODUCTVERSION% when the error occurred. Other information about passwords or document contents is not collected.\n\nThe information will only be used to improve the quality of %PRODUCTNAME% and will not be shared with third parties.\nFor more information on Apache OpenOffice's privacy policy, visit\n"
@@ -81,7 +81,7 @@ msgstr ""
 
 #: source/all/crashrep.ulf#%ENTER_TITLE%
 msgid  "Which type of document (e.g. presentation) were you using when the error occurred?"
-msgstr ""
+msgstr "შეცდომის გამოჩენისას რომელი ტიპის დოკუმენტს (მაგ.: პრეზენტაცია) იყენებდით?"
 
 #: source/all/crashrep.ulf#%ALLOW_CONTACT%
 msgid  "~I allow Apache OpenOffice to contact me regarding this report."
@@ -121,23 +121,23 @@ msgstr "ანგარიშის შენახვა"
 
 #: source/all/crashrep.ulf#%ERROR_MSG_SIMPLE_MAPI%
 msgid  "The error report could not be sent because the default e-mail program does not support MAPI.\n Please use a MAPI-compatible e-mail program."
-msgstr ""
+msgstr "შეცდომის ანგარიში ვერ გაიგზავნა, რადგან ელფოსტის ნაგულისხმევ პროგრამას არა აქვს MAPI-ს მხარდაჭერა.\nგთხოვთ, გამოიყენოთ MAPI-თან თავსებადი ელფოსტის პროგრამა."
 
 #: source/all/crashrep.ulf#%ERROR_MSG_DISK_FULL%
 msgid  "The error report could not be temporarily saved and could therefore not be sent."
-msgstr ""
+msgstr "შეცდომის ანგარიში ვერ შეინახა და მაშასადამე ვერ გაიგზავნება."
 
 #: source/all/crashrep.ulf#%ERROR_MSG_SENDMAIL%
 msgid  "The error report could not be sent because 'sendmail' could not be started.\nPlease check the 'sendmail' settings."
-msgstr ""
+msgstr "შეცდომის ანგარიში ვერ გაიგზავნა რადგან 'ელფოსტის გაგზავნა' ვერ გაიშვა.\nგთხოვთ, შეამოწმოთ 'ელფოსტის გაგზავნის' პარამეტრები."
 
 #: source/all/crashrep.ulf#%ERROR_MSG_PROXY%
 msgid  "The error report could not be sent. Please check the proxy settings under 'Options' in the Error Report Tool."
-msgstr ""
+msgstr "შეცდომის ანგარიში ვერ გაიგზავნა. გთხოვთ, შეამოწმოთ პროქსის პარამეტრები შეცდომის ანგარიშის ხელსაწყოში, 'პარამეტრები'-ში."
 
 #: source/all/crashrep.ulf#%ERROR_MSG_NOCONNECT%
 msgid  "The error report could not be sent because there is no Internet connection. Please check your Internet settings."
-msgstr ""
+msgstr "შეცდომის ანგარიში ვერ გაიგზავნა, რადგან არ არის კავშირი ინტერნეტთან. გთხოვთ, შეამოწმოთ თქვენი ინტერნეტის პარამეტრები."
 
 #: source/all/crashrep.ulf#%OPTIONS_BUTTON%
 msgid  "~Options..."
@@ -173,7 +173,7 @@ msgstr "~პორტი"
 
 #: source/all/crashrep.ulf#%PROXY_SETTINGS_DESCRIPTION%
 msgid  "The %PRODUCTNAME% Error Report tool needs to be connected to the Internet to be able to send error reports.\n\nCompanies often use proxy servers in conjunction with a firewall to protect the network.\n\nIf this applies to your situation, you have to specify the address and port for the server."
-msgstr ""
+msgstr "%PRODUCTNAME%-ის შეცდომის ნაგარიშის ხელსაწყო საჭიორებს კავშირს ინტერნეტთან, რათა შეძლოს შეცდომის ანგარიშების გაგზავნა.\n\nხშირად კომპანიები ქსელის დასაცავად იყენებენ პროქსი სერვერებს.\n\nთუ ეს ესადაგება თქვენს სიტუაციას, უნდა განსაზღვროთ სერვერის მისამართი და პორტი."
 
 #: source/all/crashrep.ulf#%SENDING_REPORT_HEADER%
 msgid  "Sending Error Report"
@@ -201,8 +201,8 @@ msgstr "-p <პროცესის ID>"
 
 #: source/all/crashrep.ulf#%MSG_PARAM_PROCESSID_DESCRIPTION%
 msgid  "Assigns the %PRODUCTNAME% process ID (PID) to the Error Report Tool"
-msgstr ""
+msgstr "%PRODUCTNAME%-ის პროცესის ID (PID) მიესადაგება შეცდომის ანგარიშის ხელსაწყოს"
 
 #: source/all/crashrep.ulf#%MSG_PARAM_HELP_DESCRIPTION%
 msgid  "Shows this help text.\nDetailed information can be found in the Setup Guide."
-msgstr ""
+msgstr "ასახავს ამ დახმარების ტექსტს.\nდეტალური ინფორმაცია მოიძიეთ დაყენების ინსტრუქციაში."

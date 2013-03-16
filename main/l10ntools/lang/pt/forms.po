@@ -165,7 +165,7 @@ msgstr "Associação"
 
 #: source/resource/strings.src#RID_BASELISTBOX_ERROR_FILLLIST.String.Text
 msgid  "The contents of a combo box or list field could not be determined."
-msgstr ""
+msgstr "Foi impossível determinar o conteúdo de uma caixa de combinação ou campo de lista."
 
 #: source/resource/strings.src#RID_STR_IMPORT_GRAPHIC.String.Text
 msgid  "Insert graphics"
@@ -177,7 +177,7 @@ msgstr "substituído"
 
 #: source/resource/strings.src#RID_STR_CONTROL_SUBSTITUTED_EPXPLAIN.String.Text
 msgid  "An error occurred while this control was being loaded. It was therefore replaced with a placeholder."
-msgstr ""
+msgstr "Ao carregar este controlo ocorreu um erro. Por esta razão foi substituído por um marcador de posição."
 
 #: source/resource/strings.src#RID_STR_READERROR.String.Text
 msgid  "Error reading data from database"
@@ -233,7 +233,7 @@ msgstr "Erro ao analisar a expressão de consulta."
 
 #: source/resource/strings.src#RID_STR_INCOMPATIBLE_TYPES.String.Text
 msgid  "The value types supported by the binding cannot be used for exchanging data with this control."
-msgstr ""
+msgstr "Os tipos de valor suportados pela associação não podem ser utilizados para intercâmbio de dados com este controlo."
 
 #: source/resource/strings.src#RID_STR_LABEL_RECORD.String.Text
 msgid  "Record"
@@ -241,7 +241,7 @@ msgstr "Registo"
 
 #: source/resource/strings.src#RID_STR_INVALID_VALIDATOR.String.Text
 msgid  "The control is connected to an external value binding, which at the same time acts as validator. You need to revoke the value binding, before you can set a new validator."
-msgstr ""
+msgstr "O controlo está ligado a uma associação de valor externo que actua simultaneamente como uma validação. Para poder definir uma nova validação, tem de revocar a associação do valor."
 
 #: source/resource/strings.src#RID_STR_LABEL_OF.String.Text
 msgid  "of"
@@ -249,7 +249,7 @@ msgstr "de"
 
 #: source/resource/strings.src#RID_STR_QUERY_SAVE_MODIFIED_ROW.String.Text
 msgid  "The content of the current form has been modified.\nDo you want to save your changes?"
-msgstr ""
+msgstr "O conteúdo do formulário actual foi modificado.\nPretende guardar as alterações?"
 
 #: source/resource/strings.src#RID_STR_COULD_NOT_SET_ORDER.String.Text
 msgid  "Error setting the sort criteria"
@@ -265,7 +265,7 @@ msgstr "São necessários parâmetros para executar esta função."
 
 #: source/resource/strings.src#RID_STR_FEATURE_NOT_EXECUTABLE.String.Text
 msgid  "This function cannot be executed, but is only for status queries."
-msgstr ""
+msgstr "Não é possível executar esta função. Funciona apenas para consultas do estado."
 
 #: source/resource/strings.src#RID_STR_FEATURE_UNKNOWN.String.Text
 msgid  "Unknown function."

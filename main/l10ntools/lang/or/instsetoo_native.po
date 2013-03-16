@@ -193,7 +193,7 @@ msgstr "ରହିଥିବା ସମଯ: {[୧] ମିନିଟଗୁଡିକ }
 
 #: inc_openoffice/windows/msi_languages/Error.ulf#OOO_ERROR_16
 msgid  "Out of memory. Shut down other applications before retrying."
-msgstr ""
+msgstr " ସ୍ମୃତିଶକ୍ତିର ବାହାରେ୤ ପୁନଃଚେଷ୍ଟାକରିବା ପୂର୍ବରୁ  ଅନ୍ଯ ପ୍ରଗଗୁଡିକୁ ବନ୍ଦକରି ଦିଅନ୍ତୁ୤"
 
 #: inc_openoffice/windows/msi_languages/Error.ulf#OOO_ERROR_17
 msgid  "Installer is no longer responding."
@@ -229,11 +229,11 @@ msgstr "{[ପଦାର୍ଥ ନାମ] }ସେଟଅପ ଅସଫଳ ହେଲ�
 
 #: inc_openoffice/windows/msi_languages/Error.ulf#OOO_ERROR_25
 msgid  "Error reading from file: [2]. {{ System error [3].}}  Verify that the file exists and that you can access it."
-msgstr ""
+msgstr "ଫାଇଲରୁ ପଢିବା ତୃଟି: [୨]. {{ସିସ୍ଟମ ତୃଟି [୩].}}  ପରୀକ୍ଷାକର ୟେ ଫାଇଲ ଅଛି ଏବଂ ତାହା ତୁମେ ପ୍ରବେଶ କରିପାର୤"
 
 #: inc_openoffice/windows/msi_languages/Error.ulf#OOO_ERROR_26
 msgid  "Cannot create the file [3].  A directory with this name already exists.  Cancel the installation and try installing to a different location."
-msgstr ""
+msgstr "ଫାଇଲ [୩] ସୃଷ୍ଟିହୋଇପାରିବ ନାହିଁ୤ ଏହି ନାମର ଏକ ବିବରଣୀ ପୂର୍ବରୁ ଅଛି୤ ପ୍ରତିଷ୍ଠାପନକୁ ରଦ୍ଦକର ଏବଂ ଏକ ଭିନ୍ନ ସ୍ଥାନରେ ପ୍ରତିଷ୍ଠାପନକୁ ଚେଷ୍ଟାକର୤"
 
 #: inc_openoffice/windows/msi_languages/Error.ulf#OOO_ERROR_27
 msgid  "Please insert the disk: [2]"
@@ -241,43 +241,43 @@ msgstr "ଦଯାକରି ଡିକ୍ସ : [୨] ଭର୍ତ୍ତିକର"
 
 #: inc_openoffice/windows/msi_languages/Error.ulf#OOO_ERROR_28
 msgid  "The installer has insufficient privileges to access this directory: [2].  The installation cannot continue.  Log on as an administrator or contact your system administrator."
-msgstr ""
+msgstr "ଏହି ବିବରଣୀପଞ୍ଜିକାକୁ ପ୍ରବେଶ କରିବା ପାଇଁ ପ୍ରତିଷ୍ଠାପକ ପାଖରେ ଆବଶ୍ଯକ ବିଶେଷ ଅଧିକାର ନାହିଁ : [୨]୤ପ୍ରତିଷ୍ଠାପନ ଚାଲୁହୋଇପାରିବ ନାହିଁ୤ପ୍ରଶାସକ ପରି ଲଗ ଆରମ୍ଭକର କିମ୍ବା ତୁମର  ସିସ୍ଟମ ପ୍ରଶାସକକୁ ୟୋଗାୟୋଗକର୤"
 
 #: inc_openoffice/windows/msi_languages/Error.ulf#OOO_ERROR_29
 msgid  "Error writing to file [2].  Verify that you have access to that directory."
-msgstr ""
+msgstr " [୨] ଫାଇଲକୁ ଲେଖିବା  ତୃଟି୤ ପରୀକ୍ଷାକର ୟେ ସେହି ବିବରଣୀକୁ  ତୁମେ ପ୍ରବେଶ କରିପାର୤"
 
 #: inc_openoffice/windows/msi_languages/Error.ulf#OOO_ERROR_30
 msgid  "Error reading from file [2].  Verify that the file exists and that you can access it."
-msgstr ""
+msgstr "ଫାଇଲରୁ ପଢିବା ତୃଟି [୨]୤ପରୀକ୍ଷାକର ୟେ ଫାଇଲ ଅଛି ଏବଂ ତାହା ତୁମେ ପ୍ରବେଶ କରିପାର୤"
 
 #: inc_openoffice/windows/msi_languages/Error.ulf#OOO_ERROR_31
 msgid  "Another application has exclusive access to the file [2].  Please shut down all other applications, then click Retry."
-msgstr ""
+msgstr "ଅନ୍ଯ ଏକ ପ୍ରଯୋଗରେ କେବଳ  ଫାଇଲ  [୨] କୁ ପ୍ରବେଶ କରିପାରିବ୤ଦଯାକରି ଅନ୍ଯ ସବୁ ପ୍ରଯୋଗଗୁଡିକ ବନ୍ଦକର ,ତାପରେ ପୁନଃଚେଷ୍ଟାକୁ ଦବାନ୍ତୁ୤"
 
 #: inc_openoffice/windows/msi_languages/Error.ulf#OOO_ERROR_32
 msgid  "There is not enough disk space to install the file [2].  Free some disk space and click Retry, or click Cancel to exit."
-msgstr ""
+msgstr "ଫାଇଲ  [୨] ପ୍ରତିଷ୍ଠାପନ ପାଇଁ ୟଥେଷ୍ଟ ଡିକ୍ସ ସ୍ଥାନ ନାହିଁ୤ କିଛି ମାଗଣା ଡିକ୍ସ ସ୍ଥାନ ଏବଂ କିଛି  ଡିକ୍ସ ସ୍ଥାନ ଏବଂ ପୁନଃଚେଷ୍ଟାକୁ ଦବାନ୍ତୁ, କିମ୍ବା ବାହାରିବା ପାଇଁ ରଦ୍ଦକୁ ଦବାନ୍ତୁ୤"
 
 #: inc_openoffice/windows/msi_languages/Error.ulf#OOO_ERROR_33
 msgid  "Source file not found: [2].  Verify that the file exists and that you can access it."
-msgstr ""
+msgstr "ମୂଳ ଫାଇଲ ମିଳୁନାହିଁ: [୨]୤  ପରୀକ୍ଷାକର ୟେ ସେହି ଫାଇଲ ଅଛି ଏବଂ ତାହା ତୁମେ ପ୍ରବେଶ କରିପାର୤"
 
 #: inc_openoffice/windows/msi_languages/Error.ulf#OOO_ERROR_34
 msgid  "Error reading from file: [3]. {{ System error [2].}}  Verify that the file exists and that you can access it."
-msgstr ""
+msgstr "ଫାଇଲରୁ ପଢିବା ତୃଟି : [୩]୤ {{ସିସ୍ଟମ୍ ଭୂଲ୍ [୨].}}  ପରୀକ୍ଷାକର ୟେ ଫାଇଲ ଅଛି ଏବଂ ତାହା ତୁମେ ପ୍ରବେଶ କରିପାର୤"
 
 #: inc_openoffice/windows/msi_languages/Error.ulf#OOO_ERROR_35
 msgid  "Error writing to file: [3]. {{ System error [2].}}  Verify that you have access to that directory."
-msgstr ""
+msgstr "ଫାଇଲ୍ ଲେଖିବାକୁ ତୃଟି: [୩]. {{ ସିସ୍ଟମ ତୃଟି [୨].}}ପରୀକ୍ଷାକର ୟେ ସେହି ବିବରଣୀକୁ ତୁମେ ପ୍ରବେଶ କରିପାର୤"
 
 #: inc_openoffice/windows/msi_languages/Error.ulf#OOO_ERROR_36
 msgid  "Source file not found{{(cabinet)}}: [2].  Verify that the file exists and that you can access it."
-msgstr ""
+msgstr "ମୂଳ ଫାଇଲ ମିଳୁନାହିଁ {{(କ୍ଯାବିନେଟ)}}: [୨]୤  ପରୀକ୍ଷାକର ୟେ ସେହି ଫାଇଲ ଅଛି ଏବଂ ତାହା ତୁମେ ପ୍ରବେଶ କରିପାର୤"
 
 #: inc_openoffice/windows/msi_languages/Error.ulf#OOO_ERROR_37
 msgid  "Cannot create the directory [2].  A file with this name already exists.  Please rename or remove the file and click Retry, or click Cancel to exit."
-msgstr ""
+msgstr " [୨]ବିବରଣୀପଞ୍ଜିକାକୁ ସୃଷ୍ଟିହୋଇପାରିବ ନାହିଁ୤  ଏହି ନାମରେ ଏକ ଫାଇଲ ଉପଲବ୍ଧ ଅଛି.ଦଯାକରି ପୁନଃନାମ ଦିଅ କିମ୍ବା ଫାଇଲ୍ କୁ ହଟାଅ ଏବଂ ପୁନଃ ପ୍ରବେଶକୁ ଦବାନ୍ତୁ , କିମ୍ବା ବାହାରିବା ପାଇଁ ରଦ୍ଦକୁ ଦବାନ୍ତୁ୤"
 
 #: inc_openoffice/windows/msi_languages/Error.ulf#OOO_ERROR_38
 msgid  "The volume [2] is currently unavailable.  Please select another."
@@ -297,15 +297,15 @@ msgstr " [୨] ଫାଇଲ ପଢିବାକୁ ଚେଷ୍ଟାକରିବ
 
 #: inc_openoffice/windows/msi_languages/Error.ulf#OOO_ERROR_42
 msgid  "An error occurred while attempting to create the directory [2]"
-msgstr ""
+msgstr " [୨]ବିବରଣୀ ପଞ୍ଜିକାକୁ ସୃଷ୍ଟିକରିବାକୁ ଚେଷ୍ଟାକରିବା ସମଯରେ ଏକ ନେଟଉଆର୍କ ତୃଟି ଘଟିଲା୤"
 
 #: inc_openoffice/windows/msi_languages/Error.ulf#OOO_ERROR_43
 msgid  "A network error occurred while attempting to create the directory [2]"
-msgstr ""
+msgstr " [୨]ବିବରଣୀପଞ୍ଜିକାକୁ ନିର୍ମାଣକରିବାକୁ ଚେଷ୍ଟାକରିବା ସମଯରେ ଏକ ନେଟ୍ ଉଆର୍କ ଭୂଲ୍ ଘଟିଲା."
 
 #: inc_openoffice/windows/msi_languages/Error.ulf#OOO_ERROR_44
 msgid  "A network error occurred while attempting to open the source file cabinet [2]."
-msgstr ""
+msgstr " [୨] ମୂଳ ଫାଇଲ କ୍ଯାବିନେଟ ଖୋଲିବାକୁ ଚେଷ୍ଟାକରିବା ସମଯରେ ଏକ ନେଟଉଆର୍କ ତୃଟି ଘଟିଲା୤"
 
 #: inc_openoffice/windows/msi_languages/Error.ulf#OOO_ERROR_45
 msgid  "The specified path is too long [2]."
@@ -341,67 +341,67 @@ msgstr "ଅମାନ୍ଯ ଡ୍ରାଇଭ୍: [୨]"
 
 #: inc_openoffice/windows/msi_languages/Error.ulf#OOO_ERROR_53
 msgid  "Error applying patch to file [2].  It has probably been updated by other means, and can no longer be modified by this patch.  For more information contact your patch vendor.  {{System Error: [3]}}"
-msgstr ""
+msgstr " [୨] ଫାଇଲକୁ ପଟିଲଗାଇବା ତୃଟି ଅଟେ୤ ଅନ୍ଯ ନିକୃଷ୍ଟଗୁଡିକ ଦ୍ବାରା ଏହା ସମ୍ଭବତଃ ଅପଡେଟ ହୋଇଥିଲା, ଏବଂ ଏହି ପଟି ଦ୍ବାରା ବେଶୀ ସମଯ ପରିବର୍ତ୍ତିତ ହୋଇପାରିବନାହିଁ୤ ଅଧିକ ସୂଚନା ପାଇଁ ତୁମର ପଟି ଭେଣ୍ଡର ସହିତ ୟୋଗାୟୋଗ କରନ୍ତୁ୤{{ସିସ୍ଟମ ତୃଟି: [୩]}}"
 
 #: inc_openoffice/windows/msi_languages/Error.ulf#OOO_ERROR_54
 msgid  "Could not create key [2]. {{ System error [3].}}  Verify that you have sufficient access to that key, or contact your support personnel."
-msgstr ""
+msgstr "[୨]କି କୁ ସୃଷ୍ଟିକର ନାହିଁ୤ {{ସିସ୍ଟମ ତୃଟି [୩].}} ପରୀକ୍ଷାକର ୟେ ସେହି କି ପାଇଁ ତୁମପାଖରେ ୟଥେଷ୍ଟ ପ୍ରବେଶ ଅଛି,କିମ୍ବା ତୁମର ବ୍ଯକ୍ତିଗତ ସମର୍ଥନ ସହିତ ୟୋଗାୟୋଗକର୤"
 
 #: inc_openoffice/windows/msi_languages/Error.ulf#OOO_ERROR_55
 msgid  "Could not open key: [2]. {{ System error [3].}}  Verify that you have sufficient access to that key, or contact your support personnel."
-msgstr ""
+msgstr "[୨]କି କୁ ଖୋଲ ନାହିଁ୤ {{ସିସ୍ଟମ ତୃଟି [୩].}} ପରୀକ୍ଷାକର ୟେ ସେହି କି ପାଇଁ ତୁମପାଖରେ ୟଥେଷ୍ଟ ପ୍ରବେଶ ଅଛି,କିମ୍ବା ତୁମର ବ୍ଯକ୍ତିଗତ ସମର୍ଥନ ସହିତ ୟୋଗାୟୋଗକର୤"
 
 #: inc_openoffice/windows/msi_languages/Error.ulf#OOO_ERROR_56
 msgid  "Could not delete value [2] from key [3]. {{ System error [4].}}  Verify that you have sufficient access to that key, or contact your support personnel."
-msgstr ""
+msgstr "[୩]କି ପାଇଁ ମୂଲ୍ଯ [୨] ମୂଲ୍ଯକୁ ବିଲୋପକରନାହିଁ୤ {{ସିସ୍ଟମ ତୃଟି [୪].}} ପରୀକ୍ଷାକର ୟେ ସେହି କି ପାଇଁ ତୁମପାଖରେ ୟଥେଷ୍ଠ ପ୍ରବେଶ ଅଛି,କିମ୍ବା ତୁମର ବ୍ଯକ୍ତିଗତ ସମର୍ଥନ ସହିତ ୟୋଗାୟୋଗକର୤"
 
 #: inc_openoffice/windows/msi_languages/Error.ulf#OOO_ERROR_57
 msgid  "Could not delete key [2]. {{ System error [3].}}  Verify that you have sufficient access to that key, or contact your support personnel."
-msgstr ""
+msgstr " [୨]କି କୁ ବିଲୋପକର ନାହିଁ୤ {{ସିସ୍ଟମ ତୃଟି [୩].}} ପରୀକ୍ଷାକର ୟେ ସେହି କି ପାଇଁ ତୁମପାଖରେ ୟଥେଷ୍ଟ ପ୍ରବେଶ ଅଛି,କିମ୍ବା ତୁମର ବ୍ଯକ୍ତିଗତ ସମର୍ଥନ ସହିତ ୟୋଗାୟୋଗକର୤"
 
 #: inc_openoffice/windows/msi_languages/Error.ulf#OOO_ERROR_58
 msgid  "Could not read value [2] from key [3]. {{ System error [4].}}  Verify that you have sufficient access to that key, or contact your support personnel."
-msgstr ""
+msgstr " [୩]କି ପାଇଁ ମୂଲ୍ଯ [୨] ପଢିହେଉନାହିଁ୤ {{ସିସ୍ଟମ ତୃଟି [୪].}} ପରୀକ୍ଷାକର ୟେ ସେହି କି ପାଇଁ ତୁମପାଖରେ ୟଥେଷ୍ଟ ପ୍ରବେଶ ଅଛି,କିମ୍ବା ତୁମର ବ୍ଯକ୍ତିଗତ ସମର୍ଥନ ସହିତ ୟୋଗାୟୋଗକର୤"
 
 #: inc_openoffice/windows/msi_languages/Error.ulf#OOO_ERROR_59
 msgid  "Could not write value [2] to key [3]. {{ System error [4].}}  Verify that you have sufficient access to that key, or contact your support personnel."
-msgstr ""
+msgstr " [୩]କି ପାଇଁ ମୂଲ୍ଯ [୨] ଲେଖିହେଉନାହିଁ୤ {{ସିସ୍ଟମ ତୃଟି [୪].}} ପରୀକ୍ଷାକର ୟେ ସେହି କି ପାଇଁ ତୁମପାଖରେ ୟଥେଷ୍ଟ ପ୍ରବେଶ ଅଛି,କିମ୍ବା ତୁମର ବ୍ଯକ୍ତିଗତ ସମର୍ଥନ ସହିତ ୟୋଗାୟୋଗକର୤"
 
 #: inc_openoffice/windows/msi_languages/Error.ulf#OOO_ERROR_60
 msgid  "Could not get value names for key [2]. {{ System error [3].}}  Verify that you have sufficient access to that key, or contact your support personnel."
-msgstr ""
+msgstr " [୨]କି ପାଇଁ ମୂଲ୍ଯ ନାମଗୁଡିକ ମିଳୁନାହିଁ୤ {{ସିସ୍ଟମ ତୃଟି [୩].}} ପରୀକ୍ଷାକର ୟେ ସେହି କି ପାଇଁ ତୁମପାଖରେ ୟଥେଷ୍ଟ ପ୍ରବେଶ ଅଛି,କିମ୍ବା ତୁମର ବ୍ଯକ୍ତିଗତ ସମର୍ଥନ ସହିତ ୟୋଗାୟୋଗକର୤"
 
 #: inc_openoffice/windows/msi_languages/Error.ulf#OOO_ERROR_61
 msgid  "Could not get sub key names for key [2]. {{ System error [3].}}  Verify that you have sufficient access to that key, or contact your support personnel."
-msgstr ""
+msgstr "କି ପାଇଁ ଉପକି ର ନାମ ପାଉନାହିଁ [୨]୤ {{ ସିସ୍ଟମ ତୃଟି[୩].}}  ପରୀକ୍ଷାକର ୟେ ସେହି କି ପାଇଁ ତୁମ ପାଖରେ ୟଥେଷ୍ଟ ପ୍ରବେଶ ଅଛି,କିମ୍ବା ତୁମର ବ୍ଯକ୍ତିଗତ ସମର୍ଥନ ସହିତ ୟୋଗାୟୋଗ କରନ୍ତୁ୤"
 
 #: inc_openoffice/windows/msi_languages/Error.ulf#OOO_ERROR_62
 msgid  "Could not read security information for key [2]. {{ System error [3].}}  Verify that you have sufficient access to that key, or contact your support personnel."
-msgstr ""
+msgstr "କି ପାଇଁ ସୁରକ୍ଷିତ ସୂଚନା ପଢିହେଉନାହିଁ [୨]୤ {{ ସିସ୍ଟମ ତୃଟି[୩].}}  ପରୀକ୍ଷାକର ୟେ ସେହି କି ପାଇଁ ତୁମପାଖରେ ୟଥେଷ୍ଟ  ପ୍ରବେଶ ଅଛି, କିମ୍ବା ତୁମର ବ୍ଯକ୍ତିଗତ ସମର୍ଥନ ସହିତ ୟୋଗାୟୋଗ କରନ୍ତୁ୤"
 
 #: inc_openoffice/windows/msi_languages/Error.ulf#OOO_ERROR_63
 msgid  "Could not increase the available registry space. [2] KB of free registry space is required for the installation of this application."
-msgstr ""
+msgstr "ଉପଲବ୍ଧ ରେଜିଷ୍ଟର ହୋଇଥିବା ସ୍ଥାନ ବୃଦ୍ଧିହୋଇପାରିବ ନାହିଁ୤ [୨] KB ଏହି ପ୍ରଜୋଗର ପ୍ରତିଷ୍ଠାପନ ପାଇଁ  ମାଗଣା ରେଜିଷ୍ଟର ହୋଇଥିବା ସ୍ଥାନ ଦରକାର୤"
 
 #: inc_openoffice/windows/msi_languages/Error.ulf#OOO_ERROR_64
 msgid  "Another installation is in progress. You must complete that installation before continuing this one."
-msgstr ""
+msgstr "ଉନ୍ନତ୍ତିରେ ଆଉଗୋଟିଏ ପ୍ରତିଷ୍ଠାପନ ଅଛି୤ଏହି ଗୋଟିଏକୁ ଚାଲୁକରିବା ପୂର୍ବରୁ ସେହି ପ୍ରତିଷ୍ଠାପନକୁ ତୁମେ ନିଶ୍ଚଯ ସଂପୂର୍ଣ୍ଣ କରିବ୤"
 
 #: inc_openoffice/windows/msi_languages/Error.ulf#OOO_ERROR_65
 msgid  "Error accessing secured data. Please make sure the Windows Installer is configured properly and try the installation again."
-msgstr ""
+msgstr "ସଞ୍ଚିତ ତଥ୍ଯର ପ୍ରବେଶ ତୃଟି ୤ଦଯାକରି ନିଶ୍ଚିତହୁଅ ୟେ ଉଇଣ୍ଡୋଗୁଡିକର ପ୍ରତିଷ୍ଠାପନ ଭଲଭାବରେ ବହିରାକୃତ୍ତି ହେବା ଦରକାର ଏବଂ ଆଉଥରେ ପ୍ରତିଷ୍ଠାପନକୁ ଚେଷ୍ଟାକର୤"
 
 #: inc_openoffice/windows/msi_languages/Error.ulf#OOO_ERROR_66
 msgid  "User [2] has previously initiated an installation for product [3].  That user will need to run that installation again before using that product.  Your current installation will now continue."
-msgstr ""
+msgstr "ଉପୟୋକର୍ତ୍ତା [୨] ପଦାର୍ଥ ପାଇଁ ପୂର୍ବରୁ ଚାଲୁ କରି  ପ୍ରତିଷ୍ଠାପିତ କରାୟାଇଛି  [୩]୤  ସେହି ପଦାର୍ଥରୁ ଉପୟୋଗକରିବା ପୂର୍ବରୁ ସେହି ପ୍ରତିଷ୍ଠାପନକୁ ସେହି ଉପଭୋକ୍ତା ଚାଲୁକରିବା ଦରକାର୤ ତୁମର ବର୍ତ୍ତମାନର ପ୍ରତିଷ୍ଠାପନ ଚାଲୁରହିବ୤"
 
 #: inc_openoffice/windows/msi_languages/Error.ulf#OOO_ERROR_67
 msgid  "User [2] has previously initiated an installation for product [3].  That user will need to run that installation again before using that product."
-msgstr ""
+msgstr "ପଦାର୍ଥ ପାଇଁ  [୩] ପୂର୍ବବର୍ତ୍ତୀ ଉପୟୋଗକର୍ତ୍ତା [୨] ୤  ସେହି ପଦାର୍ଥରୁ ଉପୟୋଗକରିବା ପୂର୍ବରୁ ସେହି ପ୍ରତିଷ୍ଠାପନକୁ ସେହି ଉପଭୋକ୍ତା ଚାଲୁକରିବା ଦରକାର୤"
 
 #: inc_openoffice/windows/msi_languages/Error.ulf#OOO_ERROR_68
 msgid  "Out of disk space -- Volume: '[2]'; required space: [3] KB; available space: [4] KB.  Free some disk space and retry."
-msgstr ""
+msgstr "ଡିକ୍ସ ସ୍ଥାନର ବାହାରେ -- ଭଲ୍ଯୁମ: [୨]; ଦରକାରୀ ସ୍ଥାନ: [୩] KB; ଉପସ୍ଥିତ ସ୍ଥାନ: [୪] KB. କିଛି ମାଗଣା ଡିକ୍ସ୍ ସ୍ଥାନ ଏବଂ ପୁନଃସ୍ଥାପନ୤"
 
 #: inc_openoffice/windows/msi_languages/Error.ulf#OOO_ERROR_69
 msgid  "Are you sure you want to cancel?"
@@ -409,15 +409,15 @@ msgstr "ତୁମେ ନିଶ୍ଚଯ ଏହାକୁ ରଦ୍ଦକରିବ
 
 #: inc_openoffice/windows/msi_languages/Error.ulf#OOO_ERROR_70
 msgid  "The file [2][3] is being held in use {by the following process: Name: [4], ID: [5], Window Title: [6]}.  Close that application and retry."
-msgstr ""
+msgstr "ଫାଇଲ [2][3] କୁ ବ୍ୟବହାରରେ ଲଗାଯାଇଛି {ନିମ୍ନଲିଖିତ ପଦ୍ଧତି ଦ୍ୱାରା: ନାମ: [4], ID: [5], ୱିଣ୍ଡୋ ଶୀର୍ଷକ: [6]}.  ସେହି ପ୍ରୟୋଗକୁ ବନ୍ଦ କରନ୍ତୁ ଏବଂ ପୁଣିଥରେ ଚେଷ୍ଟାକରନ୍ତୁ।"
 
 #: inc_openoffice/windows/msi_languages/Error.ulf#OOO_ERROR_71
 msgid  "The product [2] is already installed, preventing the installation of this product.  The two products are incompatible."
-msgstr ""
+msgstr "ପଦାର୍ଥ [୨] ଆଗରୁ ପ୍ରତିଷ୍ଠାପିତ ହୋଇଛି,ଏହି ପଦାର୍ଥର ପ୍ରତିଷ୍ଠାପନକୁ ପ୍ରତିରୋଧକରିବା. ଦୁଇଟି ଦ୍ରବ୍ଯଗୁଡିକ ପରସ୍ପର ବିରୋଧୀ ଅଟନ୍ତି୤"
 
 #: inc_openoffice/windows/msi_languages/Error.ulf#OOO_ERROR_72
 msgid  "Out of disk space -- Volume: [2]; required space: [3] KB; available space: [4] KB.  If rollback is disabled, enough space is available. Click Cancel to quit, Retry to check available disk space again, or Ignore to continue without rollback."
-msgstr ""
+msgstr "ଡିକ୍ସ ସ୍ଥାନର ବାହାରେ -- ଭଲ୍ଯୁମ: [୨]; ଦରକାରୀ ସ୍ଥାନ: [୩] KB; ଉପସ୍ଥିତ ସ୍ଥାନ: [୪] KB. ୟଦି ରୋଲ ପଛ ଅକ୍ଷମ, ଅନେକ ସ୍ଥାନ ଉପଲବ୍ଧ ଅଛି୤ ବର୍ଜନକରିବାପାଇଁ ରଦ୍ଦକୁ ଦବାନ୍ତୁ,ପୁନଃଚେଷ୍ଟା ପାଇଁ ଆଉଥରେ ଉପଲବ୍ଧ ଡିକ୍ସ୍ ସ୍ଥାନକୁ ୟାଞ୍ଚକର,କିମ୍ବା ରୋଲ୍ ପଛ ବ୍ଯତିତ ଚାଲୁରଖିବା ପାଇଁ  ଅଜ୍ଞାନକର୤"
 
 #: inc_openoffice/windows/msi_languages/Error.ulf#OOO_ERROR_73
 msgid  "Could not access network location [2]."
@@ -425,11 +425,11 @@ msgstr " [୨] ନେଟ୍ ଉଆର୍କର ସ୍ଥାନ ପ୍ରବେ�
 
 #: inc_openoffice/windows/msi_languages/Error.ulf#OOO_ERROR_74
 msgid  "The following applications should be closed before continuing the installation:"
-msgstr ""
+msgstr "ପ୍ରତିଷ୍ଠାପନ ଚାଲୁରହିବା ପର୍ବରୁ ଏହି ପ୍ରଯୋଗଗୁଡିକ ବନ୍ଦହେବା ଉଚିତନୁହେଁ:"
 
 #: inc_openoffice/windows/msi_languages/Error.ulf#OOO_ERROR_75
 msgid  "Could not find any previously installed compliant products on the machine for installing this product."
-msgstr ""
+msgstr "ଏହି ପଦାର୍ଥର ପ୍ରତିଷ୍ଠାପନ ପାଇଁ ୟନ୍ତ୍ର ଉପରର କୌଣସି ପୂର୍ବ ପ୍ରତିଷ୍ଠାପିତ ଅଭିୟୋଗକରିବା ଦ୍ରବ୍ଯଗୁଡିକ ମିଳୁନାହିଁ୤"
 
 #: inc_openoffice/windows/msi_languages/Error.ulf#OOO_ERROR_76
 msgid  "The key [2] is not valid.  Verify that you entered the correct key."
@@ -437,23 +437,23 @@ msgstr "[୨] କି ନ୍ଯାୟ୍ଯ ନୁହେଁ୤ପରୀକ୍ଷ�
 
 #: inc_openoffice/windows/msi_languages/Error.ulf#OOO_ERROR_77
 msgid  "The installer must restart your system before configuration of [2] can continue.  Click Yes to restart now or No if you plan to restart later."
-msgstr ""
+msgstr " [୨] ର ବହିରାକୃତ୍ତିର ଚାଲୁ ପାଇଁ ପୂର୍ବରୁ ତୁମ ସିସ୍ଟମ୍ ର ପ୍ରତିଷ୍ଠାପନକୁ ନିଶ୍ଚଯ ପୁନଃଆରମ୍ଭକର୤ ପୁନଃଆରମ୍ଭକରିବା ପାଇଁ ବର୍ତ୍ତମାନ ହଁ କୁ ଦବାନ୍ତୁ କିମ୍ବା ୟଦି ତୁମେ ପଛରେ ପୁନଃଆରମ୍ଭକରିବାକୁ ୟୋଜନା କରୁଛ୤"
 
 #: inc_openoffice/windows/msi_languages/Error.ulf#OOO_ERROR_78
 msgid  "You must restart your system for the configuration changes made to [2] to take effect. Click Yes to restart now or No if you plan to restart later."
-msgstr ""
+msgstr " [୨] ପ୍ରଭାବ ରଖିବାକୁ ତୁମ ସିସ୍ଟମର କନଫିଗରେସନ ପରିବର୍ତ୍ତନକରିବା ପାଇଁ ତୁମେ ନିଶ୍ଚଯ ଆଉଥରେ ପୁନଃଆରମ୍ଭକର୤ ପୁନଃଆରମ୍ଭକରିବା ପାଇଁ ବର୍ତ୍ତମାନ ହଁ କୁ ଦବାନ୍ତୁ କିମ୍ବା ୟଦି ତୁମେ ପରେ ପୁନଃଆରମ୍ଭକରିବାକୁ ୟୋଜନା କରୁଛ୤"
 
 #: inc_openoffice/windows/msi_languages/Error.ulf#OOO_ERROR_79
 msgid  "An installation for [2] is currently suspended.  You must undo the changes made by that installation to continue.  Do you want to undo those changes?"
-msgstr ""
+msgstr "ପରିବର୍ତ୍ତିତ [୨] ପାଇଁ ବର୍ତ୍ତମାନ  ସ୍ଥଗିତ ଅଛି୤  ପ୍ରତିଷ୍ଠାପନକୁ ଚାଲୁରଖିବା ପାଇଁ ତୁମେ ନିଶ୍ଚଯ ଆଉଥରେ ପରିବର୍ତ୍ତନକରିପାର.୤ତୁମେ ଆଉଥରେ ତାହାକୁ ପରିବର୍ତ୍ତନ କରିବାକୁ ଚାହୁଁଚ କି ?"
 
 #: inc_openoffice/windows/msi_languages/Error.ulf#OOO_ERROR_80
 msgid  "A previous installation for this product is in progress.  You must undo the changes made by that installation to continue.  Do you want to undo those changes?"
-msgstr ""
+msgstr "ଏହି ଦ୍ରବ୍ଯର ପୂର୍ବବର୍ତ୍ତୀ ପ୍ରତିଷ୍ଠାପନର ପ୍ରଗତୀରେ ଅଛି୤ ଚାଲୁରଖିବା ପାଇଁ ସେହି ପ୍ରତିଷ୍ଠାପନ ଦ୍ବାରା ତୁମକୁ ଆଉଥରେ ନିଶ୍ଚଯ ପରିବର୍ତ୍ତନଗୁଡିକୁ ଅନାବୃତି କରିବ୤ ସେହି ପରିବର୍ତ୍ତ୍ନଗୁଡିକୁ ତୁମେ ଅନାବୃତ କରିବାକୁ ଚାହୁଁଛ କି?"
 
 #: inc_openoffice/windows/msi_languages/Error.ulf#OOO_ERROR_81
 msgid  "No valid source could be found for product [2].  The Windows Installer cannot continue."
-msgstr ""
+msgstr "ଦ୍ରବ୍ଯ [୨] ପାଇଁ କୌଣସି ନ୍ଯାୟ୍ଯ ମୂଳ ମିଳୁନାହିଁ୤  ଉଇଣ୍ଡୋଗୁଡିକର ପ୍ରତିଷ୍ଠାପନକୁ ଚାଲୁରଖିପାରିବନାହିଁ୤"
 
 #: inc_openoffice/windows/msi_languages/Error.ulf#OOO_ERROR_82
 msgid  "Installation operation completed successfully."
@@ -469,23 +469,23 @@ msgstr "ଦ୍ରବ୍ଯ: [୨] -- [୩]"
 
 #: inc_openoffice/windows/msi_languages/Error.ulf#OOO_ERROR_85
 msgid  "You may either restore your computer to its previous state or continue the installation later. Would you like to restore?"
-msgstr ""
+msgstr "ତୁମେ ତୁମର  କମ୍ପ୍ଯୁଟରର ପୂର୍ବବର୍ତ୍ତୀ ସ୍ଟେଟକୁ ପୁନଃସଞ୍ଚଯ କରିପାର କିମ୍ବା ପରେ ପ୍ରତିଷ୍ଠାପନକୁ ଚାଲୁରଖ୤ ତୁମେ ପୁନଃସଞ୍ଚଯ କରିବାକୁ ଚାହୁଁଚ କି?"
 
 #: inc_openoffice/windows/msi_languages/Error.ulf#OOO_ERROR_86
 msgid  "An error occurred while writing installation information to disk.  Check to make sure enough disk space is available, and click Retry, or Cancel to end the installation."
-msgstr ""
+msgstr "ଡିକ୍ସ୍କୁ ପ୍ରତିଷ୍ଠାପନ ସୂଚନା ଲେଖିବା ସମଯରେ ଏକ ଭୂଲ୍ ଘଟିଲା୤ତୁମେ ନିଶ୍ଚଯହେବା ପାଇଁ ୟାଞ୍ଚକର ୟେ ଅନେକ ଡିକ୍ସ ସ୍ଥାନ ଅଛି, ଏବଂ ପୁନଃଚେଷ୍ଟାକୁ ଦବାନ୍ତୁ, କିମ୍ବା ପ୍ରତିଷ୍ଠାପନକୁ ଶେଷକରିବା ପାଇଁ ରଦ୍ଦକରନ୍ତୁ୤"
 
 #: inc_openoffice/windows/msi_languages/Error.ulf#OOO_ERROR_87
 msgid  "One or more of the files required to restore your computer to its previous state could not be found.  Restoration will not be possible."
-msgstr ""
+msgstr "ତୁମ କମ୍ପ୍ଯୁଟରର ପୂର୍ବବର୍ତ୍ତୀ ସ୍ଟେଟକୁ ପୁନଃସଞ୍ଚଯ କରିବା ପାଇଁ  ଗୋଟିଏ କିମ୍ବା ବହୁତ ଫାଇଲ୍ଗୁଡିକ ଦରକାର୤ ପୁନଃସଞ୍ଚିତ ହୋଇପାରିବନାହିଁ୤"
 
 #: inc_openoffice/windows/msi_languages/Error.ulf#OOO_ERROR_88
 msgid  "[2] cannot install one of its required products. Contact your technical support group.  {{System Error: [3].}}"
-msgstr ""
+msgstr "[୨] ଏହାର ଗୋଟିଏ ଦରକାର ପଦାର୍ଥ ସହିତ ପ୍ରତିଷ୍ଠାପିତ ହୋଇପାରିନାହିଁ ୤ ତୁମର ଟେକ୍ନିକାଲ ସମର୍ଥିନ ସମୂହ ସହିତ ୟୋଗାୟୋଗ କରନ୍ତୁ୤{{ସିସ୍ଟମ ତୃଟି [୩].}}"
 
 #: inc_openoffice/windows/msi_languages/Error.ulf#OOO_ERROR_89
 msgid  "The older version of [2] cannot be removed.  Contact your technical support group.  {{System Error [3].}}"
-msgstr ""
+msgstr " [୨] ର ପୁରୂଣା ଭାଷାନ୍ତର ହଟାୟାଇପାରିବନାହିଁ ୤  ତୁମର ଟେକ୍ନିକାଲ ସମର୍ଥିନ ସମୂହ ସହିତ ୟୋଗାୟୋଗ କରନ୍ତୁ୤{{ସିସ୍ଟମ ତୃଟି [୩].}}"
 
 #: inc_openoffice/windows/msi_languages/Error.ulf#OOO_ERROR_90
 msgid  "The path [2] is not valid.  Please specify a valid path."
@@ -493,19 +493,19 @@ msgstr "ପଥ [୨] ନ୍ଯାୟ୍ଯ ନୁହେଁ୤ ଦଯାକରି
 
 #: inc_openoffice/windows/msi_languages/Error.ulf#OOO_ERROR_91
 msgid  "Out of memory. Shut down other applications before retrying."
-msgstr ""
+msgstr " ସ୍ମୃତିଶକ୍ତିର ବାହାରେ୤ ପୁନଃଚେଷ୍ଟାକରିବା ପୂର୍ବରୁ  ଅନ୍ଯ ପ୍ରଗଗୁଡିକୁ ବନ୍ଦକରି ଦିଅନ୍ତୁ୤"
 
 #: inc_openoffice/windows/msi_languages/Error.ulf#OOO_ERROR_92
 msgid  "There is no disk in drive [2]. Please insert one and click Retry, or click Cancel to go back to the previously selected volume."
-msgstr ""
+msgstr "[୨] ଏହି ଡ୍ରାଇଭରେ କୌଣସି ଡିକ୍ସ ନାହିଁ୤ ଦଯାକରି ଗୋଟିଏ ଭର୍ତ୍ତିକରନ୍ତୁ ଏବଂ ପୁନଃଚେଷ୍ଟାକୁ ଦବାନ୍ତୁ,କିମ୍ବା ପୂର୍ବବର୍ତ୍ତୀ  ମନୋନିତ  ଭଲ୍ଯୁମ୍କୁ  ୟିବା ପାଇଁ  ରଦ୍ଦକୁ ଦବାନ୍ତୁ୤"
 
 #: inc_openoffice/windows/msi_languages/Error.ulf#OOO_ERROR_93
 msgid  "There is no disk in drive [2]. Please insert one and click Retry, or click Cancel to return to the browse dialog and select a different volume."
-msgstr ""
+msgstr "[୨] ଏହି ଡ୍ରାଇଭ୍ ରେ କୌଣସି ଡିକ୍ସ୍ ନାହିଁ୤ ଦଯାକରି ଗୋଟିଏ ଭର୍ତ୍ତିକରନ୍ତୁ ଏବଂ ପୁନଃଚେଷ୍ଟାକୁ ଦବାନ୍ତୁ,କିମ୍ବା ବ୍ରାଉସ୍ ଡାଇଲୋଗକୁ ଖୋଲିବା ପାଇଁ ରଦ୍ଦକୁ ଦବାନ୍ତୁ ଏବଂ ଏକ ଭିନ୍ନ ଭଲ୍ଯୁମ ମନୋନିତ କରନ୍ତୁ୤"
 
 #: inc_openoffice/windows/msi_languages/Error.ulf#OOO_ERROR_94
 msgid  "The folder [2] does not exist.  Please enter a path to an existing folder."
-msgstr ""
+msgstr "ଫୋଲ୍ଡର [୨] ନାହିଁ ୤  ଦଯାକରି ରହିଥିବା ଫୋଲ୍ଡର ପାଇଁ ଏକ ପଥ ପ୍ରବେଶ କରାନ୍ତୁ୤"
 
 #: inc_openoffice/windows/msi_languages/Error.ulf#OOO_ERROR_95
 msgid  "You have insufficient privileges to read this folder."
@@ -513,7 +513,7 @@ msgstr "ଏହି ଫୋଲ୍ଡରକୁ ପଢିବା ପାଇଁ ତୁ�
 
 #: inc_openoffice/windows/msi_languages/Error.ulf#OOO_ERROR_96
 msgid  "A valid destination folder for the installation could not be determined."
-msgstr ""
+msgstr "ଏକ ନ୍ଯାୟ୍ଯ ଗନ୍ତବ୍ଯ ଫୋଲ୍ଡର ପ୍ରତିଷ୍ଠାପନ ପାଇଁ ନିର୍ଦିଷ୍ଟ ହୋଇପାରିବନାହିଁ୤"
 
 #: inc_openoffice/windows/msi_languages/Error.ulf#OOO_ERROR_97
 msgid  "Error attempting to read from the source installation database: [2]."
@@ -521,115 +521,115 @@ msgstr "ମୂଳ ପ୍ରତିଷ୍ଠାପିତ ତଥ୍ଯ ସଞ୍ଚ
 
 #: inc_openoffice/windows/msi_languages/Error.ulf#OOO_ERROR_98
 msgid  "Scheduling reboot operation: Renaming file [2] to [3]. Must reboot to complete operation."
-msgstr ""
+msgstr "ରିବୁଟ କାର୍ୟ୍ଯକ୍ରମକୁ ତାଲିକାକରିବା ପାଇଁ:ପୁନଃନାମିତ ଫାଇଲ୍ [୨] କୁ[୩]୤ କାର୍ୟ୍ଯକ୍ରମକୁ ସଂପୂର୍ଣ୍ଣ କରିବା ପାଇଁ  ନିଶ୍ଚଯ ରିବୁଟ୍କର୤"
 
 #: inc_openoffice/windows/msi_languages/Error.ulf#OOO_ERROR_99
 msgid  "Scheduling reboot operation: Deleting file [2]. Must reboot to complete operation."
-msgstr ""
+msgstr "ରିବୁଟ୍ କାର୍ୟ୍ଯକ୍ରମକୁ ତାଲିକାକରିବା ପାଇଁ: ଫାଇଲ [୨] ବିଲୋପକର୤ କାର୍ୟ୍ଯକ୍ରମକୁ ସଂପୂର୍ଣ୍ଣ କରିବା ପାଇଁ  ନିଶ୍ଚଯ ରିବୁଟ୍କର୤"
 
 #: inc_openoffice/windows/msi_languages/Error.ulf#OOO_ERROR_100
 msgid  "Module [2] failed to register.  HRESULT [3].  Contact your support personnel."
-msgstr ""
+msgstr "ମୋଡ୍ଯୁଲ୍  [୨] ରେଜିଷ୍ଟର ହେବାକୁ ଅସଫଳ ହେଲା ୤  HRESULT [୩]୤  ତୁମର ସମର୍ଥନ ବ୍ଯକ୍ତିକୁ ୟୋଗାୟୋଗକର୤"
 
 #: inc_openoffice/windows/msi_languages/Error.ulf#OOO_ERROR_101
 msgid  "Module [2] failed to unregister.  HRESULT [3].  Contact your support personnel."
-msgstr ""
+msgstr "ମୋଡ୍ଯୁଲ  [୨] ଅନରେଜିଷ୍ଟରକରିବାକୁ ଅସଫଳ ହେଲା ୤  HRESULT [୩]୤  ତୁମର ସମର୍ଥନ ବ୍ଯକ୍ତିକୁ ୟୋଗାୟୋଗକର୤"
 
 #: inc_openoffice/windows/msi_languages/Error.ulf#OOO_ERROR_102
 msgid  "Failed to cache package [2]. Error: [3]. Contact your support personnel."
-msgstr ""
+msgstr " [୨] ପ୍ଯାକେଜ୍କୁ ରଖିବାକୁ ଅସଫଳ ହେଲା୤ ତୃଟି: [୩].ତୁମର ସମର୍ଥନ ବ୍ଯକ୍ତିକୁ ୟୋଗାୟୋଗକର୤"
 
 #: inc_openoffice/windows/msi_languages/Error.ulf#OOO_ERROR_103
 msgid  "Could not register font [2].  Verify that you have sufficient permissions to install fonts, and that the system supports this font."
-msgstr ""
+msgstr " [୨] ଫଣ୍ଟ  ରେଜିଷ୍ଟର ହୋଇପାରିବନାହିଁ୤ ପରୀକ୍ଷାକର ୟେ ଫଣ୍ଟ୍ଗୁଡିକୁ ପ୍ରତିଷ୍ଠାପନକରିବା ପାଇଁ ତୁମ ପାଖରେ ୟଥେଷ୍ଟ ଅନୁମତି ଅଛି, ଏବଂ ସେହି ସିସ୍ଟମ ଏହି ଫଣ୍ଟ୍କୁ ସମର୍ଥନ କରୁଛି୤"
 
 #: inc_openoffice/windows/msi_languages/Error.ulf#OOO_ERROR_104
 msgid  "Could not unregister font [2]. Verify that you have sufficient permissions to remove fonts."
-msgstr ""
+msgstr " [୨] ଫଣ୍ଟ୍ ଅନରେଜିଷ୍ଟର ହୋଇପାରିବନାହିଁ୤ ପରୀକ୍ଷାକର ୟେ ଫଣ୍ଟ୍ଗୁଡିକୁ ହଟାଇବା ପାଇଁ ତୁମ ପାଖରେ ୟଥେଷ୍ଟ ଅନୁମତି ଅଛି୤"
 
 #: inc_openoffice/windows/msi_languages/Error.ulf#OOO_ERROR_105
 msgid  "Could not create shortcut [2]. Verify that the destination folder exists and that you can access it."
-msgstr ""
+msgstr " [୨]ଛୋଟ ବାଟକୁ ସୃଷ୍ଟିହୋଇପାରିବ ନାହିଁ. ପରୀକ୍ଷାକର ୟେ ଗନ୍ତବ୍ଯ ଫୋଲ୍ଡର  ଅଛି ଏବଂ ତୁମେ ପ୍ରବେଶ କରିପାର୤"
 
 #: inc_openoffice/windows/msi_languages/Error.ulf#OOO_ERROR_106
 msgid  "Could not remove shortcut [2]. Verify that the shortcut file exists and that you can access it."
-msgstr ""
+msgstr " [୨]ଛୋଟ ବାଟକୁ ହଟାଇପାରିବ ନାହିଁ୤ ପରୀକ୍ଷାକର ୟେ ଫାଇଲ ପାଇଁ ଛୋଟବାଟ ଅଛି ଏବଂ ତୁମେ ପ୍ରବେଶ କରିପାର୤"
 
 #: inc_openoffice/windows/msi_languages/Error.ulf#OOO_ERROR_107
 msgid  "Could not register type library for file [2].  Contact your support personnel."
-msgstr ""
+msgstr " [୨] ଫାଇଲ ପାଇଁ ଗ୍ରନ୍ଥାଳଯ ପ୍ରକାର ରେଜିଷ୍ଟର ହୋଇପାରେ ନାହିଁ୤  ତୁମେ ସମର୍ଥନ ବ୍ଯକ୍ତିକୁ ୟୋଗାୟୋଗକର୤"
 
 #: inc_openoffice/windows/msi_languages/Error.ulf#OOO_ERROR_108
 msgid  "Could not unregister type library for file [2].  Contact your support personnel."
-msgstr ""
+msgstr " [୨] ଫାଇଲ ପାଇଁ ଗ୍ରନ୍ଥାଳଯ ପ୍ରକାର ଅନରେଜିଷ୍ଟର ହୋଇପାରିବନାହିଁ୤  ତୁମେ ସମର୍ଥନ ବ୍ଯକ୍ତିକୁ ୟୋଗାୟୋଗକର୤"
 
 #: inc_openoffice/windows/msi_languages/Error.ulf#OOO_ERROR_109
 msgid  "Could not update the INI file [2][3].  Verify that the file exists and that you can access it."
-msgstr ""
+msgstr " INI ଫାଇଲ୍  [୨][୩] ଅପଡେଟ କରନାହିଁ୤ ପରୀକ୍ଷାକର ୟେ ଫାଇଲ ଅଛି ତୁମେ ପ୍ରବେଶ କରିପାର୤"
 
 #: inc_openoffice/windows/msi_languages/Error.ulf#OOO_ERROR_110
 msgid  "Could not schedule file [2] to replace file [3] on reboot.  Verify that you have write permissions to file [3]."
-msgstr ""
+msgstr "ଫାଇଲ ସିଡୁଲ ହୋଇପାରୁନାହିଁ [୨] ସ୍ଥାପନ ଫାଇଲ [୩] ର ରିବୁଟ୍୤  ପରୀକ୍ଷାକର ୟେ ତୁମପାଖରେ ଫାଇଲ [୩] କୁ ଲେଖିବାର ଅଧିକାର ଅଛି୤"
 
 #: inc_openoffice/windows/msi_languages/Error.ulf#OOO_ERROR_111
 msgid  "Error removing ODBC driver manager, ODBC error [2]: [3]. Contact your support personnel."
-msgstr ""
+msgstr "ତୃଟି ହଟାଇବା ODBC ଚାଳକ ପରିଚାଲକ, ODBC ତୃଟି [୨]: [୩]୤ ତୁମେ ସମର୍ଥନ ବ୍ଯକ୍ତିକୁ ୟୋଗାୟୋଗକର୤"
 
 #: inc_openoffice/windows/msi_languages/Error.ulf#OOO_ERROR_112
 msgid  "Error installing ODBC driver manager, ODBC error [2]: [3]. Contact your support personnel."
-msgstr ""
+msgstr "ତୃଟି ପ୍ରତିଷ୍ଠାପିତ ODBC ଚାଳକ ପରିଚାଲକ, ODBC ତୃଟି [୨]: [୩]୤ ତୁମେ ସମର୍ଥନ ବ୍ଯକ୍ତିକୁ ୟୋଗାୟୋଗକର୤"
 
 #: inc_openoffice/windows/msi_languages/Error.ulf#OOO_ERROR_113
 msgid  "Error removing ODBC driver [4], ODBC error [2]: [3]. Verify that you have sufficient privileges to remove ODBC drivers."
-msgstr ""
+msgstr "ତୃଟି ହଟାଇବା ODBC ଚାଳକ [୪], ODBC ତୃଟି [୨]: [୩]୤ ପରୀକ୍ଷାକର ୟେ   ତୁମ ପାଖରେ ୟଥେଷ୍ଟ ବ୍ଯବସ୍ଥା ଅଛି ODBC ଚାଳକଗୁଡିକୁ ହଟାଇବା ପାଇଁ୤"
 
 #: inc_openoffice/windows/msi_languages/Error.ulf#OOO_ERROR_114
 msgid  "Error installing ODBC driver [4], ODBC error [2]: [3]. Verify that the file [4] exists and that you can access it."
-msgstr ""
+msgstr "ତୃଟି ପ୍ରତିଷ୍ଠାପିତ ODBC ଚାଳକ  [୪], ODBC ତୃଟି [୨]: [୩]. ପରୀକ୍ଷାକର ୟେ ଫାଇଲ  [୪] ଅଛି ଏବଂ ତାହା ତୁମେ ପ୍ରବେଶ କରାଇପାର୤"
 
 #: inc_openoffice/windows/msi_languages/Error.ulf#OOO_ERROR_115
 msgid  "Error configuring ODBC data source [4], ODBC error [2]: [3]. Verify that the file [4] exists and that you can access it."
-msgstr ""
+msgstr "ତୃଟି ବହିରାକୃତ୍ତି ODBC ତଥ୍ଯ ମୂଳ [୪], ODBC ତୃଟି [୨]: [୩]୤  ପରୀକ୍ଷାକର ୟେ ଫାଇଲ  [୪] ଅଛି ଏବଂ ତାହା ତୁମେ ପ୍ରବେଶ କରାଇପାର୤"
 
 #: inc_openoffice/windows/msi_languages/Error.ulf#OOO_ERROR_116
 msgid  "Service [2] ([3]) failed to start.  Verify that you have sufficient privileges to start system services."
-msgstr ""
+msgstr "ସେବା [୨] ([୩]) ଆରମ୍ଭ ପାଇଁ ଅସଫଳ ହେଲା୤ପରୀକ୍ଷାକର ୟେ  ସିସ୍ଟମ ସେବାଗୁଡିକୁ ଆରମ୍ଭକରିବା ପାଇଁ ତୁମ ପାଖରେ ୟଥେଷ୍ଟ ବ୍ଯବସ୍ଥା  ଅଛି ୤"
 
 #: inc_openoffice/windows/msi_languages/Error.ulf#OOO_ERROR_117
 msgid  "Service [2] ([3]) could not be stopped.  Verify that you have sufficient privileges to stop system services."
-msgstr ""
+msgstr "ସେବା [୨] ([୩]) ବନ୍ଦ ହୋଇପାରିବନାହିଁ୤ପରୀକ୍ଷାକର ୟେ  ସିସ୍ଟମ ସେବାଗୁଡିକୁ ଆରମ୍ଭକରିବା ପାଇଁ ତୁମ ପାଖରେ ୟଥେଷ୍ଟ ବ୍ଯବସ୍ଥା  ଅଛି ୤"
 
 #: inc_openoffice/windows/msi_languages/Error.ulf#OOO_ERROR_118
 msgid  "Service [2] ([3]) could not be deleted.  Verify that you have sufficient privileges to remove system services."
-msgstr ""
+msgstr "ସେବା [୨] ([୩]) ବିଲୋପ ହୋଇପାରିବନାହିଁ୤ପରୀକ୍ଷାକର ୟେ  ସିସ୍ଟମ ସେବାଗୁଡିକୁ ଆରମ୍ଭକରିବା ପାଇଁ ତୁମ ପାଖରେ ୟଥେଷ୍ଟ ବ୍ଯବସ୍ଥା  ଅଛି ୤"
 
 #: inc_openoffice/windows/msi_languages/Error.ulf#OOO_ERROR_119
 msgid  "Service [2] ([3]) could not be installed.  Verify that you have sufficient privileges to install system services."
-msgstr ""
+msgstr "ସେବା [୨] ([୩]) ପ୍ରତିଷ୍ଠାପନ ହୋଇପାରିବନାହିଁ ୤ ପରୀକ୍ଷାକର ୟେ  ସିସ୍ଟମ ସେବାଗୁଡିକୁ ଆରମ୍ଭକରିବା ପାଇଁ ତୁମ ପାଖରେ ୟଥେଷ୍ଟ ବ୍ଯବସ୍ଥା  ଅଛି ୤"
 
 #: inc_openoffice/windows/msi_languages/Error.ulf#OOO_ERROR_120
 msgid  "Could not update environment variable [2].  Verify that you have sufficient privileges to modify environment variables."
-msgstr ""
+msgstr "ପରିବେଶ ପରିବର୍ତ୍ତନଶୀଳ ଦ୍ରବ୍ଯ ଅପଡେଟ ହୋଇନାହିଁ[୨].୤ପରୀକ୍ଷାକର ୟେ   ପରିବେଶ ପରିବର୍ତ୍ତନଶୀଳ  ପରିବର୍ତ୍ତନକରିବା ପାଇଁ  ତୁମ ପାଖରେ ୟଥେଷ୍ଟ ବ୍ଯବସ୍ଥା  ଅଛି ୤"
 
 #: inc_openoffice/windows/msi_languages/Error.ulf#OOO_ERROR_121
 msgid  "You do not have sufficient privileges to complete this installation for all users of the machine.  Log on as an administrator and then retry this installation."
-msgstr ""
+msgstr "ୟନ୍ତ୍ରର ସମସ୍ତ ଉପୟୋଗକର୍ତ୍ତାଙ୍କ ପାଇଁ ତୁମ ପାଖରେ ୟଥେଷ୍ଟ ବ୍ଯବସ୍ଥା ନାହିଁ ଏହି ପ୍ରତିଷ୍ଠାପନକୁ ସଂପୂର୍ଣ୍ଣ କରିବା ପାଇଁ୤ଏକ ପ୍ରଶାସକ ପରି ଲଗଅନକର ଏବଂ ତେଣୁ ଏହି ପ୍ରତିଷ୍ଠାପନକୁ ପୁନଃପ୍ରବେଶ କରାଅ୤"
 
 #: inc_openoffice/windows/msi_languages/Error.ulf#OOO_ERROR_122
 msgid  "Could not set file security for file [3]. Error: [2].  Verify that you have sufficient privileges to modify the security permissions for this file."
-msgstr ""
+msgstr "ଫାଇଲ ପାଇଁ ଫାଇଲ ସୁରକ୍ଷିତ ସେଟ ହୋଇପାରିଲାନାହିଁ [୩]୤ ତୃଟି: [୨].  ପରୀକ୍ଷାକର ୟେ ଫାଇଲ୍ ପାଇଁ ତୁମ ପାଖରେ ୟଥେଷ୍ଟ ବ୍ଯବସ୍ଥା ଅଛି ସୁରକ୍ଷିତ ଅନୁମତିକୁ ପରିବର୍ତ୍ତନ କରିବା ପାଇଁ."
 
 #: inc_openoffice/windows/msi_languages/Error.ulf#OOO_ERROR_123
 msgid  "Component Services (COM+ 1.0) are not installed on this computer.  This installation requires Component Services in order to complete successfully.  Component Services are available on Windows 2000."
-msgstr ""
+msgstr "ଉପାଂଶ ସେବାଗୁଡିକ (COM+ ୧.0) ଏହି କମ୍ପ୍ଯୁଟରରେ ପ୍ରତିଷ୍ଠାପିତ ହୋଇନାହିଁ୤ କ୍ରମରେ ସଂପୂର୍ଣ୍ଣ ଭାବରେ ସଫଳକରିବା ପାଇଁ ଏହି ପ୍ରତିଷ୍ଠାପନ ଉପାଂଶ ସେବାଗୁଡିକ ପାଇଁ ଦରକାର୤ଉଇଣ୍ଡା 2000ରେ ଉପାଂଶ ସେବାଗୁଡିକ ଉପଲବ୍ଧ ଅଛି୤"
 
 #: inc_openoffice/windows/msi_languages/Error.ulf#OOO_ERROR_124
 msgid  "Error registering COM+ application.  Contact your support personnel for more information."
-msgstr ""
+msgstr "ରେଜିଷ୍ଟରକରିବା ତୃଟି  COM+ ପ୍ରଯୋଗ୤ ଅଧିକ ସୂଚନା ପାଇଁ ତୁମର  ସମର୍ଥନ ବ୍ଯକ୍ତିକୁ ୟୋଗାୟୋଗକର୤"
 
 #: inc_openoffice/windows/msi_languages/Error.ulf#OOO_ERROR_125
 msgid  "Error unregistering COM+ application.  Contact your support personnel for more information."
-msgstr ""
+msgstr "ଅନରେଜିଷ୍ଟରକରିବା ତୃଟି COM+ ପ୍ରଯୋଗ୤ ଅଧିକ ସୂଚନା ପାଇଁ ତୁମର  ସମର୍ଥନ ବ୍ଯକ୍ତିକୁ ୟୋଗାୟୋଗକର୤"
 
 #: inc_openoffice/windows/msi_languages/Error.ulf#OOO_ERROR_126
 msgid  "The description for service '[2]' ([3]) could not be changed."
@@ -637,23 +637,23 @@ msgstr "ସେବା ପାଇଁ ବର୍ଣ୍ଣନା '[୨]' ([୩]) ପ�
 
 #: inc_openoffice/windows/msi_languages/Error.ulf#OOO_ERROR_127
 msgid  "The Windows Installer service cannot update the system file [2] because the file is protected by Windows.  You may need to update your operating system for this program to work correctly. {{Package version: [3], OS Protected version: [4]}}"
-msgstr ""
+msgstr "ଉଇଣ୍ଡୋଗୁଡିକ ପ୍ରତିଷ୍ଠାପନ ସେବା ସିସ୍ଟମ ଫାଇଲ ଉଇଣ୍ଡୋଗୁଡିକ ଅପଡେଟ କରେନାହିଁ [୨] କାରଣ ଫାଇଲ ଉଇଣ୍ଡୋଗୁଡିକ ଦ୍ବାରା ସୁରକ୍ଷିତ୤ଠିକ୍ ଭାବେ କାମକରିବାକୁ ଏହା ପୋଗ୍ରାମ ପାଇଁ ତୁମେ ତୁମର କାର୍ୟ୍ଯକାରୀ ସିସ୍ଟମକୁ ଅପଡେଟ କରିବା ଦରକାର{{ପ୍ଯାକେଜ ଭାଷାନ୍ତର: [୩], OS ସୁରକ୍ଷିତ ଭାଷାନ୍ତର: [୪]}}"
 
 #: inc_openoffice/windows/msi_languages/Error.ulf#OOO_ERROR_128
 msgid  "The Windows Installer service cannot update the protected Windows file [2]. {{Package version: [3], OS Protected version: [4], SFP Error: [5]}}"
-msgstr ""
+msgstr "ଉଇଣ୍ଡୋଗୁଡିକ ପ୍ରତିଷ୍ଠାପନ ସେବା ସୁରକ୍ଷିତ ଫାଇଲ ଉଇଣ୍ଡୋଗୁଡିକ ଅପଡେଟ କରେନାହିଁ [୨]. {{ପ୍ଯାକେଜ୍ ଭାଷାନ୍ତର: [୩], OS ସୁରକ୍ଷିତ ଭାଷାନ୍ତର: [୪], SFP ତୃଟି: [୫]}}"
 
 #: inc_openoffice/windows/msi_languages/Error.ulf#OOO_ERROR_129
 msgid  "This setup requires Internet Information Server 4.0 or higher for configuring IIS Virtual Roots. Please make sure that you have IIS 4.0 or higher."
-msgstr ""
+msgstr "ଇଣ୍ଟରନେଟ ସୂଚନା ସରବର ୪.୦ପାଇଁ ଏହି ସେଟଅପ ଦରକାର କିମ୍ବା  IIS ଅଧିକ କନଫିଗୁରେସନ ଭରଚୁଆଲ ରାସ୍ତାଗୁଡିକ ପାଇଁ .ଦଯାକରି ନିଶ୍ଚଯ ହୋଇୟାଅ ତୁମେ IIS ୪.0 କିମ୍ବା ଅତ୍ଯଧିକ୤ "
 
 #: inc_openoffice/windows/msi_languages/Error.ulf#OOO_ERROR_130
 msgid  "This setup requires Administrator privileges for configuring IIS Virtual Roots."
-msgstr ""
+msgstr " IIS କନଫିଗୁରେସନ ଭରଚୁଆଲ ରାସ୍ତାଗୁଡିକ ପାଇଁ  ଏହି ସେଟଅପ ପ୍ରଶାସକର ବିଶେଷ ଅଧିକାରଗୁଡିକ ଦରକାର୤ "
 
 #: inc_openoffice/windows/msi_languages/CustomAc.ulf#OOO_CUSTOMACTION_1
 msgid  "A newer version of [ProductName] was found. To install an older version, the newer version needs to be removed first."
-msgstr ""
+msgstr "ଏକ ନୂଆ ଭାଷାନ୍ତର [ପଦାର୍ଥ ନାମ] ମିଳିଛି୤ପୁରୂଣା ଭାଷାନ୍ତରକୁ ପ୍ରତିଷ୍ଠାପନକରିବା ପାଇଁ , ପ୍ରଥମେ ଏକ  ନୂଆ ଭାଷାନ୍ତର ପରିବର୍ତ୍ତନ ହେବାଦରକାର୤"
 
 #: inc_openoffice/windows/msi_languages/CustomAc.ulf#OOO_CUSTOMACTION_2
 msgid  "The same version of this product is already installed."
@@ -661,11 +661,11 @@ msgstr "ଏହି ପଦାର୍ଥର ସମାନ ଭାଷାନ୍ତର �
 
 #: inc_openoffice/windows/msi_languages/CustomAc.ulf#OOO_CUSTOMACTION_3
 msgid  "An older version of [ProductName] was found. To install a newer version, the older version needs to be removed first."
-msgstr ""
+msgstr "[ProductName] ର ଗୋଟିଏ ପୁରୁଣା ସଂସ୍କରଣ ମିଳିଥିଲା। ଗୋଟିଏ ନୂତନ ସଂସ୍କରଣ ସ୍ଥାପନ କରିବା ପାଇଁ, ପୁରୁଣା ସଂସ୍କରଣକୁ ପ୍ରଥମେ କଢ଼ାଯିବା ଉଚିତ।"
 
 #: inc_openoffice/windows/msi_languages/CustomAc.ulf#OOO_CUSTOMACTION_4
 msgid  "Please exit [DEFINEDPRODUCT] [DEFINEDVERSION] and the [DEFINEDPRODUCT] [DEFINEDVERSION] Quickstarter before you continue. If you are using a multi-user system, also make sure that no other user has [DEFINEDPRODUCT] [DEFINEDVERSION] open."
-msgstr ""
+msgstr "[DEFINEDPRODUCT] [DEFINEDVERSION] ଏବଂ [DEFINEDPRODUCT] [DEFINEDVERSION] ରୁ ଅଗ୍ରସର ହେବା ପୂର୍ବରୁ ଦୟାକରି ପ୍ରସ୍ଥାନ କରନ୍ତୁ। ଯଦି ଆପଣ ଗୋଟିଏ ଏକାଧିକ-ଚାଳକ ତନ୍ତ୍ରକୁ ବ୍ୟବହାର କରୁଛନ୍ତି, ତେବେ ମଧ୍ଯ ନିଶ୍ଚିତ କରନ୍ତୁ ଯେ ଅନ୍ୟ କୌଣସି ଚାଳକ ପାଖରେ [DEFINEDPRODUCT] [DEFINEDVERSION] ଖୋଲାନଥିବ।"
 
 #: inc_openoffice/windows/msi_languages/UIText.ulf#OOO_UITEXT_1
 msgid  "bytes"
@@ -693,15 +693,15 @@ msgstr "ଏହି ବୌଶିଷ୍ଟ୍ଯ ପ୍ରତିଷ୍ଠାପନ�
 
 #: inc_openoffice/windows/msi_languages/UIText.ulf#OOO_UITEXT_7
 msgid  "This feature, and all subfeatures, will be installed to run from the CD."
-msgstr ""
+msgstr "ପ୍ରତିଷ୍ଠାପନ ପାଇଁ ଏହି ବୌଶିଷ୍ଟ୍ଯ,ସବୁ ଉପବୌଶିଷ୍ଟ୍ଯଗୁଡିକ CDରୁ ଚାଲୁରହିବ୤"
 
 #: inc_openoffice/windows/msi_languages/UIText.ulf#OOO_UITEXT_8
 msgid  "This feature, and all subfeatures, will be installed on local hard drive."
-msgstr ""
+msgstr "ସ୍ଥାନୀଯ ହାର୍ଡ ଡ୍ରାଇଭ୍ ରେ ଏହି ବୌଶିଷ୍ଟ୍ଯ,ସବୁ ଉପବୌଶିଷ୍ଟ୍ଯଗୁଡିକ ପ୍ରତିଷ୍ଠାପନହେବ୤"
 
 #: inc_openoffice/windows/msi_languages/UIText.ulf#OOO_UITEXT_9
 msgid  "This feature, and all subfeatures, will be installed to run from the network."
-msgstr ""
+msgstr "ପ୍ରତିଷ୍ଠାପନ ପାଇଁ ଏହି ବୌଶିଷ୍ଟ୍ଯ,ସବୁ ଉପବୌଶିଷ୍ଟ୍ଯଗୁଡିକ ନେଟଉଆର୍କରୁ ଚାଲୁରହିବ୤"
 
 #: inc_openoffice/windows/msi_languages/UIText.ulf#OOO_UITEXT_10
 msgid  "This feature will be installed to run from CD."
@@ -761,11 +761,11 @@ msgstr "ନେଟଉଆର୍କରୁ ଚାଲୁକରିବା ପାଇଁ 
 
 #: inc_openoffice/windows/msi_languages/UIText.ulf#OOO_UITEXT_24
 msgid  "This feature will be uninstalled completely, and you won't be able to run it from CD."
-msgstr ""
+msgstr "ଏହି ବୌଶିଷ୍ଟ୍ଯ ସଂପୂର୍ଣ୍ଣ ଭାବରେ ଅପ୍ରତିଷ୍ଠାପିତ, ଏବଂ CD ରୁ ତୁମେ ଚାଲୁକରିବା ପାଇଁ ସକ୍ଷମନୁହଁ୤"
 
 #: inc_openoffice/windows/msi_languages/UIText.ulf#OOO_UITEXT_25
 msgid  "This feature was run from the CD but will be set to be installed when required."
-msgstr ""
+msgstr "CD ରୁ ବୌଶିଷ୍ଟ୍ଯ ଚାଲୁଅଛି କିନ୍ତୁପ୍ରତିଷ୍ଠାପନ ସେଟହେବ ୟେତେବେଳେ ଦରକରଅଛି୤"
 
 #: inc_openoffice/windows/msi_languages/UIText.ulf#OOO_UITEXT_26
 msgid  "This feature will continue to be run from the CD"
@@ -773,7 +773,7 @@ msgstr "CD ରୁ ବୌଶିଷ୍ଟ୍ଯ ଚାଲୁରହିବ୤"
 
 #: inc_openoffice/windows/msi_languages/UIText.ulf#OOO_UITEXT_27
 msgid  "This feature was run from the CD but will be installed on the local hard drive."
-msgstr ""
+msgstr "CD ରୁ ବୌଶିଷ୍ଟ୍ଯ ଚାଲୁଅଛି କିନ୍ତୁ ସ୍ଥାନୀଯ ହାର୍ଡ ଡ୍ରାଇଭରେ  ପ୍ରତିଷ୍ଠାପନହେବ୤"
 
 #: inc_openoffice/windows/msi_languages/UIText.ulf#OOO_UITEXT_28
 msgid  "This feature frees up [1] on your hard drive."
@@ -793,11 +793,11 @@ msgstr "ତୁମର ସ୍ଥାନୀଯ ହାର୍ଡ ଡ୍ରାଇଭର
 
 #: inc_openoffice/windows/msi_languages/UIText.ulf#OOO_UITEXT_32
 msgid  "This feature will be removed from your local hard drive but will be set to be installed when required."
-msgstr ""
+msgstr "ତୁମର ସ୍ଥାନୀଯ ହାର୍ଡ ଡ୍ରାଇଭ୍ ରୁ ବୌଶିଷ୍ଟ୍ଯ ହଟାହେବ,କିନ୍ତୁ ଏହା ପ୍ରତିଷ୍ଠାପନ ପାଇଁ ସେଟହୋଇପାରିବ ୟେତେବେଳେ ଦରକାର୤"
 
 #: inc_openoffice/windows/msi_languages/UIText.ulf#OOO_UITEXT_33
 msgid  "This feature will be removed from your local hard drive but will still be available to run from CD."
-msgstr ""
+msgstr "ତୁମର ସ୍ଥାନୀଯ ହାର୍ଡ ଡ୍ରାଇଭରୁ ବୌଶିଷ୍ଟ୍ଯ ହଟାହେବ,କିନ୍ତୁ CD ରୁ ଚାଲୁ ପାଇଁ ଉପଲବ୍ଧହେବ୤"
 
 #: inc_openoffice/windows/msi_languages/UIText.ulf#OOO_UITEXT_34
 msgid  "This feature will remain on your local hard drive."
@@ -805,19 +805,19 @@ msgstr "ସ୍ଥାନୀଯ ହାର୍ଡ ଡ୍ରାଇଭରୁ ବୌଶ
 
 #: inc_openoffice/windows/msi_languages/UIText.ulf#OOO_UITEXT_35
 msgid  "This feature will be removed from your local hard drive, but will be still available to run from the network."
-msgstr ""
+msgstr "ତୁମର ସ୍ଥାନୀଯ ହାର୍ଡ ଡ୍ରାଇଭରୁ ବୌଶିଷ୍ଟ୍ଯ ହଟାଅ,କିନ୍ତୁନେଟଉଆର୍କରୁ ତୁମେ ଚାଲୁରଖିବା ପାଇଁ ଏପର୍ୟ୍ଯନ୍ତ ସକ୍ଷମନୁହଁ୤"
 
 #: inc_openoffice/windows/msi_languages/UIText.ulf#OOO_UITEXT_36
 msgid  "This feature will be uninstalled completely, and you won't be able to run it from the network."
-msgstr ""
+msgstr " ବୌଶିଷ୍ଟ୍ଯ ସଂପୂର୍ଣ୍ଣ ଭାବରେ ଅପ୍ରତିଷ୍ଠାପିତ,ଏବଂ ନେଟଉଆର୍କରୁ ତୁମେ ଚାଲୁରଖିବା ପାଇଁ  ସକ୍ଷମନୁହଁ୤"
 
 #: inc_openoffice/windows/msi_languages/UIText.ulf#OOO_UITEXT_37
 msgid  "This feature was run from the network but will be installed when required."
-msgstr ""
+msgstr "ନେଟଉଆର୍କରୁ ଏହି ବୌଶିଷ୍ଟ୍ଯ ୟାଉଛି କିନ୍ତୁ ୟେତେବେଳେ ଦରକାର ହେବ ପ୍ରତିଷ୍ଠାପନହେବ୤"
 
 #: inc_openoffice/windows/msi_languages/UIText.ulf#OOO_UITEXT_38
 msgid  "This feature was run from the network but will be installed on the local hard drive."
-msgstr ""
+msgstr "ନେଟଉଆର୍କରୁ ଏହି ବୌଶିଷ୍ଟ୍ଯ ୟାଉଛି କିନ୍ତୁ ସ୍ଥାନୀଯ ହାର୍ଡ ଡ୍ରାଇଭରେ  ପ୍ରତିଷ୍ଠାପନକର୤"
 
 #: inc_openoffice/windows/msi_languages/UIText.ulf#OOO_UITEXT_39
 msgid  "This feature will continue to be run from the network"
@@ -825,19 +825,19 @@ msgstr "ନେଟଉଆର୍କରୁ ଏହି ବୌଶିଷ୍ଟ୍ଯ ୟ
 
 #: inc_openoffice/windows/msi_languages/UIText.ulf#OOO_UITEXT_40
 msgid  "This feature frees up [1] on your hard drive. It has [2] of [3] subfeatures selected. The subfeatures free up [4] on your hard drive."
-msgstr ""
+msgstr "ତୁମର ମୂଖ୍ଯ ଡ୍ରାଇଭରେ  [୧] ଏହିବୌଶିଷ୍ଟ୍ଯ ଦରକାର ଅଛି୤ଏହା [୨] ର [୩] ଉପବୌଶିଷ୍ଟ୍ଯ ମନୋନିତହୋଇଛି୤  ତୁମ ହାର୍ଡ ଚାଳକରେ [୪] ଏହି ଉପବୌଶିଷ୍ଟ୍ଯଗୁଡିକ ମୁକ୍ତ ଅଛି୤"
 
 #: inc_openoffice/windows/msi_languages/UIText.ulf#OOO_UITEXT_41
 msgid  "This feature frees up [1] on your hard drive. It has [2] of [3] subfeatures selected. The subfeatures require [4] on your hard drive."
-msgstr ""
+msgstr "ତୁମର ମୂଖ୍ଯ ଡ୍ରାଇଭରେ  [୧] ଏହିବୌଶିଷ୍ଟ୍ଯ ଦରକାର ଅଛି୤ ଏହା [୨] ର [୩] ଉପବୌଶିଷ୍ଟ୍ଯ ମନୋନିତହୋଇଛି୤ ତୁମ ହାର୍ଡ ଚାଳକରେ [୪] ଏହି ଉପବୌଶିଷ୍ଟ୍ଯଗୁଡିକ ଦରକାର୤"
 
 #: inc_openoffice/windows/msi_languages/UIText.ulf#OOO_UITEXT_42
 msgid  "This feature requires [1] on your hard drive. It has [2] of [3] subfeatures selected. The subfeatures free up [4] on your hard drive."
-msgstr ""
+msgstr "ତୁମର ମୂଖ୍ଯ ଡ୍ରାଇଭ୍ ରେ  [୧] ଏହିବୌଶିଷ୍ଟ୍ଯ ଦରକାର ଅଛି୤ ଏହା [୨] ର [୩] ଉପବୌଶିଷ୍ଟ୍ଯ ମନୋନିତହୋଇଛି୤ ତୁମ ହାର୍ଡ ଚାଳକରେ [୪] ଏହି ଉପବୌଶିଷ୍ଟ୍ଯଗୁଡିକ ମୁକ୍ତ ଅଛି୤"
 
 #: inc_openoffice/windows/msi_languages/UIText.ulf#OOO_UITEXT_43
 msgid  "This feature requires [1] on your hard drive. It has [2] of [3] subfeatures selected. The subfeatures require [4] on your hard drive."
-msgstr ""
+msgstr "ତୁମର ମୂଖ୍ଯ ଡ୍ରାଇଭ୍ ରେ  [୧] ଏହିବୌଶିଷ୍ଟ୍ଯ ଦରକାର ଅଛି୤ ଏହା [୨] ର [୩] ଉପବୌଶିଷ୍ଟ୍ଯ ମନୋନିତହୋଇଛି୤ ତୁମ ହାର୍ଡ ଚାଳକରେ [୪] ଏହି ଉପବୌଶିଷ୍ଟ୍ଯଗୁଡିକ ଦରକାର୤"
 
 #: inc_openoffice/windows/msi_languages/UIText.ulf#OOO_UITEXT_44
 msgid  "Time remaining: {[1] min }[2] sec"
@@ -1361,7 +1361,7 @@ msgstr "କି: [୧], ନାମ: [୨], ମୂଲ୍ଯ: [୩]"
 
 #: inc_openoffice/windows/msi_languages/LaunchCo.ulf#OOO_LAUNCH_1
 msgid  "The Installation Wizard cannot be run properly because you are logged in as a user without sufficient administrator rights for this system."
-msgstr ""
+msgstr "ପ୍ରତିଷ୍ଠାପିତହୋଇଥିବା ଉଇଜାର୍ଡ ଭଲଭାବରେ ଚାଲୁନାହିଁ କାରଣ ଏହି ସିସ୍ଟମ୍ ପାଇଁ ଏକ ଉପଭୋକ୍ତା ଆବଶ୍ଯକ ପ୍ରଶାସକ ଅଧିକାର ବ୍ଯତିତ ତୁମେ ଲଜ୍ ହୋଇସାରିଛ୤"
 
 #: inc_openoffice/windows/msi_languages/LaunchCo.ulf#OOO_LAUNCH_2
 msgid  "Please use the file setup.exe to start the installation."
@@ -1421,7 +1421,7 @@ msgstr "ଆକର୍ଷଣକର:"
 
 #: inc_openoffice/windows/msi_languages/Nsis.ulf#MUI_TEXT_ABORTWARNING
 msgid  "Are you sure you want to quit the %PRODUCTNAME %PRODUCTVERSION Installation Preparation"
-msgstr ""
+msgstr " ତୁମେ ନିଶ୍ଚିତ କି %PRODUCTNAME %PRODUCTVERSION ପ୍ରତିଷ୍ଠାପନରୁ ତୁମେ ବାହରିୟିବାକୁ  ଚାହୁଁଛ"
 
 #: inc_openoffice/windows/msi_languages/SIS.ulf#OOO_SIS_TITLE
 msgid  "Installation database"
@@ -1497,7 +1497,7 @@ msgstr "ସରବର ଦ୍ରବ୍ଯର ଚିତ୍ର ପାଇଁ ଏକ �
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_20
 msgid  "Enter the network location or click Change to browse to a location.  Click Install to create a server image of [ProductName] at the specified network location or click Cancel to exit the wizard."
-msgstr ""
+msgstr "ନେଟ୍ଉଆର୍କ ସ୍ଥାନକୁ ପ୍ରବେଶକର କିମ୍ବା ସ୍ଥାନକୁ ବ୍ରାଉଜକରିବା ପାଇଁ ପରିବର୍ତ୍ତନକୁ ଦବାଅ୤ [ProductName]  ର ସରବର୍ ଚିତ୍ରକୁ ସୃଷ୍ଟିକରିବା ପାଇଁ ପ୍ରତିଷ୍ଠାପନକୁ ଦବାଅ୤ଏହି ବିଶେଷ ନେଟ୍ଉଆର୍କର ସ୍ଥାନର କିମ୍ବା ଉଇଜାର୍ଡକୁ ବାହାର କରିବା ପାଇଁ ରଦ୍ଦକୁ ଦବାଅ୤"
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_21
 msgid  "{&MSSansBold8}Network Location"
@@ -1529,7 +1529,7 @@ msgstr "{&TahomaBold10} [ପଦାର୍ଥ ନାମ]  ପାଇଁ ପ୍ର�
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_28
 msgid  "The Installation Wizard will create a server image of [ProductName] at a specified network location. To continue, click Next."
-msgstr ""
+msgstr " [ProductName] ର ସରବର ଚିତ୍ର ପ୍ରତିଷ୍ଠାପନ, ଉଇଜାର୍ଡ ସୃଷ୍ଟିକର୤ ଚାଲୁ ରଖିବା ପାଇଁ,ପରିବର୍ତ୍ତନକୁ ଦବାଅ୤"
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_29
 msgid  "&No"
@@ -1609,7 +1609,7 @@ msgstr "ତୁମେ ପ୍ରତିଷ୍ଠାପନକରିଥିବା ପ�
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_53
 msgid  "Click on an icon in the list below to change how a feature is installed."
-msgstr ""
+msgstr "ତଳ ତାଲିକାର ଗୋଟିଏ ଆଇକନକୁ ଦବାଅ କେମିତି ପ୍ରତିଷ୍ଠାପନର ବୌଶିଷ୍ଟ୍ଯଗୁଡିକ ପରିବର୍ତ୍ତନ କରହେବ୤"
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_54
 msgid  "{&MSSansBold8}Custom Setup"
@@ -1645,7 +1645,7 @@ msgstr "ବୌଶିଷ୍ଟ୍ଯ ଆକାର"
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_64
 msgid  "Custom Setup allows you to selectively install program features."
-msgstr ""
+msgstr "ତୁମକୁ ବ୍ଯବସ୍ଥା ସେଟଅପ  ପ୍ରତିଷ୍ଠାପିତ ପୋଗ୍ରାମ ବୌଶିଷ୍ଟ୍ଯଗୁଡିକୁ ମନୋନିତ କରିବାକୁ ସ୍ବୀକୃତକରେ୤"
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_65
 msgid  "{&MSSansBold8}Custom Setup Tips"
@@ -1657,7 +1657,7 @@ msgstr "ପ୍ରତିଷ୍ଠାପିତ ହୋଇପାରିବନାହ�
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_67
 msgid  "Will be installed on first use. (Available only if the feature supports this option.)"
-msgstr ""
+msgstr "ପ୍ରଥମ ଉପୟୋଗରେ ପ୍ରତିଷ୍ଠାପନ ହୋଇପାରିବ୤ (କେବଳ ଉପଲବ୍ଧ ୟଦି ବୌଶିଷ୍ଟ୍ଯ ଏହିବିକଳ୍ପକୁ ସମର୍ଥନକରିବ୤)"
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_68
 msgid  "This install state means the feature..."
@@ -1669,11 +1669,11 @@ msgstr "ସ୍ଥାନୀଯ ହାର୍ଡ ଡ୍ରାଇଭ ସଂପୂର
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_70
 msgid  "The icon next to the feature name indicates the install state of the feature. Click the icon to drop down the install state menu for each feature."
-msgstr ""
+msgstr "ବୌଶିଷ୍ଟ୍ଯ ନାମର ପରବର୍ତ୍ତୀ ଆଇକନ ବୌଶିଷ୍ଟ୍ଯର ପ୍ରତିଷ୍ଠାପନକୁ ପ୍ରକାଶ କରୁଛି୤ପ୍ରତି ବୌଶିଷ୍ଟ୍ଯ ପାଇଁ ମେନୁର ପ୍ରତିଷ୍ଠାପନକୁ ବନ୍ଦକରିବା ପାଇଁ ଆଇକନକୁ ଦବାଅ୤"
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_71
 msgid  "Will be installed to run from the network. (Available only if the feature supports this option.)"
-msgstr ""
+msgstr "ନେଟ ଉଆର୍କରୁ ଚାଲୁରଖିବା ପାଇଁ ପ୍ରତିଷ୍ଠାପନ ହୋଇଛି୤(କେବଳ ଉପଲବ୍ଧ ୟଦି ଏହି ବିକଳ୍ପ ବୌଶିଷ୍ଟ୍ଯକୁ ସମର୍ଥନକରିବ୤)"
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_72
 msgid  "OK"
@@ -1681,7 +1681,7 @@ msgstr "ଠିକ ଅଛି"
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_73
 msgid  "Will have some subfeatures installed to the local hard drive. (Available only if the feature has subfeatures.)"
-msgstr ""
+msgstr "ସ୍ଥାନୀଯ ହାର୍ଡ ଡ୍ରାଇଭକୁ କିଛି ଉପବୌଶିଷ୍ଟ୍ଯଗୁଡିକ ପ୍ରତିଷ୍ଠାପନ କରାହେଇଛି୤(କେବଳ ଉପଲବ୍ଧ ୟଦି ଏହିବୌଶିଷ୍ଟ୍ଯର ଉପବୌଶିଷ୍ଟ୍ଯଗୁଡିକ ଅଛନ୍ତି୤)"
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_74
 msgid  "< &Back"
@@ -1697,7 +1697,7 @@ msgstr "& ପରିବର୍ତ୍ତନକର..."
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_79
 msgid  "Click Next to install to this folder, or click Change to install to a different folder."
-msgstr ""
+msgstr "ଏହି ଫୋଲ୍ଡରକୁ ପ୍ରତିଷ୍ଠାପନ କରିବା ପାଇଁ ପରବର୍ତ୍ତୀକୁ ଦବାନ୍ତୁ,କିମ୍ବା ଏକ ଭିନ୍ନ ଫୋଲ୍ଡରକୁ ପ୍ରତିଷ୍ଠାପନ କରିବା ପାଇଁ ପରିବର୍ତ୍ତନକୁ ଦବାଅ୤"
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_80
 msgid  "{&MSSansBold8}Database Folder"
@@ -1729,7 +1729,7 @@ msgstr "& ପରିବର୍ତ୍ତନକର..."
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_89
 msgid  "Click Next to install to this folder, or click Change to install to a different folder."
-msgstr ""
+msgstr "ଏହି ଫୋଲ୍ଡରକୁ ପ୍ରତିଷ୍ଠାପନ କରିବା ପାଇଁ ପରବର୍ତ୍ତୀକୁ ଦବାନ୍ତୁ,କିମ୍ବା ଏକ ଭିନ୍ନ ଫୋଲ୍ଡରକୁ ପ୍ରତିଷ୍ଠାପନ କରିବା ପାଇଁ ପରିବର୍ତ୍ତନକୁ ଦବାଅ୤"
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_90
 msgid  "{&MSSansBold8}Destination Folder"
@@ -1753,7 +1753,7 @@ msgstr "ମନୋନିତ ବୌଶିଷ୍ଟ୍ଯଗୁଡିକର ପ୍�
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_97
 msgid  "The highlighted volumes do not have enough disk space available for the currently selected features. You can remove files from the highlighted volumes, choose to install less features onto local drives, or select different destination drives."
-msgstr ""
+msgstr "ବର୍ତ୍ତମାନ ମନୋନିତ ବୌଶିଷ୍ଟ୍ଯଗୁଡିକ ପାଇଁ ଉତ୍କୃଷ୍ଟ ଭଲ୍ଯୁମଗୁଡିକ ର ୟଥେଷ୍ଟ ଡିକ୍ସ୍ ଅନ୍ତର ନାହିଁ୤ ଉତ୍କୃଷ୍ଟ ଭଲ୍ଯୁମଗୁଡିକ ରୁ ତୁମେ ଫାଇଲଗୁଡିକ ବାହରକରିପାର,ସ୍ଥାନୀଯ ଡ୍ରାଇଭଗୁଡିକରୁ ପ୍ରତିଷ୍ଠାପିତ କ୍ଷୁଦ୍ର ବୌଶିଷ୍ଟ୍ଯଗୁଡିକ ବାଛ, କିମ୍ବା ଭିନ୍ନ ଦିଗ ଡ୍ରାଇଭଗୁଡିକ ମନୋନିତକର୤"
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_98
 msgid  "{&MSSansBold8}Disk Space Requirements"
@@ -1769,7 +1769,7 @@ msgstr "କିଛି ଫାଇଲ ଅପଡେଟହେବା ଦରକାର �
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_104
 msgid  "The following applications are using files that need to be updated by this setup. Close these applications and click Retry to continue."
-msgstr ""
+msgstr "ପ୍ରଯୋଗଗୁଡିକ ଅନୁସାରେ ଉପୟୋଗି ଫାଇଲଗୁଡିକ ଏହି ସେଟଅପ  ଦ୍ବାରା ଅପଡେଟ ହେବା ଦରକାର. ଏହି ପ୍ରଯୋଗଗୁଡିକ ବାଛ ଏବଂ ଚାଲୁରଖିବା ପାଇଁ ପୁନଃଚେଷ୍ଟାକୁ ଦବାନ୍ତୁ୤"
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_105
 msgid  "{&MSSansBold8}Files in Use"
@@ -1841,7 +1841,7 @@ msgstr "{&TahomaBold10} [ପଦାର୍ଥ ନାମ]  ପାଇଁ ପ୍ର�
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_127
 msgid  "The Installation Wizard will install [ProductName] on your computer. To continue, click Next."
-msgstr ""
+msgstr "ତୁମ କମ୍ପ୍ଯୁଟରରେ  [ପଦାର୍ଥ ନାମ ] ପ୍ରତିଷ୍ଠାପିତ ଉଇଜାର୍ଡକୁ ପ୍ରତିଷ୍ଠାପନକର୤ଚାଲୁରଖିବାକୁ,ପରବର୍ତ୍ତୀକୁ ଦବାନ୍ତୁ୤"
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_128
 msgid  "< &Back"
@@ -1885,11 +1885,11 @@ msgstr " &ପରବର୍ତ୍ତୀ >"
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_143
 msgid  "Change which program features are installed. This option displays the Custom Selection dialog in which you can change the way features are installed."
-msgstr ""
+msgstr "ପୋଗ୍ରାମ ବୌଶିଷ୍ଟ୍ଯଗୁଡିକ ୟାହାକି ପରିବର୍ତ୍ତିତ ପ୍ରତିଷ୍ଠାପନ ହୋଇଛି୤ ଏହି ବିକଳ୍ପ ଗ୍ରାହକ ମନୋନଯନ ଡାଇଲୋଗକୁ ପ୍ରଦର୍ଶନକରୁଛି ୟେଉଁଥିରେ କି ତୁମେ ମାର୍ଗକୁ ପରିବର୍ତ୍ତନ କରିପାରିବ ବୌଶିଷ୍ଟ୍ଯଗୁଡିକ ପ୍ରତିଷ୍ଠାପିତ ହୋଇଛି୤ "
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_144
 msgid  "Repair installation errors in the program. This option fixes missing or corrupt files, shortcuts, and registry entries."
-msgstr ""
+msgstr "ପୋଗ୍ରାମରେ ପ୍ରତିଷ୍ଠାପିତ ତୃଟିଗୁଡିକୁ ମରାମତିକର୤ ଅଦୃଷ୍ଟକୁ ଏହି ବିକଳ୍ପଗୁଡିକ ସ୍ଥାଯୀକରିଛି କିମ୍ବା ଭ୍ରଷ୍ଟ ଫାଇଲଗୁଡିକ,ଛୋଟବାଟଗୁଡିକ, ଏବଂ ପ୍ରବେଶଗୁଡିକୁ ରେଜିଷ୍ଟରକର୤"
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_145
 msgid  "Remove [ProductName] from your computer."
@@ -1913,7 +1913,7 @@ msgstr "{&TahomaBold10} [ପଦାର୍ଥ ନାମ]  ପାଇଁ ପ୍ର�
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_150
 msgid  "The Installation Wizard will allow you to modify, repair, or remove [ProductName]. To continue, click Next."
-msgstr ""
+msgstr "ପ୍ରତିଷ୍ଠାପନ ଉଇଜାର୍ଡ ତୁମକୁ ପରିବର୍ତ୍ତନକର,ମରାମତିକର, କିମ୍ବା ହଟାଅ [ପଦାର୍ଥ ନାମ] ପାଇଁ ସମର୍ଥନ କରିବ୤ଚାଲୁରଖିବା ପାଇଁ,ପରବର୍ତ୍ତୀକୁ ଦବାନ୍ତୁ୤"
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_153
 msgid  "Disk space required for the installation exceeds available disk space."
@@ -1921,7 +1921,7 @@ msgstr "ପ୍ରତିଷ୍ଠାପନ ବୃଦ୍ଧି ଉପଲବ୍ଧ 
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_154
 msgid  "The highlighted volumes do not have enough disk space available for the currently selected features. You can remove files from the highlighted volumes, choose to install less features onto local drives, or select different destination drives."
-msgstr ""
+msgstr "ବର୍ତ୍ତମାନ ମନୋନିତ ବୌଶିଷ୍ଟ୍ଯଗୁଡିକ ପାଇଁ ଉତ୍କୃଷ୍ଟ ଭଲ୍ଯୁମଗୁଡିକ ର ୟଥେଷ୍ଟ ଡିକ୍ସ୍ ଅନ୍ତର ନାହିଁ୤ ଉତ୍କୃଷ୍ଟ ଭଲ୍ଯୁମଗୁଡିକ ରୁ ତୁମେ ଫାଇଲଗୁଡିକ ବାହରକରିପାର,ସ୍ଥାନୀଯ ଡ୍ରାଇଭଗୁଡିକରୁ ପ୍ରତିଷ୍ଠାପିତ କ୍ଷୁଦ୍ର ବୌଶିଷ୍ଟ୍ଯଗୁଡିକ ବାଛ, କିମ୍ବା ଭିନ୍ନ ଦିଗ ଡ୍ରାଇଭଗୁଡିକ ମନୋନିତକର୤"
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_155
 msgid  "{&MSSansBold8}Out of Disk Space"
@@ -1953,7 +1953,7 @@ msgstr "{&TahomaBold10}[ପଦାର୍ଥ ନାମ] ପାଇଁ  ପଟିକ
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_162
 msgid  "The Installation Wizard will install the Patch for [ProductName] on your computer.  To continue, click Update."
-msgstr ""
+msgstr "ପ୍ରତିଷ୍ଠାପିତ ଉଇଜାର୍ଡ [ପଦାର୍ଥ ନାମ] ପାଇଁ  ତୁମ କମ୍ପ୍ଯୁଟରରେ ପଟିକୁ ପ୍ରତିଷ୍ଠାପନକର୤ ଚାଲୁରଖିବାକୁ ଅପଡେଟ ଦବାଅ୤"
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_163
 msgid  "< &Back"
@@ -1973,7 +1973,7 @@ msgstr "ପ୍ରତିଷ୍ଠାପନକୁ ଆରମ୍ଭକରିବା �
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_169
 msgid  "If you want to review or change any of your installation settings, click Back. Click Cancel to exit the wizard."
-msgstr ""
+msgstr "ତୁମେ ୟଦି ତୁମ ସେଟିଙ୍ଗଗୁଡିକୁ ପୁନଃବ୍ଯାଖ୍ଯାକର କିମ୍ବା ପରିବର୍ତ୍ତନ କର,ପଛକୁ ଦବାନ୍ତୁ୤ଉଇଜାର୍ଡକୁ ବାହାର କରିବା ପାଇଁ ରଦ୍ଦକୁ ଦବାନ୍ତୁ୤"
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_170
 msgid  "{&MSSansBold8}Ready to Modify the Program"
@@ -2005,11 +2005,11 @@ msgstr "ତୁମ ସିସ୍ଟମରୁ ପୋଗ୍ରାମକୁ ହଟା
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_179
 msgid  "Click Remove to remove [ProductName] from your computer. After removal, this program will no longer be available for use."
-msgstr ""
+msgstr "ତୁମ କମ୍ପ୍ଯୁଟରରୁ [ପଦାର୍ଥ ନାମ] କୁ ହଟାଇବା ପାଇଁ  ହଟାଅକୁ  ଦବାନ୍ତୁ୤ ହଟାଇବାପରେ, ଉପୟୋଗ ପାଇଁ ଏହି ପୋଗ୍ରାମ ବେଶୀ ସମଯ ପାଇଁ ଉପୟୋଗ ହେବ ନାହିଁ୤"
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_180
 msgid  "If you want to review or change any settings, click Back."
-msgstr ""
+msgstr "ତୁମେ ୟଦି ତୁମ ସେଟିଙ୍ଗଗୁଡିକୁ ପୁନଃବ୍ଯାଖ୍ଯା କିମ୍ବା ପରିବର୍ତ୍ତନ କରିବା,ପଛକୁ ଦବାନ୍ତୁ୤"
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_181
 msgid  "{&MSSansBold8}Remove the Program"
@@ -2033,7 +2033,7 @@ msgstr "ଏବଂ ଶେଷ"
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_186
 msgid  "Your system has not been modified. To complete installation at another time, please run setup again."
-msgstr ""
+msgstr "ତୁମ ସିସ୍ଟମ ପରିବର୍ତ୍ତନ ହୋଇନାହିଁ୤ ଅନ୍ଯ ସମଯରେ ପ୍ରତିଷ୍ଠାପନକୁ ସଂପୂର୍ଣ୍ଣକର,ଦଯାକରି ଆଉଥରେ ସେଟଅପକୁ ଚାଲୁକରନ୍ତୁ୤"
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_187
 msgid  "Click Finish to exit the wizard."
@@ -2041,7 +2041,7 @@ msgstr "ଉଇଜାର୍ଡକୁ ବାହାର କରିବା ପାଇଁ
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_188
 msgid  "You can either keep any existing installed elements on your system to continue this installation at a later time or you can restore your system to its original state prior to the installation."
-msgstr ""
+msgstr "ଶେଷ ସମଯରେ ଏହି ପ୍ରତିଷ୍ଠାପନକୁ ଚାଲୁରଖିବା ପାଇଁ  ତୁମ ସିସ୍ଟମରେ ତୁମ ମଧ୍ଯ ୟେକୌଣସି ରହିଥିବା ପ୍ରତିଷ୍ଠାପନ ରଖିପାର କିମ୍ବା ତୁମେ ପୂର୍ବସ୍ବାଭାବିକ ପ୍ରତିଷ୍ଠାପନକୁ ତୁମ ସିସ୍ଟମରେ ସଂଞ୍ଚିତ କରିପାର୤"
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_189
 msgid  "Click Restore or Continue Later to exit the wizard."
@@ -2053,7 +2053,7 @@ msgstr "{&TahomaBold10}ପ୍ରତିଷ୍ଠାପିତ ଉଇଜାର୍�
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_191
 msgid  "The wizard was interrupted before [ProductName] could be completely installed."
-msgstr ""
+msgstr " [ପଦାର୍ଥ ନାମ] ପୂର୍ବରୁ ଉଇଜାର୍ଡଗୁଡିକ ଅଟକିଗଲା ସଂପୂର୍ଣ୍ଣଭାବରେ ପ୍ରତିଷ୍ଠାପିତ ହୋଇଛି୤"
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_192
 msgid  "< &Back"
@@ -2065,7 +2065,7 @@ msgstr "ରଦ୍ଦ କର"
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_194
 msgid  "&Yes, check for program updates (Recommended) after the setup completes."
-msgstr ""
+msgstr "ଏବଂ ହଁ,ପୋଗ୍ରାମ ଅପଡେଟକରିବା ପାଇଁ ୟାଞ୍ଚକର(ସୁପାରିଶ କରିବା) ପରେ ସେଟଅପ ସଂପୂର୍ଣ୍ଣ ହେବ୤"
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_195
 msgid  "Launch the program"
@@ -2085,11 +2085,11 @@ msgstr "{&TahomaBold10}ପ୍ରତିଷ୍ଠାପିତ ଉଇଜାର୍�
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_199
 msgid  "The Installation Wizard has successfully installed [ProductName]. Click Finish to exit the wizard."
-msgstr ""
+msgstr "ପ୍ରତିଷ୍ଠାପିତ ଉଇଜାର୍ଡ ସଫଳଭାବରେ ପ୍ରତିଷ୍ଠାପିତ ହୋଇଛି [ପଦାର୍ଥ ନାମ]୤ ଉଇଜାର୍ଡକୁ ବାହାର କରିବା ପାଇଁ ଶେଷକୁ ଦବାନ୍ତୁ୤"
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_200
 msgid  "The Installation Wizard has successfully uninstalled [ProductName]. Click Finish to exit the wizard."
-msgstr ""
+msgstr "ପ୍ରତିଷ୍ଠାପିତ ଉଇଜାର୍ଡ ସଫଳଭାବରେ ଅପ୍ରତିଷ୍ଠାପିତ ହୋଇଛି [ପଦାର୍ଥ ନାମ]୤ ଉଇଜାର୍ଡକୁ ବାହାର କରିବା ପାଇଁ ଶେଷକୁ ଦବାନ୍ତୁ୤"
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_201
 msgid  "Setup has finished installing [ProductName]."
@@ -2097,11 +2097,11 @@ msgstr "ସେଟଅପ ପ୍ରତିଷ୍ଠାପନକରିବା ଶେ�
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_202
 msgid  "Some program files might have been updated since you purchased your copy of [ProductName]."
-msgstr ""
+msgstr "ୟେପର୍ୟ୍ଯନ୍ତ ତୁମେ ଏହି ନକଲି [ପଦାର୍ଥ ନାମ]କୁ କିଣିଛ କିଛି ପୋଗ୍ରାମ ଫାଇଲଗୁଡିକ ଅପଡେଟ ହୋଇଛି ୤"
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_203
 msgid  "Your Internet connection can be used to make sure that you have the latest updates."
-msgstr ""
+msgstr "ତୁମ ଇଣ୍ଟରନେଟ ସଂୟୋଗ ଉପୟୋଗ ହେଉଛି ନିଶ୍ଚିତହେବା ପାଇଁ ୟେ ତୁମ ପାଖରେ ଶେଷ ଅପଡେଟଗୁଡିକ ଅଛି୤"
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_204
 msgid  "&Abort"
@@ -2113,7 +2113,7 @@ msgstr "ଏବଂ ରଦ୍ଧକର"
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_206
 msgid  "error text goes here  error text goes here  error text goes here  error text goes here  error text goes here  error text goes here  error text goes here  error text goes here  error text goes here  error text goes here"
-msgstr ""
+msgstr "ତ୍ରୁଟି ପାଠ୍ୟ ଏଠାକୁ ଯାଇଥାଏ  ତ୍ରୁଟି ପାଠ୍ୟ ଏଠାକୁ ଯାଇଥାଏ  ତ୍ରୁଟି ପାଠ୍ୟ ଏଠାକୁ ଯାଇଥାଏ  ତ୍ରୁଟି ପାଠ୍ୟ ଏଠାକୁ ଯାଇଥାଏ  ତ୍ରୁଟି ପାଠ୍ୟ ଏଠାକୁ ଯାଇଥାଏ  ତ୍ରୁଟି ପାଠ୍ୟ ଏଠାକୁ ଯାଇଥାଏ  ତ୍ରୁଟି ପାଠ୍ୟ ଏଠାକୁ ଯାଇଥାଏ  ତ୍ରୁଟି ପାଠ୍ୟ ଏଠାକୁ ଯାଇଥାଏ  ତ୍ରୁଟି ପାଠ୍ୟ ଏଠାକୁ ଯାଇଥାଏ  ତ୍ରୁଟି ପାଠ୍ୟ ଏଠାକୁ ଯାଇଥାଏ  ତ୍ରୁଟି ପାଠ୍ୟ ଏଠାକୁ ଯାଇଥାଏ"
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_207
 msgid  "&Ignore"
@@ -2153,7 +2153,7 @@ msgstr "{&TahomaBold10} [ପଦାର୍ଥ ନାମ]  ପାଇଁ ପ୍ର�
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_218
 msgid  "[ProductName] Setup is preparing the Installation Wizard which will guide you through the program setup process.  Please wait."
-msgstr ""
+msgstr "[ପଦାର୍ଥ ନାମ] ସେଟଅପ ପ୍ରତିଷ୍ଠାପିତ ଉଇଜାର୍ଡ କୁ ତିଆରି କରୁଛି ୟିଏକି ପୋଗ୍ରାମ ପ୍ରକ୍ରିଯା ସେଟଅପ ଦ୍ବାରା ତୁମକୁ ଗାଇଡକରିବ୤  ଦଯାକରି ଅପେକ୍ଷା କରନ୍ତୁ୤"
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_219
 msgid  "< &Back"
@@ -2169,7 +2169,7 @@ msgstr "ଏବଂ ଶେଷ"
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_222
 msgid  "Your system has not been modified. To install this program at a later time, please run the installation again."
-msgstr ""
+msgstr "ତୁମ ସିସ୍ଟମ ପରିବର୍ତ୍ତନ ହୋଇନାହିଁ୤ଶେଷ ସମଯରେ ଏହି ପୋଗ୍ରାମକୁ ପ୍ରତିଷ୍ଠାପନ କରିବା ପାଇଁ,ଦଯାକରି ଆଉଥରେ ପ୍ରତିଷ୍ଠାପନକୁ ଚାଲୁକର୤ "
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_223
 msgid  "Click Finish to exit the wizard."
@@ -2177,7 +2177,7 @@ msgstr "ଉଇଜାର୍ଡକୁ ବାହାର କରିବା ପାଇଁ
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_224
 msgid  "You can either keep any existing installed elements on your system to continue this installation at a later time or you can restore your system to its original state prior to the installation."
-msgstr ""
+msgstr "ଶେଷ ସମଯରେ ଏହି ପ୍ରତିଷ୍ଠାପନକୁ ଚାଲୁରଖିବା ପାଇଁ  ତୁମ ସିସ୍ଟମରେ ତୁମ ମଧ୍ଯ ୟେକୌଣସି ରହିଥିବା ପ୍ରତିଷ୍ଠାପନ ରଖିପାର କିମ୍ବା ତୁମେ ପୂର୍ବସ୍ବାଭାବିକ ପ୍ରତିଷ୍ଠାପନକୁ ତୁମ ସିସ୍ଟମରେ ସଂଞ୍ଚିତ କରିପାର୤"
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_225
 msgid  "Click Restore or Continue Later to exit the wizard."
@@ -2189,7 +2189,7 @@ msgstr "{&TahomaBold10}ପ୍ରତିଷ୍ଠାପିତ ଉଇଜାର୍�
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_227
 msgid  "The wizard was interrupted before [ProductName] could be completely installed."
-msgstr ""
+msgstr " [ପଦାର୍ଥ ନାମ] ପୂର୍ବରୁ ଉଇଜାର୍ଡଗୁଡିକ ଅଟକିଗଲା ସଂପୂର୍ଣ୍ଣଭାବରେ ପ୍ରତିଷ୍ଠାପିତ ହୋଇଛି୤"
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_228
 msgid  "Progress done"
@@ -2213,11 +2213,11 @@ msgstr "ତୁମେ ମନୋନିତ କରିଥିବା ପୋଗ୍ରା
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_236
 msgid  "Please wait while the Installation Wizard installs [ProductName]. This may take several minutes."
-msgstr ""
+msgstr "ଦଯାକରି ଅପେକ୍ଷାକର ୟେପର୍ୟ୍ଯନ୍ତ ପ୍ରତିଷ୍ଠାପିତ ଉଇଜାର୍ଡ ଅପ୍ରତିଷ୍ଠାପିତ ହୋଇଛି [ପଦାର୍ଥ ନାମ]୤ଏହା ବହୁତ ମିନିଟ ନେଇପାରେ୤"
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_237
 msgid  "Please wait while the Installation Wizard uninstalls [ProductName]. This may take several minutes."
-msgstr ""
+msgstr "ଦଯାକରି ଅପେକ୍ଷାକର ୟେପର୍ୟ୍ଯନ୍ତ ପ୍ରତିଷ୍ଠାପନ ଉଇଜାର୍ଡ ଅପ୍ରତିଷ୍ଠାପିତ ହୋଇଛି [ପଦାର୍ଥ ନାମ]୤ଏହା ବହୁତ ମିନିଟ୍ ନେଇପାରେ୤"
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_238
 msgid  "{&MSSansBold8}Installing [ProductName]"
@@ -2257,11 +2257,11 @@ msgstr " &ପରବର୍ତ୍ତୀ >"
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_248
 msgid  "The Installation Wizard will complete the installation of [ProductName] on your computer. To continue, click Next."
-msgstr ""
+msgstr "ତୁମ କମ୍ପ୍ଯୁଟରର  [ପଦାର୍ଥ ନାମ] ର ପ୍ରତିଷ୍ଠାପିତ ଉଇଜାର୍ଡ ପ୍ରଲମ୍ବିତ ପ୍ରତିଷ୍ଠାପିତକୁ ପୂର୍ଣ୍ଣକରିବ୤ ଚାଲୁ ରଖିବାକୁ, ପରବର୍ତ୍ତୀକୁ ଦବାନ୍ତୁ୤"
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_249
 msgid  "The Installation Wizard will complete the suspended installation of [ProductName] on your computer. To continue, click Next."
-msgstr ""
+msgstr "ତୁମ କମ୍ପ୍ଯୁଟରର  [ପଦାର୍ଥ ନାମ] ର ପ୍ରତିଷ୍ଠାପିତ ଉଇଜାର୍ଡ ପ୍ରଲମ୍ବିତ ପ୍ରତିଷ୍ଠାପିତକୁ ପୂର୍ଣ୍ଣକରିବ୤ ଚାଲୁ ରଖିବାକୁ, ପରବର୍ତ୍ତୀକୁ ଦବାନ୍ତୁ୤"
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_250
 msgid  "{&TahomaBold10}Resuming the Installation Wizard for [ProductName]"
@@ -2281,7 +2281,7 @@ msgstr "ମୂଖ୍ୟ ଉପାଦାନଗୁଡ଼ିକୁ ସ୍ଥାପ�
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_256
 msgid  "Choose which program features you want installed and where they will be installed. Recommended for advanced users."
-msgstr ""
+msgstr "କେଉଁ ପୋଗ୍ରାମର ବୌଶିଷ୍ଟ୍ଯଗୁଡିକ ତୁମେ ପ୍ରତିଷ୍ଠାପନ କରିବାକୁ ଚାହୁଁଚ ବାଛ ଏବଂ ସେମାନେ କେଉଁଠାରେ ପ୍ରତିଷ୍ଠାପିତହେବେ୤ ଉନ୍ନତ୍ତତର ଉପୟୋଗକର୍ତ୍ତାମାନଙ୍କ ପାଇଁ ସୁପାରିଶ କରିବା୤"
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_257
 msgid  "Choose the setup type that best suits your needs."
@@ -2341,11 +2341,11 @@ msgstr "ଏବଂ [ପଦାର୍ଥ ନାମ] ଲେଖକ/ଉଏବ"
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_274
 msgid  "Set [DEFINEDPRODUCT] to be the default application for Microsoft Office file types."
-msgstr ""
+msgstr "Microsoft Office ଫାଇଲ ପ୍ରକାର ପାଇଁ [DEFINEDPRODUCT] କୁ ପୂର୍ବନିର୍ଦ୍ଧାରିତ ପ୍ରୟୋଗ ଭାବରେ ବିନ୍ୟାସ କରାଯାଇଥାଏ।"
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_275
 msgid  "[ProductName] can be set as the default application to open Microsoft Office file types. This means, for instance, that if you double click on one of these files, [ProductName] will open it, not the program that opens it now."
-msgstr ""
+msgstr "[ProductName] କୁ Microsoft Office ଫାଇଲ ପ୍ରକାରଗୁଡ଼ିକୁ ଖୋଲିବା ପାଇଁ ପୂର୍ବନିର୍ଦ୍ଧାରିତ ପ୍ରୟୋଗ ଭାବରେ ସେଟ କରାଯାଇପାରିବ। ଏହା ଅର୍ଥ, ଯଦି ଆପଣ ଏହି ପାଇଲ ମଧ୍ଯରୁ କୌଣସି ଏକ ଫାଇଲରେ ଦୁଇଥର କ୍ଲିକ କରନ୍ତି, ତେବେ ଏହାକୁ ବର୍ତ୍ତମାନ ଖୋଲୁଥିବା ପ୍ରଗ୍ରାମ ପରିବର୍ତ୍ତେ, [ProductName] ଏହାକୁ ଖାଲିଦେବ।"
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_276
 msgid  "File types"
@@ -2361,11 +2361,11 @@ msgstr "{&MSSansBold8}ଫାଇଲ ପ୍ରକାର"
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_300
 msgid  "A version of [DEFINEDPRODUCT] [DEFINEDVERSION] was found by the [ProductName] Installation Wizard. This version will be updated."
-msgstr ""
+msgstr "ଏକ ଭାଷାନ୍ତର [DEFINEDPRODUCT] [DEFINEDVERSION]  [ପଦାର୍ଥ ନାମ] ଦ୍ବାରା ମିଳୁନାହିଁ ପ୍ରତିଷ୍ଠାପନ ଉଇଜାର୍ଡ୤ଏହି ଭାଷାନ୍ତର ଅପଡେଟ ହେବ୤"
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_301
 msgid  "The destination folder specified below does not contain a [DEFINEDPRODUCT] [DEFINEDVERSION] version."
-msgstr ""
+msgstr "ତଳ ବିଶେଷ ଫୋଲ୍ଡରର ଗନ୍ତବ୍ଯସ୍ଥଳ [DEFINEDPRODUCT] [DEFINEDVERSION] ଭାଷାନ୍ତର ରେ ଅନ୍ତର୍ଗତ୤"
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_302
 msgid  "A newer [DEFINEDPRODUCT] [DEFINEDVERSION] has been found."
@@ -2380,15 +2380,15 @@ msgid  "Check the destination folder."
 msgstr "ଗନ୍ତବ୍ଯସ୍ଥଳ ଫୋଲ୍ଡର କୁ ଦବାନ୍ତୁ୤"
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_305
-msgid  "To continue, click "Next"."
+msgid  "To continue, click \"Next\"."
 msgstr ""
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_306
-msgid  "To select a different version, click "Change". Otherwise click "Cancel" to abort the Installation Wizard."
+msgid  "To select a different version, click \"Change\". Otherwise click \"Cancel\" to abort the Installation Wizard."
 msgstr ""
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_307
-msgid  "To select a different folder, click "Change"."
+msgid  "To select a different folder, click \"Change\"."
 msgstr ""
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_308
@@ -2397,15 +2397,15 @@ msgstr "କୁ ପ୍ରତିଷ୍ଠାପନକର [ପଦାର୍ଥ ନ�
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_309
 msgid  "If you are just trying out [ProductName], you probably don't want this to happen, so leave the boxes unchecked."
-msgstr ""
+msgstr "ଯଦି ଆପଣ କେବଳ [ProductName]କୁ ଚେଷ୍ଟା କରୁଥାନ୍ତି, ତେବେ ଆପଣ ହୁଏତଃ ଏହାକୁ ହେବା ପାଇଁ ଚାହିଁନପାରନ୍ତି, ତେଣୁ ସେହି ବାକ୍ସଗୁଡ଼ିକୁ ଚିହ୍ନଟ ନକରି ଛାଡ଼ି ଦିଅନ୍ତୁ।"
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_317
 msgid  "No languages have been selected for installation. Click OK to select one or more languages for installation."
-msgstr ""
+msgstr "ସ୍ଥାପନ ପାଇଁ କୌଣସି ଭାଷା ବଛାହୋଇନାହିଁ। ଗୋଟିଏ କିମ୍ବା ଅଧିକ ଭାଷାକୁ ସ୍ଥାପନ କରିବା ପାଇଁ OK କୁ କ୍ଲିକ କରନ୍ତୁ।"
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_318
 msgid  "No applications have been selected for installation. Click OK to select one or more applications for installation."
-msgstr ""
+msgstr "ସ୍ଥାପନ ପାଇଁ କୌଣସି ପ୍ରୟୋଗ ବଛାହୋଇନାହିଁ। ଗୋଟିଏ କିମ୍ବା ଅଧିକ ପ୍ରୟୋଗକୁ ସ୍ଥାପନ କରିବା ପାଇଁ OK କୁ କ୍ଲିକ କରନ୍ତୁ।"
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_319
 msgid  "Create a start link on desktop"

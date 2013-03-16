@@ -39,6 +39,10 @@ msgstr "ជ្រើស​​ការ​កំណត់​ចំណង​ជើ
 msgid  "Display grids"
 msgstr "បង្ហាញ​ក្រឡាចត្រង្គ"
 
+#: source/controller/dialogs/tp_3D_SceneGeometry.src#CUSTOMUNITTEXT_DEGREE.#define.CustomUnitText
+msgid  " degrees"
+msgstr " ដឺក្រេ"
+
 #: source/controller/dialogs/tp_3D_SceneGeometry.src#TP_3D_SCENEGEOMETRY.CBX_RIGHT_ANGLED_AXES.CheckBox.Text
 msgid  "~Right-angled axes"
 msgstr "អ័ក្ស​មុំ​ស្ដាំ "
@@ -58,10 +62,6 @@ msgstr "បង្វិល Z "
 #: source/controller/dialogs/tp_3D_SceneGeometry.src#TP_3D_SCENEGEOMETRY.CBX_PERSPECTIVE.CheckBox.Text
 msgid  "~Perspective"
 msgstr "យថាទស្សន៍ "
-
-#: source/controller/dialogs/tp_3D_SceneGeometry.src#CUSTOMUNITTEXT_DEGREE.#define.CustomUnitText
-msgid  " degrees"
-msgstr " ដឺក្រេ"
 
 #: source/controller/dialogs/Strings_AdditionalControls.src#STR_3DSCHEME_SIMPLE.String.Text
 msgid  "Simple"
@@ -257,11 +257,11 @@ msgstr "ត្រូវការ​លេខ ។ ពិនិត្យ​មើ
 
 #: source/controller/dialogs/Strings_Scale.src#STR_STEP_GT_ZERO.String.Text
 msgid  "The major interval requires a positive number. Check your input."
-msgstr ""
+msgstr "ចន្លោះ​រង្វើល​ត្រូវការ​លេខ​វិជ្ជមាន ។ ពិនិត្យ​មើល​ការ​បញ្ចូល​របស់​អ្នក ។"
 
 #: source/controller/dialogs/Strings_Scale.src#STR_BAD_LOGARITHM.String.Text
 msgid  "The logarithmic scale requires positive numbers. Check your input."
-msgstr ""
+msgstr "មាត្រដ្ឋាន​ឡូការីត​ត្រូវការ​លេខ​វិជ្ជមាន ។ ពិនិត្យ​មើល​ការ​បញ្ចូល​របស់​អ្នក ។"
 
 #: source/controller/dialogs/Strings_Scale.src#STR_MIN_GREATER_MAX.String.Text
 msgid  "The minimum must be lower than the maximum. Check your input."
@@ -269,11 +269,11 @@ msgstr "អប្បបរមា​ត្រូវ​តែ​ទាប​ជា
 
 #: source/controller/dialogs/Strings_Scale.src#STR_INVALID_INTERVALS.String.Text
 msgid  "The major interval needs to be greater than the minor interval. Check your input."
-msgstr ""
+msgstr "ចន្លោះ​ធំ​ត្រូវ​ការ​ធំជាង​ចន្លោះ​តូច ។ ពិនិត្យ​មើល​ការ​បញ្ចូល​របស់​អ្នក ។"
 
 #: source/controller/dialogs/Strings_Scale.src#STR_INVALID_TIME_UNIT.String.Text
 msgid  "The major and minor interval need to be greater or equal to the resolution. Check your input."
-msgstr ""
+msgstr "ចន្លោះ​តូច និង​ធំ​ត្រូវការ​គុណភាព​បង្ហាញ​ធំជាង ឬ​ស្មើ​គ្នា ។ ពិនិត្យ​មើល​ការ​បញ្ចូល​របស់​អ្នក ។"
 
 #: source/controller/dialogs/dlg_DataEditor.src#DLG_DIAGRAM_DATA.ModalDialog.Text
 msgid  "Data Table"
@@ -889,7 +889,7 @@ msgstr "មុទ្ទវិទ្យា​អាស៊ី"
 
 #: source/controller/dialogs/Strings.src#STR_OBJECT_AVERAGE_LINE_WITH_PARAMETERS.String.Text
 msgid  "Mean value line with value %AVERAGE_VALUE and standard deviation %STD_DEVIATION"
-msgstr ""
+msgstr "បន្ទាត់​តម្លៃ​មធ្យម​ដែលមាន​តម្លៃ %AVERAGE_VALUE និង​គម្លាត​គំរូ %STD_DEVIATION"
 
 #: source/controller/dialogs/Strings.src#STR_OBJECT_AXIS.String.Text
 msgid  "Axis"
@@ -1097,11 +1097,11 @@ msgstr "តម្លៃ ៖ %POINTVALUES"
 
 #: source/controller/dialogs/Strings.src#STR_TIP_DATAPOINT.String.Text
 msgid  "Data Point %POINTNUMBER, data series %SERIESNUMBER, values: %POINTVALUES"
-msgstr ""
+msgstr "ចំណុច​ទិន្នន័យ %POINTNUMBER ស៊េរី​​ទិន្នន័យ %SERIESNUMBER តម្លៃ ៖ %POINTVALUES"
 
 #: source/controller/dialogs/Strings.src#STR_STATUS_DATAPOINT_MARKED.String.Text
 msgid  "Data point %POINTNUMBER in data series %SERIESNUMBER selected, values: %POINTVALUES"
-msgstr ""
+msgstr "បាន​ជ្រើស​ចំណុច​​ទិន្នន័យ %POINTNUMBER នៅ​ក្នុង​ស៊េរី​ទិន្នន័យ %SERIESNUMBER តម្លៃ ៖ %POINTVALUES"
 
 #: source/controller/dialogs/Strings.src#STR_STATUS_OBJECT_MARKED.String.Text
 msgid  "%OBJECTNAME selected"
@@ -1153,7 +1153,7 @@ msgstr "ប្លង់​ស្វ័យ​ប្រវត្តិ"
 
 #: source/controller/dialogs/Strings.src#STR_ACTION_NOTPOSSIBLE.String.Text
 msgid  "This function cannot be completed with the selected objects."
-msgstr ""
+msgstr "អនុគមន៍​នេះ​មិន​អាច​ត្រូវ​បាន​បញ្ចប់​ជា​មួយ​នឹង​វត្ថុ​ដែល​បាន​ជ្រើស​បាន​ទេ ។"
 
 #: source/controller/dialogs/Strings.src#STR_ACTION_EDIT_TEXT.String.Text
 msgid  "Edit text"
@@ -1257,7 +1257,7 @@ msgstr "ជ្រើស​ជួរ​សម្រាប់​របារ​ក
 
 #: source/controller/dialogs/Strings.src#STR_DATA_EDITOR_INCORRECT_INPUT.String.Text
 msgid  "Your last input is incorrect.\nIgnore this change and close the dialog?"
-msgstr ""
+msgstr "ព័ត៌មាន​បញ្ចូល​របស់​អ្នក​ចុង​ក្រោយ​មិន​ត្រឹមត្រូវ ។\nមិន​អើពើ​ការ​ផ្លាស់ប្ដូរ​នេះ និង​បិទ​ប្រអប់?"
 
 #: source/controller/dialogs/Strings.src#STR_TEXT_DIRECTION_LTR.String.Text
 msgid  "Left-to-right"

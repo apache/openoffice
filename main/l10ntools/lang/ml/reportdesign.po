@@ -65,7 +65,7 @@ msgstr "'#1' എന്ന പേരു് നിലവിലുണ്ടു്, 
 
 #: source/core/resource/strings.src#RID_STR_ERROR_WRONG_ARGUMENT.String.Text
 msgid  "You tried to set an illegal argument. Please have a look at '#1' for valid arguments."
-msgstr ""
+msgstr "തെറ്റായ ആര്‍ഗ്യുമെന്റ് സജ്ജമാക്കുവാന്‍ ശ്രമിച്ചു. ദയവായി '#1' നോക്കി ശരിയായ ആര്‍ഗ്യുമെന്റുകള്‍ കണ്ടുപിടിക്കുക."
 
 #: source/core/resource/strings.src#RID_STR_ARGUMENT_IS_NULL.String.Text
 msgid  "The element is invalid."
@@ -152,13 +152,23 @@ msgstr "ഗ്രൂപ്പിനുള്ള തലക്കെട്ട്"
 
 #: source/ui/dlg/GroupsSorting.src#RID_GROUPS_SORTING.LST_HEADERLST.Default.StringList.item
 #, fuzzy
+msgid  "Present"
+msgstr "നിലവിലുള്ള"
+
+#: source/ui/dlg/GroupsSorting.src#RID_GROUPS_SORTING.LST_HEADERLST.Default.StringList.item
+#, fuzzy
 msgid  "Not present"
-msgstr "നിലവിലില്ല"
+msgstr "ലഭ്യമല്ല"
 
 #: source/ui/dlg/GroupsSorting.src#RID_GROUPS_SORTING.FT_FOOTER.FixedText.Text
 #, fuzzy
 msgid  "Group Footer"
 msgstr "ഗ്രൂപ്പിനുള്ള അടിക്കുറിപ്പു്"
+
+#: source/ui/dlg/GroupsSorting.src#RID_GROUPS_SORTING.LST_FOOTERLST.Default.StringList.item
+#, fuzzy
+msgid  "Present"
+msgstr "നിലവിലുള്ള"
 
 #: source/ui/dlg/GroupsSorting.src#RID_GROUPS_SORTING.LST_FOOTERLST.Default.StringList.item
 #, fuzzy
@@ -261,8 +271,9 @@ msgid  "Interval"
 msgstr "ഇടവേള"
 
 #: source/ui/dlg/GroupsSorting.src#STR_RPT_HELP_FIELD.String.Text
+#, fuzzy
 msgid  "Select a field or type an expression to sort or group on."
-msgstr ""
+msgstr "ഒരു ഫീള്‍ഡ് തെരഞ്ഞെടുക്കുക അല്ലെങ്കില്‍ ക്രമീകരിക്കുന്നതിനായി ഒരു എക്സ്പ്രെഷന്‍ നല്‍കുക."
 
 #: source/ui/dlg/GroupsSorting.src#STR_RPT_HELP_HEADER.String.Text
 #, fuzzy
@@ -275,8 +286,9 @@ msgid  "Display a footer for this group?"
 msgstr "ഈ ഗ്രൂപ്പിനു് ഒരു അടിക്കുറിപ്പു് നല്‍കണമോ?"
 
 #: source/ui/dlg/GroupsSorting.src#STR_RPT_HELP_GROUPON.String.Text
+#, fuzzy
 msgid  "Select the value or range of values that starts a new group."
-msgstr ""
+msgstr "ഒരു പുതിയ ഗ്രൂപ്പിനുള്ള മൂല്ല്യം അല്ലെങ്കില്‍ മൂല്ല്യ പരിധി തെരഞ്ഞെടുക്കുക."
 
 #: source/ui/dlg/GroupsSorting.src#STR_RPT_HELP_INTERVAL.String.Text
 #, fuzzy
@@ -289,18 +301,9 @@ msgid  "Keep group together on one page?"
 msgstr "ഗ്രൂപ്പ് ഒന്നിച്ചു് ഒറ്റ താളില്‍ സൂക്ഷിക്കണമോ?"
 
 #: source/ui/dlg/GroupsSorting.src#STR_RPT_HELP_SORT.String.Text
+#, fuzzy
 msgid  "Select ascending or descending sort order. Ascending means from A to Z or 0 to 9"
-msgstr ""
-
-#: source/ui/dlg/GroupsSorting.src#RID_GROUPS_SORTING.LST_HEADERLST.Default.StringList.item
-#, fuzzy
-msgid  "Present"
-msgstr "നിലവിലുള്ള"
-
-#: source/ui/dlg/GroupsSorting.src#RID_GROUPS_SORTING.LST_FOOTERLST.Default.StringList.item
-#, fuzzy
-msgid  "Present"
-msgstr "നിലവിലുള്ള"
+msgstr "കുറവില്‍ നിന്നും കൂടുതല്‍ അല്ലെങ്കില്‍ കൂടുതലില്‍ നിന്നും കുറവു് എന്ന ക്രമം തെരഞ്ഞെടുക്കുക. A-Z അല്ലെങ്കില്‍ 0-9 എന്നതാണു് കുറവില്‍ നിന്നും കൂടുതല്‍ എന്ന ക്രമം."
 
 #: source/ui/dlg/PageNumber.src#RID_PAGENUMBERS.ModalDialog.Text
 #, fuzzy
@@ -349,6 +352,16 @@ msgstr "അലൈന്‍മെന്റ്:"
 
 #: source/ui/dlg/PageNumber.src#RID_PAGENUMBERS.LST_ALIGNMENT.Default.StringList.item
 #, fuzzy
+msgid  "Left"
+msgstr "ഇടത്തു്"
+
+#: source/ui/dlg/PageNumber.src#RID_PAGENUMBERS.LST_ALIGNMENT.Default.StringList.item
+#, fuzzy
+msgid  "Center"
+msgstr "മദ്ധ്യം"
+
+#: source/ui/dlg/PageNumber.src#RID_PAGENUMBERS.LST_ALIGNMENT.Default.StringList.item
+#, fuzzy
 msgid  "Right"
 msgstr "വലത്തു്"
 
@@ -363,22 +376,14 @@ msgid  "~Help"
 msgstr "~സഹായം"
 
 #: source/ui/dlg/PageNumber.src#STR_RPT_PN_PAGE.String.Text
-msgid  ""Page " & #PAGENUMBER#"
-msgstr ""
+#, fuzzy
+msgid  "\"Page \" & #PAGENUMBER#"
+msgstr "\"താള്‍ \" & #PAGENUMBER#"
 
 #: source/ui/dlg/PageNumber.src#STR_RPT_PN_PAGE_OF.String.Text
-msgid  " & " of " & #PAGECOUNT#"
-msgstr ""
-
-#: source/ui/dlg/PageNumber.src#RID_PAGENUMBERS.LST_ALIGNMENT.Default.StringList.item
 #, fuzzy
-msgid  "Left"
-msgstr "ഇടത്തു്"
-
-#: source/ui/dlg/PageNumber.src#RID_PAGENUMBERS.LST_ALIGNMENT.Default.StringList.item
-#, fuzzy
-msgid  "Center"
-msgstr "മദ്ധ്യം"
+msgid  " & \" of \" & #PAGECOUNT#"
+msgstr " & \" / \" & #PAGECOUNT#"
 
 #: source/ui/dlg/dlgpage.src#RID_PAGEDIALOG_PAGE.TabDialog.Text
 #, fuzzy
@@ -393,7 +398,7 @@ msgstr "താള്‍"
 #: source/ui/dlg/dlgpage.src#RID_PAGEDIALOG_PAGE.1.RID_SVXPAGE_BACKGROUND.PageItem.Text
 #, fuzzy
 msgid  "Background"
-msgstr "പശ്ചാത്താലം"
+msgstr "പശ്ചാത്തലം"
 
 #: source/ui/dlg/dlgpage.src#RID_PAGEDIALOG_PAGE.1.PushButton.Text
 #, fuzzy
@@ -408,7 +413,7 @@ msgstr "താള്‍"
 #: source/ui/dlg/dlgpage.src#RID_PAGEDIALOG_PAGE.2.String.Text
 #, fuzzy
 msgid  "Background"
-msgstr "പശ്ചാത്താലം"
+msgstr "പശ്ചാത്തലം"
 
 #: source/ui/dlg/dlgpage.src#RID_PAGEDIALOG_BACKGROUND.TabDialog.Text
 #, fuzzy
@@ -541,82 +546,70 @@ msgid  "Properties..."
 msgstr "വിശേഷതകള്‍..."
 
 #: source/ui/dlg/CondFormat.src#WIN_CONDITION.LB_COND_TYPE.Default.StringList.item
-#, fuzzy
+msgid  "Field Value Is"
+msgstr "ഫീള്‍ഡിന്റെ മൂല്ല്യം"
+
+#: source/ui/dlg/CondFormat.src#WIN_CONDITION.LB_COND_TYPE.Default.StringList.item
 msgid  "Expression Is"
 msgstr "എക്സ്പ്രെഷന്‍"
 
 #: source/ui/dlg/CondFormat.src#WIN_CONDITION.LB_OP.0.StringList.item
-#, fuzzy
 msgid  "between"
 msgstr "between"
 
 #: source/ui/dlg/CondFormat.src#WIN_CONDITION.LB_OP.1.StringList.item
-#, fuzzy
 msgid  "not between"
 msgstr "not between"
 
 #: source/ui/dlg/CondFormat.src#WIN_CONDITION.LB_OP.2.StringList.item
-#, fuzzy
 msgid  "equal to"
 msgstr "equal to"
 
 #: source/ui/dlg/CondFormat.src#WIN_CONDITION.LB_OP.3.StringList.item
-#, fuzzy
 msgid  "not equal to"
 msgstr "not equal to"
 
 #: source/ui/dlg/CondFormat.src#WIN_CONDITION.LB_OP.4.StringList.item
-#, fuzzy
 msgid  "greater than"
 msgstr "greater than"
 
 #: source/ui/dlg/CondFormat.src#WIN_CONDITION.LB_OP.5.StringList.item
-#, fuzzy
 msgid  "less than"
 msgstr "less than"
 
 #: source/ui/dlg/CondFormat.src#WIN_CONDITION.LB_OP.6.StringList.item
-#, fuzzy
 msgid  "greater than or equal to"
 msgstr "greater than or equal to"
 
 #: source/ui/dlg/CondFormat.src#WIN_CONDITION.LB_OP.7.StringList.item
-#, fuzzy
 msgid  "less than or equal to"
 msgstr "less than or equal to"
 
 #: source/ui/dlg/CondFormat.src#WIN_CONDITION.FT_AND.FixedText.Text
-#, fuzzy
 msgid  "and"
 msgstr "and"
 
 #: source/ui/dlg/CondFormat.src#WIN_CONDITION.CRTL_FORMAT_PREVIEW.Window.Text
-#, fuzzy
 msgid  "Example"
 msgstr "ഉദാഹരണം"
 
 #: source/ui/dlg/CondFormat.src#RID_CONDFORMAT.ModalDialog.Text
-#, fuzzy
 msgid  "Conditional Formatting"
 msgstr "കണ്ടീഷണല്‍ ഫോര്‍മാറ്റിങ്"
 
 #: source/ui/dlg/CondFormat.src#RID_CONDFORMAT.PB_HELP.HelpButton.Text
-#, fuzzy
 msgid  "~Help"
 msgstr "~സഹായം"
 
 #: source/ui/dlg/CondFormat.src#STR_NUMBERED_CONDITION.String.Text
-#, fuzzy
 msgid  "Condition $number$"
 msgstr "Condition $number$"
 
 #: source/ui/dlg/CondFormat.src#STR_COLOR_WHITE.String.Text
-#, fuzzy
 msgid  "White"
 msgstr "വെളുപ്പു്"
 
 #: source/ui/dlg/CondFormat.src#STR_CHARCOLOR.String.Text
-#, fuzzy
 msgid  "Font color"
 msgstr "അക്ഷരസഞ്ചയത്തിന്റെ നിറം"
 
@@ -656,13 +649,9 @@ msgid  "Help"
 msgstr "സഹായം"
 
 #: source/ui/dlg/CondFormat.src#ADDFIELD_HELP_FIELD.FixedText.Text
-msgid  "Highlight the fields to insert into the selected section of the template, then click Insert or press Enter."
-msgstr ""
-
-#: source/ui/dlg/CondFormat.src#WIN_CONDITION.LB_COND_TYPE.Default.StringList.item
 #, fuzzy
-msgid  "Field Value Is"
-msgstr "ഫീള്‍ഡിന്റെ മൂല്ല്യം"
+msgid  "Highlight the fields to insert into the selected section of the template, then click Insert or press Enter."
+msgstr "ടെംപ്ലേറ്റിന്റെ തെരഞ്ഞെടുത്ത ഭാഗത്തേക്ക് ചേര്‍ക്കേണ്ട ഫീള്‍ഡുകള്‍ എടുത്തുകാണിക്കുക. ശേഷം ഇടയ്ക്കു് ചേര്‍ക്കു് അമര്‍ത്തി Enter ചെയ്യുക."
 
 #: source/ui/dlg/DateTime.src#RID_DATETIME_DLG.ModalDialog.Text
 #, fuzzy
@@ -695,864 +684,693 @@ msgid  "~Help"
 msgstr "~സഹായം"
 
 #: source/ui/inspection/inspection.src#RID_STR_PROPPAGE_DEFAULT.String.Text
-#, fuzzy
 msgid  "General"
 msgstr "സാധാരണ"
 
 #: source/ui/inspection/inspection.src#RID_STR_PROPPAGE_DATA.String.Text
-#, fuzzy
 msgid  "Data"
 msgstr "ഡേറ്റാ"
 
 #: source/ui/inspection/inspection.src#RID_STR_BOOL.1.String.Text
-#, fuzzy
 msgid  "No"
 msgstr "ഇല്ല"
 
 #: source/ui/inspection/inspection.src#RID_STR_BOOL.2.String.Text
-#, fuzzy
 msgid  "Yes"
 msgstr "ഉവ്വു്"
 
 #: source/ui/inspection/inspection.src#RID_STR_FORCENEWPAGE.String.Text
-#, fuzzy
 msgid  "Force New Page"
 msgstr "പുതിയ താള്‍ നിര്‍ബന്ധമായുണ്ടാക്കുക"
 
 #: source/ui/inspection/inspection.src#RID_STR_FORCENEWPAGE_CONST.1.String.Text
-#, fuzzy
 msgid  "None"
 msgstr "ഒന്നുമില്ല"
 
 #: source/ui/inspection/inspection.src#RID_STR_FORCENEWPAGE_CONST.2.String.Text
-#, fuzzy
 msgid  "Before Section"
 msgstr "വിഭാഗത്തിനു് മുമ്പു്"
 
 #: source/ui/inspection/inspection.src#RID_STR_FORCENEWPAGE_CONST.3.String.Text
-#, fuzzy
 msgid  "After Section"
 msgstr "വിഭാഗത്തിനു് ശേഷം"
 
 #: source/ui/inspection/inspection.src#RID_STR_FORCENEWPAGE_CONST.4.String.Text
-#, fuzzy
 msgid  "Before & After Section"
 msgstr "വിഭാഗത്തിനു് മുമ്പും പിമ്പും"
 
 #: source/ui/inspection/inspection.src#RID_STR_NEWROWORCOL.String.Text
-#, fuzzy
 msgid  "New Row Or Column"
 msgstr "പുതിയ നിര അല്ലെങ്കില്‍ വരി"
 
 #: source/ui/inspection/inspection.src#RID_STR_KEEPTOGETHER.String.Text
-#, fuzzy
 msgid  "Keep Together"
 msgstr "ഒന്നിച്ചു് സൂക്ഷിക്കുക"
 
 #: source/ui/inspection/inspection.src#RID_STR_KEEPTOGETHER_CONST.1.String.Text
-#, fuzzy
 msgid  "No"
 msgstr "ഇല്ല"
 
 #: source/ui/inspection/inspection.src#RID_STR_KEEPTOGETHER_CONST.2.String.Text
-#, fuzzy
 msgid  "Whole Group"
 msgstr "പൂര്‍ണ്ണമായ ഗ്രൂപ്പ്"
 
 #: source/ui/inspection/inspection.src#RID_STR_KEEPTOGETHER_CONST.3.String.Text
-#, fuzzy
 msgid  "With First Detail"
 msgstr "ആദ്യത്തെ വിശദാംശം"
 
 #: source/ui/inspection/inspection.src#RID_STR_CANGROW.String.Text
-#, fuzzy
 msgid  "Can Grow"
 msgstr "Can Grow"
 
 #: source/ui/inspection/inspection.src#RID_STR_CANSHRINK.String.Text
-#, fuzzy
 msgid  "Can Shrink"
 msgstr "Can Shrink"
 
 #: source/ui/inspection/inspection.src#RID_STR_REPEATSECTION.String.Text
-#, fuzzy
 msgid  "Repeat Section"
 msgstr "വിഭാഗം ആവര്‍ത്തിക്കുക"
 
 #: source/ui/inspection/inspection.src#RID_STR_PRINTREPEATEDVALUES.String.Text
-#, fuzzy
 msgid  "Print repeated values"
 msgstr "ആവര്‍ത്തിച്ച മൂല്ല്യങ്ങള്‍ പ്രിന്റ് ചെയ്യുക"
 
 #: source/ui/inspection/inspection.src#RID_STR_CONDITIONALPRINTEXPRESSION.String.Text
-#, fuzzy
 msgid  "Conditional Print Expression"
 msgstr "കണ്ടീഷണല്‍ പ്രിന്റ് എക്സ്പ്രെഷന്‍"
 
 #: source/ui/inspection/inspection.src#RID_STR_STARTNEWCOLUMN.String.Text
-#, fuzzy
 msgid  "Start new column"
 msgstr "പുതിയ വരി തുടങ്ങുക"
 
 #: source/ui/inspection/inspection.src#RID_STR_STARTNEWPAGE.String.Text
-#, fuzzy
 msgid  "Start new page"
 msgstr "പുതിയ താള്‍ തുടങ്ങുക"
 
 #: source/ui/inspection/inspection.src#RID_STR_RESETPAGENUMBER.String.Text
-#, fuzzy
 msgid  "Reset page number"
 msgstr "താള്‍ നംബര്‍ വീണ്ടും സജ്ജമാക്കുക"
 
 #: source/ui/inspection/inspection.src#RID_STR_CHARTTYPE.String.Text
-#, fuzzy
 msgid  "Chart type"
 msgstr "ചാര്‍ട്ട് രീതി"
 
 #: source/ui/inspection/inspection.src#RID_STR_PRINTWHENGROUPCHANGE.String.Text
-#, fuzzy
 msgid  "Print When Group Change"
 msgstr "ഗ്രൂപ്പ് മാറുമ്പോള്‍ പ്രിന്റ് ചെയ്യുക"
 
 #: source/ui/inspection/inspection.src#RID_STR_VISIBLE.String.Text
-#, fuzzy
 msgid  "Visible"
 msgstr "ദൃശ്യം"
 
 #: source/ui/inspection/inspection.src#RID_STR_GROUPKEEPTOGETHER.String.Text
-#, fuzzy
 msgid  "Group keep together"
 msgstr "ഗ്രൂപ്പ് ഒന്നിച്ചാക്കുക"
 
 #: source/ui/inspection/inspection.src#RID_STR_GROUPKEEPTOGETHER_CONST.1.String.Text
-#, fuzzy
 msgid  "Per Page"
 msgstr "ഓരോ താളും"
 
 #: source/ui/inspection/inspection.src#RID_STR_GROUPKEEPTOGETHER_CONST.2.String.Text
-#, fuzzy
 msgid  "Per Column"
 msgstr "ഓരോ നിരയും"
 
 #: source/ui/inspection/inspection.src#RID_STR_SECTIONPAGEBREAK_CONST.1.String.Text
-#, fuzzy
 msgid  "None"
 msgstr "ഒന്നുമില്ല"
 
 #: source/ui/inspection/inspection.src#RID_STR_SECTIONPAGEBREAK_CONST.2.String.Text
-#, fuzzy
 msgid  "Section"
 msgstr "വിഭാഗം"
 
 #: source/ui/inspection/inspection.src#RID_STR_SECTIONPAGEBREAK_CONST.3.String.Text
-#, fuzzy
 msgid  "Automatic"
 msgstr "ഓട്ടോമാറ്റിക്"
 
 #: source/ui/inspection/inspection.src#RID_STR_PAGEHEADEROPTION.String.Text
-#, fuzzy
 msgid  "Page header"
 msgstr "താള്‍ തലക്കെട്ട്"
 
 #: source/ui/inspection/inspection.src#RID_STR_PAGEFOOTEROPTION.String.Text
-#, fuzzy
 msgid  "Page footer"
 msgstr "താള്‍ അടിക്കുറിപ്പു്"
 
 #: source/ui/inspection/inspection.src#RID_STR_REPORTPRINTOPTION_CONST.1.String.Text
-#, fuzzy
 msgid  "All Pages"
 msgstr "എല്ലാ താളുകളും"
 
 #: source/ui/inspection/inspection.src#RID_STR_REPORTPRINTOPTION_CONST.2.String.Text
-#, fuzzy
 msgid  "Not With Report Header"
 msgstr "റിപ്പോര്‍ട്ട് തലക്കെട്ടില്ലാതെ"
 
 #: source/ui/inspection/inspection.src#RID_STR_REPORTPRINTOPTION_CONST.3.String.Text
-#, fuzzy
 msgid  "Not With Report Footer"
 msgstr "റിപ്പോര്‍ട്ട് അടിക്കുറിപ്പില്ലാതെ"
 
 #: source/ui/inspection/inspection.src#RID_STR_REPORTPRINTOPTION_CONST.4.String.Text
-#, fuzzy
 msgid  "Not With Report Header/Footer"
 msgstr "റിപ്പോര്‍ട്ട് തലക്കെട്ട്/അടിക്കുറിപ്പില്ലാതെ"
 
 #: source/ui/inspection/inspection.src#RID_STR_DEEPTRAVERSING.String.Text
-#, fuzzy
 msgid  "Deep traversing"
 msgstr "ഡീപ് ട്രാവേഴ്സിങ്"
 
 #: source/ui/inspection/inspection.src#RID_STR_PREEVALUATED.String.Text
-#, fuzzy
 msgid  "Pre evaluation"
 msgstr "പ്രി ഇവാലുവേഷന്‍"
 
 #: source/ui/inspection/inspection.src#RID_STR_POSITIONX.String.Text
-#, fuzzy
 msgid  "Position X"
 msgstr "സ്ഥാനം X"
 
 #: source/ui/inspection/inspection.src#RID_STR_POSITIONY.String.Text
-#, fuzzy
 msgid  "Position Y"
 msgstr "സ്ഥാനം Y"
 
 #: source/ui/inspection/inspection.src#RID_STR_WIDTH.String.Text
-#, fuzzy
 msgid  "Width"
 msgstr "വീതി"
 
 #: source/ui/inspection/inspection.src#RID_STR_HEIGHT.String.Text
-#, fuzzy
 msgid  "Height"
 msgstr "ഉയരം"
 
 #: source/ui/inspection/inspection.src#RID_STR_INITIALFORMULA.String.Text
-#, fuzzy
 msgid  "Initial value"
 msgstr "പ്രാരംഭ മൂല്ല്യം"
 
 #: source/ui/inspection/inspection.src#RID_STR_PRESERVEIRI.String.Text
-#, fuzzy
 msgid  "Preserve as Link"
 msgstr "കണ്ണിയായി സൂക്ഷിക്കുക"
 
 #: source/ui/inspection/inspection.src#RID_STR_FORMULA.String.Text
-#, fuzzy
 msgid  "Formula"
 msgstr "ഫോര്‍മുലാ"
 
 #: source/ui/inspection/inspection.src#RID_STR_DATAFIELD.String.Text
-#, fuzzy
 msgid  "Data field"
 msgstr "ഡേറ്റാ ഫീള്‍ഡ്"
 
 #: source/ui/inspection/inspection.src#RID_STR_FONT.String.Text
-#, fuzzy
 msgid  "Font"
 msgstr "അക്ഷര‍സഞ്ചയം"
 
 #: source/ui/inspection/inspection.src#RID_STR_BACKCOLOR.String.Text
-#, fuzzy
 msgid  "Background color"
 msgstr "പശ്ചാത്തല നിറം"
 
 #: source/ui/inspection/inspection.src#RID_STR_BACKTRANSPARENT.String.Text
-#, fuzzy
 msgid  "Background Transparent"
 msgstr "Background Transparent"
 
 #: source/ui/inspection/inspection.src#RID_STR_CONTROLBACKGROUNDTRANSPARENT.String.Text
-#, fuzzy
 msgid  "Background Transparent"
 msgstr "Background Transparent"
 
 #: source/ui/inspection/inspection.src#RID_STR_OVERLAP_OTHER_CONTROL.String.Text
-#, fuzzy
 msgid  "This operation is not allowed. The control overlaps with another one."
 msgstr "ഈ പ്രക്രിയ അനുവദിക്കുന്നില്ല. ഒരു കണ്ട്രോള്‍ മറ്റൊന്നിനെ തിരുത്തുന്നു."
 
 #: source/ui/inspection/inspection.src#RID_STR_ILLEGAL_POSITION.String.Text
-#, fuzzy
 msgid  "This position can not be set. It is invalid."
 msgstr "ഈ സ്ഥാനം സജ്ജമാക്കുവാന്‍ സാധ്യമല്ല. ഇതു് തെറ്റാണു്."
 
 #: source/ui/inspection/inspection.src#RID_STR_SCOPE_GROUP.String.Text
-#, fuzzy
 msgid  "Group: %1"
 msgstr "ഗ്രൂപ്പ്: %1"
 
 #: source/ui/inspection/inspection.src#RID_STR_FORMULALIST.String.Text
-#, fuzzy
 msgid  "Function"
 msgstr "ഫംഗ്ഷന്‍"
 
 #: source/ui/inspection/inspection.src#RID_STR_SCOPE.String.Text
-#, fuzzy
 msgid  "Scope"
 msgstr "പരിധി"
 
 #: source/ui/inspection/inspection.src#RID_STR_TYPE.String.Text
-#, fuzzy
 msgid  "Data Field Type"
 msgstr "ഡേറ്റാ ഫീള്‍ഡ് രീതി"
 
 #: source/ui/inspection/inspection.src#RID_STR_TYPE_CONST.1.String.Text
-#, fuzzy
 msgid  "Field or Formula"
 msgstr "ഫീള്‍ഡ് അല്ലെങ്കില്‍ ഫോര്‍മുലാ"
 
 #: source/ui/inspection/inspection.src#RID_STR_TYPE_CONST.2.String.Text
-#, fuzzy
 msgid  "Function"
 msgstr "ഫംഗ്ഷന്‍"
 
 #: source/ui/inspection/inspection.src#RID_STR_TYPE_CONST.3.String.Text
-#, fuzzy
 msgid  "Counter"
 msgstr "കൌണ്ടര്‍"
 
 #: source/ui/inspection/inspection.src#RID_STR_TYPE_CONST.4.String.Text
-#, fuzzy
 msgid  "User defined Function"
 msgstr "യൂസര്‍ നിര്‍ദ്ധിഷ്ട ഫംഗ്ഷന്‍"
 
 #: source/ui/inspection/inspection.src#RID_STR_MASTERFIELDS.String.Text
-#, fuzzy
 msgid  "Link master fields"
 msgstr "മാസ്റ്റര്‍ ഫീള്‍ഡുകള്‍ തമ്മില്‍ ചേര്‍ക്കുക"
 
 #: source/ui/inspection/inspection.src#RID_STR_DETAILFIELDS.String.Text
-#, fuzzy
 msgid  "Link slave fields"
 msgstr "സ്ലേവ് ഫീള്‍ഡുകള്‍ തമ്മില്‍ ചേര്‍ക്കുക"
 
 #: source/ui/inspection/inspection.src#RID_STR_EXPLANATION.String.Text
 msgid  "Charts can be used to display detailed data about the current record of the report. To do this, you can specify which columns in the chart match which columns in the report."
-msgstr ""
+msgstr "Charts can be used to display detailed data about the current record of the report. To do this, you can specify which columns in the chart match which columns in the report."
 
 #: source/ui/inspection/inspection.src#RID_STR_DETAILLABEL.String.Text
-#, fuzzy
 msgid  "Chart"
 msgstr "ചാര്‍ട്ട്"
 
 #: source/ui/inspection/inspection.src#RID_STR_MASTERLABEL.String.Text
-#, fuzzy
 msgid  "Report"
 msgstr "റിപ്പോര്‍ട്ട്"
 
 #: source/ui/inspection/inspection.src#RID_STR_PREVIEW_COUNT.String.Text
-#, fuzzy
 msgid  "Preview Row(s)"
 msgstr "നിരയുടെ (കളുടെ) തിരനോട്ടം"
 
 #: source/ui/inspection/inspection.src#RID_STR_AREA.String.Text
-#, fuzzy
 msgid  "Area"
 msgstr "വിസ്താരം"
 
 #: source/ui/inspection/inspection.src#RID_STR_MIMETYPE.String.Text
-#, fuzzy
 msgid  "Report Output Format"
 msgstr "റിപ്പോര്‍ട്ട് ഔട്ട്പുട്ട് ശൈലി"
 
 #: source/ui/inspection/inspection.src#RID_STR_VERTICALALIGN.String.Text
-#, fuzzy
 msgid  "Vert. Alignment"
 msgstr "കുറുകെയുള്ള അലൈന്‍മെന്റ്"
 
 #: source/ui/inspection/inspection.src#RID_STR_VERTICAL_ALIGN_CONST.1.String.Text
-#, fuzzy
 msgid  "Top"
 msgstr "മുകളില്‍"
 
 #: source/ui/inspection/inspection.src#RID_STR_VERTICAL_ALIGN_CONST.2.String.Text
-#, fuzzy
 msgid  "Middle"
 msgstr "മദ്ധ്യം"
 
 #: source/ui/inspection/inspection.src#RID_STR_VERTICAL_ALIGN_CONST.3.String.Text
-#, fuzzy
 msgid  "Bottom"
 msgstr "താഴെ"
 
 #: source/ui/inspection/inspection.src#RID_STR_PARAADJUST.String.Text
-#, fuzzy
 msgid  "Horz. Alignment"
 msgstr "നേരെയുള്ള അലൈന്‍മെന്റ്"
 
 #: source/ui/inspection/inspection.src#RID_STR_PARAADJUST_CONST.1.String.Text
-#, fuzzy
 msgid  "Left"
 msgstr "ഇടതു്"
 
 #: source/ui/inspection/inspection.src#RID_STR_PARAADJUST_CONST.2.String.Text
-#, fuzzy
 msgid  "Right"
 msgstr "വലതു്"
 
 #: source/ui/inspection/inspection.src#RID_STR_PARAADJUST_CONST.3.String.Text
-#, fuzzy
 msgid  "Block"
 msgstr "ബ്ലോക്ക്"
 
 #: source/ui/inspection/inspection.src#RID_STR_PARAADJUST_CONST.4.String.Text
-#, fuzzy
 msgid  "Center"
 msgstr "മദ്ധ്യം"
 
 #: source/ui/inspection/inspection.src#RID_STR_F_COUNTER.String.Text
-#, fuzzy
 msgid  "Counter"
 msgstr "കൌണ്ടര്‍"
 
 #: source/ui/inspection/inspection.src#RID_STR_F_ACCUMULATION.String.Text
-#, fuzzy
 msgid  "Accumulation"
 msgstr "കൂടിചേര്‍ന്നതു്"
 
 #: source/ui/inspection/inspection.src#RID_STR_F_MINIMUM.String.Text
-#, fuzzy
 msgid  "Minimum"
 msgstr "ഏറ്റവും കുറഞ്ഞ"
 
 #: source/ui/inspection/inspection.src#RID_STR_F_MAXIMUM.String.Text
-#, fuzzy
 msgid  "Maximum"
 msgstr "ഏറ്റവും കൂടിയ"
 
 #: source/ui/report/report.src#RID_STR_BRWTITLE_PROPERTIES.String.Text
-#, fuzzy
 msgid  "Properties: "
 msgstr "വിശേഷതകള്‍: "
 
 #: source/ui/report/report.src#RID_STR_BRWTITLE_NO_PROPERTIES.String.Text
-#, fuzzy
 msgid  "No Control marked"
 msgstr "കണ്ട്രോള്‍ അടയാളപ്പെടുത്തിയിട്ടില്ല"
 
 #: source/ui/report/report.src#RID_STR_BRWTITLE_MULTISELECT.String.Text
-#, fuzzy
 msgid  "Multiselection"
 msgstr "അനവധി തെരഞ്ഞെടുക്കല്‍"
 
 #: source/ui/report/report.src#RID_STR_PROPTITLE_IMAGECONTROL.String.Text
-#, fuzzy
 msgid  "Image Control"
 msgstr "ഇമേജ് കണ്ട്രോള്‍"
 
 #: source/ui/report/report.src#RID_STR_PROPTITLE_FIXEDTEXT.String.Text
-#, fuzzy
 msgid  "Label field"
 msgstr "ലേബല്‍ ഫീള്‍ഡ്"
 
 #: source/ui/report/report.src#RID_STR_PROPTITLE_FIXEDLINE.String.Text
-#, fuzzy
 msgid  "Line"
 msgstr "വര"
 
 #: source/ui/report/report.src#RID_STR_PROPTITLE_FORMATTED.String.Text
-#, fuzzy
 msgid  "Formatted Field"
 msgstr "ഫോര്‍മാറ്റ് ചെയ്ത ഫീള്‍ഡ്"
 
 #: source/ui/report/report.src#RID_STR_PROPTITLE_SHAPE.String.Text
-#, fuzzy
 msgid  "Shape"
 msgstr "ആകൃതി"
 
 #: source/ui/report/report.src#RID_STR_PROPTITLE_REPORT.String.Text
-#, fuzzy
 msgid  "Report"
 msgstr "റിപ്പോര്‍ട്ട്"
 
 #: source/ui/report/report.src#RID_STR_PROPTITLE_SECTION.String.Text
-#, fuzzy
 msgid  "Section"
 msgstr "വിഭാഗം"
 
 #: source/ui/report/report.src#RID_STR_PROPTITLE_FUNCTION.String.Text
-#, fuzzy
 msgid  "Function"
 msgstr "ഫംഗ്ഷന്‍"
 
 #: source/ui/report/report.src#RID_STR_PROPTITLE_GROUP.String.Text
-#, fuzzy
 msgid  "Group"
 msgstr "ഗ്രൂപ്പ്"
 
 #: source/ui/report/report.src#STR_SHOW_RULER.String.Text
-#, fuzzy
 msgid  "Show ruler"
 msgstr "റൂളര്‍ കാണിക്കുക"
 
 #: source/ui/report/report.src#STR_SHOW_GRID.String.Text
-#, fuzzy
 msgid  "Show grid"
 msgstr "ഗ്രിഡ് കാണിക്കുക"
 
 #: source/ui/report/report.src#RID_STR_UNDO_CHANGEPOSITION.String.Text
-#, fuzzy
 msgid  "Change Object"
 msgstr "ഒബ്ജക്ട് മാറ്റുക"
 
 #: source/ui/report/report.src#RID_STR_UNDO_MOVE_GROUP.String.Text
-#, fuzzy
 msgid  "Move Group(s)"
 msgstr "ഗ്രൂപ്പ്(കള്‍) നീക്കുക"
 
 #: source/ui/report/report.src#RID_STR_UNDO_CONDITIONAL_FORMATTING.String.Text
-#, fuzzy
 msgid  "Conditional Formatting"
 msgstr "കണ്ടീഷനല്‍ ഫോര്‍മാറ്റിങ്"
 
 #: source/ui/report/report.src#RID_STR_UNDO_REMOVE_REPORTHEADERFOOTER.String.Text
-#, fuzzy
 msgid  "Remove report header / report footer"
 msgstr "റിപ്പോര്‍ട്ട് തലക്കെട്ട് / റിപ്പോര്‍ട്ട് അടിക്കുറിപ്പു് നീക്കം ചെയ്യുക"
 
 #: source/ui/report/report.src#RID_STR_UNDO_ADD_REPORTHEADERFOOTER.String.Text
-#, fuzzy
 msgid  "Add report header / report footer"
 msgstr "റിപ്പോര്‍ട്ട് തലക്കെട്ട് / റിപ്പോര്‍ട്ട് അടിക്കുറിപ്പു് ചേര്‍ക്കുക"
 
 #: source/ui/report/report.src#RID_STR_UNDO_REMOVE_PAGEHEADERFOOTER.String.Text
-#, fuzzy
 msgid  "Remove page header / page footer"
 msgstr "താള്‍ തലക്കെട്ട് / താള്‍‍ അടിക്കുറിപ്പു് നീക്കം ചെയ്യുക"
 
 #: source/ui/report/report.src#RID_STR_UNDO_ADD_PAGEHEADERFOOTER.String.Text
-#, fuzzy
 msgid  "Add page header / page footer"
 msgstr "താള്‍ തലക്കെട്ട് / താള്‍ അടിക്കുറിപ്പു് ചേര്‍ക്കുക"
 
 #: source/ui/report/report.src#RID_STR_UNDO_PROPERTY.String.Text
-#, fuzzy
 msgid  "Change property '#'"
 msgstr "'#' വിശേഷത മാറ്റുക"
 
 #: source/ui/report/report.src#RID_STR_UNDO_ADD_GROUP_HEADER.String.Text
-#, fuzzy
 msgid  "Add group header "
 msgstr "ഗ്രൂപ്പ് തലക്കെട്ട് ചേര്‍ക്കുക"
 
 #: source/ui/report/report.src#RID_STR_UNDO_REMOVE_GROUP_HEADER.String.Text
-#, fuzzy
 msgid  "Remove group header "
 msgstr "ഗ്രൂപ്പ് തലക്കെട്ട് നീക്കം ചെയ്യുക"
 
 #: source/ui/report/report.src#RID_STR_UNDO_ADD_GROUP_FOOTER.String.Text
-#, fuzzy
 msgid  "Add group footer "
 msgstr "താള്‍ അടിക്കുറിപ്പു് ചേര്‍ക്കുക"
 
 #: source/ui/report/report.src#RID_STR_UNDO_REMOVE_GROUP_FOOTER.String.Text
-#, fuzzy
 msgid  "Remove group footer "
 msgstr "ഗ്രൂപ്പ് അടിക്കുറിപ്പു് നീക്കം ചെയ്യുക"
 
 #: source/ui/report/report.src#RID_STR_UNDO_ADDFUNCTION.String.Text
-#, fuzzy
 msgid  "Add function"
 msgstr "ഫംഗ്ഷന്‍ ചേര്‍ക്കുക"
 
 #: source/ui/report/report.src#RID_STR_UNDO_DELETEFUNCTION.String.Text
-#, fuzzy
 msgid  "Delete function"
 msgstr "ഫംഗ്ഷന്‍ വെട്ടി നീക്കുക"
 
 #: source/ui/report/report.src#RID_STR_DESIGN_VIEW.String.Text
-#, fuzzy
 msgid  "Design"
 msgstr "ശൈലി"
 
 #: source/ui/report/report.src#RID_STR_PREVIEW_VIEW.String.Text
-#, fuzzy
 msgid  "Preview"
 msgstr "തിരനോട്ടം"
 
 #: source/ui/report/report.src#STR_RPT_TITLE.String.Text
-#, fuzzy
 msgid  "Report #"
 msgstr "റിപ്പോര്‍ട്ട് #"
 
 #: source/ui/report/report.src#STR_RPT_LABEL.String.Text
-#, fuzzy
 msgid  "~Report name"
 msgstr "~റിപ്പോര്‍ട്ട് നാമം"
 
 #: source/ui/report/report.src#RID_STR_UNDO_REMOVE_GROUP.String.Text
-#, fuzzy
 msgid  "Delete Group"
 msgstr "ഗ്രൂപ്പ് വെട്ടി നീക്കുക"
 
 #: source/ui/report/report.src#RID_STR_UNDO_APPEND_GROUP.String.Text
-#, fuzzy
 msgid  "Add Group"
 msgstr "ഗ്രൂപ്പ് ചേര്‍ക്കുക"
 
 #: source/ui/report/report.src#RID_STR_UNDO_REMOVE_SELECTION.String.Text
-#, fuzzy
 msgid  "Delete Selection"
 msgstr "തെരഞ്ഞെടുത്തതു് വെട്ടി നീക്കുക"
 
 #: source/ui/report/report.src#RID_STR_UNDO_REMOVE_FUNCTION.String.Text
-#, fuzzy
 msgid  "Delete Function"
 msgstr "ഫംഗ്ഷന്‍ വെട്ടി നീക്കുക"
 
 #: source/ui/report/report.src#RID_STR_UNDO_CHANGE_SIZE.String.Text
-#, fuzzy
 msgid  "Change Size"
 msgstr "വ്യാപ്തി മാറ്റുക"
 
 #: source/ui/report/report.src#RID_STR_UNDO_PASTE.String.Text
-#, fuzzy
 msgid  "Paste"
 msgstr "ഒട്ടിക്കുക"
 
 #: source/ui/report/report.src#RID_STR_UNDO_INSERT_CONTROL.String.Text
-#, fuzzy
 msgid  "Insert Control"
 msgstr "കണ്ട്രോള്‍ ചേര്‍ക്കുക"
 
 #: source/ui/report/report.src#RID_STR_UNDO_DELETE_CONTROL.String.Text
-#, fuzzy
 msgid  "Delete Control"
 msgstr "കണ്ട്രോള്‍ വെട്ടി നീക്കുക"
 
 #: source/ui/report/report.src#RID_STR_UNDO_GROUP.String.Text
-#, fuzzy
 msgid  "Insert Group"
 msgstr "ഗ്രൂപ്പ് ചേര്‍ക്കുക"
 
 #: source/ui/report/report.src#RID_STR_UNDO_UNGROUP.String.Text
-#, fuzzy
 msgid  "Delete Group"
 msgstr "ഗ്രൂപ്പ് വെട്ടി നീക്കുക"
 
 #: source/ui/report/report.src#RID_STR_GROUPHEADER.String.Text
-#, fuzzy
 msgid  "GroupHeader"
 msgstr "ഗ്രൂപ്പ് തലക്കെട്ട്"
 
 #: source/ui/report/report.src#RID_STR_GROUPFOOTER.String.Text
-#, fuzzy
 msgid  "GroupFooter"
 msgstr "ഗ്രൂപ്പ് അടിക്കുറിപ്പു്"
 
 #: source/ui/report/report.src#RID_MENU_REPORT.SID_SORTINGANDGROUPING.MenuItem.Text
-#, fuzzy
 msgid  "Sorting and Grouping..."
 msgstr "ക്രമത്തിലാക്കലും ഗ്രൂപ്പിങ്ങും"
 
 #: source/ui/report/report.src#RID_MENU_REPORT.SID_ATTR_CHAR_COLOR_BACKGROUND.MenuItem.Text
-#, fuzzy
 msgid  "Background Color..."
 msgstr "പശ്ചാത്തല നിറം..."
 
 #: source/ui/report/report.src#RID_MENU_REPORT.SID_RULER.MenuItem.Text
-#, fuzzy
 msgid  "Ruler..."
 msgstr "റൂളര്‍..."
 
 #: source/ui/report/report.src#RID_MENU_REPORT.SID_GRID_VISIBLE.MenuItem.Text
-#, fuzzy
 msgid  "Grid..."
 msgstr "ഗ്രിഡ്..."
 
 #: source/ui/report/report.src#RID_MENU_REPORT.SID_ARRANGEMENU.MenuItem.Text
-#, fuzzy
 msgid  "~Arrange"
 msgstr "~ക്രമീകരിക്കുക"
 
 #: source/ui/report/report.src#RID_MENU_REPORT.SID_ARRANGEMENU.SID_FRAME_UP.MenuItem.Text
-#, fuzzy
 msgid  "Bring ~Forward"
 msgstr "~മുന്നോട്ട് മാറ്റുക"
 
 #: source/ui/report/report.src#RID_MENU_REPORT.SID_ARRANGEMENU.SID_FRAME_DOWN.MenuItem.Text
-#, fuzzy
 msgid  "Send Back~ward"
 msgstr "പു~റകോട്ട് മാറ്റുക"
 
 #: source/ui/report/report.src#RID_MENU_REPORT.SID_OBJECT_RESIZING.MenuItem.Text
-#, fuzzy
 msgid  "~Object Resizing"
 msgstr "~ഒബ്ജക്ടിന്റെ വ്യാപ്തി മാറ്റുക"
 
 #: source/ui/report/report.src#RID_MENU_REPORT.SID_OBJECT_RESIZING.SID_OBJECT_SMALLESTWIDTH.MenuItem.Text
-#, fuzzy
 msgid  "~Fit to smallest width"
 msgstr "ഏറ്റവും കുറഞ്ഞ ~വീതിയിലാക്കുക"
 
 #: source/ui/report/report.src#RID_MENU_REPORT.SID_OBJECT_RESIZING.SID_OBJECT_GREATESTWIDTH.MenuItem.Text
-#, fuzzy
 msgid  "~Fit to greatest width"
 msgstr "ഏറ്റവും കൂടിയ ~വീതിയിലാക്കുക"
 
 #: source/ui/report/report.src#RID_MENU_REPORT.SID_OBJECT_RESIZING.SID_OBJECT_SMALLESTHEIGHT.MenuItem.Text
-#, fuzzy
 msgid  "~Fit to smallest height"
 msgstr "ഏറ്റവും കുറഞ്ഞ ~ഉയരത്തിലാക്കുക"
 
 #: source/ui/report/report.src#RID_MENU_REPORT.SID_OBJECT_RESIZING.SID_OBJECT_GREATESTHEIGHT.MenuItem.Text
-#, fuzzy
 msgid  "~Fit to greatest height"
 msgstr "ഏറ്റവും കൂടിയ ~ഉയരത്തിലാക്കുക"
 
 #: source/ui/report/report.src#RID_MENU_REPORT.SID_SECTION_SHRINK_MENU.MenuItem.Text
-#, fuzzy
 msgid  "Section"
 msgstr "വിഭാഗം"
 
 #: source/ui/report/report.src#RID_MENU_REPORT.SID_SECTION_SHRINK_MENU.SID_SECTION_SHRINK.MenuItem.Text
-#, fuzzy
 msgid  "Shrink"
 msgstr "ചെറുതാക്കുക"
 
 #: source/ui/report/report.src#RID_MENU_REPORT.SID_SECTION_SHRINK_MENU.SID_SECTION_SHRINK_TOP.MenuItem.Text
-#, fuzzy
 msgid  "Shrink from top"
 msgstr "മുകളില്‍ നിന്നും ചെറുതാക്കുക"
 
 #: source/ui/report/report.src#RID_MENU_REPORT.SID_SECTION_SHRINK_MENU.SID_SECTION_SHRINK_BOTTOM.MenuItem.Text
-#, fuzzy
 msgid  "Shrink from bottom"
 msgstr "താഴെ നിന്നും ചെറുതാക്കുക"
 
 #: source/ui/report/report.src#RID_MENU_REPORT.SID_DISTRIBUTION.MenuItem.Text
-#, fuzzy
 msgid  "Distribution..."
 msgstr "വിതരണം..."
 
 #: source/ui/report/report.src#RID_MENU_REPORT.SID_SHOW_PROPERTYBROWSER.MenuItem.Text
-#, fuzzy
 msgid  "Properties..."
 msgstr "വിശേഷതകള്‍..."
 
 #: source/ui/report/report.src#RID_STR_FIELDSELECTION.String.Text
-#, fuzzy
 msgid  "Add field:"
 msgstr "ഫീള്‍ഡ് ചേര്‍ക്കുക:"
 
 #: source/ui/report/report.src#RID_STR_FILTER.String.Text
-#, fuzzy
 msgid  "Filter"
 msgstr "ഫില്‍‌റ്റര്‍"
 
 #: source/ui/report/report.src#RID_APP_TITLE.String.Text
-#, fuzzy
 msgid  " - %PRODUCTNAME Base Report"
 msgstr " - %PRODUCTNAME ബെയിസ് റിപ്പോര്‍ട്ട്"
 
 #: source/ui/report/report.src#RID_APP_NEW_DOC.String.Text
-#, fuzzy
 msgid  "Untitled"
 msgstr "തലക്കെട്ടില്ലാത്ത"
 
 #: source/ui/report/report.src#RID_STR_UNDO_ALIGNMENT.String.Text
-#, fuzzy
 msgid  "Change Alignment"
 msgstr "അലൈന്‍മെന്റ് മാറ്റുക"
 
 #: source/ui/report/report.src#RID_STR_HEADER.String.Text
-#, fuzzy
 msgid  "# Header"
 msgstr "# തലക്കെട്ട്"
 
 #: source/ui/report/report.src#RID_STR_FOOTER.String.Text
-#, fuzzy
 msgid  "# Footer"
 msgstr "# അടിക്കുറിപ്പു്"
 
 #: source/ui/report/report.src#RID_STR_IMPORT_GRAPHIC.String.Text
-#, fuzzy
 msgid  "Insert graphics"
 msgstr "ഗ്രാഫിക്സ് ചേര്‍ക്കുക"
 
 #: source/ui/report/report.src#RID_STR_DELETE.String.Text
-#, fuzzy
 msgid  "Delete"
 msgstr "വെട്ടി നീക്കുക"
 
 #: source/ui/report/report.src#RID_STR_FUNCTION.String.Text
-#, fuzzy
 msgid  "Function"
 msgstr "ഫംഗ്ഷന്‍"
 
 #: source/ui/report/report.src#RID_STR_COULD_NOT_CREATE_REPORT.String.Text
-#, fuzzy
 msgid  "An error occurred while creating the report."
 msgstr "റിപ്പോര്‍ട്ട് ഉണ്ടാക്കുമ്പോള്‍ പിശകുണ്ടായി."
 
 #: source/ui/report/report.src#RID_STR_CAUGHT_FOREIGN_EXCEPTION.String.Text
-#, fuzzy
 msgid  "An exception of type $type$ was caught."
 msgstr "$type$ രീതിയിലുള്ള ഒരു പൊരുത്തക്കേടുണ്ടായിരിക്കുന്നു."
 
 #: source/ui/report/report.src#RID_STR_UNDO_CHANGEFONT.String.Text
-#, fuzzy
 msgid  "Change font"
 msgstr "അക്ഷരസഞ്ചയം മാറ്റുക"
 
 #: source/ui/report/report.src#RID_STR_UNDO_CHANGEPAGE.String.Text
-#, fuzzy
 msgid  "Change page attributes"
 msgstr "താള്‍ സവിശേഷതകള്‍ മാറ്റുക"
 
 #: source/ui/report/report.src#RID_STR_PAGEHEADERFOOTER_INSERT.String.Text
-#, fuzzy
 msgid  "Insert Page Header/Footer"
 msgstr "താള്‍ തലക്കെട്ട്/അടിക്കുറിപ്പു് ചേര്‍ക്കുക"
 
 #: source/ui/report/report.src#RID_STR_PAGEHEADERFOOTER_DELETE.String.Text
-#, fuzzy
 msgid  "Delete Page Header/Footer"
 msgstr "താള്‍ തലക്കെട്ട്/അടിക്കുറിപ്പു് വെട്ടി നീക്കുക"
 
 #: source/ui/report/report.src#RID_STR_COLUMNHEADERFOOTER_INSERT.String.Text
-#, fuzzy
 msgid  "Insert Column Header/Footer"
 msgstr "നിരയുടെ തലക്കെട്ട്/അടിക്കുറിപ്പു് ചേര്‍ക്കുക"
 
 #: source/ui/report/report.src#RID_STR_COLUMNHEADERFOOTER_DELETE.String.Text
-#, fuzzy
 msgid  "Delete Column Header/Footer"
 msgstr "നിരയുടെ തലക്കെട്ട്/അടിക്കുറിപ്പു് വെട്ടി നീക്കുക"
 
 #: source/ui/report/report.src#RID_STR_REPORTHEADERFOOTER_INSERT.String.Text
-#, fuzzy
 msgid  "Insert Report Header/Footer"
 msgstr "റിപ്പോര്‍ട്ട് തലക്കെട്ട്/അടിക്കുറിപ്പു് ചേര്‍ക്കുക"
 
 #: source/ui/report/report.src#RID_STR_REPORTHEADERFOOTER_DELETE.String.Text
-#, fuzzy
 msgid  "Delete Report Header/Footer"
 msgstr "റിപ്പോര്‍ട്ട് തലക്കെട്ട്/അടിക്കുറിപ്പു് വെട്ടി നീക്കുക"
 
 #: source/ui/report/report.src#RID_ERR_NO_COMMAND.String.Text
-#, fuzzy
 msgid  "The report can not be executed unless it is bound to content."
 msgstr "ഉള്ളടക്കമനുസരിച്ചല്ലെങ്കില്‍ റിപ്പോര്‍ട്ട് ലഭ്യമാക്കുവാന്‍ സാധ്യമല്ല."
 
 #: source/ui/report/report.src#RID_ERR_NO_OBJECTS.String.Text
 msgid  "The report can not be executed unless at least one object has been inserted."
-msgstr ""
+msgstr "ഒരു ഒബ്ജക്ടെങ്കിലും ചേര്‍ത്തില്ലെങ്കില്‍ റിപ്പോര്‍ട്ട് ലഭ്യമാക്കുവാന്‍ സാധ്യമല്ല."
 
 #: source/ui/report/report.src#RID_STR_UNDO_SHRINK.String.Text
-#, fuzzy
 msgid  "Shrink Section"
 msgstr "വിഭാഗം ചെറുതാക്കുക"
 
-#: source/ui/report/report.src#RID_STR_INSERT.String.Text
-#, fuzzy
-msgid  "Insert"
-msgstr "ചേര്‍ക്കുക"
-
 #: source/ui/report/report.src#RID_STR_DETAIL.String.Text
-#, fuzzy
 msgid  "Detail"
 msgstr "വിശദാംശം"
 
 #: source/ui/report/report.src#RID_STR_PAGE_HEADER.String.Text
-#, fuzzy
 msgid  "Page Header"
 msgstr "താള്‍ തലക്കെട്ട്"
 
 #: source/ui/report/report.src#RID_STR_PAGE_FOOTER.String.Text
-#, fuzzy
 msgid  "Page Footer"
 msgstr "താള്‍ അടിക്കുറിപ്പു്"
 
 #: source/ui/report/report.src#RID_STR_REPORT_HEADER.String.Text
-#, fuzzy
 msgid  "Report Header"
 msgstr "റിപ്പോര്‍ട്ട് തലക്കെട്ട്"
 
 #: source/ui/report/report.src#RID_STR_REPORT_FOOTER.String.Text
-#, fuzzy
 msgid  "Report Footer"
 msgstr "റിപ്പോര്‍ട്ട് അടിക്കുറിപ്പു്"
+
+#: source/ui/report/report.src#RID_STR_INSERT.String.Text
+msgid  "Insert"
+msgstr "ചേര്‍ക്കുക"

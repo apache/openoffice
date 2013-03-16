@@ -45,7 +45,7 @@ msgstr ""
 
 #: source/all/crashrep.ulf#%WELCOME_BODY2%
 msgid  "It's easy - just send the report without any further effort on your part by clicking 'Send' in the next dialog, or you can briefly describe how the error occurred and then click 'Send'. If you want to see the report, click the 'Show Report' button. No data will be sent if you click 'Do Not Send'.\n\n"
-msgstr ""
+msgstr "यो सजिलो छ - तपाईँले केही प्रयत्न नगरिकन अघिल्लो बटनमा 'पठाउनुहोस' संवादमा क्लिक गरेर यसलाई पठाउनुहोस वा तपाईँले कसरी यो त्रुटि रहन गयो भन्ने कुराको बारेमा विस्तृत कुरा वर्णन गर्दै 'पठाउनुहोस' मा क्लिक गरेर पठाउन पनि सक्नुहुन्छ । यदि तपाईँले प्रतिवेदन हेर्न चाहनुहुन्छ भने, 'प्रतिवेदन देखाउनुहोस' बटनमा क्लिक गरेर हेर्न सक्नुहुन्छ । यदि तपाईँले 'नपठाउनुहोस' बटन क्लिक गर्नुभएमा कुनै पनि डेटा जाने छैन । \n\n"
 
 #: source/all/crashrep.ulf#%WELCOME_BODY3%
 msgid  "Customer Privacy\nThe information gathered is limited to data concerning the state of %PRODUCTNAME% %PRODUCTVERSION% when the error occurred. Other information about passwords or document contents is not collected.\n\nThe information will only be used to improve the quality of %PRODUCTNAME% and will not be shared with third parties.\nFor more information on Apache OpenOffice's privacy policy, visit\n"
@@ -81,7 +81,7 @@ msgstr ""
 
 #: source/all/crashrep.ulf#%ENTER_TITLE%
 msgid  "Which type of document (e.g. presentation) were you using when the error occurred?"
-msgstr ""
+msgstr "त्रुटि भएको बेला तपाईँ कुन प्रकारको कागजत (जस्तै: प्रस्तुतीकरण) प्रयोग गर्दै हुनुहुन्थ्यो ?"
 
 #: source/all/crashrep.ulf#%ALLOW_CONTACT%
 msgid  "~I allow Apache OpenOffice to contact me regarding this report."
@@ -93,7 +93,7 @@ msgstr "कृपया तपाईँको इमेल ठेगाना �
 
 #: source/all/crashrep.ulf#%ENTER_DESCRIPTION%
 msgid  "~How were you using %PRODUCTNAME% when the error occurred ?"
-msgstr ""
+msgstr "त्रुटि भएको समयमा तपाईँले %PRODUCTNAME% लाई कसरी प्रयोग गर्दै हुनुहुन्थ्यो ?"
 
 #: source/all/crashrep.ulf#%BACK_BUTTON%
 msgid  " << ~Back"
@@ -121,23 +121,23 @@ msgstr "यसमा प्रतिवेदनलाई बचत गर्न
 
 #: source/all/crashrep.ulf#%ERROR_MSG_SIMPLE_MAPI%
 msgid  "The error report could not be sent because the default e-mail program does not support MAPI.\n Please use a MAPI-compatible e-mail program."
-msgstr ""
+msgstr "त्रुटि प्रतिवेदन पठाउन सकिएन किनभने पूर्वनिर्धारित इमेल कार्यक्रमले MAPI समर्थन गर्दैन ।\nकृपया एउटा MAPI-मिल्दोजुल्दो इमेल कार्यक्रम प्रयोग गर्नुहोस् ।"
 
 #: source/all/crashrep.ulf#%ERROR_MSG_DISK_FULL%
 msgid  "The error report could not be temporarily saved and could therefore not be sent."
-msgstr ""
+msgstr "त्रुटि प्रतिवेदन अस्थायी रूपले बचत गर्न सकिएन र बचत गर्न नसकेको कारणले पठाउन सकिएन ।"
 
 #: source/all/crashrep.ulf#%ERROR_MSG_SENDMAIL%
 msgid  "The error report could not be sent because 'sendmail' could not be started.\nPlease check the 'sendmail' settings."
-msgstr ""
+msgstr "'सेन्ड मेल' सुरु गर्न नसकिएकाले त्रुटि प्रतिवेदन पठाउन सकिएन । कृपया ' सेन्ड मेल' सेटिङहरू जाँच गर्नुहोस् ।"
 
 #: source/all/crashrep.ulf#%ERROR_MSG_PROXY%
 msgid  "The error report could not be sent. Please check the proxy settings under 'Options' in the Error Report Tool."
-msgstr ""
+msgstr "त्रुटि प्रतिवेदन पठाउन सकिएन । कृपया त्रुटि प्रतिवेदन उपकरणमा विकल्प अन्तर्गत प्रोक्सी सेटिङहरू जाँच्नुहोस् ।"
 
 #: source/all/crashrep.ulf#%ERROR_MSG_NOCONNECT%
 msgid  "The error report could not be sent because there is no Internet connection. Please check your Internet settings."
-msgstr ""
+msgstr "त्रुटि प्रतिवेदन पठाउन सकिएन किनभने त्यहाँ इन्टरनेट जडान भएको छैन । कृपया तपाईँको इन्टरनेट सेटिङहरू जाँच गर्नुहोस् ।"
 
 #: source/all/crashrep.ulf#%OPTIONS_BUTTON%
 msgid  "~Options..."
@@ -173,7 +173,7 @@ msgstr "पोर्ट"
 
 #: source/all/crashrep.ulf#%PROXY_SETTINGS_DESCRIPTION%
 msgid  "The %PRODUCTNAME% Error Report tool needs to be connected to the Internet to be able to send error reports.\n\nCompanies often use proxy servers in conjunction with a firewall to protect the network.\n\nIf this applies to your situation, you have to specify the address and port for the server."
-msgstr ""
+msgstr "त्रुटि प्रतिवेदनहरू पठाउनका लागि %PRODUCTNAME% त्रुटि प्रतिवेदन उपकरण इन्टरनेटमा जडान गर्नु आवश्यक हुन्छ ।\n\nसञ्जाललाई बचाउनका लागि कम्पनीहरूले प्राय फायरवालको संयोजनमा प्रोक्सी सर्भरको प्रयोग गर्दछन ।\n\nयदि यो कुरा तपाईँको अवस्थामा लागू हुन्छ भने तपाईँले सर्भरका लागि ठेगाना र पोर्ट तोक्नु पर्दछ ।"
 
 #: source/all/crashrep.ulf#%SENDING_REPORT_HEADER%
 msgid  "Sending Error Report"
@@ -205,4 +205,4 @@ msgstr "त्रुटि प्रतिवेदन उपकणमा %PRODU
 
 #: source/all/crashrep.ulf#%MSG_PARAM_HELP_DESCRIPTION%
 msgid  "Shows this help text.\nDetailed information can be found in the Setup Guide."
-msgstr ""
+msgstr "यो मद्दत पाठ देखानुहोस् ।\nसेटअप मार्गदर्शक सम्पूर्ण जानकारी पाउन सकिन्छ ।"

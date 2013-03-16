@@ -154,7 +154,7 @@ msgstr "ठराविक (~i)"
 #: source/smres.src#RID_FONTTYPEDIALOG.1.MenuButton.Text
 #, fuzzy
 msgid  "~Modify"
-msgstr "सुधारा (~M)"
+msgstr "संपादीत करा (~M)"
 
 #: source/smres.src#RID_FONTTYPEDIALOG.2.PushButton.Text
 #, fuzzy
@@ -214,7 +214,7 @@ msgstr "अंतर (~S)"
 #: source/smres.src#RID_DISTANCEDIALOG.1.3.String.Text
 #, fuzzy
 msgid  "~Line spacing"
-msgstr "ओळीतील अंतर (~L)"
+msgstr "ओळ अंतर (~L)"
 
 #: source/smres.src#RID_DISTANCEDIALOG.1.4.String.Text
 #, fuzzy
@@ -239,7 +239,7 @@ msgstr "सबस्क्रिप्ट (~u)"
 #: source/smres.src#RID_DISTANCEDIALOG.3.1.String.Text
 #, fuzzy
 msgid  "Fractions"
-msgstr "फ्रॅक्शन"
+msgstr "फ्रॅक्शन्स्"
 
 #: source/smres.src#RID_DISTANCEDIALOG.3.2.String.Text
 #, fuzzy
@@ -546,12 +546,14 @@ msgid  "~Delete"
 msgstr "नष्ट करा (~D)"
 
 #: source/smres.src#RID_NOMATHTYPEFACEWARNING.WarningBox.Message
+#, fuzzy
 msgid  "The 'StarMath' font has not been installed.\nWithout this font %PRODUCTNAME Math cannot function correctly.\nPlease install this font and restart %PRODUCTNAME Math."
-msgstr ""
+msgstr "'StarMath' फॉन्ट  स्थापित झालेला नाही.\nह्या फॉन्टशिवाय %PRODUCTNAME मॅथ योग्य प्रकारे कार्य करू शकणार नाही.\nकृपया हा फॉन्ट स्थापित करा आणि %PRODUCTNAME मॅथ पुनः सुरू करा."
 
 #: source/smres.src#RID_DEFAULTSAVEQUERY.QueryBox.Message
+#, fuzzy
 msgid  "Should the changes be saved as defaults?\n\nThese changes will apply for all new formulas."
-msgstr ""
+msgstr "हे बदल पूर्वनिर्धारीतसारखे जतन करू देत का? \n\nहे बदल सर्व नव्या सूत्रांना लागू होतील."
 
 #: source/smres.src#RID_FONTREGULAR.String.Text
 #, fuzzy
@@ -687,6 +689,11 @@ msgstr "सान्स"
 #, fuzzy
 msgid  "Fixed"
 msgstr "ठराविक"
+
+#: source/smres.src#CMDBOXWINDOW_TEXT.#define.Text
+#, fuzzy
+msgid  "Commands"
+msgstr "आदेश"
 
 #: source/smres.src#RID_DOCUMENTSTR.String.Text
 #, fuzzy
@@ -858,23 +865,15 @@ msgstr "पानात बसवा (~p)"
 msgid  "~Scaling"
 msgstr "प्रमाणीत करा (~S)"
 
-#: source/smres.src#CMDBOXWINDOW_TEXT.#define.Text
-#, fuzzy
-msgid  "Commands"
-msgstr "आदेश"
-
 #: source/commands.src#RID_COMMANDMENU.RID_UNBINOPS_MENU.MenuItem.Text
-#, fuzzy
 msgid  "~Unary/Binary Operators"
 msgstr "यूनरी/बायनरी ऑपरेटर्स् (~U)"
 
 #: source/commands.src#RID_COMMANDMENU.RID_RELATIONS_MENU.MenuItem.Text
-#, fuzzy
 msgid  "~Relations"
 msgstr "रिलेशन्स् (~R)"
 
 #: source/commands.src#RID_COMMANDMENU.RID_SETOPERATIONS_MENU.MenuItem.Text
-#, fuzzy
 msgid  "~Set Operations"
 msgstr "संच कार्यपद्धती (~S)"
 
@@ -884,7 +883,6 @@ msgid  "~Functions"
 msgstr "फंक्शन (~F)"
 
 #: source/commands.src#RID_COMMANDMENU.RID_FUNCTIONS_MENU.RID_FUNCTIONSOTHER1_MENU.MenuItem.Text
-#, fuzzy
 msgid  "More"
 msgstr "अधिक"
 

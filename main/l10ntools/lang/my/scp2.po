@@ -37,11 +37,11 @@ msgstr "လုပ်ဆောင်မှုရှိနေသည့်Xကိ�
 
 #: source/activex/module_activex.ulf#STR_DESC_MODULE_OPTIONAL_ACTIVEXCONTROL
 msgid  "Component to enable Microsoft Internet Explorer to display %PRODUCTNAME documents."
-msgstr ""
+msgstr "%PRODUCTNAME မှတ်တမ်းမှတ်ရာများ ပြသရန် Microsoft Internet Explorer ၏လုပ်ဆောင်မှုပြုမည့်အစိတ်အပိုင်း"
 
 #: source/base/folderitem_base.ulf#STR_FI_TOOLTIP_BASE
 msgid  "Manage databases, create queries and reports to track and manage your information by using Base."
-msgstr ""
+msgstr "ဒေတာဘေ့စ်ကိုစီမံခန့်ခွဲပါ၊ အသုံးပြုသောဘေ့စ်အားဖြင့် ကွာရီများဖန်တီးပါ။ လမ်းကြောင်းများနှင့်ပတ်သက်သည့်အစီရင်ခံများနှင့် သင့်၏သတင်းအချက်အလက်များကို စီမံခန့်ခွဲပါ။"
 
 #: source/base/registryitem_base.ulf#STR_REG_VAL_OO_DATABASE
 msgid  "OpenDocument Database"
@@ -53,7 +53,7 @@ msgstr "%PRODUCTNAME အခြေခံ"
 
 #: source/base/module_base.ulf#STR_DESC_MODULE_PRG_BASE
 msgid  "Create and edit databases by using %PRODUCTNAME Base."
-msgstr ""
+msgstr "အသုံးပြုသော %PRODUCTNAME အခြေခံဘေ့စ်အားဖြင့် ဒေတာဘေ့စ်များဖန်တီးပြီးတည်းဖြတ်ပါ။"
 
 #: source/base/module_base.ulf#STR_NAME_MODULE_PRG_BASE_BIN
 msgid  "Program Module"
@@ -77,7 +77,7 @@ msgstr "လီဂါဆီ စစ်ထုတ်မှု"
 
 #: source/binfilter/module_binfilter.ulf#STR_DESC_MODULE_OPTIONAL_BINFILTER
 msgid  "Legacy filters, e.g. StarOffice 5.2 binary file formats."
-msgstr ""
+msgstr "လီဂါဆီ စစ်ထုတ်မှု၊ ဥပမာ-StarOffice 5.2 ဘိုင်နရီဖိုင်ပြင်ဆင်ဖွဲ့စည်းမှုပုံစံ"
 
 #: source/binfilter/registryitem_binfilter.ulf#STR_REG_VAL_NEW
 msgid  "&New"
@@ -121,7 +121,11 @@ msgstr "စာရွက်အချပ်လွှာ"
 
 #: source/calc/folderitem_calc.ulf#STR_FI_TOOLTIP_CALC
 msgid  "Perform calculation, analyze information and manage lists in spreadsheets by using Calc."
-msgstr ""
+msgstr "အသုံးပြုသောCalcအားဖြင့် စာရွက်အချပ်လွှာတွင် တွက်ချက်ခြင်း၊သတင်းအချက်အလက် ခွဲခြမ်းစိတ်ဖြာခြင်းနှင့်စီမံခန့်ခွဲခြင်းစာရင်းများဆောင်ရွက်ပါ။"
+
+#: source/calc/registryitem_calc.ulf#STR_REG_VAL_NEW
+msgid  "&New"
+msgstr "&အသစ်"
 
 #: source/calc/registryitem_calc.ulf#STR_REG_VAL_SO60_SPREADSHEET
 msgid  "%SXWFORMATNAME %SXWFORMATVERSION Spreadsheet"
@@ -155,17 +159,13 @@ msgstr "Microsoft Excel 97-2003 ပုံစံပြား"
 msgid  "Microsoft Excel Template"
 msgstr "Microsoft Excel ပုံစံပြား"
 
-#: source/calc/registryitem_calc.ulf#STR_REG_VAL_NEW
-msgid  "&New"
-msgstr "&အသစ်"
-
 #: source/calc/module_calc.ulf#STR_NAME_MODULE_PRG_CALC
 msgid  "%PRODUCTNAME Calc"
 msgstr "%PRODUCTNAME Calc"
 
 #: source/calc/module_calc.ulf#STR_DESC_MODULE_PRG_CALC
 msgid  "Perform calculation, analyze information and manage lists in spreadsheets by using %PRODUCTNAME Calc."
-msgstr ""
+msgstr "အသုံးပြုသော Calc အားဖြင့် စာရွက်အချပ်လွှာတွင် တွက်ချက်ခြင်း၊သတင်းအချက်အလက် ခွဲခြမ်းစိတ်ဖြာခြင်းနှင့်စီမံခန့်ခွဲခြင်းစာရင်းများဆောင်ရွက်ပါ။"
 
 #: source/calc/module_calc.ulf#STR_NAME_MODULE_PRG_CALC_BIN
 msgid  "Program Module"
@@ -189,7 +189,11 @@ msgstr "တွင်-ပေါင်းထည့်ပါ"
 
 #: source/calc/module_calc.ulf#STR_DESC_MODULE_OPTIONAL_ADDINS
 msgid  "Add-ins are additional programs that make new functions available in %PRODUCTNAME Calc."
-msgstr ""
+msgstr "%PRODUCTNAME Calc တွင် ရနိုင်သော ဖန်ရှင်အသစ်များ ပြုလုပ်သည့် ပရိုဂရမ်များ အပိုပေါင်းထည့်ပါ။"
+
+#: source/draw/registryitem_draw.ulf#STR_REG_VAL_NEW
+msgid  "&New"
+msgstr "&အသစ်"
 
 #: source/draw/registryitem_draw.ulf#STR_REG_VAL_SO60_DRAWING
 msgid  "%SXWFORMATNAME %SXWFORMATVERSION Drawing"
@@ -207,17 +211,13 @@ msgstr "OpenDocument ပုံဆွဲခြင်း"
 msgid  "OpenDocument Drawing Template"
 msgstr "OpenDocument ပုံဆွဲခြင်း ပုံစံပြား"
 
-#: source/draw/registryitem_draw.ulf#STR_REG_VAL_NEW
-msgid  "&New"
-msgstr "&အသစ်"
-
 #: source/draw/folderitem_draw.ulf#STR_FI_NAME_ZEICHNUNG
 msgid  "Drawing"
 msgstr "ပုံဆွဲခြင်း"
 
 #: source/draw/folderitem_draw.ulf#STR_FI_TOOLTIP_DRAW
 msgid  "Create and edit drawings, flow charts, and logos by using Draw."
-msgstr ""
+msgstr "အသုံးပြုသောပုံဆွဲခြင်းအားဖြင့် ပုံဆွဲခြင်းများ၊ ပုံစံကားချပ်များနှင့်စာလုံးအမှတ်အသားများ ဖန်တီးပြီးတည်းဖြတ်ပါ။"
 
 #: source/draw/module_draw.ulf#STR_NAME_MODULE_PRG_DRAW
 msgid  "%PRODUCTNAME Draw"
@@ -225,7 +225,7 @@ msgstr "%PRODUCTNAME ပုံဆွဲသည်"
 
 #: source/draw/module_draw.ulf#STR_DESC_MODULE_PRG_DRAW
 msgid  "Create and edit drawings, flow charts, and logos by using %PRODUCTNAME Draw."
-msgstr ""
+msgstr "အသုံးပြုသောပုံဆွဲခြင်းအားဖြင့် ပုံဆွဲခြင်းများ၊ ပုံစံကားချပ်များနှင့်စာလုံးအမှတ်အသားများ ဖန်တီးပြီးတည်းဖြတ်ပါ။"
 
 #: source/draw/module_draw.ulf#STR_NAME_MODULE_PRG_DRAW_BIN
 msgid  "Program Module"
@@ -249,7 +249,7 @@ msgstr "GNOME စုစည်းမှု"
 
 #: source/gnome/module_gnome.ulf#STR_DESC_MODULE_OPTIONAL_GNOME
 msgid  "System integration of %PRODUCTNAME %PRODUCTVERSION into Gnome Desktop Environment."
-msgstr ""
+msgstr "%PRODUCTNAME %PRODUCTVERSION ၏စနစ်စုစည်းမှုမှ Gnome Desktop Environment အဖြစ်သို့"
 
 #: source/graphicfilter/module_graphicfilter.ulf#STR_NAME_MODULE_OPTIONAL_GRFFLT
 msgid  "Graphics Filters"
@@ -257,7 +257,7 @@ msgstr "ပန်းချီဒီဇိုင်း စစ်ထုတ်က�
 
 #: source/graphicfilter/module_graphicfilter.ulf#STR_DESC_MODULE_OPTIONAL_GRFFLT
 msgid  "Additional filters required to read alien graphic formats."
-msgstr ""
+msgstr "ရုပ်ပုံပြင်ဆင်ချိန်ညှိမှုများကို ဖတ်ရန် စစ်ထုတ်ကိရိယာများ ထပ်ဖြည့်ထားသည်။"
 
 #: source/graphicfilter/module_graphicfilter.ulf#STR_NAME_MODULE_OPTIONAL_GRFFLT_ADOBE
 msgid  "Adobe Photoshop Import Filter"
@@ -377,7 +377,11 @@ msgstr "တင်ဆက်မှုပုံစံ"
 
 #: source/impress/folderitem_impress.ulf#STR_FI_TOOLTIP_IMPRESS
 msgid  "Create and edit presentations for slideshows, meeting and Web pages by using Impress."
-msgstr ""
+msgstr "ခတ်နှိပ်မှုကို အသုံးပြုခြင်းအားဖြင့် ရုပ်ပုံဆလိုက်များပြသခြင်း၊အစည်းအဝေးများနှင့် ကွန်ရက်စာမျက်နှာများအတွက် တင်ပြချက်များဖန်တီးတည်းဖြတ်ပါ။"
+
+#: source/impress/registryitem_impress.ulf#STR_REG_VAL_NEW
+msgid  "&New"
+msgstr "&အသစ်"
 
 #: source/impress/registryitem_impress.ulf#STR_REG_VAL_SO60_SHOW
 msgid  "Show"
@@ -419,17 +423,13 @@ msgstr "Microsoft PowerPoint 97-2003 ပုံစံပြား"
 msgid  "Microsoft PowerPoint Template"
 msgstr "Microsoft PowerPoint ပုံစံပြား"
 
-#: source/impress/registryitem_impress.ulf#STR_REG_VAL_NEW
-msgid  "&New"
-msgstr "&အသစ်"
-
 #: source/impress/module_impress.ulf#STR_NAME_MODULE_PRG_IMPRESS
 msgid  "%PRODUCTNAME Impress"
 msgstr "%PRODUCTNAME ခတ်နှိပ်မှု"
 
 #: source/impress/module_impress.ulf#STR_DESC_MODULE_PRG_IMPRESS
 msgid  "Create and edit presentations for slideshows, meeting and Web pages by using %PRODUCTNAME Impress."
-msgstr ""
+msgstr "%PRODUCTNAME ခတ်နှိပ်မှုကို အသုံးပြုခြင်းအားဖြင့် ရုပ်ပုံဆလိုက်များပြသခြင်း၊အစည်းအဝေးနှင့်ကွန်ရက်စာမျက်နှာများအတွက် တင်ပြချက်များဖန်တီးတည်းဖြတ်ပါ။"
 
 #: source/impress/module_impress.ulf#STR_NAME_MODULE_PRG_IMPRESS_BIN
 msgid  "Program Module"
@@ -461,7 +461,7 @@ msgstr "မိုဘိုင်းကိရိယာစစ်ထုတ်မှ
 
 #: source/javafilter/module_javafilter.ulf#STR_DESC_MODULE_OPTIONAL_JAVAFILTER
 msgid  "Text and spreadsheet filters to support import/export for Palm handheld or Pocket PC (Java required)."
-msgstr ""
+msgstr "လက်ပေါ်တင်သုံးနိုင်သော Palm(သို့) Pocket PC(ဂျာဗာလိုအပ်ချက်အရ)အတွက်တင်သွင်း/တင်ပို့မှုများပြုရန် စာသားနှင့်စာရွက်အချပ်လွှာ စစ်ထုတ်ကိရိယာများ။"
 
 #: source/javafilter/module_javafilter.ulf#STR_NAME_MODULE_OPTIONAL_JAVAFILTER_PALM
 msgid  "Palm"
@@ -469,7 +469,7 @@ msgstr "Palm"
 
 #: source/javafilter/module_javafilter.ulf#STR_DESC_MODULE_OPTIONAL_JAVAFILTER_PALM
 msgid  "Filters for Palm OS compatible handhelds"
-msgstr ""
+msgstr "Palm OS တိုက်ရိုက်အသုံးပြုခြင်းအတွက် လက်ပေါ်တင်သုံးနိုင်သောစစ်ထုတ်ကိရိယာများ"
 
 #: source/javafilter/module_javafilter.ulf#STR_NAME_MODULE_OPTIONAL_JAVAFILTER_PALM_APORTISDOC
 msgid  "AportisDoc"
@@ -485,11 +485,11 @@ msgstr "Pocket PC"
 
 #: source/javafilter/module_javafilter.ulf#STR_DESC_MODULE_OPTIONAL_JAVAFILTER_POCKETPC_WNT
 msgid  "Filters and ActiveSync support for Pocket PC compatible handhelds"
-msgstr ""
+msgstr "Pocket PC တိုက်ရိုက်အသုံးပြုခြင်းအတွက် ထောက်ပံ့သည့် စစ်ထုတ်ကိရိယာများနှင့် လက်ပေါ်တင်သော ActiveSync"
 
 #: source/javafilter/module_javafilter.ulf#STR_DESC_MODULE_OPTIONAL_JAVAFILTER_POCKETPC_UNIX
 msgid  "Filters for Pocket PC compatible handhelds."
-msgstr ""
+msgstr "Pocket PC တိုက်ရိုက်အသုံးပြုခြင်းအတွက် လက်ပေါ်တင်သုံးသော စစ်ထုတ်ကိရိယာများ။"
 
 #: source/javafilter/module_javafilter.ulf#STR_NAME_MODULE_OPTIONAL_JAVAFILTER_POCKETPC_POCKET_WORD
 msgid  "Pocket Word"
@@ -541,7 +541,7 @@ msgstr "Pocket Word မှတ်တမ်းမှတ်ရာ - Pocket PC"
 
 #: source/javafilter/registryitem_javafilter.ulf#STR_VALUE_HKLM_SOFT_SUN_STAROFFICE_XMERGESYNC_MSGS_ERROR_CLASSPATH
 msgid  "The %PRODUCTNAME mobile device filters cannot be located."
-msgstr ""
+msgstr "အလွယ်တကူ သယ်ဆောင်နိုင်သော ကိရိယာ စစ်ထုတ်ကိရိယာများ %PRODUCTNAME သည် တွေ့နိုင်လိမ့်မည် မဟုတ်ပါ။"
 
 #: source/javafilter/registryitem_javafilter.ulf#STR_VALUE_HKLM_SOFT_SUN_STAROFFICE_XMERGESYNC_MSGS_ERROR_JAVA
 msgid  "A Java 1.4 installation cannot be located."
@@ -565,7 +565,7 @@ msgstr "%PRODUCTNAME သင်္ချာ"
 
 #: source/math/module_math.ulf#STR_DESC_MODULE_PRG_MATH
 msgid  "Create and edit scientific formulas and equations by using %PRODUCTNAME Math."
-msgstr ""
+msgstr "အသုံးပြုသော %PRODUCTNAME သင်္ချာအားဖြင့် သိပ္ပံဆိုင်ရာ ပုံသေနည်းများနှင့် ညီမျှခြင်းများ ဖန်တီးပြီး တည်းဖြတ်ပါ။"
 
 #: source/math/module_math.ulf#STR_NAME_MODULE_PRG_MATH_BIN
 msgid  "Program Module"
@@ -585,7 +585,11 @@ msgstr "%PRODUCTNAME သင်္ချာအ​ကြောင်း ကူည�
 
 #: source/math/folderitem_math.ulf#STR_FI_TOOLTIP_MATH
 msgid  "Create and edit scientific formulas and equations by using Math."
-msgstr ""
+msgstr "အသုံးပြုသော သင်္ချာအားဖြင့် သိပ္ပံဆိုင်ရာ ပုံသေနည်းများနှင့် ညီမျှခြင်းများ ဖန်တီးပြီး တည်းဖြတ်ပါ။"
+
+#: source/math/registryitem_math.ulf#STR_REG_VAL_NEW
+msgid  "&New"
+msgstr "&အသစ်"
 
 #: source/math/registryitem_math.ulf#STR_REG_VAL_SO60_FORMULA
 msgid  "%SXWFORMATNAME %SXWFORMATVERSION Formula"
@@ -595,17 +599,18 @@ msgstr "%PRODUCTNAME %SXWFORMATVERSION ပုံသေနည်း"
 msgid  "OpenDocument Formula"
 msgstr "OpenDocument ပုံသေနည်း"
 
-#: source/math/registryitem_math.ulf#STR_REG_VAL_NEW
-msgid  "&New"
-msgstr "&အသစ်"
-
 #: source/onlineupdate/module_onlineupdate.ulf#STR_NAME_MODULE_OPT_ONLINEUPDATE
 msgid  "Online Update"
 msgstr "အွန်လိုင်းနောက်ဆုံးပေါ်အချက်အလက်များ"
 
 #: source/onlineupdate/module_onlineupdate.ulf#STR_DESC_MODULE_OPT_ONLINEUPDATE
 msgid  "Get automatically notified when a new update of %PRODUCTNAME becomes available."
-msgstr ""
+msgstr "PRODUCTNAME ၏နောက်ဆုံးပေါ်အချက်အလက်သစ်များ အသုံးဝင်လာသောအခါ အလိုအလျောက် အသိပေးမှု ကိုရယူပါ။ "
+
+#: source/ooo/registryitem_ooo.ulf#STR_REG_VAL_NEW
+#, fuzzy
+msgid  "&New"
+msgstr "&New"
 
 #: source/ooo/registryitem_ooo.ulf#STR_REG_VAL_INSTALL
 #, fuzzy
@@ -616,19 +621,14 @@ msgstr "& ထည့်သွင်းသည်"
 msgid  "OpenOffice.org 1.1 Configuration File"
 msgstr ""
 
-#: source/ooo/registryitem_ooo.ulf#STR_REG_VAL_APPCAPABILITY_DESCRIPTION_OOO
-msgid  "office productivity suite based on Apache OpenOffice project"
-msgstr ""
-
-#: source/ooo/registryitem_ooo.ulf#STR_REG_VAL_NEW
-#, fuzzy
-msgid  "&New"
-msgstr "&New"
-
 #: source/ooo/registryitem_ooo.ulf#STR_REG_VAL_SO50_TEMPLATE_OOO
 #, fuzzy
 msgid  "StarOffice 5.0 Template"
 msgstr "StarOffice 5.0 ပုံစံပြား"
+
+#: source/ooo/registryitem_ooo.ulf#STR_REG_VAL_APPCAPABILITY_DESCRIPTION_OOO
+msgid  "office productivity suite based on Apache OpenOffice project"
+msgstr ""
 
 #: source/ooo/module_systemint.ulf#STR_NAME_MODULE_OPTIONAL_SYSTEMINTEGRATION
 #, fuzzy
@@ -666,8 +666,9 @@ msgid  "Optional Components"
 msgstr "စိတ်ကြိုက် အစိတ်အပိုင်းများ"
 
 #: source/ooo/module_ooo.ulf#STR_DESC_MODULE_OPTIONAL
+#, fuzzy
 msgid  "Common components and additional programs shared by all %PRODUCTNAME programs."
-msgstr ""
+msgstr "%PRODUCTNAME ပရိုဂရမ်များအားလုံးအားဖြင့် အများသုံး အစိတ်အပိုင်းများနှင့် အပို ပရိုဂရမ်များ ဝေမျှထားသည်။"
 
 #: source/ooo/module_ooo.ulf#STR_NAME_MODULE_DICTIONARIES
 #, fuzzy
@@ -700,58 +701,49 @@ msgid  "Component for enabling use %PRODUCTNAME without a display"
 msgstr "ဖော်ပြချက်များ မပါဝင်သည့် %PRODUCTNAME အသုံးပြုမှုအစိတ်အပိုင်း"
 
 #: source/ooo/directory_ooo.ulf#STR_DIR_INFO
-#, fuzzy
 msgid  "Information"
 msgstr "သတင်းအချက်အလက်"
 
 #: source/ooo/directory_ooo.ulf#STR_DIR_INTERNET
-#, fuzzy
 msgid  "Internet"
 msgstr "အင်တာနက်"
 
 #: source/ooo/directory_ooo.ulf#STR_DIR_JAVA
-#, fuzzy
 msgid  "Java"
 msgstr "ဂျာဗား"
 
 #: source/ooo/directory_ooo.ulf#STR_DIR_FREIZEIT
-#, fuzzy
 msgid  "Fun&More"
 msgstr "လုပ်ဆောင်ချက်&အများအပြား "
 
 #: source/ooo/directory_ooo.ulf#STR_DIR_STARONE
-#, fuzzy
 msgid  "%PRODUCTNAME API"
 msgstr "%PRODUCTNAME API"
 
 #: source/ooo/directory_ooo.ulf#STR_DIR_TOURISMUS
-#, fuzzy
 msgid  "Travel"
 msgstr "ခရီးသွားသည်"
 
 #: source/ooo/directory_ooo.ulf#STR_DIR_KAPITEL
-#, fuzzy
 msgid  "Chapters"
 msgstr "အခန်းကြီးများ"
 
 #: source/ooo/directory_ooo.ulf#STR_DIR_DATEIEN
-#, fuzzy
 msgid  "Files"
 msgstr "ဖိုင်များ"
 
 #: source/ooo/folderitem_ooo.ulf#STR_FI_NAME_FROMTEMPLATE
-#, fuzzy
 msgid  "From Template"
 msgstr "ပုံစံပြားမှ"
 
 #: source/ooo/folderitem_ooo.ulf#STR_FI_NAME_OPENDOCUMENT
-#, fuzzy
 msgid  "Open Document"
 msgstr "မှတ်တမ်းမှတ်ရာ ဖွင့်ပါ"
 
 #: source/ooo/folderitem_ooo.ulf#STR_FI_TOOLTIP_SOFFICE
+#, fuzzy
 msgid  "The office productivity suite compatible to the open and standardized ODF document format. Supported by The Apache Software Foundation."
-msgstr ""
+msgstr "သင့်တော်သော ရုံးသုံးထုတ်ကုန်များ ဖွင့်လှစ်အသုံးပြုရန်နှင့် စံအဖြစ်အသုံးပြုသော ODF မှတ်တမ်းမှတ်ရာ ပြင်ဆင်ဖွဲ့စည်းမှုပုံစံများ။ Sun Microsystems အနေဖြင့် အထောက်အပံ့ပြုခဲ့သည်။"
 
 #: source/ooo/module_langpack.ulf#STR_NAME_MODULE_ROOT_LANGPACK
 #, fuzzy
@@ -769,8 +761,9 @@ msgid  "English"
 msgstr "အင်္ဂလိပ်ဘာသာစကား"
 
 #: source/ooo/module_langpack.ulf#STR_DESC_MODULE_LANGPACK_EN_US
+#, fuzzy
 msgid  "Installs English support in %PRODUCTNAME %PRODUCTVERSION"
-msgstr ""
+msgstr "%PRODUCTNAME %PRODUCTVERSION တွင် အင်္ဂလိပ်ဘာသာစကား ထောက်ပံ့ထည့်သွင်းသည်"
 
 #: source/ooo/module_langpack.ulf#STR_NAME_MODULE_LANGPACK_DE
 #, fuzzy
@@ -858,8 +851,9 @@ msgid  "Korean"
 msgstr "ကိုးရီးယား"
 
 #: source/ooo/module_langpack.ulf#STR_DESC_MODULE_LANGPACK_KO
+#, fuzzy
 msgid  "Installs Korean support in %PRODUCTNAME %PRODUCTVERSION"
-msgstr ""
+msgstr "%PRODUCTNAME %PRODUCTVERSION တွင် ကိုရီးယားဘာသာစကား ထောက်ပံ့ထည့်သွင်းသည်"
 
 #: source/ooo/module_langpack.ulf#STR_NAME_MODULE_LANGPACK_ZH_CN
 #, fuzzy
@@ -867,8 +861,9 @@ msgid  "Chinese (simplified)"
 msgstr "တရုတ် (ရိုးရှင်းသော)"
 
 #: source/ooo/module_langpack.ulf#STR_DESC_MODULE_LANGPACK_ZH_CN
+#, fuzzy
 msgid  "Installs Chinese (simplified) support in %PRODUCTNAME %PRODUCTVERSION"
-msgstr ""
+msgstr "%PRODUCTNAME %PRODUCTVERSION တွင် တရုတ်ဘာသာစကား(ရိုးရိုး) ထောက်ပံ့ထည့်သွင်းသည်"
 
 #: source/ooo/module_langpack.ulf#STR_NAME_MODULE_LANGPACK_ZH_TW
 #, fuzzy
@@ -876,8 +871,9 @@ msgid  "Chinese (traditional)"
 msgstr "တရုတ်(ရိုးရာ)"
 
 #: source/ooo/module_langpack.ulf#STR_DESC_MODULE_LANGPACK_ZH_TW
+#, fuzzy
 msgid  "Installs Chinese (traditional) support in %PRODUCTNAME %PRODUCTVERSION"
-msgstr ""
+msgstr "%PRODUCTNAME %PRODUCTVERSION တွင် တရုတ်ဘာသာစကား(ရိုးရာ) ထောက်ပံ့ထည့်သွင်းသည်"
 
 #: source/ooo/module_langpack.ulf#STR_NAME_MODULE_LANGPACK_NL
 #, fuzzy
@@ -895,8 +891,9 @@ msgid  "Hungarian"
 msgstr "ဟန်ဂေရီယန်း"
 
 #: source/ooo/module_langpack.ulf#STR_DESC_MODULE_LANGPACK_HU
+#, fuzzy
 msgid  "Installs Hungarian support in %PRODUCTNAME %PRODUCTVERSION"
-msgstr ""
+msgstr "%PRODUCTNAME %PRODUCTVERSION တွင် ဟန်ဂေးရီးယန်းဘာသာစကား ထောက်ပံ့ထည့်သွင်းသည်"
 
 #: source/ooo/module_langpack.ulf#STR_NAME_MODULE_LANGPACK_PL
 #, fuzzy
@@ -974,8 +971,9 @@ msgid  "Croatian"
 msgstr "ခရိုအေးရှား"
 
 #: source/ooo/module_langpack.ulf#STR_DESC_MODULE_LANGPACK_HR
+#, fuzzy
 msgid  "Installs Croatian support in %PRODUCTNAME %PRODUCTVERSION"
-msgstr ""
+msgstr "%PRODUCTNAME %PRODUCTVERSION တွင် ခရိုအေးရှားဘာသာစကား ထောက်ပံ့ထည့်သွင်းသည်"
 
 #: source/ooo/module_langpack.ulf#STR_NAME_MODULE_LANGPACK_ET
 #, fuzzy
@@ -983,8 +981,9 @@ msgid  "Estonian"
 msgstr "အက်စတိုနီးယန်း"
 
 #: source/ooo/module_langpack.ulf#STR_DESC_MODULE_LANGPACK_ET
+#, fuzzy
 msgid  "Installs Estonian support in %PRODUCTNAME %PRODUCTVERSION"
-msgstr ""
+msgstr "%PRODUCTNAME %PRODUCTVERSION တွင် အက်စတိုနီးယန်းဘာသာစကား ထောက်ပံ့ထည့်သွင်းသည်"
 
 #: source/ooo/module_langpack.ulf#STR_NAME_MODULE_LANGPACK_VI
 #, fuzzy
@@ -1002,8 +1001,9 @@ msgid  "Bulgarian"
 msgstr "ဘူဂေးရီးယား"
 
 #: source/ooo/module_langpack.ulf#STR_DESC_MODULE_LANGPACK_BG
+#, fuzzy
 msgid  "Installs Bulgarian support in %PRODUCTNAME %PRODUCTVERSION"
-msgstr ""
+msgstr "%PRODUCTNAME %PRODUCTVERSION တွင် ဘူဂေးရီးယားဘာသာစကား ထောက်ပံ့ထည့်သွင်းသည်"
 
 #: source/ooo/module_langpack.ulf#STR_NAME_MODULE_LANGPACK_KM
 #, fuzzy
@@ -1033,7 +1033,7 @@ msgstr "ဂူဂျာရ်တီ"
 #: source/ooo/module_langpack.ulf#STR_DESC_MODULE_LANGPACK_GU_IN
 #, fuzzy
 msgid  "Installs Gujarati support in %PRODUCTNAME %PRODUCTVERSION"
-msgstr "%PRODUCTNAME %PRODUCTVERSION တွင် ဂူဂျာရတီဘာသာစကား ထောက်ပံ့ထည့်သွင်းသည်"
+msgstr "%PRODUCTNAME %PRODUCTVERSION တွင် ဂူဂျာရ်တီဘာသာစကား ထောက်ပံ့ထည့်သွင်းသည်"
 
 #: source/ooo/module_langpack.ulf#STR_NAME_MODULE_LANGPACK_TA
 #, fuzzy
@@ -1081,8 +1081,9 @@ msgid  "Southern Sotho (Sutu)"
 msgstr "ဆိုသိုတောင်ဘက်"
 
 #: source/ooo/module_langpack.ulf#STR_DESC_MODULE_LANGPACK_ST
+#, fuzzy
 msgid  "Installs Southern Sotho (Sutu) support in %PRODUCTNAME %PRODUCTVERSION"
-msgstr ""
+msgstr "%PRODUCTNAME %PRODUCTVERSION တွင် ဆိုသိုတောင်ဘက်ဘာသာစကား ထောက်ပံ့ထည့်သွင်းသည်"
 
 #: source/ooo/module_langpack.ulf#STR_NAME_MODULE_LANGPACK_TN
 #, fuzzy
@@ -1120,8 +1121,9 @@ msgid  "Afrikaans"
 msgstr "အာဖရီကန်"
 
 #: source/ooo/module_langpack.ulf#STR_DESC_MODULE_LANGPACK_AF
+#, fuzzy
 msgid  "Installs Afrikaans support in %PRODUCTNAME %PRODUCTVERSION"
-msgstr ""
+msgstr "%PRODUCTNAME %PRODUCTVERSION တွင် အာဖရီးကန်းဘာသာစကား ထောက်ပံ့ထည့်သွင်းသည်"
 
 #: source/ooo/module_langpack.ulf#STR_NAME_MODULE_LANGPACK_SW
 #, fuzzy
@@ -1159,8 +1161,9 @@ msgid  "Northern Sotho"
 msgstr "မြောက်ဘက် ဆိုသို"
 
 #: source/ooo/module_langpack.ulf#STR_DESC_MODULE_LANGPACK_NS
+#, fuzzy
 msgid  "Installs Northern Sotho support in %PRODUCTNAME %PRODUCTVERSION"
-msgstr ""
+msgstr "%PRODUCTNAME %PRODUCTVERSION တွင် မြောက်ဘက်ဆိုသိုဘာသာစကား ထောက်ပံ့ထည့်သွင်းသည်"
 
 #: source/ooo/module_langpack.ulf#STR_NAME_MODULE_LANGPACK_BN
 #, fuzzy
@@ -1178,8 +1181,9 @@ msgid  "Bengali (Bangladesh)"
 msgstr "ဘင်္ဂါလီ (ဘင်္ဂါလားဒေ့ရှေ့)"
 
 #: source/ooo/module_langpack.ulf#STR_DESC_MODULE_LANGPACK_BN_BD
+#, fuzzy
 msgid  "Installs Bengali (Bangladesh) support in %PRODUCTNAME %PRODUCTVERSION"
-msgstr ""
+msgstr "%PRODUCTNAME %PRODUCTVERSION တွင် ဘင်္ဂါလီ(ဘင်္ဂါလားဒေ့ရှေ့) ဘာသာစကား ထောက်ပံ့ထည့်သွင်းသည်"
 
 #: source/ooo/module_langpack.ulf#STR_NAME_MODULE_LANGPACK_BN_IN
 #, fuzzy
@@ -1187,8 +1191,9 @@ msgid  "Bengali (India)"
 msgstr "ဘင်္ဂါလီ​(အိန္ဒိယ)"
 
 #: source/ooo/module_langpack.ulf#STR_DESC_MODULE_LANGPACK_BN_IN
+#, fuzzy
 msgid  "Installs Bengali (India) support in %PRODUCTNAME %PRODUCTVERSION"
-msgstr ""
+msgstr "%PRODUCTNAME %PRODUCTVERSION တွင် ဘင်္ဂါလီ(အိန္ဒိယ)ဘာသာစကား ထောက်ပံ့ထည့်သွင်းသည်"
 
 #: source/ooo/module_langpack.ulf#STR_NAME_MODULE_LANGPACK_OR
 #, fuzzy
@@ -1306,8 +1311,9 @@ msgid  "Icelandic"
 msgstr "အိုက်စ်လန်ဒစ်စ်"
 
 #: source/ooo/module_langpack.ulf#STR_DESC_MODULE_LANGPACK_IS
+#, fuzzy
 msgid  "Installs Icelandic support in %PRODUCTNAME %PRODUCTVERSION"
-msgstr ""
+msgstr "%PRODUCTNAME %PRODUCTVERSION တွင် အိုက်စ်လန်ဒစ်စ်ဘာသာစကား ထောက်ပံ့ထည့်သွင်းသည်"
 
 #: source/ooo/module_langpack.ulf#STR_NAME_MODULE_LANGPACK_NB
 #, fuzzy
@@ -1315,8 +1321,9 @@ msgid  "Norwegian (Bokmål)"
 msgstr "နော်ဝေး(ဘော့မဲလ်)"
 
 #: source/ooo/module_langpack.ulf#STR_DESC_MODULE_LANGPACK_NB
+#, fuzzy
 msgid  "Installs Norwegian (Bokmål) support in %PRODUCTNAME %PRODUCTVERSION"
-msgstr ""
+msgstr "%PRODUCTNAME %PRODUCTVERSION တွင် နော်ဝေး(ဘော့မဲလ်)ဘာသာစကား ထောက်ပံ့ထည့်သွင်းသည်"
 
 #: source/ooo/module_langpack.ulf#STR_NAME_MODULE_LANGPACK_NN
 #, fuzzy
@@ -1324,8 +1331,9 @@ msgid  "Norwegian (Nynorsk)"
 msgstr "နော်ဝေး(နီနော့)"
 
 #: source/ooo/module_langpack.ulf#STR_DESC_MODULE_LANGPACK_NN
+#, fuzzy
 msgid  "Installs Norwegian (Nynorsk) support in %PRODUCTNAME %PRODUCTVERSION"
-msgstr ""
+msgstr "%PRODUCTNAME %PRODUCTVERSION တွင် နော်ဝေး(နီနော့)ဘာသာစကား ထောက်ပံ့ထည့်သွင်းသည်"
 
 #: source/ooo/module_langpack.ulf#STR_NAME_MODULE_LANGPACK_RM
 #, fuzzy
@@ -1333,8 +1341,9 @@ msgid  "Rhaeto-Romance"
 msgstr "ရဟေတို-ရောမ"
 
 #: source/ooo/module_langpack.ulf#STR_DESC_MODULE_LANGPACK_RM
+#, fuzzy
 msgid  "Installs Rhaeto-Romance support in %PRODUCTNAME %PRODUCTVERSION"
-msgstr ""
+msgstr "%PRODUCTNAME %PRODUCTVERSION တွင် ရဟေတို-ရောမဘာသာစကား ထောက်ပံ့ထည့်သွင်းသည်"
 
 #: source/ooo/module_langpack.ulf#STR_NAME_MODULE_LANGPACK_RO
 #, fuzzy
@@ -1342,8 +1351,9 @@ msgid  "Romanian"
 msgstr "ရိုမေးနီးယန်း"
 
 #: source/ooo/module_langpack.ulf#STR_DESC_MODULE_LANGPACK_RO
+#, fuzzy
 msgid  "Installs Romanian support in %PRODUCTNAME %PRODUCTVERSION"
-msgstr ""
+msgstr "%PRODUCTNAME %PRODUCTVERSION တွင် ရိုမေးနီးယန်းဘာသာစကား ထောက်ပံ့ထည့်သွင်းသည်"
 
 #: source/ooo/module_langpack.ulf#STR_NAME_MODULE_LANGPACK_SQ
 #, fuzzy
@@ -1351,8 +1361,9 @@ msgid  "Albanian"
 msgstr "အာဘေးနီးယန်း"
 
 #: source/ooo/module_langpack.ulf#STR_DESC_MODULE_LANGPACK_SQ
+#, fuzzy
 msgid  "Installs Albanian support in %PRODUCTNAME %PRODUCTVERSION"
-msgstr ""
+msgstr "%PRODUCTNAME %PRODUCTVERSION တွင် အာဗေးနီးယန်းဘာသာစကား ထောက်ပံ့ထည့်သွင်းသည်"
 
 #: source/ooo/module_langpack.ulf#STR_NAME_MODULE_LANGPACK_UR
 #, fuzzy
@@ -1370,8 +1381,9 @@ msgid  "Indonesian"
 msgstr "အင်ဒိုနီးရှား"
 
 #: source/ooo/module_langpack.ulf#STR_DESC_MODULE_LANGPACK_ID
+#, fuzzy
 msgid  "Installs Indonesian support in %PRODUCTNAME %PRODUCTVERSION"
-msgstr ""
+msgstr "%PRODUCTNAME %PRODUCTVERSION တွင် အင်ဒိုနီးရှားဘာသာစကား ထောက်ပံ့ထည့်သွင်းသည်"
 
 #: source/ooo/module_langpack.ulf#STR_NAME_MODULE_LANGPACK_UK
 #, fuzzy
@@ -1399,8 +1411,9 @@ msgid  "Slovenian"
 msgstr "စလိုဗေးနီးယန်း"
 
 #: source/ooo/module_langpack.ulf#STR_DESC_MODULE_LANGPACK_SL
+#, fuzzy
 msgid  "Installs Slovenian support in %PRODUCTNAME %PRODUCTVERSION"
-msgstr ""
+msgstr "%PRODUCTNAME %PRODUCTVERSION တွင် စလိုဗေးနီးယန်းဘာသာစကား ထောက်ပံ့ထည့်သွင်းသည်"
 
 #: source/ooo/module_langpack.ulf#STR_NAME_MODULE_LANGPACK_LV
 #, fuzzy
@@ -1408,8 +1421,9 @@ msgid  "Latvian"
 msgstr "လက်ဗီးယန်း"
 
 #: source/ooo/module_langpack.ulf#STR_DESC_MODULE_LANGPACK_LV
+#, fuzzy
 msgid  "Installs Latvian support in %PRODUCTNAME %PRODUCTVERSION"
-msgstr ""
+msgstr "%PRODUCTNAME %PRODUCTVERSION တွင် လက်ဗီးယန်းဘာသာစကား ထောက်ပံ့ထည့်သွင်းသည်"
 
 #: source/ooo/module_langpack.ulf#STR_NAME_MODULE_LANGPACK_LT
 #, fuzzy
@@ -1417,8 +1431,9 @@ msgid  "Lithuanian"
 msgstr "လီသူအေးနီယန်း"
 
 #: source/ooo/module_langpack.ulf#STR_DESC_MODULE_LANGPACK_LT
+#, fuzzy
 msgid  "Installs Lithuanian support in %PRODUCTNAME %PRODUCTVERSION"
-msgstr ""
+msgstr "%PRODUCTNAME %PRODUCTVERSION တွင် လီသူအေးနီးယန်းဘာသာစကား ထောက်ပံ့ထည့်သွင်းသည်"
 
 #: source/ooo/module_langpack.ulf#STR_NAME_MODULE_LANGPACK_HY
 #, fuzzy
@@ -1426,8 +1441,9 @@ msgid  "Armenian"
 msgstr "အာမေးနီးယန်း"
 
 #: source/ooo/module_langpack.ulf#STR_DESC_MODULE_LANGPACK_HY
+#, fuzzy
 msgid  "Installs Armenian support in %PRODUCTNAME %PRODUCTVERSION"
-msgstr ""
+msgstr "%PRODUCTNAME %PRODUCTVERSION တွင် အာမေးနီးယန်းဘာသာစကား ထောက်ပံ့ထည့်သွင်းသည်"
 
 #: source/ooo/module_langpack.ulf#STR_NAME_MODULE_LANGPACK_EU
 #, fuzzy
@@ -1445,8 +1461,9 @@ msgid  "Macedonian"
 msgstr "မက်ဆီတိုနီးယန်း"
 
 #: source/ooo/module_langpack.ulf#STR_DESC_MODULE_LANGPACK_MK
+#, fuzzy
 msgid  "Installs Macedonian support in %PRODUCTNAME %PRODUCTVERSION"
-msgstr ""
+msgstr "%PRODUCTNAME %PRODUCTVERSION တွင် မက်ဆီတိုနီးယန်းဘာသာစကား ထောက်ပံ့ထည့်သွင်းသည်"
 
 #: source/ooo/module_langpack.ulf#STR_NAME_MODULE_LANGPACK_MT
 #, fuzzy
@@ -1474,8 +1491,9 @@ msgid  "Galician"
 msgstr "ဂလစ်ဆီယန်း"
 
 #: source/ooo/module_langpack.ulf#STR_DESC_MODULE_LANGPACK_GL
+#, fuzzy
 msgid  "Installs Galician support in %PRODUCTNAME %PRODUCTVERSION"
-msgstr ""
+msgstr "%PRODUCTNAME %PRODUCTVERSION တွင် ဂလစ်ဆီယန်းဘာသာစကား ထောက်ပံ့ထည့်သွင်းသည်"
 
 #: source/ooo/module_langpack.ulf#STR_NAME_MODULE_LANGPACK_SH_YU
 #, fuzzy
@@ -1483,8 +1501,9 @@ msgid  "Serbian (Latin)"
 msgstr "ဆာဗီးယန်း(လက်တင်)"
 
 #: source/ooo/module_langpack.ulf#STR_DESC_MODULE_LANGPACK_SH_YU
+#, fuzzy
 msgid  "Installs Serbian (Latin) support in %PRODUCTNAME %PRODUCTVERSION"
-msgstr ""
+msgstr "%PRODUCTNAME %PRODUCTVERSION တွင် ဆာဘီယန်း(လက်တင်)ဘာသာစကား ထောက်ပံ့ထည့်သွင်းသည်"
 
 #: source/ooo/module_langpack.ulf#STR_NAME_MODULE_LANGPACK_SH
 #, fuzzy
@@ -1492,8 +1511,9 @@ msgid  "Serbian (Latin)"
 msgstr "ဆာဗီးယန်း(လက်တင်)"
 
 #: source/ooo/module_langpack.ulf#STR_DESC_MODULE_LANGPACK_SH
+#, fuzzy
 msgid  "Installs Serbian (Latin) support in %PRODUCTNAME %PRODUCTVERSION"
-msgstr ""
+msgstr "%PRODUCTNAME %PRODUCTVERSION တွင် ဆာဘီယန်း(လက်တင်)ဘာသာစကား ထောက်ပံ့ထည့်သွင်းသည်"
 
 #: source/ooo/module_langpack.ulf#STR_NAME_MODULE_LANGPACK_GA
 #, fuzzy
@@ -1501,8 +1521,9 @@ msgid  "Irish"
 msgstr "အိုင်းရစ်"
 
 #: source/ooo/module_langpack.ulf#STR_DESC_MODULE_LANGPACK_GA
+#, fuzzy
 msgid  "Installs Irish support in %PRODUCTNAME %PRODUCTVERSION"
-msgstr ""
+msgstr "%PRODUCTNAME %PRODUCTVERSION တွင် အိုင်းရစ်ဘာသာစကား ထောက်ပံ့ထည့်သွင်းသည်"
 
 #: source/ooo/module_langpack.ulf#STR_NAME_MODULE_LANGPACK_SR_CS
 #, fuzzy
@@ -1510,8 +1531,9 @@ msgid  "Serbian (Cyrillic)"
 msgstr "ဆာဗီးယန်း (ဆီးလစ်)"
 
 #: source/ooo/module_langpack.ulf#STR_DESC_MODULE_LANGPACK_SR_CS
+#, fuzzy
 msgid  "Installs Serbian (Cyrillic) support in %PRODUCTNAME %PRODUCTVERSION"
-msgstr ""
+msgstr "%PRODUCTNAME %PRODUCTVERSION တွင် ဆာဘီယန်း(ဆီးလစ်)ဘာသာစကား ထောက်ပံ့ထည့်သွင်းသည်"
 
 #: source/ooo/module_langpack.ulf#STR_NAME_MODULE_LANGPACK_SR
 #, fuzzy
@@ -1519,8 +1541,9 @@ msgid  "Serbian (Cyrillic)"
 msgstr "ဆာဗီးယန်း (ဆီးလစ်)"
 
 #: source/ooo/module_langpack.ulf#STR_DESC_MODULE_LANGPACK_SR
+#, fuzzy
 msgid  "Installs Serbian (Cyrillic) support in %PRODUCTNAME %PRODUCTVERSION"
-msgstr ""
+msgstr "%PRODUCTNAME %PRODUCTVERSION တွင် ဆာဘီယန်း(ဆီးလစ်)ဘာသာစကား ထောက်ပံ့ထည့်သွင်းသည်"
 
 #: source/ooo/module_langpack.ulf#STR_NAME_MODULE_LANGPACK_BS
 #, fuzzy
@@ -1528,8 +1551,9 @@ msgid  "Bosnian"
 msgstr "ဘော့စနီးယား"
 
 #: source/ooo/module_langpack.ulf#STR_DESC_MODULE_LANGPACK_BS
+#, fuzzy
 msgid  "Installs Bosnian support in %PRODUCTNAME %PRODUCTVERSION"
-msgstr ""
+msgstr "%PRODUCTNAME %PRODUCTVERSION တွင် ဘော့စနီးယားဘာသာစကား ထောက်ပံ့ထည့်သွင်းသည်"
 
 #: source/ooo/module_langpack.ulf#STR_NAME_MODULE_LANGPACK_AS_IN
 #, fuzzy
@@ -1547,8 +1571,9 @@ msgid  "Kinyarwanda"
 msgstr "ကင်ရာဝန်တာ"
 
 #: source/ooo/module_langpack.ulf#STR_DESC_MODULE_LANGPACK_RW
+#, fuzzy
 msgid  "Installs Kinyarwanda support in %PRODUCTNAME %PRODUCTVERSION"
-msgstr ""
+msgstr "%PRODUCTNAME %PRODUCTVERSION တွင် ကင်ရာဝန်တာဘာသာစကား ထောက်ပံ့ထည့်သွင်းသည်"
 
 #: source/ooo/module_langpack.ulf#STR_NAME_MODULE_LANGPACK_SA
 #, fuzzy
@@ -1556,8 +1581,9 @@ msgid  "Sanskrit"
 msgstr "သင်္သကရိုက်"
 
 #: source/ooo/module_langpack.ulf#STR_DESC_MODULE_LANGPACK_SA
+#, fuzzy
 msgid  "Installs Sanskrit support in %PRODUCTNAME %PRODUCTVERSION"
-msgstr ""
+msgstr "%PRODUCTNAME %PRODUCTVERSION တွင် သင်္သကရိုက်ဘာသာစကား ထောက်ပံ့ထည့်သွင်းသည်"
 
 #: source/ooo/module_langpack.ulf#STR_NAME_MODULE_LANGPACK_FA
 msgid  "Persian"
@@ -1583,8 +1609,9 @@ msgid  "Sorbian"
 msgstr "ဆော်ဘီယန်း"
 
 #: source/ooo/module_langpack.ulf#STR_DESC_MODULE_LANGPACK_SB
+#, fuzzy
 msgid  "Installs Sorbian support in %PRODUCTNAME %PRODUCTVERSION"
-msgstr ""
+msgstr "%PRODUCTNAME %PRODUCTVERSION တွင် ဆော်ဘီယန်းဘာသာစကား ထောက်ပံ့ထည့်သွင်းသည်"
 
 #: source/ooo/module_langpack.ulf#STR_NAME_MODULE_LANGPACK_TT
 #, fuzzy
@@ -1632,8 +1659,9 @@ msgid  "Ndebele South"
 msgstr "နဒီဘလီ တောင်ပိုင်း"
 
 #: source/ooo/module_langpack.ulf#STR_DESC_MODULE_LANGPACK_NR
+#, fuzzy
 msgid  "Installs Ndebele South support in %PRODUCTNAME %PRODUCTVERSION"
-msgstr ""
+msgstr "%PRODUCTNAME %PRODUCTVERSION တွင် နဒီဘလီတောင်ပိုင်းဘာသာစကား ထောက်ပံ့ထည့်သွင်းသည်"
 
 #: source/ooo/module_langpack.ulf#STR_NAME_MODULE_LANGPACK_SS
 #, fuzzy
@@ -1671,8 +1699,9 @@ msgid  "Malay (Malaysian)"
 msgstr "မလေး (မလေးရှား)"
 
 #: source/ooo/module_langpack.ulf#STR_DESC_MODULE_LANGPACK_MS
+#, fuzzy
 msgid  "Installs Malay (Malaysian) support in %PRODUCTNAME %PRODUCTVERSION"
-msgstr ""
+msgstr "%PRODUCTNAME %PRODUCTVERSION တွင် မလေး(မလေးရှား)ဘာသာစကား ထောက်ပံ့ထည့်သွင်းသည်"
 
 #: source/ooo/module_langpack.ulf#STR_NAME_MODULE_LANGPACK_TG
 #, fuzzy
@@ -1710,8 +1739,9 @@ msgid  "Georgian"
 msgstr "ဂျော်ဂျီယန်"
 
 #: source/ooo/module_langpack.ulf#STR_DESC_MODULE_LANGPACK_KA
+#, fuzzy
 msgid  "Installs Georgian support in %PRODUCTNAME %PRODUCTVERSION"
-msgstr ""
+msgstr "%PRODUCTNAME %PRODUCTVERSION တွင် ဂျော်ဂျီယန်ဘာသာစကား ထောက်ပံ့ထည့်သွင်းသည်"
 
 #: source/ooo/module_langpack.ulf#STR_NAME_MODULE_LANGPACK_EO
 #, fuzzy
@@ -1719,8 +1749,9 @@ msgid  "Esperanto"
 msgstr "အက်စ်ပရန်တို"
 
 #: source/ooo/module_langpack.ulf#STR_DESC_MODULE_LANGPACK_EO
+#, fuzzy
 msgid  "Installs Esperanto support in %PRODUCTNAME %PRODUCTVERSION"
-msgstr ""
+msgstr "%PRODUCTNAME %PRODUCTVERSION တွင် အက်စ်ပရန်တိုဘာသာစကား ထောက်ပံ့ထည့်သွင်းသည်"
 
 #: source/ooo/module_langpack.ulf#STR_NAME_MODULE_LANGPACK_GU
 #, fuzzy
@@ -1728,8 +1759,9 @@ msgid  "Gujarati"
 msgstr "ဂူဂျရတီ"
 
 #: source/ooo/module_langpack.ulf#STR_DESC_MODULE_LANGPACK_GU
+#, fuzzy
 msgid  "Installs Gujarati support in %PRODUCTNAME %PRODUCTVERSION"
-msgstr ""
+msgstr "%PRODUCTNAME %PRODUCTVERSION တွင် ဂူဂျာရတီဘာသာစကား ထောက်ပံ့ထည့်သွင်းသည်"
 
 #: source/ooo/module_langpack.ulf#STR_NAME_MODULE_LANGPACK_EN_ZA
 #, fuzzy
@@ -1737,8 +1769,9 @@ msgid  "English (South Africa)"
 msgstr "အင်္ဂလိပ် (တောင်အာဖရိက)"
 
 #: source/ooo/module_langpack.ulf#STR_DESC_MODULE_LANGPACK_EN_ZA
+#, fuzzy
 msgid  "Installs English (South Africa) support in %PRODUCTNAME %PRODUCTVERSION"
-msgstr ""
+msgstr "%PRODUCTNAME %PRODUCTVERSION တွင် အင်္ဂလိပ်(တောင်အာဖရိက)ဘာသာစကား ထောက်ပံ့ထည့်သွင်းသည်"
 
 #: source/ooo/module_langpack.ulf#STR_NAME_MODULE_LANGPACK_EN_GB
 #, fuzzy
@@ -1746,8 +1779,9 @@ msgid  "English (United Kingdom)"
 msgstr "အင်္ဂလိပ် (ယူနိုက်တက်ကင်းဒန်း)"
 
 #: source/ooo/module_langpack.ulf#STR_DESC_MODULE_LANGPACK_EN_GB
+#, fuzzy
 msgid  "Installs English (United Kingdom) support in %PRODUCTNAME %PRODUCTVERSION"
-msgstr ""
+msgstr "%PRODUCTNAME %PRODUCTVERSION တွင် အင်္ဂလိပ် (ယူနိုက်တက်ကင်းဒန်း)ဘာသာစကား ထောက်ပံ့ထည့်သွင်းသည်"
 
 #: source/ooo/module_langpack.ulf#STR_NAME_MODULE_LANGPACK_UR_IN
 #, fuzzy
@@ -1805,8 +1839,9 @@ msgid  "Mongolian"
 msgstr "မွန်ဂိုလီးယန်း"
 
 #: source/ooo/module_langpack.ulf#STR_DESC_MODULE_LANGPACK_MN
+#, fuzzy
 msgid  "Installs Mongolian support in %PRODUCTNAME %PRODUCTVERSION"
-msgstr ""
+msgstr "%PRODUCTNAME %PRODUCTVERSION တွင် မွန်ဂိုလီးယန်းဘာသာစကား ထောက်ပံ့ထည့်သွင်းသည်"
 
 #: source/ooo/module_langpack.ulf#STR_NAME_MODULE_LANGPACK_OC
 msgid  "Occitan"
@@ -1849,8 +1884,9 @@ msgid  "Asturian"
 msgstr ""
 
 #: source/ooo/module_langpack.ulf#STR_DESC_MODULE_LANGPACK_AST
+#, fuzzy
 msgid  "Installs Asturian support in %PRODUCTNAME %PRODUCTVERSION"
-msgstr ""
+msgstr "%PRODUCTNAME %PRODUCTVERSION တွင် အက်စတိုနီးယန်းဘာသာစကား ထောက်ပံ့ထည့်သွင်းသည်"
 
 #: source/ooo/module_langpack.ulf#STR_NAME_MODULE_LANGPACK_GD
 msgid  "Gaelic (Scotland)"
@@ -1861,175 +1897,145 @@ msgid  "Installs Gaelic (Scotland) support in %PRODUCTNAME %PRODUCTVERSION"
 msgstr ""
 
 #: source/python/module_python_mailmerge.ulf#STR_NAME_MODULE_OPTIONAL_PYTHON_MAILMERGE
-#, fuzzy
 msgid  "E-mail Mailmerge"
 msgstr "အီးမေးလ် စာပို့စနစ်"
 
 #: source/python/module_python_mailmerge.ulf#STR_DESC_MODULE_OPTIONAL_PYTHON_MAILMERGE
-#, fuzzy
 msgid  "Module for %PRODUCTNAME E-mail Mailmerge feature"
 msgstr "%PRODUCTNAME အီးမေးလ် စာပို့စနစ်လုပ်ဆောင်ချက်အတွက် မော်ဂျူး"
 
 #: source/python/module_python.ulf#STR_NAME_MODULE_OPTIONAL_PYTHON
-#, fuzzy
 msgid  "Python-UNO Bridge"
 msgstr "Python-UNO တံတား"
 
 #: source/python/module_python.ulf#STR_DESC_MODULE_OPTIONAL_PYTHON
 msgid  "Adds the ability to automate %PRODUCTNAME with the python scripting language. See http://udk.openoffice.org/python/python-bridge.html for a complete documentation."
-msgstr ""
+msgstr "ဖီသွန်(န်) လက်ရေးစာဘာသာစကားနှင့်အတူ %PRODUCTNAME အလိုအလျောက် လုပ်ဆောင်မှုပြုရန် စွမ်းရည်များ ထပ်ဖြည့်သည်။ ပိုမိုပြည့်စုံသော မှတ်တမ်းမှတ်ရာများရရှိရန်အတွက် http://udk.openoffice.org/python/python-bridge.html တွင် ကြည့်ပါ။"
 
 #: source/quickstart/module_quickstart.ulf#STR_NAME_MODULE_OPTIONAL_QUICKSTART
-#, fuzzy
 msgid  "Quickstarter"
 msgstr "လျှင်မြန်စွာ စတင်သူ"
 
 #: source/quickstart/module_quickstart.ulf#STR_DESC_MODULE_OPTIONAL_QUICKSTART
 msgid  "Loads basic components on system start to accelerate start up time of %PRODUCTNAME %PRODUCTVERSION."
-msgstr ""
+msgstr "%PRODUCTNAME %PRODUCTVERSION အစပြုမှု အရှိန်မြှင့်လာစေရန် စနစ်ပေါ်သို့ အခြေခံ အစိတ်အပိုင်းများ ဆွဲတင်သည်။"
 
 #: source/sdkoo/module_sdkoo.ulf#STR_NAME_MODULE_OPTIONAL_SDKOO
-#, fuzzy
 msgid  "Software Development Kit (SDK)"
 msgstr "Software Development Kit (SDK)"
 
 #: source/sdkoo/module_sdkoo.ulf#STR_DESC_MODULE_OPTIONAL_SDKOO
 msgid  "The SDK provides all necessary tools, examples and documentation to program with and for the office."
-msgstr ""
+msgstr "ရုံးလုပ်ငန်းများနှင့် ပရိုဂရမ်အတွက် လိုအပ်သော ကိရိယာများအားလုံး၊ ဥပမာများနှင့် မှတ်တမ်းမှတ်ရာများကို SDK မှ လုပ်ဆောင်ပေးသည်။"
 
 #: source/winexplorerext/module_winexplorerext.ulf#STR_NAME_MODULE_OPTIONAL_WINDOWS_EXPLORER_EXTENSIONS
-#, fuzzy
 msgid  "Windows Explorer Extension"
 msgstr "Windows Explorer တိုးချဲ့ခြင်း"
 
 #: source/winexplorerext/module_winexplorerext.ulf#STR_DESC_MODULE_OPTIONAL_WINDOWS_EXPLORER_EXTENSIONS
 msgid  "Enables the Microsoft Windows Explorer to show information about %PRODUCTNAME documents, such as thumbnail previews."
-msgstr ""
+msgstr "%PRODUCTNAME သတင်းအချက်အလက် မှတ်တမ်းမှတ်ရာများအကြောင်း ပြသရန် Microsoft Windows Explorer မှလုပ်ဆောင်မှုပြုသည်။အကျဉ်းချုပ် အစမ်းကြည့်ခြင်းများကဲ့သို့"
 
 #: source/writer/folderitem_writer.ulf#STR_FI_NAME_HTMLDOKUMENT
-#, fuzzy
 msgid  "HTML Document"
 msgstr "HTML မှတ်တမ်းမှတ်ရာ"
 
 #: source/writer/folderitem_writer.ulf#STR_FI_NAME_TEXTDOKUMENT
-#, fuzzy
 msgid  "Text Document"
 msgstr "စာသား မှတ်တမ်းမှတ်ရာ"
 
 #: source/writer/folderitem_writer.ulf#STR_FI_TOOLTIP_WRITER
 msgid  "Create and edit text and graphics in letters, reports, documents and Web pages by using Writer."
-msgstr ""
+msgstr "အသုံးပြုရေးသားသူအားဖြင့် စာများ၊ အစီရင်ခံစာများ၊ မှတ်တမ်းမှတ်ရာများနှင့် ကွန်ရက်စာမျက်နှာများတွင် စာသားနှင့်ပန်းချီဒီဇိုင်းများ ဖန်တီးတည်းဖြတ်ပါ။"
+
+#: source/writer/registryitem_writer.ulf#STR_REG_VAL_NEW
+msgid  "&New"
+msgstr "&အသစ်"
 
 #: source/writer/registryitem_writer.ulf#STR_REG_VAL_SO60_TEXT
-#, fuzzy
 msgid  "%SXWFORMATNAME %SXWFORMATVERSION Text Document"
 msgstr "%PRODUCTNAME %SXWFORMATVERSION စာသား မှတ်တမ်းမှတ်ရာ"
 
 #: source/writer/registryitem_writer.ulf#STR_REG_VAL_SO60_MASTERDOC
-#, fuzzy
 msgid  "%SXWFORMATNAME %SXWFORMATVERSION Master Document"
 msgstr "%PRODUCTNAME %SXWFORMATVERSION ပင်မ မှတ်တမ်းမှတ်ရာ"
 
 #: source/writer/registryitem_writer.ulf#STR_REG_VAL_SO60_WRITER_TEMPLATE
-#, fuzzy
 msgid  "%SXWFORMATNAME %SXWFORMATVERSION Text Document Template"
 msgstr "%PRODUCTNAME %SXWFORMATVERSION စာသား မှတ်တမ်းမှတ်ရာ ပုံစံပြား"
 
 #: source/writer/registryitem_writer.ulf#STR_REG_VAL_OO_WRITER
-#, fuzzy
 msgid  "OpenDocument Text"
 msgstr "OpenDocument စာသား"
 
 #: source/writer/registryitem_writer.ulf#STR_REG_VAL_OO_WRITER_TEMPLATE
-#, fuzzy
 msgid  "OpenDocument Text Template"
 msgstr "OpenDocument စာသား ပုံစံပြား"
 
 #: source/writer/registryitem_writer.ulf#STR_REG_VAL_OO_MASTERDOC
-#, fuzzy
 msgid  "OpenDocument Master Document"
 msgstr "OpenDocument ပင်မ မှတ်တမ်းမှတ်ရာ"
 
 #: source/writer/registryitem_writer.ulf#STR_REG_VAL_OO_WEBDOC
-#, fuzzy
 msgid  "HTML Document Template"
 msgstr "HTML မှတ်တမ်းမှတ်ရာ ပုံစံပြား"
 
 #: source/writer/registryitem_writer.ulf#STR_REG_VAL_MS_WORD_DOCUMENT_OLD
-#, fuzzy
 msgid  "Microsoft Word 97-2003 Document"
 msgstr "Microsoft Word 97-2003 မှတ်တမ်းမှတ်ရာ"
 
 #: source/writer/registryitem_writer.ulf#STR_REG_VAL_MS_WORD_DOCUMENT
-#, fuzzy
 msgid  "Microsoft Word Document"
 msgstr "Microsoft Word မှတ်တမ်းမှတ်ရာ"
 
 #: source/writer/registryitem_writer.ulf#STR_REG_VAL_MS_WORD_TEMPLATE_OLD
-#, fuzzy
 msgid  "Microsoft Word 97-2003 Template"
 msgstr "Microsoft Word 97-2003 ပုံစံပြား"
 
 #: source/writer/registryitem_writer.ulf#STR_REG_VAL_MS_WORD_TEMPLATE
-#, fuzzy
 msgid  "Microsoft Word Template"
 msgstr "Microsoft Word ပုံစံပြား"
 
 #: source/writer/registryitem_writer.ulf#STR_REG_VAL_MS_RTF_DOCUMENT
-#, fuzzy
 msgid  "Rich Text Document"
 msgstr "Rich စာသား မှတ်တမ်းမှတ်ရာ"
 
-#: source/writer/registryitem_writer.ulf#STR_REG_VAL_NEW
-#, fuzzy
-msgid  "&New"
-msgstr "&အသစ်"
-
 #: source/writer/module_writer.ulf#STR_NAME_MODULE_PRG_WRT
-#, fuzzy
 msgid  "%PRODUCTNAME Writer"
 msgstr "%PRODUCTNAME ရေးသူ"
 
 #: source/writer/module_writer.ulf#STR_DESC_MODULE_PRG_WRT
 msgid  "Create and edit text and graphics in letters, reports, documents and Web pages by using %PRODUCTNAME Writer."
-msgstr ""
+msgstr "အသုံးပြုရေးသားသူအားဖြင့် စာများ၊ အစီရင်ခံစာများ၊ မှတ်တမ်းမှတ်ရာများနှင့် ကွန်ရက်စာမျက်နှာများတွင် စာသားနှင့်ပန်းချီဒီဇိုင်းများ ဖန်တီးတည်းဖြတ်ပါ။"
 
 #: source/writer/module_writer.ulf#STR_NAME_MODULE_PRG_WRT_BIN
-#, fuzzy
 msgid  "Program Module"
 msgstr "ပရိုဂရမ် မော်ဂျူး"
 
 #: source/writer/module_writer.ulf#STR_DESC_MODULE_PRG_WRT_BIN
-#, fuzzy
 msgid  "The application %PRODUCTNAME Writer"
 msgstr "အသုံးပြုပရိုဂရမ် %PRODUCTNAME ရေးသူ"
 
 #: source/writer/module_writer.ulf#STR_NAME_MODULE_PRG_WRT_HELP
-#, fuzzy
 msgid  "%PRODUCTNAME Writer Help"
 msgstr "%PRODUCTNAME ရေးသူ ကူညီသည်"
 
 #: source/writer/module_writer.ulf#STR_DESC_MODULE_PRG_WRT_HELP
-#, fuzzy
 msgid  "Help about %PRODUCTNAME Writer"
 msgstr "%PRODUCTNAME ရေးသားသူအကြောင်း ကူညီသည်"
 
 #: source/writer/module_writer.ulf#STR_NAME_MODULE_PRG_WRT_WRITER2LATEX
-#, fuzzy
 msgid  "LaTeX Export"
 msgstr "LaTeX တင်ပို့မှု"
 
 #: source/writer/module_writer.ulf#STR_DESC_MODULE_PRG_WRT_WRITER2LATEX
-#, fuzzy
 msgid  "LaTeX export filter for Writer documents."
 msgstr "စာရေးသူ မှတ်တမ်းမှတ်ရာများအတွက် LaTeX တင်ပို့မှု။"
 
 #: source/xsltfilter/module_xsltfilter.ulf#STR_NAME_MODULE_OPTIONAL_XSLTFILTERSAMPLES
-#, fuzzy
 msgid  "XSLT Sample Filters"
 msgstr "XSLT နမူနာ စစ်ထုတ်ကိရိယာများ"
 
 #: source/xsltfilter/module_xsltfilter.ulf#STR_DESC_MODULE_OPTIONAL_XSLTFILTERSAMPLES
-#, fuzzy
 msgid  "XSLT Sample Filters"
 msgstr "XSLT နမူနာ စစ်ထုတ်ကိရိယာများ"

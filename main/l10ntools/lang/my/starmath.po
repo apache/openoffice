@@ -445,11 +445,11 @@ msgstr "~ဖျက်ပါ"
 
 #: source/smres.src#RID_NOMATHTYPEFACEWARNING.WarningBox.Message
 msgid  "The 'StarMath' font has not been installed.\nWithout this font %PRODUCTNAME Math cannot function correctly.\nPlease install this font and restart %PRODUCTNAME Math."
-msgstr ""
+msgstr "\"StarMath\" ဖောင့်အား ထည့်သွင်းထားပြီးဖြစ်သည်။ \n%PRODUCTNAME သင်္ချာအား မှန်ကန်စွာ လုပ်ဆောင်မှုပြုရန် ဤဖောင့်မှ လုပ်ဆောင်မပေးနိုင်ပါ \nဤဖောင့်အား ထည့်သွင်းမှုပြုပြီး %PRODUCTNAME သင်္ချာအား ပြန်လည်စတင်ပါ။"
 
 #: source/smres.src#RID_DEFAULTSAVEQUERY.QueryBox.Message
 msgid  "Should the changes be saved as defaults?\n\nThese changes will apply for all new formulas."
-msgstr ""
+msgstr "ပြောင်းလဲမှုများကို နဂိုမူလအဖြစ်သိမ်းခဲ့သင့်ပါသလား\n\nဤပြောင်းလဲမှုများကို ပုံသေနည်းအသစ်များအတွက် အသုံးပြုလိမ့်မည်။"
 
 #: source/smres.src#RID_FONTREGULAR.String.Text
 msgid  "Standard"
@@ -558,6 +558,10 @@ msgstr "အနားသတ်မရှိ"
 #: source/smres.src#RID_FONTMENU.7.MenuItem.Text
 msgid  "Fixed"
 msgstr "ပုံသေ"
+
+#: source/smres.src#CMDBOXWINDOW_TEXT.#define.Text
+msgid  "Commands"
+msgstr "ညွှန်ကြားချက်များ"
 
 #: source/smres.src#RID_DOCUMENTSTR.String.Text
 msgid  "Formula"
@@ -701,78 +705,59 @@ msgstr "စာမျက်နှာနှင့်အံဝင်ခွင်က
 msgid  "~Scaling"
 msgstr "~စကေးကျသည်"
 
-#: source/smres.src#CMDBOXWINDOW_TEXT.#define.Text
-#, fuzzy
-msgid  "Commands"
-msgstr "ညွှန်ကြားချက်များ"
-
 #: source/commands.src#RID_COMMANDMENU.RID_UNBINOPS_MENU.MenuItem.Text
-#, fuzzy
 msgid  "~Unary/Binary Operators"
 msgstr "~ယူနရီ/ဘိုင်နရီ အော်ပရေတာများ"
 
 #: source/commands.src#RID_COMMANDMENU.RID_RELATIONS_MENU.MenuItem.Text
-#, fuzzy
 msgid  "~Relations"
 msgstr "~ဆက်နွယ်မှုများ"
 
 #: source/commands.src#RID_COMMANDMENU.RID_SETOPERATIONS_MENU.MenuItem.Text
-#, fuzzy
 msgid  "~Set Operations"
 msgstr "⁠~လုပ်ဆောင်မှုများ စတင်ပါ..."
 
 #: source/commands.src#RID_COMMANDMENU.RID_FUNCTIONS_MENU.MenuItem.Text
-#, fuzzy
 msgid  "~Functions"
 msgstr "~ဖန်ရှင်များ"
 
 #: source/commands.src#RID_COMMANDMENU.RID_FUNCTIONS_MENU.RID_FUNCTIONSOTHER1_MENU.MenuItem.Text
-#, fuzzy
 msgid  "More"
 msgstr "ပို၍"
 
 #: source/commands.src#RID_COMMANDMENU.RID_OPERATORS_MENU.MenuItem.Text
-#, fuzzy
 msgid  "O~perators"
 msgstr "အော်ပရေတာများ"
 
 #: source/commands.src#RID_COMMANDMENU.RID_ATTRIBUTES_MENU.MenuItem.Text
-#, fuzzy
 msgid  "~Attributes"
 msgstr "~ပင်ကိုယ်အရည်အချင်းများ"
 
 #: source/commands.src#RID_COMMANDMENU.RID_BRACKETS_MENU.MenuItem.Text
-#, fuzzy
 msgid  "~Brackets"
 msgstr "~ကွင်းများ"
 
 #: source/commands.src#RID_COMMANDMENU.RID_FORMAT_MENU.MenuItem.Text
-#, fuzzy
 msgid  "For~mats"
 msgstr "စီစဉ်ဖွဲ့စည်းမှုပုံစံ"
 
 #: source/commands.src#RID_COMMANDMENU.RID_FORMAT_MENU.RID_NEWLINE.MenuItem.Text
-#, fuzzy
 msgid  "New Line"
 msgstr "လိုင်း အသစ်"
 
 #: source/commands.src#RID_COMMANDMENU.RID_FORMAT_MENU.RID_SBLANK.MenuItem.Text
-#, fuzzy
 msgid  "Small Gap"
 msgstr "နေရာလွတ်ငယ်"
 
 #: source/commands.src#RID_COMMANDMENU.RID_FORMAT_MENU.RID_BLANK.MenuItem.Text
-#, fuzzy
 msgid  "Gap"
 msgstr "နေရာလွတ်"
 
 #: source/commands.src#RID_COMMANDMENU.RID_FORMAT_MENU.RID_NOSPACE.MenuItem.Text
-#, fuzzy
 msgid  "nospace {...}"
 msgstr "နေရာလွတ်မရှိ{...}"
 
 #: source/commands.src#RID_COMMANDMENU.RID_MISC_MENU.MenuItem.Text
-#, fuzzy
 msgid  "~Others"
 msgstr "~အခြား"
 

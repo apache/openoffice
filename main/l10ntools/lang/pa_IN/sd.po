@@ -217,7 +217,7 @@ msgstr "ਸਲਾਈਡਾਂ ਹਲਾਓ"
 
 #: source/core/glob.src#STR_NOT_ENOUGH_MEMORY.String.Text
 msgid  "Not enough memory!\nThe action will be aborted."
-msgstr ""
+msgstr "ਲੋੜੀਦੀ ਮੈਮੋਰੀ ਨਹੀਂ ਹੈ!\nਕਾਰਵਾਈ ਛੱਡੀ ਜਾਂਦੀ ਹੈ।"
 
 #: source/core/glob.src#STR_POOLSHEET_MEASURE.String.Text
 msgid  "Dimension Line"
@@ -341,11 +341,11 @@ msgstr "ਫਾਇਲ ਫਾਰਮੈਟ ਵਿੱਚ $(ARG1)(row,col) ਉੱਤ�
 
 #: source/core/glob.src#RID_SD_ERRHDL.ERR_CODE ( ERRCODE_CLASS_READ , ERR_FORMAT_FILE_ROWCOL ).String.Text
 msgid  "Format error discovered in the file in sub-document $(ARG1) at position $(ARG2)(row,col)."
-msgstr ""
+msgstr "ਸਬ-ਡੌਕੂਮੈਂਟ $(ARG1) ਵਿੱਚ ਫਾਇਲ ਵਿੱਚ ਫਾਰਮੈਟ ਗਲਤੀ ਸਥਿਤੀ $(ARG2)(ਕਤਾਰ,ਕਾਲਮ) ਉੱਤੇ ਖੋਜੀ ਹੈ।"
 
 #: source/core/glob.src#RID_SD_ERRHDL.ERR_CODE ( ERRCODE_CLASS_READ , WARN_FORMAT_FILE_ROWCOL ).String.Text
 msgid  "Format error discovered in the file in sub-document $(ARG1) at position $(ARG2)(row,col)."
-msgstr ""
+msgstr "ਸਬ-ਡੌਕੂਮੈਂਟ $(ARG1) ਵਿੱਚ ਫਾਇਲ ਵਿੱਚ ਫਾਰਮੈਟ ਗਲਤੀ ਸਥਿਤੀ $(ARG2)(ਕਤਾਰ,ਕਾਲਮ) ਉੱਤੇ ਖੋਜੀ ਹੈ।"
 
 #: source/core/glob.src#STR_3DOBJECTBARSHELL.String.Text
 msgid  "3-D Settings"
@@ -1225,7 +1225,7 @@ msgstr "ਤਬਦੀਲ"
 
 #: source/ui/animations/CustomAnimation.src#STR_CUSTOMANIMATION_LIST_HELPTEXT.String.Text
 msgid  "First select the slide element and then click 'Add...' to add an animation effect."
-msgstr ""
+msgstr "ਪਹਿਲਾਂ ਸਲਾਇਡ ਇਕਾਈ ਚੁਣੋ ਅਤੇ ਤਦ 'ਸ਼ਾਮਲ...' ਦਬਾਉ ਤਾਂ ਕਿ ਇੱਕ ਸਜੀਵ ਪ੍ਰਭਾਵ ਸ਼ਾਮਲ ਹੋ ਸਕੇ।"
 
 #: source/ui/animations/SlideTransitionPane.src#DLG_SLIDE_TRANSITION_PANE.Control.Text
 msgid  "Slide Transition"
@@ -1381,19 +1381,19 @@ msgstr "(ਕੋਈ ਲੇਖਕ ਨਹੀਂ)"
 
 #: source/ui/annotations/annotations.src#STR_ANNOTATION_WRAP_FORWARD.String.Text
 msgid  "%PRODUCTNAME Impress reached the end of the presentation. Do you want to continue at the beginning?"
-msgstr ""
+msgstr "%PRODUCTNAME ਇੰਪਰੈੱਸ ਡੌਕੂਮੈਂਟ ਦੇ ਅੰਤ ਉੱਤੇ ਪੁੱਜ ਗਿਆ ਹੈ। ਕੀ ਤੁਸੀਂ ਸ਼ੁਰੂ ਤੋਂ ਸ਼ੁਰੂ ਕਰਨਾ ਚਾਹੁੰਦੇ ਹੋ?"
 
 #: source/ui/annotations/annotations.src#STR_ANNOTATION_WRAP_BACKWARD.String.Text
 msgid  "%PRODUCTNAME Impress reached the beginning of the presentation. Do you want to continue at the end?"
-msgstr ""
+msgstr "%PRODUCTNAME ਇੰਪਰੈੱਸ ਡੌਕੂਮੈਂਟ ਦੇ ਸ਼ੁਰੂ ਉੱਤੇ ਪੁੱਜ ਗਿਆ ਹੈ। ਕੀ ਤੁਸੀਂ ਆਖੀਰ ਤੋਂ ਸ਼ੁਰੂ ਕਰਨਾ ਚਾਹੁੰਦੇ ਹੋ?"
 
 #: source/ui/annotations/annotations.src#STR_ANNOTATION_WRAP_FORWARD_DRAW.String.Text
 msgid  "%PRODUCTNAME Draw reached the end of the document. Do you want to continue at the beginning?"
-msgstr ""
+msgstr "%PRODUCTNAME ਡਰਾਅ ਡੌਕੂਮੈਂਟ ਦੇ ਅੰਤ ਉੱਤੇ ਪੁੱਜ ਗਿਆ ਹੈ। ਕੀ ਤੁਸੀਂ ਸ਼ੁਰੂ ਤੋਂ ਸ਼ੁਰੂ ਕਰਨਾ ਚਾਹੁੰਦੇ ਹੋ?"
 
 #: source/ui/annotations/annotations.src#STR_ANNOTATION_WRAP_BACKWARD_DRAW.String.Text
 msgid  "%PRODUCTNAME Draw reached the beginning of the document. Do you want to continue at the end?"
-msgstr ""
+msgstr "%PRODUCTNAME ਡਰਾਅ ਡੌਕੂਮੈਂਟ ਦੇ ਸ਼ੁਰੂ ਉੱਤੇ ਪੁੱਜ ਗਿਆ ਹੈ। ਕੀ ਤੁਸੀਂ ਆਖੀਰ ਤੋਂ ਸ਼ੁਰੂ ਕਰਨਾ ਚਾਹੁੰਦੇ ਹੋ?"
 
 #: source/ui/annotations/annotations.src#STR_ANNOTATION_UNDO_INSERT.String.Text
 msgid  "Insert Comment"
@@ -1428,8 +1428,8 @@ msgid  "~Table..."
 msgstr "ਟੇਬਲ(~T)..."
 
 #: source/ui/app/popup2_tmpl.src#RID_GRAPHIC_TABLE_POPUP.DUMMY.MenuItem.Text
-msgid  "Colu~mn"
-msgstr "ਕਾਲਮ(~m)"
+msgid  "~Cell"
+msgstr "ਸੈੱਲ(~C)"
 
 #: source/ui/app/popup2_tmpl.src#RID_GRAPHIC_TABLE_POPUP.DUMMY.SID_TABLE_MERGE_CELLS.MenuItem.Text
 msgid  "~Merge"
@@ -1451,6 +1451,10 @@ msgstr "ਕੇਂਦਰ(~E)"
 msgid  "~Bottom"
 msgstr "ਹੇਠਾਂ(~B)"
 
+#: source/ui/app/popup2_tmpl.src#RID_GRAPHIC_TABLE_POPUP.DUMMY.MenuItem.Text
+msgid  "~Row"
+msgstr "ਕਤਾਰ(~R)"
+
 #: source/ui/app/popup2_tmpl.src#RID_GRAPHIC_TABLE_POPUP.DUMMY.SID_TABLE_DISTRIBUTE_ROWS.MenuItem.Text
 msgid  "Space ~Equally"
 msgstr "ਬਰਾਬਰ ਸੰਨ੍ਹ(~E)"
@@ -1467,6 +1471,10 @@ msgstr "ਸ਼ਾਮਲ(~I)..."
 msgid  "~Delete"
 msgstr "ਹਟਾਓ(~D)"
 
+#: source/ui/app/popup2_tmpl.src#RID_GRAPHIC_TABLE_POPUP.DUMMY.MenuItem.Text
+msgid  "Colu~mn"
+msgstr "ਕਾਲਮ(~m)"
+
 #: source/ui/app/popup2_tmpl.src#RID_GRAPHIC_TABLE_POPUP.DUMMY.SID_TABLE_DISTRIBUTE_COLUMNS.MenuItem.Text
 msgid  "Space ~Equally"
 msgstr "ਬਰਾਬਰ ਸੰਨ੍ਹ(~E)"
@@ -1482,14 +1490,6 @@ msgstr "ਸ਼ਾਮਲ(~I)..."
 #: source/ui/app/popup2_tmpl.src#RID_GRAPHIC_TABLE_POPUP.DUMMY.SID_TABLE_DELETE_COL.MenuItem.Text
 msgid  "~Delete"
 msgstr "ਹਟਾਓ(~D)"
-
-#: source/ui/app/popup2_tmpl.src#RID_GRAPHIC_TABLE_POPUP.DUMMY.MenuItem.Text
-msgid  "~Cell"
-msgstr "ਸੈੱਲ(~C)"
-
-#: source/ui/app/popup2_tmpl.src#RID_GRAPHIC_TABLE_POPUP.DUMMY.MenuItem.Text
-msgid  "~Row"
-msgstr "ਕਤਾਰ(~R)"
 
 #: source/ui/app/strings.src#STR_DRAW_TOOLBOX.String.Text
 msgid  "Drawings Toolbar"
@@ -1617,7 +1617,7 @@ msgstr "ਢਾਂਚਾ"
 
 #: source/ui/app/strings.src#STR_NOTES_MODE.String.Text
 msgid  "Notes"
-msgstr "ਨੋਟਿਸ"
+msgstr "ਨੋਟ"
 
 #: source/ui/app/strings.src#STR_HANDOUT_MODE.String.Text
 msgid  "Handout"
@@ -1717,7 +1717,7 @@ msgstr "ਨੌਂ ਸਲਾਈਡਾਂ"
 
 #: source/ui/app/strings.src#STR_AUTOLAYOUT_NOTES.String.Text
 msgid  "Notes"
-msgstr "ਸੂਚਨਾ"
+msgstr "ਨੋਟਿਸ"
 
 #: source/ui/app/strings.src#STR_TRANSFORM.String.Text
 msgid  "transform"
@@ -1733,7 +1733,7 @@ msgstr "ਕਿਰਪਾ ਕਰਕੇ ਨਵੇਂ ਤੀਰਮੁੱਖ ਲਈ �
 
 #: source/ui/app/strings.src#STR_WARN_NAME_DUPLICATE.String.Text
 msgid  "The name chosen already exists. \nPlease enter another name."
-msgstr ""
+msgstr "ਨਾਂ ਪਹਿਲਾਂ ਹੀ ਮੌਜੂਦ ਹੈ।\nਵੱਖਰਾ ਨਾਂ ਚੁਣੋ ਜੀ।"
 
 #: source/ui/app/strings.src#STR_UNDO_ANIMATION.String.Text
 msgid  "Animation parameters"
@@ -1804,8 +1804,8 @@ msgid  "Insert slides"
 msgstr "ਸਲਾਈਡਾਂ ਸ਼ਾਮਿਲ"
 
 #: source/ui/app/strings.src#STR_ASK_DELETE_LAYER.String.Text
-msgid  "Are you sure you want to delete the level "$"?\nNote: All objects on this level will be deleted!"
-msgstr ""
+msgid  "Are you sure you want to delete the level \"$\"?\nNote: All objects on this level will be deleted!"
+msgstr "ਕੀ ਤੁਸੀਂ \"$\" ਪੱਧਰ ਹਟਾਉਣਾ ਚਾਹੁੰਦੇ ਹੋ?\nਸੂਚਨਾ:ਇਸ ਲੇਅਰ ਉੱਤੇ ਮੌਜੂਦ ਸਭ ਆਬਜੈਕਟ ਵੀ ਹਟਾਈਆਂ ਜਾਣਗੀਆਂ!"
 
 #: source/ui/app/strings.src#STR_ASK_DELETE_ALL_PICTURES.String.Text
 msgid  "Do you really want to delete all images?"
@@ -1853,7 +1853,7 @@ msgstr "ਟੈਕਸਟ ਫਰੇਮ ਸ਼ਾਮਿਲ"
 
 #: source/ui/app/strings.src#STR_ACTION_NOTPOSSIBLE.String.Text
 msgid  "This function cannot be run \nwith the selected objects."
-msgstr ""
+msgstr "ਇਹ ਫੰਕਸ਼ਨ ਚੁਣੀਆਂ ਆਬਜੈਕਟ ਨਾਲ\n ਨਹੀਂ ਚੱਲ ਸਕਦਾ ਹੈ।"
 
 #: source/ui/app/strings.src#STR_DLG_INSERT_PAGES_FROM_FILE.String.Text
 msgid  "Insert File"
@@ -1865,7 +1865,7 @@ msgstr "ਫਾਇਲ ਨੂੰ ਲੋਡ ਨਹੀਂ ਕੀਤਾ ਜਾ ਸਕ
 
 #: source/ui/app/strings.src#STR_SCALE_OBJECTS.String.Text
 msgid  "The format of the new pages will be adapted.\nDo you want to adapt the objects, too?"
-msgstr ""
+msgstr "ਨਵੇਂ ਸਫ਼ਿਆਂ ਦਾ ਫਾਰਮੈਟ ਸਵੀਕਾਰ ਕੀਤਾ ਜਾਵੇਗਾ।\nਕੀ ਤੁਸੀਂ ਆਬਜੈਕਟ ਨੂੰ ਵੀ ਪ੍ਰਾਪਤ ਕਰਨਾ ਚਾਹੁੰਦੇ ਹੋ?"
 
 #: source/ui/app/strings.src#STR_CREATE_PAGES.String.Text
 msgid  "Create slides"
@@ -1885,7 +1885,7 @@ msgstr "ਸੋਧ(~E)"
 
 #: source/ui/app/strings.src#RID_UNDO_DELETE_WARNING.FT_UNDO_DELETE_WARNING.FixedText.Text
 msgid  "This action deletes the list of actions that can\nbe undone. Previous changes made to the document are still valid,\nbut cannot be undone. Do you want to continue and\nthus assign the new slide design?"
-msgstr ""
+msgstr "ਇਹ ਕਾਰਵਾਈ ਨਾਲ ਕਾਰਵਾਈਆਂ ਦੀ ਸੂਚੀ ਹਟਾਈ ਜਾਵੇਗੀ,\nਜੋ ਕਿ ਵਾਪਸ ਕੀਤੀਆਂ ਜਾ ਸਕਦੀਆਂ ਹਨ। ਡੌਕੂਮੈਂਟ ਵਿੱਚ ਪਹਿਲਾਂ ਤਬਦੀਲੀਆਂ ਰਹਿਣਗੀਆਂ, ਪਰ\nਇਹਨਾਂ ਨੂੰ ਵਾਪਸ ਨਹੀਂ ਕੀਤਾ ਜਾ ਸਕੇਗਾ। ਕੀ ਤੁਸੀਂ ਜਾਰੀ ਰਹਿਣਾ ਚਾਹੁੰਦੇ ਹੋ ਅਤੇ\nਨਵਾਂ ਸਲਾਈਡ ਡਿਜ਼ਾਈਨ ਲਾਗੂ ਕਰਨਾ ਚਾਹੁੰਦੇ ਹੋ?"
 
 #: source/ui/app/strings.src#RID_UNDO_DELETE_WARNING.CB_UNDO_DELETE_DISABLE.CheckBox.Text
 msgid  "~Do not show this warning again"
@@ -1905,7 +1905,7 @@ msgstr "ਡੌਕੂਮੈਂਟ ਫਾਰਮੈਟ ਦਿੱਤੇ ਪਰਿੰ
 
 #: source/ui/app/strings.src#STR_REMOVE_LINK.String.Text
 msgid  "This graphic is linked to a document. \nDo you want to unlink the graphic in order to edit it?"
-msgstr ""
+msgstr "ਇਹ ਗਰਾਫਿਕਸ ਡੌਕੂਮੈਂਟ ਨਾਲ ਸਬੰਧਤ ਹੈ।\nਕੀ ਤੁਸੀਂ ਗਰਾਫਿਕਸ ਨੂੰ ਸੋਧਣ ਲਈ ਇਹ ਸਬੰਧ ਹਟਾਉਣ ਚਾਹੁੰਦੇ ਹੋ?"
 
 #: source/ui/app/strings.src#STR_IMPORT_GRFILTER_OPENERROR.String.Text
 msgid  "Graphics file cannot be opened"
@@ -2017,7 +2017,7 @@ msgstr " (ਆਉਟਲਾਈਨ)"
 
 #: source/ui/app/strings.src#STR_WARN_SCALE_FAIL.String.Text
 msgid  "The specified scale is invalid.\nDo you want to enter a new one?"
-msgstr ""
+msgstr "ਦਿੱਤਾ ਸਕੇਲ ਠੀਕ ਨਹੀਂ ਹੈ।\nਕੀ ਤੁਸੀਂ ਨਵਾਂ ਦੇਣਾ ਚਾਹੁੰਦੇ ਹੋ?"
 
 #: source/ui/app/strings.src#STR_CLICK_ACTION_NONE.String.Text
 msgid  "No action"
@@ -2265,7 +2265,7 @@ msgstr "ਬਿਨਾਂ ਐਕਸ਼ਟੈਂਸ਼ਨ ਦੇ ਫਾਇਲ ਨਾਂ"
 
 #: source/ui/app/strings.src#STR_RELEASE_GRAPHICLINK.String.Text
 msgid  "This graphic is linked to a document. Do you want to unlink the graphic in order to edit it?"
-msgstr ""
+msgstr "ਇਹ ਗਰਾਫਿਕਸ ਡੌਕੂਮੈਂਟ ਨਾਲ ਸਬੰਧਤ ਹੈ। ਕੀ ਤੁਸੀ ਗਰਾਫਿਕਸ ਵਿੱਚ ਸੋਧ ਕਰਨ ਲਈ ਲਿੰਕ ਨੂੰ ਹਟਾਉਣਾ ਚਾਹੁੰਦੇ ਹੋ?"
 
 #: source/ui/app/strings.src#STR_NEW_CUSTOMSHOW.String.Text
 msgid  "New Custom Slide Show"
@@ -2301,7 +2301,7 @@ msgstr "ਸਭ ਡਰਾਇੰਗ ਆਬਜੈਕਟ ਦਾ ਗਰੁੱਪ-ਵ�
 
 #: source/ui/app/strings.src#STR_PUBDLG_SAMENAME.String.Text
 msgid  "A design already exists with this name.\nDo you want to replace it?"
-msgstr ""
+msgstr "ਇਸ ਨਾਂ ਨਾਲ ਡਿਜ਼ਾਈਨ ਪਹਿਲਾਂ ਹੀ ਮੌਜੂਦ ਹੈ।\nਕੀ ਤੁਸੀਂ ਇਸ ਨੂੰ ਤਬਦੀਲ ਕਰਨਾ ਚਾਹੁੰਦੇ ਹੋ?"
 
 #: source/ui/app/strings.src#STR_HTMLATTR_TEXT.String.Text
 msgid  "Text"
@@ -2417,7 +2417,7 @@ msgstr "ਗਰਾਫਿਕਸ ਫਿਲਟਰ"
 
 #: source/ui/app/strings.src#STR_WARNING_NOSOUNDFILE.String.Text
 msgid  "The file %\nis not a valid sound file !"
-msgstr ""
+msgstr "ਫਾਇਲ %\n ਠੀਕ ਧੁਨੀ ਫਾਇਲ ਨਹੀਂ ਹੈ!"
 
 #: source/ui/app/strings.src#STR_UNDO_CONVERT_TO_METAFILE.String.Text
 msgid  "Convert to metafile"
@@ -2631,6 +2631,14 @@ msgstr ""
 msgid  "Insert Movie"
 msgstr ""
 
+#: source/ui/app/res_bmp.src#SfxStyleFamiliesRes1.#define.Text
+msgid  "Graphics Styles"
+msgstr "ਗਰਾਫਾਕਿਸ ਸਟਾਈਲ"
+
+#: source/ui/app/res_bmp.src#SfxStyleFamiliesRes2.#define.Text
+msgid  "Presentation Styles"
+msgstr "ਪਰਿਜੈੱਟੇਸ਼ਨ ਸਟਾਈਲ"
+
 #: source/ui/app/res_bmp.src#STR_STYLE_FILTER_USED.String.Text
 msgid  "Applied Styles"
 msgstr ""
@@ -2642,14 +2650,6 @@ msgstr ""
 #: source/ui/app/res_bmp.src#STR_STYLE_FILTER_ALL.String.Text
 msgid  "All Styles"
 msgstr ""
-
-#: source/ui/app/res_bmp.src#SfxStyleFamiliesRes1.#define.Text
-msgid  "Graphics Styles"
-msgstr "ਗਰਾਫਾਕਿਸ ਸਟਾਈਲ"
-
-#: source/ui/app/res_bmp.src#SfxStyleFamiliesRes2.#define.Text
-msgid  "Presentation Styles"
-msgstr "ਪਰਿਜੈੱਟੇਸ਼ਨ ਸਟਾਈਲ"
 
 #: source/ui/app/menuids_tmpl.src#MN_DISTRIBUTE.SID_DISTRIBUTE_DLG.MenuItem.Text
 msgid  "~Distribution..."
@@ -3328,8 +3328,8 @@ msgid  "~Table..."
 msgstr "ਟੇਬਲ(~T)..."
 
 #: source/ui/app/popup.src#RID_DRAW_TABLEOBJ_INSIDE_POPUP.DUMMY.MenuItem.Text
-msgid  "Colu~mn"
-msgstr "ਕਾਲਮ(~m)"
+msgid  "~Cell"
+msgstr "ਸੈੱਲ(~C)"
 
 #: source/ui/app/popup.src#RID_DRAW_TABLEOBJ_INSIDE_POPUP.DUMMY.SID_TABLE_MERGE_CELLS.MenuItem.Text
 msgid  "~Merge"
@@ -3351,9 +3351,13 @@ msgstr "ਕੇਂਦਰ(~E)"
 msgid  "~Bottom"
 msgstr "ਹੇਠਾਂ(~B)"
 
+#: source/ui/app/popup.src#RID_DRAW_TABLEOBJ_INSIDE_POPUP.DUMMY.MenuItem.Text
+msgid  "~Row"
+msgstr "ਕਤਾਰ(~R)"
+
 #: source/ui/app/popup.src#RID_DRAW_TABLEOBJ_INSIDE_POPUP.DUMMY.SID_TABLE_DISTRIBUTE_ROWS.MenuItem.Text
 msgid  "Space ~Equally"
-msgstr "ਬਰਾਬਰ ਥਾਂ(~E)"
+msgstr "ਬਰਾਬਰ ਸੰਨ੍ਹ(~E)"
 
 #: source/ui/app/popup.src#RID_DRAW_TABLEOBJ_INSIDE_POPUP.DUMMY.SID_TABLE_SELECT_ROW.MenuItem.Text
 msgid  "~Select"
@@ -3366,6 +3370,10 @@ msgstr "ਸ਼ਾਮਲ(~I)..."
 #: source/ui/app/popup.src#RID_DRAW_TABLEOBJ_INSIDE_POPUP.DUMMY.SID_TABLE_DELETE_ROW.MenuItem.Text
 msgid  "~Delete"
 msgstr "ਹਟਾਓ(~D)"
+
+#: source/ui/app/popup.src#RID_DRAW_TABLEOBJ_INSIDE_POPUP.DUMMY.MenuItem.Text
+msgid  "Colu~mn"
+msgstr "ਕਾਲਮ(~m)"
 
 #: source/ui/app/popup.src#RID_DRAW_TABLEOBJ_INSIDE_POPUP.DUMMY.SID_TABLE_DISTRIBUTE_COLUMNS.MenuItem.Text
 msgid  "Space ~Equally"
@@ -3397,19 +3405,19 @@ msgstr "ਲੇਅਰ ਹਟਾਓ(~L)..."
 
 #: source/ui/app/popup.src#RID_TASKPANE_MASTERPAGESSELECTOR_POPUP.SID_TP_APPLY_TO_ALL_SLIDES.MenuItem.Text
 msgid  "~Apply to All Slides"
-msgstr "ਸਭ ਸਲਾਈਡਾਂ 'ਤੇ ਲਾਗੂ(~A)"
+msgstr "ਸਭ ਸਲਾਈਡਾਂ ਉੱਤੇ ਲਾਗੂ ਕਰੋ(~A)"
 
 #: source/ui/app/popup.src#RID_TASKPANE_MASTERPAGESSELECTOR_POPUP.SID_TP_APPLY_TO_SELECTED_SLIDES.MenuItem.Text
 msgid  "Apply to ~Selected Slides"
-msgstr "ਚੁਣੀਆਂ ਸਲਾਈਡਾਂ 'ਤੇ ਲਾਗੂ(~S)"
+msgstr "ਚੁਣੀਆਂ ਸਲਾਈਡਾਂ ਉੱਤੇ ਲਾਗੂ ਕਰੋ(~S)"
 
 #: source/ui/app/popup.src#RID_TASKPANE_MASTERPAGESSELECTOR_POPUP.SID_TP_SHOW_LARGE_PREVIEW.MenuItem.Text
 msgid  "Show ~Large Preview"
-msgstr "ਵੱਡੀ ਝਲਕ ਵੇਖਾਓ(~L)"
+msgstr "ਵੱਡੀ ਝਲਕ ਵੇਖੋ(~L)"
 
 #: source/ui/app/popup.src#RID_TASKPANE_MASTERPAGESSELECTOR_POPUP.SID_TP_SHOW_SMALL_PREVIEW.MenuItem.Text
 msgid  "Show S~mall Preview"
-msgstr "ਛੋਟੀ ਝਲਕ ਵੇਖਾਓ(~M)"
+msgstr "ਛੋਟੀ ਝਲਕ ਵੇਖੋ(~m)"
 
 #: source/ui/app/popup.src#RID_TASKPANE_CURRENT_MASTERPAGESSELECTOR_POPUP.SID_TP_APPLY_TO_ALL_SLIDES.MenuItem.Text
 msgid  "~Apply to All Slides"
@@ -3439,33 +3447,25 @@ msgstr "ਚੁਣੀਆਂ ਸਲਾਈਡਾਂ 'ਤੇ ਲਾਗੂ(~S)"
 msgid  "~Insert Slide"
 msgstr "ਸਲਾਈਡ ਸ਼ਾਮਲ(~i)"
 
-#: source/ui/app/popup.src#RID_DRAW_TABLEOBJ_INSIDE_POPUP.DUMMY.MenuItem.Text
-msgid  "~Cell"
-msgstr "ਸੈੱਲ(~C)"
-
-#: source/ui/app/popup.src#RID_DRAW_TABLEOBJ_INSIDE_POPUP.DUMMY.MenuItem.Text
-msgid  "~Row"
-msgstr "ਕਤਾਰ(~R)"
-
 #: source/ui/app/sdstring.src#STR_SAR_NOT_FOUND.String.Text
 msgid  "Search key not found."
 msgstr "ਖੋਜ ਕੁੰਜੀ ਨਹੀਂ ਲੱਭੀ ਹੈ।"
 
 #: source/ui/app/sdstring.src#STR_SAR_WRAP_FORWARD.String.Text
 msgid  "%PRODUCTNAME Impress has searched to the end of the presentation. Do you want to continue at the beginning?"
-msgstr ""
+msgstr "%PRODUCTNAME ਇੰਪਰੈੱਸ ਡੌਕੂਮੈਂਟ ਦੇ ਅੰਤ ਉੱਤੇ ਪੁੱਜ ਗਿਆ ਹੈ। ਕੀ ਤੁਸੀਂ ਸ਼ੁਰੂ ਤੋਂ ਸ਼ੁਰੂ ਕਰਨਾ ਚਾਹੁੰਦੇ ਹੋ?"
 
 #: source/ui/app/sdstring.src#STR_SAR_WRAP_BACKWARD.String.Text
 msgid  "%PRODUCTNAME Impress has searched to the beginning of the presentation. Do you want to continue at the end?"
-msgstr ""
+msgstr "%PRODUCTNAME ਇੰਪਰੈੱਸ ਡੌਕੂਮੈਂਟ ਦੇ ਸ਼ੁਰੂ ਉੱਤੇ ਪੁੱਜ ਗਿਆ ਹੈ। ਕੀ ਤੁਸੀਂ ਆਖੀਰ ਤੋਂ ਸ਼ੁਰੂ ਕਰਨਾ ਚਾਹੁੰਦੇ ਹੋ?"
 
 #: source/ui/app/sdstring.src#STR_SAR_WRAP_FORWARD_DRAW.String.Text
 msgid  "%PRODUCTNAME Draw has searched to the end of the document. Do you want to continue at the beginning?"
-msgstr ""
+msgstr "%PRODUCTNAME ਡਰਾਅ ਦੇ ਅੰਤ ਉੱਤੇ ਪੁੱਜ ਗਿਆ ਹੈ। ਕੀ ਤੁਸੀਂ ਸ਼ੁਰੂ ਤੋਂ ਜਾਰੀ ਰੱਖਣਾ ਚਾਹੁੰਦੇ ਹੋ?"
 
 #: source/ui/app/sdstring.src#STR_SAR_WRAP_BACKWARD_DRAW.String.Text
 msgid  "%PRODUCTNAME Draw has searched to the beginning of the document. Do you want to continue at the end?"
-msgstr ""
+msgstr "%PRODUCTNAME ਡਰਾਅ ਡੌਕੂਮੈਂਟ ਦੇ ਸ਼ੁਰੂ ਉੱਤੇ ਪੁੱਜ ਗਿਆ ਹੈ। ਕੀ ਤੁਸੀਂ ਆਖੀਰ ਤੋਂ ਸ਼ੁਰੂ ਕਰਨਾ ਚਾਹੁੰਦੇ ਹੋ?"
 
 #: source/ui/app/menuids2_tmpl.src#MN_NEWDOCDIRECT.SID_NEWDOCDIRECT.MenuItem.Text
 msgid  "~New"
@@ -3486,6 +3486,10 @@ msgstr "ਭੇਜੋ(~D)"
 #: source/ui/app/menuids2_tmpl.src#MN_PAGESETUP.SID_PAGESETUP.MenuItem.Text
 msgid  "~Page..."
 msgstr "ਸਫ਼ਾ(~P)..."
+
+#: source/ui/app/menuids2_tmpl.src#20.#define.Text
+msgid  "~Edit"
+msgstr "ਸੋਧ(~E)"
 
 #: source/ui/app/menuids2_tmpl.src#MN_PASTE2.SID_PASTE2.MenuItem.Text
 msgid  "Paste ~Special..."
@@ -3510,6 +3514,10 @@ msgstr "ਲੇਅਰ ਹਟਾਓ(~L)..."
 #: source/ui/app/menuids2_tmpl.src#MN_MANAGE_LINKS.SID_MANAGE_LINKS.MenuItem.Text
 msgid  "Lin~ks..."
 msgstr "ਲਿੰਕ(~k)..."
+
+#: source/ui/app/menuids2_tmpl.src#23.#define.Text
+msgid  "~View"
+msgstr "ਵੇਖੋ(~V)"
 
 #: source/ui/app/menuids2_tmpl.src#MN_TOGGLETOOLBAR.SID_TOGGLETOOLBAR.MenuItem.Text
 msgid  "Main ~Toolbar"
@@ -3574,6 +3582,10 @@ msgstr "ਵਰਕ-ਸਪੇਸ(~k)"
 #: source/ui/app/menuids2_tmpl.src#MNSUB_MASTERPAGE.MN_SUB_MASTERPAGE.MenuItem.Text
 msgid  "~Master"
 msgstr "ਮਾਸਟਰ(~M)"
+
+#: source/ui/app/menuids2_tmpl.src#21.#define.Text
+msgid  "~Insert"
+msgstr "ਸ਼ਾਮਿਲ(~i)"
 
 #: source/ui/app/menuids2_tmpl.src#MN_INSERTPAGE.SID_INSERTPAGE.MenuItem.Text
 msgid  "Slid~e..."
@@ -3659,6 +3671,10 @@ msgstr "ਫਾਇਲ(~F)..."
 msgid  "Fiel~ds"
 msgstr "ਕਾਲਮ(~D)"
 
+#: source/ui/app/menuids2_tmpl.src#22.#define.Text
+msgid  "F~ormat"
+msgstr "ਫਾਰਮੈਟ(~O)"
+
 #: source/ui/app/menuids2_tmpl.src#MN_TEXTATTR_DLG.SID_TEXTATTR_DLG.MenuItem.Text
 msgid  "Te~xt..."
 msgstr "ਪਾਠ(~X)..."
@@ -3682,6 +3698,14 @@ msgstr "ਸੋਧਿਆ ਖਾਕਾ(~L)..."
 #: source/ui/app/menuids2_tmpl.src#MNSUB_TEMPLATES.MN_SUB_TEMPLATES.MenuItem.Text
 msgid  "Styl~es"
 msgstr "ਸਟਾਈਲ(~E)"
+
+#: source/ui/app/menuids2_tmpl.src#ITEM_TOOLS_ID.#define.Text
+msgid  "~Tools"
+msgstr "ਸੰਦ(~T)"
+
+#: source/ui/app/menuids2_tmpl.src#26.#define.Text
+msgid  "~Slide Show"
+msgstr "ਸਲਾਈਡ ਸ਼ੋ(~S)"
 
 #: source/ui/app/menuids2_tmpl.src#MN_SPELLING.SID_SPELL_DIALOG.MenuItem.Text
 msgid  "~Check..."
@@ -3722,6 +3746,10 @@ msgstr "ਸੰਪਰਕ(~i)..."
 #: source/ui/app/menuids2_tmpl.src#MNSUB_SPELLING.MN_SUB_SPELLING.MenuItem.Text
 msgid  "~Spellcheck"
 msgstr "ਸਪੈਲ ਚੈੱਕ ਕਰੋ(~s)"
+
+#: source/ui/app/menuids2_tmpl.src#24.#define.Text
+msgid  "~Modify"
+msgstr "ਸੋਧ(~M)"
 
 #: source/ui/app/menuids2_tmpl.src#MN_MOREFRONT.SID_MOREFRONT.MenuItem.Text
 msgid  "Bring ~Forward"
@@ -3794,34 +3822,6 @@ msgstr "ਡਿਸਪਲੇਅ ਕੁਆਲਟੀ(~D)"
 #: source/ui/app/menuids2_tmpl.src#MNSUB_PREVIEW_OUTPUT_QUALITY.MN_SUB_PREVIEW_OUTPUT_QUALITY.ItemList.Text
 msgid  "Pre~view Mode"
 msgstr "ਝਲਕ ਮੋਡ(~v)"
-
-#: source/ui/app/menuids2_tmpl.src#20.#define.Text
-msgid  "~Edit"
-msgstr "ਸੋਧ(~E)"
-
-#: source/ui/app/menuids2_tmpl.src#23.#define.Text
-msgid  "~View"
-msgstr "ਵੇਖੋ(~V)"
-
-#: source/ui/app/menuids2_tmpl.src#21.#define.Text
-msgid  "~Insert"
-msgstr "ਸ਼ਾਮਿਲ(~i)"
-
-#: source/ui/app/menuids2_tmpl.src#22.#define.Text
-msgid  "F~ormat"
-msgstr "ਫਾਰਮੈਟ(~O)"
-
-#: source/ui/app/menuids2_tmpl.src#ITEM_TOOLS_ID.#define.Text
-msgid  "~Tools"
-msgstr "ਸੰਦ(~T)"
-
-#: source/ui/app/menuids2_tmpl.src#26.#define.Text
-msgid  "~Slide Show"
-msgstr "ਸਲਾਈਡ ਸ਼ੋ(~S)"
-
-#: source/ui/app/menuids2_tmpl.src#24.#define.Text
-msgid  "~Modify"
-msgstr "ਸੋਧ(~M)"
 
 #: source/ui/dlg/sdpreslt.src#DLG_PRESLT.FT_LAYOUT.FixedText.Text
 msgid  "~Select a slide design"
@@ -4687,6 +4687,10 @@ msgstr "ਸਲਾਈਡ ਅੰਕ"
 msgid  "Master Elements"
 msgstr "ਮਾਸਟਰ ਐਲੀਮੈਂਟ"
 
+#: source/ui/dlg/tpoption.src#SCALE_TEXT.#define.Text
+msgid  "Scale"
+msgstr "ਸਕੇਲ"
+
 #: source/ui/dlg/tpoption.src#TP_OPTIONS_CONTENTS.TabPage.Text
 msgid  "Contents"
 msgstr "ਸਮੱਗਰੀ"
@@ -4802,10 +4806,6 @@ msgstr "ਸਫ਼ਾ ਚੌੜਾਈ(~w)"
 #: source/ui/dlg/tpoption.src#TP_OPTIONS_MISC.FT_PAGEHEIGHT.FixedText.Text
 msgid  "Page ~height"
 msgstr "ਸਫ਼ਾ ਉਚਾਈ(~h)"
-
-#: source/ui/dlg/tpoption.src#SCALE_TEXT.#define.Text
-msgid  "Scale"
-msgstr "ਸਕੇਲ"
 
 #: source/ui/dlg/morphdlg.src#DLG_MORPH.GRP_PRESET.FixedLine.Text
 msgid  "Settings"
@@ -5056,22 +5056,6 @@ msgid  "Alignment"
 msgstr "ਇਕਸਾਰਤਾ"
 
 #: source/ui/dlg/animobjs.src#FLT_WIN_ANIMATION.LB_ADJUSTMENT.Default.StringList.item
-msgid  "Bottom Right"
-msgstr "ਹੇਠਾਂ ਸੱਜਾ"
-
-#: source/ui/dlg/animobjs.src#FLT_WIN_ANIMATION.BTN_CREATE_GROUP.PushButton.Text
-msgid  "Create"
-msgstr "ਬਣਾਓ"
-
-#: source/ui/dlg/animobjs.src#FLT_WIN_ANIMATION.GRP_ANIMATION_GROUP.FixedLine.Text
-msgid  "Animation group"
-msgstr "ਐਨੀਮੇਸ਼ਨ ਗਰੁੱਪ"
-
-#: source/ui/dlg/animobjs.src#FLT_WIN_ANIMATION.STR_DISPLAY.String.Text
-msgid  "Preview"
-msgstr ""
-
-#: source/ui/dlg/animobjs.src#FLT_WIN_ANIMATION.LB_ADJUSTMENT.Default.StringList.item
 msgid  "Top Left"
 msgstr "ਉੱਤੋਂ ਖੱਬਾ"
 
@@ -5102,6 +5086,22 @@ msgstr "ਸੱਜਾ ਉੱਤੇ"
 #: source/ui/dlg/animobjs.src#FLT_WIN_ANIMATION.LB_ADJUSTMENT.Default.StringList.item
 msgid  "Right"
 msgstr "ਸੱਜਾ"
+
+#: source/ui/dlg/animobjs.src#FLT_WIN_ANIMATION.LB_ADJUSTMENT.Default.StringList.item
+msgid  "Bottom Right"
+msgstr "ਹੇਠਾਂ ਸੱਜਾ"
+
+#: source/ui/dlg/animobjs.src#FLT_WIN_ANIMATION.BTN_CREATE_GROUP.PushButton.Text
+msgid  "Create"
+msgstr "ਬਣਾਓ"
+
+#: source/ui/dlg/animobjs.src#FLT_WIN_ANIMATION.GRP_ANIMATION_GROUP.FixedLine.Text
+msgid  "Animation group"
+msgstr "ਐਨੀਮੇਸ਼ਨ ਗਰੁੱਪ"
+
+#: source/ui/dlg/animobjs.src#FLT_WIN_ANIMATION.STR_DISPLAY.String.Text
+msgid  "Preview"
+msgstr ""
 
 #: source/ui/dlg/prntopts.src#TP_PRINT_OPTIONS.TabPage.Text
 msgid  "Options"

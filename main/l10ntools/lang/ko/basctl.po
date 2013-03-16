@@ -137,7 +137,7 @@ msgstr "저장"
 
 #: source/basicide/basidesh.src#RID_STR_SOURCETOBIG.String.Text
 msgid  "The source text is too large and can be neither compiled nor saved.\nDelete some of the comments or transfer some methods into another module."
-msgstr ""
+msgstr "원본 텍스트가 너무 커서 저장 또는 컴파일이 불가능합니다.\n일부 주석을 삭제하거나, 몇몇 메소드를 다른 모듈로 옮기십시오."
 
 #: source/basicide/basidesh.src#RID_STR_ERROROPENSTORAGE.String.Text
 msgid  "Error opening file"
@@ -201,7 +201,7 @@ msgstr "파일'XX' 은 (는) 이미 존재합니다."
 
 #: source/basicide/basidesh.src#RID_STR_CANNOTRUNMACRO.String.Text
 msgid  "For security reasons, you cannot run this macro.\n\nFor more information, check the security settings."
-msgstr ""
+msgstr "보안상의 이유 때문에 이 매크로를 실행할 수 없습니다.\n\n자세한 내용을 보려면 보안 설정을 확인하십시오."
 
 #: source/basicide/basidesh.src#RID_STR_COMPILEERROR.String.Text
 msgid  "Compile Error: "
@@ -301,7 +301,7 @@ msgstr "매크로 모음"
 
 #: source/basicide/basidesh.src#RID_STR_CANNOTCLOSE.String.Text
 msgid  "The window cannot be closed while BASIC is running."
-msgstr ""
+msgstr "BASIC 프로그램이 진행되는 동안은 \n창을 닫을 수 없습니다."
 
 #: source/basicide/basidesh.src#RID_STR_REPLACESTDLIB.String.Text
 msgid  "The default library cannot be replaced."
@@ -373,7 +373,7 @@ msgstr "이름을 입력해야 합니다."
 
 #: source/basicide/basidesh.src#RID_STR_WILLSTOPPRG.String.Text
 msgid  "You will have to restart the program after this edit.\nContinue?"
-msgstr ""
+msgstr "편집한 후에는 프로그램을 다시 시작해야 합니다.\n계속하겠습니까?"
 
 #: source/basicide/basidesh.src#RID_STR_SEARCHALLMODULES.String.Text
 msgid  "Do you want to replace the text in all active modules?"
@@ -509,7 +509,7 @@ msgstr "대화 상자 가져오기 - 이미 사용 중인 이름"
 
 #: source/basicide/basidesh.src#RID_STR_DLGIMP_CLASH_TEXT.String.Text
 msgid  "The library already contains a dialog with the name:\n\n$(ARG1)\n\nRename dialog to keep current dialog or replace existing dialog.\n "
-msgstr ""
+msgstr "라이브러리에 같은 이름을 가진 대화 상자가 이미 있습니다.$(ARG1)이름을 바꾸어 현재 대화 상자를 유지하거나, 현재 대화 상자를 바꾸십시오. "
 
 #: source/basicide/basidesh.src#RID_STR_DLGIMP_MISMATCH_ADD.String.Text
 msgid  "Add"
@@ -525,7 +525,7 @@ msgstr "대화 상자 가져오기 - 언어 일치하지 않음"
 
 #: source/basicide/basidesh.src#RID_STR_DLGIMP_MISMATCH_TEXT.String.Text
 msgid  "The dialog to be imported supports other languages than the target library.\n\nAdd these languages to the library to keep additional language resources provided by the dialog or omit them to stay with the current library languages.\n\nNote: For languages not supported by the dialog the resources of the dialog's default language will be used.\n "
-msgstr ""
+msgstr "가져올 대화 상자가 대상 라이브러리와 다른 언어를 지원합니다.\n\n대화 상자가 제공하는 추가 언어를 언어를 라이브러이에 추가하여 추가적인 언어를 지원하게 하거나, 현재 라이브러리 언어를 유지하기 위해 제외하세요.\n\n참고: 대화 상자가 지원하지 않는 언어를 위해, 대화 상자의 기본 언어가 사용됩니다.\n "
 
 #: source/basicide/basicprint.src#RID_PRINTDLG_STRLIST.item1.ItemList.item
 msgid  "Print range"
@@ -633,7 +633,7 @@ msgstr "새로 만들기(~N)..."
 
 #: source/basicide/moduldlg.src#RID_TP_MODULS.RID_PB_DELETE.PushButton.Text
 msgid  "~Delete"
-msgstr "삭제(~D)"
+msgstr "삭제(~D)..."
 
 #: source/basicide/moduldlg.src#RID_TP_DLGS.RID_STR_LIB.FixedText.Text
 msgid  "Dialog"
@@ -757,7 +757,7 @@ msgstr "기본값"
 
 #: source/dlged/managelang.src#RID_DLG_MANAGE_LANGUAGE.FT_INFO.FixedText.Text
 msgid  "The default language is used if no localization for a user interface locale is present. Furthermore all strings from the default language are copied to resources of newly added languages."
-msgstr ""
+msgstr "사용자 인터페이스 로케일에 대한 지역화 버전이 없으면 기본 언어가 사용됩니다. 또한 기본 언어의 모든 문자열이 새로 추가된 언어의 자원에 복사됩니다."
 
 #: source/dlged/managelang.src#RID_DLG_MANAGE_LANGUAGE.PB_CLOSE.OKButton.Text
 msgid  "~Close"
@@ -781,7 +781,7 @@ msgstr "언어 자원 삭제"
 
 #: source/dlged/managelang.src#RID_QRYBOX_LANGUAGE.QueryBox.Message
 msgid  "You are about to delete the resources for the selected language(s). All user interface strings for this language(s) will be deleted.\n\nDo you want to delete the resources of the selected language(s)?"
-msgstr ""
+msgstr "선택한 언어의 자원을 삭제하려고 합니다. 이 언어의 모든 사용자 인터페이스 문자열이 삭제됩니다.\n\n선택한 언어의 자원을 삭제하시겠습니까?"
 
 #: source/dlged/managelang.src#RID_DLG_SETDEF_LANGUAGE.ModalDialog.Text
 msgid  "Set Default User Interface Language"
@@ -793,7 +793,7 @@ msgstr "기본 언어"
 
 #: source/dlged/managelang.src#RID_DLG_SETDEF_LANGUAGE.FT_DEF_INFO.FixedText.Text
 msgid  "Select a language to define the default user interface language. All currently present strings will be assigned to the resources created for the selected language."
-msgstr ""
+msgstr "기본 사용자 인터페이스 언어를 정의하려면 언어를 선택하십시오. 현재 모든 문자열이 선택된 언어에 대해 생성된 자원에 할당됩니다."
 
 #: source/dlged/managelang.src#RID_DLG_SETDEF_LANGUAGE.STR_ADDLANG_TITLE.String.Text
 msgid  "Add User Interface Languages"
@@ -805,7 +805,7 @@ msgstr "사용 가능한 언어"
 
 #: source/dlged/managelang.src#RID_DLG_SETDEF_LANGUAGE.STR_ADDLANG_INFO.String.Text
 msgid  "Select languages to be added. Resources for these languages will be created in the library. Strings of the current default user interface language will be copied to these new resources by default."
-msgstr ""
+msgstr "추가할 언어를 선택하십시오. 라이브러리에 이러한 언어의 자원이 생성됩니다. 기본적으로 현재 기본 사용자 인터페이스 언어의 문자열이 이 새 자원에 복사됩니다."
 
 #: source/dlged/dlgresid.src#RID_STR_BRWTITLE_PROPERTIES.String.Text
 msgid  "Properties: "

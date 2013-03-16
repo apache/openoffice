@@ -31,6 +31,10 @@ msgstr ""
 "X-Generator: genLang\n"
 
 
+#: source/customize/selector.src#FIXEDTEXT_DIALOG_DESCRIPTION.#define.Text
+msgid  "Select the library that contains the macro you want. Then select the macro under 'Macro name'."
+msgstr ""
+
 #: source/customize/selector.src#STR_SELECTOR_ADD_COMMANDS.String.TEXT
 msgid  "Add Commands"
 msgstr "കമാന്‍ഡുകള്‍ ചേര്‍ക്കുക"
@@ -91,8 +95,40 @@ msgstr "മാക്രോ നാമം"
 msgid  "Description"
 msgstr "വിശദീകരണം"
 
-#: source/customize/selector.src#FIXEDTEXT_DIALOG_DESCRIPTION.#define.Text
-msgid  "Select the library that contains the macro you want. Then select the macro under 'Macro name'."
+#: source/customize/acccfg.src#PUSHBUTTON_TEXT_SAVE.#define.Text
+msgid  "~Save..."
+msgstr ""
+
+#: source/customize/acccfg.src#PUSHBUTTON_TEXT_RESET.#define.Text
+msgid  "R~eset"
+msgstr ""
+
+#: source/customize/acccfg.src#PUSHBUTTON_TEXT_LOAD.#define.Text
+msgid  "~Load..."
+msgstr ""
+
+#: source/customize/acccfg.src#PUSHBUTTON_TEXT_REMOVE.#define.Text
+msgid  "~Delete"
+msgstr "വെട്ടി നീക്കുക"
+
+#: source/customize/acccfg.src#PUSHBUTTON_TEXT_CHANGE.#define.Text
+msgid  "~Modify"
+msgstr ""
+
+#: source/customize/acccfg.src#PUSHBUTTON_TEXT_NEW.#define.Text
+msgid  "~New"
+msgstr ""
+
+#: source/customize/acccfg.src#FIXEDTEXT_TEXT_GROUP.#define.Text
+msgid  "~Category"
+msgstr "~വിഭാഗം"
+
+#: source/customize/acccfg.src#FIXEDTEXT_TEXT_FUNCTION.#define.Text
+msgid  "Function"
+msgstr ""
+
+#: source/customize/acccfg.src#GROUPBOX_TEXT_FUNCTIONS.#define.Text
+msgid  "Functions"
 msgstr ""
 
 #: source/customize/acccfg.src#RID_SVXPAGE_KEYBOARD.GRP_ACC_KEYBOARD.FixedLine.Text
@@ -134,42 +170,6 @@ msgstr "%PRODUCTNAME മാക്രോകള്‍"
 #: source/customize/acccfg.src#RID_SVXPAGE_CONFIGGROUPBOX.STR_GROUP_STYLES.String.Text
 msgid  "Styles"
 msgstr "ശൈലികള്‍"
-
-#: source/customize/acccfg.src#PUSHBUTTON_TEXT_SAVE.#define.Text
-msgid  "~Save..."
-msgstr ""
-
-#: source/customize/acccfg.src#PUSHBUTTON_TEXT_RESET.#define.Text
-msgid  "R~eset"
-msgstr ""
-
-#: source/customize/acccfg.src#PUSHBUTTON_TEXT_LOAD.#define.Text
-msgid  "~Load..."
-msgstr ""
-
-#: source/customize/acccfg.src#PUSHBUTTON_TEXT_REMOVE.#define.Text
-msgid  "~Delete"
-msgstr "വെട്ടി നീക്കുക"
-
-#: source/customize/acccfg.src#PUSHBUTTON_TEXT_CHANGE.#define.Text
-msgid  "~Modify"
-msgstr ""
-
-#: source/customize/acccfg.src#PUSHBUTTON_TEXT_NEW.#define.Text
-msgid  "~New"
-msgstr ""
-
-#: source/customize/acccfg.src#FIXEDTEXT_TEXT_GROUP.#define.Text
-msgid  "~Category"
-msgstr "~വിഭാഗം"
-
-#: source/customize/acccfg.src#FIXEDTEXT_TEXT_FUNCTION.#define.Text
-msgid  "Function"
-msgstr ""
-
-#: source/customize/acccfg.src#GROUPBOX_TEXT_FUNCTIONS.#define.Text
-msgid  "Functions"
-msgstr ""
 
 #: source/customize/eventdlg.src#RID_SVXPAGE_EVENTS.STR_EVENT.String.Text
 msgid  "Event"
@@ -465,7 +465,7 @@ msgstr ""
 
 #: source/customize/macropg.src#RID_SVXSTR_EVENT_COPYTODOC.String.Text
 msgid  "Storing or exporting copy of document"
-msgstr ""
+msgstr "രേഖയുടെ പകര്‍പ്പു് സൂക്ഷിക്കുന്നു അല്ലെങ്കില്‍ എക്സ്പോര്‍ട്ട് ചെയ്യുന്നു"
 
 #: source/customize/macropg.src#RID_SVXSTR_EVENT_COPYTODOCDONE.String.Text
 msgid  "Document copy has been created"
@@ -546,6 +546,50 @@ msgstr "ടൂള്‍ബാര്‍"
 #: source/customize/cfg.src#RID_SVXDLG_CUSTOMIZE.1.RID_SVXPAGE_EVENTS.PageItem.Text
 msgid  "Events"
 msgstr "ഇവന്റുകള്‍"
+
+#: source/customize/cfg.src#TEXT_MENU.#define.Text
+msgid  "Menu"
+msgstr "മെനു"
+
+#: source/customize/cfg.src#TEXT_BEGIN_GROUP.#define.Text
+msgid  "Begin a Group"
+msgstr ""
+
+#: source/customize/cfg.src#TEXT_RENAME.#define.Text
+msgid  "Rename..."
+msgstr "പേരു് മാറ്റുക..."
+
+#: source/customize/cfg.src#TEXT_DELETE.#define.Text
+msgid  "Delete..."
+msgstr "വെട്ടി നീക്കുക..."
+
+#: source/customize/cfg.src#TEXT_DELETE_NODOTS.#define.Text
+msgid  "Delete"
+msgstr "വെട്ടി നീക്കുക"
+
+#: source/customize/cfg.src#TEXT_MOVE.#define.Text
+msgid  "Move..."
+msgstr "നീക്കുക..."
+
+#: source/customize/cfg.src#TEXT_DEFAULT_STYLE.#define.Text
+msgid  "Restore Default Settings"
+msgstr "സ്വതവേയുള്ള സജ്ജീകരണങ്ങള്‍ വീണ്ടെടുക്കുക"
+
+#: source/customize/cfg.src#TEXT_DEFAULT_COMMAND.#define.Text
+msgid  "Restore Default Command"
+msgstr "സ്വതവേയുള്ള കമാന്‍ഡ് വീണ്ടെടുക്കുക"
+
+#: source/customize/cfg.src#TEXT_TEXT_ONLY.#define.Text
+msgid  "Text only"
+msgstr "പദാവലി മാത്രം"
+
+#: source/customize/cfg.src#TEXT_TOOLBAR_NAME.#define.Text
+msgid  "Toolbar Name"
+msgstr "ടൂള്‍ബാര്‍ നാമം"
+
+#: source/customize/cfg.src#TEXT_SAVE_IN.#define.Text
+msgid  "Save In"
+msgstr "സൂക്ഷിക്കേണ്ടതു്"
 
 #: source/customize/cfg.src#RID_SVXPAGE_MENUS.GRP_MENUS.FixedLine.Text
 msgid  "%PRODUCTNAME %MODULENAME Menus"
@@ -750,50 +794,6 @@ msgstr ""
 #: source/customize/cfg.src#BUTTON_STR_DOWN.String.Text
 msgid  "Down"
 msgstr ""
-
-#: source/customize/cfg.src#TEXT_MENU.#define.Text
-msgid  "Menu"
-msgstr "മെനു"
-
-#: source/customize/cfg.src#TEXT_BEGIN_GROUP.#define.Text
-msgid  "Begin a Group"
-msgstr ""
-
-#: source/customize/cfg.src#TEXT_RENAME.#define.Text
-msgid  "Rename..."
-msgstr "പേരു് മാറ്റുക..."
-
-#: source/customize/cfg.src#TEXT_DELETE.#define.Text
-msgid  "Delete..."
-msgstr "വെട്ടി നീക്കുക..."
-
-#: source/customize/cfg.src#TEXT_DELETE_NODOTS.#define.Text
-msgid  "Delete"
-msgstr "വെട്ടി നീക്കുക"
-
-#: source/customize/cfg.src#TEXT_MOVE.#define.Text
-msgid  "Move..."
-msgstr "നീക്കുക..."
-
-#: source/customize/cfg.src#TEXT_DEFAULT_STYLE.#define.Text
-msgid  "Restore Default Settings"
-msgstr "സ്വതവേയുള്ള സജ്ജീകരണങ്ങള്‍ വീണ്ടെടുക്കുക"
-
-#: source/customize/cfg.src#TEXT_DEFAULT_COMMAND.#define.Text
-msgid  "Restore Default Command"
-msgstr "സ്വതവേയുള്ള കമാന്‍ഡ് വീണ്ടെടുക്കുക"
-
-#: source/customize/cfg.src#TEXT_TEXT_ONLY.#define.Text
-msgid  "Text only"
-msgstr "പദാവലി മാത്രം"
-
-#: source/customize/cfg.src#TEXT_TOOLBAR_NAME.#define.Text
-msgid  "Toolbar Name"
-msgstr "ടൂള്‍ബാര്‍ നാമം"
-
-#: source/customize/cfg.src#TEXT_SAVE_IN.#define.Text
-msgid  "Save In"
-msgstr "സൂക്ഷിക്കേണ്ടതു്"
 
 #: source/dialogs/commonlingui.src#RID_SVX_WND_COMMON_LINGU.FT_WORD.FixedText.Text
 msgid  "Origi~nal"
@@ -1248,6 +1248,10 @@ msgid  "F~orm"
 msgstr "~ഫോം"
 
 #: source/dialogs/hyperdlg.src#RID_SVXPAGE_HYPERLINK_INTERNET.LB_FORM.Default.StringList.item
+msgid  "Text"
+msgstr "വാചകം"
+
+#: source/dialogs/hyperdlg.src#RID_SVXPAGE_HYPERLINK_INTERNET.LB_FORM.Default.StringList.item
 msgid  "Button"
 msgstr "ബട്ടണ്‍"
 
@@ -1310,6 +1314,10 @@ msgstr "~ഫ്രെയിം"
 #: source/dialogs/hyperdlg.src#RID_SVXPAGE_HYPERLINK_MAIL.FT_FORM.FixedText.Text
 msgid  "F~orm"
 msgstr "~ഫോം"
+
+#: source/dialogs/hyperdlg.src#RID_SVXPAGE_HYPERLINK_MAIL.LB_FORM.Default.StringList.item
+msgid  "Text"
+msgstr "വാചകം"
 
 #: source/dialogs/hyperdlg.src#RID_SVXPAGE_HYPERLINK_MAIL.LB_FORM.Default.StringList.item
 msgid  "Button"
@@ -1388,6 +1396,10 @@ msgid  "F~orm"
 msgstr "~ഫോം"
 
 #: source/dialogs/hyperdlg.src#RID_SVXPAGE_HYPERLINK_DOCUMENT.LB_FORM.Default.StringList.item
+msgid  "Text"
+msgstr "വാചകം"
+
+#: source/dialogs/hyperdlg.src#RID_SVXPAGE_HYPERLINK_DOCUMENT.LB_FORM.Default.StringList.item
 msgid  "Button"
 msgstr "ബട്ടണ്‍"
 
@@ -1452,6 +1464,10 @@ msgid  "F~orm"
 msgstr "~ഫോം"
 
 #: source/dialogs/hyperdlg.src#RID_SVXPAGE_HYPERLINK_NEWDOCUMENT.LB_FORM.Default.StringList.item
+msgid  "Text"
+msgstr "വാചകം"
+
+#: source/dialogs/hyperdlg.src#RID_SVXPAGE_HYPERLINK_NEWDOCUMENT.LB_FORM.Default.StringList.item
 msgid  "Button"
 msgstr "ബട്ടണ്‍"
 
@@ -1505,7 +1521,7 @@ msgstr "ഇന്റര്‍നെറ്റ്"
 
 #: source/dialogs/hyperdlg.src#RID_SVXSTR_HYPERDLG_HLINETTP_HELP.String.Text
 msgid  "This is where you create a hyperlink to a Web page, FTP server or Telnet connection."
-msgstr ""
+msgstr "ഇവിടെയാണ‌് താങ്കള്  വെബ്പേജിന‌് , FTP സെര്‌വറിന‌് അഥവാ ടെല്നെറ്റ് കണക്ഷന‌് ഹൈപ്പര്‌ലിങ്ക് സൃഷ്ടിച്ചത്."
 
 #: source/dialogs/hyperdlg.src#RID_SVXSTR_HYPERDLG_HLMAILTP.String.Text
 msgid  "Mail & News"
@@ -1513,7 +1529,7 @@ msgstr "മെയിലും വാര്ത്തയും"
 
 #: source/dialogs/hyperdlg.src#RID_SVXSTR_HYPERDLG_HLMAILTP_HELP.String.Text
 msgid  "This is where you create a hyperlink to an e-mail address or newsgroup."
-msgstr ""
+msgstr "ഇവിടെയാണ‍് താങ്കള് ഇ-മെയില് മേല്വിലാസത്തിന‍്അഥവാ വാര്ത്താവിഭാഗത്തിന‍് ഹൈപ്പര് ലിങ്ക് സൃഷ്ടിക്കുന്നത്."
 
 #: source/dialogs/hyperdlg.src#RID_SVXSTR_HYPERDLG_HLDOCTP.String.Text
 msgid  "Document"
@@ -1521,7 +1537,7 @@ msgstr " ഡോക്കുമെന്റ്"
 
 #: source/dialogs/hyperdlg.src#RID_SVXSTR_HYPERDLG_HLDOCTP_HELP.String.Text
 msgid  "This is where you create a hyperlink to an existing document or a target within a document."
-msgstr ""
+msgstr "ഇവിടെയാണ‍് താങ്കള് നിലവിലുള്ള  ഡോക്കുമെന്റിനുവേണ്ടി അഥവാ ലക്ഷ്യമായ ഡോക്കുമെന്റിന‍ുവേണ്ടി ഹൈപ്പര്്ലിങ്ക്  സൃഷ്ടിച്ചത്"
 
 #: source/dialogs/hyperdlg.src#RID_SVXSTR_HYPERDLG_HLDOCNTP.String.Text
 msgid  "New Document"
@@ -1529,7 +1545,7 @@ msgstr "പുതിയ ഡോക്കുമെന്റ്്"
 
 #: source/dialogs/hyperdlg.src#RID_SVXSTR_HYPERDLG_HLDOCNTP_HELP.String.Text
 msgid  "This is where you create a new document to which the new link points."
-msgstr ""
+msgstr "ഇവിടെയാണ‍് പുതിയ ബിന്ദുക്കള് ബന്ധിപ്പിക്കുന്ന പുതിയ ഡോക്കുമെന്റ് താങ്കള് സൃഷ്ടിച്ചത്."
 
 #: source/dialogs/hyperdlg.src#RID_SVXSTR_HYPERDLG_FORM_BUTTON.String.Text
 msgid  "Button"
@@ -1542,22 +1558,6 @@ msgstr "വാചകം"
 #: source/dialogs/hyperdlg.src#RID_SVXSTR_HYPERDLG_QUERYOVERWRITE.String.Text
 msgid  "The file already exists. Overwrite?"
 msgstr "ഫയല് നിലവിലുണ്ട്. വീണ്ടും എഴുതണോ ?"
-
-#: source/dialogs/hyperdlg.src#RID_SVXPAGE_HYPERLINK_INTERNET.LB_FORM.Default.StringList.item
-msgid  "Text"
-msgstr "വാചകം"
-
-#: source/dialogs/hyperdlg.src#RID_SVXPAGE_HYPERLINK_MAIL.LB_FORM.Default.StringList.item
-msgid  "Text"
-msgstr "വാചകം"
-
-#: source/dialogs/hyperdlg.src#RID_SVXPAGE_HYPERLINK_DOCUMENT.LB_FORM.Default.StringList.item
-msgid  "Text"
-msgstr "വാചകം"
-
-#: source/dialogs/hyperdlg.src#RID_SVXPAGE_HYPERLINK_NEWDOCUMENT.LB_FORM.Default.StringList.item
-msgid  "Text"
-msgstr "വാചകം"
 
 #: source/dialogs/passwdomdlg.src#RID_DLG_PASSWORD_TO_OPEN_MODIFY.ModalDialog.Text
 msgid  "Set Password"
@@ -1885,15 +1885,13 @@ msgstr ""
 
 #: source/dialogs/hyphen.src#RID_SVXSTR_HMERR_CHECKINSTALL.String.Text
 msgid  "is not available for spellchecking\nPlease check your installation and install the desired language\n"
-msgstr ""
+msgstr "...ശബ്ദപരിശോധനയ്ക്ക് ലഭ്യമല്ല \nദയവായി താങ്കള് സ്ഥാപിച്ചത് പരിശോധിക്കുകയും ആവശ്യമായ ഭാഷ  സ്ഥാപിക്കുക. \n"
 
 #: source/dialogs/hyphen.src#RID_SVXDLG_HYPHENATE.ModalDialog.Text
-#, fuzzy
 msgid  "Hyphenation"
 msgstr "ഹൈഫനേഷന്‍"
 
 #: source/dialogs/hyphen.src#RID_SVXDLG_HYPHENATE.FT_WORD.FixedText.Text
-#, fuzzy
 msgid  "~Word"
 msgstr "വാക്ക്"
 
@@ -1906,7 +1904,6 @@ msgid  "~Skip"
 msgstr ""
 
 #: source/dialogs/hyphen.src#RID_SVXDLG_HYPHENATE.BTN_HYPH_DELETE.PushButton.Text
-#, fuzzy
 msgid  "~Remove"
 msgstr "~നീക്കം ചെയ്യുക"
 
@@ -1915,27 +1912,22 @@ msgid  "Hyphenate ~All"
 msgstr ""
 
 #: source/dialogs/hyphen.src#RID_SVXDLG_HYPHENATE.BTN_HYPH_CANCEL.CancelButton.Text
-#, fuzzy
 msgid  "~Close"
 msgstr "അടയ്ക്കുക"
 
 #: source/dialogs/tbxform.src#RID_SVX_DLG_INPUTRECORDNO.ModalDialog.Text
-#, fuzzy
 msgid  "Record Number"
 msgstr "റിക്കോര്ഡിന്റെ ക്രമസംഖ്യ"
 
 #: source/dialogs/tbxform.src#RID_SVX_DLG_INPUTRECORDNO.1.FixedText.Text
-#, fuzzy
 msgid  "go to record"
 msgstr "റിക്കോര്ഡിലേക്ക് പോകുക"
 
 #: source/dialogs/multipat.src#RID_SVXDLG_MULTIPATH.ModalDialog.Text
-#, fuzzy
 msgid  "Select Paths"
 msgstr "മാര്ഗ്ഗങ്ങള് തിരഞ്ഞെടുക്കുക"
 
 #: source/dialogs/multipat.src#RID_SVXDLG_MULTIPATH.FL_MULTIPATH.FixedLine.Text
-#, fuzzy
 msgid  "Paths"
 msgstr "മാര്ഗ്ഗം"
 
@@ -1944,12 +1936,10 @@ msgid  "Mark the default path for new files."
 msgstr ""
 
 #: source/dialogs/multipat.src#RID_SVXDLG_MULTIPATH.BTN_ADD_MULTIPATH.PushButton.Text
-#, fuzzy
 msgid  "~Add..."
 msgstr "~ചേര്‍ക്കുക..."
 
 #: source/dialogs/multipat.src#RID_SVXDLG_MULTIPATH.BTN_DEL_MULTIPATH.PushButton.Text
-#, fuzzy
 msgid  "~Delete"
 msgstr "~വെട്ടി നീക്കുക"
 
@@ -1958,32 +1948,26 @@ msgid  "Path list"
 msgstr ""
 
 #: source/dialogs/multipat.src#RID_MULTIPATH_DBL_ERR.String.Text
-#, fuzzy
 msgid  "The path %1 already exists."
 msgstr "നേരത്തെ നിലവിലുള്ള  %1 മാര്ഗ്ഗം"
 
 #: source/dialogs/multipat.src#RID_SVXSTR_FILE_TITLE.String.Text
-#, fuzzy
 msgid  "Select files"
 msgstr "ഫയലുകള് തിരഞ്ഞെടുക്കുക"
 
 #: source/dialogs/multipat.src#RID_SVXSTR_FILE_HEADLINE.String.Text
-#, fuzzy
 msgid  "Files"
 msgstr "ഫയലുകള്"
 
 #: source/dialogs/multipat.src#RID_SVXSTR_ARCHIVE_TITLE.String.Text
-#, fuzzy
 msgid  "Select Archives"
 msgstr "ആര്ക്കീവ്സ് തിരഞ്ഞെടുക്കുക"
 
 #: source/dialogs/multipat.src#RID_SVXSTR_ARCHIVE_HEADLINE.String.Text
-#, fuzzy
 msgid  "Archives"
 msgstr "ആര്ക്കീവ്സ്"
 
 #: source/dialogs/multipat.src#RID_SVXSTR_MULTIFILE_DBL_ERR.String.Text
-#, fuzzy
 msgid  "The file %1 already exists."
 msgstr "നേരത്ത നിലവിലുള്ള %1 ഫയല്"
 
@@ -1992,7 +1976,6 @@ msgid  "Paste Special"
 msgstr ""
 
 #: source/dialogs/svuidlg.src#MD_PASTE_OBJECT.FT_SOURCE.FixedText.Text
-#, fuzzy
 msgid  "Source:"
 msgstr "ഉറവിടം:"
 
@@ -2009,62 +1992,50 @@ msgid  "~As icon"
 msgstr ""
 
 #: source/dialogs/svuidlg.src#MD_PASTE_OBJECT.PB_CHANGE_ICON.PushButton.Text
-#, fuzzy
 msgid  "~Other Icon..."
 msgstr "~മറ്റു് ചിഹ്നങ്ങള്‍..."
 
 #: source/dialogs/svuidlg.src#MD_PASTE_OBJECT.FL_CHOICE.FixedLine.Text
-#, fuzzy
 msgid  "Selection"
 msgstr "തെരഞ്ഞെടുക്കല്‍"
 
 #: source/dialogs/svuidlg.src#MD_PASTE_OBJECT.S_OBJECT.String.Text
-#, fuzzy
 msgid  "Object"
 msgstr "ഒബ്ജക്ട്"
 
 #: source/dialogs/svuidlg.src#MD_UPDATE_BASELINKS.ModalDialog.Text
-#, fuzzy
 msgid  "Edit Links"
 msgstr "കണ്ണികള്‍ ചിട്ടപ്പെടുത്തുക"
 
 #: source/dialogs/svuidlg.src#MD_UPDATE_BASELINKS.FT_FILES.FixedText.Text
-#, fuzzy
 msgid  "Source file"
 msgstr "ഉറവിടത്തിന്റെ ഫയല്‍"
 
 #: source/dialogs/svuidlg.src#MD_UPDATE_BASELINKS.FT_LINKS.FixedText.Text
-#, fuzzy
 msgid  "Element:"
 msgstr "എലമെന്റ്:"
 
 #: source/dialogs/svuidlg.src#MD_UPDATE_BASELINKS.FT_TYPE.FixedText.Text
-#, fuzzy
 msgid  "Type"
 msgstr "തരം"
 
 #: source/dialogs/svuidlg.src#MD_UPDATE_BASELINKS.FT_STATUS.FixedText.Text
-#, fuzzy
 msgid  "Status"
 msgstr "അവസ്ഥ"
 
 #: source/dialogs/svuidlg.src#MD_UPDATE_BASELINKS.1.CancelButton.Text
-#, fuzzy
 msgid  "~Close"
 msgstr "~അടയ്ക്കുക"
 
 #: source/dialogs/svuidlg.src#MD_UPDATE_BASELINKS.PB_UPDATE_NOW.PushButton.Text
-#, fuzzy
 msgid  "~Update"
 msgstr "~പരിഷ്കരിക്കുക"
 
 #: source/dialogs/svuidlg.src#MD_UPDATE_BASELINKS.PB_OPEN_SOURCE.PushButton.Text
-#, fuzzy
 msgid  "~Open"
 msgstr "~തുറക്കുക"
 
 #: source/dialogs/svuidlg.src#MD_UPDATE_BASELINKS.PB_CHANGE_SOURCE.PushButton.Text
-#, fuzzy
 msgid  "~Modify..."
 msgstr "~മാറ്റം വരുത്തുക..."
 
@@ -2073,77 +2044,62 @@ msgid  "~Break Link"
 msgstr ""
 
 #: source/dialogs/svuidlg.src#MD_UPDATE_BASELINKS.FT_FILES2.FixedText.Text
-#, fuzzy
 msgid  "Source file"
 msgstr "ഉറവിടത്തിന്റെ ഫയല്‍"
 
 #: source/dialogs/svuidlg.src#MD_UPDATE_BASELINKS.FT_SOURCE2.FixedText.Text
-#, fuzzy
 msgid  "Element:"
 msgstr "എലമെന്റ്:"
 
 #: source/dialogs/svuidlg.src#MD_UPDATE_BASELINKS.FT_TYPE2.FixedText.Text
-#, fuzzy
 msgid  "Type:"
 msgstr "തരം:"
 
 #: source/dialogs/svuidlg.src#MD_UPDATE_BASELINKS.FT_UPDATE.FixedText.Text
-#, fuzzy
 msgid  "Update:"
 msgstr "പരിഷ്കരണം:"
 
 #: source/dialogs/svuidlg.src#MD_UPDATE_BASELINKS.RB_AUTOMATIC.RadioButton.Text
-#, fuzzy
 msgid  "~Automatic"
 msgstr "~ഓട്ടോമാറ്റിക്"
 
 #: source/dialogs/svuidlg.src#MD_UPDATE_BASELINKS.RB_MANUAL.RadioButton.Text
-#, fuzzy
 msgid  "Ma~nual"
 msgstr "മാനു~വല്‍"
 
 #: source/dialogs/svuidlg.src#MD_UPDATE_BASELINKS.STR_AUTOLINK.String.Text
-#, fuzzy
 msgid  "Automatic"
 msgstr "ഓട്ടോമാറ്റിക്"
 
 #: source/dialogs/svuidlg.src#MD_UPDATE_BASELINKS.STR_MANUALLINK.String.Text
-#, fuzzy
 msgid  "Manual"
 msgstr "മാനുവല്‍"
 
 #: source/dialogs/svuidlg.src#MD_UPDATE_BASELINKS.STR_BROKENLINK.String.Text
-#, fuzzy
 msgid  "Not available"
 msgstr "ലഭ്യമല്ല"
 
 #: source/dialogs/svuidlg.src#MD_UPDATE_BASELINKS.STR_GRAPHICLINK.String.Text
-#, fuzzy
 msgid  "Graphic"
 msgstr "ഗ്രാഫിക്"
 
 #: source/dialogs/svuidlg.src#MD_UPDATE_BASELINKS.STR_BUTTONCLOSE.String.Text
-#, fuzzy
 msgid  "~Close"
 msgstr "~അടയ്ക്കുക"
 
 #: source/dialogs/svuidlg.src#MD_UPDATE_BASELINKS.STR_CLOSELINKMSG.String.Text
-#, fuzzy
 msgid  "Are you sure you want to remove the selected link?"
 msgstr "തെരഞ്ഞെടുത്ത കണ്ണി നീക്കം ചെയ്യണമോ?"
 
 #: source/dialogs/svuidlg.src#MD_UPDATE_BASELINKS.STR_CLOSELINKMSG_MULTI.String.Text
-#, fuzzy
 msgid  "Are you sure you want to remove the selected link?"
 msgstr "തെരഞ്ഞെടുത്ത കണ്ണി നീക്കം ചെയ്യണമോ?"
 
 #: source/dialogs/svuidlg.src#MD_UPDATE_BASELINKS.STR_WAITINGLINK.String.Text
-#, fuzzy
 msgid  "Waiting"
 msgstr "കാത്തിരിക്കുന്നു"
 
 #: source/dialogs/svuidlg.src#MD_LINKEDIT.ModalDialog.Text
-#, fuzzy
 msgid  "Modify Link"
 msgstr "കണ്ണിയില്‍ മാറ്റം വരുത്തുക"
 
@@ -2152,27 +2108,22 @@ msgid  "Exchange source:"
 msgstr ""
 
 #: source/dialogs/svuidlg.src#MD_LINKEDIT.ED_FULL_SOURCE_NAME.Edit.Text
-#, fuzzy
 msgid  "Edit"
 msgstr "ചിട്ടപ്പെടുത്തുക"
 
 #: source/dialogs/svuidlg.src#MD_INSERT_OLEOBJECT.RB_NEW_OBJECT.RadioButton.Text
-#, fuzzy
 msgid  "~Create new"
 msgstr "പുതിയതു് ~നിര്‍മ്മിക്കുക"
 
 #: source/dialogs/svuidlg.src#MD_INSERT_OLEOBJECT.RB_OBJECT_FROMFILE.RadioButton.Text
-#, fuzzy
 msgid  "Create from ~file"
 msgstr "~ഫയലില്‍ നിന്നും നിര്‍മ്മിക്കുക"
 
 #: source/dialogs/svuidlg.src#MD_INSERT_OLEOBJECT.BTN_FILEPATH.PushButton.Text
-#, fuzzy
 msgid  "~Search..."
 msgstr "~അന്വേഷിക്കുക..."
 
 #: source/dialogs/svuidlg.src#MD_INSERT_OLEOBJECT.CB_FILELINK.CheckBox.Text
-#, fuzzy
 msgid  "~Link to file"
 msgstr "ഫയലിലേക്ക് ~ബന്ധപ്പെടുത്തുക"
 
@@ -2181,132 +2132,106 @@ msgid  "Object type"
 msgstr ""
 
 #: source/dialogs/svuidlg.src#MD_INSERT_OLEOBJECT.STR_FILE.String.Text
-#, fuzzy
 msgid  "File"
 msgstr "ഫയല്‍"
 
 #: source/dialogs/svuidlg.src#MD_INSERT_OLEOBJECT.String.Text
-#, fuzzy
 msgid  "Insert OLE Object"
 msgstr "OLE ഒബ്ജക്ട് ചേര്‍ക്കുക"
 
 #: source/dialogs/svuidlg.src#MD_INSERT_OBJECT_PLUGIN.BTN_FILEURL.PushButton.Text
-#, fuzzy
 msgid  "~Browse..."
 msgstr "~തെരയുക..."
 
 #: source/dialogs/svuidlg.src#MD_INSERT_OBJECT_PLUGIN.GB_FILEURL.FixedLine.Text
-#, fuzzy
 msgid  "File / URL"
 msgstr "ഫയല്‍ / യുആര്‍എല്‍"
 
 #: source/dialogs/svuidlg.src#MD_INSERT_OBJECT_PLUGIN.GB_PLUGINS_OPTIONS.FixedLine.Text
-#, fuzzy
 msgid  "Options"
 msgstr "ഉപാധികള്‍"
 
 #: source/dialogs/svuidlg.src#MD_INSERT_OBJECT_PLUGIN.HelpButton.Text
-#, fuzzy
 msgid  "Insert Plug-in"
 msgstr "പ്ലഗിന്‍ ചേര്‍ക്കുക"
 
 #: source/dialogs/svuidlg.src#MD_INSERT_OBJECT_APPLET.FT_CLASSFILE.FixedText.Text
-#, fuzzy
 msgid  "~Class"
 msgstr "~ക്ലാസ്സ്"
 
 #: source/dialogs/svuidlg.src#MD_INSERT_OBJECT_APPLET.FT_CLASSLOCATION.FixedText.Text
-#, fuzzy
 msgid  "Class ~Location"
 msgstr "ക്ലാസ്സിന്റെ ~സ്ഥാനം"
 
 #: source/dialogs/svuidlg.src#MD_INSERT_OBJECT_APPLET.BTN_CLASS.PushButton.Text
-#, fuzzy
 msgid  "~Search..."
 msgstr "~അന്വേഷിക്കുക..."
 
 #: source/dialogs/svuidlg.src#MD_INSERT_OBJECT_APPLET.GB_CLASS.FixedLine.Text
-#, fuzzy
 msgid  "File"
 msgstr "ഫയല്‍"
 
 #: source/dialogs/svuidlg.src#MD_INSERT_OBJECT_APPLET.GB_APPLET_OPTIONS.FixedLine.Text
-#, fuzzy
 msgid  "Options"
 msgstr "ഉപാധികള്‍"
 
 #: source/dialogs/svuidlg.src#MD_INSERT_OBJECT_APPLET.HelpButton.Text
-#, fuzzy
 msgid  "Insert Applet"
 msgstr "ആപ്ലെറ്റ് ചേര്‍ക്കുക"
 
 #: source/dialogs/svuidlg.src#MD_INSERT_OBJECT_IFRAME.ModalDialog.Text
-#, fuzzy
 msgid  "Floating Frame Properties"
 msgstr "ഫ്ലോട്ടിങ് ഫ്രെയിം വിശേഷതകള്‍"
 
 #: source/dialogs/svuidlg.src#MD_INSERT_OBJECT_IFRAME.FT_FRAMENAME.FixedText.Text
-#, fuzzy
 msgid  "~Name"
 msgstr "~പേരു്"
 
 #: source/dialogs/svuidlg.src#MD_INSERT_OBJECT_IFRAME.FT_URL.FixedText.Text
-#, fuzzy
 msgid  "~Contents"
 msgstr "~ഉള്ളടക്കം"
 
 #: source/dialogs/svuidlg.src#MD_INSERT_OBJECT_IFRAME.RB_SCROLLINGON.RadioButton.Text
-#, fuzzy
 msgid  "~On"
 msgstr "~ഓണ്‍ ചെയ്യുക"
 
 #: source/dialogs/svuidlg.src#MD_INSERT_OBJECT_IFRAME.RB_SCROLLINGOFF.RadioButton.Text
-#, fuzzy
 msgid  "O~ff"
 msgstr "ഓഫ് ~ചെയ്യുക"
 
 #: source/dialogs/svuidlg.src#MD_INSERT_OBJECT_IFRAME.RB_SCROLLINGAUTO.RadioButton.Text
-#, fuzzy
 msgid  "Au~tomatic"
 msgstr "ഓട്ടോ~മാറ്റിക്"
 
 #: source/dialogs/svuidlg.src#MD_INSERT_OBJECT_IFRAME.GB_SCROLLING.FixedLine.Text
-#, fuzzy
 msgid  "Scroll bar"
 msgstr "സ്ക്രോള്‍ ബാര്‍"
 
 #: source/dialogs/svuidlg.src#MD_INSERT_OBJECT_IFRAME.RB_FRMBORDER_ON.RadioButton.Text
-#, fuzzy
 msgid  "On"
 msgstr "ഓണ്‍ ചെയ്യുക"
 
 #: source/dialogs/svuidlg.src#MD_INSERT_OBJECT_IFRAME.RB_FRMBORDER_OFF.RadioButton.Text
-#, fuzzy
 msgid  "Off"
 msgstr "ഓഫ് ചെയ്യുക"
 
 #: source/dialogs/svuidlg.src#MD_INSERT_OBJECT_IFRAME.GB_BORDER.FixedLine.Text
-#, fuzzy
 msgid  "Border"
 msgstr "അതിരു്"
 
 #: source/dialogs/svuidlg.src#MD_INSERT_OBJECT_IFRAME.FT_MARGINWIDTH.FixedText.Text
-#, fuzzy
 msgid  "~Width"
 msgstr "~വീതി"
 
 #: source/dialogs/svuidlg.src#MD_INSERT_OBJECT_IFRAME.CB_MARGINWIDTHDEFAULT.CheckBox.Text
-#, fuzzy
 msgid  "~Default"
 msgstr "~സ്വതവേയുള്ള"
 
 #: source/dialogs/svuidlg.src#MD_INSERT_OBJECT_IFRAME.FT_MARGINHEIGHT.FixedText.Text
-#, fuzzy
 msgid  "H~eight"
 msgstr "ഉ~യരം"
 
 #: source/dialogs/svuidlg.src#MD_INSERT_OBJECT_IFRAME.CB_MARGINHEIGHTDEFAULT.CheckBox.Text
-#, fuzzy
 msgid  "Defa~ult"
 msgstr "സ്വതവേ~യുള്ള"
 
@@ -2319,42 +2244,34 @@ msgid  "Select File for Floating Frame"
 msgstr ""
 
 #: source/dialogs/svuidlg.src#STR_EDIT_APPLET.String.Text
-#, fuzzy
 msgid  "Edit Applet"
 msgstr "ആപ്ലെറ്റ് ചിട്ടപ്പെടുത്തുക"
 
 #: source/dialogs/sdrcelldlg.src#RID_SVX_FORMAT_CELLS_DLG.TabDialog.Text
-#, fuzzy
 msgid  "Format Cells"
 msgstr "സെല്ലുകള്‍ ഫോര്‍മാറ്റ് ചെയ്യുക"
 
 #: source/dialogs/sdrcelldlg.src#RID_SVX_FORMAT_CELLS_DLG.1.RID_SVXPAGE_CHAR_NAME.PageItem.Text
-#, fuzzy
 msgid  "Font"
 msgstr "അക്ഷരസഞ്ചയം"
 
 #: source/dialogs/sdrcelldlg.src#RID_SVX_FORMAT_CELLS_DLG.1.RID_SVXPAGE_CHAR_EFFECTS.PageItem.Text
-#, fuzzy
 msgid  "Font Effects"
 msgstr "അക്ഷരസഞ്ചയ പ്രഭാവങ്ങള്‍"
 
 #: source/dialogs/sdrcelldlg.src#RID_SVX_FORMAT_CELLS_DLG.1.RID_SVXPAGE_BORDER.PageItem.Text
-#, fuzzy
 msgid  "Borders"
 msgstr "അതിരുകള്‍"
 
 #: source/dialogs/sdrcelldlg.src#RID_SVX_FORMAT_CELLS_DLG.1.RID_SVXPAGE_AREA.PageItem.Text
-#, fuzzy
 msgid  "Background"
 msgstr "പശ്ചാത്തലം"
 
 #: source/dialogs/sdrcelldlg.src#RID_SVX_FORMAT_CELLS_DLG.1.PushButton.Text
-#, fuzzy
 msgid  "Return"
 msgstr "തിരികെ"
 
 #: source/dialogs/splitcelldlg.src#RID_SVX_SPLITCELLDLG.ModalDialog.Text
-#, fuzzy
 msgid  "Split Cells"
 msgstr "സെല്ലുകള്‍ വേര്‍തിരിക്കുക"
 
@@ -2363,12 +2280,10 @@ msgid  "~Split cell into"
 msgstr ""
 
 #: source/dialogs/splitcelldlg.src#RID_SVX_SPLITCELLDLG.FL_COUNT.FixedLine.Text
-#, fuzzy
 msgid  "Split"
 msgstr "വേര്‍തിരിക്കുക"
 
 #: source/dialogs/splitcelldlg.src#RID_SVX_SPLITCELLDLG.RB_HORZ.ImageRadioButton.Text
-#, fuzzy
 msgid  "H~orizontally"
 msgstr "കുറു~കെ"
 
@@ -2377,87 +2292,70 @@ msgid  "~Into equal proportions"
 msgstr ""
 
 #: source/dialogs/splitcelldlg.src#RID_SVX_SPLITCELLDLG.RB_VERT.ImageRadioButton.Text
-#, fuzzy
 msgid  "~Vertically"
 msgstr "~നേരെ"
 
 #: source/dialogs/splitcelldlg.src#RID_SVX_SPLITCELLDLG.FL_DIR.FixedLine.Text
-#, fuzzy
 msgid  "Direction"
 msgstr "ദിശ"
 
 #: source/dialogs/postdlg.src#RID_SVXDLG_POSTIT.ModalDialog.Text
-#, fuzzy
 msgid  "Note"
 msgstr "കുറിപ്പു്"
 
 #: source/dialogs/postdlg.src#RID_SVXDLG_POSTIT.FT_LASTEDITLABEL.FixedText.Text
-#, fuzzy
 msgid  "Author"
 msgstr "രചയിതാവു്"
 
 #: source/dialogs/postdlg.src#RID_SVXDLG_POSTIT.FT_EDIT.FixedText.Text
-#, fuzzy
 msgid  "~Text"
 msgstr "~പദാവലി"
 
 #: source/dialogs/postdlg.src#RID_SVXDLG_POSTIT.FL_POSTIT.FixedLine.Text
-#, fuzzy
 msgid  "Contents"
 msgstr "ഉള്ളടക്കം"
 
 #: source/dialogs/postdlg.src#RID_SVXDLG_POSTIT.FT_AUTHOR.FixedText.Text
-#, fuzzy
 msgid  "~Insert"
 msgstr "~ചേര്‍ക്കുക"
 
 #: source/dialogs/postdlg.src#RID_SVXDLG_POSTIT.BTN_AUTHOR.PushButton.Text
-#, fuzzy
 msgid  "Author"
 msgstr "രചയിതാവു്"
 
 #: source/dialogs/postdlg.src#RID_SVXDLG_POSTIT.STR_NOTIZ_EDIT.String.Text
-#, fuzzy
 msgid  "Edit Note"
 msgstr "കുറിപ്പു് ചിട്ടപ്പെടുത്തുക"
 
 #: source/dialogs/postdlg.src#RID_SVXDLG_POSTIT.STR_NOTIZ_INSERT.String.Text
-#, fuzzy
 msgid  "Insert note"
 msgstr "കുറിപ്പു് ചേര്‍ക്കുക"
 
 #: source/dialogs/srchxtra.src#RID_SVXDLG_SEARCHFORMAT.TabDialog.Text
-#, fuzzy
 msgid  "Text Format"
 msgstr "പദാവലി മാതൃക"
 
 #: source/dialogs/srchxtra.src#RID_SVXDLG_SEARCHFORMAT.1.RID_SVXPAGE_CHAR_NAME.PageItem.Text
-#, fuzzy
 msgid  "Font"
 msgstr "അക്ഷരസഞ്ചയം"
 
 #: source/dialogs/srchxtra.src#RID_SVXDLG_SEARCHFORMAT.1.RID_SVXPAGE_CHAR_EFFECTS.PageItem.Text
-#, fuzzy
 msgid  "Font Effects"
 msgstr "അക്ഷരസഞ്ചയ പ്രഭാവങ്ങള്‍"
 
 #: source/dialogs/srchxtra.src#RID_SVXDLG_SEARCHFORMAT.1.RID_SVXPAGE_CHAR_POSITION.PageItem.Text
-#, fuzzy
 msgid  "Position"
 msgstr "സ്ഥാനം"
 
 #: source/dialogs/srchxtra.src#RID_SVXDLG_SEARCHFORMAT.1.RID_SVXPAGE_CHAR_TWOLINES.PageItem.Text
-#, fuzzy
 msgid  "Asian Layout"
 msgstr "ഏഷ്യന്‍ ശൈലി"
 
 #: source/dialogs/srchxtra.src#RID_SVXDLG_SEARCHFORMAT.1.RID_SVXPAGE_STD_PARAGRAPH.PageItem.Text
-#, fuzzy
 msgid  "Indents & Spacing"
 msgstr "ഇന്‍ഡന്റും സ്പെയിസിങും"
 
 #: source/dialogs/srchxtra.src#RID_SVXDLG_SEARCHFORMAT.1.RID_SVXPAGE_ALIGN_PARAGRAPH.PageItem.Text
-#, fuzzy
 msgid  "Alignment"
 msgstr "ക്രമീകരണം"
 
@@ -2466,27 +2364,22 @@ msgid  "Text Flow"
 msgstr ""
 
 #: source/dialogs/srchxtra.src#RID_SVXDLG_SEARCHFORMAT.1.RID_SVXPAGE_PARA_ASIAN.PageItem.Text
-#, fuzzy
 msgid  "Asian Typography"
 msgstr "ഏഷ്യന്‍ ടൈപ്പോഗ്രഫി"
 
 #: source/dialogs/srchxtra.src#RID_SVXDLG_SEARCHFORMAT.1.RID_SVXPAGE_BACKGROUND.PageItem.Text
-#, fuzzy
 msgid  "Background"
 msgstr "പശ്ചാത്തലം"
 
 #: source/dialogs/srchxtra.src#RID_SVXDLG_SEARCHATTR.ModalDialog.Text
-#, fuzzy
 msgid  "Attributes"
 msgstr "സവിശേഷതകള്‍"
 
 #: source/dialogs/srchxtra.src#RID_SVXDLG_SEARCHATTR.FL_ATTR.FixedText.Text
-#, fuzzy
 msgid  "~Options"
 msgstr "~ഉപാധികള്‍"
 
 #: source/dialogs/srchxtra.src#RID_SVXDLG_SEARCHSIMILARITY.ModalDialog.Text
-#, fuzzy
 msgid  "Similarity Search"
 msgstr "സമാനത പരിശോധിക്കുക"
 
@@ -2495,27 +2388,22 @@ msgid  "~Exchange characters"
 msgstr ""
 
 #: source/dialogs/srchxtra.src#RID_SVXDLG_SEARCHSIMILARITY.FT_LONGER.FixedText.Text
-#, fuzzy
 msgid  "~Add characters"
 msgstr "അക്ഷരങ്ങള്‍ ~ചേര്‍ക്കുക"
 
 #: source/dialogs/srchxtra.src#RID_SVXDLG_SEARCHSIMILARITY.FT_SHORTER.FixedText.Text
-#, fuzzy
 msgid  "~Remove characters"
 msgstr "അക്ഷരങ്ങള്‍ ~നീക്കം ചെയ്യുക"
 
 #: source/dialogs/srchxtra.src#RID_SVXDLG_SEARCHSIMILARITY.CB_RELAX.CheckBox.Text
-#, fuzzy
 msgid  "~Combine"
 msgstr "~കൂട്ടി ചേര്‍ക്കുക"
 
 #: source/dialogs/srchxtra.src#RID_SVXDLG_SEARCHSIMILARITY.FL_SIMILARITY.FixedLine.Text
-#, fuzzy
 msgid  "Settings"
 msgstr "സജ്ജീകരണങ്ങള്‍"
 
 #: source/dialogs/insrc.src#DLG_INS_ROW_COL.ModalDialog.Text
-#, fuzzy
 msgid  "Insert"
 msgstr "ഇടയ്ക്ക് ചേര്‍ക്കുക"
 
@@ -2524,22 +2412,18 @@ msgid  "~Before"
 msgstr ""
 
 #: source/dialogs/insrc.src#DLG_INS_ROW_COL.CB_POS_AFTER.RadioButton.Text
-#, fuzzy
 msgid  "A~fter"
 msgstr "ശേഷം"
 
 #: source/dialogs/insrc.src#DLG_INS_ROW_COL.FL_INS.FixedLine.Text
-#, fuzzy
 msgid  "Insert"
 msgstr "ഇടയ്ക്ക് ചേര്‍ക്കുക"
 
 #: source/dialogs/insrc.src#DLG_INS_ROW_COL.FL_POS.FixedLine.Text
-#, fuzzy
 msgid  "Position"
 msgstr "സ്ഥാനം"
 
 #: source/dialogs/insrc.src#DLG_INS_ROW_COL.FT_COUNT.FixedText.Text
-#, fuzzy
 msgid  "~Number"
 msgstr "തുക"
 
@@ -2548,37 +2432,30 @@ msgid  " Rows"
 msgstr ""
 
 #: source/dialogs/insrc.src#DLG_INS_ROW_COL.STR_COL.String.Text
-#, fuzzy
 msgid  " Columns"
 msgstr " സ്തംഭങ്ങള്"
 
 #: source/dialogs/dlgname.src#RID_SVXDLG_NAME.ModalDialog.Text
-#, fuzzy
 msgid  "Name"
 msgstr "പേരു്"
 
 #: source/dialogs/dlgname.src#RID_SVXDLG_OBJECT_NAME.ModalDialog.Text
-#, fuzzy
 msgid  "Name"
 msgstr "പേരു്"
 
 #: source/dialogs/dlgname.src#RID_SVXDLG_OBJECT_NAME.NTD_FT_NAME.FixedText.Text
-#, fuzzy
 msgid  "~Name"
 msgstr "~പേരു്"
 
 #: source/dialogs/dlgname.src#RID_SVXDLG_OBJECT_TITLE_DESC.ModalDialog.Text
-#, fuzzy
 msgid  "Description"
 msgstr "വിശദീകരണം"
 
 #: source/dialogs/dlgname.src#RID_SVXDLG_OBJECT_TITLE_DESC.NTD_FT_TITLE.FixedText.Text
-#, fuzzy
 msgid  "~Title"
 msgstr "~തലക്കെട്ട്"
 
 #: source/dialogs/dlgname.src#RID_SVXDLG_OBJECT_TITLE_DESC.NTD_FT_DESC.FixedText.Text
-#, fuzzy
 msgid  "~Description"
 msgstr "~വിശദീകരണം"
 
@@ -2587,17 +2464,14 @@ msgid  "Properties"
 msgstr ""
 
 #: source/dialogs/cuiimapdlg.src#RID_SVXDLG_IMAPURL.FT_URL1.FixedText.Text
-#, fuzzy
 msgid  "~URL"
 msgstr "URL"
 
 #: source/dialogs/cuiimapdlg.src#RID_SVXDLG_IMAPURL.FT_TARGET.FixedText.Text
-#, fuzzy
 msgid  "F~rame"
 msgstr "~ഫ്രെയിം"
 
 #: source/dialogs/cuiimapdlg.src#RID_SVXDLG_IMAPURL.FT_NAME.FixedText.Text
-#, fuzzy
 msgid  "~Name"
 msgstr "~പേരു്"
 
@@ -2606,7 +2480,6 @@ msgid  "Alternative ~text"
 msgstr ""
 
 #: source/dialogs/cuiimapdlg.src#RID_SVXDLG_IMAPURL.FT_DESCRIPTION.FixedText.Text
-#, fuzzy
 msgid  "~Description"
 msgstr "~വിശദീകരണം"
 
@@ -2675,17 +2548,14 @@ msgid  "~Key"
 msgstr ""
 
 #: source/dialogs/iconcdlg.src#RID_SVXSTR_ICONCHOICEDLG_RESETBUT.String.Text
-#, fuzzy
 msgid  "~Back"
 msgstr "~പുറകോട്ട്"
 
 #: source/dialogs/zoom.src#RID_SVXDLG_ZOOM.ModalDialog.Text
-#, fuzzy
 msgid  "Zoom & View Layout"
 msgstr "മാതൃക കണ്ടു് വലിപ്പം മാറ്റുക "
 
 #: source/dialogs/zoom.src#RID_SVXDLG_ZOOM.FL_ZOOM.FixedLine.Text
-#, fuzzy
 msgid  "Zoom factor"
 msgstr "സൂം ഫാക്ടര്‍"
 
@@ -2694,17 +2564,14 @@ msgid  "~Optimal"
 msgstr ""
 
 #: source/dialogs/zoom.src#RID_SVXDLG_ZOOM.BTN_WHOLE_PAGE.RadioButton.Text
-#, fuzzy
 msgid  "~Fit width and height"
 msgstr "വീതിയും ഉയരവും ~പാകത്തിനാക്കുക"
 
 #: source/dialogs/zoom.src#RID_SVXDLG_ZOOM.BTN_PAGE_WIDTH.RadioButton.Text
-#, fuzzy
 msgid  "Fit ~width"
 msgstr "~വീതി പാകത്തിനാക്കുക"
 
 #: source/dialogs/zoom.src#RID_SVXDLG_ZOOM.BTN_USER.RadioButton.Text
-#, fuzzy
 msgid  "~Variable"
 msgstr "~വേരിയബിള്‍"
 
@@ -2713,7 +2580,6 @@ msgid  "View layout"
 msgstr ""
 
 #: source/dialogs/zoom.src#RID_SVXDLG_ZOOM.BTN_AUTOMATIC.RadioButton.Text
-#, fuzzy
 msgid  "~Automatic"
 msgstr "~ഓട്ടോമാറ്റിക്"
 
@@ -2722,7 +2588,6 @@ msgid  "~Single page"
 msgstr ""
 
 #: source/dialogs/zoom.src#RID_SVXDLG_ZOOM.BTN_COLUMNS.RadioButton.Text
-#, fuzzy
 msgid  "~Columns"
 msgstr " സ്തംഭങ്ങള്"
 
@@ -2732,145 +2597,117 @@ msgstr ""
 
 #: source/dialogs/showcols.src#RID_SVX_DLG_SHOWGRIDCOLUMNS.1.FixedText.Text
 msgid  "The following columns are currently hidden. Please mark the fields you want to show and choose OK."
-msgstr ""
+msgstr "തന്നിരിക്കുന്ന സ്തംഭങ്ങള് ഇപ്പോള് മറച്ചിരിക്കുകയാണ‌്. ദയവായി താങ്കള്ക്ക് പ്രദര്ശിപ്പിക്കേണ്ട മണ്ഡലങ്ങള്  അടയാളപ്പെടുത്തുകയും OK തിരഞ്ഞെടുക്കുകയും ചെയ്യുക."
 
 #: source/dialogs/showcols.src#RID_SVX_DLG_SHOWGRIDCOLUMNS.CancelButton.Text
-#, fuzzy
 msgid  "Show columns"
 msgstr "സ്തംഭങ്ങല് കാണിക്കുക"
 
 #: source/dialogs/fmsearch.src#RID_SVXDLG_SEARCHFORM.ModalDialog.Text
-#, fuzzy
 msgid  "Record Search"
 msgstr "റിക്കോര്ഡ് അന്വേഷിക്കുക"
 
 #: source/dialogs/fmsearch.src#RID_SVXDLG_SEARCHFORM.FL_SEARCHFOR.FixedLine.Text
-#, fuzzy
 msgid  "Search for"
 msgstr "അന്വേഷിക്കുക"
 
 #: source/dialogs/fmsearch.src#RID_SVXDLG_SEARCHFORM.RB_SEARCHFORTEXT.RadioButton.Text
-#, fuzzy
 msgid  "~Text"
 msgstr "ടെക്സ്റ്റ്"
 
 #: source/dialogs/fmsearch.src#RID_SVXDLG_SEARCHFORM.RB_SEARCHFORNULL.RadioButton.Text
-#, fuzzy
 msgid  "Field content is ~NULL"
 msgstr "മണ്ഡല ഉള്ളടക്കം NU~LL ആണ‍്"
 
 #: source/dialogs/fmsearch.src#RID_SVXDLG_SEARCHFORM.RB_SEARCHFORNOTNULL.RadioButton.Text
-#, fuzzy
 msgid  "Field content is not NU~LL"
 msgstr "മണ്ഡല ഉള്ളടക്കം NU~LL അല്ല"
 
 #: source/dialogs/fmsearch.src#RID_SVXDLG_SEARCHFORM.FL_WHERE.FixedLine.Text
-#, fuzzy
 msgid  "Where to search"
 msgstr "എവിടെ അന്വേഷിക്കണം"
 
 #: source/dialogs/fmsearch.src#RID_SVXDLG_SEARCHFORM.FT_FORM.FixedText.Text
-#, fuzzy
 msgid  "Form"
 msgstr "ഫോം"
 
 #: source/dialogs/fmsearch.src#RID_SVXDLG_SEARCHFORM.RB_ALLFIELDS.RadioButton.Text
-#, fuzzy
 msgid  "All Fields"
 msgstr "എല്ലാ മണ്ഡലവും"
 
 #: source/dialogs/fmsearch.src#RID_SVXDLG_SEARCHFORM.RB_SINGLEFIELD.RadioButton.Text
-#, fuzzy
 msgid  "Single field"
 msgstr "ഒരു മണ്ഡലം"
 
 #: source/dialogs/fmsearch.src#RID_SVXDLG_SEARCHFORM.FL_OPTIONS.FixedLine.Text
-#, fuzzy
 msgid  "Settings"
 msgstr "സജ്ജീകരണങ്ങള്"
 
 #: source/dialogs/fmsearch.src#RID_SVXDLG_SEARCHFORM.FT_POSITION.FixedText.Text
-#, fuzzy
 msgid  "Position"
 msgstr "സ്ഥാനം"
 
 #: source/dialogs/fmsearch.src#RID_SVXDLG_SEARCHFORM.CB_USEFORMATTER.CheckBox.Text
-#, fuzzy
 msgid  "Apply field format"
 msgstr "മണ്ഡലരൂപരേഖ തുലനം ചെയ്യുക"
 
 #: source/dialogs/fmsearch.src#RID_SVXDLG_SEARCHFORM.CB_CASE.CheckBox.Text
-#, fuzzy
 msgid  "Match case"
 msgstr "കെയ്സ് തുലനം ചെയ്യുക"
 
 #: source/dialogs/fmsearch.src#RID_SVXDLG_SEARCHFORM.CB_BACKWARD.CheckBox.Text
-#, fuzzy
 msgid  "Search backwards"
 msgstr "പിന്നോട്ട് അന്വേഷിക്കുക"
 
 #: source/dialogs/fmsearch.src#RID_SVXDLG_SEARCHFORM.CB_STARTOVER.CheckBox.Text
-#, fuzzy
 msgid  "From Beginning"
 msgstr "ആരംഭം മുതല്"
 
 #: source/dialogs/fmsearch.src#RID_SVXDLG_SEARCHFORM.CB_WILDCARD.CheckBox.Text
-#, fuzzy
 msgid  "Wildcard expression"
 msgstr "വിസ്കാര്ഡ് ഭാവം"
 
 #: source/dialogs/fmsearch.src#RID_SVXDLG_SEARCHFORM.CB_REGULAR.CheckBox.Text
-#, fuzzy
 msgid  "Regular expression"
 msgstr "സാധാരണ ഭാവം"
 
 #: source/dialogs/fmsearch.src#RID_SVXDLG_SEARCHFORM.CB_APPROX.CheckBox.Text
-#, fuzzy
 msgid  "Similarity Search"
 msgstr "സമാനത പരിശോധിക്കുക"
 
 #: source/dialogs/fmsearch.src#RID_SVXDLG_SEARCHFORM.PB_APPROXSETTINGS.PushButton.Text
-#, fuzzy
 msgid  "..."
 msgstr " ..."
 
 #: source/dialogs/fmsearch.src#RID_SVXDLG_SEARCHFORM.CB_HALFFULLFORMS.CheckBox.Text
-#, fuzzy
 msgid  "Match character width"
 msgstr "അക്ഷരത്തിന്റെ വീതിയുമായി യോജിക്കുക"
 
 #: source/dialogs/fmsearch.src#RID_SVXDLG_SEARCHFORM.CB_SOUNDSLIKECJK.CheckBox.Text
-#, fuzzy
 msgid  "Sounds like (Japanese)"
 msgstr "ശബ്ദം പോലെ (ജപ്പാനീസ്)"
 
 #: source/dialogs/fmsearch.src#RID_SVXDLG_SEARCHFORM.PB_SOUNDSLIKESETTINGS.PushButton.Text
-#, fuzzy
 msgid  "..."
 msgstr " ..."
 
 #: source/dialogs/fmsearch.src#RID_SVXDLG_SEARCHFORM.FL_STATE.FixedLine.Text
-#, fuzzy
 msgid  "State"
 msgstr "സംസ്ഥാനം"
 
 #: source/dialogs/fmsearch.src#RID_SVXDLG_SEARCHFORM.FT_RECORDLABEL.FixedText.Text
-#, fuzzy
 msgid  "Record :"
 msgstr "റിക്കോര്ഡ്"
 
 #: source/dialogs/fmsearch.src#RID_SVXDLG_SEARCHFORM.PB_SEARCH.PushButton.Text
-#, fuzzy
 msgid  "Search"
 msgstr "അന്വേഷിക്കുക"
 
 #: source/dialogs/fmsearch.src#RID_SVXDLG_SEARCHFORM.1.CancelButton.Text
-#, fuzzy
 msgid  "~Close"
 msgstr "അടയ്ക്കുക"
 
 #: source/dialogs/fmsearch.src#RID_SVXDLG_SEARCHFORM.1.HelpButton.Text
-#, fuzzy
 msgid  "~Help"
 msgstr "സഹായം"
 
@@ -2899,13 +2736,12 @@ msgid  "From bottom"
 msgstr ""
 
 #: source/dialogs/fmsearch.src#RID_SVXERR_SEARCH_NORECORD.ErrorBox.Message
-#, fuzzy
 msgid  "No records corresponding to your data found."
 msgstr "നിങ്ങളുടെ ഡേറ്റയ്ക്കനുസരിച്ചുള്ള റിക്കോര്‍ഡുകള്‍ ലഭ്യമല്ല."
 
 #: source/dialogs/fmsearch.src#RID_SVXERR_SEARCH_GENERAL_ERROR.ErrorBox.Message
 msgid  "An unknown error occurred. The search could not be finished."
-msgstr ""
+msgstr "അപരിചിതമായ ഒരു പിശക് സംഭവിച്ചിരിക്കുന്നു. തെരച്ചില്‍ പൂര്‍ത്തിയാക്കുവാന്‍ സാധ്യമായില്ല."
 
 #: source/dialogs/fmsearch.src#RID_STR_OVERFLOW_FORWARD.String.Text
 msgid  "Overflow, search continued at the beginning"
@@ -2916,7 +2752,6 @@ msgid  "Overflow, search continued at the end"
 msgstr ""
 
 #: source/dialogs/fmsearch.src#RID_STR_SEARCH_COUNTING.String.Text
-#, fuzzy
 msgid  "counting records"
 msgstr "റിക്കോര്ഡ്സ് കണക്കാക്കുന്ന"
 
@@ -2953,7 +2788,6 @@ msgid  "I~gnore Rule"
 msgstr ""
 
 #: source/dialogs/SpellDialog.src#RID_SVXDLG_SPELLCHECK.MB_ADDTODICT.MenuButton.Text
-#, fuzzy
 msgid  "~Add"
 msgstr "ചേര്ക്കുക"
 
@@ -2982,7 +2816,6 @@ msgid  "~Undo"
 msgstr ""
 
 #: source/dialogs/SpellDialog.src#RID_SVXDLG_SPELLCHECK.PB_CLOSE.PushButton.Text
-#, fuzzy
 msgid  "Cl~ose"
 msgstr "അടയ്ക്കുക"
 
@@ -3007,130 +2840,106 @@ msgid  "Spelling and Grammar: $LANGUAGE ($LOCATION) [$VendorName]"
 msgstr ""
 
 #: source/options/optinet2.src#RID_SVXPAGE_INET_PROXY.TabPage.Text
-#, fuzzy
 msgid  "Proxy"
 msgstr "പ്രോക്സി"
 
 #: source/options/optinet2.src#RID_SVXPAGE_INET_PROXY.GB_SETTINGS.FixedLine.Text
-#, fuzzy
 msgid  "Settings"
 msgstr "സജ്ജീകരണങ്ങള്"
 
 #: source/options/optinet2.src#RID_SVXPAGE_INET_PROXY.FT_PROXYMODE.FixedText.Text
-#, fuzzy
 msgid  "Proxy s~erver"
 msgstr "പ്രോക്സി സെര്വര്"
 
 #: source/options/optinet2.src#RID_SVXPAGE_INET_PROXY.LB_PROXYMODE.item1.StringList.item
-#, fuzzy
 msgid  "None"
 msgstr "ഒന്നുമില്ല"
 
 #: source/options/optinet2.src#RID_SVXPAGE_INET_PROXY.LB_PROXYMODE.item2.StringList.item
-#, fuzzy
 msgid  "System"
 msgstr "സിസ്റ്റം"
 
 #: source/options/optinet2.src#RID_SVXPAGE_INET_PROXY.LB_PROXYMODE.item3.StringList.item
-#, fuzzy
 msgid  "Manual"
 msgstr "മാനുവല്"
 
 #: source/options/optinet2.src#RID_SVXPAGE_INET_PROXY.ST_PROXY_FROM_BROWSER.String.Text
-#, fuzzy
 msgid  "Use browser settings"
 msgstr "മാനുവല് ബ്രൌസര് സജ്ജീകരണങ്ങള്"
 
 #: source/options/optinet2.src#RID_SVXPAGE_INET_PROXY.FT_HTTP_PROXY.FixedText.Text
-#, fuzzy
 msgid  "HT~TP proxy"
 msgstr "HT~TP പ്രോക്സി "
 
 #: source/options/optinet2.src#RID_SVXPAGE_INET_PROXY.FT_HTTP_PORT.FixedText.Text
-#, fuzzy
 msgid  "~Port"
 msgstr "പോര്ട്ട്"
 
 #: source/options/optinet2.src#RID_SVXPAGE_INET_PROXY.FT_HTTPS_PROXY.FixedText.Text
-#, fuzzy
 msgid  "HTTP~S proxy"
 msgstr "HT~TP പ്രോക്സി "
 
 #: source/options/optinet2.src#RID_SVXPAGE_INET_PROXY.FT_HTTPS_PORT.FixedText.Text
-#, fuzzy
 msgid  "P~ort"
 msgstr "പോര്ട്ട്"
 
 #: source/options/optinet2.src#RID_SVXPAGE_INET_PROXY.FT_FTP_PROXY.FixedText.Text
-#, fuzzy
 msgid  "~FTP proxy"
 msgstr "FTP പ്രോക്സി"
 
 #: source/options/optinet2.src#RID_SVXPAGE_INET_PROXY.FT_FTP_PORT.FixedText.Text
-#, fuzzy
 msgid  "P~ort"
 msgstr "പോര്ട്ട്"
 
 #: source/options/optinet2.src#RID_SVXPAGE_INET_PROXY.FT_SOCKS_PROXY.FixedText.Text
-#, fuzzy
 msgid  "~SOCKS proxy"
 msgstr "SOCKS പ്രോക്സി"
 
 #: source/options/optinet2.src#RID_SVXPAGE_INET_PROXY.FT_SOCKS_PORT.FixedText.Text
-#, fuzzy
 msgid  "Po~rt"
 msgstr "പോര്ട്ട്"
 
 #: source/options/optinet2.src#RID_SVXPAGE_INET_PROXY.FT_NOPROXYFOR.FixedText.Text
-#, fuzzy
 msgid  "~No proxy for:"
 msgstr "-വേണ്ടി പ്രോക്സി ഇല്ല"
 
 #: source/options/optinet2.src#RID_SVXPAGE_INET_PROXY.ED_NOPROXYDESC.FixedText.Text
-#, fuzzy
 msgid  "Separator ;"
 msgstr "വേര്തിരിക്കുന്ന"
 
 #: source/options/optinet2.src#RID_SVXPAGE_INET_PROXY.GB_DNS.FixedLine.Text
-#, fuzzy
 msgid  "DNS server"
 msgstr "DNS സെര്‌വര്"
 
 #: source/options/optinet2.src#RID_SVXPAGE_INET_PROXY.RB_DNS_AUTO.RadioButton.Text
-#, fuzzy
 msgid  "~Automatic"
 msgstr "സ്വയം പ്രവര്ത്തിക്കുന്ന"
 
 #: source/options/optinet2.src#RID_SVXPAGE_INET_PROXY.RB_DNS_MANUAL.RadioButton.Text
-#, fuzzy
 msgid  "~Manual"
 msgstr "മാനുവല്"
 
 #: source/options/optinet2.src#RID_SVXPAGE_INET_PROXY.ST_MSG_255_0.String.Text
 msgid  "is not a valid entry for this field. Please specify a value between 0 and 255."
-msgstr ""
+msgstr "ഈ മണ്ഡലത്തിന‍് അസാധുവായ പ്രവേശനമാണ‍്. ദയവായി  0 നും 255നും ഇടയ്ക്കുള്ള മൂല്യം ചേര്ക്കുക"
 
 #: source/options/optinet2.src#RID_SVXPAGE_INET_PROXY.ST_MSG_255_1.String.Text
 msgid  "is not a valid entry for this field. Please specify a value between 1 and 255."
-msgstr ""
+msgstr "ഈ മണ്ഡലത്തിന‍് അസാധുവായ പ്രവേശനമാണ‍്. ദയവായി  0 നും 255നും ഇടയ്ക്കുള്ള മൂല്യം ചേര്ക്കുക"
 
 #: source/options/optinet2.src#RID_SVXPAGE_INET_SEARCH.TabPage.Text
-#, fuzzy
 msgid  "Search"
 msgstr "തേടുക"
 
 #: source/options/optinet2.src#RID_SVXPAGE_INET_SEARCH.GB_SEARCH.FixedLine.Text
-#, fuzzy
 msgid  "Search in"
 msgstr "അന്വേഷിക്കുക"
 
 #: source/options/optinet2.src#RID_SVXPAGE_INET_SEARCH.FT_SEARCH_NAME.FixedText.Text
-#, fuzzy
 msgid  "~Name"
 msgstr " നാമം"
 
 #: source/options/optinet2.src#RID_SVXPAGE_INET_SEARCH.FT_SEARCH.FixedText.Text
-#, fuzzy
 msgid  "Type"
 msgstr "ടൈപ്പ് ചെയ്യുക"
 
@@ -3139,82 +2948,66 @@ msgid  "~And"
 msgstr ""
 
 #: source/options/optinet2.src#RID_SVXPAGE_INET_SEARCH.RB_OR.RadioButton.Text
-#, fuzzy
 msgid  "~Or"
 msgstr "അഥവാ"
 
 #: source/options/optinet2.src#RID_SVXPAGE_INET_SEARCH.RB_EXACT.RadioButton.Text
-#, fuzzy
 msgid  "E~xact"
 msgstr "ഏകദേശം"
 
 #: source/options/optinet2.src#RID_SVXPAGE_INET_SEARCH.FT_URL.FixedText.Text
-#, fuzzy
 msgid  "~Prefix"
 msgstr "ഉപസര്ഗം"
 
 #: source/options/optinet2.src#RID_SVXPAGE_INET_SEARCH.FT_POSTFIX.FixedText.Text
-#, fuzzy
 msgid  "Su~ffix"
 msgstr "പ്രത്യയം"
 
 #: source/options/optinet2.src#RID_SVXPAGE_INET_SEARCH.FT_SEPARATOR.FixedText.Text
-#, fuzzy
 msgid  "~Separator"
 msgstr "വേര്തിരിക്കുന്ന"
 
 #: source/options/optinet2.src#RID_SVXPAGE_INET_SEARCH.FT_CASE.FixedText.Text
-#, fuzzy
 msgid  "~Case match"
 msgstr "കേസ് ചേര്ച്ച"
 
 #: source/options/optinet2.src#RID_SVXPAGE_INET_SEARCH.ED_CASE.item1.StringList.item
-#, fuzzy
 msgid  "None"
 msgstr "ഒന്നുമില്ല"
 
 #: source/options/optinet2.src#RID_SVXPAGE_INET_SEARCH.ED_CASE.item2.StringList.item
-#, fuzzy
 msgid  "Upper"
 msgstr "ഉയര്ന്ന"
 
 #: source/options/optinet2.src#RID_SVXPAGE_INET_SEARCH.ED_CASE.item3.StringList.item
-#, fuzzy
 msgid  "Lower"
 msgstr "താഴ്ന്ന"
 
 #: source/options/optinet2.src#RID_SVXPAGE_INET_SEARCH.PB_NEW.PushButton.Text
-#, fuzzy
 msgid  "N~ew"
 msgstr "പുതിയ"
 
 #: source/options/optinet2.src#RID_SVXPAGE_INET_SEARCH.PB_ADD.PushButton.Text
-#, fuzzy
 msgid  "~Add"
 msgstr "ചേര്ക്കുക"
 
 #: source/options/optinet2.src#RID_SVXPAGE_INET_SEARCH.PB_CHANGE.PushButton.Text
-#, fuzzy
 msgid  "~Modify"
 msgstr "ആധുനികരിക്കുക"
 
 #: source/options/optinet2.src#RID_SVXPAGE_INET_SEARCH.PB_DELETE.PushButton.Text
-#, fuzzy
 msgid  "~Delete"
 msgstr "~വെട്ടി നീക്കുക"
 
 #: source/options/optinet2.src#RID_SVXPAGE_INET_SEARCH.MSG_MODIFY.String.Text
-#, fuzzy
 msgid  "Do you want to accept the current modification?"
 msgstr "താങ്കളക്ക് ഇപ്പോഴത്തെ പരിഷ്കരണം സ്വീകരിക്കണോ ?"
 
 #: source/options/optinet2.src#RID_SVXPAGE_INET_SECURITY.TabPage.Text
-#, fuzzy
 msgid  "Security"
 msgstr "സുരക്ഷ"
 
 #: source/options/optinet2.src#RID_SVXPAGE_INET_SECURITY.FL_SEC_SECURITYOPTIONS.FixedLine.Text
-#, fuzzy
 msgid  "Security options and warnings"
 msgstr "സുരക്ഷാ ഉപാധികളും മുന്നറിയിപ്പുകളും"
 
@@ -3251,16 +3044,14 @@ msgid  "Master Password..."
 msgstr ""
 
 #: source/options/optinet2.src#RID_SVXPAGE_INET_SECURITY.FL_SEC_MACROSEC.FixedLine.Text
-#, fuzzy
 msgid  "Macro security"
 msgstr "മാക്രോ സംരക്ഷണം"
 
 #: source/options/optinet2.src#RID_SVXPAGE_INET_SECURITY.FI_SEC_MACROSEC.FixedText.Text
 msgid  "Adjust the security level for executing macros and specify trusted macro developers."
-msgstr ""
+msgstr "മാക്രോ പ്രവര്ത്തിപ്പിക്കുന്നതിനുവേണ്ടി  സുരക്ഷതലം ക്രമീകരിക്കുകയും വിശ്വസ്ത മാക്രോ ഡവലപ്പര് എടുത്തു കാണിക്കുക."
 
 #: source/options/optinet2.src#RID_SVXPAGE_INET_SECURITY.PB_SEC_MACROSEC.PushButton.Text
-#, fuzzy
 msgid  "Macro Security..."
 msgstr "മാക്രോ സംരക്ഷണം"
 
@@ -3270,222 +3061,181 @@ msgstr ""
 
 #: source/options/optinet2.src#RID_SVXERR_OPT_PROXYPORTS.ErrorBox.Message
 msgid  "Invalid value!\n\nThe maximum value for a port number is 65535."
-msgstr ""
+msgstr "അസാധുവായ മൂല്യം । പോര്ട്ട് സംഖ്യയുടെ പരമാവധി മൂല്യം 65535 അണ‍്."
 
 #: source/options/optinet2.src#RID_SVXDLG_OPT_JAVASCRIPT_DISABLE.FT_JSCPT_WARNING.FixedText.Text
 msgid  "Please note that with Java\nyou disable Javascript as well.\n\nDo you still want to disable Java?"
-msgstr ""
+msgstr "ദയവായി അത്  ജാവായോടോപ്പം നോക്കുക \n ജാവാസ്ക്രിപ്റ്റ് നിഷ്ക്രിയാമാക്കുന്നതാണ‍് നല്ലത് ?"
 
 #: source/options/optinet2.src#RID_SVXDLG_OPT_JAVASCRIPT_DISABLE.CB_JSCPT_DISABLE.CheckBox.Text
-#, fuzzy
 msgid  "~Don't show warning again"
 msgstr "ഈ താക്കീത് ഇനിയും കാണിക്കരുത്"
 
 #: source/options/optinet2.src#RID_SVXPAGE_INET_MAIL.FL_MAIL.FixedLine.Text
-#, fuzzy
 msgid  "Sending documents as e-mail attachments"
 msgstr "ഇ-മെയിലിനെ ബന്ദിച്ച് ഈ ഡോക്കുമെന്റുകള് അയ്ക്കുക"
 
 #: source/options/optinet2.src#RID_SVXPAGE_INET_MAIL.FT_MAILERURL.FixedText.Text
-#, fuzzy
 msgid  "~E-mail program"
 msgstr "ഇ-മെയില് പ്രോഗ്രാം "
 
 #: source/options/optinet2.src#RID_SVXPAGE_INET_MAIL.STR_DEFAULT_FILENAME.String.Text
-#, fuzzy
 msgid  "All files (*.*)"
 msgstr "എല്ലാ ഫയലുകളും (*.*)"
 
 #: source/options/optgenrl.src#RID_SFXPAGE_GENERAL.TabPage.Text
-#, fuzzy
 msgid  "User Data"
 msgstr "ഉപഭോക്താവിന്റെ ഡാറ്റാ"
 
 #: source/options/optgenrl.src#RID_SFXPAGE_GENERAL.FT_COMPANY.FixedText.Text
-#, fuzzy
 msgid  "~Company"
 msgstr "കന്പനി"
 
 #: source/options/optgenrl.src#RID_SFXPAGE_GENERAL.FT_NAME.FixedText.Text
-#, fuzzy
 msgid  "First/Last ~name/Initials"
 msgstr "ആദ്യത്തെ/അവസാനത്തെ പേര‍്/ഇനിഷ്യല്"
 
 #: source/options/optgenrl.src#RID_SFXPAGE_GENERAL.FT_NAME_RUSS.FixedText.Text
-#, fuzzy
 msgid  "Last Name/First name/Father's name/Initials"
 msgstr "ആദ്യത്തെ നാമം/അച്ഛന്റെ പേര‌്/അവസാനത്തെ പേര‌്/ഇനിഷ്യല്"
 
 #: source/options/optgenrl.src#RID_SFXPAGE_GENERAL.FT_NAME_EASTERN.FixedText.Text
-#, fuzzy
 msgid  "Last/First ~name/Initials"
 msgstr "ആദ്യത്തെ/അവസാനത്തെ പേര‍്/ഇനിഷ്യല്"
 
 #: source/options/optgenrl.src#RID_SFXPAGE_GENERAL.FT_STREET.FixedText.Text
-#, fuzzy
 msgid  "~Street"
 msgstr "തെരുവ്"
 
 #: source/options/optgenrl.src#RID_SFXPAGE_GENERAL.FT_STREET_RUSS.FixedText.Text
-#, fuzzy
 msgid  "Street/Apartment number"
 msgstr "തെരുവ്/ അപ്പാര്ട്ട്മെന്റ് നന്പര്"
 
 #: source/options/optgenrl.src#RID_SFXPAGE_GENERAL.FT_CITY.FixedText.Text
-#, fuzzy
 msgid  "Zip/City"
 msgstr "Zip/നഗരം"
 
 #: source/options/optgenrl.src#RID_SFXPAGE_GENERAL.FT_COUNTRY.FixedText.Text
-#, fuzzy
 msgid  "Country/Region"
 msgstr "ദേശം/പ്രദേശം"
 
 #: source/options/optgenrl.src#RID_SFXPAGE_GENERAL.FT_TITLEPOS.FixedText.Text
-#, fuzzy
 msgid  "~Title/Position"
 msgstr "തലക്കെട്ട്/സ്ഥാനം"
 
 #: source/options/optgenrl.src#RID_SFXPAGE_GENERAL.FT_PHONE.FixedText.Text
-#, fuzzy
 msgid  "Tel. (Home/Work)"
 msgstr "ടെലിഫോണ്(വീട്/ജോലി)"
 
 #: source/options/optgenrl.src#RID_SFXPAGE_GENERAL.FT_FAXMAIL.FixedText.Text
-#, fuzzy
 msgid  "Fa~x / E-mail"
 msgstr "ഫാക്സ് / ഇ-മെയില്"
 
 #: source/options/optgenrl.src#RID_SFXPAGE_GENERAL.GB_ADDRESS.FixedLine.Text
-#, fuzzy
 msgid  "Address "
 msgstr "മേല്‍വിലാസം"
 
 #: source/options/optgenrl.src#RID_SFXPAGE_GENERAL.CB_USEDATA.CheckBox.Text
-#, fuzzy
 msgid  "Use data for document properties"
 msgstr "ഡോക്കുമെന്റ് സവിശേഷതകള്ക്ക് ഡാറ്റാ ഉപയോഗിക്കുക"
 
 #: source/options/optgenrl.src#RID_SFXPAGE_GENERAL.STR_US_STATE.String.Text
-#, fuzzy
 msgid  "City/State/Zip"
 msgstr "നഗരം/സംസ്ഥാനം/Zip"
 
 #: source/options/optgenrl.src#RID_SFXPAGE_GENERAL.STR_QUERY_REG.String.Text
 msgid  "Note that street, Zip code and city are used to generate the registration key. You will not be able to change the user data again until the registration has been carried out. Do you want to modify the user data now?"
-msgstr ""
+msgstr "ശ്രദ്ധിക്കുക തെരുവും  സിപ് കോഡും നഗരവും  രജിസ്റ്ററേഷന് കീ സൃഷ്ടിക്കുക. താങ്കള്ക്ക് രജിസ്റ്ററേഷന് കഴിയാതെ ഉപഭോക്തൃ ഡേറ്റാ മാറ്റം വരുത്താന് കഴിയില്ല.  താങ്കള്ക്ക് ഇപ്പോള് ഉപഭോക്തൃ ഡേറ്റാ പരിഷ്കരിക്കണോ?"
 
 #: source/options/optgenrl.src#RID_SVXQB_CHANGEDATA.QueryBox.Message
 msgid  "The User Data have been changed.\nDo you really want to change your User Data?"
 msgstr ""
 
 #: source/options/optjsearch.src#RID_SVXPAGE_JSEARCH_OPTIONS.FL_TREAT_AS_EQUAL.FixedLine.Text
-#, fuzzy
 msgid  "Treat as equal"
 msgstr "തുല്യമായി പരിഗണിക്കുക"
 
 #: source/options/optjsearch.src#RID_SVXPAGE_JSEARCH_OPTIONS.CB_MATCH_CASE.CheckBox.Text
-#, fuzzy
 msgid  "~uppercase/lowercase"
 msgstr "വലിയ അക്ഷരം / ചെറിയ അക്ഷരം"
 
 #: source/options/optjsearch.src#RID_SVXPAGE_JSEARCH_OPTIONS.CB_MATCH_FULL_HALF_WIDTH.CheckBox.Text
-#, fuzzy
 msgid  "~full-width/half-width forms"
 msgstr "മുഴുവന് വീതി / പകുതിവീതിയുള്ള രൂപം"
 
 #: source/options/optjsearch.src#RID_SVXPAGE_JSEARCH_OPTIONS.CB_MATCH_HIRAGANA_KATAKANA.CheckBox.Text
-#, fuzzy
 msgid  "~hiragana/katakana"
 msgstr "ഹിരാഗാനാ / കടകാനാ "
 
 #: source/options/optjsearch.src#RID_SVXPAGE_JSEARCH_OPTIONS.CB_MATCH_CONTRACTIONS.CheckBox.Text
-#, fuzzy
 msgid  "~contractions (yo-on, sokuon)"
 msgstr "ചുരുങ്ങുക (yo-on, sokuon)"
 
 #: source/options/optjsearch.src#RID_SVXPAGE_JSEARCH_OPTIONS.CB_MATCH_MINUS_DASH_CHOON.CheckBox.Text
-#, fuzzy
 msgid  "~minus/dash/cho-on"
 msgstr "മൈനസ്/ഡാഷ്/cho-on"
 
 #: source/options/optjsearch.src#RID_SVXPAGE_JSEARCH_OPTIONS.CB_MATCH_REPEAT_CHAR_MARKS.CheckBox.Text
-#, fuzzy
 msgid  "'re~peat character' marks"
 msgstr "'അക്ഷരം ആവര്ത്തിക്കുക' അടയാളങ്ങള്"
 
 #: source/options/optjsearch.src#RID_SVXPAGE_JSEARCH_OPTIONS.CB_MATCH_VARIANT_FORM_KANJI.CheckBox.Text
-#, fuzzy
 msgid  "~variant-form kanji (itaiji)"
 msgstr "കാഞ്ചി പരിവര്ത്തന രൂപം (ഇറ്റാഞ്ചി)"
 
 #: source/options/optjsearch.src#RID_SVXPAGE_JSEARCH_OPTIONS.CB_MATCH_OLD_KANA_FORMS.CheckBox.Text
-#, fuzzy
 msgid  "~old Kana forms"
 msgstr "പഴയ കാനാ രൂപം"
 
 #: source/options/optjsearch.src#RID_SVXPAGE_JSEARCH_OPTIONS.CB_MATCH_DIZI_DUZU.CheckBox.Text
-#, fuzzy
 msgid  "~di/zi, du/zu"
 msgstr "~di/zi, du/zu"
 
 #: source/options/optjsearch.src#RID_SVXPAGE_JSEARCH_OPTIONS.CB_MATCH_BAVA_HAFA.CheckBox.Text
-#, fuzzy
 msgid  "~ba/va, ha/fa"
 msgstr "~ba/va, ha/fa"
 
 #: source/options/optjsearch.src#RID_SVXPAGE_JSEARCH_OPTIONS.CB_MATCH_TSITHICHI_DHIZI.CheckBox.Text
-#, fuzzy
 msgid  "~tsi/thi/chi, dhi/zi"
 msgstr "~tsi/thi/chi, dhi/zi"
 
 #: source/options/optjsearch.src#RID_SVXPAGE_JSEARCH_OPTIONS.CB_MATCH_HYUFYU_BYUVYU.CheckBox.Text
-#, fuzzy
 msgid  "h~yu/fyu, byu/vyu"
 msgstr "h~yu/fyu, byu/vyu"
 
 #: source/options/optjsearch.src#RID_SVXPAGE_JSEARCH_OPTIONS.CB_MATCH_SESHE_ZEJE.CheckBox.Text
-#, fuzzy
 msgid  "~se/she, ze/je"
 msgstr "~se/she, ze/je"
 
 #: source/options/optjsearch.src#RID_SVXPAGE_JSEARCH_OPTIONS.CB_MATCH_IAIYA.CheckBox.Text
-#, fuzzy
 msgid  "~ia/iya (piano/piyano)"
 msgstr "~ia/iya (പിയാനോ)"
 
 #: source/options/optjsearch.src#RID_SVXPAGE_JSEARCH_OPTIONS.CB_MATCH_KIKU.CheckBox.Text
-#, fuzzy
 msgid  "~ki/ku (tekisuto/tekusuto)"
 msgstr "ki/ku (tekisuto/tekusuto)"
 
 #: source/options/optjsearch.src#RID_SVXPAGE_JSEARCH_OPTIONS.CB_MATCH_PROLONGED_SOUNDMARK.CheckBox.Text
-#, fuzzy
 msgid  "Prolon~ged vowels (ka-/kaa)"
 msgstr "Prolon~ged vowels (ka-/kaa)"
 
 #: source/options/optjsearch.src#RID_SVXPAGE_JSEARCH_OPTIONS.FL_IGNORE.FixedLine.Text
-#, fuzzy
 msgid  "Ignore"
 msgstr "അവഗണിക്കുക"
 
 #: source/options/optjsearch.src#RID_SVXPAGE_JSEARCH_OPTIONS.CB_IGNORE_PUNCTUATION.CheckBox.Text
-#, fuzzy
 msgid  "Pu~nctuation characters"
 msgstr "ചുറ്റക്ഷരങ്ങള്"
 
 #: source/options/optjsearch.src#RID_SVXPAGE_JSEARCH_OPTIONS.CB_IGNORE_WHITESPACES.CheckBox.Text
-#, fuzzy
 msgid  "~Whitespace characters"
 msgstr "വെളുത്ത അകലമുള്ള അക്ഷരങ്ങള്"
 
 #: source/options/optjsearch.src#RID_SVXPAGE_JSEARCH_OPTIONS.CB_IGNORE_MIDDLE_DOT.CheckBox.Text
-#, fuzzy
 msgid  "Midd~le dots"
 msgstr "മദ്ധ്യത്തിലെ ബിന്ദുക്കള് "
 
 #: source/options/optjsearch.src#RID_SVXPAGE_JSEARCH_OPTIONS.CheckBox.Text
-#, fuzzy
 msgid  "Searching in Japanese"
 msgstr "ജപ്പാന് ഭാഷയില് അന്വേഷിക്കുക"
 
@@ -3514,72 +3264,58 @@ msgid  "~Current document only"
 msgstr ""
 
 #: source/options/optctl.src#RID_SVXPAGE_OPTIONS_CTL.TabPage.Text
-#, fuzzy
 msgid  "Complex Text Layout"
 msgstr "സങ്കീര്ണ്ണ ടെക്സ്റ്റ് ലേയൌട്ട്"
 
 #: source/options/optctl.src#RID_SVXPAGE_OPTIONS_CTL.FL_SEQUENCECHECKING.FixedLine.Text
-#, fuzzy
 msgid  "Sequence checking"
 msgstr "ക്രമത്തിലുള്ള പരിശോധന"
 
 #: source/options/optctl.src#RID_SVXPAGE_OPTIONS_CTL.CB_SEQUENCECHECKING.CheckBox.Text
-#, fuzzy
 msgid  "Use se~quence checking"
 msgstr "ക്രമത്തിലുള്ള പരിശോധന ഉപയോഗിക്കുക"
 
 #: source/options/optctl.src#RID_SVXPAGE_OPTIONS_CTL.CB_RESTRICTED.CheckBox.Text
-#, fuzzy
 msgid  "Restricted"
 msgstr "വിലക്കപ്പെട്ട"
 
 #: source/options/optctl.src#RID_SVXPAGE_OPTIONS_CTL.CB_TYPE_REPLACE.CheckBox.Text
-#, fuzzy
 msgid  "~Type and replace"
 msgstr "~ടൈപ്പ് ചെയ്തു് മാറ്റി എഴുതുക"
 
 #: source/options/optctl.src#RID_SVXPAGE_OPTIONS_CTL.FL_CURSORCONTROL.FixedLine.Text
-#, fuzzy
 msgid  "Cursor control"
 msgstr "കര്‍സര്‍ നിയന്ത്രണം"
 
 #: source/options/optctl.src#RID_SVXPAGE_OPTIONS_CTL.FT_MOVEMENT.FixedText.Text
-#, fuzzy
 msgid  "Movement"
 msgstr "നീക്കം"
 
 #: source/options/optctl.src#RID_SVXPAGE_OPTIONS_CTL.RB_MOVEMENT_LOGICAL.RadioButton.Text
-#, fuzzy
 msgid  "Lo~gical"
 msgstr "യുക്തിപരമായ"
 
 #: source/options/optctl.src#RID_SVXPAGE_OPTIONS_CTL.RB_MOVEMENT_VISUAL.RadioButton.Text
-#, fuzzy
 msgid  "~Visual"
 msgstr "ദൃശ്യമായത്"
 
 #: source/options/optctl.src#RID_SVXPAGE_OPTIONS_CTL.FL_GENERAL.FixedLine.Text
-#, fuzzy
 msgid  "General options"
 msgstr "പൊതുവായ ഐച്ഛികം"
 
 #: source/options/optctl.src#RID_SVXPAGE_OPTIONS_CTL.FT_NUMERALS.FixedText.Text
-#, fuzzy
 msgid  "~Numerals"
 msgstr "സംഖ്യ"
 
 #: source/options/optctl.src#RID_SVXPAGE_OPTIONS_CTL.LB_NUMERALS.item1.StringList.item
-#, fuzzy
 msgid  "Arabic"
 msgstr "അറബിക്"
 
 #: source/options/optctl.src#RID_SVXPAGE_OPTIONS_CTL.LB_NUMERALS.item2.StringList.item
-#, fuzzy
 msgid  "Hindi"
 msgstr "ഹിന്ദി"
 
 #: source/options/optctl.src#RID_SVXPAGE_OPTIONS_CTL.LB_NUMERALS.item3.StringList.item
-#, fuzzy
 msgid  "System"
 msgstr "സിസ്റ്റം"
 
@@ -3588,97 +3324,78 @@ msgid  "Context"
 msgstr ""
 
 #: source/options/optcolor.src#RID_SVXPAGE_COLORCONFIG.FL_COLORSCHEME.FixedLine.Text
-#, fuzzy
 msgid  "Color scheme"
 msgstr "നിറത്തിന്റെ വ്യവസ്ഥ "
 
 #: source/options/optcolor.src#RID_SVXPAGE_COLORCONFIG.FT_COLORSCHEME.FixedText.Text
-#, fuzzy
 msgid  "Scheme"
 msgstr "വ്യവസ്ഥ "
 
 #: source/options/optcolor.src#RID_SVXPAGE_COLORCONFIG.PB_SAVESCHEME.PushButton.Text
-#, fuzzy
 msgid  "Save..."
 msgstr "സംഭരിക്കുക"
 
 #: source/options/optcolor.src#RID_SVXPAGE_COLORCONFIG.PB_DELETESCHEME.PushButton.Text
-#, fuzzy
 msgid  "Delete"
 msgstr "നീക്കം ചെയ്യുക"
 
 #: source/options/optcolor.src#RID_SVXPAGE_COLORCONFIG.FL_CUSTOMCOLORS.FixedLine.Text
-#, fuzzy
 msgid  "Custom colors"
 msgstr "അംഗീകൃത നിറം"
 
 #: source/options/optcolor.src#RID_SVXPAGE_COLORCONFIG.CT_COLORCONFIG.ST_ON.String.Text
-#, fuzzy
 msgid  "On"
 msgstr "തുടങ്ങുക"
 
 #: source/options/optcolor.src#RID_SVXPAGE_COLORCONFIG.CT_COLORCONFIG.ST_UIELEM.String.Text
-#, fuzzy
 msgid  "User interface elements"
 msgstr "ഉപഭോക്തൃ ഇന്റര്ഫേസ് ഘടകങ്ങള്"
 
 #: source/options/optcolor.src#RID_SVXPAGE_COLORCONFIG.CT_COLORCONFIG.ST_COLSET.String.Text
-#, fuzzy
 msgid  "Color setting"
 msgstr "നിറ സജ്ജീകരണങ്ങള്"
 
 #: source/options/optcolor.src#RID_SVXPAGE_COLORCONFIG.CT_COLORCONFIG.ST_PREVIEW.String.Text
-#, fuzzy
 msgid  "Preview"
 msgstr "പൂര്‍വ്വ ദൃശ്യം"
 
 #: source/options/optcolor.src#RID_SVXPAGE_COLORCONFIG.CT_COLORCONFIG.WN_SCROLL.FT_GENERAL.FixedText.Text
-#, fuzzy
 msgid  "General"
 msgstr "പൊതുവായ"
 
 #: source/options/optcolor.src#RID_SVXPAGE_COLORCONFIG.CT_COLORCONFIG.WN_SCROLL.FT_DOCCOLOR.FixedText.Text
-#, fuzzy
 msgid  "Document background"
 msgstr "ഡോക്കുമെന്റിന്റെ പശ്ചാത്തലം "
 
 #: source/options/optcolor.src#RID_SVXPAGE_COLORCONFIG.CT_COLORCONFIG.WN_SCROLL.CB_DOCBOUND.CheckBox.Text
-#, fuzzy
 msgid  "Text boundaries"
 msgstr "ടെക്സ്റ്റിന്റെ അതിര‍്"
 
 #: source/options/optcolor.src#RID_SVXPAGE_COLORCONFIG.CT_COLORCONFIG.WN_SCROLL.FT_APPBACKGROUND.FixedText.Text
-#, fuzzy
 msgid  "Application background"
 msgstr "പ്രയോഗിക പശ്ചാത്തലം "
 
 #: source/options/optcolor.src#RID_SVXPAGE_COLORCONFIG.CT_COLORCONFIG.WN_SCROLL.CB_OBJECTBOUNDARIES.CheckBox.Text
-#, fuzzy
 msgid  "Object boundaries"
 msgstr "വസ്തുന്റെ അതിര‍്"
 
 #: source/options/optcolor.src#RID_SVXPAGE_COLORCONFIG.CT_COLORCONFIG.WN_SCROLL.CB_TABLEBOUNDARIES.CheckBox.Text
-#, fuzzy
 msgid  "Table boundaries"
 msgstr "പട്ടികയുടെ  അതിര‍്"
 
 #: source/options/optcolor.src#RID_SVXPAGE_COLORCONFIG.CT_COLORCONFIG.WN_SCROLL.FT_FONTCOLOR.FixedText.Text
-#, fuzzy
 msgid  "Font color"
 msgstr "ഫോണ്ടിന്റെ നിറം"
 
 #: source/options/optcolor.src#RID_SVXPAGE_COLORCONFIG.CT_COLORCONFIG.WN_SCROLL.CB_LINKS.CheckBox.Text
-#, fuzzy
 msgid  "Unvisited links"
 msgstr "സന്ദര്ശിക്കാത്ത ലിങ്ക്"
 
 #: source/options/optcolor.src#RID_SVXPAGE_COLORCONFIG.CT_COLORCONFIG.WN_SCROLL.CB_LINKSVISITED.CheckBox.Text
-#, fuzzy
 msgid  "Visited links"
 msgstr "സന്ദര്ശിച്ച ലിങ്ക്"
 
 #: source/options/optcolor.src#RID_SVXPAGE_COLORCONFIG.CT_COLORCONFIG.WN_SCROLL.FT_SPELL.FixedText.Text
-#, fuzzy
 msgid  "AutoSpellcheck"
 msgstr "സ്വയം  അക്ഷരപരിശോധിക്കുന്ന"
 
@@ -3687,187 +3404,150 @@ msgid  "Smart Tags"
 msgstr ""
 
 #: source/options/optcolor.src#RID_SVXPAGE_COLORCONFIG.CT_COLORCONFIG.WN_SCROLL.FT_WRITER.FixedText.Text
-#, fuzzy
 msgid  "Text Document"
 msgstr "ടെക്സ്റ്റ് ഡോക്കുമെന്റ്്"
 
 #: source/options/optcolor.src#RID_SVXPAGE_COLORCONFIG.CT_COLORCONFIG.WN_SCROLL.FT_WRITERTEXTGRID.FixedText.Text
-#, fuzzy
 msgid  "Grid"
 msgstr "ഗ്രിഡ്"
 
 #: source/options/optcolor.src#RID_SVXPAGE_COLORCONFIG.CT_COLORCONFIG.WN_SCROLL.CB_WRITERFIELDSHADINGS.CheckBox.Text
-#, fuzzy
 msgid  "Field shadings"
 msgstr "മണ്ഡലം മറയ്ക്കുന്നത്"
 
 #: source/options/optcolor.src#RID_SVXPAGE_COLORCONFIG.CT_COLORCONFIG.WN_SCROLL.CB_WRITERIDXSHADINGS.CheckBox.Text
-#, fuzzy
 msgid  "Index and table shadings"
 msgstr "അനുക്രമണികയും പട്ടികയുടെ നിഴലും"
 
 #: source/options/optcolor.src#RID_SVXPAGE_COLORCONFIG.CT_COLORCONFIG.WN_SCROLL.FT_WRITERSCRIPTINDICATOR.FixedText.Text
-#, fuzzy
 msgid  "Script indicator"
 msgstr "തിരക്കഥ കാണിക്കുന്നത്"
 
 #: source/options/optcolor.src#RID_SVXPAGE_COLORCONFIG.CT_COLORCONFIG.WN_SCROLL.CB_WRITERSECTIONBOUNDARIES.CheckBox.Text
-#, fuzzy
 msgid  "Section boundaries"
 msgstr "വിഭാഗത്തിന്റെ അതിര‍്"
 
 #: source/options/optcolor.src#RID_SVXPAGE_COLORCONFIG.CT_COLORCONFIG.WN_SCROLL.FT_WRITERPAGEBREAKS.FixedText.Text
-#, fuzzy
 msgid  "Page and column breaks"
 msgstr "പേജും സ്തംഭ വിഭജനങ്ങളും"
 
 #: source/options/optcolor.src#RID_SVXPAGE_COLORCONFIG.CT_COLORCONFIG.WN_SCROLL.FT_WRITERDIRECTCURSOR.FixedText.Text
-#, fuzzy
 msgid  "Direct cursor"
 msgstr "നേരെയുള്ള കര്സര്"
 
 #: source/options/optcolor.src#RID_SVXPAGE_COLORCONFIG.CT_COLORCONFIG.WN_SCROLL.FT_HTML.FixedText.Text
-#, fuzzy
 msgid  "HTML Document"
 msgstr "HTML ഡോക്കുമെന്റ് "
 
 #: source/options/optcolor.src#RID_SVXPAGE_COLORCONFIG.CT_COLORCONFIG.WN_SCROLL.FT_HTMLSGML.FixedText.Text
-#, fuzzy
 msgid  "SGML syntax highlighting"
 msgstr "SGML  സിന്ടാക്സ് എടുത്തുകാണിക്കുക"
 
 #: source/options/optcolor.src#RID_SVXPAGE_COLORCONFIG.CT_COLORCONFIG.WN_SCROLL.FT_HTMLCOMMENT.FixedText.Text
-#, fuzzy
 msgid  "Comment highlighting"
 msgstr "അഭിപ്രായം  എടുത്തുകാണിക്കുക"
 
 #: source/options/optcolor.src#RID_SVXPAGE_COLORCONFIG.CT_COLORCONFIG.WN_SCROLL.FT_HTMLKEYWORD.FixedText.Text
-#, fuzzy
 msgid  "Keyword highlighting"
 msgstr "കീവേര്ഡ് എടുത്തുകാണിക്കുക"
 
 #: source/options/optcolor.src#RID_SVXPAGE_COLORCONFIG.CT_COLORCONFIG.WN_SCROLL.FT_HTMLUNKNOWN.FixedText.Text
-#, fuzzy
 msgid  "Text"
 msgstr "ടെക്സ്റ്റ് "
 
 #: source/options/optcolor.src#RID_SVXPAGE_COLORCONFIG.CT_COLORCONFIG.WN_SCROLL.FT_CALC.FixedText.Text
-#, fuzzy
 msgid  "Spreadsheet"
 msgstr "സ്പ്രെഡ്ഷീറ്റ്"
 
 #: source/options/optcolor.src#RID_SVXPAGE_COLORCONFIG.CT_COLORCONFIG.WN_SCROLL.FT_CALCGRID.FixedText.Text
-#, fuzzy
 msgid  "Grid lines"
 msgstr "ഗ്രിഡ് രേഖ"
 
 #: source/options/optcolor.src#RID_SVXPAGE_COLORCONFIG.CT_COLORCONFIG.WN_SCROLL.FT_CALCPAGEBREAK.FixedText.Text
-#, fuzzy
 msgid  "Page breaks"
 msgstr "പേജ് വിച്ഛേദനം"
 
 #: source/options/optcolor.src#RID_SVXPAGE_COLORCONFIG.CT_COLORCONFIG.WN_SCROLL.FT_CALCPAGEBREAKMANUAL.FixedText.Text
-#, fuzzy
 msgid  "Manual page breaks"
 msgstr "മാനുവല് പേജ് വിച്ഛേദനം"
 
 #: source/options/optcolor.src#RID_SVXPAGE_COLORCONFIG.CT_COLORCONFIG.WN_SCROLL.FT_CALCPAGEBREAKAUTO.FixedText.Text
-#, fuzzy
 msgid  "Automatic page breaks"
 msgstr "സ്വയം പേജ് വിച്ഛേദനം"
 
 #: source/options/optcolor.src#RID_SVXPAGE_COLORCONFIG.CT_COLORCONFIG.WN_SCROLL.FT_CALCDETECTIVE.FixedText.Text
-#, fuzzy
 msgid  "Detective"
 msgstr "രഹസ്യാന്വേഷണം"
 
 #: source/options/optcolor.src#RID_SVXPAGE_COLORCONFIG.CT_COLORCONFIG.WN_SCROLL.FT_CALCDETECTIVEERROR.FixedText.Text
-#, fuzzy
 msgid  "Detective error"
 msgstr "രഹസ്യാന്വേഷണത്തിലെ തെറ്റ്"
 
 #: source/options/optcolor.src#RID_SVXPAGE_COLORCONFIG.CT_COLORCONFIG.WN_SCROLL.FT_CALCREFERENCE.FixedText.Text
-#, fuzzy
 msgid  "References"
 msgstr "റഫറന്സ്"
 
 #: source/options/optcolor.src#RID_SVXPAGE_COLORCONFIG.CT_COLORCONFIG.WN_SCROLL.FT_CALCNOTESBACKGROUND.FixedText.Text
-#, fuzzy
 msgid  "Notes background"
 msgstr "കുറിപ്പുകളുടെ പശ്ചാത്തലം"
 
 #: source/options/optcolor.src#RID_SVXPAGE_COLORCONFIG.CT_COLORCONFIG.WN_SCROLL.FT_DRAW.FixedText.Text
-#, fuzzy
 msgid  "Drawing / Presentation"
 msgstr " ചിത്രരേഖ  /  അവതരണം"
 
 #: source/options/optcolor.src#RID_SVXPAGE_COLORCONFIG.CT_COLORCONFIG.WN_SCROLL.FT_DRAWGRID.FixedText.Text
-#, fuzzy
 msgid  "Grid"
 msgstr "ഗ്രിഡ്"
 
 #: source/options/optcolor.src#RID_SVXPAGE_COLORCONFIG.CT_COLORCONFIG.WN_SCROLL.FT_BASIC.FixedText.Text
-#, fuzzy
 msgid  "Basic Syntax Highlighting"
 msgstr "BASIC സിന്ടാക്സ് എടുത്തുകാണിക്കുക"
 
 #: source/options/optcolor.src#RID_SVXPAGE_COLORCONFIG.CT_COLORCONFIG.WN_SCROLL.FT_BASICIDENTIFIER.FixedText.Text
-#, fuzzy
 msgid  "Identifier"
 msgstr "ഐഡന്റിഫയര്"
 
 #: source/options/optcolor.src#RID_SVXPAGE_COLORCONFIG.CT_COLORCONFIG.WN_SCROLL.FT_BASICCOMMENT.FixedText.Text
-#, fuzzy
 msgid  "Comment"
 msgstr "അഭിപ്രായം"
 
 #: source/options/optcolor.src#RID_SVXPAGE_COLORCONFIG.CT_COLORCONFIG.WN_SCROLL.FT_BASICNUMBER.FixedText.Text
-#, fuzzy
 msgid  "Number"
 msgstr "സംഖ്യ"
 
 #: source/options/optcolor.src#RID_SVXPAGE_COLORCONFIG.CT_COLORCONFIG.WN_SCROLL.FT_BASICSTRING.FixedText.Text
-#, fuzzy
 msgid  "String"
 msgstr "സ്ട്രിങ്ങ്"
 
 #: source/options/optcolor.src#RID_SVXPAGE_COLORCONFIG.CT_COLORCONFIG.WN_SCROLL.FT_BASICOPERATOR.FixedText.Text
-#, fuzzy
 msgid  "Operator"
 msgstr "പ്രവര്ത്തക"
 
 #: source/options/optcolor.src#RID_SVXPAGE_COLORCONFIG.CT_COLORCONFIG.WN_SCROLL.FT_BASICKEYWORD.FixedText.Text
-#, fuzzy
 msgid  "Reserved expression"
 msgstr "പതിവായ വര്ണ്ണന"
 
 #: source/options/optcolor.src#RID_SVXPAGE_COLORCONFIG.CT_COLORCONFIG.WN_SCROLL.FT_BASICERROR.FixedText.Text
-#, fuzzy
 msgid  "Error"
 msgstr "തെറ്റ്"
 
 #: source/options/optcolor.src#RID_SVXPAGE_COLORCONFIG.CT_COLORCONFIG.WN_SCROLL.FT_SQL_COMMAND.FixedText.Text
-#, fuzzy
 msgid  "SQL Syntax Highlighting"
 msgstr "SGML  സിന്ടാക്സ് എടുത്തുകാണിക്കുക"
 
 #: source/options/optcolor.src#RID_SVXPAGE_COLORCONFIG.CT_COLORCONFIG.WN_SCROLL.FT_SQLIDENTIFIER.FixedText.Text
-#, fuzzy
 msgid  "Identifier"
 msgstr "ഐഡന്റിഫയര്"
 
 #: source/options/optcolor.src#RID_SVXPAGE_COLORCONFIG.CT_COLORCONFIG.WN_SCROLL.FT_SQLNUMBER.FixedText.Text
-#, fuzzy
 msgid  "Number"
 msgstr "സംഖ്യ"
 
 #: source/options/optcolor.src#RID_SVXPAGE_COLORCONFIG.CT_COLORCONFIG.WN_SCROLL.FT_SQLSTRING.FixedText.Text
-#, fuzzy
 msgid  "String"
 msgstr "സ്ട്രിങ്ങ്"
 
 #: source/options/optcolor.src#RID_SVXPAGE_COLORCONFIG.CT_COLORCONFIG.WN_SCROLL.FT_SQLOPERATOR.FixedText.Text
-#, fuzzy
 msgid  "Operator"
 msgstr "പ്രവര്ത്തക"
 
@@ -3880,7 +3560,6 @@ msgid  "Parameter"
 msgstr ""
 
 #: source/options/optcolor.src#RID_SVXPAGE_COLORCONFIG.CT_COLORCONFIG.WN_SCROLL.FT_SQLCOMMENT.FixedText.Text
-#, fuzzy
 msgid  "Comment"
 msgstr "അഭിപ്രായം"
 
@@ -3897,32 +3576,26 @@ msgid  "Grammar check highlighting"
 msgstr ""
 
 #: source/options/optcolor.src#RID_SVXQB_DELETE_COLOR_CONFIG.QueryBox.Message
-#, fuzzy
 msgid  "Do you really want to delete the color scheme?"
 msgstr "താങ്കള്ക്ക് നിറവ്യവസ്ഥ നീക്കം ചെയ്യണോ ?"
 
 #: source/options/optcolor.src#RID_SVXSTR_COLOR_CONFIG_DELETE.String.Text
-#, fuzzy
 msgid  "Color Scheme Deletion"
 msgstr "നിറത്തിന്റെ വ്യവസ്ഥ നീക്കം ചെയ്യുക"
 
 #: source/options/optcolor.src#RID_SVXSTR_COLOR_CONFIG_SAVE1.String.Text
-#, fuzzy
 msgid  "Save scheme"
 msgstr "വ്യവസ്ഥ സംഭരിക്കുക"
 
 #: source/options/optcolor.src#RID_SVXSTR_COLOR_CONFIG_SAVE2.String.Text
-#, fuzzy
 msgid  "Name of color scheme"
 msgstr "നിറത്തിന്റെ വ്യവസ്ഥ പേര‍്"
 
 #: source/options/doclinkdialog.src#DLG_DOCUMENTLINK.FT_URL.FixedText.Text
-#, fuzzy
 msgid  "~Database file"
 msgstr "~ഡേറ്റാബെയിസ് ഫയല്‍"
 
 #: source/options/doclinkdialog.src#DLG_DOCUMENTLINK.PB_BROWSEFILE.PushButton.Text
-#, fuzzy
 msgid  "~Browse..."
 msgstr "~തെരയുക..."
 
@@ -3931,12 +3604,10 @@ msgid  "Registered ~name"
 msgstr ""
 
 #: source/options/doclinkdialog.src#DLG_DOCUMENTLINK.STR_EDIT_LINK.String.Text
-#, fuzzy
 msgid  "Edit Database Link"
 msgstr "ഡേറ്റാബെയിസ് കണ്ണി ചിട്ടപ്പെടുത്തുക"
 
 #: source/options/doclinkdialog.src#DLG_DOCUMENTLINK.STR_NEW_LINK.String.Text
-#, fuzzy
 msgid  "Create Database Link"
 msgstr "ഡേറ്റാബെയിസ് കണ്ണി നിര്‍മ്മിക്കുക"
 
@@ -3953,7 +3624,6 @@ msgid  "The name '$file$' is already used for another database.\nPlease choose a
 msgstr ""
 
 #: source/options/doclinkdialog.src#QUERY_DELETE_CONFIRM.QueryBox.Message
-#, fuzzy
 msgid  "Do you want to delete the entry?"
 msgstr "താങ്കള്ക്ക് നിഘണ്ടു  നീക്കം ചെയ്യണോ ?"
 
@@ -4415,32 +4085,26 @@ msgid  "Enable systray Quickstarter"
 msgstr ""
 
 #: source/options/optjava.src#RID_SVXPAGE_OPTIONS_JAVA.TabPage.Text
-#, fuzzy
 msgid  "Java"
 msgstr "ജാവാ"
 
 #: source/options/optjava.src#RID_SVXPAGE_OPTIONS_JAVA.FL_JAVA.FixedLine.Text
-#, fuzzy
 msgid  "Java options"
 msgstr "ജാവാ ഉപാധികള്‍"
 
 #: source/options/optjava.src#RID_SVXPAGE_OPTIONS_JAVA.CB_JAVA_ENABLE.CheckBox.Text
-#, fuzzy
 msgid  "~Use a Java runtime environment"
 msgstr "ഒരു ജാവാ റണ്‍ടൈം എന്‍വയോണ്മെന്റ് ~ഉപയോഗിക്കുക"
 
 #: source/options/optjava.src#RID_SVXPAGE_OPTIONS_JAVA.FT_JAVA_FOUND.FixedText.Text
-#, fuzzy
 msgid  "~Java runtime environments (JRE) already installed:"
 msgstr "~ജാവാ റണ്‍ടൈം എന്‍വയോണ്‍മെന്റുകള്‍ (JRE) ഇന്‍സ്റ്റോള്‍ ചെയ്തിട്ടുണ്ടു്:"
 
 #: source/options/optjava.src#RID_SVXPAGE_OPTIONS_JAVA.PB_ADD.PushButton.Text
-#, fuzzy
 msgid  "~Add..."
 msgstr "~ചേര്‍ക്കുക..."
 
 #: source/options/optjava.src#RID_SVXPAGE_OPTIONS_JAVA.PB_PARAMETER.PushButton.Text
-#, fuzzy
 msgid  "~Parameters..."
 msgstr "~പരാമീറ്ററുകള്‍..."
 
@@ -4449,7 +4113,6 @@ msgid  "~Class Path..."
 msgstr ""
 
 #: source/options/optjava.src#RID_SVXPAGE_OPTIONS_JAVA.STR_INSTALLED_IN.String.Text
-#, fuzzy
 msgid  "Location: "
 msgstr "സ്ഥാനം: "
 
@@ -4458,7 +4121,6 @@ msgid  "with accessibility support"
 msgstr ""
 
 #: source/options/optjava.src#RID_SVXPAGE_OPTIONS_JAVA.STR_ADDDLGTEXT.String.Text
-#, fuzzy
 msgid  "Select a Java Runtime Environment"
 msgstr "ഒരു ജാവാ റണ്‍ടൈം എന്‍വയോണ്‍മെന്റ് തെരഞ്ഞെടുക്കുക"
 
@@ -4467,7 +4129,6 @@ msgid  "Vendor"
 msgstr ""
 
 #: source/options/optjava.src#RID_SVXPAGE_OPTIONS_JAVA.STR_HEADER_VERSION.String.Text
-#, fuzzy
 msgid  "Version"
 msgstr "പതിപ്പു്"
 
@@ -4476,12 +4137,10 @@ msgid  "Features"
 msgstr ""
 
 #: source/options/optjava.src#RID_SVXDLG_JAVA_PARAMETER.ModalDialog.Text
-#, fuzzy
 msgid  "Java Start Parameters"
 msgstr "ജാവാ പ്രാരംഭ പരാമീറ്ററുകള്‍"
 
 #: source/options/optjava.src#RID_SVXDLG_JAVA_PARAMETER.FT_PARAMETER.FixedText.Text
-#, fuzzy
 msgid  "Java start ~parameter"
 msgstr "ജാവാ പ്രാരംഭ ~പരാമീറ്റര്‍"
 
@@ -4498,7 +4157,6 @@ msgid  "For example: -Dmyprop=c:\program files\java"
 msgstr ""
 
 #: source/options/optjava.src#RID_SVXDLG_JAVA_PARAMETER.PB_REMOVE.PushButton.Text
-#, fuzzy
 msgid  "~Remove"
 msgstr "~നീക്കം ചെയ്യുക"
 
@@ -4511,17 +4169,14 @@ msgid  "A~ssigned folders and archives"
 msgstr ""
 
 #: source/options/optjava.src#RID_SVXDLG_JAVA_CLASSPATH.PB_ADDARCHIVE.PushButton.Text
-#, fuzzy
 msgid  "~Add Archive..."
 msgstr "ആര്‍ക്കൈവ് ~ചേര്‍ക്കുക..."
 
 #: source/options/optjava.src#RID_SVXDLG_JAVA_CLASSPATH.PB_ADDPATH.PushButton.Text
-#, fuzzy
 msgid  "Add ~Folder"
 msgstr "~ഫോള്‍ഡര്‍ ചേര്‍ക്കുക"
 
 #: source/options/optjava.src#RID_SVXDLG_JAVA_CLASSPATH.PB_REMOVE_PATH.PushButton.Text
-#, fuzzy
 msgid  "~Remove"
 msgstr "~നീക്കം ചെയ്യുക"
 
@@ -4584,6 +4239,11 @@ msgstr ""
 #: source/options/connpooloptions.src#RID_OFAPAGE_CONNPOOLOPTIONS.STR_NO.String.Text
 msgid  "No"
 msgstr ""
+
+#: source/options/optsave.src#TEXT_SAVEPAGE.#define.Text
+#, fuzzy
+msgid  "Save"
+msgstr "സംഭരിക്കുക"
 
 #: source/options/optsave.src#RID_SFXPAGE_SAVE.LB_LOAD.FixedLine.Text
 #, fuzzy
@@ -4662,8 +4322,9 @@ msgid  "Size optimization for ODF format"
 msgstr " XML രൂപരേഖയ്ക്ക് പരിമാണം ശരിയാക്കുക"
 
 #: source/options/optsave.src#RID_SFXPAGE_SAVE.BTN_WARNALIENFORMAT.CheckBox.Text
+#, fuzzy
 msgid  "Warn when not saving in ODF or default format"
-msgstr ""
+msgstr "ഓപ്പണ് ഡോക്കുമെന്റില് അഥവാ സംസ്ഥാപിത ഡോക്കുമെന്റില്  സംഭരിച്ചില്ലെങ്കില് താക്കീത് ചെയ്യുക."
 
 #: source/options/optsave.src#RID_SFXPAGE_SAVE.FT_APP.FixedText.Text
 #, fuzzy
@@ -4715,13 +4376,9 @@ msgid  "Not using ODF 1.2 Extended may cause infomation to be lost."
 msgstr ""
 
 #: source/options/optsave.src#RID_SVXDLG_FILTER_WARNING.FT_FILTER_WARNING.FixedText.Text
-msgid  "Using "%1" as default file format may cause information loss.\n"
-msgstr ""
-
-#: source/options/optsave.src#TEXT_SAVEPAGE.#define.Text
 #, fuzzy
-msgid  "Save"
-msgstr "സംഭരിക്കുക"
+msgid  "Using \"%1\" as default file format may cause information loss.\n"
+msgstr " \"%1\" സംസ്ഥാപിത രൂപരേഖയായി ഉപയോഗിക്കുന്നത് വിവരങ്ങള് നഷ്ടമാകാന്  കാരണമില്ല.\n"
 
 #: source/options/optimprove.src#RID_SVXPAGE_IMPROVEMENT.TabPage.Text
 msgid  "%PRODUCTNAME Improvement Program"
@@ -4820,7 +4477,6 @@ msgid  "Color table"
 msgstr ""
 
 #: source/options/optchart.src#RID_OPTPAGE_CHART_DEFCOLORS.PB_RESET_TO_DEFAULT.PushButton.Text
-#, fuzzy
 msgid  "~Default"
 msgstr "~സ്വതവേയുള്ള"
 
@@ -4863,8 +4519,9 @@ msgid  "Edit Paths: %1"
 msgstr ""
 
 #: source/options/optpath.src#RID_SVXERR_OPT_DOUBLEPATHS.ErrorBox.Message
+#, fuzzy
 msgid  "The configuration and mail directories must be specified as separate directories.\nPlease choose a new path."
-msgstr ""
+msgstr " രൂപരേഖയും മെയില് ഡയറക്ട്രിയും രണ്ടു ഡയറക്ട്രിയായി കാണിക്കണം. ദയവായി പുതിയ മാര്ഗ്ഗം തിരഞ്ഞെടുക്കുക."
 
 #: source/options/optpath.src#RID_SVXSTR_KEY_CONFIG_DIR.String.Text
 #, fuzzy
@@ -4977,60 +4634,50 @@ msgid  "Writing aids"
 msgstr "എഴുത്തു് സഹായികള്‍"
 
 #: source/options/optaccessibility.src#RID_SVXPAGE_ACCESSIBILITYCONFIG.FL_MISCELLANEOUS.FixedLine.Text
-#, fuzzy
 msgid  "Miscellaneous options"
 msgstr "വിവിധ ഐച്ഛികങ്ങള്"
 
 #: source/options/optaccessibility.src#RID_SVXPAGE_ACCESSIBILITYCONFIG.CB_ACCESSIBILITY_TOOL.CheckBox.Text
-#, fuzzy
 msgid  "Support ~assistive technology tools (program restart required)"
 msgstr " സഹായക ടെക്നോളജി ഉപകരണം പിന്താങ്ങുക (പ്രോഗ്രാം പുനരാരംഭിക്കണം.)"
 
 #: source/options/optaccessibility.src#RID_SVXPAGE_ACCESSIBILITYCONFIG.CB_TEXTSELECTION.CheckBox.Text
 msgid  "Use te~xt selection cursor in read-only text documents"
-msgstr ""
+msgstr "വായിക്കാന് മാത്രം കഴിയുന്ന ടെക്സ്റ്റ് ഡോക്കുമെന്റിന‌് ടെക്സ്റ്റ് തിരഞ്ഞെടുക്കല് കര്സര് ഉപയോഗിക്കുക."
 
 #: source/options/optaccessibility.src#RID_SVXPAGE_ACCESSIBILITYCONFIG.CB_ANIMATED_GRAPHICS.CheckBox.Text
-#, fuzzy
 msgid  "Allow animated ~graphics"
 msgstr "ആനിമേറ്റഡ്"
 
 #: source/options/optaccessibility.src#RID_SVXPAGE_ACCESSIBILITYCONFIG.CB_ANIMATED_TEXTS.CheckBox.Text
-#, fuzzy
 msgid  "Allow animated ~text"
 msgstr "ആനിമേറ്റഡ് ടെക്സ്റ്റ് അനുവദിക്കുക"
 
 #: source/options/optaccessibility.src#RID_SVXPAGE_ACCESSIBILITYCONFIG.CB_TIPHELP.CheckBox.Text
-#, fuzzy
 msgid  "~Help tips disappear after "
 msgstr "...നുശേഷം സഹായ പൊടിക്കൈ അപ്രത്യക്ഷമാകും "
 
 #: source/options/optaccessibility.src#RID_SVXPAGE_ACCESSIBILITYCONFIG.FT_TIPHELP.FixedText.Text
-#, fuzzy
 msgid  "seconds"
 msgstr "സെക്കന്റുകള്"
 
 #: source/options/optaccessibility.src#RID_SVXPAGE_ACCESSIBILITYCONFIG.FL_HC_OPTIONS.FixedLine.Text
-#, fuzzy
 msgid  "Options for high contrast appearance"
 msgstr "ഉയര്ന്ന വിശ്ലേഷണത്തില് പ്രത്യക്ഷപ്പെടുന്നതിനുള്ള ഐച്ഛികം"
 
 #: source/options/optaccessibility.src#RID_SVXPAGE_ACCESSIBILITYCONFIG.CB_AUTO_DETECT_HC.CheckBox.Text
 msgid  "Automatically ~detect high contrast mode of operating system"
-msgstr ""
+msgstr "സ്വയം പരിശോധിക്കുന്ന  ഉയര്ന്ന  വിശ്ലേഷണ രീതിയിലുള്ള   ഓപ്പറേറ്റിംഗ് സിസ്റ്റം"
 
 #: source/options/optaccessibility.src#RID_SVXPAGE_ACCESSIBILITYCONFIG.CB_AUTOMATIC_FONT_COLOR.CheckBox.Text
-#, fuzzy
 msgid  "Use automatic font ~color for screen display"
 msgstr "സ്ക്രീന് പ്രദര്ശനത്തിന് സ്വയമേയുള്ള ഫോണ്ട് നിറം ഉപയോഗിക്കുക."
 
 #: source/options/optaccessibility.src#RID_SVXPAGE_ACCESSIBILITYCONFIG.CB_PAGE_PREVIEWS.CheckBox.Text
-#, fuzzy
 msgid  "~Use system colors for page previews"
 msgstr "പേജ് ദൃശ്യമാക്കലിന‌് സിസ്റ്റത്തിന്റെ നിറം ഉപയോഗിക്കുക"
 
 #: source/options/optgdlg.src#OFA_TP_MISC.FL_HELP.FixedLine.Text
-#, fuzzy
 msgid  "Help"
 msgstr "സഹായം"
 
@@ -5047,17 +4694,14 @@ msgid  "~Help Agent"
 msgstr ""
 
 #: source/options/optgdlg.src#OFA_TP_MISC.PB_HELPAGENT_RESET.PushButton.Text
-#, fuzzy
 msgid  "~Reset Help Agent"
 msgstr "സഹായിയെ ~വീണ്ടും സജ്ജമാക്കുക"
 
 #: source/options/optgdlg.src#OFA_TP_MISC.FT_HELPFORMAT.FixedText.Text
-#, fuzzy
 msgid  "Help ~formatting"
 msgstr "~ഫോര്‍മാറ്റിങിനുള്ള സഹായം"
 
 #: source/options/optgdlg.src#OFA_TP_MISC.LB_HELPFORMAT.item1.StringList.item
-#, fuzzy
 msgid  "Default"
 msgstr "സ്വതവേയുള്ള"
 
@@ -5090,7 +4734,7 @@ msgid  "Document status"
 msgstr ""
 
 #: source/options/optgdlg.src#OFA_TP_MISC.CB_DOCSTATUS.CheckBox.Text
-msgid  "~Printing sets "document modified" status"
+msgid  "~Printing sets \"document modified\" status"
 msgstr ""
 
 #: source/options/optgdlg.src#OFA_TP_MISC.FL_TWOFIGURE.FixedLine.Text
@@ -5130,22 +4774,18 @@ msgid  "Icon size"
 msgstr ""
 
 #: source/options/optgdlg.src#OFA_TP_VIEW.LB_ICONSIZE.item1.StringList.item
-#, fuzzy
 msgid  "Automatic"
 msgstr "ഓട്ടോമാറ്റിക്"
 
 #: source/options/optgdlg.src#OFA_TP_VIEW.LB_ICONSIZE.item2.StringList.item
-#, fuzzy
 msgid  "Small"
 msgstr "ചെറിയ"
 
 #: source/options/optgdlg.src#OFA_TP_VIEW.LB_ICONSIZE.item3.StringList.item
-#, fuzzy
 msgid  "Large"
 msgstr "വലിയ"
 
 #: source/options/optgdlg.src#OFA_TP_VIEW.LB_ICONSTYLE.item1.StringList.item
-#, fuzzy
 msgid  "Automatic"
 msgstr "ഓട്ടോമാറ്റിക്"
 
@@ -5190,7 +4830,6 @@ msgid  "Icons in menus"
 msgstr ""
 
 #: source/options/optgdlg.src#OFA_TP_VIEW.LB_MENU_ICONS.item1.StringList.item
-#, fuzzy
 msgid  "Automatic"
 msgstr "ഓട്ടോമാറ്റിക്"
 
@@ -5235,47 +4874,38 @@ msgid  "Mouse positioning"
 msgstr ""
 
 #: source/options/optgdlg.src#OFA_TP_VIEW.LB_MOUSEPOS.item1.StringList.item
-#, fuzzy
 msgid  "Default button"
 msgstr "സ്വതവേയുള്ള ബട്ടണ്‍"
 
 #: source/options/optgdlg.src#OFA_TP_VIEW.LB_MOUSEPOS.item2.StringList.item
-#, fuzzy
 msgid  "Dialog center"
 msgstr "ഡയലോഗ് സെന്റര്‍"
 
 #: source/options/optgdlg.src#OFA_TP_VIEW.LB_MOUSEPOS.item3.StringList.item
-#, fuzzy
 msgid  "No automatic positioning"
 msgstr "ഓട്ടോമാറ്റിക് സ്ഥാനങ്ങളില്ല"
 
 #: source/options/optgdlg.src#OFA_TP_VIEW.FT_MOUSEMIDDLE.FixedText.Text
-#, fuzzy
 msgid  "Middle mouse button"
 msgstr "മദ്ധ്യത്തിലുള്ള മൌസ് ബട്ടണ്‍"
 
 #: source/options/optgdlg.src#OFA_TP_VIEW.LB_MOUSEMIDDLE.item1.StringList.item
-#, fuzzy
 msgid  "No function"
 msgstr "ഫംഗ്ഷന്‍ ലഭ്യമല്ല"
 
 #: source/options/optgdlg.src#OFA_TP_VIEW.LB_MOUSEMIDDLE.item2.StringList.item
-#, fuzzy
 msgid  "Automatic scrolling"
 msgstr "ഓട്ടോമാറ്റിക് സ്ക്രോളിങ്"
 
 #: source/options/optgdlg.src#OFA_TP_VIEW.LB_MOUSEMIDDLE.item3.StringList.item
-#, fuzzy
 msgid  "Paste clipboard"
 msgstr "ക്ലിപ്ബോര്‍ഡില്‍ ഒട്ടിക്കുക"
 
 #: source/options/optgdlg.src#OFA_TP_VIEW.FL_SELECTION.FixedLine.Text
-#, fuzzy
 msgid  "Selection"
 msgstr "തിരഞ്ഞെടുക്കല്‍"
 
 #: source/options/optgdlg.src#OFA_TP_VIEW.CB_SELECTION.CheckBox.Text
-#, fuzzy
 msgid  "Transparency"
 msgstr "സാതുര്യത"
 
@@ -5399,7 +5029,6 @@ msgid  "Apply"
 msgstr ""
 
 #: source/options/fontsubs.src#RID_SVX_FONT_SUBSTITUTION.TBX_SUBSTNEWDEL.BT_SUBSTDELETE.ToolBoxItem.Text
-#, fuzzy
 msgid  "Delete"
 msgstr "നീക്കം ചെയ്യുക"
 
@@ -5436,116 +5065,94 @@ msgid  "Replace with"
 msgstr ""
 
 #: source/options/fontsubs.src#RID_SVX_FONT_SUBSTITUTION.STR_AUTOMATIC.String.Text
-#, fuzzy
 msgid  "Automatic"
 msgstr "ഓട്ടോമാറ്റിക്"
 
 #: source/options/optdict.src#RID_SFXDLG_NEWDICT.ModalDialog.Text
-#, fuzzy
 msgid  "New Dictionary"
 msgstr "പുതിയ നിഘണ്ടു"
 
 #: source/options/optdict.src#RID_SFXDLG_NEWDICT.FT_DICTNAME.FixedText.Text
-#, fuzzy
 msgid  "~Name"
 msgstr " നാമം"
 
 #: source/options/optdict.src#RID_SFXDLG_NEWDICT.FT_DICTLANG.FixedText.Text
-#, fuzzy
 msgid  "~Language"
 msgstr "ഭാഷ"
 
 #: source/options/optdict.src#RID_SFXDLG_NEWDICT.BTN_EXCEPT.CheckBox.Text
-#, fuzzy
 msgid  "~Exception (-)"
 msgstr "ആക്ഷേപം (-)"
 
 #: source/options/optdict.src#RID_SFXDLG_NEWDICT.GB_NEWDICT.FixedLine.Text
-#, fuzzy
 msgid  "Dictionary"
 msgstr "നിഘണ്ടു"
 
 #: source/options/optdict.src#RID_SFXDLG_EDITDICT.ModalDialog.Text
-#, fuzzy
 msgid  "Edit Custom Dictionary"
 msgstr "കസ്റ്റം നിഘണ്ടു  എഡിറ്റ് ചെയ്യുക"
 
 #: source/options/optdict.src#RID_SFXDLG_EDITDICT.FT_BOOK.FixedText.Text
-#, fuzzy
 msgid  "~Book"
 msgstr "പുസ്തകം"
 
 #: source/options/optdict.src#RID_SFXDLG_EDITDICT.FT_DICTLANG.FixedText.Text
-#, fuzzy
 msgid  "~Language"
 msgstr "ഭാഷ"
 
 #: source/options/optdict.src#RID_SFXDLG_EDITDICT.FT_WORD.FixedText.Text
-#, fuzzy
 msgid  "~Word"
 msgstr "വാക്ക്"
 
 #: source/options/optdict.src#RID_SFXDLG_EDITDICT.FT_REPLACE.FixedText.Text
-#, fuzzy
 msgid  "Replace ~By:"
 msgstr "മാറ്റി വെച്ചത്"
 
 #: source/options/optdict.src#RID_SFXDLG_EDITDICT.PB_NEW_REPLACE.PushButton.Text
-#, fuzzy
 msgid  "~New"
 msgstr " പുതിയ"
 
 #: source/options/optdict.src#RID_SFXDLG_EDITDICT.PB_DELETE_REPLACE.PushButton.Text
-#, fuzzy
 msgid  "~Delete"
 msgstr "~വെട്ടി നീക്കുക"
 
 #: source/options/optdict.src#RID_SFXDLG_EDITDICT.STR_MODIFY.String.Text
-#, fuzzy
 msgid  "~Replace"
 msgstr "മാറ്റി വയ്ക്കുക"
 
 #: source/options/optdict.src#RID_SFXDLG_EDITDICT.BTN_EDITCLOSE.CancelButton.Text
-#, fuzzy
 msgid  "~Close"
 msgstr " നിര്ത്തുക"
 
 #: source/options/optdict.src#RID_SVXSTR_OPT_DOUBLE_DICTS.String.Text
 msgid  "The specified name already exists.\nPlease enter a new name."
-msgstr ""
+msgstr "പറഞ്ഞിരിക്കുന്ന ഫയല് നാമം നിലവിലുണ്ട്. ദയവായി പുതിയ പേര‍് പ്രവേശിപ്പിക്കുക"
 
 #: source/options/optdict.src#RID_SFXQB_SET_LANGUAGE.QueryBox.Message
-#, fuzzy
 msgid  "Do you want to change the '%1' dictionary language?"
 msgstr "താങ്കള്ക്ക് '%1' നിഘണ്ടു ഭാഷയില് മാറ്റം വരുത്തണോ?"
 
 #: source/options/optlingu.src#RID_SVXDLG_EDIT_MODULES.ModalDialog.Text
-#, fuzzy
 msgid  "Edit Modules"
 msgstr "മോഡ്യൂളുകള് എഡിറ്റ് ചെയ്യുക"
 
 #: source/options/optlingu.src#RID_SVXDLG_EDIT_MODULES.FL_EDIT_MODULES_OPTIONS.FixedLine.Text
-#, fuzzy
 msgid  "Options"
 msgstr "ഐച്ഛികം"
 
 #: source/options/optlingu.src#RID_SVXDLG_EDIT_MODULES.FT_EDIT_MODULES_LANGUAGE.FixedText.Text
-#, fuzzy
 msgid  "Language"
 msgstr "ഭാഷ"
 
 #: source/options/optlingu.src#RID_SVXDLG_EDIT_MODULES.PB_EDIT_MODULES_PRIO_UP.PushButton.Text
-#, fuzzy
 msgid  "Move Up"
 msgstr "മുകളിലേക്ക് നീക്കുക"
 
 #: source/options/optlingu.src#RID_SVXDLG_EDIT_MODULES.PB_EDIT_MODULES_PRIO_DOWN.PushButton.Text
-#, fuzzy
 msgid  "Move Down"
 msgstr "താഴോട്ടു നീക്കുക"
 
 #: source/options/optlingu.src#RID_SVXDLG_EDIT_MODULES.PB_EDIT_MODULES_PRIO_BACK.PushButton.Text
-#, fuzzy
 msgid  "~Back"
 msgstr "പിന്നോട്ട്"
 
@@ -5554,22 +5161,18 @@ msgid  "~Get more dictionaries online..."
 msgstr ""
 
 #: source/options/optlingu.src#RID_SVXDLG_EDIT_MODULES.PB_OK.OKButton.Text
-#, fuzzy
 msgid  "Close"
 msgstr "അടയ്ക്കുക"
 
 #: source/options/optlingu.src#RID_SVXDLG_EDIT_MODULES.ST_SPELL.String.Text
-#, fuzzy
 msgid  "Spelling"
 msgstr "അക്ഷരപരിശോധന"
 
 #: source/options/optlingu.src#RID_SVXDLG_EDIT_MODULES.ST_HYPH.String.Text
-#, fuzzy
 msgid  "Hyphenation"
 msgstr "ഹൈഫനേഷന്‍"
 
 #: source/options/optlingu.src#RID_SVXDLG_EDIT_MODULES.ST_THES.String.Text
-#, fuzzy
 msgid  "Thesaurus"
 msgstr "നിഘണ്ടു"
 
@@ -5578,22 +5181,18 @@ msgid  "Grammar"
 msgstr ""
 
 #: source/options/optlingu.src#RID_SVXDLG_LNG_ED_NUM_PREBREAK.ModalDialog.Text
-#, fuzzy
 msgid  "Hyphenation"
 msgstr "ഹൈഫനേഷന്‍"
 
 #: source/options/optlingu.src#RID_SVXDLG_LNG_ED_NUM_PREBREAK.STR_NUM_PRE_BREAK_DLG.String.Text
-#, fuzzy
 msgid  "Characters before break"
 msgstr "വിച്ഛേദനത്തിനുശേഷമുള്ള അക്ഷരങ്ങള്"
 
 #: source/options/optlingu.src#RID_SVXDLG_LNG_ED_NUM_PREBREAK.STR_NUM_POST_BREAK_DLG.String.Text
-#, fuzzy
 msgid  "Characters after break"
 msgstr "വിച്ഛേദനത്തിനുമുന്പുള്ള അക്ഷരങ്ങള്"
 
 #: source/options/optlingu.src#RID_SVXDLG_LNG_ED_NUM_PREBREAK.STR_NUM_MIN_WORDLEN_DLG.String.Text
-#, fuzzy
 msgid  "Minimal word length"
 msgstr "വാക്കിന്റെ  ചുരുങ്ങിയ ദൈര്ഘ്യം "
 
@@ -5603,47 +5202,38 @@ msgid  "Options"
 msgstr "ഐച്ഛികം"
 
 #: source/options/optlingu.src#RID_SFXPAGE_LINGU.FL_LINGUISTIC.FixedLine.Text
-#, fuzzy
 msgid  "Writing aids"
 msgstr "എഴുത്തു് സഹായികള്‍"
 
 #: source/options/optlingu.src#RID_SFXPAGE_LINGU.FT_LINGU_MODULES.FixedText.Text
-#, fuzzy
 msgid  "Available language modules"
 msgstr "ലഭ്യമായ ഭാഷാ മോഡ്യൂള്"
 
 #: source/options/optlingu.src#RID_SFXPAGE_LINGU.PB_LINGU_MODULES_EDIT.PushButton.Text
-#, fuzzy
 msgid  "~Edit..."
 msgstr "~ചിട്ടപ്പെടുത്തുക..."
 
 #: source/options/optlingu.src#RID_SFXPAGE_LINGU.FT_LINGU_DICS.FixedText.Text
-#, fuzzy
 msgid  "User-defined dictionaries"
 msgstr "ഉപയോക്താവ് നിര്‍ണ്ണയിച്ചിട്ടുള്ള നിഘണ്ടുകള്‍"
 
 #: source/options/optlingu.src#RID_SFXPAGE_LINGU.PB_LINGU_DICS_NEW_DIC.PushButton.Text
-#, fuzzy
 msgid  "~New..."
 msgstr "പുതിയ"
 
 #: source/options/optlingu.src#RID_SFXPAGE_LINGU.PB_LINGU_DICS_EDIT_DIC.PushButton.Text
-#, fuzzy
 msgid  "Ed~it..."
 msgstr "~ചിട്ടപ്പെടുത്തുക..."
 
 #: source/options/optlingu.src#RID_SFXPAGE_LINGU.PB_LINGU_DICS_DEL_DIC.PushButton.Text
-#, fuzzy
 msgid  "~Delete"
 msgstr "നീക്കം ചെയ്യുക"
 
 #: source/options/optlingu.src#RID_SFXPAGE_LINGU.FT_LINGU_OPTIONS.FixedText.Text
-#, fuzzy
 msgid  "~Options"
 msgstr "ഐച്ഛികം"
 
 #: source/options/optlingu.src#RID_SFXPAGE_LINGU.PB_LINGU_OPTIONS_EDIT.PushButton.Text
-#, fuzzy
 msgid  "Edi~t..."
 msgstr "എഡിറ്റു ചെയ്യുക"
 
@@ -5652,27 +5242,22 @@ msgid  "~Get more dictionaries online..."
 msgstr ""
 
 #: source/options/optlingu.src#RID_SFXPAGE_LINGU.STR_CAPITAL_WORDS.String.Text
-#, fuzzy
 msgid  "Check uppercase words"
 msgstr "വലിയ അക്ഷരത്തിലുള്ള വാക്കുകള്  പരിശോധിക്കുക"
 
 #: source/options/optlingu.src#RID_SFXPAGE_LINGU.STR_WORDS_WITH_DIGITS.String.Text
-#, fuzzy
 msgid  "Check words with numbers "
 msgstr "സംഖ്യയുമായി വാക്കുകള് പരിശോധിക്കുക"
 
 #: source/options/optlingu.src#RID_SFXPAGE_LINGU.STR_CAPITALIZATION.String.Text
-#, fuzzy
 msgid  "Check capitalization"
 msgstr "വലിയ അക്ഷരം പരിശോധിക്കുക"
 
 #: source/options/optlingu.src#RID_SFXPAGE_LINGU.STR_SPELL_SPECIAL.String.Text
-#, fuzzy
 msgid  "Check special regions"
 msgstr "വിശേഷപ്പെട്ട പ്രദേശം പരിശോധിക്കുക"
 
 #: source/options/optlingu.src#RID_SFXPAGE_LINGU.STR_SPELL_AUTO.String.Text
-#, fuzzy
 msgid  "Check spelling as you type"
 msgstr "താങ്കള്  ടൈപ്പുചെയ്തതുപോലെ അക്ഷരം പരിശോധിക്കുക"
 
@@ -5681,27 +5266,22 @@ msgid  "Check grammar as you type"
 msgstr ""
 
 #: source/options/optlingu.src#RID_SFXPAGE_LINGU.STR_NUM_MIN_WORDLEN.String.Text
-#, fuzzy
 msgid  "Minimal number of characters for hyphenation: "
 msgstr "ഹൈഫനേഷന‌്  മിതമായ അക്ഷരങ്ങള്: "
 
 #: source/options/optlingu.src#RID_SFXPAGE_LINGU.STR_NUM_PRE_BREAK.String.Text
-#, fuzzy
 msgid  "Characters before line break: "
 msgstr "രേഖാ വിഭജനത്തിനു മുന്പ് അക്ഷരങ്ങള്: "
 
 #: source/options/optlingu.src#RID_SFXPAGE_LINGU.STR_NUM_POST_BREAK.String.Text
-#, fuzzy
 msgid  "Characters after line break: "
 msgstr "രേഖാ വിഭജനത്തിനുശേഷം അക്ഷരങ്ങള്: "
 
 #: source/options/optlingu.src#RID_SFXPAGE_LINGU.STR_HYPH_AUTO.String.Text
-#, fuzzy
 msgid  "Hyphenate without inquiry"
 msgstr "അന്വേഷിക്കാതെ ഹൈഫനേറ്റ് ചെയ്യുക"
 
 #: source/options/optlingu.src#RID_SFXPAGE_LINGU.STR_HYPH_SPECIAL.String.Text
-#, fuzzy
 msgid  "Hyphenate special regions"
 msgstr "വിശിഷ്ട പ്രദേശം ഹൈഫനേറ്റ് ചെയ്യുക"
 
@@ -5733,22 +5313,18 @@ msgid  "Registered name"
 msgstr ""
 
 #: source/options/dbregister.src#RID_SFXPAGE_DBREGISTER.FT_PATH.FixedText.Text
-#, fuzzy
 msgid  "Database file"
 msgstr "~ഡേറ്റാബെയിസ് ഫയല്‍"
 
 #: source/options/dbregister.src#RID_SFXPAGE_DBREGISTER.BTN_NEW.PushButton.Text
-#, fuzzy
 msgid  "~New..."
 msgstr "പുതിയ"
 
 #: source/options/dbregister.src#RID_SFXPAGE_DBREGISTER.BTN_EDIT.PushButton.Text
-#, fuzzy
 msgid  "~Edit..."
 msgstr "~ചിട്ടപ്പെടുത്തുക..."
 
 #: source/options/dbregister.src#RID_SFXPAGE_DBREGISTER.BTN_DELETE.PushButton.Text
-#, fuzzy
 msgid  "~Delete"
 msgstr "~വെട്ടി നീക്കുക"
 
@@ -5757,27 +5333,22 @@ msgid  "Registered databases"
 msgstr ""
 
 #: source/options/optfltr.src#RID_OFAPAGE_MSFILTEROPT.GB_WORD.FixedLine.Text
-#, fuzzy
 msgid  "Microsoft Word 97/2000/XP"
 msgstr "Microsoft Word 97/2000/XP"
 
 #: source/options/optfltr.src#RID_OFAPAGE_MSFILTEROPT.CB_WBAS_CODE.CheckBox.Text
-#, fuzzy
 msgid  "Load Basic ~code"
 msgstr "ബേസിക് ~കോഡ് ലഭ്യമാക്കുക"
 
 #: source/options/optfltr.src#RID_OFAPAGE_MSFILTEROPT.CB_WBAS_STG.CheckBox.Text
-#, fuzzy
 msgid  "Save ~original Basic code"
 msgstr "~യഥാര്‍ത്ഥ ബേസിക് കോഡ് സൂക്ഷിക്കുക"
 
 #: source/options/optfltr.src#RID_OFAPAGE_MSFILTEROPT.GB_EXCEL.FixedLine.Text
-#, fuzzy
 msgid  "Microsoft Excel 97/2000/XP"
 msgstr "Microsoft Word 97/2000/XP"
 
 #: source/options/optfltr.src#RID_OFAPAGE_MSFILTEROPT.CB_EBAS_CODE.CheckBox.Text
-#, fuzzy
 msgid  "Lo~ad Basic code"
 msgstr "ബേസിക് കോഡ് ~ലഭ്യമാക്കുക"
 
@@ -5786,22 +5357,18 @@ msgid  "E~xecutable code"
 msgstr ""
 
 #: source/options/optfltr.src#RID_OFAPAGE_MSFILTEROPT.CB_EBAS_STG.CheckBox.Text
-#, fuzzy
 msgid  "Sa~ve original Basic code"
 msgstr "യഥാര്‍ത്ഥ ബേസിക് കോഡ് സൂക്ഷി~ക്കുക"
 
 #: source/options/optfltr.src#RID_OFAPAGE_MSFILTEROPT.GB_PPOINT.FixedLine.Text
-#, fuzzy
 msgid  "Microsoft PowerPoint 97/2000/XP"
 msgstr "Microsoft PowerPoint 97/2000/XP"
 
 #: source/options/optfltr.src#RID_OFAPAGE_MSFILTEROPT.CB_PBAS_CODE.CheckBox.Text
-#, fuzzy
 msgid  "Load Ba~sic code"
 msgstr "~ബേസിക് കോഡ് ലഭ്യമാക്കുക"
 
 #: source/options/optfltr.src#RID_OFAPAGE_MSFILTEROPT.CB_PBAS_STG.CheckBox.Text
-#, fuzzy
 msgid  "Sav~e original Basic code"
 msgstr "യഥാര്‍ത്ഥ ബേസിക് കോഡ് സൂക്ഷി~ക്കുക"
 
@@ -5938,112 +5505,90 @@ msgid  "Ctrl-click required to follow hyperlinks"
 msgstr ""
 
 #: source/options/optasian.src#RID_SVXPAGE_ASIAN_LAYOUT.GB_KERNING.FixedLine.Text
-#, fuzzy
 msgid  "Kerning"
 msgstr "കെര്ണ്ണിഗ്"
 
 #: source/options/optasian.src#RID_SVXPAGE_ASIAN_LAYOUT.RB_CHAR_KERNING.RadioButton.Text
-#, fuzzy
 msgid  "~Western characters only"
 msgstr " പാശ്ചാത്തല അക്ഷരങ്ങള് മാത്രം"
 
 #: source/options/optasian.src#RID_SVXPAGE_ASIAN_LAYOUT.RB_CHAR_PUNCT.RadioButton.Text
-#, fuzzy
 msgid  "Western ~text and Asian punctuation"
 msgstr "പാശ്ചാത്തല ടെക്സ്റ്റും ഏഷ്യന് വിരാമചിഹ്നവും"
 
 #: source/options/optasian.src#RID_SVXPAGE_ASIAN_LAYOUT.GB_CHAR_DIST.FixedLine.Text
-#, fuzzy
 msgid  "Character spacing"
 msgstr "അക്ഷരത്തിന്റെ അകലം"
 
 #: source/options/optasian.src#RID_SVXPAGE_ASIAN_LAYOUT.RB_NO_COMP.RadioButton.Text
-#, fuzzy
 msgid  "~No compression"
 msgstr "സങ്കേചിപ്പിച്ചിട്ടില്ല"
 
 #: source/options/optasian.src#RID_SVXPAGE_ASIAN_LAYOUT.RB_PUNCT_COMP.RadioButton.Text
-#, fuzzy
 msgid  "~Compress punctuation only"
 msgstr "വിരാമചിഹ്നം മാത്രം സങ്കേചിപ്പിച്ചു"
 
 #: source/options/optasian.src#RID_SVXPAGE_ASIAN_LAYOUT.RB_PUNCT_KANA_COMP.RadioButton.Text
-#, fuzzy
 msgid  "Compress ~punctuation and Japanese Kana"
 msgstr "വിരാമ"
 
 #: source/options/optasian.src#RID_SVXPAGE_ASIAN_LAYOUT.GB_START_END.FixedLine.Text
-#, fuzzy
 msgid  "First and last characters"
 msgstr "ആദ്യത്തെയും അവസാനത്തെയും അക്ഷരം"
 
 #: source/options/optasian.src#RID_SVXPAGE_ASIAN_LAYOUT.FT_LANGUAGE.FixedText.Text
-#, fuzzy
 msgid  "~Language"
 msgstr "ഭാഷ"
 
 #: source/options/optasian.src#RID_SVXPAGE_ASIAN_LAYOUT.CB_STANDARD.CheckBox.Text
-#, fuzzy
 msgid  "~Default"
 msgstr "~സ്വതവേയുള്ള"
 
 #: source/options/optasian.src#RID_SVXPAGE_ASIAN_LAYOUT.FT_START.FixedText.Text
-#, fuzzy
 msgid  "Not at start of line:"
 msgstr "രേഖയുടെ ആരംഭത്തിലല്ല"
 
 #: source/options/optasian.src#RID_SVXPAGE_ASIAN_LAYOUT.FT_END.FixedText.Text
-#, fuzzy
 msgid  "Not at end of line:"
 msgstr "രേഖയുടെ അവസാനത്തിലല്ല"
 
 #: source/options/optasian.src#RID_SVXPAGE_ASIAN_LAYOUT.FT_HINT.FixedText.Text
-#, fuzzy
 msgid  "Without user-defined line break symbols"
 msgstr "ഉപഭോക്തൃ നിര്വചിത രേഖ വിച്ഛേദനചിഹ്നമില്ലാതെ"
 
 #: source/options/optasian.src#RID_SVXPAGE_ASIAN_LAYOUT.FixedText.Text
-#, fuzzy
 msgid  "Proxy"
 msgstr "പ്രോക്സി"
 
 #: source/options/opthtml.src#RID_OFAPAGE_HTMLOPT.FT_SIZE1.FixedText.Text
-#, fuzzy
 msgid  "Size ~1"
 msgstr "വ്യാപ്തി ~1"
 
 #: source/options/opthtml.src#RID_OFAPAGE_HTMLOPT.FT_SIZE2.FixedText.Text
-#, fuzzy
 msgid  "Size ~2"
 msgstr "വ്യാപ്തി ~2"
 
 #: source/options/opthtml.src#RID_OFAPAGE_HTMLOPT.FT_SIZE3.FixedText.Text
-#, fuzzy
 msgid  "Size ~3"
 msgstr "വ്യാപ്തി ~3"
 
 #: source/options/opthtml.src#RID_OFAPAGE_HTMLOPT.FT_SIZE4.FixedText.Text
-#, fuzzy
 msgid  "Size ~4"
 msgstr "വ്യാപ്തി ~4"
 
 #: source/options/opthtml.src#RID_OFAPAGE_HTMLOPT.FT_SIZE5.FixedText.Text
-#, fuzzy
 msgid  "Size ~5"
 msgstr "വ്യാപ്തി ~5"
 
 #: source/options/opthtml.src#RID_OFAPAGE_HTMLOPT.FT_SIZE6.FixedText.Text
-#, fuzzy
 msgid  "Size ~6"
 msgstr "വ്യാപ്തി ~6"
 
 #: source/options/opthtml.src#RID_OFAPAGE_HTMLOPT.FT_SIZE7.FixedText.Text
-#, fuzzy
 msgid  "Size ~7"
 msgstr "വ്യാപ്തി ~7"
 
 #: source/options/opthtml.src#RID_OFAPAGE_HTMLOPT.GB_FONTSIZE.FixedLine.Text
-#, fuzzy
 msgid  "Font sizes"
 msgstr "അക്ഷരസഞ്ചയത്തിന്റെ വ്യാപ്തികള്‍"
 
@@ -6080,7 +5625,6 @@ msgid  "~Copy local graphics to Internet"
 msgstr ""
 
 #: source/options/opthtml.src#RID_OFAPAGE_HTMLOPT.FT_CHARSET.FixedText.Text
-#, fuzzy
 msgid  "Character set"
 msgstr "അക്ഷര കൂട്ടം"
 
@@ -6180,6 +5724,26 @@ msgid  "Ty~pe"
 msgstr "~തരം"
 
 #: source/tabpages/tabarea.src#RID_SVXPAGE_TRANSPARENCE.LB_TRGR_GRADIENT_TYPES.Default.StringList.item
+msgid  "Linear"
+msgstr ""
+
+#: source/tabpages/tabarea.src#RID_SVXPAGE_TRANSPARENCE.LB_TRGR_GRADIENT_TYPES.Default.StringList.item
+msgid  "Axial"
+msgstr ""
+
+#: source/tabpages/tabarea.src#RID_SVXPAGE_TRANSPARENCE.LB_TRGR_GRADIENT_TYPES.Default.StringList.item
+msgid  "Radial"
+msgstr ""
+
+#: source/tabpages/tabarea.src#RID_SVXPAGE_TRANSPARENCE.LB_TRGR_GRADIENT_TYPES.Default.StringList.item
+msgid  "Ellipsoid"
+msgstr ""
+
+#: source/tabpages/tabarea.src#RID_SVXPAGE_TRANSPARENCE.LB_TRGR_GRADIENT_TYPES.Default.StringList.item
+msgid  "Quadratic"
+msgstr ""
+
+#: source/tabpages/tabarea.src#RID_SVXPAGE_TRANSPARENCE.LB_TRGR_GRADIENT_TYPES.Default.StringList.item
 #, fuzzy
 msgid  "Square"
 msgstr "ചതുരം"
@@ -6228,6 +5792,25 @@ msgstr "വിസ്താരം"
 #: source/tabpages/tabarea.src#RID_SVXPAGE_AREA.FL_PROP.FixedLine.Text
 msgid  "Fill"
 msgstr ""
+
+#: source/tabpages/tabarea.src#RID_SVXPAGE_AREA.LB_AREA_TYPE.Default.StringList.item
+#, fuzzy
+msgid  "None"
+msgstr "ഒന്നുമില്ല"
+
+#: source/tabpages/tabarea.src#RID_SVXPAGE_AREA.LB_AREA_TYPE.Default.StringList.item
+#, fuzzy
+msgid  "Color"
+msgstr "നിറം"
+
+#: source/tabpages/tabarea.src#RID_SVXPAGE_AREA.LB_AREA_TYPE.Default.StringList.item
+msgid  "Gradient"
+msgstr ""
+
+#: source/tabpages/tabarea.src#RID_SVXPAGE_AREA.LB_AREA_TYPE.Default.StringList.item
+#, fuzzy
+msgid  "Hatching"
+msgstr "ഹാച്ചിങ്"
 
 #: source/tabpages/tabarea.src#RID_SVXPAGE_AREA.LB_AREA_TYPE.Default.StringList.item
 #, fuzzy
@@ -6373,6 +5956,14 @@ msgid  "~Line type"
 msgstr ""
 
 #: source/tabpages/tabarea.src#RID_SVXPAGE_HATCH.LB_LINE_TYPE.Default.StringList.item
+msgid  "Single"
+msgstr ""
+
+#: source/tabpages/tabarea.src#RID_SVXPAGE_HATCH.LB_LINE_TYPE.Default.StringList.item
+msgid  "Crossed"
+msgstr ""
+
+#: source/tabpages/tabarea.src#RID_SVXPAGE_HATCH.LB_LINE_TYPE.Default.StringList.item
 msgid  "Triple"
 msgstr ""
 
@@ -6480,6 +6071,27 @@ msgid  "Ty~pe"
 msgstr "ത~രം"
 
 #: source/tabpages/tabarea.src#RID_SVXPAGE_GRADIENT.LB_GRADIENT_TYPES.Default.StringList.item
+msgid  "Linear"
+msgstr ""
+
+#: source/tabpages/tabarea.src#RID_SVXPAGE_GRADIENT.LB_GRADIENT_TYPES.Default.StringList.item
+msgid  "Axial"
+msgstr ""
+
+#: source/tabpages/tabarea.src#RID_SVXPAGE_GRADIENT.LB_GRADIENT_TYPES.Default.StringList.item
+msgid  "Radial"
+msgstr ""
+
+#: source/tabpages/tabarea.src#RID_SVXPAGE_GRADIENT.LB_GRADIENT_TYPES.Default.StringList.item
+msgid  "Ellipsoid"
+msgstr ""
+
+#: source/tabpages/tabarea.src#RID_SVXPAGE_GRADIENT.LB_GRADIENT_TYPES.Default.StringList.item
+#, fuzzy
+msgid  "Square"
+msgstr "ചതുരം"
+
+#: source/tabpages/tabarea.src#RID_SVXPAGE_GRADIENT.LB_GRADIENT_TYPES.Default.StringList.item
 msgid  "Rectangular"
 msgstr ""
 
@@ -6569,6 +6181,11 @@ msgstr "നിറത്തിന്റെ പട്ടിക"
 
 #: source/tabpages/tabarea.src#RID_SVXPAGE_COLOR.LB_COLORMODEL.Default.StringList.item
 #, fuzzy
+msgid  "RGB"
+msgstr "RGB"
+
+#: source/tabpages/tabarea.src#RID_SVXPAGE_COLOR.LB_COLORMODEL.Default.StringList.item
+#, fuzzy
 msgid  "CMYK"
 msgstr "CMYK"
 
@@ -6648,111 +6265,31 @@ msgstr ""
 msgid  "Color Mode"
 msgstr ""
 
-#: source/tabpages/tabarea.src#RID_SVXPAGE_TRANSPARENCE.LB_TRGR_GRADIENT_TYPES.Default.StringList.item
-msgid  "Linear"
-msgstr ""
-
-#: source/tabpages/tabarea.src#RID_SVXPAGE_TRANSPARENCE.LB_TRGR_GRADIENT_TYPES.Default.StringList.item
-msgid  "Axial"
-msgstr ""
-
-#: source/tabpages/tabarea.src#RID_SVXPAGE_TRANSPARENCE.LB_TRGR_GRADIENT_TYPES.Default.StringList.item
-msgid  "Radial"
-msgstr ""
-
-#: source/tabpages/tabarea.src#RID_SVXPAGE_TRANSPARENCE.LB_TRGR_GRADIENT_TYPES.Default.StringList.item
-msgid  "Ellipsoid"
-msgstr ""
-
-#: source/tabpages/tabarea.src#RID_SVXPAGE_TRANSPARENCE.LB_TRGR_GRADIENT_TYPES.Default.StringList.item
-msgid  "Quadratic"
-msgstr ""
-
-#: source/tabpages/tabarea.src#RID_SVXPAGE_AREA.LB_AREA_TYPE.Default.StringList.item
-#, fuzzy
-msgid  "None"
-msgstr "ഒന്നുമില്ല"
-
-#: source/tabpages/tabarea.src#RID_SVXPAGE_AREA.LB_AREA_TYPE.Default.StringList.item
-#, fuzzy
-msgid  "Color"
-msgstr "നിറം"
-
-#: source/tabpages/tabarea.src#RID_SVXPAGE_AREA.LB_AREA_TYPE.Default.StringList.item
-msgid  "Gradient"
-msgstr ""
-
-#: source/tabpages/tabarea.src#RID_SVXPAGE_AREA.LB_AREA_TYPE.Default.StringList.item
-#, fuzzy
-msgid  "Hatching"
-msgstr "ഹാച്ചിങ്"
-
-#: source/tabpages/tabarea.src#RID_SVXPAGE_HATCH.LB_LINE_TYPE.Default.StringList.item
-msgid  "Single"
-msgstr ""
-
-#: source/tabpages/tabarea.src#RID_SVXPAGE_HATCH.LB_LINE_TYPE.Default.StringList.item
-msgid  "Crossed"
-msgstr ""
-
-#: source/tabpages/tabarea.src#RID_SVXPAGE_GRADIENT.LB_GRADIENT_TYPES.Default.StringList.item
-msgid  "Linear"
-msgstr ""
-
-#: source/tabpages/tabarea.src#RID_SVXPAGE_GRADIENT.LB_GRADIENT_TYPES.Default.StringList.item
-msgid  "Axial"
-msgstr ""
-
-#: source/tabpages/tabarea.src#RID_SVXPAGE_GRADIENT.LB_GRADIENT_TYPES.Default.StringList.item
-msgid  "Radial"
-msgstr ""
-
-#: source/tabpages/tabarea.src#RID_SVXPAGE_GRADIENT.LB_GRADIENT_TYPES.Default.StringList.item
-msgid  "Ellipsoid"
-msgstr ""
-
-#: source/tabpages/tabarea.src#RID_SVXPAGE_GRADIENT.LB_GRADIENT_TYPES.Default.StringList.item
-#, fuzzy
-msgid  "Square"
-msgstr "ചതുരം"
-
-#: source/tabpages/tabarea.src#RID_SVXPAGE_COLOR.LB_COLORMODEL.Default.StringList.item
-#, fuzzy
-msgid  "RGB"
-msgstr "RGB"
-
 #: source/tabpages/frmdirlbox.src#RID_SVXSTR_FRAMEDIR_LTR.String.Text
-#, fuzzy
 msgid  "Left-to-right"
 msgstr " ഇടത്തു നിന്നും വലത്തോട്ട്"
 
 #: source/tabpages/frmdirlbox.src#RID_SVXSTR_FRAMEDIR_RTL.String.Text
-#, fuzzy
 msgid  "Right-to-left"
 msgstr " വലത്തു നിന്നും ഇടത്തോട്ട്"
 
 #: source/tabpages/frmdirlbox.src#RID_SVXSTR_FRAMEDIR_SUPER.String.Text
-#, fuzzy
 msgid  "Use superordinate object settings"
 msgstr " സൂപ്പര് ഒര്ഡിനേറ്റ് വസ്തു സജ്ജീകരണങ്ങള് ഉപയോഗിക്കുക"
 
 #: source/tabpages/frmdirlbox.src#RID_SVXSTR_PAGEDIR_LTR_HORI.String.Text
-#, fuzzy
 msgid  "Left-to-right (horizontal)"
 msgstr " ഇടത്തു നിന്നും വലത്തോട്ട് (കുറുകെ) "
 
 #: source/tabpages/frmdirlbox.src#RID_SVXSTR_PAGEDIR_RTL_HORI.String.Text
-#, fuzzy
 msgid  "Right-to-left (horizontal)"
 msgstr "  വലത്തു നിന്നും ഇടത്തോട്ട് (കുറുകെ)"
 
 #: source/tabpages/frmdirlbox.src#RID_SVXSTR_PAGEDIR_RTL_VERT.String.Text
-#, fuzzy
 msgid  "Right-to-left (vertical)"
 msgstr "വലത്തു നിന്നും ഇടത്തോട്ട് (കുത്തനെ)"
 
 #: source/tabpages/frmdirlbox.src#RID_SVXSTR_PAGEDIR_LTR_VERT.String.Text
-#, fuzzy
 msgid  "Left-to-right (vertical)"
 msgstr " ഇടത്തു നിന്നും വലത്തോട്ട് (കുത്തനെ)"
 
@@ -6765,12 +6302,10 @@ msgid  "~Format"
 msgstr ""
 
 #: source/tabpages/page.src#RID_SVXPAGE_PAGE.FT_PAPER_WIDTH.FixedText.Text
-#, fuzzy
 msgid  "~Width"
 msgstr "~വീതി"
 
 #: source/tabpages/page.src#RID_SVXPAGE_PAGE.FT_PAPER_HEIGHT.FixedText.Text
-#, fuzzy
 msgid  "~Height"
 msgstr "ഉയരം"
 
@@ -6799,22 +6334,18 @@ msgid  "Margins"
 msgstr ""
 
 #: source/tabpages/page.src#RID_SVXPAGE_PAGE.FT_LEFT_MARGIN.FixedText.Text
-#, fuzzy
 msgid  "~Left"
 msgstr "~ഇടതു്"
 
 #: source/tabpages/page.src#RID_SVXPAGE_PAGE.FT_RIGHT_MARGIN.FixedText.Text
-#, fuzzy
 msgid  "~Right"
 msgstr "~വലതു്"
 
 #: source/tabpages/page.src#RID_SVXPAGE_PAGE.FT_TOP_MARGIN.FixedText.Text
-#, fuzzy
 msgid  "~Top"
 msgstr "~മുകളില്‍"
 
 #: source/tabpages/page.src#RID_SVXPAGE_PAGE.FT_BOTTOM_MARGIN.FixedText.Text
-#, fuzzy
 msgid  "~Bottom"
 msgstr "~താഴെ"
 
@@ -6827,6 +6358,18 @@ msgid  "Page layout"
 msgstr ""
 
 #: source/tabpages/page.src#RID_SVXPAGE_PAGE.LB_LAYOUT.Default.StringList.item
+msgid  "Right and left"
+msgstr ""
+
+#: source/tabpages/page.src#RID_SVXPAGE_PAGE.LB_LAYOUT.Default.StringList.item
+msgid  "Mirrored"
+msgstr ""
+
+#: source/tabpages/page.src#RID_SVXPAGE_PAGE.LB_LAYOUT.Default.StringList.item
+msgid  "Only right"
+msgstr ""
+
+#: source/tabpages/page.src#RID_SVXPAGE_PAGE.LB_LAYOUT.Default.StringList.item
 msgid  "Only left"
 msgstr ""
 
@@ -6835,7 +6378,26 @@ msgid  "For~mat"
 msgstr ""
 
 #: source/tabpages/page.src#RID_SVXPAGE_PAGE.LB_NUMBER_FORMAT.Default.StringList.item
-#, fuzzy
+msgid  "A, B, C, ..."
+msgstr ""
+
+#: source/tabpages/page.src#RID_SVXPAGE_PAGE.LB_NUMBER_FORMAT.Default.StringList.item
+msgid  "a, b, c, ..."
+msgstr ""
+
+#: source/tabpages/page.src#RID_SVXPAGE_PAGE.LB_NUMBER_FORMAT.Default.StringList.item
+msgid  "I, II, III, ..."
+msgstr ""
+
+#: source/tabpages/page.src#RID_SVXPAGE_PAGE.LB_NUMBER_FORMAT.Default.StringList.item
+msgid  "i, ii, iii, ..."
+msgstr ""
+
+#: source/tabpages/page.src#RID_SVXPAGE_PAGE.LB_NUMBER_FORMAT.Default.StringList.item
+msgid  "1, 2, 3, ..."
+msgstr ""
+
+#: source/tabpages/page.src#RID_SVXPAGE_PAGE.LB_NUMBER_FORMAT.Default.StringList.item
 msgid  "None"
 msgstr "ഒന്നുമില്ല"
 
@@ -7096,7 +6658,6 @@ msgid  "C4 Envelope"
 msgstr ""
 
 #: source/tabpages/page.src#RID_SVXSTRARY_PAPERSIZE_DRAW.PAPERSIZE_DIA.ItemList.item
-#, fuzzy
 msgid  "Dia Slide"
 msgstr "ഡയ സ്ലൈഡ്"
 
@@ -7104,55 +6665,59 @@ msgstr "ഡയ സ്ലൈഡ്"
 msgid  "Screen"
 msgstr ""
 
-#: source/tabpages/page.src#RID_SVXPAGE_PAGE.LB_LAYOUT.Default.StringList.item
-msgid  "Right and left"
-msgstr ""
-
-#: source/tabpages/page.src#RID_SVXPAGE_PAGE.LB_LAYOUT.Default.StringList.item
-msgid  "Mirrored"
-msgstr ""
-
-#: source/tabpages/page.src#RID_SVXPAGE_PAGE.LB_LAYOUT.Default.StringList.item
-msgid  "Only right"
-msgstr ""
-
-#: source/tabpages/page.src#RID_SVXPAGE_PAGE.LB_NUMBER_FORMAT.Default.StringList.item
-msgid  "A, B, C, ..."
-msgstr ""
-
-#: source/tabpages/page.src#RID_SVXPAGE_PAGE.LB_NUMBER_FORMAT.Default.StringList.item
-msgid  "a, b, c, ..."
-msgstr ""
-
-#: source/tabpages/page.src#RID_SVXPAGE_PAGE.LB_NUMBER_FORMAT.Default.StringList.item
-msgid  "I, II, III, ..."
-msgstr ""
-
-#: source/tabpages/page.src#RID_SVXPAGE_PAGE.LB_NUMBER_FORMAT.Default.StringList.item
-msgid  "i, ii, iii, ..."
-msgstr ""
-
-#: source/tabpages/page.src#RID_SVXPAGE_PAGE.LB_NUMBER_FORMAT.Default.StringList.item
-msgid  "1, 2, 3, ..."
-msgstr ""
-
 #: source/tabpages/numfmt.src#RID_SVXPAGE_NUMBERFORMAT.TabPage.Text
-#, fuzzy
 msgid  "Number Format"
 msgstr "നംബര്‍ മാതൃക"
 
 #: source/tabpages/numfmt.src#RID_SVXPAGE_NUMBERFORMAT.FT_CATEGORY.FixedText.Text
-#, fuzzy
 msgid  "~Category"
 msgstr "~വിഭാഗം"
 
 #: source/tabpages/numfmt.src#RID_SVXPAGE_NUMBERFORMAT.LB_CATEGORY.Default.StringList.item
-#, fuzzy
+msgid  "All"
+msgstr "എല്ലാം"
+
+#: source/tabpages/numfmt.src#RID_SVXPAGE_NUMBERFORMAT.LB_CATEGORY.Default.StringList.item
+msgid  "User-defined"
+msgstr ""
+
+#: source/tabpages/numfmt.src#RID_SVXPAGE_NUMBERFORMAT.LB_CATEGORY.Default.StringList.item
+msgid  "Number"
+msgstr "നംബര്‍"
+
+#: source/tabpages/numfmt.src#RID_SVXPAGE_NUMBERFORMAT.LB_CATEGORY.Default.StringList.item
+msgid  "Percent"
+msgstr "ശതമാനം"
+
+#: source/tabpages/numfmt.src#RID_SVXPAGE_NUMBERFORMAT.LB_CATEGORY.Default.StringList.item
+msgid  "Currency"
+msgstr ""
+
+#: source/tabpages/numfmt.src#RID_SVXPAGE_NUMBERFORMAT.LB_CATEGORY.Default.StringList.item
+msgid  "Date"
+msgstr "തീയതി"
+
+#: source/tabpages/numfmt.src#RID_SVXPAGE_NUMBERFORMAT.LB_CATEGORY.Default.StringList.item
+msgid  "Time"
+msgstr ""
+
+#: source/tabpages/numfmt.src#RID_SVXPAGE_NUMBERFORMAT.LB_CATEGORY.Default.StringList.item
+msgid  "Scientific"
+msgstr ""
+
+#: source/tabpages/numfmt.src#RID_SVXPAGE_NUMBERFORMAT.LB_CATEGORY.Default.StringList.item
+msgid  "Fraction"
+msgstr ""
+
+#: source/tabpages/numfmt.src#RID_SVXPAGE_NUMBERFORMAT.LB_CATEGORY.Default.StringList.item
+msgid  "Boolean Value"
+msgstr "ബൂളിയന്‍ മൂല്ല്യം"
+
+#: source/tabpages/numfmt.src#RID_SVXPAGE_NUMBERFORMAT.LB_CATEGORY.Default.StringList.item
 msgid  "Text"
 msgstr "പദാവലി"
 
 #: source/tabpages/numfmt.src#RID_SVXPAGE_NUMBERFORMAT.FT_EDFORMAT.FixedText.Text
-#, fuzzy
 msgid  "~Format code"
 msgstr "കോഡ് ~ഫോര്‍മാറ്റ് ചെയ്യുക"
 
@@ -7181,12 +6746,10 @@ msgid  "~Thousands separator"
 msgstr ""
 
 #: source/tabpages/numfmt.src#RID_SVXPAGE_NUMBERFORMAT.FL_OPTIONS.FixedLine.Text
-#, fuzzy
 msgid  "Options"
 msgstr "ഉപാധികള്‍"
 
 #: source/tabpages/numfmt.src#RID_SVXPAGE_NUMBERFORMAT.FT_LANGUAGE.FixedText.Text
-#, fuzzy
 msgid  "~Language"
 msgstr "~ഭാഷ"
 
@@ -7195,69 +6758,20 @@ msgid  "So~urce format"
 msgstr ""
 
 #: source/tabpages/numfmt.src#RID_SVXPAGE_NUMBERFORMAT.IB_ADD.ImageButton.QuickHelpText
-#, fuzzy
 msgid  "Add"
 msgstr "ചേര്‍ക്കുക"
 
 #: source/tabpages/numfmt.src#RID_SVXPAGE_NUMBERFORMAT.IB_REMOVE.ImageButton.QuickHelpText
-#, fuzzy
 msgid  "Remove"
 msgstr "Remove"
 
 #: source/tabpages/numfmt.src#RID_SVXPAGE_NUMBERFORMAT.IB_INFO.ImageButton.QuickHelpText
-#, fuzzy
 msgid  "Edit Comment"
 msgstr "അഭിപ്രായം ചിട്ടപ്പെടുത്തുക"
 
 #: source/tabpages/numfmt.src#RID_SVXPAGE_NUMBERFORMAT.STR_AUTO_ENTRY.String.Text
-#, fuzzy
 msgid  "Automatic"
 msgstr "ഓട്ടോമാറ്റിക്"
-
-#: source/tabpages/numfmt.src#RID_SVXPAGE_NUMBERFORMAT.LB_CATEGORY.Default.StringList.item
-#, fuzzy
-msgid  "All"
-msgstr "എല്ലാം"
-
-#: source/tabpages/numfmt.src#RID_SVXPAGE_NUMBERFORMAT.LB_CATEGORY.Default.StringList.item
-msgid  "User-defined"
-msgstr ""
-
-#: source/tabpages/numfmt.src#RID_SVXPAGE_NUMBERFORMAT.LB_CATEGORY.Default.StringList.item
-#, fuzzy
-msgid  "Number"
-msgstr "നംബര്‍"
-
-#: source/tabpages/numfmt.src#RID_SVXPAGE_NUMBERFORMAT.LB_CATEGORY.Default.StringList.item
-#, fuzzy
-msgid  "Percent"
-msgstr "ശതമാനം"
-
-#: source/tabpages/numfmt.src#RID_SVXPAGE_NUMBERFORMAT.LB_CATEGORY.Default.StringList.item
-msgid  "Currency"
-msgstr ""
-
-#: source/tabpages/numfmt.src#RID_SVXPAGE_NUMBERFORMAT.LB_CATEGORY.Default.StringList.item
-#, fuzzy
-msgid  "Date"
-msgstr "തീയതി"
-
-#: source/tabpages/numfmt.src#RID_SVXPAGE_NUMBERFORMAT.LB_CATEGORY.Default.StringList.item
-msgid  "Time"
-msgstr ""
-
-#: source/tabpages/numfmt.src#RID_SVXPAGE_NUMBERFORMAT.LB_CATEGORY.Default.StringList.item
-msgid  "Scientific"
-msgstr ""
-
-#: source/tabpages/numfmt.src#RID_SVXPAGE_NUMBERFORMAT.LB_CATEGORY.Default.StringList.item
-msgid  "Fraction"
-msgstr ""
-
-#: source/tabpages/numfmt.src#RID_SVXPAGE_NUMBERFORMAT.LB_CATEGORY.Default.StringList.item
-#, fuzzy
-msgid  "Boolean Value"
-msgstr "ബൂളിയന്‍ മൂല്ല്യം"
 
 #: source/tabpages/numpages.src#RID_SVXPAGE_PICK_BULLET.FL_VALUES.FixedLine.Text
 msgid  "Selection"
@@ -7336,7 +6850,6 @@ msgid  "Linked graphics"
 msgstr ""
 
 #: source/tabpages/numpages.src#RID_SVXPAGE_NUM_OPTIONS.LB_FMT.5.StringList.item
-#, fuzzy
 msgid  "None"
 msgstr "ഒന്നുമില്ല"
 
@@ -7405,7 +6918,6 @@ msgid  "~Character Style"
 msgstr ""
 
 #: source/tabpages/numpages.src#RID_SVXPAGE_NUM_OPTIONS.FT_BUL_COLOR.FixedText.Text
-#, fuzzy
 msgid  "Color"
 msgstr "നിറം"
 
@@ -7426,17 +6938,14 @@ msgid  "~Alignment"
 msgstr ""
 
 #: source/tabpages/numpages.src#RID_SVXPAGE_NUM_OPTIONS.LB_ALIGN.item1.StringList.item
-#, fuzzy
 msgid  "Left"
 msgstr "~ഇടതു്"
 
 #: source/tabpages/numpages.src#RID_SVXPAGE_NUM_OPTIONS.LB_ALIGN.item2.StringList.item
-#, fuzzy
 msgid  "Centered"
 msgstr "മദ്ധ്യം"
 
 #: source/tabpages/numpages.src#RID_SVXPAGE_NUM_OPTIONS.LB_ALIGN.item3.StringList.item
-#, fuzzy
 msgid  "Right"
 msgstr "~വലതു്"
 
@@ -7449,27 +6958,22 @@ msgid  "Graphics"
 msgstr ""
 
 #: source/tabpages/numpages.src#RID_SVXPAGE_NUM_OPTIONS.MB_BITMAP.MN_GRAPHIC_DLG.MenuItem.Text
-#, fuzzy
 msgid  "From file..."
 msgstr "ഫയലില്‍ നിന്നും..."
 
 #: source/tabpages/numpages.src#RID_SVXPAGE_NUM_OPTIONS.MB_BITMAP.MN_GALLERY.MenuItem.Text
-#, fuzzy
 msgid  "Gallery"
 msgstr "ഗ്യാലറി"
 
 #: source/tabpages/numpages.src#RID_SVXPAGE_NUM_OPTIONS.MB_BITMAP.MenuItem.Text
-#, fuzzy
 msgid  "Select..."
 msgstr "തെരഞ്ഞെടുക്കുക..."
 
 #: source/tabpages/numpages.src#RID_SVXPAGE_NUM_OPTIONS.FT_SIZE.FixedText.Text
-#, fuzzy
 msgid  "Width"
 msgstr "വീതി"
 
 #: source/tabpages/numpages.src#RID_SVXPAGE_NUM_OPTIONS.FT_MULT.FixedText.Text
-#, fuzzy
 msgid  "Height"
 msgstr "ഉയരം"
 
@@ -7486,42 +6990,34 @@ msgid  "Top of baseline"
 msgstr ""
 
 #: source/tabpages/numpages.src#RID_SVXPAGE_NUM_OPTIONS.LB_ORIENT.item2.StringList.item
-#, fuzzy
 msgid  "Center of baseline"
 msgstr "വരയുടെ മദ്ധ്യം"
 
 #: source/tabpages/numpages.src#RID_SVXPAGE_NUM_OPTIONS.LB_ORIENT.item3.StringList.item
-#, fuzzy
 msgid  "Bottom of baseline"
 msgstr "വരയുടെ താഴെ"
 
 #: source/tabpages/numpages.src#RID_SVXPAGE_NUM_OPTIONS.LB_ORIENT.item4.StringList.item
-#, fuzzy
 msgid  "Top of character"
 msgstr "അക്ഷരത്തിന്റെ മുകളില്‍"
 
 #: source/tabpages/numpages.src#RID_SVXPAGE_NUM_OPTIONS.LB_ORIENT.item5.StringList.item
-#, fuzzy
 msgid  "Center of character"
 msgstr "അക്ഷരത്തിന്റെ മദ്ധ്യം"
 
 #: source/tabpages/numpages.src#RID_SVXPAGE_NUM_OPTIONS.LB_ORIENT.item6.StringList.item
-#, fuzzy
 msgid  "Bottom of character"
 msgstr "അക്ഷരത്തിന്റെ താഴെ"
 
 #: source/tabpages/numpages.src#RID_SVXPAGE_NUM_OPTIONS.LB_ORIENT.item7.StringList.item
-#, fuzzy
 msgid  "Top of line"
 msgstr "വരയുടെ മുകളില്‍"
 
 #: source/tabpages/numpages.src#RID_SVXPAGE_NUM_OPTIONS.LB_ORIENT.item8.StringList.item
-#, fuzzy
 msgid  "Center of line"
 msgstr "വരയുടെ മദ്ധ്യം"
 
 #: source/tabpages/numpages.src#RID_SVXPAGE_NUM_OPTIONS.LB_ORIENT.item9.StringList.item
-#, fuzzy
 msgid  "Bottom of line"
 msgstr "വരയുടെ താഴെ"
 
@@ -7566,17 +7062,14 @@ msgid  "N~umbering alignment"
 msgstr ""
 
 #: source/tabpages/numpages.src#RID_SVXPAGE_NUM_POSITION.LB_ALIGN.item1.StringList.item
-#, fuzzy
 msgid  "Left"
 msgstr "~ഇടതു്"
 
 #: source/tabpages/numpages.src#RID_SVXPAGE_NUM_POSITION.LB_ALIGN.item2.StringList.item
-#, fuzzy
 msgid  "Centered"
 msgstr "മദ്ധ്യം"
 
 #: source/tabpages/numpages.src#RID_SVXPAGE_NUM_POSITION.LB_ALIGN.item3.StringList.item
-#, fuzzy
 msgid  "Right"
 msgstr "~വലതു്"
 
@@ -7609,12 +7102,10 @@ msgid  "Indent at"
 msgstr ""
 
 #: source/tabpages/numpages.src#RID_SVXPAGE_NUM_POSITION.PB_STANDARD.PushButton.Text
-#, fuzzy
 msgid  "Default"
 msgstr "സ്വതവേയുള്ള"
 
 #: source/tabpages/numpages.src#RID_STR_EDIT_GRAPHIC.String.Text
-#, fuzzy
 msgid  "Link"
 msgstr "വര"
 
@@ -7623,12 +7114,10 @@ msgid  "Border / Background"
 msgstr ""
 
 #: source/tabpages/bbdlg.src#RID_SVXDLG_BBDLG.1.RID_SVXPAGE_BORDER.PageItem.Text
-#, fuzzy
 msgid  "Borders"
 msgstr "അതിരുകള്‍"
 
 #: source/tabpages/bbdlg.src#RID_SVXDLG_BBDLG.1.RID_SVXPAGE_BACKGROUND.PageItem.Text
-#, fuzzy
 msgid  "Background"
 msgstr "പശ്ചാത്തലം"
 
@@ -7641,27 +7130,22 @@ msgid  "Horizontal"
 msgstr ""
 
 #: source/tabpages/dstribut.src#RID_SVXPAGE_DISTRIBUTE.BTN_HOR_NONE.RadioButton.Text
-#, fuzzy
 msgid  "~None"
 msgstr "ഒന്നുമില്ല"
 
 #: source/tabpages/dstribut.src#RID_SVXPAGE_DISTRIBUTE.BTN_HOR_LEFT.RadioButton.Text
-#, fuzzy
 msgid  "~Left"
 msgstr "~ഇടതു്"
 
 #: source/tabpages/dstribut.src#RID_SVXPAGE_DISTRIBUTE.BTN_HOR_CENTER.RadioButton.Text
-#, fuzzy
 msgid  "~Center"
 msgstr "~മദ്ധ്യം"
 
 #: source/tabpages/dstribut.src#RID_SVXPAGE_DISTRIBUTE.BTN_HOR_DISTANCE.RadioButton.Text
-#, fuzzy
 msgid  "~Spacing"
 msgstr "~സ്പെയിസിങ്"
 
 #: source/tabpages/dstribut.src#RID_SVXPAGE_DISTRIBUTE.BTN_HOR_RIGHT.RadioButton.Text
-#, fuzzy
 msgid  "~Right"
 msgstr "~വലതു്"
 
@@ -7670,38 +7154,40 @@ msgid  "Vertical"
 msgstr ""
 
 #: source/tabpages/dstribut.src#RID_SVXPAGE_DISTRIBUTE.BTN_VER_NONE.RadioButton.Text
-#, fuzzy
 msgid  "N~one"
 msgstr "ഒന്നുമില്ല"
 
 #: source/tabpages/dstribut.src#RID_SVXPAGE_DISTRIBUTE.BTN_VER_TOP.RadioButton.Text
-#, fuzzy
 msgid  "~Top"
 msgstr "~മുകളില്‍"
 
 #: source/tabpages/dstribut.src#RID_SVXPAGE_DISTRIBUTE.BTN_VER_CENTER.RadioButton.Text
-#, fuzzy
 msgid  "C~enter"
 msgstr "~മദ്ധ്യം"
 
 #: source/tabpages/dstribut.src#RID_SVXPAGE_DISTRIBUTE.BTN_VER_DISTANCE.RadioButton.Text
-#, fuzzy
 msgid  "S~pacing"
 msgstr "സ്പെയിസിങ്"
 
 #: source/tabpages/dstribut.src#RID_SVXPAGE_DISTRIBUTE.BTN_VER_BOTTOM.RadioButton.Text
-#, fuzzy
 msgid  "~Bottom"
 msgstr "~താഴെ"
 
+#: source/tabpages/backgrnd.src#UNLINKED_IMAGE.#define.Text
+msgid  "Unlinked graphic"
+msgstr ""
+
 #: source/tabpages/backgrnd.src#RID_SVXPAGE_BACKGROUND.TabPage.Text
-#, fuzzy
 msgid  "Background"
 msgstr "പശ്ചാത്തലം"
 
 #: source/tabpages/backgrnd.src#RID_SVXPAGE_BACKGROUND.FT_SELECTOR.FixedText.Text
 msgid  "A~s"
 msgstr ""
+
+#: source/tabpages/backgrnd.src#RID_SVXPAGE_BACKGROUND.LB_SELECTOR.Default.StringList.item
+msgid  "Color"
+msgstr "നിറം"
 
 #: source/tabpages/backgrnd.src#RID_SVXPAGE_BACKGROUND.LB_SELECTOR.Default.StringList.item
 msgid  "Graphic"
@@ -7716,12 +7202,10 @@ msgid  "Cell"
 msgstr ""
 
 #: source/tabpages/backgrnd.src#RID_SVXPAGE_BACKGROUND.LB_TBL_BOX.item2.StringList.item
-#, fuzzy
 msgid  "Row"
 msgstr "വ~രി"
 
 #: source/tabpages/backgrnd.src#RID_SVXPAGE_BACKGROUND.LB_TBL_BOX.item3.StringList.item
-#, fuzzy
 msgid  "Table"
 msgstr "പട്ടിക"
 
@@ -7734,7 +7218,6 @@ msgid  "Character"
 msgstr ""
 
 #: source/tabpages/backgrnd.src#RID_SVXPAGE_BACKGROUND.GB_BGDCOLOR.FixedLine.Text
-#, fuzzy
 msgid  "Background color"
 msgstr "~പശ്ചാത്തലം നിറം"
 
@@ -7751,27 +7234,22 @@ msgid  "~Browse..."
 msgstr ""
 
 #: source/tabpages/backgrnd.src#RID_SVXPAGE_BACKGROUND.BTN_LINK.CheckBox.Text
-#, fuzzy
 msgid  "~Link"
 msgstr "വര"
 
 #: source/tabpages/backgrnd.src#RID_SVXPAGE_BACKGROUND.GB_POSITION.FixedLine.Text
-#, fuzzy
 msgid  "Type"
 msgstr "~തരം"
 
 #: source/tabpages/backgrnd.src#RID_SVXPAGE_BACKGROUND.BTN_POSITION.RadioButton.Text
-#, fuzzy
 msgid  "~Position"
 msgstr "~സ്ഥാനം"
 
 #: source/tabpages/backgrnd.src#RID_SVXPAGE_BACKGROUND.BTN_AREA.RadioButton.Text
-#, fuzzy
 msgid  "Ar~ea"
 msgstr "വിസ്താരം"
 
 #: source/tabpages/backgrnd.src#RID_SVXPAGE_BACKGROUND.BTN_TILE.RadioButton.Text
-#, fuzzy
 msgid  "~Tile"
 msgstr "~ടയില്‍"
 
@@ -7780,22 +7258,12 @@ msgid  "Transparency"
 msgstr ""
 
 #: source/tabpages/backgrnd.src#RID_SVXPAGE_BACKGROUND.BTN_PREVIEW.CheckBox.Text
-#, fuzzy
 msgid  "Pre~view"
 msgstr "തിരനോട്ടം"
 
 #: source/tabpages/backgrnd.src#RID_SVXPAGE_BACKGROUND.STR_BROWSE.String.Text
 msgid  "Find graphics"
 msgstr ""
-
-#: source/tabpages/backgrnd.src#UNLINKED_IMAGE.#define.Text
-msgid  "Unlinked graphic"
-msgstr ""
-
-#: source/tabpages/backgrnd.src#RID_SVXPAGE_BACKGROUND.LB_SELECTOR.Default.StringList.item
-#, fuzzy
-msgid  "Color"
-msgstr "നിറം"
 
 #: source/tabpages/macroass.src#RID_SVXPAGE_EVENTASSIGN.TabPage.Text
 msgid  "Assign Macro"
@@ -7818,7 +7286,6 @@ msgid  "~Assign"
 msgstr ""
 
 #: source/tabpages/macroass.src#RID_SVXPAGE_EVENTASSIGN.PB_DELETE.PushButton.Text
-#, fuzzy
 msgid  "~Remove"
 msgstr "~നീക്കം ചെയ്യുക"
 
@@ -7839,12 +7306,10 @@ msgid  "Exceptions"
 msgstr ""
 
 #: source/tabpages/autocdlg.src#RID_OFA_AUTOCORR_DLG.1.RID_OFAPAGE_AUTOCORR_OPTIONS.PageItem.Text
-#, fuzzy
 msgid  "Options"
 msgstr "ഉപാധികള്‍"
 
 #: source/tabpages/autocdlg.src#RID_OFA_AUTOCORR_DLG.1.RID_OFAPAGE_AUTOFMT_APPLY.PageItem.Text
-#, fuzzy
 msgid  "Options"
 msgstr "ഉപാധികള്‍"
 
@@ -7897,7 +7362,6 @@ msgid  "Settings"
 msgstr ""
 
 #: source/tabpages/autocdlg.src#RID_OFAPAGE_AUTOFMT_APPLY.PB_EDIT.PushButton.Text
-#, fuzzy
 msgid  "~Edit..."
 msgstr "~ചിട്ടപ്പെടുത്തുക..."
 
@@ -8074,7 +7538,6 @@ msgid  "~End quote:"
 msgstr ""
 
 #: source/tabpages/autocdlg.src#RID_OFAPAGE_AUTOCORR_QUOTE.PB_SGL_STD.PushButton.Text
-#, fuzzy
 msgid  "~Default"
 msgstr "സ്വതവേയുള്ള"
 
@@ -8095,7 +7558,6 @@ msgid  "E~nd quote:"
 msgstr ""
 
 #: source/tabpages/autocdlg.src#RID_OFAPAGE_AUTOCORR_QUOTE.PB_DBL_STD.PushButton.Text
-#, fuzzy
 msgid  "De~fault"
 msgstr "സ്വതവേയുള്ള"
 
@@ -8108,7 +7570,6 @@ msgid  "End quote"
 msgstr ""
 
 #: source/tabpages/autocdlg.src#RID_OFAPAGE_AUTOCORR_QUOTE.ST_STANDARD.String.Text
-#, fuzzy
 msgid  "Default"
 msgstr "സ്വതവേയുള്ള"
 
@@ -8154,7 +7615,7 @@ msgstr ""
 
 #: source/tabpages/autocdlg.src#RID_OFAPAGE_AUTOCOMPLETE_OPTIONS.CB_REMOVE_LIST.CheckBox.Text
 msgid  "~When closing a document, remove the words collected from it from the list"
-msgstr ""
+msgstr "ഒരു രേഖ ~അടയ്ക്കുമ്പോള്‍, പട്ടികയില്‍ നിന്നും ശേഖരിച്ചിട്ടുള്ള വാക്കുകള്‍ നീക്കം ചെയ്യുക"
 
 #: source/tabpages/autocdlg.src#RID_OFAPAGE_AUTOCOMPLETE_OPTIONS.FT_EXPAND_KEY.FixedText.Text
 msgid  "Acc~ept with"
@@ -8189,7 +7650,6 @@ msgid  "Currently installed smart tags"
 msgstr ""
 
 #: source/tabpages/autocdlg.src#RID_OFAPAGE_SMARTTAG_OPTIONS.PB_SMARTTAGS.PushButton.Text
-#, fuzzy
 msgid  "Properties..."
 msgstr "വിശേഷതകള്‍"
 
@@ -8204,8 +7664,9 @@ msgid  "Do you want to delete the gradient?"
 msgstr "താങ്കള്ക്ക് ഗ്രെഡിയന്റ് നീക്കം ചെയ്യണോ ?"
 
 #: source/tabpages/strings.src#RID_SVXSTR_ASK_CHANGE_GRADIENT.String.Text
+#, fuzzy
 msgid  "The gradient was modified without saving. \nModify the selected gradient or add a new gradient."
-msgstr ""
+msgstr "ഗ്രെഡിയന്റ് സംഭരിക്കാതെയാണ‍് പരിഷ്കരിച്ചത്. തിരഞ്ഞെടുത്ത ഗ്രെഡിയന്റ് പരിഷ്കരിക്കുകയോ അഥവാ പുതിയ ഗ്രെഡിയന്റ് ചേര്ക്കുകയോ ചെയ്യുക."
 
 #: source/tabpages/strings.src#RID_SVXSTR_DESC_NEW_BITMAP.String.Text
 #, fuzzy
@@ -8223,8 +7684,9 @@ msgid  "Are you sure you want to delete the bitmap?"
 msgstr "താങ്കള്ക്ക ബിറ്റ്മാപ് നീക്കം ചെയ്യണോ?"
 
 #: source/tabpages/strings.src#RID_SVXSTR_ASK_CHANGE_BITMAP.String.Text
+#, fuzzy
 msgid  "The bitmap was modified without saving. \nModify the selected bitmap or add a new bitmap."
-msgstr ""
+msgstr "ബിറ്റ്മാപ് സംഭരിക്കാതെയാണ‍് പരിഷ്കരിച്ചത്. തിരഞ്ഞെടുത്ത ബിറ്റ്മാപ് പരിഷ്കരിക്കുകയോ അഥവാ പുതിയ ബിറ്റ്മാപ് ചേര്ക്കുകയോ ചെയ്യുക."
 
 #: source/tabpages/strings.src#RID_SVXSTR_DESC_LINESTYLE.String.Text
 #, fuzzy
@@ -8237,8 +7699,9 @@ msgid  "Do you want to delete the line style?"
 msgstr "താങ്കള്ക്ക് രേഖാശൈലി നിക്കം ചെയ്യണോ ?"
 
 #: source/tabpages/strings.src#RID_SVXSTR_ASK_CHANGE_LINESTYLE.String.Text
+#, fuzzy
 msgid  "The line style was modified without saving. \nModify the selected line style or add a new line style."
-msgstr ""
+msgstr "രേഖാശൈലി സംഭരിക്കാതെയാണ‍് പരിഷ്കരിച്ചത്. തിരഞ്ഞെടുത്ത രേഖാശൈലി പരിഷ്കരിക്കുകയോ അഥവാ പുതിയ രേഖാശൈലി ചേര്ക്കുകയോ ചെയ്യുക."
 
 #: source/tabpages/strings.src#RID_SVXSTR_DESC_HATCH.String.Text
 #, fuzzy
@@ -8251,8 +7714,9 @@ msgid  "Do you want to delete the hatching?"
 msgstr "താങ്കള്ക്ക് ഹാച്ചിങ്ങ് നീക്കം ചെയ്യണോ?"
 
 #: source/tabpages/strings.src#RID_SVXSTR_ASK_CHANGE_HATCH.String.Text
+#, fuzzy
 msgid  "The hatching type was modified but not saved. \nModify the selected hatching type or add a new hatching type."
-msgstr ""
+msgstr "ഹാച്ചിങ്ങ് വിഭാഗം സംഭരിക്കാതെയാണ‍് പരിഷ്കരിച്ചത്. തിരഞ്ഞെടുത്ത ഹാച്ചിങ്ങ് വിഭാഗംപരിഷ്കരിക്കുകയോ അഥവാ പുതിയ ഹാച്ചിങ്ങ് വിഭാഗം ചേര്ക്കുകയോ ചെയ്യുക."
 
 #: source/tabpages/strings.src#RID_SVXSTR_CHANGE.String.Text
 #, fuzzy
@@ -8275,8 +7739,9 @@ msgid  "Do you want to delete the color?"
 msgstr "താങ്കള്ക്ക് നിറം നീക്കം ചെയ്യണോ ?"
 
 #: source/tabpages/strings.src#RID_SVXSTR_ASK_CHANGE_COLOR.String.Text
+#, fuzzy
 msgid  "The color was modified without saving.\nModify the selected color or add a new color."
-msgstr ""
+msgstr "നിറം സംഭരിക്കാതെയാണ‍് പരിഷ്കരിച്ചത്. തിരഞ്ഞെടുത്ത നിറം പരിഷ്കരിക്കുകയോ അഥവാ പുതിയ നിറം ചേര്ക്കുകയോ ചെയ്യുക."
 
 #: source/tabpages/strings.src#RID_SVXSTR_TABLE.String.Text
 #, fuzzy
@@ -8294,12 +7759,14 @@ msgid  "The file could not be loaded!"
 msgstr "ഫയല് ലോഡു ചെയ്യാന് കഴിയുന്നില്ല."
 
 #: source/tabpages/strings.src#RID_SVXSTR_WARN_TABLE_OVERWRITE.String.Text
+#, fuzzy
 msgid  "The list was modified without saving. Would you like to save the list now?"
-msgstr ""
+msgstr "ലിസ്റ്റ് സംഭരിക്കാതെയാണ‍് പരിഷ്കരിച്ചത്. താങ്കള്ക്ക് അപ്പോള് ലിസ്റ്റ് സംഭരിക്കണോ?"
 
 #: source/tabpages/strings.src#RID_SVXSTR_WARN_NAME_DUPLICATE.String.Text
+#, fuzzy
 msgid  "The name you have entered already exists. \nPlease choose another name."
-msgstr ""
+msgstr " നല്കിയിരിക്കുന്ന പേര‍് നിലവിലുണ്ട്. ദയവായി മറ്റൊരു പേര് തിരഞ്ഞെടുക്കു."
 
 #: source/tabpages/strings.src#RID_SVXSTR_DESC_LINEEND.String.Text
 #, fuzzy
@@ -8312,8 +7779,9 @@ msgid  "Do you want to delete the arrowhead?"
 msgstr "അന്പിന്റെ അറ്റം താങ്കള്ക്ക് നീക്കം ചെയ്യണോ ?"
 
 #: source/tabpages/strings.src#RID_SVXSTR_ASK_CHANGE_LINEEND.String.Text
+#, fuzzy
 msgid  "The arrowhead was modified without saving.\nWould you like to save the arrowhead now?"
-msgstr ""
+msgstr " അന്പിന്റെ അറ്റം സംഭരിക്കാതെ പരിഷ്കരിച്ചു ?"
 
 #: source/tabpages/paragrph.src#RID_SVXPAGE_STD_PARAGRAPH.TabPage.Text
 msgid  "Indents and Spacing"
@@ -8332,7 +7800,6 @@ msgid  "~First line"
 msgstr ""
 
 #: source/tabpages/paragrph.src#RID_SVXPAGE_STD_PARAGRAPH.CB_AUTO.CheckBox.Text
-#, fuzzy
 msgid  "~Automatic"
 msgstr "ഓട്ടോമാറ്റിക്"
 
@@ -8349,9 +7816,28 @@ msgid  "Below paragraph"
 msgstr ""
 
 #: source/tabpages/paragrph.src#RID_SVXPAGE_STD_PARAGRAPH.FL_DIST.FixedLine.Text
-#, fuzzy
 msgid  "Spacing"
 msgstr "സ്പെയിസിങ്"
+
+#: source/tabpages/paragrph.src#RID_SVXPAGE_STD_PARAGRAPH.LB_LINEDIST.Default.StringList.item
+msgid  "Single"
+msgstr ""
+
+#: source/tabpages/paragrph.src#RID_SVXPAGE_STD_PARAGRAPH.LB_LINEDIST.Default.StringList.item
+msgid  "1.5 lines"
+msgstr ""
+
+#: source/tabpages/paragrph.src#RID_SVXPAGE_STD_PARAGRAPH.LB_LINEDIST.Default.StringList.item
+msgid  "Double"
+msgstr ""
+
+#: source/tabpages/paragrph.src#RID_SVXPAGE_STD_PARAGRAPH.LB_LINEDIST.Default.StringList.item
+msgid  "Proportional"
+msgstr ""
+
+#: source/tabpages/paragrph.src#RID_SVXPAGE_STD_PARAGRAPH.LB_LINEDIST.Default.StringList.item
+msgid  "At least"
+msgstr ""
 
 #: source/tabpages/paragrph.src#RID_SVXPAGE_STD_PARAGRAPH.LB_LINEDIST.Default.StringList.item
 msgid  "Leading"
@@ -8382,22 +7868,18 @@ msgid  "Alignment"
 msgstr ""
 
 #: source/tabpages/paragrph.src#RID_SVXPAGE_ALIGN_PARAGRAPH.FL_ALIGN.FixedLine.Text
-#, fuzzy
 msgid  "Options"
 msgstr "ഉപാധികള്‍"
 
 #: source/tabpages/paragrph.src#RID_SVXPAGE_ALIGN_PARAGRAPH.BTN_LEFTALIGN.RadioButton.Text
-#, fuzzy
 msgid  "~Left"
 msgstr "~ഇടതു്"
 
 #: source/tabpages/paragrph.src#RID_SVXPAGE_ALIGN_PARAGRAPH.BTN_RIGHTALIGN.RadioButton.Text
-#, fuzzy
 msgid  "Righ~t"
 msgstr "~വലതു്"
 
 #: source/tabpages/paragrph.src#RID_SVXPAGE_ALIGN_PARAGRAPH.BTN_CENTERALIGN.RadioButton.Text
-#, fuzzy
 msgid  "~Center"
 msgstr "~മദ്ധ്യം"
 
@@ -8416,6 +7898,18 @@ msgstr ""
 #: source/tabpages/paragrph.src#RID_SVXPAGE_ALIGN_PARAGRAPH.FT_LASTLINE.FixedText.Text
 msgid  "~Last line"
 msgstr ""
+
+#: source/tabpages/paragrph.src#RID_SVXPAGE_ALIGN_PARAGRAPH.LB_LASTLINE.Default.StringList.item
+msgid  "Default"
+msgstr "സ്വതവേയുള്ള"
+
+#: source/tabpages/paragrph.src#RID_SVXPAGE_ALIGN_PARAGRAPH.LB_LASTLINE.Default.StringList.item
+msgid  "Left"
+msgstr "~ഇടതു്"
+
+#: source/tabpages/paragrph.src#RID_SVXPAGE_ALIGN_PARAGRAPH.LB_LASTLINE.Default.StringList.item
+msgid  "Centered"
+msgstr "മദ്ധ്യം"
 
 #: source/tabpages/paragrph.src#RID_SVXPAGE_ALIGN_PARAGRAPH.LB_LASTLINE.Default.StringList.item
 msgid  "Justified"
@@ -8438,7 +7932,6 @@ msgid  "~Alignment"
 msgstr ""
 
 #: source/tabpages/paragrph.src#RID_SVXPAGE_ALIGN_PARAGRAPH.LB_VERTALIGN.item1.StringList.item
-#, fuzzy
 msgid  "Automatic"
 msgstr "ഓട്ടോമാറ്റിക്"
 
@@ -8447,7 +7940,6 @@ msgid  "Base line"
 msgstr ""
 
 #: source/tabpages/paragrph.src#RID_SVXPAGE_ALIGN_PARAGRAPH.LB_VERTALIGN.item3.StringList.item
-#, fuzzy
 msgid  "Top"
 msgstr "~മുകളില്‍"
 
@@ -8456,12 +7948,10 @@ msgid  "Middle"
 msgstr ""
 
 #: source/tabpages/paragrph.src#RID_SVXPAGE_ALIGN_PARAGRAPH.LB_VERTALIGN.item5.StringList.item
-#, fuzzy
 msgid  "Bottom"
 msgstr "~താഴെ"
 
 #: source/tabpages/paragrph.src#RID_SVXPAGE_ALIGN_PARAGRAPH.FL_PROPERTIES.FixedLine.Text
-#, fuzzy
 msgid  "Properties"
 msgstr "വിശേഷതകള്‍"
 
@@ -8494,7 +7984,6 @@ msgid  "Hyphenation"
 msgstr ""
 
 #: source/tabpages/paragrph.src#RID_SVXPAGE_EXT_PARAGRAPH.FL_OPTIONS.FixedLine.Text
-#, fuzzy
 msgid  "Options"
 msgstr "ഉപാധികള്‍"
 
@@ -8507,7 +7996,6 @@ msgid  "Insert"
 msgstr ""
 
 #: source/tabpages/paragrph.src#RID_SVXPAGE_EXT_PARAGRAPH.FT_BREAKTYPE.FixedText.Text
-#, fuzzy
 msgid  "~Type"
 msgstr "~തരം"
 
@@ -8516,12 +8004,10 @@ msgid  "Page"
 msgstr ""
 
 #: source/tabpages/paragrph.src#RID_SVXPAGE_EXT_PARAGRAPH.LB_BREAKTYPE.1.StringList.item
-#, fuzzy
 msgid  "Column"
 msgstr "നി~ര"
 
 #: source/tabpages/paragrph.src#RID_SVXPAGE_EXT_PARAGRAPH.FT_BREAKPOSITION.FixedText.Text
-#, fuzzy
 msgid  "Position"
 msgstr "സ്ഥാനം"
 
@@ -8554,7 +8040,6 @@ msgid  "~Orphan control"
 msgstr ""
 
 #: source/tabpages/paragrph.src#RID_SVXPAGE_EXT_PARAGRAPH.FT_ORPHANS.FixedText.Text
-#, fuzzy
 msgid  "Lines"
 msgstr "വരകള്‍"
 
@@ -8563,7 +8048,6 @@ msgid  "~Widow control"
 msgstr ""
 
 #: source/tabpages/paragrph.src#RID_SVXPAGE_EXT_PARAGRAPH.FT_WIDOWS.FixedText.Text
-#, fuzzy
 msgid  "Lines"
 msgstr "വരകള്‍"
 
@@ -8596,41 +8080,6 @@ msgstr "ഉദാഹരണം"
 msgid  "Page Style"
 msgstr ""
 
-#: source/tabpages/paragrph.src#RID_SVXPAGE_STD_PARAGRAPH.LB_LINEDIST.Default.StringList.item
-msgid  "Single"
-msgstr ""
-
-#: source/tabpages/paragrph.src#RID_SVXPAGE_STD_PARAGRAPH.LB_LINEDIST.Default.StringList.item
-msgid  "1.5 lines"
-msgstr ""
-
-#: source/tabpages/paragrph.src#RID_SVXPAGE_STD_PARAGRAPH.LB_LINEDIST.Default.StringList.item
-msgid  "Double"
-msgstr ""
-
-#: source/tabpages/paragrph.src#RID_SVXPAGE_STD_PARAGRAPH.LB_LINEDIST.Default.StringList.item
-msgid  "Proportional"
-msgstr ""
-
-#: source/tabpages/paragrph.src#RID_SVXPAGE_STD_PARAGRAPH.LB_LINEDIST.Default.StringList.item
-msgid  "At least"
-msgstr ""
-
-#: source/tabpages/paragrph.src#RID_SVXPAGE_ALIGN_PARAGRAPH.LB_LASTLINE.Default.StringList.item
-#, fuzzy
-msgid  "Default"
-msgstr "സ്വതവേയുള്ള"
-
-#: source/tabpages/paragrph.src#RID_SVXPAGE_ALIGN_PARAGRAPH.LB_LASTLINE.Default.StringList.item
-#, fuzzy
-msgid  "Left"
-msgstr "~ഇടതു്"
-
-#: source/tabpages/paragrph.src#RID_SVXPAGE_ALIGN_PARAGRAPH.LB_LASTLINE.Default.StringList.item
-#, fuzzy
-msgid  "Centered"
-msgstr "മദ്ധ്യം"
-
 #: source/tabpages/textanim.src#RID_SVXPAGE_TEXTANIMATION.TabPage.Text
 msgid  "Animation"
 msgstr ""
@@ -8641,6 +8090,22 @@ msgstr ""
 
 #: source/tabpages/textanim.src#RID_SVXPAGE_TEXTANIMATION.FT_EFFECTS.FixedText.Text
 msgid  "E~ffect"
+msgstr ""
+
+#: source/tabpages/textanim.src#RID_SVXPAGE_TEXTANIMATION.LB_EFFECT.Default.StringList.item
+msgid  "No Effect"
+msgstr ""
+
+#: source/tabpages/textanim.src#RID_SVXPAGE_TEXTANIMATION.LB_EFFECT.Default.StringList.item
+msgid  "Blink"
+msgstr ""
+
+#: source/tabpages/textanim.src#RID_SVXPAGE_TEXTANIMATION.LB_EFFECT.Default.StringList.item
+msgid  "Scroll Through"
+msgstr ""
+
+#: source/tabpages/textanim.src#RID_SVXPAGE_TEXTANIMATION.LB_EFFECT.Default.StringList.item
+msgid  "Scroll Back and Forth"
 msgstr ""
 
 #: source/tabpages/textanim.src#RID_SVXPAGE_TEXTANIMATION.LB_EFFECT.Default.StringList.item
@@ -8719,28 +8184,11 @@ msgstr "പദാവലി"
 msgid  "Text Animation"
 msgstr ""
 
-#: source/tabpages/textanim.src#RID_SVXPAGE_TEXTANIMATION.LB_EFFECT.Default.StringList.item
-msgid  "No Effect"
-msgstr ""
-
-#: source/tabpages/textanim.src#RID_SVXPAGE_TEXTANIMATION.LB_EFFECT.Default.StringList.item
-msgid  "Blink"
-msgstr ""
-
-#: source/tabpages/textanim.src#RID_SVXPAGE_TEXTANIMATION.LB_EFFECT.Default.StringList.item
-msgid  "Scroll Through"
-msgstr ""
-
-#: source/tabpages/textanim.src#RID_SVXPAGE_TEXTANIMATION.LB_EFFECT.Default.StringList.item
-msgid  "Scroll Back and Forth"
-msgstr ""
-
 #: source/tabpages/measure.src#RID_SVXPAGE_MEASURE.TabPage.Text
 msgid  "Dimensioning"
 msgstr ""
 
 #: source/tabpages/measure.src#RID_SVXPAGE_MEASURE.FL_LINE.FixedLine.Text
-#, fuzzy
 msgid  "Line"
 msgstr "വര"
 
@@ -8797,7 +8245,6 @@ msgid  "Show ~meas. units"
 msgstr ""
 
 #: source/tabpages/measure.src#RID_SVXPAGE_MEASURE.STR_MEASURE_AUTOMATIC.String.Text
-#, fuzzy
 msgid  "Automatic"
 msgstr "ഓട്ടോമാറ്റിക്"
 
@@ -8806,7 +8253,6 @@ msgid  "Connector"
 msgstr ""
 
 #: source/tabpages/connect.src#RID_SVXPAGE_CONNECTION.FT_TYPE.FixedText.Text
-#, fuzzy
 msgid  "~Type"
 msgstr "~തരം"
 
@@ -8815,17 +8261,14 @@ msgid  "Line skew"
 msgstr ""
 
 #: source/tabpages/connect.src#RID_SVXPAGE_CONNECTION.FT_LINE_1.FixedText.Text
-#, fuzzy
 msgid  "Line ~1"
 msgstr "വര ~1"
 
 #: source/tabpages/connect.src#RID_SVXPAGE_CONNECTION.FT_LINE_2.FixedText.Text
-#, fuzzy
 msgid  "Line ~2"
 msgstr "വര ~2"
 
 #: source/tabpages/connect.src#RID_SVXPAGE_CONNECTION.FT_LINE_3.FixedText.Text
-#, fuzzy
 msgid  "Line ~3"
 msgstr "വര ~3"
 
@@ -8850,7 +8293,6 @@ msgid  "~End vertical"
 msgstr ""
 
 #: source/tabpages/connect.src#RID_SVXPAGE_CONNECTION.CTL_PREVIEW.Control.QuickHelpText
-#, fuzzy
 msgid  "Preview"
 msgstr "തിരനോട്ടം"
 
@@ -9100,6 +8542,11 @@ msgstr ""
 msgid  " degrees"
 msgstr " ഡിഗ്രീസ്"
 
+#: source/tabpages/transfrm.src#_POS_SIZE_TEXT.#define.Text
+#, fuzzy
+msgid  "Position and Size"
+msgstr "സ്ഥാനവും വ്യാപ്തിയും"
+
 #: source/tabpages/transfrm.src#RID_SVXDLG_TRANSFORM.TabDialog.Text
 #, fuzzy
 msgid  "Position and Size"
@@ -9112,11 +8559,6 @@ msgstr ""
 #: source/tabpages/transfrm.src#RID_SVXDLG_TRANSFORM.TAB_CONTROL.RID_SVXPAGE_SLANT.PageItem.Text
 msgid  "Slant & Corner Radius"
 msgstr ""
-
-#: source/tabpages/transfrm.src#_POS_SIZE_TEXT.#define.Text
-#, fuzzy
-msgid  "Position and Size"
-msgstr "സ്ഥാനവും വ്യാപ്തിയും"
 
 #: source/tabpages/textattr.src#RID_SVXPAGE_TEXTATTR.TabPage.Text
 #, fuzzy
@@ -9190,22 +8632,18 @@ msgid  "Crop"
 msgstr ""
 
 #: source/tabpages/grfpage.src#RID_SVXPAGE_GRFCROP.FT_LEFT.FixedText.Text
-#, fuzzy
 msgid  "~Left"
 msgstr "~ഇടതു്"
 
 #: source/tabpages/grfpage.src#RID_SVXPAGE_GRFCROP.FT_RIGHT.FixedText.Text
-#, fuzzy
 msgid  "~Right"
 msgstr "~വലതു്"
 
 #: source/tabpages/grfpage.src#RID_SVXPAGE_GRFCROP.FT_TOP.FixedText.Text
-#, fuzzy
 msgid  "~Top"
 msgstr "~മുകളില്‍"
 
 #: source/tabpages/grfpage.src#RID_SVXPAGE_GRFCROP.FT_BOTTOM.FixedText.Text
-#, fuzzy
 msgid  "~Bottom"
 msgstr "~താഴെ"
 
@@ -9222,12 +8660,10 @@ msgid  "Scale"
 msgstr ""
 
 #: source/tabpages/grfpage.src#RID_SVXPAGE_GRFCROP.FT_WIDTHZOOM.FixedText.Text
-#, fuzzy
 msgid  "~Width"
 msgstr "~വീതി"
 
 #: source/tabpages/grfpage.src#RID_SVXPAGE_GRFCROP.FT_HEIGHTZOOM.FixedText.Text
-#, fuzzy
 msgid  "H~eight"
 msgstr "ഉ~യരം"
 
@@ -9236,12 +8672,10 @@ msgid  "Image size"
 msgstr ""
 
 #: source/tabpages/grfpage.src#RID_SVXPAGE_GRFCROP.FT_WIDTH.FixedText.Text
-#, fuzzy
 msgid  "~Width"
 msgstr "~വീതി"
 
 #: source/tabpages/grfpage.src#RID_SVXPAGE_GRFCROP.FT_HEIGHT.FixedText.Text
-#, fuzzy
 msgid  "H~eight"
 msgstr "ഉ~യരം"
 
@@ -9262,22 +8696,18 @@ msgid  "Hori~zontal"
 msgstr ""
 
 #: source/tabpages/align.src#RID_SVXPAGE_ALIGNMENT.LB_HORALIGN.ALIGNDLG_HORALIGN_STD.StringList.item
-#, fuzzy
 msgid  "Default"
 msgstr "സ്വതവേയുള്ള"
 
 #: source/tabpages/align.src#RID_SVXPAGE_ALIGNMENT.LB_HORALIGN.ALIGNDLG_HORALIGN_LEFT.StringList.item
-#, fuzzy
 msgid  "Left"
 msgstr "~ഇടതു്"
 
 #: source/tabpages/align.src#RID_SVXPAGE_ALIGNMENT.LB_HORALIGN.ALIGNDLG_HORALIGN_CENTER.StringList.item
-#, fuzzy
 msgid  "Center"
 msgstr "~മദ്ധ്യം"
 
 #: source/tabpages/align.src#RID_SVXPAGE_ALIGNMENT.LB_HORALIGN.ALIGNDLG_HORALIGN_RIGHT.StringList.item
-#, fuzzy
 msgid  "Right"
 msgstr "~വലതു്"
 
@@ -9298,12 +8728,10 @@ msgid  "~Vertical"
 msgstr ""
 
 #: source/tabpages/align.src#RID_SVXPAGE_ALIGNMENT.LB_VERALIGN.ALIGNDLG_VERALIGN_STD.StringList.item
-#, fuzzy
 msgid  "Default"
 msgstr "സ്വതവേയുള്ള"
 
 #: source/tabpages/align.src#RID_SVXPAGE_ALIGNMENT.LB_VERALIGN.ALIGNDLG_VERALIGN_TOP.StringList.item
-#, fuzzy
 msgid  "Top"
 msgstr "~മുകളില്‍"
 
@@ -9312,7 +8740,6 @@ msgid  "Middle"
 msgstr ""
 
 #: source/tabpages/align.src#RID_SVXPAGE_ALIGNMENT.LB_VERALIGN.ALIGNDLG_VERALIGN_BOTTOM.StringList.item
-#, fuzzy
 msgid  "Bottom"
 msgstr "~താഴെ"
 
@@ -9337,7 +8764,6 @@ msgid  "Asian layout ~mode"
 msgstr ""
 
 #: source/tabpages/align.src#RID_SVXPAGE_ALIGNMENT.FL_WRAP.FixedLine.Text
-#, fuzzy
 msgid  "Properties"
 msgstr "വിശേഷതകള്‍"
 
@@ -9475,17 +8901,14 @@ msgid  "Follow text flow"
 msgstr ""
 
 #: source/tabpages/chardlg.src#RID_SVXPAGE_CHAR_NAME.FL_WEST.FixedLine.Text
-#, fuzzy
 msgid  "Western text font"
 msgstr "പടിഞ്ഞാറന്‍ പദാവലിയുടെ അക്ഷരസഞ്ചയം"
 
 #: source/tabpages/chardlg.src#RID_SVXPAGE_CHAR_NAME.FT_WEST_NAME.FixedText.Text
-#, fuzzy
 msgid  "Font"
 msgstr "അക്ഷരസഞ്ചയം"
 
 #: source/tabpages/chardlg.src#RID_SVXPAGE_CHAR_NAME.FT_WEST_NAME_NOCJK.FixedText.Text
-#, fuzzy
 msgid  "~Font"
 msgstr "~അക്ഷരസഞ്ചയം"
 
@@ -9502,17 +8925,14 @@ msgid  "Normal"
 msgstr ""
 
 #: source/tabpages/chardlg.src#RID_SVXPAGE_CHAR_NAME.LB_WEST_STYLE.item2.StringList.item
-#, fuzzy
 msgid  "Italic"
 msgstr "ചരിഞ്ഞ"
 
 #: source/tabpages/chardlg.src#RID_SVXPAGE_CHAR_NAME.LB_WEST_STYLE.item3.StringList.item
-#, fuzzy
 msgid  "Bold"
 msgstr "കട്ടിയില്‍"
 
 #: source/tabpages/chardlg.src#RID_SVXPAGE_CHAR_NAME.LB_WEST_STYLE.item4.StringList.item
-#, fuzzy
 msgid  "Bold italic"
 msgstr "കട്ടിയില്‍ ചരിവുള്ള"
 
@@ -9521,47 +8941,38 @@ msgid  "Normal"
 msgstr ""
 
 #: source/tabpages/chardlg.src#RID_SVXPAGE_CHAR_NAME.LB_WEST_STYLE_NOCJK.item2.StringList.item
-#, fuzzy
 msgid  "Italic"
 msgstr "ചരിഞ്ഞ"
 
 #: source/tabpages/chardlg.src#RID_SVXPAGE_CHAR_NAME.LB_WEST_STYLE_NOCJK.item3.StringList.item
-#, fuzzy
 msgid  "Bold"
 msgstr "കട്ടിയില്‍"
 
 #: source/tabpages/chardlg.src#RID_SVXPAGE_CHAR_NAME.LB_WEST_STYLE_NOCJK.item4.StringList.item
-#, fuzzy
 msgid  "Bold italic"
 msgstr "കട്ടിയില്‍ ചരിവുള്ള"
 
 #: source/tabpages/chardlg.src#RID_SVXPAGE_CHAR_NAME.FT_WEST_SIZE.FixedText.Text
-#, fuzzy
 msgid  "Size"
 msgstr "വ്യാപ്തി"
 
 #: source/tabpages/chardlg.src#RID_SVXPAGE_CHAR_NAME.FT_WEST_SIZE_NOCJK.FixedText.Text
-#, fuzzy
 msgid  "Size"
 msgstr "വ്യാപ്തി"
 
 #: source/tabpages/chardlg.src#RID_SVXPAGE_CHAR_NAME.FT_WEST_LANG.FixedText.Text
-#, fuzzy
 msgid  "Language"
 msgstr "ഭാഷ"
 
 #: source/tabpages/chardlg.src#RID_SVXPAGE_CHAR_NAME.FT_WEST_LANG_NOCJK.FixedText.Text
-#, fuzzy
 msgid  "~Language"
 msgstr "~ഭാഷ"
 
 #: source/tabpages/chardlg.src#RID_SVXPAGE_CHAR_NAME.FL_EAST.FixedLine.Text
-#, fuzzy
 msgid  "Asian text font"
 msgstr "ഏഷ്യന്‍ പദാവലിയുടെ അക്ഷരസഞ്ചയം"
 
 #: source/tabpages/chardlg.src#RID_SVXPAGE_CHAR_NAME.FT_EAST_NAME.FixedText.Text
-#, fuzzy
 msgid  "Font"
 msgstr "അക്ഷരസഞ്ചയം"
 
@@ -9574,37 +8985,30 @@ msgid  "Normal"
 msgstr ""
 
 #: source/tabpages/chardlg.src#RID_SVXPAGE_CHAR_NAME.LB_EAST_STYLE.item2.StringList.item
-#, fuzzy
 msgid  "Italic"
 msgstr "ചരിഞ്ഞ"
 
 #: source/tabpages/chardlg.src#RID_SVXPAGE_CHAR_NAME.LB_EAST_STYLE.item3.StringList.item
-#, fuzzy
 msgid  "Bold"
 msgstr "കട്ടിയില്‍"
 
 #: source/tabpages/chardlg.src#RID_SVXPAGE_CHAR_NAME.LB_EAST_STYLE.item4.StringList.item
-#, fuzzy
 msgid  "Bold italic"
 msgstr "കട്ടിയില്‍ ചരിഞ്ഞ"
 
 #: source/tabpages/chardlg.src#RID_SVXPAGE_CHAR_NAME.FT_EAST_SIZE.FixedText.Text
-#, fuzzy
 msgid  "Size"
 msgstr "വ്യാപ്തി"
 
 #: source/tabpages/chardlg.src#RID_SVXPAGE_CHAR_NAME.FT_EAST_LANG.FixedText.Text
-#, fuzzy
 msgid  "Language"
 msgstr "ഭാഷ"
 
 #: source/tabpages/chardlg.src#RID_SVXPAGE_CHAR_NAME.FL_CTL.FixedLine.Text
-#, fuzzy
 msgid  "CTL font"
 msgstr "CTL അക്ഷരസഞ്ചയം"
 
 #: source/tabpages/chardlg.src#RID_SVXPAGE_CHAR_NAME.FT_CTL_NAME.FixedText.Text
-#, fuzzy
 msgid  "Font"
 msgstr "അക്ഷരസഞ്ചയം"
 
@@ -9617,47 +9021,38 @@ msgid  "Normal"
 msgstr ""
 
 #: source/tabpages/chardlg.src#RID_SVXPAGE_CHAR_NAME.LB_CTL_STYLE.item2.StringList.item
-#, fuzzy
 msgid  "Italic"
 msgstr "ചരിഞ്ഞ"
 
 #: source/tabpages/chardlg.src#RID_SVXPAGE_CHAR_NAME.LB_CTL_STYLE.item3.StringList.item
-#, fuzzy
 msgid  "Bold"
 msgstr "കട്ടിയില്‍"
 
 #: source/tabpages/chardlg.src#RID_SVXPAGE_CHAR_NAME.LB_CTL_STYLE.item4.StringList.item
-#, fuzzy
 msgid  "Bold italic"
 msgstr "കട്ടിയില്‍ ചരിഞ്ഞ"
 
 #: source/tabpages/chardlg.src#RID_SVXPAGE_CHAR_NAME.FT_CTL_SIZE.FixedText.Text
-#, fuzzy
 msgid  "Size"
 msgstr "വ്യാപ്തി"
 
 #: source/tabpages/chardlg.src#RID_SVXPAGE_CHAR_NAME.FT_CTL_LANG.FixedText.Text
-#, fuzzy
 msgid  "Language"
 msgstr "ഭാഷ"
 
 #: source/tabpages/chardlg.src#RID_SVXPAGE_CHAR_NAME.WIN_CHAR_PREVIEW.Window.Text
-#, fuzzy
 msgid  "Example"
 msgstr "ഉദാഹരണം"
 
 #: source/tabpages/chardlg.src#RID_SVXPAGE_CHAR_NAME.FL_COLOR2.FixedLine.Text
-#, fuzzy
 msgid  "Color"
 msgstr "നിറം"
 
 #: source/tabpages/chardlg.src#RID_SVXPAGE_CHAR_NAME.FT_COLOR2.FixedText.Text
-#, fuzzy
 msgid  "Font ~color"
 msgstr "അക്ഷരസഞ്ചയത്തിന്റെ ~നിറം"
 
 #: source/tabpages/chardlg.src#RID_SVXPAGE_CHAR_NAME.STR_CHARNAME_NOSTYLE.String.Text
-#, fuzzy
 msgid  "No %1"
 msgstr "നംബര്‍ %1"
 
@@ -9666,13 +9061,28 @@ msgid  "Transparent"
 msgstr ""
 
 #: source/tabpages/chardlg.src#RID_SVXPAGE_CHAR_EFFECTS.FT_FONTCOLOR.FixedText.Text
-#, fuzzy
 msgid  "Font ~color"
 msgstr "അക്ഷരസഞ്ചയത്തിന്റെ ~നിറം"
 
 #: source/tabpages/chardlg.src#RID_SVXPAGE_CHAR_EFFECTS.FT_EFFECTS.FixedText.Text
 msgid  "~Effects"
 msgstr ""
+
+#: source/tabpages/chardlg.src#RID_SVXPAGE_CHAR_EFFECTS.LB_EFFECTS2.Default.StringList.item
+msgid  "(Without)"
+msgstr ""
+
+#: source/tabpages/chardlg.src#RID_SVXPAGE_CHAR_EFFECTS.LB_EFFECTS2.Default.StringList.item
+msgid  "Capitals"
+msgstr ""
+
+#: source/tabpages/chardlg.src#RID_SVXPAGE_CHAR_EFFECTS.LB_EFFECTS2.Default.StringList.item
+msgid  "Lowercase"
+msgstr ""
+
+#: source/tabpages/chardlg.src#RID_SVXPAGE_CHAR_EFFECTS.LB_EFFECTS2.Default.StringList.item
+msgid  "Title"
+msgstr "തലക്കെട്ട്"
 
 #: source/tabpages/chardlg.src#RID_SVXPAGE_CHAR_EFFECTS.LB_EFFECTS2.Default.StringList.item
 msgid  "Small capitals"
@@ -9683,16 +9093,22 @@ msgid  "~Relief"
 msgstr ""
 
 #: source/tabpages/chardlg.src#RID_SVXPAGE_CHAR_EFFECTS.LB_RELIEF.Default.StringList.item
+msgid  "(Without)"
+msgstr ""
+
+#: source/tabpages/chardlg.src#RID_SVXPAGE_CHAR_EFFECTS.LB_RELIEF.Default.StringList.item
+msgid  "Embossed"
+msgstr ""
+
+#: source/tabpages/chardlg.src#RID_SVXPAGE_CHAR_EFFECTS.LB_RELIEF.Default.StringList.item
 msgid  "Engraved"
 msgstr ""
 
 #: source/tabpages/chardlg.src#RID_SVXPAGE_CHAR_EFFECTS.CB_OUTLINE.TriStateBox.Text
-#, fuzzy
 msgid  "Out~line"
 msgstr "ഔട്ട്ലൈന്‍"
 
 #: source/tabpages/chardlg.src#RID_SVXPAGE_CHAR_EFFECTS.CB_SHADOW.TriStateBox.Text
-#, fuzzy
 msgid  "Sha~dow"
 msgstr "നിഴല്‍"
 
@@ -9705,7 +9121,6 @@ msgid  "H~idden"
 msgstr ""
 
 #: source/tabpages/chardlg.src#RID_SVXPAGE_CHAR_EFFECTS.FT_OVERLINE.FixedText.Text
-#, fuzzy
 msgid  "~Overlining"
 msgstr "~അടിവരയിടുക"
 
@@ -9722,7 +9137,6 @@ msgid  "Double"
 msgstr ""
 
 #: source/tabpages/chardlg.src#RID_SVXPAGE_CHAR_EFFECTS.LB_OVERLINE.CHRDLG_UNDERLINE_BOLD.StringList.item
-#, fuzzy
 msgid  "Bold"
 msgstr "കട്ടിയില്‍"
 
@@ -9731,17 +9145,14 @@ msgid  "Dotted"
 msgstr ""
 
 #: source/tabpages/chardlg.src#RID_SVXPAGE_CHAR_EFFECTS.LB_OVERLINE.CHRDLG_UNDERLINE_BOLDDOTTED.StringList.item
-#, fuzzy
 msgid  "Dotted (Bold)"
 msgstr "കുത്തുള്ള (കട്ടിയില്‍)"
 
 #: source/tabpages/chardlg.src#RID_SVXPAGE_CHAR_EFFECTS.LB_OVERLINE.CHRDLG_UNDERLINE_DASH.StringList.item
-#, fuzzy
 msgid  "Dash"
 msgstr "ചെറിയ ഡാഷ്"
 
 #: source/tabpages/chardlg.src#RID_SVXPAGE_CHAR_EFFECTS.LB_OVERLINE.CHRDLG_UNDERLINE_BOLDDASH.StringList.item
-#, fuzzy
 msgid  "Dash (Bold)"
 msgstr "ഡാഷ് (കട്ടിയില്‍)"
 
@@ -9750,7 +9161,6 @@ msgid  "Long Dash"
 msgstr ""
 
 #: source/tabpages/chardlg.src#RID_SVXPAGE_CHAR_EFFECTS.LB_OVERLINE.CHRDLG_UNDERLINE_BOLDLONGDASH.StringList.item
-#, fuzzy
 msgid  "Long Dash (Bold)"
 msgstr "നീളത്തിലുള്ള വര (കട്ടിയില്‍)"
 
@@ -9759,7 +9169,6 @@ msgid  "Dot Dash"
 msgstr ""
 
 #: source/tabpages/chardlg.src#RID_SVXPAGE_CHAR_EFFECTS.LB_OVERLINE.CHRDLG_UNDERLINE_BOLDDASHDOT.StringList.item
-#, fuzzy
 msgid  "Dot Dash (Bold)"
 msgstr "നീളത്തിലുള്ള വര (കട്ടിയില്‍)"
 
@@ -9768,7 +9177,6 @@ msgid  "Dot Dot Dash"
 msgstr ""
 
 #: source/tabpages/chardlg.src#RID_SVXPAGE_CHAR_EFFECTS.LB_OVERLINE.CHRDLG_UNDERLINE_BOLDDASHDOTDOT.StringList.item
-#, fuzzy
 msgid  "Dot Dot Dash (Bold)"
 msgstr "നീളത്തിലുള്ള വര (കട്ടിയില്‍)"
 
@@ -9785,12 +9193,10 @@ msgid  "Double Wave"
 msgstr ""
 
 #: source/tabpages/chardlg.src#RID_SVXPAGE_CHAR_EFFECTS.FT_OVERLINE_COLOR.FixedText.Text
-#, fuzzy
 msgid  "O~verline color"
 msgstr "അ~ടിവരയുടെ നിറം"
 
 #: source/tabpages/chardlg.src#RID_SVXPAGE_CHAR_EFFECTS.FT_STRIKEOUT.FixedText.Text
-#, fuzzy
 msgid  "~Strikethrough"
 msgstr "~ഇടയിലൂടെയുള്ള വര"
 
@@ -9807,7 +9213,6 @@ msgid  "Double"
 msgstr ""
 
 #: source/tabpages/chardlg.src#RID_SVXPAGE_CHAR_EFFECTS.LB_STRIKEOUT.CHRDLG_STRIKEOUT_BOLD.StringList.item
-#, fuzzy
 msgid  "Bold"
 msgstr "കട്ടിയില്‍"
 
@@ -9820,7 +9225,6 @@ msgid  "With X"
 msgstr ""
 
 #: source/tabpages/chardlg.src#RID_SVXPAGE_CHAR_EFFECTS.FT_UNDERLINE.FixedText.Text
-#, fuzzy
 msgid  "~Underlining"
 msgstr "~അടിവരയിടുക"
 
@@ -9837,7 +9241,6 @@ msgid  "Double"
 msgstr ""
 
 #: source/tabpages/chardlg.src#RID_SVXPAGE_CHAR_EFFECTS.LB_UNDERLINE.CHRDLG_UNDERLINE_BOLD.StringList.item
-#, fuzzy
 msgid  "Bold"
 msgstr "കട്ടിയില്‍"
 
@@ -9846,17 +9249,14 @@ msgid  "Dotted"
 msgstr ""
 
 #: source/tabpages/chardlg.src#RID_SVXPAGE_CHAR_EFFECTS.LB_UNDERLINE.CHRDLG_UNDERLINE_BOLDDOTTED.StringList.item
-#, fuzzy
 msgid  "Dotted (Bold)"
 msgstr "കുത്തുള്ള (കട്ടിയില്‍)"
 
 #: source/tabpages/chardlg.src#RID_SVXPAGE_CHAR_EFFECTS.LB_UNDERLINE.CHRDLG_UNDERLINE_DASH.StringList.item
-#, fuzzy
 msgid  "Dash"
 msgstr "ചെറിയ ഡാഷ്"
 
 #: source/tabpages/chardlg.src#RID_SVXPAGE_CHAR_EFFECTS.LB_UNDERLINE.CHRDLG_UNDERLINE_BOLDDASH.StringList.item
-#, fuzzy
 msgid  "Dash (Bold)"
 msgstr "ഡാഷ് (കട്ടിയില്‍)"
 
@@ -9865,7 +9265,6 @@ msgid  "Long Dash"
 msgstr ""
 
 #: source/tabpages/chardlg.src#RID_SVXPAGE_CHAR_EFFECTS.LB_UNDERLINE.CHRDLG_UNDERLINE_BOLDLONGDASH.StringList.item
-#, fuzzy
 msgid  "Long Dash (Bold)"
 msgstr "നീളത്തിലുള്ള വര (കട്ടിയില്‍)"
 
@@ -9874,7 +9273,6 @@ msgid  "Dot Dash"
 msgstr ""
 
 #: source/tabpages/chardlg.src#RID_SVXPAGE_CHAR_EFFECTS.LB_UNDERLINE.CHRDLG_UNDERLINE_BOLDDASHDOT.StringList.item
-#, fuzzy
 msgid  "Dot Dash (Bold)"
 msgstr "നീളത്തിലുള്ള വര (കട്ടിയില്‍)"
 
@@ -9883,7 +9281,6 @@ msgid  "Dot Dot Dash"
 msgstr ""
 
 #: source/tabpages/chardlg.src#RID_SVXPAGE_CHAR_EFFECTS.LB_UNDERLINE.CHRDLG_UNDERLINE_BOLDDASHDOTDOT.StringList.item
-#, fuzzy
 msgid  "Dot Dot Dash (Bold)"
 msgstr "നീളത്തിലുള്ള വര (കട്ടിയില്‍)"
 
@@ -9900,12 +9297,10 @@ msgid  "Double Wave"
 msgstr ""
 
 #: source/tabpages/chardlg.src#RID_SVXPAGE_CHAR_EFFECTS.FT_UNDERLINE_COLOR.FixedText.Text
-#, fuzzy
 msgid  "U~nderline color"
 msgstr "അ~ടിവരയുടെ നിറം"
 
 #: source/tabpages/chardlg.src#RID_SVXPAGE_CHAR_EFFECTS.CB_INDIVIDUALWORDS.CheckBox.Text
-#, fuzzy
 msgid  "Individual ~words"
 msgstr "ഓരോ ~വാക്കുകളും"
 
@@ -9914,26 +9309,38 @@ msgid  "Emp~hasis mark"
 msgstr ""
 
 #: source/tabpages/chardlg.src#RID_SVXPAGE_CHAR_EFFECTS.LB_EMPHASIS.default.StringList.item
+msgid  "(Without)"
+msgstr ""
+
+#: source/tabpages/chardlg.src#RID_SVXPAGE_CHAR_EFFECTS.LB_EMPHASIS.default.StringList.item
+msgid  "Dot"
+msgstr "കുത്തു്"
+
+#: source/tabpages/chardlg.src#RID_SVXPAGE_CHAR_EFFECTS.LB_EMPHASIS.default.StringList.item
+msgid  "Circle"
+msgstr ""
+
+#: source/tabpages/chardlg.src#RID_SVXPAGE_CHAR_EFFECTS.LB_EMPHASIS.default.StringList.item
+msgid  "Disc"
+msgstr ""
+
+#: source/tabpages/chardlg.src#RID_SVXPAGE_CHAR_EFFECTS.LB_EMPHASIS.default.StringList.item
 msgid  "Accent"
 msgstr ""
 
 #: source/tabpages/chardlg.src#RID_SVXPAGE_CHAR_EFFECTS.FT_POSITION.FixedText.Text
-#, fuzzy
 msgid  "~Position"
 msgstr "~സ്ഥാനം"
 
 #: source/tabpages/chardlg.src#RID_SVXPAGE_CHAR_EFFECTS.LB_POSITION.CHRDLG_POSITION_OVER.StringList.item
-#, fuzzy
 msgid  "Above text"
 msgstr "മുകളിലുള്ള പദാവലി"
 
 #: source/tabpages/chardlg.src#RID_SVXPAGE_CHAR_EFFECTS.LB_POSITION.CHRDLG_POSITION_UNDER.StringList.item
-#, fuzzy
 msgid  "Below text"
 msgstr "താഴെയുള്ള പദാവലി"
 
 #: source/tabpages/chardlg.src#RID_SVXPAGE_CHAR_EFFECTS.WIN_EFFECTS_PREVIEW.Window.Text
-#, fuzzy
 msgid  "Example"
 msgstr "ഉദാഹരണം"
 
@@ -9946,7 +9353,6 @@ msgid  "Lowercase"
 msgstr ""
 
 #: source/tabpages/chardlg.src#RID_SVXPAGE_CHAR_EFFECTS.STR_EFFECTS_TITLE.String.Text
-#, fuzzy
 msgid  "Title"
 msgstr "തലക്കെട്ട്"
 
@@ -9955,12 +9361,10 @@ msgid  "Small Capitals"
 msgstr ""
 
 #: source/tabpages/chardlg.src#RID_SVXPAGE_CHAR_EFFECTS.STR_EFFECTS_OUTLINE.String.Text
-#, fuzzy
 msgid  "Outline"
 msgstr "ഔട്ട്ലൈന്‍"
 
 #: source/tabpages/chardlg.src#RID_SVXPAGE_CHAR_EFFECTS.STR_EFFECTS_SHADOW.String.Text
-#, fuzzy
 msgid  "Shadow"
 msgstr "നിഴല്‍"
 
@@ -9973,7 +9377,6 @@ msgid  "Transparent"
 msgstr ""
 
 #: source/tabpages/chardlg.src#RID_SVXPAGE_CHAR_POSITION.FL_POSITION.FixedLine.Text
-#, fuzzy
 msgid  "Position"
 msgstr "സ്ഥാനം"
 
@@ -9994,7 +9397,6 @@ msgid  "~Raise/lower by"
 msgstr ""
 
 #: source/tabpages/chardlg.src#RID_SVXPAGE_CHAR_POSITION.CB_HIGHLOW.CheckBox.Text
-#, fuzzy
 msgid  "A~utomatic"
 msgstr "ഓട്ടോ~മാറ്റിക്"
 
@@ -10007,22 +9409,18 @@ msgid  "Rotation / scaling"
 msgstr ""
 
 #: source/tabpages/chardlg.src#RID_SVXPAGE_CHAR_POSITION.FL_SCALING.FixedLine.Text
-#, fuzzy
 msgid  "Scaling"
 msgstr "സ്കെയിലിങ്"
 
 #: source/tabpages/chardlg.src#RID_SVXPAGE_CHAR_POSITION.RB_0_DEG.RadioButton.Text
-#, fuzzy
 msgid  "~0 degrees"
 msgstr " ഡിഗ്രീസ്"
 
 #: source/tabpages/chardlg.src#RID_SVXPAGE_CHAR_POSITION.RB_90_DEG.RadioButton.Text
-#, fuzzy
 msgid  "~90 degrees"
 msgstr " ഡിഗ്രീസ്"
 
 #: source/tabpages/chardlg.src#RID_SVXPAGE_CHAR_POSITION.RB_270_DEG.RadioButton.Text
-#, fuzzy
 msgid  "~270 degrees"
 msgstr " ഡിഗ്രീസ്"
 
@@ -10035,9 +9433,16 @@ msgid  "Scale ~width"
 msgstr ""
 
 #: source/tabpages/chardlg.src#RID_SVXPAGE_CHAR_POSITION.FL_KERNING2.FixedLine.Text
-#, fuzzy
 msgid  "Spacing"
 msgstr "സ്പെയിസിങ്"
+
+#: source/tabpages/chardlg.src#RID_SVXPAGE_CHAR_POSITION.LB_KERNING2.Default.StringList.item
+msgid  "Default"
+msgstr "സ്വതവേയുള്ള"
+
+#: source/tabpages/chardlg.src#RID_SVXPAGE_CHAR_POSITION.LB_KERNING2.Default.StringList.item
+msgid  "Expanded"
+msgstr ""
 
 #: source/tabpages/chardlg.src#RID_SVXPAGE_CHAR_POSITION.LB_KERNING2.Default.StringList.item
 msgid  "Condensed"
@@ -10052,12 +9457,10 @@ msgid  "~Pair kerning"
 msgstr ""
 
 #: source/tabpages/chardlg.src#RID_SVXPAGE_CHAR_POSITION.WIN_POS_PREVIEW.Window.Text
-#, fuzzy
 msgid  "Example"
 msgstr "ഉദാഹരണം"
 
 #: source/tabpages/chardlg.src#RID_SVXPAGE_CHAR_TWOLINES.FL_SWITCHON.FixedLine.Text
-#, fuzzy
 msgid  "Double-lined"
 msgstr "ഇരട്ട വര"
 
@@ -10074,7 +9477,6 @@ msgid  "I~nitial character"
 msgstr ""
 
 #: source/tabpages/chardlg.src#RID_SVXPAGE_CHAR_TWOLINES.ED_STARTBRACKET.CHRDLG_ENCLOSE_NONE.StringList.item
-#, fuzzy
 msgid  "(None)"
 msgstr "(ഒന്നുമില്ല)"
 
@@ -10103,7 +9505,6 @@ msgid  "Final charact~er"
 msgstr ""
 
 #: source/tabpages/chardlg.src#RID_SVXPAGE_CHAR_TWOLINES.ED_ENDBRACKET.CHRDLG_ENCLOSE_NONE.StringList.item
-#, fuzzy
 msgid  "(None)"
 msgstr "(ഒന്നുമില്ല)"
 
@@ -10128,63 +9529,10 @@ msgid  "Other Characters..."
 msgstr ""
 
 #: source/tabpages/chardlg.src#RID_SVXPAGE_CHAR_TWOLINES.WIN_TWOLINES_PREVIEW.Window.Text
-#, fuzzy
 msgid  "Example"
 msgstr "ഉദാഹരണം"
 
-#: source/tabpages/chardlg.src#RID_SVXPAGE_CHAR_EFFECTS.LB_EFFECTS2.Default.StringList.item
-msgid  "(Without)"
-msgstr ""
-
-#: source/tabpages/chardlg.src#RID_SVXPAGE_CHAR_EFFECTS.LB_EFFECTS2.Default.StringList.item
-msgid  "Capitals"
-msgstr ""
-
-#: source/tabpages/chardlg.src#RID_SVXPAGE_CHAR_EFFECTS.LB_EFFECTS2.Default.StringList.item
-msgid  "Lowercase"
-msgstr ""
-
-#: source/tabpages/chardlg.src#RID_SVXPAGE_CHAR_EFFECTS.LB_EFFECTS2.Default.StringList.item
-#, fuzzy
-msgid  "Title"
-msgstr "തലക്കെട്ട്"
-
-#: source/tabpages/chardlg.src#RID_SVXPAGE_CHAR_EFFECTS.LB_RELIEF.Default.StringList.item
-msgid  "(Without)"
-msgstr ""
-
-#: source/tabpages/chardlg.src#RID_SVXPAGE_CHAR_EFFECTS.LB_RELIEF.Default.StringList.item
-msgid  "Embossed"
-msgstr ""
-
-#: source/tabpages/chardlg.src#RID_SVXPAGE_CHAR_EFFECTS.LB_EMPHASIS.default.StringList.item
-msgid  "(Without)"
-msgstr ""
-
-#: source/tabpages/chardlg.src#RID_SVXPAGE_CHAR_EFFECTS.LB_EMPHASIS.default.StringList.item
-#, fuzzy
-msgid  "Dot"
-msgstr "കുത്തു്"
-
-#: source/tabpages/chardlg.src#RID_SVXPAGE_CHAR_EFFECTS.LB_EMPHASIS.default.StringList.item
-msgid  "Circle"
-msgstr ""
-
-#: source/tabpages/chardlg.src#RID_SVXPAGE_CHAR_EFFECTS.LB_EMPHASIS.default.StringList.item
-msgid  "Disc"
-msgstr ""
-
-#: source/tabpages/chardlg.src#RID_SVXPAGE_CHAR_POSITION.LB_KERNING2.Default.StringList.item
-#, fuzzy
-msgid  "Default"
-msgstr "സ്വതവേയുള്ള"
-
-#: source/tabpages/chardlg.src#RID_SVXPAGE_CHAR_POSITION.LB_KERNING2.Default.StringList.item
-msgid  "Expanded"
-msgstr ""
-
 #: source/tabpages/border.src#RID_SVXPAGE_BORDER.TabPage.Text
-#, fuzzy
 msgid  "Borders"
 msgstr "അതിരുകള്‍"
 
@@ -10193,7 +9541,6 @@ msgid  "Line arrangement"
 msgstr ""
 
 #: source/tabpages/border.src#RID_SVXPAGE_BORDER.FT_DEFAULT.FixedText.Text
-#, fuzzy
 msgid  "~Default"
 msgstr "സ്വതവേയുള്ള"
 
@@ -10202,37 +9549,30 @@ msgid  "~User-defined"
 msgstr ""
 
 #: source/tabpages/border.src#RID_SVXPAGE_BORDER.FL_LINE.FixedLine.Text
-#, fuzzy
 msgid  "Line"
 msgstr "വര"
 
 #: source/tabpages/border.src#RID_SVXPAGE_BORDER.FT_STYLE.FixedText.Text
-#, fuzzy
 msgid  "St~yle"
 msgstr "ശൈ~ലി"
 
 #: source/tabpages/border.src#RID_SVXPAGE_BORDER.FT_COLOR.FixedText.Text
-#, fuzzy
 msgid  "~Color"
 msgstr "~നിറം"
 
 #: source/tabpages/border.src#RID_SVXPAGE_BORDER.FT_LEFT.FixedText.Text
-#, fuzzy
 msgid  "~Left"
 msgstr "~ഇടതു്"
 
 #: source/tabpages/border.src#RID_SVXPAGE_BORDER.FT_RIGHT.FixedText.Text
-#, fuzzy
 msgid  "Right"
 msgstr "~വലതു്"
 
 #: source/tabpages/border.src#RID_SVXPAGE_BORDER.FT_TOP.FixedText.Text
-#, fuzzy
 msgid  "~Top"
 msgstr "~മുകളില്‍"
 
 #: source/tabpages/border.src#RID_SVXPAGE_BORDER.FT_BOTTOM.FixedText.Text
-#, fuzzy
 msgid  "~Bottom"
 msgstr "~താഴെ"
 
@@ -10245,17 +9585,14 @@ msgid  "Spacing to contents"
 msgstr ""
 
 #: source/tabpages/border.src#RID_SVXPAGE_BORDER.FT_SHADOWPOS.FixedText.Text
-#, fuzzy
 msgid  "~Position"
 msgstr "~സ്ഥാനം"
 
 #: source/tabpages/border.src#RID_SVXPAGE_BORDER.FT_SHADOWSIZE.FixedText.Text
-#, fuzzy
 msgid  "Distan~ce"
 msgstr "~ദൂരം"
 
 #: source/tabpages/border.src#RID_SVXPAGE_BORDER.FT_SHADOWCOLOR.FixedText.Text
-#, fuzzy
 msgid  "C~olor"
 msgstr "നി~റം"
 
@@ -10264,7 +9601,6 @@ msgid  "Shadow style"
 msgstr ""
 
 #: source/tabpages/border.src#RID_SVXPAGE_BORDER.FL_PROPERTIES.FixedLine.Text
-#, fuzzy
 msgid  "Properties"
 msgstr "വിശേഷതകള്‍"
 
@@ -10349,7 +9685,6 @@ msgid  "Callouts"
 msgstr ""
 
 #: source/tabpages/labdlg.src#RID_SVXPAGE_CAPTION.FT_ABSTAND.FixedText.Text
-#, fuzzy
 msgid  "~Spacing"
 msgstr "~സ്പെയിസിങ്"
 
@@ -10362,22 +9697,18 @@ msgid  "Free"
 msgstr ""
 
 #: source/tabpages/labdlg.src#RID_SVXPAGE_CAPTION.LB_WINKEL.3000.StringList.item
-#, fuzzy
 msgid  "30 Degrees"
 msgstr " ഡിഗ്രീസ്"
 
 #: source/tabpages/labdlg.src#RID_SVXPAGE_CAPTION.LB_WINKEL.4500.StringList.item
-#, fuzzy
 msgid  "45 Degrees"
 msgstr " ഡിഗ്രീസ്"
 
 #: source/tabpages/labdlg.src#RID_SVXPAGE_CAPTION.LB_WINKEL.6000.StringList.item
-#, fuzzy
 msgid  "60 Degrees"
 msgstr " ഡിഗ്രീസ്"
 
 #: source/tabpages/labdlg.src#RID_SVXPAGE_CAPTION.LB_WINKEL.9000.StringList.item
-#, fuzzy
 msgid  "90 Degrees"
 msgstr " ഡിഗ്രീസ്"
 
@@ -10388,6 +9719,10 @@ msgstr ""
 #: source/tabpages/labdlg.src#RID_SVXPAGE_CAPTION.LB_ANSATZ.4.StringList.item
 msgid  "Optimal"
 msgstr ""
+
+#: source/tabpages/labdlg.src#RID_SVXPAGE_CAPTION.LB_ANSATZ.3.StringList.item
+msgid  "From top"
+msgstr "മുകളില്‍ നിന്നും"
 
 #: source/tabpages/labdlg.src#RID_SVXPAGE_CAPTION.LB_ANSATZ.3.StringList.item
 msgid  "From left"
@@ -10406,12 +9741,10 @@ msgid  "~By"
 msgstr ""
 
 #: source/tabpages/labdlg.src#RID_SVXPAGE_CAPTION.FT_ANSATZ_REL.FixedText.Text
-#, fuzzy
 msgid  "~Position"
 msgstr "~സ്ഥാനം"
 
 #: source/tabpages/labdlg.src#RID_SVXPAGE_CAPTION.FT_LAENGE.FixedText.Text
-#, fuzzy
 msgid  "~Length"
 msgstr "~നീളം"
 
@@ -10443,6 +9776,10 @@ msgstr ""
 msgid  "Left;Middle;Right"
 msgstr ""
 
+#: source/tabpages/labdlg.src#_POS_SIZE_TEXT.#define.Text
+msgid  "Position and Size"
+msgstr "സ്ഥാനവും വ്യാപ്തിയും"
+
 #: source/tabpages/labdlg.src#RID_SVXDLG_CAPTION.TabDialog.Text
 msgid  "Callouts"
 msgstr ""
@@ -10450,16 +9787,6 @@ msgstr ""
 #: source/tabpages/labdlg.src#RID_SVXDLG_CAPTION.TAB_CONTROL.RID_SVXPAGE_CAPTION.PageItem.Text
 msgid  "Callout"
 msgstr ""
-
-#: source/tabpages/labdlg.src#_POS_SIZE_TEXT.#define.Text
-#, fuzzy
-msgid  "Position and Size"
-msgstr "സ്ഥാനവും വ്യാപ്തിയും"
-
-#: source/tabpages/labdlg.src#RID_SVXPAGE_CAPTION.LB_ANSATZ.3.StringList.item
-#, fuzzy
-msgid  "From top"
-msgstr "മുകളില്‍ നിന്നും"
 
 #: source/tabpages/tabline.src#RID_SVXPAGE_LINE.TabPage.Text
 #, fuzzy
@@ -10656,8 +9983,18 @@ msgstr "~തരം"
 
 #: source/tabpages/tabline.src#RID_SVXPAGE_LINE_DEF.LB_TYPE_1.Default.StringList.item
 #, fuzzy
+msgid  "Dot"
+msgstr "കുത്തു്"
+
+#: source/tabpages/tabline.src#RID_SVXPAGE_LINE_DEF.LB_TYPE_1.Default.StringList.item
+#, fuzzy
 msgid  "Dash"
 msgstr "ചെറിയ ഡാഷ്"
+
+#: source/tabpages/tabline.src#RID_SVXPAGE_LINE_DEF.LB_TYPE_2.Default.StringList.item
+#, fuzzy
+msgid  "Dot"
+msgstr "കുത്ത്"
 
 #: source/tabpages/tabline.src#RID_SVXPAGE_LINE_DEF.LB_TYPE_2.Default.StringList.item
 #, fuzzy
@@ -10808,13 +10145,3 @@ msgstr "വര ശൈലികള്‍"
 #, fuzzy
 msgid  "Arrow Styles"
 msgstr "ആരോ ശൈലികള്‍"
-
-#: source/tabpages/tabline.src#RID_SVXPAGE_LINE_DEF.LB_TYPE_1.Default.StringList.item
-#, fuzzy
-msgid  "Dot"
-msgstr "കുത്തു്"
-
-#: source/tabpages/tabline.src#RID_SVXPAGE_LINE_DEF.LB_TYPE_2.Default.StringList.item
-#, fuzzy
-msgid  "Dot"
-msgstr "കുത്ത്"

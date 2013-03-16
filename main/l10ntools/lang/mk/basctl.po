@@ -137,7 +137,7 @@ msgstr "Зачувување"
 
 #: source/basicide/basidesh.src#RID_STR_SOURCETOBIG.String.Text
 msgid  "The source text is too large and can be neither compiled nor saved.\nDelete some of the comments or transfer some methods into another module."
-msgstr ""
+msgstr "Изворниот текст е премногу голем и не може ниту да се компилира ниту да се сними.\nИзбришете некои од коментарите или пренесете некои методи во друг модул."
 
 #: source/basicide/basidesh.src#RID_STR_ERROROPENSTORAGE.String.Text
 msgid  "Error opening file"
@@ -201,7 +201,7 @@ msgstr "Датотеката „XX“ веќе постои"
 
 #: source/basicide/basidesh.src#RID_STR_CANNOTRUNMACRO.String.Text
 msgid  "For security reasons, you cannot run this macro.\n\nFor more information, check the security settings."
-msgstr ""
+msgstr "Поради безбедосни причини, не можете да го извршите ова макро.\n\nЗа повеќе информации, проверете ги поставувањата за безбедност."
 
 #: source/basicide/basidesh.src#RID_STR_COMPILEERROR.String.Text
 msgid  "Compile Error: "
@@ -373,7 +373,7 @@ msgstr "Мора да биде внесено име."
 
 #: source/basicide/basidesh.src#RID_STR_WILLSTOPPRG.String.Text
 msgid  "You will have to restart the program after this edit.\nContinue?"
-msgstr ""
+msgstr "Ќе мора повторно да ја рестартирате програмата по ова уредување.\nПродолжувате?"
 
 #: source/basicide/basidesh.src#RID_STR_SEARCHALLMODULES.String.Text
 msgid  "Do you want to replace the text in all active modules?"
@@ -625,7 +625,7 @@ msgstr "Затвори"
 
 #: source/basicide/moduldlg.src#RID_TP_MODULS.RID_PB_NEWMOD.PushButton.Text
 msgid  "~New..."
-msgstr "~Нова..."
+msgstr "~Нов..."
 
 #: source/basicide/moduldlg.src#RID_TP_MODULS.RID_PB_NEWDLG.PushButton.Text
 msgid  "~New..."
@@ -649,7 +649,7 @@ msgstr "Затвори"
 
 #: source/basicide/moduldlg.src#RID_TP_DLGS.RID_PB_NEWMOD.PushButton.Text
 msgid  "~New..."
-msgstr "~Нов..."
+msgstr "~Нова..."
 
 #: source/basicide/moduldlg.src#RID_TP_DLGS.RID_PB_NEWDLG.PushButton.Text
 msgid  "~New..."
@@ -757,7 +757,7 @@ msgstr "Стандарден"
 
 #: source/dlged/managelang.src#RID_DLG_MANAGE_LANGUAGE.FT_INFO.FixedText.Text
 msgid  "The default language is used if no localization for a user interface locale is present. Furthermore all strings from the default language are copied to resources of newly added languages."
-msgstr ""
+msgstr "Стандардниот јазик се користи ако нема достапна локализација за корисничкиот интерфејс. Исто така сите пораки од стандардниот јазик се копираат во ресурсите на новододадените јазици."
 
 #: source/dlged/managelang.src#RID_DLG_MANAGE_LANGUAGE.PB_CLOSE.OKButton.Text
 msgid  "~Close"
@@ -781,7 +781,7 @@ msgstr "Бришење ресурси за јазик"
 
 #: source/dlged/managelang.src#RID_QRYBOX_LANGUAGE.QueryBox.Message
 msgid  "You are about to delete the resources for the selected language(s). All user interface strings for this language(s) will be deleted.\n\nDo you want to delete the resources of the selected language(s)?"
-msgstr ""
+msgstr "Ќе ги избришете ресурсите за избраниот јазик(ци). Сите пораки за овој јазик(ци) ќе бидат избришани.\n\nДали сакате да ги избришете ресурсите за избраниот јазик(ци)?"
 
 #: source/dlged/managelang.src#RID_DLG_SETDEF_LANGUAGE.ModalDialog.Text
 msgid  "Set Default User Interface Language"
@@ -793,7 +793,7 @@ msgstr "Стандарден јазик"
 
 #: source/dlged/managelang.src#RID_DLG_SETDEF_LANGUAGE.FT_DEF_INFO.FixedText.Text
 msgid  "Select a language to define the default user interface language. All currently present strings will be assigned to the resources created for the selected language."
-msgstr ""
+msgstr "Изберете јазик за да го дефинирате стандардниот јазик за корисничкиот интерфејс. Сите пораки што се тековно активни ќе бидат доделени на ресурсите што ќе се креираат за избраниот јазик."
 
 #: source/dlged/managelang.src#RID_DLG_SETDEF_LANGUAGE.STR_ADDLANG_TITLE.String.Text
 msgid  "Add User Interface Languages"
@@ -805,7 +805,7 @@ msgstr "Достапни јазици"
 
 #: source/dlged/managelang.src#RID_DLG_SETDEF_LANGUAGE.STR_ADDLANG_INFO.String.Text
 msgid  "Select languages to be added. Resources for these languages will be created in the library. Strings of the current default user interface language will be copied to these new resources by default."
-msgstr ""
+msgstr "Изберете јазици за додавање. За овие јазици ќе бидат креирани ресурси во библиотеката. Пораките од тековниот јазик за корисничкиот интерфејс ќе бидат копирани во новите ресурси."
 
 #: source/dlged/dlgresid.src#RID_STR_BRWTITLE_PROPERTIES.String.Text
 msgid  "Properties: "

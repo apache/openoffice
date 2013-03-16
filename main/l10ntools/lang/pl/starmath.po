@@ -341,7 +341,7 @@ msgstr "Wi~ersz tytułu"
 
 #: source/smres.src#RID_PRINTOPTIONPAGE.CB_EQUATION_TEXT.CheckBox.Text
 msgid  "~Formula text"
-msgstr "Tekst ~formuły"
+msgstr "~Tekst formuły"
 
 #: source/smres.src#RID_PRINTOPTIONPAGE.CB_FRAME.CheckBox.Text
 msgid  "B~order"
@@ -445,11 +445,11 @@ msgstr "~Usuń"
 
 #: source/smres.src#RID_NOMATHTYPEFACEWARNING.WarningBox.Message
 msgid  "The 'StarMath' font has not been installed.\nWithout this font %PRODUCTNAME Math cannot function correctly.\nPlease install this font and restart %PRODUCTNAME Math."
-msgstr ""
+msgstr "Nie zainstalowano czcionki StarMath.\nBez tej czcionki program %PRODUCTNAME Math nie będzie działał prawidłowo.\nZainstaluj tę czcionkę i ponownie uruchom program %PRODUCTNAME Math."
 
 #: source/smres.src#RID_DEFAULTSAVEQUERY.QueryBox.Message
 msgid  "Should the changes be saved as defaults?\n\nThese changes will apply for all new formulas."
-msgstr ""
+msgstr "Czy zapisać zmiany jako domyślne?\n\nZmiany te będą miały wpływ na wszystkie nowe formuły."
 
 #: source/smres.src#RID_FONTREGULAR.String.Text
 msgid  "Standard"
@@ -558,6 +558,10 @@ msgstr "Bezszeryfowa"
 #: source/smres.src#RID_FONTMENU.7.MenuItem.Text
 msgid  "Fixed"
 msgstr "Stała szerokość"
+
+#: source/smres.src#CMDBOXWINDOW_TEXT.#define.Text
+msgid  "Commands"
+msgstr "Polecenia"
 
 #: source/smres.src#RID_DOCUMENTSTR.String.Text
 msgid  "Formula"
@@ -694,10 +698,6 @@ msgstr "Dopasuj do ~strony"
 #: source/smres.src#RID_PRINTUIOPTIONS.item9.ItemList.item
 msgid  "~Scaling"
 msgstr "~Skalowanie"
-
-#: source/smres.src#CMDBOXWINDOW_TEXT.#define.Text
-msgid  "Commands"
-msgstr "Polecenia"
 
 #: source/commands.src#RID_COMMANDMENU.RID_UNBINOPS_MENU.MenuItem.Text
 msgid  "~Unary/Binary Operators"
@@ -901,7 +901,7 @@ msgstr "Jest prostokątny do"
 
 #: source/toolbox.src#RID_TOOLBOXWINDOW.TOOLBOX_CAT_B.RID_XLESLANTY.ToolBoxItem.Text
 msgid  "Is Less Than Or Equal To"
-msgstr "Jest mniejsze lub równe"
+msgstr "jest mniejsze lub równe"
 
 #: source/toolbox.src#RID_TOOLBOXWINDOW.TOOLBOX_CAT_B.RID_XGESLANTY.ToolBoxItem.Text
 msgid  "Is Greater Than Or Equal To"

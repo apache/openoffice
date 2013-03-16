@@ -32,8 +32,8 @@ msgstr ""
 
 
 #: source/app/desktop.src#STR_RECOVER_QUERY.String.Text
-msgid  "Should the file "$1" be restored?"
-msgstr ""
+msgid  "Should the file \"$1\" be restored?"
+msgstr "ଏହି ଫାଇଲ  \"$1\" ସଞ୍ଚିତହେବା ଉଚିତ?"
 
 #: source/app/desktop.src#STR_RECOVER_TITLE.String.Text
 msgid  "File Recovery"
@@ -41,15 +41,15 @@ msgstr "ଫାଇଲ ପୁନଃପ୍ରାପ୍ତି"
 
 #: source/app/desktop.src#STR_RECOVER_PREPARED.WarningBox.Message
 msgid  "An unrecoverable error has occurred.\n\nAll modified files have been saved and can\nprobably be recovered at program restart."
-msgstr ""
+msgstr "ଏକ ଅପୁନଃପ୍ରାପ୍ତି ତୃଟି ଘଟିଲା ୤\n\nପରିବର୍ତ୍ତିତ ସବୁ ଫାଇଲ୍ଗୁଡିକ ସଞ୍ଚିତହୋଇଛି ଏବଂ\nସମ୍ଭବତଃ ପୋଗ୍ରାମ ପୁନଃଆରମ୍ଭ ସମଯରେ ପୁନଃପ୍ରାପ୍ତି ହୋଇ ପାରେ୤"
 
 #: source/app/desktop.src#STR_BOOTSTRAP_ERR_CANNOT_START.String.Text
 msgid  "The application cannot be started. "
 msgstr "ପ୍ରଯୋଗ ଆରମ୍ଭ ହୋଇ ପାରିବ ନାହିଁ୤"
 
 #: source/app/desktop.src#STR_BOOTSTRAP_ERR_DIR_MISSING.String.Text
-msgid  "The configuration directory "$1" could not be found."
-msgstr ""
+msgid  "The configuration directory \"$1\" could not be found."
+msgstr "କଫିଗୁରେସନ ବିବରଣୀପଞିକା  \"$1\"ମିଳି ପାରିବ ନାହିଁ ୤"
 
 #: source/app/desktop.src#STR_BOOTSTRAP_ERR_PATH_INVALID.String.Text
 msgid  "The installation path is invalid."
@@ -64,16 +64,16 @@ msgid  "An internal error occurred."
 msgstr "ଗୋଟେଏ ଅନ୍ତବର୍ତ୍ତୀ ତୃଟି ଘଟିଲା୤"
 
 #: source/app/desktop.src#STR_BOOTSTRAP_ERR_FILE_CORRUPT.String.Text
-msgid  "The configuration file "$1" is corrupt."
-msgstr ""
+msgid  "The configuration file \"$1\" is corrupt."
+msgstr "କନଫିଗୁରେସନ ଫାଇଲ \"$1\"ଭ୍ରଷ୍ଟ ଅଟେ୤"
 
 #: source/app/desktop.src#STR_BOOTSTRAP_ERR_FILE_MISSING.String.Text
-msgid  "The configuration file "$1" was not found."
-msgstr ""
+msgid  "The configuration file \"$1\" was not found."
+msgstr "କନଫିଗୁରେସନ ଫାଇଲ  \"$1\" ମିଳୁ ନ ଥିଲା୤"
 
 #: source/app/desktop.src#STR_BOOTSTRAP_ERR_NO_SUPPORT.String.Text
-msgid  "The configuration file "$1" does not support the current version."
-msgstr ""
+msgid  "The configuration file \"$1\" does not support the current version."
+msgstr "କନଫିଗୁରେସନ ଫାଇଲ  \"$1\"ବର୍ତ୍ତମାନ ଭାଷାନ୍ତରକୁ ସମର୍ଥନ କରୁ ନାହିଁ୤"
 
 #: source/app/desktop.src#STR_BOOTSTRAP_ERR_LANGUAGE_MISSING.String.Text
 msgid  "The user interface language cannot be determined."
@@ -93,11 +93,11 @@ msgstr ""
 
 #: source/app/desktop.src#STR_ASK_START_SETUP_MANUALLY.String.Text
 msgid  "Start the setup application to repair the installation from the CD or the folder containing the installation packages."
-msgstr ""
+msgstr " CDରୁ ପ୍ରତିଷ୍ଠାପନ ମରାମତି କରିବା ପାଇଁ  ପ୍ରଯୋଗ ସେଟଅପ୍କୁ ଆରମ୍ଭ କର୤ କିମ୍ବା  ପ୍ରତିଷ୍ଠାପନର ପ୍ଯାକେଜ୍ଗୁଡିକ ଫୋଲ୍ଡରର ଅନ୍ତର୍ଗତ ଅଟେ୤"
 
 #: source/app/desktop.src#STR_CONFIG_ERR_SETTINGS_INCOMPLETE.String.Text
 msgid  "The startup settings for accessing the central configuration are incomplete. "
-msgstr ""
+msgstr "କେନ୍ଦ୍ରୀଯ କନଫିଗୁରେସନର ପ୍ରବେଶ ପାଇଁ ସେଟିଙ୍ଗଡିକର ଆରମ୍ଭଗୁଡିକ ଅସମ୍ପୁର୍ଣ୍ଣ ଅଟେ୤ "
 
 #: source/app/desktop.src#STR_CONFIG_ERR_CANNOT_CONNECT.String.Text
 msgid  "A connection to the central configuration could not be established. "
@@ -105,7 +105,7 @@ msgstr "କେନ୍ଦ୍ରୀଯ କନଫିଗୁରେସନର ସଂୟ�
 
 #: source/app/desktop.src#STR_CONFIG_ERR_RIGHTS_MISSING.String.Text
 msgid  "You cannot access the central configuration because of missing access rights. "
-msgstr ""
+msgstr "ତୁମେ କେନ୍ଦ୍ରୀଯ କନଫିଗୁରେସନର ପ୍ରବେଶ କରିପାରିବନାହିଁ କାରଣ ଅଦୃଷ୍ଟ ଅଧିକାରଗୁଡିକର ପ୍ରବେଶ ହୋଇଛି୤"
 
 #: source/app/desktop.src#STR_CONFIG_ERR_ACCESS_GENERAL.String.Text
 msgid  "A general error occurred while accessing your central configuration. "
@@ -113,11 +113,11 @@ msgstr " ତୁମର କେନ୍ଦ୍ରୀଯ କନଫିଗୁରେସନ
 
 #: source/app/desktop.src#STR_CONFIG_ERR_NO_WRITE_ACCESS.String.Text
 msgid  "The changes to your personal settings cannot be stored centrally because of missing access rights. "
-msgstr ""
+msgstr "କେନ୍ଦ୍ରୀଯଭାବରେ ତୁମର ପରିବର୍ତ୍ତନ ହୋଇଥିବା  ବ୍ଯକ୍ତିଗତ ସେଟିଙ୍ଗଗୁଡିକ ସଂଚଯ ହୋଇ ପାରିବ ନାହିଁ କାରଣ ଅଦୃଷ୍ଟ ଅଧିକାରଗୁଡିକର ପ୍ରବେଶ ହୋଇଛି୤"
 
 #: source/app/desktop.src#STR_BOOTSTRAP_ERR_CFG_DATAACCESS.String.Text
 msgid  "%PRODUCTNAME cannot be started due to an error in accessing the %PRODUCTNAME configuration data.\n\nPlease contact your system administrator."
-msgstr ""
+msgstr "ପ୍ରବେଶ କରିବାରେ ତୃଟି ୟୋଗୁଁ %PRODUCTNAME ଆରମ୍ଭ ହୋଇ ପାରିବ ନାହିଁ  %PRODUCTNAME କନଫିଗୁରେସନ ତଥ୍ଯ୤\n\nଦଯାକରି ସିସ୍ଟମ ପ୍ରଶାସକ ସହିତ ୟୋଗାୟୋଗ କରନ୍ତୁ୤"
 
 #: source/app/desktop.src#STR_INTERNAL_ERRMSG.String.Text
 msgid  "The following internal error has occurred: "
@@ -125,7 +125,7 @@ msgstr "ନିମ୍ନ ଅନ୍ତବର୍ତ୍ତୀ ତୃଟି ଘଟି
 
 #: source/app/desktop.src#QBX_USERDATALOCKED.QueryBox.Message
 msgid  "Either another instance of %PRODUCTNAME is accessing your personal settings or your personal settings are locked.\nSimultaneous access can lead to inconsistencies in your personal settings. Before continuing, you should make sure user '$u' closes %PRODUCTNAME on host '$h'.\n\nDo you really want to continue?"
-msgstr ""
+msgstr "%PRODUCTNAME ର ଅନ୍ଯତର ଆଉଗୋଟିଏ ଦୃଷ୍ଟାନ୍ତ  ତୁମର ବ୍ଯକ୍ତିଗତ ସେଟିଙ୍ଗଗୁଡିକରେ ପ୍ରବେଶ କରୁଛି କିମ୍ବା ତୁମର ବ୍ଯକ୍ତିଗତ ଗଠନଗୁଡିକ ଲକହୋଇଛି୤\nଏକକାଳିନ ପ୍ରବେଶ ତୁମର  ବ୍ଯକ୍ତିଗତ ସେଟିଙ୍ଗଗୁଡିକ ଅସଙ୍ଗତ ହୋଇପାରେ୤ ଚାଲୁରଖିବା ପୂର୍ବରୁ,ତୁମେ ନିଶ୍ଚଯ ଉପୟୋଗକର୍ତ୍ତାକୁ  '$u' ବନ୍ଦକର%PRODUCTNAME ଆୟୋଜକରେ '$h'୤\n\nତୁମେ ପ୍ରକୃତରେ ଚାଲୁ ରଖିବାକୁ ଚାହୁଁଛ କି?"
 
 #: source/app/desktop.src#STR_TITLE_USERDATALOCKED.String.Text
 msgid  "%PRODUCTNAME %PRODUCTVERSION"
@@ -149,11 +149,11 @@ msgstr "ପଥ ପରିଚାଳକ ଉପଲବ୍ଧ ନାହିଁ।\n"
 
 #: source/app/desktop.src#STR_BOOSTRAP_ERR_NOTENOUGHDISKSPACE.String.Text
 msgid  "%PRODUCTNAME user installation could not be completed due to insufficient free disk space. Please free more disc space at the following location and restart %PRODUCTNAME:\n\n"
-msgstr ""
+msgstr "ମୁକ୍ତ ସ୍ଥାନର ଅଭାବରୁ %PRODUCTNAME ଚାଳକ ସ୍ଥାପନାକୁ ସମ୍ପୂର୍ଣ୍ଣ କରିହେଲା ନାହିଁ। ଦୟାକରି ନିମ୍ନଲିଖିତ ସ୍ଥାନରେ ଅଧିକ ଡ଼ିସ୍କ ସ୍ଥାନକୁ ମୁକ୍ତ କରନ୍ତୁ ଏବଂ %PRODUCTNAMEକୁ ପୁନଃଚାଳନ କରନ୍ତୁ:\n\n"
 
 #: source/app/desktop.src#STR_BOOSTRAP_ERR_NOACCESSRIGHTS.String.Text
 msgid  "%PRODUCTNAME user installation could not be processed due to missing access rights. Please make sure that you have sufficient access rights for the following location and restart %PRODUCTNAME:\n\n"
-msgstr ""
+msgstr "ପ୍ରବେଶାନୁମତି ଅବାବରୁ %PRODUCTNAME ଚାଳକ ସ୍ଥାପନାକୁ କାର୍ଯ୍ୟକାରୀ କରିହେବ ନାହିଁ। ଦୟାକରି ନିଶ୍ଚିତ କରନ୍ତୁ ଯେ ଆପଣଙ୍କ ପାଖରେ ଯଥେଷ୍ଟ ଅଭିଗମ୍ୟତାଅଧିକାର ଅଛି ଏବଂ %PRODUCTNAMEକୁ ପୁନଃଚାଳନ କରନ୍ତୁ:\n\n"
 
 #: source/deployment/gui/dp_gui_versionboxes.src#RID_WARNINGBOX_VERSION_LESS.WarningBox.Message
 msgid  "You are about to install version $NEW of the extension \'$NAME\'.\nThe newer version $DEPLOYED is already installed.\nClick \'OK\' to replace the installed extension.\nClick \'Cancel\' to stop the installation."
@@ -185,7 +185,7 @@ msgstr "ତନ୍ତ୍ର ନିର୍ଭୋରତା ଯାଞ୍ଚ"
 
 #: source/deployment/gui/dp_gui_dependencydialog.src#RID_DLG_DEPENDENCIES.RID_DLG_DEPENDENCIES_TEXT.FixedText.Text
 msgid  "The extension cannot be installed as the following\nsystem dependencies are not fulfilled:"
-msgstr ""
+msgstr "ନିମ୍ନଲିଖିତ ତନ୍ତ୍ର ନିର୍ଭୋରକଗୁଡ଼ିକ ସମ୍ପୂର୍ଣ୍ଣ ହୋଇନଥିବାରୁ ଅନୁଲଗ୍ନଟିକୁ\nସ୍ଥାପନ କରାଯାଇପାରିବ ନାହିଁ:"
 
 #: source/deployment/gui/dp_gui_dialog.src#RID_STR_ADD_PACKAGES.String.Text
 msgid  "Add Extension(s)"
@@ -253,15 +253,15 @@ msgstr "ବିଦାୟ ନିଅନ୍ତୁ"
 
 #: source/deployment/gui/dp_gui_dialog.src#RID_STR_NO_ADMIN_PRIVILEGE.String.Text
 msgid  "%PRODUCTNAME has been updated to a new version. Some shared %PRODUCTNAME extensions are not compatible with this version and need to be updated before %PRODUCTNAME can be started.\n\nUpdating of shared extension requires administrator privileges. Contact your system administrator to update the following shared extensions:"
-msgstr ""
+msgstr "%PRODUCTNAME କୁ ଗୋଟିଏ ନୂତନ ସଂସ୍କରଣକୁ ଅଦ୍ୟତିତ କରାହୋଇଛି। କିଛି ସ୍ଥାପିତ %PRODUCTNAME ଅନୁଲଗ୍ନଗୁଡ଼ିକ ଏହି ସଂସ୍କରଣ ସହିତ ସୁସଂଗତ ନୁହଁ ଏବଂ ଆରମ୍ଭ ହେବା ପୂର୍ବରୁ %PRODUCTNAME କୁ ଅଦ୍ୟତିତ କରିବା ଆବଶ୍ୟକ।\nସହଭାଗୀ ଅନୁଲଗ୍ନକୁ ଅଦ୍ୟତନ କରିବା ଫଳରେ ପ୍ରଶାସନିକ ପ୍ରାଧିକରଣ ଆବଶ୍ୟକ। ନିମ୍ନଲିଖିତ ସହଭାଗୀ ଅନୁଲଗ୍ନଗୁଡ଼ିକୁ ଅଦ୍ୟତନ କରିବା ପାଇଁ ଆପଣଙ୍କର ତନ୍ତ୍ର ପ୍ରଶାସକଙ୍କ ସହିତ ଯୋଗାଯୋଗ କରିବା ଆବଶ୍ୟକ:"
 
 #: source/deployment/gui/dp_gui_dialog.src#RID_STR_ERROR_MISSING_DEPENDENCIES.String.Text
 msgid  "The extension cannot be enabled as the following system dependencies are not fulfilled:"
-msgstr ""
+msgstr "ନିମ୍ନଲିଖିତ ତନ୍ତ୍ର ନିର୍ଭୋରକଗୁଡ଼ିକ ସମ୍ପୂର୍ଣ୍ଣ ହୋଇନଥିବାରୁ ଅନୁଲଗ୍ନଟିକୁସ୍ଥାପନ କରାଯାଇପାରିବ ନାହିଁ:"
 
 #: source/deployment/gui/dp_gui_dialog.src#RID_STR_ERROR_MISSING_LICENSE.String.Text
 msgid  "This extension is disabled because you haven't accepted the license yet.\n"
-msgstr "ଅନୁଲଗ୍ନଟିକୁ ନିଷ୍କ୍ରିୟ କରାଯାଇଛି କାରଣ ଆପଣ ଏପର୍ଯ୍ୟନ୍ତ ଅନୁମତି ପତ୍ର ଗ୍ରହଣ "
+msgstr "ଅନୁଲଗ୍ନଟିକୁ ନିଷ୍କ୍ରିୟ କରାଯାଇଛି କାରଣ ଆପଣ ଏପର୍ଯ୍ୟନ୍ତ ଅନୁମତି ପତ୍ର ଗ୍ରହଣ କରିନାହାନ୍ତି।\n"
 
 #: source/deployment/gui/dp_gui_dialog.src#RID_STR_SHOW_LICENSE_CMD.String.Text
 msgid  "Show license"
@@ -274,10 +274,9 @@ msgstr "ସଫ୍ଟୱେର ଅନୁମତିପତ୍ର ଅନୁଲଗ୍�
 
 #: source/deployment/gui/dp_gui_dialog.src#RID_DLG_LICENSE.FT_LICENSE_HEADER.FixedText.Text
 msgid  "Please follow these steps to proceed with the installation of the extension:"
-msgstr ""
+msgstr "ଅନୁଲଗ୍ନର ସ୍ଥାପନ କ୍ରିୟା ସହିତ ଅଗ୍ରସର ହେବା ପାଇଁ ଦୟାକରି ଏହି ପଦକ୍ଷେପଗୁଡ଼ିକୁ ପାଳନ କରନ୍ତୁ:"
 
 #: source/deployment/gui/dp_gui_dialog.src#RID_DLG_LICENSE.FT_LICENSE_BODY_1.FixedText.Text
-#, fuzzy
 msgid  "1."
 msgstr "1."
 
@@ -286,7 +285,6 @@ msgid  "Read the complete License Agreement. Use the scroll bar or the \'Scroll 
 msgstr ""
 
 #: source/deployment/gui/dp_gui_dialog.src#RID_DLG_LICENSE.FT_LICENSE_BODY_2.FixedText.Text
-#, fuzzy
 msgid  "2."
 msgstr "2."
 
@@ -295,17 +293,14 @@ msgid  "Accept the License Agreement for the extension by pressing the \'Accept\
 msgstr ""
 
 #: source/deployment/gui/dp_gui_dialog.src#RID_DLG_LICENSE.PB_LICENSE_DOWN.PushButton.Text
-#, fuzzy
 msgid  "~Scroll Down"
 msgstr "ସ୍କ୍ରଲ ଡ଼ାଉନ (~S)"
 
 #: source/deployment/gui/dp_gui_dialog.src#RID_DLG_LICENSE.BTN_LICENSE_ACCEPT.OKButton.Text
-#, fuzzy
 msgid  "Accept"
 msgstr "ଗ୍ରହଣ  "
 
 #: source/deployment/gui/dp_gui_dialog.src#RID_DLG_LICENSE.BTN_LICENSE_DECLINE.CancelButton.Text
-#, fuzzy
 msgid  "Decline"
 msgstr "ହ୍ରାସ କର"
 
@@ -469,8 +464,9 @@ msgid  "No new updates are available."
 msgstr "କୌଣସି ନୂତନ ଅଦ୍ୟତନ ଉପଲବ୍ଧ ନାହିଁ।"
 
 #: source/deployment/gui/dp_gui_updatedialog.src#RID_DLG_UPDATE.RID_DLG_UPDATE_NOINSTALLABLE.String.Text
+#, fuzzy
 msgid  "No installable updates are available. To see ignored or disabled updates, mark the check box 'Show all updates'."
-msgstr ""
+msgstr "କୌଣସି ସ୍ଥାପନ ଯୋଗ୍ୟ ଅଦ୍ୟତନ ଉପଲବ୍ଧ ନାହିଁ। ସମସ୍ତ ଅଦ୍ୟତନଗୁଡ଼ିକୁ ଦେଖିବା ପାଇଁ, 'ସମସ୍ତ ଅଦ୍ୟତନଗୁଡ଼ିକୁ ଦର୍ଶାନ୍ତୁ' ଯାଞ୍ଚ ବାକ୍ସକୁ ଚିହ୍ନଟ କରନ୍ତୁ।"
 
 #: source/deployment/gui/dp_gui_updatedialog.src#RID_DLG_UPDATE.RID_DLG_UPDATE_FAILURE.String.Text
 #, fuzzy
@@ -565,8 +561,9 @@ msgid  "Extension Update Required"
 msgstr "ଅନୁଲଗ୍ନ ଅଦ୍ୟତନ ଆବଶ୍ୟକ"
 
 #: source/deployment/gui/dp_gui_dialog2.src#RID_DLG_UPDATE_REQUIRED.RID_EM_FT_MSG.FixedText.Text
+#, fuzzy
 msgid  "%PRODUCTNAME has been updated to a new version. Some installed %PRODUCTNAME extensions are not compatible with this version and need to be updated before they can be used."
-msgstr ""
+msgstr "%PRODUCTNAME କୁ ଗୋଟିଏ ନୂତନ ସଂସ୍କରଣକୁ ଅଦ୍ୟତିତ କରାହୋଇଛି। କିଛି ସ୍ଥାପିତ %PRODUCTNAME ଅନୁଲଗ୍ନଗୁଡ଼ିକ ଏହି ସଂସ୍କରଣ ସହିତ ସୁସଂଗତ ନୁହଁ ଏବଂ ବ୍ୟବହାର ହେବା ପୂର୍ବରୁ ସେମାନଙ୍କୁ ଅଦ୍ୟତିତ କରିବା ଆବଶ୍ୟକ।"
 
 #: source/deployment/gui/dp_gui_dialog2.src#RID_DLG_UPDATE_REQUIRED.RID_EM_FT_PROGRESS.FixedText.Text
 #, fuzzy
@@ -584,41 +581,35 @@ msgid  "Disable all"
 msgstr "ସମସ୍ତଙ୍କୁ ନିଷ୍କ୍ରିୟ କରନ୍ତୁ"
 
 #: source/deployment/gui/dp_gui_dialog2.src#RID_QUERYBOX_INSTALL_FOR_ALL.QueryBox.Message
+#, fuzzy
 msgid  "Make sure that no further users are working with the same %PRODUCTNAME, when installing an extension for all users in a multi user environment.\n\nFor whom do you want to install the extension?\n"
-msgstr ""
+msgstr "ଯେତେବେଳେ ଏକାଧିକ ଚାଳକ ପରିବେଶରେ ଅନୁଲଗ୍ନ ପରିଚାଳକକୁ ସ୍ଥାପନ କରିବା ସମୟରେ, ନିଶ୍ଚିତ ହୁଅନ୍ତୁ ଯେ ଅନ୍ୟ କୌଣସି ଚାଳକ %PRODUCTNAME ରେ କାର୍ଯ୍ୟ କରୁନାହାନ୍ତି।\n\nଆପଣ କାହା ପାଇଁ ଏହି ଅନୁଲଗ୍ନକୁ ସ୍ଥାପନ କରିବାକୁ ଚାହୁଁଛନ୍ତି?\n"
 
 #: source/deployment/manager/dp_manager.src#RID_STR_COPYING_PACKAGE.String.Text
-#, fuzzy
 msgid  "Copying: "
 msgstr "ନକଲ କରୁଅଛି: "
 
 #: source/deployment/manager/dp_manager.src#RID_STR_ERROR_WHILE_ADDING.String.Text
-#, fuzzy
 msgid  "Error while adding: "
 msgstr "ଯୋଗ କରିବା ସମୟରେ ତ୍ରୁଟି: "
 
 #: source/deployment/manager/dp_manager.src#RID_STR_ERROR_WHILE_REMOVING.String.Text
-#, fuzzy
 msgid  "Error while removing: "
 msgstr "କାଢ଼ିବା ସମୟରେ ତ୍ରୁଟି: "
 
 #: source/deployment/manager/dp_manager.src#RID_STR_PACKAGE_ALREADY_ADDED.String.Text
-#, fuzzy
 msgid  "Extension has already been added: "
 msgstr "ଅନୁଲଗ୍ନଟିକୁ ପୂର୍ବରୁ ଯୋଗକରାସରିଛି: "
 
 #: source/deployment/manager/dp_manager.src#RID_STR_NO_SUCH_PACKAGE.String.Text
-#, fuzzy
 msgid  "There is no such extension deployed: "
 msgstr "ସେଠାରେ ଏହିପରି କୌଣସି ଅନୁଲଗ୍ନ ନିଯୁକ୍ତ କରାଯାଇନାହିଁ: "
 
 #: source/deployment/manager/dp_manager.src#RID_STR_SYNCHRONIZING_REPOSITORY.String.Text
-#, fuzzy
 msgid  "Synchronizing repository for %NAME extensions"
 msgstr "%NAME ଅନୁଲଗ୍ନଗୁଡ଼ିକ ପାଇଁ ସଂଗ୍ରହାଳୟକୁ ସମକାଳିନ କରୁଅଛି"
 
 #: source/deployment/misc/dp_misc.src#RID_DEPLYOMENT_DEPENDENCIES_UNKNOWN.String.Text
-#, fuzzy
 msgid  "Unknown"
 msgstr "ଅଜ୍ଞାତ"
 
@@ -631,47 +622,38 @@ msgid  "Extension doesn't support versions greater than: Apache OpenOffice %VERS
 msgstr ""
 
 #: source/deployment/registry/dp_registry.src#RID_STR_REGISTERING_PACKAGE.String.Text
-#, fuzzy
 msgid  "Enabling: "
 msgstr "ସକ୍ରିୟ କରୁଅଛି: "
 
 #: source/deployment/registry/dp_registry.src#RID_STR_REVOKING_PACKAGE.String.Text
-#, fuzzy
 msgid  "Disabling: "
 msgstr "ନିଷ୍କ୍ରିୟ କରୁଅଛି: "
 
 #: source/deployment/registry/dp_registry.src#RID_STR_CANNOT_DETECT_MEDIA_TYPE.String.Text
-#, fuzzy
 msgid  "Cannot detect media-type: "
 msgstr " ମିଡିଆ-ପ୍ରକାର ଡକାହୋଇ ପାରିବନାହିଁ: "
 
 #: source/deployment/registry/dp_registry.src#RID_STR_UNSUPPORTED_MEDIA_TYPE.String.Text
-#, fuzzy
 msgid  "This media-type is not supported: "
 msgstr "ମିଡିଆ-ପ୍ରକାର ସମର୍ଥିତହୋଇ ପାରିବନାହିଁ: "
 
 #: source/deployment/registry/dp_registry.src#RID_STR_ERROR_WHILE_REGISTERING.String.Text
-#, fuzzy
 msgid  "An error occurred while enabling: "
 msgstr "ସକ୍ରିୟ କରିବା ସମୟରେ ଗୋଟିଏ ତ୍ରୁଟି ଘଟିଲା: "
 
 #: source/deployment/registry/dp_registry.src#RID_STR_ERROR_WHILE_REVOKING.String.Text
-#, fuzzy
 msgid  "An error occurred while disabling: "
 msgstr "ନିଷ୍କ୍ରିୟ କରିବା ସମୟରେ ଗୋଟିଏ ତ୍ରୁଟି ଘଟିଲା: "
 
 #: source/deployment/registry/component/dp_component.src#RID_STR_DYN_COMPONENT.String.Text
-#, fuzzy
 msgid  "UNO Dynamic Library Component"
 msgstr "UNO ଗତିଶୀଳ ଗ୍ରନ୍ଥାଳଯ ଉପାଂଶ"
 
 #: source/deployment/registry/component/dp_component.src#RID_STR_JAVA_COMPONENT.String.Text
-#, fuzzy
 msgid  "UNO Java Component"
 msgstr "UNO ଜାଭା ଉପାଂଶ"
 
 #: source/deployment/registry/component/dp_component.src#RID_STR_PYTHON_COMPONENT.String.Text
-#, fuzzy
 msgid  "UNO Python Component"
 msgstr "UNO ପାଇଥନ ଉପାଂଶ"
 
@@ -680,485 +662,410 @@ msgid  "UNO Components"
 msgstr ""
 
 #: source/deployment/registry/component/dp_component.src#RID_STR_RDB_TYPELIB.String.Text
-#, fuzzy
 msgid  "UNO RDB Type Library"
 msgstr "UNO RDB  ପ୍ରକାର ଗ୍ରନ୍ଥାଳଯ"
 
 #: source/deployment/registry/component/dp_component.src#RID_STR_JAVA_TYPELIB.String.Text
-#, fuzzy
 msgid  "UNO Java Type Library"
 msgstr "UNO ଜାଭା   ପ୍ରକାର ଗ୍ରନ୍ଥାଳଯ"
 
 #: source/deployment/registry/configuration/dp_configuration.src#RID_STR_CONF_SCHEMA.String.Text
-#, fuzzy
 msgid  "Configuration Schema"
 msgstr "କନଫିଗରେସନ ସ୍କିମା"
 
 #: source/deployment/registry/configuration/dp_configuration.src#RID_STR_CONF_DATA.String.Text
-#, fuzzy
 msgid  "Configuration Data"
 msgstr "କନଫିଗରେସନ  ତଥ୍ଯ"
 
 #: source/deployment/registry/help/dp_help.src#RID_STR_HELP.String.Text
-#, fuzzy
 msgid  "Help"
 msgstr "ସହାୟତା"
 
 #: source/deployment/registry/help/dp_help.src#RID_STR_HELPPROCESSING_GENERAL_ERROR.String.Text
-#, fuzzy
 msgid  "The extension cannot be installed because:\n"
 msgstr "ଅନୁଲଗ୍ନକୁ ସ୍ଥାପନ କରିହେବନାହିଁ କାରଣ:\n"
 
 #: source/deployment/registry/help/dp_help.src#RID_STR_HELPPROCESSING_XMLPARSING_ERROR.String.Text
 msgid  "The extension will not be installed because an error occurred in the Help files:\n"
-msgstr ""
+msgstr "ଅନୁଲଗ୍ନକୁ ସ୍ଥାପନ କରିହେବନାହିଁ କାରଣ ସହାୟତା ଫାଇଲରେ ଗୋଟିଏ ତ୍ରୁଟି ଘଟିଛି:\n"
 
 #: source/deployment/registry/package/dp_package.src#RID_STR_PACKAGE_BUNDLE.String.Text
-#, fuzzy
 msgid  "Extension"
 msgstr "ବିସ୍ତାର"
 
 #: source/deployment/registry/script/dp_script.src#RID_STR_BASIC_LIB.String.Text
-#, fuzzy
 msgid  "%PRODUCTNAME Basic Library"
 msgstr "%PRODUCTNAME  ଆଧାର ଗ୍ରନ୍ଥାଳଯ"
 
 #: source/deployment/registry/script/dp_script.src#RID_STR_DIALOG_LIB.String.Text
-#, fuzzy
 msgid  "Dialog Library"
 msgstr "ଡାଇଲଗ୍  ଗ୍ରନ୍ଥାଳଯ"
 
 #: source/deployment/registry/script/dp_script.src#RID_STR_CANNOT_DETERMINE_LIBNAME.String.Text
-#, fuzzy
 msgid  "The library name could not be determined."
 msgstr "ଗ୍ରନ୍ଥାଳଯର ନାମ ନିର୍ଦିଷ୍ଟ ହୋଇ ପାରିବ ନାହିଁ୤"
 
 #: source/deployment/registry/script/dp_script.src#RID_STR_LIBNAME_ALREADY_EXISTS.String.Text
-#, fuzzy
 msgid  "This library name already exists. Please choose a different name."
 msgstr "ଗ୍ରନ୍ଥାଳଯର ନାମ ଆଗରୁ ଅଛି୤ଦଯାକରି ଏକ ଭିନ୍ନ ନାମ ବାଛ୤"
 
 #: source/deployment/registry/sfwk/dp_sfwk.src#RID_STR_SFWK_LIB.String.Text
-#, fuzzy
 msgid  "%MACROLANG Library"
 msgstr "%MACROLANG ଗ୍ରନ୍ଥାଳଯ"
 
 #: source/deployment/unopkg/unopkg.src#RID_STR_UNOPKG_ACCEPT_LIC_1.String.Text
-#, fuzzy
 msgid  "Extension Software License Agreement of $NAME:"
 msgstr "$NAME ର ଅନୁଲଗ୍ନ ସଫ୍ଟୱେର ଅନୁମତିପତ୍ର:"
 
 #: source/deployment/unopkg/unopkg.src#RID_STR_UNOPKG_ACCEPT_LIC_2.String.Text
-msgid  "Read the complete License Agreement displayed above. Accept the License Agreement by typing "yes" on the console then press the Return key. Type "no" to decline and to abort the extension setup."
-msgstr ""
+msgid  "Read the complete License Agreement displayed above. Accept the License Agreement by typing \"yes\" on the console then press the Return key. Type \"no\" to decline and to abort the extension setup."
+msgstr "ଉପରେ ପ୍ରଦର୍ଶିତ ସମ୍ପୂର୍ଣ୍ଣ ଅନୁମତି ପତ୍ରକୁ ପଢ଼ନ୍ତୁ। \"yes\" କୁ ଟାଇପ କରି ଅନୁମତି ପତ୍ରକୁ ଗ୍ରହଣ କରନ୍ତୁ ଏବଂ ତାହାପରେ Return କିକୁ ଦବାନ୍ତୁ। ଅନୁଲଗ୍ନ ବିନ୍ୟାସକୁ ପରିତ୍ୟାଗ କରିବା ପାଇଁ \"no\"କୁ ଟାଇପ କରନ୍ତୁ।"
 
 #: source/deployment/unopkg/unopkg.src#RID_STR_UNOPKG_ACCEPT_LIC_3.String.Text
-msgid  "[Enter "yes" or "no"]:"
-msgstr ""
+msgid  "[Enter \"yes\" or \"no\"]:"
+msgstr "[\"ହଁ\" କିମ୍ବା \"ନାଁ\" ଭରଣ କରନ୍ତୁ]:"
 
 #: source/deployment/unopkg/unopkg.src#RID_STR_UNOPKG_ACCEPT_LIC_4.String.Text
-msgid  "Your input was not correct. Please enter "yes" or "no":"
-msgstr ""
+msgid  "Your input was not correct. Please enter \"yes\" or \"no\":"
+msgstr "ଆପଣଙ୍କର ନିବେଶଟି ଠିକ ନାହିଁ। ଦୟାକରି \"ହଁ\" କିମ୍ବା \"ନା\" ଭରଣ କରନ୍ତୁ:"
 
 #: source/deployment/unopkg/unopkg.src#RID_STR_UNOPKG_ACCEPT_LIC_YES.String.Text
-#, fuzzy
 msgid  "YES"
 msgstr "ହଁ"
 
 #: source/deployment/unopkg/unopkg.src#RID_STR_UNOPKG_ACCEPT_LIC_Y.String.Text
-#, fuzzy
 msgid  "Y"
 msgstr "Y"
 
 #: source/deployment/unopkg/unopkg.src#RID_STR_UNOPKG_ACCEPT_LIC_NO.String.Text
-#, fuzzy
 msgid  "NO"
 msgstr "ନାଁ"
 
 #: source/deployment/unopkg/unopkg.src#RID_STR_UNOPKG_ACCEPT_LIC_N.String.Text
-#, fuzzy
 msgid  "N"
 msgstr "N"
 
 #: source/deployment/unopkg/unopkg.src#RID_STR_CONCURRENTINSTANCE.String.Text
 msgid  "unopkg cannot be started. The lock file indicates it as already running. If this does not apply, delete the lock file at:"
-msgstr ""
+msgstr "unopkg କୁ ଆରମ୍ଭ କରିପାରିବେ ନାହିଁ। ଲକ ଫାଇଲ ସୂଚାଇଥାଏ ଯେ ଏହା ପୂର୍ବରୁ ଚାଲୁଅଛି। ଯଦିଏହାକୁ ପ୍ରୟୋଗ କରାନଯାଏ, ଲକ ଫାଇଲକୁ ଏଠାରେ ଅପସାରଣ କରନ୍ତୁ:"
 
 #: source/deployment/unopkg/unopkg.src#RID_STR_UNOPKG_ERROR.String.Text
-#, fuzzy
 msgid  "ERROR: "
 msgstr "ତ୍ରୁଟି: "
 
 #: source/migration/wizard.src#DLG_FIRSTSTART_WIZARD.ModalDialog.Text
-#, fuzzy
 msgid  "Welcome to %PRODUCTNAME %PRODUCTVERSION"
 msgstr " %PRODUCTNAME %PRODUCTVERSION କୁ ସ୍ବାଗତ"
 
 #: source/migration/wizard.src#STR_STATE_WELCOME.String.Text
-#, fuzzy
 msgid  "Welcome"
 msgstr "ସ୍ୱାଗତମ"
 
 #: source/migration/wizard.src#STR_STATE_LICENSE.String.Text
-#, fuzzy
 msgid  "License Agreement"
 msgstr "ଲାଇସେନସ୍  ରାଜିନାମା"
 
 #: source/migration/wizard.src#STR_STATE_MIGRATION.String.Text
-#, fuzzy
 msgid  "Personal Data"
 msgstr "ବ୍ଯକ୍ତିଗତ ତଥ୍ଯ"
 
 #: source/migration/wizard.src#STR_STATE_USER.String.Text
-#, fuzzy
 msgid  "User name"
 msgstr "ଉପୟୋଗକର୍ତ୍ତା  ନାମ"
 
 #: source/migration/wizard.src#STR_STATE_UPDATE_CHECK.String.Text
-#, fuzzy
 msgid  "Online Update"
 msgstr "ଅନଲାଇନ ଅଦ୍ୟତନ"
 
 #: source/migration/wizard.src#STR_STATE_REGISTRATION.String.Text
-#, fuzzy
 msgid  "Registration"
 msgstr "ରେଜିଷ୍ଟେସନ"
 
 #: source/migration/wizard.src#STR_WELCOME_MIGRATION.String.Text
 msgid  "This wizard will guide you through the license agreement, the transfer of user data from %OLD_VERSION and the registration of %PRODUCTNAME.\n\nClick 'Next' to continue."
-msgstr ""
+msgstr "ଲାଇସେନସ୍  ରାଜିନାମା ଏବଂ  %PRODUCTNAMEର ରେଜିଷ୍ଟ୍ରେସନ ଦ୍ବାରା ଏହି ଉଇଜାର୍ଡ ତୁମକୁ ଗାଇଡ୍କରିବ  ୤\n\nଚାଲୁରଖିବା ପାଇଁ 'ପରବର୍ତ୍ତୀ'କୁ  କ୍ଲିକ୍ କର୤"
 
 #: source/migration/wizard.src#STR_WELCOME_WITHOUT_LICENSE.String.Text
 msgid  "This wizard will guide you through the registration of %PRODUCTNAME.\n\nClick 'Next' to continue."
-msgstr ""
+msgstr "%PRODUCTNAME ର ପଞ୍ଜିକରଣ ମାଧ୍ଯମରେ ଏହି ୱିଜାର୍ଡଟି ଆପଣଙ୍କୁ ପଥପ୍ରଦର୍ଶନ କରିବ।\n\nଅଗ୍ରସର ହେବା ପାଇଁ 'ପରବର୍ତ୍ତି' କୁ ଦବାନ୍ତୁ।"
 
 #: source/migration/wizard.src#STR_FINISH.String.Text
-#, fuzzy
 msgid  "~Finish"
 msgstr "ଶେଷ"
 
 #: source/migration/wizard.src#STR_REGISTRATION_OOO.String.Text
 msgid  "You now have the opportunity to support and contribute to the fastest growing open source community in the world.\n\nHelp us prove that %PRODUCTNAME has already gained significant market share by registering.\n\nRegistering is voluntary and without obligation."
-msgstr ""
+msgstr "ତୀବ୍ରଗତିରେ ଅଗ୍ରସର ହେଉଥିବା ମୁକ୍ତ ଉତ୍ସ ସମ୍ପ୍ରଦାୟକୁ ସମର୍ଥନ ଏବଂ ସହଯୋଗ କରିବା ପାଇଁ ଆପଣଙ୍କ ପାଖରେ ବର୍ତ୍ତମାନ ସୁଯୋଗ ଅଛି।\n\n%PRODUCTNAME ପୂର୍ବରୁ ଯଥେଷ୍ଟ ସୁନାମ ଅର୍ଜନ କରିସାରିଛି ବୋଲି ପ୍ରମାଣ କରିବା ପାଇଁ ପଞ୍ଜିକରଣ କରି ଆମ୍ଭମାନଙ୍କୁ ସହାୟତା କରନ୍ତୁ।\n\nପଞ୍ଜିକରଣ କରିବା ହେଉଛି ସ୍ୱଇଚ୍ଛା ଏବଂ ବିନା ଅନୁଗ୍ରହରେ।"
 
 #: source/migration/wizard.src#ERRBOX_REG_NOSYSBROWSER.ErrorBox.Message
 msgid  "An error occurred in starting the web browser.\nPlease check the %PRODUCTNAME and web browser settings."
-msgstr ""
+msgstr "ଉଏବ ବ୍ରାଉଜର ଆରମ୍ଭକରିବା ସମଯରେ ଗୋଟିଏ ତୃଟି ଘଟିଲା୤\n ଦଯାକରି %PRODUCTNAMEକୁ ୟାଞ୍ଚ କର ଏବଂ  ଉଏବ୍ ବ୍ରାଉଜର ସେଟିଙ୍ଗଗୁଡିକ୤"
 
 #: source/migration/wizard.src#QB_ASK_DECLINE.QueryBox.Message
-#, fuzzy
 msgid  "Do you really want to decline?"
 msgstr "ତୁମେ ନିଶ୍ଚଯ  ବିଲୋପ କରିବାକୁ ଚାହୁଁଛ କି?"
 
 #: source/migration/wizard.src#TP_WELCOME.FT_WELCOME_HEADER.FixedText.Text
-#, fuzzy
 msgid  "Welcome to %PRODUCTNAME %PRODUCTVERSION"
 msgstr " %PRODUCTNAME %PRODUCTVERSION କୁ ସ୍ବାଗତ"
 
 #: source/migration/wizard.src#TP_WELCOME.FT_WELCOME_BODY.FixedText.Text
 msgid  "This wizard will guide you through the license agreement and the registration of %PRODUCTNAME.\n\nClick 'Next' to continue."
-msgstr ""
+msgstr " ଲାଇସେନସ  ରାଜିନାମା ଏବଂ  %PRODUCTNAMEର ରେଜିଷ୍ଟ୍ରେସନ ଦ୍ବାରା ଏହି ଉଇଜାର୍ଡ ତୁମକୁ ଗାଇଡ୍କରିବ  ୤\n\nଚାଲୁ ରଖିବା ପାଇଁ  'ପରବର୍ତ୍ତୀ' କୁ କ୍ଲିକ୍ କର୤"
 
 #: source/migration/wizard.src#TP_LICENSE.FT_LICENSE_HEADER.FixedText.Text
-#, fuzzy
 msgid  "Please follow these steps to accept the license"
 msgstr "ଦଯାକରି  ଲାଇସେନସକୁ ଗ୍ରହଣକରିବା ପାଇଁ ଏହି ପଦକ୍ଷେପଗୁଡିକୁ ଅନୁକରଣ କର "
 
 #: source/migration/wizard.src#TP_LICENSE.FT_LICENSE_BODY_1.FixedText.Text
-#, fuzzy
 msgid  "1."
 msgstr "1."
 
 #: source/migration/wizard.src#TP_LICENSE.FT_LICENSE_BODY_1_TXT.FixedText.Text
 msgid  "View the complete License Agreement. Please use the scrollbar or the '%PAGEDOWN' button in this dialog to view the entire license text."
-msgstr ""
+msgstr "ପୂର୍ଣ୍ଣ ଲାଇସେନସ  ରାଜିନାମାକୁ ଦେଖ୤ଦଯାକରି ସ୍କ୍ରୋଲବାର କିମ୍ବା '%PAGEDOWN' ବଟନ ଏହି ଡାଇଲୋଗ୍କୁ ସଂପୂର୍ଣ୍ଣ ଲାଇସେନସ ଟେକ୍ସଟ ପାଇଁ ଉପୟୋଗ କର୤"
 
 #: source/migration/wizard.src#TP_LICENSE.FT_LICENSE_BODY_2.FixedText.Text
-#, fuzzy
 msgid  "2."
 msgstr "2."
 
 #: source/migration/wizard.src#TP_LICENSE.FT_LICENSE_BODY_2_TXT.FixedText.Text
-#, fuzzy
 msgid  "Click 'Accept' to accept the terms of the Agreement."
 msgstr "ରାଜିନାମାର ଟର୍ମକୁ ଗ୍ରହଣକରିବା ପାଇଁ 'ଗ୍ରହଣ'କୁ କ୍ଲିକ କର୤ "
 
 #: source/migration/wizard.src#TP_LICENSE.PB_LICENSE_DOWN.PushButton.Text
-#, fuzzy
 msgid  "Scroll Do~wn"
 msgstr "ସ୍କ୍ରୋଲ ତଳ"
 
 #: source/migration/wizard.src#STR_LICENSE_ACCEPT.String.Text
-#, fuzzy
 msgid  "~Accept"
 msgstr "ଗ୍ରହଣ କର"
 
 #: source/migration/wizard.src#STR_LICENSE_DECLINE.String.Text
-#, fuzzy
 msgid  "~Decline"
 msgstr "ହ୍ରାସ କର"
 
 #: source/migration/wizard.src#TP_MIGRATION.FT_MIGRATION_HEADER.FixedText.Text
-#, fuzzy
 msgid  "Transfer personal data"
 msgstr "ବ୍ଯକ୍ତିଗତ ତଥ୍ଯ ପଠାଅ୤"
 
 #: source/migration/wizard.src#TP_MIGRATION.FT_MIGRATION_BODY.FixedText.Text
 msgid  "Most personal data from %OLDPRODUCT installation can be reused in %PRODUCTNAME %PRODUCTVERSION.\n\nIf you do not want to reuse any settings in %PRODUCTNAME %PRODUCTVERSION, unmark the check box."
-msgstr ""
+msgstr "ଅଧିକ ବ୍ଯକ୍ତିଗତ ତଥ୍ଯ ରୁ %OLDPRODUCT ରେ ପ୍ରତିଷ୍ଠାପନ ମନାହୋଇପାରେ %PRODUCTNAME %PRODUCTVERSION୤\n\n%PRODUCTNAME %PRODUCTVERSIONରେ ତୁମେ ୟଦି କୌଣସି ଗଠନଗୁଡିକୁ ମନା କରିବାକୁ ଚାହୁଁ ନାହଁ , ଚେକବକ୍ସକୁ ଅଚିହ୍ନଟ କର୤"
 
 #: source/migration/wizard.src#TP_MIGRATION.CB_MIGRATION.CheckBox.Text
-#, fuzzy
 msgid  "Transfer personal data"
 msgstr "ବ୍ଯକ୍ତିଗତ ତଥ୍ଯ ପଠାଅ୤"
 
 #: source/migration/wizard.src#TP_UPDATE_CHECK.FT_UPDATE_CHECK_HEADER.FixedText.Text
-#, fuzzy
 msgid  "Online Update"
 msgstr "ଅନଲାଇନ ଅଦ୍ୟତନ"
 
 #: source/migration/wizard.src#TP_UPDATE_CHECK.FT_UPDATE_CHECK_BODY.FixedText.Text
 msgid  "%PRODUCTNAME searches automatically at regular intervals for new versions.\nIn doing so online update does not transfer personal data.\nAs soon as a new version is available, you will be notified.\n\nYou can configure this feature at Tools / Options... / %PRODUCTNAME / Online Update."
-msgstr ""
+msgstr "%PRODUCTNAME ନୂତନ ସଂସ୍କରଣ ପାଇଁ ସ୍ୱୟଂଚାଳିତ ଭାବରେ ନିୟମିତ ଅନ୍ତରାଳରେ ସନ୍ଧାନ କରିଥାଏ।\nଏହା କରିବା ଦ୍ୱାରା ଅନଲାଇନ ଅଦ୍ୟତନ ବ୍ୟକ୍ତିଗତ ତଥ୍ୟ ପରିବହନ କରିନଥାଏ।\nଯଥା ଶିଘ୍ର ନୂତନ ସଂସ୍କରଣ ଉପଲବ୍ଧ ହୋଇଥାଏ, ସେତେଶିଘ୍ର ଆପଣଙ୍କୁ ଜଣାଇଦିଆଯିବ।\n\nଆପଣ ଏହି ବିଶେଷଗୁଣକୁ ଉପକରଣ / ବିକଳ୍ପ... / %PRODUCTNAME / ଅନଲାଇନ ଅଦ୍ୟତନରେ ବିନ୍ୟାସ କରିପାରିବେ।"
 
 #: source/migration/wizard.src#TP_UPDATE_CHECK.CB_UPDATE_CHECK.CheckBox.Text
-#, fuzzy
 msgid  "~Check for updates automatically"
 msgstr "ସ୍ୱୟଂଚାଳିତ ଭାବରେ ଅଦ୍ୟତନକୁ ଯାଞ୍ଚକରନ୍ତୁ (~C)"
 
 #: source/migration/wizard.src#TP_USER.FT_USER_HEADER.FixedText.Text
-#, fuzzy
 msgid  "Provide your full name and initials below"
 msgstr "ତୁମର ପୁରା ନାମ ଦିଅ ଏବଂ ନିମ୍ନରେ ଆରମ୍ଭ କର"
 
 #: source/migration/wizard.src#TP_USER.FT_USER_BODY.FixedText.Text
 msgid  "The user name will be used in the document properties, templates and when you record changes made to documents."
-msgstr ""
+msgstr "ଦଲିଲ ବିଶେଷତାଗୁଡିକରେ,ନମୁନାଗୁଡିକରେ ଏବଂ ତୁମେ ଅଭିଲେଖକୁ  ଦଲିଲଗୁଡିକୁ ପରିବର୍ତ୍ତନ କରିବା ସମଯରେ ଉପୟୋଗକର୍ତ୍ତାର ନାମ ଉପୟୋଗ ହେବ୤ "
 
 #: source/migration/wizard.src#TP_USER.FT_USER_FIRST.FixedText.Text
-#, fuzzy
 msgid  "~First name"
 msgstr "ପ୍ରଥମ ନାମ"
 
 #: source/migration/wizard.src#TP_USER.FT_USER_LAST.FixedText.Text
-#, fuzzy
 msgid  "~Last name"
 msgstr "ଶେଷ ନାମ"
 
 #: source/migration/wizard.src#TP_USER.FT_USER_INITIALS.FixedText.Text
-#, fuzzy
 msgid  "~Initials"
 msgstr "ଆରମ୍ଭ"
 
 #: source/migration/wizard.src#TP_USER.FT_USER_FATHER.FixedText.Text
-#, fuzzy
 msgid  "~Father's name"
 msgstr "ବାପାଙ୍କ  ନାମ"
 
 #: source/migration/wizard.src#TP_REGISTRATION.FT_REGISTRATION_HEADER.FixedText.Text
-#, fuzzy
 msgid  "%PRODUCTNAME Registration"
 msgstr "%PRODUCTNAME ରେଜିଷ୍ଟ୍ରେସନ"
 
 #: source/migration/wizard.src#TP_REGISTRATION.FT_REGISTRATION_BODY.FixedText.Text
 msgid  "You now have the opportunity to register as a %PRODUCTNAME user. Registration is voluntary and is without obligation.\n\nIf you register, we can inform you about new developments concerning this product."
-msgstr ""
+msgstr "ଗୋଟିଏ %PRODUCTNAME ଉପୟୋଗକର୍ତ୍ତା ପରି ବର୍ତ୍ତମାନ ତୁମକୁ ମଧ୍ଯ ରେଜିସ୍ଟର କରିବାକୁ ସୁୟୋଗ ମିଳିଛି୤ ରେଜିଷ୍ଟ୍ରେସନ ଭଲ୍ଯୁନ୍ଟାରି ଅଟେ ଏବଂ ଏହା କର୍ତ୍ତବ୍ଯ ବ୍ଯତିତ୤\n\nୟଦି ତୁମେ ରେଜିଷ୍ଟର କର, ଏହି ଦ୍ରବ୍ଯ ବିଷଯରେ ନୂଆ ଅଗ୍ରଗତିଗୁଡିକୁ ଆମେ ତୁମକୁ ସୂଚନା ଦେବୁ୤"
 
 #: source/migration/wizard.src#TP_REGISTRATION.RB_REGISTRATION_NOW.RadioButton.Text
-#, fuzzy
 msgid  "I want to register ~now"
 msgstr "ମୁଁ ବର୍ତ୍ତମାନ ରେଜିଷ୍ଟର କରିବାକୁ ଚାହୁଁଛି"
 
 #: source/migration/wizard.src#TP_REGISTRATION.RB_REGISTRATION_LATER.RadioButton.Text
-#, fuzzy
 msgid  "I want to register ~later"
 msgstr "ମୁଁ ପରେ ରେଜିଷ୍ଟର କରିବାକୁ ଚାହୁଁଛି"
 
 #: source/migration/wizard.src#TP_REGISTRATION.RB_REGISTRATION_NEVER.RadioButton.Text
-#, fuzzy
 msgid  "I do not want to ~register"
 msgstr "ମୁଁ  ରେଜିଷ୍ଟର କରିବାକୁ ଚାହୁଁ ନାହିଁ"
 
 #: source/migration/wizard.src#TP_REGISTRATION.FT_REGISTRATION_END.FixedText.Text
 msgid  "We hope you enjoy working with %PRODUCTNAME.\n\nTo exit the wizard, click 'Finish'."
-msgstr ""
+msgstr "ଆମେ ଆଶା କରୁଛୁ ତୁମେ  %PRODUCTNAMEସହିତ କାମକରି ଆନନ୍ଦ ଉପଭୋଗ କରୁଛ ୤\n\nଉଇଜାର୍ଡକୁ ବାହାର କରିବା ପାଇଁ, 'ଫିନିସ୍' କୁ କ୍ଲିକ୍ କର୤"
 
 #: win32/source/rebase/rebasegui.ulf#%APP_TITLE%
-#, fuzzy
 msgid  "Installation Status"
 msgstr "ସ୍ଥାପନ ସ୍ଥିତି"
 
 #: win32/source/rebase/rebasegui.ulf#%MSG_OPTIMIZED_FOR_CLIENT%
-#, fuzzy
 msgid  "Installation is optimized for clients."
 msgstr "କ୍ଲାଏଣ୍ଟଗୁଡ଼ିକ ପାଇଁ ସ୍ଥାପନ କ୍ରିୟାକୁ ଉପଯୁକ୍ତ କରାହୋଇଛି।"
 
 #: win32/source/rebase/rebasegui.ulf#%MSG_OPTIMIZED_FOR_SERVER%
-#, fuzzy
 msgid  "Installation is optimized for servers."
 msgstr "ସର୍ଭରଗୁଡ଼ିକ ପାଇଁ ସ୍ଥାପନ କ୍ରିୟାକୁ ଉପଯୁକ୍ତ କରାହୋଇଛି।"
 
 #: win32/source/rebase/rebasegui.ulf#%MSG_NO_INSTALLATION_FOUND%
-#, fuzzy
 msgid  "Cannot find Office installation."
 msgstr "କାର୍ଯ୍ୟାଳୟ ସ୍ଥାପନା ପାଇବେ ନାହିଁ।"
 
+#: win32/source/setup/setup.ulf#%APP_TITLE%
+msgid  "Setup"
+msgstr "ସେଟଅପ "
+
 #: win32/source/setup/setup.ulf#%APP_PROD_TITLE%
-#, fuzzy
 msgid  "The %PRODUCTNAME Setup"
 msgstr " %PRODUCTNAMEକୁ ସେଟଅପ କର "
 
 #: win32/source/setup/setup.ulf#%OUTOFMEM%
-#, fuzzy
 msgid  "Out of Memory"
 msgstr "ସ୍ମୃତିଶକ୍ତିର ବାହାରେ"
 
 #: win32/source/setup/setup.ulf#%NOMSI%
-#, fuzzy
 msgid  "Setup was unable to find the msi package."
 msgstr "ସେଟଅପ ଏମ୍ସି ପ୍ଯାକେଜ୍କୁ ଖୋଜିବା ପାଇଁ ଅକ୍ଷମ ଅଟେ୤"
 
 #: win32/source/setup/setup.ulf#%USER_CANCELLED%
-#, fuzzy
 msgid  "Setup was cancelled"
 msgstr "ସେଟଅପ ରଦ୍ଦ ହୋଇ ଥିଲା"
 
 #: win32/source/setup/setup.ulf#%REQUIRES_ADMIN_PRIV%
 msgid  "Administrator privileges are required for upgrading the Windows Installer."
-msgstr ""
+msgstr "ପ୍ରତିଷ୍ଠାପିତ ହୋଇଥିବା ଉଇଣ୍ଡୋଗୁଡିକର ଅପଗ୍ରେଡିଙ୍ଗ ପାଇଁ ପ୍ରଶାସକର ବିଶେଷ କ୍ଷମତାଗୁଡିକ ଦରକାର୤ "
 
 #: win32/source/setup/setup.ulf#%FILE_NOT_FOUND%
-#, fuzzy
 msgid  "Setup was unable to find the file '%s'."
 msgstr "  ସେଟଅପ '%s' ଫାଇଲ ଖୋଜିବା ପାଇଁ ଅକ୍ଷମ ଅଟେ୤"
 
 #: win32/source/setup/setup.ulf#%INVALID_PARAM%
 msgid  "Invalid command line option '%s'. Please use '/?' for help."
-msgstr ""
+msgstr "ଅମାନ୍ଯ ନିର୍ଦ୍ଧାରଣ ରେଖା ବିକଳ୍ପ '%s'୤ ଦଯାକରି ଉପୟୋଗ କରନ୍ତୁ '/?' ସାହାୟ୍ଯ ପାଇଁ୤"
 
 #: win32/source/setup/setup.ulf#%SETUP_TO_OLD%
 msgid  "This package requires at least the version '%s' of the Windows Installer. \nYou have Windows Installer '%s' on your system!"
-msgstr ""
+msgstr "ଏହି ପ୍ୟାକେଜଟି ଅତିକମରେ ସଂସ୍କରଣ '%s' କୁ ଆପଣଙ୍କର Windows ସ୍ଥାପକରେ ଆବଶ୍ୟକ କରିଥାଏ। \nଆପଣଙ୍କ ତନ୍ତ୍ରରେ Windows ସ୍ଥାପକ '%s' ଅଛି!"
 
 #: win32/source/setup/setup.ulf#%SETUP_NOT_FOUND%
 msgid  "This package requires the Windows Installer. \nYou need at least Windows Installer '%s' on your system!"
-msgstr ""
+msgstr "ଏହି ପ୍ୟାକେଜଟି Windows ସ୍ଥାପକ ଆବଶ୍ୟକ କରିଥାଏ। \nଆପଣ ଅତିକମରେ Windows ସ୍ଥାପକ '%s' କୁ ଆପଣଙ୍କ ତନ୍ତ୍ରରେ ଆବଶ୍ୟକ କରିବେ!"
 
 #: win32/source/setup/setup.ulf#%USAGE%
 msgid  "Usage:\n   /? :  Shows this dialog.\n   /a :  Performs an administrative installation.\n   /j[u|m] :  Performs an advertising installation.\n   /q[n] : Do not show any user interface (silent mode).\n"
-msgstr ""
+msgstr "ପ୍ରଣାଳୀ:\n   /? :  ଏହି ଡାଇଲୋଗ୍କୁ ଦେଖାଅ୤\n   /a :  ଗୋଟିଏ ପ୍ରଶାସକର ପ୍ରତିଷ୍ଠାପନ ସମ୍ପାଦନକର୤\n   /j[u|m] :  ବିଜ୍ଞାପନର ପ୍ରତିଷ୍ଠାପନ ସମ୍ପାଦନକର୤\n   /q[n] : କୌଣସି ଉପୟୋଗକର୍ତ୍ତାର ଇନ୍ଟରଫେସ ଦେଖାଅ ନାହିଁ  (ନିରବ ମୋଡ)୤\n"
 
 #: win32/source/setup/setup.ulf#%ALREADY_RUNNING%
-#, fuzzy
 msgid  "There is already a setup process running."
 msgstr "ଏହା ଆଗରୁ ଏକ ସେଟଅପ ପ୍ରକ୍ରିଯା ଚାଲିଅଛି୤ "
 
 #: win32/source/setup/setup.ulf#%UNKNOWN_ERROR%
-#, fuzzy
 msgid  "An Unknown Error occured!"
 msgstr "ଏକ ଅଜ୍ଞାତ ତୃଟି ଘଟିଛି!"
 
 #: win32/source/setup/setup.ulf#%INVALID_PROFILE%
 msgid  "Invalid or incomplete profile."
-msgstr ""
+msgstr "ଅମାନ୍ଯ କିମ୍ବା ଅସମ୍ପୁର୍ଣ୍ଣ  ବାହ୍ଯରେଖା                                                                                                                                                                    "
 
 #: win32/source/setup/setup.ulf#%UNKNOWN_LANG%
-#, fuzzy
 msgid  "Unknown Language: %d"
 msgstr "ଅଜ୍ଞାତ ଭାଷା: %d"
 
 #: win32/source/setup/setup.ulf#%LANGUAGE_ZH_TW%
-#, fuzzy
 msgid  "Chinese (traditional)"
 msgstr "ଚାଇନିଜ(ପାରମ୍ପାରିକ)"
 
 #: win32/source/setup/setup.ulf#%LANGUAGE_CS%
-#, fuzzy
 msgid  "Czech"
 msgstr "ଚିଚେକ"
 
 #: win32/source/setup/setup.ulf#%LANGUAGE_DA%
-#, fuzzy
 msgid  "Danish"
 msgstr "ଡାନିସ"
 
 #: win32/source/setup/setup.ulf#%LANGUAGE_DE_DE%
-#, fuzzy
 msgid  "German (Germany)"
 msgstr "ଜର୍ମାନ (ଜର୍ମାନୀ)"
 
 #: win32/source/setup/setup.ulf#%LANGUAGE_EL%
-#, fuzzy
 msgid  "Greek"
 msgstr "ଗ୍ରୀକ"
 
 #: win32/source/setup/setup.ulf#%LANGUAGE_EN_US%
-#, fuzzy
 msgid  "English (USA)"
 msgstr "ଇଂଗ୍ରାଜୀ (USA)"
 
 #: win32/source/setup/setup.ulf#%LANGUAGE_ES%
-#, fuzzy
 msgid  "Spanish (Spain)"
 msgstr "ସ୍ପେନିସ (ସ୍ପେନ)"
 
 #: win32/source/setup/setup.ulf#%LANGUAGE_FI%
-#, fuzzy
 msgid  "Finnish"
 msgstr "ଫିନ୍ନିସ୍"
 
 #: win32/source/setup/setup.ulf#%LANGUAGE_FR_FR%
-#, fuzzy
 msgid  "French (France)"
 msgstr "ଫ୍ରେଞ୍ଚ(ଫ୍ରାନସ)"
 
 #: win32/source/setup/setup.ulf#%LANGUAGE_HE%
-#, fuzzy
 msgid  "Hebrew"
 msgstr "ହେବ୍ରିଯୁ"
 
 #: win32/source/setup/setup.ulf#%LANGUAGE_HU%
-#, fuzzy
 msgid  "Hungarian"
 msgstr "ହଙ୍ଗେରିଆନ"
 
 #: win32/source/setup/setup.ulf#%LANGUAGE_IT_IT%
-#, fuzzy
 msgid  "Italian (Italy)"
 msgstr "ଇଟାଲିଆନ (ଇଟାଲି)"
 
 #: win32/source/setup/setup.ulf#%LANGUAGE_JA%
-#, fuzzy
 msgid  "Japanese"
 msgstr "ଜାପାନିଜ"
 
 #: win32/source/setup/setup.ulf#%LANGUAGE_KO%
-#, fuzzy
 msgid  "Korean"
 msgstr "କୋରିଅନ"
 
 #: win32/source/setup/setup.ulf#%LANGUAGE_NL_NL%
-#, fuzzy
 msgid  "Dutch (Netherlands)"
 msgstr "ଡଚ୍ଚ (ନେଦରଲ୍ଯାଣ୍ଡ)"
 
 #: win32/source/setup/setup.ulf#%LANGUAGE_NO_NO%
-#, fuzzy
 msgid  "Norwegian (Bokmål)"
 msgstr "ନର୍ଉଏଗିଆନ  (ବୋକ୍ମାଲ)"
 
 #: win32/source/setup/setup.ulf#%LANGUAGE_PL%
-#, fuzzy
 msgid  "Polish"
 msgstr "ମସୃଣ"
 
 #: win32/source/setup/setup.ulf#%LANGUAGE_PT_BR%
-#, fuzzy
 msgid  "Portuguese (Brazil)"
 msgstr "ପୋର୍ତୁଗିଜ (ବ୍ରଜିଲ)"
 
 #: win32/source/setup/setup.ulf#%LANGUAGE_RU%
-#, fuzzy
 msgid  "Russian"
 msgstr "ରୁସିଆନ"
 
@@ -1167,36 +1074,25 @@ msgid  "Slovak"
 msgstr ""
 
 #: win32/source/setup/setup.ulf#%LANGUAGE_SV_SE%
-#, fuzzy
 msgid  "Swedish (Sweden)"
 msgstr "ସ୍ବିଡିସ (ସ୍ବିଡେନ)"
 
 #: win32/source/setup/setup.ulf#%LANGUAGE_TH%
-#, fuzzy
 msgid  "Thai"
 msgstr "ଥାଇ"
 
 #: win32/source/setup/setup.ulf#%LANGUAGE_TR%
-#, fuzzy
 msgid  "Turkish"
 msgstr "ତୁର୍କିସ"
 
 #: win32/source/setup/setup.ulf#%LANGUAGE_ET%
-#, fuzzy
 msgid  "Estonian"
 msgstr "ଇଷ୍ଟୋନିଆନ"
 
 #: win32/source/setup/setup.ulf#%LANGUAGE_ZH_CN%
-#, fuzzy
 msgid  "Chinese (Simplified)"
 msgstr "ଚାଇନିଜ(ସରଳିକୃତ)"
 
 #: win32/source/setup/setup.ulf#%LANGUAGE_PT_PT%
-#, fuzzy
 msgid  "Portuguese (Portugal)"
 msgstr "ପୋର୍ତୁଗିଜ (ପୋର୍ତୁଗାଲ)"
-
-#: win32/source/setup/setup.ulf#%APP_TITLE%
-#, fuzzy
-msgid  "Setup"
-msgstr "ସେଟଅପ "

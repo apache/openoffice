@@ -119,6 +119,18 @@ msgstr "Yaadannoo Teessoo Thunderbird"
 msgid  "LDAP Address Book"
 msgstr "Yaadannoo Teessoo Thunderbird"
 
+#: source/drivers/mozab/mozab2.xcu#.Drivers.Installed.sdbc:address:mozilla:.DriverTypeDisplayName
+msgid  "SeaMonkey Address Book"
+msgstr ""
+
+#: source/drivers/mozab/mozab2.xcu#.Drivers.Installed.sdbc:address:thunderbird:.DriverTypeDisplayName
+msgid  "Thunderbird Address Book"
+msgstr "Yaadannoo Teessoo Thunderbird"
+
+#: source/drivers/mozab/mozab2.xcu#.Drivers.Installed.sdbc:address:ldap:*.DriverTypeDisplayName
+msgid  "LDAP Address Book"
+msgstr "Yaadannoo Teessoo Thunderbird"
+
 #: source/drivers/mysql/mysql.xcu#.Drivers.Installed.sdbc:mysql:jdbc:*.DriverTypeDisplayName
 msgid  "MySQL (JDBC)"
 msgstr "MySQL (JDBC)"
@@ -157,15 +169,15 @@ msgstr "Yaadannoota teessoo akaakuu kanaaf gabatee uumuun hin deeggaramu."
 
 #: source/resource/conn_shared_res.src#STR_MOZILLA_IS_RUNNING.String.Text
 msgid  "Cannot create new address books while Mozilla is running."
-msgstr ""
+msgstr "Mooziilaan osoo ka'ee jiru yaadannoota teessoo haaraa uumuun hin danda'amu."
 
 #: source/resource/conn_shared_res.src#STR_COULD_NOT_RETRIEVE_AB_ENTRY.String.Text
 msgid  "An address book entry could not be retrieved, an unknown error occurred."
-msgstr ""
+msgstr "Galfata yaadannoo teessoo kebaafachuun hin danda'amne, dogoggorri hin beekamne uumame."
 
 #: source/resource/conn_shared_res.src#STR_COULD_NOT_GET_DIRECTORY_NAME.String.Text
 msgid  "An address book directory name could not be retrieved, an unknown error occurred."
-msgstr ""
+msgstr "Maqaa galeeloo yaadannoo teessoo kebaafachuun hin danda'amne, dogoggorri hin beekamne uumame."
 
 #: source/resource/conn_shared_res.src#STR_TIMEOUT_WAITING.String.Text
 msgid  "Timed out while waiting for the result."
@@ -177,11 +189,11 @@ msgstr "Gaafata raawwiirratti dogoggorri uumame."
 
 #: source/resource/conn_shared_res.src#STR_MOZILLA_IS_RUNNIG_NO_CHANGES.String.Text
 msgid  "You can't make any changes to mozilla address book when mozilla is running."
-msgstr ""
+msgstr "Mooziilaan yoo ka'ee jiru yaadannoo teessoo mooziilaarratti jijjiirraa tokkoyyuu gochuu hindandeessu."
 
 #: source/resource/conn_shared_res.src#STR_FOREIGN_PROCESS_CHANGED_AB.String.Text
 msgid  "Mozilla Address Book has been changed out of this process, we can't modify it in this condition."
-msgstr ""
+msgstr "Yaadannoon Teessoo Mooziilaa hojii kanaan alatti jijjiirameera; haala kanaan Yaadannoon Teessoo Mooziilaa fooyyessuu hin dandeenyu."
 
 #: source/resource/conn_shared_res.src#STR_CANT_FIND_ROW.String.Text
 msgid  "Can't find the requested row."
@@ -209,7 +221,7 @@ msgstr "Dogoggorri hin beekamne uumame."
 
 #: source/resource/conn_shared_res.src#STR_COULD_NOT_CREATE_ADDRESSBOOK.String.Text
 msgid  "Could not create a new address book. Mozilla error code is $1$."
-msgstr ""
+msgstr "Yaadannoo teessoo haaraa uumuu hin dandeenye. Lakkaddaan dogoggora Mooziillaa $1$ dha."
 
 #: source/resource/conn_shared_res.src#STR_COULD_NOT_LOAD_LIB.String.Text
 msgid  "The library '$libname$' could not be loaded."
@@ -233,7 +245,7 @@ msgstr "Tarree haaraan uumamuu hin danda'u."
 
 #: source/resource/conn_shared_res.src#STR_QUERY_INVALID_IS_NULL_COLUMN.String.Text
 msgid  "The query can not be executed. The 'IS NULL' can only be used with a column name."
-msgstr ""
+msgstr "Gaafatni raawwatamuu hin danda'u. 'IS NULL' maqaa tarjaa waliin qofa fayyadama."
 
 #: source/resource/conn_shared_res.src#STR_ILLEGAL_MOVEMENT.String.Text
 msgid  "Illegal cursor movement occured."
@@ -241,7 +253,7 @@ msgstr "Sochiin qaree seeralaa uumame."
 
 #: source/resource/conn_shared_res.src#STR_COMMIT_ROW.String.Text
 msgid  "Please commit row '$position$' before update rows or insert new rows."
-msgstr ""
+msgstr "Tarreewwan haaromsuun dura ykn tarreewwan haaraa saaguun dura jijjiirama tarree '$position$' raawwadhu."
 
 #: source/resource/conn_shared_res.src#STR_INVALID_ROW_UPDATE.String.Text
 msgid  "The update call can not be executed. The row is invalid."
@@ -268,12 +280,12 @@ msgid  "It doesn't exist a connection to the database."
 msgstr "Kuusdeetaatti walindhaan hin jiru."
 
 #: source/resource/conn_shared_res.src#STR_WRONG_PARAM_INDEX.String.Text
-msgid  "You tried to set a parameter at position '$pos$' but there is/are only '$count$' parameter(s) allowed. One reason may be that the property "ParameterNameSubstitution" is not set to TRUE in the data source."
-msgstr ""
+msgid  "You tried to set a parameter at position '$pos$' but there is/are only '$count$' parameter(s) allowed. One reason may be that the property \"ParameterNameSubstitution\" is not set to TRUE in the data source."
+msgstr "Ulaagaa '$pos$' jiru taasisuuf yaaltee jirta garuu ulaagaa(lee) qofatu hayyamama. Sababiin inni tokko amalli \"ParameterNameSubstitution\" madda deetaa keessatti TRUE waan hin taasifamneef tahuu danda'a."
 
 #: source/resource/conn_shared_res.src#STR_INPUTSTREAM_WRONG_LEN.String.Text
 msgid  "End of InputStream reached before satisfying length specified when InputStream was set."
-msgstr ""
+msgstr "Dheerinni yammuu InputStream taasifamu ibsame guutamuun dura dhumni InputStream dhaqqabame."
 
 #: source/resource/conn_shared_res.src#STR_NO_INPUTSTREAM.String.Text
 msgid  "The input stream was not set."
@@ -313,7 +325,7 @@ msgstr "Ooftuun fankishinii '$functionname$' hin deeggaru."
 
 #: source/resource/conn_shared_res.src#STR_UNSUPPORTED_FEATURE.String.Text
 msgid  "The driver does not support the functionality for '$featurename$'. It is not implemented."
-msgstr ""
+msgstr "Ooftuun fayyadama '$featurename$' hin deeggaru. Faayidaarra hin oolle."
 
 #: source/resource/conn_shared_res.src#STR_FORMULA_WRONG.String.Text
 msgid  "The formula for TypeInfoSettings is wrong!"
@@ -321,11 +333,11 @@ msgstr "Foormulaan Qindaa'inootaOdeeffannooAkaakuu dogoggora!"
 
 #: source/resource/conn_shared_res.src#STR_STRING_LENGTH_EXCEEDED.String.Text
 msgid  "The string '$string$' exceeds the maximum length of $maxlen$ characters when converted to the target character set '$charset$'."
-msgstr ""
+msgstr "Diraan '$string$' yammuu gurmuu arfii galtee '$charset$'tti geeddaramu dheerina olaantoo arfiilee $maxlen$ ni caala."
 
 #: source/resource/conn_shared_res.src#STR_CANNOT_CONVERT_STRING.String.Text
 msgid  "The string '$string$' cannot be converted using the encoding '$charset$'."
-msgstr ""
+msgstr "Diraa '$string$' lakkaddeessa '$charset$' fayyadamuun jijjiiramuu hin danda'u."
 
 #: source/resource/conn_shared_res.src#STR_URI_SYNTAX_ERROR.String.Text
 msgid  "The connection URL is invalid."
@@ -341,11 +353,11 @@ msgstr "Gaafatni raawwatamuu hin danda'u. Ogeejjiin baay'ee xaxamaadha."
 
 #: source/resource/conn_shared_res.src#STR_QUERY_INVALID_LIKE_COLUMN.String.Text
 msgid  "The query can not be executed. You cannot use 'LIKE' with columns of this type."
-msgstr ""
+msgstr "Gaafatni raawwatamuu hin danda'u. 'LIKE' tarjaawwan akaakuu akkanaa waliin fayyadamuu hin dandeessu."
 
 #: source/resource/conn_shared_res.src#STR_QUERY_INVALID_LIKE_STRING.String.Text
 msgid  "The query can not be executed. 'LIKE' can be used with a string argument only."
-msgstr ""
+msgstr "Gaafatni raawwatamuu hin danda'u. 'LIKE' qajeelfama diraa waliin qofa fayyadamuun kan danda'amu."
 
 #: source/resource/conn_shared_res.src#STR_QUERY_NOT_LIKE_TOO_COMPLEX.String.Text
 msgid  "The query can not be executed. The 'NOT LIKE' condition is too complex."
@@ -353,11 +365,11 @@ msgstr "Gaafatni raawwatamuu hin danda'u. Haalli 'NOT LIKE' baay'ee xaxamaadha."
 
 #: source/resource/conn_shared_res.src#STR_QUERY_LIKE_WILDCARD.String.Text
 msgid  "The query can not be executed. The 'LIKE' condition contains wildcard in the middle."
-msgstr ""
+msgstr "Gaafatni raawwatamuu hin danda'u. Haalli 'LIKE' jidduurraa arfii bakkabu'aa ofkeessaa qaba."
 
 #: source/resource/conn_shared_res.src#STR_QUERY_LIKE_WILDCARD_MANY.String.Text
 msgid  "The query can not be executed. The 'LIKE' condition contains too many wildcards."
-msgstr ""
+msgstr "Gaafatni raawwatamuu hin danda'u. Haalli 'LIKE' arfiilee bakkabu'oo hedduu ofkeessaa qabaachuu."
 
 #: source/resource/conn_shared_res.src#STR_INVALID_COLUMNNAME.String.Text
 msgid  "The column name '$columnname$' is not valid."
@@ -377,7 +389,7 @@ msgstr "Faayiliin $filename$ fe'amuu hin dandeenye."
 
 #: source/resource/conn_shared_res.src#STR_LOAD_FILE_ERROR_MESSAGE.String.Text
 msgid  "The attempt to load the file resulted in the following error message ($exception_type$):\n\n$error_message$"
-msgstr ""
+msgstr "Yaaliin faayila fe'uu dhaamsa dogongoraa kanaa gadii fide($exception_type$):\n\n$error_message$"
 
 #: source/resource/conn_shared_res.src#STR_TYPE_NOT_CONVERT.String.Text
 msgid  "The type could not be converted."
@@ -417,15 +429,15 @@ msgstr "Mul'annoo uumuu hin dandeenye: wanti ajajaa hin jiru."
 
 #: source/resource/conn_shared_res.src#STR_NO_CONNECTION.String.Text
 msgid  "The connection could not be created. May be the necessary data provider is not installed."
-msgstr ""
+msgstr "Walindhaan uumamuu hin dandeenye. Tasa dhiheessaan deetaa barbaachisu hin ijaaramne."
 
 #: source/resource/conn_shared_res.src#STR_COULD_NOT_DELETE_INDEX.String.Text
 msgid  "The index could not be deleted. An unknown error while accessing the file system occured."
-msgstr ""
+msgstr "Kasaan haqamuu hin dandeenye. Gahiinsa sirnaa faayilii irratti dogoggorri hin beekamne uumame."
 
 #: source/resource/conn_shared_res.src#STR_ONL_ONE_COLUMN_PER_INDEX.String.Text
 msgid  "The index could not be created. Only one column per index is allowed."
-msgstr ""
+msgstr "Kasaan uumamuu hin dandeenye. Kasaa tokkoof tarjaa tokko qofaatu hayyamama."
 
 #: source/resource/conn_shared_res.src#STR_COULD_NOT_CREATE_INDEX_NOT_UNIQUE.String.Text
 msgid  "The index could not be created. The values are not unique."
@@ -437,11 +449,11 @@ msgstr "Kasaan uumamuu hin dandeenye. Dogoggorri hin beekamne mul'ate."
 
 #: source/resource/conn_shared_res.src#STR_COULD_NOT_CREATE_INDEX_NAME.String.Text
 msgid  "The index could not be created. The file '$filename$' is used by an other index."
-msgstr ""
+msgstr "Kasaan uumamuu hin dandeenye. Faayiliin '$filename$' kasaa birootiin fayyadamee jira."
 
 #: source/resource/conn_shared_res.src#STR_COULD_NOT_CREATE_INDEX_KEYSIZE.String.Text
 msgid  "The index could not be created. The size of the chosen column is to big."
-msgstr ""
+msgstr "Kasaan uumamuu hin dandeenye. Hammamtaan tarjaa filamee baay'ee guddaadha."
 
 #: source/resource/conn_shared_res.src#STR_SQL_NAME_ERROR.String.Text
 msgid  "The name '$name$' doesn't match SQL naming constraints."
@@ -472,28 +484,28 @@ msgid  "Duplicate value found in column '$columnname$'."
 msgstr "Tarjaa '$columnname$' gatiin dachaa argame."
 
 #: source/resource/conn_shared_res.src#STR_INVALID_COLUMN_DECIMAL_VALUE.String.Text
-msgid  "The '$columnname$' column has been defined as a "Decimal" type, the max. length is $precision$ characters (with $scale$ decimal places).\n\nThe specified value "$value$ is longer than the number of digits allowed."
-msgstr ""
+msgid  "The '$columnname$' column has been defined as a \"Decimal\" type, the max. length is $precision$ characters (with $scale$ decimal places).\n\nThe specified value \"$value$ is longer than the number of digits allowed."
+msgstr "Tarjaan '$columnname$' akka akaakuu \"Kurnyee\"tti, dhiirinni olaantoon arfiilee $precision$ (bakkoota kurnyee $scale$ waliin) ibsameera.\n\nGatiin \"$value$ ibsame baay'ina digiitii hayyamamurra dheerata."
 
 #: source/resource/conn_shared_res.src#STR_COLUMN_NOT_ALTERABLE.String.Text
 msgid  "The column '$columnname$' could not be altered. May be the file system is write protected."
-msgstr ""
+msgstr "Tarjaan '$columnname$' jijjiiramuu hin dandeenye. Sirni faayilii hayyisa barreeffamaa qabaachuu danda'a."
 
 #: source/resource/conn_shared_res.src#STR_INVALID_COLUMN_VALUE.String.Text
 msgid  "The column '$columnname$' could not be updated. The value is invalid for that column."
-msgstr ""
+msgstr "Tarjaan '$columnname$' haaromfamuu hin dandeenye. Tarjaa sanaaf gatiin fashala."
 
 #: source/resource/conn_shared_res.src#STR_COLUMN_NOT_ADDABLE.String.Text
 msgid  "The column '$columnname$' could not be added. May be the file system is write protected."
-msgstr ""
+msgstr "Tarjaan '$columnname$' dabalamuu hin dandeenye. Sirni faayilii hayyisa barreeffamaa qabaachuu danda'a."
 
 #: source/resource/conn_shared_res.src#STR_COLUMN_NOT_DROP.String.Text
 msgid  "The column at position '$position$' could not be dropped. May be the file system is write protected."
-msgstr ""
+msgstr "Tarjaan '$columnname$' gatamuu hin dandeenye. Sirni faayilii hayyisa barreeffamaa qabaachuu danda'a."
 
 #: source/resource/conn_shared_res.src#STR_TABLE_NOT_DROP.String.Text
 msgid  "The table '$tablename$' could not be dropped. May be the file system is write protected."
-msgstr ""
+msgstr "Gabateen '$tablename$' gatamuu hin dandeenye. Sirni faayilii hayyisa barreeffamaa qabaachuu danda'a."
 
 #: source/resource/conn_shared_res.src#STR_COULD_NOT_ALTER_TABLE.String.Text
 msgid  "The table could not be altered."
@@ -512,8 +524,8 @@ msgid  "Can only sort by table columns."
 msgstr "Tarjaalee gabateetiin qofa foo'ama."
 
 #: source/resource/conn_shared_res.src#STR_QUERY_COMPLEX_COUNT.String.Text
-msgid  "The query can not be executed. It is too complex. Only "COUNT(*)" is supported."
-msgstr ""
+msgid  "The query can not be executed. It is too complex. Only \"COUNT(*)\" is supported."
+msgstr "Gaafatni raawwatamuu hin danda'u. Baay'ee xaxamaadha. \"COUNT(*)\" qofatu deeggarama."
 
 #: source/resource/conn_shared_res.src#STR_QUERY_INVALID_BETWEEN.String.Text
 msgid  "The query can not be executed. The 'BETWEEN' arguments are not correct."
@@ -528,8 +540,8 @@ msgid  "The table can not be changed. It is read only."
 msgstr "Gabateen jijjiiramuu hin danda'u. Dubbisqofaadha."
 
 #: source/resource/conn_shared_res.src#STR_DELETE_ROW.String.Text
-msgid  "The row could not be deleted. The option "Display inactive records" is set."
-msgstr ""
+msgid  "The row could not be deleted. The option \"Display inactive records\" is set."
+msgstr "Tarreen haqamuu hin dandeenye. Dirqaleen \"Kuusaawwan kaka'umsala agarsiisi\" taasisi."
 
 #: source/resource/conn_shared_res.src#STR_ROW_ALREADY_DELETED.String.Text
 msgid  "The row could not be deleted. It is already deleted."
@@ -541,11 +553,11 @@ msgstr "Gaafatni raawatamuu hin danda'u. Gabatee tokkoo ol ofkeessaa qaba."
 
 #: source/resource/conn_shared_res.src#STR_QUERY_NO_TABLE.String.Text
 msgid  "The query can not be executed. It contains no valid table."
-msgstr ""
+msgstr "Gaafatni raawatamuu hin danda'u. Gabatee gataa'aa homaa ofkeessaa hin qabu."
 
 #: source/resource/conn_shared_res.src#STR_QUERY_NO_COLUMN.String.Text
 msgid  "The query can not be executed. It contains no valid columns."
-msgstr ""
+msgstr "Gaafatni raawatamuu hin danda'u. Tarjaalee gataa'oo homaa ofkeessaa hin qabu."
 
 #: source/resource/conn_shared_res.src#STR_INVALID_PARA_COUNT.String.Text
 msgid  "The count of the given parameter values doesn't match the parameters."
@@ -589,15 +601,15 @@ msgstr "Ijaarsi KDE mijaa'aan homtuu hin argamne."
 
 #: source/resource/conn_shared_res.src#STR_KDE_VERSION_TOO_OLD.String.Text
 msgid  "KDE version $major$.$minor$ or higher is required to access the KDE Address Book."
-msgstr ""
+msgstr "Yaadannoo Teessoo KDE gahuuf fooyya'aan KDE $major$.$minor$ ykn isaa ol barbaachisaadha."
 
 #: source/resource/conn_shared_res.src#STR_KDE_VERSION_TOO_NEW.String.Text
 msgid  "The found KDE version is too new. Only KDE up to version $major$.$minor$ is known to work with this product.\n"
-msgstr ""
+msgstr "Fooyya'aan KDE argame baay'ee haaraadha. Oomisha kanaan hojjachuuf KDE fooyya'aa hamma $major$.$minor$ qofatu barbaachisa."
 
 #: source/resource/conn_shared_res.src#STR_KDE_VERSION_TOO_NEW_WORK_AROUND.String.Text
 msgid  "If you are sure that your KDE version works, you might execute the following Basic macro to disable this version check:\n\n"
-msgstr ""
+msgstr "Fooyya'aan KDE kee akka hojjatu yoo mirakaneeffatte, mirkaneessa fooyya'aa kana aangooleessuuf maakroo Basic armaan gadii raawwachuu ni dandeessa:\n\n"
 
 #: source/resource/conn_shared_res.src#STR_PARA_ONLY_PREPARED.String.Text
 msgid  "Parameters can appear only in prepared statements."
@@ -613,19 +625,19 @@ msgstr "Ijaarsi Mac OS mijaa'aan homtuu hin argamne."
 
 #: source/resource/conn_shared_res.src#STR_NO_DISK_SPACE.String.Text
 msgid  "The database file '$filename$' could not be created. Please check your disk space."
-msgstr ""
+msgstr "Faayiliin kuusdeetaa '$filename$' uumamuu hin dandeenye. Mee iddoo duwwaa baxxee kee mirkaneeffadhu."
 
 #: source/resource/conn_shared_res.src#STR_COMMAND_NOT_FOUND.String.Text
 msgid  "The database '$databasename$' could not be started because the command '$progname$' could not be executed."
-msgstr ""
+msgstr "Ajajaan '$progname$' raawwatamuu waan hin dandeenyeef kuusdeetaan '$databasename$' eegaluu hin dandeenye."
 
 #: source/resource/conn_shared_res.src#STR_DATABASE_NEEDS_CONVERTING.String.Text
 msgid  "The current database need to be converted. Please insert control user  and password."
-msgstr ""
+msgstr "Kuusdeetaan ammaa geeddaramuu barbaada. Mee fayyadamaa to'annaa fi iggitaa saagi."
 
 #: source/resource/conn_shared_res.src#STR_USER_NO_DELETE.String.Text
 msgid  "This user couldn't be deleted. Otherwise the database stays in a inconsistent state."
-msgstr ""
+msgstr "Fayyadamaan kun haqamuu hin dandeenye. Tahuu baannaan kuusdeetaan haala mijaa'aa hin taane keessa gala."
 
 #: source/resource/conn_shared_res.src#STR_NO_STROAGE.String.Text
 msgid  "The connection can not be established. No storage or URL was given."
@@ -633,7 +645,7 @@ msgstr "Walindhaan ijaaramuu hin danda'u. Kuusaa ykn URL homtuu hin kennamne."
 
 #: source/resource/conn_shared_res.src#STR_INVALID_FILE_URL.String.Text
 msgid  "The given URL contains no valid local file system path. Please check the location of your database file."
-msgstr ""
+msgstr "URLiin kenname xurree sirna faayilii qe'ee gataa'aa homaa hin qabu. Mee iddoo faayilii kuusdeetaa kee mirkaneeffadhu."
 
 #: source/resource/conn_shared_res.src#STR_NO_TABLE_CONTAINER.String.Text
 msgid  "An error occured while obtaining the connection's table container."
@@ -657,7 +669,7 @@ msgstr "Dalagaan kuusaa kun dhorkameera."
 
 #: source/resource/conn_error_message.src#256 + 2*200 + 0.String.Text
 msgid  "The statement contains a cyclic reference to one or more sub queries."
-msgstr ""
+msgstr "Himni kun wabii naanna'aa gaafattoota xixiqqoo tokko ykn isaa olii of keessaa qaba."
 
 #: source/resource/conn_error_message.src#256 + 2*300 + 0.String.Text
 msgid  "The name must not contain any slashes ('/')."
@@ -669,7 +681,7 @@ msgstr "$1$n addiraa walsimaa SQL miti."
 
 #: source/resource/conn_error_message.src#256 + 2*302 + 0.String.Text
 msgid  "Query names must not contain quote characters."
-msgstr ""
+msgstr "Maqaaleen gaafataa arfiilee eerataa (\") of keessaa qabaachuu hin danda'an."
 
 #: source/resource/conn_error_message.src#256 + 2*303 + 0.String.Text
 msgid  "The name '$1$' is already in use in the database."
@@ -685,16 +697,4 @@ msgstr "$1$ hin jiru. exists."
 
 #: source/resource/conn_error_message.src#256 + 2*550 + 0.String.Text
 msgid  "Unable to display the complete table content. Please apply a filter."
-msgstr ""
-
-#: source/drivers/mozab/mozab2.xcu#.Drivers.Installed.sdbc:address:mozilla:.DriverTypeDisplayName
-msgid  "SeaMonkey Address Book"
-msgstr ""
-
-#: source/drivers/mozab/mozab2.xcu#.Drivers.Installed.sdbc:address:thunderbird:.DriverTypeDisplayName
-msgid  "Thunderbird Address Book"
-msgstr "Yaadannoo Teessoo Thunderbird"
-
-#: source/drivers/mozab/mozab2.xcu#.Drivers.Installed.sdbc:address:ldap:*.DriverTypeDisplayName
-msgid  "LDAP Address Book"
-msgstr "Yaadannoo Teessoo Thunderbird"
+msgstr "Qabeentaa gabatee guutuu agarsiisuu hin dandeenye. Mee gingilchaa fayyadami."

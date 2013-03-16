@@ -119,6 +119,18 @@ msgstr ""
 msgid  "LDAP Address Book"
 msgstr ""
 
+#: source/drivers/mozab/mozab2.xcu#.Drivers.Installed.sdbc:address:mozilla:.DriverTypeDisplayName
+msgid  "SeaMonkey Address Book"
+msgstr ""
+
+#: source/drivers/mozab/mozab2.xcu#.Drivers.Installed.sdbc:address:thunderbird:.DriverTypeDisplayName
+msgid  "Thunderbird Address Book"
+msgstr ""
+
+#: source/drivers/mozab/mozab2.xcu#.Drivers.Installed.sdbc:address:ldap:*.DriverTypeDisplayName
+msgid  "LDAP Address Book"
+msgstr ""
+
 #: source/drivers/mysql/mysql.xcu#.Drivers.Installed.sdbc:mysql:jdbc:*.DriverTypeDisplayName
 msgid  "MySQL (JDBC)"
 msgstr ""
@@ -161,11 +173,12 @@ msgstr "Ndaikatúi ojeguerojera tera rysýi pyahu Mozilla oma'apóramo."
 
 #: source/resource/conn_shared_res.src#STR_COULD_NOT_RETRIEVE_AB_ENTRY.String.Text
 msgid  "An address book entry could not be retrieved, an unknown error occurred."
-msgstr ""
+msgstr "Ndaikatúi oñembojevy tera rysýipegua marandu, oiko jejavy ojekuaa'ỹva."
 
 #: source/resource/conn_shared_res.src#STR_COULD_NOT_GET_DIRECTORY_NAME.String.Text
+#, fuzzy
 msgid  "An address book directory name could not be retrieved, an unknown error occurred."
-msgstr ""
+msgstr "Ndaikatúi oñembojevy tera rysýipegua marandu, oiko jejavy ojekuaa'ỹva."
 
 #: source/resource/conn_shared_res.src#STR_TIMEOUT_WAITING.String.Text
 msgid  "Timed out while waiting for the result."
@@ -210,8 +223,9 @@ msgid  "An unknown error occured."
 msgstr ""
 
 #: source/resource/conn_shared_res.src#STR_COULD_NOT_CREATE_ADDRESSBOOK.String.Text
+#, fuzzy
 msgid  "Could not create a new address book. Mozilla error code is $1$."
-msgstr ""
+msgstr "Ndaikatúi ojejapóvo térã rysýi ryru pyahu. Mozilla-pe guarã jejavy papapy $1$."
 
 #: source/resource/conn_shared_res.src#STR_COULD_NOT_LOAD_LIB.String.Text
 msgid  "The library '$libname$' could not be loaded."
@@ -244,8 +258,9 @@ msgid  "Illegal cursor movement occured."
 msgstr ""
 
 #: source/resource/conn_shared_res.src#STR_COMMIT_ROW.String.Text
+#, fuzzy
 msgid  "Please commit row '$position$' before update rows or insert new rows."
-msgstr ""
+msgstr "Emoneĩmijeýna ko tysýi '$position$' embopyahu mboyve térã emoinge mboyve ipyahúva. "
 
 #: source/resource/conn_shared_res.src#STR_INVALID_ROW_UPDATE.String.Text
 msgid  "The update call can not be executed. The row is invalid."
@@ -273,7 +288,7 @@ msgid  "It doesn't exist a connection to the database."
 msgstr ""
 
 #: source/resource/conn_shared_res.src#STR_WRONG_PARAM_INDEX.String.Text
-msgid  "You tried to set a parameter at position '$pos$' but there is/are only '$count$' parameter(s) allowed. One reason may be that the property "ParameterNameSubstitution" is not set to TRUE in the data source."
+msgid  "You tried to set a parameter at position '$pos$' but there is/are only '$count$' parameter(s) allowed. One reason may be that the property \"ParameterNameSubstitution\" is not set to TRUE in the data source."
 msgstr ""
 
 #: source/resource/conn_shared_res.src#STR_INPUTSTREAM_WRONG_LEN.String.Text
@@ -329,8 +344,9 @@ msgid  "The string '$string$' exceeds the maximum length of $maxlen$ characters 
 msgstr ""
 
 #: source/resource/conn_shared_res.src#STR_CANNOT_CONVERT_STRING.String.Text
+#, fuzzy
 msgid  "The string '$string$' cannot be converted using the encoding '$charset$'."
-msgstr ""
+msgstr "Ko haipy joajupy '$string$' rehegua ndaikatúi oñemboahasávo ambuépe ojepurúramo codificación '$charset$'."
 
 #: source/resource/conn_shared_res.src#STR_URI_SYNTAX_ERROR.String.Text
 msgid  "The connection URL is invalid."
@@ -480,28 +496,32 @@ msgid  "Duplicate value found in column '$columnname$'."
 msgstr ""
 
 #: source/resource/conn_shared_res.src#STR_INVALID_COLUMN_DECIMAL_VALUE.String.Text
-msgid  "The '$columnname$' column has been defined as a "Decimal" type, the max. length is $precision$ characters (with $scale$ decimal places).\n\nThe specified value "$value$ is longer than the number of digits allowed."
+msgid  "The '$columnname$' column has been defined as a \"Decimal\" type, the max. length is $precision$ characters (with $scale$ decimal places).\n\nThe specified value \"$value$ is longer than the number of digits allowed."
 msgstr ""
 
 #: source/resource/conn_shared_res.src#STR_COLUMN_NOT_ALTERABLE.String.Text
+#, fuzzy
 msgid  "The column '$columnname$' could not be altered. May be the file system is write protected."
-msgstr ""
+msgstr "Ko kolúna '$columnname$' ndaikatúi oñemoambue. Ikatu oime pe ñongatupy rehegua sistema rehe oñeñangareko ani haguã ojehai. "
 
 #: source/resource/conn_shared_res.src#STR_INVALID_COLUMN_VALUE.String.Text
 msgid  "The column '$columnname$' could not be updated. The value is invalid for that column."
 msgstr ""
 
 #: source/resource/conn_shared_res.src#STR_COLUMN_NOT_ADDABLE.String.Text
+#, fuzzy
 msgid  "The column '$columnname$' could not be added. May be the file system is write protected."
-msgstr ""
+msgstr "Ko kolúna '$columnname$' ndaikatúi oñembojoapy. Ikatu oime pe ñongatupy rehegua sistema rehe oñeñangareko ani haguã ojehai. "
 
 #: source/resource/conn_shared_res.src#STR_COLUMN_NOT_DROP.String.Text
+#, fuzzy
 msgid  "The column at position '$position$' could not be dropped. May be the file system is write protected."
-msgstr ""
+msgstr "Ko kolúna oĩva '$position$' sitúpe ndaikatúi oñemomichĩ. Ikatu oime pe ñongatupy rehegua sistema rehe oñeñangareko ani haguã ojehai. "
 
 #: source/resource/conn_shared_res.src#STR_TABLE_NOT_DROP.String.Text
+#, fuzzy
 msgid  "The table '$tablename$' could not be dropped. May be the file system is write protected."
-msgstr ""
+msgstr "Ko kolúna '$columnname$' ndaikatúi oñemoambue. Ikatu oime pe ñongatupy rehegua sistema rehe oñeñangareko ani haguã ojehai. "
 
 #: source/resource/conn_shared_res.src#STR_COULD_NOT_ALTER_TABLE.String.Text
 #, fuzzy
@@ -522,7 +542,7 @@ msgid  "Can only sort by table columns."
 msgstr ""
 
 #: source/resource/conn_shared_res.src#STR_QUERY_COMPLEX_COUNT.String.Text
-msgid  "The query can not be executed. It is too complex. Only "COUNT(*)" is supported."
+msgid  "The query can not be executed. It is too complex. Only \"COUNT(*)\" is supported."
 msgstr ""
 
 #: source/resource/conn_shared_res.src#STR_QUERY_INVALID_BETWEEN.String.Text
@@ -538,7 +558,7 @@ msgid  "The table can not be changed. It is read only."
 msgstr ""
 
 #: source/resource/conn_shared_res.src#STR_DELETE_ROW.String.Text
-msgid  "The row could not be deleted. The option "Display inactive records" is set."
+msgid  "The row could not be deleted. The option \"Display inactive records\" is set."
 msgstr ""
 
 #: source/resource/conn_shared_res.src#STR_ROW_ALREADY_DELETED.String.Text
@@ -626,8 +646,9 @@ msgid  "The database file '$filename$' could not be created. Please check your d
 msgstr ""
 
 #: source/resource/conn_shared_res.src#STR_COMMAND_NOT_FOUND.String.Text
+#, fuzzy
 msgid  "The database '$databasename$' could not be started because the command '$progname$' could not be executed."
-msgstr ""
+msgstr "Marandu renda '$databasename$' ndaikatúi oñeñoñepyrũ pe comando '$progname$' noñemboguatakuaái rupi."
 
 #: source/resource/conn_shared_res.src#STR_DATABASE_NEEDS_CONVERTING.String.Text
 msgid  "The current database need to be converted. Please insert control user  and password."
@@ -662,58 +683,37 @@ msgid  "The provided DocumentUI is not allowed to be NULL."
 msgstr ""
 
 #: source/resource/conn_error_message.src#256 + 2*100 + 0.String.Text
-#, fuzzy
 msgid  "The record operation has been vetoed."
 msgstr "Ko tembiapo hi'areterei rupi oñembotove."
 
 #: source/resource/conn_error_message.src#256 + 2*200 + 0.String.Text
-#, fuzzy
 msgid  "The statement contains a cyclic reference to one or more sub queries."
 msgstr "Ko ñe'ẽjoaju oñe'ẽ mba'e ojevyevývare peteĩ térã hetave porandu rehe."
 
 #: source/resource/conn_error_message.src#256 + 2*300 + 0.String.Text
-#, fuzzy
 msgid  "The name must not contain any slashes ('/')."
 msgstr "Ko téra ndaikatúi orekòvo mba'eveichagua diagonal ('/')."
 
 #: source/resource/conn_error_message.src#256 + 2*301 + 0.String.Text
-#, fuzzy
 msgid  "$1$ is no SQL conform identifier."
 msgstr "$1$ ndaha'éi SQL rechaukaha."
 
 #: source/resource/conn_error_message.src#256 + 2*302 + 0.String.Text
-#, fuzzy
 msgid  "Query names must not contain quote characters."
 msgstr "Mba'eporandu rerakuéra ndaikatúi orahávo taikõi. "
 
 #: source/resource/conn_error_message.src#256 + 2*303 + 0.String.Text
-#, fuzzy
 msgid  "The name '$1$' is already in use in the database."
 msgstr "Ko téra '$1$' oipuruhína marandu renda."
 
 #: source/resource/conn_error_message.src#256 + 2*304 + 0.String.Text
-#, fuzzy
 msgid  "No connection to the database exists."
 msgstr "Ndaikatúi ojeike marandu rendápe."
 
 #: source/resource/conn_error_message.src#256 + 2*500 + 0.String.Text
-#, fuzzy
 msgid  "No $1$ exists."
 msgstr "$1$ ndaipóri."
 
 #: source/resource/conn_error_message.src#256 + 2*550 + 0.String.Text
-#, fuzzy
 msgid  "Unable to display the complete table content. Please apply a filter."
 msgstr "Ndaikatúi ojehechaukapa oĩva ko tabla-pe. Eiporumína filtro."
-
-#: source/drivers/mozab/mozab2.xcu#.Drivers.Installed.sdbc:address:mozilla:.DriverTypeDisplayName
-msgid  "SeaMonkey Address Book"
-msgstr ""
-
-#: source/drivers/mozab/mozab2.xcu#.Drivers.Installed.sdbc:address:thunderbird:.DriverTypeDisplayName
-msgid  "Thunderbird Address Book"
-msgstr ""
-
-#: source/drivers/mozab/mozab2.xcu#.Drivers.Installed.sdbc:address:ldap:*.DriverTypeDisplayName
-msgid  "LDAP Address Book"
-msgstr ""

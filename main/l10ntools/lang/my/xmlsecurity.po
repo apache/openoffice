@@ -33,7 +33,7 @@ msgstr ""
 
 #: source/component/warnbox.src#RID_XMLSECWB_NO_MOZILLA_PROFILE.WarningBox.Message
 msgid  "Digital signatures functionality could not be used, because no Mozilla user profile was found. Please check the Mozilla installation."
-msgstr ""
+msgstr "ဒစ်ဂျစ်တယ်နည်းပညာဆိုင်ရာမှန်ကန်ကြောင်းစစ်ဆေးမှုအသုံးမပြု နိုင်ပါ။ အဘယ်ုကြောင့်ဆိုသော် မော်ဇီလာအသုံးပြုသူ ပရိုဖိုင် ရှာဖွေမတွေ့ရှိပါ။ မော်ဇီလာထည့်သွင်းမှုအား ကျေးဇူးပြု၍ စစ်ဆေးပါ။"
 
 #: source/dialogs/macrosecurity.src#RID_XMLSECTP_MACROSEC.TabDialog.Text
 msgid  "Macro Security"
@@ -53,19 +53,19 @@ msgstr "ပြန်စပါ"
 
 #: source/dialogs/macrosecurity.src#RID_XMLSECTP_SECLEVEL.RB_VERYHIGH.RadioButton.Text
 msgid  "~Very high.\nOnly macros from trusted file locations are allowed to run. All other macros, regardless whether signed or not, are disabled."
-msgstr ""
+msgstr "အလွန်မြင့်သည်။ \nယုံကြည်သည့်ဖိုင်နေရာများမှ မက်ခရိုများသာ အလုပ်လုပ်ရန် ခွင့်ပြုထားသည်။ အခြား မက်ခရိုများအားလုံး ၊ မစဉ်းစားဘဲ မှန်ကန်ကြောင်း စစ်ဆေးခြင်းဖြစ်စေ (သို့) မစစ်ဆေးခြင်းဖြစ်စေ ရပ်ဆိုင်းသည်။"
 
 #: source/dialogs/macrosecurity.src#RID_XMLSECTP_SECLEVEL.RB_HIGH.RadioButton.Text
 msgid  "H~igh.\nOnly signed macros from trusted sources are allowed to run. Unsigned macros are disabled."
-msgstr ""
+msgstr "အမြင့်။ \nယုံကြည်သည့် မူရင်းများမှ  မက်ခရိုများသာပေးလိုက်လျှင် အလုပ်လုပ်ရန် ခွင့်ပြုထားသည်။ မက်ခရိုများမပေးလျှင် ရပ်ဆိုင်းသည်။"
 
 #: source/dialogs/macrosecurity.src#RID_XMLSECTP_SECLEVEL.RB_MEDIUM.RadioButton.Text
 msgid  "~Medium.\nConfirmation required before executing macros from untrusted sources."
-msgstr ""
+msgstr "ကြားခံ။ \nမယုံကြည်သည့် မူရင်းများမှ မက်ခရိုများ တွက်ချက်  ဆောင်ရွက် မဖြေရှင်းမီ အတည်ပြုချက် လိုအပ်သည်။"
 
 #: source/dialogs/macrosecurity.src#RID_XMLSECTP_SECLEVEL.RB_LOW.RadioButton.Text
 msgid  "~Low (not recommended).\nAll macros will be executed without confirmation. Use this setting only if you are certain that all documents that will be opened are safe."
-msgstr ""
+msgstr "အနိမ့် (အကြံ မပြုထားပါ)။ \nအတည်ပြုချက် မပါဘဲ မက်ခရိုများအားလုံး တွက်ချက် ဆောင်ရွက် ဖြေရှင်းရလိမ့်မည်။ အကယ်၍ သေချာသော ထို မှတ်တမ်းမှတ်ရာများအားလုံး ရှိပါက လုံခြုံစွာ ဖွင့်ရလိမ့်မည်ဖြစ်၍ ဤရွေးနိုင်ခြင်းကိုသာ သုံးပါ။"
 
 #: source/dialogs/macrosecurity.src#RID_XMLSECTP_TRUSTSOURCES.FL_TRUSTCERT.FixedLine.Text
 msgid  "Trusted certificates"
@@ -93,7 +93,7 @@ msgstr "ယုံကြည်သည့် ဖိုင် နေရာမျာ�
 
 #: source/dialogs/macrosecurity.src#RID_XMLSECTP_TRUSTSOURCES.FI_TRUSTFILELOC.FixedText.Text
 msgid  "Document macros are always executed if they have been opened from one of the following locations."
-msgstr ""
+msgstr "အကယ်၍ အောက်ပါ နေရာများ၏ တစ်ခုမှ သူတို့ ဖွင့်ထားပါက မှတ်တမ်းမှတ်ရာ မက်ခရိုကို အမြဲတမ်း တွက်ချက် ဆောင်ရွက် ဖြေရှင်းထားသည်။"
 
 #: source/dialogs/macrosecurity.src#RID_XMLSECTP_TRUSTSOURCES.FL_ADD_TRUSTFILELOC.PushButton.Text
 msgid  "Add..."
@@ -125,7 +125,7 @@ msgstr "မှန်ကန်ကြောင်း စစ်ဆေးချက�
 
 #: source/dialogs/warnings.src#RID_XMLSECTP_MACROWARN.FI_DESCR2.FixedText.Text
 msgid  "Macros may contain viruses. Disabling macros for a document is always save. If you disable macros you may lose functionality provided by the document macros."
-msgstr ""
+msgstr "မက်ခရိုတွင် ဗိုင်းရပ်စ်များ ပါဝင်နိုင်သည်။ မှတ်တမ်းမှတ်ရာတစ်ခုကို အစဉ်သိမ်းဆည်းရန်အတွက် မက်ခရိုများ လုပ်ဆောင်မှုမပြု နိုင်ပါ။ မက်ခရိုလုပ်ဆောင်မှု မပြု နိုင်ပါက မှတ်တမ်းမှတ်ရာ မက်ခရို၏ လုပ်ဆောင်ချက်များ ပျောက်ဆုံးနိုင်သည်။"
 
 #: source/dialogs/warnings.src#RID_XMLSECTP_MACROWARN.CB_ALWAYSTRUST.CheckBox.Text
 msgid  "Always trust macros from this source"
@@ -157,7 +157,7 @@ msgstr "ဤအထုတ်သည် အောက်ပါ မှန်ကန်�
 
 #: source/dialogs/digitalsignaturesdialog.src#RID_XMLSECDLG_DIGSIG.STR_HEADERBAR.String.Text
 msgid  "\tSigned by\tDigital ID issued by\tDate"
-msgstr ""
+msgstr "\t မှန်ကန်ကြောင်း စစ်ဆေးချက်အားဖြင့် \t ဒစ်ဂျစ်တယ် ID ထုတ်ပေးခြင်းအားဖြင့် \t ရက်စွဲ"
 
 #: source/dialogs/digitalsignaturesdialog.src#RID_XMLSECDLG_DIGSIG.STR_VALID_SIGNATURE.String.Text
 msgid  "Valid signature"
@@ -177,7 +177,7 @@ msgstr "ဤမှတ်တမ်းမှတ်ရာရှိ မှန်က�
 
 #: source/dialogs/digitalsignaturesdialog.src#RID_XMLSECDLG_DIGSIG.FI_STATE_OLDSIGNATURE.FixedText.Text
 msgid  "Not all parts of the document are signed"
-msgstr ""
+msgstr "မှတ်တမ်းမှတ်ရာ၏ မည်သည့်အစိတ်အပိုင်းများအားလုံးမှ မှန်ကန်ကြောင်းအတည်မပြု နိုင်ပါ။"
 
 #: source/dialogs/digitalsignaturesdialog.src#RID_XMLSECDLG_DIGSIG.FI_STATE_BROKEN.FixedText.Text
 msgid  "The signatures in this document are invalid"
@@ -205,7 +205,7 @@ msgstr ""
 
 #: source/dialogs/digitalsignaturesdialog.src#MSG_XMLSECDLG_QUERY_REMOVEDOCSIGNBEFORESIGN.QueryBox.Message
 msgid  "Adding or removing a macro signature will remove all document signatures.\nDo you really want to continue?"
-msgstr ""
+msgstr "မက်ခရိုထည့်သွင်းမှုပြုစဉ်(သို့)ဖယ်ရှားမှုပြုစဉ် မှတ်တမ်းမှတ်ရာအားလုံး၏ သွင်ပြင်လက္ခဏာရပ်များကို ဖယ်ရှားမှုပြုလိမ့်မည်။\nဆက်လက်လုပ်ဆောင်ရန် ဆန္ဒရှိပါသလား။"
 
 #: source/dialogs/certificateviewer.src#RID_XMLSECDLG_CERTVIEWER.TabDialog.Text
 msgid  "View Certificate"

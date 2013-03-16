@@ -57,8 +57,9 @@ msgid  "Accept this certificate temporarily for this session"
 msgstr "Aanvaar hierdie sertifikaat tydelik vir die sessie"
 
 #: source/unknownauthdlg.src#DLG_UUI_UNKNOWNAUTH.RB_DONTACCEPT_2.RadioButton.Text
+#, fuzzy
 msgid  "Do not accept this certificate and do not connect to this Web site"
-msgstr ""
+msgstr "Moenie hierdie sertifikaat aanvaar nie en moenie aan hierdie webwerf koppel nie"
 
 #: source/unknownauthdlg.src#DLG_UUI_UNKNOWNAUTH.FT_LABEL_1.FixedText.Text
 #, fuzzy
@@ -103,8 +104,9 @@ msgid  "Document in Use"
 msgstr "Dokument in gebruik"
 
 #: source/trylater.src#STR_TRYLATER_MSG.String.Text
+#, fuzzy
 msgid  "Document file '$(ARG1)' is locked for editing by:\n\n$(ARG2)\n\nTry again later to save document or save a copy of that document.\n\n"
-msgstr ""
+msgstr "Dokumentlêer '$(ARG1)' is gesluit vir redigering deur:\n\n$(ARG2)\n\nProbeer later weer die dokument stoor, of stoor 'n kopie van daardie dokument.\n\n"
 
 #: source/trylater.src#STR_TRYLATER_RETRYSAVING_BTN.String.Text
 #, fuzzy
@@ -117,7 +119,6 @@ msgid  "~Save As..."
 msgstr "~Stoor as..."
 
 #: source/ids.src#RID_KEEP_PASSWORD.String.Text
-#, fuzzy
 msgid  "~Remember password until end of session"
 msgstr "~Onthou wagwoord tot aan einde van sessie"
 
@@ -157,8 +158,9 @@ msgid  "Target already exists."
 msgstr "Teiken bestaan reeds."
 
 #: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_IO_MODULESIZEEXCEEDED & ERRCODE_RES_MASK).String.Text
+#, fuzzy
 msgid  "You are about to save/export a password protected basic library containing module(s) \n$(ARG1)\nwhich are too large to store in binary format. If you wish users that don't have access to the library password to be able to run macros in those module(s) you must split those modules into a number of smaller modules. Do you wish to continue to save/export this library?"
-msgstr ""
+msgstr "Jy gaan binnekort 'n wagwoordbeskermde basiese programmateek stoor/uitvoer wat module(s) \n$(ARG1)\nbevat wat te groot is om in binêre formaat gestoor te word. As jy nie wil hê gebruikers moet toegang tot die programmateekwagwoord hê om makro's in daardie module(s) te laat loop nie, moet jy daardie modules verdeel in 'n aantal kleiner modules. Wil jy voortgaan om hierdie programmateek te stoor/uit te voer?"
 
 #: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_IO_BADCRC & ERRCODE_RES_MASK).String.Text
 #, fuzzy
@@ -201,8 +203,9 @@ msgid  "$(ARG1) is not ready."
 msgstr "$(ARG1) is nie gereed nie."
 
 #: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_IO_NOTSAMEDEVICE & ERRCODE_RES_MASK).String.Text
+#, fuzzy
 msgid  "Action impossible: $(ARG1) and $(ARG2) are different devices (drives)."
-msgstr ""
+msgstr "Aksie onmoontlik: $(ARG1) en $(ARG2) is verskillende toestelle (aandrywers)."
 
 #: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_IO_GENERAL & ERRCODE_RES_MASK).String.Text
 #, fuzzy
@@ -210,8 +213,9 @@ msgid  "General input/output error while accessing $(ARG1)."
 msgstr "Algemene toevoer-/afvoerfout by verkryging van toegang tot $(ARG1)."
 
 #: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_IO_INVALIDACCESS & ERRCODE_RES_MASK).String.Text
+#, fuzzy
 msgid  "An attempt was made to access $(ARG1) in an invalid way."
-msgstr ""
+msgstr "'n Poging is aangewend om toegang tot $(ARG1) op 'n ongeldige manier te verkry."
 
 #: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_IO_INVALIDCHAR & ERRCODE_RES_MASK).String.Text
 #, fuzzy
@@ -234,8 +238,9 @@ msgid  "The operation on $(ARG1) was started with an invalid parameter."
 msgstr "Die bewerking in $(ARG1) is met 'n ongeldige parameter begin."
 
 #: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_IO_ISWILDCARD & ERRCODE_RES_MASK).String.Text
+#, fuzzy
 msgid  "The operation cannot be performed because $(ARG1) contains wildcards."
-msgstr ""
+msgstr "Die bewerking kan nie uitgevoer word nie want $(ARG1) bevat oorheersstringe."
 
 #: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_IO_LOCKVIOLATION & ERRCODE_RES_MASK).String.Text
 #, fuzzy
@@ -263,8 +268,9 @@ msgid  "The path $(ARG1) does not exist."
 msgstr "Die pad $(ARG1) bestaan nie."
 
 #: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_IO_NOTSUPPORTED & ERRCODE_RES_MASK).String.Text
+#, fuzzy
 msgid  "The operation on $(ARG1) is not supported on this operating system."
-msgstr ""
+msgstr "Die bewerking in $(ARG1) word nie deur hierdie bedryfstelsel ondersteun nie."
 
 #: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_IO_NOTADIRECTORY & ERRCODE_RES_MASK).String.Text
 #, fuzzy
@@ -282,16 +288,19 @@ msgid  "There is no space left on device $(ARG1)."
 msgstr "Daar is geen ruimte oor op die toestel $(ARG1) nie."
 
 #: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_IO_TOOMANYOPENFILES & ERRCODE_RES_MASK).String.Text
+#, fuzzy
 msgid  "The operation on $(ARG1) cannot be performed because too many files are already open."
-msgstr ""
+msgstr "Die bewerking in $(ARG1) kan nie uitgevoer word nie omdat daar al te veel lêers oop is."
 
 #: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_IO_OUTOFMEMORY & ERRCODE_RES_MASK).String.Text
+#, fuzzy
 msgid  "The operation on $(ARG1) cannot be performed because there is no more memory available."
-msgstr ""
+msgstr "Die bewerking in $(ARG1) kan nie uitgevoer word nie aangesien daar geen geheue oor is nie."
 
 #: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_IO_PENDING & ERRCODE_RES_MASK).String.Text
+#, fuzzy
 msgid  "The operation on $(ARG1) cannot continue because more data is pending."
-msgstr ""
+msgstr "Die bewerking in $(ARG1) kan nie uitgevoer word nie aangesien meer data in afwagting is."
 
 #: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_IO_RECURSIVE & ERRCODE_RES_MASK).String.Text
 #, fuzzy
@@ -339,12 +348,14 @@ msgid  "The installed Java version $(ARG1) is not supported."
 msgstr "Die geïnstalleerde Java-weergawe $(ARG1) word nie ondersteun nie."
 
 #: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_WRONGJAVA_MIN & ERRCODE_RES_MASK).String.Text
+#, fuzzy
 msgid  "The installed Java version is not supported, at least version $(ARG1) is required."
-msgstr ""
+msgstr "Die geïnstalleerde Java-weergawe word nie ondersteun nie, ten minste weergawe $(ARG1) word vereis."
 
 #: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_WRONGJAVA_VERSION_MIN & ERRCODE_RES_MASK).String.Text
+#, fuzzy
 msgid  "The installed Java version $(ARG1) is not supported, at least version $(ARG2) is required."
-msgstr ""
+msgstr "Die geïnstalleerde Java-weergawe $(ARG1) word nie ondersteun nie, ten minste weergawe $(ARG2) word vereis."
 
 #: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_BADPARTNERSHIP & ERRCODE_RES_MASK).String.Text
 #, fuzzy
@@ -382,32 +393,39 @@ msgid  "The object cannot be created in directory $(ARG1)."
 msgstr "Die objek kan nie in die gids $(ARG1) geskep word nie."
 
 #: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_IO_UNSUPPORTEDOVERWRITE & ERRCODE_RES_MASK).String.Text
+#, fuzzy
 msgid  "%PRODUCTNAME cannot keep files from being overwritten when this transmission protocol is used. Do you want to continue anyway?"
-msgstr ""
+msgstr "%PRODUCTNAME kan nie voorkom dat lêers oorgeskryf word terwyl hierdie versendingsprotokol gebruik word nie. Wil u in elk geval voortgaan?"
 
 #: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_IO_BROKENPACKAGE & ERRCODE_RES_MASK).String.Text
+#, fuzzy
 msgid  "The file '$(ARG1)' is corrupt and therefore cannot be opened. %PRODUCTNAME can try to repair the file.\n\nThe corruption could be the result of document manipulation or of structural document damage due to data transmission.\n\nWe recommend that you do not trust the content of the repaired document.\nExecution of macros is disabled for this document.\n\nShould %PRODUCTNAME repair the file?\n"
-msgstr ""
+msgstr "Die lêer '$(ARG1)' is korrup en kan daarom nie geopen word nie. %PRODUCTNAME kan die lêer probeer herstel.\n\nDie korrupsie kon voorkom omdat die dokument gemanipuleer is of vanweë strukturele skade vanweë dataoordrag.\n\nOns beveel aan dat u nie die inhoud van die herstelde dokument vertrou nie.\nDie makro's is vir hierdie dokument gedeaktiveer.\n\nMoet %PRODUCTNAME die lêer herstel?\n"
 
 #: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_IO_BROKENPACKAGE_CANTREPAIR & ERRCODE_RES_MASK).String.Text
+#, fuzzy
 msgid  "The file '$(ARG1)' could not be repaired and therefore cannot be opened."
-msgstr ""
+msgstr "Die lêer '$(ARG1)' kon nie herstel word nie en kan daarom nie oopgemaak word nie."
 
 #: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_CONFIGURATION_BROKENDATA_NOREMOVE & ERRCODE_RES_MASK).String.Text
+#, fuzzy
 msgid  "Configuration data in '$(ARG1)' is corrupted. Without this data some functions may not operate correctly.\nDo you want to continue startup of %PRODUCTNAME without the corrupted configuration data?"
-msgstr ""
+msgstr "Opstellingdata in '$(ARG1)' is gekorrupteer. Sonder hierdie data sal sekere funksies nie behoorlik werk nie.\nWil u steeds %PRODUCTNAME laat loop sonder die gekorrupteerde opstellingdata?"
 
 #: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_CONFIGURATION_BROKENDATA_WITHREMOVE & ERRCODE_RES_MASK).String.Text
+#, fuzzy
 msgid  "The personal configuration file '$(ARG1)' is corrupted and must be deleted to continue. Some of your personal settings may be lost.\nDo you want to continue startup of %PRODUCTNAME without the corrupted configuration data?"
-msgstr ""
+msgstr "Die persoonlike opstellingslêer '$(ARG1)' is gekorrupteer en moet geskrap word voor u kan voortgaan. Sekere van u persoonlike opstellings kan verlore gaan.\nWil u steeds %PRODUCTNAME laat loop sonder die gekorrupteerde opstellingsdata?"
 
 #: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_CONFIGURATION_BACKENDMISSING & ERRCODE_RES_MASK).String.Text
+#, fuzzy
 msgid  "The configuration data source '$(ARG1)' is unavailable. Without this data some functions may not operate correctly."
-msgstr ""
+msgstr "Die opstellingdatabron '$(ARG1)' is onbeskikbaar. Sonder hierdie data sal sekere funksies nie behoorlik werk nie."
 
 #: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_CONFIGURATION_BACKENDMISSING_WITHRECOVER & ERRCODE_RES_MASK).String.Text
+#, fuzzy
 msgid  "The configuration data source '$(ARG1)' is unavailable. Without this data some functions may not operate correctly.\nDo you want to continue startup of %PRODUCTNAME without the missing configuration data?"
-msgstr ""
+msgstr "Die opstellingdatabron '$(ARG1)' is onbeskikbaar. Sonder hierdie data sal sekere funksies nie behoorlik werk nie.\nWil u steeds %PRODUCTNAME laat loop sonder die vermiste opstellingdata?"
 
 #: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_INVALID_XFORMS_SUBMISSION_DATA & ERRCODE_RES_MASK).STRING.Text
 #, fuzzy
@@ -431,20 +449,24 @@ msgid  "The previously obtained lock for file $(ARG1) has expired.\nThis can hap
 msgstr ""
 
 #: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_UNKNOWNAUTH_UNTRUSTED).STRING.Text
+#, fuzzy
 msgid  "Unable to verify the identity of $(ARG1) site.\n\nBefore accepting this certificate, you should examine this site's certificate carefully. Are you willing to accept this certificate for the purpose of identifying the Web site $(ARG1)?"
-msgstr ""
+msgstr "Kon nie die identiteit van $(ARG1) geverifieer nie.\n\nVoor u hierdie sertifikaat aanvaar, behoort u hierdie werf se sertifikaat noukeurig te ondersoek. Is u gewillig om hierdie sertifikaat te aanvaar vir die doel om die webwerf te identifiseer $(ARG1)?"
 
 #: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_SSLWARN_EXPIRED_1).STRING.Text
+#, fuzzy
 msgid  "$(ARG1) is a site that uses a security certificate to encrypt data during transmission, but its certificate expired on $(ARG2).\n\nYou should check to make sure that your computer's time is correct."
-msgstr ""
+msgstr "$(ARG1) is 'n werf wat 'n sekuriteitsertifikaat gebruik om data tydens versending te enkripteer, sy sertifikaat het op $(ARG2) verval.\n\nMaak seker of u rekenaar se tyd korrek is."
 
 #: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_SSLWARN_DOMAINMISMATCH_1).STRING.Text
+#, fuzzy
 msgid  "You have attempted to establish a connection with $(ARG1). However, the security certificate presented belongs to $(ARG2). It is possible, though unlikely, that someone may be trying to intercept your communication with this web site.\n\nIf you suspect the certificate shown does not belong to $(ARG1), please cancel the connection and notify the site administrator.\n\nWould you like to continue anyway?"
-msgstr ""
+msgstr "U het 'n verbinding probeer bewerkstellig met $(ARG1). Die sekuriteitsertifikaat wat aangebied is, behoort egter aan $(ARG2). Dis moontlik, maar onwaarskynlik, dat iemand probeer om u kommunikasie met hierdie webwerf te onderskep.\n\nKanselleer asseblief die verbinding en verwittig die stelseladministrateur indien u vermoed dat die vertoonde sertifikaat nie aan $(ARG1) behoort nie.\n\nWil u nogtans voortgaan?"
 
 #: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_SSLWARN_INVALID_1).STRING.Text
+#, fuzzy
 msgid  "The certificate could not be validated. You should examine this site's certificate carefully.\n\nIf you suspect the certificate shown, please cancel the connection and notify the site administrator."
-msgstr ""
+msgstr "Die sertifikaat kon nie gevalideer word nie. U behoort hierdie werf se sertifikaat noukeurig te ondersoek.\n\nAs u die sertifikaat wantrou, kanselleer asseblief die verbinding en stel die werfadministrateur in kennis."
 
 #: source/ids.src#RID_UUI_ERRHDL.(TITLE_UUI_SSLWARN_DOMAINMISMATCH).STRING.Text
 #, fuzzy
@@ -462,7 +484,6 @@ msgid  "Security Warning: Server Certificate Invalid"
 msgstr "Sekuriteitswaarskuwing: Bedienersertifikaat ongeldig"
 
 #: source/fltdlg.src#DLG_FILTER_SELECT.ModalDialog.Text
-#, fuzzy
 msgid  "Filter Selection"
 msgstr "Filterseleksie"
 
@@ -479,7 +500,7 @@ msgid  "Enter user name and password for: \n%1"
 msgstr ""
 
 #: source/logindlg.src#DLG_UUI_LOGIN.STR_LOGIN_REALM.String.Text
-msgid  "Enter user name and password for: \n"%2" on %1"
+msgid  "Enter user name and password for: \n\"%2\" on %1"
 msgstr ""
 
 #: source/logindlg.src#DLG_UUI_LOGIN.FT_LOGIN_PATH.FixedText.Text
@@ -512,60 +533,50 @@ msgid  "~Use system credentials"
 msgstr ""
 
 #: source/cookiedg.src#DLG_COOKIES.RB_INFUTURE_SEND.RadioButton.Text
-#, fuzzy
 msgid  "~Send"
 msgstr "~Stuur"
 
 #: source/cookiedg.src#DLG_COOKIES.RB_INFUTURE_IGNORE.RadioButton.Text
-#, fuzzy
 msgid  "I~gnore"
 msgstr "I~gnoreer"
 
 #: source/cookiedg.src#DLG_COOKIES.RB_INFUTURE_INTERACTIVE.RadioButton.Text
-#, fuzzy
 msgid  "I~nteractive"
 msgstr "I~nteraktief"
 
 #: source/cookiedg.src#DLG_COOKIES.GB_INFUTURE.GroupBox.Text
-#, fuzzy
 msgid  "Future Cookie Handling"
 msgstr "Toekomstige koekiehantering"
 
 #: source/cookiedg.src#DLG_COOKIES.BTN_COOKIES_CANCEL.PushButton.Text
-#, fuzzy
 msgid  "~Ignore"
 msgstr "~Ignoreer"
 
 #: source/cookiedg.src#DLG_COOKIES.BTN_COOKIES_OK.PushButton.Text
-#, fuzzy
 msgid  "~Send"
 msgstr "~Stuur"
 
 #: source/cookiedg.src#STR_COOKIES_RECV_START.String.Text
 msgid  "The '${HOST}' server wishes to set one or more cookies.\nCookies contain information referring to certain URL classes. If %PRODUCTNAME later requests a document with a URL corresponding to the class of a previously set cookie, %PRODUCTNAME will send this information to the server. This allows a server to recognize the status of a WWW application, e.g., when shopping online.\n\nThe following Cookies should be set:\n\n"
-msgstr ""
+msgstr "Die '${HOST}'-bediener wil een of meer koekies stel.\nKoekies bevat inligting wat na sekere URL-klasse verwys. Indien %PRODUCTNAME later 'n dokument versoek met 'n URL wat met die klas van 'n voorheen gestelde koekie ooreenstem, sal %PRODUCTNAME hierdie inligting aan die bediener stuur. Dit stel die bediener in staat om die status van die WWW-toepassing te herken, byvoorbeeld wanneer 'n mens aanlyn inkopies doen.\n\nDie volgende koekies moet gestel word:\n\n"
 
 #: source/cookiedg.src#STR_COOKIES_RECV_COOKIES.String.Text
-#, fuzzy
 msgid  "Domain: ${DOMAIN}, Path: ${PATH}, Cookie: ${COOKIE}.\n"
 msgstr "Domein: ${DOMAIN}, Pad: ${PATH}, Koekie: ${COOKIE}.\n"
 
 #: source/cookiedg.src#STR_COOKIES_RECV_TITLE.String.Text
-#, fuzzy
 msgid  "Cookie Reception"
 msgstr "Koekieontvangs"
 
 #: source/cookiedg.src#STR_COOKIES_SEND_START.String.Text
 msgid  "%PRODUCTNAME has saved cookies for the server '${HOST}' which will be sent when requesting the document ${PATH}.\nCookies contain information which refers to certain URL classes. They are sent by some servers to %PRODUCTNAME where they are saved when certain documents are accessed. If %PRODUCTNAME loads a document that, according to the URL, corresponds to a class of one of the previously received Cookies, %PRODUCTNAME will send this information to that server. This enables a server to keep track of the status of a WWW application, e.g., when shopping online.\n\nThe following Cookies should be set:\n\n"
-msgstr ""
+msgstr "%PRODUCTNAME het gestoorde koekies vir die bediener '${HOST}' wat gestuur sal word wanneer die dokument ${PATH} aangevra word.\nKoekies bevat inligting wat na sekere URL-klasse verwys. Hulle word deur sommige bedieners aan %PRODUCTNAME gestuur, waar hulle gestoor word wanneer sekere dokumente gelees word. Indien %PRODUCTNAME 'n dokument laai wat, volgens die URL met 'n klas van een van die voorheen ontvangde koekie ooreenstem, sal %PRODUCTNAME hierdie inligting aan die bediener stuur. Dit stel die bediener in staat om die status van die WWW-toepassing na te speur, byvoorbeeld wanneer 'n mens aanlyn inkopies doen.\n\nDie volgende koekies moet gestel word:\n\n"
 
 #: source/cookiedg.src#STR_COOKIES_SEND_COOKIES.String.Text
-#, fuzzy
 msgid  "Domain: ${DOMAIN}, Path: ${PATH}, Cookie: ${COOKIE}.\n"
 msgstr "Domein: ${DOMAIN}, Pad: ${PATH}, Koekie: ${COOKIE}.\n"
 
 #: source/cookiedg.src#STR_COOKIES_SEND_TITLE.String.Text
-#, fuzzy
 msgid  "Send Cookies"
 msgstr "Stuur koekies"
 
@@ -608,8 +619,9 @@ msgid  "Document in Use"
 msgstr "Dokument in gebruik"
 
 #: source/openlocked.src#STR_OPENLOCKED_MSG.String.Text
+#, fuzzy
 msgid  "Document file '$(ARG1)' is locked for editing by:\n\n$(ARG2)\n\nOpen document read-only or open a copy of the document for editing.\n\n"
-msgstr ""
+msgstr "Dokumentlêer '$(ARG1)' is gesluit vir redigering deur:\n\n$(ARG2)\n\nOpen dokument leesalleen of open 'n kopie van die dokument vir redigering.\n\n"
 
 #: source/openlocked.src#STR_OPENLOCKED_OPENREADONLY_BTN.String.Text
 #, fuzzy
@@ -632,10 +644,9 @@ msgstr ""
 
 #: source/filechanged.src#STR_FILECHANGED_MSG.String.Text
 msgid  "The file has been changed since it was opened for editing in %PRODUCTNAME. Saving your version of the document will overwrite changes made by others.\n\nDo you want to save anyway?\n\n"
-msgstr ""
+msgstr "Die lêer is gewysig sedert dit vir redigering in %PRODUCTNAME geopen is. As u u weergawe van die dokument stoor, sal dit wysigings oorheenskryf wat deur andere gemaak is.\n\nWil u in elk geval stoor?\n\n"
 
 #: source/filechanged.src#STR_FILECHANGED_SAVEANYWAY_BTN.String.Text
-#, fuzzy
 msgid  "~Save Anyway"
 msgstr "~Stoor in elk geval"
 
@@ -645,8 +656,9 @@ msgid  "%PRODUCTNAME Update Available"
 msgstr "%PRODUCTNAME-bywerking beskikbaar"
 
 #: source/newerverwarn.src#RID_DLG_NEWER_VERSION_WARNING.FT_INFO.FixedText.Text
+#, fuzzy
 msgid  "This document was created by a newer version of %PRODUCTNAME. It may contain features not supported by your current version.\n\nClick 'Update Now...' to run online update and get the latest version of %PRODUCTNAME."
-msgstr ""
+msgstr "Hierdie  dokument is geskep met 'n jonger weergawe van %PRODUCTNAME. Dit bevat dalk kenmerke wat nie met u  huidige weergawe werk nie.\n\nKliek 'Werk nou by...' om aanlyn bywerking te doen en die jongste weergawe van %PRODUCTNAME te kry."
 
 #: source/newerverwarn.src#RID_DLG_NEWER_VERSION_WARNING.PB_UPDATE.PushButton.Text
 #, fuzzy
@@ -704,8 +716,9 @@ msgid  "View Signatures..."
 msgstr "Bekyk handtekeninge..."
 
 #: source/secmacrowarnings.src#RID_XMLSECDLG_MACROWARN.FI_DESCR2.FixedText.Text
+#, fuzzy
 msgid  "Macros may contain viruses. Disabling macros for a document is always safe. If you disable macros you may lose functionality provided by the document macros."
-msgstr ""
+msgstr "Makro's kan virusse bevat. Om makro's te deaktiveer is altyd veilig. As u makro's deaktiveer, kan u dalk van die funksionaliteit verloor wat deur die dokumentmakro's verskaf word."
 
 #: source/secmacrowarnings.src#RID_XMLSECDLG_MACROWARN.CB_ALWAYSTRUST.CheckBox.Text
 #, fuzzy
@@ -738,8 +751,9 @@ msgid  "Set Master Password"
 msgstr "Stel meesterwagwoord in"
 
 #: source/masterpasscrtdlg.src#DLG_UUI_MASTERPASSWORD_CRT.FT_INFOTEXT.FixedText.Text
+#, fuzzy
 msgid  "Passwords for web connections are protected by a master password. You will be asked to enter it once per session, if %PRODUCTNAME retrieves a password from the protected password list."
-msgstr ""
+msgstr "Wagwoorde vir webverbindings word beskerm met 'n meesterwagwoord. U sal gevra word om dit een maal per sessie in te tik, indien %PRODUCTNAME 'n wagwoord uit die beskermde wagwoordlys haal."
 
 #: source/masterpasscrtdlg.src#DLG_UUI_MASTERPASSWORD_CRT.FT_MASTERPASSWORD_CRT.FixedText.Text
 #, fuzzy
@@ -757,29 +771,25 @@ msgstr ""
 
 #: source/alreadyopen.src#STR_ALREADYOPEN_MSG.String.Text
 msgid  "Document file '$(ARG1)' is locked for editing by yourself on a different system since $(ARG2)\n\nOpen document read-only, or ignore own file locking and open the document for editing.\n\n"
-msgstr ""
+msgstr "Dokumentlêer '$(ARG1)' is gesluit vir redigering deur uself op 'n ander rekenaar sedert $(ARG2)\n\nOpen dokument leesalleen, of ignoreer eie lêerslot en open die dokument om te redigeer.\n\n"
 
 #: source/alreadyopen.src#STR_ALREADYOPEN_READONLY_BTN.String.Text
-#, fuzzy
 msgid  "Open ~Read-Only"
 msgstr "Open ~leesalleen"
 
 #: source/alreadyopen.src#STR_ALREADYOPEN_OPEN_BTN.String.Text
-#, fuzzy
 msgid  "~Open"
 msgstr "~Open"
 
 #: source/alreadyopen.src#STR_ALREADYOPEN_SAVE_MSG.String.Text
 msgid  "Document file '$(ARG1)' is locked for editing by yourself on a different system since $(ARG2)\n\nClose document on other system and retry saving or ignore own file locking and save current document.\n\n"
-msgstr ""
+msgstr "Dokumentlêer '$(ARG1)' is gesluit vir redigering deur uself op 'n ander rekenaar sedert $(ARG2)\n\nSluit dokument op ander rekenaar en probeer weer stoor, of ignoreer eie lêerslot en stoor huidige dokument.\n\n"
 
 #: source/alreadyopen.src#STR_ALREADYOPEN_RETRY_SAVE_BTN.String.Text
-#, fuzzy
 msgid  "~Retry Saving"
 msgstr "~Probeer weer stoor"
 
 #: source/alreadyopen.src#STR_ALREADYOPEN_SAVE_BTN.String.Text
-#, fuzzy
 msgid  "~Save"
 msgstr "~Stoor"
 

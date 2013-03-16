@@ -45,7 +45,7 @@ msgstr ""
 
 #: source/all/crashrep.ulf#%WELCOME_BODY2%
 msgid  "It's easy - just send the report without any further effort on your part by clicking 'Send' in the next dialog, or you can briefly describe how the error occurred and then click 'Send'. If you want to see the report, click the 'Show Report' button. No data will be sent if you click 'Do Not Send'.\n\n"
-msgstr ""
+msgstr "Энэ маш амархан - Тайланг илгээхэд дараагийн цонхонд гарч ирэх 'Илгээх' товчин дээр шууд дарах эсвэл хүсвэл та алдааны тухай товч тайлбар бичээд дарахаас өөр илүү чирэгдэл учрахгүй. Хэрэв та тайланг харахыг хүсвэл 'Тайланг харуул' товчин дээр дарна уу. Хэрэв та 'Бүү илгээ' товчин дээр дарвал ямар ч өгөгдөл илгээгдэхгүй.\n\n"
 
 #: source/all/crashrep.ulf#%WELCOME_BODY3%
 msgid  "Customer Privacy\nThe information gathered is limited to data concerning the state of %PRODUCTNAME% %PRODUCTVERSION% when the error occurred. Other information about passwords or document contents is not collected.\n\nThe information will only be used to improve the quality of %PRODUCTNAME% and will not be shared with third parties.\nFor more information on Apache OpenOffice's privacy policy, visit\n"
@@ -81,7 +81,7 @@ msgstr ""
 
 #: source/all/crashrep.ulf#%ENTER_TITLE%
 msgid  "Which type of document (e.g. presentation) were you using when the error occurred?"
-msgstr ""
+msgstr "Ямар төрлийн баримт  (жишээ нь Үзүүлэн) хэрэглэж байх үед алдаа гарсан бэ?"
 
 #: source/all/crashrep.ulf#%ALLOW_CONTACT%
 msgid  "~I allow Apache OpenOffice to contact me regarding this report."
@@ -121,23 +121,23 @@ msgstr "Тайланг дараах руу хадгал"
 
 #: source/all/crashrep.ulf#%ERROR_MSG_SIMPLE_MAPI%
 msgid  "The error report could not be sent because the default e-mail program does not support MAPI.\n Please use a MAPI-compatible e-mail program."
-msgstr ""
+msgstr "Таны өгөгдмөл имэйлийн програм MAPI дэмжихгүй байгаа тул тайланг илгээх боломжгүй.\n MAPI тохиромжтой имэйл програм ашиглана уу."
 
 #: source/all/crashrep.ulf#%ERROR_MSG_DISK_FULL%
 msgid  "The error report could not be temporarily saved and could therefore not be sent."
-msgstr ""
+msgstr "Алдааны тайлан түр хадгалагдах боломжгүй байгаа тул илгээгдэх боломжгүй."
 
 #: source/all/crashrep.ulf#%ERROR_MSG_SENDMAIL%
 msgid  "The error report could not be sent because 'sendmail' could not be started.\nPlease check the 'sendmail' settings."
-msgstr ""
+msgstr "'sendmail' эхлэх боломжгүй тул алдааны тайлан илгээгдэж чадсангүй.\nТа 'sendmail' -н тохиргоогоо шалгана уу."
 
 #: source/all/crashrep.ulf#%ERROR_MSG_PROXY%
 msgid  "The error report could not be sent. Please check the proxy settings under 'Options' in the Error Report Tool."
-msgstr ""
+msgstr "Алдааны тайлан илгээгдэх боломжгүй. Алдаа Илтгэгчийн 'Тохиргоо' дотроос итгэмжлэгчийн тохиргоогоо шалгана уу."
 
 #: source/all/crashrep.ulf#%ERROR_MSG_NOCONNECT%
 msgid  "The error report could not be sent because there is no Internet connection. Please check your Internet settings."
-msgstr ""
+msgstr "Интернет холболт байхгүй байгаа тул алдааны тайланг илгээх боломжгүй. Та интернетийн тохиргоогоо шалгана уу."
 
 #: source/all/crashrep.ulf#%OPTIONS_BUTTON%
 msgid  "~Options..."
@@ -173,7 +173,7 @@ msgstr "~Порт"
 
 #: source/all/crashrep.ulf#%PROXY_SETTINGS_DESCRIPTION%
 msgid  "The %PRODUCTNAME% Error Report tool needs to be connected to the Internet to be able to send error reports.\n\nCompanies often use proxy servers in conjunction with a firewall to protect the network.\n\nIf this applies to your situation, you have to specify the address and port for the server."
-msgstr ""
+msgstr "%PRODUCTNAME% Алдаа Илтгэгч хэрэгсэл алдааны тайлан илгээхийн тулд интернетэд холбогдох шаардлагатай.\n\nКомпаниуд сүлжээгээ хамгаалахын тулд үргэлж итгэмжлэгч серверийг галт ханын хамт хэрэглэдэг.\n\nХэрэв таны нөхцөл тийм бол та тухайн итгэмжлэгч серверийн хаяг болон портыг тодорхойлоно уу."
 
 #: source/all/crashrep.ulf#%SENDING_REPORT_HEADER%
 msgid  "Sending Error Report"
@@ -205,4 +205,4 @@ msgstr "%PRODUCTNAME% процессийн ТТ (PID) -г Алдаа Илтгэ�
 
 #: source/all/crashrep.ulf#%MSG_PARAM_HELP_DESCRIPTION%
 msgid  "Shows this help text.\nDetailed information can be found in the Setup Guide."
-msgstr ""
+msgstr "Энэ тусламж бичвэрийг харуул.\nНарийвчилсан мэдээллийг Суулгагчийн заавраас олж үзэж болно."

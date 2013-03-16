@@ -41,6 +41,11 @@ msgstr "ಶೀರ್ಷಿಕೆಗಳ, ಲೆಜೆಂಡ್, ಹಾಗು ಚ�
 msgid  "Display grids"
 msgstr "ಚೌಕಗಳನ್ನು ತೋರಿಸು"
 
+#: source/controller/dialogs/tp_3D_SceneGeometry.src#CUSTOMUNITTEXT_DEGREE.#define.CustomUnitText
+#, fuzzy
+msgid  " degrees"
+msgstr " ಡಿಗ್ರಿಗಳು"
+
 #: source/controller/dialogs/tp_3D_SceneGeometry.src#TP_3D_SCENEGEOMETRY.CBX_RIGHT_ANGLED_AXES.CheckBox.Text
 #, fuzzy
 msgid  "~Right-angled axes"
@@ -65,11 +70,6 @@ msgstr "~Z ಸುತ್ತುವಿಕೆ"
 #, fuzzy
 msgid  "~Perspective"
 msgstr "ಯಥಾದೃಷ್ಟಿ(~P)"
-
-#: source/controller/dialogs/tp_3D_SceneGeometry.src#CUSTOMUNITTEXT_DEGREE.#define.CustomUnitText
-#, fuzzy
-msgid  " degrees"
-msgstr " ಡಿಗ್ರಿಗಳು"
 
 #: source/controller/dialogs/Strings_AdditionalControls.src#STR_3DSCHEME_SIMPLE.String.Text
 #, fuzzy
@@ -112,27 +112,22 @@ msgid  "~Insert in sheet"
 msgstr "ಹಾಳೆಯಲ್ಲಿ ಅಳವಡಿಸು(~I)"
 
 #: source/controller/dialogs/res_BarGeometry.src#LB_BAR_GEOMETRY.item1.StringList.item
-#, fuzzy
 msgid  "Box"
 msgstr "ಚೌಕ"
 
 #: source/controller/dialogs/res_BarGeometry.src#LB_BAR_GEOMETRY.item2.StringList.item
-#, fuzzy
 msgid  "Cylinder"
 msgstr "ಸ್ತಂಭಾಕೃತಿ"
 
 #: source/controller/dialogs/res_BarGeometry.src#LB_BAR_GEOMETRY.item3.StringList.item
-#, fuzzy
 msgid  "Cone"
 msgstr "ಶಂಖಾಕೃತಿ"
 
 #: source/controller/dialogs/res_BarGeometry.src#LB_BAR_GEOMETRY.item4.StringList.item
-#, fuzzy
 msgid  "Pyramid"
 msgstr "ಪಿರಮಿಡ್ಡು"
 
 #: source/controller/dialogs/dlg_DataSource.src#DLG_DATA_SOURCE.TabDialog.Text
-#, fuzzy
 msgid  "Data Ranges"
 msgstr "ದತ್ತಾಂಶ ವ್ಯಾಪ್ತಿ"
 
@@ -282,27 +277,22 @@ msgid  "Bubble Chart"
 msgstr "ಗುಳ್ಳೆ ನಕ್ಷೆ"
 
 #: source/controller/dialogs/dlg_ShapeFont.src#DLG_SHAPE_FONT.TabDialog.Text
-#, fuzzy
 msgid  "Character"
 msgstr "ಚಿಹ್ನೆ"
 
 #: source/controller/dialogs/dlg_ShapeFont.src#DLG_SHAPE_FONT.1.RID_SVXPAGE_CHAR_NAME.PageItem.Text
-#, fuzzy
 msgid  "Font"
 msgstr "ಅಕ್ಷರಶೈಲಿ"
 
 #: source/controller/dialogs/dlg_ShapeFont.src#DLG_SHAPE_FONT.1.RID_SVXPAGE_CHAR_EFFECTS.PageItem.Text
-#, fuzzy
 msgid  "Font Effects"
 msgstr "ಅಕ್ಷರಶೈಲಿ ಪರಿಣಾಮಗಳು"
 
 #: source/controller/dialogs/dlg_ShapeFont.src#DLG_SHAPE_FONT.1.RID_SVXPAGE_CHAR_POSITION.PageItem.Text
-#, fuzzy
 msgid  "Font Position"
 msgstr "ಅಕ್ಷರಶೈಲಿಯ ಸ್ಥಾನ"
 
 #: source/controller/dialogs/dlg_View3D.src#DLG_3D_VIEW.TabDialog.Text
-#, fuzzy
 msgid  "3D View"
 msgstr "೩-ಆಯಾಮದ ನೋಟ"
 
@@ -312,16 +302,19 @@ msgid  "Numbers are required. Check your input."
 msgstr "ಅಂಕೆಗಳ ಅಗತ್ಯವಿದೆ. ನಿಮ್ಮ ಆದಾನವನ್ನು (ಇನ್‌ಪುಟ್) ಪರೀಕ್ಷಿಸಿ."
 
 #: source/controller/dialogs/Strings_Scale.src#STR_STEP_GT_ZERO.String.Text
+#, fuzzy
 msgid  "The major interval requires a positive number. Check your input."
-msgstr ""
+msgstr "ಪ್ರಧಾನ ಅಂತರವು ಧನಾತ್ಮಕ ಸಂಖ್ಯೆಯೊಂದನ್ನು ನಿರೀಕ್ಷಿಸುತ್ತಿದೆ. ನಿಮ್ಮ ದತ್ತಾಂಶವನ್ನು ಪರಿಶೀಲಿಸಿ"
 
 #: source/controller/dialogs/Strings_Scale.src#STR_BAD_LOGARITHM.String.Text
+#, fuzzy
 msgid  "The logarithmic scale requires positive numbers. Check your input."
-msgstr ""
+msgstr "ಘಾತಮಾಪಕವು ಧನಾತ್ಮಕ ಸಂಖ್ಯೆಯೊಂದನ್ನು ನಿರೀಕ್ಷಿಸುತ್ತಿದೆ. ನಿಮ್ಮ ದತ್ತಾಂಶವನ್ನು ಪರಿಶೀಲಿಸಿ"
 
 #: source/controller/dialogs/Strings_Scale.src#STR_MIN_GREATER_MAX.String.Text
+#, fuzzy
 msgid  "The minimum must be lower than the maximum. Check your input."
-msgstr ""
+msgstr "ಕನಿಷ್ಟವು ಗರಿಷ್ಟಕ್ಕಿಂತ ಕಡಿಮೆ ಇರಬೇಕು. ನಿಮ್ಮ ಆದಾನವನ್ನು (ಇನ್‌ಪುಟ್) ಪರೀಕ್ಷಿಸಿ."
 
 #: source/controller/dialogs/Strings_Scale.src#STR_INVALID_INTERVALS.String.Text
 msgid  "The major interval needs to be greater than the minor interval. Check your input."
@@ -332,42 +325,34 @@ msgid  "The major and minor interval need to be greater or equal to the resoluti
 msgstr ""
 
 #: source/controller/dialogs/dlg_DataEditor.src#DLG_DIAGRAM_DATA.ModalDialog.Text
-#, fuzzy
 msgid  "Data Table"
 msgstr "ದತ್ತಾಂಶ ಕೋಷ್ಟಕ"
 
 #: source/controller/dialogs/dlg_DataEditor.src#DLG_DIAGRAM_DATA.TBX_DATA.TBI_DATA_INSERT_ROW.ToolBoxItem.Text
-#, fuzzy
 msgid  "Insert Row"
 msgstr "ಅಡ್ಡಸಾಲನ್ನು ಅಳವಡಿಸು"
 
 #: source/controller/dialogs/dlg_DataEditor.src#DLG_DIAGRAM_DATA.TBX_DATA.TBI_DATA_INSERT_COL.ToolBoxItem.Text
-#, fuzzy
 msgid  "Insert Series"
 msgstr "ಸರಣಿಯನ್ನು ಸೇರಿಸು"
 
 #: source/controller/dialogs/dlg_DataEditor.src#DLG_DIAGRAM_DATA.TBX_DATA.TBI_DATA_INSERT_TEXT_COL.ToolBoxItem.Text
-#, fuzzy
 msgid  "Insert Text Column"
 msgstr "ಪಠ್ಯದ ಲಂಬಸಾಲನ್ನು ಸೇರಿಸಿ"
 
 #: source/controller/dialogs/dlg_DataEditor.src#DLG_DIAGRAM_DATA.TBX_DATA.TBI_DATA_DELETE_ROW.ToolBoxItem.Text
-#, fuzzy
 msgid  "Delete Row"
 msgstr "ಸಾಲನ್ನು ಅಳಿಸು"
 
 #: source/controller/dialogs/dlg_DataEditor.src#DLG_DIAGRAM_DATA.TBX_DATA.TBI_DATA_DELETE_COL.ToolBoxItem.Text
-#, fuzzy
 msgid  "Delete Series"
 msgstr "ಸರಣಿಯನ್ನು ಅಳಿಸು"
 
 #: source/controller/dialogs/dlg_DataEditor.src#DLG_DIAGRAM_DATA.TBX_DATA.TBI_DATA_SWAP_COL.ToolBoxItem.Text
-#, fuzzy
 msgid  "Move Series Right"
 msgstr "ಸರಣಿಯನ್ನು ಬಲಕ್ಕೆ ಜರುಗಿಸು"
 
 #: source/controller/dialogs/dlg_DataEditor.src#DLG_DIAGRAM_DATA.TBX_DATA.TBI_DATA_SWAP_ROW.ToolBoxItem.Text
-#, fuzzy
 msgid  "Move Row Down"
 msgstr "ಸಾಲನ್ನು ಕೆಳಕ್ಕೆ ಜರುಗಿಸು"
 
@@ -675,8 +660,9 @@ msgid  "~Data points order"
 msgstr "ದತ್ತ ಬಿಂದುಗಳ ಕ್ರಮ(~D)"
 
 #: source/controller/dialogs/tp_DataSource.src#TP_DATA_SOURCE.FT_CAPTION_FOR_WIZARD.FixedText.Text
+#, fuzzy
 msgid  "Customize data ranges for individual data series"
-msgstr ""
+msgstr "ಪ್ರತ್ಯೇಕ ದತ್ತಾಂಶ ಸರಣಿಗಳಿಗಾಗಿ ದತ್ತಾಂಶದ ವ್ಯಾಪ್ತಿಗಳನ್ನು ನಿಮ್ಮ ಇಚ್ಛೆಗೆ ತಕ್ಕಂತೆ ಬದಲಾಯಿಸಿ"
 
 #: source/controller/dialogs/tp_DataSource.src#TP_DATA_SOURCE.FT_SERIES.FixedText.Text
 #, fuzzy
@@ -809,22 +795,18 @@ msgid  "Te~xt direction"
 msgstr "ಪಠ್ಯದ ದಿಕ್ಕು(~x)"
 
 #: source/controller/dialogs/res_TextSeparator.src#LB_TEXT_SEPARATOR.item1.StringList.item
-#, fuzzy
 msgid  "Space"
 msgstr "ಸ್ಥಳ"
 
 #: source/controller/dialogs/res_TextSeparator.src#LB_TEXT_SEPARATOR.item2.StringList.item
-#, fuzzy
 msgid  "Comma"
 msgstr "ವಿರಾಮ ಚಿಹ್ನೆ"
 
 #: source/controller/dialogs/res_TextSeparator.src#LB_TEXT_SEPARATOR.item3.StringList.item
-#, fuzzy
 msgid  "Semicolon"
 msgstr "ಅರ್ಧ ವಿರಾಮ"
 
 #: source/controller/dialogs/res_TextSeparator.src#LB_TEXT_SEPARATOR.item4.StringList.item
-#, fuzzy
 msgid  "New line"
 msgstr "ಹೊಸ ಸಾಲು"
 
@@ -849,37 +831,30 @@ msgid  "~Rounded edges"
 msgstr "ದುಂಡಗಿನ ಅಂಚುಗಳು(~R)"
 
 #: source/controller/dialogs/dlg_InsertAxis_Grid.src#DLG_AXIS_OR_GRID.FL_PRIMARY_AXIS.FixedLine.Text
-#, fuzzy
 msgid  "Axes"
 msgstr "ಅಕ್ಷಗಳು"
 
 #: source/controller/dialogs/dlg_InsertAxis_Grid.src#DLG_AXIS_OR_GRID.FL_PRIMARY_GRID.FixedLine.Text
-#, fuzzy
 msgid  "Major grids"
 msgstr "ಪ್ರಮುಖ ಚೌಕಗಳು"
 
 #: source/controller/dialogs/dlg_InsertAxis_Grid.src#DLG_AXIS_OR_GRID.CB_X_PRIMARY.CheckBox.Text
-#, fuzzy
 msgid  "~X axis"
 msgstr "~X ಅಕ್ಷಾಂಶ"
 
 #: source/controller/dialogs/dlg_InsertAxis_Grid.src#DLG_AXIS_OR_GRID.CB_Y_PRIMARY.CheckBox.Text
-#, fuzzy
 msgid  "~Y axis"
 msgstr "~Y ಅಕ್ಷಾಂಶ"
 
 #: source/controller/dialogs/dlg_InsertAxis_Grid.src#DLG_AXIS_OR_GRID.CB_Z_PRIMARY.CheckBox.Text
-#, fuzzy
 msgid  "~Z axis"
 msgstr "~Z ಅಕ್ಷಾಂಶ"
 
 #: source/controller/dialogs/dlg_InsertAxis_Grid.src#DLG_AXIS_OR_GRID.FL_SECONDARY_AXIS.FixedLine.Text
-#, fuzzy
 msgid  "Secondary axes"
 msgstr "ಅಪ್ರಧಾನ ಅಕ್ಷಗಳು"
 
 #: source/controller/dialogs/dlg_InsertAxis_Grid.src#DLG_AXIS_OR_GRID.FL_SECONDARY_GRID.FixedLine.Text
-#, fuzzy
 msgid  "Minor grids"
 msgstr "ಅಪ್ರಧಾನ ಚೌಕಗಳು"
 
@@ -919,102 +894,82 @@ msgid  "Te~xt direction"
 msgstr "ಪಠ್ಯದ ದಿಕ್ಕು(~x)"
 
 #: source/controller/dialogs/dlg_ShapeParagraph.src#DLG_SHAPE_PARAGRAPH.TabDialog.Text
-#, fuzzy
 msgid  "Paragraph"
 msgstr "ಪ್ಯಾರಾಗ್ರಾಫ್"
 
 #: source/controller/dialogs/dlg_ShapeParagraph.src#DLG_SHAPE_PARAGRAPH.1.RID_SVXPAGE_STD_PARAGRAPH.PageItem.Text
-#, fuzzy
 msgid  "Indents & Spacing"
 msgstr "ಇಂಡೆಂಟ್‌ಗಳು ಹಾಗು ಖಾಲಿ ಸ್ಥಳಗಳು"
 
 #: source/controller/dialogs/dlg_ShapeParagraph.src#DLG_SHAPE_PARAGRAPH.1.RID_SVXPAGE_ALIGN_PARAGRAPH.PageItem.Text
-#, fuzzy
 msgid  "Alignment"
 msgstr "ಹೊಂದಿಕೆ"
 
 #: source/controller/dialogs/dlg_ShapeParagraph.src#DLG_SHAPE_PARAGRAPH.1.RID_SVXPAGE_PARA_ASIAN.PageItem.Text
-#, fuzzy
 msgid  "Asian Typography"
 msgstr "ಏಷಿಯಾದ ಮುದ್ರಣಕಲೆ"
 
 #: source/controller/dialogs/dlg_ShapeParagraph.src#DLG_SHAPE_PARAGRAPH.1.RID_SVXPAGE_TABULATOR.PageItem.Text
-#, fuzzy
 msgid  "Tab"
 msgstr "ಹಾಳೆ"
 
 #: source/controller/dialogs/Strings.src#STR_DLG_CHART_WIZARD.String.Text
-#, fuzzy
 msgid  "Chart Wizard"
 msgstr "ನಕ್ಷಾ ಗಾರುಡಿ(ವಿಝಾರ್ಡ್)"
 
 #: source/controller/dialogs/Strings.src#STR_DLG_SMOOTH_LINE_PROPERTIES.String.Text
-#, fuzzy
 msgid  "Smooth Lines"
 msgstr "ನಯವಾದ ಗೆರೆಗಳು"
 
 #: source/controller/dialogs/Strings.src#STR_DLG_NUMBERFORMAT_FOR_PERCENTAGE_VALUE.String.Text
-#, fuzzy
 msgid  "Number Format for Percentage Value"
 msgstr "ಶೇಕಡ ಮೌಲ್ಯಕ್ಕಾಗಿನ ಅಂಕೆಯ ವಿನ್ಯಾಸ"
 
 #: source/controller/dialogs/Strings.src#STR_PAGE_CHARTTYPE.String.Text
-#, fuzzy
 msgid  "Chart Type"
 msgstr "ನಕ್ಷೆಯ ಬಗೆ"
 
 #: source/controller/dialogs/Strings.src#STR_PAGE_DATA_RANGE.String.Text
-#, fuzzy
 msgid  "Data Range"
 msgstr "ದತ್ತಾಂಶ ವ್ಯಾಪ್ತಿ"
 
 #: source/controller/dialogs/Strings.src#STR_PAGE_CHART_ELEMENTS.String.Text
-#, fuzzy
 msgid  "Chart Elements"
 msgstr "ಕೋಷ್ಟಕ ಘಟಕಗಳು"
 
 #: source/controller/dialogs/Strings.src#STR_PAGE_CHART_LOCATION.String.Text
-#, fuzzy
 msgid  "Chart Location"
 msgstr "ನಕ್ಷೆಯ ಸ್ಥಳ"
 
 #: source/controller/dialogs/Strings.src#STR_PAGE_LINE.String.Text
-#, fuzzy
 msgid  "Line"
 msgstr "ಸಾಲು"
 
 #: source/controller/dialogs/Strings.src#STR_PAGE_BORDER.String.Text
-#, fuzzy
 msgid  "Borders"
 msgstr "ಅಂಚುಗಳು"
 
 #: source/controller/dialogs/Strings.src#STR_PAGE_AREA.String.Text
-#, fuzzy
 msgid  "Area"
 msgstr "ಕ್ಷೇತ್ರ"
 
 #: source/controller/dialogs/Strings.src#STR_PAGE_TRANSPARENCY.String.Text
-#, fuzzy
 msgid  "Transparency"
 msgstr "ಪಾರದರ್ಶಕತೆ"
 
 #: source/controller/dialogs/Strings.src#STR_PAGE_FONT.String.Text
-#, fuzzy
 msgid  "Font"
 msgstr "ಅಕ್ಷರಶೈಲಿ"
 
 #: source/controller/dialogs/Strings.src#STR_PAGE_FONT_EFFECTS.String.Text
-#, fuzzy
 msgid  "Font Effects"
 msgstr "ಅಕ್ಷರಶೈಲಿ ಪರಿಣಾಮಗಳು"
 
 #: source/controller/dialogs/Strings.src#STR_PAGE_NUMBERS.String.Text
-#, fuzzy
 msgid  "Numbers"
 msgstr "ಸಂಖ್ಯೆಗಳು"
 
 #: source/controller/dialogs/Strings.src#STR_PAGE_POSITION.String.Text
-#, fuzzy
 msgid  "Position"
 msgstr "ಸ್ಥಾನ"
 
@@ -1027,91 +982,74 @@ msgid  "Down"
 msgstr ""
 
 #: source/controller/dialogs/Strings.src#STR_PAGE_LAYOUT.String.Text
-#, fuzzy
 msgid  "Layout"
 msgstr "ರೂಪವಿನ್ಯಾಸ"
 
 #: source/controller/dialogs/Strings.src#STR_PAGE_OPTIONS.String.Text
-#, fuzzy
 msgid  "Options"
 msgstr "ಆಯ್ಕೆಗಳು"
 
 #: source/controller/dialogs/Strings.src#STR_PAGE_SCALE.String.Text
-#, fuzzy
 msgid  "Scale"
 msgstr "ಅಳತೆಗೋಲು"
 
 #: source/controller/dialogs/Strings.src#STR_PAGE_POSITIONING.String.Text
-#, fuzzy
 msgid  "Positioning"
 msgstr "ಇರಿಸುವಿಕೆ"
 
 #: source/controller/dialogs/Strings.src#STR_PAGE_TRENDLINE_TYPE.String.Text
-#, fuzzy
 msgid  "Type"
 msgstr "ಬಗೆ"
 
 #: source/controller/dialogs/Strings.src#STR_PAGE_YERROR_BARS.String.Text
-#, fuzzy
 msgid  "Y Error Bars"
 msgstr "Y-ದೋಷ ಪಟ್ಟಿಗಳು"
 
 #: source/controller/dialogs/Strings.src#STR_PAGE_ALIGNMENT.String.Text
-#, fuzzy
 msgid  "Alignment"
 msgstr "ಹೊಂದಿಕೆ"
 
 #: source/controller/dialogs/Strings.src#STR_PAGE_PERSPECTIVE.String.Text
-#, fuzzy
 msgid  "Perspective"
 msgstr "ಯಥಾದೃಷ್ಟಿ"
 
 #: source/controller/dialogs/Strings.src#STR_PAGE_APPEARANCE.String.Text
-#, fuzzy
 msgid  "Appearance"
 msgstr "ಗೋಚರಿಕೆ"
 
 #: source/controller/dialogs/Strings.src#STR_PAGE_ILLUMINATION.String.Text
-#, fuzzy
 msgid  "Illumination"
 msgstr "ಪ್ರಕಾಶಗೊಳಿಸುವಿಕೆ"
 
 #: source/controller/dialogs/Strings.src#STR_PAGE_ASIAN.String.Text
-#, fuzzy
 msgid  "Asian Typography"
 msgstr "ಏಷಿಯಾದ ಮುದ್ರಣಕಲೆ"
 
 #: source/controller/dialogs/Strings.src#STR_OBJECT_AVERAGE_LINE_WITH_PARAMETERS.String.Text
 msgid  "Mean value line with value %AVERAGE_VALUE and standard deviation %STD_DEVIATION"
-msgstr ""
+msgstr "ಮೌಲ್ಯ %AVERAGE_VALUE ಅನ್ನು ಹಾಗು ಮಾನಕ ವಿಪಥ (ಸ್ಟಾಂಡರ್ಡ್ ಡೀವಿಯೇಶನ್) %STD_DEVIATION ಅನ್ನು ಹೊಂದಿರುವ ಸರಾಸರಿ ಮೌಲ್ಯ"
 
 #: source/controller/dialogs/Strings.src#STR_OBJECT_AXIS.String.Text
-#, fuzzy
 msgid  "Axis"
 msgstr "ಅಕ್ಷಾಂಶ"
 
 #: source/controller/dialogs/Strings.src#STR_OBJECT_AXIS_X.String.Text
-#, fuzzy
 msgid  "X Axis"
 msgstr "X ಅಕ್ಷ"
 
 #: source/controller/dialogs/Strings.src#STR_OBJECT_AXIS_Y.String.Text
-#, fuzzy
 msgid  "Y Axis"
 msgstr "Y ಅಕ್ಷ"
 
 #: source/controller/dialogs/Strings.src#STR_OBJECT_AXIS_Z.String.Text
-#, fuzzy
 msgid  "Z Axis"
 msgstr "Z ಅಕ್ಷ"
 
 #: source/controller/dialogs/Strings.src#STR_OBJECT_SECONDARY_X_AXIS.String.Text
-#, fuzzy
 msgid  "Secondary X Axis"
 msgstr "ಅಪ್ರಧಾನ X ಅಕ್ಷ"
 
 #: source/controller/dialogs/Strings.src#STR_OBJECT_SECONDARY_Y_AXIS.String.Text
-#, fuzzy
 msgid  "Secondary Y Axis"
 msgstr "ಅಪ್ರಧಾನ Y ಅಕ್ಷ"
 
@@ -1341,12 +1279,14 @@ msgid  "Values: %POINTVALUES"
 msgstr "ಮೌಲ್ಯಗಳು: %POINTVALUES"
 
 #: source/controller/dialogs/Strings.src#STR_TIP_DATAPOINT.String.Text
+#, fuzzy
 msgid  "Data Point %POINTNUMBER, data series %SERIESNUMBER, values: %POINTVALUES"
-msgstr ""
+msgstr "ದತ್ತಾಂಶ ಬಿಂದು %POINTNUMBER, ದತ್ತಾಂಶ ಸರಣಿ %SERIESNUMBER, ಮೌಲ್ಯಗಳು: %POINTVALUES"
 
 #: source/controller/dialogs/Strings.src#STR_STATUS_DATAPOINT_MARKED.String.Text
+#, fuzzy
 msgid  "Data point %POINTNUMBER in data series %SERIESNUMBER selected, values: %POINTVALUES"
-msgstr ""
+msgstr "ದತ್ತಾಂಶ ಶ್ರೇಣಿ %SERIESNUMBER ಯಲ್ಲಿನ ದತ್ತಾಂಶ ಬಿಂದು %POINTNUMBER  ಆರಿಸಲ್ಪಟ್ಟಿದೆ, ಮೌಲ್ಯಗಳು: %POINTVALUES"
 
 #: source/controller/dialogs/Strings.src#STR_STATUS_OBJECT_MARKED.String.Text
 #, fuzzy
@@ -1538,8 +1478,9 @@ msgid  "Select Range for Negative Error Bars"
 msgstr "ಋಣಾತ್ಮಕ ದೋಷ ಪಟ್ಟಿಗಳಿಗಾಗಿ ವ್ಯಾಪ್ತಿಯನ್ನು ಆಯ್ಕೆ ಮಾಡಿ"
 
 #: source/controller/dialogs/Strings.src#STR_DATA_EDITOR_INCORRECT_INPUT.String.Text
+#, fuzzy
 msgid  "Your last input is incorrect.\nIgnore this change and close the dialog?"
-msgstr ""
+msgstr "ನೀವು ಒದಗಿಸಿದ ಆದಾನವು (ಇನ್‌ಪುಟ್) ತಪ್ಪಾಗಿದೆ.\nಈ ಬದಲಾವಣೆಯನ್ನು ಆಲಕ್ಷಿಸಿ ಮುಂದುವರೆಯ ಬೇಕೆ?"
 
 #: source/controller/dialogs/Strings.src#STR_TEXT_DIRECTION_LTR.String.Text
 #, fuzzy

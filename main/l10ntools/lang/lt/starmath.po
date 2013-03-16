@@ -289,11 +289,11 @@ msgstr "Paraštės"
 
 #: source/smres.src#RID_DISTANCEDIALOG.10.2.String.Text
 msgid  "~Left"
-msgstr "~Kairinė"
+msgstr "~Kairėje"
 
 #: source/smres.src#RID_DISTANCEDIALOG.10.3.String.Text
 msgid  "~Right"
-msgstr "~Dešininė"
+msgstr "~Dešinėje"
 
 #: source/smres.src#RID_DISTANCEDIALOG.10.4.String.Text
 msgid  "~Top"
@@ -333,12 +333,10 @@ msgid  "Formula Options:Settings"
 msgstr "Formulės parinktys:nuostatos"
 
 #: source/smres.src#RID_PRINTOPTIONPAGE.FL_PRINTOPTIONS.FixedLine.Text
-#, fuzzy
 msgid  "Print options"
 msgstr "Spausdinimo parinktys"
 
 #: source/smres.src#RID_PRINTOPTIONPAGE.CB_TITLEROW.CheckBox.Text
-#, fuzzy
 msgid  "~Title row"
 msgstr "Pa~vadinimas"
 
@@ -472,12 +470,14 @@ msgid  "~Delete"
 msgstr "~Šalinti"
 
 #: source/smres.src#RID_NOMATHTYPEFACEWARNING.WarningBox.Message
+#, fuzzy
 msgid  "The 'StarMath' font has not been installed.\nWithout this font %PRODUCTNAME Math cannot function correctly.\nPlease install this font and restart %PRODUCTNAME Math."
-msgstr ""
+msgstr "Neįdiegtas „StarMath“ šriftas.\nBe šio šrifto „%PRODUCTNAME“ matematinė rengyklė veiks nekorektiškai.\nĮdiekite šį šriftą ir paleiskite „%PRODUCTNAME“ matematinę rengyklę iš naujo."
 
 #: source/smres.src#RID_DEFAULTSAVEQUERY.QueryBox.Message
+#, fuzzy
 msgid  "Should the changes be saved as defaults?\n\nThese changes will apply for all new formulas."
-msgstr ""
+msgstr "Ar pakeitimus įrašyti numatytaisiais?\n\nŠie pakeitimai bus taikomi visiems naujiems matematiniams dokumentams."
 
 #: source/smres.src#RID_FONTREGULAR.String.Text
 #, fuzzy
@@ -613,6 +613,11 @@ msgstr "Šriftas be užraitymų"
 #, fuzzy
 msgid  "Fixed"
 msgstr "Lygiaplotis šriftas"
+
+#: source/smres.src#CMDBOXWINDOW_TEXT.#define.Text
+#, fuzzy
+msgid  "Commands"
+msgstr "Komandos"
 
 #: source/smres.src#RID_DOCUMENTSTR.String.Text
 #, fuzzy
@@ -781,68 +786,51 @@ msgstr "~Pritaikyti prie puslapio"
 msgid  "~Scaling"
 msgstr "~Mastelis:"
 
-#: source/smres.src#CMDBOXWINDOW_TEXT.#define.Text
-#, fuzzy
-msgid  "Commands"
-msgstr "Komandos"
-
 #: source/commands.src#RID_COMMANDMENU.RID_UNBINOPS_MENU.MenuItem.Text
-#, fuzzy
 msgid  "~Unary/Binary Operators"
 msgstr "~Matematinių operacijų ženklai"
 
 #: source/commands.src#RID_COMMANDMENU.RID_RELATIONS_MENU.MenuItem.Text
-#, fuzzy
 msgid  "~Relations"
 msgstr "~Palyginimo operacijų ženklai"
 
 #: source/commands.src#RID_COMMANDMENU.RID_SETOPERATIONS_MENU.MenuItem.Text
-#, fuzzy
 msgid  "~Set Operations"
 msgstr "~Operacijų su aibėmis ženklai"
 
 #: source/commands.src#RID_COMMANDMENU.RID_FUNCTIONS_MENU.MenuItem.Text
-#, fuzzy
 msgid  "~Functions"
 msgstr "~Funkcijos"
 
 #: source/commands.src#RID_COMMANDMENU.RID_FUNCTIONS_MENU.RID_FUNCTIONSOTHER1_MENU.MenuItem.Text
-#, fuzzy
 msgid  "More"
 msgstr "Daugiau"
 
 #: source/commands.src#RID_COMMANDMENU.RID_OPERATORS_MENU.MenuItem.Text
-#, fuzzy
 msgid  "O~perators"
 msgstr "~Veiksmų su sekomis ir integravimo ženklai"
 
 #: source/commands.src#RID_COMMANDMENU.RID_ATTRIBUTES_MENU.MenuItem.Text
-#, fuzzy
 msgid  "~Attributes"
 msgstr "~Požymiai"
 
 #: source/commands.src#RID_COMMANDMENU.RID_BRACKETS_MENU.MenuItem.Text
-#, fuzzy
 msgid  "~Brackets"
 msgstr "S~kliaustai"
 
 #: source/commands.src#RID_COMMANDMENU.RID_FORMAT_MENU.MenuItem.Text
-#, fuzzy
 msgid  "For~mats"
 msgstr "~Simbolio padėtys"
 
 #: source/commands.src#RID_COMMANDMENU.RID_FORMAT_MENU.RID_NEWLINE.MenuItem.Text
-#, fuzzy
 msgid  "New Line"
 msgstr "Nauja eilutė"
 
 #: source/commands.src#RID_COMMANDMENU.RID_FORMAT_MENU.RID_SBLANK.MenuItem.Text
-#, fuzzy
 msgid  "Small Gap"
 msgstr "Trumpas tarpas"
 
 #: source/commands.src#RID_COMMANDMENU.RID_FORMAT_MENU.RID_BLANK.MenuItem.Text
-#, fuzzy
 msgid  "Gap"
 msgstr "Tarpas"
 
@@ -851,7 +839,6 @@ msgid  "nospace {...}"
 msgstr ""
 
 #: source/commands.src#RID_COMMANDMENU.RID_MISC_MENU.MenuItem.Text
-#, fuzzy
 msgid  "~Others"
 msgstr "~Simboliai"
 

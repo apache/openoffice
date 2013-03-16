@@ -61,7 +61,7 @@ msgstr "リストにありません (別の手順で場所を選びます)"
 
 #: source/mac/macinstall.ulf#ListPromptText
 msgid  "Choose [PRODUCTNAME] [PRODUCTVERSION] installation for which you want to install the [FULLPRODUCTNAME]"
-msgstr ""
+msgstr "インストールしたい [FULLPRODUCTNAME] 用の [PRODUCTNAME] [PRODUCTVERSION] のインストールを選択してください"
 
 #: source/mac/macinstall.ulf#ChooseManualText
 msgid  "Point the dialog to your [PRODUCTNAME] [PRODUCTVERSION] installation."
@@ -81,7 +81,7 @@ msgstr "これは、[PRODUCTNAME] [PRODUCTVERSION] の有効なインストー�
 
 #: source/mac/macinstall.ulf#AppInvalidText2
 msgid  "Run the installer again and choose a valid [PRODUCTNAME] [PRODUCTVERSION] installation"
-msgstr ""
+msgstr "もう一度インストーラーを実行し、有効な [PRODUCTNAME] [PRODUCTVERSION] インストールを選択してください"
 
 #: source/mac/macinstall.ulf#StartInstallText1
 msgid  "Click Install to start the installation"
@@ -93,7 +93,7 @@ msgstr "インストールには時間がかかるかもしれません..."
 
 #: source/mac/macinstall.ulf#IdentifyQText
 msgid  "Installation failed, most likely your account does not have the necessary privileges."
-msgstr ""
+msgstr "インストールが失敗しました。おそらく必要な権限が不足しています。"
 
 #: source/mac/macinstall.ulf#IdentifyQText2
 msgid  "Do you want to identify as administrator and try again?"
@@ -117,7 +117,7 @@ msgstr "[PRODUCTNAME] 言語パックのインストールは完了しました�
 
 #: source/mac/macinstall.ulf#InstallCompleteText2
 msgid  "Call '[PRODUCTNAME]-Preferences-Language Settings-Languages' to change the user interface language."
-msgstr ""
+msgstr "'[PRODUCTNAME] - ユーザー設定 - 言語設定 - 言語' を呼び出して表示言語を変更してください。"
 
 #: source/mac/macinstall.ulf#InstallCompleteTextPatch
 msgid  "Installation of [FULLPRODUCTNAME] completed"

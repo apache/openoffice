@@ -137,7 +137,7 @@ msgstr "Хадгалах"
 
 #: source/basicide/basidesh.src#RID_STR_SOURCETOBIG.String.Text
 msgid  "The source text is too large and can be neither compiled nor saved.\nDelete some of the comments or transfer some methods into another module."
-msgstr ""
+msgstr "Эх бичвэр хэтэрхий том тул хөрвүүлэгдэх ч хадгалагдах ч боломжгүй.\nЗарим тайлбар устгах эсвэл зарим методуудыг өөр модуль руу зөөнө үү."
 
 #: source/basicide/basidesh.src#RID_STR_ERROROPENSTORAGE.String.Text
 msgid  "Error opening file"
@@ -201,7 +201,7 @@ msgstr "'XX' гэх файл хэдийнэ үүсжээ"
 
 #: source/basicide/basidesh.src#RID_STR_CANNOTRUNMACRO.String.Text
 msgid  "For security reasons, you cannot run this macro.\n\nFor more information, check the security settings."
-msgstr ""
+msgstr "Хамгаалалтын шалтгаанаар та энэ макрог ажиллуулах боломжгүй.\n\nНэмэлт мэдээллийг авахын тулд хамгаалалтын тохиргоонуудыг шалга."
 
 #: source/basicide/basidesh.src#RID_STR_COMPILEERROR.String.Text
 msgid  "Compile Error: "
@@ -373,7 +373,7 @@ msgstr "Нэр өгөх ёстой."
 
 #: source/basicide/basidesh.src#RID_STR_WILLSTOPPRG.String.Text
 msgid  "You will have to restart the program after this edit.\nContinue?"
-msgstr ""
+msgstr "Энэ өөрчлөлтийн дараа та програмыг дахин эхлүүлэх ёстой болно.\nҮргэлжлүүлэх үү?"
 
 #: source/basicide/basidesh.src#RID_STR_SEARCHALLMODULES.String.Text
 msgid  "Do you want to replace the text in all active modules?"
@@ -757,7 +757,7 @@ msgstr "Өгөгдмөл"
 
 #: source/dlged/managelang.src#RID_DLG_MANAGE_LANGUAGE.FT_INFO.FixedText.Text
 msgid  "The default language is used if no localization for a user interface locale is present. Furthermore all strings from the default language are copied to resources of newly added languages."
-msgstr ""
+msgstr "Хэрвээ хэрэглэж буй хэлний локалын хувьд хэрэглэгчийн гадаргуун орчуулга нь хийгдээгүй байвал өгөгдмөл хэл хэрэглэгдэнэ. Мөн өгөгдмөл хэлний тэмдэгт мөр, үгс шинээр нэмж буй хэлний нөөц рүү хуулагдана."
 
 #: source/dlged/managelang.src#RID_DLG_MANAGE_LANGUAGE.PB_CLOSE.OKButton.Text
 msgid  "~Close"
@@ -781,7 +781,7 @@ msgstr "Delete Language Resources"
 
 #: source/dlged/managelang.src#RID_QRYBOX_LANGUAGE.QueryBox.Message
 msgid  "You are about to delete the resources for the selected language(s). All user interface strings for this language(s) will be deleted.\n\nDo you want to delete the resources of the selected language(s)?"
-msgstr ""
+msgstr "Та сонгосон хэлний нөөцүүдийг устгах гэж байна. Бүх хэрэглэгчийн гадаргуун тэмдэгт мөрүүд энэ хэлний хувьд устах болно.\n\nТа эдгээр нөөцүүдийг үнэхээр устгахыг хүсэж байна уу?"
 
 #: source/dlged/managelang.src#RID_DLG_SETDEF_LANGUAGE.ModalDialog.Text
 msgid  "Set Default User Interface Language"
@@ -793,7 +793,7 @@ msgstr "Өгөгдмөл хэл"
 
 #: source/dlged/managelang.src#RID_DLG_SETDEF_LANGUAGE.FT_DEF_INFO.FixedText.Text
 msgid  "Select a language to define the default user interface language. All currently present strings will be assigned to the resources created for the selected language."
-msgstr ""
+msgstr "Хэрэглэгчийн гадаргуун өгөгдмөл хэлээр авах хэлийг сонгоно уу. Одоогийн бүх тэмдэгт мөрүүд үүсгэхээр сонгосон хэлний нөөцөд олгогдоно."
 
 #: source/dlged/managelang.src#RID_DLG_SETDEF_LANGUAGE.STR_ADDLANG_TITLE.String.Text
 msgid  "Add User Interface Languages"
@@ -805,7 +805,7 @@ msgstr "Боломжит хэлнүүд"
 
 #: source/dlged/managelang.src#RID_DLG_SETDEF_LANGUAGE.STR_ADDLANG_INFO.String.Text
 msgid  "Select languages to be added. Resources for these languages will be created in the library. Strings of the current default user interface language will be copied to these new resources by default."
-msgstr ""
+msgstr "Нэмэх хэлээ сонгоно уу. Сонгосон хэлний нөөцүүд санд үүсгэгдэнэ. Одоогоор хэрэглэж буй өгөгдмөл хэрэглэгчийн гадаргуун хэлний тэмдэгт мөрүүд шинэ нөөц рүү хуулагдана."
 
 #: source/dlged/dlgresid.src#RID_STR_BRWTITLE_PROPERTIES.String.Text
 msgid  "Properties: "

@@ -97,7 +97,7 @@ msgstr "دستاویز پہلےسےکھلی ہے"
 
 #: source/appl/app.src#MSG_ERR_NO_WEBBROWSER_FOUND.ErrorBox.Message
 msgid  "%PRODUCTNAME could not find a web browser on your system. Please check your Desktop Preferences or install a web browser (for example, Mozilla) in the default  location requested during the browser installation."
-msgstr ""
+msgstr "%PRODUCTNAMEآپ کے سسٹم پر ویب براؤزر نہیں مل سکا ۔براۓمہربانی ڈیسک ٹاپ پریفرینسس جانچئےیا ویب براؤزر انسٹال کریں(مثال کے طورپر ،موزیلا) غیر موجود لوکیشن میں جو براؤزر انسٹالیشن کے دوران درخواست کی گئی تھی۔"
 
 #: source/appl/app.src#GID_INTERN.String.Text
 msgid  "Internal"
@@ -205,7 +205,7 @@ msgstr "کنٹرولز"
 
 #: source/appl/app.src#MSG_CANT_QUIT.InfoBox.Message
 msgid  "The application cannot be terminated at the moment.\nPlease wait until all print jobs and/or\nOLE actions have finished and close all dialogs."
-msgstr ""
+msgstr "یہ ایپلی کیشن اسی وقت ختم نہیں کی جاسکتی۔\nبرا‎ۓمہربانی تب تک انتظار کیجیئے جب تک تمام پرنٹ جابس اور OLE\nایکشنس ختم نہیں ہو جاتے اورتمام ڈائیلاگس بدن نہیں ہو جاتے۔"
 
 #: source/appl/app.src#STR_ISMODIFIED.String.Text
 msgid  "Do you want to save the changes to %1?"
@@ -237,7 +237,7 @@ msgstr "فنکشن پٹی"
 
 #: source/appl/app.src#RID_SPECIALCONFIG_ERROR.String.Text
 msgid  "An error has occurred in the special configuration.\nPlease contact your administrator."
-msgstr ""
+msgstr "خاص ہیئت میں خامی آگئی ہے ۔\nبرا‎ۓمہربانی اپنے منتظم سے رابطہ کریں۔"
 
 #: source/appl/app.src#STR_QUICKSTART_EXIT.String.Text
 msgid  "Exit Quickstarter"
@@ -288,8 +288,8 @@ msgid  "DDE link to % for % area % are not available."
 msgstr "DDE میں لنک % کےلئے %رقبہ% دستیاب نہیں ہیں۔"
 
 #: source/appl/app.src#RID_SECURITY_WARNING_HYPERLINK.WarningBox.Message
-msgid  "This hyperlink is going to open "%s". Do you want to proceed?"
-msgstr ""
+msgid  "This hyperlink is going to open \"%s\". Do you want to proceed?"
+msgstr "یہ ہائپر لنک  \"%s\"کھولنے جارہا ہے۔آپ آگے بڑھنا چاہتے ہیں۔"
 
 #: source/appl/app.src#RID_SECURITY_WARNING_NO_HYPERLINKS.WarningBox.Message
 msgid  "For security reasons, the hyperlink cannot be executed.\nThe stated address will not be opened."
@@ -305,11 +305,11 @@ msgstr ""
 
 #: source/appl/app.src#RID_XMLSEC_QUERY_SAVEBEFORESIGN.QueryBox.Message
 msgid  "The document has to be saved before it can be signed.\nDo you want to save the document?"
-msgstr ""
+msgstr "دستاویز دستخط ہونے سے پہلے محفوظ ہونا چاہئیے۔\nآپ دستاویزمحفوظ کرنا  چاہتے ہیں؟"
 
 #: source/appl/app.src#RID_XMLSEC_INFO_WRONGDOCFORMAT.InfoBox.Message
 msgid  "This document must be saved in OpenDocument file format before it can be digitally signed."
-msgstr ""
+msgstr "یہ دستاویزڈیجیٹلی دستخط ہونے سے پہلے اوپن دستاویز فائل میں محفوظ ہونا چاہيئے۔"
 
 #: source/appl/app.src#RID_XMLSEC_DOCUMENTSIGNED.String.Text
 msgid  " (Signed)"
@@ -509,11 +509,11 @@ msgstr "~ڈسپلے کرو %PRODUCTNAME %MODULENAMEاسٹارٹ اپ میں ہی
 
 #: source/bastyp/fltfnc.src#STR_FILTER_NOT_INSTALLED.String.Text
 msgid  "The selected filter $(FILTER) has not been installed.\nWould you like to do this now?"
-msgstr ""
+msgstr "منتخبہ فلٹر$(FILTER) انسٹال نہیں کیا گیا ہے ۔\nکیا آپ ابھی کرنا پسند کرے گے؟ "
 
 #: source/bastyp/fltfnc.src#STR_FILTER_CONSULT_SERVICE.String.Text
 msgid  "The selected filter $(FILTER) is not included in your edition.\nYou can find information about orders on our homepage."
-msgstr ""
+msgstr "منتخبہ فلٹر ‎$(FILTER)آپ کے ایڈیشن میں شامل نہیں ہے۔\nآپ آرڈرز کے متعلق معلومات ہمارے ہوم پیج پر تلاش کر سکتے ہیں۔"
 
 #: source/dialog/printopt.src#TP_COMMONPRINTOPTIONS.GB_REDUCE.FixedLine.Text
 msgid  "Reduce print data"
@@ -572,6 +572,26 @@ msgid  "Reso~lution"
 msgstr "قرار داد"
 
 #: source/dialog/printopt.src#TP_COMMONPRINTOPTIONS.LB_REDUCEBITMAPS_RESOLUTION.0.StringList.item
+msgid  "72 DPI"
+msgstr "72 DPI"
+
+#: source/dialog/printopt.src#TP_COMMONPRINTOPTIONS.LB_REDUCEBITMAPS_RESOLUTION.0.StringList.item
+msgid  "96 DPI"
+msgstr "96 DPI"
+
+#: source/dialog/printopt.src#TP_COMMONPRINTOPTIONS.LB_REDUCEBITMAPS_RESOLUTION.0.StringList.item
+msgid  "150 DPI (Fax)"
+msgstr "150 DPI (فیکس)"
+
+#: source/dialog/printopt.src#TP_COMMONPRINTOPTIONS.LB_REDUCEBITMAPS_RESOLUTION.0.StringList.item
+msgid  "200 DPI (default)"
+msgstr "200 DPI (غیر موجود)"
+
+#: source/dialog/printopt.src#TP_COMMONPRINTOPTIONS.LB_REDUCEBITMAPS_RESOLUTION.0.StringList.item
+msgid  "300 DPI"
+msgstr "300 DPI"
+
+#: source/dialog/printopt.src#TP_COMMONPRINTOPTIONS.LB_REDUCEBITMAPS_RESOLUTION.0.StringList.item
 msgid  "600 DPI"
 msgstr "600 DPI"
 
@@ -605,7 +625,7 @@ msgstr "آگاہ کرنا"
 
 #: source/dialog/printopt.src#RID_WARN_PRINTTRANSPARENCY.FT_PRINTTRANSWARN.FixedText.Text
 msgid  "Your document contains transparent objects.\nThis may lead to longer printing time on certain\nprinters. Should the aspect of transparency\nbe reduced?"
-msgstr ""
+msgstr "آپ کے دستاویز ٹرانسپیرنٹ آبجیکٹس سے وابستہ ہوگے۔\nیہ پرنٹ ہونے کے لئے زیادہ وقت لے سکتا ہے\n مخصوص پرنٹر پر۔ کیا ٹرانسپرنسی کارخ\nگھٹانا چاہیے؟"
 
 #: source/dialog/printopt.src#RID_WARN_PRINTTRANSPARENCY.BTN_PRINTTRANS_YES.OKButton.Text
 msgid  "~Yes"
@@ -622,26 +642,6 @@ msgstr "منسوخ کرو"
 #: source/dialog/printopt.src#RID_WARN_PRINTTRANSPARENCY.CBX_NOPRINTTRANSWARN.CheckBox.Text
 msgid  "~Do not show warning again"
 msgstr "آ  گہی دوبارہ نہ دکھاؤ۔"
-
-#: source/dialog/printopt.src#TP_COMMONPRINTOPTIONS.LB_REDUCEBITMAPS_RESOLUTION.0.StringList.item
-msgid  "72 DPI"
-msgstr "72 DPI"
-
-#: source/dialog/printopt.src#TP_COMMONPRINTOPTIONS.LB_REDUCEBITMAPS_RESOLUTION.0.StringList.item
-msgid  "96 DPI"
-msgstr "96 DPI"
-
-#: source/dialog/printopt.src#TP_COMMONPRINTOPTIONS.LB_REDUCEBITMAPS_RESOLUTION.0.StringList.item
-msgid  "150 DPI (Fax)"
-msgstr "150 DPI (فیکس)"
-
-#: source/dialog/printopt.src#TP_COMMONPRINTOPTIONS.LB_REDUCEBITMAPS_RESOLUTION.0.StringList.item
-msgid  "200 DPI (default)"
-msgstr "200 DPI (غیر موجود)"
-
-#: source/dialog/printopt.src#TP_COMMONPRINTOPTIONS.LB_REDUCEBITMAPS_RESOLUTION.0.StringList.item
-msgid  "300 DPI"
-msgstr "300 DPI"
 
 #: source/dialog/templdlg.src#RID_STYLECATALOG.ModalDialog.Text
 msgid  "Style Catalog"
@@ -1116,8 +1116,8 @@ msgid  "to frame"
 msgstr "فریم میں"
 
 #: source/dialog/dinfdlg.src#TP_DOCINFORELOAD.STR_FORWARD_ERRMSSG.String.Text
-msgid  "If you select the option "%PLACEHOLDER%", you must enter a URL."
-msgstr ""
+msgid  "If you select the option \"%PLACEHOLDER%\", you must enter a URL."
+msgstr "\"اگر آپ آپشن\"%PLACEHOLDER%\" منتحب کرتے ہیں، توآپ کو URLداخل کرنا پڑے گا۔"
 
 #: source/dialog/dinfdlg.src#TP_CUSTOMPROPERTIES.FT_PROPERTIES.FixedText.Text
 msgid  "~Properties"
@@ -1397,7 +1397,7 @@ msgstr "مئیکروریکارڈ کریں"
 
 #: source/dialog/recfloat.src#STR_MACRO_LOSS.String.Text
 msgid  "Do you really want to cancel the recording? Any steps recorded up to this point will be lost."
-msgstr ""
+msgstr "کیا آپ واقعی ریکارڈینگ خارج کرنا چاہتے ہیں؟اس مرحلے پر کیا گیا کوئی بھی ریکارڈ گم ہو جاۓ گا۔"
 
 #: source/dialog/recfloat.src#STR_CANCEL_RECORDING.String.Text
 msgid  "Cancel Recording"
@@ -1405,7 +1405,7 @@ msgstr "ریکارڈینگ  خارج کرو"
 
 #: source/dialog/mailwindow.src#RID_ERRBOX_MAIL_CONFIG.ErrorBox.MESSAGE
 msgid  "%PRODUCTNAME was unable to find a working e-mail configuration. Please save this document locally instead and attach it from within your e-mail client."
-msgstr ""
+msgstr "%PRODUCTNAMEورکینگ ای - میل ہیئت تلاش نہیں کر پایا۔ براہ کرم اس دستاویز کو مقامی طور پر محفوظ کریں اور آپ کے خود کے ای - میل کلائنٹ سے جوڑیں "
 
 #: source/dialog/dialog.src#STR_RESET.String.Text
 msgid  "~Reset"
@@ -1429,11 +1429,11 @@ msgstr "یہ اسٹائل موجود نہیں ہے۔"
 
 #: source/dialog/dialog.src#MSG_TABPAGE_INVALIDPARENT.InfoBox.Message
 msgid  "This Style cannot be used as a base Style,\nbecause it would result in a recursive reference."
-msgstr ""
+msgstr "یہ اسٹائل بیس اسٹائل کے طور پر استعمال نہیں ہو سکتی،\nکیونکہ یہ ری کرسیو ریفرینس کے طور پر ظاہر ہوگا۔"
 
 #: source/dialog/dialog.src#MSG_POOL_STYLE_NAME.InfoBox.Message
 msgid  "Name already exists as a default Style.\nPlease choose another name."
-msgstr ""
+msgstr "ڈی فالٹ جیسے نام موجود نہیں ہے۔\nبراہ کرم دوسرا نام منتخب کریں۔"
 
 #: source/dialog/dialog.src#STR_DELETE_STYLE.String.Text
 msgid  "Do you really want to delete Style $1?"
@@ -1581,27 +1581,27 @@ msgstr "منتظم۔۔۔"
 
 #: source/doc/doc.src#MSG_CONFIRM_FILTER.QueryBox.Message
 msgid  "Saving in external formats may have caused\n information loss. Do you still want to close?"
-msgstr ""
+msgstr "بیرونی فارمیٹس میں \nمحفوظ کرنے کی وجہ سے معلومات گم ہوگئی۔ آپ پھر بھی بند کرنا چاہتے ہیں؟"
 
 #: source/doc/doc.src#MSG_CONFIRM_OVERWRITE_TEMPLATE.QueryBox.Message
 msgid  "Name already in use.\nDo you want to overwrite document template?"
-msgstr ""
+msgstr "نام پہلے ہی استعمال میں ہے۔\nکیا آپ دستاویز ٹیمپلیٹ اوور رائٹ کرنا چاہتے ہیں؟"
 
 #: source/doc/doc.src#STR_DELETE_REGION.String.Text
-msgid  "Are you sure you want to delete the region "$1"?"
-msgstr ""
+msgid  "Are you sure you want to delete the region \"$1\"?"
+msgstr "کیا آپ واقعی\"$1\"ریجن خارج کرنا چاہتے ہیں؟ "
 
 #: source/doc/doc.src#STR_DELETE_TEMPLATE.String.Text
-msgid  "Are you sure you want to delete the entry "$1"?"
-msgstr ""
+msgid  "Are you sure you want to delete the entry \"$1\"?"
+msgstr "کیا آپ واقعی\"$1\"داخلہ خارج کرنا چاہتے ہیں؟"
 
 #: source/doc/doc.src#MSG_REGION_NOTEMPTY.QueryBox.Message
 msgid  "The category is not empty.\nDelete anyway?"
-msgstr ""
+msgstr "کیٹیگری خالی نہیں ہے۔\nپھر بھی خارج کرنا ہے؟"
 
 #: source/doc/doc.src#STR_QUERY_SAVE_DOCUMENT.String.Text
-msgid  "The document "$(DOC)" has been modified.\nDo you want to save your changes?"
-msgstr ""
+msgid  "The document \"$(DOC)\" has been modified.\nDo you want to save your changes?"
+msgstr "دستاویز  \"$(DOC)\" درست کی گئی ہے۔ \nآپ اپنی تبدیلیاں محفوظ کرنا چاہتےہیں؟ "
 
 #: source/doc/doc.src#STR_STYLES.String.Text
 msgid  "Styles"
@@ -1648,16 +1648,16 @@ msgid  "Templates"
 msgstr "ٹیمپلیٹس"
 
 #: source/doc/doc.src#STR_ERROR_COPY_TEMPLATE.String.Text
-msgid  "Error copying template "$1". \nA template with this name may already exist."
-msgstr ""
+msgid  "Error copying template \"$1\". \nA template with this name may already exist."
+msgstr "\"$1\"ٹیمپلٹ نقل کرنے میں خامی۔\nاس نام کی ٹیمپلیٹ پہلے ہی سے موجود ہوگي۔"
 
 #: source/doc/doc.src#STR_ERROR_DELETE_TEMPLATE.String.Text
-msgid  "The template "$1" can not be deleted."
-msgstr ""
+msgid  "The template \"$1\" can not be deleted."
+msgstr "ٹیمپلیٹ \"$1\"خارج نہیں ہو سکا۔"
 
 #: source/doc/doc.src#STR_ERROR_MOVE_TEMPLATE.String.Text
-msgid  "Error moving template "$1"."
-msgstr ""
+msgid  "Error moving template \"$1\"."
+msgstr "خامی متحرک ٹیمپلیٹ \"$1\""
 
 #: source/doc/doc.src#MSG_ERROR_RESCAN.ErrorBox.Message
 msgid  "The update could not be saved."
@@ -1681,11 +1681,11 @@ msgstr "براہ کرم نام مختص کرو"
 
 #: source/doc/doc.src#MSG_ERROR_UNIQ_NAME.ErrorBox.Message
 msgid  "Please specify a unique name.\nEntries must not be case specific."
-msgstr ""
+msgstr "براہ کرمنفرد نام مختص کریں۔\nداخلہ جات کیس مختص ہونا چاہیے۔"
 
 #: source/doc/doc.src#STR_QUERY_DEFAULT_TEMPLATE.String.Text
-msgid  "Should the template "$(TEXT)" become the default template?"
-msgstr ""
+msgid  "Should the template \"$(TEXT)\" become the default template?"
+msgstr "کیا ٹیمپلیٹس\"$(TEXT)\"  ڈی فالٹس ٹیمپلیٹ بننا چاہیے؟"
 
 #: source/doc/doc.src#MSG_QUERY_RESET_DEFAULT_TEMPLATE.QueryBox.Message
 msgid  "Do you want to reset the default template?"
@@ -1693,7 +1693,7 @@ msgstr "کیا آپ ڈی فالٹ ٹیمپلیٹ دوبارہ سیٹ کرنا چ
 
 #: source/doc/doc.src#MSG_TEMPLATE_DIR_NOT_EXIST.InfoBox.Message
 msgid  "Template directory\n$(DIR)\ndoes not exist."
-msgstr ""
+msgstr "ٹیمپلیٹ ڈائریکٹری\n$(DIR)\nموجود نہیں ہے۔."
 
 #: source/doc/doc.src#MSG_DOCINFO_CANTREAD.InfoBox.Message
 msgid  "Document info cannot be read."
@@ -1705,7 +1705,7 @@ msgstr "منتخبہ فائل میں غلط فارمیٹ ہے۔"
 
 #: source/doc/doc.src#STR_QUERY_MUSTOWNFORMAT.String.Text
 msgid  "Documents cannot be saved in $(FORMAT) format. Do you\nwant to save your changes using the $(OWNFORMAT) format?"
-msgstr ""
+msgstr "دستاویز $(FORMAT)  فارمیٹ میں محفوظ نہیں ہو سکی۔ کیا آپ\n اپنی تبدیلیاں $(OWNFORMAT) فارمیٹ کا استعمال کرکے محفوظ کرنا چاہتے ہیں؟"
 
 #: source/doc/doc.src#STR_SAVEDOC.String.Text
 msgid  "~Save"
@@ -1744,8 +1744,8 @@ msgid  "%PRODUCTNAME Basic libraries"
 msgstr "%PRODUCTNAME Basic کتب حانے"
 
 #: source/doc/doc.src#RID_STR_WARNSTYLEOVERWRITE.String.Text
-msgid  "Should the "$(ARG1)" Style be replaced?"
-msgstr ""
+msgid  "Should the \"$(ARG1)\" Style be replaced?"
+msgstr "  \"$(ARG1)\" اسٹائل متبادل ہونی چاہیے؟   "
 
 #: source/doc/doc.src#STR_DOC_LOADING.String.Text
 msgid  "Loading Document"
@@ -1769,7 +1769,7 @@ msgstr "منقطع"
 
 #: source/doc/doc.src#MSG_OPEN_READONLY.QueryBox.Message
 msgid  "Document cannot be opened for editing.\nDo you want to open it as read-only?"
-msgstr ""
+msgstr "دستاویز ادارت کے لئے کھل نہیں سکی۔\nآپ اسے صرف پڑھنے کے طور پر کھولنے چاہتے ہیں؟"
 
 #: source/doc/doc.src#STR_EDIT.String.Text
 msgid  "Edit"
@@ -1792,12 +1792,12 @@ msgid  "%PRODUCTNAME Frame Document"
 msgstr "\"%PRODUCTNAME  \"فریم دستاویز "
 
 #: source/doc/doc.src#STR_TEMPL_MOVED.String.Text
-msgid  "The template "$(TEMPLATE)" was not found at the original location. A template with the same name exists at "$(FOUND)". Should this template be used in the future when comparing?"
-msgstr ""
+msgid  "The template \"$(TEMPLATE)\" was not found at the original location. A template with the same name exists at \"$(FOUND)\". Should this template be used in the future when comparing?"
+msgstr "ٹیمپلیٹ  \"$(TEMPLATE)\" کا اصل مقام نہیں ملا۔\"$(FOUND)\".میں وہی نام کی ٹیمپلیٹ موجود ہے۔ یہ ٹیمپلیٹ مستقبل میں تقابل کے وقت استعمال ہونی چاہیے؟"
 
 #: source/doc/doc.src#STR_TEMPL_RESET.String.Text
-msgid  "The template "$(TEMPLATE)" has not been found. Should the template be looked for the next time the document is opened ?"
-msgstr ""
+msgid  "The template \"$(TEMPLATE)\" has not been found. Should the template be looked for the next time the document is opened ?"
+msgstr "ٹمیپلیٹ  \"$(TEMPLATE)\" نہیں ملی۔کیا ٹیمپلیٹ دوسری بار دستاویز کھلنے تک دیکھنا  چاہیے۔"
 
 #: source/doc/doc.src#STR_AUTOMATICVERSION.String.Text
 msgid  "Automatically saved version"
@@ -1865,7 +1865,7 @@ msgstr "مت چلاؤ"
 
 #: source/doc/doc.src#FT_CANCEL.String.Text
 msgid  "According to the security settings, the macros in this document should not be run. Do you want to run them anyway?"
-msgstr ""
+msgstr "حفاظتی سیٹینگس کے مطابق،اس دستاویز میں کے ماکروز چلنا نہیں چاہیے۔ پھر بھی آپ انھیں چلانا چاہتے ہیں؟"
 
 #: source/doc/doc.src#FT_OK.String.Text
 msgid  "Do you want to allow these macros to be run?"
@@ -1893,7 +1893,7 @@ msgstr "فائل فارمیٹ۔۔۔"
 
 #: source/doc/doc.src#STR_HIDDENINFO_CONTAINS.String.Text
 msgid  "This document contains:\n\n"
-msgstr ""
+msgstr "یہ دستاویز وابستہ ہے:\n\n"
 
 #: source/doc/doc.src#STR_HIDDENINFO_RECORDCHANGES.String.Text
 msgid  "Recorded changes"
@@ -1984,8 +1984,16 @@ msgid  "~Address Book..."
 msgstr "ایڈریس بک۔۔۔"
 
 #: source/doc/docvor.src#DLG_ORGANIZE.LB_LEFT_TYP.Default.StringList.item
+msgid  "Templates"
+msgstr "ٹیمپلیٹس"
+
+#: source/doc/docvor.src#DLG_ORGANIZE.LB_LEFT_TYP.Default.StringList.item
 msgid  "Documents"
 msgstr "دستاویزات"
+
+#: source/doc/docvor.src#DLG_ORGANIZE.LB_RIGHT_TYP.Default.StringList.item
+msgid  "Templates"
+msgstr "ٹیمپلیٹس"
 
 #: source/doc/docvor.src#DLG_ORGANIZE.LB_RIGHT_TYP.Default.StringList.item
 msgid  "Documents"
@@ -2034,14 +2042,6 @@ msgstr "ڈی فالٹ ٹیمپلیٹ جیسےسیٹ کرو"
 #: source/doc/docvor.src#DLG_ORGANIZE.BTN_EDIT.ID_RESET_DEFAULT_TEMPLATE.MenuItem.Text
 msgid  "Reset Default Template"
 msgstr "ڈی فالٹ ٹیمپلیٹ جیسےری سیٹ کرو"
-
-#: source/doc/docvor.src#DLG_ORGANIZE.LB_LEFT_TYP.Default.StringList.item
-msgid  "Templates"
-msgstr "ٹیمپلیٹس"
-
-#: source/doc/docvor.src#DLG_ORGANIZE.LB_RIGHT_TYP.Default.StringList.item
-msgid  "Templates"
-msgstr "ٹیمپلیٹس"
 
 #: source/doc/new.src#DLG_NEW_FILE.ModalDialog.Text
 msgid  "New"
@@ -2153,15 +2153,15 @@ msgstr ""
 
 #: source/view/view.src#STR_NODEFPRINTER.String.Text
 msgid  "No default printer found.\nPlease choose a printer and try again."
-msgstr ""
+msgstr "ڈیفالٹ پرینٹرموجودنہیں ہے۔\nبراہ کرم پرینٹرپسند کرو اوردوبارہ کوشش کرو۔"
 
 #: source/view/view.src#STR_NOSTARTPRINTER.String.Text
 msgid  "Could not start printer.\nPlease check your printer configuration."
-msgstr ""
+msgstr "پرینٹرشروع نہیں کرو۔\nبراہ کرم آپ کہ پرینٹر کی ہئيت چیک کرو۔"
 
 #: source/view/view.src#STR_PRINTER_NOTAVAIL.String.Text
 msgid  "This document has been formatted for the printer $1. The specified printer is not available. \nDo you want to use the standard printer $2 ?"
-msgstr ""
+msgstr "یہ دستاویز پرنٹر$1کے لئےوضع کيے جا چکے ہیں۔مختص شدہ پرنٹرموجود نہیں ہے۔\nکیا آپ معیاری پرنٹر  $2 استمعال کرنا چاہتےہیں؟"
 
 #: source/view/view.src#STR_PRINT_OPTIONS.String.Text
 msgid  "Options..."
@@ -2187,33 +2187,41 @@ msgstr "طباعت جاری ہے"
 msgid  "Page "
 msgstr "صفحہ"
 
+#: source/view/view.src#STR_ERROR_SAVE_TEMPLATE.String.Text
+msgid  "Error saving template "
+msgstr "خامی محفوظ کرنے والاٹیمپلیٹ"
+
 #: source/view/view.src#STR_READONLY.String.Text
 msgid  " (read-only)"
 msgstr "(صرف-پڑھو)"
 
 #: source/view/view.src#STR_PRINT_NEWORI.String.Text
 msgid  "The page size and orientation have been modified.\nWould you like to save the new settings in the\nactive document?"
-msgstr ""
+msgstr "صفحہ کی سائز اوراوری انٹیشن میں ترمیم کی گئی ہیں۔\nکیا آپ نئی سیٹینگس محفوظ کرنا چاہوگے\nفعال دستاویزمیں؟"
 
 #: source/view/view.src#STR_PRINT_NEWSIZE.String.Text
 msgid  "The page size has been modified.\nShould the new settings be saved\nin the active document?"
-msgstr ""
+msgstr "صفحہ میں ترمیم کی گئی ہے۔\nکیا فعال دستاویزمیں نئی سیٹینگس \nمحفوظ کی جانی چاہئیے؟"
 
 #: source/view/view.src#STR_PRINT_NEWORISIZE.String.Text
 msgid  "The page size and orientation have been modified.\nWould you like to save the new settings in the\nactive document?"
-msgstr ""
+msgstr "صفحہ کی سائز اوراوری انٹیشن میں ترمیم کی گئی ہیں۔\nکیا آپ نئی سیٹینگس محفوظ کرنا چاہوگے\nفعال دستاویزمیں؟"
 
 #: source/view/view.src#STR_PREVIEW_DOCINFO.String.Text
-msgid  "<html><body BGCOLOR="#c0c0c0"><font FACE="Arial"><dl><dt><b>Title:</b><dd>$(TITEL)<dt><b>Subject:</b><dd>$(THEME)<dt><b>Keywords:</b><dd>$(KEYWORDS)<dt><b>Description:</b><dd>$(TEXT)</dl></font></body></html>"
-msgstr ""
+msgid  "<html><body BGCOLOR=\"#c0c0c0\"><font FACE=\"Arial\"><dl><dt><b>Title:</b><dd>$(TITEL)<dt><b>Subject:</b><dd>$(THEME)<dt><b>Keywords:</b><dd>$(KEYWORDS)<dt><b>Description:</b><dd>$(TEXT)</dl></font></body></html>"
+msgstr "<html><body BGCOLOR=\"#c0c0c0\"><font FACE=\"Arial\"><dl><dt><b>عنوان:</b><dd>$(TITEL)<dt><b>مضمون:</b><dd>$(THEME)<dt><b>کلیدی الفاظ :</b><dd>$(KEYWORDS)<dt><b>وضاحت:</b><dd>$(TEXT)</dl></font></body></html>"
 
 #: source/view/view.src#STR_PREVIEW_NODOCINFO.String.Text
-msgid  "<HTML><BODY BGCOLOR="#c0c0c0"><BR><BR><P><FONT FACE="Arial"><B>No document properties found.</B></FONT></P></BODY></HTML>"
-msgstr ""
+msgid  "<HTML><BODY BGCOLOR=\"#c0c0c0\"><BR><BR><P><FONT FACE=\"Arial\"><B>No document properties found.</B></FONT></P></BODY></HTML>"
+msgstr "<HTML><BODY BGCOLOR=\"#c0c0c0\"><BR><BR><P><FONT FACE=\"Arial\"><B>کوئی دستاویزخصوصیات نہیں ملی۔ </B></FONT></P></BODY></HTML>"
 
 #: source/view/view.src#MSG_CANT_CLOSE.InfoBox.Message
 msgid  "The document cannot be closed because a\n print job is being carried out."
-msgstr ""
+msgstr "دستاویز بندنہیں کی جاسکتی کیونکہ\nپرنٹ کا عمل ہوچکا ہے۔"
+
+#: source/view/view.src#DLG_PRINTMONITOR_TEXT.#define.Text
+msgid  "Print Monitor"
+msgstr " پرنٹ مانیٹر"
 
 #: source/view/view.src#DLG_PRINTMONITOR.FT_PRINTING.FixedText.Text
 msgid  "is being printed on"
@@ -2225,11 +2233,11 @@ msgstr ""
 
 #: source/view/view.src#MSG_ERROR_SEND_MAIL.InfoBox.Message
 msgid  "An error occurred in sending the message. Possible errors could be a missing user account or a defective setup.\nPlease check the %PRODUCTNAME settings or your e-mail program settings."
-msgstr ""
+msgstr "پیغام بھیجنےمیں خامی آئی ہے۔ممکن خامیاں ناموجودصارف اکاؤنٹ  یاناقص سیٹ اپ ہو سکتی ہے۔\nبراہ کرم چیک کرو%PRODUCTNAMEسیٹینگس یا آپکا ای-میل پروگرام سیٹینگس۔"
 
 #: source/view/view.src#MSG_QUERY_OPENASTEMPLATE.QueryBox.Message
 msgid  "This document cannot be edited, possibly due to missing access rights. Do you want to edit a copy of the document?"
-msgstr ""
+msgstr "یہ دستاویز مرتب نہیں کیا جاسکتا،ممکن ہےغائب ایکسیس رائٹس کی وجہ سے۔کیاآپ کودستاویز کی نقل مرتب کرنی ہیں؟"
 
 #: source/view/view.src#STR_REPAIREDDOCUMENT.String.Text
 msgid  " (repaired document)"
@@ -2238,11 +2246,3 @@ msgstr "(درست کیا گیادستاویز)"
 #: source/view/view.src#MSG_ERROR_NO_WEBBROWSER_FOUND.ErrorBox.Message
 msgid  "%PRODUCTNAME could not find a web browser on your system. Please check your Desktop Preferences or install a web browser (for example, Mozilla) in the default  location requested during the browser installation."
 msgstr ""
-
-#: source/view/view.src#DLG_PRINTMONITOR_TEXT.#define.Text
-msgid  "Print Monitor"
-msgstr " پرنٹ مانیٹر"
-
-#: source/view/view.src#STR_ERROR_SAVE_TEMPLATE.String.Text
-msgid  "Error saving template "
-msgstr "خامی محفوظ کرنے والاٹیمپلیٹ"

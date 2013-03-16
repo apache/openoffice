@@ -33,7 +33,7 @@ msgstr ""
 
 #: source/component/warnbox.src#RID_XMLSECWB_NO_MOZILLA_PROFILE.WarningBox.Message
 msgid  "Digital signatures functionality could not be used, because no Mozilla user profile was found. Please check the Mozilla installation."
-msgstr ""
+msgstr "Dandeettii mallattoolee dijitaalii fayyadamuun hin danda'amu, sababnisaas danaan fayyadamaa Mozilla homtuu argamuu hin dandeenye. Maaloo qindaa'ina Mozilla mirkaneessi."
 
 #: source/dialogs/macrosecurity.src#RID_XMLSECTP_MACROSEC.TabDialog.Text
 msgid  "Macro Security"
@@ -53,19 +53,19 @@ msgstr "Haaromsi"
 
 #: source/dialogs/macrosecurity.src#RID_XMLSECTP_SECLEVEL.RB_VERYHIGH.RadioButton.Text
 msgid  "~Very high.\nOnly macros from trusted file locations are allowed to run. All other macros, regardless whether signed or not, are disabled."
-msgstr ""
+msgstr "Baayee ol'aanaa.\nMaakroowwan qubannoowwan faayillii amanamaniitu akka ka'an hayyamamaaf. Maakrowwan kaan marti, mallattaa'anis hin mallattaa'inis, ni dhaamfamu."
 
 #: source/dialogs/macrosecurity.src#RID_XMLSECTP_SECLEVEL.RB_HIGH.RadioButton.Text
 msgid  "H~igh.\nOnly signed macros from trusted sources are allowed to run. Unsigned macros are disabled."
-msgstr ""
+msgstr "Ol'aanaa.\nMaakrowwan mallattaawanii fi maddoota amanamoorraa qofatu akka ka'an hayyamama.  Maakiroowwan hin mallattaa'in ni dhaamsamu."
 
 #: source/dialogs/macrosecurity.src#RID_XMLSECTP_SECLEVEL.RB_MEDIUM.RadioButton.Text
 msgid  "~Medium.\nConfirmation required before executing macros from untrusted sources."
-msgstr ""
+msgstr "Giddugaleessa.\nMaakroowwan maddoota hin amanamnerraa dhufan kaasuun dura dhugoomuu qabu."
 
 #: source/dialogs/macrosecurity.src#RID_XMLSECTP_SECLEVEL.RB_LOW.RadioButton.Text
 msgid  "~Low (not recommended).\nAll macros will be executed without confirmation. Use this setting only if you are certain that all documents that will be opened are safe."
-msgstr ""
+msgstr "Gadi aanaa (hin gorfamu).\nMaakroowwan marti dhugoomsa malee raawwatu. Qindaa'ina kana yoo galmeewwan banaman marti madda amanaoorraa ta'an qofa fayyadami."
 
 #: source/dialogs/macrosecurity.src#RID_XMLSECTP_TRUSTSOURCES.FL_TRUSTCERT.FixedLine.Text
 msgid  "Trusted certificates"
@@ -93,7 +93,7 @@ msgstr "Iddoonwwa faayilii amanamoo"
 
 #: source/dialogs/macrosecurity.src#RID_XMLSECTP_TRUSTSOURCES.FI_TRUSTFILELOC.FixedText.Text
 msgid  "Document macros are always executed if they have been opened from one of the following locations."
-msgstr ""
+msgstr "Maakrowwan galmee iddoowwan armaan gadiirraa banamanii yeroo mara ni raawwatamu."
 
 #: source/dialogs/macrosecurity.src#RID_XMLSECTP_TRUSTSOURCES.FL_ADD_TRUSTFILELOC.PushButton.Text
 msgid  "Add..."
@@ -113,7 +113,7 @@ msgstr "Of Eeggannoo Ittisaa"
 
 #: source/dialogs/warnings.src#RID_XMLSECTP_MACROWARN.FI_DESCR1A.FixedText.Text
 msgid  "The document contains document macros signed by:"
-msgstr ""
+msgstr "Galmeen kun maakroo galmee namoota kanaan mallatteeffaman of keessaa qaba:"
 
 #: source/dialogs/warnings.src#RID_XMLSECTP_MACROWARN.FI_DESCR1B.FixedText.Text
 msgid  "The document contains document macros."
@@ -125,7 +125,7 @@ msgstr "Mallattoolee Mul'isi..."
 
 #: source/dialogs/warnings.src#RID_XMLSECTP_MACROWARN.FI_DESCR2.FixedText.Text
 msgid  "Macros may contain viruses. Disabling macros for a document is always save. If you disable macros you may lose functionality provided by the document macros."
-msgstr ""
+msgstr "Maakrowwan qinqinii qbaachuu malu. Maakrowwan dhaamsuun yeroo mara gaariidha. Yoo maakroo dhaamsite, dalagaalee maakrowwan galmeetin dhiyaatan dhabuu malta."
 
 #: source/dialogs/warnings.src#RID_XMLSECTP_MACROWARN.CB_ALWAYSTRUST.CheckBox.Text
 msgid  "Always trust macros from this source"
@@ -205,7 +205,7 @@ msgstr ""
 
 #: source/dialogs/digitalsignaturesdialog.src#MSG_XMLSECDLG_QUERY_REMOVEDOCSIGNBEFORESIGN.QueryBox.Message
 msgid  "Adding or removing a macro signature will remove all document signatures.\nDo you really want to continue?"
-msgstr ""
+msgstr "Mallattoo maakiroo dabaluun ykn haquun mallattoolee galmee dura jiran mara balleessa.\nDhuguma ittifufuu feetaa?"
 
 #: source/dialogs/certificateviewer.src#RID_XMLSECDLG_CERTVIEWER.TabDialog.Text
 msgid  "View Certificate"

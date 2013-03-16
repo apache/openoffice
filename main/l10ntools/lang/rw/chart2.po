@@ -39,6 +39,10 @@ msgstr "Hitamo amagenamiterere y'imitwe, ubusobanurondanga, n'utuzu"
 msgid  "Display grids"
 msgstr "Kugaragaza utuzu"
 
+#: source/controller/dialogs/tp_3D_SceneGeometry.src#CUSTOMUNITTEXT_DEGREE.#define.CustomUnitText
+msgid  " degrees"
+msgstr "dogere"
+
 #: source/controller/dialogs/tp_3D_SceneGeometry.src#TP_3D_SCENEGEOMETRY.CBX_RIGHT_ANGLED_AXES.CheckBox.Text
 msgid  "~Right-angled axes"
 msgstr "~Impembe zifite imfuruka iringaniye"
@@ -58,10 +62,6 @@ msgstr "~Kuzengurutsa Z"
 #: source/controller/dialogs/tp_3D_SceneGeometry.src#TP_3D_SCENEGEOMETRY.CBX_PERSPECTIVE.CheckBox.Text
 msgid  "~Perspective"
 msgstr "~Icyitegererezo"
-
-#: source/controller/dialogs/tp_3D_SceneGeometry.src#CUSTOMUNITTEXT_DEGREE.#define.CustomUnitText
-msgid  " degrees"
-msgstr "dogere"
 
 #: source/controller/dialogs/Strings_AdditionalControls.src#STR_3DSCHEME_SIMPLE.String.Text
 msgid  "Simple"
@@ -261,11 +261,11 @@ msgstr "Umwanya w'ibanze usaba umubare uruta zero. Genzura ibyo winjijemo."
 
 #: source/controller/dialogs/Strings_Scale.src#STR_BAD_LOGARITHM.String.Text
 msgid  "The logarithmic scale requires positive numbers. Check your input."
-msgstr ""
+msgstr "Igipimo cya logaritimu gisaba imibare iruta zero.Genzura ibyo winjijemo."
 
 #: source/controller/dialogs/Strings_Scale.src#STR_MIN_GREATER_MAX.String.Text
 msgid  "The minimum must be lower than the maximum. Check your input."
-msgstr ""
+msgstr "Umuto ntarengwa ugomba kuba hasi y'umunini ntarengwa. Genzura ibyo winjijemo."
 
 #: source/controller/dialogs/Strings_Scale.src#STR_INVALID_INTERVALS.String.Text
 msgid  "The major interval needs to be greater than the minor interval. Check your input."
@@ -561,7 +561,7 @@ msgstr "Ikurikirana ry'utudomo tw'ibyatanzwe"
 
 #: source/controller/dialogs/tp_DataSource.src#TP_DATA_SOURCE.FT_CAPTION_FOR_WIZARD.FixedText.Text
 msgid  "Customize data ranges for individual data series"
-msgstr ""
+msgstr "Koboneza amatsinda y'amakurushingiro y'amatsinda y'amakurushingiro yihariye"
 
 #: source/controller/dialogs/tp_DataSource.src#TP_DATA_SOURCE.FT_SERIES.FixedText.Text
 msgid  "Data ~series"
@@ -1097,11 +1097,11 @@ msgstr "Uduciro: %POINTVALUES"
 
 #: source/controller/dialogs/Strings.src#STR_TIP_DATAPOINT.String.Text
 msgid  "Data Point %POINTNUMBER, data series %SERIESNUMBER, values: %POINTVALUES"
-msgstr ""
+msgstr "Akadomo k'Amakurushingiro %POINTNUMBER, itsinda ry'amakurushingiro %SERIESNUMBER, uduciro: %POINTVALUES"
 
 #: source/controller/dialogs/Strings.src#STR_STATUS_DATAPOINT_MARKED.String.Text
 msgid  "Data point %POINTNUMBER in data series %SERIESNUMBER selected, values: %POINTVALUES"
-msgstr ""
+msgstr "Akadomo k'amakurushingiro %POINTNUMBER mu itsinda ry'amakurushingiro %SERIESNUMBER zatoranyijwe, uduciro: %POINTVALUES"
 
 #: source/controller/dialogs/Strings.src#STR_STATUS_OBJECT_MARKED.String.Text
 msgid  "%OBJECTNAME selected"

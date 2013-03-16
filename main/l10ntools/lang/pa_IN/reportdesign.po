@@ -65,7 +65,7 @@ msgstr "ਨਾਂ '#1' ਪਹਿਲਾਂ ਹੀ ਮੌਜੂਦ ਹੈ ਅਤ�
 
 #: source/core/resource/strings.src#RID_STR_ERROR_WRONG_ARGUMENT.String.Text
 msgid  "You tried to set an illegal argument. Please have a look at '#1' for valid arguments."
-msgstr ""
+msgstr "ਤੁਸੀਂ ਗਲਤ ਆਰਗੂਮੈਂਟ ਸੈੱਟ ਕਰਨ ਦੀ ਟਰਾਈ ਕੀਤੀ। ਵੈਧ ਆਰਗੂਮੈਂਟ ਲਈ '#1' ਵੇਖੋ ਜੀ।"
 
 #: source/core/resource/strings.src#RID_STR_ARGUMENT_IS_NULL.String.Text
 msgid  "The element is invalid."
@@ -140,12 +140,20 @@ msgid  "Group Header"
 msgstr "ਗਰੁੱਪ ਹੈਡਰ"
 
 #: source/ui/dlg/GroupsSorting.src#RID_GROUPS_SORTING.LST_HEADERLST.Default.StringList.item
+msgid  "Present"
+msgstr "ਮੌਜੂਦ ਹੈ"
+
+#: source/ui/dlg/GroupsSorting.src#RID_GROUPS_SORTING.LST_HEADERLST.Default.StringList.item
 msgid  "Not present"
 msgstr "ਮੌਜੂਦ ਨਹੀਂ"
 
 #: source/ui/dlg/GroupsSorting.src#RID_GROUPS_SORTING.FT_FOOTER.FixedText.Text
 msgid  "Group Footer"
 msgstr "ਗਰੁੱਪ ਫੁੱਟਰ"
+
+#: source/ui/dlg/GroupsSorting.src#RID_GROUPS_SORTING.LST_FOOTERLST.Default.StringList.item
+msgid  "Present"
+msgstr "ਮੌਜੂਦ"
 
 #: source/ui/dlg/GroupsSorting.src#RID_GROUPS_SORTING.LST_FOOTERLST.Default.StringList.item
 msgid  "Not present"
@@ -253,15 +261,7 @@ msgstr "ਕੀ ਗਰੁੱਪ ਨੂੰ ਇੱਕ ਸਫ਼ੇ ਉੱਤੇ ਰ
 
 #: source/ui/dlg/GroupsSorting.src#STR_RPT_HELP_SORT.String.Text
 msgid  "Select ascending or descending sort order. Ascending means from A to Z or 0 to 9"
-msgstr ""
-
-#: source/ui/dlg/GroupsSorting.src#RID_GROUPS_SORTING.LST_HEADERLST.Default.StringList.item
-msgid  "Present"
-msgstr "ਮੌਜੂਦ"
-
-#: source/ui/dlg/GroupsSorting.src#RID_GROUPS_SORTING.LST_FOOTERLST.Default.StringList.item
-msgid  "Present"
-msgstr "ਮੌਜੂਦ"
+msgstr "ਵੱਧਦਾ ਜਾਂ ਘੱਟਦਾ ਲੜੀਬੱਧ ਢੰਗ ਚੁਣੋ। ਵੱਧਦਾ ਮਤਲਬ ਹੈ A ਤੋਂ Z ਜਾਂ 0 ਤੋਂ 9"
 
 #: source/ui/dlg/PageNumber.src#RID_PAGENUMBERS.ModalDialog.Text
 msgid  "Page Numbers"
@@ -300,6 +300,14 @@ msgid  "Alignment:"
 msgstr "ਇਕਸਾਰ:"
 
 #: source/ui/dlg/PageNumber.src#RID_PAGENUMBERS.LST_ALIGNMENT.Default.StringList.item
+msgid  "Left"
+msgstr "ਖੱਬਾ"
+
+#: source/ui/dlg/PageNumber.src#RID_PAGENUMBERS.LST_ALIGNMENT.Default.StringList.item
+msgid  "Center"
+msgstr "ਕੇਂਦਰੀ"
+
+#: source/ui/dlg/PageNumber.src#RID_PAGENUMBERS.LST_ALIGNMENT.Default.StringList.item
 msgid  "Right"
 msgstr "ਸੱਜਾ"
 
@@ -312,20 +320,12 @@ msgid  "~Help"
 msgstr "ਮੱਦਦ(~H)"
 
 #: source/ui/dlg/PageNumber.src#STR_RPT_PN_PAGE.String.Text
-msgid  ""Page " & #PAGENUMBER#"
-msgstr ""
+msgid  "\"Page \" & #PAGENUMBER#"
+msgstr "\"ਸਫ਼ਾ\" & #PAGENUMBER#"
 
 #: source/ui/dlg/PageNumber.src#STR_RPT_PN_PAGE_OF.String.Text
-msgid  " & " of " & #PAGECOUNT#"
-msgstr ""
-
-#: source/ui/dlg/PageNumber.src#RID_PAGENUMBERS.LST_ALIGNMENT.Default.StringList.item
-msgid  "Left"
-msgstr "ਖੱਬਾ"
-
-#: source/ui/dlg/PageNumber.src#RID_PAGENUMBERS.LST_ALIGNMENT.Default.StringList.item
-msgid  "Center"
-msgstr "ਕੇਂਦਰੀ"
+msgid  " & \" of \" & #PAGECOUNT#"
+msgstr "& #PAGECOUNT#\" ਵਿੱਚੋਂ \" &"
 
 #: source/ui/dlg/dlgpage.src#RID_PAGEDIALOG_PAGE.TabDialog.Text
 msgid  "Page Setup"
@@ -456,6 +456,10 @@ msgid  "Properties..."
 msgstr "ਵਿਸ਼ੇਸ਼ਤਾ..."
 
 #: source/ui/dlg/CondFormat.src#WIN_CONDITION.LB_COND_TYPE.Default.StringList.item
+msgid  "Field Value Is"
+msgstr "ਖੇਤਰ ਮੁੱਲ ਹੈ"
+
+#: source/ui/dlg/CondFormat.src#WIN_CONDITION.LB_COND_TYPE.Default.StringList.item
 msgid  "Expression Is"
 msgstr "ਸਮੀਕਰਨ ਹੈ"
 
@@ -550,10 +554,6 @@ msgstr "ਮੱਦਦ"
 #: source/ui/dlg/CondFormat.src#ADDFIELD_HELP_FIELD.FixedText.Text
 msgid  "Highlight the fields to insert into the selected section of the template, then click Insert or press Enter."
 msgstr ""
-
-#: source/ui/dlg/CondFormat.src#WIN_CONDITION.LB_COND_TYPE.Default.StringList.item
-msgid  "Field Value Is"
-msgstr "ਖੇਤਰ ਮੁੱਲ ਹੈ"
 
 #: source/ui/dlg/DateTime.src#RID_DATETIME_DLG.ModalDialog.Text
 msgid  "Date and Time"
@@ -833,7 +833,7 @@ msgstr "ਲਿੰਕ ਸਲੇਵ ਖੇਤਰ"
 
 #: source/ui/inspection/inspection.src#RID_STR_EXPLANATION.String.Text
 msgid  "Charts can be used to display detailed data about the current record of the report. To do this, you can specify which columns in the chart match which columns in the report."
-msgstr ""
+msgstr "ਚਾਰਟ ਨੂੰ ਰਿਪੋਰਟ ਦੇ ਮੌਜੂਦਾ ਰਿਕਾਰਡ ਬਾਰੇ ਵੇਰਵੇ ਸਮੇਤ ਡਾਟਾ ਵੇਖਾਉਣ ਲਈ ਵਰਤਿਆ ਜਾ ਸਕਦਾ ਹੈ। ਇਹ ਕਰਨ ਵਾਸਤੇ, ਤੁਸੀਂ ਚੁਣ ਸਕਦੇ ਹੋ ਕਿ ਚਾਰਟ ਵਿੱਚ ਕਿਹੜੇ ਕਾਲਮ ਰਿਪੋਰਟ ਵਿੱਚ ਕਿਹੜੇ ਕਾਲਮ ਨਾਲ ਮਿਲਣ।"
 
 #: source/ui/inspection/inspection.src#RID_STR_DETAILLABEL.String.Text
 msgid  "Chart"
@@ -1241,15 +1241,11 @@ msgstr "ਰਿਪੋਰਟ ਨੂੰ ਚਲਾਇਆ ਨਹੀਂ ਜਾ ਸਕ�
 
 #: source/ui/report/report.src#RID_ERR_NO_OBJECTS.String.Text
 msgid  "The report can not be executed unless at least one object has been inserted."
-msgstr ""
+msgstr "ਰਿਪੋਰਟ ਚਲਾਈ ਨਹੀਂ ਜਾ ਸਕਦੀ, ਜਦੋਂ ਤੱਕ ਕਿ ਇੱਕ ਆਬਜੈਕਟ ਨੂੰ ਸ਼ਾਮਲ ਨਹੀਂ ਕੀਤਾ ਜਾਂਦਾ।"
 
 #: source/ui/report/report.src#RID_STR_UNDO_SHRINK.String.Text
 msgid  "Shrink Section"
 msgstr "ਭਾਗ ਸੁੰਘੜੋ"
-
-#: source/ui/report/report.src#RID_STR_INSERT.String.Text
-msgid  "Insert"
-msgstr "ਸ਼ਾਮਲ"
 
 #: source/ui/report/report.src#RID_STR_DETAIL.String.Text
 msgid  "Detail"
@@ -1270,3 +1266,7 @@ msgstr "ਰਿਪੋਰਟ ਹੈੱਡਰ"
 #: source/ui/report/report.src#RID_STR_REPORT_FOOTER.String.Text
 msgid  "Report Footer"
 msgstr "ਰਿਪੋਰਟ ਫੁੱਟਰ"
+
+#: source/ui/report/report.src#RID_STR_INSERT.String.Text
+msgid  "Insert"
+msgstr "ਸ਼ਾਮਲ"

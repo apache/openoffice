@@ -33,7 +33,7 @@ msgstr ""
 
 #: source/padialog.src#RID_FONTIMPORT_DIALOG.RID_FIMP_TXT_HELP.FixedText.Text
 msgid  "Please select the folder from which you want to import fonts. Add the selected fonts by clicking the OK button."
-msgstr ""
+msgstr "চানবিদুনা অদোম্না পুশিলকপা পাম্বা ফোন্তশিংদুগী ফোল্দরদু খনবিয়ু. OK বতনদু ক্লিক তৌদুনা খল্লবা ফোন্তশিং হাপচিনবিয়ু."
 
 #: source/padialog.src#RID_FONTIMPORT_DIALOG.RID_FIMP_FL_FROM.FixedLine.Text
 msgid  "Source directory"
@@ -61,7 +61,7 @@ msgstr "ফোন্তশিং হাপচিল্লো"
 
 #: source/padialog.src#RID_FONTIMPORT_DIALOG.RID_FIMP_STR_QUERYOVERWRITE.String.Text
 msgid  "Do you really want to overwrite this font file?\n   %s"
-msgstr ""
+msgstr "অদোম তশেংনা মসিগী ফোন্ত ফাইল অসি মথক্তা হন্না ইশিনবা পাম্বিবরা?\n   %s"
 
 #: source/padialog.src#RID_FONTIMPORT_DIALOG.RID_FIMP_STR_OVERWRITEALL.String.Text
 msgid  "All"
@@ -73,19 +73,19 @@ msgstr "অমত্তা নত্তে"
 
 #: source/padialog.src#RID_FONTIMPORT_DIALOG.RID_FIMP_STR_NOAFM.String.Text
 msgid  "A format file (with an .afm extension) has not been found for the font\n%s\ntherefore, the font cannot be installed. Format files can be created with ghostscript, for example, and have to be located in the same directory as the font files or its afm subdirectory."
-msgstr ""
+msgstr "ফোন্ততুগীদম ফোর্মেত ফাইল অমা (.afm শান্দোক্লবগা লোয়ন্না) ফংদ্রে\n%s\nমরম অসিনা, ফোন্ত অদু ইনস্তোল তৌবা ঙমদ্রে. খুদম ওইনা, ফোর্মেত ফাইলশিং ঘোস্তস্ক্রিপকা লোয়ন্না শেমগত্পা য়াগনি, অমসুং ফোন্ত ফাইলশিং নত্রগা মসিগী afm সবদাইরেক্তোরিগুম্না দাইরেক্তোরিতুমক্তদা থমগদবনি. "
 
 #: source/padialog.src#RID_FONTIMPORT_DIALOG.RID_FIMP_STR_AFMCOPYFAILED.String.Text
 msgid  "The metric file for the font file\n   %s\ncould not be copied. The font will not be installed."
-msgstr ""
+msgstr "ফোন্ত ফাইলদুগী মেত্রিক ফাইল\n   %s\nশিনবা ঙমদ্রে. ফোন্ত ইনস্তেল তৌররোই. "
 
 #: source/padialog.src#RID_FONTIMPORT_DIALOG.RID_FIMP_STR_FONTCOPYFAILED.String.Text
 msgid  "The font file\n   %s\ncould not be copied. The font will not be installed."
-msgstr ""
+msgstr "ফোন্ত ফাইল\n  %s\nশিনবা ঙমদ্রে. ফোন্ত ইনস্তোল তৌররোই. "
 
 #: source/padialog.src#RID_FONTIMPORT_DIALOG.RID_FIMP_STR_NOWRITEABLEFONTSDIR.String.Text
 msgid  "A directory containing a writable fonts.dir file is not located in the Fontpath. Therefore, fonts cannot be installed."
-msgstr ""
+msgstr "ইবা য়াবা fonts.dir ফাইল য়াওবা দাইরেক্তোরি ফোন্তলম্বীদা লৈতে. মরম অদুনা, ফোন্তশিং ইনস্তোল তৌবা ঙমদ্রে. "
 
 #: source/padialog.src#RID_FONTIMPORT_DIALOG.RID_FIMP_STR_NUMBEROFFONTSIMPORTED.String.Text
 msgid  "%d new fonts were added."
@@ -289,7 +289,7 @@ msgstr "ফাইলদু মেত্রিক অমা য়াওদে. "
 
 #: source/padialog.src#RID_AFMERROR_BOX_TXT.String.Text
 msgid  "The metric\n\n%s\n\ncould not be converted for the following reason:\n\n"
-msgstr ""
+msgstr "মেত্রিকতু\n\n%s\n\nমখাগী মরমসিনা ওন্থোকপা ঙমদ্রে:\n\n"
 
 #: source/padialog.src#RID_PROGRESS_DLG.RID_PROGRESS_PROGRESS_TXT.FixedText.Text
 msgid  "Progress"
@@ -320,8 +320,8 @@ msgid  "~Selection of drivers"
 msgstr "~দ্রাইভরশিং খনবা"
 
 #: source/padialog.src#RID_PPDIMPORT_DLG.RID_PPDIMP_TXT_DRIVER.FixedText.Text
-msgid  "Please select the drivers to install and press "%s"."
-msgstr ""
+msgid  "Please select the drivers to install and press \"%s\"."
+msgstr "চানবিদুনা ইনস্তোল তৌনবগীদমক্তা দ্রাইভর খনবিরো অমসুং \"%s\" নম্বিরো. "
 
 #: source/padialog.src#RID_PPDIMPORT_DLG.RID_PPDIMP_STR_LOADINGPPD.String.Text
 msgid  "Searching for drivers"
@@ -332,8 +332,8 @@ msgid  "Driver Installation"
 msgstr "দ্রাইভর ইনস্তোলেসন "
 
 #: source/padialog.src#RID_QUERY_REMOVEDRIVER.String.Text
-msgid  "Do you really want to remove the driver "%s"?"
-msgstr ""
+msgid  "Do you really want to remove the driver \"%s\"?"
+msgstr "অদোম তশেংনা \"%s\" দ্রাইভরদু লৌথোকপা পাম্বিবরা?"
 
 #: source/padialog.src#RID_QUERY_REMOVEPRINTER.String.Text
 msgid  "Do you really want to remove this printer ?"
@@ -344,40 +344,40 @@ msgid  "Do you really want to remove the selected fonts ?"
 msgstr "অদোম তশেংনা মসিগী খল্লবা ফোন্তসি লৌথোকপা পাম্বিবরা?"
 
 #: source/padialog.src#RID_QUERY_DRIVERUSED.String.Text
-msgid  "There are still printers using the driver "%s". Do you really want to remove it? The corresponding printers will also be removed."
-msgstr ""
+msgid  "There are still printers using the driver \"%s\". Do you really want to remove it? The corresponding printers will also be removed."
+msgstr "হৌজিকসু \"%s\" দ্রাইভরদু শিজিন্নদুনা প্রিন্তরশিং লৈরি. অদোম তশেংনা মসি লৌথোকপা পাম্বিবরা? মরী লৈন্নবা প্রিন্তরসু লৌথোক্লগনি. "
 
 #: source/padialog.src#RID_ERR_REMOVESGENPRT.String.Text
-msgid  "The driver "%s" is always needed and can therefore not be removed."
-msgstr ""
+msgid  "The driver \"%s\" is always needed and can therefore not be removed."
+msgstr "\"%s\" দ্রাইভরসি মতম খুদিংমক্তা দরকার ওই মরম অদুনা লৌথোকপা ঙমলরোই."
 
 #: source/padialog.src#RID_ERR_REMOVEDRIVERFAILED.String.Text
-msgid  "The driver "%s1" could not be removed. It was not possible to remove the file\n\n%s2."
-msgstr ""
+msgid  "The driver \"%s1\" could not be removed. It was not possible to remove the file\n\n%s2."
+msgstr "\"%s1\" দ্রাইভরসি লৌথোকপা ঙমদ্রে. ফাইলসি লৌথোকপা ওইথোক্ত্রে\n\n%s2."
 
 #: source/padialog.src#RID_ERR_REMOVEDEFAULTDRIVER.String.Text
-msgid  "The driver "%s" is used by your default printer. Therefore, it cannot be removed."
-msgstr ""
+msgid  "The driver \"%s\" is used by your default printer. Therefore, it cannot be removed."
+msgstr "\"%s\" দ্রাইভরসি অদোমগী দিফোল্ত প্রিন্তরনা শিজিন্নরি. মরম অদুনা, মসি লৌথোকপা ঙমদ্রে. "
 
 #: source/padialog.src#RID_ERR_PRINTERNOTREMOVEABLE.String.Text
 msgid  "The printer %s cannot be removed."
 msgstr "প্রিন্তর %s লৌথোকপা ঙমদ্রে."
 
 #: source/padialog.src#RID_TXT_PRINTERALREADYEXISTS.String.Text
-msgid  "A printer named "%s" already exists. This printer will not be imported."
-msgstr ""
+msgid  "A printer named \"%s\" already exists. This printer will not be imported."
+msgstr "\"%s\" কৌবা প্রিন্তর হান্না লৈরে. মসিগী প্রিন্তর পুশিল্লকপা য়ারোই. "
 
 #: source/padialog.src#RID_TXT_PRINTERWITHOUTCOMMAND.String.Text
-msgid  "The printer "%s" has no valid configuration and, therefore, cannot be imported."
-msgstr ""
+msgid  "The printer \"%s\" has no valid configuration and, therefore, cannot be imported."
+msgstr "প্রিন্তর \"%s\" গী চতনবা কনফিগ্যুরেসন লৈতে অমসুং মরম অদুনা, পুশিল্লকপা ঙমদ্রে."
 
 #: source/padialog.src#RID_TXT_DRIVERDOESNOTEXIST.String.Text
-msgid  "The driver for the printer "%s1" (%s2) is not installed. Therefore the printer cannot be imported."
-msgstr ""
+msgid  "The driver for the printer \"%s1\" (%s2) is not installed. Therefore the printer cannot be imported."
+msgstr "প্রিন্তর \"%s1\" (%s2) গী দ্রাইভর ইনস্তোল তৌদ্রি. মরম অদুনা প্রিন্তর পুশিল্লকপা ঙমদ্রে."
 
 #: source/padialog.src#RID_TXT_PRINTERADDFAILED.String.Text
-msgid  "The printer "%s" could not be added."
-msgstr ""
+msgid  "The printer \"%s\" could not be added."
+msgstr "প্রিন্তর \"%s\" হাপচিনবা ঙমদ্রে."
 
 #: source/padialog.src#RID_ADD_PRINTER_DIALOG.RID_ADDP_BTN_FINISH.OKButton.Text
 msgid  "~Finish"
@@ -488,12 +488,12 @@ msgid  "~Help"
 msgstr "~মতেং"
 
 #: source/padialog.src#RID_ADDP_PAGE_COMMAND.RID_ADDP_CMD_STR_PDFHELP.String.Text
-msgid  "The command line for PDF converters is executed as follows: for each document printed, "(TMP)" in the command line is replaced by a temporary file and "(OUTFILE)" in the command line is replaced by the target PDF file name. If "(TMP)" is in the command line, the PostScript code will be supplied via a file, otherwise via standard input (i.e. as a pipe)."
-msgstr ""
+msgid  "The command line for PDF converters is executed as follows: for each document printed, \"(TMP)\" in the command line is replaced by a temporary file and \"(OUTFILE)\" in the command line is replaced by the target PDF file name. If \"(TMP)\" is in the command line, the PostScript code will be supplied via a file, otherwise via standard input (i.e. as a pipe)."
+msgstr "PDF ওন্থোকনবগী থৌদাৱা পরেং অমা মখাগী অশুম্না পাংথোক্লে:  নমথোক্লবা দোকুমেন্ত খুদিংমক্কী, থৌদাৱা পরিংদা লৈবা \"(TMP)\" মতম খরগী ওইবা ফাইলনা শিন্দোক্লে অমসুং থৌদাৱা পরিংদা লৈবা \"(OUTFILE)\" অসি পান্দম থম্লিবা PDF ফাইল মমিংনা শিন্দোক্লে. করিগুম্বা \"(TMP)\" থৌদাৱা পরিংদা লৈরবদি, পোস্তস্ক্ৰিপ্ত কোদতু ফাইল অমগী মতেংনা পীগনি, নত্রগনা স্তেন্দর্দ ইনপুত অমগী মতেংনা (খুদম ওইনা, পাইপ অমগুম্না) পীগনি."
 
 #: source/padialog.src#RID_ADDP_PAGE_COMMAND.RID_ADDP_CMD_STR_FAXHELP.String.Text
-msgid  "The command line for fax connections is executed as follows: for each fax sent, "(TMP)" in the command line is replaced by a temporary file and "(PHONE)" in the command line is replaced by the fax number. If "(TMP)" appears in the command line, the PostScript code will be supplied via a file, otherwise it is passed as standard input (i.e. as a pipe)."
-msgstr ""
+msgid  "The command line for fax connections is executed as follows: for each fax sent, \"(TMP)\" in the command line is replaced by a temporary file and \"(PHONE)\" in the command line is replaced by the fax number. If \"(TMP)\" appears in the command line, the PostScript code will be supplied via a file, otherwise it is passed as standard input (i.e. as a pipe)."
+msgstr "ফেক্স শম্নবা অসিগীদমক থৌদাৱা পরেং অমা মখাগী অশুম্না পাংথোক্লে: ফেক্স থাবা খুদিংগী,  থৌদাৱা পরেংদা লৈবা \"(TMP)\" মতম খরগী ওইবা ফাইলনা শিন্দোক্লে অমসুং থৌদাৱা পরেংদা লৈবা \"(PHONE)\" ফেক্স নম্বরনা শিন্দোক্লে. করিগুম্বা \"(TMP)\" থৌদাৱা পরেংদা শাফোংলবদি, পোস্তস্ক্ৰিপ্ত কোদতু ফাইল অমগী মতেংনা পীগনি, নত্রগনা স্তেন্দর্দ ইনপুত গুম্না চতখিগনি (খুদম ওইনা, পাইপ অমগুম্না)."
 
 #: source/padialog.src#RID_ADDP_PAGE_OLDPRINTERS.RID_ADDP_STR_TITLE.String.Text
 msgid  "Import printers from old versions"
@@ -501,7 +501,7 @@ msgstr "অরিবা ভর্সনশিংদগী প্রিন্ত�
 
 #: source/padialog.src#RID_ADDP_PAGE_OLDPRINTERS.RID_ADDP_OLD_TXT_PRINTERS.FixedText.Text
 msgid  "~These printers can be imported. Please select the ones you want to import."
-msgstr ""
+msgstr "~মসিগী প্রিন্তরশিং অসি পুশিনবা য়াই. চানবিদুনা অদোম্না পুশিনবা পাম্বা অদু খনবিয়ু. "
 
 #: source/padialog.src#RID_ADDP_PAGE_OLDPRINTERS.RID_ADDP_OLD_BTN_SELECTALL.PushButton.Text
 msgid  "~Select All"
@@ -788,16 +788,16 @@ msgid  "~Remove"
 msgstr "~লৌথোকউ"
 
 #: source/rtsetup.src#RID_RTS_COMMANDPAGE.RID_RTS_CMD_STR_PDFHELP.String.Text
-msgid  "The command line for PDF converters is executed as follows: for each document printed, "(TMP)" in the command line is replaced by a temporary file and "(OUTFILE)" in the command line is replaced by the target PDF file name. If "(TMP)" is in the command line, the PostScript code will be supplied via a file, otherwise via standard input (i.e. as a pipe)."
-msgstr ""
+msgid  "The command line for PDF converters is executed as follows: for each document printed, \"(TMP)\" in the command line is replaced by a temporary file and \"(OUTFILE)\" in the command line is replaced by the target PDF file name. If \"(TMP)\" is in the command line, the PostScript code will be supplied via a file, otherwise via standard input (i.e. as a pipe)."
+msgstr "PDF ওন্থোকনবগী থৌদাৱা পরেং অমা মখাগী অশুম্না পাংথোক্লে:  নমথোক্লবা দোকুমেন্ত খুদিংমক্কী, থৌদাৱা পরিংদা লৈবা \"(TMP)\" মতম খরগী ওইবা ফাইলনা শিন্দোক্লে অমসুং থৌদাৱা পরিংদা লৈবা \"(OUTFILE)\" অসি পান্দম থম্লিবা PDF ফাইল মমিংনা শিন্দোক্লে. করিগুম্বা \"(TMP)\" থৌদাৱা পরিংদা লৈরবদি, পোস্তস্ক্ৰিপ্ত কোদতু ফাইল অমগী মতেংনা পীগনি, নত্রগনা স্তেন্দর্দ ইনপুত অমগী মতেংনা (খুদম ওইনা, পাইপ অমগুম্না) পীগনি."
 
 #: source/rtsetup.src#RID_RTS_COMMANDPAGE.RID_RTS_CMD_STR_PRINTERHELP.String.Text
 msgid  "The command line for printer devices is executed as follows: the generated PostScript code is supplied as standard input (i.e. as a pipe) to the command line."
-msgstr ""
+msgstr "প্রিন্তর খুতলাইশিংগী থৌদাৱা পরেং অদু মখাগী অশুম্না পাংথোক্লে: শেম্লবা পোস্তস্ক্ৰিপ্ত কোদতু স্তেন্দর্দ ইনপুত গুম্না থৌদাৱা পরেংদা পীরে (খুদম ওইনা, পাইপকুম্না)."
 
 #: source/rtsetup.src#RID_RTS_COMMANDPAGE.RID_RTS_CMD_STR_FAXHELP.String.Text
-msgid  "The command line for fax devices is executed as follows: for each fax sent, "(TMP)" in the command line is replaced by a temporary file and "(PHONE)" in the command line is replaced by the fax number. If "(TMP)" appears in the command line, the PostScript code will be supplied via a file, otherwise it is passed as standard input (i.e. as a pipe)."
-msgstr ""
+msgid  "The command line for fax devices is executed as follows: for each fax sent, \"(TMP)\" in the command line is replaced by a temporary file and \"(PHONE)\" in the command line is replaced by the fax number. If \"(TMP)\" appears in the command line, the PostScript code will be supplied via a file, otherwise it is passed as standard input (i.e. as a pipe)."
+msgstr "ফেক্স খুতলাইশিংগী থৌদাৱা পরেং মখাগী অশুম্না পাংথোক্লে: ফেক্স থাবা খুদিংগী, থৌদাৱা পরেংদা লৈবা \"(TMP)\" মতম খরগী ওইবা ফাইলনা শিন্দোক্লে অমসুং থৌদাৱা পরেংদা লৈবা \"(PHONE)\" ফেক্স নম্বরনা শিন্দোক্লে. করিগুম্বা \"(TMP)\" থৌদাৱা পুরেংদা শাফোংলবদি, পোস্তস্ক্ৰিপ্ত কোদতু ফাইল অমগী মতেংনা পীগনি নত্রগনা মসি স্তেন্দর্দ ইনপুতকুম্না চতখিগনি. (খুদম ওইনা, পাইপ অমগুম্না)."
 
 #: source/rtsetup.src#RID_RTS_OTHERPAGE.RID_RTS_OTHER_LEFTMARGIN_TXT.FixedText.Text
 msgid  "~Left margin"

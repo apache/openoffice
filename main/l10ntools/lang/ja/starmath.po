@@ -261,7 +261,7 @@ msgstr "列の間隔(~C)"
 
 #: source/smres.src#RID_DISTANCEDIALOG.8.1.String.Text
 msgid  "Symbols"
-msgstr "数式用アクセント記号"
+msgstr "記号"
 
 #: source/smres.src#RID_DISTANCEDIALOG.8.2.String.Text
 msgid  "~Primary height"
@@ -377,7 +377,7 @@ msgstr "使用している記号のみ埋め込む (ファイルサイズを小�
 
 #: source/smres.src#RID_SYMBOLDIALOG.ModalDialog.Text
 msgid  "Symbols"
-msgstr "数式用アクセント記号"
+msgstr "記号"
 
 #: source/smres.src#RID_SYMBOLDIALOG.1.FixedText.Text
 msgid  "~Symbol set"
@@ -445,11 +445,11 @@ msgstr "削除(~D)"
 
 #: source/smres.src#RID_NOMATHTYPEFACEWARNING.WarningBox.Message
 msgid  "The 'StarMath' font has not been installed.\nWithout this font %PRODUCTNAME Math cannot function correctly.\nPlease install this font and restart %PRODUCTNAME Math."
-msgstr ""
+msgstr "\"StarMath\" フォントがインストールされていません｡\nこのフォントなしでは %PRODUCTNAME Math がうまく機能しません...\nまずフォントをインストールして %PRODUCTNAME Math を再起動してください。"
 
 #: source/smres.src#RID_DEFAULTSAVEQUERY.QueryBox.Message
 msgid  "Should the changes be saved as defaults?\n\nThese changes will apply for all new formulas."
-msgstr ""
+msgstr "この変更を標準として保存しますか。\n\nこの変更はすべての新しい数式に影響します。"
 
 #: source/smres.src#RID_FONTREGULAR.String.Text
 msgid  "Standard"
@@ -558,6 +558,10 @@ msgstr "Sans"
 #: source/smres.src#RID_FONTMENU.7.MenuItem.Text
 msgid  "Fixed"
 msgstr "Fixed"
+
+#: source/smres.src#CMDBOXWINDOW_TEXT.#define.Text
+msgid  "Commands"
+msgstr "コマンド"
 
 #: source/smres.src#RID_DOCUMENTSTR.String.Text
 msgid  "Formula"
@@ -694,10 +698,6 @@ msgstr "ページに合わせる(~P)"
 #: source/smres.src#RID_PRINTUIOPTIONS.item9.ItemList.item
 msgid  "~Scaling"
 msgstr "倍率(~S)"
-
-#: source/smres.src#CMDBOXWINDOW_TEXT.#define.Text
-msgid  "Commands"
-msgstr "コマンド"
 
 #: source/commands.src#RID_COMMANDMENU.RID_UNBINOPS_MENU.MenuItem.Text
 msgid  "~Unary/Binary Operators"

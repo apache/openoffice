@@ -49,7 +49,7 @@ msgstr "변환(~C)"
 
 #: source/euro/euro.src#STEP_ZERO + 4.String.Text
 msgid  "Note: Currency amounts from external links and currency conversion factors in formulas cannot be converted."
-msgstr ""
+msgstr "알림: 수식내의 통화변환 요소와 외부참조에 연결된 통화량은 변환되지 않습니다."
 
 #: source/euro/euro.src#STEP_ZERO + 5.String.Text
 msgid  "First, unprotect all sheets."
@@ -153,7 +153,7 @@ msgstr "셀 서식의 변환 상태:"
 
 #: source/euro/euro.src#STATUSLINE + 2.String.Text
 msgid  "Registration of the relevant ranges: Sheet %1Number%1 of %2TotPageCount%2"
-msgstr ""
+msgstr "관련 범위 등록: %2TotPageCount%2의 시트 %1Number%1"
 
 #: source/euro/euro.src#STATUSLINE + 3.String.Text
 msgid  "Entry of the ranges to be converted..."
@@ -221,11 +221,11 @@ msgstr "시트 보호는 해제되지 않습니다."
 
 #: source/euro/euro.src#MESSAGES + 13.String.Text
 msgid  "The Wizard cannot edit this document as cell formats cannot be modified in documents containing protected spreadsheets."
-msgstr ""
+msgstr "보호된 스프레드시트가 있는 문서에서는 셀 서식을 수정할 수 없기 때문에 마법사에서 이 문서를 편집할 수 없습니다."
 
 #: source/euro/euro.src#MESSAGES + 14.String.Text
 msgid  "Please note that the Euro Converter will, otherwise, not be able to edit this document!"
-msgstr ""
+msgstr "그렇지 않으면 유로 변환기가 문서를 편집할 수 없음에 유의하십시오."
 
 #: source/euro/euro.src#MESSAGES + 15.String.Text
 msgid  "Please choose a currency to be converted first!"
@@ -337,7 +337,7 @@ msgstr "이 문서에 설정된 통화 단위는 유럽 통화가 아닙니다!"
 
 #: source/euro/euro.src#CURRENCIES + 17.String.Text
 msgid  "The language set for your operating system is not a language of the European Monetary Union."
-msgstr ""
+msgstr "귀하의 운영체제에 설정된 언어는 유럽 통화의 언어가 아닙니다."
 
 #: source/euro/euro.src#STEP_LASTPAGE.String.Text
 msgid  "Progress"
@@ -361,35 +361,35 @@ msgstr "시트 보호 항상 제거"
 
 #: source/formwizard/dbwizres.src#RID_COMMON_START + 0.String.Text
 msgid  "The directory '%1' could not be created.<BR>There may not be enough space left on your hard disk."
-msgstr ""
+msgstr "'%1' 폴더를 만들 수 없습니다.<BR>하드 디스크에 공간이 부족할 수 있습니다."
 
 #: source/formwizard/dbwizres.src#RID_COMMON_START + 1.String.Text
 msgid  "The text document could not be created.<BR>Please check if the module 'PRODUCTNAME Writer' is installed."
-msgstr ""
+msgstr "텍스트 문서를 만들 수 없습니다.<BR>'PRODUCTNAME Writer' 모듈이 설치되어 있는지 확인하십시오."
 
 #: source/formwizard/dbwizres.src#RID_COMMON_START + 2.String.Text
 msgid  "The spreadsheet could not be created.<BR>Please check if the module 'PRODUCTNAME Calc' is installed."
-msgstr ""
+msgstr "스프레드시트를 만들 수 없습니다.<BR>'PRODUCTNAME Calc' 모듈이 설치되어 있는지 확인하십시오."
 
 #: source/formwizard/dbwizres.src#RID_COMMON_START + 3.String.Text
 msgid  "The presentation could not be created.<BR>Please check if the module 'PRODUCTNAME Impress' is installed."
-msgstr ""
+msgstr "프레젠테이션을 만들 수 없습니다.<BR>'PRODUCTNAME Impress' 모듈이 설치되어 있는지 확인하십시오."
 
 #: source/formwizard/dbwizres.src#RID_COMMON_START + 4.String.Text
 msgid  "The drawing could not be created.<BR>Please check if the module 'PRODUCTNAME Draw' is installed."
-msgstr ""
+msgstr "그리기를 만들 수 없습니다.<BR>'PRODUCTNAME Draw' 모듈이 설치되어 있는지 확인하십시오."
 
 #: source/formwizard/dbwizres.src#RID_COMMON_START + 5.String.Text
 msgid  "The formula could not be created.<BR>Please check if the module 'PRODUCTNAME Math' is installed."
-msgstr ""
+msgstr "수식을 만들 수 없습니다.<BR>'PRODUCTNAME Math' 모듈이 설치되어 있는지 확인하십시오."
 
 #: source/formwizard/dbwizres.src#RID_COMMON_START + 6.String.Text
 msgid  "The files required could not be found.<BR>Please start the %PRODUCTNAME Setup and choose 'Repair'."
-msgstr ""
+msgstr "필요한 파일을 찾을 수 없습니다.<BR>%PRODUCTNAME 설치 프로그램을 시작하여 [복구] 옵션을 선택하십시오."
 
 #: source/formwizard/dbwizres.src#RID_COMMON_START + 7.String.Text
 msgid  "The file '<PATH>' already exists.<BR><BR>Would you like to overwrite the existing file?"
-msgstr ""
+msgstr "'<PATH>' 파일은 이미 있습니다.<BR><BR>이 파일을 덮어쓰시겠습니까?"
 
 #: source/formwizard/dbwizres.src#RID_COMMON_START + 8.String.Text
 msgid  "Yes"
@@ -445,7 +445,7 @@ msgstr "<current_date>에 <wizard_name>을(를) 통해 만든 서식 파일"
 
 #: source/formwizard/dbwizres.src#RID_COMMON_START + 21.String.Text
 msgid  "The wizard could not be run, because important files were not found.\nUnder 'Tools - Options - %PRODUCTNAME - Paths' click the 'Default' button to reset the paths to the original default settings.\nThen run the wizard again."
-msgstr ""
+msgstr "중요한 파일을 찾을 수 없어 마법사를 실행할 수 없습니다.\n[도구] - [옵션] - [%PRODUCTNAME] - [경로]에서 [기본값] 버튼을 클릭하여 경로를 원래 기본 설정으로 재설정하십시오.\n그런 다음 마법사를 다시 실행하십시오."
 
 #: source/formwizard/dbwizres.src#RID_DB_COMMON_START + 0.String.Text
 msgid  "C~reate"
@@ -473,7 +473,7 @@ msgstr "테이블 이름(~T)"
 
 #: source/formwizard/dbwizres.src#RID_DB_COMMON_START + 6.String.Text
 msgid  "An error occurred while running the wizard. The wizard will be terminated."
-msgstr ""
+msgstr "마법사를 실행하는 중 오류가 발생했습니다. 마법사가 종료됩니다."
 
 #: source/formwizard/dbwizres.src#RID_DB_COMMON_START + 14.String.Text
 msgid  "No connection to the database could be established."
@@ -553,11 +553,11 @@ msgstr "양식 필드(~T)"
 
 #: source/formwizard/dbwizres.src#RID_DB_FORM_WIZARD_START + 2.String.Text
 msgid  "Binary fields are always listed and selectable from the left list.\nIf possible, they are interpreted as images."
-msgstr ""
+msgstr "이진 필드는 항상 나열되며 왼쪽 목록에서 선택할 수 있습니다.\n가능한 경우 이진 필드는 이미지로 해석됩니다."
 
 #: source/formwizard/dbwizres.src#RID_DB_FORM_WIZARD_START + 3.String.Text
 msgid  "A subform is a form that is inserted in another form.\nUse subforms to show data from tables or queries with a one-to-many relationship."
-msgstr ""
+msgstr "하위 양식은 다른 양식에 삽입된 양식입니다.\n하위 양식을 사용하여 1대다 관계를 가진 테이블 또는 쿼리의 데이터를 표시할 수 있습니다."
 
 #: source/formwizard/dbwizres.src#RID_DB_FORM_WIZARD_START + 4.String.Text
 msgid  "~Add Subform"
@@ -593,7 +593,7 @@ msgstr "양식 내의 필드"
 
 #: source/formwizard/dbwizres.src#RID_DB_FORM_WIZARD_START + 19.String.Text
 msgid  "The join '<FIELDNAME1>' and '<FIELDNAME2>' has been selected twice.\nBut joins may only be used once."
-msgstr ""
+msgstr "'<FIELDNAME1>' 및 '<FIELDNAME2>' 조인이 두 번 선택되었습니다.\n조인은 한 번만 사용할 수 있습니다."
 
 #: source/formwizard/dbwizres.src#RID_DB_FORM_WIZARD_START + 20.String.Text
 msgid  "~First joined subform field"
@@ -805,7 +805,7 @@ msgstr "양식 이름을 설정하십시오."
 
 #: source/formwizard/dbwizres.src#RID_DB_FORM_WIZARD_START + 98.String.Text
 msgid  "A form with the name '%FORMNAME' already exists.\nChoose another name."
-msgstr ""
+msgstr "이름이 '%FORMNAME'인 양식이 이미 있습니다.\n다른 이름을 선택하십시오."
 
 #: source/formwizard/dbwizres.src#RID_DB_QUERY_WIZARD_START + 0.String.Text
 msgid  "Query Wizard"
@@ -1097,15 +1097,15 @@ msgstr "개요"
 
 #: source/formwizard/dbwizres.src#RID_DB_QUERY_WIZARD_START + 88.String.Text
 msgid  "A field that has not been assigned an aggregate function must be used in a group."
-msgstr ""
+msgstr "집계 함수가 지정되지 않은 필드를 그룹에서 사용해야 합니다."
 
 #: source/formwizard/dbwizres.src#RID_DB_QUERY_WIZARD_START + 89.String.Text
 msgid  "The condition '<FIELDNAME> <LOGICOPERATOR> <VALUE>' was chosen twice. Each condition can only be chosen once"
-msgstr ""
+msgstr "'<FIELDNAME> <LOGICOPERATOR> <VALUE>' 조건이 두 번 선택되었습니다. 각 조건을 한 번만 선택할 수 있습니다."
 
 #: source/formwizard/dbwizres.src#RID_DB_QUERY_WIZARD_START + 90.String.Text
 msgid  "The aggregate function <FUNCTION> has been assigned twice to the fieldname '<NUMERICFIELD>'."
-msgstr ""
+msgstr "<FUNCTION> 집계 함수가 '<NUMERICFIELD>' 필드 이름에 두 번 지정되었습니다."
 
 #: source/formwizard/dbwizres.src#RID_DB_QUERY_WIZARD_START + 91.String.Text
 msgid  ", "
@@ -1321,11 +1321,11 @@ msgstr "'<REPORTFORM>' 양식이 없습니다."
 
 #: source/formwizard/dbwizres.src#RID_DB_REPORT_WIZARD_START + 65.String.Text
 msgid  "The query with the statement <BR>'<STATEMENT>' <BR> could not be run. <BR> Check your data source."
-msgstr ""
+msgstr "<BR>'<STATEMENT>' 문장의 쿼리를 실행할 수 없습니다. <BR> 데이터 원본을 검사해 보십시오."
 
 #: source/formwizard/dbwizres.src#RID_DB_REPORT_WIZARD_START + 66.String.Text
 msgid  "The following hidden control in the form '<REPORTFORM>' could not be read: '<CONTROLNAME>'."
-msgstr ""
+msgstr "다음의 '<FORMNAME>' 양식 안에 숨겨진 콘트롤을 읽지 못했습니다: '<CONTROLNAME>'."
 
 #: source/formwizard/dbwizres.src#RID_DB_REPORT_WIZARD_START + 67.String.Text
 msgid  "Importing data..."
@@ -1349,7 +1349,7 @@ msgstr "필드"
 
 #: source/formwizard/dbwizres.src#RID_DB_REPORT_WIZARD_START + 72.String.Text
 msgid  "An error occurred in the wizard.<BR>The template '%PATH' could be erroneous.<BR>Either the required sections or tables do not exist or exist under the wrong name.<BR>See the Help for more detailed information.<BR>Please select another template."
-msgstr ""
+msgstr "마법사에서 오류가 발생했습니다.<BR>서식 파일 '%PATH'이(가) 잘못되었을 수 있습니다.<BR>필요한 구역이나 테이블이 없거나 이름이 틀립니다.<BR>자세한 내용은 도움말을 참조하십시오.<BR>다른 서식 파일을 선택하십시오."
 
 #: source/formwizard/dbwizres.src#RID_DB_REPORT_WIZARD_START + 73.String.Text
 msgid  "There is an invalid user field in a table."
@@ -1357,15 +1357,15 @@ msgstr "잘못된 사용자 필드가 테이블 안에 있습니다."
 
 #: source/formwizard/dbwizres.src#RID_DB_REPORT_WIZARD_START + 74.String.Text
 msgid  "The sort criterium '<FIELDNAME>' was chosen twice. Each criterium can only be chosen once."
-msgstr ""
+msgstr "'<FIELDNAME>' 정렬 기준이 두 번 선택되었습니다. 각 기준은 한 번만 선택할 수 있습니다."
 
 #: source/formwizard/dbwizres.src#RID_DB_REPORT_WIZARD_START + 75.String.Text
 msgid  "Note: The dummy text will be replaced by data from the database when the report is created."
-msgstr ""
+msgstr "참고: 보고가 만들어지면 더미(dummy) 텍스트는 데이터베이스의 데이터로 대체됩니다."
 
 #: source/formwizard/dbwizres.src#RID_DB_REPORT_WIZARD_START + 76.String.Text
 msgid  "A report '%REPORTNAME' already exists in the database. Please assign another name."
-msgstr ""
+msgstr "'%REPORTNAME' 보고서가 이미 데이터베이스에 있습니다. 다른 이름을 지정하십시오."
 
 #: source/formwizard/dbwizres.src#RID_DB_REPORT_WIZARD_START + 78.String.Text
 msgid  "How do you want to proceed after creating the report?"
@@ -1465,7 +1465,7 @@ msgstr "테이블 만들기"
 
 #: source/formwizard/dbwizres.src#RID_DB_TABLE_WIZARD_START + 14.String.Text
 msgid  "This wizard helps you to create a table for your database. After selecting a table category and a sample table, choose the fields you want to include in your table. You can include fields from more than one sample table."
-msgstr ""
+msgstr "이 마법사는 데이터베이스의 테이블 만들기를 도와줍니다. 테이블 범주와 예제 테이블을 선택한 후 테이블에 포함할 필드를 선택하십시오. 두 개 이상의 예제 테이블에서 필드를 포함할 수 있습니다."
 
 #: source/formwizard/dbwizres.src#RID_DB_TABLE_WIZARD_START + 15.String.Text
 msgid  "Ca~tegory"
@@ -1509,7 +1509,7 @@ msgstr "선택된 필드(~S)"
 
 #: source/formwizard/dbwizres.src#RID_DB_TABLE_WIZARD_START + 26.String.Text
 msgid  "A primary key uniquely identifies each record in a database table. Primary keys ease the linking of information in separate tables, and it is recommended that you have a primary key in every table. Without a primary key, it will not be possible to enter data into this table."
-msgstr ""
+msgstr "기본 키는 데이터베이스 테이블의 각 레코드를 고유하게 식별합니다. 기본 키를 사용하면 여러 테이블의 정보를 쉽게 연결할 수 있으므로 모든 테이블에 기본 키를 설정하는 것이 좋습니다. 기본 키가 없으면 이 테이블에 데이터를 입력할 수 없습니다."
 
 #: source/formwizard/dbwizres.src#RID_DB_TABLE_WIZARD_START + 27.String.Text
 msgid  "~Create a primary key"
@@ -1545,7 +1545,7 @@ msgstr "테이블 이름을 지정하시겠습니까?"
 
 #: source/formwizard/dbwizres.src#RID_DB_TABLE_WIZARD_START + 35.String.Text
 msgid  "Congratulations. You have entered all the information needed to create your table."
-msgstr ""
+msgstr "축하합니다. 테이블을 만드는 데 필요한 정보를 모두 입력했습니다."
 
 #: source/formwizard/dbwizres.src#RID_DB_TABLE_WIZARD_START + 36.String.Text
 msgid  "What do you want to do next?"
@@ -1569,11 +1569,11 @@ msgstr "만든 테이블을 열 수 없습니다."
 
 #: source/formwizard/dbwizres.src#RID_DB_TABLE_WIZARD_START + 41.String.Text
 msgid  "The table name '%TABLENAME' contains a character ('%SPECIALCHAR') that might not be supported by the database."
-msgstr ""
+msgstr "테이블 이름 '%TABLENAME'에 데이터베이스에서 지원하지 않는 문자('%SPECIALCHAR')가 포함되어 있습니다."
 
 #: source/formwizard/dbwizres.src#RID_DB_TABLE_WIZARD_START + 42.String.Text
 msgid  "The field name '%FIELDNAME' contains a special character ('%SPECIALCHAR') that might not be supported by the database."
-msgstr ""
+msgstr "필드 이름 '%FIELDNAME'에 데이터베이스에서 지원하지 않는 특수 문자('%SPECIALCHAR')가 포함되어 있습니다."
 
 #: source/formwizard/dbwizres.src#RID_DB_TABLE_WIZARD_START + 43.String.Text
 msgid  "Field"
@@ -1593,11 +1593,11 @@ msgstr "선택된 필드 제거"
 
 #: source/formwizard/dbwizres.src#RID_DB_TABLE_WIZARD_START + 47.String.Text
 msgid  "The field cannot be inserted because this would exceed the maximum number of %COUNT possible fields in the database table"
-msgstr ""
+msgstr "데이터베이스 테이블에 허용되는 최대 필드 수인 %COUNT을(를) 초과하게 되므로 필드를 삽입할 수 없습니다."
 
 #: source/formwizard/dbwizres.src#RID_DB_TABLE_WIZARD_START + 48.String.Text
 msgid  "The name '%TABLENAME' already exists.\nPlease enter another name."
-msgstr ""
+msgstr "'%TABLENAME'은(는) 이미 있는 이름입니다.\n다른 이름을 입력하십시오."
 
 #: source/formwizard/dbwizres.src#RID_DB_TABLE_WIZARD_START + 49.String.Text
 msgid  "Catalog of the table"
@@ -1733,7 +1733,7 @@ msgstr "페이지 디자인"
 
 #: source/formwizard/dbwizres.src#RID_LETTERWIZARDDIALOG_START + 31.String.Text
 msgid  "This wizard helps you to create a letter template. You can then use the template as the basis for writing letters as often as desired."
-msgstr ""
+msgstr "이 마법사는 편지 서식 파일 만들기를 도와줍니다. 그리고 나서 원할 때마다 이 서식 파일을 편지 쓰기의 기준으로 사용할 수 있습니다."
 
 #: source/formwizard/dbwizres.src#RID_LETTERWIZARDDIALOG_START + 32.String.Text
 msgid  "~Height:"
@@ -1801,11 +1801,11 @@ msgstr "바닥글"
 
 #: source/formwizard/dbwizres.src#RID_LETTERWIZARDDIALOG_START + 48.String.Text
 msgid  "This wizard creates a letter template which enables you to create multiple letters with the same layout and settings."
-msgstr ""
+msgstr "이 마법사는 레이아웃과 설정이 동일한 여러 편지를 만드는 데 사용할 수 있는 편지 서식 파일을 만듭니다."
 
 #: source/formwizard/dbwizres.src#RID_LETTERWIZARDDIALOG_START + 49.String.Text
 msgid  "To create another new letter out of the template just navigate to the template location and double-click it."
-msgstr ""
+msgstr "서식 파일을 바탕으로 다른 새 편지를 만들려면 이 서식 파일 위치로 이동하여 두 번 클릭하면 됩니다."
 
 #: source/formwizard/dbwizres.src#RID_LETTERWIZARDDIALOG_START + 50.String.Text
 msgid  "Template name:"
@@ -1957,7 +1957,7 @@ msgstr "페이지 디자인"
 
 #: source/formwizard/dbwizres.src#RID_FAXWIZARDDIALOG_START + 17.String.Text
 msgid  "This wizard helps you to create a fax template. The template can then be used to create a fax whenever needed."
-msgstr ""
+msgstr "이 마법사는 팩스 서식 파일 만들기를 도와줍니다. 그런 다음 필요할 때마다 이 서식 파일을 사용하여 팩스를 만들 수 있습니다."
 
 #: source/formwizard/dbwizres.src#RID_FAXWIZARDDIALOG_START + 18.String.Text
 msgid  "Return address"
@@ -1981,11 +1981,11 @@ msgstr "바닥글"
 
 #: source/formwizard/dbwizres.src#RID_FAXWIZARDDIALOG_START + 23.String.Text
 msgid  "This wizard creates a fax template which enables you to create multiple faxes with the same layout and settings."
-msgstr ""
+msgstr "이 마법사는 레이아웃과 설정이 동일한 여러 팩스를 만드는 데 사용할 수 있는 팩스 서식 파일을 만듭니다."
 
 #: source/formwizard/dbwizres.src#RID_FAXWIZARDDIALOG_START + 24.String.Text
 msgid  "To create another new fax out of the template, go to the location where you saved the template and double-click the file."
-msgstr ""
+msgstr "서식 파일을 바탕으로 다른 새 팩스를 만들려면 서식 파일을 저장한 위치로 가서 해당 파일을 두 번 클릭하십시오."
 
 #: source/formwizard/dbwizres.src#RID_FAXWIZARDDIALOG_START + 25.String.Text
 msgid  "Template Name:"
@@ -2121,7 +2121,7 @@ msgstr "웹 마법사"
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +2.String.Text
 msgid  "This Web Wizard is to aid you in publishing documents on the Internet.\n\nIt will convert the documents so that they can be viewed by a web browser. In addition, it will generate a Table of Contents page with links for easy access to the documents. The Web Wizard will also allow you to customize the design and layout of your web site.\n\nYou will be able to keep the documents you have published on the web up-to-date and add or remove documents at any time."
-msgstr ""
+msgstr "이 웹 마법사는 문서를 인터넷에 게시할 수 있도록 도와 줍니다.\n\n이 마법사는 웹 브라우저에서 볼 수 있도록 문서를 변환합니다. 또한 문서에 쉽게 액세스하기 위한 링크가 있는 목차 페이지를 생성합니다. 또한 웹 마법사를 사용하면 웹 사이트의 디자인 및 레이아웃을 사용자 정의할 수 있습니다.\n\n웹에 게시한 문서를 최신 상태로 유지할 수 있고 언제든지 문서를 추가하거나 제거할 수 있습니다."
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +4.String.Text
 msgid  "~Delete"
@@ -2305,7 +2305,7 @@ msgstr "선택한 레이아웃을 사용자 정의합니다."
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +61.String.Text
 msgid  "Include the following information for each document in the table of contents:"
-msgstr ""
+msgstr "목차의 각 문서에 대한 다음 정보를 포함합니다."
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +62.String.Text
 msgid  "Optimize the layout for screen resolution:"
@@ -2345,19 +2345,19 @@ msgstr "로컬 대상 '%FILENAME'은(는) 파일입니다."
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +75.String.Text
 msgid  "The ZIP target '%FILENAME' already exists. Do you want to overwrite the existing target? "
-msgstr ""
+msgstr "ZIP 대상 '%FILENAME'이(가) 이미 있습니다. 기존 대상을 덮어쓰시겠습니까? "
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +76.String.Text
 msgid  "The FTP target directory '%FILENAME' is not empty. Some files might be overwritten. Do you want to continue?"
-msgstr ""
+msgstr "FTP 대상 디렉토리 '%FILENAME'이(가) 비어 있지 않습니다. 일부 파일을 덮어쓸 수 있습니다. 계속하시겠습니까?"
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +77.String.Text
 msgid  "The local target directory '%FILENAME' is not empty. Some files might be overwritten. Do you want to continue?"
-msgstr ""
+msgstr "로컬 대상 디렉토리 '%FILENAME'이(가) 비어 있지 않습니다. 일부 파일을 덮어쓸 수 있습니다. 계속하시겠습니까?"
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +78.String.Text
 msgid  "Settings already exist under the given name. Do you want to overwrite the existing settings? "
-msgstr ""
+msgstr "지정한 이름에 대한 설정이 이미 있습니다. 기존 설정을 덮어쓰시겠습니까? "
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +79.String.Text
 msgid  "Exporting documents..."
@@ -2457,7 +2457,7 @@ msgstr "레이아웃 파일을 복사하는 중 오류가 발생했습니다. "
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +108.String.Text
 msgid  "An error occurred while gathering document information for '%FILENAME'. "
-msgstr ""
+msgstr "'%FILENAME'에 대한 문서 정보를 수집하는 중 오류가 발생했습니다. "
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +109.String.Text
 msgid  "An error occurred while exporting the document '%FILENAME'."
@@ -2473,7 +2473,7 @@ msgstr "'%FILENAME' 문서를 내보내는 중 보안 오류가 발생했습니�
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +112.String.Text
 msgid  "An input/output error occurred while exporting the document '%FILENAME'."
-msgstr ""
+msgstr "'%FILENAME' 문서를 내보내는 중 입/출력 오류가 발생했습니다."
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +113.String.Text
 msgid  "An error occurred while copying media files to the temporary directory."
@@ -2541,7 +2541,7 @@ msgstr "미리보기"
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +130.String.Text
 msgid  "The selected settings will be deleted.\n\nDo you really want to delete these settings? "
-msgstr ""
+msgstr "선택한 설정을 삭제합니다.\n\n이 설정을 삭제하시겠습니까? "
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +131.String.Text
 msgid  "%NUMBER pages"
@@ -2609,19 +2609,19 @@ msgstr "FTP 디렉토리 '%FILENAME'을(를) 만들 수 없습니다."
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +147.String.Text
 msgid  "The FTP directory '%FILENAME' does not exist. \nCreate the directory now?"
-msgstr ""
+msgstr "FTP 디렉토리 '%FILENAME'이(가) 없습니다.! \n지금 디렉토리를 만드시겠습니까?"
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +148.String.Text
 msgid  "The Zip file '%FILENAME' cannot be created: a directory of the same name already exists."
-msgstr ""
+msgstr "Zip 파일 '%FILENAME'을(를) 만들 수 없습니다. 동일한 이름을 가진 디렉토리가 이미 있습니다."
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +149.String.Text
 msgid  "The local directory '%FILENAME' cannot be created. \nPlease check your write-access."
-msgstr ""
+msgstr "로컬 디렉토리 '%FILENAME'을(를) 만들 수 없습니다. \n쓰기 권한이 있는지 확인하십시오."
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +150.String.Text
 msgid  "The local directory '%FILENAME' does not exist. \nCreate the directory now?"
-msgstr ""
+msgstr "로컬 디렉토리 '%FILENAME'이(가) 없습니다. \n지금 디렉토리를 만드시겠습니까?"
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +151.String.Text
 msgid  "Size: %NUMBERKB"
@@ -2757,7 +2757,7 @@ msgstr "프로토콜 기록 양식 포함"
 
 #: source/formwizard/dbwizres.src#RID_AGENDAWIZARDDIALOG_START +13.String.Text
 msgid  "This wizard helps you to create an agenda template. The template can then be used to create an agenda whenever needed."
-msgstr ""
+msgstr "이 마법사는 일정 서식 파일 만들기를 도와줍니다. 그런 다음 필요할 때마다 이 서식 파일을 사용하여 일정을 만들 수 있습니다."
 
 #: source/formwizard/dbwizres.src#RID_AGENDAWIZARDDIALOG_START +14.String.Text
 msgid  "Time:"
@@ -2773,7 +2773,7 @@ msgstr "위치:"
 
 #: source/formwizard/dbwizres.src#RID_AGENDAWIZARDDIALOG_START +17.String.Text
 msgid  "Placeholders will be used in empty fields. You can replace placeholders with text later."
-msgstr ""
+msgstr "자리 표시자는 빈 필드에 사용합니다. 나중에 자리 표시자를 텍스트로 바꿀 수 있습니다."
 
 #: source/formwizard/dbwizres.src#RID_AGENDAWIZARDDIALOG_START +18.String.Text
 msgid  "..."
@@ -2785,7 +2785,7 @@ msgstr "이 서식 파일로부터 일정 만들기(~A)"
 
 #: source/formwizard/dbwizres.src#RID_AGENDAWIZARDDIALOG_START +20.String.Text
 msgid  "To create a new agenda out of the template, go to the location where you saved the template and double-click the file."
-msgstr ""
+msgstr "서식 파일을 기반으로 새 일정을 만들려면 서식 파일을 저장한 위치로 가서 해당 파일을 두 번 클릭하십시오."
 
 #: source/formwizard/dbwizres.src#RID_AGENDAWIZARDDIALOG_START +21.String.Text
 msgid  "Agenda item"
@@ -2829,7 +2829,7 @@ msgstr "시설 담당자"
 
 #: source/formwizard/dbwizres.src#RID_AGENDAWIZARDDIALOG_START +31.String.Text
 msgid  "The agenda template will include placeholders for the names of the selected people. When creating an agenda from the template, you can replace these placeholder with the appropriate names."
-msgstr ""
+msgstr "일정 서식 파일에는 선택한 사람의 이름을 나타내는 자리 표시자가 포함됩니다. 서식 파일로부터 일정을 만들 때 이러한 자리 표시자를 해당 이름으로 바꿀 수 있습니다."
 
 #: source/formwizard/dbwizres.src#RID_AGENDAWIZARDDIALOG_START +32.String.Text
 msgid  "Type of meeting"
@@ -2857,7 +2857,7 @@ msgstr "날짜:"
 
 #: source/formwizard/dbwizres.src#RID_AGENDAWIZARDDIALOG_START +39.String.Text
 msgid  "This wizard creates an agenda template which enables you to create multiple agendas with the same layout and settings."
-msgstr ""
+msgstr "이 마법사는 레이아웃과 설정이 동일한 여러 일정을 만드는 데 사용할 수 있는 일정 서식 파일을 만듭니다."
 
 #: source/formwizard/dbwizres.src#RID_AGENDAWIZARDDIALOG_START +40.String.Text
 msgid  "Page design:"
@@ -3009,11 +3009,11 @@ msgstr "닫기(~C)"
 
 #: source/importwizard/importwi.src#sWelcometextLabel1.String.Text
 msgid  "This wizard converts documents in %PRODUCTNAME format and Microsoft Office documents to the new OpenDocument format."
-msgstr ""
+msgstr "이 마법사는 %PRODUCTNAME 형식의 문서와 Microsoft Office 문서를 새 OpenDocument 형식으로 변환합니다."
 
 #: source/importwizard/importwi.src#sWelcometextLabel2.String.Text
 msgid  "Please note that when converting Microsoft documents any attached VBA macros lose their functionality."
-msgstr ""
+msgstr "Microsoft Office 문서를 변환할 때,첨부된 VBA매크로는 그 기능을 상실한다는 사실을 유의하십시오."
 
 #: source/importwizard/importwi.src#sWelcometextLabel3.String.Text
 msgid  "Select the document type for conversion:"
@@ -3241,59 +3241,59 @@ msgstr "이 파일 및 문서들은 다음의 디렉토리로 내보내집니다
 
 #: source/importwizard/importwi.src#sSumSOTextDocuments.String.Text
 msgid  "All %PRODUCTNAME text documents contained in the following directory will be imported:"
-msgstr ""
+msgstr "다음 디렉토리에 있는 모든 %PRODUCTNAME 텍스트 문서를 가져옵니다:"
 
 #: source/importwizard/importwi.src#sSumSOTableDocuments.String.Text
 msgid  "All %PRODUCTNAME spreadsheets contained in the following directory will be imported:"
-msgstr ""
+msgstr "다음 디렉토리에 있는 모든 %PRODUCTNAME 스프레드시트를 가져옵니다:"
 
 #: source/importwizard/importwi.src#sSumSODrawDocuments.String.Text
 msgid  "All %PRODUCTNAME drawing and presentation documents contained in the following directory will be imported:"
-msgstr ""
+msgstr "다음 디렉토리에 있는 모든 %PRODUCTNAME 그리기 및 프레젠테이션 문서를 가져옵니다:"
 
 #: source/importwizard/importwi.src#sSumSOMathDocuments.String.Text
 msgid  "All %PRODUCTNAME formula documents contained in the following directory will be imported:"
-msgstr ""
+msgstr "다음 디렉토리에 있는 모든 %PRODUCTNAME 수식 문서를 가져옵니다:"
 
 #: source/importwizard/importwi.src#sSumSOTextTemplates.String.Text
 msgid  "All %PRODUCTNAME text templates contained in the following directory will be imported:"
-msgstr ""
+msgstr "다음 디렉토리에 있는 모든 %PRODUCTNAME 텍스트 서식 파일을 가져옵니다:"
 
 #: source/importwizard/importwi.src#sSumSOTableTemplates.String.Text
 msgid  "All %PRODUCTNAME table templates contained in the following directory will be imported:"
-msgstr ""
+msgstr "다음 디렉토리에 있는 모든 %PRODUCTNAME 표 서식 파일을 가져옵니다:"
 
 #: source/importwizard/importwi.src#sSumSODrawTemplates.String.Text
 msgid  "All %PRODUCTNAME drawing and presentation templates contained in the following directory will be imported:"
-msgstr ""
+msgstr "다음 디렉토리에 있는 모든 %PRODUCTNAME 그리기 및 프레젠테이션 서식 파일을 가져옵니다:"
 
 #: source/importwizard/importwi.src#sSumSOGlobalDocuments.String.Text
 msgid  "All %PRODUCTNAME master documents contained in the following directory will be imported:"
-msgstr ""
+msgstr "다음 디렉토리에 있는 모든 %PRODUCTNAME 마스터 문서를 가져옵니다:"
 
 #: source/importwizard/importwi.src#sSumMSTextDocuments.String.Text
 msgid  "All Word documents contained in the following directory will be imported:"
-msgstr ""
+msgstr "다음 디렉토리에 있는 모든 Word 문서를 가져옵니다:"
 
 #: source/importwizard/importwi.src#sSumMSTableDocuments.String.Text
 msgid  "All Excel documents contained in the following directory will be imported:"
-msgstr ""
+msgstr "다음 디렉토리에 있는 모든 Excel 문서를 가져옵니다:"
 
 #: source/importwizard/importwi.src#sSumMSDrawDocuments.String.Text
 msgid  "All PowerPoint documents contained in the following directory will be imported:"
-msgstr ""
+msgstr "다음 디렉토리에 있는 모든 PowerPoint 문서를 가져옵니다:"
 
 #: source/importwizard/importwi.src#sSumMSTextTemplates.String.Text
 msgid  "All Word templates contained in the following directory will be imported:"
-msgstr ""
+msgstr "다음 디렉토리에 있는 모든 Word 서식 파일을 가져옵니다:"
 
 #: source/importwizard/importwi.src#sSumMSTableTemplates.String.Text
 msgid  "All Excel templates contained in the following directory will be imported:"
-msgstr ""
+msgstr "다음 디렉토리에 있는 모든 Excel 서식 파일을 가져옵니다:"
 
 #: source/importwizard/importwi.src#sSumMSDrawTemplates.String.Text
 msgid  "All PowerPoint templates contained in the following directory will be imported:"
-msgstr ""
+msgstr "다음 디렉토리에 있는 모든 PowerPoint 서식 파일을 가져옵니다:"
 
 #: source/schedule/schedule.src#dlgCalTitle.String.Text
 msgid  "%PRODUCTNAME Calendar"
@@ -3481,7 +3481,7 @@ msgstr "진행 상태"
 
 #: source/template/template.src#SAMPLES.String.Text
 msgid  "In order to use the full functionality of this sample, create a document that is based on this template."
-msgstr ""
+msgstr "이 예의 기능성을 완벽하게 이용할 수 있도록 하기 위해서는 이 서식 파일을 기초로 새 문서를 작성해야 합니다."
 
 #: source/template/template.src#SAMPLES + 1.String.Text
 msgid  "Remarks"
@@ -3493,7 +3493,7 @@ msgstr "테마 선택"
 
 #: source/template/template.src#STYLES + 1.String.Text
 msgid  "Error while saving the document to the clipboard! The following action cannot be undone."
-msgstr ""
+msgstr "문서를 클립보드에 저장하는 중 오류가 발생했습니다. 다음 작업을 실행 취소할 수 없습니다."
 
 #: source/template/template.src#STYLES + 2.String.Text
 msgid  "~Cancel"

@@ -65,7 +65,7 @@ msgstr "'#1' нэр хэдийнээ байгаа тул ахин олгох б�
 
 #: source/core/resource/strings.src#RID_STR_ERROR_WRONG_ARGUMENT.String.Text
 msgid  "You tried to set an illegal argument. Please have a look at '#1' for valid arguments."
-msgstr ""
+msgstr "Та хүчингүй аргумент олгохыг оролдлоо. Хүчинтэй аргументуудыг та '#1'-с олж болно."
 
 #: source/core/resource/strings.src#RID_STR_ARGUMENT_IS_NULL.String.Text
 msgid  "The element is invalid."
@@ -140,12 +140,20 @@ msgid  "Group Header"
 msgstr "Бүлэгийн толгой"
 
 #: source/ui/dlg/GroupsSorting.src#RID_GROUPS_SORTING.LST_HEADERLST.Default.StringList.item
+msgid  "Present"
+msgstr "Бэлэн буй"
+
+#: source/ui/dlg/GroupsSorting.src#RID_GROUPS_SORTING.LST_HEADERLST.Default.StringList.item
 msgid  "Not present"
 msgstr "Бэлэн бус"
 
 #: source/ui/dlg/GroupsSorting.src#RID_GROUPS_SORTING.FT_FOOTER.FixedText.Text
 msgid  "Group Footer"
 msgstr "Бүлэгийн хөл"
+
+#: source/ui/dlg/GroupsSorting.src#RID_GROUPS_SORTING.LST_FOOTERLST.Default.StringList.item
+msgid  "Present"
+msgstr "Бэлэн буй"
 
 #: source/ui/dlg/GroupsSorting.src#RID_GROUPS_SORTING.LST_FOOTERLST.Default.StringList.item
 msgid  "Not present"
@@ -229,7 +237,7 @@ msgstr "Зай"
 
 #: source/ui/dlg/GroupsSorting.src#STR_RPT_HELP_FIELD.String.Text
 msgid  "Select a field or type an expression to sort or group on."
-msgstr ""
+msgstr "Эрэмбэлэх эсвэл бүлэглэх ёстой талбарыг сонгох эсвэл илэрхийлэлийг өгнө үү."
 
 #: source/ui/dlg/GroupsSorting.src#STR_RPT_HELP_HEADER.String.Text
 msgid  "Display a header for this group?"
@@ -241,7 +249,7 @@ msgstr "Энэ бүлгийн хөлийг харуулах уу?"
 
 #: source/ui/dlg/GroupsSorting.src#STR_RPT_HELP_GROUPON.String.Text
 msgid  "Select the value or range of values that starts a new group."
-msgstr ""
+msgstr "Та шинэ бүлгийн эхлэлийг тодорхойлох утга эсвэл утгын мужийг сонгоно уу."
 
 #: source/ui/dlg/GroupsSorting.src#STR_RPT_HELP_INTERVAL.String.Text
 msgid  "Interval or number of characters to group on."
@@ -253,15 +261,7 @@ msgstr "Бүлгийг нэг хуудсанд хамт барих уу?"
 
 #: source/ui/dlg/GroupsSorting.src#STR_RPT_HELP_SORT.String.Text
 msgid  "Select ascending or descending sort order. Ascending means from A to Z or 0 to 9"
-msgstr ""
-
-#: source/ui/dlg/GroupsSorting.src#RID_GROUPS_SORTING.LST_HEADERLST.Default.StringList.item
-msgid  "Present"
-msgstr "Бэлэн буй"
-
-#: source/ui/dlg/GroupsSorting.src#RID_GROUPS_SORTING.LST_FOOTERLST.Default.StringList.item
-msgid  "Present"
-msgstr "Бэлэн буй"
+msgstr "Та өсөх эсвэл буурах эрэмбэлэлтийг сонгоно уу. Өсөх нь A аас Я эсвэл 0 -с 9 хүртэл гэсэн үг"
 
 #: source/ui/dlg/PageNumber.src#RID_PAGENUMBERS.ModalDialog.Text
 msgid  "Page Numbers"
@@ -300,6 +300,14 @@ msgid  "Alignment:"
 msgstr "Жигдрүүлэлт:"
 
 #: source/ui/dlg/PageNumber.src#RID_PAGENUMBERS.LST_ALIGNMENT.Default.StringList.item
+msgid  "Left"
+msgstr "Зүүн"
+
+#: source/ui/dlg/PageNumber.src#RID_PAGENUMBERS.LST_ALIGNMENT.Default.StringList.item
+msgid  "Center"
+msgstr "Төв"
+
+#: source/ui/dlg/PageNumber.src#RID_PAGENUMBERS.LST_ALIGNMENT.Default.StringList.item
 msgid  "Right"
 msgstr "баруун"
 
@@ -312,20 +320,12 @@ msgid  "~Help"
 msgstr "~Тусламж"
 
 #: source/ui/dlg/PageNumber.src#STR_RPT_PN_PAGE.String.Text
-msgid  ""Page " & #PAGENUMBER#"
-msgstr ""
+msgid  "\"Page \" & #PAGENUMBER#"
+msgstr "\"Хуудас \" & #PAGENUMBER#"
 
 #: source/ui/dlg/PageNumber.src#STR_RPT_PN_PAGE_OF.String.Text
-msgid  " & " of " & #PAGECOUNT#"
-msgstr ""
-
-#: source/ui/dlg/PageNumber.src#RID_PAGENUMBERS.LST_ALIGNMENT.Default.StringList.item
-msgid  "Left"
-msgstr "Зүүн"
-
-#: source/ui/dlg/PageNumber.src#RID_PAGENUMBERS.LST_ALIGNMENT.Default.StringList.item
-msgid  "Center"
-msgstr "Төв"
+msgid  " & \" of \" & #PAGECOUNT#"
+msgstr "#PAGECOUNT# -н"
 
 #: source/ui/dlg/dlgpage.src#RID_PAGEDIALOG_PAGE.TabDialog.Text
 msgid  "Page Setup"
@@ -401,11 +401,11 @@ msgstr "Тэмдэгт"
 
 #: source/ui/dlg/dlgpage.src#RID_PAGEDIALOG_LINE.TabDialog.Text
 msgid  "Line"
-msgstr "Шугам"
+msgstr "Шулуун"
 
 #: source/ui/dlg/dlgpage.src#RID_PAGEDIALOG_LINE.1.RID_SVXPAGE_LINE.PageItem.Text
 msgid  "Line"
-msgstr "Шулуун"
+msgstr "Шугам"
 
 #: source/ui/dlg/dlgpage.src#RID_PAGEDIALOG_LINE.1.RID_SVXPAGE_LINE_DEF.PageItem.Text
 msgid  "Line Styles"
@@ -454,6 +454,10 @@ msgstr "Шинэ функц"
 #: source/ui/dlg/Navigator.src#RID_MENU_NAVIGATOR.SID_SHOW_PROPERTYBROWSER.MenuItem.Text
 msgid  "Properties..."
 msgstr "Шинж чанар..."
+
+#: source/ui/dlg/CondFormat.src#WIN_CONDITION.LB_COND_TYPE.Default.StringList.item
+msgid  "Field Value Is"
+msgstr "Талбарын утга нь"
 
 #: source/ui/dlg/CondFormat.src#WIN_CONDITION.LB_COND_TYPE.Default.StringList.item
 msgid  "Expression Is"
@@ -550,10 +554,6 @@ msgstr ""
 #: source/ui/dlg/CondFormat.src#ADDFIELD_HELP_FIELD.FixedText.Text
 msgid  "Highlight the fields to insert into the selected section of the template, then click Insert or press Enter."
 msgstr ""
-
-#: source/ui/dlg/CondFormat.src#WIN_CONDITION.LB_COND_TYPE.Default.StringList.item
-msgid  "Field Value Is"
-msgstr "Талбарын утга нь"
 
 #: source/ui/dlg/DateTime.src#RID_DATETIME_DLG.ModalDialog.Text
 msgid  "Date and Time"
@@ -833,7 +833,7 @@ msgstr "Туслах талбарыг холбо"
 
 #: source/ui/inspection/inspection.src#RID_STR_EXPLANATION.String.Text
 msgid  "Charts can be used to display detailed data about the current record of the report. To do this, you can specify which columns in the chart match which columns in the report."
-msgstr ""
+msgstr "Идэвхтэй өгөгдлийн бичлэгийн нарийвчилсан өгөгдлийг үзүүлэхэд диаграммыг хэрэглэх боломжтой. Үүний тулд та ямар диаграммын ямар баганад тайлангийн ямар багана харгалзахыг өгнө үү."
 
 #: source/ui/inspection/inspection.src#RID_STR_DETAILLABEL.String.Text
 msgid  "Chart"
@@ -1037,7 +1037,7 @@ msgstr "~Тайлангийн нэр"
 
 #: source/ui/report/report.src#RID_STR_UNDO_REMOVE_GROUP.String.Text
 msgid  "Delete Group"
-msgstr "Бүлэг ~устгах"
+msgstr "Бүлэг устгах"
 
 #: source/ui/report/report.src#RID_STR_UNDO_APPEND_GROUP.String.Text
 msgid  "Add Group"
@@ -1241,14 +1241,10 @@ msgstr "Агуулгыг холбохоос нааш тайланг гүйцэт
 
 #: source/ui/report/report.src#RID_ERR_NO_OBJECTS.String.Text
 msgid  "The report can not be executed unless at least one object has been inserted."
-msgstr ""
+msgstr "Ядаж нэг объект оруулахаас нааш тайланг гүйцэтгэх боломжгүй."
 
 #: source/ui/report/report.src#RID_STR_UNDO_SHRINK.String.Text
 msgid  "Shrink Section"
-msgstr ""
-
-#: source/ui/report/report.src#RID_STR_INSERT.String.Text
-msgid  "Insert"
 msgstr ""
 
 #: source/ui/report/report.src#RID_STR_DETAIL.String.Text
@@ -1270,3 +1266,7 @@ msgstr "Тайлангийн толгой"
 #: source/ui/report/report.src#RID_STR_REPORT_FOOTER.String.Text
 msgid  "Report Footer"
 msgstr "Тайлангийн хөл"
+
+#: source/ui/report/report.src#RID_STR_INSERT.String.Text
+msgid  "Insert"
+msgstr ""

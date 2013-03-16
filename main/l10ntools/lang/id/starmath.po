@@ -137,7 +137,7 @@ msgstr "~Baku"
 
 #: source/smres.src#RID_DISTANCEDIALOG.ModalDialog.Text
 msgid  "Spacing"
-msgstr "Spasi"
+msgstr "Jarak"
 
 #: source/smres.src#RID_DISTANCEDIALOG.1.MetricField.CustomUnitText
 msgid  "%"
@@ -169,7 +169,7 @@ msgstr "Kategori"
 
 #: source/smres.src#RID_DISTANCEDIALOG.1.1.String.Text
 msgid  "Spacing"
-msgstr "Jarak"
+msgstr "Spasi"
 
 #: source/smres.src#RID_DISTANCEDIALOG.1.2.String.Text
 msgid  "~Spacing"
@@ -353,7 +353,7 @@ msgstr "Format cetak"
 
 #: source/smres.src#RID_PRINTOPTIONPAGE.RB_ORIGINAL_SIZE.RadioButton.Text
 msgid  "O~riginal size"
-msgstr "Uku~ran asli"
+msgstr "Ukuran ~asli"
 
 #: source/smres.src#RID_PRINTOPTIONPAGE.RB_FIT_TO_PAGE.RadioButton.Text
 msgid  "Fit to ~page"
@@ -445,11 +445,11 @@ msgstr "~Hapus"
 
 #: source/smres.src#RID_NOMATHTYPEFACEWARNING.WarningBox.Message
 msgid  "The 'StarMath' font has not been installed.\nWithout this font %PRODUCTNAME Math cannot function correctly.\nPlease install this font and restart %PRODUCTNAME Math."
-msgstr ""
+msgstr "Fonta \"StarMath\" belum terpasang.\nTanpa fonta ini, %PRODUCTNAME Math tidak dapat berfungsi dengan benar.\nPasang fonta tersebut dan jalankan ulang %PRODUCTNAME Math."
 
 #: source/smres.src#RID_DEFAULTSAVEQUERY.QueryBox.Message
 msgid  "Should the changes be saved as defaults?\n\nThese changes will apply for all new formulas."
-msgstr ""
+msgstr "Simpan perubahan yang dibuat sebagai setelan utama?\n\nPerubahan ini akan terlihat untuk semua rumus baru."
 
 #: source/smres.src#RID_FONTREGULAR.String.Text
 msgid  "Standard"
@@ -558,6 +558,10 @@ msgstr "Sans"
 #: source/smres.src#RID_FONTMENU.7.MenuItem.Text
 msgid  "Fixed"
 msgstr "Tetap"
+
+#: source/smres.src#CMDBOXWINDOW_TEXT.#define.Text
+msgid  "Commands"
+msgstr "Perintah"
 
 #: source/smres.src#RID_DOCUMENTSTR.String.Text
 msgid  "Formula"
@@ -694,10 +698,6 @@ msgstr "Sesuai ~halaman"
 #: source/smres.src#RID_PRINTUIOPTIONS.item9.ItemList.item
 msgid  "~Scaling"
 msgstr "~Skala"
-
-#: source/smres.src#CMDBOXWINDOW_TEXT.#define.Text
-msgid  "Commands"
-msgstr "Perintah"
 
 #: source/commands.src#RID_COMMANDMENU.RID_UNBINOPS_MENU.MenuItem.Text
 msgid  "~Unary/Binary Operators"

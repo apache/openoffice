@@ -101,7 +101,7 @@ msgstr "Sorting and Grouping"
 
 #: source/ui/dlg/GroupsSorting.src#RID_GROUPS_SORTING.FL_SEPARATOR2.FixedLine.Text
 msgid  "Groups"
-msgstr ""
+msgstr "_: GroupsSorting.src#RID_GROUPS_SORTING.FL_SEPARATOR2.fixedline.text\nGroups"
 
 #: source/ui/dlg/GroupsSorting.src#RID_GROUPS_SORTING.FT_MOVELABEL.FixedText.Text
 msgid  "Group actions"
@@ -140,16 +140,24 @@ msgid  "Group Header"
 msgstr "Group Header"
 
 #: source/ui/dlg/GroupsSorting.src#RID_GROUPS_SORTING.LST_HEADERLST.Default.StringList.item
+msgid  "Present"
+msgstr "_: GroupsSorting.src#RID_GROUPS_SORTING.LST_FOOTERLST.1.stringlist.text\nPresent"
+
+#: source/ui/dlg/GroupsSorting.src#RID_GROUPS_SORTING.LST_HEADERLST.Default.StringList.item
 msgid  "Not present"
-msgstr ""
+msgstr "_: GroupsSorting.src#RID_GROUPS_SORTING.LST_FOOTERLST.2.stringlist.text\nNot present"
 
 #: source/ui/dlg/GroupsSorting.src#RID_GROUPS_SORTING.FT_FOOTER.FixedText.Text
 msgid  "Group Footer"
 msgstr "Group Footer"
 
 #: source/ui/dlg/GroupsSorting.src#RID_GROUPS_SORTING.LST_FOOTERLST.Default.StringList.item
+msgid  "Present"
+msgstr "_: GroupsSorting.src#RID_GROUPS_SORTING.LST_HEADERLST.1.stringlist.text\nPresent"
+
+#: source/ui/dlg/GroupsSorting.src#RID_GROUPS_SORTING.LST_FOOTERLST.Default.StringList.item
 msgid  "Not present"
-msgstr ""
+msgstr "_: GroupsSorting.src#RID_GROUPS_SORTING.LST_HEADERLST.2.stringlist.text\nNot present"
 
 #: source/ui/dlg/GroupsSorting.src#RID_GROUPS_SORTING.FT_GROUPON.FixedText.Text
 msgid  "Group On"
@@ -253,15 +261,7 @@ msgstr "Keep group together on one page?"
 
 #: source/ui/dlg/GroupsSorting.src#STR_RPT_HELP_SORT.String.Text
 msgid  "Select ascending or descending sort order. Ascending means from A to Z or 0 to 9"
-msgstr ""
-
-#: source/ui/dlg/GroupsSorting.src#RID_GROUPS_SORTING.LST_HEADERLST.Default.StringList.item
-msgid  "Present"
-msgstr ""
-
-#: source/ui/dlg/GroupsSorting.src#RID_GROUPS_SORTING.LST_FOOTERLST.Default.StringList.item
-msgid  "Present"
-msgstr ""
+msgstr "Select ascending or descending sort order. Ascending means from A to Z or 0 to 9"
 
 #: source/ui/dlg/PageNumber.src#RID_PAGENUMBERS.ModalDialog.Text
 msgid  "Page Numbers"
@@ -269,7 +269,7 @@ msgstr "Page Numbers"
 
 #: source/ui/dlg/PageNumber.src#RID_PAGENUMBERS.FL_FORMAT.FixedLine.Text
 msgid  "Format"
-msgstr ""
+msgstr "_: PageNumber.src#RID_PAGENUMBERS.FL_FORMAT.fixedline.text\nFormat"
 
 #: source/ui/dlg/PageNumber.src#RID_PAGENUMBERS.RB_PAGE_N.RadioButton.Text
 msgid  "Page N"
@@ -281,7 +281,7 @@ msgstr "Page N of M"
 
 #: source/ui/dlg/PageNumber.src#RID_PAGENUMBERS.FL_POSITION.FixedLine.Text
 msgid  "Position"
-msgstr ""
+msgstr "_: PageNumber.src#RID_PAGENUMBERS.FL_POSITION.fixedline.text\nPosition"
 
 #: source/ui/dlg/PageNumber.src#RID_PAGENUMBERS.RB_PAGE_TOPPAGE.RadioButton.Text
 msgid  "Top of Page (Header)"
@@ -300,6 +300,14 @@ msgid  "Alignment:"
 msgstr "Alignment:"
 
 #: source/ui/dlg/PageNumber.src#RID_PAGENUMBERS.LST_ALIGNMENT.Default.StringList.item
+msgid  "Left"
+msgstr "Left"
+
+#: source/ui/dlg/PageNumber.src#RID_PAGENUMBERS.LST_ALIGNMENT.Default.StringList.item
+msgid  "Center"
+msgstr "Center"
+
+#: source/ui/dlg/PageNumber.src#RID_PAGENUMBERS.LST_ALIGNMENT.Default.StringList.item
 msgid  "Right"
 msgstr "Right"
 
@@ -309,23 +317,15 @@ msgstr "Show Number on First Page"
 
 #: source/ui/dlg/PageNumber.src#RID_PAGENUMBERS.PB_HELP.HelpButton.Text
 msgid  "~Help"
-msgstr ""
+msgstr "_: PageNumber.src#RID_PAGENUMBERS.PB_HELP.helpbutton.text\n~Help"
 
 #: source/ui/dlg/PageNumber.src#STR_RPT_PN_PAGE.String.Text
-msgid  ""Page " & #PAGENUMBER#"
-msgstr ""
+msgid  "\"Page \" & #PAGENUMBER#"
+msgstr "\"Page \" & #PAGENUMBER#"
 
 #: source/ui/dlg/PageNumber.src#STR_RPT_PN_PAGE_OF.String.Text
-msgid  " & " of " & #PAGECOUNT#"
-msgstr ""
-
-#: source/ui/dlg/PageNumber.src#RID_PAGENUMBERS.LST_ALIGNMENT.Default.StringList.item
-msgid  "Left"
-msgstr "Left"
-
-#: source/ui/dlg/PageNumber.src#RID_PAGENUMBERS.LST_ALIGNMENT.Default.StringList.item
-msgid  "Center"
-msgstr "Center"
+msgid  " & \" of \" & #PAGECOUNT#"
+msgstr " & \" of \" & #PAGECOUNT#"
 
 #: source/ui/dlg/dlgpage.src#RID_PAGEDIALOG_PAGE.TabDialog.Text
 msgid  "Page Setup"
@@ -333,23 +333,23 @@ msgstr "Page Setup"
 
 #: source/ui/dlg/dlgpage.src#RID_PAGEDIALOG_PAGE.1.RID_SVXPAGE_PAGE.PageItem.Text
 msgid  "Page"
-msgstr ""
+msgstr "_: dlgpage.src#RID_PAGEDIALOG_PAGE.1.RID_SVXPAGE_PAGE.pageitem.text\nPage"
 
 #: source/ui/dlg/dlgpage.src#RID_PAGEDIALOG_PAGE.1.RID_SVXPAGE_BACKGROUND.PageItem.Text
 msgid  "Background"
-msgstr ""
+msgstr "_: dlgpage.src#RID_PAGEDIALOG_CHAR.1.RID_PAGE_BACKGROUND.pageitem.text\nBackground"
 
 #: source/ui/dlg/dlgpage.src#RID_PAGEDIALOG_PAGE.1.PushButton.Text
 msgid  "Return"
-msgstr ""
+msgstr "_: dlgpage.src#RID_PAGEDIALOG_BACKGROUND.1.pushbutton.text\nReturn"
 
 #: source/ui/dlg/dlgpage.src#RID_PAGEDIALOG_PAGE.1.String.Text
 msgid  "Page"
-msgstr ""
+msgstr "_: dlgpage.src#RID_PAGEDIALOG_PAGE.1.string.text\nPage"
 
 #: source/ui/dlg/dlgpage.src#RID_PAGEDIALOG_PAGE.2.String.Text
 msgid  "Background"
-msgstr ""
+msgstr "_: dlgpage.src#RID_PAGEDIALOG_PAGE.1.RID_SVXPAGE_BACKGROUND.pageitem.text\nBackground"
 
 #: source/ui/dlg/dlgpage.src#RID_PAGEDIALOG_BACKGROUND.TabDialog.Text
 msgid  "Section Setup"
@@ -357,11 +357,11 @@ msgstr "Section Setup"
 
 #: source/ui/dlg/dlgpage.src#RID_PAGEDIALOG_BACKGROUND.1.PushButton.Text
 msgid  "Return"
-msgstr ""
+msgstr "_: dlgpage.src#RID_PAGEDIALOG_CHAR.1.pushbutton.text\nReturn"
 
 #: source/ui/dlg/dlgpage.src#RID_PAGEDIALOG_BACKGROUND.1.String.Text
 msgid  "Background"
-msgstr ""
+msgstr "_: dlgpage.src#RID_PAGEDIALOG_BACKGROUND.1.string.text\nBackground"
 
 #: source/ui/dlg/dlgpage.src#RID_PAGEDIALOG_CHAR.TabDialog.Text
 msgid  "Character Settings"
@@ -377,7 +377,7 @@ msgstr "Font Effects"
 
 #: source/ui/dlg/dlgpage.src#RID_PAGEDIALOG_CHAR.1.RID_PAGE_POSITION.PageItem.Text
 msgid  "Position"
-msgstr ""
+msgstr "_: dlgpage.src#RID_PAGEDIALOG_CHAR.1.RID_PAGE_POSITION.pageitem.text\nPosition"
 
 #: source/ui/dlg/dlgpage.src#RID_PAGEDIALOG_CHAR.1.RID_PAGE_TWOLN.PageItem.Text
 msgid  "Asian Layout"
@@ -385,7 +385,7 @@ msgstr "Asian Layout"
 
 #: source/ui/dlg/dlgpage.src#RID_PAGEDIALOG_CHAR.1.RID_PAGE_BACKGROUND.PageItem.Text
 msgid  "Background"
-msgstr ""
+msgstr "_: dlgpage.src#RID_PAGEDIALOG_PAGE.2.string.text\nBackground"
 
 #: source/ui/dlg/dlgpage.src#RID_PAGEDIALOG_CHAR.1.RID_PAGE_ALIGNMENT.PageItem.Text
 msgid  "Alignment"
@@ -393,7 +393,7 @@ msgstr "Alignment"
 
 #: source/ui/dlg/dlgpage.src#RID_PAGEDIALOG_CHAR.1.PushButton.Text
 msgid  "Return"
-msgstr ""
+msgstr "_: dlgpage.src#RID_PAGEDIALOG_LINE.1.pushbutton.text\nReturn"
 
 #: source/ui/dlg/dlgpage.src#RID_PAGEDIALOG_CHAR.1.String.Text
 msgid  "Character"
@@ -401,11 +401,11 @@ msgstr "Character"
 
 #: source/ui/dlg/dlgpage.src#RID_PAGEDIALOG_LINE.TabDialog.Text
 msgid  "Line"
-msgstr ""
+msgstr "_: dlgpage.src#RID_PAGEDIALOG_LINE.1.RID_SVXPAGE_LINE.pageitem.text\nLine"
 
 #: source/ui/dlg/dlgpage.src#RID_PAGEDIALOG_LINE.1.RID_SVXPAGE_LINE.PageItem.Text
 msgid  "Line"
-msgstr ""
+msgstr "_: dlgpage.src#RID_PAGEDIALOG_LINE.1.string.text\nLine"
 
 #: source/ui/dlg/dlgpage.src#RID_PAGEDIALOG_LINE.1.RID_SVXPAGE_LINE_DEF.PageItem.Text
 msgid  "Line Styles"
@@ -417,11 +417,11 @@ msgstr "Arrow Styles"
 
 #: source/ui/dlg/dlgpage.src#RID_PAGEDIALOG_LINE.1.PushButton.Text
 msgid  "Return"
-msgstr ""
+msgstr "_: dlgpage.src#RID_PAGEDIALOG_PAGE.1.pushbutton.text\nReturn"
 
 #: source/ui/dlg/dlgpage.src#RID_PAGEDIALOG_LINE.1.String.Text
 msgid  "Line"
-msgstr ""
+msgstr "_: dlgpage.src#RID_PAGEDIALOG_LINE.tabdialog.text\nLine"
 
 #: source/ui/dlg/Navigator.src#RID_NAVIGATOR.FloatingWindow.Text
 msgid  "Report navigator"
@@ -433,7 +433,7 @@ msgstr "Functions"
 
 #: source/ui/dlg/Navigator.src#RID_STR_GROUPS.String.Text
 msgid  "Groups"
-msgstr ""
+msgstr "_: Navigator.src#RID_STR_GROUPS.string.text\nGroups"
 
 #: source/ui/dlg/Navigator.src#RID_MENU_NAVIGATOR.SID_SORTINGANDGROUPING.MenuItem.Text
 msgid  "Sorting and Grouping..."
@@ -454,6 +454,10 @@ msgstr "New Function"
 #: source/ui/dlg/Navigator.src#RID_MENU_NAVIGATOR.SID_SHOW_PROPERTYBROWSER.MenuItem.Text
 msgid  "Properties..."
 msgstr "Properties..."
+
+#: source/ui/dlg/CondFormat.src#WIN_CONDITION.LB_COND_TYPE.Default.StringList.item
+msgid  "Field Value Is"
+msgstr "Field Value Is"
 
 #: source/ui/dlg/CondFormat.src#WIN_CONDITION.LB_COND_TYPE.Default.StringList.item
 msgid  "Expression Is"
@@ -505,7 +509,7 @@ msgstr "Conditional Formatting"
 
 #: source/ui/dlg/CondFormat.src#RID_CONDFORMAT.PB_HELP.HelpButton.Text
 msgid  "~Help"
-msgstr ""
+msgstr "_: CondFormat.src#RID_CONDFORMAT.PB_HELP.helpbutton.text\n~Help"
 
 #: source/ui/dlg/CondFormat.src#STR_NUMBERED_CONDITION.String.Text
 msgid  "Condition $number$"
@@ -521,7 +525,7 @@ msgstr "Font color"
 
 #: source/ui/dlg/CondFormat.src#STR_CHARBACKGROUND.String.Text
 msgid  "Background"
-msgstr ""
+msgstr "_: CondFormat.src#STR_CHARBACKGROUND.string.text\nBackground"
 
 #: source/ui/dlg/CondFormat.src#STR_TRANSPARENT.String.Text
 msgid  "No Fill"
@@ -551,10 +555,6 @@ msgstr ""
 msgid  "Highlight the fields to insert into the selected section of the template, then click Insert or press Enter."
 msgstr ""
 
-#: source/ui/dlg/CondFormat.src#WIN_CONDITION.LB_COND_TYPE.Default.StringList.item
-msgid  "Field Value Is"
-msgstr "Field Value Is"
-
 #: source/ui/dlg/DateTime.src#RID_DATETIME_DLG.ModalDialog.Text
 msgid  "Date and Time"
 msgstr "Date and Time"
@@ -565,7 +565,7 @@ msgstr "Include Date"
 
 #: source/ui/dlg/DateTime.src#RID_DATETIME_DLG.FT_DATE_FORMAT.FixedText.Text
 msgid  "Format"
-msgstr ""
+msgstr "_: DateTime.src#RID_DATETIME_DLG.FT_DATE_FORMAT.fixedtext.text\nFormat"
 
 #: source/ui/dlg/DateTime.src#RID_DATETIME_DLG.CB_TIME.CheckBox.Text
 msgid  "Include Time"
@@ -573,11 +573,11 @@ msgstr "Include Time"
 
 #: source/ui/dlg/DateTime.src#RID_DATETIME_DLG.FT_TIME_FORMAT.FixedText.Text
 msgid  "Format"
-msgstr ""
+msgstr "_: DateTime.src#RID_DATETIME_DLG.FT_TIME_FORMAT.fixedtext.text\nFormat"
 
 #: source/ui/dlg/DateTime.src#RID_DATETIME_DLG.PB_HELP.HelpButton.Text
 msgid  "~Help"
-msgstr ""
+msgstr "_: DateTime.src#RID_DATETIME_DLG.PB_HELP.helpbutton.text\n~Help"
 
 #: source/ui/inspection/inspection.src#RID_STR_PROPPAGE_DEFAULT.String.Text
 msgid  "General"
@@ -777,11 +777,11 @@ msgstr "Background color"
 
 #: source/ui/inspection/inspection.src#RID_STR_BACKTRANSPARENT.String.Text
 msgid  "Background Transparent"
-msgstr ""
+msgstr "_: inspection.src#RID_STR_BACKTRANSPARENT.string.text\nBackground Transparent"
 
 #: source/ui/inspection/inspection.src#RID_STR_CONTROLBACKGROUNDTRANSPARENT.String.Text
 msgid  "Background Transparent"
-msgstr ""
+msgstr "_: inspection.src#RID_STR_CONTROLBACKGROUNDTRANSPARENT.string.text\nBackground Transparent"
 
 #: source/ui/inspection/inspection.src#RID_STR_OVERLAP_OTHER_CONTROL.String.Text
 msgid  "This operation is not allowed. The control overlaps with another one."
@@ -949,7 +949,7 @@ msgstr "Section"
 
 #: source/ui/report/report.src#RID_STR_PROPTITLE_FUNCTION.String.Text
 msgid  "Function"
-msgstr ""
+msgstr "_: report.src#RID_STR_FUNCTION.string.text\nFunction"
 
 #: source/ui/report/report.src#RID_STR_PROPTITLE_GROUP.String.Text
 msgid  "Group"
@@ -1037,7 +1037,7 @@ msgstr "~Report name"
 
 #: source/ui/report/report.src#RID_STR_UNDO_REMOVE_GROUP.String.Text
 msgid  "Delete Group"
-msgstr ""
+msgstr "_: report.src#RID_STR_UNDO_REMOVE_GROUP.string.text\nDelete Group"
 
 #: source/ui/report/report.src#RID_STR_UNDO_APPEND_GROUP.String.Text
 msgid  "Add Group"
@@ -1073,7 +1073,7 @@ msgstr "Insert Group"
 
 #: source/ui/report/report.src#RID_STR_UNDO_UNGROUP.String.Text
 msgid  "Delete Group"
-msgstr ""
+msgstr "_: report.src#RID_STR_UNDO_UNGROUP.string.text\nDelete Group"
 
 #: source/ui/report/report.src#RID_STR_GROUPHEADER.String.Text
 msgid  "GroupHeader"
@@ -1193,7 +1193,7 @@ msgstr "Delete"
 
 #: source/ui/report/report.src#RID_STR_FUNCTION.String.Text
 msgid  "Function"
-msgstr ""
+msgstr "_: report.src#RID_STR_PROPTITLE_FUNCTION.string.text\nFunction"
 
 #: source/ui/report/report.src#RID_STR_COULD_NOT_CREATE_REPORT.String.Text
 msgid  "An error occurred while creating the report."
@@ -1247,10 +1247,6 @@ msgstr ""
 msgid  "Shrink Section"
 msgstr ""
 
-#: source/ui/report/report.src#RID_STR_INSERT.String.Text
-msgid  "Insert"
-msgstr ""
-
 #: source/ui/report/report.src#RID_STR_DETAIL.String.Text
 msgid  "Detail"
 msgstr ""
@@ -1269,4 +1265,8 @@ msgstr ""
 
 #: source/ui/report/report.src#RID_STR_REPORT_FOOTER.String.Text
 msgid  "Report Footer"
+msgstr ""
+
+#: source/ui/report/report.src#RID_STR_INSERT.String.Text
+msgid  "Insert"
 msgstr ""

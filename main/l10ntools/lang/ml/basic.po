@@ -249,7 +249,7 @@ msgstr "പുറമേനിന്നുള്ള പ്രയോഗം നി�
 
 #: source/classes/sb.src#RID_BASIC_START.SbERR_DDE_CONV_CLOSED & ERRCODE_RES_MASK.String.Text
 msgid  "DDE connection interrupted or modified."
-msgstr ""
+msgstr "ഡിഡിഇ കണക്ഷന്‍ തടസ്സപ്പെടുത്തിയിരിക്കുന്നു അല്ലെങ്കില്‍ മാറ്റം വരുത്തിയിരിക്കുന്നു."
 
 #: source/classes/sb.src#RID_BASIC_START.SbERR_DDE_NO_CHANNEL & ERRCODE_RES_MASK.String.Text
 msgid  "DDE method invoked with no channel open."
@@ -269,7 +269,7 @@ msgstr "ലിങ്ക് ഒട്ടിക്കുന്ന പ്രക്�
 
 #: source/classes/sb.src#RID_BASIC_START.SbERR_DDE_LINK_INV_TOPIC & ERRCODE_RES_MASK.String.Text
 msgid  "Link mode cannot be set due to invalid link topic."
-msgstr ""
+msgstr "റായ ലിങ്ക് വ തെറ്റായതിനാല്‍ ലിങ്ക് മോഡ് സജ്ജമാക്കുവാന്‍ സാധ്യമായില്ല.ിഷയം"
 
 #: source/classes/sb.src#RID_BASIC_START.SbERR_DDE_DLL_NOT_FOUND & ERRCODE_RES_MASK.String.Text
 msgid  "DDE requires the DDEML.DLL file."
@@ -333,11 +333,11 @@ msgstr "പറഞ്ഞിരിക്കുന്ന ഒബ്ജക്ട് �
 
 #: source/classes/sb.src#RID_BASIC_START.SbERR_NO_NAMED_ARGS & ERRCODE_RES_MASK.String.Text
 msgid  "Named arguments are not supported by given object."
-msgstr ""
+msgstr "പറഞ്ഞിരിക്കുന്ന ഒബ്ജക്ട് നെയിമ്ഡ് ആര്‍ഗ്യുമെന്റുകള്‍ പിന്തുണയ്ക്കുന്നില്ല."
 
 #: source/classes/sb.src#RID_BASIC_START.SbERR_BAD_LOCALE & ERRCODE_RES_MASK.String.Text
 msgid  "The current locale setting is not supported by the given object."
-msgstr ""
+msgstr "പറഞ്ഞിരിക്കുന്ന ഒബ്ജക്ട് നിലവിലുള്ള ലൊക്കെയില്‍ സജ്ജീകരണം പിന്തുണയ്ക്കുന്നില്ല."
 
 #: source/classes/sb.src#RID_BASIC_START.SbERR_NAMED_NOT_FOUND & ERRCODE_RES_MASK.String.Text
 msgid  "Named argument not found."
@@ -425,7 +425,7 @@ msgstr "വേരിയബിള്‍ $(ARG1) നിഷ്കര്‍ഷിച
 
 #: source/classes/sb.src#RID_BASIC_START.SbERR_PROC_DEFINED & ERRCODE_RES_MASK.String.Text
 msgid  "Sub procedure or function procedure $(ARG1) already defined."
-msgstr ""
+msgstr "ഉപ പ്രക്രിയ അല്ലെങ്കില്‍ ഫംങ്ഷന്‍ പ്രക്രിയ $(ARG1) നിലവില്‍ നിഷ്കര്‍ഷിച്ചിരിക്കുന്നു."
 
 #: source/classes/sb.src#RID_BASIC_START.SbERR_LABEL_DEFINED & ERRCODE_RES_MASK.String.Text
 msgid  "Label $(ARG1) already defined."

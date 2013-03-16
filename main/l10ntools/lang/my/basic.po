@@ -337,7 +337,7 @@ msgstr "ပေးထားသော အရာ၀တ္ထုသည် အမည�
 
 #: source/classes/sb.src#RID_BASIC_START.SbERR_BAD_LOCALE & ERRCODE_RES_MASK.String.Text
 msgid  "The current locale setting is not supported by the given object."
-msgstr ""
+msgstr "ပေးထားသော အရာဝတ္ထုသည် လက်ရှိနေရာယူထားသော ပြင်ဆင်မှုအား အထောက်အကူမပြုခဲ့ပါ။"
 
 #: source/classes/sb.src#RID_BASIC_START.SbERR_NAMED_NOT_FOUND & ERRCODE_RES_MASK.String.Text
 msgid  "Named argument not found."
@@ -349,7 +349,7 @@ msgstr "ကိန်းရှင်သည်မရွေးချယ်နို
 
 #: source/classes/sb.src#RID_BASIC_START.SbERR_WRONG_ARGS & ERRCODE_RES_MASK.String.Text
 msgid  "Invalid number of arguments."
-msgstr "မှားယွင်းသောကိန်းရှင်အရေအတွက်။"
+msgstr "ကိန်းရှင်များအရေအတွက်မမှန်ကန်ပါ။"
 
 #: source/classes/sb.src#RID_BASIC_START.SbERR_NOT_A_COLL & ERRCODE_RES_MASK.String.Text
 msgid  "Object is not a list."
@@ -425,7 +425,7 @@ msgstr "ကိန်းရှင်$(ARG1) အဓိပ္ပာယ်ဖွင�
 
 #: source/classes/sb.src#RID_BASIC_START.SbERR_PROC_DEFINED & ERRCODE_RES_MASK.String.Text
 msgid  "Sub procedure or function procedure $(ARG1) already defined."
-msgstr ""
+msgstr "လုပ်ငန်းစဉ်ခွဲ(သို့)$(ARG1)ဆောင်ရွက်ချက်ကို အဓိပ္ပာယ်သတ်မှတ်ပြီးဖြစ်သည်။"
 
 #: source/classes/sb.src#RID_BASIC_START.SbERR_LABEL_DEFINED & ERRCODE_RES_MASK.String.Text
 msgid  "Label $(ARG1) already defined."

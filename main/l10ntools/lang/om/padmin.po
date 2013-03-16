@@ -33,7 +33,7 @@ msgstr ""
 
 #: source/padialog.src#RID_FONTIMPORT_DIALOG.RID_FIMP_TXT_HELP.FixedText.Text
 msgid  "Please select the folder from which you want to import fonts. Add the selected fonts by clicking the OK button."
-msgstr ""
+msgstr "Ukaankaa bocquulee irraa alaaguu barbaaddu fili. Qabduu Tole irra cuqaasuudhaan bocquulee filaman ida'i."
 
 #: source/padialog.src#RID_FONTIMPORT_DIALOG.RID_FIMP_FL_FROM.FixedLine.Text
 msgid  "Source directory"
@@ -61,7 +61,7 @@ msgstr "Bocquulee ida'i"
 
 #: source/padialog.src#RID_FONTIMPORT_DIALOG.RID_FIMP_STR_QUERYOVERWRITE.String.Text
 msgid  "Do you really want to overwrite this font file?\n   %s"
-msgstr ""
+msgstr "Faayilii bocquu kana irrabuu barbaaddaa?\n   %s"
 
 #: source/padialog.src#RID_FONTIMPORT_DIALOG.RID_FIMP_STR_OVERWRITEALL.String.Text
 msgid  "All"
@@ -73,19 +73,19 @@ msgstr "Homaa"
 
 #: source/padialog.src#RID_FONTIMPORT_DIALOG.RID_FIMP_STR_NOAFM.String.Text
 msgid  "A format file (with an .afm extension) has not been found for the font\n%s\ntherefore, the font cannot be installed. Format files can be created with ghostscript, for example, and have to be located in the same directory as the font files or its afm subdirectory."
-msgstr ""
+msgstr "Bocquu %s tiif dhangiin faayilii (dheertoo .afm qabu) hin argamne\nkanaaf, bocquun ijaaramuu hin danda'u. Faayiloonni dhangii, fakkeenyaaf, goostiskriiptiidhaan uumamanii galeeloo faayiloota bocquu ykn galeeloo xiqqaa isaa kan afm keessa olkaa'amuu qaba."
 
 #: source/padialog.src#RID_FONTIMPORT_DIALOG.RID_FIMP_STR_AFMCOPYFAILED.String.Text
 msgid  "The metric file for the font file\n   %s\ncould not be copied. The font will not be installed."
-msgstr ""
+msgstr "Faayiliin meetriikii kan faayilii bocquu\n   %s\ngaragachamuu hin dandeenye. Bocquun hin ijaaramu."
 
 #: source/padialog.src#RID_FONTIMPORT_DIALOG.RID_FIMP_STR_FONTCOPYFAILED.String.Text
 msgid  "The font file\n   %s\ncould not be copied. The font will not be installed."
-msgstr ""
+msgstr "Faayiliin bocquu\n   %s\ngaragachamuu hin dandeenye. Bocquun hin ijaaramu."
 
 #: source/padialog.src#RID_FONTIMPORT_DIALOG.RID_FIMP_STR_NOWRITEABLEFONTSDIR.String.Text
 msgid  "A directory containing a writable fonts.dir file is not located in the Fontpath. Therefore, fonts cannot be installed."
-msgstr ""
+msgstr "Galeeloon faayilii fonts.dir barreeffamuu danda'u ofkeessaa qabu Xurreebocquu keessa hin jiru. Kanaaf, bocquuleen ijaaramuu hin danda'an."
 
 #: source/padialog.src#RID_FONTIMPORT_DIALOG.RID_FIMP_STR_NUMBEROFFONTSIMPORTED.String.Text
 msgid  "%d new fonts were added."
@@ -173,7 +173,7 @@ msgstr "Maxxansaaa %s banuu hin dandeenye."
 
 #: source/padialog.src#RID_PA_TXT_TESTPAGE_PRINTED.String.Text
 msgid  "The test page was printed succesfully. Please check the result."
-msgstr ""
+msgstr "Fuulli yaalii milkaa'inaan maxxansameera. Mee bu'aa kana mirkaneeffadhu."
 
 #: source/padialog.src#RID_ERR_NOWRITE.String.Text
 msgid  "No printers can be installed, because the file system is read-only.\nPlease contact your system administrator."
@@ -237,7 +237,7 @@ msgstr "Maqaa haaraa %s (%d1 of %d2) dhaaf"
 
 #: source/padialog.src#RID_FONTNAMEDIALOG.RID_FNTNM_STR_NOTRENAMABLE.String.Text
 msgid  "The font %s cannot be renamed due to missing write permission."
-msgstr ""
+msgstr "Sababii dhabama hayyama barreeffamaatiin maqaan bocquu %s jijjiiramuu hin danda'u."
 
 #: source/padialog.src#RID_FONTNAMEDIALOG.String.Text
 msgid  "Fonts"
@@ -289,7 +289,7 @@ msgstr "Faayiliin meetriikii ofkeessaa hin qabu."
 
 #: source/padialog.src#RID_AFMERROR_BOX_TXT.String.Text
 msgid  "The metric\n\n%s\n\ncould not be converted for the following reason:\n\n"
-msgstr ""
+msgstr "Meetriikiin\n\n%s\n\nsababii armaan gadiitiin hin jijjiiramu:\n\n"
 
 #: source/padialog.src#RID_PROGRESS_DLG.RID_PROGRESS_PROGRESS_TXT.FixedText.Text
 msgid  "Progress"
@@ -320,8 +320,8 @@ msgid  "~Selection of drivers"
 msgstr "Filannoo ooftuuwwanii"
 
 #: source/padialog.src#RID_PPDIMPORT_DLG.RID_PPDIMP_TXT_DRIVER.FixedText.Text
-msgid  "Please select the drivers to install and press "%s"."
-msgstr ""
+msgid  "Please select the drivers to install and press \"%s\"."
+msgstr "Mee ooftuuwwan ijaaramuutti jiran filiitii \"%s\" dhiibi."
 
 #: source/padialog.src#RID_PPDIMPORT_DLG.RID_PPDIMP_STR_LOADINGPPD.String.Text
 msgid  "Searching for drivers"
@@ -332,8 +332,8 @@ msgid  "Driver Installation"
 msgstr "Ijaarsa Ooftuu"
 
 #: source/padialog.src#RID_QUERY_REMOVEDRIVER.String.Text
-msgid  "Do you really want to remove the driver "%s"?"
-msgstr ""
+msgid  "Do you really want to remove the driver \"%s\"?"
+msgstr "Ooftuu \"%s\" balleessuu barbaaddaa?"
 
 #: source/padialog.src#RID_QUERY_REMOVEPRINTER.String.Text
 msgid  "Do you really want to remove this printer ?"
@@ -344,40 +344,40 @@ msgid  "Do you really want to remove the selected fonts ?"
 msgstr "Bocquulee filataman balleessuu barbaaddaa ?"
 
 #: source/padialog.src#RID_QUERY_DRIVERUSED.String.Text
-msgid  "There are still printers using the driver "%s". Do you really want to remove it? The corresponding printers will also be removed."
-msgstr ""
+msgid  "There are still printers using the driver \"%s\". Do you really want to remove it? The corresponding printers will also be removed."
+msgstr "Maxxansaawwan ammas ooftuu \"%s\" fayyadamaa jiran ni jiru. Ooftuu kana Balleessuu barbaaddaa? Maxxansaawwan kanaan wal qabatanis ni balleessamu."
 
 #: source/padialog.src#RID_ERR_REMOVESGENPRT.String.Text
-msgid  "The driver "%s" is always needed and can therefore not be removed."
-msgstr ""
+msgid  "The driver \"%s\" is always needed and can therefore not be removed."
+msgstr "Ooftuun \"%s\" yeroo hunda barbaachisa, kanaaf balleessuun hin danda'amu."
 
 #: source/padialog.src#RID_ERR_REMOVEDRIVERFAILED.String.Text
-msgid  "The driver "%s1" could not be removed. It was not possible to remove the file\n\n%s2."
-msgstr ""
+msgid  "The driver \"%s1\" could not be removed. It was not possible to remove the file\n\n%s2."
+msgstr "Ooftuun \"%s1\" balleessamuu hin dandeenye. Faayilii\n\n%s2 balleessuun hin danda'amne."
 
 #: source/padialog.src#RID_ERR_REMOVEDEFAULTDRIVER.String.Text
-msgid  "The driver "%s" is used by your default printer. Therefore, it cannot be removed."
-msgstr ""
+msgid  "The driver \"%s\" is used by your default printer. Therefore, it cannot be removed."
+msgstr "Ooftuun \"%s\" maxxansaa durtii keetiin fayyadama. Kanaaf ooftuu kana balleessuun hin danda'amu."
 
 #: source/padialog.src#RID_ERR_PRINTERNOTREMOVEABLE.String.Text
 msgid  "The printer %s cannot be removed."
 msgstr "Maxxansaan %s balleessamuu hin danda'u."
 
 #: source/padialog.src#RID_TXT_PRINTERALREADYEXISTS.String.Text
-msgid  "A printer named "%s" already exists. This printer will not be imported."
-msgstr ""
+msgid  "A printer named \"%s\" already exists. This printer will not be imported."
+msgstr "Maxxansaan \"%s\" jedhamu kanaan dura jira. Maxxansaan kun hin alaagamu."
 
 #: source/padialog.src#RID_TXT_PRINTERWITHOUTCOMMAND.String.Text
-msgid  "The printer "%s" has no valid configuration and, therefore, cannot be imported."
-msgstr ""
+msgid  "The printer \"%s\" has no valid configuration and, therefore, cannot be imported."
+msgstr "Maxxansaan \"%s\" qindaa'ina gataa'aa homaa hin qabu, kanaaf alaagamuu hin danda'u."
 
 #: source/padialog.src#RID_TXT_DRIVERDOESNOTEXIST.String.Text
-msgid  "The driver for the printer "%s1" (%s2) is not installed. Therefore the printer cannot be imported."
-msgstr ""
+msgid  "The driver for the printer \"%s1\" (%s2) is not installed. Therefore the printer cannot be imported."
+msgstr "Ooftuu maxxansaa \"%s1\" (%s2) hin ijaaramne. Kanaaf maxxansaan kun alaagamuu hin danda'u."
 
 #: source/padialog.src#RID_TXT_PRINTERADDFAILED.String.Text
-msgid  "The printer "%s" could not be added."
-msgstr ""
+msgid  "The printer \"%s\" could not be added."
+msgstr "Maxxansaan \"%s\" ida'amuu hin dandeenye."
 
 #: source/padialog.src#RID_ADD_PRINTER_DIALOG.RID_ADDP_BTN_FINISH.OKButton.Text
 msgid  "~Finish"
@@ -488,12 +488,12 @@ msgid  "~Help"
 msgstr "Gargaarsa"
 
 #: source/padialog.src#RID_ADDP_PAGE_COMMAND.RID_ADDP_CMD_STR_PDFHELP.String.Text
-msgid  "The command line for PDF converters is executed as follows: for each document printed, "(TMP)" in the command line is replaced by a temporary file and "(OUTFILE)" in the command line is replaced by the target PDF file name. If "(TMP)" is in the command line, the PostScript code will be supplied via a file, otherwise via standard input (i.e. as a pipe)."
-msgstr ""
+msgid  "The command line for PDF converters is executed as follows: for each document printed, \"(TMP)\" in the command line is replaced by a temporary file and \"(OUTFILE)\" in the command line is replaced by the target PDF file name. If \"(TMP)\" is in the command line, the PostScript code will be supplied via a file, otherwise via standard input (i.e. as a pipe)."
+msgstr "Sararri ajajaa geeddartoota PDF akka armaan gadiitti raawwatama: tokkoon tokkoo galmee maxxansamuuf, \"(TMP)\"n sarara ajajaa keessaa faayilii ammaafiitiin bakka buufama fi \"(OUTFILE)\" sarara ajajaa keessaa maqaa faayilii PDF galteetiin bakka buufama. \"(TMP)\"n sarara ajajaa keessa kan jiru yoo tahe, lakkaddaan PostScript faayiliitiin laatama, yoo hin taane naqa waaltinaatiin laatama (kunis akka faaggeett)"
 
 #: source/padialog.src#RID_ADDP_PAGE_COMMAND.RID_ADDP_CMD_STR_FAXHELP.String.Text
-msgid  "The command line for fax connections is executed as follows: for each fax sent, "(TMP)" in the command line is replaced by a temporary file and "(PHONE)" in the command line is replaced by the fax number. If "(TMP)" appears in the command line, the PostScript code will be supplied via a file, otherwise it is passed as standard input (i.e. as a pipe)."
-msgstr ""
+msgid  "The command line for fax connections is executed as follows: for each fax sent, \"(TMP)\" in the command line is replaced by a temporary file and \"(PHONE)\" in the command line is replaced by the fax number. If \"(TMP)\" appears in the command line, the PostScript code will be supplied via a file, otherwise it is passed as standard input (i.e. as a pipe)."
+msgstr "Sararri ajajaa walindhaawwan faaksii akka armaan gadiitti raawwatama: tokkoon tokkoo galmee maxxansamuuf, \"(TMP)\"n sarara ajajaa keessaa faayilii ammaafiitiin bakka buufama fi \"(OUTFILE)\" sarara ajajaa keessaa maqaa faayilii PDF galteetiin bakka buufama. \"(TMP)\"n sarara ajajaa keessa kan jiru yoo tahe, lakkaddaan PostScript faayiliitiin laatama, yoo hin taane naqa waaltinaatiin laatama (kunis akka faaggeetti)."
 
 #: source/padialog.src#RID_ADDP_PAGE_OLDPRINTERS.RID_ADDP_STR_TITLE.String.Text
 msgid  "Import printers from old versions"
@@ -501,7 +501,7 @@ msgstr "Fooyya'oota moofaa irraa maxxansaawwan alaagi"
 
 #: source/padialog.src#RID_ADDP_PAGE_OLDPRINTERS.RID_ADDP_OLD_TXT_PRINTERS.FixedText.Text
 msgid  "~These printers can be imported. Please select the ones you want to import."
-msgstr ""
+msgstr "Maxxansaawwan kanneen alaagamuu ni danda'u. Mee kanneen ati alaaguu barbaaddu fili."
 
 #: source/padialog.src#RID_ADDP_PAGE_OLDPRINTERS.RID_ADDP_OLD_BTN_SELECTALL.PushButton.Text
 msgid  "~Select All"
@@ -734,7 +734,7 @@ msgstr "Ida'i"
 #: source/rtsetup.src#RID_RTS_FONTSUBSTPAGE.RID_RTS_FS_REMOVE_BTN.PushButton.Text
 #, fuzzy
 msgid  "~Remove"
-msgstr "Balleessi"
+msgstr "Haqi"
 
 #: source/rtsetup.src#RID_RTS_FONTSUBSTPAGE.RID_RTS_FS_FROM_TXT.FixedText.Text
 #, fuzzy
@@ -747,8 +747,9 @@ msgid  "by ~printer font"
 msgstr "bocquu maxxansaatiin"
 
 #: source/rtsetup.src#RID_RTS_COMMANDPAGE.RID_RTS_CMD_CB_EXTERNAL.CheckBox.Text
+#, fuzzy
 msgid  "~Use system print dialog, disable %PRODUCTNAME's print dialog"
-msgstr ""
+msgstr "Qaaqa maxxansa sirnaa fayyadami, qaaqa maxxansa %PRODUCTNAME aangooleessi"
 
 #: source/rtsetup.src#RID_RTS_COMMANDPAGE.RID_RTS_CMD_FT_QUICKCMD.FixedText.Text
 #, fuzzy
@@ -811,16 +812,19 @@ msgid  "~Remove"
 msgstr "Balleessi"
 
 #: source/rtsetup.src#RID_RTS_COMMANDPAGE.RID_RTS_CMD_STR_PDFHELP.String.Text
-msgid  "The command line for PDF converters is executed as follows: for each document printed, "(TMP)" in the command line is replaced by a temporary file and "(OUTFILE)" in the command line is replaced by the target PDF file name. If "(TMP)" is in the command line, the PostScript code will be supplied via a file, otherwise via standard input (i.e. as a pipe)."
-msgstr ""
+#, fuzzy
+msgid  "The command line for PDF converters is executed as follows: for each document printed, \"(TMP)\" in the command line is replaced by a temporary file and \"(OUTFILE)\" in the command line is replaced by the target PDF file name. If \"(TMP)\" is in the command line, the PostScript code will be supplied via a file, otherwise via standard input (i.e. as a pipe)."
+msgstr "Sararri ajajaa geeddartoota PDF akka armaan gadiitti raawwatama: tokkoon tokkoo galmee maxxansamuuf, \"(TMP)\"n sarara ajajaa keessaa faayilii ammaafiitiin bakka buufama fi \"(OUTFILE)\" sarara ajajaa keessaa maqaa faayilii PDF galteetiin bakka buufama. \"(TMP)\"n sarara ajajaa keessa kan jiru yoo tahe, lakkaddaan PostScript faayiliitiin laatama, yoo hin taane naqa waaltinaatiin laatama (kunis akka faaggeett)"
 
 #: source/rtsetup.src#RID_RTS_COMMANDPAGE.RID_RTS_CMD_STR_PRINTERHELP.String.Text
+#, fuzzy
 msgid  "The command line for printer devices is executed as follows: the generated PostScript code is supplied as standard input (i.e. as a pipe) to the command line."
-msgstr ""
+msgstr "Raawwiin jijjiiraa mi'a maxxansa akka kanan gadiitti sarara ajaja: lakkaddaa DirbaasiBarruuti dagagan akka naqa durtii (innisi akka ujummoo) gara ajaja sararatti."
 
 #: source/rtsetup.src#RID_RTS_COMMANDPAGE.RID_RTS_CMD_STR_FAXHELP.String.Text
-msgid  "The command line for fax devices is executed as follows: for each fax sent, "(TMP)" in the command line is replaced by a temporary file and "(PHONE)" in the command line is replaced by the fax number. If "(TMP)" appears in the command line, the PostScript code will be supplied via a file, otherwise it is passed as standard input (i.e. as a pipe)."
-msgstr ""
+#, fuzzy
+msgid  "The command line for fax devices is executed as follows: for each fax sent, \"(TMP)\" in the command line is replaced by a temporary file and \"(PHONE)\" in the command line is replaced by the fax number. If \"(TMP)\" appears in the command line, the PostScript code will be supplied via a file, otherwise it is passed as standard input (i.e. as a pipe)."
+msgstr "Sararri ajajaa mi'oota faaksii akka armaan gadiitti raawwatama: tokkoon tokkoo faaksii ergamuuf, \"(TMP)\"n sarara ajajaa keessaa faayilii ammaafiitiin bakka buufama fi \"(PHONE)\" sarara ajajaa keessaa lakkoofsa faaksiitiin bakka buufama. \"(TMP)\"n sarara ajajaa keessa kan jiru yoo tahe, lakkaddaan PostScript faayiliitiin laatama, yoo hin taane naqa waaltinaatiin laatama (kunis akka faaggeetti)."
 
 #: source/rtsetup.src#RID_RTS_OTHERPAGE.RID_RTS_OTHER_LEFTMARGIN_TXT.FixedText.Text
 #, fuzzy

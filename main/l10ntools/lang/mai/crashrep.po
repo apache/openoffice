@@ -45,7 +45,7 @@ msgstr ""
 
 #: source/all/crashrep.ulf#%WELCOME_BODY2%
 msgid  "It's easy - just send the report without any further effort on your part by clicking 'Send' in the next dialog, or you can briefly describe how the error occurred and then click 'Send'. If you want to see the report, click the 'Show Report' button. No data will be sent if you click 'Do Not Send'.\n\n"
-msgstr ""
+msgstr "ई आसान अछि - बस रिपोर्ट भेज दिअ' बिना कोनो आओर कोशिशक 'भेजू' पर अगिला संवाद मे, अथवा अहाँ संक्षेप मे वर्णन कए सकैत छी जे कोना त्रुटि उत्पन्न भेल आओर तब 'भेजू' पर क्लिक करू. अगर अहाँ रिपोर्ट देखनाइ चाहैत छी, 'रिपोर्ट देखाबू' बटन पर क्लिक करू. केओ आंकड़ा नहि भेजल जएताह अगर अहाँ 'नहि भेजू' पर क्लिक करैत छी.\n\n"
 
 #: source/all/crashrep.ulf#%WELCOME_BODY3%
 msgid  "Customer Privacy\nThe information gathered is limited to data concerning the state of %PRODUCTNAME% %PRODUCTVERSION% when the error occurred. Other information about passwords or document contents is not collected.\n\nThe information will only be used to improve the quality of %PRODUCTNAME% and will not be shared with third parties.\nFor more information on Apache OpenOffice's privacy policy, visit\n"
@@ -73,7 +73,7 @@ msgstr "%PRODUCTNAME% %PRODUCTVERSION% त्रुटि रिपोर्ट"
 
 #: source/all/crashrep.ulf#%REPORT_HEADER%
 msgid  "An error occurred while running %PRODUCTNAME% %PRODUCTVERSION%"
-msgstr ""
+msgstr "%PRODUCTNAME% %PRODUCTVERSION% केँ चलाबए मे एकटा त्रुटि रिपोर्ट उत्पन्न भेल"
 
 #: source/all/crashrep.ulf#%REPORT_BODY%
 msgid  "The %PRODUCTNAME% %PRODUCTVERSION% Error Report has gathered information that could help Apache OpenOffice improve %PRODUCTNAME%.\nIn the spaces below, you can enter a title for your crash report and describe the action you were trying to carry out when the error occurred. Then click 'Send'.\n"
@@ -81,7 +81,7 @@ msgstr ""
 
 #: source/all/crashrep.ulf#%ENTER_TITLE%
 msgid  "Which type of document (e.g. presentation) were you using when the error occurred?"
-msgstr ""
+msgstr "कोनहुँ प्रकार क' दस्तावेज (उदा. प्रस्तुतिकरण) अहाँ प्रयोग कए रहल छथि, जखन त्रुटि उत्पन्न भेल?"
 
 #: source/all/crashrep.ulf#%ALLOW_CONTACT%
 msgid  "~I allow Apache OpenOffice to contact me regarding this report."
@@ -121,23 +121,23 @@ msgstr "एकरा मे रिपोर्ट सहेजू"
 
 #: source/all/crashrep.ulf#%ERROR_MSG_SIMPLE_MAPI%
 msgid  "The error report could not be sent because the default e-mail program does not support MAPI.\n Please use a MAPI-compatible e-mail program."
-msgstr ""
+msgstr "त्रुटि रिपोर्ट नहि भेजल जाय सकल किएकि मूलभूत ईमेल प्रोग्राम MAPI क' समर्थन नहि करैत अछि.\n एकटा MAPI-सुसंगत ईमेल प्रोग्राम क' प्रयोग करू."
 
 #: source/all/crashrep.ulf#%ERROR_MSG_DISK_FULL%
 msgid  "The error report could not be temporarily saved and could therefore not be sent."
-msgstr ""
+msgstr "त्रुटि रिपोर्ट अस्थायी तौर पर नहि सहेजल जाय सकल आओर एहिलेल नहि भेजल जाय सकल."
 
 #: source/all/crashrep.ulf#%ERROR_MSG_SENDMAIL%
 msgid  "The error report could not be sent because 'sendmail' could not be started.\nPlease check the 'sendmail' settings."
-msgstr ""
+msgstr "त्रुटि रिपोर्ट नहि भेजल जाय सकल किएकि सेंडमेल आरंभ नहि कएल जाय सकल. \nसेंडमेल जमावट जांचू."
 
 #: source/all/crashrep.ulf#%ERROR_MSG_PROXY%
 msgid  "The error report could not be sent. Please check the proxy settings under 'Options' in the Error Report Tool."
-msgstr ""
+msgstr "त्रुटि रिपोर्ट नहि भेजल जाय सकल. त्रुटि रिपोर्ट उपकरण मे अपन प्रॉक्सी जमावट जांचू विकल्प क अंतर्गत."
 
 #: source/all/crashrep.ulf#%ERROR_MSG_NOCONNECT%
 msgid  "The error report could not be sent because there is no Internet connection. Please check your Internet settings."
-msgstr ""
+msgstr "त्रुटि रिपोर्ट नहि भेजल जाय सकल किएकि इंटरनेट संबंधन नहि छला. अपन इंटरनेट जमावट जांचू."
 
 #: source/all/crashrep.ulf#%OPTIONS_BUTTON%
 msgid  "~Options..."
@@ -173,7 +173,7 @@ msgstr "पोर्ट (~P)"
 
 #: source/all/crashrep.ulf#%PROXY_SETTINGS_DESCRIPTION%
 msgid  "The %PRODUCTNAME% Error Report tool needs to be connected to the Internet to be able to send error reports.\n\nCompanies often use proxy servers in conjunction with a firewall to protect the network.\n\nIf this applies to your situation, you have to specify the address and port for the server."
-msgstr ""
+msgstr "%PRODUCTNAME% त्रुटि रिपोर्ट उपकरण केँ इंटरनेट सँ जोड़बाक जरूरत अछि त्रुटि संदेश भेजए क' लेल.\n\nकंपनी प्रायः संजालक सुरक्षा लेल फायरवाल क संग प्रॉक्सी सर्वरक प्रयोग करैत अछि.\n\nअगर ई अहाँक स्थिति पर लागू होइत अछि, तँ अहाँक सर्वरक लेल पता आ पोर्ट निर्दिष्ट करबाक जरूरत अछि."
 
 #: source/all/crashrep.ulf#%SENDING_REPORT_HEADER%
 msgid  "Sending Error Report"
@@ -205,4 +205,4 @@ msgstr "%PRODUCTNAME% प्रक्रिया ID (PID) केँ त्र�
 
 #: source/all/crashrep.ulf#%MSG_PARAM_HELP_DESCRIPTION%
 msgid  "Shows this help text.\nDetailed information can be found in the Setup Guide."
-msgstr ""
+msgstr "एहि सहायता पाठक प्रयोग करू.\nविस्तृत विवरण सेटअप गाइड मे पाएल जाय सकैत अछि."

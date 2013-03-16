@@ -39,6 +39,10 @@ msgstr "शीर्षक, लेजेन्ड, र ग्रिड सेट
 msgid  "Display grids"
 msgstr "ग्रिड प्रदर्शन गर्नुहोस्"
 
+#: source/controller/dialogs/tp_3D_SceneGeometry.src#CUSTOMUNITTEXT_DEGREE.#define.CustomUnitText
+msgid  " degrees"
+msgstr " डिग्री"
+
 #: source/controller/dialogs/tp_3D_SceneGeometry.src#TP_3D_SCENEGEOMETRY.CBX_RIGHT_ANGLED_AXES.CheckBox.Text
 msgid  "~Right-angled axes"
 msgstr "दायाँ कोण भएका अक्षहरू"
@@ -58,10 +62,6 @@ msgstr "Z परिक्रमण"
 #: source/controller/dialogs/tp_3D_SceneGeometry.src#TP_3D_SCENEGEOMETRY.CBX_PERSPECTIVE.CheckBox.Text
 msgid  "~Perspective"
 msgstr "अभिव्यक्ति"
-
-#: source/controller/dialogs/tp_3D_SceneGeometry.src#CUSTOMUNITTEXT_DEGREE.#define.CustomUnitText
-msgid  " degrees"
-msgstr " डिग्री"
 
 #: source/controller/dialogs/Strings_AdditionalControls.src#STR_3DSCHEME_SIMPLE.String.Text
 msgid  "Simple"
@@ -257,11 +257,11 @@ msgstr "नम्बर आवश्यक हुन्छ । तपाईँ�
 
 #: source/controller/dialogs/Strings_Scale.src#STR_STEP_GT_ZERO.String.Text
 msgid  "The major interval requires a positive number. Check your input."
-msgstr ""
+msgstr "मुख्य अन्तराललाई धनात्मक नम्बर आवश्यक हुन्छ । तपाईँको आगत जाँच गर्नुहोस् ।"
 
 #: source/controller/dialogs/Strings_Scale.src#STR_BAD_LOGARITHM.String.Text
 msgid  "The logarithmic scale requires positive numbers. Check your input."
-msgstr ""
+msgstr "लघुगणकीय मापनलाफ धनात्मक नम्बर आवश्यक हुन्छ । तपाईँको आगत जाँच गर्नुहोस् ।"
 
 #: source/controller/dialogs/Strings_Scale.src#STR_MIN_GREATER_MAX.String.Text
 msgid  "The minimum must be lower than the maximum. Check your input."
@@ -889,7 +889,7 @@ msgstr ""
 
 #: source/controller/dialogs/Strings.src#STR_OBJECT_AVERAGE_LINE_WITH_PARAMETERS.String.Text
 msgid  "Mean value line with value %AVERAGE_VALUE and standard deviation %STD_DEVIATION"
-msgstr ""
+msgstr "मान %AVERAGE_VALUE र स्ट्यान्डर्ड डेभियसन %STD_DEVIATION भएको औसत मान"
 
 #: source/controller/dialogs/Strings.src#STR_OBJECT_AXIS.String.Text
 msgid  "Axis"
@@ -1097,11 +1097,11 @@ msgstr "मान: %POINTVALUES"
 
 #: source/controller/dialogs/Strings.src#STR_TIP_DATAPOINT.String.Text
 msgid  "Data Point %POINTNUMBER, data series %SERIESNUMBER, values: %POINTVALUES"
-msgstr ""
+msgstr "डेटा बिन्दु %POINTNUMBER, डेटा श्रृङ्खला %SERIESNUMBER, मान: %POINTVALUES"
 
 #: source/controller/dialogs/Strings.src#STR_STATUS_DATAPOINT_MARKED.String.Text
 msgid  "Data point %POINTNUMBER in data series %SERIESNUMBER selected, values: %POINTVALUES"
-msgstr ""
+msgstr "डेटा बिन्दु %POINTNUMBER लाई डेटा श्रृङ्खला %SERIESNUMBER मा चयन गरियो, मान: %POINTVALUES"
 
 #: source/controller/dialogs/Strings.src#STR_STATUS_OBJECT_MARKED.String.Text
 msgid  "%OBJECTNAME selected"

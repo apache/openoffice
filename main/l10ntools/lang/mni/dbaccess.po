@@ -41,23 +41,23 @@ msgstr "শম্ননবা হোতনবা অমত্তা তৌখি
 
 #: source/core/resource/strings.src#RID_STR_TABLE_IS_FILTERED.String.Text
 msgid  "The table $name$ already exists. It is not visible because it has been filtered out."
-msgstr ""
+msgstr " $name$ তেবলদু হান্নদগী লৈরে. মসি উবা উংদ্রে মরমদি মসি লৌথোকখ্রে(শেংদোকখ্রে)"
 
 #: source/core/resource/strings.src#RID_STR_NEED_CONFIG_WRITE_ACCESS.String.Text
 msgid  "You have no write access to the configuration data the object is based on."
-msgstr ""
+msgstr "পোত্শক্তুনা হৌফম ওইরিবা কনফিগুরেসন দতাদা অদোমগী অইবা অচংবা লৈতে"
 
 #: source/core/resource/strings.src#RID_STR_COULDNOTCONNECT_UNSPECIFIED.String.Text
 msgid  "The connection to the external data source could not be established. An unknown error occurred. The driver is probably defective."
-msgstr ""
+msgstr "মপালগী ওইবা দতা হৌফমদা শম্নদ্রে. মশক খংদবা অশোয়বা অমা থোরকলে. তশেংনমক দ্রাইভরসি য়াদ্রে."
 
 #: source/core/resource/strings.src#RID_STR_COULDNOTCONNECT_NODRIVER.String.Text
 msgid  "The connection to the external data source could not be established. No SDBC driver was found for the given URL."
-msgstr ""
+msgstr "মপালগী ওইবা দতা হৌফমদা শম্নদ্রে. পিরিবী URLদা SDBC দ্রাইভর অমত্তা ফংদ্রে."
 
 #: source/core/resource/strings.src#RID_STR_COULDNOTLOAD_MANAGER.String.Text
 msgid  "The connection to the external data source could not be established. The SDBC driver manager could not be loaded."
-msgstr ""
+msgstr "মপালগী ওইবা দতা হৌফমদা শম্নদ্রে. SDBC  দ্রাইভর মেনেজর লোদ তৌবা ঙমদ্রে."
 
 #: source/core/resource/strings.src#RID_STR_FORM.String.Text
 msgid  "Form"
@@ -69,11 +69,11 @@ msgstr "রিপোৰ্ত"
 
 #: source/core/resource/strings.src#RID_STR_DATASOURCE_NOT_STORED.String.Text
 msgid  "The data source was not saved. Please use the interface XStorable to save the data source."
-msgstr ""
+msgstr "দতা হৌফম শেভ তৌদ্রে. চানবিদুনা দতা হৌফমদু শেভ তৌননবা ইন্তরফেস Xস্তোরেবলদু শিজিন্নবিয়ু."
 
 #: source/core/resource/strings.src#RID_STR_ONLY_QUERY.String.Text
 msgid  "The given command is not a SELECT statement.\nOnly queries are allowed."
-msgstr ""
+msgstr "পিরিবা থৌদা অসি SELECT স্তেতমেন্ত অমা  নত্তে.\n ৱাহংশিংখক্তমক য়াই. "
 
 #: source/core/resource/strings.src#RID_STR_NO_VALUE_CHANGED.String.Text
 msgid  "No values were modified."
@@ -81,11 +81,11 @@ msgstr "ভেল্যু অমত্তা শেমদোকখিদে"
 
 #: source/core/resource/strings.src#RID_STR_NO_XROWUPDATE.String.Text
 msgid  "Values could not be inserted. The XRowUpdate interface is not supported by ResultSet."
-msgstr ""
+msgstr "ভেল্যুশিং হাপচিনখিদে. XRowUpdate  ইন্তরফেস রিজল্তসেতনা মতেং পাংদ্রে. "
 
 #: source/core/resource/strings.src#RID_STR_NO_XRESULTSETUPDATE.String.Text
 msgid  "Values could not be inserted. The XResultSetUpdate interface is not supported by ResultSet."
-msgstr ""
+msgstr "ভেল্যুশিং হাপচিনবা ঙমখিদ্রে. Xরিজল্তসেত অপদেত ইন্তরফেস অসি রিজল্তসেতনা মতেং পাংদ্রে."
 
 #: source/core/resource/strings.src#RID_STR_NO_UPDATE_MISSING_CONDITION.String.Text
 msgid  "Values could not be modified, due to a missing condition statement."
@@ -141,11 +141,11 @@ msgstr "মসিগী ফিভমসিদা মরী লৈন্নবা
 
 #: source/core/resource/strings.src#RID_STR_NO_REFESH_AFTERLAST.String.Text
 msgid  "A row cannot be refreshed when the ResultSet is positioned after the last row."
-msgstr ""
+msgstr "রিজল্তসেতনা অরোয়বা পরিংগী মতুংদা লৈবা মতমদা রিফ্রেস(কনখত্হনবা) য়াদে."
 
 #: source/core/resource/strings.src#RID_STR_NO_MOVETOINSERTROW_CALLED.String.Text
 msgid  "A new row cannot be inserted when the ResultSet is not first moved to the insert row."
-msgstr ""
+msgstr " পরেং হাপচিনবা মতমদা রিজল্তসেতনা অহানবা পরেংদা লৈত্ত্রবদি অনৌবা পরেং হাপচিনবা য়াদে."
 
 #: source/core/resource/strings.src#RID_STR_NO_UPDATEROW.String.Text
 msgid  "A row cannot be modified in this state"
@@ -165,31 +165,31 @@ msgstr "কলমগী শন্দোকনা তোকপদা দ্রা
 
 #: source/core/resource/strings.src#RID_STR_COLUMN_ALTER_BY_NAME.String.Text
 msgid  "The driver does not support the modification of column descriptions by changing the name."
-msgstr ""
+msgstr "মিং হোংদুনা কলমগী শন্দোকনা তাকপা শেমদোকপদা দ্রাইভরনা মতেং পাংদ্রে."
 
 #: source/core/resource/strings.src#RID_STR_COLUMN_ALTER_BY_INDEX.String.Text
 msgid  "The driver does not support the modification of column descriptions by changing the index."
-msgstr ""
+msgstr "ইন্দেক্স হোংদুনা কলমগী শন্দোকনা তাকপা শেমদোকপদা দ্রাইভরনা মতেং পাংদ্রে"
 
 #: source/core/resource/strings.src#RID_STR_FILE_DOES_NOT_EXIST.String.Text
-msgid  "The file "$file$" does not exist."
-msgstr ""
+msgid  "The file \"$file$\" does not exist."
+msgstr " \"$file$\" ফাইলশিংদু লৈত্রে."
 
 #: source/core/resource/strings.src#RID_STR_TABLE_DOES_NOT_EXIST.String.Text
-msgid  "There exists no table named "$table$"."
-msgstr ""
+msgid  "There exists no table named \"$table$\"."
+msgstr "There exists no table named \"$table$\"."
 
 #: source/core/resource/strings.src#RID_STR_QUERY_DOES_NOT_EXIST.String.Text
-msgid  "There exists no query named "$table$"."
+msgid  "There exists no query named \"$table$\"."
 msgstr ""
 
 #: source/core/resource/strings.src#RID_STR_CONFLICTING_NAMES.String.Text
 msgid  "There are tables in the database whose names conflict with the names of existing queries. To make full use of all queries and tables, make sure they have distinct names."
-msgstr ""
+msgstr "There are tables in the database whose names conflict with the names of existing queries. To make full use of all queries and tables, make sure they have distinct names."
 
 #: source/core/resource/strings.src#RID_STR_COMMAND_LEADING_TO_ERROR.String.Text
 msgid  "The SQL command leading to this error is:\n\n$command$"
-msgstr ""
+msgstr "The SQL command leading to this error is:\n\n$command$"
 
 #: source/core/resource/strings.src#RID_STR_STATEMENT_WITHOUT_RESULT_SET.String.Text
 msgid  "The SQL command does not describe a result set."
@@ -228,7 +228,7 @@ msgid  "Error accessing data source '$name$':\n$error$"
 msgstr ""
 
 #: source/core/resource/strings.src#RID_STR_NO_SUB_FOLDER.String.Text
-msgid  "There exists no folder named "$folder$"."
+msgid  "There exists no folder named \"$folder$\"."
 msgstr ""
 
 #: source/core/resource/strings.src#RID_STR_NO_DELETE_BEFORE_AFTER.String.Text
@@ -296,7 +296,7 @@ msgid  "Embedding of database documents is not supported."
 msgstr ""
 
 #: source/core/resource/strings.src#RID_STR_CONNECTION_REQUEST.String.Text
-msgid  "A connection for the following URL was requested "$name$"."
+msgid  "A connection for the following URL was requested \"$name$\"."
 msgstr ""
 
 #: source/core/resource/strings.src#RID_STR_MISSING_EXTENSION.String.Text
@@ -428,7 +428,7 @@ msgid  "The specified file name or directory does not exist."
 msgstr ""
 
 #: source/ext/adabas/AdabasNewDb.src#STR_ERROR_IN_ADABAS_INSTALLATION.String.Text
-msgid  "No new database can be created.\nPlease check your Adabas D installation, especially the variables "DBROOT" and "DBWORK"."
+msgid  "No new database can be created.\nPlease check your Adabas D installation, especially the variables \"DBROOT\" and \"DBWORK\"."
 msgstr ""
 
 #: source/ext/adabas/AdabasNewDb.src#STR_STAT_WARNING.String.Text
@@ -645,7 +645,7 @@ msgstr ""
 
 #: source/sdbtools/resource/sdbt_strings.src#STR_QUERY_AND_TABLE_DISTINCT_NAMES.String.Text
 msgid  "You cannot give a table and a query the same name. Please use a name which is not yet used by a query or table."
-msgstr ""
+msgstr "অদোম্না তেবল অমসুং ৱাহং অমগী চপ মান্নবা মমিং পীবা য়াদে. চানবিদুনা ৱাহং নত্রগা তেবল অমনা হৌজিকফাওবা শিজিন্নদ্রিবা মমিং অমা শিজিন্নবিয়ু."
 
 #: source/sdbtools/resource/sdbt_strings.src#STR_BASENAME_TABLE.String.Text
 msgid  "Table"
@@ -801,11 +801,11 @@ msgstr " - %PRODUCTNAME হৌফম"
 
 #: source/ui/app/app.src#RID_STR_REPORTS_HELP_TEXT_WIZARD.String.Text
 msgid  "The wizard will guide you through the steps necessary to create a report."
-msgstr ""
+msgstr "রিপোর্ত অমা নৌনা শেম্বা মতমদা ৱিজার্তনা অদোমবু দরকার ওইবা খোংথাং খুদিংমক মতেং পাংগনি."
 
 #: source/ui/app/app.src#RID_STR_FORMS_HELP_TEXT.String.Text
 msgid  "Create a form by specifying the record source, controls, and control properties."
-msgstr ""
+msgstr "রেকোর্তকী হৌফম, কন্ত্রোলশিং, অমশুং কন্ত্রোল মগুনশিং মশক তাক্তুনা ফোর্ম অমা নৌনা শেম্মু."
 
 #: source/ui/app/app.src#RID_STR_REPORT_HELP_TEXT.String.Text
 msgid  "Create a report by specifying the record source, controls, and control properties."
@@ -813,11 +813,11 @@ msgstr ""
 
 #: source/ui/app/app.src#RID_STR_FORMS_HELP_TEXT_WIZARD.String.Text
 msgid  "The wizard will guide you through the steps necessary to create a form."
-msgstr ""
+msgstr "ফোর্ম অমা শেম্বা মতমদা ৱিজার্দনা অদোমবু দরকার ওইবা খোংথাং খুদিংমক্তা মতেং পাংগনি"
 
 #: source/ui/app/app.src#RID_STR_QUERIES_HELP_TEXT.String.Text
 msgid  "Create a query by specifying the filters, input tables, field names,  and  properties for sorting or grouping."
-msgstr ""
+msgstr "ফিল্তরশিং, ইনপুত তেবলশিং, ফিল্দ মমিংশিং, অমশুং মথং-মনাও শেম্বগী অমশুং কাংলুপ শেম্বগী মশক তাক্তুনা ৱাহং অমা নৌনা শেম্মু ."
 
 #: source/ui/app/app.src#RID_STR_QUERIES_HELP_TEXT_SQL.String.Text
 msgid  "Create a query  entering an SQL statement directly."
@@ -825,19 +825,19 @@ msgstr "SQL স্তেতমেন্ত অমদা হকথেংন্ন
 
 #: source/ui/app/app.src#RID_STR_QUERIES_HELP_TEXT_WIZARD.String.Text
 msgid  "The wizard will guide you through the steps necessary to create a query."
-msgstr ""
+msgstr "ৱাহং অমা নৌনা শেম্বদা চংবা দরকার ওইবা খোংথাং খুদিংমক ৱিজার্দনা অদোমবু মতেং পাংগনি."
 
 #: source/ui/app/app.src#RID_STR_TABLES_HELP_TEXT_DESIGN.String.Text
 msgid  "Create a table by specifying the field names and properties, as well as the data types."
-msgstr ""
+msgstr "দতা মখলশিংদা তৌবগুম্না, ফিল্দ মমিংশিং অমশুং মগুনশিং মশক তাক্তুনা তেবল অমা নৌনা শেম্মু."
 
 #: source/ui/app/app.src#RID_STR_TABLES_HELP_TEXT_WIZARD.String.Text
 msgid  "Choose from a selection of business and personal table samples, which you customize to create a table."
-msgstr ""
+msgstr "লল্লোনবগী অমশুং লনাইগী ওইবা নোম্নাশিংগী খনগত্পদগী খল্লো, মদুদি অদোম্না অনৌবা তেবল অমা নৌনা শেম্নবা কস্তমাইজ তৌবা."
 
 #: source/ui/app/app.src#RID_STR_VIEWS_HELP_TEXT_DESIGN.String.Text
 msgid  "Create a view by specifying the tables and field names you would like to have visible."
-msgstr ""
+msgstr "তেবলশিং অমশুং ফিল্দগী মিংশিং  মশক তাক্তুনা অদোম্না পাম্বা উতনিংঙাই ওইবা শক্তম অমখক নৌনা শেম্মু."
 
 #: source/ui/app/app.src#RID_STR_VIEWS_HELP_TEXT_WIZARD.String.Text
 msgid  "Opens the view wizard"
@@ -865,11 +865,11 @@ msgstr "মমাংগী শক্তম য়েংশিনবা ঙমদব
 
 #: source/ui/app/app.src#APP_SAVEMODIFIED.QueryBox.Message
 msgid  "The database has been modified.\nDo you want to save the changes?"
-msgstr ""
+msgstr "দতাবেজ শেমদোকখ্রে.\nঅদোম অহোংবশি সেভ তৌবা পাম্বিবরা?"
 
 #: source/ui/app/app.src#APP_CLOSEDOCUMENTS.QueryBox.Message
 msgid  "The connection type has been altered.\nFor the changes to take effect, all forms, reports, queries and tables must be closed.\n\nDo you want to close all documents now?"
-msgstr ""
+msgstr "শম্নবগী মওংসি ওন্নরে.\nঅহোংবশিং অসিগী কান্নবা লৌন্নবগীদমক্তা, ফোর্ম খুদিংমক, রিপোৰ্ত, ৱাহং অমশুং তেবলশিং শুংশোয়-শোয়দনা থীংজনগদবনি.\n\nহৌজিক অদোম দোকুমেন্ত খুদিংমক থীংজনবা পাম্বীবরা?"
 
 #: source/ui/app/app.src#RID_MENU_APP_PREVIEW.SID_DB_APP_DISABLE_PREVIEW.MenuItem.Text
 msgid  "None"
@@ -882,6 +882,14 @@ msgstr "দোকুমেন্ত ঈ-পাউ"
 #: source/ui/app/app.src#RID_MENU_APP_PREVIEW.SID_DB_APP_VIEW_DOC_PREVIEW.MenuItem.Text
 msgid  "Document"
 msgstr "দোকুমেন্ত "
+
+#: source/ui/app/app.src#RID_STR_FORM.String.Text
+msgid  "Form"
+msgstr "ফোর্ম"
+
+#: source/ui/app/app.src#RID_STR_REPORT.String.Text
+msgid  "Report"
+msgstr "রিপোর্ত"
 
 #: source/ui/app/app.src#STR_FRM_LABEL.String.Text
 msgid  "F~orm name"
@@ -915,17 +923,9 @@ msgstr ""
 msgid  "Unsupported object type found ($type$)."
 msgstr ""
 
-#: source/ui/app/app.src#RID_STR_FORM.String.Text
-msgid  "Form"
-msgstr "ফোর্ম"
-
-#: source/ui/app/app.src#RID_STR_REPORT.String.Text
-msgid  "Report"
-msgstr "রিপোর্ত"
-
 #: source/ui/browser/sbabrw.src#QUERY_BRW_SAVEMODIFIED.QueryBox.Message
 msgid  "The current record has been changed.\nDo you want to save the changes?"
-msgstr ""
+msgstr "শিজিন্নরিবা রেকোর্দশি হোংদোক্লে.\nঅদোম অহোংবশিংসি সেভ তৌবা পাম্বিবরা?"
 
 #: source/ui/browser/sbabrw.src#QUERY_BRW_DELETE_ROWS.QueryBox.Message
 msgid  "Do you want to delete the selected data?"
@@ -955,6 +955,18 @@ msgstr "ৱাহংশিং"
 msgid  "Tables"
 msgstr "তেবলশিং"
 
+#: source/ui/browser/sbabrw.src#ID_TREE_EDIT_DATABASE.#define.Text
+msgid  "Edit ~Database File..."
+msgstr "শেমদোক-শেমজিন তৌবা~দতাবেজ ফাইল..."
+
+#: source/ui/browser/sbabrw.src#ID_TREE_ADMINISTRATE.#define.Text
+msgid  "Registered databases ..."
+msgstr "রেজিস্তার দাতাবেজ"
+
+#: source/ui/browser/sbabrw.src#ID_TREE_CLOSE_CONN.#define.Text
+msgid  "Disco~nnect"
+msgstr "শম্নদবা"
+
 #: source/ui/browser/sbabrw.src#STR_TITLE_CONFIRM_DELETION.String.Text
 msgid  "Confirm Deletion"
 msgstr "মুত্থত্পদা য়ারবা"
@@ -977,11 +989,11 @@ msgstr "চেকশিনৱাশিং চংশিল্লক্লে."
 
 #: source/ui/browser/sbabrw.src#STR_OPENTABLES_WARNINGS_DETAILS.String.Text
 msgid  "While retrieving the tables, warnings were reported by the database connection."
-msgstr ""
+msgstr "তেবলশিং অমুক হল্লকপা মতমদা, দতাবেজ শম্নবা মরীনা চেকশিংৱাশিং পিরকলম্মী."
 
 #: source/ui/browser/sbabrw.src#STR_CONNECTING_DATASOURCE.String.Text
-msgid  "Connecting to "$name$" ..."
-msgstr ""
+msgid  "Connecting to \"$name$\" ..."
+msgstr "\"$name$\"দা শম্নরি ..."
 
 #: source/ui/browser/sbabrw.src#STR_LOADING_QUERY.String.Text
 msgid  "Loading query $name$ ..."
@@ -996,24 +1008,12 @@ msgid  "No table format could be found."
 msgstr "তেবল ফোরমেত অমত্তা ফংবা ঙমদ্রে."
 
 #: source/ui/browser/sbabrw.src#STR_COULDNOTCONNECT_DATASOURCE.String.Text
-msgid  "The connection to the data source "$name$" could not be established."
-msgstr ""
+msgid  "The connection to the data source \"$name$\" could not be established."
+msgstr "দতা হৌফম\"$name$\"দা শম্নবা মরী হৌগত্পা ঙমদ্রে."
 
 #: source/ui/browser/sbabrw.src#RID_MENU_REFRESH_DATA.ID_BROWSER_REFRESH_REBUILD.MenuItem.Text
 msgid  "Rebuild"
 msgstr "হন্না শাবা"
-
-#: source/ui/browser/sbabrw.src#ID_TREE_EDIT_DATABASE.#define.Text
-msgid  "Edit ~Database File..."
-msgstr "শেমদোক-শেমজিন তৌবা~দতাবেজ ফাইল..."
-
-#: source/ui/browser/sbabrw.src#ID_TREE_ADMINISTRATE.#define.Text
-msgid  "Registered databases ..."
-msgstr "রেজিস্তার দাতাবেজ"
-
-#: source/ui/browser/sbabrw.src#ID_TREE_CLOSE_CONN.#define.Text
-msgid  "Disco~nnect"
-msgstr "শম্নদবা"
 
 #: source/ui/browser/sbagrid.src#RID_SBA_GRID_COLCTXMENU.ID_BROWSER_COLATTRSET.MenuItem.Text
 msgid  "Column ~Format..."
@@ -1052,8 +1052,8 @@ msgid  "View #"
 msgstr "শক্তম#"
 
 #: source/ui/browser/sbagrid.src#STR_NAME_ALREADY_EXISTS.String.Text
-msgid  "The name "#" already exists."
-msgstr ""
+msgid  "The name \"#\" already exists."
+msgstr "\"#\" মিং হান্না লৈরে."
 
 #: source/ui/browser/sbagrid.src#STR_NO_COLUMNNAME_MATCHING.String.Text
 msgid  "No matching column names were found."
@@ -1133,11 +1133,11 @@ msgstr " URL #connurl#গীদমক মরী অমত্তা হৌগত�
 
 #: source/ui/control/tabletree.src#STR_COULDNOTCONNECT_PLEASECHECK.String.Text
 msgid  "Please check the current settings, for example user name and password."
-msgstr ""
+msgstr "চত্থরিবা সেতিংসদু অমুক্তা য়েংশিনবিয়ু, খুদম ওইনা হায়রবদা শিজিন্নরিবগী মিং অমশুং পাসৱর্দ."
 
 #: source/ui/control/tabletree.src#STR_NOTABLEINFO.String.Text
 msgid  "Successfully connected, but information about database tables is not available."
-msgstr ""
+msgstr "মাইপাকনা শম্লে, অদুবু দতাবেজ তেবলগী ঈ-পাউদি অমত্তা ফংদে."
 
 #: source/ui/control/tabletree.src#STR_ALL_TABLES.String.Text
 msgid  "All tables"
@@ -1236,12 +1236,12 @@ msgid  "Do you want to save the changes made to the current index?"
 msgstr "হৌজিক্কী ইন্দেক্সতা ওইরিবা অহোংবসি শিন্দোকপা পাম্বরা?"
 
 #: source/ui/dlg/indexdialog.src#STR_INDEX_NAME_ALREADY_USED.String.Text
-msgid  "There is already another index named "$name$"."
-msgstr ""
+msgid  "There is already another index named \"$name$\"."
+msgstr " \"$name$\" কৌবা ইন্দেক্স  অমা হাননা লৈরে."
 
 #: source/ui/dlg/indexdialog.src#STR_INDEXDESIGN_DOUBLE_COLUMN_NAME.String.Text
-msgid  "In an index definition, no table column may occur more than once. However, you have entered column "$name$" twice."
-msgstr ""
+msgid  "In an index definition, no table column may occur more than once. However, you have entered column \"$name$\" twice."
+msgstr " ইন্দেক্স শন্দোকনা তাকপদা,তেবল কলম অমত্ত অমুক্তগী হেন্না য়াওবা য়াদে. অদুমকপু, অদোম্না\"$name$\" কলম অনিরক ইশিল্লে."
 
 #: source/ui/dlg/paramdialog.src#DLG_PARAMETERS.FL_PARAMS.FixedLine.Text
 msgid  "~Parameters"
@@ -1260,8 +1260,8 @@ msgid  "Parameter Input"
 msgstr "পেরামিতর ইনপুত"
 
 #: source/ui/dlg/paramdialog.src#DLG_PARAMETERS.STR_COULD_NOT_CONVERT_PARAM.String.Text
-msgid  "The entry could not be converted to a valid value for the "$name$"column"
-msgstr ""
+msgid  "The entry could not be converted to a valid value for the \"$name$\"column"
+msgstr "\"$name$\"কলমগীদমক ইশিনবা অমত্তা শিজিন্নবা য়াবা ভেল্যুদা ওন্থোকপা ঙমদ্রে"
 
 #: source/ui/dlg/sqlmessage.src#DLG_SQLEXCEPTIONCHAIN.ModalDialog.Text
 msgid  "%PRODUCTNAME Base"
@@ -1289,7 +1289,7 @@ msgstr "অশোয়বা কোদ"
 
 #: source/ui/dlg/sqlmessage.src#STR_EXPLAN_STRINGCONVERSION_ERROR.String.Text
 msgid  "A frequent reason for this error is an inappropriate character set setting for the language of your database. Check the setting by choosing Edit - Database - Properties."
-msgstr ""
+msgstr "অশোয়বা অসিগী ওইবা য়াবা মরমদি অসিনি অদোমগী দতাবেজগী লোলগী চান্নদবা ময়েক সেত সেতিং তৌবা অসিনি. ইদিত-দতাবেজ -প্ৰোপৰ্তিজ খন্দুনা সেতিংদু চেক অমুক্তা তৌ."
 
 #: source/ui/dlg/sqlmessage.src#STR_EXCEPTION_ERROR.String.Text
 msgid  "Error"
@@ -1312,8 +1312,16 @@ msgid  "Standard Filter"
 msgstr "স্তেন্দার্দ ফিল্তর"
 
 #: source/ui/dlg/queryfilter.src#DLG_FILTERCRIT.LB_WHERECOND2.Default.StringList.item
+msgid  "AND"
+msgstr "AND"
+
+#: source/ui/dlg/queryfilter.src#DLG_FILTERCRIT.LB_WHERECOND2.Default.StringList.item
 msgid  "OR"
 msgstr "OR"
+
+#: source/ui/dlg/queryfilter.src#DLG_FILTERCRIT.LB_WHERECOND3.Default.StringList.item
+msgid  "AND"
+msgstr "AND"
 
 #: source/ui/dlg/queryfilter.src#DLG_FILTERCRIT.LB_WHERECOND3.Default.StringList.item
 msgid  "OR"
@@ -1346,14 +1354,6 @@ msgstr "-অমত্তা নত্তবা -"
 #: source/ui/dlg/queryfilter.src#DLG_FILTERCRIT.STR_COMPARE_OPERATORS.String.Text
 msgid  "=;<>;<;<=;>;>=;like;not like;null;not null"
 msgstr "=;<>;<;<=;>;>=;পাম্বা;পাম্বা নত্তবা;কান্নদবা;কান্নদবা নত্তবা"
-
-#: source/ui/dlg/queryfilter.src#DLG_FILTERCRIT.LB_WHERECOND2.Default.StringList.item
-msgid  "AND"
-msgstr "AND"
-
-#: source/ui/dlg/queryfilter.src#DLG_FILTERCRIT.LB_WHERECOND3.Default.StringList.item
-msgid  "AND"
-msgstr "AND"
 
 #: source/ui/dlg/RelationDlg.src#DLG_REL_PROPERTIES.ModalDialog.Text
 msgid  "Relations"
@@ -1412,12 +1412,24 @@ msgid  "Sort Order"
 msgstr "মথং-মনাও শেম্বা"
 
 #: source/ui/dlg/queryorder.src#DLG_ORDERCRIT.LB_ORDERVALUE1.Default.StringList.item
+msgid  "ascending"
+msgstr "মচাদগী অচৌবরোমদা চত্পা"
+
+#: source/ui/dlg/queryorder.src#DLG_ORDERCRIT.LB_ORDERVALUE1.Default.StringList.item
 msgid  "descending"
 msgstr "অচৌবদগী মচারোমদা চত্পা"
 
 #: source/ui/dlg/queryorder.src#DLG_ORDERCRIT.LB_ORDERVALUE2.Default.StringList.item
+msgid  "ascending"
+msgstr "মচাদগী অচৌবরোমদা চত্পা"
+
+#: source/ui/dlg/queryorder.src#DLG_ORDERCRIT.LB_ORDERVALUE2.Default.StringList.item
 msgid  "descending"
 msgstr "অচৌবদগী মচারোমদা চত্পা"
+
+#: source/ui/dlg/queryorder.src#DLG_ORDERCRIT.LB_ORDERVALUE3.Default.StringList.item
+msgid  "ascending"
+msgstr "মচাদগী অচৌবরোমদা চত্পা"
 
 #: source/ui/dlg/queryorder.src#DLG_ORDERCRIT.LB_ORDERVALUE3.Default.StringList.item
 msgid  "descending"
@@ -1450,18 +1462,6 @@ msgstr "মথং-মনাও শেম্বা"
 #: source/ui/dlg/queryorder.src#DLG_ORDERCRIT.STR_NOENTRY.String.Text
 msgid  "<none>"
 msgstr "<অমত্তা নত্তবা>"
-
-#: source/ui/dlg/queryorder.src#DLG_ORDERCRIT.LB_ORDERVALUE1.Default.StringList.item
-msgid  "ascending"
-msgstr "মচাদগী অচৌবরোমদা চত্পা"
-
-#: source/ui/dlg/queryorder.src#DLG_ORDERCRIT.LB_ORDERVALUE2.Default.StringList.item
-msgid  "ascending"
-msgstr "মচাদগী অচৌবরোমদা চত্পা"
-
-#: source/ui/dlg/queryorder.src#DLG_ORDERCRIT.LB_ORDERVALUE3.Default.StringList.item
-msgid  "ascending"
-msgstr "মচাদগী অচৌবরোমদা চত্পা"
 
 #: source/ui/dlg/advancedsettings.src#AUTO_DATAHANDLING(AUTO_Y).FL_DATAHANDLING.FixedLine.Text
 msgid  "Options"
@@ -1532,6 +1532,18 @@ msgid  "Respect the result set type from the database driver"
 msgstr ""
 
 #: source/ui/dlg/advancedsettings.src#WORKAROUND.Default.StringList.item
+msgid  "Default"
+msgstr "দিফোল্ত"
+
+#: source/ui/dlg/advancedsettings.src#WORKAROUND.Default.StringList.item
+msgid  "SQL"
+msgstr "SQL"
+
+#: source/ui/dlg/advancedsettings.src#WORKAROUND.Default.StringList.item
+msgid  "Mixed"
+msgstr "য়ানশিল্লবা"
+
+#: source/ui/dlg/advancedsettings.src#WORKAROUND.Default.StringList.item
 msgid  "MS Access"
 msgstr "MS এক্সেস"
 
@@ -1571,18 +1583,6 @@ msgstr "মরুওইবা সেতিংস"
 msgid  "Advanced Settings"
 msgstr "এদভান্সদ প্ৰোপৰ্তিজ"
 
-#: source/ui/dlg/advancedsettings.src#WORKAROUND.Default.StringList.item
-msgid  "Default"
-msgstr "দিফোল্ত"
-
-#: source/ui/dlg/advancedsettings.src#WORKAROUND.Default.StringList.item
-msgid  "SQL"
-msgstr "SQL"
-
-#: source/ui/dlg/advancedsettings.src#WORKAROUND.Default.StringList.item
-msgid  "Mixed"
-msgstr "য়ানশিল্লবা"
-
 #: source/ui/dlg/CollectionView.src#DLG_COLLECTION_VIEW.ModalDialog.Text
 msgid  "Save"
 msgstr "সেভ তৌবা"
@@ -1616,12 +1616,12 @@ msgid  "The file already exists. Overwrite?"
 msgstr "ফাইলদু হান্না লৈরে. ওভর্রাইত তৌবা পাম্বরা?"
 
 #: source/ui/dlg/dbadmin2.src#STR_ENTER_CONNECTION_PASSWORD.String.Text
-msgid  "A password is needed to connect to the data source "$name$"."
-msgstr ""
+msgid  "A password is needed to connect to the data source \"$name$\"."
+msgstr "দতা অমা হায়বসি দতা হৌফম \"$name$\"দা মরী লৈন্নবা দরকার ওই."
 
 #: source/ui/dlg/dbadmin2.src#STR_ASK_FOR_DIRECTORY_CREATION.String.Text
 msgid  "The directory\n\n$path$\n\ndoes not exist. Should it be created?"
-msgstr ""
+msgstr "দিরেক্তোরি\n\n$path$\n\nলৈতে. মসি নৌনা শেমগদবরা?"
 
 #: source/ui/dlg/dbadmin2.src#STR_COULD_NOT_CREATE_DIRECTORY.String.Text
 msgid  "The directory $name$ could not be created."
@@ -1773,7 +1773,7 @@ msgstr "%PRODUCTNAME  দতাবেজ ৱিজার্দতা তরা�
 
 #: source/ui/dlg/dbadmin.src#PAGE_GENERAL.FT_GENERALHELPTEXT.FixedText.Text
 msgid  "Use the Database Wizard to create a new database, open an existing database file, or connect to a database stored on a server."
-msgstr ""
+msgstr "অনৌবা দতাবেজ অমা শেম্নবগীদমক দতাবেজ ৱিজার্দ শিজিন্নৌ, হৌজিক লৈরিবা দতাবেজ অমা হাংউ, নত্ত্রগা সৰ্ভরদা লৈবা দতাবেজ অমগা শম্নৌ(মরী লৈনহল্লু)."
 
 #: source/ui/dlg/dbadmin.src#PAGE_GENERAL.FT_DATASOURCEHEADER.FixedText.Text
 msgid  "What do you want to do?"
@@ -1797,7 +1797,7 @@ msgstr "অরৈবা দতাবেজ অমদা শম্নহনবা
 
 #: source/ui/dlg/dbadmin.src#PAGE_GENERAL.FT_DATASOURCETYPE_PRE.FixedText.Text
 msgid  "Select the type of database to which you want to establish a connection."
-msgstr ""
+msgstr "মরী লৈন্নহনবা পাম্বা দতাবেজ মখল অমা খল্লো."
 
 #: source/ui/dlg/dbadmin.src#PAGE_GENERAL.FT_DATATYPE.FixedText.Text
 msgid  "Database ~type "
@@ -1809,7 +1809,7 @@ msgstr "দতাবেজ"
 
 #: source/ui/dlg/dbadmin.src#PAGE_GENERAL.FT_DATASOURCETYPE_POST.FixedText.Text
 msgid  "On the following pages, you can make detailed settings for the connection.\n\nThe new settings you make will overwrite your existing settings."
-msgstr ""
+msgstr "মখাগী লমাইশিদা, মরী লৈন্নহন্নবগীদমক অশুপ্পা সেতিংসশিং শেম্বা য়াগনি.\n\nঅদোম্না শেম্লিবা অনৌবা সেতিংসদুনা হান্নগী অরৈবা সেতিংসতুদা ওভর্রাইত তৌগদবনি."
 
 #: source/ui/dlg/dbadmin.src#PAGE_GENERAL.STR_MYSQLENTRY.String.Text
 msgid  "MySQL"
@@ -1821,11 +1821,11 @@ msgstr "দতা হৌফম মগুনশিং: #"
 
 #: source/ui/dlg/dbadmin.src#PAGE_GENERAL.STR_COULDNOTLOAD_ODBCLIB.String.Text
 msgid  "Could not load the program library #lib# or it is corrupted. The ODBC data source selection is not available."
-msgstr ""
+msgstr "#lib#প্ৰোগ্ৰেম লাইব্ৰেরী লোড ঙমদ্রে  নত্ত্রগা মসি মাংলে(য়াদ্রে). ODBC দতা হৌফম খনগত্পা ফংদ্রে."
 
 #: source/ui/dlg/dbadmin.src#PAGE_GENERAL.STR_UNSUPPORTED_DATASOURCE_TYPE.String.Text
 msgid  "This kind of data source is not supported on this platform.\nYou are allowed to change the settings, but you probably will not be able to connect to the database."
-msgstr ""
+msgstr "প্লেটফোৰ্মশিদা অসিগুম্বা মখলগী দতা অসি চান্নদে.\nসেতিংসতু হোংবা য়ারগনি, অদুবু অদোম্না দতাবেজদা শম্নহনবদি ঙমদবসু য়াই."
 
 #: source/ui/dlg/dbadmin.src#PAGE_GENERAL.String.Text
 msgid  "General"
@@ -1841,7 +1841,7 @@ msgstr "মুত্থতলবা রেকোর্দশিংসু উত�
 
 #: source/ui/dlg/dbadmin.src#PAGE_DBASE.FT_SPECIAL_MESSAGE.FixedText.Text
 msgid  "Note: When deleted, and thus inactive, records are  displayed, you will not be able to delete records from the data source."
-msgstr ""
+msgstr "শন্দোকনা তাকপা: মুত্থতলবা মতমদা, অমশুং অশুম্না মথৌ তৌদ্রবা মতমদা, রেকোর্দশিং উতলকই, অদোম্না দতা হৌফমশিংদগী রেকোর্দশিং মুত্থত্পা ঙম্লোয়."
 
 #: source/ui/dlg/dbadmin.src#PAGE_DBASE.PB_INDICIES.PushButton.Text
 msgid  "Indexes..."
@@ -2025,7 +2025,7 @@ msgstr "মাইক্ৰোসোফত এক্সেস দতাবেজ 
 
 #: source/ui/dlg/AutoControls.src#STR_NO_ADDITIONAL_SETTINGS.String.Text
 msgid  "No more settings are necessary. To verify that the connection is working, click the '%test' button."
-msgstr ""
+msgstr "অহেনবা সেতিংস দরকার ওইদ্রে. শম্নবা অসি মথৌ তৌরি তাকনবগীদমক  '%তেস্ত' বতনদা ক্লিক তৌ."
 
 #: source/ui/dlg/AutoControls.src#STR_COMMONURL.String.Text
 msgid  "Datasource URL"
@@ -2197,7 +2197,7 @@ msgstr "হৌজিক শিজিন্নরিবা মেমোরী"
 
 #: source/ui/dlg/AdabasStat.src#STR_ADABAS_ERROR_SYSTEMTABLES.String.Text
 msgid  "No information could be displayed because no access rights exist for the required system tables."
-msgstr ""
+msgstr "ঈ-পাউ অমত্তা উতলক্ত্রে মরমদি দরকার ওইবা সিস্তেম তেবলগী চংবগী মফম লৈতে."
 
 #: source/ui/dlg/directsql.src#DLG_DIRECTSQL.FL_SQL.FixedLine.Text
 msgid  "SQL command"
@@ -2233,7 +2233,7 @@ msgstr "থৌদাৱা মাইপাকনা মথৌ পাংথোক
 
 #: source/ui/dlg/directsql.src#STR_DIRECTSQL_CONNECTIONLOST.String.Text
 msgid  "The connection to the database has been lost. This dialog will be closed."
-msgstr ""
+msgstr "দতাবেজদা শম্নবা মরী মাংখ্রে. মসিগী দাইলোগসি থীংলনি."
 
 #: source/ui/dlg/dbfindex.src#DLG_DBASE_INDEXES.ModalDialog.Text
 msgid  "Indexes"
@@ -2288,8 +2288,8 @@ msgid  "The database does not support user administration."
 msgstr "শিজিন্নরিবা অশিন-অরাংদা দতাবেজনা মতেং পাংদ্রে."
 
 #: source/ui/dlg/UserAdmin.src#DLG_PASSWORD.FL_USER.FixedLine.Text
-msgid  "User "$name$:  $""
-msgstr ""
+msgid  "User \"$name$:  $\""
+msgstr "শিজিন্নরিবা\"$name$:  $\""
 
 #: source/ui/dlg/UserAdmin.src#DLG_PASSWORD.FT_OLDPASSWORD.FixedText.Text
 msgid  "Old p~assword"
@@ -2389,7 +2389,7 @@ msgstr "MySQL দতাবেজদা শম্নবা মরী অমা �
 
 #: source/ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_MYSQL_INTRO.FT_MYSQL_HELPTEXT.FixedText.Text
 msgid  "You can connect to a MySQL database using either ODBC or JDBC.\nPlease contact your system administrator if you are unsure about the following settings."
-msgstr ""
+msgstr "ODBC নত্ত্রগা JDBC শিজিন্নদুনা  MySQL দতাবেজদা অদোম্না শম্নবা য়াগনি.\nঅদোম্না মখাগী সেতিংসশিং অসি চিংনরবদি অদোমগী সিস্তেমগী অশিন-অরাংগা অমুক্তা পাউ ফাওনবিয়ু."
 
 #: source/ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_MYSQL_INTRO.FT_MYSQLCONNECTIONMODE.FixedText.Text
 msgid  "How do you want to connect to your MySQL database?"
@@ -2465,7 +2465,7 @@ msgstr "JDBC শিজিন্নদুনা MySQL দতাবেজ অম�
 
 #: source/ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_MYSQL_JDBC.STR_MYSQLJDBC_HELPTEXT.String.Text
 msgid  "Please enter the required information to connect to a MySQL database using JDBC. Note that a JDBC driver class must be installed on your system and registered with %PRODUCTNAME.\nPlease contact your system administrator if you are unsure about the following settings."
-msgstr ""
+msgstr "JDBC শিজিন্নদুনা  MySQLদতাবেজ অমদা মরী শম্ন্নবগীদমক্তা দরকার লৈবা ঈ-পাউ ইশিনবিয়ু. খংজিনবিয়ু মদুদি JDBC দ্রাইভর ক্লাস অদোমগী সিস্তেমদা শুংশোয়-শোয়দনা ইনস্তোল তৌবিগদবনি অমশুং PRODUCTNAME লোয়ন্না রেজিস্তার তৌবিগদবনি.\nমখগী সেতিংসশিং অসি থাজদ্রবদি অদোমগী সিস্তেমগী অশিন-অরাংগা পাউ ফাওনবিয়ু."
 
 #: source/ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_MYSQL_JDBC.STR_MYSQL_DRIVERCLASSTEXT.String.Text
 msgid  "MySQL JDBC d~river class:"
@@ -2497,7 +2497,7 @@ msgstr "তেক্সত ফাইলশিংদা মরী অমা স�
 
 #: source/ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_TEXT.STR_TEXT_HELPTEXT.String.Text
 msgid  "Select the folder where the CSV (Comma Separated Values) text files are stored. %PRODUCTNAME Base will open these files in read-only mode."
-msgstr ""
+msgstr "CSV (কোমা তোঙান্না থম্লবা ভেল্যুশিং) তেক্সত ফাইলশিং য়াওবা ফোল্দরদু খনবিয়ু. %PRODUCTNAME বেজনা মসিগী ফাইলশিং অসি পাবগী মওংখক্তংদা হাংগনি."
 
 #: source/ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_TEXT.STR_TEXT_PATH_OR_FILE.String.Text
 msgid  "Path to text files"
@@ -2517,7 +2517,7 @@ msgstr "LDAP দিরেক্তোরি অমদা শম্নবা অ�
 
 #: source/ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_LDAP.FT_LDAP_HELPTEXT.FixedText.Text
 msgid  "Please enter the required information to connect to an LDAP directory.\nPlease contact your system administrator if you are unsure about the following settings."
-msgstr ""
+msgstr "LDAP দিরেক্তোরি অমদা শম্ননবগীদমক্তা দরকার ওইবা ঈ-পাউশিং ইশিনবিয়ু.\nমখাগী সেতিংসশিং অসি থাজদ্রবদি অদোমগী সিস্তেমগী অশিন-অরাংগা পাউ ফাওনবিয়ু."
 
 #: source/ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_LDAP.STR_LDAP_DEFAULT.String.Text
 msgid  "Default: 389"
@@ -2533,7 +2533,7 @@ msgstr "এদাবাজ D দতাবেজদা শম্নবা অম�
 
 #: source/ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_ADABAS.STR_ADABAS_HELPTEXT.String.Text
 msgid  "Enter the name of the Adabas D database you want to connect to.\nClick 'Browse...' to select an Adabas D database that is already registered in %PRODUCTNAME."
-msgstr ""
+msgstr "অদোম্নবা শম্নবা পাম্লবদি অদাবাজ D দতাবেজগী মিং ইশিনবিয়ু.\nঅদাবাজ D দতাবেজ খন্নবগীদমক 'ব্রাউজ...' ক্লিক তৌবিয়ু মদু হাননা %PRODUCTNAME দা রেজিস্তার তৌদুনা লৈরবনি."
 
 #: source/ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_ADO.STR_ADO_HEADERTEXT.String.Text
 msgid  "Set up a connection to an ADO database"
@@ -2541,7 +2541,7 @@ msgstr "ADO দতাবেজ অমদা শম্নবা অমখক স�
 
 #: source/ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_ADO.STR_ADO_HELPTEXT.String.Text
 msgid  "Please enter the URL of the ADO data source you want to connect to.\nClick 'Browse' to configure provider-specific settings.\nPlease contact your system administrator if you are unsure about the following settings."
-msgstr ""
+msgstr "দা শম্নবা পাম্লবদি ADO দতা হৌফমগী URLদু ইশিনবিয়ু.\nহৌরকফম-অককনবা সেতিংসকী শক্তম উতনবগীদমক  'ব্ৰাওজ'দা ক্লিক তৌবিয়ু.\nমখাগী সেতিংসশিং অসি থাজদ্রবদি অদেমগী সিস্তেমগী অসিন-অরাংগা পাউ অমুক্তা ফাওনবিয়ু."
 
 #: source/ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_ODBC.STR_ODBC_HEADERTEXT.String.Text
 msgid  "Set up a connection to an ODBC database"
@@ -2549,7 +2549,7 @@ msgstr "ODBC দতাবেজ অমদা মরী অমা সেত অ�
 
 #: source/ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_ODBC.STR_ODBC_HELPTEXT.String.Text
 msgid  "Enter the name of the ODBC database you want to connect to.\nClick 'Browse...' to select an ODBC database that is already registered in %PRODUCTNAME.\nPlease contact your system administrator if you are unsure about the following settings."
-msgstr ""
+msgstr "দা শম্বা পাম্লবদি ODBC দতাবেজগী মিং ইশিনবিয়ু.\nODBC দতাবেজ অমা খননবগীদমক্তা 'ব্রাওজ...'দা ক্লিক তৌবিয়ু মদু হাননা %PRODUCTNAMEদা রেজিস্তার তৌদুনা লৈরবনি.\nমখাগী সেতিংসশিং অসি থাজদ্রবদি অদোম্না অদোমগী সিস্তেমগী অশিন-অরাংগা পাউ অমুক্তা ফাওনবিয়ু."
 
 #: source/ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_JDBC.STR_JDBC_HEADERTEXT.String.Text
 msgid  "Set up a connection to a JDBC database"
@@ -2557,7 +2557,7 @@ msgstr "JDBC দতাবেজ অমদা মরী অমখক সেত �
 
 #: source/ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_JDBC.STR_JDBC_HELPTEXT.String.Text
 msgid  "Please enter the required information to connect to a JDBC database.\nPlease contact your system administrator if you are unsure about the following settings."
-msgstr ""
+msgstr "JDBC দতাবেজ অমদা মরী শম্ননগীদমক্তা মরী লৈন্নবা ঈ-পাউশিং ইশিনবিয়ু. \nমখাগী সেতিংসশিং অসি চিংনরবদি অদোম্না অদোমগী সিস্তেসগী অশিন-অরাংগা পাউ ফাওনবিয়ু."
 
 #: source/ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_ORACLE.STR_ORACLE_HEADERTEXT.String.Text
 msgid  "Set up a connection to an Oracle database"
@@ -2573,7 +2573,7 @@ msgstr "ওরেকল JDBC~ দ্রাইভর ক্লাস"
 
 #: source/ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_ORACLE.STR_ORACLE_HELPTEXT.String.Text
 msgid  "Please enter the required information to connect to an Oracle database.Note that a JDBC Driver Class must be installed on your system and registered with %PRODUCTNAME.\nPlease contact your system administrator if you are unsure about the following settings."
-msgstr ""
+msgstr "ওরেকল দতাবেজ অমদা শম্ননবগীদমক দরকার ওইবা ঈ-পাওশিং ইশিনবিয়ু. মসি খংজিনবিয়ু মদুদি JDBC দ্রাইভর ক্লাস অদোমগী সিস্তেমদা শুংশোয়-শোয়দনা ইনস্তোল তৌগদবনি অমশুং %PRODUCTNAMEগা লোয়ননা রেজিস্তার তৌগদবনি.\nমখাগী সেতিংসশিং অসি চিংনরবদি অদোম্না অদোমগী সিস্তেমগী অশিন-অরাংগা পাও অমুক্তা ফাওনবিয়ু."
 
 #: source/ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_SPREADSHEET.STR_SPREADSHEET_HEADERTEXT.String.Text
 msgid  "Set up a connection to spreadsheets"
@@ -2581,7 +2581,7 @@ msgstr "স্প্ৰেদশীত্তা মরী অমা সেত �
 
 #: source/ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_SPREADSHEET.STR_SPREADSHEET_HELPTEXT.String.Text
 msgid  "Click 'Browse...' to select a %PRODUCTNAME spreadsheet or Microsoft Excel workbook.\n%PRODUCTNAME will open this file in read-only mode."
-msgstr ""
+msgstr "%PRODUCTNAME স্প্ৰেদশীত নত্ত্রগা মাইক্ৰোসোফত এক্সেল ৱাৰ্কবুক খননবগী 'ব্ৰাওজ...'গা ক্লিকতৌ.\nমাইক্রোসোফত এক্সেল ৱার্কবুক%PRODUCTNAME না মসিগী ফাইলটসি পাননবগীখক্তা হাংগনি."
 
 #: source/ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_SPREADSHEET.STR_SPREADSHEETPATH.String.Text
 msgid  "~Location and file name"
@@ -2723,6 +2723,50 @@ msgstr ""
 msgid  "Socket"
 msgstr ""
 
+#: source/ui/inc/toolbox_tmpl.hrc#ID_BROWSER_REFRESH.#define.Text
+msgid  "Refresh"
+msgstr "কনখত্হনবা"
+
+#: source/ui/inc/toolbox_tmpl.hrc#ID_NEW_VIEW_DESIGN.#define.Text
+msgid  "New ~View Design"
+msgstr "অনৌবা ~শক্তম দিজাইন"
+
+#: source/ui/inc/toolbox_tmpl.hrc#ID_NEW_TABLE_DESIGN.#define.Text
+msgid  "New ~Table Design"
+msgstr "অনৌবা ~তেবল দিজাইন"
+
+#: source/ui/inc/toolbox_tmpl.hrc#ID_NEW_QUERY_WIZARD.#define.Text
+msgid  "Query AutoPilot..."
+msgstr "ওতোপাইলোতকী  ৱাহং..."
+
+#: source/ui/inc/toolbox_tmpl.hrc#ID_NEW_QUERY_DESIGN.#define.Text
+msgid  "New ~Query (Design View)"
+msgstr "অনৌবা ~ৱাহং(দিজাইন ভিউ)"
+
+#: source/ui/inc/toolbox_tmpl.hrc#ID_EDIT_QUERY_DESIGN.#define.Text
+msgid  "~Edit Query"
+msgstr "~ৱাহং শেমদোক-শেমজিন তৌবা"
+
+#: source/ui/inc/toolbox_tmpl.hrc#ID_NEW_QUERY_SQL.#define.Text
+msgid  "New Query (~SQL View)"
+msgstr "অনৌবা ৱাহং (~SQL শক্তম)"
+
+#: source/ui/inc/toolbox_tmpl.hrc#ID_QUERY_EDIT_JOINCONNECTION.#define.Text
+msgid  "Edit..."
+msgstr "শেমদোক-শেমজিন তৌবা..."
+
+#: source/ui/inc/toolbox_tmpl.hrc#ID_BROWSER_COLWIDTH.#define.Text
+msgid  "Column ~Width..."
+msgstr "কলম ~অপাকপা..."
+
+#: source/ui/inc/toolbox_tmpl.hrc#ID_DOCUMENT_CREATE_REPWIZ.#define.Text
+msgid  "Report Wizard..."
+msgstr "পাউদম "
+
+#: source/ui/inc/toolbox_tmpl.hrc#SID_DB_FORM_NEW_PILOT.#define.Text
+msgid  "Form AutoPilot..."
+msgstr "ওতোপাইলোতকী ফোর্ম..."
+
 #: source/ui/misc/dbumiscres.src#RSC_CHARSETS.1.String.Text
 msgid  "System"
 msgstr "সিস্তেম"
@@ -2736,12 +2780,12 @@ msgid  "An unexpected error occurred. The operation could not be performed."
 msgstr "থাজদবা অশোয়বা থোক্লে. থবক পাংথোকপা ঙমদ্রে."
 
 #: source/ui/misc/dbumiscres.src#STR_COULDNOTOPEN_LINKEDDOC.String.Text
-msgid  "The document "$file$" could not be opened."
+msgid  "The document \"$file$\" could not be opened."
 msgstr ""
 
 #: source/ui/misc/dbumiscres.src#STR_MISSING_TABLES_XDROP.String.Text
 msgid  "The table cannot be deleted because the database connection does not support this."
-msgstr ""
+msgstr "তেবলদু মুত্থত্পা ঙমদ্রে মরমদি দতাবেজ শম্নবনা মসিদা মতেং পাংদ্রে."
 
 #: source/ui/misc/dbumiscres.src#STR_BUTTON_TEXT_ALL.String.Text
 msgid  "~All"
@@ -2760,19 +2804,19 @@ msgid  "No corresponding column type could be found for column '#1'."
 msgstr "কলম '#1'গীদমক মরীলৈন্নবা মখলগী কলম অমত্তা ফংবা ঙমদ্রে."
 
 #: source/ui/misc/dbumiscres.src#STR_FILE_DOES_NOT_EXIST.String.Text
-msgid  "The file "$file$" does not exist."
-msgstr ""
+msgid  "The file \"$file$\" does not exist."
+msgstr "\"$file$\" ফাইলদু লৈতে."
 
 #: source/ui/misc/dbumiscres.src#STR_WARNINGS_DURING_CONNECT.String.Text
-msgid  "Warnings were encountered while connecting to the data source. Press "$buttontext$" to view them."
-msgstr ""
+msgid  "Warnings were encountered while connecting to the data source. Press \"$buttontext$\" to view them."
+msgstr "দাতা হৌরকফমদা শম্নবা মতমদা চেকশিনৱশিং থেংনরে. মখোয় মীতয়েং তানবা \"$buttontext$\" নম্মো."
 
 #: source/ui/misc/dbumiscres.src#STR_NAMED_OBJECT_ALREADY_EXISTS.String.Text
 msgid  "The name '$#$' already exists.\nPlease enter another name."
-msgstr ""
+msgstr "'$#$' মমিং হান্না লৈরে.\n চানবিদুনা অতোপ্পা মমিং অমা চংবিয়ু."
 
 #: source/ui/misc/dbumiscres.src#RID_STR_EXTENSION_NOT_PRESENT.String.Text
-msgid  "The report, "$file$", requires the extension Oracle Report Builder."
+msgid  "The report, \"$file$\", requires the extension Oracle Report Builder."
 msgstr ""
 
 #: source/ui/misc/WizardPages.src#STR_WIZ_COLUMN_SELECT_TITEL.String.Text
@@ -2901,7 +2945,7 @@ msgstr ""
 
 #: source/ui/misc/WizardPages.src#STR_SUGGEST_APPEND_TABLE_DATA.String.Text
 msgid  "Choose the option 'Append data' on the first page to append data to an existing table."
-msgstr ""
+msgstr "অহানবা লামায়দা দাতা হাপচিন্নবা লৈরিবা তেবলসিদা 'দাতা হাপচিনবা' অপাম্বা খল্লো. "
 
 #: source/ui/misc/WizardPages.src#STR_INVALID_TABLE_NAME_LENGTH.String.Text
 msgid  "Please change the table name. It is too long."
@@ -2957,11 +3001,11 @@ msgstr "দতাবেজ খরনা মসিগী জোইন মখল�
 
 #: source/ui/querydesign/querydlg.src#STR_QUERY_INNER_JOIN.String.Text
 msgid  "Includes only records for which the contents of the related fields of both tables are identical."
-msgstr ""
+msgstr "মরী লৈন্নবা ফিল্দশিংগী তেবল অনীমক্কী হীরমশিং মশক মান্নবশিং রেকোর্দখক্তদা য়াওই."
 
 #: source/ui/querydesign/querydlg.src#STR_QUERY_LEFTRIGHT_JOIN.String.Text
 msgid  "Contains ALL records from table '%1' but only records from table '%2' where the values in the related fields are matching."
-msgstr ""
+msgstr "'%1'দগী ALL রেকোৰ্দশিং য়াওই অদুবু '%2' তেবলদগী মরী লৈন্নবা ফিল্দশিংদা লৈরিবা ভেল্যুশিংগী রেকোর্দশিংতমক চান্নৈ ."
 
 #: source/ui/querydesign/querydlg.src#STR_QUERY_FULL_JOIN.String.Text
 msgid  "Contains ALL records from '%1' and from '%2'."
@@ -3017,7 +3061,7 @@ msgstr "চতনদ্রবা মফোংদোক, ফিল্দ মম�
 
 #: source/ui/querydesign/query.src#RID_STR_TOMUCHTABLES.String.Text
 msgid  "The query covers #num# tables. The selected database type, however, can only process a maximum of #maxnum# table(s) per statement."
-msgstr ""
+msgstr "ৱাহংদুদা #num# তেবলশিং য়াওরে. অদুবু খনগতলবা দতাবেজ মখলনা  #maxnum# তেবল(শিং)গী  স্তেতমেন্ত খুদিংগী খ্বাইদগী চাওবা প্ৰোসেসতমক তৌবা ঙমই."
 
 #: source/ui/querydesign/query.src#STR_QUERY_UNDO_TABWINDELETE.String.Text
 msgid  "Delete Table Window"
@@ -3065,7 +3109,7 @@ msgstr "থোইদোক-হেনদোকপা ভেল্যুশিং"
 
 #: source/ui/querydesign/query.src#STR_QUERY_HANDLETEXT.String.Text
 msgid  "Field;Alias;Table;Sort;Visible;Function;Criterion;Or;Or"
-msgstr ""
+msgstr "ফিল্দ;অতোপ্পা মিং;তেবল;মথং-মনাও শেম্বা;অউবা;মথৌ;ক্রাইতরিঅন;নত্রগা;নত্রগা"
 
 #: source/ui/querydesign/query.src#STR_QRY_TOO_MANY_COLUMNS.String.Text
 msgid  "There are too many columns."
@@ -3105,7 +3149,7 @@ msgstr "তেবল মশিং য়াম্না লৈরে."
 
 #: source/ui/querydesign/query.src#STR_QRY_NATIVE.String.Text
 msgid  "The statement will not be applied when querying in the SQL dialect of the database."
-msgstr ""
+msgstr "দতাবেজগী SQL লোন্থৈদা ৱাহং হংবা মতমদা স্তেতমেন্তদু শিজিন্নবা য়ারোই."
 
 #: source/ui/querydesign/query.src#ERR_QRY_AMB_FIELD.ErrorBox.Message
 msgid  "Field name not found or not unique"
@@ -3141,7 +3185,7 @@ msgstr "ফিল্দ অমত্তা খনদবা মরম্না �
 
 #: source/ui/querydesign/query.src#STR_DATASOURCE_DELETED.String.Text
 msgid  "The corresponding data source has been deleted. Therefore, data relevant to that data source cannot be saved."
-msgstr ""
+msgstr "মরী লৈন্নবা দতা হৌফমশিং মুত্থতখ্রে. মরম অদুনা, দতা হৌফমগা মরী লৈন্নবা দাতা সেভ তৌবা ঙমলরোয়."
 
 #: source/ui/querydesign/query.src#STR_QRY_COLUMN_NOT_FOUND.String.Text
 msgid  "The column '$name$' is unknown."
@@ -3157,7 +3201,7 @@ msgstr "'LIKE' মমাংদা অদোম্না কলম মমিং �
 
 #: source/ui/querydesign/query.src#STR_QRY_CHECK_CASESENSITIVE.String.Text
 msgid  "The column could not be found. Please note that the database is case-sensitive."
-msgstr ""
+msgstr "কলমদু ফংবা ঙমদ্রে. দতাবেজ অসি কেস-সেনসিতিবনি হায়বা খঙজিনবিয়ু."
 
 #: source/ui/querydesign/query.src#STR_QUERYDESIGN.String.Text
 msgid  " - %PRODUCTNAME Base: Query Design"
@@ -3172,11 +3216,11 @@ msgid  "$object$ has been changed.\nDo you want to save the changes?"
 msgstr ""
 
 #: source/ui/querydesign/query.src#STR_ERROR_PARSING_STATEMENT.String.Text
-msgid  "$object$ is based on an SQL command which could not be parsed.(except "SQL command", which doesn't make sense here) will be inserted."
+msgid  "$object$ is based on an SQL command which could not be parsed.(except \"SQL command\", which doesn't make sense here) will be inserted."
 msgstr ""
 
 #: source/ui/querydesign/query.src#STR_INFO_OPENING_IN_SQL_VIEW.String.Text
-msgid  "$object$ will be opened in SQL view.(except "SQL command", which doesn't make sense here) will be inserted."
+msgid  "$object$ will be opened in SQL view.(except \"SQL command\", which doesn't make sense here) will be inserted."
 msgstr ""
 
 #: source/ui/querydesign/query.src#RSC_QUERY_OBJECT_TYPE.1.String.Text
@@ -3193,7 +3237,7 @@ msgstr ""
 
 #: source/ui/querydesign/query.src#STR_STATEMENT_WITHOUT_RESULT_SET.String.Text
 msgid  "The query does not create a result set, and thus cannot be part of another query."
-msgstr ""
+msgstr "ৱাহংনা ফলগী কাংলুপ অমা শেমগত্তে, মরম অসিনা অতোপ্পা ৱাহং অমগী শরুক ওইরোই"
 
 #: source/ui/querydesign/query.src#STR_NO_DATASOURCE_OR_CONNECTION.String.Text
 msgid  "Both the ActiveConnection and the DataSourceName parameter are missing or wrong - cannot initialize the query designer."
@@ -3221,11 +3265,11 @@ msgstr "দতাবেদনা মরীসিদা মতেং পাংদ
 
 #: source/ui/relationdesign/relation.src#RELATION_DESIGN_SAVEMODIFIED.QueryBox.Message
 msgid  "The relation design has been changed.\nDo you want to save the changes?"
-msgstr ""
+msgstr "মরী লৈন্নবা দিজাইনদু হোংলে.\nঅহোংবদু সেভ তৌবা পাম্বিবরা?"
 
 #: source/ui/relationdesign/relation.src#STR_QUERY_REL_DELETE_WINDOW.String.Text
 msgid  "When you delete this table all corresponding relations will be deleted as well. Continue?"
-msgstr ""
+msgstr "অদোম্না তেবলসি মুত্থত্পা মতমদা মরী লৈন্নবা মরী খুদিংমক মুত্থতখ্রগনি. মখা চত্থখিগদ্রা?"
 
 #: source/ui/relationdesign/relation.src#STR_QUERY_REL_COULD_NOT_CREATE.String.Text
 msgid  "The database could not create the relation. May be foreign keys for this kind of table aren't supported.\nPlease check your documentation of the database."
@@ -3233,7 +3277,7 @@ msgstr ""
 
 #: source/ui/tabledesign/table.src#STR_TABLEDESIGN_DBFIELDTYPES.String.Text
 msgid  "Unknown;Text;Number;Date/Time;Date;Time;Yes/No;Currency;Memo;Counter;Image;Text (fix);Decimal;Binary (fix);Binary;BigInt;Double;Float;Real;Integer;Small Integer;Tiny Integer;SQL Null;Object;Distinct;Structure;Field;BLOB;CLOB;REF;OTHER;Bit (fix)"
-msgstr ""
+msgstr "মশকখংদবা;তেক্স;মশিং;তাং/মতম;তাং;মতম;হোয়/নত্তে;পৈশা;মেমো';কাউন্তর;মমি;তেক্স (অক্কনবা);দশমিক;বাইনারী (অক্কনবা);বাইনারী;BigInt;শরুক অনী;ফ্লোত;অশেংবা;ইন্তিজর;অপিকপা ইন্তিজর;য়াম্না পিকপা ইন্তিজর;SQL কান্নদ্রবা;পোত্শক;থোইদোক-হেনদোকপা;মশাগত;ফিল্দ;BLOB;CLOB;REF;OTHER"
 
 #: source/ui/tabledesign/table.src#STR_TABLEDESIGN_UNDO_PRIMKEY.String.Text
 msgid  "Insert/remove primary key"
@@ -3377,15 +3421,15 @@ msgstr "ফোরমেত খুদম"
 
 #: source/ui/tabledesign/table.src#STR_HELP_BOOL_DEFAULT.String.Text
 msgid  "Select a value that is to appear in all new records as default.\nIf the field is not to have a default value, select the empty string."
-msgstr ""
+msgstr "দিফোল্তকুম্না অনৌবা রেকোর্দ পুম্নমক শাফোংগদবা ভেল্যু অমখক খল্লো.\nফিল্দদা দিফোল্ত ভেল্যু য়াওদ্রবদি, অহাংবা স্ত্রীং অমা খল্লো."
 
 #: source/ui/tabledesign/table.src#STR_HELP_DEFAULT_VALUE.String.Text
 msgid  "Enter a default value for this field.\n\nWhen you later enter data in the table, this string will be used in each new record for the field selected. It should, therefore, correspond to the cell format that needs to be entered below."
-msgstr ""
+msgstr "ফিল্দ অসিগী দিফোল্ত ভেল্যু অমখক চংশিল্লো.\n\nকরিগুম্বা অদোম্না কোন্না তেবলদা দাতা চংশিল্লবদি, মসিগী স্ত্রিংসি খল্লবা ফিল্দগীদমক অনৌবা রেকোর্দ খুদিংমক্তা শিজিন্নগনি. মরম অসিনা মসি মখাদা চংশিনবা দরকার লৈবা কাখলগী ফোর্মেত্তা মরি লৈনগনি."
 
 #: source/ui/tabledesign/table.src#STR_HELP_FIELD_REQUIRED.String.Text
 msgid  "Activate this option if this field cannot contain NULL values, i.e. the user must always enter data."
-msgstr ""
+msgstr "করিগুম্বা মসিগী ফিল্দসিদা NULL ভেল্যু য়াওদ্রবদি মসিগী ওপসনসি শিনবাংহল্লু, খুদম ওইনা শিজিন্নরিবনা শোয়দনা মতম খুদিংমক্তা দতা চংশিনগদবনি."
 
 #: source/ui/tabledesign/table.src#STR_HELP_TEXT_LENGTH.String.Text
 msgid  "Enter the maximum text length permitted."
@@ -3397,7 +3441,7 @@ msgstr "নম্বর ফোর্মেত চংশিল্লো."
 
 #: source/ui/tabledesign/table.src#STR_HELP_LENGTH.String.Text
 msgid  "Determine the length data can have in this field.\n\nIf decimal fields, then the maximum length of the number to be entered, if binary fields, then the length of the data block.\nThe value will be corrected accordingly when it exceeds the maximum for this database."
-msgstr ""
+msgstr "ফিল্দসিদা লৈবা য়াবা অশাংবা দতা খল্লো.\n\nকরিগুম্বা দশমিক ফিল্দশিং ওইরবা, অদুদগী খ্বাইদগী শাংবা মশিং ইশিল্লবা,  করিগুম্বা বাইনারী ফিল্দশিং ওইরবা, অদুদগী দতা ব্লোক্কী অশাংবা ইশিনবা তাই.\nভেল্যুদু দতাবেজ অসিগী খ্বাইদগী অচৌবদগী হেন্দোরকপগী মখাপোন্না চুমথোক্কনি."
 
 #: source/ui/tabledesign/table.src#STR_HELP_SCALE.String.Text
 msgid  "Specify the number of decimal places permitted in this field."
@@ -3405,7 +3449,7 @@ msgstr "মসিগী ফিল্দসিদা শিজিন্নবা 
 
 #: source/ui/tabledesign/table.src#STR_HELP_FORMAT_CODE.String.Text
 msgid  "This is where you see how the data would be displayed in the current format (use the button on the right to modify the format)."
-msgstr ""
+msgstr "মসি অদোম্না উবা হৌজিক্কী ফোর্মেত অসিদা দতা করম্না উতক্কনি হায়বদুনি (ফোর্মেত অদু শেমদোকনবগীদমক্তা য়েত্থংবা বতন্দু শিজিন্নৌ)."
 
 #: source/ui/tabledesign/table.src#STR_HELP_FORMAT_BUTTON.String.Text
 msgid  "This is where you determine the output format of the data."
@@ -3413,19 +3457,19 @@ msgstr "মসি অদোম্না খল্লবা দতাগী আ�
 
 #: source/ui/tabledesign/table.src#STR_HELP_AUTOINCREMENT.String.Text
 msgid  "Choose if this field should contain AutoIncrement values.\n\nYou can not enter data in fields of this type. An intrinsic value will be assigned to each new record automatically (resulting from the increment of the previous record)."
-msgstr ""
+msgstr "করিগুম্বা মসিগী ফিল্দসিদা ওতোইক্রিমেন্ত ভেল্যু য়াওরবদি অপাম্বা খল্লো.\n\nঅসিগুম্বা মখলগী ফিল্দিদা দতা ইশিনবা ঙম্লোয়. অনৌবা রেকোর্দ খুদিংমক্তা মরুওইবা ভেল্যু মশামথন্থ পিগনি(মমাংগী রেকোর্দতগী হাপকত্পনা ওইহনবা)."
 
 #: source/ui/tabledesign/table.src#PB_FORMAT.PushButton.Text
 msgid  "~..."
 msgstr "~..."
 
 #: source/ui/tabledesign/table.src#STR_TABLEDESIGN_DUPLICATE_NAME.String.Text
-msgid  "The table cannot be saved because column name "$column$" was assigned twice."
-msgstr ""
+msgid  "The table cannot be saved because column name \"$column$\" was assigned twice."
+msgstr "তেবলদু সেভ তৌবা ঙমলোয় মরমদি কলম মমিং\"$column$\" অনিরক পিরে."
 
 #: source/ui/tabledesign/table.src#STR_TBL_COLUMN_IS_KEYCOLUMN.String.Text
-msgid  "The column "$column$" belongs to the primary key. If the column is deleted, the primary key will also be deleted. Do you really want to continue?"
-msgstr ""
+msgid  "The column \"$column$\" belongs to the primary key. If the column is deleted, the primary key will also be deleted. Do you really want to continue?"
+msgstr "\"$column$\" কলমদু প্ৰাইমারী কিগা মরী লৈন্নৈ. কলমসি মুত্থতলবদি, প্রাইমারী কিশু মুত্থতলনি. তশেংনা অদোম মখা চত্থবা পাম্বব্রা?"
 
 #: source/ui/tabledesign/table.src#STR_TBL_COLUMN_IS_KEYCOLUMN_TITLE.String.Text
 msgid  "Primary Key Affected"
@@ -3439,25 +3483,29 @@ msgstr "কলম"
 msgid  "Continue anyway?"
 msgstr "মখা হেক্তা চত্থখিগদ্রা?"
 
+#: source/ui/tabledesign/table.src#STR_STAT_WARNING.String.Text
+msgid  "Warning!"
+msgstr "চেকশিনৱা!"
+
 #: source/ui/tabledesign/table.src#TABLE_DESIGN_SAVEMODIFIED.QueryBox.Message
 msgid  "The table has been changed.\nDo you want to save the changes?"
-msgstr ""
+msgstr "তেবলসি হোংলে.\nঅদোম অহোংবসি সেভ তৌবা পাম্ব্রা?"
 
 #: source/ui/tabledesign/table.src#TABLE_QUERY_CONNECTION_LOST.QueryBox.Message
 msgid  "The connection to the database was lost! The table design can only be used with limited functionality without a connection.\nReconnect?"
-msgstr ""
+msgstr "দতাবেজদা শম্নবা মরী মাংখ্রে! তেবল দিজাইনসি অককনবা মথৌগা লোয়ননা শম্নবা মরী য়াওদ্রবসু শিজিন্নবা য়াগনি.\nঅমুক হন্না শম্বা?"
 
 #: source/ui/tabledesign/table.src#STR_TABLEDESIGN_CONNECTION_MISSING.String.Text
 msgid  "The table could not be saved due to problems connecting to the database."
-msgstr ""
+msgstr "দতাবেজদা শমনবদা খুদোংচাদবা লৈবনা তেবলসি সেভ তৌবা ঙমদ্রে."
 
 #: source/ui/tabledesign/table.src#STR_TABLEDESIGN_DATASOURCE_DELETED.String.Text
 msgid  "The table filter could not be adjusted because the data source has been deleted."
-msgstr ""
+msgstr "তেবল ফিল্তরদু চান্নহনবা ঙমদ্রে মরমদি দতা হৌফম মুত্থতখ্রে ."
 
 #: source/ui/tabledesign/table.src#QUERY_SAVE_TABLE_EDIT_INDEXES.QueryBox.Message
 msgid  "Before you can edit the indexes of a table, you have to save it.\nDo you want to save the changes now?"
-msgstr ""
+msgstr "অদোম্না তেবল অমগী ইন্দেক্স শেমদোকত্রিঙৈগী মমাংদা, অদোম্না মসি সেভ তৌগদবনি.\nঅদোম অহোংবসি হৌজিক সেভ তৌবা পাম্ব্রা?"
 
 #: source/ui/tabledesign/table.src#STR_TABLEDESIGN_NO_PRIM_KEY_HEAD.String.Text
 msgid  "No primary key"
@@ -3465,15 +3513,15 @@ msgstr "প্রাইমারী কি লৈতে"
 
 #: source/ui/tabledesign/table.src#STR_TABLEDESIGN_NO_PRIM_KEY.String.Text
 msgid  "A unique index or primary key is required for data record identification in this database.\nYou can only enter data into this table when one of these two structural conditions has been met.\n\nShould a primary key be created now?"
-msgstr ""
+msgstr "মসিগী দতাবেজসিদা দতা রেকোৰ্দ শক্তাকনবগীদমক অখন্নবা ইন্দেক্স নত্রগা প্রাইমারী কি দরকার ওই.\nকরিগুম্বা মসিগী মশাগতকী ফিবম অনীসিগী মনুংদা অমা উনরবদি অদোম্না তেবল অসিদা দতাতমক চংবা য়াগনি.\nহৌজিক প্রাইমারী কি অমা শেমগতলগদ্রা?"
 
 #: source/ui/tabledesign/table.src#STR_TABLEDESIGN_TITLE.String.Text
 msgid  " - %PRODUCTNAME Base: Table Design"
 msgstr " - %PRODUCTNAME বেজ: তেবল দিজাইন"
 
 #: source/ui/tabledesign/table.src#STR_TABLEDESIGN_ALTER_ERROR.String.Text
-msgid  "The column "$column$" could not be changed. Should the column instead be deleted and the new format appended?"
-msgstr ""
+msgid  "The column \"$column$\" could not be changed. Should the column instead be deleted and the new format appended?"
+msgstr "\"$column$\" দু হোংবা ঙমদ্রে. কলমদু মুত্থতকদ্রা অমসুং অনৌবা ফোর্মেত হাপচিনগদ্রা?"
 
 #: source/ui/tabledesign/table.src#STR_TABLEDESIGN_SAVE_ERROR.String.Text
 msgid  "Error while saving the table design"
@@ -3485,7 +3533,7 @@ msgstr "কলম $column$ মুত্থত্পা ঙমদ্রে."
 
 #: source/ui/tabledesign/table.src#TABLE_DESIGN_ALL_ROWS_DELETED.QueryBox.Message
 msgid  "You are trying to delete all the columns in the table. A table cannot exist without columns. Should the table be deleted from the database? If not, the table will remain unchanged."
-msgstr ""
+msgstr "অদোম্না তেবলদা য়াওরিবা কলম খুদিংমক মুত্থতনবা হোতনরি. তেবল অমা হায়বসি কলম য়াওদনা লৈবা য়াদে. দতাবেজদগী তেবল মুত্থতলগদ্রা? মুত্থতত্রবদি, তেবলদু হোংদনা লৈরগনি."
 
 #: source/ui/tabledesign/table.src#STR_AUTOINCREMENT_VALUE.String.Text
 msgid  "A~uto-increment statement"
@@ -3493,11 +3541,11 @@ msgstr "ওতো-ইনক্ৰিমেন্ত স্তেতমেন্�
 
 #: source/ui/tabledesign/table.src#STR_HELP_AUTOINCREMENT_VALUE.String.Text
 msgid  "Enter an SQL statement for the auto-increment field.\n\nThis statement will be directly transferred to the database when the table is created."
-msgstr ""
+msgstr "ওতো-ইনক্ৰিমেন্ত ফিল্দগীদমক SQL স্তেতমেন্ত অমা চংশিল্লো.\n\nতেবল অসি শেম্বা মতমদা মসিগী স্তেতমেন্ত অসি হকথেংননা দতাবেজদা থাগনি."
 
 #: source/ui/tabledesign/table.src#STR_NO_TYPE_INFO_AVAILABLE.String.Text
 msgid  "No type information could be retrieved from the database.\nThe table design mode is not available for this data source."
-msgstr ""
+msgstr "দতাবেজদগী মখল অমত্তগী ঈপাউ অমুক হন্না ফংবা ঙমদ্রে.\nদতা হৌফম অসিগীদমক তেবল দিজাইন মোদ ফংদ্রে."
 
 #: source/ui/tabledesign/table.src#STR_CHANGE_COLUMN_NAME.String.Text
 msgid  "change field name"
@@ -3514,10 +3562,6 @@ msgstr "ফিল্দ শন্দোকনা তাকপা হোংবা
 #: source/ui/tabledesign/table.src#STR_CHANGE_COLUMN_ATTRIBUTE.String.Text
 msgid  "change field attribute"
 msgstr "ফিল্দ এত্রিবিয়ুত হোংবা"
-
-#: source/ui/tabledesign/table.src#STR_STAT_WARNING.String.Text
-msgid  "Warning!"
-msgstr "চেকশিনৱা!"
 
 #: source/ui/uno/dbinteraction.src#STR_REMEMBERPASSWORD_SESSION.String.Text
 msgid  "~Remember password until end of session"
@@ -3570,47 +3614,3 @@ msgstr ""
 #: source/ui/uno/copytablewizard.src#STR_CTW_ERROR_INVALID_INTERACTIONHANDLER.String.Text
 msgid  "The given interaction handler is invalid."
 msgstr ""
-
-#: source/ui/inc/toolbox_tmpl.hrc#ID_BROWSER_REFRESH.#define.Text
-msgid  "Refresh"
-msgstr "কনখত্হনবা"
-
-#: source/ui/inc/toolbox_tmpl.hrc#ID_NEW_VIEW_DESIGN.#define.Text
-msgid  "New ~View Design"
-msgstr "অনৌবা ~শক্তম দিজাইন"
-
-#: source/ui/inc/toolbox_tmpl.hrc#ID_NEW_TABLE_DESIGN.#define.Text
-msgid  "New ~Table Design"
-msgstr "অনৌবা ~তেবল দিজাইন"
-
-#: source/ui/inc/toolbox_tmpl.hrc#ID_NEW_QUERY_WIZARD.#define.Text
-msgid  "Query AutoPilot..."
-msgstr "ওতোপাইলোতকী  ৱাহং..."
-
-#: source/ui/inc/toolbox_tmpl.hrc#ID_NEW_QUERY_DESIGN.#define.Text
-msgid  "New ~Query (Design View)"
-msgstr "অনৌবা ~ৱাহং(দিজাইন ভিউ)"
-
-#: source/ui/inc/toolbox_tmpl.hrc#ID_EDIT_QUERY_DESIGN.#define.Text
-msgid  "~Edit Query"
-msgstr "~ৱাহং শেমদোক-শেমজিন তৌবা"
-
-#: source/ui/inc/toolbox_tmpl.hrc#ID_NEW_QUERY_SQL.#define.Text
-msgid  "New Query (~SQL View)"
-msgstr "অনৌবা ৱাহং (~SQL শক্তম)"
-
-#: source/ui/inc/toolbox_tmpl.hrc#ID_QUERY_EDIT_JOINCONNECTION.#define.Text
-msgid  "Edit..."
-msgstr "শেমদোক-শেমজিন তৌবা..."
-
-#: source/ui/inc/toolbox_tmpl.hrc#ID_BROWSER_COLWIDTH.#define.Text
-msgid  "Column ~Width..."
-msgstr "কলম ~অপাকপা..."
-
-#: source/ui/inc/toolbox_tmpl.hrc#ID_DOCUMENT_CREATE_REPWIZ.#define.Text
-msgid  "Report Wizard..."
-msgstr "পাউদম "
-
-#: source/ui/inc/toolbox_tmpl.hrc#SID_DB_FORM_NEW_PILOT.#define.Text
-msgid  "Form AutoPilot..."
-msgstr "ওতোপাইলোতকী ফোর্ম..."

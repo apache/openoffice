@@ -137,7 +137,7 @@ msgstr "Opslaan"
 
 #: source/basicide/basidesh.src#RID_STR_SOURCETOBIG.String.Text
 msgid  "The source text is too large and can be neither compiled nor saved.\nDelete some of the comments or transfer some methods into another module."
-msgstr ""
+msgstr "De brontekst is te lang en kan niet worden opgeslagen of gecompileerd.\nWis enkele opmerkingen of verplaats enkele methodes naar een andere module."
 
 #: source/basicide/basidesh.src#RID_STR_ERROROPENSTORAGE.String.Text
 msgid  "Error opening file"
@@ -201,7 +201,7 @@ msgstr "Bestand XX bestaat reeds"
 
 #: source/basicide/basidesh.src#RID_STR_CANNOTRUNMACRO.String.Text
 msgid  "For security reasons, you cannot run this macro.\n\nFor more information, check the security settings."
-msgstr ""
+msgstr "Vanwege veiligheidsredenen kan deze macro niet worden uitgevoerd.\n\nZie de beveiligingsinstellingen."
 
 #: source/basicide/basidesh.src#RID_STR_COMPILEERROR.String.Text
 msgid  "Compile Error: "
@@ -217,7 +217,7 @@ msgstr "Zoekbegrip niet gevonden"
 
 #: source/basicide/basidesh.src#RID_STR_SEARCHFROMSTART.String.Text
 msgid  "Search to last module complete. Continue at first module?"
-msgstr ""
+msgstr "Er is tot aan de laatste module gezocht. Wilt u het zoeken voortzetten vanaf de eerste module?"
 
 #: source/basicide/basidesh.src#RID_STR_SEARCHREPLACES.String.Text
 msgid  "Search key replaced XX times"
@@ -237,7 +237,7 @@ msgstr "De naam van de standaardbibliotheek kan niet worden gewijzigd."
 
 #: source/basicide/basidesh.src#RID_STR_CANNOTCHANGENAMEREFLIB.String.Text
 msgid  "The name of a referenced library cannot be changed."
-msgstr ""
+msgstr "De naam van een bibliotheek met een verwijzing kan niet worden gewijzigd."
 
 #: source/basicide/basidesh.src#RID_STR_CANNOTUNLOADSTDLIB.String.Text
 msgid  "The default library cannot be deactivated"
@@ -301,7 +301,7 @@ msgstr "Macrobalk"
 
 #: source/basicide/basidesh.src#RID_STR_CANNOTCLOSE.String.Text
 msgid  "The window cannot be closed while BASIC is running."
-msgstr ""
+msgstr "Het venster kan niet worden gesloten \ntijdens het uitvoeren van het BASIC-programma."
 
 #: source/basicide/basidesh.src#RID_STR_REPLACESTDLIB.String.Text
 msgid  "The default library cannot be replaced."
@@ -373,7 +373,7 @@ msgstr "Er moet een naam worden ingevuld."
 
 #: source/basicide/basidesh.src#RID_STR_WILLSTOPPRG.String.Text
 msgid  "You will have to restart the program after this edit.\nContinue?"
-msgstr ""
+msgstr "U moet uw programma na deze wijziging opnieuw opstarten.\nDoorgaan?"
 
 #: source/basicide/basidesh.src#RID_STR_SEARCHALLMODULES.String.Text
 msgid  "Do you want to replace the text in all active modules?"
@@ -509,7 +509,7 @@ msgstr "Dialoogvenster importeren - Naam al in gebruik"
 
 #: source/basicide/basidesh.src#RID_STR_DLGIMP_CLASH_TEXT.String.Text
 msgid  "The library already contains a dialog with the name:\n\n$(ARG1)\n\nRename dialog to keep current dialog or replace existing dialog.\n "
-msgstr ""
+msgstr "De bibliotheek bevat al een dialoogvenster met de naam:\n\n$(ARG1)\n\nWijzig de naam van het dialoogvenster om het huidige dialoogvenster te behouden of het bestaande dialoogvenster te vervangen.\n "
 
 #: source/basicide/basidesh.src#RID_STR_DLGIMP_MISMATCH_ADD.String.Text
 msgid  "Add"
@@ -525,7 +525,7 @@ msgstr "Dialoogvenster importeren - Verschillende talen"
 
 #: source/basicide/basidesh.src#RID_STR_DLGIMP_MISMATCH_TEXT.String.Text
 msgid  "The dialog to be imported supports other languages than the target library.\n\nAdd these languages to the library to keep additional language resources provided by the dialog or omit them to stay with the current library languages.\n\nNote: For languages not supported by the dialog the resources of the dialog's default language will be used.\n "
-msgstr ""
+msgstr "Het dialoogvenster dat moet worden geïmporteerd ondersteunt andere talen dan de doelbibliotheek.\n\nVoeg deze talen toe aan de bibliotheek om aanvullende taalbronnen te behouden die door het dialoogvenster worden gegeven of laat ze weg om bij de huidige talen van de bibliotheek te blijven.\n\nOpmerking: Voor de niet door het dialoogvenster ondersteunde talen zullen de bronnen van de standaardtaal van het dialoogvenster worden gebruikt.\n "
 
 #: source/basicide/basicprint.src#RID_PRINTDLG_STRLIST.item1.ItemList.item
 msgid  "Print range"
@@ -625,11 +625,11 @@ msgstr "Sluiten"
 
 #: source/basicide/moduldlg.src#RID_TP_MODULS.RID_PB_NEWMOD.PushButton.Text
 msgid  "~New..."
-msgstr "Nieuw ~dialoogvenster..."
+msgstr "~Nieuw..."
 
 #: source/basicide/moduldlg.src#RID_TP_MODULS.RID_PB_NEWDLG.PushButton.Text
 msgid  "~New..."
-msgstr "Nieuwe ~module..."
+msgstr "Nieuw ~dialoogvenster..."
 
 #: source/basicide/moduldlg.src#RID_TP_MODULS.RID_PB_DELETE.PushButton.Text
 msgid  "~Delete"
@@ -649,7 +649,7 @@ msgstr "Sluiten"
 
 #: source/basicide/moduldlg.src#RID_TP_DLGS.RID_PB_NEWMOD.PushButton.Text
 msgid  "~New..."
-msgstr "~Nieuw..."
+msgstr "Nieuwe ~module..."
 
 #: source/basicide/moduldlg.src#RID_TP_DLGS.RID_PB_NEWDLG.PushButton.Text
 msgid  "~New..."
@@ -757,7 +757,7 @@ msgstr "Standaard"
 
 #: source/dlged/managelang.src#RID_DLG_MANAGE_LANGUAGE.FT_INFO.FixedText.Text
 msgid  "The default language is used if no localization for a user interface locale is present. Furthermore all strings from the default language are copied to resources of newly added languages."
-msgstr ""
+msgstr "Als de gebruikersinterface niet in een bepaalde taal gelokaliseerd is, wordt de standaardtaal gebruikt. Verder worden alle tekenreeksen van de standaardtaal naar resources van nieuw toegevoegde talen gekopieerd."
 
 #: source/dlged/managelang.src#RID_DLG_MANAGE_LANGUAGE.PB_CLOSE.OKButton.Text
 msgid  "~Close"
@@ -781,7 +781,7 @@ msgstr "Taalresources verwijderen"
 
 #: source/dlged/managelang.src#RID_QRYBOX_LANGUAGE.QueryBox.Message
 msgid  "You are about to delete the resources for the selected language(s). All user interface strings for this language(s) will be deleted.\n\nDo you want to delete the resources of the selected language(s)?"
-msgstr ""
+msgstr "U staat op het punt om alle hulpmiddelen voor de geselecteerde taal/talen te verwijderen. Alle teksten van de gebruikersinterface voor deze taal/talen zullen worden verwijderd.\n\nWilt u de hulpmiddelen voor de geselecteerde taal/talen verwijderen?"
 
 #: source/dlged/managelang.src#RID_DLG_SETDEF_LANGUAGE.ModalDialog.Text
 msgid  "Set Default User Interface Language"
@@ -793,7 +793,7 @@ msgstr "Standaardtaal"
 
 #: source/dlged/managelang.src#RID_DLG_SETDEF_LANGUAGE.FT_DEF_INFO.FixedText.Text
 msgid  "Select a language to define the default user interface language. All currently present strings will be assigned to the resources created for the selected language."
-msgstr ""
+msgstr "Selecteer een taal om de standaardtaal voor de gebruikersinterface op te geven. Alle tekenreeksen die momenteel aanwezig zijn, worden toegewezen aan de resources die voor de geselecteerde taal gemaakt zijn."
 
 #: source/dlged/managelang.src#RID_DLG_SETDEF_LANGUAGE.STR_ADDLANG_TITLE.String.Text
 msgid  "Add User Interface Languages"
@@ -805,7 +805,7 @@ msgstr "Beschikbare talen"
 
 #: source/dlged/managelang.src#RID_DLG_SETDEF_LANGUAGE.STR_ADDLANG_INFO.String.Text
 msgid  "Select languages to be added. Resources for these languages will be created in the library. Strings of the current default user interface language will be copied to these new resources by default."
-msgstr ""
+msgstr "Selecteer de talen die moeten worden toegevoegd. De resources voor deze talen worden in de bibliotheek aangemaakt. Tekenreeksen van de huidige standaard gebruikersinterfacetaal worden standaard naar deze nieuwe resources gekopieerd."
 
 #: source/dlged/dlgresid.src#RID_STR_BRWTITLE_PROPERTIES.String.Text
 msgid  "Properties: "

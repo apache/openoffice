@@ -49,7 +49,7 @@ msgstr "បម្លែង "
 
 #: source/euro/euro.src#STEP_ZERO + 4.String.Text
 msgid  "Note: Currency amounts from external links and currency conversion factors in formulas cannot be converted."
-msgstr ""
+msgstr "ចំណាំ ៖ មិន​អាច​បម្លែង​ចំនួន​រូបិយប័ណ្ណ​ពី​តំណ​ខាង​ក្រៅ​ និង​កត្តា​បម្លែង​រូបិយប័ណ្ណ​​រូបមន្ត ។"
 
 #: source/euro/euro.src#STEP_ZERO + 5.String.Text
 msgid  "First, unprotect all sheets."
@@ -153,7 +153,7 @@ msgstr "ស្ថានភាព​​បម្លែង​របស់​ពុ
 
 #: source/euro/euro.src#STATUSLINE + 2.String.Text
 msgid  "Registration of the relevant ranges: Sheet %1Number%1 of %2TotPageCount%2"
-msgstr ""
+msgstr "ការ​ចុះ​ឈ្មោះ​នៃ​ជួរ​ដែល​ពាក់​ព័ន្ធ ៖ %1Number%1 នៃ %2TotPageCount%2"
 
 #: source/euro/euro.src#STATUSLINE + 3.String.Text
 msgid  "Entry of the ranges to be converted..."
@@ -161,7 +161,7 @@ msgstr "ធាតុ​​របស់​​ជួរ​​ដែល​​​​
 
 #: source/euro/euro.src#STATUSLINE + 4.String.Text
 msgid  "Sheet protection for each sheet will be restored..."
-msgstr ""
+msgstr "ការ​​ការពារ​​​សន្លឹក​ សម្រាប់​​​សន្លឹក​​​នីមួយៗ ​​នឹង​​​ត្រូវ​​បាន​​​ស្តារ​​​ឡើង​​​វិញ ..."
 
 #: source/euro/euro.src#STATUSLINE + 5.String.Text
 msgid  "Conversion of the currency units in the cell templates..."
@@ -193,7 +193,7 @@ msgstr "កម្មវិធី​បម្លែង​​អឺរ៉ូ"
 
 #: source/euro/euro.src#MESSAGES + 6.String.Text
 msgid  "Should protected spreadsheets be temporarily unprotected?"
-msgstr ""
+msgstr "តើ​​សៀវភៅ​បញ្ជី​ដែល​​បាន​ការពារ​ គួរ​តែ​មិន​ត្រូវ​បាន​ការពារ​ជា​បណ្តោះ​អាសន្ន​ឬ​ទេ ?"
 
 #: source/euro/euro.src#MESSAGES + 7.String.Text
 msgid  "Enter the password to unprotect the table %1TableName%1"
@@ -221,11 +221,11 @@ msgstr "មិន​អាច​មិន​ការពារ​សន្លឹ
 
 #: source/euro/euro.src#MESSAGES + 13.String.Text
 msgid  "The Wizard cannot edit this document as cell formats cannot be modified in documents containing protected spreadsheets."
-msgstr ""
+msgstr "អ្នក​ជំនួយការ​មិន​អាច​កែសម្រួល​ឯកសារ​នេះ​បាន​ឡើយ ដោយ​សារ​តែ​ទ្រង់ទ្រាយ​ក្រឡា​មិន​អាច​ត្រូវ​បាន​កែប្រែ​នៅ​ក្នុង​ឯកសារ​ដែល​មាន​សៀវភៅ​បញ្ជី ដែល​បាន​ការពារ ។"
 
 #: source/euro/euro.src#MESSAGES + 14.String.Text
 msgid  "Please note that the Euro Converter will, otherwise, not be able to edit this document!"
-msgstr ""
+msgstr "សូម​ចំណាំ​ថា​ កម្ម​វិធី​បម្លែង​ជា​អឺរ៉ូ​ នឹង​មិន​អាច​កែ​សម្រួល​ឯកសារ​នេះ តាម​របៀប​ផ្សេង​ទេ​​ !"
 
 #: source/euro/euro.src#MESSAGES + 15.String.Text
 msgid  "Please choose a currency to be converted first!"
@@ -257,11 +257,11 @@ msgstr "ឯកសារ​​គឺ​​បាន​តែ​​​អាន !"
 
 #: source/euro/euro.src#MESSAGES + 22.String.Text
 msgid  "The '<1>' file already exists.<CR>Do you want to overwrite it?"
-msgstr ""
+msgstr "ឯកសារ​ '<1>' មាន​រួច​ហើយ ។ <CR> ​តើ​អ្នក​ចង់​សរសេរ​ជាន់​​លើ​​វា​​ឬ​​ទេ ?"
 
 #: source/euro/euro.src#MESSAGES + 23.String.Text
 msgid  "Do you really want to terminate conversion at this point?"
-msgstr ""
+msgstr "តើ​​អ្នក​​ពិត​​ជា​​ចង់​​បញ្ឈប់​​ការ​​បម្លែង នៅ​​ត្រង់​​ចំនុច​​នេះ​​ឬ​ទេ ?"
 
 #: source/euro/euro.src#MESSAGES + 24.String.Text
 msgid  "Cancel Wizard"
@@ -337,7 +337,7 @@ msgstr "សំណុំ​រូបិយប័ណ្ណ​​សម្រាប
 
 #: source/euro/euro.src#CURRENCIES + 17.String.Text
 msgid  "The language set for your operating system is not a language of the European Monetary Union."
-msgstr ""
+msgstr "សំណុំ​ភាសា​សម្រាប់​ប្រព័ន្ធ​ប្រតិបត្តិការ​របស់​អ្នក​ មិន​មែន​ជា​ភាសា​របស់​សហព័ន្ធ​រូបិយប័ណ្ណ​អឺរ៉ុប ។"
 
 #: source/euro/euro.src#STEP_LASTPAGE.String.Text
 msgid  "Progress"
@@ -361,35 +361,35 @@ msgstr "សន្លឹក​តែង​តែ​មិន​ត្រូវ​
 
 #: source/formwizard/dbwizres.src#RID_COMMON_START + 0.String.Text
 msgid  "The directory '%1' could not be created.<BR>There may not be enough space left on your hard disk."
-msgstr ""
+msgstr "មិន​​អាច​​បង្កើត​​ថត '%1' ។​​<BR>​​​​​ប្រហែល​ជា​ទំហំ​ថាស​រឹង​របស់​អ្នក​ មិន​មាន​សល់​គ្រប់គ្រាន់ ។"
 
 #: source/formwizard/dbwizres.src#RID_COMMON_START + 1.String.Text
 msgid  "The text document could not be created.<BR>Please check if the module 'PRODUCTNAME Writer' is installed."
-msgstr ""
+msgstr "មិន​អាច​បង្កើត​ឯកសារ​អត្ថបទ​បាន​ទេ ។<BR>សូម​ពិនិត្យ​មើល​បើ​ម៉ូឌុល 'PRODUCTNAME Writer' ត្រូវ​បាន​ដំឡើង ។"
 
 #: source/formwizard/dbwizres.src#RID_COMMON_START + 2.String.Text
 msgid  "The spreadsheet could not be created.<BR>Please check if the module 'PRODUCTNAME Calc' is installed."
-msgstr ""
+msgstr "មិន​អាច​បង្កើត​សៀវភៅ​បញ្ជី​បាន​ទេ ។<BR>សូម​ពិនិត្យ​មើល​បើ​ម៉ូឌុល 'PRODUCTNAME Calc' ត្រូវ​បាន​ដំឡើង ។"
 
 #: source/formwizard/dbwizres.src#RID_COMMON_START + 3.String.Text
 msgid  "The presentation could not be created.<BR>Please check if the module 'PRODUCTNAME Impress' is installed."
-msgstr ""
+msgstr "មិន​អាច​បង្កើត​ការ​បង្ហាញ​បាន​ទេ ។<BR>សូម​ពិនិត្យ​មើល​បើ​ម៉ូឌុល 'PRODUCTNAME Impress' ត្រូវ​បាន​ដំឡើង ។"
 
 #: source/formwizard/dbwizres.src#RID_COMMON_START + 4.String.Text
 msgid  "The drawing could not be created.<BR>Please check if the module 'PRODUCTNAME Draw' is installed."
-msgstr ""
+msgstr "មិន​អាច​បង្កើត​គំនូរ​បាន​ទេ ។<BR>សូម​ពិនិត្យ​មើល​បើ​ម៉ូឌុល 'PRODUCTNAME Draw' ត្រូវ​បាន​ដំឡើង ។"
 
 #: source/formwizard/dbwizres.src#RID_COMMON_START + 5.String.Text
 msgid  "The formula could not be created.<BR>Please check if the module 'PRODUCTNAME Math' is installed."
-msgstr ""
+msgstr "មិន​អាច​បង្កើត​រូបមន្ត​បាន​ទេ ។<BR>សូម​ពិនិត្យ​មើល​បើ​ម៉ូឌុល 'PRODUCTNAME Math' ត្រូវ​បាន​ដំឡើង ។"
 
 #: source/formwizard/dbwizres.src#RID_COMMON_START + 6.String.Text
 msgid  "The files required could not be found.<BR>Please start the %PRODUCTNAME Setup and choose 'Repair'."
-msgstr ""
+msgstr "មិន​​អាច​​រកឃើញ​​ឯកសារ​​ដែល​​ទាមទារ ។ ​<BR>​សូម​​ចាប់ផ្តើម '​​​ដំឡើង %PRODUCTNAME' និង​​ជ្រើស​ 'ជួសជុល' ។"
 
 #: source/formwizard/dbwizres.src#RID_COMMON_START + 7.String.Text
 msgid  "The file '<PATH>' already exists.<BR><BR>Would you like to overwrite the existing file?"
-msgstr ""
+msgstr "ឯកសារ '<PATH>' មាន​​រួច​​ហើយ ។​ <BR><BR>​តើ​​អ្នក​​ចង់​​សរសេរ​​ជាន់​​លើ​​ឯកសារ​​ដែល​​មាន​​រួច​ហើយ​​ឬ​​ទេ ?"
 
 #: source/formwizard/dbwizres.src#RID_COMMON_START + 8.String.Text
 msgid  "Yes"
@@ -445,7 +445,7 @@ msgstr "ពុម្ព​បាន​បង្កើត​តាម​រយៈ
 
 #: source/formwizard/dbwizres.src#RID_COMMON_START + 21.String.Text
 msgid  "The wizard could not be run, because important files were not found.\nUnder 'Tools - Options - %PRODUCTNAME - Paths' click the 'Default' button to reset the paths to the original default settings.\nThen run the wizard again."
-msgstr ""
+msgstr "មិន​អាច​រត់​អ្នកជំនួយការ ពីព្រោះ​ឯកសារ​សំខាន់ មិនត្រូវ​បាន​រកឃើញ ។\nក្រោម 'ឧបករណ៍-ជម្រើស- %PRODUCTNAME - ផ្លូវ' ចុចប៊ូតុង 'លំនាំដើម' ដើម្បី​កំណត់​ផ្លូវ​ទៅ​ការ​កំណត់​លំនាំដើម​ឡើង​វិញ ។\nបន្ទាប់​មក​រត់​អ្នក​ជំនួយការ​ម្តងទៀត ។"
 
 #: source/formwizard/dbwizres.src#RID_DB_COMMON_START + 0.String.Text
 msgid  "C~reate"
@@ -473,7 +473,7 @@ msgstr "ឈ្មោះ​តារាង "
 
 #: source/formwizard/dbwizres.src#RID_DB_COMMON_START + 6.String.Text
 msgid  "An error occurred while running the wizard. The wizard will be terminated."
-msgstr ""
+msgstr "កំហុស​មួយ​បាន​កើតឡើង ខណៈ​ពេល​កំពុង​រត់​អ្នក​ជំនួយការ ។ អ្នក​ជំនួយការ​នឹង​ត្រូវ​បាន​បញ្ចប់​ដំណើរការ ។"
 
 #: source/formwizard/dbwizres.src#RID_DB_COMMON_START + 14.String.Text
 msgid  "No connection to the database could be established."
@@ -553,11 +553,11 @@ msgstr "វាល​​​ក្នុង​​សំណុំ​​បែបប
 
 #: source/formwizard/dbwizres.src#RID_DB_FORM_WIZARD_START + 2.String.Text
 msgid  "Binary fields are always listed and selectable from the left list.\nIf possible, they are interpreted as images."
-msgstr ""
+msgstr "វាល​​គោល​ពីរ តែងតែ​​បាន​រាយ និង​អាច​ជ្រើស​បាន​ពី​បញ្ជី​ខាង​ឆ្វេង ។​\nប្រសិន​បើ​អាច  ពួកវា​ត្រូវ​បាន​បកប្រែ​ជា​រូបភាព ។"
 
 #: source/formwizard/dbwizres.src#RID_DB_FORM_WIZARD_START + 3.String.Text
 msgid  "A subform is a form that is inserted in another form.\nUse subforms to show data from tables or queries with a one-to-many relationship."
-msgstr ""
+msgstr "សំណុំ​បែបបទ​រង គឺ​ជា​សំណុំ​បែបបទ​ដែល​​បាន​បញ្ចូល​ក្នុង​សំណុំ​បែបបទ​​មួយ​ផ្សេង​ទៀត ។\nប្រើ​សំណុំ​បែបបទ​រង ដើម្បី​បង្ហាញ​ទិន្នន័យ​ពី​តារាង ឬ សំណួរ ដោយ​ប្រើ​​ទំនាក់​ទំនង មួយ-ទៅ-ច្រើន ។"
 
 #: source/formwizard/dbwizres.src#RID_DB_FORM_WIZARD_START + 4.String.Text
 msgid  "~Add Subform"
@@ -593,7 +593,7 @@ msgstr "វាល​​​ក្នុង​​សំណុំ​​បែបប
 
 #: source/formwizard/dbwizres.src#RID_DB_FORM_WIZARD_START + 19.String.Text
 msgid  "The join '<FIELDNAME1>' and '<FIELDNAME2>' has been selected twice.\nBut joins may only be used once."
-msgstr ""
+msgstr "ការ​ចូល​រួម​ '<FIELDNAME1>' និង​ '<FIELDNAME2>' ត្រូវ​បាន​ជ្រើ​ស​ពីរ​ដង​ ។ \nប៉ុន្តែ​ការ​ចូល​រួម​អាច​ត្រូវ​បាន​ប្រើ​តែ​ម្តង​គត់​ ។"
 
 #: source/formwizard/dbwizres.src#RID_DB_FORM_WIZARD_START + 20.String.Text
 msgid  "~First joined subform field"
@@ -805,7 +805,7 @@ msgstr "កំណត់​ឈ្មោះ​សំណុំ​បែបបទ"
 
 #: source/formwizard/dbwizres.src#RID_DB_FORM_WIZARD_START + 98.String.Text
 msgid  "A form with the name '%FORMNAME' already exists.\nChoose another name."
-msgstr ""
+msgstr "មាន​សំណុំបែបបទ​ឈ្មោះ '%FORMNAME' រួច​ហើយ ។\nសូម​ជ្រើស​ឈ្មោះ​មួយ​ទៀត ។"
 
 #: source/formwizard/dbwizres.src#RID_DB_QUERY_WIZARD_START + 0.String.Text
 msgid  "Query Wizard"
@@ -1061,7 +1061,7 @@ msgstr "ផ្តល់​ឈ្មោះ​ក្លែងក្លាយ ប�
 
 #: source/formwizard/dbwizres.src#RID_DB_QUERY_WIZARD_START + 77.String.Text
 msgid  "Check the overview and decide how to proceed"
-msgstr ""
+msgstr "ពិនិត្យមើល​ទិដ្ឋភាព​ទូទៅ រួច​សម្រេច​ចិត្ត​ថា​តើ​​ដំណើរការ​​តាម​របៀប​ណា ?"
 
 #: source/formwizard/dbwizres.src#RID_DB_QUERY_WIZARD_START + 80.String.Text
 msgid  "Field selection"
@@ -1097,15 +1097,15 @@ msgstr "ទិដ្ឋភាព​ទូទៅ"
 
 #: source/formwizard/dbwizres.src#RID_DB_QUERY_WIZARD_START + 88.String.Text
 msgid  "A field that has not been assigned an aggregate function must be used in a group."
-msgstr ""
+msgstr "វាល​​ដែល​មិន​ត្រូវ​បាន​ផ្តល់​អនុគមន៍​ផ្គុំ​មួយ ត្រូវ​តែ​ប្រើ​ក្នុង​ក្រុមមួយ ។"
 
 #: source/formwizard/dbwizres.src#RID_DB_QUERY_WIZARD_START + 89.String.Text
 msgid  "The condition '<FIELDNAME> <LOGICOPERATOR> <VALUE>' was chosen twice. Each condition can only be chosen once"
-msgstr ""
+msgstr "លក្ខខណ្ឌ '<FIELDNAME> <LOGICOPERATOR> <VALUE>' ត្រូវ​បាន​ជ្រើស​ពីរ​ដង ។ លក្ខខណ្ឌ​និមួយ​ៗ អាច​ត្រូវ​បាន​ជ្រើស​តែ​ម្តង​ប៉ុណ្ណោះ"
 
 #: source/formwizard/dbwizres.src#RID_DB_QUERY_WIZARD_START + 90.String.Text
 msgid  "The aggregate function <FUNCTION> has been assigned twice to the fieldname '<NUMERICFIELD>'."
-msgstr ""
+msgstr "អនុគមន៍​ផ្គុំ​ <FUNCTION> ត្រូវ​បាន​ផ្តល់​ពីរ​ដងទៅ​ឈ្មោះ​វាល​ '<NUMERICFIELD>' ។"
 
 #: source/formwizard/dbwizres.src#RID_DB_QUERY_WIZARD_START + 91.String.Text
 msgid  ", "
@@ -1321,11 +1321,11 @@ msgstr "សំណុំ​បែបបទ '<REPORTFORM>' មិន​ទាន�
 
 #: source/formwizard/dbwizres.src#RID_DB_REPORT_WIZARD_START + 65.String.Text
 msgid  "The query with the statement <BR>'<STATEMENT>' <BR> could not be run. <BR> Check your data source."
-msgstr ""
+msgstr "មិន​អាច​​រត់​​សំណួរ​​ជាមួយ​​សេចក្តី​​ថ្លែងការណ៍ <BR>'<STATEMENT>' <BR> ។ <BR> ពិនិត្យ​មើល​​ប្រភព​​ទិន្នន័យ​​របស់​​អ្នក ។ "
 
 #: source/formwizard/dbwizres.src#RID_DB_REPORT_WIZARD_START + 66.String.Text
 msgid  "The following hidden control in the form '<REPORTFORM>' could not be read: '<CONTROLNAME>'."
-msgstr ""
+msgstr "មិន​អាច​អាន​វត្ថុ​បញ្ជា​ដែល​លាក់​​ខាង​ក្រោម​​ក្នុង​សំណុំ​បែបបទ '<REPORTFORM>' ៖ '<CONTROLNAME>' ។"
 
 #: source/formwizard/dbwizres.src#RID_DB_REPORT_WIZARD_START + 67.String.Text
 msgid  "Importing data..."
@@ -1349,7 +1349,7 @@ msgstr "វាល​"
 
 #: source/formwizard/dbwizres.src#RID_DB_REPORT_WIZARD_START + 72.String.Text
 msgid  "An error occurred in the wizard.<BR>The template '%PATH' could be erroneous.<BR>Either the required sections or tables do not exist or exist under the wrong name.<BR>See the Help for more detailed information.<BR>Please select another template."
-msgstr ""
+msgstr "កំហុស​មួយ​បាន​កើតឡើង​ក្នុង​អ្នក​ជំនួយការ ។​<BR> ពុម្ព '%PATH' អាច​នឹង​ភាន់​ច្រឡំ ។​<BR>​ភាគ​ដែល​ទាមទារ ឬ តារាង​មិន​មាន ឬ មាន​នៅ​ក្រោម​ឈ្មោះ​​ខុស ។​<BR> មើល​ជំនួយ ​សម្រាប់​ព័ត៌មាន​លម្អិត​បន្ថែម ។​<BR> សូម​ជ្រើស​ពុម្ព​ផ្សេង​ទៀត ។"
 
 #: source/formwizard/dbwizres.src#RID_DB_REPORT_WIZARD_START + 73.String.Text
 msgid  "There is an invalid user field in a table."
@@ -1357,15 +1357,15 @@ msgstr "មាន​វាល​អ្នក​ប្រើ​មិន​ត្
 
 #: source/formwizard/dbwizres.src#RID_DB_REPORT_WIZARD_START + 74.String.Text
 msgid  "The sort criterium '<FIELDNAME>' was chosen twice. Each criterium can only be chosen once."
-msgstr ""
+msgstr "លក្ខណៈ​​វិនិច្ឆ័យ​​តម្រៀប '<FIELDNAME>' ត្រូវ​បាន​​ជ្រើស​​ពីរ​​ដង ។ លក្ខណៈ​​វិនិច្ឆ័យ​​នីមួយៗ​​អាច​ជ្រើស​​បាន​​តែ​​ម្តង​គត់​ ។"
 
 #: source/formwizard/dbwizres.src#RID_DB_REPORT_WIZARD_START + 75.String.Text
 msgid  "Note: The dummy text will be replaced by data from the database when the report is created."
-msgstr ""
+msgstr "ចំណាំ ៖  អត្ថបទ​​ឥត​​បាន​ការ​​នឹង​​ត្រូវ​បាន​​ជំនួស​​ដោយ​​ទិន្នន័យ​​ពី​​មូល​ដ្ឋាន​​ទិន្នន័យ ​​ពេល​​របាយ​ការណ៍​​ត្រូវ​​បាន​​បង្កើត ។"
 
 #: source/formwizard/dbwizres.src#RID_DB_REPORT_WIZARD_START + 76.String.Text
 msgid  "A report '%REPORTNAME' already exists in the database. Please assign another name."
-msgstr ""
+msgstr "របាយការណ៍ '%REPORTNAME' មាន​រួច​ហើយ ក្នុង​មូលដ្ឋាន​ទិន្នន័យ ។ សូម​ផ្តល់​ឈ្មោះ​ផ្សេង​ទៀត"
 
 #: source/formwizard/dbwizres.src#RID_DB_REPORT_WIZARD_START + 78.String.Text
 msgid  "How do you want to proceed after creating the report?"
@@ -1465,7 +1465,7 @@ msgstr "បង្កើត​​តារាង"
 
 #: source/formwizard/dbwizres.src#RID_DB_TABLE_WIZARD_START + 14.String.Text
 msgid  "This wizard helps you to create a table for your database. After selecting a table category and a sample table, choose the fields you want to include in your table. You can include fields from more than one sample table."
-msgstr ""
+msgstr "អ្នក​ជំនួយការ​នេះ​ជួយ​អ្នក ​ក្នុង​ការ​បង្កើត​តារាង​មួយ សម្រាប់​មូលដ្ឋាន​ទិន្នន័យ​របស់​អ្នក ។ បន្ទាប់​ពី​ជ្រើស​ប្រភេទ​តារាង​មួយ និង​តារាង​គំរូ​មួយ  ជ្រើស​វាល​​ដែល​អ្នក​ចង់​រួម​បញ្ចូល​ក្នុង​តារាង​របស់​អ្នក ។ អ្នក​អាច​រួម​បញ្ចូល​វាល​ពី​តារាង​គំរូ​ច្រើន​ជាង​មួយ ។"
 
 #: source/formwizard/dbwizres.src#RID_DB_TABLE_WIZARD_START + 15.String.Text
 msgid  "Ca~tegory"
@@ -1509,7 +1509,7 @@ msgstr "វាល​​ដែល​បាន​ជ្រើស "
 
 #: source/formwizard/dbwizres.src#RID_DB_TABLE_WIZARD_START + 26.String.Text
 msgid  "A primary key uniquely identifies each record in a database table. Primary keys ease the linking of information in separate tables, and it is recommended that you have a primary key in every table. Without a primary key, it will not be possible to enter data into this table."
-msgstr ""
+msgstr "កូនសោ​សំខាន់​ចង្អុល​បង្ហាញ​​ថា​​កំណត់​ត្រា​នីមួយៗ​មាន​តែ​មួយ​គត់ ​​ក្នុង​តារាង​មូល​ដ្ឋាន​ទិន្នន័យ ។ កូនសោ​សំខាន់​​សម្រួល​ការ​​តភ្ជាប់​ព័ត៌មាន​ក្នុង​តារាង​ផ្សេងៗ​គ្នា និង​​ជាអនុសាសន៍​ អ្នក​គួរ​តែ​មាន​កូនសោ​សំខាន់​មួយ​ក្នុង​តារាង​នីមួយៗ ។ ដោយ​គ្មាន​កូនសោ​សំខាន់ អ្នក​នឹង​មិន​អាច​បញ្ចូល​ទិន្នន័យ​ចូល​ក្នុង​តារាង​នេះ​ឡើយ ។"
 
 #: source/formwizard/dbwizres.src#RID_DB_TABLE_WIZARD_START + 27.String.Text
 msgid  "~Create a primary key"
@@ -1545,7 +1545,7 @@ msgstr "តើ​អ្នក​ចង់​ដាក់​ឈ្មោះ​អ
 
 #: source/formwizard/dbwizres.src#RID_DB_TABLE_WIZARD_START + 35.String.Text
 msgid  "Congratulations. You have entered all the information needed to create your table."
-msgstr ""
+msgstr "អបអរសាទរ ។ អ្នក​បាន​បញ្ចូល​គ្រប់​ព័ត៌មាន​ទាំងអស់​ដែល​ត្រូវការ​ ដើម្បី​បង្កើត​តារាង​របស់​អ្នកហើយ"
 
 #: source/formwizard/dbwizres.src#RID_DB_TABLE_WIZARD_START + 36.String.Text
 msgid  "What do you want to do next?"
@@ -1569,11 +1569,11 @@ msgstr "មិន​អាច​បើក​តារាង​ដែល​អ្
 
 #: source/formwizard/dbwizres.src#RID_DB_TABLE_WIZARD_START + 41.String.Text
 msgid  "The table name '%TABLENAME' contains a character ('%SPECIALCHAR') that might not be supported by the database."
-msgstr ""
+msgstr "ឈ្មោះ​តារាង '%TABLENAME' មាន​តួ​អក្សរ​មួយ ('%SPECIALCHAR') ដែល​អាច​មិន​ត្រូវ​បាន​គាំទ្រ ដោយ​មូលដ្ឋាន​ទិន្នន័យ ។"
 
 #: source/formwizard/dbwizres.src#RID_DB_TABLE_WIZARD_START + 42.String.Text
 msgid  "The field name '%FIELDNAME' contains a special character ('%SPECIALCHAR') that might not be supported by the database."
-msgstr ""
+msgstr "ឈ្មោះ​វាល '%FIELDNAME' មាន​តួ​អក្សរ​ពិសេស​មួយ ('%SPECIALCHAR') ដែល​អាច​មិន​ត្រូវ​បាន​គាំទ្រ ដោយ​មូលដ្ឋាន​ទិន្នន័យ ។"
 
 #: source/formwizard/dbwizres.src#RID_DB_TABLE_WIZARD_START + 43.String.Text
 msgid  "Field"
@@ -1593,11 +1593,11 @@ msgstr "យក​វាល​ដែល​បាន​ជ្រើស​ចេញ
 
 #: source/formwizard/dbwizres.src#RID_DB_TABLE_WIZARD_START + 47.String.Text
 msgid  "The field cannot be inserted because this would exceed the maximum number of %COUNT possible fields in the database table"
-msgstr ""
+msgstr "មិន​អាច​បញ្ចូល​វាល​បាន​ទេ ព្រោះ​វា​នឹង​លើស​ចំនួន​អតិបរមា​នៃ​វាល %COUNT ដែល​អាច​ធ្វើ​បាន​ក្នុង​តារាង​មូលដ្ឋាន​ទិន្នន័យ ។"
 
 #: source/formwizard/dbwizres.src#RID_DB_TABLE_WIZARD_START + 48.String.Text
 msgid  "The name '%TABLENAME' already exists.\nPlease enter another name."
-msgstr ""
+msgstr "មាន​ឈ្មោះ '%TABLENAME' រួច​ហើយ ។\nសូម​បញ្ចូល​ឈ្មោះ​មួយ​ទៀត ។"
 
 #: source/formwizard/dbwizres.src#RID_DB_TABLE_WIZARD_START + 49.String.Text
 msgid  "Catalog of the table"
@@ -1733,7 +1733,7 @@ msgstr "រចនា​ទំព័រ"
 
 #: source/formwizard/dbwizres.src#RID_LETTERWIZARDDIALOG_START + 31.String.Text
 msgid  "This wizard helps you to create a letter template. You can then use the template as the basis for writing letters as often as desired."
-msgstr ""
+msgstr "អ្នក​ជំនួយការ​នេះ ជួយ​អ្នក​​បង្កើត​ពុម្ព​សំបុត្រ​មួយ ។ បន្ទាប់​មក អ្នក​អាច​ប្រើ​ពុម្ព​ជា​មូលដ្ឋាន​សម្រាប់​សរសេរ​សំបុត្រ តាម​ដែល​អ្នក​ចង់​បាន ។"
 
 #: source/formwizard/dbwizres.src#RID_LETTERWIZARDDIALOG_START + 32.String.Text
 msgid  "~Height:"
@@ -1801,11 +1801,11 @@ msgstr "បាតកថា​"
 
 #: source/formwizard/dbwizres.src#RID_LETTERWIZARDDIALOG_START + 48.String.Text
 msgid  "This wizard creates a letter template which enables you to create multiple letters with the same layout and settings."
-msgstr ""
+msgstr "អ្នក​ជំនួយការ​នេះ បង្កើត​ពុម្ព​សំបុត្រ​មួយ ដែល​អាច​ឲ្យ​អ្នក​បង្កើត​សំបុត្រ​ច្រើន​ ជាមួយការ​កំណត់ និង​ប្លង់​ដូចគ្នា ។"
 
 #: source/formwizard/dbwizres.src#RID_LETTERWIZARDDIALOG_START + 49.String.Text
 msgid  "To create another new letter out of the template just navigate to the template location and double-click it."
-msgstr ""
+msgstr "ដើម្បី​បង្កើត​សំបុត្រ​ថ្មី​ផ្សេង​​ចេញ​ពី​ពុម្ព  គ្រាន់​តែ​ស្វែងរក​ផ្លូវ​ទៅ​កាន់​ទីតាំង​ពុម្ព រួច​ចុច​ពីរ​​ដង​លើ​វា ។"
 
 #: source/formwizard/dbwizres.src#RID_LETTERWIZARDDIALOG_START + 50.String.Text
 msgid  "Template name:"
@@ -1957,7 +1957,7 @@ msgstr "រចនា​ទំព័រ"
 
 #: source/formwizard/dbwizres.src#RID_FAXWIZARDDIALOG_START + 17.String.Text
 msgid  "This wizard helps you to create a fax template. The template can then be used to create a fax whenever needed."
-msgstr ""
+msgstr "អ្នក​ជំនួយការ​នេះ​ជួយ​អ្នក ដើម្បី​បង្កើត​ពុម្ព​ទូរសារ​មួយ ។ បន្ទាប់​មក​ពុម្ព​អាច​ត្រូវ​បាន​ប្រើ​ ដើម្បី​បង្កើត​ទូរសារ​មួយ តាម​សេចក្តី​ត្រូវការ ។"
 
 #: source/formwizard/dbwizres.src#RID_FAXWIZARDDIALOG_START + 18.String.Text
 msgid  "Return address"
@@ -1981,11 +1981,11 @@ msgstr "បាតកថា​"
 
 #: source/formwizard/dbwizres.src#RID_FAXWIZARDDIALOG_START + 23.String.Text
 msgid  "This wizard creates a fax template which enables you to create multiple faxes with the same layout and settings."
-msgstr ""
+msgstr "អ្នក​ជំនួយការ​នេះ​បង្កើត​ពុម្ព​ទូរសារ​មួយ ដែល​អាច​ឲ្យ​អ្នក​បង្កើត​ទូរសារច្រើន ជាមួយ​ប្លង់​ និង​ការកំណត់​ដូចគ្នា ។"
 
 #: source/formwizard/dbwizres.src#RID_FAXWIZARDDIALOG_START + 24.String.Text
 msgid  "To create another new fax out of the template, go to the location where you saved the template and double-click the file."
-msgstr ""
+msgstr "ដើម្បី​បង្កើត​ទូរសារ​ថ្មី​ផ្សេង​ទៀត​ចេញ​ពី​ពុម្ព, ទៅ​​កាន់​ទីតាំង​ដែល​អ្នក​រក្សាទុក​ពុម្ព រួច​ចុចពីរ​​ដង​លើ​ឯកសារ ។"
 
 #: source/formwizard/dbwizres.src#RID_FAXWIZARDDIALOG_START + 25.String.Text
 msgid  "Template Name:"
@@ -2121,7 +2121,7 @@ msgstr "អ្នក​ជំនួយការ បណ្តាញ"
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +2.String.Text
 msgid  "This Web Wizard is to aid you in publishing documents on the Internet.\n\nIt will convert the documents so that they can be viewed by a web browser. In addition, it will generate a Table of Contents page with links for easy access to the documents. The Web Wizard will also allow you to customize the design and layout of your web site.\n\nYou will be able to keep the documents you have published on the web up-to-date and add or remove documents at any time."
-msgstr ""
+msgstr "អ្នក​​ជំនួយការ​​បណ្តាញ​នេះ​នឹង​ជួយ​អ្នក​ក្នុង​ការ​បោះពុម្ព​ផ្សាយ​ឯកសារ​លើ​អ៊ីនធឺណិត ។​\n\nវា​នឹង​បម្លែង​ឯកសារ ដូច្នេះ​ពួកវា​អាច​ត្រូវ​បានបង្ហាញ​​ដោយ​កម្មវិធី​រុករក​បណ្តាញ ។ ជា​បន្ថែម វា​នឹង​បង្កើត​ទំព័រ​តារាង​មាតិកា​មួយ​ជាមួយ​តំណ សម្រាប់​ភាព​ងាយស្រួល​ចូល​ដំណើរការ​​​ឯកសារ ។ អ្នក​ជំនួយការ​បណ្តាញ​នឹង​អនុញ្ញាត​ផង​ដែរ​ឲ្យ​អ្នក​ប្តូរ​ការ​រចនា និងប្លង់​​​​នៃ​តំបន់​បណ្តាញ​របស់​អ្នក​តាម​បំណង ។​\n\nអ្នក​នឹង​អាច​រក្សា​ឯកសារ​ដែល​អ្នក​បាន​បោះពុម្ព​ផ្សាយ​លើ​បណ្តាញ ឲ្យ​ទាន់​សម័យ និង​អាច​បន្ថែម ឬ យក​ឯកសារ​ចេញ​នៅ​ពេល​ណា​ក៏​បាន ។"
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +4.String.Text
 msgid  "~Delete"
@@ -2305,7 +2305,7 @@ msgstr "ប្តូរ​ប្លង់​ដែលបាន​ជ្រើស
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +61.String.Text
 msgid  "Include the following information for each document in the table of contents:"
-msgstr ""
+msgstr "រួម​បញ្ចូល​ព័ត៌មាន​ខាងក្រោម​នេះ សម្រាប់​ឯកសារ​និមួយ​ៗ ក្នុង​តារាង​មាតិកា ៖"
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +62.String.Text
 msgid  "Optimize the layout for screen resolution:"
@@ -2345,19 +2345,19 @@ msgstr "គោលដៅ​មូលដ្ឋាន '%FILENAME' គឺ​ជា�
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +75.String.Text
 msgid  "The ZIP target '%FILENAME' already exists. Do you want to overwrite the existing target? "
-msgstr ""
+msgstr "គោលដៅ ZIP '%FILENAME' មាន​រួច​ហើយ ។ តើ​អ្នក​ចង់​សរសេរ​ជាន់​លើ គោលដៅ​ដែល​មាន​ស្រាប់​ឬ​ទេ ?"
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +76.String.Text
 msgid  "The FTP target directory '%FILENAME' is not empty. Some files might be overwritten. Do you want to continue?"
-msgstr ""
+msgstr "ថត​គោលដៅ FTP '%FILENAME' មិន​មែន​ទទេ ។ ឯកសារ​ខ្លះ​អាច​នឹង​ត្រូវ​បាន​សរសេរ​លើ ។ តើ​អ្នក​ចង់​បន្ត​ឬ ?"
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +77.String.Text
 msgid  "The local target directory '%FILENAME' is not empty. Some files might be overwritten. Do you want to continue?"
-msgstr ""
+msgstr "ថត​គោលដៅ​មូលដ្ឋាន '%FILENAME' មិន​មែន​ទទេ ។ ឯកសារ​ខ្លះ​អាច​នឹង​ត្រូវ​បាន​សរសេរ​​ជាន់​លើ ។ តើ​អ្នក​ចង់​បន្ត​ឬ ?"
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +78.String.Text
 msgid  "Settings already exist under the given name. Do you want to overwrite the existing settings? "
-msgstr ""
+msgstr "ការ​កំណត់​មាន​រួច​ហើយ​ក្រោម​ឈ្មោះ​ដែល​បាន​ផ្តល់ ។ តើ​អ្នក​ចង់​សរសេរ​ជាន់​លើ​ការ​កំណត់​ដែល​មាន​ស្រាប់​ឬ​ទេ ?"
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +79.String.Text
 msgid  "Exporting documents..."
@@ -2457,7 +2457,7 @@ msgstr "កំហុស​មួយ​បាន​កើតឡើង ខណៈ�
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +108.String.Text
 msgid  "An error occurred while gathering document information for '%FILENAME'. "
-msgstr ""
+msgstr "កំហុស​មួយ​បាន​កើតឡើង ខណៈ​ពេល​កំពុង​ប្រមូល​ព័ត៌មាន​ឯកសារ​សម្រាប់ '%FILENAME' ។"
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +109.String.Text
 msgid  "An error occurred while exporting the document '%FILENAME'."
@@ -2465,19 +2465,19 @@ msgstr "កំហុស​មួយ​បាន​កើតឡើង ខណៈ�
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +110.String.Text
 msgid  "An error occurred while creating a directory for exporting '%FILENAME'."
-msgstr ""
+msgstr "កំហុស​មួយ​បាន​កើតឡើង ខណៈ​ពេល​កំពុង​បង្កើត​ថត​មួយ សម្រាប់​នាំ​ចេញ '%FILENAME' ។"
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +111.String.Text
 msgid  "A security error occurred while exporting the document '%FILENAME'."
-msgstr ""
+msgstr "កំហុស​សុវត្ថភាព​មួយ​បាន​កើតឡើង ខណៈ​ពេល​កំពុង​នាំ​ចេញ​ឯកសារ '%FILENAME' ។"
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +112.String.Text
 msgid  "An input/output error occurred while exporting the document '%FILENAME'."
-msgstr ""
+msgstr "កំហុស បញ្ចេញ​/​បញ្ចូល មួយ​បាន​កើតឡើង ខណៈ​ពេល​កំពុង​នាំ​ចេញ​ឯកសារ '%FILENAME' ។"
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +113.String.Text
 msgid  "An error occurred while copying media files to the temporary directory."
-msgstr ""
+msgstr "កំហុស​មួយ​បាន​កើតឡើង ខណៈ​ពេល​កំពុង​ចម្លង​ឯកសារ​មេឌៀ​ទៅ​ថត​បណ្តោះ​អាសន្ន ។"
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +114.String.Text
 msgid  "The web site could not be copied to the following destination: %URL"
@@ -2489,7 +2489,7 @@ msgstr "កំហុស​ស្មាន​មិន​ដល់​មួយ​
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +116.String.Text
 msgid  "An unexpected error occurred while validating the file: '%FILENAME'"
-msgstr ""
+msgstr "កំហុស​ស្មាន​មិន​ដល់​មួយ​បាន​កើតឡើង ខណៈ​ពេល​កំពុង​ធ្វើ​ឯកសារ​ឲ្យ​មាន​សុពលភាព ៖ '%FILENAME'"
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +117.String.Text
 msgid  "%FILENAME' is a folder."
@@ -2541,7 +2541,7 @@ msgstr "មើល​ជា​​​មុន"
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +130.String.Text
 msgid  "The selected settings will be deleted.\n\nDo you really want to delete these settings? "
-msgstr ""
+msgstr "ការ​កំណត់​ដែល​បាន​ជ្រើស នឹង​ត្រូវ​បាន​លុប ។​\n\nតើ​អ្នក​ពិត​ជា​ចង់​លុប​ការ​កំណត់​ទាំងនេះ​ឬ ?"
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +131.String.Text
 msgid  "%NUMBER pages"
@@ -2573,7 +2573,7 @@ msgstr "សំណុំ​រូបតំណាង ៖"
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +138.String.Text
 msgid  "The icon set is used for presentations in HTML format."
-msgstr ""
+msgstr "សំណុំ​រូបតំណាង​ត្រូវ​បាន​ប្រើ សម្រាប់​ការ​បង្ហាញ​ក្នុង​ទ្រង់ទ្រាយ HTML ។"
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +139.String.Text
 msgid  "HTML Metadata"
@@ -2609,19 +2609,19 @@ msgstr "មិន​អាច​បង្កើត​ថត FTP '%FILENAME' ។
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +147.String.Text
 msgid  "The FTP directory '%FILENAME' does not exist. \nCreate the directory now?"
-msgstr ""
+msgstr "ថត FTP '%FILENAME' មិន​ទាន់​មាន​ទេ ។ \nបង្កើត​ថត​ឥឡូវ​ឬ ?"
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +148.String.Text
 msgid  "The Zip file '%FILENAME' cannot be created: a directory of the same name already exists."
-msgstr ""
+msgstr "មិន​អាចបង្កើត​ឯកសារ ZIP '%FILENAME' ៖ ថត​មួយ​ដែល​មាន​ឈ្មោះ​ដូចគ្នា មាន​រួច​ហើយ ។"
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +149.String.Text
 msgid  "The local directory '%FILENAME' cannot be created. \nPlease check your write-access."
-msgstr ""
+msgstr "មិន​អាច​បង្កើត​ថត​មូលដ្ឋាន '%FILENAME' ។​\nសូម​ពិនិត្យមើល​សិទ្ធ​ចូល​ដំណើរការ​សរសេរ​របស់​អ្នក ។"
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +150.String.Text
 msgid  "The local directory '%FILENAME' does not exist. \nCreate the directory now?"
-msgstr ""
+msgstr "មិន​មាន​ថត​​មូលដ្ឋាន '%FILENAME' ។​\nបង្កើត​ថត​ឥឡូវ​ឬ ?"
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +151.String.Text
 msgid  "Size: %NUMBERKB"
@@ -2757,7 +2757,7 @@ msgstr "រួម​បញ្ចូល​សំណុំ​បែប​បទ �
 
 #: source/formwizard/dbwizres.src#RID_AGENDAWIZARDDIALOG_START +13.String.Text
 msgid  "This wizard helps you to create an agenda template. The template can then be used to create an agenda whenever needed."
-msgstr ""
+msgstr "អ្នក​ជំនួយការ​នេះ​ជួយ​អ្នក ដើម្បី​​បង្កើត​ពុម្ព​របៀបវារៈ​មួយ ។ បន្ទាប់​មក​ពុម្ព​អាច​ត្រូវ​បាន​ប្រើ​ ដើម្បី​បង្កើត​របៀបវារៈ​មួយ តាម​សេចក្តី​ត្រូវការ ។"
 
 #: source/formwizard/dbwizres.src#RID_AGENDAWIZARDDIALOG_START +14.String.Text
 msgid  "Time:"
@@ -2773,7 +2773,7 @@ msgstr "ទីតាំង ៖​"
 
 #: source/formwizard/dbwizres.src#RID_AGENDAWIZARDDIALOG_START +17.String.Text
 msgid  "Placeholders will be used in empty fields. You can replace placeholders with text later."
-msgstr ""
+msgstr "កន្លែង​ដាក់​នឹង​ត្រូវ​បាន​ប្រើ​ក្នុង​វាល​ទទេ ។ អ្នក​អាច​ជំនួស​កន្លែង​ដាក់​ជាមួយ​អត្ថបទ​ពេល​ក្រោយ ។"
 
 #: source/formwizard/dbwizres.src#RID_AGENDAWIZARDDIALOG_START +18.String.Text
 msgid  "..."
@@ -2785,7 +2785,7 @@ msgstr "បង្កើត​របៀបវារៈ​មួយ​ពី​ព
 
 #: source/formwizard/dbwizres.src#RID_AGENDAWIZARDDIALOG_START +20.String.Text
 msgid  "To create a new agenda out of the template, go to the location where you saved the template and double-click the file."
-msgstr ""
+msgstr "ដើម្បី​បង្កើត​របៀបវារៈ​ថ្មី​មួយ​ចេញ​ពី​ពុម្ព, ទៅ​កាន់​ទីតាំង​ដែល​អ្នក​បាន​រក្សាទុក​ពុម្ព រួច​ចុច​ពីរ​ដង​លើ​ឯកសារ ។"
 
 #: source/formwizard/dbwizres.src#RID_AGENDAWIZARDDIALOG_START +21.String.Text
 msgid  "Agenda item"
@@ -2829,7 +2829,7 @@ msgstr "បុគ្គលិក​​បន្ទប់ឧបករណ៍"
 
 #: source/formwizard/dbwizres.src#RID_AGENDAWIZARDDIALOG_START +31.String.Text
 msgid  "The agenda template will include placeholders for the names of the selected people. When creating an agenda from the template, you can replace these placeholder with the appropriate names."
-msgstr ""
+msgstr "ពុមÒព​របៀប​វារៈ​នឹង​រួម​បញ្ចូល​កន្លែង​ដាក់ សម្រាប់​ឈ្មោះ​នៃ​បុគ្គលិក​ទាំង​ឡាយ​ដែល​បាន​ជ្រើស ។ ពេល​បង្កើត​របៀប​វារៈ​ពីពុម្ព អ្នក​អាច​ជំនួស​កន្លែង​ដាក់​ទាំង​នេះ ដោយ​ឈ្មោះ​សមរម្យ​មួយ ។"
 
 #: source/formwizard/dbwizres.src#RID_AGENDAWIZARDDIALOG_START +32.String.Text
 msgid  "Type of meeting"
@@ -2849,7 +2849,7 @@ msgstr "ចំណាំ"
 
 #: source/formwizard/dbwizres.src#RID_AGENDAWIZARDDIALOG_START +36.String.Text
 msgid  "The agenda template will include placeholders for the selected items."
-msgstr ""
+msgstr "ពុម្ព​របៀបវារៈ​នឹង​រួម​បញ្ចូល​កន្លែង​ដាក់ សម្រាប់​ធាតុ​ដែល​ត្រូវ​បាន​ជ្រើស ។"
 
 #: source/formwizard/dbwizres.src#RID_AGENDAWIZARDDIALOG_START +38.String.Text
 msgid  "Date:"
@@ -2857,7 +2857,7 @@ msgstr "កាលបរិច្ឆេទ ៖"
 
 #: source/formwizard/dbwizres.src#RID_AGENDAWIZARDDIALOG_START +39.String.Text
 msgid  "This wizard creates an agenda template which enables you to create multiple agendas with the same layout and settings."
-msgstr ""
+msgstr "អ្នក​ជំនួយការ​នេះ បង្កើត​ពុម្ព​របៀបវារៈ​មួយ ដែល​អាច​ឲ្យ​អ្នក​បង្កើត​របៀបវារៈ​ច្រើន​ជាមួយ​ប្លង់​ និង​ការ​កំណត់​ដូចគ្នា ។"
 
 #: source/formwizard/dbwizres.src#RID_AGENDAWIZARDDIALOG_START +40.String.Text
 msgid  "Page design:"
@@ -2873,7 +2873,7 @@ msgstr "ពុម្ព​របៀបវារៈ​របស់​ខ្ញុ
 
 #: source/formwizard/dbwizres.src#RID_AGENDAWIZARDDIALOG_START +43.String.Text
 msgid  "An unexpected error occurred while saving the agenda template."
-msgstr ""
+msgstr "កំហុស​ស្មាន​មិន​ដល់​មួយ​បាន​កើតឡើង ខណៈ​ពេល​កំពុង​រក្សាទុក​ពុម្ព​របៀបវារៈ ។"
 
 #: source/formwizard/dbwizres.src#RID_AGENDAWIZARDDIALOG_START +44.String.Text
 msgid  "Name"
@@ -3009,11 +3009,11 @@ msgstr "បិទ "
 
 #: source/importwizard/importwi.src#sWelcometextLabel1.String.Text
 msgid  "This wizard converts documents in %PRODUCTNAME format and Microsoft Office documents to the new OpenDocument format."
-msgstr ""
+msgstr "អ្នក​ជំនួយការ​នេះ​នឹង​បម្លែង​ឯកសារ​ដែល​មាន​ទ្រង់ទ្រាយ​ជា %PRODUCTNAME និង Microsoft Office ទៅ​ជា​ទ្រង់ទ្រាយ OpenDocument ថ្មី ។"
 
 #: source/importwizard/importwi.src#sWelcometextLabel2.String.Text
 msgid  "Please note that when converting Microsoft documents any attached VBA macros lose their functionality."
-msgstr ""
+msgstr "សូម​ចំណាំ​ថា​ ពេល​កំពុង​បម្លែង​ឯកសារ​ Microsoft  ម៉ាក្រូ​ VBA ណា​មួយ​ដែល​ភ្ជាប់​ជាមួយ​ឯកសារ​ នឹង​បាត់​មុខងារ​របស់​ពួក​វា​ ។"
 
 #: source/importwizard/importwi.src#sWelcometextLabel3.String.Text
 msgid  "Select the document type for conversion:"
@@ -3097,7 +3097,7 @@ msgstr "តើ​​អ្នក​​ចង់​​បង្កើត​​វ
 
 #: source/importwizard/importwi.src#sFileExists.String.Text
 msgid  "The '<1>' file already exists.<CR>Do you want to overwrite it?"
-msgstr ""
+msgstr "ឯកសារ​ '<1>' មាន​រួច​ហើយ ។ <CR> ​តើ​អ្នក​ចង់​សរសេរ​ជាន់​​លើ​​វា​​ឬ​​ទេ ?"
 
 #: source/importwizard/importwi.src#sMorePathsError3.String.Text
 msgid  "Directories do not exist"
@@ -3121,7 +3121,7 @@ msgstr "មិន​​អាច​​បើក​​ឯកសារ '<1>' ។"
 
 #: source/importwizard/importwi.src#sConvertError1.String.Text
 msgid  "Do you really want to terminate conversion at this point?"
-msgstr ""
+msgstr "តើ​​អ្នក​​ពិត​​ជា​​ចង់​​បញ្ឈប់​​ការ​​បម្លែង នៅ​​ត្រង់​​ចំនុច​​នេះ​​ឬ​ទេ ?"
 
 #: source/importwizard/importwi.src#sConvertError2.String.Text
 msgid  "Cancel Wizard"
@@ -3225,7 +3225,7 @@ msgstr "បាន​បម្លែង​ឯកសារ <COUNT>"
 
 #: source/importwizard/importwi.src#sLogfileHelpText.String.Text
 msgid  "A log file will be created in your work directory"
-msgstr ""
+msgstr "ឯកសារ​​​កំណត់​​​ហេតុ​​មួយ​ នឹង​​ត្រូវ​​បាន​​បង្កើត​​ក្នុង​​ថត​​ការងារ​​របស់​​អ្នក"
 
 #: source/importwizard/importwi.src#sshowLogfile.String.Text
 msgid  "Show log file"
@@ -3241,59 +3241,59 @@ msgstr "ទាំងនេះ​​នឹង​​​ត្រូវ​​​ប
 
 #: source/importwizard/importwi.src#sSumSOTextDocuments.String.Text
 msgid  "All %PRODUCTNAME text documents contained in the following directory will be imported:"
-msgstr ""
+msgstr "រាល់​ឯកសារ​អត្ថបទ %PRODUCTNAME ទាំងអស់​ដែល​មាន​ក្នុង​ថត​ដូច​ខាង​ក្រោម នឹង​ត្រូវ​បាន​នាំ​ចូល ៖"
 
 #: source/importwizard/importwi.src#sSumSOTableDocuments.String.Text
 msgid  "All %PRODUCTNAME spreadsheets contained in the following directory will be imported:"
-msgstr ""
+msgstr "រាល់​សៀវភៅ​បញ្ជី​ %PRODUCTNAME ទាំងអស់​ដែល​មាន​ក្នុង​ថត​ដូច​ខាង​ក្រោម នឹង​ត្រូវ​បាន​នាំ​ចូល​ ៖"
 
 #: source/importwizard/importwi.src#sSumSODrawDocuments.String.Text
 msgid  "All %PRODUCTNAME drawing and presentation documents contained in the following directory will be imported:"
-msgstr ""
+msgstr "រាល់​ឯកសារ​​ការ​បង្ហាញ និង​គំនូរ %PRODUCTNAME ទាំងអស់​​ដែល​មាន​ក្នុង​ថត​ដូច​ខាង​ក្រោម នឹង​ត្រូវ​បាន​នាំ​ចូល ៖"
 
 #: source/importwizard/importwi.src#sSumSOMathDocuments.String.Text
 msgid  "All %PRODUCTNAME formula documents contained in the following directory will be imported:"
-msgstr ""
+msgstr "រាល់​ឯកសារ​រូបមន្ត %PRODUCTNAME ទាំងអស់​ដែល​មាន​ក្នុង​ថត​ដូច​ខាង​ក្រោម នឹង​ត្រូវ​បាន​នាំ​ចូល ៖"
 
 #: source/importwizard/importwi.src#sSumSOTextTemplates.String.Text
 msgid  "All %PRODUCTNAME text templates contained in the following directory will be imported:"
-msgstr ""
+msgstr "រាល់​ពុម្ព​អត្ថបទ %PRODUCTNAME ទាំងអស់​ដែល​មាន​ក្នុង​ថត​ដូច​ខាង​ក្រោម នឹង​ត្រូវ​បាន​នាំ​ចូល ៖"
 
 #: source/importwizard/importwi.src#sSumSOTableTemplates.String.Text
 msgid  "All %PRODUCTNAME table templates contained in the following directory will be imported:"
-msgstr ""
+msgstr "រាល់​ពុម្ព​តារាង %PRODUCTNAME ទាំងអស់​ដែល​មាន​ក្នុង​ថត​ដូច​ខាង​ក្រោម នឹង​ត្រូវ​បាន​នាំ​ចូល ៖"
 
 #: source/importwizard/importwi.src#sSumSODrawTemplates.String.Text
 msgid  "All %PRODUCTNAME drawing and presentation templates contained in the following directory will be imported:"
-msgstr ""
+msgstr "រាល់​ពុម្ព​ការ​បង្ហាញ និង​គំនូរ %PRODUCTNAME ទាំងអស់​​ដែល​មាន​ក្នុង​ថត​ដូច​ខាង​ក្រោម នឹង​ត្រូវ​បាន​នាំ​ចូល ៖"
 
 #: source/importwizard/importwi.src#sSumSOGlobalDocuments.String.Text
 msgid  "All %PRODUCTNAME master documents contained in the following directory will be imported:"
-msgstr ""
+msgstr "រាល់​ឯកសារ​មេ %PRODUCTNAME ទាំងអស់​ដែល​មាន​ក្នុង​ថត​ដូច​ខាង​ក្រោម នឹង​ត្រូវ​បាន​នាំ​ចូល ៖"
 
 #: source/importwizard/importwi.src#sSumMSTextDocuments.String.Text
 msgid  "All Word documents contained in the following directory will be imported:"
-msgstr ""
+msgstr "រាល់​ឯកសារ Word ទាំងអស់​​ដែល​មាន​ក្នុង​ថត​ដូច​ខាង​ក្រោម នឹង​ត្រូវ​បាន​នាំ​ចូល ៖"
 
 #: source/importwizard/importwi.src#sSumMSTableDocuments.String.Text
 msgid  "All Excel documents contained in the following directory will be imported:"
-msgstr ""
+msgstr "រាល់​ឯកសារ Excel ទាំងអស់​ដែល​មាន​ក្នុង​ថត​ដូច​ខាង​ក្រោម នឹង​ត្រូវ​បាន​នាំ​ចូល ៖"
 
 #: source/importwizard/importwi.src#sSumMSDrawDocuments.String.Text
 msgid  "All PowerPoint documents contained in the following directory will be imported:"
-msgstr ""
+msgstr "រាល់​ឯកសារ PowerPoint ទាំងអស់​ដែល​មាន​ក្នុង​ថត​ដូច​ខាង​ក្រោម នឹង​ត្រូវ​បាន​នាំ​ចូល ៖"
 
 #: source/importwizard/importwi.src#sSumMSTextTemplates.String.Text
 msgid  "All Word templates contained in the following directory will be imported:"
-msgstr ""
+msgstr "រាល់​ពុម្ព Word ទាំងអស់​ដែល​មាន​ក្នុង​ថត​ដូច​ខាង​ក្រោម នឹង​ត្រូវ​បាន​នាំ​ចូល ៖"
 
 #: source/importwizard/importwi.src#sSumMSTableTemplates.String.Text
 msgid  "All Excel templates contained in the following directory will be imported:"
-msgstr ""
+msgstr "រាល់​ពុម្ព Excel ទាំងអស់​ដែល​មាន​ក្នុង​ថត​ដូច​ខាង​ក្រោម នឹង​ត្រូវ​បាន​នាំ​ចូល ៖"
 
 #: source/importwizard/importwi.src#sSumMSDrawTemplates.String.Text
 msgid  "All PowerPoint templates contained in the following directory will be imported:"
-msgstr ""
+msgstr "រាល់​ពុម្ព PowerPoint ទាំងអស់​ដែល​មាន​ក្នុង​​ថត​​ដូច​​ខាង​ក្រោម​ នឹង​ត្រូវ​បាន​នាំ​ចូល ៖"
 
 #: source/schedule/schedule.src#dlgCalTitle.String.Text
 msgid  "%PRODUCTNAME Calendar"
@@ -3481,7 +3481,7 @@ msgstr "វឌ្ឍនភាព ៖"
 
 #: source/template/template.src#SAMPLES.String.Text
 msgid  "In order to use the full functionality of this sample, create a document that is based on this template."
-msgstr ""
+msgstr "ដើម្បី​ប្រើ​មុខងារ​ពេញ​លេញ​របស់​គំរូ​នេះ បង្កើត​ឯកសារ​មួយ​ដោយ​​ពឹង​​ផ្អែក​លើ​ពុម្ព​នេះ ។"
 
 #: source/template/template.src#SAMPLES + 1.String.Text
 msgid  "Remarks"
@@ -3493,7 +3493,7 @@ msgstr "ការ​ជ្រើស​ស្បែក"
 
 #: source/template/template.src#STYLES + 1.String.Text
 msgid  "Error while saving the document to the clipboard! The following action cannot be undone."
-msgstr ""
+msgstr "មាន​កំហុស​ ខណៈ​ពេល​កំពុង​រក្សាទុក​ឯកសារ​ទៅ​ក្តារ​តម្បៀត​ខ្ទាស់ ! អំពើ​ខាង​ក្រោម​មិន​អាច​មិន​ធ្វើ​​វិញបាន​ទេ ។"
 
 #: source/template/template.src#STYLES + 2.String.Text
 msgid  "~Cancel"

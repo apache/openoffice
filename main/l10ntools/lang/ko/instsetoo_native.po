@@ -229,11 +229,11 @@ msgstr "{[ProductName] }설치에 실패했습니다."
 
 #: inc_openoffice/windows/msi_languages/Error.ulf#OOO_ERROR_25
 msgid  "Error reading from file: [2]. {{ System error [3].}}  Verify that the file exists and that you can access it."
-msgstr ""
+msgstr "파일 읽기 오류: [2]{{ 시스템 오류 [3].}} 파일이 실제로 있는지, 그리고 해당 파일에 액세스할 수 있는지 확인하십시오."
 
 #: inc_openoffice/windows/msi_languages/Error.ulf#OOO_ERROR_26
 msgid  "Cannot create the file [3].  A directory with this name already exists.  Cancel the installation and try installing to a different location."
-msgstr ""
+msgstr "파일 [3]을(를) 만들 수 없습니다. 이 이름을 가진 디렉토리가 이미 있습니다. 설치를 취소하고 다른 위치에 설치해 보십시오."
 
 #: inc_openoffice/windows/msi_languages/Error.ulf#OOO_ERROR_27
 msgid  "Please insert the disk: [2]"
@@ -241,43 +241,43 @@ msgstr "다음 디스크를 넣으십시오: [2]"
 
 #: inc_openoffice/windows/msi_languages/Error.ulf#OOO_ERROR_28
 msgid  "The installer has insufficient privileges to access this directory: [2].  The installation cannot continue.  Log on as an administrator or contact your system administrator."
-msgstr ""
+msgstr "설치 프로그램에서 이 디렉토리에 액세스할 수 있는 권한이 없습니다: [2]설치를 계속할 수 없습니다. 관리자로 로그온하거나 시스템 관리자에게 문의하십시오."
 
 #: inc_openoffice/windows/msi_languages/Error.ulf#OOO_ERROR_29
 msgid  "Error writing to file [2].  Verify that you have access to that directory."
-msgstr ""
+msgstr "파일 [2]에 쓰는 동안 오류가 발생했습니다. 해당 디렉토리에 액세스할 수 있는지 확인하십시오."
 
 #: inc_openoffice/windows/msi_languages/Error.ulf#OOO_ERROR_30
 msgid  "Error reading from file [2].  Verify that the file exists and that you can access it."
-msgstr ""
+msgstr "파일 [2]에 쓰는 동안 오류가 발생했습니다. 파일이 실제로 있는지, 그리고 해당 파일에 액세스할 수 있는지 확인하십시오."
 
 #: inc_openoffice/windows/msi_languages/Error.ulf#OOO_ERROR_31
 msgid  "Another application has exclusive access to the file [2].  Please shut down all other applications, then click Retry."
-msgstr ""
+msgstr "다른 응용 프로그램에서 파일 [2]을(를) 단독으로 액세스하고 있습니다. 응용 프로그램을 모두 닫은 후 [다시 시도]를 클릭합니다."
 
 #: inc_openoffice/windows/msi_languages/Error.ulf#OOO_ERROR_32
 msgid  "There is not enough disk space to install the file [2].  Free some disk space and click Retry, or click Cancel to exit."
-msgstr ""
+msgstr "파일 [2]을(를) 설치할 디스크 공간이 부족합니다. 디스크 공간을 늘린 후 [다시 시도]를 클릭하거나, [취소]를 클릭하여 종료하십시오."
 
 #: inc_openoffice/windows/msi_languages/Error.ulf#OOO_ERROR_33
 msgid  "Source file not found: [2].  Verify that the file exists and that you can access it."
-msgstr ""
+msgstr "원본 파일이 없습니다: [2]. 파일이 실제로 있는지, 그리고 해당 파일에 액세스할 수 있는지 확인하십시오."
 
 #: inc_openoffice/windows/msi_languages/Error.ulf#OOO_ERROR_34
 msgid  "Error reading from file: [3]. {{ System error [2].}}  Verify that the file exists and that you can access it."
-msgstr ""
+msgstr "파일 읽기 오류: [3]. {{ 시스템 오류 [2].}}  파일이 실제로 있는지, 그리고 그 파일에 대한 액세스 권한이 있는지 확인하십시오."
 
 #: inc_openoffice/windows/msi_languages/Error.ulf#OOO_ERROR_35
 msgid  "Error writing to file: [3]. {{ System error [2].}}  Verify that you have access to that directory."
-msgstr ""
+msgstr "파일 쓰기 오류: [3]. {{ 시스템 오류 [2].}}  그 디렉터리에 대한 액세스 권한이 있는지 확인하십시오."
 
 #: inc_openoffice/windows/msi_languages/Error.ulf#OOO_ERROR_36
 msgid  "Source file not found{{(cabinet)}}: [2].  Verify that the file exists and that you can access it."
-msgstr ""
+msgstr "원본 파일이 없습니다{{(cabinet)}}: [2]. 그 파일이 실제로 있는지, 그리고 그 파일에 대한 액세스 권한이 있는지 확인하십시오."
 
 #: inc_openoffice/windows/msi_languages/Error.ulf#OOO_ERROR_37
 msgid  "Cannot create the directory [2].  A file with this name already exists.  Please rename or remove the file and click Retry, or click Cancel to exit."
-msgstr ""
+msgstr "'[2]' 디렉터리를 만들 수 없습니다. 이 이름을 가진 파일이 이미 있습니다. 그 파일 이름을 다른 것으로 바꾸거나 제거한 후 "
 
 #: inc_openoffice/windows/msi_languages/Error.ulf#OOO_ERROR_38
 msgid  "The volume [2] is currently unavailable.  Please select another."
@@ -305,7 +305,7 @@ msgstr "디렉터리를 만들 때 네트워크 오류가 생겼습니다: [2]"
 
 #: inc_openoffice/windows/msi_languages/Error.ulf#OOO_ERROR_44
 msgid  "A network error occurred while attempting to open the source file cabinet [2]."
-msgstr ""
+msgstr "원본 파일 캐비넷을 열 때 네트워크 오류가 생겼습니다: [2]"
 
 #: inc_openoffice/windows/msi_languages/Error.ulf#OOO_ERROR_45
 msgid  "The specified path is too long [2]."
@@ -317,7 +317,7 @@ msgstr "이 파일을 수정할 수 있는 권한이 충분하지 않습니다: 
 
 #: inc_openoffice/windows/msi_languages/Error.ulf#OOO_ERROR_47
 msgid  "A portion of the path [2] exceeds the length allowed by the system."
-msgstr ""
+msgstr "폴더 경로 '[2]'이(가) 잘못 되었습니다. 경로로 지정한 문자가 없거나 경로가 너무 깁니다."
 
 #: inc_openoffice/windows/msi_languages/Error.ulf#OOO_ERROR_48
 msgid  "The path [2] contains words that are not valid in folders."
@@ -341,67 +341,67 @@ msgstr "사용할 수 없는 드라이브: [2]"
 
 #: inc_openoffice/windows/msi_languages/Error.ulf#OOO_ERROR_53
 msgid  "Error applying patch to file [2].  It has probably been updated by other means, and can no longer be modified by this patch.  For more information contact your patch vendor.  {{System Error: [3]}}"
-msgstr ""
+msgstr "파일 [2]에 패치를 적용하는 중에 오류가 생겼습니다. 다른 방법으로 업데이트되었기 때문에 이 패치를 사용해서 수정할 수 없습니다. 자세한 사항은 패치를 구입한 대리점에 문의하십시오. {{시스템 오류: [3]}}"
 
 #: inc_openoffice/windows/msi_languages/Error.ulf#OOO_ERROR_54
 msgid  "Could not create key [2]. {{ System error [3].}}  Verify that you have sufficient access to that key, or contact your support personnel."
-msgstr ""
+msgstr "키를 만들 수 없습니다: [2]. {{ 시스템 오류 [3].}}  그 키에 대한 액세스 권한이 있는지 확인하거나, 소속된 부서의 기술 지원 담당자에게 문의하십시오."
 
 #: inc_openoffice/windows/msi_languages/Error.ulf#OOO_ERROR_55
 msgid  "Could not open key: [2]. {{ System error [3].}}  Verify that you have sufficient access to that key, or contact your support personnel."
-msgstr ""
+msgstr "키를 열 수 없습니다: [2]. {{ 시스템 오류  [3].}}  그 키에 대한 액세스 권한이 있는지 확인하거나, 소속된 부서의 기술 지원 담당자에게 문의하십시오."
 
 #: inc_openoffice/windows/msi_languages/Error.ulf#OOO_ERROR_56
 msgid  "Could not delete value [2] from key [3]. {{ System error [4].}}  Verify that you have sufficient access to that key, or contact your support personnel."
-msgstr ""
+msgstr "키 [3]에서 값 [2]을(를) 삭제할 수 없습니다. {{ 시스템 오류 [4].}}  그 키에 대한 액세스 권한이 있는지 확인하거나, 소속된 부서의 기술 지원 담당자에게 문의하십시오."
 
 #: inc_openoffice/windows/msi_languages/Error.ulf#OOO_ERROR_57
 msgid  "Could not delete key [2]. {{ System error [3].}}  Verify that you have sufficient access to that key, or contact your support personnel."
-msgstr ""
+msgstr "키 [2]을(를) 삭제할 수 없습니다. {{ 시스템 오류 [3].}} 그 키에 대한 액세스 권한이 있는지 확인하거나, 소속된 부서의 기술 지원 담당자에게 문의하십시오."
 
 #: inc_openoffice/windows/msi_languages/Error.ulf#OOO_ERROR_58
 msgid  "Could not read value [2] from key [3]. {{ System error [4].}}  Verify that you have sufficient access to that key, or contact your support personnel."
-msgstr ""
+msgstr "키 [3]에서 값 [2]을(를) 읽을 수 없습니다. {{ 시스템 오류 [4].}}  그 키에 대한 액세스 권한이 있는지 확인하거나, 소속된 부서의 기술 지원 담당자에게 문의하십시오."
 
 #: inc_openoffice/windows/msi_languages/Error.ulf#OOO_ERROR_59
 msgid  "Could not write value [2] to key [3]. {{ System error [4].}}  Verify that you have sufficient access to that key, or contact your support personnel."
-msgstr ""
+msgstr "키 [3]에 값 [2]을(를) 쓸 수 없습니다. {{ 시스템 오류 [4].}}  그 키에 대한 액세스 권한이 충분한지 확인하거나, 소속된 부서의 기술 지원 담당자에게 문의하십시오."
 
 #: inc_openoffice/windows/msi_languages/Error.ulf#OOO_ERROR_60
 msgid  "Could not get value names for key [2]. {{ System error [3].}}  Verify that you have sufficient access to that key, or contact your support personnel."
-msgstr ""
+msgstr "키 [2]의 값 이름을 구할 수 없습니다. {{ 시스템 오류 [3].}}  그 키에 대한 액세스 권한이 있는지 확인하거나, 소속된 부서의 기술 지원 담당자에게 문의하십시오."
 
 #: inc_openoffice/windows/msi_languages/Error.ulf#OOO_ERROR_61
 msgid  "Could not get sub key names for key [2]. {{ System error [3].}}  Verify that you have sufficient access to that key, or contact your support personnel."
-msgstr ""
+msgstr "키 [2]의 하위 키 이름을 구할 수 없습니다. {{ 시스템 오류 [3].}}  그 키에 대한 액세스 권한이 있는지 확인하거나, 소속된 부서의 기술 지원 담당자에게 문의하십시오."
 
 #: inc_openoffice/windows/msi_languages/Error.ulf#OOO_ERROR_62
 msgid  "Could not read security information for key [2]. {{ System error [3].}}  Verify that you have sufficient access to that key, or contact your support personnel."
-msgstr ""
+msgstr "키 [2]에 대한 보안 정보를 읽지 못했습니다. {{ 시스템 오류 [3].}} 해당 키에 액세스할 수 있는 권한이 있는지 확인하거나 기술 지원 담당자에게 문의하십시오."
 
 #: inc_openoffice/windows/msi_languages/Error.ulf#OOO_ERROR_63
 msgid  "Could not increase the available registry space. [2] KB of free registry space is required for the installation of this application."
-msgstr ""
+msgstr "사용 가능한 레지스트리 공간을 늘리지 못했습니다. [2]KB의 사용 가능한 레지스트리 공간이 있어야 이 응용 프로그램을 설치할 수 있습니다."
 
 #: inc_openoffice/windows/msi_languages/Error.ulf#OOO_ERROR_64
 msgid  "Another installation is in progress. You must complete that installation before continuing this one."
-msgstr ""
+msgstr "다른 프로그램을 설치하고 있습니다. 진행 중인 설치 작업을 완료한 후 이 프로그램 설치를 계속하십시오."
 
 #: inc_openoffice/windows/msi_languages/Error.ulf#OOO_ERROR_65
 msgid  "Error accessing secured data. Please make sure the Windows Installer is configured properly and try the installation again."
-msgstr ""
+msgstr "보안 데이터에 액세스하는 중 오류가 발생했습니다. Windows 설치 프로그램이 제대로 구성되었는지 확인하고 다시 설치해 보십시오."
 
 #: inc_openoffice/windows/msi_languages/Error.ulf#OOO_ERROR_66
 msgid  "User [2] has previously initiated an installation for product [3].  That user will need to run that installation again before using that product.  Your current installation will now continue."
-msgstr ""
+msgstr "사용자 [2]이(가) 제품 [3]의 설치를 시작한 적이 있습니다. 이 사용자가 설치 프로그램을 다시 실행해야 해당 제품을 사용할 수 있습니다. 현재 설치가 지금 계속됩니다."
 
 #: inc_openoffice/windows/msi_languages/Error.ulf#OOO_ERROR_67
 msgid  "User [2] has previously initiated an installation for product [3].  That user will need to run that installation again before using that product."
-msgstr ""
+msgstr "사용자 [2]이(가) 제품 [3]의 설치를 시작한 적이 있습니다. 이 사용자가 설치 프로그램을 다시 실행해야 해당 제품을 사용할 수 있습니다."
 
 #: inc_openoffice/windows/msi_languages/Error.ulf#OOO_ERROR_68
 msgid  "Out of disk space -- Volume: '[2]'; required space: [3] KB; available space: [4] KB.  Free some disk space and retry."
-msgstr ""
+msgstr "디스크 공간 부족 -- 볼륨: '[2]'; 필요 공간: [3]KB; 사용 가능한 공간: [4]KB.  디스크 공간을 늘린 후 다시 시도하십시오."
 
 #: inc_openoffice/windows/msi_languages/Error.ulf#OOO_ERROR_69
 msgid  "Are you sure you want to cancel?"
@@ -409,15 +409,15 @@ msgstr "취소하시겠습니까?"
 
 #: inc_openoffice/windows/msi_languages/Error.ulf#OOO_ERROR_70
 msgid  "The file [2][3] is being held in use {by the following process: Name: [4], ID: [5], Window Title: [6]}.  Close that application and retry."
-msgstr ""
+msgstr "파일 [2][3]을(를) 다른 프로세스{이름: [4], ID: [5], 창 제목: [6]}에서 사용하고 있습니다. 해당 응용 프로그램을 닫은 다음 다시 시도하십시오."
 
 #: inc_openoffice/windows/msi_languages/Error.ulf#OOO_ERROR_71
 msgid  "The product [2] is already installed, preventing the installation of this product.  The two products are incompatible."
-msgstr ""
+msgstr "제품 [2]이(가) 이미 설치되어 있어서 이 제품을 설치하지 못합니다. 두 제품은 호환되지 않습니다."
 
 #: inc_openoffice/windows/msi_languages/Error.ulf#OOO_ERROR_72
 msgid  "Out of disk space -- Volume: [2]; required space: [3] KB; available space: [4] KB.  If rollback is disabled, enough space is available. Click Cancel to quit, Retry to check available disk space again, or Ignore to continue without rollback."
-msgstr ""
+msgstr "디스크 공간 부족 -- 볼륨: [2]; 필요 공간: [3]KB; 사용 가능한 공간: [4]KB. 롤백 기능을 해제하면 충분한 디스크 공간이 생깁니다. 끝내려면 [취소]를 클릭하고, 사용 가능한 디스크 공간을 다시 확인하려면 [다시 시도]를 클릭하고, 롤백 기능 없이 계속하려면 [무시]를 클릭합니다."
 
 #: inc_openoffice/windows/msi_languages/Error.ulf#OOO_ERROR_73
 msgid  "Could not access network location [2]."
@@ -425,11 +425,11 @@ msgstr "네트워크 위치 [2]에 액세스하지 못했습니다."
 
 #: inc_openoffice/windows/msi_languages/Error.ulf#OOO_ERROR_74
 msgid  "The following applications should be closed before continuing the installation:"
-msgstr ""
+msgstr "설치를 계속하기 전에 다음 응용 프로그램을 닫아야 합니다."
 
 #: inc_openoffice/windows/msi_languages/Error.ulf#OOO_ERROR_75
 msgid  "Could not find any previously installed compliant products on the machine for installing this product."
-msgstr ""
+msgstr "지금 설치하려는 제품의 이전 버전이 이 시스템에 설치되어 있지 않습니다."
 
 #: inc_openoffice/windows/msi_languages/Error.ulf#OOO_ERROR_76
 msgid  "The key [2] is not valid.  Verify that you entered the correct key."
@@ -437,23 +437,23 @@ msgstr "키 [2]이(가) 유효하지 않습니다. 올바른 키를 입력했는
 
 #: inc_openoffice/windows/msi_languages/Error.ulf#OOO_ERROR_77
 msgid  "The installer must restart your system before configuration of [2] can continue.  Click Yes to restart now or No if you plan to restart later."
-msgstr ""
+msgstr "[2]의 구성을 계속해서 설정하려면 시스템을 다시 시작해야 합니다. 다시 시작하려면 '예'를 클릭하고, 나중에 다시 시작하려면 '아니요'를 클릭합니다."
 
 #: inc_openoffice/windows/msi_languages/Error.ulf#OOO_ERROR_78
 msgid  "You must restart your system for the configuration changes made to [2] to take effect. Click Yes to restart now or No if you plan to restart later."
-msgstr ""
+msgstr "[2]의 구성 변경 내용을 적용하려면 시스템을 다시 시작해야 합니다. 다시 시작하려면 '예'를 클릭하고, 나중에 다시 시작하려면 '아니요'를 클릭합니다."
 
 #: inc_openoffice/windows/msi_languages/Error.ulf#OOO_ERROR_79
 msgid  "An installation for [2] is currently suspended.  You must undo the changes made by that installation to continue.  Do you want to undo those changes?"
-msgstr ""
+msgstr "[2]의 설치가 현재 중단되었습니다. 계속하려면 설치 프로그램에서 변경한 내용을 취소해야 합니다. 변경 내용을 취소하시겠습니까?"
 
 #: inc_openoffice/windows/msi_languages/Error.ulf#OOO_ERROR_80
 msgid  "A previous installation for this product is in progress.  You must undo the changes made by that installation to continue.  Do you want to undo those changes?"
-msgstr ""
+msgstr "이전에 실행한 이 제품의 설치 작업이 진행 중입니다. 계속하려면 설치 프로그램에서 변경한 내용을 취소해야 합니다. 변경 내용을 취소하시겠습니까?"
 
 #: inc_openoffice/windows/msi_languages/Error.ulf#OOO_ERROR_81
 msgid  "No valid source could be found for product [2].  The Windows Installer cannot continue."
-msgstr ""
+msgstr "제품 [2]의 유효한 원본을 찾을 수 없습니다.  Windows Installer를 계속할 수 없습니다."
 
 #: inc_openoffice/windows/msi_languages/Error.ulf#OOO_ERROR_82
 msgid  "Installation operation completed successfully."
@@ -469,23 +469,23 @@ msgstr "제품: [2] -- [3]"
 
 #: inc_openoffice/windows/msi_languages/Error.ulf#OOO_ERROR_85
 msgid  "You may either restore your computer to its previous state or continue the installation later. Would you like to restore?"
-msgstr ""
+msgstr "컴퓨터를 이전 상태로 복구하거나 나중에 설치를 계속할 수 있습니다. 복구하시겠습니까?"
 
 #: inc_openoffice/windows/msi_languages/Error.ulf#OOO_ERROR_86
 msgid  "An error occurred while writing installation information to disk.  Check to make sure enough disk space is available, and click Retry, or Cancel to end the installation."
-msgstr ""
+msgstr "설치 정보를 디스크에 쓰는 동안 오류가 발생했습니다. 디스크 공간이 충분한지 확인하고 [다시 시도]를 클릭하거나, 설치를 끝내려면 [취소]를 클릭합니다."
 
 #: inc_openoffice/windows/msi_languages/Error.ulf#OOO_ERROR_87
 msgid  "One or more of the files required to restore your computer to its previous state could not be found.  Restoration will not be possible."
-msgstr ""
+msgstr "컴퓨터를 이전 상태로 복구하는 데 필요한 일부 파일을 찾지 못했습니다. 복구할 수 없습니다."
 
 #: inc_openoffice/windows/msi_languages/Error.ulf#OOO_ERROR_88
 msgid  "[2] cannot install one of its required products. Contact your technical support group.  {{System Error: [3].}}"
-msgstr ""
+msgstr "[2]이(가) 필요한 제품 중 하나를 설치할 수 없습니다. 기술 지원 부서에 문의하십시오. {{시스템 오류: [3]}}"
 
 #: inc_openoffice/windows/msi_languages/Error.ulf#OOO_ERROR_89
 msgid  "The older version of [2] cannot be removed.  Contact your technical support group.  {{System Error [3].}}"
-msgstr ""
+msgstr "[2]의 이전 버전을 제거할 수 없습니다. 기술 지원 부서에 문의하십시오. {{시스템 오류 [3].}}"
 
 #: inc_openoffice/windows/msi_languages/Error.ulf#OOO_ERROR_90
 msgid  "The path [2] is not valid.  Please specify a valid path."
@@ -497,15 +497,15 @@ msgstr "메모리가 부족합니다. 다른 응용 프로그램을 종료한 �
 
 #: inc_openoffice/windows/msi_languages/Error.ulf#OOO_ERROR_92
 msgid  "There is no disk in drive [2]. Please insert one and click Retry, or click Cancel to go back to the previously selected volume."
-msgstr ""
+msgstr "드라이브 [2]에 디스크가 없습니다. 디스크를 넣고 [다시 시도]를 클릭하거나, [취소]를 클릭하여 이전에 선택한 볼륨으로 돌아가십시오."
 
 #: inc_openoffice/windows/msi_languages/Error.ulf#OOO_ERROR_93
 msgid  "There is no disk in drive [2]. Please insert one and click Retry, or click Cancel to return to the browse dialog and select a different volume."
-msgstr ""
+msgstr "드라이브 [2]에 디스크가 없습니다. 디스크를 넣고 [다시 시도]를 클릭하거나, [취소]를 클릭하여 [찾아보기] 대화 상자로 돌아간 후 다른 볼륨을 선택하십시오."
 
 #: inc_openoffice/windows/msi_languages/Error.ulf#OOO_ERROR_94
 msgid  "The folder [2] does not exist.  Please enter a path to an existing folder."
-msgstr ""
+msgstr "폴더 [2]이(가) 존재하지 않습니다. 기존 폴더 경로을 입력하십시오."
 
 #: inc_openoffice/windows/msi_languages/Error.ulf#OOO_ERROR_95
 msgid  "You have insufficient privileges to read this folder."
@@ -513,7 +513,7 @@ msgstr "이 폴더를 읽을 수 있는 권한이 없습니다."
 
 #: inc_openoffice/windows/msi_languages/Error.ulf#OOO_ERROR_96
 msgid  "A valid destination folder for the installation could not be determined."
-msgstr ""
+msgstr "설치할 유효한 대상 폴더를 결정하지 못했습니다."
 
 #: inc_openoffice/windows/msi_languages/Error.ulf#OOO_ERROR_97
 msgid  "Error attempting to read from the source installation database: [2]."
@@ -521,115 +521,115 @@ msgstr "다음 원본 설치 데이터베이스에서 읽는 중 오류가 발�
 
 #: inc_openoffice/windows/msi_languages/Error.ulf#OOO_ERROR_98
 msgid  "Scheduling reboot operation: Renaming file [2] to [3]. Must reboot to complete operation."
-msgstr ""
+msgstr "재부트 작업 일정 설정: 파일 이름을 [2]에서 [3](으)로 바꿉니다. 작업을 완료하려면 재부트해야 합니다."
 
 #: inc_openoffice/windows/msi_languages/Error.ulf#OOO_ERROR_99
 msgid  "Scheduling reboot operation: Deleting file [2]. Must reboot to complete operation."
-msgstr ""
+msgstr "재부트 작업 일정을 설정합니다: 파일 [2]을(를) 삭제합니다. 작업을 완료하려면 재부트해야 합니다."
 
 #: inc_openoffice/windows/msi_languages/Error.ulf#OOO_ERROR_100
 msgid  "Module [2] failed to register.  HRESULT [3].  Contact your support personnel."
-msgstr ""
+msgstr "모듈 [2]을(를) 등록하지 못했습니다. HRESULT [3]기술 지원 담당자에게 문의하십시오."
 
 #: inc_openoffice/windows/msi_languages/Error.ulf#OOO_ERROR_101
 msgid  "Module [2] failed to unregister.  HRESULT [3].  Contact your support personnel."
-msgstr ""
+msgstr "모듈 [2]의 등록을 취소하지 못했습니다. HRESULT [3]기술 지원 담당자에게 문의하십시오."
 
 #: inc_openoffice/windows/msi_languages/Error.ulf#OOO_ERROR_102
 msgid  "Failed to cache package [2]. Error: [3]. Contact your support personnel."
-msgstr ""
+msgstr "패키지 [2]을(를) 캐시하지 못했습니다. 오류: [3]기술 지원 담당자에게 문의하십시오."
 
 #: inc_openoffice/windows/msi_languages/Error.ulf#OOO_ERROR_103
 msgid  "Could not register font [2].  Verify that you have sufficient permissions to install fonts, and that the system supports this font."
-msgstr ""
+msgstr "글꼴 [2]을(를) 등록하지 못했습니다. 글꼴을 설치할 수 있는 권한이 있는지, 그리고 이 글꼴을 시스템에서 지원하는지 확인하십시오."
 
 #: inc_openoffice/windows/msi_languages/Error.ulf#OOO_ERROR_104
 msgid  "Could not unregister font [2]. Verify that you have sufficient permissions to remove fonts."
-msgstr ""
+msgstr "글꼴 [2] 등록을 취소하지 못했습니다 . 글꼴을 제거할 수 있는 권한이 있는지 확인하십시오."
 
 #: inc_openoffice/windows/msi_languages/Error.ulf#OOO_ERROR_105
 msgid  "Could not create shortcut [2]. Verify that the destination folder exists and that you can access it."
-msgstr ""
+msgstr "바로 가기 [2]을(를) 만들지 못했습니다. 대상 폴더가 실제로 있는지, 그리고 해당 폴더에 액세스할 수 있는지 확인하십시오."
 
 #: inc_openoffice/windows/msi_languages/Error.ulf#OOO_ERROR_106
 msgid  "Could not remove shortcut [2]. Verify that the shortcut file exists and that you can access it."
-msgstr ""
+msgstr "바로 가기 [2]을(를) 제거하지 못했습니다. 바로 가기 파일이 실제로 있는지, 그리고 해당 파일에 액세스할 수 있는지 확인하십시오."
 
 #: inc_openoffice/windows/msi_languages/Error.ulf#OOO_ERROR_107
 msgid  "Could not register type library for file [2].  Contact your support personnel."
-msgstr ""
+msgstr "파일 [2]의 유형 라이브러리를 등록하지 못했습니다. 기술 지원 담당자에게 문의하십시오."
 
 #: inc_openoffice/windows/msi_languages/Error.ulf#OOO_ERROR_108
 msgid  "Could not unregister type library for file [2].  Contact your support personnel."
-msgstr ""
+msgstr "파일 [2]의 유형 라이브러리 등록을 취소하지 못했습니다. 기술 지원 담당자에게 문의하십시오."
 
 #: inc_openoffice/windows/msi_languages/Error.ulf#OOO_ERROR_109
 msgid  "Could not update the INI file [2][3].  Verify that the file exists and that you can access it."
-msgstr ""
+msgstr "INI 파일 [2][3]을(를) 업데이트하지 못했습니다. 파일이 실제로 있는지, 그리고 해당 파일에 액세스할 수 있는지 확인하십시오."
 
 #: inc_openoffice/windows/msi_languages/Error.ulf#OOO_ERROR_110
 msgid  "Could not schedule file [2] to replace file [3] on reboot.  Verify that you have write permissions to file [3]."
-msgstr ""
+msgstr "시스템을 재부트할 때 파일 [2]이(가) [3]을(를) 대체하도록 지정하지 못했습니다. 파일 [3]에 대한 쓰기 권한이 있는지 확인하십시오."
 
 #: inc_openoffice/windows/msi_languages/Error.ulf#OOO_ERROR_111
 msgid  "Error removing ODBC driver manager, ODBC error [2]: [3]. Contact your support personnel."
-msgstr ""
+msgstr "ODBC 드라이버 관리자를 제거하는 동안 오류가 발생했습니다. ODBC 오류 [2]: [3]기술 지원 담당자에게 문의하십시오."
 
 #: inc_openoffice/windows/msi_languages/Error.ulf#OOO_ERROR_112
 msgid  "Error installing ODBC driver manager, ODBC error [2]: [3]. Contact your support personnel."
-msgstr ""
+msgstr "ODBC 드라이버 관리자를 설치하는 동안 오류가 발생했습니다. ODBC 오류 [2]: [3]기술 지원 담당자에게 문의하십시오."
 
 #: inc_openoffice/windows/msi_languages/Error.ulf#OOO_ERROR_113
 msgid  "Error removing ODBC driver [4], ODBC error [2]: [3]. Verify that you have sufficient privileges to remove ODBC drivers."
-msgstr ""
+msgstr "ODBC 드라이버 [4]을(를) 제거하는 동안 오류가 발생했습니다. ODBC 오류 [2]: [3]ODBC 드라이버를 제거할 수 있는 권한이 있는지 확인하십시오."
 
 #: inc_openoffice/windows/msi_languages/Error.ulf#OOO_ERROR_114
 msgid  "Error installing ODBC driver [4], ODBC error [2]: [3]. Verify that the file [4] exists and that you can access it."
-msgstr ""
+msgstr "ODBC 드라이버 [4]을(를) 설치하는 동안 오류가 발생했습니다. ODBC 오류 [2]: [3]파일 [4]이(가) 실제로 있는지, 그리고 해당 파일에 액세스할 수 있는지 확인하십시오."
 
 #: inc_openoffice/windows/msi_languages/Error.ulf#OOO_ERROR_115
 msgid  "Error configuring ODBC data source [4], ODBC error [2]: [3]. Verify that the file [4] exists and that you can access it."
-msgstr ""
+msgstr "ODBC 데이터 원본 [4]을(를) 구성하는 동안 오류가 발생했습니다. ODBC 오류 [2]: [3]. 파일 [4]이(가) 실제로 있는지, 그리고 해당 파일에 액세스할 수 있는지 확인하십시오."
 
 #: inc_openoffice/windows/msi_languages/Error.ulf#OOO_ERROR_116
 msgid  "Service [2] ([3]) failed to start.  Verify that you have sufficient privileges to start system services."
-msgstr ""
+msgstr "서비스 [2]([3])을(를) 시작하지 못했습니다. 시스템 서비스를 시작할 수 있는 권한이 있는지 확인하십시오."
 
 #: inc_openoffice/windows/msi_languages/Error.ulf#OOO_ERROR_117
 msgid  "Service [2] ([3]) could not be stopped.  Verify that you have sufficient privileges to stop system services."
-msgstr ""
+msgstr "서비스 [2]([3])를 중단시킬 수 없습니다. 시스템 서비스를 중지할 수 있는 권한이 있는지 확인하십시오."
 
 #: inc_openoffice/windows/msi_languages/Error.ulf#OOO_ERROR_118
 msgid  "Service [2] ([3]) could not be deleted.  Verify that you have sufficient privileges to remove system services."
-msgstr ""
+msgstr "서비스 [2]([3])을(를) 삭제하지 못했습니다. 시스템 서비스를 제거할 수 있는 권한이 있는지 확인하십시오."
 
 #: inc_openoffice/windows/msi_languages/Error.ulf#OOO_ERROR_119
 msgid  "Service [2] ([3]) could not be installed.  Verify that you have sufficient privileges to install system services."
-msgstr ""
+msgstr "서비스 [2]([3])을(를) 설치하지 못했습니다. 시스템 서비스를 설치할 수 있는 권한이 있는지 확인하십시오."
 
 #: inc_openoffice/windows/msi_languages/Error.ulf#OOO_ERROR_120
 msgid  "Could not update environment variable [2].  Verify that you have sufficient privileges to modify environment variables."
-msgstr ""
+msgstr "환경 변수 [2]을(를) 업데이트하지 못했습니다. 환경 변수를 수정할 수 있는 권한이 있는지 확인하십시오."
 
 #: inc_openoffice/windows/msi_languages/Error.ulf#OOO_ERROR_121
 msgid  "You do not have sufficient privileges to complete this installation for all users of the machine.  Log on as an administrator and then retry this installation."
-msgstr ""
+msgstr "이 시스템의 일부 사용자에 대해 이 설치를 완료할 권한이 없습니다. 관리자로 로그온한 다음 다시 설치하십시오."
 
 #: inc_openoffice/windows/msi_languages/Error.ulf#OOO_ERROR_122
 msgid  "Could not set file security for file [3]. Error: [2].  Verify that you have sufficient privileges to modify the security permissions for this file."
-msgstr ""
+msgstr "파일 [3]에 대해 파일 보안을 설정하지 못했습니다. 오류: [2]이 파일의 보안 권한을 수정할 수 있는 권한이 있는지 확인하십시오."
 
 #: inc_openoffice/windows/msi_languages/Error.ulf#OOO_ERROR_123
 msgid  "Component Services (COM+ 1.0) are not installed on this computer.  This installation requires Component Services in order to complete successfully.  Component Services are available on Windows 2000."
-msgstr ""
+msgstr "구성요소 서비스(COM+ 1.0)가 이 컴퓨터에 설치되어 있지 않습니다. 설치를 성공적으로 완료하려면 구성요소 서비스가 필요합니다. 구성요소 서비스는 Windows 2000에 있습니다."
 
 #: inc_openoffice/windows/msi_languages/Error.ulf#OOO_ERROR_124
 msgid  "Error registering COM+ application.  Contact your support personnel for more information."
-msgstr ""
+msgstr "COM+ 응용 프로그램을 등록하는 동안 오류가 발생했습니다. 자세한 내용은 기술 지원 담당자에게 문의하십시오."
 
 #: inc_openoffice/windows/msi_languages/Error.ulf#OOO_ERROR_125
 msgid  "Error unregistering COM+ application.  Contact your support personnel for more information."
-msgstr ""
+msgstr "COM+ 응용 프로그램 등록을 취소하는 동안 오류가 발생했습니다. 자세한 내용은 기술 지원 담당자에게 문의하십시오."
 
 #: inc_openoffice/windows/msi_languages/Error.ulf#OOO_ERROR_126
 msgid  "The description for service '[2]' ([3]) could not be changed."
@@ -637,23 +637,23 @@ msgstr "서비스 '[2]'([3])에 대한 설명은 변경할 수 없습니다."
 
 #: inc_openoffice/windows/msi_languages/Error.ulf#OOO_ERROR_127
 msgid  "The Windows Installer service cannot update the system file [2] because the file is protected by Windows.  You may need to update your operating system for this program to work correctly. {{Package version: [3], OS Protected version: [4]}}"
-msgstr ""
+msgstr "Windows가 파일을 보호하고 있기 때문에 Windows Installer 서비스가 시스템 파일 [2]을(를) 업데이트할 수 없습니다. 이 프로그램이 제대로 작동하려면 운영 체제를 업데이트해야 합니다. {{패키지 버전: [3], OS 보호된 버전: [4]}}"
 
 #: inc_openoffice/windows/msi_languages/Error.ulf#OOO_ERROR_128
 msgid  "The Windows Installer service cannot update the protected Windows file [2]. {{Package version: [3], OS Protected version: [4], SFP Error: [5]}}"
-msgstr ""
+msgstr "Windows Installer 서비스가 보호된 Windows 파일 [2]을(를) 업데이트할 수 없습니다. {{패키지 버전: [3], OS 보호된 버전: [4], SFP 오류: [5]}}"
 
 #: inc_openoffice/windows/msi_languages/Error.ulf#OOO_ERROR_129
 msgid  "This setup requires Internet Information Server 4.0 or higher for configuring IIS Virtual Roots. Please make sure that you have IIS 4.0 or higher."
-msgstr ""
+msgstr "설치하려면 IIS(Internet Information Server) 가상 루트를 구성할 수 있도록 IIS 4.0 이상이 있어야 합니다. IIS 4.0 이상이 있는지 확인하십시오."
 
 #: inc_openoffice/windows/msi_languages/Error.ulf#OOO_ERROR_130
 msgid  "This setup requires Administrator privileges for configuring IIS Virtual Roots."
-msgstr ""
+msgstr "이 설치 프로그램이 IIS 가상 루트를 구성하려면 관리자 권한이 필요합니다."
 
 #: inc_openoffice/windows/msi_languages/CustomAc.ulf#OOO_CUSTOMACTION_1
 msgid  "A newer version of [ProductName] was found. To install an older version, the newer version needs to be removed first."
-msgstr ""
+msgstr "[ProductName]의 최신 버전을 찾았습니다. 이전 버전을 설치하려면 먼저 최신 버전을 제거해야 합니다."
 
 #: inc_openoffice/windows/msi_languages/CustomAc.ulf#OOO_CUSTOMACTION_2
 msgid  "The same version of this product is already installed."
@@ -661,11 +661,11 @@ msgstr "이 제품과 같은 버전이 이미 설치되어 있습니다."
 
 #: inc_openoffice/windows/msi_languages/CustomAc.ulf#OOO_CUSTOMACTION_3
 msgid  "An older version of [ProductName] was found. To install a newer version, the older version needs to be removed first."
-msgstr ""
+msgstr "이전 버전의 [ProductName] 이(가) 발견되었습니다. 새 버전을 설치하려면 먼저 이전 버전을 제거해야 합니다."
 
 #: inc_openoffice/windows/msi_languages/CustomAc.ulf#OOO_CUSTOMACTION_4
 msgid  "Please exit [DEFINEDPRODUCT] [DEFINEDVERSION] and the [DEFINEDPRODUCT] [DEFINEDVERSION] Quickstarter before you continue. If you are using a multi-user system, also make sure that no other user has [DEFINEDPRODUCT] [DEFINEDVERSION] open."
-msgstr ""
+msgstr "계속하기 전에 [DEFINEDPRODUCT] [DEFINEDVERSION]와(과) [DEFINEDPRODUCT] [DEFINEDVERSION] 빠른실행을 종료하십시오 . 다중 사용자 시스템에서는, 다른 사용자들이 [DEFINEDPRODUCT] [DEFINEDVERSION] 을(를) 열지 않았는지 확인하십시오."
 
 #: inc_openoffice/windows/msi_languages/UIText.ulf#OOO_UITEXT_1
 msgid  "bytes"
@@ -693,15 +693,15 @@ msgstr "이 기능은 필요할 때 설치하도록 설정됩니다."
 
 #: inc_openoffice/windows/msi_languages/UIText.ulf#OOO_UITEXT_7
 msgid  "This feature, and all subfeatures, will be installed to run from the CD."
-msgstr ""
+msgstr "이 기능 및 모든 하위기능을 CD 에서 설치합니다."
 
 #: inc_openoffice/windows/msi_languages/UIText.ulf#OOO_UITEXT_8
 msgid  "This feature, and all subfeatures, will be installed on local hard drive."
-msgstr ""
+msgstr "이 기능 및 모든 하위기능을 로컬 하드 드라이브에 설치합니다."
 
 #: inc_openoffice/windows/msi_languages/UIText.ulf#OOO_UITEXT_9
 msgid  "This feature, and all subfeatures, will be installed to run from the network."
-msgstr ""
+msgstr "이 기능 및 모든 하위 기능은 네트워크에서 실행되도록 설치됩니다."
 
 #: inc_openoffice/windows/msi_languages/UIText.ulf#OOO_UITEXT_10
 msgid  "This feature will be installed to run from CD."
@@ -761,11 +761,11 @@ msgstr "이 기능은 네트워크에서 실행할 수 있습니다."
 
 #: inc_openoffice/windows/msi_languages/UIText.ulf#OOO_UITEXT_24
 msgid  "This feature will be uninstalled completely, and you won't be able to run it from CD."
-msgstr ""
+msgstr "이 기능은 완전히 제거됩니다. CD에서 실행할 수 없게 됩니다."
 
 #: inc_openoffice/windows/msi_languages/UIText.ulf#OOO_UITEXT_25
 msgid  "This feature was run from the CD but will be set to be installed when required."
-msgstr ""
+msgstr "이 기능은 CD에서 실행되었지만 이제 필요할 때 설치되도록 설정됩니다."
 
 #: inc_openoffice/windows/msi_languages/UIText.ulf#OOO_UITEXT_26
 msgid  "This feature will continue to be run from the CD"
@@ -773,7 +773,7 @@ msgstr "이 기능은 그대로 CD에서 실행됩니다."
 
 #: inc_openoffice/windows/msi_languages/UIText.ulf#OOO_UITEXT_27
 msgid  "This feature was run from the CD but will be installed on the local hard drive."
-msgstr ""
+msgstr "이 기능은 CD에서 실행되었지만 이제 로컬 하드 드라이브에 설치됩니다."
 
 #: inc_openoffice/windows/msi_languages/UIText.ulf#OOO_UITEXT_28
 msgid  "This feature frees up [1] on your hard drive."
@@ -793,11 +793,11 @@ msgstr "이 기능은 완전히 제거됩니다."
 
 #: inc_openoffice/windows/msi_languages/UIText.ulf#OOO_UITEXT_32
 msgid  "This feature will be removed from your local hard drive but will be set to be installed when required."
-msgstr ""
+msgstr "이 기능은 로컬 하드 드라이브에서 제거되지만 필요할 때 설치되도록 설정됩니다."
 
 #: inc_openoffice/windows/msi_languages/UIText.ulf#OOO_UITEXT_33
 msgid  "This feature will be removed from your local hard drive but will still be available to run from CD."
-msgstr ""
+msgstr "이 기능은 로컬 하드 드라이브에서 제거되지만 CD에서는 실행할 수 있습니다."
 
 #: inc_openoffice/windows/msi_languages/UIText.ulf#OOO_UITEXT_34
 msgid  "This feature will remain on your local hard drive."
@@ -805,19 +805,19 @@ msgstr "이 기능은 로컬 하드 드라이브에 그대로 남아 있게 됩�
 
 #: inc_openoffice/windows/msi_languages/UIText.ulf#OOO_UITEXT_35
 msgid  "This feature will be removed from your local hard drive, but will be still available to run from the network."
-msgstr ""
+msgstr "이 기능은 로컬 하드 드라이브에서 제거되지만 네트워크에서는 실행할 수 있습니다."
 
 #: inc_openoffice/windows/msi_languages/UIText.ulf#OOO_UITEXT_36
 msgid  "This feature will be uninstalled completely, and you won't be able to run it from the network."
-msgstr ""
+msgstr "이 기능은 완전히 제거됩니다. 네트워크에서 실행할 수 없게 됩니다."
 
 #: inc_openoffice/windows/msi_languages/UIText.ulf#OOO_UITEXT_37
 msgid  "This feature was run from the network but will be installed when required."
-msgstr ""
+msgstr "이 기능은 네트워크에서 실행되었지만 이제 필요할 때 설치됩니다."
 
 #: inc_openoffice/windows/msi_languages/UIText.ulf#OOO_UITEXT_38
 msgid  "This feature was run from the network but will be installed on the local hard drive."
-msgstr ""
+msgstr "이 기능은 네트워크에서 실행되었지만 이제 로컬 하드 드라이브에 설치됩니다."
 
 #: inc_openoffice/windows/msi_languages/UIText.ulf#OOO_UITEXT_39
 msgid  "This feature will continue to be run from the network"
@@ -825,19 +825,19 @@ msgstr "이 기능은 그대로 네트워크에서 실행됩니다."
 
 #: inc_openoffice/windows/msi_languages/UIText.ulf#OOO_UITEXT_40
 msgid  "This feature frees up [1] on your hard drive. It has [2] of [3] subfeatures selected. The subfeatures free up [4] on your hard drive."
-msgstr ""
+msgstr "이 기능은 하드 드라이브에서 [1]을(를) 삭제합니다. [3] 중 [2]의 하위 기능이 선택되었습니다. 이 하위 기능은 하드 드라이브에서 [4]을(를) 삭제합니다."
 
 #: inc_openoffice/windows/msi_languages/UIText.ulf#OOO_UITEXT_41
 msgid  "This feature frees up [1] on your hard drive. It has [2] of [3] subfeatures selected. The subfeatures require [4] on your hard drive."
-msgstr ""
+msgstr "이 기능은 하드 드라이브에서 [1]을(를) 삭제합니다. [3] 중 [2]의 하위 기능이 선택되었습니다. 이 하위 기능을 사용하려면 하드 드라이브에 [4]이(가) 있어야 합니다."
 
 #: inc_openoffice/windows/msi_languages/UIText.ulf#OOO_UITEXT_42
 msgid  "This feature requires [1] on your hard drive. It has [2] of [3] subfeatures selected. The subfeatures free up [4] on your hard drive."
-msgstr ""
+msgstr "이 기능을 사용하려면 하드 드라이브에 [1]이(가) 있어야 합니다. [3] 중 [2]의 하위 기능이 선택되었습니다. 이 하위 기능은 하드 드라이브에서 [4]을(를) 삭제합니다."
 
 #: inc_openoffice/windows/msi_languages/UIText.ulf#OOO_UITEXT_43
 msgid  "This feature requires [1] on your hard drive. It has [2] of [3] subfeatures selected. The subfeatures require [4] on your hard drive."
-msgstr ""
+msgstr "이 기능을 사용하려면 하드 드라이브에 [1]이(가) 있어야 합니다. [3] 개의 하위기능 중 [2] 개가 선택되었고, [4] 이(가) 필요합니다."
 
 #: inc_openoffice/windows/msi_languages/UIText.ulf#OOO_UITEXT_44
 msgid  "Time remaining: {[1] min }[2] sec"
@@ -941,7 +941,7 @@ msgstr "중복 파일을 만드는 중"
 
 #: inc_openoffice/windows/msi_languages/ActionTe.ulf#OOO_ACTIONTEXT_20
 msgid  "File: [1],  Directory: [9],  Size: [6]"
-msgstr "파일: [1], 디렉토리: [9], 크기: [6]"
+msgstr "파일: [1],  디렉터리: [9],  크기: [6]"
 
 #: inc_openoffice/windows/msi_languages/ActionTe.ulf#OOO_ACTIONTEXT_21
 msgid  "Computing space requirements"
@@ -977,7 +977,7 @@ msgstr "새 파일을 복사하는 중"
 
 #: inc_openoffice/windows/msi_languages/ActionTe.ulf#OOO_ACTIONTEXT_29
 msgid  "File: [1],  Directory: [9],  Size: [6]"
-msgstr "파일: [1], 디렉토리: [9], 크기: [6]"
+msgstr "파일: [1],  디렉터리: [9],  크기: [6]"
 
 #: inc_openoffice/windows/msi_languages/ActionTe.ulf#OOO_ACTIONTEXT_30
 msgid  "Installing ODBC components"
@@ -1077,7 +1077,7 @@ msgstr "익스텐션 서버를 등록하는 중"
 
 #: inc_openoffice/windows/msi_languages/ActionTe.ulf#OOO_ACTIONTEXT_54
 msgid  "Extension: [1]"
-msgstr "확장자: [1]"
+msgstr "확장: [1]"
 
 #: inc_openoffice/windows/msi_languages/ActionTe.ulf#OOO_ACTIONTEXT_55
 msgid  "Registering fonts"
@@ -1093,7 +1093,7 @@ msgstr "MIME 정보를 등록하는 중"
 
 #: inc_openoffice/windows/msi_languages/ActionTe.ulf#OOO_ACTIONTEXT_58
 msgid  "MIME Content Type: [1], Extension: [2]"
-msgstr "MIME 내용 유형: [1], 확장자: [2]"
+msgstr "MIME 컨텐트 유형: [1], 확장자: [2]"
 
 #: inc_openoffice/windows/msi_languages/ActionTe.ulf#OOO_ACTIONTEXT_59
 msgid  "Registering product"
@@ -1133,15 +1133,15 @@ msgstr "중복 파일을 제거하는 중"
 
 #: inc_openoffice/windows/msi_languages/ActionTe.ulf#OOO_ACTIONTEXT_68
 msgid  "File: [1], Directory: [9]"
-msgstr "파일: [1], 디렉토리: [9]"
+msgstr "파일: [1], 디렉터리: [9]"
 
 #: inc_openoffice/windows/msi_languages/ActionTe.ulf#OOO_ACTIONTEXT_69
 msgid  "Updating environment strings"
-msgstr "환경 문자열 업데이트"
+msgstr "환경 문자열을 업데이트하는 중"
 
 #: inc_openoffice/windows/msi_languages/ActionTe.ulf#OOO_ACTIONTEXT_70
 msgid  "Name: [1], Value: [2], Action [3]"
-msgstr "이름: [1], 값: [2], 작업 [3]"
+msgstr "이름: [1], 값: [2], 수행 [3]"
 
 #: inc_openoffice/windows/msi_languages/ActionTe.ulf#OOO_ACTIONTEXT_71
 msgid  "Removing applications"
@@ -1157,7 +1157,7 @@ msgstr "파일을 제거하는 중"
 
 #: inc_openoffice/windows/msi_languages/ActionTe.ulf#OOO_ACTIONTEXT_74
 msgid  "File: [1], Directory: [9]"
-msgstr "파일: [1], 디렉토리: [9]"
+msgstr "파일: [1], 디렉터리: [9]"
 
 #: inc_openoffice/windows/msi_languages/ActionTe.ulf#OOO_ACTIONTEXT_75
 msgid  "Removing folders"
@@ -1173,7 +1173,7 @@ msgstr "INI 파일 항목을 제거하는 중"
 
 #: inc_openoffice/windows/msi_languages/ActionTe.ulf#OOO_ACTIONTEXT_78
 msgid  "File: [1],  Section: [2],  Key: [3], Value: [4]"
-msgstr "파일: [1], 구역: [2], 키: [3], 값: [4]"
+msgstr "키: [1],  섹션: [2],  키: [3], 값: [4]"
 
 #: inc_openoffice/windows/msi_languages/ActionTe.ulf#OOO_ACTIONTEXT_79
 msgid  "Removing ODBC components"
@@ -1361,7 +1361,7 @@ msgstr "키: [1], 이름: [2], 값: [3]"
 
 #: inc_openoffice/windows/msi_languages/LaunchCo.ulf#OOO_LAUNCH_1
 msgid  "The Installation Wizard cannot be run properly because you are logged in as a user without sufficient administrator rights for this system."
-msgstr ""
+msgstr "로그인된 사용자가 시스템에 대한 충분한 관리 권한을 가지고 있지 않기 때문에 설치 마법사를  제대로 실행할 수 없습니다."
 
 #: inc_openoffice/windows/msi_languages/LaunchCo.ulf#OOO_LAUNCH_2
 msgid  "Please use the file setup.exe to start the installation."
@@ -1421,7 +1421,7 @@ msgstr "추출: "
 
 #: inc_openoffice/windows/msi_languages/Nsis.ulf#MUI_TEXT_ABORTWARNING
 msgid  "Are you sure you want to quit the %PRODUCTNAME %PRODUCTVERSION Installation Preparation"
-msgstr ""
+msgstr "%PRODUCTNAME %PRODUCTVERSION 설치 준비를 종료하시겠습니까?"
 
 #: inc_openoffice/windows/msi_languages/SIS.ulf#OOO_SIS_TITLE
 msgid  "Installation database"
@@ -1469,7 +1469,7 @@ msgstr " 새 폴더 만들기||"
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_10
 msgid  "OK"
-msgstr "확인"
+msgstr "{&Tahoma8}확인"
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_12
 msgid  "&Folder name:"
@@ -1497,7 +1497,7 @@ msgstr "{&Tahoma8}제품의 서버 이미지를 위한 네트워크 위치를 �
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_20
 msgid  "Enter the network location or click Change to browse to a location.  Click Install to create a server image of [ProductName] at the specified network location or click Cancel to exit the wizard."
-msgstr ""
+msgstr "{&Tahoma8}네트워크 위치를 입력하거나 변경을 클릭하여 위치를 찾아봅니다. 인스톨을 클릭하여 [ProductName]의  서버 이미지를 지정한 네트워크 위치에 생성하거나 취소를 클릭하여 마법사를 종료합니다."
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_21
 msgid  "{&MSSansBold8}Network Location"
@@ -1505,7 +1505,7 @@ msgstr "{&MSSansBold8}네트워크 위치"
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_22
 msgid  "&Install"
-msgstr "설치(&I)"
+msgstr "{&Tahoma8}설치(&I)"
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_23
 msgid  "&Network location:"
@@ -1525,11 +1525,11 @@ msgstr "다음(&N) >"
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_27
 msgid  "{&TahomaBold10}Welcome to the Installation Wizard for [ProductName]"
-msgstr "{&TahomaBold10}[ProductName] 설치 마법사를 시작합니다."
+msgstr "{&TahomaBold10}[ProductName] - 설치 마법사를 시작합니다"
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_28
 msgid  "The Installation Wizard will create a server image of [ProductName] at a specified network location. To continue, click Next."
-msgstr ""
+msgstr "설치 마법사가 지정된 네트워크 위치에 [ProductName]의 서버 이미지를 작성합니다. 계속하려면 다음을 누르십시오."
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_29
 msgid  "&No"
@@ -1609,7 +1609,7 @@ msgstr "{&Tahoma8}설치하려는 프로그램 구성요소를 선택하십시�
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_53
 msgid  "Click on an icon in the list below to change how a feature is installed."
-msgstr ""
+msgstr "{&Tahoma8}설치할 구성 요소를 변경하려면 아래 목록에 있는 아이콘을 누르십시오."
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_54
 msgid  "{&MSSansBold8}Custom Setup"
@@ -1645,7 +1645,7 @@ msgstr "{&Tahoma8}구성요소 크기"
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_64
 msgid  "Custom Setup allows you to selectively install program features."
-msgstr ""
+msgstr "{&Tahoma8}사용자 정의 설치는 프로그램 구성요소를 선택하여 설치할 수 있도록 해줍니다."
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_65
 msgid  "{&MSSansBold8}Custom Setup Tips"
@@ -1657,7 +1657,7 @@ msgstr "{&Tahoma8}구성요소가 설치되지 않습니다."
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_67
 msgid  "Will be installed on first use. (Available only if the feature supports this option.)"
-msgstr ""
+msgstr "{&Tahoma8}처음 사용 시 구성요소가 설치됩니다 (해당 구성요소가 이 옵션을 지원하는 경우에만 적용됨)."
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_68
 msgid  "This install state means the feature..."
@@ -1669,19 +1669,19 @@ msgstr "{&Tahoma8}로컬 하드 드라이브에 전체 구성요소가 설치됩
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_70
 msgid  "The icon next to the feature name indicates the install state of the feature. Click the icon to drop down the install state menu for each feature."
-msgstr ""
+msgstr "{&Tahoma8}구성요소 이름 옆의 아이콘은 해당 구성요소의 설치 상태를 나타냅니다. 아이콘을 눌러 각 구성요소의 설치 상태 메뉴를 드롭다운하십시오."
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_71
 msgid  "Will be installed to run from the network. (Available only if the feature supports this option.)"
-msgstr ""
+msgstr "{&Tahoma8}네트워크로부터 구성요소를 실행하도록 설치합니다 (해당 구성요소가 이 옵션을 지원하는 경우에만 적용됨)."
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_72
 msgid  "OK"
-msgstr "확인"
+msgstr "{&Tahoma8}확인"
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_73
 msgid  "Will have some subfeatures installed to the local hard drive. (Available only if the feature has subfeatures.)"
-msgstr ""
+msgstr "{&Tahoma8}로컬 하드 드라이브에 일부 하위 구성요소가 설치됩니다. (해당 구성요소에 하위 구성요소가 있는 경우에만 적용됨)."
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_74
 msgid  "< &Back"
@@ -1697,7 +1697,7 @@ msgstr "바꾸기(&C)..."
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_79
 msgid  "Click Next to install to this folder, or click Change to install to a different folder."
-msgstr ""
+msgstr "이 폴더에 설치하려면 다음을 누르고, 또는 다른 폴더에 설치하려면 바꾸기를 누르십시오."
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_80
 msgid  "{&MSSansBold8}Database Folder"
@@ -1729,7 +1729,7 @@ msgstr "바꾸기(&C)..."
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_89
 msgid  "Click Next to install to this folder, or click Change to install to a different folder."
-msgstr ""
+msgstr "이 폴더에 설치하려면 다음을 클릭하고, 또는 다른 폴더로 설치하려면 바꾸기를 클릭하십시오."
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_90
 msgid  "{&MSSansBold8}Destination Folder"
@@ -1741,7 +1741,7 @@ msgstr "[INSTALLDIR]"
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_92
 msgid  "Install [ProductName] to:"
-msgstr "[ProductName] 설치 위치:"
+msgstr "{&Tahoma8}[ProductName] 설치 위치:"
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_93
 msgid  "&Next >"
@@ -1753,7 +1753,7 @@ msgstr "{&Tahoma8}선택한 구성요소를 설치하기 위한 디스크 공간
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_97
 msgid  "The highlighted volumes do not have enough disk space available for the currently selected features. You can remove files from the highlighted volumes, choose to install less features onto local drives, or select different destination drives."
-msgstr ""
+msgstr "선택된 볼륨에는 현재 선택한 기능을 설치할 만큼 충분한 공간이 없습니다. 해당 볼륨에서 파일을 제거하거나, 로컬 드라이브에 기능을 적게 설치하거나 다른 대상 드라이브를 선택할 수 있습니다."
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_98
 msgid  "{&MSSansBold8}Disk Space Requirements"
@@ -1769,7 +1769,7 @@ msgstr "{&Tahoma8}업데이트해야 할 일부 파일이 현재 사용 중입�
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_104
 msgid  "The following applications are using files that need to be updated by this setup. Close these applications and click Retry to continue."
-msgstr ""
+msgstr "{&Tahoma8}이 프로그램 설치시 업데이트해야 할 파일을 다음의 응용 프로그램에서 사용하고 있습니다. 계속하려면 해당 응용 프로그램을 닫은 후 다시 시도하십시오."
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_105
 msgid  "{&MSSansBold8}Files in Use"
@@ -1837,11 +1837,11 @@ msgstr "다음(&N) >"
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_126
 msgid  "{&TahomaBold10}Welcome to the Installation Wizard for [ProductName]"
-msgstr "{&TahomaBold10}[ProductName] - 설치 마법사를 시작합니다."
+msgstr "{&TahomaBold10}[ProductName] 설치 마법사를 시작합니다."
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_127
 msgid  "The Installation Wizard will install [ProductName] on your computer. To continue, click Next."
-msgstr ""
+msgstr "설치 마법사는 컴퓨터에 [ProductName]을(를) 설치합니다. 계속하려면 다음을 클릭합니다."
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_128
 msgid  "< &Back"
@@ -1885,11 +1885,11 @@ msgstr "다음(&N) >"
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_143
 msgid  "Change which program features are installed. This option displays the Custom Selection dialog in which you can change the way features are installed."
-msgstr ""
+msgstr "어떤 프로그램 기능을 설치할지 변경합니다. 이 옵션은 기능을 설치하는 방법을 변경할 수 있는 [사용자 정의 선택] 대화 상자를 표시합니다."
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_144
 msgid  "Repair installation errors in the program. This option fixes missing or corrupt files, shortcuts, and registry entries."
-msgstr ""
+msgstr "프로그램에서 설치 오류를 복구합니다. 이 옵션은 없거나 손상된 파일, 바로 가기 및 레지스트리 항목을 수정합니다."
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_145
 msgid  "Remove [ProductName] from your computer."
@@ -1909,11 +1909,11 @@ msgstr "다음(&N) >"
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_149
 msgid  "{&TahomaBold10}Welcome to the Installation Wizard for [ProductName]"
-msgstr "{&TahomaBold10}[ProductName] - 설치 마법사를 시작합니다."
+msgstr "{&TahomaBold10}[ProductName] 설치 마법사를 시작합니다."
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_150
 msgid  "The Installation Wizard will allow you to modify, repair, or remove [ProductName]. To continue, click Next."
-msgstr ""
+msgstr "설치 마법사를 사용하여 [ProductName]을(를) 수정, 복구 또는 제거할 수 있습니다. 계속하려면 다음을 누릅니다."
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_153
 msgid  "Disk space required for the installation exceeds available disk space."
@@ -1921,7 +1921,7 @@ msgstr "설치에 필요한 디스크 공간이 사용 가능한 디스크 공�
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_154
 msgid  "The highlighted volumes do not have enough disk space available for the currently selected features. You can remove files from the highlighted volumes, choose to install less features onto local drives, or select different destination drives."
-msgstr ""
+msgstr "선택된 볼륨에는 현재 선택한 기능을 설치할 만큼 충분한 공간이 없습니다. 해당 볼륨에서 파일을 제거하거나, 로컬 드라이브에 기능을 적게 설치하거나 다른 대상 드라이브를 선택할 수 있습니다."
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_155
 msgid  "{&MSSansBold8}Out of Disk Space"
@@ -1953,7 +1953,7 @@ msgstr "{&TahomaBold10}[ProductName]용 패치 시작"
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_162
 msgid  "The Installation Wizard will install the Patch for [ProductName] on your computer.  To continue, click Update."
-msgstr ""
+msgstr "설치 마법사는 [ProductName]용 패치를 컴퓨터에 설치합니다. 계속하려면 [업데이트]를 클릭합니다."
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_163
 msgid  "< &Back"
@@ -1973,7 +1973,7 @@ msgstr "설치를 시작하려면 설치를 누르십시오."
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_169
 msgid  "If you want to review or change any of your installation settings, click Back. Click Cancel to exit the wizard."
-msgstr ""
+msgstr "설치 설정을 검토하거나 변경하려면 뒤로를 누르십시오. 마법사를 종료하려면 취소를 누르십시오."
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_170
 msgid  "{&MSSansBold8}Ready to Modify the Program"
@@ -2005,7 +2005,7 @@ msgstr "프로그램을 시스템에서 제거하도록 선택했습니다."
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_179
 msgid  "Click Remove to remove [ProductName] from your computer. After removal, this program will no longer be available for use."
-msgstr ""
+msgstr "[ProductName]을(를) 컴퓨터에서 제거하려면 [제거]를 클릭합니다. 제거한 후에는 이 프로그램을 더 이상 사용할 수 없습니다."
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_180
 msgid  "If you want to review or change any settings, click Back."
@@ -2033,7 +2033,7 @@ msgstr "{&Tahoma8}마침(&F)"
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_186
 msgid  "Your system has not been modified. To complete installation at another time, please run setup again."
-msgstr ""
+msgstr "{&Tahoma8}시스템이 변경되지 않았습니다. 다음에 설치를 완료하려면 설치 프로그램을 다시 실행하십시오."
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_187
 msgid  "Click Finish to exit the wizard."
@@ -2041,7 +2041,7 @@ msgstr "{&Tahoma8}마법사를 종료하려면 '마침'을 클릭합니다."
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_188
 msgid  "You can either keep any existing installed elements on your system to continue this installation at a later time or you can restore your system to its original state prior to the installation."
-msgstr ""
+msgstr "{&Tahoma8}시스템에 설치된 기존 요소를 보관하여 다음에 설치를 계속하거나, 설치 이전의 원래 상태로 시스템을 복원할 수 있습니다."
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_189
 msgid  "Click Restore or Continue Later to exit the wizard."
@@ -2053,7 +2053,7 @@ msgstr "{&TahomaBold10}설치 완료"
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_191
 msgid  "The wizard was interrupted before [ProductName] could be completely installed."
-msgstr ""
+msgstr "{&Tahoma8}[ProductName] - 설치가 완료되기 전에 설치 마법사가 중단되었습니다."
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_192
 msgid  "< &Back"
@@ -2065,7 +2065,7 @@ msgstr "취소"
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_194
 msgid  "&Yes, check for program updates (Recommended) after the setup completes."
-msgstr ""
+msgstr "예, 설치가 완료된 후 프로그램 갱신 내용을 확인합니다(권장사항)(&Y)."
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_195
 msgid  "Launch the program"
@@ -2085,11 +2085,11 @@ msgstr "{&TahomaBold10}설치 완료"
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_199
 msgid  "The Installation Wizard has successfully installed [ProductName]. Click Finish to exit the wizard."
-msgstr ""
+msgstr "설치 마법사가 [ProductName]을(를) 성공적으로 설치했습니다. 마법사를 종료하려면 마침을 누르십시오."
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_200
 msgid  "The Installation Wizard has successfully uninstalled [ProductName]. Click Finish to exit the wizard."
-msgstr ""
+msgstr "설치 마법사가 [ProductName]을(를) 성공적으로 제거했습니다. 마법사를 종료하려면 마침을 누르십시오."
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_201
 msgid  "Setup has finished installing [ProductName]."
@@ -2097,11 +2097,11 @@ msgstr "설치 프로그램은 [ProductName] 설치를 완료하였습니다."
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_202
 msgid  "Some program files might have been updated since you purchased your copy of [ProductName]."
-msgstr ""
+msgstr "일부 프로그램 파일은 [ProductName] 사본을 구입한 후 갱신되었을 수 있습니다."
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_203
 msgid  "Your Internet connection can be used to make sure that you have the latest updates."
-msgstr ""
+msgstr "인터넷 접속은 최신 갱신본이 있는지 확인하는데 사용될 수 있습니다."
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_204
 msgid  "&Abort"
@@ -2113,7 +2113,7 @@ msgstr "{&Tahoma8}취소"
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_206
 msgid  "error text goes here  error text goes here  error text goes here  error text goes here  error text goes here  error text goes here  error text goes here  error text goes here  error text goes here  error text goes here"
-msgstr ""
+msgstr "{&Tahoma8}<error text goes here><error text goes here><error text goes here><error text goes here><error text goes here><error text goes here><error text goes here><error text goes here><error text goes here><error text goes here><error text goes here>"
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_207
 msgid  "&Ignore"
@@ -2153,7 +2153,7 @@ msgstr "{&TahomaBold10}[ProductName] - 설치 마법사를 시작합니다."
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_218
 msgid  "[ProductName] Setup is preparing the Installation Wizard which will guide you through the program setup process.  Please wait."
-msgstr ""
+msgstr "{&Tahoma8}설치 마법사가 설치 과정으로 귀하를 안내할 준비를 하는 동안 잠시 기다려 주십시오."
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_219
 msgid  "< &Back"
@@ -2169,7 +2169,7 @@ msgstr "{&Tahoma8}마침(&F)"
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_222
 msgid  "Your system has not been modified. To install this program at a later time, please run the installation again."
-msgstr ""
+msgstr "{&Tahoma8}시스템이 변경되지 않았습니다. 나중에 이 프로그램을 설치하려면 설치 프로그램을 다시 실행하십시오."
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_223
 msgid  "Click Finish to exit the wizard."
@@ -2177,7 +2177,7 @@ msgstr "{&Tahoma8}마법사를 종료하려면 '마침'을 클릭합니다."
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_224
 msgid  "You can either keep any existing installed elements on your system to continue this installation at a later time or you can restore your system to its original state prior to the installation."
-msgstr ""
+msgstr "{&Tahoma8}시스템에 설치된 기존 요소를 보관하여 다음에 설치를 계속하거나, 설치 이전의 원래 상태로 시스템을 복원할 수 있습니다."
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_225
 msgid  "Click Restore or Continue Later to exit the wizard."
@@ -2189,7 +2189,7 @@ msgstr "{&TahomaBold10}설치 완료"
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_227
 msgid  "The wizard was interrupted before [ProductName] could be completely installed."
-msgstr ""
+msgstr "{&Tahoma8}[ProductName] - 설치가 완료되기 전에 설치 마법사가 중단되었습니다."
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_228
 msgid  "Progress done"
@@ -2213,11 +2213,11 @@ msgstr "{&Tahoma8}선택한 프로그램 구성요소가 제거됩니다."
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_236
 msgid  "Please wait while the Installation Wizard installs [ProductName]. This may take several minutes."
-msgstr ""
+msgstr "{&Tahoma8}설치 마법사가 [ProductName]을(를) 설치하는 동안 잠시 기다려 주십시오. 이 과정은 몇분 정도 걸립니다."
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_237
 msgid  "Please wait while the Installation Wizard uninstalls [ProductName]. This may take several minutes."
-msgstr ""
+msgstr "{&Tahoma8}설치 마법사가 [ProductName]을(를) 제거하는 동안 잠시 기다려 주십시오. 이 과정은 몇분 정도 걸립니다."
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_238
 msgid  "{&MSSansBold8}Installing [ProductName]"
@@ -2257,11 +2257,11 @@ msgstr "다음(&N) >"
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_248
 msgid  "The Installation Wizard will complete the installation of [ProductName] on your computer. To continue, click Next."
-msgstr ""
+msgstr "{&Tahoma8}설치 마법사가 귀하의 컴퓨터에 [ProductName]을(를) 설치했습니다. 계속하려면 다음을 클릭합니다."
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_249
 msgid  "The Installation Wizard will complete the suspended installation of [ProductName] on your computer. To continue, click Next."
-msgstr ""
+msgstr "{&Tahoma8}설치 마법사가 귀하의 컴퓨터에중단된 [ProductName] - 설치를 완료합니다. 계속하려면 다음을 클릭합니다"
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_250
 msgid  "{&TahomaBold10}Resuming the Installation Wizard for [ProductName]"
@@ -2281,7 +2281,7 @@ msgstr "주요 구성 요소가 설치됩니다. 대부분의 사용자에게 �
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_256
 msgid  "Choose which program features you want installed and where they will be installed. Recommended for advanced users."
-msgstr ""
+msgstr "설치할 프로그램 기능과 위치를 선택합니다. 고급 사용자에게 권장합니다."
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_257
 msgid  "Choose the setup type that best suits your needs."
@@ -2341,11 +2341,11 @@ msgstr "[ProductName] Writer/Web(&S)"
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_274
 msgid  "Set [DEFINEDPRODUCT] to be the default application for Microsoft Office file types."
-msgstr ""
+msgstr "[DEFINEDPRODUCT]을(를) Microsoft Office 파일 형식에 대한 기본 프로그램으로 설정합니다."
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_275
 msgid  "[ProductName] can be set as the default application to open Microsoft Office file types. This means, for instance, that if you double click on one of these files, [ProductName] will open it, not the program that opens it now."
-msgstr ""
+msgstr "[ProductName]을(를) Microsoft Office 파일 형식에 대한 기본 응용 프로그램으로 설정할 수 있습니다. 그러면, 해당 파일 중 하나를 더블 클릭할 때 지금 파일을 여는 프로그램이 아니라  [ProductName]이(가) 파일을 열게 됩니다."
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_276
 msgid  "File types"
@@ -2361,11 +2361,11 @@ msgstr "{&MSSansBold8}파일 유형"
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_300
 msgid  "A version of [DEFINEDPRODUCT] [DEFINEDVERSION] was found by the [ProductName] Installation Wizard. This version will be updated."
-msgstr ""
+msgstr "[DEFINEDPRODUCT] [DEFINEDVERSION] 버전을 [ProductName] 설치 마법사에서 찾았습니다. 이 버전은 업데이트됩니다."
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_301
 msgid  "The destination folder specified below does not contain a [DEFINEDPRODUCT] [DEFINEDVERSION] version."
-msgstr ""
+msgstr "아래 지정된 대상 폴더에 [DEFINEDPRODUCT] [DEFINEDVERSION] 버전이 없습니다."
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_302
 msgid  "A newer [DEFINEDPRODUCT] [DEFINEDVERSION] has been found."
@@ -2380,15 +2380,15 @@ msgid  "Check the destination folder."
 msgstr "대상 폴더를 확인하십시오."
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_305
-msgid  "To continue, click "Next"."
+msgid  "To continue, click \"Next\"."
 msgstr ""
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_306
-msgid  "To select a different version, click "Change". Otherwise click "Cancel" to abort the Installation Wizard."
+msgid  "To select a different version, click \"Change\". Otherwise click \"Cancel\" to abort the Installation Wizard."
 msgstr ""
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_307
-msgid  "To select a different folder, click "Change"."
+msgid  "To select a different folder, click \"Change\"."
 msgstr ""
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_308
@@ -2397,15 +2397,15 @@ msgstr "[ProductName] 설치 위치:"
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_309
 msgid  "If you are just trying out [ProductName], you probably don't want this to happen, so leave the boxes unchecked."
-msgstr ""
+msgstr "시험삼아 OpenOffice.org 3.0 beta 을(를) 사용해 보려 할 경우, 확인란을 선택 해제하여 이 기능을 사용하지 않을 수 있습니다."
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_317
 msgid  "No languages have been selected for installation. Click OK to select one or more languages for installation."
-msgstr ""
+msgstr "설치할 언어를 선택하지 않았습니다. 설치할 언어를 하나 이상 선택하려면 [확인]을 클릭하십시오."
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_318
 msgid  "No applications have been selected for installation. Click OK to select one or more applications for installation."
-msgstr ""
+msgstr "설치할 응용 프로그램을 선택하지 않았습니다. 설치할 응용 프로그램을 하나 이상 선택하려면 [확인]을 클릭하십시오."
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_319
 msgid  "Create a start link on desktop"

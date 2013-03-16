@@ -121,11 +121,11 @@ msgstr "កិច្ចព្រមព្រៀង​អាជ្ញាបណ្
 
 #: src/Localization/setupstrings.ulf#STRING_ACCEPTLICENSE2
 msgid  "Please read the following license agreement carefully."
-msgstr ""
+msgstr "សូម​អាន​​កិច្ច​ព្រម​ព្រៀង​អាជ្ញាបណ្ណ​​ខាង​ក្រោម​នេះ​ដោយ​ប្រុង​ប្រយ័ត្ន​ ។"
 
 #: src/Localization/setupstrings.ulf#STRING_ACCEPTLICENSE3
 msgid  "If you have read and accept all the terms of the entire Software License Agreement, click 'Accept License' to continue with the installation."
-msgstr ""
+msgstr "ប្រសិន​បើ​អ្នក​បាន​អាន ហើយ​យល់ព្រម​នឹង​លក្ខខណ្ឌ​នៃ​កិច្ចព្រមព្រៀង​អាជ្ញាបណ្ណ​របស់​កម្មវិធី​ទាំងមូល​នោះ សូម​ចុច 'យល់ព្រម​នឹង​អាជ្ញាបណ្ណ' ដើម្បី​បន្ត​ធ្វើការ​ដំឡើង ។"
 
 #: src/Localization/setupstrings.ulf#STRING_CHOOSEDIRECTORY1
 msgid  "Select Installation Directory"
@@ -153,11 +153,11 @@ msgstr "បង្កើត​ថត​ថ្មី"
 
 #: src/Localization/setupstrings.ulf#STRING_CHOOSEDIRECTORY5_QUESTION_MESSAGE
 msgid  "The directory '${DIR}' does not exist.\nDo you want to create it now?"
-msgstr ""
+msgstr "មិនមាន​ថត '${DIR}' ទេ ។\nតើ​អ្នក​ចង់​បង្កើត​វា​ឥឡូវទេ ?"
 
 #: src/Localization/setupstrings.ulf#STRING_CHOOSEDIRECTORY5_QUESTION_MESSAGE2
 msgid  "The directory '${DIR}' does not exist.\nDo you want to create it now or choose another directory?"
-msgstr ""
+msgstr "មិនមាន​ថត '${DIR}' ទេ ។\nតើ​អ្នក​ចង់​បង្កើត​វា​ឥឡូវ ឬ​ជ្រើស​ថត​ផ្សេងទៀត ?"
 
 #: src/Localization/setupstrings.ulf#STRING_CHOOSEDIRECTORY6
 msgid  "Select root directory"
@@ -185,7 +185,7 @@ msgstr "ជ្រើស​សមាសភាគ​បន្ថែម"
 
 #: src/Localization/setupstrings.ulf#STRING_CHOOSECOMPONENTS2
 msgid  "Marked components will be installed. Please mark them accordingly"
-msgstr ""
+msgstr "សមាសភាគ​ដែល​បាន​សម្គាល់​នឹង​ត្រូវបាន​ដំឡើង ។ សូម​សម្គាល់​ពួកវា​ឲ្យ​ស្របគ្នា"
 
 #: src/Localization/setupstrings.ulf#STRING_CHOOSECOMPONENTS3
 msgid  "Feature Description"
@@ -209,11 +209,11 @@ msgstr "ជ្រើស​ប្រភេទ​ដំឡើង"
 
 #: src/Localization/setupstrings.ulf#STRING_CHOOSEINSTALLATIONTYPE4
 msgid  "The main components will be installed. Recommended for most users."
-msgstr ""
+msgstr "សមាសភាគ​ចម្បង​នឹង​ត្រូវបាន​ដំឡើង ។ ជា​អនុសាសន៍​ចំពោះ​អ្នកប្រើ​ភាគច្រើន ។"
 
 #: src/Localization/setupstrings.ulf#STRING_CHOOSEINSTALLATIONTYPE5
 msgid  "You choose the components you want to install and where they are stored. Recommended for advanced users."
-msgstr ""
+msgstr "អ្នក​ជ្រើស​សមាសភាគ​ដែល​អ្នក​ចង់​ដំឡើង និង​កន្លែង​ដែល​ត្រូវ​ទុក​ពួកវា ។ ជា​អនុសាសន៍​ចំពោះ​អ្នកប្រើ​កម្រិត​ខ្ពស់ ។"
 
 #: src/Localization/setupstrings.ulf#STRING_CHOOSEINSTALLATIONTYPE6
 msgid  "Typical"
@@ -253,7 +253,7 @@ msgstr "ស្វាគមន៍"
 
 #: src/Localization/setupstrings.ulf#STRING_PROLOGUE2
 msgid  "This Installation Wizard will install ${PRODUCT_FULLNAME} on your computer."
-msgstr ""
+msgstr "អ្នក​ជំនួយការ​ដំឡើង​នេះ​នឹង​ដំឡើង ${PRODUCT_FULLNAME} នៅ​លើ​កុំព្យូទ័រ​របស់​អ្នក ។"
 
 #: src/Localization/setupstrings.ulf#STRING_PROLOGUE3
 msgid  "To continue, click 'Next'."
@@ -261,7 +261,7 @@ msgstr "ចុច 'បន្ទាប់' ដើម្បី​បន្ត ។
 
 #: src/Localization/setupstrings.ulf#STRING_PROLOGUE4
 msgid  "Note: This installation will be done without root privileges. Therefore you will have a reduced functionality (Java Runtime Environment (JRE) not installable, system integration not possible).\nClick 'Cancel' and change your privileges to root privileges, if you want to use the complete functionality."
-msgstr ""
+msgstr "ចំណាំ ៖ ការ​ដំឡើង​នេះ​នឹង​ធ្វើ​រួចរាល់​ដោយ​មិនត្រូវការ​សិទ្ធិ​ជា root ទេ ។ ដូច្នេះ អ្នក​នឹង​មាន​មុខងារ​ដែល​បាន​បង្រួញ (Java Runtime Environment (JRE) មិន​អាច​ដំឡើង​បាន​ទេ ដោយ​ការ​រួមបញ្ចូល​ប្រព័ន្ធ​មិនអាច​ធ្វើ​ទៅបាន) ។\nចុច 'បោះបង់' ហើយ​ផ្លាស់ប្ដូរ​សិទ្ធិ​របស់​អ្នក​ទៅ​ជា​សិទ្ធិ root ប្រសិន​បើ​អ្នក​ចង់​ប្រើ​មុខងារ​ពេញលេញ ។"
 
 #: src/Localization/setupstrings.ulf#STRING_INSTALLATIONCOMPLETED1
 msgid  "Installation Completed"
@@ -277,15 +277,15 @@ msgstr "ការ​ដំឡើង បាន​បរាជ័យ"
 
 #: src/Localization/setupstrings.ulf#STRING_INSTALLATIONCOMPLETED2
 msgid  "The Installation Wizard has successfully installed ${PRODUCT_FULLNAME} on your computer."
-msgstr ""
+msgstr "បាន​ដំឡើង​​អ្នក​ជំនួយការ​ដំឡើង​របស់​ ${PRODUCT_FULLNAME} នៅ​លើ​កុំព្យូទ័រ​របស់​អ្នក​ដោយ​ជោគជ័យ ។"
 
 #: src/Localization/setupstrings.ulf#STRING_INSTALLATIONCOMPLETED2_ABORT
 msgid  "The Installation Wizard was aborted. ${PRODUCT_NAME} is not installed on your computer."
-msgstr ""
+msgstr "បាន​បោះបង់​អ្នក​ជំនួយការ​ដំឡើង ។ ${PRODUCT_NAME} មិន​ត្រូវ​បាន​ដំឡើង​នៅ​លើ​កុំព្យូទ័រ​របស់​អ្នក​ឡើយ ។"
 
 #: src/Localization/setupstrings.ulf#STRING_INSTALLATIONCOMPLETED2_ERROR
 msgid  "An error has occurred. Thus the Installation Wizard could not install ${PRODUCT_NAME} on your computer successfully. Click 'Details...' for more information."
-msgstr ""
+msgstr "កំហុស​មួយ​បាន​កើតឡើង ។ ដូច្នេះ អ្នក​ជំនួយការ​ដំឡើង​មិនអាច​ដំឡើង ${PRODUCT_NAME នៅ​លើ​កុំព្យូទ័រ​របស់​អ្នក​ឡើយ ។ ព័ត៌មាន​បន្ថែម សូម​ចុច 'សេចក្ដី​លម្អិត...' ។"
 
 #: src/Localization/setupstrings.ulf#STRING_INSTALLATIONCOMPLETED3
 msgid  "Click 'Finish' to exit the Wizard."
@@ -297,15 +297,15 @@ msgstr "សេចក្តីលម្អិត..."
 
 #: src/Localization/setupstrings.ulf#STRING_UNINSTALLATIONPROLOGUE2
 msgid  "The ${PRODUCT_FULLNAME} Uninstallation Wizard will remove ${PRODUCT_FULLNAME} from your computer."
-msgstr ""
+msgstr "អ្នក​ជំនួយការ​លុប​របស់ ${PRODUCT_FULLNAME} នឹង​យក ${PRODUCT_FULLNAME} ចេញ​ពី​កុំព្យូទ័រ​របស់​អ្នក ។"
 
 #: src/Localization/setupstrings.ulf#STRING_UNINSTALLATION_PROLOGUE_WRONG_PRIVILEGES_CURRENT_ROOT
 msgid  "Sorry, wrong privileges. Installation was done with User privilges, but you have Root privileges."
-msgstr ""
+msgstr "សុំទោស សិទ្ធិ​មិនត្រឹមត្រូវ​ទេ ។ ការ​ដំឡើង​​គឺ​ធ្វើ​បាន​ដោយប្រើ​សិទ្ធិ​ជា​អ្នកប្រើ ប៉ុន្តែ​អ្នក​មាន​សិទ្ធិ​ជា Root ។"
 
 #: src/Localization/setupstrings.ulf#STRING_UNINSTALLATION_PROLOGUE_WRONG_PRIVILEGES_CURRENT_USER
 msgid  "Sorry, wrong privileges. Installation was done with Root privilges, but you have User privileges."
-msgstr ""
+msgstr "សុំទោស សិទ្ធិ​មិនត្រឹមត្រូវ ។ ការ​ដំឡើង​គឺ​ធ្វើ​បាន​ដោយប្រើ​សិទ្ធិ​ជា Root ប៉ុន្តែ​អ្នក​មាន​សិទ្ធិ​ជា​អ្នកប្រើ ។"
 
 #: src/Localization/setupstrings.ulf#STRING_CHOOSEUNINSTALLATIONTYPE1
 msgid  "Select the Type of Uninstallation"
@@ -321,7 +321,7 @@ msgstr "ដោយ​ផ្នែក"
 
 #: src/Localization/setupstrings.ulf#STRING_CHOOSEUNINSTALLATIONTYPE4
 msgid  "Completely removes ${PRODUCT_FULLNAME} and all its components from your system."
-msgstr ""
+msgstr "យក ${PRODUCT_FULLNAME} និង​សមាសភាគ​របស់​វា​ទាំងអស់​ចេញ​ទាំងស្រុង​ពី​ប្រព័ន្ធ​របស់​អ្នក ។"
 
 #: src/Localization/setupstrings.ulf#STRING_CHOOSEUNINSTALLATIONTYPE5
 msgid  "You choose the program features you want to remove."
@@ -333,7 +333,7 @@ msgstr "ពេញលេញ"
 
 #: src/Localization/setupstrings.ulf#STRING_CHOOSEUNINSTALLATIONCOMPONENTS2
 msgid  "Components marked with an X will be removed. Mark the components you want to remove."
-msgstr ""
+msgstr "សមាសភាគ​ដែល​មាន​សម្គាល់​ដោយ​សញ្ញា​ខ្វែង (X) នឹង​ត្រូវ​បាន​យក​ចេញ ។ សម្គាល់​សមាសភាគ​ដែល​អ្នក​ចង់​យកចេញ ។"
 
 #: src/Localization/setupstrings.ulf#STRING_UNINSTALLATIONIMMINENT1
 msgid  "Ready to Remove"
@@ -361,19 +361,19 @@ msgstr "ការ​លុប បាន​បរាជ័យ"
 
 #: src/Localization/setupstrings.ulf#STRING_UNINSTALLATIONCOMPLETED2
 msgid  "The Uninstallation Wizard has successfully removed ${PRODUCT_FULLNAME} from your computer."
-msgstr ""
+msgstr "អ្នក​ជំនួយការ​លុប បាន​យក ${PRODUCT_FULLNAME} ចេញ​ពី​កុំព្យូទ័រ​របស់​អ្នក​ដោយ​ជោគជ័យ ។"
 
 #: src/Localization/setupstrings.ulf#STRING_UNINSTALLATIONCOMPLETED2_PARTIAL
 msgid  "The Uninstallation Wizard has successfully removed the selected components of ${PRODUCT_NAME} from your computer."
-msgstr ""
+msgstr "អ្នក​ជំនួយការ​លុប បាន​យក​សមាសភាគ​ដែល​បាន​ជ្រើស​របស់​ ${PRODUCT_NAME} ​​ចេញ​​ពី​កុំព្យូទ័រ​របស់​អ្នក​ដោយ​ជោគជ័យ ។"
 
 #: src/Localization/setupstrings.ulf#STRING_UNINSTALLATIONCOMPLETED2_ABORT
 msgid  "The Uninstallation Wizard was aborted before completely removing ${PRODUCT_NAME} from your computer."
-msgstr ""
+msgstr "អ្នក​ជំនួយការ​លុប ​ត្រូវ​បាន​បោះបង់​មុនពេល​បញ្ចប់​ការ​យក ${PRODUCT_NAME} ចេញ​ពី​កុំព្យូទ័រ​របស់​អ្នក ។"
 
 #: src/Localization/setupstrings.ulf#STRING_UNINSTALLATIONCOMPLETED2_ERROR
 msgid  "An error has occurred. Thus the Uninstallation Wizard could not remove ${PRODUCT_NAME} from your computer successfully. Click 'Details...' for more information."
-msgstr ""
+msgstr "កំហុស​មួយ​បាន​កើតឡើង ។ ដូច្នេះ ​អ្នក​ជំនួយការ​លុប​មិន​អាច​យក ${PRODUCT_NAME} ចេញ​ពី​កុំព្យូទ័រ​របស់​អ្នក​បាន​ឡើយ ។ ព័ត៌មាន​បន្ថែម សូម​ចុច 'សេចក្ដី​លម្អិត...' ។"
 
 #: src/Localization/setupstrings.ulf#STRING_INSTALLERFACTORY_OS_NOT_SUPPORTED
 msgid  "Sorry, this Operating System is not supported yet."
@@ -385,15 +385,15 @@ msgstr "បាន​រកឃើញ​កំណែ ${PRODUCT_NAME} ចាស់�
 
 #: src/Localization/setupstrings.ulf#STRING_OLDER_VERSION_INSTALLED_REMOVE
 msgid  "You have to remove the older version of ${PRODUCT_NAME} before you can install the newer one."
-msgstr ""
+msgstr "អ្នក​ត្រូវ​តែ​យក​កំណែចាស់​របស់ ${PRODUCT_NAME} ចេញសិន មុនពេល​អ្នក​ដំឡើង​កំណែ​ដែល​ថ្មី ។"
 
 #: src/Localization/setupstrings.ulf#STRING_NEWER_VERSION_INSTALLED_FOUND
 msgid  "A newer version of ${PRODUCT_NAME} was found on your system in:"
-msgstr ""
+msgstr "បាន​រកឃើញ​កំណែ​ថ្មី​របស់ ${PRODUCT_NAME} នៅលើ​ប្រព័ន្ធ​របស់​អ្នក នៅក្នុង ៖"
 
 #: src/Localization/setupstrings.ulf#STRING_NEWER_VERSION_INSTALLED_REMOVE
 msgid  "You have to remove the newer version of ${PRODUCT_NAME} before you can install the older one."
-msgstr ""
+msgstr "អ្នក​ត្រូវ​តែ​យក​កំណែ​ថ្មីរបស់ ${PRODUCT_NAME} ចេញសិន មុនពេល​អ្នក​ដំឡើង​កំណែ​ដែល​ចាស់ជាង ។"
 
 #: src/Localization/setupstrings.ulf#STRING_NEWER_VERSION_DATABASE
 msgid  "Database"
@@ -409,7 +409,7 @@ msgstr "អ្នក​ប្រើ​ដែល​អ្នក​បាន​ច
 
 #: src/Localization/setupstrings.ulf#STRING_ROOT_PRIVILEGES_REQUIRED_2
 msgid  "Please log out and log back in as a user with system administrator rights."
-msgstr ""
+msgstr "សូម​ចេញ​សិន ហើយ​ចូល​ឡើង​វិញ​ជា​អ្នក​ប្រើ​ដែល​មាន​សិទ្ធិ​ជា​អ្នកគ្រប់គ្រង​ប្រព័ន្ធ ។"
 
 #: src/Localization/setupstrings.ulf#STRING_DISCSPACE_INSUFFICIENT
 msgid  "Not enough discspace available for installation."
@@ -425,7 +425,7 @@ msgstr "ទំហំថាស​ដែល​មាន"
 
 #: src/Localization/setupstrings.ulf#STRING_DISCSPACE_TIP
 msgid  "Please use another directory for installation or change your module selection."
-msgstr ""
+msgstr "សូម​ប្រើ​ថត​ផ្សេងទៀត​សម្រាប់​ការ​ដំឡើង ឬ​ផ្លាស់ប្ដូរ​ជម្រើស​ម៉ូឌុល​របស់​អ្នក ។"
 
 #: src/Localization/setupstrings.ulf#STRING_ANALYZING_DATABASE1
 msgid  "Analyzing ..."
@@ -433,11 +433,11 @@ msgstr "កំពុង​វិភាគ ..."
 
 #: src/Localization/setupstrings.ulf#STRING_ANALYZING_DATABASE2
 msgid  "Analyzing database\nPlease wait a moment ..."
-msgstr ""
+msgstr "កំពុង​វិភាគ​មូលដ្ឋាន​ទិន្នន័យ\nសូម​រង់ចាំ ..."
 
 #: src/Localization/setupstrings.ulf#STRING_PROLOGUE_1
 msgid  "Welcome to the Installation Wizard.<p>This wizard asks you to supply configuration settings.<p>At the bottom of each page are navigation buttons that let you move through the Installation Wizard:"
-msgstr ""
+msgstr "ស្វាគមន៍​ការ​មកកាន់​អ្នក​ជំនួយការ​ដំឡើង ។<p>អ្នក​ជំនួយការ​នេះ​ស្នើ​ឲ្យ​អ្នក​ផ្ដល់​នូវ​ការ​កំណត់​រចនា​សម្ព័ន្ធ ។<p>នៅ​បាត​ទំព័រ​នីមួយៗ​គឺ​ជា​ប៊ូតុង​រុករក ដែល​អនុញ្ញាត​ឲ្យ​អ្នក​ផ្លាស់ទី​តាម​អ្នក​ជំនួយការ​ដំឡើង ៖"
 
 #: src/Localization/setupstrings.ulf#STRING_PROLOGUE_2
 msgid  "'Back' returns you to the previous page."
@@ -453,15 +453,15 @@ msgstr "'បោះបង់' បញ្ចប់​អ្នក​ជំនួយ
 
 #: src/Localization/setupstrings.ulf#STRING_PROLOGUE_5
 msgid  "'Help' displays the Help with further information about the page currently displayed."
-msgstr ""
+msgstr "'ជំនួយ' បង្ហាញ​ជំនួយ ដែល​មាន​ព័ត៌មាន​បន្ថែម​អំពី​ទំព័រ​ដែល​បាន​បង្ហាញ​បច្ចុប្បន្ន ។"
 
 #: src/Localization/setupstrings.ulf#STRING_PROLOGUE_6
 msgid  "'OK' exits the Help page and returns you to the Installation Wizard."
-msgstr ""
+msgstr "'យល់ព្រម' ចេញ​ពី​ទំព័រ​ជំនួយ ហើយ​នាំអ្នក​ត្រឡប់ទៅ​អ្នក​ជំនួយការ​ដំឡើង​វិញ ។"
 
 #: src/Localization/setupstrings.ulf#STRING_UNINSTALLATIONPROLOGUE_1
 msgid  "Welcome to the Uninstallation Wizard.<p>This wizard asks you to supply configuration settings.<p>At the bottom of each page are navigation buttons that let you move through the Uninstallation Wizard:"
-msgstr ""
+msgstr "ស្វាគមន៍​ការ​មកកាន់​អ្នក​ជំនួយការ​លុប ។<p>អ្នក​ជំនួយការ​នេះ​ស្នើ​ឲ្យ​អ្នក​ផ្ដល់​នូវ​ការ​កំណត់​រចនា​សម្ព័ន្ធ ។<p>នៅ​បាត​ទំព័រ​នីមួយៗ គឺ​ជា​ប៊ូតុង​រុករក​ដែល​អនុញ្ញាត​ឲ្យ​អ្នក​ផ្លាស់ទី​តាម​អ្នក​ជំនួយការ​លុប​បាន ។"
 
 #: src/Localization/setupstrings.ulf#STRING_UNINSTALLATIONPROLOGUE_2
 msgid  "'Back' returns you to the previous page."
@@ -477,63 +477,63 @@ msgstr "'បោះបង់' បញ្ចប់​អ្នក​ជំនួយ
 
 #: src/Localization/setupstrings.ulf#STRING_UNINSTALLATIONPROLOGUE_5
 msgid  "'Help' displays the Help with further information about the page currently displayed."
-msgstr ""
+msgstr "'ជំនួយ' បង្ហាញ​ជំនួយ ដែល​មាន​ព័ត៌មាន​បន្ថែម​អំពី​ទំព័រ​ដែល​បាន​បង្ហាញ​បច្ចុប្បន្ន ។"
 
 #: src/Localization/setupstrings.ulf#STRING_UNINSTALLATIONPROLOGUE_6
 msgid  "'OK' exits the Help page and returns you to the Uninstallation Wizard."
-msgstr ""
+msgstr "'យល់ព្រម' ចេញ​ពី​ទំព័រ​ជំនួយ ហើយ​នាំអ្នក​ត្រឡប់​ទៅកាន់​អ្នក​ជំនួយការ​លុប​វិញ ។"
 
 #: src/Localization/setupstrings.ulf#STRING_ACCEPTLICENSE_1
 msgid  "Before you install this product, you must read and accept the entire Software License Agreement under which this software is licensed for your use."
-msgstr ""
+msgstr "មុនពេល​អ្នក​ដំឡើង​ផលិតផល​នេះ អ្នក​ត្រូវតែ​អាន ហើយ​និង​យល់ព្រម​នឹង​កិច្ចព្រមព្រៀង​អាជ្ញាបណ្ណ​របស់​កម្មវិធី​ទាំងមូល ដែល​កម្មវិធី​នេះ​ត្រូវ​បាន​អនុញ្ញាត​ចំពោះ​ការ​ប្រើប្រាស់​របស់​អ្នក ។"
 
 #: src/Localization/setupstrings.ulf#STRING_ACCEPTLICENSE_2
 msgid  "If you have read and accept all the terms of the entire Software License Agreement, click 'Accept License' to continue with the installation."
-msgstr ""
+msgstr "ប្រសិន​បើ​អ្នក​បាន​អាន ហើយ​យល់ព្រម​នឹង​លក្ខខណ្ឌ​នៃ​កិច្ចព្រមព្រៀង​អាជ្ញាបណ្ណ​របស់​កម្មវិធី​ទាំងមូល​នោះ សូម​ចុច 'យល់ព្រម​នឹង​អាជ្ញាបណ្ណ' ដើម្បី​បន្ត​ធ្វើការ​ដំឡើង ។"
 
 #: src/Localization/setupstrings.ulf#STRING_ACCEPTLICENSE_3
 msgid  "If you do not accept all the terms of the Software License Agreement, click 'Decline' to end the Installation Wizard without installing this product."
-msgstr ""
+msgstr "ប្រសិន​បើ​អ្នក​មិនយល់ព្រម​នឹង​លក្ខខណ្ឌ​នៃ​កិច្ចព្រមព្រៀង​អាជ្ញាបណ្ណ​របស់​កម្មវិធី​ទេ សូម​ចុច 'បដិសេធ' ដើម្បី​បញ្ចប់​អ្នក​ជំនួយការ​ដំឡើង​ដោយ​មិន​ដំឡើង​ផលិតផល​នេះ ។"
 
 #: src/Localization/setupstrings.ulf#STRING_CHOOSEINSTALLATIONTYPE_1
 msgid  "Select the type of product installation to perform from the following choices. This will determine how much information you need to provide for product configuration."
-msgstr ""
+msgstr "ជ្រើស​ប្រភេទ​ដំឡើង​ផលិតផល ពី​ជម្រើស​ខាងក្រោម ។ វា​នឹង​កំណត់​ចំនួន​ព័ត៌មាន​ដែល​អ្នកត្រូវ​ផ្ដល់​សម្រាប់​ការ​កំណត់​រចនា​សម្ព័ន្ធ​ផលិតផល ។"
 
 #: src/Localization/setupstrings.ulf#STRING_CHOOSEDIRECTORY_1
 msgid  "It is recommended that you install this product in the directory suggested by this Installation Wizard. <p>To choose a different location, click 'Browse...' or specify the full path of the directory to use in the text box below. <p>If this product is already installed, you cannot change the destination directory."
-msgstr ""
+msgstr "វា​ផ្ដល់​អនុសាសន៍​ឲ្យ​អ្នក​ដំឡើង​ផលិតផល​នេះ​ក្នុង​ថត​ដែល​បាន​ផ្ដល់យោបល់​ដោយ​អ្នក​ជំនួយការ​ដំឡើង​នេះ ។ <p>ដើម្បី​ជ្រើស​ទីតាំង​ផ្សេងទៀត សូម​ចុច 'រកមើល...' ឬ​បញ្ជាក់​ផ្លូវ​ពេញលេញ​របស់ថត​ដើម្បី​ប្រើ​នៅ​ក្នុង​ប្រអប់​អត្ថបទ​ខាងក្រោម ។ <p>ប្រសិន​បើ​បាន​ដំឡើង​ផលិតផល​នេះ​រួចហើយ នោះ​អ្នក​មិនអាច​ផ្លាស់ប្ដូរ​ថត​ទិសដៅ​បាន​ទេ ។"
 
 #: src/Localization/setupstrings.ulf#STRING_CHOOSECOMPONENTS_1
 msgid  "Components marked in color will be installed. Click the icon of a component to mark or unmark the component.<p>All already installed components cannot be selected for installation."
-msgstr ""
+msgstr "សមាសភាគ​ដែល​បាន​សម្គាល់​ជា​ពណ៌ នឹង​ត្រូវ​បាន​ដំឡើង ។ ចុច​លើ​រូបតំណាង​របស់​សមាសភាគ ដើម្បី​សម្គាល់ ឬ​ដោះសម្គាល់​សមាសភាគ​នោះ ។<p>សមាសភាគ​ដែល​បាន​ដំឡើង​រួច​ទាំងអស់​មិនអាច​ជ្រើស​ដើម្បី​ដំឡើង​បាន​ទៀតទេ ។"
 
 #: src/Localization/setupstrings.ulf#STRING_INSTALLATIONIMMINENT_1
 msgid  "The listed components are ready for installation based on your configuration settings. <p>If you are satisfied with your selection, click 'Install Now' to begin. <p>To check or modify your settings on the previous pages, click 'Back'."
-msgstr ""
+msgstr "សមាសភាគ​ដែល​បាន​រាយ​គឺ​រួចរាល់​ដើម្បី​ដំឡើង​រួចហើយ ដែល​មាន​មូលដ្ឋាន​លើការ​កំណត់​រចនា​សម្ព័ន្ធ​របស់​អ្នក ។ <p>ប្រសិន​បើ​អ្នក​បានជ្រើស​អ្វី​ដែល​អ្នក​ចង់​ដំឡើង​រួចហើយ គឺ​ត្រូវ​ចុច 'ដំឡើង​ឥឡូវ' ដើម្បី​ចាប់ផ្ដើម ។ <p>ដើម្បី​ពិនិត្យ ឬ​កែប្រែ​ការ​កំណត់​របស់​អ្នក​នៅ​ទំព័រ​មុន គឺ​ត្រូវ​ចុច 'ថយក្រោយ' ។"
 
 #: src/Localization/setupstrings.ulf#STRING_UNINSTALLATIONIMMINENT_1
 msgid  "The listed components are ready for uninstallation based on your configuration settings. <p>If you are satisfied with your selection, click 'Remove Now' to begin. <p>To check or modify your settings on the previous pages, click 'Back'."
-msgstr ""
+msgstr "សមាសភាគ​ដែល​បាន​រាយ គឺ​រួចរាល់​ដើម្បី​លុប​ហើយ ដែល​មាន​មូលដ្ឋាន​ការ​កំណត់​រចនាសម្ព័ន្ធ​។ <p>ប្រសិន​បើ​អ្នក​បាន​ជ្រើស​នូវអ្វី​ដែល​អ្នក​ចង់លុប​រួចហើយ ត្រូវ​ចុច 'យកចេញ​ឥឡូវ' ដើម្បី​ចាប់ផ្ដើម ។ <p>ដើម្បី​ពិនិត្យ ឬ​កែប្រែ​ការ​កំណត់​របស់​អ្នក​នៅ​ទំព័រ​មុន គឺ​ត្រូវ​ចុច 'ថយក្រោយ' ។"
 
 #: src/Localization/setupstrings.ulf#STRING_INSTALLATIONONGOING_1
 msgid  "This page indicates the progress of the installation with the aid of a progress bar. To abort the installation process, click 'Stop'."
-msgstr ""
+msgstr "ទំព័រ​នេះ​បង្ហាញ​ពី​វឌ្ឍនភាព​នៃ​ការ​ដំឡើង ដែល​មាន​របារ​វឌ្ឍនភាព​ជំនួយ ។ ដើម្បី​បោះបង់​ដំណើរការ​ដំឡើង សូម​ចុច 'បញ្ឈប់' ។"
 
 #: src/Localization/setupstrings.ulf#STRING_UNINSTALLATIONONGOING_1
 msgid  "This page indicates the progress of the uninstallation with the aid of a progress bar. To abort the uninstallation, click 'Stop'."
-msgstr ""
+msgstr "ទំព័រ​នេះ​បង្ហាញ​ពី​វឌ្ឍនភាព​នៃ​ការ​លុប ដែល​មាន​របារ​វឌ្ឍនភាព​ជា​ជំនួយ ។ ដើម្បី​បោះបង់​ការ​លុប សូម​ចុច 'បញ្ឈប់' ។"
 
 #: src/Localization/setupstrings.ulf#STRING_CHOOSEUNINSTALLATIONTYPE_1
 msgid  "Complete: This will remove all installed components of your version.<p>Partial: This removes only the components you will choose out of the components list."
-msgstr ""
+msgstr "ពេញលេញ ៖ វា​នឹង​យក​សមាសភាគ​​នៃ​កំណែរបស់​អ្នក​ដែល​បាន​ដំឡើង​ទាំងអស់​ចេញ ។<p>ដោយ​ផ្នែក ៖ វា​យក​តែ​សមាសភាគ​​ណា​ដែល​អ្នកជ្រើស​ក្នុង​បញ្ជី​សមាសភាគ​ប៉ុណ្ណោះ ។"
 
 #: src/Localization/setupstrings.ulf#STRING_CHOOSEUNINSTALLATIONCOMPONENTS_1
 msgid  "Components marked with an X will be removed. Click next to a component to mark or unmark it with an X."
-msgstr ""
+msgstr "សមាសភាគ​ដែល​បាន​សម្គាល់​ដោយ​សញ្ញា​ខ្វែង (X) នឹង​ត្រូវ​បាន​យកចេញ ។ ចុច​នៅ​ជាប់​នឹង​សមាសភាគ ដើម្បី​សម្គាល់ ឬ​ដោះសម្គាល់​ ។"
 
 #: src/Localization/setupstrings.ulf#STRING_PACKAGEFORMAT_NOT_SUPPORTED
 msgid  "This package format is currently not supported for your operating system!"
-msgstr ""
+msgstr "បច្ចុប្បន្ន ទ្រង់ទ្រាយ​កញ្ចប់​នេះ​មិនត្រូវបាន​គាំទ្រ​សម្រាប់​ប្រព័ន្ធ​ប្រតិបត្តិការ​របស់​អ្នកឡើយ !"
 
 #: src/Localization/setupstrings.ulf#STRING_OPERATING_SYSTEM
 msgid  "Operating system"
@@ -553,7 +553,7 @@ msgstr "គ្មាន​សមាសភាគ​ដែល​ត្រូវ​
 
 #: src/Localization/setupstrings.ulf#STRING_NO_COMPONENTS_SELECTED_2
 msgid  "Click 'OK' to select one or more components for installation or to exit the Installation Wizard."
-msgstr ""
+msgstr "ចុច 'យល់ព្រម' ដើម្បី​ជ្រើស​សមាសភាគ​មួយ ឬ​ច្រើន​ដើម្បី​ដំឡើង ឬ​ដើម្បី​ចេញ​ពី​អ្នក​ជំនួយការ​ដំឡើង ។"
 
 #: src/Localization/setupstrings.ulf#STRING_NO_LANGUAGE_SELECTED_1
 msgid  "No languages have been selected for installation."
@@ -561,7 +561,7 @@ msgstr "គ្មាន​ភាសា​ដែល​បាន​ជ្រើស
 
 #: src/Localization/setupstrings.ulf#STRING_NO_LANGUAGE_SELECTED_2
 msgid  "Click 'OK' to select one or more languages for installation or to exit the Installation Wizard."
-msgstr ""
+msgstr "ចុច 'យល់ព្រម' ដើម្បី​ជ្រើស​ភាសា​មួយ ឬ​ច្រើន​ដើម្បី​ដំឡើង ឬ​ដើម្បី​ចេញ​ពី​អ្នក​ជំនួយការ​ដំឡើង ។"
 
 #: src/Localization/setupstrings.ulf#STRING_NO_APPLICATION_SELECTED_1
 msgid  "No applications have been selected for installation."
@@ -569,7 +569,7 @@ msgstr "គ្មាន​កម្មវិធី​ដែល​ត្រូវ
 
 #: src/Localization/setupstrings.ulf#STRING_NO_APPLICATION_SELECTED_2
 msgid  "Click 'OK' to select one or more application for installation or to exit the Installation Wizard."
-msgstr ""
+msgstr "ចុច 'យល់ព្រម' ដើម្បី​ជ្រើស​កម្មវិធី​មួយ ឬ​ច្រើន​ដើម្បី​ដំឡើង ឬ​ដើម្បី​ចេញ​ពី​អ្នក​ជំនួយការ​ដំឡើង ។"
 
 #: src/Localization/setupstrings.ulf#STRING_NOTHING_TO_UNINSTALL
 msgid  "Nothing to uninstall"
@@ -581,7 +581,7 @@ msgstr "គ្មាន​សមាសភាគ​ដែល​ត្រូវ​
 
 #: src/Localization/setupstrings.ulf#STRING_NO_UNINSTALLCOMPONENTS_SELECTED_2
 msgid  "Click 'OK' to select one or more components for uninstallation or to exit the Uninstallation Wizard."
-msgstr ""
+msgstr "ចុច 'យល់ព្រម' ដើម្បី​ជ្រើស​សមាសភាគ​មួយ ឬ​ច្រើន​ដើម្បី​លុប ឬ​ចេញ​ពី​អ្នក​ជំនួយការ​លុប ។"
 
 #: src/Localization/setupstrings.ulf#STRING_ALL_LANGUAGECOMPONENTS_SELECTED_1
 msgid  "All language components have been selected for uninstallation."
@@ -589,7 +589,7 @@ msgstr "គ្មាន​សមាសភាគ​ភាសា​ដែល​ត
 
 #: src/Localization/setupstrings.ulf#STRING_ALL_LANGUAGECOMPONENTS_SELECTED_2
 msgid  "Click 'OK' to select one or more language components not for uninstallation or to exit the Uninstallation Wizard."
-msgstr ""
+msgstr "ចុច 'យល់ព្រម' ដើម្បី​ជ្រើស​សមាសភាគ​ភាសា​មួយ ឬ​ច្រើន​មិន​សម្រាប់​លុប ឬ​ចេញ​ពី​អ្នក​ជំនួយការ​លុប​ទេ ។"
 
 #: src/Localization/setupstrings.ulf#STRING_ALL_APPLICATIONCOMPONENTS_SELECTED_1
 msgid  "All application components have been selected for uninstallation."
@@ -597,7 +597,7 @@ msgstr "ត្រូវតែ​ជ្រើស​សមាសភាគ​ភា
 
 #: src/Localization/setupstrings.ulf#STRING_ALL_APPLICATIONCOMPONENTS_SELECTED_2
 msgid  "Click 'OK' to select one or more application components not for uninstallation or to exit the Uninstallation Wizard."
-msgstr ""
+msgstr "ចុច 'យល់ព្រម' ដើម្បី​ជ្រើស​សមាសភាគ​កម្មវិធី​មួយ ឬ​ច្រើន​មិន​សម្រាប់ការ​លុប ឬ​ចេញ​ពី​អ្នក​ជំនួយការ​លុប​ឡើយ ។"
 
 #: src/Localization/setupstrings.ulf#STRING_CHANGE_SELECTION
 msgid  "Please change selection"

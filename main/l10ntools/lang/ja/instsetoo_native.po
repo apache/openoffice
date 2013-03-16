@@ -229,11 +229,11 @@ msgstr "{[ProductName] }のセットアップに失敗しました。"
 
 #: inc_openoffice/windows/msi_languages/Error.ulf#OOO_ERROR_25
 msgid  "Error reading from file: [2]. {{ System error [3].}}  Verify that the file exists and that you can access it."
-msgstr ""
+msgstr "ファイル [2] からの読み取りでエラーが発生しました。{{ システムエラー [3]。}} ファイルが存在し、このファイルにアクセスできるか確認してください。"
 
 #: inc_openoffice/windows/msi_languages/Error.ulf#OOO_ERROR_26
 msgid  "Cannot create the file [3].  A directory with this name already exists.  Cancel the installation and try installing to a different location."
-msgstr ""
+msgstr "ファイル [3] を作成できません。同じ名前のディレクトリがすでに存在します。インストールを取り消して、別の場所へインストールしてください。"
 
 #: inc_openoffice/windows/msi_languages/Error.ulf#OOO_ERROR_27
 msgid  "Please insert the disk: [2]"
@@ -241,43 +241,43 @@ msgstr "次のディスクを挿入してください :[2]。"
 
 #: inc_openoffice/windows/msi_languages/Error.ulf#OOO_ERROR_28
 msgid  "The installer has insufficient privileges to access this directory: [2].  The installation cannot continue.  Log on as an administrator or contact your system administrator."
-msgstr ""
+msgstr "インストーラにはディレクトリ [2] にアクセスするための十分な特権がありません。インストールを続行できません。管理者としてログオンするか、またはシステム管理者に問い合わせてください。"
 
 #: inc_openoffice/windows/msi_languages/Error.ulf#OOO_ERROR_29
 msgid  "Error writing to file [2].  Verify that you have access to that directory."
-msgstr ""
+msgstr "ファイル [2] への書き込みでエラーが発生しました。このディレクトリへのアクセス権があるか確認してください。"
 
 #: inc_openoffice/windows/msi_languages/Error.ulf#OOO_ERROR_30
 msgid  "Error reading from file [2].  Verify that the file exists and that you can access it."
-msgstr ""
+msgstr "ファイル [2] からの読み取りでエラーが発生しました。ファイルが存在し、このファイルにアクセスできるか確認してください。"
 
 #: inc_openoffice/windows/msi_languages/Error.ulf#OOO_ERROR_31
 msgid  "Another application has exclusive access to the file [2].  Please shut down all other applications, then click Retry."
-msgstr ""
+msgstr "ほかのアプリケーションがファイル [2] を排他的に使用しています。ほかのアプリケーションをすべて終了してから、「再試行」をクリックしてください。"
 
 #: inc_openoffice/windows/msi_languages/Error.ulf#OOO_ERROR_32
 msgid  "There is not enough disk space to install the file [2].  Free some disk space and click Retry, or click Cancel to exit."
-msgstr ""
+msgstr "ディスク領域が足りないため、ファイル [2] をインストールできません。ディスク領域を解放してから、「再試行」をクリックしてください。終了する場合は「キャンセル」をクリックします。"
 
 #: inc_openoffice/windows/msi_languages/Error.ulf#OOO_ERROR_33
 msgid  "Source file not found: [2].  Verify that the file exists and that you can access it."
-msgstr ""
+msgstr "ソースファイル [2] が見つかりませんでした。ファイルが存在し、このファイルにアクセスできるか確認してください。"
 
 #: inc_openoffice/windows/msi_languages/Error.ulf#OOO_ERROR_34
 msgid  "Error reading from file: [3]. {{ System error [2].}}  Verify that the file exists and that you can access it."
-msgstr ""
+msgstr "ファイル [3] からの読み込みに失敗しました。{{ システム エラー [2]。}} ファイルが存在するかどうか、およびこのファイルへのアクセス権があるかどうかを確認してください。"
 
 #: inc_openoffice/windows/msi_languages/Error.ulf#OOO_ERROR_35
 msgid  "Error writing to file: [3]. {{ System error [2].}}  Verify that you have access to that directory."
-msgstr ""
+msgstr "ファイル [3] への書き込みに失敗しました。{{ システム エラー[2]。}} このディレクトリへのアクセス権があることを確認してください。"
 
 #: inc_openoffice/windows/msi_languages/Error.ulf#OOO_ERROR_36
 msgid  "Source file not found{{(cabinet)}}: [2].  Verify that the file exists and that you can access it."
-msgstr ""
+msgstr "ソース ファイルが見つかりません。{{(cabinet)}} : [2]。 ファイルが存在するかどうか、およびこのファイルへのアクセス権があるかどうかを確認してください。"
 
 #: inc_openoffice/windows/msi_languages/Error.ulf#OOO_ERROR_37
 msgid  "Cannot create the directory [2].  A file with this name already exists.  Please rename or remove the file and click Retry, or click Cancel to exit."
-msgstr ""
+msgstr "ディレクトリ '[2]' を作成できません。この名前を持つファイルがすでに存在しています。ファイルの名前を変更するか、削除してから、「再試行」をクリックしてください。または「キャンセル」をクリックして、終了してください。"
 
 #: inc_openoffice/windows/msi_languages/Error.ulf#OOO_ERROR_38
 msgid  "The volume [2] is currently unavailable.  Please select another."
@@ -305,7 +305,7 @@ msgstr "ディレクトリ [2] を作成中に、ネットワーク エラーが
 
 #: inc_openoffice/windows/msi_languages/Error.ulf#OOO_ERROR_44
 msgid  "A network error occurred while attempting to open the source file cabinet [2]."
-msgstr ""
+msgstr "ソース ファイル キャビネット [2] を開いている途中で、ネットワーク エラーが発生しました。"
 
 #: inc_openoffice/windows/msi_languages/Error.ulf#OOO_ERROR_45
 msgid  "The specified path is too long [2]."
@@ -341,67 +341,67 @@ msgstr "ドライブが正しくありません : [2]"
 
 #: inc_openoffice/windows/msi_languages/Error.ulf#OOO_ERROR_53
 msgid  "Error applying patch to file [2].  It has probably been updated by other means, and can no longer be modified by this patch.  For more information contact your patch vendor.  {{System Error: [3]}}"
-msgstr ""
+msgstr "ファイル [2] にパッチを適用する時にエラーが発生しました。おそらく別の方法によってアップデートされたためです。このパッチで変更することはできません。詳細は、このパッチのベンダーにお問い合わせください。 {{システム エラー : [3]}}"
 
 #: inc_openoffice/windows/msi_languages/Error.ulf#OOO_ERROR_54
 msgid  "Could not create key [2]. {{ System error [3].}}  Verify that you have sufficient access to that key, or contact your support personnel."
-msgstr ""
+msgstr "キー [2] を作成できません。{{ システム エラー [3]。}} そのキーへの十分なアクセス権を持っているかどうかを確認するか、またはサポート担当者へお問い合わせください。"
 
 #: inc_openoffice/windows/msi_languages/Error.ulf#OOO_ERROR_55
 msgid  "Could not open key: [2]. {{ System error [3].}}  Verify that you have sufficient access to that key, or contact your support personnel."
-msgstr ""
+msgstr "キー [2] を開くことができません。{{ システム エラー [3]。}} そのキーへの十分なアクセス権を持っているかどうかを確認するか、またはサポート担当者へお問い合わせください。"
 
 #: inc_openoffice/windows/msi_languages/Error.ulf#OOO_ERROR_56
 msgid  "Could not delete value [2] from key [3]. {{ System error [4].}}  Verify that you have sufficient access to that key, or contact your support personnel."
-msgstr ""
+msgstr "キー [3] から 値 [2] を削除できません。{{ システム エラー [4]。}}  そのキーへの十分なアクセス権を持っているかどうかを確認するか、またはサポート担当者へお問い合わせください。"
 
 #: inc_openoffice/windows/msi_languages/Error.ulf#OOO_ERROR_57
 msgid  "Could not delete key [2]. {{ System error [3].}}  Verify that you have sufficient access to that key, or contact your support personnel."
-msgstr ""
+msgstr "キー [2] を削除できません。{{ システム エラー [3]。}} そのキーへの十分なアクセス権を持っているかどうかを確認するか、またはサポート担当者へお問い合わせください。"
 
 #: inc_openoffice/windows/msi_languages/Error.ulf#OOO_ERROR_58
 msgid  "Could not read value [2] from key [3]. {{ System error [4].}}  Verify that you have sufficient access to that key, or contact your support personnel."
-msgstr ""
+msgstr "キー [3] から 値 [2] を読み込めません。{{ システム エラー [4]。}}  そのキーへの十分なアクセス権を持っているかどうかを確認するか、またはサポート担当者へお問い合わせください。"
 
 #: inc_openoffice/windows/msi_languages/Error.ulf#OOO_ERROR_59
 msgid  "Could not write value [2] to key [3]. {{ System error [4].}}  Verify that you have sufficient access to that key, or contact your support personnel."
-msgstr ""
+msgstr "値 [2] をキー [3] に書き込めません。{{ システム エラー [4]。}}  そのキーへの十分なアクセス権を持っているかどうかを確認するか、またはサポート担当者へお問い合わせください。"
 
 #: inc_openoffice/windows/msi_languages/Error.ulf#OOO_ERROR_60
 msgid  "Could not get value names for key [2]. {{ System error [3].}}  Verify that you have sufficient access to that key, or contact your support personnel."
-msgstr ""
+msgstr "キー [2] に対する値の名前を得ることができません。 {{ システム エラー [3]。}}  そのキーへの十分なアクセス権を持っているかどうかを確認するか、またはサポート担当者へお問い合わせください。"
 
 #: inc_openoffice/windows/msi_languages/Error.ulf#OOO_ERROR_61
 msgid  "Could not get sub key names for key [2]. {{ System error [3].}}  Verify that you have sufficient access to that key, or contact your support personnel."
-msgstr ""
+msgstr "キー [2] に対するサブ キー名を得ることができません。 {{ システム エラー [3]。}}  そのキーへの十分なアクセス権を持っているかどうかを確認するか、またはサポート担当者へお問い合わせください。"
 
 #: inc_openoffice/windows/msi_languages/Error.ulf#OOO_ERROR_62
 msgid  "Could not read security information for key [2]. {{ System error [3].}}  Verify that you have sufficient access to that key, or contact your support personnel."
-msgstr ""
+msgstr "キー [2] のセキュリティ情報が読み取れませんでした。{{ システムエラー [3]。}} このキーへの十分なアクセス権があるか確認してください。またはサポート担当者に問い合わせてください。"
 
 #: inc_openoffice/windows/msi_languages/Error.ulf#OOO_ERROR_63
 msgid  "Could not increase the available registry space. [2] KB of free registry space is required for the installation of this application."
-msgstr ""
+msgstr "使用可能なレジストリ領域を増やすことができませんでした。このアプリケーションをインストールするには、[2]KB のレジストリ領域が必要です。"
 
 #: inc_openoffice/windows/msi_languages/Error.ulf#OOO_ERROR_64
 msgid  "Another installation is in progress. You must complete that installation before continuing this one."
-msgstr ""
+msgstr "別のインストールが現在行われています。新たにインストールを行うには、まずこのインストールを完了する必要があります。"
 
 #: inc_openoffice/windows/msi_languages/Error.ulf#OOO_ERROR_65
 msgid  "Error accessing secured data. Please make sure the Windows Installer is configured properly and try the installation again."
-msgstr ""
+msgstr "セキュリティで保護されているデータにアクセスするときに、エラーが発生しました。Microsoft Windows インストーラが正しく設定されていることを確認してから、再度インストールを実行してください。"
 
 #: inc_openoffice/windows/msi_languages/Error.ulf#OOO_ERROR_66
 msgid  "User [2] has previously initiated an installation for product [3].  That user will need to run that installation again before using that product.  Your current installation will now continue."
-msgstr ""
+msgstr "ユーザー [2] によって、すでに製品 [3] のインストールが開始されています。この製品を使う前に、このユーザーは再度インストールを実行する必要があります。現在のインストールはこのまま続行されます。"
 
 #: inc_openoffice/windows/msi_languages/Error.ulf#OOO_ERROR_67
 msgid  "User [2] has previously initiated an installation for product [3].  That user will need to run that installation again before using that product."
-msgstr ""
+msgstr "ユーザー [2] によって、すでに製品 [3] のインストールが開始されています。この製品を使う前に、このユーザーは再度インストールを実行する必要があります。"
 
 #: inc_openoffice/windows/msi_languages/Error.ulf#OOO_ERROR_68
 msgid  "Out of disk space -- Volume: '[2]'; required space: [3] KB; available space: [4] KB.  Free some disk space and retry."
-msgstr ""
+msgstr "ボリューム: '[2]' のディスク容量が不足しています。必要なディスク容量は [3] KB、使用可能なディスク容量は [4] KB です。 ディスク領域を一部解放して、再試行してください。"
 
 #: inc_openoffice/windows/msi_languages/Error.ulf#OOO_ERROR_69
 msgid  "Are you sure you want to cancel?"
@@ -409,15 +409,15 @@ msgstr "キャンセルしますか。"
 
 #: inc_openoffice/windows/msi_languages/Error.ulf#OOO_ERROR_70
 msgid  "The file [2][3] is being held in use {by the following process: Name: [4], ID: [5], Window Title: [6]}.  Close that application and retry."
-msgstr ""
+msgstr "ファイル [2][3] は次のプロセスにより使われています {プロセス名:[4]、ID:[5]、ウィンドウタイトル:[6]}。このアプリケーションを終了し、再度実行してください。"
 
 #: inc_openoffice/windows/msi_languages/Error.ulf#OOO_ERROR_71
 msgid  "The product [2] is already installed, preventing the installation of this product.  The two products are incompatible."
-msgstr ""
+msgstr "[2] がすでにインストールされているため、この製品はインストールできません。この 2 つの製品を同じコンピュータにインストールすることはできません。"
 
 #: inc_openoffice/windows/msi_languages/Error.ulf#OOO_ERROR_72
 msgid  "Out of disk space -- Volume: [2]; required space: [3] KB; available space: [4] KB.  If rollback is disabled, enough space is available. Click Cancel to quit, Retry to check available disk space again, or Ignore to continue without rollback."
-msgstr ""
+msgstr "ディスク領域が不足しています -- ボリューム:[2]; 必要な領域:[3]KB; 利用可能な領域:[4]KB。ロールバックを無効にすると、十分な領域を確保できます。終了する場合は「キャンセル」、利用可能なディスク領域を再確認する場合は「再試行」、ロールバックせずに続行する場合は「無視」をクリックしてください。"
 
 #: inc_openoffice/windows/msi_languages/Error.ulf#OOO_ERROR_73
 msgid  "Could not access network location [2]."
@@ -425,11 +425,11 @@ msgstr "ネットワーク上の場所 [2] にアクセスできませんでし�
 
 #: inc_openoffice/windows/msi_languages/Error.ulf#OOO_ERROR_74
 msgid  "The following applications should be closed before continuing the installation:"
-msgstr ""
+msgstr "インストールを続行するには、次のアプリケーションを終了する必要があります。"
 
 #: inc_openoffice/windows/msi_languages/Error.ulf#OOO_ERROR_75
 msgid  "Could not find any previously installed compliant products on the machine for installing this product."
-msgstr ""
+msgstr "この製品をインストールするために必要なアプリケーションがインストールされていません。"
 
 #: inc_openoffice/windows/msi_languages/Error.ulf#OOO_ERROR_76
 msgid  "The key [2] is not valid.  Verify that you entered the correct key."
@@ -437,23 +437,23 @@ msgstr "キー [2] は有効ではありません。正しいキーを入力し�
 
 #: inc_openoffice/windows/msi_languages/Error.ulf#OOO_ERROR_77
 msgid  "The installer must restart your system before configuration of [2] can continue.  Click Yes to restart now or No if you plan to restart later."
-msgstr ""
+msgstr "[2] の設定を続行する前に、システムを再起動する必要があります。すぐに再起動する場合は「はい」を、後で手動で再起動する場合は「いいえ」をクリックしてください。"
 
 #: inc_openoffice/windows/msi_languages/Error.ulf#OOO_ERROR_78
 msgid  "You must restart your system for the configuration changes made to [2] to take effect. Click Yes to restart now or No if you plan to restart later."
-msgstr ""
+msgstr "[2] に行なった設定の変更を有効にするには、システムを再起動する必要があります。すぐに再起動する場合は「はい」を、後で手動で再起動する場合は「いいえ」をクリックしてください。"
 
 #: inc_openoffice/windows/msi_languages/Error.ulf#OOO_ERROR_79
 msgid  "An installation for [2] is currently suspended.  You must undo the changes made by that installation to continue.  Do you want to undo those changes?"
-msgstr ""
+msgstr "[2] のインストールは現在中断されています。続行するには、このインストールによって行われた変更を取り消す必要があります。これらの変更を取り消しますか。"
 
 #: inc_openoffice/windows/msi_languages/Error.ulf#OOO_ERROR_80
 msgid  "A previous installation for this product is in progress.  You must undo the changes made by that installation to continue.  Do you want to undo those changes?"
-msgstr ""
+msgstr "この製品のインストールは現在進行中です。続行するには、このインストールによって行われた変更を取り消す必要があります。これらの変更を取り消しますか。"
 
 #: inc_openoffice/windows/msi_languages/Error.ulf#OOO_ERROR_81
 msgid  "No valid source could be found for product [2].  The Windows Installer cannot continue."
-msgstr ""
+msgstr "製品 [2] に対する有効なソースが見つかりませんでした。Microsoft Windows インストーラを続行できません。"
 
 #: inc_openoffice/windows/msi_languages/Error.ulf#OOO_ERROR_82
 msgid  "Installation operation completed successfully."
@@ -469,23 +469,23 @@ msgstr "製品:[2] -- [3]"
 
 #: inc_openoffice/windows/msi_languages/Error.ulf#OOO_ERROR_85
 msgid  "You may either restore your computer to its previous state or continue the installation later. Would you like to restore?"
-msgstr ""
+msgstr "コンピュータを直前の状態に復元するか、後でインストールを続行することができます。復元しますか。"
 
 #: inc_openoffice/windows/msi_languages/Error.ulf#OOO_ERROR_86
 msgid  "An error occurred while writing installation information to disk.  Check to make sure enough disk space is available, and click Retry, or Cancel to end the installation."
-msgstr ""
+msgstr "インストール情報をディスクに書き込み中にエラーが発生しました。十分なディスク領域があることを確認してから、「再試行」をクリックして続行するか、または「キャンセル」をクリックしてインストールを中止してください。"
 
 #: inc_openoffice/windows/msi_languages/Error.ulf#OOO_ERROR_87
 msgid  "One or more of the files required to restore your computer to its previous state could not be found.  Restoration will not be possible."
-msgstr ""
+msgstr "コンピュータを以前の状態に復元するために必要なファイルの一部が見つかりませんでした。復元することができません。"
 
 #: inc_openoffice/windows/msi_languages/Error.ulf#OOO_ERROR_88
 msgid  "[2] cannot install one of its required products. Contact your technical support group.  {{System Error: [3].}}"
-msgstr ""
+msgstr "[2] で、必要な製品をインストールできません。テクニカルサポートグループに問い合わせてください。{{システムエラー:[3]。}}"
 
 #: inc_openoffice/windows/msi_languages/Error.ulf#OOO_ERROR_89
 msgid  "The older version of [2] cannot be removed.  Contact your technical support group.  {{System Error [3].}}"
-msgstr ""
+msgstr "古いバージョンの [2] を削除できません。テクニカルサポートグループに連絡してください。{{システムエラー [3]。}}"
 
 #: inc_openoffice/windows/msi_languages/Error.ulf#OOO_ERROR_90
 msgid  "The path [2] is not valid.  Please specify a valid path."
@@ -497,15 +497,15 @@ msgstr "メモリー不足です。ほかのアプリケーションを閉じて
 
 #: inc_openoffice/windows/msi_languages/Error.ulf#OOO_ERROR_92
 msgid  "There is no disk in drive [2]. Please insert one and click Retry, or click Cancel to go back to the previously selected volume."
-msgstr ""
+msgstr "ドライブ [2] にディスクがありません。ディスクを挿入してから「再試行」をクリックしてください。直前に選択していたボリュームに戻る場合は、「キャンセル」をクリックしてください。"
 
 #: inc_openoffice/windows/msi_languages/Error.ulf#OOO_ERROR_93
 msgid  "There is no disk in drive [2]. Please insert one and click Retry, or click Cancel to return to the browse dialog and select a different volume."
-msgstr ""
+msgstr "ドライブ [2] にディスクがありません。ディスクを挿入してから「再試行」をクリックしてください。「検索」ダイアログ ボックスに戻って、別のボリュームを選択する場合は、「キャンセル」をクリックしてください。"
 
 #: inc_openoffice/windows/msi_languages/Error.ulf#OOO_ERROR_94
 msgid  "The folder [2] does not exist.  Please enter a path to an existing folder."
-msgstr ""
+msgstr "フォルダ [2] は存在しません。既存のフォルダへのパスを入力してください。"
 
 #: inc_openoffice/windows/msi_languages/Error.ulf#OOO_ERROR_95
 msgid  "You have insufficient privileges to read this folder."
@@ -513,7 +513,7 @@ msgstr "このフォルダを読み取るための十分な特権がありませ
 
 #: inc_openoffice/windows/msi_languages/Error.ulf#OOO_ERROR_96
 msgid  "A valid destination folder for the installation could not be determined."
-msgstr ""
+msgstr "インストールのための正しいコピー先を確定できませんでした。"
 
 #: inc_openoffice/windows/msi_languages/Error.ulf#OOO_ERROR_97
 msgid  "Error attempting to read from the source installation database: [2]."
@@ -521,115 +521,115 @@ msgstr "ソースインストールデータベース [2] からの読み取り�
 
 #: inc_openoffice/windows/msi_languages/Error.ulf#OOO_ERROR_98
 msgid  "Scheduling reboot operation: Renaming file [2] to [3]. Must reboot to complete operation."
-msgstr ""
+msgstr "再起動操作のスケジュールを設定しています。ファイル [2] の名前を [3] に変更しています。操作を完了するには、再起動する必要があります。"
 
 #: inc_openoffice/windows/msi_languages/Error.ulf#OOO_ERROR_99
 msgid  "Scheduling reboot operation: Deleting file [2]. Must reboot to complete operation."
-msgstr ""
+msgstr "再起動操作のスケジュールを設定しています。ファイル [2] を削除しています。操作を完了するには、再起動する必要があります。"
 
 #: inc_openoffice/windows/msi_languages/Error.ulf#OOO_ERROR_100
 msgid  "Module [2] failed to register.  HRESULT [3].  Contact your support personnel."
-msgstr ""
+msgstr "モジュール [2] で登録に失敗しました。HRESULT [3]。サポート担当者に問い合わせてください。"
 
 #: inc_openoffice/windows/msi_languages/Error.ulf#OOO_ERROR_101
 msgid  "Module [2] failed to unregister.  HRESULT [3].  Contact your support personnel."
-msgstr ""
+msgstr "モジュール [2] で登録の解除に失敗しました。HRESULT [3]。サポート担当者に問い合わせてください。"
 
 #: inc_openoffice/windows/msi_languages/Error.ulf#OOO_ERROR_102
 msgid  "Failed to cache package [2]. Error: [3]. Contact your support personnel."
-msgstr ""
+msgstr "パッケージ [2] のキャッシュに失敗しました。エラー:[3]。サポートへお問い合わせください。"
 
 #: inc_openoffice/windows/msi_languages/Error.ulf#OOO_ERROR_103
 msgid  "Could not register font [2].  Verify that you have sufficient permissions to install fonts, and that the system supports this font."
-msgstr ""
+msgstr "フォント [2] を登録できませんでした。フォントをインストールするための十分なアクセス許可があり、システムがこのフォントをサポートしているか確認してください。"
 
 #: inc_openoffice/windows/msi_languages/Error.ulf#OOO_ERROR_104
 msgid  "Could not unregister font [2]. Verify that you have sufficient permissions to remove fonts."
-msgstr ""
+msgstr "フォント [2] の登録を解除できませんでした。フォントを削除するための十分なアクセス許可があるか確認してください。"
 
 #: inc_openoffice/windows/msi_languages/Error.ulf#OOO_ERROR_105
 msgid  "Could not create shortcut [2]. Verify that the destination folder exists and that you can access it."
-msgstr ""
+msgstr "ショートカット [2] を作成できませんでした。目的のフォルダが存在するか、またこのフォルダにアクセスできるか確認してください。"
 
 #: inc_openoffice/windows/msi_languages/Error.ulf#OOO_ERROR_106
 msgid  "Could not remove shortcut [2]. Verify that the shortcut file exists and that you can access it."
-msgstr ""
+msgstr "ショートカット [2] を削除できませんでした。ショートカットファイルが存在し、このファイルにアクセスできるか確認してください。"
 
 #: inc_openoffice/windows/msi_languages/Error.ulf#OOO_ERROR_107
 msgid  "Could not register type library for file [2].  Contact your support personnel."
-msgstr ""
+msgstr "ファイル [2] のタイプライブラリを登録できませんでした。サポート担当者に問い合わせてください。"
 
 #: inc_openoffice/windows/msi_languages/Error.ulf#OOO_ERROR_108
 msgid  "Could not unregister type library for file [2].  Contact your support personnel."
-msgstr ""
+msgstr "ファイル [2] のタイプライブラリの登録を解除できませんでした。サポート担当者に問い合わせてください。"
 
 #: inc_openoffice/windows/msi_languages/Error.ulf#OOO_ERROR_109
 msgid  "Could not update the INI file [2][3].  Verify that the file exists and that you can access it."
-msgstr ""
+msgstr "INI ファイル [2][3] を更新できませんでした。このファイルが存在し、このファイルにアクセスできるか確認してください。"
 
 #: inc_openoffice/windows/msi_languages/Error.ulf#OOO_ERROR_110
 msgid  "Could not schedule file [2] to replace file [3] on reboot.  Verify that you have write permissions to file [3]."
-msgstr ""
+msgstr "再起動するときに、ファイル [3] を [2] で置き換えるようにスケジュールすることができませんでした。ファイル [3] への書き込みのアクセス許可があるか確認してください。"
 
 #: inc_openoffice/windows/msi_languages/Error.ulf#OOO_ERROR_111
 msgid  "Error removing ODBC driver manager, ODBC error [2]: [3]. Contact your support personnel."
-msgstr ""
+msgstr "ODBC ドライバ マネージャの削除でエラーが発生しました。ODBC エラー [2]:[3]。サポート担当者に問い合わせてください。"
 
 #: inc_openoffice/windows/msi_languages/Error.ulf#OOO_ERROR_112
 msgid  "Error installing ODBC driver manager, ODBC error [2]: [3]. Contact your support personnel."
-msgstr ""
+msgstr "ODBC ドライバ マネージャのインストールでエラーが発生しました。ODBC エラー [2]:[3]。サポート担当者に連絡してください。"
 
 #: inc_openoffice/windows/msi_languages/Error.ulf#OOO_ERROR_113
 msgid  "Error removing ODBC driver [4], ODBC error [2]: [3]. Verify that you have sufficient privileges to remove ODBC drivers."
-msgstr ""
+msgstr "ODBC ドライバ [4] の削除でエラーが発生しました。ODBC エラー [2]:[3]。ODBC ドライバを削除するための十分な特権があるか確認してください。"
 
 #: inc_openoffice/windows/msi_languages/Error.ulf#OOO_ERROR_114
 msgid  "Error installing ODBC driver [4], ODBC error [2]: [3]. Verify that the file [4] exists and that you can access it."
-msgstr ""
+msgstr "ODBC ドライバ [4] のインストールでエラーが発生しました。 ODBC エラー [2]:[3]。ファイル [4] が存在し、このファイルにアクセスできるか確認してください。"
 
 #: inc_openoffice/windows/msi_languages/Error.ulf#OOO_ERROR_115
 msgid  "Error configuring ODBC data source [4], ODBC error [2]: [3]. Verify that the file [4] exists and that you can access it."
-msgstr ""
+msgstr "ODBC データソース [4] の設定でエラーが発生しました。ODBC エラー [2]:[3]。ファイル [4] が存在し、このファイルにアクセスできるか確認してください。"
 
 #: inc_openoffice/windows/msi_languages/Error.ulf#OOO_ERROR_116
 msgid  "Service [2] ([3]) failed to start.  Verify that you have sufficient privileges to start system services."
-msgstr ""
+msgstr "サービス [2] ([3]) が開始できませんでした。システムサービスを開始するための十分な特権があるか確認してください。"
 
 #: inc_openoffice/windows/msi_languages/Error.ulf#OOO_ERROR_117
 msgid  "Service [2] ([3]) could not be stopped.  Verify that you have sufficient privileges to stop system services."
-msgstr ""
+msgstr "サービス [2] ([3]) を停止できませんでした。システムサービスを停止するための十分な特権があるか確認してください。"
 
 #: inc_openoffice/windows/msi_languages/Error.ulf#OOO_ERROR_118
 msgid  "Service [2] ([3]) could not be deleted.  Verify that you have sufficient privileges to remove system services."
-msgstr ""
+msgstr "サービス [2] ([3]) を削除できませんでした。システムサービスを削除するための十分な特権があるか確認してください。"
 
 #: inc_openoffice/windows/msi_languages/Error.ulf#OOO_ERROR_119
 msgid  "Service [2] ([3]) could not be installed.  Verify that you have sufficient privileges to install system services."
-msgstr ""
+msgstr "サービス [2] ([3]) をインストールできませんでした。システムサービスをインストールするための十分な特権があるか確認してください。"
 
 #: inc_openoffice/windows/msi_languages/Error.ulf#OOO_ERROR_120
 msgid  "Could not update environment variable [2].  Verify that you have sufficient privileges to modify environment variables."
-msgstr ""
+msgstr "環境変数 [2] を更新できませんでした。環境変数を修正するための十分な特権があるか確認してください。"
 
 #: inc_openoffice/windows/msi_languages/Error.ulf#OOO_ERROR_121
 msgid  "You do not have sufficient privileges to complete this installation for all users of the machine.  Log on as an administrator and then retry this installation."
-msgstr ""
+msgstr "特権が不十分なため、このコンピュータのすべてのユーザーが使用できるようにアプリケーションをインストールすることはできません。管理者としてログオンし、再度インストールしてください。"
 
 #: inc_openoffice/windows/msi_languages/Error.ulf#OOO_ERROR_122
 msgid  "Could not set file security for file [3]. Error: [2].  Verify that you have sufficient privileges to modify the security permissions for this file."
-msgstr ""
+msgstr "ファイル [3] に対するファイルセキュリティを設定できませんでした。エラー:[2]。このファイルセキュリティのアクセス許可を変更する十分な特権があるか確認してください。"
 
 #: inc_openoffice/windows/msi_languages/Error.ulf#OOO_ERROR_123
 msgid  "Component Services (COM+ 1.0) are not installed on this computer.  This installation requires Component Services in order to complete successfully.  Component Services are available on Windows 2000."
-msgstr ""
+msgstr "コンポーネントサービス (COM+ 1.0) がこのコンピュータにインストールされていません。このインストールを正常に完了するためには、コンポーネントサービスが必要です。コンポーネントサービスは Microsoft Windows 2000 に含まれています。"
 
 #: inc_openoffice/windows/msi_languages/Error.ulf#OOO_ERROR_124
 msgid  "Error registering COM+ application.  Contact your support personnel for more information."
-msgstr ""
+msgstr "COM+ アプリケーションを登録中にエラーが発生しました。詳細については、サポート担当者に問い合わせてください。"
 
 #: inc_openoffice/windows/msi_languages/Error.ulf#OOO_ERROR_125
 msgid  "Error unregistering COM+ application.  Contact your support personnel for more information."
-msgstr ""
+msgstr "COM+ アプリケーションの登録解除中にエラーが発生しました。詳細については、サポート担当者に問い合わせてください。"
 
 #: inc_openoffice/windows/msi_languages/Error.ulf#OOO_ERROR_126
 msgid  "The description for service '[2]' ([3]) could not be changed."
@@ -637,23 +637,23 @@ msgstr "サービス '[2]' ([3]) の説明を変更できませんでした。"
 
 #: inc_openoffice/windows/msi_languages/Error.ulf#OOO_ERROR_127
 msgid  "The Windows Installer service cannot update the system file [2] because the file is protected by Windows.  You may need to update your operating system for this program to work correctly. {{Package version: [3], OS Protected version: [4]}}"
-msgstr ""
+msgstr "システムファイル [2] は Microsoft Windows で保護されているため、Microsoft Windows インストーラでこのファイルを更新できませんでした。このプログラムを正しく動作させるためには、オペレーティングシステムを更新する必要があります。{{パッケージバージョン:[3]、OS 保護バージョン:[4]}}"
 
 #: inc_openoffice/windows/msi_languages/Error.ulf#OOO_ERROR_128
 msgid  "The Windows Installer service cannot update the protected Windows file [2]. {{Package version: [3], OS Protected version: [4], SFP Error: [5]}}"
-msgstr ""
+msgstr "Microsoft Windows インストーラサービスで、保護された Microsoft Windows ファイル [2] を更新できません。{{パッケージバージョン:[3]、OS 保護バージョン:[4]、SFP エラー:[5]}}"
 
 #: inc_openoffice/windows/msi_languages/Error.ulf#OOO_ERROR_129
 msgid  "This setup requires Internet Information Server 4.0 or higher for configuring IIS Virtual Roots. Please make sure that you have IIS 4.0 or higher."
-msgstr ""
+msgstr "このセットアップで IIS の仮想ルートを設定するには、Internet Information Server 4.0 以降が必要です。IIS 4.0 以降が稼働していることを確認してください。"
 
 #: inc_openoffice/windows/msi_languages/Error.ulf#OOO_ERROR_130
 msgid  "This setup requires Administrator privileges for configuring IIS Virtual Roots."
-msgstr ""
+msgstr "このセットアップには、仮想ルートを構成するために Administrator (管理者) の特権が必要です。"
 
 #: inc_openoffice/windows/msi_languages/CustomAc.ulf#OOO_CUSTOMACTION_1
 msgid  "A newer version of [ProductName] was found. To install an older version, the newer version needs to be removed first."
-msgstr ""
+msgstr "[ProductName] の新しいバージョンが見つかりました。 古いバージョンをインストールするには、まず新しいバージョンを削除する必要があります。"
 
 #: inc_openoffice/windows/msi_languages/CustomAc.ulf#OOO_CUSTOMACTION_2
 msgid  "The same version of this product is already installed."
@@ -661,11 +661,11 @@ msgstr "この製品と同じバージョンがすでにインストールされ
 
 #: inc_openoffice/windows/msi_languages/CustomAc.ulf#OOO_CUSTOMACTION_3
 msgid  "An older version of [ProductName] was found. To install a newer version, the older version needs to be removed first."
-msgstr ""
+msgstr "[ProductName] の古いバージョンが見つかりました。 新しいバージョンをインストールするには、まず古いバージョンを削除する必要があります。"
 
 #: inc_openoffice/windows/msi_languages/CustomAc.ulf#OOO_CUSTOMACTION_4
 msgid  "Please exit [DEFINEDPRODUCT] [DEFINEDVERSION] and the [DEFINEDPRODUCT] [DEFINEDVERSION] Quickstarter before you continue. If you are using a multi-user system, also make sure that no other user has [DEFINEDPRODUCT] [DEFINEDVERSION] open."
-msgstr ""
+msgstr "続ける前に、[DEFINEDPRODUCT] [DEFINEDVERSION] と [DEFINEDPRODUCT] [DEFINEDVERSION] クイック起動を終了させてください。マルチユーザ環境を使用している場合は、他にだれも [DEFINEDPRODUCT] [DEFINEDVERSION] を開いていないことを確認してください。"
 
 #: inc_openoffice/windows/msi_languages/UIText.ulf#OOO_UITEXT_1
 msgid  "bytes"
@@ -693,15 +693,15 @@ msgstr "この機能は必要時にインストールされます。"
 
 #: inc_openoffice/windows/msi_languages/UIText.ulf#OOO_UITEXT_7
 msgid  "This feature, and all subfeatures, will be installed to run from the CD."
-msgstr ""
+msgstr "この機能およびすべてのサブ機能は CD から実行できるようにインストールされます。"
 
 #: inc_openoffice/windows/msi_languages/UIText.ulf#OOO_UITEXT_8
 msgid  "This feature, and all subfeatures, will be installed on local hard drive."
-msgstr ""
+msgstr "この機能およびすべてのサブ機能はローカルハードドライブにインストールされます。"
 
 #: inc_openoffice/windows/msi_languages/UIText.ulf#OOO_UITEXT_9
 msgid  "This feature, and all subfeatures, will be installed to run from the network."
-msgstr ""
+msgstr "この機能およびすべてのサブ機能はすべてネットワークから実行できるようにインストールされます。"
 
 #: inc_openoffice/windows/msi_languages/UIText.ulf#OOO_UITEXT_10
 msgid  "This feature will be installed to run from CD."
@@ -761,11 +761,11 @@ msgstr "この機能はネットワークから実行できます。"
 
 #: inc_openoffice/windows/msi_languages/UIText.ulf#OOO_UITEXT_24
 msgid  "This feature will be uninstalled completely, and you won't be able to run it from CD."
-msgstr ""
+msgstr "この機能は完全に削除されます。削除後は、CD から実行することができなくなります。"
 
 #: inc_openoffice/windows/msi_languages/UIText.ulf#OOO_UITEXT_25
 msgid  "This feature was run from the CD but will be set to be installed when required."
-msgstr ""
+msgstr "この機能は CD から実行されましたが、必要な場合にインストールされるように設定されます。"
 
 #: inc_openoffice/windows/msi_languages/UIText.ulf#OOO_UITEXT_26
 msgid  "This feature will continue to be run from the CD"
@@ -773,7 +773,7 @@ msgstr "この機能は、引き続き CD から実行されます。"
 
 #: inc_openoffice/windows/msi_languages/UIText.ulf#OOO_UITEXT_27
 msgid  "This feature was run from the CD but will be installed on the local hard drive."
-msgstr ""
+msgstr "この機能は CD から実行されましたが、ローカルハードドライブにインストールされます。"
 
 #: inc_openoffice/windows/msi_languages/UIText.ulf#OOO_UITEXT_28
 msgid  "This feature frees up [1] on your hard drive."
@@ -793,11 +793,11 @@ msgstr "この機能は完全に削除されます。"
 
 #: inc_openoffice/windows/msi_languages/UIText.ulf#OOO_UITEXT_32
 msgid  "This feature will be removed from your local hard drive but will be set to be installed when required."
-msgstr ""
+msgstr "この機能はローカルハードドライブから削除されますが、必要な場合にインストールされるように設定されます。"
 
 #: inc_openoffice/windows/msi_languages/UIText.ulf#OOO_UITEXT_33
 msgid  "This feature will be removed from your local hard drive but will still be available to run from CD."
-msgstr ""
+msgstr "この機能はローカルハードドライブから削除されますが、CD から実行できます。"
 
 #: inc_openoffice/windows/msi_languages/UIText.ulf#OOO_UITEXT_34
 msgid  "This feature will remain on your local hard drive."
@@ -805,19 +805,19 @@ msgstr "この機能は、ローカルハードドライブに残ります。"
 
 #: inc_openoffice/windows/msi_languages/UIText.ulf#OOO_UITEXT_35
 msgid  "This feature will be removed from your local hard drive, but will be still available to run from the network."
-msgstr ""
+msgstr "この機能はローカルハードドライブから削除されますが、ネットワークから実行できます。"
 
 #: inc_openoffice/windows/msi_languages/UIText.ulf#OOO_UITEXT_36
 msgid  "This feature will be uninstalled completely, and you won't be able to run it from the network."
-msgstr ""
+msgstr "この機能は完全に削除されます。削除後は、ネットワークから実行することができなくなります。"
 
 #: inc_openoffice/windows/msi_languages/UIText.ulf#OOO_UITEXT_37
 msgid  "This feature was run from the network but will be installed when required."
-msgstr ""
+msgstr "この機能はネットワークから実行されましたが、必要な場合にインストールされます。"
 
 #: inc_openoffice/windows/msi_languages/UIText.ulf#OOO_UITEXT_38
 msgid  "This feature was run from the network but will be installed on the local hard drive."
-msgstr ""
+msgstr "この機能はネットワークから実行されましたが、ローカルハードドライブにインストールされます。"
 
 #: inc_openoffice/windows/msi_languages/UIText.ulf#OOO_UITEXT_39
 msgid  "This feature will continue to be run from the network"
@@ -825,19 +825,19 @@ msgstr "この機能は、引き続きネットワークから実行されます
 
 #: inc_openoffice/windows/msi_languages/UIText.ulf#OOO_UITEXT_40
 msgid  "This feature frees up [1] on your hard drive. It has [2] of [3] subfeatures selected. The subfeatures free up [4] on your hard drive."
-msgstr ""
+msgstr "この機能はハードドライブ上に [1] の空きを作ります。[3] 内の [2] 個の選択されたサブ機能を含みます。そのサブ機能はハードドライブ上に [4] の空きを作ります。"
 
 #: inc_openoffice/windows/msi_languages/UIText.ulf#OOO_UITEXT_41
 msgid  "This feature frees up [1] on your hard drive. It has [2] of [3] subfeatures selected. The subfeatures require [4] on your hard drive."
-msgstr ""
+msgstr "この機能はハードドライブ上に [1] の空きを作ります。[3] 内の [2] 個の選択されたサブ機能を含みます。そのサブ機能はハードドライブ上に [4] が必要です。"
 
 #: inc_openoffice/windows/msi_languages/UIText.ulf#OOO_UITEXT_42
 msgid  "This feature requires [1] on your hard drive. It has [2] of [3] subfeatures selected. The subfeatures free up [4] on your hard drive."
-msgstr ""
+msgstr "この機能はハードドライブ上に [1] を必要とします。[3] 内の [2] 個の選択されたサブ機能を含みます。そのサブ機能はハードドライブ上に [4] の空きを作ります。"
 
 #: inc_openoffice/windows/msi_languages/UIText.ulf#OOO_UITEXT_43
 msgid  "This feature requires [1] on your hard drive. It has [2] of [3] subfeatures selected. The subfeatures require [4] on your hard drive."
-msgstr ""
+msgstr "この機能はハードドライブ上に [1] を必要とします。[3] 内の [2] 個の選択されたサブ機能を含みます。そのサブ機能はハードドライブ上に [4] が必要です。"
 
 #: inc_openoffice/windows/msi_languages/UIText.ulf#OOO_UITEXT_44
 msgid  "Time remaining: {[1] min }[2] sec"
@@ -941,7 +941,7 @@ msgstr "ファイルの複製を作成しています"
 
 #: inc_openoffice/windows/msi_languages/ActionTe.ulf#OOO_ACTIONTEXT_20
 msgid  "File: [1],  Directory: [9],  Size: [6]"
-msgstr "ファイル:[1]、ディレクトリ:[9]、サイズ:[6]"
+msgstr "ファイル : [1],  ディレクトリ : [9],  サイズ : [6]"
 
 #: inc_openoffice/windows/msi_languages/ActionTe.ulf#OOO_ACTIONTEXT_21
 msgid  "Computing space requirements"
@@ -977,7 +977,7 @@ msgstr "新しいファイルをコピーしています"
 
 #: inc_openoffice/windows/msi_languages/ActionTe.ulf#OOO_ACTIONTEXT_29
 msgid  "File: [1],  Directory: [9],  Size: [6]"
-msgstr "ファイル:[1]、ディレクトリ:[9]、サイズ:[6]"
+msgstr "ファイル : [1],  ディレクトリ : [9],  サイズ : [6]"
 
 #: inc_openoffice/windows/msi_languages/ActionTe.ulf#OOO_ACTIONTEXT_30
 msgid  "Installing ODBC components"
@@ -1077,7 +1077,7 @@ msgstr "エクステンション サーバーを登録しています"
 
 #: inc_openoffice/windows/msi_languages/ActionTe.ulf#OOO_ACTIONTEXT_54
 msgid  "Extension: [1]"
-msgstr "エクステンション:[1]"
+msgstr "エクステンション : [1]"
 
 #: inc_openoffice/windows/msi_languages/ActionTe.ulf#OOO_ACTIONTEXT_55
 msgid  "Registering fonts"
@@ -1085,7 +1085,7 @@ msgstr "フォントを登録しています"
 
 #: inc_openoffice/windows/msi_languages/ActionTe.ulf#OOO_ACTIONTEXT_56
 msgid  "Font: [1]"
-msgstr "フォント:[1]"
+msgstr "フォント : [1]"
 
 #: inc_openoffice/windows/msi_languages/ActionTe.ulf#OOO_ACTIONTEXT_57
 msgid  "Registering MIME info"
@@ -1093,7 +1093,7 @@ msgstr "MIME 情報を登録しています"
 
 #: inc_openoffice/windows/msi_languages/ActionTe.ulf#OOO_ACTIONTEXT_58
 msgid  "MIME Content Type: [1], Extension: [2]"
-msgstr "MIME コンテンツタイプ:[1]、エクステンション:[2]"
+msgstr "MIME コンテント タイプ : [1], エクステンション : [2]"
 
 #: inc_openoffice/windows/msi_languages/ActionTe.ulf#OOO_ACTIONTEXT_59
 msgid  "Registering product"
@@ -1133,15 +1133,15 @@ msgstr "重複しているファイルを削除しています"
 
 #: inc_openoffice/windows/msi_languages/ActionTe.ulf#OOO_ACTIONTEXT_68
 msgid  "File: [1], Directory: [9]"
-msgstr "ファイル:[1]、ディレクトリ:[9]"
+msgstr "ファイル : [1], ディレクトリ : [9]"
 
 #: inc_openoffice/windows/msi_languages/ActionTe.ulf#OOO_ACTIONTEXT_69
 msgid  "Updating environment strings"
-msgstr "環境文字列を更新しています"
+msgstr "環境ストリングを更新しています"
 
 #: inc_openoffice/windows/msi_languages/ActionTe.ulf#OOO_ACTIONTEXT_70
 msgid  "Name: [1], Value: [2], Action [3]"
-msgstr "名前:[1]、値:[2]、アクション [3]"
+msgstr "名前 : [1], 値 : [2], アクション [3]"
 
 #: inc_openoffice/windows/msi_languages/ActionTe.ulf#OOO_ACTIONTEXT_71
 msgid  "Removing applications"
@@ -1157,7 +1157,7 @@ msgstr "ファイルを削除しています"
 
 #: inc_openoffice/windows/msi_languages/ActionTe.ulf#OOO_ACTIONTEXT_74
 msgid  "File: [1], Directory: [9]"
-msgstr "ファイル:[1]、ディレクトリ:[9]"
+msgstr "ファイル : [1], ディレクトリ : [9]"
 
 #: inc_openoffice/windows/msi_languages/ActionTe.ulf#OOO_ACTIONTEXT_75
 msgid  "Removing folders"
@@ -1173,7 +1173,7 @@ msgstr "INI ファイルのエントリを削除しています"
 
 #: inc_openoffice/windows/msi_languages/ActionTe.ulf#OOO_ACTIONTEXT_78
 msgid  "File: [1],  Section: [2],  Key: [3], Value: [4]"
-msgstr "ファイル:[1]、セクション:[2]、キー:[3]、値:[4]"
+msgstr "ファイル : [1],  セクション : [2],  キー : [3], 値 : [4]"
 
 #: inc_openoffice/windows/msi_languages/ActionTe.ulf#OOO_ACTIONTEXT_79
 msgid  "Removing ODBC components"
@@ -1361,7 +1361,7 @@ msgstr "キー : [1], 名前 : [2], 値 : [3]"
 
 #: inc_openoffice/windows/msi_languages/LaunchCo.ulf#OOO_LAUNCH_1
 msgid  "The Installation Wizard cannot be run properly because you are logged in as a user without sufficient administrator rights for this system."
-msgstr ""
+msgstr "十分なシステム管理権限がないユーザーとしてログインしているため、インストールウィザードが正しく動作しません。"
 
 #: inc_openoffice/windows/msi_languages/LaunchCo.ulf#OOO_LAUNCH_2
 msgid  "Please use the file setup.exe to start the installation."
@@ -1421,7 +1421,7 @@ msgstr "抽出: "
 
 #: inc_openoffice/windows/msi_languages/Nsis.ulf#MUI_TEXT_ABORTWARNING
 msgid  "Are you sure you want to quit the %PRODUCTNAME %PRODUCTVERSION Installation Preparation"
-msgstr ""
+msgstr "%PRODUCTNAME %PRODUCTVERSION のインストール準備を本当に停止してもよろしいですか ?"
 
 #: inc_openoffice/windows/msi_languages/SIS.ulf#OOO_SIS_TITLE
 msgid  "Installation database"
@@ -1449,7 +1449,7 @@ msgstr "Microsoft Windows インストーラ"
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_3
 msgid  "Cancel"
-msgstr "キャンセル"
+msgstr "{&Tahoma9}キャンセル"
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_5
 msgid  "&Look in:"
@@ -1469,7 +1469,7 @@ msgstr "フォルダの新規作成|"
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_10
 msgid  "OK"
-msgstr "OK"
+msgstr "{&Tahoma9}OK"
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_12
 msgid  "&Folder name:"
@@ -1481,7 +1481,7 @@ msgstr "1つ上のレベルに移動|"
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_14
 msgid  "< &Back"
-msgstr "< 戻る(&B)"
+msgstr "{&Tahoma9}< 戻る(&B)"
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_17
 msgid  "&Change..."
@@ -1489,7 +1489,7 @@ msgstr "{&Tahoma9}変更(&C)..."
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_18
 msgid  "Cancel"
-msgstr "キャンセル"
+msgstr "{&Tahoma9}キャンセル"
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_19
 msgid  "Specify a network location for the server image of the product."
@@ -1497,7 +1497,7 @@ msgstr "{&Tahoma9}製品のサーバーイメージに対するネットワー�
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_20
 msgid  "Enter the network location or click Change to browse to a location.  Click Install to create a server image of [ProductName] at the specified network location or click Cancel to exit the wizard."
-msgstr ""
+msgstr "{&Tahoma9}ネットワーク ロケーションを入力するか、あるいは「変更」をクリックしてロケーションを参照してください。「インストール」をクリックすると、指定したネットワーク ロケーションに [ProductName] のサーバーイメージを作成します。「キャンセル」をクリックすると、ウィザードを終了します。"
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_21
 msgid  "{&MSSansBold8}Network Location"
@@ -1505,7 +1505,7 @@ msgstr "{&Tahoma9}ネットワーク ロケーション"
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_22
 msgid  "&Install"
-msgstr "インストール(&I)"
+msgstr "{&Tahoma9}インストール(&I)"
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_23
 msgid  "&Network location:"
@@ -1513,23 +1513,23 @@ msgstr "{&Tahoma9}ネットワーク ロケーション(&N):"
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_24
 msgid  "< &Back"
-msgstr "< 戻る(&B)"
+msgstr "{&Tahoma9}< 戻る(&B)"
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_25
 msgid  "Cancel"
-msgstr "キャンセル"
+msgstr "{&Tahoma9}キャンセル"
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_26
 msgid  "&Next >"
-msgstr "次へ(&N) >"
+msgstr "{&Tahoma9}次へ(&N) >"
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_27
 msgid  "{&TahomaBold10}Welcome to the Installation Wizard for [ProductName]"
-msgstr "{&TahomaBold10}[ProductName] のインストールウィザードへようこそ"
+msgstr "{&Tahoma9}[ProductName] インストールウィザードへようこそ"
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_28
 msgid  "The Installation Wizard will create a server image of [ProductName] at a specified network location. To continue, click Next."
-msgstr ""
+msgstr "{&Tahoma9}インストールウィザードは、指定したネットワーク ロケーションに [ProductName] のサーバーイメージを作成します。続行するには、「次へ」をクリックしてください。"
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_29
 msgid  "&No"
@@ -1545,11 +1545,11 @@ msgstr "{&Tahoma9}はい(&Y)"
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_32
 msgid  "< &Back"
-msgstr "< 戻る(&B)"
+msgstr "{&Tahoma9}< 戻る(&B)"
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_35
 msgid  "Cancel"
-msgstr "キャンセル"
+msgstr "{&Tahoma9}キャンセル"
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_36
 msgid  "{\Tahoma8}{80}"
@@ -1581,7 +1581,7 @@ msgstr "{&Tahoma9}ユーザ名(&U):"
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_43
 msgid  "&Next >"
-msgstr "次へ(&N) >"
+msgstr "{&Tahoma9}次へ(&N) >"
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_45
 msgid  "&Serial Number:"
@@ -1589,11 +1589,11 @@ msgstr "シリアル番号(&S):"
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_46
 msgid  "< &Back"
-msgstr "< 戻る(&B)"
+msgstr "{&Tahoma9}< 戻る(&B)"
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_49
 msgid  "Cancel"
-msgstr "キャンセル"
+msgstr "{&Tahoma9}キャンセル"
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_50
 msgid  "&Change..."
@@ -1609,7 +1609,7 @@ msgstr "{&Tahoma9}インストールするプログラムの機能を選択し�
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_53
 msgid  "Click on an icon in the list below to change how a feature is installed."
-msgstr ""
+msgstr "{&Tahoma9}下のリストにあるアイコンをクリックして、機能のインストール方法を変更してください。"
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_54
 msgid  "{&MSSansBold8}Custom Setup"
@@ -1637,7 +1637,7 @@ msgstr "{&Tahoma9}<selected feature path>"
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_60
 msgid  "&Next >"
-msgstr "次へ(&N) >"
+msgstr "{&Tahoma9}次へ(&N) >"
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_61
 msgid  "Feature size"
@@ -1657,7 +1657,7 @@ msgstr "{&Tahoma9}インストールしません。"
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_67
 msgid  "Will be installed on first use. (Available only if the feature supports this option.)"
-msgstr ""
+msgstr "{&Tahoma9}最初の使用時にインストールします。(機能がこのオプションをサポートする場合のみ有効です)"
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_68
 msgid  "This install state means the feature..."
@@ -1669,27 +1669,27 @@ msgstr "{&Tahoma9}ローカルのハードディスク ドライブにすべて�
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_70
 msgid  "The icon next to the feature name indicates the install state of the feature. Click the icon to drop down the install state menu for each feature."
-msgstr ""
+msgstr "{&Tahoma9}機能名の隣にあるアイコンは、機能のインストール状態を示しています。アイコンをクリックして、各機能の「インストール状態」メニューをドロップダウンしてください。"
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_71
 msgid  "Will be installed to run from the network. (Available only if the feature supports this option.)"
-msgstr ""
+msgstr "{&Tahoma9}ネットワークから実行するようにインストールします。(機能がこのオプションをサポートする場合のみ有効です)"
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_72
 msgid  "OK"
-msgstr "OK"
+msgstr "{&Tahoma9}OK"
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_73
 msgid  "Will have some subfeatures installed to the local hard drive. (Available only if the feature has subfeatures.)"
-msgstr ""
+msgstr "{&Tahoma9}ローカルのハードディスク ドライブにサブ機能をインストールします。(機能に、サブ機能が含まれる場合のみ有効です)"
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_74
 msgid  "< &Back"
-msgstr "< 戻る(&B)"
+msgstr "{&Tahoma9}< 戻る(&B)"
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_77
 msgid  "Cancel"
-msgstr "キャンセル"
+msgstr "{&Tahoma9}キャンセル"
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_78
 msgid  "&Change..."
@@ -1697,7 +1697,7 @@ msgstr "{&Tahoma9}変更(&C)..."
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_79
 msgid  "Click Next to install to this folder, or click Change to install to a different folder."
-msgstr ""
+msgstr "{&Tahoma9}このフォルダへインストールする場合は、「次へ」 をクリックしてください。別のフォルダへインストールする場合は、「変更」をクリックします。"
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_80
 msgid  "{&MSSansBold8}Database Folder"
@@ -1713,15 +1713,15 @@ msgstr "{&Tahoma9}[ProductName] データベースのインストール先:"
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_83
 msgid  "&Next >"
-msgstr "次へ(&N) >"
+msgstr "{&Tahoma9}次へ(&N) >"
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_84
 msgid  "< &Back"
-msgstr "< 戻る(&B)"
+msgstr "{&Tahoma9}< 戻る(&B)"
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_87
 msgid  "Cancel"
-msgstr "キャンセル"
+msgstr "{&Tahoma9}キャンセル"
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_88
 msgid  "&Change..."
@@ -1729,7 +1729,7 @@ msgstr "{&Tahoma9}変更(&C)..."
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_89
 msgid  "Click Next to install to this folder, or click Change to install to a different folder."
-msgstr ""
+msgstr "{&Tahoma9}このフォルダへインストールする場合は、「次へ」 をクリックしてください。別のフォルダへインストールする場合は、「変更」をクリックします。"
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_90
 msgid  "{&MSSansBold8}Destination Folder"
@@ -1741,11 +1741,11 @@ msgstr "{&Tahoma9}[INSTALLDIR]"
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_92
 msgid  "Install [ProductName] to:"
-msgstr "[ProductName] のインストール先:"
+msgstr "{&Tahoma9}[ProductName] のインストール先:"
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_93
 msgid  "&Next >"
-msgstr "次へ(&N) >"
+msgstr "{&Tahoma9}次へ(&N) >"
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_96
 msgid  "The disk space required for the installation of the selected features."
@@ -1753,7 +1753,7 @@ msgstr "{&Tahoma9}選択している機能をインストールするために�
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_97
 msgid  "The highlighted volumes do not have enough disk space available for the currently selected features. You can remove files from the highlighted volumes, choose to install less features onto local drives, or select different destination drives."
-msgstr ""
+msgstr "反転表示されたボリュームには、現在選択されている機能に必要なディスク領域がありません。反転表示されたボリュームからファイルを削除するか、ローカルドライブにインストールする機能を減らすか、または別のインストール先ドライブを選択してください。"
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_98
 msgid  "{&MSSansBold8}Disk Space Requirements"
@@ -1769,7 +1769,7 @@ msgstr "{&Tahoma9}更新する必要のあるファイルが使用中です。"
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_104
 msgid  "The following applications are using files that need to be updated by this setup. Close these applications and click Retry to continue."
-msgstr ""
+msgstr "{&Tahoma9}次のアプリケーションが、このセットアップで更新する必要のあるファイルを使用しています。これらのアプリケーションを閉じてから、「再試行」をクリックして続行してください。"
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_105
 msgid  "{&MSSansBold8}Files in Use"
@@ -1789,7 +1789,7 @@ msgstr "{&Tahoma9}再試行(&R)"
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_111
 msgid  "Cancel"
-msgstr "キャンセル"
+msgstr "{&Tahoma9}キャンセル"
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_113
 msgid  "&Look in:"
@@ -1821,11 +1821,11 @@ msgstr "1つ上のレベルに移動|"
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_122
 msgid  "< &Back"
-msgstr "< 戻る(&B)"
+msgstr "{&Tahoma9}< 戻る(&B)"
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_123
 msgid  "Cancel"
-msgstr "{&Tahoma9}キャンセル"
+msgstr "キャンセル"
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_124
 msgid  "This Program is based on the 'Apache OpenOffice' project which is supported by members of the Apache Community. For credits please see: http://www.openoffice.org/welcome/credits.html"
@@ -1837,19 +1837,19 @@ msgstr "次へ(&N) >"
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_126
 msgid  "{&TahomaBold10}Welcome to the Installation Wizard for [ProductName]"
-msgstr "{&Tahoma9}[ProductName]用のインストールウィザードへようこそ"
+msgstr "{&TahomaBold10}[ProductName] のインストールウィザードへようこそ"
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_127
 msgid  "The Installation Wizard will install [ProductName] on your computer. To continue, click Next."
-msgstr ""
+msgstr "インストールウィザードはコンピュータに [ProductName] をインストールします。続行するには「次へ」をクリックしてください。"
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_128
 msgid  "< &Back"
-msgstr "{&Tahoma9}< 戻る(&B)"
+msgstr "< 戻る(&B)"
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_131
 msgid  "Cancel"
-msgstr "{&Tahoma9}キャンセル"
+msgstr "キャンセル"
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_132
 msgid  "Please read the following license agreement carefully."
@@ -1861,15 +1861,15 @@ msgstr "{&MSSansBold8}ライセンス条項"
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_134
 msgid  "&Next >"
-msgstr "{&Tahoma9}次へ(&N) >"
+msgstr "次へ(&N) >"
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_135
 msgid  "< &Back"
-msgstr "{&Tahoma9}< 戻る(&B)"
+msgstr "< 戻る(&B)"
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_138
 msgid  "Cancel"
-msgstr "{&Tahoma9}キャンセル"
+msgstr "キャンセル"
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_139
 msgid  "Modify, repair, or remove the program."
@@ -1881,15 +1881,15 @@ msgstr "{&MSSansBold8}プログラムの保守"
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_141
 msgid  "&Next >"
-msgstr "{&Tahoma9}次へ(&N) >"
+msgstr "次へ(&N) >"
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_143
 msgid  "Change which program features are installed. This option displays the Custom Selection dialog in which you can change the way features are installed."
-msgstr ""
+msgstr "インストールするプログラム機能を変更します。このオプションでは「カスタム」ダイアログが表示され、そこで機能のインストール方法を変更できます。"
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_144
 msgid  "Repair installation errors in the program. This option fixes missing or corrupt files, shortcuts, and registry entries."
-msgstr ""
+msgstr "プログラムのインストールエラーを修復します。このオプションは、見つからないまたは破損したファイル、ショートカット、およびレジストリエントリを修復します。"
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_145
 msgid  "Remove [ProductName] from your computer."
@@ -1897,11 +1897,11 @@ msgstr "[ProductName] をコンピュータから削除します。"
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_146
 msgid  "< &Back"
-msgstr "{&Tahoma9}< 戻る(&B)"
+msgstr "< 戻る(&B)"
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_147
 msgid  "Cancel"
-msgstr "{&Tahoma9}キャンセル"
+msgstr "キャンセル"
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_148
 msgid  "&Next >"
@@ -1909,11 +1909,11 @@ msgstr "次へ(&N) >"
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_149
 msgid  "{&TahomaBold10}Welcome to the Installation Wizard for [ProductName]"
-msgstr "{&Tahoma9}[ProductName]用のインストールウィザードへようこそ"
+msgstr "{&TahomaBold10}[ProductName] のインストールウィザードへようこそ"
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_150
 msgid  "The Installation Wizard will allow you to modify, repair, or remove [ProductName]. To continue, click Next."
-msgstr ""
+msgstr "インストールウィザードでは、[ProductName] の変更、修復、または削除を行うことができます。続行するには「次へ」をクリックしてください。"
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_153
 msgid  "Disk space required for the installation exceeds available disk space."
@@ -1921,7 +1921,7 @@ msgstr "インストールに必要なディスク領域が、使用可能なデ
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_154
 msgid  "The highlighted volumes do not have enough disk space available for the currently selected features. You can remove files from the highlighted volumes, choose to install less features onto local drives, or select different destination drives."
-msgstr ""
+msgstr "反転表示されたボリュームには、現在選択されている機能に必要なディスク領域がありません。反転表示されたボリュームからファイルを削除するか、ローカルドライブにインストールする機能を減らすか、または別のインストール先ドライブを選択してください。"
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_155
 msgid  "{&MSSansBold8}Out of Disk Space"
@@ -1937,11 +1937,11 @@ msgstr "OK"
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_158
 msgid  "< &Back"
-msgstr "{&Tahoma9}< 戻る(&B)"
+msgstr "< 戻る(&B)"
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_159
 msgid  "Cancel"
-msgstr "{&Tahoma9}キャンセル"
+msgstr "キャンセル"
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_160
 msgid  "&Update >"
@@ -1953,15 +1953,15 @@ msgstr "{&TahomaBold10}[ProductName] の修正プログラムへようこそ"
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_162
 msgid  "The Installation Wizard will install the Patch for [ProductName] on your computer.  To continue, click Update."
-msgstr ""
+msgstr "インストールウィザードは、コンピュータに [ProductName] の修正プログラムをインストールします。続行するには「更新」をクリックしてください。"
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_163
 msgid  "< &Back"
-msgstr "{&Tahoma9}< 戻る(&B)"
+msgstr "< 戻る(&B)"
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_166
 msgid  "Cancel"
-msgstr "{&Tahoma9}キャンセル"
+msgstr "キャンセル"
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_167
 msgid  "The wizard is ready to begin installation."
@@ -1973,7 +1973,7 @@ msgstr "インストールを開始する場合は「インストール」を、
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_169
 msgid  "If you want to review or change any of your installation settings, click Back. Click Cancel to exit the wizard."
-msgstr ""
+msgstr "インストールの設定を見直す、または変更する場合は「戻る」を、ウィザードを終了する場合は「キャンセル」をクリックしてください。"
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_170
 msgid  "{&MSSansBold8}Ready to Modify the Program"
@@ -1993,7 +1993,7 @@ msgstr "インストール(&I)"
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_174
 msgid  "< &Back"
-msgstr "{&Tahoma9}< 戻る(&B)"
+msgstr "< 戻る(&B)"
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_177
 msgid  "Cancel"
@@ -2005,7 +2005,7 @@ msgstr "プログラムをシステムから削除するように選択されま
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_179
 msgid  "Click Remove to remove [ProductName] from your computer. After removal, this program will no longer be available for use."
-msgstr ""
+msgstr "[ProductName] をコンピュータから削除するには「削除」をクリックしてください。削除すると、このプログラムは使用できなくなります。"
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_180
 msgid  "If you want to review or change any settings, click Back."
@@ -2025,7 +2025,7 @@ msgstr "< 戻る(&B)"
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_184
 msgid  "Cancel"
-msgstr "{&Tahoma9}キャンセル"
+msgstr "キャンセル"
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_185
 msgid  "&Finish"
@@ -2033,7 +2033,7 @@ msgstr "{&Tahoma9}完了(&F)"
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_186
 msgid  "Your system has not been modified. To complete installation at another time, please run setup again."
-msgstr ""
+msgstr "{&Tahoma9}システムの状態は変更されていません。改めてインストールする場合は、再度セットアップを実行してください。"
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_187
 msgid  "Click Finish to exit the wizard."
@@ -2041,7 +2041,7 @@ msgstr "{&Tahoma9}「完了」をクリックして、ウィザードを終了�
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_188
 msgid  "You can either keep any existing installed elements on your system to continue this installation at a later time or you can restore your system to its original state prior to the installation."
-msgstr ""
+msgstr "{&Tahoma9}インストールしたコンポーネントをシステムに保存して後でこのインストールを続行するか、あるいはインストールを実行する前の状態に復元することができます。"
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_189
 msgid  "Click Restore or Continue Later to exit the wizard."
@@ -2053,19 +2053,19 @@ msgstr "{&Tahoma9}インストールウィザードを完了しました"
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_191
 msgid  "The wizard was interrupted before [ProductName] could be completely installed."
-msgstr ""
+msgstr "{&Tahoma9}ウィザードは、[ProductName] のインストールを完了する前に中断されました。"
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_192
 msgid  "< &Back"
-msgstr "< 戻る(&B)"
+msgstr "{&Tahoma9}< 戻る(&B)"
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_193
 msgid  "Cancel"
-msgstr "キャンセル"
+msgstr "{&Tahoma9}キャンセル"
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_194
 msgid  "&Yes, check for program updates (Recommended) after the setup completes."
-msgstr ""
+msgstr "はい。ｾｯﾄｱｯﾌﾟの完了後、ﾌﾟﾛｸﾞﾗﾑのｱｯﾌﾟﾃﾞｰﾄを確認します (推奨)。(&Y)"
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_195
 msgid  "Launch the program"
@@ -2085,11 +2085,11 @@ msgstr "{&Tahoma9}インストールウィザードを完了しました"
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_199
 msgid  "The Installation Wizard has successfully installed [ProductName]. Click Finish to exit the wizard."
-msgstr ""
+msgstr "{&Tahoma9}インストールウィザードは、[ProductName] を正常にインストールしました。「完了」をクリックして、ウィザードを終了してください。"
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_200
 msgid  "The Installation Wizard has successfully uninstalled [ProductName]. Click Finish to exit the wizard."
-msgstr ""
+msgstr "{&Tahoma9}インストールウィザードは、[ProductName] を正常にアンインストールしました。「完了」をクリックして、ウィザードを終了してください。"
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_201
 msgid  "Setup has finished installing [ProductName]."
@@ -2097,11 +2097,11 @@ msgstr "[ProductName] のｲﾝｽﾄｰﾙを完了しました。"
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_202
 msgid  "Some program files might have been updated since you purchased your copy of [ProductName]."
-msgstr ""
+msgstr "[ProductName] の購入以降にｱｯﾌﾟﾃﾞｰﾄされているﾌﾟﾛｸﾞﾗﾑ ﾌｧｲﾙがある可能性があります。"
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_203
 msgid  "Your Internet connection can be used to make sure that you have the latest updates."
-msgstr ""
+msgstr "ｲﾝﾀｰﾈｯﾄに接続すると、最新のｱｯﾌﾟﾃﾞｰﾄを確認できます。"
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_204
 msgid  "&Abort"
@@ -2113,7 +2113,7 @@ msgstr "{&Tahoma9}キャンセル(&C)"
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_206
 msgid  "error text goes here  error text goes here  error text goes here  error text goes here  error text goes here  error text goes here  error text goes here  error text goes here  error text goes here  error text goes here"
-msgstr ""
+msgstr "{&Tahoma9}error text goes here  error text goes here  error text goes here  error text goes here  error text goes here  error text goes here  error text goes here  error text goes here  error text goes here  error text goes here"
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_207
 msgid  "&Ignore"
@@ -2153,7 +2153,7 @@ msgstr "{&Tahoma9}[ProductName]用のインストールウィザードへよう�
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_218
 msgid  "[ProductName] Setup is preparing the Installation Wizard which will guide you through the program setup process.  Please wait."
-msgstr ""
+msgstr "{&Tahoma9}[ProductName]セットアップは、プログラムセットアップの手順をご案内するインストールウィザードを準備中です。しばらくお待ちください。"
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_219
 msgid  "< &Back"
@@ -2169,7 +2169,7 @@ msgstr "{&Tahoma9}完了(&F)"
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_222
 msgid  "Your system has not been modified. To install this program at a later time, please run the installation again."
-msgstr ""
+msgstr "{&Tahoma9}システムの状態は変更されていません。改めてインストールする場合は、再度セットアップを実行してください。"
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_223
 msgid  "Click Finish to exit the wizard."
@@ -2177,7 +2177,7 @@ msgstr "{&Tahoma9}「完了」をクリックして、ウィザードを終了�
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_224
 msgid  "You can either keep any existing installed elements on your system to continue this installation at a later time or you can restore your system to its original state prior to the installation."
-msgstr ""
+msgstr "{&Tahoma9}インストールしたコンポーネントをシステムに保存して後でこのインストールを続行するか、あるいはインストールを実行する前の状態に復元することができます。"
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_225
 msgid  "Click Restore or Continue Later to exit the wizard."
@@ -2189,7 +2189,7 @@ msgstr "{&Tahoma9}インストールウィザードを完了しました"
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_227
 msgid  "The wizard was interrupted before [ProductName] could be completely installed."
-msgstr ""
+msgstr "{&Tahoma9}ウィザードは、[ProductName] のインストールを完了する前に中断されました。"
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_228
 msgid  "Progress done"
@@ -2213,11 +2213,11 @@ msgstr "{&Tahoma9}選択したプログラム機能をアンインストール�
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_236
 msgid  "Please wait while the Installation Wizard installs [ProductName]. This may take several minutes."
-msgstr ""
+msgstr "{&Tahoma9}インストールウィザードは、[ProductName] をインストールしています。しばらくお待ちください。"
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_237
 msgid  "Please wait while the Installation Wizard uninstalls [ProductName]. This may take several minutes."
-msgstr ""
+msgstr "{&Tahoma9}インストールウィザードは、[ProductName] をアンインストールしています。しばらくお待ちください。"
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_238
 msgid  "{&MSSansBold8}Installing [ProductName]"
@@ -2257,11 +2257,11 @@ msgstr "{&Tahoma9}次へ(&N) >"
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_248
 msgid  "The Installation Wizard will complete the installation of [ProductName] on your computer. To continue, click Next."
-msgstr ""
+msgstr "{&Tahoma9}インストールウィザードは、ご使用のコンピュータへの [ProductName] のインストールを完了します。「次へ」をクリックして、続行してください。"
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_249
 msgid  "The Installation Wizard will complete the suspended installation of [ProductName] on your computer. To continue, click Next."
-msgstr ""
+msgstr "{&Tahoma9}インストールウィザードは、中断していた [ProductName] のインストールを完了しました。「次へ」をクリックして、続行してください。"
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_250
 msgid  "{&TahomaBold10}Resuming the Installation Wizard for [ProductName]"
@@ -2281,7 +2281,7 @@ msgstr "多数のユーザーに推奨される主要コンポーネントはイ
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_256
 msgid  "Choose which program features you want installed and where they will be installed. Recommended for advanced users."
-msgstr ""
+msgstr "インストールするプログラム機能、およびインストール先を選んでください。詳しい知識のある方にお勧めします。"
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_257
 msgid  "Choose the setup type that best suits your needs."
@@ -2341,11 +2341,11 @@ msgstr "&[ProductName] Writer/Web"
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_274
 msgid  "Set [DEFINEDPRODUCT] to be the default application for Microsoft Office file types."
-msgstr ""
+msgstr "[DEFINEDPRODUCT] を、これらのファイルタイプの標準アプリケーションになるように設定します。"
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_275
 msgid  "[ProductName] can be set as the default application to open Microsoft Office file types. This means, for instance, that if you double click on one of these files, [ProductName] will open it, not the program that opens it now."
-msgstr ""
+msgstr "[ProductName] は、次のファイルの種類を開くデフォルトのアプリケーションとして設定できます。 つまり、これらのファイルのいずれかをダブルクリックすると、現在そのファイルを開くプログラムではなく、[ProductName] がそのファイルを開きます。"
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_276
 msgid  "File types"
@@ -2361,11 +2361,11 @@ msgstr "{&MSSansBold8}ファイルの種類"
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_300
 msgid  "A version of [DEFINEDPRODUCT] [DEFINEDVERSION] was found by the [ProductName] Installation Wizard. This version will be updated."
-msgstr ""
+msgstr "[ProductName] のインストールウィザードにより、[DEFINEDPRODUCT] [DEFINEDVERSION] のバージョンが 1 つ見つかりました。 このバージョンは更新されます。"
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_301
 msgid  "The destination folder specified below does not contain a [DEFINEDPRODUCT] [DEFINEDVERSION] version."
-msgstr ""
+msgstr "以下で指定された出力先フォルダには、[DEFINEDPRODUCT] [DEFINEDVERSION] バージョンは存在しません。"
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_302
 msgid  "A newer [DEFINEDPRODUCT] [DEFINEDVERSION] has been found."
@@ -2380,15 +2380,15 @@ msgid  "Check the destination folder."
 msgstr "出力先フォルダをチェックしてください。"
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_305
-msgid  "To continue, click "Next"."
+msgid  "To continue, click \"Next\"."
 msgstr ""
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_306
-msgid  "To select a different version, click "Change". Otherwise click "Cancel" to abort the Installation Wizard."
+msgid  "To select a different version, click \"Change\". Otherwise click \"Cancel\" to abort the Installation Wizard."
 msgstr ""
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_307
-msgid  "To select a different folder, click "Change"."
+msgid  "To select a different folder, click \"Change\"."
 msgstr ""
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_308
@@ -2397,15 +2397,15 @@ msgstr "[ProductName] のインストール先:"
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_309
 msgid  "If you are just trying out [ProductName], you probably don't want this to happen, so leave the boxes unchecked."
-msgstr ""
+msgstr "[ProductName] を試用しているだけの場合、このような状態は望ましくないため、ボックスをオフのままにします。"
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_317
 msgid  "No languages have been selected for installation. Click OK to select one or more languages for installation."
-msgstr ""
+msgstr "インストールする言語が選択されていません。「OK」をクリックして、インストールする言語を 1 つ以上選択してください。"
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_318
 msgid  "No applications have been selected for installation. Click OK to select one or more applications for installation."
-msgstr ""
+msgstr "インストールするアプリケーションが選択されていません。「OK」をクリックして、インストールするアプリケーションを 1 つ以上選択してください。"
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_319
 msgid  "Create a start link on desktop"

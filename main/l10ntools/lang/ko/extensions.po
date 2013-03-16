@@ -57,7 +57,7 @@ msgstr "데이터 원본 제목"
 
 #: source/abpilot/abspilot.src#RID_PAGE_SELECTABTYPE.FT_TYPE_HINTS.FixedText.Text
 msgid  "%PRODUCTNAME lets you access address data already present in your system. To do this, a %PRODUCTNAME data source will be created in which your address data is available in tabular form.\n\nThis wizard helps you create the data source."
-msgstr ""
+msgstr "%PRODUCTNAME을(를) 사용하여 이미 시스템에 있는 주소 데이터에 액세스할 수 있습니다. 이렇게 하려면 주소 데이터를 표 형식으로 사용할 수 있는 %PRODUCTNAME 데이터 원본을 작성해야 합니다.\n\n이 마법사는 데이터 원본 작성을 도와줍니다."
 
 #: source/abpilot/abspilot.src#RID_PAGE_SELECTABTYPE.FL_TYPE.FixedLine.Text
 msgid  "Please select the type of your external address book:"
@@ -109,7 +109,7 @@ msgstr "기타 외부 데이터 원본"
 
 #: source/abpilot/abspilot.src#RID_PAGE_ADMININVOKATION.FT_ADMINEXPLANATION.FixedText.Text
 msgid  "To set up the new data source, additional information is required.\n\nClick the following button to open another dialog in which you then enter the necessary information."
-msgstr ""
+msgstr "새 데이터 원본을 설정하려면 추가 정보가 필요합니다.\n\n아래 있는 버튼을 클릭하면 이 작업을 수행할 또 하나의 대화 상자가 표시됩니다. 이 대화 상자에서 아직 설정하지 않은 설정 항목들을 지정하십시오."
 
 #: source/abpilot/abspilot.src#RID_PAGE_ADMININVOKATION.PB_INVOKE_ADMIN_DIALOG.PushButton.Text
 msgid  "Settings"
@@ -117,15 +117,15 @@ msgstr "설정"
 
 #: source/abpilot/abspilot.src#RID_PAGE_ADMININVOKATION.FT_ERROR.FixedText.Text
 msgid  "The connection to the data source could not be established.\nBefore you proceed, please check the settings made, or (on the previous page) choose another address data source type."
-msgstr ""
+msgstr "데이터 원본 연결이 설정되지 못했습니다.\n진행하기 전에 설정 모드를 확인하거나 이전 페이지에서 다른 주소 데이터 형식을 선택하십시오."
 
 #: source/abpilot/abspilot.src#RID_PAGE_TABLESELECTION_AB.FL_TOOMUCHTABLES.FixedText.Text
 msgid  "The external data source you have chosen contains more than one address book.\nPlease select the one you mainly want to work with:"
-msgstr ""
+msgstr "선택한 외부 데이터 원본에 두 개 이상의 주소록이 들어 있습니다.\n기본으로 사용할 주소록을 선택하십시오:"
 
 #: source/abpilot/abspilot.src#RID_PAGE_FIELDMAPPING.FT_FIELDASSIGMENTEXPL.FixedText.Text
-msgid  "To incorporate the address data in your templates, %PRODUCTNAME has to know which fields contain which data.\n\nFor instance, you could have stored the e-mail addresses in a field named "email", or "E-mail" or "EM" - or something completely different.\n\nClick the button below to open another dialog where you can enter the settings for your data source."
-msgstr ""
+msgid  "To incorporate the address data in your templates, %PRODUCTNAME has to know which fields contain which data.\n\nFor instance, you could have stored the e-mail addresses in a field named \"email\", or \"E-mail\" or \"EM\" - or something completely different.\n\nClick the button below to open another dialog where you can enter the settings for your data source."
+msgstr "서식 파일 문서 안에 주소 데이터를 통합하려면 어떤 필드가 어떤 구체적인 데이터를 포함하는지 %PRODUCTNAME에서 어떤 필드에 구체적인 데이터가 포함되는지 알아야 합니다.\n\n예를 들면, 전자 우편 주소를 \"E-Mail\", \"E-Mail\", \"EM\" 또는 전혀 다른 이름의 필드에 저장했을 수 있습니다.\n\n아래 버튼을 누르면 다른 대화 상자가 열립니다. 이 대화 상자에서 데이터 소스를 설정 할 수 있습니다."
 
 #: source/abpilot/abspilot.src#RID_PAGE_FIELDMAPPING.PB_INVOKE_FIELDS_DIALOG.PushButton.Text
 msgid  "Field Assignment"
@@ -133,7 +133,7 @@ msgstr "필드 할당"
 
 #: source/abpilot/abspilot.src#RID_PAGE_FINAL.FT_FINISH_EXPL.FixedText.Text
 msgid  "That was all the information necessary to integrate your address data into %PRODUCTNAME.\n\nNow, just enter the name under which you want to register the data source in %PRODUCTNAME."
-msgstr ""
+msgstr "이 정보는 모두 %PRODUCTNAME에 주소 데이터를 통합하는데 필요한 데이터입니다.\n\n이제 %PRODUCTNAME에 데이터 원본을 등록하는 데 사용할 이름을 입력하십시오."
 
 #: source/abpilot/abspilot.src#RID_PAGE_FINAL.FT_LOCATION.FixedText.Text
 msgid  "Location"
@@ -153,7 +153,7 @@ msgstr "주소록 이름"
 
 #: source/abpilot/abspilot.src#RID_PAGE_FINAL.FT_DUPLICATENAME.FixedText.Text
 msgid  "Another data source already has this name. As data sources have to have globally unique names, you need to choose another one."
-msgstr ""
+msgstr "이미 동일한 이름의 다른 데이터 원본이 있습니다. 데이터 원본 이름은 전역으로 고유해야 하므로 다른 이름을 선택해야 합니다."
 
 #: source/abpilot/abspilot.src#RID_ERR_NEEDTYPESELECTION.ErrorBox.Message
 msgid  "Please select a type of address book."
@@ -161,7 +161,7 @@ msgstr "주소록 유형을 선택하십시오."
 
 #: source/abpilot/abspilot.src#RID_QRY_NOTABLES.QueryBox.Message
 msgid  "The data source does not contain any tables.\nDo you want to set it up as an address data source, anyway?"
-msgstr ""
+msgstr "데이터 원본에 테이블이 들어 있지 않습니다.\n그래도 이 데이터 원본을 주소 데이터 원본으로 설정하시겠습니까?"
 
 #: source/abpilot/abspilot.src#RID_STR_DEFAULT_NAME.String.Text
 msgid  "Addresses"
@@ -184,8 +184,8 @@ msgid  "Address Data - Field Assignment"
 msgstr "주소 데이터 필드 할당"
 
 #: source/abpilot/abspilot.src#RID_STR_NOFIELDSASSIGNED.String.Text
-msgid  "There are no fields assigned at this time.\nYou can either assign fields now or do so later by first choosing:\n"File - Template - Address Book Source...""
-msgstr ""
+msgid  "There are no fields assigned at this time.\nYou can either assign fields now or do so later by first choosing:\n\"File - Template - Address Book Source...\""
+msgstr "현재는 할당된 필드가 없습니다.\n지금 할당하지 않을 경우 나중에 언제라도\n메뉴 \"파일 - 서직파일 - 주소록 ...\" 메뉴를 사용하여 할당할 수 있습니다."
 
 #: source/bibliography/toolbar.src#RID_BIB_TOOLBAR.TBC_FT_SOURCE.ToolBoxItem.Text
 msgid  "Table"
@@ -493,7 +493,7 @@ msgstr "콘트롤"
 
 #: source/dbpilots/listcombopages.src#RID_PAGE_LCW_CONTENTSELECTION_TABLE.FT_SELECTTABLE_LABEL.FixedText.Text
 msgid  "On the right side, you see all the tables from the data source of the form.\n\n\nChoose the table from which the data should be used as basis for the list content:"
-msgstr ""
+msgstr "오른쪽에서 서식 데이터 원본의 모든 테이블을 볼 수 있습니다.\n\n\n데이터가 목록 내용의 기초가 될 테이블을 선택하십시오:"
 
 #: source/dbpilots/listcombopages.src#RID_PAGE_LCW_CONTENTSELECTION_FIELD.TabPage.Text
 msgid  "Field Selection"
@@ -513,7 +513,7 @@ msgstr "선택된 필드의 내용이 콤보 상자의 목록에 표시됩니다
 
 #: source/dbpilots/listcombopages.src#RID_PAGE_LCW_CONTENTSELECTION_FIELD.STR_FIELDINFO_LISTBOX.String.Text
 msgid  "The contents of the selected field will be shown in the list box if the linked fields are identical."
-msgstr ""
+msgstr "연결된 필드가 일치할 경우 선택된 필드의 내용이 목록 상자에 나타납니다."
 
 #: source/dbpilots/listcombopages.src#RID_PAGE_LCW_FIELDLINK.TabPage.Text
 msgid  "Field Link"
@@ -521,7 +521,7 @@ msgstr "필드 링크"
 
 #: source/dbpilots/listcombopages.src#RID_PAGE_LCW_FIELDLINK.FT_FIELDLINK_DESC.FixedText.Text
 msgid  "This is where you select fields with matching contents so that the value from the display field will be shown."
-msgstr ""
+msgstr "표시 필드에 값을 표시하기 위해 내용이 일치해야 하는 필드를 선택하십시오."
 
 #: source/dbpilots/listcombopages.src#RID_PAGE_LCW_FIELDLINK.FT_VALUELISTFIELD.FixedText.Text
 msgid  "Field from the ~Value Table"
@@ -533,7 +533,7 @@ msgstr "목록 테이블로부터의 필드(~L)"
 
 #: source/dbpilots/listcombopages.src#RID_STR_COMBOWIZ_DBFIELD.String.Text
 msgid  "You can either save the value of the combo box in a database field or use it for display purposes."
-msgstr ""
+msgstr "콤보 상자의 값을 데이터베이스 필드에 저장하거나 표시할 때만 사용할 수 있습니다."
 
 #: source/dbpilots/gridpages.src#RID_PAGE_GW_FIELDSELECTION.TabPage.Text
 msgid  "Field Selection"
@@ -589,7 +589,7 @@ msgstr "데이터"
 
 #: source/dbpilots/commonpagesdbp.src#RID_PAGE_TABLESELECTION.FT_EXPLANATION.FixedText.Text
 msgid  "Currently, the form the control belongs to is not (or not completely) bound to a data source.\n\nPlease choose a data source and a table.\n\n\nPlease note that the settings made on this page will take effect immediately upon leaving the page."
-msgstr ""
+msgstr "콘트롤 필드에 속해 있는 양식은 현재 데이터 원본과 아직 관련되어 있지 않습니다(또는 완전히 관련되어 있지 않습니다).\n\n데이터 원본과 테이블을 선택하십시오.\n\n\n이 페이지에서 만들어진 설정은 이 페이지를 닫은 후부터 즉시 적용된다는 점에 유의하십시오."
 
 #: source/dbpilots/commonpagesdbp.src#RID_PAGE_TABLESELECTION.FT_DATASOURCE.FixedText.Text
 msgid  "~Data source:"
@@ -705,7 +705,7 @@ msgstr "옵션 그룹 작성에 필요한 모든 세부 정보입니다."
 
 #: source/dbpilots/groupboxpages.src#RID_STR_GROUPWIZ_DBFIELD.String.Text
 msgid  "You can either save the value of the option group in a database field or use it for a later action."
-msgstr ""
+msgstr "옵션 그룹의 값을 데이터베이스 필드에 저장하거나 앞으로의 작업에 사용할 수 있습니다."
 
 #: source/preload/preload.src#RID_DLG_OEMWIZARD.PB_PREV.PushButton.Text
 msgid  "<< Back"
@@ -737,7 +737,7 @@ msgstr "환영합니다."
 
 #: source/preload/preload.src#RID_TP_WELCOME.FT_INFO.FixedText.Text
 msgid  "Welcome to %PRODUCTNAME %PRODUCTVERSION OEM\n\nTo start the %PRODUCTNAME %PRODUCTVERSION OEM, please enter your personal data in the dialog following the license text. Important information is contained in the readme files which are located in the %PRODUCTNAME product directory. Please read these files carefully. You can also find detailed information at the Oracle website \n\nhttp://www.oracle.com/us/products/applications/open-office."
-msgstr ""
+msgstr "%PRODUCTNAME %PRODUCTVERSION OEM에 오신 것을 환영합니다\n\n%PRODUCTNAME %PRODUCTVERSION OEM을 시작하려면 사용권 텍스트 다음에 나오는 대화 상자에 개인 정보를 입력하시기 바랍니다. 중요한 정보가 %PRODUCTNAME 제품 디렉토리에 있는 readme 파일에 포함되어 있습니다. 이 파일을 주의해서 읽어주십시오. Oracle 웹 사이트에서도 자세한 정보를 찾을 수 있습니다.\n\nhttp://www.oracle.com/us/products/applications/open-office."
 
 #: source/preload/preload.src#RID_TP_LICENSE.TabPage.Text
 msgid  "License Agreement"
@@ -753,7 +753,7 @@ msgstr "1."
 
 #: source/preload/preload.src#RID_TP_LICENSE.FT_INFO2.FixedText.Text
 msgid  "View the complete License Agreement. Please use the scroll bar or the '%PAGEDOWN' button in this dialog to view the entire license text."
-msgstr ""
+msgstr "사용권 계약 전문을 보십시오. 이 대화 상자의 스크롤 막대나 %PAGEDOWN 버튼을 사용하여 사용권 계약 전문을 읽어보십시오."
 
 #: source/preload/preload.src#RID_TP_LICENSE.PB_PAGEDOWN.PushButton.Text
 msgid  "Page Down"
@@ -801,7 +801,7 @@ msgstr "자동 정렬"
 
 #: source/propctrlr/selectlabeldialog.src#RID_DLG_SELECTLABELCONTROL.1.FixedText.Text
 msgid  "These are control fields that can be used as label fields for the $control_class$ $control_name$."
-msgstr ""
+msgstr "이 필드는 $control_class$ $control_name$에 대한 레이블 필드로 사용할 수 있는 콘트롤 필드입니다."
 
 #: source/propctrlr/selectlabeldialog.src#RID_DLG_SELECTLABELCONTROL.1.CheckBox.Text
 msgid  "~No assignment"
@@ -817,7 +817,7 @@ msgstr "양식"
 
 #: source/propctrlr/pcrmiscres.src#RID_STR_CONFIRM_DELETE_DATA_TYPE.String.Text
 msgid  "Do you want to delete the data type '#type#' from the model?\nPlease note that this will affect all controls which are bound to this data type."
-msgstr ""
+msgstr "데이터 형식 '#type#'을(를) 모델에서 삭제하시겠습니까?\n삭제하면 이 데이터 형식에 바인딩된 모든 콘트롤에 영향을 주게 됩니다."
 
 #: source/propctrlr/pcrmiscres.src#RID_STR_PROPTITLE_PUSHBUTTON.String.Text
 msgid  "Button"
@@ -905,7 +905,7 @@ msgstr "링크 필드"
 
 #: source/propctrlr/formlinkdialog.src#RID_DLG_FORMLINKS.FT_EXPLANATION.FixedText.Text
 msgid  "Sub forms can be used to display detailed data about the current record of the master form. To do this, you can specify which columns in the sub form match which columns in the master form."
-msgstr ""
+msgstr "하위 양식을 사용하여 마스터 양식의 현재 레코드에 대한 자세한 데이터를 표시할 수 있습니다. 이렇게 하려면 마스터 양식의 열과 일치하는 하위 양식의 열을 지정합니다."
 
 #: source/propctrlr/formlinkdialog.src#RID_DLG_FORMLINKS.PB_SUGGEST.PushButton.Text
 msgid  "Suggest"
@@ -1864,8 +1864,8 @@ msgid  "Help"
 msgstr "도움말"
 
 #: source/propctrlr/formres.src#RID_STR_UNABLETOCONNECT.String.Text
-msgid  "The connection to the data source "$name$" could not be established."
-msgstr ""
+msgid  "The connection to the data source \"$name$\" could not be established."
+msgstr "데이터 원본 \"$name$\"와의 연결을 설정하지 못했습니다."
 
 #: source/propctrlr/formres.src#RID_STR_TEXT.String.Text
 msgid  "Text"
@@ -2297,11 +2297,11 @@ msgstr "새 데이터 유형의 이름을 입력하십시오."
 
 #: source/scanner/sanedlg.src#RID_SANE_DIALOG.RID_DEVICEINFO_BTN.PushButton.Text
 msgid  "About\n Dev~ice"
-msgstr ""
+msgstr "장치\n 정보(~I)"
 
 #: source/scanner/sanedlg.src#RID_SANE_DIALOG.RID_PREVIEW_BTN.PushButton.Text
 msgid  "Create\nPreview"
-msgstr ""
+msgstr "미리보기\n작성"
 
 #: source/scanner/sanedlg.src#RID_SANE_DIALOG.RID_PREVIEW_BOX.FixedLine.Text
 msgid  "Preview"
@@ -2357,7 +2357,7 @@ msgstr "스캐너"
 
 #: source/scanner/sanedlg.src#RID_SANE_DEVICEINFO_TXT.String.Text
 msgid  "Device: %s\nVendor: %s\nModel: %s\nType: %s"
-msgstr ""
+msgstr "장치: %s\n공급업체: %s\n모델: %s\n유형: %s"
 
 #: source/scanner/sanedlg.src#RID_SANE_SCANERROR_TXT.String.Text
 msgid  "An error occurred while scanning."
@@ -2365,7 +2365,7 @@ msgstr "스캔할 때 오류가 발생했습니다."
 
 #: source/scanner/sanedlg.src#RID_SANE_NORESOLUTIONOPTION_TXT.String.Text
 msgid  "The device does not offer a preview option. Therefore, a normal scan will be used as a preview instead. This may take a considerable amount of time."
-msgstr ""
+msgstr "장치는 미리보기 옵션을 제공하지 않습니다. 따라서 일반 스캔이 미리보기로 대신 사용됩니다. 이 스캔은 시간이 훨씬 더 오래 걸릴 수 있습니다."
 
 #: source/scanner/sanedlg.src#RID_SANE_NOSANELIB_TXT.String.Text
 msgid  "The SANE interface could not be initialized. Scanning is not possible."
@@ -2405,7 +2405,7 @@ msgstr "%PRODUCTNAME %PRODUCTVERSION은(는) 최신 버전입니다."
 
 #: source/update/check/updatehdl.src#RID_UPDATE_STR_UPD_FOUND.String.Text
 msgid  "%PRODUCTNAME %NEXTVERSION is available.\n\nThe installed version is %PRODUCTNAME %PRODUCTVERSION.\n\nNote: Before downloading  an update, please ensure that you have sufficient access rights to install it.\nA password, usually the administrator's or root password, may be required."
-msgstr ""
+msgstr "%PRODUCTNAME %NEXTVERSION을(를) 사용할 수 있습니다.\n\n설치된 버전은 %PRODUCTNAME %PRODUCTVERSION입니다.\n\n참고: 업데이트를 다운로드하기 전에 설치할 액세스 권한이 있는지 확인하십시오.\n일반적으로 관리자 암호 또는 루트 암호가 필요할 수 있습니다."
 
 #: source/update/check/updatehdl.src#RID_UPDATE_STR_DLG_TITLE.String.Text
 msgid  "Check for Updates"
@@ -2421,7 +2421,7 @@ msgstr "다음 위치에서 %PRODUCTNAME %NEXTVERSION 다운로드가 정지되�
 
 #: source/update/check/updatehdl.src#RID_UPDATE_STR_DOWNLOAD_WARN.String.Text
 msgid  "The download location is: %DOWNLOAD_PATH.\n\nUnder Tools – Options... - %PRODUCTNAME – Online Update you can change the download location."
-msgstr ""
+msgstr "다운로드 위치: %DOWNLOAD_PATH.\n\n도구 – 옵션... - %PRODUCTNAME – 온라인 업데이트에서 다운로드 위치를 바꿀 수 있습니다."
 
 #: source/update/check/updatehdl.src#RID_UPDATE_STR_DOWNLOAD_DESCR.String.Text
 msgid  "%FILE_NAME has been downloaded to %DOWNLOAD_PATH."
@@ -2429,7 +2429,7 @@ msgstr "%FILE_NAME이(가) %DOWNLOAD_PATH에 다운로드되었습니다."
 
 #: source/update/check/updatehdl.src#RID_UPDATE_STR_DOWNLOAD_UNAVAIL.String.Text
 msgid  "The automatic download of the update is currently not available.\n\nClick 'Download...' to download %PRODUCTNAME %NEXTVERSION manually from the web site."
-msgstr ""
+msgstr "업데이트의 자동 다운로드를 현재 사용할 수 없습니다.\n\n%PRODUCTNAME %NEXTVERSION을(를) 웹 사이트에서 수동으로 다운로드하려면 '다운로드...'를 클릭하십시오."
 
 #: source/update/check/updatehdl.src#RID_UPDATE_STR_DOWNLOADING.String.Text
 msgid  "Downloading %PRODUCTNAME %NEXTVERSION..."
@@ -2437,7 +2437,7 @@ msgstr "%PRODUCTNAME %NEXTVERSION 다운로드 중..."
 
 #: source/update/check/updatehdl.src#RID_UPDATE_STR_READY_INSTALL.String.Text
 msgid  "Download of %PRODUCTNAME %NEXTVERSION completed. Ready for installation."
-msgstr ""
+msgstr "%PRODUCTNAME %NEXTVERSION의 다운로드가 완료되었습니다. 설치할 준비가 되었습니다."
 
 #: source/update/check/updatehdl.src#RID_UPDATE_STR_CANCEL_TITLE.String.Text
 msgid  "%PRODUCTNAME %PRODUCTVERSION"
@@ -2449,7 +2449,7 @@ msgstr "다운로드를 취소하시겠습니까?"
 
 #: source/update/check/updatehdl.src#RID_UPDATE_STR_BEGIN_INSTALL.String.Text
 msgid  "To install the update, %PRODUCTNAME %PRODUCTVERSION needs to be closed. Do you want to install the update now?"
-msgstr ""
+msgstr "업데이트를 설치하려면 %PRODUCTNAME %PRODUCTVERSION을(를) 닫아야 합니다. 지금 업데이트를 설치하시겠습니까?"
 
 #: source/update/check/updatehdl.src#RID_UPDATE_STR_INSTALL_NOW.String.Text
 msgid  "Install ~now"
@@ -2461,15 +2461,15 @@ msgstr "나중에 설치(~L)"
 
 #: source/update/check/updatehdl.src#RID_UPDATE_STR_INSTALL_ERROR.String.Text
 msgid  "Could not run the installer application, please run %FILE_NAME in %DOWNLOAD_PATH manually."
-msgstr ""
+msgstr "설치 프로그램을 실행하지 못했습니다. %DOWNLOAD_PATH에서 %FILE_NAME을(를) 수동으로 실행하십시오."
 
 #: source/update/check/updatehdl.src#RID_UPDATE_STR_OVERWRITE_WARNING.String.Text
 msgid  "A file with that name already exists! Do you want to overwrite the existing file?"
-msgstr ""
+msgstr "해당 이름의 파일이 이미 있습니다. 기존 파일을 덮어쓰시겠습니까?"
 
 #: source/update/check/updatehdl.src#RID_UPDATE_STR_RELOAD_WARNING.String.Text
 msgid  "A file with the name '%FILENAME' already exists in '%DOWNLOAD_PATH'! Do you want to continue with the download or delete and reload the file?"
-msgstr ""
+msgstr "'%FILENAME'라는 이름의 파일이 '%DOWNLOAD_PATH'에 이미 존재합니다! 다운로드를 계속 진행하시겠습니까, 아니면 파일을 삭제하고 다시 로드하시겠습니까?"
 
 #: source/update/check/updatehdl.src#RID_UPDATE_STR_RELOAD_RELOAD.String.Text
 msgid  "Reload File"
@@ -2529,7 +2529,7 @@ msgstr "%PRODUCTNAME  업데이트 사용 가능"
 
 #: source/update/check/updatehdl.src#RID_UPDATE_BUBBLE_UPDATE_NO_DOWN.String.Text
 msgid  "Click here for more information."
-msgstr "더 자세한 내용을 보시려면 클릭하십시오."
+msgstr "자세한 내용을 보려면 여기를 클릭하십시오."
 
 #: source/update/check/updatehdl.src#RID_UPDATE_BUBBLE_T_AUTO_START.String.Text
 msgid  "%PRODUCTNAME update available"
@@ -2557,7 +2557,7 @@ msgstr "업데이트 다운로드 정지됨"
 
 #: source/update/check/updatehdl.src#RID_UPDATE_BUBBLE_ERROR_DOWNLOADING.String.Text
 msgid  "Click here for more information."
-msgstr "더 자세한 내용을 보시려면 클릭하십시오."
+msgstr "자세한 내용을 보려면 여기를 클릭하십시오."
 
 #: source/update/check/updatehdl.src#RID_UPDATE_BUBBLE_T_DOWNLOAD_AVAIL.String.Text
 msgid  "Download of update completed"

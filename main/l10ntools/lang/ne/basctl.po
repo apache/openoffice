@@ -137,7 +137,7 @@ msgstr "बचत गर्नुहोस्"
 
 #: source/basicide/basidesh.src#RID_STR_SOURCETOBIG.String.Text
 msgid  "The source text is too large and can be neither compiled nor saved.\nDelete some of the comments or transfer some methods into another module."
-msgstr ""
+msgstr "यो स्रोत पाठ लामो पनि छ र न त यसलाई कम्पाइल गर्न सकिन्छ या बचाउन नै ।\nकेही टिप्पणीहरू मेट्नुहोस् अथवा केही विधिहरूलाई अर्को मोड्युलमा स्थानान्तरण गर्नुहोस् ।"
 
 #: source/basicide/basidesh.src#RID_STR_ERROROPENSTORAGE.String.Text
 msgid  "Error opening file"
@@ -201,7 +201,7 @@ msgstr "'XX' फाइल पहिले नै अवस्थित छ"
 
 #: source/basicide/basidesh.src#RID_STR_CANNOTRUNMACRO.String.Text
 msgid  "For security reasons, you cannot run this macro.\n\nFor more information, check the security settings."
-msgstr ""
+msgstr "सुरक्षाको कारणले, तपाईँ यो म्याक्रो चलाउन सक्नुहुन्न । \n\nबढी सूचनाका लागि सुरक्षा सेटिङहरू जाँच गर्नुहोस् ।"
 
 #: source/basicide/basidesh.src#RID_STR_COMPILEERROR.String.Text
 msgid  "Compile Error: "
@@ -373,7 +373,7 @@ msgstr "एउटा नाम प्रविष्ट गर्नुपर्
 
 #: source/basicide/basidesh.src#RID_STR_WILLSTOPPRG.String.Text
 msgid  "You will have to restart the program after this edit.\nContinue?"
-msgstr ""
+msgstr "यो सम्पादन पछि तपाईँले कार्यक्रम पुन: सुरु गर्नपर्ने हुन्छ ।\nजारी राख्नुहुन्छ ?"
 
 #: source/basicide/basidesh.src#RID_STR_SEARCHALLMODULES.String.Text
 msgid  "Do you want to replace the text in all active modules?"
@@ -617,7 +617,7 @@ msgstr "मोड्युल"
 
 #: source/basicide/moduldlg.src#RID_TP_MODULS.RID_PB_EDIT.PushButton.Text
 msgid  "~Edit"
-msgstr "सम्पादन गर्नुहोस्"
+msgstr "सम्पादन"
 
 #: source/basicide/moduldlg.src#RID_TP_MODULS.RID_PB_CLOSE.CancelButton.Text
 msgid  "Close"
@@ -641,7 +641,7 @@ msgstr "संवाद"
 
 #: source/basicide/moduldlg.src#RID_TP_DLGS.RID_PB_EDIT.PushButton.Text
 msgid  "~Edit"
-msgstr "सम्पादन"
+msgstr "सम्पादन गर्नुहोस्"
 
 #: source/basicide/moduldlg.src#RID_TP_DLGS.RID_PB_CLOSE.CancelButton.Text
 msgid  "Close"
@@ -757,7 +757,7 @@ msgstr "पूर्वनिर्धारित"
 
 #: source/dlged/managelang.src#RID_DLG_MANAGE_LANGUAGE.FT_INFO.FixedText.Text
 msgid  "The default language is used if no localization for a user interface locale is present. Furthermore all strings from the default language are copied to resources of newly added languages."
-msgstr ""
+msgstr "यदि प्रयोगकर्ता इन्टरफेस लोकेलका लागि स्थानियकरण प्रस्तुत नभएमा पूर्वनिर्धारित भाषा प्रयोग गरिन्छ । यसको अतिरिक्त पूर्वनिर्धारित भाषाका सबै स्ट्रिङ नयाँ थपिएका भाषाको स्रोतमा प्रतिलिपि गरिन्छन् ।"
 
 #: source/dlged/managelang.src#RID_DLG_MANAGE_LANGUAGE.PB_CLOSE.OKButton.Text
 msgid  "~Close"
@@ -781,7 +781,7 @@ msgstr "Delete Language Resources"
 
 #: source/dlged/managelang.src#RID_QRYBOX_LANGUAGE.QueryBox.Message
 msgid  "You are about to delete the resources for the selected language(s). All user interface strings for this language(s) will be deleted.\n\nDo you want to delete the resources of the selected language(s)?"
-msgstr ""
+msgstr "तपाईँ चयन गरिएका भाषाका लगि स्रोत मेट्दै हुनुहुन्छ । यस भाषाका लागि सबै प्रयोगकर्ता इन्टरफेस स्ट्रिङ मेटिन्छन् ।\n\nतपाईँले चयन गरिएका भाषाको स्रोत मेट्न चाहनुहुन्छ ?"
 
 #: source/dlged/managelang.src#RID_DLG_SETDEF_LANGUAGE.ModalDialog.Text
 msgid  "Set Default User Interface Language"
@@ -793,7 +793,7 @@ msgstr "पूर्वनिर्धारित भाषा"
 
 #: source/dlged/managelang.src#RID_DLG_SETDEF_LANGUAGE.FT_DEF_INFO.FixedText.Text
 msgid  "Select a language to define the default user interface language. All currently present strings will be assigned to the resources created for the selected language."
-msgstr ""
+msgstr "पूर्वनिर्धारित प्रयोगकर्ता इन्टरफेस भाषा परिभाषित गर्न भाषा चयन गर्नुहोस् । हाल प्रस्तुत गरिएका सबै स्ट्रिङ चयन गरिएका भाषाका लागि सिर्जना गरिएका स्रोतमा निर्दिष्ट गरिन्छन् ।"
 
 #: source/dlged/managelang.src#RID_DLG_SETDEF_LANGUAGE.STR_ADDLANG_TITLE.String.Text
 msgid  "Add User Interface Languages"
@@ -805,7 +805,7 @@ msgstr "उपलब्ध भाषा"
 
 #: source/dlged/managelang.src#RID_DLG_SETDEF_LANGUAGE.STR_ADDLANG_INFO.String.Text
 msgid  "Select languages to be added. Resources for these languages will be created in the library. Strings of the current default user interface language will be copied to these new resources by default."
-msgstr ""
+msgstr "थप गरिने भाषा चयन गर्नुहोस् । यी भाषाका लागि स्रोत लाइब्रेरीमा सिर्जना गरिन्छन् । हालको पूर्वनिर्धारित प्रयोगकर्ता इन्टरफेस भाषाका स्ट्रिङ यी नयाँ स्रोतमा पूर्वनिर्धारित रूपमा प्रतिलिपि गरिन्छन् ।"
 
 #: source/dlged/dlgresid.src#RID_STR_BRWTITLE_PROPERTIES.String.Text
 msgid  "Properties: "

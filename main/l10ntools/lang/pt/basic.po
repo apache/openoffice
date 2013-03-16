@@ -209,7 +209,7 @@ msgstr "Nenhum canal DDE disponível."
 
 #: source/classes/sb.src#RID_BASIC_START.SbERR_DDE_NO_RESPONSE & ERRCODE_RES_MASK.String.Text
 msgid  "No application responded to DDE connect initiation."
-msgstr ""
+msgstr "O estabelecimento da ligação DDE não obteve resposta de nenhuma aplicação."
 
 #: source/classes/sb.src#RID_BASIC_START.SbERR_DDE_MULT_RESPONSES & ERRCODE_RES_MASK.String.Text
 msgid  "Too many applications responded to DDE connect initiation."
@@ -269,7 +269,7 @@ msgstr " já executado."
 
 #: source/classes/sb.src#RID_BASIC_START.SbERR_DDE_LINK_INV_TOPIC & ERRCODE_RES_MASK.String.Text
 msgid  "Link mode cannot be set due to invalid link topic."
-msgstr ""
+msgstr "Não foi possível definir o modo de ligação devido a tópico de ligação inválido."
 
 #: source/classes/sb.src#RID_BASIC_START.SbERR_DDE_DLL_NOT_FOUND & ERRCODE_RES_MASK.String.Text
 msgid  "DDE requires the DDEML.DLL file."

@@ -85,7 +85,7 @@ msgstr "Relatieve grootten"
 
 #: source/smres.src#RID_FONTSIZEDIALOG.1.PushButton.Text
 msgid  "~Default"
-msgstr "~Standaard"
+msgstr "Standaar~d"
 
 #: source/smres.src#RID_FONTTYPEDIALOG.ModalDialog.Text
 msgid  "Fonts"
@@ -157,7 +157,7 @@ msgstr "%"
 
 #: source/smres.src#RID_DISTANCEDIALOG.1.PushButton.Text
 msgid  "~Default"
-msgstr "Standaar~d"
+msgstr "~Standaard"
 
 #: source/smres.src#RID_DISTANCEDIALOG.1.MenuButton.Text
 msgid  "~Category"
@@ -221,7 +221,7 @@ msgstr "~Lijndikte"
 
 #: source/smres.src#RID_DISTANCEDIALOG.5.1.String.Text
 msgid  "Limits"
-msgstr "Begrenzingen"
+msgstr "Begrenzing"
 
 #: source/smres.src#RID_DISTANCEDIALOG.5.2.String.Text
 msgid  "~Upper limit"
@@ -445,11 +445,11 @@ msgstr "~Verwijderen"
 
 #: source/smres.src#RID_NOMATHTYPEFACEWARNING.WarningBox.Message
 msgid  "The 'StarMath' font has not been installed.\nWithout this font %PRODUCTNAME Math cannot function correctly.\nPlease install this font and restart %PRODUCTNAME Math."
-msgstr ""
+msgstr "Het lettertype 'StarMath'  is niet geïnstalleerd.\nZonder dit lettertype werkt %PRODUCTNAME Math niet correct.\nInstalleer dit lettertype en start %PRODUCTNAME Math opnieuw."
 
 #: source/smres.src#RID_DEFAULTSAVEQUERY.QueryBox.Message
 msgid  "Should the changes be saved as defaults?\n\nThese changes will apply for all new formulas."
-msgstr ""
+msgstr "Wilt u deze wijzigingen opslaan als standaardinstellingen?\n\nDeze wijzigingen zijn van toepassing op alle nieuwe formules."
 
 #: source/smres.src#RID_FONTREGULAR.String.Text
 msgid  "Standard"
@@ -558,6 +558,10 @@ msgstr "Schreefloos"
 #: source/smres.src#RID_FONTMENU.7.MenuItem.Text
 msgid  "Fixed"
 msgstr "Vast"
+
+#: source/smres.src#CMDBOXWINDOW_TEXT.#define.Text
+msgid  "Commands"
+msgstr "Opdrachten"
 
 #: source/smres.src#RID_DOCUMENTSTR.String.Text
 msgid  "Formula"
@@ -694,10 +698,6 @@ msgstr "Aanpassen aan ~pagina"
 #: source/smres.src#RID_PRINTUIOPTIONS.item9.ItemList.item
 msgid  "~Scaling"
 msgstr "~Schaal"
-
-#: source/smres.src#CMDBOXWINDOW_TEXT.#define.Text
-msgid  "Commands"
-msgstr "Opdrachten"
 
 #: source/commands.src#RID_COMMANDMENU.RID_UNBINOPS_MENU.MenuItem.Text
 msgid  "~Unary/Binary Operators"

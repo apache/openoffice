@@ -61,7 +61,7 @@ msgstr "Стан~дартный"
 
 #: source/smres.src#RID_FONTSIZEDIALOG.4.FixedText.Text
 msgid  "~Text"
-msgstr "Текст"
+msgstr "~Текст"
 
 #: source/smres.src#RID_FONTSIZEDIALOG.5.FixedText.Text
 msgid  "~Indexes"
@@ -85,7 +85,7 @@ msgstr "Относительные"
 
 #: source/smres.src#RID_FONTSIZEDIALOG.1.PushButton.Text
 msgid  "~Default"
-msgstr "По ~умолчанию"
+msgstr "Сохранить"
 
 #: source/smres.src#RID_FONTTYPEDIALOG.ModalDialog.Text
 msgid  "Fonts"
@@ -133,7 +133,7 @@ msgstr "Изменить"
 
 #: source/smres.src#RID_FONTTYPEDIALOG.2.PushButton.Text
 msgid  "~Default"
-msgstr "По ~умолчанию"
+msgstr "Сохранить"
 
 #: source/smres.src#RID_DISTANCEDIALOG.ModalDialog.Text
 msgid  "Spacing"
@@ -197,7 +197,7 @@ msgstr "~Нижний индекс"
 
 #: source/smres.src#RID_DISTANCEDIALOG.3.1.String.Text
 msgid  "Fractions"
-msgstr "Дроби"
+msgstr "Простые дроби"
 
 #: source/smres.src#RID_DISTANCEDIALOG.3.2.String.Text
 msgid  "~Numerator"
@@ -233,7 +233,7 @@ msgstr "~Нижний предел"
 
 #: source/smres.src#RID_DISTANCEDIALOG.6.1.String.Text
 msgid  "Brackets"
-msgstr "Скобки"
+msgstr "Фигурные скобки"
 
 #: source/smres.src#RID_DISTANCEDIALOG.6.2.String.Text
 msgid  "~Excess size (left/right)"
@@ -245,7 +245,7 @@ msgstr "~Интервал"
 
 #: source/smres.src#RID_DISTANCEDIALOG.6.5.String.Text
 msgid  "~Excess size"
-msgstr "~Выступ"
+msgstr "В~ыступ"
 
 #: source/smres.src#RID_DISTANCEDIALOG.7.1.String.Text
 msgid  "Matrix"
@@ -289,11 +289,11 @@ msgstr "Поля"
 
 #: source/smres.src#RID_DISTANCEDIALOG.10.2.String.Text
 msgid  "~Left"
-msgstr "По ~левому краю"
+msgstr "С~лева"
 
 #: source/smres.src#RID_DISTANCEDIALOG.10.3.String.Text
 msgid  "~Right"
-msgstr "По ~правому краю"
+msgstr "С~права"
 
 #: source/smres.src#RID_DISTANCEDIALOG.10.4.String.Text
 msgid  "~Top"
@@ -445,11 +445,11 @@ msgstr "Удалить"
 
 #: source/smres.src#RID_NOMATHTYPEFACEWARNING.WarningBox.Message
 msgid  "The 'StarMath' font has not been installed.\nWithout this font %PRODUCTNAME Math cannot function correctly.\nPlease install this font and restart %PRODUCTNAME Math."
-msgstr ""
+msgstr "Не установлен шрифт «StarMath».\nБез этого шрифта %PRODUCTNAME Math не сможет корректно работать...\nУстановите шрифт и перезапустите %PRODUCTNAME Math."
 
 #: source/smres.src#RID_DEFAULTSAVEQUERY.QueryBox.Message
 msgid  "Should the changes be saved as defaults?\n\nThese changes will apply for all new formulas."
-msgstr ""
+msgstr "Сохранить настройки как значения по умолчанию?\n\nНастройки будут применены ко всем новым формулам."
 
 #: source/smres.src#RID_FONTREGULAR.String.Text
 msgid  "Standard"
@@ -558,6 +558,10 @@ msgstr "Без засечек"
 #: source/smres.src#RID_FONTMENU.7.MenuItem.Text
 msgid  "Fixed"
 msgstr "Моноширинный"
+
+#: source/smres.src#CMDBOXWINDOW_TEXT.#define.Text
+msgid  "Commands"
+msgstr "Команды"
 
 #: source/smres.src#RID_DOCUMENTSTR.String.Text
 msgid  "Formula"
@@ -694,10 +698,6 @@ msgstr "По ра~змеру страницы"
 #: source/smres.src#RID_PRINTUIOPTIONS.item9.ItemList.item
 msgid  "~Scaling"
 msgstr "Мас~штабирование"
-
-#: source/smres.src#CMDBOXWINDOW_TEXT.#define.Text
-msgid  "Commands"
-msgstr "Команды"
 
 #: source/commands.src#RID_COMMANDMENU.RID_UNBINOPS_MENU.MenuItem.Text
 msgid  "~Unary/Binary Operators"

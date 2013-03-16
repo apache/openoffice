@@ -49,7 +49,7 @@ msgstr "ಪರಿವರ್ತಿಸು(~C)"
 
 #: source/euro/euro.src#STEP_ZERO + 4.String.Text
 msgid  "Note: Currency amounts from external links and currency conversion factors in formulas cannot be converted."
-msgstr ""
+msgstr "ಸೂಚನೆ: ಹೊರಗಿನ ಸಂಪರ್ಕಕೊಂಡಿಯಲ್ಲಿನ ಚಲಾವಣಾನಾಣ್ಯದ ಮೊತ್ತವನ್ನು ಹಾಗು ಸೂತ್ರಗಳಲ್ಲಿನ ಪರಿವರ್ತನ ಅಂಶವನ್ನು ಉಪಯೋಗಿಸಿಕೊಂಡು ಪರಿವರ್ತಿಸಲು ಸಾಧ್ಯವಿಲ್ಲ."
 
 #: source/euro/euro.src#STEP_ZERO + 5.String.Text
 msgid  "First, unprotect all sheets."
@@ -153,7 +153,7 @@ msgstr "ಕೋಶದ ನಮೂನೆಗಳ ಪರಿವರ್ತನೆಯ ಸ್
 
 #: source/euro/euro.src#STATUSLINE + 2.String.Text
 msgid  "Registration of the relevant ranges: Sheet %1Number%1 of %2TotPageCount%2"
-msgstr ""
+msgstr "ಸಂಬಂಧಿತ ವ್ಯಾಪ್ತಿಗಳ ನೋಂದಣಿ: %2TotPageCount%2 ನಲ್ಲಿ %1Number%1"
 
 #: source/euro/euro.src#STATUSLINE + 3.String.Text
 msgid  "Entry of the ranges to be converted..."
@@ -221,11 +221,11 @@ msgstr "ಹಾಳೆಗೆ ಸಂರಕ್ಷಣೆಯನ್ನು ತೆಗೆ�
 
 #: source/euro/euro.src#MESSAGES + 13.String.Text
 msgid  "The Wizard cannot edit this document as cell formats cannot be modified in documents containing protected spreadsheets."
-msgstr ""
+msgstr "ಸಂರಕ್ಷಿಸಲಾಗಿರುವ ಸ್ಪ್ರೆಡ್‌ಷೀಟ್‌ಗಳ ದಸ್ತಾವೇಜಿನ ಕೋಶದ ರೂಪುಗಳನ್ನು ಬದಲಾಯಿಸಲು ಸಾಧ್ಯವಿರದ ಕಾರಣ ಗಾರುಡಿಯು ಈ ದಸ್ತಾವೇಜನ್ನು ಸಂಪಾದಿಸಲು ಸಾಧ್ಯವಿಲ್ಲ."
 
 #: source/euro/euro.src#MESSAGES + 14.String.Text
 msgid  "Please note that the Euro Converter will, otherwise, not be able to edit this document!"
-msgstr ""
+msgstr "ದಯವಿಟ್ಟು ಗಮನಿಸಿ, ಯುರೊ ಪರಿವರ್ತಕದಿಂದ ಹೊರತುಪಡಿಸಿ ಬೇರಾವುದೆ ಈ ದಸ್ತಾವೇಜನ್ನು ಸಂಪಾದಿಸಲು ಸಾಧ್ಯವಿಲ್ಲ!"
 
 #: source/euro/euro.src#MESSAGES + 15.String.Text
 msgid  "Please choose a currency to be converted first!"
@@ -257,7 +257,7 @@ msgstr "ದಸ್ತಾವೇಜನ್ನು ಕೇವಲ ಓದಲು ಮಾತ
 
 #: source/euro/euro.src#MESSAGES + 22.String.Text
 msgid  "The '<1>' file already exists.<CR>Do you want to overwrite it?"
-msgstr ""
+msgstr "'<೧>' ಕಡತ ಈಗಾಗಲೆ ಅಸ್ತಿತ್ವದಲ್ಲಿದೆ. <CR> ನೀವು ಅದನ್ನು ತಿದ್ದಿಬರೆಯಲು ಇಚ್ಚಿಸುತ್ತೀರಾ?"
 
 #: source/euro/euro.src#MESSAGES + 23.String.Text
 msgid  "Do you really want to terminate conversion at this point?"
@@ -337,7 +337,7 @@ msgstr "ದಸ್ತಾವೇಜಿಗೆ ಹೊಂದಿಸಿರುವಂತ�
 
 #: source/euro/euro.src#CURRENCIES + 17.String.Text
 msgid  "The language set for your operating system is not a language of the European Monetary Union."
-msgstr ""
+msgstr "ನಿಮ್ಮ ಕಾರ್ಯವ್ಯವಸ್ಥೆಗಾಗಿ ಹೊಂದಿಸಿರುವಂತಹ ಭಾಷೆಯು ಯುರೋಪಿಯನ್ ಮೊನೆಟರಿ ಯೂನಿಯನ್‌ನ ಭಾಷೆಯಾಗಿಲ್ಲ."
 
 #: source/euro/euro.src#STEP_LASTPAGE.String.Text
 msgid  "Progress"
@@ -361,35 +361,35 @@ msgstr "ಹಾಳೆಗೆ ಯಾವಾಗಲು ಸಂರಕ್ಷಿತವಾ�
 
 #: source/formwizard/dbwizres.src#RID_COMMON_START + 0.String.Text
 msgid  "The directory '%1' could not be created.<BR>There may not be enough space left on your hard disk."
-msgstr ""
+msgstr "ಕೋಶ '%1'ಅನ್ನು ನಿರ್ಮಿಸಲಾಗಲಿಲ್ಲ. <BR> ನಿಮ್ಮ ಹಾರ್ಡ್ ಡಿಸ್ಕಿನಲ್ಲಿ ಸಾಕಷ್ಟು ಜಾಗ ಇಲ್ಲದೆ ಇರಬಹುದು."
 
 #: source/formwizard/dbwizres.src#RID_COMMON_START + 1.String.Text
 msgid  "The text document could not be created.<BR>Please check if the module 'PRODUCTNAME Writer' is installed."
-msgstr ""
+msgstr "ಪಠ್ಯ ದಸ್ತಾವೇಜನ್ನು ನಿರ್ಮಿಸಲಾಗಲಿಲ್ಲ. <BR> ದಯವಿಟ್ಟು 'PRODUCTNAME Writer' ಎಂಬ ಘಟಕವು ಅನುಸ್ಥಾಪಿಸಲಾಗಿದೆಯೆ ಎಂದು ಪರೀಕ್ಷಿಸಿ."
 
 #: source/formwizard/dbwizres.src#RID_COMMON_START + 2.String.Text
 msgid  "The spreadsheet could not be created.<BR>Please check if the module 'PRODUCTNAME Calc' is installed."
-msgstr ""
+msgstr "ಸ್ಪ್ರೆಡ್‌ಶೀಟ್ ಅನ್ನು ನಿರ್ಮಿಸಲಾಗಲಿಲ್ಲ. <BR> ದಯವಿಟ್ಟು 'PRODUCTNAME Calc' ಎಂಬ ಘಟಕವು ಅನುಸ್ಥಾಪಿತವಾಗಿದೆಯೆ ಎಂದು ಪರೀಕ್ಷಿಸಿ."
 
 #: source/formwizard/dbwizres.src#RID_COMMON_START + 3.String.Text
 msgid  "The presentation could not be created.<BR>Please check if the module 'PRODUCTNAME Impress' is installed."
-msgstr ""
+msgstr "ಪ್ರೆಸೆಂಟೇಷನ್ ಅನ್ನು ನಿರ್ಮಿಸಲಾಗಲಿಲ್ಲ. <BR> ದಯವಿಟ್ಟು 'PRODUCTNAME Impress' ಎಂಬ ಘಟಕವು ಅನುಸ್ಥಾಪಿತವಾಗಿದೆಯೆ ಎಂದು ಪರೀಕ್ಷಿಸಿ."
 
 #: source/formwizard/dbwizres.src#RID_COMMON_START + 4.String.Text
 msgid  "The drawing could not be created.<BR>Please check if the module 'PRODUCTNAME Draw' is installed."
-msgstr ""
+msgstr "ಡ್ರಾಯಿಂಗ್ ಅನ್ನು ನಿರ್ಮಿಸಲಾಗಿಲ್ಲ. <BR> ದಯವಿಟ್ಟು 'PRODUCTNAME Draw' ಎಂಬ ಘಟಕವು ಅನುಸ್ಥಾಪಿತವಾಗಿದೆಯೆ ಎಂದು ಪರೀಕ್ಷಿಸಿ."
 
 #: source/formwizard/dbwizres.src#RID_COMMON_START + 5.String.Text
 msgid  "The formula could not be created.<BR>Please check if the module 'PRODUCTNAME Math' is installed."
-msgstr ""
+msgstr "ಫಾರ್ಮುಲಾವನ್ನು ನಿರ್ಮಿಸಲಾಗಿಲ್ಲ. <BR> ದಯವಿಟ್ಟು 'PRODUCTNAME Math' ಎಂಬ ಘಟಕವು ಅನುಸ್ಥಾಪಿತವಾಗಿದೆಯೆ ಎಂದು ಪರೀಕ್ಷಿಸಿ."
 
 #: source/formwizard/dbwizres.src#RID_COMMON_START + 6.String.Text
 msgid  "The files required could not be found.<BR>Please start the %PRODUCTNAME Setup and choose 'Repair'."
-msgstr ""
+msgstr "ಅವಶ್ಯಕತೆಯಿರುವ ಕಡತಗಳನ್ನು ಪತ್ತೆ ಮಾಡಲಾಗಲಿಲ್ಲ.<BR> ದಯವಿಟ್ಟು %PRODUCTNAME ಸಿದ್ಧತೆಯನ್ನು ಪ್ರಾರಂಭಿಸಿ ನಂತರ 'ಸರಿಪಡಿಸು'ಅನ್ನು ಆಯ್ಕೆ ಮಾಡಿ."
 
 #: source/formwizard/dbwizres.src#RID_COMMON_START + 7.String.Text
 msgid  "The file '<PATH>' already exists.<BR><BR>Would you like to overwrite the existing file?"
-msgstr ""
+msgstr "'<PATH>' ಕಡತವು ಈಗಾಗಲೆ ಅಸ್ತಿತ್ವದಲ್ಲಿದೆ. <BR><BR> ಈಗಿರುವ ಕಡತವನ್ನು ತಿದ್ದಿ ಬರೆಯಲು ಇಚ್ಛಿಸುತ್ತೀರಾ?"
 
 #: source/formwizard/dbwizres.src#RID_COMMON_START + 8.String.Text
 msgid  "Yes"
@@ -445,7 +445,7 @@ msgstr "<current_date> ರಂದು <wizard_name> ಮೂಲಕ ನಮೂನೆ�
 
 #: source/formwizard/dbwizres.src#RID_COMMON_START + 21.String.Text
 msgid  "The wizard could not be run, because important files were not found.\nUnder 'Tools - Options - %PRODUCTNAME - Paths' click the 'Default' button to reset the paths to the original default settings.\nThen run the wizard again."
-msgstr ""
+msgstr "ಗಾರುಡಿಯನ್ನು ಪ್ರಾರಂಭಿಸಲು ಆಗಲಿಲ್ಲ ಏಕೆಂದರೆ ಮುಖ್ಯವಾದ ಕಡತಗಳು ಕಂಡುಬಂದಿಲ್ಲ.\nಮಾರ್ಗಗಳನ್ನು ಪೂರ್ವನಿಯೋಜಿತ ಸಿದ್ಧತೆಗಳಿಗೆ ಮರುಹೊಂದಿಸಲು 'ಉಪಕರಣ - ಆಯ್ಕೆಗಳು - %PRODUCTNAME - ಮಾರ್ಗಗಳು' ನಲ್ಲಿನ 'ಪೂರ್ವನಿಯೋಜಿತ' ಗುಂಡಿಯನ್ನು ಕ್ಲಿಕ್ಕಿಸಿ.\nನಂತರ ಗಾರುಡಿಯನ್ನು ಪ್ರಾರಂಭಿಸಿ."
 
 #: source/formwizard/dbwizres.src#RID_DB_COMMON_START + 0.String.Text
 msgid  "C~reate"
@@ -473,7 +473,7 @@ msgstr "ಕೋಷ್ಟಕದ ಹೆಸರು(~T)"
 
 #: source/formwizard/dbwizres.src#RID_DB_COMMON_START + 6.String.Text
 msgid  "An error occurred while running the wizard. The wizard will be terminated."
-msgstr ""
+msgstr "ಗಾರುಡಿಯು ಚಾಲನೆಯಲ್ಲಿದ್ದಾಗ ದೋಷ ಉಂಟಾಗಿದೆ. ಗಾರುಡಿಯನ್ನು ಸ್ಥಗಿತಗೊಳಿಸಲಾಗುತ್ತದೆ."
 
 #: source/formwizard/dbwizres.src#RID_DB_COMMON_START + 14.String.Text
 msgid  "No connection to the database could be established."
@@ -553,11 +553,11 @@ msgstr "ಫಾರ್ಮಿನಲ್ಲಿರುವ ವರ್ಗಗಳು(~t)"
 
 #: source/formwizard/dbwizres.src#RID_DB_FORM_WIZARD_START + 2.String.Text
 msgid  "Binary fields are always listed and selectable from the left list.\nIf possible, they are interpreted as images."
-msgstr ""
+msgstr "ಬೈನರಿ ವರ್ಗಗಳು ಯಾವಾಗಲೂ ಪಟ್ಟಿ ಮಾಡಲಾಗಿರುತ್ತವೆ ಹಾಗು ಎಡಭಾಗದ ಪಟ್ಟಿಯಿಂದ ಆಯ್ಕೆ ಮಾಡಬಹುದಾಗಿದೆ.\nಸಾಧ್ಯವಾದರೆ, ಅವುಗಳನ್ನು ಚಿತ್ರಗಳು ಎಂದು ಪರಿಗಣಿಸಲಾಗುತ್ತದೆ."
 
 #: source/formwizard/dbwizres.src#RID_DB_FORM_WIZARD_START + 3.String.Text
 msgid  "A subform is a form that is inserted in another form.\nUse subforms to show data from tables or queries with a one-to-many relationship."
-msgstr ""
+msgstr "ಒಂದು ಉಪನಮೂನೆ ಎನ್ನುವುದು ಒಂದು ನಮೂನೆಯಲ್ಲಿ ಅಡಕಗೊಳಿಸಲಾದಂತಹ ಇನ್ನೊಂದು ನಮೂನೆಯಾಗಿರುತ್ತದೆ.\nಕೋಷ್ಟಕಗಳಿಂದ ಅಥವ ಪ್ರಶ್ನೆಗಳಿಂದ ಒಂದರಿಂದ-ಹಲವಾರು ಸಂಬಂಧಗಳೊಂದಿಗೆ ದತ್ತಾಂಶವನ್ನು ತೋರಿಸಲು ಉಪನಮೂನೆಗಳನ್ನು ಬಳಸಿ."
 
 #: source/formwizard/dbwizres.src#RID_DB_FORM_WIZARD_START + 4.String.Text
 msgid  "~Add Subform"
@@ -593,7 +593,7 @@ msgstr "ಫಾರ್ಮಿನಲ್ಲಿರುವ ವರ್ಗಗಳು"
 
 #: source/formwizard/dbwizres.src#RID_DB_FORM_WIZARD_START + 19.String.Text
 msgid  "The join '<FIELDNAME1>' and '<FIELDNAME2>' has been selected twice.\nBut joins may only be used once."
-msgstr ""
+msgstr "'<FIELDNAME1>' ಹಾಗು '<FIELDNAME2>' ಅನ್ನು ಜೋಡಿಸುವಿಕೆಯನ್ನು ಎರಡು ಬಾರಿ ಆಯ್ಕೆ ಮಾಡಲಾಗಿದೆ.\nಆದರೆ ಕೇವಲ ಒಮ್ಮೆ ಮಾತ್ರ ಜೋಡಿಸುವಿಕೆಯನ್ನು ಬಳಸಬಹುದಾಗಿದೆ."
 
 #: source/formwizard/dbwizres.src#RID_DB_FORM_WIZARD_START + 20.String.Text
 msgid  "~First joined subform field"
@@ -805,7 +805,7 @@ msgstr "ನಿಮ್ಮ ಫಾರ್ಮಿಗೆ ಹೆಸರನ್ನು ನೀ
 
 #: source/formwizard/dbwizres.src#RID_DB_FORM_WIZARD_START + 98.String.Text
 msgid  "A form with the name '%FORMNAME' already exists.\nChoose another name."
-msgstr ""
+msgstr "'%FORMNAME' ಈ ಹೆಸರಿನ ಫಾರ್ಮ್ ಈಗಾಗಲೆ ಅಸ್ತಿತ್ವದಲ್ಲಿದೆ.\nಬೇರೊಂದು ಹೆಸರನ್ನು ಆಯ್ಕೆ ಮಾಡಿ."
 
 #: source/formwizard/dbwizres.src#RID_DB_QUERY_WIZARD_START + 0.String.Text
 msgid  "Query Wizard"
@@ -857,7 +857,7 @@ msgstr "ವಿವರವಾದ ಪ್ರಶ್ನೆ(ಪ್ರಶ್ನೆಯ ಎ
 
 #: source/formwizard/dbwizres.src#RID_DB_QUERY_WIZARD_START + 12.String.Text
 msgid  "~Summary query (Shows only results of aggregate functions.)"
-msgstr ""
+msgstr "ಸಾರಾಂಶದ ಪ್ರಶ್ನೆ (ಕೇವಲ ಸರಾಸರಿ ಕ್ರಿಯೆಗಳ ಫಲಿತಾಂಶವನ್ನು ಮಾತ್ರ ತೋರಿಸುತ್ತದೆ.)(~S)"
 
 #: source/formwizard/dbwizres.src#RID_DB_QUERY_WIZARD_START + 16.String.Text
 msgid  "Aggregate functions"
@@ -1097,15 +1097,15 @@ msgstr "ಸಮಗ್ರನೋಟ"
 
 #: source/formwizard/dbwizres.src#RID_DB_QUERY_WIZARD_START + 88.String.Text
 msgid  "A field that has not been assigned an aggregate function must be used in a group."
-msgstr ""
+msgstr "ಸರಾಸರಿ ಕಾರ್ಯಭಾರವನ್ನು ನಿಯೋಜಿಸದೆ ಇರುವ ಒಂದು ವರ್ಗವನ್ನು ಒಂದು ಗುಂಪಿನಲ್ಲಿ ಬಳಸಬೇಕು."
 
 #: source/formwizard/dbwizres.src#RID_DB_QUERY_WIZARD_START + 89.String.Text
 msgid  "The condition '<FIELDNAME> <LOGICOPERATOR> <VALUE>' was chosen twice. Each condition can only be chosen once"
-msgstr ""
+msgstr "ನಿಬಂಧನೆ '<FIELDNAME> <LOGICOPERATOR> <VALUE>' ಅನ್ನು ಎರಡನೆ ಬಾರಿ ಆಯ್ಕೆ ಮಾಡಲಾಗಿದೆ. ಪ್ರತಿಯೊಂದು ನಿಬಂಧನೆಯನ್ನು ಕೇವಲ ಒಂದು ಬಾರಿ ಮಾತ್ರ ಆಯ್ಕೆ ಮಾಡಬಹುದಾಗಿದೆ"
 
 #: source/formwizard/dbwizres.src#RID_DB_QUERY_WIZARD_START + 90.String.Text
 msgid  "The aggregate function <FUNCTION> has been assigned twice to the fieldname '<NUMERICFIELD>'."
-msgstr ""
+msgstr "ಸರಾಸರಿ ಕಾರ್ಯಭಾರ <FUNCTION> ಅನ್ನು '<NUMERICFIELD>' ವರ್ಗದಹೆಸರಿಗೆ ಎರಡು ಬಾರಿ ನಿಯೋಜಿಸಲಾಗಿದೆ."
 
 #: source/formwizard/dbwizres.src#RID_DB_QUERY_WIZARD_START + 91.String.Text
 msgid  ", "
@@ -1321,11 +1321,11 @@ msgstr "<REPORTFORM> ಎಂಬ ಫಾರ್ಮ್ ಲಭ್ಯವಿಲ್ಲ."
 
 #: source/formwizard/dbwizres.src#RID_DB_REPORT_WIZARD_START + 65.String.Text
 msgid  "The query with the statement <BR>'<STATEMENT>' <BR> could not be run. <BR> Check your data source."
-msgstr ""
+msgstr "<BR>'<STATEMENT>'<BR> ಎಂಬ ಹೇಳಿಕೆಯನ್ನು ಹೊಂದಿರುವ ಪ್ರಶ್ನೆಯನ್ನು ಚಲಾಯಿಸು ಸಾಧ್ಯವಾಗಲಿಲ್ಲ. <BR> ನಿಮ್ಮ ದತ್ತ ಆಕರವನ್ನು ಪರೀಕ್ಷಿಸಿ."
 
 #: source/formwizard/dbwizres.src#RID_DB_REPORT_WIZARD_START + 66.String.Text
 msgid  "The following hidden control in the form '<REPORTFORM>' could not be read: '<CONTROLNAME>'."
-msgstr ""
+msgstr "ಈ ಕೆಳಗಿನ ಗುಪ್ತ ನಿಯಂತ್ರಣದಲ್ಲಿರುವ ಫಾರ್ಮ್ '<REPORTFORM>'  ಅನ್ನು ಓದಲಾಗಲಿಲ್ಲ: '<CONTROLNAME>'."
 
 #: source/formwizard/dbwizres.src#RID_DB_REPORT_WIZARD_START + 67.String.Text
 msgid  "Importing data..."
@@ -1349,7 +1349,7 @@ msgstr "ವರ್ಗ"
 
 #: source/formwizard/dbwizres.src#RID_DB_REPORT_WIZARD_START + 72.String.Text
 msgid  "An error occurred in the wizard.<BR>The template '%PATH' could be erroneous.<BR>Either the required sections or tables do not exist or exist under the wrong name.<BR>See the Help for more detailed information.<BR>Please select another template."
-msgstr ""
+msgstr "ಗಾರುಡಿಯಲ್ಲಿ ಒಂದು ದೋಷ ಉಂಟಾಗಿದೆ.<BR> '%PATH' ನಮೂನೆಯಲ್ಲಿ ದೋಷವಿರಬಹುದು. <BR>ಅವಶ್ಯಕವಾದ ವಿಭಾಗಗಳು ಅಥವ ಕೋಷ್ಟಕಗಳು ಅಸ್ತಿತ್ವದಲ್ಲಿ ಇಲ್ಲದಿರಬಹುದು ಅಥವಾ ತಪ್ಪಾದ ಹೆಸರನ್ನು ಹೊಂದಿರಬಹುದು. <BR>ಹೆಚ್ಚಿನ ಮಾಹಿತಿಗೆ ಸಹಾಯವನ್ನು ನೋಡಿ. <BR>ದಯವಿಟ್ಟು ಬೇರೊಂದು ನಮೂನೆಯನ್ನು ಆಯ್ಕೆ ಮಾಡಿ."
 
 #: source/formwizard/dbwizres.src#RID_DB_REPORT_WIZARD_START + 73.String.Text
 msgid  "There is an invalid user field in a table."
@@ -1357,15 +1357,15 @@ msgstr "ಒಂದು ಕೋಷ್ಟಕದಲ್ಲಿ ಒಂದು ಅಮಾನ
 
 #: source/formwizard/dbwizres.src#RID_DB_REPORT_WIZARD_START + 74.String.Text
 msgid  "The sort criterium '<FIELDNAME>' was chosen twice. Each criterium can only be chosen once."
-msgstr ""
+msgstr "ವಿಂಗಡಣಾ ಮಾನದಂಡ '<FIELDNAME>' ಅನ್ನು ಎರಡು ಬಾರಿ ಆರಿಸಲಾಗಿದೆ. ಪ್ರತಿಯೊಂದು ಮಾನದಂಡವನ್ನು ಕೇವಲ ಒಂದು ಬಾರಿ ಮಾತ್ರವೆ ಆರಿಸಬಹುದಾಗಿದೆ."
 
 #: source/formwizard/dbwizres.src#RID_DB_REPORT_WIZARD_START + 75.String.Text
 msgid  "Note: The dummy text will be replaced by data from the database when the report is created."
-msgstr ""
+msgstr "ಸೂಚನೆ: ವರದಿಯನ್ನು ರಚಿಸುವಾಗ ದತ್ತಸಂಚಯದಲ್ಲಿನ ದತ್ತಾಂಶದಿಂದ ನಕಲಿ ಪಠ್ಯವನ್ನು ಬದಲಾಯಿಸಲಾಗುವುದು."
 
 #: source/formwizard/dbwizres.src#RID_DB_REPORT_WIZARD_START + 76.String.Text
 msgid  "A report '%REPORTNAME' already exists in the database. Please assign another name."
-msgstr ""
+msgstr "ದತ್ತಸಂಚಯದಲ್ಲಿ ಒಂದು ವರದಿ '%REPORTNAME' ಈಗಾಗಲೆ ಅಸ್ತಿತ್ವದಲ್ಲಿದೆ. ದಯವಿಟ್ಟು ಬೇರೊಂದು ಹೆಸರನ್ನು ಸೂಚಿಸಿ."
 
 #: source/formwizard/dbwizres.src#RID_DB_REPORT_WIZARD_START + 78.String.Text
 msgid  "How do you want to proceed after creating the report?"
@@ -1465,7 +1465,7 @@ msgstr "ಕೋಷ್ಟಕವನ್ನು ರಚಿಸು"
 
 #: source/formwizard/dbwizres.src#RID_DB_TABLE_WIZARD_START + 14.String.Text
 msgid  "This wizard helps you to create a table for your database. After selecting a table category and a sample table, choose the fields you want to include in your table. You can include fields from more than one sample table."
-msgstr ""
+msgstr "ಈ ಗಾರುಡಿಯು ನಿಮ್ಮ ದತ್ತಸಂಚಯಕ್ಕಾಗಿ ಒಂದು ಕೋಷ್ಟಕವನ್ನು ರಚಿಸಲು ನಿಮಗೆ ನೆರವಾಗುತ್ತದೆ. ಒಂದು ಕೋಷ್ಟಕ ಪಂಗಡವನ್ನು ಹಾಗು ಒಂದು ನಮೂನೆ ಕೋಷ್ಟಕವನ್ನು ಆಯ್ಕೆ ಮಾಡಿದ ನಂತರ ನಿಮ್ಮ ಕೋಷ್ಟಕದಲ್ಲಿ ಅಡಕಗೊಳಿಸಬೇಕಿರುವ ವರ್ಗಗಳನ್ನು ಆಯ್ಕೆ ಮಾಡಿ. ನೀವು ಒಂದಕ್ಕಿಂತ ಹೆಚ್ಚಿನ ಕೋಷ್ಟಕದಿಂದ ವರ್ಗಗಳನ್ನು ಒಳಗೊಳ್ಳಿಸಬಹುದಾಗಿದೆ."
 
 #: source/formwizard/dbwizres.src#RID_DB_TABLE_WIZARD_START + 15.String.Text
 msgid  "Ca~tegory"
@@ -1509,7 +1509,7 @@ msgstr "ಆಯ್ಕೆ ಮಾಡಲಾದ ವರ್ಗಗಳು(~S)"
 
 #: source/formwizard/dbwizres.src#RID_DB_TABLE_WIZARD_START + 26.String.Text
 msgid  "A primary key uniquely identifies each record in a database table. Primary keys ease the linking of information in separate tables, and it is recommended that you have a primary key in every table. Without a primary key, it will not be possible to enter data into this table."
-msgstr ""
+msgstr "ಒಂದು ಪ್ರಾಥಮಿಕ ಕೀಲಿಯು ದತ್ತಸಂಚಯದಲ್ಲಿನ ಪ್ರತಿಯೊಂದು ದಾಖಲೆಗಳನ್ನು ವಿಶಿಷ್ಟವಾಗಿ ಗುರುತಿಸುತ್ತದೆ. ವಿವಿಧ ಕೋಷ್ಟಕಗಳ ನಡುವೆ ಮಾಹಿತಿಯ ಜೋಡಣೆಯನ್ನು ಪ್ರಾಥಮಿಕ ಕೀಲಿಯು ಸುಲಭಗೊಳಿಸುತ್ತದೆ, ಆದ್ದರಿಂದ ನೀವು ಪ್ರತಿಯೊಂದು ಕೋಷ್ಟಕದಲ್ಲೂ ಒಂದು ಪ್ರಾಥಮಿಕ ಕೀಲಿಯನ್ನು ಹೊಂದಿರುವಂತೆ ಸಲಹೆ ಮಾಡುತ್ತೇವೆ. ಪ್ರಾಥಮಿಕ ಕೀಲಿಯಿಲ್ಲದೆ ನೀವು ಕೋಷ್ಟಕದಲ್ಲಿ ದತ್ತಾಂಶವನ್ನು ನಮೂದಿಸಲು ಸಾಧ್ಯವಿಲ್ಲ."
 
 #: source/formwizard/dbwizres.src#RID_DB_TABLE_WIZARD_START + 27.String.Text
 msgid  "~Create a primary key"
@@ -1545,7 +1545,7 @@ msgstr "ನಿಮ್ಮ ಕೋಷ್ಟಕಕ್ಕೆ ಯಾವ ಹೆಸರಿ
 
 #: source/formwizard/dbwizres.src#RID_DB_TABLE_WIZARD_START + 35.String.Text
 msgid  "Congratulations. You have entered all the information needed to create your table."
-msgstr ""
+msgstr "ಅಭಿನಂದನೆಗಳು. ನಿಮ್ಮ ಕೋಷ್ಟಕವನ್ನು ನಿರ್ಮಿಸಲು ಬೇಕಾದ ಎಲ್ಲಾ ಮಾಹಿತಿಯನ್ನು ಒದಗಿಸಿದ್ದೀರಿ."
 
 #: source/formwizard/dbwizres.src#RID_DB_TABLE_WIZARD_START + 36.String.Text
 msgid  "What do you want to do next?"
@@ -1569,11 +1569,11 @@ msgstr "ನೀವು ನಿರ್ಮಿಸಿದ ಕೋಷ್ಟಕವನ್ನ�
 
 #: source/formwizard/dbwizres.src#RID_DB_TABLE_WIZARD_START + 41.String.Text
 msgid  "The table name '%TABLENAME' contains a character ('%SPECIALCHAR') that might not be supported by the database."
-msgstr ""
+msgstr "ದತ್ತಸಂಚಯದಿಂದ ಬೆಂಬಲವಿರದೆ ಇರದೆ ಇರಬಹುದಾದಂತಹ ಒಂದು ಅಕ್ಷರವನ್ನು ('%SPECIALCHAR') ಕೋಷ್ಟಕದ ಹೆಸರು '%TABLENAME' ಹೊಂದಿದೆ."
 
 #: source/formwizard/dbwizres.src#RID_DB_TABLE_WIZARD_START + 42.String.Text
 msgid  "The field name '%FIELDNAME' contains a special character ('%SPECIALCHAR') that might not be supported by the database."
-msgstr ""
+msgstr "ದತ್ತಸಂಚಯದಿಂದ ಬೆಂಬಲವಿರದೆ ಇರದೆ ಇರಬಹುದಾದಂತಹ ಒಂದು ವಿಶೇಷ ಅಕ್ಷರವನ್ನು ('%SPECIALCHAR') ವರ್ಗದ ಹೆಸರು '%FIELDNAME' ಹೊಂದಿದೆ."
 
 #: source/formwizard/dbwizres.src#RID_DB_TABLE_WIZARD_START + 43.String.Text
 msgid  "Field"
@@ -1593,11 +1593,11 @@ msgstr "ಆಯ್ಕೆ ಮಾಡಲಾದ ವರ್ಗವನ್ನು ತೆಗ
 
 #: source/formwizard/dbwizres.src#RID_DB_TABLE_WIZARD_START + 47.String.Text
 msgid  "The field cannot be inserted because this would exceed the maximum number of %COUNT possible fields in the database table"
-msgstr ""
+msgstr "ವರ್ಗವನ್ನು ಸೇರಿಸಲು ಸಾಧ್ಯವಿಲ್ಲ ಏಕೆಂದರೆ ಇದರಿಂದಾಗಿ ದತ್ತಸಂಚಯದಲ್ಲಿ ಸಾಧ್ಯವಿರುವ ಗರಿಷ್ಟ ಸಂಖ್ಯೆ%COUNT ವರ್ಗಗಳನ್ನು ಮೀರಿದಂತಾಗುತ್ತದೆ"
 
 #: source/formwizard/dbwizres.src#RID_DB_TABLE_WIZARD_START + 48.String.Text
 msgid  "The name '%TABLENAME' already exists.\nPlease enter another name."
-msgstr ""
+msgstr "'%TABLENAME' ಹೆಸರು ಈಗಾಗಲೆ ಅಸ್ತಿತ್ವದಲ್ಲಿದೆ.\nದಯವಿಟ್ಟು ಬೇರೆ ಹೆಸರನ್ನು ನಮೂದಿಸಿ."
 
 #: source/formwizard/dbwizres.src#RID_DB_TABLE_WIZARD_START + 49.String.Text
 msgid  "Catalog of the table"
@@ -1733,7 +1733,7 @@ msgstr "ಪುಟದ ವಿನ್ಯಾಸ"
 
 #: source/formwizard/dbwizres.src#RID_LETTERWIZARDDIALOG_START + 31.String.Text
 msgid  "This wizard helps you to create a letter template. You can then use the template as the basis for writing letters as often as desired."
-msgstr ""
+msgstr "ಈ ಗಾರುಡಿಯ ಸಹಾಯದಿಂದ ಪತ್ರ ನಮೂನೆಯನ್ನು ನಿರ್ಮಿಸಬಹುದಾಗಿದೆ. ನೀವು ಮುಂದೆ ಹೊಸದಾಗಿ ಪತ್ರಗಳನ್ನು ಬರೆಯಬೇಕಾಗಿ ಬಂದಾಗಿ ಈ ನಮೂನೆಯನ್ನು ಆಧಾರವಾಗಿ ಉಪಯೋಗಿಸಬಹುದಾಗಿದೆ."
 
 #: source/formwizard/dbwizres.src#RID_LETTERWIZARDDIALOG_START + 32.String.Text
 msgid  "~Height:"
@@ -1801,11 +1801,11 @@ msgstr "ಅಡಿಲೇಖ"
 
 #: source/formwizard/dbwizres.src#RID_LETTERWIZARDDIALOG_START + 48.String.Text
 msgid  "This wizard creates a letter template which enables you to create multiple letters with the same layout and settings."
-msgstr ""
+msgstr "ಈ ಗಾರುಡಿಯನ್ನು ಬಳಸಿಕೊಂಡು ನಿರ್ಮಿಸಲಾದ ಪತ್ರ ನಮೂನೆಯಿಂದ ಒಂದೆ ರೀತಿಯ ಪುಟ ರೂಪವಿನ್ಯಾಸ ಹೊಂದಿದ ಪತ್ರಗಳನ್ನು ನೀವು ನಿರ್ಮಿಸಬಹುದಾಗಿದೆ."
 
 #: source/formwizard/dbwizres.src#RID_LETTERWIZARDDIALOG_START + 49.String.Text
 msgid  "To create another new letter out of the template just navigate to the template location and double-click it."
-msgstr ""
+msgstr "ಸಿದ್ಧವಿನ್ಯಾಸದಿಂದ ಇನ್ನೊಂದು ಹೊಸ ಪತ್ರವನ್ನು ರಚಿಸಲು ಸಿದ್ಧವಿನ್ಯಾಸವು ಇರುವ ಸ್ಥಳಕ್ಕೆ ಹೋಗಿ ನಂತರ ಅದರ ಮೇಲೆ ಎರಡು ಬಾರಿ ಕ್ಲಿಕ್ಕಿಸಿ."
 
 #: source/formwizard/dbwizres.src#RID_LETTERWIZARDDIALOG_START + 50.String.Text
 msgid  "Template name:"
@@ -1957,7 +1957,7 @@ msgstr "ಪುಟದ ವಿನ್ಯಾಸ"
 
 #: source/formwizard/dbwizres.src#RID_FAXWIZARDDIALOG_START + 17.String.Text
 msgid  "This wizard helps you to create a fax template. The template can then be used to create a fax whenever needed."
-msgstr ""
+msgstr "ಈ ಗಾರುಡಿಯ ಸಹಾಯದಿಂದ ಫ್ಯಾಕ್ಸ್ ನಮೂನೆ ನಿರ್ಮಿಸಬಹುದು. ನಂತರ ಅಗತ್ಯವಿದ್ದಾಗ ಹೊಸದಾಗಿ ಫ್ಯಾಕ್ಸುಗಳನ್ನು ಬರೆಯಲು ಈ ನಮೂನೆಯನ್ನು ಉಪಯೋಗಿಸಬಹುದು."
 
 #: source/formwizard/dbwizres.src#RID_FAXWIZARDDIALOG_START + 18.String.Text
 msgid  "Return address"
@@ -1981,11 +1981,11 @@ msgstr "ಅಡಿಲೇಖ"
 
 #: source/formwizard/dbwizres.src#RID_FAXWIZARDDIALOG_START + 23.String.Text
 msgid  "This wizard creates a fax template which enables you to create multiple faxes with the same layout and settings."
-msgstr ""
+msgstr "ಈ ಗಾರುಡಿಯನ್ನು ಬಳಸಿಕೊಂಡು ನಿರ್ಮಿಸಲಾದ ಫ್ಯಾಕ್ಸ್ ನಮೂನೆಯಿಂದ ಒಂದೆ ರೀತಿಯ ಪುಟ ರೂಪವಿನ್ಯಾಸ ಹೊಂದಿದ ಫ್ಯಾಕ್ಸುಗಳನ್ನು ನೀವು ನಿರ್ಮಿಸಬಹುದಾಗಿದೆ."
 
 #: source/formwizard/dbwizres.src#RID_FAXWIZARDDIALOG_START + 24.String.Text
 msgid  "To create another new fax out of the template, go to the location where you saved the template and double-click the file."
-msgstr ""
+msgstr "ನಮೂನೆಯಿಂದ ಬೇರೊಂದು ಹೊಸ ಫ್ಯಾಕ್ಸನ್ನು ನಿರ್ಮಿಸಲು, ನಮೂನೆಯನ್ನು ಉಳಿಸಿದ ಸ್ಥಳಕ್ಕೆ ಹೋಗಿ ನಂತರ ಕಡತದ ಮೇಲೆ ಎರಡು ಬಾರಿ ಕ್ಲಿಕ್ಕಿಸಿ."
 
 #: source/formwizard/dbwizres.src#RID_FAXWIZARDDIALOG_START + 25.String.Text
 msgid  "Template Name:"
@@ -2000,894 +2000,726 @@ msgid  "What do you want to do next?"
 msgstr "ನಂತರ ನೀವು ಏನು ಮಾಡಲು ಇಚ್ಛಿಸುತ್ತೀರಾ?"
 
 #: source/formwizard/dbwizres.src#RID_FAXWIZARDDIALOG_START + 28.String.Text
-#, fuzzy
 msgid  "Choose the type of fax and a page design"
 msgstr "ಫ್ಯಾಕ್ಸಿನ ಮಾದರಿ ಹಾಗು ಪುಟದ ವಿನ್ಯಾಸವನ್ನು ಆಯ್ಕೆ ಮಾಡಿ"
 
 #: source/formwizard/dbwizres.src#RID_FAXWIZARDDIALOG_START + 29.String.Text
-#, fuzzy
 msgid  "Select items to include in the fax template"
 msgstr "ಫ್ಯಾಕ್ಸ್ ನಮೂನೆಗೆ ಸೇರಿಸಲು ಅಂಶಗಳನ್ನು ಆಯ್ಕೆಮಾಡಿ"
 
 #: source/formwizard/dbwizres.src#RID_FAXWIZARDDIALOG_START + 30.String.Text
-#, fuzzy
 msgid  "Specify sender and recipient information"
 msgstr "ಕಳುಹಿಸುವವರ ಹಾಗು ಸ್ವೀಕರಿಸುವವರ ಮಾಹಿತಿಯನ್ನು ನಮೂದಿಸಿ"
 
 #: source/formwizard/dbwizres.src#RID_FAXWIZARDDIALOG_START + 31.String.Text
-#, fuzzy
 msgid  "Enter text for the footer"
 msgstr "ಅಡಿಲೇಖಕ್ಕೆ ಪದಗಳನ್ನು ನಮೂದಿಸಿ"
 
 #: source/formwizard/dbwizres.src#RID_FAXWIZARDDIALOG_START + 32.String.Text
-#, fuzzy
 msgid  "Choose a name and save the template"
 msgstr "ಒಂದು ಹೆಸರನ್ನು ಸೂಚಿಸಿ ನಂತರ ನಮೂನೆಯನ್ನು ಉಳಿಸಿ"
 
 #: source/formwizard/dbwizres.src#RID_FAXWIZARDDIALOG_START + 33.String.Text
-#, fuzzy
 msgid  "Include ~only on second and following pages"
 msgstr "ಕೇವಲ ಎರಡನೆಯ ಹಾಗು ನಂತರದ ಪುಟಗಳಲ್ಲಿ ಸೇರಿಸು(~o)"
 
 #: source/formwizard/dbwizres.src#RID_FAXWIZARDDIALOG_START + 34.String.Text
-#, fuzzy
 msgid  "~Include page number"
 msgstr "ಪುಟದ ಸಂಖ್ಯೆಯನ್ನು ಒಳಗೊಳ್ಳಿಸು(~I)"
 
 #: source/formwizard/dbwizres.src#RID_FAXWIZARDDIALOG_START + 35.String.Text
-#, fuzzy
 msgid  "~Date"
 msgstr "ದಿನಾಂಕ(~D)"
 
 #: source/formwizard/dbwizres.src#RID_FAXWIZARDDIALOG_START + 36.String.Text
-#, fuzzy
 msgid  "~Type of message"
 msgstr "ಸಂದೇಶದ ಬಗೆ(~T)"
 
 #: source/formwizard/dbwizres.src#RID_FAXWIZARDDIALOG_START + 37.String.Text
-#, fuzzy
 msgid  "Fax Number:"
 msgstr "ಪ್ಯಾಕ್ಸ್ ಸಂಖ್ಯೆ:"
 
 #: source/formwizard/dbwizres.src#RID_FAXWIZARDDIALOG_START + 38.String.Text
-#, fuzzy
 msgid  "Use placeholders for ~recipient's address"
 msgstr "ಸ್ವೀಕರಿಸುವವರ ವಿಳಾಸಕ್ಕಾಗಿ ಸ್ಥಳಸೂಚಕಗಳನ್ನು ಬಳಸು(~r)"
 
 #: source/formwizard/dbwizres.src#RID_FAXWIZARDDIALOG_START + 39.String.Text
-#, fuzzy
 msgid  "Use address database for ~mail merge"
 msgstr "ಮೈಲ್‌ಗಳನ್ನು ವಿಲೀನಗೊಳಿಸಲು ವಿಳಾಸದ ದತ್ತಸಂಚಯವನ್ನು ಬಳಸು(~m)"
 
 #: source/formwizard/dbwizres.src#RID_FAXWIZARDDIALOG_START + 40.String.Text
-#, fuzzy
 msgid  "~New return address"
 msgstr "ಹೊಸ ಹಿಂತಿರುಗಿಸುವ ವಿಳಾಸ(~N)"
 
 #: source/formwizard/dbwizres.src#RID_FAXWIZARDCOMMUNICATION_START + 1.String.Text
-#, fuzzy
 msgid  "Important Information!"
 msgstr "ಮುಖ್ಯವಾದ ಮಾಹಿತಿ!"
 
 #: source/formwizard/dbwizres.src#RID_FAXWIZARDCOMMUNICATION_START + 2.String.Text
-#, fuzzy
 msgid  "For your information"
 msgstr "ನಿಮ್ಮ ಮಾಹಿತಿಗಾಗಿ"
 
 #: source/formwizard/dbwizres.src#RID_FAXWIZARDCOMMUNICATION_START + 3.String.Text
-#, fuzzy
 msgid  "News!"
 msgstr "ಸುದ್ದಿ!"
 
 #: source/formwizard/dbwizres.src#RID_FAXWIZARDSALUTATION_START + 1.String.Text
-#, fuzzy
 msgid  "To whom it may concern,"
 msgstr "ಸಂಬಂಧಪಟ್ಟವರಿಗೆ,"
 
 #: source/formwizard/dbwizres.src#RID_FAXWIZARDSALUTATION_START + 2.String.Text
-#, fuzzy
 msgid  "Dear Sir or Madam,"
 msgstr "ಮಾನ್ಯರೆ,"
 
 #: source/formwizard/dbwizres.src#RID_FAXWIZARDSALUTATION_START + 3.String.Text
-#, fuzzy
 msgid  "Hello,"
 msgstr "ನಮಸ್ಕಾರ,"
 
 #: source/formwizard/dbwizres.src#RID_FAXWIZARDSALUTATION_START + 4.String.Text
-#, fuzzy
 msgid  "Hi,"
 msgstr "ನಮಸ್ಕಾರ,"
 
 #: source/formwizard/dbwizres.src#RID_FAXWIZARDGREETING_START + 1.String.Text
-#, fuzzy
 msgid  "Sincerely"
 msgstr "ಸವಿನಯದಿಂದ"
 
 #: source/formwizard/dbwizres.src#RID_FAXWIZARDGREETING_START + 2.String.Text
-#, fuzzy
 msgid  "Yours faithfully"
 msgstr "ನಿಮ್ಮ ವಿಶ್ವಾಸಿ"
 
 #: source/formwizard/dbwizres.src#RID_FAXWIZARDGREETING_START + 3.String.Text
-#, fuzzy
 msgid  "Regards"
 msgstr "ವಂದನೆಗಳು"
 
 #: source/formwizard/dbwizres.src#RID_FAXWIZARDGREETING_START + 4.String.Text
-#, fuzzy
 msgid  "Love"
 msgstr "ಪ್ರೀತಿ"
 
 #: source/formwizard/dbwizres.src#RID_FAXWIZARDROADMAP_START + 1.String.Text
-#, fuzzy
 msgid  "Page design"
 msgstr "ಪುಟದ ವಿನ್ಯಾಸ"
 
 #: source/formwizard/dbwizres.src#RID_FAXWIZARDROADMAP_START + 2.String.Text
-#, fuzzy
 msgid  "Items to include"
 msgstr "ಸೇರಿಸ ಬೇಕಿರುವ ಅಂಶಗಳು"
 
 #: source/formwizard/dbwizres.src#RID_FAXWIZARDROADMAP_START + 3.String.Text
-#, fuzzy
 msgid  "Sender and Recipient"
 msgstr "ಕಳಿಸುವವರು ಮತ್ತು ಸ್ವೀಕರಿಸುವವರು"
 
 #: source/formwizard/dbwizres.src#RID_FAXWIZARDROADMAP_START + 4.String.Text
-#, fuzzy
 msgid  "Footer"
 msgstr "ಅಡಿಲೇಖ"
 
 #: source/formwizard/dbwizres.src#RID_FAXWIZARDROADMAP_START + 5.String.Text
-#, fuzzy
 msgid  "Name and location"
 msgstr "ಹೆಸರು ಮತ್ತು ಸ್ಥಳ"
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +1.String.Text
-#, fuzzy
 msgid  "Web Wizard"
 msgstr "ಜಾಲ ಗಾರುಡಿ"
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +2.String.Text
 msgid  "This Web Wizard is to aid you in publishing documents on the Internet.\n\nIt will convert the documents so that they can be viewed by a web browser. In addition, it will generate a Table of Contents page with links for easy access to the documents. The Web Wizard will also allow you to customize the design and layout of your web site.\n\nYou will be able to keep the documents you have published on the web up-to-date and add or remove documents at any time."
-msgstr ""
+msgstr "ಜಾಲ ಗಾರುಡಿಯು ನಿಮಗೆ ಅಂತರಜಾಲದಲ್ಲಿ ದಸ್ತಾವೇಜುಗಳನ್ನು ಪ್ರಕಟಿಸಲು ನೆರವಾಗುತ್ತದೆ.\n\nದಸ್ತಾವೇಜುಗಳನ್ನು ಜಾಲವೀಕ್ಷಕದಲ್ಲಿ ನೀವು ನೋಡುವಂತಹ ಅವನ್ನು ಮಾರ್ಪಡಿಸುತ್ತದೆ. ಇದರ ಜೊತೆಗೆ, ದಸ್ತಾವೇಜನ್ನು ಸುಲಭವಾಗಿ ನಿಲುಕಿಸಿಕೊಳ್ಳುವ ಸಲುವಾಗಿ ಇದು ಸಂಪರ್ಕಕೊಂಡಿಗಳನ್ನು ಒಳಗೊಂಡಂತಹ ವಿಷಯಗಳ ಸೂಚಿಯನ್ನೂ ಹೊಂದಿರುತ್ತದೆ. ಜಾಲ ಗಾರುಡಿಯನ್ನು ಬಳಸಿಕೊಂಡು ನೀವು ಯಾವಾಗ ಬೇಕಿದ್ದರೂ ನಿಮ್ಮ ಜಾಲತಾಣದ ವಿನ್ಯಾಸವನ್ನು ಹಾಗು ರೂಪುರೇಷೆಗಳನ್ನು ಬದಲಾಯಿಸಬಹುದಾಗಿದೆ.\n\nನೀವು ಜಾಲದಲ್ಲಿ ಪ್ರಕಟಿಸಿದ ದಸ್ತಾವೇಜುಗಳನ್ನು ನವೀಕರಿಸಬಹುದು ಹಾಗು ಯಾವುದೆ ಸಮಯದಲ್ಲಿ ಅವುಗಳನ್ನು ಸೇರಿಸಬಹುದು ಅಥವ ತೆಗೆದು ಹಾಕಬಹುದು."
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +4.String.Text
-#, fuzzy
 msgid  "~Delete"
 msgstr "ಅಳಿಸು(~D)"
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +5.String.Text
-#, fuzzy
 msgid  "Introduction"
 msgstr "ಪರಿಚಯ"
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +6.String.Text
-#, fuzzy
 msgid  "Select the documents you want to publish"
 msgstr "ನೀವು ಪ್ರಕಟಿಸಲು ಬಯಸುವ ದಸ್ತಾವೇಜುಗಳನ್ನು ಆಯ್ಕೆ ಮಾಡಿ"
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +8.String.Text
-#, fuzzy
 msgid  "Document information "
 msgstr "ದಸ್ತಾವೇಜಿನ ಮಾಹಿತಿ "
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +9.String.Text
-#, fuzzy
 msgid  "~Title:"
 msgstr "ಶೀರ್ಷಿಕೆ(~T):"
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +10.String.Text
-#, fuzzy
 msgid  "~Summary: "
 msgstr "ಸಾರಾಂಶ(~S): "
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +11.String.Text
-#, fuzzy
 msgid  "Au~thor:"
 msgstr "ಕತೃ(~A):"
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +12.String.Text
-#, fuzzy
 msgid  "~Export to file format:"
 msgstr "ಕಡತ ವಿನ್ಯಾಸಕ್ಕೆ ರಫ್ತು ಮಾಡು(~E):"
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +13.String.Text
-#, fuzzy
 msgid  "Enter general information for your web site"
 msgstr "ನಿಮ್ಮ ಜಾಲ ತಾಣಕ್ಕಾಗಿನ ಸಾಮಾನ್ಯ ಮಾಹಿತಿಯನ್ನು ನಮೂದಿಸಿ"
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +14.String.Text
-#, fuzzy
 msgid  "Title:"
 msgstr "ಶೀರ್ಷಿಕೆ:"
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +16.String.Text
-#, fuzzy
 msgid  "Description:"
 msgstr "ವಿವರಣೆ:"
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +18.String.Text
-#, fuzzy
 msgid  "Created:"
 msgstr "ನಿರ್ಮಿಸಿದ್ದು:"
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +20.String.Text
-#, fuzzy
 msgid  "E-mail:"
 msgstr "ಇ-ಮೈಲ್:"
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +21.String.Text
-#, fuzzy
 msgid  "Copyright notice:"
 msgstr "ಹಕ್ಕು ಸೂಚನೆ:"
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +22.String.Text
-#, fuzzy
 msgid  "Modified:"
 msgstr "ಮಾರ್ಪಾಡಿಸಲಾಗಿದ್ದು:"
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +24.String.Text
-#, fuzzy
 msgid  "~Preview"
 msgstr "ಮುನ್ನೋಟ(~P)"
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +25.String.Text
-#, fuzzy
 msgid  "Where do you want to publish your web site?"
 msgstr "ನಿಮ್ಮ ಜಾಲ ತಾಣವನ್ನು ಎಲ್ಲಿ ಪ್ರಕಟಿಸಲು ಬಯಸುತ್ತೀರಾ?"
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +26.String.Text
-#, fuzzy
 msgid  "Publish the new web site:"
 msgstr "ಹೊಸ ಜಾಲ ತಾಣವನ್ನು ಪ್ರಕಟಿಸಿ:"
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +27.String.Text
-#, fuzzy
 msgid  "To a ~local folder"
 msgstr "ಸ್ಥಳೀಯ ಕಡತಕೋಶಕ್ಕೆ(~a)"
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +28.String.Text
-#, fuzzy
 msgid  "..."
 msgstr "..."
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +29.String.Text
-#, fuzzy
 msgid  "To a ~web server via FTP"
 msgstr "FTP ಮೂಲಕ ಒಂದು ಜಾಲ ಪರಿಚಾರಕಕ್ಕೆ(~w)"
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +31.String.Text
-#, fuzzy
 msgid  "~Configure..."
 msgstr "ಸಂರಚಿಸು(~C)..."
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +32.String.Text
-#, fuzzy
 msgid  "To a ZIP ~archive"
 msgstr "ಒಂದು ZIP ಆರ್ಕೈವಿಗೆ(~a)"
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +33.String.Text
-#, fuzzy
 msgid  "..."
 msgstr "..."
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +34.String.Text
-#, fuzzy
 msgid  "~Save settings (recommended)"
 msgstr "ಸಿದ್ಧತೆಗಳನ್ನು ಉಳಿಸು(ಸಲಹೆ ಮಾಡಲಾಗುವುದು)(~S)"
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +35.String.Text
-#, fuzzy
 msgid  "Save ~as:"
 msgstr "ಹೀಗೆ ಉಳಿಸು(~a):"
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +36.String.Text
-#, fuzzy
 msgid  "~Choose settings for the Web Wizard"
 msgstr "ಜಾಲ ಗಾರುಡಿಯ ಸಿದ್ಧತೆಗಳನ್ನು ಆಯ್ಕೆಮಾಡು(~C)"
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +37.String.Text
-#, fuzzy
 msgid  "Web site content "
 msgstr "ಜಾಲ ತಾಣದ ವಿಷಯ "
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +38.String.Text
-#, fuzzy
 msgid  "~Add..."
 msgstr "ಸೇರಿಸು(~A)..."
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +39.String.Text
-#, fuzzy
 msgid  "Remo~ve"
 msgstr "ತೆಗೆದು ಹಾಕು(~v)"
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +40.String.Text
-#, fuzzy
 msgid  "Choose a layout for the table of contents of your web site"
 msgstr "ನಿಮ್ಮ್ ಜಾಲ ತಾಣಕ್ಕಾಗಿ ವಿಷಯಗಳ ಸೂಚಿಯ ಒಂದು ರೂಪವಿನ್ಯಾಸವನ್ನು ಆಯ್ಕೆಮಾಡಿ"
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +41.String.Text
-#, fuzzy
 msgid  "Select a style for the table of contents page"
 msgstr "ವಿಷಯಗಳ ಸೂಚಿಯ ಪುಟಕ್ಕಾಗಿ ಒಂದು ಶೈಲಿಯನ್ನು ಆಯ್ಕೆಮಾಡಿ"
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +42.String.Text
-#, fuzzy
 msgid  "~Style:"
 msgstr "ಶೈಲಿ(~S):"
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +48.String.Text
-#, fuzzy
 msgid  "~Layouts: "
 msgstr "ರೂಪವಿನ್ಯಾಸಗಳು(~L):"
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +50.String.Text
-#, fuzzy
 msgid  "~Description"
 msgstr "ವಿವರಣೆ(~D)"
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +51.String.Text
-#, fuzzy
 msgid  "~Author"
 msgstr "ಕರ್ತೃ(~A)"
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +52.String.Text
-#, fuzzy
 msgid  "Cr~eation date"
 msgstr "ನಿರ್ಮಿಸಿದ ದಿನಾಂಕ(~e)"
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +53.String.Text
-#, fuzzy
 msgid  "~Last change date"
 msgstr "ಕೊನೆಯ ಬದಲಾವಣೆಯ ದಿನಾಂಕ(~L)"
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +54.String.Text
-#, fuzzy
 msgid  "~File name"
 msgstr "ಕಡತದ ಹೆಸರು(~F)"
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +55.String.Text
-#, fuzzy
 msgid  "File forma~t"
 msgstr "ಕಡತ ವಿನ್ಯಾಸ(~t)"
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +56.String.Text
-#, fuzzy
 msgid  "File format ~icon"
 msgstr "ಕಡತ ವಿನ್ಯಾಸದ ಚಿಹ್ನೆ(~i)"
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +57.String.Text
-#, fuzzy
 msgid  "Number ~of pages"
 msgstr "ಒಟ್ಟು ಪುಟಗಳ ಸಂಖ್ಯೆ(~o)"
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +58.String.Text
-#, fuzzy
 msgid  "~Size in KB"
 msgstr "KB ಯಲ್ಲಿ ಗಾತ್ರ(~S)"
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +59.String.Text
-#, fuzzy
 msgid  "Click 'Preview' to see a preview in your browser:"
 msgstr "ವೀಕ್ಷಕದ ಮುನ್ನೋಟವನ್ನು ನೋಡಲು 'ಮುನ್ನೋಟ' ಅನ್ನು ಕ್ಲಿಕ್ ಮಾಡಿ:"
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +60.String.Text
-#, fuzzy
 msgid  "Customize the selected layout"
 msgstr "ಆಯ್ಕೆ ಮಾಡಿರುವ ರೂಪವಿನ್ಯಾಸವನ್ನು ಇಚ್ಚೆಯಂತೆ ಬದಲಾಯಿಸಿ."
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +61.String.Text
 msgid  "Include the following information for each document in the table of contents:"
-msgstr ""
+msgstr "ಪ್ರತಿ ದಸ್ತಾವೇಜಿಗಾಗಿ ಈ ಕೆಳಗಿನ ಮಾಹಿತಿಯನ್ನು ವಿಷಯಗಳ ಸೂಚಿಯಲ್ಲಿ ಸೇರಿಸಿ:"
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +62.String.Text
-#, fuzzy
 msgid  "Optimize the layout for screen resolution:"
 msgstr "ತೆರೆಯ ರೆಸಲ್ಯೂಶನ್‌ಗೆ ಹೊಂದುವಂತೆ ರೂಪುರೇಷೆಯನ್ನು ಸೂಕ್ತವಾಗಿ ಬದಲಾಗಯಿಸಿ:"
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +64.String.Text
-#, fuzzy
 msgid  "~640x480"
 msgstr "~640x480"
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +65.String.Text
-#, fuzzy
 msgid  "~800x600"
 msgstr "~800x600"
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +66.String.Text
-#, fuzzy
 msgid  "~1024x768"
 msgstr "~1024x768"
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +70.String.Text
-#, fuzzy
 msgid  "Generating Your Web Site"
 msgstr "ನಿಮ್ಮ ಜಾಲ ತಾಣವನ್ನು ನಿರ್ಮಿಸಲಾಗುತ್ತಿದೆ"
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +71.String.Text
-#, fuzzy
 msgid  "%START - %END/%TOTAL"
 msgstr "%START - %END/%TOTAL"
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +72.String.Text
-#, fuzzy
 msgid  "myWebsite"
 msgstr "myWebsite"
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +73.String.Text
-#, fuzzy
 msgid  "FTP target '%FILENAME' is a file."
 msgstr "FTP ಗುರಿ '%FILENAME' ಯು ಒಂದು ಕಡತವಾಗಿದೆ."
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +74.String.Text
-#, fuzzy
 msgid  "The local target '%FILENAME' is a file."
 msgstr "ಸ್ಥಳೀಯ ನಿಗದಿತ ಗುರಿ '%FILENAME' ಯು ಒಂದು ಕಡತವಾಗಿದೆ."
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +75.String.Text
 msgid  "The ZIP target '%FILENAME' already exists. Do you want to overwrite the existing target? "
-msgstr ""
+msgstr "ಝಿಪ್‌ ಗುರಿ '%FILENAME' ಯು ಈಗಾಗಲೆ ಲಭ್ಯವಿದೆ. ಅದನ್ನು ನೀವು ತಿದ್ದಿ ಬರೆಯಲು ಇಚ್ಛಿಸುತ್ತೀರಾ? "
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +76.String.Text
 msgid  "The FTP target directory '%FILENAME' is not empty. Some files might be overwritten. Do you want to continue?"
-msgstr ""
+msgstr "ನಿಗದಿತ FTP ಕೋಶ '%FILENAME' ಖಾಲಿ ಇಲ್ಲ. ಕೆಲವು ಕಡತಗಳನ್ನು ತಿದ್ದಿ ಬರೆಯಲಾಗಬಹುದು. ನೀವು ಮುಂದುವರೆಯಲು ಇಚ್ಛಿಸುತ್ತೀರಾ?"
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +77.String.Text
 msgid  "The local target directory '%FILENAME' is not empty. Some files might be overwritten. Do you want to continue?"
-msgstr ""
+msgstr "ನಿಗದಿತ ಸ್ಥಳೀಯ ಕೋಶ '%FILENAME' ಖಾಲಿ ಇಲ್ಲ. ಕೆಲವು ಕಡತಗಳನ್ನು ತಿದ್ದಿ ಬರೆಯಲಾಗಬಹುದು. ನೀವು ಮುಂದುವರೆಯಲು ಇಚ್ಛಿಸುತ್ತೀರಾ?"
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +78.String.Text
 msgid  "Settings already exist under the given name. Do you want to overwrite the existing settings? "
-msgstr ""
+msgstr "ಸೂಚಿಸಿದ ಹೆಸರಿನಲ್ಲಿ ಸಿದ್ಧತೆಗಳು ಈಗಾಗಲೆ ಅಸ್ತಿತ್ವದಲ್ಲಿದೆ. ಈಗ ಇರುವ ಸಿದ್ಧತೆಗಳನ್ನು ತಿದ್ದಿ ಬರೆಯಲು ಇಚ್ಚಿಸುತ್ತೀರಾ?"
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +79.String.Text
-#, fuzzy
 msgid  "Exporting documents..."
 msgstr "ದಸ್ತಾವೇಜುಗಳನ್ನು ರಫ್ತುಮಾಡಲಾಗುತ್ತಿದೆ..."
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +80.String.Text
-#, fuzzy
 msgid  "Preparing export..."
 msgstr "ರಫ್ತುಮಾಡಲು ಸಿದ್ಧಗೊಳಿಸಲಾಗುತ್ತಿದೆ..."
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +81.String.Text
-#, fuzzy
 msgid  "Copying layout files..."
 msgstr "ರೂಪವಿನ್ಯಾಸ ಕಡತಗಳನ್ನು ಕಾಪಿ ಮಾಡಲಾಗುತ್ತಿದೆ..."
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +82.String.Text
-#, fuzzy
 msgid  "Preparing table of contents generation..."
 msgstr "ವಿಷಯಗಳ ಸೂಚಿಯನ್ನು ನಿರ್ಮಿಸಲು ಸಿದ್ಧತೆ ನಡೆಸಲಾಗುತ್ತಿದೆ..."
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +83.String.Text
-#, fuzzy
 msgid  "Generating table of contents..."
 msgstr "ವಿಷಯಗಳ ಸೂಚಿಯನ್ನು ನಿರ್ಮಿಸಲಾಗುತ್ತಿದೆ..."
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +84.String.Text
-#, fuzzy
 msgid  "Initializing..."
 msgstr "ಆರಂಭಿಸಲಾಗುತ್ತಿದೆ..."
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +86.String.Text
-#, fuzzy
 msgid  "Preparing to publish..."
 msgstr "ಪ್ರಕಟಿಸಲು ಸಿದ್ಧಗೊಳಿಸಲಾಗುತ್ತಿದೆ..."
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +87.String.Text
-#, fuzzy
 msgid  "Publishing to local directory..."
 msgstr "ಸ್ಥಳೀಯ ಕಡತಕೋಶಕ್ಕೆ ಪ್ರಕಟಿಸಲಾಗುತ್ತಿದೆ..."
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +88.String.Text
-#, fuzzy
 msgid  "Publishing to FTP destination..."
 msgstr "FTP ಸ್ಥಳಕ್ಕೆ ಪ್ರಕಟಿಸಲಾಗುತ್ತಿದೆ..."
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +89.String.Text
-#, fuzzy
 msgid  "Publishing to a ZIP archive..."
 msgstr "ZIP ಆರ್ಕೈವ್‌ಗೆ ಪ್ರಕಟಿಸಲಾಗುತ್ತಿದೆ..."
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START + 90.String.Text
-#, fuzzy
 msgid  "Finishing..."
 msgstr "ಮುಗಿಯುತ್ತಿದೆ.."
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START + 94.String.Text
-#, fuzzy
 msgid  "Graphic files"
 msgstr "ಗ್ರಾಫಿಕ್ ಕಡತಗಳು"
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START + 95.String.Text
-#, fuzzy
 msgid  "All files"
 msgstr "ಎಲ್ಲಾ ಕಡತಗಳು"
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START + 96.String.Text
-#, fuzzy
 msgid  "~ZIP archive files"
 msgstr "~ZIP ಆರ್ಕೈವ್ ಕಡತಗಳು"
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START + 98.String.Text
-#, fuzzy
 msgid  "Background images"
 msgstr "ಹಿನ್ನೆಲೆ ಚಿತ್ರಗಳು"
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START + 99.String.Text
-#, fuzzy
 msgid  "Choose a background image: "
 msgstr "ಹಿನ್ನೆಲೆ ಚಿತ್ರವನ್ನು ಆಯ್ಕೆಮಾಡಿ: "
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START + 100.String.Text
-#, fuzzy
 msgid  "Icon sets"
 msgstr "ಚಿಹ್ನೆ ಗುಂಪುಗಳು"
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START + 101.String.Text
-#, fuzzy
 msgid  "Choose an icon set:"
 msgstr "ಚಿಹ್ನೆಯ ಗುಂಪನ್ನು ಆಯ್ಕೆ ಮಾಡಿ:"
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +102.String.Text
-#, fuzzy
 msgid  "Other..."
 msgstr "ಇತರೆ..."
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +103.String.Text
-#, fuzzy
 msgid  "None"
 msgstr "ಯಾವುದು ಇಲ್ಲ"
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +104.String.Text
-#, fuzzy
 msgid  "Your web site was created successfully into: %FILENAME"
 msgstr "ಜಾಲ ತಾಣವನ್ನು ಇಲ್ಲಿ ಯಶಸ್ವಿಯಾಗಿ ನಿರ್ಮಿಸಲಾಯಿತು: %FILENAME"
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +105.String.Text
-#, fuzzy
 msgid  "One or more errors occurred when generating the web site."
 msgstr "ಜಾಲ ತಾಣವನ್ನು ನಿರ್ಮಿಸುವಾಗ ಒಂದು ಅಥವಾ ಹೆಚ್ಚಿನ ದೋಷಗಳು ಉಂಟಾಗಿದೆ."
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +106.String.Text
-#, fuzzy
 msgid  "An error occurred while generating the table of contents page(s). "
 msgstr "ವಿಷಯಗಳ ಸೂಚಿ ಪುಟವನ್ನು(ಗಳನ್ನು) ನಿರ್ಮಿಸುವಾಗ ದೋಷ ಉಂಟಾಗಿದೆ. "
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +107.String.Text
-#, fuzzy
 msgid  "An error occurred while copying the layout files. "
 msgstr "ರೂಪವಿನ್ಯಾಸ ಕಡತಗಳನ್ನು ಕಾಪಿ ಮಾಡುವಾಗ ದೋಷ ಉಂಟಾಗಿದೆ. "
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +108.String.Text
 msgid  "An error occurred while gathering document information for '%FILENAME'. "
-msgstr ""
+msgstr "'%FILENAME'ನ ದಸ್ತಾವೇಜಿನ ಮಾಹಿತಿಯನ್ನು ಕಲೆಹಾಕುವಾಗ ದೋಷ ಉಂಟಾಗಿದೆ."
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +109.String.Text
-#, fuzzy
 msgid  "An error occurred while exporting the document '%FILENAME'."
 msgstr "'%FILENAME' ದಸ್ತಾವೇಜನ್ನು ರಫ್ತುಮಾಡುವಾಗ ದೋಷ ಉಂಟಾಗಿದೆ."
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +110.String.Text
-#, fuzzy
 msgid  "An error occurred while creating a directory for exporting '%FILENAME'."
 msgstr "'%FILENAME' ರಫ್ತು ಮಾಡಲು ಒಂದು ಕೋಶವನ್ನು ನಿರ್ಮಿಸುವಾಗ ದೋಷ ಉಂಟಾಗಿದೆ."
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +111.String.Text
-#, fuzzy
 msgid  "A security error occurred while exporting the document '%FILENAME'."
 msgstr "'%FILENAME' ದಸ್ತಾವೇಜನ್ನು ರಫ್ತುಮಾಡುವಾಗ ಸುರಕ್ಷತೆಯ ದೋಷ ಉಂಟಾಗಿದೆ."
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +112.String.Text
 msgid  "An input/output error occurred while exporting the document '%FILENAME'."
-msgstr ""
+msgstr "'%FILENAME' ದಸ್ತಾವೇಜನ್ನು ರಫ್ತುಮಾಡುವಾಗ ಇನ್‌ಪುಟ್/ಔಟ್‌ಪುಟ್‌ ದೋಷ ಉಂಟಾಗಿದೆ."
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +113.String.Text
-#, fuzzy
 msgid  "An error occurred while copying media files to the temporary directory."
 msgstr "ತಾತ್ಕಾಲಿಕ ಕೋಶಕ್ಕೆ ಮೀಡಿಯಾ ಕಡತಗಳನ್ನು ಕಾಪಿ ಮಾಡುವಾಗ ದೋಷ ಉಂಟಾಗಿದೆ."
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +114.String.Text
-#, fuzzy
 msgid  "The web site could not be copied to the following destination: %URL"
 msgstr "ಜಾಲ ತಾಣವನ್ನು ನಿಗದಿತ ಸ್ಥಳಕ್ಕೆ ಕಾಪಿ ಮಾಡಲು ಸಾಧ್ಯವಾಗಲಿಲ್ಲ: %URL"
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +115.String.Text
-#, fuzzy
 msgid  "An unexpected error occurred: %ERROR"
 msgstr "ಅನಿರೀಕ್ಷಿತವಾದ ದೋಷ ಉಂಟಾಗಿದೆ: %ERROR"
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +116.String.Text
-#, fuzzy
 msgid  "An unexpected error occurred while validating the file: '%FILENAME'"
 msgstr "ಕಡತವನ್ನು ಪರಿಶೀಲಿಸುವಾಗ ಅನಿರೀಕ್ಷಿತವಾದ ದೋಷ ಉಂಟಾಗಿದೆ: '%FILENAME'"
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +117.String.Text
-#, fuzzy
 msgid  "%FILENAME' is a folder."
 msgstr "%FILENAME' ಅನ್ನುವುದು ಒಂದು ಕಡತಕೋಶವಾಗಿದೆ."
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +118.String.Text
-#, fuzzy
 msgid  "Loading Web Wizard Settings..."
 msgstr "ಜಾಲ ಗಾರುಡಿಯ ಸಿದ್ಧತೆಗಳನ್ನು ಲೋಡ್‌ ಮಾಡಲಾಗುತ್ತಿದೆ..."
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +119.String.Text
-#, fuzzy
 msgid  "An unexpected error occurred."
 msgstr "ಅನಿರೀಕ್ಷಿತವಾದ ದೋಷ ಉಂಟಾಗಿದೆ."
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +120.String.Text
-#, fuzzy
 msgid  "Validating documents..."
 msgstr "ದಸ್ತಾವೇಜುಗಳನ್ನು ಪರಿಶೀಲಿಸಲಾಗುತ್ತಿದೆ..."
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +121.String.Text
-#, fuzzy
 msgid  "My Archive"
 msgstr "ನನ್ನ ಆರ್ಕೈವ್"
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +122.String.Text
-#, fuzzy
 msgid  "Introduction "
 msgstr "ಪರಿಚಯ "
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +123.String.Text
-#, fuzzy
 msgid  "Documents "
 msgstr "ದಸ್ತಾವೇಜುಗಳು "
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +124.String.Text
-#, fuzzy
 msgid  "Main layout"
 msgstr "ಮುಖ್ಯ ರೂಪವಿನ್ಯಾಸ"
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +125.String.Text
-#, fuzzy
 msgid  "Layout details"
 msgstr "ರೂಪವಿನ್ಯಾಸದ ವಿವರಗಳು"
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +126.String.Text
-#, fuzzy
 msgid  "Style"
 msgstr "ಶೈಲಿ"
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +127.String.Text
-#, fuzzy
 msgid  "Web site information"
 msgstr "ಜಾಲತಾಣದ ಮಾಹಿತಿ"
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +128.String.Text
-#, fuzzy
 msgid  "Preview"
 msgstr "ಮುನ್ನೋಟ"
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +130.String.Text
 msgid  "The selected settings will be deleted.\n\nDo you really want to delete these settings? "
-msgstr ""
+msgstr "ಆಯ್ಕೆ ಮಾಡಲಾದ ಸಿದ್ಧತೆಗಳನ್ನು ಅಳಿಸಲಾಗುತ್ತದೆ.\n\nನೀವು ನಿಜವಾಗಲು ಈ ಸಿದ್ಧತೆಗಳನ್ನು ಅಳಿಸಲು ಬಯಸುತ್ತೀರಾ?"
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +131.String.Text
-#, fuzzy
 msgid  "%NUMBER pages"
 msgstr "%NUMBER ಪುಟಗಳು"
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +132.String.Text
-#, fuzzy
 msgid  "%NUMBER slides"
 msgstr "%NUMBER ಜಾರುಫಲಕಗಳು"
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +133.String.Text
-#, fuzzy
 msgid  "Created: %DATE"
 msgstr "ಸೃಷ್ಟಿಸಿಲಾಗಿದ್ದು: %DATE"
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +134.String.Text
-#, fuzzy
 msgid  "Last modified: %DATE"
 msgstr "ಕೊನೆಯ ಬಾರಿ ಬದಲಾಯಿಸಿದ್ದು: %DATE"
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +135.String.Text
-#, fuzzy
 msgid  "Web Wizard Settings"
 msgstr "ಜಾಲ ಗಾರುಡಿಯ ಸಿದ್ಧತೆಗಳು"
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +136.String.Text
-#, fuzzy
 msgid  "Background image:"
 msgstr "ಹಿನ್ನೆಲೆ ಚಿತ್ರ:"
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +137.String.Text
-#, fuzzy
 msgid  "Icon set:"
 msgstr "ಐಕಾನ್ ಗುಂಪು:"
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +138.String.Text
-#, fuzzy
 msgid  "The icon set is used for presentations in HTML format."
 msgstr "HTML ವಿನ್ಯಾಸದಲ್ಲಿನ ಪ್ರಸ್ತುತಿಗಳಲ್ಲಿ ಲಾಂಛನ ಜೋಡಿಯನ್ನು ಬಳಸಲಾಗುತ್ತದೆ."
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +139.String.Text
-#, fuzzy
 msgid  "HTML Metadata"
 msgstr "HTML ಮೆಟಾಡೇಟ"
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +140.String.Text
-#, fuzzy
 msgid  "Choose..."
 msgstr "ಆಯ್ಕೆಮಾಡು..."
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +141.String.Text
-#, fuzzy
 msgid  "Choose..."
 msgstr "ಆಯ್ಕೆಮಾಡು..."
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +142.String.Text
-#, fuzzy
 msgid  "<default>"
 msgstr "<ಪೂರ್ವನಿಯೋಜಿತ>"
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +143.String.Text
-#, fuzzy
 msgid  "Publishing via FTP Proxy is not supported."
 msgstr "FTP ಪ್ರಾಕ್ಸಿಯ ಮೂಲಕ ಪ್ರಕಟಿಸಲು ಬೆಂಬಲವಿಲ್ಲ."
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +144.String.Text
-#, fuzzy
 msgid  "<no background image>"
 msgstr "<ಹಿನ್ನೆಲೆ ಚಿತ್ರವಿಲ್ಲ>"
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +145.String.Text
-#, fuzzy
 msgid  "<no icon set>"
 msgstr "<ಚಿಹ್ನೆಯ ಗುಂಪು ಇಲ್ಲ>"
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +146.String.Text
-#, fuzzy
 msgid  "The FTP directory '%FILENAME' could not be created."
 msgstr "FTP ಕಡತಕೋಶ '%FILENAME' ಅನ್ನು ನಿರ್ಮಿಸಲಾಗಿಲ್ಲ."
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +147.String.Text
 msgid  "The FTP directory '%FILENAME' does not exist. \nCreate the directory now?"
-msgstr ""
+msgstr "FTP ಕೋಶ '%FILENAME' ಅಸ್ತಿತ್ವದಲಿಲ್ಲ. \nಕೋಶವನ್ನು ಈಗಲೆ ನಿರ್ಮಿಸಬೇಕೆ?"
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +148.String.Text
 msgid  "The Zip file '%FILENAME' cannot be created: a directory of the same name already exists."
-msgstr ""
+msgstr "ಝಿಪ್‌ ಕಡತ '%FILENAME' ಅನ್ನು ನಿರ್ಮಿಸಲಾಗಿಲ್ಲ: ಇದೆ ಹೆಸರಿನ ಒಂದು ಕೋಶವು ಆಗಲೆ ಅಸ್ತಿತ್ವದಲ್ಲಿದೆ."
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +149.String.Text
 msgid  "The local directory '%FILENAME' cannot be created. \nPlease check your write-access."
-msgstr ""
+msgstr "ಸ್ಥಳೀಯ ಕೋಶ'%FILENAME' ಅನ್ನು ನಿರ್ಮಿಸಲಾಗಿಲ್ಲ. \nನಿಮಗೆ ಬರೆಯುವ ಹಕ್ಕು ಇದೆಯೆ ಎಂದು ಖಚಿತಪಡಿಸಿಕೊಳ್ಳಿ."
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +150.String.Text
 msgid  "The local directory '%FILENAME' does not exist. \nCreate the directory now?"
-msgstr ""
+msgstr "ಸ್ಥಳೀಯ ಕೋಶ '%FILENAME' ಅಸ್ತಿತ್ವದಲಿಲ್ಲ. \nಕೋಶವನ್ನು ಈಗಲೆ ನಿರ್ಮಿಸಬೇಕೆ?"
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +151.String.Text
-#, fuzzy
 msgid  "Size: %NUMBERKB"
 msgstr "ಗಾತ್ರ: %NUMBERKB"
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +152.String.Text
-#, fuzzy
 msgid  "File not found. Would you like to specify a new file location?"
 msgstr "ಕಡತವು ದೊರೆಯಲಿಲ್ಲ. ಬೇರೆ ಕಡತ ಸ್ಥಳವನ್ನು ಸೂಚಿಸಲು ಇಚ್ಚಿಸುತ್ತೀರಾ?"
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_FTP +0.String.Text
-#, fuzzy
 msgid  "FTP Connection"
 msgstr "FTP ಸಂಪರ್ಕ"
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_FTP +1.String.Text
-#, fuzzy
 msgid  "~User name:"
 msgstr "ಬಳಕೆದಾರರ ಹೆಸರು(~U):"
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_FTP +2.String.Text
-#, fuzzy
 msgid  "~Password:"
 msgstr "ಗುಪ್ತಪದ(~P):"
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_FTP +3.String.Text
-#, fuzzy
 msgid  "Connect"
 msgstr "ಸಂಪರ್ಕಿಸು"
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_FTP +4.String.Text
-#, fuzzy
 msgid  "1. Enter FTP connection information."
 msgstr "೧.FTP ಸಂಪರ್ಕದ ಮಾಹಿತಿಯನ್ನು ನಮೂದಿಸಿ."
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_FTP +5.String.Text
-#, fuzzy
 msgid  "~Server name or IP address:"
 msgstr "ಪರಿಚಾರಕದ ಹೆಸರು ಅಥವ IP ವಿಳಾಸ(~S): "
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_FTP +6.String.Text
-#, fuzzy
 msgid  "2. Connect to the server."
 msgstr "೨. ಪರಿಚಾರಕವನ್ನು ಸಂಪರ್ಕಿಸು."
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_FTP +7.String.Text
-#, fuzzy
 msgid  "3. ~Choose a remote directory (optional)."
 msgstr "3. ದೂರಸ್ಥ ಕೋಶವನ್ನು ಆಯ್ಕೆ ಮಾಡಿ (ಐಚ್ಛಿಕ)(~C)."
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_FTP +8.String.Text
-#, fuzzy
 msgid  "..."
 msgstr "..."
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_FTP +9.String.Text
-#, fuzzy
 msgid  "Connection status is unknown"
 msgstr "ಸಂಪರ್ಕದ ಸ್ಥಿತಿ ತಿಳಿದಿಲ್ಲ"
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_FTP +10.String.Text
-#, fuzzy
 msgid  "Connection was established successfully"
 msgstr "ಸಂಪರ್ಕವನ್ನು ಯಶಸ್ವಿಯಾಗಿ ಸಾಧಿಸಲಾಗಿದೆ"
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_FTP +11.String.Text
-#, fuzzy
 msgid  "Username or password is wrong"
 msgstr "ಬಳಕೆದಾರನ ಹೆಸರು ಅಥವಾ ಗುಪ್ತಪದವು ತಪ್ಪಾಗಿದೆ"
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_FTP +12.String.Text
-#, fuzzy
 msgid  "Could not resolve server name"
 msgstr "ಪರಿಚಾರಕದ ಹೆಸರನ್ನು ತಿಳಿದುಕೊಳ್ಳಲಾಗಲಿಲ್ಲ"
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_FTP +13.String.Text
-#, fuzzy
 msgid  "You do not have sufficient user rights"
 msgstr "ನಿಮ್ಮಲ್ಲಿ ಸಾಕಷ್ಟು ಬಳಕೆದಾರ ಹಕ್ಕುಗಳು ಇಲ್ಲ"
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_FTP +14.String.Text
-#, fuzzy
 msgid  "Cannot connect to server"
 msgstr "ಪರಿಚಾರಕವನ್ನು ಸಂಪರ್ಕಿಸಲಾಗುತ್ತಿಲ್ಲ"
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_FTP +15.String.Text
-#, fuzzy
 msgid  "Unexpected error"
 msgstr "ಅನಿರೀಕ್ಷಿತ ದೋಷ"
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_FTP +16.String.Text
-#, fuzzy
 msgid  "FTP publishing directory"
 msgstr "FTP ಪ್ರಕಟಿಸುವ ಕೋಶ"
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_FTP +17.String.Text
-#, fuzzy
 msgid  "This is not an FTP folder"
 msgstr "ಇದು FTP ಕೋಶ ಅಲ್ಲ"
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_FTP +18.String.Text
-#, fuzzy
 msgid  "Connecting..."
 msgstr "ಸಂಪರ್ಕಿಸಲಾಗುತ್ತಿದೆ..."
 
 #: source/formwizard/dbwizres.src#RID_AGENDAWIZARDDIALOG_START +1.String.Text
-#, fuzzy
 msgid  "Agenda Wizard"
 msgstr "ಕಾರ್ಯಸೂಚಿ ಗಾರುಡಿ"
 
 #: source/formwizard/dbwizres.src#RID_AGENDAWIZARDDIALOG_START +2.String.Text
-#, fuzzy
 msgid  "Make ~manual changes to this agenda template"
 msgstr "ಈ ಕಾರ್ಯಸೂಚಿ ಸಿದ್ಧವಿನ್ಯಾಸಕ್ಕೆ ಮಾನವಕೃತ ಬದಲಾವಣೆಗಳನ್ನು ಮಾಡು(~m)"
 
 #: source/formwizard/dbwizres.src#RID_AGENDAWIZARDDIALOG_START +3.String.Text
-#, fuzzy
 msgid  "Template name:"
 msgstr "ನಮೂನೆಯ ಹೆಸರು:"
 
 #: source/formwizard/dbwizres.src#RID_AGENDAWIZARDDIALOG_START + 4.String.Text
-#, fuzzy
 msgid  "Location and file name:"
 msgstr "ಸ್ಥಳ ಹಾಗು ಕಡತದ ಹೆಸರು:"
 
@@ -2902,8 +2734,9 @@ msgid  "Please choose the page design for the agenda"
 msgstr "ದಯವಿಟ್ಟು ಈ ಕಾರ್ಯಸೂಚಿಗಾಗಿ ಪುಟದ ವಿನ್ಯಾಸವನ್ನು ಆಯ್ಕೆ ಮಾಡಿ"
 
 #: source/formwizard/dbwizres.src#RID_AGENDAWIZARDDIALOG_START +7.String.Text
+#, fuzzy
 msgid  "Please select the headings you wish to include in your agenda template"
-msgstr ""
+msgstr "ನಿಮ್ಮ ಕಾರ್ಯಸೂಚಿ ಸಿದ್ಧವಿನ್ಯಾಸದಲ್ಲಿ ಅಡಕಗೊಳಿಸಬೇಕಿರುವ ಶೀರ್ಷಿಕೆಯನ್ನು ಆಯ್ಕೆ ಮಾಡಿ"
 
 #: source/formwizard/dbwizres.src#RID_AGENDAWIZARDDIALOG_START +8.String.Text
 #, fuzzy
@@ -2931,8 +2764,9 @@ msgid  "Include form for recording minutes"
 msgstr "ಸಂಕ್ಷಿಪ್ತ ವರದಿಗಳನ್ನು ದಾಖಲಿಸಲು ನಮೂನೆಯನ್ನು ಅಡಕಗೊಳಿಸು"
 
 #: source/formwizard/dbwizres.src#RID_AGENDAWIZARDDIALOG_START +13.String.Text
+#, fuzzy
 msgid  "This wizard helps you to create an agenda template. The template can then be used to create an agenda whenever needed."
-msgstr ""
+msgstr "ಈ ಗಾರುಡಿಯು ನಿಮಗೆ ಕಾರ್ಯಸೂಚಿ ಸಿದ್ಧವಿನ್ಯಾಸವನ್ನು ರಚಿಸಲು ನೆರವಾಗುತ್ತದೆ. ಅಗತ್ಯ ಬಿದ್ದಾಗ ಸಿದ್ಧವಿನ್ಯಾಸವನ್ನು ಬಳಸಿಕೊಂಡು ಕಾರ್ಯಸೂಚಿಯನ್ನು ರಚಿಸಬಹುದು."
 
 #: source/formwizard/dbwizres.src#RID_AGENDAWIZARDDIALOG_START +14.String.Text
 #, fuzzy
@@ -2950,8 +2784,9 @@ msgid  "Location:"
 msgstr "ಸ್ಥಳ:"
 
 #: source/formwizard/dbwizres.src#RID_AGENDAWIZARDDIALOG_START +17.String.Text
+#, fuzzy
 msgid  "Placeholders will be used in empty fields. You can replace placeholders with text later."
-msgstr ""
+msgstr "ಸ್ಥಳಸೂಚಕವನ್ನು ಖಾಲಿ ವರ್ಗಗಳಲ್ಲಿ ಬಳಸಲಾಗುತ್ತದೆ. ಆನಂತರ ನೀವು ಸ್ಥಳಸೂಚಕವನ್ನು ಪಠ್ಯದಿಂದ ಬದಲಾಯಿಸಬಹುದು."
 
 #: source/formwizard/dbwizres.src#RID_AGENDAWIZARDDIALOG_START +18.String.Text
 #, fuzzy
@@ -2964,8 +2799,9 @@ msgid  "Create an ~agenda from this template"
 msgstr "ಈ ಸಿದ್ಧವಿನ್ಯಾಸದಿಂದ ಒಂದು ಕಾರ್ಯಸೂಚಿಯನ್ನು ರಚಿಸು(~a)"
 
 #: source/formwizard/dbwizres.src#RID_AGENDAWIZARDDIALOG_START +20.String.Text
+#, fuzzy
 msgid  "To create a new agenda out of the template, go to the location where you saved the template and double-click the file."
-msgstr ""
+msgstr "ಒಂದು ಸಿದ್ಧವಿನ್ಯಾಸದಿಂದ ಹೊಸ ಕಾರ್ಯಸೂಚಿಯನ್ನು ರಚಿಸಲು, ಸಿದ್ಧವಿನ್ಯಾಸಗಳನ್ನು ಉಳಿಸಲಾಗಿರುವ ಸ್ಥಳಕ್ಕೆ ಹೋಗಿ ನಂತರ ಕಡತದ ಮೇಲೆ ಒಟ್ಟಿಗೆ ಎರಡು ಬಾರಿ ಕ್ಲಿಕ್ಕಿಸಿ."
 
 #: source/formwizard/dbwizres.src#RID_AGENDAWIZARDDIALOG_START +21.String.Text
 #, fuzzy
@@ -3018,8 +2854,9 @@ msgid  "Facility personnel"
 msgstr "ಸಂಪನ್ಮೂಲ ವ್ಯಕ್ತಿ"
 
 #: source/formwizard/dbwizres.src#RID_AGENDAWIZARDDIALOG_START +31.String.Text
+#, fuzzy
 msgid  "The agenda template will include placeholders for the names of the selected people. When creating an agenda from the template, you can replace these placeholder with the appropriate names."
-msgstr ""
+msgstr "ಕಾರ್ಯಸೂಚಿ ಸಿದ್ಧವಿನ್ಯಾಸವು ಆಯ್ದ ಜನರ ಹೆಸರುಗಳಿಗಾಗಿ ಸ್ಥಳಸೂಚಕವನ್ನು ಹೊಂದಿರುತ್ತದೆ. ಸಿದ್ಧವಿನ್ಯಾಸದಿಂದ ಕಾರ್ಯಸೂಚಿಯನ್ನು ರಚಿಸುವಾಗ, ನೀವು ಈ ಸ್ಥಳಸೂಚಕವನ್ನು ಸೂಕ್ತವಾದ ಹೆಸರಗಳಿಂದ ಬದಲಾಯಿಸಬಹುದಾಗಿದೆ."
 
 #: source/formwizard/dbwizres.src#RID_AGENDAWIZARDDIALOG_START +32.String.Text
 #, fuzzy
@@ -3052,8 +2889,9 @@ msgid  "Date:"
 msgstr "ದಿನಾಂಕ:"
 
 #: source/formwizard/dbwizres.src#RID_AGENDAWIZARDDIALOG_START +39.String.Text
+#, fuzzy
 msgid  "This wizard creates an agenda template which enables you to create multiple agendas with the same layout and settings."
-msgstr ""
+msgstr "ಈ ಗಾರುಡಿಯು ಒಂದು ಕಾರ್ಯಸೂಚಿ ಸಿದ್ಧವಿನ್ಯಾಸವನ್ನು ರಚಿಸಲಿದ್ದು, ಅದನ್ನು ಬಳಸಿಕೊಂಡು ನೀವು ಒಂದೇ ರೂಪುರೇಷೆ ಹಾಗು ಸಿದ್ಧತೆಗಳೊಂದಿಗೆ ಹಲವಾರು ಕಾರ್ಯಸೂಚಿಯನ್ನು ರಚಿಸಬಹುದಾಗಿದೆ."
 
 #: source/formwizard/dbwizres.src#RID_AGENDAWIZARDDIALOG_START +40.String.Text
 #, fuzzy
@@ -3211,892 +3049,729 @@ msgid  "Move down"
 msgstr "ಕೆಳಕ್ಕೆ ಜರುಗಿಸು"
 
 #: source/importwizard/importwi.src#sHelpButton.String.Text
-#, fuzzy
 msgid  "~Help"
 msgstr "ಸಹಾಯ(~H)"
 
 #: source/importwizard/importwi.src#sCancelButton.String.Text
-#, fuzzy
 msgid  "~Cancel"
 msgstr "ರದ್ದು ಮಾಡು(~C)"
 
 #: source/importwizard/importwi.src#sBackButton.String.Text
-#, fuzzy
 msgid  "<< ~Back"
 msgstr "<< ಹಿಂದಕ್ಕೆ(~B)"
 
 #: source/importwizard/importwi.src#sNextButton.String.Text
-#, fuzzy
 msgid  "Ne~xt >>"
 msgstr "ಮುಂದಿನ(~x) >>"
 
 #: source/importwizard/importwi.src#sBeginButton.String.Text
-#, fuzzy
 msgid  "~Convert"
 msgstr "ಪರಿವರ್ತಿಸು(~C)"
 
 #: source/importwizard/importwi.src#sCloseButton.String.Text
-#, fuzzy
 msgid  "~Close"
 msgstr "ಮುಚ್ಚು(~C)"
 
 #: source/importwizard/importwi.src#sWelcometextLabel1.String.Text
 msgid  "This wizard converts documents in %PRODUCTNAME format and Microsoft Office documents to the new OpenDocument format."
-msgstr ""
+msgstr "ಈ ಗಾರುಡಿಯು %PRODUCTNAME ವಿನ್ಯಾಸ ಹಾಗು ಮೈಕ್ರೊಸಾಫ್ಟ್ ಆಫೀಸ್ ಮಾದರಿಯ ದಸ್ತಾವೇಜುಗಳನ್ನು ಹೊಸ ಓಪನ್ ಡಾಕ್ಯುಮೆಂಟ್ ನ ವಿನ್ಯಾಸಕ್ಕೆ ಬದಲಾಯಿಸುತ್ತದೆ."
 
 #: source/importwizard/importwi.src#sWelcometextLabel2.String.Text
 msgid  "Please note that when converting Microsoft documents any attached VBA macros lose their functionality."
-msgstr ""
+msgstr "ದಯವಿಟ್ಟು ಗಮನಿಸಿ,  ಮೈಕ್ರೊಸಾಫ್ಟ್ ದಸ್ತಾವೇಜುಗಳನ್ನು ಪರಿವರ್ತಿಸಿದಾಗ ಅದಕ್ಕೆ ಲಗತ್ತಿಸಲಾದ VBA ಮಾಕ್ರೊಗಳು ಕೆಲಸ ಮಾಡದೆ ಇರಬಹುದು."
 
 #: source/importwizard/importwi.src#sWelcometextLabel3.String.Text
-#, fuzzy
 msgid  "Select the document type for conversion:"
 msgstr "ಪರಿವರ್ತನೆ ಮಾಡಲು ದಸ್ತಾವೇಜಿನ ಬಗೆಯನ್ನು ಆಯ್ಕೆ ಮಾಡಿ:"
 
 #: source/importwizard/importwi.src#sMSTemplateCheckbox_1_.String.Text
-#, fuzzy
 msgid  "Word templates"
 msgstr "ವರ್ಡ್ ನಮೂನೆಗಳು"
 
 #: source/importwizard/importwi.src#sMSTemplateCheckbox_2_.String.Text
-#, fuzzy
 msgid  "Excel templates"
 msgstr "ಎಕ್ಸೆಲ್ ನಮೂನೆಗಳು"
 
 #: source/importwizard/importwi.src#sMSTemplateCheckbox_3_.String.Text
-#, fuzzy
 msgid  "PowerPoint templates"
 msgstr "ಪವರ್ ಪಾಯಿಂಟ್ ನಮೂನೆಗಳು"
 
 #: source/importwizard/importwi.src#sMSDocumentCheckbox_1_.String.Text
-#, fuzzy
 msgid  "Word documents"
 msgstr "ವರ್ಡ್ ದಸ್ತಾವೇಜುಗಳು"
 
 #: source/importwizard/importwi.src#sMSDocumentCheckbox_2_.String.Text
-#, fuzzy
 msgid  "Excel documents"
 msgstr "ಎಕ್ಸೆಲ್ ದಸ್ತಾವೇಜುಗಳು"
 
 #: source/importwizard/importwi.src#sMSDocumentCheckbox_3_.String.Text
-#, fuzzy
 msgid  "PowerPoint documents"
 msgstr "ಪವರ್ ಪಾಯಿಂಟ್ ದಸ್ತಾವೇಜುಗಳು"
 
 #: source/importwizard/importwi.src#sSearchInSubDir.String.Text
-#, fuzzy
 msgid  "Including subdirectories"
 msgstr "ಉಪಕೋಶಗಳನ್ನು ಒಳಗೊಳ್ಳಿಸಲಾಗುತ್ತಿದೆ."
 
 #: source/importwizard/importwi.src#sMSContainerName.String.Text
-#, fuzzy
 msgid  "Microsoft Office"
 msgstr "ಮೈಕ್ರೊಸಾಫ್ಟ್ ಆಫೀಸ್"
 
 #: source/importwizard/importwi.src#sSummaryHeader.String.Text
-#, fuzzy
 msgid  "Summary:"
 msgstr "ಸಾರಾಂಶ:"
 
 #: source/importwizard/importwi.src#sTextImportLabel.String.Text
-#, fuzzy
 msgid  "Import from:"
 msgstr "ಇದರಿಮದ ಅಮದು ಮಾಡಿಕೊ:"
 
 #: source/importwizard/importwi.src#sTextExportLabel.String.Text
-#, fuzzy
 msgid  "Save to:"
 msgstr "ಇದಕ್ಕೆ ಉಳಿಸು:"
 
 #: source/importwizard/importwi.src#sGroupnameDefault.String.Text
-#, fuzzy
 msgid  "Imported_Templates"
 msgstr "ಅಮದುಮಾಡಲಾದ_ನಮೂನೆಗಳು"
 
 #: source/importwizard/importwi.src#sProgressDesc1.String.Text
-#, fuzzy
 msgid  "Progress: "
 msgstr "ಪ್ರಗತಿ: "
 
 #: source/importwizard/importwi.src#sProgressOneDoc.String.Text
-#, fuzzy
 msgid  "Document"
 msgstr "ದಸ್ತಾವೇಜು"
 
 #: source/importwizard/importwi.src#sProgressMoreDocs.String.Text
-#, fuzzy
 msgid  "Documents"
 msgstr "ದಸ್ತಾವೇಜುಗಳು"
 
 #: source/importwizard/importwi.src#sProgressMoreTemplates.String.Text
-#, fuzzy
 msgid  "Templates"
 msgstr "ನಮೂನೆಗಳು"
 
 #: source/importwizard/importwi.src#sNoDirCreation.String.Text
-#, fuzzy
 msgid  "The '%1' directory cannot be created: "
 msgstr " '%1' ಕೋಶವನ್ನು ನಿರ್ಮಿಸಲು ಸಾಧ್ಯವಿಲ್ಲ: "
 
 #: source/importwizard/importwi.src#sMsgDirNotThere.String.Text
-#, fuzzy
 msgid  "The '%1' directory does not exist."
 msgstr " '%1' ಕೋಶವು ಅಸ್ತಿತ್ವದಲ್ಲಿಲ್ಲ."
 
 #: source/importwizard/importwi.src#sQueryfornewCreation.String.Text
-#, fuzzy
 msgid  "Do you want to create it now?"
 msgstr "ನೀವು ಈಗಲೆ ಅದನ್ನು ರಚಿಸಲು ಬಯಸುತ್ತೀರೆ?"
 
 #: source/importwizard/importwi.src#sFileExists.String.Text
 msgid  "The '<1>' file already exists.<CR>Do you want to overwrite it?"
-msgstr ""
+msgstr "'<೧>' ಕಡತ ಈಗಾಗಲೆ ಅಸ್ತಿತ್ವದಲ್ಲಿದೆ. <CR> ನೀವು ಅದನ್ನು ತಿದ್ದಿಬರೆಯಲು ಇಚ್ಚಿಸುತ್ತೀರಾ?"
 
 #: source/importwizard/importwi.src#sMorePathsError3.String.Text
-#, fuzzy
 msgid  "Directories do not exist"
 msgstr "ಕೋಶಗಳು ಅಸ್ತಿತ್ವದಲ್ಲಿಲ್ಲ"
 
 #: source/importwizard/importwi.src#sOverwriteallFiles.String.Text
-#, fuzzy
 msgid  "Do you want to overwrite documents without being asked?"
 msgstr "ದಸ್ತಾವೇಜುಗಳನ್ನು ತಿದ್ದಿಬರೆಯುವ ಮುನ್ನ ನಿಮ್ಮನ್ನು ಕೇಳಬೇಕೆ?"
 
 #: source/importwizard/importwi.src#sreeditMacro.String.Text
-#, fuzzy
 msgid  "Document macro has to be revised."
 msgstr "ದಸ್ತಾವೇಜಿನ ಮಾಕ್ರೊವನ್ನು ಮರುಪರಿಶೀಲಿಸಬೇಕಾಗಿದೆ."
 
 #: source/importwizard/importwi.src#scouldNotsaveDocument.String.Text
-#, fuzzy
 msgid  "Document '<1>' could not be saved."
 msgstr "'<1>' ದಸ್ತಾವೇಜನ್ನು ಉಳಿಸಲಾಗಿಲ್ಲ."
 
 #: source/importwizard/importwi.src#scouldNotopenDocument.String.Text
-#, fuzzy
 msgid  "Document '<1>' could not be opened."
 msgstr " '<1>' ದಸ್ತಾವೇಜನ್ನು ತೆರೆಯಲಾಗಲಿಲ್ಲ."
 
 #: source/importwizard/importwi.src#sConvertError1.String.Text
-#, fuzzy
 msgid  "Do you really want to terminate conversion at this point?"
 msgstr "ನೀವು ನಿಜವಾಗಲು ಪರಿವರ್ತನೆಯನ್ನು ಇಲ್ಲಿಯೆ ಅಂತ್ಯಗೊಳಿಸಲು ಇಷ್ಟಪಡುತ್ತೀರಾ?"
 
 #: source/importwizard/importwi.src#sConvertError2.String.Text
-#, fuzzy
 msgid  "Cancel Wizard"
 msgstr "ಗಾರುಡಿಯನ್ನು ರದ್ದು ಮಾಡು"
 
 #: source/importwizard/importwi.src#sRTErrorDesc.String.Text
-#, fuzzy
 msgid  "An unexpected error has occurred in the wizard."
 msgstr "ಗಾರುಡಿಯಲ್ಲಿ ಅನಿರೀಕ್ಷಿತವಾದ ದೋಷ ಉಂಟಾಗಿದೆ."
 
 #: source/importwizard/importwi.src#sRTErrorHeader.String.Text
-#, fuzzy
 msgid  "Error"
 msgstr "ದೋಷ"
 
 #: source/importwizard/importwi.src#sPathDialogMessage.String.Text
-#, fuzzy
 msgid  "Select a directory"
 msgstr "ಒಂದು ಕೋಶವನ್ನು ಆಯ್ಕೆಮಾಡಿ"
 
 #: source/importwizard/importwi.src#sDialogTitle.String.Text
-#, fuzzy
 msgid  "Document Converter"
 msgstr "ದಸ್ತಾವೇಜು ಪರಿವರ್ತಕ"
 
 #: source/importwizard/importwi.src#sProgressPage1.String.Text
-#, fuzzy
 msgid  "Progress"
 msgstr "ಪ್ರಗತಿ"
 
 #: source/importwizard/importwi.src#sProgressPage2.String.Text
-#, fuzzy
 msgid  "Retrieving the relevant documents:"
 msgstr "ಸೂಕ್ತವಾದ ದಸ್ತಾವೇಜುಗಳನ್ನು ಪತ್ತೆಹಚ್ಚಿ ತರಲಾಗುತ್ತಿದೆ:"
 
 #: source/importwizard/importwi.src#sProgressPage3.String.Text
-#, fuzzy
 msgid  "Converting the documents"
 msgstr "ದಸ್ತಾವೇಜುಗಳನ್ನು ಪರಿವರ್ತಿಸಲಾಗುತ್ತಿದೆ"
 
 #: source/importwizard/importwi.src#sProgressFound.String.Text
-#, fuzzy
 msgid  "Found:"
 msgstr "ಕಂಡುಬಂದಿರುವುದು:"
 
 #: source/importwizard/importwi.src#sProgressPage5.String.Text
-#, fuzzy
 msgid  "%1 found"
 msgstr "%1 ಕಂಡುಬಂದಿದೆ"
 
 #: source/importwizard/importwi.src#sReady.String.Text
-#, fuzzy
 msgid  "Finished"
 msgstr "ಮುಗಿಯಿತು"
 
 #: source/importwizard/importwi.src#sXMLTemplateCheckbox_1_.String.Text
-#, fuzzy
 msgid  "Text templates"
 msgstr "ಪಠ್ಯ ನಮೂನೆಗಳು"
 
 #: source/importwizard/importwi.src#sXMLTemplateCheckbox_2_.String.Text
-#, fuzzy
 msgid  "Spreadsheet templates"
 msgstr "ಸ್ಪ್ರೆಡ್‌ಷೀಟ್ ನಮೂನೆಗಳು"
 
 #: source/importwizard/importwi.src#sXMLTemplateCheckbox_3_.String.Text
-#, fuzzy
 msgid  "Drawing/presentation templates"
 msgstr "ಡ್ರಾಯಿಂಗ್/ಪ್ರೆಸೆಂಟೇಷನ್ ನಮೂನೆಗಳು"
 
 #: source/importwizard/importwi.src#sXMLTemplateCheckbox_4_.String.Text
-#, fuzzy
 msgid  "Master documents"
 msgstr "ಮುಖ್ಯ ದಸ್ತಾವೇಜುಗಳು"
 
 #: source/importwizard/importwi.src#sXMLDocumentCheckbox_1_.String.Text
-#, fuzzy
 msgid  "Text documents"
 msgstr "ಪಠ್ಯ ದಸ್ತಾವೇಜುಗಳು"
 
 #: source/importwizard/importwi.src#sXMLDocumentCheckbox_2_.String.Text
-#, fuzzy
 msgid  "Spreadsheets"
 msgstr "ಸ್ಪ್ರೆಡ್‌ಷೀಟ್‌ಗಳು"
 
 #: source/importwizard/importwi.src#sXMLDocumentCheckbox_3_.String.Text
-#, fuzzy
 msgid  "Drawing/presentation documents"
 msgstr "ಡ್ರಾಯಿಂಗ್/ಪ್ರೆಸೆಂಟೇಷನ್ ದಸ್ತಾವೇಜುಗಳು"
 
 #: source/importwizard/importwi.src#sXMLDocumentCheckbox_4_.String.Text
-#, fuzzy
 msgid  "Master documents/formulas"
 msgstr "ಮುಖ್ಯ ದಸ್ತಾವೇಜುಗಳು/ಸೂತ್ರಗಳು"
 
 #: source/importwizard/importwi.src#sXMLHelperApplications_1.String.Text
-#, fuzzy
 msgid  "Master documents"
 msgstr "ಮುಖ್ಯ ದಸ್ತಾವೇಜುಗಳು"
 
 #: source/importwizard/importwi.src#sXMLHelperApplications_2.String.Text
-#, fuzzy
 msgid  "Formulas"
 msgstr "ಸೂತ್ರಗಳು"
 
 #: source/importwizard/importwi.src#sSourceDocuments.String.Text
-#, fuzzy
 msgid  "Source documents"
 msgstr "ಆಕರ ದಸ್ತಾವೇಜುಗಳು"
 
 #: source/importwizard/importwi.src#sTargetDocuments.String.Text
-#, fuzzy
 msgid  "Target documents"
 msgstr "ಉದ್ದೇಶಿತ ದಸ್ತಾವೇಜುಗಳು"
 
 #: source/importwizard/importwi.src#sCreateLogfile.String.Text
-#, fuzzy
 msgid  "Create log file"
 msgstr "ದಾಖಲೆ ಕಡತವನ್ನು ನಿರ್ಮಿಸು"
 
 #: source/importwizard/importwi.src#sLogfileSummary.String.Text
-#, fuzzy
 msgid  "<COUNT> documents converted"
 msgstr "<COUNT> ಪರಿವರ್ತಿತ ದಸ್ತಾವೇಜುಗಳು"
 
 #: source/importwizard/importwi.src#sLogfileHelpText.String.Text
-#, fuzzy
 msgid  "A log file will be created in your work directory"
 msgstr "ನಿಮ್ಮ ಕೆಲಸದ ಕೋಶದಲ್ಲಿ ಒಂದು ದಾಖಲೆ ಕಡತವನ್ನು ನಿರ್ಮಿಸಲಾಗುವುದು"
 
 #: source/importwizard/importwi.src#sshowLogfile.String.Text
-#, fuzzy
 msgid  "Show log file"
 msgstr "ದಾಖಲೆಯ ಕಡತವನ್ನು ತೋರಿಸು"
 
 #: source/importwizard/importwi.src#sSumInclusiveSubDir.String.Text
-#, fuzzy
 msgid  "All subdirectories will be taken into account"
 msgstr "ಎಲ್ಲಾ ಉಪಕೋಶಗಳನ್ನು ಪರಿಗಣಿಸಲಾಗುವುದು."
 
 #: source/importwizard/importwi.src#sSumSaveDokumente.String.Text
-#, fuzzy
 msgid  "These will be exported to the following directory:"
 msgstr "ಇವೆಲ್ಲವನ್ನು ಮುಂದೆ ತಿಳಿಸಿರುವ ಕೋಶಕ್ಕೆ ರಫ್ತು ಮಾಡಲಾಗುವುದು:"
 
 #: source/importwizard/importwi.src#sSumSOTextDocuments.String.Text
 msgid  "All %PRODUCTNAME text documents contained in the following directory will be imported:"
-msgstr ""
+msgstr "ಮುಂದೆ ತಿಳಿಸಲಾಗಿರುವ ಕಡತಕೋಶದಿಂದ ಎಲ್ಲಾ %PRODUCTNAME ಪಠ್ಯ ದಸ್ತಾವೇಜುಗಳನ್ನು ಆಮದು ಮಾಡಿಕೊಳ್ಳಲಾಗುವುದು:"
 
 #: source/importwizard/importwi.src#sSumSOTableDocuments.String.Text
 msgid  "All %PRODUCTNAME spreadsheets contained in the following directory will be imported:"
-msgstr ""
+msgstr "ಮುಂದೆ ತಿಳಿಸಲಾಗಿರುವ ಕಡತಕೋಶದಿಂದ ಎಲ್ಲಾ %PRODUCTNAME ಸ್ಪ್ರೆಡ್‌ಷೀಟ್‌ಗಳನ್ನು ಆಮದು ಮಾಡಿಕೊಳ್ಳಲಾಗುವುದು: "
 
 #: source/importwizard/importwi.src#sSumSODrawDocuments.String.Text
 msgid  "All %PRODUCTNAME drawing and presentation documents contained in the following directory will be imported:"
-msgstr ""
+msgstr "ಮುಂದೆ ತಿಳಿಸಲಾಗಿರುವ ಕಡತಕೋಶದಿಂದ ಎಲ್ಲಾ %PRODUCTNAME ಡ್ರಾಯಿಂಗ್ ಹಾಗು ಪ್ರೆಸೆಂಟೇಷನ್ ದಸ್ತಾವೇಜುಗಳನ್ನು ಆಮದು ಮಾಡಿಕೊಳ್ಳಲಾಗುವುದು:"
 
 #: source/importwizard/importwi.src#sSumSOMathDocuments.String.Text
 msgid  "All %PRODUCTNAME formula documents contained in the following directory will be imported:"
-msgstr ""
+msgstr "ಮುಂದೆ ತಿಳಿಸಲಾಗಿರುವ ಕಡತಕೋಶದಿಂದ ಎಲ್ಲಾ %PRODUCTNAME ಫಾರ್ಮುಲಾ ದಸ್ತಾವೇಜುಗಳನ್ನು ಆಮದು ಮಾಡಿಕೊಳ್ಳಲಾಗುವುದು:"
 
 #: source/importwizard/importwi.src#sSumSOTextTemplates.String.Text
 msgid  "All %PRODUCTNAME text templates contained in the following directory will be imported:"
-msgstr ""
+msgstr "ಮುಂದೆ ತಿಳಿಸಲಾಗಿರುವ ಕಡತಕೋಶದಿಂದ ಎಲ್ಲಾ %PRODUCTNAME ಪಠ್ಯ ನಮೂನೆಗಳನ್ನು ಆಮದು ಮಾಡಿಕೊಳ್ಳಲಾಗುವುದು:"
 
 #: source/importwizard/importwi.src#sSumSOTableTemplates.String.Text
 msgid  "All %PRODUCTNAME table templates contained in the following directory will be imported:"
-msgstr ""
+msgstr "ಮುಂದೆ ತಿಳಿಸಲಾಗಿರುವ ಕಡತಕೋಶದಿಂದ ಎಲ್ಲಾ %PRODUCTNAME ಟೇಬಲ್ ನಮೂನೆಗಳನ್ನು ಆಮದು ಮಾಡಿಕೊಳ್ಳಲಾಗುವುದು:"
 
 #: source/importwizard/importwi.src#sSumSODrawTemplates.String.Text
 msgid  "All %PRODUCTNAME drawing and presentation templates contained in the following directory will be imported:"
-msgstr ""
+msgstr "ಮುಂದೆ ತಿಳಿಸಲಾಗಿರುವ ಕಡತಕೋಶದಿಂದ ಎಲ್ಲಾ %PRODUCTNAME ಡ್ರಾಯಿಂಗ್ ಹಾಗು ಪ್ರೆಸೆಂಟೇಷನ್ ನಮೂನೆಗಳನ್ನು ಆಮದು ಮಾಡಿಕೊಳ್ಳಲಾಗುವುದು:"
 
 #: source/importwizard/importwi.src#sSumSOGlobalDocuments.String.Text
 msgid  "All %PRODUCTNAME master documents contained in the following directory will be imported:"
-msgstr ""
+msgstr "ಮುಂದೆ ತಿಳಿಸಲಾಗಿರುವ ಕಡತಕೋಶದಿಂದ ಎಲ್ಲಾ %PRODUCTNAME ಮಾಸ್ಟರ್ ದಸ್ತಾವೇಜುಗಳನ್ನು ಆಮದು ಮಾಡಿಕೊಳ್ಳಲಾಗುವುದು:"
 
 #: source/importwizard/importwi.src#sSumMSTextDocuments.String.Text
 msgid  "All Word documents contained in the following directory will be imported:"
-msgstr ""
+msgstr "ಮುಂದೆ ತಿಳಿಸಲಾಗಿರುವ ಕಡತಕೋಶದಿಂದ ಎಲ್ಲಾ ವರ್ಡ್ ದಸ್ತಾವೇಜುಗಳನ್ನು ಅಮದು ಮಾಡಿಕೊಳ್ಳಲಾಗುವುದು:"
 
 #: source/importwizard/importwi.src#sSumMSTableDocuments.String.Text
 msgid  "All Excel documents contained in the following directory will be imported:"
-msgstr ""
+msgstr "ಮುಂದೆ ತಿಳಿಸಲಾಗಿರುವ ಕಡತಕೋಶದಿಂದ ಎಲ್ಲಾ ಎಕ್ಸೆಲ್ ದಸ್ತಾವೇಜುಗಳನ್ನು ಆಮದು ಮಾಡಿಕೊಳ್ಳಲಾಗುವುದು:"
 
 #: source/importwizard/importwi.src#sSumMSDrawDocuments.String.Text
 msgid  "All PowerPoint documents contained in the following directory will be imported:"
-msgstr ""
+msgstr "ಮುಂದೆ ತಿಳಿಸಲಾಗಿರುವ ಕಡತಕೋಶದಿಂದ ಎಲ್ಲಾ ಪವರ್ ಪಾಯಿಂಟ್ ದಸ್ತಾವೇಜುಗಳನ್ನು ಆಮದು ಮಾಡಿಕೊಳ್ಳಲಾಗುವುದು:"
 
 #: source/importwizard/importwi.src#sSumMSTextTemplates.String.Text
 msgid  "All Word templates contained in the following directory will be imported:"
-msgstr ""
+msgstr "ಮುಂದೆ ತಿಳಿಸಲಾಗಿರುವ ಕಡತಕೋಶದಿಂದ ಎಲ್ಲಾ ವರ್ಡ್ ನಮೂನೆಗಳನ್ನು ಆಮದು ಮಾಡಿಕೊಳ್ಳಲಾಗುವುದು:"
 
 #: source/importwizard/importwi.src#sSumMSTableTemplates.String.Text
 msgid  "All Excel templates contained in the following directory will be imported:"
-msgstr ""
+msgstr "ಮುಂದೆ ತಿಳಿಸಲಾಗಿರುವ ಕಡತಕೋಶದಿಂದ ಎಲ್ಲಾ ಎಕ್ಸೆಲ್ ನಮೂನೆಗಳನ್ನು ಆಮದು ಮಾಡಿಕೊಳ್ಳಲಾಗುವುದು:"
 
 #: source/importwizard/importwi.src#sSumMSDrawTemplates.String.Text
 msgid  "All PowerPoint templates contained in the following directory will be imported:"
-msgstr ""
+msgstr "ಮುಂದೆ ತಿಳಿಸಲಾಗಿರುವ ಕಡತಕೋಶದಿಂದ ಎಲ್ಲಾ ಪವರ್ ಪಾಯಿಂಟ್ ನಮೂನೆಗಳನ್ನು ಆಮದು ಮಾಡಿಕೊಳ್ಳಲಾಗುವುದು:"
 
 #: source/schedule/schedule.src#dlgCalTitle.String.Text
-#, fuzzy
 msgid  "%PRODUCTNAME Calendar"
 msgstr "%PRODUCTNAME ಕ್ಯಾಲೆಂಡರ್"
 
 #: source/schedule/schedule.src#dlgCalTitleBack.String.Text
-#, fuzzy
 msgid  "Back"
 msgstr "ಹಿಂದಕ್ಕೆ"
 
 #: source/schedule/schedule.src#dlgCalTitleOwnData.String.Text
-#, fuzzy
 msgid  "Personal Data"
 msgstr "ಖಾಸಗಿ ಮಾಹಿತಿ"
 
 #: source/schedule/schedule.src#dlgSchdlTitle.String.Text
-#, fuzzy
 msgid  "Add Holidays to Calendar"
 msgstr "ಕ್ಯಾಲೆಂಡರಿಗೆ ರಜಾದಿನಗಳನ್ನು ಸೇರಿಸು"
 
 #: source/schedule/schedule.src#dlgOK.String.Text
-#, fuzzy
 msgid  "Create"
 msgstr "ರಚಿಸು"
 
 #: source/schedule/schedule.src#dlgCancel.String.Text
-#, fuzzy
 msgid  "Cancel"
 msgstr "ರದ್ದು ಮಾಡು"
 
 #: source/schedule/schedule.src#dlgCalFrameOption.String.Text
-#, fuzzy
 msgid  "Calendar"
 msgstr "ಕ್ಯಾಲೆಂಡರ್"
 
 #: source/schedule/schedule.src#dlgCalOptionYear.String.Text
-#, fuzzy
 msgid  "~Year Overview"
 msgstr "ವಾರ್ಷಿಕ ಸಮಗ್ರನೋಟ(~Y)"
 
 #: source/schedule/schedule.src#dlgCalOptionMonth.String.Text
-#, fuzzy
 msgid  "~Month"
 msgstr "ತಿಂಗಳು(~M)"
 
 #: source/schedule/schedule.src#dlgSchdlDescription.String.Text
-#, fuzzy
 msgid  "Add holidays for"
 msgstr "ಇದಕ್ಕೆ ರಜಾದಿನಗಳನ್ನು ಸೇರಿಸು"
 
 #: source/schedule/schedule.src#dlgSchdlCountry.String.Text
-#, fuzzy
 msgid  "USA"
 msgstr "ಯುಎಸ್‌ಎ"
 
 #: source/schedule/schedule.src#dlgTime.String.Text
-#, fuzzy
 msgid  "Time Frame"
 msgstr "ಸಮಯದ ಮಿತಿ"
 
 #: source/schedule/schedule.src#dlgYear.String.Text
-#, fuzzy
 msgid  "Year"
 msgstr "ವರ್ಷ"
 
 #: source/schedule/schedule.src#dlgCalMonth.String.Text
-#, fuzzy
 msgid  "Month"
 msgstr "ತಿಂಗಳು"
 
 #: source/schedule/schedule.src#dlgCalOwnData.String.Text
-#, fuzzy
 msgid  "Personal Data"
 msgstr "ಖಾಸಗಿ ಮಾಹಿತಿ"
 
 #: source/schedule/schedule.src#dlgCalInsert.String.Text
-#, fuzzy
 msgid  "~Insert"
 msgstr "ಸೇರಿಸು(~I)"
 
 #: source/schedule/schedule.src#dlgCalDelete.String.Text
-#, fuzzy
 msgid  "~Delete"
 msgstr "ತೆಗೆದು ಹಾಕು(~D)"
 
 #: source/schedule/schedule.src#dlgCalNewEvent.String.Text
-#, fuzzy
 msgid  "New Event"
 msgstr "ಹೊಸ ಕಾರ್ಯಕ್ರಮ"
 
 #: source/schedule/schedule.src#dlgCalEvent.String.Text
-#, fuzzy
 msgid  "Event"
 msgstr "ಕಾರ್ಯಕ್ರಮ"
 
 #: source/schedule/schedule.src#dlgCalEventOnce.String.Text
-#, fuzzy
 msgid  "One-Time"
 msgstr "ಒಂದು-ಬಾರಿ"
 
 #: source/schedule/schedule.src#dlgCalEventDay.String.Text
-#, fuzzy
 msgid  "Day"
 msgstr "ವಾರದ ದಿನ"
 
 #: source/schedule/schedule.src#dlgCalEventMonth.String.Text
-#, fuzzy
 msgid  "Month"
 msgstr "ತಿಂಗಳು"
 
 #: source/schedule/schedule.src#dlgCalEventYear.String.Text
-#, fuzzy
 msgid  "Year"
 msgstr "ವರ್ಷ"
 
 #: source/schedule/schedule.src#dlgBitmapFile.String.Text
-#, fuzzy
 msgid  "usa.bmp"
 msgstr "usa.bmp"
 
 #: source/schedule/schedule.src#dlgState.String.Text
-#, fuzzy
 msgid  "Public holidays"
 msgstr "ಸಾರ್ವಜನಿಕ ರಜಾದಿನಗಳು"
 
 #: source/schedule/schedule.src#dlgMonth.String.Text
-#, fuzzy
 msgid  "January"
 msgstr "ಜನವರಿ"
 
 #: source/schedule/schedule.src#dlgMonth+1.String.Text
-#, fuzzy
 msgid  "February"
 msgstr "ಫೆಬ್ರವರಿ"
 
 #: source/schedule/schedule.src#dlgMonth+2.String.Text
-#, fuzzy
 msgid  "March"
 msgstr "ಮಾರ್ಚ್"
 
 #: source/schedule/schedule.src#dlgMonth+3.String.Text
-#, fuzzy
 msgid  "April"
 msgstr "ಏಪ್ರಿಲ್"
 
 #: source/schedule/schedule.src#dlgMonth+4.String.Text
-#, fuzzy
 msgid  "May"
 msgstr "ಮೇ"
 
 #: source/schedule/schedule.src#dlgMonth+5.String.Text
-#, fuzzy
 msgid  "June"
 msgstr "ಜೂನ್"
 
 #: source/schedule/schedule.src#dlgMonth+6.String.Text
-#, fuzzy
 msgid  "July"
 msgstr "ಜುಲೈ"
 
 #: source/schedule/schedule.src#dlgMonth+7.String.Text
-#, fuzzy
 msgid  "August"
 msgstr "ಆಗಸ್ಟ್"
 
 #: source/schedule/schedule.src#dlgMonth+8.String.Text
-#, fuzzy
 msgid  "September"
 msgstr "ಸೆಪ್ಟೆಂಬರ್"
 
 #: source/schedule/schedule.src#dlgMonth+9.String.Text
-#, fuzzy
 msgid  "October"
 msgstr "ಅಕ್ಟೋಬರ್"
 
 #: source/schedule/schedule.src#dlgMonth+10.String.Text
-#, fuzzy
 msgid  "November"
 msgstr "ನವಂಬರ್"
 
 #: source/schedule/schedule.src#dlgMonth+11.String.Text
-#, fuzzy
 msgid  "December"
 msgstr "ಡಿಸೆಂಬರ್"
 
 #: source/schedule/schedule.src#msgCalErrorTitle.String.Text
-#, fuzzy
 msgid  "Yearly / Monthly Calendar"
 msgstr "ವಾರ್ಷಿಕ / ಮಾಸಿಕ ಕ್ಯಾಲೆಂಡರ್"
 
 #: source/schedule/schedule.src#msgCalError.String.Text
-#, fuzzy
 msgid  "An error occurred while creating the calendar."
 msgstr "ಕ್ಯಾಲೆಂಡರನ್ನು ರಚಿಸುವಾಗ ದೋಷ ಉಂಟಾಗಿದೆ."
 
 #: source/schedule/schedule.src#msgCalRemoveTitle.String.Text
-#, fuzzy
 msgid  "Delete event entries"
 msgstr "ಕಾರ್ಯಕ್ರಮಗಳ ನಮೂದುಗಳನ್ನು ಅಳಿಸು"
 
 #: source/schedule/schedule.src#msgCalRemove.String.Text
-#, fuzzy
 msgid  "Delete the selected entries?"
 msgstr "ಆಯ್ಕೆ ಮಾಡಲಾದ ನಮೂದುಗಳನ್ನು ಅಳಿಸುವುದೆ?"
 
 #: source/schedule/schedule.src#stlWorkday.String.Text
-#, fuzzy
 msgid  "Workweek"
 msgstr "ಕೆಲಸದ ವಾರ"
 
 #: source/schedule/schedule.src#stlWeekend.String.Text
-#, fuzzy
 msgid  "Weekend"
 msgstr "ವಾರಾಂತ್ಯ"
 
 #: source/schedule/schedule.src#nameCalYear.String.Text
-#, fuzzy
 msgid  "Calendar"
 msgstr "ಕ್ಯಾಲೆಂಡರ್"
 
 #: source/schedule/schedule.src#nameCalMonth.String.Text
-#, fuzzy
 msgid  "Month"
 msgstr "ತಿಂಗಳು"
 
 #: source/schedule/schedule.src#sProgress.String.Text
-#, fuzzy
 msgid  "Progress:"
 msgstr "ಪ್ರಗತಿ:"
 
 #: source/template/template.src#SAMPLES.String.Text
 msgid  "In order to use the full functionality of this sample, create a document that is based on this template."
-msgstr ""
+msgstr "ಈ ನಮೂನೆಯ ಸಂಪೂರ್ಣ ಉಪಯುಕ್ತತೆಯನ್ನು ಬಳಸಲು, ಈ ನಮೂನೆಯನ್ನು ಆಧರಿಸಿದ ಒಂದು ದಸ್ತಾವೇಜನ್ನು ರಚಿಸಿ."
 
 #: source/template/template.src#SAMPLES + 1.String.Text
-#, fuzzy
 msgid  "Remarks"
 msgstr "ಟಿಪ್ಪಣಿಗಳು"
 
 #: source/template/template.src#STYLES.String.Text
-#, fuzzy
 msgid  "Theme Selection"
 msgstr "ಥೀಮ್‌ನ ಆಯ್ಕೆ"
 
 #: source/template/template.src#STYLES + 1.String.Text
 msgid  "Error while saving the document to the clipboard! The following action cannot be undone."
-msgstr ""
+msgstr "ದಸ್ತಾವೇಜನ್ನು ನಕಲುಫಲಕಕ್ಕೆ ಉಳಿಸುವಾಗ ದೋಷ ಉಂಟಾಗಿದೆ. ಈ ಕ್ರಿಯೆಯನ್ನು ಹಿಂಪಡೆಯಲು ಆಗುವುದಿಲ್ಲ."
 
 #: source/template/template.src#STYLES + 2.String.Text
-#, fuzzy
 msgid  "~Cancel"
 msgstr "ರದ್ದು ಮಾಡು(~C)"
 
 #: source/template/template.src#STYLES + 3.String.Text
-#, fuzzy
 msgid  "~OK"
 msgstr "ಸರಿ(~O)"
 
 #: source/template/template.src#AgendaDlgName.String.Text
-#, fuzzy
 msgid  "Minutes Template"
 msgstr "ವರದಿಯ ನಮೂನೆ"
 
 #: source/template/template.src#AgendaDlgNoCancel.String.Text
-#, fuzzy
 msgid  "An option must be confirmed."
 msgstr "ಆಯ್ಕೆಯನ್ನು ಖಚಿತಪಡಿಸಬೇಕಾಗುತ್ತದೆ."
 
 #: source/template/template.src#AgendaDlgFrame.String.Text
-#, fuzzy
 msgid  "Minutes Type"
 msgstr "ವರದಿಯ ಪ್ರಕಾರ"
 
 #: source/template/template.src#AgendaDlgButton1.String.Text
-#, fuzzy
 msgid  "Results Minutes"
 msgstr "ಫಲಿತಾಂಶಗಳ ವರದಿ"
 
 #: source/template/template.src#AgendaDlgButton2.String.Text
-#, fuzzy
 msgid  "Evaluation Minutes"
 msgstr "ಮೌಲ್ಯನಿರ್ಣಯದ ವರದಿ"
 
 #: source/template/template.src#CorrespondenceNoTextmark.String.Text
-#, fuzzy
 msgid  "The bookmark 'Recipient' is missing."
 msgstr "\"ಸ್ವೀಕರಿಸುವವರು\" ಎನ್ನುವ ಪುಟಗುರುತು ಕಾಣೆಯಾಗಿದೆ."
 
 #: source/template/template.src#CorrespondenceNoTextmark+1.String.Text
-#, fuzzy
 msgid  "Form letter fields can not be included."
 msgstr "ನಮೂನೆ ಅಕ್ಷರದ ವರ್ಗವನ್ನು ಒಳಗೊಳ್ಳಿಸಲಾಗುವುದಿಲ್ಲ."
 
 #: source/template/template.src#CorrespondenceMsgError.String.Text
-#, fuzzy
 msgid  "An error has occurred."
 msgstr "ಒಂದು ದೋಷವು ಉಂಟಾಗಿದೆ."
 
 #: source/template/template.src#CorrespondenceDialog.String.Text
-#, fuzzy
 msgid  "Addressee"
 msgstr "ಕಳುಹಿಸುವವರ ವಿಳಾಸ"
 
 #: source/template/template.src#CorrespondenceDialog+1.String.Text
-#, fuzzy
 msgid  "One recipient"
 msgstr "ಒಬ್ಬ ಸ್ವೀಕರಿಸುವವನು"
 
 #: source/template/template.src#CorrespondenceDialog+2.String.Text
-#, fuzzy
 msgid  "Several recipients (address database)"
 msgstr "ಅನೇಕ ಸ್ವೀಕರಿಸುವವರ ವಿಳಾಸ(ವಿಳಾಸ ದತ್ತಸಂಚಯ)"
 
 #: source/template/template.src#CorrespondenceDialog+3.String.Text
-#, fuzzy
 msgid  "Use of This Template"
 msgstr "ಈ ನಮೂನೆಯ ಬಳಕೆ"
 
 #: source/template/template.src#CorrespondenceFields.String.Text
-#, fuzzy
 msgid  "Click placeholder and overwrite"
 msgstr "ಸ್ಥಳಸೂಚಕದ ಮೇಲೆ ಕ್ಲಿಕ್ಕಿಸಿ ನಂತರ ತಿದ್ದಿಬರೆಯಿರಿ."
 
 #: source/template/template.src#CorrespondenceFields+1.String.Text
-#, fuzzy
 msgid  "Company"
 msgstr "ಸಂಸ್ಥೆ"
 
 #: source/template/template.src#CorrespondenceFields+2.String.Text
-#, fuzzy
 msgid  "Department"
 msgstr "ವಿಭಾಗ"
 
 #: source/template/template.src#CorrespondenceFields+3.String.Text
-#, fuzzy
 msgid  "First Name"
 msgstr "ಮೊದಲ ಹೆಸರು"
 
 #: source/template/template.src#CorrespondenceFields+4.String.Text
-#, fuzzy
 msgid  "Last Name"
 msgstr "ಕೊನೆಯ ಹೆಸರು"
 
 #: source/template/template.src#CorrespondenceFields+5.String.Text
-#, fuzzy
 msgid  "Street"
 msgstr "ರಸ್ತೆ"
 
 #: source/template/template.src#CorrespondenceFields+6.String.Text
-#, fuzzy
 msgid  "Country"
 msgstr "ದೇಶ"
 
 #: source/template/template.src#CorrespondenceFields+7.String.Text
-#, fuzzy
 msgid  "ZIP/Postal Code"
 msgstr "ಝಿಪ್/ಅಂಚೆ ಕೋಡ್"
 
 #: source/template/template.src#CorrespondenceFields+8.String.Text
-#, fuzzy
 msgid  "City"
 msgstr "ನಗರ"
 
 #: source/template/template.src#CorrespondenceFields+9.String.Text
-#, fuzzy
 msgid  "Title"
 msgstr "ಶೀರ್ಷಿಕೆ"
 
 #: source/template/template.src#CorrespondenceFields+10.String.Text
-#, fuzzy
 msgid  "Position"
 msgstr "ಹುದ್ದೆ"
 
 #: source/template/template.src#CorrespondenceFields+11.String.Text
-#, fuzzy
 msgid  "Form of Address"
 msgstr "ವಿಳಾಸದ ನಮೂನೆ"
 
 #: source/template/template.src#CorrespondenceFields+12.String.Text
-#, fuzzy
 msgid  "Initials"
 msgstr "ಇನಿಶಿಯಲ್‌ಗಳು"
 
 #: source/template/template.src#CorrespondenceFields+13.String.Text
-#, fuzzy
 msgid  "Salutation"
 msgstr "ವಂದನೆಗಳು"
 
 #: source/template/template.src#CorrespondenceFields+14.String.Text
-#, fuzzy
 msgid  "Home Phone"
 msgstr "ಮನೆಯ ದೂರವಾಣಿ"
 
 #: source/template/template.src#CorrespondenceFields+15.String.Text
-#, fuzzy
 msgid  "Work Phone"
 msgstr "ಕೆಲಸದ ದೂರವಾಣಿ"
 
 #: source/template/template.src#CorrespondenceFields+16.String.Text
-#, fuzzy
 msgid  "Fax"
 msgstr "ಫ್ಯಾಕ್ಸ್"
 
 #: source/template/template.src#CorrespondenceFields+17.String.Text
-#, fuzzy
 msgid  "E-Mail"
 msgstr "ಇ-ಮೈಲ್"
 
 #: source/template/template.src#CorrespondenceFields+18.String.Text
-#, fuzzy
 msgid  "URL"
 msgstr "ಜಾಲತಾಣಸೂಚಿ"
 
 #: source/template/template.src#CorrespondenceFields+19.String.Text
-#, fuzzy
 msgid  "Notes"
 msgstr "ಟಿಪ್ಪಣಿಗಳು"
 
 #: source/template/template.src#CorrespondenceFields+20.String.Text
-#, fuzzy
 msgid  "Alt. Field 1"
 msgstr "ಪರ್ಯಾಯ ವರ್ಗ ೧"
 
 #: source/template/template.src#CorrespondenceFields+21.String.Text
-#, fuzzy
 msgid  "Alt. Field 2"
 msgstr "ಪರ್ಯಾಯ ವರ್ಗ ೨"
 
 #: source/template/template.src#CorrespondenceFields+22.String.Text
-#, fuzzy
 msgid  "Alt. Field 3"
 msgstr "ಪರ್ಯಾಯ ವರ್ಗ ೩"
 
 #: source/template/template.src#CorrespondenceFields+23.String.Text
-#, fuzzy
 msgid  "Alt. Field 4"
 msgstr "ಪರ್ಯಾಯ ವರ್ಗ ೪"
 
 #: source/template/template.src#CorrespondenceFields+24.String.Text
-#, fuzzy
 msgid  "ID"
 msgstr "ಐಡಿ"
 
 #: source/template/template.src#CorrespondenceFields+25.String.Text
-#, fuzzy
 msgid  "State"
 msgstr "ರಾಜ್ಯ"
 
 #: source/template/template.src#CorrespondenceFields+26.String.Text
-#, fuzzy
 msgid  "Office Phone"
 msgstr "ಕಛೇರಿಯ ದೂರವಾಣಿ"
 
 #: source/template/template.src#CorrespondenceFields+27.String.Text
-#, fuzzy
 msgid  "Pager"
 msgstr "ಪೇಜರ್"
 
 #: source/template/template.src#CorrespondenceFields+28.String.Text
-#, fuzzy
 msgid  "Mobile Phone"
 msgstr "ಮೊಬೈಲ್ ದೂರವಾಣಿ"
 
 #: source/template/template.src#CorrespondenceFields+29.String.Text
-#, fuzzy
 msgid  "Other Phone"
 msgstr "ಇತರೆ ದೂರವಾಣಿ"
 
 #: source/template/template.src#CorrespondenceFields+30.String.Text
-#, fuzzy
 msgid  "Calendar URL"
 msgstr "ಕ್ಯಾಲೆಂಡರ್ ಜಾಲತಾಣಸೂಚಿ"
 
 #: source/template/template.src#CorrespondenceFields+31.String.Text
-#, fuzzy
 msgid  "Invite"
 msgstr "ಆಹ್ವಾನಿಸು"
 
 #: source/template/template.src#TextField.String.Text
-#, fuzzy
 msgid  "User data field is not defined!"
 msgstr "ಬಳಕೆದಾರನ ದತ್ತಾಂಶ ವರ್ಗವನ್ನು ಸೂಚಿಸಲಾಗಿಲ್ಲ!"
 
 #: source/template/template.src#Newsletter.String.Text
-#, fuzzy
 msgid  "General layout"
 msgstr "ಸಾಮಾನ್ಯ ರೂಪವಿನ್ಯಾಸ"
 
 #: source/template/template.src#Newsletter + 1.String.Text
-#, fuzzy
 msgid  "Default layout"
 msgstr "ಪೂರ್ವನಿಯೋಜಿತ ರೂಪವಿನ್ಯಾಸ"
 
 #: source/template/template.src#Newsletter + 2.String.Text
-#, fuzzy
 msgid  "Commemorative publication layout"
 msgstr "ಸ್ಮರಣಾರ್ಥವಾದ ಪ್ರಕಾಶನ ರೂಪವಿನ್ಯಾಸ"
 
 #: source/template/template.src#Newsletter + 3.String.Text
-#, fuzzy
 msgid  "Brochure layout"
 msgstr "ಕಿರುಹೊತ್ತಿಗೆ ರೂಪವಿನ್ಯಾಸ"
 
 #: source/template/template.src#Newsletter + 10.String.Text
-#, fuzzy
 msgid  "Format"
 msgstr "ವಿನ್ಯಾಸ"
 
 #: source/template/template.src#Newsletter + 11.String.Text
-#, fuzzy
 msgid  "Single-sided"
 msgstr "ಏಕ-ಮುಖ"
 
 #: source/template/template.src#Newsletter + 12.String.Text
-#, fuzzy
 msgid  "Double-sided"
 msgstr "ದ್ವಿ-ಮುಖ"

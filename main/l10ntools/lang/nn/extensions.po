@@ -57,7 +57,7 @@ msgstr "Tittel på datakjelde"
 
 #: source/abpilot/abspilot.src#RID_PAGE_SELECTABTYPE.FT_TYPE_HINTS.FixedText.Text
 msgid  "%PRODUCTNAME lets you access address data already present in your system. To do this, a %PRODUCTNAME data source will be created in which your address data is available in tabular form.\n\nThis wizard helps you create the data source."
-msgstr ""
+msgstr "%PRODUCTNAME gir deg tilgang til adresseinformasjon som er i systemet frå før. Det blir laga ei %PRODUCTNAME-datakjelde der adresseinformasjonen er tilgjengeleg i tabellform.\n\nDenne vegvisaren hjelper deg med å laga datakjelda."
 
 #: source/abpilot/abspilot.src#RID_PAGE_SELECTABTYPE.FL_TYPE.FixedLine.Text
 msgid  "Please select the type of your external address book:"
@@ -109,7 +109,7 @@ msgstr "Anna ekstern datakjelde"
 
 #: source/abpilot/abspilot.src#RID_PAGE_ADMININVOKATION.FT_ADMINEXPLANATION.FixedText.Text
 msgid  "To set up the new data source, additional information is required.\n\nClick the following button to open another dialog in which you then enter the necessary information."
-msgstr ""
+msgstr "Meir informasjon trengst for å setja opp den nye datakjelda.\n\nTrykk på knappen nedanfor for å opna eit nytt dialogvindauge der kan du skriva inn det som trengst."
 
 #: source/abpilot/abspilot.src#RID_PAGE_ADMININVOKATION.PB_INVOKE_ADMIN_DIALOG.PushButton.Text
 msgid  "Settings"
@@ -117,15 +117,15 @@ msgstr "Innstillingar"
 
 #: source/abpilot/abspilot.src#RID_PAGE_ADMININVOKATION.FT_ERROR.FixedText.Text
 msgid  "The connection to the data source could not be established.\nBefore you proceed, please check the settings made, or (on the previous page) choose another address data source type."
-msgstr ""
+msgstr "Fekk ikkje kontakt med datakjelda.\nFør du held fram bør du sjekka innstillingane, eller vel ein annan kjeldetype på den førre sida."
 
 #: source/abpilot/abspilot.src#RID_PAGE_TABLESELECTION_AB.FL_TOOMUCHTABLES.FixedText.Text
 msgid  "The external data source you have chosen contains more than one address book.\nPlease select the one you mainly want to work with:"
-msgstr ""
+msgstr "Den eksterne datakjelda du har valt inneheld meir enn éi adressebok.\nVel den du vil bruka som hovuddatakjelde:"
 
 #: source/abpilot/abspilot.src#RID_PAGE_FIELDMAPPING.FT_FIELDASSIGMENTEXPL.FixedText.Text
-msgid  "To incorporate the address data in your templates, %PRODUCTNAME has to know which fields contain which data.\n\nFor instance, you could have stored the e-mail addresses in a field named "email", or "E-mail" or "EM" - or something completely different.\n\nClick the button below to open another dialog where you can enter the settings for your data source."
-msgstr ""
+msgid  "To incorporate the address data in your templates, %PRODUCTNAME has to know which fields contain which data.\n\nFor instance, you could have stored the e-mail addresses in a field named \"email\", or \"E-mail\" or \"EM\" - or something completely different.\n\nClick the button below to open another dialog where you can enter the settings for your data source."
+msgstr "For å leggja adresseinformasjonen inn i malen, må %PRODUCTNAME vita kva for felt som inneheld kva for data. \n\nDu kan til dømes ha lagra e-postadressene i feltet «e-post», «E-post», «E-P» eller noko heilt anna.\n\nTrykk på knappen nedanfor for å opna eit nytt vindauge der du kan gjera innstillingar for datakjelda."
 
 #: source/abpilot/abspilot.src#RID_PAGE_FIELDMAPPING.PB_INVOKE_FIELDS_DIALOG.PushButton.Text
 msgid  "Field Assignment"
@@ -133,7 +133,7 @@ msgstr "Tildeling av felt"
 
 #: source/abpilot/abspilot.src#RID_PAGE_FINAL.FT_FINISH_EXPL.FixedText.Text
 msgid  "That was all the information necessary to integrate your address data into %PRODUCTNAME.\n\nNow, just enter the name under which you want to register the data source in %PRODUCTNAME."
-msgstr ""
+msgstr "Det var all den informasjonen som trongst for å integrera adresseboka i %PRODUCTNAME.\n\nSkriv inn det namnet du vil registrera datakjelda under (i %PRODUCTNAME)."
 
 #: source/abpilot/abspilot.src#RID_PAGE_FINAL.FT_LOCATION.FixedText.Text
 msgid  "Location"
@@ -153,7 +153,7 @@ msgstr "Namn på adressebok"
 
 #: source/abpilot/abspilot.src#RID_PAGE_FINAL.FT_DUPLICATENAME.FixedText.Text
 msgid  "Another data source already has this name. As data sources have to have globally unique names, you need to choose another one."
-msgstr ""
+msgstr "Det finst ei datakjelde med dette namnet frå før. Sidan datakjelder må ha kvar sine unike namn, må du velja eit anna namn."
 
 #: source/abpilot/abspilot.src#RID_ERR_NEEDTYPESELECTION.ErrorBox.Message
 msgid  "Please select a type of address book."
@@ -161,7 +161,7 @@ msgstr "Vel ein adresseboktype."
 
 #: source/abpilot/abspilot.src#RID_QRY_NOTABLES.QueryBox.Message
 msgid  "The data source does not contain any tables.\nDo you want to set it up as an address data source, anyway?"
-msgstr ""
+msgstr "Datakjelda inneheld ingen tabellar.\nVil du bruka henne som kjelde for adresseboka likevel?"
 
 #: source/abpilot/abspilot.src#RID_STR_DEFAULT_NAME.String.Text
 msgid  "Addresses"
@@ -184,8 +184,8 @@ msgid  "Address Data - Field Assignment"
 msgstr "Adresseinformasjon – Felttildeling"
 
 #: source/abpilot/abspilot.src#RID_STR_NOFIELDSASSIGNED.String.Text
-msgid  "There are no fields assigned at this time.\nYou can either assign fields now or do so later by first choosing:\n"File - Template - Address Book Source...""
-msgstr ""
+msgid  "There are no fields assigned at this time.\nYou can either assign fields now or do so later by first choosing:\n\"File - Template - Address Book Source...\""
+msgstr "Ingen felt er tildelte.\nDu kan anten tildela felt no, eller du kan gjera det seinare ved å velja:\n«Fil – Mal – Adressebokkjelde …»"
 
 #: source/bibliography/toolbar.src#RID_BIB_TOOLBAR.TBC_FT_SOURCE.ToolBoxItem.Text
 msgid  "Table"
@@ -493,7 +493,7 @@ msgstr "Kontroll"
 
 #: source/dbpilots/listcombopages.src#RID_PAGE_LCW_CONTENTSELECTION_TABLE.FT_SELECTTABLE_LABEL.FixedText.Text
 msgid  "On the right side, you see all the tables from the data source of the form.\n\n\nChoose the table from which the data should be used as basis for the list content:"
-msgstr ""
+msgstr "På høgre side ser du alle tabellane frå datakjelda til skjemaet.\n\n\nVel tabellen som inneheld dataa som skal brukast som basis for innhaldet i lista:"
 
 #: source/dbpilots/listcombopages.src#RID_PAGE_LCW_CONTENTSELECTION_FIELD.TabPage.Text
 msgid  "Field Selection"
@@ -513,7 +513,7 @@ msgstr "Innhaldet i det valde feltet blir vist i kombinasjonsboksen."
 
 #: source/dbpilots/listcombopages.src#RID_PAGE_LCW_CONTENTSELECTION_FIELD.STR_FIELDINFO_LISTBOX.String.Text
 msgid  "The contents of the selected field will be shown in the list box if the linked fields are identical."
-msgstr ""
+msgstr "Innhaldet i det valde feltet blir vist i listeboksen dersom dei kopla felta er identiske."
 
 #: source/dbpilots/listcombopages.src#RID_PAGE_LCW_FIELDLINK.TabPage.Text
 msgid  "Field Link"
@@ -521,7 +521,7 @@ msgstr "Feltlenkje"
 
 #: source/dbpilots/listcombopages.src#RID_PAGE_LCW_FIELDLINK.FT_FIELDLINK_DESC.FixedText.Text
 msgid  "This is where you select fields with matching contents so that the value from the display field will be shown."
-msgstr ""
+msgstr "Her kan du velja felt med likt innhald, slik at verdien frå visingsfeltet blir vist."
 
 #: source/dbpilots/listcombopages.src#RID_PAGE_LCW_FIELDLINK.FT_VALUELISTFIELD.FixedText.Text
 msgid  "Field from the ~Value Table"
@@ -533,7 +533,7 @@ msgstr "Felt frå ~listetabellen"
 
 #: source/dbpilots/listcombopages.src#RID_STR_COMBOWIZ_DBFIELD.String.Text
 msgid  "You can either save the value of the combo box in a database field or use it for display purposes."
-msgstr ""
+msgstr "Du kan velja om du vil lagra verdien frå kombinasjonsboksen i eit databasefelt eller bruka han til vising."
 
 #: source/dbpilots/gridpages.src#RID_PAGE_GW_FIELDSELECTION.TabPage.Text
 msgid  "Field Selection"
@@ -589,7 +589,7 @@ msgstr "Data"
 
 #: source/dbpilots/commonpagesdbp.src#RID_PAGE_TABLESELECTION.FT_EXPLANATION.FixedText.Text
 msgid  "Currently, the form the control belongs to is not (or not completely) bound to a data source.\n\nPlease choose a data source and a table.\n\n\nPlease note that the settings made on this page will take effect immediately upon leaving the page."
-msgstr ""
+msgstr "Skjemaet som kontrollen høyrer til er ikkje bunde (eller ikkje fullstendig bunde) til ei datakjelde.\n\nVel ei datakjelde og ein tabell.\n\n\nInnstillingane på denne sida trer i kraft med ein gong du lukkar sida."
 
 #: source/dbpilots/commonpagesdbp.src#RID_PAGE_TABLESELECTION.FT_DATASOURCE.FixedText.Text
 msgid  "~Data source:"
@@ -705,7 +705,7 @@ msgstr "Dette var all informasjonen som trongst for å lage ei alternativgruppe.
 
 #: source/dbpilots/groupboxpages.src#RID_STR_GROUPWIZ_DBFIELD.String.Text
 msgid  "You can either save the value of the option group in a database field or use it for a later action."
-msgstr ""
+msgstr "Verdien for alternativgruppa kan anten lagrast i eit databasefelt eller brukast til ei seinare handling."
 
 #: source/preload/preload.src#RID_DLG_OEMWIZARD.PB_PREV.PushButton.Text
 msgid  "<< Back"
@@ -737,7 +737,7 @@ msgstr "Velkommen"
 
 #: source/preload/preload.src#RID_TP_WELCOME.FT_INFO.FixedText.Text
 msgid  "Welcome to %PRODUCTNAME %PRODUCTVERSION OEM\n\nTo start the %PRODUCTNAME %PRODUCTVERSION OEM, please enter your personal data in the dialog following the license text. Important information is contained in the readme files which are located in the %PRODUCTNAME product directory. Please read these files carefully. You can also find detailed information at the Oracle website \n\nhttp://www.oracle.com/us/products/applications/open-office."
-msgstr ""
+msgstr "Velkommen til %PRODUCTNAME %PRODUCTVERSION OEM\n\nFor å starta %PRODUCTNAME %PRODUCTVERSION OEM, skriv inn personleg informasjon i dialogvindauget som kjem etter lisensteksten. Viktig informasjon finst i «readme»-filene, som ligg i produktmappa til %PRODUCTNAME. Les desse filene nøye. Det finst òg detaljert informasjon på nettstaden til Sun:\n\nhttp://www.sun.com/staroffice.\n\nBrukarstøtte og opplæring.\n\nFå GRATIS brukarstøtte og fri tilgang til eit nettkurs i %PRODUCTNAME frå opplæringssenteret til Sun («Sun(tm) Web Learning Center»). (Gjeld i 60 dagar frå kjøpsdatoen). Gå til nettsida nedanfor for å nytta deg av dette tilbodet:\n\nhttp://www.sun.com/star/service\n\nVi håpar du har glede av å arbeida med %PRODUCTNAME."
 
 #: source/preload/preload.src#RID_TP_LICENSE.TabPage.Text
 msgid  "License Agreement"
@@ -753,7 +753,7 @@ msgstr "1."
 
 #: source/preload/preload.src#RID_TP_LICENSE.FT_INFO2.FixedText.Text
 msgid  "View the complete License Agreement. Please use the scroll bar or the '%PAGEDOWN' button in this dialog to view the entire license text."
-msgstr ""
+msgstr "Trykk «%1» dersom du godtek alle vilkåra i lisensavtalen. Viss ikkje, kan du trykkja «%2» for å avbryta installasjonen."
 
 #: source/preload/preload.src#RID_TP_LICENSE.PB_PAGEDOWN.PushButton.Text
 msgid  "Page Down"
@@ -805,8 +805,9 @@ msgid  "Automatic Sort"
 msgstr "Automatisk sortering"
 
 #: source/propctrlr/selectlabeldialog.src#RID_DLG_SELECTLABELCONTROL.1.FixedText.Text
+#, fuzzy
 msgid  "These are control fields that can be used as label fields for the $control_class$ $control_name$."
-msgstr ""
+msgstr "Desse kontrollfelta kan brukast som etikettfelt for $control_class$ $control_name$."
 
 #: source/propctrlr/selectlabeldialog.src#RID_DLG_SELECTLABELCONTROL.1.CheckBox.Text
 #, fuzzy
@@ -824,8 +825,9 @@ msgid  "Forms"
 msgstr "Skjema"
 
 #: source/propctrlr/pcrmiscres.src#RID_STR_CONFIRM_DELETE_DATA_TYPE.String.Text
+#, fuzzy
 msgid  "Do you want to delete the data type '#type#' from the model?\nPlease note that this will affect all controls which are bound to this data type."
-msgstr ""
+msgstr "Vil du sletta datatypen «#type#» frå modellen?\nVer klar over at dette påverkar alle kontrollelementa som er bundne til denne datatypen."
 
 #: source/propctrlr/pcrmiscres.src#RID_STR_PROPTITLE_PUSHBUTTON.String.Text
 #, fuzzy
@@ -928,31 +930,26 @@ msgid  "Table Control "
 msgstr "Tabellkontroll"
 
 #: source/propctrlr/formlinkdialog.src#RID_DLG_FORMLINKS.ModalDialog.Text
-#, fuzzy
 msgid  "Link fields"
 msgstr "Kopla saman felt"
 
 #: source/propctrlr/formlinkdialog.src#RID_DLG_FORMLINKS.FT_EXPLANATION.FixedText.Text
 msgid  "Sub forms can be used to display detailed data about the current record of the master form. To do this, you can specify which columns in the sub form match which columns in the master form."
-msgstr ""
+msgstr "Underskjema kan brukast til å visa detaljerte data om den valde posten i hovudskjemaet. Du kan setja opp skjemaet ved å velja kva for kolonnar i underskjemaet som tilsvarar kolonnane i hovudskjemaet."
 
 #: source/propctrlr/formlinkdialog.src#RID_DLG_FORMLINKS.PB_SUGGEST.PushButton.Text
-#, fuzzy
 msgid  "Suggest"
 msgstr "Føreslå"
 
 #: source/propctrlr/formlinkdialog.src#RID_DLG_FORMLINKS.STR_DETAIL_FORM.String.Text
-#, fuzzy
 msgid  "Sub Form"
 msgstr "Underskjema"
 
 #: source/propctrlr/formlinkdialog.src#RID_DLG_FORMLINKS.STR_MASTER_FORM.String.Text
-#, fuzzy
 msgid  "Master Form"
 msgstr "Hovudskjema"
 
 #: source/propctrlr/formlinkdialog.src#RID_DLG_FORMLINKS.STR_ERROR_RETRIEVING_COLUMNS.String.Text
-#, fuzzy
 msgid  "The columns of '#' could not be retrieved."
 msgstr "Klarte ikkje henta kolonnane i «#»."
 
@@ -997,587 +994,470 @@ msgid  "Text"
 msgstr "Tekst"
 
 #: source/propctrlr/formres.src#RID_STR_EDITMASK.String.Text
-#, fuzzy
 msgid  "Edit mask"
 msgstr "Rediger maske"
 
 #: source/propctrlr/formres.src#RID_STR_LITERALMASK.String.Text
-#, fuzzy
 msgid  "Literal mask"
 msgstr "Teiknmaske"
 
 #: source/propctrlr/formres.src#RID_STR_READONLY.String.Text
-#, fuzzy
 msgid  "Read-only"
 msgstr "Skriveverna"
 
 #: source/propctrlr/formres.src#RID_STR_ENABLED.String.Text
-#, fuzzy
 msgid  "Enabled"
 msgstr "På"
 
 #: source/propctrlr/formres.src#RID_STR_ENABLE_VISIBLE.String.Text
-#, fuzzy
 msgid  "Visible"
 msgstr "Synleg"
 
 #: source/propctrlr/formres.src#RID_STR_AUTOCOMPLETE.String.Text
-#, fuzzy
 msgid  "AutoFill"
 msgstr "Autoutfylling"
 
 #: source/propctrlr/formres.src#RID_STR_LINECOUNT.String.Text
-#, fuzzy
 msgid  "Line count"
 msgstr "Tal på linjer"
 
 #: source/propctrlr/formres.src#RID_STR_MAXTEXTLEN.String.Text
-#, fuzzy
 msgid  "Max. text length"
 msgstr "Største tekstlengd"
 
 #: source/propctrlr/formres.src#RID_STR_SPIN.String.Text
-#, fuzzy
 msgid  "Spin Button"
 msgstr "Rulleknapp"
 
 #: source/propctrlr/formres.src#RID_STR_STRICTFORMAT.String.Text
-#, fuzzy
 msgid  "Strict format"
 msgstr "Strengt format"
 
 #: source/propctrlr/formres.src#RID_STR_SHOWTHOUSANDSEP.String.Text
-#, fuzzy
 msgid  "Thousands separator"
 msgstr "Tusenskilje"
 
 #: source/propctrlr/formres.src#RID_STR_PRINTABLE.String.Text
-#, fuzzy
 msgid  "Printable"
 msgstr "Kan skrivast ut"
 
 #: source/propctrlr/formres.src#RID_STR_TARGET_URL.String.Text
-#, fuzzy
 msgid  "URL"
 msgstr "URL"
 
 #: source/propctrlr/formres.src#RID_STR_TARGET_FRAME.String.Text
-#, fuzzy
 msgid  "Frame"
 msgstr "Ramme"
 
 #: source/propctrlr/formres.src#RID_STR_HELPTEXT.String.Text
-#, fuzzy
 msgid  "Help text"
 msgstr "Hjelpetekst"
 
 #: source/propctrlr/formres.src#RID_STR_HELPURL.String.Text
-#, fuzzy
 msgid  "Help URL"
 msgstr "Hjelp-URL"
 
 #: source/propctrlr/formres.src#RID_STR_TAG.String.Text
-#, fuzzy
 msgid  "Additional information"
 msgstr "Meir informasjon"
 
 #: source/propctrlr/formres.src#RID_STR_ECHO_CHAR.String.Text
-#, fuzzy
 msgid  "Password character"
 msgstr "Passordteikn"
 
 #: source/propctrlr/formres.src#RID_STR_TRISTATE.String.Text
-#, fuzzy
 msgid  "Tristate"
 msgstr "Trenivå"
 
 #: source/propctrlr/formres.src#RID_STR_EMPTY_IS_NULL.String.Text
-#, fuzzy
 msgid  "Empty string is NULL"
 msgstr "Tom streng er NULL"
 
 #: source/propctrlr/formres.src#RID_STR_DECIMAL_ACCURACY.String.Text
-#, fuzzy
 msgid  "Decimal accuracy"
 msgstr "Desimalpresisjon"
 
 #: source/propctrlr/formres.src#RID_STR_IMAGE_URL.String.Text
-#, fuzzy
 msgid  "Graphics"
 msgstr "Bilete"
 
 #: source/propctrlr/formres.src#RID_STR_DEFAULT_SELECT_SEQ.String.Text
-#, fuzzy
 msgid  "Default selection"
 msgstr "Standardval"
 
 #: source/propctrlr/formres.src#RID_STR_DEFAULT_BUTTON.String.Text
-#, fuzzy
 msgid  "Default button"
 msgstr "Standardknapp"
 
 #: source/propctrlr/formres.src#RID_STR_LABELCONTROL.String.Text
-#, fuzzy
 msgid  "Label Field"
 msgstr "Etikettfelt"
 
 #: source/propctrlr/formres.src#RID_STR_LABEL.String.Text
-#, fuzzy
 msgid  "Label"
 msgstr "Etikett"
 
 #: source/propctrlr/formres.src#RID_STR_ALIGN.String.Text
-#, fuzzy
 msgid  "Alignment"
 msgstr "Justering"
 
 #: source/propctrlr/formres.src#RID_STR_VERTICAL_ALIGN.String.Text
-#, fuzzy
 msgid  "Vert. Alignment"
 msgstr "Loddrett justering"
 
 #: source/propctrlr/formres.src#RID_RSC_ENUM_VERTICAL_ALIGN.1.String.Text
-#, fuzzy
 msgid  "Top"
 msgstr "Oppe"
 
 #: source/propctrlr/formres.src#RID_RSC_ENUM_VERTICAL_ALIGN.2.String.Text
-#, fuzzy
 msgid  "Middle"
 msgstr "Midt på"
 
 #: source/propctrlr/formres.src#RID_RSC_ENUM_VERTICAL_ALIGN.3.String.Text
-#, fuzzy
 msgid  "Bottom"
 msgstr "Nede"
 
 #: source/propctrlr/formres.src#RID_STR_IMAGEPOSITION.String.Text
-#, fuzzy
 msgid  "Graphics alignment"
 msgstr "Biletjustering"
 
 #: source/propctrlr/formres.src#RID_STR_FONT.String.Text
-#, fuzzy
 msgid  "Font"
 msgstr "Skrift"
 
 #: source/propctrlr/formres.src#RID_STR_BACKGROUNDCOLOR.String.Text
-#, fuzzy
 msgid  "Background color"
 msgstr "Bakgrunnsfarge"
 
 #: source/propctrlr/formres.src#RID_STR_BORDER.String.Text
-#, fuzzy
 msgid  "Border"
 msgstr "Kantlinje"
 
 #: source/propctrlr/formres.src#RID_STR_ICONSIZE.String.Text
-#, fuzzy
 msgid  "Icon size"
 msgstr "Ikonstorleik"
 
 #: source/propctrlr/formres.src#RID_RSC_ENUM_ICONSIZE_TYPE.1.String.Text
-#, fuzzy
 msgid  "Small"
 msgstr "Små"
 
 #: source/propctrlr/formres.src#RID_RSC_ENUM_ICONSIZE_TYPE.2.String.Text
-#, fuzzy
 msgid  "Large"
 msgstr "Store"
 
 #: source/propctrlr/formres.src#RID_STR_SHOW_POSITION.String.Text
-#, fuzzy
 msgid  "Positioning"
 msgstr "Plassering"
 
 #: source/propctrlr/formres.src#RID_STR_SHOW_NAVIGATION.String.Text
-#, fuzzy
 msgid  "Navigation"
 msgstr "Navigering"
 
 #: source/propctrlr/formres.src#RID_STR_SHOW_RECORDACTIONS.String.Text
-#, fuzzy
 msgid  "Acting on a record"
 msgstr "Handling ved post"
 
 #: source/propctrlr/formres.src#RID_STR_SHOW_FILTERSORT.String.Text
-#, fuzzy
 msgid  "Filtering / Sorting"
 msgstr "Filtrering/sortering"
 
 #: source/propctrlr/formres.src#RID_STR_HSCROLL.String.Text
-#, fuzzy
 msgid  "Horizontal scroll bar"
 msgstr "Vassrett rullefelt"
 
 #: source/propctrlr/formres.src#RID_STR_VSCROLL.String.Text
-#, fuzzy
 msgid  "Vertical scroll bar"
 msgstr "Loddrett rullefelt"
 
 #: source/propctrlr/formres.src#RID_STR_WORDBREAK.String.Text
-#, fuzzy
 msgid  "Word break"
 msgstr "Tekstbryting"
 
 #: source/propctrlr/formres.src#RID_STR_MULTILINE.String.Text
-#, fuzzy
 msgid  "Multiline input"
 msgstr "Skrivefelt med fleire linjer"
 
 #: source/propctrlr/formres.src#RID_STR_MULTISELECTION.String.Text
-#, fuzzy
 msgid  "Multiselection"
 msgstr "Fleirmerking"
 
 #: source/propctrlr/formres.src#RID_STR_NAME.String.Text
-#, fuzzy
 msgid  "Name"
 msgstr "Namn"
 
 #: source/propctrlr/formres.src#RID_STR_TABINDEX.String.Text
-#, fuzzy
 msgid  "Tab order"
 msgstr "Tabulatorrekkjefølgje"
 
 #: source/propctrlr/formres.src#RID_STR_WHEEL_BEHAVIOR.String.Text
-#, fuzzy
 msgid  "Mouse wheel scroll"
 msgstr "Rulling på musehjulet"
 
 #: source/propctrlr/formres.src#RID_STR_FILTER.String.Text
-#, fuzzy
 msgid  "Filter"
 msgstr "Filter"
 
 #: source/propctrlr/formres.src#RID_STR_SORT_CRITERIA.String.Text
-#, fuzzy
 msgid  "Sort"
 msgstr "Sorter"
 
 #: source/propctrlr/formres.src#RID_STR_RECORDMARKER.String.Text
-#, fuzzy
 msgid  "Record marker"
 msgstr "Postmerke"
 
 #: source/propctrlr/formres.src#RID_STR_FILTERPROPOSAL.String.Text
-#, fuzzy
 msgid  "Filter proposal"
 msgstr "Filterframlegg"
 
 #: source/propctrlr/formres.src#RID_STR_NAVIGATION.String.Text
-#, fuzzy
 msgid  "Navigation bar"
 msgstr "Navigasjonslinje"
 
 #: source/propctrlr/formres.src#RID_STR_CYCLE.String.Text
-#, fuzzy
 msgid  "Cycle"
 msgstr "Syklus"
 
 #: source/propctrlr/formres.src#RID_STR_TABSTOP.String.Text
-#, fuzzy
 msgid  "Tabstop"
 msgstr "Tabulator"
 
 #: source/propctrlr/formres.src#RID_STR_CONTROLSOURCE.String.Text
-#, fuzzy
 msgid  "Data field"
 msgstr "Datafelt"
 
 #: source/propctrlr/formres.src#RID_STR_DROPDOWN.String.Text
-#, fuzzy
 msgid  "Dropdown"
 msgstr "Rullegardin"
 
 #: source/propctrlr/formres.src#RID_STR_BOUNDCOLUMN.String.Text
-#, fuzzy
 msgid  "Bound field"
 msgstr "Bunde felt"
 
 #: source/propctrlr/formres.src#RID_STR_LISTSOURCE.String.Text
-#, fuzzy
 msgid  "List content"
 msgstr "Listeinnhald"
 
 #: source/propctrlr/formres.src#RID_STR_LISTSOURCETYPE.String.Text
-#, fuzzy
 msgid  "Type of list contents"
 msgstr "Type listeinnhald"
 
 #: source/propctrlr/formres.src#RID_STR_CURSORSOURCE.String.Text
-#, fuzzy
 msgid  "Content"
 msgstr "Innhald"
 
 #: source/propctrlr/formres.src#RID_STR_CURSORSOURCETYPE.String.Text
-#, fuzzy
 msgid  "Content type"
 msgstr "Innhaldstype"
 
 #: source/propctrlr/formres.src#RID_STR_ALLOW_ADDITIONS.String.Text
-#, fuzzy
 msgid  "Allow additions"
 msgstr "Tillat tillegg"
 
 #: source/propctrlr/formres.src#RID_STR_ALLOW_DELETIONS.String.Text
-#, fuzzy
 msgid  "Allow deletions"
 msgstr "Tillat sletting"
 
 #: source/propctrlr/formres.src#RID_STR_ALLOW_EDITS.String.Text
-#, fuzzy
 msgid  "Allow modifications"
 msgstr "Tillat endringar"
 
 #: source/propctrlr/formres.src#RID_STR_DATAENTRY.String.Text
-#, fuzzy
 msgid  "Add data only"
 msgstr "Legg berre til data"
 
 #: source/propctrlr/formres.src#RID_STR_DATASOURCE.String.Text
-#, fuzzy
 msgid  "Data source"
 msgstr "Datakjelde"
 
 #: source/propctrlr/formres.src#RID_STR_MASTERFIELDS.String.Text
-#, fuzzy
 msgid  "Link master fields"
 msgstr "Lenk saman hovudfelta"
 
 #: source/propctrlr/formres.src#RID_STR_SLAVEFIELDS.String.Text
-#, fuzzy
 msgid  "Link slave fields"
 msgstr "Lenk saman slavefelta"
 
 #: source/propctrlr/formres.src#RID_STR_VALUEMIN.String.Text
-#, fuzzy
 msgid  "Value min."
 msgstr "Lågaste verdi"
 
 #: source/propctrlr/formres.src#RID_STR_VALUEMAX.String.Text
-#, fuzzy
 msgid  "Value max."
 msgstr "Høgaste verdi"
 
 #: source/propctrlr/formres.src#RID_STR_VALUESTEP.String.Text
-#, fuzzy
 msgid  "Incr./decrement value"
 msgstr "Auk/senk verdien"
 
 #: source/propctrlr/formres.src#RID_STR_CURRENCYSYMBOL.String.Text
-#, fuzzy
 msgid  "Currency symbol"
 msgstr "Valutasymbol"
 
 #: source/propctrlr/formres.src#RID_STR_DATEMIN.String.Text
-#, fuzzy
 msgid  "Date min."
 msgstr "Lågaste dato"
 
 #: source/propctrlr/formres.src#RID_STR_DATEMAX.String.Text
-#, fuzzy
 msgid  "Date max."
 msgstr "Høgaste dato"
 
 #: source/propctrlr/formres.src#RID_STR_DATEFORMAT.String.Text
-#, fuzzy
 msgid  "Date format"
 msgstr "Datoformat"
 
 #: source/propctrlr/formres.src#RID_STR_SELECTEDITEMS.String.Text
-#, fuzzy
 msgid  "Selection"
 msgstr "Utval"
 
 #: source/propctrlr/formres.src#RID_STR_TIMEMIN.String.Text
-#, fuzzy
 msgid  "Time min."
 msgstr "Lågaste tid"
 
 #: source/propctrlr/formres.src#RID_STR_TIMEMAX.String.Text
-#, fuzzy
 msgid  "Time max."
 msgstr "Høgaste tid"
 
 #: source/propctrlr/formres.src#RID_STR_TIMEFORMAT.String.Text
-#, fuzzy
 msgid  "Time format"
 msgstr "Tidsformat"
 
 #: source/propctrlr/formres.src#RID_STR_CURRSYM_POSITION.String.Text
-#, fuzzy
 msgid  "Prefix symbol"
 msgstr "Prefikssymbol"
 
 #: source/propctrlr/formres.src#RID_STR_VALUE.String.Text
-#, fuzzy
 msgid  "Value"
 msgstr "Verdi"
 
 #: source/propctrlr/formres.src#RID_STR_FORMATKEY.String.Text
-#, fuzzy
 msgid  "Formatting"
 msgstr "Formatering"
 
 #: source/propctrlr/formres.src#RID_STR_CLASSID.String.Text
-#, fuzzy
 msgid  "Class ID"
 msgstr "Klasse-ID"
 
 #: source/propctrlr/formres.src#RID_STR_HEIGHT.String.Text
-#, fuzzy
 msgid  "Height"
 msgstr "Høgd"
 
 #: source/propctrlr/formres.src#RID_STR_WIDTH.String.Text
-#, fuzzy
 msgid  "Width"
 msgstr "Breidd"
 
 #: source/propctrlr/formres.src#RID_STR_LISTINDEX.String.Text
-#, fuzzy
 msgid  "List index"
 msgstr "Listeindeks"
 
 #: source/propctrlr/formres.src#RID_STR_ROWHEIGHT.String.Text
-#, fuzzy
 msgid  "Row height"
 msgstr "Radhøgd"
 
 #: source/propctrlr/formres.src#RID_STR_FILLCOLOR.String.Text
-#, fuzzy
 msgid  "Fill color"
 msgstr "Fyllfarge"
 
 #: source/propctrlr/formres.src#RID_STR_LINECOLOR.String.Text
-#, fuzzy
 msgid  "Line color"
 msgstr "Linjefarge"
 
 #: source/propctrlr/formres.src#RID_STR_REFVALUE.String.Text
-#, fuzzy
 msgid  "Reference value (on)"
 msgstr "Referanseverdi (på)"
 
 #: source/propctrlr/formres.src#RID_STR_UNCHECKEDREFVALUE.String.Text
-#, fuzzy
 msgid  "Reference value (off)"
 msgstr "Referanseverdi (av)"
 
 #: source/propctrlr/formres.src#RID_STR_STRINGITEMLIST.String.Text
-#, fuzzy
 msgid  "List entries"
 msgstr "Listeoppføringar"
 
 #: source/propctrlr/formres.src#RID_STR_BUTTONTYPE.String.Text
-#, fuzzy
 msgid  "Action"
 msgstr "Handling"
 
 #: source/propctrlr/formres.src#RID_STR_SUBMIT_ACTION.String.Text
-#, fuzzy
 msgid  "URL"
 msgstr "URL"
 
 #: source/propctrlr/formres.src#RID_STR_SUBMIT_METHOD.String.Text
-#, fuzzy
 msgid  "Type of submission"
 msgstr "Sendemåte"
 
 #: source/propctrlr/formres.src#RID_STR_DEFAULT_STATE.String.Text
-#, fuzzy
 msgid  "Default status"
 msgstr "Standardstatus"
 
 #: source/propctrlr/formres.src#RID_STR_SUBMIT_ENCODING.String.Text
-#, fuzzy
 msgid  "Submission encoding"
 msgstr "Sendingskoding"
 
 #: source/propctrlr/formres.src#RID_STR_DEFAULTVALUE.String.Text
-#, fuzzy
 msgid  "Default value"
 msgstr "Standardverdi"
 
 #: source/propctrlr/formres.src#RID_STR_DEFAULTTEXT.String.Text
-#, fuzzy
 msgid  "Default text"
 msgstr "Standardtekst"
 
 #: source/propctrlr/formres.src#RID_STR_DEFAULTDATE.String.Text
-#, fuzzy
 msgid  "Default date"
 msgstr "Standarddato"
 
 #: source/propctrlr/formres.src#RID_STR_DEFAULTTIME.String.Text
-#, fuzzy
 msgid  "Default time"
 msgstr "Standardtid"
 
 #: source/propctrlr/formres.src#RID_STR_SUBMIT_TARGET.String.Text
-#, fuzzy
 msgid  "Frame"
 msgstr "Ramme"
 
 #: source/propctrlr/formres.src#RID_RSC_ENUM_BORDER_TYPE.1.String.Text
-#, fuzzy
 msgid  "Without frame"
 msgstr "Utan ramme"
 
 #: source/propctrlr/formres.src#RID_RSC_ENUM_BORDER_TYPE.2.String.Text
-#, fuzzy
 msgid  "3D look"
 msgstr "3D-utsjånad"
 
 #: source/propctrlr/formres.src#RID_RSC_ENUM_BORDER_TYPE.3.String.Text
-#, fuzzy
 msgid  "Flat"
 msgstr "Flat"
 
 #: source/propctrlr/formres.src#RID_RSC_ENUM_LISTSOURCE_TYPE.1.String.Text
-#, fuzzy
 msgid  "Valuelist"
 msgstr "Verdiliste"
 
 #: source/propctrlr/formres.src#RID_RSC_ENUM_LISTSOURCE_TYPE.2.String.Text
-#, fuzzy
 msgid  "Table"
 msgstr "Tabell"
 
 #: source/propctrlr/formres.src#RID_RSC_ENUM_LISTSOURCE_TYPE.3.String.Text
-#, fuzzy
 msgid  "Query"
 msgstr "Spørjing"
 
 #: source/propctrlr/formres.src#RID_RSC_ENUM_LISTSOURCE_TYPE.4.String.Text
-#, fuzzy
 msgid  "Sql"
 msgstr "SQL"
 
 #: source/propctrlr/formres.src#RID_RSC_ENUM_LISTSOURCE_TYPE.5.String.Text
-#, fuzzy
 msgid  "Sql [Native]"
 msgstr "SQL [lokalt]"
 
 #: source/propctrlr/formres.src#RID_RSC_ENUM_LISTSOURCE_TYPE.6.String.Text
-#, fuzzy
 msgid  "Tablefields"
 msgstr "Tabellfelt"
 
 #: source/propctrlr/formres.src#RID_RSC_ENUM_ALIGNMENT.1.String.Text
-#, fuzzy
 msgid  "Left"
 msgstr "Venstre"
 
 #: source/propctrlr/formres.src#RID_RSC_ENUM_ALIGNMENT.2.String.Text
-#, fuzzy
 msgid  "Center"
 msgstr "Midtstilt"
 
 #: source/propctrlr/formres.src#RID_RSC_ENUM_ALIGNMENT.3.String.Text
-#, fuzzy
 msgid  "Right"
 msgstr "Høgre"
 
@@ -2132,8 +2012,9 @@ msgid  "Help"
 msgstr "Hjelp"
 
 #: source/propctrlr/formres.src#RID_STR_UNABLETOCONNECT.String.Text
-msgid  "The connection to the data source "$name$" could not be established."
-msgstr ""
+#, fuzzy
+msgid  "The connection to the data source \"$name$\" could not be established."
+msgstr "Klarte ikkje oppretta samband til datakjelda «$name$»."
 
 #: source/propctrlr/formres.src#RID_STR_TEXT.String.Text
 #, fuzzy
@@ -2645,17 +2526,14 @@ msgid  "(Default)"
 msgstr "(Standard)"
 
 #: source/propctrlr/fontdialog.src#RID_TABDLG_FONTDIALOG.TabDialog.Text
-#, fuzzy
 msgid  "Character"
 msgstr "Teikn"
 
 #: source/propctrlr/fontdialog.src#RID_TABDLG_FONTDIALOG.1.TABPAGE_CHARACTERS.PageItem.Text
-#, fuzzy
 msgid  "Font"
 msgstr "Skrift"
 
 #: source/propctrlr/fontdialog.src#RID_TABDLG_FONTDIALOG.1.TABPAGE_CHARACTERS_EXT.PageItem.Text
-#, fuzzy
 msgid  "Font Effects"
 msgstr "Skrifteffektar"
 
@@ -2671,207 +2549,175 @@ msgstr "Vel eit namn på den nye datatypen:"
 
 #: source/scanner/sanedlg.src#RID_SANE_DIALOG.RID_DEVICEINFO_BTN.PushButton.Text
 msgid  "About\n Dev~ice"
-msgstr ""
+msgstr "Informasjon\n om ~eininga"
 
 #: source/scanner/sanedlg.src#RID_SANE_DIALOG.RID_PREVIEW_BTN.PushButton.Text
 msgid  "Create\nPreview"
-msgstr ""
+msgstr "Lag\nførehandsvising"
 
 #: source/scanner/sanedlg.src#RID_SANE_DIALOG.RID_PREVIEW_BOX.FixedLine.Text
-#, fuzzy
 msgid  "Preview"
 msgstr "Førehandsvising"
 
 #: source/scanner/sanedlg.src#RID_SANE_DIALOG.RID_SCANAREA_BOX.FixedLine.Text
-#, fuzzy
 msgid  "Scan area"
 msgstr "Område som skal skannast"
 
 #: source/scanner/sanedlg.src#RID_SANE_DIALOG.RID_SCAN_LEFT_TXT.FixedText.Text
-#, fuzzy
 msgid  "Left:"
 msgstr "Venstre:"
 
 #: source/scanner/sanedlg.src#RID_SANE_DIALOG.RID_SCAN_TOP_TXT.FixedText.Text
-#, fuzzy
 msgid  "Top:"
 msgstr "Oppe:"
 
 #: source/scanner/sanedlg.src#RID_SANE_DIALOG.RID_SCAN_RIGHT_TXT.FixedText.Text
-#, fuzzy
 msgid  "Right:"
 msgstr "Høgre:"
 
 #: source/scanner/sanedlg.src#RID_SANE_DIALOG.RID_SCAN_BOTTOM_TXT.FixedText.Text
-#, fuzzy
 msgid  "Bottom:"
 msgstr "Nede:"
 
 #: source/scanner/sanedlg.src#RID_SANE_DIALOG.RID_DEVICE_BOX_TXT.FixedText.Text
-#, fuzzy
 msgid  "Device used:"
 msgstr "Eining som blir brukt:"
 
 #: source/scanner/sanedlg.src#RID_SANE_DIALOG.RID_SCAN_RESOLUTION_TXT.FixedText.Text
-#, fuzzy
 msgid  "Resolution [~DPI]"
 msgstr "Oppløysing (~ppt)"
 
 #: source/scanner/sanedlg.src#RID_SANE_DIALOG.RID_SCAN_ADVANCED_TXT.FixedText.Text
-#, fuzzy
 msgid  "Show advanced options"
 msgstr "Vis avanserte alternativ"
 
 #: source/scanner/sanedlg.src#RID_SANE_DIALOG.RID_SCAN_OPTION_TXT.FixedText.Text
-#, fuzzy
 msgid  "Options:"
 msgstr "Alternativ:"
 
 #: source/scanner/sanedlg.src#RID_SANE_DIALOG.RID_SCAN_NUMERIC_VECTOR_TXT.FixedText.Text
-#, fuzzy
 msgid  "Vector element"
 msgstr "Vektorelement"
 
 #: source/scanner/sanedlg.src#RID_SANE_DIALOG.RID_SCAN_BUTTON_OPTION_BTN.PushButton.Text
-#, fuzzy
 msgid  "Set"
 msgstr "Vel"
 
 #: source/scanner/sanedlg.src#RID_SANE_DIALOG.Bitmap.Text
-#, fuzzy
 msgid  "Scanner"
 msgstr "Skannar"
 
 #: source/scanner/sanedlg.src#RID_SANE_DEVICEINFO_TXT.String.Text
 msgid  "Device: %s\nVendor: %s\nModel: %s\nType: %s"
-msgstr ""
+msgstr "Eining: %s\nForhandlar: %s\nModell: %s\nType: %s"
 
 #: source/scanner/sanedlg.src#RID_SANE_SCANERROR_TXT.String.Text
-#, fuzzy
 msgid  "An error occurred while scanning."
 msgstr "Det oppstod ein feil under skanning."
 
 #: source/scanner/sanedlg.src#RID_SANE_NORESOLUTIONOPTION_TXT.String.Text
 msgid  "The device does not offer a preview option. Therefore, a normal scan will be used as a preview instead. This may take a considerable amount of time."
-msgstr ""
+msgstr "Eininga kan ikkje gi førehandsvising. Difor blir vanleg skanning brukt som førehandsvising i staden. Dette kan ta ganske lang tid."
 
 #: source/scanner/sanedlg.src#RID_SANE_NOSANELIB_TXT.String.Text
-#, fuzzy
 msgid  "The SANE interface could not be initialized. Scanning is not possible."
 msgstr "Klarte ikkje klargjera SANE-grensesnittet. Kan difor ikkje skanna."
 
 #: source/scanner/grid.src#GRID_DIALOG.GRID_DIALOG_RESET_BTN.PushButton.Text
-#, fuzzy
 msgid  "Set"
 msgstr "Vel"
 
 #: source/scanner/grid.src#GRID_DIALOG.RESET_TYPE_LINEAR_ASCENDING.String.Text
-#, fuzzy
 msgid  "Linear ascending"
 msgstr "Lineært stigande"
 
 #: source/scanner/grid.src#GRID_DIALOG.RESET_TYPE_LINEAR_DESCENDING.String.Text
-#, fuzzy
 msgid  "Linear descending"
 msgstr "Lineært synkande"
 
 #: source/scanner/grid.src#GRID_DIALOG.RESET_TYPE_RESET.String.Text
-#, fuzzy
 msgid  "Original values"
 msgstr "Originalverdiar"
 
 #: source/scanner/grid.src#GRID_DIALOG.RESET_TYPE_EXPONENTIAL.String.Text
-#, fuzzy
 msgid  "Exponential increasing"
 msgstr "Eksponentielt aukande"
 
 #: source/update/check/updatehdl.src#RID_UPDATE_STR_CHECKING.String.Text
-#, fuzzy
 msgid  "Checking..."
 msgstr "Sjekkar …"
 
 #: source/update/check/updatehdl.src#RID_UPDATE_STR_CHECKING_ERR.String.Text
-#, fuzzy
 msgid  "Checking for an update failed."
 msgstr "Klarte ikkje sjå etter oppdatering."
 
 #: source/update/check/updatehdl.src#RID_UPDATE_STR_NO_UPD_FOUND.String.Text
-#, fuzzy
 msgid  "%PRODUCTNAME %PRODUCTVERSION is up to date."
 msgstr "%PRODUCTNAME %PRODUCTVERSION er allereie oppdatert."
 
 #: source/update/check/updatehdl.src#RID_UPDATE_STR_UPD_FOUND.String.Text
 msgid  "%PRODUCTNAME %NEXTVERSION is available.\n\nThe installed version is %PRODUCTNAME %PRODUCTVERSION.\n\nNote: Before downloading  an update, please ensure that you have sufficient access rights to install it.\nA password, usually the administrator's or root password, may be required."
-msgstr ""
+msgstr "%PRODUCTNAME %NEXTVERSION er tilgjengeleg.\n\nDen installerte versjonen er %PRODUCTNAME %PRODUCTVERSION.\n\nMerk: Før du lastar ned ei oppdatering, sjå til at du har tilstrekkeleg tilgang til å installera henne.\nDet kan henda du treng eit passord, vanlegvis administrator- eller rotpassordet."
 
 #: source/update/check/updatehdl.src#RID_UPDATE_STR_DLG_TITLE.String.Text
-#, fuzzy
 msgid  "Check for Updates"
 msgstr "Sjå etter oppdateringar"
 
 #: source/update/check/updatehdl.src#RID_UPDATE_STR_DOWNLOAD_PAUSE.String.Text
-#, fuzzy
 msgid  "Downloading %PRODUCTNAME %NEXTVERSION paused at..."
 msgstr "Pause i nedlastinga av %PRODUCTNAME %NEXTVERSION ved …"
 
 #: source/update/check/updatehdl.src#RID_UPDATE_STR_DOWNLOAD_ERR.String.Text
-#, fuzzy
 msgid  "Downloading %PRODUCTNAME %NEXTVERSION stalled at"
 msgstr "Nedlastinga av %PRODUCTNAME %NEXTVERSION stoppa ved"
 
 #: source/update/check/updatehdl.src#RID_UPDATE_STR_DOWNLOAD_WARN.String.Text
 msgid  "The download location is: %DOWNLOAD_PATH.\n\nUnder Tools – Options... - %PRODUCTNAME – Online Update you can change the download location."
-msgstr ""
+msgstr "Nedlastinga skjer til: %DOWNLOAD_PATH\n\nUnder «Verktøy – Innstillingar – %PRODUCTNAME – Nettoppdatering» kan du velja ein annan stad."
 
 #: source/update/check/updatehdl.src#RID_UPDATE_STR_DOWNLOAD_DESCR.String.Text
-#, fuzzy
 msgid  "%FILE_NAME has been downloaded to %DOWNLOAD_PATH."
 msgstr "%FILE_NAME er lasta ned til %DOWNLOAD_PATH."
 
 #: source/update/check/updatehdl.src#RID_UPDATE_STR_DOWNLOAD_UNAVAIL.String.Text
 msgid  "The automatic download of the update is currently not available.\n\nClick 'Download...' to download %PRODUCTNAME %NEXTVERSION manually from the web site."
-msgstr ""
+msgstr "Automatisk nedlasting av oppdateringa er ikkje tilgjengeleg nett no.\n\nTrykk på «Last ned» for å lasta ned %PRODUCTNAME %NEXTVERSION manuelt frå nettsida."
 
 #: source/update/check/updatehdl.src#RID_UPDATE_STR_DOWNLOADING.String.Text
-#, fuzzy
 msgid  "Downloading %PRODUCTNAME %NEXTVERSION..."
 msgstr "Lastar ned %PRODUCTNAME %NEXTVERSION …"
 
 #: source/update/check/updatehdl.src#RID_UPDATE_STR_READY_INSTALL.String.Text
 msgid  "Download of %PRODUCTNAME %NEXTVERSION completed. Ready for installation."
-msgstr ""
+msgstr "Nedlastinga av %PRODUCTNAME %NEXTVERSION er ferdig. Klar til installasjon."
 
 #: source/update/check/updatehdl.src#RID_UPDATE_STR_CANCEL_TITLE.String.Text
-#, fuzzy
 msgid  "%PRODUCTNAME %PRODUCTVERSION"
 msgstr "%PRODUCTNAME %PRODUCTVERSION"
 
 #: source/update/check/updatehdl.src#RID_UPDATE_STR_CANCEL_DOWNLOAD.String.Text
-#, fuzzy
 msgid  "Do you really want to cancel the download?"
 msgstr "Vil du verkeleg avbryta nedlastinga?"
 
 #: source/update/check/updatehdl.src#RID_UPDATE_STR_BEGIN_INSTALL.String.Text
 msgid  "To install the update, %PRODUCTNAME %PRODUCTVERSION needs to be closed. Do you want to install the update now?"
-msgstr ""
+msgstr "%PRODUCTNAME %PRODUCTVERSION må lukkast for å installera oppdateringa. Vil du installera oppdateringa no?"
 
 #: source/update/check/updatehdl.src#RID_UPDATE_STR_INSTALL_NOW.String.Text
-#, fuzzy
 msgid  "Install ~now"
 msgstr "Installer ~no"
 
 #: source/update/check/updatehdl.src#RID_UPDATE_STR_INSTALL_LATER.String.Text
-#, fuzzy
 msgid  "Install ~later"
 msgstr "Installer ~seinare"
 
 #: source/update/check/updatehdl.src#RID_UPDATE_STR_INSTALL_ERROR.String.Text
 msgid  "Could not run the installer application, please run %FILE_NAME in %DOWNLOAD_PATH manually."
-msgstr ""
+msgstr "Klarte ikkje køyra installasjonsprogrammet. Køyr %FILE_NAME i %DOWNLOAD_PATH manuelt i staden."
 
 #: source/update/check/updatehdl.src#RID_UPDATE_STR_OVERWRITE_WARNING.String.Text
 msgid  "A file with that name already exists! Do you want to overwrite the existing file?"
-msgstr ""
+msgstr "Ei fil med det namnet finst frå før. Vil du skriva over fila?"
 
 #: source/update/check/updatehdl.src#RID_UPDATE_STR_RELOAD_WARNING.String.Text
 msgid  "A file with the name '%FILENAME' already exists in '%DOWNLOAD_PATH'! Do you want to continue with the download or delete and reload the file?"
@@ -2886,126 +2732,101 @@ msgid  "Continue"
 msgstr ""
 
 #: source/update/check/updatehdl.src#RID_UPDATE_STR_PERCENT.String.Text
-#, fuzzy
 msgid  "%PERCENT%"
 msgstr "%PERCENT %"
 
 #: source/update/check/updatehdl.src#RID_UPDATE_FT_STATUS.String.Text
-#, fuzzy
 msgid  "Status"
 msgstr "Status"
 
 #: source/update/check/updatehdl.src#RID_UPDATE_FT_DESCRIPTION.String.Text
-#, fuzzy
 msgid  "Description"
 msgstr "Skildring"
 
 #: source/update/check/updatehdl.src#RID_UPDATE_BTN_CLOSE.String.Text
-#, fuzzy
 msgid  "Close"
 msgstr "Lukk"
 
 #: source/update/check/updatehdl.src#RID_UPDATE_BTN_DOWNLOAD.String.Text
-#, fuzzy
 msgid  "~Download"
 msgstr "~Last ned"
 
 #: source/update/check/updatehdl.src#RID_UPDATE_BTN_INSTALL.String.Text
-#, fuzzy
 msgid  "~Install"
 msgstr "~Installer"
 
 #: source/update/check/updatehdl.src#RID_UPDATE_BTN_PAUSE.String.Text
-#, fuzzy
 msgid  "~Pause"
 msgstr "~Pause"
 
 #: source/update/check/updatehdl.src#RID_UPDATE_BTN_RESUME.String.Text
-#, fuzzy
 msgid  "~Resume"
 msgstr "~Hald fram"
 
 #: source/update/check/updatehdl.src#RID_UPDATE_BTN_CANCEL.String.Text
-#, fuzzy
 msgid  "Cancel"
 msgstr "Avbryt"
 
 #: source/update/check/updatehdl.src#RID_UPDATE_BUBBLE_T_UPDATE_AVAIL.String.Text
-#, fuzzy
 msgid  "%PRODUCTNAME update available"
 msgstr "%PRODUCTNAME-oppdatering tilgjengeleg"
 
 #: source/update/check/updatehdl.src#RID_UPDATE_BUBBLE_UPDATE_AVAIL.String.Text
-#, fuzzy
 msgid  "Click here to start the download."
 msgstr "Trykk her for å starta nedlastinga."
 
 #: source/update/check/updatehdl.src#RID_UPDATE_BUBBLE_T_UPDATE_NO_DOWN.String.Text
-#, fuzzy
 msgid  "%PRODUCTNAME update available"
 msgstr "%PRODUCTNAME-oppdatering tilgjengeleg"
 
 #: source/update/check/updatehdl.src#RID_UPDATE_BUBBLE_UPDATE_NO_DOWN.String.Text
-#, fuzzy
 msgid  "Click here for more information."
 msgstr "Trykk her for meir informasjon."
 
 #: source/update/check/updatehdl.src#RID_UPDATE_BUBBLE_T_AUTO_START.String.Text
-#, fuzzy
 msgid  "%PRODUCTNAME update available"
 msgstr "%PRODUCTNAME-oppdatering tilgjengeleg"
 
 #: source/update/check/updatehdl.src#RID_UPDATE_BUBBLE_AUTO_START.String.Text
-#, fuzzy
 msgid  "Download of update begins."
 msgstr "Byrjar å lasta ned oppdateringa."
 
 #: source/update/check/updatehdl.src#RID_UPDATE_BUBBLE_T_DOWNLOADING.String.Text
-#, fuzzy
 msgid  "Download of update in progress"
 msgstr "Lastar ned oppdateringa"
 
 #: source/update/check/updatehdl.src#RID_UPDATE_BUBBLE_T_DOWNLOAD_PAUSED.String.Text
-#, fuzzy
 msgid  "Download of update paused"
 msgstr "Pause i nedlastinga"
 
 #: source/update/check/updatehdl.src#RID_UPDATE_BUBBLE_DOWNLOAD_PAUSED.String.Text
-#, fuzzy
 msgid  "Click here to resume."
 msgstr "Trykk her for å halda fram"
 
 #: source/update/check/updatehdl.src#RID_UPDATE_BUBBLE_T_ERROR_DOWNLOADING.String.Text
-#, fuzzy
 msgid  "Download of update stalled"
 msgstr "Nedlastinga stoppa"
 
 #: source/update/check/updatehdl.src#RID_UPDATE_BUBBLE_ERROR_DOWNLOADING.String.Text
-#, fuzzy
 msgid  "Click here for more information."
 msgstr "Trykk her for meir informasjon."
 
 #: source/update/check/updatehdl.src#RID_UPDATE_BUBBLE_T_DOWNLOAD_AVAIL.String.Text
-#, fuzzy
 msgid  "Download of update completed"
 msgstr "Oppdateringa er ferdig nedlasta"
 
 #: source/update/check/updatehdl.src#RID_UPDATE_BUBBLE_DOWNLOAD_AVAIL.String.Text
-#, fuzzy
 msgid  "Click here to start the installation."
 msgstr "Trykk her for å installera."
 
 #: source/update/check/updatehdl.src#RID_UPDATE_BUBBLE_T_EXT_UPD_AVAIL.String.Text
-#, fuzzy
 msgid  "Updates for extensions available"
 msgstr "Det finst oppdateringar for utvidingar"
 
 #: source/update/check/updatehdl.src#RID_UPDATE_BUBBLE_EXT_UPD_AVAIL.String.Text
-#, fuzzy
 msgid  "Click here for more information."
 msgstr "Trykk her for meir informasjon."
 
 #: source/update/check/Addons.xcu#.Addons.AddonUI.OfficeHelp.UpdateCheckJob.Title
-#, fuzzy
 msgid  "Check for ~Updates..."
 msgstr "Sjå etter ~oppdateringar …"

@@ -67,12 +67,10 @@ msgid  "No Text"
 msgstr "ಯಾವುದೆ ಪಠ್ಯವಿಲ್ಲ"
 
 #: source/passworddlg.src#DLG_UUI_PASSWORD.STR_ENTER_PASSWORD_TO_OPEN.String.Text
-#, fuzzy
 msgid  "Enter password to open file: \n"
 msgstr "ಕಡತವನ್ನು ತೆರೆಯಲು ಗುಪ್ತಪದವನ್ನು ದಾಖಲಿಸಿ: \n"
 
 #: source/passworddlg.src#DLG_UUI_PASSWORD.STR_ENTER_PASSWORD_TO_MODIFY.String.Text
-#, fuzzy
 msgid  "Enter password to modify file: \n"
 msgstr "ಕಡತವನ್ನು ಮಾರ್ಪಡಿಸಲು ಗುಪ್ತಪದವನ್ನು ನಮೂದಿಸಿ: \n"
 
@@ -104,8 +102,9 @@ msgid  "Document in Use"
 msgstr "ದಸ್ತಾವೇಜು ಬಳಕೆಯಲ್ಲಿದೆ"
 
 #: source/trylater.src#STR_TRYLATER_MSG.String.Text
+#, fuzzy
 msgid  "Document file '$(ARG1)' is locked for editing by:\n\n$(ARG2)\n\nTry again later to save document or save a copy of that document.\n\n"
-msgstr ""
+msgstr "ದಸ್ತಾವೇಜು ಕಡತ '$(ARG1)' ಅನ್ನು ಸಂಪಾದನೆಗಾಗಿ ಲಾಕ್‌ ಮಾಡಲಾಗಿದೆ:\n\n$(ARG2)\n\nದಸ್ತಾವೇಜನ್ನು ಉಳಿಸಲು ಆನಂತರ ಪ್ರಯತ್ನಿಸಿ ಅಥವ ಆ ದಸ್ತಾವೇಜಿನ ಒಂದು ಪ್ರತಿಯನ್ನು ಉಳಿಸಿ.\n\n"
 
 #: source/trylater.src#STR_TRYLATER_RETRYSAVING_BTN.String.Text
 #, fuzzy
@@ -118,459 +117,390 @@ msgid  "~Save As..."
 msgstr "ಹೀಗೆ ಉಳಿಸು(~S)..."
 
 #: source/ids.src#RID_KEEP_PASSWORD.String.Text
-#, fuzzy
 msgid  "~Remember password until end of session"
 msgstr "ಅಧಿವೇಶನದ ಕೊನೆಯವರೆಗೂ ಗುಪ್ತಪದವನ್ನು ನೆನಪಿಟ್ಟುಕೊ(~R)"
 
 #: source/ids.src#RID_SAVE_PASSWORD.String.Text
-#, fuzzy
 msgid  "~Remember password"
 msgstr "ಗುಪ್ತಪದವನ್ನು ನೆನಪಿನಲ್ಲಿಟ್ಟಿಕೊ(~R)"
 
 #: source/ids.src#STR_WARNING_BROKENSIGNATURE_TITLE.String.Text
-#, fuzzy
 msgid  "Invalid Document Signature"
 msgstr "ಅಮಾನ್ಯವಾದ ದಸ್ತಾವೇಜು ಸಹಿ"
 
 #: source/ids.src#STR_WARNING_INCOMPLETE_ENCRYPTION_TITLE.String.Text
-#, fuzzy
 msgid  "Non-Encrypted Streams"
 msgstr "ಗೂಢಲಿಪೀಕರಿಸದೆ ಇರುವ ಸ್ಟ್ರೀಮ್‌ಗಳು"
 
 #: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_IO_ABORT & ERRCODE_RES_MASK).String.Text
-#, fuzzy
 msgid  "The operation executed on $(ARG1) was aborted."
 msgstr "$(ARG1) ನ ಮೇಲೆ ನಿರ್ವಹಿಸಲಾದ ಕಾರ್ಯವನ್ನು ನಿಲ್ಲಿಸಲಾಗಿದೆ."
 
 #: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_IO_ACCESSDENIED & ERRCODE_RES_MASK).String.Text
-#, fuzzy
 msgid  "Access to $(ARG1) was denied."
 msgstr "$(ARG1) ನ ನಿಲುಕಣೆಯನ್ನು ನಿರಾಕರಿಸಲಾಗಿದೆ."
 
 #: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_IO_ALREADYEXISTS & ERRCODE_RES_MASK).String.Text
-#, fuzzy
 msgid  "$(ARG1) already exists."
 msgstr "$(ARG1) ಈಗಾಗಲೆ ಅಸ್ತಿತ್ವದಲ್ಲಿದೆ."
 
 #: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_IO_TARGETALREADYEXISTS & ERRCODE_RES_MASK).String.Text
-#, fuzzy
 msgid  "Target already exists."
 msgstr "ಗುರಿಯು ಈಗಾಗಲೆ ಅಸ್ತಿತ್ವದಲ್ಲಿದೆ."
 
 #: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_IO_MODULESIZEEXCEEDED & ERRCODE_RES_MASK).String.Text
 msgid  "You are about to save/export a password protected basic library containing module(s) \n$(ARG1)\nwhich are too large to store in binary format. If you wish users that don't have access to the library password to be able to run macros in those module(s) you must split those modules into a number of smaller modules. Do you wish to continue to save/export this library?"
-msgstr ""
+msgstr "ನೀವು ಗುಪ್ತಪದದಿಂದ ಸಂರಕ್ಷಿತಗೊಂಡಂತಹ, $(ARG1) ಘಟಕವನ್ನು(ಗಳನ್ನು) ಹೊಂದಿರುವಂತಹ ಒಂದು ಮೂಲ ಭಂಡಾರವನ್ನು ಉಳಿಸಲು/ರಫ್ತು ಮಾಡಲಿದ್ದೀರಿ\n\nಆದರೆ ಬೈನರಿ ರೂಪದಲ್ಲಿ ಉಳಿಸಲು ಇದು ಬಹಳ ದೊಡ್ಡದಾಗಿದೆ. ಭಂಡಾರದ ಗುಪ್ತಪದಕ್ಕೆ ನಿಲುಕಣೆಯನ್ನು ಹೊಂದಿರದೆ ಇರುವ ಬಳಕೆದಾರು ಈ ಘಟಕದಲ್ಲಿ(ಗಳಲ್ಲಿ) ಮ್ಯಾಕ್ರೋಗಳನ್ನು ಚಲಾಯಿಸಲು ಅನುಮತಿ ಇರಬೇಕು ಎಂದು ನೀವು ಬಯಸಿದಲ್ಲಿ, ನೀವು ಈ ಘಟಕಗಳನ್ನು ಸಣ್ಣ ಸಣ್ಣ ಘಟಕಗಳಾಗಿ ವಿಂಗಡಿಸಬೇಕು. ಈ ಭಂಡಾರವನ್ನು ಉಳಿಸುವುದನ್ನು/ರಫ್ತುಮಾಡುವುದನ್ನು ಮುಂದುವರೆಸಲು ಬಯಸುತ್ತೀರೆ?"
 
 #: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_IO_BADCRC & ERRCODE_RES_MASK).String.Text
-#, fuzzy
 msgid  "The data from $(ARG1) has an incorrect checksum."
 msgstr "$(ARG1) ನಲ್ಲಿನ ದತ್ತಾಂಶವು ಸರಿಯಲ್ಲದ ಚೆಕ್‌ಸಮ್ ಅನ್ನು ಹೊಂದಿದೆ."
 
 #: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_IO_CANTCREATE & ERRCODE_RES_MASK).String.Text
-#, fuzzy
 msgid  "The object $(ARG1) cannot be created in directory $(ARG2)."
 msgstr "ವಸ್ತು $(ARG1) ಅನ್ನು ಕೋಶ $(ARG2) ದಲ್ಲಿ ರಚಿಸಲು ಸಾಧ್ಯವಾಗಿಲ್ಲ."
 
 #: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_IO_CANTREAD & ERRCODE_RES_MASK).String.Text
-#, fuzzy
 msgid  "Data of $(ARG1) could not be read."
 msgstr "$(ARG1) ನ ದತ್ತಾಂಶವನ್ನು ಓದಲಾಗಿಲ್ಲ."
 
 #: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_IO_CANTSEEK & ERRCODE_RES_MASK).String.Text
-#, fuzzy
 msgid  "The seek operation on $(ARG1) could not be performed."
 msgstr "$(ARG1) ನಲ್ಲಿ ಕೋರುವ ಕಾರ್ಯವನ್ನು ನಿರ್ವಹಿಸಲು ಸಾಧ್ಯವಾಗಿಲ್ಲ."
 
 #: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_IO_CANTTELL & ERRCODE_RES_MASK).String.Text
-#, fuzzy
 msgid  "The tell operation on $(ARG1) could not be performed."
 msgstr "$(ARG1) ನಲ್ಲಿ ಹೇಳುವ ಕಾರ್ಯವನ್ನು ನಿರ್ವಹಿಸಲು ಸಾಧ್ಯವಾಗಿಲ್ಲ."
 
 #: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_IO_CANTWRITE & ERRCODE_RES_MASK).String.Text
-#, fuzzy
 msgid  "Data for $(ARG1) could not be written."
 msgstr "$(ARG1) ಗಾಗಿನ ದತ್ತಾಂಶವನ್ನು ಬರೆಯಲು ಸಾಧ್ಯವಾಗಿಲ್ಲ."
 
 #: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_IO_CURRENTDIR & ERRCODE_RES_MASK).String.Text
-#, fuzzy
 msgid  "Action impossible: $(ARG1) is the current directory."
 msgstr "ಕಾರ್ಯವು ಸಾಧ್ಯವಿಲ್ಲ: $(ARG1) ಯು ಪ್ರಸಕ್ತ ಕೋಶವಾಗಿದೆ."
 
 #: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_IO_NOTREADY & ERRCODE_RES_MASK).String.Text
-#, fuzzy
 msgid  "$(ARG1) is not ready."
 msgstr "$(ARG1) ಯು ಇನ್ನೂ ತಯಾರಾಗಿಲ್ಲ."
 
 #: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_IO_NOTSAMEDEVICE & ERRCODE_RES_MASK).String.Text
 msgid  "Action impossible: $(ARG1) and $(ARG2) are different devices (drives)."
-msgstr ""
+msgstr "ಕಾರ್ಯವು ಸಾಧ್ಯವಿಲ್ಲ: $(ARG1) ಹಾಗು $(ARG2) ಯು ಬೇರೆ ಬೇರೆ ಸಾಧನಗಳಾಗಿವೆ (ಡ್ರೈವ್‌ಗಳು)."
 
 #: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_IO_GENERAL & ERRCODE_RES_MASK).String.Text
-#, fuzzy
 msgid  "General input/output error while accessing $(ARG1)."
 msgstr "$(ARG1) ಅನ್ನು ನಿಲುಕಿಸಿಕೊಳ್ಳುವಾಗ ಸಾಮಾನ್ಯ ಇನ್‌ಪುಟ್‌/ಔಟ್‌ಪುಟ್‌ ದೋಷ."
 
 #: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_IO_INVALIDACCESS & ERRCODE_RES_MASK).String.Text
-#, fuzzy
 msgid  "An attempt was made to access $(ARG1) in an invalid way."
 msgstr "$(ARG1) ಅನ್ನು ನಿಲುಕಿಸಿಕೊಳ್ಳಲು ಒಂದು ಅಮಾನ್ಯವಾದ ರೀತಿಯಲ್ಲಿ ಪ್ರಯತ್ನಿಸಲಾಗಿದೆ."
 
 #: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_IO_INVALIDCHAR & ERRCODE_RES_MASK).String.Text
-#, fuzzy
 msgid  "$(ARG1) contains invalid characters."
 msgstr "$(ARG1) ವು ಅಮಾನ್ಯವಾದ ಅಕ್ಷರಗಳನ್ನು ಹೊಂದಿದೆ."
 
 #: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_IO_INVALIDDEVICE & ERRCODE_RES_MASK).String.Text
-#, fuzzy
 msgid  "The device (drive) $(ARG1) is invalid."
 msgstr "ಸಾಧನ (ಡ್ರೈವ್‌) $(ARG1) ಯು ಅಮಾನ್ಯವಾಗಿದೆ."
 
 #: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_IO_INVALIDLENGTH & ERRCODE_RES_MASK).String.Text
-#, fuzzy
 msgid  "The data from $(ARG1) has an invalid length."
 msgstr "$(ARG1) ಯಲ್ಲಿನ ದತ್ತಾಂಶವು ಅಮಾನ್ಯವಾದ ಗಾತ್ರವನ್ನು ಹೊಂದಿದೆ."
 
 #: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_IO_INVALIDPARAMETER & ERRCODE_RES_MASK).String.Text
 msgid  "The operation on $(ARG1) was started with an invalid parameter."
-msgstr ""
+msgstr "$(ARG1) ನಲ್ಲಿ ಆರಂಭಗೊಂಡಂತಹ ಕಾರ್ಯವು ಒಂದು ಅಮಾನ್ಯವಾದ ನಿಯತಾಂಕದೊಂದಿಗೆ ಪ್ರಾರಂಭಗೊಳ್ಳುತ್ತದೆ."
 
 #: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_IO_ISWILDCARD & ERRCODE_RES_MASK).String.Text
 msgid  "The operation cannot be performed because $(ARG1) contains wildcards."
-msgstr ""
+msgstr "ಕಾರ್ಯವನ್ನು ನಿರ್ವಹಿಸಲು ಸಾಧ್ಯವಾಗಿಲ್ಲ ಏಕೆಂದರೆ $(ARG1) ನಲ್ಲಿ ವೈಲ್ಡ್‍ಕಾರ್ಡ್ ಇದೆ."
 
 #: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_IO_LOCKVIOLATION & ERRCODE_RES_MASK).String.Text
-#, fuzzy
 msgid  "Error during shared access to $(ARG1)."
 msgstr "$(ARG1) ಅನ್ನು ಹಂಚಿಕಾ ನಿಲುಕಣೆಯ ಸಮಯದಲ್ಲಿ ದೋಷ ಉಂಟಾಗಿದೆ."
 
 #: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_IO_MISPLACEDCHAR & ERRCODE_RES_MASK).String.Text
-#, fuzzy
 msgid  "$(ARG1) contains misplaced characters."
 msgstr "$(ARG1) ನಲ್ಲಿ ಸರಿಯಲ್ಲದ ಜಾಗದಲ್ಲಿ ಇರಿಸಲಾದ ಅಕ್ಷರಗಳಿವೆ."
 
 #: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_IO_NAMETOOLONG & ERRCODE_RES_MASK).String.Text
-#, fuzzy
 msgid  "The name $(ARG1) contains too many characters."
 msgstr "$(ARG1) ನ ಹೆಸರಿನಲ್ಲಿ ಬಹಳಷ್ಟು ಅಕ್ಷರಗಳಿವೆ."
 
 #: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_IO_NOTEXISTS & ERRCODE_RES_MASK).String.Text
-#, fuzzy
 msgid  "$(ARG1) does not exist."
 msgstr "$(ARG1) ಅಸ್ತಿತ್ವದಲ್ಲಿಲ್ಲ."
 
 #: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_IO_NOTEXISTSPATH & ERRCODE_RES_MASK).String.Text
-#, fuzzy
 msgid  "The path $(ARG1) does not exist."
 msgstr "ಮಾರ್ಗ $(ARG1) ಅಸ್ತಿತ್ವದಲ್ಲಿಲ್ಲ."
 
 #: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_IO_NOTSUPPORTED & ERRCODE_RES_MASK).String.Text
-#, fuzzy
 msgid  "The operation on $(ARG1) is not supported on this operating system."
 msgstr "$(ARG1) ನ ಮೇಲಿನ ಕಾರ್ಯವು ಈ ಕಾರ್ಯವ್ಯವಸ್ಥೆಯಿಂದ ಬೆಂಬಲಿತವಾಗಿಲ್ಲ."
 
 #: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_IO_NOTADIRECTORY & ERRCODE_RES_MASK).String.Text
-#, fuzzy
 msgid  "$(ARG1) is not a directory."
 msgstr "$(ARG1) ಯು ಒಂದು ಕೋಶವಾಗಿಲ್ಲ."
 
 #: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_IO_NOTAFILE & ERRCODE_RES_MASK).String.Text
-#, fuzzy
 msgid  "$(ARG1) is not a file."
 msgstr "$(ARG1) ಒಂದು ಕಡತವಾಗಿಲ್ಲ."
 
 #: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_IO_OUTOFSPACE & ERRCODE_RES_MASK).String.Text
-#, fuzzy
 msgid  "There is no space left on device $(ARG1)."
 msgstr "$(ARG1) ಸಾಧನದಲ್ಲಿ ಯಾವುದೆ ಸ್ಥಳಾವಕಾಶ ಉಳಿದಿಲ್ಲ."
 
 #: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_IO_TOOMANYOPENFILES & ERRCODE_RES_MASK).String.Text
 msgid  "The operation on $(ARG1) cannot be performed because too many files are already open."
-msgstr ""
+msgstr "$(ARG1) ನಲ್ಲಿ ಕಾರ್ಯವನ್ನು ನಿರ್ವಹಿಸಲು ಸಾಧ್ಯವಾಗಿಲ್ಲ ಏಕೆಂದರೆ ಬಹಳಷ್ಟು ಕಡತಗಳು ಈಗಾಗಲೆ ತೆರೆಯಲ್ಪಟ್ಟಿವೆ."
 
 #: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_IO_OUTOFMEMORY & ERRCODE_RES_MASK).String.Text
 msgid  "The operation on $(ARG1) cannot be performed because there is no more memory available."
-msgstr ""
+msgstr "$(ARG1) ನಲ್ಲಿ ಕಾರ್ಯವನ್ನು ನಿರ್ವಹಿಸಲು ಸಾಧ್ಯವಾಗಿಲ್ಲ ಏಕೆಂದರೆ ಸಾಕಷ್ಟು ಮೆಮೊರಿ ಲಭ್ಯವಿಲ್ಲ."
 
 #: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_IO_PENDING & ERRCODE_RES_MASK).String.Text
 msgid  "The operation on $(ARG1) cannot continue because more data is pending."
-msgstr ""
+msgstr "$(ARG1) ನಲ್ಲಿ ಕಾರ್ಯವನ್ನು ಮುಂದುವರೆಸಲು ಸಾಧ್ಯವಾಗಿಲ್ಲ ಏಕೆಂದರೆ ಬಹಳಷ್ಟು ದತ್ತಾಂಶವು ಇನ್ನೂ ಬಾಕಿ ಉಳಿದಿವೆ."
 
 #: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_IO_RECURSIVE & ERRCODE_RES_MASK).String.Text
-#, fuzzy
 msgid  "$(ARG1) cannot be copied into itself."
 msgstr "$(ARG1) ಅದಕ್ಕೆ ಸ್ವತಃ ಕಾಪಿ ಮಾಡಲು ಸಾಧ್ಯವಿಲ್ಲ."
 
 #: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_IO_UNKNOWN & ERRCODE_RES_MASK).String.Text
-#, fuzzy
 msgid  "Unknown input/output error while accessing $(ARG1)."
 msgstr "$(ARG1) ಅನ್ನು ನಿಲುಕಿಸಿಕೊಳ್ಳುವಾಗ ಗೊತ್ತಿರದ ಇನ್‌ಪುಟ್‌/ಔಟ್‌ಪುಟ್‌ ದೋಷ."
 
 #: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_IO_WRITEPROTECTED & ERRCODE_RES_MASK).String.Text
-#, fuzzy
 msgid  "$(ARG1) is write protected."
 msgstr "$(ARG1) ಅನ್ನು ಬರೆಯದಂತೆ ಸಂರಕ್ಷಿಸಲಾಗಿದೆ."
 
 #: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_IO_WRONGFORMAT & ERRCODE_RES_MASK).String.Text
-#, fuzzy
 msgid  "$(ARG1) is not in the correct format."
 msgstr "$(ARG1) ಯು ಸರಿಯಾದ ವಿನ್ಯಾಸದಲ್ಲಿ ಇಲ್ಲ."
 
 #: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_IO_WRONGVERSION & ERRCODE_RES_MASK).String.Text
-#, fuzzy
 msgid  "The version of $(ARG1) is not correct."
 msgstr "$(ARG1) ನ ಆವೃತ್ತಿಯು ಸರಿಯಾಗಿಲ್ಲ."
 
 #: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_IO_NOTEXISTS_VOLUME & ERRCODE_RES_MASK).String.Text
-#, fuzzy
 msgid  "Drive $(ARG1) does not exist."
 msgstr "ಡ್ರೈವ್‌ $(ARG1) ಅಸ್ತಿತ್ವದಲ್ಲಿಲ್ಲ."
 
 #: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_IO_NOTEXISTS_FOLDER & ERRCODE_RES_MASK).String.Text
-#, fuzzy
 msgid  "Folder $(ARG1) does not exist."
 msgstr "ಕಡತಕೋಶ $(ARG1) ಅಸ್ತಿತ್ವದಲ್ಲಿಲ್ಲ."
 
 #: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_WRONGJAVA & ERRCODE_RES_MASK).String.Text
-#, fuzzy
 msgid  "The installed Java version is not supported."
 msgstr "ಅನುಸ್ಥಾಪಿಸಲಾದಂತಹ ಜಾವಾ ಆವೃತ್ತಿಯು ಬೆಂಬಲಿತವಾಗಿಲ್ಲ."
 
 #: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_WRONGJAVA_VERSION & ERRCODE_RES_MASK).String.Text
-#, fuzzy
 msgid  "The installed Java version $(ARG1) is not supported."
 msgstr "ಅನುಸ್ಥಾಪಿಸಲಾದಂತಹ ಜಾವಾ ಆವೃತ್ತಿ $(ARG1) ಯು ಬೆಂಬಲಿತವಾಗಿಲ್ಲ."
 
 #: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_WRONGJAVA_MIN & ERRCODE_RES_MASK).String.Text
 msgid  "The installed Java version is not supported, at least version $(ARG1) is required."
-msgstr ""
+msgstr "ಅನುಸ್ಥಾಪಿಸಲಾದಂತಹ ಜಾವಾ ಆವೃತ್ತಿಯು ಬೆಂಬಲಿತವಾಗಿಲ್ಲ, ಕನಿಷ್ಟ ಪಕ್ಷ $(ARG1) ಆವೃತ್ತಿಯ ಅಗತ್ಯವಿದೆ."
 
 #: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_WRONGJAVA_VERSION_MIN & ERRCODE_RES_MASK).String.Text
 msgid  "The installed Java version $(ARG1) is not supported, at least version $(ARG2) is required."
-msgstr ""
+msgstr "ಅನುಸ್ಥಾಪಿಸಲಾದಂತಹ ಜಾವಾ ಆವೃತ್ತಿ $(ARG1) ಯು ಬೆಂಬಲಿತವಾಗಿಲ್ಲ, ಕನಿಷ್ಟ ಪಕ್ಷ $(ARG2) ಆವೃತ್ತಿಯ ಅಗತ್ಯವಿದೆ."
 
 #: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_BADPARTNERSHIP & ERRCODE_RES_MASK).String.Text
-#, fuzzy
 msgid  "The data associated with the partnership is corrupted."
 msgstr "ಸಹಭಾಗಿತ್ವದ ಜೊತೆ ಸೇರಿರುವ ದತ್ತ ಕಲುಷಿತವಾಗಿದೆ."
 
 #: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_BADPARTNERSHIP_NAME & ERRCODE_RES_MASK).String.Text
-#, fuzzy
 msgid  "The data associated with the partnership $(ARG1) is corrupted."
 msgstr "ಸಹಭಾಗಿತ್ವ $(ARG1) ದ ಜೊತೆಸೇರಿರುವ ದತ್ತ ಕಲುಷಿತವಾಗಿದೆ."
 
 #: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_IO_NOTREADY_VOLUME & ERRCODE_RES_MASK).String.Text
-#, fuzzy
 msgid  "Volume $(ARG1) is not ready."
 msgstr "ಪರಿಮಾಣ $(ARG1) ವು ಇನ್ನೂ ಸಿದ್ಧಗೊಂಡಿಲ್ಲ."
 
 #: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_IO_NOTREADY_REMOVABLE & ERRCODE_RES_MASK).String.Text
-#, fuzzy
 msgid  "$(ARG1) is not ready; please insert a storage medium."
 msgstr "$(ARG1) ಇನ್ನೂ ಸಿದ್ಧಗೊಂಡಿಲ್ಲ; ದಯವಿಟ್ಟು ಒಂದು ಶೇಖರಣಾ ಮಾಧ್ಯಮವನ್ನು ಅಳವಡಿಸಿ."
 
 #: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_IO_NOTREADY_VOLUME_REMOVABLE & ERRCODE_RES_MASK).String.Text
 msgid  "Volume $(ARG1) is not ready; please insert a storage medium."
-msgstr ""
+msgstr "ಪರಿಮಾಣ $(ARG1) ಇನ್ನೂ ಸಿದ್ಧಗೊಂಡಿಲ್ಲ; ದಯವಿಟ್ಟು ಒಂದು ಶೇಖರಣಾ ಮಾಧ್ಯಮವನ್ನು ಅಳವಡಿಸಿ."
 
 #: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_WRONGMEDIUM & ERRCODE_RES_MASK).String.Text
-#, fuzzy
 msgid  "Please insert disk $(ARG1)."
 msgstr "ದಯವಿಟ್ಟು ಒಂದು $(ARG1) ಡಿಸ್ಕನ್ನು ಅಳವಡಿಸಿ."
 
 #: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_IO_CANTCREATE_NONAME & ERRCODE_RES_MASK).String.Text
-#, fuzzy
 msgid  "The object cannot be created in directory $(ARG1)."
 msgstr "ಕೋಶ $(ARG1) ದಲ್ಲಿ ವಸ್ತುವನ್ನು ರಚಿಸಲು ಸಾಧ್ಯವಿಲ್ಲ."
 
 #: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_IO_UNSUPPORTEDOVERWRITE & ERRCODE_RES_MASK).String.Text
 msgid  "%PRODUCTNAME cannot keep files from being overwritten when this transmission protocol is used. Do you want to continue anyway?"
-msgstr ""
+msgstr "ಈ ವರ್ಗಾವಣೆ ಪ್ರೋಟೋಕಾಲನ್ನು ಬಳಸುವಾಗ ತಿದ್ದಿಬರೆಯಲಾದಂತಹ ಕಡತಗಳನ್ನು %PRODUCTNAME ಇರಿಸಿಕೊಳ್ಳುವುದಿಲ್ಲ. ಆದರೂ ನೀವು ಮುಂದುವರೆಯಲು ಬಯಸುತ್ತೀರೆ?"
 
 #: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_IO_BROKENPACKAGE & ERRCODE_RES_MASK).String.Text
 msgid  "The file '$(ARG1)' is corrupt and therefore cannot be opened. %PRODUCTNAME can try to repair the file.\n\nThe corruption could be the result of document manipulation or of structural document damage due to data transmission.\n\nWe recommend that you do not trust the content of the repaired document.\nExecution of macros is disabled for this document.\n\nShould %PRODUCTNAME repair the file?\n"
-msgstr ""
+msgstr "ಕಡತ '$(ARG1)' ವು ಹಾಳಾಗಿದೆ ಹಾಗು ತೆರೆಯಲು ಸಾಧ್ಯವಿಲ್ಲ. %PRODUCTNAME ಕಡತವನ್ನು ದುರಸ್ತಿ ಮಾಡಲು ಪ್ರಯತ್ನಿಸುತ್ತದೆ.\n\nದಸ್ತಾವೇಜು ವರ್ಗಾವಣೆಯಲ್ಲಿ ಉಂಟಾದ ದಸ್ತಾವೇಜು ಮ್ಯಾನಿಪುಲೇಶನ್ ಅಥವ ಅದರ ರಚನೆಯ ಕೆಟ್ಟು ಹೋಗಿದ್ದರ ಕಾರಣದಿಂದಾಗಿ ಈ ದಸ್ತಾವೇಜು ಹಾಳಾಗುವಿಕೆ ಉಂಟಾಗಿದೆ.\n\nದುರಸ್ತಿಗೊಳಿಸಲಾದ ದಸ್ತಾವೇಜಿನಲ್ಲಿನ ವಿಷಯಗಳನ್ನು ನಂಬಬೇಡಿ ಎಂದು ನಾವು ಸಲಹೆ ಮಾಡುತ್ತೇವೆ.\nಮ್ಯಾಕ್ರೊಗಳನ್ನು ಕಾರ್ಯಗತಗೊಳಿಸುವಿಕೆಯನ್ನು ಈ ದಸ್ತಾವೇಜಿನಲ್ಲಿ ಅಶಕ್ತಗೊಳಿಸಲಾಗಿದೆ.\n\n%PRODUCTNAME ಈ ಕಡತವನ್ನು ದುರಸ್ತಿ ಮಾಡಬೇಕೆ?\n"
 
 #: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_IO_BROKENPACKAGE_CANTREPAIR & ERRCODE_RES_MASK).String.Text
 msgid  "The file '$(ARG1)' could not be repaired and therefore cannot be opened."
-msgstr ""
+msgstr "ಕಡತ '$(ARG1)' ಅನ್ನು ದುರಸ್ತಿ ಮಾಡಲಾಗಿಲ್ಲ ಆದ್ದರಿಂದ ತೆರೆಯಲು ಸಾಧ್ಯವಿಲ್ಲ."
 
 #: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_CONFIGURATION_BROKENDATA_NOREMOVE & ERRCODE_RES_MASK).String.Text
 msgid  "Configuration data in '$(ARG1)' is corrupted. Without this data some functions may not operate correctly.\nDo you want to continue startup of %PRODUCTNAME without the corrupted configuration data?"
-msgstr ""
+msgstr "'$(ARG1)' ನಲ್ಲಿನ ಸಂರಚನಾ ದತ್ತಾಂಶವು ಭ್ರಷ್ಟಗೊಂಡಿದೆ. ಈ ದತ್ತಾಂಶವಿಲ್ಲದೆ ಕೆಲವು ಕಾರ್ಯಭಾರಗಳು ಸರಿಯಾಗಿ ಕೆಲಸ ಮಾಡದೆ ಇರಬಹುದು.\nನೀವು ಭ್ರಷ್ಟಗೊಂಡ ಸಂರಚನಾ ದತ್ತಾಂಶವಿಲ್ಲದ %PRODUCTNAME ದೊಂದಿಗೆ ಪ್ರಾರಂಭಿಸುವುದನ್ನು ಮುಂದುವರೆಸಲು ಬಯಸುತ್ತೀರೆ?"
 
 #: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_CONFIGURATION_BROKENDATA_WITHREMOVE & ERRCODE_RES_MASK).String.Text
 msgid  "The personal configuration file '$(ARG1)' is corrupted and must be deleted to continue. Some of your personal settings may be lost.\nDo you want to continue startup of %PRODUCTNAME without the corrupted configuration data?"
-msgstr ""
+msgstr "ವೈಯಕ್ತಿಕ ಸಂರಚನಾ ಕಡತ '$(ARG1)' ವು ಭ್ರಷ್ಟಗೊಂಡಿದೆ ಹಾಗು ಮುಂದುವರೆಯಲು ಅದನ್ನು ಅಳಿಸಬೇಕಾಗುತ್ತದೆ. ನಿಮ್ಮ ಕೆಲವು ವೈಯಕ್ತಿಕ ಸಿದ್ಧತೆಗಳು ಕಾಣೆಯಾಗಬಹುದು.\nನೀವು ಭ್ರಷ್ಟಗೊಂಡ ಸಂರಚನಾ ದತ್ತಾಂಶವಿಲ್ಲದ %PRODUCTNAME ದೊಂದಿಗೆ ಪ್ರಾರಂಭಿಸುವುದನ್ನು ಮುಂದುವರೆಸಲು ಬಯಸುತ್ತೀರೆ?"
 
 #: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_CONFIGURATION_BACKENDMISSING & ERRCODE_RES_MASK).String.Text
 msgid  "The configuration data source '$(ARG1)' is unavailable. Without this data some functions may not operate correctly."
-msgstr ""
+msgstr "ಸಂರಚನಾ ದತ್ತ ಆಕರ '$(ARG1)' ವು ಲಭ್ಯವಿಲ್ಲ. ಈ ದತ್ತಾಂಶವಿಲ್ಲದೆ ಕೆಲವು ಸವಲತ್ತುಗಳು ಸರಿಯಾಗಿ ಕೆಲಸ ಮಾಡುವುದಿಲ್ಲ."
 
 #: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_CONFIGURATION_BACKENDMISSING_WITHRECOVER & ERRCODE_RES_MASK).String.Text
 msgid  "The configuration data source '$(ARG1)' is unavailable. Without this data some functions may not operate correctly.\nDo you want to continue startup of %PRODUCTNAME without the missing configuration data?"
-msgstr ""
+msgstr "ಸಂರಚನಾ ದತ್ತ ಆಕರ '$(ARG1)' ವು ಲಭ್ಯವಿಲ್ಲ. ಈ ದತ್ತಾಂಶವಿಲ್ಲದೆ ಕೆಲವು ಸವಲತ್ತುಗಳು ಸರಿಯಾಗಿ ಕೆಲಸ ಮಾಡುವುದಿಲ್ಲ.\nಕಾಣೆಯಾಗಿರುವ ಸಂರಚನಾ ದತ್ತಾಂಶವಿಲ್ಲದೆ ನೀವು %PRODUCTNAME ಅನ್ನು ಸಿದ್ಧಪಡಿಸಲು ಬಯಸುತ್ತೀರೆ?"
 
 #: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_INVALID_XFORMS_SUBMISSION_DATA & ERRCODE_RES_MASK).STRING.Text
-#, fuzzy
 msgid  "The form contains invalid data. Do you still want to continue?"
 msgstr "ಈ ನಮೂನೆಯಲ್ಲಿ ಅಮಾನ್ಯಾದ ದತ್ತಾಂಶವಿದೆ. ಆದರೂ ಸಹ ನೀವು ಮುಂದುವರೆಯಲು ಬಯಸುತ್ತೀರೆ?"
 
 #: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_LOCKING_LOCKED & ERRCODE_RES_MASK).String.Text
 msgid  "The file $(ARG1) is locked by another user. Currently, another write access to this file cannot be granted."
-msgstr ""
+msgstr "ಕಡತವನ್ನು $(ARG1) ಬೇರೊಬ್ಬ ಬಳಕೆದಾರನಿಂದ ಲಾಕ್ ಮಾಡಲಾಗಿದೆ. ಪ್ರಸಕ್ತ ಈ ಕಡತಕ್ಕೆ ಇನ್ನೊಂದು ಬರೆಯುವ ಅಧಿಕಾರವನ್ನು ಒದಗಿಸಲು ಸಾಧ್ಯವಿಲ್ಲ."
 
 #: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_LOCKING_LOCKED_SELF & ERRCODE_RES_MASK).String.Text
 msgid  "The file $(ARG1) is locked by yourself. Currently, another write access to this file cannot be granted."
-msgstr ""
+msgstr "ಕಡತವನ್ನು $(ARG1) ನಿಮ್ಮಿಂದ ಲಾಕ್ ಮಾಡಲಾಗಿದೆ. ಪ್ರಸಕ್ತ ಈ ಕಡತಕ್ಕೆ ಇನ್ನೊಂದು ಬರೆಯುವ ಅಧಿಕಾರವನ್ನು ಒದಗಿಸಲು ಸಾಧ್ಯವಿಲ್ಲ."
 
 #: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_LOCKING_NOT_LOCKED & ERRCODE_RES_MASK).String.Text
-#, fuzzy
 msgid  "The file $(ARG1) is currently not locked by yourself."
 msgstr "ಕಡತವನ್ನು $(ARG1) ಪ್ರಸಕ್ತ ನಿಮ್ಮಿಂದ ಲಾಕ್ ಮಾಡಲಾಗಿಲ್ಲ."
 
 #: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_LOCKING_LOCK_EXPIRED & ERRCODE_RES_MASK).String.Text
 msgid  "The previously obtained lock for file $(ARG1) has expired.\nThis can happen due to problems on the server managing the file lock. It cannot be guaranteed that write operations on this file will not overwrite changes done by other users!"
-msgstr ""
+msgstr "ಈ ಹಿಂದೆ $(ARG1) ಕಡತಕ್ಕೆ ಒದಗಿಸಲಾದ ಲಾಕ್‌ನ ಕಾಲಾವಧಿಯು ತೀರಿದೆ.\nಕಡತದ ಲಾಕ್ ಅನ್ನು ನಿರ್ವಹಿಸುವ ಪರಿಚಾರಕದಲ್ಲಿನ ತೊಂದರೆಗಳು ಇದಕ್ಕೆ ಕಾರಣವಾಗಿರಬಹುದು. ಈ ಕಡತದ ಬರೆಯುವ ಕ್ರಿಯೆಗಳು ಬೇರೊಬ್ಬ ಬಳಕೆದಾರರು ಮಾಡುವ ಬದಲಾವಣೆಗಳನ್ನು ತಿದ್ದಿ ಬರೆಯಲಾಗುವುದಿಲ್ಲ ಎಂದು ಯಾವುದೆ ಖಾತರಿಯನ್ನು ಇದು ನೀಡುವುದಿಲ್ಲ!"
 
 #: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_UNKNOWNAUTH_UNTRUSTED).STRING.Text
 msgid  "Unable to verify the identity of $(ARG1) site.\n\nBefore accepting this certificate, you should examine this site's certificate carefully. Are you willing to accept this certificate for the purpose of identifying the Web site $(ARG1)?"
-msgstr ""
+msgstr "$(ARG1) ತಾಣದ ಗುರುತನ್ನು ಪರಿಶೀಲಿಸಲು ಸಾಧ್ಯವಾಗಿಲ್ಲ.\n\nಈ ಪ್ರಮಾಣಪತ್ರವನ್ನು ಅಂಗೀಕರಿಸುವ ಮೊದಲು, ನೀವು ಈ ತಾಣದ ಪ್ರಮಾಣಪತ್ರವನ್ನು ಎಚ್ಚರಿಕೆಯಿಂದ ಪರಿಶೀಲಿಸಬೇಕು. ನೀವು $(ARG1) ಜಾಲತಾಣವನ್ನು ಗುರುತಿಸುವ ಸಲುವಾಗಿ ಈ ಪ್ರಮಾಣಪತ್ರವನ್ನು ಅಂಗೀಕರಿಸಲು ಬಯಸುತ್ತೀರೆ?"
 
 #: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_SSLWARN_EXPIRED_1).STRING.Text
 msgid  "$(ARG1) is a site that uses a security certificate to encrypt data during transmission, but its certificate expired on $(ARG2).\n\nYou should check to make sure that your computer's time is correct."
-msgstr ""
+msgstr "$(ARG1) ತಾಣವು ದತ್ತಾಂಶದ ವರ್ಗಾವಣೆ ಸಮಯದಲ್ಲಿ ಅದನ್ನು ಗೂಢಲಿಪೀಕರಿಸಲು ಸುರಕ್ಷತಾ ಪ್ರಮಾಣಪತ್ರವನ್ನು ಬಳಸುತ್ತದೆ, ಅದರೆ ಅದರ ಪ್ರಮಾಣಪತ್ರದ ವಾಯಿದೆಯು $(ARG2) ರಂದು ತೀರಿದೆ.\n\nನಿಮ್ಮ ಗಣಕದ ಸಮಯ ಸರಿಯಾಗಿದೆಯೆ ಎಂದು ಪರಿಶೀಲಿಸಿ."
 
 #: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_SSLWARN_DOMAINMISMATCH_1).STRING.Text
 msgid  "You have attempted to establish a connection with $(ARG1). However, the security certificate presented belongs to $(ARG2). It is possible, though unlikely, that someone may be trying to intercept your communication with this web site.\n\nIf you suspect the certificate shown does not belong to $(ARG1), please cancel the connection and notify the site administrator.\n\nWould you like to continue anyway?"
-msgstr ""
+msgstr "ನೀವು $(ARG1) ದೊಂದಿಗೆ ಸಂಪರ್ಕಸಾಧಿಸಲು ಪ್ರಯತ್ನಿಸಿದ್ದೀರಿ. ಆದರೆ, ಒದಗಿಸಲಾದ ಪ್ರಮಾಣಪತ್ರಗಳು $(ARG2) ಕ್ಕೆ ಸಂಬಂಧಪಟ್ಟವಾಗಿವೆ. ಅಂದರೆ ಜಾಲ ತಾಣದೊಂದಿಗಿನ ನಿಮ್ಮ ಸಂಪರ್ಕವನ್ನು ಯಾರು ಅಡ್ಡಿಪಡಿಸಲು ಪ್ರಯತ್ನಿಸುತ್ತಿದ್ದಾರೆ ಎನ್ನುವುದು ಅಸಾಧ್ಯವೆನಿಸಿದರೂ, ಅಲ್ಲಗಳೆಯಲಾಗುವುದಿಲ್ಲ.\n\nತೋರಿಸಲಾದಂತಹ ಪ್ರಮಾಣಪತ್ರವು $(ARG1) ಗೆ ಸಂಬಂಧಪಟ್ಟಿರುವದಲ್ಲ ಎಂದು ನಿಮಗೆ ಅನುಮಾನವಿದ್ದಲ್ಲಿ, ದಯವಿಟ್ಟು ಸಂಪರ್ಕವನ್ನು ರದ್ದುಗೊಳಿಸಿ ಹಾಗು ತಾಣದ ನಿರ್ವಾಹಕರಿಗೆ ಸುದ್ದಿ ಮುಟ್ಟಿಸಿ.\n\nಆದರೂ ನೀವು ಮುಂದುವರೆಯಲು ಬಯಸುತ್ತೀರೆ?"
 
 #: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_SSLWARN_INVALID_1).STRING.Text
 msgid  "The certificate could not be validated. You should examine this site's certificate carefully.\n\nIf you suspect the certificate shown, please cancel the connection and notify the site administrator."
-msgstr ""
+msgstr "ಪ್ರಮಾಣಪತ್ರವನ್ನು ಮಾನ್ಯವಾಗಿದೆ ಎಂದು ಪರಿಶೀಲಿಸಲಾಗಿಲ್ಲ. ನೀವು ಈ ತಾಣದ ಪ್ರಮಾಣಪತ್ರವನ್ನು ಎಚ್ಚರಿಕೆಯಿಂದ ಪರಿಶೀಲಿಸಬೇಕು.\n\nತೋರಿಸಲಾದಂತಹ ಪ್ರಮಾಣಪತ್ರದ ಬಗ್ಗೆ ನಿಮಗೆ ಅನುಮಾನವಿದ್ದಲ್ಲಿ, ದಯವಿಟ್ಟು ಸಂಪರ್ಕವನ್ನು ರದ್ದುಗೊಳಿಸಿ ಹಾಗು ತಾಣದ ನಿರ್ವಾಹಕರಿಗೆ ಸುದ್ದಿ ಮುಟ್ಟಿಸಿ."
 
 #: source/ids.src#RID_UUI_ERRHDL.(TITLE_UUI_SSLWARN_DOMAINMISMATCH).STRING.Text
-#, fuzzy
 msgid  "Security Warning: Domain Name Mismatch"
 msgstr "ಸುರಕ್ಷತಾ ಎಚ್ಚರಿಕೆ: ಡೊಮೈನ್ ಹೆಸರು ತಾಳೆಯಾಗುತ್ತಿಲ್ಲ"
 
 #: source/ids.src#RID_UUI_ERRHDL.(TITLE_UUI_SSLWARN_EXPIRED).STRING.Text
-#, fuzzy
 msgid  "Security Warning: Server Certificate Expired"
 msgstr "ಸುರಕ್ಷತಾ ಎಚ್ಚರಿಕೆ: ಪರಿಚಾರಕ ಪ್ರಮಾಣಪತ್ರದ ವಾಯಿದೆ ಮುಗಿದಿದೆ"
 
 #: source/ids.src#RID_UUI_ERRHDL.(TITLE_UUI_SSLWARN_INVALID).STRING.Text
-#, fuzzy
 msgid  "Security Warning: Server Certificate Invalid"
 msgstr "ಸುರಕ್ಷತಾ ಎಚ್ಚರಿಕೆ: ಪರಿಚಾರಕ ಪ್ರಮಾಣಪತ್ರವು ಅಮಾನ್ಯವಾಗಿದೆ"
 
 #: source/fltdlg.src#DLG_FILTER_SELECT.ModalDialog.Text
-#, fuzzy
 msgid  "Filter Selection"
 msgstr "ಶೋಧಕದ ಆಯ್ಕೆ"
 
 #: source/logindlg.src#DLG_UUI_LOGIN.ModalDialog.Text
-#, fuzzy
 msgid  "Authentication Required"
 msgstr "ದೃಢೀಕರಣದ ಅಗತ್ಯವಿದೆ"
 
 #: source/logindlg.src#DLG_UUI_LOGIN.FT_LOGIN_ERROR.FixedText.Text
-#, fuzzy
 msgid  "Message from server:"
 msgstr "ಪರಿಚಾರಕದಿಂದ ಸಂದೇಶ:"
 
 #: source/logindlg.src#DLG_UUI_LOGIN.FT_INFO_LOGIN_REQUEST.FixedText.Text
 msgid  "Enter user name and password for: \n%1"
-msgstr ""
+msgstr "ಇದಕ್ಕಾಗಿ ಬಳಕೆದಾರ ಹೆಸರು ಹಾಗು ಗುಪ್ತಪದವನ್ನು ನಮೂದಿಸಿ: \n%1"
 
 #: source/logindlg.src#DLG_UUI_LOGIN.STR_LOGIN_REALM.String.Text
-msgid  "Enter user name and password for: \n"%2" on %1"
-msgstr ""
+msgid  "Enter user name and password for: \n\"%2\" on %1"
+msgstr "ಇದಕ್ಕಾಗಿ ಬಳಕೆದಾರ ಹೆಸರು ಹಾಗು ಗುಪ್ತಪದವನ್ನು ನಮೂದಿಸಿ: \n%1 ರಲ್ಲಿ \"%2\""
 
 #: source/logindlg.src#DLG_UUI_LOGIN.FT_LOGIN_PATH.FixedText.Text
-#, fuzzy
 msgid  "~Path"
 msgstr "ಮಾರ್ಗ(~P)"
 
 #: source/logindlg.src#DLG_UUI_LOGIN.FT_LOGIN_USERNAME.FixedText.Text
-#, fuzzy
 msgid  "~User name"
 msgstr "ಬಳಕೆದಾರರ ಹೆಸರು(~U)"
 
 #: source/logindlg.src#DLG_UUI_LOGIN.FT_LOGIN_PASSWORD.FixedText.Text
-#, fuzzy
 msgid  "Pass~word"
 msgstr "ಗುಪ್ತಪದ(~w)"
 
 #: source/logindlg.src#DLG_UUI_LOGIN.FT_LOGIN_ACCOUNT.FixedText.Text
-#, fuzzy
 msgid  "A~ccount"
 msgstr "ಖಾತೆ(~c)"
 
 #: source/logindlg.src#DLG_UUI_LOGIN.CB_LOGIN_SAVEPASSWORD.CheckBox.Text
-#, fuzzy
 msgid  "~Remember password"
 msgstr "ಗುಪ್ತಪದವನ್ನು ನೆನಪಿನಲ್ಲಿಟ್ಟಿಕೊ(~R)"
 
 #: source/logindlg.src#DLG_UUI_LOGIN.CB_LOGIN_USESYSCREDS.CheckBox.Text
-#, fuzzy
 msgid  "~Use system credentials"
 msgstr "ವ್ಯವಸ್ಥೆಯ ವಿಶ್ವಾಸಾರ್ಹತೆಗಳನ್ನು ಬಳಸು(~U)"
 
 #: source/cookiedg.src#DLG_COOKIES.RB_INFUTURE_SEND.RadioButton.Text
-#, fuzzy
 msgid  "~Send"
 msgstr "ರವಾನಿಸು(~S)"
 
 #: source/cookiedg.src#DLG_COOKIES.RB_INFUTURE_IGNORE.RadioButton.Text
-#, fuzzy
 msgid  "I~gnore"
 msgstr "ನಿರ್ಲಕ್ಷಿಸು(~g)"
 
 #: source/cookiedg.src#DLG_COOKIES.RB_INFUTURE_INTERACTIVE.RadioButton.Text
-#, fuzzy
 msgid  "I~nteractive"
 msgstr "ಪ್ರತಿಸ್ಪಂದನಾತ್ಮಕ(~n)"
 
 #: source/cookiedg.src#DLG_COOKIES.GB_INFUTURE.GroupBox.Text
-#, fuzzy
 msgid  "Future Cookie Handling"
 msgstr "ಭವಿಷ್ಯದಲ್ಲಿ ಕುಕಿಗಳ ನಿಭಾವಣೆ"
 
 #: source/cookiedg.src#DLG_COOKIES.BTN_COOKIES_CANCEL.PushButton.Text
-#, fuzzy
 msgid  "~Ignore"
 msgstr "ನಿರ್ಲಕ್ಷಿಸು(~I)"
 
 #: source/cookiedg.src#DLG_COOKIES.BTN_COOKIES_OK.PushButton.Text
-#, fuzzy
 msgid  "~Send"
 msgstr "ರವಾನಿಸು(~S)"
 
 #: source/cookiedg.src#STR_COOKIES_RECV_START.String.Text
 msgid  "The '${HOST}' server wishes to set one or more cookies.\nCookies contain information referring to certain URL classes. If %PRODUCTNAME later requests a document with a URL corresponding to the class of a previously set cookie, %PRODUCTNAME will send this information to the server. This allows a server to recognize the status of a WWW application, e.g., when shopping online.\n\nThe following Cookies should be set:\n\n"
-msgstr ""
+msgstr "ಈ '${HOST}' ಪರಿಚಾರಕವು ಒಂದು ಅಥವಾ ಹೆಚ್ಚಿನ ಕುಕಿಗಳನ್ನು ಸಿದ್ಧಪಡಿಸಲು ಬಯಸುತ್ತದೆ. \nಈ ಕುಕಿಗಳು ಕೆಲವು URL ಜಾತಿವರ್ಗಗಳ ಮಾಹಿತಿಯನ್ನು ಹೊಂದಿರುತ್ತವೆ. %PRODUCTNAME ಮುಂದೆ ಯಾವಾಗಲಾದರೂ URL ನಿಂದ ಒಂದು ದಸ್ತಾವೇಜನ್ನು ಕೋರಿದರೆ ಮತ್ತು ಆ ದಸ್ತಾವೇಜು ಈ ಹಿಂದೆ ಸಿದ್ಧಗೊಳಿಸಿದ ಕುಕಿಗೆ ಸಂಬಂಧಿಸಿದ್ದರೆ, %PRODUCTNAME  ಈ ಮಾಹಿತಿಯನ್ನು ಪರಿಚಾರಕಕ್ಕೆ ಕಳಿಸುತ್ತದೆ. ಇದರಿಂದಾಗಿ ಪರಿಚಾರಕವು WWW ಅನ್ವಯದ ಸ್ಥಿತಿಯನ್ನು ಗುರುತಿಸಲು ಅನುವು ಮಾಡುತ್ತದೆ.ಉದಾಹರಣೆಗೆ ಆನ್‌ಲೈನಿನಲ್ಲಿ ಸಾಮಗ್ರಿಗಳನ್ನು ಖರೀದಿಸುತ್ತಿದ್ದಾಗ,\n \nಈ ಕೆಳಗಿನ ಕುಕಿಗಳನ್ನು ಸಿದ್ಧಪಡಿಸ ಬೇಕು:\n\n"
 
 #: source/cookiedg.src#STR_COOKIES_RECV_COOKIES.String.Text
-#, fuzzy
 msgid  "Domain: ${DOMAIN}, Path: ${PATH}, Cookie: ${COOKIE}.\n"
 msgstr "ಡೊಮೈನ್‌: ${DOMAIN}, ಮಾರ್ಗ: ${PATH}, ಕುಕಿ: ${COOKIE}.\n"
 
 #: source/cookiedg.src#STR_COOKIES_RECV_TITLE.String.Text
-#, fuzzy
 msgid  "Cookie Reception"
 msgstr "ಕುಕಿಯನ್ನು ಪಡೆಯುವಿಕೆ"
 
 #: source/cookiedg.src#STR_COOKIES_SEND_START.String.Text
 msgid  "%PRODUCTNAME has saved cookies for the server '${HOST}' which will be sent when requesting the document ${PATH}.\nCookies contain information which refers to certain URL classes. They are sent by some servers to %PRODUCTNAME where they are saved when certain documents are accessed. If %PRODUCTNAME loads a document that, according to the URL, corresponds to a class of one of the previously received Cookies, %PRODUCTNAME will send this information to that server. This enables a server to keep track of the status of a WWW application, e.g., when shopping online.\n\nThe following Cookies should be set:\n\n"
-msgstr ""
+msgstr "%PRODUCTNAME ಯು ಪರಿಚಾರಕ '${HOST}' ಕ್ಕಾಗಿ ಕುಕಿಯನ್ನು ಉಳಿಸಿಕೊಂಡಿದೆ ಹಾಗು ${PATH} ದಸ್ತಾವೇಜಿಗಾಗಿ ಮನವಿ ಸಲ್ಲಿಸಿದಾಗ ಅದನ್ನು ರವಾನಿಸಲಾಗುವುದು.\nಈ ಕುಕಿಗಳು ಕೆಲವು URL ಜಾತಿವರ್ಗಗಳ ಮಾಹಿತಿಯನ್ನು ಹೊಂದಿರುತ್ತವೆ. ಅವುಗಳನ್ನು ಕೆಲವು ಪರಿಚಾರಕದಿಂದ %PRODUCTNAME ಗೆ ಕಳುಹಿಸಲಾಗಿದ್ದು, ಅಲ್ಲಿ ಕೆಲವು ದಸ್ತಾವೇಜುಗಳನ್ನು ನಿಲುಕಿಸಿಕೊಂಡಾಗ ಅವನ್ನು ಉಳಿಸಲಾಗುತ್ತದೆ. ಎಲ್ಲಿಯಾದರೂ %PRODUCTNAME ಒಂದು ದಸ್ತಾವೇಜನ್ನು ಲೋಡ್‌ ಮಾಡಿದಾಗ ಹಾಗು ಅದರ URL ಈ ಮೊದಲು ಸ್ವೀಕರಿಸಲಾದಂತಹ ಕುಕಿಗಳಲ್ಲಿ ಒಂದಾಗಿದ್ದರೆ, %PRODUCTNAME ಯು ಈ ಮಾಹಿತಿಯನ್ನು ಆ ಪರಿಚಾರಕಕ್ಕೆ ಕಳುಹಿಸುತ್ತದೆ. ಇದರಿಂದಾಗಿ ಪರಿಚಾರಕವು WWW ಅನ್ವಯದ ಸ್ಥಿತಿಯ ಜಾಡನ್ನು ಇರಿಸಲು ನೆರವಾಗುತ್ತದೆ.ಉದಾಹರಣೆಗೆ ಆನ್‌ಲೈನಿನಲ್ಲಿ ಸಾಮಗ್ರಿಗಳನ್ನು ಖರೀದಿಸುತ್ತಿದ್ದಾಗ,\n \nಈ ಕೆಳಗಿನ ಕುಕಿಗಳನ್ನು ಸಿದ್ಧಪಡಿಸಬೇಕು:\n\n"
 
 #: source/cookiedg.src#STR_COOKIES_SEND_COOKIES.String.Text
-#, fuzzy
 msgid  "Domain: ${DOMAIN}, Path: ${PATH}, Cookie: ${COOKIE}.\n"
 msgstr "ಡೊಮೈನ್‌: ${DOMAIN}, ಮಾರ್ಗ: ${PATH}, ಕುಕಿ: ${COOKIE}.\n"
 
 #: source/cookiedg.src#STR_COOKIES_SEND_TITLE.String.Text
-#, fuzzy
 msgid  "Send Cookies"
 msgstr "ಕುಕಿಗಳನ್ನು ಕಳುಹಿಸು"
 
@@ -585,12 +515,14 @@ msgid  "The password is incorrect. The file cannot be modified."
 msgstr "ಗುಪ್ತಪದವು ತಪ್ಪಾಗಿದೆ. ಕಡತವನ್ನು ಮಾರ್ಪಡಿಸಲು ಸಾಧ್ಯವಾಗಿಲ್ಲ."
 
 #: source/passworderrs.src#STR_ERROR_MASTERPASSWORD_WRONG.String.Text
+#, fuzzy
 msgid  "The master password is incorrect."
-msgstr ""
+msgstr "ನಮೂದಿಸಲಾದ ಮಾಸ್ಟರ್ ಗುಪ್ತಪದವು ತಪ್ಪಾಗಿದೆ. ಮಾಸ್ಟರ್ ಗುಪ್ತಪದದಿಂದ ಸಂರಕ್ಷಿಸಲಾದಂತಹ ಜಾಲ ಪ್ರವೇಶ ಮಾಹಿತಿಯನ್ನು %PRODUCTNAME ನಿಲುಕಿಸಿಕೊಳ್ಳಲು ಸಾಧ್ಯವಾಗಿಲ್ಲ.\n\nಸೂಚನೆ: ಗುಪ್ತಪದಗಳು ಕೇಸ್‌ ಸಂವೇದಿಯಾಗಿರುತ್ತವೆ ಹಾಗು ಐದು ಅಕ್ಷರಗಳಷ್ಟು ಉದ್ದವಾಗಿರುತ್ತವೆ."
 
 #: source/passworderrs.src#STR_ERROR_SIMPLE_PASSWORD_WRONG.String.Text
+#, fuzzy
 msgid  "The password is incorrect."
-msgstr ""
+msgstr "ನಮೂದಿಸಲಾದ ಮಾಸ್ಟರ್ ಗುಪ್ತಪದವು ತಪ್ಪಾಗಿದೆ. ಮಾಸ್ಟರ್ ಗುಪ್ತಪದದಿಂದ ಸಂರಕ್ಷಿಸಲಾದಂತಹ ಜಾಲ ಪ್ರವೇಶ ಮಾಹಿತಿಯನ್ನು %PRODUCTNAME ನಿಲುಕಿಸಿಕೊಳ್ಳಲು ಸಾಧ್ಯವಾಗಿಲ್ಲ.\n\nಸೂಚನೆ: ಗುಪ್ತಪದಗಳು ಕೇಸ್‌ ಸಂವೇದಿಯಾಗಿರುತ್ತವೆ ಹಾಗು ಐದು ಅಕ್ಷರಗಳಷ್ಟು ಉದ್ದವಾಗಿರುತ್ತವೆ."
 
 #: source/passworderrs.src#STR_ERROR_PASSWORDS_NOT_IDENTICAL.String.Text
 #, fuzzy
@@ -610,26 +542,22 @@ msgid  "Rename"
 msgstr ""
 
 #: source/openlocked.src#STR_OPENLOCKED_TITLE.String.Text
-#, fuzzy
 msgid  "Document in Use"
 msgstr "ದಸ್ತಾವೇಜು ಬಳಕೆಯಲ್ಲಿದೆ"
 
 #: source/openlocked.src#STR_OPENLOCKED_MSG.String.Text
 msgid  "Document file '$(ARG1)' is locked for editing by:\n\n$(ARG2)\n\nOpen document read-only or open a copy of the document for editing.\n\n"
-msgstr ""
+msgstr "ದಸ್ತಾವೇಜು ಕಡತ '$(ARG1)' ಅನ್ನು ಸಂಪಾದನೆಗಾಗಿ ಲಾಕ್‌ ಮಾಡಲಾಗಿದೆ:\n\n$(ARG2)\n\nದಸ್ತಾವೇಜನ್ನು ಓದಲು ಮಾತ್ರ ತೆರೆಯಿರಿ ಅಥವ ಸಂಪಾದಿಸಲು ದಸ್ತಾವೇಜಿನ ಒಂದು ಪ್ರತಿಯನ್ನು ತೆರೆಯಿರಿ.\n\n"
 
 #: source/openlocked.src#STR_OPENLOCKED_OPENREADONLY_BTN.String.Text
-#, fuzzy
 msgid  "Open ~Read-Only"
 msgstr "ಓದಲು ಮಾತ್ರವೆ ತೆರೆ(~R)"
 
 #: source/openlocked.src#STR_OPENLOCKED_OPENCOPY_BTN.String.Text
-#, fuzzy
 msgid  "Open ~Copy"
 msgstr "ಪ್ರತಿಯನ್ನು ತೆರೆ(~C)"
 
 #: source/openlocked.src#STR_UNKNOWNUSER.String.Text
-#, fuzzy
 msgid  "Unknown User"
 msgstr "ಅಜ್ಞಾತ ಬಳಕೆದಾರ"
 
@@ -639,29 +567,25 @@ msgstr ""
 
 #: source/filechanged.src#STR_FILECHANGED_MSG.String.Text
 msgid  "The file has been changed since it was opened for editing in %PRODUCTNAME. Saving your version of the document will overwrite changes made by others.\n\nDo you want to save anyway?\n\n"
-msgstr ""
+msgstr "%PRODUCTNAME ನಲ್ಲಿ ಸಂಪಾದಿಸಲು ಕಡತವನ್ನು ತೆಗೆದ ನಂತರದಿಂದ ಅದನ್ನು ಬದಲಾಯಿಸಲಾಗಿದೆ. ದಸ್ತಾವೇಜಿನ ನಿಮ್ಮ ಆವೃತ್ತಿಯನ್ನು ಉಳಿಸುವುದರಿಂದ ಬೇರೆಯವರು ಮಾಡಿದ ಬದಲಾವಣೆಗಳ ಮೇಲೆ ತಿದ್ದಿಬರೆಯಲ್ಪಡುತ್ತದೆ.\n\nಆದರೂ ಸಹ ನೀವು ಉಳಿಸಲು ಬಯಸುತ್ತೀರೆ?\n\n"
 
 #: source/filechanged.src#STR_FILECHANGED_SAVEANYWAY_BTN.String.Text
-#, fuzzy
 msgid  "~Save Anyway"
 msgstr "ಪರವಾಗಿಲ್ಲ ಉಳಿಸು(~S)"
 
 #: source/newerverwarn.src#RID_DLG_NEWER_VERSION_WARNING.ModalDialog.Text
-#, fuzzy
 msgid  "%PRODUCTNAME Update Available"
 msgstr "%PRODUCTNAME ಅಪ್‌ಡೇಟ್‌ ಲಭ್ಯವಿದೆ"
 
 #: source/newerverwarn.src#RID_DLG_NEWER_VERSION_WARNING.FT_INFO.FixedText.Text
 msgid  "This document was created by a newer version of %PRODUCTNAME. It may contain features not supported by your current version.\n\nClick 'Update Now...' to run online update and get the latest version of %PRODUCTNAME."
-msgstr ""
+msgstr "ಈ ದಸ್ತಾವೇಜನ್ನು %PRODUCTNAME ನ ಒಂದು ಹೊಸ ಆವೃತ್ತಿಯನ್ನು ಬಳಸಿಕೊಂಡು ರಚಿಸಲಾಗಿದೆ. ಇದು ನಿಮ್ಮ ಈಗಿನ ಆವೃತ್ತಿಯಲ್ಲಿ ಬೆಂಬಲಿಸದೆ ಇರುವ ಸವಲತ್ತುಗಳನ್ನು ಹೊಂದಿರಬಹುದು.\n\nಆನ್‌ಲೈನ್‌ ಅಪ್‌ಡೇಟನ್ನು ಚಲಾಯಿಸಲು ಹಾಗು %PRODUCTNAME ನ ಇತ್ತೀಚಿನ ಒಂದು ಆವೃತ್ತಿಯನ್ನು ಪಡೆದುಕೊಳ್ಳಲು 'ಈಗಲೆ ಅಪ್‌ಡೇಟ್‌ ಮಾಡು...' ಅನ್ನು ಕ್ಲಿಕ್ಕಿಸಿ."
 
 #: source/newerverwarn.src#RID_DLG_NEWER_VERSION_WARNING.PB_UPDATE.PushButton.Text
-#, fuzzy
 msgid  "~Update Now..."
 msgstr "ಈಗಲೆ ಅಪ್‌ಡೇಟ್ ಮಾಡು(~U)..."
 
 #: source/newerverwarn.src#RID_DLG_NEWER_VERSION_WARNING.PB_LATER.CancelButton.Text
-#, fuzzy
 msgid  "~Later"
 msgstr "ಆನಂತರ(~L)"
 
@@ -711,8 +635,9 @@ msgid  "View Signatures..."
 msgstr "ಸಹಿಗಳನ್ನು ನೋಡು..."
 
 #: source/secmacrowarnings.src#RID_XMLSECDLG_MACROWARN.FI_DESCR2.FixedText.Text
+#, fuzzy
 msgid  "Macros may contain viruses. Disabling macros for a document is always safe. If you disable macros you may lose functionality provided by the document macros."
-msgstr ""
+msgstr "ಮ್ಯಾಕ್ರೊಗಳು ವೈರಸ್ಸುಗಳನ್ನು ಹೊಂದಿರಬಹುದು. ಒಂದು ದಸ್ತಾವೇಜಿಗೆ ಮ್ಯಾಕ್ರೋಗಳನ್ನು ಅಶಕ್ತಗೊಳಿಸುವುದು ಯಾವಾಗಲೂ ಸುರಕ್ಷಿತ. ನೀವು ಮ್ಯಾಕ್ರೋಗಳನ್ನು ಅಶಕ್ತಗೊಳಿಸಿದಲ್ಲಿ, ದಸ್ತಾವೇಜಿನ ಮಾಕ್ರೋಗಳಿಂದ ಒದಗಿಸಲಾಗುವ ಕ್ರಿಯಾತ್ಮಕತೆ ನಿಮಗೆ ಲಭ್ಯವಾಗದೆ ಇರಬಹುದು."
 
 #: source/secmacrowarnings.src#RID_XMLSECDLG_MACROWARN.CB_ALWAYSTRUST.CheckBox.Text
 #, fuzzy
@@ -730,66 +655,57 @@ msgid  "~Disable Macros"
 msgstr "ಮ್ಯಾಕ್ರೋಗಳು ಅಶಕ್ತಗೊಂಡಿದೆ(~D)"
 
 #: source/masterpassworddlg.src#DLG_UUI_MASTERPASSWORD.FT_MASTERPASSWORD.FixedText.Text
-#, fuzzy
 msgid  "Enter password"
 msgstr "ಗುಪ್ತಪದವನ್ನು ದಾಖಲಿಸಿ"
 
 #: source/masterpassworddlg.src#DLG_UUI_MASTERPASSWORD.HelpButton.Text
-#, fuzzy
 msgid  "Enter Master Password"
 msgstr "ಮಾಸ್ಟರ್ ಗುಪ್ತಪದವನ್ನು ನಮೂದಿಸಿ"
 
 #: source/masterpasscrtdlg.src#DLG_UUI_MASTERPASSWORD_CRT.ModalDialog.Text
-#, fuzzy
 msgid  "Set Master Password"
 msgstr "ಮಾಸ್ಟರ್ ಗುಪ್ತಪದವನ್ನು ಸಿದ್ಧಗೊಳಿಸಿ"
 
 #: source/masterpasscrtdlg.src#DLG_UUI_MASTERPASSWORD_CRT.FT_INFOTEXT.FixedText.Text
 msgid  "Passwords for web connections are protected by a master password. You will be asked to enter it once per session, if %PRODUCTNAME retrieves a password from the protected password list."
-msgstr ""
+msgstr "ಜಾಲ ಸಂಪರ್ಕಗಳಿಗಾಗಿನ ಗುಪ್ತಪದಗಳನ್ನು ಒಂದು ಮಾಸ್ಟರ್ ಗುಪ್ತಪದದಿಂದ ಸಂರಕ್ಷಿಸಲಾಗಿರುತ್ತದೆ. %PRODUCTNAME ಯು ಸಂರಕ್ಷಿತ ಗುಪ್ತಪದಗಳ ಪಟ್ಟಿಯಿಂದ ಒಂದು ಗುಪ್ತಪದವನ್ನು ಪಡೆದುಕೊಂಡಾಗ ಪ್ರತಿ ಅಧಿವೇಶನದಲ್ಲೂ ಒಮ್ಮೆ ಮಾಸ್ಟರ್ ಗುಪ್ತಪದವನ್ನು ದಾಖಲಿಸುವಂತೆ ನಿಮ್ಮನ್ನು ಕೇಳಲಾಗುವುದು."
 
 #: source/masterpasscrtdlg.src#DLG_UUI_MASTERPASSWORD_CRT.FT_MASTERPASSWORD_CRT.FixedText.Text
-#, fuzzy
 msgid  "~Enter password"
 msgstr "ಗುಪ್ತಪದವನ್ನು ದಾಖಲಿಸಿ(~E)"
 
 #: source/masterpasscrtdlg.src#DLG_UUI_MASTERPASSWORD_CRT.FT_MASTERPASSWORD_REPEAT.FixedText.Text
-#, fuzzy
 msgid  "~Reenter password"
 msgstr "ಗುಪ್ತಪದವನ್ನು ಮತ್ತೊಮ್ಮೆ ದಾಖಲಿಸಿ(~R)"
 
 #: source/masterpasscrtdlg.src#DLG_UUI_MASTERPASSWORD_CRT.FT_CAUTIONTEXT.FixedText.Text
 msgid  "Caution: If you forget the master password, you will be unable to access any of the information protected by it. Passwords are case-sensitive."
-msgstr ""
+msgstr "ಎಚ್ಚರಿಕೆ: ನೀವು ಸಿದ್ಧಗೊಳಿಸಿದ ಮಾಸ್ಟರ್ ಗುಪ್ತಪದವನ್ನು ಯಾವಾಗಲೂ ನೆನಪಿಟ್ಟುಕೊಳ್ಳಿ. ಎಲ್ಲಿಯಾದರೂ ನೀವು ಮಾಸ್ಟರ್ ಗುಪ್ತಪದವನ್ನು ಮರೆತಲ್ಲಿ, ಅದನ್ನು ಬಳಸಿ ಸಂರಕ್ಷಿಸಲಾದ ಎಲ್ಲಾ ಮಾಹಿತಿಗಳು ನಿಮಗೆ ದೊರೆಯದೆ ಹೋಗುತ್ತವೆ. ಗುಪ್ತಪದಗಳು ಕೇಸ್‌ ಸಂವೇದಿಯಾಗಿರುತ್ತವೆ ಹಾಗು ಐದು ಅಕ್ಷರಗಳಷ್ಟು ಉದ್ದವಾಗಿರುತ್ತವೆ."
 
 #: source/alreadyopen.src#STR_ALREADYOPEN_MSG.String.Text
 msgid  "Document file '$(ARG1)' is locked for editing by yourself on a different system since $(ARG2)\n\nOpen document read-only, or ignore own file locking and open the document for editing.\n\n"
-msgstr ""
+msgstr "ದಸ್ತಾವೇಜು ಕಡತ '$(ARG1)' ಅನ್ನು $(ARG2) ನಂತರ ಬೇರೊಂದು ಗಣಕದಲ್ಲಿ ಸಂಪಾದನೆಗಾಗಿ ನಿಮ್ಮಿಂದ ಲಾಕ್‌ ಮಾಡಲಾಗಿದೆ\n\nದಸ್ತಾವೇಜನ್ನು ಓದಲು-ಮಾತ್ರವಾದ ಕ್ರಮದಲ್ಲಿ ತೆರೆಯಿರಿ, ಅಥವ ಸ್ವತಃ ಕಡತ ಲಾಕ್‌ ಮಾಡುವಿಕೆಯನ್ನು ಆಲಕ್ಷಿಸಿ ಹಾಗು ಸಂಪಾದಿಸಲು ದಸ್ತಾವೇಜನ್ನು ತೆರೆಯಿರಿ.\n\n"
 
 #: source/alreadyopen.src#STR_ALREADYOPEN_READONLY_BTN.String.Text
-#, fuzzy
 msgid  "Open ~Read-Only"
 msgstr "ಓದಲು ಮಾತ್ರವೆ ತೆರೆ(~R)"
 
 #: source/alreadyopen.src#STR_ALREADYOPEN_OPEN_BTN.String.Text
-#, fuzzy
 msgid  "~Open"
 msgstr "ತೆರೆ(~O)"
 
 #: source/alreadyopen.src#STR_ALREADYOPEN_SAVE_MSG.String.Text
 msgid  "Document file '$(ARG1)' is locked for editing by yourself on a different system since $(ARG2)\n\nClose document on other system and retry saving or ignore own file locking and save current document.\n\n"
-msgstr ""
+msgstr "ದಸ್ತಾವೇಜು ಕಡತ '$(ARG1)' ಅನ್ನು $(ARG2) ನಂತರ ಬೇರೊಂದು ಗಣಕದಲ್ಲಿ ಸಂಪಾದನೆಗಾಗಿ ನಿಮ್ಮಂದ ಲಾಕ್‌ ಮಾಡಲಾಗಿದೆ\n\nಬೇರೆ ಗಣಕದಲ್ಲಿನ ದಸ್ತಾವೇಜನ್ನು ಮುಚ್ಚಿ, ಅಥವ ಸ್ವತಃ ಕಡತ ಲಾಕ್‌ ಮಾಡುವಿಕೆಯನ್ನು ಆಲಕ್ಷಿಸಿ ಹಾಗು ಈಗಿನ ದಸ್ತಾವೇಜನ್ನು ಉಳಿಸಿ.\n\n"
 
 #: source/alreadyopen.src#STR_ALREADYOPEN_RETRY_SAVE_BTN.String.Text
-#, fuzzy
 msgid  "~Retry Saving"
 msgstr "ಉಳಿಸಲು ಇನ್ನೊಮ್ಮೆ ಪ್ರಯತ್ನಿಸು(~R)"
 
 #: source/alreadyopen.src#STR_ALREADYOPEN_SAVE_BTN.String.Text
-#, fuzzy
 msgid  "~Save"
 msgstr "ಉಳಿಸು(~S)"
 
 #: source/lockfailed.src#STR_LOCKFAILED_MSG.String.Text
 msgid  "The file could not be locked for exclusive access by %PRODUCTNAME, due to missing permission to create a lock file on that file location."
-msgstr ""
+msgstr "%PRODUCTNAME ನಿಂದ ವಿಶೇಷವಾದ ನಿಲುಕಣೆಗಾಗಿ ಕಡತವನ್ನು ಲಾಕ್‌ ಮಾಡಲಾಗಲಿಲ್ಲ, ಏಕೆಂದರೆ ಈ ಕಡತ ಸ್ಥಳದಲ್ಲಿ ಲಾಕ್‌ ಕಡತವನ್ನು ನಿರ್ಮಿಸಲು ಅನುಮತಿಯು ಇಲ್ಲ."

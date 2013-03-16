@@ -49,7 +49,7 @@ msgstr "ကူးပြောင်းပါ"
 
 #: source/euro/euro.src#STEP_ZERO + 4.String.Text
 msgid  "Note: Currency amounts from external links and currency conversion factors in formulas cannot be converted."
-msgstr ""
+msgstr "မှတ်ချက် - ပြင်ပ ကွင်းဆက်များမှ ငွေကြေး ပမာဏအရေအတွက်များနှင့်ပုံသေနည်းများရှိ ငွေကြေးစနစ် ပြောင်းလဲမှုကိန်းများ ကူးပြောင်းနိုင်လိမ့်မည် မဟုတ်ပါ။"
 
 #: source/euro/euro.src#STEP_ZERO + 5.String.Text
 msgid  "First, unprotect all sheets."
@@ -153,7 +153,7 @@ msgstr "အကွက် ပုံစံပြားများ၏ လက်ရ�
 
 #: source/euro/euro.src#STATUSLINE + 2.String.Text
 msgid  "Registration of the relevant ranges: Sheet %1Number%1 of %2TotPageCount%2"
-msgstr ""
+msgstr "ဆက်စပ်သော လွှမ်းခြုံထားသည့် အပိုင်းအခြားများ၏ မှတ်ပုံတင်ခြင်း - အလွှာချပ် %1Number%1 ၏ %2TotPageCount%2"
 
 #: source/euro/euro.src#STATUSLINE + 3.String.Text
 msgid  "Entry of the ranges to be converted..."
@@ -221,11 +221,11 @@ msgstr "အလွှာချပ် ကာကွယ်နိုင်လိမ�
 
 #: source/euro/euro.src#MESSAGES + 13.String.Text
 msgid  "The Wizard cannot edit this document as cell formats cannot be modified in documents containing protected spreadsheets."
-msgstr ""
+msgstr "ဝဇ္ဇတ်သည် ဤမှတ်တမ်းမှတ်ရာကို မတည်းဖြတ်နိုင်သလို အလွှာချပ်များ ကာကွယ်သည့် ပါဝင်နေသော မှတ်တမ်းမှတ်ရာများတွင် အကွက် စီစဉ် ဖွဲ့စည်းမှု ပုံစံများကဲ့သို့ အထူးမပြုနိုင်ပါ။"
 
 #: source/euro/euro.src#MESSAGES + 14.String.Text
 msgid  "Please note that the Euro Converter will, otherwise, not be able to edit this document!"
-msgstr ""
+msgstr "တနည်းအားဖြင့် ထိုယူရို ပြောင်းလဲသူသည် မှတ်တမ်းမှတ်ရာ တည်းဖြတ်ရန် ရနိုင်လိမ့်မည် မဟုတ်ကြောင်း မှတ်ချက်ထားပေးပါ!"
 
 #: source/euro/euro.src#MESSAGES + 15.String.Text
 msgid  "Please choose a currency to be converted first!"
@@ -257,7 +257,7 @@ msgstr "မှတ်တမ်းမှတ်ရာသည် ဖတ်ရန်�
 
 #: source/euro/euro.src#MESSAGES + 22.String.Text
 msgid  "The '<1>' file already exists.<CR>Do you want to overwrite it?"
-msgstr ""
+msgstr " '<1>' ဖိုင် အဆင်သင့် တည်ရှိသည်။ <CR> ဖိုင်ဟောင်းတွင် အချက်အသစ်များ ထပ်မံ ဖြည့်စွပ်ရန် ဆန္ဒရှိပါသလား?"
 
 #: source/euro/euro.src#MESSAGES + 23.String.Text
 msgid  "Do you really want to terminate conversion at this point?"
@@ -317,7 +317,7 @@ msgstr "ဂရိ ဒရချင်မာ"
 
 #: source/euro/euro.src#CURRENCIES + 12.String.Text
 msgid  "Slovenian Tolar"
-msgstr ""
+msgstr "မှတ်တမ်းမှတ်ရာအတွက် အများလက်ခံနိုင်သော ဖန်တီးမှုသည် ဥရောပ ငွေကြေးစနစ်တစ်ခု မဟုတ်ပါ!"
 
 #: source/euro/euro.src#CURRENCIES + 13.String.Text
 msgid  "Cypriot Pound"
@@ -337,7 +337,7 @@ msgstr "မှတ်တမ်းမှတ်ရာမှာထည့်ထား
 
 #: source/euro/euro.src#CURRENCIES + 17.String.Text
 msgid  "The language set for your operating system is not a language of the European Monetary Union."
-msgstr ""
+msgstr "သင်၏ကွန်ပျူတာအလုပ်လုပ်ရန်ဘာသာစကားအစုအဝေးသည်ဥရောပဘုံငွေကြေးအဖွဲ့၏ ဘာသာစကားမဟုတ်ပေ။"
 
 #: source/euro/euro.src#STEP_LASTPAGE.String.Text
 msgid  "Progress"
@@ -361,35 +361,35 @@ msgstr "အလွှာချပ် အမြဲတမ်း မကာကွယ�
 
 #: source/formwizard/dbwizres.src#RID_COMMON_START + 0.String.Text
 msgid  "The directory '%1' could not be created.<BR>There may not be enough space left on your hard disk."
-msgstr ""
+msgstr "%1' အညွှန်း ဖန်တီးနိုင်လိမ့်မည် မဟုတ်ပါ။ <BR> သင့်ဟာ့ဒစ်ပေါ် ဘယ်ဖက် နေရာလပ်တွင် လုံလောက်လိမ့်မည် မဟုတ်ပါ။"
 
 #: source/formwizard/dbwizres.src#RID_COMMON_START + 1.String.Text
 msgid  "The text document could not be created.<BR>Please check if the module 'PRODUCTNAME Writer' is installed."
-msgstr ""
+msgstr "စာသား မှတ်တမ်းမှတ်ရာ ဖန်တီးနိုင်လိမ့်မည် မဟုတ်ပါ။ <BR> အကယ်၍ 'PRODUCTNAME Writer' ယူနစ်တစ်ခု စတင် အသုံးပြုရန် စီမံပါက စစ်ဆေးပေးပါ။"
 
 #: source/formwizard/dbwizres.src#RID_COMMON_START + 2.String.Text
 msgid  "The spreadsheet could not be created.<BR>Please check if the module 'PRODUCTNAME Calc' is installed."
-msgstr ""
+msgstr "အလွှာချပ် ဖန်တီးနိုင်လိမ့်မည် မဟုတ်ပါ။ <BR> အကယ်၍ 'PRODUCTNAME Calc' ယူနစ်တစ်ခု စတင် အသုံးပြုရန် စီမံပါက စစ်ဆေးပေးပါ။"
 
 #: source/formwizard/dbwizres.src#RID_COMMON_START + 3.String.Text
 msgid  "The presentation could not be created.<BR>Please check if the module 'PRODUCTNAME Impress' is installed."
-msgstr ""
+msgstr "တင်ပြချက် ဖန်တီးနိုင်လိမ့်မည် မဟုတ်ပါ။ <BR> အကယ်၍ 'PRODUCTNAME Impress' မော်ကျူးတစ်ခု စတင် အသုံးပြုရန် စီမံပါက စစ်ဆေးပေးပါ။"
 
 #: source/formwizard/dbwizres.src#RID_COMMON_START + 4.String.Text
 msgid  "The drawing could not be created.<BR>Please check if the module 'PRODUCTNAME Draw' is installed."
-msgstr ""
+msgstr "ပုံဆွဲခြင်း ဖန်တီးနိုင်လိမ့်မည် မဟုတ်ပါ။ <BR> အကယ်၍ 'PRODUCTNAME Draw' မော်ကျူးတစ်ခု စတင် အသုံးပြုရန် စီမံပါက စစ်ဆေးပေးပါ။"
 
 #: source/formwizard/dbwizres.src#RID_COMMON_START + 5.String.Text
 msgid  "The formula could not be created.<BR>Please check if the module 'PRODUCTNAME Math' is installed."
-msgstr ""
+msgstr "ပုံသေနည်း ဖန်တီးနိုင်လိမ့်မည် မဟုတ်ပါ။ <BR> အကယ်၍ 'PRODUCTNAME Math' မော်ကျူးတစ်ခု စတင် အသုံးပြုရန် စီမံပါက စစ်ဆေးပေးပါ။"
 
 #: source/formwizard/dbwizres.src#RID_COMMON_START + 6.String.Text
 msgid  "The files required could not be found.<BR>Please start the %PRODUCTNAME Setup and choose 'Repair'."
-msgstr ""
+msgstr "လိုအပ်သည့် ဖိုင်များ ရှာတွေ့နိုင်လိမ့်မည် မဟုတ်ပါ။ <BR> %PRODUCTNAME စတင် အသုံးပြုရန် စီမံပြီး 'Repair' ကို ရွေး၍ စတင်ပေးပါ။"
 
 #: source/formwizard/dbwizres.src#RID_COMMON_START + 7.String.Text
 msgid  "The file '<PATH>' already exists.<BR><BR>Would you like to overwrite the existing file?"
-msgstr ""
+msgstr "<PATH>' ဖိုင် အဆင်သင့် တည်ရှိသည်။ <BR><BR> တည်ရှိနေသောဖိုင်တွင် အချက်အလက်သစ်များ ထပ်မံ ဖြည့်စွက်လိုပါသလား?"
 
 #: source/formwizard/dbwizres.src#RID_COMMON_START + 8.String.Text
 msgid  "Yes"
@@ -437,7 +437,7 @@ msgstr "အိုကေ"
 
 #: source/formwizard/dbwizres.src#RID_COMMON_START + 19.String.Text
 msgid  "The file already exists. Do you want to overwrite it?"
-msgstr ""
+msgstr "ဖိုင် အဆင်သင့် တည်ရှိသည်။ ဖိုင်ဟောင်းတွင် အချက်အသစ်များ ထပ်မံ ဖြည့်စွပ်ရန် ဆန္ဒရှိပါသလား။"
 
 #: source/formwizard/dbwizres.src#RID_COMMON_START + 20.String.Text
 msgid  "Template created via <wizard_name> on <current_date>."
@@ -445,7 +445,7 @@ msgstr "<wizard_name> on <current_date> မှတစ်ဆင့် ပုံစ
 
 #: source/formwizard/dbwizres.src#RID_COMMON_START + 21.String.Text
 msgid  "The wizard could not be run, because important files were not found.\nUnder 'Tools - Options - %PRODUCTNAME - Paths' click the 'Default' button to reset the paths to the original default settings.\nThen run the wizard again."
-msgstr ""
+msgstr "ဝဇ္ဇတ် မပြေးနိုင်သောအကြောင်းမှာ အရေးကြီးဖိုင် ရှာမတွေ့ပါ။ \n'Tools - Options - %PRODUCTNAME - Paths' အောက်တွင် မူလ နဂိုတည်ရှိသော နောက်ခံ ရွေးနိုင်ခြင်းများသို့ လမ်းကြောင်းများ ပြန်လည် စတင်ရန်'Default' ခလုတ် ကလစ်နှိပ်ပါ။ \nပြီးတော့  ဝဇ္ဇတ်ကို နောက်တစ်ကြိမ် အလုပ်လုပ်စေပါ။"
 
 #: source/formwizard/dbwizres.src#RID_DB_COMMON_START + 0.String.Text
 msgid  "C~reate"
@@ -473,11 +473,11 @@ msgstr "ဇယား အမည်"
 
 #: source/formwizard/dbwizres.src#RID_DB_COMMON_START + 6.String.Text
 msgid  "An error occurred while running the wizard. The wizard will be terminated."
-msgstr ""
+msgstr "ဝဇ္ဇတ် အလုပ်လုပ်နေစဉ် အမှားတစ်ခု ဖြစ်ပွားသည်။ ဝဇ္ဇတ်ကို အပြီးသတ်လိမ့်မည်။"
 
 #: source/formwizard/dbwizres.src#RID_DB_COMMON_START + 14.String.Text
 msgid  "No connection to the database could be established."
-msgstr ""
+msgstr "အချက်အလက်များ စနစ်တကျ သိုလှောင်ထားရန် အချိတ်အဆက် မရှိလည်း တည်ဆောက်နိုင်လိမ့်မည်။"
 
 #: source/formwizard/dbwizres.src#RID_DB_COMMON_START + 20.String.Text
 msgid  "~Help"
@@ -553,11 +553,11 @@ msgstr "ပုံစံအတွင်း နေရာများ"
 
 #: source/formwizard/dbwizres.src#RID_DB_FORM_WIZARD_START + 2.String.Text
 msgid  "Binary fields are always listed and selectable from the left list.\nIf possible, they are interpreted as images."
-msgstr ""
+msgstr "ဒွိစုံ နေရာကွက်များကို အမြဲတမ်းစာရင်းလုပ်ထားပြီး ဘယ်ဘက်စာရင်းမှ ရွေးချယ်ထားသည်။ \nအကယ်၍ ဖြစ်နိုင်ပါက၊ ရုပ်ပုံများကဲ့သို့ ပြန်ဆိုထားသည်။"
 
 #: source/formwizard/dbwizres.src#RID_DB_FORM_WIZARD_START + 3.String.Text
 msgid  "A subform is a form that is inserted in another form.\nUse subforms to show data from tables or queries with a one-to-many relationship."
-msgstr ""
+msgstr "လျှောက်လွှာငယ်သည် လျှောက်လွှာတစ်ခုဖြစ်ပြီး နောက်ထပ် လျှောက်လွှာတွင် ထည့်သွင်းထားသည်။ \nဇယားများမှ အချက်အလက်များ ပြသရန် (သို့) တစ်ခုမှ - အများ - သို့ ဝန်ဆောင်မှုအတွင်း ဆက်နွယ်မှု တစ်ခုနှင့်အတူ မေးခွန်းများ ပြသရန်လျှောက်လွှာငယ်များကို သုံးပါ။"
 
 #: source/formwizard/dbwizres.src#RID_DB_FORM_WIZARD_START + 4.String.Text
 msgid  "~Add Subform"
@@ -593,7 +593,7 @@ msgstr "ပုံစံတွင် နေရာများ"
 
 #: source/formwizard/dbwizres.src#RID_DB_FORM_WIZARD_START + 19.String.Text
 msgid  "The join '<FIELDNAME1>' and '<FIELDNAME2>' has been selected twice.\nBut joins may only be used once."
-msgstr ""
+msgstr "'<FIELDNAME1>' နှင့် '<FIELDNAME2>'အတွဲ နှစ်ကြိမ် ရွေးချယ်ထားသည်။ \nသို့သော် အတွဲများ တစ်ကြိမ်သာ သုံးရလိမ့်မည်။"
 
 #: source/formwizard/dbwizres.src#RID_DB_FORM_WIZARD_START + 20.String.Text
 msgid  "~First joined subform field"
@@ -805,7 +805,7 @@ msgstr "လျှောက်လွှာ၏ အမည် ဖန်တီးပ�
 
 #: source/formwizard/dbwizres.src#RID_DB_FORM_WIZARD_START + 98.String.Text
 msgid  "A form with the name '%FORMNAME' already exists.\nChoose another name."
-msgstr ""
+msgstr "လျှောက်လွှာ အမည် '%FORMNAME' ရှိပြီးသား ဖြစ်သည်။\n အခြားအမည် တစ်ခုရွေးပါ။"
 
 #: source/formwizard/dbwizres.src#RID_DB_QUERY_WIZARD_START + 0.String.Text
 msgid  "Query Wizard"
@@ -857,7 +857,7 @@ msgstr "အနုစိတ် မေးခွန်း (မေးခွန်း
 
 #: source/formwizard/dbwizres.src#RID_DB_QUERY_WIZARD_START + 12.String.Text
 msgid  "~Summary query (Shows only results of aggregate functions.)"
-msgstr ""
+msgstr "မေးခွန်း အကျဉ်းချုပ် (စုပေါင်းသည့် ဖန်ရှင်များ၏ ရလာဒ်များသာလျှင် ပြသသည်။)"
 
 #: source/formwizard/dbwizres.src#RID_DB_QUERY_WIZARD_START + 16.String.Text
 msgid  "Aggregate functions"
@@ -1097,15 +1097,15 @@ msgstr "ခြုံငုံသုံးသပ်ချက်"
 
 #: source/formwizard/dbwizres.src#RID_DB_QUERY_WIZARD_START + 88.String.Text
 msgid  "A field that has not been assigned an aggregate function must be used in a group."
-msgstr ""
+msgstr "ထိုနေရာကွက်တစ်ခုသည် ဖန်ရှင် စုပေါင်းတစ်ခုဖြစ်ကြောင်း မသတ်မှတ်ထား၍ အုပ်စုတွင် အသုံးပြုရလိမ့်မည်။"
 
 #: source/formwizard/dbwizres.src#RID_DB_QUERY_WIZARD_START + 89.String.Text
 msgid  "The condition '<FIELDNAME> <LOGICOPERATOR> <VALUE>' was chosen twice. Each condition can only be chosen once"
-msgstr ""
+msgstr "<FIELDNAME> <LOGICOPERATOR> <VALUE>' အခြေအနေ နှစ်ကြိမ် ရွေးထားသည်။ အခြေအနေတိုင်းသည် တစ်ကြိမ်သာ ရွေးခွင့် ရှိသည်"
 
 #: source/formwizard/dbwizres.src#RID_DB_QUERY_WIZARD_START + 90.String.Text
 msgid  "The aggregate function <FUNCTION> has been assigned twice to the fieldname '<NUMERICFIELD>'."
-msgstr ""
+msgstr "စုပေါင်းဖန်ရှင် <FUNCTION> သည် '<NUMERICFIELD>' ဖိုင်အမည်သို့ နှစ်ကြိမ် သတ်မှတ်ထားသည်။"
 
 #: source/formwizard/dbwizres.src#RID_DB_QUERY_WIZARD_START + 91.String.Text
 msgid  ", "
@@ -1321,11 +1321,11 @@ msgstr "<REPORTFORM>' ပုံစံ မတည်ရှိပါ။"
 
 #: source/formwizard/dbwizres.src#RID_DB_REPORT_WIZARD_START + 65.String.Text
 msgid  "The query with the statement <BR>'<STATEMENT>' <BR> could not be run. <BR> Check your data source."
-msgstr ""
+msgstr "<BR>'<STATEMENT>' <BR> ထုတ်ပြန်ချက်နှင့်အတူ ကွာရီအလုပ်လုပ်နိုင်လိမ့်မည် မဟုတ်ပါ။ <BR> သင့် အချက်အလက် မူရင်းကို စစ်ဆေးပါ။"
 
 #: source/formwizard/dbwizres.src#RID_DB_REPORT_WIZARD_START + 66.String.Text
 msgid  "The following hidden control in the form '<REPORTFORM>' could not be read: '<CONTROLNAME>'."
-msgstr ""
+msgstr "<REPORTFORM>' လျှောက်လွှာတွင် အောက်ပါ ခေတ္တ ဖျောက်ထားသည့် ထိန်းချုပ်မှုသည် ဖတ်နိုင်လိမ့်မည် မဟုတ်ပါ - '<CONTROLNAME>'."
 
 #: source/formwizard/dbwizres.src#RID_DB_REPORT_WIZARD_START + 67.String.Text
 msgid  "Importing data..."
@@ -1349,23 +1349,23 @@ msgstr "နေရာကွက်"
 
 #: source/formwizard/dbwizres.src#RID_DB_REPORT_WIZARD_START + 72.String.Text
 msgid  "An error occurred in the wizard.<BR>The template '%PATH' could be erroneous.<BR>Either the required sections or tables do not exist or exist under the wrong name.<BR>See the Help for more detailed information.<BR>Please select another template."
-msgstr ""
+msgstr "ဝဇ္ဇတ် တွင် အမှားတစ်ခု ဖြစ်ပွားသည်။ <BR> '%PATH' ပုံစံပြားသည်  မမှန်ကန်နိုင်ပါ။ <BR> လိုအပ်သည့် အပိုင်းများ (သို့) ဇယားများ မတည်ရှိနိုင်ပါ (သို့) မှားသော အမည်အောက်တွင် တည်ရှိသည်။ <BR> ပို၍ အနုစိတ် သတင်း အချက်အလက်အတွက် ကူညီခြင်းကို ကြည့်ပါ။ <BR> နောက်ထပ် ပုံစံပြားကို ရွေးချယ်ပေးပါ။"
 
 #: source/formwizard/dbwizres.src#RID_DB_REPORT_WIZARD_START + 73.String.Text
 msgid  "There is an invalid user field in a table."
-msgstr ""
+msgstr "ဇယားတစ်ခုတွင် နေရာကွက် အသုံးပြုသူ မမှန်ကန်သော ညွှန်ကြားချက်တစ်ခု ဖြစ်သည်။"
 
 #: source/formwizard/dbwizres.src#RID_DB_REPORT_WIZARD_START + 74.String.Text
 msgid  "The sort criterium '<FIELDNAME>' was chosen twice. Each criterium can only be chosen once."
-msgstr ""
+msgstr "<FIELDNAME>' စနစ်တကျ စီထားသော စံ နှစ်ကြိမ် ရွေးထားသည်။ စံ တစ်ခုစီတိုင်း တစ်ကြိမ်သာ ရွေးနိုင်သည်။"
 
 #: source/formwizard/dbwizres.src#RID_DB_REPORT_WIZARD_START + 75.String.Text
 msgid  "Note: The dummy text will be replaced by data from the database when the report is created."
-msgstr ""
+msgstr "မှတ်ချက် - အစီရင်ခံစာ ဖန်တီးပြီးသောအချိန်တွင် အချက်အလက်များ စနစ်တကျ သိုလှောင်ထားခြင်းမှ အချက်အလက်များသည် စာသားအတု အစားထိုးရလိမ့်မည်။"
 
 #: source/formwizard/dbwizres.src#RID_DB_REPORT_WIZARD_START + 76.String.Text
 msgid  "A report '%REPORTNAME' already exists in the database. Please assign another name."
-msgstr ""
+msgstr "%REPORTNAME' အစီရင်ခံစာတစ်ခုသည် အချက်အလက်များ စနစ်တကျ သိုလှောင်ထားခြင်းတွင် အဆင်သင့် တည်ရှိသည်။ နောက်ထပ် အမည် သတ်မှတ်ပေးပါ။"
 
 #: source/formwizard/dbwizres.src#RID_DB_REPORT_WIZARD_START + 78.String.Text
 msgid  "How do you want to proceed after creating the report?"
@@ -1465,7 +1465,7 @@ msgstr "ဇယား ဖန်တီးပါ"
 
 #: source/formwizard/dbwizres.src#RID_DB_TABLE_WIZARD_START + 14.String.Text
 msgid  "This wizard helps you to create a table for your database. After selecting a table category and a sample table, choose the fields you want to include in your table. You can include fields from more than one sample table."
-msgstr ""
+msgstr "ဤ ဝဇ္ဇတ် သည် သင့်အချက်အလက်များ စနစ်တကျ သိုလှောင်ထားခြင်းအတွက် ဇယားတစ်ခု ဖန်တီးရန် ကူညီသည်။ ပြီးနောက် ဇယား အမျိုးအစားတစ်ခုနှင့် ဇယား နမူနာ တစ်ခု ရွေးချယ်ပြီး၊ သင့်ဇယားတွင် ပါဝင်ရန် နေရာများ ရွေးပါ။ ဇယား နမူနာ တစ်ခုထက်ပို၍ နေရာများ ပါဝင်နိုင်သည်။"
 
 #: source/formwizard/dbwizres.src#RID_DB_TABLE_WIZARD_START + 15.String.Text
 msgid  "Ca~tegory"
@@ -1509,7 +1509,7 @@ msgstr "ရွေးချယ်ထားသည့် နေရာကွက်�
 
 #: source/formwizard/dbwizres.src#RID_DB_TABLE_WIZARD_START + 26.String.Text
 msgid  "A primary key uniquely identifies each record in a database table. Primary keys ease the linking of information in separate tables, and it is recommended that you have a primary key in every table. Without a primary key, it will not be possible to enter data into this table."
-msgstr ""
+msgstr "ဒေတာဘေ့ ဇယားတွင် မှတ်တမ်းတစ်ခုစီအတွက် မူလအရင်းခံ သော့သည် ထူးထူးခြားခြား ရွေးထုတ်နိုင်သည်။ မူလအရင်းခံ သော့သည် သီးခြား ဇယားများတွင် သတင်း အချက်အလက်၏ ကွင်းဆက်မှု အခက်အခဲ မရှိပါ။ ဇယားတိုင်းတွင် မူလအရင်းခံ သော့ တစ်ခု ရှိကြောင်း အကြံပြု ထောက်ခံနေသည်။ မူလအရင်းခံ သော့ တစ်ခု မပါဘဲ၊ ဤဇယားအတွင်းသို့ အချက်အလက်များ ဝင်ရောက်ရန် ဖြစ်နိုင်လိမ့်မည် မဟုတ်ပါ။"
 
 #: source/formwizard/dbwizres.src#RID_DB_TABLE_WIZARD_START + 27.String.Text
 msgid  "~Create a primary key"
@@ -1525,7 +1525,7 @@ msgstr "မူလအရင်းခံ သော့အဖြစ် တည်ရ�
 
 #: source/formwizard/dbwizres.src#RID_DB_TABLE_WIZARD_START + 30.String.Text
 msgid  "Define p~rimary key as a combination of several fields "
-msgstr ""
+msgstr "အချို့ နေရာကွက်များ၏ ပေါင်းစပ်မှုတစ်ခုအဖြစ် မူလအရင်းခံ သော့ အဓိပ္ပာယ်ဖေါ်ပါ"
 
 #: source/formwizard/dbwizres.src#RID_DB_TABLE_WIZARD_START + 31.String.Text
 msgid  "F~ieldname"
@@ -1545,1437 +1545,1177 @@ msgstr "သင့်ဇယားကို ဘယ်လို နာမည် ပ
 
 #: source/formwizard/dbwizres.src#RID_DB_TABLE_WIZARD_START + 35.String.Text
 msgid  "Congratulations. You have entered all the information needed to create your table."
-msgstr ""
+msgstr "ဝမ်းမြောက်စကား။ သင့်ဇယား ဖန်တီးရန် လိုအပ်သည့် သတင်း အချက်အလက် အားလုံးသို့ ဝင်ရောက်ထားသည်။"
 
 #: source/formwizard/dbwizres.src#RID_DB_TABLE_WIZARD_START + 36.String.Text
 msgid  "What do you want to do next?"
 msgstr "နောက် ဘာလုပ်ရန် ဆန္ဒရှိပါသလဲ။"
 
 #: source/formwizard/dbwizres.src#RID_DB_TABLE_WIZARD_START + 37.String.Text
-#, fuzzy
 msgid  "Modify the table design"
 msgstr "ဇယား ဒီဇိုင်း ပုံစံ အထူးပြုပါ"
 
 #: source/formwizard/dbwizres.src#RID_DB_TABLE_WIZARD_START + 38.String.Text
-#, fuzzy
 msgid  "Insert data immediately"
 msgstr "ချက်ချင်း အချက်အလက်များထည့်သွင်းပါ"
 
 #: source/formwizard/dbwizres.src#RID_DB_TABLE_WIZARD_START + 39.String.Text
-#, fuzzy
 msgid  "C~reate a form based on this table"
 msgstr "ဤဇယားပေါ်တွင် အခြေခံ ပုံစံတစ်ခု ဖန်တီးပါ"
 
 #: source/formwizard/dbwizres.src#RID_DB_TABLE_WIZARD_START + 40.String.Text
-#, fuzzy
 msgid  "The table you have created could not be opened."
 msgstr "ဖန်တီးထားသည့် ဇယား မဖွင့်နိုင်ပါ။"
 
 #: source/formwizard/dbwizres.src#RID_DB_TABLE_WIZARD_START + 41.String.Text
 msgid  "The table name '%TABLENAME' contains a character ('%SPECIALCHAR') that might not be supported by the database."
-msgstr ""
+msgstr "%TABLENAME' ဇယား အမည်သည် ('%SPECIALCHAR') အက္ခရာတစ်ခု ပါဝင်ပြီးဒေတာဘေ့ အားဖြင့် ထောက်ပံ့နိုင်လိမ့်မည် မဟုတ်ပါ။"
 
 #: source/formwizard/dbwizres.src#RID_DB_TABLE_WIZARD_START + 42.String.Text
 msgid  "The field name '%FIELDNAME' contains a special character ('%SPECIALCHAR') that might not be supported by the database."
-msgstr ""
+msgstr "%FIELDNAME' ဖိုင်အမည်သည် ('%SPECIALCHAR') အထူး အက္ခရာ တစ်ခု ပါဝင်ပြီးဒေတာဘေ့ အားဖြင့် ထောက်ပံ့နိုင်လိမ့်မည် မဟုတ်ပါ။"
 
 #: source/formwizard/dbwizres.src#RID_DB_TABLE_WIZARD_START + 43.String.Text
-#, fuzzy
 msgid  "Field"
 msgstr "နေရာကွက်"
 
 #: source/formwizard/dbwizres.src#RID_DB_TABLE_WIZARD_START + 44.String.Text
-#, fuzzy
 msgid  "MyTable"
 msgstr "ကျွန်ုပ်ဇယား"
 
 #: source/formwizard/dbwizres.src#RID_DB_TABLE_WIZARD_START + 45.String.Text
-#, fuzzy
 msgid  "Add a Field"
 msgstr "နေရာကွက် တစ်ခု ပေါင်းထည့်ပါ"
 
 #: source/formwizard/dbwizres.src#RID_DB_TABLE_WIZARD_START + 46.String.Text
-#, fuzzy
 msgid  "Remove the selected Field"
 msgstr "ရွေးချယ်ထားသည့် နေရာကွက် ဖယ်ရှားပါ"
 
 #: source/formwizard/dbwizres.src#RID_DB_TABLE_WIZARD_START + 47.String.Text
 msgid  "The field cannot be inserted because this would exceed the maximum number of %COUNT possible fields in the database table"
-msgstr ""
+msgstr "နေရာကွက် ထည့်သွင်းထားနိုင်ခြင်း မရှိသော အကြောင်းမှာ ဒေတာဘေ့ဇယားတွင် ဖြစ်နိုင်သော နေရာကွက်များကို %COUNT ၏ နံပါတ် အကြီးဆုံးသို့ ပိုလွန်သွားလိမ့်မည် ဖြစ်သောကြောင့်ဖြစ်သည်။"
 
 #: source/formwizard/dbwizres.src#RID_DB_TABLE_WIZARD_START + 48.String.Text
 msgid  "The name '%TABLENAME' already exists.\nPlease enter another name."
-msgstr ""
+msgstr "'%TABLENAME' အမည် အဆင်သင့် တည်ရှိသည်။ \nနောက်ထပ် အမည်သို့ ဝင်ရောင်ပေးပါ။"
 
 #: source/formwizard/dbwizres.src#RID_DB_TABLE_WIZARD_START + 49.String.Text
-#, fuzzy
 msgid  "Catalog of the table"
 msgstr "ဇယား၏ အမျိုးအစား"
 
 #: source/formwizard/dbwizres.src#RID_DB_TABLE_WIZARD_START + 50.String.Text
-#, fuzzy
 msgid  "Schema of the table"
 msgstr "ဇယား၏ ပုံကြမ်း"
 
 #: source/formwizard/dbwizres.src#RID_DB_TABLE_WIZARD_START + 51.String.Text
-#, fuzzy
 msgid  "The field '%FIELDNAME' already exists."
 msgstr "'%FIELDNAME' ရှိပြီးသားဖြစ်သည်။"
 
 #: source/formwizard/dbwizres.src#RID_LETTERWIZARDDIALOG_START + 1.String.Text
-#, fuzzy
 msgid  "Letter Wizard"
 msgstr "ဝဇ္ဇတ် စာ"
 
 #: source/formwizard/dbwizres.src#RID_LETTERWIZARDDIALOG_START + 2.String.Text
-#, fuzzy
 msgid  "Label9"
 msgstr "ကတ်ပြား ၉"
 
 #: source/formwizard/dbwizres.src#RID_LETTERWIZARDDIALOG_START + 3.String.Text
-#, fuzzy
 msgid  "~Business letter"
 msgstr "စီးပွားရေးစာ"
 
 #: source/formwizard/dbwizres.src#RID_LETTERWIZARDDIALOG_START + 4.String.Text
-#, fuzzy
 msgid  "~Formal personal letter"
 msgstr "နည်းလမ်းတကျဖြစ်သော ကိုယ်ရေးစာ"
 
 #: source/formwizard/dbwizres.src#RID_LETTERWIZARDDIALOG_START + 5.String.Text
-#, fuzzy
 msgid  "~Personal letter"
 msgstr "ကိုယ်ရေးစာ"
 
 #: source/formwizard/dbwizres.src#RID_LETTERWIZARDDIALOG_START + 6.String.Text
 msgid  "~Use letterhead paper with pre-printed elements"
-msgstr ""
+msgstr "ကြိုတင် ပရင့်မထုတ်သည့် အစိတ်အပိုင်းနှင့်အတူ ခေါင်းစီးစာတန်းပါ စာရွက်ကို သုံးပါ"
 
 #: source/formwizard/dbwizres.src#RID_LETTERWIZARDDIALOG_START + 7.String.Text
-#, fuzzy
 msgid  "~Logo"
 msgstr "စာလုံးအမှတ်အသား"
 
 #: source/formwizard/dbwizres.src#RID_LETTERWIZARDDIALOG_START + 8.String.Text
-#, fuzzy
 msgid  "Return address"
 msgstr "အပြန် လိပ်စာ"
 
 #: source/formwizard/dbwizres.src#RID_LETTERWIZARDDIALOG_START + 9.String.Text
-#, fuzzy
 msgid  "~Include footer"
 msgstr "စာမျက်နှာအောက်တွင် ပါဝင်စေပါ"
 
 #: source/formwizard/dbwizres.src#RID_LETTERWIZARDDIALOG_START + 10.String.Text
-#, fuzzy
 msgid  "~Return address in envelope window"
 msgstr "~ စာအိတ် ဝင်းဒိုး ရှိ အပြန်လိပ်စာ"
 
 #: source/formwizard/dbwizres.src#RID_LETTERWIZARDDIALOG_START + 11.String.Text
-#, fuzzy
 msgid  "~Logo"
 msgstr "စာလုံးအမှတ်အသား"
 
 #: source/formwizard/dbwizres.src#RID_LETTERWIZARDDIALOG_START + 12.String.Text
-#, fuzzy
 msgid  "~Return address in envelope window"
 msgstr "ဝင်းဒိုးစာအိတ်ရှိ ကွန်ယက်လိပ်စာ ပြန်လာစေပါ"
 
 #: source/formwizard/dbwizres.src#RID_LETTERWIZARDDIALOG_START + 13.String.Text
-#, fuzzy
 msgid  "Letter Signs"
 msgstr "စာ မှန်ကန်ကြောင်း စစ်ဆေးသည်"
 
 #: source/formwizard/dbwizres.src#RID_LETTERWIZARDDIALOG_START + 14.String.Text
-#, fuzzy
 msgid  "S~ubject line"
 msgstr "အကြောင်းကိစ္စ လိုင်း"
 
 #: source/formwizard/dbwizres.src#RID_LETTERWIZARDDIALOG_START + 15.String.Text
-#, fuzzy
 msgid  "Salu~tation"
 msgstr "နှုတ်ဆက်စကား"
 
 #: source/formwizard/dbwizres.src#RID_LETTERWIZARDDIALOG_START + 16.String.Text
-#, fuzzy
 msgid  "Fold ~marks"
 msgstr "အမှတ်အသားများ ခေါက်ချိုးထားပါ"
 
 #: source/formwizard/dbwizres.src#RID_LETTERWIZARDDIALOG_START + 17.String.Text
-#, fuzzy
 msgid  "~Complimentary close"
 msgstr "အပိတ်နှုတ်ဆက် စကားလုံး"
 
 #: source/formwizard/dbwizres.src#RID_LETTERWIZARDDIALOG_START + 18.String.Text
-#, fuzzy
 msgid  "~Footer"
 msgstr "စာမျက်နှာအောက်"
 
 #: source/formwizard/dbwizres.src#RID_LETTERWIZARDDIALOG_START + 19.String.Text
-#, fuzzy
 msgid  "~Use user data for return address"
 msgstr "ပြန်လာသော ကွန်ယက်လိပ်စာအတွက် အသုံးပြုသူ အချက်အလက်များ သုံးပါ"
 
 #: source/formwizard/dbwizres.src#RID_LETTERWIZARDDIALOG_START + 20.String.Text
-#, fuzzy
 msgid  "~New sender address:"
 msgstr "~ အသစ် ပို့သူ လိပ်စာ -"
 
 #: source/formwizard/dbwizres.src#RID_LETTERWIZARDDIALOG_START + 21.String.Text
-#, fuzzy
 msgid  "Use placeholders for ~recipient's address"
 msgstr "လက်ခံရရှိသူ၏ ကွန်ယက်လိပ်စာအတွက် ချန်လှပ်ထားသော နေရာများ သုံးပါ"
 
 #: source/formwizard/dbwizres.src#RID_LETTERWIZARDDIALOG_START + 22.String.Text
-#, fuzzy
 msgid  "Use address database for ~mail merge"
 msgstr "ပေါင်းထားသော အီးမေးလ်အတွက် ဒေတာဘေ့ ကွန်ယက်လိပ်စာ သုံးပါ"
 
 #: source/formwizard/dbwizres.src#RID_LETTERWIZARDDIALOG_START + 23.String.Text
-#, fuzzy
 msgid  "Include ~only on second and following pages"
 msgstr "ဒုတိယ နှင့် အောက်ပါ စာမျက်နှာများပေါ်တွင်သာ ပါဝင်စေပါ"
 
 #: source/formwizard/dbwizres.src#RID_LETTERWIZARDDIALOG_START + 24.String.Text
-#, fuzzy
 msgid  "~Include page number"
 msgstr "စာမျက်နှာ နံပါတ် ပါဝင်စေပါ"
 
 #: source/formwizard/dbwizres.src#RID_LETTERWIZARDDIALOG_START + 25.String.Text
-#, fuzzy
 msgid  "Letter Template"
 msgstr "စာပုံစံပြား"
 
 #: source/formwizard/dbwizres.src#RID_LETTERWIZARDDIALOG_START + 26.String.Text
-#, fuzzy
 msgid  "Create a ~letter from this template"
 msgstr "ဤပုံစံပြားမှ စာတစ်စောင် ဖန်တီးပါ"
 
 #: source/formwizard/dbwizres.src#RID_LETTERWIZARDDIALOG_START + 27.String.Text
-#, fuzzy
 msgid  "Make ~manual changes to this letter template"
 msgstr "ဤစာ ပုံစံပြားသို့ လက်စွဲစာစောင် ပြောင်းလဲမှုများ ပြုလုပ်ပါ"
 
 #: source/formwizard/dbwizres.src#RID_LETTERWIZARDDIALOG_START + 28.String.Text
-#, fuzzy
 msgid  "Page design"
 msgstr "စာမျက်နှာ ဒီဇိုင်းပုံစံ"
 
 #: source/formwizard/dbwizres.src#RID_LETTERWIZARDDIALOG_START + 29.String.Text
-#, fuzzy
 msgid  "Page design"
 msgstr "စာမျက်နှာ ဒီဇိုင်းပုံစံ"
 
 #: source/formwizard/dbwizres.src#RID_LETTERWIZARDDIALOG_START + 30.String.Text
-#, fuzzy
 msgid  "Page design"
 msgstr "စာမျက်နှာ ဒီဇိုင်းပုံစံ"
 
 #: source/formwizard/dbwizres.src#RID_LETTERWIZARDDIALOG_START + 31.String.Text
 msgid  "This wizard helps you to create a letter template. You can then use the template as the basis for writing letters as often as desired."
-msgstr ""
+msgstr "ဤ ဝဇ္ဇတ် သည် စာပုံစံပြားတစ်ခု ဖန်တီးရန် ကူညီသည်။ ထို့နောက် သင်သည် ပုံစံပြားကို ရေးနေသော စာများအတွက် အခြေခံအဖြစ်၎င်း၊ မကြာခဏ လိုအင်ဆန္ဒအဖြစ်၎င်း အသုံးပြုနိုင်သည်။"
 
 #: source/formwizard/dbwizres.src#RID_LETTERWIZARDDIALOG_START + 32.String.Text
-#, fuzzy
 msgid  "~Height:"
 msgstr "အမြင့် -"
 
 #: source/formwizard/dbwizres.src#RID_LETTERWIZARDDIALOG_START + 33.String.Text
-#, fuzzy
 msgid  "~Width:"
 msgstr "အကျယ် -"
 
 #: source/formwizard/dbwizres.src#RID_LETTERWIZARDDIALOG_START + 34.String.Text
-#, fuzzy
 msgid  "S~pacing to left margin:"
 msgstr "ဘယ်ဖက် အနားသတ်မျဉ်းသို့ လပ်နေသော နေရာ-"
 
 #: source/formwizard/dbwizres.src#RID_LETTERWIZARDDIALOG_START + 35.String.Text
-#, fuzzy
 msgid  "Spacing ~to top margin:"
 msgstr "ထိပ်ဖက် အနားသတ်မျဉ်းသို့ လပ်နေသော နေရာ-"
 
 #: source/formwizard/dbwizres.src#RID_LETTERWIZARDDIALOG_START + 36.String.Text
-#, fuzzy
 msgid  "Height:"
 msgstr "အမြင့် -"
 
 #: source/formwizard/dbwizres.src#RID_LETTERWIZARDDIALOG_START + 37.String.Text
-#, fuzzy
 msgid  "Width:"
 msgstr "အကျယ် -"
 
 #: source/formwizard/dbwizres.src#RID_LETTERWIZARDDIALOG_START + 38.String.Text
-#, fuzzy
 msgid  "S~pacing to left margin:"
 msgstr "ဘယ်ဖက် အနားသတ်မျဉ်းသို့ လပ်နေသော နေရာ-"
 
 #: source/formwizard/dbwizres.src#RID_LETTERWIZARDDIALOG_START + 39.String.Text
-#, fuzzy
 msgid  "Spacing ~to top margin:"
 msgstr "ထိပ်ဖက် အနားသတ်မျဉ်းသို့ လပ်နေသော နေရာ-"
 
 #: source/formwizard/dbwizres.src#RID_LETTERWIZARDDIALOG_START + 40.String.Text
-#, fuzzy
 msgid  "Height:"
 msgstr "အမြင့် -"
 
 #: source/formwizard/dbwizres.src#RID_LETTERWIZARDDIALOG_START + 41.String.Text
-#, fuzzy
 msgid  "Use a typical letter format for this country:"
 msgstr "ဤနိုင်ငံအတွက် တကယ့် စာ စီစဉ် ဖွဲ့စည်းမှု ပုံစံတစ်ခု သုံးပါ-"
 
 #: source/formwizard/dbwizres.src#RID_LETTERWIZARDDIALOG_START + 42.String.Text
-#, fuzzy
 msgid  "Sender's address"
 msgstr "ပို့သူ၏ လိပ်စာ"
 
 #: source/formwizard/dbwizres.src#RID_LETTERWIZARDDIALOG_START + 43.String.Text
-#, fuzzy
 msgid  "Name:"
 msgstr "အမည် -"
 
 #: source/formwizard/dbwizres.src#RID_LETTERWIZARDDIALOG_START + 44.String.Text
-#, fuzzy
 msgid  "Street:"
 msgstr "လမ်း -"
 
 #: source/formwizard/dbwizres.src#RID_LETTERWIZARDDIALOG_START + 45.String.Text
-#, fuzzy
 msgid  "ZIP code/State/City:"
 msgstr "ZIP ဇစ်သင်္ကေတ/ပြည်/မြို့ -"
 
 #: source/formwizard/dbwizres.src#RID_LETTERWIZARDDIALOG_START + 46.String.Text
-#, fuzzy
 msgid  "Recipient's address"
 msgstr "လက်ခံသူ၏ လိပ်စာ"
 
 #: source/formwizard/dbwizres.src#RID_LETTERWIZARDDIALOG_START + 47.String.Text
-#, fuzzy
 msgid  "Footer"
 msgstr "စာမျက်နှာအောက်"
 
 #: source/formwizard/dbwizres.src#RID_LETTERWIZARDDIALOG_START + 48.String.Text
 msgid  "This wizard creates a letter template which enables you to create multiple letters with the same layout and settings."
-msgstr ""
+msgstr "ဤ ဝဇ္ဇတ် သည် တူညီသော အဆင်အပြင်နှင့် ရွေးနိုင်ခြင်းများနှင့်အတူ စာပေါင်းစုံ ဖန်တီးရန်  အလုပ်လုပ်နိုင်သောပုံစံပြားစာ တစ်ခု ဖန်တီးသည်။"
 
 #: source/formwizard/dbwizres.src#RID_LETTERWIZARDDIALOG_START + 49.String.Text
 msgid  "To create another new letter out of the template just navigate to the template location and double-click it."
-msgstr ""
+msgstr "ပုံစံပြားပြင်ပရှိ နောက်ထပ် စာအသစ် ဖန်တီးရန် ပုံစံပြား နေရာသို့ လမ်းညွှန်အတိုင်းသာ သွားပြီး နှစ်ကြိမ် ကလစ် နှိပ်ပါ။"
 
 #: source/formwizard/dbwizres.src#RID_LETTERWIZARDDIALOG_START + 50.String.Text
-#, fuzzy
 msgid  "Template name:"
 msgstr "ပုံစံပြား အမည် -"
 
 #: source/formwizard/dbwizres.src#RID_LETTERWIZARDDIALOG_START + 51.String.Text
-#, fuzzy
 msgid  "Location and file name:"
 msgstr "နေရာနှင့် ဖိုင်အမည်-"
 
 #: source/formwizard/dbwizres.src#RID_LETTERWIZARDDIALOG_START + 52.String.Text
-#, fuzzy
 msgid  "How do you want to proceed?"
 msgstr "ရှေ့ဆက်ရန် ဘယ်လို ဆန္ဒရှိပါသလဲ။"
 
 #: source/formwizard/dbwizres.src#RID_LETTERWIZARDDIALOG_START + 53.String.Text
-#, fuzzy
 msgid  "Please choose the type of letter and page design"
 msgstr "စာပုံစံနှင့် စာမျက်နှာ ဒီဇိုင်းပုံစံ ရွေးပေးပါ"
 
 #: source/formwizard/dbwizres.src#RID_LETTERWIZARDDIALOG_START + 54.String.Text
-#, fuzzy
 msgid  "Select the items to be printed"
 msgstr "ပရင့်ထုတ်ရန် အချက်များ ရွေးချယ်ပါ"
 
 #: source/formwizard/dbwizres.src#RID_LETTERWIZARDDIALOG_START + 55.String.Text
-#, fuzzy
 msgid  "Specify items already on your letterhead paper"
 msgstr "သင့်ခေါင်းစီးစာတန်းပါ စာရွက်ပေါ် အဆင်သင့် အချက်များ သတ်မှတ်ပါ"
 
 #: source/formwizard/dbwizres.src#RID_LETTERWIZARDDIALOG_START + 56.String.Text
-#, fuzzy
 msgid  "Specify the sender and recipient information"
 msgstr "ပို့သူနှင့် လက်ခံရရှိသူ သတင်း အချက်အလက် သတ်မှတ်ပါ"
 
 #: source/formwizard/dbwizres.src#RID_LETTERWIZARDDIALOG_START + 57.String.Text
-#, fuzzy
 msgid  "Fill in the information you would like in the footer"
 msgstr "စာမျက်နှာအောက်တွင် သင်ကြိုက်နှစ်သက်သလို သတင်းအချက်အလက် ဖြည့်ပါ"
 
 #: source/formwizard/dbwizres.src#RID_LETTERWIZARDDIALOG_START + 58.String.Text
-#, fuzzy
 msgid  "Please specify last settings"
 msgstr "နောက်ဆုံး ရွေးနိုင်ခြင်းများ သတ်မှတ်ပေးပါ"
 
 #: source/formwizard/dbwizres.src#RID_LETTERWIZARDSALUTATION_START + 1.String.Text
-#, fuzzy
 msgid  "To Whom it May Concern"
 msgstr "သက်ဆိုင်ရာသို့"
 
 #: source/formwizard/dbwizres.src#RID_LETTERWIZARDSALUTATION_START + 2.String.Text
-#, fuzzy
 msgid  "Dear Sir or Madam"
 msgstr "ချစ်လှစွာသော ဆရာ (သို့) ဂုဏ်သရေရှိအမျိုးသမီး"
 
 #: source/formwizard/dbwizres.src#RID_LETTERWIZARDSALUTATION_START + 3.String.Text
-#, fuzzy
 msgid  "Hello"
 msgstr "ဟဲလို"
 
 #: source/formwizard/dbwizres.src#RID_LETTERWIZARDGREETING_START + 1.String.Text
-#, fuzzy
 msgid  "Sincerely"
 msgstr "စစ်မှန် ရိုးသားစွာဖြင့်"
 
 #: source/formwizard/dbwizres.src#RID_LETTERWIZARDGREETING_START + 2.String.Text
-#, fuzzy
 msgid  "Best regards"
 msgstr "သတိရစွာဖြင့်"
 
 #: source/formwizard/dbwizres.src#RID_LETTERWIZARDGREETING_START + 3.String.Text
-#, fuzzy
 msgid  "Cheers"
 msgstr "ဆုတောင်းမေတ္တာပို့ခြင်း၊ ကျေးဇူးတင်ခြင်း၊ နှုတ်ဆက်ခြင်း စကား"
 
 #: source/formwizard/dbwizres.src#RID_LETTERWIZARDROADMAP_START + 1.String.Text
-#, fuzzy
 msgid  "Page design"
 msgstr "စာမျက်နှာ ဒီဇိုင်းပုံစံ"
 
 #: source/formwizard/dbwizres.src#RID_LETTERWIZARDROADMAP_START + 2.String.Text
-#, fuzzy
 msgid  "Letterhead layout"
 msgstr "ခေါင်းစီးစာတန်းပါ အပြင်အဆင်"
 
 #: source/formwizard/dbwizres.src#RID_LETTERWIZARDROADMAP_START + 3.String.Text
-#, fuzzy
 msgid  "Printed items"
 msgstr "ပရင့်ထုတ်သည့် အချက်များ"
 
 #: source/formwizard/dbwizres.src#RID_LETTERWIZARDROADMAP_START + 4.String.Text
-#, fuzzy
 msgid  "Recipient and sender"
 msgstr "လက်ခံရရှိသူနှင့် ပို့သူ"
 
 #: source/formwizard/dbwizres.src#RID_LETTERWIZARDROADMAP_START + 5.String.Text
-#, fuzzy
 msgid  "Footer"
 msgstr "စာမျက်နှာအောက်"
 
 #: source/formwizard/dbwizres.src#RID_LETTERWIZARDROADMAP_START + 6.String.Text
-#, fuzzy
 msgid  "Name and location"
 msgstr "အမည်နှင့် နေရာ"
 
 #: source/formwizard/dbwizres.src#RID_FAXWIZARDDIALOG_START + 1.String.Text
-#, fuzzy
 msgid  "Fax Wizard"
 msgstr "ဖက်စ် ဝဇ္ဇတ်"
 
 #: source/formwizard/dbwizres.src#RID_FAXWIZARDDIALOG_START + 2.String.Text
-#, fuzzy
 msgid  "Label9"
 msgstr "ကတ်ပြား ၉"
 
 #: source/formwizard/dbwizres.src#RID_FAXWIZARDDIALOG_START + 3.String.Text
-#, fuzzy
 msgid  "~Business Fax"
 msgstr "စီးပွားရေး ဖက်စ်"
 
 #: source/formwizard/dbwizres.src#RID_FAXWIZARDDIALOG_START + 4.String.Text
-#, fuzzy
 msgid  "~Personal Fax"
 msgstr "ကိုယ်ရေး ဖက်စ်"
 
 #: source/formwizard/dbwizres.src#RID_FAXWIZARDDIALOG_START + 5.String.Text
-#, fuzzy
 msgid  "~Logo"
 msgstr "စာလုံးအမှတ်အသား"
 
 #: source/formwizard/dbwizres.src#RID_FAXWIZARDDIALOG_START + 6.String.Text
-#, fuzzy
 msgid  "S~ubject line"
 msgstr "အကြောင်းကိစ္စ လိုင်း"
 
 #: source/formwizard/dbwizres.src#RID_FAXWIZARDDIALOG_START + 7.String.Text
-#, fuzzy
 msgid  "S~alutation"
 msgstr "နှုတ်ဆက်စကား"
 
 #: source/formwizard/dbwizres.src#RID_FAXWIZARDDIALOG_START + 8.String.Text
-#, fuzzy
 msgid  "~Complimentary close"
 msgstr "အပိတ်နှုတ်ဆက် စကားလုံး"
 
 #: source/formwizard/dbwizres.src#RID_FAXWIZARDDIALOG_START + 9.String.Text
-#, fuzzy
 msgid  "~Footer"
 msgstr "စာမျက်နှာအောက်"
 
 #: source/formwizard/dbwizres.src#RID_FAXWIZARDDIALOG_START + 10.String.Text
-#, fuzzy
 msgid  "~Use user data for return address"
 msgstr "~ အပြန် လိပ်စာ အတွက် အသုံးပြုသူ ၏ အချက်အလက်ကို သုံးပါ"
 
 #: source/formwizard/dbwizres.src#RID_FAXWIZARDDIALOG_START + 11.String.Text
-#, fuzzy
 msgid  "~New return address"
 msgstr "~ အပြန်လိပ်စာအသစ်"
 
 #: source/formwizard/dbwizres.src#RID_FAXWIZARDDIALOG_START + 12.String.Text
-#, fuzzy
 msgid  "My Fax Template"
 msgstr "ကျွန်ုပ်ဖက်စ်ပုံစံပြား"
 
 #: source/formwizard/dbwizres.src#RID_FAXWIZARDDIALOG_START + 13.String.Text
-#, fuzzy
 msgid  "Create a ~fax from this template"
 msgstr "ဤပုံစံပြားမှ ဖက်စ်တစ်ခု ဖန်တီးပါ"
 
 #: source/formwizard/dbwizres.src#RID_FAXWIZARDDIALOG_START + 14.String.Text
-#, fuzzy
 msgid  "Make ~manual changes to this fax template"
 msgstr "ဤဖက်စ် ပုံစံပြားသို့ လက်စွဲစာစောင် ပြောင်းလဲမှုများ ပြုလုပ်ပါ"
 
 #: source/formwizard/dbwizres.src#RID_FAXWIZARDDIALOG_START + 15.String.Text
-#, fuzzy
 msgid  "Page design"
 msgstr "စာမျက်နှာ ဒီဇိုင်းပုံစံ"
 
 #: source/formwizard/dbwizres.src#RID_FAXWIZARDDIALOG_START + 16.String.Text
-#, fuzzy
 msgid  "Page design"
 msgstr "စာမျက်နှာ ဒီဇိုင်းပုံစံ"
 
 #: source/formwizard/dbwizres.src#RID_FAXWIZARDDIALOG_START + 17.String.Text
 msgid  "This wizard helps you to create a fax template. The template can then be used to create a fax whenever needed."
-msgstr ""
+msgstr "ဤ ဝဇ္ဇတ် သည် ဖက်စ် ပုံစံပြားတစ်ခု ဖန်တီးရန် ကူညီသည်။ မည်သည့်အချိန်တွင် လိုအပ်ပါစေ ဖက်စ်တစ်ခု ဖန်တီးရန် ပုံစံပြား အသုံးပြုနိုင်လိမ့်မည်။"
 
 #: source/formwizard/dbwizres.src#RID_FAXWIZARDDIALOG_START + 18.String.Text
-#, fuzzy
 msgid  "Return address"
 msgstr "အပြန် လိပ်စာ"
 
 #: source/formwizard/dbwizres.src#RID_FAXWIZARDDIALOG_START + 19.String.Text
-#, fuzzy
 msgid  "Name:"
 msgstr "အမည် -"
 
 #: source/formwizard/dbwizres.src#RID_FAXWIZARDDIALOG_START + 20.String.Text
-#, fuzzy
 msgid  "Street:"
 msgstr "လမ်း -"
 
 #: source/formwizard/dbwizres.src#RID_FAXWIZARDDIALOG_START + 21.String.Text
-#, fuzzy
 msgid  "ZIP code/State/City:"
 msgstr "ZIP ဇစ်သင်္ကေတ/ပြည်/မြို့ -"
 
 #: source/formwizard/dbwizres.src#RID_FAXWIZARDDIALOG_START + 22.String.Text
-#, fuzzy
 msgid  "Footer"
 msgstr "စာမျက်နှာအောက်"
 
 #: source/formwizard/dbwizres.src#RID_FAXWIZARDDIALOG_START + 23.String.Text
 msgid  "This wizard creates a fax template which enables you to create multiple faxes with the same layout and settings."
-msgstr ""
+msgstr "ဤ ဝဇ္ဇတ် သည် တူညီသော အဆင်အပြင်နှင့် ရွေးနိုင်ခြင်းများနှင့်အတူ ဖက်စ်များပေါင်းစုံ ဖန်တီးရန်  အလုပ်လုပ်နိုင်သော ဖက်စ် ပုံစံပြား တစ်ခု ဖန်တီးသည်။"
 
 #: source/formwizard/dbwizres.src#RID_FAXWIZARDDIALOG_START + 24.String.Text
 msgid  "To create another new fax out of the template, go to the location where you saved the template and double-click the file."
-msgstr ""
+msgstr "ပုံစံပြားပြင်ပရှိ နောက်ထပ် ဖက်စ်အသစ် ဖန်တီးရန်၊ သိမ်းထားသော ပုံစံပြား နေရာသို့ သွားပြီး ဖိုင်ကို နှစ်ကြိမ် ကလစ် နှိပ်ပါ။"
 
 #: source/formwizard/dbwizres.src#RID_FAXWIZARDDIALOG_START + 25.String.Text
-#, fuzzy
 msgid  "Template Name:"
 msgstr "ပုံစံပြား အမည်-"
 
 #: source/formwizard/dbwizres.src#RID_FAXWIZARDDIALOG_START + 26.String.Text
-#, fuzzy
 msgid  "Location and file name:"
 msgstr "နေရာ နှင့် ဖိုင် အမည် -"
 
 #: source/formwizard/dbwizres.src#RID_FAXWIZARDDIALOG_START + 27.String.Text
-#, fuzzy
 msgid  "What do you want to do next?"
 msgstr "နောက် ဘာလုပ်ရန် ဆန္ဒရှိပါသလဲ။"
 
 #: source/formwizard/dbwizres.src#RID_FAXWIZARDDIALOG_START + 28.String.Text
-#, fuzzy
 msgid  "Choose the type of fax and a page design"
 msgstr "ဖက်စ်ပုံစံနှင့် စာတစ်မျက်နှာ ဒီဇိုင်းပုံစံ ရွေးပေးပါ"
 
 #: source/formwizard/dbwizres.src#RID_FAXWIZARDDIALOG_START + 29.String.Text
-#, fuzzy
 msgid  "Select items to include in the fax template"
 msgstr "ဖက်စ် ပုံစံပြားတွင် ပါဝင်ရန် အချက်များ ရွေးချယ်ပါ"
 
 #: source/formwizard/dbwizres.src#RID_FAXWIZARDDIALOG_START + 30.String.Text
-#, fuzzy
 msgid  "Specify sender and recipient information"
 msgstr "ပို့သူနှင့် လက်ခံရရှိသူ သတင်း အချက်အလက် သတ်မှတ်ပါ"
 
 #: source/formwizard/dbwizres.src#RID_FAXWIZARDDIALOG_START + 31.String.Text
-#, fuzzy
 msgid  "Enter text for the footer"
 msgstr "စာမျက်နှာအောက်အတွက် စာသား ဝင်ရောက်ပါ"
 
 #: source/formwizard/dbwizres.src#RID_FAXWIZARDDIALOG_START + 32.String.Text
-#, fuzzy
 msgid  "Choose a name and save the template"
 msgstr "အမည်တစ်ခု ရွေးပြီး ပုံစံပြား သိမ်းပါ"
 
 #: source/formwizard/dbwizres.src#RID_FAXWIZARDDIALOG_START + 33.String.Text
-#, fuzzy
 msgid  "Include ~only on second and following pages"
 msgstr "ဒုတိယ နှင့် အောက်ပါ စာမျက်နှာများပေါ်တွင်သာ ပါဝင်စေပါ"
 
 #: source/formwizard/dbwizres.src#RID_FAXWIZARDDIALOG_START + 34.String.Text
-#, fuzzy
 msgid  "~Include page number"
 msgstr "စာမျက်နှာ နံပါတ် ပါဝင်စေပါ"
 
 #: source/formwizard/dbwizres.src#RID_FAXWIZARDDIALOG_START + 35.String.Text
-#, fuzzy
 msgid  "~Date"
 msgstr "ရက်စွဲ"
 
 #: source/formwizard/dbwizres.src#RID_FAXWIZARDDIALOG_START + 36.String.Text
-#, fuzzy
 msgid  "~Type of message"
 msgstr "အမှာစာ၏ ပုံစံ ရိုက်ပါ"
 
 #: source/formwizard/dbwizres.src#RID_FAXWIZARDDIALOG_START + 37.String.Text
-#, fuzzy
 msgid  "Fax Number:"
 msgstr "ဖက်စ် နံပါတ်-"
 
 #: source/formwizard/dbwizres.src#RID_FAXWIZARDDIALOG_START + 38.String.Text
-#, fuzzy
 msgid  "Use placeholders for ~recipient's address"
 msgstr "လက်ခံသူ လိပ်စာ အတွက် ချန်လှပ်နေရာများ ကို သုံးပါ"
 
 #: source/formwizard/dbwizres.src#RID_FAXWIZARDDIALOG_START + 39.String.Text
-#, fuzzy
 msgid  "Use address database for ~mail merge"
 msgstr "အီးမေးလ် ပေါင်းစပ် မှုအတွက် လိပ်စာ ဒေတာဘေ့စ် ကို သုံးပါ"
 
 #: source/formwizard/dbwizres.src#RID_FAXWIZARDDIALOG_START + 40.String.Text
-#, fuzzy
 msgid  "~New return address"
 msgstr "ပြန်လာသော ကွန်ယက်လိပ်စာအသစ်"
 
 #: source/formwizard/dbwizres.src#RID_FAXWIZARDCOMMUNICATION_START + 1.String.Text
-#, fuzzy
 msgid  "Important Information!"
 msgstr "အရေးကြီးသော သတင်း အချက်အလက်!"
 
 #: source/formwizard/dbwizres.src#RID_FAXWIZARDCOMMUNICATION_START + 2.String.Text
-#, fuzzy
 msgid  "For your information"
 msgstr "သင့် သတင်း အချက်အလက်အတွက်"
 
 #: source/formwizard/dbwizres.src#RID_FAXWIZARDCOMMUNICATION_START + 3.String.Text
-#, fuzzy
 msgid  "News!"
 msgstr "သတင်း!"
 
 #: source/formwizard/dbwizres.src#RID_FAXWIZARDSALUTATION_START + 1.String.Text
-#, fuzzy
 msgid  "To whom it may concern,"
 msgstr "သက်ဆိုင်ရာသို့"
 
 #: source/formwizard/dbwizres.src#RID_FAXWIZARDSALUTATION_START + 2.String.Text
-#, fuzzy
 msgid  "Dear Sir or Madam,"
 msgstr "ချစ်လှစွာသော ဆရာ (သို့) ဂုဏ်သရေရှိအမျိုးသမီး"
 
 #: source/formwizard/dbwizres.src#RID_FAXWIZARDSALUTATION_START + 3.String.Text
-#, fuzzy
 msgid  "Hello,"
 msgstr "ဟဲလို၊"
 
 #: source/formwizard/dbwizres.src#RID_FAXWIZARDSALUTATION_START + 4.String.Text
-#, fuzzy
 msgid  "Hi,"
 msgstr "ဟိုင်း"
 
 #: source/formwizard/dbwizres.src#RID_FAXWIZARDGREETING_START + 1.String.Text
-#, fuzzy
 msgid  "Sincerely"
 msgstr "စစ်မှန် ရိုးသားစွာဖြင့်"
 
 #: source/formwizard/dbwizres.src#RID_FAXWIZARDGREETING_START + 2.String.Text
-#, fuzzy
 msgid  "Yours faithfully"
 msgstr "သင့်ရဲ့ သစ္စာရှိသော"
 
 #: source/formwizard/dbwizres.src#RID_FAXWIZARDGREETING_START + 3.String.Text
-#, fuzzy
 msgid  "Regards"
 msgstr "သတိတရဖြင့်"
 
 #: source/formwizard/dbwizres.src#RID_FAXWIZARDGREETING_START + 4.String.Text
-#, fuzzy
 msgid  "Love"
 msgstr "အချစ်"
 
 #: source/formwizard/dbwizres.src#RID_FAXWIZARDROADMAP_START + 1.String.Text
-#, fuzzy
 msgid  "Page design"
 msgstr "စာမျက်နှာ ဒီဇိုင်းပုံစံ"
 
 #: source/formwizard/dbwizres.src#RID_FAXWIZARDROADMAP_START + 2.String.Text
-#, fuzzy
 msgid  "Items to include"
 msgstr "ပါဝင်ရန် အချက်များ"
 
 #: source/formwizard/dbwizres.src#RID_FAXWIZARDROADMAP_START + 3.String.Text
-#, fuzzy
 msgid  "Sender and Recipient"
 msgstr "ပို့သူနှင့် လက်ခံရရှိသူ"
 
 #: source/formwizard/dbwizres.src#RID_FAXWIZARDROADMAP_START + 4.String.Text
-#, fuzzy
 msgid  "Footer"
 msgstr "စာမျက်နှာအောက်"
 
 #: source/formwizard/dbwizres.src#RID_FAXWIZARDROADMAP_START + 5.String.Text
-#, fuzzy
 msgid  "Name and location"
 msgstr "အမည်နှင့် နေရာ"
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +1.String.Text
-#, fuzzy
 msgid  "Web Wizard"
 msgstr "ကွန်ယက် ဝဇ္ဇတ်"
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +2.String.Text
 msgid  "This Web Wizard is to aid you in publishing documents on the Internet.\n\nIt will convert the documents so that they can be viewed by a web browser. In addition, it will generate a Table of Contents page with links for easy access to the documents. The Web Wizard will also allow you to customize the design and layout of your web site.\n\nYou will be able to keep the documents you have published on the web up-to-date and add or remove documents at any time."
-msgstr ""
+msgstr "ဤကွန်ယက် ဝဇ္ဇတ် သည် အင်တာနက်ပေါ် ပုံနှိပ် ထုတ်ဝေသည့် မှတ်တမ်းမှတ်ရာတွင် အထောက်အကူ ပြုရန် ဖြစ်သည်။ \n\n မှတ်တမ်းမှတ်ရာများကို ကူးပြောင်းနိုင်၍ ကွန်ယက် ဘလောက်ဇာ တစ်ခုအားဖြင့် အသေးစိတ်ကြည့်နိုင်သည်။ ထို့အပြင်၊ မှတ်တမ်းမှတ်ရာများသို့ လွယ်ကူစွာ အချက်အလက်များ သွားရောက်ရယူရန်အတွက် ကွင်းဆက်များနှင့်အတူ မာတိကာများ၏ဇယားတစ်ခု ဖြစ်ပေါ်စေလိမ့်မည်။ ကွန်ယက် ဝဇ္ဇတ်သည် ဒီဇိုင်း ပုံစံ လိုအပ်ချက်နှင့် ကိုက်ညီအောင် ပြုပြင်ရေးသားရန်နှင့် သင့်ကွန်ရက်နေရာအစု၏ အဆင်အပြင်လဲပဲ ခွင့်ပြုလိမ့်မည်။ \n\n ခေတ်မီသော ကွန်ယက်ပေါ် ပုံနှိပ် ထုတ်ဝေပြီးသည့် မှတ်တမ်းမှတ်ရာများ ထိန်းသိမ်းရန်နှင့် မည်သည့်အချိန်တွင်မဆို မှတ်တမ်းမှတ်ရာများ ပေါင်းထည့်ရန် (သို့) ဖယ်ရှားရန် ဖြစ်နိုင်လိမ့်မည်။ "
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +4.String.Text
-#, fuzzy
 msgid  "~Delete"
 msgstr "ဖျက်ပါ"
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +5.String.Text
-#, fuzzy
 msgid  "Introduction"
 msgstr "နိဒါန်း"
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +6.String.Text
-#, fuzzy
 msgid  "Select the documents you want to publish"
 msgstr "ပုံနှိပ် ထုတ်ဝေလိုသည့် မှတ်တမ်းမှတ်ရာများ ရွေးချယ်ပါ"
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +8.String.Text
-#, fuzzy
 msgid  "Document information "
 msgstr "သတင်း အချက်အလက် မှတ်တမ်းမှတ်ရာ"
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +9.String.Text
-#, fuzzy
 msgid  "~Title:"
 msgstr "ခေါင်းစဉ် -"
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +10.String.Text
-#, fuzzy
 msgid  "~Summary: "
 msgstr "အကျဉ်းချုပ် -"
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +11.String.Text
-#, fuzzy
 msgid  "Au~thor:"
 msgstr "လက်ရာရှင် -"
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +12.String.Text
-#, fuzzy
 msgid  "~Export to file format:"
 msgstr "စီစဉ် ဖွဲ့စည်းမှု ပုံစံ ဖိုင်သို့ ပို့ပါ -"
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +13.String.Text
-#, fuzzy
 msgid  "Enter general information for your web site"
 msgstr "သင့် ကွန်ယက် နေရာအစုအတွက် အထွေထွေ သတင်း အချက်အလက်သို့ ဝင်ရောက်ပါ"
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +14.String.Text
-#, fuzzy
 msgid  "Title:"
 msgstr "ခေါင်းစဉ် -"
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +16.String.Text
-#, fuzzy
 msgid  "Description:"
 msgstr "ဖော်ပြချက် -"
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +18.String.Text
-#, fuzzy
 msgid  "Created:"
 msgstr "ဖန်တီးထားသည် -"
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +20.String.Text
-#, fuzzy
 msgid  "E-mail:"
 msgstr "အီးမေးလ် -"
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +21.String.Text
-#, fuzzy
 msgid  "Copyright notice:"
 msgstr "မူပိုင် ဆင့်စာ -"
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +22.String.Text
-#, fuzzy
 msgid  "Modified:"
 msgstr "အထူးပြုခြင်း -"
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +24.String.Text
-#, fuzzy
 msgid  "~Preview"
 msgstr "~အသေးစိတ်ကြည့်ပါ"
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +25.String.Text
-#, fuzzy
 msgid  "Where do you want to publish your web site?"
 msgstr "သင့် ကွန်ယက် နေရာအစု  မည်သည့် နေရာတွင် ပုံနှိပ်ထုတ်ဝေရန် ဆန္ဒရှိပါသလဲ?"
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +26.String.Text
-#, fuzzy
 msgid  "Publish the new web site:"
 msgstr "ကွန်ယက်နေရာအစုအသစ် ပုံနှိပ်ထုတ်ဝေပါ-"
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +27.String.Text
-#, fuzzy
 msgid  "To a ~local folder"
 msgstr "လက်လှမ်းမှီသော ဖိုင်တွဲ တစ်ခုသို့"
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +28.String.Text
-#, fuzzy
 msgid  "..."
 msgstr "..."
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +29.String.Text
 msgid  "To a ~web server via FTP"
-msgstr ""
+msgstr "FTP မှတစ်ဆင့် ကွန်ယက် ချိတ်ထားသော ကွန်ပျူတာများသို့ အချက်အလက် ပေးပို့ခြင်းသို့"
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +31.String.Text
-#, fuzzy
 msgid  "~Configure..."
 msgstr "သီးသန့် စီမံထားပါ..."
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +32.String.Text
-#, fuzzy
 msgid  "To a ZIP ~archive"
 msgstr "ဖိသိပ် သိမ်းဆည်းသော ZIP တစ်ခုသို့"
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +33.String.Text
-#, fuzzy
 msgid  "..."
 msgstr "..."
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +34.String.Text
-#, fuzzy
 msgid  "~Save settings (recommended)"
 msgstr "ရွေးနိုင်ခြင်းများ သိမ်းပါ (အကြံပြုချက်)"
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +35.String.Text
-#, fuzzy
 msgid  "Save ~as:"
 msgstr "အဖြစ် သိမ်းပါ -"
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +36.String.Text
-#, fuzzy
 msgid  "~Choose settings for the Web Wizard"
 msgstr "ကွန်ယက် ဝဇ္ဇတ် အတွက် ရွေးနိုင်ခြင်းများ ရွေးပါ"
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +37.String.Text
-#, fuzzy
 msgid  "Web site content "
 msgstr "ကွန်ယက်နေရာအစု မာတိကာ"
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +38.String.Text
-#, fuzzy
 msgid  "~Add..."
 msgstr "ပေါင်းထည့်ပါ..."
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +39.String.Text
-#, fuzzy
 msgid  "Remo~ve"
 msgstr "ဖယ်ရှားပါ"
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +40.String.Text
-#, fuzzy
 msgid  "Choose a layout for the table of contents of your web site"
 msgstr "သင့် ကွန်ယက် နေရာအစု၏ မာတိကာများ၏ ဇယားအတွက် အဆင်အပြင် တစ်ခု ရွေးပါ"
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +41.String.Text
-#, fuzzy
 msgid  "Select a style for the table of contents page"
 msgstr "စာမျက်နှာ မာတိကာများ၏ ဇယားအတွက် စတိုင်လ် တစ်ခု ရွေးချယ်ပါ"
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +42.String.Text
-#, fuzzy
 msgid  "~Style:"
 msgstr "စတိုင်လ်-"
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +48.String.Text
-#, fuzzy
 msgid  "~Layouts: "
 msgstr "အဆင်အပြင်များ-"
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +50.String.Text
-#, fuzzy
 msgid  "~Description"
 msgstr "ဖော်ပြချက်"
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +51.String.Text
-#, fuzzy
 msgid  "~Author"
 msgstr "လက်ရာရှင်"
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +52.String.Text
-#, fuzzy
 msgid  "Cr~eation date"
 msgstr "ရက်စွဲ ဖန်တီးခြင်း"
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +53.String.Text
-#, fuzzy
 msgid  "~Last change date"
 msgstr "နောက်ဆုံး ပြောင်းသော ရက်စွဲ"
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +54.String.Text
-#, fuzzy
 msgid  "~File name"
 msgstr "ဖိုင် အမည်"
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +55.String.Text
-#, fuzzy
 msgid  "File forma~t"
 msgstr "စီစဉ် ဖွဲ့စည်းမှု ပုံစံ ဖိုင်"
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +56.String.Text
-#, fuzzy
 msgid  "File format ~icon"
 msgstr "အိုင်ကွန် စီစဉ် ဖွဲ့စည်းမှု ပုံစံ ဖိုင်"
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +57.String.Text
-#, fuzzy
 msgid  "Number ~of pages"
 msgstr "စာမျက်နှာများ၏ နံပါတ်"
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +58.String.Text
-#, fuzzy
 msgid  "~Size in KB"
 msgstr "KB ရှိ အရွယ်"
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +59.String.Text
-#, fuzzy
 msgid  "Click 'Preview' to see a preview in your browser:"
 msgstr "သင့်ဘလောက်ဇာတွင် အစမ်း တစ်ခု ကြည့်ရန် 'Preview' ကို ကလစ် နှိပ်ပါ -"
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +60.String.Text
-#, fuzzy
 msgid  "Customize the selected layout"
 msgstr "ရွေးချယ်ထားသည့် အဆင်အပြင် လိုအပ်ချက်နဲ့ ကိုက်ညီအောင် ပြုပြင် ရေးသားပါ"
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +61.String.Text
 msgid  "Include the following information for each document in the table of contents:"
-msgstr ""
+msgstr "မာတိကာများ၏ ဇယားတွင် မှတ်တမ်းမှတ်ရာ တစ်ခုစီအတွက် အောက်ပါ သတင်း အချက်အလက် ပါဝင်စေပါ -"
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +62.String.Text
 msgid  "Optimize the layout for screen resolution:"
-msgstr ""
+msgstr "ဖန်သား မျက်နှာပြင် ပုံရိပ် ကွဲပြား ပြတ်သားမှုအတွက် အဆင်အပြင် သင့်မြတ်အောင် ဆောင်ရွက်ပါ -"
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +64.String.Text
-#, fuzzy
 msgid  "~640x480"
 msgstr "၆၄၀ x ၄၈၀"
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +65.String.Text
-#, fuzzy
 msgid  "~800x600"
 msgstr "၈၀၀ x ၆၀၀"
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +66.String.Text
-#, fuzzy
 msgid  "~1024x768"
 msgstr "၁၀၂၄ x ၇၆၈"
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +70.String.Text
-#, fuzzy
 msgid  "Generating Your Web Site"
 msgstr "ဖြစ်ပေါ်စေသော သင့်ကွန်ယက်နေရာအစု"
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +71.String.Text
-#, fuzzy
 msgid  "%START - %END/%TOTAL"
 msgstr "%START - %END/%TOTAL"
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +72.String.Text
-#, fuzzy
 msgid  "myWebsite"
 msgstr "ကျွန်ုပ်၏ဝက်ဆိုဒ်"
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +73.String.Text
-#, fuzzy
 msgid  "FTP target '%FILENAME' is a file."
 msgstr "FTP ပစ်မှတ် '%FILENAME' သည် ဖိုင်တစ်ခု ဖြစ်သည်။"
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +74.String.Text
-#, fuzzy
 msgid  "The local target '%FILENAME' is a file."
 msgstr "လက်လှမ်းမှီသော ပစ်မှတ် '%FILENAME' သည် ဖိုင်တစ်ခု ဖြစ်သည်။"
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +75.String.Text
 msgid  "The ZIP target '%FILENAME' already exists. Do you want to overwrite the existing target? "
-msgstr ""
+msgstr "ZIP ပစ်မှတ် '%FILENAME' အဆင်သင့် တည်ရှိသည်။ တည်ရှိသော ပစ်မှတ် ဖိုင်ဟောင်းတွင် အချက်အလက်သစ်များ ထပ်မံ ဖြည့်စွပ် သိမ်းဆည်းရန် ဆန္ဒရှိပါသလား? "
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +76.String.Text
 msgid  "The FTP target directory '%FILENAME' is not empty. Some files might be overwritten. Do you want to continue?"
-msgstr ""
+msgstr "FTP ပစ်မှတ် အညွှန်း '%FILENAME' သည် ဗလာ မဟုတ်ပါ။ အချို့ဖိုင်များသည် ဖိုင်ဟောင်းတွင် အချက်အလက်သစ်များ ဖြည့်စွပ် သိမ်းဆည်းရလိမ့်မည်။ ဆက်လုပ်ရန် ဆန္ဒရှိပါသလား?"
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +77.String.Text
 msgid  "The local target directory '%FILENAME' is not empty. Some files might be overwritten. Do you want to continue?"
-msgstr ""
+msgstr "လက်လှမ်းမှီသော ပစ်မှတ် အညွှန်း '%FILENAME' သည် ဗလာ မဟုတ်ပါ။ အချို့ဖိုင်များသည် ဖိုင်ဟောင်းတွင် အချက်အလက်သစ်များ ဖြည့်စွပ် သိမ်းဆည်းရလိမ့်မည်။ ဆက်လုပ်ရန် ဆန္ဒရှိပါသလား?"
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +78.String.Text
 msgid  "Settings already exist under the given name. Do you want to overwrite the existing settings? "
-msgstr ""
+msgstr "ပေးထားသော အမည်အောက်တွင် ရွေးနိုင်ခြင်းများ အဆင်သင့် တည်ရှိသည်။ တည်ရှိနေသော ရွေးနိုင်ခြင်းများ ဖိုင်ဟောင်းတွင် အချက်အလက်သစ်များ ဖြည့်စွပ် သိမ်းဆည်းရန် ဆန္ဒရှိပါသလား?"
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +79.String.Text
-#, fuzzy
 msgid  "Exporting documents..."
 msgstr "ပို့နေသည့် မှတ်တမ်းမှတ်ရာများ ..."
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +80.String.Text
-#, fuzzy
 msgid  "Preparing export..."
 msgstr "ပြင်ဆင်နေသည့် ပို့ကုန်..."
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +81.String.Text
-#, fuzzy
 msgid  "Copying layout files..."
 msgstr "မိတ္တူကူးယူနေသော အဆင်အပြင် ဖိုင်များ..."
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +82.String.Text
 msgid  "Preparing table of contents generation..."
-msgstr ""
+msgstr "ပစ္စည်းတစ်ခု၏ တိုးတက်လာမှု အဆင့်တစ်ဆင့် မာတိကာများ၏ ဇယား ပြင်ဆင်နေသည်..."
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +83.String.Text
-#, fuzzy
 msgid  "Generating table of contents..."
 msgstr "မာတိကာများ၏ ဇယား ဖြစ်ပေါ်နေသည်..."
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +84.String.Text
-#, fuzzy
 msgid  "Initializing..."
 msgstr "အစပျိုး ပြင်ဆင်နေသည်..."
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +86.String.Text
-#, fuzzy
 msgid  "Preparing to publish..."
 msgstr "ပုံနှိပ် ထုတ်ဝေရန် ပြင်ဆင်နေသည်..."
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +87.String.Text
-#, fuzzy
 msgid  "Publishing to local directory..."
 msgstr "လက်လှမ်းမှီသော အညွှန်းသို့ ပုံနှိပ် ထုတ်ဝေနေသည်..."
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +88.String.Text
-#, fuzzy
 msgid  "Publishing to FTP destination..."
 msgstr "FTP သွားရမည့် နေရာသို့ ပုံနှိပ် ထုတ်ဝေနေသည်..."
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +89.String.Text
-#, fuzzy
 msgid  "Publishing to a ZIP archive..."
 msgstr "ဖိသိပ် သိမ်းဆည်းသည့် ZIP တစ်ခုသို့ ပုံနှိပ် ထုတ်ဝေနေသည် ..."
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START + 90.String.Text
-#, fuzzy
 msgid  "Finishing..."
 msgstr "ပြီးစီးနေပြီ..."
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START + 94.String.Text
-#, fuzzy
 msgid  "Graphic files"
 msgstr "ပန်းချီဒီဇိုင်း ဖိုင်များ"
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START + 95.String.Text
-#, fuzzy
 msgid  "All files"
 msgstr "ဖိုင်များအားလုံး"
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START + 96.String.Text
-#, fuzzy
 msgid  "~ZIP archive files"
 msgstr "~ZIP ဖိသိပ် သိမ်းဆည်းသည့် ဖိုင်များ"
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START + 98.String.Text
-#, fuzzy
 msgid  "Background images"
 msgstr "နောက်ခံ ပေါ်လာသော ဂရပ်ဖစ်ပုံများ"
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START + 99.String.Text
-#, fuzzy
 msgid  "Choose a background image: "
 msgstr "နောက်ခံ ပေါ်လာသော ဂရပ်ဖစ်ပုံတစ်ခု ရွေးပါ -"
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START + 100.String.Text
-#, fuzzy
 msgid  "Icon sets"
 msgstr "အိုင်ကွန် အစုံများ"
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START + 101.String.Text
-#, fuzzy
 msgid  "Choose an icon set:"
 msgstr "အိုင်ကွန် တစ်စုံ ရွေးပါ -"
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +102.String.Text
-#, fuzzy
 msgid  "Other..."
 msgstr "အခြား..."
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +103.String.Text
-#, fuzzy
 msgid  "None"
 msgstr "ဘာမျှ မရှိပါ"
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +104.String.Text
-#, fuzzy
 msgid  "Your web site was created successfully into: %FILENAME"
 msgstr "အတွင်း၌ သင့် ကွန်ယက်နေရာအစုသည် အောင်မြင်စွာ ဖန်တီးထားသည် - %FILENAME "
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +105.String.Text
 msgid  "One or more errors occurred when generating the web site."
-msgstr ""
+msgstr "ကွန်ရက် နေရာအစု ဖြစ်ပေါ်သောအချိန် တစ်ခု (သို့) ပိုများသော အမှားများ ဖြစ်ပွားသည်။"
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +106.String.Text
-#, fuzzy
 msgid  "An error occurred while generating the table of contents page(s). "
 msgstr "မာတိကာများ စာမျက်နှာ(များ)၏ ဇယား ဖြစ်ပေါ်စဉ် အမှားတစ်ခု ဖြစ်ပွားသည်။  "
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +107.String.Text
-#, fuzzy
 msgid  "An error occurred while copying the layout files. "
 msgstr "အဆင်အပြင် ဖိုင်များ မိတ္တူကူးယူစဉ် အမှားတစ်ခု ဖြစ်ပွားသည်။"
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +108.String.Text
 msgid  "An error occurred while gathering document information for '%FILENAME'. "
-msgstr ""
+msgstr "%FILENAME' အတွက် သတင်း အချက်အလက် မှတ်တမ်းမှတ်ရာ စုဆောင်းစဉ် အမှားတစ်ခု ဖြစ်ပွားသည်။ "
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +109.String.Text
-#, fuzzy
 msgid  "An error occurred while exporting the document '%FILENAME'."
 msgstr "%FILENAME' မှတ်တမ်းမှတ်ရာ ပို့စဉ် အမှားတစ်ခု ဖြစ်ပွားသည်။"
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +110.String.Text
 msgid  "An error occurred while creating a directory for exporting '%FILENAME'."
-msgstr ""
+msgstr "ပို့သော '%FILENAME' အတွက် အညွှန်းတစ်ခု ဖန်တီးစဉ် အမှားတစ်ခု ဖြစ်ပွားသည်။"
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +111.String.Text
-#, fuzzy
 msgid  "A security error occurred while exporting the document '%FILENAME'."
 msgstr "%FILENAME' မှတ်တမ်းမှတ်ရာ ပို့စဉ် လုံခြုံရေး အမှားတစ်ခု ဖြစ်ပွားသည်။"
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +112.String.Text
 msgid  "An input/output error occurred while exporting the document '%FILENAME'."
-msgstr ""
+msgstr "%FILENAME' မှတ်တမ်းမှတ်ရာပို့စဉ် အသွင်း/အထုတ် အမှားတစ်ခု ဖြစ်ပွားသည်။"
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +113.String.Text
-#, fuzzy
 msgid  "An error occurred while copying media files to the temporary directory."
 msgstr "ယာယီအညွှန်းသို့ ကြားခံဖိုင်များ မိတ္တူကူးယူစဉ် အမှားတစ်ခု ဖြစ်ပွားသည်။"
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +114.String.Text
 msgid  "The web site could not be copied to the following destination: %URL"
-msgstr ""
+msgstr "အောက်ပါ သွားရမည့် နေရာသို့ ကွန်ယက်နေရာအစု မိတ္တူကူးယူနိုင်လိမ့်မည် မဟုတ်ပါ - %URL"
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +115.String.Text
-#, fuzzy
 msgid  "An unexpected error occurred: %ERROR"
 msgstr "မလိုလားသော အမှားတစ်ခု ဖြစ်ပွားသည် - %ERROR"
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +116.String.Text
-#, fuzzy
 msgid  "An unexpected error occurred while validating the file: '%FILENAME'"
 msgstr "ဖိုင်အထောက်အထားပြစဉ် မလိုလားသော အမှားတစ်ခု ဖြစ်ပွားသည် - '%FILENAME'"
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +117.String.Text
-#, fuzzy
 msgid  "%FILENAME' is a folder."
 msgstr "%FILENAME' သည် ဖိုင်တွဲတစ်ခု ဖြစ်သည်။"
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +118.String.Text
-#, fuzzy
 msgid  "Loading Web Wizard Settings..."
 msgstr "ဆွဲတင်နေသော ကွန်ယက် ဝဇ္ဇတ် ရွေးနိုင်ခြင်းများ..."
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +119.String.Text
-#, fuzzy
 msgid  "An unexpected error occurred."
 msgstr "မလိုလားသော အမှားတစ်ခု ဖြစ်ပွားသည်။"
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +120.String.Text
-#, fuzzy
 msgid  "Validating documents..."
 msgstr "အထောက်အထားပြနေသည့် မှတ်တမ်းမှတ်ရာများ..."
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +121.String.Text
-#, fuzzy
 msgid  "My Archive"
 msgstr "ကျွန်ုပ် ဖိသိပ် သိမ်းဆည်းသည်"
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +122.String.Text
-#, fuzzy
 msgid  "Introduction "
 msgstr "နိဒါန်း"
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +123.String.Text
-#, fuzzy
 msgid  "Documents "
 msgstr "မှတ်တမ်းမှတ်ရာများ"
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +124.String.Text
-#, fuzzy
 msgid  "Main layout"
 msgstr "အဓိက အဆင်အပြင်"
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +125.String.Text
-#, fuzzy
 msgid  "Layout details"
 msgstr "အဆင်အပြင် အနုစိတ်များ"
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +126.String.Text
-#, fuzzy
 msgid  "Style"
 msgstr "စတိုင်လ်"
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +127.String.Text
-#, fuzzy
 msgid  "Web site information"
 msgstr "ကွန်ယက်နေရာအစု သတင်း အချက်အလက်"
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +128.String.Text
-#, fuzzy
 msgid  "Preview"
 msgstr "အသေးစိတ် ကြည့်ပါ"
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +130.String.Text
 msgid  "The selected settings will be deleted.\n\nDo you really want to delete these settings? "
-msgstr ""
+msgstr "ရွေးချယ်ထားသည့် ရွေးနိုင်ခြင်းများ ဖျက်ရလိမ့်မည်။ \n\nအမှန်တကယ် ဖျက်ချင်ပါသလား?"
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +131.String.Text
-#, fuzzy
 msgid  "%NUMBER pages"
 msgstr "%NUMBER စာမျက်နှာများ"
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +132.String.Text
-#, fuzzy
 msgid  "%NUMBER slides"
 msgstr "%NUMBER ရုပ်ပုံ ဆလိုက်များ"
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +133.String.Text
-#, fuzzy
 msgid  "Created: %DATE"
 msgstr "ဖန်တီးထားသည် - %DATE"
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +134.String.Text
-#, fuzzy
 msgid  "Last modified: %DATE"
 msgstr "နောက်ဆုံး အထူးပြုခြင်း - %DATE"
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +135.String.Text
-#, fuzzy
 msgid  "Web Wizard Settings"
 msgstr "ကွန်ယက်နေရာ ဝဇ္ဇတ် ရွေးနိုင်ခြင်းများ"
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +136.String.Text
-#, fuzzy
 msgid  "Background image:"
 msgstr "နောက်ခံ ပေါ်လာသော ဂရပ်ဖစ်ပုံ -"
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +137.String.Text
-#, fuzzy
 msgid  "Icon set:"
 msgstr "အိုင်ကွန် အစုံ -"
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +138.String.Text
 msgid  "The icon set is used for presentations in HTML format."
-msgstr ""
+msgstr "အိုင်ကွန် အစုံသည် HTML စီစဉ် ဖွဲ့စည်းမှု ပုံစံတွင် တင်ပြချက်များအတွက် အသုံးပြုထားသည်။"
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +139.String.Text
-#, fuzzy
 msgid  "HTML Metadata"
 msgstr "HTML အသေးစိတ်လေ့လာဖော်ပြပေးသည့်စနစ်အချက်အလက်များ"
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +140.String.Text
-#, fuzzy
 msgid  "Choose..."
 msgstr "ရွေးပါ..."
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +141.String.Text
-#, fuzzy
 msgid  "Choose..."
 msgstr "ရွေးပါ..."
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +142.String.Text
-#, fuzzy
 msgid  "<default>"
 msgstr "<နဂိုတည်ရှိသော နောက်ခံ>"
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +143.String.Text
-#, fuzzy
 msgid  "Publishing via FTP Proxy is not supported."
 msgstr "FTP ကိုယ်စားလှယ်မှတစ်ဆင့် ပုံနှိပ် ထုတ်ဝေမှု မထောက်ပံ့နိုင်ပါ။"
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +144.String.Text
-#, fuzzy
 msgid  "<no background image>"
 msgstr "<နောက်ခံ ပေါ်လာသော ဂရပ်ဖစ်ပုံ မရှိပါ>"
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +145.String.Text
-#, fuzzy
 msgid  "<no icon set>"
 msgstr "<အိုင်ကွန် အစုံ မရှိပါ>"
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +146.String.Text
-#, fuzzy
 msgid  "The FTP directory '%FILENAME' could not be created."
 msgstr "The FTP အညွှန်း '%FILENAME' ဖန်တီးနိုင်လိမ့်မည် မဟုတ်ပါ။"
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +147.String.Text
 msgid  "The FTP directory '%FILENAME' does not exist. \nCreate the directory now?"
-msgstr ""
+msgstr "The FTP အညွှန်း '%FILENAME' မတည်ရှိပါ။ \n ယခု အညွှန်း ဖန်တီးပါ?"
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +148.String.Text
 msgid  "The Zip file '%FILENAME' cannot be created: a directory of the same name already exists."
-msgstr ""
+msgstr "Zip ဖိုင် '%FILENAME' ဖန်တီးနိုင်လိမ့်မည် မဟုတ်ပါ - တူညီသော အမည် အညွှန်းတစ်ခု အဆင်သင့် တည်ရှိနေသည်။"
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +149.String.Text
 msgid  "The local directory '%FILENAME' cannot be created. \nPlease check your write-access."
-msgstr ""
+msgstr "လက်လှမ်းမှီသော အညွှန်း '%FILENAME' ဖန်တီးနိုင်လိမ့်မည် မဟုတ်ပါ။ \nသင့် ရေးသားသော အချက်အလက်များ သွားရောက်ရယူခြင်းကို စစ်ဆေးပေးပါ။"
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +150.String.Text
 msgid  "The local directory '%FILENAME' does not exist. \nCreate the directory now?"
-msgstr ""
+msgstr "လက်လှမ်းမှီသော အညွှန်း '%FILENAME' မတည်ရှိပါ။ \nယခု အညွှန်း ဖန်တီးပါ?"
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +151.String.Text
-#, fuzzy
 msgid  "Size: %NUMBERKB"
 msgstr "အရွယ် - %NUMBERKB"
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +152.String.Text
-#, fuzzy
 msgid  "File not found. Would you like to specify a new file location?"
 msgstr "ဖိုင် ရှာမတွေ့ပါ။ ဖိုင်နေရာသစ်တစ်ခု သတ်မှတ်ရန် ကြိုက်ပါသလား။"
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_FTP +0.String.Text
-#, fuzzy
 msgid  "FTP Connection"
 msgstr "FTP အချိတ်အဆက်"
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_FTP +1.String.Text
-#, fuzzy
 msgid  "~User name:"
 msgstr "အသုံးပြုသူအမည်-"
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_FTP +2.String.Text
-#, fuzzy
 msgid  "~Password:"
 msgstr "စကားဝှက်-"
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_FTP +3.String.Text
-#, fuzzy
 msgid  "Connect"
 msgstr "အချိတ်အဆက်"
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_FTP +4.String.Text
-#, fuzzy
 msgid  "1. Enter FTP connection information."
 msgstr "၁။ FTP သတင်း အချက်အလက် အချိတ်အဆက်သို့ ဝင်ပါ။"
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_FTP +5.String.Text
-#, fuzzy
 msgid  "~Server name or IP address:"
 msgstr "⁠~ ဆာဗာ အမည် (သို့) IP လိပ်စာ -"
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_FTP +6.String.Text
-#, fuzzy
 msgid  "2. Connect to the server."
 msgstr "၂။ ဆာဗာသို့ချိတ်ဆက်ပါ။"
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_FTP +7.String.Text
-#, fuzzy
 msgid  "3. ~Choose a remote directory (optional)."
 msgstr "၃။ ကွန်ပျူတာနှင့် ဝေးသောနေရာရှိ အညွှန်း တစ်ခု (စိတ်ကြိုက်) ရွေးပါ"
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_FTP +8.String.Text
-#, fuzzy
 msgid  "..."
 msgstr "..."
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_FTP +9.String.Text
-#, fuzzy
 msgid  "Connection status is unknown"
 msgstr "လက်ရှိအခြေအနေ အချိတ်အဆက် မသိရပါ"
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_FTP +10.String.Text
-#, fuzzy
 msgid  "Connection was established successfully"
 msgstr "အချိတ်အဆက် အောင်မြင်စွာ တည်ဆောက်ပြီး ဖြစ်သည်"
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_FTP +11.String.Text
-#, fuzzy
 msgid  "Username or password is wrong"
 msgstr "အသုံးပြုသူအမည် (သို့) စကားဝှက် မှားနေသည်"
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_FTP +12.String.Text
-#, fuzzy
 msgid  "Could not resolve server name"
 msgstr "ဆာဗာအမည် ဖြေရှင်းနိုင်လိမ့်မည် မဟုတ်ပါ"
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_FTP +13.String.Text
-#, fuzzy
 msgid  "You do not have sufficient user rights"
 msgstr "လုံလောက်သော အသုံးပြုသူ အခွင့်အရေးများ မရှိပါ"
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_FTP +14.String.Text
-#, fuzzy
 msgid  "Cannot connect to server"
 msgstr "ဆာဗာသို့ ချိတ်ဆက်နိုင်လိမ့်မည် မဟုတ်ပါ"
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_FTP +15.String.Text
-#, fuzzy
 msgid  "Unexpected error"
 msgstr "မလိုလားသော အမှား"
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_FTP +16.String.Text
-#, fuzzy
 msgid  "FTP publishing directory"
 msgstr "FTP ပုံနှိပ် ထုတ်ဝေသော အညွှန်း"
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_FTP +17.String.Text
-#, fuzzy
 msgid  "This is not an FTP folder"
 msgstr "FTP ဖိုင်တွဲတစ်ခု မဟုတ်ပါ"
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_FTP +18.String.Text
-#, fuzzy
 msgid  "Connecting..."
 msgstr "ချိတ်ဆက်နေသည်..."
 
 #: source/formwizard/dbwizres.src#RID_AGENDAWIZARDDIALOG_START +1.String.Text
-#, fuzzy
 msgid  "Agenda Wizard"
 msgstr "ဝဇ္ဇတ် လုပ်ငန်း အစီအစဉ်"
 
 #: source/formwizard/dbwizres.src#RID_AGENDAWIZARDDIALOG_START +2.String.Text
 msgid  "Make ~manual changes to this agenda template"
-msgstr ""
+msgstr "ဤလုပ်ငန်းအစီအစဉ် ပုံစံပြားသို့ လက်စွဲစာစောင် ပြောင်းလဲမှုများ ပြုလုပ်ပါ။"
 
 #: source/formwizard/dbwizres.src#RID_AGENDAWIZARDDIALOG_START +3.String.Text
-#, fuzzy
 msgid  "Template name:"
 msgstr "ပုံစံပြား အမည် -"
 
@@ -2995,8 +2735,9 @@ msgid  "Please choose the page design for the agenda"
 msgstr "လုပ်ငန်း အစီအစဉ်အတွက် စာမျက်နှာ ဒီဇိုင်း ပုံစံ ရွေးပေးပါ"
 
 #: source/formwizard/dbwizres.src#RID_AGENDAWIZARDDIALOG_START +7.String.Text
+#, fuzzy
 msgid  "Please select the headings you wish to include in your agenda template"
-msgstr ""
+msgstr "သင့်လုပ်ငန်းအစီအစဉ် ပုံစံပြားတွင် ပါဝင်ရန် ဆန္ဒရှိသည့် ခေါင်းစဉ်များ ရွေးချယ်ပေးပါ"
 
 #: source/formwizard/dbwizres.src#RID_AGENDAWIZARDDIALOG_START +8.String.Text
 #, fuzzy
@@ -3009,8 +2750,9 @@ msgid  "Please specify items for the agenda"
 msgstr "လုပ်ငန်း အစီအစဉ်အတွက် အချက်များ သတ်မှတ်ပေးပါ"
 
 #: source/formwizard/dbwizres.src#RID_AGENDAWIZARDDIALOG_START +10.String.Text
+#, fuzzy
 msgid  "Please select the names you wish to include in your agenda template"
-msgstr ""
+msgstr "သင့်လုပ်ငန်းအစီအစဉ် ပုံစံပြားတွင် ပါဝင်ရန် ဆန္ဒရှိသည့် အမည်များ ရွေးချယ်ပေးပါ"
 
 #: source/formwizard/dbwizres.src#RID_AGENDAWIZARDDIALOG_START +11.String.Text
 #, fuzzy
@@ -3023,8 +2765,9 @@ msgid  "Include form for recording minutes"
 msgstr "အသံသွင်းထားသော မိနစ်အတွက် ပုံစံ ပါဝင်စေပါ"
 
 #: source/formwizard/dbwizres.src#RID_AGENDAWIZARDDIALOG_START +13.String.Text
+#, fuzzy
 msgid  "This wizard helps you to create an agenda template. The template can then be used to create an agenda whenever needed."
-msgstr ""
+msgstr "ဤ ဝဇ္ဇတ် သည် ပုံစံပြား အစီအစဉ်တစ်ခု ဖန်တီးရန် ကူညီသည်။ ပုံစံပြားသည် ၎င်းဖန်တီးရန် လိုအပ်ချိန်တိုင်းတွင် အသုံးပြုနိုင်လိမ့်မည်။"
 
 #: source/formwizard/dbwizres.src#RID_AGENDAWIZARDDIALOG_START +14.String.Text
 #, fuzzy
@@ -3042,8 +2785,9 @@ msgid  "Location:"
 msgstr "နေရာ -"
 
 #: source/formwizard/dbwizres.src#RID_AGENDAWIZARDDIALOG_START +17.String.Text
+#, fuzzy
 msgid  "Placeholders will be used in empty fields. You can replace placeholders with text later."
-msgstr ""
+msgstr "ချန်လှပ်ထားသောနေရာများသည် ဗလာ နေရာကွက်များတွင် အသုံးပြုလိမ့်မည်။ မကြာမီ စာသားနှင့်အတူ ချန်လှပ်ထားသောနေရာများ အစားထိုင်းနိုင်လိမ့်မည်။"
 
 #: source/formwizard/dbwizres.src#RID_AGENDAWIZARDDIALOG_START +18.String.Text
 #, fuzzy
@@ -3056,8 +2800,9 @@ msgid  "Create an ~agenda from this template"
 msgstr "ဤပုံစံပြားမှ လုပ်ငန်း အစီအစဉ် တစ်ခု ဖန်တီးပါ"
 
 #: source/formwizard/dbwizres.src#RID_AGENDAWIZARDDIALOG_START +20.String.Text
+#, fuzzy
 msgid  "To create a new agenda out of the template, go to the location where you saved the template and double-click the file."
-msgstr ""
+msgstr "ပုံစံပြားပြင်ပရှိ လုပ်ငန်း အစီအစဉ်အသစ် ဖန်တီးရန်၊ သိမ်းထားသော ပုံစံပြား နေရာသို့ သွားပြီး ဖိုင်ကို နှစ်ကြိမ် ကလစ် နှိပ်ပါ။"
 
 #: source/formwizard/dbwizres.src#RID_AGENDAWIZARDDIALOG_START +21.String.Text
 #, fuzzy
@@ -3110,8 +2855,9 @@ msgid  "Facility personnel"
 msgstr "ဝန်ထမ်းရေးရာဌာန"
 
 #: source/formwizard/dbwizres.src#RID_AGENDAWIZARDDIALOG_START +31.String.Text
+#, fuzzy
 msgid  "The agenda template will include placeholders for the names of the selected people. When creating an agenda from the template, you can replace these placeholder with the appropriate names."
-msgstr ""
+msgstr "လုပ်ငန်း အစီအစဉ် ပုံစံပြားသည် ရွေးချယ်ထားသည့် လူများ၏ အမည်များအတွက် ချန်လှပ်ထားသော နေရာများ ပါဝင်လိမ့်မည်။ ပုံစံပြားမှ လုပ်ငန်း အစီအစဉ် တစ်ခု ဖန်တီးသောအခါ၊ သင့်တော်သော အမည်များနှင့်အတူ ဤချန်လှပ်ထားသော နေရာ အစားထိုးနိုင်လိမ့်မည်။"
 
 #: source/formwizard/dbwizres.src#RID_AGENDAWIZARDDIALOG_START +32.String.Text
 #, fuzzy
@@ -3134,8 +2880,9 @@ msgid  "Notes"
 msgstr "မှတ်ချက်များ"
 
 #: source/formwizard/dbwizres.src#RID_AGENDAWIZARDDIALOG_START +36.String.Text
+#, fuzzy
 msgid  "The agenda template will include placeholders for the selected items."
-msgstr ""
+msgstr "လုပ်ငန်း အစီအစဉ် ပုံစံပြားသည် ရွေးချယ်ထားသည့် အချက်များအတွက် ချန်လှပ်ထားသော နေရာများ ပါဝင်လိမ့်မည်။ "
 
 #: source/formwizard/dbwizres.src#RID_AGENDAWIZARDDIALOG_START +38.String.Text
 #, fuzzy
@@ -3143,8 +2890,9 @@ msgid  "Date:"
 msgstr "ရက်စွဲ-"
 
 #: source/formwizard/dbwizres.src#RID_AGENDAWIZARDDIALOG_START +39.String.Text
+#, fuzzy
 msgid  "This wizard creates an agenda template which enables you to create multiple agendas with the same layout and settings."
-msgstr ""
+msgstr "ဤ ဝဇ္ဇတ် သည် တူညီသော အဆင်အပြင်နှင့် ရွေးနိုင်ခြင်းများနှင့်အတူ လုပ်ငန်း အစီအစဉ် ပေါင်းစုံ ဖန်တီးရန် အလုပ်လုပ်နိုင်သည့် လုပ်ငန်း အစီအစဉ်တစ်ခုကို ဖန်တီးသည်။"
 
 #: source/formwizard/dbwizres.src#RID_AGENDAWIZARDDIALOG_START +40.String.Text
 #, fuzzy
@@ -3302,889 +3050,729 @@ msgid  "Move down"
 msgstr "အောက်သို့ ရွှေ့ပြောင်းပါ"
 
 #: source/importwizard/importwi.src#sHelpButton.String.Text
-#, fuzzy
 msgid  "~Help"
 msgstr "ကူညီပါ"
 
 #: source/importwizard/importwi.src#sCancelButton.String.Text
-#, fuzzy
 msgid  "~Cancel"
 msgstr "ရုတ်သိမ်းပါ"
 
 #: source/importwizard/importwi.src#sBackButton.String.Text
-#, fuzzy
 msgid  "<< ~Back"
 msgstr "<<⁠~အနောက်"
 
 #: source/importwizard/importwi.src#sNextButton.String.Text
-#, fuzzy
 msgid  "Ne~xt >>"
 msgstr "နောက် >>"
 
 #: source/importwizard/importwi.src#sBeginButton.String.Text
-#, fuzzy
 msgid  "~Convert"
 msgstr "ကူးပြောင်းပါ"
 
 #: source/importwizard/importwi.src#sCloseButton.String.Text
-#, fuzzy
 msgid  "~Close"
 msgstr "ပိတ်ပါ"
 
 #: source/importwizard/importwi.src#sWelcometextLabel1.String.Text
 msgid  "This wizard converts documents in %PRODUCTNAME format and Microsoft Office documents to the new OpenDocument format."
-msgstr ""
+msgstr "OpenDocument စီစဉ် ဖွဲ့စည်းမှု ပုံစံ အသစ်သို့ %PRODUCTNAME စီစဉ် ဖွဲ့စည်းမှု ပုံစံဟောင်းနှင့် Microsoft Office မှတ်တမ်းမှတ်ရာများတွင် ဤ ဝဇ္ဇတ် ကူးပြောင်းသည်။"
 
 #: source/importwizard/importwi.src#sWelcometextLabel2.String.Text
 msgid  "Please note that when converting Microsoft documents any attached VBA macros lose their functionality."
-msgstr ""
+msgstr "Microsoft မှတ်တမ်းမှတ်ရာ  ပူးတွဲထားသည့် VBA မက်ခရို တစ်ခုခုနှင့် ကူးပြောင်းသောအခါ သူတို့၏ အသုံးကျမှု ဆုံးရှုံးစေသည်ကို မှတ်ပေးပါ။"
 
 #: source/importwizard/importwi.src#sWelcometextLabel3.String.Text
-#, fuzzy
 msgid  "Select the document type for conversion:"
 msgstr "ပြောင်းလဲခြင်းကိစ္စအတွက် မှတ်တမ်းမှတ်ရာ ပုံစံ ရွေးချယ်ပါ -"
 
 #: source/importwizard/importwi.src#sMSTemplateCheckbox_1_.String.Text
-#, fuzzy
 msgid  "Word templates"
 msgstr "Word ပုံစံပြားများ"
 
 #: source/importwizard/importwi.src#sMSTemplateCheckbox_2_.String.Text
-#, fuzzy
 msgid  "Excel templates"
 msgstr "Excel ပုံစံပြားများ"
 
 #: source/importwizard/importwi.src#sMSTemplateCheckbox_3_.String.Text
-#, fuzzy
 msgid  "PowerPoint templates"
 msgstr "PowerPoint ပုံစံပြားများ"
 
 #: source/importwizard/importwi.src#sMSDocumentCheckbox_1_.String.Text
-#, fuzzy
 msgid  "Word documents"
 msgstr "Word မှတ်တမ်းမှတ်ရာများ"
 
 #: source/importwizard/importwi.src#sMSDocumentCheckbox_2_.String.Text
-#, fuzzy
 msgid  "Excel documents"
 msgstr "Excel မှတ်တမ်းမှတ်ရာများ"
 
 #: source/importwizard/importwi.src#sMSDocumentCheckbox_3_.String.Text
-#, fuzzy
 msgid  "PowerPoint documents"
 msgstr "PowerPoint မှတ်တမ်းမှတ်ရာများ"
 
 #: source/importwizard/importwi.src#sSearchInSubDir.String.Text
-#, fuzzy
 msgid  "Including subdirectories"
 msgstr "ပါဝင်နေသော အညွှန်းငယ်များ"
 
 #: source/importwizard/importwi.src#sMSContainerName.String.Text
-#, fuzzy
 msgid  "Microsoft Office"
 msgstr "မိုက်ခရိုဆော့ အော့ဖ်ဖစ်"
 
 #: source/importwizard/importwi.src#sSummaryHeader.String.Text
-#, fuzzy
 msgid  "Summary:"
 msgstr "အကျဉ်းချုပ် -"
 
 #: source/importwizard/importwi.src#sTextImportLabel.String.Text
-#, fuzzy
 msgid  "Import from:"
 msgstr "မှ သွင်းပါ -"
 
 #: source/importwizard/importwi.src#sTextExportLabel.String.Text
-#, fuzzy
 msgid  "Save to:"
 msgstr "သို့ သိမ်းပါ -"
 
 #: source/importwizard/importwi.src#sGroupnameDefault.String.Text
-#, fuzzy
 msgid  "Imported_Templates"
 msgstr "သွင်းထားသည့်_ပုံစံပြားများ"
 
 #: source/importwizard/importwi.src#sProgressDesc1.String.Text
-#, fuzzy
 msgid  "Progress: "
 msgstr "တိုးတက်မှု -"
 
 #: source/importwizard/importwi.src#sProgressOneDoc.String.Text
-#, fuzzy
 msgid  "Document"
 msgstr "မှတ်တမ်းမှတ်ရာ"
 
 #: source/importwizard/importwi.src#sProgressMoreDocs.String.Text
-#, fuzzy
 msgid  "Documents"
 msgstr "မှတ်တမ်းမှတ်ရာများ"
 
 #: source/importwizard/importwi.src#sProgressMoreTemplates.String.Text
-#, fuzzy
 msgid  "Templates"
 msgstr "ပုံစံပြားများ"
 
 #: source/importwizard/importwi.src#sNoDirCreation.String.Text
-#, fuzzy
 msgid  "The '%1' directory cannot be created: "
 msgstr "%1' အညွှန်း ဖန်တီးနိုင်လိမ့်မည် မဟုတ်ပါ -"
 
 #: source/importwizard/importwi.src#sMsgDirNotThere.String.Text
-#, fuzzy
 msgid  "The '%1' directory does not exist."
 msgstr "%1' အညွှန်း မတည်ရှိပါ။"
 
 #: source/importwizard/importwi.src#sQueryfornewCreation.String.Text
-#, fuzzy
 msgid  "Do you want to create it now?"
 msgstr "ယခု ဖန်တီးရန် ဆန္ဒရှိပါသလား?"
 
 #: source/importwizard/importwi.src#sFileExists.String.Text
 msgid  "The '<1>' file already exists.<CR>Do you want to overwrite it?"
-msgstr ""
+msgstr " '<1>' ဖိုင် အဆင်သင့် တည်ရှိသည်။ <CR> ဖိုင်ဟောင်းတွင် အချက်အသစ်များ ထပ်မံ ဖြည့်စွပ်ရန် ဆန္ဒရှိပါသလား?"
 
 #: source/importwizard/importwi.src#sMorePathsError3.String.Text
-#, fuzzy
 msgid  "Directories do not exist"
 msgstr "အညွှန်းများ မတည်ရှိပါ"
 
 #: source/importwizard/importwi.src#sOverwriteallFiles.String.Text
 msgid  "Do you want to overwrite documents without being asked?"
-msgstr ""
+msgstr "မေးခွန်း မပါဘဲ မှတ်တမ်းမှတ်ရာများကို ဖိုင်ဟောင်းတွင် အချက်အသစ်များ ထပ်မံ ဖြည့်စွပ်ရန် ဆန္ဒရှိပါသလား?"
 
 #: source/importwizard/importwi.src#sreeditMacro.String.Text
-#, fuzzy
 msgid  "Document macro has to be revised."
 msgstr "မှတ်တမ်းမှတ်ရာမက်ခရို စိစစ် တည်းဖြတ်ရန် ရှိသည်။"
 
 #: source/importwizard/importwi.src#scouldNotsaveDocument.String.Text
-#, fuzzy
 msgid  "Document '<1>' could not be saved."
 msgstr "မှတ်တမ်းမှတ်ရာ '<1>' သိမ်းထားနိုင်လိမ့်မည် မဟုတ်ပါ။"
 
 #: source/importwizard/importwi.src#scouldNotopenDocument.String.Text
-#, fuzzy
 msgid  "Document '<1>' could not be opened."
 msgstr "မှတ်တမ်းမှတ်ရာ '<1>' ဖွင့်ထားနိုင်လိမ့်မည် မဟုတ်ပါ။"
 
 #: source/importwizard/importwi.src#sConvertError1.String.Text
-#, fuzzy
 msgid  "Do you really want to terminate conversion at this point?"
 msgstr "ဤအမှတ်၌ ပြောင်းလဲခြင်းကိစ္စ အပြီးသတ်ရန် အမှန်တကယ် ဆန္ဒရှိပါသလား?"
 
 #: source/importwizard/importwi.src#sConvertError2.String.Text
-#, fuzzy
 msgid  "Cancel Wizard"
 msgstr "ဝဇ္ဇတ် ရုတ်သိမ်းပါ"
 
 #: source/importwizard/importwi.src#sRTErrorDesc.String.Text
-#, fuzzy
 msgid  "An unexpected error has occurred in the wizard."
 msgstr "ဝဇ္ဇတ် တွင် မလိုလားသော အမှားတစ်ခု ဖြစ်ပွားသည်။"
 
 #: source/importwizard/importwi.src#sRTErrorHeader.String.Text
-#, fuzzy
 msgid  "Error"
 msgstr "အမှား"
 
 #: source/importwizard/importwi.src#sPathDialogMessage.String.Text
-#, fuzzy
 msgid  "Select a directory"
 msgstr "အညွှန်းတစ်ခု ရွေးချယ်ပါ"
 
 #: source/importwizard/importwi.src#sDialogTitle.String.Text
-#, fuzzy
 msgid  "Document Converter"
 msgstr "မှတ်တမ်းမှတ်ရာ ကူးပြောင်းသူ"
 
 #: source/importwizard/importwi.src#sProgressPage1.String.Text
-#, fuzzy
 msgid  "Progress"
 msgstr "တိုးတက်မှု -"
 
 #: source/importwizard/importwi.src#sProgressPage2.String.Text
-#, fuzzy
 msgid  "Retrieving the relevant documents:"
 msgstr "ဆက်စပ်သည့် မှတ်တမ်းမှတ်ရာများ ပြန်ထုတ်နေသည် -"
 
 #: source/importwizard/importwi.src#sProgressPage3.String.Text
-#, fuzzy
 msgid  "Converting the documents"
 msgstr "မှတ်တမ်းမှတ်ရာများ ကူးပြောင်းနေသည်"
 
 #: source/importwizard/importwi.src#sProgressFound.String.Text
-#, fuzzy
 msgid  "Found:"
 msgstr "ရှာသည် -"
 
 #: source/importwizard/importwi.src#sProgressPage5.String.Text
-#, fuzzy
 msgid  "%1 found"
 msgstr "%1 ရှာထားသည်"
 
 #: source/importwizard/importwi.src#sReady.String.Text
-#, fuzzy
 msgid  "Finished"
 msgstr "ပြီးစီးပြီ"
 
 #: source/importwizard/importwi.src#sXMLTemplateCheckbox_1_.String.Text
-#, fuzzy
 msgid  "Text templates"
 msgstr "စာသား ပုံစံပြားများ"
 
 #: source/importwizard/importwi.src#sXMLTemplateCheckbox_2_.String.Text
-#, fuzzy
 msgid  "Spreadsheet templates"
 msgstr "ဖြန့်သော အလွှာချပ် ပုံစံပြားများ"
 
 #: source/importwizard/importwi.src#sXMLTemplateCheckbox_3_.String.Text
-#, fuzzy
 msgid  "Drawing/presentation templates"
 msgstr "ပုံဆွဲသော/တင်ပြချက် ပုံစံပြားများ"
 
 #: source/importwizard/importwi.src#sXMLTemplateCheckbox_4_.String.Text
-#, fuzzy
 msgid  "Master documents"
 msgstr "ပင်မ မှတ်တမ်းမှတ်ရာများ"
 
 #: source/importwizard/importwi.src#sXMLDocumentCheckbox_1_.String.Text
-#, fuzzy
 msgid  "Text documents"
 msgstr "စာသား မှတ်တမ်းမှတ်ရာများ"
 
 #: source/importwizard/importwi.src#sXMLDocumentCheckbox_2_.String.Text
-#, fuzzy
 msgid  "Spreadsheets"
 msgstr "ဖြန့်သော အလွှာချပ်များ"
 
 #: source/importwizard/importwi.src#sXMLDocumentCheckbox_3_.String.Text
-#, fuzzy
 msgid  "Drawing/presentation documents"
 msgstr "ပုံဆွဲသော/တင်ပြချက် မှတ်တမ်းမှတ်ရာများ"
 
 #: source/importwizard/importwi.src#sXMLDocumentCheckbox_4_.String.Text
-#, fuzzy
 msgid  "Master documents/formulas"
 msgstr "ပင်မ မှတ်တမ်းမှတ်ရာများ/ပုံသေနည်းများ"
 
 #: source/importwizard/importwi.src#sXMLHelperApplications_1.String.Text
-#, fuzzy
 msgid  "Master documents"
 msgstr "ပင်မ မှတ်တမ်းမှတ်ရာများ"
 
 #: source/importwizard/importwi.src#sXMLHelperApplications_2.String.Text
-#, fuzzy
 msgid  "Formulas"
 msgstr "ပုံသေနည်းများ"
 
 #: source/importwizard/importwi.src#sSourceDocuments.String.Text
-#, fuzzy
 msgid  "Source documents"
 msgstr "မူရင်း မှတ်တမ်းမှတ်ရာများ"
 
 #: source/importwizard/importwi.src#sTargetDocuments.String.Text
-#, fuzzy
 msgid  "Target documents"
 msgstr "ပစ်မှတ် မှတ်တမ်းမှတ်ရာများ"
 
 #: source/importwizard/importwi.src#sCreateLogfile.String.Text
-#, fuzzy
 msgid  "Create log file"
 msgstr "ကွန်ပျူတာ မှတ်တမ်း(လော့)ဖိုင် ဖန်တီးပါ"
 
 #: source/importwizard/importwi.src#sLogfileSummary.String.Text
-#, fuzzy
 msgid  "<COUNT> documents converted"
 msgstr "<COUNT> မှတ်တမ်းမှတ်ရာများ ကူးပြောင်းထားသည်"
 
 #: source/importwizard/importwi.src#sLogfileHelpText.String.Text
 msgid  "A log file will be created in your work directory"
-msgstr ""
+msgstr "သင့် အလုပ် အညွှန်းတွင် ကွန်ပျူတာ မှတ်တမ်း(လော့)ဖိုင်တစ်ခု ဖန်တီးထားလိမ့်မည်။"
 
 #: source/importwizard/importwi.src#sshowLogfile.String.Text
-#, fuzzy
 msgid  "Show log file"
 msgstr "ကွန်ပျူတာ မှတ်တမ်း(လော့)ဖိုင် ပြပါ"
 
 #: source/importwizard/importwi.src#sSumInclusiveSubDir.String.Text
-#, fuzzy
 msgid  "All subdirectories will be taken into account"
 msgstr "ရေတွက်မှုစာရင်းအတွင်းသို့ အညွှန်းငယ်များအားလုံး ယူဆောင်သွားလိမ့်မည်"
 
 #: source/importwizard/importwi.src#sSumSaveDokumente.String.Text
-#, fuzzy
 msgid  "These will be exported to the following directory:"
 msgstr "အောက်ပါအညွှန်းသို့ ပို့ထားလိမ့်မည် -"
 
 #: source/importwizard/importwi.src#sSumSOTextDocuments.String.Text
 msgid  "All %PRODUCTNAME text documents contained in the following directory will be imported:"
-msgstr ""
+msgstr "အောက်ပါ အညွှန်းတွင် ပါဝင်သည့် မှတ်တမ်းမှတ်ရာများ စာသား %PRODUCTNAME အားလုံး သွင်းထားရလိမ့်မည် -"
 
 #: source/importwizard/importwi.src#sSumSOTableDocuments.String.Text
 msgid  "All %PRODUCTNAME spreadsheets contained in the following directory will be imported:"
-msgstr ""
+msgstr "အောက်ပါ အညွှန်းတွင် ပါဝင်သည့် ဖြန့်သော အလွှာချပ်များ %PRODUCTNAME အားလုံး သွင်းထားရလိမ့်မည် -"
 
 #: source/importwizard/importwi.src#sSumSODrawDocuments.String.Text
 msgid  "All %PRODUCTNAME drawing and presentation documents contained in the following directory will be imported:"
-msgstr ""
+msgstr "အောက်ပါ အညွှန်းတွင် ပါဝင်သည့် မှတ်တမ်းမှတ်ရာများ ပုံဆွဲခြင်းနှင့် တင်ပြခြင်း %PRODUCTNAME အားလုံး သွင်းထားရလိမ့်မည် -"
 
 #: source/importwizard/importwi.src#sSumSOMathDocuments.String.Text
 msgid  "All %PRODUCTNAME formula documents contained in the following directory will be imported:"
-msgstr ""
+msgstr "အောက်ပါ အညွှန်းတွင် ပါဝင်သည့် မှတ်တမ်းမှတ်ရာများ ပုံသေနည်း %PRODUCTNAME အားလုံး သွင်းထားရလိမ့်မည် -"
 
 #: source/importwizard/importwi.src#sSumSOTextTemplates.String.Text
 msgid  "All %PRODUCTNAME text templates contained in the following directory will be imported:"
-msgstr ""
+msgstr "အောက်ပါ အညွှန်းတွင် ပါဝင်သည့် ပုံစံပြားများ စာသား %PRODUCTNAME အားလုံး သွင်းထားရလိမ့်မည် -"
 
 #: source/importwizard/importwi.src#sSumSOTableTemplates.String.Text
 msgid  "All %PRODUCTNAME table templates contained in the following directory will be imported:"
-msgstr ""
+msgstr "အောက်ပါ အညွှန်းတွင် ပါဝင်သည့် ပုံစံပြားများ ဇယား %PRODUCTNAME အားလုံး သွင်းထားရလိမ့်မည် -"
 
 #: source/importwizard/importwi.src#sSumSODrawTemplates.String.Text
 msgid  "All %PRODUCTNAME drawing and presentation templates contained in the following directory will be imported:"
-msgstr ""
+msgstr "အောက်ပါ အညွှန်းတွင် ပါဝင်သည့် ပုံစံပြားများ ပုံဆွဲခြင်းနှင့် တင်ပြခြင်း %PRODUCTNAME အားလုံး သွင်းထားရလိမ့်မည် -"
 
 #: source/importwizard/importwi.src#sSumSOGlobalDocuments.String.Text
 msgid  "All %PRODUCTNAME master documents contained in the following directory will be imported:"
-msgstr ""
+msgstr "အောက်ပါ အညွှန်းတွင် ပါဝင်သည့် ပင်မ မှတ်တမ်းမှတ်ရာများ %PRODUCTNAME အားလုံး သွင်းထားရလိမ့်မည် -"
 
 #: source/importwizard/importwi.src#sSumMSTextDocuments.String.Text
 msgid  "All Word documents contained in the following directory will be imported:"
-msgstr ""
+msgstr " အောက်ပါ အညွှန်းတွင် ပါဝင်သည့် မှတ်တမ်းမှတ်ရာများ Word အားလုံး သွင်းထားရလိမ့်မည် -"
 
 #: source/importwizard/importwi.src#sSumMSTableDocuments.String.Text
 msgid  "All Excel documents contained in the following directory will be imported:"
-msgstr ""
+msgstr "အောက်ပါ အညွှန်းတွင် ပါဝင်သည့် မှတ်တမ်းမှတ်ရာများ Excel အားလုံး သွင်းထားရလိမ့်မည် -"
 
 #: source/importwizard/importwi.src#sSumMSDrawDocuments.String.Text
 msgid  "All PowerPoint documents contained in the following directory will be imported:"
-msgstr ""
+msgstr "အောက်ပါ အညွှန်းတွင် ပါဝင်သည့် မှတ်တမ်းမှတ်ရာများ PowerPoint အားလုံး သွင်းထားရလိမ့်မည် -"
 
 #: source/importwizard/importwi.src#sSumMSTextTemplates.String.Text
 msgid  "All Word templates contained in the following directory will be imported:"
-msgstr ""
+msgstr "အောက်ပါ အညွှန်းတွင် ပါဝင်သည့် ပုံစံပြားများ Word အားလုံး သွင်းထားရလိမ့်မည် -"
 
 #: source/importwizard/importwi.src#sSumMSTableTemplates.String.Text
 msgid  "All Excel templates contained in the following directory will be imported:"
-msgstr ""
+msgstr "အောက်ပါ အညွှန်းတွင် ပါဝင်သည့် ပုံစံပြားများ Excel အားလုံး သွင်းထားရလိမ့်မည် -"
 
 #: source/importwizard/importwi.src#sSumMSDrawTemplates.String.Text
 msgid  "All PowerPoint templates contained in the following directory will be imported:"
-msgstr ""
+msgstr "အောက်ပါ အညွှန်းတွင် ပါဝင်သည့် ပုံစံပြားများ PowerPoint အားလုံး သွင်းထားရလိမ့်မည် -"
 
 #: source/schedule/schedule.src#dlgCalTitle.String.Text
-#, fuzzy
 msgid  "%PRODUCTNAME Calendar"
 msgstr "%PRODUCTNAME ပြက္ခဒိန်"
 
 #: source/schedule/schedule.src#dlgCalTitleBack.String.Text
-#, fuzzy
 msgid  "Back"
 msgstr "နောက်သို့"
 
 #: source/schedule/schedule.src#dlgCalTitleOwnData.String.Text
-#, fuzzy
 msgid  "Personal Data"
 msgstr "ကိုယ်ရေး အချက်အလက်များ"
 
 #: source/schedule/schedule.src#dlgSchdlTitle.String.Text
-#, fuzzy
 msgid  "Add Holidays to Calendar"
 msgstr "ပြက္ခဒိန်သို့ အားလပ်ရက်များ ပေါင်းထည့်ပါ"
 
 #: source/schedule/schedule.src#dlgOK.String.Text
-#, fuzzy
 msgid  "Create"
 msgstr "ဖန်တီးပါ"
 
 #: source/schedule/schedule.src#dlgCancel.String.Text
-#, fuzzy
 msgid  "Cancel"
 msgstr "ရုတ်သိမ်းပါ"
 
 #: source/schedule/schedule.src#dlgCalFrameOption.String.Text
-#, fuzzy
 msgid  "Calendar"
 msgstr "ပြက္ခဒိန်"
 
 #: source/schedule/schedule.src#dlgCalOptionYear.String.Text
-#, fuzzy
 msgid  "~Year Overview"
 msgstr "~နှစ်တစ်နှစ်၏ ခြုံငုံသုံးသပ်ချက်"
 
 #: source/schedule/schedule.src#dlgCalOptionMonth.String.Text
-#, fuzzy
 msgid  "~Month"
 msgstr "~လ"
 
 #: source/schedule/schedule.src#dlgSchdlDescription.String.Text
-#, fuzzy
 msgid  "Add holidays for"
 msgstr "အတွက် အားလပ်ရက်များ ပေါင်းထည့်ပါ"
 
 #: source/schedule/schedule.src#dlgSchdlCountry.String.Text
-#, fuzzy
 msgid  "USA"
 msgstr "USA"
 
 #: source/schedule/schedule.src#dlgTime.String.Text
-#, fuzzy
 msgid  "Time Frame"
 msgstr "အချိန်ကန့်သတ်ချက်"
 
 #: source/schedule/schedule.src#dlgYear.String.Text
-#, fuzzy
 msgid  "Year"
 msgstr "နှစ်"
 
 #: source/schedule/schedule.src#dlgCalMonth.String.Text
-#, fuzzy
 msgid  "Month"
 msgstr "လ"
 
 #: source/schedule/schedule.src#dlgCalOwnData.String.Text
-#, fuzzy
 msgid  "Personal Data"
 msgstr "ကိုယ်ရေးအချက်အလက်များ"
 
 #: source/schedule/schedule.src#dlgCalInsert.String.Text
-#, fuzzy
 msgid  "~Insert"
 msgstr "~ထည့်သွင်းပါ"
 
 #: source/schedule/schedule.src#dlgCalDelete.String.Text
-#, fuzzy
 msgid  "~Delete"
 msgstr "~ဖျက်ပါ"
 
 #: source/schedule/schedule.src#dlgCalNewEvent.String.Text
-#, fuzzy
 msgid  "New Event"
 msgstr "ဖြစ်ရပ်အသစ်"
 
 #: source/schedule/schedule.src#dlgCalEvent.String.Text
-#, fuzzy
 msgid  "Event"
 msgstr "ဖြစ်ရပ်"
 
 #: source/schedule/schedule.src#dlgCalEventOnce.String.Text
-#, fuzzy
 msgid  "One-Time"
 msgstr "အချိန်တစ်ခု"
 
 #: source/schedule/schedule.src#dlgCalEventDay.String.Text
-#, fuzzy
 msgid  "Day"
 msgstr "နေ့"
 
 #: source/schedule/schedule.src#dlgCalEventMonth.String.Text
-#, fuzzy
 msgid  "Month"
 msgstr "လ"
 
 #: source/schedule/schedule.src#dlgCalEventYear.String.Text
-#, fuzzy
 msgid  "Year"
 msgstr "နှစ်"
 
 #: source/schedule/schedule.src#dlgBitmapFile.String.Text
-#, fuzzy
 msgid  "usa.bmp"
 msgstr "usa.bmp"
 
 #: source/schedule/schedule.src#dlgState.String.Text
-#, fuzzy
 msgid  "Public holidays"
 msgstr "အများပြည်သူအားလပ်ရပ်များ"
 
 #: source/schedule/schedule.src#dlgMonth.String.Text
-#, fuzzy
 msgid  "January"
 msgstr "ဇန်နဝါရီ"
 
 #: source/schedule/schedule.src#dlgMonth+1.String.Text
-#, fuzzy
 msgid  "February"
 msgstr "ဖေဖေါ်ဝါရီ"
 
 #: source/schedule/schedule.src#dlgMonth+2.String.Text
-#, fuzzy
 msgid  "March"
 msgstr "မတ်"
 
 #: source/schedule/schedule.src#dlgMonth+3.String.Text
-#, fuzzy
 msgid  "April"
 msgstr "ဧပြီ"
 
 #: source/schedule/schedule.src#dlgMonth+4.String.Text
-#, fuzzy
 msgid  "May"
 msgstr "မေ"
 
 #: source/schedule/schedule.src#dlgMonth+5.String.Text
-#, fuzzy
 msgid  "June"
 msgstr "ဇွန်"
 
 #: source/schedule/schedule.src#dlgMonth+6.String.Text
-#, fuzzy
 msgid  "July"
 msgstr "ဇူလိုင်"
 
 #: source/schedule/schedule.src#dlgMonth+7.String.Text
-#, fuzzy
 msgid  "August"
 msgstr "ဩဂုတ်"
 
 #: source/schedule/schedule.src#dlgMonth+8.String.Text
-#, fuzzy
 msgid  "September"
 msgstr "စက်တင်ဘာ"
 
 #: source/schedule/schedule.src#dlgMonth+9.String.Text
-#, fuzzy
 msgid  "October"
 msgstr "အောက်တိုဘာ"
 
 #: source/schedule/schedule.src#dlgMonth+10.String.Text
-#, fuzzy
 msgid  "November"
 msgstr "နိုဝင်ဘာ"
 
 #: source/schedule/schedule.src#dlgMonth+11.String.Text
-#, fuzzy
 msgid  "December"
 msgstr "ဒီဇင်ဘာ"
 
 #: source/schedule/schedule.src#msgCalErrorTitle.String.Text
-#, fuzzy
 msgid  "Yearly / Monthly Calendar"
 msgstr "နှစ်စဉ်/လစဉ်ပြက္ခဒိန်"
 
 #: source/schedule/schedule.src#msgCalError.String.Text
-#, fuzzy
 msgid  "An error occurred while creating the calendar."
 msgstr "ပြက္ခဒိန် ဖန်တီးစဉ် အမှားတစ်ခု ဖြစ်ပွားသည်။"
 
 #: source/schedule/schedule.src#msgCalRemoveTitle.String.Text
-#, fuzzy
 msgid  "Delete event entries"
 msgstr "ဖြစ်ရပ်ထည့်သွင်းထားမှုများကို ဖျက်ပါ"
 
 #: source/schedule/schedule.src#msgCalRemove.String.Text
-#, fuzzy
 msgid  "Delete the selected entries?"
 msgstr "ဝင်ရောက်ရွေးချယ်ထားသည်များကို ဖျက်မည်လား။"
 
 #: source/schedule/schedule.src#stlWorkday.String.Text
-#, fuzzy
 msgid  "Workweek"
 msgstr "အလုပ်ရက်သတ္တပတ်"
 
 #: source/schedule/schedule.src#stlWeekend.String.Text
-#, fuzzy
 msgid  "Weekend"
 msgstr "စနေ၊တနင်္ဂနွေ"
 
 #: source/schedule/schedule.src#nameCalYear.String.Text
-#, fuzzy
 msgid  "Calendar"
 msgstr "ပြက္ခဒိန်"
 
 #: source/schedule/schedule.src#nameCalMonth.String.Text
-#, fuzzy
 msgid  "Month"
 msgstr "လ"
 
 #: source/schedule/schedule.src#sProgress.String.Text
-#, fuzzy
 msgid  "Progress:"
 msgstr "တိုးတက်မှု -"
 
 #: source/template/template.src#SAMPLES.String.Text
 msgid  "In order to use the full functionality of this sample, create a document that is based on this template."
-msgstr ""
+msgstr "ဤနမူနာပုံစံ၏ လုပ်ဆောင်ချက်များကို အပြည့်အ၀ အသုံးပြုရန် ပုံစံပြားပေါ်တွင် အခြေတည်သည့် မှတ်တမ်းမှတ်ရာ တစ်ခုဖန်တီးပါ။"
 
 #: source/template/template.src#SAMPLES + 1.String.Text
-#, fuzzy
 msgid  "Remarks"
 msgstr "မှတ်ချက်များ"
 
 #: source/template/template.src#STYLES.String.Text
-#, fuzzy
 msgid  "Theme Selection"
 msgstr "အဓိက ဆိုလိုရင်း ရွေးချယ်မှု"
 
 #: source/template/template.src#STYLES + 1.String.Text
 msgid  "Error while saving the document to the clipboard! The following action cannot be undone."
-msgstr ""
+msgstr "ကလစ်ဘုတ်သို့ မှတ်တမ်းမှတ်ရာ သိမ်းစဉ် အမှား! အောက်ပါ လုပ်ဆောင်ချက်ကို လုပ်နိုင်လိမ့်မည် မဟုတ်ပါ။"
 
 #: source/template/template.src#STYLES + 2.String.Text
-#, fuzzy
 msgid  "~Cancel"
 msgstr "~ရုတ်သိမ်းပါ"
 
 #: source/template/template.src#STYLES + 3.String.Text
-#, fuzzy
 msgid  "~OK"
 msgstr "~အိုကေ"
 
 #: source/template/template.src#AgendaDlgName.String.Text
-#, fuzzy
 msgid  "Minutes Template"
 msgstr "မိနစ် ပုံစံပြား"
 
 #: source/template/template.src#AgendaDlgNoCancel.String.Text
-#, fuzzy
 msgid  "An option must be confirmed."
 msgstr "ရွေးပိုင်ခွင့်တစ်ခု အတည်ပြုရလိမ့်မည်။"
 
 #: source/template/template.src#AgendaDlgFrame.String.Text
-#, fuzzy
 msgid  "Minutes Type"
 msgstr "မိနစ်အမျိုးအစားများ"
 
 #: source/template/template.src#AgendaDlgButton1.String.Text
-#, fuzzy
 msgid  "Results Minutes"
 msgstr "မိနစ် အကျိုးရလဒ်များ"
 
 #: source/template/template.src#AgendaDlgButton2.String.Text
-#, fuzzy
 msgid  "Evaluation Minutes"
 msgstr "မိနစ် ချင့်တွက်ခြင်း"
 
 #: source/template/template.src#CorrespondenceNoTextmark.String.Text
-#, fuzzy
 msgid  "The bookmark 'Recipient' is missing."
 msgstr "လက်ခံရရှိသူ၏ စာညှပ် ပျောက်ဆုံးနေသည်။"
 
 #: source/template/template.src#CorrespondenceNoTextmark+1.String.Text
-#, fuzzy
 msgid  "Form letter fields can not be included."
 msgstr "စာပုံစံနေရာကွက်များ ပါဝင်နိုင်လိမ့်မည် မဟုတ်ပါ။"
 
 #: source/template/template.src#CorrespondenceMsgError.String.Text
-#, fuzzy
 msgid  "An error has occurred."
 msgstr "အမှားတစ်ခု ဖြစ်ပွားသည်။"
 
 #: source/template/template.src#CorrespondenceDialog.String.Text
-#, fuzzy
 msgid  "Addressee"
 msgstr "လိပ်စာရှင်"
 
 #: source/template/template.src#CorrespondenceDialog+1.String.Text
-#, fuzzy
 msgid  "One recipient"
 msgstr "လက်ခံရရှိသူ တစ်ဦး"
 
 #: source/template/template.src#CorrespondenceDialog+2.String.Text
-#, fuzzy
 msgid  "Several recipients (address database)"
 msgstr "လက်ခံသူများ (လိပ်စာ ဒေတာဘေ့စ်)"
 
 #: source/template/template.src#CorrespondenceDialog+3.String.Text
-#, fuzzy
 msgid  "Use of This Template"
 msgstr "ဤပုံစံပြား အသုံးပြုပါ"
 
 #: source/template/template.src#CorrespondenceFields.String.Text
 msgid  "Click placeholder and overwrite"
-msgstr ""
+msgstr "ချန်လှပ်ထားသော နေရာလပ်နှင့် ဖိုင်ဟောင်းတွင် အချက်အလက်သစ်များ ထပ်မံ ဖြည့်စွက် သိမ်းဆည်းခြင်းကို ကလစ်နှိပ်ပါ"
 
 #: source/template/template.src#CorrespondenceFields+1.String.Text
-#, fuzzy
 msgid  "Company"
 msgstr "ကုမ္ပဏီ"
 
 #: source/template/template.src#CorrespondenceFields+2.String.Text
-#, fuzzy
 msgid  "Department"
 msgstr "ဌာန"
 
 #: source/template/template.src#CorrespondenceFields+3.String.Text
-#, fuzzy
 msgid  "First Name"
 msgstr "ပထမဆုံးအမည်"
 
 #: source/template/template.src#CorrespondenceFields+4.String.Text
-#, fuzzy
 msgid  "Last Name"
 msgstr "နောက်ဆုံးအမည်"
 
 #: source/template/template.src#CorrespondenceFields+5.String.Text
-#, fuzzy
 msgid  "Street"
 msgstr "လမ်း"
 
 #: source/template/template.src#CorrespondenceFields+6.String.Text
-#, fuzzy
 msgid  "Country"
 msgstr "နိုင်ငံ"
 
 #: source/template/template.src#CorrespondenceFields+7.String.Text
-#, fuzzy
 msgid  "ZIP/Postal Code"
 msgstr "ဇစ်/စာပို့သင်္ကတ"
 
 #: source/template/template.src#CorrespondenceFields+8.String.Text
-#, fuzzy
 msgid  "City"
 msgstr "မြို့"
 
 #: source/template/template.src#CorrespondenceFields+9.String.Text
-#, fuzzy
 msgid  "Title"
 msgstr "ခေါင်းစဉ်"
 
 #: source/template/template.src#CorrespondenceFields+10.String.Text
-#, fuzzy
 msgid  "Position"
 msgstr "တည်နေရာ"
 
 #: source/template/template.src#CorrespondenceFields+11.String.Text
-#, fuzzy
 msgid  "Form of Address"
 msgstr "လိပ်စာ ပုံစံ"
 
 #: source/template/template.src#CorrespondenceFields+12.String.Text
-#, fuzzy
 msgid  "Initials"
 msgstr "လက်မှတ်တိုများ"
 
 #: source/template/template.src#CorrespondenceFields+13.String.Text
-#, fuzzy
 msgid  "Salutation"
 msgstr "နှုတ်ခွန်းဆက်စကား"
 
 #: source/template/template.src#CorrespondenceFields+14.String.Text
-#, fuzzy
 msgid  "Home Phone"
 msgstr "အိမ်ဖုန်း"
 
 #: source/template/template.src#CorrespondenceFields+15.String.Text
-#, fuzzy
 msgid  "Work Phone"
 msgstr "အလုပ်ဖုန်း"
 
 #: source/template/template.src#CorrespondenceFields+16.String.Text
-#, fuzzy
 msgid  "Fax"
 msgstr "ဖက်စ်"
 
 #: source/template/template.src#CorrespondenceFields+17.String.Text
-#, fuzzy
 msgid  "E-Mail"
 msgstr "အီးမေးလ်"
 
 #: source/template/template.src#CorrespondenceFields+18.String.Text
-#, fuzzy
 msgid  "URL"
 msgstr "URL"
 
 #: source/template/template.src#CorrespondenceFields+19.String.Text
-#, fuzzy
 msgid  "Notes"
 msgstr "မှတ်ချက်များ"
 
 #: source/template/template.src#CorrespondenceFields+20.String.Text
-#, fuzzy
 msgid  "Alt. Field 1"
 msgstr "တစ်ခြား နေရာကွက် ၁"
 
 #: source/template/template.src#CorrespondenceFields+21.String.Text
-#, fuzzy
 msgid  "Alt. Field 2"
 msgstr "တစ်ခြား နေရာကွက် ၂"
 
 #: source/template/template.src#CorrespondenceFields+22.String.Text
-#, fuzzy
 msgid  "Alt. Field 3"
 msgstr "တစ်ခြား နေရာကွက် ၃"
 
 #: source/template/template.src#CorrespondenceFields+23.String.Text
-#, fuzzy
 msgid  "Alt. Field 4"
 msgstr "တစ်ခြား နေရာကွက် ၄"
 
 #: source/template/template.src#CorrespondenceFields+24.String.Text
-#, fuzzy
 msgid  "ID"
 msgstr "အိုင်ဒီ"
 
 #: source/template/template.src#CorrespondenceFields+25.String.Text
-#, fuzzy
 msgid  "State"
 msgstr "ပြည်နယ်"
 
 #: source/template/template.src#CorrespondenceFields+26.String.Text
-#, fuzzy
 msgid  "Office Phone"
 msgstr "ရုံးဖုန်း"
 
 #: source/template/template.src#CorrespondenceFields+27.String.Text
-#, fuzzy
 msgid  "Pager"
 msgstr "ပေဂျာ"
 
 #: source/template/template.src#CorrespondenceFields+28.String.Text
-#, fuzzy
 msgid  "Mobile Phone"
 msgstr "မိုဘိုင်းဖုန်း"
 
 #: source/template/template.src#CorrespondenceFields+29.String.Text
-#, fuzzy
 msgid  "Other Phone"
 msgstr "အခြားဖုန်း"
 
 #: source/template/template.src#CorrespondenceFields+30.String.Text
-#, fuzzy
 msgid  "Calendar URL"
 msgstr "URL ပြက္ခဒိန်"
 
 #: source/template/template.src#CorrespondenceFields+31.String.Text
-#, fuzzy
 msgid  "Invite"
 msgstr "ဖိတ်ခေါ်ပါ"
 
 #: source/template/template.src#TextField.String.Text
-#, fuzzy
 msgid  "User data field is not defined!"
 msgstr "အသုံးပြုသူ အချက်အလက်နေရာကွက် သတ်မှတ်ထားခြင်းမရှိပါ !"
 
 #: source/template/template.src#Newsletter.String.Text
-#, fuzzy
 msgid  "General layout"
 msgstr "အထွေထွေ အဆင်အပြင်"
 
 #: source/template/template.src#Newsletter + 1.String.Text
-#, fuzzy
 msgid  "Default layout"
 msgstr "နဂိုမူလအဆင်အပြင်"
 
 #: source/template/template.src#Newsletter + 2.String.Text
-#, fuzzy
 msgid  "Commemorative publication layout"
 msgstr "အထိမ်းအမှတ်အဖြစ် ဂုဏ်ပြုသော ပုံနှိပ်ထုတ်လုပ်မှု အဆင်အပြင်"
 
 #: source/template/template.src#Newsletter + 3.String.Text
-#, fuzzy
 msgid  "Brochure layout"
 msgstr "လက်ကမ်းစာစောင် အဆင်အပြင်"
 
 #: source/template/template.src#Newsletter + 10.String.Text
-#, fuzzy
 msgid  "Format"
 msgstr "စီစဉ် ဖွဲ့စည်းမှု ပုံစံ"
 
 #: source/template/template.src#Newsletter + 11.String.Text
-#, fuzzy
 msgid  "Single-sided"
 msgstr "တစ်ဖက်တည်း"
 
 #: source/template/template.src#Newsletter + 12.String.Text
-#, fuzzy
 msgid  "Double-sided"
 msgstr "နှစ်ဖက်စလုံး"

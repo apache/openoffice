@@ -93,7 +93,7 @@ msgstr "ਵਰਤੋਂ ਵਿੱਚ ਡੌਕੂਮੈਂਟ"
 
 #: source/trylater.src#STR_TRYLATER_MSG.String.Text
 msgid  "Document file '$(ARG1)' is locked for editing by:\n\n$(ARG2)\n\nTry again later to save document or save a copy of that document.\n\n"
-msgstr ""
+msgstr "ਡੌਕੂਮੈਂਟ ਫਾਇਲ '$(ARG1)' ਨੂੰ ਸੋਧਣ ਲਈ ਲਾਕ ਕੀਤਾ:\n\n$(ARG2)\n\nਡੌਕੂਮੈਂਟ ਨੂੰ ਬਾਅਦ 'ਚ ਸੰਭਾਲਣ ਦੀ ਕੋਸ਼ਿਸ਼ ਕਰੋ ਜਾਂ ਉਸ ਡੌਕੂਮੈਂਦੀ ਕਾਪੀ ਸੰਭਾਲੋ।\n\n"
 
 #: source/trylater.src#STR_TRYLATER_RETRYSAVING_BTN.String.Text
 msgid  "~Retry Saving"
@@ -137,7 +137,7 @@ msgstr "ਨਿਯਤ ਪਹਿਲਾਂ ਹੀ ਮੌਜੂਦ ਹੈ"
 
 #: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_IO_MODULESIZEEXCEEDED & ERRCODE_RES_MASK).String.Text
 msgid  "You are about to save/export a password protected basic library containing module(s) \n$(ARG1)\nwhich are too large to store in binary format. If you wish users that don't have access to the library password to be able to run macros in those module(s) you must split those modules into a number of smaller modules. Do you wish to continue to save/export this library?"
-msgstr ""
+msgstr "ਤੁਸੀਂ ਇੱਕ ਪਾਸਵਰਡ ਨਾਲ ਸੁਰੱਖਿਅਤ ਬੇਸਿਕ ਲਾਇਬਰੇਰੀ ਰੱਖਣ ਵਾਲੇ ਮੋਡੀਊਲ\n$(ARG1)\nਨੂੰ ਸੰਭਾਲਣ/ਐਕਸਪੋਰਟ ਕਰਨ ਜਾ ਰਹੇ ਹੋ, ਜੋ ਕਿ ਬਾਈਨਰੀ ਫਾਰਮੈਟ ਵਿੱਚ ਸੰਭਾਲਣ ਲਈ ਬਹੁਤ ਵੱਡਾ ਹੈ। ਜੇ ਤੁਸੀਂ ਚਾਹੁੰਦੇ ਹੋ ਕਿ ਉਹ ਯੂਜ਼ਰ ਇਸ ਮੋਡੀਊਲ ਵਿੱਚ ਮੌਜੂਦ ਮਾਈਕਰੋ ਨੂੰ ਚਲਾ ਸਕਣ, ਜਿੰਨ੍ਹਾਂ ਕੋਲ ਵਰਤਣ ਲਈ ਲਾਇਬਰੇਰੀ ਪਾਸਵਰਡ ਨਾ ਹੋਵੇ ਤਾਂ, ਤੁਹਾਨੂੰ ਇਹ ਮੋਡੀਊਲਾਂ ਨੂੰ ਹੋਰ ਛੋਟੇ ਮੋਡੀਊਲਾਂ ਵਿੱਚ ਵੰਡਣਾ ਪਵੇਗਾ। ਕੀ ਤੁਸੀਂ ਇਹ ਲਾਇਬਰੇਰੀ ਨੂੰ ਸੰਭਾਲਣ/ਐਕਸਪੋਰਟ ਕਰਨ ਦੀ ਕਾਰਵਾਈ ਨੂੰ ਜਾਰੀ ਰੱਖਣਾ ਚਾਹੁੰਦੇ ਹੋ?"
 
 #: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_IO_BADCRC & ERRCODE_RES_MASK).String.Text
 msgid  "The data from $(ARG1) has an incorrect checksum."
@@ -241,11 +241,11 @@ msgstr "ਜੰਤਰ $(ARG1) ਤੇ ਕੋਈ ਥਾਂ ਬਾਕੀ ਨਹੀ�
 
 #: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_IO_TOOMANYOPENFILES & ERRCODE_RES_MASK).String.Text
 msgid  "The operation on $(ARG1) cannot be performed because too many files are already open."
-msgstr ""
+msgstr "$(ARG1) ਤੇ ਕਾਰਵਾਈ ਨੂੰ ਕੀਤਾ ਨਹੀਂ ਜਾ ਸਕਦਾ ਹੈ, ਕਿਉਂਕਿ ਕਈ ਫਾਇਲਾਂ ਖੁੱਲੀਆਂ ਹਨ।"
 
 #: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_IO_OUTOFMEMORY & ERRCODE_RES_MASK).String.Text
 msgid  "The operation on $(ARG1) cannot be performed because there is no more memory available."
-msgstr ""
+msgstr "$(ARG1) ਤੇ ਕਾਰਵਾਈ ਨੂੰ ਨਹੀਂ ਕੀਤਾ ਜਾ ਸਕਦਾ ਹੈ, ਕਿਉਂਕਿ ਮੈਮੋਰੀ ਉਪਲੱਬਧ ਨਹੀਂ ਹੈ।"
 
 #: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_IO_PENDING & ERRCODE_RES_MASK).String.Text
 msgid  "The operation on $(ARG1) cannot continue because more data is pending."
@@ -289,11 +289,11 @@ msgstr "ਇੰਸਟਾਲ ਜਾਵਾ ਵਰਜਨ $(ARG1) ਸਹਿਯੋਗ�
 
 #: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_WRONGJAVA_MIN & ERRCODE_RES_MASK).String.Text
 msgid  "The installed Java version is not supported, at least version $(ARG1) is required."
-msgstr ""
+msgstr "ਇੰਸਟਾਲ ਜਾਵਾ ਵਰਜਨ ਸਹਿਯੋਗੀ ਨਹੀਂ ਹੈ, ਘੱਟੋ-ਘੱਟ ਵਰਜਨ $(ARG1) ਲੋੜੀਂਦਾ ਹੈ।"
 
 #: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_WRONGJAVA_VERSION_MIN & ERRCODE_RES_MASK).String.Text
 msgid  "The installed Java version $(ARG1) is not supported, at least version $(ARG2) is required."
-msgstr ""
+msgstr "ਇੰਟਸਟਾਲ ਕੀਤਾ ਜਾਵਾ ਵਰਜਨ $(ARG1) ਸਹਿਯੋਗੀ ਨਹੀਂ ਹੈ, ਨਵਾਂ ਵਰਜਨ $(ARG2) ਲੋੜੀਂਦਾ ਹੈ।"
 
 #: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_BADPARTNERSHIP & ERRCODE_RES_MASK).String.Text
 msgid  "The data associated with the partnership is corrupted."
@@ -325,31 +325,31 @@ msgstr "ਡਾਇਰੈਕਟਰੀ $(ARG1) ਵਿੱਚ ਇਕਾਈ ਨਹੀ�
 
 #: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_IO_UNSUPPORTEDOVERWRITE & ERRCODE_RES_MASK).String.Text
 msgid  "%PRODUCTNAME cannot keep files from being overwritten when this transmission protocol is used. Do you want to continue anyway?"
-msgstr ""
+msgstr "%PRODUCTNAME ਫਾਇਲਾਂ, ਜੋ ਕਿ ਇਸ ਸੰਚਾਰ ਪ੍ਰੋਟੋਕਾਲ ਰਾਹੀਂ ਲਿਖੀਆਂ ਜਾਣੀਆਂ ਹਨ, ਨੂੰ ਰੱਖ ਨਹੀਂ ਸਕਦਾ ਹੈ। ਕੀ ਤੁਸੀਂ ਕਿਸੇ ਵੀ ਤਰਾਂ ਜਾਰੀ ਰੱਖਣਾ ਚਾਹੁੰਦੇ ਹੋ?"
 
 #: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_IO_BROKENPACKAGE & ERRCODE_RES_MASK).String.Text
 msgid  "The file '$(ARG1)' is corrupt and therefore cannot be opened. %PRODUCTNAME can try to repair the file.\n\nThe corruption could be the result of document manipulation or of structural document damage due to data transmission.\n\nWe recommend that you do not trust the content of the repaired document.\nExecution of macros is disabled for this document.\n\nShould %PRODUCTNAME repair the file?\n"
-msgstr ""
+msgstr "ਫਾਇਲ '$(ARG1)' ਨਿਕਾਰਾ ਹੈ ਅਤੇ ਇਸਕਰਕੇ ਇਸ ਨੂੰ ਖੋਲ੍ਹਿਆ ਨਹੀਂ ਜਾ ਸਕਦਾ ਹੈ। %PRODUCTNAME ਫਾਇਲ ਦੀ ਰਿਪੇਅਰ ਕਰਨ ਦੀ ਕੋਸ਼ਿਸ਼ ਕਰ ਸਕਦਾ ਹੈ।\nਨਿਕਾਰਾ ਹੋਣਾ ਡੌਕੂਮੈਂਟ ਬਦਲਣ ਦਾ ਨਤੀਜਾ ਹੋ ਸਕਦਾ ਹੈ ਜਾਂ ਡਾਟਾ ਭੇਜਣ ਦੇ ਦੌਰਾਨ ਡੌਕੂਮੈਂਟ ਢਾਂਚੇ ਨੂੰ ਹੋਏ ਨੁਕਸਾਨ ਕਰਕੇ।\n\nਅਸੀਂ ਸਿਫਾਰਸ਼ ਕਰਦੇ ਹਾਂ ਕਿ ਤੁਸੀਂ ਰਿਪੇਅਰ ਕੀਤੇ ਡੌਕੂਮੈਂਟ ਦੀ ਸਮੱਗਰੀ ਉੱਤੇ ਭਰੋਸਾ ਨਾ ਕਰੋ।\nਇਸ ਡੌਕੂਮੈਂਟ 'ਚ ਮਾਈਕਰੋ ਚੱਲਣ ਤੋਂ ਰੋਕ ਦਿੱਤੇ ਗਏ ਹਨ।\n\nਕੀ %PRODUCTNAME ਫਾਇਲ ਰਿਪੇਅਰ ਕਰੇ?\n"
 
 #: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_IO_BROKENPACKAGE_CANTREPAIR & ERRCODE_RES_MASK).String.Text
 msgid  "The file '$(ARG1)' could not be repaired and therefore cannot be opened."
-msgstr ""
+msgstr "ਫਾਇਲ '$(ARG1)' ਦੀ ਮੁਰੰਮਤ ਨਹੀਂ ਹੋ ਸਕਦੀ ਹੈ ਅਤੇ ਇਸਕਰਕੇ ਖੋਲਿਆ ਨਹੀਂ ਜਾ ਸਕਦਾ ਹੈ।"
 
 #: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_CONFIGURATION_BROKENDATA_NOREMOVE & ERRCODE_RES_MASK).String.Text
 msgid  "Configuration data in '$(ARG1)' is corrupted. Without this data some functions may not operate correctly.\nDo you want to continue startup of %PRODUCTNAME without the corrupted configuration data?"
-msgstr ""
+msgstr "'$(ARG1)' ਵਿੱਚ ਸੰਰਚਨਾ ਡਾਟਾ ਨਿਕਾਰਾ ਹੋ ਗਿਆ ਹੈ। ਇਸ ਡਾਟੇ ਬਿਨਾਂ ਹੋ ਸਕਦਾ ਹੈ ਕਿ ਕੁਝ ਫੰਕਸ਼ਨ ਠੀਕ ਤਰਾਂ ਕੰਮ ਨਾ ਕਰਨ।\nਕੀ ਤੁਸੀਂ ਨਿਕਾਰਾ ਸੰਰਚਨਾ ਡਾਟੇ ਬਿਨਾਂ %PRODUCTNAME ਨੂੰ ਚਲਾਉਣਾ ਜਾਰੀ ਰੱਖਣਾ ਚਾਹੁੰਦੇ ਹੋ?"
 
 #: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_CONFIGURATION_BROKENDATA_WITHREMOVE & ERRCODE_RES_MASK).String.Text
 msgid  "The personal configuration file '$(ARG1)' is corrupted and must be deleted to continue. Some of your personal settings may be lost.\nDo you want to continue startup of %PRODUCTNAME without the corrupted configuration data?"
-msgstr ""
+msgstr "'$(ARG1)' ਵਿੱਚ ਨਿੱਜੀ ਸੰਰਚਨਾ ਡਾਟਾ ਨਿਕਾਰਾ ਹੋ ਗਿਆ ਹੈ ਅਤੇ ਜਾਰੀ ਰੱਖਣ ਲਈ ਹਟਾਉਣਾ ਲਾਜ਼ਮੀ ਹੈ। ਤੁਹਾਡੀ ਕੁਝ ਨਿੱਜੀ ਜਾਣਕਾਰੀ ਖਤਮ ਹੋ ਸਕਦੀ ਹੈ।।\nਕੀ ਤੁਸੀਂ ਨਿਕਾਰਾ ਸੰਰਚਨਾ ਡਾਟੇ ਬਿਨਾਂ %PRODUCTNAME ਨੂੰ ਚਲਾਉਣਾ ਜਾਰੀ ਰੱਖਣਾ ਚਾਹੁੰਦੇ ਹੋ?"
 
 #: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_CONFIGURATION_BACKENDMISSING & ERRCODE_RES_MASK).String.Text
 msgid  "The configuration data source '$(ARG1)' is unavailable. Without this data some functions may not operate correctly."
-msgstr ""
+msgstr "ਸੰਰਚਨਾ ਡਾਟਾ ਸਰੋਤ '$(ARG1)' ਵਿੱਚ ਕੁਝ ਸੰਰਚਨਾ ਡਾਟਾ ਉਪਲੱਬਧ ਨਹੀਂ ਹੈ। ਇਸ ਡਾਟਾ ਬਿਨਾਂ ਕੁਝ ਫੰਕਸ਼ਨ ਸ਼ਾਇਦ ਠੀਕ ਤਰਾਂ ਕੰਮ ਨਾ ਕਰਨ।"
 
 #: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_CONFIGURATION_BACKENDMISSING_WITHRECOVER & ERRCODE_RES_MASK).String.Text
 msgid  "The configuration data source '$(ARG1)' is unavailable. Without this data some functions may not operate correctly.\nDo you want to continue startup of %PRODUCTNAME without the missing configuration data?"
-msgstr ""
+msgstr "ਸੰਰਚਨਾ ਡਾਟਾ ਸਰੋਤ '$(ARG1)' ਉਪਲੱਬਧ ਨਹੀਂ ਹੈ। ਇਸ ਡਾਟੇ ਬਿਨਾਂ ਹੋ ਸਕਦਾ ਹੈ ਕਿ ਕੁਝ ਫੰਕਸ਼ਨ ਠੀਕ ਤਰਾਂ ਕੰਮ ਨਾ ਕਰਨ।\nਕੀ ਤੁਸੀਂ ਨਿਕਾਰਾ ਸੰਰਚਨਾ ਡਾਟੇ ਬਿਨਾਂ %PRODUCTNAME ਨੂੰ ਚਲਾਉਣਾ ਜਾਰੀ ਰੱਖਣਾ ਚਾਹੁੰਦੇ ਹੋ?"
 
 #: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_INVALID_XFORMS_SUBMISSION_DATA & ERRCODE_RES_MASK).STRING.Text
 msgid  "The form contains invalid data. Do you still want to continue?"
@@ -357,11 +357,11 @@ msgstr "ਇਸ ਫਾਰਮ ਵਿੱਚ ਗਲਤ ਡਾਟਾ ਹੈ। ਕੀ
 
 #: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_LOCKING_LOCKED & ERRCODE_RES_MASK).String.Text
 msgid  "The file $(ARG1) is locked by another user. Currently, another write access to this file cannot be granted."
-msgstr ""
+msgstr "ਫਾਇਲ $(ARG1) ਹੋਰ ਯੂਜ਼ਰ ਨੇ ਲਾਕ ਕੀਤੀ ਹੈ। ਇਸ ਸਮੇਂ, ਹੋਰ ਲਿਖਣ ਲਈ ਹੋਰ ਅਧਿਕਾਰ ਨਹੀਂ ਦਿੱਤੇ ਜਾ ਸਕਦੇ।"
 
 #: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_LOCKING_LOCKED_SELF & ERRCODE_RES_MASK).String.Text
 msgid  "The file $(ARG1) is locked by yourself. Currently, another write access to this file cannot be granted."
-msgstr ""
+msgstr "ਫਾਇਲ $(ARG1) ਤੁਹਾਡੇ ਵਲੋਂ ਲਾਕ ਕੀਤੀ ਗਈ ਹੈ। ਇਸ ਵੇਲੇ, ਇਸ ਫਾਇਲ ਲਈ ਹੋਰ ਲਿਖਣ ਅਧਿਕਾਰ ਨਹੀਂ ਦਿੱਤਾ ਜਾ ਸਕਦਾ।"
 
 #: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_LOCKING_NOT_LOCKED & ERRCODE_RES_MASK).String.Text
 msgid  "The file $(ARG1) is currently not locked by yourself."
@@ -377,15 +377,15 @@ msgstr ""
 
 #: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_SSLWARN_EXPIRED_1).STRING.Text
 msgid  "$(ARG1) is a site that uses a security certificate to encrypt data during transmission, but its certificate expired on $(ARG2).\n\nYou should check to make sure that your computer's time is correct."
-msgstr ""
+msgstr "$(ARG1) ਇੱਕ ਸਾਈਟ ਹੈ, ਜੋ ਕਿ ਟਰਾਂਸਮਿਸ਼ਨ ਦੌਰਾਨ ਇੰਕ੍ਰਿਪਟ ਡਾਟੇ ਵਾਸਤੇ ਇੱਕ ਸੁਰੱਖਿਆ ਸਰਟੀਫਿਕੇਟ ਦੀ ਵਰਤੋਂ ਕਰਦੀ ਹੈ, ਪਰ ਸਰਟੀਫਿਕੇਟ ਦੀ ਮਿਆਦ $(ARG2) ਨੂੰ ਖਤਮ ਹੋ ਗਈ ਹੈ।\n\nਤੁਹਾਨੂੰ ਇਹ ਯਕੀਨੀ ਬਣਾਉਣਾ ਚਾਹੀਦੀ ਹੈ ਕਿ ਤੁਹਾਡੇ ਕੰਪਿਊਟਰ ਦਾ ਟਾਈਮ ਸਹੀਂ ਹੈ।"
 
 #: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_SSLWARN_DOMAINMISMATCH_1).STRING.Text
 msgid  "You have attempted to establish a connection with $(ARG1). However, the security certificate presented belongs to $(ARG2). It is possible, though unlikely, that someone may be trying to intercept your communication with this web site.\n\nIf you suspect the certificate shown does not belong to $(ARG1), please cancel the connection and notify the site administrator.\n\nWould you like to continue anyway?"
-msgstr ""
+msgstr "ਤੁਸੀਂ $(ARG1) ਨਾਲ ਇੱਕ ਕੁਨੈਕਸ਼ਨ ਬਣਾਉਣ ਦੀ ਕੋਸ਼ਿਸ਼ ਕੀਤੀ ਹੈ। ਪਰ ਦਿੱਤਾ ਗਿਆ ਸੁਰੱਖਿਆ ਸਰਟੀਫਿਕੇਟ $(ARG2) ਨਾਲ ਸਬੰਧਿਤ ਹੈ। ਇਹ ਸੰਭਵ ਹੈ ਕਿ ਕੋਈ ਇਸ ਵੈੱਬ ਸਾਈਟ ਨਾਲ ਤੁਹਾਡੇ ਸੰਚਾਰ ਵਿੱਚ ਦਖ਼ਲ ਦੇ ਰਿਹਾ ਹੋਵੇ।\n\nਜੇ ਤੁਹਾਨੂੰ ਸ਼ੱਕ ਹੈ ਕਿ ਵੇਖਾਇਆ ਸਰਟੀਫਿਕੇਟ $(ARG1) ਨਾਲ ਸਬੰਧਿਤ ਨਹੀਂ ਹੈ ਤਾਂ ਕੁਨੈਕਸ਼ਨ ਰੱਦ ਕਰੋ ਦਿਓ ਅਤੇ ਸਾਈਟ ਪਰਸ਼ਾਸ਼ਕ ਨੂੰ ਸੂਚਨਾ ਦਿਓ।\n\nਕੀ ਤੁਸੀਂ ਜਾਰੀ ਰੱਖਣਾ ਚਾਹੁੰਦੇ ਹੋ?"
 
 #: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_SSLWARN_INVALID_1).STRING.Text
 msgid  "The certificate could not be validated. You should examine this site's certificate carefully.\n\nIf you suspect the certificate shown, please cancel the connection and notify the site administrator."
-msgstr ""
+msgstr "ਸਰਟੀਫਿਕੇਟ ਦੀ ਵੈਧਤਾ ਜਾਂਚੀ ਨਹੀਂ ਜਾ ਸਕੀ ਹੈ। ਤੁਹਾਨੂੰ ਇਸ ਸਾਈਟ ਦਾ ਸਰਟੀਫਿਕੇਟ ਧਿਆਨ ਨਾਲ ਚੈੱਕ ਕਰਨਾ ਚਾਹੀਦਾ ਹੈ।\n\nਜੇ ਤੁਹਾਨੂੰ ਵੇਖਾਏ ਸਰਟੀਫਿਕੇਟ ਉੱਤੇ ਸ਼ੱਕ ਹੈ ਤਾਂ, ਕੁਨੈਕਸ਼ਨ ਰੱਦ ਕਰ ਦਿਓ ਅਤੇ ਸਾਈਟ ਦੇ ਪਰਸ਼ਾਸ਼ਕ ਨੂੰ ਸੂਚਨਾ ਦਿਓ।"
 
 #: source/ids.src#RID_UUI_ERRHDL.(TITLE_UUI_SSLWARN_DOMAINMISMATCH).STRING.Text
 msgid  "Security Warning: Domain Name Mismatch"
@@ -413,11 +413,11 @@ msgstr "ਸਰਵਰ ਤੋਂ ਸੁਨੇਹਾ:"
 
 #: source/logindlg.src#DLG_UUI_LOGIN.FT_INFO_LOGIN_REQUEST.FixedText.Text
 msgid  "Enter user name and password for: \n%1"
-msgstr ""
+msgstr "%1 :\nਲਈ ਯੂਜ਼ਰ ਨਾਂ ਤੇ ਪਾਸਵਰਡ ਦਿਓ"
 
 #: source/logindlg.src#DLG_UUI_LOGIN.STR_LOGIN_REALM.String.Text
-msgid  "Enter user name and password for: \n"%2" on %1"
-msgstr ""
+msgid  "Enter user name and password for: \n\"%2\" on %1"
+msgstr "ਯੂਜ਼ਰ ਨਾਂ ਤੇ ਪਾਸਵਰਡ ਦਿਓ ਜੀ:\n%1 ਉੱਤੇ \"%2\""
 
 #: source/logindlg.src#DLG_UUI_LOGIN.FT_LOGIN_PATH.FixedText.Text
 msgid  "~Path"
@@ -469,7 +469,7 @@ msgstr "ਭੇਜੋ(~S)"
 
 #: source/cookiedg.src#STR_COOKIES_RECV_START.String.Text
 msgid  "The '${HOST}' server wishes to set one or more cookies.\nCookies contain information referring to certain URL classes. If %PRODUCTNAME later requests a document with a URL corresponding to the class of a previously set cookie, %PRODUCTNAME will send this information to the server. This allows a server to recognize the status of a WWW application, e.g., when shopping online.\n\nThe following Cookies should be set:\n\n"
-msgstr ""
+msgstr "'${HOST}' ਸਰਵਰ ਇੱਕ ਜਾਂ ਵਧੇਰੇ ਕੂਕੀਜ਼ ਦੇਣਾ ਚਾਹੁੰਦਾ ਹੈ।\nਕੂਕੀਜ਼(Cookies) ਕੁੱਲ URL ਕਲਾਸਾਂ ਲਈ ਕੁਝ ਹਵਾਲਾ ਜਾਣਕਾਰੀ ਰੱਖਦੇ ਹਨ। ਜੇਕਰ %PRODUCTNAME ਨੂੰ ਪਹਿਲੀ ਦਿੱਤੇ ਕੂਕੀਜ਼ ਦੇ ਵਰਗ ਲਈ ਕਿਸੇ URL ਲਈ ਡੌਕੂਮੈਂਟ ਦੀ ਲੋੜ ਪਵੇ ਤਾਂ %PRODUCTNAME ਸਰਵਰ ਕੋਲੋਂ ਮੰਗ ਕਰੇਗੀ। ਇਹ ਸਰਵਰ ਨੂੰ ਇੱਕ WWW ਐਪਲੀਕੇਸ਼ਨ ਦੀ ਸਥਿਤੀ ਪਛਾਣਨ ਲਈ ਮੱਦਦ ਕਰੇਗਾ, ਜਿਵੇਂ ਕਿ ਆਨਲਾਇਨ ਖਰੀਦਦਾਰੀ ਆਦਿ।\n\nਹੇਠ ਦਿੱਤੇ ਕੂਕੀਜ਼ ਦਿੱਤੇ ਜਾਣਗੇ:\n\n"
 
 #: source/cookiedg.src#STR_COOKIES_RECV_COOKIES.String.Text
 msgid  "Domain: ${DOMAIN}, Path: ${PATH}, Cookie: ${COOKIE}.\n"
@@ -501,7 +501,7 @@ msgstr "ਪਾਸਵਰਡ ਗਲਤ ਹੈ। ਫਾਇਲ ਸੋਧੀ ਨਹ�
 
 #: source/passworderrs.src#STR_ERROR_MASTERPASSWORD_WRONG.String.Text
 msgid  "The master password is incorrect."
-msgstr ""
+msgstr "ਗਲਤ ਮਾਸਟਰ ਪਾਸਵਰਡ ਦਿੱਤਾ ਗਿਆ ਹੈ। %PRODUCTNAME ਮਾਸਟਰ ਪਾਸਵਰਡ ਨਾਲ ਸੁਰੱਖਿਅਤ ਵੈੱਬ ਲਾਗਇਨ ਜਾਣਕਾਰੀ ਨੂੰ ਵਰਤ ਸਕਦਾ ਹੈ।\n\nਨੋਟ: ਪਾਸਵਰਡ ਅੱਖਰ ਆਕਾਰ ਉੱਤੇ ਨਿਰਭਰ ਹੈ ਅਤੇ ਘੱਟੋ-ਘੱਟ ਪੰਜ ਅੱਖਰ ਦੀ ਲੰਬਾਈ ਵਾਲਾ ਹੈ।"
 
 #: source/passworderrs.src#STR_ERROR_SIMPLE_PASSWORD_WRONG.String.Text
 msgid  "The password is incorrect."
@@ -529,7 +529,7 @@ msgstr "ਵਰਤੋਂ ਵਿੱਚ ਡੌਕੂਮੈਂਟ"
 
 #: source/openlocked.src#STR_OPENLOCKED_MSG.String.Text
 msgid  "Document file '$(ARG1)' is locked for editing by:\n\n$(ARG2)\n\nOpen document read-only or open a copy of the document for editing.\n\n"
-msgstr ""
+msgstr "ਡੌਕੂਮੈਂਟ ਫਾਇਲ '$(ARG1)' ਨੂੰ ਸੋਧਣ ਲਈ ਲਾਕ ਕੀਤਾ ਗਿਆ ਹੈ:\n\n$(ARG2)\n\nਡੌਕੂਮੈਂਟ ਨੂੰ ਕੇਵਲ ਪੜ੍ਹਨ ਲਈ ਖੋਲ੍ਹੋ ਜਾਂ ਸੋਧਣ ਲਈ ਡੌਕੂਮੈਂਟ ਦੀ ਇੱਕ ਕਾਪੀ ਖੋਲ੍ਹੋ।\n\n"
 
 #: source/openlocked.src#STR_OPENLOCKED_OPENREADONLY_BTN.String.Text
 msgid  "Open ~Read-Only"
@@ -549,7 +549,7 @@ msgstr ""
 
 #: source/filechanged.src#STR_FILECHANGED_MSG.String.Text
 msgid  "The file has been changed since it was opened for editing in %PRODUCTNAME. Saving your version of the document will overwrite changes made by others.\n\nDo you want to save anyway?\n\n"
-msgstr ""
+msgstr "ਫਾਇਲ ਨੂੰ %PRODUCTNAME ਵਿੱਚ ਸੋਧਣ ਦੇ ਦੌਰਾਨ ਬਦਲਿਆ ਗਿਆ ਹੈ। ਡੌਕੂਮੈਂਧ ਦੇ ਤੁਹਾਡੇ ਵਰਜਨ ਨੂੰ ਸੰਭਾਲਣ ਨਾਲ ਹੋਰਾਂ ਵਲੋਂ ਕੀਤੇ ਬਦਾਲਅ ਅਣਡਿੱਠੇ ਕੀਤੇ ਜਾਣਗੇ।\n\nਕੀ ਤੁਸੀਂ ਕਿਵੇਂ ਵੀ ਸੰਭਾਲਣਾ ਚਾਹੁੰਦੇ ਹੋ?\n\n"
 
 #: source/filechanged.src#STR_FILECHANGED_SAVEANYWAY_BTN.String.Text
 msgid  "~Save Anyway"
@@ -561,7 +561,7 @@ msgstr "%PRODUCTNAME ਅੱਪਡੇਟ ਉਪਲੱਬਧ ਹੈ"
 
 #: source/newerverwarn.src#RID_DLG_NEWER_VERSION_WARNING.FT_INFO.FixedText.Text
 msgid  "This document was created by a newer version of %PRODUCTNAME. It may contain features not supported by your current version.\n\nClick 'Update Now...' to run online update and get the latest version of %PRODUCTNAME."
-msgstr ""
+msgstr "ਇਹ ਡੌਕੂਮੈਂਟ ਨੂੰ %PRODUCTNAME ਦੇ ਨਵੇਂ ਵਰਜਨ ਨਾਲ ਬਣਾਇਆ ਗਿਆ ਹੈ। ਇਸ ਵਿੱਚ ਕਈ ਫੀਚਰ ਹੋ ਸਕਦੇ ਹਨ, ਜੋ ਕਿ ਤੁਹਾਡੇ ਮੌਜੂਦਾ ਵਰਜਨ ਲਈ ਸਹਿਯੋਗ ਨਾ ਹੋਣ।\n\nਆਨਲਾਈਨ ਅੱਪਡੇਟ ਕਰਨ ਲਈ 'ਹੁਣੇ ਅੱਪਡੇਟ ਕਰੋ...' ਉੱਤੇ ਕਲਿੱਕ ਕਰੋ ਅਤੇ %PRODUCTNAME ਲਈ ਨਵਾਂ ਵਰਜਨ ਲਵੋ।"
 
 #: source/newerverwarn.src#RID_DLG_NEWER_VERSION_WARNING.PB_UPDATE.PushButton.Text
 msgid  "~Update Now..."
@@ -609,7 +609,7 @@ msgstr "ਦਸਤਖਤ ਵੇਖੋ..."
 
 #: source/secmacrowarnings.src#RID_XMLSECDLG_MACROWARN.FI_DESCR2.FixedText.Text
 msgid  "Macros may contain viruses. Disabling macros for a document is always safe. If you disable macros you may lose functionality provided by the document macros."
-msgstr ""
+msgstr "ਮਾਈਕਰੋ ਵਿੱਚ ਵਾਈਰਸ ਹੋ ਸਕਦਾ ਹੈ। ਇੱਕ ਡੌਕੂਮੈਂਟ ਵਿੱਚ ਮਾਈਕਰੋ ਨੂੰ ਬੰਦ ਰੱਖਣਾ ਹਮੇਸ਼ਾਂ ਹੀ ਸੁਰੱਖਿਅਤੇ ਰਹਿੰਦਾ ਹੈ। ਜੇ ਤੁਸੀਂ ਮਾਈਕਰੋ ਨੂੰ ਆਯੋਗ ਕਰਦੇ ਹੋ ਤਾਂ ਤੁਸੀ ਡੌਕੂਮੈਂਟ ਮਾਈਕਰੋ ਵਲੋਂ ਦਿੱਤੀ ਸਹੂਲਤ ਤੋਂ ਵਾਂਝੇ ਰਹੋਗੇ।"
 
 #: source/secmacrowarnings.src#RID_XMLSECDLG_MACROWARN.CB_ALWAYSTRUST.CheckBox.Text
 msgid  "Always trust macros from this source"
@@ -637,7 +637,7 @@ msgstr "ਮਾਸਟਰ ਪਾਸਵਰਡ ਸੈੱਟ ਕਰੋ"
 
 #: source/masterpasscrtdlg.src#DLG_UUI_MASTERPASSWORD_CRT.FT_INFOTEXT.FixedText.Text
 msgid  "Passwords for web connections are protected by a master password. You will be asked to enter it once per session, if %PRODUCTNAME retrieves a password from the protected password list."
-msgstr ""
+msgstr "ਵੈੱਬ ਕੁਨੈਕਸ਼ਨਾਂ ਲਈ ਪਾਸਵਰਡ ਇੱਕ ਮਾਸਟਰ ਪਾਸਵਰਡ ਨਾਲ ਸੁਰੱਖਿਅਤ ਹ ਨ। ਤੁਹਾਨੂੰ ਹਰੇਕ ਸ਼ੈਸ਼ਨ ਲਈ ਇੱਕ ਵਾਰ ਪੁੱਛਿਆ ਜਾਵੇਗਾ, ਜੇ %PRODUCTNAME ਸੁਰੱਖਿਅਤ ਪਾਸਵਰਡ ਲਿਸਟ ਤੋਂ ਪਾਸਵਰਡ ਲਵੇਗਾ।"
 
 #: source/masterpasscrtdlg.src#DLG_UUI_MASTERPASSWORD_CRT.FT_MASTERPASSWORD_CRT.FixedText.Text
 msgid  "~Enter password"
@@ -649,11 +649,11 @@ msgstr "ਪਾਸਵਰਡ ਮੁੜ-ਦਿਓ(~R)"
 
 #: source/masterpasscrtdlg.src#DLG_UUI_MASTERPASSWORD_CRT.FT_CAUTIONTEXT.FixedText.Text
 msgid  "Caution: If you forget the master password, you will be unable to access any of the information protected by it. Passwords are case-sensitive."
-msgstr ""
+msgstr "ਸਾਵਧਾਨ: ਯਕੀਨੀ ਬਣਾਉ ਕਿ ਤੁਸੀਂ ਮਾਸਟਰ ਪਾਸਵਰਡ, ਜੋ ਤੁਸੀਂ ਸੈੱਟ ਕੀਤਾ ਹੈ, ਨੂੰ ਯਾਦ ਰੱਖਦੇ ਹੋ। ਜੇ ਤੁਸੀਂ ਆਪਣਾ ਮਾਸਟਰ ਪਾਸਵਰਡ ਭੁੱਲ ਗਏ ਤਾਂ ਤੁਸੀਂ ਇਸ ਨਾਲ ਸੁਰੱਖਿਅਤ ਕੋਈ ਵੀ ਜਾਣਕਾਰੀ ਪ੍ਰਾਪਤ ਨਹੀਂ ਕਰ ਸਕੋਗੇ। ਪਾਸਵਰਡ ਅੱਖਰ ਅਕਾਰ ਉੱਤੇ ਨਿਰਭਰ ਹੈ ਅਤੇ ਘੱਟੋ-ਘੱਟ 5 ਅੱਖਰ ਲੰਮਾ ਹੈ।"
 
 #: source/alreadyopen.src#STR_ALREADYOPEN_MSG.String.Text
 msgid  "Document file '$(ARG1)' is locked for editing by yourself on a different system since $(ARG2)\n\nOpen document read-only, or ignore own file locking and open the document for editing.\n\n"
-msgstr ""
+msgstr "ਡੌਕੂਮੈਂਟ ਫਾਇਲ '$(ARG1)' ਨੂੰ ਹੋਰਾਂ ਵਲੋਂ ਇੱਕ ਵੱਖਰੇ ਸਿਸਟਮ ਉੱਤੇ $(ARG2) ਤੋਂ ਲਾਕ ਕੀਤਾ ਗਿਆ ਹੈ।\n\nਡੌਕੂਮੈਂਟ ਨੂੰ ਕੇਵਲ ਪੜ੍ਹਨ ਲਈ ਖੋਲ੍ਹੋ ਜਾਂ ਆਪਣਾ ਫਾਇਲ ਲਾਕ ਅਣਡਿੱਠਾ ਕਰੋ ਅਤੇ ਸੋਧਣ ਲਈ ਡੌਕੂਮੈਂਟ ਖੋਲ੍ਹੋ।\n\n"
 
 #: source/alreadyopen.src#STR_ALREADYOPEN_READONLY_BTN.String.Text
 msgid  "Open ~Read-Only"
@@ -665,7 +665,7 @@ msgstr "ਖੋਲ੍ਹੋ(~O)"
 
 #: source/alreadyopen.src#STR_ALREADYOPEN_SAVE_MSG.String.Text
 msgid  "Document file '$(ARG1)' is locked for editing by yourself on a different system since $(ARG2)\n\nClose document on other system and retry saving or ignore own file locking and save current document.\n\n"
-msgstr ""
+msgstr "ਡੌਕੂਮੈਂਟ ਫਾਇਲ '$(ARG1)' ਨੂੰ ਹੋਰਾਂ ਵਲੋਂ ਇੱਕ ਵੱਖਰੇ ਸਿਸਟਮ ਉੱਤੇ $(ARG2) ਤੋਂ ਲਾਕ ਕੀਤਾ ਗਿਆ ਹੈ।\n\nਹੋਰ ਸਿਸਟਮ ਉੱਤੇ ਡੌਕੂਮੈਂਟ ਬੰਦ ਕਰੋ ਅਤੇ ਸੰਭਾਲਣ ਦੀ ਫੇਰ ਕੋਸ਼ਿਸ਼ ਕਰੋ ਜਾਂ ਆਪਣੀ ਫਾਇਲ ਲਾਕਿੰਗ ਅਣਡਿੱਠੀ ਕਰੋ ਅਤੇ ਮੌਜੂਦਾ ਡੌਕੂਮੈਂਟ ਸੰਭਾਲੋ।\n\n"
 
 #: source/alreadyopen.src#STR_ALREADYOPEN_RETRY_SAVE_BTN.String.Text
 msgid  "~Retry Saving"
@@ -677,4 +677,4 @@ msgstr "ਸੰਭਾਲੋ(~S)"
 
 #: source/lockfailed.src#STR_LOCKFAILED_MSG.String.Text
 msgid  "The file could not be locked for exclusive access by %PRODUCTNAME, due to missing permission to create a lock file on that file location."
-msgstr ""
+msgstr "ਫਾਇਲ ਨੂੰ %PRODUCTNAME ਵਲੋਂ ਖਾਸ ਵਰਤੋਂ ਲਾਕ ਨਹੀਂ ਕੀਤਾ ਜਾ ਸਕਿਆ, ਕਿਉਂਕਿ ਉਸ ਫਾਇਲ ਟਿਕਾਣੇ ਉੱਤੇ ਲਾਕ ਫਾਇਲ ਬਣਾਉਣ ਲਈ ਅਧਿਕਾਰ ਗੁੰਮ ਹਨ।"

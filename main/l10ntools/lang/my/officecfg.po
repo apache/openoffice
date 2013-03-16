@@ -92,8 +92,9 @@ msgid  "Dear Mr. <2>,"
 msgstr "ချစ်လှစွာသော မစ္စတာ (၂),"
 
 #: registry/data/org/openoffice/Office/Writer.xcu#..Writer.MailMergeWizard.NeutralGreetingLines
+#, fuzzy
 msgid  "To whom it may concern,;Dear Friends,;Dear Sir or Madam,;Hello,"
-msgstr ""
+msgstr "သက်ဆိုင်သူသို့ - ချစ်လှစွာသော သူငယ်ချင်းများ - ချစ်လှစွာသော ဆရာ (သို့) ဂုဏ်သရေရှိသူ- မင်္ဂလာပါ၊"
 
 #: registry/data/org/openoffice/Office/Writer.xcu#..Writer.Insert.Caption.CaptionOrderNumberingFirst
 msgid  "true"
@@ -262,102 +263,82 @@ msgid  "10"
 msgstr ""
 
 #: registry/data/org/openoffice/Office/Common.xcu#..Common.Menus.New.m0.Title
-#, fuzzy
 msgid  "~Text Document"
 msgstr "~စာသား မှတ်တမ်းမှတ်ရာ"
 
 #: registry/data/org/openoffice/Office/Common.xcu#..Common.Menus.New.m1.Title
-#, fuzzy
 msgid  "~Spreadsheet"
 msgstr "~စာရွက်လွှာ"
 
 #: registry/data/org/openoffice/Office/Common.xcu#..Common.Menus.New.m2.Title
-#, fuzzy
 msgid  "~Presentation"
 msgstr "⁠~တင်ဆက်မှုပုံစံ"
 
 #: registry/data/org/openoffice/Office/Common.xcu#..Common.Menus.New.m3.Title
-#, fuzzy
 msgid  "~Drawing"
 msgstr "~ပုံဆွဲခြင်း"
 
 #: registry/data/org/openoffice/Office/Common.xcu#..Common.Menus.New.m4.Title
-#, fuzzy
 msgid  "Database"
 msgstr "ဒေတာဘေ့စ်"
 
 #: registry/data/org/openoffice/Office/Common.xcu#..Common.Menus.New.m6.Title
-#, fuzzy
 msgid  "~HTML Document"
 msgstr "~HTML မှတ်တမ်းမှတ်ရာ"
 
 #: registry/data/org/openoffice/Office/Common.xcu#..Common.Menus.New.m7.Title
-#, fuzzy
 msgid  "~XML Form Document"
 msgstr "~XML မှတ်တမ်းမှတ်ရာပုံစံ"
 
 #: registry/data/org/openoffice/Office/Common.xcu#..Common.Menus.New.m8.Title
-#, fuzzy
 msgid  "M~aster Document"
 msgstr "ပင်မ~မှတ်တမ်းမှတ်ရာ"
 
 #: registry/data/org/openoffice/Office/Common.xcu#..Common.Menus.New.m10.Title
-#, fuzzy
 msgid  "F~ormula"
 msgstr "ပုံ~သေနည်း"
 
 #: registry/data/org/openoffice/Office/Common.xcu#..Common.Menus.New.m11.Title
-#, fuzzy
 msgid  "~Labels"
 msgstr "~အညွှန်းများ"
 
 #: registry/data/org/openoffice/Office/Common.xcu#..Common.Menus.New.m12.Title
-#, fuzzy
 msgid  "B~usiness Cards"
 msgstr "စီးပွားရေး ~ကဒ်များ"
 
 #: registry/data/org/openoffice/Office/Common.xcu#..Common.Menus.New.m14.Title
-#, fuzzy
 msgid  "Templates a~nd Documents"
 msgstr "ပုံစံပြားများနှင့် မှတ်တမ်းမှတ်ရာများ"
 
 #: registry/data/org/openoffice/Office/Common.xcu#..Common.Menus.Wizard.m0.Title
-#, fuzzy
 msgid  "~Letter..."
 msgstr "~စာ..."
 
 #: registry/data/org/openoffice/Office/Common.xcu#..Common.Menus.Wizard.m1.Title
-#, fuzzy
 msgid  "~Fax..."
 msgstr "~ဖက်စ်..."
 
 #: registry/data/org/openoffice/Office/Common.xcu#..Common.Menus.Wizard.m2.Title
-#, fuzzy
 msgid  "~Agenda..."
 msgstr "~အစည်းအဝေးအစီအစဉ်..."
 
 #: registry/data/org/openoffice/Office/Common.xcu#..Common.Menus.Wizard.m5.Title
-#, fuzzy
 msgid  "~Presentation..."
 msgstr "~တင်ဆက်မှုပုံစံ.."
 
 #: registry/data/org/openoffice/Office/Common.xcu#..Common.Menus.Wizard.m7.Title
-#, fuzzy
 msgid  "~Web Page..."
 msgstr "~ဝဘ်စာမျက်နှာ..."
 
 #: registry/data/org/openoffice/Office/Common.xcu#..Common.Menus.Wizard.m11.Title
-#, fuzzy
 msgid  "Document ~Converter..."
 msgstr "မှတ်တမ်းမှတ်ရာ ကူးပြောင်းသူ..."
 
 #: registry/data/org/openoffice/Office/Common.xcu#..Common.Menus.Wizard.m12.Title
-#, fuzzy
 msgid  "~Euro Converter..."
 msgstr "~ဥရောပ ကူးပြောင်းသူ..."
 
 #: registry/data/org/openoffice/Office/Common.xcu#..Common.Menus.Wizard.m14.Title
-#, fuzzy
 msgid  "Address Data Source..."
 msgstr "အချက်အလက်ရင်းမြစ် လိပ်စာ..."
 
@@ -5637,192 +5618,154 @@ msgid  "Notes"
 msgstr "မှတ်စုများ"
 
 #: registry/data/org/openoffice/Office/DataAccess.xcu#..DataAccess.DriverSettings.com.sun.star.comp.sdbc.MozabDriver.MozillaPreferences.PabDescription
-#, fuzzy
 msgid  "Personal Address book"
 msgstr "ကိုယ်ရေး လိပ်စာ စာအုပ်"
 
 #: registry/data/org/openoffice/Office/DataAccess.xcu#..DataAccess.DriverSettings.com.sun.star.comp.sdbc.MozabDriver.MozillaPreferences.HisDescription
-#, fuzzy
 msgid  "Collected Addresses"
 msgstr "စုဆောင်းထားသည့် လိပ်စာများ"
 
 #: registry/data/org/openoffice/Office/DataAccess.xcu#..DataAccess.DriverSettings.com.sun.star.comp.sdbc.MozabDriver.ColumnAliases.FirstName
-#, fuzzy
 msgid  "First Name"
 msgstr "ပထမဆုံးအမည်"
 
 #: registry/data/org/openoffice/Office/DataAccess.xcu#..DataAccess.DriverSettings.com.sun.star.comp.sdbc.MozabDriver.ColumnAliases.LastName
-#, fuzzy
 msgid  "Last Name"
 msgstr "နောက်ဆုံး အမည်"
 
 #: registry/data/org/openoffice/Office/DataAccess.xcu#..DataAccess.DriverSettings.com.sun.star.comp.sdbc.MozabDriver.ColumnAliases.DisplayName
-#, fuzzy
 msgid  "Display Name"
 msgstr "အမည် ဖော်ပြပါ"
 
 #: registry/data/org/openoffice/Office/DataAccess.xcu#..DataAccess.DriverSettings.com.sun.star.comp.sdbc.MozabDriver.ColumnAliases.NickName
-#, fuzzy
 msgid  "Nickname"
 msgstr "ချစ်စနိုး အမည်"
 
 #: registry/data/org/openoffice/Office/DataAccess.xcu#..DataAccess.DriverSettings.com.sun.star.comp.sdbc.MozabDriver.ColumnAliases.PrimaryEmail
-#, fuzzy
 msgid  "E-mail"
 msgstr "အီးမေးလ်"
 
 #: registry/data/org/openoffice/Office/DataAccess.xcu#..DataAccess.DriverSettings.com.sun.star.comp.sdbc.MozabDriver.ColumnAliases.SecondEmail
-#, fuzzy
 msgid  "E-mail (2)"
 msgstr "အီးမေးလ် (၂)"
 
 #: registry/data/org/openoffice/Office/DataAccess.xcu#..DataAccess.DriverSettings.com.sun.star.comp.sdbc.MozabDriver.ColumnAliases.PreferMailFormat
-#, fuzzy
 msgid  "Mail Format"
 msgstr "အီးမေးလ် စီစဉ်ဖွဲ့စည်းမှုပုံစံ"
 
 #: registry/data/org/openoffice/Office/DataAccess.xcu#..DataAccess.DriverSettings.com.sun.star.comp.sdbc.MozabDriver.ColumnAliases.WorkPhone
-#, fuzzy
 msgid  "Phone (Work)"
 msgstr "ဖုန်း (အလုပ်)"
 
 #: registry/data/org/openoffice/Office/DataAccess.xcu#..DataAccess.DriverSettings.com.sun.star.comp.sdbc.MozabDriver.ColumnAliases.HomePhone
-#, fuzzy
 msgid  "Phone (Home)"
 msgstr "ဖုန်း (အိမ်)"
 
 #: registry/data/org/openoffice/Office/DataAccess.xcu#..DataAccess.DriverSettings.com.sun.star.comp.sdbc.MozabDriver.ColumnAliases.FaxNumber
-#, fuzzy
 msgid  "Fax"
 msgstr "ဖက်စ်"
 
 #: registry/data/org/openoffice/Office/DataAccess.xcu#..DataAccess.DriverSettings.com.sun.star.comp.sdbc.MozabDriver.ColumnAliases.PagerNumber
-#, fuzzy
 msgid  "Pager"
 msgstr "ပေဂျာ"
 
 #: registry/data/org/openoffice/Office/DataAccess.xcu#..DataAccess.DriverSettings.com.sun.star.comp.sdbc.MozabDriver.ColumnAliases.CellularNumber
-#, fuzzy
 msgid  "Mobile"
 msgstr "မိုဘိုင်း"
 
 #: registry/data/org/openoffice/Office/DataAccess.xcu#..DataAccess.DriverSettings.com.sun.star.comp.sdbc.MozabDriver.ColumnAliases.HomeAddress
-#, fuzzy
 msgid  "Address 1"
 msgstr "လိပ်စာ ၁"
 
 #: registry/data/org/openoffice/Office/DataAccess.xcu#..DataAccess.DriverSettings.com.sun.star.comp.sdbc.MozabDriver.ColumnAliases.HomeAddress2
-#, fuzzy
 msgid  "Address 2"
 msgstr "လိပ်စာ ၂"
 
 #: registry/data/org/openoffice/Office/DataAccess.xcu#..DataAccess.DriverSettings.com.sun.star.comp.sdbc.MozabDriver.ColumnAliases.HomeCity
-#, fuzzy
 msgid  "City"
 msgstr "မြို့"
 
 #: registry/data/org/openoffice/Office/DataAccess.xcu#..DataAccess.DriverSettings.com.sun.star.comp.sdbc.MozabDriver.ColumnAliases.HomeState
-#, fuzzy
 msgid  "State"
 msgstr "ပြည်"
 
 #: registry/data/org/openoffice/Office/DataAccess.xcu#..DataAccess.DriverSettings.com.sun.star.comp.sdbc.MozabDriver.ColumnAliases.HomeZipCode
-#, fuzzy
 msgid  "ZIP/Postal (Home)"
 msgstr "ဇစ်/စာပို့သင်္ကေတ (အိမ်)"
 
 #: registry/data/org/openoffice/Office/DataAccess.xcu#..DataAccess.DriverSettings.com.sun.star.comp.sdbc.MozabDriver.ColumnAliases.HomeCountry
-#, fuzzy
 msgid  "Country"
 msgstr "နိုင်ငံ"
 
 #: registry/data/org/openoffice/Office/DataAccess.xcu#..DataAccess.DriverSettings.com.sun.star.comp.sdbc.MozabDriver.ColumnAliases.WorkAddress
-#, fuzzy
 msgid  "Work Address"
 msgstr "အလုပ် လိပ်စာ"
 
 #: registry/data/org/openoffice/Office/DataAccess.xcu#..DataAccess.DriverSettings.com.sun.star.comp.sdbc.MozabDriver.ColumnAliases.WorkAddress2
-#, fuzzy
 msgid  "Work Address 2"
 msgstr "အလုပ် လိပ်စာ ၂"
 
 #: registry/data/org/openoffice/Office/DataAccess.xcu#..DataAccess.DriverSettings.com.sun.star.comp.sdbc.MozabDriver.ColumnAliases.WorkCity
-#, fuzzy
 msgid  "City (Work)"
 msgstr "မြို့ (အလုပ်)"
 
 #: registry/data/org/openoffice/Office/DataAccess.xcu#..DataAccess.DriverSettings.com.sun.star.comp.sdbc.MozabDriver.ColumnAliases.WorkState
-#, fuzzy
 msgid  "State (Work)"
 msgstr "ပြည် (အလုပ်)"
 
 #: registry/data/org/openoffice/Office/DataAccess.xcu#..DataAccess.DriverSettings.com.sun.star.comp.sdbc.MozabDriver.ColumnAliases.WorkZipCode
-#, fuzzy
 msgid  "Zip/Postal (Work)"
 msgstr "ဇစ်/စာပို့သင်္ကေတ (အလုပ်)"
 
 #: registry/data/org/openoffice/Office/DataAccess.xcu#..DataAccess.DriverSettings.com.sun.star.comp.sdbc.MozabDriver.ColumnAliases.WorkCountry
-#, fuzzy
 msgid  "Country (Work)"
 msgstr "နိုင်ငံ (အလုပ်)"
 
 #: registry/data/org/openoffice/Office/DataAccess.xcu#..DataAccess.DriverSettings.com.sun.star.comp.sdbc.MozabDriver.ColumnAliases.JobTitle
-#, fuzzy
 msgid  "Job Title"
 msgstr "အလုပ် ခေါင်းစဉ်"
 
 #: registry/data/org/openoffice/Office/DataAccess.xcu#..DataAccess.DriverSettings.com.sun.star.comp.sdbc.MozabDriver.ColumnAliases.Department
-#, fuzzy
 msgid  "Department"
 msgstr "ဌာန"
 
 #: registry/data/org/openoffice/Office/DataAccess.xcu#..DataAccess.DriverSettings.com.sun.star.comp.sdbc.MozabDriver.ColumnAliases.Company
-#, fuzzy
 msgid  "Company"
 msgstr "ကုမ္ပဏီ"
 
 #: registry/data/org/openoffice/Office/DataAccess.xcu#..DataAccess.DriverSettings.com.sun.star.comp.sdbc.MozabDriver.ColumnAliases.WebPage1
-#, fuzzy
 msgid  "Web Page (Work)"
 msgstr "ဝဘ်စာမျက်နှာ (အလုပ်)"
 
 #: registry/data/org/openoffice/Office/DataAccess.xcu#..DataAccess.DriverSettings.com.sun.star.comp.sdbc.MozabDriver.ColumnAliases.WebPage2
-#, fuzzy
 msgid  "Web Page (Home)"
 msgstr "ဝဘ်စာမျက်နှာ (အိမ်)"
 
 #: registry/data/org/openoffice/Office/DataAccess.xcu#..DataAccess.DriverSettings.com.sun.star.comp.sdbc.MozabDriver.ColumnAliases.BirthYear
-#, fuzzy
 msgid  "Birth Year"
 msgstr "မွေးနှစ်"
 
 #: registry/data/org/openoffice/Office/DataAccess.xcu#..DataAccess.DriverSettings.com.sun.star.comp.sdbc.MozabDriver.ColumnAliases.BirthMonth
-#, fuzzy
 msgid  "Birth Month"
 msgstr "မွေးလ"
 
 #: registry/data/org/openoffice/Office/DataAccess.xcu#..DataAccess.DriverSettings.com.sun.star.comp.sdbc.MozabDriver.ColumnAliases.BirthDay
-#, fuzzy
 msgid  "Birth Day"
 msgstr "မွေးနေ့"
 
 #: registry/data/org/openoffice/Office/DataAccess.xcu#..DataAccess.DriverSettings.com.sun.star.comp.sdbc.MozabDriver.ColumnAliases.Custom1
-#, fuzzy
 msgid  "Custom 1"
 msgstr "စိတ်ကြိုက် ၁"
 
 #: registry/data/org/openoffice/Office/DataAccess.xcu#..DataAccess.DriverSettings.com.sun.star.comp.sdbc.MozabDriver.ColumnAliases.Custom2
-#, fuzzy
 msgid  "Custom 2"
 msgstr "စိတ်ကြိုက် ၂"
 
 #: registry/data/org/openoffice/Office/DataAccess.xcu#..DataAccess.DriverSettings.com.sun.star.comp.sdbc.MozabDriver.ColumnAliases.Custom3
-#, fuzzy
 msgid  "Custom 3"
 msgstr "စိတ်ကြိုက် ၃"
 
 #: registry/data/org/openoffice/Office/DataAccess.xcu#..DataAccess.DriverSettings.com.sun.star.comp.sdbc.MozabDriver.ColumnAliases.Custom4
-#, fuzzy
 msgid  "Custom 4"
 msgstr "စိတ်ကြိုက် ၄"
 
@@ -6232,32 +6175,26 @@ msgid  "All files"
 msgstr "ဖိုင်များအားလုံး"
 
 #: registry/data/org/openoffice/Office/UI/BasicIDEWindowState.xcu#..BasicIDEWindowState.UIElements.States.private:resource/toolbar/standardbar.UIName
-#, fuzzy
 msgid  "Standard"
 msgstr "စံနှုန်း"
 
 #: registry/data/org/openoffice/Office/UI/BasicIDEWindowState.xcu#..BasicIDEWindowState.UIElements.States.private:resource/toolbar/macrobar.UIName
-#, fuzzy
 msgid  "Macro"
 msgstr "မက်ခရို"
 
 #: registry/data/org/openoffice/Office/UI/BasicIDEWindowState.xcu#..BasicIDEWindowState.UIElements.States.private:resource/toolbar/dialogbar.UIName
-#, fuzzy
 msgid  "Dialog"
 msgstr "ဒိုင်ယာလော့ဂ်"
 
 #: registry/data/org/openoffice/Office/UI/BasicIDEWindowState.xcu#..BasicIDEWindowState.UIElements.States.private:resource/toolbar/translationbar.UIName
-#, fuzzy
 msgid  "Language"
 msgstr "ဘာသာစကား"
 
 #: registry/data/org/openoffice/Office/UI/BasicIDEWindowState.xcu#..BasicIDEWindowState.UIElements.States.private:resource/toolbar/insertcontrolsbar.UIName
-#, fuzzy
 msgid  "Toolbox"
 msgstr "ကိရိယာသေတ္တာ"
 
 #: registry/data/org/openoffice/Office/UI/BasicIDEWindowState.xcu#..BasicIDEWindowState.UIElements.States.private:resource/toolbar/fullscreenbar.UIName
-#, fuzzy
 msgid  "Full Screen"
 msgstr "ဖန်သားမျက်နှာပြင်အပြည့်"
 
@@ -12592,27 +12529,22 @@ msgid  "Controls"
 msgstr "ထိန်းချုပ်မှုများ"
 
 #: registry/data/org/openoffice/Office/UI/BaseWindowState.xcu#..BaseWindowState.UIElements.States.private:resource/toolbar/tableobjectbar.UIName
-#, fuzzy
 msgid  "Table"
 msgstr "ဇယား"
 
 #: registry/data/org/openoffice/Office/UI/BaseWindowState.xcu#..BaseWindowState.UIElements.States.private:resource/toolbar/queryobjectbar.UIName
-#, fuzzy
 msgid  "Query"
 msgstr "ကွာရီ"
 
 #: registry/data/org/openoffice/Office/UI/BaseWindowState.xcu#..BaseWindowState.UIElements.States.private:resource/toolbar/reportobjectbar.UIName
-#, fuzzy
 msgid  "Report"
 msgstr "အစီရင်ခံပါ"
 
 #: registry/data/org/openoffice/Office/UI/BaseWindowState.xcu#..BaseWindowState.UIElements.States.private:resource/toolbar/formobjectbar.UIName
-#, fuzzy
 msgid  "Form"
 msgstr "ပုံစံ"
 
 #: registry/data/org/openoffice/Office/UI/BaseWindowState.xcu#..BaseWindowState.UIElements.States.private:resource/toolbar/toolbar.UIName
-#, fuzzy
 msgid  "Standard"
 msgstr "စံနှုန်း"
 
@@ -12813,17 +12745,14 @@ msgid  "Column Arrangement..."
 msgstr ""
 
 #: registry/data/org/openoffice/Office/UI/BibliographyCommands.xcu#..BibliographyCommands.UserInterface.Commands..uno:Bib/autoFilter.Label
-#, fuzzy
 msgid  "AutoFilter"
 msgstr "အလိုအလျောက် စစ်ထုတ်ကိရိယာ"
 
 #: registry/data/org/openoffice/Office/UI/BibliographyCommands.xcu#..BibliographyCommands.UserInterface.Commands..uno:Bib/query.Label
-#, fuzzy
 msgid  "Search Key"
 msgstr "ရှာဖွေမှုသော့ချက်"
 
 #: registry/data/org/openoffice/Office/UI/BibliographyCommands.xcu#..BibliographyCommands.UserInterface.Commands..uno:Bib/removeFilter.Label
-#, fuzzy
 msgid  "Remove Filter"
 msgstr "စစ်ထုတ်ကိရိယာဖယ်ရှားပါ"
 
@@ -12832,7 +12761,6 @@ msgid  "Choose Data Source..."
 msgstr ""
 
 #: registry/data/org/openoffice/Office/UI/BibliographyCommands.xcu#..BibliographyCommands.UserInterface.Commands..uno:Bib/source.Label
-#, fuzzy
 msgid  "Table"
 msgstr "ဇယား"
 
@@ -14011,12 +13939,10 @@ msgid  "Number Format: Add Decimal Place"
 msgstr "နံပါတ်စီစဉ်ဖွဲ့စည်းမှုပုံစံ-ဒသမနေရာထပ်ထည့်ပါ"
 
 #: registry/data/org/openoffice/Office/UI/CalcCommands.xcu#..CalcCommands.UserInterface.Commands..uno:ObjectMirrorHorizontal.Label
-#, fuzzy
 msgid  "Flip Object Horizontally"
 msgstr "အလျားလိုက် အရာဝတ္ထု လှန်ပါ"
 
 #: registry/data/org/openoffice/Office/UI/CalcCommands.xcu#..CalcCommands.UserInterface.Commands..uno:ObjectMirrorVertical.Label
-#, fuzzy
 msgid  "Flip Vertically"
 msgstr "ထောင့်မှန်ကျကျ လှန်ပါ"
 
@@ -17937,8 +17863,9 @@ msgid  "Flower"
 msgstr "ပန်း"
 
 #: registry/data/org/openoffice/Office/UI/GenericCommands.xcu#..GenericCommands.UserInterface.Commands..uno:SymbolShapes.forbidden.Label
-msgid  ""Prohibited" Symbol"
-msgstr ""
+#, fuzzy
+msgid  "\"Prohibited\" Symbol"
+msgstr "တားမြစ်ထားသည့်သင်္ကေတအမှတ်လက္ခဏာ"
 
 #: registry/data/org/openoffice/Office/UI/GenericCommands.xcu#..GenericCommands.UserInterface.Commands..uno:SymbolShapes.heart.Label
 #, fuzzy

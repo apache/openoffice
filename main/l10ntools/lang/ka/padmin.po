@@ -33,7 +33,7 @@ msgstr ""
 
 #: source/padialog.src#RID_FONTIMPORT_DIALOG.RID_FIMP_TXT_HELP.FixedText.Text
 msgid  "Please select the folder from which you want to import fonts. Add the selected fonts by clicking the OK button."
-msgstr ""
+msgstr "გთხოვთ აირჩიოთ დირექტორია, საიდანაც გნებავთ ფონტების იმპორტი. დაამატეთ ამორჩეული ფონტები ღილაკზე კარგი დაჭერით"
 
 #: source/padialog.src#RID_FONTIMPORT_DIALOG.RID_FIMP_FL_FROM.FixedLine.Text
 msgid  "Source directory"
@@ -61,7 +61,7 @@ msgstr "ფონტების დამატება"
 
 #: source/padialog.src#RID_FONTIMPORT_DIALOG.RID_FIMP_STR_QUERYOVERWRITE.String.Text
 msgid  "Do you really want to overwrite this font file?\n   %s"
-msgstr ""
+msgstr "მართლა გსურთ ამ შრიფტის ფაილის გადაწერა?\n   %s"
 
 #: source/padialog.src#RID_FONTIMPORT_DIALOG.RID_FIMP_STR_OVERWRITEALL.String.Text
 msgid  "All"
@@ -73,19 +73,19 @@ msgstr "არაფერი"
 
 #: source/padialog.src#RID_FONTIMPORT_DIALOG.RID_FIMP_STR_NOAFM.String.Text
 msgid  "A format file (with an .afm extension) has not been found for the font\n%s\ntherefore, the font cannot be installed. Format files can be created with ghostscript, for example, and have to be located in the same directory as the font files or its afm subdirectory."
-msgstr ""
+msgstr "ფორმატის ფაილი (.afm გაფართოებით) ვერ იქნა ნაპოვნი \n%s\n შრიფტისთვის, ფონტის დაინსტალირება ვერ ხერხდება. ფორმატის ფაილის შექმნა შეიძლება ghostscript-ით, მაგალითად, და უნდა ჩაიწეროს შრიფტების ფაილების დირექტორიაში ან მის afm ქვედირექტორიაში."
 
 #: source/padialog.src#RID_FONTIMPORT_DIALOG.RID_FIMP_STR_AFMCOPYFAILED.String.Text
 msgid  "The metric file for the font file\n   %s\ncould not be copied. The font will not be installed."
-msgstr ""
+msgstr "მეტრიკული ფაილი\n   %s\nფონტისთვის ვერ კოპირდება. შრიფთი არ დაინსტალირდება."
 
 #: source/padialog.src#RID_FONTIMPORT_DIALOG.RID_FIMP_STR_FONTCOPYFAILED.String.Text
 msgid  "The font file\n   %s\ncould not be copied. The font will not be installed."
-msgstr ""
+msgstr "ვერ ხერხდება შრიფტის ფაილის\n   %s\n კოპირება. შრიფტი არ დაინსტალირდება."
 
 #: source/padialog.src#RID_FONTIMPORT_DIALOG.RID_FIMP_STR_NOWRITEABLEFONTSDIR.String.Text
 msgid  "A directory containing a writable fonts.dir file is not located in the Fontpath. Therefore, fonts cannot be installed."
-msgstr ""
+msgstr "ფონტის დაინსტალირება ვერ ხერხდება. დირექტორია ჩაწერის შესაძლებლობის მქონე fonts.dir ფაილით ვერ მოიძებნა შრიფტების გზაში."
 
 #: source/padialog.src#RID_FONTIMPORT_DIALOG.RID_FIMP_STR_NUMBEROFFONTSIMPORTED.String.Text
 msgid  "%d new fonts were added."
@@ -289,7 +289,7 @@ msgstr "ფაილი არ შეიცავს მეტრიკას"
 
 #: source/padialog.src#RID_AFMERROR_BOX_TXT.String.Text
 msgid  "The metric\n\n%s\n\ncould not be converted for the following reason:\n\n"
-msgstr ""
+msgstr "მეტრიკის\n\n%s\n\n გადაყვანა ვერ ხერხდება შემდეგი მიზეზით:\n\n"
 
 #: source/padialog.src#RID_PROGRESS_DLG.RID_PROGRESS_PROGRESS_TXT.FixedText.Text
 msgid  "Progress"
@@ -320,8 +320,8 @@ msgid  "~Selection of drivers"
 msgstr "~დარაივერების მონიშვნა"
 
 #: source/padialog.src#RID_PPDIMPORT_DLG.RID_PPDIMP_TXT_DRIVER.FixedText.Text
-msgid  "Please select the drivers to install and press "%s"."
-msgstr ""
+msgid  "Please select the drivers to install and press \"%s\"."
+msgstr "გთხოვთ აირჩიოთ დასაინსტალირებელი დრაივერები და დააჭირეთ \"%s\""
 
 #: source/padialog.src#RID_PPDIMPORT_DLG.RID_PPDIMP_STR_LOADINGPPD.String.Text
 msgid  "Searching for drivers"
@@ -332,8 +332,8 @@ msgid  "Driver Installation"
 msgstr "დრაივერის ინსტალაცია"
 
 #: source/padialog.src#RID_QUERY_REMOVEDRIVER.String.Text
-msgid  "Do you really want to remove the driver "%s"?"
-msgstr ""
+msgid  "Do you really want to remove the driver \"%s\"?"
+msgstr "ნამდვილად გნებავთ \"%s\" დრაივერის ამოღება?"
 
 #: source/padialog.src#RID_QUERY_REMOVEPRINTER.String.Text
 msgid  "Do you really want to remove this printer ?"
@@ -344,40 +344,40 @@ msgid  "Do you really want to remove the selected fonts ?"
 msgstr "ნამდვილად გნებავთ არჩეული შრიფტების ამოღება?"
 
 #: source/padialog.src#RID_QUERY_DRIVERUSED.String.Text
-msgid  "There are still printers using the driver "%s". Do you really want to remove it? The corresponding printers will also be removed."
-msgstr ""
+msgid  "There are still printers using the driver \"%s\". Do you really want to remove it? The corresponding printers will also be removed."
+msgstr "დარჩენილია პრინტერები,რომლებიც გამოიყენებს  \"%s\". მართლა გსურთ მისი წაშლა? შესაბამისი პრინტერიც წაიშლება"
 
 #: source/padialog.src#RID_ERR_REMOVESGENPRT.String.Text
-msgid  "The driver "%s" is always needed and can therefore not be removed."
-msgstr ""
+msgid  "The driver \"%s\" is always needed and can therefore not be removed."
+msgstr "დრაივერი \"%s\" მუდმივად საჭიროა და ვერ წაიშლება."
 
 #: source/padialog.src#RID_ERR_REMOVEDRIVERFAILED.String.Text
-msgid  "The driver "%s1" could not be removed. It was not possible to remove the file\n\n%s2."
-msgstr ""
+msgid  "The driver \"%s1\" could not be removed. It was not possible to remove the file\n\n%s2."
+msgstr "დრაივერი \"%s1\"-ს ამოღება ვერ ხერხდება.  შეუძლებელი იყო ფაილის \n\n%s2 ამოღება."
 
 #: source/padialog.src#RID_ERR_REMOVEDEFAULTDRIVER.String.Text
-msgid  "The driver "%s" is used by your default printer. Therefore, it cannot be removed."
-msgstr ""
+msgid  "The driver \"%s\" is used by your default printer. Therefore, it cannot be removed."
+msgstr "დრაივერი \"%s\" გამოიყენება თქვენი საწყისი პრინტერის მიერ. ამიტომ მისი ამოღება ვერ ხერხდება."
 
 #: source/padialog.src#RID_ERR_PRINTERNOTREMOVEABLE.String.Text
 msgid  "The printer %s cannot be removed."
 msgstr "პრინტერი %s-ის ამოღება შეუძლებელია"
 
 #: source/padialog.src#RID_TXT_PRINTERALREADYEXISTS.String.Text
-msgid  "A printer named "%s" already exists. This printer will not be imported."
-msgstr ""
+msgid  "A printer named \"%s\" already exists. This printer will not be imported."
+msgstr "პრინტერის სახელი \"%s\" უკვე არსებობს. ამ პრინტერის იმპორტირება არ შესრულდება."
 
 #: source/padialog.src#RID_TXT_PRINTERWITHOUTCOMMAND.String.Text
-msgid  "The printer "%s" has no valid configuration and, therefore, cannot be imported."
-msgstr ""
+msgid  "The printer \"%s\" has no valid configuration and, therefore, cannot be imported."
+msgstr "პრინტერს \"%s\" არ აქვს სწორი კონფიგურაცია, იმპორტი შეუძლებელია."
 
 #: source/padialog.src#RID_TXT_DRIVERDOESNOTEXIST.String.Text
-msgid  "The driver for the printer "%s1" (%s2) is not installed. Therefore the printer cannot be imported."
-msgstr ""
+msgid  "The driver for the printer \"%s1\" (%s2) is not installed. Therefore the printer cannot be imported."
+msgstr "პრინტერის დრაივერი \"%s1\" (%s2) არ არის დაინსტალირებული. იმპორტი შეუძლებელია."
 
 #: source/padialog.src#RID_TXT_PRINTERADDFAILED.String.Text
-msgid  "The printer "%s" could not be added."
-msgstr ""
+msgid  "The printer \"%s\" could not be added."
+msgstr "პრინტერის \"%s\" დამატება ვერ ხერხდება."
 
 #: source/padialog.src#RID_ADD_PRINTER_DIALOG.RID_ADDP_BTN_FINISH.OKButton.Text
 msgid  "~Finish"
@@ -488,12 +488,12 @@ msgid  "~Help"
 msgstr "~დახმარება"
 
 #: source/padialog.src#RID_ADDP_PAGE_COMMAND.RID_ADDP_CMD_STR_PDFHELP.String.Text
-msgid  "The command line for PDF converters is executed as follows: for each document printed, "(TMP)" in the command line is replaced by a temporary file and "(OUTFILE)" in the command line is replaced by the target PDF file name. If "(TMP)" is in the command line, the PostScript code will be supplied via a file, otherwise via standard input (i.e. as a pipe)."
-msgstr ""
+msgid  "The command line for PDF converters is executed as follows: for each document printed, \"(TMP)\" in the command line is replaced by a temporary file and \"(OUTFILE)\" in the command line is replaced by the target PDF file name. If \"(TMP)\" is in the command line, the PostScript code will be supplied via a file, otherwise via standard input (i.e. as a pipe)."
+msgstr "ბრძანების სტრიქონი PDF კონვერტორებისათვის ასე შესრულდება: თვითეული ამობეჭდილი დოკუმენტისთვის, ბრძანების სტრიქონში \"(TMP)\" ჩანაცვლდება დროებითი ფაილით და \"(OUTFILE)\" ჩანაცვლდება სამიზნე PDF ფაილის სახელით. თუ \"(TMP)\" არის ბრძანების სტრიქონში, PostScript კოდი მიეწოდება ფაილის საშუალებით, თუ არადა, სტანდარტული შენატანით (ანუ მილაკით)."
 
 #: source/padialog.src#RID_ADDP_PAGE_COMMAND.RID_ADDP_CMD_STR_FAXHELP.String.Text
-msgid  "The command line for fax connections is executed as follows: for each fax sent, "(TMP)" in the command line is replaced by a temporary file and "(PHONE)" in the command line is replaced by the fax number. If "(TMP)" appears in the command line, the PostScript code will be supplied via a file, otherwise it is passed as standard input (i.e. as a pipe)."
-msgstr ""
+msgid  "The command line for fax connections is executed as follows: for each fax sent, \"(TMP)\" in the command line is replaced by a temporary file and \"(PHONE)\" in the command line is replaced by the fax number. If \"(TMP)\" appears in the command line, the PostScript code will be supplied via a file, otherwise it is passed as standard input (i.e. as a pipe)."
+msgstr "ბრძანებათა ზოლი ფაქსის კავშირებისთვის შემდეგნაირად ეშვება: ყოველი გაგზავნილი გაქსისთვის, \"(TMP)\" ბრძანებათა ზოლი ჩანაცვლდება დროებითი ფაილით და \"(PHONE)\" ბრძანებათა ზოლში ჩანაცვლდება ფაქსის ნომრით. თუ \"(TMP)\" გაჩნდება ბრძანებათა ზოლში, PostScript-ის კოდი ფაილით იქნება მიწოდებული ."
 
 #: source/padialog.src#RID_ADDP_PAGE_OLDPRINTERS.RID_ADDP_STR_TITLE.String.Text
 msgid  "Import printers from old versions"
@@ -501,7 +501,7 @@ msgstr "პრინტერების ძველი ვერსიებ�
 
 #: source/padialog.src#RID_ADDP_PAGE_OLDPRINTERS.RID_ADDP_OLD_TXT_PRINTERS.FixedText.Text
 msgid  "~These printers can be imported. Please select the ones you want to import."
-msgstr ""
+msgstr "~პრინტერების იმპორტი ვერ ხერხდება. გთხოვთ მიუთითოთ სასურველი პრინტერები."
 
 #: source/padialog.src#RID_ADDP_PAGE_OLDPRINTERS.RID_ADDP_OLD_BTN_SELECTALL.PushButton.Text
 msgid  "~Select All"
@@ -788,16 +788,16 @@ msgid  "~Remove"
 msgstr "~წაშლა"
 
 #: source/rtsetup.src#RID_RTS_COMMANDPAGE.RID_RTS_CMD_STR_PDFHELP.String.Text
-msgid  "The command line for PDF converters is executed as follows: for each document printed, "(TMP)" in the command line is replaced by a temporary file and "(OUTFILE)" in the command line is replaced by the target PDF file name. If "(TMP)" is in the command line, the PostScript code will be supplied via a file, otherwise via standard input (i.e. as a pipe)."
-msgstr ""
+msgid  "The command line for PDF converters is executed as follows: for each document printed, \"(TMP)\" in the command line is replaced by a temporary file and \"(OUTFILE)\" in the command line is replaced by the target PDF file name. If \"(TMP)\" is in the command line, the PostScript code will be supplied via a file, otherwise via standard input (i.e. as a pipe)."
+msgstr "ბრძანების სტრიქონი PDF კონვერტორებისათვის ასე შესრულდება: თვითეული ამობეჭდილი დოკუმენტისთვის, ბრძანების სტრიქონში \"(TMP)\" ჩანაცვლდება დროებითი ფაილით და \"(OUTFILE)\" ჩანაცვლდება სამიზნე PDF ფაილის სახელით. თუ \"(TMP)\" არის ბრძანების სტრიქონში, PostScript კოდი მიეწოდება ფაილის საშუალებით, თუ არადა, სტანდარტული შენატანით (ანუ მილაკით)."
 
 #: source/rtsetup.src#RID_RTS_COMMANDPAGE.RID_RTS_CMD_STR_PRINTERHELP.String.Text
 msgid  "The command line for printer devices is executed as follows: the generated PostScript code is supplied as standard input (i.e. as a pipe) to the command line."
-msgstr ""
+msgstr "ბრძანებათა ზოლი ბეჭდვის მოწყობილობების შემდეგნაირად ეშვება: PostScript-ის გენერირებული კოდი ბრძანებათა ზოლს მიეწოდება როგორც სტანდარტული შესასვლელი (მაგ. როგორც ნაკადი)."
 
 #: source/rtsetup.src#RID_RTS_COMMANDPAGE.RID_RTS_CMD_STR_FAXHELP.String.Text
-msgid  "The command line for fax devices is executed as follows: for each fax sent, "(TMP)" in the command line is replaced by a temporary file and "(PHONE)" in the command line is replaced by the fax number. If "(TMP)" appears in the command line, the PostScript code will be supplied via a file, otherwise it is passed as standard input (i.e. as a pipe)."
-msgstr ""
+msgid  "The command line for fax devices is executed as follows: for each fax sent, \"(TMP)\" in the command line is replaced by a temporary file and \"(PHONE)\" in the command line is replaced by the fax number. If \"(TMP)\" appears in the command line, the PostScript code will be supplied via a file, otherwise it is passed as standard input (i.e. as a pipe)."
+msgstr "ბრძანებათა ზოლი ფაქსის მოწყობილობებისთვის შემდეგნაირად სრულდება: ყოველი გაგზავნილი გაქსისთვის, \"(TMP)\" ბრძანებათა ზოლი ჩანაცვლდება დროებითი ფაილით და \"(PHONE)\" ბრძანებათა ზოლი ჩანაცვლდება ფაქსის ნომრით. თუ \"(TMP)\" გაჩნდება ბრძანებათა ზოლში, PostScript -ის კოდი მიეწოდება ფაილით, სხვა შემთხვევაში სტანდარული შეტანით (მაგ. როგორც ნაკადი)"
 
 #: source/rtsetup.src#RID_RTS_OTHERPAGE.RID_RTS_OTHER_LEFTMARGIN_TXT.FixedText.Text
 msgid  "~Left margin"

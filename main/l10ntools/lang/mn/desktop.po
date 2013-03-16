@@ -32,8 +32,8 @@ msgstr ""
 
 
 #: source/app/desktop.src#STR_RECOVER_QUERY.String.Text
-msgid  "Should the file "$1" be restored?"
-msgstr ""
+msgid  "Should the file \"$1\" be restored?"
+msgstr "\"$1\" файлыг сэргээх үү?"
 
 #: source/app/desktop.src#STR_RECOVER_TITLE.String.Text
 msgid  "File Recovery"
@@ -41,15 +41,15 @@ msgstr "Файл Сэргээлт"
 
 #: source/app/desktop.src#STR_RECOVER_PREPARED.WarningBox.Message
 msgid  "An unrecoverable error has occurred.\n\nAll modified files have been saved and can\nprobably be recovered at program restart."
-msgstr ""
+msgstr "Сэргээх боломжгүй алдаа гарлаа.\n\nБүх өөрчлөгдсөн файлууд хадгалагдсан ба \nмагад програмын дараагийн удаагийн эхлэлд сэргээгдэнэ."
 
 #: source/app/desktop.src#STR_BOOTSTRAP_ERR_CANNOT_START.String.Text
 msgid  "The application cannot be started. "
 msgstr "Програм эхлэх боломжгүй. "
 
 #: source/app/desktop.src#STR_BOOTSTRAP_ERR_DIR_MISSING.String.Text
-msgid  "The configuration directory "$1" could not be found."
-msgstr ""
+msgid  "The configuration directory \"$1\" could not be found."
+msgstr "Тохиргооны лавлах \"$1\" олдсонгүй."
 
 #: source/app/desktop.src#STR_BOOTSTRAP_ERR_PATH_INVALID.String.Text
 msgid  "The installation path is invalid."
@@ -64,16 +64,16 @@ msgid  "An internal error occurred."
 msgstr "Дотоод алдаа гарлаа."
 
 #: source/app/desktop.src#STR_BOOTSTRAP_ERR_FILE_CORRUPT.String.Text
-msgid  "The configuration file "$1" is corrupt."
-msgstr ""
+msgid  "The configuration file \"$1\" is corrupt."
+msgstr "\"$1\" тохиргооны файл эвдэрчээ."
 
 #: source/app/desktop.src#STR_BOOTSTRAP_ERR_FILE_MISSING.String.Text
-msgid  "The configuration file "$1" was not found."
-msgstr ""
+msgid  "The configuration file \"$1\" was not found."
+msgstr "\"$1\" тохиргооны файл олдсонгүй."
 
 #: source/app/desktop.src#STR_BOOTSTRAP_ERR_NO_SUPPORT.String.Text
-msgid  "The configuration file "$1" does not support the current version."
-msgstr ""
+msgid  "The configuration file \"$1\" does not support the current version."
+msgstr "\"$1\" тохиргооны файл идэвхтэй хувилбарыг дэмжихгүй байна."
 
 #: source/app/desktop.src#STR_BOOTSTRAP_ERR_LANGUAGE_MISSING.String.Text
 msgid  "The user interface language cannot be determined."
@@ -93,11 +93,11 @@ msgstr ""
 
 #: source/app/desktop.src#STR_ASK_START_SETUP_MANUALLY.String.Text
 msgid  "Start the setup application to repair the installation from the CD or the folder containing the installation packages."
-msgstr ""
+msgstr "Програмыг засахыг хүсвэл суулгац КД-ээс эсвэл суулгац пакетуудыг агуулсан хавтаснаас суулгагч програмыг эхлүүлнэ үү."
 
 #: source/app/desktop.src#STR_CONFIG_ERR_SETTINGS_INCOMPLETE.String.Text
 msgid  "The startup settings for accessing the central configuration are incomplete. "
-msgstr ""
+msgstr "Төв тохиргоонд хандахад шаардлагатай эхлэлийн тохируулга бүрэн бус. "
 
 #: source/app/desktop.src#STR_CONFIG_ERR_CANNOT_CONNECT.String.Text
 msgid  "A connection to the central configuration could not be established. "
@@ -105,7 +105,7 @@ msgstr "Төв тохиргоо руу холболт хийгдэх болом�
 
 #: source/app/desktop.src#STR_CONFIG_ERR_RIGHTS_MISSING.String.Text
 msgid  "You cannot access the central configuration because of missing access rights. "
-msgstr ""
+msgstr "Та төв тохиргоо руу хандаж чадахгүй, учир нь таны хандалтын эрх хүрэхгүй байна. "
 
 #: source/app/desktop.src#STR_CONFIG_ERR_ACCESS_GENERAL.String.Text
 msgid  "A general error occurred while accessing your central configuration. "
@@ -113,11 +113,11 @@ msgstr "Төв тохиргоо руу хандаж байхал ерөнхий 
 
 #: source/app/desktop.src#STR_CONFIG_ERR_NO_WRITE_ACCESS.String.Text
 msgid  "The changes to your personal settings cannot be stored centrally because of missing access rights. "
-msgstr ""
+msgstr "Таны эрх дутаж байгаа тул таны хувийн тохиргооны өөрчлөлт төв тохиргоонд хадгалагдсангүй. "
 
 #: source/app/desktop.src#STR_BOOTSTRAP_ERR_CFG_DATAACCESS.String.Text
 msgid  "%PRODUCTNAME cannot be started due to an error in accessing the %PRODUCTNAME configuration data.\n\nPlease contact your system administrator."
-msgstr ""
+msgstr "%PRODUCTNAME тохиргооны өгөгдөлд хандах үед алдаа гарсан тул %PRODUCTNAME эхлэх боломжгүй.\n\nТа системийн захирагчтайгаа холбогдоно уу."
 
 #: source/app/desktop.src#STR_INTERNAL_ERRMSG.String.Text
 msgid  "The following internal error has occurred: "
@@ -125,7 +125,7 @@ msgstr "Дараах дотоод алдаа гарлаа: "
 
 #: source/app/desktop.src#QBX_USERDATALOCKED.QueryBox.Message
 msgid  "Either another instance of %PRODUCTNAME is accessing your personal settings or your personal settings are locked.\nSimultaneous access can lead to inconsistencies in your personal settings. Before continuing, you should make sure user '$u' closes %PRODUCTNAME on host '$h'.\n\nDo you really want to continue?"
-msgstr ""
+msgstr "%PRODUCTNAME -н өөр нэг инстанц таны хувийн тохиргоонд хандаж байна эсвэл таны хувийн тохиргоо түгжигдсэн байна.\nЗэрэг хандалт таны хувийн тохиргоог тогтворгүй болгох магадлалтай. Үргэлжлүүлэхийнхээ өмнө та хэрэглэгч '$u' '$h' хост дээрх %PRODUCTNAME хаасан эсэхийг нягтлана уу.\n\nТа үнэхээр үргэлжлүүлэхийг хүсэж байна уу?"
 
 #: source/app/desktop.src#STR_TITLE_USERDATALOCKED.String.Text
 msgid  "%PRODUCTNAME %PRODUCTVERSION"
@@ -149,11 +149,11 @@ msgstr "Замын менежер алга.\n"
 
 #: source/app/desktop.src#STR_BOOSTRAP_ERR_NOTENOUGHDISKSPACE.String.Text
 msgid  "%PRODUCTNAME user installation could not be completed due to insufficient free disk space. Please free more disc space at the following location and restart %PRODUCTNAME:\n\n"
-msgstr ""
+msgstr "Хүрэлцээгүй сул зайн улмаас %PRODUCTNAME хэрэглэгчийн суулгац дуусах боломжгүй. Дараах байршилд илүү зай гаргаад %PRODUCTNAME -г дахин эхлүүлнэ үү:\n\n"
 
 #: source/app/desktop.src#STR_BOOSTRAP_ERR_NOACCESSRIGHTS.String.Text
 msgid  "%PRODUCTNAME user installation could not be processed due to missing access rights. Please make sure that you have sufficient access rights for the following location and restart %PRODUCTNAME:\n\n"
-msgstr ""
+msgstr "Хүрэлцээгүй эрхийн улмаас %PRODUCTNAME хэрэглэгчийн суулгац хийгдэх боломжгүй. Дараах байршилд хүрэлцээтэй хандалтын эрх байгаа эсэхээ нягтлаад %PRODUCTNAME -г дахин эхлүүлнэ үү:\n\n"
 
 #: source/deployment/gui/dp_gui_versionboxes.src#RID_WARNINGBOX_VERSION_LESS.WarningBox.Message
 msgid  "You are about to install version $NEW of the extension \'$NAME\'.\nThe newer version $DEPLOYED is already installed.\nClick \'OK\' to replace the installed extension.\nClick \'Cancel\' to stop the installation."
@@ -185,7 +185,7 @@ msgstr "Системийн хамаарлуудыг шалгах"
 
 #: source/deployment/gui/dp_gui_dependencydialog.src#RID_DLG_DEPENDENCIES.RID_DLG_DEPENDENCIES_TEXT.FixedText.Text
 msgid  "The extension cannot be installed as the following\nsystem dependencies are not fulfilled:"
-msgstr ""
+msgstr "Дараах системийн хамаарлуудын шаардлагуудыг\nхангахгүйн улмаас өргөтгөл суух боломжгүй:"
 
 #: source/deployment/gui/dp_gui_dialog.src#RID_STR_ADD_PACKAGES.String.Text
 msgid  "Add Extension(s)"
@@ -273,7 +273,7 @@ msgstr "Өргөтгөл Програм хангамжийн Лицензийн 
 
 #: source/deployment/gui/dp_gui_dialog.src#RID_DLG_LICENSE.FT_LICENSE_HEADER.FixedText.Text
 msgid  "Please follow these steps to proceed with the installation of the extension:"
-msgstr ""
+msgstr "Өргөтгөлийн суулгалт хийхдээ дараах алхмуудыг дагана уу:"
 
 #: source/deployment/gui/dp_gui_dialog.src#RID_DLG_LICENSE.FT_LICENSE_BODY_1.FixedText.Text
 msgid  "1."
@@ -437,7 +437,7 @@ msgstr "Шинэ шинэчлэл алга."
 
 #: source/deployment/gui/dp_gui_updatedialog.src#RID_DLG_UPDATE.RID_DLG_UPDATE_NOINSTALLABLE.String.Text
 msgid  "No installable updates are available. To see ignored or disabled updates, mark the check box 'Show all updates'."
-msgstr ""
+msgstr "Суулгах шинэчлэл алга. Бүх шинэчлэлүүдийг харахыг хүсвэл 'Бүх шинэчлэлийг харуул' -г чагтална уу."
 
 #: source/deployment/gui/dp_gui_updatedialog.src#RID_DLG_UPDATE.RID_DLG_UPDATE_FAILURE.String.Text
 msgid  "An error occurred:"
@@ -537,7 +537,7 @@ msgstr ""
 
 #: source/deployment/gui/dp_gui_dialog2.src#RID_QUERYBOX_INSTALL_FOR_ALL.QueryBox.Message
 msgid  "Make sure that no further users are working with the same %PRODUCTNAME, when installing an extension for all users in a multi user environment.\n\nFor whom do you want to install the extension?\n"
-msgstr ""
+msgstr "Хэрэв та хамтын хэрэглээний Өргөтгөлийг олон хэрэглэгчийн горимд бүх хэрэглэгчийн хувьд суулгах гэж байгаа бол, өөр хэрэглэгч нэгэн зэрэг %PRODUCTNAME суулгацтай ажиллаж байгаа эсэхийг нягтлана уу.\n\nТа хэний хувьд өргөтгөлийг суулгахыг хүсэж байна вэ?\n"
 
 #: source/deployment/manager/dp_manager.src#RID_STR_COPYING_PACKAGE.String.Text
 msgid  "Copying: "
@@ -641,7 +641,7 @@ msgstr "Өргөтгөлийг суулгах боломжгүй. Учир нь:
 
 #: source/deployment/registry/help/dp_help.src#RID_STR_HELPPROCESSING_XMLPARSING_ERROR.String.Text
 msgid  "The extension will not be installed because an error occurred in the Help files:\n"
-msgstr ""
+msgstr "Өргөтгөлийг суулгах боломжгүй. Учир нь Тусламж файлуудад ямар нэг алдаа байна:\n"
 
 #: source/deployment/registry/package/dp_package.src#RID_STR_PACKAGE_BUNDLE.String.Text
 msgid  "Extension"
@@ -672,16 +672,16 @@ msgid  "Extension Software License Agreement of $NAME:"
 msgstr "Өргөтгөлийн лицензийн нөхцөл:"
 
 #: source/deployment/unopkg/unopkg.src#RID_STR_UNOPKG_ACCEPT_LIC_2.String.Text
-msgid  "Read the complete License Agreement displayed above. Accept the License Agreement by typing "yes" on the console then press the Return key. Type "no" to decline and to abort the extension setup."
-msgstr ""
+msgid  "Read the complete License Agreement displayed above. Accept the License Agreement by typing \"yes\" on the console then press the Return key. Type \"no\" to decline and to abort the extension setup."
+msgstr "Дээр харагдаж буй Лицензийн Нөхцөлийг бүрэн уншина уу. Лицензийн нөхцөлийг хүлээн зөвшөөрч байвал консол дээр \"тийм\" гэж бичээд Энтэр товчийг дарна уу. Татгалзаж, өргөтгөлийн суулгацыг цуцлахыг хүсвэл \"үгүй\" гэж оруулна уу."
 
 #: source/deployment/unopkg/unopkg.src#RID_STR_UNOPKG_ACCEPT_LIC_3.String.Text
-msgid  "[Enter "yes" or "no"]:"
-msgstr ""
+msgid  "[Enter \"yes\" or \"no\"]:"
+msgstr "[\"тийм\" эсвэл \"үгүй\" оруулна уу]:"
 
 #: source/deployment/unopkg/unopkg.src#RID_STR_UNOPKG_ACCEPT_LIC_4.String.Text
-msgid  "Your input was not correct. Please enter "yes" or "no":"
-msgstr ""
+msgid  "Your input was not correct. Please enter \"yes\" or \"no\":"
+msgstr "Таны оруулалт буруу байна. \"тийм\" эсвэл \"үгүй\" оруулна уу:"
 
 #: source/deployment/unopkg/unopkg.src#RID_STR_UNOPKG_ACCEPT_LIC_YES.String.Text
 msgid  "YES"
@@ -701,7 +701,7 @@ msgstr "Ү"
 
 #: source/deployment/unopkg/unopkg.src#RID_STR_CONCURRENTINSTANCE.String.Text
 msgid  "unopkg cannot be started. The lock file indicates it as already running. If this does not apply, delete the lock file at:"
-msgstr ""
+msgstr "Үргэлжлүүлэхийн тулд та өмнө нээсэн байгаа өргөтгөлийн менежерийг хаана уу."
 
 #: source/deployment/unopkg/unopkg.src#RID_STR_UNOPKG_ERROR.String.Text
 msgid  "ERROR: "
@@ -737,11 +737,11 @@ msgstr "Бүртгэл"
 
 #: source/migration/wizard.src#STR_WELCOME_MIGRATION.String.Text
 msgid  "This wizard will guide you through the license agreement, the transfer of user data from %OLD_VERSION and the registration of %PRODUCTNAME.\n\nClick 'Next' to continue."
-msgstr ""
+msgstr "Энэ залуурч таныг лицензийн нөхцөлтэй танилцуулж, хэрэглэгчийн өгөгдлийг %OLD_VERSION -с зөөх бөгөөд %PRODUCTNAME -н бүртгэлийг хийхэд хөтөлнө.\n\nҮргэлжлүүлэхдээ 'Үргэлжлүүлэх' дээр дарна уу."
 
 #: source/migration/wizard.src#STR_WELCOME_WITHOUT_LICENSE.String.Text
 msgid  "This wizard will guide you through the registration of %PRODUCTNAME.\n\nClick 'Next' to continue."
-msgstr ""
+msgstr "Энэ залуурч таныг %PRODUCTNAME бүртгүүлэхэд хөтөлнө.\n\nҮргэлжлүүлэхдээ 'Үргэлжлүүлэх' дээр дарна уу."
 
 #: source/migration/wizard.src#STR_FINISH.String.Text
 msgid  "~Finish"
@@ -749,11 +749,11 @@ msgstr "~Дуусгах"
 
 #: source/migration/wizard.src#STR_REGISTRATION_OOO.String.Text
 msgid  "You now have the opportunity to support and contribute to the fastest growing open source community in the world.\n\nHelp us prove that %PRODUCTNAME has already gained significant market share by registering.\n\nRegistering is voluntary and without obligation."
-msgstr ""
+msgstr "Танд одоо дэлхий даяар хамгийн хурдан өсөн дэлгэрч буй Open-Source-Community -г дэмжиж хувь нэмэр оруулах боломж байна.\n\nТа %PRODUCTNAME -аа бүртгүүлж %PRODUCTNAME маань зах зээлийн хэдэн хувьд хүрч байгааг батлахад туслана уу .\n\nБүртгэл нь сайн дурынх ба заавал хийх албагүй."
 
 #: source/migration/wizard.src#ERRBOX_REG_NOSYSBROWSER.ErrorBox.Message
 msgid  "An error occurred in starting the web browser.\nPlease check the %PRODUCTNAME and web browser settings."
-msgstr ""
+msgstr "Вэб хөтөч эхлүүлж байхад алдаа гарлаа.\n%PRODUCTNAME болон вэб хөтөчийн тохиргоогоо шалгана уу."
 
 #: source/migration/wizard.src#QB_ASK_DECLINE.QueryBox.Message
 msgid  "Do you really want to decline?"
@@ -765,7 +765,7 @@ msgstr "%PRODUCTNAME %PRODUCTVERSION-д тавтай морил"
 
 #: source/migration/wizard.src#TP_WELCOME.FT_WELCOME_BODY.FixedText.Text
 msgid  "This wizard will guide you through the license agreement and the registration of %PRODUCTNAME.\n\nClick 'Next' to continue."
-msgstr ""
+msgstr "Энэ залуурч таныг лицензийн нөхцөлтэй танилцуулж %PRODUCTNAME -н бүртгэлийг хийлгэхэд хөтөлнө.\n\nҮргэлжлүүлэхдээ 'Үргэлжлүүлэх' дээр дарна уу."
 
 #: source/migration/wizard.src#TP_LICENSE.FT_LICENSE_HEADER.FixedText.Text
 msgid  "Please follow these steps to accept the license"
@@ -777,7 +777,7 @@ msgstr "1."
 
 #: source/migration/wizard.src#TP_LICENSE.FT_LICENSE_BODY_1_TXT.FixedText.Text
 msgid  "View the complete License Agreement. Please use the scrollbar or the '%PAGEDOWN' button in this dialog to view the entire license text."
-msgstr ""
+msgstr "Лицензийн нөхцөлийг бүрэн үзнэ үү. Лицензийн бичвэрийг бүрэн үзэхдээ доорх цонхны гүйлгэгч эсвэл '%PAGEDOWN' товчийг хэрэглэнэ үү."
 
 #: source/migration/wizard.src#TP_LICENSE.FT_LICENSE_BODY_2.FixedText.Text
 msgid  "2."
@@ -805,7 +805,7 @@ msgstr "Хувийн өгөгдлийг шилжүүлэх"
 
 #: source/migration/wizard.src#TP_MIGRATION.FT_MIGRATION_BODY.FixedText.Text
 msgid  "Most personal data from %OLDPRODUCT installation can be reused in %PRODUCTNAME %PRODUCTVERSION.\n\nIf you do not want to reuse any settings in %PRODUCTNAME %PRODUCTVERSION, unmark the check box."
-msgstr ""
+msgstr "%OLDPRODUCT суулгацийн ихэнх хувийн өгөгдөл %PRODUCTNAME %PRODUCTVERSION -д дахин ашиглагдах боломжтой.\n\nХэрэв та ямар ч тохиргоо %PRODUCTNAME %PRODUCTVERSION-д дахин ашиглахыг хүсэхгүй байвал, хэрээсийг авна уу."
 
 #: source/migration/wizard.src#TP_MIGRATION.CB_MIGRATION.CheckBox.Text
 msgid  "Transfer personal data"
@@ -817,7 +817,7 @@ msgstr "Онлайн шинэчлэлт'"
 
 #: source/migration/wizard.src#TP_UPDATE_CHECK.FT_UPDATE_CHECK_BODY.FixedText.Text
 msgid  "%PRODUCTNAME searches automatically at regular intervals for new versions.\nIn doing so online update does not transfer personal data.\nAs soon as a new version is available, you will be notified.\n\nYou can configure this feature at Tools / Options... / %PRODUCTNAME / Online Update."
-msgstr ""
+msgstr "%PRODUCTNAME автоматаар тогтмол интервалаар шинэ хувилбарыг хайна.\nОнлайн шинэчлэлийг хийж байхад хэрэглэгчийн хувийн өгөгдлийг дамжуулахгүй.\nШинэ хувилбар бэлэн болмогц танд сонордуулна.\n\nТа энэ боломжийг Хэрэгсэл / Тохиргоо... / %PRODUCTNAME / Онлайн шинэчлэлт хэсэгт тохируулж болно."
 
 #: source/migration/wizard.src#TP_UPDATE_CHECK.CB_UPDATE_CHECK.CheckBox.Text
 msgid  "~Check for updates automatically"
@@ -829,7 +829,7 @@ msgstr "Та бүтэн нэр болон товчлолоо доор оруул
 
 #: source/migration/wizard.src#TP_USER.FT_USER_BODY.FixedText.Text
 msgid  "The user name will be used in the document properties, templates and when you record changes made to documents."
-msgstr ""
+msgstr "Таныг баримтанд өөрчлөлт хийх үед хэрэглэгчийн нэр баримтын тодруулга болон хэвүүдэд хэрэглэгдэнэ."
 
 #: source/migration/wizard.src#TP_USER.FT_USER_FIRST.FixedText.Text
 msgid  "~First name"
@@ -853,7 +853,7 @@ msgstr "%PRODUCTNAME Бүртгэл"
 
 #: source/migration/wizard.src#TP_REGISTRATION.FT_REGISTRATION_BODY.FixedText.Text
 msgid  "You now have the opportunity to register as a %PRODUCTNAME user. Registration is voluntary and is without obligation.\n\nIf you register, we can inform you about new developments concerning this product."
-msgstr ""
+msgstr "Танд одоо %PRODUCTNAME хэрэглэгчээр бүртгүүлэх боломж байна. Бүртгэл сайн дурынх бөгөөд заавал албатай зүйл биш.\n\nХэрэв та бүртгүүлбэл бид танд энэ бүтээгдэхүүний хөгжүүлэлтийн талаар мэдээлж байх болно."
 
 #: source/migration/wizard.src#TP_REGISTRATION.RB_REGISTRATION_NOW.RadioButton.Text
 msgid  "I want to register ~now"
@@ -869,7 +869,7 @@ msgstr "Би ~бүртгүүлэхийг хүсэхгүй байна"
 
 #: source/migration/wizard.src#TP_REGISTRATION.FT_REGISTRATION_END.FixedText.Text
 msgid  "We hope you enjoy working with %PRODUCTNAME.\n\nTo exit the wizard, click 'Finish'."
-msgstr ""
+msgstr "Бид таныг %PRODUCTNAME -тай ажиллах таалагдана гэдэгт итгэж байна.\n\nЗалуурчаас гарах бол 'Дуусгах' дээр дарна уу."
 
 #: win32/source/rebase/rebasegui.ulf#%APP_TITLE%
 msgid  "Installation Status"
@@ -886,6 +886,10 @@ msgstr ""
 #: win32/source/rebase/rebasegui.ulf#%MSG_NO_INSTALLATION_FOUND%
 msgid  "Cannot find Office installation."
 msgstr ""
+
+#: win32/source/setup/setup.ulf#%APP_TITLE%
+msgid  "Setup"
+msgstr "Суулгац"
 
 #: win32/source/setup/setup.ulf#%APP_PROD_TITLE%
 msgid  "The %PRODUCTNAME Setup"
@@ -905,7 +909,7 @@ msgstr "Суулгац цуцлагдлаа"
 
 #: win32/source/setup/setup.ulf#%REQUIRES_ADMIN_PRIV%
 msgid  "Administrator privileges are required for upgrading the Windows Installer."
-msgstr ""
+msgstr "Виндовс суулгагчийг сайжруулахад захирагчийн эрх шаардлагатай."
 
 #: win32/source/setup/setup.ulf#%FILE_NOT_FOUND%
 msgid  "Setup was unable to find the file '%s'."
@@ -913,7 +917,7 @@ msgstr "Суулгац'%s' файлыг олсонгүй."
 
 #: win32/source/setup/setup.ulf#%INVALID_PARAM%
 msgid  "Invalid command line option '%s'. Please use '/?' for help."
-msgstr ""
+msgstr "Хүчингүй тушаалын мөрийн сонголт '%s'. Тусламж хүсэж байвал '/?' хэрэглэнэ үү."
 
 #: win32/source/setup/setup.ulf#%SETUP_TO_OLD%
 msgid  "This package requires at least the version '%s' of the Windows Installer. \nYou have Windows Installer '%s' on your system!"
@@ -925,7 +929,7 @@ msgstr ""
 
 #: win32/source/setup/setup.ulf#%USAGE%
 msgid  "Usage:\n   /? :  Shows this dialog.\n   /a :  Performs an administrative installation.\n   /j[u|m] :  Performs an advertising installation.\n   /q[n] : Do not show any user interface (silent mode).\n"
-msgstr ""
+msgstr "Хэрэглээ:\n   /? :  Энэ диалогийг харуулна.\n   /a :  Захиргааны суулгацыг гүйцэтгэнэ.\n   /j[u|m] :  Сурталчилгаат суулгацыг гүйцэтгэнэ.\n   /q[n] : Хэрэглэгчийн гадаргуу үл харуулах (чимээгүй горим).\n"
 
 #: win32/source/setup/setup.ulf#%ALREADY_RUNNING%
 msgid  "There is already a setup process running."
@@ -1046,7 +1050,3 @@ msgstr "Хятад (Хялбаршуулсан)"
 #: win32/source/setup/setup.ulf#%LANGUAGE_PT_PT%
 msgid  "Portuguese (Portugal)"
 msgstr "Португали (Португали)"
-
-#: win32/source/setup/setup.ulf#%APP_TITLE%
-msgid  "Setup"
-msgstr "Суулгац"
