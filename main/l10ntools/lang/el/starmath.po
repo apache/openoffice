@@ -419,7 +419,7 @@ msgstr "Γραμμή ~τίτλου"
 #: source/smres.src#RID_PRINTOPTIONPAGE.CB_EQUATION_TEXT.CheckBox.Text
 #, fuzzy
 msgid  "~Formula text"
-msgstr "Καθορίζει τον αν θα εκτυπώνεται το όνομα του εγγράφου"
+msgstr "Κείμενο μα~θ. τύπου"
 
 #: source/smres.src#RID_PRINTOPTIONPAGE.CB_FRAME.CheckBox.Text
 #, fuzzy
@@ -434,7 +434,7 @@ msgstr "Μορφή εκτύπωσης"
 #: source/smres.src#RID_PRINTOPTIONPAGE.RB_ORIGINAL_SIZE.RadioButton.Text
 #, fuzzy
 msgid  "O~riginal size"
-msgstr "Περι~γράμματα"
+msgstr "Αρ~χικό μέγεθος"
 
 #: source/smres.src#RID_PRINTOPTIONPAGE.RB_FIT_TO_PAGE.RadioButton.Text
 #, fuzzy
@@ -444,7 +444,7 @@ msgstr "Προσαρμογή στη ~σελίδα"
 #: source/smres.src#RID_PRINTOPTIONPAGE.RB_ZOOM.RadioButton.Text
 #, fuzzy
 msgid  "~Scaling"
-msgstr "Μέγεθος"
+msgstr "Κ~λιμάκωση"
 
 #: source/smres.src#RID_PRINTOPTIONPAGE.FL_MISC_OPTIONS.FixedLine.Text
 #, fuzzy
@@ -546,12 +546,14 @@ msgid  "~Delete"
 msgstr "~Διαγραφή"
 
 #: source/smres.src#RID_NOMATHTYPEFACEWARNING.WarningBox.Message
+#, fuzzy
 msgid  "The 'StarMath' font has not been installed.\nWithout this font %PRODUCTNAME Math cannot function correctly.\nPlease install this font and restart %PRODUCTNAME Math."
-msgstr ""
+msgstr "Η γραμματοσειρά 'StarMath' δεν είναι εγκατεστημένη.\nΧωρλις αυτή τη  γραμματοσειρά δεν είναι δυνατή η σωστή λειτουργία του  %PRODUCTNAME.\nΠαρακαλώ εγκαταστήστε αυτή τη γραμματοσειρά και επανεκκινήστε το %PRODUCTNAME Math."
 
 #: source/smres.src#RID_DEFAULTSAVEQUERY.QueryBox.Message
+#, fuzzy
 msgid  "Should the changes be saved as defaults?\n\nThese changes will apply for all new formulas."
-msgstr ""
+msgstr "Να αποθηκευτούν οι αλλαγές ως προεπιλογή;\n\nΟι αλλαγές αυτές θα έχουν επίδραση σε όλες τις νέες φόρμουλες."
 
 #: source/smres.src#RID_FONTREGULAR.String.Text
 #, fuzzy
@@ -687,6 +689,11 @@ msgstr "Sans"
 #, fuzzy
 msgid  "Fixed"
 msgstr "Σταθερές"
+
+#: source/smres.src#CMDBOXWINDOW_TEXT.#define.Text
+#, fuzzy
+msgid  "Commands"
+msgstr "Εντολές"
 
 #: source/smres.src#RID_DOCUMENTSTR.String.Text
 #, fuzzy
@@ -839,8 +846,9 @@ msgid  "B~orders"
 msgstr "Κείμενο μα~θ. τύπου"
 
 #: source/smres.src#RID_PRINTUIOPTIONS.item6.ItemList.item
+#, fuzzy
 msgid  "Size"
-msgstr ""
+msgstr "Καθορίζει τον αν θα εκτυπώνονται τα περιεχόμενα του παραθύρου \"Εντολές\" στο κάτω μέρος της εκτύπωσης."
 
 #: source/smres.src#RID_PRINTUIOPTIONS.item7.ItemList.item
 #, fuzzy
@@ -848,31 +856,24 @@ msgid  "O~riginal size"
 msgstr "Περι~γράμματα"
 
 #: source/smres.src#RID_PRINTUIOPTIONS.item8.ItemList.item
+#, fuzzy
 msgid  "Fit to ~page"
-msgstr ""
+msgstr "Εφαρμόζει ένα λεπτό περίγραμμα στην περιοχή μαθηματικών τύπων στην εκτύπωση"
 
 #: source/smres.src#RID_PRINTUIOPTIONS.item9.ItemList.item
 #, fuzzy
 msgid  "~Scaling"
 msgstr "Μέγεθος"
 
-#: source/smres.src#CMDBOXWINDOW_TEXT.#define.Text
-#, fuzzy
-msgid  "Commands"
-msgstr "Εντολές"
-
 #: source/commands.src#RID_COMMANDMENU.RID_UNBINOPS_MENU.MenuItem.Text
-#, fuzzy
 msgid  "~Unary/Binary Operators"
 msgstr "Ενα~δικοί/Δυαδικοί τελεστές"
 
 #: source/commands.src#RID_COMMANDMENU.RID_RELATIONS_MENU.MenuItem.Text
-#, fuzzy
 msgid  "~Relations"
 msgstr "~Σχέσεις"
 
 #: source/commands.src#RID_COMMANDMENU.RID_SETOPERATIONS_MENU.MenuItem.Text
-#, fuzzy
 msgid  "~Set Operations"
 msgstr "~Πράξεις συνόλων"
 
@@ -882,7 +883,6 @@ msgid  "~Functions"
 msgstr "~Συναρτήσεις"
 
 #: source/commands.src#RID_COMMANDMENU.RID_FUNCTIONS_MENU.RID_FUNCTIONSOTHER1_MENU.MenuItem.Text
-#, fuzzy
 msgid  "More"
 msgstr "άλλα"
 
@@ -1239,8 +1239,9 @@ msgid  "Power"
 msgstr ""
 
 #: source/toolbox.src#RID_TOOLBOXWINDOW.TOOLBOX_CAT_D.RID_SINX.ToolBoxItem.Text
+#, fuzzy
 msgid  "Sine"
-msgstr ""
+msgstr "Καθορίζει τον αν θα εκτυπώνονται τα περιεχόμενα του παραθύρου \"Εντολές\" στο κάτω μέρος της εκτύπωσης."
 
 #: source/toolbox.src#RID_TOOLBOXWINDOW.TOOLBOX_CAT_D.RID_COSX.ToolBoxItem.Text
 msgid  "Cosine"

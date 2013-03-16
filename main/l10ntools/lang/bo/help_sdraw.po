@@ -36,7 +36,7 @@ msgid  "To access this command..."
 msgstr "བཀའ་ཚིག་འདི་ལ་འཚམས་འདྲི་བྱེད་..."
 
 #: source/text/sdraw/00/00000004.xhp#hd_id3156024.1
-msgid  "\<variable id=\"wie\"\>To access this command...\</variable\>"
+msgid  "\<variable id=\\"
 msgstr ""
 
 #: source/text/sdraw/01/04010000.xhp#tit
@@ -44,11 +44,11 @@ msgid  "Insert Page"
 msgstr "ཤོག་ངོས་གསར་པ།"
 
 #: source/text/sdraw/01/04010000.xhp#hd_id3150202.1
-msgid  "\<link href=\"text/sdraw/01/04010000.xhp\" name=\"Insert Page\"\>Insert Page\</link\>"
+msgid  "\<link href=\\"
 msgstr ""
 
 #: source/text/sdraw/01/04010000.xhp#par_id3152988.2
-msgid  "\<variable id=\"seitetext\"\>Inserts a blank page after the selected page.\</variable\>"
+msgid  "\<variable id=\\"
 msgstr ""
 
 #: source/text/sdraw/04/01020000.xhp#tit
@@ -60,15 +60,15 @@ msgid  "\<bookmark_value\>shortcut keys;in drawings\</bookmark_value\>         \
 msgstr ""
 
 #: source/text/sdraw/04/01020000.xhp#hd_id3156441.1
-msgid  "\<variable id=\"draw_keys\"\>\<link href=\"text/sdraw/04/01020000.xhp\" name=\"Shortcut Keys for Drawings\"\>Shortcut Keys for Drawings\</link\>\</variable\>"
+msgid  "\<variable id=\\"
 msgstr ""
 
 #: source/text/sdraw/04/01020000.xhp#par_id3153877.2
 msgid  "The following is a list of shortcut keys specific to Drawing documents."
-msgstr ""
+msgstr "གཤམ་གསལ་ནི་རིས་འགོད་ཡིག་ཚགས་ལ་ཆེད་དུ་རན་པའི་མྱུར་བདེའི་མཐེབ་རེའུ་འགོད་ཡིན།"
 
 #: source/text/sdraw/04/01020000.xhp#par_id3154730.103
-msgid  "You can also use the \<link href=\"text/shared/04/01010000.xhp\" name=\"general shortcut keys for $[officename]\"\>general shortcut keys for $[officename]\</link\>."
+msgid  "You can also use the \<link href=\\"
 msgstr ""
 
 #: source/text/sdraw/04/01020000.xhp#hd_id3149121.3
@@ -100,7 +100,7 @@ msgid  "Opens group to edit individual objects."
 msgstr "ཚོ་སྒྲིག་ཁ་ཕྱེས་ཏེ་བྱ་ཡུལ་ཁག་རྩོམ་སྒྲིག་བྱེད།"
 
 #: source/text/sdraw/04/01020000.xhp#hd_id3155113.11
-msgid  "\<switchinline select=\"sys\"\>\<caseinline select=\"MAC\"\>Command\</caseinline\>\<defaultinline\>Ctrl\</defaultinline\>\</switchinline\>+F3"
+msgid  "\<switchinline select=\\"
 msgstr ""
 
 #: source/text/sdraw/04/01020000.xhp#par_id3159238.12
@@ -140,7 +140,7 @@ msgid  "Checks spelling."
 msgstr "འབྲི་སྦྱོར་བརྟག་དཔྱད་བྱེད།"
 
 #: source/text/sdraw/04/01020000.xhp#hd_id3152869.27
-msgid  "\<switchinline select=\"sys\"\>\<caseinline select=\"MAC\"\>Command\</caseinline\>\<defaultinline\>Ctrl\</defaultinline\>\</switchinline\>+F7"
+msgid  "\<switchinline select=\\"
 msgstr ""
 
 #: source/text/sdraw/04/01020000.xhp#par_id3154765.28
@@ -156,7 +156,7 @@ msgid  "Edit points on/off."
 msgstr "རྩོམ་སྒྲིག་ཚེག་ཁ་ཕྱེ་/ཁ་བརྒྱབ།"
 
 #: source/text/sdraw/04/01020000.xhp#hd_id3149317.31
-msgid  "\<switchinline select=\"sys\"\>\<caseinline select=\"MAC\"\>Command\</caseinline\>\<defaultinline\>Ctrl\</defaultinline\>\</switchinline\>+Shift+F8"
+msgid  "\<switchinline select=\\"
 msgstr ""
 
 #: source/text/sdraw/04/01020000.xhp#par_id3147250.32
@@ -164,7 +164,7 @@ msgid  "Fits to frame."
 msgstr "སྒྲོམ་གཞི་རན་པ།"
 
 #: source/text/sdraw/04/01020000.xhp#hd_id3150434.35
-msgid  "\<switchinline select=\"sys\"\>\<caseinline select=\"MAC\"\>Command+T\</caseinline\>\<defaultinline\>F11\</defaultinline\>\</switchinline\>"
+msgid  "\<switchinline select=\\"
 msgstr ""
 
 #: source/text/sdraw/04/01020000.xhp#par_id3151389.36
@@ -220,7 +220,7 @@ msgid  "Zooms in on the current selection."
 msgstr "མིག་སྔའི་འདེམས་པའི་ནང་དོན་ཆེ་རུ་གཏོང་།"
 
 #: source/text/sdraw/04/01020000.xhp#hd_id3150867.52
-msgid  "\<switchinline select=\"sys\"\>\<caseinline select=\"MAC\"\>Command\</caseinline\>\<defaultinline\>Ctrl\</defaultinline\>\</switchinline\>+Shift+G"
+msgid  "\<switchinline select=\\"
 msgstr ""
 
 #: source/text/sdraw/04/01020000.xhp#par_id3149250.53
@@ -228,7 +228,7 @@ msgid  "Groups selected objects."
 msgstr ""
 
 #: source/text/sdraw/04/01020000.xhp#hd_id3149955.54
-msgid  "Shift+\<switchinline select=\"sys\"\>\<caseinline select=\"MAC\"\>Command+Option\</caseinline\>\<defaultinline\>Ctrl+Alt\</defaultinline\>\</switchinline\>+A"
+msgid  "Shift+\<switchinline select=\\"
 msgstr ""
 
 #: source/text/sdraw/04/01020000.xhp#par_id3148582.55
@@ -236,7 +236,7 @@ msgid  "Ungroups selected group."
 msgstr "འདེམས་པའི་ཚོ་ཡིས་ཚོ་སྒྲིག་རྩིས་མེད་གཏོང་།"
 
 #: source/text/sdraw/04/01020000.xhp#hd_id3146852.56
-msgid  "\<switchinline select=\"sys\"\>\<caseinline select=\"MAC\"\>Command\</caseinline\>\<defaultinline\>Ctrl\</defaultinline\>\</switchinline\>+Shift+K"
+msgid  "\<switchinline select=\\"
 msgstr ""
 
 #: source/text/sdraw/04/01020000.xhp#par_id3153110.57
@@ -244,7 +244,7 @@ msgid  "Combines selected objects."
 msgstr "འདེམས་པའི་བྱ་ཡུལ་ཚོ་སྒྲིག་བྱེད།"
 
 #: source/text/sdraw/04/01020000.xhp#hd_id3153567.58
-msgid  "\<switchinline select=\"sys\"\>\<caseinline select=\"MAC\"\>Command+Option\</caseinline\>\<defaultinline\>Ctrl+Alt\</defaultinline\>\</switchinline\>+Shift+K"
+msgid  "\<switchinline select=\\"
 msgstr ""
 
 #: source/text/sdraw/04/01020000.xhp#par_id3147366.59
@@ -252,7 +252,7 @@ msgid  "Uncombines selected objects."
 msgstr "ཚོ་སྒྲིག་འདེམས་པའི་བྱ་ཡུལ་རྩིས་མེད་གཏོང་།"
 
 #: source/text/sdraw/04/01020000.xhp#hd_id3153730.60
-msgid  "\<switchinline select=\"sys\"\>\<caseinline select=\"MAC\"\>Command\</caseinline\>\<defaultinline\>Ctrl\</defaultinline\>\</switchinline\>+Shift+ +"
+msgid  "\<switchinline select=\\"
 msgstr ""
 
 #: source/text/sdraw/04/01020000.xhp#par_id3155928.61
@@ -260,7 +260,7 @@ msgid  "Bring to front."
 msgstr "རྩེ་རིམ་བཀོད་སྒྲིག་བྱེད།"
 
 #: source/text/sdraw/04/01020000.xhp#hd_id3145245.62
-msgid  "\<switchinline select=\"sys\"\>\<caseinline select=\"MAC\"\>Command\</caseinline\>\<defaultinline\>Ctrl\</defaultinline\>\</switchinline\>+ +"
+msgid  "\<switchinline select=\\"
 msgstr ""
 
 #: source/text/sdraw/04/01020000.xhp#par_id3148393.63
@@ -268,7 +268,7 @@ msgid  "Bring forward."
 msgstr "རིམ་པ་གཅིག་གོ་ལ་སྤོས།"
 
 #: source/text/sdraw/04/01020000.xhp#hd_id3150928.64
-msgid  "\<switchinline select=\"sys\"\>\<caseinline select=\"MAC\"\>Command\</caseinline\>\<defaultinline\>Ctrl\</defaultinline\>\</switchinline\>+ -"
+msgid  "\<switchinline select=\\"
 msgstr ""
 
 #: source/text/sdraw/04/01020000.xhp#par_id3156062.65
@@ -276,7 +276,7 @@ msgid  "Send backward."
 msgstr "འོག་ལ་རིམ་གཅིག་སྤོས།"
 
 #: source/text/sdraw/04/01020000.xhp#hd_id3145298.66
-msgid  "\<switchinline select=\"sys\"\>\<caseinline select=\"MAC\"\>Command\</caseinline\>\<defaultinline\>Ctrl\</defaultinline\>\</switchinline\>+Shift+ -"
+msgid  "\<switchinline select=\\"
 msgstr ""
 
 #: source/text/sdraw/04/01020000.xhp#par_id3149028.67
@@ -312,7 +312,7 @@ msgid  "Switch to next page"
 msgstr "འོག་གི་ཤོག་ལྷེར་བརྗེ་སྒྱུར་བྱེད་"
 
 #: source/text/sdraw/04/01020000.xhp#par_idN10AED
-msgid  "\<switchinline select=\"sys\"\>\<caseinline select=\"MAC\"\>Command\</caseinline\>\<defaultinline\>Ctrl\</defaultinline\>\</switchinline\>+Page Up"
+msgid  "\<switchinline select=\\"
 msgstr ""
 
 #: source/text/sdraw/04/01020000.xhp#par_idN10AFD
@@ -321,7 +321,7 @@ msgid  "Switch to previous layer"
 msgstr "གོང་གི་རིམ་པར་བརྗེ་སྒྱུར་བྱེད་"
 
 #: source/text/sdraw/04/01020000.xhp#par_idN10AF8
-msgid  "\<switchinline select=\"sys\"\>\<caseinline select=\"MAC\"\>Command\</caseinline\>\<defaultinline\>Ctrl\</defaultinline\>\</switchinline\>+Page Down"
+msgid  "\<switchinline select=\\"
 msgstr ""
 
 #: source/text/sdraw/04/01020000.xhp#par_idN10AF2
@@ -340,7 +340,7 @@ msgid  "Moves the selected object in the direction of the arrow key."
 msgstr "འདེམས་པའི་བྱ་ཡུལ་མདའ་རྩེའི་མཐེབ་བརྒྱུད་པའི་ཕྱོགས་སུ་སྤོ་སྒུལ་བྱེད།"
 
 #: source/text/sdraw/04/01020000.xhp#hd_id3156259.73
-msgid  "\<switchinline select=\"sys\"\>\<caseinline select=\"MAC\"\>Command\</caseinline\>\<defaultinline\>Ctrl\</defaultinline\>\</switchinline\>+Arrow Key"
+msgid  "\<switchinline select=\\"
 msgstr ""
 
 #: source/text/sdraw/04/01020000.xhp#par_id3147171.74
@@ -349,20 +349,22 @@ msgid  "Moves the page view in the direction of the arrow key."
 msgstr "ཤོག་ངོས་མཐོང་རིས་མདའ་རྩེའི་མཐེབ་བཞིན་ཁ་ཕྱོགས་སྤོ་སྒུལ་བྱེད།"
 
 #: source/text/sdraw/04/01020000.xhp#hd_id3152484.79
-msgid  "\<switchinline select=\"sys\"\>\<caseinline select=\"MAC\"\>Command\</caseinline\>\<defaultinline\>Ctrl\</defaultinline\>\</switchinline\>-click while dragging an object. Note: you must first enable the \<link href=\"text/shared/optionen/01070500.xhp\" name=\"Copy when moving\"\>Copy when moving\</link\> option in \<switchinline select=\"sys\"\>\<caseinline select=\"MAC\"\>%PRODUCTNAME - Preferences\</caseinline\>\<defaultinline\>Tools - Options\</defaultinline\>\</switchinline\> - %PRODUCTNAME Draw - General to use this shortcut key."
+msgid  "\<switchinline select=\\"
 msgstr ""
 
 #: source/text/sdraw/04/01020000.xhp#par_id3149450.80
+#, fuzzy
 msgid  "Creates a copy of the dragged object when mouse button is released."
-msgstr ""
+msgstr "ཙིག་རྟགས་གནོན་མཐེབ་གློད་པའི་རྗེས་འདྲུད་སྒུལ་བྱ་ཡུལ་གྱི་ཟུར་ཡིག་གཅིག་གསར་བཟོ་བྱེད།"
 
 #: source/text/sdraw/04/01020000.xhp#hd_id3154643.104
-msgid  "\<switchinline select=\"sys\"\>\<caseinline select=\"MAC\"\>Command\</caseinline\>\<defaultinline\>Ctrl\</defaultinline\>\</switchinline\>+Enter with keyboard focus (F6) on a drawing object icon on Tools bar"
+msgid  "\<switchinline select=\\"
 msgstr ""
 
 #: source/text/sdraw/04/01020000.xhp#par_id3150756.105
+#, fuzzy
 msgid  "Inserts a drawing object of default size into the center of the current view."
-msgstr ""
+msgstr "ཁས་ལེན་ཆེ་ཆུང་གི་རིས་འགོད་བྱ་ཡུལ་མིག་སྔའི་མཐོང་རིས་ལ་དཀྱིལ་བསྡུ་བྱེད།"
 
 #: source/text/sdraw/04/01020000.xhp#hd_id3151189.106
 #, fuzzy
@@ -395,23 +397,24 @@ msgid  "Enters text mode if a text object is selected."
 msgstr "ཡིག་དེབ་མ་ཚུལ་ནང་འཛུལ། (གལ་སྲིད་ཡི་གེའི་བྱ་ཡུལ་འདེམས་ཟིན་ན་)"
 
 #: source/text/sdraw/04/01020000.xhp#hd_id3155851.112
-msgid  "\<switchinline select=\"sys\"\>\<caseinline select=\"MAC\"\>Command\</caseinline\>\<defaultinline\>Ctrl\</defaultinline\>\</switchinline\>+Enter"
+msgid  "\<switchinline select=\\"
 msgstr ""
 
 #: source/text/sdraw/04/01020000.xhp#par_id3154046.113
+#, fuzzy
 msgid  "Enters text mode if a text object is selected. If there are no text objects or if you have cycled through all of the text objects on the page, a new page is inserted."
-msgstr ""
+msgstr "ཡིག་དེབ་མུ་ཚལ་ནང་འཛུལ། (གལ་སྲིད་ཡི་གེའི་བྱ་ཡུལ་འདེམས་ཟིན་ན་) གལ་སྲིད་ཡི་གེའི་བྱ་ཡུལ་མེད་པའམ་ཡང་ན་ཤོག་ངོས་ནང་གི་ཡི་གེའི་བྱ་ཡུལ་ཡོད་ཚད་འདེམས་ཟིན་ན་ ཤོག་ངོས་གསར་པ་གཅིག་བསྒར་འཛུད་བྱེད།"
 
 #: source/text/sdraw/04/01020000.xhp#hd_id3149977.81
-msgid  "\<switchinline select=\"sys\"\>\<caseinline select=\"MAC\"\>Option\</caseinline\>\<defaultinline\>Alt\</defaultinline\>\</switchinline\>"
+msgid  "\<switchinline select=\\"
 msgstr ""
 
 #: source/text/sdraw/04/01020000.xhp#par_id3152812.82
-msgid  "Press the \<switchinline select=\"sys\"\>\<caseinline select=\"MAC\"\>Option\</caseinline\>\<defaultinline\>Alt\</defaultinline\>\</switchinline\> key and drag with the mouse to draw or resize an object from the center of the object outward."
+msgid  "Press the \<switchinline select=\\"
 msgstr ""
 
 #: source/text/sdraw/04/01020000.xhp#hd_id3143232.83
-msgid  "\<switchinline select=\"sys\"\>\<caseinline select=\"MAC\"\>Option\</caseinline\>\<defaultinline\>Alt\</defaultinline\>\</switchinline\> + click on an object"
+msgid  "\<switchinline select=\\"
 msgstr ""
 
 #: source/text/sdraw/04/01020000.xhp#par_id3156007.84
@@ -420,7 +423,7 @@ msgid  "Selects the object behind the currently selected object."
 msgstr "མིག་སྔའི་བདམས་པའི་བྱ་ཡུལ་རྗེས་ཀྱི་བྱ་ཡུལ་འདེམས།"
 
 #: source/text/sdraw/04/01020000.xhp#hd_id3147252.85
-msgid  "\<switchinline select=\"sys\"\>\<caseinline select=\"MAC\"\>Option\</caseinline\>\<defaultinline\>Alt\</defaultinline\>\</switchinline\>+Shift+click an object"
+msgid  "\<switchinline select=\\"
 msgstr ""
 
 #: source/text/sdraw/04/01020000.xhp#par_id3145666.86
@@ -444,12 +447,14 @@ msgid  "Shift+ drag while moving an object"
 msgstr "Shift མཐེབ་གནོང་པ་མ་ཟད་ཙིག་རྟགས་འདྲུད་སྒུལ་བྱེད།"
 
 #: source/text/sdraw/04/01020000.xhp#par_id3145620.76
+#, fuzzy
 msgid  "The movement of the selected object is constrained by multiples of 45 degrees."
-msgstr ""
+msgstr "བདམས་པའི་བྱ་ཡུལ་གྱི་སྤོ་སྒུལ་ཁ་ཕྱོགས་ནི་ཏུའུ་ 45 ཡི་ལྡབ་གྲངས་ཡིན།"
 
 #: source/text/sdraw/04/01020000.xhp#hd_id3154933.89
+#, fuzzy
 msgid  "Shift+drag while creating or resizing an object"
-msgstr ""
+msgstr "བྱ་ཡུལ་ཆེ་ཆུང་གསར་བཟོ་ཡང་ན་བཟོ་བཅོས་སྐབས་  Shift མཐེབ་གནོན་འཛིན་དང་དུས་མཚུངས་བྱ་ཡུལ་འདྲུད་སྐྱེལ་བྱེད།"
 
 #: source/text/sdraw/04/01020000.xhp#par_id3148831.90
 #, fuzzy
@@ -462,8 +467,9 @@ msgid  "Tab"
 msgstr "Tab མཐེབ་"
 
 #: source/text/sdraw/04/01020000.xhp#par_id3148804.92
+#, fuzzy
 msgid  "Cycles through the objects on the page in the order in which they were created."
-msgstr ""
+msgstr "གསར་བཟོའི་བྱ་རིམ་བཞིན་ཤོག་ངོས་ཐོག་གི་བྱ་ཡུལ་དབར་འཁོང་སྐྱོད་བྱེད།"
 
 #: source/text/sdraw/04/01020000.xhp#hd_id3145410.93
 #, fuzzy
@@ -471,8 +477,9 @@ msgid  "Shift+Tab"
 msgstr "Shift+Tab"
 
 #: source/text/sdraw/04/01020000.xhp#par_id3149764.94
+#, fuzzy
 msgid  "Cycles through the objects on the page in the reverse-order in which they were created."
-msgstr ""
+msgstr "གསར་བཟོ་བྱེད་པའི་ལྡོག་ཕྱོགས་ཀྱི་གོ་རིམ་བཞིན་ཤོག་ངོས་ཐོག་གི་བྱ་ཡུལ་དབར་འཁོང་སྐྱོད་བྱེད།"
 
 #: source/text/sdraw/04/01020000.xhp#hd_id3158399.97
 #, fuzzy
@@ -485,12 +492,11 @@ msgid  "Exits current mode."
 msgstr "མིག་སྔའི་མ་ཚུལ་ནས་ཕྱིར་ཐོན།"
 
 #: source/text/sdraw/guide/align_arrange.xhp#tit
-#, fuzzy
 msgid  "Arranging, Aligning and Distributing Objects"
 msgstr "སྟར་འགོད་ སྙོམས་གཤིབ་དང་ཁྱབ་པའི་བྱ་ཡུལ།"
 
 #: source/text/sdraw/guide/align_arrange.xhp#hd_id3149656.73
-msgid  "\<variable id=\"align_arrange\"\>\<link href=\"text/sdraw/guide/align_arrange.xhp\" name=\"Arranging and Aligning Objects\"\>Arranging, Aligning and Distributing Objects\</link\>\</variable\>"
+msgid  "\<variable id=\\"
 msgstr ""
 
 #: source/text/sdraw/guide/align_arrange.xhp#bm_id3125863
@@ -498,21 +504,19 @@ msgid  "\<bookmark_value\>arranging; objects (guide)\</bookmark_value\>\<bookmar
 msgstr ""
 
 #: source/text/sdraw/guide/align_arrange.xhp#hd_id3125863.17
-#, fuzzy
 msgid  "Arranging Objects"
 msgstr "རིམ་སྟར་བྱ་ཡུལ་"
 
 #: source/text/sdraw/guide/align_arrange.xhp#par_id3153727.18
 msgid  "Each object that you place in your document is successively stacked on the preceding object. To re-arrange the stacking order of a selected object, proceed as follows."
-msgstr ""
+msgstr "ཡིག་ཚགས་ནང་བསྒར་འཛུད་བྱེད་པའི་བྱ་ཡུལ་ཚང་མ་དང་མདུན་གྱི་བྱ་ཡུལ་རིམ་བརྩེགས་བྱེད། འདེམས་པའི་བྱ་ཡུལ་གྱི་དོས་ཁང་གོ་རིམ་བསྐྱར་དུ་སྟར་འགོད་བྱེད་ མུ་མཐུད་གཤམ་གྱི་བཀོད་སྤྱོད་བྱེད།"
 
 #: source/text/sdraw/guide/align_arrange.xhp#par_idN107D5
-#, fuzzy
 msgid  "Click the object whose position you want to change."
 msgstr "བསྐྱར་དུ་སྟར་འགོད་བྱེད་པའི་བྱ་ཡུལ་རྐྱང་རྡེབ་བྱེད།"
 
 #: source/text/sdraw/guide/align_arrange.xhp#par_id3150327.78
-msgid  "Choose \<item type=\"menuitem\"\>Modify - Arrange\</item\> to bring up the context menu and choose one of the arrange options:"
+msgid  "Choose \<item type=\\"
 msgstr ""
 
 #: source/text/sdraw/guide/align_arrange.xhp#par_idN107E6
@@ -536,39 +540,34 @@ msgid  "\<emph\>Behind Object\</emph\> places the object behind another object t
 msgstr ""
 
 #: source/text/sdraw/guide/align_arrange.xhp#hd_id3155766.79
-#, fuzzy
 msgid  "Arranging an Object Behind Another Object"
 msgstr "བྱ་ཡུལ་སྟར་འགོད་ནི་བྱ་ཡུལ་ཞིག་གི་རྗེས་ལ་འདེམས་"
 
 #: source/text/sdraw/guide/align_arrange.xhp#par_idN10811
-#, fuzzy
 msgid  "Click the object whose position you want to change."
 msgstr "བསྐྱར་དུ་སྟར་འགོད་བྱེད་པའི་བྱ་ཡུལ་རྐྱང་རྡེབ་བྱེད།"
 
 #: source/text/sdraw/guide/align_arrange.xhp#par_id3154253.80
-msgid  "Choose \<item type=\"menuitem\"\>Modify - Arrange\</item\> to open the context menu and choose \<emph\>Behind Object\</emph\>. The mouse pointer changes to a hand."
+msgid  "Choose \<item type=\\"
 msgstr ""
 
 #: source/text/sdraw/guide/align_arrange.xhp#par_id3149126.81
-#, fuzzy
 msgid  "Click the object behind which you want to place the selected object."
 msgstr "བདམས་པའི་བྱ་ཡུལ་དེ་དེའི་རྗེས་ཀྱི་སྟར་འགོད་བྱ་ཡུལ་ལ་རྐྱང་རྡེབ་བྱེད།"
 
 #: source/text/sdraw/guide/align_arrange.xhp#hd_id3145789.20
-#, fuzzy
 msgid  "Reversing The Stacking Order of Two Objects"
 msgstr "བྱ་ཡུལ་གཉིས་ཀྱི་བརྩེགས་འཇོག་གོ་རིམ་བཪྙེས་སྒྱུར་བྱེད་"
 
 #: source/text/sdraw/guide/align_arrange.xhp#par_id3154022.83
 msgid  "Shift-click both objects to select them."
-msgstr ""
+msgstr "Shift མཐེབ་གནོན་པ་དང་དུས་མཚུངས་བྱ་ཡུལ་འདི་གཉིས་རྐྱང་རྡེབ་བྱས་ཏེ་དེ་དག་འདེམས།"
 
 #: source/text/sdraw/guide/align_arrange.xhp#par_id3155114.84
-msgid  "Choose \<item type=\"menuitem\"\>Modify - Arrange\</item\> to open the context menu and choose \<emph\>Reverse\</emph\>."
+msgid  "Choose \<item type=\\"
 msgstr ""
 
 #: source/text/sdraw/guide/align_arrange.xhp#hd_id3166425.21
-#, fuzzy
 msgid  "Aligning Objects"
 msgstr "སྙོམས་གཤིབ་བྱ་ཡུལ་"
 
@@ -578,28 +577,26 @@ msgstr ""
 
 #: source/text/sdraw/guide/align_arrange.xhp#par_idN108A3
 msgid  "Select an object to align it to the page or select multiple objects to align them relative to each other."
-msgstr ""
+msgstr "བྱ་ཡུལ་གཅིག་འདེམས་  དེ་དང་ཤོག་ངོས་སྙོམས་གཤིབ་བྱེད་  ཡང་ན་བྱ་ཡུལ་མང་དག་འདེམས་པ་མ་ཟད་ལེགས་སྒྲིག་ཀྱང་བྱེད་  བྱ་ཡུལ་འདི་དག་ཕན་ཚུན་སྙོམས་གཤིབ་བྱེད།"
 
 #: source/text/sdraw/guide/align_arrange.xhp#par_idN108A7
-msgid  "Choose \<item type=\"menuitem\"\>Modify - Alignment\</item\> and select one of the alignment options."
+msgid  "Choose \<item type=\\"
 msgstr ""
 
 #: source/text/sdraw/guide/align_arrange.xhp#par_idN108AE
-#, fuzzy
 msgid  "Distributing Objects"
 msgstr "ཁྱབ་པའི་བྱ་ཡུལ།"
 
 #: source/text/sdraw/guide/align_arrange.xhp#par_id3151390.71
-msgid  "If you select three or more objects in Draw, you can also use the \<link href=\"text/shared/01/05360000.xhp\" name=\"Distribution\"\>\<emph\>Distribution\</emph\>\</link\> command to distribute the vertical and horizontal spacing evenly between the objects."
+msgid  "If you select three or more objects in Draw, you can also use the \<link href=\\"
 msgstr ""
 
 #: source/text/sdraw/guide/align_arrange.xhp#par_idN108CE
-#, fuzzy
 msgid  "Select three or more objects to be distributed."
 msgstr "གསུམ་ཡན་གྱི་བྱ་ཡུལ་ཁྱབ་པ་འདེམས།"
 
 #: source/text/sdraw/guide/align_arrange.xhp#par_idN108D2
-msgid  "Choose \<item type=\"menuitem\"\>Modify - Distribution\</item\>."
+msgid  "Choose \<item type=\\"
 msgstr ""
 
 #: source/text/sdraw/guide/align_arrange.xhp#par_idN108DA
@@ -611,7 +608,6 @@ msgid  "Selected objects are distributed evenly along the horizontal or vertical
 msgstr ""
 
 #: source/text/sdraw/guide/color_define.xhp#tit
-#, fuzzy
 msgid  "Defining Custom Colors"
 msgstr "རང་མཚན་འཇོག་ཚོས་གཞི་མཚན་འཇོག་བྱེད།"
 
@@ -620,15 +616,14 @@ msgid  "\<bookmark_value\>colors; defining and saving\</bookmark_value\>      \<
 msgstr ""
 
 #: source/text/sdraw/guide/color_define.xhp#hd_id3149263.7
-msgid  "\<variable id=\"color_define\"\>\<link href=\"text/sdraw/guide/color_define.xhp\" name=\"Defining Custom Colors\"\>Defining Custom Colors\</link\>\</variable\>"
+msgid  "\<variable id=\\"
 msgstr ""
 
 #: source/text/sdraw/guide/color_define.xhp#par_id3154511.8
 msgid  "If you want, you can mix a custom color and add it to a color table."
-msgstr ""
+msgstr "ཁྱེད་ཀྱིས་རང་གིས་མཚན་འཇོག་དང་ཚོས་གཞི་མིང་འདོགས་བྱེད་པ་མ་ཟད་དེ་ཚོས་གཞི་སྙོམས་གཞོང་ཡིག་ཆའི་ནང་ཉར་ཚགས་བྱེད།"
 
 #: source/text/sdraw/guide/color_define.xhp#hd_id3155600.9
-#, fuzzy
 msgid  "To define a custom color"
 msgstr "མཚན་འཇོག་བྱེད་དགོས་"
 
@@ -638,35 +633,35 @@ msgstr ""
 
 #: source/text/sdraw/guide/color_define.xhp#par_id3154657.13
 msgid  "Changes made to the standard color table are permanent and are saved automatically."
-msgstr ""
+msgstr "ཚད་གཞི་ཚོས་གཞིའི་རེའུ་མིག་ནང་ད་ཡོད་ཚོས་གཞི་བཟོ་བཅོས་རྗེས་བཟོ་བཅོས་ནང་དོན་ནི་རང་འགུལ་གྱིས་ཉར་སྡེར་བྱེད་  ཁྱེད་ཀྱིས་བསྐྱར་དུ་ཐོག་མའི་ཚོས་གཞི་སླར་གསོ་བྱེད་ དེར་བརྟེན་ཁྱེད་ཀྱིས་གར་ནུས་ཀྱིས་ཚོས་གཞིའི་རེའུ་མིག་ནང་ཚོས་གཞི་གསར་སྣོན་བྱ་རྒྱུ་གྲོས་གཞི་འདོན་ད་ཡོད་ཀྱི་ཚད་གཞིའི་ཚོས་གཞི་གང་བྱུང་གིས་བཟོ་བཅོས་མ་བྱེད།"
 
 #: source/text/sdraw/guide/color_define.xhp#par_id3166425.14
 msgid  "Click a color in the table that is similar to the one you want to mix. The color appears in the upper preview box to the right of the table."
-msgstr ""
+msgstr "ཚོས་གཞི་གསར་སྣོན་སྐབས་ཡར་ཤོས་ལ་སྔོན་དུ་ཚོས་གཞིའི་རེའུ་མིག་ནང་ཆ་འདུ་བའི་ཚོས་གཞི་གཅིག་འདེམས་ལེན་བྱེད་  ཚོས་གཞི་འདི་རྟག་ཏུ་སྔོན་མཐོང་ཚང་གི་གོང་ཕྱོགས་མཐོང་ཁྲའི་ནང་མངོན་པ་སྡུར་བ་བྱེད།"
 
 #: source/text/sdraw/guide/color_define.xhp#par_id3152992.15
 msgid  "Select the RGB or CMYK color model in the box below the preview boxes."
-msgstr ""
+msgstr "དེ་རྗེས་རེའུ་འགོད་སྒྲོམ་ནང་ཚོས་གཞི་གཅིག་འདེམས་  དེ་ལ་བརྟེན་ནས་ཚོས་གཞི་གསར་པ་གཅིག་མཚན་འཇོག་བྱེད།  རེའུ་འགོད་སྒྲོམ་ནང་ཁས་ལེན་པའི་ཚོས་གཞིའི་རིགས་ནི་ RGB དང་ CMYKཡིན།"
 
 #: source/text/sdraw/guide/color_define.xhp#par_id4979705
 msgid  "%PRODUCTNAME uses only the RGB color model for printing in color. The CMYK controls are provided only to ease the input of color values using CMYK notation."
 msgstr ""
 
 #: source/text/sdraw/guide/color_define.xhp#par_id3152987.16
-msgid  "The RGB color model mixes red, green and blue light to create colors on a computer screen. In the RGB model, the three color components are additive and can have values ranging from 0 (black) to 255 (white). The CMYK color model combines Cyan (C), Magenta (M), Yellow (Y), and blacK (K, also used for "Key") to create colors for printing. The four colors of the CMYK models are subtractive and are defined as percentages. Black corresponds to 100 % and white to 0 %."
-msgstr ""
+msgid  "The RGB color model mixes red, green and blue light to create colors on a computer screen. In the RGB model, the three color components are additive and can have values ranging from 0 (black) to 255 (white). The CMYK color model combines Cyan (C), Magenta (M), Yellow (Y), and blacK (K, also used for \"Key\") to create colors for printing. The four colors of the CMYK models are subtractive and are defined as percentages. Black corresponds to 100 % and white to 0 %."
+msgstr "RGB ཚོས་གཞིའི་འདྲ་དབྱིབས་དམར་པོ་དང་ ལྗང་ཁུ་ སྤོན་པོའི་འོད་མཉམ་བསྲེས་བྱས་ཏེ་རྩིས་འཁོར་གསལ་ཡོལ་ཐོག་གི་ཚོས་གཞི་བཟོས།   RGB དབྱིབས་ནང་རིགས་གསུམ་གྱི་ཚོས་གཞིའི་གྲུབ་ཆ་ནི་བརྩེགས་སྣོན་ཡིན་པ་མ་ཟད་ 0(ནག་པོ་)ནས་ 255(དཀར་པོ་)དབར་གྱི་ཐང་བཀོད་སྒྲིག་བྱེད།  CMYK ཚོས་གཞི་འདྲ་དབྱིབས་ཀྱིས་སྔོན་ལྗང་མདོ་ (C) དམར་སྨུག་མདོག་ (M) སེར་པོ་ (Y) དང་ནག་པོ་(Kནི་ \"Key\" བསྡུས་བྲིས་ཡིན་)ཚོ་སྒྲིག་ཏེ་གཏག་པར་ཚོས་གཞི་བཟོས།  CMYK དཔེ་དབྱིབས་ཀྱི་ཚོས་གཞི་བཞི་ནི་རིམ་ཆག་ཡིན་ བརྒྱ་ཆའི་སྡུར་བས་མཚན་འཇོག་བྱེད།  ནག་པོའི་ལྟོས་ཟླ་ 100% དཀར་པོའི་ལྟོས་ཟླ་ 0%ཡིན།"
 
 #: source/text/sdraw/guide/color_define.xhp#par_id3145386.17
 msgid  "Enter a numeric value in the boxes next to the color components. The new color appears in the preview box directly above the color model box."
-msgstr ""
+msgstr "གནོན་མཐེབ་དར་སྒུལ་གཡར་ཏེ་མདའ་རྩེའི་གནོན་མཐེབ་རྐྱང་རྡེབ་བྱེད་པའམ་ཡང་ན་གྲངས་ཐང་ཐད་ཀར་ནང་བཅུག་བྱེད་ན་ཁྱེད་ཀྱིས་ཚོས་གཞི་ཟིན་པའི་སྐལ་གྲངས་རང་གིས་བཀོད་སྒྲིག་བྱེད།  སྔོན་མཐོང་ཚང་འོག་ཕྱོགས་ཀྱི་མཐོང་སྒྲོམ་ནང་ཁྱེད་ཀྱིས་བཟོ་བཅོས་རྗེས་ཀྱི་ཕན་འབྲས་མགྱོགས་མྱུར་མཐོང་ཐུབ།"
 
 #: source/text/sdraw/guide/color_define.xhp#par_id3152871.18
-msgid  "You can also create a color using a color spectrum. Click the \<emph\>Edit\</emph\> button to open the \<link href=\"text/shared/optionen/01010501.xhp\" name=\"Color\"\>\<emph\>Color\</emph\>\</link\> dialog. Click a color. Use the Hue, Saturation, and Brightness boxes to adjust your color selection."
+msgid  "You can also create a color using a color spectrum. Click the \<emph\>Edit\</emph\> button to open the \<link href=\\"
 msgstr ""
 
 #: source/text/sdraw/guide/color_define.xhp#par_id3153011.19
 msgid  "Do one of the following:"
-msgstr ""
+msgstr "ཁྱེད་ཀྱིས་སྦྱོར་སྒྲིག་གསར་པ་སྤྱད་དེ་ཚོས་གཞིས་ཁུངས་ཚོས་གཞིའི་ཚན་བྱེད་  རང་གིས་སྦྱོར་སྒྲིག་གསར་པའི་ཚོས་གཞི་མཚན་འཇོག་ཡང་བྱ་ཆོག་   གལ་སྲིད་ཁྱེད་ཀྱིས་བཀོད་སྒྲིག་གསར་པ་འདོད་པའི་ཚོས་གཞིས་སྔོན་མཐོང་ཚང་གོང་ཕྱོགས་མཐོང་ཁྲའི་ནང་མངོན་པའི་ད་ཡོད་ཚོས་གཞི་ཚབ་བྱེད་  གླེང་སྒྲོམ་ནང་གི་<emph>བཟོ་བཅོས་</emph>གནོན་རྡེབ་བྱེད།  དོ་སྣང་བྱ་རྒྱུར་ཁྱེད་ཀྱིས་ངེས་པར་དུ་སྔོན་ལ་སྦྱོར་སྒྲིག་གསར་པའི་ཚོས་གཞི་མཚན་འཇོག་བྱེད།"
 
 #: source/text/sdraw/guide/color_define.xhp#par_id3147244.26
 msgid  "If you want to replace the color in the standard color table that your custom color is based on, click \<emph\>Modify\</emph\>."
@@ -677,11 +672,10 @@ msgid  "If you want to add your custom color to the standard color table, enter 
 msgstr ""
 
 #: source/text/sdraw/guide/color_define.xhp#par_id3145236.23
-msgid  "\<link href=\"text/shared/01/03170000.xhp\" name=\"Color bar\"\>Color bar\</link\>"
+msgid  "\<link href=\\"
 msgstr ""
 
 #: source/text/sdraw/guide/combine_etc.xhp#tit
-#, fuzzy
 msgid  "Combining Objects and Constructing Shapes"
 msgstr "བྱ་ཡུལ་ཚོ་སྒྲིག་དང་བྱ་ཡུལ་ཟླ་སྒྲིལ་"
 
@@ -690,25 +684,22 @@ msgid  "\<bookmark_value\>combining; draw objects\</bookmark_value\>\<bookmark_v
 msgstr ""
 
 #: source/text/sdraw/guide/combine_etc.xhp#hd_id3156443.64
-msgid  "\<variable id=\"combine_etc\"\>\<link href=\"text/sdraw/guide/combine_etc.xhp\" name=\"Combining Objects and Constructing Shapes\"\>Combining Objects and Constructing Shapes\</link\> \</variable\>"
+msgid  "\<variable id=\\"
 msgstr ""
 
 #: source/text/sdraw/guide/combine_etc.xhp#par_id3149020.65
 msgid  "Combined drawing objects act as grouped objects, except that you cannot enter the group to edit the individual objects. "
-msgstr ""
+msgstr "ཚོ་སྒྲིག་གི་རིས་འགོད་བྱ་ཡུལ་ནི་ཚོ་སྒྲིག་བྱ་ཡུལ་ལ་སྤྱོད་ཆོག་  མི་འདྲ་བའི་ཆ་ཁོ་ན་ནི་ཁྱེད་ཚོ་སྒྲིག་རྩོམ་སྒྲིག་བྱ་ཡུལ་གཅིག་ཐོབ་པ་དེ་ཡིན།"
 
 #: source/text/sdraw/guide/combine_etc.xhp#par_id3154659.87
-#, fuzzy
 msgid  "You can only combine 2D objects."
 msgstr "ཁྱེད་ཀྱིས་སྙོམས་ངོས་ཁོ་ན་ཚོ་སྒྲིག་བྱེད།"
 
 #: source/text/sdraw/guide/combine_etc.xhp#hd_id3150344.32
-#, fuzzy
 msgid  "To combine 2D objects:"
 msgstr "རྩ་གཉིས་བྱ་ཡུལ་ཟླ་སྒྲིལ་བྱེད་དགོས་"
 
 #: source/text/sdraw/guide/combine_etc.xhp#par_id3166428.66
-#, fuzzy
 msgid  "Select two or more 2D objects."
 msgstr "རྩ་གཉིས་བྱ་ཡུལ་གཉིས་སམ་ཡང་ན་མང་དག་འདེམས།"
 
@@ -718,46 +709,41 @@ msgstr ""
 
 #: source/text/sdraw/guide/combine_etc.xhp#par_id3146978.33
 msgid  "Unlike groups, a combined object takes on the properties of the lowermost object in the stacking order. You can split apart combined objects, but the original object properties are lost."
-msgstr ""
+msgstr "ཚོ་སྒྲིག་དང་མི་འདྲ་བ་ ཚོ་སྒྲིག་གི་བྱ་ཡུལ་བརྩེགས་འཇོག་གོ་རིམ་ནང་ཆེས་མཐའ་མར་སྒྲིག་པའི་བྱ་ཡུལ་གྱི་གཏོགས་གཤིས་ལྡན་ཡོད།  ཁྱེད་ཀྱིས་ཚོ་སྒྲིག་གི་བྱ་ཡུལ་དབྱེ་འབྱེད་བྱ་ཆོག་  ཡིན་ནའང་འདི་འདྲ་བྱས་ན་འདོད་མའི་བྱ་ཡུལ་གཏོགས་གཤིས་བརླག་སྲིད།"
 
 #: source/text/sdraw/guide/combine_etc.xhp#par_id3155088.34
-#, fuzzy
 msgid  "When you combine objects, holes appear where the objects overlap."
 msgstr "བྱ་ཡུལ་ཚོ་སྒྲིག་སྐབས་  བྱ་ཡུལ་རིམ་བརྩེགས་ཀྱི་གནས་ས་ཨི་ཁུང་མངོན།"
 
 #: source/text/sdraw/guide/combine_etc.xhp#par_id3156019
-msgid  " \<image id=\"img_id3157978\" src=\"res/helpimg/kombi1.png\" width=\"8.3646inch\" height=\"2.5inch\"\>\<alt id=\"alt_id3157978\"\>Illustration for combining objects\</alt\>\</image\>"
+msgid  " \<image id=\\"
 msgstr ""
 
 #: source/text/sdraw/guide/combine_etc.xhp#par_id3153249.35
 msgid  "In the illustration, the uncombined objects are on the left and the combined objects on the right."
-msgstr ""
+msgstr "དཔེར་རིས་ནང་ཟླ་སྒྲིལ་བྱ་རྒྱུའི་བྱ་ཡུལ་གཡོན་ངོས་ལ་གནས་  ཟླ་སྒྲིལ་བའི་བྱ་ཡུལ་གཡས་ངོས་ལ་གནས།"
 
 #: source/text/sdraw/guide/combine_etc.xhp#hd_id3159229.68
-#, fuzzy
 msgid  "Constructing Shapes"
 msgstr "བཟོ་དབྱིབས་བཀོད་པ།"
 
 #: source/text/sdraw/guide/combine_etc.xhp#par_id3150049.63
-msgid  "You can construct shapes by applying the \<link href=\"text/simpress/01/13180000.xhp\" name=\"Shapes\"\>\<emph\>Shapes\</emph\>\</link\> \<emph\>- Merge, Subtract and Intersect\</emph\> commands to two or more drawing objects."
+msgid  "You can construct shapes by applying the \<link href=\\"
 msgstr ""
 
 #: source/text/sdraw/guide/combine_etc.xhp#par_id3147403.88
-#, fuzzy
 msgid  "Shape commands only work on 2D objects."
 msgstr "གཟུགས་དབྱིབས་བཀའ་ཚིག་ནི་ངོས་སྙོམས་རིས་དབྱིབས་བྱ་ཡུལ་ཁོ་ན་ལ་འཚམས་པ་ཡོད།"
 
 #: source/text/sdraw/guide/combine_etc.xhp#par_id3150539.89
 msgid  "Constructed shapes take on the properties of the lowermost object in the stacking order."
-msgstr ""
+msgstr "གྲུབ་པའི་གཟུགས་དབྱིབས་བརྩེགས་འཇོག་གོ་རིམ་ནང་མཐའ་མ་སྒྲིག་པའི་བྱ་ཡུལ་གྱི་གཏོགས་གཤིས་ལྡན་ཡོད།"
 
 #: source/text/sdraw/guide/combine_etc.xhp#hd_id3156402.90
-#, fuzzy
 msgid  "To construct a shape:"
 msgstr "གཟུགས་དབྱིབས་གྲུབ་ཚུལ་བྱེད་"
 
 #: source/text/sdraw/guide/combine_etc.xhp#par_id3157874.69
-#, fuzzy
 msgid  "Select two or more 2D objects."
 msgstr "རྩ་གཉིས་བྱ་ཡུལ་གཉིས་སམ་ཡང་ན་མང་དག་འདེམས།"
 
@@ -778,59 +764,54 @@ msgid  " \<emph\>Intersect\</emph\>."
 msgstr ""
 
 #: source/text/sdraw/guide/combine_etc.xhp#hd_id3145144.94
-#, fuzzy
 msgid  "Shape Commands"
 msgstr "གཟུགས་དབྱིབས་བཀའ་ཚིག"
 
 #: source/text/sdraw/guide/combine_etc.xhp#par_id3153931.71
 msgid  "In the following illustrations, the original objects are on the left and the modified shapes on the right."
-msgstr ""
+msgstr "གཤམ་གྱི་དཔེ་གཞིའི་བར་བཅུག་རི་མོའི་ནང་གཡོན་མཐའ་ནི་གདོད་མའི་སྙོམས་ངོས་སྐོང་གསབ་དང་གཡས་ངོས་ནི་བཀའ་ཚིག་འདི་ལག་བསྟར་བྱེད་པའི་གྲུབ་འབྲས་ཡིན།"
 
 #: source/text/sdraw/guide/combine_etc.xhp#hd_id3149950.72
-#, fuzzy
 msgid  "Shapes - Merge"
 msgstr "གཟུགས་དབྱིབས་ - མཉམ་འདྲེས།"
 
 #: source/text/sdraw/guide/combine_etc.xhp#par_id3148585
-msgid  " \<image id=\"img_id3145593\" src=\"res/helpimg/formvers.png\" width=\"3.4791inch\" height=\"1.3126inch\"\>\<alt id=\"alt_id3145593\"\>Illustration for merging shapes\</alt\>\</image\>"
+msgid  " \<image id=\\"
 msgstr ""
 
 #: source/text/sdraw/guide/combine_etc.xhp#par_id3150001.73
 msgid  "Adds the area of the selected objects to the area of the lowermost object in the stacking order."
-msgstr ""
+msgstr "བདམས་པའི་མཐའ་མང་དབྱིབས་མཉམ་འདྲེས།  འདི་འདྲ་བྱུང་ན་ཁྱེད་ལ་དེའི་སྙོམས་ངོས་གསབ་སྐོང་ནི་ཡན་ལག་བྱ་ཡུལ་གྱི་སྤྱི་བསྡོམ་གྱི་བྱ་ཡུལ་གཅིག་ཐོབ་པ་དེ་ཡིན།(གཏན་ཚིགས་སམ་)"
 
 #: source/text/sdraw/guide/combine_etc.xhp#hd_id3153002.74
-#, fuzzy
 msgid  "Shapes - Subtract"
 msgstr "གཟུགས་དབྱིབས་ - དབྱེ་བྲལ།"
 
 #: source/text/sdraw/guide/combine_etc.xhp#par_id3150338
-msgid  " \<image id=\"img_id3154505\" src=\"res/helpimg/formsubt.png\" width=\"3.4689inch\" height=\"1.3126inch\"\>\<alt id=\"alt_id3154505\"\>Illustration for subtracting shapes\</alt\>\</image\>"
+msgid  " \<image id=\\"
 msgstr ""
 
 #: source/text/sdraw/guide/combine_etc.xhp#par_id3150022.75
 msgid  "Subtracts the area of the selected objects from the area of the lowermost object in the stacking order."
-msgstr ""
+msgstr "ཆེས་མཐིལ་རིམ་ནངགནས་པའི་མཐའ་མང་དབྱིབས་ནང་ གཞན་བདམས་པའི་མཐའ་མང་དབྱིབས་ཡོད་ཚད་དབྱེ་ཕྲལ་བྱེད།"
 
 #: source/text/sdraw/guide/combine_etc.xhp#hd_id3147370.78
-#, fuzzy
 msgid  "Shapes - Intersect"
 msgstr "གཟུགས་དབྱིབས་ - དྲས་གཏུབ།"
 
 #: source/text/sdraw/guide/combine_etc.xhp#par_id3150570
-msgid  " \<image id=\"img_id3150658\" src=\"res/helpimg/formschn.png\" width=\"3.4272inch\" height=\"1.302inch\"\>\<alt id=\"alt_id3150658\"\>Illustration for intersecting shapes\</alt\>\</image\>"
+msgid  " \<image id=\\"
 msgstr ""
 
 #: source/text/sdraw/guide/combine_etc.xhp#par_id3157972.79
 msgid  "The overlapping area of the selected objects creates the new shape."
-msgstr ""
+msgstr "བདམས་པའི་མཐའ་མང་དབྱིབས་ནི་ཁེར་རྐྱང་གི་མཐའ་མང་དབྱིབས་གཅིག་ལ་ཟླ་སྒྲིལ་བྱེད་  མཐའ་མང་དབྱིབས་ནི་སྙོམས་ངོས་གསབ་སྐོང་ཡོད་ཚད་ཀྱི་སྡེབ་གཅིག་བྱུང་བ།(གཏན་ཚིགས་ཀྱི་ཐོབ་)"
 
 #: source/text/sdraw/guide/combine_etc.xhp#par_id3151020.80
 msgid  "The area outside the overlap is removed."
-msgstr ""
+msgstr "<emph></emph>མཐའ་མང་དབྱིབས་ཚང་མ་ལྷག་རིམ་བརྩེགས་ནི་དེའི་ནང་གི་སྙོམས་ངོས་སྐོང་གསབ་བྱེད།"
 
 #: source/text/sdraw/guide/cross_fading.xhp#tit
-#, fuzzy
 msgid  "Cross-Fading Two Objects"
 msgstr "སྐྱ་བཅུག་སྐྱ་འདོན་གྱི་བྱ་ཡུལ་གཉིས་སྣོལ་"
 
@@ -839,24 +820,22 @@ msgid  "\<bookmark_value\>draw objects; cross-fading two objects\</bookmark_valu
 msgstr ""
 
 #: source/text/sdraw/guide/cross_fading.xhp#hd_id3150715.17
-msgid  "\<variable id=\"cross_fading\"\>\<link href=\"text/sdraw/guide/cross_fading.xhp\" name=\"Cross-Fading Two Objects\"\>Cross-Fading Two Objects\</link\>\</variable\>"
+msgid  "\<variable id=\\"
 msgstr ""
 
 #: source/text/sdraw/guide/cross_fading.xhp#par_id3154754.18
 msgid  "Cross-fading creates shapes and distributes them by uniform increments between two drawing objects."
-msgstr ""
+msgstr "སྐྱ་བཅུག་སྐྱ་འདོན་གཟུགས་དབྱིབས་གསར་བཟོ་སྣོལ་བ་མ་ཟད་རིས་འགོད་བྱ་ཡུལ་གཉིས་དབར་གྱི་གཅིག་འགྱུར་བཞིན་ཁྱབ་པའི་གཟུགས་དབྱིབས་འདི་དག་རིམ་འཕར་བྱེད།"
 
 #: source/text/sdraw/guide/cross_fading.xhp#par_id3155112.41
 msgid  "The cross-fading command is only available in $[officename] Draw. You can, however, copy and paste cross-faded objects into $[officename] Impress."
-msgstr ""
+msgstr "སྐྱ་བཅུག་སྐྱ་འདོན་བཀའ་ཚིག་སྣོལ་བ་ནི་$[officename] རིས་འགོད་བཟོ་བ་ཁོ་ནའི་ནང་སྤྱོད་རུང་།  ཡིན་ནའང་ ཁྱེད་ཀྱིས་སྐྱ་བཅུག་སྐྱ་འདོན་གྱི་བྱ་ཡུལ་སྣོལ་བ་འདྲ་ཕབ་བྱེད་པ་མ་ཟད་$[officename] གསལ་སྟོན་ཡིག་ཟིན་ནང་སྦྱོར།"
 
 #: source/text/sdraw/guide/cross_fading.xhp#hd_id3149209.20
-#, fuzzy
 msgid  "To cross-fade two objects:"
 msgstr "སྐྱ་བཅུག་སྐྱ་འདོན་གྱི་བྱ་ཡུལ་གཉིས་སྣོལ་"
 
 #: source/text/sdraw/guide/cross_fading.xhp#par_id3150370.45
-#, fuzzy
 msgid  "Hold down Shift and click each object."
 msgstr " Shiftགནོན་འཛིན་བྱེས་པ་མ་ཟད་བྱ་ཡུལ་ཁག་རྐྱང་རྡེབ་བྱེད།"
 
@@ -874,22 +853,21 @@ msgstr ""
 
 #: source/text/sdraw/guide/cross_fading.xhp#par_id3151240.24
 msgid  "A group containing the two original objects and the specified number (increments) of cross-faded objects is displayed."
-msgstr ""
+msgstr "མངོན་པའི་ཚོ་སྒྲིག་ནང་གདོད་མའི་བྱ་ཡུལ་གཉིས་དང་སྐྱ་བཅུག་སྐྱ་འདོན་གྱི་བྱ་ཡུལ་གྱི་གཏན་འཁེལ་གྲངས་ཚད་(རིམ་འཕར་ཚད་)"
 
 #: source/text/sdraw/guide/cross_fading.xhp#par_id3159203
-msgid  "\<image id=\"img_id3150210\" src=\"res/helpimg/ueberblenden.png\" width=\"74.88mm\" height=\"65.62mm\"\>\<alt id=\"alt_id3150210\"\>Illustration for crossfading\</alt\>\</image\>"
+msgid  "\<image id=\\"
 msgstr ""
 
 #: source/text/sdraw/guide/cross_fading.xhp#par_id3154766.25
-msgid  "You can edit the individual objects of a group by selecting the group and pressing F3. Press \<switchinline select=\"sys\"\>\<caseinline select=\"MAC\"\>Command\</caseinline\>\<defaultinline\>Ctrl\</defaultinline\>\</switchinline\>+F3 to exit the group editing mode."
+msgid  "You can edit the individual objects of a group by selecting the group and pressing F3. Press \<switchinline select=\\"
 msgstr ""
 
 #: source/text/sdraw/guide/cross_fading.xhp#par_id3155760.42
-msgid  "\<link href=\"text/simpress/01/02150000.xhp\" name=\"Editing - Cross-fading\"\>Editing - Cross-fading\</link\>"
+msgid  "\<link href=\\"
 msgstr ""
 
 #: source/text/sdraw/guide/draw_sector.xhp#tit
-#, fuzzy
 msgid  "Drawing Sectors and Segments"
 msgstr "རླུང་གཡབ་དབྱིབས་བཟོ་བ་དང་སྒོར་ཆད་"
 
@@ -898,7 +876,7 @@ msgid  "\<bookmark_value\>sectors of circles/ellipses\</bookmark_value\>\<bookma
 msgstr ""
 
 #: source/text/sdraw/guide/draw_sector.xhp#hd_id3146974.30
-msgid  "\<variable id=\"draw_sector\"\>\<link href=\"text/sdraw/guide/draw_sector.xhp\" name=\"Drawing Sectors and Segments\"\>Drawing Sectors and Segments\</link\>\</variable\>"
+msgid  "\<variable id=\\"
 msgstr ""
 
 #: source/text/sdraw/guide/draw_sector.xhp#par_id3147396.31
@@ -907,46 +885,45 @@ msgstr ""
 
 #: source/text/sdraw/guide/draw_sector.xhp#hd_id3151075.32
 msgid  "To draw a sector of a circle or an ellipse:"
-msgstr ""
+msgstr "འཇོང་སྒོར་རླུང་གཡབ་དབྱིབས་ཡང་ན་རླུང་གཡབ་དབྱིབས་བཟོ་བར་གོ་རིམ་ཁ་ཤས་དབྱེ་དགོས།"
 
 #: source/text/sdraw/guide/draw_sector.xhp#par_id3155335.33
-msgid  "Open the \<emph\>Ellipses\</emph\> toolbar and click one of the \<emph\>Circle Pie\</emph\> or \<emph\>Ellipse Pie\</emph\> icons \<image id=\"img_id3155768\" src=\"res/commandimagelist/sc_circlepie_unfilled.png\" width=\"5.64mm\" height=\"5.64mm\"\>\<alt id=\"alt_id3155768\"\>Icon\</alt\>\</image\>. The mouse pointer changes to a cross hair with a small icon of a sector."
+msgid  "Open the \<emph\>Ellipses\</emph\> toolbar and click one of the \<emph\>Circle Pie\</emph\> or \<emph\>Ellipse Pie\</emph\> icons \<image id=\\"
 msgstr ""
 
 #: source/text/sdraw/guide/draw_sector.xhp#par_id3150199.34
 msgid  "Position the pointer at the edge of the circle you want to draw and drag to create the circle."
-msgstr ""
+msgstr "བསྐོར་བཞིན་པའི་གཡོན་མཐེབ་ཙིག་རྟགས་གནོན་རྡེབ་དང་དུས་མཚུངས་སྒོར་གཅིག་འདྲུད་འཐེན་བྱེད།"
 
 #: source/text/sdraw/guide/draw_sector.xhp#par_id3148868.35
-msgid  "To create a circle by dragging from the center, press \<switchinline select=\"sys\"\>\<caseinline select=\"MAC\"\>Option\</caseinline\>\<defaultinline\>Alt\</defaultinline\>\</switchinline\> while dragging."
+msgid  "To create a circle by dragging from the center, press \<switchinline select=\\"
 msgstr ""
 
 #: source/text/sdraw/guide/draw_sector.xhp#par_id3145361.36
 msgid  "Release the mouse button when the circle has reached the size you want. A line corresponding to the circle radius appears in the circle."
-msgstr ""
+msgstr "དགོས་ངེས་ཀྱི་སྒོར་དབྱིབས་ཆེ་ཆུང་ཐོབ་པའི་རྗེས་བསྐོར་བཞིན་པའི་གཡོན་མཐེབ་ཙིག་རྟགས་གློད།  ད་ཡོད་སྒོར་ནང་ཙིག་རྟགས་དང་མཉམ་དུ་སྤོ་སྒུལ་བྱེད་པའི་ཚང་ཕྱེད་གཅིག་ཐོན་སྲིད་ཀྱི་རེད།"
 
 #: source/text/sdraw/guide/draw_sector.xhp#par_id3149872.37
 msgid  "Position the pointer where you want to place the first boundary of the sector and click."
-msgstr ""
+msgstr "སྟོན་མདའ་ནི་རླུང་གཡབ་དབྱིབས་ཀྱི་མཐའ་གཅིག་གི་གནས་ས་བཟོ་བ་མ་ཟད་ཙིག་རྟགས་རྐྱང་རྡེབ་བྱེད།"
 
 #: source/text/sdraw/guide/draw_sector.xhp#par_id3157871.51
 msgid  "As the radius line that follows the pointer is constrained to the circle boundaries, you can click anywhere in the document."
-msgstr ""
+msgstr "སྟོན་མདའི་རྗེས་སྙེགས་པའི་ཚང་ཕྱེད་ཐིག་གིས་སྒོར་མཐའ་ལ་ཚད་བཀག་ཐུབ་  དེར་བརྟེན་ཡིག་ཚགས་ཀྱི་གནས་ས་གང་རུང་ཞིག་ལ་རྐྱང་རྡེབ་བྱ་ཆོག"
 
 #: source/text/sdraw/guide/draw_sector.xhp#par_id3146874.38
 msgid  "Position the pointer where you want to place the second boundary of the sector and click. The completed sector is displayed."
-msgstr ""
+msgstr "འདིའི་སྐབས་སྒོར་རླུང་གཡབ་དབྱིབས་ཀྱི་མཐའ་གཅིག་གཏན་འཁེལ་ཟིན་  ཙིག་རྟགས་དེ་སྒོར་རླུང་གཡབ་དབྱིབས་ཀྱི་མཐའ་གཉིས་པའི་གནས་ས་ལ་སྤོ་སྒུལ་བྱེད།  བསྐྱར་དུ་བསྐོར་བཞིན་པའི་གཡོན་མཐེབ་ཙིག་རྟགས་རྐྱང་རྡེབ་རྗེས་སྒོར་རླུང་གཡབ་དབྱིབས་འདི་བཟོ་རྒྱུ་ལེགས་གྲུབ་ཟིན།"
 
 #: source/text/sdraw/guide/draw_sector.xhp#par_id3148581.41
 msgid  "To draw a segment of a circle or ellipse, follow the steps for creating a sector based on a circle."
-msgstr ""
+msgstr "གཞུང་དབྱིབས་ཡང་ན་འཇོང་སྒོར་ཆད་བཟོས་ སྒོར་གཞིག་ཏེ་རླུང་གཡབ་འཛུགས་པའི་གོ་རིམ་བཀོལ་སྤྱོད་ལག་བསྟར་བྱེད།"
 
 #: source/text/sdraw/guide/draw_sector.xhp#par_id3153084.42
 msgid  "To draw an arc based on an ellipse, choose one of the arc icons and follow the same steps for creating a sector based on a circle."
-msgstr ""
+msgstr "འཇོང་སྒོར་གཞིག་ནས་སྒོར་གཞུ་བཟོས་  སྒོར་གཞུའི་རིས་རྟགས་གཅིག་འདེམས་སྒོར་གཞིག་ཏེ་རླུང་གཡབ་འཛུགས་པའི་གོམ་རིམ་བཀོལ་སྤྱོད་ལག་བསྟར་བྱེད།"
 
 #: source/text/sdraw/guide/duplicate_object.xhp#tit
-#, fuzzy
 msgid  "Duplicating Objects"
 msgstr "བྱ་ཡུལ་འདྲ་ཕབ་"
 
@@ -955,16 +932,16 @@ msgid  "\<bookmark_value\>doubling draw objects\</bookmark_value\>\<bookmark_val
 msgstr ""
 
 #: source/text/sdraw/guide/duplicate_object.xhp#hd_id3145750.3
-msgid  "\<variable id=\"duplicate_object\"\>\<link href=\"text/sdraw/guide/duplicate_object.xhp\" name=\"Duplicating Objects\"\>Duplicating Objects\</link\>\</variable\>"
+msgid  "\<variable id=\\"
 msgstr ""
 
 #: source/text/sdraw/guide/duplicate_object.xhp#par_id3149400.4
 msgid  "You can create duplicate or multiple copies of an object. The copies can be identical or can differ in size, color, orientation and location."
-msgstr ""
+msgstr "འདྲ་ཕབ་ཆས་བྱེད་ནུས་གཡར་ཏེ་ ཁྱེད་ཀྱིས་འདེམས་པའི་བྱ་ཡུལ་གྱི་འདྲ་ཕབ་ཆས་ཀྱི་ཁ་གྲངས་རང་མཚན་འཇོག་བྱེད་པ་མ་ཟད་འདྲ་ཕབ་ཆས་དབར་གྱི་སྟར་འགོད་གནས་ས་ ཁ་ཕྱོགས་ ཆེ་ཆུང་དང་ཚོས་གཞི་འགྱུར་ལྡོག་གཏོང་།"
 
 #: source/text/sdraw/guide/duplicate_object.xhp#par_id3153415.5
 msgid  "The following example creates a stack of coins by making multiple copies of a single ellipse."
-msgstr ""
+msgstr "གལ་སྲིད་ཁྱེད་ཀྱིས་དངུལ་སྒོར་བྱུར་བུ་ཞིག་བཟོ་དགོས་ན་འདྲ་ཕབ་བྱེད་ནུས་སྤྱད་དེ་བཟོས།  བཟོས་པའི་རྨང་གཞི་ནི་ཆེས་གཤམ་འོག་གི་དངུལ་སྒོར་གཅིག་ཡིན་"
 
 #: source/text/sdraw/guide/duplicate_object.xhp#par_id3149129.6
 msgid  "Use the \<emph\>Ellipse\</emph\> tool to draw a solid yellow ellipse."
@@ -991,11 +968,10 @@ msgid  "Click \<emph\>OK\</emph\> to create the duplicates."
 msgstr ""
 
 #: source/text/sdraw/guide/duplicate_object.xhp#par_id3153935.50
-msgid  "\<link href=\"text/simpress/01/02120000.xhp\" name=\"Edit - Duplicate\"\>Edit - Duplicate\</link\>"
+msgid  "\<link href=\\"
 msgstr ""
 
 #: source/text/sdraw/guide/eyedropper.xhp#tit
-#, fuzzy
 msgid  "Replacing Colors"
 msgstr "ཚོས་ལེན་ཆས་གཡར་ཏེ་ཚོས་གཞི་ཚབ་བརྗེ་བྱེད།"
 
@@ -1004,7 +980,7 @@ msgid  "\<bookmark_value\>eyedropper tool\</bookmark_value\>\<bookmark_value\>co
 msgstr ""
 
 #: source/text/sdraw/guide/eyedropper.xhp#hd_id3147436.38
-msgid  "\<variable id=\"eyedropper\"\>\<link href=\"text/sdraw/guide/eyedropper.xhp\" name=\"Replacing Colors\"\>Replacing Colors\</link\>\</variable\>"
+msgid  "\<variable id=\\"
 msgstr ""
 
 #: source/text/sdraw/guide/eyedropper.xhp#par_id3156286.24
@@ -1012,8 +988,9 @@ msgid  "You can replace colors in bitmaps with the \<emph\>Color Replacer\</emph
 msgstr ""
 
 #: source/text/sdraw/guide/eyedropper.xhp#par_id3154704.25
+#, fuzzy
 msgid  "Up to four colors can be replaced at once."
-msgstr ""
+msgstr "ཚོས་ལེན་ཆས་གཡར་ཏེ་ཁྱེད་ཀྱིས་ཚོས་གཞི་གཞན་སྤྱོད་  རང་ངེས་ཀྱི་ཡོ་ཁྱད་ཁྱབ་ཁོངས་གཅིག་ནང་བདམས་པའི་ཚོས་གཞི་ཚབ་བརྗེ་བྱེད།  ཐེངས་རེར་མང་ཤོས་ལ་ཚོས་གཞི་བཞི་ཚབ་བརྗེ་བྱ་ཆོག།  བྱེད་ནུས་ཚང་ནང་གི་<emph>ཕྱིར་འཐེན་བཀའ་ཚིག་</emph>རིས་རྟགས་གཡར་ཏེ་ ཁྱེད་ཀྱིས་བསྐྱར་དུ་ཚབ་བརྗེ་སྔོན་གྱི་ཚོས་གཞི་སླར་གསོ་བྱེད།  ཚོས་ལེན་ཆས་གཡར་ཏེ་ཁྱེད་ཀྱིས་གནས་རིས་མི་འདྲ་བའི་ཚོས་གཞི་ཕན་ཚུན་དོ་མཉམ་བྱེད་ཡང་ན་ཀུང་སི་གཅིག་གི་རྟགས་མའི་ཚོས་གཞིའི་གནས་རིས་ཀྱི་ཚོས་གཞི་ལ་ཚབ་བརྗེ་བྱེད།"
 
 #: source/text/sdraw/guide/eyedropper.xhp#par_id3147344.26
 msgid  "You can also use the \<emph\>Transparency\</emph\> option to replace the transparent areas of an image with a color."
@@ -1029,16 +1006,18 @@ msgid  "To replace colors with the Color Replacer tool"
 msgstr "ཚོས་ལེན་ཆས་གཡར་ཏེ་ཚོས་གཞིའི་བྱ་ཐབས་ཚབ་བརྗེ་བྱེད་"
 
 #: source/text/sdraw/guide/eyedropper.xhp#par_id3154656.29
+#, fuzzy
 msgid  "Ensure that the image you are using is a bitmap (for example, BMP, GIF, JPG, or PNG) or a metafile (for example, WMF)."
-msgstr ""
+msgstr "གནས་རིས་རྣམ་གཞག་(དཔེར་ན་ BMP GIF JPG དང་ TIF)ཡང་རྒྱུའི་ཡིག་ཆའི་རྣམ་གཞག་(དཔེར་ན་ WMF)ཡིས་བཪྙན་རིས་གཅིག་བསྒར་འཛུད་བྱེད་  $[officename] རིས་རྟགས་ཡིག་ཚགས་དང་$[officename] གསལ་སྟོན་ཡིག་ཟིན་དང་ཚལ་ཐོའི་བཀའ་ཚིག་<emph>[བསྒར་འཛུད་] - [པར་རིས་] - [ཡིག་ཆ་ནས་ཡོང་བའི་པར་རིས་...]</emph>རྐྱང་རྡེབ་དགོས།"
 
 #: source/text/sdraw/guide/eyedropper.xhp#par_id3150202.30
 msgid  "Choose \<emph\>Tools - Color Replacer\</emph\>."
 msgstr ""
 
 #: source/text/sdraw/guide/eyedropper.xhp#par_id3155531.31
+#, fuzzy
 msgid  "Click the Color Replacer icon and position the mouse pointer over the color you want to replace in the image. The color appears in the box next to the icon."
-msgstr ""
+msgstr "མཐོང་སྒྲོམ་གཡོན་གོང་ཟུར་ཁུལ་གྱི་ཚོས་ལེན་ཆས་ཀྱི་རིས་རྟགས་རྐྱང་རྡེབ་བྱེད།  དེའི་སྐབས་ <emph>ཚོས་ལེན་ཆས་</emph>མཐོང་སྒྲོམ་གྱི་ཚོས་གཞིའི་ཚང་ནང་ཙིག་རྟགས་སྣེ་སྣོན་གྱི་ཚོས་གཞི་མངོན།"
 
 #: source/text/sdraw/guide/eyedropper.xhp#par_id3152985.32
 msgid  "Click the color in the image. The color appears in the first \<emph\>Source color\</emph\> box and the check box next to the color is selected."
@@ -1065,7 +1044,7 @@ msgid  "If you want to expand or contract the color selection area, increase or 
 msgstr ""
 
 #: source/text/sdraw/guide/eyedropper.xhp#par_id3146878.39
-msgid  "\<link href=\"text/shared/01/06030000.xhp\" name=\"Color Replacer\"\>Color Replacer\</link\>"
+msgid  "\<link href=\\"
 msgstr ""
 
 #: source/text/sdraw/guide/gradient.xhp#tit
@@ -1078,12 +1057,13 @@ msgid  "\<bookmark_value\>gradients; applying and defining\</bookmark_value\>\<b
 msgstr ""
 
 #: source/text/sdraw/guide/gradient.xhp#hd_id3150792.3
-msgid  "\<variable id=\"gradient\"\>\<link href=\"text/sdraw/guide/gradient.xhp\" name=\"Creating Gradient Fills\"\>Creating Gradient Fills\</link\> \</variable\>"
+msgid  "\<variable id=\\"
 msgstr ""
 
 #: source/text/sdraw/guide/gradient.xhp#par_id3154012.4
+#, fuzzy
 msgid  "A gradient fill is an incremental blend of two different colors, or shades of the same color, that you can apply to a drawing object."
-msgstr ""
+msgstr "ཚོན་ཁྲའི་རི་མོ་སྐོང་གསབ་ནི་རིས་འགོད་བྱ་ཡུལ་ཚོས་གཞི་མི་འདྲ་བ་གཉིས་ཉེར་སྤྱོད་བྱེད་པའམ་ཡང་ན་འདྲ་བའི་ཚོས་གཞི་གར་སླ་མི་འདྲ་བའི་ཚོས་གཞིའི་འདྲེས་སྦྱོར་རིམ་འཕར་བྱེད།"
 
 #: source/text/sdraw/guide/gradient.xhp#hd_id3147436.61
 #, fuzzy
@@ -1109,8 +1089,9 @@ msgid  "Creating Custom Gradients"
 msgstr "རང་མཚན་འཇོག་གི་ཚོན་ཁྲའི་རི་མོ་གསར་བཟོ་བྱེད་"
 
 #: source/text/sdraw/guide/gradient.xhp#par_id3145791.9
+#, fuzzy
 msgid  "You can define your own gradients and modify existing gradients, as well as save and load a list of gradient files."
-msgstr ""
+msgstr "ཁྱེད་ཀྱིས་རང་གི་ཚོན་ཁྲའི་རི་མོ་མཚན་འཇོག་བྱེད་  ད་ཡོད་ཀྱི་ཚོན་ཁྲའི་རི་མོ་བཟོ་བཅོས་བྱེད་  ད་དུང་ཚོན་ཁྲའི་རི་མོའི་ཡིག་ཆའི་རེའུ་འགོད་ཉར་ཚགས་དང་ཁུར་སྣོན་བྱེད།"
 
 #: source/text/sdraw/guide/gradient.xhp#hd_id3145384.62
 #, fuzzy
@@ -1130,8 +1111,9 @@ msgid  "Type a name for the gradient in the text box and click \<emph\>OK\</emph
 msgstr ""
 
 #: source/text/sdraw/guide/gradient.xhp#par_id6535843
+#, fuzzy
 msgid  "The name appears at the end of the gradient list and is selected for editing."
-msgstr ""
+msgstr "མིང་འདི་ཚོན་ཁྲའི་རི་མོའི་རེའུ་འགོད་ཀྱི་མཇུག་ལ་མངོན་  བདམས་ནས་རྩོམ་སྒྲིག་བྱེད།"
 
 #: source/text/sdraw/guide/gradient.xhp#par_id3150391.15
 msgid  "Set the gradient properties and click \<emph\>Modify\</emph\> to save the gradient."
@@ -1147,8 +1129,9 @@ msgid  "Using Gradients and Transparency"
 msgstr "རེས་མོས་ཚུགས་གཅིག་གི་ཚོན་ཁྲའི་རི་མོའི་བྱ་ཐབས་བཟོ་བཅོས་བྱེད།"
 
 #: source/text/sdraw/guide/gradient.xhp#par_id3157905.41
+#, fuzzy
 msgid  "You can adjust the properties of a gradient as well as the transparency of a drawing object with your mouse."
-msgstr ""
+msgstr "ཙིག་རྟགས་སྤྱད་དེ་ཚོན་ཁྲའི་རི་མོའི་གཏོགས་གཤིས་དང་རིས་འགོད་བྱ་ཡུལ་གྱི་གསལ་དྭངས་ཚད་ལེགས་སྒྲིག་བྱེད།"
 
 #: source/text/sdraw/guide/gradient.xhp#hd_id3150653.63
 #, fuzzy
@@ -1182,7 +1165,7 @@ msgid  "\<bookmark_value\>pictures; inserting\</bookmark_value\>\<bookmark_value
 msgstr ""
 
 #: source/text/sdraw/guide/graphic_insert.xhp#hd_id3156443.1
-msgid  "\<variable id=\"graphic_insert\"\>\<link href=\"text/sdraw/guide/graphic_insert.xhp\" name=\"Inserting Graphics\"\>Inserting Pictures\</link\>\</variable\>"
+msgid  "\<variable id=\\"
 msgstr ""
 
 #: source/text/sdraw/guide/graphic_insert.xhp#par_id3155600.2
@@ -1194,8 +1177,9 @@ msgid  "Locate the picture you want to insert. Select the \<emph\>Link\</emph\> 
 msgstr ""
 
 #: source/text/sdraw/guide/graphic_insert.xhp#par_id3155764.4
+#, fuzzy
 msgid  "After you insert a linked picture, do not change the name of the source picture or move the source picture to another directory."
-msgstr ""
+msgstr "ཐག་སྦྲེལ་གྱི་པར་རིས་བསྒར་འཛུད་གོང་ཁུངས་པར་རིས་ཀྱི་མིང་བཟོ་བཅོས་སམ་ཡང་ན་ཁུངས་པར་རིས་དཀར་ཆག་གཞན་གྱི་འོག་ལ་མ་སྤོས།"
 
 #: source/text/sdraw/guide/graphic_insert.xhp#par_id3150044.5
 msgid  "Click \<emph\>Open\</emph\> to insert the picture."
@@ -1211,24 +1195,28 @@ msgid  "\<bookmark_value\>grouping; draw objects\</bookmark_value\>\<bookmark_va
 msgstr ""
 
 #: source/text/sdraw/guide/groups.xhp#hd_id3150793.26
-msgid  "\<variable id=\"groups\"\>\<link href=\"text/sdraw/guide/groups.xhp\" name=\"Grouping Objects\"\>Grouping Objects\</link\>\</variable\>"
+msgid  "\<variable id=\\"
 msgstr ""
 
 #: source/text/sdraw/guide/groups.xhp#par_id3153728.27
+#, fuzzy
 msgid  "You can combine several objects into a group so that they act as a single object. You can move and transform all objects in a group as a single unit. You can also change the properties (for example, line size, fill color) of all objects in a group as a whole or for individual objects in a group. Groups can be temporary or assigned:"
-msgstr ""
+msgstr "ཁྱེད་ཀྱིས་དུས་གཅིག་ཏུ་ ཚོ་སྒྲིག་ ཟླ་སྒྲིལ་ མཉམ་འདྲེས་ དབྱེ་ཕྲལ་དང་བྱ་ཡུལ་མང་དག་དྲས་གཏུབ་བྱས་པ་འདེམས།"
 
 #: source/text/sdraw/guide/groups.xhp#par_id3147434.64
+#, fuzzy
 msgid  "Temporary - group only lasts as long as all of the combined objects are selected."
-msgstr ""
+msgstr "དུས་གཅིག་ཏུ་བྱ་ཡུལ་མང་དག་འདེམས་  བྱེད་ནུས་འདི་གནས་སྐབས་རང་བཞིན་གྱི་ཕན་འབྲས་ལྡན་ཡོད་  ཁྱེད་ཀྱིས་ཤོག་ངོས་སྟེང་གི་བྱ་ཡུལ་ཕུད་པའི་ཆ་ཤས་རྐྱང་རྡེབ་བྱས་ན་ གོང་གི་བདམས་པའི་རང་འགུལ་རྩིས་མེད་གཏོང་།"
 
 #: source/text/sdraw/guide/groups.xhp#par_id3154490.65
+#, fuzzy
 msgid  "Assigned - group lasts until it is ungrouped through a menu command."
-msgstr ""
+msgstr "བྱ་ཡུལ་མང་དག་ཚོ་དབྱེ་ཡང་ན་ཟླ་སྒྲིག་རྗེས་ གཡས་མཐེབ་ཚལ་ཐོའི་བཀའ་ཚིག་བརྒྱུད་ཡང་ན་ཚལ་ཐོའི་བཀའ་ཚིག་བརྒྱུད་<emph>བཟོ་བཅོས་</emph>བྱས་པའི་ཡན་ལག་ཚལ་ཐོའི་བཀའ་ཚིག་གིས་གཞི་ནས་ཚོ་དབྱེ་དང་ཟླ་སྒྲིལ་རྩིས་མེད་གཏོང་།"
 
 #: source/text/sdraw/guide/groups.xhp#par_id3145252.66
+#, fuzzy
 msgid  "Groups can also be grouped in other groups. Actions applied to a group do not affect the relative position of the individual objects to each other in the group."
-msgstr ""
+msgstr "ཁྱེད་ཀྱིས་ཚལ་ཐོའི་བཀའ་ཚིག་སྤྱོད་པ་མཉམ་འདུས་བྱེད་  དཔེར་ན་ཚོ་ཆུང་མང་དག་ཚོ་ཆུང་གཅིག་ལ་ཟླ་སྒྲིལ་བྱེད་ ཟླ་སྒྲིལ་གཅིག་གསབ་སྣོན་རྗེས་ཟླ་སྒྲིལ་འབྲས་བུ་ནི་ཚོ་ཆུང་དང་ཚོ་ཆུང་གཞན་ཧྲིལ་པོ་གཅིག་ལ་ཟླ་སྒྲིལ་བྱེད་པ་སོགས་ལ་བརྩིས།"
 
 #: source/text/sdraw/guide/groups.xhp#hd_id3150716.28
 #, fuzzy
@@ -1236,7 +1224,7 @@ msgid  "To group objects:"
 msgstr "བྱ་ཡུལ་གྱི་ཚོ་དབྱེ་"
 
 #: source/text/sdraw/guide/groups.xhp#par_id3149018
-msgid  "\<image id=\"img_id3145643\" src=\"res/commandimagelist/sc_formatgroup.png\" width=\"0.1665inch\" height=\"0.1665inch\"\>\<alt id=\"alt_id3145643\"\>Icon\</alt\>\</image\>"
+msgid  "\<image id=\\"
 msgstr ""
 
 #: source/text/sdraw/guide/groups.xhp#par_id3147346.29
@@ -1244,12 +1232,14 @@ msgid  "Select the objects you want to group and choose \<emph\>Modify - Group\<
 msgstr ""
 
 #: source/text/sdraw/guide/groups.xhp#par_id3148485.30
+#, fuzzy
 msgid  "For example, you can group all of the objects in a company logo to move and resize the logo as a single object."
-msgstr ""
+msgstr "གལ་སྲིད་རྐང་འཁོང་གཅིག་བཟོས་ན་ སྔོན་ལ་འཁོར་ལོ་བཟོས་(འཁོརར་ལོར་འཁོར་ལོ་དང་ འཁོར་མཐའ་  ལྕགས་སྐུད་འཁོར་མདའ་སོགས་ཚུད་ཡོད་)འཁོར་ལོ་ཆ་ཚང་ནང་གི་ཚོ་ཆས་ཚོ་ཆུང་གཅིག་ལ་སྒྲིག།  འདི་འདྲ་བྱུང་ན་ཁྱེད་ཀྱིས་འཁྱིལ་འཁོར་འདྲ་ཕབ་ཡང་ན་འཁོར་ལོཆ་ཚང་སྤོ་སྒུལ་བྱ་ཐུབ།  དེ་རྗེས་ཁྱེད་ཀྱིས་རྐང་འཁོར་གྱི་ལྷུ་ལག་ཆེ་གྲས་བཟོས་དགོས་པ་མ་ཟད་ དེ་དག་ཚོ་ཆུང་གཅིག་ལ་སྒྲིག"
 
 #: source/text/sdraw/guide/groups.xhp#par_id3147002.31
+#, fuzzy
 msgid  "After you have grouped objects, selecting any part of the group selects the entire group."
-msgstr ""
+msgstr "རྩོམ་སྒྲིག་ཚོ་དབྱེའི་ནང་གི་བྱ་ཡུལ་ཁ་ཤས་ ཁྱེད་ཀྱིས་སྔོན་ལ་ཚོ་དབྱེ་རྩིས་མེད་གཏོང་དགོས་མེད་ ཚོ་དབྱེའི་རྩོམ་སྒྲིག་གནས་སྟངས་ལ་འཛུལ་ན་འགྲིག།  འདི་འདྲ་བྱུང་ན་ཁྱེད་ཀྱིས་བྱ་ཡུལ་རྐྱང་པ་རྩོམ་སྒྲིག་བྱེད་ དེ་རྗེས་བསྐྱར་དུ་ཚོ་དབྱེ་ཕྱིར་འཐེན་བྱེད།"
 
 #: source/text/sdraw/guide/groups.xhp#hd_id3150205.55
 #, fuzzy
@@ -1257,15 +1247,16 @@ msgid  "Selecting Objects in a Group"
 msgstr "ཚོ་དབྱེ་རྩོམ་སྒྲིག་"
 
 #: source/text/sdraw/guide/groups.xhp#par_id3150370
-msgid  "\<image id=\"img_id3155376\" src=\"res/commandimagelist/sc_entergroup.png\" width=\"0.1665inch\" height=\"0.1665inch\"\>\<alt id=\"alt_id3155376\"\>Icon\</alt\>\</image\>"
+msgid  "\<image id=\\"
 msgstr ""
 
 #: source/text/sdraw/guide/groups.xhp#par_id3156450.56
+#, fuzzy
 msgid  "You can select single objects in a group by entering the group. Double-click a group to enter it and click on the object to select it. You can also add or delete objects to and from a group in this mode. The objects that are not part of the group are grayed out."
-msgstr ""
+msgstr "ཚོ་ཆུང་གཅིག་རྩོམ་སྒྲིག་གོང་ཁྱེད་ཀྱིས་ངེས་པར་དུ་སྔོན་ལ་ཚོ་ཆུང་འདི་བྲིས་རྟགས་བྱེད།  གཡས་མཐེབ་ཚལ་ཐོའི་བཀའ་ཚིག་གཡར་བའམ་ཡང་ན་(F3)མཐེབ་གཡར་ཏེ་ ཡང་ན་ཚོ་ཆུང་རྐྱང་རྡེབ་བྱེད་ ཁྱེད་ཀྱིས་ཚོ་ཆུང་རྩོམ་སྒྲིག་གནས་སྟངས་ནང་འཛུལ།  ཆ་རྡེབ་གཡར་ཏེ་ཚོ་ཆུང་རྩོམ་སྒྲིག་གནས་སྟངས་ལ་འཛུལ་སྐབས་ཚོ་ཆུང་ནང་ད་ཡོད་ཀྱི་བྲིས་རྟགས་རྩིས་མེད་འགྲོ་ འོ་ན་མིག་སྔར་བྲིས་རྟགས་ཀྱི་ཚོ་ཆུང་བྱ་ཡུལ་མེད།"
 
 #: source/text/sdraw/guide/groups.xhp#par_id3151239
-msgid  "\<image id=\"img_id3155264\" src=\"res/commandimagelist/sc_leavegroup.png\" width=\"0.1665inch\" height=\"0.1665inch\"\>\<alt id=\"alt_id3155264\"\>Icon\</alt\>\</image\>"
+msgid  "\<image id=\\"
 msgstr ""
 
 #: source/text/sdraw/guide/groups.xhp#par_id3150213.58
@@ -1282,7 +1273,7 @@ msgid  "\<bookmark_value\>3D objects; assembling\</bookmark_value\>\<bookmark_va
 msgstr ""
 
 #: source/text/sdraw/guide/join_objects3d.xhp#hd_id3156442.29
-msgid  "\<variable id=\"join_objects3d\"\>\<link href=\"text/sdraw/guide/join_objects3d.xhp\" name=\"Assembling 3D Objects\"\>Assembling 3D Objects\</link\>\</variable\>"
+msgid  "\<variable id=\\"
 msgstr ""
 
 #: source/text/sdraw/guide/join_objects3d.xhp#par_id3145251.30
@@ -1299,16 +1290,18 @@ msgid  "Insert a 3D object from the \<emph\>3D Objects\</emph\> toolbar (for exa
 msgstr ""
 
 #: source/text/sdraw/guide/join_objects3d.xhp#par_id3155335.32
+#, fuzzy
 msgid  "Insert a second slightly larger 3D object (for example, a sphere)."
-msgstr ""
+msgstr "དེ་རྗེས་བསྐྱར་དུ་རྩ་3བྱ་ཡུལ་ཨང་གཉིས་པ་བསྒར་འཛུད་བྱེད་  དཔེར་ན་སྔོན་གྱི་རང་སུམ་སྒྱུར་གཟུགས་ལས་ཅུང་ཆེ་བའི་ཟླུམ་གཟུགས་ཞིག"
 
 #: source/text/sdraw/guide/join_objects3d.xhp#par_id3148488.33
 msgid  "Select the second 3D object (sphere) and choose \<emph\>Edit - Cut\</emph\>."
 msgstr ""
 
 #: source/text/sdraw/guide/join_objects3d.xhp#par_id3149211.34
+#, fuzzy
 msgid  "Double-click the first object (cube) to enter its group."
-msgstr ""
+msgstr "རང་གསུམ་སྒྱུར་གཟུགས་གྲུ་བཞི་རྡེབ་གནོན་བརྒྱུད་མ་ཟད་F3གནོན་རྡེབ་བྱས་ཏེ་བསླངས་གཟུགས་ཚོ་ཆུང་ནང་འཛུལ།"
 
 #: source/text/sdraw/guide/join_objects3d.xhp#par_id3154652.35
 msgid  "Choose \<emph\>Edit - Paste\</emph\>. Both objects are now part of the same group. If you want, you can edit the individual objects or change their position within the group."
@@ -1320,11 +1313,12 @@ msgid  "Double-click outside the group to exit the group."
 msgstr "ཚོ་སྒྲིག་ཕུད་ཚོ་སྒྲིག་འདི་རྐྱང་རྡེབ་བྱས་ཏེ་ཕྱིར་འཐེན་བྱེད།"
 
 #: source/text/sdraw/guide/join_objects3d.xhp#par_id3148606.38
+#, fuzzy
 msgid  "You cannot intersect or subtract 3D objects."
-msgstr ""
+msgstr "དོ་སྣང་བྱ་རྒྱུ་ཁྱད་ཚོགས་(འཐེན་ཐབས་)དང་འགྲིལ་ཚོགས་བཀོལ་སྤྱོད་རྩ་གསུམ་བྱ་ཡུལ་ལ་མི་འཚམས།"
 
 #: source/text/sdraw/guide/join_objects3d.xhp#par_id3154537.39
-msgid  "\<link href=\"text/simpress/02/10090000.xhp\" name=\"Objects in 3D\"\>Objects in 3D\</link\>"
+msgid  "\<link href=\\"
 msgstr ""
 
 #: source/text/sdraw/guide/join_objects.xhp#tit
@@ -1337,7 +1331,7 @@ msgid  "\<bookmark_value\>draw objects; connecting lines to\</bookmark_value\>\<
 msgstr ""
 
 #: source/text/sdraw/guide/join_objects.xhp#hd_id3145799.1
-msgid  "\<variable id=\"join_objects\"\>\<link href=\"text/sdraw/guide/join_objects.xhp\" name=\"Connecting Lines\"\>Connecting Lines\</link\>\</variable\>"
+msgid  "\<variable id=\\"
 msgstr ""
 
 #: source/text/sdraw/guide/join_objects.xhp#par_id3154512.3
@@ -1377,7 +1371,7 @@ msgid  "\<bookmark_value\>accessibility; %PRODUCTNAME Draw\</bookmark_value\>\<b
 msgstr ""
 
 #: source/text/sdraw/guide/keyboard.xhp#hd_id3155628.1
-msgid  "\<variable id=\"keyboard\"\>\<link href=\"text/sdraw/guide/keyboard.xhp\" name=\"Shortcut Keys for Drawing Objects\"\>Shortcut Keys for Drawing Objects\</link\>\</variable\>"
+msgid  "\<variable id=\\"
 msgstr ""
 
 #: source/text/sdraw/guide/keyboard.xhp#par_id3148663.13
@@ -1391,19 +1385,19 @@ msgid  "To Create and Edit a Drawing Object"
 msgstr "རིས་འགོད་བྱ་ཡུལ་"
 
 #: source/text/sdraw/guide/keyboard.xhp#par_id3153188.11
-msgid  "Press \<item type=\"keycode\"\>F6\</item\> to navigate to the \<emph\>Drawing\</emph\> bar."
+msgid  "Press \<item type=\\"
 msgstr ""
 
 #: source/text/sdraw/guide/keyboard.xhp#par_id3146971.10
-msgid  "Press the \<item type=\"keycode\"\>Right\</item\> arrow key until you reach the toolbar icon of a drawing tool."
+msgid  "Press the \<item type=\\"
 msgstr ""
 
 #: source/text/sdraw/guide/keyboard.xhp#par_idN106CD
-msgid  "If there is an arrow next to the icon, the drawing tool opens a sub toolbar. Press the \<item type=\"keycode\"\>Up\</item\> or \<item type=\"keycode\"\>Down\</item\> arrow key to open the sub toolbar, then press the \<item type=\"keycode\"\>Right\</item\> or \<item type=\"keycode\"\>Left\</item\> key to select an icon."
+msgid  "If there is an arrow next to the icon, the drawing tool opens a sub toolbar. Press the \<item type=\\"
 msgstr ""
 
 #: source/text/sdraw/guide/keyboard.xhp#par_id3147338.8
-msgid  "Press \<item type=\"keycode\"\>\<switchinline select=\"sys\"\>\<caseinline select=\"MAC\"\>Command\</caseinline\>\<defaultinline\>Ctrl\</defaultinline\>\</switchinline\>+Enter\</item\>."
+msgid  "Press \<item type=\\"
 msgstr ""
 
 #: source/text/sdraw/guide/keyboard.xhp#par_id3154705.7
@@ -1412,11 +1406,11 @@ msgid  "The object is created at the center of the current document."
 msgstr "མིག་སྔའི་ཡིག་ཚགས་ཀྱི་ལྟེ་གནས་གསར་བཟོའི་བྱ་ཡུལ།"
 
 #: source/text/sdraw/guide/keyboard.xhp#par_id3155962.6
-msgid  "To return to the document, press \<item type=\"keycode\"\>\<switchinline select=\"sys\"\>\<caseinline select=\"MAC\"\>Command\</caseinline\>\<defaultinline\>Ctrl\</defaultinline\>\</switchinline\>+F6\</item\>."
+msgid  "To return to the document, press \<item type=\\"
 msgstr ""
 
 #: source/text/sdraw/guide/keyboard.xhp#par_id3155062.5
-msgid  "You can use the arrow keys to position the object where you want. To choose a command from the context menu for the object, press \<item type=\"keycode\"\>Shift+F10\</item\>."
+msgid  "You can use the arrow keys to position the object where you want. To choose a command from the context menu for the object, press \<item type=\\"
 msgstr ""
 
 #: source/text/sdraw/guide/keyboard.xhp#hd_id3150306.4
@@ -1425,11 +1419,11 @@ msgid  "To Select an Object"
 msgstr "བྱ་ཡུལ་འདེམས་པ།"
 
 #: source/text/sdraw/guide/keyboard.xhp#par_id3152990.3
-msgid  "Press \<item type=\"keycode\"\>\<switchinline select=\"sys\"\>\<caseinline select=\"MAC\"\>Command\</caseinline\>\<defaultinline\>Ctrl\</defaultinline\>\</switchinline\>+F6\</item\> to enter the document."
+msgid  "Press \<item type=\\"
 msgstr ""
 
 #: source/text/sdraw/guide/keyboard.xhp#par_id3145587.2
-msgid  "Press \<item type=\"keycode\"\>Tab\</item\> until you reach the object you want to select."
+msgid  "Press \<item type=\\"
 msgstr ""
 
 #: source/text/sdraw/guide/main.xhp#tit
@@ -1442,7 +1436,7 @@ msgid  "\<bookmark_value\>Draw instructions\</bookmark_value\>\<bookmark_value\>
 msgstr ""
 
 #: source/text/sdraw/guide/main.xhp#hd_id3146119.1
-msgid  "\<variable id=\"main\"\>\<link href=\"text/sdraw/guide/main.xhp\" name=\"Instructions for Using $[officename] Draw\"\>Instructions for Using $[officename] Draw\</link\>\</variable\>"
+msgid  "\<variable id=\\"
 msgstr ""
 
 #: source/text/sdraw/guide/main.xhp#hd_id3143218.2
@@ -1480,15 +1474,16 @@ msgid  "\<bookmark_value\>rotating; draw objects\</bookmark_value\>\<bookmark_va
 msgstr ""
 
 #: source/text/sdraw/guide/rotate_object.xhp#hd_id3154684.12
-msgid  "\<variable id=\"rotate_object\"\>\<link href=\"text/sdraw/guide/rotate_object.xhp\" name=\"Rotating Objects\"\>Rotating Objects\</link\>\</variable\>"
+msgid  "\<variable id=\\"
 msgstr ""
 
 #: source/text/sdraw/guide/rotate_object.xhp#par_id3149262.13
+#, fuzzy
 msgid  "You can rotate an object around its default pivot point (center point) or a pivot point that you designate."
-msgstr ""
+msgstr "ཚེག་གིས་བྱ་ཡུལ་འདེམས་པའི་རྗེས་ ཚོད་ཚེག་བརྒྱད་བྱ་ཡུལ་ཐོག་མངོན་ཐུབ་  ཁྱེད་ཀྱིས་བྱ་ཡུལ་ཆེ་ཆུང་བཟོ་བཅོས་བྱེད། འདྲུད་འཐེན་བརྒྱུད་བྱ་ཡུལ་ཆ་ཚང་ཁྱེད་ཀྱིས་ད་དུང་བྱ་ཡུལ་གྱི་ཤོག་ངོས་གནས་ས་འགྱུར་ལྡོག་བྱེད།"
 
 #: source/text/sdraw/guide/rotate_object.xhp#par_id3146975
-msgid  "\<image id=\"img_id3154729\" src=\"res/commandimagelist/sc_toggleobjectrotatemode.png\" width=\"0.564cm\" height=\"0.564cm\"\>\<alt id=\"alt_id3154729\"\>Icon\</alt\>\</image\>"
+msgid  "\<image id=\\"
 msgstr ""
 
 #: source/text/sdraw/guide/rotate_object.xhp#par_id3150716.14
@@ -1496,8 +1491,9 @@ msgid  "Select the object you want to rotate. On the \<emph\>Mode\</emph\> toolb
 msgstr ""
 
 #: source/text/sdraw/guide/rotate_object.xhp#par_id3149021.69
+#, fuzzy
 msgid  "Move the pointer to a corner handle so that the pointer changes to a rotate symbol. Drag the handle to rotate the object."
-msgstr ""
+msgstr "སྟོན་མདའ་ཟུར་གོང་གི་ཚོད་ཚེག་ལ་སྤོ་སྒུལ་བྱེད་ སྟོན་མདའ་ནི་འཁྱིལ་འཁོར་མཚོན་རྟགས་ལ་འགྱུར།  ཙིག་རྟགས་སྤྱད་དེ་ཚོད་ཆས་འདྲུད་འཐེན་བྱེད་པ་དང་བྱ་ཡུལ་འདི་འཁྱིལ་འཁོར་བྱེད།"
 
 #: source/text/sdraw/guide/rotate_object.xhp#par_id0930200803002335
 msgid  "Hold down the Shift key to restrict the rotation to multiples of 15 degrees."
@@ -1508,12 +1504,13 @@ msgid  "Right-click the object to open the context menu. Choose Position and Siz
 msgstr ""
 
 #: source/text/sdraw/guide/rotate_object.xhp#par_id3155962
-msgid  "\<image id=\"img_id3154023\" src=\"res/helpimg/rotieren.png\" width=\"5.424cm\" height=\"3.916cm\"\>\<alt id=\"alt_id3154023\"\>Icon\</alt\>\</image\>"
+msgid  "\<image id=\\"
 msgstr ""
 
 #: source/text/sdraw/guide/rotate_object.xhp#par_id3166424.16
+#, fuzzy
 msgid  "To change the pivot point, drag the small circle in the center of the object to a new location."
-msgstr ""
+msgstr "བསྐྱར་དུ་བྱ་ཡུལ་གནོན་མཐེབ་རྗེས་ཁྱེད་ཀྱིས་བསྐྱར་དུ་རྒྱུན་གཏན་ཚོད་ཚེག་བརྒྱད་འགྱུར་བ་འགྲོ་ཡི་རེད་  མ་ཟད་ཁྱེད་ཀྱིས་བྱ་ཡུལ་དཀྱིལ་ཁུལ་གྱི་ཡི་གེའི་འོད་རྟགས་གཅིག་མཐོང་ཐུབ།  འདི་འདྲ་  ཁྱེད་ཀྱིས་བྱ་ཡུལ་ནང་ཡི་གེ་མཐེབ་འཇུག་བྱེད།"
 
 #: source/text/sdraw/guide/rotate_object.xhp#par_id3159236.28
 msgid  "To skew the object vertically or horizontally, drag one of the side handles."
@@ -1529,12 +1526,13 @@ msgid  "\<bookmark_value\>text frames\</bookmark_value\>      \<bookmark_value\>
 msgstr ""
 
 #: source/text/sdraw/guide/text_enter.xhp#hd_id3153144.45
-msgid  "\<variable id=\"text_enter\"\>\<link href=\"text/sdraw/guide/text_enter.xhp\" name=\"Adding Text\"\>Adding Text\</link\>\</variable\>"
+msgid  "\<variable id=\\"
 msgstr ""
 
 #: source/text/sdraw/guide/text_enter.xhp#par_id3145750.46
+#, fuzzy
 msgid  "There are several types of text you can add to a drawing or presentation: "
-msgstr ""
+msgstr "རིས་འགོད་ཡང་ན་གསལ་སྟོན་ཡིག་ཟིན་ནང་ཡི་གེའི་རིགས་མང་དག་གསབ་སྣོ་བྱེད།"
 
 #: source/text/sdraw/guide/text_enter.xhp#par_idN10824
 #, fuzzy
@@ -1542,12 +1540,14 @@ msgid  "Text in a text box"
 msgstr "ཡིག་དེབ་སྒྲོམ་ནང་གི་ཡི་གེ"
 
 #: source/text/sdraw/guide/text_enter.xhp#par_idN10828
+#, fuzzy
 msgid  "Text that changes character size to fill the frame size"
-msgstr ""
+msgstr "ཡིག་རྟགས་ཆེ་ཆུང་བཟོ་བཅོས་བྱས་ཏེ་ཡིག་དེབ་སྒྲོམ་ཆེ་ཆུང་གི་ཡི་གེ་དང་འཚམས་པ་བྱེད།"
 
 #: source/text/sdraw/guide/text_enter.xhp#par_idN1082C
+#, fuzzy
 msgid  "Text that is added to any drawing object by double-clicking the object"
-msgstr ""
+msgstr "ཆ་རྡེབ་བརྒྱུད་བྱ་ཡུལ་ནི་རིས་འགོད་བྱ་ཡུལ་གྱི་ཡི་གེ་གང་རུང་ཞིག་ལ་གསབ་སྣོན་བྱེད།"
 
 #: source/text/sdraw/guide/text_enter.xhp#par_idN10830
 #, fuzzy
@@ -1564,12 +1564,13 @@ msgid  "Adding a Text Box"
 msgstr ""
 
 #: source/text/sdraw/guide/text_enter.xhp#par_id3155266.49
-msgid  "Click the \<emph\>Text\</emph\> icon \<image id=\"img_id3156450\" src=\"res/commandimagelist/sc_text.png\" width=\"0.1665in\" height=\"0.1665in\"\>\<alt id=\"alt_id3156450\"\>Icon\</alt\>\</image\> and move the mouse pointer to where you want to enter the text box."
+msgid  "Click the \<emph\>Text\</emph\> icon \<image id=\\"
 msgstr ""
 
 #: source/text/sdraw/guide/text_enter.xhp#par_id3149052.50
+#, fuzzy
 msgid  "Drag a text box to the size you want in your document."
-msgstr ""
+msgstr "ཡིག་ཚགས་ནང་བསྐོར་བཞིན་པའི་ཙིག་རྟགས་གཡར་ཏེ་སྒྲོམ་ཞིག་འདྲུད་འཐེན་བྱེད།  སྒྲོམ་གྱི་ཆེ་ཆུང་དང་གནས་ས་ནི་ཁྱེད་རང་གིས་གཏན་འཁེལ་བྱེད།  སྒྲོམ་འདིའི་ཆེ་ཆུང་ནི་སྒྲོམ་ནང་གི་ཡི་གེའི་ནང་དོན་གྱི་མང་ཉུང་ལྟར་རང་འགུལ་ལྟོས་བཅས་ཀྱི་ལེགས་སྒྲིག་བྱེད།  ལོས་ཡིན་  རྗེས་ལ་ཁྱེད་ཀྱིས་དུས་བསྟུན་གྱིས་བཀོངབཀོང་བཞིན་པའི་ཙིག་རྟགས་སྤོ་སྒུལ་གཡར་ཏེ་སྒྲོམ་གྱི་གནས་ས་དང་སྒྲོམ་གྱི་ཆེ་ཆུང་འགྱུར་ལྡོག་གཏོང་  ཡིན་ནའང་སྒྲོམ་ནི་སྒྲོམ་ནང་གི་ཡི་གེ་ལ་དགོས་ངེས་ཀྱི་བར་སྟོང་ལས་ཆུང་མི་རུང་།"
 
 #: source/text/sdraw/guide/text_enter.xhp#par_id3151194.51
 #, fuzzy
@@ -1577,8 +1578,9 @@ msgid  "Type or paste your text into the text box."
 msgstr "ཡི་གེའི་སྒྲོམ་ནང་ཡི་གེ་མཐེབ་འཇུག་དང་ཡང་ན་སྦྱོར།"
 
 #: source/text/sdraw/guide/text_enter.xhp#par_id3145118.53
+#, fuzzy
 msgid  "Double-click the text to edit it or to format text properties, such as font size or font color. Click the border of the text box to edit the object properties, such as border color or arranging in front or behind other objects."
-msgstr ""
+msgstr "ཡི་གེ་ཆ་རྡེབ་བྱས་ཏེ་དེ་ལ་ཡང་ན་རྣམ་གཞག་ཅན་གྱི་ཡི་གེའི་གཏོགས་གཤིས་(དཔེར་ན་ཡིག་གཟུགས་ཀྱི་ཆེ་ཆུང་ཡང་ན་ཡིག་གཟུགས་ཚོས་གཞི་)རྩོམ་སྒྲིག་བྱེད། ཡི་གེའི་བྱ་ཡུལ་གྱི་མཐའ་སྒྲོམ་རྐྱང་རྡེབ་བྱས་ཏེ་བྱ་ཡུལ་འདིའི་གཏོགས་གཤིས་རྩོམ་སྒྲིག་བྱེད་  དཔེར་ན་མཐའ་སྒྲོམ་ཚོས་གཞི་ཡང་ན་བྱ་ཡུལ་སྔོན་ཡང་ན་རྗེས་ལ་སྟར་འགོད་བྱེད།"
 
 #: source/text/sdraw/guide/text_enter.xhp#hd_id3150437.54
 #, fuzzy
@@ -1607,20 +1609,22 @@ msgid  "Text Tied to a Graphic"
 msgstr "རིས་དབྱིབས་ལ་བསྡམས་པའི་ཡི་གེ"
 
 #: source/text/sdraw/guide/text_enter.xhp#par_idN10917
+#, fuzzy
 msgid  "You can add text to any graphic after double-clicking the graphic."
-msgstr ""
+msgstr "རིས་དབྱིབས་གང་རུང་ཞིག་ལ་ཆ་རྡེབ་བྱེད་ ཆ་སྙོམས་ཀྱིས་རིས་དབྱིབས་ནང་ཡི་གེ་གསབ་སྣོན་བྱེད།"
 
 #: source/text/sdraw/guide/text_enter.xhp#par_id1827448
 msgid  "To determine the position of the text, use the settings in \<emph\>Format - Text\</emph\>."
 msgstr ""
 
 #: source/text/sdraw/guide/text_enter.xhp#par_id3147366.59
-msgid  "For example, click the arrow next to the \<emph\>Callouts\</emph\> icon \<image id=\"img_id3154508\" src=\"res/commandimagelist/sc_calloutshapes.png\" width=\"0.1665in\" height=\"0.1665in\"\>\<alt id=\"alt_id3154508\"\>Icon\</alt\>\</image\> to open the Callouts toolbar."
+msgid  "For example, click the arrow next to the \<emph\>Callouts\</emph\> icon \<image id=\\"
 msgstr ""
 
 #: source/text/sdraw/guide/text_enter.xhp#par_idN108FD
+#, fuzzy
 msgid  "Select a callout and move the mouse pointer to where you want the callout to start."
-msgstr ""
+msgstr "དཔེ་རིས་ཞིག་འདེམས་ དེ་རྗེས་ཙིག་རྟགས་སྟོན་མདའ་ནི་དཔེ་རིས་འདིའི་གནས་ས་བསྒར་འཛུད་བྱེད་པའི་བར་སྤོས།"
 
 #: source/text/sdraw/guide/text_enter.xhp#par_id3150272.60
 #, fuzzy
@@ -1646,8 +1650,9 @@ msgid  "Copy the text to the clipboard (\<emph\>Edit - Copy\</emph\>)."
 msgstr ""
 
 #: source/text/sdraw/guide/text_enter.xhp#par_idN1092D
+#, fuzzy
 msgid  "Click the page or slide where you want to paste the text."
-msgstr ""
+msgstr "སྦྱར་བའི་ཡི་གེའི་ཤོག་ངོས་ཡང་ན་སྒྲོམ་བཪྙན་སྤྱིན་ཤོག་ཐོག་ཙིག་རྟགས་རྐྱང་རྡེབ་བྱེད།"
 
 #: source/text/sdraw/guide/text_enter.xhp#par_idN10931
 msgid  "Paste the text using \<emph\>Edit - Paste\</emph\> or \<emph\>Edit - Paste special\</emph\>."
@@ -1663,8 +1668,9 @@ msgid  "Importing Text"
 msgstr "འདྲེན་འཇུག་ཡི་གེ"
 
 #: source/text/sdraw/guide/text_enter.xhp#par_idN10946
+#, fuzzy
 msgid  "Click the page or slide where you want to import the text."
-msgstr ""
+msgstr "འདྲེན་འཇུག་བྱེད་པའི་ཡི་གེའི་ཤོག་ངོས་ཡང་ན་སྒྲོན་བཪྙན་སྤྱིན་ཤོག་ཐོག་ཙིག་རྟགས་རྐྱང་རྡེབ་བྱེད།"
 
 #: source/text/sdraw/guide/text_enter.xhp#par_idN1094A
 msgid  "Choose \<emph\>Insert - File\</emph\>."
@@ -1675,49 +1681,43 @@ msgid  "Select a text file (*.txt) or an HTML file and click \<emph\>Insert\</em
 msgstr ""
 
 #: source/text/sdraw/main0000.xhp#tit
-#, fuzzy
 msgid  "Welcome to the $[officename] Draw Help"
 msgstr "$[officename] རིས་འགོད་བཟོ་བའི་རོགས་རམ་བེད་སྤྱོད་མཛད་པར་དགའ་བསུ་ཞུ་"
 
 #: source/text/sdraw/main0000.xhp#hd_id3155960.1
-msgid  "\<switchinline select=\"appl\"\> \<caseinline select=\"DRAW\"/\> \</switchinline\>Welcome to the $[officename] Draw Help"
+msgid  "\<switchinline select=\\"
 msgstr ""
 
 #: source/text/sdraw/main0000.xhp#hd_id3154022.3
-#, fuzzy
 msgid  "How to Work With $[officename] Draw"
 msgstr "ཇི་ལྟར་བྱས་ན་$[officename] རིས་འགོད་བཟོ་བ་ཡོད་པ་"
 
 #: source/text/sdraw/main0000.xhp#hd_id3150363.5
-#, fuzzy
 msgid  "$[officename] Draw Menus, Toolbars, and Keys"
 msgstr "$[officename] རིས་འགོད་བཟོ་བའི་ཚལ་ཐོ་ ཡོ་བྱད་ཚང་དང་མྱུར་བདེའི་མཐེབ་"
 
 #: source/text/sdraw/main0000.xhp#hd_id3166430.4
-#, fuzzy
 msgid  "Help about the Help"
 msgstr "རོགས་རམ་སྣེ་སྟོན་"
 
 #: source/text/sdraw/main0100.xhp#tit
-#, fuzzy
 msgid  "Menus"
 msgstr "ཚལ་ཐོ་"
 
 #: source/text/sdraw/main0100.xhp#hd_id3148664.1
-msgid  "\<variable id=\"main0100\"\>\<link href=\"text/sdraw/main0100.xhp\" name=\"Menus\"\>Menus\</link\>\</variable\>"
+msgid  "\<variable id=\\"
 msgstr ""
 
 #: source/text/sdraw/main0100.xhp#par_id3154684.2
 msgid  "The following is a description of all $[officename] Draw menus, submenus and their dialogs."
-msgstr ""
+msgstr "གཤམ་གསལ་ནི་$[officename] རིས་འགོད་བཟོ་བའི་ཚལ་ཐོ་ ཡན་ལག་ཚལ་ཐོ་དང་གླེང་སྒྲོམ་ཡོད་ཚད་ཀྱི་གསལ་བཤད་ཡིན།"
 
 #: source/text/sdraw/main0101.xhp#tit
-#, fuzzy
 msgid  "File"
 msgstr "ཡིག་ཆ་"
 
 #: source/text/sdraw/main0101.xhp#hd_id3149655.1
-msgid  "\<link href=\"text/sdraw/main0101.xhp\" name=\"File\"\>File\</link\>"
+msgid  "\<link href=\\"
 msgstr ""
 
 #: source/text/sdraw/main0101.xhp#par_id3150868.2
@@ -1725,31 +1725,31 @@ msgid  "This menu contains general commands for working with Draw documents, suc
 msgstr ""
 
 #: source/text/sdraw/main0101.xhp#hd_id3156441.4
-msgid  "\<link href=\"text/shared/01/01020000.xhp\" name=\"Open\"\>Open\</link\>"
+msgid  "\<link href=\\"
 msgstr ""
 
 #: source/text/sdraw/main0101.xhp#hd_id3153876.6
-msgid  "\<link href=\"text/shared/01/01070000.xhp\" name=\"Save As\"\>Save As\</link\>"
+msgid  "\<link href=\\"
 msgstr ""
 
 #: source/text/sdraw/main0101.xhp#hd_id3150718.7
-msgid  "\<link href=\"text/simpress/01/01170000.xhp\" name=\"Export\"\>Export\</link\>"
+msgid  "\<link href=\\"
 msgstr ""
 
 #: source/text/sdraw/main0101.xhp#hd_id3154754.14
-msgid  "\<link href=\"text/shared/01/01190000.xhp\" name=\"Versions\"\>Versions\</link\>"
+msgid  "\<link href=\\"
 msgstr ""
 
 #: source/text/sdraw/main0101.xhp#hd_id3150044.9
-msgid  "\<link href=\"text/shared/01/01100000.xhp\" name=\"Properties\"\>Properties\</link\>"
+msgid  "\<link href=\\"
 msgstr ""
 
 #: source/text/sdraw/main0101.xhp#hd_id3149127.12
-msgid  "\<link href=\"text/shared/01/01130000.xhp\" name=\"Print\"\>Print\</link\>"
+msgid  "\<link href=\\"
 msgstr ""
 
 #: source/text/sdraw/main0101.xhp#hd_id3145790.13
-msgid  "\<link href=\"text/shared/01/01140000.xhp\" name=\"Printer Settings\"\>Printer Settings\</link\>"
+msgid  "\<link href=\\"
 msgstr ""
 
 #: source/text/sdraw/main0102.xhp#tit
@@ -1758,23 +1758,24 @@ msgid  "Edit"
 msgstr "རྩོམ་སྒྲིག་"
 
 #: source/text/sdraw/main0102.xhp#hd_id3150868.1
-msgid  "\<link href=\"text/sdraw/main0102.xhp\" name=\"Edit\"\>Edit\</link\>"
+msgid  "\<link href=\\"
 msgstr ""
 
 #: source/text/sdraw/main0102.xhp#par_id3146974.2
+#, fuzzy
 msgid  "The commands in this menu are used to edit Draw documents (for example, copying and pasting)."
-msgstr ""
+msgstr "ཚལ་ཐོ་འདིའི་ནང་གི་བཀའ་ཚིག་དེ་རིས་མཚོན་ཡིག་ཚགས་རྩོམ་སྒྲིག་ལ་སྤྱོད།(དཔེར་ན་འདྲ་ཕབ་དང་སྦྱར་བ།)"
 
 #: source/text/sdraw/main0102.xhp#hd_id3147396.3
-msgid  "\<link href=\"text/shared/01/02070000.xhp\" name=\"Paste Special\"\>Paste Special\</link\>"
+msgid  "\<link href=\\"
 msgstr ""
 
 #: source/text/sdraw/main0102.xhp#hd_id3149400.4
-msgid  "\<link href=\"text/shared/01/02100000.xhp\" name=\"Find & Replace\"\>Find & Replace\</link\>"
+msgid  "\<link href=\\"
 msgstr ""
 
 #: source/text/sdraw/main0102.xhp#hd_id3153713.13
-msgid  "\<link href=\"text/shared/01/05270000.xhp\" name=\"Points\"\>Points\</link\>"
+msgid  "\<link href=\\"
 msgstr ""
 
 #: source/text/sdraw/main0102.xhp#par_id3147340.14
@@ -1783,7 +1784,7 @@ msgid  "Enables you to edit points on your drawing."
 msgstr "རིས་མཚོན་བྱ་སྐབས་རྩེ་ཚེག་རྩོམ་སྒྲིག་ལ་སྤྱོད།"
 
 #: source/text/sdraw/main0102.xhp#hd_id3149258.15
-msgid  "\<link href=\"text/simpress/02/10030200.xhp\" name=\"Glue points\"\>Glue points\</link\>"
+msgid  "\<link href=\\"
 msgstr ""
 
 #: source/text/sdraw/main0102.xhp#par_id3146315.16
@@ -1792,27 +1793,27 @@ msgid  "Enables you to edit glue points on your drawing."
 msgstr "རིས་མཚོན་བྱ་སྐབས་སྦྱར་མདུད་ཚེག་རྩོམ་སྒྲིག་བྱ་བར་སྤྱོད།"
 
 #: source/text/sdraw/main0102.xhp#hd_id3147005.5
-msgid  "\<link href=\"text/simpress/01/02120000.xhp\" name=\"Duplicate\"\>Duplicate\</link\>"
+msgid  "\<link href=\\"
 msgstr ""
 
 #: source/text/sdraw/main0102.xhp#hd_id3150205.6
-msgid  "\<link href=\"text/simpress/01/02150000.xhp\" name=\"Cross-fading\"\>Cross-fading\</link\>"
+msgid  "\<link href=\\"
 msgstr ""
 
 #: source/text/sdraw/main0102.xhp#hd_id3154650.7
-msgid  "\<link href=\"text/simpress/01/02160000.xhp\" name=\"Fields\"\>Fields\</link\>"
+msgid  "\<link href=\\"
 msgstr ""
 
 #: source/text/sdraw/main0102.xhp#hd_id3156446.10
-msgid  "\<link href=\"text/shared/01/02180000.xhp\" name=\"Links\"\>Links\</link\>"
+msgid  "\<link href=\\"
 msgstr ""
 
 #: source/text/sdraw/main0102.xhp#hd_id3148699.11
-msgid  "\<link href=\"text/shared/01/02220000.xhp\" name=\"ImageMap\"\>ImageMap\</link\>"
+msgid  "\<link href=\\"
 msgstr ""
 
 #: source/text/sdraw/main0102.xhp#hd_id3157867.12
-msgid  "\<link href=\"text/shared/02/09070000.xhp\" name=\"Hyperlink\"\>Hyperlink\</link\>"
+msgid  "\<link href=\\"
 msgstr ""
 
 #: source/text/sdraw/main0103.xhp#tit
@@ -1821,7 +1822,7 @@ msgid  "View"
 msgstr "མཐོང་རིས་"
 
 #: source/text/sdraw/main0103.xhp#hd_id3152576.1
-msgid  "\<link href=\"text/sdraw/main0103.xhp\" name=\"View\"\>View\</link\>"
+msgid  "\<link href=\\"
 msgstr ""
 
 #: source/text/sdraw/main0103.xhp#par_id3159155.2
@@ -1848,7 +1849,7 @@ msgid  "Switch to the master page view."
 msgstr ""
 
 #: source/text/sdraw/main0103.xhp#hd_id3149666.3
-msgid  "\<link href=\"text/shared/01/03010000.xhp\" name=\"Zoom\"\>Zoom\</link\>"
+msgid  "\<link href=\\"
 msgstr ""
 
 #: source/text/sdraw/main0104.xhp#tit
@@ -1857,43 +1858,44 @@ msgid  "Insert"
 msgstr "བསྒར་འཛུད་"
 
 #: source/text/sdraw/main0104.xhp#hd_id3148797.1
-msgid  "\<link href=\"text/sdraw/main0104.xhp\" name=\"Insert\"\>Insert\</link\>"
+msgid  "\<link href=\\"
 msgstr ""
 
 #: source/text/sdraw/main0104.xhp#par_id3153770.2
+#, fuzzy
 msgid  "This menu allows you to insert elements, such as graphics and guides, into Draw documents."
-msgstr ""
+msgstr "ཚལ་ཐོ་འདིས་ཁྱེད་ཀྱིས་གཞི་རྒྱུ་(དཔེར་ན་རིས་དབྱིབས་དང་རམ་འདེགས་ཐིག་)རིས་མཚོན་ཡིག་ཚགས་ནང་བསྒར་འཛུད་བྱ་རུ་འཇུག"
 
 #: source/text/sdraw/main0104.xhp#hd_id3154320.3
-msgid  "\<link href=\"text/sdraw/01/04010000.xhp\" name=\"Slide\"\>Slide\</link\>"
+msgid  "\<link href=\\"
 msgstr ""
 
 #: source/text/sdraw/main0104.xhp#hd_id3146974.4
-msgid  "\<link href=\"text/simpress/01/04020000.xhp\" name=\"Layer\"\>Layer\</link\>"
+msgid  "\<link href=\\"
 msgstr ""
 
 #: source/text/sdraw/main0104.xhp#hd_id3147397.5
-msgid  "\<link href=\"text/simpress/01/04030000.xhp\" name=\"Insert Snap Point/Line\"\>Insert Snap Point/Line\</link\>"
+msgid  "\<link href=\\"
 msgstr ""
 
 #: source/text/sdraw/main0104.xhp#hd_id0915200910361385
-msgid  "\<link href=\"text/shared/01/04050000.xhp\" name=\"Comment\"\>Comment\</link\>"
+msgid  "\<link href=\\"
 msgstr ""
 
 #: source/text/sdraw/main0104.xhp#hd_id3154018.6
-msgid  "\<link href=\"text/shared/01/04100000.xhp\" name=\"Special Character\"\>Special Character\</link\>"
+msgid  "\<link href=\\"
 msgstr ""
 
 #: source/text/sdraw/main0104.xhp#hd_id3150749.11
-msgid  "\<link href=\"text/shared/02/09070000.xhp\" name=\"Hyperlink\"\>Hyperlink\</link\>"
+msgid  "\<link href=\\"
 msgstr ""
 
 #: source/text/sdraw/main0104.xhp#hd_id3156385.7
-msgid  "\<link href=\"text/simpress/01/04080100.xhp\" name=\"Table\"\>Table\</link\>"
+msgid  "\<link href=\\"
 msgstr ""
 
 #: source/text/sdraw/main0104.xhp#hd_id3147003.8
-msgid  "\<link href=\"text/schart/01/wiz_chart_type.xhp\" name=\"Chart\"\>Chart\</link\>"
+msgid  "\<link href=\\"
 msgstr ""
 
 #: source/text/sdraw/main0104.xhp#par_id0302200904020595
@@ -1901,11 +1903,11 @@ msgid  "Inserts a chart."
 msgstr ""
 
 #: source/text/sdraw/main0104.xhp#hd_id3155111.9
-msgid  "\<link href=\"text/shared/01/04160500.xhp\" name=\"Floating Frame\"\>Floating Frame\</link\>"
+msgid  "\<link href=\\"
 msgstr ""
 
 #: source/text/sdraw/main0104.xhp#hd_id3157867.10
-msgid  "\<link href=\"text/simpress/01/04110000.xhp\" name=\"File\"\>File\</link\>"
+msgid  "\<link href=\\"
 msgstr ""
 
 #: source/text/sdraw/main0105.xhp#tit
@@ -1914,47 +1916,48 @@ msgid  "Format"
 msgstr "རྣམ་གཞག་"
 
 #: source/text/sdraw/main0105.xhp#hd_id3153770.1
-msgid  "\<link href=\"text/sdraw/main0105.xhp\" name=\"Format\"\>Format\</link\>"
+msgid  "\<link href=\\"
 msgstr ""
 
 #: source/text/sdraw/main0105.xhp#par_id3152578.2
+#, fuzzy
 msgid  "Contains commands for formatting the layout and the contents of your document."
-msgstr ""
+msgstr "རྣམ་གཞག་ཅན་ཡིག་ཚགས་པར་དབྱིབས་དང་ནང་དོན་ལ་སྤྱོད་པའི་བཀའ་ཚིག་འདུས་ཡོད།"
 
 #: source/text/sdraw/main0105.xhp#hd_id3155111.10
-msgid  "\<link href=\"text/shared/01/05020000.xhp\" name=\"Character\"\>Character\</link\>"
+msgid  "\<link href=\\"
 msgstr ""
 
 #: source/text/sdraw/main0105.xhp#hd_id3146979.12
-msgid  "\<link href=\"text/shared/01/05030000.xhp\" name=\"Paragraph\"\>Paragraph\</link\>"
+msgid  "\<link href=\\"
 msgstr ""
 
 #: source/text/sdraw/main0105.xhp#hd_id3166426.19
-msgid  "\<link href=\"text/shared/01/06050000.xhp\" name=\"Numbering/Bullets\"\>Bullets and Numbering\</link\>"
+msgid  "\<link href=\\"
 msgstr ""
 
 #: source/text/sdraw/main0105.xhp#hd_id3155091.14
-msgid  "\<link href=\"text/simpress/01/01180000.xhp\" name=\"Page\"\>Page\</link\>"
+msgid  "\<link href=\\"
 msgstr ""
 
 #: source/text/sdraw/main0105.xhp#hd_id3146971.6
-msgid  "\<link href=\"text/shared/01/05230000.xhp\" name=\"Position and Size\"\>Position and Size\</link\>"
+msgid  "\<link href=\\"
 msgstr ""
 
 #: source/text/sdraw/main0105.xhp#hd_id3148576.3
-msgid  "\<link href=\"text/shared/01/05200000.xhp\" name=\"Line\"\>Line\</link\>"
+msgid  "\<link href=\\"
 msgstr ""
 
 #: source/text/sdraw/main0105.xhp#hd_id3151076.4
-msgid  "\<link href=\"text/shared/01/05210000.xhp\" name=\"Area\"\>Area\</link\>"
+msgid  "\<link href=\\"
 msgstr ""
 
 #: source/text/sdraw/main0105.xhp#hd_id3153878.5
-msgid  "\<link href=\"text/shared/01/05990000.xhp\" name=\"Text\"\>Text\</link\>"
+msgid  "\<link href=\\"
 msgstr ""
 
 #: source/text/sdraw/main0105.xhp#hd_id3153913.16
-msgid  "\<link href=\"text/simpress/01/05140000.xhp\" name=\"Layer\"\>Layer\</link\>"
+msgid  "\<link href=\\"
 msgstr ""
 
 #: source/text/sdraw/main0106.xhp#tit
@@ -1963,19 +1966,20 @@ msgid  "Tools"
 msgstr "ཡོ་བྱད་"
 
 #: source/text/sdraw/main0106.xhp#hd_id3159155.1
-msgid  "\<link href=\"text/sdraw/main0106.xhp\" name=\"Tools\"\>Tools\</link\>"
+msgid  "\<link href=\\"
 msgstr ""
 
 #: source/text/sdraw/main0106.xhp#par_id3156443.2
+#, fuzzy
 msgid  "This menu provides tools for $[officename] Draw as well as access to language and system settings."
-msgstr ""
+msgstr "ཚལ་ཐོ་འདིས་$[officename] རིས་མཚོན་བཟོ་བར་སྤྱོད་པའི་ཡོ་བྱད་དང་དེ་བཞིན་སྐད་བརྡ་དང་མ་ལག་བཀོད་སྒྲིག་གི་འཚམས་འདྲི་མཁོ་འདོན་བྱེད།"
 
 #: source/text/sdraw/main0106.xhp#hd_id3153415.4
-msgid  "\<link href=\"text/shared/01/06040000.xhp\" name=\"AutoCorrect\"\>AutoCorrect Options\</link\>"
+msgid  "\<link href=\\"
 msgstr ""
 
 #: source/text/sdraw/main0106.xhp#hd_id3150044.6
-msgid  "\<link href=\"text/shared/01/06140000.xhp\" name=\"Customize\"\>Customize\</link\>"
+msgid  "\<link href=\\"
 msgstr ""
 
 #: source/text/sdraw/main0200.xhp#tit
@@ -1984,12 +1988,13 @@ msgid  "Toolbars"
 msgstr "ཡོ་བྱད་ཚང་"
 
 #: source/text/sdraw/main0200.xhp#hd_id3148663.1
-msgid  "\<variable id=\"main0200\"\>\<link href=\"text/sdraw/main0200.xhp\" name=\"Toolbars\"\>Toolbars\</link\>\</variable\>"
+msgid  "\<variable id=\\"
 msgstr ""
 
 #: source/text/sdraw/main0200.xhp#par_id3125863.2
+#, fuzzy
 msgid  "This section provides an overview of the toolbars available in $[officename] Draw."
-msgstr ""
+msgstr "ས་བཅད་འདིར་ཕྱོགས་བསྡུས་ཀྱིས་$[officename] རིས་མཚོན་བཟོ་བའི་ནང་སྤྱོད་རུང་བའི་ཡོ་བྱད་ཚང་ངོ་སྤྲོད་བྱེད།"
 
 #: source/text/sdraw/main0202.xhp#tit
 #, fuzzy
@@ -1997,31 +2002,32 @@ msgid  "Line and Filling Bar"
 msgstr "རིས་མཚོན་བྱ་ཡུལ་ཚང་"
 
 #: source/text/sdraw/main0202.xhp#hd_id3149669.1
-msgid  "\<link href=\"text/sdraw/main0202.xhp\" name=\"Line and Filling Bar\"\>Line and Filling Bar\</link\>"
+msgid  "\<link href=\\"
 msgstr ""
 
 #: source/text/sdraw/main0202.xhp#par_id3150543.2
+#, fuzzy
 msgid  "The Line and Filling bar contains commands for the current editing mode."
-msgstr ""
+msgstr "<emph>[རིས་མཚོན་བྱ་ཡུལ་ཚང་]</emph>ནང་མིག་སྔའི་རྩོམ་སྒྲིག་མ་ཚུལ་འོག་སྤྱོད་རུང་གི་བཀའ་ཚིག་འདུས་ཡོད།"
 
 #: source/text/sdraw/main0202.xhp#hd_id3149664.3
-msgid  "\<link href=\"text/shared/01/05200100.xhp\" name=\"Line Style\"\>Line Style\</link\>"
+msgid  "\<link href=\\"
 msgstr ""
 
 #: source/text/sdraw/main0202.xhp#hd_id3156285.4
-msgid  "\<link href=\"text/shared/01/05200100.xhp\" name=\"Line Width\"\>Line Width\</link\>"
+msgid  "\<link href=\\"
 msgstr ""
 
 #: source/text/sdraw/main0202.xhp#hd_id3154015.5
-msgid  "\<link href=\"text/shared/01/05200100.xhp\" name=\"Line Color\"\>Line Color\</link\>"
+msgid  "\<link href=\\"
 msgstr ""
 
 #: source/text/sdraw/main0202.xhp#hd_id3155767.6
-msgid  "\<link href=\"text/shared/01/05210100.xhp\" name=\"Area Style / Filling\"\>Area Style / Filling\</link\>"
+msgid  "\<link href=\\"
 msgstr ""
 
 #: source/text/sdraw/main0202.xhp#hd_id3341471
-msgid  "\<link href=\"text/shared/01/05210600.xhp\" name=\"Shadow\"\>Shadow\</link\>"
+msgid  "\<link href=\\"
 msgstr ""
 
 #: source/text/sdraw/main0210.xhp#tit
@@ -2030,7 +2036,7 @@ msgid  "Drawing Bar"
 msgstr "ཡོ་བྱད་ཚང་གཙོ་བོ་"
 
 #: source/text/sdraw/main0210.xhp#hd_id3150398.1
-msgid  "\<link href=\"text/sdraw/main0210.xhp\" name=\"Drawing Bar\"\>Drawing Bar\</link\>"
+msgid  "\<link href=\\"
 msgstr ""
 
 #: source/text/sdraw/main0210.xhp#par_id3149656.2
@@ -2038,31 +2044,34 @@ msgid  "The \<emph\>Drawing\</emph\> bar holds the main drawing tools."
 msgstr ""
 
 #: source/text/sdraw/main0210.xhp#par_idN105D1
-msgid  "\<link href=\"text/simpress/02/10060000.xhp\"\>Rectangle\</link\>"
+msgid  "\<link href=\\"
 msgstr ""
 
 #: source/text/sdraw/main0210.xhp#par_idN105E1
+#, fuzzy
 msgid  "Draws a filled rectangle where you drag in the current document. Click where you want to place a corner of the rectangle, and drag to the size you want. To draw a square, hold down Shift while you drag."
-msgstr ""
+msgstr "མིག་སྔའི་ཡིག་ཚགས་ནང་དྲུད་སྐྱེལ་བྱས་པའི་གནས་སར་མདོག་སྣོན་པའི་གྲུ་བཞི་ཞིག་འགོད་བྲིས་བྱ། གྲུ་བཞིའི་ཟུར་ཞིག་འགོད་བྲིས་བྱ་དགོས་པའི་གནས་སར་རྐྱང་རྡེབ་བྱ་ དེ་རྗེས་དགོས་ངེས་ཀྱི་ཆ་རྐྱེན་དེ་བཞིན་དྲུད་པར་བྱ། གྲུ་བཞི་ཁ་གང་འགོད་བྲིས་བྱ་དགོས་ན་དྲུད་སྒུལ་བྱ་སྐབས་ Shift མཐེབ་གནོན་འཛིན་བྱ།"
 
 #: source/text/sdraw/main0210.xhp#par_idN105EE
-msgid  "\<link href=\"text/simpress/02/10070000.xhp\"\>Ellipse\</link\>"
+msgid  "\<link href=\\"
 msgstr ""
 
 #: source/text/sdraw/main0210.xhp#par_idN105FE
+#, fuzzy
 msgid  "Draws a filled oval where you drag in the current document. Click where you want to draw the oval, and drag to the size you want. To draw a circle, hold down Shift while you drag."
-msgstr ""
+msgstr "མིག་སྔའི་ཡིག་ཚགས་ནང་དྲུད་སྒུལ་བྱས་པའི་གནས་སར་མདོག་སྣོན་བྱས་པའི་འཇོད་སྒོར་ཞིག་འགོད་བྲིས་བྱ། འཇོད་སྒོར་འགོད་བྲིས་བྱ་བའི་གནས་སར་རྐྱང་རྡེབ་བྱ་བ་དང་དེ་རྗེས་དགོས་ངེས་ཀྱི་ཆེ་ཆུང་དེ་ལྟར་དྲུད་པར་བྱ། སྒོར་མོ་འགོད་བྲིས་དགོས་ན་དྲུད་སྒུལ་བྱ་སྐབས་ Shift མཐེབ་གནོན་འཛིན་བྱ་རོགས།"
 
 #: source/text/sdraw/main0210.xhp#par_idN1060B
-msgid  "\<link href=\"text/simpress/02/10050000.xhp\"\>Text\</link\>"
+msgid  "\<link href=\\"
 msgstr ""
 
 #: source/text/sdraw/main0210.xhp#par_idN1061B
+#, fuzzy
 msgid  "Draws a text box where you click or drag in the current document. Click anywhere in the document, and then type or paste your text."
-msgstr ""
+msgstr "མིག་སྔའི་ཡིག་ཚགས་ནང་རྐྱང་རྡེབ་བམ་དྲུད་སྒུལ་གྱི་སར་ཡི་གེའི་སྒྲོམ་ཞིག་འགོད་བྲིས་བྱ། ཡིག་ཚགས་ནང་གི་གནས་ས་གང་རུང་དུ་རྐྱང་རྡེབ་བྱ་བ་དང་དེ་རྗེས་ཡི་གེ་མཐེབ་འཇུག་དང་སྦྱར་དགོས།"
 
 #: source/text/sdraw/main0210.xhp#par_idN107C8
-msgid  "\<link href=\"text/simpress/02/10120000.xhp\" name=\"Lines and Arrows\"\>Lines and Arrows\</link\>"
+msgid  "\<link href=\\"
 msgstr ""
 
 #: source/text/sdraw/main0210.xhp#par_idN126D7
@@ -2070,7 +2079,7 @@ msgid  "Opens the Arrows toolbar to insert lines and arrows."
 msgstr ""
 
 #: source/text/sdraw/main0210.xhp#par_idN106B4
-msgid  "\<link href=\"text/shared/01/05270000.xhp\" name=\"Points\"\>Points\</link\>"
+msgid  "\<link href=\\"
 msgstr ""
 
 #: source/text/sdraw/main0210.xhp#par_idN106C3
@@ -2079,7 +2088,7 @@ msgid  "Enables you to edit points on your drawing."
 msgstr "རིས་མཚོན་བྱ་སྐབས་རྩེ་ཚེག་རྩོམ་སྒྲིག་ལ་སྤྱོད།"
 
 #: source/text/sdraw/main0210.xhp#par_idN106C8
-msgid  "\<link href=\"text/simpress/02/10030200.xhp\" name=\"Glue points\"\>Glue Points\</link\>"
+msgid  "\<link href=\\"
 msgstr ""
 
 #: source/text/sdraw/main0210.xhp#par_idN106D7
@@ -2088,15 +2097,15 @@ msgid  "Enables you to edit glue points on your drawing."
 msgstr "རིས་མཚོན་བྱ་སྐབས་སྦྱར་མདུད་ཚེག་རྩོམ་སྒྲིག་བྱ་བར་སྤྱོད།"
 
 #: source/text/sdraw/main0210.xhp#par_idN10754
-msgid  "\<link href=\"text/shared/01/04140000.xhp\" name=\"From File\"\>From File\</link\>"
+msgid  "\<link href=\\"
 msgstr ""
 
 #: source/text/sdraw/main0210.xhp#par_idN1072C
-msgid  "\<link href=\"text/shared/02/01170000.xhp\" name=\"Form Controls\"\>Form Controls\</link\>"
+msgid  "\<link href=\\"
 msgstr ""
 
 #: source/text/sdraw/main0210.xhp#par_idN1074B
-msgid  "\<link href=\"text/shared/3dsettings_toolbar.xhp\"\>Extrusion On/Off\</link\>"
+msgid  "\<link href=\\"
 msgstr ""
 
 #: source/text/sdraw/main0210.xhp#par_idN1075A
@@ -2110,7 +2119,7 @@ msgid  "Options Bar"
 msgstr "འདེམས་གཞི་ཚང་"
 
 #: source/text/sdraw/main0213.xhp#hd_id3150793.1
-msgid  "\<link href=\"text/sdraw/main0213.xhp\" name=\"Options Bar\"\>Options Bar\</link\>"
+msgid  "\<link href=\\"
 msgstr ""
 
 #: source/text/sdraw/main0213.xhp#par_id3154685.2
@@ -2118,39 +2127,39 @@ msgid  "The \<emph\>Options\</emph\> bar can be displayed by choosing \<emph\>Vi
 msgstr ""
 
 #: source/text/sdraw/main0213.xhp#hd_id3145251.3
-msgid  "\<link href=\"text/shared/02/01171200.xhp\" name=\"Display Grid\"\>Display Grid\</link\>"
+msgid  "\<link href=\\"
 msgstr ""
 
 #: source/text/sdraw/main0213.xhp#hd_id3149018.5
-msgid  "\<link href=\"text/shared/02/01171400.xhp\" name=\"Guides When Moving\"\>Guides When Moving\</link\>"
+msgid  "\<link href=\\"
 msgstr ""
 
 #: source/text/sdraw/main0213.xhp#hd_id3147338.6
-msgid  "\<link href=\"text/shared/02/01171300.xhp\" name=\"Snap to Grid\"\>Snap to Grid\</link\>"
+msgid  "\<link href=\\"
 msgstr ""
 
 #: source/text/sdraw/main0213.xhp#hd_id3146313.7
-msgid  "\<link href=\"text/simpress/02/13140000.xhp\" name=\"Snap to Guides\"\>Snap to Guides\</link\>"
+msgid  "\<link href=\\"
 msgstr ""
 
 #: source/text/sdraw/main0213.xhp#hd_id3155111.8
-msgid  "\<link href=\"text/simpress/02/13150000.xhp\" name=\"Snap to Page Margins\"\>Snap to Page Margins\</link\>"
+msgid  "\<link href=\\"
 msgstr ""
 
 #: source/text/sdraw/main0213.xhp#hd_id3150343.9
-msgid  "\<link href=\"text/simpress/02/13160000.xhp\" name=\"Snap to Object Border\"\>Snap to Object Border\</link\>"
+msgid  "\<link href=\\"
 msgstr ""
 
 #: source/text/sdraw/main0213.xhp#hd_id3150368.10
-msgid  "\<link href=\"text/simpress/02/13170000.xhp\" name=\"Snap to Object Points\"\>Snap to Object Points\</link\>"
+msgid  "\<link href=\\"
 msgstr ""
 
 #: source/text/sdraw/main0213.xhp#hd_id3146980.11
-msgid  "\<link href=\"text/simpress/02/13180000.xhp\" name=\"Allow Quick Editing\"\>Allow Quick Editing\</link\>"
+msgid  "\<link href=\\"
 msgstr ""
 
 #: source/text/sdraw/main0213.xhp#hd_id3148870.12
-msgid  "\<link href=\"text/simpress/02/13190000.xhp\" name=\"Select Text Area Only\"\>Select Text Area Only\</link\>"
+msgid  "\<link href=\\"
 msgstr ""
 
 #: source/text/sdraw/main0503.xhp#tit
@@ -2159,12 +2168,13 @@ msgid  "$[officename] Draw Features"
 msgstr "$[officename] རིས་འགོད་བཟོ་བའི་བྱེད་ནུས་"
 
 #: source/text/sdraw/main0503.xhp#hd_id3148797.1
-msgid  "\<variable id=\"main0503\"\>\<link href=\"text/sdraw/main0503.xhp\" name=\"$[officename] Draw Features\"\>$[officename] Draw Features\</link\>\</variable\>"
+msgid  "\<variable id=\\"
 msgstr ""
 
 #: source/text/sdraw/main0503.xhp#par_id3146975.2
+#, fuzzy
 msgid  "$[officename] Draw lets you create simple and complex drawings and export them in a number of common image formats. You can also insert tables, charts, formulas and other items created in $[officename] programs into your drawings."
-msgstr ""
+msgstr "$[officename] རིས་འགོད་བཟོ་བ་སྤྱད་ནས་རིས་འགོད་སྟབས་བདེའམ་ཪྙོག་འཛིན་ཅན་བཟོ་ཐུབ་ མ་ཟད་རིས་འགོད་དེ་དག་རྒྱུན་སྤྱོད་ཀྱི་པར་རིས་རྣམ་གཞག་སྒོ་ནས་འདྲེན་བཏོན་བྱེད་ཐུབ་ ད་དུང་རིས་འགོད་ནང་$[officename] བྱ་རིམ་གྱིས་གསར་འཛུགས་བྱས་པའི་རེའུ་མིག་ རིས་མཚོན་དང་སྤྱི་འགྲོས་དེ་བཞིན་རྣམ་གྲངས་གཞན་དག་བསྒར་འཛུད་བྱ་ཐུབ།"
 
 #: source/text/sdraw/main0503.xhp#hd_id3147435.11
 #, fuzzy
@@ -2172,8 +2182,9 @@ msgid  "Vector Graphics"
 msgstr "ཕྱོགས་ཚང་རིས་དབྱིབས་"
 
 #: source/text/sdraw/main0503.xhp#par_id3153142.12
+#, fuzzy
 msgid  "$[officename] Draw creates vector graphics using lines and curves defined by mathematical vectors. Vectors describe lines, ellipses, and polygons according to their geometry."
-msgstr ""
+msgstr "$[officename] རིས་འགོད་བཟོ་བས་གྲངས་རིག་ཕྱོགས་ཚང་གི་དྲང་ཐིག་དང་ཁྱོག་ཐིག་བརྒྱུད་ནས་ཕྱོགས་ཚང་རིས་དབྱིབས་གསར་འཛུགས་བྱེད་ ཕྱོགས་ཚང་ནི་རིས་དབྱིབས་ཀྱིས་དབྱིབས་རྩིས་བཟོ་ལྟར་གཞིགས་ནས་ཐིག་སྐུད་དང་འཇོང་སྒོར་མཐའ་མང་དབྱིབས་མཚན་འཇོག་བྱེད།"
 
 #: source/text/sdraw/main0503.xhp#hd_id3154320.14
 #, fuzzy
@@ -2181,8 +2192,9 @@ msgid  "Creating 3D Objects"
 msgstr "རྩ་གསུམ་བྱ་ཡུལ་བཟོ་བ་"
 
 #: source/text/sdraw/main0503.xhp#par_id3145251.15
+#, fuzzy
 msgid  "You can create simple 3D objects such as cubes, spheres, and cylinders in $[officename] Draw and even modify the light source of the objects."
-msgstr ""
+msgstr "$[officename] རིས་འགོད་བཟོ་བའི་ནང་སྟབས་བདེའི་རྩ་གསུམ་བྱ་ཡུལ་བཟོ་ཐུབ་(དཔེར་ན་ བསླངས་གཟུགས་གྲུ་བཞི་ ཟླུམ་གཟུགས་དང་ཀ་ཟླུམ་གཟུགས་)མ་ཟད་བྱ་ཡུལ་དེ་དག་གི་འོད་ཁུངས་བཟོ་བཅོས་བྱ་ཐུབ།"
 
 #: source/text/sdraw/main0503.xhp#hd_id3154491.20
 #, fuzzy
@@ -2190,8 +2202,9 @@ msgid  "Grids and Guides"
 msgstr "དྲ་རྒྱ་དང་རམ་འདེགས་ཐིག་"
 
 #: source/text/sdraw/main0503.xhp#par_id3149379.6
+#, fuzzy
 msgid  "Grids and guides provide a visual cue to help you align objects in your drawing. You can also choose to snap an object to a grid line, guide or to the edge of another object."
-msgstr ""
+msgstr "རིས་འགོད་ནང་བྱ་ཡུལ་སྙོམ་གཤིབ་བྱ་སྐབས་དྲ་རྒྱའི་ཐིག་དང་རམ་འདེགས་ཐིག་གིས་མིག་ཤེས་དྲན་བརྡ་མཁོ་སྤྲོད་བྱེད་ ཡང་ན་བྱ་ཡུལ་དང་དྲ་རྒྱའི་ཐིག་དང་རམ་འདེགས་ཐིག་གམ་བྱ་ཡུལ་གཞན་དག་གི་མཐའ་འགྲམ་དང་སྙོམ་གཤིབ་བྱ་བ་འདེམས་ཐུབ།"
 
 #: source/text/sdraw/main0503.xhp#hd_id3155601.16
 #, fuzzy
@@ -2199,8 +2212,9 @@ msgid  "Connecting Objects to Show Relationships"
 msgstr "བྱ་ཡུལ་སྦྲེལ་མཐུད་ཀྱིས་འབྲེལ་བ་མངོན་"
 
 #: source/text/sdraw/main0503.xhp#par_id3149124.17
-msgid  "You can connect objects in $[officename] Draw with special lines called "connectors" to show the relationship between objects. Connectors attach to glue points on drawing objects and remain attached when the connected objects are moved. Connectors are useful for creating organization charts and technical diagrams."
-msgstr ""
+#, fuzzy
+msgid  "You can connect objects in $[officename] Draw with special lines called \"connectors\" to show the relationship between objects. Connectors attach to glue points on drawing objects and remain attached when the connected objects are moved. Connectors are useful for creating organization charts and technical diagrams."
+msgstr "$[officename] རིས་འགོད་བཟོ་བའི་ནང་དུ་\"སྦྲེལ་མཐུད་རྟགས་\"སུ་འབོད་པའི་དམིགས་བསལ་ཐིག་སྐུད་ཅིག་སྤྱད་ནས་བྱ་ཡུལ་སྦྲེལ་ཏེ་བྱ་ཡུལ་བར་གྱི་འབྲེལ་བ་མངོན་པར་བྱ་ཐུབ། སྦྲེལ་མཐུད་རྟགས་དང་རིས་འགོད་བྱ་ཡུལ་སྟེང་གི་སྦྱར་མདུང་ཚེག་ཕན་ཚུན་སྦྲེལ་བ་དང་མ་ཟད་ཁྱེད་ཀྱིས་བྱ་ཡུལ་སྤོ་སྒུལ་བྱ་སྐབས་དེ་ལྟའི་སྦྲེལ་མཐུད་འབྲེལ་བ་སྔར་བཞིན་མི་འགྱུར་བར་རང་སོར་གནས། སྒྲིག་འཛུགས་གྲུབ་ཆའི་རི་མོ་དང་ལག་རྩལ་རིས་མཚོན་གསར་འཛུགས་བྱ་སྐབས་སྦྲེལ་མཐུད་རྟགས་ཧ་ཅང་བེད་སྤྱོད་ཆེ།"
 
 #: source/text/sdraw/main0503.xhp#hd_id3155764.21
 #, fuzzy
@@ -2208,8 +2222,9 @@ msgid  "Displaying Dimensions"
 msgstr "ཁྲེ་ཚུན་མངོན་པ་"
 
 #: source/text/sdraw/main0503.xhp#par_id3155333.22
+#, fuzzy
 msgid  "Technical diagrams often show the dimensions of objects in the drawing. In $[officename] Draw, you can use dimension lines to calculate and display linear dimensions."
-msgstr ""
+msgstr "ལག་རྩལ་རིས་མཚོན་གྱིས་རྒྱུན་པར་རིས་འགོད་ནང་བྱ་ཡུལ་གྱི་ཁྲེ་ཚུན་མངོན། $[officename] རིས་འགོད་བཟོ་བའི་ནང་ཁྱེད་ཀྱིས་ཚང་ངེས་ཐིག་སྤྱད་ནས་ཐིག་གཤིས་ཁྲེ་ཚུན་རྩིས་རྒྱག་དང་མངོན་པར་བྱ་ཐུབ།"
 
 #: source/text/sdraw/main0503.xhp#hd_id3154705.18
 #, fuzzy
@@ -2217,8 +2232,9 @@ msgid  "Gallery"
 msgstr "དྲས་སྦྱར་རི་མོ་"
 
 #: source/text/sdraw/main0503.xhp#par_id3154022.7
+#, fuzzy
 msgid  "The Gallery contains images, animations, sounds and other items that you can insert and use in your drawings as well as other $[officename] programs."
-msgstr ""
+msgstr "དྲས་སྦྱར་པར་འཛོད་ནང་བཪྙན་རིས་ འགུལ་རིས་དང་སྐད་སྒྲ་སོགས་ཀྱི་རྣམ་གྲངས་ཚུད་ རིས་འགོད་དང་ $[officename] བྱ་རིམ་གཞན་དག་ནང་རྣམ་གྲངས་དེ་དག་བསྒར་འཛུད་དང་བེད་སྤྱོད་བྱས་ཆོག"
 
 #: source/text/sdraw/main0503.xhp#hd_id3149207.19
 #, fuzzy
@@ -2226,5 +2242,6 @@ msgid  "Graphic File Formats"
 msgstr "རིས་དབྱིབས་ཡིག་ཆའི་རྣམ་གཞག་"
 
 #: source/text/sdraw/main0503.xhp#par_id3155112.5
+#, fuzzy
 msgid  "$[officename] Draw can export to many common graphic file formats, such as BMP, GIF, JPG, and PNG."
-msgstr ""
+msgstr "$[officename] རིས་འགོད་བཟོ་བས་རིས་འགོད་ཡིག་ཚགས་ཀྱིས་རྒྱུན་སྤྱོད་ཀྱི་རིས་དབྱིབས་ཡིག་ཆའི་རྣམ་གཞག་སྣ་ཚོགས་འདྲེན་བཏོན་བྱ་ཐུབ་ དཔེར་ན་ BMP GIF JPG དང་ PNG སོགས།"

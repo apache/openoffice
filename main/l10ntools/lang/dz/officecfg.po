@@ -92,8 +92,9 @@ msgid  "Dear Mr. <2>,"
 msgstr "བརྩེ་བའི་  ཕོ་སྐྱེས། <2>,"
 
 #: registry/data/org/openoffice/Office/Writer.xcu#..Writer.MailMergeWizard.NeutralGreetingLines
+#, fuzzy
 msgid  "To whom it may concern,;Dear Friends,;Dear Sir or Madam,;Hello,"
-msgstr ""
+msgstr "ག་ལུ་འབྲེལ་བ་ཡོད་རུང་ བརྩེ་བའི་ཆ་རོགས་ཚུ་ བརྩེ་བའི་སློབ་དཔོན་ ཡང་ཅིན་ བརྩེ་བའི་ཨ་མ་  ཧེ་ལོ།"
 
 #: registry/data/org/openoffice/Office/Writer.xcu#..Writer.Insert.Caption.CaptionOrderNumberingFirst
 msgid  "true"
@@ -262,102 +263,82 @@ msgid  "10"
 msgstr ""
 
 #: registry/data/org/openoffice/Office/Common.xcu#..Common.Menus.New.m0.Title
-#, fuzzy
 msgid  "~Text Document"
 msgstr "ཚིག་ཡིགཡིག་ཆ།(~T)"
 
 #: registry/data/org/openoffice/Office/Common.xcu#..Common.Menus.New.m1.Title
-#, fuzzy
 msgid  "~Spreadsheet"
 msgstr "ཤོག་ཁྲམ།(~S)"
 
 #: registry/data/org/openoffice/Office/Common.xcu#..Common.Menus.New.m2.Title
-#, fuzzy
 msgid  "~Presentation"
 msgstr "གསལ་སྟོན།(~P)"
 
 #: registry/data/org/openoffice/Office/Common.xcu#..Common.Menus.New.m3.Title
-#, fuzzy
 msgid  "~Drawing"
 msgstr "པར་རིས།(~D)"
 
 #: registry/data/org/openoffice/Office/Common.xcu#..Common.Menus.New.m4.Title
-#, fuzzy
 msgid  "Database"
 msgstr "གནད་སྡུད་གཞི་རྟེན།"
 
 #: registry/data/org/openoffice/Office/Common.xcu#..Common.Menus.New.m6.Title
-#, fuzzy
 msgid  "~HTML Document"
 msgstr "ཨེཅ་ཊི་ཨེམ་ཨེལ་ ཡིག་ཆ།(~H)"
 
 #: registry/data/org/openoffice/Office/Common.xcu#..Common.Menus.New.m7.Title
-#, fuzzy
 msgid  "~XML Form Document"
 msgstr "ཨེགསི་ཨེམ་ཨེལ་ འབྲི་ཤོག་ཡིག་ཆ།(~X)"
 
 #: registry/data/org/openoffice/Office/Common.xcu#..Common.Menus.New.m8.Title
-#, fuzzy
 msgid  "M~aster Document"
 msgstr "འབྲི་ཤོག་ཨམ།(~a)"
 
 #: registry/data/org/openoffice/Office/Common.xcu#..Common.Menus.New.m10.Title
-#, fuzzy
 msgid  "F~ormula"
 msgstr "མན་ངག(~o)"
 
 #: registry/data/org/openoffice/Office/Common.xcu#..Common.Menus.New.m11.Title
-#, fuzzy
 msgid  "~Labels"
 msgstr "ཁ་ཡིག་ཚུ།(~L)"
 
 #: registry/data/org/openoffice/Office/Common.xcu#..Common.Menus.New.m12.Title
-#, fuzzy
 msgid  "B~usiness Cards"
 msgstr "ཚོང་འབྲེལ་ཤོག་བྱང་ཚུ།(~u)"
 
 #: registry/data/org/openoffice/Office/Common.xcu#..Common.Menus.New.m14.Title
-#, fuzzy
 msgid  "Templates a~nd Documents"
 msgstr "ཊེམ་པེལེཊི་ཚུ་དང་ཡིག་ཆ་ཚུ།(~n)"
 
 #: registry/data/org/openoffice/Office/Common.xcu#..Common.Menus.Wizard.m0.Title
-#, fuzzy
 msgid  "~Letter..."
 msgstr "ཡི་གུ་་་་་་(~L)"
 
 #: registry/data/org/openoffice/Office/Common.xcu#..Common.Menus.Wizard.m1.Title
-#, fuzzy
 msgid  "~Fax..."
 msgstr "དཔར་འཕྲིན་་་་(~F)"
 
 #: registry/data/org/openoffice/Office/Common.xcu#..Common.Menus.Wizard.m2.Title
-#, fuzzy
 msgid  "~Agenda..."
 msgstr "གྲོས་གཞི་་་་་(~A)"
 
 #: registry/data/org/openoffice/Office/Common.xcu#..Common.Menus.Wizard.m5.Title
-#, fuzzy
 msgid  "~Presentation..."
 msgstr "གསལ་་སྟོན་་་་(~P)"
 
 #: registry/data/org/openoffice/Office/Common.xcu#..Common.Menus.Wizard.m7.Title
-#, fuzzy
 msgid  "~Web Page..."
 msgstr "ཝེབ་ཤོག་ལེབ་་་་་(~W)"
 
 #: registry/data/org/openoffice/Office/Common.xcu#..Common.Menus.Wizard.m11.Title
-#, fuzzy
 msgid  "Document ~Converter..."
 msgstr "ཡིག་ཆ་ སྒྱུར་བྱེད་་་་(~C)"
 
 #: registry/data/org/openoffice/Office/Common.xcu#..Common.Menus.Wizard.m12.Title
-#, fuzzy
 msgid  "~Euro Converter..."
 msgstr "ཡུ་རོ་ སྒྱུར་བྱེད་་་་(~E)"
 
 #: registry/data/org/openoffice/Office/Common.xcu#..Common.Menus.Wizard.m14.Title
-#, fuzzy
 msgid  "Address Data Source..."
 msgstr "ཁ་བྱང་གནད་སྡུད་འབྱུང་ཁུངས་་་་་"
 
@@ -5637,137 +5618,110 @@ msgid  "Notes"
 msgstr "དྲན་འཛིན་ཚུ།"
 
 #: registry/data/org/openoffice/Office/DataAccess.xcu#..DataAccess.DriverSettings.com.sun.star.comp.sdbc.MozabDriver.MozillaPreferences.PabDescription
-#, fuzzy
 msgid  "Personal Address book"
 msgstr "རང་དོན་གྱི་ ཁ་བྱང་ཀི་དེབ།"
 
 #: registry/data/org/openoffice/Office/DataAccess.xcu#..DataAccess.DriverSettings.com.sun.star.comp.sdbc.MozabDriver.MozillaPreferences.HisDescription
-#, fuzzy
 msgid  "Collected Addresses"
 msgstr "བསྡུ་ལེན་འབད་ཡོད་པའི་  ཁ་བྱང་ཚུ།"
 
 #: registry/data/org/openoffice/Office/DataAccess.xcu#..DataAccess.DriverSettings.com.sun.star.comp.sdbc.MozabDriver.ColumnAliases.FirstName
-#, fuzzy
 msgid  "First Name"
 msgstr "འགོ་མིང་།"
 
 #: registry/data/org/openoffice/Office/DataAccess.xcu#..DataAccess.DriverSettings.com.sun.star.comp.sdbc.MozabDriver.ColumnAliases.LastName
-#, fuzzy
 msgid  "Last Name"
 msgstr "མཇུག་མིང་།"
 
 #: registry/data/org/openoffice/Office/DataAccess.xcu#..DataAccess.DriverSettings.com.sun.star.comp.sdbc.MozabDriver.ColumnAliases.DisplayName
-#, fuzzy
 msgid  "Display Name"
 msgstr "མིང་ བཀྲམ་སྟོན་འབད།"
 
 #: registry/data/org/openoffice/Office/DataAccess.xcu#..DataAccess.DriverSettings.com.sun.star.comp.sdbc.MozabDriver.ColumnAliases.NickName
-#, fuzzy
 msgid  "Nickname"
 msgstr "སྐྱོན་མིང་།"
 
 #: registry/data/org/openoffice/Office/DataAccess.xcu#..DataAccess.DriverSettings.com.sun.star.comp.sdbc.MozabDriver.ColumnAliases.PrimaryEmail
-#, fuzzy
 msgid  "E-mail"
 msgstr "གློག་འཕྲིན།"
 
 #: registry/data/org/openoffice/Office/DataAccess.xcu#..DataAccess.DriverSettings.com.sun.star.comp.sdbc.MozabDriver.ColumnAliases.SecondEmail
-#, fuzzy
 msgid  "E-mail (2)"
 msgstr "གློག་འཕྲིན་(༢)།"
 
 #: registry/data/org/openoffice/Office/DataAccess.xcu#..DataAccess.DriverSettings.com.sun.star.comp.sdbc.MozabDriver.ColumnAliases.PreferMailFormat
-#, fuzzy
 msgid  "Mail Format"
 msgstr "ཡིག་འཕྲིན་ རྩ་སྒྲིག"
 
 #: registry/data/org/openoffice/Office/DataAccess.xcu#..DataAccess.DriverSettings.com.sun.star.comp.sdbc.MozabDriver.ColumnAliases.WorkPhone
-#, fuzzy
 msgid  "Phone (Work)"
 msgstr "བརྒྱུད་འཕྲིན་ (ལཱ་གཡོག)།"
 
 #: registry/data/org/openoffice/Office/DataAccess.xcu#..DataAccess.DriverSettings.com.sun.star.comp.sdbc.MozabDriver.ColumnAliases.HomePhone
-#, fuzzy
 msgid  "Phone (Home)"
 msgstr "བརྒྱུད་འཕྲིན་(ཁྱིམ་)།"
 
 #: registry/data/org/openoffice/Office/DataAccess.xcu#..DataAccess.DriverSettings.com.sun.star.comp.sdbc.MozabDriver.ColumnAliases.FaxNumber
-#, fuzzy
 msgid  "Fax"
 msgstr "དཔར་འཕྲིན།"
 
 #: registry/data/org/openoffice/Office/DataAccess.xcu#..DataAccess.DriverSettings.com.sun.star.comp.sdbc.MozabDriver.ColumnAliases.PagerNumber
-#, fuzzy
 msgid  "Pager"
 msgstr "པེ་ཇར།"
 
 #: registry/data/org/openoffice/Office/DataAccess.xcu#..DataAccess.DriverSettings.com.sun.star.comp.sdbc.MozabDriver.ColumnAliases.CellularNumber
-#, fuzzy
 msgid  "Mobile"
 msgstr "འགྲུལ་འཕྲིན།"
 
 #: registry/data/org/openoffice/Office/DataAccess.xcu#..DataAccess.DriverSettings.com.sun.star.comp.sdbc.MozabDriver.ColumnAliases.HomeAddress
-#, fuzzy
 msgid  "Address 1"
 msgstr "ཁ་བྱང་ ༡།"
 
 #: registry/data/org/openoffice/Office/DataAccess.xcu#..DataAccess.DriverSettings.com.sun.star.comp.sdbc.MozabDriver.ColumnAliases.HomeAddress2
-#, fuzzy
 msgid  "Address 2"
 msgstr "ཁ་བྱང་ ༢།"
 
 #: registry/data/org/openoffice/Office/DataAccess.xcu#..DataAccess.DriverSettings.com.sun.star.comp.sdbc.MozabDriver.ColumnAliases.HomeCity
-#, fuzzy
 msgid  "City"
 msgstr "གྲོང་སྡེ།"
 
 #: registry/data/org/openoffice/Office/DataAccess.xcu#..DataAccess.DriverSettings.com.sun.star.comp.sdbc.MozabDriver.ColumnAliases.HomeState
-#, fuzzy
 msgid  "State"
 msgstr "མངའ་སྡེ།"
 
 #: registry/data/org/openoffice/Office/DataAccess.xcu#..DataAccess.DriverSettings.com.sun.star.comp.sdbc.MozabDriver.ColumnAliases.HomeZipCode
-#, fuzzy
 msgid  "ZIP/Postal (Home)"
 msgstr "ཛེཊི་ཨའི་པི/ འགྲེམ་(ཁྱིམ་)།"
 
 #: registry/data/org/openoffice/Office/DataAccess.xcu#..DataAccess.DriverSettings.com.sun.star.comp.sdbc.MozabDriver.ColumnAliases.HomeCountry
-#, fuzzy
 msgid  "Country"
 msgstr "རྒྱལ་ཁབ།"
 
 #: registry/data/org/openoffice/Office/DataAccess.xcu#..DataAccess.DriverSettings.com.sun.star.comp.sdbc.MozabDriver.ColumnAliases.WorkAddress
-#, fuzzy
 msgid  "Work Address"
 msgstr "ལཱ་གཡོག་གི་ཁ་བྱང་།"
 
 #: registry/data/org/openoffice/Office/DataAccess.xcu#..DataAccess.DriverSettings.com.sun.star.comp.sdbc.MozabDriver.ColumnAliases.WorkAddress2
-#, fuzzy
 msgid  "Work Address 2"
 msgstr "ལཱ་གཡོག་གི་ཁ་བྱང་ ༢།"
 
 #: registry/data/org/openoffice/Office/DataAccess.xcu#..DataAccess.DriverSettings.com.sun.star.comp.sdbc.MozabDriver.ColumnAliases.WorkCity
-#, fuzzy
 msgid  "City (Work)"
 msgstr "གྲོང་སྡེ་(ལཱ་གཡོག་)།"
 
 #: registry/data/org/openoffice/Office/DataAccess.xcu#..DataAccess.DriverSettings.com.sun.star.comp.sdbc.MozabDriver.ColumnAliases.WorkState
-#, fuzzy
 msgid  "State (Work)"
 msgstr "མངའ་སྡེ་(ལཱ་གཡོག་)།"
 
 #: registry/data/org/openoffice/Office/DataAccess.xcu#..DataAccess.DriverSettings.com.sun.star.comp.sdbc.MozabDriver.ColumnAliases.WorkZipCode
-#, fuzzy
 msgid  "Zip/Postal (Work)"
 msgstr "ཛེཊི་ཨའི་པི་/འགྲེམ་(ལཱ་གཡོག་)།"
 
 #: registry/data/org/openoffice/Office/DataAccess.xcu#..DataAccess.DriverSettings.com.sun.star.comp.sdbc.MozabDriver.ColumnAliases.WorkCountry
-#, fuzzy
 msgid  "Country (Work)"
 msgstr "རྒྱལ་ཁབ་(ལཱ་གཡོག་)།"
 
 #: registry/data/org/openoffice/Office/DataAccess.xcu#..DataAccess.DriverSettings.com.sun.star.comp.sdbc.MozabDriver.ColumnAliases.JobTitle
-#, fuzzy
 msgid  "Job Title"
 msgstr "ལས་གཡོག་གི་གོ་གནས།"
 
@@ -6232,27 +6186,22 @@ msgid  "All files"
 msgstr "ཡིག་སྣོད་ཚུ་ཆ་མཉམ།"
 
 #: registry/data/org/openoffice/Office/UI/BasicIDEWindowState.xcu#..BasicIDEWindowState.UIElements.States.private:resource/toolbar/standardbar.UIName
-#, fuzzy
 msgid  "Standard"
 msgstr "ཚད་ལྡན།"
 
 #: registry/data/org/openoffice/Office/UI/BasicIDEWindowState.xcu#..BasicIDEWindowState.UIElements.States.private:resource/toolbar/macrobar.UIName
-#, fuzzy
 msgid  "Macro"
 msgstr "མེཀ་རོ།"
 
 #: registry/data/org/openoffice/Office/UI/BasicIDEWindowState.xcu#..BasicIDEWindowState.UIElements.States.private:resource/toolbar/dialogbar.UIName
-#, fuzzy
 msgid  "Dialog"
 msgstr "ཌའི་ལོག"
 
 #: registry/data/org/openoffice/Office/UI/BasicIDEWindowState.xcu#..BasicIDEWindowState.UIElements.States.private:resource/toolbar/translationbar.UIName
-#, fuzzy
 msgid  "Language"
 msgstr "སྐད་ཡིག"
 
 #: registry/data/org/openoffice/Office/UI/BasicIDEWindowState.xcu#..BasicIDEWindowState.UIElements.States.private:resource/toolbar/insertcontrolsbar.UIName
-#, fuzzy
 msgid  "Toolbox"
 msgstr "ལག་ཆས་སྒྲོམ།"
 
@@ -12544,27 +12493,22 @@ msgid  "Controls"
 msgstr "ཚད་འཛིན་འབདཝ་ཨིན།"
 
 #: registry/data/org/openoffice/Office/UI/BaseWindowState.xcu#..BaseWindowState.UIElements.States.private:resource/toolbar/tableobjectbar.UIName
-#, fuzzy
 msgid  "Table"
 msgstr "ཐིག་ཁྲམ།"
 
 #: registry/data/org/openoffice/Office/UI/BaseWindowState.xcu#..BaseWindowState.UIElements.States.private:resource/toolbar/queryobjectbar.UIName
-#, fuzzy
 msgid  "Query"
 msgstr "དྲིས་དཔྱད།"
 
 #: registry/data/org/openoffice/Office/UI/BaseWindowState.xcu#..BaseWindowState.UIElements.States.private:resource/toolbar/reportobjectbar.UIName
-#, fuzzy
 msgid  "Report"
 msgstr "སྙན་ཞུ།"
 
 #: registry/data/org/openoffice/Office/UI/BaseWindowState.xcu#..BaseWindowState.UIElements.States.private:resource/toolbar/formobjectbar.UIName
-#, fuzzy
 msgid  "Form"
 msgstr "འབྲི་ཤོག།"
 
 #: registry/data/org/openoffice/Office/UI/BaseWindowState.xcu#..BaseWindowState.UIElements.States.private:resource/toolbar/toolbar.UIName
-#, fuzzy
 msgid  "Standard"
 msgstr "ཚད་ལྡན།"
 
@@ -17887,8 +17831,9 @@ msgid  "Flower"
 msgstr "མེ་ཏོག"
 
 #: registry/data/org/openoffice/Office/UI/GenericCommands.xcu#..GenericCommands.UserInterface.Commands..uno:SymbolShapes.forbidden.Label
-msgid  ""Prohibited" Symbol"
-msgstr ""
+#, fuzzy
+msgid  "\"Prohibited\" Symbol"
+msgstr "\"Prohibited\" བརྡ་མཚོན།"
 
 #: registry/data/org/openoffice/Office/UI/GenericCommands.xcu#..GenericCommands.UserInterface.Commands..uno:SymbolShapes.heart.Label
 #, fuzzy

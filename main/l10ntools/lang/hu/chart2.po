@@ -39,6 +39,10 @@ msgstr "Címek, jelmagyarázat és rács beállítása"
 msgid  "Display grids"
 msgstr "Rács megjelenése"
 
+#: source/controller/dialogs/tp_3D_SceneGeometry.src#CUSTOMUNITTEXT_DEGREE.#define.CustomUnitText
+msgid  " degrees"
+msgstr " fok"
+
 #: source/controller/dialogs/tp_3D_SceneGeometry.src#TP_3D_SCENEGEOMETRY.CBX_RIGHT_ANGLED_AXES.CheckBox.Text
 msgid  "~Right-angled axes"
 msgstr "~Derékszögű tengelyek"
@@ -58,10 +62,6 @@ msgstr "~Z elforgatás"
 #: source/controller/dialogs/tp_3D_SceneGeometry.src#TP_3D_SCENEGEOMETRY.CBX_PERSPECTIVE.CheckBox.Text
 msgid  "~Perspective"
 msgstr "~Perspektíva"
-
-#: source/controller/dialogs/tp_3D_SceneGeometry.src#CUSTOMUNITTEXT_DEGREE.#define.CustomUnitText
-msgid  " degrees"
-msgstr " fok"
 
 #: source/controller/dialogs/Strings_AdditionalControls.src#STR_3DSCHEME_SIMPLE.String.Text
 msgid  "Simple"
@@ -261,19 +261,19 @@ msgstr "A fő intervallumnak pozitívnak kell lennie. Ellenőrizze a bemenetet."
 
 #: source/controller/dialogs/Strings_Scale.src#STR_BAD_LOGARITHM.String.Text
 msgid  "The logarithmic scale requires positive numbers. Check your input."
-msgstr ""
+msgstr "A logaritmikus skálához pozitív számok szükségesek. Ellenőrizze a bemenetet."
 
 #: source/controller/dialogs/Strings_Scale.src#STR_MIN_GREATER_MAX.String.Text
 msgid  "The minimum must be lower than the maximum. Check your input."
-msgstr ""
+msgstr "A minimumnak kisebbnek kell lennie a maximumnál. Ellenőrizze a bemenetet."
 
 #: source/controller/dialogs/Strings_Scale.src#STR_INVALID_INTERVALS.String.Text
 msgid  "The major interval needs to be greater than the minor interval. Check your input."
-msgstr ""
+msgstr "A fő intervallumnak nagyobbnak kell lennie mint az altintervallumnak. Ellenőrizze a bemenetet. "
 
 #: source/controller/dialogs/Strings_Scale.src#STR_INVALID_TIME_UNIT.String.Text
 msgid  "The major and minor interval need to be greater or equal to the resolution. Check your input."
-msgstr ""
+msgstr "A fő és altintervallumnak nagyobbnak kell lennie mint a felbontásnak. Ellenőrizze a bemenetet. "
 
 #: source/controller/dialogs/dlg_DataEditor.src#DLG_DIAGRAM_DATA.ModalDialog.Text
 msgid  "Data Table"
@@ -889,7 +889,7 @@ msgstr "Ázsiai tipográfia"
 
 #: source/controller/dialogs/Strings.src#STR_OBJECT_AVERAGE_LINE_WITH_PARAMETERS.String.Text
 msgid  "Mean value line with value %AVERAGE_VALUE and standard deviation %STD_DEVIATION"
-msgstr ""
+msgstr "Átlagértékvonal %AVERAGE_VALUE értékkel és %STD_DEVIATION szórással"
 
 #: source/controller/dialogs/Strings.src#STR_OBJECT_AXIS.String.Text
 msgid  "Axis"
@@ -1097,11 +1097,11 @@ msgstr "Értékek: %POINTVALUES"
 
 #: source/controller/dialogs/Strings.src#STR_TIP_DATAPOINT.String.Text
 msgid  "Data Point %POINTNUMBER, data series %SERIESNUMBER, values: %POINTVALUES"
-msgstr ""
+msgstr "Adatpont: %POINTNUMBER, adatsor: %SERIESNUMBER, érték: %POINTVALUES"
 
 #: source/controller/dialogs/Strings.src#STR_STATUS_DATAPOINT_MARKED.String.Text
 msgid  "Data point %POINTNUMBER in data series %SERIESNUMBER selected, values: %POINTVALUES"
-msgstr ""
+msgstr "A(z) %SERIESNUMBER számú adatsorból a(z) %POINTNUMBER adatpont kijelölve, érték: %POINTVALUES"
 
 #: source/controller/dialogs/Strings.src#STR_STATUS_OBJECT_MARKED.String.Text
 msgid  "%OBJECTNAME selected"
@@ -1257,7 +1257,7 @@ msgstr "Válasszon tartományt a negatív hibasávokhoz"
 
 #: source/controller/dialogs/Strings.src#STR_DATA_EDITOR_INCORRECT_INPUT.String.Text
 msgid  "Your last input is incorrect.\nIgnore this change and close the dialog?"
-msgstr ""
+msgstr "Az utoljára megadott adata helytelen.\nElveti ezt a módosítást és bezárja a párbeszédablakot?"
 
 #: source/controller/dialogs/Strings.src#STR_TEXT_DIRECTION_LTR.String.Text
 msgid  "Left-to-right"

@@ -72,8 +72,9 @@ msgid  "The name '#1' already exists and can not be asssigned again."
 msgstr "The name '#1' already exists and can not be assigned again."
 
 #: source/core/resource/strings.src#RID_STR_ERROR_WRONG_ARGUMENT.String.Text
+#, fuzzy
 msgid  "You tried to set an illegal argument. Please have a look at '#1' for valid arguments."
-msgstr ""
+msgstr "You tried to set an illegal argument. Please have a look at '#1' for valid arguments."
 
 #: source/core/resource/strings.src#RID_STR_ARGUMENT_IS_NULL.String.Text
 #, fuzzy
@@ -167,6 +168,11 @@ msgstr "Group Header"
 
 #: source/ui/dlg/GroupsSorting.src#RID_GROUPS_SORTING.LST_HEADERLST.Default.StringList.item
 #, fuzzy
+msgid  "Present"
+msgstr "Present"
+
+#: source/ui/dlg/GroupsSorting.src#RID_GROUPS_SORTING.LST_HEADERLST.Default.StringList.item
+#, fuzzy
 msgid  "Not present"
 msgstr "Not present"
 
@@ -174,6 +180,11 @@ msgstr "Not present"
 #, fuzzy
 msgid  "Group Footer"
 msgstr "Group Footer"
+
+#: source/ui/dlg/GroupsSorting.src#RID_GROUPS_SORTING.LST_FOOTERLST.Default.StringList.item
+#, fuzzy
+msgid  "Present"
+msgstr "Present"
 
 #: source/ui/dlg/GroupsSorting.src#RID_GROUPS_SORTING.LST_FOOTERLST.Default.StringList.item
 #, fuzzy
@@ -306,18 +317,9 @@ msgid  "Keep group together on one page?"
 msgstr "Keep group together on one page?"
 
 #: source/ui/dlg/GroupsSorting.src#STR_RPT_HELP_SORT.String.Text
+#, fuzzy
 msgid  "Select ascending or descending sort order. Ascending means from A to Z or 0 to 9"
-msgstr ""
-
-#: source/ui/dlg/GroupsSorting.src#RID_GROUPS_SORTING.LST_HEADERLST.Default.StringList.item
-#, fuzzy
-msgid  "Present"
-msgstr "Present"
-
-#: source/ui/dlg/GroupsSorting.src#RID_GROUPS_SORTING.LST_FOOTERLST.Default.StringList.item
-#, fuzzy
-msgid  "Present"
-msgstr "Present"
+msgstr "Select ascending or descending sort order. Ascending means from A to Z or 0 to 9"
 
 #: source/ui/dlg/PageNumber.src#RID_PAGENUMBERS.ModalDialog.Text
 #, fuzzy
@@ -366,6 +368,16 @@ msgstr "Alignment:"
 
 #: source/ui/dlg/PageNumber.src#RID_PAGENUMBERS.LST_ALIGNMENT.Default.StringList.item
 #, fuzzy
+msgid  "Left"
+msgstr "Left"
+
+#: source/ui/dlg/PageNumber.src#RID_PAGENUMBERS.LST_ALIGNMENT.Default.StringList.item
+#, fuzzy
+msgid  "Center"
+msgstr "Centre"
+
+#: source/ui/dlg/PageNumber.src#RID_PAGENUMBERS.LST_ALIGNMENT.Default.StringList.item
+#, fuzzy
 msgid  "Right"
 msgstr "Right"
 
@@ -380,22 +392,14 @@ msgid  "~Help"
 msgstr "~Help"
 
 #: source/ui/dlg/PageNumber.src#STR_RPT_PN_PAGE.String.Text
-msgid  ""Page " & #PAGENUMBER#"
-msgstr ""
+#, fuzzy
+msgid  "\"Page \" & #PAGENUMBER#"
+msgstr "\"Page \" & #PAGENUMBER#"
 
 #: source/ui/dlg/PageNumber.src#STR_RPT_PN_PAGE_OF.String.Text
-msgid  " & " of " & #PAGECOUNT#"
-msgstr ""
-
-#: source/ui/dlg/PageNumber.src#RID_PAGENUMBERS.LST_ALIGNMENT.Default.StringList.item
 #, fuzzy
-msgid  "Left"
-msgstr "Left"
-
-#: source/ui/dlg/PageNumber.src#RID_PAGENUMBERS.LST_ALIGNMENT.Default.StringList.item
-#, fuzzy
-msgid  "Center"
-msgstr "Centre"
+msgid  " & \" of \" & #PAGECOUNT#"
+msgstr " & \" of \" & #PAGECOUNT#"
 
 #: source/ui/dlg/dlgpage.src#RID_PAGEDIALOG_PAGE.TabDialog.Text
 #, fuzzy
@@ -559,6 +563,11 @@ msgstr "Properties..."
 
 #: source/ui/dlg/CondFormat.src#WIN_CONDITION.LB_COND_TYPE.Default.StringList.item
 #, fuzzy
+msgid  "Field Value Is"
+msgstr "Field Value Is"
+
+#: source/ui/dlg/CondFormat.src#WIN_CONDITION.LB_COND_TYPE.Default.StringList.item
+#, fuzzy
 msgid  "Expression Is"
 msgstr "Expression Is"
 
@@ -673,13 +682,9 @@ msgid  "Help"
 msgstr "Help"
 
 #: source/ui/dlg/CondFormat.src#ADDFIELD_HELP_FIELD.FixedText.Text
-msgid  "Highlight the fields to insert into the selected section of the template, then click Insert or press Enter."
-msgstr ""
-
-#: source/ui/dlg/CondFormat.src#WIN_CONDITION.LB_COND_TYPE.Default.StringList.item
 #, fuzzy
-msgid  "Field Value Is"
-msgstr "Field Value Is"
+msgid  "Highlight the fields to insert into the selected section of the template, then click Insert or press Enter."
+msgstr "Highlight the fields to insert into the selected section of the template, then click Insert or press Enter."
 
 #: source/ui/dlg/DateTime.src#RID_DATETIME_DLG.ModalDialog.Text
 #, fuzzy
@@ -1027,8 +1032,9 @@ msgid  "Link slave fields"
 msgstr "Link slave fields"
 
 #: source/ui/inspection/inspection.src#RID_STR_EXPLANATION.String.Text
+#, fuzzy
 msgid  "Charts can be used to display detailed data about the current record of the report. To do this, you can specify which columns in the chart match which columns in the report."
-msgstr ""
+msgstr "Charts can be used to display detailed data about the current record of the report. To do this, you can specify which columns in the chart match which columns in the report."
 
 #: source/ui/inspection/inspection.src#RID_STR_DETAILLABEL.String.Text
 #, fuzzy
@@ -1536,18 +1542,14 @@ msgid  "The report can not be executed unless it is bound to content."
 msgstr "The report can not be executed unless it is bound to content."
 
 #: source/ui/report/report.src#RID_ERR_NO_OBJECTS.String.Text
+#, fuzzy
 msgid  "The report can not be executed unless at least one object has been inserted."
-msgstr ""
+msgstr "The report can not be executed unless at least one object has been inserted."
 
 #: source/ui/report/report.src#RID_STR_UNDO_SHRINK.String.Text
 #, fuzzy
 msgid  "Shrink Section"
 msgstr "Shrink Section"
-
-#: source/ui/report/report.src#RID_STR_INSERT.String.Text
-#, fuzzy
-msgid  "Insert"
-msgstr "Insert"
 
 #: source/ui/report/report.src#RID_STR_DETAIL.String.Text
 #, fuzzy
@@ -1573,3 +1575,8 @@ msgstr "Report Header"
 #, fuzzy
 msgid  "Report Footer"
 msgstr "Report Footer"
+
+#: source/ui/report/report.src#RID_STR_INSERT.String.Text
+#, fuzzy
+msgid  "Insert"
+msgstr "Insert"

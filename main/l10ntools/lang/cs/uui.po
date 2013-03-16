@@ -85,7 +85,7 @@ msgstr "Zadat heslo"
 
 #: source/passworddlg.src#DLG_UUI_PASSWORD.STR_PASSWORD_MISMATCH.String.Text
 msgid  "The confirmation password did not match the password. Set the password again by entering the same password in both boxes."
-msgstr ""
+msgstr "Potvrzení hesla je jiné než heslo. Zadejte do obou polí stejné heslo."
 
 #: source/trylater.src#STR_TRYLATER_TITLE.String.Text
 msgid  "Document in Use"
@@ -93,7 +93,7 @@ msgstr "Dokument je používán"
 
 #: source/trylater.src#STR_TRYLATER_MSG.String.Text
 msgid  "Document file '$(ARG1)' is locked for editing by:\n\n$(ARG2)\n\nTry again later to save document or save a copy of that document.\n\n"
-msgstr ""
+msgstr "Dokument '$(ARG1)' je zamčen pro úpravy uživatelem:\n\n$(ARG2)\n\nZkuste dokument uložit později nebo uložte kopii dokumentu.\n\n"
 
 #: source/trylater.src#STR_TRYLATER_RETRYSAVING_BTN.String.Text
 msgid  "~Retry Saving"
@@ -137,7 +137,7 @@ msgstr "Cíl již existuje."
 
 #: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_IO_MODULESIZEEXCEEDED & ERRCODE_RES_MASK).String.Text
 msgid  "You are about to save/export a password protected basic library containing module(s) \n$(ARG1)\nwhich are too large to store in binary format. If you wish users that don't have access to the library password to be able to run macros in those module(s) you must split those modules into a number of smaller modules. Do you wish to continue to save/export this library?"
-msgstr ""
+msgstr "Chystáte se uložit/exportovat knihovnu chráněnou heslem, která obsahuje modul(y)\n$(ARG1)\nTyto jsou příliš velké pro uložení v binárním formátu. Pokud nechcete, aby makra z tohoto modulu nemohli spouštět uživatelé, kteří neznají heslo, musíte jej rozdělit na několik menších modulu. Chcete pokračovat v uložení/exportu této knihovny?"
 
 #: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_IO_BADCRC & ERRCODE_RES_MASK).String.Text
 msgid  "The data from $(ARG1) has an incorrect checksum."
@@ -241,15 +241,15 @@ msgstr "Na zařízení $(ARG1) již není volné místo."
 
 #: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_IO_TOOMANYOPENFILES & ERRCODE_RES_MASK).String.Text
 msgid  "The operation on $(ARG1) cannot be performed because too many files are already open."
-msgstr ""
+msgstr "Operaci na $(ARG1) nelze provést, protože je již otevřeno příliš mnoho souborů."
 
 #: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_IO_OUTOFMEMORY & ERRCODE_RES_MASK).String.Text
 msgid  "The operation on $(ARG1) cannot be performed because there is no more memory available."
-msgstr ""
+msgstr "Operaci na $(ARG1) nelze provést, protože již není dostupná žádná paměť."
 
 #: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_IO_PENDING & ERRCODE_RES_MASK).String.Text
 msgid  "The operation on $(ARG1) cannot continue because more data is pending."
-msgstr ""
+msgstr "Operace na $(ARG1) nemůže pokračovat, protože data ještě čekají na zpracování."
 
 #: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_IO_RECURSIVE & ERRCODE_RES_MASK).String.Text
 msgid  "$(ARG1) cannot be copied into itself."
@@ -289,11 +289,11 @@ msgstr "Nainstalovaná verze Javy $(ARG1) není podporována."
 
 #: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_WRONGJAVA_MIN & ERRCODE_RES_MASK).String.Text
 msgid  "The installed Java version is not supported, at least version $(ARG1) is required."
-msgstr ""
+msgstr "Nainstalovaná verze Javy není podporována, je vyžadována nejméně verze $(ARG1)."
 
 #: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_WRONGJAVA_VERSION_MIN & ERRCODE_RES_MASK).String.Text
 msgid  "The installed Java version $(ARG1) is not supported, at least version $(ARG2) is required."
-msgstr ""
+msgstr "Nainstalovaná verze Javy $(ARG1) není podporována, je vyžadována nejméně verze $(ARG2)."
 
 #: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_BADPARTNERSHIP & ERRCODE_RES_MASK).String.Text
 msgid  "The data associated with the partnership is corrupted."
@@ -325,31 +325,31 @@ msgstr "Nelze vytvořit objekt v adresáři $(ARG1)."
 
 #: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_IO_UNSUPPORTEDOVERWRITE & ERRCODE_RES_MASK).String.Text
 msgid  "%PRODUCTNAME cannot keep files from being overwritten when this transmission protocol is used. Do you want to continue anyway?"
-msgstr ""
+msgstr "%PRODUCTNAME při použití tohoto přenosového protokolu nemůže ochránit soubory před přepsáním. Chcete i přesto pokračovat?"
 
 #: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_IO_BROKENPACKAGE & ERRCODE_RES_MASK).String.Text
 msgid  "The file '$(ARG1)' is corrupt and therefore cannot be opened. %PRODUCTNAME can try to repair the file.\n\nThe corruption could be the result of document manipulation or of structural document damage due to data transmission.\n\nWe recommend that you do not trust the content of the repaired document.\nExecution of macros is disabled for this document.\n\nShould %PRODUCTNAME repair the file?\n"
-msgstr ""
+msgstr "Soubor '$(ARG1)' je poškozen, a proto nemůže být otevřen. %PRODUCTNAME se může pokusit soubor opravit.\n\nPoškození může být následkem manipulace s dokumentem nebo poškozením při přenosu.\n\nDoporučujeme obsahu opraveného souboru nevěřit.\nPro tento dokument je zákázáno spouštění maker.\n\nMá %PRODUCTNAME opravit tento soubor?\n"
 
 #: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_IO_BROKENPACKAGE_CANTREPAIR & ERRCODE_RES_MASK).String.Text
 msgid  "The file '$(ARG1)' could not be repaired and therefore cannot be opened."
-msgstr ""
+msgstr "Soubor '$(ARG1)' není možné opravit, a proto nemůže být ani otevřen."
 
 #: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_CONFIGURATION_BROKENDATA_NOREMOVE & ERRCODE_RES_MASK).String.Text
 msgid  "Configuration data in '$(ARG1)' is corrupted. Without this data some functions may not operate correctly.\nDo you want to continue startup of %PRODUCTNAME without the corrupted configuration data?"
-msgstr ""
+msgstr "Konfigurační zdroj dat '$(ARG1)' je poškozen. Bez těchto údajů nebudou některé funkce pracovat správně.\nChcete pokračovat ve spouštění %PRODUCTNAME bez poškozených konfiguračních údajů?"
 
 #: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_CONFIGURATION_BROKENDATA_WITHREMOVE & ERRCODE_RES_MASK).String.Text
 msgid  "The personal configuration file '$(ARG1)' is corrupted and must be deleted to continue. Some of your personal settings may be lost.\nDo you want to continue startup of %PRODUCTNAME without the corrupted configuration data?"
-msgstr ""
+msgstr "Osobní konfigurační soubor '$(ARG1)' je poškozen a musí být před pokračováním odstraněn. Některá vaše nastavení mohou být ztracena.\nChcete pokračovat ve spouštění %PRODUCTNAME bez poškozených konfiguračních údajů?"
 
 #: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_CONFIGURATION_BACKENDMISSING & ERRCODE_RES_MASK).String.Text
 msgid  "The configuration data source '$(ARG1)' is unavailable. Without this data some functions may not operate correctly."
-msgstr ""
+msgstr "Konfigurační zdroj dat '$(ARG1)' je nedostupný. Bez těchto údajů nebudou některé funkce pracovat správně."
 
 #: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_CONFIGURATION_BACKENDMISSING_WITHRECOVER & ERRCODE_RES_MASK).String.Text
 msgid  "The configuration data source '$(ARG1)' is unavailable. Without this data some functions may not operate correctly.\nDo you want to continue startup of %PRODUCTNAME without the missing configuration data?"
-msgstr ""
+msgstr "Konfigurační zdroj dat '$(ARG1)' je nedostupný. Bez těchto údajů nebudou některé funkce pracovat správně.\nChcete pokračovat ve spouštění %PRODUCTNAME bez chybějících konfiguračních údajů?"
 
 #: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_INVALID_XFORMS_SUBMISSION_DATA & ERRCODE_RES_MASK).STRING.Text
 msgid  "The form contains invalid data. Do you still want to continue?"
@@ -357,11 +357,11 @@ msgstr "Formulář obsahuje neplatná data. Chcete stále pokračovat?"
 
 #: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_LOCKING_LOCKED & ERRCODE_RES_MASK).String.Text
 msgid  "The file $(ARG1) is locked by another user. Currently, another write access to this file cannot be granted."
-msgstr ""
+msgstr "Soubor $(ARG1) má uzamčen jiný uživatel. Nikdo další momentálně nemůže otevřít soubor pro zápis."
 
 #: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_LOCKING_LOCKED_SELF & ERRCODE_RES_MASK).String.Text
 msgid  "The file $(ARG1) is locked by yourself. Currently, another write access to this file cannot be granted."
-msgstr ""
+msgstr "Soubor $(ARG1) máte uzamčen pro sebe. Nikdo další momentálně nemůže otevřít soubor pro zápis."
 
 #: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_LOCKING_NOT_LOCKED & ERRCODE_RES_MASK).String.Text
 msgid  "The file $(ARG1) is currently not locked by yourself."
@@ -369,23 +369,23 @@ msgstr "Soubor $(ARG1) momentálně nemáte uzamčen."
 
 #: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_LOCKING_LOCK_EXPIRED & ERRCODE_RES_MASK).String.Text
 msgid  "The previously obtained lock for file $(ARG1) has expired.\nThis can happen due to problems on the server managing the file lock. It cannot be guaranteed that write operations on this file will not overwrite changes done by other users!"
-msgstr ""
+msgstr "Dříve získaný zámek pro soubor $(ARG1) již vypršel.\nMohlo dojít k problému na serveru, který spravuje zámky souborů. Nelze zaručit, že zápis do tohoto souboru nepřepíše změny provedené dalšími uživateli!"
 
 #: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_UNKNOWNAUTH_UNTRUSTED).STRING.Text
 msgid  "Unable to verify the identity of $(ARG1) site.\n\nBefore accepting this certificate, you should examine this site's certificate carefully. Are you willing to accept this certificate for the purpose of identifying the Web site $(ARG1)?"
-msgstr ""
+msgstr "Nelze ověřit identitu $(ARG1).\n\nNež certifikát přijmete, měli byste je důkladně prověřit. Opravdu chcete přijmout tento certifikát pro identifikaci webové stránky $(ARG1)?"
 
 #: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_SSLWARN_EXPIRED_1).STRING.Text
 msgid  "$(ARG1) is a site that uses a security certificate to encrypt data during transmission, but its certificate expired on $(ARG2).\n\nYou should check to make sure that your computer's time is correct."
-msgstr ""
+msgstr "$(ARG1) je stránka, která k zabezpečení dat během přenosu používá bezpečnostní certifikát, ale jeho platnost vypršela $(ARG2).\n\nUjistěte se, zda máte správně nastaven systémový čas."
 
 #: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_SSLWARN_DOMAINMISMATCH_1).STRING.Text
 msgid  "You have attempted to establish a connection with $(ARG1). However, the security certificate presented belongs to $(ARG2). It is possible, though unlikely, that someone may be trying to intercept your communication with this web site.\n\nIf you suspect the certificate shown does not belong to $(ARG1), please cancel the connection and notify the site administrator.\n\nWould you like to continue anyway?"
-msgstr ""
+msgstr "Pokoušíte se připojit k $(ARG1). Bezpečnostní certifikát ovšem patří $(ARG2). Je možné, ale nepravděpodobné, že se někdo snaží odposlechnout vaši komunikaci s touto webovou stránkou.\n\nPokud máte podezření, že certifikát nepatří $(ARG1), přerušte spojení a upozorněte administrátora webu.\n\nChcete pokračovat?"
 
 #: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_SSLWARN_INVALID_1).STRING.Text
 msgid  "The certificate could not be validated. You should examine this site's certificate carefully.\n\nIf you suspect the certificate shown, please cancel the connection and notify the site administrator."
-msgstr ""
+msgstr "Nelze ověřit certifikát. Důkladne prozkoumejte certifikát tohoto webu.\n\nPokud máte o zobrazeném certifikátu pochybnosti, přerušte spojení a upozorněte správce webu."
 
 #: source/ids.src#RID_UUI_ERRHDL.(TITLE_UUI_SSLWARN_DOMAINMISMATCH).STRING.Text
 msgid  "Security Warning: Domain Name Mismatch"
@@ -413,11 +413,11 @@ msgstr "Hlášení serveru:"
 
 #: source/logindlg.src#DLG_UUI_LOGIN.FT_INFO_LOGIN_REQUEST.FixedText.Text
 msgid  "Enter user name and password for: \n%1"
-msgstr ""
+msgstr "Zadejte uživatelské jméno a heslo pro:\n%1"
 
 #: source/logindlg.src#DLG_UUI_LOGIN.STR_LOGIN_REALM.String.Text
-msgid  "Enter user name and password for: \n"%2" on %1"
-msgstr ""
+msgid  "Enter user name and password for: \n\"%2\" on %1"
+msgstr "Zadejte uživatelské jméno a heslo pro:\n\"%2\" na %1"
 
 #: source/logindlg.src#DLG_UUI_LOGIN.FT_LOGIN_PATH.FixedText.Text
 msgid  "~Path"
@@ -469,7 +469,7 @@ msgstr "Odeslat"
 
 #: source/cookiedg.src#STR_COOKIES_RECV_START.String.Text
 msgid  "The '${HOST}' server wishes to set one or more cookies.\nCookies contain information referring to certain URL classes. If %PRODUCTNAME later requests a document with a URL corresponding to the class of a previously set cookie, %PRODUCTNAME will send this information to the server. This allows a server to recognize the status of a WWW application, e.g., when shopping online.\n\nThe following Cookies should be set:\n\n"
-msgstr ""
+msgstr "Server '${HOST}' si přeje nastavit jednu či více cookies.\nCookies obsahují informace vztahující se k určitým třídám URL. Pokud se později %PRODUCTNAME dotáže na dokument s URL, které souhlasí se třídou dříve nastavené cookie, %PRODUCTNAME odešle tuto informaci na server. Toto umožňuje webovému serveru rozpoznat stav webové aplikace, například při online nákupech.\n\nBudou nastaveny tyto cookies:\n\n"
 
 #: source/cookiedg.src#STR_COOKIES_RECV_COOKIES.String.Text
 msgid  "Domain: ${DOMAIN}, Path: ${PATH}, Cookie: ${COOKIE}.\n"
@@ -481,7 +481,7 @@ msgstr "Příjem cookie"
 
 #: source/cookiedg.src#STR_COOKIES_SEND_START.String.Text
 msgid  "%PRODUCTNAME has saved cookies for the server '${HOST}' which will be sent when requesting the document ${PATH}.\nCookies contain information which refers to certain URL classes. They are sent by some servers to %PRODUCTNAME where they are saved when certain documents are accessed. If %PRODUCTNAME loads a document that, according to the URL, corresponds to a class of one of the previously received Cookies, %PRODUCTNAME will send this information to that server. This enables a server to keep track of the status of a WWW application, e.g., when shopping online.\n\nThe following Cookies should be set:\n\n"
-msgstr ""
+msgstr "%PRODUCTNAME uložil cookies pro server '${HOST}', které budou odeslány při požadavku na dokument ${PATH}.\nCookies obsahují informace, které se vztahují k určitým třídám URL. Jsou odesílány do programu %PRODUCTNAME, kde jsou uloženy, je-li přistupováno k určitým dokumentům. Když %PRODUCTNAME načítá dokument, jehož URL se shoduje s třídou dříve přijaté cookie, odešle se tato informace na tento server. To umožňuje udržovat stav webové aplikace, například při online nakupování.\n\nMají být nastaveny tyto cookies:\n\n"
 
 #: source/cookiedg.src#STR_COOKIES_SEND_COOKIES.String.Text
 msgid  "Domain: ${DOMAIN}, Path: ${PATH}, Cookie: ${COOKIE}.\n"
@@ -529,7 +529,7 @@ msgstr "Dokument je používán"
 
 #: source/openlocked.src#STR_OPENLOCKED_MSG.String.Text
 msgid  "Document file '$(ARG1)' is locked for editing by:\n\n$(ARG2)\n\nOpen document read-only or open a copy of the document for editing.\n\n"
-msgstr ""
+msgstr "Dokument '$(ARG1)' je zamčen pro úpravy uživatelem:\n\n$(ARG2)\n\nOtevřete dokument pouze pro čtení nebo si jej zkopírujte.\n\n"
 
 #: source/openlocked.src#STR_OPENLOCKED_OPENREADONLY_BTN.String.Text
 msgid  "Open ~Read-Only"
@@ -549,7 +549,7 @@ msgstr "Dokument byl někým upraven"
 
 #: source/filechanged.src#STR_FILECHANGED_MSG.String.Text
 msgid  "The file has been changed since it was opened for editing in %PRODUCTNAME. Saving your version of the document will overwrite changes made by others.\n\nDo you want to save anyway?\n\n"
-msgstr ""
+msgstr "Od otevření v %PRODUCTNAME byl soubor změněn. Uložením své verze můžete přepsat změny jiných uživatelů.\n\nChcete soubor uložit?\n\n"
 
 #: source/filechanged.src#STR_FILECHANGED_SAVEANYWAY_BTN.String.Text
 msgid  "~Save Anyway"
@@ -561,7 +561,7 @@ msgstr "Aktualizace %PRODUCTNAME k dispozici"
 
 #: source/newerverwarn.src#RID_DLG_NEWER_VERSION_WARNING.FT_INFO.FixedText.Text
 msgid  "This document was created by a newer version of %PRODUCTNAME. It may contain features not supported by your current version.\n\nClick 'Update Now...' to run online update and get the latest version of %PRODUCTNAME."
-msgstr ""
+msgstr "Tento dokument byl vytvořen v novější verzi %PRODUCTNAME. Může obsahovat vlastnosti, které vaše aktuální verze nepodporuje.\n\nKlepnutím na tlačítko 'Aktualizovat nyní...' spustíte online aktualizaci a získáte nejnovější verzi %PRODUCTNAME."
 
 #: source/newerverwarn.src#RID_DLG_NEWER_VERSION_WARNING.PB_UPDATE.PushButton.Text
 msgid  "~Update Now..."
@@ -609,7 +609,7 @@ msgstr "Zobrazit podpisy..."
 
 #: source/secmacrowarnings.src#RID_XMLSECDLG_MACROWARN.FI_DESCR2.FixedText.Text
 msgid  "Macros may contain viruses. Disabling macros for a document is always safe. If you disable macros you may lose functionality provided by the document macros."
-msgstr ""
+msgstr "Makra mohou obsahovat viry. Zakázání maker v dokumentu je vždy bezpečné. Pokud však makra zakážete, můžete být ochuzeni o funkcionalitu jimi poskytovanou."
 
 #: source/secmacrowarnings.src#RID_XMLSECDLG_MACROWARN.CB_ALWAYSTRUST.CheckBox.Text
 msgid  "Always trust macros from this source"
@@ -637,7 +637,7 @@ msgstr "Nastavit hlavní heslo"
 
 #: source/masterpasscrtdlg.src#DLG_UUI_MASTERPASSWORD_CRT.FT_INFOTEXT.FixedText.Text
 msgid  "Passwords for web connections are protected by a master password. You will be asked to enter it once per session, if %PRODUCTNAME retrieves a password from the protected password list."
-msgstr ""
+msgstr "Hesla pro webová připojení jsou chráněna hlavním heslem. Pokud %PRODUCTNAME přistupuje k heslům z chráněného seznamu, budete jednou za sezení požádáni o zadání hlavního hesla."
 
 #: source/masterpasscrtdlg.src#DLG_UUI_MASTERPASSWORD_CRT.FT_MASTERPASSWORD_CRT.FixedText.Text
 msgid  "~Enter password"
@@ -649,11 +649,11 @@ msgstr "Potvrďte heslo"
 
 #: source/masterpasscrtdlg.src#DLG_UUI_MASTERPASSWORD_CRT.FT_CAUTIONTEXT.FixedText.Text
 msgid  "Caution: If you forget the master password, you will be unable to access any of the information protected by it. Passwords are case-sensitive."
-msgstr ""
+msgstr "Pozor: Pokud zapomenete hlavn heslo, ztratíte přístup ke všem informacím, které chrání. U hesel záleží na velikosti písmen."
 
 #: source/alreadyopen.src#STR_ALREADYOPEN_MSG.String.Text
 msgid  "Document file '$(ARG1)' is locked for editing by yourself on a different system since $(ARG2)\n\nOpen document read-only, or ignore own file locking and open the document for editing.\n\n"
-msgstr ""
+msgstr "Dokument '$(ARG1)' je vámi zamčen pro úpravy na jiném systému od $(ARG2)\n\nOtevřete dokument pouze pro čtení nebo ignorujte vlastní zamknutí souboru a otevřete dokument pro úpravy.\n\n"
 
 #: source/alreadyopen.src#STR_ALREADYOPEN_READONLY_BTN.String.Text
 msgid  "Open ~Read-Only"
@@ -665,7 +665,7 @@ msgstr "Otevřít"
 
 #: source/alreadyopen.src#STR_ALREADYOPEN_SAVE_MSG.String.Text
 msgid  "Document file '$(ARG1)' is locked for editing by yourself on a different system since $(ARG2)\n\nClose document on other system and retry saving or ignore own file locking and save current document.\n\n"
-msgstr ""
+msgstr "Dokument '$(ARG1)' je vámi zamčen pro úpravy na jiném systému od $(ARG2)\n\nZavřete dokument na jiném systému a zkuste znovu uložit, nebo ignorujte vlastní zámek souboru a uložte aktuální dokument.\n\n"
 
 #: source/alreadyopen.src#STR_ALREADYOPEN_RETRY_SAVE_BTN.String.Text
 msgid  "~Retry Saving"
@@ -677,4 +677,4 @@ msgstr "Uložit"
 
 #: source/lockfailed.src#STR_LOCKFAILED_MSG.String.Text
 msgid  "The file could not be locked for exclusive access by %PRODUCTNAME, due to missing permission to create a lock file on that file location."
-msgstr ""
+msgstr "Nebylo možno soubor zamknout pouze pro %PRODUCTNAME kvůli nedostatečným přístupovým právům pro vytvoření zámku souboru v daném umístění."

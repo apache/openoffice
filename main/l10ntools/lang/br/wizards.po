@@ -49,7 +49,7 @@ msgstr "~Amdreiñ"
 
 #: source/euro/euro.src#STEP_ZERO + 4.String.Text
 msgid  "Note: Currency amounts from external links and currency conversion factors in formulas cannot be converted."
-msgstr ""
+msgstr "Kemenn : N'haller ket amdreiñ an holladoù o tont eus an ereoù diavaez, memes tra gant periadoù amdreiñ enporzhiet er formulennoù"
 
 #: source/euro/euro.src#STEP_ZERO + 5.String.Text
 msgid  "First, unprotect all sheets."
@@ -153,7 +153,7 @@ msgstr "Araokaat amdreiñ ar stiloù kellig :"
 
 #: source/euro/euro.src#STATUSLINE + 2.String.Text
 msgid  "Registration of the relevant ranges: Sheet %1Number%1 of %2TotPageCount%2"
-msgstr ""
+msgstr "Atoriñ al lijorennoù da amdreiñ : pajenn %1 niverenn %1eus %2 TotPajennCount %2."
 
 #: source/euro/euro.src#STATUSLINE + 3.String.Text
 msgid  "Entry of the ranges to be converted..."
@@ -221,11 +221,11 @@ msgstr "Gwareziñ ar follenn ne vo ket nullet "
 
 #: source/euro/euro.src#MESSAGES + 13.String.Text
 msgid  "The Wizard cannot edit this document as cell formats cannot be modified in documents containing protected spreadsheets."
-msgstr ""
+msgstr "Ar Skoazeller n'eo ket evit embann an teul-mañ : dic'hallus eo daskemmadur ar stiloù kelligoù en un teul gant follennadoù jediñ gwarezet ennañ."
 
 #: source/euro/euro.src#MESSAGES + 14.String.Text
 msgid  "Please note that the Euro Converter will, otherwise, not be able to edit this document!"
-msgstr ""
+msgstr "Diwallit ha n'eo ket gouest an Amdroer-Euro da embann an teul "
 
 #: source/euro/euro.src#MESSAGES + 15.String.Text
 msgid  "Please choose a currency to be converted first!"
@@ -321,11 +321,11 @@ msgstr "Ar moneiz despizet evit an teul n'eo ket ur moneiz europat "
 
 #: source/euro/euro.src#CURRENCIES + 13.String.Text
 msgid  "Cypriot Pound"
-msgstr ""
+msgstr "Ar yezh despiziet evit ar reizhiad korvoiñ ne glot ouzh hini ebet eus an Unaniezh Arc'hantel Europat."
 
 #: source/euro/euro.src#CURRENCIES + 14.String.Text
 msgid  "Maltese Lira"
-msgstr ""
+msgstr "Ar yezh despizet evit ar reizhiad korvoiÃ± ne glot ouzh hini ebet eus an Unaniezh Arc'hantel Europat."
 
 #: source/euro/euro.src#CURRENCIES + 15.String.Text
 msgid  "Slovak Koruna"
@@ -361,35 +361,35 @@ msgstr "Gwareziñ ar follenn a vo nullet atav "
 
 #: source/formwizard/dbwizres.src#RID_COMMON_START + 0.String.Text
 msgid  "The directory '%1' could not be created.<BR>There may not be enough space left on your hard disk."
-msgstr ""
+msgstr "N'haller ket krouiñ an teuliad '%1'!<BR>Leun choug eo ar gantenn galet moarvat."
 
 #: source/formwizard/dbwizres.src#RID_COMMON_START + 1.String.Text
 msgid  "The text document could not be created.<BR>Please check if the module 'PRODUCTNAME Writer' is installed."
-msgstr ""
+msgstr "N'haller ket krouiñ an teul testenn.<BR>Gwiriit emañ ar mollad PRODUCTNAME Writer staliet mat."
 
 #: source/formwizard/dbwizres.src#RID_COMMON_START + 2.String.Text
 msgid  "The spreadsheet could not be created.<BR>Please check if the module 'PRODUCTNAME Calc' is installed."
-msgstr ""
+msgstr "N'haller ket krouiñ ar follenn jediñ.<BR>Gwiriit emañ ar mollad PRODUCTNAME Calc staliet mat."
 
 #: source/formwizard/dbwizres.src#RID_COMMON_START + 3.String.Text
 msgid  "The presentation could not be created.<BR>Please check if the module 'PRODUCTNAME Impress' is installed."
-msgstr ""
+msgstr "N'haller ket krouiñ ar ginnigadenn.<BR>Gwiriit emañ ar mollad PRODUCTNAME Impress staliet mat."
 
 #: source/formwizard/dbwizres.src#RID_COMMON_START + 4.String.Text
 msgid  "The drawing could not be created.<BR>Please check if the module 'PRODUCTNAME Draw' is installed."
-msgstr ""
+msgstr "N'haller ket krouiñ an dresadenn.<BR>Gwiriit emañ ar mollad PRODUCTNAME Draw staliet mat."
 
 #: source/formwizard/dbwizres.src#RID_COMMON_START + 5.String.Text
 msgid  "The formula could not be created.<BR>Please check if the module 'PRODUCTNAME Math' is installed."
-msgstr ""
+msgstr "N'haller ket krouiñ ar formulenn.<BR>Gwiriit emañ ar mollad PRODUCTNAME Math staliet mat."
 
 #: source/formwizard/dbwizres.src#RID_COMMON_START + 6.String.Text
 msgid  "The files required could not be found.<BR>Please start the %PRODUCTNAME Setup and choose 'Repair'."
-msgstr ""
+msgstr "N'haller ket dinoiñ ar restroù ret !<BR>nLuskit goulev staliañ %PRODUCTNAME (Setup) ha dibabit an dibarzh 'Ratreañ'."
 
 #: source/formwizard/dbwizres.src#RID_COMMON_START + 7.String.Text
 msgid  "The file '<PATH>' already exists.<BR><BR>Would you like to overwrite the existing file?"
-msgstr ""
+msgstr "Ar restr '<PATH>' zo anezhi endeo. <BR><BR>Flastrañ ar restr o vezañ ?"
 
 #: source/formwizard/dbwizres.src#RID_COMMON_START + 8.String.Text
 msgid  "Yes"
@@ -445,7 +445,7 @@ msgstr "Patrom krouet gant <anv_skoazeller> d'an/ar <deiziad_aberiat>."
 
 #: source/formwizard/dbwizres.src#RID_COMMON_START + 21.String.Text
 msgid  "The wizard could not be run, because important files were not found.\nUnder 'Tools - Options - %PRODUCTNAME - Paths' click the 'Default' button to reset the paths to the original default settings.\nThen run the wizard again."
-msgstr ""
+msgstr "Ar skoazeller n'eo ket bet evit bezañ erounezet rak un darn eus ar restroù pouezus a vank. \nA-benn assav an treugoù davet an arventennoù orin dre ziouer, dibabit Binvioù - Dibarzhioù - %PRODUCTNAME - Treugoù, klikit war an afell Dre ziouer,\nha luskit ar skoazeller en-dro."
 
 #: source/formwizard/dbwizres.src#RID_DB_COMMON_START + 0.String.Text
 msgid  "C~reate"
@@ -473,7 +473,7 @@ msgstr "Anv ~taolenn"
 
 #: source/formwizard/dbwizres.src#RID_DB_COMMON_START + 6.String.Text
 msgid  "An error occurred while running the wizard. The wizard will be terminated."
-msgstr ""
+msgstr "C'hoarvezet ez eus bet ur fazi e-pad erounezadur ar skoazeller. Prennet e vo ar skoazeller."
 
 #: source/formwizard/dbwizres.src#RID_DB_COMMON_START + 14.String.Text
 msgid  "No connection to the database could be established."
@@ -553,11 +553,11 @@ msgstr "~Maeziennoù ar furmskrid"
 
 #: source/formwizard/dbwizres.src#RID_DB_FORM_WIZARD_START + 2.String.Text
 msgid  "Binary fields are always listed and selectable from the left list.\nIf possible, they are interpreted as images."
-msgstr ""
+msgstr "Ar maeziennoù daouredel a vez marilhet atav : o diuzañ a c'hallit er roll a-gleiz. \nPa c'hall bezañ graet e vezont dewezhiet evel skeudennoù."
 
 #: source/formwizard/dbwizres.src#RID_DB_FORM_WIZARD_START + 3.String.Text
 msgid  "A subform is a form that is inserted in another form.\nUse subforms to show data from tables or queries with a one-to-many relationship."
-msgstr ""
+msgstr "Ur furmskrid enlakaet e-barzh ur furmskrid all eo un isfurmskrid.\nDa wereañ roadennoù an taolennoù pe an azgoulennoù oc'h endevout un darempred e rizh unan da veur a unan e c'hallit arverañ an isfurmskridoù."
 
 #: source/formwizard/dbwizres.src#RID_DB_FORM_WIZARD_START + 4.String.Text
 msgid  "~Add Subform"
@@ -593,7 +593,7 @@ msgstr "Maeziennoù ar ~furmskrid"
 
 #: source/formwizard/dbwizres.src#RID_DB_FORM_WIZARD_START + 19.String.Text
 msgid  "The join '<FIELDNAME1>' and '<FIELDNAME2>' has been selected twice.\nBut joins may only be used once."
-msgstr ""
+msgstr "Div wech eo bet diuzet ar c'hevreoù <FIELDNAME1> ha <FIELDNAME2>.\nHogen e c'hall ar c'heveoù bezañ arveret ur wech hepken."
 
 #: source/formwizard/dbwizres.src#RID_DB_FORM_WIZARD_START + 20.String.Text
 msgid  "~First joined subform field"
@@ -805,7 +805,7 @@ msgstr "Envel ar furmskrid"
 
 #: source/formwizard/dbwizres.src#RID_DB_FORM_WIZARD_START + 98.String.Text
 msgid  "A form with the name '%FORMNAME' already exists.\nChoose another name."
-msgstr ""
+msgstr "Ur frammad anvet '%FORMNAME' ez eus anezhi endeo.\nDibabit unan all."
 
 #: source/formwizard/dbwizres.src#RID_DB_QUERY_WIZARD_START + 0.String.Text
 msgid  "Query Wizard"
@@ -857,7 +857,7 @@ msgstr "Azgoulenn munutaet (skrammañ a ra holl enrolladurioù an azgoulenn)"
 
 #: source/formwizard/dbwizres.src#RID_DB_QUERY_WIZARD_START + 12.String.Text
 msgid  "~Summary query (Shows only results of aggregate functions.)"
-msgstr ""
+msgstr "Danevell grennet (skrammañ a ra disoc'hoù an arc'hwelioù kevelstrollañ nemetken)."
 
 #: source/formwizard/dbwizres.src#RID_DB_QUERY_WIZARD_START + 16.String.Text
 msgid  "Aggregate functions"
@@ -1097,15 +1097,15 @@ msgstr "Kinnigadenn"
 
 #: source/formwizard/dbwizres.src#RID_DB_QUERY_WIZARD_START + 88.String.Text
 msgid  "A field that has not been assigned an aggregate function must be used in a group."
-msgstr ""
+msgstr "Ur vaezienn andeverket ouzh ur gevreizhenn gevelstroll zo ret dezhi bezañ arveret evel ur strollad."
 
 #: source/formwizard/dbwizres.src#RID_DB_QUERY_WIZARD_START + 89.String.Text
 msgid  "The condition '<FIELDNAME> <LOGICOPERATOR> <VALUE>' was chosen twice. Each condition can only be chosen once"
-msgstr ""
+msgstr "An amplegad <FIELDNAME> <LOGICOPERATOR> <VALUE> zo bet dibabet div wech. Ur wech hepken e c'hall an amplegadoù bezañ dibabet."
 
 #: source/formwizard/dbwizres.src#RID_DB_QUERY_WIZARD_START + 90.String.Text
 msgid  "The aggregate function <FUNCTION> has been assigned twice to the fieldname '<NUMERICFIELD>'."
-msgstr ""
+msgstr "Div wech eo bet deverket an arc'hwel kevelstrollañ <FUNCTION> d'an anv maezienn <NUMERICFIELD>."
 
 #: source/formwizard/dbwizres.src#RID_DB_QUERY_WIZARD_START + 91.String.Text
 msgid  ", "
@@ -1321,11 +1321,11 @@ msgstr "Ar furmskrid '<REPORTFORM>' n'eus ket anezhañ."
 
 #: source/formwizard/dbwizres.src#RID_DB_REPORT_WIZARD_START + 65.String.Text
 msgid  "The query with the statement <BR>'<STATEMENT>' <BR> could not be run. <BR> Check your data source."
-msgstr ""
+msgstr "N'haller ket erounit ar goulenn gant ar bomm <BR>'<STATEMENT>' <BR> ! <BR> Gwiriit an tarzh roadennoù"
 
 #: source/formwizard/dbwizres.src#RID_DB_REPORT_WIZARD_START + 66.String.Text
 msgid  "The following hidden control in the form '<REPORTFORM>' could not be read: '<CONTROLNAME>'."
-msgstr ""
+msgstr "N'haller ket lenn ar gwiriad kuzh da-heul er furmskrid '<REPORTFORM>' : '<CONTROLNAME>'."
 
 #: source/formwizard/dbwizres.src#RID_DB_REPORT_WIZARD_START + 67.String.Text
 msgid  "Importing data..."
@@ -1349,7 +1349,7 @@ msgstr "Maezienn"
 
 #: source/formwizard/dbwizres.src#RID_DB_REPORT_WIZARD_START + 72.String.Text
 msgid  "An error occurred in the wizard.<BR>The template '%PATH' could be erroneous.<BR>Either the required sections or tables do not exist or exist under the wrong name.<BR>See the Help for more detailed information.<BR>Please select another template."
-msgstr ""
+msgstr "C'hoarvezet ez eus bet ur fazi er skoazeller. <BR>Ar patrom %PATH a c'hall bezañ kontronet.<BR>Ar c'hevrennoù pe an taolennoù azgoulennet n'int ket anezho pe gant anvioù disheñvel emaint.<BR>Evit titouroù munutaet, kit da lenn ar skoazell.<BR>Diuzit ur patrom all."
 
 #: source/formwizard/dbwizres.src#RID_DB_REPORT_WIZARD_START + 73.String.Text
 msgid  "There is an invalid user field in a table."
@@ -1357,15 +1357,15 @@ msgstr "Ur vaezienn arveriad didalvoudek zo e-barzh an daolenn "
 
 #: source/formwizard/dbwizres.src#RID_DB_REPORT_WIZARD_START + 74.String.Text
 msgid  "The sort criterium '<FIELDNAME>' was chosen twice. Each criterium can only be chosen once."
-msgstr ""
+msgstr "Div wech eo bet diuzet an dezverk rummañ <FIELDNAME>. Ur wech hepken e c'hall bezañ diuzet pep dezverk."
 
 #: source/formwizard/dbwizres.src#RID_DB_REPORT_WIZARD_START + 75.String.Text
 msgid  "Note: The dummy text will be replaced by data from the database when the report is created."
-msgstr ""
+msgstr "Evezhiadenn : An destenn faos a vo amsavet gant roadennoù ar bon da vare krouadur an danevell."
 
 #: source/formwizard/dbwizres.src#RID_DB_REPORT_WIZARD_START + 76.String.Text
 msgid  "A report '%REPORTNAME' already exists in the database. Please assign another name."
-msgstr ""
+msgstr "Un danevell %REPORTNAME zo anezhi endeo er stlennvon. Dibabit un anv all."
 
 #: source/formwizard/dbwizres.src#RID_DB_REPORT_WIZARD_START + 78.String.Text
 msgid  "How do you want to proceed after creating the report?"
@@ -1465,7 +1465,7 @@ msgstr "Krouiñ un daolenn"
 
 #: source/formwizard/dbwizres.src#RID_DB_TABLE_WIZARD_START + 14.String.Text
 msgid  "This wizard helps you to create a table for your database. After selecting a table category and a sample table, choose the fields you want to include in your table. You can include fields from more than one sample table."
-msgstr ""
+msgstr "Ho sikouriñ a ra ar skoazeller-mañ a-benn krouiñ un daolenn evit ho stlennvon. Goude bezañ diuzet ur rummad hag ur skouer daolenn, dibabit ar maeziennoù a fell deoc'h enlakaat enni. Ar maeziennoù enlakaet a c'hall dont eus meur a skouer daolenn."
 
 #: source/formwizard/dbwizres.src#RID_DB_TABLE_WIZARD_START + 15.String.Text
 msgid  "Ca~tegory"
@@ -1509,7 +1509,7 @@ msgstr "~Maeziennoù diuzet"
 
 #: source/formwizard/dbwizres.src#RID_DB_TABLE_WIZARD_START + 26.String.Text
 msgid  "A primary key uniquely identifies each record in a database table. Primary keys ease the linking of information in separate tables, and it is recommended that you have a primary key in every table. Without a primary key, it will not be possible to enter data into this table."
-msgstr ""
+msgstr "Da hennodiñ an enrolladurioù en un daolenn stlennvon dre un undoare e talv an alc'hwezioù kentael. Aesaat a ra an alc'hwezioù kentael kenstagañ stlennoù etre meur a daolenn. Da enlakaat un alc'hwez kentael e pep taolenn ez erbedomp ac'hanoc'h. Hep un alc'hwez kentael n'haller ket euvriñ penn roadennoù ebet en taolennoù."
 
 #: source/formwizard/dbwizres.src#RID_DB_TABLE_WIZARD_START + 27.String.Text
 msgid  "~Create a primary key"
@@ -1545,7 +1545,7 @@ msgstr "Pe anv a fell deoc'h reiñ d'an daolenn ?"
 
 #: source/formwizard/dbwizres.src#RID_DB_TABLE_WIZARD_START + 35.String.Text
 msgid  "Congratulations. You have entered all the information needed to create your table."
-msgstr ""
+msgstr "Gourc'hemennoù ! Euvret hoc'h eus an holl stlennoù azgoulennet a-benn krouiñ an daolenn."
 
 #: source/formwizard/dbwizres.src#RID_DB_TABLE_WIZARD_START + 36.String.Text
 msgid  "What do you want to do next?"
@@ -1569,11 +1569,11 @@ msgstr "N'haller ket digeriñ an daolenn grouet."
 
 #: source/formwizard/dbwizres.src#RID_DB_TABLE_WIZARD_START + 41.String.Text
 msgid  "The table name '%TABLENAME' contains a character ('%SPECIALCHAR') that might not be supported by the database."
-msgstr ""
+msgstr "Enderc'hel a ra an anv taolenn %TABLENAME un arouezenn (%SPECIALCHAR) nad eo ket ensammet gant ar stlennvon war ar seblant."
 
 #: source/formwizard/dbwizres.src#RID_DB_TABLE_WIZARD_START + 42.String.Text
 msgid  "The field name '%FIELDNAME' contains a special character ('%SPECIALCHAR') that might not be supported by the database."
-msgstr ""
+msgstr "Enderc'hel a ra an anv maezienn %FIELDNAME un arouezenn (%SPECIALCHAR) nad eo ket ensammet gant ar stlennvon war ar seblant."
 
 #: source/formwizard/dbwizres.src#RID_DB_TABLE_WIZARD_START + 43.String.Text
 msgid  "Field"
@@ -1593,11 +1593,11 @@ msgstr "Lemel kuit ar vaezienn diuzet"
 
 #: source/formwizard/dbwizres.src#RID_DB_TABLE_WIZARD_START + 47.String.Text
 msgid  "The field cannot be inserted because this would exceed the maximum number of %COUNT possible fields in the database table"
-msgstr ""
+msgstr "N'hall ket ar vaezienn bezañ enlakaet abalamour ma vefe muioc'h eget %COUNT a vaeziennoù e taolenn ar stlennvon, ar pezh n'eo ket aotreet."
 
 #: source/formwizard/dbwizres.src#RID_DB_TABLE_WIZARD_START + 48.String.Text
 msgid  "The name '%TABLENAME' already exists.\nPlease enter another name."
-msgstr ""
+msgstr "An anv %TABLENAME zo anezhañ endeo. \nEuvrit un anv all."
 
 #: source/formwizard/dbwizres.src#RID_DB_TABLE_WIZARD_START + 49.String.Text
 msgid  "Catalog of the table"
@@ -1733,7 +1733,7 @@ msgstr "Patrom pajenn"
 
 #: source/formwizard/dbwizres.src#RID_LETTERWIZARDDIALOG_START + 31.String.Text
 msgid  "This wizard helps you to create a letter template. You can then use the template as the basis for writing letters as often as desired."
-msgstr ""
+msgstr "Ho sikouriñ a ra ar skoazeller-mañ a-benn krouiñ ur patrom hag a c'hallo bezañ arveret evel diazez da sevel ho lizhiri."
 
 #: source/formwizard/dbwizres.src#RID_LETTERWIZARDDIALOG_START + 32.String.Text
 msgid  "~Height:"
@@ -1801,11 +1801,11 @@ msgstr "Troad pajenn "
 
 #: source/formwizard/dbwizres.src#RID_LETTERWIZARDDIALOG_START + 48.String.Text
 msgid  "This wizard creates a letter template which enables you to create multiple letters with the same layout and settings."
-msgstr ""
+msgstr "Genel a ra ar skoazeller-mañ ur patrom lizher o reiñ tu da grouiñ meur a lizher gant ur pajennaozañ hag arventennoù peurheñvel."
 
 #: source/formwizard/dbwizres.src#RID_LETTERWIZARDDIALOG_START + 49.String.Text
 msgid  "To create another new letter out of the template just navigate to the template location and double-click it."
-msgstr ""
+msgstr "Da grouiñ ul lizher all diouzh ar patrom, kit da lec'h ar patrom ha daouglikit warnañ."
 
 #: source/formwizard/dbwizres.src#RID_LETTERWIZARDDIALOG_START + 50.String.Text
 msgid  "Template name:"
@@ -1957,7 +1957,7 @@ msgstr "Patrom pajenn"
 
 #: source/formwizard/dbwizres.src#RID_FAXWIZARDDIALOG_START + 17.String.Text
 msgid  "This wizard helps you to create a fax template. The template can then be used to create a fax whenever needed."
-msgstr ""
+msgstr "Harpañ a ra ar skoazeller e-pad argerzh krouidigezh ur patrom faks. Ar patrom-mañ a c'hall bezañ arveret da grouiñ ur faks da bep koulz."
 
 #: source/formwizard/dbwizres.src#RID_FAXWIZARDDIALOG_START + 18.String.Text
 msgid  "Return address"
@@ -1981,11 +1981,11 @@ msgstr "Troad pajenn "
 
 #: source/formwizard/dbwizres.src#RID_FAXWIZARDDIALOG_START + 23.String.Text
 msgid  "This wizard creates a fax template which enables you to create multiple faxes with the same layout and settings."
-msgstr ""
+msgstr "Genel a ra ar skoazeller-mañ ur patrom faks o reiñ tu da grouiñ meur a faks gant ur pajennaozañ hag arventennoù peurheñvel."
 
 #: source/formwizard/dbwizres.src#RID_FAXWIZARDDIALOG_START + 24.String.Text
 msgid  "To create another new fax out of the template, go to the location where you saved the template and double-click the file."
-msgstr ""
+msgstr "Da grouiñ ur faks all diouzh ar patrom, diuzit ar patrom enrollet ha daouglikit warnañ."
 
 #: source/formwizard/dbwizres.src#RID_FAXWIZARDDIALOG_START + 25.String.Text
 msgid  "Template Name:"
@@ -2121,7 +2121,7 @@ msgstr "Skoazeller Web"
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +2.String.Text
 msgid  "This Web Wizard is to aid you in publishing documents on the Internet.\n\nIt will convert the documents so that they can be viewed by a web browser. In addition, it will generate a Table of Contents page with links for easy access to the documents. The Web Wizard will also allow you to customize the design and layout of your web site.\n\nYou will be able to keep the documents you have published on the web up-to-date and add or remove documents at any time."
-msgstr ""
+msgstr "Ho leviañ a ray ar skoazeller Web-mañ a-hed an embannadur teulioù war Internet\n\nAmdreiñ a ra an teulioù a-benn ma c'hallint en em wereañ war ur merdeer Web. Genel a ra ivez un daolenn eus an danvezioù o sellout ouzh ereoù o reiñ tu da haeziñ ent aes an teulioù. Ar skoazeller Web a ro tu ivez da bersonelaat ergrafañ ha pajennaozañ ho lec'hienn Web.\n\\Gallout a reot, ne vern pegoulz, hizivaat an teulioù embannet war ar Web pe ouzhpennañ pe zilemel teulioù."
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +4.String.Text
 msgid  "~Delete"
@@ -2305,7 +2305,7 @@ msgstr "Personelaat ar pajennaozañ diuzet"
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +61.String.Text
 msgid  "Include the following information for each document in the table of contents:"
-msgstr ""
+msgstr "Gannañ ar stlennoù da-heul evit pep teul eus taolenn an danvezioù."
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +62.String.Text
 msgid  "Optimize the layout for screen resolution:"
@@ -2345,19 +2345,19 @@ msgstr "Ar vukenn lec'hel FTP %FILENAME zo ur restr."
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +75.String.Text
 msgid  "The ZIP target '%FILENAME' already exists. Do you want to overwrite the existing target? "
-msgstr ""
+msgstr "Ar vukenn ZIP %FILENAME zo anezhi endeo. Ar vukenn veziad a fell deoc'h flastrañ ?"
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +76.String.Text
 msgid  "The FTP target directory '%FILENAME' is not empty. Some files might be overwritten. Do you want to continue?"
-msgstr ""
+msgstr "N'eo ket goullo kavlec'hiad ar vukenn FTP %FILENAME. Flastret e c'hallfe bezañ un darn eus ar restroù. Kenderc'hel ganti a fell deoc'h ?"
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +77.String.Text
 msgid  "The local target directory '%FILENAME' is not empty. Some files might be overwritten. Do you want to continue?"
-msgstr ""
+msgstr "N'eo ket goullo kavlec'hiad ar vukenn lec'hel %FILENAME. Flastret e c'hallfe bezañ un darn eus ar restroù. Kenderc'hel ganti a fell deoc'h ?"
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +78.String.Text
 msgid  "Settings already exist under the given name. Do you want to overwrite the existing settings? "
-msgstr ""
+msgstr "Arventennoù e-keñver an anv-mañ zo anezho endeo. O flastañ a fell deoc'h ?"
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +79.String.Text
 msgid  "Exporting documents..."
@@ -2449,35 +2449,35 @@ msgstr "C'hoarvezet ez eus fazioù e-pad argerzh genel al lec'hienn Web."
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +106.String.Text
 msgid  "An error occurred while generating the table of contents page(s). "
-msgstr ""
+msgstr "C'hoarvezet ez eus bet ur fazi e-pad argerzh genel pajennoù taolenn an danvezioù."
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +107.String.Text
 msgid  "An error occurred while copying the layout files. "
-msgstr ""
+msgstr "C'hoarvezet ez eus bet ur fazi e-pad argerzh eilañ ar restroù pajennaozañ."
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +108.String.Text
 msgid  "An error occurred while gathering document information for '%FILENAME'. "
-msgstr ""
+msgstr "C'hoarvezet ez eus bet ur fazi e-pad assavadur ar stlennoù teul evit '%FILENAME'. "
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +109.String.Text
 msgid  "An error occurred while exporting the document '%FILENAME'."
-msgstr ""
+msgstr "C'hoarvezet ez eus bet ur fazi e-pad argerzh ezporzhiañ an teul '%FILENAME'."
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +110.String.Text
 msgid  "An error occurred while creating a directory for exporting '%FILENAME'."
-msgstr ""
+msgstr "C'hoarvezet ez eus bet ur fazi e-pad krouidigezh ur c'havlec'hiad evit ezporzh '%FILENAME'."
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +111.String.Text
 msgid  "A security error occurred while exporting the document '%FILENAME'."
-msgstr ""
+msgstr "C'hoarvezet ez eus bet ur fazi diogelroez e-pad argerzh ezporzhiañ an teul '%FILENAME'."
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +112.String.Text
 msgid  "An input/output error occurred while exporting the document '%FILENAME'."
-msgstr ""
+msgstr "C'hoarvezet ez eus bet ur fazi enankañ/ec'hankañ e-pad argerzh ezporzhiañ an teul '%FILENAME'."
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +113.String.Text
 msgid  "An error occurred while copying media files to the temporary directory."
-msgstr ""
+msgstr "C'hoarvezet ez eus bet ur fazi e-pad argerzh eilañ ar restroù media davet ar c'havlec'hiad padennek."
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +114.String.Text
 msgid  "The web site could not be copied to the following destination: %URL"
@@ -2489,7 +2489,7 @@ msgstr "C'hoarvezet ez eus bet ur fazi hollek : %ERROR"
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +116.String.Text
 msgid  "An unexpected error occurred while validating the file: '%FILENAME'"
-msgstr ""
+msgstr "C'hoarvezet ez eus bet ur fazi andiawelet e-pad argerzh talvoudekaat ar restr : '%FILENAME'"
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +117.String.Text
 msgid  "%FILENAME' is a folder."
@@ -2541,7 +2541,7 @@ msgstr "Alberz"
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +130.String.Text
 msgid  "The selected settings will be deleted.\n\nDo you really want to delete these settings? "
-msgstr ""
+msgstr "Dilamet e vo an arventennoù diuzet.\n\nDilemel an arventennoù-mañ a fell deoc'h da vat ?"
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +131.String.Text
 msgid  "%NUMBER pages"
@@ -2609,19 +2609,19 @@ msgstr "N'haller ket krouiñ ar c'havlec'hiad FTP %FILENAME."
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +147.String.Text
 msgid  "The FTP directory '%FILENAME' does not exist. \nCreate the directory now?"
-msgstr ""
+msgstr "Ar c'havlec'hiad FTP %FILENAME n'eus ket anezhañ ! \nE grouiñ bremañ a fell deoc'h ?"
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +148.String.Text
 msgid  "The Zip file '%FILENAME' cannot be created: a directory of the same name already exists."
-msgstr ""
+msgstr "N'haller ket krouiñ ar restr ZIP %FILENAME : Ur c'havlec'hiad gant an hevelep anv zo anezhañ endeo."
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +149.String.Text
 msgid  "The local directory '%FILENAME' cannot be created. \nPlease check your write-access."
-msgstr ""
+msgstr "N'haller ket krouiñ ar c'havlec'hiad lec'hel %FILENAME. \nGwiriit ho kwirioù haeziñ da skrivañ."
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +150.String.Text
 msgid  "The local directory '%FILENAME' does not exist. \nCreate the directory now?"
-msgstr ""
+msgstr "Ar c'havlec'hiad lec'hel %FILENAME n'eus ket anezhañ ! \nE grouiñ bremañ a fell deoc'h ?"
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +151.String.Text
 msgid  "Size: %NUMBERKB"
@@ -2757,7 +2757,7 @@ msgstr "Gannañ ar furmskrid rentañ-kont"
 
 #: source/formwizard/dbwizres.src#RID_AGENDAWIZARDDIALOG_START +13.String.Text
 msgid  "This wizard helps you to create an agenda template. The template can then be used to create an agenda whenever needed."
-msgstr ""
+msgstr "Harpañ a ra ar skoazeller e-pad argerzh krouidigezh ur patrom deiziataer. Ar patrom-mañ a c'hall bezañ arveret da grouiñ un deiziataer da bep koulz."
 
 #: source/formwizard/dbwizres.src#RID_AGENDAWIZARDDIALOG_START +14.String.Text
 msgid  "Time:"
@@ -2773,7 +2773,7 @@ msgstr "Lec'hiadur :"
 
 #: source/formwizard/dbwizres.src#RID_AGENDAWIZARDDIALOG_START +17.String.Text
 msgid  "Placeholders will be used in empty fields. You can replace placeholders with text later."
-msgstr ""
+msgstr "Arveret e vo an erlec'hiadoù er maeziennoù goullo. Diwezhatoc'h e c'hallot erlec'hiañ testenn ouzh an erlec'hiadoù-mañ."
 
 #: source/formwizard/dbwizres.src#RID_AGENDAWIZARDDIALOG_START +18.String.Text
 msgid  "..."
@@ -2785,7 +2785,7 @@ msgstr "Krouiñ un deizi~ataer diouzh ar patrom-mañ"
 
 #: source/formwizard/dbwizres.src#RID_AGENDAWIZARDDIALOG_START +20.String.Text
 msgid  "To create a new agenda out of the template, go to the location where you saved the template and double-click the file."
-msgstr ""
+msgstr "Da grouiñ un deiziataer all diouzh ar patrom, diuzit ar patrom enrollet ha daouglikit warnañ."
 
 #: source/formwizard/dbwizres.src#RID_AGENDAWIZARDDIALOG_START +21.String.Text
 msgid  "Agenda item"
@@ -2829,7 +2829,7 @@ msgstr "Koskor ar staliadurioù"
 
 #: source/formwizard/dbwizres.src#RID_AGENDAWIZARDDIALOG_START +31.String.Text
 msgid  "The agenda template will include placeholders for the names of the selected people. When creating an agenda from the template, you can replace these placeholder with the appropriate names."
-msgstr ""
+msgstr "Erlec'hiadoù zo ouzhpennet da anvioù an dud diuzet gant ar patrom deiziataer. E-pad krouidigezh un deiziataer diouzh ur patrom e c'hallit erlec'hiañ an anvioù o klotañ ganto ouzh an erlec'hiadoù-mañ."
 
 #: source/formwizard/dbwizres.src#RID_AGENDAWIZARDDIALOG_START +32.String.Text
 msgid  "Type of meeting"
@@ -2849,7 +2849,7 @@ msgstr "Notennoù"
 
 #: source/formwizard/dbwizres.src#RID_AGENDAWIZARDDIALOG_START +36.String.Text
 msgid  "The agenda template will include placeholders for the selected items."
-msgstr ""
+msgstr "Erlec'hiadoù zo ouzhpennet d'an elfennoù diuzet gant ar patrom deiziataer."
 
 #: source/formwizard/dbwizres.src#RID_AGENDAWIZARDDIALOG_START +38.String.Text
 msgid  "Date:"
@@ -2857,7 +2857,7 @@ msgstr ""
 
 #: source/formwizard/dbwizres.src#RID_AGENDAWIZARDDIALOG_START +39.String.Text
 msgid  "This wizard creates an agenda template which enables you to create multiple agendas with the same layout and settings."
-msgstr ""
+msgstr "Genel a ra ar skoazeller-mañ ur patrom deiziataer o reiñ tu da grouiñ meur a zeiziataer gant ur pajennaozañ hag arventennoù peurheñvel."
 
 #: source/formwizard/dbwizres.src#RID_AGENDAWIZARDDIALOG_START +40.String.Text
 msgid  "Page design:"
@@ -2873,7 +2873,7 @@ msgstr "Ma fatrom deiziataer"
 
 #: source/formwizard/dbwizres.src#RID_AGENDAWIZARDDIALOG_START +43.String.Text
 msgid  "An unexpected error occurred while saving the agenda template."
-msgstr ""
+msgstr "C'hoarvezet ez eus bet ur fazi andiawelet e-pad enrolladur ar patrom deziataer."
 
 #: source/formwizard/dbwizres.src#RID_AGENDAWIZARDDIALOG_START +44.String.Text
 msgid  "Name"
@@ -2921,7 +2921,7 @@ msgstr "Anv ha savlec'h douaroniel"
 
 #: source/formwizard/dbwizres.src#RID_AGENDAWIZARDDIALOG_START +56.String.Text
 msgid  "An unexpected error occurred while opening the agenda template."
-msgstr ""
+msgstr "C'hoarvezet ez eus bet ur fazi andiawelet e-pad digoradur ar patrom deziataer."
 
 #: source/formwizard/dbwizres.src#RID_AGENDAWIZARDDIALOG_START +57.String.Text
 msgid  "Type of meeting"
@@ -3009,11 +3009,11 @@ msgstr "Serriñ"
 
 #: source/importwizard/importwi.src#sWelcometextLabel1.String.Text
 msgid  "This wizard converts documents in %PRODUCTNAME format and Microsoft Office documents to the new OpenDocument format."
-msgstr ""
+msgstr "Amdreiñ a ra ar skoazeller-mañ an teulioù e mentrezh %PRODUCTNAME ha teulioù Microsoft Office e mentrezh nevez OpenDocument."
 
 #: source/importwizard/importwi.src#sWelcometextLabel2.String.Text
 msgid  "Please note that when converting Microsoft documents any attached VBA macros lose their functionality."
-msgstr ""
+msgstr "Diwallit hag e vo kollet keweriusterioù ar makroioù VBA kenstaget gant amdroadur an teulioù Microsoft."
 
 #: source/importwizard/importwi.src#sWelcometextLabel3.String.Text
 msgid  "Select the document type for conversion:"
@@ -3241,59 +3241,59 @@ msgstr "Ezporzhet e vint betek ar c'havlec'h-mañ :"
 
 #: source/importwizard/importwi.src#sSumSOTextDocuments.String.Text
 msgid  "All %PRODUCTNAME text documents contained in the following directory will be imported:"
-msgstr ""
+msgstr "An teulioù testenn %PRODUCTNAME endalc'het er c'havlec'h da-heul a vo enporzhiet :"
 
 #: source/importwizard/importwi.src#sSumSOTableDocuments.String.Text
 msgid  "All %PRODUCTNAME spreadsheets contained in the following directory will be imported:"
-msgstr ""
+msgstr "Ar renkelloù %PRODUCTNAME endalc'het er c'havlec'h da-heul a vo enporzhiet :"
 
 #: source/importwizard/importwi.src#sSumSODrawDocuments.String.Text
 msgid  "All %PRODUCTNAME drawing and presentation documents contained in the following directory will be imported:"
-msgstr ""
+msgstr "Enporzhiet e vo an tresadennoù hag an erouezadurioù %PRODUCTNAME endalc'het er c'havlec'h da-heul :"
 
 #: source/importwizard/importwi.src#sSumSOMathDocuments.String.Text
 msgid  "All %PRODUCTNAME formula documents contained in the following directory will be imported:"
-msgstr ""
+msgstr "Ar bommoù %PRODUCTNAME endalc'het er c'havlec'h da-heul a vo enporzhiet."
 
 #: source/importwizard/importwi.src#sSumSOTextTemplates.String.Text
 msgid  "All %PRODUCTNAME text templates contained in the following directory will be imported:"
-msgstr ""
+msgstr "Enporzhiet e vo ar patromoù testennoù eus %PRODUCTNAME endalc'het er c'havlec'h da-heul :"
 
 #: source/importwizard/importwi.src#sSumSOTableTemplates.String.Text
 msgid  "All %PRODUCTNAME table templates contained in the following directory will be imported:"
-msgstr ""
+msgstr "Enporzhiet e vo ar patromoù renkelloù eus %PRODUCTNAME endalc'het er c'havlec'h da-heul :"
 
 #: source/importwizard/importwi.src#sSumSODrawTemplates.String.Text
 msgid  "All %PRODUCTNAME drawing and presentation templates contained in the following directory will be imported:"
-msgstr ""
+msgstr "Enporzhiet e vo ar patromoù tresadennoù hag erouezadurioù eus %PRODUCTNAME endalc'het er c'havlec'h da-heul :"
 
 #: source/importwizard/importwi.src#sSumSOGlobalDocuments.String.Text
 msgid  "All %PRODUCTNAME master documents contained in the following directory will be imported:"
-msgstr ""
+msgstr "An teulioù mestr %PRODUCTNAME endalc'het er c'havlec'h da-heul a vo enporzhiet :"
 
 #: source/importwizard/importwi.src#sSumMSTextDocuments.String.Text
 msgid  "All Word documents contained in the following directory will be imported:"
-msgstr ""
+msgstr "An teulioù Word endalc'het er c'havlec'h da-heul a vo enporzhiet :"
 
 #: source/importwizard/importwi.src#sSumMSTableDocuments.String.Text
 msgid  "All Excel documents contained in the following directory will be imported:"
-msgstr ""
+msgstr "An teulioù Excel endalc'het er c'havlec'h da-heul a vo enporzhiet :"
 
 #: source/importwizard/importwi.src#sSumMSDrawDocuments.String.Text
 msgid  "All PowerPoint documents contained in the following directory will be imported:"
-msgstr ""
+msgstr "An teulioù PowerPoint endalc'het er c'havlec'h da-heul a vo enporzhiet :"
 
 #: source/importwizard/importwi.src#sSumMSTextTemplates.String.Text
 msgid  "All Word templates contained in the following directory will be imported:"
-msgstr ""
+msgstr "Enporzhiet e vo ar patromoù Word endalc'het er c'havlec'h da-heul :"
 
 #: source/importwizard/importwi.src#sSumMSTableTemplates.String.Text
 msgid  "All Excel templates contained in the following directory will be imported:"
-msgstr ""
+msgstr "Enporzhiet e vo ar patromoù Excel endalc'het er c'havlec'h da-heul :"
 
 #: source/importwizard/importwi.src#sSumMSDrawTemplates.String.Text
 msgid  "All PowerPoint templates contained in the following directory will be imported:"
-msgstr ""
+msgstr "Enporzhiet e vo ar patromoù PowerPoint endalc'het er c'havlec'h da-heul :"
 
 #: source/schedule/schedule.src#dlgCalTitle.String.Text
 msgid  "%PRODUCTNAME Calendar"
@@ -3481,7 +3481,7 @@ msgstr "Araokaat :"
 
 #: source/template/template.src#SAMPLES.String.Text
 msgid  "In order to use the full functionality of this sample, create a document that is based on this template."
-msgstr ""
+msgstr "A-benn ma vo tu da dennañ ampled diouzh ar skouer-mañ a-bezh e rankit krouiñ un teul nevez diazezet diwar ar patrom-mañ."
 
 #: source/template/template.src#SAMPLES + 1.String.Text
 msgid  "Remarks"
@@ -3493,7 +3493,7 @@ msgstr "Diuz dodenn"
 
 #: source/template/template.src#STYLES + 1.String.Text
 msgid  "Error while saving the document to the clipboard! The following action cannot be undone."
-msgstr ""
+msgstr "Ur fazi zo bet e kerzh enrolladenn an teul oberiat er golver ! Dic'hallus nullañ ar gwered da-heul."
 
 #: source/template/template.src#STYLES + 2.String.Text
 msgid  "~Cancel"

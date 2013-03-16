@@ -97,7 +97,7 @@ msgstr "दस्तावेज पैह्‌लें शा खु’ल्
 
 #: source/appl/app.src#MSG_ERR_NO_WEBBROWSER_FOUND.ErrorBox.Message
 msgid  "%PRODUCTNAME could not find a web browser on your system. Please check your Desktop Preferences or install a web browser (for example, Mozilla) in the default  location requested during the browser installation."
-msgstr ""
+msgstr "%PRODUCTNAME थुआढ़े  सिस्टम पर वैब तपाशी गी नेईं तुप्पी सकेआ. किरपा करियै अपनियां डैस्कटाप पसिंदा जाचो जां तपाशी प्रस्थापना दे दरान बिनतीशुदा बिलानिर्देश स्थान च वैब तपाशी (जि’यां के मोज़िल्ला)दी प्रस्थापना करो. "
 
 #: source/appl/app.src#GID_INTERN.String.Text
 msgid  "Internal"
@@ -205,7 +205,7 @@ msgstr "नियंत्रण(बहु.)  "
 
 #: source/appl/app.src#MSG_CANT_QUIT.InfoBox.Message
 msgid  "The application cannot be terminated at the moment.\nPlease wait until all print jobs and/or\nOLE actions have finished and close all dialogs."
-msgstr ""
+msgstr "इस बेल्लै बरतून खत्म नेईं होई सकदी .\nकिरपा करियै सब छापा कम्म ते /जां\nOLE अमल मुक्की जाने  ते  सब संवाद बंद होई जाने तगर बलगो. "
 
 #: source/appl/app.src#STR_ISMODIFIED.String.Text
 msgid  "Do you want to save the changes to %1?"
@@ -237,7 +237,7 @@ msgstr "फंक्शन पट्टी "
 
 #: source/appl/app.src#RID_SPECIALCONFIG_ERROR.String.Text
 msgid  "An error has occurred in the special configuration.\nPlease contact your administrator."
-msgstr ""
+msgstr "विशेश संरूपण च इक गल्ती घटत होई ऐ.\n किरपा करियै अपने प्रशासक कन्नै रावता करो  . "
 
 #: source/appl/app.src#STR_QUICKSTART_EXIT.String.Text
 msgid  "Exit Quickstarter"
@@ -288,12 +288,12 @@ msgid  "DDE link to % for % area % are not available."
 msgstr "% खित्ते  लेई%  DDE कड़ी%   उपलब्ध नेईं. "
 
 #: source/appl/app.src#RID_SECURITY_WARNING_HYPERLINK.WarningBox.Message
-msgid  "This hyperlink is going to open "%s". Do you want to proceed?"
-msgstr ""
+msgid  "This hyperlink is going to open \"%s\". Do you want to proceed?"
+msgstr "एह् हाइपरलिंक   \"%s\" खोह्‌ल्लने आह्‌ला ऐ. क्या तुस अग्गें चलना चांह्‌दे ओ? "
 
 #: source/appl/app.src#RID_SECURITY_WARNING_NO_HYPERLINKS.WarningBox.Message
 msgid  "For security reasons, the hyperlink cannot be executed.\nThe stated address will not be opened."
-msgstr ""
+msgstr "सुरक्षा कारणें मूजब हाइपरलिंक अमल च नेईं आई सकेआ. \n दस्से दा सिरनामां नेईं खु’ल्लग."
 
 #: source/appl/app.src#RID_SECURITY_WARNING_TITLE.String.Text
 msgid  "Security Warning"
@@ -301,15 +301,15 @@ msgstr "सुरक्षा चेतावनी"
 
 #: source/appl/app.src#RID_XMLSEC_QUERY_LOSINGSIGNATURE.QueryBox.Message
 msgid  "Saving will remove all existing signatures.\nDo you want to continue saving the document?"
-msgstr ""
+msgstr "बचत सब मजूद दस्खतें गी हटाई देग.\n क्या तुस दस्तावेज बचाऽ करना जारी रक्खना चांह्‌दे ओ ? n "
 
 #: source/appl/app.src#RID_XMLSEC_QUERY_SAVEBEFORESIGN.QueryBox.Message
 msgid  "The document has to be saved before it can be signed.\nDo you want to save the document?"
-msgstr ""
+msgstr "दस्तावेज दस्खत होने शा पैह्‌लें बचाना जरूरी ऐ.\nक्या तुस दस्तावेज बचाना चांह्‌दे ओ ?? "
 
 #: source/appl/app.src#RID_XMLSEC_INFO_WRONGDOCFORMAT.InfoBox.Message
 msgid  "This document must be saved in OpenDocument file format before it can be digitally signed."
-msgstr ""
+msgstr "इस  दस्तावेज पर  दस्खत होने शा पैह्‌लें इसगी खु’ल्ला दस्तावेज फाइल रूप-रचना च बचाया लोड़दा.    "
 
 #: source/appl/app.src#RID_XMLSEC_DOCUMENTSIGNED.String.Text
 msgid  " (Signed)"
@@ -509,11 +509,11 @@ msgstr "~ %PRODUCTNAME %MODULENAME  मदद दा प्रदर्शन �
 
 #: source/bastyp/fltfnc.src#STR_FILTER_NOT_INSTALLED.String.Text
 msgid  "The selected filter $(FILTER) has not been installed.\nWould you like to do this now?"
-msgstr ""
+msgstr "चुनी दी पूनी $(FILTER) प्रस्थापत नेईं होई दी ऐ.\n क्या तुस हूनै एह् करना चाह्‌गेओ  ? "
 
 #: source/bastyp/fltfnc.src#STR_FILTER_CONSULT_SERVICE.String.Text
 msgid  "The selected filter $(FILTER) is not included in your edition.\nYou can find information about orders on our homepage."
-msgstr ""
+msgstr "चुनी दी पूनी $(FILTER) सरूप च शामल नेईं ऐ.\n आडरें बारै जानकारी तुस साढ़े उद्‌गम सफे पर तुप्पी सकदे ओ.  "
 
 #: source/dialog/printopt.src#TP_COMMONPRINTOPTIONS.GB_REDUCE.FixedLine.Text
 msgid  "Reduce print data"
@@ -572,6 +572,26 @@ msgid  "Reso~lution"
 msgstr "रैज़ोल्यूशन"
 
 #: source/dialog/printopt.src#TP_COMMONPRINTOPTIONS.LB_REDUCEBITMAPS_RESOLUTION.0.StringList.item
+msgid  "72 DPI"
+msgstr "72 DPI "
+
+#: source/dialog/printopt.src#TP_COMMONPRINTOPTIONS.LB_REDUCEBITMAPS_RESOLUTION.0.StringList.item
+msgid  "96 DPI"
+msgstr "96 DPI "
+
+#: source/dialog/printopt.src#TP_COMMONPRINTOPTIONS.LB_REDUCEBITMAPS_RESOLUTION.0.StringList.item
+msgid  "150 DPI (Fax)"
+msgstr "150 DPI (फैक्स) "
+
+#: source/dialog/printopt.src#TP_COMMONPRINTOPTIONS.LB_REDUCEBITMAPS_RESOLUTION.0.StringList.item
+msgid  "200 DPI (default)"
+msgstr "200 DPI (बिलानिर्देश) "
+
+#: source/dialog/printopt.src#TP_COMMONPRINTOPTIONS.LB_REDUCEBITMAPS_RESOLUTION.0.StringList.item
+msgid  "300 DPI"
+msgstr "300 DPI"
+
+#: source/dialog/printopt.src#TP_COMMONPRINTOPTIONS.LB_REDUCEBITMAPS_RESOLUTION.0.StringList.item
 msgid  "600 DPI"
 msgstr "600 DPI "
 
@@ -605,7 +625,7 @@ msgstr "चेतावनी"
 
 #: source/dialog/printopt.src#RID_WARN_PRINTTRANSPARENCY.FT_PRINTTRANSWARN.FixedText.Text
 msgid  "Your document contains transparent objects.\nThis may lead to longer printing time on certain\nprinters. Should the aspect of transparency\nbe reduced?"
-msgstr ""
+msgstr "थुआढ़े दस्तावेज च  पारदर्शक चीजां न.\n इस कन्नै खास छापकें पर छपाई समां मता लग्गी सकदा ऐ .\n क्या पारदर्शकता पक्ख घटाया जाना चाहिदा  ? "
 
 #: source/dialog/printopt.src#RID_WARN_PRINTTRANSPARENCY.BTN_PRINTTRANS_YES.OKButton.Text
 msgid  "~Yes"
@@ -622,26 +642,6 @@ msgstr "~ रद्द करो "
 #: source/dialog/printopt.src#RID_WARN_PRINTTRANSPARENCY.CBX_NOPRINTTRANSWARN.CheckBox.Text
 msgid  "~Do not show warning again"
 msgstr "~ चेतावनी परतियै नेईं दस्सो "
-
-#: source/dialog/printopt.src#TP_COMMONPRINTOPTIONS.LB_REDUCEBITMAPS_RESOLUTION.0.StringList.item
-msgid  "72 DPI"
-msgstr "72 DPI "
-
-#: source/dialog/printopt.src#TP_COMMONPRINTOPTIONS.LB_REDUCEBITMAPS_RESOLUTION.0.StringList.item
-msgid  "96 DPI"
-msgstr "96 DPI "
-
-#: source/dialog/printopt.src#TP_COMMONPRINTOPTIONS.LB_REDUCEBITMAPS_RESOLUTION.0.StringList.item
-msgid  "150 DPI (Fax)"
-msgstr "150 DPI (फैक्स) "
-
-#: source/dialog/printopt.src#TP_COMMONPRINTOPTIONS.LB_REDUCEBITMAPS_RESOLUTION.0.StringList.item
-msgid  "200 DPI (default)"
-msgstr "200 DPI (बिलानिर्देश) "
-
-#: source/dialog/printopt.src#TP_COMMONPRINTOPTIONS.LB_REDUCEBITMAPS_RESOLUTION.0.StringList.item
-msgid  "300 DPI"
-msgstr "300 DPI"
 
 #: source/dialog/templdlg.src#RID_STYLECATALOG.ModalDialog.Text
 msgid  "Style Catalog"
@@ -1116,8 +1116,8 @@ msgid  "to frame"
 msgstr "चगाठा च "
 
 #: source/dialog/dinfdlg.src#TP_DOCINFORELOAD.STR_FORWARD_ERRMSSG.String.Text
-msgid  "If you select the option "%PLACEHOLDER%", you must enter a URL."
-msgstr ""
+msgid  "If you select the option \"%PLACEHOLDER%\", you must enter a URL."
+msgstr "जेकर तुस\"%PLACEHOLDER%\" विकल्प चुनदे ओ तां तुसें  URL प्रविश्ट कीता लोड़दा. "
 
 #: source/dialog/dinfdlg.src#TP_CUSTOMPROPERTIES.FT_PROPERTIES.FixedText.Text
 msgid  "~Properties"
@@ -1397,7 +1397,7 @@ msgstr "मैक्रो रकाड करो "
 
 #: source/dialog/recfloat.src#STR_MACRO_LOSS.String.Text
 msgid  "Do you really want to cancel the recording? Any steps recorded up to this point will be lost."
-msgstr ""
+msgstr "क्या तुस सच्चें रकाडिंग रद्द करना चांह्‌दे ओ ? इस बिंदु तगर रकाड होए दे कोई बी चरण गुआची सकदे न. "
 
 #: source/dialog/recfloat.src#STR_CANCEL_RECORDING.String.Text
 msgid  "Cancel Recording"
@@ -1405,7 +1405,7 @@ msgstr "रकाडिंग रद्द करो "
 
 #: source/dialog/mailwindow.src#RID_ERRBOX_MAIL_CONFIG.ErrorBox.MESSAGE
 msgid  "%PRODUCTNAME was unable to find a working e-mail configuration. Please save this document locally instead and attach it from within your e-mail client."
-msgstr ""
+msgstr "%PRODUCTNAME कम्म करदे  ई-मेल संरूपण गी तुप्पने च असमर्थ हा.इस दे बदलै किरपा करियै इस दस्तावेज गी स्थानी ढंगै कन्नै बचाओ ते अपने ई-मेल मुवक्कल चा नत्थी करो."
 
 #: source/dialog/dialog.src#STR_RESET.String.Text
 msgid  "~Reset"
@@ -1429,11 +1429,11 @@ msgstr "एह् शैली मजूद नेईं ऐ. "
 
 #: source/dialog/dialog.src#MSG_TABPAGE_INVALIDPARENT.InfoBox.Message
 msgid  "This Style cannot be used as a base Style,\nbecause it would result in a recursive reference."
-msgstr ""
+msgstr "एह् शैली अधार शैली दे रूपै च नेईं बरतोई सकदी \n की जे इस कन्नै हवाला घड़ी-मुड़ी आई सकदा ऐ.  "
 
 #: source/dialog/dialog.src#MSG_POOL_STYLE_NAME.InfoBox.Message
 msgid  "Name already exists as a default Style.\nPlease choose another name."
-msgstr ""
+msgstr "नांऽ बिलानिर्देश शैली दे रूपै च पैह्‌लें शा मजूद ऐ.   \n किरपा करियै होर दूआ नांऽ तालो. "
 
 #: source/dialog/dialog.src#STR_DELETE_STYLE.String.Text
 msgid  "Do you really want to delete Style $1?"
@@ -1441,7 +1441,7 @@ msgstr "क्या तुस सच्चें  $1 शैली म्हे�
 
 #: source/dialog/dialog.src#STR_DELETE_STYLE_USED.String.Text
 msgid  "You are deleting an applied Style!\n"
-msgstr ""
+msgstr "तुस इक इस्तेमाल शैली म्हेसा करदे ओ!\n "
 
 #: source/dialog/dialog.src#MN_CONTEXT_TEMPLDLG.ID_NEW.MenuItem.Text
 msgid  "New..."
@@ -1581,27 +1581,27 @@ msgstr "~व्यवस्थापक... "
 
 #: source/doc/doc.src#MSG_CONFIRM_FILTER.QueryBox.Message
 msgid  "Saving in external formats may have caused\n information loss. Do you still want to close?"
-msgstr ""
+msgstr "बाह्‌री रूप-रचनां बचाने कारण जानकारी नश्ट होई सकदी ऐ.क्या तुस अजें बी बंद करना चांह्‌दे ओ   ? "
 
 #: source/doc/doc.src#MSG_CONFIRM_OVERWRITE_TEMPLATE.QueryBox.Message
 msgid  "Name already in use.\nDo you want to overwrite document template?"
-msgstr ""
+msgstr "नांऽ पैह्‌लें शा बरतून च ऐ.  \n क्या तुस दस्तावेज सच्चे पर ओवरराFट करना चांह्‌दे ओ   ?"
 
 #: source/doc/doc.src#STR_DELETE_REGION.String.Text
-msgid  "Are you sure you want to delete the region "$1"?"
-msgstr ""
+msgid  "Are you sure you want to delete the region \"$1\"?"
+msgstr "क्या तुसें गी जकीन ऐ जे तुस प्रदेश  \"$1 म्हेसना चांह्‌दे ओ? "
 
 #: source/doc/doc.src#STR_DELETE_TEMPLATE.String.Text
-msgid  "Are you sure you want to delete the entry "$1"?"
-msgstr ""
+msgid  "Are you sure you want to delete the entry \"$1\"?"
+msgstr "क्या तुसें गी जकीन ऐ जे तुस प्रदेश  \"$1 म्हेसना चांह्‌दे ओ?"
 
 #: source/doc/doc.src#MSG_REGION_NOTEMPTY.QueryBox.Message
 msgid  "The category is not empty.\nDelete anyway?"
-msgstr ""
+msgstr "कोटि खाल्ली नेईं ऐ. \n क्या फ्ही बी म्हेसेआ जाऽ ? "
 
 #: source/doc/doc.src#STR_QUERY_SAVE_DOCUMENT.String.Text
-msgid  "The document "$(DOC)" has been modified.\nDo you want to save your changes?"
-msgstr ""
+msgid  "The document \"$(DOC)\" has been modified.\nDo you want to save your changes?"
+msgstr "\"$(DOC)\" दस्तावेज च तरमीम होई गेई ऐ.\n क्या तुस तब्दीलियें गी बचाना चांह्‌दे ओ   ?"
 
 #: source/doc/doc.src#STR_STYLES.String.Text
 msgid  "Styles"
@@ -1648,16 +1648,16 @@ msgid  "Templates"
 msgstr "सच्चे "
 
 #: source/doc/doc.src#STR_ERROR_COPY_TEMPLATE.String.Text
-msgid  "Error copying template "$1". \nA template with this name may already exist."
-msgstr ""
+msgid  "Error copying template \"$1\". \nA template with this name may already exist."
+msgstr "\"$1\" सच्चे दी नकल करने च गल्ती . \n इस नांऽ  सनैं इक सच्चा पैह्‌लें शा मजूद ऐ  . "
 
 #: source/doc/doc.src#STR_ERROR_DELETE_TEMPLATE.String.Text
-msgid  "The template "$1" can not be deleted."
-msgstr ""
+msgid  "The template \"$1\" can not be deleted."
+msgstr "\"$1\" सच्चा नेईं म्हिसी सकदा. "
 
 #: source/doc/doc.src#STR_ERROR_MOVE_TEMPLATE.String.Text
-msgid  "Error moving template "$1"."
-msgstr ""
+msgid  "Error moving template \"$1\"."
+msgstr "\"$1\" सच्चा लेने च गल्ती. "
 
 #: source/doc/doc.src#MSG_ERROR_RESCAN.ErrorBox.Message
 msgid  "The update could not be saved."
@@ -1681,11 +1681,11 @@ msgstr "किरपा करियै इक नांऽ निर्दि�
 
 #: source/doc/doc.src#MSG_ERROR_UNIQ_NAME.ErrorBox.Message
 msgid  "Please specify a unique name.\nEntries must not be case specific."
-msgstr ""
+msgstr "किरपा करियै इक नोखा नांऽ निर्दिश्ट करो. \nप्रविश्टियां केस निर्दिश्ट नेईं होनियां लोड़दियां. "
 
 #: source/doc/doc.src#STR_QUERY_DEFAULT_TEMPLATE.String.Text
-msgid  "Should the template "$(TEXT)" become the default template?"
-msgstr ""
+msgid  "Should the template \"$(TEXT)\" become the default template?"
+msgstr "क्या \"$(TEXT)\" सच्चा बिलानिर्देश सच्चा  होना चाहिदा  ? "
 
 #: source/doc/doc.src#MSG_QUERY_RESET_DEFAULT_TEMPLATE.QueryBox.Message
 msgid  "Do you want to reset the default template?"
@@ -1693,7 +1693,7 @@ msgstr "क्या तुस बिलानिर्देश सच्चा
 
 #: source/doc/doc.src#MSG_TEMPLATE_DIR_NOT_EXIST.InfoBox.Message
 msgid  "Template directory\n$(DIR)\ndoes not exist."
-msgstr ""
+msgstr "सच्चा डरैक्टरी \n$(DIR)\n मजूद नेईं ऐ . "
 
 #: source/doc/doc.src#MSG_DOCINFO_CANTREAD.InfoBox.Message
 msgid  "Document info cannot be read."
@@ -1705,7 +1705,7 @@ msgstr "चुनी दी फाइल च इक गल्त रूप-र�
 
 #: source/doc/doc.src#STR_QUERY_MUSTOWNFORMAT.String.Text
 msgid  "Documents cannot be saved in $(FORMAT) format. Do you\nwant to save your changes using the $(OWNFORMAT) format?"
-msgstr ""
+msgstr "इस दस्तावेज च नेही रूप-रचना जां विशे- समग्री होई सकदी ऐ,जेह्‌ड़ी    %FORMATNAME फाइल रूप-रचना च नेईं  बची सकदी./n/n क्या तुस  फ्ही बी दस्तावेज इस रूप-रचना च बचाना चांह‌दे ओ  ? /n/n-वर्तमान फाइल रूप-रचना रक्खने लेई  'हां ' पर क्लिक करो./n %PRODUCTNAME ताजातरीन फाइल रूप-रचना बरतने लेई   'नेईं' पर क्लिक करो ते पक्का करी लैओ जे  सब रूप-रचना ते  विशे- समग्री स्हेई चाल्ली बचे दे न. "
 
 #: source/doc/doc.src#STR_SAVEDOC.String.Text
 msgid  "~Save"
@@ -1744,8 +1744,8 @@ msgid  "%PRODUCTNAME Basic libraries"
 msgstr "%PRODUCTNAME बुनेआदी लाइब्रेरियां "
 
 #: source/doc/doc.src#RID_STR_WARNSTYLEOVERWRITE.String.Text
-msgid  "Should the "$(ARG1)" Style be replaced?"
-msgstr ""
+msgid  "Should the \"$(ARG1)\" Style be replaced?"
+msgstr "\"$(ARG1)\"शैली  दा  प्रतिस्थापन होना चाहिदा   ? "
 
 #: source/doc/doc.src#STR_DOC_LOADING.String.Text
 msgid  "Loading Document"
@@ -1769,7 +1769,7 @@ msgstr "कनैक्शन त्रुट्टी गेआ "
 
 #: source/doc/doc.src#MSG_OPEN_READONLY.QueryBox.Message
 msgid  "Document cannot be opened for editing.\nDo you want to open it as read-only?"
-msgstr ""
+msgstr "दस्तावेज संपादन लेई नेईं खुॕल्ली सकदा. \n क्या तुस इसी सिर्फ पढ़न जोग दे तौरा पर खोह्‌ल्लना चांह‌दे ओ  ?   "
 
 #: source/doc/doc.src#STR_EDIT.String.Text
 msgid  "Edit"
@@ -1792,12 +1792,12 @@ msgid  "%PRODUCTNAME Frame Document"
 msgstr "%PRODUCTNAME चगाठ दस्तावेज "
 
 #: source/doc/doc.src#STR_TEMPL_MOVED.String.Text
-msgid  "The template "$(TEMPLATE)" was not found at the original location. A template with the same name exists at "$(FOUND)". Should this template be used in the future when comparing?"
-msgstr ""
+msgid  "The template \"$(TEMPLATE)\" was not found at the original location. A template with the same name exists at \"$(FOUND)\". Should this template be used in the future when comparing?"
+msgstr "\"$(TEMPLATE)\" सच्चा अपने मौलिक स्थान पर नेईं लब्भा.\"$(FOUND)\" च इस्सै नांऽ दा सच्चा मजूद ऐ. तुलना करदे बेल्लै क्या इस सच्चे गी बरतना चाहिदा  ? "
 
 #: source/doc/doc.src#STR_TEMPL_RESET.String.Text
-msgid  "The template "$(TEMPLATE)" has not been found. Should the template be looked for the next time the document is opened ?"
-msgstr ""
+msgid  "The template \"$(TEMPLATE)\" has not been found. Should the template be looked for the next time the document is opened ?"
+msgstr "\"$(TEMPLATE)\" सच्चा नेईं लब्भा.दस्तावेज खुॕल्ला होने पर क्या सच्चे लेईं अगली बारी दिक्खना चाहिदा  ? "
 
 #: source/doc/doc.src#STR_AUTOMATICVERSION.String.Text
 msgid  "Automatically saved version"
@@ -1865,7 +1865,7 @@ msgstr "मत चलाओ "
 
 #: source/doc/doc.src#FT_CANCEL.String.Text
 msgid  "According to the security settings, the macros in this document should not be run. Do you want to run them anyway?"
-msgstr ""
+msgstr "सुरक्षा सैट्टिंगें दे मताबक इस दस्तावेज च  मैक्रो नेईं  चलने चाहिदे . क्या तुस फ्ही बी चलाना चांह‌दे ओ ? "
 
 #: source/doc/doc.src#FT_OK.String.Text
 msgid  "Do you want to allow these macros to be run?"
@@ -1893,7 +1893,7 @@ msgstr "फाइल रूप-रचना: "
 
 #: source/doc/doc.src#STR_HIDDENINFO_CONTAINS.String.Text
 msgid  "This document contains:\n\n"
-msgstr ""
+msgstr "इस दस्तावेज च होंदा ऐ:\n\n "
 
 #: source/doc/doc.src#STR_HIDDENINFO_RECORDCHANGES.String.Text
 msgid  "Recorded changes"
@@ -1933,7 +1933,7 @@ msgstr "क्या तुस PDF फाइल सिरजना जारी 
 
 #: source/doc/doc.src#STR_NEW_FILENAME_SAVE.String.Text
 msgid  "If you do not want to overwrite the original document, you should save your work under a new filename."
-msgstr ""
+msgstr "जेकर तुस मौलिक दस्तावेज पर ओवरराइट नेईं करना चांह्‌दे तां तुसें अपना कम्म इक नमें फाइल तैह्‌त बचाना चाहि दा.  "
 
 #: source/doc/doc.src#STR_ERROR_DELETE_TEMPLATE_DIR.String.Text
 msgid  "Some template files are protected and can not be deleted."
@@ -1984,8 +1984,16 @@ msgid  "~Address Book..."
 msgstr "~सिरनामां पुस्तक... "
 
 #: source/doc/docvor.src#DLG_ORGANIZE.LB_LEFT_TYP.Default.StringList.item
+msgid  "Templates"
+msgstr "सच्चे "
+
+#: source/doc/docvor.src#DLG_ORGANIZE.LB_LEFT_TYP.Default.StringList.item
 msgid  "Documents"
 msgstr "दस्तावेज "
+
+#: source/doc/docvor.src#DLG_ORGANIZE.LB_RIGHT_TYP.Default.StringList.item
+msgid  "Templates"
+msgstr "सच्चे "
 
 #: source/doc/docvor.src#DLG_ORGANIZE.LB_RIGHT_TYP.Default.StringList.item
 msgid  "Documents"
@@ -2034,14 +2042,6 @@ msgstr "बिलानिर्देश सच्चे दे तौरा �
 #: source/doc/docvor.src#DLG_ORGANIZE.BTN_EDIT.ID_RESET_DEFAULT_TEMPLATE.MenuItem.Text
 msgid  "Reset Default Template"
 msgstr "बिलानिर्देश सच्चा परतियै सैट्ट करो"
-
-#: source/doc/docvor.src#DLG_ORGANIZE.LB_LEFT_TYP.Default.StringList.item
-msgid  "Templates"
-msgstr "सच्चे "
-
-#: source/doc/docvor.src#DLG_ORGANIZE.LB_RIGHT_TYP.Default.StringList.item
-msgid  "Templates"
-msgstr "सच्चे "
 
 #: source/doc/new.src#DLG_NEW_FILE.ModalDialog.Text
 msgid  "New"
@@ -2153,15 +2153,15 @@ msgstr ""
 
 #: source/view/view.src#STR_NODEFPRINTER.String.Text
 msgid  "No default printer found.\nPlease choose a printer and try again."
-msgstr ""
+msgstr "कोई बिलानिर्देश छापक नेईं लब्भा.\n किरपा करियै छापक तालो ते परतियै कोशश करो. "
 
 #: source/view/view.src#STR_NOSTARTPRINTER.String.Text
 msgid  "Could not start printer.\nPlease check your printer configuration."
-msgstr ""
+msgstr "छापक शुरू नेईं सकेआ.\n किरपा करियै अपना छापक संरूपण जाचो. "
 
 #: source/view/view.src#STR_PRINTER_NOTAVAIL.String.Text
 msgid  "This document has been formatted for the printer $1. The specified printer is not available. \nDo you want to use the standard printer $2 ?"
-msgstr ""
+msgstr "एह्  दस्तावेज $1 छापक लेई संरूपत ऐ.  निर्दिश्ट छापक उपलब्ध नेईं.\n क्या तुस मानक छापक $2 बरतना चांह्‌दे ओ ? "
 
 #: source/view/view.src#STR_PRINT_OPTIONS.String.Text
 msgid  "Options..."
@@ -2187,33 +2187,41 @@ msgstr "छपाई "
 msgid  "Page "
 msgstr "सफा"
 
+#: source/view/view.src#STR_ERROR_SAVE_TEMPLATE.String.Text
+msgid  "Error saving template "
+msgstr "सच्चा बचाने च गल्ती"
+
 #: source/view/view.src#STR_READONLY.String.Text
 msgid  " (read-only)"
 msgstr "(सिर्फ पढ़न जोग) "
 
 #: source/view/view.src#STR_PRINT_NEWORI.String.Text
 msgid  "The page size and orientation have been modified.\nWould you like to save the new settings in the\nactive document?"
-msgstr ""
+msgstr "सफा नाप ते दिशा-विन्यास च तरमीम होई गेई ऐ.  \n क्या तुस क्रियाशील दस्तावेज  च नमियां सैट्टिंगां बचाना चाह्‌गेओ   ? "
 
 #: source/view/view.src#STR_PRINT_NEWSIZE.String.Text
 msgid  "The page size has been modified.\nShould the new settings be saved\nin the active document?"
-msgstr ""
+msgstr "सफा नाप   च तरमीम होई गेई ऐ.  \n क्या  क्रियाशील दस्तावेज  च नमियां सैट्टिंगां बचानियां चाहि दियां   ?"
 
 #: source/view/view.src#STR_PRINT_NEWORISIZE.String.Text
 msgid  "The page size and orientation have been modified.\nWould you like to save the new settings in the\nactive document?"
-msgstr ""
+msgstr "सफा नाप ते दिशा-विन्यास च तरमीम होई गेई ऐ.  \n क्या तुस क्रियाशील दस्तावेज  च नमियां सैट्टिंगां बचाना चाह्‌गेओ   ? "
 
 #: source/view/view.src#STR_PREVIEW_DOCINFO.String.Text
-msgid  "<html><body BGCOLOR="#c0c0c0"><font FACE="Arial"><dl><dt><b>Title:</b><dd>$(TITEL)<dt><b>Subject:</b><dd>$(THEME)<dt><b>Keywords:</b><dd>$(KEYWORDS)<dt><b>Description:</b><dd>$(TEXT)</dl></font></body></html>"
-msgstr ""
+msgid  "<html><body BGCOLOR=\"#c0c0c0\"><font FACE=\"Arial\"><dl><dt><b>Title:</b><dd>$(TITEL)<dt><b>Subject:</b><dd>$(THEME)<dt><b>Keywords:</b><dd>$(KEYWORDS)<dt><b>Description:</b><dd>$(TEXT)</dl></font></body></html>"
+msgstr "शीर्शक:$( शीर्शक)विशे:$(विशे-वस्तु)कुंजी-शब्द:$(कुंजी-शब्द(बहु.))विवरण:$(इबारत)"
 
 #: source/view/view.src#STR_PREVIEW_NODOCINFO.String.Text
-msgid  "<HTML><BODY BGCOLOR="#c0c0c0"><BR><BR><P><FONT FACE="Arial"><B>No document properties found.</B></FONT></P></BODY></HTML>"
-msgstr ""
+msgid  "<HTML><BODY BGCOLOR=\"#c0c0c0\"><BR><BR><P><FONT FACE=\"Arial\"><B>No document properties found.</B></FONT></P></BODY></HTML>"
+msgstr "<HTML><BODY BGCOLOR=\"#c0c0c0\"><BR><BR><P><FONT FACE=\"Arial\"><B>कोई दस्तावेज विशेषतायें नहीं मिला ।</B></FONT></P></BODY></HTML>"
 
 #: source/view/view.src#MSG_CANT_CLOSE.InfoBox.Message
 msgid  "The document cannot be closed because a\n print job is being carried out."
-msgstr ""
+msgstr "दस्तावेजज बंद नेईं होई सकदा की जे a\n छापा कम्म चला करदा ऐ. "
+
+#: source/view/view.src#DLG_PRINTMONITOR_TEXT.#define.Text
+msgid  "Print Monitor"
+msgstr "छापक मोनीटर"
 
 #: source/view/view.src#DLG_PRINTMONITOR.FT_PRINTING.FixedText.Text
 msgid  "is being printed on"
@@ -2225,11 +2233,11 @@ msgstr ""
 
 #: source/view/view.src#MSG_ERROR_SEND_MAIL.InfoBox.Message
 msgid  "An error occurred in sending the message. Possible errors could be a missing user account or a defective setup.\nPlease check the %PRODUCTNAME settings or your e-mail program settings."
-msgstr ""
+msgstr "सनेहा भेजने च गल्ती घटत होई. मुमकन गल्ती बरतूनी खाते दा लापता होना जां दोशपूर्ण सैट-अप होई सकदा ऐ . \n किरपा करियै %PRODUCTNAME सैट्टिंगां जां अपनियां  ई-मेल प्रोग्राम सैट्टिंगां जाचो. "
 
 #: source/view/view.src#MSG_QUERY_OPENASTEMPLATE.QueryBox.Message
 msgid  "This document cannot be edited, possibly due to missing access rights. Do you want to edit a copy of the document?"
-msgstr ""
+msgstr "एह् प्रवेश दस्तावेज संपादत नेईं होई सकदा, मुमकन ऐ जे ऐसा पुज्ज अधिकारें दे लापता होने कारण ऐ. क्या तुस दस्तावेज दी इक नकल गी संपादत करना चांह्‌दे ओ? "
 
 #: source/view/view.src#STR_REPAIREDDOCUMENT.String.Text
 msgid  " (repaired document)"
@@ -2238,11 +2246,3 @@ msgstr "(मरम्तशुदा दस्तावेज) "
 #: source/view/view.src#MSG_ERROR_NO_WEBBROWSER_FOUND.ErrorBox.Message
 msgid  "%PRODUCTNAME could not find a web browser on your system. Please check your Desktop Preferences or install a web browser (for example, Mozilla) in the default  location requested during the browser installation."
 msgstr ""
-
-#: source/view/view.src#DLG_PRINTMONITOR_TEXT.#define.Text
-msgid  "Print Monitor"
-msgstr "छापक मोनीटर"
-
-#: source/view/view.src#STR_ERROR_SAVE_TEMPLATE.String.Text
-msgid  "Error saving template "
-msgstr "सच्चा बचाने च गल्ती"

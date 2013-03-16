@@ -49,7 +49,7 @@ msgstr "به برنامه نصب [FULLPRODUCTNAME] خوش آمدید"
 
 #: source/mac/macinstall.ulf#IntroText2
 msgid  "This installation will update your installed versions of [PRODUCTNAME]"
-msgstr ""
+msgstr "این روند نصب، نسخه [FULLPRODUCTNAME] پیش از این نصب شده را به هنگام خواهد کرد."
 
 #: source/mac/macinstall.ulf#IntroText3
 msgid  "This might take a moment."
@@ -61,7 +61,7 @@ msgstr "فهرست نشده (موقعیت را در یک مرحله اضافی �
 
 #: source/mac/macinstall.ulf#ListPromptText
 msgid  "Choose [PRODUCTNAME] [PRODUCTVERSION] installation for which you want to install the [FULLPRODUCTNAME]"
-msgstr ""
+msgstr "[PRODUCTNAME] [PRODUCTVERSION] را برای نصب [FULLPRODUCTNAME] انتخاب کنید"
 
 #: source/mac/macinstall.ulf#ChooseManualText
 msgid  "Point the dialog to your [PRODUCTNAME] [PRODUCTVERSION] installation."
@@ -81,7 +81,7 @@ msgstr "این یک نصب معتبر [PRODUCTNAME] [PRODUCTVERSION] نیست."
 
 #: source/mac/macinstall.ulf#AppInvalidText2
 msgid  "Run the installer again and choose a valid [PRODUCTNAME] [PRODUCTVERSION] installation"
-msgstr ""
+msgstr "نصب کننده را دوباره اجرا کرده و یک نصب [PRODUCTNAME] [PRODUCTVERSION] معتبر را برگزینید."
 
 #: source/mac/macinstall.ulf#StartInstallText1
 msgid  "Click Install to start the installation"
@@ -93,7 +93,7 @@ msgstr "نصب ممکن است دقایقی طول بکشد..."
 
 #: source/mac/macinstall.ulf#IdentifyQText
 msgid  "Installation failed, most likely your account does not have the necessary privileges."
-msgstr ""
+msgstr "نصب شکست خورد؛ احتمالاً به دلیل این‌که حساب کاربری شما دسترسی‌های لازم را ندارد."
 
 #: source/mac/macinstall.ulf#IdentifyQText2
 msgid  "Do you want to identify as administrator and try again?"
@@ -117,7 +117,7 @@ msgstr "نصب بسته زبان [PRODUCTNAME] کامل شد."
 
 #: source/mac/macinstall.ulf#InstallCompleteText2
 msgid  "Call '[PRODUCTNAME]-Preferences-Language Settings-Languages' to change the user interface language."
-msgstr ""
+msgstr "برای تغییر زبان رابط کاربری، '[PRODUCTNAME]-تنظیمات-تنظیمات زبان-زبان‌ها' را فراخوانی کنید."
 
 #: source/mac/macinstall.ulf#InstallCompleteTextPatch
 msgid  "Installation of [FULLPRODUCTNAME] completed"

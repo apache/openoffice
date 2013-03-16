@@ -57,7 +57,7 @@ msgstr "Datu-iturburuaren titulua"
 
 #: source/abpilot/abspilot.src#RID_PAGE_SELECTABTYPE.FT_TYPE_HINTS.FixedText.Text
 msgid  "%PRODUCTNAME lets you access address data already present in your system. To do this, a %PRODUCTNAME data source will be created in which your address data is available in tabular form.\n\nThis wizard helps you create the data source."
-msgstr ""
+msgstr "Sisteman dituzun helbide-datuak inporta ditzakezu %PRODUCTNAME(e)ra. Horretarako, %PRODUCTNAME datu-base bat sortuko da zure helbide-datuak taula moduan jasotzeko.\n\nMorroi honek datu-iturburua sortzen lagunduko dizu."
 
 #: source/abpilot/abspilot.src#RID_PAGE_SELECTABTYPE.FL_TYPE.FixedLine.Text
 msgid  "Please select the type of your external address book:"
@@ -109,7 +109,7 @@ msgstr "Kanpoko bestelako datu-iturburua"
 
 #: source/abpilot/abspilot.src#RID_PAGE_ADMININVOKATION.FT_ADMINEXPLANATION.FixedText.Text
 msgid  "To set up the new data source, additional information is required.\n\nClick the following button to open another dialog in which you then enter the necessary information."
-msgstr ""
+msgstr "Datu-iturburu berria konfiguratzeko, informazio osagarria behar da.\n\nEgin klik beheko botoian eta beste elkarrizketa-koadro bat irekiko da behar diren datuak sartzeko."
 
 #: source/abpilot/abspilot.src#RID_PAGE_ADMININVOKATION.PB_INVOKE_ADMIN_DIALOG.PushButton.Text
 msgid  "Settings"
@@ -117,15 +117,15 @@ msgstr "Ezarpenak"
 
 #: source/abpilot/abspilot.src#RID_PAGE_ADMININVOKATION.FT_ERROR.FixedText.Text
 msgid  "The connection to the data source could not be established.\nBefore you proceed, please check the settings made, or (on the previous page) choose another address data source type."
-msgstr ""
+msgstr "Datu-iturburuarekin ezin izan da konexiorik ezarri.\nAurrera jarraitu ahal izateko, begiratu ezarpenak ongi dauden, edo joan aurreko orrira eta aukeratu beste mota bateko helbideen datu-iturburua."
 
 #: source/abpilot/abspilot.src#RID_PAGE_TABLESELECTION_AB.FL_TOOMUCHTABLES.FixedText.Text
 msgid  "The external data source you have chosen contains more than one address book.\nPlease select the one you mainly want to work with:"
-msgstr ""
+msgstr "Aukeratu duzun kanpoko datu-iturburuak helbide-liburu bat baino gehiago ditu.\nHautatu lanerako erabili nahi duzuna:"
 
 #: source/abpilot/abspilot.src#RID_PAGE_FIELDMAPPING.FT_FIELDASSIGMENTEXPL.FixedText.Text
-msgid  "To incorporate the address data in your templates, %PRODUCTNAME has to know which fields contain which data.\n\nFor instance, you could have stored the e-mail addresses in a field named "email", or "E-mail" or "EM" - or something completely different.\n\nClick the button below to open another dialog where you can enter the settings for your data source."
-msgstr ""
+msgid  "To incorporate the address data in your templates, %PRODUCTNAME has to know which fields contain which data.\n\nFor instance, you could have stored the e-mail addresses in a field named \"email\", or \"E-mail\" or \"EM\" - or something completely different.\n\nClick the button below to open another dialog where you can enter the settings for your data source."
+msgstr "Helbide-datuak txantiloietan gehitzeko, eremu bakoitzak zein datu daukan jakin behar du %PRODUCTNAME(e)k.\n\nEsate baterako, helbide elektronikoa duen eremua \"email\" izan daiteke, edo \"h.el.\" edo \"EM\" edo beste edozein.\n\nEgin klik beheko botoian eta beste elkarrizketa-koadro bat irekiko da datu-iturburuaren ezarpenak sartzeko."
 
 #: source/abpilot/abspilot.src#RID_PAGE_FIELDMAPPING.PB_INVOKE_FIELDS_DIALOG.PushButton.Text
 msgid  "Field Assignment"
@@ -133,7 +133,7 @@ msgstr "Eremu-esleipena"
 
 #: source/abpilot/abspilot.src#RID_PAGE_FINAL.FT_FINISH_EXPL.FixedText.Text
 msgid  "That was all the information necessary to integrate your address data into %PRODUCTNAME.\n\nNow, just enter the name under which you want to register the data source in %PRODUCTNAME."
-msgstr ""
+msgstr "Hori zen helbide-datuak %PRODUCTNAME(e)n integratzeko behar zen informazio guztia.\n\nOrain, idatzi %PRODUCTNAME(e)ko datu-iturburuari eman nahi diozun izena."
 
 #: source/abpilot/abspilot.src#RID_PAGE_FINAL.FT_LOCATION.FixedText.Text
 msgid  "Location"
@@ -153,7 +153,7 @@ msgstr "Helbide-liburuaren izena"
 
 #: source/abpilot/abspilot.src#RID_PAGE_FINAL.FT_DUPLICATENAME.FixedText.Text
 msgid  "Another data source already has this name. As data sources have to have globally unique names, you need to choose another one."
-msgstr ""
+msgstr "Beste datu-iturburu batek izen hori bera du. Datu-iturburuaren izenak bakarra izan behar duenez, beste izen bat aukeratu beharko duzu."
 
 #: source/abpilot/abspilot.src#RID_ERR_NEEDTYPESELECTION.ErrorBox.Message
 msgid  "Please select a type of address book."
@@ -161,7 +161,7 @@ msgstr "Hautatu helbide-liburuaren mota."
 
 #: source/abpilot/abspilot.src#RID_QRY_NOTABLES.QueryBox.Message
 msgid  "The data source does not contain any tables.\nDo you want to set it up as an address data source, anyway?"
-msgstr ""
+msgstr "Datu-iturburuak ez dauka taularik.\nHala ere helbideen datu-iturburu gisa ezarri nahi duzu?"
 
 #: source/abpilot/abspilot.src#RID_STR_DEFAULT_NAME.String.Text
 msgid  "Addresses"
@@ -184,8 +184,8 @@ msgid  "Address Data - Field Assignment"
 msgstr "Helbide-liburua  /  Eremu-esleipena"
 
 #: source/abpilot/abspilot.src#RID_STR_NOFIELDSASSIGNED.String.Text
-msgid  "There are no fields assigned at this time.\nYou can either assign fields now or do so later by first choosing:\n"File - Template - Address Book Source...""
-msgstr ""
+msgid  "There are no fields assigned at this time.\nYou can either assign fields now or do so later by first choosing:\n\"File - Template - Address Book Source...\""
+msgstr "Orain ez dago eremurik esleituta.\nNahi baduzu, orain eslei ditzakezu eremuak; geroago egin nahi baduzu, hautatu:\n\"Fitxategia – Txantiloia – Helbide-liburuaren iturburua...\""
 
 #: source/bibliography/toolbar.src#RID_BIB_TOOLBAR.TBC_FT_SOURCE.ToolBoxItem.Text
 msgid  "Table"
@@ -493,7 +493,7 @@ msgstr "Kontrola"
 
 #: source/dbpilots/listcombopages.src#RID_PAGE_LCW_CONTENTSELECTION_TABLE.FT_SELECTTABLE_LABEL.FixedText.Text
 msgid  "On the right side, you see all the tables from the data source of the form.\n\n\nChoose the table from which the data should be used as basis for the list content:"
-msgstr ""
+msgstr "Eskuinean, inprimakiaren datu-iturburuko taula guztiak ikus ditzakezu.\n\n\nAukeratu zein taulatako datuak erabili nahi dituzun zerrendaren edukia osatzeko."
 
 #: source/dbpilots/listcombopages.src#RID_PAGE_LCW_CONTENTSELECTION_FIELD.TabPage.Text
 msgid  "Field Selection"
@@ -513,7 +513,7 @@ msgstr "Hautatutako eremuaren edukia konbinazio-koadroko zerrendan azalduko da."
 
 #: source/dbpilots/listcombopages.src#RID_PAGE_LCW_CONTENTSELECTION_FIELD.STR_FIELDINFO_LISTBOX.String.Text
 msgid  "The contents of the selected field will be shown in the list box if the linked fields are identical."
-msgstr ""
+msgstr "Hautatutako eremuaren edukia zerrenda-koadroan azalduko da eremu estekatuak berdinak badira."
 
 #: source/dbpilots/listcombopages.src#RID_PAGE_LCW_FIELDLINK.TabPage.Text
 msgid  "Field Link"
@@ -521,7 +521,7 @@ msgstr "Eremu-esteka"
 
 #: source/dbpilots/listcombopages.src#RID_PAGE_LCW_FIELDLINK.FT_FIELDLINK_DESC.FixedText.Text
 msgid  "This is where you select fields with matching contents so that the value from the display field will be shown."
-msgstr ""
+msgstr "Aukeratu zein eremuren edukiek izan behar duten berdinak, bistaratzeko eremuan balioa erakusteko."
 
 #: source/dbpilots/listcombopages.src#RID_PAGE_LCW_FIELDLINK.FT_VALUELISTFIELD.FixedText.Text
 msgid  "Field from the ~Value Table"
@@ -533,7 +533,7 @@ msgstr "~Zerrenda-taulako eremua"
 
 #: source/dbpilots/listcombopages.src#RID_STR_COMBOWIZ_DBFIELD.String.Text
 msgid  "You can either save the value of the combo box in a database field or use it for display purposes."
-msgstr ""
+msgstr "Konbinazio-koadroaren balioa datu-baseko eremu batean gorde dezakezu, edo gero erakusteko erabil dezakezu."
 
 #: source/dbpilots/gridpages.src#RID_PAGE_GW_FIELDSELECTION.TabPage.Text
 msgid  "Field Selection"
@@ -589,7 +589,7 @@ msgstr "Datuak"
 
 #: source/dbpilots/commonpagesdbp.src#RID_PAGE_TABLESELECTION.FT_EXPLANATION.FixedText.Text
 msgid  "Currently, the form the control belongs to is not (or not completely) bound to a data source.\n\nPlease choose a data source and a table.\n\n\nPlease note that the settings made on this page will take effect immediately upon leaving the page."
-msgstr ""
+msgstr "Kontrol-eremuari dagokion inprimakia ez dago datu-iturburu batekin lotuta (edo ez erabat lotuta).\n\nAukeratu datu-iturburu bat eta taula bat.\n\nKontuan izan, orrialde honetan egindako ezarpenek berehala izango dutela eragina orrialdetik irtetean."
 
 #: source/dbpilots/commonpagesdbp.src#RID_PAGE_TABLESELECTION.FT_DATASOURCE.FixedText.Text
 msgid  "~Data source:"
@@ -705,7 +705,7 @@ msgstr "Hori zen aukera-taldea sortzeko behar zen guztia."
 
 #: source/dbpilots/groupboxpages.src#RID_STR_GROUPWIZ_DBFIELD.String.Text
 msgid  "You can either save the value of the option group in a database field or use it for a later action."
-msgstr ""
+msgstr "Aukera-taldearen balioa datu-baseko eremu batean gorde dezakezu, edo gero beste ekintza baterako erabil dezakezu."
 
 #: source/preload/preload.src#RID_DLG_OEMWIZARD.PB_PREV.PushButton.Text
 msgid  "<< Back"
@@ -737,7 +737,7 @@ msgstr "Ongi etorri"
 
 #: source/preload/preload.src#RID_TP_WELCOME.FT_INFO.FixedText.Text
 msgid  "Welcome to %PRODUCTNAME %PRODUCTVERSION OEM\n\nTo start the %PRODUCTNAME %PRODUCTVERSION OEM, please enter your personal data in the dialog following the license text. Important information is contained in the readme files which are located in the %PRODUCTNAME product directory. Please read these files carefully. You can also find detailed information at the Oracle website \n\nhttp://www.oracle.com/us/products/applications/open-office."
-msgstr ""
+msgstr "Ongi etorri %PRODUCTNAME %PRODUCTVERSION OEMra\n\n%PRODUCTNAME %PRODUCTVERSION OEM abiarazteko, idatzi zure datu pertsonalak lizentziaren testuaren ondorengo elkarrizketa-koadroan. Informazio garrantzitsua aurkituko duzu %PRODUCTNAME produktuaren direktorioan dauden IrakHau (readme) fitxategietan. Irakur itzazu arretaz. Oracle-ren web gunean ere informazio interesgarria aurkituko duzu: \n\nhttp://www.oracle.com/us/products/applications/open-office."
 
 #: source/preload/preload.src#RID_TP_LICENSE.TabPage.Text
 msgid  "License Agreement"
@@ -753,7 +753,7 @@ msgstr "1."
 
 #: source/preload/preload.src#RID_TP_LICENSE.FT_INFO2.FixedText.Text
 msgid  "View the complete License Agreement. Please use the scroll bar or the '%PAGEDOWN' button in this dialog to view the entire license text."
-msgstr ""
+msgstr "Ikusi lizentzia-kontratu osoa. Lizentziaren testu osoa ikusteko, erabili elkarrizketa-koadroko korritze-barra edo '%PAGEDOWN' botoia."
 
 #: source/preload/preload.src#RID_TP_LICENSE.PB_PAGEDOWN.PushButton.Text
 msgid  "Page Down"
@@ -801,7 +801,7 @@ msgstr "Ordenatze automatikoa"
 
 #: source/propctrlr/selectlabeldialog.src#RID_DLG_SELECTLABELCONTROL.1.FixedText.Text
 msgid  "These are control fields that can be used as label fields for the $control_class$ $control_name$."
-msgstr ""
+msgstr "Hauek dira $control_name$ $control_class$ren etiketa-eremu gisa erabil daitezkeen kontrol-eremuak."
 
 #: source/propctrlr/selectlabeldialog.src#RID_DLG_SELECTLABELCONTROL.1.CheckBox.Text
 msgid  "~No assignment"
@@ -817,7 +817,7 @@ msgstr "Inprimakiak"
 
 #: source/propctrlr/pcrmiscres.src#RID_STR_CONFIRM_DELETE_DATA_TYPE.String.Text
 msgid  "Do you want to delete the data type '#type#' from the model?\nPlease note that this will affect all controls which are bound to this data type."
-msgstr ""
+msgstr "'#type#' datu mota ezabatu nahi duzu eredutik?\nKontuan izan horrek eragina izango duela datu mota honi lotutako kontrol guztietan."
 
 #: source/propctrlr/pcrmiscres.src#RID_STR_PROPTITLE_PUSHBUTTON.String.Text
 msgid  "Button"
@@ -905,7 +905,7 @@ msgstr "Esteka-eremuak"
 
 #: source/propctrlr/formlinkdialog.src#RID_DLG_FORMLINKS.FT_EXPLANATION.FixedText.Text
 msgid  "Sub forms can be used to display detailed data about the current record of the master form. To do this, you can specify which columns in the sub form match which columns in the master form."
-msgstr ""
+msgstr "Azpinprimakiak erabil daitezke inprimaki maisuko uneko erregistroari buruzko xehetasunak ikusteko. Horretarako, azpinprimakiko zein zutabe inprimaki maisuko zein zutaberekin doan zehatz dezakezu."
 
 #: source/propctrlr/formlinkdialog.src#RID_DLG_FORMLINKS.PB_SUGGEST.PushButton.Text
 msgid  "Suggest"
@@ -1864,8 +1864,8 @@ msgid  "Help"
 msgstr "Laguntza"
 
 #: source/propctrlr/formres.src#RID_STR_UNABLETOCONNECT.String.Text
-msgid  "The connection to the data source "$name$" could not be established."
-msgstr ""
+msgid  "The connection to the data source \"$name$\" could not be established."
+msgstr "\"$name$\" datu-iturburuarekin ezin izan da konexiorik ezarri."
 
 #: source/propctrlr/formres.src#RID_STR_TEXT.String.Text
 msgid  "Text"
@@ -2297,11 +2297,11 @@ msgstr "Idatzi izen bat datu mota berriarentzat:"
 
 #: source/scanner/sanedlg.src#RID_SANE_DIALOG.RID_DEVICEINFO_BTN.PushButton.Text
 msgid  "About\n Dev~ice"
-msgstr ""
+msgstr "Gailuari buruzko \n~informazioa"
 
 #: source/scanner/sanedlg.src#RID_SANE_DIALOG.RID_PREVIEW_BTN.PushButton.Text
 msgid  "Create\nPreview"
-msgstr ""
+msgstr "Sortu\n~aurrebista"
 
 #: source/scanner/sanedlg.src#RID_SANE_DIALOG.RID_PREVIEW_BOX.FixedLine.Text
 msgid  "Preview"
@@ -2357,7 +2357,7 @@ msgstr "Eskanerra"
 
 #: source/scanner/sanedlg.src#RID_SANE_DEVICEINFO_TXT.String.Text
 msgid  "Device: %s\nVendor: %s\nModel: %s\nType: %s"
-msgstr ""
+msgstr "Gailua: %s\nHornitzailea: %s\nModeloa: %s\nMota: %s"
 
 #: source/scanner/sanedlg.src#RID_SANE_SCANERROR_TXT.String.Text
 msgid  "An error occurred while scanning."
@@ -2365,7 +2365,7 @@ msgstr "Errorea gertatu da eskaneatzean."
 
 #: source/scanner/sanedlg.src#RID_SANE_NORESOLUTIONOPTION_TXT.String.Text
 msgid  "The device does not offer a preview option. Therefore, a normal scan will be used as a preview instead. This may take a considerable amount of time."
-msgstr ""
+msgstr "Gailuak ez dauka aurrebista erakusteko aukerarik. Horren ordez, eskaneatze normal bat egin dezake aurrebista gisa, baina denbora asko beharko du horretarako."
 
 #: source/scanner/sanedlg.src#RID_SANE_NOSANELIB_TXT.String.Text
 msgid  "The SANE interface could not be initialized. Scanning is not possible."
@@ -2405,7 +2405,7 @@ msgstr "%PRODUCTNAME %PRODUCTVERSION eguneratuta dago."
 
 #: source/update/check/updatehdl.src#RID_UPDATE_STR_UPD_FOUND.String.Text
 msgid  "%PRODUCTNAME %NEXTVERSION is available.\n\nThe installed version is %PRODUCTNAME %PRODUCTVERSION.\n\nNote: Before downloading  an update, please ensure that you have sufficient access rights to install it.\nA password, usually the administrator's or root password, may be required."
-msgstr ""
+msgstr "%PRODUCTNAME %NEXTVERSION eskuragarri dago.\n\nInstalatutako bertsioa honakoa da: %PRODUCTNAME %PRODUCTVERSION.\n\nOharra: eguneraketa deskargatu aurretik, ziurtatu nahikoa baimen dituzula instalatzeko.\nPasahitza eskatuko da, normalean 'root' edo administratzailearena."
 
 #: source/update/check/updatehdl.src#RID_UPDATE_STR_DLG_TITLE.String.Text
 msgid  "Check for Updates"
@@ -2421,7 +2421,7 @@ msgstr "%PRODUCTNAME %NEXTVERSION deskargatzen, hemen trabatuta"
 
 #: source/update/check/updatehdl.src#RID_UPDATE_STR_DOWNLOAD_WARN.String.Text
 msgid  "The download location is: %DOWNLOAD_PATH.\n\nUnder Tools – Options... - %PRODUCTNAME – Online Update you can change the download location."
-msgstr ""
+msgstr "Deskargaren kokalekua: %DOWNLOAD_PATH.\n\nTresnak – Aukerak... - %PRODUCTNAME – Lineako eguneratzea menuan deskargaren kokalekua alda dezakezu."
 
 #: source/update/check/updatehdl.src#RID_UPDATE_STR_DOWNLOAD_DESCR.String.Text
 msgid  "%FILE_NAME has been downloaded to %DOWNLOAD_PATH."
@@ -2429,7 +2429,7 @@ msgstr "%FILE_NAME deskargatu da %DOWNLOAD_PATH kokalekuan."
 
 #: source/update/check/updatehdl.src#RID_UPDATE_STR_DOWNLOAD_UNAVAIL.String.Text
 msgid  "The automatic download of the update is currently not available.\n\nClick 'Download...' to download %PRODUCTNAME %NEXTVERSION manually from the web site."
-msgstr ""
+msgstr "Eguneraketaren deskarga automatikoa oraingoz ez dago erabilgarri.\n\nEgin klik 'Deskargatu...' aukeran %PRODUCTNAME %NEXTVERSION eskuz deskargatzeko web gunetik."
 
 #: source/update/check/updatehdl.src#RID_UPDATE_STR_DOWNLOADING.String.Text
 msgid  "Downloading %PRODUCTNAME %NEXTVERSION..."
@@ -2437,7 +2437,7 @@ msgstr "%PRODUCTNAME %NEXTVERSION deskargatzen..."
 
 #: source/update/check/updatehdl.src#RID_UPDATE_STR_READY_INSTALL.String.Text
 msgid  "Download of %PRODUCTNAME %NEXTVERSION completed. Ready for installation."
-msgstr ""
+msgstr "%PRODUCTNAME %NEXTVERSION programaren deskarga osatuta. Instalatzeko prest."
 
 #: source/update/check/updatehdl.src#RID_UPDATE_STR_CANCEL_TITLE.String.Text
 msgid  "%PRODUCTNAME %PRODUCTVERSION"
@@ -2449,7 +2449,7 @@ msgstr "Nahi duzu deskarga bertan behera uztea?"
 
 #: source/update/check/updatehdl.src#RID_UPDATE_STR_BEGIN_INSTALL.String.Text
 msgid  "To install the update, %PRODUCTNAME %PRODUCTVERSION needs to be closed. Do you want to install the update now?"
-msgstr ""
+msgstr "Eguneraketa instalatzeko %PRODUCTNAME %PRODUCTVERSION itxi egin behar da. Nahi duzu eguneraketa orain instalatzea?"
 
 #: source/update/check/updatehdl.src#RID_UPDATE_STR_INSTALL_NOW.String.Text
 msgid  "Install ~now"
@@ -2461,15 +2461,15 @@ msgstr "Instalatu ~beranduago"
 
 #: source/update/check/updatehdl.src#RID_UPDATE_STR_INSTALL_ERROR.String.Text
 msgid  "Could not run the installer application, please run %FILE_NAME in %DOWNLOAD_PATH manually."
-msgstr ""
+msgstr "Ezin izan da instalatzailearen aplikazioa exekutatu. %DOWNLOAD_PATH kokalekuko %FILE_NAME eskuz exekutatu."
 
 #: source/update/check/updatehdl.src#RID_UPDATE_STR_OVERWRITE_WARNING.String.Text
 msgid  "A file with that name already exists! Do you want to overwrite the existing file?"
-msgstr ""
+msgstr "Izen bereko fitxategia badago lehendik ere. Nahi duzu existitzen den fitxategia gainidaztea?"
 
 #: source/update/check/updatehdl.src#RID_UPDATE_STR_RELOAD_WARNING.String.Text
 msgid  "A file with the name '%FILENAME' already exists in '%DOWNLOAD_PATH'! Do you want to continue with the download or delete and reload the file?"
-msgstr ""
+msgstr "'%FILENAME' izeneko fitxategia badago lehendik ere '%DOWNLOAD_PATH'(e)n. Deskargarekin jarraitzea , edo ezabatu eta fitxategia birkargatzea nahi duzu?"
 
 #: source/update/check/updatehdl.src#RID_UPDATE_STR_RELOAD_RELOAD.String.Text
 msgid  "Reload File"

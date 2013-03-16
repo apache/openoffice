@@ -193,87 +193,70 @@ msgid  "Contains a selection of sample letters, reports and other documents"
 msgstr "حاوی منتخبی از نامه‌ها، گزارش‌ها و دیگر نوشتارهای نمونه است"
 
 #: source/contnr/fileview.src#STR_SVT_FILEVIEW_COLUMN_TITLE.String.Text
-#, fuzzy
 msgid  "Title"
 msgstr "عنوان"
 
 #: source/contnr/fileview.src#STR_SVT_FILEVIEW_COLUMN_SIZE.String.Text
-#, fuzzy
 msgid  "Size"
 msgstr "اندازه"
 
 #: source/contnr/fileview.src#STR_SVT_FILEVIEW_COLUMN_DATE.String.Text
-#, fuzzy
 msgid  "Date modified"
 msgstr "تاریخ تغییر"
 
 #: source/contnr/fileview.src#STR_SVT_FILEVIEW_COLUMN_TYPE.String.Text
-#, fuzzy
 msgid  "Type"
 msgstr "نوع"
 
 #: source/contnr/fileview.src#STR_SVT_FILEVIEW_ERR_MAKEFOLDER.String.Text
-#, fuzzy
 msgid  "Could not create the folder %1."
 msgstr "ایجاد پوشهٔ %1 ممکن نبود."
 
 #: source/contnr/fileview.src#STR_SVT_BYTES.String.Text
-#, fuzzy
 msgid  "Bytes"
 msgstr "بایت"
 
 #: source/contnr/fileview.src#STR_SVT_KB.String.Text
-#, fuzzy
 msgid  "KB"
 msgstr "کیلوبایت"
 
 #: source/contnr/fileview.src#STR_SVT_MB.String.Text
-#, fuzzy
 msgid  "MB"
 msgstr "مگابایت"
 
 #: source/contnr/fileview.src#STR_SVT_GB.String.Text
-#, fuzzy
 msgid  "GB"
 msgstr "گیگابایت"
 
 #: source/contnr/fileview.src#RID_FILEVIEW_CONTEXTMENU.MID_FILEVIEW_DELETE.MenuItem.Text
-#, fuzzy
 msgid  "~Delete"
 msgstr "~حذف"
 
 #: source/contnr/fileview.src#RID_FILEVIEW_CONTEXTMENU.MID_FILEVIEW_RENAME.MenuItem.Text
-#, fuzzy
 msgid  "~Rename"
 msgstr "~تغییرنام"
 
 #: source/contnr/fileview.src#DLG_SVT_QUERYDELETE.ModalDialog.Text
-#, fuzzy
 msgid  "Confirm Delete"
 msgstr "حذف شود"
 
 #: source/contnr/fileview.src#DLG_SVT_QUERYDELETE.TXT_ENTRY.FixedText.Text
-#, fuzzy
 msgid  "Entry:"
 msgstr "مدخل:"
 
 #: source/contnr/fileview.src#DLG_SVT_QUERYDELETE.TXT_QUERYMSG.FixedText.Text
-#, fuzzy
 msgid  "Are you sure you want to delete the selected data?"
 msgstr "آیا مطمئنید که می‌خواهید داده‌های انتخاب شده را حذف کنید؟"
 
 #: source/contnr/fileview.src#DLG_SVT_QUERYDELETE.BTN_YES.PushButton.Text
-#, fuzzy
 msgid  "~Delete"
 msgstr "~حذف"
 
 #: source/contnr/fileview.src#DLG_SVT_QUERYDELETE.BTN_ALL.PushButton.Text
-#, fuzzy
 msgid  "Delete ~All"
 msgstr "حذف ~همه"
 
 #: source/contnr/fileview.src#DLG_SVT_QUERYDELETE.BTN_NO.PushButton.Text
-#, fuzzy
 msgid  "Do ~Not Delete"
 msgstr "حذف ~نشود"
 
@@ -299,22 +282,18 @@ msgid  "Move To End"
 msgstr ""
 
 #: source/control/calendar.src#STR_SVT_CALENDAR_DAY.String.Text
-#, fuzzy
 msgid  "Day"
 msgstr "روز"
 
 #: source/control/calendar.src#STR_SVT_CALENDAR_WEEK.String.Text
-#, fuzzy
 msgid  "Week"
 msgstr "هفته"
 
 #: source/control/calendar.src#STR_SVT_CALENDAR_TODAY.String.Text
-#, fuzzy
 msgid  "Today"
 msgstr "امروز"
 
 #: source/control/calendar.src#STR_SVT_CALENDAR_NONE.String.Text
-#, fuzzy
 msgid  "None"
 msgstr "هیچ‌کدام"
 
@@ -374,39 +353,37 @@ msgid  "This is a screen font. The printer image may differ."
 msgstr "این قلم برای صفحهٔ نمایش است. تصویر چاپگر ممکن است متفاوت باشد."
 
 #: source/control/ctrltool.src#STR_SVT_FONTMAP_SIZENOTAVAILABLE.String.Text
+#, fuzzy
 msgid  "This font size has not been installed. The closest available size will be used."
-msgstr ""
+msgstr "این اندازهٔ قلم نصب نشده است. نزدیکترین اندازهٔ ممکن استفاده خواهد شد."
 
 #: source/control/ctrltool.src#STR_SVT_FONTMAP_STYLENOTAVAILABLE.String.Text
+#, fuzzy
 msgid  "This font style will be simulated or the closest matching style will be used."
-msgstr ""
+msgstr "این سبک قلم شبیه‌سازی خواهد شد یا مشابه‌ترین سبک استفاده خواهد شد."
 
 #: source/control/ctrltool.src#STR_SVT_FONTMAP_NOTAVAILABLE.String.Text
+#, fuzzy
 msgid  "This font has not been installed. The closest available font will be used."
-msgstr ""
+msgstr "این قلم نصب نشده است. نزدیکترین قلم موجود استفاده خواهد شد."
 
 #: source/control/ctrlbox.src#STR_SVT_AUTOMATIC_COLOR.String.Text
-#, fuzzy
 msgid  "Automatic"
 msgstr "خودکار"
 
 #: source/control/ctrlbox.src#STR_SVT_COLLATE_ALPHANUMERIC.String.Text
-#, fuzzy
 msgid  "Alphanumeric"
 msgstr "الفباعددی"
 
 #: source/control/ctrlbox.src#STR_SVT_COLLATE_NORMAL.String.Text
-#, fuzzy
 msgid  "Normal"
 msgstr "عادی"
 
 #: source/control/ctrlbox.src#STR_SVT_COLLATE_CHARSET.String.Text
-#, fuzzy
 msgid  "Character set"
 msgstr "مجموعه نویسه"
 
 #: source/control/ctrlbox.src#STR_SVT_COLLATE_DICTIONARY.String.Text
-#, fuzzy
 msgid  "Dictionary"
 msgstr "لغت‌نامه"
 
@@ -423,7 +400,6 @@ msgid  "Radical"
 msgstr ""
 
 #: source/control/ctrlbox.src#STR_SVT_COLLATE_UNICODE.String.Text
-#, fuzzy
 msgid  "Unicode"
 msgstr "یونی‌کد"
 
@@ -432,27 +408,22 @@ msgid  "Zhuyin"
 msgstr ""
 
 #: source/control/ctrlbox.src#STR_SVT_COLLATE_PHONEBOOK.String.Text
-#, fuzzy
 msgid  "Phone book"
 msgstr "دفتر تلفن"
 
 #: source/control/ctrlbox.src#STR_SVT_COLLATE_PHONETIC_F.String.Text
-#, fuzzy
 msgid  "Phonetic (alphanumeric first)"
 msgstr "آواشناختی (الفباعددی‌ها اول)"
 
 #: source/control/ctrlbox.src#STR_SVT_COLLATE_PHONETIC_L.String.Text
-#, fuzzy
 msgid  "Phonetic (alphanumeric last)"
 msgstr "آواشناختی (الفباعددی‌ها آخر)"
 
 #: source/control/ctrlbox.src#STR_SVT_INDEXENTRY_ALPHANUMERIC.String.Text
-#, fuzzy
 msgid  "Alphanumeric"
 msgstr "الفباعددی"
 
 #: source/control/ctrlbox.src#STR_SVT_INDEXENTRY_DICTIONARY.String.Text
-#, fuzzy
 msgid  "Dictionary"
 msgstr "لغت‌نامه"
 
@@ -473,7 +444,6 @@ msgid  "Zhuyin"
 msgstr ""
 
 #: source/control/ctrlbox.src#STR_SVT_INDEXENTRY_PHONETIC_FS.String.Text
-#, fuzzy
 msgid  "Phonetic (alphanumeric first, grouped by syllables)"
 msgstr "آواشناختی (الفباعددی‌ها اول، گروه شده بر اساس سیلاب)"
 
@@ -672,171 +642,138 @@ msgid  "~Options..."
 msgstr ""
 
 #: source/dialogs/filedlg2.src#STR_FILEDLG_SELECT.String.Text
-#, fuzzy
 msgid  "Select Directory"
 msgstr "انتخاب شاخه"
 
 #: source/dialogs/filedlg2.src#STR_FILEDLG_CANTCHDIR.String.Text
-#, fuzzy
 msgid  "Cannot change to directory"
 msgstr "نمی‌توان به شاخه رفت"
 
 #: source/dialogs/filedlg2.src#STR_FILEDLG_OPEN.String.Text
-#, fuzzy
 msgid  "Open"
 msgstr "باز کردن"
 
 #: source/dialogs/filedlg2.src#STR_FILEDLG_FILE.String.Text
-#, fuzzy
 msgid  "~File"
 msgstr "~پرونده"
 
 #: source/dialogs/filedlg2.src#STR_FILEDLG_DIR.String.Text
-#, fuzzy
 msgid  "~Directory"
 msgstr "~شاخه"
 
 #: source/dialogs/filedlg2.src#STR_FILEDLG_TYPE.String.Text
-#, fuzzy
 msgid  "File ~type"
 msgstr "~نوع پرونده"
 
 #: source/dialogs/filedlg2.src#STR_FILEDLG_CANTOPENFILE.String.Text
-#, fuzzy
 msgid  "Can't open file"
 msgstr "پرونده باز نمی‌شود"
 
 #: source/dialogs/filedlg2.src#STR_FILEDLG_CANTOPENDIR.String.Text
-#, fuzzy
 msgid  "Can't open directory"
 msgstr "شاخه باز نمی‌شود"
 
 #: source/dialogs/filedlg2.src#STR_FILEDLG_OVERWRITE.String.Text
 msgid  "This file already exists. \nOverwrite ?"
-msgstr ""
+msgstr "این پرونده از قبل وجود دارد. \nرونویسی شود؟"
 
 #: source/dialogs/filedlg2.src#STR_FILEDLG_GOUP.String.Text
-#, fuzzy
 msgid  "Up One Level"
 msgstr "یک سطح به بالا"
 
 #: source/dialogs/filedlg2.src#STR_FILEDLG_SAVE.String.Text
-#, fuzzy
 msgid  "Save"
 msgstr "ذخیره"
 
 #: source/dialogs/filedlg2.src#STR_FILEDLG_DRIVES.String.Text
-#, fuzzy
 msgid  "D~rive"
 msgstr "~دیسک‌گردان"
 
 #: source/dialogs/filedlg2.src#STR_FILEDLG_HOME.String.Text
-#, fuzzy
 msgid  "User Directory"
 msgstr "شاخهٔ کاربر"
 
 #: source/dialogs/filedlg2.src#STR_FILEDLG_NEWDIR.String.Text
-#, fuzzy
 msgid  "Create Directory"
 msgstr "ایجاد شاخه"
 
 #: source/dialogs/filedlg2.src#STR_FILEDLG_ASKNEWDIR.String.Text
-#, fuzzy
 msgid  "Do you want the directory %s to be created ?"
 msgstr "آیا می‌خواهید شاخهٔ %s ایجاد شود؟"
 
 #: source/dialogs/addresstemplate.src#DLG_ADDRESSBOOKSOURCE.ModalDialog.Text
-#, fuzzy
 msgid  "Templates: Address Book Assignment"
 msgstr "قالب‌ها: تخصیص دفترچهٔ نشانی"
 
 #: source/dialogs/addresstemplate.src#DLG_ADDRESSBOOKSOURCE.FL_DATASOURCEFRAME.FixedLine.Text
-#, fuzzy
 msgid  "Address Book Source"
 msgstr "منبع دفترچهٔ نشانی"
 
 #: source/dialogs/addresstemplate.src#DLG_ADDRESSBOOKSOURCE.FT_DATASOURCE.FixedText.Text
-#, fuzzy
 msgid  "Data source"
 msgstr "منبع داده"
 
 #: source/dialogs/addresstemplate.src#DLG_ADDRESSBOOKSOURCE.PB_ADMINISTATE_DATASOURCES.PushButton.Text
-#, fuzzy
 msgid  "~Address Data Source..."
 msgstr "~مدیریت..."
 
 #: source/dialogs/addresstemplate.src#DLG_ADDRESSBOOKSOURCE.FT_TABLE.FixedText.Text
-#, fuzzy
 msgid  "Table"
 msgstr "جدول"
 
 #: source/dialogs/addresstemplate.src#DLG_ADDRESSBOOKSOURCE.FT_FIELDS.FixedText.Text
-#, fuzzy
 msgid  "Field assignment"
 msgstr "تخصیص فیلد"
 
 #: source/dialogs/addresstemplate.src#DLG_ADDRESSBOOKSOURCE.STR_NO_FIELD_SELECTION.String.Text
-#, fuzzy
 msgid  "<none>"
 msgstr "<هیچ‌کدام>"
 
 #: source/dialogs/addresstemplate.src#DLG_ADDRESSBOOKSOURCE.STR_FIELD_COMPANY.String.Text
-#, fuzzy
 msgid  "Company"
 msgstr "شرکت"
 
 #: source/dialogs/addresstemplate.src#DLG_ADDRESSBOOKSOURCE.STR_FIELD_DEPARTMENT.String.Text
-#, fuzzy
 msgid  "Department"
 msgstr "بخش"
 
 #: source/dialogs/addresstemplate.src#DLG_ADDRESSBOOKSOURCE.STR_FIELD_FIRSTNAME.String.Text
-#, fuzzy
 msgid  "First name"
 msgstr "نام"
 
 #: source/dialogs/addresstemplate.src#DLG_ADDRESSBOOKSOURCE.STR_FIELD_LASTNAME.String.Text
-#, fuzzy
 msgid  "Last name"
 msgstr "نام خانوادگی"
 
 #: source/dialogs/addresstemplate.src#DLG_ADDRESSBOOKSOURCE.STR_FIELD_STREET.String.Text
-#, fuzzy
 msgid  "Street"
 msgstr "خیابان"
 
 #: source/dialogs/addresstemplate.src#DLG_ADDRESSBOOKSOURCE.STR_FIELD_COUNTRY.String.Text
-#, fuzzy
 msgid  "Country"
 msgstr "کشور"
 
 #: source/dialogs/addresstemplate.src#DLG_ADDRESSBOOKSOURCE.STR_FIELD_ZIPCODE.String.Text
-#, fuzzy
 msgid  "ZIP Code"
 msgstr "کد پستی"
 
 #: source/dialogs/addresstemplate.src#DLG_ADDRESSBOOKSOURCE.STR_FIELD_CITY.String.Text
-#, fuzzy
 msgid  "City"
 msgstr "شهر"
 
 #: source/dialogs/addresstemplate.src#DLG_ADDRESSBOOKSOURCE.STR_FIELD_TITLE.String.Text
-#, fuzzy
 msgid  "Title"
 msgstr "عنوان"
 
 #: source/dialogs/addresstemplate.src#DLG_ADDRESSBOOKSOURCE.STR_FIELD_POSITION.String.Text
-#, fuzzy
 msgid  "Position"
 msgstr "موقعیت"
 
 #: source/dialogs/addresstemplate.src#DLG_ADDRESSBOOKSOURCE.STR_FIELD_ADDRFORM.String.Text
-#, fuzzy
 msgid  "Addr. Form"
 msgstr "فرم نشانی"
 
 #: source/dialogs/addresstemplate.src#DLG_ADDRESSBOOKSOURCE.STR_FIELD_INITIALS.String.Text
-#, fuzzy
 msgid  "Initials"
 msgstr "حرف اول نام وسط"
 
@@ -845,272 +782,218 @@ msgid  "Complimentary close"
 msgstr ""
 
 #: source/dialogs/addresstemplate.src#DLG_ADDRESSBOOKSOURCE.STR_FIELD_HOMETEL.String.Text
-#, fuzzy
 msgid  "Tel: Home"
 msgstr "تلفن: خانه"
 
 #: source/dialogs/addresstemplate.src#DLG_ADDRESSBOOKSOURCE.STR_FIELD_WORKTEL.String.Text
-#, fuzzy
 msgid  "Tel: Work"
 msgstr "تلفن: محل کار"
 
 #: source/dialogs/addresstemplate.src#DLG_ADDRESSBOOKSOURCE.STR_FIELD_FAX.String.Text
-#, fuzzy
 msgid  "FAX"
 msgstr "دورنگار"
 
 #: source/dialogs/addresstemplate.src#DLG_ADDRESSBOOKSOURCE.STR_FIELD_EMAIL.String.Text
-#, fuzzy
 msgid  "E-mail"
 msgstr "پست الکترونیکی"
 
 #: source/dialogs/addresstemplate.src#DLG_ADDRESSBOOKSOURCE.STR_FIELD_URL.String.Text
-#, fuzzy
 msgid  "URL"
 msgstr "نشانی اینترنتی"
 
 #: source/dialogs/addresstemplate.src#DLG_ADDRESSBOOKSOURCE.STR_FIELD_NOTE.String.Text
-#, fuzzy
 msgid  "Note"
 msgstr "یادداشت"
 
 #: source/dialogs/addresstemplate.src#DLG_ADDRESSBOOKSOURCE.STR_FIELD_USER1.String.Text
-#, fuzzy
 msgid  "User 1"
 msgstr "کاربر ۱"
 
 #: source/dialogs/addresstemplate.src#DLG_ADDRESSBOOKSOURCE.STR_FIELD_USER2.String.Text
-#, fuzzy
 msgid  "User 2"
 msgstr "کاربر ۲"
 
 #: source/dialogs/addresstemplate.src#DLG_ADDRESSBOOKSOURCE.STR_FIELD_USER3.String.Text
-#, fuzzy
 msgid  "User 3"
 msgstr "کاربر ۳"
 
 #: source/dialogs/addresstemplate.src#DLG_ADDRESSBOOKSOURCE.STR_FIELD_USER4.String.Text
-#, fuzzy
 msgid  "User 4"
 msgstr "کاربر ۴"
 
 #: source/dialogs/addresstemplate.src#DLG_ADDRESSBOOKSOURCE.STR_FIELD_ID.String.Text
-#, fuzzy
 msgid  "ID"
 msgstr "شناسه"
 
 #: source/dialogs/addresstemplate.src#DLG_ADDRESSBOOKSOURCE.STR_FIELD_STATE.String.Text
-#, fuzzy
 msgid  "State"
 msgstr "ایالت"
 
 #: source/dialogs/addresstemplate.src#DLG_ADDRESSBOOKSOURCE.STR_FIELD_OFFICETEL.String.Text
-#, fuzzy
 msgid  "Tel: Office"
 msgstr "تلفن: دفتر"
 
 #: source/dialogs/addresstemplate.src#DLG_ADDRESSBOOKSOURCE.STR_FIELD_PAGER.String.Text
-#, fuzzy
 msgid  "Pager"
 msgstr "پی‌جو"
 
 #: source/dialogs/addresstemplate.src#DLG_ADDRESSBOOKSOURCE.STR_FIELD_MOBILE.String.Text
-#, fuzzy
 msgid  "Mobile"
 msgstr "تلفن همراه"
 
 #: source/dialogs/addresstemplate.src#DLG_ADDRESSBOOKSOURCE.STR_FIELD_TELOTHER.String.Text
-#, fuzzy
 msgid  "Tel: Other"
 msgstr "تلفن: غیره"
 
 #: source/dialogs/addresstemplate.src#DLG_ADDRESSBOOKSOURCE.STR_FIELD_CALENDAR.String.Text
-#, fuzzy
 msgid  "Calendar"
 msgstr "تقویم"
 
 #: source/dialogs/addresstemplate.src#DLG_ADDRESSBOOKSOURCE.STR_FIELD_INVITE.String.Text
-#, fuzzy
 msgid  "Invite"
 msgstr "دعوت"
 
 #: source/dialogs/formats.src#STR_FORMAT_STRING.String.Text
-#, fuzzy
 msgid  "Unformatted text"
 msgstr "متن بدون قالب"
 
 #: source/dialogs/formats.src#STR_FORMAT_BITMAP.String.Text
-#, fuzzy
 msgid  "Bitmap"
 msgstr "نقشه‌نقطه‌ای"
 
 #: source/dialogs/formats.src#STR_FORMAT_GDIMETAFILE.String.Text
-#, fuzzy
 msgid  "GDI metafile"
 msgstr "فراپروندهٔ GDI"
 
 #: source/dialogs/formats.src#STR_FORMAT_RTF.String.Text
-#, fuzzy
 msgid  "Formatted text [RTF]"
 msgstr "متن قالب‌بندی شده [RTF]"
 
 #: source/dialogs/formats.src#STR_FORMAT_ID_DRAWING.String.Text
-#, fuzzy
 msgid  "Drawing format"
 msgstr "قالب نقاشی"
 
 #: source/dialogs/formats.src#STR_FORMAT_ID_SVXB.String.Text
-#, fuzzy
 msgid  "SVXB (StarView bitmap/animation)"
 msgstr "‏SVXB (نقشه‌بیتی/پویانمایی استارویو)"
 
 #: source/dialogs/formats.src#STR_FORMAT_ID_INTERNALLINK_STATE.String.Text
-#, fuzzy
 msgid  "Status Info from Svx Internal Link"
 msgstr "اطلاعات وضعیت از پیوند اینترنتی Svx"
 
 #: source/dialogs/formats.src#STR_FORMAT_ID_SOLK.String.Text
-#, fuzzy
 msgid  "SOLK (%PRODUCTNAME Link)"
 msgstr "‏SOLK (پیوند %PRODUCTNAME)"
 
 #: source/dialogs/formats.src#STR_FORMAT_ID_NETSCAPE_BOOKMARK.String.Text
-#, fuzzy
 msgid  "Netscape Bookmark"
 msgstr "نشانک نت‌اسکیپ"
 
 #: source/dialogs/formats.src#STR_FORMAT_ID_STARSERVER.String.Text
-#, fuzzy
 msgid  "Star server format"
 msgstr "قالب کارگزار استار"
 
 #: source/dialogs/formats.src#STR_FORMAT_ID_STAROBJECT.String.Text
-#, fuzzy
 msgid  "Star object format"
 msgstr "قالب شیء استار"
 
 #: source/dialogs/formats.src#STR_FORMAT_ID_APPLETOBJECT.String.Text
-#, fuzzy
 msgid  "Applet object"
 msgstr "شیء برنامک"
 
 #: source/dialogs/formats.src#STR_FORMAT_ID_PLUGIN_OBJECT.String.Text
-#, fuzzy
 msgid  "Plug-in object"
 msgstr "شیء متصل‌شونده"
 
 #: source/dialogs/formats.src#STR_FORMAT_ID_STARWRITER_30.String.Text
-#, fuzzy
 msgid  "StarWriter 3.0 object"
 msgstr "شیء استاررایتر 3.0"
 
 #: source/dialogs/formats.src#STR_FORMAT_ID_STARWRITER_40.String.Text
-#, fuzzy
 msgid  "StarWriter 4.0 object"
 msgstr "شیء استاررایتر 4.0"
 
 #: source/dialogs/formats.src#STR_FORMAT_ID_STARWRITER_50.String.Text
-#, fuzzy
 msgid  "StarWriter 5.0 object"
 msgstr "شیء استاررایتر 5.0"
 
 #: source/dialogs/formats.src#STR_FORMAT_ID_STARWRITERWEB_40.String.Text
-#, fuzzy
 msgid  "StarWriter/Web 4.0 object"
 msgstr "شیء استاررایتر/وب 4.0"
 
 #: source/dialogs/formats.src#STR_FORMAT_ID_STARWRITERWEB_50.String.Text
-#, fuzzy
 msgid  "StarWriter/Web 5.0 object"
 msgstr "شیء استاررایتر/وب 5.0"
 
 #: source/dialogs/formats.src#STR_FORMAT_ID_STARWRITERGLOB_40.String.Text
-#, fuzzy
 msgid  "StarWriter/Master 4.0 object"
 msgstr "شیء استاررایتر/مستر 4.0"
 
 #: source/dialogs/formats.src#STR_FORMAT_ID_STARWRITERGLOB_50.String.Text
-#, fuzzy
 msgid  "StarWriter/Master 5.0 object"
 msgstr "شیء استاررایتر/مستر 5.0"
 
 #: source/dialogs/formats.src#STR_FORMAT_ID_STARDRAW.String.Text
-#, fuzzy
 msgid  "StarDraw object"
 msgstr "شیء استاردرا"
 
 #: source/dialogs/formats.src#STR_FORMAT_ID_STARDRAW_40.String.Text
-#, fuzzy
 msgid  "StarDraw 4.0 object"
 msgstr "شیء استاردرا 4.0"
 
 #: source/dialogs/formats.src#STR_FORMAT_ID_STARIMPRESS_50.String.Text
-#, fuzzy
 msgid  "StarImpress 5.0 object"
 msgstr "شیء استارایمپرس 5.0"
 
 #: source/dialogs/formats.src#STR_FORMAT_ID_STARDRAW_50.String.Text
-#, fuzzy
 msgid  "StarDraw 5.0 object"
 msgstr "شیء استاردرا 5.0"
 
 #: source/dialogs/formats.src#STR_FORMAT_ID_STARCALC.String.Text
-#, fuzzy
 msgid  "StarCalc object"
 msgstr "شیء استارکَلک"
 
 #: source/dialogs/formats.src#STR_FORMAT_ID_STARCALC_40.String.Text
-#, fuzzy
 msgid  "StarCalc  4.0 object"
 msgstr "شیء استارکَلک 4.0"
 
 #: source/dialogs/formats.src#STR_FORMAT_ID_STARCALC_50.String.Text
-#, fuzzy
 msgid  "StarCalc 5.0 object"
 msgstr "شیء استارکَلک 5.0"
 
 #: source/dialogs/formats.src#STR_FORMAT_ID_STARCHART.String.Text
-#, fuzzy
 msgid  "StarChart object"
 msgstr "شیء استارچارت"
 
 #: source/dialogs/formats.src#STR_FORMAT_ID_STARCHART_40.String.Text
-#, fuzzy
 msgid  "StarChart 4.0 object"
 msgstr "شیء استارچارت 4.0"
 
 #: source/dialogs/formats.src#STR_FORMAT_ID_STARCHART_50.String.Text
-#, fuzzy
 msgid  "StarChart 5.0 object"
 msgstr "شیء استارچارت 5.0"
 
 #: source/dialogs/formats.src#STR_FORMAT_ID_STARIMAGE.String.Text
-#, fuzzy
 msgid  "StarImage object"
 msgstr "شیء استارایمیج"
 
 #: source/dialogs/formats.src#STR_FORMAT_ID_STARIMAGE_40.String.Text
-#, fuzzy
 msgid  "StarImage 4.0 object"
 msgstr "شیء استارایمیج 4.0"
 
 #: source/dialogs/formats.src#STR_FORMAT_ID_STARIMAGE_50.String.Text
-#, fuzzy
 msgid  "StarImage 5.0 object"
 msgstr "شیء استارایمیج 5.0"
 
 #: source/dialogs/formats.src#STR_FORMAT_ID_STARMATH.String.Text
-#, fuzzy
 msgid  "StarMath object"
 msgstr "شیء استارمَت"
 
 #: source/dialogs/formats.src#STR_FORMAT_ID_STARMATH_40.String.Text
-#, fuzzy
 msgid  "StarMath 4.0 object"
 msgstr "شیء استارمَت 4.0"
 
 #: source/dialogs/formats.src#STR_FORMAT_ID_STARMATH_50.String.Text
-#, fuzzy
 msgid  "StarMath 5.0 object"
 msgstr "شیء استارمَت 5.0"
 
@@ -1119,22 +1002,18 @@ msgid  "StarObject Paint object"
 msgstr ""
 
 #: source/dialogs/formats.src#STR_FORMAT_ID_HTML.String.Text
-#, fuzzy
 msgid  "HTML (HyperText Markup Language)"
 msgstr "‏HTML (HyperText Markup Language)"
 
 #: source/dialogs/formats.src#STR_FORMAT_ID_HTML_SIMPLE.String.Text
-#, fuzzy
 msgid  "HTML format"
 msgstr "قالب HTML"
 
 #: source/dialogs/formats.src#STR_FORMAT_ID_BIFF_5.String.Text
-#, fuzzy
 msgid  "Biff5 (Microsoft Excel 5.0/95)"
 msgstr "‏Biff5 (اِکسل مایکروسافت 5.0/95)"
 
 #: source/dialogs/formats.src#STR_FORMAT_ID_BIFF_8.String.Text
-#, fuzzy
 msgid  "Biff8 (Microsoft Excel 97/2000/XP)"
 msgstr "‏Biff8 (اِکسل مایکروسافت 97/2000/XP)"
 
@@ -1143,7 +1022,6 @@ msgid  "Sylk"
 msgstr ""
 
 #: source/dialogs/formats.src#STR_FORMAT_ID_LINK.String.Text
-#, fuzzy
 msgid  "DDE link"
 msgstr "پیوند DDE"
 
@@ -1152,7 +1030,6 @@ msgid  "DIF"
 msgstr ""
 
 #: source/dialogs/formats.src#STR_FORMAT_ID_MSWORD_DOC.String.Text
-#, fuzzy
 msgid  "Microsoft Word object"
 msgstr "شیء وُرد مایکروسافت"
 
@@ -1161,7 +1038,6 @@ msgid  "StarFrameSet object"
 msgstr ""
 
 #: source/dialogs/formats.src#STR_FORMAT_ID_OFFICE_DOC.String.Text
-#, fuzzy
 msgid  "Office document object"
 msgstr "شیء نوشتاری آفیس"
 
@@ -1170,17 +1046,14 @@ msgid  "Notes document info"
 msgstr ""
 
 #: source/dialogs/formats.src#STR_FORMAT_ID_SFX_DOC.String.Text
-#, fuzzy
 msgid  "Sfx document"
 msgstr "نوشتار sfx"
 
 #: source/dialogs/formats.src#STR_FORMAT_ID_STARCHARTDOCUMENT_50.String.Text
-#, fuzzy
 msgid  "StarChart 5.0 object"
 msgstr "شیء استارچارت 5.0"
 
 #: source/dialogs/formats.src#STR_FORMAT_ID_GRAPHOBJ.String.Text
-#, fuzzy
 msgid  "Graphic object"
 msgstr "شیء گرافیکی"
 
@@ -1190,12 +1063,14 @@ msgid  "%PRODUCTXMLFILEFORMATNAME %PRODUCTXMLFILEFORMATVERSION Writer object"
 msgstr "شیء نقاش %PRODUCTXMLFILEFORMATNAME %PRODUCTXMLFILEFORMATVERSION"
 
 #: source/dialogs/formats.src#STR_FORMAT_ID_STARWRITERWEB_60.String.Text
+#, fuzzy
 msgid  "%PRODUCTXMLFILEFORMATNAME %PRODUCTXMLFILEFORMATVERSION Writer/Web object"
-msgstr ""
+msgstr "شیء کاتب/اصلی %PRODUCTXMLFILEFORMATNAME %PRODUCTXMLFILEFORMATVERSION"
 
 #: source/dialogs/formats.src#STR_FORMAT_ID_STARWRITERGLOB_60.String.Text
+#, fuzzy
 msgid  "%PRODUCTXMLFILEFORMATNAME %PRODUCTXMLFILEFORMATVERSION Writer/Master object"
-msgstr ""
+msgstr "شیء کاتب/اصلی %PRODUCTXMLFILEFORMATNAME %PRODUCTXMLFILEFORMATVERSION"
 
 #: source/dialogs/formats.src#STR_FORMAT_ID_STARDRAW_60.String.Text
 #, fuzzy
@@ -1322,8 +1197,9 @@ msgid  "OLE could not connect to a network device (server)."
 msgstr "‏OLE نمی‌تواند به دستگاه شبکه (کارگزار) متصل شود"
 
 #: source/dialogs/so3res.src#RID_SO_ERROR_HANDLER.ERRCODE_SO_MK_INTERMEDIATE_INTERFACE_NOT_SUPPORTED&S_MAX.String.Text
+#, fuzzy
 msgid  "The object found does not support the interface required for the desired operation."
-msgstr ""
+msgstr "شیء پیدا شده از واسط لازم برای عملیات درخواست شده پشتیبانی نمی‌کند"
 
 #: source/dialogs/so3res.src#RID_SO_ERROR_HANDLER.ERRCODE_SO_NO_INTERFACE&S_MAX.String.Text
 #, fuzzy
@@ -1455,16 +1331,19 @@ msgid  "Inserts a new %1-Object into your document as a symbol."
 msgstr "یک شیء %1 جدید را به عنوان نماد در نوشتارتان درج می‌کند."
 
 #: source/dialogs/so3res.src#STR_INS_FILE.String.Text
+#, fuzzy
 msgid  "Inserts the contents of the file into your document to enable later editing in the original application."
-msgstr ""
+msgstr "محتویات پرونده را در نوشتارتان درج می‌کند تا بتوانید بعداً در برنامهٔ اصلی ویرایش کنید."
 
 #: source/dialogs/so3res.src#STR_INS_PLUGIN.String.Text
+#, fuzzy
 msgid  "Inserts a plug-in object into your document with a reference to the plug-in data. When the object is activated, the plug-in is automatically executed."
-msgstr ""
+msgstr "یک شیء متصل‌شونده با ارجاع به داده‌های متصل‌شونده در نوشتارتان درج می‌کند. وقتی شیء فعال شود، متصل‌شونده به طور خودکار اجرا می‌شود."
 
 #: source/dialogs/so3res.src#STR_INS_APPLET.String.Text
+#, fuzzy
 msgid  "Inserts an applet object into your document. When the object is activated, the applet is automatically executed."
-msgstr ""
+msgstr "یک شیء برنامک در نوشتارتان درج می‌کند. وقتی شیء فعال شود، برنامک به طور خودکار اجرا خواهد شد."
 
 #: source/dialogs/so3res.src#STR_INS_FILE_ICON.String.Text
 #, fuzzy
@@ -1476,8 +1355,9 @@ msgid  "Inserts the contents of the file into your document and creates a link t
 msgstr ""
 
 #: source/dialogs/so3res.src#STR_INS_FILE_ICON_LINK.String.Text
+#, fuzzy
 msgid  "Inserts an icon into your document representing the file. Changes made to the source file will be reflected in your document."
-msgstr ""
+msgstr "شمایلی به نمایندگی پرونده در نوشتارتان درج می‌کند. تغییرات اِعمال شده روی پروندهٔ مبدأ در نوشتارتان خواهد آمد."
 
 #: source/dialogs/so3res.src#STR_PASTE.String.Text
 #, fuzzy
@@ -1803,12 +1683,10 @@ msgid  "Select JRE"
 msgstr ""
 
 #: source/java/javaerror.src#STR_ERROR_RESTARTREQUIRED.String.Text
-#, fuzzy
 msgid  "Restart Required"
 msgstr "راه‌اندازی مجدد لازم است"
 
 #: source/java/javaerror.src#STR_QUESTION_JAVADISABLED.String.Text
-#, fuzzy
 msgid  "Enable JRE"
 msgstr "به کار انداختن JRE"
 
@@ -1830,152 +1708,122 @@ msgid  "~Repeat: "
 msgstr "~تکرار: "
 
 #: source/misc/imagemgr.src#STR_DESCRIPTION_SOURCEFILE.String.Text
-#, fuzzy
 msgid  "Source code"
 msgstr "کد مبدأ"
 
 #: source/misc/imagemgr.src#STR_DESCRIPTION_BOOKMARKFILE.String.Text
-#, fuzzy
 msgid  "Bookmark file"
 msgstr "پروندهٔ نشانک"
 
 #: source/misc/imagemgr.src#STR_DESCRIPTION_GRAPHIC_DOC.String.Text
-#, fuzzy
 msgid  "Graphics"
 msgstr "گرافیک"
 
 #: source/misc/imagemgr.src#STR_DESCRIPTION_CFGFILE.String.Text
-#, fuzzy
 msgid  "Configuration file"
 msgstr "پروندهٔ پیکربندی"
 
 #: source/misc/imagemgr.src#STR_DESCRIPTION_APPLICATION.String.Text
-#, fuzzy
 msgid  "Application"
 msgstr "برنامه"
 
 #: source/misc/imagemgr.src#STR_DESCRIPTION_DATABASE_TABLE.String.Text
-#, fuzzy
 msgid  "Database table"
 msgstr "جدول پایگاه‌داده"
 
 #: source/misc/imagemgr.src#STR_DESCRIPTION_SYSFILE.String.Text
-#, fuzzy
 msgid  "System file"
 msgstr "سیستم پرونده‌ای"
 
 #: source/misc/imagemgr.src#STR_DESCRIPTION_WORD_DOC.String.Text
-#, fuzzy
 msgid  "MS Word document"
 msgstr "نوشتار مایکروسافت وُرد"
 
 #: source/misc/imagemgr.src#STR_DESCRIPTION_HELP_DOC.String.Text
-#, fuzzy
 msgid  "Help file"
 msgstr "پروندهٔ راهنما"
 
 #: source/misc/imagemgr.src#STR_DESCRIPTION_HTMLFILE.String.Text
-#, fuzzy
 msgid  "HTML document"
 msgstr "نوشتار HTML"
 
 #: source/misc/imagemgr.src#STR_DESCRIPTION_ARCHIVFILE.String.Text
-#, fuzzy
 msgid  "Archive file"
 msgstr "پروندهٔ آرشیو"
 
 #: source/misc/imagemgr.src#STR_DESCRIPTION_LOGFILE.String.Text
-#, fuzzy
 msgid  "Log file"
 msgstr "پروندهٔ ثبتی"
 
 #: source/misc/imagemgr.src#STR_DESCRIPTION_SDATABASE_DOC.String.Text
-#, fuzzy
 msgid  "%STAROFFICE Database"
 msgstr "پایگاه‌دادهٔ %STAROFFICE"
 
 #: source/misc/imagemgr.src#STR_DESCRIPTION_GLOBALDOC.String.Text
-#, fuzzy
 msgid  "StarWriter 4.0 / 5.0 Master Document"
 msgstr "نوشتار اصلی استاررایتر 4.0/5.0"
 
 #: source/misc/imagemgr.src#STR_DESCRIPTION_SIMAGE_DOC.String.Text
-#, fuzzy
 msgid  "%STAROFFICE Image"
 msgstr "تصویر %STAROFFICE"
 
 #: source/misc/imagemgr.src#STR_DESCRIPTION_TEXTFILE.String.Text
-#, fuzzy
 msgid  "Text file"
 msgstr "پروندهٔ متنی"
 
 #: source/misc/imagemgr.src#STR_DESCRIPTION_LINK.String.Text
-#, fuzzy
 msgid  "Link"
 msgstr "پیوند"
 
 #: source/misc/imagemgr.src#STR_DESCRIPTION_SOFFICE_TEMPLATE_DOC.String.Text
-#, fuzzy
 msgid  "%STAROFFICE 3.0 - 5.0 Template"
 msgstr "قالب %STAROFFICE 3.0 - 5.0"
 
 #: source/misc/imagemgr.src#STR_DESCRIPTION_EXCEL_DOC.String.Text
-#, fuzzy
 msgid  "MS Excel document"
 msgstr "نوشتار مایکروسافت اِکسل"
 
 #: source/misc/imagemgr.src#STR_DESCRIPTION_EXCEL_TEMPLATE_DOC.String.Text
-#, fuzzy
 msgid  "MS Excel template"
 msgstr "قالب مایکروسافت اِکسل"
 
 #: source/misc/imagemgr.src#STR_DESCRIPTION_BATCHFILE.String.Text
-#, fuzzy
 msgid  "Batch file"
 msgstr "پروندهٔ دسته‌ای"
 
 #: source/misc/imagemgr.src#STR_DESCRIPTION_FILE.String.Text
-#, fuzzy
 msgid  "File"
 msgstr "پرونده"
 
 #: source/misc/imagemgr.src#STR_DESCRIPTION_FOLDER.String.Text
-#, fuzzy
 msgid  "Folder"
 msgstr "پوشه"
 
 #: source/misc/imagemgr.src#STR_DESCRIPTION_FACTORY_WRITER.String.Text
-#, fuzzy
 msgid  "Text Document"
 msgstr "نوشتار متنی"
 
 #: source/misc/imagemgr.src#STR_DESCRIPTION_FACTORY_CALC.String.Text
-#, fuzzy
 msgid  "Spreadsheet"
 msgstr "صفحه‌گسترده"
 
 #: source/misc/imagemgr.src#STR_DESCRIPTION_FACTORY_IMPRESS.String.Text
-#, fuzzy
 msgid  "Presentation"
 msgstr "ارائه"
 
 #: source/misc/imagemgr.src#STR_DESCRIPTION_FACTORY_DRAW.String.Text
-#, fuzzy
 msgid  "Drawing"
 msgstr "نقاشی"
 
 #: source/misc/imagemgr.src#STR_DESCRIPTION_FACTORY_WRITERWEB.String.Text
-#, fuzzy
 msgid  "HTML document"
 msgstr "نوشتار HTML"
 
 #: source/misc/imagemgr.src#STR_DESCRIPTION_FACTORY_GLOBALDOC.String.Text
-#, fuzzy
 msgid  "Master document"
 msgstr "نوشتار اصلی"
 
 #: source/misc/imagemgr.src#STR_DESCRIPTION_FACTORY_MATH.String.Text
-#, fuzzy
 msgid  "Formula"
 msgstr "فرمول"
 
@@ -1985,24 +1833,20 @@ msgid  "Database"
 msgstr "پایگاه داده"
 
 #: source/misc/imagemgr.src#STR_DESCRIPTION_CALC_TEMPLATE.String.Text
-#, fuzzy
 msgid  "%PRODUCTXMLFILEFORMATNAME %PRODUCTXMLFILEFORMATVERSION Spreadsheet Template"
-msgstr "قالب صفحه‌گستردهٔ %PRODUCTNAME %PRODUCTXMLFILEFORMATVERSION"
+msgstr ""
 
 #: source/misc/imagemgr.src#STR_DESCRIPTION_DRAW_TEMPLATE.String.Text
-#, fuzzy
 msgid  "%PRODUCTXMLFILEFORMATNAME %PRODUCTXMLFILEFORMATVERSION Drawing Template"
-msgstr "قالب نقاشی %PRODUCTNAME %PRODUCTXMLFILEFORMATVERSION"
+msgstr ""
 
 #: source/misc/imagemgr.src#STR_DESCRIPTION_IMPRESS_TEMPLATE.String.Text
-#, fuzzy
 msgid  "%PRODUCTXMLFILEFORMATNAME %PRODUCTXMLFILEFORMATVERSION Presentation Template"
-msgstr "قالب ارائهٔ %PRODUCTNAME %PRODUCTXMLFILEFORMATVERSION"
+msgstr ""
 
 #: source/misc/imagemgr.src#STR_DESCRIPTION_WRITER_TEMPLATE.String.Text
-#, fuzzy
 msgid  "%PRODUCTXMLFILEFORMATNAME %PRODUCTXMLFILEFORMATVERSION Text Document Template"
-msgstr "قالب نوشتار متنی %PRODUCTNAME %PRODUCTXMLFILEFORMATVERSION"
+msgstr ""
 
 #: source/misc/imagemgr.src#STR_DESCRIPTION_LOCALE_VOLUME.String.Text
 #, fuzzy
@@ -2040,39 +1884,32 @@ msgid  "MS PowerPoint Show"
 msgstr "نمایش مایکروسافت پاورپوینت"
 
 #: source/misc/imagemgr.src#STR_DESCRIPTION_SXMATH_DOC.String.Text
-#, fuzzy
 msgid  "%PRODUCTXMLFILEFORMATNAME %PRODUCTXMLFILEFORMATVERSION Formula"
-msgstr "فرمول %PRODUCTNAME %PRODUCTXMLFILEFORMATVERSION"
+msgstr ""
 
 #: source/misc/imagemgr.src#STR_DESCRIPTION_SXCHART_DOC.String.Text
-#, fuzzy
 msgid  "%PRODUCTXMLFILEFORMATNAME %PRODUCTXMLFILEFORMATVERSION Chart"
-msgstr "نمودار %PRODUCTNAME %PRODUCTXMLFILEFORMATVERSION"
+msgstr ""
 
 #: source/misc/imagemgr.src#STR_DESCRIPTION_SXDRAW_DOC.String.Text
-#, fuzzy
 msgid  "%PRODUCTXMLFILEFORMATNAME %PRODUCTXMLFILEFORMATVERSION Drawing"
-msgstr "نقاشی %PRODUCTNAME %PRODUCTXMLFILEFORMATVERSION"
+msgstr ""
 
 #: source/misc/imagemgr.src#STR_DESCRIPTION_SXCALC_DOC.String.Text
-#, fuzzy
 msgid  "%PRODUCTXMLFILEFORMATNAME %PRODUCTXMLFILEFORMATVERSION Spreadsheet"
-msgstr "صفحه‌گستردهٔ %PRODUCTNAME %PRODUCTXMLFILEFORMATVERSION"
+msgstr ""
 
 #: source/misc/imagemgr.src#STR_DESCRIPTION_SXIMPRESS_DOC.String.Text
-#, fuzzy
 msgid  "%PRODUCTXMLFILEFORMATNAME %PRODUCTXMLFILEFORMATVERSION Presentation"
-msgstr "ارائهٔ %PRODUCTNAME %PRODUCTXMLFILEFORMATVERSION"
+msgstr ""
 
 #: source/misc/imagemgr.src#STR_DESCRIPTION_SXWRITER_DOC.String.Text
-#, fuzzy
 msgid  "%PRODUCTXMLFILEFORMATNAME %PRODUCTXMLFILEFORMATVERSION Text Document"
-msgstr "نوشتار متنی %PRODUCTNAME %PRODUCTXMLFILEFORMATVERSION"
+msgstr ""
 
 #: source/misc/imagemgr.src#STR_DESCRIPTION_SXGLOBAL_DOC.String.Text
-#, fuzzy
 msgid  "%PRODUCTXMLFILEFORMATNAME %PRODUCTXMLFILEFORMATVERSION Master Document"
-msgstr "نوشتار اصلی %PRODUCTNAME %PRODUCTXMLFILEFORMATVERSION"
+msgstr ""
 
 #: source/misc/imagemgr.src#STR_DESCRIPTION_MATHML_DOC.String.Text
 #, fuzzy
@@ -3564,32 +3401,26 @@ msgid  "DisplayHID"
 msgstr ""
 
 #: source/plugapp/testtool.src#TT_INLINE_TRANSLATION.TT_GB_TRANSLATION.GroupBox.Text
-#, fuzzy
 msgid  "Translation"
 msgstr "ترجمه"
 
 #: source/plugapp/testtool.src#TT_INLINE_TRANSLATION.TT_E_NEW.Edit.Text
-#, fuzzy
 msgid  "~Edit"
 msgstr "~ویرایش"
 
 #: source/plugapp/testtool.src#TT_INLINE_TRANSLATION.TT_FT_OLD.FixedText.Text
-#, fuzzy
 msgid  "Original Text"
 msgstr "متن اصلی"
 
 #: source/plugapp/testtool.src#TT_INLINE_TRANSLATION.TT_GB_COMMENT.GroupBox.Text
-#, fuzzy
 msgid  "Comment"
 msgstr "توضیح"
 
 #: source/plugapp/testtool.src#TT_INLINE_TRANSLATION.TT_E_COMMENT.Edit.Text
-#, fuzzy
 msgid  "~Comment"
 msgstr "~توضیح"
 
 #: source/plugapp/testtool.src#TT_INLINE_TRANSLATION.TT_PB_SELECT.PushButton.Text
-#, fuzzy
 msgid  "~Select"
 msgstr "انت~خاب"
 
@@ -3598,12 +3429,10 @@ msgid  "~Restore"
 msgstr ""
 
 #: source/plugapp/testtool.src#TT_INLINE_TRANSLATION.TT_PB_ACCEPT.PushButton.Text
-#, fuzzy
 msgid  "~Accept"
 msgstr "~پذیرفتن"
 
 #: source/plugapp/testtool.src#TT_INLINE_TRANSLATION.TT_PB_NEXT.PushButton.Text
-#, fuzzy
 msgid  "~Next"
 msgstr "~بعدی"
 

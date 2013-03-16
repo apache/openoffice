@@ -125,7 +125,7 @@ msgstr "Mar plij, lennit al lañvaz aketus."
 
 #: src/Localization/setupstrings.ulf#STRING_ACCEPTLICENSE3
 msgid  "If you have read and accept all the terms of the entire Software License Agreement, click 'Accept License' to continue with the installation."
-msgstr ""
+msgstr "Mard hoc'h eus lennet hag asantet an holl dermennoù eus Lañvaz a-bezh ar meziant, klikit war 'Asantiñ' evit kenderc'hel gant ar staliañ."
 
 #: src/Localization/setupstrings.ulf#STRING_CHOOSEDIRECTORY1
 msgid  "Select Installation Directory"
@@ -153,11 +153,11 @@ msgstr "Krouiñ ur c'havlec'hiad nevez"
 
 #: src/Localization/setupstrings.ulf#STRING_CHOOSEDIRECTORY5_QUESTION_MESSAGE
 msgid  "The directory '${DIR}' does not exist.\nDo you want to create it now?"
-msgstr ""
+msgstr "Ar c'havlec'hiad '${DIR}' n'eus ket anezhañ.\nHa fellout a ra deoc'h e grouiñ bremañ ?"
 
 #: src/Localization/setupstrings.ulf#STRING_CHOOSEDIRECTORY5_QUESTION_MESSAGE2
 msgid  "The directory '${DIR}' does not exist.\nDo you want to create it now or choose another directory?"
-msgstr ""
+msgstr "Ar c'havlec'hiad '${DIR}' n'eus ket anezhañ.\nHa fellout a ra deoc'h e grouiñ bremañ pe zibab unan all ?"
 
 #: src/Localization/setupstrings.ulf#STRING_CHOOSEDIRECTORY6
 msgid  "Select root directory"
@@ -209,11 +209,11 @@ msgstr "Diuzañ rizh ar staliadur"
 
 #: src/Localization/setupstrings.ulf#STRING_CHOOSEINSTALLATIONTYPE4
 msgid  "The main components will be installed. Recommended for most users."
-msgstr ""
+msgstr "Staliet e vo ar parzhioù pennañ. Erbedet evit an darn vrasañ eus an arveriaded."
 
 #: src/Localization/setupstrings.ulf#STRING_CHOOSEINSTALLATIONTYPE5
 msgid  "You choose the components you want to install and where they are stored. Recommended for advanced users."
-msgstr ""
+msgstr "Dibabet e vez ganeoc'h ar parzhioù a fell deoc'h staliañ hag al lec'h ma vint staliet. Erbedet evit an arveriaded varrekañ."
 
 #: src/Localization/setupstrings.ulf#STRING_CHOOSEINSTALLATIONTYPE6
 msgid  "Typical"
@@ -253,7 +253,7 @@ msgstr "Donedigezh vat"
 
 #: src/Localization/setupstrings.ulf#STRING_PROLOGUE2
 msgid  "This Installation Wizard will install ${PRODUCT_FULLNAME} on your computer."
-msgstr ""
+msgstr "Ar meziant staliañ-mañ a stalio ${PRODUCT_FULLNAME} war hoc'h urzhiataer."
 
 #: src/Localization/setupstrings.ulf#STRING_PROLOGUE3
 msgid  "To continue, click 'Next'."
@@ -261,7 +261,7 @@ msgstr "Evit kenderc'hel ganti, klikañ war 'War-lerc'h'."
 
 #: src/Localization/setupstrings.ulf#STRING_PROLOGUE4
 msgid  "Note: This installation will be done without root privileges. Therefore you will have a reduced functionality (Java Runtime Environment (JRE) not installable, system integration not possible).\nClick 'Cancel' and change your privileges to root privileges, if you want to use the complete functionality."
-msgstr ""
+msgstr "Notenn : Staliet e vo hep brient ar wrizienn. Neuze ho po arc'hwelerezhioù bihanaet (Java Runtime Environment (JRE) distalius, ne vo ket tu enframmañ ar reizhiad).\nKlikañ 'Dilezel' ha kemmañ ho prientoù e brientoù ar wriziennoù mar fell deoc'h arverañ an arc'hwelerezhioù penn da benn."
 
 #: src/Localization/setupstrings.ulf#STRING_INSTALLATIONCOMPLETED1
 msgid  "Installation Completed"
@@ -277,15 +277,15 @@ msgstr "C'hwitadenn war ar staliañ"
 
 #: src/Localization/setupstrings.ulf#STRING_INSTALLATIONCOMPLETED2
 msgid  "The Installation Wizard has successfully installed ${PRODUCT_FULLNAME} on your computer."
-msgstr ""
+msgstr "Gant berzh ez eo bet staliet ${PRODUCT_FULLNAME} war hoc'h urzhiataer."
 
 #: src/Localization/setupstrings.ulf#STRING_INSTALLATIONCOMPLETED2_ABORT
 msgid  "The Installation Wizard was aborted. ${PRODUCT_NAME} is not installed on your computer."
-msgstr ""
+msgstr "Dilezet ez eo bet gant ar meziant staliañ. N'eo ket bet staliet ${PRODUCT_NAME} war hoc'h urzhiataer."
 
 #: src/Localization/setupstrings.ulf#STRING_INSTALLATIONCOMPLETED2_ERROR
 msgid  "An error has occurred. Thus the Installation Wizard could not install ${PRODUCT_NAME} on your computer successfully. Click 'Details...' for more information."
-msgstr ""
+msgstr "Degouezhet ez eus bet ur fazi. Neuze ar meziant staliañ n'eo ket bet evit staliañ ${PRODUCT_NAME} gant berzh war ho reizhiad. Klikit war 'Munudoù...' evit gouzout muioc'h."
 
 #: src/Localization/setupstrings.ulf#STRING_INSTALLATIONCOMPLETED3
 msgid  "Click 'Finish' to exit the Wizard."
@@ -297,15 +297,15 @@ msgstr "Munudoù..."
 
 #: src/Localization/setupstrings.ulf#STRING_UNINSTALLATIONPROLOGUE2
 msgid  "The ${PRODUCT_FULLNAME} Uninstallation Wizard will remove ${PRODUCT_FULLNAME} from your computer."
-msgstr ""
+msgstr "Dilamet e vo ${PRODUCT_FULLNAME} diouzh hoc'h urzhiataer gant ar meziant distaliañ ${PRODUCT_FULLNAME}."
 
 #: src/Localization/setupstrings.ulf#STRING_UNINSTALLATION_PROLOGUE_WRONG_PRIVILEGES_CURRENT_ROOT
 msgid  "Sorry, wrong privileges. Installation was done with User privilges, but you have Root privileges."
-msgstr ""
+msgstr "Digarez, brientoù fall. Staliet e oa bet gant ar brientoù arveriad, ganeoc'h ez eus brientoù gwrizienn."
 
 #: src/Localization/setupstrings.ulf#STRING_UNINSTALLATION_PROLOGUE_WRONG_PRIVILEGES_CURRENT_USER
 msgid  "Sorry, wrong privileges. Installation was done with Root privilges, but you have User privileges."
-msgstr ""
+msgstr "Digarez, brientoù fall. Staliet e oa bet gant ar brientoù gwrizienn, ganeoc'h ez eus brientoù arveriad hepken."
 
 #: src/Localization/setupstrings.ulf#STRING_CHOOSEUNINSTALLATIONTYPE1
 msgid  "Select the Type of Uninstallation"
@@ -321,7 +321,7 @@ msgstr "Darnel"
 
 #: src/Localization/setupstrings.ulf#STRING_CHOOSEUNINSTALLATIONTYPE4
 msgid  "Completely removes ${PRODUCT_FULLNAME} and all its components from your system."
-msgstr ""
+msgstr "Dilemel a ra en e bezh ${PRODUCT_FULLNAME} hag e holl barzhioù diouzh ho reizhiad."
 
 #: src/Localization/setupstrings.ulf#STRING_CHOOSEUNINSTALLATIONTYPE5
 msgid  "You choose the program features you want to remove."
@@ -333,7 +333,7 @@ msgstr "En o fezh"
 
 #: src/Localization/setupstrings.ulf#STRING_CHOOSEUNINSTALLATIONCOMPONENTS2
 msgid  "Components marked with an X will be removed. Mark the components you want to remove."
-msgstr ""
+msgstr "Ar parzhioù merket gant un X a vo dilamet. Merkit ar parzhioù a fell deoc'h dilemel."
 
 #: src/Localization/setupstrings.ulf#STRING_UNINSTALLATIONIMMINENT1
 msgid  "Ready to Remove"
@@ -361,19 +361,19 @@ msgstr "C'hwitadenn war an distaliañ"
 
 #: src/Localization/setupstrings.ulf#STRING_UNINSTALLATIONCOMPLETED2
 msgid  "The Uninstallation Wizard has successfully removed ${PRODUCT_FULLNAME} from your computer."
-msgstr ""
+msgstr "Gant berzh ez eo bet dilamet ${PRODUCT_FULLNAME} diouzh hoc'h urzhiataer gant ar meziant distaliañ."
 
 #: src/Localization/setupstrings.ulf#STRING_UNINSTALLATIONCOMPLETED2_PARTIAL
 msgid  "The Uninstallation Wizard has successfully removed the selected components of ${PRODUCT_NAME} from your computer."
-msgstr ""
+msgstr "Gant berzh ez eo bet dilamet ar parzhioù diuzet eus ${PRODUCT_NAME} diouzh hoc'h urzhiataer gant ar meziant distaliañ."
 
 #: src/Localization/setupstrings.ulf#STRING_UNINSTALLATIONCOMPLETED2_ABORT
 msgid  "The Uninstallation Wizard was aborted before completely removing ${PRODUCT_NAME} from your computer."
-msgstr ""
+msgstr "Dilezet en deus ar meziant distaliañ kent dilemel penn da benn ${PRODUCT_NAME} diouzh hoc'h urzhiataer."
 
 #: src/Localization/setupstrings.ulf#STRING_UNINSTALLATIONCOMPLETED2_ERROR
 msgid  "An error has occurred. Thus the Uninstallation Wizard could not remove ${PRODUCT_NAME} from your computer successfully. Click 'Details...' for more information."
-msgstr ""
+msgstr "Degouezhet ez eus bet ur fazi. Neuze ar meziant distaliañ n'eo ket bet evit distaliañ ${PRODUCT_NAME} gant berzh war ho reizhiad. Klikit war 'Munudoù...' evit gouzout muioc'h."
 
 #: src/Localization/setupstrings.ulf#STRING_INSTALLERFACTORY_OS_NOT_SUPPORTED
 msgid  "Sorry, this Operating System is not supported yet."
@@ -389,11 +389,11 @@ msgstr ""
 
 #: src/Localization/setupstrings.ulf#STRING_NEWER_VERSION_INSTALLED_FOUND
 msgid  "A newer version of ${PRODUCT_NAME} was found on your system in:"
-msgstr ""
+msgstr "Kavet ez eus bet un handelv nevesoc'h eus ${PRODUCT_NAME} war ho reizhiad e :"
 
 #: src/Localization/setupstrings.ulf#STRING_NEWER_VERSION_INSTALLED_REMOVE
 msgid  "You have to remove the newer version of ${PRODUCT_NAME} before you can install the older one."
-msgstr ""
+msgstr "Ret eo deoc'h dilemel un handelv nevesañ eus ${PRODUCT_NAME} kent bezañ gouest da staliañ unan koshoc'h."
 
 #: src/Localization/setupstrings.ulf#STRING_NEWER_VERSION_DATABASE
 msgid  "Database"
@@ -409,7 +409,7 @@ msgstr "An arveriad ac'hanoc'h n'eo ket evit lañsañ ar meziant staliañ."
 
 #: src/Localization/setupstrings.ulf#STRING_ROOT_PRIVILEGES_REQUIRED_2
 msgid  "Please log out and log back in as a user with system administrator rights."
-msgstr ""
+msgstr "Mar plij, kit kuit ha deuit en-dro enni evel un arveriad gant gwirioù an ardead."
 
 #: src/Localization/setupstrings.ulf#STRING_DISCSPACE_INSUFFICIENT
 msgid  "Not enough discspace available for installation."
@@ -425,7 +425,7 @@ msgstr "Egor hegerz war ar gantenn"
 
 #: src/Localization/setupstrings.ulf#STRING_DISCSPACE_TIP
 msgid  "Please use another directory for installation or change your module selection."
-msgstr ""
+msgstr "Mar plij, arverit ur c'havlec'hiad all evit ar staliañ pe kemmit ho tiuzad mollad."
 
 #: src/Localization/setupstrings.ulf#STRING_ANALYZING_DATABASE1
 msgid  "Analyzing ..."
@@ -433,11 +433,11 @@ msgstr "O tezrannañ..."
 
 #: src/Localization/setupstrings.ulf#STRING_ANALYZING_DATABASE2
 msgid  "Analyzing database\nPlease wait a moment ..."
-msgstr ""
+msgstr "O tezrannañ ar stlennvank\nGortozit un tamm mar plij..."
 
 #: src/Localization/setupstrings.ulf#STRING_PROLOGUE_1
 msgid  "Welcome to the Installation Wizard.<p>This wizard asks you to supply configuration settings.<p>At the bottom of each page are navigation buttons that let you move through the Installation Wizard:"
-msgstr ""
+msgstr "Degemer mat er meziant staliañ.<p>Goulenn a ra deoc'h pourchas arventennoù ar c'hefluniañ.<p>E diaz pep pajenn ez eus afelloù merdeiñ o reiñ tu deoc'h da zilec'hiañ dre ar meziant staliañ :"
 
 #: src/Localization/setupstrings.ulf#STRING_PROLOGUE_2
 msgid  "'Back' returns you to the previous page."
@@ -453,15 +453,15 @@ msgstr "'Dilezel' a echu ar meziant staliañ hep staliañ ar meziant-mañ."
 
 #: src/Localization/setupstrings.ulf#STRING_PROLOGUE_5
 msgid  "'Help' displays the Help with further information about the page currently displayed."
-msgstr ""
+msgstr "'Skoazell' a skramm ar Skoazell gant titouroù ouzhpenn diwar-benn ar bajennad skrammet ent bremanel."
 
 #: src/Localization/setupstrings.ulf#STRING_PROLOGUE_6
 msgid  "'OK' exits the Help page and returns you to the Installation Wizard."
-msgstr ""
+msgstr "'Mat eo' a ya kuit eus ar bajennad skoazell ha d'ho meziant staliañ ez a en-dro."
 
 #: src/Localization/setupstrings.ulf#STRING_UNINSTALLATIONPROLOGUE_1
 msgid  "Welcome to the Uninstallation Wizard.<p>This wizard asks you to supply configuration settings.<p>At the bottom of each page are navigation buttons that let you move through the Uninstallation Wizard:"
-msgstr ""
+msgstr "Degemer mat er meziant distaliañ.<p>Goulenn a ra deoc'h pourchas arventennoù ar c'hefluniañ.<p>E diaz pep pajenn ez eus afelloù merdeiñ o reiñ tu deoc'h da zilec'hiañ dre ar meziant distaliañ :"
 
 #: src/Localization/setupstrings.ulf#STRING_UNINSTALLATIONPROLOGUE_2
 msgid  "'Back' returns you to the previous page."
@@ -477,63 +477,63 @@ msgstr " 'Dilezel' a echu ar meziant distaliañ hep distaliañ ar meziant-mañ."
 
 #: src/Localization/setupstrings.ulf#STRING_UNINSTALLATIONPROLOGUE_5
 msgid  "'Help' displays the Help with further information about the page currently displayed."
-msgstr ""
+msgstr "'Skoazell' a skramm ar Skoazell gant titouroù ouzhpenn diwar-benn ar bajennad skrammet ent bremanel."
 
 #: src/Localization/setupstrings.ulf#STRING_UNINSTALLATIONPROLOGUE_6
 msgid  "'OK' exits the Help page and returns you to the Uninstallation Wizard."
-msgstr ""
+msgstr "'Mat eo' a ya kuit eus ar bajennad skoazell ha d'ho meziant distaliañ ez a en-dro."
 
 #: src/Localization/setupstrings.ulf#STRING_ACCEPTLICENSE_1
 msgid  "Before you install this product, you must read and accept the entire Software License Agreement under which this software is licensed for your use."
-msgstr ""
+msgstr "Kent staliañ ar meziant-mañ ez eo ret deoc'h lenn hag asantiñ al lañvaz a-bezh eus ar meziant-mañ, hag a zo evit hoc'h arver."
 
 #: src/Localization/setupstrings.ulf#STRING_ACCEPTLICENSE_2
 msgid  "If you have read and accept all the terms of the entire Software License Agreement, click 'Accept License' to continue with the installation."
-msgstr ""
+msgstr "Mard hoc'h eus lennet hag asantet an holl dermennoù eus Lañvaz a-bezh ar meziant, klikit war 'Asantiñ' evit kenderc'hel gant ar staliañ."
 
 #: src/Localization/setupstrings.ulf#STRING_ACCEPTLICENSE_3
 msgid  "If you do not accept all the terms of the Software License Agreement, click 'Decline' to end the Installation Wizard without installing this product."
-msgstr ""
+msgstr "Ma n'asantit ket termennoù Lañvaz ar meziant, klikit war 'Dilezel' evit echuiñ ar staliañ hep staliañ ar meziant."
 
 #: src/Localization/setupstrings.ulf#STRING_CHOOSEINSTALLATIONTYPE_1
 msgid  "Select the type of product installation to perform from the following choices. This will determine how much information you need to provide for product configuration."
-msgstr ""
+msgstr "Diuzañ rizh ar meziant staliañ da arverañ diouzh an dibaboù da heul. Despizet e vo gantañ pet stlennoù ho po ezhomm da bourchas evit kefluniañ ar c'henderc'had."
 
 #: src/Localization/setupstrings.ulf#STRING_CHOOSEDIRECTORY_1
 msgid  "It is recommended that you install this product in the directory suggested by this Installation Wizard. <p>To choose a different location, click 'Browse...' or specify the full path of the directory to use in the text box below. <p>If this product is already installed, you cannot change the destination directory."
-msgstr ""
+msgstr "Erbedet eo deoc'h ma vo staliet ar c'henderc'had-mañ er c'havlec'hiad kinniget gant ar meziant staliañ-mañ. <p>A-benn dibab ul lec'h disheñvel, klikit war 'Furchal' pe erspizit un treug klok betek ur c'havlec'hiad da arverañ er voestad testenn amañ dindan. <p>Mard eo bet staliet ar meziant-mañ endeo ne vo ket tu deoc'h kemm ar c'havlec'hiad bukenn."
 
 #: src/Localization/setupstrings.ulf#STRING_CHOOSECOMPONENTS_1
 msgid  "Components marked in color will be installed. Click the icon of a component to mark or unmark the component.<p>All already installed components cannot be selected for installation."
-msgstr ""
+msgstr "Ar parzhioù merket e liv a vo staliet. Klikañ war arlun ur parzh evit merkañ pe ziverkañ ar parzh. <p>Ar parzhioù bet staliet endeo ne vezont ket diuzet evit bezañ staliet."
 
 #: src/Localization/setupstrings.ulf#STRING_INSTALLATIONIMMINENT_1
 msgid  "The listed components are ready for installation based on your configuration settings. <p>If you are satisfied with your selection, click 'Install Now' to begin. <p>To check or modify your settings on the previous pages, click 'Back'."
-msgstr ""
+msgstr "Prest eo ar parzhioù rollet da vezañ staliet hervez hoc'h arventennoù kefluniañ. <p>Mard eo mat deoc'h gant ho tiuzad, klikit war 'Staliañ bremañ' evit kregiñ ganti. <p>Evit gwiriañ pe zaskemmañ hoc'h arventennoù, klikit war 'Kent'."
 
 #: src/Localization/setupstrings.ulf#STRING_UNINSTALLATIONIMMINENT_1
 msgid  "The listed components are ready for uninstallation based on your configuration settings. <p>If you are satisfied with your selection, click 'Remove Now' to begin. <p>To check or modify your settings on the previous pages, click 'Back'."
-msgstr ""
+msgstr "Prest eo ar parzhioù rollet da vezañ distaliet hervez hoc'h arventennoù kefluniañ. <p>Mard eo mat deoc'h gant ho tiuzad, klikit war 'Distaliañ bremañ' evit kregiñ ganti. <p>Evit gwiriañ pe zaskemmañ hoc'h arventennoù, klikit war 'Kent'."
 
 #: src/Localization/setupstrings.ulf#STRING_INSTALLATIONONGOING_1
 msgid  "This page indicates the progress of the installation with the aid of a progress bar. To abort the installation process, click 'Stop'."
-msgstr ""
+msgstr "Ar bajennad-mañ a ziskouez penaos ez a war-raok ar staliañ gant ur varrenn araokaat. Evit dilezel ar staliañ, klikañ war 'Arsav'."
 
 #: src/Localization/setupstrings.ulf#STRING_UNINSTALLATIONONGOING_1
 msgid  "This page indicates the progress of the uninstallation with the aid of a progress bar. To abort the uninstallation, click 'Stop'."
-msgstr ""
+msgstr "Ar bajennad-mañ a ziskouez penaos ez a war-raok an distaliañ gant ur varrenn araokaat. Evit dilezel an distaliañ, klikañ war 'Arsav'."
 
 #: src/Localization/setupstrings.ulf#STRING_CHOOSEUNINSTALLATIONTYPE_1
 msgid  "Complete: This will remove all installed components of your version.<p>Partial: This removes only the components you will choose out of the components list."
-msgstr ""
+msgstr "En o fezh : Dilamet e vo ar parzhioù bet staliet eus ho handelv.<p>Darnel : dilamet e vo ar parzhioù bet diuzet ganeoc'h war roll ar parzhioù hepken."
 
 #: src/Localization/setupstrings.ulf#STRING_CHOOSEUNINSTALLATIONCOMPONENTS_1
 msgid  "Components marked with an X will be removed. Click next to a component to mark or unmark it with an X."
-msgstr ""
+msgstr "Ar parzhioù merket gant un X a vo dilamet. Klikañ war ur parzh evit e verkañ pe ziverkañ gant un X."
 
 #: src/Localization/setupstrings.ulf#STRING_PACKAGEFORMAT_NOT_SUPPORTED
 msgid  "This package format is currently not supported for your operating system!"
-msgstr ""
+msgstr "Ar mentrezh pakad-mañ n'eo ket skoret evit poent gant ho reizhiad korvoiñ !"
 
 #: src/Localization/setupstrings.ulf#STRING_OPERATING_SYSTEM
 msgid  "Operating system"
@@ -553,7 +553,7 @@ msgstr "Parzhioù ebet zo bet diuzet evit ar staliañ."
 
 #: src/Localization/setupstrings.ulf#STRING_NO_COMPONENTS_SELECTED_2
 msgid  "Click 'OK' to select one or more components for installation or to exit the Installation Wizard."
-msgstr ""
+msgstr "Klikañ war 'Mat eo' evit diuzañ unan pe veur a barzh evit ar staliañ pe evit mont kuit eus ar meziant staliañ."
 
 #: src/Localization/setupstrings.ulf#STRING_NO_LANGUAGE_SELECTED_1
 msgid  "No languages have been selected for installation."
@@ -581,7 +581,7 @@ msgstr "Parzhioù ebet zo bet diuzet evit an distaliañ."
 
 #: src/Localization/setupstrings.ulf#STRING_NO_UNINSTALLCOMPONENTS_SELECTED_2
 msgid  "Click 'OK' to select one or more components for uninstallation or to exit the Uninstallation Wizard."
-msgstr ""
+msgstr "Klikañ war 'Mat eo' evit diuzañ unan pe veur a barzh evit an distaliañ pe evit mont kuit eus ar meziant distaliañ."
 
 #: src/Localization/setupstrings.ulf#STRING_ALL_LANGUAGECOMPONENTS_SELECTED_1
 msgid  "All language components have been selected for uninstallation."

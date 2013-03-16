@@ -321,15 +321,15 @@ msgstr "बेयो मोनसे स्क्रिन फन्ट। स�
 
 #: source/control/ctrltool.src#STR_SVT_FONTMAP_SIZENOTAVAILABLE.String.Text
 msgid  "This font size has not been installed. The closest available size will be used."
-msgstr ""
+msgstr "बे फन्ट रोखोमखौ इनष्टल खालामाखै। खाथिसिन मोननो हाथाव रोखोमखौ बाहायनाय जायो।"
 
 #: source/control/ctrltool.src#STR_SVT_FONTMAP_STYLENOTAVAILABLE.String.Text
 msgid  "This font style will be simulated or the closest matching style will be used."
-msgstr ""
+msgstr "बे फन्ट आदब सिमुलेट खालामनाय जागोन एबा खाथिसिन गोरोबनाय आदबखौ बाहायनाय जागोन।"
 
 #: source/control/ctrltool.src#STR_SVT_FONTMAP_NOTAVAILABLE.String.Text
 msgid  "This font has not been installed. The closest available font will be used."
-msgstr ""
+msgstr "बे फन्टखौ इनष्टल खालामनाय जायाखै। खाथिसिन मोननो हाथाव फन्ट बाहायनाय जागोन।"
 
 #: source/control/ctrlbox.src#STR_SVT_AUTOMATIC_COLOR.String.Text
 msgid  "Automatic"
@@ -409,19 +409,19 @@ msgstr "झुयिन"
 
 #: source/control/ctrlbox.src#STR_SVT_INDEXENTRY_PHONETIC_FS.String.Text
 msgid  "Phonetic (alphanumeric first, grouped by syllables)"
-msgstr ""
+msgstr "रिंसार बिगियान सोमोन्दै (गिबि आल्फानिउमारिक,  फराय फारिजों हानजा खालामबाय)"
 
 #: source/control/ctrlbox.src#STR_SVT_INDEXENTRY_PHONETIC_FC.String.Text
 msgid  "Phonetic (alphanumeric first, grouped by consonants)"
-msgstr ""
+msgstr "रिंसार बिगियान सोमोन्दै (गिबि आल्फानिउमारिक,  खौरां हांखोजों हानजा खालामबाय)"
 
 #: source/control/ctrlbox.src#STR_SVT_INDEXENTRY_PHONETIC_LS.String.Text
 msgid  "Phonetic (alphanumeric last, grouped by syllables)"
-msgstr ""
+msgstr "रिंसार बिगियान सोमोन्दै(जोबथा आल्फानिउमारिक,  फराय फारिजों हानजा खालामबाय)"
 
 #: source/control/ctrlbox.src#STR_SVT_INDEXENTRY_PHONETIC_LC.String.Text
 msgid  "Phonetic (alphanumeric last, grouped by consonants)"
-msgstr ""
+msgstr "रिंसार बिगियान सोमोन्दै (जोबथा आल्फानिउमारिक, खौरां हांखोजों हानजा खालामबाय)"
 
 #: source/dialogs/prnsetup.src#STR_SVT_PRNDLG_READY.String.Text
 msgid  "Ready"
@@ -601,7 +601,7 @@ msgstr "डिरेक्टरी खेवनो हाया"
 
 #: source/dialogs/filedlg2.src#STR_FILEDLG_OVERWRITE.String.Text
 msgid  "This file already exists. \nOverwrite ?"
-msgstr ""
+msgstr "बे फाइलआ सिगाङावनो दङ। \nअधिलिखित करायची का ?"
 
 #: source/dialogs/filedlg2.src#STR_FILEDLG_GOUP.String.Text
 msgid  "Up One Level"
@@ -989,11 +989,11 @@ msgstr "%PRODUCTXMLFILEFORMATNAME %PRODUCTXMLFILEFORMATVERSION रायटा�
 
 #: source/dialogs/formats.src#STR_FORMAT_ID_STARWRITERWEB_60.String.Text
 msgid  "%PRODUCTXMLFILEFORMATNAME %PRODUCTXMLFILEFORMATVERSION Writer/Web object"
-msgstr ""
+msgstr "%PRODUCTXMLFILEFORMATNAME %PRODUCTXMLFILEFORMATVERSION रायटार/वेब बेसाद"
 
 #: source/dialogs/formats.src#STR_FORMAT_ID_STARWRITERGLOB_60.String.Text
 msgid  "%PRODUCTXMLFILEFORMATNAME %PRODUCTXMLFILEFORMATVERSION Writer/Master object"
-msgstr ""
+msgstr "%PRODUCTXMLFILEFORMATNAME %PRODUCTXMLFILEFORMATVERSION रायटार/गाहाय बेसाद"
 
 #: source/dialogs/formats.src#STR_FORMAT_ID_STARDRAW_60.String.Text
 msgid  "%PRODUCTXMLFILEFORMATNAME %PRODUCTXMLFILEFORMATVERSION Draw object"
@@ -1097,7 +1097,7 @@ msgstr "OLE आ नेटवर्क खायदा(सार्भार) स
 
 #: source/dialogs/so3res.src#RID_SO_ERROR_HANDLER.ERRCODE_SO_MK_INTERMEDIATE_INTERFACE_NOT_SUPPORTED&S_MAX.String.Text
 msgid  "The object found does not support the interface required for the desired operation."
-msgstr ""
+msgstr "लुबैनाय अपारेसननि थाखाय मोननाय बेसादआ गोनांथि जानाय इन्टारफेसखौ मदद होया।"
 
 #: source/dialogs/so3res.src#RID_SO_ERROR_HANDLER.ERRCODE_SO_NO_INTERFACE&S_MAX.String.Text
 msgid  "Interface not supported."
@@ -1129,7 +1129,7 @@ msgstr "फोनांजाब मुंआ गुबुन मुङाव �
 
 #: source/dialogs/so3res.src#RID_SO_ERROR_HANDLER.ERRCODE_SO_MK_US&S_MAX.String.Text
 msgid  "The connection names (the receiver and the other moniker) are identical."
-msgstr ""
+msgstr "फोनांजाब मुंफोरा (नाजावग्रा आरो गुबन मनिकार) रोखोमसे।"
 
 #: source/dialogs/so3res.src#RID_SO_ERROR_HANDLER.ERRCODE_SO_MK_ME&S_MAX.String.Text
 msgid  "The connection name is contained in the other one."
@@ -1209,15 +1209,15 @@ msgstr "नोंथांनि फोरमान बिलाइआव दि
 
 #: source/dialogs/so3res.src#STR_INS_FILE.String.Text
 msgid  "Inserts the contents of the file into your document to enable later editing in the original application."
-msgstr ""
+msgstr "फाइलनि थानाय आयदाफोरखौ उनाव गुबै आरजलाइआव सुजुनायखौ हाहोनो नोंथांनि फोरमान बिलाइआव सोसनो।"
 
 #: source/dialogs/so3res.src#STR_INS_PLUGIN.String.Text
 msgid  "Inserts a plug-in object into your document with a reference to the plug-in data. When the object is activated, the plug-in is automatically executed."
-msgstr ""
+msgstr "प्लाग-इन डाटा मखनायजों प्लाग-इन बेसादखौ नोंथांनि फोरमान बिलाइआव सोसनो। जेब्ला बेसादखौ मावथि खालामो, प्लाग-इनआ गावनो गाव खामानिआव बाहायनाय जायो।"
 
 #: source/dialogs/so3res.src#STR_INS_APPLET.String.Text
 msgid  "Inserts an applet object into your document. When the object is activated, the applet is automatically executed."
-msgstr ""
+msgstr "आप्लेट बेसादखौ नोंथांनि फोरमान बिलाइआव सोसनो। जेब्ला बेसादखौ मावथि खालामो, आप्लेटआ गावनो गाव खामानिआव बाहायनाय जायो।"
 
 #: source/dialogs/so3res.src#STR_INS_FILE_ICON.String.Text
 msgid  "Inserts the contents of the file as an icon into your document."
@@ -1225,11 +1225,11 @@ msgstr ""
 
 #: source/dialogs/so3res.src#STR_INS_FILE_LINK.String.Text
 msgid  "Inserts the contents of the file into your document and creates a link to the source file. Changes made to the source file will be reflected in your document."
-msgstr ""
+msgstr "फाइलनि थानाय आयदाफोरखौ नोंथांनि फोरमान बिलाइआव सोसनो आरो फुंखा फाइलसिम सोमोन्दो सोरजियो। फुंखा फाइलआव सोलायनाय खालामनाया नोंथांनि फोरमान बिलाइआव रिफिगोन।"
 
 #: source/dialogs/so3res.src#STR_INS_FILE_ICON_LINK.String.Text
 msgid  "Inserts an icon into your document representing the file. Changes made to the source file will be reflected in your document."
-msgstr ""
+msgstr "फाइल रिप्रेजेन्ट खालामनानै आइकनखौ नोंथांनि फोरमान बिलाइआव सोसनो। फुंखा फाइलआव सोलायनाय खालामनाया नोंथांनि फोरमान बिलाइआव रिफिगोन।"
 
 #: source/dialogs/so3res.src#STR_PASTE.String.Text
 msgid  "Pastes the contents of the clipboard as %1 in your document."
@@ -1241,7 +1241,7 @@ msgstr "सायखनाय %1 बेसादखौ %2 बेसाद रो
 
 #: source/dialogs/so3res.src#STR_ACTIVATE_AS.String.Text
 msgid  "All objects of type %1 are activated as %2, but not converted"
-msgstr ""
+msgstr " %1 रोखोमनि गासै बेसादखौ %2 बादि मावथि खालामनाय जायो, नाथाय सोलायहोनो हाया।"
 
 #: source/dialogs/so3res.src#STR_VERB_OPEN.String.Text
 msgid  "~Open"
@@ -1513,23 +1513,23 @@ msgstr ""
 
 #: source/java/javaerror.src#WARNINGBOX_JAVANOTFOUND.WarningBox.Message
 msgid  "%PRODUCTNAME requires a Java runtime environment (JRE) to perform this task. Please install a JRE and restart %PRODUCTNAME."
-msgstr ""
+msgstr "%PRODUCTNAME आ बे खामानिखौ मावफुंनो जावा रानटाइम एनभाइरनमेन्ट(JRE)खौ गोनांथि जायो। अननानै JRE इनष्टल खालाम आरो %PRODUCTNAME खौ फिन जागाय।"
 
 #: source/java/javaerror.src#WARNINGBOX_INVALIDJAVASETTINGS.WarningBox.Message
 msgid  "The %PRODUCTNAME configuration has been changed. Under Tools - Options - %PRODUCTNAME - Java, select the Java runtime environment you want to have used by %PRODUCTNAME."
-msgstr ""
+msgstr " %PRODUCTNAME बायजोनि महरखौ सोलायबाय। टुलस - उफ्राफोर -  %PRODUCTNAME - जावा आव, नोंथाङा %PRODUCTNAME जों बाहायनो लुबैनाय जावा रानटाइम एनभाइरनमेन्टखौ सायख।"
 
 #: source/java/javaerror.src#QBX_JAVADISABLED.QueryBox.Message
 msgid  "%PRODUCTNAME requires a Java runtime environment (JRE) to perform this task. However, use of a JRE has been disabled. Do you want to enable the use of a JRE now?"
-msgstr ""
+msgstr "%PRODUCTNAME आ बे खामानिखौ मावफुंनो जावा रानटाइम एनभाइरनमेन्ट(JRE)खौ गोनांथि जायो। जायखि जाया, JRE नि बाहायनायखौ लोरबां खालामबाय। नोंथाङा दानो JRE नि बाहायनायखौ हाहोना खालामनो लुबैयो नामा?"
 
 #: source/java/javaerror.src#ERRORBOX_JVMCREATIONFAILED.ErrorBox.Message
 msgid  "%PRODUCTNAME requires a Java runtime environment (JRE) to perform this task. The selected JRE is defective. Please select another version or install a new JRE and select  it under Tools - Options - %PRODUCTNAME - Java."
-msgstr ""
+msgstr "%PRODUCTNAME आ बे खामानिखौ मावफुंनो जावा रानटाइम एनभाइरनमेन्ट(JRE) खौ गोनांथि जायो। सायखनाय JRE आ गोरोनथिगोनां। अननानै गुबुन भारसन सायख एबा गोदान JRE इनष्टल खालाम आरो बेखौ टुलस - उफ्राफोर - %PRODUCTNAME - जावाआव सायख।"
 
 #: source/java/javaerror.src#ERRORBOX_RESTARTREQUIRED.ErrorBox.Message
 msgid  "For the selected Java runtime environment to work properly, %PRODUCTNAME must be restarted. Please restart %PRODUCTNAME now."
-msgstr ""
+msgstr "सायखनाय जावा रानटाइम एनभाइरनमेन्ट मोजाङै खामानि मावनो थाखाय, %PRODUCTNAME खौ फिन जागाय थारनांगोन। अननानै दानो %PRODUCTNAME खौ फिन जागाय।"
 
 #: source/java/javaerror.src#STR_WARNING_JAVANOTFOUND.String.Text
 msgid  "JRE Required"
@@ -1688,151 +1688,122 @@ msgid  "Database"
 msgstr "डाटाबेस"
 
 #: source/misc/imagemgr.src#STR_DESCRIPTION_CALC_TEMPLATE.String.Text
-#, fuzzy
 msgid  "%PRODUCTXMLFILEFORMATNAME %PRODUCTXMLFILEFORMATVERSION Spreadsheet Template"
-msgstr "%PRODUCTNAME %PRODUCTXMLFILEFORMATVERSION स्प्रेडशीट टेमप्लेट"
+msgstr ""
 
 #: source/misc/imagemgr.src#STR_DESCRIPTION_DRAW_TEMPLATE.String.Text
-#, fuzzy
 msgid  "%PRODUCTXMLFILEFORMATNAME %PRODUCTXMLFILEFORMATVERSION Drawing Template"
-msgstr "%PRODUCTNAME %PRODUCTXMLFILEFORMATVERSION सावगारि टेमप्लेट"
+msgstr ""
 
 #: source/misc/imagemgr.src#STR_DESCRIPTION_IMPRESS_TEMPLATE.String.Text
-#, fuzzy
 msgid  "%PRODUCTXMLFILEFORMATNAME %PRODUCTXMLFILEFORMATVERSION Presentation Template"
-msgstr "%PRODUCTNAME %PRODUCTXMLFILEFORMATVERSION प्रेजेन्टेसन टेमप्लेट"
+msgstr ""
 
 #: source/misc/imagemgr.src#STR_DESCRIPTION_WRITER_TEMPLATE.String.Text
 msgid  "%PRODUCTXMLFILEFORMATNAME %PRODUCTXMLFILEFORMATVERSION Text Document Template"
 msgstr ""
 
 #: source/misc/imagemgr.src#STR_DESCRIPTION_LOCALE_VOLUME.String.Text
-#, fuzzy
 msgid  "Local drive"
 msgstr "जायगानि ड्राइभ"
 
 #: source/misc/imagemgr.src#STR_DESCRIPTION_FLOPPY_VOLUME.String.Text
-#, fuzzy
 msgid  "Disk drive"
 msgstr "डिस्क ड्राइभ"
 
 #: source/misc/imagemgr.src#STR_DESCRIPTION_CDROM_VOLUME.String.Text
-#, fuzzy
 msgid  "CD-ROM drive"
 msgstr "CD-ROM ड्राइभ"
 
 #: source/misc/imagemgr.src#STR_DESCRIPTION_REMOTE_VOLUME.String.Text
-#, fuzzy
 msgid  "Network connection"
 msgstr "नेटवर्क फोनांजाबनाय"
 
 #: source/misc/imagemgr.src#STR_DESCRIPTION_POWERPOINT.String.Text
-#, fuzzy
 msgid  "MS PowerPoint Document"
 msgstr "मायक्र'सफ्ट पावारपइन्ट फोरमान बिलाइ"
 
 #: source/misc/imagemgr.src#STR_DESCRIPTION_POWERPOINT_TEMPLATE.String.Text
-#, fuzzy
 msgid  "MS PowerPoint Template"
 msgstr "मायक्र'सफ्ट पावारपइन्ट टेमप्लेट"
 
 #: source/misc/imagemgr.src#STR_DESCRIPTION_POWERPOINT_SHOW.String.Text
-#, fuzzy
 msgid  "MS PowerPoint Show"
 msgstr "मायक्र'सफ्ट पावारपइन्ट दिनथिनाय"
 
 #: source/misc/imagemgr.src#STR_DESCRIPTION_SXMATH_DOC.String.Text
-#, fuzzy
 msgid  "%PRODUCTXMLFILEFORMATNAME %PRODUCTXMLFILEFORMATVERSION Formula"
-msgstr "%PRODUCTNAME %PRODUCTXMLFILEFORMATVERSION फरमुला"
+msgstr ""
 
 #: source/misc/imagemgr.src#STR_DESCRIPTION_SXCHART_DOC.String.Text
-#, fuzzy
 msgid  "%PRODUCTXMLFILEFORMATNAME %PRODUCTXMLFILEFORMATVERSION Chart"
-msgstr "%PRODUCTXMLFILEFORMATNAME %PRODUCTXMLFILEFORMATVERSION चार्ट"
+msgstr ""
 
 #: source/misc/imagemgr.src#STR_DESCRIPTION_SXDRAW_DOC.String.Text
-#, fuzzy
 msgid  "%PRODUCTXMLFILEFORMATNAME %PRODUCTXMLFILEFORMATVERSION Drawing"
-msgstr "%PRODUCTNAME %PRODUCTXMLFILEFORMATVERSION सावगारि"
+msgstr ""
 
 #: source/misc/imagemgr.src#STR_DESCRIPTION_SXCALC_DOC.String.Text
-#, fuzzy
 msgid  "%PRODUCTXMLFILEFORMATNAME %PRODUCTXMLFILEFORMATVERSION Spreadsheet"
-msgstr "%PRODUCTNAME %PRODUCTXMLFILEFORMATVERSION स्प्रेडशीट"
+msgstr ""
 
 #: source/misc/imagemgr.src#STR_DESCRIPTION_SXIMPRESS_DOC.String.Text
-#, fuzzy
 msgid  "%PRODUCTXMLFILEFORMATNAME %PRODUCTXMLFILEFORMATVERSION Presentation"
-msgstr "%PRODUCTNAME %PRODUCTXMLFILEFORMATVERSION प्रेजेन्टेसन"
+msgstr ""
 
 #: source/misc/imagemgr.src#STR_DESCRIPTION_SXWRITER_DOC.String.Text
-#, fuzzy
 msgid  "%PRODUCTXMLFILEFORMATNAME %PRODUCTXMLFILEFORMATVERSION Text Document"
-msgstr "%PRODUCTNAME %PRODUCTXMLFILEFORMATVERSION फराय बिजाब फोरमान बिलाइ"
+msgstr ""
 
 #: source/misc/imagemgr.src#STR_DESCRIPTION_SXGLOBAL_DOC.String.Text
-#, fuzzy
 msgid  "%PRODUCTXMLFILEFORMATNAME %PRODUCTXMLFILEFORMATVERSION Master Document"
-msgstr "%PRODUCTNAME %PRODUCTXMLFILEFORMATVERSION गाहाय फोरमान बिलाइ"
+msgstr ""
 
 #: source/misc/imagemgr.src#STR_DESCRIPTION_MATHML_DOC.String.Text
-#, fuzzy
 msgid  "MathML Document"
 msgstr "MathML फोरमान बिलाइ"
 
 #: source/misc/imagemgr.src#STR_DESCRIPTION_OO_DATABASE_DOC.String.Text
-#, fuzzy
 msgid  "OpenDocument Database"
 msgstr "उदां फोरमान बिलाइ डाटाबेस"
 
 #: source/misc/imagemgr.src#STR_DESCRIPTION_OO_DRAW_DOC.String.Text
-#, fuzzy
 msgid  "OpenDocument Drawing"
 msgstr "उदां फोरमान बिलाइ सावगारि"
 
 #: source/misc/imagemgr.src#STR_DESCRIPTION_OO_MATH_DOC.String.Text
-#, fuzzy
 msgid  "OpenDocument Formula"
 msgstr "उदां फोरमान बिलाइ फरमुला"
 
 #: source/misc/imagemgr.src#STR_DESCRIPTION_OO_GLOBAL_DOC.String.Text
-#, fuzzy
 msgid  "OpenDocument Master Document"
 msgstr "उदां फोरमान बिलाइ गाहाय फोरमान बिलाइ"
 
 #: source/misc/imagemgr.src#STR_DESCRIPTION_OO_IMPRESS_DOC.String.Text
-#, fuzzy
 msgid  "OpenDocument Presentation"
 msgstr "उदां फोरमान बिलाइ प्रेजेनटेसन"
 
 #: source/misc/imagemgr.src#STR_DESCRIPTION_OO_CALC_DOC.String.Text
-#, fuzzy
 msgid  "OpenDocument Spreadsheet"
 msgstr "उदां फोरमान बिलाइ स्प्रेडशीट"
 
 #: source/misc/imagemgr.src#STR_DESCRIPTION_OO_WRITER_DOC.String.Text
-#, fuzzy
 msgid  "OpenDocument Text"
 msgstr "उदां फोरमान बिलाइ फराय बिजाब"
 
 #: source/misc/imagemgr.src#STR_DESCRIPTION_OO_CALC_TEMPLATE.String.Text
-#, fuzzy
 msgid  "OpenDocument Spreadsheet Template"
 msgstr "उदां फोरमान बिलाइ स्प्रेडशीट टेमप्लेट"
 
 #: source/misc/imagemgr.src#STR_DESCRIPTION_OO_DRAW_TEMPLATE.String.Text
-#, fuzzy
 msgid  "OpenDocument Drawing Template"
 msgstr "उदां फोरमान बिलाइ सावगारि टेमप्लेट"
 
 #: source/misc/imagemgr.src#STR_DESCRIPTION_OO_IMPRESS_TEMPLATE.String.Text
-#, fuzzy
 msgid  "OpenDocument Presentation Template"
 msgstr "उदां फोरमान बिलाइ प्रेजेनटेसन टेमप्लेट"
 
 #: source/misc/imagemgr.src#STR_DESCRIPTION_OO_WRITER_TEMPLATE.String.Text
-#, fuzzy
 msgid  "OpenDocument Text Template"
 msgstr "उदां फोरमान बिलाइ फराय बिजाब टेमप्लेट"
 
@@ -3005,107 +2976,86 @@ msgid  "Haitian"
 msgstr ""
 
 #: source/plugapp/testtool.src#DisplayHidToolBox.TT_SHOW.ToolBoxItem.Text
-#, fuzzy
 msgid  "Display IDs"
 msgstr "IDs दिन्थिफुं"
 
 #: source/plugapp/testtool.src#DisplayHidToolBox.TT_OUTPUT.ToolBoxItem.Text
-#, fuzzy
 msgid  "This is the input window"
 msgstr "बेयो इनपुट उइन्ड"
 
 #: source/plugapp/testtool.src#DisplayHidToolBox.TT_SEND_DATA.ToolBoxItem.Text
-#, fuzzy
 msgid  "Transfer to TestTool"
 msgstr "आनजाद टुलआव सोलाय हो"
 
 #: source/plugapp/testtool.src#DisplayHidToolBox.TT_ALLWIN.ToolBoxItem.Text
-#, fuzzy
 msgid  "Show all windows"
 msgstr "गासै उइन्डखौ दिनथि"
 
 #: source/plugapp/testtool.src#DisplayHidToolBox.TT_KURZNAME.ToolBoxItem.Text
-#, fuzzy
 msgid  "Show short names (if available)"
 msgstr "गुसुं मुंफोरखौ दिनथि(जदि मोननो हाथावब्ला)"
 
 #: source/plugapp/testtool.src#DisplayHidToolBox.TT_LANGNAME.ToolBoxItem.Text
-#, fuzzy
 msgid  "Always show long-name"
 msgstr "जेब्लायबो गोलाव-मुं दिनथि"
 
 #: source/plugapp/testtool.src#DisplayHidToolBox.ToolBoxItem.Text
-#, fuzzy
 msgid  "DisplayHID"
 msgstr "HID दिनथिफुं"
 
 #: source/plugapp/testtool.src#TT_INLINE_TRANSLATION.TT_GB_TRANSLATION.GroupBox.Text
-#, fuzzy
 msgid  "Translation"
 msgstr "राव सोलायनाय"
 
 #: source/plugapp/testtool.src#TT_INLINE_TRANSLATION.TT_E_NEW.Edit.Text
-#, fuzzy
 msgid  "~Edit"
 msgstr "~सुजु"
 
 #: source/plugapp/testtool.src#TT_INLINE_TRANSLATION.TT_FT_OLD.FixedText.Text
-#, fuzzy
 msgid  "Original Text"
 msgstr "गुबै फराय बिजाब"
 
 #: source/plugapp/testtool.src#TT_INLINE_TRANSLATION.TT_GB_COMMENT.GroupBox.Text
-#, fuzzy
 msgid  "Comment"
 msgstr "बिबुंथि"
 
 #: source/plugapp/testtool.src#TT_INLINE_TRANSLATION.TT_E_COMMENT.Edit.Text
-#, fuzzy
 msgid  "~Comment"
 msgstr "~बिबुंथि"
 
 #: source/plugapp/testtool.src#TT_INLINE_TRANSLATION.TT_PB_SELECT.PushButton.Text
-#, fuzzy
 msgid  "~Select"
 msgstr "~सायख"
 
 #: source/plugapp/testtool.src#TT_INLINE_TRANSLATION.TT_PB_RESTORE.PushButton.Text
-#, fuzzy
 msgid  "~Restore"
 msgstr "~फिन लाबो"
 
 #: source/plugapp/testtool.src#TT_INLINE_TRANSLATION.TT_PB_ACCEPT.PushButton.Text
-#, fuzzy
 msgid  "~Accept"
 msgstr "~आजाव"
 
 #: source/plugapp/testtool.src#TT_INLINE_TRANSLATION.TT_PB_NEXT.PushButton.Text
-#, fuzzy
 msgid  "~Next"
 msgstr "~उननि"
 
 #: source/plugapp/testtool.src#TT_INLINE_TRANSLATION.PushButton.Text
-#, fuzzy
 msgid  "Inplace Translation"
 msgstr "जायगायावनो राव सोलायनाय"
 
 #: source/plugapp/testtool.src#TT_DISCARD_CHANGED_DATA.MessBox.Message
-#, fuzzy
 msgid  "The Translation will be lost. Proceed anyway?"
 msgstr "राव सोलायनाया गोमागोन। जायखि जाया दावगालांनो?"
 
 #: source/plugapp/testtool.src#TT_NO_CONTROL.ErrorBox.Message
-#, fuzzy
 msgid  "The Control is no longer valid. The Translation cannot be saved."
 msgstr "दबथायनाया आरोबाव बाहाय जाथाव नङा। राव सोलायनायखौ थिनो हाया।"
 
 #: source/plugapp/testtool.src#TT_GPF.String.Text
-#, fuzzy
 msgid  "GPF occurred"
 msgstr "GPF नुजाथिदोंमोन।"
 
 #: source/plugapp/testtool.src#TT_ALTERNATE_CAPTION.String.Text
-#, fuzzy
 msgid  "HelpID does not match UniqueID: "
 msgstr "मदद ID आ रुजुजायैID गोरोबा:"
 

@@ -445,11 +445,11 @@ msgstr "སུབ་པ།(~D)"
 
 #: source/smres.src#RID_NOMATHTYPEFACEWARNING.WarningBox.Message
 msgid  "The 'StarMath' font has not been installed.\nWithout this font %PRODUCTNAME Math cannot function correctly.\nPlease install this font and restart %PRODUCTNAME Math."
-msgstr ""
+msgstr "StarMath ཡིག་གཟུགས་བསྒར་འཇུག་བྱས་མེད་པ། StarMath ཡིག་གཟུགས་ཀྱི་བྱ་རིམ་མེད་ན་རྒྱུན་གཏན་བཞིན་འཁོར་རྒྱུགས་བྱེད་ཐབས་མེད། ཡིག་གཟུགས་བསྒར་འཇུག་ཟིན་རྗེས་ StarMath བསྐྱར་དུ་འགུལ་སློང་བྱེད་དགོས།"
 
 #: source/smres.src#RID_DEFAULTSAVEQUERY.QueryBox.Message
 msgid  "Should the changes be saved as defaults?\n\nThese changes will apply for all new formulas."
-msgstr ""
+msgstr "བཟོ་བཅོས་རྒྱག་ཟིན་པའི་ནང་དོན་དེ་ཚད་ལྡན་གྱི་རྣམ་གཞག་ཐོག་ནས་ཉར་ཚགས་བྱེད་མཁན་ཡིན་ནམ།\n\nབཟོ་བཅོས་དེས་སྤྱི་འགྲོས་གསར་པ་ཡོངས་ལ་ཤུགས་རྐྱེན་བཟོ་ངེས་ཡིན།"
 
 #: source/smres.src#RID_FONTREGULAR.String.Text
 msgid  "Standard"
@@ -558,6 +558,10 @@ msgstr "Sans"
 #: source/smres.src#RID_FONTMENU.7.MenuItem.Text
 msgid  "Fixed"
 msgstr "རྒྱས་བཅད།"
+
+#: source/smres.src#CMDBOXWINDOW_TEXT.#define.Text
+msgid  "Commands"
+msgstr "བཀའ་བརྡ།"
 
 #: source/smres.src#RID_DOCUMENTSTR.String.Text
 msgid  "Formula"
@@ -701,68 +705,51 @@ msgstr "ལྟོས་ཟླའི་ཤོག་ངོས།(~P)"
 msgid  "~Scaling"
 msgstr "སྡུར་ཚད་མངོན་པ།(~S)"
 
-#: source/smres.src#CMDBOXWINDOW_TEXT.#define.Text
-#, fuzzy
-msgid  "Commands"
-msgstr "བཀའ་བརྡ།"
-
 #: source/commands.src#RID_COMMANDMENU.RID_UNBINOPS_MENU.MenuItem.Text
-#, fuzzy
 msgid  "~Unary/Binary Operators"
 msgstr "རྒྱུ་གཅིག་/རྒྱུ་གཉིས་རྩིས་རྒྱག་རྟགས།(~U)"
 
 #: source/commands.src#RID_COMMANDMENU.RID_RELATIONS_MENU.MenuItem.Text
-#, fuzzy
 msgid  "~Relations"
 msgstr "འབྲེལ་བ།(~R)"
 
 #: source/commands.src#RID_COMMANDMENU.RID_SETOPERATIONS_MENU.MenuItem.Text
-#, fuzzy
 msgid  "~Set Operations"
 msgstr "ཚོགས་སྤྱིའི་རྩིས་རྒྱག(~S)"
 
 #: source/commands.src#RID_COMMANDMENU.RID_FUNCTIONS_MENU.MenuItem.Text
-#, fuzzy
 msgid  "~Functions"
 msgstr "རྟེན་གྲངས།(~F)"
 
 #: source/commands.src#RID_COMMANDMENU.RID_FUNCTIONS_MENU.RID_FUNCTIONSOTHER1_MENU.MenuItem.Text
-#, fuzzy
 msgid  "More"
 msgstr "གཞན་དག"
 
 #: source/commands.src#RID_COMMANDMENU.RID_OPERATORS_MENU.MenuItem.Text
-#, fuzzy
 msgid  "O~perators"
 msgstr "རྩིས་རྒྱག་རྟགས།(~P)"
 
 #: source/commands.src#RID_COMMANDMENU.RID_ATTRIBUTES_MENU.MenuItem.Text
-#, fuzzy
 msgid  "~Attributes"
 msgstr "གཏོགས་གཤིས།(~A)"
 
 #: source/commands.src#RID_COMMANDMENU.RID_BRACKETS_MENU.MenuItem.Text
-#, fuzzy
 msgid  "~Brackets"
 msgstr "གུག་རྟགས།(~B)"
 
 #: source/commands.src#RID_COMMANDMENU.RID_FORMAT_MENU.MenuItem.Text
-#, fuzzy
 msgid  "For~mats"
 msgstr "རྣམ་གཞག་ཅན།(~M)"
 
 #: source/commands.src#RID_COMMANDMENU.RID_FORMAT_MENU.RID_NEWLINE.MenuItem.Text
-#, fuzzy
 msgid  "New Line"
 msgstr "ཕྲེང་བརྗེ།"
 
 #: source/commands.src#RID_COMMANDMENU.RID_FORMAT_MENU.RID_SBLANK.MenuItem.Text
-#, fuzzy
 msgid  "Small Gap"
 msgstr "བར་ཆོད་ཆུང་བ།"
 
 #: source/commands.src#RID_COMMANDMENU.RID_FORMAT_MENU.RID_BLANK.MenuItem.Text
-#, fuzzy
 msgid  "Gap"
 msgstr "བར་ཆོད།"
 
@@ -771,7 +758,6 @@ msgid  "nospace {...}"
 msgstr ""
 
 #: source/commands.src#RID_COMMANDMENU.RID_MISC_MENU.MenuItem.Text
-#, fuzzy
 msgid  "~Others"
 msgstr "གཞན་དག(~O)"
 

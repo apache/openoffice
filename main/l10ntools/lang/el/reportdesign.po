@@ -65,7 +65,7 @@ msgstr "Το όνομα '#1' υπάρχει ήδη και δεν μπορεί ν
 
 #: source/core/resource/strings.src#RID_STR_ERROR_WRONG_ARGUMENT.String.Text
 msgid  "You tried to set an illegal argument. Please have a look at '#1' for valid arguments."
-msgstr ""
+msgstr "Προσπαθήσατε να ορίσετε μια μη έκυρη παράμετρο. Παρακαλώ δείτε το  '#1' για έγκυρες παραμέτρους."
 
 #: source/core/resource/strings.src#RID_STR_ARGUMENT_IS_NULL.String.Text
 msgid  "The element is invalid."
@@ -140,12 +140,20 @@ msgid  "Group Header"
 msgstr "Κεφαλίδα ομάδας"
 
 #: source/ui/dlg/GroupsSorting.src#RID_GROUPS_SORTING.LST_HEADERLST.Default.StringList.item
+msgid  "Present"
+msgstr "Παρούσα"
+
+#: source/ui/dlg/GroupsSorting.src#RID_GROUPS_SORTING.LST_HEADERLST.Default.StringList.item
 msgid  "Not present"
 msgstr "Απούσα"
 
 #: source/ui/dlg/GroupsSorting.src#RID_GROUPS_SORTING.FT_FOOTER.FixedText.Text
 msgid  "Group Footer"
 msgstr "Υποσέλιδο ομάδας"
+
+#: source/ui/dlg/GroupsSorting.src#RID_GROUPS_SORTING.LST_FOOTERLST.Default.StringList.item
+msgid  "Present"
+msgstr "Παρούσα"
 
 #: source/ui/dlg/GroupsSorting.src#RID_GROUPS_SORTING.LST_FOOTERLST.Default.StringList.item
 msgid  "Not present"
@@ -229,7 +237,7 @@ msgstr "Διάστημα"
 
 #: source/ui/dlg/GroupsSorting.src#STR_RPT_HELP_FIELD.String.Text
 msgid  "Select a field or type an expression to sort or group on."
-msgstr ""
+msgstr "Επιλέξτε ένα πεδίο ή πληκτρολογήστε μια έκφραση για ταξινόμηση ή ομαδοποίηση,"
 
 #: source/ui/dlg/GroupsSorting.src#STR_RPT_HELP_HEADER.String.Text
 msgid  "Display a header for this group?"
@@ -253,15 +261,7 @@ msgstr "Διατήρηση της ομάδας μαζί σε μια σελίδα
 
 #: source/ui/dlg/GroupsSorting.src#STR_RPT_HELP_SORT.String.Text
 msgid  "Select ascending or descending sort order. Ascending means from A to Z or 0 to 9"
-msgstr ""
-
-#: source/ui/dlg/GroupsSorting.src#RID_GROUPS_SORTING.LST_HEADERLST.Default.StringList.item
-msgid  "Present"
-msgstr "Παρούσα"
-
-#: source/ui/dlg/GroupsSorting.src#RID_GROUPS_SORTING.LST_FOOTERLST.Default.StringList.item
-msgid  "Present"
-msgstr "Παρούσα"
+msgstr "Επιλέξτε αύξουσα ή φθίνουσα σειρά ταξινόμησης. Αύξουσα σημαίνει από ο α έως το Ω ή 0 έως 9"
 
 #: source/ui/dlg/PageNumber.src#RID_PAGENUMBERS.ModalDialog.Text
 msgid  "Page Numbers"
@@ -300,6 +300,14 @@ msgid  "Alignment:"
 msgstr "Στοίχιση:"
 
 #: source/ui/dlg/PageNumber.src#RID_PAGENUMBERS.LST_ALIGNMENT.Default.StringList.item
+msgid  "Left"
+msgstr "Αριστερά"
+
+#: source/ui/dlg/PageNumber.src#RID_PAGENUMBERS.LST_ALIGNMENT.Default.StringList.item
+msgid  "Center"
+msgstr "Στο κέντρο"
+
+#: source/ui/dlg/PageNumber.src#RID_PAGENUMBERS.LST_ALIGNMENT.Default.StringList.item
 msgid  "Right"
 msgstr "Δεξιά"
 
@@ -312,20 +320,12 @@ msgid  "~Help"
 msgstr "~Βοήθεια"
 
 #: source/ui/dlg/PageNumber.src#STR_RPT_PN_PAGE.String.Text
-msgid  ""Page " & #PAGENUMBER#"
-msgstr ""
+msgid  "\"Page \" & #PAGENUMBER#"
+msgstr "\"Page \" & #PAGENUMBER#"
 
 #: source/ui/dlg/PageNumber.src#STR_RPT_PN_PAGE_OF.String.Text
-msgid  " & " of " & #PAGECOUNT#"
-msgstr ""
-
-#: source/ui/dlg/PageNumber.src#RID_PAGENUMBERS.LST_ALIGNMENT.Default.StringList.item
-msgid  "Left"
-msgstr "Αριστερά"
-
-#: source/ui/dlg/PageNumber.src#RID_PAGENUMBERS.LST_ALIGNMENT.Default.StringList.item
-msgid  "Center"
-msgstr "Στο κέντρο"
+msgid  " & \" of \" & #PAGECOUNT#"
+msgstr " & \" από \" & #PAGECOUNT#"
 
 #: source/ui/dlg/dlgpage.src#RID_PAGEDIALOG_PAGE.TabDialog.Text
 msgid  "Page Setup"
@@ -456,6 +456,10 @@ msgid  "Properties..."
 msgstr "Ιδιότητες..."
 
 #: source/ui/dlg/CondFormat.src#WIN_CONDITION.LB_COND_TYPE.Default.StringList.item
+msgid  "Field Value Is"
+msgstr "Τιμή πεδίου είναι"
+
+#: source/ui/dlg/CondFormat.src#WIN_CONDITION.LB_COND_TYPE.Default.StringList.item
 msgid  "Expression Is"
 msgstr "Έκφαρση είναι"
 
@@ -549,11 +553,7 @@ msgstr "Βοήθεια"
 
 #: source/ui/dlg/CondFormat.src#ADDFIELD_HELP_FIELD.FixedText.Text
 msgid  "Highlight the fields to insert into the selected section of the template, then click Insert or press Enter."
-msgstr ""
-
-#: source/ui/dlg/CondFormat.src#WIN_CONDITION.LB_COND_TYPE.Default.StringList.item
-msgid  "Field Value Is"
-msgstr "Τιμή πεδίου είναι"
+msgstr "Επισημάνετε τα πεδία που θα εισαχθούν στην επιλεγμένη ενότητα του προτύπου, και μετά πατήστε Insert ή πατήστε Enter."
 
 #: source/ui/dlg/DateTime.src#RID_DATETIME_DLG.ModalDialog.Text
 msgid  "Date and Time"
@@ -785,7 +785,7 @@ msgstr "Διαφανές φόντο"
 
 #: source/ui/inspection/inspection.src#RID_STR_OVERLAP_OTHER_CONTROL.String.Text
 msgid  "This operation is not allowed. The control overlaps with another one."
-msgstr ""
+msgstr "Δεν επιτρέπεται η λειτουργία. Το στοιχείο ελέγχου επικαλύπτεται με ένα άλλο."
 
 #: source/ui/inspection/inspection.src#RID_STR_ILLEGAL_POSITION.String.Text
 msgid  "This position can not be set. It is invalid."
@@ -797,7 +797,7 @@ msgstr "Ομάδα: %1"
 
 #: source/ui/inspection/inspection.src#RID_STR_FORMULALIST.String.Text
 msgid  "Function"
-msgstr "Functionα"
+msgstr "Function"
 
 #: source/ui/inspection/inspection.src#RID_STR_SCOPE.String.Text
 msgid  "Scope"
@@ -833,7 +833,7 @@ msgstr "Σύνδεση με βοηθητικά πεδία"
 
 #: source/ui/inspection/inspection.src#RID_STR_EXPLANATION.String.Text
 msgid  "Charts can be used to display detailed data about the current record of the report. To do this, you can specify which columns in the chart match which columns in the report."
-msgstr ""
+msgstr "Τα διαγράμματα μπορούν να χρησιμοποιηθούν για την προβολή λεπτομερών δεδομένων για την τρέχουσα εγγραφή της αναφοράς. Για να το κάνετε αυτό, μπορείτε να καθορίσετε ποιες στήλες στο διάγραμμα ταιριάζουν με αυτές της αναφοράς."
 
 #: source/ui/inspection/inspection.src#RID_STR_DETAILLABEL.String.Text
 msgid  "Chart"
@@ -1237,19 +1237,15 @@ msgstr "Διαγραφή κεφαλίδας / υποσέλιδου αναφορ�
 
 #: source/ui/report/report.src#RID_ERR_NO_COMMAND.String.Text
 msgid  "The report can not be executed unless it is bound to content."
-msgstr ""
+msgstr "Δεν είναι δυνατή η εκτέλεση της αναφοράς αν δεν έχει δεσμευθεί στο περιεχόμενο."
 
 #: source/ui/report/report.src#RID_ERR_NO_OBJECTS.String.Text
 msgid  "The report can not be executed unless at least one object has been inserted."
-msgstr ""
+msgstr "Δεν είναι δυνατή η εκτέλεση της αναφοράς αν δεν έχει εισαχθεί τουλάχιστον ένα αντικείμενο."
 
 #: source/ui/report/report.src#RID_STR_UNDO_SHRINK.String.Text
 msgid  "Shrink Section"
 msgstr "Σμίκρυνση ενότητας"
-
-#: source/ui/report/report.src#RID_STR_INSERT.String.Text
-msgid  "Insert"
-msgstr "Εισαγωγή"
 
 #: source/ui/report/report.src#RID_STR_DETAIL.String.Text
 msgid  "Detail"
@@ -1270,3 +1266,7 @@ msgstr "Κεφαλίδα αναφοράς"
 #: source/ui/report/report.src#RID_STR_REPORT_FOOTER.String.Text
 msgid  "Report Footer"
 msgstr "Υποσέλιδο αναφοράς"
+
+#: source/ui/report/report.src#RID_STR_INSERT.String.Text
+msgid  "Insert"
+msgstr "Εισαγωγή"

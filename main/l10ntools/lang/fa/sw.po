@@ -725,7 +725,7 @@ msgstr "این پرونده متعلق به WinWord6 نیست"
 
 #: source/ui/app/error.src#RID_SW_ERRHDL.ERR_CODE ( ERRCODE_CLASS_READ , ERR_WW6_FASTSAVE_ERR ).String.Text
 msgid  "This file was saved with WinWord in 'Fast Save' mode. Please unmark the WinWord option 'Allow Fast Saves' and save the file again."
-msgstr ""
+msgstr "این پرونده با WinWord در حالت «ذخیره‌ی سریع» ذخیره شده است. لطفاً گزینه‌ی «اجازه برای ذخیره‌ی سریع» در WinWord را خاموش کرده و پرونده را دوباره ذخیره کنید."
 
 #: source/ui/app/error.src#RID_SW_ERRHDL.ERR_CODE ( ERRCODE_CLASS_READ , ERR_FORMAT_ROWCOL ).String.Text
 msgid  "File format error found at $(ARG1)(row,col)."
@@ -741,7 +741,7 @@ msgstr "این پرونده متعلق به WinWord97 نیست"
 
 #: source/ui/app/error.src#RID_SW_ERRHDL.ERR_CODE ( ERRCODE_CLASS_READ , ERR_FORMAT_FILE_ROWCOL ).String.Text
 msgid  "Format error discovered in the file in sub-document $(ARG1) at $(ARG2)(row,col)."
-msgstr ""
+msgstr "خطای قالب در زیرنوشتار $(ARG1) پرونده در $(ARG2)(row,col) تشخیص داده شد"
 
 #: source/ui/app/error.src#RID_SW_ERRHDL.ERR_CODE ( ERRCODE_CLASS_WRITE , ERR_SWG_WRITE_ERROR ).String.Text
 msgid  "Error writing file."
@@ -789,7 +789,7 @@ msgstr "خواندن هیچ طرحی ممکن نبود"
 
 #: source/ui/app/error.src#RID_SW_ERRHDL.WARN_CODE ( ERRCODE_CLASS_READ , WARN_WW6_FASTSAVE_ERR ).String.Text
 msgid  "This file was saved with WinWord in 'Fast Save' mode. Please unmark the WinWord option 'Allow Fast Saves' and save the file again."
-msgstr ""
+msgstr "این پرونده با WinWord در حالت «ذخیره‌ی سریع» ذخیره شده است. لطفاً گزینه‌ی «اجازه برای ذخیره‌ی سریع» در WinWord را خاموش کرده و پرونده را دوباره ذخیره کنید."
 
 #: source/ui/app/error.src#RID_SW_ERRHDL.WARN_CODE ( ERRCODE_CLASS_READ , WARN_SWG_FEATURES_LOST ).String.Text
 msgid  "Not all attributes could be read."
@@ -817,7 +817,7 @@ msgstr "ذخیره‌ی نوشتار به شکل کامل ممکن نبود"
 
 #: source/ui/app/error.src#RID_SW_ERRHDL.WARN_CODE ( ERRCODE_CLASS_WRITE , WARN_SWG_HTML_NO_MACROS).String.Text
 msgid  "This HTML document contains %PRODUCTNAME Basic macros.\nThey were not saved with the current export settings."
-msgstr ""
+msgstr "این نوشتار HTML حاوی ماکروهای بیسیک %PRODUCTNAME است.\nاین ماکروها با تنظیمات صدور فعلی ذخیره نشدند."
 
 #: source/ui/app/error.src#RID_SW_ERRHDL.ERR_CODE ( ERRCODE_CLASS_WRITE , WARN_WRITE_ERROR_FILE ).String.Text
 msgid  "Error in writing sub-document $(ARG1)."
@@ -825,7 +825,7 @@ msgstr "خطا در نوشتن زیرنوشتار $(ARG1)"
 
 #: source/ui/app/error.src#RID_SW_ERRHDL.ERR_CODE ( ERRCODE_CLASS_WRITE , WARN_FORMAT_FILE_ROWCOL ).String.Text
 msgid  "Format error discovered in the file in sub-document $(ARG1) at $(ARG2)(row,col)."
-msgstr ""
+msgstr "خطای قالب در زیرنوشتار $(ARG1) پرونده در $(ARG2)(row,col) تشخیص داده شد"
 
 #: source/ui/app/app.src#STR_PRINT_MERGE_MACRO.String.Text
 msgid  "Print form letters"
@@ -1076,8 +1076,8 @@ msgid  "Adapt Objects..."
 msgstr "پذیرش اشیاء..."
 
 #: source/ui/app/app.src#MSG_COMCORE_ASKSEARCH.QueryBox.Message
-msgid  "To proceed with this action, you must first turn off the "undo" function. Do you want to turn off the "undo" function?"
-msgstr ""
+msgid  "To proceed with this action, you must first turn off the \"undo\" function. Do you want to turn off the \"undo\" function?"
+msgstr "برای انجام این کنش، باید ابتدا کارکرد «برگردان» را خاموش کنید. آیا می‌خواهید کارکرد «برگردان» را خاموش کنید؟"
 
 #: source/ui/app/app.src#STR_TABLE_DEFNAME.String.Text
 msgid  "Table"
@@ -1109,15 +1109,15 @@ msgstr "صفحهٔ خالی"
 
 #: source/ui/app/app.src#MSG_CLPBRD_CLEAR.QueryBox.Message
 msgid  "You have a large amount of data saved in the clipboard.\nShould the clipboard contents remain available for other applications?"
-msgstr ""
+msgstr "شما مقدار زیادی داده در تخته‌گیره ذخیره کرده‌اید.\nآیا محتویات تخته‌گیره برای برنامه‌های دیگر باقی بمانند یا نه؟"
 
 #: source/ui/app/app.src#MSG_SAVE_HTML_QUERY.QueryBox.Message
 msgid  "Conversion into HTML format \nmay cause information loss. \nDo you want to save the document?"
-msgstr ""
+msgstr "تبدیل به قالب HTML ممکن است\nباعث از دست رفتن بعضی اطلاعات شود. \nآیا می‌خواهید نوشتار را ذخیره کنید؟"
 
 #: source/ui/app/app.src#MSG_SAVEAS_HTML_QUERY.QueryBox.Message
 msgid  "The source code can only be displayed if the document is saved in HTML format.\nWould you like to save the document as HTML?"
-msgstr ""
+msgstr "کد مبدأ را فقط هنگامی می‌توان نمایش داد که نوشتار در قالب HTML\nذخیره شده باشد. آیا می‌خواهید نوشتار را به صورت HTML ذخیره کنید؟"
 
 #: source/ui/app/app.src#STR_ABSTRACT_TITLE.String.Text
 msgid  "Abstract: "
@@ -1161,11 +1161,11 @@ msgstr "نامعلوم"
 
 #: source/ui/app/app.src#MSG_DISABLE_UNDO_QUESTION.WarningBox.Message
 msgid  "This action deletes the list of actions that can be undone. Previous changes made to the document are still valid, but cannot be undone. Do you want to continue formatting?"
-msgstr ""
+msgstr "این کنش فهرست کنش‌هایی را که می‌توان آنها را برگرداند حذف می‌کند. تغییرات قبلی اعمال شده روی نوشتار حفظ می‌شوند، ولی نمی‌توان آنها را برگرداند. آیا می‌خواهید قالب‌بندی را ادامه دهید؟"
 
 #: source/ui/app/app.src#MSG_PRINT_AS_MERGE.QueryBox.Message
 msgid  "Your document contains address database fields. Do you want to print a form letter?"
-msgstr ""
+msgstr "سند شما دارای رشته‌های پایگاه داده آدرس است. آیا می خواهید یک برگه نامه چاپ کنید؟"
 
 #: source/ui/app/app.src#DLG_MERGE_SOURCE_UNAVAILABLE.ST_MERGE_SOURCE_UNAVAILABLE.FixedText.Text
 msgid  "The data source \'%1\' was not found. Thus the connection to the data source could not be established.\n\nPlease check the connections settings."
@@ -1177,7 +1177,7 @@ msgstr "بررسی تنظیمات اتصال...!"
 
 #: source/ui/app/app.src#MSG_DATA_SOURCES_UNAVAILABLE.WarningBox.Message
 msgid  "No data source has been set up yet. You need a data source, such as a database, to supply data (for example, names and addresses) for the fields."
-msgstr ""
+msgstr "هنوز منبع داده‌ای راه‌اندازی نشده است. شما نیاز به یک منبع داده، مانند یک پایگاه داده، جهت تأمین داده‌ها (به عنوان مثال، نام‌ها و نشانی‌ها) برای فیلدها دارید."
 
 #: source/ui/app/app.src#RID_MODULE_TOOLBOX.String.Text
 msgid  "Function Bar (viewing mode)"
@@ -1193,7 +1193,7 @@ msgstr "شماره گذاری رئوس مطالب"
 
 #: source/ui/app/app.src#MSG_DISABLE_READLINE_QUESTION.WarningBox.Message
 msgid  "In the current document, changes are being recorded but not shown as such. In large documents, delays can occur when the document is edited. Do you want to show the changes to avoid delays?"
-msgstr ""
+msgstr "در نوشتار فعلی، تغییرات ضبط می‌شوند ولی نشان داده نمی‌شوند. در نوشتارهای بزرگ، ممکن است هنگام ویرایش نوشتار تأخیرهایی رخ دهد. آیا می‌خواهید تغییرات نشان داده شوند تا جلوی تأخیرها گرفته شود؟"
 
 #: source/ui/app/mn.src#MN_TXT.FN_FORMAT_PAGE_DLG.MenuItem.Text
 msgid  "Pa~ge..."
@@ -1365,7 +1365,7 @@ msgstr "~ارتفاع بهینه"
 
 #: source/ui/app/mn.src#MN_TAB2.MN_SUB_TBLROW.FN_TABLE_BALANCE_ROWS.MenuItem.Text
 msgid  "Space ~Equally"
-msgstr "فضا به طور ~مساوی"
+msgstr "فضا به صورت ~مساوی"
 
 #: source/ui/app/mn.src#MN_TAB2.MN_SUB_TBLROW.FN_TABLE_SELECT_ROW.MenuItem.Text
 msgid  "~Select"
@@ -1485,11 +1485,11 @@ msgstr "~شکستن"
 
 #: source/ui/app/mn.src#MN_MOUSE_FRAME_BEGIN.MN_WRAP.FN_FRAME_NOWRAP.MenuItem.Text
 msgid  "~No Wrap"
-msgstr "ب~دون شکستن"
+msgstr "بدون ~شکستن متن در خط‌ها"
 
 #: source/ui/app/mn.src#MN_MOUSE_FRAME_BEGIN.MN_WRAP.FN_FRAME_WRAP.MenuItem.Text
 msgid  "~Page Wrap"
-msgstr "شکستن ~صفحه"
+msgstr "~شکستن صفحه"
 
 #: source/ui/app/mn.src#MN_MOUSE_FRAME_BEGIN.MN_WRAP.FN_FRAME_WRAP_IDEAL.MenuItem.Text
 msgid  "~Optimal Page Wrap"
@@ -1497,7 +1497,7 @@ msgstr "شکستن ~بهینه صفحه"
 
 #: source/ui/app/mn.src#MN_MOUSE_FRAME_BEGIN.MN_WRAP.FN_FRAME_WRAPTHRU.MenuItem.Text
 msgid  "~Wrap Through"
-msgstr "شکستن بر روی"
+msgstr "شکستن از ~میان"
 
 #: source/ui/app/mn.src#MN_MOUSE_FRAME_BEGIN.MN_WRAP.FN_FRAME_WRAPTHRU_TRANSP.MenuItem.Text
 msgid  "In ~Background"
@@ -1505,7 +1505,7 @@ msgstr "در ~پس‌زمینه"
 
 #: source/ui/app/mn.src#MN_MOUSE_FRAME_BEGIN.MN_WRAP.FN_WRAP_ANCHOR_ONLY.MenuItem.Text
 msgid  "~First Paragraph"
-msgstr "~اولین بند"
+msgstr "بند ~اول"
 
 #: source/ui/app/mn.src#MN_DRAW_POPUPMENU.String.Text
 msgid  "Graphic"
@@ -1901,7 +1901,7 @@ msgstr "تورفتگی‌ها و فاصله‌گذاری"
 
 #: source/ui/chrdlg/paradlg.src#DLG_PARA.1.TP_PARA_ALIGN.PageItem.Text
 msgid  "Alignment"
-msgstr "هم‌ترازی"
+msgstr "ردیف کردن"
 
 #: source/ui/chrdlg/paradlg.src#DLG_PARA.1.TP_PARA_EXT.PageItem.Text
 msgid  "Text Flow"
@@ -2041,7 +2041,7 @@ msgstr "[هیچ‌کدام]"
 
 #: source/ui/chrdlg/chrdlg.src#MSG_ILLEGAL_PAGENUM.InfoBox.Message
 msgid  "Page numbers cannot be applied to the current page.  Even numbers can be used on left pages, odd numbers on right pages."
-msgstr ""
+msgstr "نمی‌توان شماره صفحه را به صفحه فعلی اعمال کرد. می‌توان اعداد فرد را برای صفحات راست و اعداد زوج را برای صفحات چپ به کار برد."
 
 #: source/ui/chrdlg/swbreak.src#DLG_BREAK.ModalDialog.Text
 msgid  "Insert Break"
@@ -2209,15 +2209,15 @@ msgstr "~گرافیک‌ها"
 
 #: source/ui/config/optdlg.src#TP_OPTPRINT_PAGE.CB_CTRLFLD.CheckBox.Text
 msgid  "Form control~s"
-msgstr "~کنترل‌های فرم"
+msgstr "~کنترل‌ها"
 
 #: source/ui/config/optdlg.src#TP_OPTPRINT_PAGE.CB_BACKGROUND.CheckBox.Text
 msgid  "Page ba~ckground"
-msgstr "پ~س‌زمینه صفحه"
+msgstr "پ~س‌زمینه"
 
 #: source/ui/config/optdlg.src#TP_OPTPRINT_PAGE.CB_BLACK_FONT.CheckBox.Text
 msgid  "Print text in blac~k"
-msgstr "چاپ متن به صورت ~سیاه"
+msgstr "چاپ س~یاه"
 
 #: source/ui/config/optdlg.src#TP_OPTPRINT_PAGE.CB_HIDDEN_TEXT.CheckBox.Text
 msgid  "Hidden te~xt"
@@ -2797,7 +2797,7 @@ msgstr "<تنظیمات کاربر>"
 
 #: source/ui/config/optcomp.src#TP_OPTCOMPATIBILITY_PAGE.STR_QRYBOX_USEASDEFAULT.String.Text
 msgid  "Do you want to change the compatibility options of the default template?\nThis will affect all new documents based on the default template."
-msgstr ""
+msgstr "آیا می‌خواهید گزینه‌های سازگاری قالب پیش‌فرض را تغییر دهید؟\nاین کار تمام اسناد جدید مبتنی بر قالب پیش‌فرض را تحت تأثیر قرار خواهد داد."
 
 #: source/ui/config/optcomp.src#TP_OPTCOMPATIBILITY_PAGE.STR_PRINTER_METRICS.String.Text
 msgid  "Use printer metrics for document formatting"
@@ -2841,7 +2841,7 @@ msgstr "در نظر گرفتن سبک پیچش هنگام جاگذاری اشی�
 
 #: source/ui/config/optcomp.src#TP_OPTCOMPATIBILITY_PAGE.STR_EXPAND_WORDSPACE.String.Text
 msgid  "Expand word space on lines with manual line breaks in justified paragraphs"
-msgstr ""
+msgstr "گسترش فضای کلمه روی خطوط با شکست‌های دستی خط در بندهای مرتب شده"
 
 #: source/ui/config/optload.src#TP_OPTLOAD_PAGE.FL_UPDATE.FixedLine.Text
 msgid  "Update"
@@ -2897,7 +2897,7 @@ msgstr "عنوان"
 
 #: source/ui/config/optload.src#TP_OPTCAPTION_PAGE.FT_OBJECTS.FixedText.Text
 msgid  "Add captions automatically\nwhen inserting:"
-msgstr ""
+msgstr "افزودن عناوین به طور خودکار\nهنگام درج کردن:"
 
 #: source/ui/config/optload.src#TP_OPTCAPTION_PAGE.FT_ORDER.FixedText.Text
 msgid  "Caption order"
@@ -3129,7 +3129,7 @@ msgstr "شکست خورد"
 
 #: source/ui/config/mailconfigpage.src#DLG_MM_TESTACCOUNTSETTINGS.ST_ERROR_SERVER.String.Text
 msgid  "%PRODUCTNAME could not connect to the outgoing mail server. Check your system's settings and the settings in %PRODUCTNAME. Check the server name, the port and the secure connections settings"
-msgstr ""
+msgstr "%PRODUCTNAME نمی‌تواند به کارگزار نامه‌های ارسالی متصل شود. تنظیمات سیستم خود و تنظیمات %PRODUCTNAME را بررسی کنید. نام کارگزار، درگاه و تنظیمات اتصال امن را بررسی کنید."
 
 #: source/ui/config/mailconfigpage.src#DLG_MM_SERVERAUTHENTICATION.ModalDialog.Text
 msgid  "Server Authentication"
@@ -3157,7 +3157,7 @@ msgstr "~گذرواژه"
 
 #: source/ui/config/mailconfigpage.src#DLG_MM_SERVERAUTHENTICATION.RB_SMPTAFTERPOP.RadioButton.Text
 msgid  "The outgoing mail server uses the same authentication as the ~incoming mail server. Enter the settings of the incoming mail server."
-msgstr ""
+msgstr "کارگزار نامه‌های ارسالی از همان تأیید هویت کارگزار نامه‌های ~دریافتی استفاده می‌کند. تنظیمات کارگزار نامه‌های دریافتی را وارد کنید."
 
 #: source/ui/config/mailconfigpage.src#DLG_MM_SERVERAUTHENTICATION.FT_INCOMINGSERVER.FixedText.Text
 msgid  "Incoming mail server:"
@@ -3197,7 +3197,7 @@ msgstr "انتخاب فهرست نشانی"
 
 #: source/ui/dbui/addresslistdialog.src#DLG_MM_ADDRESSLISTDIALOG.FI_DESCRIPTION.FixedText.Text
 msgid  "Select an address list. Click '%1' to select recipients from a different list. If you do not have an address list you can create one by clicking '%2'."
-msgstr ""
+msgstr "یک فهرست نشانی انتخاب کنید. برای انتخاب گیرندگان از یک فهرست دیگر، روی «%1» کلیک کنید. اگر فهرست نشانی ندارید می‌توانید با کلیک کردن روی «%2» یکی ایجاد کنید."
 
 #: source/ui/dbui/addresslistdialog.src#DLG_MM_ADDRESSLISTDIALOG.FT_LIST.FixedText.Text
 msgid  "Your recipients are currently selected from:"
@@ -3249,7 +3249,7 @@ msgstr "1."
 
 #: source/ui/dbui/mmaddressblockpage.src#DLG_MM_ADDRESSBLOCK_PAGE.FI_ADDRESSLIST.FixedText.Text
 msgid  "Select the address list containing the address data you want to use. This data is needed to create the address block."
-msgstr ""
+msgstr "فهرست نشانی‌های حاوی داده‌های نشانی که می‌خواهید استفاده کنید برگزینید. این داده‌ها برای ایجاد بلوک نشانی مورد نیاز است."
 
 #: source/ui/dbui/mmaddressblockpage.src#DLG_MM_ADDRESSBLOCK_PAGE.PB_ADDRESSLIST.PushButton.Text
 msgid  "Select A~ddress List..."
@@ -3285,7 +3285,7 @@ msgstr "3."
 
 #: source/ui/dbui/mmaddressblockpage.src#DLG_MM_ADDRESSBLOCK_PAGE.FI_MATCH_FIELDS.FixedText.Text
 msgid  "Match the field name used in the mail merge to the column headers in your data source."
-msgstr ""
+msgstr "تطبیق نام فیلد مورد استفاده در ادغام رایانامه با ستون سرآیندها در منبع داده شما."
 
 #: source/ui/dbui/mmaddressblockpage.src#DLG_MM_ADDRESSBLOCK_PAGE.PB_ASSIGN.PushButton.Text
 msgid  "Match ~Fields..."
@@ -3346,6 +3346,10 @@ msgstr "کشور/منطقه ~همیشه آورده شود"
 #: source/ui/dbui/mmaddressblockpage.src#DLG_MM_SELECTADDRESSBLOCK.RB_DEPENDENT.RadioButton.Text
 msgid  "Only ~include the country/region if it is not:"
 msgstr "~فقط در صورتی کشور/ناحیه آورده شود که این شرایط برقرار نباشد:"
+
+#: source/ui/dbui/mmaddressblockpage.src#WORKAROUND.#define.Text
+msgid  "New Address Block"
+msgstr "بلوک نشانی جدید"
 
 #: source/ui/dbui/mmaddressblockpage.src#DLG_MM_CUSTOMIZEADDRESSBLOCK.ST_TITLE_EDIT.String.Text
 msgid  "Edit Address Block"
@@ -3485,7 +3489,7 @@ msgstr "انتساب فیلدها از منبع داده شما برای مطا�
 
 #: source/ui/dbui/mmaddressblockpage.src#DLG_MM_ASSIGNFIELDS.ST_SALUTATIONMATCHING.String.Text
 msgid  "Assign the fields from your data source to match the salutation elements."
-msgstr ""
+msgstr "انتساب فیلدها از منبع داده شما برای مطابقت با عناصر درود."
 
 #: source/ui/dbui/mmaddressblockpage.src#DLG_MM_ASSIGNFIELDS.FI_PREVIEW.FixedText.Text
 msgid  "Address block preview"
@@ -3515,17 +3519,13 @@ msgstr "پیش‌نمایش"
 msgid  "< none >"
 msgstr "< هیچ کدام >"
 
-#: source/ui/dbui/mmaddressblockpage.src#WORKAROUND.#define.Text
-msgid  "New Address Block"
-msgstr "بلوک نشانی جدید"
-
 #: source/ui/dbui/selectdbtabledialog.src#DLG_MM_SELECTDBTABLEDDIALOG.ModalDialog.Text
 msgid  "Select Table"
 msgstr "انتخاب جدول"
 
 #: source/ui/dbui/selectdbtabledialog.src#DLG_MM_SELECTDBTABLEDDIALOG.FI_SELECT.FixedText.Text
 msgid  "The file you have selected contains more than one table. Please select the table containing the address list you want to use."
-msgstr ""
+msgstr "پرونده‌ای که انتخاب کردید بیش از یک جدول دارد. لطفاً جدول حاوی فهرست نشانی که می‌خواهید را انتخاب کنید."
 
 #: source/ui/dbui/selectdbtabledialog.src#DLG_MM_SELECTDBTABLEDDIALOG.PB_PREVIEW.PushButton.Text
 msgid  "~Preview"
@@ -3741,7 +3741,7 @@ msgstr "شخصی کردن نوشتارهای ادغام نامه"
 
 #: source/ui/dbui/mmmergepage.src#DLG_MM_MERGE_PAGE.FI_EDIT.FixedText.Text
 msgid  "You can personalize particular documents. Clicking '%1' will temporarily reduce the wizard to a small window so you can edit your document. After editing the document, return to the wizard by clicking 'Return to Mail Merge Wizard' in the small window."
-msgstr ""
+msgstr "بعضی نوشتارها را می‌توان شخصی کرد. با کلیک کردن روی «%1» راهنمای گام به گام به پنجرهٔ کوچکی بدل می‌شود تا شما بتوانید نوشتارتان را ویرایش کنید. پس از ویرایش نوشتار، با کلیک کردن روی «بازگشت به راهنمای گام به گام ادغام نامه» در پنجرهٔ کوچک، به راهنمای گام به گام بازگردید."
 
 #: source/ui/dbui/mmmergepage.src#DLG_MM_MERGE_PAGE.PB_EDIT.PushButton.Text
 msgid  "~Edit individual document..."
@@ -3909,7 +3909,7 @@ msgstr "بی‌عنوان"
 
 #: source/ui/dbui/mmoutputpage.src#DLG_MM_OUTPUT_PAGE.ST_SUBJECTQUERY.String.Text
 msgid  "You did not specify a subject for this message. If you would like to provide one, please type it now."
-msgstr ""
+msgstr "شما موضموعی برای این پیغام مشخص نکردید. اگر می‌خواهید پیغامتان موضوع داشته باشد، همین حالا موضوع را وارد کنید."
 
 #: source/ui/dbui/mmoutputpage.src#DLG_MM_OUTPUT_PAGE.ST_NOSUBJECT.String.Text
 msgid  "No subject"
@@ -3917,11 +3917,11 @@ msgstr "بدون موضوع"
 
 #: source/ui/dbui/mmoutputpage.src#DLG_MM_OUTPUT_PAGE.ST_NOATTACHMENTNAME.String.Text
 msgid  "You did not specify a new name for the attachment. If you would like to provide one, please type it now."
-msgstr ""
+msgstr "شما نام جدیدی برای پیوست مشخص نکردید. اگر می‌خواهید پیوست‌تان نام داشته باشد، لطفاً حالا آن را وارد کنید."
 
 #: source/ui/dbui/mmoutputpage.src#DLG_MM_OUTPUT_PAGE.ST_CONFIGUREMAIL.String.Text
 msgid  "In order to be able to send mail merge documents by e-mail, %PRODUCTNAME requires information about the e-mail account to be used.\n\n Do you want to enter e-mail account information now?"
-msgstr ""
+msgstr "برای این‌که قادر به ارسال سندهای ادغام نامه از طریق رایانامه باشید، %PRODUCTNAME به اطلاعاتی درباره حساب رایانامه‌ای که استفاده می‌کنید نیاز دارد.\n\n آیا می‌خواهید حساب رایانامه خود را اکنون وارد کنید؟"
 
 #: source/ui/dbui/mmoutputpage.src#DLG_MM_COPYTO.ModalDialog.Text
 msgid  "Copy To"
@@ -3941,11 +3941,11 @@ msgstr "رونوشت ~محرمانه"
 
 #: source/ui/dbui/mmoutputpage.src#DLG_MM_COPYTO.FI_NOTE.FixedText.Text
 msgid  "Note:\nSeparate e-mail addresses with a semicolon (;)."
-msgstr ""
+msgstr "یادداشت:\nجدا کردن نشانی رایانامه با یک نقطه ویرگول (؛)."
 
 #: source/ui/dbui/mmoutputpage.src#DLG_MM_SAVEWARNING.FI_WARNING.FixedText.Text
 msgid  "A document with the name '%1' already exists. Please save this document under a different name."
-msgstr ""
+msgstr "نوشتاری با نام «%1» از قبل وجود دارد. لطفاً این نوشتار را با نام دیگری ذخیره کنید."
 
 #: source/ui/dbui/mmoutputpage.src#DLG_MM_SAVEWARNING.FT_FILENAME.FixedText.Text
 msgid  "New document name"
@@ -4131,6 +4131,10 @@ msgstr "~پیدا کردن"
 msgid  "~Close"
 msgstr "ب~ستن"
 
+#: source/ui/dbui/mailmergechildwindow.src#WORKAROUND.#define.Text
+msgid  "Return to Mail Merge Wizard"
+msgstr "بازگشت به راهنمای گام به گام ادغام نامه"
+
 #: source/ui/dbui/mailmergechildwindow.src#DLG_MAILMERGECHILD.FloatingWindow.Text
 msgid  "Mail Merge Wizard"
 msgstr "جادوگر ادغام رایانامه"
@@ -4209,7 +4213,7 @@ msgstr "ارسال شکست خورد (نشانی نامعتبر)"
 
 #: source/ui/dbui/mailmergechildwindow.src#DLG_MM_SENDMAILS.ST_TERMINATEQUERY.String.Text
 msgid  "There are still e-mail messages in your %PRODUCTNAME Outbox.\nWould you like to exit anyway?"
-msgstr ""
+msgstr "هنوز نامه‌هایی در صندوق ارسالی %PRODUCTNMAE شما باقی مانده است.\nآیا با این وجود می‌خواهید خارج شوید؟"
 
 #: source/ui/dbui/mailmergechildwindow.src#DLG_MM_SENDWARNING.ModalDialog.Text
 msgid  "E-Mails could not be sent"
@@ -4222,10 +4226,6 @@ msgstr "خطای زیر رخ داد:"
 #: source/ui/dbui/mailmergechildwindow.src#DLG_MM_SENDWARNING.FT_DETAILS.FixedText.Text
 msgid  "Detailed information"
 msgstr "اطلاعات دقیق"
-
-#: source/ui/dbui/mailmergechildwindow.src#WORKAROUND.#define.Text
-msgid  "Return to Mail Merge Wizard"
-msgstr "بازگشت به راهنمای گام به گام ادغام نامه"
 
 #: source/ui/dbui/dbtablepreviewdialog.src#DLG_MM_DBTABLEPREVIEWDIALOG.ModalDialog.Text
 msgid  "Mail Merge Recipients"
@@ -4265,11 +4265,11 @@ msgstr "پیغام پست الکترونیک:"
 
 #: source/ui/dbui/mmoutputtypepage.src#DLG_MM_OUTPUTTYPE_PAGE.ST_LETTERHINT.String.Text
 msgid  "Send letters to a group of recipients. The letters can contain an address block and a salutation. The letters can be personalized for each recipient."
-msgstr ""
+msgstr "ارسال نامه‌ها به گروهی از گیرندگان. نامه‌ها می‌توانند حاوی یک بلوک نشانی و درود باشند. نامه‌ها را می‌توان برای هر گیرنده شخصی‌سازی نمود."
 
 #: source/ui/dbui/mmoutputtypepage.src#DLG_MM_OUTPUTTYPE_PAGE.ST_MAILHINT.String.Text
 msgid  "Send e-mail messages to a group of recipients. The e-mail messages can contain a salutation. The e-mail messages can be personalized for each recipient."
-msgstr ""
+msgstr "ارسال رایانامه به گروهی از گیرندگان. رایانامه‌ها می‌توانند حاوی یک بلوک نشانی و درود باشند. رایانامه‌ها را می‌توان برای هر گیرنده شخصی‌سازی نمود."
 
 #: source/ui/dbui/mmpreparemergepage.src#DLG_MM_PREPAREMERGE_PAGE.FI_HEADER.FixedText.Text
 msgid  "Preview and edit the document"
@@ -4277,7 +4277,7 @@ msgstr "پیش‌نمایش و ویرایش نوشتار"
 
 #: source/ui/dbui/mmpreparemergepage.src#DLG_MM_PREPAREMERGE_PAGE.FI_PREVIEW.FixedText.Text
 msgid  "The preview of a merged document is visible now. To see the preview of another document click one of the arrows."
-msgstr ""
+msgstr "پیش‌نمایش یک نوشتار ادغام شده را می‌بینید. برای دیدن پیش‌نمایش نوشتارهای دیگر روی فلش‌ها کلیک کنید."
 
 #: source/ui/dbui/mmpreparemergepage.src#DLG_MM_PREPAREMERGE_PAGE.FT_RECIPIENT.FixedText.Text
 msgid  "~Recipient"
@@ -4309,7 +4309,7 @@ msgstr "ویرایش نوشتار"
 
 #: source/ui/dbui/mmpreparemergepage.src#DLG_MM_PREPAREMERGE_PAGE.FI_EDIT.FixedText.Text
 msgid  "Write or edit your document now if you have not already done so. The changes will effect all merged documents.\n\nClicking 'Edit Document...' will temporarily reduce the wizard to a small window so you can edit the mail merge document. After editing the document, return to the wizard by clicking 'Return to Mail Merge Wizard' in the small window."
-msgstr ""
+msgstr "اگر تا الان سندتان را ننوشته یا ویرایش نکرده‌اید اکنون این کار را انجام بدهید. تغییرات بر همه اسناد ادغام شده اعمال خواهد شد.\n\nکلیک کردن بر روی 'ویرایش سند...' موقتاً ساحره را به پنجره‌ای کوچک کاهش می‌دهد تا بتوانید سند ادغام نامه را ویرایش کنید. بعد از ویرایش سند، با کلیک کردن روی 'بازگشت به ساحره ادغام نامه' در پنجره کوچک به ساحره بازگردید."
 
 #: source/ui/dbui/mmpreparemergepage.src#DLG_MM_PREPAREMERGE_PAGE.PB_EDIT.PushButton.Text
 msgid  "~Edit Document..."
@@ -4535,6 +4535,66 @@ msgstr "کلمات:"
 msgid  "Characters:"
 msgstr "نویسه‌ها:"
 
+#: source/ui/dialog/regionsw.src#FT_SUBREG_TEXT.#define.Text
+msgid  "~Section"
+msgstr "~بخش"
+
+#: source/ui/dialog/regionsw.src#CB_HIDE_TEXT.#define.Text
+msgid  "H~ide"
+msgstr "مخ~فی کردن"
+
+#: source/ui/dialog/regionsw.src#FL_HIDE_TEXT.#define.Text
+msgid  "Hide"
+msgstr "مخفی کردن"
+
+#: source/ui/dialog/regionsw.src#CB_CONDITION_TEXT.#define.Text
+msgid  "~With Condition"
+msgstr "به شر~ط"
+
+#: source/ui/dialog/regionsw.src#FL_PROPERTIES_TEXT.#define.Text
+msgid  "Properties"
+msgstr "ویژگی‌ها"
+
+#: source/ui/dialog/regionsw.src#CB_EDIT_IN_READONLY_TEXT.#define.Text
+msgid  "E~ditable in read-only document"
+msgstr "~قابل ویرایش در نوشتارهای فقط خواندنی"
+
+#: source/ui/dialog/regionsw.src#FL_FILE_TEXT.#define.Text
+msgid  "Link"
+msgstr "پیوند"
+
+#: source/ui/dialog/regionsw.src#CB_FILE_TEXT.#define.Text
+msgid  "~Link"
+msgstr "~پیوند"
+
+#: source/ui/dialog/regionsw.src#CB_DDE_TEXT.#define.Text
+msgid  "DD~E"
+msgstr "DD~E"
+
+#: source/ui/dialog/regionsw.src#FT_DDE_TEXT.#define.Text
+msgid  "DDE ~command"
+msgstr "~فرمان DDE"
+
+#: source/ui/dialog/regionsw.src#FT_FILE_TEXT.#define.Text
+msgid  "~File name"
+msgstr "~نام پرونده"
+
+#: source/ui/dialog/regionsw.src#GB_HIDE_TEXT.#define.Text
+msgid  "Hide"
+msgstr "مخفی کردن"
+
+#: source/ui/dialog/regionsw.src#GB_OPTIONS_TEXT.#define.Text
+msgid  "Options"
+msgstr "گزینه‌ها"
+
+#: source/ui/dialog/regionsw.src#FL_PROTECT_TEXT.#define.Text
+msgid  "Write protection"
+msgstr "محفاظت از نوشتن"
+
+#: source/ui/dialog/regionsw.src#CB_PASSWD_TEXT.#define.Text
+msgid  "Wit~h password"
+msgstr "~با گذرواژه"
+
 #: source/ui/dialog/regionsw.src#MD_EDIT_REGION.ModalDialog.Text
 msgid  "Edit Sections"
 msgstr "ویرایش بخش‌ها"
@@ -4565,7 +4625,7 @@ msgstr "نام بخش تکراری"
 
 #: source/ui/dialog/regionsw.src#QB_CONNECT.QueryBox.Message
 msgid  "A file connection will delete the contents of the current section. Connect anyway?"
-msgstr ""
+msgstr "یک ارتباط پرونده محتویات انتخابی فعلی را حذف خواهد کرد. آیا به هر صورت ادامه می‌دهید؟"
 
 #: source/ui/dialog/regionsw.src#REG_WRONG_PASSWORD.InfoBox.Message
 msgid  "The password entered is invalid."
@@ -4699,66 +4759,6 @@ msgstr "~قبل از بخش"
 msgid  "~After section"
 msgstr "~بعد از بخش"
 
-#: source/ui/dialog/regionsw.src#FT_SUBREG_TEXT.#define.Text
-msgid  "~Section"
-msgstr "~بخش"
-
-#: source/ui/dialog/regionsw.src#CB_HIDE_TEXT.#define.Text
-msgid  "H~ide"
-msgstr "مخ~فی کردن"
-
-#: source/ui/dialog/regionsw.src#FL_HIDE_TEXT.#define.Text
-msgid  "Hide"
-msgstr "مخفی کردن"
-
-#: source/ui/dialog/regionsw.src#CB_CONDITION_TEXT.#define.Text
-msgid  "~With Condition"
-msgstr "به شر~ط"
-
-#: source/ui/dialog/regionsw.src#FL_PROPERTIES_TEXT.#define.Text
-msgid  "Properties"
-msgstr "ویژگی‌ها"
-
-#: source/ui/dialog/regionsw.src#CB_EDIT_IN_READONLY_TEXT.#define.Text
-msgid  "E~ditable in read-only document"
-msgstr "~قابل ویرایش در نوشتارهای فقط خواندنی"
-
-#: source/ui/dialog/regionsw.src#FL_FILE_TEXT.#define.Text
-msgid  "Link"
-msgstr "پیوند"
-
-#: source/ui/dialog/regionsw.src#CB_FILE_TEXT.#define.Text
-msgid  "~Link"
-msgstr "~پیوند"
-
-#: source/ui/dialog/regionsw.src#CB_DDE_TEXT.#define.Text
-msgid  "DD~E"
-msgstr "DD~E"
-
-#: source/ui/dialog/regionsw.src#FT_DDE_TEXT.#define.Text
-msgid  "DDE ~command"
-msgstr "~فرمان DDE"
-
-#: source/ui/dialog/regionsw.src#FT_FILE_TEXT.#define.Text
-msgid  "~File name"
-msgstr "~نام پرونده"
-
-#: source/ui/dialog/regionsw.src#GB_HIDE_TEXT.#define.Text
-msgid  "Hide"
-msgstr "مخفی کردن"
-
-#: source/ui/dialog/regionsw.src#GB_OPTIONS_TEXT.#define.Text
-msgid  "Options"
-msgstr "گزینه‌ها"
-
-#: source/ui/dialog/regionsw.src#FL_PROTECT_TEXT.#define.Text
-msgid  "Write protection"
-msgstr "محفاظت از نوشتن"
-
-#: source/ui/dialog/regionsw.src#CB_PASSWD_TEXT.#define.Text
-msgid  "Wit~h password"
-msgstr "~با گذرواژه"
-
 #: source/ui/dialog/abstract.src#DLG_INSERT_ABSTRACT.FL_1.FixedLine.Text
 msgid  "Properties"
 msgstr "ویژگی‌ها"
@@ -4773,7 +4773,7 @@ msgstr "نکات فرعی در هر سطح"
 
 #: source/ui/dialog/abstract.src#DLG_INSERT_ABSTRACT.FT_DESC.FixedText.Text
 msgid  "The abstract contains the selected number of paragraphs from the included outline levels."
-msgstr ""
+msgstr "چکیده، شامل تعداد انتخاب شده پاراگراف از سطح منتخب از نوشته می‌باشد."
 
 #: source/ui/dialog/abstract.src#DLG_INSERT_ABSTRACT.HelpButton.Text
 msgid  "Create AutoAbstract"
@@ -4853,7 +4853,7 @@ msgstr "متن خودکار برای میانبر '%1' پیدا نشد."
 
 #: source/ui/dochdl/dochdl.src#STR_NO_TABLE.String.Text
 msgid  "A table cannot be inserted into another table. However, you can paste the data into the document when the cursor is not in a table."
-msgstr ""
+msgstr "یک جدول نمی‌تواند داخل سایر جدول درج شود. با این حال، وقتی که مکان‌نما در یک جدول نیست، شما می‌توانید داده را داخل سند بچسبانید."
 
 #: source/ui/dochdl/dochdl.src#MSG_ERR_INSERT_GLOS.InfoBox.Message
 msgid  "AutoText could not be created."
@@ -4865,7 +4865,7 @@ msgstr "قالب تخته گیره درخواست شده در دسترس نیس�
 
 #: source/ui/dochdl/dochdl.src#MSG_UPDATE_NEW_GLOS_FMT.QueryBox.Message
 msgid  "The section format is outdated.\nIt needs to be converted so that changes\ncan be saved.\nShould it be converted now?"
-msgstr ""
+msgstr "قالب‌بندی بخش منسوخ شده است.\nلازم است تبدیل شود تا تغییرات\nقابل ذخیره گردند.\nآیا اکنون باید تبدیل شود؟"
 
 #: source/ui/dochdl/dochdl.src#STR_PRIVATETEXT.String.Text
 msgid  "%PRODUCTNAME Writer"
@@ -5039,6 +5039,26 @@ msgstr "چارچوب منبع از پیش منبع یک پیوند است."
 msgid  "A closed link is not possible."
 msgstr "یک پیوند بسته شده امکان پذیر نیست."
 
+#: source/ui/docvw/docvw.src#STR_REDLINE_INSERT.String.Text
+msgid  "Inserted"
+msgstr "درج شد"
+
+#: source/ui/docvw/docvw.src#STR_REDLINE_DELETE.String.Text
+msgid  "Deleted"
+msgstr "حذف شد"
+
+#: source/ui/docvw/docvw.src#STR_REDLINE_FORMAT.String.Text
+msgid  "Formatted"
+msgstr "قالب‌بندی شد"
+
+#: source/ui/docvw/docvw.src#STR_REDLINE_TABLE.String.Text
+msgid  "Table changed"
+msgstr "جدول تغییر کرد"
+
+#: source/ui/docvw/docvw.src#STR_REDLINE_FMTCOLL.String.Text
+msgid  "Applied Paragraph Styles"
+msgstr "سبک‌های بند اِعمال شده"
+
 #: source/ui/docvw/docvw.src#STR_ENDNOTE.String.Text
 msgid  "Endnote: "
 msgstr "یادداشت پایانی: "
@@ -5049,7 +5069,7 @@ msgstr "پانویس: "
 
 #: source/ui/docvw/docvw.src#MSG_READONLY_CONTENT.InfoBox.Message
 msgid  "Readonly content cannot be changed.\nNo modifications will be accepted"
-msgstr ""
+msgstr "نمی‌توان محتوی فقط خواندنی را تغییر داد.\nهیچ تغییری پذیرفته نخواهد شد"
 
 #: source/ui/docvw/docvw.src#STR_TABLE_COL_ADJUST.String.Text
 msgid  "Adjust table column"
@@ -5074,26 +5094,6 @@ msgstr "انتخاب ستون جدول"
 #: source/ui/docvw/docvw.src#STR_SMARTTAG_CLICK.String.Text
 msgid  "%s-click to open Smart Tag menu"
 msgstr "%s-اشاره به بازکردن منو زبانه‌ی هوشمند"
-
-#: source/ui/docvw/docvw.src#STR_REDLINE_INSERT.String.Text
-msgid  "Inserted"
-msgstr "درج شد"
-
-#: source/ui/docvw/docvw.src#STR_REDLINE_DELETE.String.Text
-msgid  "Deleted"
-msgstr "حذف شد"
-
-#: source/ui/docvw/docvw.src#STR_REDLINE_FORMAT.String.Text
-msgid  "Formatted"
-msgstr "قالب‌بندی شد"
-
-#: source/ui/docvw/docvw.src#STR_REDLINE_TABLE.String.Text
-msgid  "Table changed"
-msgstr "جدول تغییر کرد"
-
-#: source/ui/docvw/docvw.src#STR_REDLINE_FMTCOLL.String.Text
-msgid  "Applied Paragraph Styles"
-msgstr "سبک‌های بند اِعمال شده"
 
 #: source/ui/docvw/access.src#STR_ACCESS_DOC_NAME.String.Text
 msgid  "Document view"
@@ -5125,7 +5125,7 @@ msgstr "پاصفحهٔ صفحهٔ $(ARG1)"
 
 #: source/ui/docvw/access.src#STR_ACCESS_FOOTNOTE_NAME.String.Text
 msgid  "Footnote $(ARG1)"
-msgstr "پانویس $(ARG1)"
+msgstr "پانویس‌ $(ARG1)"
 
 #: source/ui/docvw/access.src#STR_ACCESS_FOOTNOTE_DESC.String.Text
 msgid  "Footnote $(ARG1)"
@@ -5165,7 +5165,7 @@ msgstr "اقدامات"
 
 #: source/ui/docvw/access.src#STR_ACCESS_ANNOTATION_BUTTON_DESC.String.Text
 msgid  "Activate this button to open a list of actions which can be performed on this comment and other comments"
-msgstr ""
+msgstr "این دکمه را فعال کنید تا فهرستی از اقداماتی که روی این نظر و نظرات دیگر قابل انجام است باز شود"
 
 #: source/ui/docvw/access.src#STR_ACCESS_PREVIEW_DOC_NAME.String.Text
 msgid  "Document preview"
@@ -5214,6 +5214,10 @@ msgstr "- چاپگری نصب نشده است -"
 #: source/ui/envelp/envprt.src#TP_ENV_PRT.BTN_PRTSETUP.PushButton.Text
 msgid  "Setup..."
 msgstr "برپاسازی..."
+
+#: source/ui/envelp/mailmrge.src#_MAIL_MERGE_STRING_.#define.Text
+msgid  "Mail Merge"
+msgstr "ادغام نامه"
 
 #: source/ui/envelp/mailmrge.src#DLG_MAILMERGE.RB_ALL.RadioButton.Text
 msgid  "~All"
@@ -5337,11 +5341,7 @@ msgstr "ایجاد اتصال ~جدید"
 
 #: source/ui/envelp/mailmrge.src#DLG_MERGE_FIELD_CONNECTIONS.FT_INFO.FixedText.Text
 msgid  "Fields are used to personalize form letters. The fields are placeholders for data from a data source, such as a database. The fields in the form letter must be connected to the data source."
-msgstr ""
-
-#: source/ui/envelp/mailmrge.src#_MAIL_MERGE_STRING_.#define.Text
-msgid  "Mail Merge"
-msgstr "ادغام نامه"
+msgstr "از این فیلدها برای شخصی‌سازی نامه‌ها استفاده می‌شود. داده‌هایی که از منبع داده‌هایی مثل یک پایگاه‌داده می‌آیند، در این فیلدها قرار می‌گیرند.فیلدهای موجود در فرم نامه باید به منبع داده‌ها متصل شوند."
 
 #: source/ui/envelp/labprt.src#TP_LAB_PRT.BTN_PAGE.RadioButton.Text
 msgid  "~Entire page"
@@ -5397,7 +5397,7 @@ msgstr "نوشتار ~جدید"
 
 #: source/ui/envelp/envelp.src#STR_SENDER_TOKENS.String.Text
 msgid  "COMPANY;CR;FIRSTNAME; ;LASTNAME;CR;ADDRESS;CR;CITY; ;STATEPROV; ;POSTALCODE;CR;COUNTRY;CR;"
-msgstr ""
+msgstr "COMPANY;CR;FIRSTNAME; ;LASTNAME;CR;ADDRESS;CR;CITY; ;STATEPROV; ;POSTALCODE;CR;COUNTRY;CR;"
 
 #: source/ui/envelp/envfmt.src#TP_ENV_FMT.FL_ADDRESSEE.FixedLine.Text
 msgid  "Addressee"
@@ -5470,6 +5470,14 @@ msgstr "ن~ویسه"
 #: source/ui/envelp/envfmt.src#MNU_EDIT.MID_PARA.MenuItem.Text
 msgid  "P~aragraph..."
 msgstr "بن~د..."
+
+#: source/ui/envelp/label.src#LABEL_STRING.#define.Text
+msgid  "Labels"
+msgstr "برچسب‌ها"
+
+#: source/ui/envelp/label.src#BUSINESS_CARD_STRING.#define.Text
+msgid  "Business Cards"
+msgstr "کارت‌های ویزیت"
 
 #: source/ui/envelp/label.src#DLG_LAB.1.TP_PRIVATE_DATA.PageItem.Text
 msgid  "Private"
@@ -5639,14 +5647,6 @@ msgstr "دورنگار"
 msgid  "Ho~mepage / e-mail"
 msgstr "صف~حهٔ آغازه / پست الکترونیکی"
 
-#: source/ui/envelp/label.src#LABEL_STRING.#define.Text
-msgid  "Labels"
-msgstr "برچسب‌ها"
-
-#: source/ui/envelp/label.src#BUSINESS_CARD_STRING.#define.Text
-msgid  "Business Cards"
-msgstr "کارت‌های ویزیت"
-
 #: source/ui/envelp/labfmt.src#TP_LAB_FMT.TXT_HDIST.FixedText.Text
 msgid  "Hori~zontal pitch"
 msgstr "گام اف~قی"
@@ -5728,8 +5728,8 @@ msgid  "Options"
 msgstr "گزینه‌ها"
 
 #: source/ui/envelp/labfmt.src#DLG_SAVE_LABEL.MB_QUERY.QueryBox.Message
-msgid  "The label "%1 / %2" already exists.\nDo you want to overwrite it?"
-msgstr ""
+msgid  "The label \"%1 / %2\" already exists.\nDo you want to overwrite it?"
+msgstr "برچسب \"%1 / %2\" در حال حاضر وجود دارد.\nآیا می خواهید روی آن بنویسید؟"
 
 #: source/ui/envelp/labfmt.src#DLG_SAVE_LABEL.QueryBox.Text
 msgid  "Save Label Format"
@@ -6609,7 +6609,7 @@ msgstr "مرور..."
 
 #: source/ui/fldui/changedb.src#DLG_CHANGE_DB.FT_DESC.FixedText.Text
 msgid  "Use this dialog to replace the databases you access in your document via database fields, with other databases. You can only make one change at a time. Multiple selection is possible in the list on the left.\nUse the browse button to select a database file."
-msgstr ""
+msgstr "برای جایگزینی پایگاه‌داده‌هایی که در نوشتارتان از طریق فیلدهای پایگاه‌داده به آنها دسترسی دارید، از این محاوره استفاده کنید. هر بار می‌توانید فقط یک تغییر ایجاد کنید. انتخاب‌های چندتایی در فهرست سمت چپ امکان دارد.\nبرای انتخاب یک پرونده‌ی پایگاه‌داده از دکمه‌ی مرور استفاده کنید."
 
 #: source/ui/fldui/changedb.src#DLG_CHANGE_DB.FT_DOCDBTEXT.FixedText.Text
 msgid  "Database applied to document:"
@@ -7388,6 +7388,14 @@ msgid  "~Position"
 msgstr "~موقعیت"
 
 #: source/ui/frmdlg/column.src#TP_COLUMN.LB_POSITION.Default.StringList.item
+msgid  "Top"
+msgstr "بالا"
+
+#: source/ui/frmdlg/column.src#TP_COLUMN.LB_POSITION.Default.StringList.item
+msgid  "Centered"
+msgstr "وسط"
+
+#: source/ui/frmdlg/column.src#TP_COLUMN.LB_POSITION.Default.StringList.item
 msgid  "Bottom"
 msgstr "پایین"
 
@@ -7450,14 +7458,6 @@ msgstr "فاصله‌گذاری بین %1 و %2"
 #: source/ui/frmdlg/column.src#STR_ACCESS_COLUMN_WIDTH.String.Text
 msgid  "Column %1 Width"
 msgstr "پهنای ستون %1"
-
-#: source/ui/frmdlg/column.src#TP_COLUMN.LB_POSITION.Default.StringList.item
-msgid  "Top"
-msgstr "بالا"
-
-#: source/ui/frmdlg/column.src#TP_COLUMN.LB_POSITION.Default.StringList.item
-msgid  "Centered"
-msgstr "وسط"
 
 #: source/ui/frmdlg/frmui.src#STR_TOP.String.Text
 msgid  "~Top"
@@ -7667,6 +7667,10 @@ msgstr "نوشتار اصلی"
 msgid  "%PRODUCTNAME %PRODUCTVERSION Master Document"
 msgstr "نوشتار اصلی %PRODUCTNAME %PRODUCTVERSION"
 
+#: source/ui/index/idxmrk.src#IDX_PHONETIC_LISTBOX_DESCRIPTION.#define.Text
+msgid  "Phonetic reading"
+msgstr "خوانش آوانمایی"
+
 #: source/ui/index/idxmrk.src#IDX_DIALOG_WINDOW.WIN_DLG.BT_OK.OKButton.Text
 msgid  "Insert"
 msgstr "درج"
@@ -7805,11 +7809,7 @@ msgstr "درج مدخل کتاب‌شناسی"
 
 #: source/ui/index/idxmrk.src#DLG_CHANGE_AUTH_ENTRY.QueryBox.Message
 msgid  "The document already contains the bibliography entry but with different data. Do you want to adjust the existing entries?"
-msgstr ""
-
-#: source/ui/index/idxmrk.src#IDX_PHONETIC_LISTBOX_DESCRIPTION.#define.Text
-msgid  "Phonetic reading"
-msgstr "خوانش آوانمایی"
+msgstr "نوشتار از قبل حاوی مدخل کتاب‌شناسی هست ولی داده‌های این مدخل متفاوت است. آیا می‌خواهید مداخل موجود را تنظیم کنید؟"
 
 #: source/ui/index/cnttab.src#STR_TITLE.String.Text
 msgid  "Title"
@@ -7824,8 +7824,8 @@ msgid  "Level "
 msgstr "سطح "
 
 #: source/ui/index/cnttab.src#STR_FILE_NOT_FOUND.String.Text
-msgid  "The file, "%1" in the "%2" path could not be found."
-msgstr ""
+msgid  "The file, \"%1\" in the \"%2\" path could not be found."
+msgstr "پروندهٔ «%1» در مسیر «%2» پیدا نشد."
 
 #: source/ui/index/cnttab.src#DLG_MULTI_TOX.1.TP_TOX_SELECT.PageItem.Text
 msgid  "Index/Table"
@@ -8557,7 +8557,7 @@ msgstr "‍~مسیر"
 
 #: source/ui/misc/glossary.src#DLG_GLOSSARY.ST_READONLY_PATH.String.Text
 msgid  "The 'AutoText' directories are read-only. Do you want to call the path settings dialog?"
-msgstr ""
+msgstr "شاخه‌های «متن خودکار» فقط خواندنی هستند. آیا می‌خواهید محاورهٔ تنظیمات مسیر را فراخوانی کنید؟"
 
 #: source/ui/misc/glossary.src#DLG_GLOSSARY.MNU_EDIT.FN_GL_DEFINE.MenuItem.Text
 msgid  "~New"
@@ -8672,6 +8672,14 @@ msgid  "~Position"
 msgstr "~موقعیت"
 
 #: source/ui/misc/pgfnote.src#TP_FOOTNOTE_PAGE.DLB_LINEPOS.Default.StringList.item
+msgid  "Left"
+msgstr "چپ"
+
+#: source/ui/misc/pgfnote.src#TP_FOOTNOTE_PAGE.DLB_LINEPOS.Default.StringList.item
+msgid  "Centered"
+msgstr "وسط‌چین"
+
+#: source/ui/misc/pgfnote.src#TP_FOOTNOTE_PAGE.DLB_LINEPOS.Default.StringList.item
 msgid  "Right"
 msgstr "راست"
 
@@ -8690,14 +8698,6 @@ msgstr "~فاصله‌گذاری به مندرجات پانویس"
 #: source/ui/misc/pgfnote.src#TP_FOOTNOTE_PAGE.FL_LINE.FixedLine.Text
 msgid  "Separator line"
 msgstr "خط جداساز"
-
-#: source/ui/misc/pgfnote.src#TP_FOOTNOTE_PAGE.DLB_LINEPOS.Default.StringList.item
-msgid  "Left"
-msgstr "چپ"
-
-#: source/ui/misc/pgfnote.src#TP_FOOTNOTE_PAGE.DLB_LINEPOS.Default.StringList.item
-msgid  "Centered"
-msgstr "وسط‌چین"
 
 #: source/ui/misc/num.src#TP_NUM_POSITION.FL_LEVEL.FixedLine.Text
 msgid  "Level"
@@ -10065,7 +10065,7 @@ msgstr "قالب‌بندی خودکاری"
 
 #: source/ui/shells/shells.src#STR_REDLINE_MSG.String.Text
 msgid  "AutoCorrect completed.\nYou can accept or reject all changes,\nor accept or reject particular changes."
-msgstr ""
+msgstr "قالب‌بندی خودکار پایان یافت.\nشما می‌توانید همه‌ی تغییرات را قبول یا رد کنید،\nیا بعضی تغییرات به‌خصوص را قبول یا رد کنید."
 
 #: source/ui/shells/shells.src#STR_REDLINE_ACCEPT_ALL.String.Text
 msgid  "Accept All"
@@ -10309,7 +10309,7 @@ msgstr "مجموع"
 
 #: source/ui/table/tautofmt.src#DLG_AUTOFMT_TABLE.STR_INVALID_AFNAME.String.Text
 msgid  "You have entered an invalid name.\nThe desired AutoFormat could not be created. \nTry again using a different name."
-msgstr ""
+msgstr "نامی که وارد کرده‌اید معتبر نیست.\nقالب‌بندی خودکار مورد نظر را نمی‌توان ایجاد کرد.\nدوباره با یک نام دیگر امتحان کنید."
 
 #: source/ui/table/mergetbl.src#DLG_MERGE_TABLE.FL_MERGE.FixedLine.Text
 msgid  "Mode"
@@ -10493,7 +10493,7 @@ msgstr "~ستون اول در حکم عنوان"
 
 #: source/ui/table/chartins.src#DLG_INSERT_CHART.FT_TEXT.FixedText.Text
 msgid  "If the selected cells do not contain the desired data, select the data range now.\n\nInclude the cells containing column and row labels if you want them to be included in your chart."
-msgstr ""
+msgstr "اگر خانه‌های انتخاب شده حاوی داده‌های دلخواه شما نیستند، اکنون محدوده‌ی داده‌ها را انتخاب کنید.\n\nاگر می‌خواهید برچسب‌های سطرها و ستون‌ها در نمودارتان بیایند،‌ خانه‌های حاوی آن‌ها را هم انتخاب کنید."
 
 #: source/ui/table/chartins.src#DLG_INSERT_CHART.BT_PREV.PushButton.Text
 msgid  "<< ~Back"
@@ -10506,6 +10506,10 @@ msgstr "~بعد >>"
 #: source/ui/table/chartins.src#DLG_INSERT_CHART.BT_FINISH.PushButton.Text
 msgid  "Cre~ate"
 msgstr "ای~جاد"
+
+#: source/ui/table/tabledlg.src#TEXT_TEXTFLOW.#define.Text
+msgid  "Text Flow"
+msgstr "جریان متن"
 
 #: source/ui/table/tabledlg.src#DLG_FORMAT_TABLE.TabDialog.Text
 msgid  "Table Format"
@@ -10715,10 +10719,6 @@ msgstr "پایین"
 msgid  "The name of the table must not contain spaces."
 msgstr "نام جدول نباید شامل فاصله باشد."
 
-#: source/ui/table/tabledlg.src#TEXT_TEXTFLOW.#define.Text
-msgid  "Text Flow"
-msgstr "جریان متن"
-
 #: source/ui/table/splittbl.src#DLG_SPLIT_TABLE.FL_SPLIT.FixedLine.Text
 msgid  "Mode"
 msgstr "حالت"
@@ -10753,7 +10753,7 @@ msgstr "آیا می‌خواهید متن اصلی را بررسی کنید؟"
 
 #: source/ui/uiview/view.src#DLG_PRT_FIELDNAME.QueryBox.Message
 msgid  "Show field commands option is checked.\nDo you want to print the document with field names?"
-msgstr ""
+msgstr "گزینه‌ی نشان دادن فرمان‌های فیلد علامت خورده است.\nآیا می‌خواهید نوشتار را با نام فیلدها چاپ کنید؟"
 
 #: source/ui/uiview/view.src#DLG_SPECIAL.QueryBox.Message
 msgid  "Do you want check the special regions?"
@@ -10761,7 +10761,7 @@ msgstr "آیا می‌خواهید مناطق خاص را بررسی کنید؟"
 
 #: source/ui/uiview/view.src#DLG_THESAURUS.QueryBox.Message
 msgid  "This word appears in the list of words you want to avoid! Start thesaurus?"
-msgstr ""
+msgstr "این کلمه در فهرست کلماتی که می‌خواهید از آنها اجتناب کنید دیده می‌شود! فرهنگ معنایی آغاز شود؟"
 
 #: source/ui/uiview/view.src#DLG_SPECIAL_FORCED.QueryBox.Message
 msgid  "Check special regions is deactivated. Check anyway?"
@@ -10769,15 +10769,19 @@ msgstr "بررسی مناطق خاص از کار انداخته شده. با ا�
 
 #: source/ui/uiview/view.src#MSG_SEARCH_END.QueryBox.Message
 msgid  "%PRODUCTNAME Writer has searched to the end of the document. Do you want to continue at the beginning?"
-msgstr ""
+msgstr "نگارشگر ‏%PRODUCTNAME تا آخر نوشتار را جستجو کرد. آیا می‌خواهید جستجو را از اول نوشتار ادامه دهد؟"
 
 #: source/ui/uiview/view.src#MSG_SEARCH_START.QueryBox.Message
 msgid  "%PRODUCTNAME Writer has searched to the beginning of the document. Do you want to continue at the end?"
-msgstr ""
+msgstr "نگارشگر ‏%PRODUCTNAME تا اول نوشتار را جستجو کرد. آیا می‌خواهید جستجو را از آخر نوشتار ادامه دهد؟"
 
 #: source/ui/uiview/view.src#MSG_NO_MERGE_ENTRY.InfoBox.Message
 msgid  "Could not merge documents."
 msgstr "ترکیب نوشتارها ممکن نیست."
+
+#: source/ui/uiview/view.src#MSG_ERR_INSERT_GLOS.InfoBox.Message
+msgid  "AutoText could not be created."
+msgstr "تولید متن خودکار ممکن نیست."
 
 #: source/ui/uiview/view.src#MSG_ERR_SRCSTREAM.InfoBox.Message
 msgid  "The source cannot be loaded."
@@ -10871,10 +10875,6 @@ msgstr "مبدأ HTML"
 msgid  "HTML Source"
 msgstr "مبدأ HTML"
 
-#: source/ui/uiview/view.src#MSG_ERR_INSERT_GLOS.InfoBox.Message
-msgid  "AutoText could not be created."
-msgstr "تولید متن خودکار ممکن نیست."
-
 #: source/ui/uiview/pview.src#DLG_PAGEPREVIEW_ZOOM.ModalDialog.Text
 msgid  "Multiple Pages"
 msgstr "چندین صفحه"
@@ -10908,7 +10908,7 @@ msgid  "Capitalize first letter of sentences"
 msgstr "بزرگ کردن حرف اول جمله‌ها."
 
 #: source/ui/utlui/utlui.src#RID_SHELLRES_AUTOFMTSTRS.STR_AUTOFMTREDL_TYPO+1.String.Text
-msgid  "Replace "standard" quotes with %1 \bcustom%2 quotes"
+msgid  "Replace \"standard\" quotes with %1 \bcustom%2 quotes"
 msgstr ""
 
 #: source/ui/utlui/utlui.src#RID_SHELLRES_AUTOFMTSTRS.STR_AUTOFMTREDL_USER_STYLE+1.String.Text
@@ -10948,28 +10948,28 @@ msgid  "Combine single line paragraphs"
 msgstr "ترکیب بندهای تک خطی"
 
 #: source/ui/utlui/utlui.src#RID_SHELLRES_AUTOFMTSTRS.STR_AUTOFMTREDL_SET_TMPL_TEXT +1.String.Text
-msgid  "Set "Text body" Style"
-msgstr ""
+msgid  "Set \"Text body\" Style"
+msgstr "تنظیم سبک «بدنهٔ متن»"
 
 #: source/ui/utlui/utlui.src#RID_SHELLRES_AUTOFMTSTRS.STR_AUTOFMTREDL_SET_TMPL_INDENT.String.Text
-msgid  "Set "Text body indent" Style"
-msgstr ""
+msgid  "Set \"Text body indent\" Style"
+msgstr "تنظیم سبک «تورفتگی بدنه‌ی متن»"
 
 #: source/ui/utlui/utlui.src#RID_SHELLRES_AUTOFMTSTRS.STR_AUTOFMTREDL_SET_TMPL_NEG_INDENT.String.Text
-msgid  "Set "Hanging indent" Style"
-msgstr ""
+msgid  "Set \"Hanging indent\" Style"
+msgstr "تنظیم سبک «تورفتگی آویخته»"
 
 #: source/ui/utlui/utlui.src#RID_SHELLRES_AUTOFMTSTRS.STR_AUTOFMTREDL_SET_TMPL_TEXT_INDENT +1.String.Text
-msgid  "Set "Text body indent" Style"
-msgstr ""
+msgid  "Set \"Text body indent\" Style"
+msgstr "تنظیم سبک «تورفتگی بدنه‌ی متن»"
 
 #: source/ui/utlui/utlui.src#RID_SHELLRES_AUTOFMTSTRS.STR_AUTOFMTREDL_SET_TMPL_HEADLINE +1.String.Text
-msgid  "Set "Heading $(ARG1)" Style"
-msgstr ""
+msgid  "Set \"Heading $(ARG1)\" Style"
+msgstr "تنظیم سبک «سرنویس $(ARG1)»"
 
 #: source/ui/utlui/utlui.src#RID_SHELLRES_AUTOFMTSTRS.STR_AUTOFMTREDL_SET_NUMBULET +1.String.Text
-msgid  "Set "Bullet" or "Numbering" Style"
-msgstr ""
+msgid  "Set \"Bullet\" or \"Numbering\" Style"
+msgstr "تنظیم سبک «گلوله» یا «شماره‌گذاری»"
 
 #: source/ui/utlui/utlui.src#RID_SHELLRES_AUTOFMTSTRS.STR_AUTOFMTREDL_DEL_MORELINES +1.String.Text
 msgid  "Combine paragraphs"
@@ -11137,11 +11137,11 @@ msgstr "[سیستم]"
 
 #: source/ui/utlui/utlui.src#STR_MULT_INTERACT_SPELL_WARN.String.Text
 msgid  "The interactive spellcheck is already active\nin a different document"
-msgstr ""
+msgstr "غلط‌یابی محاوره‌ای قبلاً در نوشتار دیگری\nفعال شده است"
 
 #: source/ui/utlui/utlui.src#STR_MULT_INTERACT_HYPH_WARN.String.Text
 msgid  "The interactive hyphenation is already active\nin a different document"
-msgstr ""
+msgstr "تیره‌گذاری محاوره‌ای قبلاً در نوشتار دیگری\nفعال شده است"
 
 #: source/ui/utlui/utlui.src#STR_SPELL_TITLE.String.Text
 msgid  "Spellcheck"
@@ -12667,6 +12667,18 @@ msgstr "وسطِ عمودی"
 msgid  "at bottom"
 msgstr "تهِ صفحه"
 
+#: source/ui/utlui/attrdesc.src#STR_LINE_TOP.String.Text
+msgid  "Top of line"
+msgstr "سرِ سطر"
+
+#: source/ui/utlui/attrdesc.src#STR_LINE_CENTER.String.Text
+msgid  "Line centered"
+msgstr "وسط سطر"
+
+#: source/ui/utlui/attrdesc.src#STR_LINE_BOTTOM.String.Text
+msgid  "Bottom of line"
+msgstr "ته سطر"
+
 #: source/ui/utlui/attrdesc.src#STR_REGISTER_ON.String.Text
 msgid  "Register-true"
 msgstr "ثبت-آری"
@@ -12834,18 +12846,6 @@ msgstr "ادغام کناره‌ها"
 #: source/ui/utlui/attrdesc.src#STR_CONNECT_BORDER_OFF.String.Text
 msgid  "Do not merge borders"
 msgstr "کناره‌ها ادغام نشوند"
-
-#: source/ui/utlui/attrdesc.src#STR_LINE_TOP.String.Text
-msgid  "Top of line"
-msgstr "سرِ سطر"
-
-#: source/ui/utlui/attrdesc.src#STR_LINE_CENTER.String.Text
-msgid  "Line centered"
-msgstr "وسط سطر"
-
-#: source/ui/utlui/attrdesc.src#STR_LINE_BOTTOM.String.Text
-msgid  "Bottom of line"
-msgstr "ته سطر"
 
 #: source/ui/web/web.src#STR_HUMAN_SWWEBDOC_NAME.String.Text
 msgid  "HTML"

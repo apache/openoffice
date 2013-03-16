@@ -262,8 +262,9 @@ msgid  "Move slides"
 msgstr "Move slides"
 
 #: source/core/glob.src#STR_NOT_ENOUGH_MEMORY.String.Text
+#, fuzzy
 msgid  "Not enough memory!\nThe action will be aborted."
-msgstr ""
+msgstr "Not enough memory!\nThe action will be aborted."
 
 #: source/core/glob.src#STR_POOLSHEET_MEASURE.String.Text
 #, fuzzy
@@ -415,12 +416,14 @@ msgid  "File format error found at $(ARG1)(row,col)."
 msgstr "File format error found at $(ARG1)(row,col)."
 
 #: source/core/glob.src#RID_SD_ERRHDL.ERR_CODE ( ERRCODE_CLASS_READ , ERR_FORMAT_FILE_ROWCOL ).String.Text
+#, fuzzy
 msgid  "Format error discovered in the file in sub-document $(ARG1) at position $(ARG2)(row,col)."
-msgstr ""
+msgstr "Format error discovered in the file in sub-document $(ARG1) at position $(ARG2)(row,col)."
 
 #: source/core/glob.src#RID_SD_ERRHDL.ERR_CODE ( ERRCODE_CLASS_READ , WARN_FORMAT_FILE_ROWCOL ).String.Text
+#, fuzzy
 msgid  "Format error discovered in the file in sub-document $(ARG1) at position $(ARG2)(row,col)."
-msgstr ""
+msgstr "Format error discovered in the file in sub-document $(ARG1) at position $(ARG2)(row,col)."
 
 #: source/core/glob.src#STR_3DOBJECTBARSHELL.String.Text
 #, fuzzy
@@ -1518,8 +1521,9 @@ msgid  "Trigger"
 msgstr "Trigger"
 
 #: source/ui/animations/CustomAnimation.src#STR_CUSTOMANIMATION_LIST_HELPTEXT.String.Text
+#, fuzzy
 msgid  "First select the slide element and then click 'Add...' to add an animation effect."
-msgstr ""
+msgstr "First select the slide element and then click 'Add...' to add an animation effect."
 
 #: source/ui/animations/SlideTransitionPane.src#DLG_SLIDE_TRANSITION_PANE.Control.Text
 #, fuzzy
@@ -1712,20 +1716,24 @@ msgid  "(no author)"
 msgstr "(no author)"
 
 #: source/ui/annotations/annotations.src#STR_ANNOTATION_WRAP_FORWARD.String.Text
+#, fuzzy
 msgid  "%PRODUCTNAME Impress reached the end of the presentation. Do you want to continue at the beginning?"
-msgstr ""
+msgstr "%PRODUCTNAME Impress reached the end of the presentation. Do you want to continue from the beginning?"
 
 #: source/ui/annotations/annotations.src#STR_ANNOTATION_WRAP_BACKWARD.String.Text
+#, fuzzy
 msgid  "%PRODUCTNAME Impress reached the beginning of the presentation. Do you want to continue at the end?"
-msgstr ""
+msgstr "%PRODUCTNAME Impress reached the beginning of the presentation. Do you want to continue from the end?"
 
 #: source/ui/annotations/annotations.src#STR_ANNOTATION_WRAP_FORWARD_DRAW.String.Text
+#, fuzzy
 msgid  "%PRODUCTNAME Draw reached the end of the document. Do you want to continue at the beginning?"
-msgstr ""
+msgstr "%PRODUCTNAME Draw reached the end of the document. Do you want to continue from the beginning?"
 
 #: source/ui/annotations/annotations.src#STR_ANNOTATION_WRAP_BACKWARD_DRAW.String.Text
+#, fuzzy
 msgid  "%PRODUCTNAME Draw reached the beginning of the document. Do you want to continue at the end?"
-msgstr ""
+msgstr "%PRODUCTNAME Draw reached the beginning of the document. Do you want to continue from the end?"
 
 #: source/ui/annotations/annotations.src#STR_ANNOTATION_UNDO_INSERT.String.Text
 #, fuzzy
@@ -1769,8 +1777,8 @@ msgstr "~Table..."
 
 #: source/ui/app/popup2_tmpl.src#RID_GRAPHIC_TABLE_POPUP.DUMMY.MenuItem.Text
 #, fuzzy
-msgid  "Colu~mn"
-msgstr "Colu~mn"
+msgid  "~Cell"
+msgstr "~Cell"
 
 #: source/ui/app/popup2_tmpl.src#RID_GRAPHIC_TABLE_POPUP.DUMMY.SID_TABLE_MERGE_CELLS.MenuItem.Text
 #, fuzzy
@@ -1797,6 +1805,11 @@ msgstr "C~entre"
 msgid  "~Bottom"
 msgstr "~Bottom"
 
+#: source/ui/app/popup2_tmpl.src#RID_GRAPHIC_TABLE_POPUP.DUMMY.MenuItem.Text
+#, fuzzy
+msgid  "~Row"
+msgstr "~Row"
+
 #: source/ui/app/popup2_tmpl.src#RID_GRAPHIC_TABLE_POPUP.DUMMY.SID_TABLE_DISTRIBUTE_ROWS.MenuItem.Text
 #, fuzzy
 msgid  "Space ~Equally"
@@ -1817,6 +1830,11 @@ msgstr "~Insert..."
 msgid  "~Delete"
 msgstr "~Delete"
 
+#: source/ui/app/popup2_tmpl.src#RID_GRAPHIC_TABLE_POPUP.DUMMY.MenuItem.Text
+#, fuzzy
+msgid  "Colu~mn"
+msgstr "Colu~mn"
+
 #: source/ui/app/popup2_tmpl.src#RID_GRAPHIC_TABLE_POPUP.DUMMY.SID_TABLE_DISTRIBUTE_COLUMNS.MenuItem.Text
 #, fuzzy
 msgid  "Space ~Equally"
@@ -1836,16 +1854,6 @@ msgstr "~Insert..."
 #, fuzzy
 msgid  "~Delete"
 msgstr "~Delete"
-
-#: source/ui/app/popup2_tmpl.src#RID_GRAPHIC_TABLE_POPUP.DUMMY.MenuItem.Text
-#, fuzzy
-msgid  "~Cell"
-msgstr "~Cell"
-
-#: source/ui/app/popup2_tmpl.src#RID_GRAPHIC_TABLE_POPUP.DUMMY.MenuItem.Text
-#, fuzzy
-msgid  "~Row"
-msgstr "~Row"
 
 #: source/ui/app/strings.src#STR_DRAW_TOOLBOX.String.Text
 #, fuzzy
@@ -2148,8 +2156,9 @@ msgid  "Please enter a name for the new arrowhead:"
 msgstr "Please enter a name for the new arrowhead:"
 
 #: source/ui/app/strings.src#STR_WARN_NAME_DUPLICATE.String.Text
+#, fuzzy
 msgid  "The name chosen already exists. \nPlease enter another name."
-msgstr ""
+msgstr "The name chosen already exists. \nPlease enter another name."
 
 #: source/ui/app/strings.src#STR_UNDO_ANIMATION.String.Text
 #, fuzzy
@@ -2182,8 +2191,9 @@ msgid  "Name"
 msgstr "Name"
 
 #: source/ui/app/strings.src#STR_WARN_PAGE_EXISTS.String.Text
+#, fuzzy
 msgid  "The slide name already exists or is invalid. Please enter another name."
-msgstr ""
+msgstr "The slide name already exists or is invalid. Please enter another name."
 
 #: source/ui/app/strings.src#STR_SNAPDLG_SETLINE.String.Text
 #, fuzzy
@@ -2236,8 +2246,9 @@ msgid  "Insert slides"
 msgstr "Insert slides"
 
 #: source/ui/app/strings.src#STR_ASK_DELETE_LAYER.String.Text
-msgid  "Are you sure you want to delete the level "$"?\nNote: All objects on this level will be deleted!"
-msgstr ""
+#, fuzzy
+msgid  "Are you sure you want to delete the level \"$\"?\nNote: All objects on this level will be deleted!"
+msgstr "Are you sure you want to delete the level \"$\"?\nNote: All objects on this level will be deleted!"
 
 #: source/ui/app/strings.src#STR_ASK_DELETE_ALL_PICTURES.String.Text
 #, fuzzy
@@ -2295,8 +2306,9 @@ msgid  "Insert text frame"
 msgstr "Insert text frame"
 
 #: source/ui/app/strings.src#STR_ACTION_NOTPOSSIBLE.String.Text
+#, fuzzy
 msgid  "This function cannot be run \nwith the selected objects."
-msgstr ""
+msgstr "This function cannot be run \nwith the selected objects."
 
 #: source/ui/app/strings.src#STR_DLG_INSERT_PAGES_FROM_FILE.String.Text
 #, fuzzy
@@ -2309,8 +2321,9 @@ msgid  "The file could not be loaded!"
 msgstr "The file could not be loaded!"
 
 #: source/ui/app/strings.src#STR_SCALE_OBJECTS.String.Text
+#, fuzzy
 msgid  "The format of the new pages will be adapted.\nDo you want to adapt the objects, too?"
-msgstr ""
+msgstr "The format of the new pages will be adapted.\nDo you want to adapt the objects, too?"
 
 #: source/ui/app/strings.src#STR_CREATE_PAGES.String.Text
 #, fuzzy
@@ -2333,8 +2346,9 @@ msgid  "~Edit"
 msgstr "~Edit"
 
 #: source/ui/app/strings.src#RID_UNDO_DELETE_WARNING.FT_UNDO_DELETE_WARNING.FixedText.Text
+#, fuzzy
 msgid  "This action deletes the list of actions that can\nbe undone. Previous changes made to the document are still valid,\nbut cannot be undone. Do you want to continue and\nthus assign the new slide design?"
-msgstr ""
+msgstr "This action deletes the list of actions that can\nbe undone. Previous changes made to the document are still valid,\nbut cannot be undone. Do you want to continue and\nthus assign the new slide design?"
 
 #: source/ui/app/strings.src#RID_UNDO_DELETE_WARNING.CB_UNDO_DELETE_DISABLE.CheckBox.Text
 #, fuzzy
@@ -2357,8 +2371,9 @@ msgid  "The document format could not be set on the specified printer."
 msgstr "The document format could not be set on the specified printer."
 
 #: source/ui/app/strings.src#STR_REMOVE_LINK.String.Text
+#, fuzzy
 msgid  "This graphic is linked to a document. \nDo you want to unlink the graphic in order to edit it?"
-msgstr ""
+msgstr "This graphic is linked to a document. \nDo you want to unlink the graphic in order to edit it?"
 
 #: source/ui/app/strings.src#STR_IMPORT_GRFILTER_OPENERROR.String.Text
 #, fuzzy
@@ -2496,8 +2511,9 @@ msgid  " (Outline)"
 msgstr " (Outline)"
 
 #: source/ui/app/strings.src#STR_WARN_SCALE_FAIL.String.Text
+#, fuzzy
 msgid  "The specified scale is invalid.\nDo you want to enter a new one?"
-msgstr ""
+msgstr "The specified scale is invalid.\nDo you want to enter a new one?"
 
 #: source/ui/app/strings.src#STR_CLICK_ACTION_NONE.String.Text
 #, fuzzy
@@ -2805,8 +2821,9 @@ msgid  "File name without extension"
 msgstr "File name without extension"
 
 #: source/ui/app/strings.src#STR_RELEASE_GRAPHICLINK.String.Text
+#, fuzzy
 msgid  "This graphic is linked to a document. Do you want to unlink the graphic in order to edit it?"
-msgstr ""
+msgstr "This graphic is linked to a document. Do you want to unlink the graphic in order to edit it?"
 
 #: source/ui/app/strings.src#STR_NEW_CUSTOMSHOW.String.Text
 #, fuzzy
@@ -2849,8 +2866,9 @@ msgid  "It was not possible to ungroup all drawing objects."
 msgstr "It was not possible to ungroup all drawing objects."
 
 #: source/ui/app/strings.src#STR_PUBDLG_SAMENAME.String.Text
+#, fuzzy
 msgid  "A design already exists with this name.\nDo you want to replace it?"
-msgstr ""
+msgstr "A design already exists with this name.\nDo you want to replace it?"
 
 #: source/ui/app/strings.src#STR_HTMLATTR_TEXT.String.Text
 #, fuzzy
@@ -2993,8 +3011,9 @@ msgid  "Graphics filter"
 msgstr "Graphics filter"
 
 #: source/ui/app/strings.src#STR_WARNING_NOSOUNDFILE.String.Text
+#, fuzzy
 msgid  "The file %\nis not a valid sound file !"
-msgstr ""
+msgstr "The file %\nis not a valid sound file !"
 
 #: source/ui/app/strings.src#STR_UNDO_CONVERT_TO_METAFILE.String.Text
 #, fuzzy
@@ -3261,6 +3280,16 @@ msgstr "Insert Picture"
 msgid  "Insert Movie"
 msgstr "Insert Movie"
 
+#: source/ui/app/res_bmp.src#SfxStyleFamiliesRes1.#define.Text
+#, fuzzy
+msgid  "Graphics Styles"
+msgstr "Graphics Styles"
+
+#: source/ui/app/res_bmp.src#SfxStyleFamiliesRes2.#define.Text
+#, fuzzy
+msgid  "Presentation Styles"
+msgstr "Presentation Styles"
+
 #: source/ui/app/res_bmp.src#STR_STYLE_FILTER_USED.String.Text
 #, fuzzy
 msgid  "Applied Styles"
@@ -3275,16 +3304,6 @@ msgstr "Custom Styles"
 #, fuzzy
 msgid  "All Styles"
 msgstr "All Styles"
-
-#: source/ui/app/res_bmp.src#SfxStyleFamiliesRes1.#define.Text
-#, fuzzy
-msgid  "Graphics Styles"
-msgstr "Graphics Styles"
-
-#: source/ui/app/res_bmp.src#SfxStyleFamiliesRes2.#define.Text
-#, fuzzy
-msgid  "Presentation Styles"
-msgstr "Presentation Styles"
 
 #: source/ui/app/menuids_tmpl.src#MN_DISTRIBUTE.SID_DISTRIBUTE_DLG.MenuItem.Text
 #, fuzzy
@@ -4133,8 +4152,8 @@ msgstr "~Table..."
 
 #: source/ui/app/popup.src#RID_DRAW_TABLEOBJ_INSIDE_POPUP.DUMMY.MenuItem.Text
 #, fuzzy
-msgid  "Colu~mn"
-msgstr "Colu~mn"
+msgid  "~Cell"
+msgstr "~Cell"
 
 #: source/ui/app/popup.src#RID_DRAW_TABLEOBJ_INSIDE_POPUP.DUMMY.SID_TABLE_MERGE_CELLS.MenuItem.Text
 #, fuzzy
@@ -4161,6 +4180,11 @@ msgstr "C~entre"
 msgid  "~Bottom"
 msgstr "~Bottom"
 
+#: source/ui/app/popup.src#RID_DRAW_TABLEOBJ_INSIDE_POPUP.DUMMY.MenuItem.Text
+#, fuzzy
+msgid  "~Row"
+msgstr "~Row"
+
 #: source/ui/app/popup.src#RID_DRAW_TABLEOBJ_INSIDE_POPUP.DUMMY.SID_TABLE_DISTRIBUTE_ROWS.MenuItem.Text
 #, fuzzy
 msgid  "Space ~Equally"
@@ -4180,6 +4204,11 @@ msgstr "~Insert..."
 #, fuzzy
 msgid  "~Delete"
 msgstr "~Delete"
+
+#: source/ui/app/popup.src#RID_DRAW_TABLEOBJ_INSIDE_POPUP.DUMMY.MenuItem.Text
+#, fuzzy
+msgid  "Colu~mn"
+msgstr "Colu~mn"
 
 #: source/ui/app/popup.src#RID_DRAW_TABLEOBJ_INSIDE_POPUP.DUMMY.SID_TABLE_DISTRIBUTE_COLUMNS.MenuItem.Text
 #, fuzzy
@@ -4271,36 +4300,30 @@ msgstr "Apply to ~Selected Slides"
 msgid  "~Insert Slide"
 msgstr "~Insert Slide"
 
-#: source/ui/app/popup.src#RID_DRAW_TABLEOBJ_INSIDE_POPUP.DUMMY.MenuItem.Text
-#, fuzzy
-msgid  "~Cell"
-msgstr "~Cell"
-
-#: source/ui/app/popup.src#RID_DRAW_TABLEOBJ_INSIDE_POPUP.DUMMY.MenuItem.Text
-#, fuzzy
-msgid  "~Row"
-msgstr "~Row"
-
 #: source/ui/app/sdstring.src#STR_SAR_NOT_FOUND.String.Text
 #, fuzzy
 msgid  "Search key not found."
 msgstr "Search key not found."
 
 #: source/ui/app/sdstring.src#STR_SAR_WRAP_FORWARD.String.Text
+#, fuzzy
 msgid  "%PRODUCTNAME Impress has searched to the end of the presentation. Do you want to continue at the beginning?"
-msgstr ""
+msgstr "%PRODUCTNAME Impress has searched to the end of the presentation. Do you want to continue from the beginning?"
 
 #: source/ui/app/sdstring.src#STR_SAR_WRAP_BACKWARD.String.Text
+#, fuzzy
 msgid  "%PRODUCTNAME Impress has searched to the beginning of the presentation. Do you want to continue at the end?"
-msgstr ""
+msgstr "%PRODUCTNAME Impress has searched to the beginning of the presentation. Do you want to continue from the end?"
 
 #: source/ui/app/sdstring.src#STR_SAR_WRAP_FORWARD_DRAW.String.Text
+#, fuzzy
 msgid  "%PRODUCTNAME Draw has searched to the end of the document. Do you want to continue at the beginning?"
-msgstr ""
+msgstr "%PRODUCTNAME Draw has searched to the end of the document. Do you want to continue from the beginning?"
 
 #: source/ui/app/sdstring.src#STR_SAR_WRAP_BACKWARD_DRAW.String.Text
+#, fuzzy
 msgid  "%PRODUCTNAME Draw has searched to the beginning of the document. Do you want to continue at the end?"
-msgstr ""
+msgstr "%PRODUCTNAME Draw has searched to the beginning of the document. Do you want to continue from the end?"
 
 #: source/ui/app/menuids2_tmpl.src#MN_NEWDOCDIRECT.SID_NEWDOCDIRECT.MenuItem.Text
 #, fuzzy
@@ -4326,6 +4349,11 @@ msgstr "Sen~d"
 #, fuzzy
 msgid  "~Page..."
 msgstr "~Page..."
+
+#: source/ui/app/menuids2_tmpl.src#20.#define.Text
+#, fuzzy
+msgid  "~Edit"
+msgstr "~Edit"
 
 #: source/ui/app/menuids2_tmpl.src#MN_PASTE2.SID_PASTE2.MenuItem.Text
 #, fuzzy
@@ -4356,6 +4384,11 @@ msgstr "Delete ~Layer..."
 #, fuzzy
 msgid  "Lin~ks..."
 msgstr "Lin~ks..."
+
+#: source/ui/app/menuids2_tmpl.src#23.#define.Text
+#, fuzzy
+msgid  "~View"
+msgstr "~View"
 
 #: source/ui/app/menuids2_tmpl.src#MN_TOGGLETOOLBAR.SID_TOGGLETOOLBAR.MenuItem.Text
 #, fuzzy
@@ -4436,6 +4469,11 @@ msgstr "Wor~kspace"
 #, fuzzy
 msgid  "~Master"
 msgstr "~Master"
+
+#: source/ui/app/menuids2_tmpl.src#21.#define.Text
+#, fuzzy
+msgid  "~Insert"
+msgstr "~Insert"
 
 #: source/ui/app/menuids2_tmpl.src#MN_INSERTPAGE.SID_INSERTPAGE.MenuItem.Text
 #, fuzzy
@@ -4542,6 +4580,11 @@ msgstr "~File..."
 msgid  "Fiel~ds"
 msgstr "Fiel~ds"
 
+#: source/ui/app/menuids2_tmpl.src#22.#define.Text
+#, fuzzy
+msgid  "F~ormat"
+msgstr "F~ormat"
+
 #: source/ui/app/menuids2_tmpl.src#MN_TEXTATTR_DLG.SID_TEXTATTR_DLG.MenuItem.Text
 #, fuzzy
 msgid  "Te~xt..."
@@ -4571,6 +4614,16 @@ msgstr "Modify ~Layout..."
 #, fuzzy
 msgid  "Styl~es"
 msgstr "Styl~es"
+
+#: source/ui/app/menuids2_tmpl.src#ITEM_TOOLS_ID.#define.Text
+#, fuzzy
+msgid  "~Tools"
+msgstr "~Tools"
+
+#: source/ui/app/menuids2_tmpl.src#26.#define.Text
+#, fuzzy
+msgid  "~Slide Show"
+msgstr "~Slide Show"
 
 #: source/ui/app/menuids2_tmpl.src#MN_SPELLING.SID_SPELL_DIALOG.MenuItem.Text
 #, fuzzy
@@ -4621,6 +4674,11 @@ msgstr "~Interaction..."
 #, fuzzy
 msgid  "~Spellcheck"
 msgstr "~Spellcheck"
+
+#: source/ui/app/menuids2_tmpl.src#24.#define.Text
+#, fuzzy
+msgid  "~Modify"
+msgstr "~Modify"
 
 #: source/ui/app/menuids2_tmpl.src#MN_MOREFRONT.SID_MOREFRONT.MenuItem.Text
 #, fuzzy
@@ -4711,41 +4769,6 @@ msgstr "~Display Quality"
 #, fuzzy
 msgid  "Pre~view Mode"
 msgstr "Pre~view Mode"
-
-#: source/ui/app/menuids2_tmpl.src#20.#define.Text
-#, fuzzy
-msgid  "~Edit"
-msgstr "~Edit"
-
-#: source/ui/app/menuids2_tmpl.src#23.#define.Text
-#, fuzzy
-msgid  "~View"
-msgstr "~View"
-
-#: source/ui/app/menuids2_tmpl.src#21.#define.Text
-#, fuzzy
-msgid  "~Insert"
-msgstr "~Insert"
-
-#: source/ui/app/menuids2_tmpl.src#22.#define.Text
-#, fuzzy
-msgid  "F~ormat"
-msgstr "F~ormat"
-
-#: source/ui/app/menuids2_tmpl.src#ITEM_TOOLS_ID.#define.Text
-#, fuzzy
-msgid  "~Tools"
-msgstr "~Tools"
-
-#: source/ui/app/menuids2_tmpl.src#26.#define.Text
-#, fuzzy
-msgid  "~Slide Show"
-msgstr "~Slide Show"
-
-#: source/ui/app/menuids2_tmpl.src#24.#define.Text
-#, fuzzy
-msgid  "~Modify"
-msgstr "~Modify"
 
 #: source/ui/dlg/sdpreslt.src#DLG_PRESLT.FT_LAYOUT.FixedText.Text
 #, fuzzy
@@ -5827,6 +5850,11 @@ msgstr "Slide number"
 msgid  "Master Elements"
 msgstr "Master Elements"
 
+#: source/ui/dlg/tpoption.src#SCALE_TEXT.#define.Text
+#, fuzzy
+msgid  "Scale"
+msgstr "Scale"
+
 #: source/ui/dlg/tpoption.src#TP_OPTIONS_CONTENTS.TabPage.Text
 #, fuzzy
 msgid  "Contents"
@@ -5971,11 +5999,6 @@ msgstr "Page ~width"
 #, fuzzy
 msgid  "Page ~height"
 msgstr "Page ~height"
-
-#: source/ui/dlg/tpoption.src#SCALE_TEXT.#define.Text
-#, fuzzy
-msgid  "Scale"
-msgstr "Scale"
 
 #: source/ui/dlg/morphdlg.src#DLG_MORPH.GRP_PRESET.FixedLine.Text
 #, fuzzy
@@ -6289,26 +6312,6 @@ msgstr "Alignment"
 
 #: source/ui/dlg/animobjs.src#FLT_WIN_ANIMATION.LB_ADJUSTMENT.Default.StringList.item
 #, fuzzy
-msgid  "Bottom Right"
-msgstr "Bottom Right"
-
-#: source/ui/dlg/animobjs.src#FLT_WIN_ANIMATION.BTN_CREATE_GROUP.PushButton.Text
-#, fuzzy
-msgid  "Create"
-msgstr "Create"
-
-#: source/ui/dlg/animobjs.src#FLT_WIN_ANIMATION.GRP_ANIMATION_GROUP.FixedLine.Text
-#, fuzzy
-msgid  "Animation group"
-msgstr "Animation group"
-
-#: source/ui/dlg/animobjs.src#FLT_WIN_ANIMATION.STR_DISPLAY.String.Text
-#, fuzzy
-msgid  "Preview"
-msgstr "Preview"
-
-#: source/ui/dlg/animobjs.src#FLT_WIN_ANIMATION.LB_ADJUSTMENT.Default.StringList.item
-#, fuzzy
 msgid  "Top Left"
 msgstr "Top Left"
 
@@ -6346,6 +6349,26 @@ msgstr "Top Right"
 #, fuzzy
 msgid  "Right"
 msgstr "Right"
+
+#: source/ui/dlg/animobjs.src#FLT_WIN_ANIMATION.LB_ADJUSTMENT.Default.StringList.item
+#, fuzzy
+msgid  "Bottom Right"
+msgstr "Bottom Right"
+
+#: source/ui/dlg/animobjs.src#FLT_WIN_ANIMATION.BTN_CREATE_GROUP.PushButton.Text
+#, fuzzy
+msgid  "Create"
+msgstr "Create"
+
+#: source/ui/dlg/animobjs.src#FLT_WIN_ANIMATION.GRP_ANIMATION_GROUP.FixedLine.Text
+#, fuzzy
+msgid  "Animation group"
+msgstr "Animation group"
+
+#: source/ui/dlg/animobjs.src#FLT_WIN_ANIMATION.STR_DISPLAY.String.Text
+#, fuzzy
+msgid  "Preview"
+msgstr "Preview"
 
 #: source/ui/dlg/prntopts.src#TP_PRINT_OPTIONS.TabPage.Text
 #, fuzzy

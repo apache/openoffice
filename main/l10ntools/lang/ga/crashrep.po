@@ -45,7 +45,7 @@ msgstr ""
 
 #: source/all/crashrep.ulf#%WELCOME_BODY2%
 msgid  "It's easy - just send the report without any further effort on your part by clicking 'Send' in the next dialog, or you can briefly describe how the error occurred and then click 'Send'. If you want to see the report, click the 'Show Report' button. No data will be sent if you click 'Do Not Send'.\n\n"
-msgstr ""
+msgstr "Tá sé éasca - ní gá duit ach tuairisc a sheoladh ar aghaidh gan stró trí chliceáil ar 'Seol' sa chéad dialóg eile, nó is féidir gearrchuntas den dóigh ar tharla an earráid a scríobh agus cliceáil ar 'Seol' ansin. Más mian leat an tuairisc a fheiceáil, cliceáil ar an gcnaipe, 'Taispeáin Tuairisc'. Ní sheolfar aon sonraí má chliceálann tú ar 'Ná Seol'.\n\n"
 
 #: source/all/crashrep.ulf#%WELCOME_BODY3%
 msgid  "Customer Privacy\nThe information gathered is limited to data concerning the state of %PRODUCTNAME% %PRODUCTVERSION% when the error occurred. Other information about passwords or document contents is not collected.\n\nThe information will only be used to improve the quality of %PRODUCTNAME% and will not be shared with third parties.\nFor more information on Apache OpenOffice's privacy policy, visit\n"
@@ -81,7 +81,7 @@ msgstr ""
 
 #: source/all/crashrep.ulf#%ENTER_TITLE%
 msgid  "Which type of document (e.g. presentation) were you using when the error occurred?"
-msgstr ""
+msgstr "Cén chineál cáipéise (m.sh. láithreoireacht) a bhí á úsáid agat nuair a tharla an earráid?"
 
 #: source/all/crashrep.ulf#%ALLOW_CONTACT%
 msgid  "~I allow Apache OpenOffice to contact me regarding this report."
@@ -121,23 +121,23 @@ msgstr "Sábháil Tuairisc go"
 
 #: source/all/crashrep.ulf#%ERROR_MSG_SIMPLE_MAPI%
 msgid  "The error report could not be sent because the default e-mail program does not support MAPI.\n Please use a MAPI-compatible e-mail program."
-msgstr ""
+msgstr "Ní fhéadfaí an tuairisc earráide a sheoladh mar nach dtacaíonn an clár r-phoist réamhshocraithe le MAPI.\n Ba chóir duit clár r-phoist a úsáid atá comhoiriúnach do MAPI."
 
 #: source/all/crashrep.ulf#%ERROR_MSG_DISK_FULL%
 msgid  "The error report could not be temporarily saved and could therefore not be sent."
-msgstr ""
+msgstr "Ní fhéadfaí an tuairisc earráide a shábháil go sealadach agus dá bhrí sin ní fhéadfaí é a sheoladh."
 
 #: source/all/crashrep.ulf#%ERROR_MSG_SENDMAIL%
 msgid  "The error report could not be sent because 'sendmail' could not be started.\nPlease check the 'sendmail' settings."
-msgstr ""
+msgstr "Ní fhéadfaí an tuairisc earráide a sheoladh mar nach bhféadfaí 'sendmail' a thosú.\nDéan seiceáil ar na socruithe 'sendmail'."
 
 #: source/all/crashrep.ulf#%ERROR_MSG_PROXY%
 msgid  "The error report could not be sent. Please check the proxy settings under 'Options' in the Error Report Tool."
-msgstr ""
+msgstr "Ní fhéadfaí an tuairisc earráide a sheoladh. Seiceáil socruithe an tseachfhreastalaí faoi 'Roghanna' san Uirlis Tuairisce Earráide."
 
 #: source/all/crashrep.ulf#%ERROR_MSG_NOCONNECT%
 msgid  "The error report could not be sent because there is no Internet connection. Please check your Internet settings."
-msgstr ""
+msgstr "Ní fhéadfaí an tuairisc earráide a sheoladh mar nach bhfuil aon cheangal Idirlín ann. Seiceáil do shocruithe Idirlín."
 
 #: source/all/crashrep.ulf#%OPTIONS_BUTTON%
 msgid  "~Options..."
@@ -173,7 +173,7 @@ msgstr "~Port"
 
 #: source/all/crashrep.ulf#%PROXY_SETTINGS_DESCRIPTION%
 msgid  "The %PRODUCTNAME% Error Report tool needs to be connected to the Internet to be able to send error reports.\n\nCompanies often use proxy servers in conjunction with a firewall to protect the network.\n\nIf this applies to your situation, you have to specify the address and port for the server."
-msgstr ""
+msgstr "Ní mór do Uirlis Tuairisc Earráide %PRODUCTNAME% a bheith ceangailte leis an Idirlíon chun gur féidir tuairiscí earráide a sheoladh.\n\nIs minic a úsáideann comhlachtaí seachfhreastalaithe i gcomhar le balla dóiteáin chun an líonra a chosaint.\n\nMá bhaineann sé sin le do chás-sa, ní mór duit an seoladh agus an port don fhreastalaí a shonrú."
 
 #: source/all/crashrep.ulf#%SENDING_REPORT_HEADER%
 msgid  "Sending Error Report"
@@ -201,8 +201,8 @@ msgstr "-p <aitheantas próisis>"
 
 #: source/all/crashrep.ulf#%MSG_PARAM_PROCESSID_DESCRIPTION%
 msgid  "Assigns the %PRODUCTNAME% process ID (PID) to the Error Report Tool"
-msgstr ""
+msgstr "Sannann aitheantas próisis %PRODUCTNAME% (PID) don Uirlis Tuairisc Earráide"
 
 #: source/all/crashrep.ulf#%MSG_PARAM_HELP_DESCRIPTION%
 msgid  "Shows this help text.\nDetailed information can be found in the Setup Guide."
-msgstr ""
+msgstr "Taispeánann an téacs cabhrach seo.\nTá eolas mionsonraithe ar fáil sa Treoir Shuiteála."

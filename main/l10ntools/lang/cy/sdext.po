@@ -73,7 +73,7 @@ msgstr "Cyflwyniad"
 
 #: source/minimizer/registry/data/org/openoffice/Office/extension/SunPresentationMinimizer.xcu#.SunPresentationMinimizer.Strings.STR_INTRODUCTION_T
 msgid  "The @MINIMIZEREXTENSIONPRODUCTNAME@ is used to reduce the file size of the current presentation. Images will be compressed and data, that is no longer needed, will be removed. At the last step of the wizard you can choose to apply the changes to the current presentation or to create an optimized new version of the presentation."
-msgstr ""
+msgstr "Mae'r @MINIMIZEREXTENSIONPRODUCTNAME@ yn cael ei ddefnyddio ar gyfer lleihau maint ffeil y cyflwyniad presennol. Bydd delweddau yn cael eu cywasgu a data sydd ddim yn cael ei ddefnyddio bellach, yn cael ei dynnu. Ar gam olaf y dewin gallwch ddewis gosod y newidiadau i'r cyflwyniad cyfredol neu i greu fersiwn newydd wedi ei optimeiddio o'r cyflwyniad."
 
 #: source/minimizer/registry/data/org/openoffice/Office/extension/SunPresentationMinimizer.xcu#.SunPresentationMinimizer.Strings.STR_CHOSE_SETTINGS
 msgid  "~Choose settings for @MINIMIZEREXTENSIONPRODUCTNAME@"
@@ -153,11 +153,11 @@ msgstr "~Gwrthrychau OLE nad ydynt wedi eu seilio ar fformat OpenDocument"
 
 #: source/minimizer/registry/data/org/openoffice/Office/extension/SunPresentationMinimizer.xcu#.SunPresentationMinimizer.Strings.STR_OLE_OBJECTS_DESC
 msgid  "Object Linking and Embedding (OLE) is a technology that allows embedding and linking to documents and other objects. The current presentation contains OLE objects."
-msgstr ""
+msgstr "Mae Cysylltu Gwrthrych a Mewnosod  (OLE) yn dechnoleg sy'n caniatáu mewnosod a chysylltu i ddogfennau a gwrthrychau eraill. Mae'r cyflwyniad presennol yn cynnwys gwrthrychau OLE."
 
 #: source/minimizer/registry/data/org/openoffice/Office/extension/SunPresentationMinimizer.xcu#.SunPresentationMinimizer.Strings.STR_NO_OLE_OBJECTS_DESC
 msgid  "Object Linking and Embedding (OLE) is a technology that allows embedding and linking to documents and other objects. The current presentation contains no OLE objects."
-msgstr ""
+msgstr "Mae Cysylltu Gwrthrych a Mewnosod  (OLE) yn dechnoleg sy'n caniatáu mewnosod a chysylltu i ddogfennau a gwrthrychau eraill. Nid yw'r cyflwyniad presennol yn cynnwys gwrthrychau OLE."
 
 #: source/minimizer/registry/data/org/openoffice/Office/extension/SunPresentationMinimizer.xcu#.SunPresentationMinimizer.Strings.STR_SLIDES
 msgid  "Slides"
@@ -185,7 +185,7 @@ msgstr "Dileu tryloywderau ~cudd"
 
 #: source/minimizer/registry/data/org/openoffice/Office/extension/SunPresentationMinimizer.xcu#.SunPresentationMinimizer.Strings.STR_CUSTOM_SHOW
 msgid  "Delete slides that are not used for the ~custom slide show"
-msgstr ""
+msgstr "Dileu tryloywderau nad ydynt yn cael eu defnyddio ar gyfer y sioe tryloywderau ~addasu"
 
 #: source/minimizer/registry/data/org/openoffice/Office/extension/SunPresentationMinimizer.xcu#.SunPresentationMinimizer.Strings.STR_SUMMARY
 msgid  "Summary"
@@ -225,7 +225,7 @@ msgstr "Dileu %SLIDES tryloywder."
 
 #: source/minimizer/registry/data/org/openoffice/Office/extension/SunPresentationMinimizer.xcu#.SunPresentationMinimizer.Strings.STR_OPTIMIZE_IMAGES
 msgid  "Optimize %IMAGES graphics to %QUALITY% JPEG quality at %RESOLUTION DPI."
-msgstr ""
+msgstr "Optimeiddio graffigau %IMAGES i %QUALITY% ansawdd JPEG ar %RESOLUTION DPI."
 
 #: source/minimizer/registry/data/org/openoffice/Office/extension/SunPresentationMinimizer.xcu#.SunPresentationMinimizer.Strings.STR_CREATE_REPLACEMENT
 msgid  "Create replacement graphics for %OLE objects."
@@ -253,7 +253,7 @@ msgstr "sesiwn rhagosodedig"
 
 #: source/minimizer/registry/data/org/openoffice/Office/extension/SunPresentationMinimizer.xcu#.SunPresentationMinimizer.Strings.STR_MODIFY_WARNING
 msgid  "The optimization will modify the current document. Do you want to continue?"
-msgstr ""
+msgstr "Bydd yr optimeiddio'n newid y ddogfen gyfredol. Hoffech chi barhau?"
 
 #: source/minimizer/registry/data/org/openoffice/Office/extension/SunPresentationMinimizer.xcu#.SunPresentationMinimizer.Strings.STR_YES
 msgid  "~Yes"
@@ -265,19 +265,19 @@ msgstr "Iawn"
 
 #: source/minimizer/registry/data/org/openoffice/Office/extension/SunPresentationMinimizer.xcu#.SunPresentationMinimizer.Strings.STR_INFO_1
 msgid  "The @MINIMIZEREXTENSIONPRODUCTNAME@ has successfully updated the presentation '%TITLE'. The file size has changed from %OLDFILESIZE MB to %NEWFILESIZE MB."
-msgstr ""
+msgstr "Mae @MINIMIZEREXTENSIONPRODUCTNAME@ wedi diweddaru'r cyflwyniad '%TITLE' yn llwyddiannus. Mae maint y ffeil wedi newid o %OLDFILESIZE MB i %NEWFILESIZE MB."
 
 #: source/minimizer/registry/data/org/openoffice/Office/extension/SunPresentationMinimizer.xcu#.SunPresentationMinimizer.Strings.STR_INFO_2
 msgid  "The @MINIMIZEREXTENSIONPRODUCTNAME@ has successfully updated the presentation '%TITLE'. The file size has changed from %OLDFILESIZE MB to approximated %NEWFILESIZE MB."
-msgstr ""
+msgstr "Mae @MINIMIZEREXTENSIONPRODUCTNAME@ wedi diweddaru'r cyflwyniad '%TITLE' yn llwyddiannus. Mae maint y ffeil wedi newid o %OLDFILESIZE MB i tua %NEWFILESIZE MB."
 
 #: source/minimizer/registry/data/org/openoffice/Office/extension/SunPresentationMinimizer.xcu#.SunPresentationMinimizer.Strings.STR_INFO_3
 msgid  "The @MINIMIZEREXTENSIONPRODUCTNAME@ has successfully updated the presentation '%TITLE'. The file size has changed to %NEWFILESIZE MB."
-msgstr ""
+msgstr "Mae @MINIMIZEREXTENSIONPRODUCTNAME@ wedi diweddaru'r cyflwyniad '%TITLE' yn llwyddiannus. Mae maint y ffeil wedi newid i %NEWFILESIZE MB."
 
 #: source/minimizer/registry/data/org/openoffice/Office/extension/SunPresentationMinimizer.xcu#.SunPresentationMinimizer.Strings.STR_INFO_4
 msgid  "The @MINIMIZEREXTENSIONPRODUCTNAME@ has successfully updated the presentation '%TITLE'. The file size has changed to approximated %NEWFILESIZE MB."
-msgstr ""
+msgstr "Mae @MINIMIZEREXTENSIONPRODUCTNAME@ wedi diweddaru'r cyflwyniad '%TITLE' yn llwyddiannus. Mae maint y ffeil wedi newid i tua %NEWFILESIZE MB."
 
 #: source/minimizer/registry/data/org/openoffice/Office/extension/SunPresentationMinimizer.xcu#.SunPresentationMinimizer.Strings.STR_DUPLICATING_PRESENTATION
 msgid  "Duplicating presentation..."
@@ -329,7 +329,7 @@ msgstr "Llwybrau byr Bysellfwrdd @PRESENTEREXTENSIONPRODUCTNAME@"
 
 #: source/presenter/help/en-US/com.sun.PresenterScreen/presenter.xhp#par_id0921201912165656
 msgid  "When running a slide show using the @PRESENTEREXTENSIONPRODUCTNAME@, you can use the following keys:"
-msgstr ""
+msgstr "Wrth redeg sioe tryloywderau gan ddefnyddio @PRESENTEREXTENSIONPRODUCTNAME@, mae modd ddefnyddio'r bysellau canlynol:"
 
 #: source/presenter/help/en-US/com.sun.PresenterScreen/presenter.xhp#par_id0921200901104028
 msgid  "Action"
@@ -345,7 +345,7 @@ msgstr "Tryloywder nesaf, neu'r effaith nesaf"
 
 #: source/presenter/help/en-US/com.sun.PresenterScreen/presenter.xhp#par_id0921200901104120
 msgid  "Left click, right arrow, down arrow, spacebar, page down, enter, return, 'N'"
-msgstr ""
+msgstr "Clic chwith, saeth de, saeth i lawr, bar bylchu, pagedown, enter, return, 'N'"
 
 #: source/presenter/help/en-US/com.sun.PresenterScreen/presenter.xhp#par_id0921200901104165
 msgid  "Previous slide, or previous effect"
@@ -505,7 +505,7 @@ msgstr "Cau"
 
 #: source/presenter/registry/data/org/openoffice/Office/extension/PresenterScreen.xcu#..PresenterScreen.PresenterScreenSettings.HelpView.HelpStrings.a.Left
 msgid  "Left click, right or down arrow, spacebar, page down, enter, return, 'N'"
-msgstr ""
+msgstr "Cliciwch i'r chwith, saeth de neu chwith, bar gofod, page down, enter, return, 'N'"
 
 #: source/presenter/registry/data/org/openoffice/Office/extension/PresenterScreen.xcu#..PresenterScreen.PresenterScreenSettings.HelpView.HelpStrings.a.Right
 msgid  "Next slide, or next effect"
@@ -693,7 +693,7 @@ msgstr "Tryloywder Cyfredol (%CURRENT_SLIDE_NUMBER% of %SLIDE_COUNT%)"
 
 #: source/presenter/registry/data/org/openoffice/Office/extension/PresenterScreen.xcu#..PresenterScreen.Presenter.Views.CurrentSlidePreview.AccessibleTitle
 msgid  "Current Slide, %CURRENT_SLIDE_NAME%, %CURRENT_SLIDE_NUMBER% of %SLIDE_COUNT%"
-msgstr ""
+msgstr "Tryloywder Cyfredol , %CURRENT_SLIDE_NAME%, %CURRENT_SLIDE_NUMBER% of %SLIDE_COUNT%"
 
 #: source/presenter/registry/data/org/openoffice/Office/extension/PresenterScreen.xcu#..PresenterScreen.Presenter.Views.CurrentSlidePreview.Strings.ClickToExitPresentationText.String
 msgid  "Click to exit presentation..."
@@ -713,7 +713,7 @@ msgstr "Nodiadau"
 
 #: source/presenter/registry/data/org/openoffice/Office/extension/PresenterScreen.xcu#..PresenterScreen.Presenter.Views.SlideSorter.AccessibleTitle
 msgid  "Slide Overview, %CURRENT_SLIDE_NAME%, %CURRENT_SLIDE_NUMBER% of %SLIDE_COUNT%"
-msgstr ""
+msgstr "Trosolwg Tryloywder, %CURRENT_SLIDE_NAME%, %CURRENT_SLIDE_NUMBER% of %SLIDE_COUNT%"
 
 #: source/presenter/registry/data/org/openoffice/Office/extension/PresenterScreen.xcu#..PresenterScreen.Presenter.Views.HelpView.Title
 msgid  "Help"

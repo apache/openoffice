@@ -125,7 +125,7 @@ msgstr "Læs følgende licensaftale omhyggeligt."
 
 #: src/Localization/setupstrings.ulf#STRING_ACCEPTLICENSE3
 msgid  "If you have read and accept all the terms of the entire Software License Agreement, click 'Accept License' to continue with the installation."
-msgstr ""
+msgstr "Hvis du har læst og accepterer alle betingelser i hele softwarelicensaftalen, skal du klikke på 'Accepter licens' for at fortsætte med installationen."
 
 #: src/Localization/setupstrings.ulf#STRING_CHOOSEDIRECTORY1
 msgid  "Select Installation Directory"
@@ -153,11 +153,11 @@ msgstr "Opret nyt katalog"
 
 #: src/Localization/setupstrings.ulf#STRING_CHOOSEDIRECTORY5_QUESTION_MESSAGE
 msgid  "The directory '${DIR}' does not exist.\nDo you want to create it now?"
-msgstr ""
+msgstr "Kataloget '${DIR}' findes ikke.\nVil du oprette det nu?"
 
 #: src/Localization/setupstrings.ulf#STRING_CHOOSEDIRECTORY5_QUESTION_MESSAGE2
 msgid  "The directory '${DIR}' does not exist.\nDo you want to create it now or choose another directory?"
-msgstr ""
+msgstr "Kataloget '${DIR}' findes ikke.\nVil du oprette det nu eller vælge et andet katalog?"
 
 #: src/Localization/setupstrings.ulf#STRING_CHOOSEDIRECTORY6
 msgid  "Select root directory"
@@ -209,11 +209,11 @@ msgstr "Vælg installationstypen"
 
 #: src/Localization/setupstrings.ulf#STRING_CHOOSEINSTALLATIONTYPE4
 msgid  "The main components will be installed. Recommended for most users."
-msgstr ""
+msgstr "Hovedkomponenterne vil blive installeret. Anbefalet for de fleste brugere."
 
 #: src/Localization/setupstrings.ulf#STRING_CHOOSEINSTALLATIONTYPE5
 msgid  "You choose the components you want to install and where they are stored. Recommended for advanced users."
-msgstr ""
+msgstr "Du vælger de komponenter, som du vil installere, og hvor de gemmes. Anbefales for avancerede brugere."
 
 #: src/Localization/setupstrings.ulf#STRING_CHOOSEINSTALLATIONTYPE6
 msgid  "Typical"
@@ -253,7 +253,7 @@ msgstr "Velkommen"
 
 #: src/Localization/setupstrings.ulf#STRING_PROLOGUE2
 msgid  "This Installation Wizard will install ${PRODUCT_FULLNAME} on your computer."
-msgstr ""
+msgstr "Denne installationsguide vil installere ${PRODUCT_FULLNAME} på din computer."
 
 #: src/Localization/setupstrings.ulf#STRING_PROLOGUE3
 msgid  "To continue, click 'Next'."
@@ -261,7 +261,7 @@ msgstr "For at fortsætte skal du klikke på 'Næste'."
 
 #: src/Localization/setupstrings.ulf#STRING_PROLOGUE4
 msgid  "Note: This installation will be done without root privileges. Therefore you will have a reduced functionality (Java Runtime Environment (JRE) not installable, system integration not possible).\nClick 'Cancel' and change your privileges to root privileges, if you want to use the complete functionality."
-msgstr ""
+msgstr "Bemærk: Denne installation vil blive udført uden rodprivilegier. Derfor vil du have begrænset funktionalitet (Java-afviklingsmiljø (JRE) kan ikke installeres, systemintegration er ikke mulig).\nKlik på 'Annuller' og skift din privilegier til rodprivilegier, hvis du vil bruge den komplette funktionalitet."
 
 #: src/Localization/setupstrings.ulf#STRING_INSTALLATIONCOMPLETED1
 msgid  "Installation Completed"
@@ -277,15 +277,15 @@ msgstr "Installation fejlede"
 
 #: src/Localization/setupstrings.ulf#STRING_INSTALLATIONCOMPLETED2
 msgid  "The Installation Wizard has successfully installed ${PRODUCT_FULLNAME} on your computer."
-msgstr ""
+msgstr "Installationsguiden har installeret ${PRODUCT_FULLNAME} på din computer."
 
 #: src/Localization/setupstrings.ulf#STRING_INSTALLATIONCOMPLETED2_ABORT
 msgid  "The Installation Wizard was aborted. ${PRODUCT_NAME} is not installed on your computer."
-msgstr ""
+msgstr "Installationsguiden blev afbrudt. ${PRODUCT_NAME} er ikke installeret på din computer."
 
 #: src/Localization/setupstrings.ulf#STRING_INSTALLATIONCOMPLETED2_ERROR
 msgid  "An error has occurred. Thus the Installation Wizard could not install ${PRODUCT_NAME} on your computer successfully. Click 'Details...' for more information."
-msgstr ""
+msgstr "Der opstod en fejl. Derfor kunne installationsguiden ikke installere ${PRODUCT_NAME} på din computer. Klik på 'Detaljer...' for mere information."
 
 #: src/Localization/setupstrings.ulf#STRING_INSTALLATIONCOMPLETED3
 msgid  "Click 'Finish' to exit the Wizard."
@@ -297,15 +297,15 @@ msgstr "Detaljer..."
 
 #: src/Localization/setupstrings.ulf#STRING_UNINSTALLATIONPROLOGUE2
 msgid  "The ${PRODUCT_FULLNAME} Uninstallation Wizard will remove ${PRODUCT_FULLNAME} from your computer."
-msgstr ""
+msgstr "${PRODUCT_FULLNAME} Afninstallationsguiden vil fjerne ${PRODUCT_FULLNAME} fra din computer."
 
 #: src/Localization/setupstrings.ulf#STRING_UNINSTALLATION_PROLOGUE_WRONG_PRIVILEGES_CURRENT_ROOT
 msgid  "Sorry, wrong privileges. Installation was done with User privilges, but you have Root privileges."
-msgstr ""
+msgstr "Beklager, forkerte privilegier. Installationen blev udført med brugerprivilegier, men du har rodprivilegier."
 
 #: src/Localization/setupstrings.ulf#STRING_UNINSTALLATION_PROLOGUE_WRONG_PRIVILEGES_CURRENT_USER
 msgid  "Sorry, wrong privileges. Installation was done with Root privilges, but you have User privileges."
-msgstr ""
+msgstr "Beklager, forkerte privilegier. Installationen blev udført med rodprivilegier, men du har brugerprivilegier."
 
 #: src/Localization/setupstrings.ulf#STRING_CHOOSEUNINSTALLATIONTYPE1
 msgid  "Select the Type of Uninstallation"
@@ -321,7 +321,7 @@ msgstr "Delvis"
 
 #: src/Localization/setupstrings.ulf#STRING_CHOOSEUNINSTALLATIONTYPE4
 msgid  "Completely removes ${PRODUCT_FULLNAME} and all its components from your system."
-msgstr ""
+msgstr "Fjerner helt ${PRODUCT_FULLNAME} og alle dets komponenter fra dit system."
 
 #: src/Localization/setupstrings.ulf#STRING_CHOOSEUNINSTALLATIONTYPE5
 msgid  "You choose the program features you want to remove."
@@ -333,7 +333,7 @@ msgstr "Komplet"
 
 #: src/Localization/setupstrings.ulf#STRING_CHOOSEUNINSTALLATIONCOMPONENTS2
 msgid  "Components marked with an X will be removed. Mark the components you want to remove."
-msgstr ""
+msgstr "Komponenter markeret med et X vil blive fjernet. Marker de komponenter, som du vil fjerne."
 
 #: src/Localization/setupstrings.ulf#STRING_UNINSTALLATIONIMMINENT1
 msgid  "Ready to Remove"
@@ -361,19 +361,19 @@ msgstr "Afinstallation fejlede"
 
 #: src/Localization/setupstrings.ulf#STRING_UNINSTALLATIONCOMPLETED2
 msgid  "The Uninstallation Wizard has successfully removed ${PRODUCT_FULLNAME} from your computer."
-msgstr ""
+msgstr "Afinstallationsguiden har fjernet ${PRODUCT_FULLNAME} fra din computer."
 
 #: src/Localization/setupstrings.ulf#STRING_UNINSTALLATIONCOMPLETED2_PARTIAL
 msgid  "The Uninstallation Wizard has successfully removed the selected components of ${PRODUCT_NAME} from your computer."
-msgstr ""
+msgstr "Afinstallationsguiden har fjernet de valgte komponenter i ${PRODUCT_NAME} fra din computer."
 
 #: src/Localization/setupstrings.ulf#STRING_UNINSTALLATIONCOMPLETED2_ABORT
 msgid  "The Uninstallation Wizard was aborted before completely removing ${PRODUCT_NAME} from your computer."
-msgstr ""
+msgstr "Afinstallationsguiden blev afbrudt før ${PRODUCT_NAME} blev helt fjernet fra din computer."
 
 #: src/Localization/setupstrings.ulf#STRING_UNINSTALLATIONCOMPLETED2_ERROR
 msgid  "An error has occurred. Thus the Uninstallation Wizard could not remove ${PRODUCT_NAME} from your computer successfully. Click 'Details...' for more information."
-msgstr ""
+msgstr "Der opstod en fejl. Derfor kunne Afinstallationsguiden ikke fjerne ${PRODUCT_NAME} fra din computer. Klik på 'Detaljer...' for mere information."
 
 #: src/Localization/setupstrings.ulf#STRING_INSTALLERFACTORY_OS_NOT_SUPPORTED
 msgid  "Sorry, this Operating System is not supported yet."
@@ -385,7 +385,7 @@ msgstr "En ældre version af ${PRODUCT_NAME} blev fundet på dit system i:"
 
 #: src/Localization/setupstrings.ulf#STRING_OLDER_VERSION_INSTALLED_REMOVE
 msgid  "You have to remove the older version of ${PRODUCT_NAME} before you can install the newer one."
-msgstr ""
+msgstr "Du skal fjerne den ældre version af ${PRODUCT_NAME}, før du kan installere den nyere version."
 
 #: src/Localization/setupstrings.ulf#STRING_NEWER_VERSION_INSTALLED_FOUND
 msgid  "A newer version of ${PRODUCT_NAME} was found on your system in:"
@@ -393,7 +393,7 @@ msgstr "En nyere version af ${PRODUCT_NAME} blev fundet på dit system i:"
 
 #: src/Localization/setupstrings.ulf#STRING_NEWER_VERSION_INSTALLED_REMOVE
 msgid  "You have to remove the newer version of ${PRODUCT_NAME} before you can install the older one."
-msgstr ""
+msgstr "Du skal fjerne den nyere version af ${PRODUCT_NAME}, før du kan installere den ældre version."
 
 #: src/Localization/setupstrings.ulf#STRING_NEWER_VERSION_DATABASE
 msgid  "Database"
@@ -409,7 +409,7 @@ msgstr "Brugeren, som du er logget på som, kan ikke køre installationsguiden."
 
 #: src/Localization/setupstrings.ulf#STRING_ROOT_PRIVILEGES_REQUIRED_2
 msgid  "Please log out and log back in as a user with system administrator rights."
-msgstr ""
+msgstr "Log ud og log ind som en bruger med rettigheder som systemadministrator."
 
 #: src/Localization/setupstrings.ulf#STRING_DISCSPACE_INSUFFICIENT
 msgid  "Not enough discspace available for installation."
@@ -425,7 +425,7 @@ msgstr "Ledig diskplads"
 
 #: src/Localization/setupstrings.ulf#STRING_DISCSPACE_TIP
 msgid  "Please use another directory for installation or change your module selection."
-msgstr ""
+msgstr "Vælg et andet katalog til installationen eller revider dit valg af moduler."
 
 #: src/Localization/setupstrings.ulf#STRING_ANALYZING_DATABASE1
 msgid  "Analyzing ..."
@@ -433,11 +433,11 @@ msgstr "Analyserer ..."
 
 #: src/Localization/setupstrings.ulf#STRING_ANALYZING_DATABASE2
 msgid  "Analyzing database\nPlease wait a moment ..."
-msgstr ""
+msgstr "Analyserer database\nVent venligst et øjeblik ..."
 
 #: src/Localization/setupstrings.ulf#STRING_PROLOGUE_1
 msgid  "Welcome to the Installation Wizard.<p>This wizard asks you to supply configuration settings.<p>At the bottom of each page are navigation buttons that let you move through the Installation Wizard:"
-msgstr ""
+msgstr "Velkommen til Installationsguiden.<p>Denne guide spørger dig om konfigurationsindstillinger.<p>I bunden af hver side er der navigationsknapper, som hjælper dig gennem Installationsguiden:"
 
 #: src/Localization/setupstrings.ulf#STRING_PROLOGUE_2
 msgid  "'Back' returns you to the previous page."
@@ -453,7 +453,7 @@ msgstr "'Annuller' afbryder Installationsguiden uden at softwaren installeres."
 
 #: src/Localization/setupstrings.ulf#STRING_PROLOGUE_5
 msgid  "'Help' displays the Help with further information about the page currently displayed."
-msgstr ""
+msgstr "'Hjælp' viser hjælpen med information om den aktuelt viste side."
 
 #: src/Localization/setupstrings.ulf#STRING_PROLOGUE_6
 msgid  "'OK' exits the Help page and returns you to the Installation Wizard."
@@ -461,7 +461,7 @@ msgstr "'OK' afslutter hjælpen og fører dig tilbage til Installationsguiden."
 
 #: src/Localization/setupstrings.ulf#STRING_UNINSTALLATIONPROLOGUE_1
 msgid  "Welcome to the Uninstallation Wizard.<p>This wizard asks you to supply configuration settings.<p>At the bottom of each page are navigation buttons that let you move through the Uninstallation Wizard:"
-msgstr ""
+msgstr "Velkommen til Afinstallationsguiden.<p>Denne guide spørger dig om konfigurationsindstillinger.<p>I bunden af hver side er der navigationsknapper, som hjælper dig gennem Afinstallationsguiden:"
 
 #: src/Localization/setupstrings.ulf#STRING_UNINSTALLATIONPROLOGUE_2
 msgid  "'Back' returns you to the previous page."
@@ -477,7 +477,7 @@ msgstr "'Annuller' afbryder Afinstallationsguiden uden at softwaren fjernes."
 
 #: src/Localization/setupstrings.ulf#STRING_UNINSTALLATIONPROLOGUE_5
 msgid  "'Help' displays the Help with further information about the page currently displayed."
-msgstr ""
+msgstr "'Hjælp' viser hjælpen med information om den aktuelt viste side."
 
 #: src/Localization/setupstrings.ulf#STRING_UNINSTALLATIONPROLOGUE_6
 msgid  "'OK' exits the Help page and returns you to the Uninstallation Wizard."
@@ -485,55 +485,55 @@ msgstr "'OK' afslutter hjælpen og fører dig tilbage til Afinstallationsguiden.
 
 #: src/Localization/setupstrings.ulf#STRING_ACCEPTLICENSE_1
 msgid  "Before you install this product, you must read and accept the entire Software License Agreement under which this software is licensed for your use."
-msgstr ""
+msgstr "Før du installerer dette produkt, skal du læse og acceptere hele softwarelicensaftalen, som dækker din brug af softwaren."
 
 #: src/Localization/setupstrings.ulf#STRING_ACCEPTLICENSE_2
 msgid  "If you have read and accept all the terms of the entire Software License Agreement, click 'Accept License' to continue with the installation."
-msgstr ""
+msgstr "Hvis du har læst og accepterer alle betingelser i hele softwarelicensaftalen, skal du klikke på 'Accepter licens' for at fortsætte med installationen."
 
 #: src/Localization/setupstrings.ulf#STRING_ACCEPTLICENSE_3
 msgid  "If you do not accept all the terms of the Software License Agreement, click 'Decline' to end the Installation Wizard without installing this product."
-msgstr ""
+msgstr "Hvis du ikke accepterer alle betingelser i softwarelicensaftalen, skal du klikke på 'Accepter ikke' for at afbryde Installationsguiden uden at installere dette produkt."
 
 #: src/Localization/setupstrings.ulf#STRING_CHOOSEINSTALLATIONTYPE_1
 msgid  "Select the type of product installation to perform from the following choices. This will determine how much information you need to provide for product configuration."
-msgstr ""
+msgstr "Vælg hvilken type produktinstallation, der skal gennemføres, fra følgende valg. Dette vil afgøre, hvor meget information du skal tilføre produktkonfigurationen."
 
 #: src/Localization/setupstrings.ulf#STRING_CHOOSEDIRECTORY_1
 msgid  "It is recommended that you install this product in the directory suggested by this Installation Wizard. <p>To choose a different location, click 'Browse...' or specify the full path of the directory to use in the text box below. <p>If this product is already installed, you cannot change the destination directory."
-msgstr ""
+msgstr "Det er anbefalet, at du installerer dette produkt i kataloget, som er foreslået af Installationsguiden. <p>For at vælge en anden placering skal du klikke på 'Gennemse...' eller angive hele stien til det ønskede katalog i tekstfeltet herunder. <p>Hvis dette produkt allerede er installeret, kan du ikke ændre målkataloget."
 
 #: src/Localization/setupstrings.ulf#STRING_CHOOSECOMPONENTS_1
 msgid  "Components marked in color will be installed. Click the icon of a component to mark or unmark the component.<p>All already installed components cannot be selected for installation."
-msgstr ""
+msgstr "Komponenter markeret med farve vil blive installeret. Klik på ikonet for en komponent for at tilføje eller fjerne markeringen.<p>Alle komponenter, der allerede er installeret, kan ikke vælges for installation."
 
 #: src/Localization/setupstrings.ulf#STRING_INSTALLATIONIMMINENT_1
 msgid  "The listed components are ready for installation based on your configuration settings. <p>If you are satisfied with your selection, click 'Install Now' to begin. <p>To check or modify your settings on the previous pages, click 'Back'."
-msgstr ""
+msgstr "De listede komponenter er klar til installation baseret på dine konfigurationsindstillinger. <p>Hvis du er tilfreds med dine valg, skal du klikke på 'Installer nu' for at begynde. <p>For at kontrollere eller ændre dine indstillinger på de foregående sider skal du klikke på 'Tilbage'."
 
 #: src/Localization/setupstrings.ulf#STRING_UNINSTALLATIONIMMINENT_1
 msgid  "The listed components are ready for uninstallation based on your configuration settings. <p>If you are satisfied with your selection, click 'Remove Now' to begin. <p>To check or modify your settings on the previous pages, click 'Back'."
-msgstr ""
+msgstr "De listede komponenter er klar til afinstallation baseret på dine konfigurationsindstillinger. <p>Hvis du er tilfreds med dine valg, skal du klikke på 'Fjern nu' for at begynde. <p>For at kontrollere eller ændre dine indstillinger på de foregående sider skal du klikke på 'Tilbage'."
 
 #: src/Localization/setupstrings.ulf#STRING_INSTALLATIONONGOING_1
 msgid  "This page indicates the progress of the installation with the aid of a progress bar. To abort the installation process, click 'Stop'."
-msgstr ""
+msgstr "Denne side angiver fremgang for installationen. For at afbryde installationen skal du klikke på 'Stop'."
 
 #: src/Localization/setupstrings.ulf#STRING_UNINSTALLATIONONGOING_1
 msgid  "This page indicates the progress of the uninstallation with the aid of a progress bar. To abort the uninstallation, click 'Stop'."
-msgstr ""
+msgstr "Denne side angiver fremgang for afinstallationen. For at afbryde afinstallationen skal du klikke på 'Stop'."
 
 #: src/Localization/setupstrings.ulf#STRING_CHOOSEUNINSTALLATIONTYPE_1
 msgid  "Complete: This will remove all installed components of your version.<p>Partial: This removes only the components you will choose out of the components list."
-msgstr ""
+msgstr "Komplet: Dette vil fjerne alle installerede komponenter i din version.<p>Delvis: Dette fjerner kun de komponenter, som du vælger på komponentlisten."
 
 #: src/Localization/setupstrings.ulf#STRING_CHOOSEUNINSTALLATIONCOMPONENTS_1
 msgid  "Components marked with an X will be removed. Click next to a component to mark or unmark it with an X."
-msgstr ""
+msgstr "Komponenter markeret med et X vil blive fjernet. Klik ved siden af en komponent for at tilføje eller fjerne markeringen."
 
 #: src/Localization/setupstrings.ulf#STRING_PACKAGEFORMAT_NOT_SUPPORTED
 msgid  "This package format is currently not supported for your operating system!"
-msgstr ""
+msgstr "Dette pakkeformat er for øjeblikket ikke understøttet af dit operativsystem!"
 
 #: src/Localization/setupstrings.ulf#STRING_OPERATING_SYSTEM
 msgid  "Operating system"
@@ -553,7 +553,7 @@ msgstr "Ingen komponenter er blevet valgt til installation."
 
 #: src/Localization/setupstrings.ulf#STRING_NO_COMPONENTS_SELECTED_2
 msgid  "Click 'OK' to select one or more components for installation or to exit the Installation Wizard."
-msgstr ""
+msgstr "Klik på 'OK' for at vælge en eller flere komponenter til installation eller for at afslutte Installationsguiden."
 
 #: src/Localization/setupstrings.ulf#STRING_NO_LANGUAGE_SELECTED_1
 msgid  "No languages have been selected for installation."
@@ -561,7 +561,7 @@ msgstr "Ingen sprog er valgt for installationen."
 
 #: src/Localization/setupstrings.ulf#STRING_NO_LANGUAGE_SELECTED_2
 msgid  "Click 'OK' to select one or more languages for installation or to exit the Installation Wizard."
-msgstr ""
+msgstr "Klik på 'OK' for at vælge et eller flere sprog for installationen eller afslut Installationsguiden."
 
 #: src/Localization/setupstrings.ulf#STRING_NO_APPLICATION_SELECTED_1
 msgid  "No applications have been selected for installation."
@@ -569,7 +569,7 @@ msgstr "Ingen programmer er valgt for installationen."
 
 #: src/Localization/setupstrings.ulf#STRING_NO_APPLICATION_SELECTED_2
 msgid  "Click 'OK' to select one or more application for installation or to exit the Installation Wizard."
-msgstr ""
+msgstr "Klik på 'OK' for at vælge en eller flere programmer for installationen eller afslut Installationsguiden."
 
 #: src/Localization/setupstrings.ulf#STRING_NOTHING_TO_UNINSTALL
 msgid  "Nothing to uninstall"
@@ -581,7 +581,7 @@ msgstr "Ingen komponenter er blevet valgt til afinstallation."
 
 #: src/Localization/setupstrings.ulf#STRING_NO_UNINSTALLCOMPONENTS_SELECTED_2
 msgid  "Click 'OK' to select one or more components for uninstallation or to exit the Uninstallation Wizard."
-msgstr ""
+msgstr "Klik på 'OK' for at vælge en eller flere komponenter til afinstallation eller for at afslutte Afinstallationsguiden."
 
 #: src/Localization/setupstrings.ulf#STRING_ALL_LANGUAGECOMPONENTS_SELECTED_1
 msgid  "All language components have been selected for uninstallation."
@@ -589,7 +589,7 @@ msgstr "Alle sprogkomponenter er markeret til afinstallering."
 
 #: src/Localization/setupstrings.ulf#STRING_ALL_LANGUAGECOMPONENTS_SELECTED_2
 msgid  "Click 'OK' to select one or more language components not for uninstallation or to exit the Uninstallation Wizard."
-msgstr ""
+msgstr "Klik på 'OK' for at vælge en eller flere sprogkomponenter, der ikke skal afinstalleres, eller afslut Afinstallationsguiden."
 
 #: src/Localization/setupstrings.ulf#STRING_ALL_APPLICATIONCOMPONENTS_SELECTED_1
 msgid  "All application components have been selected for uninstallation."
@@ -597,7 +597,7 @@ msgstr "Alle programkomponenter er valgt til afinstallering."
 
 #: src/Localization/setupstrings.ulf#STRING_ALL_APPLICATIONCOMPONENTS_SELECTED_2
 msgid  "Click 'OK' to select one or more application components not for uninstallation or to exit the Uninstallation Wizard."
-msgstr ""
+msgstr "Klik på 'OK' for at vælge en eller flere programkomponenter, der ikke skal for afinstalleres, eller afslut Afinstallationsguiden."
 
 #: src/Localization/setupstrings.ulf#STRING_CHANGE_SELECTION
 msgid  "Please change selection"

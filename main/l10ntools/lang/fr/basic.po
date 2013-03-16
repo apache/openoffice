@@ -173,7 +173,7 @@ msgstr "Non implémenté."
 
 #: source/classes/sb.src#RID_BASIC_START.SbERR_DIFFERENT_DRIVE & ERRCODE_RES_MASK.String.Text
 msgid  "Renaming on different drives impossible."
-msgstr ""
+msgstr "Impossible de procéder à l'attribution d'un nouveau nom sur différentes unités."
 
 #: source/classes/sb.src#RID_BASIC_START.SbERR_ACCESS_ERROR & ERRCODE_RES_MASK.String.Text
 msgid  "Path/File access error."
@@ -269,7 +269,7 @@ msgstr "Collage du lien déjà exécuté."
 
 #: source/classes/sb.src#RID_BASIC_START.SbERR_DDE_LINK_INV_TOPIC & ERRCODE_RES_MASK.String.Text
 msgid  "Link mode cannot be set due to invalid link topic."
-msgstr ""
+msgstr "Impossible de définir le mode du lien, car le titre du lien n'est pas valide."
 
 #: source/classes/sb.src#RID_BASIC_START.SbERR_DDE_DLL_NOT_FOUND & ERRCODE_RES_MASK.String.Text
 msgid  "DDE requires the DDEML.DLL file."
@@ -337,7 +337,7 @@ msgstr "L'objet spécifié ne prend pas en charge les arguments nommés."
 
 #: source/classes/sb.src#RID_BASIC_START.SbERR_BAD_LOCALE & ERRCODE_RES_MASK.String.Text
 msgid  "The current locale setting is not supported by the given object."
-msgstr ""
+msgstr "L'objet spécifié ne prend pas en charge l'environnement linguistique actif."
 
 #: source/classes/sb.src#RID_BASIC_START.SbERR_NAMED_NOT_FOUND & ERRCODE_RES_MASK.String.Text
 msgid  "Named argument not found."

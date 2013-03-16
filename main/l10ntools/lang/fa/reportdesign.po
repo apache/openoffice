@@ -140,11 +140,19 @@ msgid  "Group Header"
 msgstr ""
 
 #: source/ui/dlg/GroupsSorting.src#RID_GROUPS_SORTING.LST_HEADERLST.Default.StringList.item
+msgid  "Present"
+msgstr ""
+
+#: source/ui/dlg/GroupsSorting.src#RID_GROUPS_SORTING.LST_HEADERLST.Default.StringList.item
 msgid  "Not present"
 msgstr ""
 
 #: source/ui/dlg/GroupsSorting.src#RID_GROUPS_SORTING.FT_FOOTER.FixedText.Text
 msgid  "Group Footer"
+msgstr ""
+
+#: source/ui/dlg/GroupsSorting.src#RID_GROUPS_SORTING.LST_FOOTERLST.Default.StringList.item
+msgid  "Present"
 msgstr ""
 
 #: source/ui/dlg/GroupsSorting.src#RID_GROUPS_SORTING.LST_FOOTERLST.Default.StringList.item
@@ -255,14 +263,6 @@ msgstr ""
 msgid  "Select ascending or descending sort order. Ascending means from A to Z or 0 to 9"
 msgstr ""
 
-#: source/ui/dlg/GroupsSorting.src#RID_GROUPS_SORTING.LST_HEADERLST.Default.StringList.item
-msgid  "Present"
-msgstr ""
-
-#: source/ui/dlg/GroupsSorting.src#RID_GROUPS_SORTING.LST_FOOTERLST.Default.StringList.item
-msgid  "Present"
-msgstr ""
-
 #: source/ui/dlg/PageNumber.src#RID_PAGENUMBERS.ModalDialog.Text
 msgid  "Page Numbers"
 msgstr ""
@@ -301,6 +301,15 @@ msgstr ""
 
 #: source/ui/dlg/PageNumber.src#RID_PAGENUMBERS.LST_ALIGNMENT.Default.StringList.item
 #, fuzzy
+msgid  "Left"
+msgstr "چپ"
+
+#: source/ui/dlg/PageNumber.src#RID_PAGENUMBERS.LST_ALIGNMENT.Default.StringList.item
+msgid  "Center"
+msgstr ""
+
+#: source/ui/dlg/PageNumber.src#RID_PAGENUMBERS.LST_ALIGNMENT.Default.StringList.item
+#, fuzzy
 msgid  "Right"
 msgstr "راست"
 
@@ -313,24 +322,14 @@ msgid  "~Help"
 msgstr ""
 
 #: source/ui/dlg/PageNumber.src#STR_RPT_PN_PAGE.String.Text
-msgid  ""Page " & #PAGENUMBER#"
+msgid  "\"Page \" & #PAGENUMBER#"
 msgstr ""
 
 #: source/ui/dlg/PageNumber.src#STR_RPT_PN_PAGE_OF.String.Text
-msgid  " & " of " & #PAGECOUNT#"
-msgstr ""
-
-#: source/ui/dlg/PageNumber.src#RID_PAGENUMBERS.LST_ALIGNMENT.Default.StringList.item
-#, fuzzy
-msgid  "Left"
-msgstr "چپ"
-
-#: source/ui/dlg/PageNumber.src#RID_PAGENUMBERS.LST_ALIGNMENT.Default.StringList.item
-msgid  "Center"
+msgid  " & \" of \" & #PAGECOUNT#"
 msgstr ""
 
 #: source/ui/dlg/dlgpage.src#RID_PAGEDIALOG_PAGE.TabDialog.Text
-#, fuzzy
 msgid  "Page Setup"
 msgstr "برپاسازی صفحه"
 
@@ -371,12 +370,10 @@ msgid  "Character Settings"
 msgstr ""
 
 #: source/ui/dlg/dlgpage.src#RID_PAGEDIALOG_CHAR.1.RID_PAGE_CHAR.PageItem.Text
-#, fuzzy
 msgid  "Font"
 msgstr "قلم"
 
 #: source/ui/dlg/dlgpage.src#RID_PAGEDIALOG_CHAR.1.RID_PAGE_EFFECTS.PageItem.Text
-#, fuzzy
 msgid  "Font Effects"
 msgstr "جلوه‌های قلم"
 
@@ -401,7 +398,6 @@ msgid  "Return"
 msgstr ""
 
 #: source/ui/dlg/dlgpage.src#RID_PAGEDIALOG_CHAR.1.String.Text
-#, fuzzy
 msgid  "Character"
 msgstr "نویسه"
 
@@ -461,6 +457,10 @@ msgstr ""
 #, fuzzy
 msgid  "Properties..."
 msgstr "ویژگی‌ها"
+
+#: source/ui/dlg/CondFormat.src#WIN_CONDITION.LB_COND_TYPE.Default.StringList.item
+msgid  "Field Value Is"
+msgstr ""
 
 #: source/ui/dlg/CondFormat.src#WIN_CONDITION.LB_COND_TYPE.Default.StringList.item
 msgid  "Expression Is"
@@ -556,10 +556,6 @@ msgstr ""
 
 #: source/ui/dlg/CondFormat.src#ADDFIELD_HELP_FIELD.FixedText.Text
 msgid  "Highlight the fields to insert into the selected section of the template, then click Insert or press Enter."
-msgstr ""
-
-#: source/ui/dlg/CondFormat.src#WIN_CONDITION.LB_COND_TYPE.Default.StringList.item
-msgid  "Field Value Is"
 msgstr ""
 
 #: source/ui/dlg/DateTime.src#RID_DATETIME_DLG.ModalDialog.Text
@@ -775,7 +771,6 @@ msgid  "Data field"
 msgstr ""
 
 #: source/ui/inspection/inspection.src#RID_STR_FONT.String.Text
-#, fuzzy
 msgid  "Font"
 msgstr "قلم"
 
@@ -916,17 +911,14 @@ msgid  "Maximum"
 msgstr ""
 
 #: source/ui/report/report.src#RID_STR_BRWTITLE_PROPERTIES.String.Text
-#, fuzzy
 msgid  "Properties: "
 msgstr "ویژگی‌ها: "
 
 #: source/ui/report/report.src#RID_STR_BRWTITLE_NO_PROPERTIES.String.Text
-#, fuzzy
 msgid  "No Control marked"
 msgstr "کنترلی علامت نخورده"
 
 #: source/ui/report/report.src#RID_STR_BRWTITLE_MULTISELECT.String.Text
-#, fuzzy
 msgid  "Multiselection"
 msgstr "چندانتخابی"
 
@@ -1043,7 +1035,6 @@ msgid  "Report #"
 msgstr ""
 
 #: source/ui/report/report.src#STR_RPT_LABEL.String.Text
-#, fuzzy
 msgid  "~Report name"
 msgstr "نام ~گزارش"
 
@@ -1260,10 +1251,6 @@ msgstr ""
 msgid  "Shrink Section"
 msgstr ""
 
-#: source/ui/report/report.src#RID_STR_INSERT.String.Text
-msgid  "Insert"
-msgstr ""
-
 #: source/ui/report/report.src#RID_STR_DETAIL.String.Text
 msgid  "Detail"
 msgstr ""
@@ -1282,4 +1269,8 @@ msgstr ""
 
 #: source/ui/report/report.src#RID_STR_REPORT_FOOTER.String.Text
 msgid  "Report Footer"
+msgstr ""
+
+#: source/ui/report/report.src#RID_STR_INSERT.String.Text
+msgid  "Insert"
 msgstr ""

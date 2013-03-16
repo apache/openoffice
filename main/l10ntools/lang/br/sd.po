@@ -53,7 +53,7 @@ msgstr "Linennoù savenn"
 
 #: source/core/glob.src#STR_PAGE.String.Text
 msgid  "Slide"
-msgstr "Treyonenn"
+msgstr "Pajenn"
 
 #: source/core/glob.src#STR_PAGE_NAME.String.Text
 msgid  "Page"
@@ -129,7 +129,7 @@ msgstr "Klikit evit ouzhpennañ un titl"
 
 #: source/core/glob.src#STR_PRESOBJ_OUTLINE.String.Text
 msgid  "Click to add text"
-msgstr "Klikit evit ouzhpennañ un destenn"
+msgstr "Klikit evit ouzhpennañ ur steuñv"
 
 #: source/core/glob.src#STR_PRESOBJ_TEXT.String.Text
 msgid  "Click to add text"
@@ -201,7 +201,7 @@ msgstr "Skoueriek"
 
 #: source/core/glob.src#STR_LAYOUT_DEFAULT_TITLE_NAME.String.Text
 msgid  "Title"
-msgstr "Titl 3 "
+msgstr "Titl"
 
 #: source/core/glob.src#STR_STANDARD_STYLESHEET_NAME.String.Text
 msgid  "Default"
@@ -217,7 +217,7 @@ msgstr "Dilec'hiañ pajennoù"
 
 #: source/core/glob.src#STR_NOT_ENOUGH_MEMORY.String.Text
 msgid  "Not enough memory!\nThe action will be aborted."
-msgstr ""
+msgstr "Memor re skort !\nTroc'het e vo ar gwezhiadur."
 
 #: source/core/glob.src#STR_POOLSHEET_MEASURE.String.Text
 msgid  "Dimension Line"
@@ -257,7 +257,7 @@ msgstr "Alinea"
 
 #: source/core/glob.src#STR_POOLSHEET_TITLE.String.Text
 msgid  "Title"
-msgstr "Titl"
+msgstr "Titl 3 "
 
 #: source/core/glob.src#STR_POOLSHEET_TITLE1.String.Text
 msgid  "Title1"
@@ -341,11 +341,11 @@ msgstr "Fazi mentrezh er restr, lec'hiadur $(ARG1)(linenn, bann)."
 
 #: source/core/glob.src#RID_SD_ERRHDL.ERR_CODE ( ERRCODE_CLASS_READ , ERR_FORMAT_FILE_ROWCOL ).String.Text
 msgid  "Format error discovered in the file in sub-document $(ARG1) at position $(ARG2)(row,col)."
-msgstr ""
+msgstr "Fazi mentrezh en isteul $(ARG1) ar restr, lec'hiadur $(ARG2)(linenn, bann)."
 
 #: source/core/glob.src#RID_SD_ERRHDL.ERR_CODE ( ERRCODE_CLASS_READ , WARN_FORMAT_FILE_ROWCOL ).String.Text
 msgid  "Format error discovered in the file in sub-document $(ARG1) at position $(ARG2)(row,col)."
-msgstr ""
+msgstr "Fazi mentrezh en isteul $(ARG1) ar restr, lec'hiadur $(ARG2)(linenn, bann)."
 
 #: source/core/glob.src#STR_3DOBJECTBARSHELL.String.Text
 msgid  "3-D Settings"
@@ -1225,7 +1225,7 @@ msgstr "Delusker"
 
 #: source/ui/animations/CustomAnimation.src#STR_CUSTOMANIMATION_LIST_HELPTEXT.String.Text
 msgid  "First select the slide element and then click 'Add...' to add an animation effect."
-msgstr ""
+msgstr "Da ouzhpennañ un efed fiñval, diuzit da gentañ an dreyonenn ha klikit war Ouzhpennañ."
 
 #: source/ui/animations/SlideTransitionPane.src#DLG_SLIDE_TRANSITION_PANE.Control.Text
 msgid  "Slide Transition"
@@ -1428,7 +1428,7 @@ msgid  "~Table..."
 msgstr ""
 
 #: source/ui/app/popup2_tmpl.src#RID_GRAPHIC_TABLE_POPUP.DUMMY.MenuItem.Text
-msgid  "Colu~mn"
+msgid  "~Cell"
 msgstr ""
 
 #: source/ui/app/popup2_tmpl.src#RID_GRAPHIC_TABLE_POPUP.DUMMY.SID_TABLE_MERGE_CELLS.MenuItem.Text
@@ -1451,6 +1451,10 @@ msgstr ""
 msgid  "~Bottom"
 msgstr ""
 
+#: source/ui/app/popup2_tmpl.src#RID_GRAPHIC_TABLE_POPUP.DUMMY.MenuItem.Text
+msgid  "~Row"
+msgstr ""
+
 #: source/ui/app/popup2_tmpl.src#RID_GRAPHIC_TABLE_POPUP.DUMMY.SID_TABLE_DISTRIBUTE_ROWS.MenuItem.Text
 msgid  "Space ~Equally"
 msgstr ""
@@ -1467,6 +1471,10 @@ msgstr ""
 msgid  "~Delete"
 msgstr ""
 
+#: source/ui/app/popup2_tmpl.src#RID_GRAPHIC_TABLE_POPUP.DUMMY.MenuItem.Text
+msgid  "Colu~mn"
+msgstr ""
+
 #: source/ui/app/popup2_tmpl.src#RID_GRAPHIC_TABLE_POPUP.DUMMY.SID_TABLE_DISTRIBUTE_COLUMNS.MenuItem.Text
 msgid  "Space ~Equally"
 msgstr ""
@@ -1481,14 +1489,6 @@ msgstr ""
 
 #: source/ui/app/popup2_tmpl.src#RID_GRAPHIC_TABLE_POPUP.DUMMY.SID_TABLE_DELETE_COL.MenuItem.Text
 msgid  "~Delete"
-msgstr ""
-
-#: source/ui/app/popup2_tmpl.src#RID_GRAPHIC_TABLE_POPUP.DUMMY.MenuItem.Text
-msgid  "~Cell"
-msgstr ""
-
-#: source/ui/app/popup2_tmpl.src#RID_GRAPHIC_TABLE_POPUP.DUMMY.MenuItem.Text
-msgid  "~Row"
 msgstr ""
 
 #: source/ui/app/strings.src#STR_DRAW_TOOLBOX.String.Text
@@ -1733,7 +1733,7 @@ msgstr "Bizskrivit un anv evit ar penn nevez :"
 
 #: source/ui/app/strings.src#STR_WARN_NAME_DUPLICATE.String.Text
 msgid  "The name chosen already exists. \nPlease enter another name."
-msgstr ""
+msgstr "An anv hoc'h eus euvret zo anezhañ endeo. \nEuvrit unan all."
 
 #: source/ui/app/strings.src#STR_UNDO_ANIMATION.String.Text
 msgid  "Animation parameters"
@@ -1761,7 +1761,7 @@ msgstr "Anv"
 
 #: source/ui/app/strings.src#STR_WARN_PAGE_EXISTS.String.Text
 msgid  "The slide name already exists or is invalid. Please enter another name."
-msgstr ""
+msgstr "Anv ar bajenn-mañ zo anezhañ endeo. \nDifaziit, mar plij."
 
 #: source/ui/app/strings.src#STR_SNAPDLG_SETLINE.String.Text
 msgid  "Edit Snap Line"
@@ -1804,8 +1804,8 @@ msgid  "Insert slides"
 msgstr "Enlakaat pajennoù"
 
 #: source/ui/app/strings.src#STR_ASK_DELETE_LAYER.String.Text
-msgid  "Are you sure you want to delete the level "$"?\nNote: All objects on this level will be deleted!"
-msgstr ""
+msgid  "Are you sure you want to delete the level \"$\"?\nNote: All objects on this level will be deleted!"
+msgstr "Fellout a ra deoc'h dilemel ar gwiskad '$' da vat ?\nDiwallit : dilamet e vo an holl ergorennoù war ar gwiskad-mañ ivez "
 
 #: source/ui/app/strings.src#STR_ASK_DELETE_ALL_PICTURES.String.Text
 msgid  "Do you really want to delete all images?"
@@ -1853,7 +1853,7 @@ msgstr "Enlakaat ur stern testenn"
 
 #: source/ui/app/strings.src#STR_ACTION_NOTPOSSIBLE.String.Text
 msgid  "This function cannot be run \nwith the selected objects."
-msgstr ""
+msgstr "N'hall ket an arc'hwel bezañ erounezet \ngant an ergorennoù diuzet."
 
 #: source/ui/app/strings.src#STR_DLG_INSERT_PAGES_FROM_FILE.String.Text
 msgid  "Insert File"
@@ -1865,7 +1865,7 @@ msgstr "N'haller ket kargañ ar restr "
 
 #: source/ui/app/strings.src#STR_SCALE_OBJECTS.String.Text
 msgid  "The format of the new pages will be adapted.\nDo you want to adapt the objects, too?"
-msgstr ""
+msgstr "Azasaet e vo mentrezh ar pajennoù nevez.\nAzasaat an ergorennoù a fell deoc'h ivez ?"
 
 #: source/ui/app/strings.src#STR_CREATE_PAGES.String.Text
 msgid  "Create slides"
@@ -1885,7 +1885,7 @@ msgstr "Embann"
 
 #: source/ui/app/strings.src#RID_UNDO_DELETE_WARNING.FT_UNDO_DELETE_WARNING.FixedText.Text
 msgid  "This action deletes the list of actions that can\nbe undone. Previous changes made to the document are still valid,\nbut cannot be undone. Do you want to continue and\nthus assign the new slide design?"
-msgstr ""
+msgstr "Dilemel a ra ar gwered-mañ rollad ar gwezhadurioù ac'hall\nbezañ nullet. Ne dizh ket an daskemmadurioù\ngraet d'an teul, mirout a ra avat o nullañ.\nFellout a ra deoc'h kenderc'hel ha deverkañ ar stil pajenn nevez ?"
 
 #: source/ui/app/strings.src#RID_UNDO_DELETE_WARNING.CB_UNDO_DELETE_DISABLE.CheckBox.Text
 msgid  "~Do not show this warning again"
@@ -1905,7 +1905,7 @@ msgstr "N'haller ket kenglotañ ar mentrezh teul ouzh ar voullerez."
 
 #: source/ui/app/strings.src#STR_REMOVE_LINK.String.Text
 msgid  "This graphic is linked to a document. \nDo you want to unlink the graphic in order to edit it?"
-msgstr ""
+msgstr "Erenet eo ar skeudenn-mañ ouzh an teul.\nDilemel an ere a fell deoc'h a-benn daskemmañ ar skeudenn ?"
 
 #: source/ui/app/strings.src#STR_IMPORT_GRFILTER_OPENERROR.String.Text
 msgid  "Graphics file cannot be opened"
@@ -1973,7 +1973,7 @@ msgstr "Enlakaat ur restr"
 
 #: source/ui/app/strings.src#STR_SCALE_OBJS_TO_PAGE.String.Text
 msgid  "Should the graphics be scaled to the new slide format?"
-msgstr ""
+msgstr "C'hoant hoc'h eus skeuliañ an ergorennoù kevregat da ventrezh nevez ar bajenn ?"
 
 #: source/ui/app/strings.src#STR_UNDO_INSERT_SPECCHAR.String.Text
 msgid  "Insert special character"
@@ -2017,7 +2017,7 @@ msgstr " (Steuñv)"
 
 #: source/ui/app/strings.src#STR_WARN_SCALE_FAIL.String.Text
 msgid  "The specified scale is invalid.\nDo you want to enter a new one?"
-msgstr ""
+msgstr "Direizh eo ar skeul erspizet. \nEnlakaat unan all a fell deoc'h ?"
 
 #: source/ui/app/strings.src#STR_CLICK_ACTION_NONE.String.Text
 msgid  "No action"
@@ -2265,7 +2265,7 @@ msgstr "Anv restr hep askouezhadenn"
 
 #: source/ui/app/strings.src#STR_RELEASE_GRAPHICLINK.String.Text
 msgid  "This graphic is linked to a document. Do you want to unlink the graphic in order to edit it?"
-msgstr ""
+msgstr "Erenet eo ar skeudenn-mañ ouzh an teul. Ha fellout a ra deoc'h dilemel an ere evit ma vo tu embann ar skeudenn ?"
 
 #: source/ui/app/strings.src#STR_NEW_CUSTOMSHOW.String.Text
 msgid  "New Custom Slide Show"
@@ -2301,7 +2301,7 @@ msgstr "N'haller ket digenstrollañ an holl ergorennoù tresañ."
 
 #: source/ui/app/strings.src#STR_PUBDLG_SAMENAME.String.Text
 msgid  "A design already exists with this name.\nDo you want to replace it?"
-msgstr ""
+msgstr "Un ergrafadenn gant an hevelep anv zo anezhi endeo. \n Fellout ar ra deoc'h hec'h erlec'hiañ outi."
 
 #: source/ui/app/strings.src#STR_HTMLATTR_TEXT.String.Text
 msgid  "Text"
@@ -2417,7 +2417,7 @@ msgstr "Sil kevregañ"
 
 #: source/ui/app/strings.src#STR_WARNING_NOSOUNDFILE.String.Text
 msgid  "The file %\nis not a valid sound file !"
-msgstr ""
+msgstr "Ar restr %\nn'eo ket ur restr sten talvoudek."
 
 #: source/ui/app/strings.src#STR_UNDO_CONVERT_TO_METAFILE.String.Text
 msgid  "Convert to metafile"
@@ -2631,6 +2631,14 @@ msgstr ""
 msgid  "Insert Movie"
 msgstr ""
 
+#: source/ui/app/res_bmp.src#SfxStyleFamiliesRes1.#define.Text
+msgid  "Graphics Styles"
+msgstr "Stiloù skeudennoù"
+
+#: source/ui/app/res_bmp.src#SfxStyleFamiliesRes2.#define.Text
+msgid  "Presentation Styles"
+msgstr "Stiloù kinnigadenn"
+
 #: source/ui/app/res_bmp.src#STR_STYLE_FILTER_USED.String.Text
 msgid  "Applied Styles"
 msgstr ""
@@ -2642,14 +2650,6 @@ msgstr ""
 #: source/ui/app/res_bmp.src#STR_STYLE_FILTER_ALL.String.Text
 msgid  "All Styles"
 msgstr ""
-
-#: source/ui/app/res_bmp.src#SfxStyleFamiliesRes1.#define.Text
-msgid  "Graphics Styles"
-msgstr "Stiloù skeudennoù"
-
-#: source/ui/app/res_bmp.src#SfxStyleFamiliesRes2.#define.Text
-msgid  "Presentation Styles"
-msgstr "Stiloù kinnigadenn"
 
 #: source/ui/app/menuids_tmpl.src#MN_DISTRIBUTE.SID_DISTRIBUTE_DLG.MenuItem.Text
 msgid  "~Distribution..."
@@ -3285,7 +3285,7 @@ msgstr "~Masklañ an dreyonenn"
 
 #: source/ui/app/menuids3_tmpl.src#MN_GROUP_IMPRESS.SID_GROUP.MenuItem.Text
 msgid  "~Group"
-msgstr "~Strollañ"
+msgstr "~Strollad"
 
 #: source/ui/app/menuids3_tmpl.src#MN_UNGROUP_IMPRESS.SID_UNGROUP.MenuItem.Text
 msgid  "~Ungroup"
@@ -3328,7 +3328,7 @@ msgid  "~Table..."
 msgstr ""
 
 #: source/ui/app/popup.src#RID_DRAW_TABLEOBJ_INSIDE_POPUP.DUMMY.MenuItem.Text
-msgid  "Colu~mn"
+msgid  "~Cell"
 msgstr ""
 
 #: source/ui/app/popup.src#RID_DRAW_TABLEOBJ_INSIDE_POPUP.DUMMY.SID_TABLE_MERGE_CELLS.MenuItem.Text
@@ -3351,6 +3351,10 @@ msgstr ""
 msgid  "~Bottom"
 msgstr ""
 
+#: source/ui/app/popup.src#RID_DRAW_TABLEOBJ_INSIDE_POPUP.DUMMY.MenuItem.Text
+msgid  "~Row"
+msgstr ""
+
 #: source/ui/app/popup.src#RID_DRAW_TABLEOBJ_INSIDE_POPUP.DUMMY.SID_TABLE_DISTRIBUTE_ROWS.MenuItem.Text
 msgid  "Space ~Equally"
 msgstr ""
@@ -3365,6 +3369,10 @@ msgstr ""
 
 #: source/ui/app/popup.src#RID_DRAW_TABLEOBJ_INSIDE_POPUP.DUMMY.SID_TABLE_DELETE_ROW.MenuItem.Text
 msgid  "~Delete"
+msgstr ""
+
+#: source/ui/app/popup.src#RID_DRAW_TABLEOBJ_INSIDE_POPUP.DUMMY.MenuItem.Text
+msgid  "Colu~mn"
 msgstr ""
 
 #: source/ui/app/popup.src#RID_DRAW_TABLEOBJ_INSIDE_POPUP.DUMMY.SID_TABLE_DISTRIBUTE_COLUMNS.MenuItem.Text
@@ -3439,33 +3447,25 @@ msgstr ""
 msgid  "~Insert Slide"
 msgstr ""
 
-#: source/ui/app/popup.src#RID_DRAW_TABLEOBJ_INSIDE_POPUP.DUMMY.MenuItem.Text
-msgid  "~Cell"
-msgstr ""
-
-#: source/ui/app/popup.src#RID_DRAW_TABLEOBJ_INSIDE_POPUP.DUMMY.MenuItem.Text
-msgid  "~Row"
-msgstr ""
-
 #: source/ui/app/sdstring.src#STR_SAR_NOT_FOUND.String.Text
 msgid  "Search key not found."
 msgstr "Termen klasket digavadus "
 
 #: source/ui/app/sdstring.src#STR_SAR_WRAP_FORWARD.String.Text
 msgid  "%PRODUCTNAME Impress has searched to the end of the presentation. Do you want to continue at the beginning?"
-msgstr ""
+msgstr "%PRODUCTNAME Impress a zo aet betek dibenn ar ginnigadenn. Ha fellout a ra deoc'h kenderc'hel gant ar c'hlask e deroù ar ginnigadenn ?"
 
 #: source/ui/app/sdstring.src#STR_SAR_WRAP_BACKWARD.String.Text
 msgid  "%PRODUCTNAME Impress has searched to the beginning of the presentation. Do you want to continue at the end?"
-msgstr ""
+msgstr "%PRODUCTNAME Impress a zo aet betek deroù ar ginnigadenn. Ha fellout a ra deoc'h kenderc'hel gant ar c'hlask e dibenn ar ginnigadenn ?"
 
 #: source/ui/app/sdstring.src#STR_SAR_WRAP_FORWARD_DRAW.String.Text
 msgid  "%PRODUCTNAME Draw has searched to the end of the document. Do you want to continue at the beginning?"
-msgstr ""
+msgstr "%PRODUCTNAME Draw a zo aet betek dibenn an teul. Ha fellout a ra deoc'h kenderc'hel gant ar c'hlask e deroù an teul ?"
 
 #: source/ui/app/sdstring.src#STR_SAR_WRAP_BACKWARD_DRAW.String.Text
 msgid  "%PRODUCTNAME Draw has searched to the beginning of the document. Do you want to continue at the end?"
-msgstr ""
+msgstr "%PRODUCTNAME Draw a zo aet betek deroù an teul. Ha fellout a ra deoc'h kenderc'hel gant ar c'hlask e dibenn an teul ?"
 
 #: source/ui/app/menuids2_tmpl.src#MN_NEWDOCDIRECT.SID_NEWDOCDIRECT.MenuItem.Text
 msgid  "~New"
@@ -3486,6 +3486,10 @@ msgstr "~Kas"
 #: source/ui/app/menuids2_tmpl.src#MN_PAGESETUP.SID_PAGESETUP.MenuItem.Text
 msgid  "~Page..."
 msgstr "~Pajenn..."
+
+#: source/ui/app/menuids2_tmpl.src#20.#define.Text
+msgid  "~Edit"
+msgstr "~Embann"
 
 #: source/ui/app/menuids2_tmpl.src#MN_PASTE2.SID_PASTE2.MenuItem.Text
 msgid  "Paste ~Special..."
@@ -3510,6 +3514,10 @@ msgstr "Lemel kuit ar gwiskad..."
 #: source/ui/app/menuids2_tmpl.src#MN_MANAGE_LINKS.SID_MANAGE_LINKS.MenuItem.Text
 msgid  "Lin~ks..."
 msgstr "~Ereoù..."
+
+#: source/ui/app/menuids2_tmpl.src#23.#define.Text
+msgid  "~View"
+msgstr "Skra~mmañ"
 
 #: source/ui/app/menuids2_tmpl.src#MN_TOGGLETOOLBAR.SID_TOGGLETOOLBAR.MenuItem.Text
 msgid  "Main ~Toolbar"
@@ -3574,6 +3582,10 @@ msgstr "Mae~z labour"
 #: source/ui/app/menuids2_tmpl.src#MNSUB_MASTERPAGE.MN_SUB_MASTERPAGE.MenuItem.Text
 msgid  "~Master"
 msgstr "Ma~skl"
+
+#: source/ui/app/menuids2_tmpl.src#21.#define.Text
+msgid  "~Insert"
+msgstr "E~nlakaat"
 
 #: source/ui/app/menuids2_tmpl.src#MN_INSERTPAGE.SID_INSERTPAGE.MenuItem.Text
 msgid  "Slid~e..."
@@ -3659,6 +3671,10 @@ msgstr "~Restr..."
 msgid  "Fiel~ds"
 msgstr "~Maezienn"
 
+#: source/ui/app/menuids2_tmpl.src#22.#define.Text
+msgid  "F~ormat"
+msgstr "Men~trezh"
+
 #: source/ui/app/menuids2_tmpl.src#MN_TEXTATTR_DLG.SID_TEXTATTR_DLG.MenuItem.Text
 msgid  "Te~xt..."
 msgstr "~Testenn..."
@@ -3682,6 +3698,14 @@ msgstr "Daskemmañ ar pajennaozañ..."
 #: source/ui/app/menuids2_tmpl.src#MNSUB_TEMPLATES.MN_SUB_TEMPLATES.MenuItem.Text
 msgid  "Styl~es"
 msgstr "~Stiloù"
+
+#: source/ui/app/menuids2_tmpl.src#ITEM_TOOLS_ID.#define.Text
+msgid  "~Tools"
+msgstr "~Ostilhoù"
+
+#: source/ui/app/menuids2_tmpl.src#26.#define.Text
+msgid  "~Slide Show"
+msgstr "~Treyonennaoueg"
 
 #: source/ui/app/menuids2_tmpl.src#MN_SPELLING.SID_SPELL_DIALOG.MenuItem.Text
 msgid  "~Check..."
@@ -3722,6 +3746,10 @@ msgstr "Etrewezhiañ..."
 #: source/ui/app/menuids2_tmpl.src#MNSUB_SPELLING.MN_SUB_SPELLING.MenuItem.Text
 msgid  "~Spellcheck"
 msgstr "~Reizhskrivadur"
+
+#: source/ui/app/menuids2_tmpl.src#24.#define.Text
+msgid  "~Modify"
+msgstr "Daske~mmañ"
 
 #: source/ui/app/menuids2_tmpl.src#MN_MOREFRONT.SID_MOREFRONT.MenuItem.Text
 msgid  "Bring ~Forward"
@@ -3794,34 +3822,6 @@ msgstr "Perzhded skrammañ "
 #: source/ui/app/menuids2_tmpl.src#MNSUB_PREVIEW_OUTPUT_QUALITY.MN_SUB_PREVIEW_OUTPUT_QUALITY.ItemList.Text
 msgid  "Pre~view Mode"
 msgstr "Perzhded an alberz"
-
-#: source/ui/app/menuids2_tmpl.src#20.#define.Text
-msgid  "~Edit"
-msgstr "~Embann"
-
-#: source/ui/app/menuids2_tmpl.src#23.#define.Text
-msgid  "~View"
-msgstr "Skra~mmañ"
-
-#: source/ui/app/menuids2_tmpl.src#21.#define.Text
-msgid  "~Insert"
-msgstr "E~nlakaat"
-
-#: source/ui/app/menuids2_tmpl.src#22.#define.Text
-msgid  "F~ormat"
-msgstr "Men~trezh"
-
-#: source/ui/app/menuids2_tmpl.src#ITEM_TOOLS_ID.#define.Text
-msgid  "~Tools"
-msgstr "~Ostilhoù"
-
-#: source/ui/app/menuids2_tmpl.src#26.#define.Text
-msgid  "~Slide Show"
-msgstr "~Treyonennaoueg"
-
-#: source/ui/app/menuids2_tmpl.src#24.#define.Text
-msgid  "~Modify"
-msgstr "Daske~mmañ"
 
 #: source/ui/dlg/sdpreslt.src#DLG_PRESLT.FT_LAYOUT.FixedText.Text
 msgid  "~Select a slide design"
@@ -4687,6 +4687,10 @@ msgstr "Niverenn dreyonenn"
 msgid  "Master Elements"
 msgstr "Elfennoù ar maskl"
 
+#: source/ui/dlg/tpoption.src#SCALE_TEXT.#define.Text
+msgid  "Scale"
+msgstr "Skeul"
+
 #: source/ui/dlg/tpoption.src#TP_OPTIONS_CONTENTS.TabPage.Text
 msgid  "Contents"
 msgstr "Endalc'had"
@@ -4802,10 +4806,6 @@ msgstr "~Led pajenn"
 #: source/ui/dlg/tpoption.src#TP_OPTIONS_MISC.FT_PAGEHEIGHT.FixedText.Text
 msgid  "Page ~height"
 msgstr "~Hed pajenn"
-
-#: source/ui/dlg/tpoption.src#SCALE_TEXT.#define.Text
-msgid  "Scale"
-msgstr "Skeul"
 
 #: source/ui/dlg/morphdlg.src#DLG_MORPH.GRP_PRESET.FixedLine.Text
 msgid  "Settings"
@@ -5056,22 +5056,6 @@ msgid  "Alignment"
 msgstr "Kenglotadur"
 
 #: source/ui/dlg/animobjs.src#FLT_WIN_ANIMATION.LB_ADJUSTMENT.Default.StringList.item
-msgid  "Bottom Right"
-msgstr "A-zehou/En traoñ"
-
-#: source/ui/dlg/animobjs.src#FLT_WIN_ANIMATION.BTN_CREATE_GROUP.PushButton.Text
-msgid  "Create"
-msgstr "Krouiñ"
-
-#: source/ui/dlg/animobjs.src#FLT_WIN_ANIMATION.GRP_ANIMATION_GROUP.FixedLine.Text
-msgid  "Animation group"
-msgstr "Strollad lusket"
-
-#: source/ui/dlg/animobjs.src#FLT_WIN_ANIMATION.STR_DISPLAY.String.Text
-msgid  "Preview"
-msgstr ""
-
-#: source/ui/dlg/animobjs.src#FLT_WIN_ANIMATION.LB_ADJUSTMENT.Default.StringList.item
 msgid  "Top Left"
 msgstr "A-gleiz/E-krec'h"
 
@@ -5103,6 +5087,22 @@ msgstr "A-zehou/E-krec'h"
 msgid  "Right"
 msgstr "A-zehou"
 
+#: source/ui/dlg/animobjs.src#FLT_WIN_ANIMATION.LB_ADJUSTMENT.Default.StringList.item
+msgid  "Bottom Right"
+msgstr "A-zehou/En traoñ"
+
+#: source/ui/dlg/animobjs.src#FLT_WIN_ANIMATION.BTN_CREATE_GROUP.PushButton.Text
+msgid  "Create"
+msgstr "Krouiñ"
+
+#: source/ui/dlg/animobjs.src#FLT_WIN_ANIMATION.GRP_ANIMATION_GROUP.FixedLine.Text
+msgid  "Animation group"
+msgstr "Strollad lusket"
+
+#: source/ui/dlg/animobjs.src#FLT_WIN_ANIMATION.STR_DISPLAY.String.Text
+msgid  "Preview"
+msgstr ""
+
 #: source/ui/dlg/prntopts.src#TP_PRINT_OPTIONS.TabPage.Text
 msgid  "Options"
 msgstr "Dibarzhioù"
@@ -5133,7 +5133,7 @@ msgstr "Perzhded"
 
 #: source/ui/dlg/prntopts.src#TP_PRINT_OPTIONS.RBT_COLOR.RadioButton.Text
 msgid  "Default"
-msgstr "Skoueriek"
+msgstr "Dre ziouer"
 
 #: source/ui/dlg/prntopts.src#TP_PRINT_OPTIONS.RBT_GRAYSCALE.RadioButton.Text
 msgid  "Gra~yscale"

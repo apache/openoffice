@@ -33,7 +33,7 @@ msgstr ""
 
 #: source/padialog.src#RID_FONTIMPORT_DIALOG.RID_FIMP_TXT_HELP.FixedText.Text
 msgid  "Please select the folder from which you want to import fonts. Add the selected fonts by clicking the OK button."
-msgstr ""
+msgstr "Diuzit an teuliad m'hoc'h eus c'hoant ezporzhiañ nodrezhioù anezhañ, klikit goude war O.K. evit ouzhpennañ an nodrezhioù diuzet."
 
 #: source/padialog.src#RID_FONTIMPORT_DIALOG.RID_FIMP_FL_FROM.FixedLine.Text
 msgid  "Source directory"
@@ -61,7 +61,7 @@ msgstr "Ouzhpennañ an nodrezhioù"
 
 #: source/padialog.src#RID_FONTIMPORT_DIALOG.RID_FIMP_STR_QUERYOVERWRITE.String.Text
 msgid  "Do you really want to overwrite this font file?\n   %s"
-msgstr ""
+msgstr "Fellout a ra deoc'h flastrañ\nar restrad nodrezhioù\n %s ?"
 
 #: source/padialog.src#RID_FONTIMPORT_DIALOG.RID_FIMP_STR_OVERWRITEALL.String.Text
 msgid  "All"
@@ -73,19 +73,19 @@ msgstr "Tra ebet"
 
 #: source/padialog.src#RID_FONTIMPORT_DIALOG.RID_FIMP_STR_NOAFM.String.Text
 msgid  "A format file (with an .afm extension) has not been found for the font\n%s\ntherefore, the font cannot be installed. Format files can be created with ghostscript, for example, and have to be located in the same directory as the font files or its afm subdirectory."
-msgstr ""
+msgstr "N'eus restr ventrezh ebet (hec'h askouezhadenn .afm) dinoet evit ar restr nodrezh\n%s\n ; an nodrezh n'hall ket bezañ staliet neuze. Ar restroù mentrezh a c'hall bezañ krouet gant ghostscript da skouer ha ret eo dezho bezañ lec'hiet en hevelep kavlec'hiad ha hini ar restroù nodrezh pe en iskavlec'hiad afm."
 
 #: source/padialog.src#RID_FONTIMPORT_DIALOG.RID_FIMP_STR_AFMCOPYFAILED.String.Text
 msgid  "The metric file for the font file\n   %s\ncould not be copied. The font will not be installed."
-msgstr ""
+msgstr "Eilañ ar restr vetrek evit ar restr\n  %s\ndic'hallus, neuze n'haller ket staliañ an nodrezh "
 
 #: source/padialog.src#RID_FONTIMPORT_DIALOG.RID_FIMP_STR_FONTCOPYFAILED.String.Text
 msgid  "The font file\n   %s\ncould not be copied. The font will not be installed."
-msgstr ""
+msgstr "Eilañ ar restr nodrezh\n  %s\n dic'hallus, neuze dic'hallusted staliañ an nodrezh "
 
 #: source/padialog.src#RID_FONTIMPORT_DIALOG.RID_FIMP_STR_NOWRITEABLEFONTSDIR.String.Text
 msgid  "A directory containing a writable fonts.dir file is not located in the Fontpath. Therefore, fonts cannot be installed."
-msgstr ""
+msgstr "N'eus kavlec'h ebet gant ur restr skrivañ fonts.dir en treug nodrezhioù (fontpath). N'haller ket staliañ an nodrezhioù "
 
 #: source/padialog.src#RID_FONTIMPORT_DIALOG.RID_FIMP_STR_NUMBEROFFONTSIMPORTED.String.Text
 msgid  "%d new fonts were added."
@@ -289,7 +289,7 @@ msgstr "N'eus menterezh ebet endalc'het gant ar restr."
 
 #: source/padialog.src#RID_AFMERROR_BOX_TXT.String.Text
 msgid  "The metric\n\n%s\n\ncould not be converted for the following reason:\n\n"
-msgstr ""
+msgstr "N'haller ket amdreiñ ar menterezh\n\n%s\n\nevit an abeg da-heul :\n\n"
 
 #: source/padialog.src#RID_PROGRESS_DLG.RID_PROGRESS_PROGRESS_TXT.FixedText.Text
 msgid  "Progress"
@@ -320,8 +320,8 @@ msgid  "~Selection of drivers"
 msgstr "Sturioù dieub"
 
 #: source/padialog.src#RID_PPDIMPORT_DLG.RID_PPDIMP_TXT_DRIVER.FixedText.Text
-msgid  "Please select the drivers to install and press "%s"."
-msgstr ""
+msgid  "Please select the drivers to install and press \"%s\"."
+msgstr "Diuzit ar sturioù ha gwiriekait gant an afell \"%s\"."
 
 #: source/padialog.src#RID_PPDIMPORT_DLG.RID_PPDIMP_STR_LOADINGPPD.String.Text
 msgid  "Searching for drivers"
@@ -332,8 +332,8 @@ msgid  "Driver Installation"
 msgstr "Staliañ ar stur."
 
 #: source/padialog.src#RID_QUERY_REMOVEDRIVER.String.Text
-msgid  "Do you really want to remove the driver "%s"?"
-msgstr ""
+msgid  "Do you really want to remove the driver \"%s\"?"
+msgstr "C'hoant hoc'h eus lemel kuit da vat ar stur \"%s\" ?"
 
 #: source/padialog.src#RID_QUERY_REMOVEPRINTER.String.Text
 msgid  "Do you really want to remove this printer ?"
@@ -344,40 +344,40 @@ msgid  "Do you really want to remove the selected fonts ?"
 msgstr "C'hoant hoc'h eus lemel kuit da vat an arouezennoù diuzet ?"
 
 #: source/padialog.src#RID_QUERY_DRIVERUSED.String.Text
-msgid  "There are still printers using the driver "%s". Do you really want to remove it? The corresponding printers will also be removed."
-msgstr ""
+msgid  "There are still printers using the driver \"%s\". Do you really want to remove it? The corresponding printers will also be removed."
+msgstr "Moullerezed all a implij ar stur \"%s\". Ha fellout a ra deoc'h e zilemel ? An dra-se a zilamo ar moullerezioù kenglotus all ivez."
 
 #: source/padialog.src#RID_ERR_REMOVESGENPRT.String.Text
-msgid  "The driver "%s" is always needed and can therefore not be removed."
-msgstr ""
+msgid  "The driver \"%s\" is always needed and can therefore not be removed."
+msgstr "Ar stur \"%s\" a vez arveret ent reizhiadel : n'hall ket bezañ dilamet."
 
 #: source/padialog.src#RID_ERR_REMOVEDRIVERFAILED.String.Text
-msgid  "The driver "%s1" could not be removed. It was not possible to remove the file\n\n%s2."
-msgstr ""
+msgid  "The driver \"%s1\" could not be removed. It was not possible to remove the file\n\n%s2."
+msgstr "N'haller ket dilemel ar stur \"%s1\" : C'hwitet en deus dilamadur ar restr\n\n%s2\n\n."
 
 #: source/padialog.src#RID_ERR_REMOVEDEFAULTDRIVER.String.Text
-msgid  "The driver "%s" is used by your default printer. Therefore, it cannot be removed."
-msgstr ""
+msgid  "The driver \"%s\" is used by your default printer. Therefore, it cannot be removed."
+msgstr "Ho moullerez dre ziouer a arver ar stur \"%s\". Dic'hallus e lemel kuit."
 
 #: source/padialog.src#RID_ERR_PRINTERNOTREMOVEABLE.String.Text
 msgid  "The printer %s cannot be removed."
 msgstr "N'haller ket dilemel ar voullerez-mañ."
 
 #: source/padialog.src#RID_TXT_PRINTERALREADYEXISTS.String.Text
-msgid  "A printer named "%s" already exists. This printer will not be imported."
-msgstr ""
+msgid  "A printer named \"%s\" already exists. This printer will not be imported."
+msgstr "Ur voullerez anvet \"%s\" zo endeo anezhi. Ne vo ket enporzhiet."
 
 #: source/padialog.src#RID_TXT_PRINTERWITHOUTCOMMAND.String.Text
-msgid  "The printer "%s" has no valid configuration and, therefore, cannot be imported."
-msgstr ""
+msgid  "The printer \"%s\" has no valid configuration and, therefore, cannot be imported."
+msgstr "N'eo ket bet kefluniet mat ar voullerez \"%s\" ha n'hall ket bezañ enporzhet neuze."
 
 #: source/padialog.src#RID_TXT_DRIVERDOESNOTEXIST.String.Text
-msgid  "The driver for the printer "%s1" (%s2) is not installed. Therefore the printer cannot be imported."
-msgstr ""
+msgid  "The driver for the printer \"%s1\" (%s2) is not installed. Therefore the printer cannot be imported."
+msgstr "N'eo ket staliet ar stur evit ar voullerez \"%s1\" (%s2). N'haller ket enporzhiañ ar voullerez."
 
 #: source/padialog.src#RID_TXT_PRINTERADDFAILED.String.Text
-msgid  "The printer "%s" could not be added."
-msgstr ""
+msgid  "The printer \"%s\" could not be added."
+msgstr "N'haller ket ouzhpennañ ar voullerez \"%s\" "
 
 #: source/padialog.src#RID_ADD_PRINTER_DIALOG.RID_ADDP_BTN_FINISH.OKButton.Text
 msgid  "~Finish"
@@ -488,12 +488,12 @@ msgid  "~Help"
 msgstr "Skoazell"
 
 #: source/padialog.src#RID_ADDP_PAGE_COMMAND.RID_ADDP_CMD_STR_PDFHELP.String.Text
-msgid  "The command line for PDF converters is executed as follows: for each document printed, "(TMP)" in the command line is replaced by a temporary file and "(OUTFILE)" in the command line is replaced by the target PDF file name. If "(TMP)" is in the command line, the PostScript code will be supplied via a file, otherwise via standard input (i.e. as a pipe)."
-msgstr ""
+msgid  "The command line for PDF converters is executed as follows: for each document printed, \"(TMP)\" in the command line is replaced by a temporary file and \"(OUTFILE)\" in the command line is replaced by the target PDF file name. If \"(TMP)\" is in the command line, the PostScript code will be supplied via a file, otherwise via standard input (i.e. as a pipe)."
+msgstr "Keweriad al linenn lankañ evit an amdroerioù PDF : evit pep teul moullet ez eus erlec'hiet ur restr amzeriat ouzh \"(TMP)\" hag ur restr PDF da grouiñ ouzh \"(OUTFILE)\". Ma teuy \"(TMP)\" war wel el linenn lankañ, e vo treuzkaset ar voneg PostScript en ur restr ; en tu kontrol e vo treuzkaset dre an enankad dre ziouer (eleze evel korzenn (pipe))."
 
 #: source/padialog.src#RID_ADDP_PAGE_COMMAND.RID_ADDP_CMD_STR_FAXHELP.String.Text
-msgid  "The command line for fax connections is executed as follows: for each fax sent, "(TMP)" in the command line is replaced by a temporary file and "(PHONE)" in the command line is replaced by the fax number. If "(TMP)" appears in the command line, the PostScript code will be supplied via a file, otherwise it is passed as standard input (i.e. as a pipe)."
-msgstr ""
+msgid  "The command line for fax connections is executed as follows: for each fax sent, \"(TMP)\" in the command line is replaced by a temporary file and \"(PHONE)\" in the command line is replaced by the fax number. If \"(TMP)\" appears in the command line, the PostScript code will be supplied via a file, otherwise it is passed as standard input (i.e. as a pipe)."
+msgstr "Keweriad al linenn lankañ evit ar c'hennaskoù faks : evit pep kasad faks ez eus erlec'hiet ur restr amzeriat ouzh \"(TMP)\" hag an niverenn faks ouzh \"(PHONE)\". Ma teuy \"(TMP)\" el linenn lankañ e vo treuzkaset ar voneg PostScript er restr ; en tu kontrol e vo treuzkaset dre an enankad dre ziouer (eleze evel ur gorzenn (pipe))."
 
 #: source/padialog.src#RID_ADDP_PAGE_OLDPRINTERS.RID_ADDP_STR_TITLE.String.Text
 msgid  "Import printers from old versions"
@@ -501,7 +501,7 @@ msgstr "Enporzh ar moullerezed o tont eus ar goulevioù kent"
 
 #: source/padialog.src#RID_ADDP_PAGE_OLDPRINTERS.RID_ADDP_OLD_TXT_PRINTERS.FixedText.Text
 msgid  "~These printers can be imported. Please select the ones you want to import."
-msgstr ""
+msgstr "Gallout a ra ar moullerezioù-se bezañ enporzhiet ; dibabit a re a blij deoc'h."
 
 #: source/padialog.src#RID_ADDP_PAGE_OLDPRINTERS.RID_ADDP_OLD_BTN_SELECTALL.PushButton.Text
 msgid  "~Select All"
@@ -788,16 +788,16 @@ msgid  "~Remove"
 msgstr "Lemel kuit"
 
 #: source/rtsetup.src#RID_RTS_COMMANDPAGE.RID_RTS_CMD_STR_PDFHELP.String.Text
-msgid  "The command line for PDF converters is executed as follows: for each document printed, "(TMP)" in the command line is replaced by a temporary file and "(OUTFILE)" in the command line is replaced by the target PDF file name. If "(TMP)" is in the command line, the PostScript code will be supplied via a file, otherwise via standard input (i.e. as a pipe)."
-msgstr ""
+msgid  "The command line for PDF converters is executed as follows: for each document printed, \"(TMP)\" in the command line is replaced by a temporary file and \"(OUTFILE)\" in the command line is replaced by the target PDF file name. If \"(TMP)\" is in the command line, the PostScript code will be supplied via a file, otherwise via standard input (i.e. as a pipe)."
+msgstr "Keweriad al linenn lankañ evit an amdroerioù PDF : evit pep teul moullet ez eus erlec'hiet ur restr amzeriat ouzh \"(TMP)\" hag ur restr PDF da grouiñ ouzh \"(OUTFILE)\". Ma teuy \"(TMP)\" war wel el linenn lankañ, e vo treuzkaset ar voneg PostScript en ur restr ; en tu kontrol e vo treuzkaset dre an enankad dre ziouer (eleze evel korzenn (pipe))."
 
 #: source/rtsetup.src#RID_RTS_COMMANDPAGE.RID_RTS_CMD_STR_PRINTERHELP.String.Text
 msgid  "The command line for printer devices is executed as follows: the generated PostScript code is supplied as standard input (i.e. as a pipe) to the command line."
-msgstr ""
+msgstr "Keweriad al linenn lankañ evit ar moullerezed : ar voneg PostScript aozet zo treuzkaset d'al linenn lankañ evel enankad dre ziouer (eleze evel korzenn (pipe))."
 
 #: source/rtsetup.src#RID_RTS_COMMANDPAGE.RID_RTS_CMD_STR_FAXHELP.String.Text
-msgid  "The command line for fax devices is executed as follows: for each fax sent, "(TMP)" in the command line is replaced by a temporary file and "(PHONE)" in the command line is replaced by the fax number. If "(TMP)" appears in the command line, the PostScript code will be supplied via a file, otherwise it is passed as standard input (i.e. as a pipe)."
-msgstr ""
+msgid  "The command line for fax devices is executed as follows: for each fax sent, \"(TMP)\" in the command line is replaced by a temporary file and \"(PHONE)\" in the command line is replaced by the fax number. If \"(TMP)\" appears in the command line, the PostScript code will be supplied via a file, otherwise it is passed as standard input (i.e. as a pipe)."
+msgstr "Keweriad al linenn lankañ evit an trobarzhelloù faks : evit pep kasad faks, ez eo erlec'hiet ur restr amzeriat ouzh \"(TMP)\" hag an niverenn faks ouzh \"(PHONE)\". Ma teuy \"(TMP)\" war wel el linenn lankañ e vo treuzkaset ar voneg PostScript en ur restr ; en tu kontrol e vo treuzkaset dre an enankad dre ziouer (eleze evel ur gorzenn (pipe))."
 
 #: source/rtsetup.src#RID_RTS_OTHERPAGE.RID_RTS_OTHER_LEFTMARGIN_TXT.FixedText.Text
 msgid  "~Left margin"

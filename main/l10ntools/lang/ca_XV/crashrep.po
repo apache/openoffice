@@ -37,7 +37,7 @@ msgstr "Eina d'informe d'errors de l'%PRODUCTNAME% %PRODUCTVERSION%"
 
 #: source/all/crashrep.ulf#%WELCOME_HEADER%
 msgid  "Welcome to the %PRODUCTNAME% %PRODUCTVERSION% Error Report"
-msgstr ""
+msgstr "Vos donem la benvinguda a l'informe d'errors de l'%PRODUCTNAME% %PRODUCTVERSION%"
 
 #: source/all/crashrep.ulf#%WELCOME_BODY1%
 msgid  "This error report tool gathers information about how %PRODUCTNAME% is working and sends it to Apache OpenOffice to help improve future versions.\n\n"
@@ -45,7 +45,7 @@ msgstr ""
 
 #: source/all/crashrep.ulf#%WELCOME_BODY2%
 msgid  "It's easy - just send the report without any further effort on your part by clicking 'Send' in the next dialog, or you can briefly describe how the error occurred and then click 'Send'. If you want to see the report, click the 'Show Report' button. No data will be sent if you click 'Do Not Send'.\n\n"
-msgstr ""
+msgstr "És fàcil, podeu enviar l'informe fent clic a \"Envia\" en el diàleg següent o podeu descriure breument com ha ocorregut l'error i llavors fer clic a \"Envia\". Si voleu veure l'informe, feu clic al botó \"Mostra l'informe\". No s'enviarà cap dada si feu clic a \"No envies\".\n\n"
 
 #: source/all/crashrep.ulf#%WELCOME_BODY3%
 msgid  "Customer Privacy\nThe information gathered is limited to data concerning the state of %PRODUCTNAME% %PRODUCTVERSION% when the error occurred. Other information about passwords or document contents is not collected.\n\nThe information will only be used to improve the quality of %PRODUCTNAME% and will not be shared with third parties.\nFor more information on Apache OpenOffice's privacy policy, visit\n"
@@ -73,7 +73,7 @@ msgstr "Eina d'informe d'errors de l'%PRODUCTNAME% %PRODUCTVERSION%"
 
 #: source/all/crashrep.ulf#%REPORT_HEADER%
 msgid  "An error occurred while running %PRODUCTNAME% %PRODUCTVERSION%"
-msgstr ""
+msgstr "S'ha produït un error mentre s'executava l'%PRODUCTNAME% %PRODUCTVERSION%"
 
 #: source/all/crashrep.ulf#%REPORT_BODY%
 msgid  "The %PRODUCTNAME% %PRODUCTVERSION% Error Report has gathered information that could help Apache OpenOffice improve %PRODUCTNAME%.\nIn the spaces below, you can enter a title for your crash report and describe the action you were trying to carry out when the error occurred. Then click 'Send'.\n"
@@ -81,7 +81,7 @@ msgstr ""
 
 #: source/all/crashrep.ulf#%ENTER_TITLE%
 msgid  "Which type of document (e.g. presentation) were you using when the error occurred?"
-msgstr ""
+msgstr "Quin tipus de document (p. ex. presentació) estàveu utilitzant quan s'ha produït l'error?"
 
 #: source/all/crashrep.ulf#%ALLOW_CONTACT%
 msgid  "~I allow Apache OpenOffice to contact me regarding this report."
@@ -121,23 +121,23 @@ msgstr "Alça l'informe a"
 
 #: source/all/crashrep.ulf#%ERROR_MSG_SIMPLE_MAPI%
 msgid  "The error report could not be sent because the default e-mail program does not support MAPI.\n Please use a MAPI-compatible e-mail program."
-msgstr ""
+msgstr "L'informe d'errors no s'ha pogut enviar perquè el programa de correu electrònic per defecte no és compatible amb MAPI.\nUtilitzeu-ne un que siga compatible amb MAPI."
 
 #: source/all/crashrep.ulf#%ERROR_MSG_DISK_FULL%
 msgid  "The error report could not be temporarily saved and could therefore not be sent."
-msgstr ""
+msgstr "L'informe d'errors no s'ha pogut alçar temporalment i, per tant, no s'ha pogut enviar."
 
 #: source/all/crashrep.ulf#%ERROR_MSG_SENDMAIL%
 msgid  "The error report could not be sent because 'sendmail' could not be started.\nPlease check the 'sendmail' settings."
-msgstr ""
+msgstr "L'informe d'errors no s'ha enviat perquè no s'ha pogut iniciar el Sendmail.\nComproveu la configuració del Sendmail."
 
 #: source/all/crashrep.ulf#%ERROR_MSG_PROXY%
 msgid  "The error report could not be sent. Please check the proxy settings under 'Options' in the Error Report Tool."
-msgstr ""
+msgstr "L'informe d'errors no s'ha pogut enviar. Comproveu la configuració del servidor intermediari a \"Opcions\", dins l'eina d'informe d'errors."
 
 #: source/all/crashrep.ulf#%ERROR_MSG_NOCONNECT%
 msgid  "The error report could not be sent because there is no Internet connection. Please check your Internet settings."
-msgstr ""
+msgstr "L'informe d'errors no s'ha enviat perquè no hi ha connexió a Internet. Comproveu la vostra configuració d'Internet."
 
 #: source/all/crashrep.ulf#%OPTIONS_BUTTON%
 msgid  "~Options..."
@@ -173,7 +173,7 @@ msgstr "~Port"
 
 #: source/all/crashrep.ulf#%PROXY_SETTINGS_DESCRIPTION%
 msgid  "The %PRODUCTNAME% Error Report tool needs to be connected to the Internet to be able to send error reports.\n\nCompanies often use proxy servers in conjunction with a firewall to protect the network.\n\nIf this applies to your situation, you have to specify the address and port for the server."
-msgstr ""
+msgstr "L'eina d'informe d'errors de l'%PRODUCTNAME% necessita estar connectada a Internet per poder enviar l'informe d'errors.\n\nLes empreses solen utilitzar servidors intermediaris en conjunció amb tallafocs per tal de protegir la xarxa.\n\nSi és el cas, heu d'especificar l'adreça i el port del servidor."
 
 #: source/all/crashrep.ulf#%SENDING_REPORT_HEADER%
 msgid  "Sending Error Report"
@@ -201,8 +201,8 @@ msgstr "-p <ID del procés>"
 
 #: source/all/crashrep.ulf#%MSG_PARAM_PROCESSID_DESCRIPTION%
 msgid  "Assigns the %PRODUCTNAME% process ID (PID) to the Error Report Tool"
-msgstr ""
+msgstr "Assigna l'ID del procés (PID) de l'%PRODUCTNAME% a l'eina d'informe d'errors"
 
 #: source/all/crashrep.ulf#%MSG_PARAM_HELP_DESCRIPTION%
 msgid  "Shows this help text.\nDetailed information can be found in the Setup Guide."
-msgstr ""
+msgstr "Mostra este text d'ajuda.\nLa informació detallada es troba a la guia de configuració."

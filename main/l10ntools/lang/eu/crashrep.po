@@ -37,7 +37,7 @@ msgstr "%PRODUCTNAME% %PRODUCTVERSION%(r)en erroreen berri emateko tresna"
 
 #: source/all/crashrep.ulf#%WELCOME_HEADER%
 msgid  "Welcome to the %PRODUCTNAME% %PRODUCTVERSION% Error Report"
-msgstr ""
+msgstr "Ongi etorri %PRODUCTNAME% %PRODUCTVERSION%(r)en erroreen berri emateko tresnara"
 
 #: source/all/crashrep.ulf#%WELCOME_BODY1%
 msgid  "This error report tool gathers information about how %PRODUCTNAME% is working and sends it to Apache OpenOffice to help improve future versions.\n\n"
@@ -45,7 +45,7 @@ msgstr ""
 
 #: source/all/crashrep.ulf#%WELCOME_BODY2%
 msgid  "It's easy - just send the report without any further effort on your part by clicking 'Send' in the next dialog, or you can briefly describe how the error occurred and then click 'Send'. If you want to see the report, click the 'Show Report' button. No data will be sent if you click 'Do Not Send'.\n\n"
-msgstr ""
+msgstr "Erraza da; txostena bidaltzeko ez duzu esfortzu handirik egin behar, nahikoa da hurrengo elkarrizketa-koadroko 'Bidali' botoian klik egitea, edo, bestela, errorea nola gertatu den labur deskriba dezakezu, eta gero, sakatu 'Bidali'. Txostena ikusi nahi baduzu, sakatu 'Erakutsi txostena' botoia. 'Ez bidali' sakatzen baduzu, ez da daturik bidaliko.\n\n"
 
 #: source/all/crashrep.ulf#%WELCOME_BODY3%
 msgid  "Customer Privacy\nThe information gathered is limited to data concerning the state of %PRODUCTNAME% %PRODUCTVERSION% when the error occurred. Other information about passwords or document contents is not collected.\n\nThe information will only be used to improve the quality of %PRODUCTNAME% and will not be shared with third parties.\nFor more information on Apache OpenOffice's privacy policy, visit\n"
@@ -81,7 +81,7 @@ msgstr ""
 
 #: source/all/crashrep.ulf#%ENTER_TITLE%
 msgid  "Which type of document (e.g. presentation) were you using when the error occurred?"
-msgstr ""
+msgstr "Zer dokumentu mota (adibidez, aurkezpena) ari zinen erabiltzen errorea gertatu denean?"
 
 #: source/all/crashrep.ulf#%ALLOW_CONTACT%
 msgid  "~I allow Apache OpenOffice to contact me regarding this report."
@@ -121,23 +121,23 @@ msgstr "Gorde txostena hemen:"
 
 #: source/all/crashrep.ulf#%ERROR_MSG_SIMPLE_MAPI%
 msgid  "The error report could not be sent because the default e-mail program does not support MAPI.\n Please use a MAPI-compatible e-mail program."
-msgstr ""
+msgstr "Errore-txostena ezin izan da bidali, posta elektronikoko programa lehenetsiak ez baitu MAPI onartzen.\nErabili MAPIrekin bateragarria den posta elektronikoko programa."
 
 #: source/all/crashrep.ulf#%ERROR_MSG_DISK_FULL%
 msgid  "The error report could not be temporarily saved and could therefore not be sent."
-msgstr ""
+msgstr "Errore-txostena ezin izan da aldi baterako gorde, eta horregatik, ezin izan da bidali."
 
 #: source/all/crashrep.ulf#%ERROR_MSG_SENDMAIL%
 msgid  "The error report could not be sent because 'sendmail' could not be started.\nPlease check the 'sendmail' settings."
-msgstr ""
+msgstr "Errore-txostena ezin izan da bidali, 'sendmail' ezin izan baita abiarazi.\nEgiaztatu 'sendmail' ezarpenak."
 
 #: source/all/crashrep.ulf#%ERROR_MSG_PROXY%
 msgid  "The error report could not be sent. Please check the proxy settings under 'Options' in the Error Report Tool."
-msgstr ""
+msgstr "Errore-txostena ezin izan da bidali. Egiaztatu proxy ezarpenak erroreen berri emateko tresnaren 'Aukerak' atalean."
 
 #: source/all/crashrep.ulf#%ERROR_MSG_NOCONNECT%
 msgid  "The error report could not be sent because there is no Internet connection. Please check your Internet settings."
-msgstr ""
+msgstr "Errore-txostena ezin izan da bidali, ez baitago Internet konexiorik. Egiaztatu Interneteko ezarpenak."
 
 #: source/all/crashrep.ulf#%OPTIONS_BUTTON%
 msgid  "~Options..."
@@ -173,7 +173,7 @@ msgstr "~Ataka"
 
 #: source/all/crashrep.ulf#%PROXY_SETTINGS_DESCRIPTION%
 msgid  "The %PRODUCTNAME% Error Report tool needs to be connected to the Internet to be able to send error reports.\n\nCompanies often use proxy servers in conjunction with a firewall to protect the network.\n\nIf this applies to your situation, you have to specify the address and port for the server."
-msgstr ""
+msgstr "%PRODUCTNAME% aplikazioaren erroreen berri emateko tresnak Internet konexioa behar du errore-txostenak bidaltzeko.\n\nEnpresek sarritan proxy zerbitzariak suebakiekin batera erabiltzen dituzte sarea babesteko.\n\nZure kasuan ere hala bada, zerbitzariaren helbidea eta ataka zehaztu behar dituzu."
 
 #: source/all/crashrep.ulf#%SENDING_REPORT_HEADER%
 msgid  "Sending Error Report"
@@ -201,8 +201,8 @@ msgstr "-p <prozesu IDa>"
 
 #: source/all/crashrep.ulf#%MSG_PARAM_PROCESSID_DESCRIPTION%
 msgid  "Assigns the %PRODUCTNAME% process ID (PID) to the Error Report Tool"
-msgstr ""
+msgstr "Erroreen berri emateko tresnari %PRODUCTNAME% aplikazioaren prozesu IDa (PID) esleitzen dio"
 
 #: source/all/crashrep.ulf#%MSG_PARAM_HELP_DESCRIPTION%
 msgid  "Shows this help text.\nDetailed information can be found in the Setup Guide."
-msgstr ""
+msgstr "Laguntza-testu hau erakusten du.\nInformazio xehea Instalazio Gidan aurkitu dezakezu."

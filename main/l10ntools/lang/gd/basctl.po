@@ -137,7 +137,7 @@ msgstr "Sàbhail"
 
 #: source/basicide/basidesh.src#RID_STR_SOURCETOBIG.String.Text
 msgid  "The source text is too large and can be neither compiled nor saved.\nDelete some of the comments or transfer some methods into another module."
-msgstr ""
+msgstr "Tha tùs-teacsa ro mhòr 's cha ghabh a thrusadh no a shàbhaladh.\nSguab às cuid dhe na beachdan no gluais cuid dhe na dòighean gu mòideal eile."
 
 #: source/basicide/basidesh.src#RID_STR_ERROROPENSTORAGE.String.Text
 msgid  "Error opening file"
@@ -201,7 +201,7 @@ msgstr "Tha am faidhle 'XX' ann mu thràth"
 
 #: source/basicide/basidesh.src#RID_STR_CANNOTRUNMACRO.String.Text
 msgid  "For security reasons, you cannot run this macro.\n\nFor more information, check the security settings."
-msgstr ""
+msgstr "Chan urrainn dhut am macro seo a ruith air sgàth adhabharan tèarainteachd.\n\nAirson barrachd fiosrachaidh, cuir sùil air na roghainnean tèarainteachd."
 
 #: source/basicide/basidesh.src#RID_STR_COMPILEERROR.String.Text
 msgid  "Compile Error: "
@@ -217,7 +217,7 @@ msgstr "Cha deach an iuchair-luirg a lorg"
 
 #: source/basicide/basidesh.src#RID_STR_SEARCHFROMSTART.String.Text
 msgid  "Search to last module complete. Continue at first module?"
-msgstr ""
+msgstr "Deiseil leis an lorg gun mhòideal mu dheireadh. A bheil thu airson leantainn ort on chiad mhòideal?"
 
 #: source/basicide/basidesh.src#RID_STR_SEARCHREPLACES.String.Text
 msgid  "Search key replaced XX times"
@@ -373,7 +373,7 @@ msgstr "Tha agad ri ainm a chur a-steach."
 
 #: source/basicide/basidesh.src#RID_STR_WILLSTOPPRG.String.Text
 msgid  "You will have to restart the program after this edit.\nContinue?"
-msgstr ""
+msgstr "Bi agad ris am prògram ath-thòiseachadh as dèidh an deasachaidh seo.\nA bheil thu airson leantainn ort?"
 
 #: source/basicide/basidesh.src#RID_STR_SEARCHALLMODULES.String.Text
 msgid  "Do you want to replace the text in all active modules?"
@@ -509,7 +509,7 @@ msgstr "An còmhradh ion-phortaidh - Ainm 'ga chleachdadh mu thràth"
 
 #: source/basicide/basidesh.src#RID_STR_DLGIMP_CLASH_TEXT.String.Text
 msgid  "The library already contains a dialog with the name:\n\n$(ARG1)\n\nRename dialog to keep current dialog or replace existing dialog.\n "
-msgstr ""
+msgstr "Tha còmhradh ann air a bheil an t-ainm a leanas mu thràth:\n\n$(ARG1)\n\nCuir ainm eile air gus an còmhradh làithreach a ghlèidheadh no cuir an àite a' chòmhraidh làithrich.\n "
 
 #: source/basicide/basidesh.src#RID_STR_DLGIMP_MISMATCH_ADD.String.Text
 msgid  "Add"
@@ -525,7 +525,7 @@ msgstr "An còmhradh ion-phortaidh - Droch mhaids cànain"
 
 #: source/basicide/basidesh.src#RID_STR_DLGIMP_MISMATCH_TEXT.String.Text
 msgid  "The dialog to be imported supports other languages than the target library.\n\nAdd these languages to the library to keep additional language resources provided by the dialog or omit them to stay with the current library languages.\n\nNote: For languages not supported by the dialog the resources of the dialog's default language will be used.\n "
-msgstr ""
+msgstr "Tha an còmhradh a tha ri ion-phortadh a' cur taic ri cànain eile na an leabharlann-uidhe.\n\nCuir na cànain seo ris an leabharlann gus na goireasan cànain a bharrachd seo (a tha sa chòmhradh) a ghlèidheadh no fàg às iad ma tha thu airson cànain làithreach na leabharlainne a chumail.\n\nAire: Thèid goireasan cànan bunaiteach a' chòmhraidh a chleachdadh airson cànain nach eil taic ann thuca leis a' chòmhradh.\n "
 
 #: source/basicide/basicprint.src#RID_PRINTDLG_STRLIST.item1.ItemList.item
 msgid  "Print range"
@@ -721,7 +721,7 @@ msgstr "Às-phortaich mar l~eudachan"
 
 #: source/basicide/moduldlg.src#RID_DLG_EXPORT.RB_EXPORTASBASIC.RadioButton.Text
 msgid  "Export as BASIC library"
-msgstr "Às-phortaich leabhar-lann BASIC"
+msgstr "Às-phortaich mar leabhar-lann BASIC"
 
 #: source/basicide/moduldlg.src#RID_STR_EXPORTPACKAGE.String.Text
 msgid  "Export library as extension"
@@ -757,7 +757,7 @@ msgstr "Bun-roghainn"
 
 #: source/dlged/managelang.src#RID_DLG_MANAGE_LANGUAGE.FT_INFO.FixedText.Text
 msgid  "The default language is used if no localization for a user interface locale is present. Furthermore all strings from the default language are copied to resources of newly added languages."
-msgstr ""
+msgstr "Thèid an cànan bunaiteach a chleachdadh mur eil eadar-theangachadh ann an cànan an sgeama ionadail. A bharrachd air sin, thèid lethbhreac de gach sreang sa chànan bhunaiteach a chur ri goireasan de chànain a chaidh a chur ris."
 
 #: source/dlged/managelang.src#RID_DLG_MANAGE_LANGUAGE.PB_CLOSE.OKButton.Text
 msgid  "~Close"
@@ -781,7 +781,7 @@ msgstr "Sguab às goireasan a' chànain"
 
 #: source/dlged/managelang.src#RID_QRYBOX_LANGUAGE.QueryBox.Message
 msgid  "You are about to delete the resources for the selected language(s). All user interface strings for this language(s) will be deleted.\n\nDo you want to delete the resources of the selected language(s)?"
-msgstr ""
+msgstr "Tha thu an impis sguabadh às nan goireasan sa chànan a thagh thu. Thèid gach sreang dhen eadar-aghaidh sa chànan sin a sguabadh às.\n\nA bheil thu airson goireasan a' chànain a thagh thu a sguabadh às?"
 
 #: source/dlged/managelang.src#RID_DLG_SETDEF_LANGUAGE.ModalDialog.Text
 msgid  "Set Default User Interface Language"
@@ -793,7 +793,7 @@ msgstr "An cànan bunaiteach"
 
 #: source/dlged/managelang.src#RID_DLG_SETDEF_LANGUAGE.FT_DEF_INFO.FixedText.Text
 msgid  "Select a language to define the default user interface language. All currently present strings will be assigned to the resources created for the selected language."
-msgstr ""
+msgstr "Tagh cànan gus cànan bunaiteach a thaghadh airson eadar-aghaidh a' chleachdaiche. Thèid gach sreang a tha ann an-dràsta a cheangal ris na goireasan a thèid a chruthachadh airson a' chànain a thagh thu."
 
 #: source/dlged/managelang.src#RID_DLG_SETDEF_LANGUAGE.STR_ADDLANG_TITLE.String.Text
 msgid  "Add User Interface Languages"
@@ -805,7 +805,7 @@ msgstr "Cànain a tha ri fhaighinn"
 
 #: source/dlged/managelang.src#RID_DLG_SETDEF_LANGUAGE.STR_ADDLANG_INFO.String.Text
 msgid  "Select languages to be added. Resources for these languages will be created in the library. Strings of the current default user interface language will be copied to these new resources by default."
-msgstr ""
+msgstr "Tagh na cànain a tha thu airson a chur ris. Thèid goireasan airson nan cànan sin a chruthachadh san learbharlann. Thèid lethbhreacan de shreangan a' chànain làithrich a chur ris na goireasan ùra seo a ghnàth."
 
 #: source/dlged/dlgresid.src#RID_STR_BRWTITLE_PROPERTIES.String.Text
 msgid  "Properties: "

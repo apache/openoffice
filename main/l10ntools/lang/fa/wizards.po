@@ -49,7 +49,7 @@ msgstr "~تبدیل"
 
 #: source/euro/euro.src#STEP_ZERO + 4.String.Text
 msgid  "Note: Currency amounts from external links and currency conversion factors in formulas cannot be converted."
-msgstr ""
+msgstr "توجه: مقادیر ارز از پیوندهای خارجی و عوامل تبدیل واحد پول به صورت فرمول، تبدیل نمی‌شوند."
 
 #: source/euro/euro.src#STEP_ZERO + 5.String.Text
 msgid  "First, unprotect all sheets."
@@ -153,7 +153,7 @@ msgstr "وضعیت تبدیل قالب‌های خانه:"
 
 #: source/euro/euro.src#STATUSLINE + 2.String.Text
 msgid  "Registration of the relevant ranges: Sheet %1Number%1 of %2TotPageCount%2"
-msgstr ""
+msgstr "ثبت محدوده‌های مربوط: برگهٔ %1Number%1 از %2TotPageCount%2"
 
 #: source/euro/euro.src#STATUSLINE + 3.String.Text
 msgid  "Entry of the ranges to be converted..."
@@ -225,7 +225,7 @@ msgstr ""
 
 #: source/euro/euro.src#MESSAGES + 14.String.Text
 msgid  "Please note that the Euro Converter will, otherwise, not be able to edit this document!"
-msgstr ""
+msgstr "لطفاً توجه داشته باشید که در غیر این صورت مبدل یورو قادر به ویرایش این نوشتار نخواهد بود."
 
 #: source/euro/euro.src#MESSAGES + 15.String.Text
 msgid  "Please choose a currency to be converted first!"
@@ -361,35 +361,35 @@ msgstr "برگه همیشه در حالت محافظت نشده است"
 
 #: source/formwizard/dbwizres.src#RID_COMMON_START + 0.String.Text
 msgid  "The directory '%1' could not be created.<BR>There may not be enough space left on your hard disk."
-msgstr ""
+msgstr "نمی‌توان شاخهٔ «%1» را ایجاد کرد.<BR>ممکن است فضای کافی در دیسک سخت شما باقی نمانده باشد."
 
 #: source/formwizard/dbwizres.src#RID_COMMON_START + 1.String.Text
 msgid  "The text document could not be created.<BR>Please check if the module 'PRODUCTNAME Writer' is installed."
-msgstr ""
+msgstr "نمی‌توان نوشتار را ایجاد کرد.<BR>لطفاً بررسی کنید که پیمانهٔ ««کاتب PRODUCTNAME» نصب شده باشد."
 
 #: source/formwizard/dbwizres.src#RID_COMMON_START + 2.String.Text
 msgid  "The spreadsheet could not be created.<BR>Please check if the module 'PRODUCTNAME Calc' is installed."
-msgstr ""
+msgstr "نمی‌توان صفحه‌گسترده را ایجاد کرد.<BR>لطفاً بررسی کنید که پیمانهٔ ««محاسب PRODUCTNAME» نصب شده باشد."
 
 #: source/formwizard/dbwizres.src#RID_COMMON_START + 3.String.Text
 msgid  "The presentation could not be created.<BR>Please check if the module 'PRODUCTNAME Impress' is installed."
-msgstr ""
+msgstr "نمی‌توان ارائه را ایجاد کرد.<BR>لطفاً بررسی کنید که پیمانهٔ ««جلوهٔ PRODUCTNAME» نصب شده باشد."
 
 #: source/formwizard/dbwizres.src#RID_COMMON_START + 4.String.Text
 msgid  "The drawing could not be created.<BR>Please check if the module 'PRODUCTNAME Draw' is installed."
-msgstr ""
+msgstr "نمی‌توان نقاشی را ایجاد کرد.<BR>لطفاً بررسی کنید که پیمانهٔ ««نقاش PRODUCTNAME» نصب شده باشد."
 
 #: source/formwizard/dbwizres.src#RID_COMMON_START + 5.String.Text
 msgid  "The formula could not be created.<BR>Please check if the module 'PRODUCTNAME Math' is installed."
-msgstr ""
+msgstr "نمی‌توان فرمول را ایجاد کرد.<BR>لطفاً بررسی کنید که پیمانهٔ ««ریاضی PRODUCTNAME» نصب شده باشد."
 
 #: source/formwizard/dbwizres.src#RID_COMMON_START + 6.String.Text
 msgid  "The files required could not be found.<BR>Please start the %PRODUCTNAME Setup and choose 'Repair'."
-msgstr ""
+msgstr "پرونده‌های مورد نیاز پیدا نشدند.<BR>لطفاً برنامهٔ برپاسازی %PRODUCTNAME» را آغاز کرده و «تعمیر» را انتخاب کنید."
 
 #: source/formwizard/dbwizres.src#RID_COMMON_START + 7.String.Text
 msgid  "The file '<PATH>' already exists.<BR><BR>Would you like to overwrite the existing file?"
-msgstr ""
+msgstr "پروندهٔ «<PATH>» از قبل وجود دارد.<BR><BR>آیا می‌خواهید روی پروندهٔ موجود بنویسید؟"
 
 #: source/formwizard/dbwizres.src#RID_COMMON_START + 8.String.Text
 msgid  "Yes"
@@ -473,7 +473,7 @@ msgstr "~نام جدول"
 
 #: source/formwizard/dbwizres.src#RID_DB_COMMON_START + 6.String.Text
 msgid  "An error occurred while running the wizard. The wizard will be terminated."
-msgstr ""
+msgstr "در حین اجرای راهنمای گام به گام خطایی رخ داد. راهنمای گام به گام پایان می‌یابد."
 
 #: source/formwizard/dbwizres.src#RID_DB_COMMON_START + 14.String.Text
 msgid  "No connection to the database could be established."
@@ -3142,32 +3142,26 @@ msgid  "Move down"
 msgstr "حرکت به پایین"
 
 #: source/importwizard/importwi.src#sHelpButton.String.Text
-#, fuzzy
 msgid  "~Help"
 msgstr "~راهنما"
 
 #: source/importwizard/importwi.src#sCancelButton.String.Text
-#, fuzzy
 msgid  "~Cancel"
 msgstr "ان~صراف"
 
 #: source/importwizard/importwi.src#sBackButton.String.Text
-#, fuzzy
 msgid  "<< ~Back"
 msgstr "<< ~عقب"
 
 #: source/importwizard/importwi.src#sNextButton.String.Text
-#, fuzzy
 msgid  "Ne~xt >>"
 msgstr "~بعد >>"
 
 #: source/importwizard/importwi.src#sBeginButton.String.Text
-#, fuzzy
 msgid  "~Convert"
 msgstr "~تبدیل"
 
 #: source/importwizard/importwi.src#sCloseButton.String.Text
-#, fuzzy
 msgid  "~Close"
 msgstr "ب~ستن"
 
@@ -3177,210 +3171,169 @@ msgstr ""
 
 #: source/importwizard/importwi.src#sWelcometextLabel2.String.Text
 msgid  "Please note that when converting Microsoft documents any attached VBA macros lose their functionality."
-msgstr ""
+msgstr "لطفاً توجه داشته باشید که هنگام تبدیل نوشتارهای مایکروسافت ماکروهای VBA از کار می‌افتند."
 
 #: source/importwizard/importwi.src#sWelcometextLabel3.String.Text
-#, fuzzy
 msgid  "Select the document type for conversion:"
 msgstr "نوع نوشتاری که می‌خواهید تبدیل شود را انتخاب کنید:"
 
 #: source/importwizard/importwi.src#sMSTemplateCheckbox_1_.String.Text
-#, fuzzy
 msgid  "Word templates"
 msgstr "قالب وُرد"
 
 #: source/importwizard/importwi.src#sMSTemplateCheckbox_2_.String.Text
-#, fuzzy
 msgid  "Excel templates"
 msgstr "قالب اِکسل"
 
 #: source/importwizard/importwi.src#sMSTemplateCheckbox_3_.String.Text
-#, fuzzy
 msgid  "PowerPoint templates"
 msgstr "قالب پاورپوینت"
 
 #: source/importwizard/importwi.src#sMSDocumentCheckbox_1_.String.Text
-#, fuzzy
 msgid  "Word documents"
 msgstr "نوشتار وُرد"
 
 #: source/importwizard/importwi.src#sMSDocumentCheckbox_2_.String.Text
-#, fuzzy
 msgid  "Excel documents"
 msgstr "نوشتار اِکسل"
 
 #: source/importwizard/importwi.src#sMSDocumentCheckbox_3_.String.Text
-#, fuzzy
 msgid  "PowerPoint documents"
 msgstr "نوشتار پاورپوینت"
 
 #: source/importwizard/importwi.src#sSearchInSubDir.String.Text
-#, fuzzy
 msgid  "Including subdirectories"
 msgstr "شامل زیرشاخه‌ها"
 
 #: source/importwizard/importwi.src#sMSContainerName.String.Text
-#, fuzzy
 msgid  "Microsoft Office"
 msgstr "آفیس مایکروسافت"
 
 #: source/importwizard/importwi.src#sSummaryHeader.String.Text
-#, fuzzy
 msgid  "Summary:"
 msgstr "خلاصه:"
 
 #: source/importwizard/importwi.src#sTextImportLabel.String.Text
-#, fuzzy
 msgid  "Import from:"
 msgstr "وارد کردن از:"
 
 #: source/importwizard/importwi.src#sTextExportLabel.String.Text
-#, fuzzy
 msgid  "Save to:"
 msgstr "ذخیره در:"
 
 #: source/importwizard/importwi.src#sGroupnameDefault.String.Text
-#, fuzzy
 msgid  "Imported_Templates"
 msgstr "قالب‌های وارد شده"
 
 #: source/importwizard/importwi.src#sProgressDesc1.String.Text
-#, fuzzy
 msgid  "Progress: "
 msgstr "پیشرفت: "
 
 #: source/importwizard/importwi.src#sProgressOneDoc.String.Text
-#, fuzzy
 msgid  "Document"
 msgstr "نوشتار"
 
 #: source/importwizard/importwi.src#sProgressMoreDocs.String.Text
-#, fuzzy
 msgid  "Documents"
 msgstr "نوشتار"
 
 #: source/importwizard/importwi.src#sProgressMoreTemplates.String.Text
-#, fuzzy
 msgid  "Templates"
 msgstr "قالب"
 
 #: source/importwizard/importwi.src#sNoDirCreation.String.Text
-#, fuzzy
 msgid  "The '%1' directory cannot be created: "
 msgstr "نمی‌توان شاخهٔ «%1» را ایجاد کرد: "
 
 #: source/importwizard/importwi.src#sMsgDirNotThere.String.Text
-#, fuzzy
 msgid  "The '%1' directory does not exist."
 msgstr "شاخهٔ «%1» وجود ندارد."
 
 #: source/importwizard/importwi.src#sQueryfornewCreation.String.Text
-#, fuzzy
 msgid  "Do you want to create it now?"
 msgstr "آیا می‌خواهید الان ایجادش کنید؟"
 
 #: source/importwizard/importwi.src#sFileExists.String.Text
-#, fuzzy
 msgid  "The '<1>' file already exists.<CR>Do you want to overwrite it?"
 msgstr "پرونده‌ٔ «<1>» از قبل وجود دارد.<CR>آیا می‌خواهید روی آن بنویسید؟"
 
 #: source/importwizard/importwi.src#sMorePathsError3.String.Text
-#, fuzzy
 msgid  "Directories do not exist"
 msgstr "شاخه‌ها وجود ندارند"
 
 #: source/importwizard/importwi.src#sOverwriteallFiles.String.Text
-#, fuzzy
 msgid  "Do you want to overwrite documents without being asked?"
 msgstr "آیا می‌خواهید بدون سؤال روی نوشتارهای قدیمی نوشته شود؟"
 
 #: source/importwizard/importwi.src#sreeditMacro.String.Text
-#, fuzzy
 msgid  "Document macro has to be revised."
 msgstr "ماکروی نوشتار باید اصلاح شود."
 
 #: source/importwizard/importwi.src#scouldNotsaveDocument.String.Text
-#, fuzzy
 msgid  "Document '<1>' could not be saved."
 msgstr "نوشتار «<1>» ذخیره نشد."
 
 #: source/importwizard/importwi.src#scouldNotopenDocument.String.Text
-#, fuzzy
 msgid  "Document '<1>' could not be opened."
 msgstr "نوشتار «<1> باز نشد."
 
 #: source/importwizard/importwi.src#sConvertError1.String.Text
-#, fuzzy
 msgid  "Do you really want to terminate conversion at this point?"
 msgstr "آیا واقعاً می‌خواهید تبدیل نوشتارها را همین‌جا رها کنید؟"
 
 #: source/importwizard/importwi.src#sConvertError2.String.Text
-#, fuzzy
 msgid  "Cancel Wizard"
 msgstr "انصراف و ترک راهنما"
 
 #: source/importwizard/importwi.src#sRTErrorDesc.String.Text
-#, fuzzy
 msgid  "An unexpected error has occurred in the wizard."
 msgstr "خطای غیرمنتظره‌ای در راهنمای گام به گام رخ داده است."
 
 #: source/importwizard/importwi.src#sRTErrorHeader.String.Text
-#, fuzzy
 msgid  "Error"
 msgstr "خطا"
 
 #: source/importwizard/importwi.src#sPathDialogMessage.String.Text
-#, fuzzy
 msgid  "Select a directory"
 msgstr "یک شاخه انتخاب کنید"
 
 #: source/importwizard/importwi.src#sDialogTitle.String.Text
-#, fuzzy
 msgid  "Document Converter"
 msgstr "مبدل نوشتار"
 
 #: source/importwizard/importwi.src#sProgressPage1.String.Text
-#, fuzzy
 msgid  "Progress"
 msgstr "پیشرفت"
 
 #: source/importwizard/importwi.src#sProgressPage2.String.Text
-#, fuzzy
 msgid  "Retrieving the relevant documents:"
 msgstr "در حال بازیابی نوشتارهای مربوط:"
 
 #: source/importwizard/importwi.src#sProgressPage3.String.Text
-#, fuzzy
 msgid  "Converting the documents"
 msgstr "در حال تبدیل نوشتارهاغ"
 
 #: source/importwizard/importwi.src#sProgressFound.String.Text
-#, fuzzy
 msgid  "Found:"
 msgstr "موارد پیدا شده:"
 
 #: source/importwizard/importwi.src#sProgressPage5.String.Text
-#, fuzzy
 msgid  "%1 found"
 msgstr "%1 پیدا شد"
 
 #: source/importwizard/importwi.src#sReady.String.Text
-#, fuzzy
 msgid  "Finished"
 msgstr "تمام شد"
 
 #: source/importwizard/importwi.src#sXMLTemplateCheckbox_1_.String.Text
-#, fuzzy
 msgid  "Text templates"
 msgstr "قالب متنی"
 
 #: source/importwizard/importwi.src#sXMLTemplateCheckbox_2_.String.Text
-#, fuzzy
 msgid  "Spreadsheet templates"
 msgstr "قالب صفحه‌گسترده"
 
 #: source/importwizard/importwi.src#sXMLTemplateCheckbox_3_.String.Text
-#, fuzzy
 msgid  "Drawing/presentation templates"
 msgstr "قالب نقاشی/ارائه"
 
@@ -3460,60 +3413,74 @@ msgid  "These will be exported to the following directory:"
 msgstr "این موارد به شاخهٔ زیر صادر خواهند شد:"
 
 #: source/importwizard/importwi.src#sSumSOTextDocuments.String.Text
+#, fuzzy
 msgid  "All %PRODUCTNAME text documents contained in the following directory will be imported:"
-msgstr ""
+msgstr "همهٔ نوشتارهای متنی %PRODUCTNAME موجود در این شاخه وارد خواهند شد:"
 
 #: source/importwizard/importwi.src#sSumSOTableDocuments.String.Text
+#, fuzzy
 msgid  "All %PRODUCTNAME spreadsheets contained in the following directory will be imported:"
-msgstr ""
+msgstr "همهٔ صفحه‌گسترده‌های %PRODUCTNAME موجود در این شاخه وارد خواهند شد:"
 
 #: source/importwizard/importwi.src#sSumSODrawDocuments.String.Text
+#, fuzzy
 msgid  "All %PRODUCTNAME drawing and presentation documents contained in the following directory will be imported:"
-msgstr ""
+msgstr "همهٔ نقاشی‌ها و ارائه‌های %PRODUCTNAME موجود در این شاخه وارد خواهند شد:"
 
 #: source/importwizard/importwi.src#sSumSOMathDocuments.String.Text
+#, fuzzy
 msgid  "All %PRODUCTNAME formula documents contained in the following directory will be imported:"
-msgstr ""
+msgstr "همهٔ نوشتارهای فرمول‌دار %PRODUCTNAME موجود در این شاخه وارد خواهند شد:"
 
 #: source/importwizard/importwi.src#sSumSOTextTemplates.String.Text
+#, fuzzy
 msgid  "All %PRODUCTNAME text templates contained in the following directory will be imported:"
-msgstr ""
+msgstr "همهٔ قالب‌های متنی %PRODUCTNAME موجود در این شاخه وارد خواهند شد:"
 
 #: source/importwizard/importwi.src#sSumSOTableTemplates.String.Text
+#, fuzzy
 msgid  "All %PRODUCTNAME table templates contained in the following directory will be imported:"
-msgstr ""
+msgstr "همهٔ قالب‌های جدول %PRODUCTNAME موجود در این شاخه وارد خواهند شد:"
 
 #: source/importwizard/importwi.src#sSumSODrawTemplates.String.Text
+#, fuzzy
 msgid  "All %PRODUCTNAME drawing and presentation templates contained in the following directory will be imported:"
-msgstr ""
+msgstr "همهٔ قالب‌های نقاشی و ارائهٔ %PRODUCTNAME موجود در این شاخه وارد خواهند شد:"
 
 #: source/importwizard/importwi.src#sSumSOGlobalDocuments.String.Text
+#, fuzzy
 msgid  "All %PRODUCTNAME master documents contained in the following directory will be imported:"
-msgstr ""
+msgstr "همهٔ نوشتارهای اصلی %PRODUCTNAME موجود در این شاخه وارد خواهند شد:"
 
 #: source/importwizard/importwi.src#sSumMSTextDocuments.String.Text
+#, fuzzy
 msgid  "All Word documents contained in the following directory will be imported:"
-msgstr ""
+msgstr "همهٔ نوشتارهای وُرد موجود در این شاخه وارد خواهند شد:"
 
 #: source/importwizard/importwi.src#sSumMSTableDocuments.String.Text
+#, fuzzy
 msgid  "All Excel documents contained in the following directory will be imported:"
-msgstr ""
+msgstr "همهٔ نوشتارهای اِکسل موجود در این شاخه وارد خواهند شد:"
 
 #: source/importwizard/importwi.src#sSumMSDrawDocuments.String.Text
+#, fuzzy
 msgid  "All PowerPoint documents contained in the following directory will be imported:"
-msgstr ""
+msgstr "همهٔ نوشتارهای پاورپوینت موجود در این شاخه وارد خواهند شد:"
 
 #: source/importwizard/importwi.src#sSumMSTextTemplates.String.Text
+#, fuzzy
 msgid  "All Word templates contained in the following directory will be imported:"
-msgstr ""
+msgstr "همهٔ قالب‌های وُرد موجود در این شاخه وارد خواهند شد:"
 
 #: source/importwizard/importwi.src#sSumMSTableTemplates.String.Text
+#, fuzzy
 msgid  "All Excel templates contained in the following directory will be imported:"
-msgstr ""
+msgstr "همهٔ قالب‌های اِکسل موجود در این شاخه وارد خواهند شد:"
 
 #: source/importwizard/importwi.src#sSumMSDrawTemplates.String.Text
+#, fuzzy
 msgid  "All PowerPoint templates contained in the following directory will be imported:"
-msgstr ""
+msgstr "همهٔ قالب‌های پاورپوینت موجود در این شاخه وارد خواهند شد:"
 
 #: source/schedule/schedule.src#dlgCalTitle.String.Text
 msgid  "%PRODUCTNAME Calendar"
@@ -3532,17 +3499,14 @@ msgid  "Add Holidays to Calendar"
 msgstr ""
 
 #: source/schedule/schedule.src#dlgOK.String.Text
-#, fuzzy
 msgid  "Create"
 msgstr "ایجاد"
 
 #: source/schedule/schedule.src#dlgCancel.String.Text
-#, fuzzy
 msgid  "Cancel"
 msgstr "انصراف"
 
 #: source/schedule/schedule.src#dlgCalFrameOption.String.Text
-#, fuzzy
 msgid  "Calendar"
 msgstr "تقویم"
 
@@ -3551,7 +3515,6 @@ msgid  "~Year Overview"
 msgstr ""
 
 #: source/schedule/schedule.src#dlgCalOptionMonth.String.Text
-#, fuzzy
 msgid  "~Month"
 msgstr "~ماه"
 
@@ -3568,12 +3531,10 @@ msgid  "Time Frame"
 msgstr ""
 
 #: source/schedule/schedule.src#dlgYear.String.Text
-#, fuzzy
 msgid  "Year"
 msgstr "سال"
 
 #: source/schedule/schedule.src#dlgCalMonth.String.Text
-#, fuzzy
 msgid  "Month"
 msgstr "ما"
 
@@ -3606,12 +3567,10 @@ msgid  "Day"
 msgstr ""
 
 #: source/schedule/schedule.src#dlgCalEventMonth.String.Text
-#, fuzzy
 msgid  "Month"
 msgstr "ما"
 
 #: source/schedule/schedule.src#dlgCalEventYear.String.Text
-#, fuzzy
 msgid  "Year"
 msgstr "سال"
 
@@ -3696,12 +3655,10 @@ msgid  "Weekend"
 msgstr ""
 
 #: source/schedule/schedule.src#nameCalYear.String.Text
-#, fuzzy
 msgid  "Calendar"
 msgstr "تقویم"
 
 #: source/schedule/schedule.src#nameCalMonth.String.Text
-#, fuzzy
 msgid  "Month"
 msgstr "ما"
 
@@ -3711,89 +3668,73 @@ msgstr ""
 
 #: source/template/template.src#SAMPLES.String.Text
 msgid  "In order to use the full functionality of this sample, create a document that is based on this template."
-msgstr ""
+msgstr "اگر می‌خواهید از همهٔ امکانات این نمونه استفاده کنید، نوشتاری بر پایهٔ این قالب ایجاد کنید."
 
 #: source/template/template.src#SAMPLES + 1.String.Text
-#, fuzzy
 msgid  "Remarks"
 msgstr "تذکرات"
 
 #: source/template/template.src#STYLES.String.Text
-#, fuzzy
 msgid  "Theme Selection"
 msgstr "انتخاب تم"
 
 #: source/template/template.src#STYLES + 1.String.Text
 msgid  "Error while saving the document to the clipboard! The following action cannot be undone."
-msgstr ""
+msgstr "خطا در هنگام ذخیره کردن نوشتار در تخته‌گیره! برگرداندن کُنش زیر ممکن نیست."
 
 #: source/template/template.src#STYLES + 2.String.Text
-#, fuzzy
 msgid  "~Cancel"
 msgstr "ان~صراف"
 
 #: source/template/template.src#STYLES + 3.String.Text
-#, fuzzy
 msgid  "~OK"
 msgstr "~تأیید"
 
 #: source/template/template.src#AgendaDlgName.String.Text
-#, fuzzy
 msgid  "Minutes Template"
 msgstr "قالب رئوس مطالب"
 
 #: source/template/template.src#AgendaDlgNoCancel.String.Text
-#, fuzzy
 msgid  "An option must be confirmed."
 msgstr "باید یک گزینه را تأیید کنید."
 
 #: source/template/template.src#AgendaDlgFrame.String.Text
-#, fuzzy
 msgid  "Minutes Type"
 msgstr "نوع رئوس مطالب"
 
 #: source/template/template.src#AgendaDlgButton1.String.Text
-#, fuzzy
 msgid  "Results Minutes"
 msgstr "رئوس نتایج"
 
 #: source/template/template.src#AgendaDlgButton2.String.Text
-#, fuzzy
 msgid  "Evaluation Minutes"
 msgstr "رئوس ارزیابی"
 
 #: source/template/template.src#CorrespondenceNoTextmark.String.Text
-#, fuzzy
 msgid  "The bookmark 'Recipient' is missing."
 msgstr "«گیرندهٔ» نشانک خالی است."
 
 #: source/template/template.src#CorrespondenceNoTextmark+1.String.Text
-#, fuzzy
 msgid  "Form letter fields can not be included."
 msgstr "نمی‌توان فیلدهای حرفی فرم را آورد."
 
 #: source/template/template.src#CorrespondenceMsgError.String.Text
-#, fuzzy
 msgid  "An error has occurred."
 msgstr "خطایی رخ داد."
 
 #: source/template/template.src#CorrespondenceDialog.String.Text
-#, fuzzy
 msgid  "Addressee"
 msgstr "گیرنده"
 
 #: source/template/template.src#CorrespondenceDialog+1.String.Text
-#, fuzzy
 msgid  "One recipient"
 msgstr "یک گیرنده"
 
 #: source/template/template.src#CorrespondenceDialog+2.String.Text
-#, fuzzy
 msgid  "Several recipients (address database)"
 msgstr "چند گیرنده (پایگاه‌دادهٔ نشانی‌ها)"
 
 #: source/template/template.src#CorrespondenceDialog+3.String.Text
-#, fuzzy
 msgid  "Use of This Template"
 msgstr "کاربرد این قالب"
 
@@ -3802,57 +3743,46 @@ msgid  "Click placeholder and overwrite"
 msgstr ""
 
 #: source/template/template.src#CorrespondenceFields+1.String.Text
-#, fuzzy
 msgid  "Company"
 msgstr "شرکت"
 
 #: source/template/template.src#CorrespondenceFields+2.String.Text
-#, fuzzy
 msgid  "Department"
 msgstr "بخش"
 
 #: source/template/template.src#CorrespondenceFields+3.String.Text
-#, fuzzy
 msgid  "First Name"
 msgstr "نام"
 
 #: source/template/template.src#CorrespondenceFields+4.String.Text
-#, fuzzy
 msgid  "Last Name"
 msgstr "نام خانوادگی"
 
 #: source/template/template.src#CorrespondenceFields+5.String.Text
-#, fuzzy
 msgid  "Street"
 msgstr "خیابان"
 
 #: source/template/template.src#CorrespondenceFields+6.String.Text
-#, fuzzy
 msgid  "Country"
 msgstr "کشور"
 
 #: source/template/template.src#CorrespondenceFields+7.String.Text
-#, fuzzy
 msgid  "ZIP/Postal Code"
 msgstr "کد پستی"
 
 #: source/template/template.src#CorrespondenceFields+8.String.Text
-#, fuzzy
 msgid  "City"
 msgstr "شهر"
 
 #: source/template/template.src#CorrespondenceFields+9.String.Text
-#, fuzzy
 msgid  "Title"
 msgstr "عنوان"
 
 #: source/template/template.src#CorrespondenceFields+10.String.Text
-#, fuzzy
 msgid  "Position"
 msgstr "موقعیت"
 
 #: source/template/template.src#CorrespondenceFields+11.String.Text
-#, fuzzy
 msgid  "Form of Address"
 msgstr "فرم نشانی"
 
@@ -3865,131 +3795,105 @@ msgid  "Salutation"
 msgstr ""
 
 #: source/template/template.src#CorrespondenceFields+14.String.Text
-#, fuzzy
 msgid  "Home Phone"
 msgstr "تلفن منزل"
 
 #: source/template/template.src#CorrespondenceFields+15.String.Text
-#, fuzzy
 msgid  "Work Phone"
 msgstr "نلفن محل کار"
 
 #: source/template/template.src#CorrespondenceFields+16.String.Text
-#, fuzzy
 msgid  "Fax"
 msgstr "دورنگار"
 
 #: source/template/template.src#CorrespondenceFields+17.String.Text
-#, fuzzy
 msgid  "E-Mail"
 msgstr "پست الکترونیک"
 
 #: source/template/template.src#CorrespondenceFields+18.String.Text
-#, fuzzy
 msgid  "URL"
 msgstr "نشانی اینترنتی"
 
 #: source/template/template.src#CorrespondenceFields+19.String.Text
-#, fuzzy
 msgid  "Notes"
 msgstr "یادداشت‌ها"
 
 #: source/template/template.src#CorrespondenceFields+20.String.Text
-#, fuzzy
 msgid  "Alt. Field 1"
 msgstr "فیلد جایگزین 1"
 
 #: source/template/template.src#CorrespondenceFields+21.String.Text
-#, fuzzy
 msgid  "Alt. Field 2"
 msgstr "فیلد جایگزین 2"
 
 #: source/template/template.src#CorrespondenceFields+22.String.Text
-#, fuzzy
 msgid  "Alt. Field 3"
 msgstr "فیلد جایگزین 3"
 
 #: source/template/template.src#CorrespondenceFields+23.String.Text
-#, fuzzy
 msgid  "Alt. Field 4"
 msgstr "فیلد جایگزین 4"
 
 #: source/template/template.src#CorrespondenceFields+24.String.Text
-#, fuzzy
 msgid  "ID"
 msgstr "شناسه"
 
 #: source/template/template.src#CorrespondenceFields+25.String.Text
-#, fuzzy
 msgid  "State"
 msgstr "استان"
 
 #: source/template/template.src#CorrespondenceFields+26.String.Text
-#, fuzzy
 msgid  "Office Phone"
 msgstr "تلفن دفتر"
 
 #: source/template/template.src#CorrespondenceFields+27.String.Text
-#, fuzzy
 msgid  "Pager"
 msgstr "پی‌جو"
 
 #: source/template/template.src#CorrespondenceFields+28.String.Text
-#, fuzzy
 msgid  "Mobile Phone"
 msgstr "تلفن همراه"
 
 #: source/template/template.src#CorrespondenceFields+29.String.Text
-#, fuzzy
 msgid  "Other Phone"
 msgstr "تلفن دیگر"
 
 #: source/template/template.src#CorrespondenceFields+30.String.Text
-#, fuzzy
 msgid  "Calendar URL"
 msgstr "نشانی تقویم"
 
 #: source/template/template.src#CorrespondenceFields+31.String.Text
-#, fuzzy
 msgid  "Invite"
 msgstr "دعوت"
 
 #: source/template/template.src#TextField.String.Text
-#, fuzzy
 msgid  "User data field is not defined!"
 msgstr "فیلد داده‌های کاربر تعریف نشده است!"
 
 #: source/template/template.src#Newsletter.String.Text
-#, fuzzy
 msgid  "General layout"
 msgstr "چیدمان کلی"
 
 #: source/template/template.src#Newsletter + 1.String.Text
-#, fuzzy
 msgid  "Default layout"
 msgstr "جیدمان پیش‌فرض"
 
 #: source/template/template.src#Newsletter + 2.String.Text
-#, fuzzy
 msgid  "Commemorative publication layout"
 msgstr "صفحه‌بندی یادمان "
 
 #: source/template/template.src#Newsletter + 3.String.Text
-#, fuzzy
 msgid  "Brochure layout"
 msgstr "صفحه‌بندی بروشور"
 
 #: source/template/template.src#Newsletter + 10.String.Text
-#, fuzzy
 msgid  "Format"
 msgstr "قالب"
 
 #: source/template/template.src#Newsletter + 11.String.Text
-#, fuzzy
 msgid  "Single-sided"
 msgstr "یک‌رو"
 
 #: source/template/template.src#Newsletter + 12.String.Text
-#, fuzzy
 msgid  "Double-sided"
 msgstr "دورو"

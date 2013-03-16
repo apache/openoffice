@@ -65,7 +65,7 @@ msgstr "નામ '#1' પહેલાથી જ હાજર છે અને �
 
 #: source/core/resource/strings.src#RID_STR_ERROR_WRONG_ARGUMENT.String.Text
 msgid  "You tried to set an illegal argument. Please have a look at '#1' for valid arguments."
-msgstr ""
+msgstr "તમે અયોગ્ય દલીલ સુયોજીત કરવાનો પ્રયાસ કર્યો છે. માન્ય દલીલો માટે મહેરબાની કરીને '#1' આગળ જુઓ."
 
 #: source/core/resource/strings.src#RID_STR_ARGUMENT_IS_NULL.String.Text
 msgid  "The element is invalid."
@@ -152,6 +152,11 @@ msgstr "જૂથ હેડર"
 
 #: source/ui/dlg/GroupsSorting.src#RID_GROUPS_SORTING.LST_HEADERLST.Default.StringList.item
 #, fuzzy
+msgid  "Present"
+msgstr "હાજર"
+
+#: source/ui/dlg/GroupsSorting.src#RID_GROUPS_SORTING.LST_HEADERLST.Default.StringList.item
+#, fuzzy
 msgid  "Not present"
 msgstr "હાજર નથી"
 
@@ -159,6 +164,11 @@ msgstr "હાજર નથી"
 #, fuzzy
 msgid  "Group Footer"
 msgstr "જૂથ ફૂટર"
+
+#: source/ui/dlg/GroupsSorting.src#RID_GROUPS_SORTING.LST_FOOTERLST.Default.StringList.item
+#, fuzzy
+msgid  "Present"
+msgstr "હાજર"
 
 #: source/ui/dlg/GroupsSorting.src#RID_GROUPS_SORTING.LST_FOOTERLST.Default.StringList.item
 #, fuzzy
@@ -291,18 +301,9 @@ msgid  "Keep group together on one page?"
 msgstr "શું જૂથને એક પાનાં પર સાથે રાખવું છે?"
 
 #: source/ui/dlg/GroupsSorting.src#STR_RPT_HELP_SORT.String.Text
+#, fuzzy
 msgid  "Select ascending or descending sort order. Ascending means from A to Z or 0 to 9"
-msgstr ""
-
-#: source/ui/dlg/GroupsSorting.src#RID_GROUPS_SORTING.LST_HEADERLST.Default.StringList.item
-#, fuzzy
-msgid  "Present"
-msgstr "હાજર"
-
-#: source/ui/dlg/GroupsSorting.src#RID_GROUPS_SORTING.LST_FOOTERLST.Default.StringList.item
-#, fuzzy
-msgid  "Present"
-msgstr "હાજર"
+msgstr "ચડતો કે ઊતરતો ક્રમ પસંદ કરો. ચડતો એટલે A થી Z અથવા 0 થી 9"
 
 #: source/ui/dlg/PageNumber.src#RID_PAGENUMBERS.ModalDialog.Text
 #, fuzzy
@@ -351,6 +352,16 @@ msgstr "ગોઠવણી:"
 
 #: source/ui/dlg/PageNumber.src#RID_PAGENUMBERS.LST_ALIGNMENT.Default.StringList.item
 #, fuzzy
+msgid  "Left"
+msgstr "ડાબું"
+
+#: source/ui/dlg/PageNumber.src#RID_PAGENUMBERS.LST_ALIGNMENT.Default.StringList.item
+#, fuzzy
+msgid  "Center"
+msgstr "કેન્દ્ર"
+
+#: source/ui/dlg/PageNumber.src#RID_PAGENUMBERS.LST_ALIGNMENT.Default.StringList.item
+#, fuzzy
 msgid  "Right"
 msgstr "જમણું"
 
@@ -365,22 +376,14 @@ msgid  "~Help"
 msgstr "મદદ (~H)"
 
 #: source/ui/dlg/PageNumber.src#STR_RPT_PN_PAGE.String.Text
-msgid  ""Page " & #PAGENUMBER#"
-msgstr ""
+#, fuzzy
+msgid  "\"Page \" & #PAGENUMBER#"
+msgstr "\"પાનું \" & #PAGENUMBER#"
 
 #: source/ui/dlg/PageNumber.src#STR_RPT_PN_PAGE_OF.String.Text
-msgid  " & " of " & #PAGECOUNT#"
-msgstr ""
-
-#: source/ui/dlg/PageNumber.src#RID_PAGENUMBERS.LST_ALIGNMENT.Default.StringList.item
 #, fuzzy
-msgid  "Left"
-msgstr "ડાબું"
-
-#: source/ui/dlg/PageNumber.src#RID_PAGENUMBERS.LST_ALIGNMENT.Default.StringList.item
-#, fuzzy
-msgid  "Center"
-msgstr "કેન્દ્ર"
+msgid  " & \" of \" & #PAGECOUNT#"
+msgstr " & \" નું \" & #PAGECOUNT#"
 
 #: source/ui/dlg/dlgpage.src#RID_PAGEDIALOG_PAGE.TabDialog.Text
 #, fuzzy
@@ -543,82 +546,70 @@ msgid  "Properties..."
 msgstr "ગુણધર્મો..."
 
 #: source/ui/dlg/CondFormat.src#WIN_CONDITION.LB_COND_TYPE.Default.StringList.item
-#, fuzzy
+msgid  "Field Value Is"
+msgstr "ક્ષેત્ર કિંમત છે"
+
+#: source/ui/dlg/CondFormat.src#WIN_CONDITION.LB_COND_TYPE.Default.StringList.item
 msgid  "Expression Is"
 msgstr "સમીકરણ છે"
 
 #: source/ui/dlg/CondFormat.src#WIN_CONDITION.LB_OP.0.StringList.item
-#, fuzzy
 msgid  "between"
 msgstr "વચ્ચે"
 
 #: source/ui/dlg/CondFormat.src#WIN_CONDITION.LB_OP.1.StringList.item
-#, fuzzy
 msgid  "not between"
 msgstr "વચ્ચે નહિં"
 
 #: source/ui/dlg/CondFormat.src#WIN_CONDITION.LB_OP.2.StringList.item
-#, fuzzy
 msgid  "equal to"
 msgstr "ને બરાબર"
 
 #: source/ui/dlg/CondFormat.src#WIN_CONDITION.LB_OP.3.StringList.item
-#, fuzzy
 msgid  "not equal to"
 msgstr "ને બરાબર નથી"
 
 #: source/ui/dlg/CondFormat.src#WIN_CONDITION.LB_OP.4.StringList.item
-#, fuzzy
 msgid  "greater than"
 msgstr "કરતાં મોટું"
 
 #: source/ui/dlg/CondFormat.src#WIN_CONDITION.LB_OP.5.StringList.item
-#, fuzzy
 msgid  "less than"
 msgstr "કરતાં ઓછું"
 
 #: source/ui/dlg/CondFormat.src#WIN_CONDITION.LB_OP.6.StringList.item
-#, fuzzy
 msgid  "greater than or equal to"
 msgstr "કરતાં મોટું અથવા બરાબર"
 
 #: source/ui/dlg/CondFormat.src#WIN_CONDITION.LB_OP.7.StringList.item
-#, fuzzy
 msgid  "less than or equal to"
 msgstr "કરતાં નાનું અથવા બરાબર"
 
 #: source/ui/dlg/CondFormat.src#WIN_CONDITION.FT_AND.FixedText.Text
-#, fuzzy
 msgid  "and"
 msgstr "અને"
 
 #: source/ui/dlg/CondFormat.src#WIN_CONDITION.CRTL_FORMAT_PREVIEW.Window.Text
-#, fuzzy
 msgid  "Example"
 msgstr "ઉદાહરણ"
 
 #: source/ui/dlg/CondFormat.src#RID_CONDFORMAT.ModalDialog.Text
-#, fuzzy
 msgid  "Conditional Formatting"
 msgstr "શરતી બંધારણ"
 
 #: source/ui/dlg/CondFormat.src#RID_CONDFORMAT.PB_HELP.HelpButton.Text
-#, fuzzy
 msgid  "~Help"
 msgstr "મદદ (~H)"
 
 #: source/ui/dlg/CondFormat.src#STR_NUMBERED_CONDITION.String.Text
-#, fuzzy
 msgid  "Condition $number$"
 msgstr "શરત $number$"
 
 #: source/ui/dlg/CondFormat.src#STR_COLOR_WHITE.String.Text
-#, fuzzy
 msgid  "White"
 msgstr "સફેદ"
 
 #: source/ui/dlg/CondFormat.src#STR_CHARCOLOR.String.Text
-#, fuzzy
 msgid  "Font color"
 msgstr "ફોન્ટ રંગ"
 
@@ -658,13 +649,9 @@ msgid  "Help"
 msgstr "મદદ"
 
 #: source/ui/dlg/CondFormat.src#ADDFIELD_HELP_FIELD.FixedText.Text
-msgid  "Highlight the fields to insert into the selected section of the template, then click Insert or press Enter."
-msgstr ""
-
-#: source/ui/dlg/CondFormat.src#WIN_CONDITION.LB_COND_TYPE.Default.StringList.item
 #, fuzzy
-msgid  "Field Value Is"
-msgstr "ક્ષેત્ર કિંમત છે"
+msgid  "Highlight the fields to insert into the selected section of the template, then click Insert or press Enter."
+msgstr "ટેમ્પલેટની પસંદ થયેલ વિભાગમાં દાખલ કરવા માટે ક્ષેત્રોને પ્રકાશિત કરો, પછી દાખલ કરો પર ક્લિક કરો અથવા દાખલ કરો ને દબાવો."
 
 #: source/ui/dlg/DateTime.src#RID_DATETIME_DLG.ModalDialog.Text
 #, fuzzy
@@ -697,864 +684,693 @@ msgid  "~Help"
 msgstr "મદદ (~H)"
 
 #: source/ui/inspection/inspection.src#RID_STR_PROPPAGE_DEFAULT.String.Text
-#, fuzzy
 msgid  "General"
 msgstr "સામાન્ય"
 
 #: source/ui/inspection/inspection.src#RID_STR_PROPPAGE_DATA.String.Text
-#, fuzzy
 msgid  "Data"
 msgstr "માહિતી"
 
 #: source/ui/inspection/inspection.src#RID_STR_BOOL.1.String.Text
-#, fuzzy
 msgid  "No"
 msgstr "ના"
 
 #: source/ui/inspection/inspection.src#RID_STR_BOOL.2.String.Text
-#, fuzzy
 msgid  "Yes"
 msgstr "હા"
 
 #: source/ui/inspection/inspection.src#RID_STR_FORCENEWPAGE.String.Text
-#, fuzzy
 msgid  "Force New Page"
 msgstr "નવું પાનું દબાણ કરો"
 
 #: source/ui/inspection/inspection.src#RID_STR_FORCENEWPAGE_CONST.1.String.Text
-#, fuzzy
 msgid  "None"
 msgstr "કંઇ નહિં"
 
 #: source/ui/inspection/inspection.src#RID_STR_FORCENEWPAGE_CONST.2.String.Text
-#, fuzzy
 msgid  "Before Section"
 msgstr "વિભાગ પહેલા"
 
 #: source/ui/inspection/inspection.src#RID_STR_FORCENEWPAGE_CONST.3.String.Text
-#, fuzzy
 msgid  "After Section"
 msgstr "વિભાગ પછી"
 
 #: source/ui/inspection/inspection.src#RID_STR_FORCENEWPAGE_CONST.4.String.Text
-#, fuzzy
 msgid  "Before & After Section"
 msgstr "વિભાગ પહેલાં અને પછી"
 
 #: source/ui/inspection/inspection.src#RID_STR_NEWROWORCOL.String.Text
-#, fuzzy
 msgid  "New Row Or Column"
 msgstr "નવી હરોળ અથવા સ્તંભ"
 
 #: source/ui/inspection/inspection.src#RID_STR_KEEPTOGETHER.String.Text
-#, fuzzy
 msgid  "Keep Together"
 msgstr "સાથે રાખો"
 
 #: source/ui/inspection/inspection.src#RID_STR_KEEPTOGETHER_CONST.1.String.Text
-#, fuzzy
 msgid  "No"
 msgstr "ના"
 
 #: source/ui/inspection/inspection.src#RID_STR_KEEPTOGETHER_CONST.2.String.Text
-#, fuzzy
 msgid  "Whole Group"
 msgstr "આખુ જૂથ"
 
 #: source/ui/inspection/inspection.src#RID_STR_KEEPTOGETHER_CONST.3.String.Text
-#, fuzzy
 msgid  "With First Detail"
 msgstr "પહેલી વિગત સાથે"
 
 #: source/ui/inspection/inspection.src#RID_STR_CANGROW.String.Text
-#, fuzzy
 msgid  "Can Grow"
 msgstr "વધી શકે"
 
 #: source/ui/inspection/inspection.src#RID_STR_CANSHRINK.String.Text
-#, fuzzy
 msgid  "Can Shrink"
 msgstr "સંકોચાઈ શકે"
 
 #: source/ui/inspection/inspection.src#RID_STR_REPEATSECTION.String.Text
-#, fuzzy
 msgid  "Repeat Section"
 msgstr "પુનરાવર્તન વિભાગ"
 
 #: source/ui/inspection/inspection.src#RID_STR_PRINTREPEATEDVALUES.String.Text
-#, fuzzy
 msgid  "Print repeated values"
 msgstr "પુનરાવર્તિત કિંમતો છાપો"
 
 #: source/ui/inspection/inspection.src#RID_STR_CONDITIONALPRINTEXPRESSION.String.Text
-#, fuzzy
 msgid  "Conditional Print Expression"
 msgstr "શરતી છાપન સમીકરણ"
 
 #: source/ui/inspection/inspection.src#RID_STR_STARTNEWCOLUMN.String.Text
-#, fuzzy
 msgid  "Start new column"
 msgstr "નવો સ્તંભ શરૂ કરો"
 
 #: source/ui/inspection/inspection.src#RID_STR_STARTNEWPAGE.String.Text
-#, fuzzy
 msgid  "Start new page"
 msgstr "નવું પાનું શરૂ કરો"
 
 #: source/ui/inspection/inspection.src#RID_STR_RESETPAGENUMBER.String.Text
-#, fuzzy
 msgid  "Reset page number"
 msgstr "પાનાં નંબર પુનઃસુયોજીત કરો"
 
 #: source/ui/inspection/inspection.src#RID_STR_CHARTTYPE.String.Text
-#, fuzzy
 msgid  "Chart type"
 msgstr "આલેખ નો પ્રકાર"
 
 #: source/ui/inspection/inspection.src#RID_STR_PRINTWHENGROUPCHANGE.String.Text
-#, fuzzy
 msgid  "Print When Group Change"
 msgstr "જ્યારે જૂથ બદલાય ત્યારે છાપો"
 
 #: source/ui/inspection/inspection.src#RID_STR_VISIBLE.String.Text
-#, fuzzy
 msgid  "Visible"
 msgstr "દેખીતું"
 
 #: source/ui/inspection/inspection.src#RID_STR_GROUPKEEPTOGETHER.String.Text
-#, fuzzy
 msgid  "Group keep together"
 msgstr "જૂથ સાથે રાખો"
 
 #: source/ui/inspection/inspection.src#RID_STR_GROUPKEEPTOGETHER_CONST.1.String.Text
-#, fuzzy
 msgid  "Per Page"
 msgstr "પાનું પ્રતિ"
 
 #: source/ui/inspection/inspection.src#RID_STR_GROUPKEEPTOGETHER_CONST.2.String.Text
-#, fuzzy
 msgid  "Per Column"
 msgstr "સ્તંભ પ્રતિ"
 
 #: source/ui/inspection/inspection.src#RID_STR_SECTIONPAGEBREAK_CONST.1.String.Text
-#, fuzzy
 msgid  "None"
 msgstr "કંઇ નહિં"
 
 #: source/ui/inspection/inspection.src#RID_STR_SECTIONPAGEBREAK_CONST.2.String.Text
-#, fuzzy
 msgid  "Section"
 msgstr "વિભાગ"
 
 #: source/ui/inspection/inspection.src#RID_STR_SECTIONPAGEBREAK_CONST.3.String.Text
-#, fuzzy
 msgid  "Automatic"
 msgstr "આપોઆપ"
 
 #: source/ui/inspection/inspection.src#RID_STR_PAGEHEADEROPTION.String.Text
-#, fuzzy
 msgid  "Page header"
 msgstr "પાનાં હેડર"
 
 #: source/ui/inspection/inspection.src#RID_STR_PAGEFOOTEROPTION.String.Text
-#, fuzzy
 msgid  "Page footer"
 msgstr "પાનાં ફૂટર"
 
 #: source/ui/inspection/inspection.src#RID_STR_REPORTPRINTOPTION_CONST.1.String.Text
-#, fuzzy
 msgid  "All Pages"
 msgstr "બધા પાનાંઓ"
 
 #: source/ui/inspection/inspection.src#RID_STR_REPORTPRINTOPTION_CONST.2.String.Text
-#, fuzzy
 msgid  "Not With Report Header"
 msgstr "રિપોર્ટ હેડર સાથે નથી"
 
 #: source/ui/inspection/inspection.src#RID_STR_REPORTPRINTOPTION_CONST.3.String.Text
-#, fuzzy
 msgid  "Not With Report Footer"
 msgstr "રિપોર્ટ ફુટર સાથે નથી"
 
 #: source/ui/inspection/inspection.src#RID_STR_REPORTPRINTOPTION_CONST.4.String.Text
-#, fuzzy
 msgid  "Not With Report Header/Footer"
 msgstr "રિપોર્ટ હેડર/ફુટર સાથે નથી"
 
 #: source/ui/inspection/inspection.src#RID_STR_DEEPTRAVERSING.String.Text
-#, fuzzy
 msgid  "Deep traversing"
 msgstr "ઊંડુ પરિવહન"
 
 #: source/ui/inspection/inspection.src#RID_STR_PREEVALUATED.String.Text
-#, fuzzy
 msgid  "Pre evaluation"
 msgstr "પૂર્વ મૂલ્યાંકન"
 
 #: source/ui/inspection/inspection.src#RID_STR_POSITIONX.String.Text
-#, fuzzy
 msgid  "Position X"
 msgstr "સ્થાન X"
 
 #: source/ui/inspection/inspection.src#RID_STR_POSITIONY.String.Text
-#, fuzzy
 msgid  "Position Y"
 msgstr "સ્થાન Y"
 
 #: source/ui/inspection/inspection.src#RID_STR_WIDTH.String.Text
-#, fuzzy
 msgid  "Width"
 msgstr "પહોળાઈ"
 
 #: source/ui/inspection/inspection.src#RID_STR_HEIGHT.String.Text
-#, fuzzy
 msgid  "Height"
 msgstr "ઊંચાઈ"
 
 #: source/ui/inspection/inspection.src#RID_STR_INITIALFORMULA.String.Text
-#, fuzzy
 msgid  "Initial value"
 msgstr "આરંભિક મૂલ્ય"
 
 #: source/ui/inspection/inspection.src#RID_STR_PRESERVEIRI.String.Text
-#, fuzzy
 msgid  "Preserve as Link"
 msgstr "કડી તરીકે સાચવો"
 
 #: source/ui/inspection/inspection.src#RID_STR_FORMULA.String.Text
-#, fuzzy
 msgid  "Formula"
 msgstr "સૂત્ર"
 
 #: source/ui/inspection/inspection.src#RID_STR_DATAFIELD.String.Text
-#, fuzzy
 msgid  "Data field"
 msgstr "માહિતી ક્ષેત્ર"
 
 #: source/ui/inspection/inspection.src#RID_STR_FONT.String.Text
-#, fuzzy
 msgid  "Font"
 msgstr "ફોન્ટ"
 
 #: source/ui/inspection/inspection.src#RID_STR_BACKCOLOR.String.Text
-#, fuzzy
 msgid  "Background color"
 msgstr "પાશ્વભાગ રંગ"
 
 #: source/ui/inspection/inspection.src#RID_STR_BACKTRANSPARENT.String.Text
-#, fuzzy
 msgid  "Background Transparent"
 msgstr "પાશ્વભાગ પારદર્શક"
 
 #: source/ui/inspection/inspection.src#RID_STR_CONTROLBACKGROUNDTRANSPARENT.String.Text
-#, fuzzy
 msgid  "Background Transparent"
 msgstr "પાશ્વભાગ પારદર્શક"
 
 #: source/ui/inspection/inspection.src#RID_STR_OVERLAP_OTHER_CONTROL.String.Text
-#, fuzzy
 msgid  "This operation is not allowed. The control overlaps with another one."
 msgstr "આ પ્રક્રિયા માન્ય નથી. નિયંત્રણ એકબીજા સાથે ઓવરલેપ થાય છે."
 
 #: source/ui/inspection/inspection.src#RID_STR_ILLEGAL_POSITION.String.Text
-#, fuzzy
 msgid  "This position can not be set. It is invalid."
 msgstr "આ સ્થાન સુયોજિત કરી શકાતું નથી. તે અયોગ્ય છે."
 
 #: source/ui/inspection/inspection.src#RID_STR_SCOPE_GROUP.String.Text
-#, fuzzy
 msgid  "Group: %1"
 msgstr "જૂથ: %1"
 
 #: source/ui/inspection/inspection.src#RID_STR_FORMULALIST.String.Text
-#, fuzzy
 msgid  "Function"
 msgstr "વિધેય"
 
 #: source/ui/inspection/inspection.src#RID_STR_SCOPE.String.Text
-#, fuzzy
 msgid  "Scope"
 msgstr "તક"
 
 #: source/ui/inspection/inspection.src#RID_STR_TYPE.String.Text
-#, fuzzy
 msgid  "Data Field Type"
 msgstr "માહિતી ક્ષેત્ર પ્રકાર"
 
 #: source/ui/inspection/inspection.src#RID_STR_TYPE_CONST.1.String.Text
-#, fuzzy
 msgid  "Field or Formula"
 msgstr "ક્ષેત્ર અથવા સૂત્ર"
 
 #: source/ui/inspection/inspection.src#RID_STR_TYPE_CONST.2.String.Text
-#, fuzzy
 msgid  "Function"
 msgstr "વિધેય"
 
 #: source/ui/inspection/inspection.src#RID_STR_TYPE_CONST.3.String.Text
-#, fuzzy
 msgid  "Counter"
 msgstr "ગણતરી"
 
 #: source/ui/inspection/inspection.src#RID_STR_TYPE_CONST.4.String.Text
-#, fuzzy
 msgid  "User defined Function"
 msgstr "વપરાશકર્તા એ વ્યાખ્યાયિત થયેલ વિધેય"
 
 #: source/ui/inspection/inspection.src#RID_STR_MASTERFIELDS.String.Text
-#, fuzzy
 msgid  "Link master fields"
 msgstr "કડી મૂખ્ય ક્ષેત્રો"
 
 #: source/ui/inspection/inspection.src#RID_STR_DETAILFIELDS.String.Text
-#, fuzzy
 msgid  "Link slave fields"
 msgstr "કડી સ્લેવ ક્ષેત્રો"
 
 #: source/ui/inspection/inspection.src#RID_STR_EXPLANATION.String.Text
 msgid  "Charts can be used to display detailed data about the current record of the report. To do this, you can specify which columns in the chart match which columns in the report."
-msgstr ""
+msgstr "રિપોર્ટ નાં હાલનાં રેકોર્ડ વિશે વિગત થયેલ માહિતી ને દર્શાવવા માટે આલેખો ને વાપરી શકાય છે. આ કરવા માટે, તમે ક્યાં સ્તંભો આલેખમાં અને ક્યાં સ્તંભો રિપોર્ટ માં બંધબેસે છે તેને સ્પષ્ટ કરી શકાય છે."
 
 #: source/ui/inspection/inspection.src#RID_STR_DETAILLABEL.String.Text
-#, fuzzy
 msgid  "Chart"
 msgstr "આલેખ"
 
 #: source/ui/inspection/inspection.src#RID_STR_MASTERLABEL.String.Text
-#, fuzzy
 msgid  "Report"
 msgstr "રિપોર્ટ"
 
 #: source/ui/inspection/inspection.src#RID_STR_PREVIEW_COUNT.String.Text
-#, fuzzy
 msgid  "Preview Row(s)"
 msgstr "હરોળો નું પૂર્વદર્શન"
 
 #: source/ui/inspection/inspection.src#RID_STR_AREA.String.Text
-#, fuzzy
 msgid  "Area"
 msgstr "વિસ્તાર"
 
 #: source/ui/inspection/inspection.src#RID_STR_MIMETYPE.String.Text
-#, fuzzy
 msgid  "Report Output Format"
 msgstr "રિપોર્ટ આઉટપુટ બંધારણ"
 
 #: source/ui/inspection/inspection.src#RID_STR_VERTICALALIGN.String.Text
-#, fuzzy
 msgid  "Vert. Alignment"
 msgstr "ઊભી રેખા"
 
 #: source/ui/inspection/inspection.src#RID_STR_VERTICAL_ALIGN_CONST.1.String.Text
-#, fuzzy
 msgid  "Top"
 msgstr "ઊંચે"
 
 #: source/ui/inspection/inspection.src#RID_STR_VERTICAL_ALIGN_CONST.2.String.Text
-#, fuzzy
 msgid  "Middle"
 msgstr "મધ્ય"
 
 #: source/ui/inspection/inspection.src#RID_STR_VERTICAL_ALIGN_CONST.3.String.Text
-#, fuzzy
 msgid  "Bottom"
 msgstr "નીચે"
 
 #: source/ui/inspection/inspection.src#RID_STR_PARAADJUST.String.Text
-#, fuzzy
 msgid  "Horz. Alignment"
 msgstr "આડી રેખા"
 
 #: source/ui/inspection/inspection.src#RID_STR_PARAADJUST_CONST.1.String.Text
-#, fuzzy
 msgid  "Left"
 msgstr "ડાબુ"
 
 #: source/ui/inspection/inspection.src#RID_STR_PARAADJUST_CONST.2.String.Text
-#, fuzzy
 msgid  "Right"
 msgstr "જમણું"
 
 #: source/ui/inspection/inspection.src#RID_STR_PARAADJUST_CONST.3.String.Text
-#, fuzzy
 msgid  "Block"
 msgstr "બ્લોક"
 
 #: source/ui/inspection/inspection.src#RID_STR_PARAADJUST_CONST.4.String.Text
-#, fuzzy
 msgid  "Center"
 msgstr "કેન્દ્ર"
 
 #: source/ui/inspection/inspection.src#RID_STR_F_COUNTER.String.Text
-#, fuzzy
 msgid  "Counter"
 msgstr "ગણતરી"
 
 #: source/ui/inspection/inspection.src#RID_STR_F_ACCUMULATION.String.Text
-#, fuzzy
 msgid  "Accumulation"
 msgstr "સંગ્રહ"
 
 #: source/ui/inspection/inspection.src#RID_STR_F_MINIMUM.String.Text
-#, fuzzy
 msgid  "Minimum"
 msgstr "ન્યૂનત્તમ"
 
 #: source/ui/inspection/inspection.src#RID_STR_F_MAXIMUM.String.Text
-#, fuzzy
 msgid  "Maximum"
 msgstr "મહત્તમ"
 
 #: source/ui/report/report.src#RID_STR_BRWTITLE_PROPERTIES.String.Text
-#, fuzzy
 msgid  "Properties: "
 msgstr "ગુણધર્મો: "
 
 #: source/ui/report/report.src#RID_STR_BRWTITLE_NO_PROPERTIES.String.Text
-#, fuzzy
 msgid  "No Control marked"
 msgstr "કોઈ નિયંત્રણ ચિહ્નિત નથી"
 
 #: source/ui/report/report.src#RID_STR_BRWTITLE_MULTISELECT.String.Text
-#, fuzzy
 msgid  "Multiselection"
 msgstr "વિવિધપસંદગી"
 
 #: source/ui/report/report.src#RID_STR_PROPTITLE_IMAGECONTROL.String.Text
-#, fuzzy
 msgid  "Image Control"
 msgstr "ચિત્ર નિયંત્રણ"
 
 #: source/ui/report/report.src#RID_STR_PROPTITLE_FIXEDTEXT.String.Text
-#, fuzzy
 msgid  "Label field"
 msgstr "લેબલ ક્ષેત્ર"
 
 #: source/ui/report/report.src#RID_STR_PROPTITLE_FIXEDLINE.String.Text
-#, fuzzy
 msgid  "Line"
 msgstr "લીટી"
 
 #: source/ui/report/report.src#RID_STR_PROPTITLE_FORMATTED.String.Text
-#, fuzzy
 msgid  "Formatted Field"
 msgstr "બંધારણવાળું ક્ષેત્ર"
 
 #: source/ui/report/report.src#RID_STR_PROPTITLE_SHAPE.String.Text
-#, fuzzy
 msgid  "Shape"
 msgstr "આકાર"
 
 #: source/ui/report/report.src#RID_STR_PROPTITLE_REPORT.String.Text
-#, fuzzy
 msgid  "Report"
 msgstr "અહેવાલ"
 
 #: source/ui/report/report.src#RID_STR_PROPTITLE_SECTION.String.Text
-#, fuzzy
 msgid  "Section"
 msgstr "વિભાગ"
 
 #: source/ui/report/report.src#RID_STR_PROPTITLE_FUNCTION.String.Text
-#, fuzzy
 msgid  "Function"
 msgstr "વિધેય"
 
 #: source/ui/report/report.src#RID_STR_PROPTITLE_GROUP.String.Text
-#, fuzzy
 msgid  "Group"
 msgstr "જૂથ"
 
 #: source/ui/report/report.src#STR_SHOW_RULER.String.Text
-#, fuzzy
 msgid  "Show ruler"
 msgstr "માપપટ્ટી બતાવો"
 
 #: source/ui/report/report.src#STR_SHOW_GRID.String.Text
-#, fuzzy
 msgid  "Show grid"
 msgstr "જાળી બતાવો"
 
 #: source/ui/report/report.src#RID_STR_UNDO_CHANGEPOSITION.String.Text
-#, fuzzy
 msgid  "Change Object"
 msgstr "ઓબ્જેક્ટ બદલો"
 
 #: source/ui/report/report.src#RID_STR_UNDO_MOVE_GROUP.String.Text
-#, fuzzy
 msgid  "Move Group(s)"
 msgstr "જૂથ(ઓ) ખસેડો"
 
 #: source/ui/report/report.src#RID_STR_UNDO_CONDITIONAL_FORMATTING.String.Text
-#, fuzzy
 msgid  "Conditional Formatting"
 msgstr "શરતી બંધારણ"
 
 #: source/ui/report/report.src#RID_STR_UNDO_REMOVE_REPORTHEADERFOOTER.String.Text
-#, fuzzy
 msgid  "Remove report header / report footer"
 msgstr "અહેવાલ હેડર / અહેવાલ ફૂટર દૂર કરો"
 
 #: source/ui/report/report.src#RID_STR_UNDO_ADD_REPORTHEADERFOOTER.String.Text
-#, fuzzy
 msgid  "Add report header / report footer"
 msgstr "અહેવાલ હેડર / અહેવાલ ફૂટર ઉમેરો"
 
 #: source/ui/report/report.src#RID_STR_UNDO_REMOVE_PAGEHEADERFOOTER.String.Text
-#, fuzzy
 msgid  "Remove page header / page footer"
 msgstr "પાનાં હેડર / પાનાં ફૂટર દૂર કરો"
 
 #: source/ui/report/report.src#RID_STR_UNDO_ADD_PAGEHEADERFOOTER.String.Text
-#, fuzzy
 msgid  "Add page header / page footer"
 msgstr "પાનાં હેડર / પાનાં ફૂટર ઉમેરો"
 
 #: source/ui/report/report.src#RID_STR_UNDO_PROPERTY.String.Text
-#, fuzzy
 msgid  "Change property '#'"
 msgstr "ગુણધર્મ બદલો '#'"
 
 #: source/ui/report/report.src#RID_STR_UNDO_ADD_GROUP_HEADER.String.Text
-#, fuzzy
 msgid  "Add group header "
 msgstr "જૂથ હેડર ઉમેરો "
 
 #: source/ui/report/report.src#RID_STR_UNDO_REMOVE_GROUP_HEADER.String.Text
-#, fuzzy
 msgid  "Remove group header "
 msgstr "જૂથ હેડર દૂર કરો "
 
 #: source/ui/report/report.src#RID_STR_UNDO_ADD_GROUP_FOOTER.String.Text
-#, fuzzy
 msgid  "Add group footer "
 msgstr "જૂથ ફૂટર ઉમેરો "
 
 #: source/ui/report/report.src#RID_STR_UNDO_REMOVE_GROUP_FOOTER.String.Text
-#, fuzzy
 msgid  "Remove group footer "
 msgstr "જૂથ ફૂટર દૂર કરો "
 
 #: source/ui/report/report.src#RID_STR_UNDO_ADDFUNCTION.String.Text
-#, fuzzy
 msgid  "Add function"
 msgstr "વિધેય ઉમેરો"
 
 #: source/ui/report/report.src#RID_STR_UNDO_DELETEFUNCTION.String.Text
-#, fuzzy
 msgid  "Delete function"
 msgstr "વિધેય કાઢો"
 
 #: source/ui/report/report.src#RID_STR_DESIGN_VIEW.String.Text
-#, fuzzy
 msgid  "Design"
 msgstr "રચના"
 
 #: source/ui/report/report.src#RID_STR_PREVIEW_VIEW.String.Text
-#, fuzzy
 msgid  "Preview"
 msgstr "પૂર્વદર્શન"
 
 #: source/ui/report/report.src#STR_RPT_TITLE.String.Text
-#, fuzzy
 msgid  "Report #"
 msgstr "અહેવાલ #"
 
 #: source/ui/report/report.src#STR_RPT_LABEL.String.Text
-#, fuzzy
 msgid  "~Report name"
 msgstr "અહેવાલ નામ (~R)"
 
 #: source/ui/report/report.src#RID_STR_UNDO_REMOVE_GROUP.String.Text
-#, fuzzy
 msgid  "Delete Group"
 msgstr "જૂથ કાઢો"
 
 #: source/ui/report/report.src#RID_STR_UNDO_APPEND_GROUP.String.Text
-#, fuzzy
 msgid  "Add Group"
 msgstr "જૂથ ઉમેરો"
 
 #: source/ui/report/report.src#RID_STR_UNDO_REMOVE_SELECTION.String.Text
-#, fuzzy
 msgid  "Delete Selection"
 msgstr "પસંદગી કાઢો"
 
 #: source/ui/report/report.src#RID_STR_UNDO_REMOVE_FUNCTION.String.Text
-#, fuzzy
 msgid  "Delete Function"
 msgstr "વિધેય કાઢો"
 
 #: source/ui/report/report.src#RID_STR_UNDO_CHANGE_SIZE.String.Text
-#, fuzzy
 msgid  "Change Size"
 msgstr "માપ બદલો"
 
 #: source/ui/report/report.src#RID_STR_UNDO_PASTE.String.Text
-#, fuzzy
 msgid  "Paste"
 msgstr "ચોંટાડો"
 
 #: source/ui/report/report.src#RID_STR_UNDO_INSERT_CONTROL.String.Text
-#, fuzzy
 msgid  "Insert Control"
 msgstr "નિયંત્રણ દાખલ કરો"
 
 #: source/ui/report/report.src#RID_STR_UNDO_DELETE_CONTROL.String.Text
-#, fuzzy
 msgid  "Delete Control"
 msgstr "નિયંત્રણ કાઢો"
 
 #: source/ui/report/report.src#RID_STR_UNDO_GROUP.String.Text
-#, fuzzy
 msgid  "Insert Group"
 msgstr "જૂથ દાખલ કરો"
 
 #: source/ui/report/report.src#RID_STR_UNDO_UNGROUP.String.Text
-#, fuzzy
 msgid  "Delete Group"
 msgstr "જૂથ કાઢો"
 
 #: source/ui/report/report.src#RID_STR_GROUPHEADER.String.Text
-#, fuzzy
 msgid  "GroupHeader"
 msgstr "જૂથહેડર"
 
 #: source/ui/report/report.src#RID_STR_GROUPFOOTER.String.Text
-#, fuzzy
 msgid  "GroupFooter"
 msgstr "જૂથફૂટર"
 
 #: source/ui/report/report.src#RID_MENU_REPORT.SID_SORTINGANDGROUPING.MenuItem.Text
-#, fuzzy
 msgid  "Sorting and Grouping..."
 msgstr "ક્રમમાં ગોઠવવાનું અને જૂથ પાડવાનું..."
 
 #: source/ui/report/report.src#RID_MENU_REPORT.SID_ATTR_CHAR_COLOR_BACKGROUND.MenuItem.Text
-#, fuzzy
 msgid  "Background Color..."
 msgstr "પાશ્વભાગ રંગ..."
 
 #: source/ui/report/report.src#RID_MENU_REPORT.SID_RULER.MenuItem.Text
-#, fuzzy
 msgid  "Ruler..."
 msgstr "માપપટ્ટી..."
 
 #: source/ui/report/report.src#RID_MENU_REPORT.SID_GRID_VISIBLE.MenuItem.Text
-#, fuzzy
 msgid  "Grid..."
 msgstr "જાળી..."
 
 #: source/ui/report/report.src#RID_MENU_REPORT.SID_ARRANGEMENU.MenuItem.Text
-#, fuzzy
 msgid  "~Arrange"
 msgstr "ગોઠવો (~A)"
 
 #: source/ui/report/report.src#RID_MENU_REPORT.SID_ARRANGEMENU.SID_FRAME_UP.MenuItem.Text
-#, fuzzy
 msgid  "Bring ~Forward"
 msgstr "આગળ લઈ આવો (~F)"
 
 #: source/ui/report/report.src#RID_MENU_REPORT.SID_ARRANGEMENU.SID_FRAME_DOWN.MenuItem.Text
-#, fuzzy
 msgid  "Send Back~ward"
 msgstr "પાછળ મોકલો (~w)"
 
 #: source/ui/report/report.src#RID_MENU_REPORT.SID_OBJECT_RESIZING.MenuItem.Text
-#, fuzzy
 msgid  "~Object Resizing"
 msgstr "ઓબ્જેક્ટ માપ બદલવાનું (~O)"
 
 #: source/ui/report/report.src#RID_MENU_REPORT.SID_OBJECT_RESIZING.SID_OBJECT_SMALLESTWIDTH.MenuItem.Text
-#, fuzzy
 msgid  "~Fit to smallest width"
 msgstr "ન્યૂનતમ પહોળાઈમાં બેસાડો (~F)"
 
 #: source/ui/report/report.src#RID_MENU_REPORT.SID_OBJECT_RESIZING.SID_OBJECT_GREATESTWIDTH.MenuItem.Text
-#, fuzzy
 msgid  "~Fit to greatest width"
 msgstr "મહત્તમ પહોળાઈમાં બેસાડો (~F)"
 
 #: source/ui/report/report.src#RID_MENU_REPORT.SID_OBJECT_RESIZING.SID_OBJECT_SMALLESTHEIGHT.MenuItem.Text
-#, fuzzy
 msgid  "~Fit to smallest height"
 msgstr "ન્યૂનતમ ઊંચાઈમાં બેસાડો (~F)"
 
 #: source/ui/report/report.src#RID_MENU_REPORT.SID_OBJECT_RESIZING.SID_OBJECT_GREATESTHEIGHT.MenuItem.Text
-#, fuzzy
 msgid  "~Fit to greatest height"
 msgstr "મહત્તમ ઊંચાઈમાં બેસાડો (~F)"
 
 #: source/ui/report/report.src#RID_MENU_REPORT.SID_SECTION_SHRINK_MENU.MenuItem.Text
-#, fuzzy
 msgid  "Section"
 msgstr "વિભાગ"
 
 #: source/ui/report/report.src#RID_MENU_REPORT.SID_SECTION_SHRINK_MENU.SID_SECTION_SHRINK.MenuItem.Text
-#, fuzzy
 msgid  "Shrink"
 msgstr "સંકોચાવું"
 
 #: source/ui/report/report.src#RID_MENU_REPORT.SID_SECTION_SHRINK_MENU.SID_SECTION_SHRINK_TOP.MenuItem.Text
-#, fuzzy
 msgid  "Shrink from top"
 msgstr "ઉપરથી સંકોચો"
 
 #: source/ui/report/report.src#RID_MENU_REPORT.SID_SECTION_SHRINK_MENU.SID_SECTION_SHRINK_BOTTOM.MenuItem.Text
-#, fuzzy
 msgid  "Shrink from bottom"
 msgstr "નીચેથી સંકોચો"
 
 #: source/ui/report/report.src#RID_MENU_REPORT.SID_DISTRIBUTION.MenuItem.Text
-#, fuzzy
 msgid  "Distribution..."
 msgstr "વિતરણ..."
 
 #: source/ui/report/report.src#RID_MENU_REPORT.SID_SHOW_PROPERTYBROWSER.MenuItem.Text
-#, fuzzy
 msgid  "Properties..."
 msgstr "ગુણધર્મો..."
 
 #: source/ui/report/report.src#RID_STR_FIELDSELECTION.String.Text
-#, fuzzy
 msgid  "Add field:"
 msgstr "ક્ષેત્ર ઉમેરો:"
 
 #: source/ui/report/report.src#RID_STR_FILTER.String.Text
-#, fuzzy
 msgid  "Filter"
 msgstr "ગાળક"
 
 #: source/ui/report/report.src#RID_APP_TITLE.String.Text
-#, fuzzy
 msgid  " - %PRODUCTNAME Base Report"
 msgstr " - %PRODUCTNAME આધાર અહેવાલ"
 
 #: source/ui/report/report.src#RID_APP_NEW_DOC.String.Text
-#, fuzzy
 msgid  "Untitled"
 msgstr "શીર્ષકવીહિન"
 
 #: source/ui/report/report.src#RID_STR_UNDO_ALIGNMENT.String.Text
-#, fuzzy
 msgid  "Change Alignment"
 msgstr "ગોઠવણી બદલો"
 
 #: source/ui/report/report.src#RID_STR_HEADER.String.Text
-#, fuzzy
 msgid  "# Header"
 msgstr "# હેડર"
 
 #: source/ui/report/report.src#RID_STR_FOOTER.String.Text
-#, fuzzy
 msgid  "# Footer"
 msgstr "# ફૂટર"
 
 #: source/ui/report/report.src#RID_STR_IMPORT_GRAPHIC.String.Text
-#, fuzzy
 msgid  "Insert graphics"
 msgstr "ગ્રાફિક્સ દાખલ કરો"
 
 #: source/ui/report/report.src#RID_STR_DELETE.String.Text
-#, fuzzy
 msgid  "Delete"
 msgstr "કાઢો"
 
 #: source/ui/report/report.src#RID_STR_FUNCTION.String.Text
-#, fuzzy
 msgid  "Function"
 msgstr "વિધેય"
 
 #: source/ui/report/report.src#RID_STR_COULD_NOT_CREATE_REPORT.String.Text
-#, fuzzy
 msgid  "An error occurred while creating the report."
 msgstr "અહેવાલ બનાવતી વખતે ભૂલ ઉદ્ભવી."
 
 #: source/ui/report/report.src#RID_STR_CAUGHT_FOREIGN_EXCEPTION.String.Text
-#, fuzzy
 msgid  "An exception of type $type$ was caught."
 msgstr "પ્રકાર $type$ નો અપવાદ પકડાયો હતો."
 
 #: source/ui/report/report.src#RID_STR_UNDO_CHANGEFONT.String.Text
-#, fuzzy
 msgid  "Change font"
 msgstr "ફોન્ટ બદલો"
 
 #: source/ui/report/report.src#RID_STR_UNDO_CHANGEPAGE.String.Text
-#, fuzzy
 msgid  "Change page attributes"
 msgstr "પાનાં લક્ષણો બદલો"
 
 #: source/ui/report/report.src#RID_STR_PAGEHEADERFOOTER_INSERT.String.Text
-#, fuzzy
 msgid  "Insert Page Header/Footer"
 msgstr "પાનાં હેડર/ફૂટર દાખલ કરો"
 
 #: source/ui/report/report.src#RID_STR_PAGEHEADERFOOTER_DELETE.String.Text
-#, fuzzy
 msgid  "Delete Page Header/Footer"
 msgstr "પાનાં હેડર/ફૂટર કાઢો"
 
 #: source/ui/report/report.src#RID_STR_COLUMNHEADERFOOTER_INSERT.String.Text
-#, fuzzy
 msgid  "Insert Column Header/Footer"
 msgstr "સ્તંભ હેડર/ફૂટર દાખલ કરો"
 
 #: source/ui/report/report.src#RID_STR_COLUMNHEADERFOOTER_DELETE.String.Text
-#, fuzzy
 msgid  "Delete Column Header/Footer"
 msgstr "સ્તંભ હેડર/ફૂટર કાઢો"
 
 #: source/ui/report/report.src#RID_STR_REPORTHEADERFOOTER_INSERT.String.Text
-#, fuzzy
 msgid  "Insert Report Header/Footer"
 msgstr "અહેવાલ હેડર/ફૂટર દાખલ કરો"
 
 #: source/ui/report/report.src#RID_STR_REPORTHEADERFOOTER_DELETE.String.Text
-#, fuzzy
 msgid  "Delete Report Header/Footer"
 msgstr "અહેવાલ હેડર/ફૂટર કાઢો"
 
 #: source/ui/report/report.src#RID_ERR_NO_COMMAND.String.Text
-#, fuzzy
 msgid  "The report can not be executed unless it is bound to content."
 msgstr "અહેવાલ ને ચલાવી શકાતો નથી સિવાય કે તે સમાવિષ્ટ થી બંધાયેલ હોય."
 
 #: source/ui/report/report.src#RID_ERR_NO_OBJECTS.String.Text
 msgid  "The report can not be executed unless at least one object has been inserted."
-msgstr ""
+msgstr "અહેલાવ ને ચલાવી શકાતો નથી સિવાય કે ઓછામાં ઓછો એક ઓબ્જેક્ટ ને સમાવી દેવામાં આવ્યો હોય."
 
 #: source/ui/report/report.src#RID_STR_UNDO_SHRINK.String.Text
-#, fuzzy
 msgid  "Shrink Section"
 msgstr "ભાગ ને સંકોચો"
 
-#: source/ui/report/report.src#RID_STR_INSERT.String.Text
-#, fuzzy
-msgid  "Insert"
-msgstr "દાખલ કરો"
-
 #: source/ui/report/report.src#RID_STR_DETAIL.String.Text
-#, fuzzy
 msgid  "Detail"
 msgstr "વિગત"
 
 #: source/ui/report/report.src#RID_STR_PAGE_HEADER.String.Text
-#, fuzzy
 msgid  "Page Header"
 msgstr "પાનાં નું હેડર"
 
 #: source/ui/report/report.src#RID_STR_PAGE_FOOTER.String.Text
-#, fuzzy
 msgid  "Page Footer"
 msgstr "પાનાં નું ફુટર"
 
 #: source/ui/report/report.src#RID_STR_REPORT_HEADER.String.Text
-#, fuzzy
 msgid  "Report Header"
 msgstr "અહેવાલ હેડર"
 
 #: source/ui/report/report.src#RID_STR_REPORT_FOOTER.String.Text
-#, fuzzy
 msgid  "Report Footer"
 msgstr "અહેવાલ ફુટર"
+
+#: source/ui/report/report.src#RID_STR_INSERT.String.Text
+msgid  "Insert"
+msgstr "દાખલ કરો"

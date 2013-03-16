@@ -31,6 +31,11 @@ msgstr ""
 "X-Generator: genLang\n"
 
 
+#: source/customize/selector.src#FIXEDTEXT_DIALOG_DESCRIPTION.#define.Text
+#, fuzzy
+msgid  "Select the library that contains the macro you want. Then select the macro under 'Macro name'."
+msgstr "Select the library that contains the macro you want. Then select the macro under 'Macro name'."
+
 #: source/customize/selector.src#STR_SELECTOR_ADD_COMMANDS.String.TEXT
 #, fuzzy
 msgid  "Add Commands"
@@ -67,8 +72,9 @@ msgid  "Close"
 msgstr "Close"
 
 #: source/customize/selector.src#STR_SELECTOR_ADD_COMMANDS_DESCRIPTION.String.TEXT
+#, fuzzy
 msgid  "To add a command to a toolbar, select the category and then the command. Then drag the command to the Commands list of the Toolbars tab page in the Customize dialog."
-msgstr ""
+msgstr "To add a command to a toolbar, select the category and then the command. Then drag the command to the Commands list of the Toolbars tab page in the Customise dialogue box."
 
 #: source/customize/selector.src#STR_BASICMACROS.String.Text
 #, fuzzy
@@ -105,9 +111,50 @@ msgstr "Macro name"
 msgid  "Description"
 msgstr "Description"
 
-#: source/customize/selector.src#FIXEDTEXT_DIALOG_DESCRIPTION.#define.Text
-msgid  "Select the library that contains the macro you want. Then select the macro under 'Macro name'."
-msgstr ""
+#: source/customize/acccfg.src#PUSHBUTTON_TEXT_SAVE.#define.Text
+#, fuzzy
+msgid  "~Save..."
+msgstr "~Save..."
+
+#: source/customize/acccfg.src#PUSHBUTTON_TEXT_RESET.#define.Text
+#, fuzzy
+msgid  "R~eset"
+msgstr "R~eset"
+
+#: source/customize/acccfg.src#PUSHBUTTON_TEXT_LOAD.#define.Text
+#, fuzzy
+msgid  "~Load..."
+msgstr "~Load..."
+
+#: source/customize/acccfg.src#PUSHBUTTON_TEXT_REMOVE.#define.Text
+#, fuzzy
+msgid  "~Delete"
+msgstr "~Delete"
+
+#: source/customize/acccfg.src#PUSHBUTTON_TEXT_CHANGE.#define.Text
+#, fuzzy
+msgid  "~Modify"
+msgstr "~Modify"
+
+#: source/customize/acccfg.src#PUSHBUTTON_TEXT_NEW.#define.Text
+#, fuzzy
+msgid  "~New"
+msgstr "~New"
+
+#: source/customize/acccfg.src#FIXEDTEXT_TEXT_GROUP.#define.Text
+#, fuzzy
+msgid  "~Category"
+msgstr "~Category"
+
+#: source/customize/acccfg.src#FIXEDTEXT_TEXT_FUNCTION.#define.Text
+#, fuzzy
+msgid  "Function"
+msgstr "Function"
+
+#: source/customize/acccfg.src#GROUPBOX_TEXT_FUNCTIONS.#define.Text
+#, fuzzy
+msgid  "Functions"
+msgstr "Functions"
 
 #: source/customize/acccfg.src#RID_SVXPAGE_KEYBOARD.GRP_ACC_KEYBOARD.FixedLine.Text
 #, fuzzy
@@ -157,51 +204,6 @@ msgstr "%PRODUCTNAME Macros"
 #, fuzzy
 msgid  "Styles"
 msgstr "Styles"
-
-#: source/customize/acccfg.src#PUSHBUTTON_TEXT_SAVE.#define.Text
-#, fuzzy
-msgid  "~Save..."
-msgstr "~Save..."
-
-#: source/customize/acccfg.src#PUSHBUTTON_TEXT_RESET.#define.Text
-#, fuzzy
-msgid  "R~eset"
-msgstr "R~eset"
-
-#: source/customize/acccfg.src#PUSHBUTTON_TEXT_LOAD.#define.Text
-#, fuzzy
-msgid  "~Load..."
-msgstr "~Load..."
-
-#: source/customize/acccfg.src#PUSHBUTTON_TEXT_REMOVE.#define.Text
-#, fuzzy
-msgid  "~Delete"
-msgstr "~Delete"
-
-#: source/customize/acccfg.src#PUSHBUTTON_TEXT_CHANGE.#define.Text
-#, fuzzy
-msgid  "~Modify"
-msgstr "~Modify"
-
-#: source/customize/acccfg.src#PUSHBUTTON_TEXT_NEW.#define.Text
-#, fuzzy
-msgid  "~New"
-msgstr "~New"
-
-#: source/customize/acccfg.src#FIXEDTEXT_TEXT_GROUP.#define.Text
-#, fuzzy
-msgid  "~Category"
-msgstr "~Category"
-
-#: source/customize/acccfg.src#FIXEDTEXT_TEXT_FUNCTION.#define.Text
-#, fuzzy
-msgid  "Function"
-msgstr "Function"
-
-#: source/customize/acccfg.src#GROUPBOX_TEXT_FUNCTIONS.#define.Text
-#, fuzzy
-msgid  "Functions"
-msgstr "Functions"
 
 #: source/customize/eventdlg.src#RID_SVXPAGE_EVENTS.STR_EVENT.String.Text
 #, fuzzy
@@ -673,6 +675,61 @@ msgstr "Toolbars"
 msgid  "Events"
 msgstr "Events"
 
+#: source/customize/cfg.src#TEXT_MENU.#define.Text
+#, fuzzy
+msgid  "Menu"
+msgstr "Menu"
+
+#: source/customize/cfg.src#TEXT_BEGIN_GROUP.#define.Text
+#, fuzzy
+msgid  "Begin a Group"
+msgstr "Begin a Group"
+
+#: source/customize/cfg.src#TEXT_RENAME.#define.Text
+#, fuzzy
+msgid  "Rename..."
+msgstr "Rename..."
+
+#: source/customize/cfg.src#TEXT_DELETE.#define.Text
+#, fuzzy
+msgid  "Delete..."
+msgstr "Delete..."
+
+#: source/customize/cfg.src#TEXT_DELETE_NODOTS.#define.Text
+#, fuzzy
+msgid  "Delete"
+msgstr "Delete"
+
+#: source/customize/cfg.src#TEXT_MOVE.#define.Text
+#, fuzzy
+msgid  "Move..."
+msgstr "Move..."
+
+#: source/customize/cfg.src#TEXT_DEFAULT_STYLE.#define.Text
+#, fuzzy
+msgid  "Restore Default Settings"
+msgstr "Restore Default Settings"
+
+#: source/customize/cfg.src#TEXT_DEFAULT_COMMAND.#define.Text
+#, fuzzy
+msgid  "Restore Default Command"
+msgstr "Restore Default Command"
+
+#: source/customize/cfg.src#TEXT_TEXT_ONLY.#define.Text
+#, fuzzy
+msgid  "Text only"
+msgstr "Text only"
+
+#: source/customize/cfg.src#TEXT_TOOLBAR_NAME.#define.Text
+#, fuzzy
+msgid  "Toolbar Name"
+msgstr "Toolbar Name"
+
+#: source/customize/cfg.src#TEXT_SAVE_IN.#define.Text
+#, fuzzy
+msgid  "Save In"
+msgstr "Save In"
+
 #: source/customize/cfg.src#RID_SVXPAGE_MENUS.GRP_MENUS.FixedLine.Text
 #, fuzzy
 msgid  "%PRODUCTNAME %MODULENAME Menus"
@@ -759,8 +816,9 @@ msgid  "Submenu name"
 msgstr "Sub-menu name"
 
 #: source/customize/cfg.src#RID_SVXSTR_MENU_ADDCOMMANDS_DESCRIPTION.String.Text
+#, fuzzy
 msgid  "To add a command to a menu, select the category and then the command. You can also drag the command to the Commands list of the Menus tab page in the Customize dialog."
-msgstr ""
+msgstr "To add a command to a menu, select the category and then the command. You can also drag the command to the Commands list of the Menus tab page in the Customise dialogue box."
 
 #: source/customize/cfg.src#MD_MENU_ORGANISER.ModalDialog.Text
 #, fuzzy
@@ -803,8 +861,9 @@ msgid  "Delete..."
 msgstr "Delete..."
 
 #: source/customize/cfg.src#MD_ICONSELECTOR.FT_NOTE.FixedText.Text
+#, fuzzy
 msgid  "Note:\nThe size of an icon should be 16x16 pixel to achieve best quality. Different sized icons will be scaled automatically."
-msgstr ""
+msgstr "Note:\nThe size of an icon should be 16x16 pixel to achieve best quality. Different sized icons will be scaled automatically."
 
 #: source/customize/cfg.src#MD_ICONCHANGE.ModalDialog.Text
 #, fuzzy
@@ -812,12 +871,14 @@ msgid  "%PRODUCTNAME %PRODUCTVERSION"
 msgstr "%PRODUCTNAME %PRODUCTVERSION"
 
 #: source/customize/cfg.src#MD_ICONCHANGE.FTCHGE_DESCRIPTION.FixedText.Text
+#, fuzzy
 msgid  "The files listed below could not be imported.\nThe file format could not be interpreted."
-msgstr ""
+msgstr "The files listed below could not be imported.\nThe file format could not be interpreted."
 
 #: source/customize/cfg.src#RID_SVXSTR_IMPORT_ICON_ERROR.String.Text
+#, fuzzy
 msgid  "The files listed below could not be imported. The file format could not be interpreted."
-msgstr ""
+msgstr "The files listed below could not be imported. The file format could not be interpreted."
 
 #: source/customize/cfg.src#RID_SVXSTR_DELETE_ICON_CONFIRM.String.Text
 #, fuzzy
@@ -825,8 +886,9 @@ msgid  "Are you sure to delete the image?"
 msgstr "Are you sure to delete the image?"
 
 #: source/customize/cfg.src#RID_SVXSTR_REPLACE_ICON_WARNING.String.Text
+#, fuzzy
 msgid  "The icon %ICONNAME is already contained in the image list.\nWould you like to replace the existing icon?"
-msgstr ""
+msgstr "The icon %ICONNAME is already contained in the image list.\nWould you like to replace the existing icon?"
 
 #: source/customize/cfg.src#RID_SVXSTR_REPLACE_ICON_CONFIRM.String.Text
 #, fuzzy
@@ -869,24 +931,29 @@ msgid  "Are you sure you want to delete the '%MENUNAME' menu?"
 msgstr "Are you sure you want to delete the '%MENUNAME' menu?"
 
 #: source/customize/cfg.src#QBX_CONFIRM_DELETE_TOOLBAR.QueryBox.Message
+#, fuzzy
 msgid  "There are no more commands on the toolbar. Do you want to delete the toolbar?"
-msgstr ""
+msgstr "There are no more commands on the toolbar. Do you want to delete the toolbar?"
 
 #: source/customize/cfg.src#QBX_CONFIRM_RESET.QueryBox.Message
+#, fuzzy
 msgid  "The menu configuration for %SAVE IN SELECTION% will be reset to the factory settings. Do you want to continue?"
-msgstr ""
+msgstr "The menu configuration for %SAVE IN SELECTION% will be reset to the factory settings. Do you want to continue?"
 
 #: source/customize/cfg.src#RID_SVXSTR_CONFIRM_MENU_RESET.String.Text
+#, fuzzy
 msgid  "The menu configuration for %SAVE IN SELECTION% will be reset to the factory settings. Do you want to continue?"
-msgstr ""
+msgstr "The menu configuration for %SAVE IN SELECTION% will be reset to the factory settings. Do you want to continue?"
 
 #: source/customize/cfg.src#RID_SVXSTR_CONFIRM_TOOLBAR_RESET.String.Text
+#, fuzzy
 msgid  "The toolbar configuration for %SAVE IN SELECTION% will be reset to the factory settings. Do you want to continue?"
-msgstr ""
+msgstr "The toolbar configuration for %SAVE IN SELECTION% will be reset to the factory settings. Do you want to continue?"
 
 #: source/customize/cfg.src#QBX_CONFIRM_RESTORE_DEFAULT.QueryBox.Message
+#, fuzzy
 msgid  "This will delete all changes previously made to this toolbar. Do you really want to reset the toolbar?"
-msgstr ""
+msgstr "This will delete all changes previously made to this toolbar. Do you really want to reset the toolbar?"
 
 #: source/customize/cfg.src#IBX_MNUCFG_ALREADY_INCLUDED.InfoBox.Message
 #, fuzzy
@@ -917,61 +984,6 @@ msgstr "Up"
 #, fuzzy
 msgid  "Down"
 msgstr "Down"
-
-#: source/customize/cfg.src#TEXT_MENU.#define.Text
-#, fuzzy
-msgid  "Menu"
-msgstr "Menu"
-
-#: source/customize/cfg.src#TEXT_BEGIN_GROUP.#define.Text
-#, fuzzy
-msgid  "Begin a Group"
-msgstr "Begin a Group"
-
-#: source/customize/cfg.src#TEXT_RENAME.#define.Text
-#, fuzzy
-msgid  "Rename..."
-msgstr "Rename..."
-
-#: source/customize/cfg.src#TEXT_DELETE.#define.Text
-#, fuzzy
-msgid  "Delete..."
-msgstr "Delete..."
-
-#: source/customize/cfg.src#TEXT_DELETE_NODOTS.#define.Text
-#, fuzzy
-msgid  "Delete"
-msgstr "Delete"
-
-#: source/customize/cfg.src#TEXT_MOVE.#define.Text
-#, fuzzy
-msgid  "Move..."
-msgstr "Move..."
-
-#: source/customize/cfg.src#TEXT_DEFAULT_STYLE.#define.Text
-#, fuzzy
-msgid  "Restore Default Settings"
-msgstr "Restore Default Settings"
-
-#: source/customize/cfg.src#TEXT_DEFAULT_COMMAND.#define.Text
-#, fuzzy
-msgid  "Restore Default Command"
-msgstr "Restore Default Command"
-
-#: source/customize/cfg.src#TEXT_TEXT_ONLY.#define.Text
-#, fuzzy
-msgid  "Text only"
-msgstr "Text only"
-
-#: source/customize/cfg.src#TEXT_TOOLBAR_NAME.#define.Text
-#, fuzzy
-msgid  "Toolbar Name"
-msgstr "Toolbar Name"
-
-#: source/customize/cfg.src#TEXT_SAVE_IN.#define.Text
-#, fuzzy
-msgid  "Save In"
-msgstr "Save In"
 
 #: source/dialogs/commonlingui.src#RID_SVX_WND_COMMON_LINGU.FT_WORD.FixedText.Text
 #, fuzzy
@@ -1179,24 +1191,29 @@ msgid  "An error occurred while running the %LANGUAGENAME script %SCRIPTNAME."
 msgstr "An error occurred while running the %LANGUAGENAME script %SCRIPTNAME."
 
 #: source/dialogs/scriptdlg.src#RID_SVXSTR_EXCEPTION_RUNNING.String.Text
+#, fuzzy
 msgid  "An exception occurred while running the %LANGUAGENAME script %SCRIPTNAME."
-msgstr ""
+msgstr "An exception occurred while running the %LANGUAGENAME script %SCRIPTNAME."
 
 #: source/dialogs/scriptdlg.src#RID_SVXSTR_ERROR_AT_LINE.String.Text
+#, fuzzy
 msgid  "An error occurred while running the %LANGUAGENAME script %SCRIPTNAME at line: %LINENUMBER."
-msgstr ""
+msgstr "An error occurred while running the %LANGUAGENAME script %SCRIPTNAME at line: %LINENUMBER."
 
 #: source/dialogs/scriptdlg.src#RID_SVXSTR_EXCEPTION_AT_LINE.String.Text
+#, fuzzy
 msgid  "An exception occurred while running the %LANGUAGENAME script %SCRIPTNAME at line: %LINENUMBER."
-msgstr ""
+msgstr "An exception occurred while running the %LANGUAGENAME script %SCRIPTNAME at line: %LINENUMBER."
 
 #: source/dialogs/scriptdlg.src#RID_SVXSTR_FRAMEWORK_ERROR_RUNNING.String.Text
+#, fuzzy
 msgid  "A Scripting Framework error occurred while running the %LANGUAGENAME script %SCRIPTNAME."
-msgstr ""
+msgstr "A Scripting Framework error occurred while running the %LANGUAGENAME script %SCRIPTNAME."
 
 #: source/dialogs/scriptdlg.src#RID_SVXSTR_FRAMEWORK_ERROR_AT_LINE.String.Text
+#, fuzzy
 msgid  "A Scripting Framework error occurred while running the %LANGUAGENAME script %SCRIPTNAME at line: %LINENUMBER."
-msgstr ""
+msgstr "A Scripting Framework error occurred while running the %LANGUAGENAME script %SCRIPTNAME at line: %LINENUMBER."
 
 #: source/dialogs/scriptdlg.src#RID_SVXSTR_ERROR_TYPE_LABEL.String.Text
 #, fuzzy
@@ -1535,6 +1552,11 @@ msgstr "F~orm"
 
 #: source/dialogs/hyperdlg.src#RID_SVXPAGE_HYPERLINK_INTERNET.LB_FORM.Default.StringList.item
 #, fuzzy
+msgid  "Text"
+msgstr "Text"
+
+#: source/dialogs/hyperdlg.src#RID_SVXPAGE_HYPERLINK_INTERNET.LB_FORM.Default.StringList.item
+#, fuzzy
 msgid  "Button"
 msgstr "Button"
 
@@ -1612,6 +1634,11 @@ msgstr "F~rame"
 #, fuzzy
 msgid  "F~orm"
 msgstr "F~orm"
+
+#: source/dialogs/hyperdlg.src#RID_SVXPAGE_HYPERLINK_MAIL.LB_FORM.Default.StringList.item
+#, fuzzy
+msgid  "Text"
+msgstr "Text"
 
 #: source/dialogs/hyperdlg.src#RID_SVXPAGE_HYPERLINK_MAIL.LB_FORM.Default.StringList.item
 #, fuzzy
@@ -1710,6 +1737,11 @@ msgstr "F~orm"
 
 #: source/dialogs/hyperdlg.src#RID_SVXPAGE_HYPERLINK_DOCUMENT.LB_FORM.Default.StringList.item
 #, fuzzy
+msgid  "Text"
+msgstr "Text"
+
+#: source/dialogs/hyperdlg.src#RID_SVXPAGE_HYPERLINK_DOCUMENT.LB_FORM.Default.StringList.item
+#, fuzzy
 msgid  "Button"
 msgstr "Button"
 
@@ -1790,6 +1822,11 @@ msgstr "F~orm"
 
 #: source/dialogs/hyperdlg.src#RID_SVXPAGE_HYPERLINK_NEWDOCUMENT.LB_FORM.Default.StringList.item
 #, fuzzy
+msgid  "Text"
+msgstr "Text"
+
+#: source/dialogs/hyperdlg.src#RID_SVXPAGE_HYPERLINK_NEWDOCUMENT.LB_FORM.Default.StringList.item
+#, fuzzy
 msgid  "Button"
 msgstr "Button"
 
@@ -1854,8 +1891,9 @@ msgid  "Internet"
 msgstr "Internet"
 
 #: source/dialogs/hyperdlg.src#RID_SVXSTR_HYPERDLG_HLINETTP_HELP.String.Text
+#, fuzzy
 msgid  "This is where you create a hyperlink to a Web page, FTP server or Telnet connection."
-msgstr ""
+msgstr "This is where you create a hyperlink to a Web page, FTP server or Telnet connection."
 
 #: source/dialogs/hyperdlg.src#RID_SVXSTR_HYPERDLG_HLMAILTP.String.Text
 #, fuzzy
@@ -1863,8 +1901,9 @@ msgid  "Mail & News"
 msgstr "Mail & News"
 
 #: source/dialogs/hyperdlg.src#RID_SVXSTR_HYPERDLG_HLMAILTP_HELP.String.Text
+#, fuzzy
 msgid  "This is where you create a hyperlink to an e-mail address or newsgroup."
-msgstr ""
+msgstr "This is where you create a hyperlink to an e-mail address or newsgroup."
 
 #: source/dialogs/hyperdlg.src#RID_SVXSTR_HYPERDLG_HLDOCTP.String.Text
 #, fuzzy
@@ -1872,8 +1911,9 @@ msgid  "Document"
 msgstr "Document"
 
 #: source/dialogs/hyperdlg.src#RID_SVXSTR_HYPERDLG_HLDOCTP_HELP.String.Text
+#, fuzzy
 msgid  "This is where you create a hyperlink to an existing document or a target within a document."
-msgstr ""
+msgstr "This is where you create a hyperlink to an existing document or a target within a document."
 
 #: source/dialogs/hyperdlg.src#RID_SVXSTR_HYPERDLG_HLDOCNTP.String.Text
 #, fuzzy
@@ -1899,26 +1939,6 @@ msgstr "Text"
 #, fuzzy
 msgid  "The file already exists. Overwrite?"
 msgstr "The file already exists. Overwrite?"
-
-#: source/dialogs/hyperdlg.src#RID_SVXPAGE_HYPERLINK_INTERNET.LB_FORM.Default.StringList.item
-#, fuzzy
-msgid  "Text"
-msgstr "Text"
-
-#: source/dialogs/hyperdlg.src#RID_SVXPAGE_HYPERLINK_MAIL.LB_FORM.Default.StringList.item
-#, fuzzy
-msgid  "Text"
-msgstr "Text"
-
-#: source/dialogs/hyperdlg.src#RID_SVXPAGE_HYPERLINK_DOCUMENT.LB_FORM.Default.StringList.item
-#, fuzzy
-msgid  "Text"
-msgstr "Text"
-
-#: source/dialogs/hyperdlg.src#RID_SVXPAGE_HYPERLINK_NEWDOCUMENT.LB_FORM.Default.StringList.item
-#, fuzzy
-msgid  "Text"
-msgstr "Text"
 
 #: source/dialogs/passwdomdlg.src#RID_DLG_PASSWORD_TO_OPEN_MODIFY.ModalDialog.Text
 #, fuzzy
@@ -1980,16 +2000,19 @@ msgid  "Fewer ~Options"
 msgstr "Fewer ~Options"
 
 #: source/dialogs/passwdomdlg.src#RID_DLG_PASSWORD_TO_OPEN_MODIFY.STR_ONE_PASSWORD_MISMATCH.String.Text
+#, fuzzy
 msgid  "The confirmation password did not match the password. Set the password again by entering the same password in both boxes."
-msgstr ""
+msgstr "The confirmation password did not match the password. Set the password again by entering the same password in both boxes."
 
 #: source/dialogs/passwdomdlg.src#RID_DLG_PASSWORD_TO_OPEN_MODIFY.STR_TWO_PASSWORDS_MISMATCH.String.Text
+#, fuzzy
 msgid  "The confirmation passwords did not match the original passwords. Set the passwords again."
-msgstr ""
+msgstr "The confirmation passwords did not match the original passwords. Set the passwords again."
 
 #: source/dialogs/passwdomdlg.src#RID_DLG_PASSWORD_TO_OPEN_MODIFY.STR_INVALID_STATE_FOR_OK_BUTTON.String.Text
+#, fuzzy
 msgid  "Please enter a password to open or to modify, or check the open read-only option to continue."
-msgstr ""
+msgstr "Please enter a password to open or to modify, or mark the open read-only option to continue."
 
 #: source/dialogs/grfflt.src#RID_SVX_GRFFILTER_DLG_MOSAIC.ModalDialog.Text
 #, fuzzy
@@ -2287,9 +2310,8 @@ msgid  "~Delete"
 msgstr "~Delete"
 
 #: source/dialogs/about.src#RID_DEFAULTABOUT.ModalDialog.Text
-#, fuzzy
 msgid  "About %FULLPRODUCTNAME"
-msgstr "About %PRODUCTNAME"
+msgstr ""
 
 #: source/dialogs/about.src#RID_DEFAULTABOUT.RID_CUI_ABOUT_BTN_README.PushButton.Text
 msgid  "License..."
@@ -2316,8 +2338,9 @@ msgid  "Notice"
 msgstr ""
 
 #: source/dialogs/hyphen.src#RID_SVXSTR_HMERR_CHECKINSTALL.String.Text
+#, fuzzy
 msgid  "is not available for spellchecking\nPlease check your installation and install the desired language\n"
-msgstr ""
+msgstr "is not available for spell check\nPlease check your installation and install the desired language\n"
 
 #: source/dialogs/hyphen.src#RID_SVXDLG_HYPHENATE.ModalDialog.Text
 #, fuzzy
@@ -3205,8 +3228,9 @@ msgid  "~Book mode"
 msgstr "~Book mode"
 
 #: source/dialogs/showcols.src#RID_SVX_DLG_SHOWGRIDCOLUMNS.1.FixedText.Text
+#, fuzzy
 msgid  "The following columns are currently hidden. Please mark the fields you want to show and choose OK."
-msgstr ""
+msgstr "The following columns are currently hidden. Please mark the fields you want to show and choose OK."
 
 #: source/dialogs/showcols.src#RID_SVX_DLG_SHOWGRIDCOLUMNS.CancelButton.Text
 #, fuzzy
@@ -3609,12 +3633,14 @@ msgid  "~Manual"
 msgstr "~Manual"
 
 #: source/options/optinet2.src#RID_SVXPAGE_INET_PROXY.ST_MSG_255_0.String.Text
+#, fuzzy
 msgid  "is not a valid entry for this field. Please specify a value between 0 and 255."
-msgstr ""
+msgstr "is not a valid entry for this field. Please specify a value in the range 0 to 255."
 
 #: source/options/optinet2.src#RID_SVXPAGE_INET_PROXY.ST_MSG_255_1.String.Text
+#, fuzzy
 msgid  "is not a valid entry for this field. Please specify a value between 1 and 255."
-msgstr ""
+msgstr "is not a valid entry for this field. Please specify a value in the range 1 to 255."
 
 #: source/options/optinet2.src#RID_SVXPAGE_INET_SEARCH.TabPage.Text
 #, fuzzy
@@ -3721,8 +3747,9 @@ msgid  "Security options and warnings"
 msgstr "Security options and warnings"
 
 #: source/options/optinet2.src#RID_SVXPAGE_INET_SECURITY.FI_SEC_SECURITYOPTIONS.FixedText.Text
+#, fuzzy
 msgid  "Adjust security related options and define warnings for hidden information in documents."
-msgstr ""
+msgstr "Adjust security related options and define warnings for hidden information in documents."
 
 #: source/options/optinet2.src#RID_SVXPAGE_INET_SECURITY.PB_SEC_SECURITYOPTIONS.PushButton.Text
 #, fuzzy
@@ -3750,8 +3777,9 @@ msgid  "Protected by a master password (recommended)"
 msgstr "Protected by a master password (recommended)"
 
 #: source/options/optinet2.src#RID_SVXPAGE_INET_SECURITY.FI_SEC_MASTERPASSWORD.FixedText.Text
+#, fuzzy
 msgid  "Passwords are protected by a master password. You will be asked to enter it once per session, if %PRODUCTNAME retrieves a password from the protected password list."
-msgstr ""
+msgstr "Passwords are protected by a master password. You will be asked to enter it once per session, if %PRODUCTNAME retrieves a password from the protected password list."
 
 #: source/options/optinet2.src#RID_SVXPAGE_INET_SECURITY.PB_SEC_MASTERPASSWORD.PushButton.Text
 #, fuzzy
@@ -3764,8 +3792,9 @@ msgid  "Macro security"
 msgstr "Macro security"
 
 #: source/options/optinet2.src#RID_SVXPAGE_INET_SECURITY.FI_SEC_MACROSEC.FixedText.Text
+#, fuzzy
 msgid  "Adjust the security level for executing macros and specify trusted macro developers."
-msgstr ""
+msgstr "Adjust the security level for executing macros and specify trusted macro developers."
 
 #: source/options/optinet2.src#RID_SVXPAGE_INET_SECURITY.PB_SEC_MACROSEC.PushButton.Text
 #, fuzzy
@@ -3773,16 +3802,19 @@ msgid  "Macro Security..."
 msgstr "Macro Security..."
 
 #: source/options/optinet2.src#RID_SVXPAGE_INET_SECURITY.STR_SEC_NOPASSWDSAVE.String.Text
+#, fuzzy
 msgid  "Disabling the function to persistently store passwords deletes the list of passwords stored and resets the master password.\n\nDo you want to delete password list and reset master password?"
-msgstr ""
+msgstr "Disabling the function to persistently store passwords deletes the list of passwords stored and resets the master password.\n\nDo you want to delete password list and reset master password?"
 
 #: source/options/optinet2.src#RID_SVXERR_OPT_PROXYPORTS.ErrorBox.Message
+#, fuzzy
 msgid  "Invalid value!\n\nThe maximum value for a port number is 65535."
-msgstr ""
+msgstr "Invalid value!\n\nThe maximum value for a port number is 65535."
 
 #: source/options/optinet2.src#RID_SVXDLG_OPT_JAVASCRIPT_DISABLE.FT_JSCPT_WARNING.FixedText.Text
+#, fuzzy
 msgid  "Please note that with Java\nyou disable Javascript as well.\n\nDo you still want to disable Java?"
-msgstr ""
+msgstr "Please note that with Java\nyou disable JavaScript as well.\n\nDo you still want to disable Java?"
 
 #: source/options/optinet2.src#RID_SVXDLG_OPT_JAVASCRIPT_DISABLE.CB_JSCPT_DISABLE.CheckBox.Text
 #, fuzzy
@@ -3880,12 +3912,14 @@ msgid  "City/State/Zip"
 msgstr "Post town/County/Postcode"
 
 #: source/options/optgenrl.src#RID_SFXPAGE_GENERAL.STR_QUERY_REG.String.Text
+#, fuzzy
 msgid  "Note that street, Zip code and city are used to generate the registration key. You will not be able to change the user data again until the registration has been carried out. Do you want to modify the user data now?"
-msgstr ""
+msgstr "Note that street, postcode and post town are used to generate the registration key. You will not be able to change the user data again until the registration has been carried out. Do you want to modify the user data now?"
 
 #: source/options/optgenrl.src#RID_SVXQB_CHANGEDATA.QueryBox.Message
+#, fuzzy
 msgid  "The User Data have been changed.\nDo you really want to change your User Data?"
-msgstr ""
+msgstr "The User Data have been changed.\nDo you really want to change your User Data?"
 
 #: source/options/optjsearch.src#RID_SVXPAGE_JSEARCH_OPTIONS.FL_TREAT_AS_EQUAL.FixedLine.Text
 #, fuzzy
@@ -4463,16 +4497,19 @@ msgid  "Create Database Link"
 msgstr "Create Database Link"
 
 #: source/options/doclinkdialog.src#STR_LINKEDDOC_DOESNOTEXIST.String.Text
+#, fuzzy
 msgid  "The file\n$file$\ndoes not exist."
-msgstr ""
+msgstr "The file\n$file$\ndoes not exist."
 
 #: source/options/doclinkdialog.src#STR_LINKEDDOC_NO_SYSTEM_FILE.String.Text
+#, fuzzy
 msgid  "The file\n$file$\ndoes not exist in the local file system."
-msgstr ""
+msgstr "The file\n$file$\ndoes not exist in the local file system."
 
 #: source/options/doclinkdialog.src#STR_NAME_CONFLICT.String.Text
+#, fuzzy
 msgid  "The name '$file$' is already used for another database.\nPlease choose a different name."
-msgstr ""
+msgstr "The name '$file$' is already used for another database.\nPlease choose a different name."
 
 #: source/options/doclinkdialog.src#QUERY_DELETE_CONFIRM.QueryBox.Message
 #, fuzzy
@@ -4495,52 +4532,64 @@ msgid  "The selected module could not be loaded."
 msgstr "The selected module could not be loaded."
 
 #: source/options/treeopt.src#RID_OFADLG_OPTIONS_TREE.STR_HELPTEXTS.SID_GENERAL_OPTIONS.ItemList.item
+#, fuzzy
 msgid  "This dialog is used to define general settings when working with %PRODUCTNAME. Enter your personal data, the defaults to be used when saving documents, and paths to important files. These settings will be saved automatically and used in later sessions as well."
-msgstr ""
+msgstr "This dialogue box is used to define general settings when working with %PRODUCTNAME. Enter your personal data, the defaults to be used when saving documents and paths to important files. These settings will be saved automatically and used in later sessions as well."
 
 #: source/options/treeopt.src#RID_OFADLG_OPTIONS_TREE.STR_HELPTEXTS.SID_LANGUAGE_OPTIONS.ItemList.item
+#, fuzzy
 msgid  "This is where you make settings concerning language and writing aids for your work with %PRODUCTNAME."
-msgstr ""
+msgstr "This is where you make settings concerning language and writing aids for your work with %PRODUCTNAME."
 
 #: source/options/treeopt.src#RID_OFADLG_OPTIONS_TREE.STR_HELPTEXTS.SID_INET_DLG.ItemList.item
+#, fuzzy
 msgid  "This is where you configure %PRODUCTNAME for the Internet. You can define search engines or save your proxy settings."
-msgstr ""
+msgstr "This is where you configure %PRODUCTNAME for the Internet. You can define search engines or save your proxy settings."
 
 #: source/options/treeopt.src#RID_OFADLG_OPTIONS_TREE.STR_HELPTEXTS.SID_SW_EDITOPTIONS.ItemList.item
+#, fuzzy
 msgid  "This is where you specify various settings for text documents. These settings determine how your text documents are handled in %PRODUCTNAME and are valid for all new %PRODUCTNAME Writer documents. You can also define a few settings for the active text document if you save it afterwards."
-msgstr ""
+msgstr "This is where you specify various settings for text documents. These settings determine how your text documents are handled in %PRODUCTNAME and are valid for all new %PRODUCTNAME Writer documents. You can also define a few settings for the active text document if you save it afterwards."
 
 #: source/options/treeopt.src#RID_OFADLG_OPTIONS_TREE.STR_HELPTEXTS.SID_SW_ONLINEOPTIONS.ItemList.item
+#, fuzzy
 msgid  "This is where you define the basic settings for %PRODUCTNAME documents in HTML format. For example, you decide which contents should be displayed on the screen or printed, how the pages are scrolled on the screen, in which color keywords are highlighted in the source text and much more."
-msgstr ""
+msgstr "This is where you define the basic settings for %PRODUCTNAME documents in HTML format. For example, you decide which contents should be displayed on the screen or printed, how the pages are scrolled on the screen, in which colour keywords are highlighted in the source text and much more."
 
 #: source/options/treeopt.src#RID_OFADLG_OPTIONS_TREE.STR_HELPTEXTS.SID_SC_EDITOPTIONS.ItemList.item
+#, fuzzy
 msgid  "This is where you define various global settings for spreadsheets. For example, you can define which contents should be displayed and in which direction the cursor will move after you enter data in a cell. You also define sort lists, the number of the decimal places displayed, etc."
-msgstr ""
+msgstr "This is where you define various global settings for spreadsheets. For example, you can define which contents should be displayed and in which direction the cursor will move after you enter data in a cell. You also define sort lists, the number of decimal places displayed, etc."
 
 #: source/options/treeopt.src#RID_OFADLG_OPTIONS_TREE.STR_HELPTEXTS.SID_SD_EDITOPTIONS.ItemList.item
+#, fuzzy
 msgid  "This is where you define the settings that apply to all newly saved presentations. Among other things, you decide which contents are displayed on the slides, which default unit of measure is used, if and how grid alignment is used, and if notes and handouts are always printed."
-msgstr ""
+msgstr "This is where you define the settings that apply to all newly saved presentations. Among other things, you decide which contents are displayed on the slides, which default unit of measure is used, if and how grid alignment is used and if notes and handouts are always printed."
 
 #: source/options/treeopt.src#RID_OFADLG_OPTIONS_TREE.STR_HELPTEXTS.SID_SD_GRAPHIC_OPTIONS.ItemList.item
+#, fuzzy
 msgid  "This is where you define the settings for drawing documents. Among other things, you determine which contents are displayed on the pages, which scale is used, if and how grid alignment is used, and which contents are printed by default."
-msgstr ""
+msgstr "This is where you define the settings for drawing documents. Among other things, you determine which contents are displayed on the pages, which scale is used, if and how grid alignment is used and which contents are printed by default."
 
 #: source/options/treeopt.src#RID_OFADLG_OPTIONS_TREE.STR_HELPTEXTS.SID_SM_EDITOPTIONS.ItemList.item
+#, fuzzy
 msgid  "This is where you select the print format and print options for all newly saved formula documents. These options take effect when you want to print a formula directly from %PRODUCTNAME Math."
-msgstr ""
+msgstr "This is where you select the print format and print options for all newly saved formula documents. These options take effect when you want to print a formula directly from %PRODUCTNAME Math."
 
 #: source/options/treeopt.src#RID_OFADLG_OPTIONS_TREE.STR_HELPTEXTS.SID_SCH_EDITOPTIONS.ItemList.item
+#, fuzzy
 msgid  "This is where you specify general default settings for your %PRODUCTNAME Charts. Set the colors you want for all new charts."
-msgstr ""
+msgstr "This is where you specify general default settings for your %PRODUCTNAME Charts. Set the colours you want for all new charts."
 
 #: source/options/treeopt.src#RID_OFADLG_OPTIONS_TREE.STR_HELPTEXTS.SID_SB_STARBASEOPTIONS.ItemList.item
+#, fuzzy
 msgid  "This is where you define general settings for accessing external data sources."
-msgstr ""
+msgstr "This is where you define general settings for accessing external data sources."
 
 #: source/options/treeopt.src#RID_OFADLG_OPTIONS_TREE.STR_HELPTEXTS.SID_FILTER_DLG.ItemList.item
+#, fuzzy
 msgid  "This is where you define general settings for opening and saving documents in external formats. You can control the behavior of macros or OLE objects in Microsoft Office documents or define settings for HTML documents."
-msgstr ""
+msgstr "This is where you define general settings for opening and saving documents in external formats. You can control the behaviour of macros or OLE objects in Microsoft Office documents or define settings for HTML documents."
 
 #: source/options/treeopt.src#RID_OFADLG_OPTIONS_TREE_PAGES.SID_GENERAL_OPTIONS.0.ItemList.item
 #, fuzzy
@@ -5127,20 +5176,24 @@ msgid  "~Remove"
 msgstr "~Remove"
 
 #: source/options/optjava.src#RID_SVXERR_JRE_NOT_RECOGNIZED.ErrorBox.Message
+#, fuzzy
 msgid  "The folder you selected does not contain a Java runtime environment.\nPlease select a different folder."
-msgstr ""
+msgstr "The folder you selected does not contain a Java runtime environment.\nPlease select a different folder."
 
 #: source/options/optjava.src#RID_SVXERR_JRE_FAILED_VERSION.ErrorBox.Message
+#, fuzzy
 msgid  "The Java runtime environment you selected is not the required version.\nPlease select a different folder."
-msgstr ""
+msgstr "The Java runtime environment you selected is not the required version.\nPlease select a different folder."
 
 #: source/options/optjava.src#RID_SVX_MSGBOX_JAVA_RESTART.WarningBox.Message
+#, fuzzy
 msgid  "For the selected Java runtime environment to work properly, %PRODUCTNAME must be restarted.\nPlease restart %PRODUCTNAME now."
-msgstr ""
+msgstr "For the selected Java runtime environment to work properly, %PRODUCTNAME must be restarted.\nPlease restart %PRODUCTNAME now."
 
 #: source/options/optjava.src#RID_SVX_MSGBOX_JAVA_RESTART2.WarningBox.Message
+#, fuzzy
 msgid  "You have to restart %PRODUCTNAME so the new or modified values can take effect.\nPlease restart %PRODUCTNAME now."
-msgstr ""
+msgstr "You must restart %PRODUCTNAME so the new or modified values can take effect.\nPlease restart %PRODUCTNAME now."
 
 #: source/options/connpooloptions.src#RID_OFAPAGE_CONNPOOLOPTIONS.FL_POOLING.FixedLine.Text
 #, fuzzy
@@ -5196,6 +5249,11 @@ msgstr "Yes"
 #, fuzzy
 msgid  "No"
 msgstr "No"
+
+#: source/options/optsave.src#TEXT_SAVEPAGE.#define.Text
+#, fuzzy
+msgid  "Save"
+msgstr "Save"
 
 #: source/options/optsave.src#RID_SFXPAGE_SAVE.LB_LOAD.FixedLine.Text
 #, fuzzy
@@ -5333,13 +5391,9 @@ msgid  "Not using ODF 1.2 Extended may cause infomation to be lost."
 msgstr "Not using ODF 1.2 Extended may cause infomation to be lost."
 
 #: source/options/optsave.src#RID_SVXDLG_FILTER_WARNING.FT_FILTER_WARNING.FixedText.Text
-msgid  "Using "%1" as default file format may cause information loss.\n"
-msgstr ""
-
-#: source/options/optsave.src#TEXT_SAVEPAGE.#define.Text
 #, fuzzy
-msgid  "Save"
-msgstr "Save"
+msgid  "Using \"%1\" as default file format may cause information loss.\n"
+msgstr "Using \"%1\" as default file format may cause information loss.\n"
 
 #: source/options/optimprove.src#RID_SVXPAGE_IMPROVEMENT.TabPage.Text
 #, fuzzy
@@ -5352,12 +5406,14 @@ msgid  "Improvement Program"
 msgstr "Improvement Program"
 
 #: source/options/optimprove.src#RID_SVXPAGE_IMPROVEMENT.FT_INVITATION.FixedText.Text
+#, fuzzy
 msgid  "We invite you to join our %PRODUCTNAME Improvement Program to help optimize the quality of %PRODUCTNAME.\n\nIf you are willing to participate, we will collect anonymous statistics about how you use %PRODUCTNAME. The data is used to identify usage patterns.\n\nThe %PRODUCTNAME Improvement Program will not collect any personal data, or document content."
-msgstr ""
+msgstr "We invite you to join our %PRODUCTNAME Improvement Program to help optimise the quality of %PRODUCTNAME.\n\nIf you are willing to participate, we will collect anonymous statistics about how you use %PRODUCTNAME. The data is used to identify usage patterns.\n\nThe %PRODUCTNAME Improvement Program will not collect any personal data, or document content."
 
 #: source/options/optimprove.src#RID_SVXPAGE_IMPROVEMENT.RB_YES.RadioButton.Text
+#, fuzzy
 msgid  "~Yes, I am willing to participate in the %PRODUCTNAME Improvement Program"
-msgstr ""
+msgstr "~Yes, I am willing to participate in the %PRODUCTNAME Improvement Program"
 
 #: source/options/optimprove.src#RID_SVXPAGE_IMPROVEMENT.RB_NO.RadioButton.Text
 #, fuzzy
@@ -5495,8 +5551,9 @@ msgid  "Edit Paths: %1"
 msgstr "Edit Paths: %1"
 
 #: source/options/optpath.src#RID_SVXERR_OPT_DOUBLEPATHS.ErrorBox.Message
+#, fuzzy
 msgid  "The configuration and mail directories must be specified as separate directories.\nPlease choose a new path."
-msgstr ""
+msgstr "The configuration and mail directories must be specified as separate directories.\nPlease choose a new path."
 
 #: source/options/optpath.src#RID_SVXSTR_KEY_CONFIG_DIR.String.Text
 #, fuzzy
@@ -5734,8 +5791,9 @@ msgid  "Document status"
 msgstr "Document status"
 
 #: source/options/optgdlg.src#OFA_TP_MISC.CB_DOCSTATUS.CheckBox.Text
-msgid  "~Printing sets "document modified" status"
-msgstr ""
+#, fuzzy
+msgid  "~Printing sets \"document modified\" status"
+msgstr "~Printing sets \"document modified\" status"
 
 #: source/options/optgdlg.src#OFA_TP_MISC.FL_TWOFIGURE.FixedLine.Text
 #, fuzzy
@@ -6028,8 +6086,9 @@ msgid  "Show UI elements for B~i-Directional writing"
 msgstr "Show UI elements for B~i-Directional writing"
 
 #: source/options/optgdlg.src#RID_SVX_MSGBOX_LANGUAGE_RESTART.InfoBox.Message
+#, fuzzy
 msgid  "The language setting of the user interface has been updated and will take effect the next time you start %PRODUCTNAME %PRODUCTVERSION"
-msgstr ""
+msgstr "The language setting of the user interface has been updated and will take effect the next time that you start %PRODUCTNAME %PRODUCTVERSION"
 
 #: source/options/optspell.src#RID_SFXPAGE_SPELL.TabPage.Text
 #, fuzzy
@@ -6212,8 +6271,9 @@ msgid  "~Close"
 msgstr "~Close"
 
 #: source/options/optdict.src#RID_SVXSTR_OPT_DOUBLE_DICTS.String.Text
+#, fuzzy
 msgid  "The specified name already exists.\nPlease enter a new name."
-msgstr ""
+msgstr "The specified name already exists.\nPlease enter a new name."
 
 #: source/options/optdict.src#RID_SFXQB_SET_LANGUAGE.QueryBox.Message
 #, fuzzy
@@ -6626,8 +6686,9 @@ msgid  "Security warnings"
 msgstr "Security warnings"
 
 #: source/options/securityoptions.src#RID_SVXDLG_SECURITY_OPTIONS.FI_WARNINGS.FixedText.Text
+#, fuzzy
 msgid  "Warn if document contains recorded changes, versions, hidden information or notes:"
-msgstr ""
+msgstr "Warn if document contains recorded changes, versions, hidden information or notes:"
 
 #: source/options/securityoptions.src#RID_SVXDLG_SECURITY_OPTIONS.CB_SAVESENDDOCS.CheckBox.Text
 #, fuzzy
@@ -6936,6 +6997,31 @@ msgstr "Ty~pe"
 
 #: source/tabpages/tabarea.src#RID_SVXPAGE_TRANSPARENCE.LB_TRGR_GRADIENT_TYPES.Default.StringList.item
 #, fuzzy
+msgid  "Linear"
+msgstr "Linear"
+
+#: source/tabpages/tabarea.src#RID_SVXPAGE_TRANSPARENCE.LB_TRGR_GRADIENT_TYPES.Default.StringList.item
+#, fuzzy
+msgid  "Axial"
+msgstr "Axial"
+
+#: source/tabpages/tabarea.src#RID_SVXPAGE_TRANSPARENCE.LB_TRGR_GRADIENT_TYPES.Default.StringList.item
+#, fuzzy
+msgid  "Radial"
+msgstr "Radial"
+
+#: source/tabpages/tabarea.src#RID_SVXPAGE_TRANSPARENCE.LB_TRGR_GRADIENT_TYPES.Default.StringList.item
+#, fuzzy
+msgid  "Ellipsoid"
+msgstr "Ellipsoid"
+
+#: source/tabpages/tabarea.src#RID_SVXPAGE_TRANSPARENCE.LB_TRGR_GRADIENT_TYPES.Default.StringList.item
+#, fuzzy
+msgid  "Quadratic"
+msgstr "Quadratic"
+
+#: source/tabpages/tabarea.src#RID_SVXPAGE_TRANSPARENCE.LB_TRGR_GRADIENT_TYPES.Default.StringList.item
+#, fuzzy
 msgid  "Square"
 msgstr "Square"
 
@@ -6988,6 +7074,26 @@ msgstr "Area"
 #, fuzzy
 msgid  "Fill"
 msgstr "Fill"
+
+#: source/tabpages/tabarea.src#RID_SVXPAGE_AREA.LB_AREA_TYPE.Default.StringList.item
+#, fuzzy
+msgid  "None"
+msgstr "None"
+
+#: source/tabpages/tabarea.src#RID_SVXPAGE_AREA.LB_AREA_TYPE.Default.StringList.item
+#, fuzzy
+msgid  "Color"
+msgstr "Colour"
+
+#: source/tabpages/tabarea.src#RID_SVXPAGE_AREA.LB_AREA_TYPE.Default.StringList.item
+#, fuzzy
+msgid  "Gradient"
+msgstr "Gradient"
+
+#: source/tabpages/tabarea.src#RID_SVXPAGE_AREA.LB_AREA_TYPE.Default.StringList.item
+#, fuzzy
+msgid  "Hatching"
+msgstr "Hatching"
 
 #: source/tabpages/tabarea.src#RID_SVXPAGE_AREA.LB_AREA_TYPE.Default.StringList.item
 #, fuzzy
@@ -7141,6 +7247,16 @@ msgstr "~Line type"
 
 #: source/tabpages/tabarea.src#RID_SVXPAGE_HATCH.LB_LINE_TYPE.Default.StringList.item
 #, fuzzy
+msgid  "Single"
+msgstr "Single"
+
+#: source/tabpages/tabarea.src#RID_SVXPAGE_HATCH.LB_LINE_TYPE.Default.StringList.item
+#, fuzzy
+msgid  "Crossed"
+msgstr "Crossed"
+
+#: source/tabpages/tabarea.src#RID_SVXPAGE_HATCH.LB_LINE_TYPE.Default.StringList.item
+#, fuzzy
 msgid  "Triple"
 msgstr "Triple"
 
@@ -7251,6 +7367,31 @@ msgstr "Ty~pe"
 
 #: source/tabpages/tabarea.src#RID_SVXPAGE_GRADIENT.LB_GRADIENT_TYPES.Default.StringList.item
 #, fuzzy
+msgid  "Linear"
+msgstr "Linear"
+
+#: source/tabpages/tabarea.src#RID_SVXPAGE_GRADIENT.LB_GRADIENT_TYPES.Default.StringList.item
+#, fuzzy
+msgid  "Axial"
+msgstr "Axial"
+
+#: source/tabpages/tabarea.src#RID_SVXPAGE_GRADIENT.LB_GRADIENT_TYPES.Default.StringList.item
+#, fuzzy
+msgid  "Radial"
+msgstr "Radial"
+
+#: source/tabpages/tabarea.src#RID_SVXPAGE_GRADIENT.LB_GRADIENT_TYPES.Default.StringList.item
+#, fuzzy
+msgid  "Ellipsoid"
+msgstr "Ellipsoid"
+
+#: source/tabpages/tabarea.src#RID_SVXPAGE_GRADIENT.LB_GRADIENT_TYPES.Default.StringList.item
+#, fuzzy
+msgid  "Square"
+msgstr "Square"
+
+#: source/tabpages/tabarea.src#RID_SVXPAGE_GRADIENT.LB_GRADIENT_TYPES.Default.StringList.item
+#, fuzzy
 msgid  "Rectangular"
 msgstr "Rectangular"
 
@@ -7341,6 +7482,11 @@ msgstr "Colour table"
 
 #: source/tabpages/tabarea.src#RID_SVXPAGE_COLOR.LB_COLORMODEL.Default.StringList.item
 #, fuzzy
+msgid  "RGB"
+msgstr "RGB"
+
+#: source/tabpages/tabarea.src#RID_SVXPAGE_COLOR.LB_COLORMODEL.Default.StringList.item
+#, fuzzy
 msgid  "CMYK"
 msgstr "CMYK"
 
@@ -7423,91 +7569,6 @@ msgstr "Hatching Style"
 #, fuzzy
 msgid  "Color Mode"
 msgstr "Colour Mode"
-
-#: source/tabpages/tabarea.src#RID_SVXPAGE_TRANSPARENCE.LB_TRGR_GRADIENT_TYPES.Default.StringList.item
-#, fuzzy
-msgid  "Linear"
-msgstr "Linear"
-
-#: source/tabpages/tabarea.src#RID_SVXPAGE_TRANSPARENCE.LB_TRGR_GRADIENT_TYPES.Default.StringList.item
-#, fuzzy
-msgid  "Axial"
-msgstr "Axial"
-
-#: source/tabpages/tabarea.src#RID_SVXPAGE_TRANSPARENCE.LB_TRGR_GRADIENT_TYPES.Default.StringList.item
-#, fuzzy
-msgid  "Radial"
-msgstr "Radial"
-
-#: source/tabpages/tabarea.src#RID_SVXPAGE_TRANSPARENCE.LB_TRGR_GRADIENT_TYPES.Default.StringList.item
-#, fuzzy
-msgid  "Ellipsoid"
-msgstr "Ellipsoid"
-
-#: source/tabpages/tabarea.src#RID_SVXPAGE_TRANSPARENCE.LB_TRGR_GRADIENT_TYPES.Default.StringList.item
-#, fuzzy
-msgid  "Quadratic"
-msgstr "Quadratic"
-
-#: source/tabpages/tabarea.src#RID_SVXPAGE_AREA.LB_AREA_TYPE.Default.StringList.item
-#, fuzzy
-msgid  "None"
-msgstr "None"
-
-#: source/tabpages/tabarea.src#RID_SVXPAGE_AREA.LB_AREA_TYPE.Default.StringList.item
-#, fuzzy
-msgid  "Color"
-msgstr "Colour"
-
-#: source/tabpages/tabarea.src#RID_SVXPAGE_AREA.LB_AREA_TYPE.Default.StringList.item
-#, fuzzy
-msgid  "Gradient"
-msgstr "Gradient"
-
-#: source/tabpages/tabarea.src#RID_SVXPAGE_AREA.LB_AREA_TYPE.Default.StringList.item
-#, fuzzy
-msgid  "Hatching"
-msgstr "Hatching"
-
-#: source/tabpages/tabarea.src#RID_SVXPAGE_HATCH.LB_LINE_TYPE.Default.StringList.item
-#, fuzzy
-msgid  "Single"
-msgstr "Single"
-
-#: source/tabpages/tabarea.src#RID_SVXPAGE_HATCH.LB_LINE_TYPE.Default.StringList.item
-#, fuzzy
-msgid  "Crossed"
-msgstr "Crossed"
-
-#: source/tabpages/tabarea.src#RID_SVXPAGE_GRADIENT.LB_GRADIENT_TYPES.Default.StringList.item
-#, fuzzy
-msgid  "Linear"
-msgstr "Linear"
-
-#: source/tabpages/tabarea.src#RID_SVXPAGE_GRADIENT.LB_GRADIENT_TYPES.Default.StringList.item
-#, fuzzy
-msgid  "Axial"
-msgstr "Axial"
-
-#: source/tabpages/tabarea.src#RID_SVXPAGE_GRADIENT.LB_GRADIENT_TYPES.Default.StringList.item
-#, fuzzy
-msgid  "Radial"
-msgstr "Radial"
-
-#: source/tabpages/tabarea.src#RID_SVXPAGE_GRADIENT.LB_GRADIENT_TYPES.Default.StringList.item
-#, fuzzy
-msgid  "Ellipsoid"
-msgstr "Ellipsoid"
-
-#: source/tabpages/tabarea.src#RID_SVXPAGE_GRADIENT.LB_GRADIENT_TYPES.Default.StringList.item
-#, fuzzy
-msgid  "Square"
-msgstr "Square"
-
-#: source/tabpages/tabarea.src#RID_SVXPAGE_COLOR.LB_COLORMODEL.Default.StringList.item
-#, fuzzy
-msgid  "RGB"
-msgstr "RGB"
 
 #: source/tabpages/frmdirlbox.src#RID_SVXSTR_FRAMEDIR_LTR.String.Text
 #, fuzzy
@@ -7626,6 +7687,21 @@ msgstr "Page layout"
 
 #: source/tabpages/page.src#RID_SVXPAGE_PAGE.LB_LAYOUT.Default.StringList.item
 #, fuzzy
+msgid  "Right and left"
+msgstr "Right and left"
+
+#: source/tabpages/page.src#RID_SVXPAGE_PAGE.LB_LAYOUT.Default.StringList.item
+#, fuzzy
+msgid  "Mirrored"
+msgstr "Mirrored"
+
+#: source/tabpages/page.src#RID_SVXPAGE_PAGE.LB_LAYOUT.Default.StringList.item
+#, fuzzy
+msgid  "Only right"
+msgstr "Only right"
+
+#: source/tabpages/page.src#RID_SVXPAGE_PAGE.LB_LAYOUT.Default.StringList.item
+#, fuzzy
 msgid  "Only left"
 msgstr "Only left"
 
@@ -7633,6 +7709,31 @@ msgstr "Only left"
 #, fuzzy
 msgid  "For~mat"
 msgstr "For~mat"
+
+#: source/tabpages/page.src#RID_SVXPAGE_PAGE.LB_NUMBER_FORMAT.Default.StringList.item
+#, fuzzy
+msgid  "A, B, C, ..."
+msgstr "A, B, C, ..."
+
+#: source/tabpages/page.src#RID_SVXPAGE_PAGE.LB_NUMBER_FORMAT.Default.StringList.item
+#, fuzzy
+msgid  "a, b, c, ..."
+msgstr "a, b, c, ..."
+
+#: source/tabpages/page.src#RID_SVXPAGE_PAGE.LB_NUMBER_FORMAT.Default.StringList.item
+#, fuzzy
+msgid  "I, II, III, ..."
+msgstr "I, II, III, ..."
+
+#: source/tabpages/page.src#RID_SVXPAGE_PAGE.LB_NUMBER_FORMAT.Default.StringList.item
+#, fuzzy
+msgid  "i, ii, iii, ..."
+msgstr "i, ii, iii, ..."
+
+#: source/tabpages/page.src#RID_SVXPAGE_PAGE.LB_NUMBER_FORMAT.Default.StringList.item
+#, fuzzy
+msgid  "1, 2, 3, ..."
+msgstr "1, 2, 3, ..."
 
 #: source/tabpages/page.src#RID_SVXPAGE_PAGE.LB_NUMBER_FORMAT.Default.StringList.item
 #, fuzzy
@@ -7680,8 +7781,9 @@ msgid  "O~uter"
 msgstr "O~uter"
 
 #: source/tabpages/page.src#RID_SVXPAGE_PAGE.STR_QUERY_PRINTRANGE.String.Text
+#, fuzzy
 msgid  "The margin settings are out of print range.\n\nDo you still want to apply these settings?"
-msgstr ""
+msgstr "The margin settings are out of print range.\n\nDo you still want to apply these settings?"
 
 #: source/tabpages/page.src#RID_SVXSTRARY_PAPERSIZE_STD.PAPERSIZE_A6.ItemList.item
 #, fuzzy
@@ -7968,46 +8070,6 @@ msgstr "Dia Slide"
 msgid  "Screen"
 msgstr "Screen"
 
-#: source/tabpages/page.src#RID_SVXPAGE_PAGE.LB_LAYOUT.Default.StringList.item
-#, fuzzy
-msgid  "Right and left"
-msgstr "Right and left"
-
-#: source/tabpages/page.src#RID_SVXPAGE_PAGE.LB_LAYOUT.Default.StringList.item
-#, fuzzy
-msgid  "Mirrored"
-msgstr "Mirrored"
-
-#: source/tabpages/page.src#RID_SVXPAGE_PAGE.LB_LAYOUT.Default.StringList.item
-#, fuzzy
-msgid  "Only right"
-msgstr "Only right"
-
-#: source/tabpages/page.src#RID_SVXPAGE_PAGE.LB_NUMBER_FORMAT.Default.StringList.item
-#, fuzzy
-msgid  "A, B, C, ..."
-msgstr "A, B, C, ..."
-
-#: source/tabpages/page.src#RID_SVXPAGE_PAGE.LB_NUMBER_FORMAT.Default.StringList.item
-#, fuzzy
-msgid  "a, b, c, ..."
-msgstr "a, b, c, ..."
-
-#: source/tabpages/page.src#RID_SVXPAGE_PAGE.LB_NUMBER_FORMAT.Default.StringList.item
-#, fuzzy
-msgid  "I, II, III, ..."
-msgstr "I, II, III, ..."
-
-#: source/tabpages/page.src#RID_SVXPAGE_PAGE.LB_NUMBER_FORMAT.Default.StringList.item
-#, fuzzy
-msgid  "i, ii, iii, ..."
-msgstr "i, ii, iii, ..."
-
-#: source/tabpages/page.src#RID_SVXPAGE_PAGE.LB_NUMBER_FORMAT.Default.StringList.item
-#, fuzzy
-msgid  "1, 2, 3, ..."
-msgstr "1, 2, 3, ..."
-
 #: source/tabpages/numfmt.src#RID_SVXPAGE_NUMBERFORMAT.TabPage.Text
 #, fuzzy
 msgid  "Number Format"
@@ -8017,6 +8079,56 @@ msgstr "Number Format"
 #, fuzzy
 msgid  "~Category"
 msgstr "~Category"
+
+#: source/tabpages/numfmt.src#RID_SVXPAGE_NUMBERFORMAT.LB_CATEGORY.Default.StringList.item
+#, fuzzy
+msgid  "All"
+msgstr "All"
+
+#: source/tabpages/numfmt.src#RID_SVXPAGE_NUMBERFORMAT.LB_CATEGORY.Default.StringList.item
+#, fuzzy
+msgid  "User-defined"
+msgstr "User-defined"
+
+#: source/tabpages/numfmt.src#RID_SVXPAGE_NUMBERFORMAT.LB_CATEGORY.Default.StringList.item
+#, fuzzy
+msgid  "Number"
+msgstr "Number"
+
+#: source/tabpages/numfmt.src#RID_SVXPAGE_NUMBERFORMAT.LB_CATEGORY.Default.StringList.item
+#, fuzzy
+msgid  "Percent"
+msgstr "Percent"
+
+#: source/tabpages/numfmt.src#RID_SVXPAGE_NUMBERFORMAT.LB_CATEGORY.Default.StringList.item
+#, fuzzy
+msgid  "Currency"
+msgstr "Currency"
+
+#: source/tabpages/numfmt.src#RID_SVXPAGE_NUMBERFORMAT.LB_CATEGORY.Default.StringList.item
+#, fuzzy
+msgid  "Date"
+msgstr "Date"
+
+#: source/tabpages/numfmt.src#RID_SVXPAGE_NUMBERFORMAT.LB_CATEGORY.Default.StringList.item
+#, fuzzy
+msgid  "Time"
+msgstr "Time"
+
+#: source/tabpages/numfmt.src#RID_SVXPAGE_NUMBERFORMAT.LB_CATEGORY.Default.StringList.item
+#, fuzzy
+msgid  "Scientific"
+msgstr "Scientific"
+
+#: source/tabpages/numfmt.src#RID_SVXPAGE_NUMBERFORMAT.LB_CATEGORY.Default.StringList.item
+#, fuzzy
+msgid  "Fraction"
+msgstr "Fraction"
+
+#: source/tabpages/numfmt.src#RID_SVXPAGE_NUMBERFORMAT.LB_CATEGORY.Default.StringList.item
+#, fuzzy
+msgid  "Boolean Value"
+msgstr "Boolean Value"
 
 #: source/tabpages/numfmt.src#RID_SVXPAGE_NUMBERFORMAT.LB_CATEGORY.Default.StringList.item
 #, fuzzy
@@ -8092,56 +8204,6 @@ msgstr "Edit Comment"
 #, fuzzy
 msgid  "Automatic"
 msgstr "Automatic"
-
-#: source/tabpages/numfmt.src#RID_SVXPAGE_NUMBERFORMAT.LB_CATEGORY.Default.StringList.item
-#, fuzzy
-msgid  "All"
-msgstr "All"
-
-#: source/tabpages/numfmt.src#RID_SVXPAGE_NUMBERFORMAT.LB_CATEGORY.Default.StringList.item
-#, fuzzy
-msgid  "User-defined"
-msgstr "User-defined"
-
-#: source/tabpages/numfmt.src#RID_SVXPAGE_NUMBERFORMAT.LB_CATEGORY.Default.StringList.item
-#, fuzzy
-msgid  "Number"
-msgstr "Number"
-
-#: source/tabpages/numfmt.src#RID_SVXPAGE_NUMBERFORMAT.LB_CATEGORY.Default.StringList.item
-#, fuzzy
-msgid  "Percent"
-msgstr "Percent"
-
-#: source/tabpages/numfmt.src#RID_SVXPAGE_NUMBERFORMAT.LB_CATEGORY.Default.StringList.item
-#, fuzzy
-msgid  "Currency"
-msgstr "Currency"
-
-#: source/tabpages/numfmt.src#RID_SVXPAGE_NUMBERFORMAT.LB_CATEGORY.Default.StringList.item
-#, fuzzy
-msgid  "Date"
-msgstr "Date"
-
-#: source/tabpages/numfmt.src#RID_SVXPAGE_NUMBERFORMAT.LB_CATEGORY.Default.StringList.item
-#, fuzzy
-msgid  "Time"
-msgstr "Time"
-
-#: source/tabpages/numfmt.src#RID_SVXPAGE_NUMBERFORMAT.LB_CATEGORY.Default.StringList.item
-#, fuzzy
-msgid  "Scientific"
-msgstr "Scientific"
-
-#: source/tabpages/numfmt.src#RID_SVXPAGE_NUMBERFORMAT.LB_CATEGORY.Default.StringList.item
-#, fuzzy
-msgid  "Fraction"
-msgstr "Fraction"
-
-#: source/tabpages/numfmt.src#RID_SVXPAGE_NUMBERFORMAT.LB_CATEGORY.Default.StringList.item
-#, fuzzy
-msgid  "Boolean Value"
-msgstr "Boolean Value"
 
 #: source/tabpages/numpages.src#RID_SVXPAGE_PICK_BULLET.FL_VALUES.FixedLine.Text
 #, fuzzy
@@ -8643,6 +8705,11 @@ msgstr "S~pacing"
 msgid  "~Bottom"
 msgstr "~Bottom"
 
+#: source/tabpages/backgrnd.src#UNLINKED_IMAGE.#define.Text
+#, fuzzy
+msgid  "Unlinked graphic"
+msgstr "Unlinked graphic"
+
 #: source/tabpages/backgrnd.src#RID_SVXPAGE_BACKGROUND.TabPage.Text
 #, fuzzy
 msgid  "Background"
@@ -8652,6 +8719,11 @@ msgstr "Background"
 #, fuzzy
 msgid  "A~s"
 msgstr "A~s"
+
+#: source/tabpages/backgrnd.src#RID_SVXPAGE_BACKGROUND.LB_SELECTOR.Default.StringList.item
+#, fuzzy
+msgid  "Color"
+msgstr "Colour"
 
 #: source/tabpages/backgrnd.src#RID_SVXPAGE_BACKGROUND.LB_SELECTOR.Default.StringList.item
 #, fuzzy
@@ -8747,16 +8819,6 @@ msgstr "Pre~view"
 #, fuzzy
 msgid  "Find graphics"
 msgstr "Find graphics"
-
-#: source/tabpages/backgrnd.src#UNLINKED_IMAGE.#define.Text
-#, fuzzy
-msgid  "Unlinked graphic"
-msgstr "Unlinked graphic"
-
-#: source/tabpages/backgrnd.src#RID_SVXPAGE_BACKGROUND.LB_SELECTOR.Default.StringList.item
-#, fuzzy
-msgid  "Color"
-msgstr "Colour"
 
 #: source/tabpages/macroass.src#RID_SVXPAGE_EVENTASSIGN.TabPage.Text
 #, fuzzy
@@ -9069,8 +9131,9 @@ msgid  "[T]"
 msgstr "[T]"
 
 #: source/tabpages/autocdlg.src#RID_OFAPAGE_AUTOCORR_QUOTE.ST_NON_BREAK_SPACE.String.Text
+#, fuzzy
 msgid  "Add non breaking space before specific punctuation marks in french text"
-msgstr ""
+msgstr "Add non-breaking space before specific punctuation marks in french text"
 
 #: source/tabpages/autocdlg.src#RID_OFAPAGE_AUTOCORR_QUOTE.ST_ORDINAL.String.Text
 #, fuzzy
@@ -9193,8 +9256,9 @@ msgid  "C~ollect words"
 msgstr "C~ollect words"
 
 #: source/tabpages/autocdlg.src#RID_OFAPAGE_AUTOCOMPLETE_OPTIONS.CB_REMOVE_LIST.CheckBox.Text
+#, fuzzy
 msgid  "~When closing a document, remove the words collected from it from the list"
-msgstr ""
+msgstr "~When closing a document, remove the words collected from it from the list"
 
 #: source/tabpages/autocdlg.src#RID_OFAPAGE_AUTOCOMPLETE_OPTIONS.FT_EXPAND_KEY.FixedText.Text
 #, fuzzy
@@ -9252,8 +9316,9 @@ msgid  "Do you want to delete the gradient?"
 msgstr "Do you want to delete the gradient?"
 
 #: source/tabpages/strings.src#RID_SVXSTR_ASK_CHANGE_GRADIENT.String.Text
+#, fuzzy
 msgid  "The gradient was modified without saving. \nModify the selected gradient or add a new gradient."
-msgstr ""
+msgstr "The gradient was modified without saving. \nModify the selected gradient or add a new gradient."
 
 #: source/tabpages/strings.src#RID_SVXSTR_DESC_NEW_BITMAP.String.Text
 #, fuzzy
@@ -9271,8 +9336,9 @@ msgid  "Are you sure you want to delete the bitmap?"
 msgstr "Are you sure you want to delete the bitmap?"
 
 #: source/tabpages/strings.src#RID_SVXSTR_ASK_CHANGE_BITMAP.String.Text
+#, fuzzy
 msgid  "The bitmap was modified without saving. \nModify the selected bitmap or add a new bitmap."
-msgstr ""
+msgstr "The bitmap was modified without saving. \nModify the selected bitmap or add a new bitmap."
 
 #: source/tabpages/strings.src#RID_SVXSTR_DESC_LINESTYLE.String.Text
 #, fuzzy
@@ -9285,8 +9351,9 @@ msgid  "Do you want to delete the line style?"
 msgstr "Do you want to delete the line style?"
 
 #: source/tabpages/strings.src#RID_SVXSTR_ASK_CHANGE_LINESTYLE.String.Text
+#, fuzzy
 msgid  "The line style was modified without saving. \nModify the selected line style or add a new line style."
-msgstr ""
+msgstr "The line style was modified without saving. \nModify the selected line style or add a new line style."
 
 #: source/tabpages/strings.src#RID_SVXSTR_DESC_HATCH.String.Text
 #, fuzzy
@@ -9299,8 +9366,9 @@ msgid  "Do you want to delete the hatching?"
 msgstr "Do you want to delete the hatching?"
 
 #: source/tabpages/strings.src#RID_SVXSTR_ASK_CHANGE_HATCH.String.Text
+#, fuzzy
 msgid  "The hatching type was modified but not saved. \nModify the selected hatching type or add a new hatching type."
-msgstr ""
+msgstr "The hatching type was modified but not saved. \nModify the selected hatching type or add a new hatching type."
 
 #: source/tabpages/strings.src#RID_SVXSTR_CHANGE.String.Text
 #, fuzzy
@@ -9323,8 +9391,9 @@ msgid  "Do you want to delete the color?"
 msgstr "Do you want to delete the colour?"
 
 #: source/tabpages/strings.src#RID_SVXSTR_ASK_CHANGE_COLOR.String.Text
+#, fuzzy
 msgid  "The color was modified without saving.\nModify the selected color or add a new color."
-msgstr ""
+msgstr "The colour was modified without saving.\nModify the selected colour or add a new colour."
 
 #: source/tabpages/strings.src#RID_SVXSTR_TABLE.String.Text
 #, fuzzy
@@ -9342,12 +9411,14 @@ msgid  "The file could not be loaded!"
 msgstr "The file could not be loaded!"
 
 #: source/tabpages/strings.src#RID_SVXSTR_WARN_TABLE_OVERWRITE.String.Text
+#, fuzzy
 msgid  "The list was modified without saving. Would you like to save the list now?"
-msgstr ""
+msgstr "The list was modified without saving. Would you like to save the list now?"
 
 #: source/tabpages/strings.src#RID_SVXSTR_WARN_NAME_DUPLICATE.String.Text
+#, fuzzy
 msgid  "The name you have entered already exists. \nPlease choose another name."
-msgstr ""
+msgstr "The name you have entered already exists. \nPlease choose another name."
 
 #: source/tabpages/strings.src#RID_SVXSTR_DESC_LINEEND.String.Text
 #, fuzzy
@@ -9360,8 +9431,9 @@ msgid  "Do you want to delete the arrowhead?"
 msgstr "Do you want to delete the arrowhead?"
 
 #: source/tabpages/strings.src#RID_SVXSTR_ASK_CHANGE_LINEEND.String.Text
+#, fuzzy
 msgid  "The arrowhead was modified without saving.\nWould you like to save the arrowhead now?"
-msgstr ""
+msgstr "The arrowhead was modified without saving.\nWould you like to save the arrowhead now?"
 
 #: source/tabpages/paragrph.src#RID_SVXPAGE_STD_PARAGRAPH.TabPage.Text
 #, fuzzy
@@ -9407,6 +9479,31 @@ msgstr "Below paragraph"
 #, fuzzy
 msgid  "Spacing"
 msgstr "Spacing"
+
+#: source/tabpages/paragrph.src#RID_SVXPAGE_STD_PARAGRAPH.LB_LINEDIST.Default.StringList.item
+#, fuzzy
+msgid  "Single"
+msgstr "Single"
+
+#: source/tabpages/paragrph.src#RID_SVXPAGE_STD_PARAGRAPH.LB_LINEDIST.Default.StringList.item
+#, fuzzy
+msgid  "1.5 lines"
+msgstr "1.5 lines"
+
+#: source/tabpages/paragrph.src#RID_SVXPAGE_STD_PARAGRAPH.LB_LINEDIST.Default.StringList.item
+#, fuzzy
+msgid  "Double"
+msgstr "Double"
+
+#: source/tabpages/paragrph.src#RID_SVXPAGE_STD_PARAGRAPH.LB_LINEDIST.Default.StringList.item
+#, fuzzy
+msgid  "Proportional"
+msgstr "Proportional"
+
+#: source/tabpages/paragrph.src#RID_SVXPAGE_STD_PARAGRAPH.LB_LINEDIST.Default.StringList.item
+#, fuzzy
+msgid  "At least"
+msgstr "At least"
 
 #: source/tabpages/paragrph.src#RID_SVXPAGE_STD_PARAGRAPH.LB_LINEDIST.Default.StringList.item
 #, fuzzy
@@ -9482,6 +9579,21 @@ msgstr "Righ~t/Bottom"
 #, fuzzy
 msgid  "~Last line"
 msgstr "~Last line"
+
+#: source/tabpages/paragrph.src#RID_SVXPAGE_ALIGN_PARAGRAPH.LB_LASTLINE.Default.StringList.item
+#, fuzzy
+msgid  "Default"
+msgstr "Default"
+
+#: source/tabpages/paragrph.src#RID_SVXPAGE_ALIGN_PARAGRAPH.LB_LASTLINE.Default.StringList.item
+#, fuzzy
+msgid  "Left"
+msgstr "Left"
+
+#: source/tabpages/paragrph.src#RID_SVXPAGE_ALIGN_PARAGRAPH.LB_LASTLINE.Default.StringList.item
+#, fuzzy
+msgid  "Centered"
+msgstr "Centred"
 
 #: source/tabpages/paragrph.src#RID_SVXPAGE_ALIGN_PARAGRAPH.LB_LASTLINE.Default.StringList.item
 #, fuzzy
@@ -9693,46 +9805,6 @@ msgstr "Example"
 msgid  "Page Style"
 msgstr "Page Style"
 
-#: source/tabpages/paragrph.src#RID_SVXPAGE_STD_PARAGRAPH.LB_LINEDIST.Default.StringList.item
-#, fuzzy
-msgid  "Single"
-msgstr "Single"
-
-#: source/tabpages/paragrph.src#RID_SVXPAGE_STD_PARAGRAPH.LB_LINEDIST.Default.StringList.item
-#, fuzzy
-msgid  "1.5 lines"
-msgstr "1.5 lines"
-
-#: source/tabpages/paragrph.src#RID_SVXPAGE_STD_PARAGRAPH.LB_LINEDIST.Default.StringList.item
-#, fuzzy
-msgid  "Double"
-msgstr "Double"
-
-#: source/tabpages/paragrph.src#RID_SVXPAGE_STD_PARAGRAPH.LB_LINEDIST.Default.StringList.item
-#, fuzzy
-msgid  "Proportional"
-msgstr "Proportional"
-
-#: source/tabpages/paragrph.src#RID_SVXPAGE_STD_PARAGRAPH.LB_LINEDIST.Default.StringList.item
-#, fuzzy
-msgid  "At least"
-msgstr "At least"
-
-#: source/tabpages/paragrph.src#RID_SVXPAGE_ALIGN_PARAGRAPH.LB_LASTLINE.Default.StringList.item
-#, fuzzy
-msgid  "Default"
-msgstr "Default"
-
-#: source/tabpages/paragrph.src#RID_SVXPAGE_ALIGN_PARAGRAPH.LB_LASTLINE.Default.StringList.item
-#, fuzzy
-msgid  "Left"
-msgstr "Left"
-
-#: source/tabpages/paragrph.src#RID_SVXPAGE_ALIGN_PARAGRAPH.LB_LASTLINE.Default.StringList.item
-#, fuzzy
-msgid  "Centered"
-msgstr "Centred"
-
 #: source/tabpages/textanim.src#RID_SVXPAGE_TEXTANIMATION.TabPage.Text
 #, fuzzy
 msgid  "Animation"
@@ -9747,6 +9819,26 @@ msgstr "Text animation effects"
 #, fuzzy
 msgid  "E~ffect"
 msgstr "E~ffect"
+
+#: source/tabpages/textanim.src#RID_SVXPAGE_TEXTANIMATION.LB_EFFECT.Default.StringList.item
+#, fuzzy
+msgid  "No Effect"
+msgstr "No Effect"
+
+#: source/tabpages/textanim.src#RID_SVXPAGE_TEXTANIMATION.LB_EFFECT.Default.StringList.item
+#, fuzzy
+msgid  "Blink"
+msgstr "Blink"
+
+#: source/tabpages/textanim.src#RID_SVXPAGE_TEXTANIMATION.LB_EFFECT.Default.StringList.item
+#, fuzzy
+msgid  "Scroll Through"
+msgstr "Scroll Through"
+
+#: source/tabpages/textanim.src#RID_SVXPAGE_TEXTANIMATION.LB_EFFECT.Default.StringList.item
+#, fuzzy
+msgid  "Scroll Back and Forth"
+msgstr "Scroll Back and Forth"
 
 #: source/tabpages/textanim.src#RID_SVXPAGE_TEXTANIMATION.LB_EFFECT.Default.StringList.item
 #, fuzzy
@@ -9837,26 +9929,6 @@ msgstr "Text"
 #, fuzzy
 msgid  "Text Animation"
 msgstr "Text Animation"
-
-#: source/tabpages/textanim.src#RID_SVXPAGE_TEXTANIMATION.LB_EFFECT.Default.StringList.item
-#, fuzzy
-msgid  "No Effect"
-msgstr "No Effect"
-
-#: source/tabpages/textanim.src#RID_SVXPAGE_TEXTANIMATION.LB_EFFECT.Default.StringList.item
-#, fuzzy
-msgid  "Blink"
-msgstr "Blink"
-
-#: source/tabpages/textanim.src#RID_SVXPAGE_TEXTANIMATION.LB_EFFECT.Default.StringList.item
-#, fuzzy
-msgid  "Scroll Through"
-msgstr "Scroll Through"
-
-#: source/tabpages/textanim.src#RID_SVXPAGE_TEXTANIMATION.LB_EFFECT.Default.StringList.item
-#, fuzzy
-msgid  "Scroll Back and Forth"
-msgstr "Scroll Back and Forth"
 
 #: source/tabpages/measure.src#RID_SVXPAGE_MEASURE.TabPage.Text
 #, fuzzy
@@ -10258,6 +10330,11 @@ msgstr "~Angle"
 msgid  " degrees"
 msgstr " degrees"
 
+#: source/tabpages/transfrm.src#_POS_SIZE_TEXT.#define.Text
+#, fuzzy
+msgid  "Position and Size"
+msgstr "Position and Size"
+
 #: source/tabpages/transfrm.src#RID_SVXDLG_TRANSFORM.TabDialog.Text
 #, fuzzy
 msgid  "Position and Size"
@@ -10272,11 +10349,6 @@ msgstr "Rotation"
 #, fuzzy
 msgid  "Slant & Corner Radius"
 msgstr "Slant & Corner Radius"
-
-#: source/tabpages/transfrm.src#_POS_SIZE_TEXT.#define.Text
-#, fuzzy
-msgid  "Position and Size"
-msgstr "Position and Size"
 
 #: source/tabpages/textattr.src#RID_SVXPAGE_TEXTATTR.TabPage.Text
 #, fuzzy
@@ -10890,6 +10962,26 @@ msgstr "~Effects"
 
 #: source/tabpages/chardlg.src#RID_SVXPAGE_CHAR_EFFECTS.LB_EFFECTS2.Default.StringList.item
 #, fuzzy
+msgid  "(Without)"
+msgstr "(Without)"
+
+#: source/tabpages/chardlg.src#RID_SVXPAGE_CHAR_EFFECTS.LB_EFFECTS2.Default.StringList.item
+#, fuzzy
+msgid  "Capitals"
+msgstr "Capitals"
+
+#: source/tabpages/chardlg.src#RID_SVXPAGE_CHAR_EFFECTS.LB_EFFECTS2.Default.StringList.item
+#, fuzzy
+msgid  "Lowercase"
+msgstr "Lower-case"
+
+#: source/tabpages/chardlg.src#RID_SVXPAGE_CHAR_EFFECTS.LB_EFFECTS2.Default.StringList.item
+#, fuzzy
+msgid  "Title"
+msgstr "Title"
+
+#: source/tabpages/chardlg.src#RID_SVXPAGE_CHAR_EFFECTS.LB_EFFECTS2.Default.StringList.item
+#, fuzzy
 msgid  "Small capitals"
 msgstr "Small capitals"
 
@@ -10897,6 +10989,16 @@ msgstr "Small capitals"
 #, fuzzy
 msgid  "~Relief"
 msgstr "~Relief"
+
+#: source/tabpages/chardlg.src#RID_SVXPAGE_CHAR_EFFECTS.LB_RELIEF.Default.StringList.item
+#, fuzzy
+msgid  "(Without)"
+msgstr "(Without)"
+
+#: source/tabpages/chardlg.src#RID_SVXPAGE_CHAR_EFFECTS.LB_RELIEF.Default.StringList.item
+#, fuzzy
+msgid  "Embossed"
+msgstr "Embossed"
 
 #: source/tabpages/chardlg.src#RID_SVXPAGE_CHAR_EFFECTS.LB_RELIEF.Default.StringList.item
 #, fuzzy
@@ -11160,6 +11262,26 @@ msgstr "Emp~hasis mark"
 
 #: source/tabpages/chardlg.src#RID_SVXPAGE_CHAR_EFFECTS.LB_EMPHASIS.default.StringList.item
 #, fuzzy
+msgid  "(Without)"
+msgstr "(Without)"
+
+#: source/tabpages/chardlg.src#RID_SVXPAGE_CHAR_EFFECTS.LB_EMPHASIS.default.StringList.item
+#, fuzzy
+msgid  "Dot"
+msgstr "Dot"
+
+#: source/tabpages/chardlg.src#RID_SVXPAGE_CHAR_EFFECTS.LB_EMPHASIS.default.StringList.item
+#, fuzzy
+msgid  "Circle"
+msgstr "Circle"
+
+#: source/tabpages/chardlg.src#RID_SVXPAGE_CHAR_EFFECTS.LB_EMPHASIS.default.StringList.item
+#, fuzzy
+msgid  "Disc"
+msgstr "Disc"
+
+#: source/tabpages/chardlg.src#RID_SVXPAGE_CHAR_EFFECTS.LB_EMPHASIS.default.StringList.item
+#, fuzzy
 msgid  "Accent"
 msgstr "Accent"
 
@@ -11300,6 +11422,16 @@ msgstr "Spacing"
 
 #: source/tabpages/chardlg.src#RID_SVXPAGE_CHAR_POSITION.LB_KERNING2.Default.StringList.item
 #, fuzzy
+msgid  "Default"
+msgstr "Default"
+
+#: source/tabpages/chardlg.src#RID_SVXPAGE_CHAR_POSITION.LB_KERNING2.Default.StringList.item
+#, fuzzy
+msgid  "Expanded"
+msgstr "Expanded"
+
+#: source/tabpages/chardlg.src#RID_SVXPAGE_CHAR_POSITION.LB_KERNING2.Default.StringList.item
+#, fuzzy
 msgid  "Condensed"
 msgstr "Condensed"
 
@@ -11407,66 +11539,6 @@ msgstr "Other Characters..."
 #, fuzzy
 msgid  "Example"
 msgstr "Example"
-
-#: source/tabpages/chardlg.src#RID_SVXPAGE_CHAR_EFFECTS.LB_EFFECTS2.Default.StringList.item
-#, fuzzy
-msgid  "(Without)"
-msgstr "(Without)"
-
-#: source/tabpages/chardlg.src#RID_SVXPAGE_CHAR_EFFECTS.LB_EFFECTS2.Default.StringList.item
-#, fuzzy
-msgid  "Capitals"
-msgstr "Capitals"
-
-#: source/tabpages/chardlg.src#RID_SVXPAGE_CHAR_EFFECTS.LB_EFFECTS2.Default.StringList.item
-#, fuzzy
-msgid  "Lowercase"
-msgstr "Lower-case"
-
-#: source/tabpages/chardlg.src#RID_SVXPAGE_CHAR_EFFECTS.LB_EFFECTS2.Default.StringList.item
-#, fuzzy
-msgid  "Title"
-msgstr "Title"
-
-#: source/tabpages/chardlg.src#RID_SVXPAGE_CHAR_EFFECTS.LB_RELIEF.Default.StringList.item
-#, fuzzy
-msgid  "(Without)"
-msgstr "(Without)"
-
-#: source/tabpages/chardlg.src#RID_SVXPAGE_CHAR_EFFECTS.LB_RELIEF.Default.StringList.item
-#, fuzzy
-msgid  "Embossed"
-msgstr "Embossed"
-
-#: source/tabpages/chardlg.src#RID_SVXPAGE_CHAR_EFFECTS.LB_EMPHASIS.default.StringList.item
-#, fuzzy
-msgid  "(Without)"
-msgstr "(Without)"
-
-#: source/tabpages/chardlg.src#RID_SVXPAGE_CHAR_EFFECTS.LB_EMPHASIS.default.StringList.item
-#, fuzzy
-msgid  "Dot"
-msgstr "Dot"
-
-#: source/tabpages/chardlg.src#RID_SVXPAGE_CHAR_EFFECTS.LB_EMPHASIS.default.StringList.item
-#, fuzzy
-msgid  "Circle"
-msgstr "Circle"
-
-#: source/tabpages/chardlg.src#RID_SVXPAGE_CHAR_EFFECTS.LB_EMPHASIS.default.StringList.item
-#, fuzzy
-msgid  "Disc"
-msgstr "Disc"
-
-#: source/tabpages/chardlg.src#RID_SVXPAGE_CHAR_POSITION.LB_KERNING2.Default.StringList.item
-#, fuzzy
-msgid  "Default"
-msgstr "Default"
-
-#: source/tabpages/chardlg.src#RID_SVXPAGE_CHAR_POSITION.LB_KERNING2.Default.StringList.item
-#, fuzzy
-msgid  "Expanded"
-msgstr "Expanded"
 
 #: source/tabpages/border.src#RID_SVXPAGE_BORDER.TabPage.Text
 #, fuzzy
@@ -11705,6 +11777,11 @@ msgstr "Optimal"
 
 #: source/tabpages/labdlg.src#RID_SVXPAGE_CAPTION.LB_ANSATZ.3.StringList.item
 #, fuzzy
+msgid  "From top"
+msgstr "From top"
+
+#: source/tabpages/labdlg.src#RID_SVXPAGE_CAPTION.LB_ANSATZ.3.StringList.item
+#, fuzzy
 msgid  "From left"
 msgstr "From left"
 
@@ -11768,6 +11845,11 @@ msgstr "Top;Middle;Bottom"
 msgid  "Left;Middle;Right"
 msgstr "Left;Middle;Right"
 
+#: source/tabpages/labdlg.src#_POS_SIZE_TEXT.#define.Text
+#, fuzzy
+msgid  "Position and Size"
+msgstr "Position and Size"
+
 #: source/tabpages/labdlg.src#RID_SVXDLG_CAPTION.TabDialog.Text
 #, fuzzy
 msgid  "Callouts"
@@ -11777,16 +11859,6 @@ msgstr "Callouts"
 #, fuzzy
 msgid  "Callout"
 msgstr "Callout"
-
-#: source/tabpages/labdlg.src#_POS_SIZE_TEXT.#define.Text
-#, fuzzy
-msgid  "Position and Size"
-msgstr "Position and Size"
-
-#: source/tabpages/labdlg.src#RID_SVXPAGE_CAPTION.LB_ANSATZ.3.StringList.item
-#, fuzzy
-msgid  "From top"
-msgstr "From top"
 
 #: source/tabpages/tabline.src#RID_SVXPAGE_LINE.TabPage.Text
 #, fuzzy
@@ -12000,8 +12072,18 @@ msgstr "~Type"
 
 #: source/tabpages/tabline.src#RID_SVXPAGE_LINE_DEF.LB_TYPE_1.Default.StringList.item
 #, fuzzy
+msgid  "Dot"
+msgstr "Dot"
+
+#: source/tabpages/tabline.src#RID_SVXPAGE_LINE_DEF.LB_TYPE_1.Default.StringList.item
+#, fuzzy
 msgid  "Dash"
 msgstr "Dash"
+
+#: source/tabpages/tabline.src#RID_SVXPAGE_LINE_DEF.LB_TYPE_2.Default.StringList.item
+#, fuzzy
+msgid  "Dot"
+msgstr "Dot"
 
 #: source/tabpages/tabline.src#RID_SVXPAGE_LINE_DEF.LB_TYPE_2.Default.StringList.item
 #, fuzzy
@@ -12162,13 +12244,3 @@ msgstr "Line Styles"
 #, fuzzy
 msgid  "Arrow Styles"
 msgstr "Arrow Styles"
-
-#: source/tabpages/tabline.src#RID_SVXPAGE_LINE_DEF.LB_TYPE_1.Default.StringList.item
-#, fuzzy
-msgid  "Dot"
-msgstr "Dot"
-
-#: source/tabpages/tabline.src#RID_SVXPAGE_LINE_DEF.LB_TYPE_2.Default.StringList.item
-#, fuzzy
-msgid  "Dot"
-msgstr "Dot"

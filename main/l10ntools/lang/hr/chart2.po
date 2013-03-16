@@ -39,6 +39,10 @@ msgstr "Odabir naslova, legende i postavke mreže"
 msgid  "Display grids"
 msgstr "Prikaz mreže"
 
+#: source/controller/dialogs/tp_3D_SceneGeometry.src#CUSTOMUNITTEXT_DEGREE.#define.CustomUnitText
+msgid  " degrees"
+msgstr " stupnjeva"
+
 #: source/controller/dialogs/tp_3D_SceneGeometry.src#TP_3D_SCENEGEOMETRY.CBX_RIGHT_ANGLED_AXES.CheckBox.Text
 msgid  "~Right-angled axes"
 msgstr "~Osi pod desnim kutom"
@@ -58,10 +62,6 @@ msgstr "~Z rotacija"
 #: source/controller/dialogs/tp_3D_SceneGeometry.src#TP_3D_SCENEGEOMETRY.CBX_PERSPECTIVE.CheckBox.Text
 msgid  "~Perspective"
 msgstr "~Perspektiva"
-
-#: source/controller/dialogs/tp_3D_SceneGeometry.src#CUSTOMUNITTEXT_DEGREE.#define.CustomUnitText
-msgid  " degrees"
-msgstr " stupnjeva"
 
 #: source/controller/dialogs/Strings_AdditionalControls.src#STR_3DSCHEME_SIMPLE.String.Text
 msgid  "Simple"
@@ -1097,11 +1097,11 @@ msgstr "Vrijednosti: %POINTVALUES"
 
 #: source/controller/dialogs/Strings.src#STR_TIP_DATAPOINT.String.Text
 msgid  "Data Point %POINTNUMBER, data series %SERIESNUMBER, values: %POINTVALUES"
-msgstr ""
+msgstr "Podatkovna točka %POINTNUMBER, niz podataka %SERIESNUMBER,  vrijednosti: %POINTVALUES"
 
 #: source/controller/dialogs/Strings.src#STR_STATUS_DATAPOINT_MARKED.String.Text
 msgid  "Data point %POINTNUMBER in data series %SERIESNUMBER selected, values: %POINTVALUES"
-msgstr ""
+msgstr "Odabrana podatkovna točka %POINTNUMBER u nizu podataka %SERIESNUMBER ,  vrijednosti: %POINTVALUES"
 
 #: source/controller/dialogs/Strings.src#STR_STATUS_OBJECT_MARKED.String.Text
 msgid  "%OBJECTNAME selected"

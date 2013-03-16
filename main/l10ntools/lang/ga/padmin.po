@@ -33,7 +33,7 @@ msgstr ""
 
 #: source/padialog.src#RID_FONTIMPORT_DIALOG.RID_FIMP_TXT_HELP.FixedText.Text
 msgid  "Please select the folder from which you want to import fonts. Add the selected fonts by clicking the OK button."
-msgstr ""
+msgstr "Roghnaigh an fillteán a dteastaíonn uait clónna a iompórtáil as. Suiteáil na clónna roghnaithe tríd an gcnaipe OK a chliceáil."
 
 #: source/padialog.src#RID_FONTIMPORT_DIALOG.RID_FIMP_FL_FROM.FixedLine.Text
 msgid  "Source directory"
@@ -61,7 +61,7 @@ msgstr "Cuir clónna leis"
 
 #: source/padialog.src#RID_FONTIMPORT_DIALOG.RID_FIMP_STR_QUERYOVERWRITE.String.Text
 msgid  "Do you really want to overwrite this font file?\n   %s"
-msgstr ""
+msgstr "An bhfuil tú cinnte gur mian leat an comhad cló seo a fhorscríobh?\n   %s"
 
 #: source/padialog.src#RID_FONTIMPORT_DIALOG.RID_FIMP_STR_OVERWRITEALL.String.Text
 msgid  "All"
@@ -73,19 +73,19 @@ msgstr "Neamhní"
 
 #: source/padialog.src#RID_FONTIMPORT_DIALOG.RID_FIMP_STR_NOAFM.String.Text
 msgid  "A format file (with an .afm extension) has not been found for the font\n%s\ntherefore, the font cannot be installed. Format files can be created with ghostscript, for example, and have to be located in the same directory as the font files or its afm subdirectory."
-msgstr ""
+msgstr "Níor aimsíodh comhad formáide (le .afm mar eisínteacht air) don chló\n%s\nagus dá bhrí sin ní féidir an cló a shuiteáil. Is féidir comhaid fhormáide a chruthú le ghostscript, mar shampla, agus ní mór dóibh a bheith sa chomhadlann chéanna leis na comhaid chló nó a fochomhadlann afm."
 
 #: source/padialog.src#RID_FONTIMPORT_DIALOG.RID_FIMP_STR_AFMCOPYFAILED.String.Text
 msgid  "The metric file for the font file\n   %s\ncould not be copied. The font will not be installed."
-msgstr ""
+msgstr "Níorbh fhéidir an comhad méadrach don chomhad cló\n  %s\na chóipeáil. Ní shuiteálfar an cló."
 
 #: source/padialog.src#RID_FONTIMPORT_DIALOG.RID_FIMP_STR_FONTCOPYFAILED.String.Text
 msgid  "The font file\n   %s\ncould not be copied. The font will not be installed."
-msgstr ""
+msgstr "Níorbh fhéidir an comhad cló\n   %s\na chóipeáil. Ní shuiteálfar an cló."
 
 #: source/padialog.src#RID_FONTIMPORT_DIALOG.RID_FIMP_STR_NOWRITEABLEFONTSDIR.String.Text
 msgid  "A directory containing a writable fonts.dir file is not located in the Fontpath. Therefore, fonts cannot be installed."
-msgstr ""
+msgstr "Níl comhadlann sa Fontpath ina bhfuil comhad fonts.dir inscríofa. Dá bhrí sin, ní féidir clónna a shuiteáil."
 
 #: source/padialog.src#RID_FONTIMPORT_DIALOG.RID_FIMP_STR_NUMBEROFFONTSIMPORTED.String.Text
 msgid  "%d new fonts were added."
@@ -173,7 +173,7 @@ msgstr "Níorbh fhéidir an printéir %s a oscailt."
 
 #: source/padialog.src#RID_PA_TXT_TESTPAGE_PRINTED.String.Text
 msgid  "The test page was printed succesfully. Please check the result."
-msgstr ""
+msgstr "D'éirigh le priontáil an leathanaigh thástála. Seiceáil an toradh le do thoil."
 
 #: source/padialog.src#RID_ERR_NOWRITE.String.Text
 msgid  "No printers can be installed, because the file system is read-only.\nPlease contact your system administrator."
@@ -289,7 +289,7 @@ msgstr "Níl méadrach sa chomhad."
 
 #: source/padialog.src#RID_AFMERROR_BOX_TXT.String.Text
 msgid  "The metric\n\n%s\n\ncould not be converted for the following reason:\n\n"
-msgstr ""
+msgstr "Níorbh fhéidir an méadrach\n\n%s\n\na thiontú de bharr:\n\n"
 
 #: source/padialog.src#RID_PROGRESS_DLG.RID_PROGRESS_PROGRESS_TXT.FixedText.Text
 msgid  "Progress"
@@ -320,8 +320,8 @@ msgid  "~Selection of drivers"
 msgstr "~Roghnú tiománaithe"
 
 #: source/padialog.src#RID_PPDIMPORT_DLG.RID_PPDIMP_TXT_DRIVER.FixedText.Text
-msgid  "Please select the drivers to install and press "%s"."
-msgstr ""
+msgid  "Please select the drivers to install and press \"%s\"."
+msgstr "Roghnaigh na tiománaithe atá le suiteáil agus brúigh \"%s\"."
 
 #: source/padialog.src#RID_PPDIMPORT_DLG.RID_PPDIMP_STR_LOADINGPPD.String.Text
 msgid  "Searching for drivers"
@@ -332,8 +332,8 @@ msgid  "Driver Installation"
 msgstr "Suiteáil Thiománaí"
 
 #: source/padialog.src#RID_QUERY_REMOVEDRIVER.String.Text
-msgid  "Do you really want to remove the driver "%s"?"
-msgstr ""
+msgid  "Do you really want to remove the driver \"%s\"?"
+msgstr "An bhfuil tú cinnte gur mhaith leat an tiománaí \"%s\" a bhaint?"
 
 #: source/padialog.src#RID_QUERY_REMOVEPRINTER.String.Text
 msgid  "Do you really want to remove this printer ?"
@@ -344,40 +344,40 @@ msgid  "Do you really want to remove the selected fonts ?"
 msgstr "An bhfuil tú cinnte gur mhaith leat na clónna roghnaithe a bhaint ?"
 
 #: source/padialog.src#RID_QUERY_DRIVERUSED.String.Text
-msgid  "There are still printers using the driver "%s". Do you really want to remove it? The corresponding printers will also be removed."
-msgstr ""
+msgid  "There are still printers using the driver \"%s\". Do you really want to remove it? The corresponding printers will also be removed."
+msgstr "Tá printéirí ann fós atá ag baint úsáide as an tiománaí \"%s\". An bhfuil tú cinnte gur mian leat é a bhaint? Bainfear na printéirí sin freisin."
 
 #: source/padialog.src#RID_ERR_REMOVESGENPRT.String.Text
-msgid  "The driver "%s" is always needed and can therefore not be removed."
-msgstr ""
+msgid  "The driver \"%s\" is always needed and can therefore not be removed."
+msgstr "Tá an tiománaí \"%s\" ag teastáil i gcónaí agus ní féidir é a bhaint dá bhrí sin."
 
 #: source/padialog.src#RID_ERR_REMOVEDRIVERFAILED.String.Text
-msgid  "The driver "%s1" could not be removed. It was not possible to remove the file\n\n%s2."
-msgstr ""
+msgid  "The driver \"%s1\" could not be removed. It was not possible to remove the file\n\n%s2."
+msgstr "Níorbh fhéidir an tiománaí \"%s1\" a bhaint. Níorbh fhéidir an comhad\n\n%s2 a bhaint."
 
 #: source/padialog.src#RID_ERR_REMOVEDEFAULTDRIVER.String.Text
-msgid  "The driver "%s" is used by your default printer. Therefore, it cannot be removed."
-msgstr ""
+msgid  "The driver \"%s\" is used by your default printer. Therefore, it cannot be removed."
+msgstr "Tá an tiománaí \"%s\" in úsáid ag do phrintéir réamhshocraithe. Mar sin, ní féidir é a bhaint."
 
 #: source/padialog.src#RID_ERR_PRINTERNOTREMOVEABLE.String.Text
 msgid  "The printer %s cannot be removed."
 msgstr "Ní féidir an printéir %s a bhaint."
 
 #: source/padialog.src#RID_TXT_PRINTERALREADYEXISTS.String.Text
-msgid  "A printer named "%s" already exists. This printer will not be imported."
-msgstr ""
+msgid  "A printer named \"%s\" already exists. This printer will not be imported."
+msgstr "Tá printéir darbh ainm \"%s\" ann cheana. Ní iompórtálfar an printéir."
 
 #: source/padialog.src#RID_TXT_PRINTERWITHOUTCOMMAND.String.Text
-msgid  "The printer "%s" has no valid configuration and, therefore, cannot be imported."
-msgstr ""
+msgid  "The printer \"%s\" has no valid configuration and, therefore, cannot be imported."
+msgstr "Níl cumraíocht bhailí ag an bprintéir \"%s\" agus mar sin ní féidir é a iompórtáil."
 
 #: source/padialog.src#RID_TXT_DRIVERDOESNOTEXIST.String.Text
-msgid  "The driver for the printer "%s1" (%s2) is not installed. Therefore the printer cannot be imported."
-msgstr ""
+msgid  "The driver for the printer \"%s1\" (%s2) is not installed. Therefore the printer cannot be imported."
+msgstr "Níl tiománaí an phrintéara \"%s1\" (%s2) suiteáilte. Ní féidir an printéir a iompórtáil dá bhrí sin."
 
 #: source/padialog.src#RID_TXT_PRINTERADDFAILED.String.Text
-msgid  "The printer "%s" could not be added."
-msgstr ""
+msgid  "The printer \"%s\" could not be added."
+msgstr "Níorbh fhéidir an printéir \"%s\" a chur leis."
 
 #: source/padialog.src#RID_ADD_PRINTER_DIALOG.RID_ADDP_BTN_FINISH.OKButton.Text
 msgid  "~Finish"
@@ -488,12 +488,12 @@ msgid  "~Help"
 msgstr "Cab~hair"
 
 #: source/padialog.src#RID_ADDP_PAGE_COMMAND.RID_ADDP_CMD_STR_PDFHELP.String.Text
-msgid  "The command line for PDF converters is executed as follows: for each document printed, "(TMP)" in the command line is replaced by a temporary file and "(OUTFILE)" in the command line is replaced by the target PDF file name. If "(TMP)" is in the command line, the PostScript code will be supplied via a file, otherwise via standard input (i.e. as a pipe)."
-msgstr ""
+msgid  "The command line for PDF converters is executed as follows: for each document printed, \"(TMP)\" in the command line is replaced by a temporary file and \"(OUTFILE)\" in the command line is replaced by the target PDF file name. If \"(TMP)\" is in the command line, the PostScript code will be supplied via a file, otherwise via standard input (i.e. as a pipe)."
+msgstr "Ritear an líne ordaithe le haghaidh tiontairí PDF mar seo: i gcás gach cáipéis a phriontálfar, cuirfear comhad sealadach in áit \"(TMP)\" sa líne ordaithe agus ainm an chomhaid sprice PDF in áit \"(OUTFILE)\" sa líne ordaithe. Má bhíonn \"(TMP)\" sa líne ordaithe soláthrófar an cód PostScript i gcomhad; mura mbíonn, cuirfear isteach mar ghnáthionchur é (.i. mar phíopa)."
 
 #: source/padialog.src#RID_ADDP_PAGE_COMMAND.RID_ADDP_CMD_STR_FAXHELP.String.Text
-msgid  "The command line for fax connections is executed as follows: for each fax sent, "(TMP)" in the command line is replaced by a temporary file and "(PHONE)" in the command line is replaced by the fax number. If "(TMP)" appears in the command line, the PostScript code will be supplied via a file, otherwise it is passed as standard input (i.e. as a pipe)."
-msgstr ""
+msgid  "The command line for fax connections is executed as follows: for each fax sent, \"(TMP)\" in the command line is replaced by a temporary file and \"(PHONE)\" in the command line is replaced by the fax number. If \"(TMP)\" appears in the command line, the PostScript code will be supplied via a file, otherwise it is passed as standard input (i.e. as a pipe)."
+msgstr "Ritear an líne ordaithe le haghaidh ceangail fhacs mar seo: i gcás gach facs a sheolfar, cuirfear comhad sealadach in áit \"(TMP)\" sa líne ordaithe agus an uimhir fhacs in áit \"(PHONE)\" sa líne ordaithe. Má bhíonn \"(TMP)\" sa líne ordaithe soláthrófar an cód PostScript i gcomhad; mura mbíonn, cuirfear isteach mar ghnáthionchur é (.i. mar phíopa)."
 
 #: source/padialog.src#RID_ADDP_PAGE_OLDPRINTERS.RID_ADDP_STR_TITLE.String.Text
 msgid  "Import printers from old versions"
@@ -501,7 +501,7 @@ msgstr "Iompórtáil printéirí ó sheanleaganacha"
 
 #: source/padialog.src#RID_ADDP_PAGE_OLDPRINTERS.RID_ADDP_OLD_TXT_PRINTERS.FixedText.Text
 msgid  "~These printers can be imported. Please select the ones you want to import."
-msgstr ""
+msgstr "Is féidir na prin~téirí seo a iompórtáil. Roghnaigh na cinn ar mhaith leat iad a iompórtáil."
 
 #: source/padialog.src#RID_ADDP_PAGE_OLDPRINTERS.RID_ADDP_OLD_BTN_SELECTALL.PushButton.Text
 msgid  "~Select All"
@@ -521,7 +521,7 @@ msgstr "An tiománaí ~réamhshocraithe"
 
 #: source/padialog.src#RID_ADDP_PAGE_FAXDRIVER.RID_ADDP_FAXDRV_BTN_SELECT.RadioButton.Text
 msgid  "A speci~fic driver, to adapt the format to another printer"
-msgstr ""
+msgstr "Tiománaí ar leith leis an bh~formáid a chur in oiriúint do phrintéir eile"
 
 #: source/padialog.src#RID_ADDP_PAGE_PDFDRIVER.RID_ADDP_STR_TITLE.String.Text
 msgid  "Choose a driver"
@@ -541,7 +541,7 @@ msgstr "An tiománaí Adobe D~istiller™"
 
 #: source/padialog.src#RID_ADDP_PAGE_PDFDRIVER.RID_ADDP_PDFDRV_BTN_SELECT.RadioButton.Text
 msgid  "A spec~ific driver, to adapt the format to another printer"
-msgstr ""
+msgstr "Tiománaí ar le~ith leis an bhformáid a chur in oiriúint do phrintéir eile"
 
 #: source/padialog.src#RID_TXT_FONT_ITALIC.String.Text
 msgid  "Italic"
@@ -737,7 +737,7 @@ msgstr "le cló ~printéara"
 
 #: source/rtsetup.src#RID_RTS_COMMANDPAGE.RID_RTS_CMD_CB_EXTERNAL.CheckBox.Text
 msgid  "~Use system print dialog, disable %PRODUCTNAME's print dialog"
-msgstr ""
+msgstr "Ú~sáid dialóg phriontála an chórais; díchumasaigh dialóg phriontála %PRODUCTNAME"
 
 #: source/rtsetup.src#RID_RTS_COMMANDPAGE.RID_RTS_CMD_FT_QUICKCMD.FixedText.Text
 msgid  "Command for quick printing without dialog (optional)"
@@ -788,16 +788,16 @@ msgid  "~Remove"
 msgstr "~Bain"
 
 #: source/rtsetup.src#RID_RTS_COMMANDPAGE.RID_RTS_CMD_STR_PDFHELP.String.Text
-msgid  "The command line for PDF converters is executed as follows: for each document printed, "(TMP)" in the command line is replaced by a temporary file and "(OUTFILE)" in the command line is replaced by the target PDF file name. If "(TMP)" is in the command line, the PostScript code will be supplied via a file, otherwise via standard input (i.e. as a pipe)."
-msgstr ""
+msgid  "The command line for PDF converters is executed as follows: for each document printed, \"(TMP)\" in the command line is replaced by a temporary file and \"(OUTFILE)\" in the command line is replaced by the target PDF file name. If \"(TMP)\" is in the command line, the PostScript code will be supplied via a file, otherwise via standard input (i.e. as a pipe)."
+msgstr "Feidhmítear an líne orduithe do thiontairí PDF mar a leanas: do gach cáipéis a phriontáiltear, cuirtear comhad sealadach in ionad \"(TMP)\" ar líne na n-orduithe agus cuirtear ainm an sprioc-chomhad PDF in ionad \"(OUTFILE)\" ar líne na n-orduithe. Má tá \"(TMP)\" i líne na n-orduithe, tugtar an cód PostScript trí chomhad, agus trí ghnáth-ionchur i ngach cás eile (.i. mar phíopa)."
 
 #: source/rtsetup.src#RID_RTS_COMMANDPAGE.RID_RTS_CMD_STR_PRINTERHELP.String.Text
 msgid  "The command line for printer devices is executed as follows: the generated PostScript code is supplied as standard input (i.e. as a pipe) to the command line."
-msgstr ""
+msgstr "Cuirtear an líne orduithe do ghléasanna priontála i bhfeidhm mar a leanas: cuirtear an cód PostScript ar fáil mar ghnáth-ionchur (.i. mar phíopa) go dtí an líne orduithe."
 
 #: source/rtsetup.src#RID_RTS_COMMANDPAGE.RID_RTS_CMD_STR_FAXHELP.String.Text
-msgid  "The command line for fax devices is executed as follows: for each fax sent, "(TMP)" in the command line is replaced by a temporary file and "(PHONE)" in the command line is replaced by the fax number. If "(TMP)" appears in the command line, the PostScript code will be supplied via a file, otherwise it is passed as standard input (i.e. as a pipe)."
-msgstr ""
+msgid  "The command line for fax devices is executed as follows: for each fax sent, \"(TMP)\" in the command line is replaced by a temporary file and \"(PHONE)\" in the command line is replaced by the fax number. If \"(TMP)\" appears in the command line, the PostScript code will be supplied via a file, otherwise it is passed as standard input (i.e. as a pipe)."
+msgstr "Cuirtear an líne orduithe do ghléasanna facs i bhfeidhm mar a leanas: do gach facs a sheoltar, cuirtear comhad sealadach in ionad \"(TMP)\" i líne na n-orduithe, agus cuirtear uimhir an fhacs in ionad \"(PHONE)\". Má tá \"(TMP)\" i líne na n-orduithe, cuirfear an cód PostScript ar fáil mar chomhad. I gcásanna eile, déileálfar leis mar ghnáth-ionchur (.i. mar phíopa)."
 
 #: source/rtsetup.src#RID_RTS_OTHERPAGE.RID_RTS_OTHER_LEFTMARGIN_TXT.FixedText.Text
 msgid  "~Left margin"

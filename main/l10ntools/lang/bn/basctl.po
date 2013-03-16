@@ -137,175 +137,142 @@ msgid  "~Save"
 msgstr "সংরক্ষন করা  (~S)"
 
 #: source/basicide/basidesh.src#RID_STR_FILTER_ALLFILES.String.Text
-#, fuzzy
 msgid  "<All>"
 msgstr "<সমস্ত>"
 
 #: source/basicide/basidesh.src#RID_STR_NOMODULE.String.Text
-#, fuzzy
 msgid  "< No Module >"
 msgstr "<কোন মডিউল নেই>"
 
 #: source/basicide/basidesh.src#RID_STR_WRONGPASSWORD.String.Text
-#, fuzzy
 msgid  "Incorrect Password"
 msgstr "ভুল গুপ্তসংকেত"
 
 #: source/basicide/basidesh.src#RID_STR_OPEN.String.Text
-#, fuzzy
 msgid  "Load"
 msgstr "লোড করুন"
 
 #: source/basicide/basidesh.src#RID_STR_SAVE.String.Text
-#, fuzzy
 msgid  "Save"
 msgstr "সংরক্ষণ করুন"
 
 #: source/basicide/basidesh.src#RID_STR_SOURCETOBIG.String.Text
 msgid  "The source text is too large and can be neither compiled nor saved.\nDelete some of the comments or transfer some methods into another module."
-msgstr ""
+msgstr "এই উৎস পাঠ্যটি খুব বড়ো এবং এটি কম্পাইল কিংবা সংরক্ষন কিছুই করা যাবে না। এতে বর্ণিত কিছু মন্তব্য মূছে ফেলুন অথবা কিছু পদ্ধতিসমূহকে  অন্য মডিউলে স্থানন্তর করুন।"
 
 #: source/basicide/basidesh.src#RID_STR_ERROROPENSTORAGE.String.Text
-#, fuzzy
 msgid  "Error opening file"
 msgstr "ফাইলটি খুলতে সমস্যা হয়েছে"
 
 #: source/basicide/basidesh.src#RID_STR_ERROROPENLIB.String.Text
-#, fuzzy
 msgid  "Error loading library"
 msgstr "লাইব্রেরি লোড করিতে সমস্যা হয়েছে "
 
 #: source/basicide/basidesh.src#RID_STR_NOLIBINSTORAGE.String.Text
-#, fuzzy
 msgid  "The file does not contain any BASIC libraries"
 msgstr "ফাইলিটিতে কোন প্রাথমিক লাইব্রেরি নেই"
 
 #: source/basicide/basidesh.src#RID_STR_BADSBXNAME.String.Text
-#, fuzzy
 msgid  "Invalid Name"
 msgstr "ত্রুটিযুক্ত নাম"
 
 #: source/basicide/basidesh.src#RID_STR_LIBNAMETOLONG.String.Text
-#, fuzzy
 msgid  "A library name can have up to 30 characters."
 msgstr "একটি লাইব্রেরির নাম ৩০ বর্ণচিহ্নের বেশী হতে পারবে না।"
 
 #: source/basicide/basidesh.src#RID_STR_ERRORCHOOSEMACRO.String.Text
-#, fuzzy
 msgid  "Macros from other documents are not accessible."
 msgstr "অন্য নথিসমূহ হতে ম্যাক্রগূলো ব্যবহার করা যাচ্ছে না।"
 
 #: source/basicide/basidesh.src#RID_STR_LIBISREADONLY.String.Text
-#, fuzzy
 msgid  "This library is read-only."
 msgstr "এই লাইব্রেরিটি কেবলমাত্র পড়ার যোগ্য।"
 
 #: source/basicide/basidesh.src#RID_STR_REPLACELIB.String.Text
-#, fuzzy
 msgid  "'XX' cannot be replaced."
 msgstr "'XX' প্রতিস্থাপন করা যাবে না।"
 
 #: source/basicide/basidesh.src#RID_STR_IMPORTNOTPOSSIBLE.String.Text
-#, fuzzy
 msgid  "'XX' cannot be added."
 msgstr " 'XX' সংযুক্ত করা যাইবে না।"
 
 #: source/basicide/basidesh.src#RID_STR_NOIMPORT.String.Text
-#, fuzzy
 msgid  "'XX' was not added."
 msgstr "'XX' সংযুক্ত করা হয়নি।"
 
 #: source/basicide/basidesh.src#RID_STR_ENTERPASSWORD.String.Text
-#, fuzzy
 msgid  "Enter password for 'XX'"
 msgstr "'XX'এর জন্য গুপ্তসংকেত দিন।"
 
 #: source/basicide/basidesh.src#RID_STR_SBXNAMEALLREADYUSED.String.Text
-#, fuzzy
 msgid  "Name already exists"
 msgstr "এই নাম ইতিমধ্যে দেওয়া হয়েছে।"
 
 #: source/basicide/basidesh.src#RID_STR_SIGNED.String.Text
-#, fuzzy
 msgid  "(Signed)"
 msgstr "(সাক্ষরিত)"
 
 #: source/basicide/basidesh.src#RID_STR_SBXNAMEALLREADYUSED2.String.Text
-#, fuzzy
 msgid  "Object with same name already exists"
 msgstr "একই নামের অবেজেক্ট ইতিমধ্যে বিদ্যমান রয়েছে।"
 
 #: source/basicide/basidesh.src#RID_STR_FILEEXISTS.String.Text
-#, fuzzy
 msgid  "The 'XX' file already exists"
 msgstr "'XX' ফাইলটি ইতিমধ্যে বিদ্যমান রযেছে। "
 
 #: source/basicide/basidesh.src#RID_STR_CANNOTRUNMACRO.String.Text
 msgid  "For security reasons, you cannot run this macro.\n\nFor more information, check the security settings."
-msgstr ""
+msgstr "নিরাপত্তা সংক্রান্ত কারনে আপনি এই ম্যাক্রোটি চালু করতে পারবেন না। \n\nবিস্তারিত তথ্যের জন্য নিরাপত্তা সংক্রান্ত বিন্যাসনসমূহ পরীক্ষা করুন।"
 
 #: source/basicide/basidesh.src#RID_STR_COMPILEERROR.String.Text
-#, fuzzy
 msgid  "Compile Error: "
 msgstr "কম্পাইল ত্রুটি:"
 
 #: source/basicide/basidesh.src#RID_STR_RUNTIMEERROR.String.Text
-#, fuzzy
 msgid  "Runtime Error: #"
 msgstr "চলারসময়ে ত্রুটি:# "
 
 #: source/basicide/basidesh.src#RID_STR_SEARCHNOTFOUND.String.Text
-#, fuzzy
 msgid  "Search key not found"
 msgstr "অনুসন্ধানকৃত কী টি খুঁজে পাওয়া যাচ্ছেনা।"
 
 #: source/basicide/basidesh.src#RID_STR_SEARCHFROMSTART.String.Text
-#, fuzzy
 msgid  "Search to last module complete. Continue at first module?"
 msgstr "শেষ মডিউলটি অনুসন্ধান শেষ হয়েছে। প্রথম মডিউল হতে শুরু করতে চান?"
 
 #: source/basicide/basidesh.src#RID_STR_SEARCHREPLACES.String.Text
-#, fuzzy
 msgid  "Search key replaced XX times"
 msgstr "অনুসন্ধানকৃত কি টি XX বার প্রতিস্থাপন করা হইয়াছে।"
 
 #: source/basicide/basidesh.src#RID_STR_COULDNTREAD.String.Text
-#, fuzzy
 msgid  "The file could not be read"
 msgstr "ফাইলটি পড়া যাচ্ছে না "
 
 #: source/basicide/basidesh.src#RID_STR_COULDNTWRITE.String.Text
-#, fuzzy
 msgid  "The file could not be saved"
 msgstr " ফাইলটি সংরক্ষন করা যাচ্ছে না "
 
 #: source/basicide/basidesh.src#RID_STR_CANNOTCHANGENAMESTDLIB.String.Text
-#, fuzzy
 msgid  "The name of the default library cannot be changed."
 msgstr "পূর্ব নির্ধারিত লাইব্রেরিটির নাম পরিবর্তন করা যাবে না । "
 
 #: source/basicide/basidesh.src#RID_STR_CANNOTCHANGENAMEREFLIB.String.Text
-#, fuzzy
 msgid  "The name of a referenced library cannot be changed."
 msgstr "তথ্যসূত্রে উল্লেখিত লাইব্রেরিটির নাম পরিবর্তন করা যাবে না ।"
 
 #: source/basicide/basidesh.src#RID_STR_CANNOTUNLOADSTDLIB.String.Text
-#, fuzzy
 msgid  "The default library cannot be deactivated"
 msgstr "পূর্ব নির্ধারিত লাইব্রেরিটি নিস্ক্রিয় করা যাবে না"
 
 #: source/basicide/basidesh.src#RID_STR_GENERATESOURCE.String.Text
-#, fuzzy
 msgid  "Generating source"
 msgstr "উৎস তৈরী হচ্ছে"
 
 #: source/basicide/basidesh.src#RID_STR_FILENAME.String.Text
-#, fuzzy
 msgid  "File name:"
 msgstr "ফাইলের নাম:"
 
 #: source/basicide/basidesh.src#RID_STR_APPENDLIBS.String.Text
-#, fuzzy
 msgid  "Import Libraries"
 msgstr "লাইব্রেরিসমূহ সূচিত করুন"
 
@@ -455,8 +422,9 @@ msgid  "A name must be entered."
 msgstr "একটি নাম অবশ্যই দিতে হবে।"
 
 #: source/basicide/basidesh.src#RID_STR_WILLSTOPPRG.String.Text
+#, fuzzy
 msgid  "You will have to restart the program after this edit.\nContinue?"
-msgstr ""
+msgstr "সম্পাদনার পরে আপনাকে পুনরায় প্রোগ্রামটি চালূ করতে হবে। \nএগিয়ে যাবো?"
 
 #: source/basicide/basidesh.src#RID_STR_SEARCHALLMODULES.String.Text
 #, fuzzy
@@ -521,7 +489,7 @@ msgstr "সক্রিয়"
 #: source/basicide/basidesh.src#RID_POPUP_BRKPROPS.RID_BRKPROPS.MenuItem.Text
 #, fuzzy
 msgid  "Properties..."
-msgstr "বৈশিষ্ট্যাবলী... "
+msgstr "বৈশিষ্ট্যাবলী..."
 
 #: source/basicide/basidesh.src#RID_POPUP_BRKDLG.Menu.Text
 #, fuzzy
@@ -747,22 +715,22 @@ msgstr "মডিউল (~o)"
 #: source/basicide/moduldlg.src#RID_TP_MODULS.RID_PB_EDIT.PushButton.Text
 #, fuzzy
 msgid  "~Edit"
-msgstr "সম্পাদনা করা (~E)"
+msgstr "সম্পাদনা  (~E)"
 
 #: source/basicide/moduldlg.src#RID_TP_MODULS.RID_PB_CLOSE.CancelButton.Text
 #, fuzzy
 msgid  "Close"
-msgstr "বন্ধ করা"
+msgstr "বন্ধ করা "
 
 #: source/basicide/moduldlg.src#RID_TP_MODULS.RID_PB_NEWMOD.PushButton.Text
 #, fuzzy
 msgid  "~New..."
-msgstr "নতুন... (~N)"
+msgstr "নতুন..(~N)"
 
 #: source/basicide/moduldlg.src#RID_TP_MODULS.RID_PB_NEWDLG.PushButton.Text
 #, fuzzy
 msgid  "~New..."
-msgstr " নতুন... (~N) "
+msgstr "নতুন..(~N)"
 
 #: source/basicide/moduldlg.src#RID_TP_MODULS.RID_PB_DELETE.PushButton.Text
 #, fuzzy
@@ -782,7 +750,7 @@ msgstr "সম্পাদনা করা (~E)"
 #: source/basicide/moduldlg.src#RID_TP_DLGS.RID_PB_CLOSE.CancelButton.Text
 #, fuzzy
 msgid  "Close"
-msgstr "বন্ধ করা"
+msgstr "বন্ধ করা "
 
 #: source/basicide/moduldlg.src#RID_TP_DLGS.RID_PB_NEWMOD.PushButton.Text
 #, fuzzy
@@ -792,7 +760,7 @@ msgstr "নতুন... (~N)"
 #: source/basicide/moduldlg.src#RID_TP_DLGS.RID_PB_NEWDLG.PushButton.Text
 #, fuzzy
 msgid  "~New..."
-msgstr "নতুন... (~N)"
+msgstr " নতুন... (~N) "
 
 #: source/basicide/moduldlg.src#RID_TP_DLGS.RID_PB_DELETE.PushButton.Text
 #, fuzzy
@@ -877,7 +845,7 @@ msgstr "এক্সটেনশন হিসেবে এক্সপোর্�
 #: source/basicide/moduldlg.src#RID_DLG_EXPORT.RB_EXPORTASBASIC.RadioButton.Text
 #, fuzzy
 msgid  "Export as BASIC library"
-msgstr " BASIC লাইব্রেরি হিসেবে  রপ্তানি করুন "
+msgstr "BASIC লাইব্রেরি হিসেবে এক্সপোর্ট করুন"
 
 #: source/basicide/moduldlg.src#RID_STR_EXPORTPACKAGE.String.Text
 #, fuzzy
@@ -895,102 +863,85 @@ msgid  "Extension"
 msgstr "সমপ্রসারন"
 
 #: source/dlged/managelang.src#RID_DLG_MANAGE_LANGUAGE.ModalDialog.Text
-#, fuzzy
 msgid  "Manage User Interface Languages [$1]"
 msgstr "ব্যবহারকারীর ইন্টারফেস ভাষা পরিচালনা করুন [$1]"
 
 #: source/dlged/managelang.src#RID_DLG_MANAGE_LANGUAGE.FT_LANGUAGE.FixedText.Text
-#, fuzzy
 msgid  "Present Languages"
 msgstr "বর্তমান ভাষাসমূহ"
 
 #: source/dlged/managelang.src#RID_DLG_MANAGE_LANGUAGE.PB_ADD_LANG.PushButton.Text
-#, fuzzy
 msgid  "Add..."
 msgstr "যুক্ত করুন"
 
 #: source/dlged/managelang.src#RID_DLG_MANAGE_LANGUAGE.PB_DEL_LANG.PushButton.Text
-#, fuzzy
 msgid  "Delete"
 msgstr "মুছুন"
 
 #: source/dlged/managelang.src#RID_DLG_MANAGE_LANGUAGE.PB_MAKE_DEFAULT.PushButton.Text
-#, fuzzy
 msgid  "Default"
 msgstr "পূর্ব নির্ধারিত"
 
 #: source/dlged/managelang.src#RID_DLG_MANAGE_LANGUAGE.FT_INFO.FixedText.Text
 msgid  "The default language is used if no localization for a user interface locale is present. Furthermore all strings from the default language are copied to resources of newly added languages."
-msgstr ""
+msgstr "ব্যবহারকারী ইন্টারফেস স্থানীয় এর জন্য কোনো লোকালাইজেশন উপস্থিত না থাকলে পূর্ব নির্ধারিত ভাষা ব্যবহার করা হবে। একই সাথে পূর্ব নির্ধারিত ভাষার সকল স্ট্রিং নতুন যোগ করা ভাষার রিসোর্স এর মধ্যে কপি করা হবে।"
 
 #: source/dlged/managelang.src#RID_DLG_MANAGE_LANGUAGE.PB_CLOSE.OKButton.Text
-#, fuzzy
 msgid  "~Close"
 msgstr "বন্ধ করুন (~C)"
 
 #: source/dlged/managelang.src#RID_DLG_MANAGE_LANGUAGE.STR_DEF_LANG.String.Text
-#, fuzzy
 msgid  "[Default Language]"
 msgstr "[পূর্ব নির্ধারিত ভাষা]"
 
 #: source/dlged/managelang.src#RID_DLG_MANAGE_LANGUAGE.STR_DELETE.String.Text
-#, fuzzy
 msgid  "~Delete"
 msgstr "মুছুন (~D)"
 
 #: source/dlged/managelang.src#RID_DLG_MANAGE_LANGUAGE.STR_CREATE_LANG.String.Text
-#, fuzzy
 msgid  "<Press 'Add' to create language resources>"
 msgstr "<ভাষা রিসোর্স তৈরি করতে 'যোগ করুন' এ চাপুন>"
 
 #: source/dlged/managelang.src#RID_QRYBOX_LANGUAGE.QueryBox.Title
-#, fuzzy
 msgid  "Delete Language Resources"
 msgstr "ভাষা রিসোর্স মুছে ফেলুন"
 
 #: source/dlged/managelang.src#RID_QRYBOX_LANGUAGE.QueryBox.Message
 msgid  "You are about to delete the resources for the selected language(s). All user interface strings for this language(s) will be deleted.\n\nDo you want to delete the resources of the selected language(s)?"
-msgstr ""
+msgstr "আপনি নির্বাচিত ভাষার রিসোর্স মুছতে যাচ্ছেন। এই ভাষার সকল ব্যবহারকারী ইন্টারফেস স্ট্রিং মুছে যাবে।\n\nআপনি কি নির্বাচিত ভাষার রিসোর্স মুছতে চান?"
 
 #: source/dlged/managelang.src#RID_DLG_SETDEF_LANGUAGE.ModalDialog.Text
-#, fuzzy
 msgid  "Set Default User Interface Language"
 msgstr "ব্যবহারকারীর পূর্বনির্ধারিত ইন্টারফেস ভাষা নির্ধারণ করুন"
 
 #: source/dlged/managelang.src#RID_DLG_SETDEF_LANGUAGE.FT_DEF_LANGUAGE.FixedText.Text
-#, fuzzy
 msgid  "Default language"
 msgstr "পূর্বনির্ধারিত ভাষা"
 
 #: source/dlged/managelang.src#RID_DLG_SETDEF_LANGUAGE.FT_DEF_INFO.FixedText.Text
 msgid  "Select a language to define the default user interface language. All currently present strings will be assigned to the resources created for the selected language."
-msgstr ""
+msgstr "পূর্বনির্ধারিত ব্যবহারকারী ইন্টারফেস ভাষা হিসেবে একটি ভাষা নির্বাচন করুন। বর্তমানে উপস্থিত সকল"
 
 #: source/dlged/managelang.src#RID_DLG_SETDEF_LANGUAGE.STR_ADDLANG_TITLE.String.Text
-#, fuzzy
 msgid  "Add User Interface Languages"
 msgstr "ব্যবহারকারীর ইন্টারফেস ভাষা যোগ করুন"
 
 #: source/dlged/managelang.src#RID_DLG_SETDEF_LANGUAGE.STR_ADDLANG_LABEL.String.Text
-#, fuzzy
 msgid  "Available Languages"
 msgstr "বিদ্যমান ভাষাসমূহ"
 
 #: source/dlged/managelang.src#RID_DLG_SETDEF_LANGUAGE.STR_ADDLANG_INFO.String.Text
 msgid  "Select languages to be added. Resources for these languages will be created in the library. Strings of the current default user interface language will be copied to these new resources by default."
-msgstr ""
+msgstr "যেসব ভাষা যোগ করতে চান সেগুলো নির্বাচন করুন। এসব ভাষার জন্য রিসোর্স লাইব্রেরিতে তৈরি করা হবে। বর্তমান পূর্বনির্ধারিত ব্যবহারকারী ইন্টারফেস ভাষার স্ট্রিং-গুলো‌ এই নতুন রিসোর্সে ডিফল্ট হিসেবে কপি করা হবে।"
 
 #: source/dlged/dlgresid.src#RID_STR_BRWTITLE_PROPERTIES.String.Text
-#, fuzzy
 msgid  "Properties: "
 msgstr "বৈশিষ্ট্যাবলী:"
 
 #: source/dlged/dlgresid.src#RID_STR_BRWTITLE_NO_PROPERTIES.String.Text
-#, fuzzy
 msgid  "No Control marked"
 msgstr "কোন  নিয়ন্ত্রণ চিহ্নিত করা নেই"
 
 #: source/dlged/dlgresid.src#RID_STR_BRWTITLE_MULTISELECT.String.Text
-#, fuzzy
 msgid  "Multiselection"
 msgstr "বহু বিষয় বাছাইকরন "

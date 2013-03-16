@@ -333,42 +333,34 @@ msgid  "Formula Options:Settings"
 msgstr "Opcije formule: Postavke"
 
 #: source/smres.src#RID_PRINTOPTIONPAGE.FL_PRINTOPTIONS.FixedLine.Text
-#, fuzzy
 msgid  "Print options"
 msgstr "Opcije štampe"
 
 #: source/smres.src#RID_PRINTOPTIONPAGE.CB_TITLEROW.CheckBox.Text
-#, fuzzy
 msgid  "~Title row"
 msgstr "~Naziv reda"
 
 #: source/smres.src#RID_PRINTOPTIONPAGE.CB_EQUATION_TEXT.CheckBox.Text
-#, fuzzy
 msgid  "~Formula text"
 msgstr "Tekst ~formule"
 
 #: source/smres.src#RID_PRINTOPTIONPAGE.CB_FRAME.CheckBox.Text
-#, fuzzy
 msgid  "B~order"
 msgstr "~Rub"
 
 #: source/smres.src#RID_PRINTOPTIONPAGE.FL_PRINT_FORMAT.FixedLine.Text
-#, fuzzy
 msgid  "Print format"
 msgstr "Formati štampanja"
 
 #: source/smres.src#RID_PRINTOPTIONPAGE.RB_ORIGINAL_SIZE.RadioButton.Text
-#, fuzzy
 msgid  "O~riginal size"
 msgstr "~Originalna veličina"
 
 #: source/smres.src#RID_PRINTOPTIONPAGE.RB_FIT_TO_PAGE.RadioButton.Text
-#, fuzzy
 msgid  "Fit to ~page"
 msgstr "~Prilagodi stranici"
 
 #: source/smres.src#RID_PRINTOPTIONPAGE.RB_ZOOM.RadioButton.Text
-#, fuzzy
 msgid  "~Scaling"
 msgstr "~Skaliranje"
 
@@ -472,12 +464,14 @@ msgid  "~Delete"
 msgstr "~Obriši"
 
 #: source/smres.src#RID_NOMATHTYPEFACEWARNING.WarningBox.Message
+#, fuzzy
 msgid  "The 'StarMath' font has not been installed.\nWithout this font %PRODUCTNAME Math cannot function correctly.\nPlease install this font and restart %PRODUCTNAME Math."
-msgstr ""
+msgstr "'StarMath' font nije instaliran.\nBez ovog fonta %PRODUCTNAME Math ne može ispravno raditi.\nInstalirajte ovaj font i ponovno pokrenite %PRODUCTNAME Math."
 
 #: source/smres.src#RID_DEFAULTSAVEQUERY.QueryBox.Message
+#, fuzzy
 msgid  "Should the changes be saved as defaults?\n\nThese changes will apply for all new formulas."
-msgstr ""
+msgstr "Bi li promjene trebalo spremiti kao uobičajeno?\n\nOve promjene će se primjenjivati na sve nove formule."
 
 #: source/smres.src#RID_FONTREGULAR.String.Text
 #, fuzzy
@@ -613,6 +607,11 @@ msgstr "Bez"
 #, fuzzy
 msgid  "Fixed"
 msgstr "Fiksno"
+
+#: source/smres.src#CMDBOXWINDOW_TEXT.#define.Text
+#, fuzzy
+msgid  "Commands"
+msgstr "Naredbe"
 
 #: source/smres.src#RID_DOCUMENTSTR.String.Text
 #, fuzzy
@@ -784,68 +783,51 @@ msgstr "~Prilagodi stranici"
 msgid  "~Scaling"
 msgstr "~Skaliranje"
 
-#: source/smres.src#CMDBOXWINDOW_TEXT.#define.Text
-#, fuzzy
-msgid  "Commands"
-msgstr "Naredbe"
-
 #: source/commands.src#RID_COMMANDMENU.RID_UNBINOPS_MENU.MenuItem.Text
-#, fuzzy
 msgid  "~Unary/Binary Operators"
 msgstr "~Unarni/binarni operatori"
 
 #: source/commands.src#RID_COMMANDMENU.RID_RELATIONS_MENU.MenuItem.Text
-#, fuzzy
 msgid  "~Relations"
 msgstr "~Relacije"
 
 #: source/commands.src#RID_COMMANDMENU.RID_SETOPERATIONS_MENU.MenuItem.Text
-#, fuzzy
 msgid  "~Set Operations"
 msgstr "~Operacije nad skupovima"
 
 #: source/commands.src#RID_COMMANDMENU.RID_FUNCTIONS_MENU.MenuItem.Text
-#, fuzzy
 msgid  "~Functions"
 msgstr "~Funkcije"
 
 #: source/commands.src#RID_COMMANDMENU.RID_FUNCTIONS_MENU.RID_FUNCTIONSOTHER1_MENU.MenuItem.Text
-#, fuzzy
 msgid  "More"
 msgstr "Opširnije"
 
 #: source/commands.src#RID_COMMANDMENU.RID_OPERATORS_MENU.MenuItem.Text
-#, fuzzy
 msgid  "O~perators"
 msgstr "O~peratori"
 
 #: source/commands.src#RID_COMMANDMENU.RID_ATTRIBUTES_MENU.MenuItem.Text
-#, fuzzy
 msgid  "~Attributes"
 msgstr "~Atributi"
 
 #: source/commands.src#RID_COMMANDMENU.RID_BRACKETS_MENU.MenuItem.Text
-#, fuzzy
 msgid  "~Brackets"
 msgstr "~Zagrade"
 
 #: source/commands.src#RID_COMMANDMENU.RID_FORMAT_MENU.MenuItem.Text
-#, fuzzy
 msgid  "For~mats"
 msgstr "For~mati"
 
 #: source/commands.src#RID_COMMANDMENU.RID_FORMAT_MENU.RID_NEWLINE.MenuItem.Text
-#, fuzzy
 msgid  "New Line"
 msgstr "Novi red"
 
 #: source/commands.src#RID_COMMANDMENU.RID_FORMAT_MENU.RID_SBLANK.MenuItem.Text
-#, fuzzy
 msgid  "Small Gap"
 msgstr "Mali razmak"
 
 #: source/commands.src#RID_COMMANDMENU.RID_FORMAT_MENU.RID_BLANK.MenuItem.Text
-#, fuzzy
 msgid  "Gap"
 msgstr "Razmak"
 
@@ -854,7 +836,6 @@ msgid  "nospace {...}"
 msgstr ""
 
 #: source/commands.src#RID_COMMANDMENU.RID_MISC_MENU.MenuItem.Text
-#, fuzzy
 msgid  "~Others"
 msgstr "~Ostali"
 

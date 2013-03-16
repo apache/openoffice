@@ -73,7 +73,7 @@ msgstr "Introducción"
 
 #: source/minimizer/registry/data/org/openoffice/Office/extension/SunPresentationMinimizer.xcu#.SunPresentationMinimizer.Strings.STR_INTRODUCTION_T
 msgid  "The @MINIMIZEREXTENSIONPRODUCTNAME@ is used to reduce the file size of the current presentation. Images will be compressed and data, that is no longer needed, will be removed. At the last step of the wizard you can choose to apply the changes to the current presentation or to create an optimized new version of the presentation."
-msgstr ""
+msgstr "El @MINIMIZEREXTENSIONPRODUCTNAME@ se usa para reducir el tamaño del archivo de la presentación actual. Se comprimirán las imágenes y se eliminarán aquellos datos que no sean necesarios.  En el último paso, el asistente le permitirá elegir entre aplicar los cambios a la presentación actual, o crear una nueva versión optimizada de la presentación."
 
 #: source/minimizer/registry/data/org/openoffice/Office/extension/SunPresentationMinimizer.xcu#.SunPresentationMinimizer.Strings.STR_CHOSE_SETTINGS
 msgid  "~Choose settings for @MINIMIZEREXTENSIONPRODUCTNAME@"
@@ -153,11 +153,11 @@ msgstr "~Para objetos OLE no basados en el formato OpenDocument"
 
 #: source/minimizer/registry/data/org/openoffice/Office/extension/SunPresentationMinimizer.xcu#.SunPresentationMinimizer.Strings.STR_OLE_OBJECTS_DESC
 msgid  "Object Linking and Embedding (OLE) is a technology that allows embedding and linking to documents and other objects. The current presentation contains OLE objects."
-msgstr ""
+msgstr "Objetos Vinculados e Incrustados (OLE) son una tecnología que permite la inserción  y/o  vinculación  de documentos y otros objetos. La presentación actual contiene objetos OLE."
 
 #: source/minimizer/registry/data/org/openoffice/Office/extension/SunPresentationMinimizer.xcu#.SunPresentationMinimizer.Strings.STR_NO_OLE_OBJECTS_DESC
 msgid  "Object Linking and Embedding (OLE) is a technology that allows embedding and linking to documents and other objects. The current presentation contains no OLE objects."
-msgstr ""
+msgstr "Objeto Vinculado e Incrustados (OLE) es una tecnología que permite incrustar y vincular a documentos y otros objetos. La presentación actual no contiene objetos OLE."
 
 #: source/minimizer/registry/data/org/openoffice/Office/extension/SunPresentationMinimizer.xcu#.SunPresentationMinimizer.Strings.STR_SLIDES
 msgid  "Slides"
@@ -217,7 +217,7 @@ msgstr "~Salvar configuración como "
 
 #: source/minimizer/registry/data/org/openoffice/Office/extension/SunPresentationMinimizer.xcu#.SunPresentationMinimizer.Strings.STR_SAVE_AS
 msgid  "~Duplicate presentation before applying changes"
-msgstr ""
+msgstr "~Hacer copia de la presentación antes de aplicar los respectivos cambios"
 
 #: source/minimizer/registry/data/org/openoffice/Office/extension/SunPresentationMinimizer.xcu#.SunPresentationMinimizer.Strings.STR_DELETE_SLIDES
 msgid  "Delete %SLIDES slides."
@@ -225,7 +225,7 @@ msgstr "Borrar %SLIDES diapositivas. "
 
 #: source/minimizer/registry/data/org/openoffice/Office/extension/SunPresentationMinimizer.xcu#.SunPresentationMinimizer.Strings.STR_OPTIMIZE_IMAGES
 msgid  "Optimize %IMAGES graphics to %QUALITY% JPEG quality at %RESOLUTION DPI."
-msgstr ""
+msgstr "Optimizar %IMAGES gráficos a calidad JPEG %QUALITY% a una resolución de %RESOLUTION DPI."
 
 #: source/minimizer/registry/data/org/openoffice/Office/extension/SunPresentationMinimizer.xcu#.SunPresentationMinimizer.Strings.STR_CREATE_REPLACEMENT
 msgid  "Create replacement graphics for %OLE objects."
@@ -253,7 +253,7 @@ msgstr "Sesión predeterminada"
 
 #: source/minimizer/registry/data/org/openoffice/Office/extension/SunPresentationMinimizer.xcu#.SunPresentationMinimizer.Strings.STR_MODIFY_WARNING
 msgid  "The optimization will modify the current document. Do you want to continue?"
-msgstr ""
+msgstr "La optimización modificará el documento actual. ¿Desea continuar?"
 
 #: source/minimizer/registry/data/org/openoffice/Office/extension/SunPresentationMinimizer.xcu#.SunPresentationMinimizer.Strings.STR_YES
 msgid  "~Yes"
@@ -265,19 +265,19 @@ msgstr "Aceptar"
 
 #: source/minimizer/registry/data/org/openoffice/Office/extension/SunPresentationMinimizer.xcu#.SunPresentationMinimizer.Strings.STR_INFO_1
 msgid  "The @MINIMIZEREXTENSIONPRODUCTNAME@ has successfully updated the presentation '%TITLE'. The file size has changed from %OLDFILESIZE MB to %NEWFILESIZE MB."
-msgstr ""
+msgstr "El @MINIMIZEREXTENSIONPRODUCTNAME@ ha actualizado exitosamente la presentación '%TITLE'. El tamaño del archivo se ha cambiado de %OLDFILESIZE MB a %NEWFILESIZE MB."
 
 #: source/minimizer/registry/data/org/openoffice/Office/extension/SunPresentationMinimizer.xcu#.SunPresentationMinimizer.Strings.STR_INFO_2
 msgid  "The @MINIMIZEREXTENSIONPRODUCTNAME@ has successfully updated the presentation '%TITLE'. The file size has changed from %OLDFILESIZE MB to approximated %NEWFILESIZE MB."
-msgstr ""
+msgstr "El @MINIMIZEREXTENSIONPRODUCTNAME@ ha actualizado exitosamente la presentación '%TITLE'. El tamaño del archivo se ha cambiado de %OLDFILESIZE MB a %NEWFILESIZE MB, aproximadamente."
 
 #: source/minimizer/registry/data/org/openoffice/Office/extension/SunPresentationMinimizer.xcu#.SunPresentationMinimizer.Strings.STR_INFO_3
 msgid  "The @MINIMIZEREXTENSIONPRODUCTNAME@ has successfully updated the presentation '%TITLE'. The file size has changed to %NEWFILESIZE MB."
-msgstr ""
+msgstr "El @MINIMIZEREXTENSIONPRODUCTNAME@ ha actualizado exitosamente la presentación '%TITLE'. El tamaño del archivo se ha cambiado a %NEWFILESIZE MB."
 
 #: source/minimizer/registry/data/org/openoffice/Office/extension/SunPresentationMinimizer.xcu#.SunPresentationMinimizer.Strings.STR_INFO_4
 msgid  "The @MINIMIZEREXTENSIONPRODUCTNAME@ has successfully updated the presentation '%TITLE'. The file size has changed to approximated %NEWFILESIZE MB."
-msgstr ""
+msgstr "El @MINIMIZEREXTENSIONPRODUCTNAME@ ha actualizado exitosamente la presentación '%TITLE'. El tamaño del archivo ha cambiado a %NEWFILESIZE MB, aproximadamente."
 
 #: source/minimizer/registry/data/org/openoffice/Office/extension/SunPresentationMinimizer.xcu#.SunPresentationMinimizer.Strings.STR_DUPLICATING_PRESENTATION
 msgid  "Duplicating presentation..."
@@ -329,7 +329,7 @@ msgstr "Atajos de teclado para @PRESENTEREXTENSIONPRODUCTNAME@"
 
 #: source/presenter/help/en-US/com.sun.PresenterScreen/presenter.xhp#par_id0921201912165656
 msgid  "When running a slide show using the @PRESENTEREXTENSIONPRODUCTNAME@, you can use the following keys:"
-msgstr ""
+msgstr "Cuando utilice @PRESENTEREXTENSIONPRODUCTNAME@ para ver una presentación, podrá usar las siguientes teclas:"
 
 #: source/presenter/help/en-US/com.sun.PresenterScreen/presenter.xhp#par_id0921200901104028
 msgid  "Action"
@@ -345,7 +345,7 @@ msgstr "Próxima diapositiva o próximo efecto"
 
 #: source/presenter/help/en-US/com.sun.PresenterScreen/presenter.xhp#par_id0921200901104120
 msgid  "Left click, right arrow, down arrow, spacebar, page down, enter, return, 'N'"
-msgstr ""
+msgstr "Clic izquierdo, flecha hacia la derecha o hacia abajo, barra espaciadora, Av Pág, Intro, Retorno, N"
 
 #: source/presenter/help/en-US/com.sun.PresenterScreen/presenter.xhp#par_id0921200901104165
 msgid  "Previous slide, or previous effect"
@@ -505,7 +505,7 @@ msgstr "Cerrar"
 
 #: source/presenter/registry/data/org/openoffice/Office/extension/PresenterScreen.xcu#..PresenterScreen.PresenterScreenSettings.HelpView.HelpStrings.a.Left
 msgid  "Left click, right or down arrow, spacebar, page down, enter, return, 'N'"
-msgstr ""
+msgstr "Clic izquierdo, flecha hacia la derecha o hacia abajo, barra espaciadora, página abajo, entrar, volver, 'N'"
 
 #: source/presenter/registry/data/org/openoffice/Office/extension/PresenterScreen.xcu#..PresenterScreen.PresenterScreenSettings.HelpView.HelpStrings.a.Right
 msgid  "Next slide, or next effect"
@@ -513,7 +513,7 @@ msgstr "Próxima diapositiva, o próximo efecto"
 
 #: source/presenter/registry/data/org/openoffice/Office/extension/PresenterScreen.xcu#..PresenterScreen.PresenterScreenSettings.HelpView.HelpStrings.b.Left
 msgid  "Right click, left or up arrow, page up, backspace, 'P'"
-msgstr ""
+msgstr "Clic derecho, flecha hacia la izquierda o hacia arriba, página arriba, 'P'"
 
 #: source/presenter/registry/data/org/openoffice/Office/extension/PresenterScreen.xcu#..PresenterScreen.PresenterScreenSettings.HelpView.HelpStrings.b.Right
 msgid  "Previous slide, or previous effect"
@@ -693,7 +693,7 @@ msgstr "Diapositiva actual (%CURRENT_SLIDE_NUMBER% of %SLIDE_COUNT%)"
 
 #: source/presenter/registry/data/org/openoffice/Office/extension/PresenterScreen.xcu#..PresenterScreen.Presenter.Views.CurrentSlidePreview.AccessibleTitle
 msgid  "Current Slide, %CURRENT_SLIDE_NAME%, %CURRENT_SLIDE_NUMBER% of %SLIDE_COUNT%"
-msgstr ""
+msgstr "Diapositiva actual, %CURRENT_SLIDE_NAME%, %CURRENT_SLIDE_NUMBER% de %SLIDE_COUNT%"
 
 #: source/presenter/registry/data/org/openoffice/Office/extension/PresenterScreen.xcu#..PresenterScreen.Presenter.Views.CurrentSlidePreview.Strings.ClickToExitPresentationText.String
 msgid  "Click to exit presentation..."
@@ -713,7 +713,7 @@ msgstr "Notas"
 
 #: source/presenter/registry/data/org/openoffice/Office/extension/PresenterScreen.xcu#..PresenterScreen.Presenter.Views.SlideSorter.AccessibleTitle
 msgid  "Slide Overview, %CURRENT_SLIDE_NAME%, %CURRENT_SLIDE_NUMBER% of %SLIDE_COUNT%"
-msgstr ""
+msgstr "Revisión de diapositiva, %CURRENT_SLIDE_NAME%, %CURRENT_SLIDE_NUMBER% de %SLIDE_COUNT%"
 
 #: source/presenter/registry/data/org/openoffice/Office/extension/PresenterScreen.xcu#..PresenterScreen.Presenter.Views.HelpView.Title
 msgid  "Help"

@@ -33,7 +33,7 @@ msgstr ""
 
 #: source/component/warnbox.src#RID_XMLSECWB_NO_MOZILLA_PROFILE.WarningBox.Message
 msgid  "Digital signatures functionality could not be used, because no Mozilla user profile was found. Please check the Mozilla installation."
-msgstr ""
+msgstr "לא ניתן להשתמש בחתימות ספרתיות כי פרופיל משתמש מוזילה לא נמצא. נא לבדוק את תקינות ההתקנה של מוזילה.‏"
 
 #: source/dialogs/macrosecurity.src#RID_XMLSECTP_MACROSEC.TabDialog.Text
 msgid  "Macro Security"
@@ -53,19 +53,19 @@ msgstr "אתחול"
 
 #: source/dialogs/macrosecurity.src#RID_XMLSECTP_SECLEVEL.RB_VERYHIGH.RadioButton.Text
 msgid  "~Very high.\nOnly macros from trusted file locations are allowed to run. All other macros, regardless whether signed or not, are disabled."
-msgstr ""
+msgstr "גבוה מאוד.‏\nרק מאקרויים ממיקומי קובץ נאמנים יופעלו. כל מאקרו אחר, בין אם חתום ובין אם לא חתום. לא יופעל.‏"
 
 #: source/dialogs/macrosecurity.src#RID_XMLSECTP_SECLEVEL.RB_HIGH.RadioButton.Text
 msgid  "H~igh.\nOnly signed macros from trusted sources are allowed to run. Unsigned macros are disabled."
-msgstr ""
+msgstr "גבוה.‏\nרק מאקרויים חתומים ממקורות מהימנים יופעלו. מאקרויים ללא חתימה לא יופעלו.‏"
 
 #: source/dialogs/macrosecurity.src#RID_XMLSECTP_SECLEVEL.RB_MEDIUM.RadioButton.Text
 msgid  "~Medium.\nConfirmation required before executing macros from untrusted sources."
-msgstr ""
+msgstr "בינוני.‏\nדורש אישור יזום לפני כל הפעלה של מאקרו ממקור לא מהימן.‏"
 
 #: source/dialogs/macrosecurity.src#RID_XMLSECTP_SECLEVEL.RB_LOW.RadioButton.Text
 msgid  "~Low (not recommended).\nAll macros will be executed without confirmation. Use this setting only if you are certain that all documents that will be opened are safe."
-msgstr ""
+msgstr "נמוך (לא מומלץ).‏\nמאקרויים יופעלו ללא צורך באישור או חתימה. אין להשתמש באפשרות זו אלה אם כן ידוע שכל מסמך שנפתח אינו מהווה סיכון.‏"
 
 #: source/dialogs/macrosecurity.src#RID_XMLSECTP_TRUSTSOURCES.FL_TRUSTCERT.FixedLine.Text
 msgid  "Trusted certificates"
@@ -93,7 +93,7 @@ msgstr "מיקומי קובץ מהימנים"
 
 #: source/dialogs/macrosecurity.src#RID_XMLSECTP_TRUSTSOURCES.FI_TRUSTFILELOC.FixedText.Text
 msgid  "Document macros are always executed if they have been opened from one of the following locations."
-msgstr ""
+msgstr "נעשה שימוש במיקומי קובץ מהימנים רק כאשר רמת הבטחון הוגדרה כ'גבוהה מאוד'. הגדרה זו קובעת שמאקרויים במסמכים יופעלו רק אם נפתחים באחד מהמקומות הבאים.‏"
 
 #: source/dialogs/macrosecurity.src#RID_XMLSECTP_TRUSTSOURCES.FL_ADD_TRUSTFILELOC.PushButton.Text
 msgid  "Add..."
@@ -125,7 +125,7 @@ msgstr "הצגת חתימות...‏"
 
 #: source/dialogs/warnings.src#RID_XMLSECTP_MACROWARN.FI_DESCR2.FixedText.Text
 msgid  "Macros may contain viruses. Disabling macros for a document is always save. If you disable macros you may lose functionality provided by the document macros."
-msgstr ""
+msgstr "מאקרוים יכולים להכיל ווירוסים. הסיכון גבוה כאשר מקור המאקרוים אינו ידוע או ידוע כמקור לא אמין. חסימת מאקרוים מסירה את הסיכון אבל יכולה גם לחסום תפקודים רצויים של המסמך."
 
 #: source/dialogs/warnings.src#RID_XMLSECTP_MACROWARN.CB_ALWAYSTRUST.CheckBox.Text
 msgid  "Always trust macros from this source"
@@ -205,7 +205,7 @@ msgstr ""
 
 #: source/dialogs/digitalsignaturesdialog.src#MSG_XMLSECDLG_QUERY_REMOVEDOCSIGNBEFORESIGN.QueryBox.Message
 msgid  "Adding or removing a macro signature will remove all document signatures.\nDo you really want to continue?"
-msgstr ""
+msgstr "הוספה או הסרה של חתימת מאקרו תסיר את כל החתימות מהמסמך./nהאם להמשיך?"
 
 #: source/dialogs/certificateviewer.src#RID_XMLSECDLG_CERTVIEWER.TabDialog.Text
 msgid  "View Certificate"

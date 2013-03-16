@@ -137,7 +137,7 @@ msgstr "Mentés"
 
 #: source/basicide/basidesh.src#RID_STR_SOURCETOBIG.String.Text
 msgid  "The source text is too large and can be neither compiled nor saved.\nDelete some of the comments or transfer some methods into another module."
-msgstr ""
+msgstr "A forrásszöveg túl nagy, és se lefordítani se menteni nem lehet.\nTörölje a megjegyzések egy részét, vagy bizonyos metódusokat helyezzen át egy másik modulba."
 
 #: source/basicide/basidesh.src#RID_STR_ERROROPENSTORAGE.String.Text
 msgid  "Error opening file"
@@ -201,7 +201,7 @@ msgstr "Már létező fájl: „XX”"
 
 #: source/basicide/basidesh.src#RID_STR_CANNOTRUNMACRO.String.Text
 msgid  "For security reasons, you cannot run this macro.\n\nFor more information, check the security settings."
-msgstr ""
+msgstr "Biztonsági okokból ez a makró nem futtatható.\n\nTovábbi információkért tekintse meg a biztonsági beállításokat."
 
 #: source/basicide/basidesh.src#RID_STR_COMPILEERROR.String.Text
 msgid  "Compile Error: "
@@ -373,7 +373,7 @@ msgstr "Kötelező egy nevet megadni."
 
 #: source/basicide/basidesh.src#RID_STR_WILLSTOPPRG.String.Text
 msgid  "You will have to restart the program after this edit.\nContinue?"
-msgstr ""
+msgstr "A szerkesztés után újra kell indítani a programot.\nFolytatja?"
 
 #: source/basicide/basidesh.src#RID_STR_SEARCHALLMODULES.String.Text
 msgid  "Do you want to replace the text in all active modules?"
@@ -509,7 +509,7 @@ msgstr "Párbeszédablak-importálás – A név már használatban van"
 
 #: source/basicide/basidesh.src#RID_STR_DLGIMP_CLASH_TEXT.String.Text
 msgid  "The library already contains a dialog with the name:\n\n$(ARG1)\n\nRename dialog to keep current dialog or replace existing dialog.\n "
-msgstr ""
+msgstr "A könyvtár már tartalmaz egy párbeszédablakot a következő névvel:\n\n$(ARG1)\n\nNevezze át a párbeszédablakot az aktuális párbeszédablak megtartásához, vagy cserélje le a meglévő párbeszédablakot.\n "
 
 #: source/basicide/basidesh.src#RID_STR_DLGIMP_MISMATCH_ADD.String.Text
 msgid  "Add"
@@ -525,7 +525,7 @@ msgstr "Párbeszédablak-importálás – Eltérő nyelvek"
 
 #: source/basicide/basidesh.src#RID_STR_DLGIMP_MISMATCH_TEXT.String.Text
 msgid  "The dialog to be imported supports other languages than the target library.\n\nAdd these languages to the library to keep additional language resources provided by the dialog or omit them to stay with the current library languages.\n\nNote: For languages not supported by the dialog the resources of the dialog's default language will be used.\n "
-msgstr ""
+msgstr "Az importálandó párbeszédablak más nyelveket támogat, mint a célkönyvtár.\n\nAdja hozzá ezeket a nyelveket a könyvtárhoz, hogy megmaradjanak a párbeszédablak által biztosított további nyelvi erőforrások, vagy hagyja ki őket, hogy a könyvtár jelenlegi nyelveinél maradjon.\n\nMegjegyzés: A párbeszédablak által nem támogatott nyelvek esetén a párbeszédablak alapértelmezett nyelve lesz használva.\n "
 
 #: source/basicide/basicprint.src#RID_PRINTDLG_STRLIST.item1.ItemList.item
 msgid  "Print range"
@@ -757,7 +757,7 @@ msgstr "Alapértelmezett"
 
 #: source/dlged/managelang.src#RID_DLG_MANAGE_LANGUAGE.FT_INFO.FixedText.Text
 msgid  "The default language is used if no localization for a user interface locale is present. Furthermore all strings from the default language are copied to resources of newly added languages."
-msgstr ""
+msgstr "Az alapértelmezett nyelv lesz használva, ha a felhasználói felület nyelvéhez illő honosítás nem érhető el. Ezen kívül az alapértelmezett nyelv valamennyi karakterlánca átmásolódik az újonnan hozzáadott nyelvek erőforrásai közé."
 
 #: source/dlged/managelang.src#RID_DLG_MANAGE_LANGUAGE.PB_CLOSE.OKButton.Text
 msgid  "~Close"
@@ -781,7 +781,7 @@ msgstr "Nyelvi erőforrások törlése"
 
 #: source/dlged/managelang.src#RID_QRYBOX_LANGUAGE.QueryBox.Message
 msgid  "You are about to delete the resources for the selected language(s). All user interface strings for this language(s) will be deleted.\n\nDo you want to delete the resources of the selected language(s)?"
-msgstr ""
+msgstr "Arra készül, hogy törölje a kijelölt nyelvekhez tartozó tartozó erőforrásokat. Minden, ezekhez a nyelvekhez tartozó karakterlánc törlődni fog.\n\nSzeretné törölni a kijelölt nyelvekhez tartozó erőforrásokat?"
 
 #: source/dlged/managelang.src#RID_DLG_SETDEF_LANGUAGE.ModalDialog.Text
 msgid  "Set Default User Interface Language"
@@ -793,7 +793,7 @@ msgstr "Alapértelmezett nyelv"
 
 #: source/dlged/managelang.src#RID_DLG_SETDEF_LANGUAGE.FT_DEF_INFO.FixedText.Text
 msgid  "Select a language to define the default user interface language. All currently present strings will be assigned to the resources created for the selected language."
-msgstr ""
+msgstr "Jelöljön ki egy nyelvet, amely a felhasználói felület alapértelmezett nyelve lesz. Minden jelenleg meglévő karakterlánc hozzá lesz rendelve a kijelölt nyelvhez létrehozott erőforrásokhoz."
 
 #: source/dlged/managelang.src#RID_DLG_SETDEF_LANGUAGE.STR_ADDLANG_TITLE.String.Text
 msgid  "Add User Interface Languages"
@@ -805,7 +805,7 @@ msgstr "Elérhető nyelvek"
 
 #: source/dlged/managelang.src#RID_DLG_SETDEF_LANGUAGE.STR_ADDLANG_INFO.String.Text
 msgid  "Select languages to be added. Resources for these languages will be created in the library. Strings of the current default user interface language will be copied to these new resources by default."
-msgstr ""
+msgstr "Jelölje ki a hozzáadandó nyelveket. Ezekhez a nyelvekhez létre fognak jönni az erőforrások a programkönyvtárban. A felhasználói felület jelenlegi alapértelmezett nyelvének karakterláncai alapértelmezés szerint át fognak másolódni ezekbe az új erőforrásokba."
 
 #: source/dlged/dlgresid.src#RID_STR_BRWTITLE_PROPERTIES.String.Text
 msgid  "Properties: "

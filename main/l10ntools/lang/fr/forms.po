@@ -177,7 +177,7 @@ msgstr "remplacé"
 
 #: source/resource/strings.src#RID_STR_CONTROL_SUBSTITUTED_EPXPLAIN.String.Text
 msgid  "An error occurred while this control was being loaded. It was therefore replaced with a placeholder."
-msgstr ""
+msgstr "Erreur lors du chargement de ce contrôle ; c'est pouquoi il a été remplacé par un substituant."
 
 #: source/resource/strings.src#RID_STR_READERROR.String.Text
 msgid  "Error reading data from database"
@@ -233,7 +233,7 @@ msgstr "Erreur dans l'analyse de l'expression de la requête"
 
 #: source/resource/strings.src#RID_STR_INCOMPATIBLE_TYPES.String.Text
 msgid  "The value types supported by the binding cannot be used for exchanging data with this control."
-msgstr ""
+msgstr "Les types de valeur supportés par le binding sont inutilisables pour l'échange de données avec ce contrôle."
 
 #: source/resource/strings.src#RID_STR_LABEL_RECORD.String.Text
 msgid  "Record"
@@ -241,7 +241,7 @@ msgstr "Enregistrement"
 
 #: source/resource/strings.src#RID_STR_INVALID_VALIDATOR.String.Text
 msgid  "The control is connected to an external value binding, which at the same time acts as validator. You need to revoke the value binding, before you can set a new validator."
-msgstr ""
+msgstr "Le contrôle est connecté à une liaison de valeur externe qui agit en même temps comme valideur. Vous devez révoquer cette liaison avant de définir un nouveau valideur."
 
 #: source/resource/strings.src#RID_STR_LABEL_OF.String.Text
 msgid  "of"
@@ -249,7 +249,7 @@ msgstr "de"
 
 #: source/resource/strings.src#RID_STR_QUERY_SAVE_MODIFIED_ROW.String.Text
 msgid  "The content of the current form has been modified.\nDo you want to save your changes?"
-msgstr ""
+msgstr "Le contenu du formulaire actif a été modifié.\nVoulez-vous enregistrer les modifications ?"
 
 #: source/resource/strings.src#RID_STR_COULD_NOT_SET_ORDER.String.Text
 msgid  "Error setting the sort criteria"
@@ -265,7 +265,7 @@ msgstr "Des paramètres sont nécessaires pour exécuter cette fonction."
 
 #: source/resource/strings.src#RID_STR_FEATURE_NOT_EXECUTABLE.String.Text
 msgid  "This function cannot be executed, but is only for status queries."
-msgstr ""
+msgstr "Cette fonction ne peut pas être exécutée ; elle sert uniquement aux requêtes d'état."
 
 #: source/resource/strings.src#RID_STR_FEATURE_UNKNOWN.String.Text
 msgid  "Unknown function."

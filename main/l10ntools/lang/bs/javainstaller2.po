@@ -270,8 +270,9 @@ msgid  "Welcome"
 msgstr "Dobrodošli"
 
 #: src/Localization/setupstrings.ulf#STRING_PROLOGUE2
+#, fuzzy
 msgid  "This Installation Wizard will install ${PRODUCT_FULLNAME} on your computer."
-msgstr ""
+msgstr "Instalacijski čarobnjak će instalirati ${PRODUCT_FULLNAME} na vaš računar."
 
 #: src/Localization/setupstrings.ulf#STRING_PROLOGUE3
 #, fuzzy
@@ -298,8 +299,9 @@ msgid  "Installation Failed"
 msgstr "Deinstalacija neuspješna"
 
 #: src/Localization/setupstrings.ulf#STRING_INSTALLATIONCOMPLETED2
+#, fuzzy
 msgid  "The Installation Wizard has successfully installed ${PRODUCT_FULLNAME} on your computer."
-msgstr ""
+msgstr "Deinstalacijski čarobnjak je uspješno izbrisao ${PRODUCT_FULLNAME} sa vašeg računara."
 
 #: src/Localization/setupstrings.ulf#STRING_INSTALLATIONCOMPLETED2_ABORT
 msgid  "The Installation Wizard was aborted. ${PRODUCT_NAME} is not installed on your computer."
@@ -320,16 +322,19 @@ msgid  "Details..."
 msgstr "Detalji..."
 
 #: src/Localization/setupstrings.ulf#STRING_UNINSTALLATIONPROLOGUE2
+#, fuzzy
 msgid  "The ${PRODUCT_FULLNAME} Uninstallation Wizard will remove ${PRODUCT_FULLNAME} from your computer."
-msgstr ""
+msgstr "${PRODUCT_FULLNAME} deinstalacijski čarobnjak će izbrisati ${PRODUCT_FULLNAME} sa vašeg računara."
 
 #: src/Localization/setupstrings.ulf#STRING_UNINSTALLATION_PROLOGUE_WRONG_PRIVILEGES_CURRENT_ROOT
+#, fuzzy
 msgid  "Sorry, wrong privileges. Installation was done with User privilges, but you have Root privileges."
-msgstr ""
+msgstr "Izvinite, pogrešne privilegije. Instalacija je napravljena sa korisničkim privilegijama, ali vi imate Root privilegije."
 
 #: src/Localization/setupstrings.ulf#STRING_UNINSTALLATION_PROLOGUE_WRONG_PRIVILEGES_CURRENT_USER
+#, fuzzy
 msgid  "Sorry, wrong privileges. Installation was done with Root privilges, but you have User privileges."
-msgstr ""
+msgstr "Izvinite, pogrešne privilegije. Instalacija je napravljena sa Root privilegijama, ali vi imate korisničke privilegije."
 
 #: src/Localization/setupstrings.ulf#STRING_CHOOSEUNINSTALLATIONTYPE1
 #, fuzzy
@@ -392,16 +397,19 @@ msgid  "Uninstallation Failed"
 msgstr "Deinstalacija neuspješna"
 
 #: src/Localization/setupstrings.ulf#STRING_UNINSTALLATIONCOMPLETED2
+#, fuzzy
 msgid  "The Uninstallation Wizard has successfully removed ${PRODUCT_FULLNAME} from your computer."
-msgstr ""
+msgstr "Deinstalacijski čarobnjak je uspješno izbrisao ${PRODUCT_FULLNAME} sa vašeg računara."
 
 #: src/Localization/setupstrings.ulf#STRING_UNINSTALLATIONCOMPLETED2_PARTIAL
+#, fuzzy
 msgid  "The Uninstallation Wizard has successfully removed the selected components of ${PRODUCT_NAME} from your computer."
-msgstr ""
+msgstr "Deinstalacijski čarobnjak je uspješno izbrisao izabrane komponente od ${PRODUCT_NAME} sa vašeg računara."
 
 #: src/Localization/setupstrings.ulf#STRING_UNINSTALLATIONCOMPLETED2_ABORT
+#, fuzzy
 msgid  "The Uninstallation Wizard was aborted before completely removing ${PRODUCT_NAME} from your computer."
-msgstr ""
+msgstr "Deinstalacijski čarobnjak je prekinut prije nego što je uspješno izbrisao ${PRODUCT_NAME} sa vašeg računara."
 
 #: src/Localization/setupstrings.ulf#STRING_UNINSTALLATIONCOMPLETED2_ERROR
 msgid  "An error has occurred. Thus the Uninstallation Wizard could not remove ${PRODUCT_NAME} from your computer successfully. Click 'Details...' for more information."
@@ -417,8 +425,9 @@ msgid  "An older version of ${PRODUCT_NAME} was found on your system in:"
 msgstr "Starija verzija ${PRODUCT_NAME} je pronađena na vašem sistemu u:"
 
 #: src/Localization/setupstrings.ulf#STRING_OLDER_VERSION_INSTALLED_REMOVE
+#, fuzzy
 msgid  "You have to remove the older version of ${PRODUCT_NAME} before you can install the newer one."
-msgstr ""
+msgstr "Morate da izbrišete stariju verziju ${PRODUCT_NAME} prije nego što možete da instalirate noviju."
 
 #: src/Localization/setupstrings.ulf#STRING_NEWER_VERSION_INSTALLED_FOUND
 #, fuzzy
@@ -426,8 +435,9 @@ msgid  "A newer version of ${PRODUCT_NAME} was found on your system in:"
 msgstr "Starija verzija ${PRODUCT_NAME} je pronađena na vašem sistemu u:"
 
 #: src/Localization/setupstrings.ulf#STRING_NEWER_VERSION_INSTALLED_REMOVE
+#, fuzzy
 msgid  "You have to remove the newer version of ${PRODUCT_NAME} before you can install the older one."
-msgstr ""
+msgstr "Morate da izbrišete stariju verziju ${PRODUCT_NAME} prije nego što možete da instalirate noviju."
 
 #: src/Localization/setupstrings.ulf#STRING_NEWER_VERSION_DATABASE
 #, fuzzy
@@ -439,12 +449,14 @@ msgid  "Please choose another installation directory."
 msgstr ""
 
 #: src/Localization/setupstrings.ulf#STRING_ROOT_PRIVILEGES_REQUIRED_1
+#, fuzzy
 msgid  "The user you are logged in as cannot run the Installation Wizard."
-msgstr ""
+msgstr "Korisnik sa kojim ste prijavljeni na sistem ne može da pokrene Instalacijski čarobnjak."
 
 #: src/Localization/setupstrings.ulf#STRING_ROOT_PRIVILEGES_REQUIRED_2
+#, fuzzy
 msgid  "Please log out and log back in as a user with system administrator rights."
-msgstr ""
+msgstr "Molim vas odjavite se i zatim se prijavite sa korisničkim računom koji posjeduje administratorska prava."
 
 #: src/Localization/setupstrings.ulf#STRING_DISCSPACE_INSUFFICIENT
 msgid  "Not enough discspace available for installation."
@@ -485,12 +497,14 @@ msgid  "'Next' takes you to the next page. "
 msgstr "'Dalje' vas vodi na iduću stranu. "
 
 #: src/Localization/setupstrings.ulf#STRING_PROLOGUE_4
+#, fuzzy
 msgid  "'Cancel' ends the Installation Wizard without installing this software."
-msgstr ""
+msgstr "'Prekini' zaustavlja Instalacijskog čarobnjaka bez instaliranja ovog softvera."
 
 #: src/Localization/setupstrings.ulf#STRING_PROLOGUE_5
+#, fuzzy
 msgid  "'Help' displays the Help with further information about the page currently displayed."
-msgstr ""
+msgstr "'Pomoć' prikazuje Pomoć sa dodatnim informacijama o trenutnoj stranici koja se prikazuje."
 
 #: src/Localization/setupstrings.ulf#STRING_PROLOGUE_6
 #, fuzzy
@@ -517,8 +531,9 @@ msgid  "'Cancel' ends the Uninstallation Wizard without removing this software."
 msgstr "'Prekini' zaustavlja Deinstalacijski čarobnjak bez brisanja softvera."
 
 #: src/Localization/setupstrings.ulf#STRING_UNINSTALLATIONPROLOGUE_5
+#, fuzzy
 msgid  "'Help' displays the Help with further information about the page currently displayed."
-msgstr ""
+msgstr "'Pomoć' prikazuje Pomoć sa dodatnim informacijama o trenutnoj stranici koja se prikazuje."
 
 #: src/Localization/setupstrings.ulf#STRING_UNINSTALLATIONPROLOGUE_6
 #, fuzzy
@@ -550,20 +565,24 @@ msgid  "Components marked in color will be installed. Click the icon of a compon
 msgstr ""
 
 #: src/Localization/setupstrings.ulf#STRING_INSTALLATIONIMMINENT_1
+#, fuzzy
 msgid  "The listed components are ready for installation based on your configuration settings. <p>If you are satisfied with your selection, click 'Install Now' to begin. <p>To check or modify your settings on the previous pages, click 'Back'."
-msgstr ""
+msgstr "Navedene komponente su spremne za deinstalaciju po vašim postavkama. <p>Ako ste zadovoljni izborom, kliknite 'Ukloni sada' da počnete.  <p>Da provjerite ili promijenite postavke na prethodnim stranama, kliknite 'Nazad'."
 
 #: src/Localization/setupstrings.ulf#STRING_UNINSTALLATIONIMMINENT_1
+#, fuzzy
 msgid  "The listed components are ready for uninstallation based on your configuration settings. <p>If you are satisfied with your selection, click 'Remove Now' to begin. <p>To check or modify your settings on the previous pages, click 'Back'."
-msgstr ""
+msgstr "Navedene komponente su spremne za deinstalaciju po vašim postavkama. <p>Ako ste zadovoljni izborom, kliknite 'Ukloni sada' da počnete.  <p>Da provjerite ili promijenite postavke na prethodnim stranama, kliknite 'Nazad'."
 
 #: src/Localization/setupstrings.ulf#STRING_INSTALLATIONONGOING_1
+#, fuzzy
 msgid  "This page indicates the progress of the installation with the aid of a progress bar. To abort the installation process, click 'Stop'."
-msgstr ""
+msgstr "Stranica prikazuje napredak deinstalacije uz pomoć trake napretka. Da prekinete deinstalaciju, pritisnite 'Stop'."
 
 #: src/Localization/setupstrings.ulf#STRING_UNINSTALLATIONONGOING_1
+#, fuzzy
 msgid  "This page indicates the progress of the uninstallation with the aid of a progress bar. To abort the uninstallation, click 'Stop'."
-msgstr ""
+msgstr "Stranica prikazuje napredak deinstalacije uz pomoć trake napretka. Da prekinete deinstalaciju, pritisnite 'Stop'."
 
 #: src/Localization/setupstrings.ulf#STRING_CHOOSEUNINSTALLATIONTYPE_1
 msgid  "Complete: This will remove all installed components of your version.<p>Partial: This removes only the components you will choose out of the components list."
@@ -574,8 +593,9 @@ msgid  "Components marked with an X will be removed. Click next to a component t
 msgstr ""
 
 #: src/Localization/setupstrings.ulf#STRING_PACKAGEFORMAT_NOT_SUPPORTED
+#, fuzzy
 msgid  "This package format is currently not supported for your operating system!"
-msgstr ""
+msgstr "Ovaj format paketa trenutno nije podržan na vašem operativnom sistemu!"
 
 #: src/Localization/setupstrings.ulf#STRING_OPERATING_SYSTEM
 #, fuzzy
@@ -597,8 +617,9 @@ msgid  "No components have been selected for installation."
 msgstr "Nijedna komponenta nije izabrana za deinstalaciju."
 
 #: src/Localization/setupstrings.ulf#STRING_NO_COMPONENTS_SELECTED_2
+#, fuzzy
 msgid  "Click 'OK' to select one or more components for installation or to exit the Installation Wizard."
-msgstr ""
+msgstr "Pritisnite 'U redu' da izaberete jednu ili više komponenti za deinstalaciju ili da izađete iz Deinstalacijskog čarobnjaka."
 
 #: src/Localization/setupstrings.ulf#STRING_NO_LANGUAGE_SELECTED_1
 #, fuzzy
@@ -606,8 +627,9 @@ msgid  "No languages have been selected for installation."
 msgstr "Nijedna komponenta nije izabrana za deinstalaciju."
 
 #: src/Localization/setupstrings.ulf#STRING_NO_LANGUAGE_SELECTED_2
+#, fuzzy
 msgid  "Click 'OK' to select one or more languages for installation or to exit the Installation Wizard."
-msgstr ""
+msgstr "Pritisnite 'U redu' da izaberete jedan ili više jezika za instalaciju ili da izađete iz Instalacijskog čarobnjaka."
 
 #: src/Localization/setupstrings.ulf#STRING_NO_APPLICATION_SELECTED_1
 #, fuzzy
@@ -615,8 +637,9 @@ msgid  "No applications have been selected for installation."
 msgstr "Nijedna komponenta nije izabrana za deinstalaciju."
 
 #: src/Localization/setupstrings.ulf#STRING_NO_APPLICATION_SELECTED_2
+#, fuzzy
 msgid  "Click 'OK' to select one or more application for installation or to exit the Installation Wizard."
-msgstr ""
+msgstr "Pritisnite 'U redu' da izaberete jedan ili više jezika za instalaciju ili da izađete iz Instalacijskog čarobnjaka."
 
 #: src/Localization/setupstrings.ulf#STRING_NOTHING_TO_UNINSTALL
 msgid  "Nothing to uninstall"
@@ -628,8 +651,9 @@ msgid  "No components have been selected for uninstallation."
 msgstr "Nijedna komponenta nije izabrana za deinstalaciju."
 
 #: src/Localization/setupstrings.ulf#STRING_NO_UNINSTALLCOMPONENTS_SELECTED_2
+#, fuzzy
 msgid  "Click 'OK' to select one or more components for uninstallation or to exit the Uninstallation Wizard."
-msgstr ""
+msgstr "Pritisnite 'U redu' da izaberete jednu ili više komponenti za deinstalaciju ili da izađete iz Deinstalacijskog čarobnjaka."
 
 #: src/Localization/setupstrings.ulf#STRING_ALL_LANGUAGECOMPONENTS_SELECTED_1
 #, fuzzy
@@ -637,8 +661,9 @@ msgid  "All language components have been selected for uninstallation."
 msgstr "Nijedna komponenta nije izabrana za deinstalaciju."
 
 #: src/Localization/setupstrings.ulf#STRING_ALL_LANGUAGECOMPONENTS_SELECTED_2
+#, fuzzy
 msgid  "Click 'OK' to select one or more language components not for uninstallation or to exit the Uninstallation Wizard."
-msgstr ""
+msgstr "Pritisnite 'U redu' da izaberete jednu ili više komponenti za deinstalaciju ili da izađete iz Deinstalacijskog čarobnjaka."
 
 #: src/Localization/setupstrings.ulf#STRING_ALL_APPLICATIONCOMPONENTS_SELECTED_1
 #, fuzzy
@@ -646,8 +671,9 @@ msgid  "All application components have been selected for uninstallation."
 msgstr "Nijedna komponenta nije izabrana za deinstalaciju."
 
 #: src/Localization/setupstrings.ulf#STRING_ALL_APPLICATIONCOMPONENTS_SELECTED_2
+#, fuzzy
 msgid  "Click 'OK' to select one or more application components not for uninstallation or to exit the Uninstallation Wizard."
-msgstr ""
+msgstr "Pritisnite 'U redu' da izaberete jednu ili više komponenti za deinstalaciju ili da izađete iz Deinstalacijskog čarobnjaka."
 
 #: src/Localization/setupstrings.ulf#STRING_CHANGE_SELECTION
 msgid  "Please change selection"

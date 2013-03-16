@@ -109,7 +109,7 @@ msgstr "अन्य बाहरी आँकड़ा स्रोत"
 
 #: source/abpilot/abspilot.src#RID_PAGE_ADMININVOKATION.FT_ADMINEXPLANATION.FixedText.Text
 msgid  "To set up the new data source, additional information is required.\n\nClick the following button to open another dialog in which you then enter the necessary information."
-msgstr ""
+msgstr "नया आँकड़ा स्रोत का सेटअप करने के लिये, अतिरिक्त जानकारी की आवश्यकता है .\n\nनिम्नलिखित बटन को क्लिक करने से दूसरा संवाद खुल जायेगा जहां पर आवश्यक जानकारियों को आप प्रविष्ट कर सकते हैं."
 
 #: source/abpilot/abspilot.src#RID_PAGE_ADMININVOKATION.PB_INVOKE_ADMIN_DIALOG.PushButton.Text
 msgid  "Settings"
@@ -117,15 +117,15 @@ msgstr "सेटिंग"
 
 #: source/abpilot/abspilot.src#RID_PAGE_ADMININVOKATION.FT_ERROR.FixedText.Text
 msgid  "The connection to the data source could not be established.\nBefore you proceed, please check the settings made, or (on the previous page) choose another address data source type."
-msgstr ""
+msgstr "आँकड़ा स्रोत से कनेक्शन स्थापित नहीं कर सकते हैं.\nजारी रखने से पहले, की हुयी निर्धारणों का जाँच कीजिए, अथवा (पिछले पृष्ठ में) दूसरे पते का आँकड़ा स्रोत वर्ग को चुनिए. "
 
 #: source/abpilot/abspilot.src#RID_PAGE_TABLESELECTION_AB.FL_TOOMUCHTABLES.FixedText.Text
 msgid  "The external data source you have chosen contains more than one address book.\nPlease select the one you mainly want to work with:"
-msgstr ""
+msgstr "आपके चुने हुए बाहरी आँकड़ा स्रोत में एक से अधिक पता पुस्तिका सम्मिलित है .\nकृपया का एक मुख्य पता पुस्तिका को चुनें जिसके साथ आप काम करना चाहते हैं:"
 
 #: source/abpilot/abspilot.src#RID_PAGE_FIELDMAPPING.FT_FIELDASSIGMENTEXPL.FixedText.Text
-msgid  "To incorporate the address data in your templates, %PRODUCTNAME has to know which fields contain which data.\n\nFor instance, you could have stored the e-mail addresses in a field named "email", or "E-mail" or "EM" - or something completely different.\n\nClick the button below to open another dialog where you can enter the settings for your data source."
-msgstr ""
+msgid  "To incorporate the address data in your templates, %PRODUCTNAME has to know which fields contain which data.\n\nFor instance, you could have stored the e-mail addresses in a field named \"email\", or \"E-mail\" or \"EM\" - or something completely different.\n\nClick the button below to open another dialog where you can enter the settings for your data source."
+msgstr "आपके नमूनों में पता आँकड़ा को संयुक्त करने के लिये, %PRODUCTNAME को यह पता होना चाहिए कि हरेक क्षेत्र क्या मूल्य है .\n\nअभी के लिये, आपने ई-मेल पता को \"ई-मेल\", अथवा \"ई-मेल\" अथवा \"EM\" - अथवा कुछ संपूर्ण भिन्न नाम का क्षेत्र में संग्रह किया होगा .\n\nनीचे के बटन को दबाने पर एक डायलॉग बॉक्स खुल जायेगा जहां पर आप अपने आँकड़ा स्रोत के लिए निर्धारणों को प्रविष्ट कर सकते हैं."
 
 #: source/abpilot/abspilot.src#RID_PAGE_FIELDMAPPING.PB_INVOKE_FIELDS_DIALOG.PushButton.Text
 msgid  "Field Assignment"
@@ -133,7 +133,7 @@ msgstr "क्षेत्र कार्य"
 
 #: source/abpilot/abspilot.src#RID_PAGE_FINAL.FT_FINISH_EXPL.FixedText.Text
 msgid  "That was all the information necessary to integrate your address data into %PRODUCTNAME.\n\nNow, just enter the name under which you want to register the data source in %PRODUCTNAME."
-msgstr ""
+msgstr "वह सारी सूचनाएं थीं जो आपके पता आंकड़े को %PRODUCTNAME से जोड़ने के लिए जरूरी था.\n\nअब, सिर्फ नाम दें जिसके लिए आप आँकड़ा स्रोत पंजीकृत करना चाहते हैं %PRODUCTNAME में."
 
 #: source/abpilot/abspilot.src#RID_PAGE_FINAL.FT_LOCATION.FixedText.Text
 msgid  "Location"
@@ -153,7 +153,7 @@ msgstr "पता पुस्तिका नाम"
 
 #: source/abpilot/abspilot.src#RID_PAGE_FINAL.FT_DUPLICATENAME.FixedText.Text
 msgid  "Another data source already has this name. As data sources have to have globally unique names, you need to choose another one."
-msgstr ""
+msgstr "इस नाम का अन्य आँकड़ा स्रोत पहले से है . आँकड़ा स्रोत का ग्लोबली अनोखा नाम रहने के कारण, कृपया अन्य नाम को चुनिए ."
 
 #: source/abpilot/abspilot.src#RID_ERR_NEEDTYPESELECTION.ErrorBox.Message
 msgid  "Please select a type of address book."
@@ -161,7 +161,7 @@ msgstr "कृपया एक पता पुस्तिका वर्ग �
 
 #: source/abpilot/abspilot.src#RID_QRY_NOTABLES.QueryBox.Message
 msgid  "The data source does not contain any tables.\nDo you want to set it up as an address data source, anyway?"
-msgstr ""
+msgstr "आँकड़ा स्रोत में कोई सारणी नहीं है.\nआप किसी तरह उसको एक पता का आँकड़ा स्रोत जैसे सेट करना चाहते हैं?"
 
 #: source/abpilot/abspilot.src#RID_STR_DEFAULT_NAME.String.Text
 msgid  "Addresses"
@@ -184,8 +184,8 @@ msgid  "Address Data - Field Assignment"
 msgstr "पता आँकड़ा - क्षेत्र कार्य"
 
 #: source/abpilot/abspilot.src#RID_STR_NOFIELDSASSIGNED.String.Text
-msgid  "There are no fields assigned at this time.\nYou can either assign fields now or do so later by first choosing:\n"File - Template - Address Book Source...""
-msgstr ""
+msgid  "There are no fields assigned at this time.\nYou can either assign fields now or do so later by first choosing:\n\"File - Template - Address Book Source...\""
+msgstr "इस समय कोई नियत क्षेत्र नहीं है.\nआप या तो क्षेत्र नियत कर सकते हैं या ऐसा पहले चुनकर करें:\n\"फ़ाइल - नमूना - पता पुस्तिका स्रोत...\""
 
 #: source/bibliography/toolbar.src#RID_BIB_TOOLBAR.TBC_FT_SOURCE.ToolBoxItem.Text
 msgid  "Table"
@@ -493,7 +493,7 @@ msgstr "नियंत्रण"
 
 #: source/dbpilots/listcombopages.src#RID_PAGE_LCW_CONTENTSELECTION_TABLE.FT_SELECTTABLE_LABEL.FixedText.Text
 msgid  "On the right side, you see all the tables from the data source of the form.\n\n\nChoose the table from which the data should be used as basis for the list content:"
-msgstr ""
+msgstr "दाहिने हिस्से पर, प्रपत्र के आँकड़ा स्रोत पर आप सारी सारणी देखते हैं.\n\n\nसारणी चुनें जिससे आँकड़ा सूची सामग्री के आधार के रूप में प्रयुक्त होगा:"
 
 #: source/dbpilots/listcombopages.src#RID_PAGE_LCW_CONTENTSELECTION_FIELD.TabPage.Text
 msgid  "Field Selection"
@@ -513,7 +513,7 @@ msgstr "चुने हुए क्षेत्र विषयों को �
 
 #: source/dbpilots/listcombopages.src#RID_PAGE_LCW_CONTENTSELECTION_FIELD.STR_FIELDINFO_LISTBOX.String.Text
 msgid  "The contents of the selected field will be shown in the list box if the linked fields are identical."
-msgstr ""
+msgstr "अगर कड़ी किया क्षेत्र समान है तो चुने हुए क्षेत्र के विषय को सूची बॉक्स में दिखाया जाएगा."
 
 #: source/dbpilots/listcombopages.src#RID_PAGE_LCW_FIELDLINK.TabPage.Text
 msgid  "Field Link"
@@ -521,7 +521,7 @@ msgstr "क्षेत्र लिंक"
 
 #: source/dbpilots/listcombopages.src#RID_PAGE_LCW_FIELDLINK.FT_FIELDLINK_DESC.FixedText.Text
 msgid  "This is where you select fields with matching contents so that the value from the display field will be shown."
-msgstr ""
+msgstr "यहां पर आप समान विषय के क्षेत्रों को चुन सकते हैं, जिससे प्रदर्शन क्षेत्र के मूल्य को दिखा सकते हैं."
 
 #: source/dbpilots/listcombopages.src#RID_PAGE_LCW_FIELDLINK.FT_VALUELISTFIELD.FixedText.Text
 msgid  "Field from the ~Value Table"
@@ -533,7 +533,7 @@ msgstr "सूची सारणी का क्षेत्र (~L)"
 
 #: source/dbpilots/listcombopages.src#RID_STR_COMBOWIZ_DBFIELD.String.Text
 msgid  "You can either save the value of the combo box in a database field or use it for display purposes."
-msgstr ""
+msgstr "आप कॉम्बो क्षेत्र के मूल्य को डेटाबेस क्षेत्र में सहेज सकते हैं अथवा दिखाने के लिए उपयोग कर सकते हैं."
 
 #: source/dbpilots/gridpages.src#RID_PAGE_GW_FIELDSELECTION.TabPage.Text
 msgid  "Field Selection"
@@ -589,7 +589,7 @@ msgstr "आँकड़ा"
 
 #: source/dbpilots/commonpagesdbp.src#RID_PAGE_TABLESELECTION.FT_EXPLANATION.FixedText.Text
 msgid  "Currently, the form the control belongs to is not (or not completely) bound to a data source.\n\nPlease choose a data source and a table.\n\n\nPlease note that the settings made on this page will take effect immediately upon leaving the page."
-msgstr ""
+msgstr "अभी, प्रपत्र जिसमें नियंत्रण है (या पूरी तरह से नहीं) वह आँकड़ा स्रोत से बंधा नहीं है.\n\nकृपया एक आँकड़ा स्रोत और सारणी चुनें.\n\n\nकृपया नोट करें कि इस पृष्ठ पर बनाई गई सेटिंग तत्काल प्रभावी होगा पृष्ठ छोड़ने के दौरान."
 
 #: source/dbpilots/commonpagesdbp.src#RID_PAGE_TABLESELECTION.FT_DATASOURCE.FixedText.Text
 msgid  "~Data source:"
@@ -681,7 +681,7 @@ msgstr "क्षेत्र मूल्य"
 
 #: source/dbpilots/groupboxpages.src#RID_PAGE_OPTIONVALUES.FT_OPTIONVALUES_EXPL.FixedText.Text
 msgid  "When you select an option, the option group is given a specific value."
-msgstr ""
+msgstr "जब आप एक विकल्प को चुनते हैं, तब विकल्प समूह को एक निर्दिष्ट मूल्य दिया जाता है ."
 
 #: source/dbpilots/groupboxpages.src#RID_PAGE_OPTIONVALUES.FT_OPTIONVALUES.FixedText.Text
 msgid  "Which ~value do you want to assign to each option?"
@@ -705,7 +705,7 @@ msgstr "विकल्प समूह को उत्पन्न करन�
 
 #: source/dbpilots/groupboxpages.src#RID_STR_GROUPWIZ_DBFIELD.String.Text
 msgid  "You can either save the value of the option group in a database field or use it for a later action."
-msgstr ""
+msgstr "आप विकल्प समूह को डेटाबेस क्षेत्र में सहेज सकते हैं अथवा आगामी कार्य में उपयोग कर सकते हैं. "
 
 #: source/preload/preload.src#RID_DLG_OEMWIZARD.PB_PREV.PushButton.Text
 msgid  "<< Back"
@@ -753,7 +753,7 @@ msgstr ""
 
 #: source/preload/preload.src#RID_TP_LICENSE.FT_INFO2.FixedText.Text
 msgid  "View the complete License Agreement. Please use the scroll bar or the '%PAGEDOWN' button in this dialog to view the entire license text."
-msgstr ""
+msgstr "पूरे लाइसेंस मसौदे को देखें. स्क्रॉलबार का प्रयोग करें या संवाद में '%PAGEDOWN' बटन के पूरे लाइसेंस पाठ को देखने के लिये."
 
 #: source/preload/preload.src#RID_TP_LICENSE.PB_PAGEDOWN.PushButton.Text
 msgid  "Page Down"
@@ -801,7 +801,7 @@ msgstr "स्वचालित ढंग से छांटें"
 
 #: source/propctrlr/selectlabeldialog.src#RID_DLG_SELECTLABELCONTROL.1.FixedText.Text
 msgid  "These are control fields that can be used as label fields for the $control_class$ $control_name$."
-msgstr ""
+msgstr "इन नियंत्रण क्षेत्रों को $control_class$ $control_name$ के लिए लेबल क्षेत्र जैसे उपयोग कर सकते हैं ."
 
 #: source/propctrlr/selectlabeldialog.src#RID_DLG_SELECTLABELCONTROL.1.CheckBox.Text
 msgid  "~No assignment"
@@ -817,7 +817,7 @@ msgstr "प्रपत्र"
 
 #: source/propctrlr/pcrmiscres.src#RID_STR_CONFIRM_DELETE_DATA_TYPE.String.Text
 msgid  "Do you want to delete the data type '#type#' from the model?\nPlease note that this will affect all controls which are bound to this data type."
-msgstr ""
+msgstr "क्या आप आँकड़ा प्रकार '#type#' को मॉडल से मिटाना चाहते हैं?\nकृपया नोट करें कि यह सभी नियंत्रण को प्रभावी करेगा जो इस आँकड़ा प्रकार से बंधा है."
 
 #: source/propctrlr/pcrmiscres.src#RID_STR_PROPTITLE_PUSHBUTTON.String.Text
 msgid  "Button"
@@ -905,7 +905,7 @@ msgstr "लिंक क्षेत्र"
 
 #: source/propctrlr/formlinkdialog.src#RID_DLG_FORMLINKS.FT_EXPLANATION.FixedText.Text
 msgid  "Sub forms can be used to display detailed data about the current record of the master form. To do this, you can specify which columns in the sub form match which columns in the master form."
-msgstr ""
+msgstr "उप फार्म विस्तृत आँकड़ा को दिखाने के लिए उपयोग कर सकते हैं मास्टर प्रपत्र के मौजूदा रिकार्ड के बारे में. ऐसा करने के लिए, आप निर्दिष्ट कर सकते हैं कि उप फार्म में कौन सा कालम मुख्य फार्म के किस कालम से मेल खाता है."
 
 #: source/propctrlr/formlinkdialog.src#RID_DLG_FORMLINKS.PB_SUGGEST.PushButton.Text
 msgid  "Suggest"
@@ -1864,8 +1864,8 @@ msgid  "Help"
 msgstr "मदद"
 
 #: source/propctrlr/formres.src#RID_STR_UNABLETOCONNECT.String.Text
-msgid  "The connection to the data source "$name$" could not be established."
-msgstr ""
+msgid  "The connection to the data source \"$name$\" could not be established."
+msgstr "आँकड़ा स्रोत का कनेक्शन \"$name$\" स्थापित नहीं किया जा सका."
 
 #: source/propctrlr/formres.src#RID_STR_TEXT.String.Text
 msgid  "Text"
@@ -2297,11 +2297,11 @@ msgstr "एक नाम टाइप करें नए डाटा प्र
 
 #: source/scanner/sanedlg.src#RID_SANE_DIALOG.RID_DEVICEINFO_BTN.PushButton.Text
 msgid  "About\n Dev~ice"
-msgstr ""
+msgstr "के बारे में\n युक्ति (~i)"
 
 #: source/scanner/sanedlg.src#RID_SANE_DIALOG.RID_PREVIEW_BTN.PushButton.Text
 msgid  "Create\nPreview"
-msgstr ""
+msgstr "बनाएँ\nपूर्वावलोकन"
 
 #: source/scanner/sanedlg.src#RID_SANE_DIALOG.RID_PREVIEW_BOX.FixedLine.Text
 msgid  "Preview"
@@ -2357,7 +2357,7 @@ msgstr "स्कैनर"
 
 #: source/scanner/sanedlg.src#RID_SANE_DEVICEINFO_TXT.String.Text
 msgid  "Device: %s\nVendor: %s\nModel: %s\nType: %s"
-msgstr ""
+msgstr "युक्ति: %s\nविक्रेता: %s\nमॉडल: %s\nप्रकार: %s"
 
 #: source/scanner/sanedlg.src#RID_SANE_SCANERROR_TXT.String.Text
 msgid  "An error occurred while scanning."
@@ -2365,7 +2365,7 @@ msgstr "स्कैनिंग करने के समय त्रुट�
 
 #: source/scanner/sanedlg.src#RID_SANE_NORESOLUTIONOPTION_TXT.String.Text
 msgid  "The device does not offer a preview option. Therefore, a normal scan will be used as a preview instead. This may take a considerable amount of time."
-msgstr ""
+msgstr "साधन में पूर्वावलोकन विकल्प प्रस्ताव नहीं है. इसलिए, पूर्वावलोकन के बदले में सामान्य स्कैन का उपयोग किया जायेगा . यह शायद अधिक समय ले सकता है ."
 
 #: source/scanner/sanedlg.src#RID_SANE_NOSANELIB_TXT.String.Text
 msgid  "The SANE interface could not be initialized. Scanning is not possible."
@@ -2405,7 +2405,7 @@ msgstr ""
 
 #: source/update/check/updatehdl.src#RID_UPDATE_STR_UPD_FOUND.String.Text
 msgid  "%PRODUCTNAME %NEXTVERSION is available.\n\nThe installed version is %PRODUCTNAME %PRODUCTVERSION.\n\nNote: Before downloading  an update, please ensure that you have sufficient access rights to install it.\nA password, usually the administrator's or root password, may be required."
-msgstr ""
+msgstr "%PRODUCTNAME %NEXTVERSION मौजूद है.\n\nसंस्थापित संस्करण %PRODUCTNAME %PRODUCTVERSION है.\n\nनोट: किसी अद्यतन के डाउनलोड करने से पहले, कृपया सुनिश्चित करें कि आपको इसे संस्थापित करने के पर्याप्त अभिगम अधिकार हैं.\nएक कूटशब्द, जो प्रायः प्रशासक को अथवा रूट कूटशब्द होता है, को जरूरत पर सकता है."
 
 #: source/update/check/updatehdl.src#RID_UPDATE_STR_DLG_TITLE.String.Text
 msgid  "Check for Updates"
@@ -2421,7 +2421,7 @@ msgstr "%PRODUCTNAME %NEXTVERSION के डाउनलोडिंग को �
 
 #: source/update/check/updatehdl.src#RID_UPDATE_STR_DOWNLOAD_WARN.String.Text
 msgid  "The download location is: %DOWNLOAD_PATH.\n\nUnder Tools – Options... - %PRODUCTNAME – Online Update you can change the download location."
-msgstr ""
+msgstr "डाउनलोड स्थिति है: %DOWNLOAD_PATH.\n\nऔज़ार - विकल्प... - %PRODUCTNAME – आनलाइन अद्यतन कर भीतर आप डाउनलोड स्थिति बदल सकते हैं."
 
 #: source/update/check/updatehdl.src#RID_UPDATE_STR_DOWNLOAD_DESCR.String.Text
 msgid  "%FILE_NAME has been downloaded to %DOWNLOAD_PATH."
@@ -2429,7 +2429,7 @@ msgstr ""
 
 #: source/update/check/updatehdl.src#RID_UPDATE_STR_DOWNLOAD_UNAVAIL.String.Text
 msgid  "The automatic download of the update is currently not available.\n\nClick 'Download...' to download %PRODUCTNAME %NEXTVERSION manually from the web site."
-msgstr ""
+msgstr "अद्यतन स्वचालित डाउनलोड अभी मौजूद नहीं है.\n\n'डाउनलोड...' के %PRODUCTNAME %NEXTVERSION को अपने से वेबसाइट से डाउनलोड करने के लिए क्लिक करें."
 
 #: source/update/check/updatehdl.src#RID_UPDATE_STR_DOWNLOADING.String.Text
 msgid  "Downloading %PRODUCTNAME %NEXTVERSION..."
@@ -2449,7 +2449,7 @@ msgstr "क्या आप सचमुच डाउनलोड को रद�
 
 #: source/update/check/updatehdl.src#RID_UPDATE_STR_BEGIN_INSTALL.String.Text
 msgid  "To install the update, %PRODUCTNAME %PRODUCTVERSION needs to be closed. Do you want to install the update now?"
-msgstr ""
+msgstr "अद्यतन संस्थापित करने के लिए, %PRODUCTNAME %PRODUCTVERSION को बंद करने की जरूरत है. क्या आप अभी अद्यतन को संस्थापित करना चाहते हैं?"
 
 #: source/update/check/updatehdl.src#RID_UPDATE_STR_INSTALL_NOW.String.Text
 msgid  "Install ~now"
@@ -2461,11 +2461,11 @@ msgstr "बाद में संस्थापित करें (~l)"
 
 #: source/update/check/updatehdl.src#RID_UPDATE_STR_INSTALL_ERROR.String.Text
 msgid  "Could not run the installer application, please run %FILE_NAME in %DOWNLOAD_PATH manually."
-msgstr ""
+msgstr "संस्थापक अनुप्रयोग को नहीं चला सका, कृपया %FILE_NAME को %DOWNLOAD_PATH में अपने से चलाएँ."
 
 #: source/update/check/updatehdl.src#RID_UPDATE_STR_OVERWRITE_WARNING.String.Text
 msgid  "A file with that name already exists! Do you want to overwrite the existing file?"
-msgstr ""
+msgstr "उस नाम की एक फ़ाइल पहले से मौजूद है! क्या आप मौजूदा फ़ाइल के ऊपर लिखना चाहते हैं?"
 
 #: source/update/check/updatehdl.src#RID_UPDATE_STR_RELOAD_WARNING.String.Text
 msgid  "A file with the name '%FILENAME' already exists in '%DOWNLOAD_PATH'! Do you want to continue with the download or delete and reload the file?"

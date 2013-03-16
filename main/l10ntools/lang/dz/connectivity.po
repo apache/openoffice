@@ -119,6 +119,18 @@ msgstr ""
 msgid  "LDAP Address Book"
 msgstr ""
 
+#: source/drivers/mozab/mozab2.xcu#.Drivers.Installed.sdbc:address:mozilla:.DriverTypeDisplayName
+msgid  "SeaMonkey Address Book"
+msgstr ""
+
+#: source/drivers/mozab/mozab2.xcu#.Drivers.Installed.sdbc:address:thunderbird:.DriverTypeDisplayName
+msgid  "Thunderbird Address Book"
+msgstr ""
+
+#: source/drivers/mozab/mozab2.xcu#.Drivers.Installed.sdbc:address:ldap:*.DriverTypeDisplayName
+msgid  "LDAP Address Book"
+msgstr ""
+
 #: source/drivers/mysql/mysql.xcu#.Drivers.Installed.sdbc:mysql:jdbc:*.DriverTypeDisplayName
 msgid  "MySQL (JDBC)"
 msgstr ""
@@ -153,19 +165,19 @@ msgstr ""
 
 #: source/resource/conn_shared_res.src#STR_NO_TABLE_CREATION_SUPPORT.String.Text
 msgid  "Creating tables is not supported for this kind of address books."
-msgstr ""
+msgstr "ཐིག་ཁྲམ་ཚུ་གསར་བསྐྲུན་འབད་ནི་འདི་ འ་ནི་ཁ་བྱང་ཀི་དེབ་ཀྱི་དབྱེ་བ་བཟུམ་གྱི་དོན་ལུ་ རྒྱབ་སྐྱོར་མི་འབད།"
 
 #: source/resource/conn_shared_res.src#STR_MOZILLA_IS_RUNNING.String.Text
 msgid  "Cannot create new address books while Mozilla is running."
-msgstr ""
+msgstr "མོ་ཛིལ་ལ་འདི་གཡོག་བཀོལ་ཡོད་པའི་སྐབས་ ཁ་བྱང་ཀི་དེབ་གསརཔ་ཅིག་གསར་བསྐྲུན་འབད་མི་ཚུགས།"
 
 #: source/resource/conn_shared_res.src#STR_COULD_NOT_RETRIEVE_AB_ENTRY.String.Text
 msgid  "An address book entry could not be retrieved, an unknown error occurred."
-msgstr ""
+msgstr "ཁ་བྱང་ཀི་དེབ་ཅིག་སླར་འདྲེན་འབད་མི་ཚུགས་ མ་ཤེས་པའི་འཛོལ་བ་ཅིན་འབྱུང་ཡོད།"
 
 #: source/resource/conn_shared_res.src#STR_COULD_NOT_GET_DIRECTORY_NAME.String.Text
 msgid  "An address book directory name could not be retrieved, an unknown error occurred."
-msgstr ""
+msgstr "ཁ་བྱང་ཀི་དེབ་སྣོད་ཐོ་མིང་ཅིག་ སླར་འདྲེན་འབད་མི་ཚུགས་ མ་ཤེས་པའི་འཛོལ་བ་ཅིག་འབྱུང་ཡོད།"
 
 #: source/resource/conn_shared_res.src#STR_TIMEOUT_WAITING.String.Text
 msgid  "Timed out while waiting for the result."
@@ -177,11 +189,11 @@ msgstr "འདྲི་དཔྱད་འདི་ལག་ལེན་འཐབ
 
 #: source/resource/conn_shared_res.src#STR_MOZILLA_IS_RUNNIG_NO_CHANGES.String.Text
 msgid  "You can't make any changes to mozilla address book when mozilla is running."
-msgstr ""
+msgstr "མོ་ཛིལ་ལ་འདི་གཡོག་བཀོལ་བའི་སྐབས་ ཁྱོད་ཀྱིས་ མོ་ཛིལ་ལ་ཁ་བྱང་ཀི་དེབ་འདི་ལུ་ བསྒྱུར་བཅོས་ག་ནི་ཡང་འབད་མི་ཚུགས།"
 
 #: source/resource/conn_shared_res.src#STR_FOREIGN_PROCESS_CHANGED_AB.String.Text
 msgid  "Mozilla Address Book has been changed out of this process, we can't modify it in this condition."
-msgstr ""
+msgstr "མོ་ཛིལ་ལ་ཁ་བྱང་ཀི་དེབ་འདི་ འ་ནི་ལས་སྦྱོར་འདི་ལས་བསྒྱུར་བཅོས་འབད་ཡོདཔ་ཨིན་ ང་བཅས་ཀྱིས་འདི་ འ་ནི་གནས་སྟངས་ནང་ལེགས་བཅོས་འབད་མི་ཚུགས།"
 
 #: source/resource/conn_shared_res.src#STR_CANT_FIND_ROW.String.Text
 msgid  "Can't find the requested row."
@@ -268,7 +280,7 @@ msgid  "It doesn't exist a connection to the database."
 msgstr ""
 
 #: source/resource/conn_shared_res.src#STR_WRONG_PARAM_INDEX.String.Text
-msgid  "You tried to set a parameter at position '$pos$' but there is/are only '$count$' parameter(s) allowed. One reason may be that the property "ParameterNameSubstitution" is not set to TRUE in the data source."
+msgid  "You tried to set a parameter at position '$pos$' but there is/are only '$count$' parameter(s) allowed. One reason may be that the property \"ParameterNameSubstitution\" is not set to TRUE in the data source."
 msgstr ""
 
 #: source/resource/conn_shared_res.src#STR_INPUTSTREAM_WRONG_LEN.String.Text
@@ -321,11 +333,11 @@ msgstr ""
 
 #: source/resource/conn_shared_res.src#STR_STRING_LENGTH_EXCEEDED.String.Text
 msgid  "The string '$string$' exceeds the maximum length of $maxlen$ characters when converted to the target character set '$charset$'."
-msgstr ""
+msgstr "ཡིག་རྒྱུན་ '$string$' འདི་དམིགས་བསལ་ཡིག་འབྲུ་ཆ་ཚན་ '$charset$' ལུ་གཞི་བསྒྱུར་འབད་བའི་སྐབས་  $maxlen$ ཡིག་འབྲུ་ཚུ་གི་ མང་མཐའ་རིང་ཚད་འདི་ལས་ལྷགཔ་ཨིན།"
 
 #: source/resource/conn_shared_res.src#STR_CANNOT_CONVERT_STRING.String.Text
 msgid  "The string '$string$' cannot be converted using the encoding '$charset$'."
-msgstr ""
+msgstr "ཡིག་རྒྱུན་ '$string$' འདི་ ཨིན་ཀོ་ཌིང་ '$charset' ལག་ལེན་འཐབ་ཐོག་ གཞི་བསྒྱུར་འབད་མི་བཏུབ།"
 
 #: source/resource/conn_shared_res.src#STR_URI_SYNTAX_ERROR.String.Text
 msgid  "The connection URL is invalid."
@@ -472,7 +484,7 @@ msgid  "Duplicate value found in column '$columnname$'."
 msgstr ""
 
 #: source/resource/conn_shared_res.src#STR_INVALID_COLUMN_DECIMAL_VALUE.String.Text
-msgid  "The '$columnname$' column has been defined as a "Decimal" type, the max. length is $precision$ characters (with $scale$ decimal places).\n\nThe specified value "$value$ is longer than the number of digits allowed."
+msgid  "The '$columnname$' column has been defined as a \"Decimal\" type, the max. length is $precision$ characters (with $scale$ decimal places).\n\nThe specified value \"$value$ is longer than the number of digits allowed."
 msgstr ""
 
 #: source/resource/conn_shared_res.src#STR_COLUMN_NOT_ALTERABLE.String.Text
@@ -512,7 +524,7 @@ msgid  "Can only sort by table columns."
 msgstr ""
 
 #: source/resource/conn_shared_res.src#STR_QUERY_COMPLEX_COUNT.String.Text
-msgid  "The query can not be executed. It is too complex. Only "COUNT(*)" is supported."
+msgid  "The query can not be executed. It is too complex. Only \"COUNT(*)\" is supported."
 msgstr ""
 
 #: source/resource/conn_shared_res.src#STR_QUERY_INVALID_BETWEEN.String.Text
@@ -528,7 +540,7 @@ msgid  "The table can not be changed. It is read only."
 msgstr ""
 
 #: source/resource/conn_shared_res.src#STR_DELETE_ROW.String.Text
-msgid  "The row could not be deleted. The option "Display inactive records" is set."
+msgid  "The row could not be deleted. The option \"Display inactive records\" is set."
 msgstr ""
 
 #: source/resource/conn_shared_res.src#STR_ROW_ALREADY_DELETED.String.Text
@@ -657,7 +669,7 @@ msgstr "དྲན་ཐོ་བཀོལ་སྤྱོད་འདི་བཀ
 
 #: source/resource/conn_error_message.src#256 + 2*200 + 0.String.Text
 msgid  "The statement contains a cyclic reference to one or more sub queries."
-msgstr ""
+msgstr "གསལ་བཤད་འདི་ནང་ ཡན་ལག་འདྲི་དཔྱད་ཅིག་ཡང་ན་དེ་ལས་མངམ་བ་ལུ་འཇུག་པའི་འཁོར་བའི་རྒྱབ་རྟེན་ཅིག་འདུག"
 
 #: source/resource/conn_error_message.src#256 + 2*300 + 0.String.Text
 msgid  "The name must not contain any slashes ('/')."
@@ -685,16 +697,4 @@ msgstr ""
 
 #: source/resource/conn_error_message.src#256 + 2*550 + 0.String.Text
 msgid  "Unable to display the complete table content. Please apply a filter."
-msgstr ""
-
-#: source/drivers/mozab/mozab2.xcu#.Drivers.Installed.sdbc:address:mozilla:.DriverTypeDisplayName
-msgid  "SeaMonkey Address Book"
-msgstr ""
-
-#: source/drivers/mozab/mozab2.xcu#.Drivers.Installed.sdbc:address:thunderbird:.DriverTypeDisplayName
-msgid  "Thunderbird Address Book"
-msgstr ""
-
-#: source/drivers/mozab/mozab2.xcu#.Drivers.Installed.sdbc:address:ldap:*.DriverTypeDisplayName
-msgid  "LDAP Address Book"
 msgstr ""

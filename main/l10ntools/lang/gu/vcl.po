@@ -141,6 +141,11 @@ msgstr "કિમી"
 
 #: source/src/units.src#SV_FUNIT_STRINGS.FUNIT_TWIP.ItemList.item
 #, fuzzy
+msgid  "twips"
+msgstr "ટ્વીપ્સ"
+
+#: source/src/units.src#SV_FUNIT_STRINGS.FUNIT_TWIP.ItemList.item
+#, fuzzy
 msgid  "twip"
 msgstr "ટ્વીપ"
 
@@ -156,37 +161,18 @@ msgstr "પાઇ"
 
 #: source/src/units.src#SV_FUNIT_STRINGS.FUNIT_INCH.ItemList.item
 #, fuzzy
-msgid  "inch"
-msgstr "ઇંચ"
-
-#: source/src/units.src#SV_FUNIT_STRINGS.FUNIT_FOOT.ItemList.item
-#, fuzzy
-msgid  "feet"
-msgstr "ફીટ"
-
-#: source/src/units.src#SV_FUNIT_STRINGS.FUNIT_MILE.ItemList.item
-#, fuzzy
-msgid  "mile"
-msgstr "માઈલ"
-
-#: source/src/units.src#SV_FUNIT_STRINGS.FUNIT_PERCENT.ItemList.item
-#, fuzzy
-msgid  "%"
-msgstr "%"
-
-#: source/src/units.src#SV_FUNIT_STRINGS.FUNIT_TWIP.ItemList.item
-#, fuzzy
-msgid  "twips"
-msgstr "ટ્વીપ્સ"
-
-#: source/src/units.src#SV_FUNIT_STRINGS.FUNIT_INCH.ItemList.item
-msgid  """
-msgstr ""
+msgid  "\""
+msgstr "\""
 
 #: source/src/units.src#SV_FUNIT_STRINGS.FUNIT_INCH.ItemList.item
 #, fuzzy
 msgid  "in"
 msgstr "in"
+
+#: source/src/units.src#SV_FUNIT_STRINGS.FUNIT_INCH.ItemList.item
+#, fuzzy
+msgid  "inch"
+msgstr "ઇંચ"
 
 #: source/src/units.src#SV_FUNIT_STRINGS.FUNIT_FOOT.ItemList.item
 #, fuzzy
@@ -203,14 +189,30 @@ msgstr "ft"
 msgid  "foot"
 msgstr "ફૂટ"
 
+#: source/src/units.src#SV_FUNIT_STRINGS.FUNIT_FOOT.ItemList.item
+#, fuzzy
+msgid  "feet"
+msgstr "ફીટ"
+
 #: source/src/units.src#SV_FUNIT_STRINGS.FUNIT_MILE.ItemList.item
 #, fuzzy
 msgid  "miles"
 msgstr "માઈલો"
 
+#: source/src/units.src#SV_FUNIT_STRINGS.FUNIT_MILE.ItemList.item
+#, fuzzy
+msgid  "mile"
+msgstr "માઈલ"
+
+#: source/src/units.src#SV_FUNIT_STRINGS.FUNIT_PERCENT.ItemList.item
+#, fuzzy
+msgid  "%"
+msgstr "%"
+
 #: source/src/stdtext.src#SV_STDTEXT_SERVICENOTAVAILABLE.String.Text
+#, fuzzy
 msgid  "The component (%s) could not be loaded.\nPlease start setup with the repair option."
-msgstr ""
+msgstr "ભાગ (%s) લાવી શકાયો નહી.\nમહેરબાની કરીને સમારકામ વિકલ્પ સાથે સુયોજન શરૂ કરો."
 
 #: source/src/stdtext.src#SV_STDTEXT_DONTHINTAGAIN.String.Text
 #, fuzzy
@@ -233,12 +235,14 @@ msgid  "Wrong Version"
 msgstr "ખોટી આવૃત્તિ"
 
 #: source/src/stdtext.src#SV_ACCESSERROR_BRIDGE_MSG.String.Text
+#, fuzzy
 msgid  "%PRODUCTNAME %PRODUCTVERSION requires a Java Access Bridge 1.0.3 or later version to support accessibility."
-msgstr ""
+msgstr "%PRODUCTNAME %PRODUCTVERSION માટે જાવા એક્સેસ બ્રીજ ૧.૦૩ અથવા વધુને આધાર આપે તેવી આગળની આવૃત્તિની જરૂર છે."
 
 #: source/src/stdtext.src#SV_ACCESSERROR_OK_CANCEL_MSG.String.Text
+#, fuzzy
 msgid  "Click '%OK' to start %PRODUCTNAME %PRODUCTVERSION without accessibility support, or click '%CANCEL' to exit %PRODUCTNAME %PRODUCTVERSION."
-msgstr ""
+msgstr "પ્રાપ્યતાનાં આધાર વગર %PRODUCTNAME %PRODUCTVERSIONને શરૂ કરવા '%OK' પર ક્લિક કરો, અથવા %PRODUCTNAME %PRODUCTVERSION માંથી બહાર નીકળવા '%CANCEL' પર ક્લિક કરો."
 
 #: source/src/stdtext.src#SV_ACCESSERROR_MISSING_BRIDGE.String.Text
 #, fuzzy
@@ -251,8 +255,9 @@ msgid  "Faulty Java Installation"
 msgstr "ખામીયુક્ત જાવાની સ્થાપના"
 
 #: source/src/stdtext.src#SV_ACCESSERROR_JAVA_MSG.String.Text
+#, fuzzy
 msgid  "%PRODUCTNAME %PRODUCTVERSION requires Java 1.4.0_02 or later version to support accessibility."
-msgstr ""
+msgstr "%PRODUCTNAME %PRODUCTVERSION ને દર્શકતાનાં આધાર માટે જાવા ૧.૪.૦_૦૨ અથવા વધુ આવૃત્તિની જરૂર છે."
 
 #: source/src/stdtext.src#SV_ACCESSERROR_MISSING_JAVA.String.Text
 #, fuzzy
@@ -289,8 +294,9 @@ msgid  "Preferences..."
 msgstr "પસંદગીઓ..."
 
 #: source/src/stdtext.src#SV_EDIT_WARNING_BOX.WarningBox.Message
+#, fuzzy
 msgid  "The inserted text exceeded the maximum length of this text field. The text was truncated."
-msgstr ""
+msgstr "દાખલ થયેલ લખાણ એ લખાણ ક્ષેત્રની મહત્તમ લંબાઇને વધારેલ છે. લખાણ ને કાપી નખાયેલ હતુ."
 
 #: source/src/stdtext.src#SV_MAC_SCREENNNAME.String.Text
 #, fuzzy
@@ -308,32 +314,26 @@ msgid  "Print"
 msgstr "છાપો"
 
 #: source/src/print.src#SV_DLG_PRINT.SV_PRINT_OK.OKButton.Text
-#, fuzzy
 msgid  "~Print"
 msgstr "છાપો (~P)"
 
 #: source/src/print.src#SV_DLG_PRINT.SV_PRINT_PAGE_TXT.FixedText.Text
-#, fuzzy
 msgid  "/ %n"
 msgstr "/ %n"
 
 #: source/src/print.src#SV_DLG_PRINT.SV_PRINT_NOPAGES.String.Text
-#, fuzzy
 msgid  "No pages"
 msgstr "પાનાંઓ નથી"
 
 #: source/src/print.src#SV_DLG_PRINT.SV_PRINT_TOFILE_TXT.String.Text
-#, fuzzy
 msgid  "Print to File..."
 msgstr "ફાઇલને છાપો..."
 
 #: source/src/print.src#SV_DLG_PRINT.SV_PRINT_DEFPRT_TXT.String.Text
-#, fuzzy
 msgid  "Default printer"
 msgstr "મૂળભૂત પ્રિન્ટર"
 
 #: source/src/print.src#SV_DLG_PRINT.SV_PRINT_PRINTPREVIEW_TXT.String.Text
-#, fuzzy
 msgid  "Print preview"
 msgstr "પૂર્વદર્શનને છાપો"
 
@@ -343,112 +343,90 @@ msgid  "Page Layout"
 msgstr "પાનાનું લેઆઉટ"
 
 #: source/src/print.src#SV_DLG_PRINT.SV_PRINT_TAB_NUP.SV_PRINT_PRT_NUP_LAYOUT_FL.FixedLine.Text
-#, fuzzy
 msgid  "Layout"
 msgstr "લેઆઉટ"
 
 #: source/src/print.src#SV_DLG_PRINT.SV_PRINT_TAB_NUP.SV_PRINT_PRT_NUP_PAGES_BTN.RadioButton.Text
-#, fuzzy
 msgid  "Pa~ges per sheet"
 msgstr "દરેક શીટ માટે પાનાંઓ (~g)"
 
 #: source/src/print.src#SV_DLG_PRINT.SV_PRINT_TAB_NUP.SV_PRINT_PRT_NUP_PAGES_BOX.1.StringList.item
-#, fuzzy
 msgid  "1"
 msgstr "1"
 
 #: source/src/print.src#SV_DLG_PRINT.SV_PRINT_TAB_NUP.SV_PRINT_PRT_NUP_PAGES_BOX.2.StringList.item
-#, fuzzy
 msgid  "2"
 msgstr "2"
 
 #: source/src/print.src#SV_DLG_PRINT.SV_PRINT_TAB_NUP.SV_PRINT_PRT_NUP_PAGES_BOX.4.StringList.item
-#, fuzzy
 msgid  "4"
 msgstr "4"
 
 #: source/src/print.src#SV_DLG_PRINT.SV_PRINT_TAB_NUP.SV_PRINT_PRT_NUP_PAGES_BOX.6.StringList.item
-#, fuzzy
 msgid  "6"
 msgstr "6"
 
 #: source/src/print.src#SV_DLG_PRINT.SV_PRINT_TAB_NUP.SV_PRINT_PRT_NUP_PAGES_BOX.9.StringList.item
-#, fuzzy
 msgid  "9"
 msgstr "9"
 
 #: source/src/print.src#SV_DLG_PRINT.SV_PRINT_TAB_NUP.SV_PRINT_PRT_NUP_PAGES_BOX.16.StringList.item
-#, fuzzy
 msgid  "16"
 msgstr "16"
 
 #: source/src/print.src#SV_DLG_PRINT.SV_PRINT_TAB_NUP.SV_PRINT_PRT_NUP_PAGES_BOX.0xffff.StringList.item
-#, fuzzy
 msgid  "Custom"
 msgstr "વૈવિધ્ય"
 
 #: source/src/print.src#SV_DLG_PRINT.SV_PRINT_TAB_NUP.SV_PRINT_PRT_NUP_NUM_PAGES_TXT.FixedText.Text
-#, fuzzy
 msgid  "P~ages"
 msgstr "પાનાંઓ (~a)"
 
 #: source/src/print.src#SV_DLG_PRINT.SV_PRINT_TAB_NUP.SV_PRINT_PRT_NUP_TIMES_TXT.FixedText.Text
-#, fuzzy
 msgid  "b~y"
 msgstr "દ્દારા (~y)"
 
 #: source/src/print.src#SV_DLG_PRINT.SV_PRINT_TAB_NUP.SV_PRINT_PRT_NUP_MARGINS_PAGES_1_TXT.FixedText.Text
-#, fuzzy
 msgid  "~Distance"
 msgstr "અંતર (~D)"
 
 #: source/src/print.src#SV_DLG_PRINT.SV_PRINT_TAB_NUP.SV_PRINT_PRT_NUP_MARGINS_PAGES_2_TXT.FixedText.Text
-#, fuzzy
 msgid  "between pages"
 msgstr "પાનાંઓ વચ્ચે"
 
 #: source/src/print.src#SV_DLG_PRINT.SV_PRINT_TAB_NUP.SV_PRINT_PRT_NUP_MARGINS_SHEET_1_TXT.FixedText.Text
-#, fuzzy
 msgid  "~Margin"
 msgstr "હાંસિયો (~M)"
 
 #: source/src/print.src#SV_DLG_PRINT.SV_PRINT_TAB_NUP.SV_PRINT_PRT_NUP_MARGINS_SHEET_2_TXT.FixedText.Text
-#, fuzzy
 msgid  "to sheet border"
 msgstr "શીટ કિનારી માટે"
 
 #: source/src/print.src#SV_DLG_PRINT.SV_PRINT_TAB_NUP.SV_PRINT_PRT_NUP_ORIENTATION_TXT.FixedText.Text
-#, fuzzy
 msgid  "~Orientation"
 msgstr "દિશા (~O)"
 
 #: source/src/print.src#SV_DLG_PRINT.SV_PRINT_TAB_NUP.SV_PRINT_PRT_NUP_ORIENTATION_BOX.SV_PRINT_PRT_NUP_ORIENTATION_AUTOMATIC.StringList.item
-#, fuzzy
 msgid  "Automatic"
 msgstr "સ્વયં"
 
 #: source/src/print.src#SV_DLG_PRINT.SV_PRINT_TAB_NUP.SV_PRINT_PRT_NUP_ORIENTATION_BOX.SV_PRINT_PRT_NUP_ORIENTATION_PORTRAIT.StringList.item
-#, fuzzy
 msgid  "Portrait"
 msgstr "પૉર્ટ્રિટ"
 
 #: source/src/print.src#SV_DLG_PRINT.SV_PRINT_TAB_NUP.SV_PRINT_PRT_NUP_ORIENTATION_BOX.SV_PRINT_PRT_NUP_ORIENTATION_LANDSCAPE.StringList.item
-#, fuzzy
 msgid  "Landscape"
 msgstr "લૅન્ડસ્કેપ"
 
 #: source/src/print.src#SV_DLG_PRINT.SV_PRINT_TAB_NUP.SV_PRINT_PRT_NUP_ORDER_TXT.FixedText.Text
-#, fuzzy
 msgid  "Order"
 msgstr "ક્રમ"
 
 #: source/src/print.src#SV_DLG_PRINT.SV_PRINT_TAB_NUP.SV_PRINT_PRT_NUP_ORDER_BOX.SV_PRINT_PRT_NUP_ORDER_LRTB.StringList.item
-#, fuzzy
 msgid  "left to right, then down"
 msgstr "ડાબેથી જમણે, પછી નીચે"
 
 #: source/src/print.src#SV_DLG_PRINT.SV_PRINT_TAB_NUP.SV_PRINT_PRT_NUP_ORDER_BOX.SV_PRINT_PRT_NUP_ORDER_TBLR.StringList.item
-#, fuzzy
 msgid  "top to bottom, then right"
 msgstr "ટોચથી તળિયે, પછી જમણે"
 
@@ -552,12 +530,14 @@ msgid  "Page %p of %n"
 msgstr "%n નું પાનું %p"
 
 #: source/src/print.src#SV_PRINT_NOPRINTERWARNING.ErrorBox.Message
+#, fuzzy
 msgid  "No default printer found.\nPlease choose a printer and try again."
-msgstr ""
+msgstr "મૂળભૂત પ્રિન્ટર મળ્યુ નથી.\nમહેરબાની કરીને પ્રિન્ટરને પસંદ કરો અને ફરીથી પ્રયત્ન કરો."
 
 #: source/src/print.src#SV_PRINT_NOCONTENT.ErrorBox.Message
+#, fuzzy
 msgid  "There are no pages to be printed. Please check your document for ranges relevant to printing."
-msgstr ""
+msgstr "ત્યાં છાપવા માટે પાનાંઓ નથી. મહેરબાની કરીને છાપવાને સુસંગત સીમાઓ માટે તમારા દસ્તાવેજને ચકાસો."
 
 #: source/src/print.src#SV_PRINT_NATIVE_STRINGS.item1.ItemList.item
 #, fuzzy
@@ -732,116 +712,93 @@ msgid  "B6 (JIS)"
 msgstr ""
 
 #: source/src/menu.src#SV_RESID_STRING_NOSELECTIONPOSSIBLE.String.Text
-#, fuzzy
 msgid  "<No selection possible>"
 msgstr "<કોઈ પસંદગી શક્ય નથી>"
 
 #: source/src/menu.src#SV_RESID_MENU_EDIT.SV_MENU_EDIT_UNDO.MenuItem.Text
-#, fuzzy
 msgid  "~Undo"
 msgstr "પાછું લાવો (~U)"
 
 #: source/src/menu.src#SV_RESID_MENU_EDIT.SV_MENU_EDIT_CUT.MenuItem.Text
-#, fuzzy
 msgid  "Cu~t"
 msgstr "કાપો  (~t)"
 
 #: source/src/menu.src#SV_RESID_MENU_EDIT.SV_MENU_EDIT_COPY.MenuItem.Text
-#, fuzzy
 msgid  "~Copy"
 msgstr "નકલ  (~C)"
 
 #: source/src/menu.src#SV_RESID_MENU_EDIT.SV_MENU_EDIT_PASTE.MenuItem.Text
-#, fuzzy
 msgid  "~Paste"
 msgstr "ચોંટાડો (~P)"
 
 #: source/src/menu.src#SV_RESID_MENU_EDIT.SV_MENU_EDIT_DELETE.MenuItem.Text
-#, fuzzy
 msgid  "~Delete"
 msgstr "દૂર કરો (~D)"
 
 #: source/src/menu.src#SV_RESID_MENU_EDIT.SV_MENU_EDIT_SELECTALL.MenuItem.Text
-#, fuzzy
 msgid  "Select ~All"
 msgstr "બધુ પસંદ કરો  (~A)"
 
 #: source/src/menu.src#SV_RESID_MENU_EDIT.SV_MENU_EDIT_INSERTSYMBOL.MenuItem.Text
-#, fuzzy
 msgid  "~Special Character..."
 msgstr "વિશિષ્ટ અક્ષર (~S)..."
 
 #: source/src/menu.src#SV_MENU_MAC_SERVICES.String.Text
-#, fuzzy
 msgid  "Services"
 msgstr "સેવાઓ"
 
 #: source/src/menu.src#SV_MENU_MAC_HIDEAPP.String.Text
-#, fuzzy
 msgid  "Hide %PRODUCTNAME"
 msgstr "%PRODUCTNAME ને છુપાડો"
 
 #: source/src/menu.src#SV_MENU_MAC_HIDEALL.String.Text
-#, fuzzy
 msgid  "Hide Others"
 msgstr "બીજાઓને છુપાડો"
 
 #: source/src/menu.src#SV_MENU_MAC_SHOWALL.String.Text
-#, fuzzy
 msgid  "Show All"
 msgstr "બધાને બતાવો"
 
 #: source/src/menu.src#SV_MENU_MAC_QUITAPP.String.Text
-#, fuzzy
 msgid  "Quit %PRODUCTNAME"
 msgstr "%PRODUCTNAME ને છોડી દો"
 
 #: source/src/btntext.src#SV_BUTTONTEXT_OK.String.Text
-#, fuzzy
 msgid  "OK"
 msgstr "બરાબર"
 
 #: source/src/btntext.src#SV_BUTTONTEXT_CANCEL.String.Text
-#, fuzzy
 msgid  "Cancel"
 msgstr "રદ કરો"
 
 #: source/src/btntext.src#SV_BUTTONTEXT_YES.String.Text
-#, fuzzy
 msgid  "~Yes"
 msgstr "હા (~Y)"
 
 #: source/src/btntext.src#SV_BUTTONTEXT_NO.String.Text
-#, fuzzy
 msgid  "~No"
 msgstr "ના  (~N)"
 
 #: source/src/btntext.src#SV_BUTTONTEXT_RETRY.String.Text
-#, fuzzy
 msgid  "~Retry"
 msgstr "ફરી પ્રયત્ન (~R)"
 
 #: source/src/btntext.src#SV_BUTTONTEXT_HELP.String.Text
-#, fuzzy
 msgid  "~Help"
 msgstr "મદદ (~H)"
 
 #: source/src/btntext.src#SV_BUTTONTEXT_MORE.String.Text
-#, fuzzy
 msgid  "~More"
 msgstr "વધુ (~M)"
 
 #: source/src/btntext.src#SV_BUTTONTEXT_LESS.String.Text
-#, fuzzy
 msgid  "~More"
 msgstr "વધુ (~M)"
 
 #: source/src/btntext.src#SV_BUTTONTEXT_IGNORE.String.Text
-#, fuzzy
 msgid  "~Ignore"
 msgstr "અવગણો (~I)"
 
 #: source/src/btntext.src#SV_BUTTONTEXT_ABORT.String.Text
-#, fuzzy
 msgid  "~Abort"
 msgstr "અટકાવો  (~A)"

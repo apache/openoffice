@@ -33,7 +33,7 @@ msgstr ""
 
 #: source/component/warnbox.src#RID_XMLSECWB_NO_MOZILLA_PROFILE.WarningBox.Message
 msgid  "Digital signatures functionality could not be used, because no Mozilla user profile was found. Please check the Mozilla installation."
-msgstr ""
+msgstr "Cha b' urrainn dhuinn feart nan soidhneachaidhean digiteach a chleachdadh a chionn 's nach deach pròifil cleachdaiche Mozilla a lorg. Feuch is thoir sùil air an stàladh agad de Mozilla."
 
 #: source/dialogs/macrosecurity.src#RID_XMLSECTP_MACROSEC.TabDialog.Text
 msgid  "Macro Security"
@@ -53,19 +53,19 @@ msgstr "Ath-shuidhich"
 
 #: source/dialogs/macrosecurity.src#RID_XMLSECTP_SECLEVEL.RB_VERYHIGH.RadioButton.Text
 msgid  "~Very high.\nOnly macros from trusted file locations are allowed to run. All other macros, regardless whether signed or not, are disabled."
-msgstr ""
+msgstr "~Glè àrd.\nCha bhi cead-ruith ach aig macrothan o thùsan earbsach. Bidh macro sam bith eile, soidhneadh ann no às, à comas."
 
 #: source/dialogs/macrosecurity.src#RID_XMLSECTP_SECLEVEL.RB_HIGH.RadioButton.Text
 msgid  "H~igh.\nOnly signed macros from trusted sources are allowed to run. Unsigned macros are disabled."
-msgstr ""
+msgstr "À~rd.\nCha bhi cead-ruith ach aig macrothan soidhnichte o thùsan earbsach. Bidh macrothan gun soidhneadh à comas."
 
 #: source/dialogs/macrosecurity.src#RID_XMLSECTP_SECLEVEL.RB_MEDIUM.RadioButton.Text
 msgid  "~Medium.\nConfirmation required before executing macros from untrusted sources."
-msgstr ""
+msgstr "~Meadhanach.\nIarraidh sinn cead ort mus cuir sinn gu dol macro o thùs nach eil earbsach."
 
 #: source/dialogs/macrosecurity.src#RID_XMLSECTP_SECLEVEL.RB_LOW.RadioButton.Text
 msgid  "~Low (not recommended).\nAll macros will be executed without confirmation. Use this setting only if you are certain that all documents that will be opened are safe."
-msgstr ""
+msgstr "Ì~seal (cha mholamaid seo).\nThèid macro sam bith a chur gu dol gun dearbhadh. Na cleachd an roghainn seo ach ma tha thu làn-chinnteach gum bi gach sgrìobhainn a dh'fhosglas tu sàbhailte."
 
 #: source/dialogs/macrosecurity.src#RID_XMLSECTP_TRUSTSOURCES.FL_TRUSTCERT.FixedLine.Text
 msgid  "Trusted certificates"
@@ -93,7 +93,7 @@ msgstr "Ionadan fhaidhlichean earbsach"
 
 #: source/dialogs/macrosecurity.src#RID_XMLSECTP_TRUSTSOURCES.FI_TRUSTFILELOC.FixedText.Text
 msgid  "Document macros are always executed if they have been opened from one of the following locations."
-msgstr ""
+msgstr "Thèid macrothan ann an sgrìobhainnean a chur gu dol an-còmhnaidh ma thèid am fosgladh o gun dhe na h-ionadan a leanas."
 
 #: source/dialogs/macrosecurity.src#RID_XMLSECTP_TRUSTSOURCES.FL_ADD_TRUSTFILELOC.PushButton.Text
 msgid  "Add..."
@@ -125,7 +125,7 @@ msgstr "Seall na soidhneachaidhean..."
 
 #: source/dialogs/warnings.src#RID_XMLSECTP_MACROWARN.FI_DESCR2.FixedText.Text
 msgid  "Macros may contain viruses. Disabling macros for a document is always save. If you disable macros you may lose functionality provided by the document macros."
-msgstr ""
+msgstr "Faodaidh bìorasan a bhith ann am macrothan. Tha e sàbhailte an-còmhnaidh na macrothan a chur à comas ann an sgrìobhainn. Ma chuireas tu na macrothan à comas, faodaidh gun caill thu feartan a bheireadh na macrothan dhut."
 
 #: source/dialogs/warnings.src#RID_XMLSECTP_MACROWARN.CB_ALWAYSTRUST.CheckBox.Text
 msgid  "Always trust macros from this source"
@@ -205,7 +205,7 @@ msgstr ""
 
 #: source/dialogs/digitalsignaturesdialog.src#MSG_XMLSECDLG_QUERY_REMOVEDOCSIGNBEFORESIGN.QueryBox.Message
 msgid  "Adding or removing a macro signature will remove all document signatures.\nDo you really want to continue?"
-msgstr ""
+msgstr "Ma bheir thu air falbh soidhneadh macro no ma chuireas tu ris fear, thèid gach soidhneadh san sgrìobhainn a thoirt air falbh.\nA bheil thu cinnteach gu bheil thu airson leantainn air adhart?"
 
 #: source/dialogs/certificateviewer.src#RID_XMLSECDLG_CERTVIEWER.TabDialog.Text
 msgid  "View Certificate"
@@ -245,7 +245,7 @@ msgstr "Dligheach o %SDATE% gu %EDATE%"
 
 #: source/dialogs/certificateviewer.src#RID_XMLSECTP_GENERAL.FI_CORRPRIVKEY.FixedText.Text
 msgid  "You have a private key that corresponds to this certificate."
-msgstr ""
+msgstr "Tha iuchair phrìobhaideach agad a tha a' freagairt ris an teisteanas seo."
 
 #: source/dialogs/certificateviewer.src#RID_XMLSECTP_GENERAL.STR_CERTIFICATE_NOT_VALIDATED.String.Text
 msgid  "The certificate could not be validated."

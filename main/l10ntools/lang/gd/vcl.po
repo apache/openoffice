@@ -136,6 +136,10 @@ msgid  "km"
 msgstr "km"
 
 #: source/src/units.src#SV_FUNIT_STRINGS.FUNIT_TWIP.ItemList.item
+msgid  "twips"
+msgstr "twips"
+
+#: source/src/units.src#SV_FUNIT_STRINGS.FUNIT_TWIP.ItemList.item
 msgid  "twip"
 msgstr "twip"
 
@@ -148,31 +152,15 @@ msgid  "pi"
 msgstr "pi"
 
 #: source/src/units.src#SV_FUNIT_STRINGS.FUNIT_INCH.ItemList.item
-msgid  "inch"
-msgstr "òirleach"
-
-#: source/src/units.src#SV_FUNIT_STRINGS.FUNIT_FOOT.ItemList.item
-msgid  "feet"
-msgstr "troighean"
-
-#: source/src/units.src#SV_FUNIT_STRINGS.FUNIT_MILE.ItemList.item
-msgid  "mile"
-msgstr "mìle"
-
-#: source/src/units.src#SV_FUNIT_STRINGS.FUNIT_PERCENT.ItemList.item
-msgid  "%"
-msgstr "%"
-
-#: source/src/units.src#SV_FUNIT_STRINGS.FUNIT_TWIP.ItemList.item
-msgid  "twips"
-msgstr "twips"
-
-#: source/src/units.src#SV_FUNIT_STRINGS.FUNIT_INCH.ItemList.item
-msgid  """
-msgstr ""
+msgid  "\""
+msgstr "\""
 
 #: source/src/units.src#SV_FUNIT_STRINGS.FUNIT_INCH.ItemList.item
 msgid  "in"
+msgstr "òirleach"
+
+#: source/src/units.src#SV_FUNIT_STRINGS.FUNIT_INCH.ItemList.item
+msgid  "inch"
 msgstr "òirleach"
 
 #: source/src/units.src#SV_FUNIT_STRINGS.FUNIT_FOOT.ItemList.item
@@ -187,13 +175,25 @@ msgstr "troigh"
 msgid  "foot"
 msgstr "troigh"
 
+#: source/src/units.src#SV_FUNIT_STRINGS.FUNIT_FOOT.ItemList.item
+msgid  "feet"
+msgstr "troighean"
+
 #: source/src/units.src#SV_FUNIT_STRINGS.FUNIT_MILE.ItemList.item
 msgid  "miles"
 msgstr "mìltean"
 
+#: source/src/units.src#SV_FUNIT_STRINGS.FUNIT_MILE.ItemList.item
+msgid  "mile"
+msgstr "mìle"
+
+#: source/src/units.src#SV_FUNIT_STRINGS.FUNIT_PERCENT.ItemList.item
+msgid  "%"
+msgstr "%"
+
 #: source/src/stdtext.src#SV_STDTEXT_SERVICENOTAVAILABLE.String.Text
 msgid  "The component (%s) could not be loaded.\nPlease start setup with the repair option."
-msgstr ""
+msgstr "Cha do ghabh a' cho-phàirt (%s) a luchdadh.\nTòisich an suidheachadh leis an roghainn chàraidh."
 
 #: source/src/stdtext.src#SV_STDTEXT_DONTHINTAGAIN.String.Text
 msgid  "Do not show this information again."
@@ -213,11 +213,11 @@ msgstr "Tionndadh cearr"
 
 #: source/src/stdtext.src#SV_ACCESSERROR_BRIDGE_MSG.String.Text
 msgid  "%PRODUCTNAME %PRODUCTVERSION requires a Java Access Bridge 1.0.3 or later version to support accessibility."
-msgstr ""
+msgstr "Feumaidh %PRODUCTNAME %PRODUCTVERSION Java Access Bridge 1.0.3 no tionndadh nas ùire mus bi taic inntrigidh ann."
 
 #: source/src/stdtext.src#SV_ACCESSERROR_OK_CANCEL_MSG.String.Text
 msgid  "Click '%OK' to start %PRODUCTNAME %PRODUCTVERSION without accessibility support, or click '%CANCEL' to exit %PRODUCTNAME %PRODUCTVERSION."
-msgstr ""
+msgstr "Briog air \"%OK\" gus %PRODUCTNAME %PRODUCTVERSION a thòiseachadh as aonais taic inntrigidh no briog air \"%CANCEL\" gus %PRODUCTNAME %PRODUCTVERSION fhàgail."
 
 #: source/src/stdtext.src#SV_ACCESSERROR_MISSING_BRIDGE.String.Text
 msgid  "No Java Access Bridge"
@@ -229,7 +229,7 @@ msgstr "Tha an stàladh de Java lochdach"
 
 #: source/src/stdtext.src#SV_ACCESSERROR_JAVA_MSG.String.Text
 msgid  "%PRODUCTNAME %PRODUCTVERSION requires Java 1.4.0_02 or later version to support accessibility."
-msgstr ""
+msgstr "Feumaidh %PRODUCTNAME %PRODUCTVERSION Java 1.4.0_02 no tionndadh nas ùire mus bi taic inntrigidh ann."
 
 #: source/src/stdtext.src#SV_ACCESSERROR_MISSING_JAVA.String.Text
 msgid  "No Java Installation"
@@ -261,7 +261,7 @@ msgstr "Roghainnean..."
 
 #: source/src/stdtext.src#SV_EDIT_WARNING_BOX.WarningBox.Message
 msgid  "The inserted text exceeded the maximum length of this text field. The text was truncated."
-msgstr ""
+msgstr "Tha faid an teacsa a chuir thu a-steach thar na tha ceadaichte san raon teacsa seo. Chaidh an teacsa a ghearradh."
 
 #: source/src/stdtext.src#SV_MAC_SCREENNNAME.String.Text
 msgid  "Screen %d"
@@ -461,7 +461,7 @@ msgstr "Clò-bhualadh gu ~faidhle"
 
 #: source/src/print.src#SV_DLG_PRINT.SV_PRINT_TAB_OPT.SV_PRINT_OPT_SINGLEJOBS.CheckBox.Text
 msgid  "~Create single print jobs for collated output"
-msgstr ""
+msgstr "~Cruthaich obraichean clò-bhualaidh singilte airson às-chur collaidichte"
 
 #: source/src/print.src#SV_DLG_PRINT_PROGRESS.ModelessDialog.Text
 msgid  "Printing"
@@ -473,11 +473,11 @@ msgstr "Duilleag %p à %n"
 
 #: source/src/print.src#SV_PRINT_NOPRINTERWARNING.ErrorBox.Message
 msgid  "No default printer found.\nPlease choose a printer and try again."
-msgstr ""
+msgstr "Cha deach clò-bhualadair bunaiteach a lorg.\nTagh clò-bhualadair is feuch ris a-rithist."
 
 #: source/src/print.src#SV_PRINT_NOCONTENT.ErrorBox.Message
 msgid  "There are no pages to be printed. Please check your document for ranges relevant to printing."
-msgstr ""
+msgstr "Chan eil duilleag sam bith ri chlò-bhualadh. Thoir sùil air an sgrìobhainn agad a thaobh rainsean a'chlò-bhualaidh."
 
 #: source/src/print.src#SV_PRINT_NATIVE_STRINGS.item1.ItemList.item
 msgid  "Preview"

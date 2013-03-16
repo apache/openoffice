@@ -102,8 +102,9 @@ msgid  "Document in Use"
 msgstr "Dokumenti kasutatakse"
 
 #: source/trylater.src#STR_TRYLATER_MSG.String.Text
+#, fuzzy
 msgid  "Document file '$(ARG1)' is locked for editing by:\n\n$(ARG2)\n\nTry again later to save document or save a copy of that document.\n\n"
-msgstr ""
+msgstr "Dokumendifail '$(ARG1)' on lukustatud redigeerimiseks:\n\n$(ARG2) poolt\n\nAva dokument kirjutuskaitstuna või ava redigeerimiseks dokumendi koopia.\n\n"
 
 #: source/trylater.src#STR_TRYLATER_RETRYSAVING_BTN.String.Text
 #, fuzzy
@@ -116,278 +117,228 @@ msgid  "~Save As..."
 msgstr "Salvesta kui..."
 
 #: source/ids.src#RID_KEEP_PASSWORD.String.Text
-#, fuzzy
 msgid  "~Remember password until end of session"
 msgstr "Parooli meeldejätmine kuni seansi lõpuni"
 
 #: source/ids.src#RID_SAVE_PASSWORD.String.Text
-#, fuzzy
 msgid  "~Remember password"
 msgstr "Parooli meeldejätmine"
 
 #: source/ids.src#STR_WARNING_BROKENSIGNATURE_TITLE.String.Text
-#, fuzzy
 msgid  "Invalid Document Signature"
 msgstr "Vigane dokumendi allkiri"
 
 #: source/ids.src#STR_WARNING_INCOMPLETE_ENCRYPTION_TITLE.String.Text
-#, fuzzy
 msgid  "Non-Encrypted Streams"
 msgstr "Krüptimata vood"
 
 #: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_IO_ABORT & ERRCODE_RES_MASK).String.Text
-#, fuzzy
 msgid  "The operation executed on $(ARG1) was aborted."
 msgstr "$(ARG1)-s käivitatud operatsioon katkestati."
 
 #: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_IO_ACCESSDENIED & ERRCODE_RES_MASK).String.Text
-#, fuzzy
 msgid  "Access to $(ARG1) was denied."
 msgstr "Juurdepääs $(ARG1)-le keelatud."
 
 #: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_IO_ALREADYEXISTS & ERRCODE_RES_MASK).String.Text
-#, fuzzy
 msgid  "$(ARG1) already exists."
 msgstr "$(ARG1) on juba olemas."
 
 #: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_IO_TARGETALREADYEXISTS & ERRCODE_RES_MASK).String.Text
-#, fuzzy
 msgid  "Target already exists."
 msgstr "Sihtmärk on juba olemas."
 
 #: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_IO_MODULESIZEEXCEEDED & ERRCODE_RES_MASK).String.Text
 msgid  "You are about to save/export a password protected basic library containing module(s) \n$(ARG1)\nwhich are too large to store in binary format. If you wish users that don't have access to the library password to be able to run macros in those module(s) you must split those modules into a number of smaller modules. Do you wish to continue to save/export this library?"
-msgstr ""
+msgstr "Sa soovid salvestada/eksportida parooliga kaitstud BASICu teeki, milles sisalduv(ad) moodul(id) \n$(ARG1)\non liiga suur(ed) binaarvormingusse salvestamiseks. Kui sa soovid, et kasutajad, kellel pole juurdepääsu teegi paroolile, saaksid nendes moodulites olevaid makrosid käivitada, tuleks moodulid jagada väiksemateks mooduliteks. Soovid sa teegi salvestamist/eksportimist jätkata?"
 
 #: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_IO_BADCRC & ERRCODE_RES_MASK).String.Text
-#, fuzzy
 msgid  "The data from $(ARG1) has an incorrect checksum."
 msgstr "$(ARG1)-st pärinevatel andmetel on vale kontrollsumma."
 
 #: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_IO_CANTCREATE & ERRCODE_RES_MASK).String.Text
-#, fuzzy
 msgid  "The object $(ARG1) cannot be created in directory $(ARG2)."
 msgstr "Objekti $(ARG1) loomine kataloogi $(ARG2) ei õnnestunud."
 
 #: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_IO_CANTREAD & ERRCODE_RES_MASK).String.Text
-#, fuzzy
 msgid  "Data of $(ARG1) could not be read."
 msgstr "$(ARG1)-i andmete lugemine ei õnnestunud."
 
 #: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_IO_CANTSEEK & ERRCODE_RES_MASK).String.Text
-#, fuzzy
 msgid  "The seek operation on $(ARG1) could not be performed."
 msgstr "$(ARG1)-i seek-operatsiooni ei saa teostada."
 
 #: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_IO_CANTTELL & ERRCODE_RES_MASK).String.Text
-#, fuzzy
 msgid  "The tell operation on $(ARG1) could not be performed."
 msgstr "$(ARG1)-i tell-operatsiooni ei saa teostada."
 
 #: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_IO_CANTWRITE & ERRCODE_RES_MASK).String.Text
-#, fuzzy
 msgid  "Data for $(ARG1) could not be written."
 msgstr "$(ARG1) andmete kirjutamine ei õnnestunud."
 
 #: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_IO_CURRENTDIR & ERRCODE_RES_MASK).String.Text
-#, fuzzy
 msgid  "Action impossible: $(ARG1) is the current directory."
 msgstr "Toiming pole võimalik: $(ARG1) on praegune kataloog."
 
 #: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_IO_NOTREADY & ERRCODE_RES_MASK).String.Text
-#, fuzzy
 msgid  "$(ARG1) is not ready."
 msgstr "$(ARG1) ei ole valmis."
 
 #: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_IO_NOTSAMEDEVICE & ERRCODE_RES_MASK).String.Text
-#, fuzzy
 msgid  "Action impossible: $(ARG1) and $(ARG2) are different devices (drives)."
 msgstr "Toiming pole võimalik: $(ARG1) ja $(ARG2) on erinevad seadmed (kettad)."
 
 #: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_IO_GENERAL & ERRCODE_RES_MASK).String.Text
-#, fuzzy
 msgid  "General input/output error while accessing $(ARG1)."
 msgstr "$(ARG1)-st lugemisel tekkis üldine sisend-/väljundviga."
 
 #: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_IO_INVALIDACCESS & ERRCODE_RES_MASK).String.Text
-#, fuzzy
 msgid  "An attempt was made to access $(ARG1) in an invalid way."
 msgstr "$(ARG1)-d püüti kasutada lubamatul moel."
 
 #: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_IO_INVALIDCHAR & ERRCODE_RES_MASK).String.Text
-#, fuzzy
 msgid  "$(ARG1) contains invalid characters."
 msgstr "$(ARG1) sisaldab lubamatuid märke."
 
 #: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_IO_INVALIDDEVICE & ERRCODE_RES_MASK).String.Text
-#, fuzzy
 msgid  "The device (drive) $(ARG1) is invalid."
 msgstr "Seade (ketas) $(ARG1) pole korrektne."
 
 #: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_IO_INVALIDLENGTH & ERRCODE_RES_MASK).String.Text
-#, fuzzy
 msgid  "The data from $(ARG1) has an invalid length."
 msgstr "$(ARG1)-st loetud andmetel on vigane pikkus."
 
 #: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_IO_INVALIDPARAMETER & ERRCODE_RES_MASK).String.Text
-#, fuzzy
 msgid  "The operation on $(ARG1) was started with an invalid parameter."
 msgstr "$(ARG1)-l käivitatud operatsiooni parameeter oli vigane."
 
 #: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_IO_ISWILDCARD & ERRCODE_RES_MASK).String.Text
-#, fuzzy
 msgid  "The operation cannot be performed because $(ARG1) contains wildcards."
 msgstr "Operatsiooni ei saa teostada, kuna $(ARG1) sisaldab metamärke."
 
 #: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_IO_LOCKVIOLATION & ERRCODE_RES_MASK).String.Text
-#, fuzzy
 msgid  "Error during shared access to $(ARG1)."
 msgstr "Ühise lugemise ajal asukohast $(ARG1) tekkis viga."
 
 #: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_IO_MISPLACEDCHAR & ERRCODE_RES_MASK).String.Text
-#, fuzzy
 msgid  "$(ARG1) contains misplaced characters."
 msgstr "$(ARG1) sisaldab vales kohas asuvaid märke."
 
 #: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_IO_NAMETOOLONG & ERRCODE_RES_MASK).String.Text
-#, fuzzy
 msgid  "The name $(ARG1) contains too many characters."
 msgstr "Nimi $(ARG1) on liiga pikk."
 
 #: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_IO_NOTEXISTS & ERRCODE_RES_MASK).String.Text
-#, fuzzy
 msgid  "$(ARG1) does not exist."
 msgstr "$(ARG1) pole olemas."
 
 #: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_IO_NOTEXISTSPATH & ERRCODE_RES_MASK).String.Text
-#, fuzzy
 msgid  "The path $(ARG1) does not exist."
 msgstr "Asukohta $(ARG1) pole olemas."
 
 #: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_IO_NOTSUPPORTED & ERRCODE_RES_MASK).String.Text
-#, fuzzy
 msgid  "The operation on $(ARG1) is not supported on this operating system."
 msgstr "Operatsioon seadmel $(ARG1) pole selles operatsioonisüsteemis toetatud."
 
 #: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_IO_NOTADIRECTORY & ERRCODE_RES_MASK).String.Text
-#, fuzzy
 msgid  "$(ARG1) is not a directory."
 msgstr "$(ARG1) ei ole kataloog."
 
 #: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_IO_NOTAFILE & ERRCODE_RES_MASK).String.Text
-#, fuzzy
 msgid  "$(ARG1) is not a file."
 msgstr "$(ARG1) ei ole fail."
 
 #: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_IO_OUTOFSPACE & ERRCODE_RES_MASK).String.Text
-#, fuzzy
 msgid  "There is no space left on device $(ARG1)."
 msgstr "Seadmel $(ARG1) pole rohkem vaba ruumi."
 
 #: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_IO_TOOMANYOPENFILES & ERRCODE_RES_MASK).String.Text
 msgid  "The operation on $(ARG1) cannot be performed because too many files are already open."
-msgstr ""
+msgstr "Operatsiooni teostamine $(ARG1)-l ei õnnestunud, kuna liiga palju faile on avatud."
 
 #: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_IO_OUTOFMEMORY & ERRCODE_RES_MASK).String.Text
 msgid  "The operation on $(ARG1) cannot be performed because there is no more memory available."
-msgstr ""
+msgstr "Operatsiooni teostamine $(ARG1)-l ei õnnestunud, kuna vaba mälu on otsas."
 
 #: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_IO_PENDING & ERRCODE_RES_MASK).String.Text
-#, fuzzy
 msgid  "The operation on $(ARG1) cannot continue because more data is pending."
 msgstr "Operatsioon ei saa jätkuda seadmel $(ARG1), kuna osa andmeid on ootel."
 
 #: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_IO_RECURSIVE & ERRCODE_RES_MASK).String.Text
-#, fuzzy
 msgid  "$(ARG1) cannot be copied into itself."
 msgstr "$(ARG1) kopeerimine iseenda sisse pole võimalik."
 
 #: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_IO_UNKNOWN & ERRCODE_RES_MASK).String.Text
-#, fuzzy
 msgid  "Unknown input/output error while accessing $(ARG1)."
 msgstr "$(ARG1)-st lugemisel tekkis tundmatu sisend-/väljundviga."
 
 #: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_IO_WRITEPROTECTED & ERRCODE_RES_MASK).String.Text
-#, fuzzy
 msgid  "$(ARG1) is write protected."
 msgstr "$(ARG1) on kirjutuskaitstud."
 
 #: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_IO_WRONGFORMAT & ERRCODE_RES_MASK).String.Text
-#, fuzzy
 msgid  "$(ARG1) is not in the correct format."
 msgstr "$(ARG1) ei ole korrektses vormingus."
 
 #: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_IO_WRONGVERSION & ERRCODE_RES_MASK).String.Text
-#, fuzzy
 msgid  "The version of $(ARG1) is not correct."
 msgstr "$(ARG1) versioon pole korrektne."
 
 #: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_IO_NOTEXISTS_VOLUME & ERRCODE_RES_MASK).String.Text
-#, fuzzy
 msgid  "Drive $(ARG1) does not exist."
 msgstr "Seadet $(ARG1) pole olemas."
 
 #: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_IO_NOTEXISTS_FOLDER & ERRCODE_RES_MASK).String.Text
-#, fuzzy
 msgid  "Folder $(ARG1) does not exist."
 msgstr "Kataloogi $(ARG1) pole olemas."
 
 #: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_WRONGJAVA & ERRCODE_RES_MASK).String.Text
-#, fuzzy
 msgid  "The installed Java version is not supported."
 msgstr "Paigaldatud Java versioon pole toetatud."
 
 #: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_WRONGJAVA_VERSION & ERRCODE_RES_MASK).String.Text
-#, fuzzy
 msgid  "The installed Java version $(ARG1) is not supported."
 msgstr "Paigaldatud Java versioon $(ARG1) pole toetatud."
 
 #: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_WRONGJAVA_MIN & ERRCODE_RES_MASK).String.Text
 msgid  "The installed Java version is not supported, at least version $(ARG1) is required."
-msgstr ""
+msgstr "Paigaldatud Java versioon ei ole toetatud, vajatakse vähemalt versiooni $(ARG1)."
 
 #: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_WRONGJAVA_VERSION_MIN & ERRCODE_RES_MASK).String.Text
 msgid  "The installed Java version $(ARG1) is not supported, at least version $(ARG2) is required."
-msgstr ""
+msgstr "Paigaldatud Java versioon $(ARG1) ei ole toetatud, vajatakse vähemalt versiooni $(ARG2)."
 
 #: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_BADPARTNERSHIP & ERRCODE_RES_MASK).String.Text
-#, fuzzy
 msgid  "The data associated with the partnership is corrupted."
 msgstr "Sõprussidemega seotud andmed on riknenud."
 
 #: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_BADPARTNERSHIP_NAME & ERRCODE_RES_MASK).String.Text
-#, fuzzy
 msgid  "The data associated with the partnership $(ARG1) is corrupted."
 msgstr "Sõprussidemega $(ARG1) seotud andmed on riknenud."
 
 #: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_IO_NOTREADY_VOLUME & ERRCODE_RES_MASK).String.Text
-#, fuzzy
 msgid  "Volume $(ARG1) is not ready."
 msgstr "Andmeruum $(ARG1) pole valmis."
 
 #: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_IO_NOTREADY_REMOVABLE & ERRCODE_RES_MASK).String.Text
-#, fuzzy
 msgid  "$(ARG1) is not ready; please insert a storage medium."
 msgstr "$(ARG1) ei ole valmis; palun sisesta andmekandja.."
 
 #: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_IO_NOTREADY_VOLUME_REMOVABLE & ERRCODE_RES_MASK).String.Text
-#, fuzzy
 msgid  "Volume $(ARG1) is not ready; please insert a storage medium."
 msgstr "Volüüm $(ARG1) ei ole valmis; palun sisesta andmekandja."
 
 #: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_WRONGMEDIUM & ERRCODE_RES_MASK).String.Text
-#, fuzzy
 msgid  "Please insert disk $(ARG1)."
 msgstr "Palun sisesta ketas $(ARG1)."
 
 #: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_IO_CANTCREATE_NONAME & ERRCODE_RES_MASK).String.Text
-#, fuzzy
 msgid  "The object cannot be created in directory $(ARG1)."
 msgstr "Objekti loomine ei õnnestunud kataloogi $(ARG1)."
 
 #: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_IO_UNSUPPORTEDOVERWRITE & ERRCODE_RES_MASK).String.Text
 msgid  "%PRODUCTNAME cannot keep files from being overwritten when this transmission protocol is used. Do you want to continue anyway?"
-msgstr ""
+msgstr "%PRODUCTNAME ei suuda seda ülekandeprotokolli kasutades hoiduda failide ülekirjutamisest. Kas sa tõesti soovid jätkata?"
 
 #: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_IO_BROKENPACKAGE & ERRCODE_RES_MASK).String.Text
 msgid  "The file '$(ARG1)' is corrupt and therefore cannot be opened. %PRODUCTNAME can try to repair the file.\n\nThe corruption could be the result of document manipulation or of structural document damage due to data transmission.\n\nWe recommend that you do not trust the content of the repaired document.\nExecution of macros is disabled for this document.\n\nShould %PRODUCTNAME repair the file?\n"
@@ -395,26 +346,25 @@ msgstr ""
 
 #: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_IO_BROKENPACKAGE_CANTREPAIR & ERRCODE_RES_MASK).String.Text
 msgid  "The file '$(ARG1)' could not be repaired and therefore cannot be opened."
-msgstr ""
+msgstr "Faili '$(ARG1)' parandamine ei õnnestunud, seega pole seda võimalik avada."
 
 #: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_CONFIGURATION_BROKENDATA_NOREMOVE & ERRCODE_RES_MASK).String.Text
 msgid  "Configuration data in '$(ARG1)' is corrupted. Without this data some functions may not operate correctly.\nDo you want to continue startup of %PRODUCTNAME without the corrupted configuration data?"
-msgstr ""
+msgstr "Konfiguratsiooniandmed asukohas '$(ARG1)' on vigased. Mõned funktsioonid ei pruugi ilma nende andmeteta korralikult töötada.\nKas soovid jätkata %PRODUCTNAME-i käivitamist ilma vigaste konfiguratsiooniandmeteta?"
 
 #: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_CONFIGURATION_BROKENDATA_WITHREMOVE & ERRCODE_RES_MASK).String.Text
 msgid  "The personal configuration file '$(ARG1)' is corrupted and must be deleted to continue. Some of your personal settings may be lost.\nDo you want to continue startup of %PRODUCTNAME without the corrupted configuration data?"
-msgstr ""
+msgstr "Kuna personaalne konfiguratsioonifail '$(ARG1)' on vigane, siis peab jätkamiseks selle kustutama. Mõned sinu personaalsetest sätetest lähevad kaotsi.\nKas soovid jätkata %PRODUCTNAME-i käivitamist ilma vigaste konfiguratsiooniandmeteta?"
 
 #: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_CONFIGURATION_BACKENDMISSING & ERRCODE_RES_MASK).String.Text
 msgid  "The configuration data source '$(ARG1)' is unavailable. Without this data some functions may not operate correctly."
-msgstr ""
+msgstr "Konfiguratsiooniandmete asukoht '$(ARG1)' pole saadaval. Mõned funktsioonid ei pruugi ilma nende andmeteta korralikult töötada."
 
 #: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_CONFIGURATION_BACKENDMISSING_WITHRECOVER & ERRCODE_RES_MASK).String.Text
 msgid  "The configuration data source '$(ARG1)' is unavailable. Without this data some functions may not operate correctly.\nDo you want to continue startup of %PRODUCTNAME without the missing configuration data?"
-msgstr ""
+msgstr "Konfiguratsiooniandmete asukoht '$(ARG1)' pole saadaval. Mõned funktsioonid ei pruugi ilma nende andmeteta korralikult töötada.\nKas soovid jätkata %PRODUCTNAME-i käivitamist ilma vigaste konfiguratsiooniandmeteta?"
 
 #: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_INVALID_XFORMS_SUBMISSION_DATA & ERRCODE_RES_MASK).STRING.Text
-#, fuzzy
 msgid  "The form contains invalid data. Do you still want to continue?"
 msgstr "Vorm sisaldab sobimatuid andmeid. Soovid siiski jätkata?"
 
@@ -436,37 +386,33 @@ msgstr ""
 
 #: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_UNKNOWNAUTH_UNTRUSTED).STRING.Text
 msgid  "Unable to verify the identity of $(ARG1) site.\n\nBefore accepting this certificate, you should examine this site's certificate carefully. Are you willing to accept this certificate for the purpose of identifying the Web site $(ARG1)?"
-msgstr ""
+msgstr "Veebilehe $(ARG1) identiteeti pole võimalik tuvastada.\n\nEnne sertifikaadiga nõustumist peaksid sa veebilehe sertifikaati hoolikalt uurima. Kas oled nõus, et seda sertifikaati kasutatakse veebilehe $(ARG1) identifitseerimiseks?"
 
 #: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_SSLWARN_EXPIRED_1).STRING.Text
 msgid  "$(ARG1) is a site that uses a security certificate to encrypt data during transmission, but its certificate expired on $(ARG2).\n\nYou should check to make sure that your computer's time is correct."
-msgstr ""
+msgstr "$(ARG1) on veebileht, mis kasutab transporditavate andmete krüptimiseks turvasertifikaati, mis aegus $(ARG2).\n\nKontrolli, kas sinu arvuti aeg on õige."
 
 #: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_SSLWARN_DOMAINMISMATCH_1).STRING.Text
 msgid  "You have attempted to establish a connection with $(ARG1). However, the security certificate presented belongs to $(ARG2). It is possible, though unlikely, that someone may be trying to intercept your communication with this web site.\n\nIf you suspect the certificate shown does not belong to $(ARG1), please cancel the connection and notify the site administrator.\n\nWould you like to continue anyway?"
-msgstr ""
+msgstr "Sa püüdsid luua ühendust veebilehega $(ARG1).Paraku kuulub esitatud turvasertifikaat veebilehele $(ARG2). On vähetõenaoline, kuid siiski võimalik, et keegi püüab jälgida sinu ühendust selle veebilehega.\n\nKui sa kahtlustad, et et näidatud sertifikaat ei kuulu veebilehele $(ARG1), katkesta ühendus ja teavita veebilehe haldajat.\n\nKas soovid siiski jätkata?"
 
 #: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_SSLWARN_INVALID_1).STRING.Text
 msgid  "The certificate could not be validated. You should examine this site's certificate carefully.\n\nIf you suspect the certificate shown, please cancel the connection and notify the site administrator."
-msgstr ""
+msgstr "Sertifikaadi valideerimine nurjus. Sa peaksid selle veebilehe sertifikaati hoolikalt uurima.\n\nKui sa kahtled näidatud sertifikaadis, katkesta ühendus ja teavita veebilehe haldajat."
 
 #: source/ids.src#RID_UUI_ERRHDL.(TITLE_UUI_SSLWARN_DOMAINMISMATCH).STRING.Text
-#, fuzzy
 msgid  "Security Warning: Domain Name Mismatch"
 msgstr "Turvahoiatus: domeeninimed ei kattu"
 
 #: source/ids.src#RID_UUI_ERRHDL.(TITLE_UUI_SSLWARN_EXPIRED).STRING.Text
-#, fuzzy
 msgid  "Security Warning: Server Certificate Expired"
 msgstr "Turvahoiatus: serveri sertifikaat on aegunud"
 
 #: source/ids.src#RID_UUI_ERRHDL.(TITLE_UUI_SSLWARN_INVALID).STRING.Text
-#, fuzzy
 msgid  "Security Warning: Server Certificate Invalid"
 msgstr "Turvahoiatus: serveri sertifikaat on vigane"
 
 #: source/fltdlg.src#DLG_FILTER_SELECT.ModalDialog.Text
-#, fuzzy
 msgid  "Filter Selection"
 msgstr "Filtri valimine"
 
@@ -480,12 +426,14 @@ msgid  "Message from server:"
 msgstr ""
 
 #: source/logindlg.src#DLG_UUI_LOGIN.FT_INFO_LOGIN_REQUEST.FixedText.Text
+#, fuzzy
 msgid  "Enter user name and password for: \n%1"
-msgstr ""
+msgstr "Palun sisesta siia serveris %1 asuva teenuse '%2' kasutajanimi ja parool."
 
 #: source/logindlg.src#DLG_UUI_LOGIN.STR_LOGIN_REALM.String.Text
-msgid  "Enter user name and password for: \n"%2" on %1"
-msgstr ""
+#, fuzzy
+msgid  "Enter user name and password for: \n\"%2\" on %1"
+msgstr "Palun sisesta siia serveris %1 asuva teenuse '%2' kasutajanimi ja parool."
 
 #: source/logindlg.src#DLG_UUI_LOGIN.FT_LOGIN_PATH.FixedText.Text
 #, fuzzy
@@ -517,60 +465,50 @@ msgid  "~Use system credentials"
 msgstr ""
 
 #: source/cookiedg.src#DLG_COOKIES.RB_INFUTURE_SEND.RadioButton.Text
-#, fuzzy
 msgid  "~Send"
 msgstr "Saatmine"
 
 #: source/cookiedg.src#DLG_COOKIES.RB_INFUTURE_IGNORE.RadioButton.Text
-#, fuzzy
 msgid  "I~gnore"
 msgstr "Ignoreerimine"
 
 #: source/cookiedg.src#DLG_COOKIES.RB_INFUTURE_INTERACTIVE.RadioButton.Text
-#, fuzzy
 msgid  "I~nteractive"
 msgstr "Interaktiivne"
 
 #: source/cookiedg.src#DLG_COOKIES.GB_INFUTURE.GroupBox.Text
-#, fuzzy
 msgid  "Future Cookie Handling"
 msgstr "Tulevaste küpsiste käsitsemine"
 
 #: source/cookiedg.src#DLG_COOKIES.BTN_COOKIES_CANCEL.PushButton.Text
-#, fuzzy
 msgid  "~Ignore"
 msgstr "Ignoreeri"
 
 #: source/cookiedg.src#DLG_COOKIES.BTN_COOKIES_OK.PushButton.Text
-#, fuzzy
 msgid  "~Send"
 msgstr "Saada"
 
 #: source/cookiedg.src#STR_COOKIES_RECV_START.String.Text
 msgid  "The '${HOST}' server wishes to set one or more cookies.\nCookies contain information referring to certain URL classes. If %PRODUCTNAME later requests a document with a URL corresponding to the class of a previously set cookie, %PRODUCTNAME will send this information to the server. This allows a server to recognize the status of a WWW application, e.g., when shopping online.\n\nThe following Cookies should be set:\n\n"
-msgstr ""
+msgstr "Server '${HOST}' pakub üht või rohkemat küpsist.\nKüpsised sisaldavad kindlatele URLiklassidele viitavat infot. Kui %PRODUCTNAME soovib hiljem dokumenti, mille URL vastab varem vastuvõetud küpsise klassile, siis saadab %PRODUCTNAME selle info serverile. Selline käitumine võimaldab serveril tuvastada veebirakenduse olekut (nt. veebipoest tellides).\n\nPakutakse järgnevaid küpsiseid:\n\n"
 
 #: source/cookiedg.src#STR_COOKIES_RECV_COOKIES.String.Text
-#, fuzzy
 msgid  "Domain: ${DOMAIN}, Path: ${PATH}, Cookie: ${COOKIE}.\n"
 msgstr "Domeen: ${DOMAIN}, Asukoht: ${PATH}, Küpsis: ${COOKIE}.\n"
 
 #: source/cookiedg.src#STR_COOKIES_RECV_TITLE.String.Text
-#, fuzzy
 msgid  "Cookie Reception"
 msgstr "Küpsiste vastuvõtmine"
 
 #: source/cookiedg.src#STR_COOKIES_SEND_START.String.Text
 msgid  "%PRODUCTNAME has saved cookies for the server '${HOST}' which will be sent when requesting the document ${PATH}.\nCookies contain information which refers to certain URL classes. They are sent by some servers to %PRODUCTNAME where they are saved when certain documents are accessed. If %PRODUCTNAME loads a document that, according to the URL, corresponds to a class of one of the previously received Cookies, %PRODUCTNAME will send this information to that server. This enables a server to keep track of the status of a WWW application, e.g., when shopping online.\n\nThe following Cookies should be set:\n\n"
-msgstr ""
+msgstr "%PRODUCTNAME salvestas serveri '${HOST}' küpsise, mis saadetakse siis, kui soovitakse dokumenti ${PATH}.\nKüpsised sisaldavad teavet, mis vastavad teatud URLiklassidele. Mõned serverid saadavad neid %PRODUCTNAME-ile, mis salvestab need, kui kasutatakse teatud dokumente. Kui %PRODUCTNAME avab dokumendi, mis vastavalt URL-ile sobib varem vastu võetud küpsisega, saadab %PRODUCTNAME teabe sellele serverile. Nii saab server jälgida veebirakenduse olekut - näiteks veebipoodide kasutamisel.\n\nPakutakse järgnevaid küpsiseid:\n\n"
 
 #: source/cookiedg.src#STR_COOKIES_SEND_COOKIES.String.Text
-#, fuzzy
 msgid  "Domain: ${DOMAIN}, Path: ${PATH}, Cookie: ${COOKIE}.\n"
 msgstr "Domeen: ${DOMAIN}, Asukoht: ${PATH}, Küpsis: ${COOKIE}.\n"
 
 #: source/cookiedg.src#STR_COOKIES_SEND_TITLE.String.Text
-#, fuzzy
 msgid  "Send Cookies"
 msgstr "Küpsiste saatmine"
 
@@ -583,12 +521,14 @@ msgid  "The password is incorrect. The file cannot be modified."
 msgstr ""
 
 #: source/passworderrs.src#STR_ERROR_MASTERPASSWORD_WRONG.String.Text
+#, fuzzy
 msgid  "The master password is incorrect."
-msgstr ""
+msgstr "Sisestati vale ülemparool. %PRODUCTNAME ei pääse ligi ülemparooliga kaitstud veebiühenduse teabele.\n\nMärkus: paroolid on tõstutundlikud ja vähemalt viie märgi pikkused."
 
 #: source/passworderrs.src#STR_ERROR_SIMPLE_PASSWORD_WRONG.String.Text
+#, fuzzy
 msgid  "The password is incorrect."
-msgstr ""
+msgstr "Sisestati vale ülemparool. %PRODUCTNAME ei pääse ligi ülemparooliga kaitstud veebiühenduse teabele.\n\nMärkus: paroolid on tõstutundlikud ja vähemalt viie märgi pikkused."
 
 #: source/passworderrs.src#STR_ERROR_PASSWORDS_NOT_IDENTICAL.String.Text
 #, fuzzy
@@ -613,8 +553,9 @@ msgid  "Document in Use"
 msgstr "Dokumenti kasutatakse"
 
 #: source/openlocked.src#STR_OPENLOCKED_MSG.String.Text
+#, fuzzy
 msgid  "Document file '$(ARG1)' is locked for editing by:\n\n$(ARG2)\n\nOpen document read-only or open a copy of the document for editing.\n\n"
-msgstr ""
+msgstr "Dokumendifail '$(ARG1)' on lukustatud redigeerimiseks:\n\n$(ARG2) poolt\n\nAva dokument kirjutuskaitstuna või ava redigeerimiseks dokumendi koopia.\n\n"
 
 #: source/openlocked.src#STR_OPENLOCKED_OPENREADONLY_BTN.String.Text
 #, fuzzy
@@ -637,10 +578,9 @@ msgstr ""
 
 #: source/filechanged.src#STR_FILECHANGED_MSG.String.Text
 msgid  "The file has been changed since it was opened for editing in %PRODUCTNAME. Saving your version of the document will overwrite changes made by others.\n\nDo you want to save anyway?\n\n"
-msgstr ""
+msgstr "Faili on muudetud pärast seda, kui see avati %PRODUCTNAME-is redigeerimiseks. Sinu dokumendiversiooni salvestamine kirjutab üle teiste tehtud muudatused.\n\nKas soovid ikkagi salvestada?\n\n"
 
 #: source/filechanged.src#STR_FILECHANGED_SAVEANYWAY_BTN.String.Text
-#, fuzzy
 msgid  "~Save Anyway"
 msgstr "Salvesta ikkagi"
 
@@ -650,8 +590,9 @@ msgid  "%PRODUCTNAME Update Available"
 msgstr "%PRODUCTNAME-i uuendus on saadaval"
 
 #: source/newerverwarn.src#RID_DLG_NEWER_VERSION_WARNING.FT_INFO.FixedText.Text
+#, fuzzy
 msgid  "This document was created by a newer version of %PRODUCTNAME. It may contain features not supported by your current version.\n\nClick 'Update Now...' to run online update and get the latest version of %PRODUCTNAME."
-msgstr ""
+msgstr "See dokument on loodud %PRODUCTNAME-i uuema versiooniga ja võib sisaldada omadusi, mida sinu praegune versioon ei toeta.\n\nInternetiuuenduse käivitamiseks ja uusima %PRODUCTNAME-i versiooni hankimiseks klõpsa 'Uuenda kohe...'."
 
 #: source/newerverwarn.src#RID_DLG_NEWER_VERSION_WARNING.PB_UPDATE.PushButton.Text
 #, fuzzy
@@ -709,8 +650,9 @@ msgid  "View Signatures..."
 msgstr "Näita signatuure..."
 
 #: source/secmacrowarnings.src#RID_XMLSECDLG_MACROWARN.FI_DESCR2.FixedText.Text
+#, fuzzy
 msgid  "Macros may contain viruses. Disabling macros for a document is always safe. If you disable macros you may lose functionality provided by the document macros."
-msgstr ""
+msgstr "Makrod võivad sisaldada viiruseid. Makrode keelamine on alati turvaline, kuid keelates makrod, võid kaotada ka dokumendi makrode abil pakutava funktsionaalsuse."
 
 #: source/secmacrowarnings.src#RID_XMLSECDLG_MACROWARN.CB_ALWAYSTRUST.CheckBox.Text
 #, fuzzy
@@ -743,8 +685,9 @@ msgid  "Set Master Password"
 msgstr "Ülemparooli määramine"
 
 #: source/masterpasscrtdlg.src#DLG_UUI_MASTERPASSWORD_CRT.FT_INFOTEXT.FixedText.Text
+#, fuzzy
 msgid  "Passwords for web connections are protected by a master password. You will be asked to enter it once per session, if %PRODUCTNAME retrieves a password from the protected password list."
-msgstr ""
+msgstr "Veebiühenduste paroolid on kaitstud ülemparooliga. See tuleb sisestada üks kord seansi jooksul, kui %PRODUCTNAME kasutab mõnda parooli kaitstud paroolide hulgast."
 
 #: source/masterpasscrtdlg.src#DLG_UUI_MASTERPASSWORD_CRT.FT_MASTERPASSWORD_CRT.FixedText.Text
 #, fuzzy
@@ -757,37 +700,34 @@ msgid  "~Reenter password"
 msgstr "Sisesta parool uuesti"
 
 #: source/masterpasscrtdlg.src#DLG_UUI_MASTERPASSWORD_CRT.FT_CAUTIONTEXT.FixedText.Text
+#, fuzzy
 msgid  "Caution: If you forget the master password, you will be unable to access any of the information protected by it. Passwords are case-sensitive."
-msgstr ""
+msgstr "Hoiatus: jäta ülemparool kindlasti meelde. Kui sa unustad ülemparooli, ei pääse sa enam ligi selle poolt kaitstud teabele. Paroolid on tõstutundlikud ja vähemalt viie märgi pikkused."
 
 #: source/alreadyopen.src#STR_ALREADYOPEN_MSG.String.Text
 msgid  "Document file '$(ARG1)' is locked for editing by yourself on a different system since $(ARG2)\n\nOpen document read-only, or ignore own file locking and open the document for editing.\n\n"
-msgstr ""
+msgstr "Dokumendifail '$(ARG1)' on lukustatud redigeerimiseks sinu poolt alates $(ARG2)\n\nAva dokument kirjutuskaitstuna või eira oma lukustust ja ava dokument redigeerimiseks.\n\n"
 
 #: source/alreadyopen.src#STR_ALREADYOPEN_READONLY_BTN.String.Text
-#, fuzzy
 msgid  "Open ~Read-Only"
 msgstr "Avamine kirjutuskaitstult"
 
 #: source/alreadyopen.src#STR_ALREADYOPEN_OPEN_BTN.String.Text
-#, fuzzy
 msgid  "~Open"
 msgstr "Ava"
 
 #: source/alreadyopen.src#STR_ALREADYOPEN_SAVE_MSG.String.Text
 msgid  "Document file '$(ARG1)' is locked for editing by yourself on a different system since $(ARG2)\n\nClose document on other system and retry saving or ignore own file locking and save current document.\n\n"
-msgstr ""
+msgstr "Dokumendifail '$(ARG1)' on lukustatud redigeerimiseks sinu enda poolt teises süsteemis alates $(ARG2)\n\nSulge teises süsteemis dokument ja proovi uuesti salvestada või eira oma lukustust ja salvesta aktiivne dokument.\n\n"
 
 #: source/alreadyopen.src#STR_ALREADYOPEN_RETRY_SAVE_BTN.String.Text
-#, fuzzy
 msgid  "~Retry Saving"
 msgstr "Proovi uuesti salvestada"
 
 #: source/alreadyopen.src#STR_ALREADYOPEN_SAVE_BTN.String.Text
-#, fuzzy
 msgid  "~Save"
 msgstr "Salvesta"
 
 #: source/lockfailed.src#STR_LOCKFAILED_MSG.String.Text
 msgid  "The file could not be locked for exclusive access by %PRODUCTNAME, due to missing permission to create a lock file on that file location."
-msgstr ""
+msgstr "%PRODUCTNAME ei saa lukustada faili ainukasutamiseks, kuna puuduvad õigused lukustusfaili loomiseks sellesse asukohta."

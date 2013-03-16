@@ -61,7 +61,7 @@ msgstr "Taille de ~base"
 
 #: source/smres.src#RID_FONTSIZEDIALOG.4.FixedText.Text
 msgid  "~Text"
-msgstr "~Texte"
+msgstr "Te~xte"
 
 #: source/smres.src#RID_FONTSIZEDIALOG.5.FixedText.Text
 msgid  "~Indexes"
@@ -341,7 +341,7 @@ msgstr "~Ligne du titre"
 
 #: source/smres.src#RID_PRINTOPTIONPAGE.CB_EQUATION_TEXT.CheckBox.Text
 msgid  "~Formula text"
-msgstr "Texte de la ~formule"
+msgstr "~Texte de la formule"
 
 #: source/smres.src#RID_PRINTOPTIONPAGE.CB_FRAME.CheckBox.Text
 msgid  "B~order"
@@ -353,11 +353,11 @@ msgstr "Format d'impression"
 
 #: source/smres.src#RID_PRINTOPTIONPAGE.RB_ORIGINAL_SIZE.RadioButton.Text
 msgid  "O~riginal size"
-msgstr "Taille d'o~rigine"
+msgstr "Taille d'~origine"
 
 #: source/smres.src#RID_PRINTOPTIONPAGE.RB_FIT_TO_PAGE.RadioButton.Text
 msgid  "Fit to ~page"
-msgstr "Adapter à la ~page"
+msgstr "~Adapter à la page"
 
 #: source/smres.src#RID_PRINTOPTIONPAGE.RB_ZOOM.RadioButton.Text
 msgid  "~Scaling"
@@ -445,11 +445,11 @@ msgstr "~Supprimer"
 
 #: source/smres.src#RID_NOMATHTYPEFACEWARNING.WarningBox.Message
 msgid  "The 'StarMath' font has not been installed.\nWithout this font %PRODUCTNAME Math cannot function correctly.\nPlease install this font and restart %PRODUCTNAME Math."
-msgstr ""
+msgstr "La police 'StarMath' n'a pas été installée.\nSans cette police, %PRODUCTNAME Math ne fonctionne pas correctement.\nInstallez cette police et redémarrez %PRODUCTNAME Math."
 
 #: source/smres.src#RID_DEFAULTSAVEQUERY.QueryBox.Message
 msgid  "Should the changes be saved as defaults?\n\nThese changes will apply for all new formulas."
-msgstr ""
+msgstr "Enregistrer les modifications comme paramètre par défaut ?\n\nCes modifications s'appliqueront à toutes les nouvelles formules."
 
 #: source/smres.src#RID_FONTREGULAR.String.Text
 msgid  "Standard"
@@ -558,6 +558,10 @@ msgstr "Sans"
 #: source/smres.src#RID_FONTMENU.7.MenuItem.Text
 msgid  "Fixed"
 msgstr "Fixe"
+
+#: source/smres.src#CMDBOXWINDOW_TEXT.#define.Text
+msgid  "Commands"
+msgstr "Commandes"
 
 #: source/smres.src#RID_DOCUMENTSTR.String.Text
 msgid  "Formula"
@@ -694,10 +698,6 @@ msgstr "Adapter à la ~page"
 #: source/smres.src#RID_PRINTUIOPTIONS.item9.ItemList.item
 msgid  "~Scaling"
 msgstr "~Échelle"
-
-#: source/smres.src#CMDBOXWINDOW_TEXT.#define.Text
-msgid  "Commands"
-msgstr "Commandes"
 
 #: source/commands.src#RID_COMMANDMENU.RID_UNBINOPS_MENU.MenuItem.Text
 msgid  "~Unary/Binary Operators"

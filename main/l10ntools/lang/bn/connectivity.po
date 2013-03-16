@@ -119,6 +119,18 @@ msgstr ""
 msgid  "LDAP Address Book"
 msgstr ""
 
+#: source/drivers/mozab/mozab2.xcu#.Drivers.Installed.sdbc:address:mozilla:.DriverTypeDisplayName
+msgid  "SeaMonkey Address Book"
+msgstr ""
+
+#: source/drivers/mozab/mozab2.xcu#.Drivers.Installed.sdbc:address:thunderbird:.DriverTypeDisplayName
+msgid  "Thunderbird Address Book"
+msgstr ""
+
+#: source/drivers/mozab/mozab2.xcu#.Drivers.Installed.sdbc:address:ldap:*.DriverTypeDisplayName
+msgid  "LDAP Address Book"
+msgstr ""
+
 #: source/drivers/mysql/mysql.xcu#.Drivers.Installed.sdbc:mysql:jdbc:*.DriverTypeDisplayName
 msgid  "MySQL (JDBC)"
 msgstr ""
@@ -161,11 +173,11 @@ msgstr "মজিলা চলা অবস্থায় নতুন ঠি�
 
 #: source/resource/conn_shared_res.src#STR_COULD_NOT_RETRIEVE_AB_ENTRY.String.Text
 msgid  "An address book entry could not be retrieved, an unknown error occurred."
-msgstr ""
+msgstr "কোনো ঠিকানার বইয়ের এন্ট্রি পাওয়া যায়নি, একটি অজানা সমস্যা হয়েছে।"
 
 #: source/resource/conn_shared_res.src#STR_COULD_NOT_GET_DIRECTORY_NAME.String.Text
 msgid  "An address book directory name could not be retrieved, an unknown error occurred."
-msgstr ""
+msgstr "কোনো ঠিকানার বইয়ের  নির্দেশিকার নাম পাওয়া যায়নি, একটি অজানা সমস্যা হয়েছে।"
 
 #: source/resource/conn_shared_res.src#STR_TIMEOUT_WAITING.String.Text
 msgid  "Timed out while waiting for the result."
@@ -177,11 +189,11 @@ msgstr "জিজ্ঞাসা বাস্তবায়নের সময�
 
 #: source/resource/conn_shared_res.src#STR_MOZILLA_IS_RUNNIG_NO_CHANGES.String.Text
 msgid  "You can't make any changes to mozilla address book when mozilla is running."
-msgstr ""
+msgstr "মজিলা চলাকালে মজিলা ঠিকানাবই এ পরিবর্তন করতে পারবেন না।"
 
 #: source/resource/conn_shared_res.src#STR_FOREIGN_PROCESS_CHANGED_AB.String.Text
 msgid  "Mozilla Address Book has been changed out of this process, we can't modify it in this condition."
-msgstr ""
+msgstr "মজিলা ঠিকানাবই এই পদ্ধিতিতে এর পরিবর্তন করা হয়েছে, আমরা এই শর্তে এর পরিবর্তন করতে পারি না।"
 
 #: source/resource/conn_shared_res.src#STR_CANT_FIND_ROW.String.Text
 msgid  "Can't find the requested row."
@@ -233,7 +245,7 @@ msgstr "একটি নতুন সারি তৈরি করা সম্�
 
 #: source/resource/conn_shared_res.src#STR_QUERY_INVALID_IS_NULL_COLUMN.String.Text
 msgid  "The query can not be executed. The 'IS NULL' can only be used with a column name."
-msgstr ""
+msgstr "জিজ্ঞাসাটি বাস্তবায়ন করা যায়নি। 'IS NULL' শুধুমাত্র একটি কলামের নামের সাথে ব্যবহার করা যাবে।"
 
 #: source/resource/conn_shared_res.src#STR_ILLEGAL_MOVEMENT.String.Text
 msgid  "Illegal cursor movement occured."
@@ -241,7 +253,7 @@ msgstr "কার্সরের অবৈধ নড়াচড়া হয়
 
 #: source/resource/conn_shared_res.src#STR_COMMIT_ROW.String.Text
 msgid  "Please commit row '$position$' before update rows or insert new rows."
-msgstr ""
+msgstr "সারি হালনাগাদকরণ বা নতুন সারি ঢুকানোর আগে অনুগ্রহ করে সারি '$position$' নির্ধারন করুন।"
 
 #: source/resource/conn_shared_res.src#STR_INVALID_ROW_UPDATE.String.Text
 msgid  "The update call can not be executed. The row is invalid."
@@ -268,12 +280,12 @@ msgid  "It doesn't exist a connection to the database."
 msgstr "এটির ডাটাবেসের সাথে কোনো সংযোগ নেই।"
 
 #: source/resource/conn_shared_res.src#STR_WRONG_PARAM_INDEX.String.Text
-msgid  "You tried to set a parameter at position '$pos$' but there is/are only '$count$' parameter(s) allowed. One reason may be that the property "ParameterNameSubstitution" is not set to TRUE in the data source."
-msgstr ""
+msgid  "You tried to set a parameter at position '$pos$' but there is/are only '$count$' parameter(s) allowed. One reason may be that the property \"ParameterNameSubstitution\" is not set to TRUE in the data source."
+msgstr "আপনি '$pos$' অবস্থানে একটি প্যারামিটার সেট করার চেষ্টা করেছিলেন কিন্তু সেখানে শুধু '$count$' প্যারামিটার অনুমোদিত। এর একটি কারন হতে পারে যে, \"ParameterNameSubstitution\" বৈশিষ্ট্যটি নদীর উপাত্ত উৎসে 'সত্য' সেট করা নেই।"
 
 #: source/resource/conn_shared_res.src#STR_INPUTSTREAM_WRONG_LEN.String.Text
 msgid  "End of InputStream reached before satisfying length specified when InputStream was set."
-msgstr ""
+msgstr "InputStream সেট করার সময় নির্ধারিত দের্ঘ্য হওয়ার আগেই InputStream এর শেষে পৌছে গিয়েছে।"
 
 #: source/resource/conn_shared_res.src#STR_NO_INPUTSTREAM.String.Text
 msgid  "The input stream was not set."
@@ -293,7 +305,7 @@ msgstr "সুবিধা অনুমোদিত হয়নি: শুধ�
 
 #: source/resource/conn_shared_res.src#STR_PRIVILEGE_NOT_REVOKED.String.Text
 msgid  "Privilege not revoked: Only table privileges can be revoked."
-msgstr ""
+msgstr "সুবিধা বাতিল করা হয়নি: শুধুমাত্র টেবিলের সুবিধাগুলি বাতিল করা যেতে পারে।"
 
 #: source/resource/conn_shared_res.src#STR_UNKNOWN_COLUMN_NAME.String.Text
 msgid  "The column name '$columnname$' is unknown."
@@ -313,7 +325,7 @@ msgstr "ড্রাইভারটি '$functionname$' নামক ফাং�
 
 #: source/resource/conn_shared_res.src#STR_UNSUPPORTED_FEATURE.String.Text
 msgid  "The driver does not support the functionality for '$featurename$'. It is not implemented."
-msgstr ""
+msgstr "ড্রাইভারটি '$functionname$' -এর কার্যক্রমাদি সমর্থন করে না। এটি বাস্তবায়ন করা হয়নি।"
 
 #: source/resource/conn_shared_res.src#STR_FORMULA_WRONG.String.Text
 msgid  "The formula for TypeInfoSettings is wrong!"
@@ -321,11 +333,11 @@ msgstr "TypeInfoSettings এর সূত্রটি ভুল!"
 
 #: source/resource/conn_shared_res.src#STR_STRING_LENGTH_EXCEEDED.String.Text
 msgid  "The string '$string$' exceeds the maximum length of $maxlen$ characters when converted to the target character set '$charset$'."
-msgstr ""
+msgstr "'$string$' স্ট্রিংটি বর্নচিহ্নের সর্বোচ্চ সংখ্যা $maxlen$ কে ছাড়িয়ে গিয়েছে যখন এটিকে টার্গেট ক্যারেক্টার সেট '$charset$ এ পরিনত করা হয়েছে।"
 
 #: source/resource/conn_shared_res.src#STR_CANNOT_CONVERT_STRING.String.Text
 msgid  "The string '$string$' cannot be converted using the encoding '$charset$'."
-msgstr ""
+msgstr "'$charset$' এনকোডিং ব্যবহার করে '$string$' স্ট্রিংটি পরিবর্তন করা যাবে না।"
 
 #: source/resource/conn_shared_res.src#STR_URI_SYNTAX_ERROR.String.Text
 msgid  "The connection URL is invalid."
@@ -344,8 +356,9 @@ msgid  "The query can not be executed. You cannot use 'LIKE' with columns of thi
 msgstr ""
 
 #: source/resource/conn_shared_res.src#STR_QUERY_INVALID_LIKE_STRING.String.Text
+#, fuzzy
 msgid  "The query can not be executed. 'LIKE' can be used with a string argument only."
-msgstr ""
+msgstr "জিজ্ঞাসাটি বাস্তবায়ন করা যায়নি। 'LIKE' শুধুমাত্র স্ট্রিং প্রস্তাবনার সাথে ব্যবহার করা যাবে।"
 
 #: source/resource/conn_shared_res.src#STR_QUERY_NOT_LIKE_TOO_COMPLEX.String.Text
 #, fuzzy
@@ -353,12 +366,14 @@ msgid  "The query can not be executed. The 'NOT LIKE' condition is too complex."
 msgstr "জিজ্ঞাসাটি বাস্তবায়ন করা যায়নি। 'NOT LIKE' অত্যন্ত জটিল।"
 
 #: source/resource/conn_shared_res.src#STR_QUERY_LIKE_WILDCARD.String.Text
+#, fuzzy
 msgid  "The query can not be executed. The 'LIKE' condition contains wildcard in the middle."
-msgstr ""
+msgstr "জিজ্ঞাসাটি বাস্তবায়ন করা যায়নি। 'LIKE'  বিবরনের মাঝে ওয়াইল্ডকার্ড আছে।"
 
 #: source/resource/conn_shared_res.src#STR_QUERY_LIKE_WILDCARD_MANY.String.Text
+#, fuzzy
 msgid  "The query can not be executed. The 'LIKE' condition contains too many wildcards."
-msgstr ""
+msgstr "জিজ্ঞাসাটি বাস্তবায়ন করা যায়নি। 'LIKE' বিবরনটিতে অতিরিক্ত সংখ্যক ওয়াইল্ডকার্ড আছে।"
 
 #: source/resource/conn_shared_res.src#STR_INVALID_COLUMNNAME.String.Text
 #, fuzzy
@@ -381,8 +396,9 @@ msgid  "The file $filename$ could not be loaded."
 msgstr "$filename$ নামক ফাইলটি লোড করা যায়নি।"
 
 #: source/resource/conn_shared_res.src#STR_LOAD_FILE_ERROR_MESSAGE.String.Text
+#, fuzzy
 msgid  "The attempt to load the file resulted in the following error message ($exception_type$):\n\n$error_message$"
-msgstr ""
+msgstr "ফাইল লোড করার প্রচেষ্টার ফলাফল নিম্নের সমস্যাবানী ($exception_type$):\n\n$error_message$"
 
 #: source/resource/conn_shared_res.src#STR_TYPE_NOT_CONVERT.String.Text
 #, fuzzy
@@ -430,12 +446,14 @@ msgid  "Could not create view: no command object."
 msgstr "ভিউ তৈরি করা যায়নি: কোনো কমান্ড অবজেক্ট নেই।"
 
 #: source/resource/conn_shared_res.src#STR_NO_CONNECTION.String.Text
+#, fuzzy
 msgid  "The connection could not be created. May be the necessary data provider is not installed."
-msgstr ""
+msgstr "সংযোগটি তৈরি করা যাবেনা। সম্ভবত প্রয়োজনীয় উপাত্ত সরবরাহকারী সংস্থাপিত নেই।"
 
 #: source/resource/conn_shared_res.src#STR_COULD_NOT_DELETE_INDEX.String.Text
+#, fuzzy
 msgid  "The index could not be deleted. An unknown error while accessing the file system occured."
-msgstr ""
+msgstr "সূচীটি মুছে ফেলা যায়নি। ফাইল সিস্টেমে প্রবেশের সময় একটি অজানা সমস্যা হয়েছে।"
 
 #: source/resource/conn_shared_res.src#STR_ONL_ONE_COLUMN_PER_INDEX.String.Text
 #, fuzzy
@@ -453,8 +471,9 @@ msgid  "The index could not be created. An unknown error appeared."
 msgstr "সূচীটি তৈরি করা যায়নি। একটি অজানা সমস্যা হয়েছে।"
 
 #: source/resource/conn_shared_res.src#STR_COULD_NOT_CREATE_INDEX_NAME.String.Text
+#, fuzzy
 msgid  "The index could not be created. The file '$filename$' is used by an other index."
-msgstr ""
+msgstr "সূচীটি তৈরি করা যায়নি। '$filename$' ফাইলটি অন্য একটি সূচী দ্বারা ব্যবহৃত হচ্ছে।"
 
 #: source/resource/conn_shared_res.src#STR_COULD_NOT_CREATE_INDEX_KEYSIZE.String.Text
 msgid  "The index could not be created. The size of the chosen column is to big."
@@ -496,28 +515,34 @@ msgid  "Duplicate value found in column '$columnname$'."
 msgstr "'$columnname$' কলামে একই মান একাধিকবার পাওয়া গিয়েছে।"
 
 #: source/resource/conn_shared_res.src#STR_INVALID_COLUMN_DECIMAL_VALUE.String.Text
-msgid  "The '$columnname$' column has been defined as a "Decimal" type, the max. length is $precision$ characters (with $scale$ decimal places).\n\nThe specified value "$value$ is longer than the number of digits allowed."
-msgstr ""
+#, fuzzy
+msgid  "The '$columnname$' column has been defined as a \"Decimal\" type, the max. length is $precision$ characters (with $scale$ decimal places).\n\nThe specified value \"$value$ is longer than the number of digits allowed."
+msgstr "'$columnname$' স্তম্ভ \"দশমিক\" ধরণ হিসেবে সংজ্ঞায়িত করা হয়েছে, সর্ব্বোচ্য দৈর্ঘ্য হলো $precision$ বর্ণচিহ্নসমূহ ($scale$ দশমিক স্থানসমূহ সহ)।\n\nসুনির্দিষ্ট মান \"$value$ অনুমোদিত অঙ্ক সংখ্যার চেয়ে লম্বা।"
 
 #: source/resource/conn_shared_res.src#STR_COLUMN_NOT_ALTERABLE.String.Text
+#, fuzzy
 msgid  "The column '$columnname$' could not be altered. May be the file system is write protected."
-msgstr ""
+msgstr "'$columnname$' স্তম্ভটি পরিবর্তন করা যায়নি। সম্ভবত ফাইল সিস্টেমটি অলেখনযোগ্য।"
 
 #: source/resource/conn_shared_res.src#STR_INVALID_COLUMN_VALUE.String.Text
+#, fuzzy
 msgid  "The column '$columnname$' could not be updated. The value is invalid for that column."
-msgstr ""
+msgstr "'$columnname$' স্তম্ভটি হালনাগাদ করা যায়নি। স্তম্ভের মানটি অবৈধ।"
 
 #: source/resource/conn_shared_res.src#STR_COLUMN_NOT_ADDABLE.String.Text
+#, fuzzy
 msgid  "The column '$columnname$' could not be added. May be the file system is write protected."
-msgstr ""
+msgstr "'$columnname$' স্তম্ভটি যোগ করা যায়নি। সম্ভবত ফাইল সিস্টেমটি অলেখনযোগ্য।"
 
 #: source/resource/conn_shared_res.src#STR_COLUMN_NOT_DROP.String.Text
+#, fuzzy
 msgid  "The column at position '$position$' could not be dropped. May be the file system is write protected."
-msgstr ""
+msgstr "'$position$' অবস্থানের স্তম্ভটি বাদ দেয়া যায়নি। সম্ভবত ফাইল সিস্টেমটি অলেখনযোগ্য।"
 
 #: source/resource/conn_shared_res.src#STR_TABLE_NOT_DROP.String.Text
+#, fuzzy
 msgid  "The table '$tablename$' could not be dropped. May be the file system is write protected."
-msgstr ""
+msgstr "'$tablename$' টেবিলটি ড্রপ করা যায়নি। সম্ভবত ফাইল সিস্টেমটি অলেখনযোগ্য।"
 
 #: source/resource/conn_shared_res.src#STR_COULD_NOT_ALTER_TABLE.String.Text
 #, fuzzy
@@ -538,8 +563,9 @@ msgid  "Can only sort by table columns."
 msgstr ""
 
 #: source/resource/conn_shared_res.src#STR_QUERY_COMPLEX_COUNT.String.Text
-msgid  "The query can not be executed. It is too complex. Only "COUNT(*)" is supported."
-msgstr ""
+#, fuzzy
+msgid  "The query can not be executed. It is too complex. Only \"COUNT(*)\" is supported."
+msgstr "জিজ্ঞাসাটি বাস্তবায়ন করা যায়নি। এটি অত্যন্ত জটিল। শুধুমাত্র \"COUNT(*)\" সমর্থিত।"
 
 #: source/resource/conn_shared_res.src#STR_QUERY_INVALID_BETWEEN.String.Text
 #, fuzzy
@@ -557,8 +583,9 @@ msgid  "The table can not be changed. It is read only."
 msgstr "টেবিলটি পরিবর্তন করা যায়নি। এটি শুধুমাত্র পাঠযোগ্য।"
 
 #: source/resource/conn_shared_res.src#STR_DELETE_ROW.String.Text
-msgid  "The row could not be deleted. The option "Display inactive records" is set."
-msgstr ""
+#, fuzzy
+msgid  "The row could not be deleted. The option \"Display inactive records\" is set."
+msgstr "সারি-টি মোছা যায়নি। \"নিষ্ক্রিয় রেকর্ডসমূহ প্রদর্শন করুন\" পছন্দটি নির্ধারণ করা আছে।"
 
 #: source/resource/conn_shared_res.src#STR_ROW_ALREADY_DELETED.String.Text
 #, fuzzy
@@ -596,8 +623,9 @@ msgid  "The driver class '$classname$' could not be loaded."
 msgstr "'$classname$' ড্রাইভার ক্লাসটি লোড করা যায়নি।"
 
 #: source/resource/conn_shared_res.src#STR_NO_JAVA.String.Text
+#, fuzzy
 msgid  "No Java installation could be found. Please check your installation."
-msgstr ""
+msgstr "কোনো জাভা সংস্থাপন পাওয়া যায়নি। অনুগ্রহ করে আপনার সংস্থাপনটি পরীক্ষা করুন।"
 
 #: source/resource/conn_shared_res.src#STR_NO_RESULTSET.String.Text
 #, fuzzy
@@ -630,16 +658,19 @@ msgid  "No suitable KDE installation was found."
 msgstr "কোনো উপযুক্ত KDE সংস্থাপন পাওয়া যায়নি।"
 
 #: source/resource/conn_shared_res.src#STR_KDE_VERSION_TOO_OLD.String.Text
+#, fuzzy
 msgid  "KDE version $major$.$minor$ or higher is required to access the KDE Address Book."
-msgstr ""
+msgstr "KDE ঠিকানার বই ব্যবহার করার জন্য KDE ভার্সন $major$.$minor$ বা আরো উচ্চ সংষ্করণ প্রয়োজন।"
 
 #: source/resource/conn_shared_res.src#STR_KDE_VERSION_TOO_NEW.String.Text
+#, fuzzy
 msgid  "The found KDE version is too new. Only KDE up to version $major$.$minor$ is known to work with this product.\n"
-msgstr ""
+msgstr "প্রাপ্ত KDE সংষ্করণটি একদম নতুন। শুধুমাত্র KDE সংষ্করণ $major$.$minor$ পর্যন্ত এই প্রডাক্টের সাথে কাজ করতে পারে।\n"
 
 #: source/resource/conn_shared_res.src#STR_KDE_VERSION_TOO_NEW_WORK_AROUND.String.Text
+#, fuzzy
 msgid  "If you are sure that your KDE version works, you might execute the following Basic macro to disable this version check:\n\n"
-msgstr ""
+msgstr "আপনি যদি নিশ্চিত হন যে আপনার KDE সংষ্করণ কাজ করে, তাহলে এই সংষ্করণটি পরীক্ষাটি নিস্ক্রিয় করতে আপনি নিম্নের বেসিক ম্যাক্রোটি কার্যকর করতে পারেন:\n\n"
 
 #: source/resource/conn_shared_res.src#STR_PARA_ONLY_PREPARED.String.Text
 #, fuzzy
@@ -657,20 +688,24 @@ msgid  "No suitable Mac OS installation was found."
 msgstr "কোনো উপযুক্ত ম্যাক অপারেটিং সিস্টেম সংস্থাপনন পাওয়া যায়নি।"
 
 #: source/resource/conn_shared_res.src#STR_NO_DISK_SPACE.String.Text
+#, fuzzy
 msgid  "The database file '$filename$' could not be created. Please check your disk space."
-msgstr ""
+msgstr "'$filename$' উপাত্তধার ফাইলটি তৈরি করা যায়নি। অনুগ্রহ করে আপনার ডিস্ক স্পেস পরীক্ষা করুন।"
 
 #: source/resource/conn_shared_res.src#STR_COMMAND_NOT_FOUND.String.Text
+#, fuzzy
 msgid  "The database '$databasename$' could not be started because the command '$progname$' could not be executed."
-msgstr ""
+msgstr "'$databasename$' উপাত্তধারটি শুরু করা যায়নি কারন '$progname$' আদেশটি কার্যকর করা যায়নি।"
 
 #: source/resource/conn_shared_res.src#STR_DATABASE_NEEDS_CONVERTING.String.Text
+#, fuzzy
 msgid  "The current database need to be converted. Please insert control user  and password."
-msgstr ""
+msgstr "বর্তমান উপাত্তধারটি পরিবর্তন করা দরকার। অনুগ্রহ করে নিয়ন্ত্রন ব্যবহারকারী এবং গুপ্তসংকেত দিন।"
 
 #: source/resource/conn_shared_res.src#STR_USER_NO_DELETE.String.Text
+#, fuzzy
 msgid  "This user couldn't be deleted. Otherwise the database stays in a inconsistent state."
-msgstr ""
+msgstr "এই ব্যবহারকারীকে মুছে ফেলা যাবে না। অন্যথায় উপাত্তধারটি একটি ভাসমান অবস্থায় পদার্পন করবে।"
 
 #: source/resource/conn_shared_res.src#STR_NO_STROAGE.String.Text
 #, fuzzy
@@ -678,8 +713,9 @@ msgid  "The connection can not be established. No storage or URL was given."
 msgstr "সংযোগ তৈরি করা সম্ভব নয়। কোনো স্টোরেজ বা URL দেয়া ছিলো না।"
 
 #: source/resource/conn_shared_res.src#STR_INVALID_FILE_URL.String.Text
+#, fuzzy
 msgid  "The given URL contains no valid local file system path. Please check the location of your database file."
-msgstr ""
+msgstr "URL টি কোনো বৈধ স্থানীয় ফাইল সিস্টেম পথ ধারন করে না। অনুগ্রহ করে আপনার উপাত্তধার ফাইলের অবস্থান পরীক্ষা করুন।"
 
 #: source/resource/conn_shared_res.src#STR_NO_TABLE_CONTAINER.String.Text
 #, fuzzy
@@ -702,32 +738,26 @@ msgid  "The provided DocumentUI is not allowed to be NULL."
 msgstr "নথি UI টি শূন্য থাকার জন্য অনুমোদিত নয়।"
 
 #: source/resource/conn_error_message.src#256 + 2*100 + 0.String.Text
-#, fuzzy
 msgid  "The record operation has been vetoed."
 msgstr "রেকর্ড অপারেশনটিকে ভেটো দেয়া হয়েছে।"
 
 #: source/resource/conn_error_message.src#256 + 2*200 + 0.String.Text
-#, fuzzy
 msgid  "The statement contains a cyclic reference to one or more sub queries."
 msgstr "বিবরনটি এক বা একাধিক উপ জিজ্ঞাসার একটি সাইক্লিক প্রসঙ্গতি ব্যবহার করে।"
 
 #: source/resource/conn_error_message.src#256 + 2*300 + 0.String.Text
-#, fuzzy
 msgid  "The name must not contain any slashes ('/')."
 msgstr "নামে কোনো স্ল্যাশ থাকতে পারবে না ('/')।"
 
 #: source/resource/conn_error_message.src#256 + 2*301 + 0.String.Text
-#, fuzzy
 msgid  "$1$ is no SQL conform identifier."
 msgstr "$1$ SQL বর্নিত কোনো পরিচায়ক নয়।"
 
 #: source/resource/conn_error_message.src#256 + 2*302 + 0.String.Text
-#, fuzzy
 msgid  "Query names must not contain quote characters."
 msgstr "জিজ্ঞাসার নামে কোনো  উদৃতি (') বর্নচিহ্ন থাকতে পারবে না।"
 
 #: source/resource/conn_error_message.src#256 + 2*303 + 0.String.Text
-#, fuzzy
 msgid  "The name '$1$' is already in use in the database."
 msgstr "'$1$' নামটি উপাত্ত ভান্ডারে বর্তমানে ব্যবহৃত হচ্ছে।"
 
@@ -741,16 +771,4 @@ msgstr ""
 
 #: source/resource/conn_error_message.src#256 + 2*550 + 0.String.Text
 msgid  "Unable to display the complete table content. Please apply a filter."
-msgstr ""
-
-#: source/drivers/mozab/mozab2.xcu#.Drivers.Installed.sdbc:address:mozilla:.DriverTypeDisplayName
-msgid  "SeaMonkey Address Book"
-msgstr ""
-
-#: source/drivers/mozab/mozab2.xcu#.Drivers.Installed.sdbc:address:thunderbird:.DriverTypeDisplayName
-msgid  "Thunderbird Address Book"
-msgstr ""
-
-#: source/drivers/mozab/mozab2.xcu#.Drivers.Installed.sdbc:address:ldap:*.DriverTypeDisplayName
-msgid  "LDAP Address Book"
 msgstr ""

@@ -97,7 +97,7 @@ msgstr "Дакумент ужо адкрыты."
 
 #: source/appl/app.src#MSG_ERR_NO_WEBBROWSER_FOUND.ErrorBox.Message
 msgid  "%PRODUCTNAME could not find a web browser on your system. Please check your Desktop Preferences or install a web browser (for example, Mozilla) in the default  location requested during the browser installation."
-msgstr ""
+msgstr "%PRODUCTNAME не ўдалося знайсці ў вашай сістэме сеціўнага браўзера. Спраўдзіце настаўленні вашага Сістэмнага Працоўнага стала або ўстанавіце браўзер (напрыклад, Mozilla) у тым месцы, якое прапануе Інсталятар браўзера."
 
 #: source/appl/app.src#GID_INTERN.String.Text
 msgid  "Internal"
@@ -205,7 +205,7 @@ msgstr "Кантрольнікі"
 
 #: source/appl/app.src#MSG_CANT_QUIT.InfoBox.Message
 msgid  "The application cannot be terminated at the moment.\nPlease wait until all print jobs and/or\nOLE actions have finished and close all dialogs."
-msgstr ""
+msgstr "Спыніць праграму зараз немагчыма.\nПачакайце сканчэння ўсіх друкаванняў і/або\nаперацый OLE і закрыйце ўсе дыялогі."
 
 #: source/appl/app.src#STR_ISMODIFIED.String.Text
 msgid  "Do you want to save the changes to %1?"
@@ -237,7 +237,7 @@ msgstr "Стужка функцый"
 
 #: source/appl/app.src#RID_SPECIALCONFIG_ERROR.String.Text
 msgid  "An error has occurred in the special configuration.\nPlease contact your administrator."
-msgstr ""
+msgstr "Памылка пры апрацоўванні спецыяльных настаўленняў.\nЗвярніцеся да вашага адміністратара."
 
 #: source/appl/app.src#STR_QUICKSTART_EXIT.String.Text
 msgid  "Exit Quickstarter"
@@ -288,12 +288,12 @@ msgid  "DDE link to % for % area % are not available."
 msgstr "Няма ў наяўнасці DDE спасылкі з мэтаю % дзеля % абсяг %."
 
 #: source/appl/app.src#RID_SECURITY_WARNING_HYPERLINK.WarningBox.Message
-msgid  "This hyperlink is going to open "%s". Do you want to proceed?"
-msgstr ""
+msgid  "This hyperlink is going to open \"%s\". Do you want to proceed?"
+msgstr "Гэта сеціўная спасылка адкрые \"%s\". Ці жадаеце працягваць?"
 
 #: source/appl/app.src#RID_SECURITY_WARNING_NO_HYPERLINKS.WarningBox.Message
 msgid  "For security reasons, the hyperlink cannot be executed.\nThe stated address will not be opened."
-msgstr ""
+msgstr "Немагчыма выканаць мэту гэтай сеціўнай спасылкі з меркаванняў бяспекі.\nАзначаны адрас не будзе адкрыты."
 
 #: source/appl/app.src#RID_SECURITY_WARNING_TITLE.String.Text
 msgid  "Security Warning"
@@ -301,15 +301,15 @@ msgstr "Папярэджанне пра бяспеку"
 
 #: source/appl/app.src#RID_XMLSEC_QUERY_LOSINGSIGNATURE.QueryBox.Message
 msgid  "Saving will remove all existing signatures.\nDo you want to continue saving the document?"
-msgstr ""
+msgstr "Пасля запісу ўсе наяўныя сігнатуры* знікнуць.\nДык ці жадаеце працягваць запіс дакументу?"
 
 #: source/appl/app.src#RID_XMLSEC_QUERY_SAVEBEFORESIGN.QueryBox.Message
 msgid  "The document has to be saved before it can be signed.\nDo you want to save the document?"
-msgstr ""
+msgstr "Належыць запісаць дакумент перад яго лічбавым падпісваннем.\nЦі хочаце запісаць дакумент?"
 
 #: source/appl/app.src#RID_XMLSEC_INFO_WRONGDOCFORMAT.InfoBox.Message
 msgid  "This document must be saved in OpenDocument file format before it can be digitally signed."
-msgstr ""
+msgstr "Належыць спачатку запісаць гэты дакумент у фармаце OpenDocument, каб можна было падпісаць яго лічбавым подпісам."
 
 #: source/appl/app.src#RID_XMLSEC_DOCUMENTSIGNED.String.Text
 msgid  " (Signed)"
@@ -509,11 +509,11 @@ msgstr "Паказваць Даведку %PRODUCTNAME %MODULENAME пры ста
 
 #: source/bastyp/fltfnc.src#STR_FILTER_NOT_INSTALLED.String.Text
 msgid  "The selected filter $(FILTER) has not been installed.\nWould you like to do this now?"
-msgstr ""
+msgstr "Вызначаны фільтр $(FILTER) не ўстаноўлены.\nЦі жадаеце зрабіць гэта зараз?"
 
 #: source/bastyp/fltfnc.src#STR_FILTER_CONSULT_SERVICE.String.Text
 msgid  "The selected filter $(FILTER) is not included in your edition.\nYou can find information about orders on our homepage."
-msgstr ""
+msgstr "Вызначаны фільтр $(FILTER) не ўлучаны ў ваш варыянт прадукта.\nВы можаце знайсці інфармацыю пра замовы на нашай пляцоўцы ў Сеціве."
 
 #: source/dialog/printopt.src#TP_COMMONPRINTOPTIONS.GB_REDUCE.FixedLine.Text
 msgid  "Reduce print data"
@@ -572,6 +572,26 @@ msgid  "Reso~lution"
 msgstr "Разрозненне"
 
 #: source/dialog/printopt.src#TP_COMMONPRINTOPTIONS.LB_REDUCEBITMAPS_RESOLUTION.0.StringList.item
+msgid  "72 DPI"
+msgstr "72 DPI"
+
+#: source/dialog/printopt.src#TP_COMMONPRINTOPTIONS.LB_REDUCEBITMAPS_RESOLUTION.0.StringList.item
+msgid  "96 DPI"
+msgstr "96 DPI"
+
+#: source/dialog/printopt.src#TP_COMMONPRINTOPTIONS.LB_REDUCEBITMAPS_RESOLUTION.0.StringList.item
+msgid  "150 DPI (Fax)"
+msgstr "150 DPI (як у факсе)"
+
+#: source/dialog/printopt.src#TP_COMMONPRINTOPTIONS.LB_REDUCEBITMAPS_RESOLUTION.0.StringList.item
+msgid  "200 DPI (default)"
+msgstr "200 DPI (прадвызнач.)"
+
+#: source/dialog/printopt.src#TP_COMMONPRINTOPTIONS.LB_REDUCEBITMAPS_RESOLUTION.0.StringList.item
+msgid  "300 DPI"
+msgstr "300 DPI"
+
+#: source/dialog/printopt.src#TP_COMMONPRINTOPTIONS.LB_REDUCEBITMAPS_RESOLUTION.0.StringList.item
 msgid  "600 DPI"
 msgstr "600 DPI"
 
@@ -605,7 +625,7 @@ msgstr "Папярэджанне"
 
 #: source/dialog/printopt.src#RID_WARN_PRINTTRANSPARENCY.FT_PRINTTRANSWARN.FixedText.Text
 msgid  "Your document contains transparent objects.\nThis may lead to longer printing time on certain\nprinters. Should the aspect of transparency\nbe reduced?"
-msgstr ""
+msgstr "У гэтым дакуменце ёсць празрыстыя аб'екты.\nНа некаторых прынтэрах гэта друкуецца больш павольна.\nЦі трэба скараціць аб'ём апісання празрыстасці?"
 
 #: source/dialog/printopt.src#RID_WARN_PRINTTRANSPARENCY.BTN_PRINTTRANS_YES.OKButton.Text
 msgid  "~Yes"
@@ -622,26 +642,6 @@ msgstr "Нічога"
 #: source/dialog/printopt.src#RID_WARN_PRINTTRANSPARENCY.CBX_NOPRINTTRANSWARN.CheckBox.Text
 msgid  "~Do not show warning again"
 msgstr "Не папярэджваць пра гэта"
-
-#: source/dialog/printopt.src#TP_COMMONPRINTOPTIONS.LB_REDUCEBITMAPS_RESOLUTION.0.StringList.item
-msgid  "72 DPI"
-msgstr "72 DPI"
-
-#: source/dialog/printopt.src#TP_COMMONPRINTOPTIONS.LB_REDUCEBITMAPS_RESOLUTION.0.StringList.item
-msgid  "96 DPI"
-msgstr "96 DPI"
-
-#: source/dialog/printopt.src#TP_COMMONPRINTOPTIONS.LB_REDUCEBITMAPS_RESOLUTION.0.StringList.item
-msgid  "150 DPI (Fax)"
-msgstr "150 DPI (як у факсе)"
-
-#: source/dialog/printopt.src#TP_COMMONPRINTOPTIONS.LB_REDUCEBITMAPS_RESOLUTION.0.StringList.item
-msgid  "200 DPI (default)"
-msgstr "200 DPI (прадвызнач.)"
-
-#: source/dialog/printopt.src#TP_COMMONPRINTOPTIONS.LB_REDUCEBITMAPS_RESOLUTION.0.StringList.item
-msgid  "300 DPI"
-msgstr "300 DPI"
 
 #: source/dialog/templdlg.src#RID_STYLECATALOG.ModalDialog.Text
 msgid  "Style Catalog"
@@ -1116,8 +1116,8 @@ msgid  "to frame"
 msgstr "да рамкі"
 
 #: source/dialog/dinfdlg.src#TP_DOCINFORELOAD.STR_FORWARD_ERRMSSG.String.Text
-msgid  "If you select the option "%PLACEHOLDER%", you must enter a URL."
-msgstr ""
+msgid  "If you select the option \"%PLACEHOLDER%\", you must enter a URL."
+msgstr "Калі вы абіраеце магчымасць \"%PLACEHOLDER%\", то належыць падаць і URL."
 
 #: source/dialog/dinfdlg.src#TP_CUSTOMPROPERTIES.FT_PROPERTIES.FixedText.Text
 msgid  "~Properties"
@@ -1397,7 +1397,7 @@ msgstr "Запісаць макрас"
 
 #: source/dialog/recfloat.src#STR_MACRO_LOSS.String.Text
 msgid  "Do you really want to cancel the recording? Any steps recorded up to this point will be lost."
-msgstr ""
+msgstr "Сапраўды адмовіцца ад занатоўвання? Усё, што было занатавана дагэтуль, будзе страчана."
 
 #: source/dialog/recfloat.src#STR_CANCEL_RECORDING.String.Text
 msgid  "Cancel Recording"
@@ -1405,7 +1405,7 @@ msgstr "Адмовіцца ад запісу"
 
 #: source/dialog/mailwindow.src#RID_ERRBOX_MAIL_CONFIG.ErrorBox.MESSAGE
 msgid  "%PRODUCTNAME was unable to find a working e-mail configuration. Please save this document locally instead and attach it from within your e-mail client."
-msgstr ""
+msgstr "%PRODUCTNAME не ўдалося знайсці актыўных настаўленняў эл.пошты. Паспрабуйце запісаць гэты дакумент у асобны файл і адаслаць гэты файл праз паштовую праграму."
 
 #: source/dialog/dialog.src#STR_RESET.String.Text
 msgid  "~Reset"
@@ -1429,11 +1429,11 @@ msgstr "Гэты стыль не існуе."
 
 #: source/dialog/dialog.src#MSG_TABPAGE_INVALIDPARENT.InfoBox.Message
 msgid  "This Style cannot be used as a base Style,\nbecause it would result in a recursive reference."
-msgstr ""
+msgstr "Гэты стыль нельга прызначыць базавым стылем,\nтаму што гэта ўтварае рэкурсіўную спасылку (само на сябе)."
 
 #: source/dialog/dialog.src#MSG_POOL_STYLE_NAME.InfoBox.Message
 msgid  "Name already exists as a default Style.\nPlease choose another name."
-msgstr ""
+msgstr "Стыль з такою назвай ужо існуе як прадвызначаны.\nВыберыце іншую назву."
 
 #: source/dialog/dialog.src#STR_DELETE_STYLE.String.Text
 msgid  "Do you really want to delete Style $1?"
@@ -1489,7 +1489,7 @@ msgstr "Задачы"
 
 #: source/dialog/alienwarn.src#RID_DLG_ALIEN_WARNING.FT_INFOTEXT.FixedText.Text
 msgid  "This document may contain formatting or content that cannot be saved in the %FORMATNAME file format. Do you want to save the document in this format anyway?\n\nUse the latest ODF file format and be sure all formatting and content is saved correctly."
-msgstr ""
+msgstr "Дакумент можа ўтрымліваць змесціва ці афармленне, якія немагчыма запісаць у фармаце файла %FORMATNAME. Дык ці будзеце запісваць дакумент у гэтым фармаце?\n\nСамы новы фармат ODF напэўна правільна захавае ўсё фарматаванне і змест."
 
 #: source/dialog/alienwarn.src#RID_DLG_ALIEN_WARNING.PB_NO.OKButton.Text
 msgid  "~Keep Current Format"
@@ -1581,27 +1581,27 @@ msgstr "Распараднік..."
 
 #: source/doc/doc.src#MSG_CONFIRM_FILTER.QueryBox.Message
 msgid  "Saving in external formats may have caused\n information loss. Do you still want to close?"
-msgstr ""
+msgstr "Пры запісванні ў вонкавых фарматах\nмагла згубіцца частка інфармацыі. Дык ці закрываць файл?"
 
 #: source/doc/doc.src#MSG_CONFIRM_OVERWRITE_TEMPLATE.QueryBox.Message
 msgid  "Name already in use.\nDo you want to overwrite document template?"
-msgstr ""
+msgstr "Назва ўжо занята.\nЦі хочаце запісаць паўзверх прысутнага шаблону дакумента?"
 
 #: source/doc/doc.src#STR_DELETE_REGION.String.Text
-msgid  "Are you sure you want to delete the region "$1"?"
-msgstr ""
+msgid  "Are you sure you want to delete the region \"$1\"?"
+msgstr "Сапраўды сцерці абсяг \"$1\"?"
 
 #: source/doc/doc.src#STR_DELETE_TEMPLATE.String.Text
-msgid  "Are you sure you want to delete the entry "$1"?"
-msgstr ""
+msgid  "Are you sure you want to delete the entry \"$1\"?"
+msgstr "Сапраўды сцерці складнік \"$1\"?"
 
 #: source/doc/doc.src#MSG_REGION_NOTEMPTY.QueryBox.Message
 msgid  "The category is not empty.\nDelete anyway?"
-msgstr ""
+msgstr "Гэтая катэгорыя не пустая.\nДык ці трэба сціраць?"
 
 #: source/doc/doc.src#STR_QUERY_SAVE_DOCUMENT.String.Text
-msgid  "The document "$(DOC)" has been modified.\nDo you want to save your changes?"
-msgstr ""
+msgid  "The document \"$(DOC)\" has been modified.\nDo you want to save your changes?"
+msgstr "Дакумент \"$(DOC)\" быў зменены.\nЦі хочаце замацаваць гэтыя змены?"
 
 #: source/doc/doc.src#STR_STYLES.String.Text
 msgid  "Styles"
@@ -1648,16 +1648,16 @@ msgid  "Templates"
 msgstr "Шаблоны"
 
 #: source/doc/doc.src#STR_ERROR_COPY_TEMPLATE.String.Text
-msgid  "Error copying template "$1". \nA template with this name may already exist."
-msgstr ""
+msgid  "Error copying template \"$1\". \nA template with this name may already exist."
+msgstr "Памылка пры капіраванні шаблону \"$1\". \nМагчыма, ужо існуе шаблон з такою назвай."
 
 #: source/doc/doc.src#STR_ERROR_DELETE_TEMPLATE.String.Text
-msgid  "The template "$1" can not be deleted."
-msgstr ""
+msgid  "The template \"$1\" can not be deleted."
+msgstr "Немагчыма сцерці шаблон \"$1\"."
 
 #: source/doc/doc.src#STR_ERROR_MOVE_TEMPLATE.String.Text
-msgid  "Error moving template "$1"."
-msgstr ""
+msgid  "Error moving template \"$1\"."
+msgstr "Памылка пры перамяшчэнні шаблону \"$1\"."
 
 #: source/doc/doc.src#MSG_ERROR_RESCAN.ErrorBox.Message
 msgid  "The update could not be saved."
@@ -1681,11 +1681,11 @@ msgstr "Вызначце назву."
 
 #: source/doc/doc.src#MSG_ERROR_UNIQ_NAME.ErrorBox.Message
 msgid  "Please specify a unique name.\nEntries must not be case specific."
-msgstr ""
+msgstr "Вызначце ўнікальную назву.\nНазвы не могуць адрознівацца толькі вялікімі/малымі літарамі."
 
 #: source/doc/doc.src#STR_QUERY_DEFAULT_TEMPLATE.String.Text
-msgid  "Should the template "$(TEXT)" become the default template?"
-msgstr ""
+msgid  "Should the template \"$(TEXT)\" become the default template?"
+msgstr "Ці зрабіць шаблон \"$(TEXT)\" прадвызначаным шаблонам?"
 
 #: source/doc/doc.src#MSG_QUERY_RESET_DEFAULT_TEMPLATE.QueryBox.Message
 msgid  "Do you want to reset the default template?"
@@ -1693,7 +1693,7 @@ msgstr "Ці хочаце вярнуцца да пачатковага прад�
 
 #: source/doc/doc.src#MSG_TEMPLATE_DIR_NOT_EXIST.InfoBox.Message
 msgid  "Template directory\n$(DIR)\ndoes not exist."
-msgstr ""
+msgstr "Каталог шаблонаў\n$(DIR)\nне існуе."
 
 #: source/doc/doc.src#MSG_DOCINFO_CANTREAD.InfoBox.Message
 msgid  "Document info cannot be read."
@@ -1705,7 +1705,7 @@ msgstr "Фармат абранага файлу няправільны."
 
 #: source/doc/doc.src#STR_QUERY_MUSTOWNFORMAT.String.Text
 msgid  "Documents cannot be saved in $(FORMAT) format. Do you\nwant to save your changes using the $(OWNFORMAT) format?"
-msgstr ""
+msgstr "Немагчыма запісваць дакументы ў фармаце $(FORMAT).\nЦі хочаце замацаваць вашы змены ў фармаце $(OWNFORMAT)?"
 
 #: source/doc/doc.src#STR_SAVEDOC.String.Text
 msgid  "~Save"
@@ -1744,8 +1744,8 @@ msgid  "%PRODUCTNAME Basic libraries"
 msgstr "Бібліятэкі Бэйсіка %PRODUCTNAME"
 
 #: source/doc/doc.src#RID_STR_WARNSTYLEOVERWRITE.String.Text
-msgid  "Should the "$(ARG1)" Style be replaced?"
-msgstr ""
+msgid  "Should the \"$(ARG1)\" Style be replaced?"
+msgstr "Ці замяняць стыль \"$(ARG1)\"?"
 
 #: source/doc/doc.src#STR_DOC_LOADING.String.Text
 msgid  "Loading Document"
@@ -1769,7 +1769,7 @@ msgstr "Адлучана"
 
 #: source/doc/doc.src#MSG_OPEN_READONLY.QueryBox.Message
 msgid  "Document cannot be opened for editing.\nDo you want to open it as read-only?"
-msgstr ""
+msgstr "Немагчыма рэдагаваць гэты дакумент.\nЦі жадаеце адкрыць яго толькі-для-чытання?"
 
 #: source/doc/doc.src#STR_EDIT.String.Text
 msgid  "Edit"
@@ -1792,12 +1792,12 @@ msgid  "%PRODUCTNAME Frame Document"
 msgstr "Дакумент (рамка) %PRODUCTNAME"
 
 #: source/doc/doc.src#STR_TEMPL_MOVED.String.Text
-msgid  "The template "$(TEMPLATE)" was not found at the original location. A template with the same name exists at "$(FOUND)". Should this template be used in the future when comparing?"
-msgstr ""
+msgid  "The template \"$(TEMPLATE)\" was not found at the original location. A template with the same name exists at \"$(FOUND)\". Should this template be used in the future when comparing?"
+msgstr "Шаблон: \"$(TEMPLATE)\" не знойдзены ў пачатковым месцы. Шаблон з такою назвай знойдзены ў \"$(FOUND)\". Ці надалей ужываць менавіта гэты шаблон дзеля параўнання?"
 
 #: source/doc/doc.src#STR_TEMPL_RESET.String.Text
-msgid  "The template "$(TEMPLATE)" has not been found. Should the template be looked for the next time the document is opened ?"
-msgstr ""
+msgid  "The template \"$(TEMPLATE)\" has not been found. Should the template be looked for the next time the document is opened ?"
+msgstr "Шаблон \"$(TEMPLATE)\" не быў знойдзены. Ці трэба шукаць яго пры наступным адкрыванні дакументу?"
 
 #: source/doc/doc.src#STR_AUTOMATICVERSION.String.Text
 msgid  "Automatically saved version"
@@ -1865,7 +1865,7 @@ msgstr "Не выконваць"
 
 #: source/doc/doc.src#FT_CANCEL.String.Text
 msgid  "According to the security settings, the macros in this document should not be run. Do you want to run them anyway?"
-msgstr ""
+msgstr "Паводле настаўленняў бяспекі, макрасы з гэтага дакумента не належыць выконваць. Дык ці выконваць макрасы?"
 
 #: source/doc/doc.src#FT_OK.String.Text
 msgid  "Do you want to allow these macros to be run?"
@@ -1893,7 +1893,7 @@ msgstr "Фармат файла:"
 
 #: source/doc/doc.src#STR_HIDDENINFO_CONTAINS.String.Text
 msgid  "This document contains:\n\n"
-msgstr ""
+msgstr "Дакумент утрымлівае:\n\n"
 
 #: source/doc/doc.src#STR_HIDDENINFO_RECORDCHANGES.String.Text
 msgid  "Recorded changes"
@@ -1933,11 +1933,11 @@ msgstr "Ці хочаце працягваць стварэнне файлу PDF
 
 #: source/doc/doc.src#STR_NEW_FILENAME_SAVE.String.Text
 msgid  "If you do not want to overwrite the original document, you should save your work under a new filename."
-msgstr ""
+msgstr "Калі вы не жадаеце страціць арыгінальнае змесціва дакумента, то запішыце сваю працу ў файл з іншай назвай."
 
 #: source/doc/doc.src#STR_ERROR_DELETE_TEMPLATE_DIR.String.Text
 msgid  "Some template files are protected and can not be deleted."
-msgstr ""
+msgstr "Немагчыма сцерці некаторыя з файлаў шаблонаў, таму што яны засцерагаюцца."
 
 #: source/doc/doc.src#STR_DOCINFO_INFOFIELD.String.Text
 msgid  "Info %1"
@@ -1949,15 +1949,15 @@ msgstr " (супольна)"
 
 #: source/doc/doc.src#STR_XMLSEC_ODF12_EXPECTED.String.Text
 msgid  "The document format version is set to ODF 1.1 (OpenOffice.org 2.x) in Tools-Options-Load/Save-General. Signing documents requires ODF 1.2 (OpenOffice.org 3.x)."
-msgstr ""
+msgstr "Зараз версія фармату дакументаў пастаўлена на ODF 1.1 (OpenOffice.org 2.x) у пункце меню Прылады-Настаўленні-Чытанне і запіс-Агульнае. Падпісванне дакументаў патрабуе версіі ODF 1.2 (OpenOffice.org 3.x)."
 
 #: source/doc/doc.src#MSG_XMLSEC_QUERY_SAVESIGNEDBEFORESIGN.QueryBox.Message
 msgid  "The document has to be saved before it can be signed. Saving the document removes all present signatures.\nDo you want to save the document?"
-msgstr ""
+msgstr "Перад тым, як падпісваць дакумент, яго трэба запісаць. Запіс выдаліць усе наяўныя подпісы.\nЦі жадаеце запісаць дакумент?"
 
 #: source/doc/doc.src#STR_QRYTEMPL_MESSAGE.String.Text
 msgid  "The template '$(ARG1)' on which this document is based, has been modified. Do you want to update style based formattings according to the modified template?"
-msgstr ""
+msgstr "Шаблон '$(ARG1)', на якім асноўваецца гэты дакумент, быў зменены. Ці жадаеце абнавіць стылевае афармленне згодна са змяненнямі ў шаблоне?"
 
 #: source/doc/doc.src#STR_QRYTEMPL_UPDATE_BTN.String.Text
 msgid  "~Update Styles"
@@ -1984,8 +1984,16 @@ msgid  "~Address Book..."
 msgstr "Адрасная кніга..."
 
 #: source/doc/docvor.src#DLG_ORGANIZE.LB_LEFT_TYP.Default.StringList.item
+msgid  "Templates"
+msgstr "Шаблоны"
+
+#: source/doc/docvor.src#DLG_ORGANIZE.LB_LEFT_TYP.Default.StringList.item
 msgid  "Documents"
 msgstr "Дакументы"
+
+#: source/doc/docvor.src#DLG_ORGANIZE.LB_RIGHT_TYP.Default.StringList.item
+msgid  "Templates"
+msgstr "Шаблоны"
 
 #: source/doc/docvor.src#DLG_ORGANIZE.LB_RIGHT_TYP.Default.StringList.item
 msgid  "Documents"
@@ -2034,14 +2042,6 @@ msgstr "Зрабіць прадвызначаным шаблонам"
 #: source/doc/docvor.src#DLG_ORGANIZE.BTN_EDIT.ID_RESET_DEFAULT_TEMPLATE.MenuItem.Text
 msgid  "Reset Default Template"
 msgstr "Да пачатковага прадвызначанага шаблону"
-
-#: source/doc/docvor.src#DLG_ORGANIZE.LB_LEFT_TYP.Default.StringList.item
-msgid  "Templates"
-msgstr "Шаблоны"
-
-#: source/doc/docvor.src#DLG_ORGANIZE.LB_RIGHT_TYP.Default.StringList.item
-msgid  "Templates"
-msgstr "Шаблоны"
 
 #: source/doc/new.src#DLG_NEW_FILE.ModalDialog.Text
 msgid  "New"
@@ -2153,15 +2153,15 @@ msgstr ""
 
 #: source/view/view.src#STR_NODEFPRINTER.String.Text
 msgid  "No default printer found.\nPlease choose a printer and try again."
-msgstr ""
+msgstr "Няма прадвызначанага прынтэра\nПрызначце такі прынтэр і паспрабуйце нанова."
 
 #: source/view/view.src#STR_NOSTARTPRINTER.String.Text
 msgid  "Could not start printer.\nPlease check your printer configuration."
-msgstr ""
+msgstr "Не ўдалося пачаць працу з прынтэрам.\nСпраўдзіце настаўленні прынтэра."
 
 #: source/view/view.src#STR_PRINTER_NOTAVAIL.String.Text
 msgid  "This document has been formatted for the printer $1. The specified printer is not available. \nDo you want to use the standard printer $2 ?"
-msgstr ""
+msgstr "Гэты дакумент быў фарматаваны для прынтэра $1. Гэты прынтэр зараз недасягальны. \nЦі будзеце карыстацца прадвызначаным* прынтэрам $2 ?"
 
 #: source/view/view.src#STR_PRINT_OPTIONS.String.Text
 msgid  "Options..."
@@ -2187,33 +2187,41 @@ msgstr "Друкаванне"
 msgid  "Page "
 msgstr "Старонка "
 
+#: source/view/view.src#STR_ERROR_SAVE_TEMPLATE.String.Text
+msgid  "Error saving template "
+msgstr "Памылка пры запісванні шаблона"
+
 #: source/view/view.src#STR_READONLY.String.Text
 msgid  " (read-only)"
 msgstr " (толькі-чытанае)"
 
 #: source/view/view.src#STR_PRINT_NEWORI.String.Text
 msgid  "The page size and orientation have been modified.\nWould you like to save the new settings in the\nactive document?"
-msgstr ""
+msgstr "Фармат старонкі быў зменены.\nЦі хочаце запісаць новыя настаўленні ў\nактыўны дакумент?"
 
 #: source/view/view.src#STR_PRINT_NEWSIZE.String.Text
 msgid  "The page size has been modified.\nShould the new settings be saved\nin the active document?"
-msgstr ""
+msgstr "Памеры старонкі былі зменены.\nЦі хочаце запісаць новыя настаўленні ў\nактыўны дакумент?"
 
 #: source/view/view.src#STR_PRINT_NEWORISIZE.String.Text
 msgid  "The page size and orientation have been modified.\nWould you like to save the new settings in the\nactive document?"
-msgstr ""
+msgstr "Фармат старонкі быў зменены.\nЦі хочаце запісаць новыя настаўленні ў\nактыўны дакумент?"
 
 #: source/view/view.src#STR_PREVIEW_DOCINFO.String.Text
-msgid  "<html><body BGCOLOR="#c0c0c0"><font FACE="Arial"><dl><dt><b>Title:</b><dd>$(TITEL)<dt><b>Subject:</b><dd>$(THEME)<dt><b>Keywords:</b><dd>$(KEYWORDS)<dt><b>Description:</b><dd>$(TEXT)</dl></font></body></html>"
-msgstr ""
+msgid  "<html><body BGCOLOR=\"#c0c0c0\"><font FACE=\"Arial\"><dl><dt><b>Title:</b><dd>$(TITEL)<dt><b>Subject:</b><dd>$(THEME)<dt><b>Keywords:</b><dd>$(KEYWORDS)<dt><b>Description:</b><dd>$(TEXT)</dl></font></body></html>"
+msgstr "<html><body BGCOLOR=\"#c0c0c0\"><font FACE=\"Arial\"><dl><dt><b>Загаловак:</b><dd>$(TITEL)<dt><b>Тэма:</b><dd>$(THEME)<dt><b>Ключавыя словы:</b><dd>$(KEYWORDS)<dt><b>Тлумачэнне:</b><dd>$(TEXT)</dl></font></body></html>"
 
 #: source/view/view.src#STR_PREVIEW_NODOCINFO.String.Text
-msgid  "<HTML><BODY BGCOLOR="#c0c0c0"><BR><BR><P><FONT FACE="Arial"><B>No document properties found.</B></FONT></P></BODY></HTML>"
-msgstr ""
+msgid  "<HTML><BODY BGCOLOR=\"#c0c0c0\"><BR><BR><P><FONT FACE=\"Arial\"><B>No document properties found.</B></FONT></P></BODY></HTML>"
+msgstr "<HTML><BODY BGCOLOR=\"#c0c0c0\"><BR><BR><P><FONT FACE=\"Arial\"><B>Не знойдзеныя ўласцівасці дакумента.</B></FONT></P></BODY></HTML>"
 
 #: source/view/view.src#MSG_CANT_CLOSE.InfoBox.Message
 msgid  "The document cannot be closed because a\n print job is being carried out."
-msgstr ""
+msgstr "Нельга закрыць дакумент, таму што\nзараз ён друкуецца."
+
+#: source/view/view.src#DLG_PRINTMONITOR_TEXT.#define.Text
+msgid  "Print Monitor"
+msgstr "Манітор друкавання"
 
 #: source/view/view.src#DLG_PRINTMONITOR.FT_PRINTING.FixedText.Text
 msgid  "is being printed on"
@@ -2225,11 +2233,11 @@ msgstr "рыхтуецца да друку"
 
 #: source/view/view.src#MSG_ERROR_SEND_MAIL.InfoBox.Message
 msgid  "An error occurred in sending the message. Possible errors could be a missing user account or a defective setup.\nPlease check the %PRODUCTNAME settings or your e-mail program settings."
-msgstr ""
+msgstr "Памылка пры адсыланні паведамлення. Магчымыя прычыны - не вызначаны рахунак эл.пошты або настаўленні з'яўляюцца некарэктнымі.\nСпраўдзіце настаўленні %PRODUCTNAME або настаўленні вашай паштовай праграмы."
 
 #: source/view/view.src#MSG_QUERY_OPENASTEMPLATE.QueryBox.Message
 msgid  "This document cannot be edited, possibly due to missing access rights. Do you want to edit a copy of the document?"
-msgstr ""
+msgstr "Немагчыма правіць гэты дакумент, магчыма з-за недастатковых правоў доступу. Ці будзеце працаваць з копіяй дакумента?"
 
 #: source/view/view.src#STR_REPAIREDDOCUMENT.String.Text
 msgid  " (repaired document)"
@@ -2237,12 +2245,4 @@ msgstr " (адрамантаваны дакумент)"
 
 #: source/view/view.src#MSG_ERROR_NO_WEBBROWSER_FOUND.ErrorBox.Message
 msgid  "%PRODUCTNAME could not find a web browser on your system. Please check your Desktop Preferences or install a web browser (for example, Mozilla) in the default  location requested during the browser installation."
-msgstr ""
-
-#: source/view/view.src#DLG_PRINTMONITOR_TEXT.#define.Text
-msgid  "Print Monitor"
-msgstr "Манітор друкавання"
-
-#: source/view/view.src#STR_ERROR_SAVE_TEMPLATE.String.Text
-msgid  "Error saving template "
-msgstr "Памылка пры запісванні шаблона"
+msgstr "Не ўдалося (%PRODUCTNAME) знайсці браўзера ў вашай сістэме. Праверце настаўленні Стала або ўстанавіце браўзера (напрыклад, Мозілу) у такім месцы дыска, якое прапануе праграма-інсталятар."

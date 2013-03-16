@@ -137,7 +137,7 @@ msgstr "Spremi"
 
 #: source/basicide/basidesh.src#RID_STR_SOURCETOBIG.String.Text
 msgid  "The source text is too large and can be neither compiled nor saved.\nDelete some of the comments or transfer some methods into another module."
-msgstr ""
+msgstr "Tekst izvornog koda je prevelik i ne može biti niti kompajliran niti spremljen.\nObrišite neke od komentara ili prebacite neke metode u drugi modul."
 
 #: source/basicide/basidesh.src#RID_STR_ERROROPENSTORAGE.String.Text
 msgid  "Error opening file"
@@ -201,7 +201,7 @@ msgstr "Datoteka 'XX' već postoji"
 
 #: source/basicide/basidesh.src#RID_STR_CANNOTRUNMACRO.String.Text
 msgid  "For security reasons, you cannot run this macro.\n\nFor more information, check the security settings."
-msgstr ""
+msgstr "Iz sigurnosnih razloga, nemožete pokrenuti ovaj makro.\n\nZa više informacija, provjerite sigurnosne postavke."
 
 #: source/basicide/basidesh.src#RID_STR_COMPILEERROR.String.Text
 msgid  "Compile Error: "
@@ -217,7 +217,7 @@ msgstr "Traženi ključ nije pronađen"
 
 #: source/basicide/basidesh.src#RID_STR_SEARCHFROMSTART.String.Text
 msgid  "Search to last module complete. Continue at first module?"
-msgstr ""
+msgstr "Pretraživanje do posljednjeg modula je završeno. Nastaviti od prvog modula?"
 
 #: source/basicide/basidesh.src#RID_STR_SEARCHREPLACES.String.Text
 msgid  "Search key replaced XX times"
@@ -373,7 +373,7 @@ msgstr "Ime mora biti uneseno."
 
 #: source/basicide/basidesh.src#RID_STR_WILLSTOPPRG.String.Text
 msgid  "You will have to restart the program after this edit.\nContinue?"
-msgstr ""
+msgstr "Morat ćete ponovno pokrenuti program nakon ovog uređivanja.\nŽelite li nastaviti?"
 
 #: source/basicide/basidesh.src#RID_STR_SEARCHALLMODULES.String.Text
 msgid  "Do you want to replace the text in all active modules?"
@@ -757,7 +757,7 @@ msgstr "Uobičajeno"
 
 #: source/dlged/managelang.src#RID_DLG_MANAGE_LANGUAGE.FT_INFO.FixedText.Text
 msgid  "The default language is used if no localization for a user interface locale is present. Furthermore all strings from the default language are copied to resources of newly added languages."
-msgstr ""
+msgstr "Uobičajeni jezik se koristi ukoliko ne postoji lokalizirano korisničko sučelje. Stoga će sve poruke iz uobičajenog jezika biti kopirane u resurse novo dodanog jezika."
 
 #: source/dlged/managelang.src#RID_DLG_MANAGE_LANGUAGE.PB_CLOSE.OKButton.Text
 msgid  "~Close"
@@ -781,7 +781,7 @@ msgstr "Obriši jezične resurse"
 
 #: source/dlged/managelang.src#RID_QRYBOX_LANGUAGE.QueryBox.Message
 msgid  "You are about to delete the resources for the selected language(s). All user interface strings for this language(s) will be deleted.\n\nDo you want to delete the resources of the selected language(s)?"
-msgstr ""
+msgstr "Namjeravate obrisati resurse za označeni(e) jezik(e). Sve poruke korisničkog sučelja za ovaj(e) jezik(e) će biti obrisane.\n\nĆelite li obrisati resurse za označeni(e) jezik(e)?"
 
 #: source/dlged/managelang.src#RID_DLG_SETDEF_LANGUAGE.ModalDialog.Text
 msgid  "Set Default User Interface Language"
@@ -793,7 +793,7 @@ msgstr "Uobičajeni jezik"
 
 #: source/dlged/managelang.src#RID_DLG_SETDEF_LANGUAGE.FT_DEF_INFO.FixedText.Text
 msgid  "Select a language to define the default user interface language. All currently present strings will be assigned to the resources created for the selected language."
-msgstr ""
+msgstr "Označite jezik koji će biti definiran kao uobičajeni jezik korisničkog sučelja. Svi trenutno prisutne poruke će biti dodijeljene resursima stvorenim za označeni jezik."
 
 #: source/dlged/managelang.src#RID_DLG_SETDEF_LANGUAGE.STR_ADDLANG_TITLE.String.Text
 msgid  "Add User Interface Languages"
@@ -805,7 +805,7 @@ msgstr "Dostupni jezici"
 
 #: source/dlged/managelang.src#RID_DLG_SETDEF_LANGUAGE.STR_ADDLANG_INFO.String.Text
 msgid  "Select languages to be added. Resources for these languages will be created in the library. Strings of the current default user interface language will be copied to these new resources by default."
-msgstr ""
+msgstr "Označite jezike koji će biti dodani. Resursi za te jezike će biti stvoreni u knjižnici. Poruke trenutnog uobičajenog jezika za korisničko sučelje će biti kopiranje u nove resurse."
 
 #: source/dlged/dlgresid.src#RID_STR_BRWTITLE_PROPERTIES.String.Text
 msgid  "Properties: "

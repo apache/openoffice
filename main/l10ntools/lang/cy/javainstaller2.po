@@ -125,7 +125,7 @@ msgstr "Darllenwch y cytundeb trwyddedu canlynol yn ofalus."
 
 #: src/Localization/setupstrings.ulf#STRING_ACCEPTLICENSE3
 msgid  "If you have read and accept all the terms of the entire Software License Agreement, click 'Accept License' to continue with the installation."
-msgstr ""
+msgstr "Os ydych wedi darllen a derbyn holl amodau’r Cytundeb Trwyddedu Meddalwedd yna cliciwch 'Derbyn y Drwydded' i barhau gyda'r gosod."
 
 #: src/Localization/setupstrings.ulf#STRING_CHOOSEDIRECTORY1
 msgid  "Select Installation Directory"
@@ -153,11 +153,11 @@ msgstr "Creu Cyfeiriadur Newydd"
 
 #: src/Localization/setupstrings.ulf#STRING_CHOOSEDIRECTORY5_QUESTION_MESSAGE
 msgid  "The directory '${DIR}' does not exist.\nDo you want to create it now?"
-msgstr ""
+msgstr "Nid yw cyfeiriadur '${DIR}' yn bodoli.\nHoffech chi ei greu?"
 
 #: src/Localization/setupstrings.ulf#STRING_CHOOSEDIRECTORY5_QUESTION_MESSAGE2
 msgid  "The directory '${DIR}' does not exist.\nDo you want to create it now or choose another directory?"
-msgstr ""
+msgstr "Nid yw cyfeiriadur '${DIR}' yn bodoli.\nHoffech chi ei greu neu ddewis cyfeiriadur arall?"
 
 #: src/Localization/setupstrings.ulf#STRING_CHOOSEDIRECTORY6
 msgid  "Select root directory"
@@ -185,7 +185,7 @@ msgstr "Dewis Cydrannau Ychwanegol"
 
 #: src/Localization/setupstrings.ulf#STRING_CHOOSECOMPONENTS2
 msgid  "Marked components will be installed. Please mark them accordingly"
-msgstr ""
+msgstr "Bydd y cydrannau sydd wedi eu ticio'n cael eu gosod. Ticiwch nhw yn ôl y gofyn"
 
 #: src/Localization/setupstrings.ulf#STRING_CHOOSECOMPONENTS3
 msgid  "Feature Description"
@@ -197,7 +197,7 @@ msgstr "Maint (kB):"
 
 #: src/Localization/setupstrings.ulf#STRING_CHOOSEINSTALLATIONTYPE1
 msgid  "Select the Type of Installation"
-msgstr "Dewis y math o Osod"
+msgstr "Dewis y Math o Osod"
 
 #: src/Localization/setupstrings.ulf#STRING_CHOOSEINSTALLATIONTYPE2
 msgid  "Select the type of installation that best suits your needs:"
@@ -209,11 +209,11 @@ msgstr "Dewis y math o Osod"
 
 #: src/Localization/setupstrings.ulf#STRING_CHOOSEINSTALLATIONTYPE4
 msgid  "The main components will be installed. Recommended for most users."
-msgstr ""
+msgstr "Bydd y prif gydrannau'n cael eu gosod. Addas ar gyfer defnyddwyr cyntaf."
 
 #: src/Localization/setupstrings.ulf#STRING_CHOOSEINSTALLATIONTYPE5
 msgid  "You choose the components you want to install and where they are stored. Recommended for advanced users."
-msgstr ""
+msgstr "Dewiswch y cydrannau i'w gosod a lle fyddant yn cael eu cadw. Ar gyfer defnyddwyr profiadol."
 
 #: src/Localization/setupstrings.ulf#STRING_CHOOSEINSTALLATIONTYPE6
 msgid  "Typical"
@@ -253,7 +253,7 @@ msgstr "Croeso"
 
 #: src/Localization/setupstrings.ulf#STRING_PROLOGUE2
 msgid  "This Installation Wizard will install ${PRODUCT_FULLNAME} on your computer."
-msgstr ""
+msgstr "Bydd y Dewin Gosod yn gosod ${PRODUCT_FULLNAME} ar eich cyfrifiadur."
 
 #: src/Localization/setupstrings.ulf#STRING_PROLOGUE3
 msgid  "To continue, click 'Next'."
@@ -261,7 +261,7 @@ msgstr "I barhau, cliciwch 'Nesaf'."
 
 #: src/Localization/setupstrings.ulf#STRING_PROLOGUE4
 msgid  "Note: This installation will be done without root privileges. Therefore you will have a reduced functionality (Java Runtime Environment (JRE) not installable, system integration not possible).\nClick 'Cancel' and change your privileges to root privileges, if you want to use the complete functionality."
-msgstr ""
+msgstr "Sylwch: Bydd y gosod yn cael ei wneud heb freintiau gwraidd. Felly bydd gennych lai o swyddogaethau ar gael (Java Runtime Environment (JRE) heb ei osod, integreiddio'r system yn amhosib).\nCliciwch 'Diddymu' a newid eich breintiau i freintiau gwraidd, os ydych am ddefnyddio'r holl swyddogaethau."
 
 #: src/Localization/setupstrings.ulf#STRING_INSTALLATIONCOMPLETED1
 msgid  "Installation Completed"
@@ -277,15 +277,15 @@ msgstr "Methodd y Gosod"
 
 #: src/Localization/setupstrings.ulf#STRING_INSTALLATIONCOMPLETED2
 msgid  "The Installation Wizard has successfully installed ${PRODUCT_FULLNAME} on your computer."
-msgstr ""
+msgstr "Mae'r Dewin Gosod wedi gosod ${PRODUCT_FULLNAME} yn llwyddiannus ar eich cyfrifiadur."
 
 #: src/Localization/setupstrings.ulf#STRING_INSTALLATIONCOMPLETED2_ABORT
 msgid  "The Installation Wizard was aborted. ${PRODUCT_NAME} is not installed on your computer."
-msgstr ""
+msgstr "Cafodd y Dewin Gosod ei atal Nid yw ${PRODUCT_NAME} wedi ei osod ar eich cyfrifiadur."
 
 #: src/Localization/setupstrings.ulf#STRING_INSTALLATIONCOMPLETED2_ERROR
 msgid  "An error has occurred. Thus the Installation Wizard could not install ${PRODUCT_NAME} on your computer successfully. Click 'Details...' for more information."
-msgstr ""
+msgstr "Digwyddodd gwall. Felly nid oedd hi'n bosibl i'r Dewin Gosod osod ${PRODUCT_NAME} ar eich cyfrifiadur yn llwyddiannus. Cliciwch 'Manylion...' am ragor o wybodaeth."
 
 #: src/Localization/setupstrings.ulf#STRING_INSTALLATIONCOMPLETED3
 msgid  "Click 'Finish' to exit the Wizard."
@@ -297,15 +297,15 @@ msgstr "Manylion..."
 
 #: src/Localization/setupstrings.ulf#STRING_UNINSTALLATIONPROLOGUE2
 msgid  "The ${PRODUCT_FULLNAME} Uninstallation Wizard will remove ${PRODUCT_FULLNAME} from your computer."
-msgstr ""
+msgstr "Bydd y Dewin Dadosod ${PRODUCT_FULLNAME}  yn tynnu ${PRODUCT_FULLNAME} oddi ar eich cyfrifiadur."
 
 #: src/Localization/setupstrings.ulf#STRING_UNINSTALLATION_PROLOGUE_WRONG_PRIVILEGES_CURRENT_ROOT
 msgid  "Sorry, wrong privileges. Installation was done with User privilges, but you have Root privileges."
-msgstr ""
+msgstr "Yn anffodus breintiau anghywir. Cafodd y gosod ei wneud gyda breintiau Defnyddiwr, ond mae gennych chi freintiau Gwraidd."
 
 #: src/Localization/setupstrings.ulf#STRING_UNINSTALLATION_PROLOGUE_WRONG_PRIVILEGES_CURRENT_USER
 msgid  "Sorry, wrong privileges. Installation was done with Root privilges, but you have User privileges."
-msgstr ""
+msgstr "Yn anffodus breintiau anghywir. Cafodd y gosod ei wneud gyda breintiau Gwraidd, ond mae gennych chi freintiau Defnyddiwr."
 
 #: src/Localization/setupstrings.ulf#STRING_CHOOSEUNINSTALLATIONTYPE1
 msgid  "Select the Type of Uninstallation"
@@ -321,7 +321,7 @@ msgstr "Rhannol"
 
 #: src/Localization/setupstrings.ulf#STRING_CHOOSEUNINSTALLATIONTYPE4
 msgid  "Completely removes ${PRODUCT_FULLNAME} and all its components from your system."
-msgstr ""
+msgstr "Tynnu ${PRODUCT_FULLNAME} ai' holl gydrannua yn llwyr oddi ar eich cyfrifiadur."
 
 #: src/Localization/setupstrings.ulf#STRING_CHOOSEUNINSTALLATIONTYPE5
 msgid  "You choose the program features you want to remove."
@@ -333,7 +333,7 @@ msgstr "Cwblhawyd"
 
 #: src/Localization/setupstrings.ulf#STRING_CHOOSEUNINSTALLATIONCOMPONENTS2
 msgid  "Components marked with an X will be removed. Mark the components you want to remove."
-msgstr ""
+msgstr "Bydd cydrannu wedi eu marcio gydag X yn cael eu tynnu. Marciwch y cydrannau i'w tynnu."
 
 #: src/Localization/setupstrings.ulf#STRING_UNINSTALLATIONIMMINENT1
 msgid  "Ready to Remove"
@@ -361,19 +361,19 @@ msgstr "Dadosod wedi Methu"
 
 #: src/Localization/setupstrings.ulf#STRING_UNINSTALLATIONCOMPLETED2
 msgid  "The Uninstallation Wizard has successfully removed ${PRODUCT_FULLNAME} from your computer."
-msgstr ""
+msgstr "Mae'r Dewis Dadosod wedi tynnu ${PRODUCT_FULLNAME} oddi ar eich cyfrifiadur yn llwyddiannus."
 
 #: src/Localization/setupstrings.ulf#STRING_UNINSTALLATIONCOMPLETED2_PARTIAL
 msgid  "The Uninstallation Wizard has successfully removed the selected components of ${PRODUCT_NAME} from your computer."
-msgstr ""
+msgstr "Mae'r Dewin Dadosod wedi tynnu'r cydrannau ${PRODUCT_NAME} hynnyoddi ar eich cyfrifiadur."
 
 #: src/Localization/setupstrings.ulf#STRING_UNINSTALLATIONCOMPLETED2_ABORT
 msgid  "The Uninstallation Wizard was aborted before completely removing ${PRODUCT_NAME} from your computer."
-msgstr ""
+msgstr "Mae'r Dewin Dadosod wedi tynnu'r cydrannau ${PRODUCT_NAME} hynny oddi ar eich cyfrifiadur."
 
 #: src/Localization/setupstrings.ulf#STRING_UNINSTALLATIONCOMPLETED2_ERROR
 msgid  "An error has occurred. Thus the Uninstallation Wizard could not remove ${PRODUCT_NAME} from your computer successfully. Click 'Details...' for more information."
-msgstr ""
+msgstr "Digwyddodd gwall. Felly nid oedd hi'n bosibl i'r Dewin Dadosod ddadosod ${PRODUCT_NAME} oddi ar eich cyfrifiadur yn llwyddiannus. Cliciwch 'Manylion...' am ragor o wybodaeth."
 
 #: src/Localization/setupstrings.ulf#STRING_INSTALLERFACTORY_OS_NOT_SUPPORTED
 msgid  "Sorry, this Operating System is not supported yet."
@@ -385,7 +385,7 @@ msgstr "Cafwyd hyd i fersiwn hŷn o ${PRODUCT_NAME} ar eich system, yn:"
 
 #: src/Localization/setupstrings.ulf#STRING_OLDER_VERSION_INSTALLED_REMOVE
 msgid  "You have to remove the older version of ${PRODUCT_NAME} before you can install the newer one."
-msgstr ""
+msgstr "Rhaid tynnu’r fersiwn hŷn o ${PRODUCT_NAME} cyn gallu gosod y fersiwn diweddaraf."
 
 #: src/Localization/setupstrings.ulf#STRING_NEWER_VERSION_INSTALLED_FOUND
 msgid  "A newer version of ${PRODUCT_NAME} was found on your system in:"
@@ -393,7 +393,7 @@ msgstr "A newer version of ${PRODUCT_NAME} was found on your system in:"
 
 #: src/Localization/setupstrings.ulf#STRING_NEWER_VERSION_INSTALLED_REMOVE
 msgid  "You have to remove the newer version of ${PRODUCT_NAME} before you can install the older one."
-msgstr ""
+msgstr "Rhaid tynnu'r fersiwn mwy diweddar o ${PRODUCT_NAME} cyn bod modd gosod yr hen un."
 
 #: src/Localization/setupstrings.ulf#STRING_NEWER_VERSION_DATABASE
 msgid  "Database"
@@ -409,7 +409,7 @@ msgstr "Nid oes modd i chi fel defnyddiwr redeg y Dewin Gosod."
 
 #: src/Localization/setupstrings.ulf#STRING_ROOT_PRIVILEGES_REQUIRED_2
 msgid  "Please log out and log back in as a user with system administrator rights."
-msgstr ""
+msgstr "Allgofnodwch a mewngofnodwch fel defnyddiwr gyda hawliau gweinyddwr system."
 
 #: src/Localization/setupstrings.ulf#STRING_DISCSPACE_INSUFFICIENT
 msgid  "Not enough discspace available for installation."
@@ -425,7 +425,7 @@ msgstr "Le ar gael ar ddisg"
 
 #: src/Localization/setupstrings.ulf#STRING_DISCSPACE_TIP
 msgid  "Please use another directory for installation or change your module selection."
-msgstr ""
+msgstr "Defnyddiwch gyfeiriadur arall ar gyfer gosod neu newidiwch eich dewis o fodiwlau."
 
 #: src/Localization/setupstrings.ulf#STRING_ANALYZING_DATABASE1
 msgid  "Analyzing ..."
@@ -433,11 +433,11 @@ msgstr "Dadansoddi ..."
 
 #: src/Localization/setupstrings.ulf#STRING_ANALYZING_DATABASE2
 msgid  "Analyzing database\nPlease wait a moment ..."
-msgstr ""
+msgstr "Dadansoddi'r gronfa ddata\nArhoswch ..."
 
 #: src/Localization/setupstrings.ulf#STRING_PROLOGUE_1
 msgid  "Welcome to the Installation Wizard.<p>This wizard asks you to supply configuration settings.<p>At the bottom of each page are navigation buttons that let you move through the Installation Wizard:"
-msgstr ""
+msgstr "Croeso i'r Dewin Gosod.<p>Bydd y Dewin yn gofyn i chi ddarparu gosodiadau ffurfweddu.<p>Ar waelod pob tudalen mae botymau symud sy'n caniatau i chi symud drwy drefn osod y Dewin:"
 
 #: src/Localization/setupstrings.ulf#STRING_PROLOGUE_2
 msgid  "'Back' returns you to the previous page."
@@ -453,7 +453,7 @@ msgstr "Bydd 'Diddymu' yn atal y Dewin Gosod heb fod wedi gosod y feddalwedd."
 
 #: src/Localization/setupstrings.ulf#STRING_PROLOGUE_5
 msgid  "'Help' displays the Help with further information about the page currently displayed."
-msgstr ""
+msgstr "Mae 'Cymorth' yn dangos y Cymorth gyda gwybodaeth bellach am y dudalen sy'n cael ei harddangos."
 
 #: src/Localization/setupstrings.ulf#STRING_PROLOGUE_6
 msgid  "'OK' exits the Help page and returns you to the Installation Wizard."
@@ -461,7 +461,7 @@ msgstr "Mae 'Iawn' yn gadael y dudalen Cymorth ac yn dychwelyd i'r Dewin Gosod."
 
 #: src/Localization/setupstrings.ulf#STRING_UNINSTALLATIONPROLOGUE_1
 msgid  "Welcome to the Uninstallation Wizard.<p>This wizard asks you to supply configuration settings.<p>At the bottom of each page are navigation buttons that let you move through the Uninstallation Wizard:"
-msgstr ""
+msgstr "Croeso i'r Dewin Dadosod.<p>Bydd y Dewin yn gofyn i chi ddarparu gosodiadau ffurfweddu.<p>Ar waelod pob tudalen mae botymau symud sy'n caniatau i chi symud drwy drefn osod y Dewin:"
 
 #: src/Localization/setupstrings.ulf#STRING_UNINSTALLATIONPROLOGUE_2
 msgid  "'Back' returns you to the previous page."
@@ -477,63 +477,63 @@ msgstr "Bydd 'Diddymu' yn atal y Dewin Dadosod heb fod wedi gosod y feddalwedd."
 
 #: src/Localization/setupstrings.ulf#STRING_UNINSTALLATIONPROLOGUE_5
 msgid  "'Help' displays the Help with further information about the page currently displayed."
-msgstr ""
+msgstr "Mae 'Cymorth' yn dangos y Cymorth gyda gwybodaeth bellach am y dudalen sy'n cael ei harddangos."
 
 #: src/Localization/setupstrings.ulf#STRING_UNINSTALLATIONPROLOGUE_6
 msgid  "'OK' exits the Help page and returns you to the Uninstallation Wizard."
-msgstr ""
+msgstr "Mae 'Iawn' yn gadael y dudalen Cymorth ac yn dychwelyd i'r Dewin Dadosod."
 
 #: src/Localization/setupstrings.ulf#STRING_ACCEPTLICENSE_1
 msgid  "Before you install this product, you must read and accept the entire Software License Agreement under which this software is licensed for your use."
-msgstr ""
+msgstr "Cyn gosod y cynnyrch, mae'n rhaid i chi ddarllen a derbyn y Cytundeb Trwyddedu Llawn sy'n sail i drwyddedu'r feddalwedd i chi."
 
 #: src/Localization/setupstrings.ulf#STRING_ACCEPTLICENSE_2
 msgid  "If you have read and accept all the terms of the entire Software License Agreement, click 'Accept License' to continue with the installation."
-msgstr ""
+msgstr "Os ydych wedi darllen a derbyn holl amodau'r Cytundeb Trwyddedu Meddalwedd, cliciwch 'Derbyn y Drwydded' er mwyn parhau gyda'r gosod."
 
 #: src/Localization/setupstrings.ulf#STRING_ACCEPTLICENSE_3
 msgid  "If you do not accept all the terms of the Software License Agreement, click 'Decline' to end the Installation Wizard without installing this product."
-msgstr ""
+msgstr "Os nad ydych yn derbyn amodau'r Cytundeb Trwyddedu Meddalwedd, cliciwch 'Gwrthod' i atal y Dewin Gosod heb osod y feddalwedd."
 
 #: src/Localization/setupstrings.ulf#STRING_CHOOSEINSTALLATIONTYPE_1
 msgid  "Select the type of product installation to perform from the following choices. This will determine how much information you need to provide for product configuration."
-msgstr ""
+msgstr "Dewis y math o raglenni i'w gosod o'r dewisiadau canlyno;. Bydd hyn yn pennu faint o wybodaeth sydd angen i chi ei ddarparu ar gyfer ffurfweddu'r cynnyrch."
 
 #: src/Localization/setupstrings.ulf#STRING_CHOOSEDIRECTORY_1
 msgid  "It is recommended that you install this product in the directory suggested by this Installation Wizard. <p>To choose a different location, click 'Browse...' or specify the full path of the directory to use in the text box below. <p>If this product is already installed, you cannot change the destination directory."
-msgstr ""
+msgstr "Argymhellir eich bod yn gosod y cynnyrch yn y cyfeiriadur sy'n cael eiargymell gan y Dewin Gosod. <p>I ddewis lleoliad gwahanol, cliciwch 'Pori...' neu bennu llwybr llawn y cyfeiriadur sydd i'w ddefnyddio yn y blwch testun isod. <p>Os yw'r cynnyrch wedi ei osod yn barod, nid oes modd newid y cyfeiriadur targed."
 
 #: src/Localization/setupstrings.ulf#STRING_CHOOSECOMPONENTS_1
 msgid  "Components marked in color will be installed. Click the icon of a component to mark or unmark the component.<p>All already installed components cannot be selected for installation."
-msgstr ""
+msgstr "Bydd cydrannau sydd wedi eu marcio mewn lliw yn cael eu gosod. Cliciwch eicon y cydran i farchi neu ddadfarcio'r cydran. <p>Nid oes modd dewis y cydrannau sydd eisioes wedi eu gosod."
 
 #: src/Localization/setupstrings.ulf#STRING_INSTALLATIONIMMINENT_1
 msgid  "The listed components are ready for installation based on your configuration settings. <p>If you are satisfied with your selection, click 'Install Now' to begin. <p>To check or modify your settings on the previous pages, click 'Back'."
-msgstr ""
+msgstr "Mae'r cydrannau hyn yn barod ar gyfer eu gosod ar sail eich gosodiadau ffurfweddu. <p>Os ydych yn hapus gyda'ch dewis, cliciwch 'Gosod Nawr' i gychwyn. <p>I ddewis neu newid y gosodiadau ar dudalennau blaenorol, cliciwch 'Nôl'."
 
 #: src/Localization/setupstrings.ulf#STRING_UNINSTALLATIONIMMINENT_1
 msgid  "The listed components are ready for uninstallation based on your configuration settings. <p>If you are satisfied with your selection, click 'Remove Now' to begin. <p>To check or modify your settings on the previous pages, click 'Back'."
-msgstr ""
+msgstr "Mae'r cydrannau hyn yn barod ar gyfer eu dadosod ar sail eich gosodiadau ffurfweddu. <p>Os ydych yn hapus gyda'ch dewis, cliciwch 'Tynnu Nawr' i gychwyn. <p>I ddewis neu newid y gosodiadau ar dudalennau blaenorol, cliciwch 'Nôl'."
 
 #: src/Localization/setupstrings.ulf#STRING_INSTALLATIONONGOING_1
 msgid  "This page indicates the progress of the installation with the aid of a progress bar. To abort the installation process, click 'Stop'."
-msgstr ""
+msgstr "Mae'r dudalen hon yn dangos cynnydd y gosod gyda chymorth bar cynnydd. I atal y gosod, cliciwch 'Atal'"
 
 #: src/Localization/setupstrings.ulf#STRING_UNINSTALLATIONONGOING_1
 msgid  "This page indicates the progress of the uninstallation with the aid of a progress bar. To abort the uninstallation, click 'Stop'."
-msgstr ""
+msgstr "Mae'r dudalen hon yn dangos cynnydd y dadosod gyda chymorth bar cynnydd. I atal y dadosod, cliciwch 'Atal'"
 
 #: src/Localization/setupstrings.ulf#STRING_CHOOSEUNINSTALLATIONTYPE_1
 msgid  "Complete: This will remove all installed components of your version.<p>Partial: This removes only the components you will choose out of the components list."
-msgstr ""
+msgstr "Cwblhawyd. Bydd hyn yn tynnu'r holl gydrannau eich fersiwn sydd wedi eu gosod. <p>Rhannol: Bydd hyn yn tynnu dim ond y rhai rydych wedi eudewis o'r rhestr cydrannau."
 
 #: src/Localization/setupstrings.ulf#STRING_CHOOSEUNINSTALLATIONCOMPONENTS_1
 msgid  "Components marked with an X will be removed. Click next to a component to mark or unmark it with an X."
-msgstr ""
+msgstr "Bydd cydrannau wedi eu marcio gydag X yn cael eu tynnu. Cliciwch nesaf i gydran i'w farcio neu ddadfarcio gydag X."
 
 #: src/Localization/setupstrings.ulf#STRING_PACKAGEFORMAT_NOT_SUPPORTED
 msgid  "This package format is currently not supported for your operating system!"
-msgstr ""
+msgstr "Nid yw fformat y pecyn yn cael ei gynnal gan eich system weithredu ar hyn o bryd!"
 
 #: src/Localization/setupstrings.ulf#STRING_OPERATING_SYSTEM
 msgid  "Operating system"
@@ -553,7 +553,7 @@ msgstr "Nid oes cydrannau wedi eu dewis i'w gosod."
 
 #: src/Localization/setupstrings.ulf#STRING_NO_COMPONENTS_SELECTED_2
 msgid  "Click 'OK' to select one or more components for installation or to exit the Installation Wizard."
-msgstr ""
+msgstr "Cliciwch 'Iawn' i ddewis un neu fwy o gydrannau ar gyfer eu gosod neu adael y Dewin Gosod."
 
 #: src/Localization/setupstrings.ulf#STRING_NO_LANGUAGE_SELECTED_1
 msgid  "No languages have been selected for installation."
@@ -561,7 +561,7 @@ msgstr "Nid oes iaith wedi ei dewis ar gyfer y gosod."
 
 #: src/Localization/setupstrings.ulf#STRING_NO_LANGUAGE_SELECTED_2
 msgid  "Click 'OK' to select one or more languages for installation or to exit the Installation Wizard."
-msgstr ""
+msgstr "Cliciwch 'Iawn' i ddewis un neu fwy o ieithoedd ar gyfer y gosod neu adael y Dewin Gosod."
 
 #: src/Localization/setupstrings.ulf#STRING_NO_APPLICATION_SELECTED_1
 msgid  "No applications have been selected for installation."
@@ -569,7 +569,7 @@ msgstr "Heb ddewis rhaglen i'w gosod."
 
 #: src/Localization/setupstrings.ulf#STRING_NO_APPLICATION_SELECTED_2
 msgid  "Click 'OK' to select one or more application for installation or to exit the Installation Wizard."
-msgstr ""
+msgstr "Cliciwch 'Iawn' i ddewis un neu fwy o raglenni ar gyfer y gosod neu adael y Dewin Gosod."
 
 #: src/Localization/setupstrings.ulf#STRING_NOTHING_TO_UNINSTALL
 msgid  "Nothing to uninstall"
@@ -581,7 +581,7 @@ msgstr "Nid oes cydrannau wedi eu dewis i'w dadosod."
 
 #: src/Localization/setupstrings.ulf#STRING_NO_UNINSTALLCOMPONENTS_SELECTED_2
 msgid  "Click 'OK' to select one or more components for uninstallation or to exit the Uninstallation Wizard."
-msgstr ""
+msgstr "Cliciwch 'Iawn' i ddewis un neu fwy o gydrannau i'w dadosod neu adael y Dewin Dadosod."
 
 #: src/Localization/setupstrings.ulf#STRING_ALL_LANGUAGECOMPONENTS_SELECTED_1
 msgid  "All language components have been selected for uninstallation."
@@ -589,7 +589,7 @@ msgstr "Mae pob cydran iaith wedi eu dewis ar gyfer eu dadosod."
 
 #: src/Localization/setupstrings.ulf#STRING_ALL_LANGUAGECOMPONENTS_SELECTED_2
 msgid  "Click 'OK' to select one or more language components not for uninstallation or to exit the Uninstallation Wizard."
-msgstr ""
+msgstr "Cliciwch 'Iawn' i ddewis un neu fwy o gydrannau iaith nad ydynt i'w dadosod neu adael y Dewin Dadosod."
 
 #: src/Localization/setupstrings.ulf#STRING_ALL_APPLICATIONCOMPONENTS_SELECTED_1
 msgid  "All application components have been selected for uninstallation."
@@ -597,7 +597,7 @@ msgstr "Mae pob cydran rhaglen wedi eu dewis ar gyfer eu dadosod."
 
 #: src/Localization/setupstrings.ulf#STRING_ALL_APPLICATIONCOMPONENTS_SELECTED_2
 msgid  "Click 'OK' to select one or more application components not for uninstallation or to exit the Uninstallation Wizard."
-msgstr ""
+msgstr "Cliciwch 'Iawn' i ddewis un neu fwy o gydrannau rhaglen nad ydynt i'w dadosod neu adael y Dewin Dadosod."
 
 #: src/Localization/setupstrings.ulf#STRING_CHANGE_SELECTION
 msgid  "Please change selection"

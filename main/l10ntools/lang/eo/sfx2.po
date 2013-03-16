@@ -97,7 +97,7 @@ msgstr "Dokumento jam malfermita."
 
 #: source/appl/app.src#MSG_ERR_NO_WEBBROWSER_FOUND.ErrorBox.Message
 msgid  "%PRODUCTNAME could not find a web browser on your system. Please check your Desktop Preferences or install a web browser (for example, Mozilla) in the default  location requested during the browser installation."
-msgstr ""
+msgstr "%PRODUCTNAME ne povis trovi TTT-legilon en via sistemo. Bonvolu kontroli viajn labortablajn preferojn aŭ instali TTT-legilon (ekzemple mozilla-n) en la defaŭlta loko petita dum la instalado de la TTT-legilo."
 
 #: source/appl/app.src#GID_INTERN.String.Text
 msgid  "Internal"
@@ -205,7 +205,7 @@ msgstr "Regiloj"
 
 #: source/appl/app.src#MSG_CANT_QUIT.InfoBox.Message
 msgid  "The application cannot be terminated at the moment.\nPlease wait until all print jobs and/or\nOLE actions have finished and close all dialogs."
-msgstr ""
+msgstr "Ne eblas haltigi la aplikaĵon nun.\nBonvolu atendi, ĝis ĉiuj presilaj taskoj kaj/aŭ\nOLE-agoj estos finitaj, kaj bonvolu fermi ĉiujn dialogojn."
 
 #: source/appl/app.src#STR_ISMODIFIED.String.Text
 msgid  "Do you want to save the changes to %1?"
@@ -237,7 +237,7 @@ msgstr "Funkcia breto"
 
 #: source/appl/app.src#RID_SPECIALCONFIG_ERROR.String.Text
 msgid  "An error has occurred in the special configuration.\nPlease contact your administrator."
-msgstr ""
+msgstr "Okazis eraro pri la speciala agordo.\nBonvolu kontakti vian administranton."
 
 #: source/appl/app.src#STR_QUICKSTART_EXIT.String.Text
 msgid  "Exit Quickstarter"
@@ -288,12 +288,12 @@ msgid  "DDE link to % for % area % are not available."
 msgstr "DDE-ligo al % por % areo % ne disponeblas."
 
 #: source/appl/app.src#RID_SECURITY_WARNING_HYPERLINK.WarningBox.Message
-msgid  "This hyperlink is going to open "%s". Do you want to proceed?"
-msgstr ""
+msgid  "This hyperlink is going to open \"%s\". Do you want to proceed?"
+msgstr "Ĉi tiu hiperligilo malfermos je \"%s\". Ĉu vi volas daŭrigi?"
 
 #: source/appl/app.src#RID_SECURITY_WARNING_NO_HYPERLINKS.WarningBox.Message
 msgid  "For security reasons, the hyperlink cannot be executed.\nThe stated address will not be opened."
-msgstr ""
+msgstr "Pro sekureca kialo, la hiperligilo ne ruleblas.\nLa deklarita adreso ne estos malfermata."
 
 #: source/appl/app.src#RID_SECURITY_WARNING_TITLE.String.Text
 msgid  "Security Warning"
@@ -301,15 +301,15 @@ msgstr "Sekureca averto"
 
 #: source/appl/app.src#RID_XMLSEC_QUERY_LOSINGSIGNATURE.QueryBox.Message
 msgid  "Saving will remove all existing signatures.\nDo you want to continue saving the document?"
-msgstr ""
+msgstr "Konservado forigos ĉiujn ekzistantajn subskribojn.\nĈu vi volas daŭrigi konservi la dokumenton?"
 
 #: source/appl/app.src#RID_XMLSEC_QUERY_SAVEBEFORESIGN.QueryBox.Message
 msgid  "The document has to be saved before it can be signed.\nDo you want to save the document?"
-msgstr ""
+msgstr "Necesas konservi la dokumenton antaŭ ol subskribi ĝin.\nĈu vi volas konservi la dokumenton?"
 
 #: source/appl/app.src#RID_XMLSEC_INFO_WRONGDOCFORMAT.InfoBox.Message
 msgid  "This document must be saved in OpenDocument file format before it can be digitally signed."
-msgstr ""
+msgstr "Necesas konservi ĉi tiun dokumenton laŭ formato OpenDokument antaŭ ol diĝite subskribi ĝin."
 
 #: source/appl/app.src#RID_XMLSEC_DOCUMENTSIGNED.String.Text
 msgid  " (Signed)"
@@ -509,11 +509,11 @@ msgstr "Vidigi helpon pri %PRODUCTNAME %MODULENAME je komenco"
 
 #: source/bastyp/fltfnc.src#STR_FILTER_NOT_INSTALLED.String.Text
 msgid  "The selected filter $(FILTER) has not been installed.\nWould you like to do this now?"
-msgstr ""
+msgstr "La elektita filtrilo $(FILTER) ne estas instalita.\nĈu vi ŝatus nun fari tion?"
 
 #: source/bastyp/fltfnc.src#STR_FILTER_CONSULT_SERVICE.String.Text
 msgid  "The selected filter $(FILTER) is not included in your edition.\nYou can find information about orders on our homepage."
-msgstr ""
+msgstr "La elektita filtrilo $(FILTER) ne estas inkluzivita en via eldono.\nVi povas trovi informojn pri mendoj sur via hejmpaĝo."
 
 #: source/dialog/printopt.src#TP_COMMONPRINTOPTIONS.GB_REDUCE.FixedLine.Text
 msgid  "Reduce print data"
@@ -572,6 +572,26 @@ msgid  "Reso~lution"
 msgstr "Distingivo"
 
 #: source/dialog/printopt.src#TP_COMMONPRINTOPTIONS.LB_REDUCEBITMAPS_RESOLUTION.0.StringList.item
+msgid  "72 DPI"
+msgstr "72 PEC (punktoj en colo)"
+
+#: source/dialog/printopt.src#TP_COMMONPRINTOPTIONS.LB_REDUCEBITMAPS_RESOLUTION.0.StringList.item
+msgid  "96 DPI"
+msgstr "96 PEC (punktoj en colo)"
+
+#: source/dialog/printopt.src#TP_COMMONPRINTOPTIONS.LB_REDUCEBITMAPS_RESOLUTION.0.StringList.item
+msgid  "150 DPI (Fax)"
+msgstr "150 PEC (punktoj en colo) (fakse)"
+
+#: source/dialog/printopt.src#TP_COMMONPRINTOPTIONS.LB_REDUCEBITMAPS_RESOLUTION.0.StringList.item
+msgid  "200 DPI (default)"
+msgstr "200 PEC (punktoj en colo) (defaŭlte)"
+
+#: source/dialog/printopt.src#TP_COMMONPRINTOPTIONS.LB_REDUCEBITMAPS_RESOLUTION.0.StringList.item
+msgid  "300 DPI"
+msgstr "300 PEC (punktoj en colo)"
+
+#: source/dialog/printopt.src#TP_COMMONPRINTOPTIONS.LB_REDUCEBITMAPS_RESOLUTION.0.StringList.item
 msgid  "600 DPI"
 msgstr "600 PEC (punktoj en colo)"
 
@@ -605,7 +625,7 @@ msgstr "Averto"
 
 #: source/dialog/printopt.src#RID_WARN_PRINTTRANSPARENCY.FT_PRINTTRANSWARN.FixedText.Text
 msgid  "Your document contains transparent objects.\nThis may lead to longer printing time on certain\nprinters. Should the aspect of transparency\nbe reduced?"
-msgstr ""
+msgstr "Via dokumento enhavas travideblajn objektojn.\nTio povas kaŭzi pli longajn prestempojn ĉe iuj \npresiloj. Ĉu redukti la aspekton de travidebleco?"
 
 #: source/dialog/printopt.src#RID_WARN_PRINTTRANSPARENCY.BTN_PRINTTRANS_YES.OKButton.Text
 msgid  "~Yes"
@@ -622,26 +642,6 @@ msgstr "Rezigni"
 #: source/dialog/printopt.src#RID_WARN_PRINTTRANSPARENCY.CBX_NOPRINTTRANSWARN.CheckBox.Text
 msgid  "~Do not show warning again"
 msgstr "Ne plu montri ĉi tiun averton"
-
-#: source/dialog/printopt.src#TP_COMMONPRINTOPTIONS.LB_REDUCEBITMAPS_RESOLUTION.0.StringList.item
-msgid  "72 DPI"
-msgstr "72 PEC (punktoj en colo)"
-
-#: source/dialog/printopt.src#TP_COMMONPRINTOPTIONS.LB_REDUCEBITMAPS_RESOLUTION.0.StringList.item
-msgid  "96 DPI"
-msgstr "96 PEC (punktoj en colo)"
-
-#: source/dialog/printopt.src#TP_COMMONPRINTOPTIONS.LB_REDUCEBITMAPS_RESOLUTION.0.StringList.item
-msgid  "150 DPI (Fax)"
-msgstr "150 PEC (punktoj en colo) (fakse)"
-
-#: source/dialog/printopt.src#TP_COMMONPRINTOPTIONS.LB_REDUCEBITMAPS_RESOLUTION.0.StringList.item
-msgid  "200 DPI (default)"
-msgstr "200 PEC (punktoj en colo) (defaŭlte)"
-
-#: source/dialog/printopt.src#TP_COMMONPRINTOPTIONS.LB_REDUCEBITMAPS_RESOLUTION.0.StringList.item
-msgid  "300 DPI"
-msgstr "300 PEC (punktoj en colo)"
 
 #: source/dialog/templdlg.src#RID_STYLECATALOG.ModalDialog.Text
 msgid  "Style Catalog"
@@ -1116,8 +1116,8 @@ msgid  "to frame"
 msgstr "al kadro"
 
 #: source/dialog/dinfdlg.src#TP_DOCINFORELOAD.STR_FORWARD_ERRMSSG.String.Text
-msgid  "If you select the option "%PLACEHOLDER%", you must enter a URL."
-msgstr ""
+msgid  "If you select the option \"%PLACEHOLDER%\", you must enter a URL."
+msgstr "Se vi elektas la atributon \"%PLACEHOLDER%\", vi entajpu URL-on."
 
 #: source/dialog/dinfdlg.src#TP_CUSTOMPROPERTIES.FT_PROPERTIES.FixedText.Text
 msgid  "~Properties"
@@ -1397,7 +1397,7 @@ msgstr "Registri makroon"
 
 #: source/dialog/recfloat.src#STR_MACRO_LOSS.String.Text
 msgid  "Do you really want to cancel the recording? Any steps recorded up to this point will be lost."
-msgstr ""
+msgstr "Ĉu vi vere volas rezigni la registradon? Ĉiuj ĝisnunaj registraĵoj perdiĝos."
 
 #: source/dialog/recfloat.src#STR_CANCEL_RECORDING.String.Text
 msgid  "Cancel Recording"
@@ -1405,7 +1405,7 @@ msgstr "Eliri registradon"
 
 #: source/dialog/mailwindow.src#RID_ERRBOX_MAIL_CONFIG.ErrorBox.MESSAGE
 msgid  "%PRODUCTNAME was unable to find a working e-mail configuration. Please save this document locally instead and attach it from within your e-mail client."
-msgstr ""
+msgstr "%PRODUCTNAME ne sukcesis trovi funkciantan mesaĝilan agordon. Anstataŭe konservu tiun ĉi dokumenton loke, kaj aldoni ĝin poste en via retmesaĝa programo."
 
 #: source/dialog/dialog.src#STR_RESET.String.Text
 msgid  "~Reset"
@@ -1429,11 +1429,11 @@ msgstr "Tiu ĉi stilo ne ekzistas."
 
 #: source/dialog/dialog.src#MSG_TABPAGE_INVALIDPARENT.InfoBox.Message
 msgid  "This Style cannot be used as a base Style,\nbecause it would result in a recursive reference."
-msgstr ""
+msgstr "Tiu ĉi stilo ne uzeblas kiel baza stilo,\nĉar ĝi rezultus en rikuran referencon."
 
 #: source/dialog/dialog.src#MSG_POOL_STYLE_NAME.InfoBox.Message
 msgid  "Name already exists as a default Style.\nPlease choose another name."
-msgstr ""
+msgstr "Nomo jam ekzistas kiel defaŭlta stilo.\nBonvolu elekti alian nomon."
 
 #: source/dialog/dialog.src#STR_DELETE_STYLE.String.Text
 msgid  "Do you really want to delete Style $1?"
@@ -1581,27 +1581,27 @@ msgstr "Organizilo..."
 
 #: source/doc/doc.src#MSG_CONFIRM_FILTER.QueryBox.Message
 msgid  "Saving in external formats may have caused\n information loss. Do you still want to close?"
-msgstr ""
+msgstr "Konservi en eksternaj formatoj eble kaŭzis\n perdon de informoj. Ĉu tamen fermi?"
 
 #: source/doc/doc.src#MSG_CONFIRM_OVERWRITE_TEMPLATE.QueryBox.Message
 msgid  "Name already in use.\nDo you want to overwrite document template?"
-msgstr ""
+msgstr "Nomo jam uzata.\nĈu anstataŭigi la dokumentan ŝablonon?"
 
 #: source/doc/doc.src#STR_DELETE_REGION.String.Text
-msgid  "Are you sure you want to delete the region "$1"?"
-msgstr ""
+msgid  "Are you sure you want to delete the region \"$1\"?"
+msgstr "Ĉu certe, ke vi volas forigi la regionon \"$1\"?"
 
 #: source/doc/doc.src#STR_DELETE_TEMPLATE.String.Text
-msgid  "Are you sure you want to delete the entry "$1"?"
-msgstr ""
+msgid  "Are you sure you want to delete the entry \"$1\"?"
+msgstr "Ĉu certe, ke vi volas forigi la enigon \"$1\"?"
 
 #: source/doc/doc.src#MSG_REGION_NOTEMPTY.QueryBox.Message
 msgid  "The category is not empty.\nDelete anyway?"
-msgstr ""
+msgstr "La kategorio ne estas malplena.\nĈu tamen forigi?"
 
 #: source/doc/doc.src#STR_QUERY_SAVE_DOCUMENT.String.Text
-msgid  "The document "$(DOC)" has been modified.\nDo you want to save your changes?"
-msgstr ""
+msgid  "The document \"$(DOC)\" has been modified.\nDo you want to save your changes?"
+msgstr "La dokumento \"$(DOC)\" estas modifita.\nĈu vi volas konservi viajn ŝanĝojn?"
 
 #: source/doc/doc.src#STR_STYLES.String.Text
 msgid  "Styles"
@@ -1648,16 +1648,16 @@ msgid  "Templates"
 msgstr "Ŝablonoj"
 
 #: source/doc/doc.src#STR_ERROR_COPY_TEMPLATE.String.Text
-msgid  "Error copying template "$1". \nA template with this name may already exist."
-msgstr ""
+msgid  "Error copying template \"$1\". \nA template with this name may already exist."
+msgstr "Eraro dum kopiado de ŝablono \"$1\". \nEble jam ekzistas samnoma ŝablono."
 
 #: source/doc/doc.src#STR_ERROR_DELETE_TEMPLATE.String.Text
-msgid  "The template "$1" can not be deleted."
-msgstr ""
+msgid  "The template \"$1\" can not be deleted."
+msgstr "La ŝablono \"$1\" ne estas forigebla."
 
 #: source/doc/doc.src#STR_ERROR_MOVE_TEMPLATE.String.Text
-msgid  "Error moving template "$1"."
-msgstr ""
+msgid  "Error moving template \"$1\"."
+msgstr "Eraro dum movado de ŝablono \"$1\"."
 
 #: source/doc/doc.src#MSG_ERROR_RESCAN.ErrorBox.Message
 msgid  "The update could not be saved."
@@ -1681,11 +1681,11 @@ msgstr "Bonvolu entajpi nomon."
 
 #: source/doc/doc.src#MSG_ERROR_UNIQ_NAME.ErrorBox.Message
 msgid  "Please specify a unique name.\nEntries must not be case specific."
-msgstr ""
+msgstr "Bonvolu entajpi unikan nomon.\nUsklado ne rolas."
 
 #: source/doc/doc.src#STR_QUERY_DEFAULT_TEMPLATE.String.Text
-msgid  "Should the template "$(TEXT)" become the default template?"
-msgstr ""
+msgid  "Should the template \"$(TEXT)\" become the default template?"
+msgstr "Ĉu ŝablono \"$(TEXT)\" iĝu la defaŭlta ŝablono?"
 
 #: source/doc/doc.src#MSG_QUERY_RESET_DEFAULT_TEMPLATE.QueryBox.Message
 msgid  "Do you want to reset the default template?"
@@ -1693,7 +1693,7 @@ msgstr "Ĉu reagordi la defaŭltan ŝablonon?"
 
 #: source/doc/doc.src#MSG_TEMPLATE_DIR_NOT_EXIST.InfoBox.Message
 msgid  "Template directory\n$(DIR)\ndoes not exist."
-msgstr ""
+msgstr "Ŝablona dosierujo\n$(DIR)\nne ekzistas."
 
 #: source/doc/doc.src#MSG_DOCINFO_CANTREAD.InfoBox.Message
 msgid  "Document info cannot be read."
@@ -1705,7 +1705,7 @@ msgstr "La elektita dosiero havas maltaŭgan formaton."
 
 #: source/doc/doc.src#STR_QUERY_MUSTOWNFORMAT.String.Text
 msgid  "Documents cannot be saved in $(FORMAT) format. Do you\nwant to save your changes using the $(OWNFORMAT) format?"
-msgstr ""
+msgstr "Ne eblis konservi dokumentojn en $(FORMAT)-formato. Ĉu\ntamen konservi viajn ŝanĝojn uzante la $(OWNFORMAT)-formaton?"
 
 #: source/doc/doc.src#STR_SAVEDOC.String.Text
 msgid  "~Save"
@@ -1744,8 +1744,8 @@ msgid  "%PRODUCTNAME Basic libraries"
 msgstr "%PRODUCTNAME-Basic-bibliotekoj"
 
 #: source/doc/doc.src#RID_STR_WARNSTYLEOVERWRITE.String.Text
-msgid  "Should the "$(ARG1)" Style be replaced?"
-msgstr ""
+msgid  "Should the \"$(ARG1)\" Style be replaced?"
+msgstr "Ĉu anstataŭigi la \"$(ARG1)\"-stilo?"
 
 #: source/doc/doc.src#STR_DOC_LOADING.String.Text
 msgid  "Loading Document"
@@ -1769,7 +1769,7 @@ msgstr "Nekonektita"
 
 #: source/doc/doc.src#MSG_OPEN_READONLY.QueryBox.Message
 msgid  "Document cannot be opened for editing.\nDo you want to open it as read-only?"
-msgstr ""
+msgstr "Ne eblas malfermi dokumenton por redakto.\nĈu malfermi ĝin kiel nurlegan?"
 
 #: source/doc/doc.src#STR_EDIT.String.Text
 msgid  "Edit"
@@ -1792,12 +1792,12 @@ msgid  "%PRODUCTNAME Frame Document"
 msgstr "%PRODUCTNAME -kadra dokumento"
 
 #: source/doc/doc.src#STR_TEMPL_MOVED.String.Text
-msgid  "The template "$(TEMPLATE)" was not found at the original location. A template with the same name exists at "$(FOUND)". Should this template be used in the future when comparing?"
-msgstr ""
+msgid  "The template \"$(TEMPLATE)\" was not found at the original location. A template with the same name exists at \"$(FOUND)\". Should this template be used in the future when comparing?"
+msgstr "La ŝablono \"$(TEMPLATE)\" ne estas trovita en la originala loko. Samnoma ŝablono ekzistas en \"$(FOUND)\". Ĉu tiu estonte estu uzata dum komparo?"
 
 #: source/doc/doc.src#STR_TEMPL_RESET.String.Text
-msgid  "The template "$(TEMPLATE)" has not been found. Should the template be looked for the next time the document is opened ?"
-msgstr ""
+msgid  "The template \"$(TEMPLATE)\" has not been found. Should the template be looked for the next time the document is opened ?"
+msgstr "Ne eblis trovi la ŝablonon \"$(TEMPLATE)\". Ĉu serĉi ĝin dum la sekva malfermo de la dokumento?"
 
 #: source/doc/doc.src#STR_AUTOMATICVERSION.String.Text
 msgid  "Automatically saved version"
@@ -1865,7 +1865,7 @@ msgstr "Ne ruli"
 
 #: source/doc/doc.src#FT_CANCEL.String.Text
 msgid  "According to the security settings, the macros in this document should not be run. Do you want to run them anyway?"
-msgstr ""
+msgstr "Laŭ la sekurecaj agordoj la makrooj en ĉi tiu dokumento ne ruliĝu. Ĉu tamen ruli ilin?"
 
 #: source/doc/doc.src#FT_OK.String.Text
 msgid  "Do you want to allow these macros to be run?"
@@ -1893,7 +1893,7 @@ msgstr "Dosierformato:"
 
 #: source/doc/doc.src#STR_HIDDENINFO_CONTAINS.String.Text
 msgid  "This document contains:\n\n"
-msgstr ""
+msgstr "Ĉi tiu dokumento enhavas:\n\n"
 
 #: source/doc/doc.src#STR_HIDDENINFO_RECORDCHANGES.String.Text
 msgid  "Recorded changes"
@@ -1933,7 +1933,7 @@ msgstr "Ĉu  daŭrigi kreadon de PDF-dosiero?"
 
 #: source/doc/doc.src#STR_NEW_FILENAME_SAVE.String.Text
 msgid  "If you do not want to overwrite the original document, you should save your work under a new filename."
-msgstr ""
+msgstr "Se vi ne volas anstataŭigi la originalan dokumenton, vi konservu vian laboron laŭ nova dosiernomo."
 
 #: source/doc/doc.src#STR_ERROR_DELETE_TEMPLATE_DIR.String.Text
 msgid  "Some template files are protected and can not be deleted."
@@ -1984,8 +1984,16 @@ msgid  "~Address Book..."
 msgstr "Adresaro..."
 
 #: source/doc/docvor.src#DLG_ORGANIZE.LB_LEFT_TYP.Default.StringList.item
+msgid  "Templates"
+msgstr "Ŝablonoj"
+
+#: source/doc/docvor.src#DLG_ORGANIZE.LB_LEFT_TYP.Default.StringList.item
 msgid  "Documents"
 msgstr "Dokumentoj"
+
+#: source/doc/docvor.src#DLG_ORGANIZE.LB_RIGHT_TYP.Default.StringList.item
+msgid  "Templates"
+msgstr "Ŝablonoj"
 
 #: source/doc/docvor.src#DLG_ORGANIZE.LB_RIGHT_TYP.Default.StringList.item
 msgid  "Documents"
@@ -2034,14 +2042,6 @@ msgstr "Igi ŝablonon defaŭlta"
 #: source/doc/docvor.src#DLG_ORGANIZE.BTN_EDIT.ID_RESET_DEFAULT_TEMPLATE.MenuItem.Text
 msgid  "Reset Default Template"
 msgstr "Reagordi defaŭltan ŝablonon"
-
-#: source/doc/docvor.src#DLG_ORGANIZE.LB_LEFT_TYP.Default.StringList.item
-msgid  "Templates"
-msgstr "Ŝablonoj"
-
-#: source/doc/docvor.src#DLG_ORGANIZE.LB_RIGHT_TYP.Default.StringList.item
-msgid  "Templates"
-msgstr "Ŝablonoj"
 
 #: source/doc/new.src#DLG_NEW_FILE.ModalDialog.Text
 msgid  "New"
@@ -2153,15 +2153,15 @@ msgstr ""
 
 #: source/view/view.src#STR_NODEFPRINTER.String.Text
 msgid  "No default printer found.\nPlease choose a printer and try again."
-msgstr ""
+msgstr "Ne trovis defaŭltan presilon.\nBonvolu elekti presilon kaj klopodu denove."
 
 #: source/view/view.src#STR_NOSTARTPRINTER.String.Text
 msgid  "Could not start printer.\nPlease check your printer configuration."
-msgstr ""
+msgstr "Ne povis komenci presilon.\nBonvolu kontroli la konfiguron de via presilo."
 
 #: source/view/view.src#STR_PRINTER_NOTAVAIL.String.Text
 msgid  "This document has been formatted for the printer $1. The specified printer is not available. \nDo you want to use the standard printer $2 ?"
-msgstr ""
+msgstr "Ĉi tiu dokumento estas formatita por la presilo $1. La specifita presilo ne estas disponebla. \nĈu vi volas uzi la normalan presilon $2 ?"
 
 #: source/view/view.src#STR_PRINT_OPTIONS.String.Text
 msgid  "Options..."
@@ -2187,6 +2187,10 @@ msgstr "Presado"
 msgid  "Page "
 msgstr "Paĝo "
 
+#: source/view/view.src#STR_ERROR_SAVE_TEMPLATE.String.Text
+msgid  "Error saving template "
+msgstr "Eraro dum konservado de ŝablono "
+
 #: source/view/view.src#STR_READONLY.String.Text
 msgid  " (read-only)"
 msgstr " (nurlega)"
@@ -2197,23 +2201,27 @@ msgstr ""
 
 #: source/view/view.src#STR_PRINT_NEWSIZE.String.Text
 msgid  "The page size has been modified.\nShould the new settings be saved\nin the active document?"
-msgstr ""
+msgstr "La paĝa grando estas modifita.\nĈu la novaj agordaĵoj estu konservataj\nen la aktiva dokumento?"
 
 #: source/view/view.src#STR_PRINT_NEWORISIZE.String.Text
 msgid  "The page size and orientation have been modified.\nWould you like to save the new settings in the\nactive document?"
 msgstr ""
 
 #: source/view/view.src#STR_PREVIEW_DOCINFO.String.Text
-msgid  "<html><body BGCOLOR="#c0c0c0"><font FACE="Arial"><dl><dt><b>Title:</b><dd>$(TITEL)<dt><b>Subject:</b><dd>$(THEME)<dt><b>Keywords:</b><dd>$(KEYWORDS)<dt><b>Description:</b><dd>$(TEXT)</dl></font></body></html>"
-msgstr ""
+msgid  "<html><body BGCOLOR=\"#c0c0c0\"><font FACE=\"Arial\"><dl><dt><b>Title:</b><dd>$(TITEL)<dt><b>Subject:</b><dd>$(THEME)<dt><b>Keywords:</b><dd>$(KEYWORDS)<dt><b>Description:</b><dd>$(TEXT)</dl></font></body></html>"
+msgstr "<html><body BGCOLOR=\"#c0c0c0\"><font FACE=\"Arial\"><dl><dt><b>Titolo:</b><dd>$(TITEL)<dt><b>Temo:</b><dd>$(THEME)<dt><b>Ŝlosilvortoj:</b><dd>$(KEYWORDS)<dt><b>Priskribo:</b><dd>$(TEXT)</dl></font></body></html>"
 
 #: source/view/view.src#STR_PREVIEW_NODOCINFO.String.Text
-msgid  "<HTML><BODY BGCOLOR="#c0c0c0"><BR><BR><P><FONT FACE="Arial"><B>No document properties found.</B></FONT></P></BODY></HTML>"
-msgstr ""
+msgid  "<HTML><BODY BGCOLOR=\"#c0c0c0\"><BR><BR><P><FONT FACE=\"Arial\"><B>No document properties found.</B></FONT></P></BODY></HTML>"
+msgstr "<HTML><BODY BGCOLOR=\"#c0c0c0\"><BR><BR><P><FONT FACE=\"Arial\"><B>Dokumentaj atributoj ne trovitaj.</B></FONT></P></BODY></HTML>"
 
 #: source/view/view.src#MSG_CANT_CLOSE.InfoBox.Message
 msgid  "The document cannot be closed because a\n print job is being carried out."
-msgstr ""
+msgstr "La dokumento ne fermeblas ĉar presa\ntasko estas plenumata."
+
+#: source/view/view.src#DLG_PRINTMONITOR_TEXT.#define.Text
+msgid  "Print Monitor"
+msgstr "Presila Mastrumilo"
 
 #: source/view/view.src#DLG_PRINTMONITOR.FT_PRINTING.FixedText.Text
 msgid  "is being printed on"
@@ -2225,11 +2233,11 @@ msgstr ""
 
 #: source/view/view.src#MSG_ERROR_SEND_MAIL.InfoBox.Message
 msgid  "An error occurred in sending the message. Possible errors could be a missing user account or a defective setup.\nPlease check the %PRODUCTNAME settings or your e-mail program settings."
-msgstr ""
+msgstr "Eraro okazis pri sendado de la mesaĝo. Eblaj eraroj povus esti mankanta konto de uzanto aŭ difekta agordaro.\nBonvolu kontroli la agordaron de %PRODUCTNAME aŭ de via retpoŝta programo."
 
 #: source/view/view.src#MSG_QUERY_OPENASTEMPLATE.QueryBox.Message
 msgid  "This document cannot be edited, possibly due to missing access rights. Do you want to edit a copy of the document?"
-msgstr ""
+msgstr "Ne eblas redakti ĉi tiun dokumenton, eble pro manko de aliraj rajtoj. Ĉu vi volas redakti kopion de la dokumento?"
 
 #: source/view/view.src#STR_REPAIREDDOCUMENT.String.Text
 msgid  " (repaired document)"
@@ -2237,12 +2245,4 @@ msgstr " (riparita dokumento)"
 
 #: source/view/view.src#MSG_ERROR_NO_WEBBROWSER_FOUND.ErrorBox.Message
 msgid  "%PRODUCTNAME could not find a web browser on your system. Please check your Desktop Preferences or install a web browser (for example, Mozilla) in the default  location requested during the browser installation."
-msgstr ""
-
-#: source/view/view.src#DLG_PRINTMONITOR_TEXT.#define.Text
-msgid  "Print Monitor"
-msgstr "Presila Mastrumilo"
-
-#: source/view/view.src#STR_ERROR_SAVE_TEMPLATE.String.Text
-msgid  "Error saving template "
-msgstr "Eraro dum konservado de ŝablono "
+msgstr "%PRODUCTNAME ne povis trovi TTT-legilon en via sistemo. Bonvolu kontroli viajn labortablajn preferojn aŭ instali TTT-legilon (ekzemple mozilla-n) en la defaŭlta loko petita dum la instalado de la TTT-legilo."

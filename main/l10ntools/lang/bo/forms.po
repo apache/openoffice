@@ -89,7 +89,7 @@ msgstr "ཡིག་འབྲུའི་ཕྲེང་གི་རིང་ཚ
 
 #: source/resource/xforms.src#RID_STR_XFORMS_VALUE_MIN_LENGTH.String.Text
 msgid  "The string must be at least $2 characters long."
-msgstr ""
+msgstr "ཡིག་འབྲུའི་ཕྲེང་གི་རིང་ཚད་དེ་ངེས་པར་དུ་$2ལས་མི་ཉུང་བའི་ཡིག་རྟགས་ཡིན་དགོས།"
 
 #: source/resource/xforms.src#RID_STR_XFORMS_VALUE_MAX_LENGTH.String.Text
 msgid  "The string can only be $2 characters long at most."
@@ -177,7 +177,7 @@ msgstr "བརྗེ་བ།"
 
 #: source/resource/strings.src#RID_STR_CONTROL_SUBSTITUTED_EPXPLAIN.String.Text
 msgid  "An error occurred while this control was being loaded. It was therefore replaced with a placeholder."
-msgstr ""
+msgstr "ཚོད་འཛིན་བྱེད་ཆས་དེ་བསྒར་འཇུག་བྱེད་སྐབས་ནོར་འཁྲུལ་ཐོན་པ། གནས་ཟིན་གྱི་འབྲུ་རྟགས་དེ་སྤྱད་དེ་ཚོད་འཛིན་བྱེད་ཆས་དེ་བརྗེ་དགོས།"
 
 #: source/resource/strings.src#RID_STR_READERROR.String.Text
 msgid  "Error reading data from database"
@@ -233,7 +233,7 @@ msgstr "ཚིག་གྲུབ་ལ་བརྡ་སྤྲོད་ནོར
 
 #: source/resource/strings.src#RID_STR_INCOMPATIBLE_TYPES.String.Text
 msgid  "The value types supported by the binding cannot be used for exchanging data with this control."
-msgstr ""
+msgstr "མཉམ་སྦྲགས་ནུས་པས་རྒྱབ་སྐྱོར་བྱེད་པའི་ཐོབ་ཐང་རིགས་གྲས་དེ་འཛིན་ཆས་འདི་དང་གྲངས་གཞི་བརྗེ་རེས་བྱེད་པར་སྤྱོད་མི་ཐུབ།"
 
 #: source/resource/strings.src#RID_STR_LABEL_RECORD.String.Text
 msgid  "Record"
@@ -241,7 +241,7 @@ msgstr "ཟིན་ཐོ།"
 
 #: source/resource/strings.src#RID_STR_INVALID_VALIDATOR.String.Text
 msgid  "The control is connected to an external value binding, which at the same time acts as validator. You need to revoke the value binding, before you can set a new validator."
-msgstr ""
+msgstr "འཛིན་ཆས་འདི་དུས་མཚུངས་སུ་ར་སྤྲོད་བྱ་རིམ་གྱི་ནུས་པ་ལྡན་པའི་ཕྱི་ངོས་ཐང་ལ་མཉམ་སྦྲགས་ཐོག་འབྲེལ་མཐུད་བྱེད། སྔོན་ལ་ཐང་འདི་མཉམ་སྦྲགས་བྱེད་རྒྱུ་མེད་པ་བཟོས་ན་གཞི་ནས་ར་སྤྲོད་བྱ་རིམ་གསར་པ་སྒྲིག་སྦྱོར་བྱེད་ཐུབ།"
 
 #: source/resource/strings.src#RID_STR_LABEL_OF.String.Text
 msgid  "of"
@@ -249,7 +249,7 @@ msgstr "/"
 
 #: source/resource/strings.src#RID_STR_QUERY_SAVE_MODIFIED_ROW.String.Text
 msgid  "The content of the current form has been modified.\nDo you want to save your changes?"
-msgstr ""
+msgstr "མིག་སྔའི་སྒྲོམ་གཟུགས་ཀྱི་ནང་དོན་བཟོ་བཅོས་བརྒྱབ་ཟིན་འདུག\n བཟོ་བཅོས་དེ་དག་ཉར་ཚགས་བྱེད་དམ།"
 
 #: source/resource/strings.src#RID_STR_COULD_NOT_SET_ORDER.String.Text
 msgid  "Error setting the sort criteria"
@@ -265,7 +265,7 @@ msgstr "བྱེད་ནུས་དེ་ལག་བསྟར་བྱེད
 
 #: source/resource/strings.src#RID_STR_FEATURE_NOT_EXECUTABLE.String.Text
 msgid  "This function cannot be executed, but is only for status queries."
-msgstr ""
+msgstr "རྩོལ་ནུས་འདིས་ལག་བསྟར་བྱེད་ཐབས་མིན་འདུག དེ་རྣམ་པའི་རྩད་བཤེར་ཁོ་ནར་སྤྱོད་རྒྱུ་ལས་མེད།"
 
 #: source/resource/strings.src#RID_STR_FEATURE_UNKNOWN.String.Text
 msgid  "Unknown function."

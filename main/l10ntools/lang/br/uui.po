@@ -53,7 +53,7 @@ msgstr "Asantiñ ar skrid testeniñ-mañ evit an estez-mañ nemetken"
 
 #: source/unknownauthdlg.src#DLG_UUI_UNKNOWNAUTH.RB_DONTACCEPT_2.RadioButton.Text
 msgid  "Do not accept this certificate and do not connect to this Web site"
-msgstr ""
+msgstr "Na asantiñ ket ar skrid testeniñ-mañ ha na kennaskañ ket ouzh al lec'hienn-mañ"
 
 #: source/unknownauthdlg.src#DLG_UUI_UNKNOWNAUTH.FT_LABEL_1.FixedText.Text
 msgid  "No Text"
@@ -137,7 +137,7 @@ msgstr "Ar vukenn zo anezhi endeo."
 
 #: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_IO_MODULESIZEEXCEEDED & ERRCODE_RES_MASK).String.Text
 msgid  "You are about to save/export a password protected basic library containing module(s) \n$(ARG1)\nwhich are too large to store in binary format. If you wish users that don't have access to the library password to be able to run macros in those module(s) you must split those modules into a number of smaller modules. Do you wish to continue to save/export this library?"
-msgstr ""
+msgstr "Emaoc'h war-nes enrollañ/ezporzhiañ ul levraoueg BASIC gwarezet gant ur ger-tremen, ha ganti ar mollad(où) \n$(ARG1)\na zo re vraz evit bezañ berniet gant ur mentrezh daoudekel. M'ho peus c'hoant aotreañ an arveriaded ha n'o deus ket ar ger tremen evit lañsañ makroioù er mollad(où)-se, e vo ret deoc'h didroc'hañ ar molladoù en isvolladoù bihanoc'h. Ha fellout a ra deoc'h enrollañ/ezporzhiañ al levraoueg-se ?"
 
 #: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_IO_BADCRC & ERRCODE_RES_MASK).String.Text
 msgid  "The data from $(ARG1) has an incorrect checksum."
@@ -173,7 +173,7 @@ msgstr "N'eo ket prest $(ARG1)."
 
 #: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_IO_NOTSAMEDEVICE & ERRCODE_RES_MASK).String.Text
 msgid  "Action impossible: $(ARG1) and $(ARG2) are different devices (drives)."
-msgstr ""
+msgstr "Gwezhiadur dibosupl : $(ARG1) ha $(ARG2) a zo ardivinkoù (unvezioù) disheñvel."
 
 #: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_IO_GENERAL & ERRCODE_RES_MASK).String.Text
 msgid  "General input/output error while accessing $(ARG1)."
@@ -201,7 +201,7 @@ msgstr "Lusket eo bet ar gwezhiadur war $(ARG1) gant un arventenn didalvoudek."
 
 #: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_IO_ISWILDCARD & ERRCODE_RES_MASK).String.Text
 msgid  "The operation cannot be performed because $(ARG1) contains wildcards."
-msgstr ""
+msgstr "N'haller ket erounit ar gwezhiadur-mañ : bez ez eus jokered gant $(ARG1). "
 
 #: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_IO_LOCKVIOLATION & ERRCODE_RES_MASK).String.Text
 msgid  "Error during shared access to $(ARG1)."
@@ -241,15 +241,15 @@ msgstr "Esaou peurleun war ar benveg $(ARG1)."
 
 #: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_IO_TOOMANYOPENFILES & ERRCODE_RES_MASK).String.Text
 msgid  "The operation on $(ARG1) cannot be performed because too many files are already open."
-msgstr ""
+msgstr "N'haller ket erounit ar gwezhiadur war $(ARG1) : re a restroù zo digor."
 
 #: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_IO_OUTOFMEMORY & ERRCODE_RES_MASK).String.Text
 msgid  "The operation on $(ARG1) cannot be performed because there is no more memory available."
-msgstr ""
+msgstr "N'haller ket erounit ar gwezhiadur war $(ARG1) : n'eus ket memor a-walc'h."
 
 #: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_IO_PENDING & ERRCODE_RES_MASK).String.Text
 msgid  "The operation on $(ARG1) cannot continue because more data is pending."
-msgstr ""
+msgstr "N'haller ket kenderc'hel gant ar gwezhiadur war $(ARG1) : roadennoù all ez eus war c'hortoz."
 
 #: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_IO_RECURSIVE & ERRCODE_RES_MASK).String.Text
 msgid  "$(ARG1) cannot be copied into itself."
@@ -289,11 +289,11 @@ msgstr "An handelv Java $(ARG1) staliet n'eo ket skoret."
 
 #: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_WRONGJAVA_MIN & ERRCODE_RES_MASK).String.Text
 msgid  "The installed Java version is not supported, at least version $(ARG1) is required."
-msgstr ""
+msgstr "An handelv Java staliet n'eo ket gouzañvet. Handelv izek ret : $(ARG1)."
 
 #: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_WRONGJAVA_VERSION_MIN & ERRCODE_RES_MASK).String.Text
 msgid  "The installed Java version $(ARG1) is not supported, at least version $(ARG2) is required."
-msgstr ""
+msgstr "An handelv Java $(ARG1) staliet n'eo ket skoret. Handelv izek ret : $(ARG2)."
 
 #: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_BADPARTNERSHIP & ERRCODE_RES_MASK).String.Text
 msgid  "The data associated with the partnership is corrupted."
@@ -325,31 +325,31 @@ msgstr "N'haller ket krouiñ an ergorenn er c'havlec'hiad $(ARG1)."
 
 #: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_IO_UNSUPPORTEDOVERWRITE & ERRCODE_RES_MASK).String.Text
 msgid  "%PRODUCTNAME cannot keep files from being overwritten when this transmission protocol is used. Do you want to continue anyway?"
-msgstr ""
+msgstr "N'hall ket %PRODUCTNAME herzel ouzh flastrañ ar restroù gant ar c'homenad treuzkas implijet. Mont pelloc'h ?"
 
 #: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_IO_BROKENPACKAGE & ERRCODE_RES_MASK).String.Text
 msgid  "The file '$(ARG1)' is corrupt and therefore cannot be opened. %PRODUCTNAME can try to repair the file.\n\nThe corruption could be the result of document manipulation or of structural document damage due to data transmission.\n\nWe recommend that you do not trust the content of the repaired document.\nExecution of macros is disabled for this document.\n\nShould %PRODUCTNAME repair the file?\n"
-msgstr ""
+msgstr "N'haller ket digeriñ ar restr '$(ARG1)' : siek eo. Fellout a rafe deoc'h ma vefe ratreet gant %PRODUCTNAME ?"
 
 #: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_IO_BROKENPACKAGE_CANTREPAIR & ERRCODE_RES_MASK).String.Text
 msgid  "The file '$(ARG1)' could not be repaired and therefore cannot be opened."
-msgstr ""
+msgstr "N'haller ket digeriñ ar restr '$(ARG1)' : ne oa ket tu d'he ratreañ."
 
 #: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_CONFIGURATION_BROKENDATA_NOREMOVE & ERRCODE_RES_MASK).String.Text
 msgid  "Configuration data in '$(ARG1)' is corrupted. Without this data some functions may not operate correctly.\nDo you want to continue startup of %PRODUCTNAME without the corrupted configuration data?"
-msgstr ""
+msgstr "Kontronet eo ar roadennoù kefluniañ e $(ARG1). Hep ar roadennoù-mañ nez ay ket mat en-dro arc'hwelioù zo.\nKenderc'hel gant loc'hañ %PRODUCTNAME hep ar roadennoù kefluniañ kontronet ?"
 
 #: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_CONFIGURATION_BROKENDATA_WITHREMOVE & ERRCODE_RES_MASK).String.Text
 msgid  "The personal configuration file '$(ARG1)' is corrupted and must be deleted to continue. Some of your personal settings may be lost.\nDo you want to continue startup of %PRODUCTNAME without the corrupted configuration data?"
-msgstr ""
+msgstr "Kontronet eo ar restr kefluniañ personel $(ARG1) ; ret eo deoc'h he dilemel a-benn gallout kenderc'hel. Un darn eus hoc'h arventennoù personel zo bet kollet marteze.\nKenderc'hel gant al loc'hañ eus %PRODUCTNAME hep ar roadennoù kefluniañ kontronet ?"
 
 #: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_CONFIGURATION_BACKENDMISSING & ERRCODE_RES_MASK).String.Text
 msgid  "The configuration data source '$(ARG1)' is unavailable. Without this data some functions may not operate correctly."
-msgstr ""
+msgstr "N'eo ket hegerz an tarzh roadennoù kefluniañ '$(ARG1)'. Hep ar roadennoù-mañ e c'hallfe c'hoarvezout nad afe ket mat en-dro arc'hwelioù zo."
 
 #: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_CONFIGURATION_BACKENDMISSING_WITHRECOVER & ERRCODE_RES_MASK).String.Text
 msgid  "The configuration data source '$(ARG1)' is unavailable. Without this data some functions may not operate correctly.\nDo you want to continue startup of %PRODUCTNAME without the missing configuration data?"
-msgstr ""
+msgstr "N'eo ket hegerz an tarzh roadennoù kefluniañ '$(ARG1)'. Hep ar roadennoù-mañ ned ay ket mat en-dro arc'hwelioù zo. \nKenderc'hel gant al loc'hañ eus %PRODUCTNAME hep ar roadennoù kefluniañ o vankout a fell deoc'h ?"
 
 #: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_INVALID_XFORMS_SUBMISSION_DATA & ERRCODE_RES_MASK).STRING.Text
 msgid  "The form contains invalid data. Do you still want to continue?"
@@ -373,19 +373,19 @@ msgstr ""
 
 #: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_UNKNOWNAUTH_UNTRUSTED).STRING.Text
 msgid  "Unable to verify the identity of $(ARG1) site.\n\nBefore accepting this certificate, you should examine this site's certificate carefully. Are you willing to accept this certificate for the purpose of identifying the Web site $(ARG1)?"
-msgstr ""
+msgstr "N'eo ket barrek da wiriañ naoudi eus al lec'hienn $(ARG1).\n\nKent degemer ar skrid testeni-mañ e vefe gwell deoc'h gwiriañ ar skid-mañ gant evezh. Ha fellout a ra deoc'h degemer ar skrid testeni-mañ a-benn naoudiañ al lec'hienn $(ARG1)?"
 
 #: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_SSLWARN_EXPIRED_1).STRING.Text
 msgid  "$(ARG1) is a site that uses a security certificate to encrypt data during transmission, but its certificate expired on $(ARG2).\n\nYou should check to make sure that your computer's time is correct."
-msgstr ""
+msgstr "Ul lec'hienn oc'h arverañ ur skrid testeni evit enrinegañ ar roadennoù e-pad an treuzkas eo $(ARG1) met diamzeriet eo he skrid testeni abaoe $(ARG2).\n\nGwell e vefe deoc'h gwiriañ mard eo mar eur hoc'h urzhiataer."
 
 #: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_SSLWARN_DOMAINMISMATCH_1).STRING.Text
 msgid  "You have attempted to establish a connection with $(ARG1). However, the security certificate presented belongs to $(ARG2). It is possible, though unlikely, that someone may be trying to intercept your communication with this web site.\n\nIf you suspect the certificate shown does not belong to $(ARG1), please cancel the connection and notify the site administrator.\n\nWould you like to continue anyway?"
-msgstr ""
+msgstr "Klasket hoc'h eus en em gennaskañ ouzh $(ARG1). Koulskoude, da $(ARG2) eo ar skridoù testeni kinniget a-fet diogelroez. Marteze, moarvat n'eo ket an dra-se, emañ unan bennak o klask dastapout ho pellgehentadenn gant e lec'hienn internet.\n\nMar bez mar ganeoc'h diwar-benn $(ARG1), dilezit ar c'hennask ha kasit ur ger da ardoer al lec'hienn.\n\nHa fellout a ra deoc'h kenderc'hel ganti memes tra ?"
 
 #: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_SSLWARN_INVALID_1).STRING.Text
 msgid  "The certificate could not be validated. You should examine this site's certificate carefully.\n\nIf you suspect the certificate shown, please cancel the connection and notify the site administrator."
-msgstr ""
+msgstr "Ne oa ket tu talvoudekaat ar skrid testeni. Gwell e vefe deoc'h gwiriañ ar skid-mañ gant evezh.\n\nMard ez eus arvar gant ar skir-mañ, dilezit ar c'hennaskañ ha kasit ur gemennadenn d'an ardoer."
 
 #: source/ids.src#RID_UUI_ERRHDL.(TITLE_UUI_SSLWARN_DOMAINMISMATCH).STRING.Text
 msgid  "Security Warning: Domain Name Mismatch"
@@ -416,8 +416,8 @@ msgid  "Enter user name and password for: \n%1"
 msgstr ""
 
 #: source/logindlg.src#DLG_UUI_LOGIN.STR_LOGIN_REALM.String.Text
-msgid  "Enter user name and password for: \n"%2" on %1"
-msgstr ""
+msgid  "Enter user name and password for: \n\"%2\" on %1"
+msgstr "Euvrit hoc'h anv arveriad hag ho ker tremen evit \"%2\" war %1."
 
 #: source/logindlg.src#DLG_UUI_LOGIN.FT_LOGIN_PATH.FixedText.Text
 msgid  "~Path"
@@ -469,7 +469,7 @@ msgstr "~Asantiñ"
 
 #: source/cookiedg.src#STR_COOKIES_RECV_START.String.Text
 msgid  "The '${HOST}' server wishes to set one or more cookies.\nCookies contain information referring to certain URL classes. If %PRODUCTNAME later requests a document with a URL corresponding to the class of a previously set cookie, %PRODUCTNAME will send this information to the server. This allows a server to recognize the status of a WWW application, e.g., when shopping online.\n\nThe following Cookies should be set:\n\n"
-msgstr ""
+msgstr "Emañ an dafariad '${HOST}' o klask kas unan pe veur a gouki.\nStlennoù a-fet rummadoù URL zo eo ar c'houkioù. Diwezhatoc'h, mar bez ret da %PRODUCTNAME kaout un teul e URL o klotañ gant rummad ur c'houki bet degemeret endeo e vo kaset ar stlenn-mañ d'an dafariad. An dra-se a ro tu d'an dafariad da anavezout stad un arload WWW (da sk. ar bevezadoù lakaet e paner ur reizhiad prenañ).\n\nLakaet e vo ar c'houkioù da-heul :\n\n"
 
 #: source/cookiedg.src#STR_COOKIES_RECV_COOKIES.String.Text
 msgid  "Domain: ${DOMAIN}, Path: ${PATH}, Cookie: ${COOKIE}.\n"
@@ -481,7 +481,7 @@ msgstr "Degemer Koukioù"
 
 #: source/cookiedg.src#STR_COOKIES_SEND_START.String.Text
 msgid  "%PRODUCTNAME has saved cookies for the server '${HOST}' which will be sent when requesting the document ${PATH}.\nCookies contain information which refers to certain URL classes. They are sent by some servers to %PRODUCTNAME where they are saved when certain documents are accessed. If %PRODUCTNAME loads a document that, according to the URL, corresponds to a class of one of the previously received Cookies, %PRODUCTNAME will send this information to that server. This enables a server to keep track of the status of a WWW application, e.g., when shopping online.\n\nThe following Cookies should be set:\n\n"
-msgstr ""
+msgstr "%PRODUCTNAME en deus enrollet Koukioù evit an dafariad '${HOST}' hag a vo kaset da vare azgoulenn an teul ${PATH}.\nStlennoù o taveiñ ouzh rummoù URL zo eo ar c'houkioù. Diwezhatoc'h, mard azgoulenn %PRODUCTNAME un teul e URL o klotañ gant rumm ur c'houki bet degemeret endeo e vo kaset ar stlenn-mañ d'an dafariad. An dra-se a ro tu d'an dafariadoù da anavezout stad un arload WWW (da sk. an traezennoù lakaet e paner ur reizhiad prenañ).\n\nAr c'houkioù da-heul a vo lec'hiet : \n\n"
 
 #: source/cookiedg.src#STR_COOKIES_SEND_COOKIES.String.Text
 msgid  "Domain: ${DOMAIN}, Path: ${PATH}, Cookie: ${COOKIE}.\n"
@@ -609,7 +609,7 @@ msgstr "Skrammañ ar sinadurioù..."
 
 #: source/secmacrowarnings.src#RID_XMLSECDLG_MACROWARN.FI_DESCR2.FixedText.Text
 msgid  "Macros may contain viruses. Disabling macros for a document is always safe. If you disable macros you may lose functionality provided by the document macros."
-msgstr ""
+msgstr "Viruz a c'hall bezañ er makroioù. Diarvar e vez diweredekaat ar makroioù atav. Mar bez diweredekaet makroioù ganeoc'h e vo kollet marteze keweriusterioù pourchaset gant ar makroioù teul."
 
 #: source/secmacrowarnings.src#RID_XMLSECDLG_MACROWARN.CB_ALWAYSTRUST.CheckBox.Text
 msgid  "Always trust macros from this source"

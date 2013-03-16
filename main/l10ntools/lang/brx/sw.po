@@ -725,7 +725,7 @@ msgstr "बेयो मोनसे उइनवर्ड' फाइल नङ�
 
 #: source/ui/app/error.src#RID_SW_ERRHDL.ERR_CODE ( ERRCODE_CLASS_READ , ERR_WW6_FASTSAVE_ERR ).String.Text
 msgid  "This file was saved with WinWord in 'Fast Save' mode. Please unmark the WinWord option 'Allow Fast Saves' and save the file again."
-msgstr ""
+msgstr "बे फाइलखौ उइनवर्डजों 'गोख्रै थिनाय' म'डआव थिनाय जादोंमोन। अननानै उइनवर्ड  उफ्रा 'गोख्रै थिनाय बिथोन' आव दागखौ बोखार आरो फाइलखौ आरोबाव थिना दोन।"
 
 #: source/ui/app/error.src#RID_SW_ERRHDL.ERR_CODE ( ERRCODE_CLASS_READ , ERR_FORMAT_ROWCOL ).String.Text
 msgid  "File format error found at $(ARG1)(row,col)."
@@ -741,7 +741,7 @@ msgstr "बेयो मोनसे उइनवर्ड97 फाइल गै
 
 #: source/ui/app/error.src#RID_SW_ERRHDL.ERR_CODE ( ERRCODE_CLASS_READ , ERR_FORMAT_FILE_ROWCOL ).String.Text
 msgid  "Format error discovered in the file in sub-document $(ARG1) at $(ARG2)(row,col)."
-msgstr ""
+msgstr "$(ARG2)(सारि,खाम्फा)आव दालाय-फोरमान बिलाइ $(ARG1) नि फाइलआव दाथाय गोरोनथि मोनबाय।"
 
 #: source/ui/app/error.src#RID_SW_ERRHDL.ERR_CODE ( ERRCODE_CLASS_WRITE , ERR_SWG_WRITE_ERROR ).String.Text
 msgid  "Error writing file."
@@ -789,7 +789,7 @@ msgstr "जेबो सावगारिखौ फरायनो हाया
 
 #: source/ui/app/error.src#RID_SW_ERRHDL.WARN_CODE ( ERRCODE_CLASS_READ , WARN_WW6_FASTSAVE_ERR ).String.Text
 msgid  "This file was saved with WinWord in 'Fast Save' mode. Please unmark the WinWord option 'Allow Fast Saves' and save the file again."
-msgstr ""
+msgstr "बे फाइलखौ उइनवर्डजों 'गोख्रै थिनाय' म'डआव थिनाय जादोंमोन। अननानै उइनवर्ड  उफ्रा 'गोख्रै थिनाय बिथोन' आव दागखौ बोखार आरो फाइलखौ आरोबाव थिना दोन।"
 
 #: source/ui/app/error.src#RID_SW_ERRHDL.WARN_CODE ( ERRCODE_CLASS_READ , WARN_SWG_FEATURES_LOST ).String.Text
 msgid  "Not all attributes could be read."
@@ -817,7 +817,7 @@ msgstr "फोरमान बिलाइखौ आबुङै थिनो �
 
 #: source/ui/app/error.src#RID_SW_ERRHDL.WARN_CODE ( ERRCODE_CLASS_WRITE , WARN_SWG_HTML_NO_MACROS).String.Text
 msgid  "This HTML document contains %PRODUCTNAME Basic macros.\nThey were not saved with the current export settings."
-msgstr ""
+msgstr "बे HTML फोरमान बिलाइआव s %PRODUCTNAME गुदि मेक्र'स दङ।\n बेफोरखौ बोहैथि लाबोनाय फज'नायजों थिनाय जायाखैमोन।"
 
 #: source/ui/app/error.src#RID_SW_ERRHDL.ERR_CODE ( ERRCODE_CLASS_WRITE , WARN_WRITE_ERROR_FILE ).String.Text
 msgid  "Error in writing sub-document $(ARG1)."
@@ -825,7 +825,7 @@ msgstr "दालाय-फोरमान बिलाइ $(ARG1) लिरन�
 
 #: source/ui/app/error.src#RID_SW_ERRHDL.ERR_CODE ( ERRCODE_CLASS_WRITE , WARN_FORMAT_FILE_ROWCOL ).String.Text
 msgid  "Format error discovered in the file in sub-document $(ARG1) at $(ARG2)(row,col)."
-msgstr ""
+msgstr "$(ARG2)(सारि,खाम्फा)आव दालाय-फोरमान बिलाइ $(ARG1) नि फाइलआव दाथाय गोरोनथि मोनबाय।"
 
 #: source/ui/app/app.src#STR_PRINT_MERGE_MACRO.String.Text
 msgid  "Print form letters"
@@ -1076,8 +1076,8 @@ msgid  "Adapt Objects..."
 msgstr "बेसाद गोरोब हो..."
 
 #: source/ui/app/app.src#MSG_COMCORE_ASKSEARCH.QueryBox.Message
-msgid  "To proceed with this action, you must first turn off the "undo" function. Do you want to turn off the "undo" function?"
-msgstr ""
+msgid  "To proceed with this action, you must first turn off the \"undo\" function. Do you want to turn off the \"undo\" function?"
+msgstr "बे हाबाजों दावगालांनो, नोंथाङा सिगांआव \"सिगांनि महराव लाबोफिननो\"खामानिखौ बन्द खालाम थारनांगोन।  नोंथाङा \"सिगांनि महराव लाबोफिननो\"खामानिखौ बन्द खालामनो सानो नामा?"
 
 #: source/ui/app/app.src#STR_TABLE_DEFNAME.String.Text
 msgid  "Table"
@@ -1109,15 +1109,15 @@ msgstr "लांदां बिखं"
 
 #: source/ui/app/app.src#MSG_CLPBRD_CLEAR.QueryBox.Message
 msgid  "You have a large amount of data saved in the clipboard.\nShould the clipboard contents remain available for other applications?"
-msgstr ""
+msgstr "नोंथाङा गोबां बिबांनि डाटा क्लिपबर्डआव थिबाय।\nक्लिपबर्डआव थानाय आयदाफोर गुबुन खामानिआव बाहायनायनि थाखाय मोननो हाथाव खालामनो नामा?"
 
 #: source/ui/app/app.src#MSG_SAVE_HTML_QUERY.QueryBox.Message
 msgid  "Conversion into HTML format \nmay cause information loss. \nDo you want to save the document?"
-msgstr ""
+msgstr "HTML दाथायाव सोलायनाया\nमोनथिहोनायखौ खोमाहोनो हागौ। \nनोंथाङा फोरमान बिलाइखौ थिनो सानो नामा?"
 
 #: source/ui/app/app.src#MSG_SAVEAS_HTML_QUERY.QueryBox.Message
 msgid  "The source code can only be displayed if the document is saved in HTML format.\nWould you like to save the document as HTML?"
-msgstr ""
+msgstr "फोरमान बिलाइखौ HTML दाथायाव थियोब्ला फुंखा क'डखौल' दिनथिफुंनो हागोन।  \nनोंथाङा फोरमान बिलाइखौ HTML बादि थिनो सानो नामा?"
 
 #: source/ui/app/app.src#STR_ABSTRACT_TITLE.String.Text
 msgid  "Abstract: "
@@ -1161,11 +1161,11 @@ msgstr ""
 
 #: source/ui/app/app.src#MSG_DISABLE_UNDO_QUESTION.WarningBox.Message
 msgid  "This action deletes the list of actions that can be undone. Previous changes made to the document are still valid, but cannot be undone. Do you want to continue formatting?"
-msgstr ""
+msgstr "बे हाबाया सिगांनि महराव लाबोफिननो हानाय हाबाफोरनि फारिलाइखौ गैया खालामो।  फोरमान बिलाइआव सिगाङाव सोलायनाय खालामनाया दासिमबो बाहायजाथाव, नाथाय बेफोरखौ सिगांनि महराव लाबोफिननो हाया। नोंथाङा दाथाय दानायखौ सालाय लांबाय थानो सानो नामा?"
 
 #: source/ui/app/app.src#MSG_PRINT_AS_MERGE.QueryBox.Message
 msgid  "Your document contains address database fields. Do you want to print a form letter?"
-msgstr ""
+msgstr "नोंथानि फोरमान बिलाइआव थं डाटाबेस फोथारफोर दङ। नोंथाङा फर्म हांखोखौ साफायनो सानो नामा?"
 
 #: source/ui/app/app.src#DLG_MERGE_SOURCE_UNAVAILABLE.ST_MERGE_SOURCE_UNAVAILABLE.FixedText.Text
 msgid  "The data source \'%1\' was not found. Thus the connection to the data source could not be established.\n\nPlease check the connections settings."
@@ -1177,7 +1177,7 @@ msgstr "फोनांजाब फज'नायखौ आनजाद खा�
 
 #: source/ui/app/app.src#MSG_DATA_SOURCES_UNAVAILABLE.WarningBox.Message
 msgid  "No data source has been set up yet. You need a data source, such as a database, to supply data (for example, names and addresses) for the fields."
-msgstr ""
+msgstr "दासिमबो डाटा फुंखाखौ गायसननाय जायाखै।  नोंथानो डाटाबेस बादि डाटा फुंखा फोथारनि थाखाय डाटा (दिनथि बादियै मुंफोर आरो थंफोर) जगायनो गोनांथि जायो।   "
 
 #: source/ui/app/app.src#RID_MODULE_TOOLBOX.String.Text
 msgid  "Function Bar (viewing mode)"
@@ -1193,7 +1193,7 @@ msgstr ""
 
 #: source/ui/app/app.src#MSG_DISABLE_READLINE_QUESTION.WarningBox.Message
 msgid  "In the current document, changes are being recorded but not shown as such. In large documents, delays can occur when the document is edited. Do you want to show the changes to avoid delays?"
-msgstr ""
+msgstr "बोहैथि फोरमान बिलाइआव, सोलायनायखौ रेकर्ड खालामनाय जागासिनो दङ नाथाय बे बादि दिनथिनाय जायाखै। गेदेर फोरमान बिलाइआव गोबाव नुजाथिनो हागौ जेब्ला फोरमान बिलाइखौ सुजुनाय जायो। नोंथाङा गोबाव जानायखौ नागारनो सोलायनायफोरखौ दिनथिनो सानो नामा?"
 
 #: source/ui/app/mn.src#MN_TXT.FN_FORMAT_PAGE_DLG.MenuItem.Text
 msgid  "Pa~ge..."
@@ -2041,7 +2041,7 @@ msgstr "[रावबो नङा]"
 
 #: source/ui/chrdlg/chrdlg.src#MSG_ILLEGAL_PAGENUM.InfoBox.Message
 msgid  "Page numbers cannot be applied to the current page.  Even numbers can be used on left pages, odd numbers on right pages."
-msgstr ""
+msgstr "बोहैथि बिखङाव बिखं अनजिमाफोर बाहायनो हायै। जथाय अनजिमाफोरखौ आगसि बिखंफोराव बाहायनो हागोन, जथाय नङै अनजिमाखौ आगदा बिखंफोराव बाहायनो हागोन।"
 
 #: source/ui/chrdlg/swbreak.src#DLG_BREAK.ModalDialog.Text
 msgid  "Insert Break"
@@ -2797,7 +2797,7 @@ msgstr "<बाहायग्रा फज'नायफोर>"
 
 #: source/ui/config/optcomp.src#TP_OPTCOMPATIBILITY_PAGE.STR_QRYBOX_USEASDEFAULT.String.Text
 msgid  "Do you want to change the compatibility options of the default template?\nThis will affect all new documents based on the default template."
-msgstr ""
+msgstr "नोंथाङा डिफल्ट टेमप्लेटनि गोरोबथि गोनां उफ्राफोर सोलायनो सानो नामा?\nडिफल्ट टेमप्लेटआव बिथा खालामनानै बेयो गासै गोदोन फोरमान बिलाइआव गोहोम गोग्लैगोन।"
 
 #: source/ui/config/optcomp.src#TP_OPTCOMPATIBILITY_PAGE.STR_PRINTER_METRICS.String.Text
 msgid  "Use printer metrics for document formatting"
@@ -2805,11 +2805,11 @@ msgstr "फोरमान बिलाइ दाथाय दानायनि
 
 #: source/ui/config/optcomp.src#TP_OPTCOMPATIBILITY_PAGE.STR_MERGE_PARA_DIST.String.Text
 msgid  "Add spacing between paragraphs and tables (in current document)"
-msgstr ""
+msgstr "आरथोरफोर आरो फारिलाइफोरनि (बोहैथि फोरमान बिलाइआव)गेजेराव लांदां जायगा होनायखौ दाजाबदेर"
 
 #: source/ui/config/optcomp.src#TP_OPTCOMPATIBILITY_PAGE.STR_MERGE_PARA_DIST_PAGESTART.String.Text
 msgid  "Add paragraph and table spacing at tops of pages (in current document)"
-msgstr ""
+msgstr "बिखंफोर (बोहैथि फोरमान बिलाइआव) नि गोजौआव लांदां जायगा होनाय आरथोर आरो फारिलाइ दाजाबदेर"
 
 #: source/ui/config/optcomp.src#TP_OPTCOMPATIBILITY_PAGE.STR_TAB_ALIGNMENT.String.Text
 msgid  "Use %WRITERCOMPATIBILITYVERSIONOOO11 tabstop formatting"
@@ -2817,7 +2817,7 @@ msgstr "%WRITERCOMPATIBILITYVERSIONOOO11 टेबस्टप दाथाय �
 
 #: source/ui/config/optcomp.src#TP_OPTCOMPATIBILITY_PAGE.STR_EXTERNAL_LEADING.String.Text
 msgid  "Do not add leading (extra space) between lines of text"
-msgstr ""
+msgstr "फराय बिजाबनि सारिफोरनि गेजेराव दैदेननाय(बांद्राय लांदां जायगा) दाजाबदेरनो नाङा"
 
 #: source/ui/config/optcomp.src#TP_OPTCOMPATIBILITY_PAGE.STR_LINE_SPACING.String.Text
 msgid  "Use %WRITERCOMPATIBILITYVERSIONOOO11 line spacing"
@@ -2825,7 +2825,7 @@ msgstr "%WRITERCOMPATIBILITYVERSIONOOO11 सारि लांदां जा�
 
 #: source/ui/config/optcomp.src#TP_OPTCOMPATIBILITY_PAGE.STR_ADD_TABLESPACING.String.Text
 msgid  "Add paragraph and table spacing at bottom of table cells"
-msgstr ""
+msgstr "फारिलाइ खथासाफोरनि गाहायाव लांदां जायगा होनाय आनथोर आरो फारिलाइखौ दाजाबदेर"
 
 #: source/ui/config/optcomp.src#TP_OPTCOMPATIBILITY_PAGE.STR_USE_OBJPOSITIONING.String.Text
 msgid  "Use %WRITERCOMPATIBILITYVERSIONOOO11 object positioning"
@@ -2833,7 +2833,7 @@ msgstr "%WRITERCOMPATIBILITYVERSIONOOO11 बेसादनि जायगा �
 
 #: source/ui/config/optcomp.src#TP_OPTCOMPATIBILITY_PAGE.STR_USE_OURTEXTWRAPPING.String.Text
 msgid  "Use %WRITERCOMPATIBILITYVERSIONOOO11 text wrapping around objects"
-msgstr ""
+msgstr "%WRITERCOMPATIBILITYVERSIONOOO11 बेसादनि सोरगिदिं फराय बिजाब खोबसिननायखौ बाहाय"
 
 #: source/ui/config/optcomp.src#TP_OPTCOMPATIBILITY_PAGE.STR_CONSIDER_WRAPPINGSTYLE.String.Text
 msgid  "Consider wrapping style when positioning objects"
@@ -2897,7 +2897,7 @@ msgstr "केप्शन"
 
 #: source/ui/config/optload.src#TP_OPTCAPTION_PAGE.FT_OBJECTS.FixedText.Text
 msgid  "Add captions automatically\nwhen inserting:"
-msgstr ""
+msgstr "गावनो गाव केप्शन दाजाबदेर\nअंतर्भुत करतेवेळी:"
 
 #: source/ui/config/optload.src#TP_OPTCAPTION_PAGE.FT_ORDER.FixedText.Text
 msgid  "Caption order"
@@ -3129,7 +3129,7 @@ msgstr "फेलें जाबाय"
 
 #: source/ui/config/mailconfigpage.src#DLG_MM_TESTACCOUNTSETTINGS.ST_ERROR_SERVER.String.Text
 msgid  "%PRODUCTNAME could not connect to the outgoing mail server. Check your system's settings and the settings in %PRODUCTNAME. Check the server name, the port and the secure connections settings"
-msgstr ""
+msgstr "%PRODUCTNAME आ थांनाय मेइल सार्भारजों फोनांजाब खालामनो हाया। नोंथांनि सिस्टेमआव फज'नायफोर आरो  %PRODUCTNAME आव फज'नायफोरखौ आनजाद नाय।  सार्भारनि मुं, पर्ट आरो रैखाथि फोनांजाबफोर फज'नायखौ आनजाद नाय।"
 
 #: source/ui/config/mailconfigpage.src#DLG_MM_SERVERAUTHENTICATION.ModalDialog.Text
 msgid  "Server Authentication"
@@ -3157,7 +3157,7 @@ msgstr "पासवर्ड"
 
 #: source/ui/config/mailconfigpage.src#DLG_MM_SERVERAUTHENTICATION.RB_SMPTAFTERPOP.RadioButton.Text
 msgid  "The outgoing mail server uses the same authentication as the ~incoming mail server. Enter the settings of the incoming mail server."
-msgstr ""
+msgstr "थांनाय मेइल सार्भारआ फैगौ मेइल सार्भार बादि एखे फोरमानखौ बाहायो। फैगौ मेइल सार्भारनि फज'नायखौ एन्टार खालाम।"
 
 #: source/ui/config/mailconfigpage.src#DLG_MM_SERVERAUTHENTICATION.FT_INCOMINGSERVER.FixedText.Text
 msgid  "Incoming mail server:"
@@ -3197,7 +3197,7 @@ msgstr "थं फारिलाइ सायख"
 
 #: source/ui/dbui/addresslistdialog.src#DLG_MM_ADDRESSLISTDIALOG.FI_DESCRIPTION.FixedText.Text
 msgid  "Select an address list. Click '%1' to select recipients from a different list. If you do not have an address list you can create one by clicking '%2'."
-msgstr ""
+msgstr "मोनसे थंनि फारिलाइ सायख। गुबुन फारिलाइ निफ्राय मोनग्राफोर सायखनो '%1'आव क्लिक खालाम। जदि नोंथांहा थंनि फारिलाइ गैयाब्ला नोंथाङा '%2' आव क्लिक खालामनानै मोनसे थंनि फारिलाइ सोरजिनो हायो।"
 
 #: source/ui/dbui/addresslistdialog.src#DLG_MM_ADDRESSLISTDIALOG.FT_LIST.FixedText.Text
 msgid  "Your recipients are currently selected from:"
@@ -3249,7 +3249,7 @@ msgstr "1."
 
 #: source/ui/dbui/mmaddressblockpage.src#DLG_MM_ADDRESSBLOCK_PAGE.FI_ADDRESSLIST.FixedText.Text
 msgid  "Select the address list containing the address data you want to use. This data is needed to create the address block."
-msgstr ""
+msgstr "नोंथाङा बाहायनो लुबैनाय थं डाटाआव थानाय थं फारिलाइखौ सायख। बे डाटाखौ थं ब्लक सोरजिनो गोनांथि जायो।"
 
 #: source/ui/dbui/mmaddressblockpage.src#DLG_MM_ADDRESSBLOCK_PAGE.PB_ADDRESSLIST.PushButton.Text
 msgid  "Select A~ddress List..."
@@ -3285,7 +3285,7 @@ msgstr "3."
 
 #: source/ui/dbui/mmaddressblockpage.src#DLG_MM_ADDRESSBLOCK_PAGE.FI_MATCH_FIELDS.FixedText.Text
 msgid  "Match the field name used in the mail merge to the column headers in your data source."
-msgstr ""
+msgstr "नोंथांनि डाटा फुंखाआव खाम्फा हेडारसनि मेइल मार्जआव बाहायनाय फोथार मुंखौ गोरोब होनानै नाय।"
 
 #: source/ui/dbui/mmaddressblockpage.src#DLG_MM_ADDRESSBLOCK_PAGE.PB_ASSIGN.PushButton.Text
 msgid  "Match ~Fields..."
@@ -3346,6 +3346,10 @@ msgstr "अरायबो हादोत/ओनसोलखौ सोफाद
 #: source/ui/dbui/mmaddressblockpage.src#DLG_MM_SELECTADDRESSBLOCK.RB_DEPENDENT.RadioButton.Text
 msgid  "Only ~include the country/region if it is not:"
 msgstr "बिब्दि नङाब्ला खालि हादोत/ओनसोलखौ सोफादेर:"
+
+#: source/ui/dbui/mmaddressblockpage.src#WORKAROUND.#define.Text
+msgid  "New Address Block"
+msgstr "गोदान थं ब्लक"
 
 #: source/ui/dbui/mmaddressblockpage.src#DLG_MM_CUSTOMIZEADDRESSBLOCK.ST_TITLE_EDIT.String.Text
 msgid  "Edit Address Block"
@@ -3481,11 +3485,11 @@ msgstr "फोथार गोरोब हो..."
 
 #: source/ui/dbui/mmaddressblockpage.src#DLG_MM_ASSIGNFIELDS.FI_MATCHING.FixedText.Text
 msgid  "Assign the fields from your data source to match the address elements."
-msgstr ""
+msgstr "थं गुदि मुवाफोरखौ गोरोब होनो नोंथांनि डाटा फुंखा निफ्राय फोथारफोरखौ थि खालामना हो।"
 
 #: source/ui/dbui/mmaddressblockpage.src#DLG_MM_ASSIGNFIELDS.ST_SALUTATIONMATCHING.String.Text
 msgid  "Assign the fields from your data source to match the salutation elements."
-msgstr ""
+msgstr "हामलायनाय गुदि मुवाफोरखौ गोरोब होनो नोंथांनि डाटा फुंखा निफ्राय फोथारफोरखौ थि खालामना हो।"
 
 #: source/ui/dbui/mmaddressblockpage.src#DLG_MM_ASSIGNFIELDS.FI_PREVIEW.FixedText.Text
 msgid  "Address block preview"
@@ -3515,17 +3519,13 @@ msgstr "सिगांनि नुथाय"
 msgid  "< none >"
 msgstr "< रावबो नङा>"
 
-#: source/ui/dbui/mmaddressblockpage.src#WORKAROUND.#define.Text
-msgid  "New Address Block"
-msgstr "गोदान थं ब्लक"
-
 #: source/ui/dbui/selectdbtabledialog.src#DLG_MM_SELECTDBTABLEDDIALOG.ModalDialog.Text
 msgid  "Select Table"
 msgstr "फारिलाइ सायख"
 
 #: source/ui/dbui/selectdbtabledialog.src#DLG_MM_SELECTDBTABLEDDIALOG.FI_SELECT.FixedText.Text
 msgid  "The file you have selected contains more than one table. Please select the table containing the address list you want to use."
-msgstr ""
+msgstr "नोंथाङा सायखनाय फाइलआव मोनसे निफ्राय बांसिन फारिलाइ दङ। अननानै नोंथां बाहायनो लुबैनाय थं फारिलाइआव थानाय फारिलाइ सायख।"
 
 #: source/ui/dbui/selectdbtabledialog.src#DLG_MM_SELECTDBTABLEDDIALOG.PB_PREVIEW.PushButton.Text
 msgid  "~Preview"
@@ -3741,7 +3741,7 @@ msgstr "मेल मार्ज फोरमान बिलाइफोरख
 
 #: source/ui/dbui/mmmergepage.src#DLG_MM_MERGE_PAGE.FI_EDIT.FixedText.Text
 msgid  "You can personalize particular documents. Clicking '%1' will temporarily reduce the wizard to a small window so you can edit your document. After editing the document, return to the wizard by clicking 'Return to Mail Merge Wizard' in the small window."
-msgstr ""
+msgstr "नोंथाङा जुनिया फोरमान बिलाइखौ पारस'नालाइज खालामनो हायो। '%1' आव क्लिक  खालामयाव विझार्डनि महरा फिसा उइन्डआव दसेनि थाखाय खमिगोन जाहाते नोंथाङा नोंथांनि फोरमान बिलाइखौ सुजुनो हायो। फोरमान बिलाइखौ सुजुनायनि उनाव फिसा उइन्डनि 'मेइल मार्ज विझार्डआव थांफिन'आव क्लिक खालामनानै विझार्डआव थांफिन।  "
 
 #: source/ui/dbui/mmmergepage.src#DLG_MM_MERGE_PAGE.PB_EDIT.PushButton.Text
 msgid  "~Edit individual document..."
@@ -3909,7 +3909,7 @@ msgstr "बिमुं गोनां"
 
 #: source/ui/dbui/mmoutputpage.src#DLG_MM_OUTPUT_PAGE.ST_SUBJECTQUERY.String.Text
 msgid  "You did not specify a subject for this message. If you would like to provide one, please type it now."
-msgstr ""
+msgstr "या संदेशासाठी आपण विषय निर्देश दिलेला नाही. आपणास विषय लिहायचा असल्यास कृपया आता टाइप करा."
 
 #: source/ui/dbui/mmoutputpage.src#DLG_MM_OUTPUT_PAGE.ST_NOSUBJECT.String.Text
 msgid  "No subject"
@@ -3917,11 +3917,11 @@ msgstr "विषय नाही"
 
 #: source/ui/dbui/mmoutputpage.src#DLG_MM_OUTPUT_PAGE.ST_NOATTACHMENTNAME.String.Text
 msgid  "You did not specify a new name for the attachment. If you would like to provide one, please type it now."
-msgstr ""
+msgstr "या जोडणीसाठी आपण नवीन नामनिर्देश दिलेला नाही. आपणास नामनिर्देश लिहायचा असल्यास कृपया आता टाइप करा."
 
 #: source/ui/dbui/mmoutputpage.src#DLG_MM_OUTPUT_PAGE.ST_CONFIGUREMAIL.String.Text
 msgid  "In order to be able to send mail merge documents by e-mail, %PRODUCTNAME requires information about the e-mail account to be used.\n\n Do you want to enter e-mail account information now?"
-msgstr ""
+msgstr "मेल मिसळा दस्तऐवजास इ-मेल द्वारे पाठविण्यासाठी %PRODUCTNAME ला उपयोगात आणल्य जाणाऱ्या इ-मेल खात्याबद्दल माहिती आवश्यक आहे. \n\nआपण आता इ-मेल खात्याबद्दल माहिती अंतर्भुत करु इच्छिता का?"
 
 #: source/ui/dbui/mmoutputpage.src#DLG_MM_COPYTO.ModalDialog.Text
 msgid  "Copy To"
@@ -3941,11 +3941,11 @@ msgstr "Bcc"
 
 #: source/ui/dbui/mmoutputpage.src#DLG_MM_COPYTO.FI_NOTE.FixedText.Text
 msgid  "Note:\nSeparate e-mail addresses with a semicolon (;)."
-msgstr ""
+msgstr "टिप्पणी:\nअर्धविराम (;) द्वारा इ-मेल पत्ते विभक्त करा."
 
 #: source/ui/dbui/mmoutputpage.src#DLG_MM_SAVEWARNING.FI_WARNING.FixedText.Text
 msgid  "A document with the name '%1' already exists. Please save this document under a different name."
-msgstr ""
+msgstr " '%1' या नावाचे दस्तऐवज आधीपासूनच अस्तित्वात आहे. कृपया या दस्तऐवजास वेगळ्या नावाने संचित करा. "
 
 #: source/ui/dbui/mmoutputpage.src#DLG_MM_SAVEWARNING.FT_FILENAME.FixedText.Text
 msgid  "New document name"
@@ -4131,6 +4131,10 @@ msgstr "नायगिरना मोन"
 msgid  "~Close"
 msgstr "बन्द खालाम"
 
+#: source/ui/dbui/mailmergechildwindow.src#WORKAROUND.#define.Text
+msgid  "Return to Mail Merge Wizard"
+msgstr "मेइल मार्ज विझार्डआव थांफिन"
+
 #: source/ui/dbui/mailmergechildwindow.src#DLG_MAILMERGECHILD.FloatingWindow.Text
 msgid  "Mail Merge Wizard"
 msgstr "मेइल मार्ज विझार्ड"
@@ -4209,7 +4213,7 @@ msgstr "दैथाय हरनाया फेलें जाबाय(ब�
 
 #: source/ui/dbui/mailmergechildwindow.src#DLG_MM_SENDMAILS.ST_TERMINATEQUERY.String.Text
 msgid  "There are still e-mail messages in your %PRODUCTNAME Outbox.\nWould you like to exit anyway?"
-msgstr ""
+msgstr "नोंथांनि %PRODUCTNAME आउटबक्स आव दासिमबो माखासे इ-मेइल खौरां दङ।\nनोंथाङा जेरैखि जाया ओंखार लांनो सानो नामा?"
 
 #: source/ui/dbui/mailmergechildwindow.src#DLG_MM_SENDWARNING.ModalDialog.Text
 msgid  "E-Mails could not be sent"
@@ -4222,10 +4226,6 @@ msgstr "गाहायनि गोरोनथि जाबाय:"
 #: source/ui/dbui/mailmergechildwindow.src#DLG_MM_SENDWARNING.FT_DETAILS.FixedText.Text
 msgid  "Detailed information"
 msgstr "गुवारै मोनथिहोनाय"
-
-#: source/ui/dbui/mailmergechildwindow.src#WORKAROUND.#define.Text
-msgid  "Return to Mail Merge Wizard"
-msgstr "मेइल मार्ज विझार्डआव थांफिन"
 
 #: source/ui/dbui/dbtablepreviewdialog.src#DLG_MM_DBTABLEPREVIEWDIALOG.ModalDialog.Text
 msgid  "Mail Merge Recipients"
@@ -4265,11 +4265,11 @@ msgstr "इ-मेल संदेश:"
 
 #: source/ui/dbui/mmoutputtypepage.src#DLG_MM_OUTPUTTYPE_PAGE.ST_LETTERHINT.String.Text
 msgid  "Send letters to a group of recipients. The letters can contain an address block and a salutation. The letters can be personalized for each recipient."
-msgstr ""
+msgstr "प्राप्तकर्ताच्या गटास पत्र पाठवा. पत्रात पत्ता ब्लॉक आणि हामलायनाय समाविष्ट असू शकते. हे पत्र प्रत्येक प्राप्तकर्तासाठी वैयक्तिक असू शकते."
 
 #: source/ui/dbui/mmoutputtypepage.src#DLG_MM_OUTPUTTYPE_PAGE.ST_MAILHINT.String.Text
 msgid  "Send e-mail messages to a group of recipients. The e-mail messages can contain a salutation. The e-mail messages can be personalized for each recipient."
-msgstr ""
+msgstr "प्राप्तकर्ताच्या गटास इ-मेल पाठवा. इ-मेल मध्ये हामलायनाय समाविष्ट असू शकते. हे इ-मेल प्रत्येक प्राप्तकर्तासाठी वैयक्तिक असू शकते."
 
 #: source/ui/dbui/mmpreparemergepage.src#DLG_MM_PREPAREMERGE_PAGE.FI_HEADER.FixedText.Text
 msgid  "Preview and edit the document"
@@ -4277,7 +4277,7 @@ msgstr "फोरमान बिलाइनि गिबि नुथाय �
 
 #: source/ui/dbui/mmpreparemergepage.src#DLG_MM_PREPAREMERGE_PAGE.FI_PREVIEW.FixedText.Text
 msgid  "The preview of a merged document is visible now. To see the preview of another document click one of the arrows."
-msgstr ""
+msgstr "खौसे खालामनाय फोरमान बिलाइनि गिबि नुथायखौ दा नुनो हायो। गुबुन फोरमान बिलाइनि गिबि नुथाय नायनो जायखिजाया थिरआव क्लिक खालाम"
 
 #: source/ui/dbui/mmpreparemergepage.src#DLG_MM_PREPAREMERGE_PAGE.FT_RECIPIENT.FixedText.Text
 msgid  "~Recipient"
@@ -4309,7 +4309,7 @@ msgstr "फोरमान बिलाइ सुजु"
 
 #: source/ui/dbui/mmpreparemergepage.src#DLG_MM_PREPAREMERGE_PAGE.FI_EDIT.FixedText.Text
 msgid  "Write or edit your document now if you have not already done so. The changes will effect all merged documents.\n\nClicking 'Edit Document...' will temporarily reduce the wizard to a small window so you can edit the mail merge document. After editing the document, return to the wizard by clicking 'Return to Mail Merge Wizard' in the small window."
-msgstr ""
+msgstr "नोंथाङा सिगाङाव मावयाखैमोनब्ला नोंथांनि फोरमान बिलाइखौ दानो लिर एबा सुजु। सोलायनायफोरा गासै खौसे जानाय फोरमान बिलाइखौ गोहोम खोख्लैगोन\n\n'फोरमान बिलाइ सुजु...' आव क्लिक खालामनायाव विझार्डनि महरा फिसा उइन्डआव दसेनि थाखाय खमिगोन जाहाते नोंथाङा मेइल मार्ज फोरमान बिलाइखौ सुजुनो हायो। फोरमान बिलाइखौ सुजुनायनि उनाव फिसा उइन्डनि 'मेइल मार्ज विझार्डआव थांफिन'आव क्लिक खालामनानै विझार्डआव थांफिन।"
 
 #: source/ui/dbui/mmpreparemergepage.src#DLG_MM_PREPAREMERGE_PAGE.PB_EDIT.PushButton.Text
 msgid  "~Edit Document..."
@@ -4535,6 +4535,66 @@ msgstr "सोदोबफोर:"
 msgid  "Characters:"
 msgstr "हांखोफोर:"
 
+#: source/ui/dialog/regionsw.src#FT_SUBREG_TEXT.#define.Text
+msgid  "~Section"
+msgstr "बिफान.."
+
+#: source/ui/dialog/regionsw.src#CB_HIDE_TEXT.#define.Text
+msgid  "H~ide"
+msgstr "एरसोखोमा"
+
+#: source/ui/dialog/regionsw.src#FL_HIDE_TEXT.#define.Text
+msgid  "Hide"
+msgstr "एरसोखोमा"
+
+#: source/ui/dialog/regionsw.src#CB_CONDITION_TEXT.#define.Text
+msgid  "~With Condition"
+msgstr "थासारिजों"
+
+#: source/ui/dialog/regionsw.src#FL_PROPERTIES_TEXT.#define.Text
+msgid  "Properties"
+msgstr "आखुथायफोर"
+
+#: source/ui/dialog/regionsw.src#CB_EDIT_IN_READONLY_TEXT.#define.Text
+msgid  "E~ditable in read-only document"
+msgstr "फरायनि-थाखायल' फोरमान बिलाइआव सुजु जाथाव"
+
+#: source/ui/dialog/regionsw.src#FL_FILE_TEXT.#define.Text
+msgid  "Link"
+msgstr "सोमोन्दो"
+
+#: source/ui/dialog/regionsw.src#CB_FILE_TEXT.#define.Text
+msgid  "~Link"
+msgstr "सोमोन्दो"
+
+#: source/ui/dialog/regionsw.src#CB_DDE_TEXT.#define.Text
+msgid  "DD~E"
+msgstr "DDE"
+
+#: source/ui/dialog/regionsw.src#FT_DDE_TEXT.#define.Text
+msgid  "DDE ~command"
+msgstr "DDE बिथोन"
+
+#: source/ui/dialog/regionsw.src#FT_FILE_TEXT.#define.Text
+msgid  "~File name"
+msgstr "फाइलनि मुं"
+
+#: source/ui/dialog/regionsw.src#GB_HIDE_TEXT.#define.Text
+msgid  "Hide"
+msgstr "एरसोखोमा"
+
+#: source/ui/dialog/regionsw.src#GB_OPTIONS_TEXT.#define.Text
+msgid  "Options"
+msgstr "उफ्राफोर"
+
+#: source/ui/dialog/regionsw.src#FL_PROTECT_TEXT.#define.Text
+msgid  "Write protection"
+msgstr "रैखाथि लिर"
+
+#: source/ui/dialog/regionsw.src#CB_PASSWD_TEXT.#define.Text
+msgid  "Wit~h password"
+msgstr "पासवर्डजों"
+
 #: source/ui/dialog/regionsw.src#MD_EDIT_REGION.ModalDialog.Text
 msgid  "Edit Sections"
 msgstr "बिफानफोर सुजु"
@@ -4565,7 +4625,7 @@ msgstr "डुप्लिकेट बिफाननि मुं"
 
 #: source/ui/dialog/regionsw.src#QB_CONNECT.QueryBox.Message
 msgid  "A file connection will delete the contents of the current section. Connect anyway?"
-msgstr ""
+msgstr "फाइल फोनांजाबा बोहैथि बिफाननि आयदाफोरखौ हुखुमोर गोन। जायखि जाया फोनांजाब खालाम?"
 
 #: source/ui/dialog/regionsw.src#REG_WRONG_PASSWORD.InfoBox.Message
 msgid  "The password entered is invalid."
@@ -4699,66 +4759,6 @@ msgstr "बिफाननि सिगाङाव"
 msgid  "~After section"
 msgstr "बिफाननि उनाव"
 
-#: source/ui/dialog/regionsw.src#FT_SUBREG_TEXT.#define.Text
-msgid  "~Section"
-msgstr "बिफान.."
-
-#: source/ui/dialog/regionsw.src#CB_HIDE_TEXT.#define.Text
-msgid  "H~ide"
-msgstr "एरसोखोमा"
-
-#: source/ui/dialog/regionsw.src#FL_HIDE_TEXT.#define.Text
-msgid  "Hide"
-msgstr "एरसोखोमा"
-
-#: source/ui/dialog/regionsw.src#CB_CONDITION_TEXT.#define.Text
-msgid  "~With Condition"
-msgstr "थासारिजों"
-
-#: source/ui/dialog/regionsw.src#FL_PROPERTIES_TEXT.#define.Text
-msgid  "Properties"
-msgstr "आखुथायफोर"
-
-#: source/ui/dialog/regionsw.src#CB_EDIT_IN_READONLY_TEXT.#define.Text
-msgid  "E~ditable in read-only document"
-msgstr "फरायनि-थाखायल' फोरमान बिलाइआव सुजु जाथाव"
-
-#: source/ui/dialog/regionsw.src#FL_FILE_TEXT.#define.Text
-msgid  "Link"
-msgstr "सोमोन्दो"
-
-#: source/ui/dialog/regionsw.src#CB_FILE_TEXT.#define.Text
-msgid  "~Link"
-msgstr "सोमोन्दो"
-
-#: source/ui/dialog/regionsw.src#CB_DDE_TEXT.#define.Text
-msgid  "DD~E"
-msgstr "DDE"
-
-#: source/ui/dialog/regionsw.src#FT_DDE_TEXT.#define.Text
-msgid  "DDE ~command"
-msgstr "DDE बिथोन"
-
-#: source/ui/dialog/regionsw.src#FT_FILE_TEXT.#define.Text
-msgid  "~File name"
-msgstr "फाइलनि मुं"
-
-#: source/ui/dialog/regionsw.src#GB_HIDE_TEXT.#define.Text
-msgid  "Hide"
-msgstr "एरसोखोमा"
-
-#: source/ui/dialog/regionsw.src#GB_OPTIONS_TEXT.#define.Text
-msgid  "Options"
-msgstr "उफ्राफोर"
-
-#: source/ui/dialog/regionsw.src#FL_PROTECT_TEXT.#define.Text
-msgid  "Write protection"
-msgstr "रैखाथि लिर"
-
-#: source/ui/dialog/regionsw.src#CB_PASSWD_TEXT.#define.Text
-msgid  "Wit~h password"
-msgstr "पासवर्डजों"
-
 #: source/ui/dialog/abstract.src#DLG_INSERT_ABSTRACT.FL_1.FixedLine.Text
 msgid  "Properties"
 msgstr "आखुथायफोर"
@@ -4773,7 +4773,7 @@ msgstr "मोनफ्रोम लेभेलआव दालाय बिन
 
 #: source/ui/dialog/abstract.src#DLG_INSERT_ABSTRACT.FT_DESC.FixedText.Text
 msgid  "The abstract contains the selected number of paragraphs from the included outline levels."
-msgstr ""
+msgstr "गुबै रावआव सिमा हांखो लेभेलफोरखौ सोफादेरनाय निफ्राय सायखनाय आनथोर फोरनि अनजिमा थायो।"
 
 #: source/ui/dialog/abstract.src#DLG_INSERT_ABSTRACT.HelpButton.Text
 msgid  "Create AutoAbstract"
@@ -4853,7 +4853,7 @@ msgstr ""
 
 #: source/ui/dochdl/dochdl.src#STR_NO_TABLE.String.Text
 msgid  "A table cannot be inserted into another table. However, you can paste the data into the document when the cursor is not in a table."
-msgstr ""
+msgstr "फारिलाइखौ गुबुन मोनसे फारिलाइआव सोसननो हाया। जिखि जाया, जेब्ला कार्सरआ फारिलाइआव गैया अब्ला नोंथाङा डाटाखौ फोरमान बिलाइआव फोनांजाब होनो हायो।"
 
 #: source/ui/dochdl/dochdl.src#MSG_ERR_INSERT_GLOS.InfoBox.Message
 msgid  "AutoText could not be created."
@@ -4865,7 +4865,7 @@ msgstr "खांलायनाय क्लिपबर्ड दाथाय�
 
 #: source/ui/dochdl/dochdl.src#MSG_UPDATE_NEW_GLOS_FMT.QueryBox.Message
 msgid  "The section format is outdated.\nIt needs to be converted so that changes\ncan be saved.\nShould it be converted now?"
-msgstr ""
+msgstr "बिफान दाथाया अक्ट' बारलांनाय।\nबेखौ सोलाय होनो गोनांथि जायो जाहाते\n सोलायनाय फोरखौ थिनो हायो।\nदानो बेफोरखौ सोलाय होनो नामा?"
 
 #: source/ui/dochdl/dochdl.src#STR_PRIVATETEXT.String.Text
 msgid  "%PRODUCTNAME Writer"
@@ -5039,6 +5039,26 @@ msgstr "फुंखा फ्रेम मोनसे सोमोन्दो
 msgid  "A closed link is not possible."
 msgstr "मोनसे बन्द सोमोन्दो जाथाव नङा।"
 
+#: source/ui/docvw/docvw.src#STR_REDLINE_INSERT.String.Text
+msgid  "Inserted"
+msgstr "सोसनबाय"
+
+#: source/ui/docvw/docvw.src#STR_REDLINE_DELETE.String.Text
+msgid  "Deleted"
+msgstr "हुखुमोरबाय"
+
+#: source/ui/docvw/docvw.src#STR_REDLINE_FORMAT.String.Text
+msgid  "Formatted"
+msgstr "दाथाय गोनां"
+
+#: source/ui/docvw/docvw.src#STR_REDLINE_TABLE.String.Text
+msgid  "Table changed"
+msgstr "फारिलाइ सोलायबाय"
+
+#: source/ui/docvw/docvw.src#STR_REDLINE_FMTCOLL.String.Text
+msgid  "Applied Paragraph Styles"
+msgstr "बाहायनाय आन्थोर आदबफोर"
+
 #: source/ui/docvw/docvw.src#STR_ENDNOTE.String.Text
 msgid  "Endnote: "
 msgstr "जोबथा सिन: "
@@ -5049,7 +5069,7 @@ msgstr "आफांनि सिन: "
 
 #: source/ui/docvw/docvw.src#MSG_READONLY_CONTENT.InfoBox.Message
 msgid  "Readonly content cannot be changed.\nNo modifications will be accepted"
-msgstr ""
+msgstr "फरायनो थाखायल' आयदाखौ सोलायनो हाया।\nजेबो सोलाय होनायखौ आजावनाय जानाय नङा."
 
 #: source/ui/docvw/docvw.src#STR_TABLE_COL_ADJUST.String.Text
 msgid  "Adjust table column"
@@ -5074,26 +5094,6 @@ msgstr "फारिलाइ खाम्फा सायख"
 #: source/ui/docvw/docvw.src#STR_SMARTTAG_CLICK.String.Text
 msgid  "%s-click to open Smart Tag menu"
 msgstr ""
-
-#: source/ui/docvw/docvw.src#STR_REDLINE_INSERT.String.Text
-msgid  "Inserted"
-msgstr "सोसनबाय"
-
-#: source/ui/docvw/docvw.src#STR_REDLINE_DELETE.String.Text
-msgid  "Deleted"
-msgstr "हुखुमोरबाय"
-
-#: source/ui/docvw/docvw.src#STR_REDLINE_FORMAT.String.Text
-msgid  "Formatted"
-msgstr "दाथाय गोनां"
-
-#: source/ui/docvw/docvw.src#STR_REDLINE_TABLE.String.Text
-msgid  "Table changed"
-msgstr "फारिलाइ सोलायबाय"
-
-#: source/ui/docvw/docvw.src#STR_REDLINE_FMTCOLL.String.Text
-msgid  "Applied Paragraph Styles"
-msgstr "बाहायनाय आन्थोर आदबफोर"
 
 #: source/ui/docvw/access.src#STR_ACCESS_DOC_NAME.String.Text
 msgid  "Document view"
@@ -5214,6 +5214,10 @@ msgstr "-जेबो साफायग्रा इनष्टल खाल�
 #: source/ui/envelp/envprt.src#TP_ENV_PRT.BTN_PRTSETUP.PushButton.Text
 msgid  "Setup..."
 msgstr "सेटआप..."
+
+#: source/ui/envelp/mailmrge.src#_MAIL_MERGE_STRING_.#define.Text
+msgid  "Mail Merge"
+msgstr "मेल मार्ज"
 
 #: source/ui/envelp/mailmrge.src#DLG_MAILMERGE.RB_ALL.RadioButton.Text
 msgid  "~All"
@@ -5337,11 +5341,7 @@ msgstr "गोदान फोनाजाबखौ सोरजि"
 
 #: source/ui/envelp/mailmrge.src#DLG_MERGE_FIELD_CONNECTIONS.FT_INFO.FixedText.Text
 msgid  "Fields are used to personalize form letters. The fields are placeholders for data from a data source, such as a database. The fields in the form letter must be connected to the data source."
-msgstr ""
-
-#: source/ui/envelp/mailmrge.src#_MAIL_MERGE_STRING_.#define.Text
-msgid  "Mail Merge"
-msgstr "मेल मार्ज"
+msgstr "फोथारफोरखौ फर्म लाइजामफोर पारस'नालाइज खालामनो बाहायनाय जायो।  फोथारफोरा डाटा फुंखा निफ्राय डाटानि थाखाय प्लेसहल्डारस दिनथि बादियै मोनसे डाटाबेस। फर्म लाइजामनि फोथारफोरखौ डाटा फुंखाजों फोनांजाब खालाम थारनांगोन।"
 
 #: source/ui/envelp/labprt.src#TP_LAB_PRT.BTN_PAGE.RadioButton.Text
 msgid  "~Entire page"
@@ -5397,7 +5397,7 @@ msgstr "फोरमान बिलाइ"
 
 #: source/ui/envelp/envelp.src#STR_SENDER_TOKENS.String.Text
 msgid  "COMPANY;CR;FIRSTNAME; ;LASTNAME;CR;ADDRESS;CR;CITY; ;STATEPROV; ;POSTALCODE;CR;COUNTRY;CR;"
-msgstr ""
+msgstr "COMPANY;CR;FIRSTNAME; ;LASTNAME;CR;ADDRESS;CR;CITY; ;STATEPROV; ;POSTALCODE;CR;COUNTRY;CR;"
 
 #: source/ui/envelp/envfmt.src#TP_ENV_FMT.FL_ADDRESSEE.FixedLine.Text
 msgid  "Addressee"
@@ -5470,6 +5470,14 @@ msgstr "हांखो"
 #: source/ui/envelp/envfmt.src#MNU_EDIT.MID_PARA.MenuItem.Text
 msgid  "P~aragraph..."
 msgstr "आन्थोर..."
+
+#: source/ui/envelp/label.src#LABEL_STRING.#define.Text
+msgid  "Labels"
+msgstr "लेबेलफोर"
+
+#: source/ui/envelp/label.src#BUSINESS_CARD_STRING.#define.Text
+msgid  "Business Cards"
+msgstr "फालांगि कार्ड"
 
 #: source/ui/envelp/label.src#DLG_LAB.1.TP_PRIVATE_DATA.PageItem.Text
 msgid  "Private"
@@ -5639,14 +5647,6 @@ msgstr "फेक्स"
 msgid  "Ho~mepage / e-mail"
 msgstr "ह'म बिखं/इ-मेइल"
 
-#: source/ui/envelp/label.src#LABEL_STRING.#define.Text
-msgid  "Labels"
-msgstr "लेबेलफोर"
-
-#: source/ui/envelp/label.src#BUSINESS_CARD_STRING.#define.Text
-msgid  "Business Cards"
-msgstr "फालांगि कार्ड"
-
 #: source/ui/envelp/labfmt.src#TP_LAB_FMT.TXT_HDIST.FixedText.Text
 msgid  "Hori~zontal pitch"
 msgstr "समानथि पिच"
@@ -5728,8 +5728,8 @@ msgid  "Options"
 msgstr "अफ्राफोर"
 
 #: source/ui/envelp/labfmt.src#DLG_SAVE_LABEL.MB_QUERY.QueryBox.Message
-msgid  "The label "%1 / %2" already exists.\nDo you want to overwrite it?"
-msgstr ""
+msgid  "The label \"%1 / %2\" already exists.\nDo you want to overwrite it?"
+msgstr " \"%1 / %2\" लेबेला सिगांनिफ्रायनो दङ।\nआपणांस त्यांना अधिलेखित करायचे आहे का?"
 
 #: source/ui/envelp/labfmt.src#DLG_SAVE_LABEL.QueryBox.Text
 msgid  "Save Label Format"
@@ -6609,7 +6609,7 @@ msgstr "ब्राउज..."
 
 #: source/ui/fldui/changedb.src#DLG_CHANGE_DB.FT_DESC.FixedText.Text
 msgid  "Use this dialog to replace the databases you access in your document via database fields, with other databases. You can only make one change at a time. Multiple selection is possible in the list on the left.\nUse the browse button to select a database file."
-msgstr ""
+msgstr "डाटाबेस फोथार, गुबुन डाटाबेसनि गेजेरजों नोंथांनि फोरमान बिलाइआव हाबनाय डाटाबेसफोरखौ जायगा सोलायहोनो बे बिबुंखौ बाहाय। नोंथाङा खेबसेआव मोनसेल' सोलायनो हागोन। गोबां सायखनाया आगसिनि फारिलाइआव जानो हाथाव।\nमोनसे डाटाबेस फाइल सायखनो ब्रउस बुथाम बाहाय।"
 
 #: source/ui/fldui/changedb.src#DLG_CHANGE_DB.FT_DOCDBTEXT.FixedText.Text
 msgid  "Database applied to document:"
@@ -7388,6 +7388,14 @@ msgid  "~Position"
 msgstr "जायगा"
 
 #: source/ui/frmdlg/column.src#TP_COLUMN.LB_POSITION.Default.StringList.item
+msgid  "Top"
+msgstr "सानि"
+
+#: source/ui/frmdlg/column.src#TP_COLUMN.LB_POSITION.Default.StringList.item
+msgid  "Centered"
+msgstr "मिरु"
+
+#: source/ui/frmdlg/column.src#TP_COLUMN.LB_POSITION.Default.StringList.item
 msgid  "Bottom"
 msgstr "सिंथारनि"
 
@@ -7450,14 +7458,6 @@ msgstr ""
 #: source/ui/frmdlg/column.src#STR_ACCESS_COLUMN_WIDTH.String.Text
 msgid  "Column %1 Width"
 msgstr ""
-
-#: source/ui/frmdlg/column.src#TP_COLUMN.LB_POSITION.Default.StringList.item
-msgid  "Top"
-msgstr "सानि"
-
-#: source/ui/frmdlg/column.src#TP_COLUMN.LB_POSITION.Default.StringList.item
-msgid  "Centered"
-msgstr "मिरु"
 
 #: source/ui/frmdlg/frmui.src#STR_TOP.String.Text
 msgid  "~Top"
@@ -7667,6 +7667,10 @@ msgstr "गाहाय फोरमान बिलाइ"
 msgid  "%PRODUCTNAME %PRODUCTVERSION Master Document"
 msgstr "%PRODUCTNAME %PRODUCTVERSION गाहाय फोरमान बिलाइ"
 
+#: source/ui/index/idxmrk.src#IDX_PHONETIC_LISTBOX_DESCRIPTION.#define.Text
+msgid  "Phonetic reading"
+msgstr "गोरां बोनाय सोमोन्दो फरायनाय"
+
 #: source/ui/index/idxmrk.src#IDX_DIALOG_WINDOW.WIN_DLG.BT_OK.OKButton.Text
 msgid  "Insert"
 msgstr "सोसन"
@@ -7805,11 +7809,7 @@ msgstr "बिजाबनि फारिलाइ हाबनाय सोस
 
 #: source/ui/index/idxmrk.src#DLG_CHANGE_AUTH_ENTRY.QueryBox.Message
 msgid  "The document already contains the bibliography entry but with different data. Do you want to adjust the existing entries?"
-msgstr ""
-
-#: source/ui/index/idxmrk.src#IDX_PHONETIC_LISTBOX_DESCRIPTION.#define.Text
-msgid  "Phonetic reading"
-msgstr "गोरां बोनाय सोमोन्दो फरायनाय"
+msgstr "फोरमान बिलाइआव सिगांनिफ्रायनो बिजाबनि फारिलाइ हाबनाय दङ नाथाय गुबुन डाटाजों । नोंथाङा थाखानाय हाबनायफोरखौ गोरोब होनो सानो नामा?"
 
 #: source/ui/index/cnttab.src#STR_TITLE.String.Text
 msgid  "Title"
@@ -7824,8 +7824,8 @@ msgid  "Level "
 msgstr "सेभेल"
 
 #: source/ui/index/cnttab.src#STR_FILE_NOT_FOUND.String.Text
-msgid  "The file, "%1" in the "%2" path could not be found."
-msgstr ""
+msgid  "The file, \"%1\" in the \"%2\" path could not be found."
+msgstr "\"%2\"लामा \"%1\"फाइल लामानि मोननो हायै।"
 
 #: source/ui/index/cnttab.src#DLG_MULTI_TOX.1.TP_TOX_SELECT.PageItem.Text
 msgid  "Index/Table"
@@ -8557,7 +8557,7 @@ msgstr "लामा..."
 
 #: source/ui/misc/glossary.src#DLG_GLOSSARY.ST_READONLY_PATH.String.Text
 msgid  "The 'AutoText' directories are read-only. Do you want to call the path settings dialog?"
-msgstr ""
+msgstr "'गावआरि फराय बिजाब' दिरेक्टरिफोरा फरायनो थाखायल'।  नोंथाङा लामा फज'नाय बिबुंखौ हांख्रायनो सानो नामा?"
 
 #: source/ui/misc/glossary.src#DLG_GLOSSARY.MNU_EDIT.FN_GL_DEFINE.MenuItem.Text
 msgid  "~New"
@@ -8672,6 +8672,14 @@ msgid  "~Position"
 msgstr "थासारि"
 
 #: source/ui/misc/pgfnote.src#TP_FOOTNOTE_PAGE.DLB_LINEPOS.Default.StringList.item
+msgid  "Left"
+msgstr "आगसि"
+
+#: source/ui/misc/pgfnote.src#TP_FOOTNOTE_PAGE.DLB_LINEPOS.Default.StringList.item
+msgid  "Centered"
+msgstr "मिरु"
+
+#: source/ui/misc/pgfnote.src#TP_FOOTNOTE_PAGE.DLB_LINEPOS.Default.StringList.item
 msgid  "Right"
 msgstr "आगदा"
 
@@ -8690,14 +8698,6 @@ msgstr "आफांनि सिन आयदाफोर सिम लां�
 #: source/ui/misc/pgfnote.src#TP_FOOTNOTE_PAGE.FL_LINE.FixedLine.Text
 msgid  "Separator line"
 msgstr "बोखावग्रा सारि"
-
-#: source/ui/misc/pgfnote.src#TP_FOOTNOTE_PAGE.DLB_LINEPOS.Default.StringList.item
-msgid  "Left"
-msgstr "आगसि"
-
-#: source/ui/misc/pgfnote.src#TP_FOOTNOTE_PAGE.DLB_LINEPOS.Default.StringList.item
-msgid  "Centered"
-msgstr "मिरु"
 
 #: source/ui/misc/num.src#TP_NUM_POSITION.FL_LEVEL.FixedLine.Text
 msgid  "Level"
@@ -10065,7 +10065,7 @@ msgstr "गावआरि दाथाय"
 
 #: source/ui/shells/shells.src#STR_REDLINE_MSG.String.Text
 msgid  "AutoCorrect completed.\nYou can accept or reject all changes,\nor accept or reject particular changes."
-msgstr ""
+msgstr "गावआरि दाथाया जोबबाय ।\nनोंथाङा गासै सोलायनायखौ आजावनो एबा नागारनो हागौ,\nएबा जुनिया सोलायनायफोरखौ आजावनो एबा नागारनो हागौ।"
 
 #: source/ui/shells/shells.src#STR_REDLINE_ACCEPT_ALL.String.Text
 msgid  "Accept All"
@@ -10309,7 +10309,7 @@ msgstr "गासै"
 
 #: source/ui/table/tautofmt.src#DLG_AUTOFMT_TABLE.STR_INVALID_AFNAME.String.Text
 msgid  "You have entered an invalid name.\nThe desired AutoFormat could not be created. \nTry again using a different name."
-msgstr ""
+msgstr "नोंथाङा मोनसे बाहाय जायै मुं एन्टार खालामबाय।\nलुबैनाय गावआरि दाथायखौ सोरजिनो हाया।\nगुबुन मुं बाहायनानै फिन नाजा।"
 
 #: source/ui/table/mergetbl.src#DLG_MERGE_TABLE.FL_MERGE.FixedLine.Text
 msgid  "Mode"
@@ -10493,7 +10493,7 @@ msgstr "केप्शन बादि गिबि खाम्फा"
 
 #: source/ui/table/chartins.src#DLG_INSERT_CHART.FT_TEXT.FixedText.Text
 msgid  "If the selected cells do not contain the desired data, select the data range now.\n\nInclude the cells containing column and row labels if you want them to be included in your chart."
-msgstr ""
+msgstr "जदि सायखनाय खथासाफोराव लुबैनाय डाटा गैयाब्ला, दानो डाटा सारिखौ सायख।\n\nजदि नोंथाङा बेफोरखौ नोंथांनि चार्टआव सोफादेरनो सानोब्ला खाम्फा आरो सारि लेभेलफोर थानाय खथासाफोरखौ दाजाबदेर।"
 
 #: source/ui/table/chartins.src#DLG_INSERT_CHART.BT_PREV.PushButton.Text
 msgid  "<< ~Back"
@@ -10506,6 +10506,10 @@ msgstr "उननि >>"
 #: source/ui/table/chartins.src#DLG_INSERT_CHART.BT_FINISH.PushButton.Text
 msgid  "Cre~ate"
 msgstr "सोरजि"
+
+#: source/ui/table/tabledlg.src#TEXT_TEXTFLOW.#define.Text
+msgid  "Text Flow"
+msgstr "फराय बिजाब बोहैनाय"
 
 #: source/ui/table/tabledlg.src#DLG_FORMAT_TABLE.TabDialog.Text
 msgid  "Table Format"
@@ -10597,7 +10601,7 @@ msgstr "आखुथायफोर"
 
 #: source/ui/table/tabledlg.src#TP_FORMAT_TABLE.FT_TEXTDIRECTION.FixedText.Text
 msgid  "Text ~direction"
-msgstr "फराय बिजाब बिथिं"
+msgstr "फराय बिजाबनि बिथिं"
 
 #: source/ui/table/tabledlg.src#TP_FORMAT_TABLE.LB_TEXTDIRECTION.0.StringList.item
 msgid  "Left-to-right"
@@ -10715,10 +10719,6 @@ msgstr "गाहाय"
 msgid  "The name of the table must not contain spaces."
 msgstr "फारिलाइनि मुङाव लांदां जायगाफोर थानो नाङा।"
 
-#: source/ui/table/tabledlg.src#TEXT_TEXTFLOW.#define.Text
-msgid  "Text Flow"
-msgstr "फराय बिजाब बोहैनाय"
-
 #: source/ui/table/splittbl.src#DLG_SPLIT_TABLE.FL_SPLIT.FixedLine.Text
 msgid  "Mode"
 msgstr "म'ड"
@@ -10753,7 +10753,7 @@ msgstr "नोंथाङा गाहाय फराय बिजाब आ�
 
 #: source/ui/uiview/view.src#DLG_PRT_FIELDNAME.QueryBox.Message
 msgid  "Show field commands option is checked.\nDo you want to print the document with field names?"
-msgstr ""
+msgstr "फोथार बिथोन उफ्राखौ आनजाद खालामनायखौ दिनथि।\nनोंथाङा फोथार मुंफोरजों फोरमान बिलाइखौ साफायनो सानो नामा?"
 
 #: source/ui/uiview/view.src#DLG_SPECIAL.QueryBox.Message
 msgid  "Do you want check the special regions?"
@@ -10761,23 +10761,27 @@ msgstr "नोंथाङा जुनिया ओनसोलखौ आनज
 
 #: source/ui/uiview/view.src#DLG_THESAURUS.QueryBox.Message
 msgid  "This word appears in the list of words you want to avoid! Start thesaurus?"
-msgstr ""
+msgstr "बे सोदोबा नोंथां नागारनो साननाय सोदोबफोरनि फारिलाइआव नुजागोन! सोदोब बिहुंखौ जागायनो नामा?"
 
 #: source/ui/uiview/view.src#DLG_SPECIAL_FORCED.QueryBox.Message
 msgid  "Check special regions is deactivated. Check anyway?"
-msgstr ""
+msgstr "जुनिया ओनसोलखौ निष्क्रीय खालामनायखौ आनजाद खालाम। जेरैखि जाया आनजाद खालाम?"
 
 #: source/ui/uiview/view.src#MSG_SEARCH_END.QueryBox.Message
 msgid  "%PRODUCTNAME Writer has searched to the end of the document. Do you want to continue at the beginning?"
-msgstr ""
+msgstr "%PRODUCTNAME राइटारा फोरमान बिलाइ जोबनायखौ नायगिरबाय। नोंथाङा जागायनायाव सोलिहोबाय थानो सानो नामा?"
 
 #: source/ui/uiview/view.src#MSG_SEARCH_START.QueryBox.Message
 msgid  "%PRODUCTNAME Writer has searched to the beginning of the document. Do you want to continue at the end?"
-msgstr ""
+msgstr "%PRODUCTNAME राइटारा फोरमान बिलाइ जागायनायखौ नायगिरबाय। नोंथाङा जोबनायाव सोलिहोबाय थानो सानो नामा?"
 
 #: source/ui/uiview/view.src#MSG_NO_MERGE_ENTRY.InfoBox.Message
 msgid  "Could not merge documents."
 msgstr "फोरमान बिलाइफोरखौ खौसे खालामनो हाया।"
+
+#: source/ui/uiview/view.src#MSG_ERR_INSERT_GLOS.InfoBox.Message
+msgid  "AutoText could not be created."
+msgstr "गावआरि फराय बिजाबखौ सोरजिनो हाया।"
 
 #: source/ui/uiview/view.src#MSG_ERR_SRCSTREAM.InfoBox.Message
 msgid  "The source cannot be loaded."
@@ -10785,7 +10789,7 @@ msgstr "फुंखाखौ ल'ड खालामनो हाया।"
 
 #: source/ui/uiview/view.src#MSG_ERR_NO_FAX.InfoBox.Message
 msgid  "No fax printer has been set under Tools/Options/%1/Print."
-msgstr ""
+msgstr "आयजें आयलाफोर/उफ्राफोर/%1/साफायनायाव जेबो फेक्स साफायग्रा फज'नाय जायाखै।"
 
 #: source/ui/uiview/view.src#STR_WEBOPTIONS.String.Text
 msgid  "HTML document"
@@ -10871,10 +10875,6 @@ msgstr "HTML फुंखा"
 msgid  "HTML Source"
 msgstr "HTML फुंखा"
 
-#: source/ui/uiview/view.src#MSG_ERR_INSERT_GLOS.InfoBox.Message
-msgid  "AutoText could not be created."
-msgstr "गावआरि फराय बिजाबखौ सोरजिनो हाया।"
-
 #: source/ui/uiview/pview.src#DLG_PAGEPREVIEW_ZOOM.ModalDialog.Text
 msgid  "Multiple Pages"
 msgstr "बायदिसिना बिखंफोर"
@@ -10908,7 +10908,7 @@ msgid  "Capitalize first letter of sentences"
 msgstr "बाथ्राफोरनि गिबि हांखोखौ गेदेर हांखो खालाम"
 
 #: source/ui/utlui/utlui.src#RID_SHELLRES_AUTOFMTSTRS.STR_AUTOFMTREDL_TYPO+1.String.Text
-msgid  "Replace "standard" quotes with %1 \bcustom%2 quotes"
+msgid  "Replace \"standard\" quotes with %1 \bcustom%2 quotes"
 msgstr ""
 
 #: source/ui/utlui/utlui.src#RID_SHELLRES_AUTOFMTSTRS.STR_AUTOFMTREDL_USER_STYLE+1.String.Text
@@ -10948,28 +10948,28 @@ msgid  "Combine single line paragraphs"
 msgstr "मोनसेल' सारि आनथोरफोर जरायदेर"
 
 #: source/ui/utlui/utlui.src#RID_SHELLRES_AUTOFMTSTRS.STR_AUTOFMTREDL_SET_TMPL_TEXT +1.String.Text
-msgid  "Set "Text body" Style"
-msgstr ""
+msgid  "Set \"Text body\" Style"
+msgstr " \"फराय बिजाबनि गाहाय बाहागो\" आदब फज'यो"
 
 #: source/ui/utlui/utlui.src#RID_SHELLRES_AUTOFMTSTRS.STR_AUTOFMTREDL_SET_TMPL_INDENT.String.Text
-msgid  "Set "Text body indent" Style"
-msgstr ""
+msgid  "Set \"Text body indent\" Style"
+msgstr " \"फराय बिजाबनि गाहाय इन्डेन्ट\" आदब फज'यो"
 
 #: source/ui/utlui/utlui.src#RID_SHELLRES_AUTOFMTSTRS.STR_AUTOFMTREDL_SET_TMPL_NEG_INDENT.String.Text
-msgid  "Set "Hanging indent" Style"
-msgstr ""
+msgid  "Set \"Hanging indent\" Style"
+msgstr " \"थाबथानाय इन्डेन्ट\"आदब फज'यो"
 
 #: source/ui/utlui/utlui.src#RID_SHELLRES_AUTOFMTSTRS.STR_AUTOFMTREDL_SET_TMPL_TEXT_INDENT +1.String.Text
-msgid  "Set "Text body indent" Style"
-msgstr ""
+msgid  "Set \"Text body indent\" Style"
+msgstr " \"फराय बिजाबनि गाहाय इन्डेन्ट\" आदब फज'यो"
 
 #: source/ui/utlui/utlui.src#RID_SHELLRES_AUTOFMTSTRS.STR_AUTOFMTREDL_SET_TMPL_HEADLINE +1.String.Text
-msgid  "Set "Heading $(ARG1)" Style"
-msgstr ""
+msgid  "Set \"Heading $(ARG1)\" Style"
+msgstr "\"लिरबिदांनि बिमुं $(ARG1)\" आदब फज'यो"
 
 #: source/ui/utlui/utlui.src#RID_SHELLRES_AUTOFMTSTRS.STR_AUTOFMTREDL_SET_NUMBULET +1.String.Text
-msgid  "Set "Bullet" or "Numbering" Style"
-msgstr ""
+msgid  "Set \"Bullet\" or \"Numbering\" Style"
+msgstr "\"बुलेट\"एबा \"अनजिमा होनाय \" आदब फज'यो"
 
 #: source/ui/utlui/utlui.src#RID_SHELLRES_AUTOFMTSTRS.STR_AUTOFMTREDL_DEL_MORELINES +1.String.Text
 msgid  "Combine paragraphs"
@@ -11137,11 +11137,11 @@ msgstr " [सिस्टेम]"
 
 #: source/ui/utlui/utlui.src#STR_MULT_INTERACT_SPELL_WARN.String.Text
 msgid  "The interactive spellcheck is already active\nin a different document"
-msgstr ""
+msgstr "गोहोम गोनां बानाम आनजादआ  सिगां निफ्रायनो \nगुबुन फोरमान बिलाइआव मावथि जानानै दङ।"
 
 #: source/ui/utlui/utlui.src#STR_MULT_INTERACT_HYPH_WARN.String.Text
 msgid  "The interactive hyphenation is already active\nin a different document"
-msgstr ""
+msgstr "गोहोम गोनां हाइफेन सिनआ सिगां निफ्रायनो \nगुबुन फोरमान बिलाइआव मावथि जानानै दङ।"
 
 #: source/ui/utlui/utlui.src#STR_SPELL_TITLE.String.Text
 msgid  "Spellcheck"
@@ -12667,6 +12667,18 @@ msgstr "थोंगोर महरै मिरु"
 msgid  "at bottom"
 msgstr "गाहायाव"
 
+#: source/ui/utlui/attrdesc.src#STR_LINE_TOP.String.Text
+msgid  "Top of line"
+msgstr "सारिनि गोजौआव"
+
+#: source/ui/utlui/attrdesc.src#STR_LINE_CENTER.String.Text
+msgid  "Line centered"
+msgstr "सारि मिरुआव"
+
+#: source/ui/utlui/attrdesc.src#STR_LINE_BOTTOM.String.Text
+msgid  "Bottom of line"
+msgstr "सारिनि गाहायाव"
+
 #: source/ui/utlui/attrdesc.src#STR_REGISTER_ON.String.Text
 msgid  "Register-true"
 msgstr "रेजिस्टार-ट्रु"
@@ -12834,18 +12846,6 @@ msgstr "सिमना खौसे खालाम"
 #: source/ui/utlui/attrdesc.src#STR_CONNECT_BORDER_OFF.String.Text
 msgid  "Do not merge borders"
 msgstr "सिमनाफोरखौ खौसे खालामनो नाङा"
-
-#: source/ui/utlui/attrdesc.src#STR_LINE_TOP.String.Text
-msgid  "Top of line"
-msgstr "सारिनि गोजौआव"
-
-#: source/ui/utlui/attrdesc.src#STR_LINE_CENTER.String.Text
-msgid  "Line centered"
-msgstr "सारि मिरुआव"
-
-#: source/ui/utlui/attrdesc.src#STR_LINE_BOTTOM.String.Text
-msgid  "Bottom of line"
-msgstr "सारिनि गाहायाव"
 
 #: source/ui/web/web.src#STR_HUMAN_SWWEBDOC_NAME.String.Text
 msgid  "HTML"

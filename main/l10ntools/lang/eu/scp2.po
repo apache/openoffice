@@ -37,11 +37,11 @@ msgstr "ActiveX kontrola"
 
 #: source/activex/module_activex.ulf#STR_DESC_MODULE_OPTIONAL_ACTIVEXCONTROL
 msgid  "Component to enable Microsoft Internet Explorer to display %PRODUCTNAME documents."
-msgstr ""
+msgstr "Microsoft Internet Explorer %PRODUCTNAME dokumentuak bistaratzeko gaitzeko osagaia."
 
 #: source/base/folderitem_base.ulf#STR_FI_TOOLTIP_BASE
 msgid  "Manage databases, create queries and reports to track and manage your information by using Base."
-msgstr ""
+msgstr "Kudeatu datu-baseak eta sortu kontsultak eta txostenak informazioa eskuratzeko eta kudeatzeko Base-rekin."
 
 #: source/base/registryitem_base.ulf#STR_REG_VAL_OO_DATABASE
 msgid  "OpenDocument Database"
@@ -121,7 +121,11 @@ msgstr "Kalkulu-orria"
 
 #: source/calc/folderitem_calc.ulf#STR_FI_TOOLTIP_CALC
 msgid  "Perform calculation, analyze information and manage lists in spreadsheets by using Calc."
-msgstr ""
+msgstr "Egin kalkuluak, aztertu informazioa eta kudeatu zerrendak kalkulu-orrietan Calc-ekin."
+
+#: source/calc/registryitem_calc.ulf#STR_REG_VAL_NEW
+msgid  "&New"
+msgstr "&Berria"
 
 #: source/calc/registryitem_calc.ulf#STR_REG_VAL_SO60_SPREADSHEET
 msgid  "%SXWFORMATNAME %SXWFORMATVERSION Spreadsheet"
@@ -155,17 +159,13 @@ msgstr "Microsoft Excel 97-2003 txantiloia"
 msgid  "Microsoft Excel Template"
 msgstr "Microsoft Excel txantiloia"
 
-#: source/calc/registryitem_calc.ulf#STR_REG_VAL_NEW
-msgid  "&New"
-msgstr "&Berria"
-
 #: source/calc/module_calc.ulf#STR_NAME_MODULE_PRG_CALC
 msgid  "%PRODUCTNAME Calc"
 msgstr "%PRODUCTNAME Calc"
 
 #: source/calc/module_calc.ulf#STR_DESC_MODULE_PRG_CALC
 msgid  "Perform calculation, analyze information and manage lists in spreadsheets by using %PRODUCTNAME Calc."
-msgstr ""
+msgstr "Egin kalkuluak, aztertu informazioa eta kudeatu zerrendak kalkulu-orrietan %PRODUCTNAME Calc-ekin."
 
 #: source/calc/module_calc.ulf#STR_NAME_MODULE_PRG_CALC_BIN
 msgid  "Program Module"
@@ -189,7 +189,11 @@ msgstr "Osagarriak"
 
 #: source/calc/module_calc.ulf#STR_DESC_MODULE_OPTIONAL_ADDINS
 msgid  "Add-ins are additional programs that make new functions available in %PRODUCTNAME Calc."
-msgstr ""
+msgstr "%PRODUCTNAME Calc-en funtzio berriak erabili ahal izateko programa gehigarriak dira add-in osagarriak."
+
+#: source/draw/registryitem_draw.ulf#STR_REG_VAL_NEW
+msgid  "&New"
+msgstr "&Berria"
 
 #: source/draw/registryitem_draw.ulf#STR_REG_VAL_SO60_DRAWING
 msgid  "%SXWFORMATNAME %SXWFORMATVERSION Drawing"
@@ -207,17 +211,13 @@ msgstr "OpenDocument marrazkia"
 msgid  "OpenDocument Drawing Template"
 msgstr "OpenDocument marrazki-txantiloia"
 
-#: source/draw/registryitem_draw.ulf#STR_REG_VAL_NEW
-msgid  "&New"
-msgstr "&Berria"
-
 #: source/draw/folderitem_draw.ulf#STR_FI_NAME_ZEICHNUNG
 msgid  "Drawing"
 msgstr "Marrazkia"
 
 #: source/draw/folderitem_draw.ulf#STR_FI_TOOLTIP_DRAW
 msgid  "Create and edit drawings, flow charts, and logos by using Draw."
-msgstr ""
+msgstr "Sortu eta editatu marrazkiak, fluxu-diagramak eta logotipoak Draw-rekin."
 
 #: source/draw/module_draw.ulf#STR_NAME_MODULE_PRG_DRAW
 msgid  "%PRODUCTNAME Draw"
@@ -225,7 +225,7 @@ msgstr "%PRODUCTNAME Draw"
 
 #: source/draw/module_draw.ulf#STR_DESC_MODULE_PRG_DRAW
 msgid  "Create and edit drawings, flow charts, and logos by using %PRODUCTNAME Draw."
-msgstr ""
+msgstr "Sortu eta editatu marrazkiak, fluxu-diagramak eta logotipoak %PRODUCTNAME Draw-rekin."
 
 #: source/draw/module_draw.ulf#STR_NAME_MODULE_PRG_DRAW_BIN
 msgid  "Program Module"
@@ -249,7 +249,7 @@ msgstr "GNOMEko integrazioa"
 
 #: source/gnome/module_gnome.ulf#STR_DESC_MODULE_OPTIONAL_GNOME
 msgid  "System integration of %PRODUCTNAME %PRODUCTVERSION into Gnome Desktop Environment."
-msgstr ""
+msgstr "%PRODUCTNAME %PRODUCTVERSION Gnome mahaigainaren ingurunean integratzea."
 
 #: source/graphicfilter/module_graphicfilter.ulf#STR_NAME_MODULE_OPTIONAL_GRFFLT
 msgid  "Graphics Filters"
@@ -377,7 +377,11 @@ msgstr "Aurkezpena"
 
 #: source/impress/folderitem_impress.ulf#STR_FI_TOOLTIP_IMPRESS
 msgid  "Create and edit presentations for slideshows, meeting and Web pages by using Impress."
-msgstr ""
+msgstr "Sortu eta editatu diapositiba-saioen, bileren eta web orrien aurkezpenak Impress-ekin."
+
+#: source/impress/registryitem_impress.ulf#STR_REG_VAL_NEW
+msgid  "&New"
+msgstr "&Berria"
 
 #: source/impress/registryitem_impress.ulf#STR_REG_VAL_SO60_SHOW
 msgid  "Show"
@@ -419,17 +423,13 @@ msgstr "Microsoft PowerPoint 97-2003 txantiloia"
 msgid  "Microsoft PowerPoint Template"
 msgstr "Microsoft PowerPoint txantiloia"
 
-#: source/impress/registryitem_impress.ulf#STR_REG_VAL_NEW
-msgid  "&New"
-msgstr "&Berria"
-
 #: source/impress/module_impress.ulf#STR_NAME_MODULE_PRG_IMPRESS
 msgid  "%PRODUCTNAME Impress"
 msgstr "%PRODUCTNAME Impress"
 
 #: source/impress/module_impress.ulf#STR_DESC_MODULE_PRG_IMPRESS
 msgid  "Create and edit presentations for slideshows, meeting and Web pages by using %PRODUCTNAME Impress."
-msgstr ""
+msgstr "Sortu eta editatu diapositiba-saioen, bileren eta web orrien aurkezpenak %PRODUCTNAME Impress-ekin."
 
 #: source/impress/module_impress.ulf#STR_NAME_MODULE_PRG_IMPRESS_BIN
 msgid  "Program Module"
@@ -461,7 +461,7 @@ msgstr "Gailu mugikorren iragazkiak"
 
 #: source/javafilter/module_javafilter.ulf#STR_DESC_MODULE_OPTIONAL_JAVAFILTER
 msgid  "Text and spreadsheet filters to support import/export for Palm handheld or Pocket PC (Java required)."
-msgstr ""
+msgstr "Palm edo Pocket PC eskuko gailuetako datuak inportatzeko eta esportatzeko testu eta kalkulu-orrien iragazkiak (Java beharrezkoa da)."
 
 #: source/javafilter/module_javafilter.ulf#STR_NAME_MODULE_OPTIONAL_JAVAFILTER_PALM
 msgid  "Palm"
@@ -485,7 +485,7 @@ msgstr "Pocket PC"
 
 #: source/javafilter/module_javafilter.ulf#STR_DESC_MODULE_OPTIONAL_JAVAFILTER_POCKETPC_WNT
 msgid  "Filters and ActiveSync support for Pocket PC compatible handhelds"
-msgstr ""
+msgstr "Pocket PC-rekin bateragarriak diren eskuko gailuetarako iragazkiak eta ActiveSync euskarria"
 
 #: source/javafilter/module_javafilter.ulf#STR_DESC_MODULE_OPTIONAL_JAVAFILTER_POCKETPC_UNIX
 msgid  "Filters for Pocket PC compatible handhelds."
@@ -565,7 +565,7 @@ msgstr "%PRODUCTNAME Math"
 
 #: source/math/module_math.ulf#STR_DESC_MODULE_PRG_MATH
 msgid  "Create and edit scientific formulas and equations by using %PRODUCTNAME Math."
-msgstr ""
+msgstr "Sortu eta editatu formula zientifikoak eta ekuazioak %PRODUCTNAME Math-ekin."
 
 #: source/math/module_math.ulf#STR_NAME_MODULE_PRG_MATH_BIN
 msgid  "Program Module"
@@ -587,6 +587,10 @@ msgstr "%PRODUCTNAME Math-i buruzko laguntza"
 msgid  "Create and edit scientific formulas and equations by using Math."
 msgstr "Sortu eta editatu formula zientifikoak eta ekuazioak Math-ekin."
 
+#: source/math/registryitem_math.ulf#STR_REG_VAL_NEW
+msgid  "&New"
+msgstr "&Berria"
+
 #: source/math/registryitem_math.ulf#STR_REG_VAL_SO60_FORMULA
 msgid  "%SXWFORMATNAME %SXWFORMATVERSION Formula"
 msgstr "%SXWFORMATNAME %SXWFORMATVERSION formula"
@@ -595,17 +599,17 @@ msgstr "%SXWFORMATNAME %SXWFORMATVERSION formula"
 msgid  "OpenDocument Formula"
 msgstr "OpenDocument formula"
 
-#: source/math/registryitem_math.ulf#STR_REG_VAL_NEW
-msgid  "&New"
-msgstr "&Berria"
-
 #: source/onlineupdate/module_onlineupdate.ulf#STR_NAME_MODULE_OPT_ONLINEUPDATE
 msgid  "Online Update"
 msgstr "Lineako eguneratzea"
 
 #: source/onlineupdate/module_onlineupdate.ulf#STR_DESC_MODULE_OPT_ONLINEUPDATE
 msgid  "Get automatically notified when a new update of %PRODUCTNAME becomes available."
-msgstr ""
+msgstr "Bistaratu abisu automatikoa %PRODUCTNAME eguneratze berri bat erabilgarri dagoenean."
+
+#: source/ooo/registryitem_ooo.ulf#STR_REG_VAL_NEW
+msgid  "&New"
+msgstr "&Berria"
 
 #: source/ooo/registryitem_ooo.ulf#STR_REG_VAL_INSTALL
 msgid  "&Install"
@@ -615,17 +619,13 @@ msgstr "&Instalatu"
 msgid  "OpenOffice.org 1.1 Configuration File"
 msgstr ""
 
-#: source/ooo/registryitem_ooo.ulf#STR_REG_VAL_APPCAPABILITY_DESCRIPTION_OOO
-msgid  "office productivity suite based on Apache OpenOffice project"
-msgstr ""
-
-#: source/ooo/registryitem_ooo.ulf#STR_REG_VAL_NEW
-msgid  "&New"
-msgstr "&Berria"
-
 #: source/ooo/registryitem_ooo.ulf#STR_REG_VAL_SO50_TEMPLATE_OOO
 msgid  "StarOffice 5.0 Template"
 msgstr "StarOffice 5.0 txantiloia"
+
+#: source/ooo/registryitem_ooo.ulf#STR_REG_VAL_APPCAPABILITY_DESCRIPTION_OOO
+msgid  "office productivity suite based on Apache OpenOffice project"
+msgstr ""
 
 #: source/ooo/module_systemint.ulf#STR_NAME_MODULE_OPTIONAL_SYSTEMINTEGRATION
 msgid  "Desktop integration"
@@ -657,7 +657,7 @@ msgstr "Aukerako osagaiak"
 
 #: source/ooo/module_ooo.ulf#STR_DESC_MODULE_OPTIONAL
 msgid  "Common components and additional programs shared by all %PRODUCTNAME programs."
-msgstr ""
+msgstr "%PRODUCTNAME programa guztiek partekatzen dituzten osagaiak eta programa gehigarriak."
 
 #: source/ooo/module_ooo.ulf#STR_NAME_MODULE_DICTIONARIES
 msgid  "Dictionaries"
@@ -725,7 +725,7 @@ msgstr "Ireki dokumentua"
 
 #: source/ooo/folderitem_ooo.ulf#STR_FI_TOOLTIP_SOFFICE
 msgid  "The office productivity suite compatible to the open and standardized ODF document format. Supported by The Apache Software Foundation."
-msgstr ""
+msgstr "ODF dokumentu formatu ireki eta estandarrarekin bateragaria den bulegotikako suitea. Oracle-k sustatuta."
 
 #: source/ooo/module_langpack.ulf#STR_NAME_MODULE_ROOT_LANGPACK
 msgid  "Additional language packs"
@@ -773,7 +773,7 @@ msgstr "Gaztelera"
 
 #: source/ooo/module_langpack.ulf#STR_DESC_MODULE_LANGPACK_ES
 msgid  "Installs Spanish support in %PRODUCTNAME %PRODUCTVERSION"
-msgstr ""
+msgstr "Gaztelaniaren euskarria instalatzen du %PRODUCTNAME %PRODUCTVERSION(e)n"
 
 #: source/ooo/module_langpack.ulf#STR_NAME_MODULE_LANGPACK_SV
 msgid  "Swedish"
@@ -797,7 +797,7 @@ msgstr "Portugesa (Brasil)"
 
 #: source/ooo/module_langpack.ulf#STR_DESC_MODULE_LANGPACK_PT_BR
 msgid  "Installs Portuguese support in %PRODUCTNAME %PRODUCTVERSION"
-msgstr ""
+msgstr "Portugesaren (Brasil) euskarria instalatzen du %PRODUCTNAME %PRODUCTVERSION(e)n"
 
 #: source/ooo/module_langpack.ulf#STR_NAME_MODULE_LANGPACK_JA
 msgid  "Japanese"
@@ -821,7 +821,7 @@ msgstr "Txinera (soildua)"
 
 #: source/ooo/module_langpack.ulf#STR_DESC_MODULE_LANGPACK_ZH_CN
 msgid  "Installs Chinese (simplified) support in %PRODUCTNAME %PRODUCTVERSION"
-msgstr ""
+msgstr "Txinera soilduaren euskarria instalatzen du %PRODUCTNAME %PRODUCTVERSION(e)n"
 
 #: source/ooo/module_langpack.ulf#STR_NAME_MODULE_LANGPACK_ZH_TW
 msgid  "Chinese (traditional)"
@@ -829,7 +829,7 @@ msgstr "Txinera (tradizionala)"
 
 #: source/ooo/module_langpack.ulf#STR_DESC_MODULE_LANGPACK_ZH_TW
 msgid  "Installs Chinese (traditional) support in %PRODUCTNAME %PRODUCTVERSION"
-msgstr ""
+msgstr "Txinera tradizionalaren euskarria instalatzen du %PRODUCTNAME %PRODUCTVERSION(e)n"
 
 #: source/ooo/module_langpack.ulf#STR_NAME_MODULE_LANGPACK_NL
 msgid  "Dutch"
@@ -837,7 +837,7 @@ msgstr "Nederlandera"
 
 #: source/ooo/module_langpack.ulf#STR_DESC_MODULE_LANGPACK_NL
 msgid  "Installs Dutch support in %PRODUCTNAME %PRODUCTVERSION"
-msgstr ""
+msgstr "Nederlanderaren euskarria instalatzen du %PRODUCTNAME %PRODUCTVERSION(e)n"
 
 #: source/ooo/module_langpack.ulf#STR_NAME_MODULE_LANGPACK_HU
 msgid  "Hungarian"
@@ -845,7 +845,7 @@ msgstr "Hungariera"
 
 #: source/ooo/module_langpack.ulf#STR_DESC_MODULE_LANGPACK_HU
 msgid  "Installs Hungarian support in %PRODUCTNAME %PRODUCTVERSION"
-msgstr ""
+msgstr "Hungarieraren euskarria instalatzen du %PRODUCTNAME %PRODUCTVERSION(e)n"
 
 #: source/ooo/module_langpack.ulf#STR_NAME_MODULE_LANGPACK_PL
 msgid  "Polish"
@@ -885,7 +885,7 @@ msgstr "Thailandiera"
 
 #: source/ooo/module_langpack.ulf#STR_DESC_MODULE_LANGPACK_TH
 msgid  "Installs Thai support in %PRODUCTNAME %PRODUCTVERSION"
-msgstr ""
+msgstr "Thailandieraren euskarria instalatzen du %PRODUCTNAME %PRODUCTVERSION(e)n"
 
 #: source/ooo/module_langpack.ulf#STR_NAME_MODULE_LANGPACK_CS
 msgid  "Czech"
@@ -901,7 +901,7 @@ msgstr "Eslovakiera"
 
 #: source/ooo/module_langpack.ulf#STR_DESC_MODULE_LANGPACK_SK
 msgid  "Installs Slovak support in %PRODUCTNAME %PRODUCTVERSION"
-msgstr ""
+msgstr "Eslovakieraren euskarria instalatzen du %PRODUCTNAME %PRODUCTVERSION(e)n"
 
 #: source/ooo/module_langpack.ulf#STR_NAME_MODULE_LANGPACK_HR
 msgid  "Croatian"
@@ -925,7 +925,7 @@ msgstr "Vietnamera"
 
 #: source/ooo/module_langpack.ulf#STR_DESC_MODULE_LANGPACK_VI
 msgid  "Installs Vietnamese support in %PRODUCTNAME %PRODUCTVERSION"
-msgstr ""
+msgstr "Vietnameraren euskarria instalatzen du %PRODUCTNAME %PRODUCTVERSION(e)n"
 
 #: source/ooo/module_langpack.ulf#STR_NAME_MODULE_LANGPACK_BG
 msgid  "Bulgarian"
@@ -933,7 +933,7 @@ msgstr "Bulgariera"
 
 #: source/ooo/module_langpack.ulf#STR_DESC_MODULE_LANGPACK_BG
 msgid  "Installs Bulgarian support in %PRODUCTNAME %PRODUCTVERSION"
-msgstr ""
+msgstr "Bulgarieraren euskarria instalatzen du %PRODUCTNAME %PRODUCTVERSION(e)n"
 
 #: source/ooo/module_langpack.ulf#STR_NAME_MODULE_LANGPACK_KM
 msgid  "Khmer"
@@ -957,7 +957,7 @@ msgstr "Gujeratiera"
 
 #: source/ooo/module_langpack.ulf#STR_DESC_MODULE_LANGPACK_GU_IN
 msgid  "Installs Gujarati support in %PRODUCTNAME %PRODUCTVERSION"
-msgstr ""
+msgstr "Gujeratieraren euskarria instalatzen du %PRODUCTNAME %PRODUCTVERSION(e)n"
 
 #: source/ooo/module_langpack.ulf#STR_NAME_MODULE_LANGPACK_TA
 msgid  "Tamil"
@@ -997,7 +997,7 @@ msgstr "Hegoaldeko sothoera (Sutu)"
 
 #: source/ooo/module_langpack.ulf#STR_DESC_MODULE_LANGPACK_ST
 msgid  "Installs Southern Sotho (Sutu) support in %PRODUCTNAME %PRODUCTVERSION"
-msgstr ""
+msgstr "Hegoaldeko sothoeraren (Sutu) euskarria instalatzen du %PRODUCTNAME %PRODUCTVERSION(e)n"
 
 #: source/ooo/module_langpack.ulf#STR_NAME_MODULE_LANGPACK_TN
 msgid  "Tswana"
@@ -1029,7 +1029,7 @@ msgstr "Afrikaansa"
 
 #: source/ooo/module_langpack.ulf#STR_DESC_MODULE_LANGPACK_AF
 msgid  "Installs Afrikaans support in %PRODUCTNAME %PRODUCTVERSION"
-msgstr ""
+msgstr "Afrikaansaren euskarria instalatzen du %PRODUCTNAME %PRODUCTVERSION(e)n"
 
 #: source/ooo/module_langpack.ulf#STR_NAME_MODULE_LANGPACK_SW
 msgid  "Swahili"
@@ -1061,7 +1061,7 @@ msgstr "Iparraldeko shotoera"
 
 #: source/ooo/module_langpack.ulf#STR_DESC_MODULE_LANGPACK_NS
 msgid  "Installs Northern Sotho support in %PRODUCTNAME %PRODUCTVERSION"
-msgstr ""
+msgstr "Iparraldeko shotoeraren euskarria instalatzen du %PRODUCTNAME %PRODUCTVERSION(e)n"
 
 #: source/ooo/module_langpack.ulf#STR_NAME_MODULE_LANGPACK_BN
 msgid  "Bengali"
@@ -1077,7 +1077,7 @@ msgstr "Bengalera (Bangladesh)"
 
 #: source/ooo/module_langpack.ulf#STR_DESC_MODULE_LANGPACK_BN_BD
 msgid  "Installs Bengali (Bangladesh) support in %PRODUCTNAME %PRODUCTVERSION"
-msgstr ""
+msgstr "Bangladesh-ko bengaleraren euskarria instalatzen du %PRODUCTNAME %PRODUCTVERSION(e)n"
 
 #: source/ooo/module_langpack.ulf#STR_NAME_MODULE_LANGPACK_BN_IN
 msgid  "Bengali (India)"
@@ -1085,7 +1085,7 @@ msgstr "Bengalera (India)"
 
 #: source/ooo/module_langpack.ulf#STR_DESC_MODULE_LANGPACK_BN_IN
 msgid  "Installs Bengali (India) support in %PRODUCTNAME %PRODUCTVERSION"
-msgstr ""
+msgstr "Indiako Bengaleraren euskarria instalatzen du %PRODUCTNAME %PRODUCTVERSION(e)n"
 
 #: source/ooo/module_langpack.ulf#STR_NAME_MODULE_LANGPACK_OR
 msgid  "Oriya"
@@ -1165,7 +1165,7 @@ msgstr "Finlandiera"
 
 #: source/ooo/module_langpack.ulf#STR_DESC_MODULE_LANGPACK_FI
 msgid  "Installs Finnish support in %PRODUCTNAME %PRODUCTVERSION"
-msgstr ""
+msgstr "Finlandieraren euskarria instalatzen du %PRODUCTNAME %PRODUCTVERSION(e)n"
 
 #: source/ooo/module_langpack.ulf#STR_NAME_MODULE_LANGPACK_HE
 msgid  "Hebrew"
@@ -1181,7 +1181,7 @@ msgstr "Islandiera"
 
 #: source/ooo/module_langpack.ulf#STR_DESC_MODULE_LANGPACK_IS
 msgid  "Installs Icelandic support in %PRODUCTNAME %PRODUCTVERSION"
-msgstr ""
+msgstr "Islandieraren euskarria instalatzen du %PRODUCTNAME %PRODUCTVERSION(e)n"
 
 #: source/ooo/module_langpack.ulf#STR_NAME_MODULE_LANGPACK_NB
 msgid  "Norwegian (Bokmål)"
@@ -1189,7 +1189,7 @@ msgstr "Norvegiera (Bokmål)"
 
 #: source/ooo/module_langpack.ulf#STR_DESC_MODULE_LANGPACK_NB
 msgid  "Installs Norwegian (Bokmål) support in %PRODUCTNAME %PRODUCTVERSION"
-msgstr ""
+msgstr "Norvegieraren (Bokmål) euskarria instalatzen du %PRODUCTNAME %PRODUCTVERSION(e)n"
 
 #: source/ooo/module_langpack.ulf#STR_NAME_MODULE_LANGPACK_NN
 msgid  "Norwegian (Nynorsk)"
@@ -1197,7 +1197,7 @@ msgstr "Norvegiera (Nynorsk)"
 
 #: source/ooo/module_langpack.ulf#STR_DESC_MODULE_LANGPACK_NN
 msgid  "Installs Norwegian (Nynorsk) support in %PRODUCTNAME %PRODUCTVERSION"
-msgstr ""
+msgstr "Norvegieraren (Nynorsk) euskarria instalatzen du %PRODUCTNAME %PRODUCTVERSION(e)n"
 
 #: source/ooo/module_langpack.ulf#STR_NAME_MODULE_LANGPACK_RM
 msgid  "Rhaeto-Romance"
@@ -1205,7 +1205,7 @@ msgstr "Erretorromaniera"
 
 #: source/ooo/module_langpack.ulf#STR_DESC_MODULE_LANGPACK_RM
 msgid  "Installs Rhaeto-Romance support in %PRODUCTNAME %PRODUCTVERSION"
-msgstr ""
+msgstr "Erretorromaniera euskarria instalatzen du %PRODUCTNAME %PRODUCTVERSION(e)n"
 
 #: source/ooo/module_langpack.ulf#STR_NAME_MODULE_LANGPACK_RO
 msgid  "Romanian"
@@ -1213,7 +1213,7 @@ msgstr "Errumaniera"
 
 #: source/ooo/module_langpack.ulf#STR_DESC_MODULE_LANGPACK_RO
 msgid  "Installs Romanian support in %PRODUCTNAME %PRODUCTVERSION"
-msgstr ""
+msgstr "Errumanieraren euskarria instalatzen du %PRODUCTNAME %PRODUCTVERSION(e)n"
 
 #: source/ooo/module_langpack.ulf#STR_NAME_MODULE_LANGPACK_SQ
 msgid  "Albanian"
@@ -1237,7 +1237,7 @@ msgstr "Indonesiera"
 
 #: source/ooo/module_langpack.ulf#STR_DESC_MODULE_LANGPACK_ID
 msgid  "Installs Indonesian support in %PRODUCTNAME %PRODUCTVERSION"
-msgstr ""
+msgstr "Indonesieraren euskarria instalatzen du %PRODUCTNAME %PRODUCTVERSION(e)n"
 
 #: source/ooo/module_langpack.ulf#STR_NAME_MODULE_LANGPACK_UK
 msgid  "Ukrainian"
@@ -1253,7 +1253,7 @@ msgstr "Bielorrusiera"
 
 #: source/ooo/module_langpack.ulf#STR_DESC_MODULE_LANGPACK_BE_BY
 msgid  "Installs Belarusian support in %PRODUCTNAME %PRODUCTVERSION"
-msgstr ""
+msgstr "Bielorrusieraren euskarria instalatzen du %PRODUCTNAME %PRODUCTVERSION(e)n"
 
 #: source/ooo/module_langpack.ulf#STR_NAME_MODULE_LANGPACK_SL
 msgid  "Slovenian"
@@ -1261,7 +1261,7 @@ msgstr "Esloveniera"
 
 #: source/ooo/module_langpack.ulf#STR_DESC_MODULE_LANGPACK_SL
 msgid  "Installs Slovenian support in %PRODUCTNAME %PRODUCTVERSION"
-msgstr ""
+msgstr "Eslovenieraren euskarria instalatzen du %PRODUCTNAME %PRODUCTVERSION(e)n"
 
 #: source/ooo/module_langpack.ulf#STR_NAME_MODULE_LANGPACK_LV
 msgid  "Latvian"
@@ -1277,7 +1277,7 @@ msgstr "Lituaniera"
 
 #: source/ooo/module_langpack.ulf#STR_DESC_MODULE_LANGPACK_LT
 msgid  "Installs Lithuanian support in %PRODUCTNAME %PRODUCTVERSION"
-msgstr ""
+msgstr "Lituanieraren euskarria instalatzen du %PRODUCTNAME %PRODUCTVERSION(e)n"
 
 #: source/ooo/module_langpack.ulf#STR_NAME_MODULE_LANGPACK_HY
 msgid  "Armenian"
@@ -1301,7 +1301,7 @@ msgstr "Mazedoniera"
 
 #: source/ooo/module_langpack.ulf#STR_DESC_MODULE_LANGPACK_MK
 msgid  "Installs Macedonian support in %PRODUCTNAME %PRODUCTVERSION"
-msgstr ""
+msgstr "Mazedonieraren euskarria instalatzen du %PRODUCTNAME %PRODUCTVERSION(e)n"
 
 #: source/ooo/module_langpack.ulf#STR_NAME_MODULE_LANGPACK_MT
 msgid  "Maltese"
@@ -1333,7 +1333,7 @@ msgstr "Serbiera (latinoa)"
 
 #: source/ooo/module_langpack.ulf#STR_DESC_MODULE_LANGPACK_SH_YU
 msgid  "Installs Serbian (Latin) support in %PRODUCTNAME %PRODUCTVERSION"
-msgstr ""
+msgstr "Serbieraren (latinoa) euskarria instalatzen du %PRODUCTNAME %PRODUCTVERSION(e)n"
 
 #: source/ooo/module_langpack.ulf#STR_NAME_MODULE_LANGPACK_SH
 msgid  "Serbian (Latin)"
@@ -1341,7 +1341,7 @@ msgstr "Serbiera (latinoa)"
 
 #: source/ooo/module_langpack.ulf#STR_DESC_MODULE_LANGPACK_SH
 msgid  "Installs Serbian (Latin) support in %PRODUCTNAME %PRODUCTVERSION"
-msgstr ""
+msgstr "Serbieraren (latinoa) euskarria instalatzen du %PRODUCTNAME %PRODUCTVERSION(e)n"
 
 #: source/ooo/module_langpack.ulf#STR_NAME_MODULE_LANGPACK_GA
 msgid  "Irish"
@@ -1349,7 +1349,7 @@ msgstr "Gaelera (Irlanda)"
 
 #: source/ooo/module_langpack.ulf#STR_DESC_MODULE_LANGPACK_GA
 msgid  "Installs Irish support in %PRODUCTNAME %PRODUCTVERSION"
-msgstr ""
+msgstr "Gaeleraren (Irlanda) euskarria instalatzen du %PRODUCTNAME %PRODUCTVERSION(e)n"
 
 #: source/ooo/module_langpack.ulf#STR_NAME_MODULE_LANGPACK_SR_CS
 msgid  "Serbian (Cyrillic)"
@@ -1357,7 +1357,7 @@ msgstr "Serbiera (zirilikoa)"
 
 #: source/ooo/module_langpack.ulf#STR_DESC_MODULE_LANGPACK_SR_CS
 msgid  "Installs Serbian (Cyrillic) support in %PRODUCTNAME %PRODUCTVERSION"
-msgstr ""
+msgstr "Serbieraren (zirilikoa) euskarria instalatzen du %PRODUCTNAME %PRODUCTVERSION(e)n"
 
 #: source/ooo/module_langpack.ulf#STR_NAME_MODULE_LANGPACK_SR
 msgid  "Serbian (Cyrillic)"
@@ -1365,7 +1365,7 @@ msgstr "Serbiera (zirilikoa)"
 
 #: source/ooo/module_langpack.ulf#STR_DESC_MODULE_LANGPACK_SR
 msgid  "Installs Serbian (Cyrillic) support in %PRODUCTNAME %PRODUCTVERSION"
-msgstr ""
+msgstr "Serbieraren (zirilikoa) euskarria instalatzen du %PRODUCTNAME %PRODUCTVERSION(e)n"
 
 #: source/ooo/module_langpack.ulf#STR_NAME_MODULE_LANGPACK_BS
 msgid  "Bosnian"
@@ -1389,7 +1389,7 @@ msgstr "Kinyaruanda"
 
 #: source/ooo/module_langpack.ulf#STR_DESC_MODULE_LANGPACK_RW
 msgid  "Installs Kinyarwanda support in %PRODUCTNAME %PRODUCTVERSION"
-msgstr ""
+msgstr "Kinyaruandaren euskarria instalatzen du %PRODUCTNAME %PRODUCTVERSION(e)n"
 
 #: source/ooo/module_langpack.ulf#STR_NAME_MODULE_LANGPACK_SA
 msgid  "Sanskrit"
@@ -1397,7 +1397,7 @@ msgstr "Sanskritoa"
 
 #: source/ooo/module_langpack.ulf#STR_DESC_MODULE_LANGPACK_SA
 msgid  "Installs Sanskrit support in %PRODUCTNAME %PRODUCTVERSION"
-msgstr ""
+msgstr "Sanskritoaren euskarria instalatzen du %PRODUCTNAME %PRODUCTVERSION(e)n"
 
 #: source/ooo/module_langpack.ulf#STR_NAME_MODULE_LANGPACK_FA
 msgid  "Persian"
@@ -1461,7 +1461,7 @@ msgstr "Ndebelera (hegoaldea)"
 
 #: source/ooo/module_langpack.ulf#STR_DESC_MODULE_LANGPACK_NR
 msgid  "Installs Ndebele South support in %PRODUCTNAME %PRODUCTVERSION"
-msgstr ""
+msgstr "Ndebeleraren (hegoaldea) euskarria instalatzen du %PRODUCTNAME %PRODUCTVERSION(e)n"
 
 #: source/ooo/module_langpack.ulf#STR_NAME_MODULE_LANGPACK_SS
 msgid  "Swazi"
@@ -1493,7 +1493,7 @@ msgstr "Malaysiera (Malaysia)"
 
 #: source/ooo/module_langpack.ulf#STR_DESC_MODULE_LANGPACK_MS
 msgid  "Installs Malay (Malaysian) support in %PRODUCTNAME %PRODUCTVERSION"
-msgstr ""
+msgstr "Malaysieraren (Malaysia) euskarria instalatzen du %PRODUCTNAME %PRODUCTVERSION(e)n"
 
 #: source/ooo/module_langpack.ulf#STR_NAME_MODULE_LANGPACK_TG
 msgid  "Tajik"
@@ -1533,7 +1533,7 @@ msgstr "Esperantoa"
 
 #: source/ooo/module_langpack.ulf#STR_DESC_MODULE_LANGPACK_EO
 msgid  "Installs Esperanto support in %PRODUCTNAME %PRODUCTVERSION"
-msgstr ""
+msgstr "Esperantoaren euskarria instalatzen du %PRODUCTNAME %PRODUCTVERSION(e)n"
 
 #: source/ooo/module_langpack.ulf#STR_NAME_MODULE_LANGPACK_GU
 msgid  "Gujarati"
@@ -1541,7 +1541,7 @@ msgstr "Gujeratiera"
 
 #: source/ooo/module_langpack.ulf#STR_DESC_MODULE_LANGPACK_GU
 msgid  "Installs Gujarati support in %PRODUCTNAME %PRODUCTVERSION"
-msgstr ""
+msgstr "Gujeratieraren euskarria instalatzen du %PRODUCTNAME %PRODUCTVERSION(e)n"
 
 #: source/ooo/module_langpack.ulf#STR_NAME_MODULE_LANGPACK_EN_ZA
 msgid  "English (South Africa)"
@@ -1549,7 +1549,7 @@ msgstr "Ingelesa (Hego Afrika)"
 
 #: source/ooo/module_langpack.ulf#STR_DESC_MODULE_LANGPACK_EN_ZA
 msgid  "Installs English (South Africa) support in %PRODUCTNAME %PRODUCTVERSION"
-msgstr ""
+msgstr "Ingelesaren (Hego Afrika) euskarria instalatzen du %PRODUCTNAME %PRODUCTVERSION(e)n"
 
 #: source/ooo/module_langpack.ulf#STR_NAME_MODULE_LANGPACK_EN_GB
 msgid  "English (United Kingdom)"
@@ -1557,7 +1557,7 @@ msgstr "Ingelesa (Erresuma Batua)"
 
 #: source/ooo/module_langpack.ulf#STR_DESC_MODULE_LANGPACK_EN_GB
 msgid  "Installs English (United Kingdom) support in %PRODUCTNAME %PRODUCTVERSION"
-msgstr ""
+msgstr "Ingelesaren (Erresuma Batua) euskarria instalatzen du %PRODUCTNAME %PRODUCTVERSION(e)n"
 
 #: source/ooo/module_langpack.ulf#STR_NAME_MODULE_LANGPACK_UR_IN
 msgid  "Urdu"
@@ -1573,7 +1573,7 @@ msgstr "Malayalama"
 
 #: source/ooo/module_langpack.ulf#STR_DESC_MODULE_LANGPACK_ML_IN
 msgid  "Installs Malayalam support in %PRODUCTNAME %PRODUCTVERSION"
-msgstr ""
+msgstr "Malayalamaren euskarria instalatzen du %PRODUCTNAME %PRODUCTVERSION(e)n"
 
 #: source/ooo/module_langpack.ulf#STR_NAME_MODULE_LANGPACK_TE_IN
 msgid  "Telugu"
@@ -1613,7 +1613,7 @@ msgstr "Okzitanera"
 
 #: source/ooo/module_langpack.ulf#STR_DESC_MODULE_LANGPACK_OC
 msgid  "Installs Occitan support in %PRODUCTNAME %PRODUCTVERSION"
-msgstr ""
+msgstr "Okzitanieraren euskarria instalatzen du %PRODUCTNAME %PRODUCTVERSION-(e)n"
 
 #: source/ooo/module_langpack.ulf#STR_NAME_MODULE_LANGPACK_UG
 msgid  "Uighur"
@@ -1621,7 +1621,7 @@ msgstr "Uighurera"
 
 #: source/ooo/module_langpack.ulf#STR_DESC_MODULE_LANGPACK_UG
 msgid  "Installs Uighur support in %PRODUCTNAME %PRODUCTVERSION"
-msgstr ""
+msgstr "Uighureraren euskarria instalatzen du %PRODUCTNAME %PRODUCTVERSION-(e)n"
 
 #: source/ooo/module_langpack.ulf#STR_NAME_MODULE_LANGPACK_SI
 msgid  "Sinhala"
@@ -1645,7 +1645,7 @@ msgstr "Asturiera"
 
 #: source/ooo/module_langpack.ulf#STR_DESC_MODULE_LANGPACK_AST
 msgid  "Installs Asturian support in %PRODUCTNAME %PRODUCTVERSION"
-msgstr ""
+msgstr "Asturieraren euskarria instalatzen du %PRODUCTNAME %PRODUCTVERSION-(e)n"
 
 #: source/ooo/module_langpack.ulf#STR_NAME_MODULE_LANGPACK_GD
 msgid  "Gaelic (Scotland)"
@@ -1669,7 +1669,7 @@ msgstr "Python-UNO Bridge"
 
 #: source/python/module_python.ulf#STR_DESC_MODULE_OPTIONAL_PYTHON
 msgid  "Adds the ability to automate %PRODUCTNAME with the python scripting language. See http://udk.openoffice.org/python/python-bridge.html for a complete documentation."
-msgstr ""
+msgstr "%PRODUCTNAME python scriptgintza-lengoaiarekin automatizatzeko aukera ematen du. Dokumentazio osoa nahi izanez gero: http://udk.openoffice.org/python/python-bridge.html"
 
 #: source/quickstart/module_quickstart.ulf#STR_NAME_MODULE_OPTIONAL_QUICKSTART
 msgid  "Quickstarter"
@@ -1677,7 +1677,7 @@ msgstr "Abiarazte bizkorra"
 
 #: source/quickstart/module_quickstart.ulf#STR_DESC_MODULE_OPTIONAL_QUICKSTART
 msgid  "Loads basic components on system start to accelerate start up time of %PRODUCTNAME %PRODUCTVERSION."
-msgstr ""
+msgstr "Oinarrizko osagaiak kargatzen ditu sistema abiaraztean, %PRODUCTNAME %PRODUCTVERSION bizkorrago abiarazteko."
 
 #: source/sdkoo/module_sdkoo.ulf#STR_NAME_MODULE_OPTIONAL_SDKOO
 msgid  "Software Development Kit (SDK)"
@@ -1685,7 +1685,7 @@ msgstr "Softwarea garatzeko tresna-multzoa (SDK)"
 
 #: source/sdkoo/module_sdkoo.ulf#STR_DESC_MODULE_OPTIONAL_SDKOO
 msgid  "The SDK provides all necessary tools, examples and documentation to program with and for the office."
-msgstr ""
+msgstr "SDKak bulegotitako suitearentzako (eta suitearekin) programatzeko tresna guztiak, adibideak eta dokumentazioa eskaintzen du."
 
 #: source/winexplorerext/module_winexplorerext.ulf#STR_NAME_MODULE_OPTIONAL_WINDOWS_EXPLORER_EXTENSIONS
 msgid  "Windows Explorer Extension"
@@ -1693,7 +1693,7 @@ msgstr "Windows esploradorearen luzapena"
 
 #: source/winexplorerext/module_winexplorerext.ulf#STR_DESC_MODULE_OPTIONAL_WINDOWS_EXPLORER_EXTENSIONS
 msgid  "Enables the Microsoft Windows Explorer to show information about %PRODUCTNAME documents, such as thumbnail previews."
-msgstr ""
+msgstr "Microsoft Windows esploradoreak %PRODUCTNAME dokumentuei buruzko informazioa erakutsiko dizu hedapen honekin, koadro txikiko aurrebistak, esaterako."
 
 #: source/writer/folderitem_writer.ulf#STR_FI_NAME_HTMLDOKUMENT
 msgid  "HTML Document"
@@ -1705,7 +1705,11 @@ msgstr "Testu-dokumentua"
 
 #: source/writer/folderitem_writer.ulf#STR_FI_TOOLTIP_WRITER
 msgid  "Create and edit text and graphics in letters, reports, documents and Web pages by using Writer."
-msgstr ""
+msgstr "Sortu eta editatu gutun, txosten, dokumentu eta web orrietako testua eta grafikoak Writer-ekin."
+
+#: source/writer/registryitem_writer.ulf#STR_REG_VAL_NEW
+msgid  "&New"
+msgstr "&Berria"
 
 #: source/writer/registryitem_writer.ulf#STR_REG_VAL_SO60_TEXT
 msgid  "%SXWFORMATNAME %SXWFORMATVERSION Text Document"
@@ -1755,17 +1759,13 @@ msgstr "Microsoft Word txantiloia"
 msgid  "Rich Text Document"
 msgstr "Testu aberastuko dokumentua"
 
-#: source/writer/registryitem_writer.ulf#STR_REG_VAL_NEW
-msgid  "&New"
-msgstr "&Berria"
-
 #: source/writer/module_writer.ulf#STR_NAME_MODULE_PRG_WRT
 msgid  "%PRODUCTNAME Writer"
 msgstr "%PRODUCTNAME Writer"
 
 #: source/writer/module_writer.ulf#STR_DESC_MODULE_PRG_WRT
 msgid  "Create and edit text and graphics in letters, reports, documents and Web pages by using %PRODUCTNAME Writer."
-msgstr ""
+msgstr "Sortu eta editatu gutun, txosten, dokumentu eta web orrietako testua eta grafikoak %PRODUCTNAME Writer-ekin."
 
 #: source/writer/module_writer.ulf#STR_NAME_MODULE_PRG_WRT_BIN
 msgid  "Program Module"

@@ -41,23 +41,23 @@ msgstr "No s'ha pogut establir una connexió."
 
 #: source/core/resource/strings.src#RID_STR_TABLE_IS_FILTERED.String.Text
 msgid  "The table $name$ already exists. It is not visible because it has been filtered out."
-msgstr ""
+msgstr "La taula $name$ ja existeix, però no la podeu veure perquè ha estat filtrada."
 
 #: source/core/resource/strings.src#RID_STR_NEED_CONFIG_WRITE_ACCESS.String.Text
 msgid  "You have no write access to the configuration data the object is based on."
-msgstr ""
+msgstr "No teniu drets d'escriptura sobre les dades de configuració de l'objecte."
 
 #: source/core/resource/strings.src#RID_STR_COULDNOTCONNECT_UNSPECIFIED.String.Text
 msgid  "The connection to the external data source could not be established. An unknown error occurred. The driver is probably defective."
-msgstr ""
+msgstr "No s'ha pogut establir la connexió a la base de dades externa. S'ha produït un error desconegut. És probable que el controlador siga defectuós."
 
 #: source/core/resource/strings.src#RID_STR_COULDNOTCONNECT_NODRIVER.String.Text
 msgid  "The connection to the external data source could not be established. No SDBC driver was found for the given URL."
-msgstr ""
+msgstr "No s'ha pogut establir la connexió a la base de dades externa. No s'ha trobat el controlador SDBC per a este URL."
 
 #: source/core/resource/strings.src#RID_STR_COULDNOTLOAD_MANAGER.String.Text
 msgid  "The connection to the external data source could not be established. The SDBC driver manager could not be loaded."
-msgstr ""
+msgstr "No s'ha pogut establir la connexió a la base de dades externa. No s'ha pogut carregar el controlador SDBC."
 
 #: source/core/resource/strings.src#RID_STR_FORM.String.Text
 msgid  "Form"
@@ -69,11 +69,11 @@ msgstr "Informe"
 
 #: source/core/resource/strings.src#RID_STR_DATASOURCE_NOT_STORED.String.Text
 msgid  "The data source was not saved. Please use the interface XStorable to save the data source."
-msgstr ""
+msgstr "No s'ha alçat la font de dades. Utilitzeu la interfície XStorable per alçar-la."
 
 #: source/core/resource/strings.src#RID_STR_ONLY_QUERY.String.Text
 msgid  "The given command is not a SELECT statement.\nOnly queries are allowed."
-msgstr ""
+msgstr "Esta orde no és una expressió SELECT.\nÚnicament es permeten consultes."
 
 #: source/core/resource/strings.src#RID_STR_NO_VALUE_CHANGED.String.Text
 msgid  "No values were modified."
@@ -81,15 +81,15 @@ msgstr "No s'ha modificat cap valor."
 
 #: source/core/resource/strings.src#RID_STR_NO_XROWUPDATE.String.Text
 msgid  "Values could not be inserted. The XRowUpdate interface is not supported by ResultSet."
-msgstr ""
+msgstr "Els valors no s'han inserit. El ResultSet no permet la interfície XRowUpdate."
 
 #: source/core/resource/strings.src#RID_STR_NO_XRESULTSETUPDATE.String.Text
 msgid  "Values could not be inserted. The XResultSetUpdate interface is not supported by ResultSet."
-msgstr ""
+msgstr "Els valors no s'han pogut inserit. El ResultSet no permet la interfície XRowUpdate."
 
 #: source/core/resource/strings.src#RID_STR_NO_UPDATE_MISSING_CONDITION.String.Text
 msgid  "Values could not be modified, due to a missing condition statement."
-msgstr ""
+msgstr "Els valors no s'han pogut modificar perquè vos falta l'expressió de condició."
 
 #: source/core/resource/strings.src#RID_STR_NO_COLUMN_ADD.String.Text
 msgid  "The adding of columns is not supported."
@@ -141,11 +141,11 @@ msgstr "El posicionament relatiu no està permés en este estat."
 
 #: source/core/resource/strings.src#RID_STR_NO_REFESH_AFTERLAST.String.Text
 msgid  "A row cannot be refreshed when the ResultSet is positioned after the last row."
-msgstr ""
+msgstr "No es pot actualitzar una fila quan el ResultSet es col·loca després de l'última fila."
 
 #: source/core/resource/strings.src#RID_STR_NO_MOVETOINSERTROW_CALLED.String.Text
 msgid  "A new row cannot be inserted when the ResultSet is not first moved to the insert row."
-msgstr ""
+msgstr "No es pot inserir una fila nova si el ResultSet no es mou cap a la fila inserida."
 
 #: source/core/resource/strings.src#RID_STR_NO_UPDATEROW.String.Text
 msgid  "A row cannot be modified in this state"
@@ -165,31 +165,31 @@ msgstr "El controlador no permet modificar la descripció de les columnes."
 
 #: source/core/resource/strings.src#RID_STR_COLUMN_ALTER_BY_NAME.String.Text
 msgid  "The driver does not support the modification of column descriptions by changing the name."
-msgstr ""
+msgstr "El controlador no permet modificar la descripció de les columnes per mitjà d'un canvi de nom."
 
 #: source/core/resource/strings.src#RID_STR_COLUMN_ALTER_BY_INDEX.String.Text
 msgid  "The driver does not support the modification of column descriptions by changing the index."
-msgstr ""
+msgstr "El controlador no permet modificar la descripció de les columnes per mitjà d'un canvi d'índex."
 
 #: source/core/resource/strings.src#RID_STR_FILE_DOES_NOT_EXIST.String.Text
-msgid  "The file "$file$" does not exist."
-msgstr ""
+msgid  "The file \"$file$\" does not exist."
+msgstr "El fitxer \"$file$\" no existeix."
 
 #: source/core/resource/strings.src#RID_STR_TABLE_DOES_NOT_EXIST.String.Text
-msgid  "There exists no table named "$table$"."
-msgstr ""
+msgid  "There exists no table named \"$table$\"."
+msgstr "No existeix cap taula anomenada \"$table$\"."
 
 #: source/core/resource/strings.src#RID_STR_QUERY_DOES_NOT_EXIST.String.Text
-msgid  "There exists no query named "$table$"."
-msgstr ""
+msgid  "There exists no query named \"$table$\"."
+msgstr "No existeix cap consulta anomenada \"$table$\"."
 
 #: source/core/resource/strings.src#RID_STR_CONFLICTING_NAMES.String.Text
 msgid  "There are tables in the database whose names conflict with the names of existing queries. To make full use of all queries and tables, make sure they have distinct names."
-msgstr ""
+msgstr "Hi ha taules a la base de dades que tenen el mateix nom que consultes existents. Per poder fer un ús complet de les consultes i les taules, assegureu-vos que tenen noms diferents."
 
 #: source/core/resource/strings.src#RID_STR_COMMAND_LEADING_TO_ERROR.String.Text
 msgid  "The SQL command leading to this error is:\n\n$command$"
-msgstr ""
+msgstr "L'orde SQL que ha produït este error és:\n\n$command$"
 
 #: source/core/resource/strings.src#RID_STR_STATEMENT_WITHOUT_RESULT_SET.String.Text
 msgid  "The SQL command does not describe a result set."
@@ -221,19 +221,19 @@ msgstr "No s'ha pogut trobar el document '$name$'."
 
 #: source/core/resource/strings.src#RID_STR_ERROR_WHILE_SAVING.String.Text
 msgid  "Could not save the document to $location$:\n$message$"
-msgstr ""
+msgstr "No s'ha pogut alçar el document a $location$:\n$message$"
 
 #: source/core/resource/strings.src#RID_NO_SUCH_DATA_SOURCE.String.Text
 msgid  "Error accessing data source '$name$':\n$error$"
-msgstr ""
+msgstr "Error en accedir a la font de dades '$name$':\n$error$"
 
 #: source/core/resource/strings.src#RID_STR_NO_SUB_FOLDER.String.Text
-msgid  "There exists no folder named "$folder$"."
-msgstr ""
+msgid  "There exists no folder named \"$folder$\"."
+msgstr "No existeix cap carpeta anomenada \"$folder$\"."
 
 #: source/core/resource/strings.src#RID_STR_NO_DELETE_BEFORE_AFTER.String.Text
 msgid  "Cannot delete the before-first or after-last row."
-msgstr ""
+msgstr "No es pot suprimir la fila anterior a la primera ni la posterior a l'última."
 
 #: source/core/resource/strings.src#RID_STR_NO_DELETE_INSERT_ROW.String.Text
 msgid  "Cannot delete the insert-row."
@@ -261,7 +261,7 @@ msgstr "No es disposa del privilegi d'inserir (INSERT)."
 
 #: source/core/resource/strings.src#RID_STR_INTERNAL_ERROR.String.Text
 msgid  "Internal error: no statement object provided by the database driver."
-msgstr ""
+msgstr "Error intern: el controlador de la base de dades no ha proporcionat cap objecte d'expressió."
 
 #: source/core/resource/strings.src#RID_STR_EXPRESSION1.String.Text
 msgid  "Expression1"
@@ -281,11 +281,11 @@ msgstr "L'estat del cursor no és vàlid."
 
 #: source/core/resource/strings.src#RID_STR_CURSOR_BEFORE_OR_AFTER.String.Text
 msgid  "The cursor points to before the first or after the last row."
-msgstr ""
+msgstr "El cursor fa referència a una fila anterior a la primera o a una fila posterior a l'última."
 
 #: source/core/resource/strings.src#RID_STR_NO_BOOKMARK_BEFORE_OR_AFTER.String.Text
 msgid  "The rows before the first and after the last row don't have a bookmark."
-msgstr ""
+msgstr "Les files anteriors a la primera i les files posteriors a l'última no tenen cap marcador."
 
 #: source/core/resource/strings.src#RID_STR_NO_BOOKMARK_DELETED.String.Text
 msgid  "The current row is deleted, and thus doesn't have a bookmark."
@@ -296,8 +296,8 @@ msgid  "Embedding of database documents is not supported."
 msgstr "No s'admet la incrustació de documents de base de dades."
 
 #: source/core/resource/strings.src#RID_STR_CONNECTION_REQUEST.String.Text
-msgid  "A connection for the following URL was requested "$name$"."
-msgstr ""
+msgid  "A connection for the following URL was requested \"$name$\"."
+msgstr "S'ha sol·licitat una connexió per a l'URL següent: \"$name$\"."
 
 #: source/core/resource/strings.src#RID_STR_MISSING_EXTENSION.String.Text
 msgid  "The extension is not installed."
@@ -428,8 +428,8 @@ msgid  "The specified file name or directory does not exist."
 msgstr "El nom de fitxer o directori especificat no existeix."
 
 #: source/ext/adabas/AdabasNewDb.src#STR_ERROR_IN_ADABAS_INSTALLATION.String.Text
-msgid  "No new database can be created.\nPlease check your Adabas D installation, especially the variables "DBROOT" and "DBWORK"."
-msgstr ""
+msgid  "No new database can be created.\nPlease check your Adabas D installation, especially the variables \"DBROOT\" and \"DBWORK\"."
+msgstr "No es pot crear cap base de dades nova.\nComproveu la instal·lació de l'Adabas D, especialment les variables \"DBROOT\" i \"DBWORK\"."
 
 #: source/ext/adabas/AdabasNewDb.src#STR_STAT_WARNING.String.Text
 msgid  "Warning!"
@@ -453,19 +453,19 @@ msgstr "El nom que heu introduït ja existeix."
 
 #: source/ext/adabas/AdabasNewDb.src#STR_ADABAS_NO_DEFAULTNAME.String.Text
 msgid  "No default names could be set for the database files. The total length is more than 40 characters."
-msgstr ""
+msgstr "No s'han pogut assignar els noms per defecte per als fitxers de la base de dades. La longitud total és superior a 40 caràcters."
 
 #: source/ext/adabas/AdabasNewDb.src#STR_ADABAS_NO_ACCESSRIGHTS.String.Text
 msgid  "No default names could be set for the database files. There is no write access."
-msgstr ""
+msgstr "No s'han pogut assignar els noms per defecte per als fitxers de la base de dades. No hi ha permís d'escriptura."
 
 #: source/ext/adabas/AdabasNewDb.src#STR_ADABAS_CANNOT_CONVERT.String.Text
 msgid  "The current database need to be converted. Please insert control user  and password."
-msgstr ""
+msgstr "La base de dades actual s'ha de convertir. Introduïu l'usuari controlador i la contrasenya."
 
 #: source/ext/adabas/AdabasNewDb.src#STR_ADABAS_PASSWORD_ILLEGAL.String.Text
 msgid  "Spaces are not permitted in the password. Please enter a new password."
-msgstr ""
+msgstr "No es permet l'ús d'espais a la contrasenya. Introduïu una contrasenya nova."
 
 #: source/ext/macromigration/macromigration.src#DLG_MACRO_MIGRATION.ModalDialog.Text
 msgid  "Database Document Macro Migration"
@@ -489,15 +489,15 @@ msgstr "Resum"
 
 #: source/ext/macromigration/macromigration.src#TP_PREPARE.FT_HEADER.FixedText.Text
 msgid  "Welcome to the Database Macro Migration Wizard"
-msgstr ""
+msgstr "Vos donem la benvinguda a l'auxiliar de migració de macros de bases de dades"
 
 #: source/ext/macromigration/macromigration.src#TP_PREPARE.FT_INTRODUCTION.FixedText.Text
 msgid  "This wizard will guide you through the task of migrating your macros.\n\nAfter you finished it, all macros which were formerly embedded into the forms and reports of the current database document will have been moved to the document itself. In this course, libraries will be renamed as needed.\n\nIf your forms and reports contain references to those macros, they will be adjusted, where possible.\n\nBefore the migration can start, all forms, reports, queries and tables belonging to the document must be closed. Press 'Next' to do so."
-msgstr ""
+msgstr "Este auxiliar vos facilitarà el procés de migració de les macros.\n\nEn finalitzar l'auxiliar, totes les macros que estaven incrustades en formularis i informes s'hauran mogut al document de base de dades. En el transcurs de l'operació, es canviarà el nom de les biblioteques si és necessari.\n\nSi els formularis i informes contenen referències a estes macros, es modificaran conseqüentment sempre que siga possible.\n\nAbans de començar la migració, cal tancar tots els formularis, els informes, les consultes i les taules que pertanyin a este document. Premeu \"Següent\" per fer-ho."
 
 #: source/ext/macromigration/macromigration.src#TP_PREPARE.FT_CLOSE_DOC_ERROR.FixedText.Text
 msgid  "Not all objects could be closed. Please close them manually, and re-start the wizard."
-msgstr ""
+msgstr "No s'han pogut tancar tots els objectes. Tanqueu-los manualment i torneu a iniciar l'auxiliar."
 
 #: source/ext/macromigration/macromigration.src#TP_SAVE_DBDOC_AS.FT_HEADER.FixedText.Text
 msgid  "Backup your Document"
@@ -505,7 +505,7 @@ msgstr "Feu una còpia de seguretat del document"
 
 #: source/ext/macromigration/macromigration.src#TP_SAVE_DBDOC_AS.FT_EXPLANATION.FixedText.Text
 msgid  "To allow you to go back to the state before the migration, the database document will be backed up to a location of your choice. Every change done by the wizard will be made to the original document, the backup will stay untouched."
-msgstr ""
+msgstr "Per tal de permetre-vos recuperar l'estat anterior a la migració, es farà una còpia de seguretat del document de base de dades a la ubicació que trieu. Tots els canvis que faça l'auxiliar s'aplicaran sobre el document original, la còpia de seguretat romandrà intacta."
 
 #: source/ext/macromigration/macromigration.src#TP_SAVE_DBDOC_AS.FT_SAVE_AS_LABEL.FixedText.Text
 msgid  "Save To:"
@@ -517,7 +517,7 @@ msgstr "Navega..."
 
 #: source/ext/macromigration/macromigration.src#TP_SAVE_DBDOC_AS.FT_START_MIGRATION.FixedText.Text
 msgid  "Press 'Next' to save a copy of your document, and to begin the migration."
-msgstr ""
+msgstr "Premeu \"Següent\" per alçar una còpia del document i començar la migració."
 
 #: source/ext/macromigration/macromigration.src#TP_MIGRATE.FT_HEADER.FixedText.Text
 msgid  "Migration Progress"
@@ -525,7 +525,7 @@ msgstr "Progrés de la migració"
 
 #: source/ext/macromigration/macromigration.src#TP_MIGRATE.FT_OBJECT_COUNT.FixedText.Text
 msgid  "The database document contains $forms$ form(s) and $reports$ report(s), which are currently being processed:"
-msgstr ""
+msgstr "El document de base de dades conté $forms$ formulari(s) i $reports$ informe(s), que s'estan processant actualment:"
 
 #: source/ext/macromigration/macromigration.src#TP_MIGRATE.FT_CURRENT_OBJECT_LABEL.FixedText.Text
 msgid  "Current object:"
@@ -545,7 +545,7 @@ msgstr "document $current$ de $overall$"
 
 #: source/ext/macromigration/macromigration.src#TP_MIGRATE.FT_MIGRATION_DONE.FixedText.Text
 msgid  "All forms and reports have been successfully processed. Press 'Next' to show a detailed summary."
-msgstr ""
+msgstr "S'han processat amb èxit tots els formularis i informes. Premeu \"Següent\" per mostrar un resum detallat."
 
 #: source/ext/macromigration/macromigration.src#TP_SUMMARY.FT_HEADER.FixedText.Text
 msgid  "Summary"
@@ -553,11 +553,11 @@ msgstr "Resum"
 
 #: source/ext/macromigration/macromigration.src#TP_SUMMARY.STR_SUCCESSFUL.String.Text
 msgid  "The migration was successful. Below is a log of the actions which have been taken to your document."
-msgstr ""
+msgstr "La migració ha estat un èxit. A continuació trobareu un registre de les accions que s'han dut a terme sobre el document."
 
 #: source/ext/macromigration/macromigration.src#TP_SUMMARY.STR_UNSUCCESSFUL.String.Text
 msgid  "The migration was not successful. Examine the migration log below for details."
-msgstr ""
+msgstr "Hi ha hagut problemes amb la migració. Examineu el registre de sota per a més detalls."
 
 #: source/ext/macromigration/macromigration.src#STR_FORM.String.Text
 msgid  "Form '$name$'"
@@ -629,7 +629,7 @@ msgstr "excepció capturada: "
 
 #: source/ext/macromigration/macromigration.src#ERR_INVALID_BACKUP_LOCATION.ErrorBox.Message
 msgid  "You need to choose a backup location other than the document location itself."
-msgstr ""
+msgstr "Heu de triar una ubicació per a la còpia de seguretat diferent de la ubicació del propi document."
 
 #: source/ext/macromigration/macromigration.src#STR_INVALID_NUMBER_ARGS.String.Text
 msgid  "Invalid number of initialization arguments. Expected 1."
@@ -637,7 +637,7 @@ msgstr "El nombre d'arguments d'inicialització no és vàlid. Se n'esperava 1."
 
 #: source/ext/macromigration/macromigration.src#STR_NO_DATABASE.String.Text
 msgid  "No database document found in the initialization arguments."
-msgstr ""
+msgstr "No s'ha trobat cap document de base de dades als arguments d'inicialització."
 
 #: source/ext/macromigration/macromigration.src#STR_NOT_READONLY.String.Text
 msgid  "Not applicable to read-only documents."
@@ -645,7 +645,7 @@ msgstr "No s'aplica als documents només de lectura."
 
 #: source/sdbtools/resource/sdbt_strings.src#STR_QUERY_AND_TABLE_DISTINCT_NAMES.String.Text
 msgid  "You cannot give a table and a query the same name. Please use a name which is not yet used by a query or table."
-msgstr ""
+msgstr "No podeu donar el mateix nom a una taula i a una consulta. Utilitzeu un nom que encara no s'utilitze en una consulta o taula."
 
 #: source/sdbtools/resource/sdbt_strings.src#STR_BASENAME_TABLE.String.Text
 msgid  "Table"
@@ -657,7 +657,7 @@ msgstr "Consulta"
 
 #: source/sdbtools/resource/sdbt_strings.src#STR_CONN_WITHOUT_QUERIES_OR_TABLES.String.Text
 msgid  "The given connection is no valid query and/or tables supplier."
-msgstr ""
+msgstr "La connexió proporcionada no és una consulta vàlida ni un subministrador de taules."
 
 #: source/sdbtools/resource/sdbt_strings.src#STR_NO_TABLE_OBJECT.String.Text
 msgid  "The given object is no table object."
@@ -665,11 +665,11 @@ msgstr "L'objecte proporcionat no és un objecte de taula."
 
 #: source/sdbtools/resource/sdbt_strings.src#STR_INVALID_COMPOSITION_TYPE.String.Text
 msgid  "Invalid composition type - need a value from com.sun.star.sdb.tools.CompositionType."
-msgstr ""
+msgstr "Tipus de composició no vàlida. Cal un valor de com.sun.star.sdb.tools.CompositionType."
 
 #: source/sdbtools/resource/sdbt_strings.src#STR_INVALID_COMMAND_TYPE.String.Text
 msgid  "Invalid command type - only TABLE and QUERY from com.sun.star.sdb.CommandType are allowed."
-msgstr ""
+msgstr "Tipus d'orde no vàlida. Només es permet l'ús de TABLE i QUERY de com.sun.star.sdb.CommandType."
 
 #: source/ui/app/app.src#RID_STR_NEW_FORM.String.Text
 msgid  "Create Form in Design View..."
@@ -801,15 +801,15 @@ msgstr " - %PRODUCTNAME Base"
 
 #: source/ui/app/app.src#RID_STR_REPORTS_HELP_TEXT_WIZARD.String.Text
 msgid  "The wizard will guide you through the steps necessary to create a report."
-msgstr ""
+msgstr "Creeu un informe seguint els passos de l'auxiliar."
 
 #: source/ui/app/app.src#RID_STR_FORMS_HELP_TEXT.String.Text
 msgid  "Create a form by specifying the record source, controls, and control properties."
-msgstr ""
+msgstr "Creeu un formulari especificant la font de registres, els controls i les propietats dels controls."
 
 #: source/ui/app/app.src#RID_STR_REPORT_HELP_TEXT.String.Text
 msgid  "Create a report by specifying the record source, controls, and control properties."
-msgstr ""
+msgstr "Creeu un informe especificant la font de registres, els controls i les propietats dels controls."
 
 #: source/ui/app/app.src#RID_STR_FORMS_HELP_TEXT_WIZARD.String.Text
 msgid  "The wizard will guide you through the steps necessary to create a form."
@@ -817,7 +817,7 @@ msgstr "Creeu un formulari seguint els passos de l'auxiliar."
 
 #: source/ui/app/app.src#RID_STR_QUERIES_HELP_TEXT.String.Text
 msgid  "Create a query by specifying the filters, input tables, field names,  and  properties for sorting or grouping."
-msgstr ""
+msgstr "Creeu una consulta especificant els filtres, les taules d'entrada, els noms dels camps i les propietats d'ordenació o agrupació."
 
 #: source/ui/app/app.src#RID_STR_QUERIES_HELP_TEXT_SQL.String.Text
 msgid  "Create a query  entering an SQL statement directly."
@@ -825,19 +825,19 @@ msgstr "Creeu una consulta introduint una expressió SQL directament."
 
 #: source/ui/app/app.src#RID_STR_QUERIES_HELP_TEXT_WIZARD.String.Text
 msgid  "The wizard will guide you through the steps necessary to create a query."
-msgstr ""
+msgstr "Creeu una consulta seguint els passos de l'auxiliar."
 
 #: source/ui/app/app.src#RID_STR_TABLES_HELP_TEXT_DESIGN.String.Text
 msgid  "Create a table by specifying the field names and properties, as well as the data types."
-msgstr ""
+msgstr "Creeu una taula especificant els noms dels camps i les propietats, així com els tipus de dades."
 
 #: source/ui/app/app.src#RID_STR_TABLES_HELP_TEXT_WIZARD.String.Text
 msgid  "Choose from a selection of business and personal table samples, which you customize to create a table."
-msgstr ""
+msgstr "Creeu una taula a partir d'una mostra de taules personals i de treball que podeu personalitzar."
 
 #: source/ui/app/app.src#RID_STR_VIEWS_HELP_TEXT_DESIGN.String.Text
 msgid  "Create a view by specifying the tables and field names you would like to have visible."
-msgstr ""
+msgstr "Creeu una vista especificant els noms de les taules i els camps que voleu que siguen visibles."
 
 #: source/ui/app/app.src#RID_STR_VIEWS_HELP_TEXT_WIZARD.String.Text
 msgid  "Opens the view wizard"
@@ -865,11 +865,11 @@ msgstr "Inhabilita la previsualització"
 
 #: source/ui/app/app.src#APP_SAVEMODIFIED.QueryBox.Message
 msgid  "The database has been modified.\nDo you want to save the changes?"
-msgstr ""
+msgstr "S'ha modificat la base de dades.\nVoleu alçar els canvis?"
 
 #: source/ui/app/app.src#APP_CLOSEDOCUMENTS.QueryBox.Message
 msgid  "The connection type has been altered.\nFor the changes to take effect, all forms, reports, queries and tables must be closed.\n\nDo you want to close all documents now?"
-msgstr ""
+msgstr "S'ha modificat el tipus de connexió.\nPerquè els canvis tinguen efecte, s'han de tancar tots els formularis, informes, consultes i taules.\n\nVoleu tancar tots els documents ara?"
 
 #: source/ui/app/app.src#RID_MENU_APP_PREVIEW.SID_DB_APP_DISABLE_PREVIEW.MenuItem.Text
 msgid  "None"
@@ -882,6 +882,14 @@ msgstr "Informació del document"
 #: source/ui/app/app.src#RID_MENU_APP_PREVIEW.SID_DB_APP_VIEW_DOC_PREVIEW.MenuItem.Text
 msgid  "Document"
 msgstr "Document"
+
+#: source/ui/app/app.src#RID_STR_FORM.String.Text
+msgid  "Form"
+msgstr "Formulari"
+
+#: source/ui/app/app.src#RID_STR_REPORT.String.Text
+msgid  "Report"
+msgstr "Informe"
 
 #: source/ui/app/app.src#STR_FRM_LABEL.String.Text
 msgid  "F~orm name"
@@ -901,7 +909,7 @@ msgstr "El document conté formularis o informes amb macros incrustades."
 
 #: source/ui/app/app.src#STR_SUB_DOCS_WITH_SCRIPTS_DETAIL.String.Text
 msgid  "Macros should be embedded into the database document itself.\n\nYou can continue to use your document as before, however, you are encouraged to migrate your macros. The menu item 'Tools / Migrate Macros ...' will assist you with this.\n\nNote that you won't be able to embed macros into the database document itself until this migration is done. "
-msgstr ""
+msgstr "Les macros haurien d'anar incrustades en el mateix document de base de dades.\n\nPodeu continuar fent servir el document com abans, però és molt recomanable que migreu les macros. L'element de menú \"Eines / Migra les macros...\" vos ajudarà a fer-ho.\n\nTingueu en compte que no podreu incrustar macros en el document de base de dades fins que no feu esta migració. "
 
 #: source/ui/app/app.src#RID_STR_EMBEDDED_DATABASE.String.Text
 msgid  "Embedded database"
@@ -915,17 +923,9 @@ msgstr "No podeu seleccionar categories diferents."
 msgid  "Unsupported object type found ($type$)."
 msgstr "S'ha trobat un tipus d'objecte no admés ($type$)."
 
-#: source/ui/app/app.src#RID_STR_FORM.String.Text
-msgid  "Form"
-msgstr "Formulari"
-
-#: source/ui/app/app.src#RID_STR_REPORT.String.Text
-msgid  "Report"
-msgstr "Informe"
-
 #: source/ui/browser/sbabrw.src#QUERY_BRW_SAVEMODIFIED.QueryBox.Message
 msgid  "The current record has been changed.\nDo you want to save the changes?"
-msgstr ""
+msgstr "El registre actual ha canviat.\nVoleu alçar els canvis?"
 
 #: source/ui/browser/sbabrw.src#QUERY_BRW_DELETE_ROWS.QueryBox.Message
 msgid  "Do you want to delete the selected data?"
@@ -955,6 +955,18 @@ msgstr "Consultes"
 msgid  "Tables"
 msgstr "Taules"
 
+#: source/ui/browser/sbabrw.src#ID_TREE_EDIT_DATABASE.#define.Text
+msgid  "Edit ~Database File..."
+msgstr "Edita el fitxer ~de base de dades..."
+
+#: source/ui/browser/sbabrw.src#ID_TREE_ADMINISTRATE.#define.Text
+msgid  "Registered databases ..."
+msgstr "Bases de dades registrades..."
+
+#: source/ui/browser/sbabrw.src#ID_TREE_CLOSE_CONN.#define.Text
+msgid  "Disco~nnect"
+msgstr "Desco~nnecta"
+
 #: source/ui/browser/sbabrw.src#STR_TITLE_CONFIRM_DELETION.String.Text
 msgid  "Confirm Deletion"
 msgstr "Confirmeu la supressió"
@@ -977,11 +989,11 @@ msgstr "S'han trobat advertiments"
 
 #: source/ui/browser/sbabrw.src#STR_OPENTABLES_WARNINGS_DETAILS.String.Text
 msgid  "While retrieving the tables, warnings were reported by the database connection."
-msgstr ""
+msgstr "La connexió amb la base de dades ha generat advertiments en recuperar les taules."
 
 #: source/ui/browser/sbabrw.src#STR_CONNECTING_DATASOURCE.String.Text
-msgid  "Connecting to "$name$" ..."
-msgstr ""
+msgid  "Connecting to \"$name$\" ..."
+msgstr "S'està connectant a \"$name$\"..."
 
 #: source/ui/browser/sbabrw.src#STR_LOADING_QUERY.String.Text
 msgid  "Loading query $name$ ..."
@@ -996,24 +1008,12 @@ msgid  "No table format could be found."
 msgstr "No s'ha pogut trobar cap format de taula."
 
 #: source/ui/browser/sbabrw.src#STR_COULDNOTCONNECT_DATASOURCE.String.Text
-msgid  "The connection to the data source "$name$" could not be established."
-msgstr ""
+msgid  "The connection to the data source \"$name$\" could not be established."
+msgstr "No s'ha pogut establir la connexió a la font de dades \"$name$\"."
 
 #: source/ui/browser/sbabrw.src#RID_MENU_REFRESH_DATA.ID_BROWSER_REFRESH_REBUILD.MenuItem.Text
 msgid  "Rebuild"
 msgstr "Reconstrueix"
-
-#: source/ui/browser/sbabrw.src#ID_TREE_EDIT_DATABASE.#define.Text
-msgid  "Edit ~Database File..."
-msgstr "Edita el fitxer ~de base de dades..."
-
-#: source/ui/browser/sbabrw.src#ID_TREE_ADMINISTRATE.#define.Text
-msgid  "Registered databases ..."
-msgstr "Bases de dades registrades..."
-
-#: source/ui/browser/sbabrw.src#ID_TREE_CLOSE_CONN.#define.Text
-msgid  "Disco~nnect"
-msgstr "Desco~nnecta"
 
 #: source/ui/browser/sbagrid.src#RID_SBA_GRID_COLCTXMENU.ID_BROWSER_COLATTRSET.MenuItem.Text
 msgid  "Column ~Format..."
@@ -1052,8 +1052,8 @@ msgid  "View #"
 msgstr "Vista #"
 
 #: source/ui/browser/sbagrid.src#STR_NAME_ALREADY_EXISTS.String.Text
-msgid  "The name "#" already exists."
-msgstr ""
+msgid  "The name \"#\" already exists."
+msgstr "El nom \"#\" ja existeix."
 
 #: source/ui/browser/sbagrid.src#STR_NO_COLUMNNAME_MATCHING.String.Text
 msgid  "No matching column names were found."
@@ -1121,7 +1121,7 @@ msgstr "Orde descendent"
 
 #: source/ui/control/tabletree.src#STR_COULDNOTCREATE_DRIVERMANAGER.String.Text
 msgid  "Cannot connect to the SDBC driver manager (#servicename#)."
-msgstr ""
+msgstr "No es pot establir una connexió amb el gestor del controlador SDBC (#servicename#)."
 
 #: source/ui/control/tabletree.src#STR_NOREGISTEREDDRIVER.String.Text
 msgid  "A driver is not registered for the URL #connurl#."
@@ -1133,11 +1133,11 @@ msgstr "No s'ha pogut establir una connexió per a l'URL #connurl#."
 
 #: source/ui/control/tabletree.src#STR_COULDNOTCONNECT_PLEASECHECK.String.Text
 msgid  "Please check the current settings, for example user name and password."
-msgstr ""
+msgstr "Comproveu els paràmetres actuals, com ara el nom d'usuari i la contrasenya."
 
 #: source/ui/control/tabletree.src#STR_NOTABLEINFO.String.Text
 msgid  "Successfully connected, but information about database tables is not available."
-msgstr ""
+msgstr "S'ha pogut establir la connexió, però la informació sobre les taules de la base de dades no està disponible."
 
 #: source/ui/control/tabletree.src#STR_ALL_TABLES.String.Text
 msgid  "All tables"
@@ -1236,12 +1236,12 @@ msgid  "Do you want to save the changes made to the current index?"
 msgstr "Voleu alçar els canvis realitzats a l'índex actual?"
 
 #: source/ui/dlg/indexdialog.src#STR_INDEX_NAME_ALREADY_USED.String.Text
-msgid  "There is already another index named "$name$"."
-msgstr ""
+msgid  "There is already another index named \"$name$\"."
+msgstr "Ja hi ha un altre índex anomenat \"$name$\"."
 
 #: source/ui/dlg/indexdialog.src#STR_INDEXDESIGN_DOUBLE_COLUMN_NAME.String.Text
-msgid  "In an index definition, no table column may occur more than once. However, you have entered column "$name$" twice."
-msgstr ""
+msgid  "In an index definition, no table column may occur more than once. However, you have entered column \"$name$\" twice."
+msgstr "En una definició d'índex, cap columna de la taula no pot estar repetida. Tanmateix, heu introduït la columna \"$name$\" dues vegades."
 
 #: source/ui/dlg/paramdialog.src#DLG_PARAMETERS.FL_PARAMS.FixedLine.Text
 msgid  "~Parameters"
@@ -1260,8 +1260,8 @@ msgid  "Parameter Input"
 msgstr "Entrada de paràmetres"
 
 #: source/ui/dlg/paramdialog.src#DLG_PARAMETERS.STR_COULD_NOT_CONVERT_PARAM.String.Text
-msgid  "The entry could not be converted to a valid value for the "$name$"column"
-msgstr ""
+msgid  "The entry could not be converted to a valid value for the \"$name$\"column"
+msgstr "No s'ha pogut convertir l'entrada en un valor vàlid per a la columna \"$name$\""
 
 #: source/ui/dlg/sqlmessage.src#DLG_SQLEXCEPTIONCHAIN.ModalDialog.Text
 msgid  "%PRODUCTNAME Base"
@@ -1289,7 +1289,7 @@ msgstr "Codi d'error"
 
 #: source/ui/dlg/sqlmessage.src#STR_EXPLAN_STRINGCONVERSION_ERROR.String.Text
 msgid  "A frequent reason for this error is an inappropriate character set setting for the language of your database. Check the setting by choosing Edit - Database - Properties."
-msgstr ""
+msgstr "Una causa freqüent d'este error és una selecció inapropiada del joc de caràcters per a la llengua de la vostra base de dades. Verifiqueu l'opció seleccionant Edita - Base de dades - Propietats."
 
 #: source/ui/dlg/sqlmessage.src#STR_EXCEPTION_ERROR.String.Text
 msgid  "Error"
@@ -1312,8 +1312,16 @@ msgid  "Standard Filter"
 msgstr "Filtre estàndard"
 
 #: source/ui/dlg/queryfilter.src#DLG_FILTERCRIT.LB_WHERECOND2.Default.StringList.item
+msgid  "AND"
+msgstr "I"
+
+#: source/ui/dlg/queryfilter.src#DLG_FILTERCRIT.LB_WHERECOND2.Default.StringList.item
 msgid  "OR"
 msgstr "O"
+
+#: source/ui/dlg/queryfilter.src#DLG_FILTERCRIT.LB_WHERECOND3.Default.StringList.item
+msgid  "AND"
+msgstr "I"
 
 #: source/ui/dlg/queryfilter.src#DLG_FILTERCRIT.LB_WHERECOND3.Default.StringList.item
 msgid  "OR"
@@ -1346,14 +1354,6 @@ msgstr "- cap -"
 #: source/ui/dlg/queryfilter.src#DLG_FILTERCRIT.STR_COMPARE_OPERATORS.String.Text
 msgid  "=;<>;<;<=;>;>=;like;not like;null;not null"
 msgstr "=;<>;<;<=;>;>=;com;no com;nul;no nul"
-
-#: source/ui/dlg/queryfilter.src#DLG_FILTERCRIT.LB_WHERECOND2.Default.StringList.item
-msgid  "AND"
-msgstr "I"
-
-#: source/ui/dlg/queryfilter.src#DLG_FILTERCRIT.LB_WHERECOND3.Default.StringList.item
-msgid  "AND"
-msgstr "I"
 
 #: source/ui/dlg/RelationDlg.src#DLG_REL_PROPERTIES.ModalDialog.Text
 msgid  "Relations"
@@ -1412,12 +1412,24 @@ msgid  "Sort Order"
 msgstr "Ordenació"
 
 #: source/ui/dlg/queryorder.src#DLG_ORDERCRIT.LB_ORDERVALUE1.Default.StringList.item
+msgid  "ascending"
+msgstr "ascendent"
+
+#: source/ui/dlg/queryorder.src#DLG_ORDERCRIT.LB_ORDERVALUE1.Default.StringList.item
 msgid  "descending"
 msgstr "descendent"
 
 #: source/ui/dlg/queryorder.src#DLG_ORDERCRIT.LB_ORDERVALUE2.Default.StringList.item
+msgid  "ascending"
+msgstr "ascendent"
+
+#: source/ui/dlg/queryorder.src#DLG_ORDERCRIT.LB_ORDERVALUE2.Default.StringList.item
 msgid  "descending"
 msgstr "descendent"
+
+#: source/ui/dlg/queryorder.src#DLG_ORDERCRIT.LB_ORDERVALUE3.Default.StringList.item
+msgid  "ascending"
+msgstr "ascendent"
 
 #: source/ui/dlg/queryorder.src#DLG_ORDERCRIT.LB_ORDERVALUE3.Default.StringList.item
 msgid  "descending"
@@ -1450,18 +1462,6 @@ msgstr "Ordenació"
 #: source/ui/dlg/queryorder.src#DLG_ORDERCRIT.STR_NOENTRY.String.Text
 msgid  "<none>"
 msgstr "<cap>"
-
-#: source/ui/dlg/queryorder.src#DLG_ORDERCRIT.LB_ORDERVALUE1.Default.StringList.item
-msgid  "ascending"
-msgstr "ascendent"
-
-#: source/ui/dlg/queryorder.src#DLG_ORDERCRIT.LB_ORDERVALUE2.Default.StringList.item
-msgid  "ascending"
-msgstr "ascendent"
-
-#: source/ui/dlg/queryorder.src#DLG_ORDERCRIT.LB_ORDERVALUE3.Default.StringList.item
-msgid  "ascending"
-msgstr "ascendent"
 
 #: source/ui/dlg/advancedsettings.src#AUTO_DATAHANDLING(AUTO_Y).FL_DATAHANDLING.FixedLine.Text
 msgid  "Options"
@@ -1529,7 +1529,19 @@ msgstr "Admet claus primàries"
 
 #: source/ui/dlg/advancedsettings.src#AUTO_RESPECTRESULTSETTYPE(AUTO_Y).CB_RESPECTRESULTSETTYPE.CheckBox.Text
 msgid  "Respect the result set type from the database driver"
-msgstr ""
+msgstr "Respecta el tipus de conjunt de resultats del controlador de la base de dades"
+
+#: source/ui/dlg/advancedsettings.src#WORKAROUND.Default.StringList.item
+msgid  "Default"
+msgstr "Per defecte"
+
+#: source/ui/dlg/advancedsettings.src#WORKAROUND.Default.StringList.item
+msgid  "SQL"
+msgstr "SQL"
+
+#: source/ui/dlg/advancedsettings.src#WORKAROUND.Default.StringList.item
+msgid  "Mixed"
+msgstr "Barrejada"
 
 #: source/ui/dlg/advancedsettings.src#WORKAROUND.Default.StringList.item
 msgid  "MS Access"
@@ -1571,18 +1583,6 @@ msgstr "Paràmetres especials"
 msgid  "Advanced Settings"
 msgstr "Paràmetres avançats"
 
-#: source/ui/dlg/advancedsettings.src#WORKAROUND.Default.StringList.item
-msgid  "Default"
-msgstr "Per defecte"
-
-#: source/ui/dlg/advancedsettings.src#WORKAROUND.Default.StringList.item
-msgid  "SQL"
-msgstr "SQL"
-
-#: source/ui/dlg/advancedsettings.src#WORKAROUND.Default.StringList.item
-msgid  "Mixed"
-msgstr "Barrejada"
-
 #: source/ui/dlg/CollectionView.src#DLG_COLLECTION_VIEW.ModalDialog.Text
 msgid  "Save"
 msgstr "Alça"
@@ -1616,12 +1616,12 @@ msgid  "The file already exists. Overwrite?"
 msgstr "El fitxer ja existeix. Voleu sobreescriure'l?"
 
 #: source/ui/dlg/dbadmin2.src#STR_ENTER_CONNECTION_PASSWORD.String.Text
-msgid  "A password is needed to connect to the data source "$name$"."
-msgstr ""
+msgid  "A password is needed to connect to the data source \"$name$\"."
+msgstr "Cal una contrasenya per connectar amb la font de dades \"$name$\"."
 
 #: source/ui/dlg/dbadmin2.src#STR_ASK_FOR_DIRECTORY_CREATION.String.Text
 msgid  "The directory\n\n$path$\n\ndoes not exist. Should it be created?"
-msgstr ""
+msgstr "El directori\n\n$path$\n\nno existeix. Voleu crear-lo?"
 
 #: source/ui/dlg/dbadmin2.src#STR_COULD_NOT_CREATE_DIRECTORY.String.Text
 msgid  "The directory $name$ could not be created."
@@ -1773,7 +1773,7 @@ msgstr "Vos donem la benvinguda a l'auxiliar de base de dades de l'%PRODUCTNAME"
 
 #: source/ui/dlg/dbadmin.src#PAGE_GENERAL.FT_GENERALHELPTEXT.FixedText.Text
 msgid  "Use the Database Wizard to create a new database, open an existing database file, or connect to a database stored on a server."
-msgstr ""
+msgstr "Utilitzeu l'auxiliar de base de dades per crear una base de dades nova, per obrir un fitxer de base de dades existent o per connectar-vos a una base de dades emmagatzemada en un servidor."
 
 #: source/ui/dlg/dbadmin.src#PAGE_GENERAL.FT_DATASOURCEHEADER.FixedText.Text
 msgid  "What do you want to do?"
@@ -1797,7 +1797,7 @@ msgstr "Connectar amb una base de dades e~xistent"
 
 #: source/ui/dlg/dbadmin.src#PAGE_GENERAL.FT_DATASOURCETYPE_PRE.FixedText.Text
 msgid  "Select the type of database to which you want to establish a connection."
-msgstr ""
+msgstr "Seleccioneu el tipus de base de dades amb el qual voleu establir una connexió."
 
 #: source/ui/dlg/dbadmin.src#PAGE_GENERAL.FT_DATATYPE.FixedText.Text
 msgid  "Database ~type "
@@ -1809,7 +1809,7 @@ msgstr "Base de dades"
 
 #: source/ui/dlg/dbadmin.src#PAGE_GENERAL.FT_DATASOURCETYPE_POST.FixedText.Text
 msgid  "On the following pages, you can make detailed settings for the connection.\n\nThe new settings you make will overwrite your existing settings."
-msgstr ""
+msgstr "A les pàgines següents podeu seleccionar els paràmetres detallats de connexió.\n\nEls nous paràmetres que trieu suprimiran els actuals."
 
 #: source/ui/dlg/dbadmin.src#PAGE_GENERAL.STR_MYSQLENTRY.String.Text
 msgid  "MySQL"
@@ -1821,11 +1821,11 @@ msgstr "Propietats de la font de dades: #"
 
 #: source/ui/dlg/dbadmin.src#PAGE_GENERAL.STR_COULDNOTLOAD_ODBCLIB.String.Text
 msgid  "Could not load the program library #lib# or it is corrupted. The ODBC data source selection is not available."
-msgstr ""
+msgstr "No s'ha pogut carregar la biblioteca de programes #lib# o està corrompuda. La selecció de la font de dades ODBC no està disponible."
 
 #: source/ui/dlg/dbadmin.src#PAGE_GENERAL.STR_UNSUPPORTED_DATASOURCE_TYPE.String.Text
 msgid  "This kind of data source is not supported on this platform.\nYou are allowed to change the settings, but you probably will not be able to connect to the database."
-msgstr ""
+msgstr "Este tipus de font de dades no pot utilitzar-se en esta plataforma.\nTeniu permís per canviar les opcions, però probablement no podreu connectar amb la base de dades."
 
 #: source/ui/dlg/dbadmin.src#PAGE_GENERAL.String.Text
 msgid  "General"
@@ -1841,7 +1841,7 @@ msgstr "Mostra també els registres suprimits"
 
 #: source/ui/dlg/dbadmin.src#PAGE_DBASE.FT_SPECIAL_MESSAGE.FixedText.Text
 msgid  "Note: When deleted, and thus inactive, records are  displayed, you will not be able to delete records from the data source."
-msgstr ""
+msgstr "Nota: Mentre es mostren els registres esborrats, i per tant inactius, no podreu suprimir registres de la font de dades."
 
 #: source/ui/dlg/dbadmin.src#PAGE_DBASE.PB_INDICIES.PushButton.Text
 msgid  "Indexes..."
@@ -1953,7 +1953,7 @@ msgstr "Paràmetres ~del controlador"
 
 #: source/ui/dlg/dbadmin.src#STR_ERR_USE_CONNECT_TO.String.Text
 msgid  "Please choose 'Connect to an existing database' to connect to an existing database instead."
-msgstr ""
+msgstr "Trieu 'Connecta a una base de dades existent' per connectar-vos a una base de dades que ja estiga en funcionament."
 
 #: source/ui/dlg/dlgsave.src#DLG_SAVE_AS.ModalDialog.Text
 msgid  "Save As"
@@ -2025,7 +2025,7 @@ msgstr "Fitxer de base de dades Microsoft Access"
 
 #: source/ui/dlg/AutoControls.src#STR_NO_ADDITIONAL_SETTINGS.String.Text
 msgid  "No more settings are necessary. To verify that the connection is working, click the '%test' button."
-msgstr ""
+msgstr "No calen més paràmetres. Per verificar que la connexió funciona, feu clic al botó '%test'."
 
 #: source/ui/dlg/AutoControls.src#STR_COMMONURL.String.Text
 msgid  "Datasource URL"
@@ -2197,7 +2197,7 @@ msgstr "Memòria actualment en ús"
 
 #: source/ui/dlg/AdabasStat.src#STR_ADABAS_ERROR_SYSTEMTABLES.String.Text
 msgid  "No information could be displayed because no access rights exist for the required system tables."
-msgstr ""
+msgstr "No es pot mostrar la informació. No hi ha drets d'accés a les taules del sistema."
 
 #: source/ui/dlg/directsql.src#DLG_DIRECTSQL.FL_SQL.FixedLine.Text
 msgid  "SQL command"
@@ -2233,7 +2233,7 @@ msgstr "S'ha executat l'orde correctament."
 
 #: source/ui/dlg/directsql.src#STR_DIRECTSQL_CONNECTIONLOST.String.Text
 msgid  "The connection to the database has been lost. This dialog will be closed."
-msgstr ""
+msgstr "S'ha perdut la connexió amb la base de dades. Este quadre de diàleg es tancarà."
 
 #: source/ui/dlg/dbfindex.src#DLG_DBASE_INDEXES.ModalDialog.Text
 msgid  "Indexes"
@@ -2288,8 +2288,8 @@ msgid  "The database does not support user administration."
 msgstr "La base de dades no permet que l'usuari l'administri."
 
 #: source/ui/dlg/UserAdmin.src#DLG_PASSWORD.FL_USER.FixedLine.Text
-msgid  "User "$name$:  $""
-msgstr ""
+msgid  "User \"$name$:  $\""
+msgstr "Usuari \"$name$:  $\""
 
 #: source/ui/dlg/UserAdmin.src#DLG_PASSWORD.FT_OLDPASSWORD.FixedText.Text
 msgid  "Old p~assword"
@@ -2389,7 +2389,7 @@ msgstr "Estableix una connexió a una base de dades MySQL"
 
 #: source/ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_MYSQL_INTRO.FT_MYSQL_HELPTEXT.FixedText.Text
 msgid  "You can connect to a MySQL database using either ODBC or JDBC.\nPlease contact your system administrator if you are unsure about the following settings."
-msgstr ""
+msgstr "Podeu connectar-vos a una base de dades MySQL utilitzant tant ODBC com JDBC.\nPoseu-vos en contacte amb l'administrador de sistemes si teniu dubtes sobre els paràmetres següents."
 
 #: source/ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_MYSQL_INTRO.FT_MYSQLCONNECTIONMODE.FixedText.Text
 msgid  "How do you want to connect to your MySQL database?"
@@ -2465,7 +2465,7 @@ msgstr "Estableix una connexió a MySQL utilitzant JDBC"
 
 #: source/ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_MYSQL_JDBC.STR_MYSQLJDBC_HELPTEXT.String.Text
 msgid  "Please enter the required information to connect to a MySQL database using JDBC. Note that a JDBC driver class must be installed on your system and registered with %PRODUCTNAME.\nPlease contact your system administrator if you are unsure about the following settings."
-msgstr ""
+msgstr "Introduïu la informació sol·licitada per connectar a una base de dades MySQL utilitzant JDBC. Recordeu que hi ha d'haver instal·lada una classe de controlador JDBC al sistema i ha d'estar registrada amb l'%PRODUCTNAME.\nPoseu-vos en contacte amb l'administrador de sistemes si no esteu segur dels paràmetres següents."
 
 #: source/ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_MYSQL_JDBC.STR_MYSQL_DRIVERCLASSTEXT.String.Text
 msgid  "MySQL JDBC d~river class:"
@@ -2481,7 +2481,7 @@ msgstr "Estableix una connexió a una base de dades MySQL"
 
 #: source/ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_MYSQL_NATIVE.FT_SETUP_WIZARD_HELP.FixedText.Text
 msgid  "Please enter the required information to connect to a MySQL database."
-msgstr ""
+msgstr "Introduïu la informació necessària per connectar-vos a una base de dades MySQL."
 
 #: source/ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_DBASE.STR_DBASE_HEADERTEXT.String.Text
 msgid  "Set up a connection to dBASE files"
@@ -2497,7 +2497,7 @@ msgstr "Estableix una connexió a fitxers de text"
 
 #: source/ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_TEXT.STR_TEXT_HELPTEXT.String.Text
 msgid  "Select the folder where the CSV (Comma Separated Values) text files are stored. %PRODUCTNAME Base will open these files in read-only mode."
-msgstr ""
+msgstr "Selecciona la carpeta on hi ha els fitxers de text CSV (valors separats per comes). L'%PRODUCTNAME Base obrirà estos fitxers en mode només de lectura."
 
 #: source/ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_TEXT.STR_TEXT_PATH_OR_FILE.String.Text
 msgid  "Path to text files"
@@ -2517,7 +2517,7 @@ msgstr "Estableix una connexió a un directori LDAP"
 
 #: source/ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_LDAP.FT_LDAP_HELPTEXT.FixedText.Text
 msgid  "Please enter the required information to connect to an LDAP directory.\nPlease contact your system administrator if you are unsure about the following settings."
-msgstr ""
+msgstr "Entreu la informació sol·licitada per connectar a un directori LDAP.\nPoseu-vos en contacte amb l'administrador de sistemes si teniu dubtes sobre els paràmetres següents."
 
 #: source/ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_LDAP.STR_LDAP_DEFAULT.String.Text
 msgid  "Default: 389"
@@ -2533,7 +2533,7 @@ msgstr "Estableix una connexió a una base de dades Adabas D"
 
 #: source/ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_ADABAS.STR_ADABAS_HELPTEXT.String.Text
 msgid  "Enter the name of the Adabas D database you want to connect to.\nClick 'Browse...' to select an Adabas D database that is already registered in %PRODUCTNAME."
-msgstr ""
+msgstr "Introduïu el nom de la base de dades Adabas D a la qual vos vulgueu connectar.\nFeu clic a 'Navega...' per seleccionar una base de dades Adabas D que ja estiga registrada a l'%PRODUCTNAME."
 
 #: source/ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_ADO.STR_ADO_HEADERTEXT.String.Text
 msgid  "Set up a connection to an ADO database"
@@ -2541,7 +2541,7 @@ msgstr "Estableix una connexió a una base de dades ADO"
 
 #: source/ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_ADO.STR_ADO_HELPTEXT.String.Text
 msgid  "Please enter the URL of the ADO data source you want to connect to.\nClick 'Browse' to configure provider-specific settings.\nPlease contact your system administrator if you are unsure about the following settings."
-msgstr ""
+msgstr "Introduïu l'URL de la font de dades ADO al qual vos vulgueu connectar.\nFeu clic a 'Més...' per configurar paràmetres específics del proveïdor.\nPoseu-vos en contacte amb l'administrador de sistemes si teniu dubtes sobre els paràmetres següents."
 
 #: source/ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_ODBC.STR_ODBC_HEADERTEXT.String.Text
 msgid  "Set up a connection to an ODBC database"
@@ -2549,7 +2549,7 @@ msgstr "Estableix una connexió a una base de dades ODBC"
 
 #: source/ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_ODBC.STR_ODBC_HELPTEXT.String.Text
 msgid  "Enter the name of the ODBC database you want to connect to.\nClick 'Browse...' to select an ODBC database that is already registered in %PRODUCTNAME.\nPlease contact your system administrator if you are unsure about the following settings."
-msgstr ""
+msgstr "Introduïu el nom de la base de dades ODBC a la qual vos voleu connectar.\nFeu clic a 'Navega...' per seleccionar una base de dades ODBC que ja estiga registrada a l'%PRODUCTNAME.\nPoseu-vos en contacte amb l'administrador de sistemes si teniu dubtes sobre els paràmetres següents."
 
 #: source/ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_JDBC.STR_JDBC_HEADERTEXT.String.Text
 msgid  "Set up a connection to a JDBC database"
@@ -2557,7 +2557,7 @@ msgstr "Estableix una connexió a una base de dades JDBC"
 
 #: source/ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_JDBC.STR_JDBC_HELPTEXT.String.Text
 msgid  "Please enter the required information to connect to a JDBC database.\nPlease contact your system administrator if you are unsure about the following settings."
-msgstr ""
+msgstr "Introduïu la informació requerida per connectar a una base de dades JDBC.\nPoseu-vos en contacte amb l'administrador de sistemes si teniu dubtes sobre els paràmetres següents."
 
 #: source/ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_ORACLE.STR_ORACLE_HEADERTEXT.String.Text
 msgid  "Set up a connection to an Oracle database"
@@ -2573,7 +2573,7 @@ msgstr "Classe ~de controlador Oracle JDBC"
 
 #: source/ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_ORACLE.STR_ORACLE_HELPTEXT.String.Text
 msgid  "Please enter the required information to connect to an Oracle database.Note that a JDBC Driver Class must be installed on your system and registered with %PRODUCTNAME.\nPlease contact your system administrator if you are unsure about the following settings."
-msgstr ""
+msgstr "Introduïu la informació sol·licitada per connectar a una base de dades Oracle. Recordeu que cal tindre una classe de controlador JDBC instal·lada al vostre sistema i registrada amb l'%PRODUCTNAME.\nPoseu-vos en contacte amb l'administrador de sistemes si teniu dubtes sobre els paràmetres següents."
 
 #: source/ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_SPREADSHEET.STR_SPREADSHEET_HEADERTEXT.String.Text
 msgid  "Set up a connection to spreadsheets"
@@ -2581,7 +2581,7 @@ msgstr "Estableix una connexió als fulls de càlcul"
 
 #: source/ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_SPREADSHEET.STR_SPREADSHEET_HELPTEXT.String.Text
 msgid  "Click 'Browse...' to select a %PRODUCTNAME spreadsheet or Microsoft Excel workbook.\n%PRODUCTNAME will open this file in read-only mode."
-msgstr ""
+msgstr "Feu clic a 'Navega...' per seleccionar un full de càlcul de l'%PRODUCTNAME o un llibre de treball del Microsoft Excel.\nL'%PRODUCTNAME obrirà este fitxer en mode només de lectura."
 
 #: source/ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_SPREADSHEET.STR_SPREADSHEETPATH.String.Text
 msgid  "~Location and file name"
@@ -2723,6 +2723,50 @@ msgstr "Classe de prova"
 msgid  "Socket"
 msgstr "Sòcol"
 
+#: source/ui/inc/toolbox_tmpl.hrc#ID_BROWSER_REFRESH.#define.Text
+msgid  "Refresh"
+msgstr "Actualitza"
+
+#: source/ui/inc/toolbox_tmpl.hrc#ID_NEW_VIEW_DESIGN.#define.Text
+msgid  "New ~View Design"
+msgstr "Disseny de ~vista nou"
+
+#: source/ui/inc/toolbox_tmpl.hrc#ID_NEW_TABLE_DESIGN.#define.Text
+msgid  "New ~Table Design"
+msgstr "Disseny de ~taula nou"
+
+#: source/ui/inc/toolbox_tmpl.hrc#ID_NEW_QUERY_WIZARD.#define.Text
+msgid  "Query AutoPilot..."
+msgstr "AutoPilot per a consultes..."
+
+#: source/ui/inc/toolbox_tmpl.hrc#ID_NEW_QUERY_DESIGN.#define.Text
+msgid  "New ~Query (Design View)"
+msgstr "~Consulta nova (vista de disseny)"
+
+#: source/ui/inc/toolbox_tmpl.hrc#ID_EDIT_QUERY_DESIGN.#define.Text
+msgid  "~Edit Query"
+msgstr "~Edita consulta"
+
+#: source/ui/inc/toolbox_tmpl.hrc#ID_NEW_QUERY_SQL.#define.Text
+msgid  "New Query (~SQL View)"
+msgstr "Consulta nova (vista ~SQL)"
+
+#: source/ui/inc/toolbox_tmpl.hrc#ID_QUERY_EDIT_JOINCONNECTION.#define.Text
+msgid  "Edit..."
+msgstr "Edita..."
+
+#: source/ui/inc/toolbox_tmpl.hrc#ID_BROWSER_COLWIDTH.#define.Text
+msgid  "Column ~Width..."
+msgstr "Amplada de ~columna..."
+
+#: source/ui/inc/toolbox_tmpl.hrc#ID_DOCUMENT_CREATE_REPWIZ.#define.Text
+msgid  "Report Wizard..."
+msgstr "Auxiliar d'informes..."
+
+#: source/ui/inc/toolbox_tmpl.hrc#SID_DB_FORM_NEW_PILOT.#define.Text
+msgid  "Form AutoPilot..."
+msgstr "Auxiliar de formularis..."
+
 #: source/ui/misc/dbumiscres.src#RSC_CHARSETS.1.String.Text
 msgid  "System"
 msgstr "Sistema"
@@ -2736,12 +2780,12 @@ msgid  "An unexpected error occurred. The operation could not be performed."
 msgstr "S'ha produït un error inesperat. L'operació no s'ha pogut realitzar."
 
 #: source/ui/misc/dbumiscres.src#STR_COULDNOTOPEN_LINKEDDOC.String.Text
-msgid  "The document "$file$" could not be opened."
-msgstr ""
+msgid  "The document \"$file$\" could not be opened."
+msgstr "No s'ha pogut obrir el document \"$file$\"."
 
 #: source/ui/misc/dbumiscres.src#STR_MISSING_TABLES_XDROP.String.Text
 msgid  "The table cannot be deleted because the database connection does not support this."
-msgstr ""
+msgstr "No es pot suprimir la taula perquè la connexió de la base de dades no ho permet."
 
 #: source/ui/misc/dbumiscres.src#STR_BUTTON_TEXT_ALL.String.Text
 msgid  "~All"
@@ -2760,20 +2804,20 @@ msgid  "No corresponding column type could be found for column '#1'."
 msgstr "No s'ha trobat un tipus de columna que corresponga amb la columna '#1'."
 
 #: source/ui/misc/dbumiscres.src#STR_FILE_DOES_NOT_EXIST.String.Text
-msgid  "The file "$file$" does not exist."
-msgstr ""
+msgid  "The file \"$file$\" does not exist."
+msgstr "El fitxer \"$file$\" no existeix."
 
 #: source/ui/misc/dbumiscres.src#STR_WARNINGS_DURING_CONNECT.String.Text
-msgid  "Warnings were encountered while connecting to the data source. Press "$buttontext$" to view them."
-msgstr ""
+msgid  "Warnings were encountered while connecting to the data source. Press \"$buttontext$\" to view them."
+msgstr "S'han trobat advertències mentre es connectava a la font de base de dades. Feu clic a \"$buttontext$\" per veure-les."
 
 #: source/ui/misc/dbumiscres.src#STR_NAMED_OBJECT_ALREADY_EXISTS.String.Text
 msgid  "The name '$#$' already exists.\nPlease enter another name."
-msgstr ""
+msgstr "El nom '$#$' ja existeix.\nIntroduïu un altre nom."
 
 #: source/ui/misc/dbumiscres.src#RID_STR_EXTENSION_NOT_PRESENT.String.Text
-msgid  "The report, "$file$", requires the extension Oracle Report Builder."
-msgstr ""
+msgid  "The report, \"$file$\", requires the extension Oracle Report Builder."
+msgstr "L'informe \"$file$\" requereix l'extensió Constructor d'informes d'Oracle."
 
 #: source/ui/misc/WizardPages.src#STR_WIZ_COLUMN_SELECT_TITEL.String.Text
 msgid  "Apply columns"
@@ -2901,7 +2945,7 @@ msgstr "Este nom de taula no és vàlid a la base de dades actual."
 
 #: source/ui/misc/WizardPages.src#STR_SUGGEST_APPEND_TABLE_DATA.String.Text
 msgid  "Choose the option 'Append data' on the first page to append data to an existing table."
-msgstr ""
+msgstr "Seleccioneu l'opció 'Afig dades' de la primera pàgina per afegir dades a una taula existent."
 
 #: source/ui/misc/WizardPages.src#STR_INVALID_TABLE_NAME_LENGTH.String.Text
 msgid  "Please change the table name. It is too long."
@@ -2953,15 +2997,15 @@ msgstr "Propietats de la unió"
 
 #: source/ui/querydesign/querydlg.src#STR_JOIN_TYPE_HINT.String.Text
 msgid  "Please note that some databases may not support this join type."
-msgstr ""
+msgstr "Tingueu en compte que pot ser que algunes bases de dades no admetin este tipus d'unió."
 
 #: source/ui/querydesign/querydlg.src#STR_QUERY_INNER_JOIN.String.Text
 msgid  "Includes only records for which the contents of the related fields of both tables are identical."
-msgstr ""
+msgstr "Inclou només els registres per als quals el contingut dels camps afins de les dues taules és idèntic."
 
 #: source/ui/querydesign/querydlg.src#STR_QUERY_LEFTRIGHT_JOIN.String.Text
 msgid  "Contains ALL records from table '%1' but only records from table '%2' where the values in the related fields are matching."
-msgstr ""
+msgstr "Conté TOTS els registres de la taula '%1' i només aquells registres de la taula '%2' els valors dels quals coincideixen en els camps afins."
 
 #: source/ui/querydesign/querydlg.src#STR_QUERY_FULL_JOIN.String.Text
 msgid  "Contains ALL records from '%1' and from '%2'."
@@ -2973,7 +3017,7 @@ msgstr "Conté el producte cartesià de TOTS els registres de '%1' i de '%2'."
 
 #: source/ui/querydesign/querydlg.src#STR_QUERY_NATURAL_JOIN.String.Text
 msgid  "Contains only one column for each pair of equally-named columns from '%1' and from '%2'."
-msgstr ""
+msgstr "Conté només una columna per a cada parell de columnes amb el mateix nom de '%1' i de '%2'."
 
 #: source/ui/querydesign/query.src#STR_QUERY_UNDO_TABWINSHOW.String.Text
 msgid  "Add Table Window"
@@ -3017,7 +3061,7 @@ msgstr "L'expressió no és vàlida, el nom del camp '$name$' no existeix."
 
 #: source/ui/querydesign/query.src#RID_STR_TOMUCHTABLES.String.Text
 msgid  "The query covers #num# tables. The selected database type, however, can only process a maximum of #maxnum# table(s) per statement."
-msgstr ""
+msgstr "La consulta inclou #num# taules. Tanmateix, el tipus de base de dades seleccionat només pot processar un màxim de #maxnum# taula(es) per expressió."
 
 #: source/ui/querydesign/query.src#STR_QUERY_UNDO_TABWINDELETE.String.Text
 msgid  "Delete Table Window"
@@ -3105,7 +3149,7 @@ msgstr "Hi ha massa taules."
 
 #: source/ui/querydesign/query.src#STR_QRY_NATIVE.String.Text
 msgid  "The statement will not be applied when querying in the SQL dialect of the database."
-msgstr ""
+msgstr "L'expressió no s'aplicarà en consultar en el dialecte SQL de la base de dades."
 
 #: source/ui/querydesign/query.src#ERR_QRY_AMB_FIELD.ErrorBox.Message
 msgid  "Field name not found or not unique"
@@ -3141,7 +3185,7 @@ msgstr "No s'ha pogut crear cap consulta perquè no s'ha seleccionat cap camp."
 
 #: source/ui/querydesign/query.src#STR_DATASOURCE_DELETED.String.Text
 msgid  "The corresponding data source has been deleted. Therefore, data relevant to that data source cannot be saved."
-msgstr ""
+msgstr "La font de dades corresponent s'ha suprimit. No és possible alçar-hi dades rellevants."
 
 #: source/ui/querydesign/query.src#STR_QRY_COLUMN_NOT_FOUND.String.Text
 msgid  "The column '$name$' is unknown."
@@ -3157,7 +3201,7 @@ msgstr "Heu d'utilitzar un nom de columna abans de 'LIKE'."
 
 #: source/ui/querydesign/query.src#STR_QRY_CHECK_CASESENSITIVE.String.Text
 msgid  "The column could not be found. Please note that the database is case-sensitive."
-msgstr ""
+msgstr "No es pot trobar la columna. Adoneu-vos que la base de dades distingeix entre majúscules i minúscules."
 
 #: source/ui/querydesign/query.src#STR_QUERYDESIGN.String.Text
 msgid  " - %PRODUCTNAME Base: Query Design"
@@ -3169,14 +3213,14 @@ msgstr " - %PRODUCTNAME Base: Disseny de vista"
 
 #: source/ui/querydesign/query.src#STR_QUERY_SAVEMODIFIED.String.Text
 msgid  "$object$ has been changed.\nDo you want to save the changes?"
-msgstr ""
+msgstr "S'ha modificat l'objecte $object$.\nVoleu alçar els canvis?"
 
 #: source/ui/querydesign/query.src#STR_ERROR_PARSING_STATEMENT.String.Text
-msgid  "$object$ is based on an SQL command which could not be parsed.(except "SQL command", which doesn't make sense here) will be inserted."
+msgid  "$object$ is based on an SQL command which could not be parsed.(except \"SQL command\", which doesn't make sense here) will be inserted."
 msgstr ""
 
 #: source/ui/querydesign/query.src#STR_INFO_OPENING_IN_SQL_VIEW.String.Text
-msgid  "$object$ will be opened in SQL view.(except "SQL command", which doesn't make sense here) will be inserted."
+msgid  "$object$ will be opened in SQL view.(except \"SQL command\", which doesn't make sense here) will be inserted."
 msgstr ""
 
 #: source/ui/querydesign/query.src#RSC_QUERY_OBJECT_TYPE.1.String.Text
@@ -3193,15 +3237,15 @@ msgstr "L'expressió SQL"
 
 #: source/ui/querydesign/query.src#STR_STATEMENT_WITHOUT_RESULT_SET.String.Text
 msgid  "The query does not create a result set, and thus cannot be part of another query."
-msgstr ""
+msgstr "La consulta no crea un grup de resultats i, per tant no pot ser part d'una altra consulta."
 
 #: source/ui/querydesign/query.src#STR_NO_DATASOURCE_OR_CONNECTION.String.Text
 msgid  "Both the ActiveConnection and the DataSourceName parameter are missing or wrong - cannot initialize the query designer."
-msgstr ""
+msgstr "Els paràmetres ActiveConnection (connexió activa) i DataSourceName (nom de la font de dades) no existeixen o contenen algun error. No s'ha pogut inicialitzar el dissenyador de consultes."
 
 #: source/ui/relationdesign/relation.src#STR_QUERY_REL_EDIT_RELATION.String.Text
 msgid  "This relation already exists. Do you want to edit it or create a new one?"
-msgstr ""
+msgstr "Esta relació ja existeix. Voleu editar-la o voleu crear-ne una de nova?"
 
 #: source/ui/relationdesign/relation.src#STR_QUERY_REL_EDIT.String.Text
 msgid  "Edit..."
@@ -3221,19 +3265,19 @@ msgstr "La base de dades no permet les relacions."
 
 #: source/ui/relationdesign/relation.src#RELATION_DESIGN_SAVEMODIFIED.QueryBox.Message
 msgid  "The relation design has been changed.\nDo you want to save the changes?"
-msgstr ""
+msgstr "El disseny de la relació ha canviat.\nVoleu alçar els canvis?"
 
 #: source/ui/relationdesign/relation.src#STR_QUERY_REL_DELETE_WINDOW.String.Text
 msgid  "When you delete this table all corresponding relations will be deleted as well. Continue?"
-msgstr ""
+msgstr "Quan s'elimini esta taula també se suprimiran les relacions associades. Voleu continuar?"
 
 #: source/ui/relationdesign/relation.src#STR_QUERY_REL_COULD_NOT_CREATE.String.Text
 msgid  "The database could not create the relation. May be foreign keys for this kind of table aren't supported.\nPlease check your documentation of the database."
-msgstr ""
+msgstr "La base de dades no ha pogut crear la relació. Potser les claus alienes per a este tipus de taula no són compatibles.\nConsulteu la documentació de la base de dades."
 
 #: source/ui/tabledesign/table.src#STR_TABLEDESIGN_DBFIELDTYPES.String.Text
 msgid  "Unknown;Text;Number;Date/Time;Date;Time;Yes/No;Currency;Memo;Counter;Image;Text (fix);Decimal;Binary (fix);Binary;BigInt;Double;Float;Real;Integer;Small Integer;Tiny Integer;SQL Null;Object;Distinct;Structure;Field;BLOB;CLOB;REF;OTHER;Bit (fix)"
-msgstr ""
+msgstr "Desconegut;Text;Nombre;Data/Hora;Data;Hora;Sí/No;Moneda;Memo;Comptador;Imatge;Text (fix);Decimal;Binari (fix);Binari;BigInt;Doble;Flotant;Real;Enter;Enter petit;Enter minúscul;SQL Nul;Objecte;Diferent;Estructura;Camp;BLOB;CLOB;REF;ALTRES;Bit (fix)"
 
 #: source/ui/tabledesign/table.src#STR_TABLEDESIGN_UNDO_PRIMKEY.String.Text
 msgid  "Insert/remove primary key"
@@ -3377,15 +3421,15 @@ msgstr "Exemple de format"
 
 #: source/ui/tabledesign/table.src#STR_HELP_BOOL_DEFAULT.String.Text
 msgid  "Select a value that is to appear in all new records as default.\nIf the field is not to have a default value, select the empty string."
-msgstr ""
+msgstr "Seleccioneu el valor que ha d'aparèixer per defecte en tots els registres nous.\nSi el camp no ha de tindre un valor per defecte, seleccioneu la cadena buida."
 
 #: source/ui/tabledesign/table.src#STR_HELP_DEFAULT_VALUE.String.Text
 msgid  "Enter a default value for this field.\n\nWhen you later enter data in the table, this string will be used in each new record for the field selected. It should, therefore, correspond to the cell format that needs to be entered below."
-msgstr ""
+msgstr "Introduïu un valor per defecte per a este camp.\n\nQuan introduïu dades en els registres nous de la taula, s'utilitzarà esta cadena per al camp seleccionat. Per tant, s'ha de correspondre amb el format de cel·la que s'ha d'introduir a sota."
 
 #: source/ui/tabledesign/table.src#STR_HELP_FIELD_REQUIRED.String.Text
 msgid  "Activate this option if this field cannot contain NULL values, i.e. the user must always enter data."
-msgstr ""
+msgstr "Activeu esta opció en cas que este camp no puga contindre valors NULL. És a dir, l'usuari sempre hi haurà d'introduir alguna dada."
 
 #: source/ui/tabledesign/table.src#STR_HELP_TEXT_LENGTH.String.Text
 msgid  "Enter the maximum text length permitted."
@@ -3397,7 +3441,7 @@ msgstr "Introduïu el format numèric."
 
 #: source/ui/tabledesign/table.src#STR_HELP_LENGTH.String.Text
 msgid  "Determine the length data can have in this field.\n\nIf decimal fields, then the maximum length of the number to be entered, if binary fields, then the length of the data block.\nThe value will be corrected accordingly when it exceeds the maximum for this database."
-msgstr ""
+msgstr "Determineu la longitud que poden tindre les dades d'este camp.\n\nSi són camps decimals, fixeu la longitud màxima del nombre que s'ha d'introduir; si són camps binaris, la longitud del bloc de dades.\nEl valor es corregirà quan superi el màxim permés per a esta base de dades."
 
 #: source/ui/tabledesign/table.src#STR_HELP_SCALE.String.Text
 msgid  "Specify the number of decimal places permitted in this field."
@@ -3405,7 +3449,7 @@ msgstr "Indiqueu el nombre de llocs decimals permesos en este camp."
 
 #: source/ui/tabledesign/table.src#STR_HELP_FORMAT_CODE.String.Text
 msgid  "This is where you see how the data would be displayed in the current format (use the button on the right to modify the format)."
-msgstr ""
+msgstr "Ací podeu veure com es visualitzarien les dades en el format actual (utilitzeu el botó de la dreta per modificar el format)."
 
 #: source/ui/tabledesign/table.src#STR_HELP_FORMAT_BUTTON.String.Text
 msgid  "This is where you determine the output format of the data."
@@ -3413,19 +3457,19 @@ msgstr "Ací podeu determinar el format d'eixida de les dades."
 
 #: source/ui/tabledesign/table.src#STR_HELP_AUTOINCREMENT.String.Text
 msgid  "Choose if this field should contain AutoIncrement values.\n\nYou can not enter data in fields of this type. An intrinsic value will be assigned to each new record automatically (resulting from the increment of the previous record)."
-msgstr ""
+msgstr "Trieu si este camp ha de contindre valors d'increment automàtic.\n\nNo podeu introduir dades en este tipus de camps. S'assignarà un valor intrínsec a cada registre nou de manera automàtica (este valor provindrà de l'increment del registre anterior)."
 
 #: source/ui/tabledesign/table.src#PB_FORMAT.PushButton.Text
 msgid  "~..."
 msgstr "~..."
 
 #: source/ui/tabledesign/table.src#STR_TABLEDESIGN_DUPLICATE_NAME.String.Text
-msgid  "The table cannot be saved because column name "$column$" was assigned twice."
-msgstr ""
+msgid  "The table cannot be saved because column name \"$column$\" was assigned twice."
+msgstr "No es pot alçar la taula perquè el nom de la columna \"$column$\" s'ha assignat dos cops."
 
 #: source/ui/tabledesign/table.src#STR_TBL_COLUMN_IS_KEYCOLUMN.String.Text
-msgid  "The column "$column$" belongs to the primary key. If the column is deleted, the primary key will also be deleted. Do you really want to continue?"
-msgstr ""
+msgid  "The column \"$column$\" belongs to the primary key. If the column is deleted, the primary key will also be deleted. Do you really want to continue?"
+msgstr "La columna \"$column$\" pertany a la clau primària. Si se suprimeix la columna, la clau primària també se suprimirà. Segur que voleu continuar?"
 
 #: source/ui/tabledesign/table.src#STR_TBL_COLUMN_IS_KEYCOLUMN_TITLE.String.Text
 msgid  "Primary Key Affected"
@@ -3439,25 +3483,29 @@ msgstr "Columna"
 msgid  "Continue anyway?"
 msgstr "Voleu continuar igualment?"
 
+#: source/ui/tabledesign/table.src#STR_STAT_WARNING.String.Text
+msgid  "Warning!"
+msgstr "Avís"
+
 #: source/ui/tabledesign/table.src#TABLE_DESIGN_SAVEMODIFIED.QueryBox.Message
 msgid  "The table has been changed.\nDo you want to save the changes?"
-msgstr ""
+msgstr "S'ha canviat la taula.\nVoleu alçar els canvis?"
 
 #: source/ui/tabledesign/table.src#TABLE_QUERY_CONNECTION_LOST.QueryBox.Message
 msgid  "The connection to the database was lost! The table design can only be used with limited functionality without a connection.\nReconnect?"
-msgstr ""
+msgstr "S'ha perdut la connexió amb la base de dades. Sense connexió, el disseny de la taula només es pot fer servir de manera limitada.\nVoleu provar de tornar-vos a connectar?"
 
 #: source/ui/tabledesign/table.src#STR_TABLEDESIGN_CONNECTION_MISSING.String.Text
 msgid  "The table could not be saved due to problems connecting to the database."
-msgstr ""
+msgstr "No s'ha pogut alçar la taula per problemes de connexió."
 
 #: source/ui/tabledesign/table.src#STR_TABLEDESIGN_DATASOURCE_DELETED.String.Text
 msgid  "The table filter could not be adjusted because the data source has been deleted."
-msgstr ""
+msgstr "El filtre de la taula no s'ha pogut alçar perquè la font de dades s'ha suprimit anteriorment."
 
 #: source/ui/tabledesign/table.src#QUERY_SAVE_TABLE_EDIT_INDEXES.QueryBox.Message
 msgid  "Before you can edit the indexes of a table, you have to save it.\nDo you want to save the changes now?"
-msgstr ""
+msgstr "S'ha d'alçar la taula abans de poder editar els índexs.\nVoleu alçar els canvis ara?"
 
 #: source/ui/tabledesign/table.src#STR_TABLEDESIGN_NO_PRIM_KEY_HEAD.String.Text
 msgid  "No primary key"
@@ -3465,15 +3513,15 @@ msgstr "Sense clau primària"
 
 #: source/ui/tabledesign/table.src#STR_TABLEDESIGN_NO_PRIM_KEY.String.Text
 msgid  "A unique index or primary key is required for data record identification in this database.\nYou can only enter data into this table when one of these two structural conditions has been met.\n\nShould a primary key be created now?"
-msgstr ""
+msgstr "Es necessita una clau primària o un índex únic per poder accedir a esta base de dades.\nNomés podeu entrar dades en esta taula si una d'estes dues condicions estructurals es compleix.\n\nVoleu crear una clau primària ara?"
 
 #: source/ui/tabledesign/table.src#STR_TABLEDESIGN_TITLE.String.Text
 msgid  " - %PRODUCTNAME Base: Table Design"
 msgstr "- %PRODUCTNAME Base: Disseny de la taula"
 
 #: source/ui/tabledesign/table.src#STR_TABLEDESIGN_ALTER_ERROR.String.Text
-msgid  "The column "$column$" could not be changed. Should the column instead be deleted and the new format appended?"
-msgstr ""
+msgid  "The column \"$column$\" could not be changed. Should the column instead be deleted and the new format appended?"
+msgstr "No s'ha pogut modificar la columna \"$column$\". Voleu suprimir-la i aplicar el format nou?"
 
 #: source/ui/tabledesign/table.src#STR_TABLEDESIGN_SAVE_ERROR.String.Text
 msgid  "Error while saving the table design"
@@ -3485,7 +3533,7 @@ msgstr "La columna $column$ no s'ha pogut suprimir."
 
 #: source/ui/tabledesign/table.src#TABLE_DESIGN_ALL_ROWS_DELETED.QueryBox.Message
 msgid  "You are trying to delete all the columns in the table. A table cannot exist without columns. Should the table be deleted from the database? If not, the table will remain unchanged."
-msgstr ""
+msgstr "Esteu intentant suprimir totes les columnes d'una taula. Una taula no pot existir sense columnes. Voleu suprimir la taula de la base de dades? Si no, la taula no es modificarà."
 
 #: source/ui/tabledesign/table.src#STR_AUTOINCREMENT_VALUE.String.Text
 msgid  "A~uto-increment statement"
@@ -3493,11 +3541,11 @@ msgstr "Expressió d'increment a~utomàtic"
 
 #: source/ui/tabledesign/table.src#STR_HELP_AUTOINCREMENT_VALUE.String.Text
 msgid  "Enter an SQL statement for the auto-increment field.\n\nThis statement will be directly transferred to the database when the table is created."
-msgstr ""
+msgstr "Introduïu una expressió SQL per al camp d'increment automàtic.\n\nEsta expressió es transferirà a la base de dades quan es cree la taula."
 
 #: source/ui/tabledesign/table.src#STR_NO_TYPE_INFO_AVAILABLE.String.Text
 msgid  "No type information could be retrieved from the database.\nThe table design mode is not available for this data source."
-msgstr ""
+msgstr "No s'ha pogut recuperar la informació sobre el tipus de dades.\nEl mode de disseny de la taula no està disponible per a este origen de dades."
 
 #: source/ui/tabledesign/table.src#STR_CHANGE_COLUMN_NAME.String.Text
 msgid  "change field name"
@@ -3514,10 +3562,6 @@ msgstr "canvia la descripció del camp"
 #: source/ui/tabledesign/table.src#STR_CHANGE_COLUMN_ATTRIBUTE.String.Text
 msgid  "change field attribute"
 msgstr "canvia l'atribut del camp"
-
-#: source/ui/tabledesign/table.src#STR_STAT_WARNING.String.Text
-msgid  "Warning!"
-msgstr "Avís"
 
 #: source/ui/uno/dbinteraction.src#STR_REMEMBERPASSWORD_SESSION.String.Text
 msgid  "~Remember password until end of session"
@@ -3537,7 +3581,7 @@ msgstr "La base de dades de destinació no permet l'ús de claus primàries."
 
 #: source/ui/uno/copytablewizard.src#STR_CTW_INVALID_DATA_ACCESS_DESCRIPTOR.String.Text
 msgid  "no data access descriptor found, or no data access descriptor able to provide all necessary information"
-msgstr ""
+msgstr "No s'ha trobat cap descriptor d'accés a dades o no hi ha cap descriptor d'accés a dades capaç de proporcionar tota la informació necessària."
 
 #: source/ui/uno/copytablewizard.src#STR_CTW_ONLY_TABLES_AND_QUERIES_SUPPORT.String.Text
 msgid  "Only tables and queries are supported at the moment."
@@ -3545,11 +3589,11 @@ msgstr "Només es permet l'ús de taules i consultes, de moment."
 
 #: source/ui/uno/copytablewizard.src#STR_CTW_COPY_SOURCE_NEEDS_BOOKMARKS.String.Text
 msgid  "The copy source's result set must support bookmarks."
-msgstr ""
+msgstr "El conjunt de resultats de l'origen de la còpia ha de permetre l'ús de marcadors."
 
 #: source/ui/uno/copytablewizard.src#STR_CTW_UNSUPPORTED_COLUMN_TYPE.String.Text
 msgid  "Unsupported source column type ($type$) at column position $pos$."
-msgstr ""
+msgstr "S'ha trobat un tipus de columna d'origen no permés ($type$) a la posició de columna $pos$."
 
 #: source/ui/uno/copytablewizard.src#STR_CTW_ILLEGAL_PARAMETER_COUNT.String.Text
 msgid  "Illegal number of initialization parameters."
@@ -3565,52 +3609,8 @@ msgstr "El descriptor d'origen de la còpia conté un paràmetre no admés: $nam
 
 #: source/ui/uno/copytablewizard.src#STR_CTW_ERROR_NO_QUERY.String.Text
 msgid  "To copy a query, your connection must be able to provide queries."
-msgstr ""
+msgstr "Per copiar una consulta, cal que la connexió puga proporcionar consultes."
 
 #: source/ui/uno/copytablewizard.src#STR_CTW_ERROR_INVALID_INTERACTIONHANDLER.String.Text
 msgid  "The given interaction handler is invalid."
 msgstr "El gestor d'interacció indicat no és vàlid."
-
-#: source/ui/inc/toolbox_tmpl.hrc#ID_BROWSER_REFRESH.#define.Text
-msgid  "Refresh"
-msgstr "Actualitza"
-
-#: source/ui/inc/toolbox_tmpl.hrc#ID_NEW_VIEW_DESIGN.#define.Text
-msgid  "New ~View Design"
-msgstr "Disseny de ~vista nou"
-
-#: source/ui/inc/toolbox_tmpl.hrc#ID_NEW_TABLE_DESIGN.#define.Text
-msgid  "New ~Table Design"
-msgstr "Disseny de ~taula nou"
-
-#: source/ui/inc/toolbox_tmpl.hrc#ID_NEW_QUERY_WIZARD.#define.Text
-msgid  "Query AutoPilot..."
-msgstr "AutoPilot per a consultes..."
-
-#: source/ui/inc/toolbox_tmpl.hrc#ID_NEW_QUERY_DESIGN.#define.Text
-msgid  "New ~Query (Design View)"
-msgstr "~Consulta nova (vista de disseny)"
-
-#: source/ui/inc/toolbox_tmpl.hrc#ID_EDIT_QUERY_DESIGN.#define.Text
-msgid  "~Edit Query"
-msgstr "~Edita consulta"
-
-#: source/ui/inc/toolbox_tmpl.hrc#ID_NEW_QUERY_SQL.#define.Text
-msgid  "New Query (~SQL View)"
-msgstr "Consulta nova (vista ~SQL)"
-
-#: source/ui/inc/toolbox_tmpl.hrc#ID_QUERY_EDIT_JOINCONNECTION.#define.Text
-msgid  "Edit..."
-msgstr "Edita..."
-
-#: source/ui/inc/toolbox_tmpl.hrc#ID_BROWSER_COLWIDTH.#define.Text
-msgid  "Column ~Width..."
-msgstr "Amplada de ~columna..."
-
-#: source/ui/inc/toolbox_tmpl.hrc#ID_DOCUMENT_CREATE_REPWIZ.#define.Text
-msgid  "Report Wizard..."
-msgstr "Auxiliar d'informes..."
-
-#: source/ui/inc/toolbox_tmpl.hrc#SID_DB_FORM_NEW_PILOT.#define.Text
-msgid  "Form AutoPilot..."
-msgstr "Auxiliar de formularis..."

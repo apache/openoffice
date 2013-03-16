@@ -32,8 +32,9 @@ msgstr ""
 
 
 #: source/app/desktop.src#STR_RECOVER_QUERY.String.Text
-msgid  "Should the file "$1" be restored?"
-msgstr ""
+#, fuzzy
+msgid  "Should the file \"$1\" be restored?"
+msgstr "Should the file \"$1\" be restored?"
 
 #: source/app/desktop.src#STR_RECOVER_TITLE.String.Text
 #, fuzzy
@@ -41,8 +42,9 @@ msgid  "File Recovery"
 msgstr "File Recovery"
 
 #: source/app/desktop.src#STR_RECOVER_PREPARED.WarningBox.Message
+#, fuzzy
 msgid  "An unrecoverable error has occurred.\n\nAll modified files have been saved and can\nprobably be recovered at program restart."
-msgstr ""
+msgstr "An unrecoverable error has occurred.\n\nAll modified files have been saved and can\nprobably be recovered at program restart."
 
 #: source/app/desktop.src#STR_BOOTSTRAP_ERR_CANNOT_START.String.Text
 #, fuzzy
@@ -50,8 +52,9 @@ msgid  "The application cannot be started. "
 msgstr "The application cannot be started. "
 
 #: source/app/desktop.src#STR_BOOTSTRAP_ERR_DIR_MISSING.String.Text
-msgid  "The configuration directory "$1" could not be found."
-msgstr ""
+#, fuzzy
+msgid  "The configuration directory \"$1\" could not be found."
+msgstr "The configuration directory \"$1\" could not be found."
 
 #: source/app/desktop.src#STR_BOOTSTRAP_ERR_PATH_INVALID.String.Text
 #, fuzzy
@@ -69,16 +72,19 @@ msgid  "An internal error occurred."
 msgstr "An internal error occurred."
 
 #: source/app/desktop.src#STR_BOOTSTRAP_ERR_FILE_CORRUPT.String.Text
-msgid  "The configuration file "$1" is corrupt."
-msgstr ""
+#, fuzzy
+msgid  "The configuration file \"$1\" is corrupt."
+msgstr "The configuration file \"$1\" is corrupt."
 
 #: source/app/desktop.src#STR_BOOTSTRAP_ERR_FILE_MISSING.String.Text
-msgid  "The configuration file "$1" was not found."
-msgstr ""
+#, fuzzy
+msgid  "The configuration file \"$1\" was not found."
+msgstr "The configuration file \"$1\" was not found."
 
 #: source/app/desktop.src#STR_BOOTSTRAP_ERR_NO_SUPPORT.String.Text
-msgid  "The configuration file "$1" does not support the current version."
-msgstr ""
+#, fuzzy
+msgid  "The configuration file \"$1\" does not support the current version."
+msgstr "The configuration file \"$1\" does not support the current version."
 
 #: source/app/desktop.src#STR_BOOTSTRAP_ERR_LANGUAGE_MISSING.String.Text
 #, fuzzy
@@ -96,16 +102,19 @@ msgid  "The configuration service is not available."
 msgstr "The configuration service is not available."
 
 #: source/app/desktop.src#STR_BOOTSTRAP_ERR_MULTISESSION.String.Text
+#, fuzzy
 msgid  "You have another instance running in a different terminal session. Close that instance and then try again."
-msgstr ""
+msgstr "You have another instance running in a different terminal session. Close that instance and then try again."
 
 #: source/app/desktop.src#STR_ASK_START_SETUP_MANUALLY.String.Text
+#, fuzzy
 msgid  "Start the setup application to repair the installation from the CD or the folder containing the installation packages."
-msgstr ""
+msgstr "Start the setup application to repair the installation from the CD or the folder containing the installation packages."
 
 #: source/app/desktop.src#STR_CONFIG_ERR_SETTINGS_INCOMPLETE.String.Text
+#, fuzzy
 msgid  "The startup settings for accessing the central configuration are incomplete. "
-msgstr ""
+msgstr "The start-up settings for accessing the central configuration are incomplete. "
 
 #: source/app/desktop.src#STR_CONFIG_ERR_CANNOT_CONNECT.String.Text
 #, fuzzy
@@ -113,8 +122,9 @@ msgid  "A connection to the central configuration could not be established. "
 msgstr "A connection to the central configuration could not be established. "
 
 #: source/app/desktop.src#STR_CONFIG_ERR_RIGHTS_MISSING.String.Text
+#, fuzzy
 msgid  "You cannot access the central configuration because of missing access rights. "
-msgstr ""
+msgstr "You cannot access the central configuration because of missing access rights. "
 
 #: source/app/desktop.src#STR_CONFIG_ERR_ACCESS_GENERAL.String.Text
 #, fuzzy
@@ -122,12 +132,14 @@ msgid  "A general error occurred while accessing your central configuration. "
 msgstr "A general error occurred while accessing your central configuration. "
 
 #: source/app/desktop.src#STR_CONFIG_ERR_NO_WRITE_ACCESS.String.Text
+#, fuzzy
 msgid  "The changes to your personal settings cannot be stored centrally because of missing access rights. "
-msgstr ""
+msgstr "The changes to your personal settings cannot be stored centrally because of missing access rights. "
 
 #: source/app/desktop.src#STR_BOOTSTRAP_ERR_CFG_DATAACCESS.String.Text
+#, fuzzy
 msgid  "%PRODUCTNAME cannot be started due to an error in accessing the %PRODUCTNAME configuration data.\n\nPlease contact your system administrator."
-msgstr ""
+msgstr "%PRODUCTNAME cannot be started due to an error in accessing the %PRODUCTNAME configuration data.\n\nPlease contact your system administrator."
 
 #: source/app/desktop.src#STR_INTERNAL_ERRMSG.String.Text
 #, fuzzy
@@ -135,8 +147,9 @@ msgid  "The following internal error has occurred: "
 msgstr "The following internal error has occurred: "
 
 #: source/app/desktop.src#QBX_USERDATALOCKED.QueryBox.Message
+#, fuzzy
 msgid  "Either another instance of %PRODUCTNAME is accessing your personal settings or your personal settings are locked.\nSimultaneous access can lead to inconsistencies in your personal settings. Before continuing, you should make sure user '$u' closes %PRODUCTNAME on host '$h'.\n\nDo you really want to continue?"
-msgstr ""
+msgstr "Either another instance of %PRODUCTNAME is accessing your personal settings or your personal settings are locked.\nSimultaneous access can lead to inconsistencies in your personal settings. Before continuing, you should ensure user '$u' closes %PRODUCTNAME on host '$h'.\n\nDo you really want to continue?"
 
 #: source/app/desktop.src#STR_TITLE_USERDATALOCKED.String.Text
 #, fuzzy
@@ -163,12 +176,14 @@ msgid  "The path manager is not available.\n"
 msgstr "The path manager is not available.\n"
 
 #: source/app/desktop.src#STR_BOOSTRAP_ERR_NOTENOUGHDISKSPACE.String.Text
+#, fuzzy
 msgid  "%PRODUCTNAME user installation could not be completed due to insufficient free disk space. Please free more disc space at the following location and restart %PRODUCTNAME:\n\n"
-msgstr ""
+msgstr "%PRODUCTNAME user installation could not be completed due to insufficient free disc space. Please free more disc space at the following location and restart %PRODUCTNAME:\n\n"
 
 #: source/app/desktop.src#STR_BOOSTRAP_ERR_NOACCESSRIGHTS.String.Text
+#, fuzzy
 msgid  "%PRODUCTNAME user installation could not be processed due to missing access rights. Please make sure that you have sufficient access rights for the following location and restart %PRODUCTNAME:\n\n"
-msgstr ""
+msgstr "%PRODUCTNAME user installation could not be processed due to missing access rights. Please ensure that you have sufficient access rights for the following location and restart %PRODUCTNAME:\n\n"
 
 #: source/deployment/gui/dp_gui_versionboxes.src#RID_WARNINGBOX_VERSION_LESS.WarningBox.Message
 msgid  "You are about to install version $NEW of the extension \'$NAME\'.\nThe newer version $DEPLOYED is already installed.\nClick \'OK\' to replace the installed extension.\nClick \'Cancel\' to stop the installation."
@@ -200,8 +215,9 @@ msgid  "System dependencies check"
 msgstr "System dependencies check"
 
 #: source/deployment/gui/dp_gui_dependencydialog.src#RID_DLG_DEPENDENCIES.RID_DLG_DEPENDENCIES_TEXT.FixedText.Text
+#, fuzzy
 msgid  "The extension cannot be installed as the following\nsystem dependencies are not fulfilled:"
-msgstr ""
+msgstr "The extension cannot be installed as the following\nsystem dependencies are not fulfilled:"
 
 #: source/deployment/gui/dp_gui_dialog.src#RID_STR_ADD_PACKAGES.String.Text
 #, fuzzy
@@ -284,16 +300,19 @@ msgid  "Quit"
 msgstr "Quit"
 
 #: source/deployment/gui/dp_gui_dialog.src#RID_STR_NO_ADMIN_PRIVILEGE.String.Text
+#, fuzzy
 msgid  "%PRODUCTNAME has been updated to a new version. Some shared %PRODUCTNAME extensions are not compatible with this version and need to be updated before %PRODUCTNAME can be started.\n\nUpdating of shared extension requires administrator privileges. Contact your system administrator to update the following shared extensions:"
-msgstr ""
+msgstr "%PRODUCTNAME has been updated to a new version. Some shared %PRODUCTNAME extensions are not compatible with this version and must be updated before %PRODUCTNAME can be started.\n\nUpdating of shared extension requires administrator privileges. Contact your system administrator to update the following shared extensions:"
 
 #: source/deployment/gui/dp_gui_dialog.src#RID_STR_ERROR_MISSING_DEPENDENCIES.String.Text
+#, fuzzy
 msgid  "The extension cannot be enabled as the following system dependencies are not fulfilled:"
-msgstr ""
+msgstr "The extension cannot be enabled as the following system dependencies are not fulfilled:"
 
 #: source/deployment/gui/dp_gui_dialog.src#RID_STR_ERROR_MISSING_LICENSE.String.Text
+#, fuzzy
 msgid  "This extension is disabled because you haven't accepted the license yet.\n"
-msgstr ""
+msgstr "This extension is disabled because you haven't accepted the licence yet.\n"
 
 #: source/deployment/gui/dp_gui_dialog.src#RID_STR_SHOW_LICENSE_CMD.String.Text
 #, fuzzy
@@ -306,8 +325,9 @@ msgid  "Extension Software License Agreement"
 msgstr "Extension Software Licence Agreement"
 
 #: source/deployment/gui/dp_gui_dialog.src#RID_DLG_LICENSE.FT_LICENSE_HEADER.FixedText.Text
+#, fuzzy
 msgid  "Please follow these steps to proceed with the installation of the extension:"
-msgstr ""
+msgstr "Please follow these steps to proceed with the installation of the extension:"
 
 #: source/deployment/gui/dp_gui_dialog.src#RID_DLG_LICENSE.FT_LICENSE_BODY_1.FixedText.Text
 #, fuzzy
@@ -502,8 +522,9 @@ msgid  "No new updates are available."
 msgstr "No new updates are available."
 
 #: source/deployment/gui/dp_gui_updatedialog.src#RID_DLG_UPDATE.RID_DLG_UPDATE_NOINSTALLABLE.String.Text
+#, fuzzy
 msgid  "No installable updates are available. To see ignored or disabled updates, mark the check box 'Show all updates'."
-msgstr ""
+msgstr "No installable updates are available. To see all updates, mark the check box 'Show all updates'."
 
 #: source/deployment/gui/dp_gui_updatedialog.src#RID_DLG_UPDATE.RID_DLG_UPDATE_FAILURE.String.Text
 #, fuzzy
@@ -603,8 +624,9 @@ msgid  "Extension Update Required"
 msgstr "Extension Update Required"
 
 #: source/deployment/gui/dp_gui_dialog2.src#RID_DLG_UPDATE_REQUIRED.RID_EM_FT_MSG.FixedText.Text
+#, fuzzy
 msgid  "%PRODUCTNAME has been updated to a new version. Some installed %PRODUCTNAME extensions are not compatible with this version and need to be updated before they can be used."
-msgstr ""
+msgstr "%PRODUCTNAME has been updated to a new version. Some installed %PRODUCTNAME extensions are not compatible with this version and must be updated before they can be used."
 
 #: source/deployment/gui/dp_gui_dialog2.src#RID_DLG_UPDATE_REQUIRED.RID_EM_FT_PROGRESS.FixedText.Text
 #, fuzzy
@@ -622,8 +644,9 @@ msgid  "Disable all"
 msgstr "Disable all"
 
 #: source/deployment/gui/dp_gui_dialog2.src#RID_QUERYBOX_INSTALL_FOR_ALL.QueryBox.Message
+#, fuzzy
 msgid  "Make sure that no further users are working with the same %PRODUCTNAME, when installing an extension for all users in a multi user environment.\n\nFor whom do you want to install the extension?\n"
-msgstr ""
+msgstr "Ensure that no further users are working with the same %PRODUCTNAME, when installing an extension for all users in a multi user environment.\n\nFor whom do you want to install the extension?\n"
 
 #: source/deployment/manager/dp_manager.src#RID_STR_COPYING_PACKAGE.String.Text
 #, fuzzy
@@ -749,8 +772,9 @@ msgid  "The extension cannot be installed because:\n"
 msgstr "The extension cannot be installed because:\n"
 
 #: source/deployment/registry/help/dp_help.src#RID_STR_HELPPROCESSING_XMLPARSING_ERROR.String.Text
+#, fuzzy
 msgid  "The extension will not be installed because an error occurred in the Help files:\n"
-msgstr ""
+msgstr "The extension will not be installed because an error occurred in the Help files:\n"
 
 #: source/deployment/registry/package/dp_package.src#RID_STR_PACKAGE_BUNDLE.String.Text
 #, fuzzy
@@ -788,16 +812,19 @@ msgid  "Extension Software License Agreement of $NAME:"
 msgstr "Extension Software Licence Agreement of $NAME:"
 
 #: source/deployment/unopkg/unopkg.src#RID_STR_UNOPKG_ACCEPT_LIC_2.String.Text
-msgid  "Read the complete License Agreement displayed above. Accept the License Agreement by typing "yes" on the console then press the Return key. Type "no" to decline and to abort the extension setup."
-msgstr ""
+#, fuzzy
+msgid  "Read the complete License Agreement displayed above. Accept the License Agreement by typing \"yes\" on the console then press the Return key. Type \"no\" to decline and to abort the extension setup."
+msgstr "Read the complete Licence Agreement displayed above. Accept the Licence Agreement by typing \"yes\" on the console then press the Return key. Type \"no\" to decline and to abort the extension setup."
 
 #: source/deployment/unopkg/unopkg.src#RID_STR_UNOPKG_ACCEPT_LIC_3.String.Text
-msgid  "[Enter "yes" or "no"]:"
-msgstr ""
+#, fuzzy
+msgid  "[Enter \"yes\" or \"no\"]:"
+msgstr "[Enter \"yes\" or \"no\"]:"
 
 #: source/deployment/unopkg/unopkg.src#RID_STR_UNOPKG_ACCEPT_LIC_4.String.Text
-msgid  "Your input was not correct. Please enter "yes" or "no":"
-msgstr ""
+#, fuzzy
+msgid  "Your input was not correct. Please enter \"yes\" or \"no\":"
+msgstr "Your input was not correct. Please enter \"yes\" or \"no\":"
 
 #: source/deployment/unopkg/unopkg.src#RID_STR_UNOPKG_ACCEPT_LIC_YES.String.Text
 #, fuzzy
@@ -820,8 +847,9 @@ msgid  "N"
 msgstr "N"
 
 #: source/deployment/unopkg/unopkg.src#RID_STR_CONCURRENTINSTANCE.String.Text
+#, fuzzy
 msgid  "unopkg cannot be started. The lock file indicates it as already running. If this does not apply, delete the lock file at:"
-msgstr ""
+msgstr "unopkg cannot be started. The lock file indicates it as already running. If this does not apply, delete the lock file at:"
 
 #: source/deployment/unopkg/unopkg.src#RID_STR_UNOPKG_ERROR.String.Text
 #, fuzzy
@@ -864,12 +892,14 @@ msgid  "Registration"
 msgstr "Registration"
 
 #: source/migration/wizard.src#STR_WELCOME_MIGRATION.String.Text
+#, fuzzy
 msgid  "This wizard will guide you through the license agreement, the transfer of user data from %OLD_VERSION and the registration of %PRODUCTNAME.\n\nClick 'Next' to continue."
-msgstr ""
+msgstr "This wizard will guide you through the licence agreement, the transfer of user data from %OLD_VERSION and the registration of %PRODUCTNAME.\n\nClick 'Next' to continue."
 
 #: source/migration/wizard.src#STR_WELCOME_WITHOUT_LICENSE.String.Text
+#, fuzzy
 msgid  "This wizard will guide you through the registration of %PRODUCTNAME.\n\nClick 'Next' to continue."
-msgstr ""
+msgstr "This wizard will guide you through the registration of %PRODUCTNAME.\n\nClick 'Next' to continue."
 
 #: source/migration/wizard.src#STR_FINISH.String.Text
 #, fuzzy
@@ -877,12 +907,14 @@ msgid  "~Finish"
 msgstr "~Finish"
 
 #: source/migration/wizard.src#STR_REGISTRATION_OOO.String.Text
+#, fuzzy
 msgid  "You now have the opportunity to support and contribute to the fastest growing open source community in the world.\n\nHelp us prove that %PRODUCTNAME has already gained significant market share by registering.\n\nRegistering is voluntary and without obligation."
-msgstr ""
+msgstr "You now have the opportunity to support and contribute to the fastest growing open source community in the world.\n\nHelp us prove that %PRODUCTNAME has already gained significant market share by registering.\n\nRegistering is voluntary and without obligation."
 
 #: source/migration/wizard.src#ERRBOX_REG_NOSYSBROWSER.ErrorBox.Message
+#, fuzzy
 msgid  "An error occurred in starting the web browser.\nPlease check the %PRODUCTNAME and web browser settings."
-msgstr ""
+msgstr "An error occurred in starting the web browser.\nPlease check the %PRODUCTNAME and web browser settings."
 
 #: source/migration/wizard.src#QB_ASK_DECLINE.QueryBox.Message
 #, fuzzy
@@ -895,8 +927,9 @@ msgid  "Welcome to %PRODUCTNAME %PRODUCTVERSION"
 msgstr "Welcome to %PRODUCTNAME %PRODUCTVERSION"
 
 #: source/migration/wizard.src#TP_WELCOME.FT_WELCOME_BODY.FixedText.Text
+#, fuzzy
 msgid  "This wizard will guide you through the license agreement and the registration of %PRODUCTNAME.\n\nClick 'Next' to continue."
-msgstr ""
+msgstr "This wizard will guide you through the licence agreement and the registration of %PRODUCTNAME.\n\nClick 'Next' to continue."
 
 #: source/migration/wizard.src#TP_LICENSE.FT_LICENSE_HEADER.FixedText.Text
 #, fuzzy
@@ -909,8 +942,9 @@ msgid  "1."
 msgstr "1."
 
 #: source/migration/wizard.src#TP_LICENSE.FT_LICENSE_BODY_1_TXT.FixedText.Text
+#, fuzzy
 msgid  "View the complete License Agreement. Please use the scrollbar or the '%PAGEDOWN' button in this dialog to view the entire license text."
-msgstr ""
+msgstr "View the complete Licence Agreement. Please use the scrollbar or the '%PAGEDOWN' button in this dialogue box to view the entire licence text."
 
 #: source/migration/wizard.src#TP_LICENSE.FT_LICENSE_BODY_2.FixedText.Text
 #, fuzzy
@@ -943,8 +977,9 @@ msgid  "Transfer personal data"
 msgstr "Transfer personal data"
 
 #: source/migration/wizard.src#TP_MIGRATION.FT_MIGRATION_BODY.FixedText.Text
+#, fuzzy
 msgid  "Most personal data from %OLDPRODUCT installation can be reused in %PRODUCTNAME %PRODUCTVERSION.\n\nIf you do not want to reuse any settings in %PRODUCTNAME %PRODUCTVERSION, unmark the check box."
-msgstr ""
+msgstr "Most personal data from %OLDPRODUCT installation can be reused in %PRODUCTNAME %PRODUCTVERSION.\n\nIf you do not want to reuse any settings in %PRODUCTNAME %PRODUCTVERSION, unmark the check box."
 
 #: source/migration/wizard.src#TP_MIGRATION.CB_MIGRATION.CheckBox.Text
 #, fuzzy
@@ -957,8 +992,9 @@ msgid  "Online Update"
 msgstr "Online Update"
 
 #: source/migration/wizard.src#TP_UPDATE_CHECK.FT_UPDATE_CHECK_BODY.FixedText.Text
+#, fuzzy
 msgid  "%PRODUCTNAME searches automatically at regular intervals for new versions.\nIn doing so online update does not transfer personal data.\nAs soon as a new version is available, you will be notified.\n\nYou can configure this feature at Tools / Options... / %PRODUCTNAME / Online Update."
-msgstr ""
+msgstr "%PRODUCTNAME searches automatically at regular intervals for new versions.\nIn doing so online update does not transfer personal data.\nAs soon as a new version is available, you will be notified.\n\nYou can configure this feature at Tools - Options... - %PRODUCTNAME - Online Update."
 
 #: source/migration/wizard.src#TP_UPDATE_CHECK.CB_UPDATE_CHECK.CheckBox.Text
 #, fuzzy
@@ -971,8 +1007,9 @@ msgid  "Provide your full name and initials below"
 msgstr "Provide your full name and initials below"
 
 #: source/migration/wizard.src#TP_USER.FT_USER_BODY.FixedText.Text
+#, fuzzy
 msgid  "The user name will be used in the document properties, templates and when you record changes made to documents."
-msgstr ""
+msgstr "The user name will be used in the document properties, templates and when you record changes made to documents."
 
 #: source/migration/wizard.src#TP_USER.FT_USER_FIRST.FixedText.Text
 #, fuzzy
@@ -1000,8 +1037,9 @@ msgid  "%PRODUCTNAME Registration"
 msgstr "%PRODUCTNAME Registration"
 
 #: source/migration/wizard.src#TP_REGISTRATION.FT_REGISTRATION_BODY.FixedText.Text
+#, fuzzy
 msgid  "You now have the opportunity to register as a %PRODUCTNAME user. Registration is voluntary and is without obligation.\n\nIf you register, we can inform you about new developments concerning this product."
-msgstr ""
+msgstr "You now have the opportunity to register as a %PRODUCTNAME user. Registration is voluntary and is without obligation.\n\nIf you register, we can inform you about new developments concerning this product."
 
 #: source/migration/wizard.src#TP_REGISTRATION.RB_REGISTRATION_NOW.RadioButton.Text
 #, fuzzy
@@ -1019,8 +1057,9 @@ msgid  "I do not want to ~register"
 msgstr "I do not want to ~register"
 
 #: source/migration/wizard.src#TP_REGISTRATION.FT_REGISTRATION_END.FixedText.Text
+#, fuzzy
 msgid  "We hope you enjoy working with %PRODUCTNAME.\n\nTo exit the wizard, click 'Finish'."
-msgstr ""
+msgstr "We hope you enjoy working with %PRODUCTNAME.\n\nTo exit the wizard, click 'Finish'."
 
 #: win32/source/rebase/rebasegui.ulf#%APP_TITLE%
 #, fuzzy
@@ -1041,6 +1080,11 @@ msgstr "Installation is optimised for servers."
 #, fuzzy
 msgid  "Cannot find Office installation."
 msgstr "Cannot find Office installation."
+
+#: win32/source/setup/setup.ulf#%APP_TITLE%
+#, fuzzy
+msgid  "Setup"
+msgstr "Setup"
 
 #: win32/source/setup/setup.ulf#%APP_PROD_TITLE%
 #, fuzzy
@@ -1063,8 +1107,9 @@ msgid  "Setup was cancelled"
 msgstr "Setup was cancelled"
 
 #: win32/source/setup/setup.ulf#%REQUIRES_ADMIN_PRIV%
+#, fuzzy
 msgid  "Administrator privileges are required for upgrading the Windows Installer."
-msgstr ""
+msgstr "Administrator privileges are required for upgrading the Windows Installer."
 
 #: win32/source/setup/setup.ulf#%FILE_NOT_FOUND%
 #, fuzzy
@@ -1077,16 +1122,19 @@ msgid  "Invalid command line option '%s'. Please use '/?' for help."
 msgstr "Invalid command line option '%s'. Please use '/?' for help."
 
 #: win32/source/setup/setup.ulf#%SETUP_TO_OLD%
+#, fuzzy
 msgid  "This package requires at least the version '%s' of the Windows Installer. \nYou have Windows Installer '%s' on your system!"
-msgstr ""
+msgstr "This package requires at least the version '%s' of the Windows Installer. \nYou have Windows Installer '%s' on your system!"
 
 #: win32/source/setup/setup.ulf#%SETUP_NOT_FOUND%
+#, fuzzy
 msgid  "This package requires the Windows Installer. \nYou need at least Windows Installer '%s' on your system!"
-msgstr ""
+msgstr "This package requires the Windows Installer. \nYou need at least Windows Installer '%s' on your system!"
 
 #: win32/source/setup/setup.ulf#%USAGE%
+#, fuzzy
 msgid  "Usage:\n   /? :  Shows this dialog.\n   /a :  Performs an administrative installation.\n   /j[u|m] :  Performs an advertising installation.\n   /q[n] : Do not show any user interface (silent mode).\n"
-msgstr ""
+msgstr "Usage:\n   /? :  Shows this dialogue box.\n   /a :  Performs an administrative installation.\n   /j[u|m] :  Performs an advertising installation.\n   /q [n] : Do not show any user interface (silent mode).\n"
 
 #: win32/source/setup/setup.ulf#%ALREADY_RUNNING%
 #, fuzzy
@@ -1237,8 +1285,3 @@ msgstr "Chinese (Simplified)"
 #, fuzzy
 msgid  "Portuguese (Portugal)"
 msgstr "Portuguese (Portugal)"
-
-#: win32/source/setup/setup.ulf#%APP_TITLE%
-#, fuzzy
-msgid  "Setup"
-msgstr "Setup"

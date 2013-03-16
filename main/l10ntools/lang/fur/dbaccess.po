@@ -172,15 +172,15 @@ msgid  "The driver does not support the modification of column descriptions by c
 msgstr ""
 
 #: source/core/resource/strings.src#RID_STR_FILE_DOES_NOT_EXIST.String.Text
-msgid  "The file "$file$" does not exist."
+msgid  "The file \"$file$\" does not exist."
 msgstr ""
 
 #: source/core/resource/strings.src#RID_STR_TABLE_DOES_NOT_EXIST.String.Text
-msgid  "There exists no table named "$table$"."
+msgid  "There exists no table named \"$table$\"."
 msgstr ""
 
 #: source/core/resource/strings.src#RID_STR_QUERY_DOES_NOT_EXIST.String.Text
-msgid  "There exists no query named "$table$"."
+msgid  "There exists no query named \"$table$\"."
 msgstr ""
 
 #: source/core/resource/strings.src#RID_STR_CONFLICTING_NAMES.String.Text
@@ -228,7 +228,7 @@ msgid  "Error accessing data source '$name$':\n$error$"
 msgstr ""
 
 #: source/core/resource/strings.src#RID_STR_NO_SUB_FOLDER.String.Text
-msgid  "There exists no folder named "$folder$"."
+msgid  "There exists no folder named \"$folder$\"."
 msgstr ""
 
 #: source/core/resource/strings.src#RID_STR_NO_DELETE_BEFORE_AFTER.String.Text
@@ -296,7 +296,7 @@ msgid  "Embedding of database documents is not supported."
 msgstr ""
 
 #: source/core/resource/strings.src#RID_STR_CONNECTION_REQUEST.String.Text
-msgid  "A connection for the following URL was requested "$name$"."
+msgid  "A connection for the following URL was requested \"$name$\"."
 msgstr ""
 
 #: source/core/resource/strings.src#RID_STR_MISSING_EXTENSION.String.Text
@@ -428,7 +428,7 @@ msgid  "The specified file name or directory does not exist."
 msgstr ""
 
 #: source/ext/adabas/AdabasNewDb.src#STR_ERROR_IN_ADABAS_INSTALLATION.String.Text
-msgid  "No new database can be created.\nPlease check your Adabas D installation, especially the variables "DBROOT" and "DBWORK"."
+msgid  "No new database can be created.\nPlease check your Adabas D installation, especially the variables \"DBROOT\" and \"DBWORK\"."
 msgstr ""
 
 #: source/ext/adabas/AdabasNewDb.src#STR_STAT_WARNING.String.Text
@@ -883,6 +883,14 @@ msgstr ""
 msgid  "Document"
 msgstr ""
 
+#: source/ui/app/app.src#RID_STR_FORM.String.Text
+msgid  "Form"
+msgstr ""
+
+#: source/ui/app/app.src#RID_STR_REPORT.String.Text
+msgid  "Report"
+msgstr ""
+
 #: source/ui/app/app.src#STR_FRM_LABEL.String.Text
 msgid  "F~orm name"
 msgstr ""
@@ -913,14 +921,6 @@ msgstr ""
 
 #: source/ui/app/app.src#RID_STR_UNSUPPORTED_OBJECT_TYPE.String.Text
 msgid  "Unsupported object type found ($type$)."
-msgstr ""
-
-#: source/ui/app/app.src#RID_STR_FORM.String.Text
-msgid  "Form"
-msgstr ""
-
-#: source/ui/app/app.src#RID_STR_REPORT.String.Text
-msgid  "Report"
 msgstr ""
 
 #: source/ui/browser/sbabrw.src#QUERY_BRW_SAVEMODIFIED.QueryBox.Message
@@ -955,6 +955,18 @@ msgstr ""
 msgid  "Tables"
 msgstr ""
 
+#: source/ui/browser/sbabrw.src#ID_TREE_EDIT_DATABASE.#define.Text
+msgid  "Edit ~Database File..."
+msgstr ""
+
+#: source/ui/browser/sbabrw.src#ID_TREE_ADMINISTRATE.#define.Text
+msgid  "Registered databases ..."
+msgstr ""
+
+#: source/ui/browser/sbabrw.src#ID_TREE_CLOSE_CONN.#define.Text
+msgid  "Disco~nnect"
+msgstr ""
+
 #: source/ui/browser/sbabrw.src#STR_TITLE_CONFIRM_DELETION.String.Text
 msgid  "Confirm Deletion"
 msgstr ""
@@ -980,7 +992,7 @@ msgid  "While retrieving the tables, warnings were reported by the database conn
 msgstr ""
 
 #: source/ui/browser/sbabrw.src#STR_CONNECTING_DATASOURCE.String.Text
-msgid  "Connecting to "$name$" ..."
+msgid  "Connecting to \"$name$\" ..."
 msgstr ""
 
 #: source/ui/browser/sbabrw.src#STR_LOADING_QUERY.String.Text
@@ -996,23 +1008,11 @@ msgid  "No table format could be found."
 msgstr ""
 
 #: source/ui/browser/sbabrw.src#STR_COULDNOTCONNECT_DATASOURCE.String.Text
-msgid  "The connection to the data source "$name$" could not be established."
+msgid  "The connection to the data source \"$name$\" could not be established."
 msgstr ""
 
 #: source/ui/browser/sbabrw.src#RID_MENU_REFRESH_DATA.ID_BROWSER_REFRESH_REBUILD.MenuItem.Text
 msgid  "Rebuild"
-msgstr ""
-
-#: source/ui/browser/sbabrw.src#ID_TREE_EDIT_DATABASE.#define.Text
-msgid  "Edit ~Database File..."
-msgstr ""
-
-#: source/ui/browser/sbabrw.src#ID_TREE_ADMINISTRATE.#define.Text
-msgid  "Registered databases ..."
-msgstr ""
-
-#: source/ui/browser/sbabrw.src#ID_TREE_CLOSE_CONN.#define.Text
-msgid  "Disco~nnect"
 msgstr ""
 
 #: source/ui/browser/sbagrid.src#RID_SBA_GRID_COLCTXMENU.ID_BROWSER_COLATTRSET.MenuItem.Text
@@ -1052,7 +1052,7 @@ msgid  "View #"
 msgstr ""
 
 #: source/ui/browser/sbagrid.src#STR_NAME_ALREADY_EXISTS.String.Text
-msgid  "The name "#" already exists."
+msgid  "The name \"#\" already exists."
 msgstr ""
 
 #: source/ui/browser/sbagrid.src#STR_NO_COLUMNNAME_MATCHING.String.Text
@@ -1236,11 +1236,11 @@ msgid  "Do you want to save the changes made to the current index?"
 msgstr ""
 
 #: source/ui/dlg/indexdialog.src#STR_INDEX_NAME_ALREADY_USED.String.Text
-msgid  "There is already another index named "$name$"."
+msgid  "There is already another index named \"$name$\"."
 msgstr ""
 
 #: source/ui/dlg/indexdialog.src#STR_INDEXDESIGN_DOUBLE_COLUMN_NAME.String.Text
-msgid  "In an index definition, no table column may occur more than once. However, you have entered column "$name$" twice."
+msgid  "In an index definition, no table column may occur more than once. However, you have entered column \"$name$\" twice."
 msgstr ""
 
 #: source/ui/dlg/paramdialog.src#DLG_PARAMETERS.FL_PARAMS.FixedLine.Text
@@ -1260,7 +1260,7 @@ msgid  "Parameter Input"
 msgstr ""
 
 #: source/ui/dlg/paramdialog.src#DLG_PARAMETERS.STR_COULD_NOT_CONVERT_PARAM.String.Text
-msgid  "The entry could not be converted to a valid value for the "$name$"column"
+msgid  "The entry could not be converted to a valid value for the \"$name$\"column"
 msgstr ""
 
 #: source/ui/dlg/sqlmessage.src#DLG_SQLEXCEPTIONCHAIN.ModalDialog.Text
@@ -1312,7 +1312,15 @@ msgid  "Standard Filter"
 msgstr ""
 
 #: source/ui/dlg/queryfilter.src#DLG_FILTERCRIT.LB_WHERECOND2.Default.StringList.item
+msgid  "AND"
+msgstr ""
+
+#: source/ui/dlg/queryfilter.src#DLG_FILTERCRIT.LB_WHERECOND2.Default.StringList.item
 msgid  "OR"
+msgstr ""
+
+#: source/ui/dlg/queryfilter.src#DLG_FILTERCRIT.LB_WHERECOND3.Default.StringList.item
+msgid  "AND"
 msgstr ""
 
 #: source/ui/dlg/queryfilter.src#DLG_FILTERCRIT.LB_WHERECOND3.Default.StringList.item
@@ -1345,14 +1353,6 @@ msgstr ""
 
 #: source/ui/dlg/queryfilter.src#DLG_FILTERCRIT.STR_COMPARE_OPERATORS.String.Text
 msgid  "=;<>;<;<=;>;>=;like;not like;null;not null"
-msgstr ""
-
-#: source/ui/dlg/queryfilter.src#DLG_FILTERCRIT.LB_WHERECOND2.Default.StringList.item
-msgid  "AND"
-msgstr ""
-
-#: source/ui/dlg/queryfilter.src#DLG_FILTERCRIT.LB_WHERECOND3.Default.StringList.item
-msgid  "AND"
 msgstr ""
 
 #: source/ui/dlg/RelationDlg.src#DLG_REL_PROPERTIES.ModalDialog.Text
@@ -1412,11 +1412,23 @@ msgid  "Sort Order"
 msgstr ""
 
 #: source/ui/dlg/queryorder.src#DLG_ORDERCRIT.LB_ORDERVALUE1.Default.StringList.item
+msgid  "ascending"
+msgstr ""
+
+#: source/ui/dlg/queryorder.src#DLG_ORDERCRIT.LB_ORDERVALUE1.Default.StringList.item
 msgid  "descending"
 msgstr ""
 
 #: source/ui/dlg/queryorder.src#DLG_ORDERCRIT.LB_ORDERVALUE2.Default.StringList.item
+msgid  "ascending"
+msgstr ""
+
+#: source/ui/dlg/queryorder.src#DLG_ORDERCRIT.LB_ORDERVALUE2.Default.StringList.item
 msgid  "descending"
+msgstr ""
+
+#: source/ui/dlg/queryorder.src#DLG_ORDERCRIT.LB_ORDERVALUE3.Default.StringList.item
+msgid  "ascending"
 msgstr ""
 
 #: source/ui/dlg/queryorder.src#DLG_ORDERCRIT.LB_ORDERVALUE3.Default.StringList.item
@@ -1449,18 +1461,6 @@ msgstr ""
 
 #: source/ui/dlg/queryorder.src#DLG_ORDERCRIT.STR_NOENTRY.String.Text
 msgid  "<none>"
-msgstr ""
-
-#: source/ui/dlg/queryorder.src#DLG_ORDERCRIT.LB_ORDERVALUE1.Default.StringList.item
-msgid  "ascending"
-msgstr ""
-
-#: source/ui/dlg/queryorder.src#DLG_ORDERCRIT.LB_ORDERVALUE2.Default.StringList.item
-msgid  "ascending"
-msgstr ""
-
-#: source/ui/dlg/queryorder.src#DLG_ORDERCRIT.LB_ORDERVALUE3.Default.StringList.item
-msgid  "ascending"
 msgstr ""
 
 #: source/ui/dlg/advancedsettings.src#AUTO_DATAHANDLING(AUTO_Y).FL_DATAHANDLING.FixedLine.Text
@@ -1532,6 +1532,18 @@ msgid  "Respect the result set type from the database driver"
 msgstr ""
 
 #: source/ui/dlg/advancedsettings.src#WORKAROUND.Default.StringList.item
+msgid  "Default"
+msgstr ""
+
+#: source/ui/dlg/advancedsettings.src#WORKAROUND.Default.StringList.item
+msgid  "SQL"
+msgstr ""
+
+#: source/ui/dlg/advancedsettings.src#WORKAROUND.Default.StringList.item
+msgid  "Mixed"
+msgstr ""
+
+#: source/ui/dlg/advancedsettings.src#WORKAROUND.Default.StringList.item
 msgid  "MS Access"
 msgstr ""
 
@@ -1571,18 +1583,6 @@ msgstr ""
 msgid  "Advanced Settings"
 msgstr ""
 
-#: source/ui/dlg/advancedsettings.src#WORKAROUND.Default.StringList.item
-msgid  "Default"
-msgstr ""
-
-#: source/ui/dlg/advancedsettings.src#WORKAROUND.Default.StringList.item
-msgid  "SQL"
-msgstr ""
-
-#: source/ui/dlg/advancedsettings.src#WORKAROUND.Default.StringList.item
-msgid  "Mixed"
-msgstr ""
-
 #: source/ui/dlg/CollectionView.src#DLG_COLLECTION_VIEW.ModalDialog.Text
 msgid  "Save"
 msgstr ""
@@ -1616,7 +1616,7 @@ msgid  "The file already exists. Overwrite?"
 msgstr ""
 
 #: source/ui/dlg/dbadmin2.src#STR_ENTER_CONNECTION_PASSWORD.String.Text
-msgid  "A password is needed to connect to the data source "$name$"."
+msgid  "A password is needed to connect to the data source \"$name$\"."
 msgstr ""
 
 #: source/ui/dlg/dbadmin2.src#STR_ASK_FOR_DIRECTORY_CREATION.String.Text
@@ -2288,7 +2288,7 @@ msgid  "The database does not support user administration."
 msgstr ""
 
 #: source/ui/dlg/UserAdmin.src#DLG_PASSWORD.FL_USER.FixedLine.Text
-msgid  "User "$name$:  $""
+msgid  "User \"$name$:  $\""
 msgstr ""
 
 #: source/ui/dlg/UserAdmin.src#DLG_PASSWORD.FT_OLDPASSWORD.FixedText.Text
@@ -2723,6 +2723,50 @@ msgstr ""
 msgid  "Socket"
 msgstr ""
 
+#: source/ui/inc/toolbox_tmpl.hrc#ID_BROWSER_REFRESH.#define.Text
+msgid  "Refresh"
+msgstr ""
+
+#: source/ui/inc/toolbox_tmpl.hrc#ID_NEW_VIEW_DESIGN.#define.Text
+msgid  "New ~View Design"
+msgstr ""
+
+#: source/ui/inc/toolbox_tmpl.hrc#ID_NEW_TABLE_DESIGN.#define.Text
+msgid  "New ~Table Design"
+msgstr ""
+
+#: source/ui/inc/toolbox_tmpl.hrc#ID_NEW_QUERY_WIZARD.#define.Text
+msgid  "Query AutoPilot..."
+msgstr ""
+
+#: source/ui/inc/toolbox_tmpl.hrc#ID_NEW_QUERY_DESIGN.#define.Text
+msgid  "New ~Query (Design View)"
+msgstr ""
+
+#: source/ui/inc/toolbox_tmpl.hrc#ID_EDIT_QUERY_DESIGN.#define.Text
+msgid  "~Edit Query"
+msgstr ""
+
+#: source/ui/inc/toolbox_tmpl.hrc#ID_NEW_QUERY_SQL.#define.Text
+msgid  "New Query (~SQL View)"
+msgstr ""
+
+#: source/ui/inc/toolbox_tmpl.hrc#ID_QUERY_EDIT_JOINCONNECTION.#define.Text
+msgid  "Edit..."
+msgstr ""
+
+#: source/ui/inc/toolbox_tmpl.hrc#ID_BROWSER_COLWIDTH.#define.Text
+msgid  "Column ~Width..."
+msgstr ""
+
+#: source/ui/inc/toolbox_tmpl.hrc#ID_DOCUMENT_CREATE_REPWIZ.#define.Text
+msgid  "Report Wizard..."
+msgstr ""
+
+#: source/ui/inc/toolbox_tmpl.hrc#SID_DB_FORM_NEW_PILOT.#define.Text
+msgid  "Form AutoPilot..."
+msgstr ""
+
 #: source/ui/misc/dbumiscres.src#RSC_CHARSETS.1.String.Text
 msgid  "System"
 msgstr ""
@@ -2736,7 +2780,7 @@ msgid  "An unexpected error occurred. The operation could not be performed."
 msgstr ""
 
 #: source/ui/misc/dbumiscres.src#STR_COULDNOTOPEN_LINKEDDOC.String.Text
-msgid  "The document "$file$" could not be opened."
+msgid  "The document \"$file$\" could not be opened."
 msgstr ""
 
 #: source/ui/misc/dbumiscres.src#STR_MISSING_TABLES_XDROP.String.Text
@@ -2760,11 +2804,11 @@ msgid  "No corresponding column type could be found for column '#1'."
 msgstr ""
 
 #: source/ui/misc/dbumiscres.src#STR_FILE_DOES_NOT_EXIST.String.Text
-msgid  "The file "$file$" does not exist."
+msgid  "The file \"$file$\" does not exist."
 msgstr ""
 
 #: source/ui/misc/dbumiscres.src#STR_WARNINGS_DURING_CONNECT.String.Text
-msgid  "Warnings were encountered while connecting to the data source. Press "$buttontext$" to view them."
+msgid  "Warnings were encountered while connecting to the data source. Press \"$buttontext$\" to view them."
 msgstr ""
 
 #: source/ui/misc/dbumiscres.src#STR_NAMED_OBJECT_ALREADY_EXISTS.String.Text
@@ -2772,7 +2816,7 @@ msgid  "The name '$#$' already exists.\nPlease enter another name."
 msgstr ""
 
 #: source/ui/misc/dbumiscres.src#RID_STR_EXTENSION_NOT_PRESENT.String.Text
-msgid  "The report, "$file$", requires the extension Oracle Report Builder."
+msgid  "The report, \"$file$\", requires the extension Oracle Report Builder."
 msgstr ""
 
 #: source/ui/misc/WizardPages.src#STR_WIZ_COLUMN_SELECT_TITEL.String.Text
@@ -3172,11 +3216,11 @@ msgid  "$object$ has been changed.\nDo you want to save the changes?"
 msgstr ""
 
 #: source/ui/querydesign/query.src#STR_ERROR_PARSING_STATEMENT.String.Text
-msgid  "$object$ is based on an SQL command which could not be parsed.(except "SQL command", which doesn't make sense here) will be inserted."
+msgid  "$object$ is based on an SQL command which could not be parsed.(except \"SQL command\", which doesn't make sense here) will be inserted."
 msgstr ""
 
 #: source/ui/querydesign/query.src#STR_INFO_OPENING_IN_SQL_VIEW.String.Text
-msgid  "$object$ will be opened in SQL view.(except "SQL command", which doesn't make sense here) will be inserted."
+msgid  "$object$ will be opened in SQL view.(except \"SQL command\", which doesn't make sense here) will be inserted."
 msgstr ""
 
 #: source/ui/querydesign/query.src#RSC_QUERY_OBJECT_TYPE.1.String.Text
@@ -3420,11 +3464,11 @@ msgid  "~..."
 msgstr ""
 
 #: source/ui/tabledesign/table.src#STR_TABLEDESIGN_DUPLICATE_NAME.String.Text
-msgid  "The table cannot be saved because column name "$column$" was assigned twice."
+msgid  "The table cannot be saved because column name \"$column$\" was assigned twice."
 msgstr ""
 
 #: source/ui/tabledesign/table.src#STR_TBL_COLUMN_IS_KEYCOLUMN.String.Text
-msgid  "The column "$column$" belongs to the primary key. If the column is deleted, the primary key will also be deleted. Do you really want to continue?"
+msgid  "The column \"$column$\" belongs to the primary key. If the column is deleted, the primary key will also be deleted. Do you really want to continue?"
 msgstr ""
 
 #: source/ui/tabledesign/table.src#STR_TBL_COLUMN_IS_KEYCOLUMN_TITLE.String.Text
@@ -3437,6 +3481,10 @@ msgstr ""
 
 #: source/ui/tabledesign/table.src#STR_QRY_CONTINUE.String.Text
 msgid  "Continue anyway?"
+msgstr ""
+
+#: source/ui/tabledesign/table.src#STR_STAT_WARNING.String.Text
+msgid  "Warning!"
 msgstr ""
 
 #: source/ui/tabledesign/table.src#TABLE_DESIGN_SAVEMODIFIED.QueryBox.Message
@@ -3472,7 +3520,7 @@ msgid  " - %PRODUCTNAME Base: Table Design"
 msgstr ""
 
 #: source/ui/tabledesign/table.src#STR_TABLEDESIGN_ALTER_ERROR.String.Text
-msgid  "The column "$column$" could not be changed. Should the column instead be deleted and the new format appended?"
+msgid  "The column \"$column$\" could not be changed. Should the column instead be deleted and the new format appended?"
 msgstr ""
 
 #: source/ui/tabledesign/table.src#STR_TABLEDESIGN_SAVE_ERROR.String.Text
@@ -3513,10 +3561,6 @@ msgstr ""
 
 #: source/ui/tabledesign/table.src#STR_CHANGE_COLUMN_ATTRIBUTE.String.Text
 msgid  "change field attribute"
-msgstr ""
-
-#: source/ui/tabledesign/table.src#STR_STAT_WARNING.String.Text
-msgid  "Warning!"
 msgstr ""
 
 #: source/ui/uno/dbinteraction.src#STR_REMEMBERPASSWORD_SESSION.String.Text
@@ -3569,48 +3613,4 @@ msgstr ""
 
 #: source/ui/uno/copytablewizard.src#STR_CTW_ERROR_INVALID_INTERACTIONHANDLER.String.Text
 msgid  "The given interaction handler is invalid."
-msgstr ""
-
-#: source/ui/inc/toolbox_tmpl.hrc#ID_BROWSER_REFRESH.#define.Text
-msgid  "Refresh"
-msgstr ""
-
-#: source/ui/inc/toolbox_tmpl.hrc#ID_NEW_VIEW_DESIGN.#define.Text
-msgid  "New ~View Design"
-msgstr ""
-
-#: source/ui/inc/toolbox_tmpl.hrc#ID_NEW_TABLE_DESIGN.#define.Text
-msgid  "New ~Table Design"
-msgstr ""
-
-#: source/ui/inc/toolbox_tmpl.hrc#ID_NEW_QUERY_WIZARD.#define.Text
-msgid  "Query AutoPilot..."
-msgstr ""
-
-#: source/ui/inc/toolbox_tmpl.hrc#ID_NEW_QUERY_DESIGN.#define.Text
-msgid  "New ~Query (Design View)"
-msgstr ""
-
-#: source/ui/inc/toolbox_tmpl.hrc#ID_EDIT_QUERY_DESIGN.#define.Text
-msgid  "~Edit Query"
-msgstr ""
-
-#: source/ui/inc/toolbox_tmpl.hrc#ID_NEW_QUERY_SQL.#define.Text
-msgid  "New Query (~SQL View)"
-msgstr ""
-
-#: source/ui/inc/toolbox_tmpl.hrc#ID_QUERY_EDIT_JOINCONNECTION.#define.Text
-msgid  "Edit..."
-msgstr ""
-
-#: source/ui/inc/toolbox_tmpl.hrc#ID_BROWSER_COLWIDTH.#define.Text
-msgid  "Column ~Width..."
-msgstr ""
-
-#: source/ui/inc/toolbox_tmpl.hrc#ID_DOCUMENT_CREATE_REPWIZ.#define.Text
-msgid  "Report Wizard..."
-msgstr ""
-
-#: source/ui/inc/toolbox_tmpl.hrc#SID_DB_FORM_NEW_PILOT.#define.Text
-msgid  "Form AutoPilot..."
 msgstr ""

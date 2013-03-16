@@ -57,7 +57,7 @@ msgstr "Заглавие на източника на данни"
 
 #: source/abpilot/abspilot.src#RID_PAGE_SELECTABTYPE.FT_TYPE_HINTS.FixedText.Text
 msgid  "%PRODUCTNAME lets you access address data already present in your system. To do this, a %PRODUCTNAME data source will be created in which your address data is available in tabular form.\n\nThis wizard helps you create the data source."
-msgstr ""
+msgstr "%PRODUCTNAME Ви позволява достъп до адресните данни, които вече присъстват в системата. За тази цел ще бъде създаден източник на данни на %PRODUCTNAME, в който Вашите данни за адреси ще бъдат достъпни в таблична форма.\n\nТози помощник ще Ви помогне при създаването на източника на данни."
 
 #: source/abpilot/abspilot.src#RID_PAGE_SELECTABTYPE.FL_TYPE.FixedLine.Text
 msgid  "Please select the type of your external address book:"
@@ -109,7 +109,7 @@ msgstr "Друг външен източник на данни"
 
 #: source/abpilot/abspilot.src#RID_PAGE_ADMININVOKATION.FT_ADMINEXPLANATION.FixedText.Text
 msgid  "To set up the new data source, additional information is required.\n\nClick the following button to open another dialog in which you then enter the necessary information."
-msgstr ""
+msgstr "За създаването на нов източник на данни е нужна допълнителна информация.\n\nНатиснете следващия бутон, за да отворите диалогов прозорец, в който можете да я въведете."
 
 #: source/abpilot/abspilot.src#RID_PAGE_ADMININVOKATION.PB_INVOKE_ADMIN_DIALOG.PushButton.Text
 msgid  "Settings"
@@ -117,15 +117,15 @@ msgstr "Настройки"
 
 #: source/abpilot/abspilot.src#RID_PAGE_ADMININVOKATION.FT_ERROR.FixedText.Text
 msgid  "The connection to the data source could not be established.\nBefore you proceed, please check the settings made, or (on the previous page) choose another address data source type."
-msgstr ""
+msgstr "Не може да бъде установена връзка с източника на данни.\nПреди да продължите, моля, проверете направените настройки или (на предишната страница) изберете друг тип източник на данни за адреси."
 
 #: source/abpilot/abspilot.src#RID_PAGE_TABLESELECTION_AB.FL_TOOMUCHTABLES.FixedText.Text
 msgid  "The external data source you have chosen contains more than one address book.\nPlease select the one you mainly want to work with:"
-msgstr ""
+msgstr "Външният източник, който сте избрали, съдържа повече от един адресен бележник.\nМоля, изберете този, с който обикновено предпочитате да работите:"
 
 #: source/abpilot/abspilot.src#RID_PAGE_FIELDMAPPING.FT_FIELDASSIGMENTEXPL.FixedText.Text
-msgid  "To incorporate the address data in your templates, %PRODUCTNAME has to know which fields contain which data.\n\nFor instance, you could have stored the e-mail addresses in a field named "email", or "E-mail" or "EM" - or something completely different.\n\nClick the button below to open another dialog where you can enter the settings for your data source."
-msgstr ""
+msgid  "To incorporate the address data in your templates, %PRODUCTNAME has to know which fields contain which data.\n\nFor instance, you could have stored the e-mail addresses in a field named \"email\", or \"E-mail\" or \"EM\" - or something completely different.\n\nClick the button below to open another dialog where you can enter the settings for your data source."
+msgstr "За да включи данните за адреси във Вашите шаблони, %PRODUCTNAME трябва да знае кои данни в кои полета се съдържат.\n\nНапример, адресът за е-поща може да се съхранява в поле с име \"email\", \"E-mail\" или \"EM\", или съвсем различно.\n\nНатиснете долния бутон, за да отворите диалогов прозорец, в който можете да настроите източника на данни."
 
 #: source/abpilot/abspilot.src#RID_PAGE_FIELDMAPPING.PB_INVOKE_FIELDS_DIALOG.PushButton.Text
 msgid  "Field Assignment"
@@ -133,7 +133,7 @@ msgstr "Съответствия на полета"
 
 #: source/abpilot/abspilot.src#RID_PAGE_FINAL.FT_FINISH_EXPL.FixedText.Text
 msgid  "That was all the information necessary to integrate your address data into %PRODUCTNAME.\n\nNow, just enter the name under which you want to register the data source in %PRODUCTNAME."
-msgstr ""
+msgstr "Това беше цялата информация, необходима за интегриране на данните за адреси в %PRODUCTNAME.\n\nСега просто въведете името, под което искате да регистрирате източника на данни в %PRODUCTNAME."
 
 #: source/abpilot/abspilot.src#RID_PAGE_FINAL.FT_LOCATION.FixedText.Text
 msgid  "Location"
@@ -153,7 +153,7 @@ msgstr "Име на адресния бележник"
 
 #: source/abpilot/abspilot.src#RID_PAGE_FINAL.FT_DUPLICATENAME.FixedText.Text
 msgid  "Another data source already has this name. As data sources have to have globally unique names, you need to choose another one."
-msgstr ""
+msgstr "Съществува друг източник на данни с това име. Имената на източниците на данни трябва да са уникални, затова трябва да изберете друго име."
 
 #: source/abpilot/abspilot.src#RID_ERR_NEEDTYPESELECTION.ErrorBox.Message
 msgid  "Please select a type of address book."
@@ -161,7 +161,7 @@ msgstr "Моля, изберете типа на адресния бележни
 
 #: source/abpilot/abspilot.src#RID_QRY_NOTABLES.QueryBox.Message
 msgid  "The data source does not contain any tables.\nDo you want to set it up as an address data source, anyway?"
-msgstr ""
+msgstr "Източникът на данни не съдържа таблици.\nЖелаете ли все пак да го зададете като източник на данни за адреси?"
 
 #: source/abpilot/abspilot.src#RID_STR_DEFAULT_NAME.String.Text
 msgid  "Addresses"
@@ -184,8 +184,8 @@ msgid  "Address Data - Field Assignment"
 msgstr "Данни за адреси - съответствия на полета"
 
 #: source/abpilot/abspilot.src#RID_STR_NOFIELDSASSIGNED.String.Text
-msgid  "There are no fields assigned at this time.\nYou can either assign fields now or do so later by first choosing:\n"File - Template - Address Book Source...""
-msgstr ""
+msgid  "There are no fields assigned at this time.\nYou can either assign fields now or do so later by first choosing:\n\"File - Template - Address Book Source...\""
+msgstr "В момента няма присвоени полета.\nМожете да присвоите полета сега или по-късно, като изберете:\n\"Файл - Шаблон - Източник за адресен бележник...\""
 
 #: source/bibliography/toolbar.src#RID_BIB_TOOLBAR.TBC_FT_SOURCE.ToolBoxItem.Text
 msgid  "Table"
@@ -493,7 +493,7 @@ msgstr "Елемент за управление"
 
 #: source/dbpilots/listcombopages.src#RID_PAGE_LCW_CONTENTSELECTION_TABLE.FT_SELECTTABLE_LABEL.FixedText.Text
 msgid  "On the right side, you see all the tables from the data source of the form.\n\n\nChoose the table from which the data should be used as basis for the list content:"
-msgstr ""
+msgstr "В дясната страна се виждат всички таблици от източника на данни на формуляра.\n\n\nИзберете данните от коя таблица трябва да се използват за основа на съдържанието."
 
 #: source/dbpilots/listcombopages.src#RID_PAGE_LCW_CONTENTSELECTION_FIELD.TabPage.Text
 msgid  "Field Selection"
@@ -509,11 +509,11 @@ msgstr "Екранно поле"
 
 #: source/dbpilots/listcombopages.src#RID_PAGE_LCW_CONTENTSELECTION_FIELD.STR_FIELDINFO_COMBOBOX.String.Text
 msgid  "The contents of the field selected will be shown in the combo box list."
-msgstr ""
+msgstr "Съдържанието на избраното поле ще бъде показано в списъка на комбинираното поле."
 
 #: source/dbpilots/listcombopages.src#RID_PAGE_LCW_CONTENTSELECTION_FIELD.STR_FIELDINFO_LISTBOX.String.Text
 msgid  "The contents of the selected field will be shown in the list box if the linked fields are identical."
-msgstr ""
+msgstr "Съдържанието на избраното поле ще бъде показано в списъчното поле, ако свързаните полета са еднакви."
 
 #: source/dbpilots/listcombopages.src#RID_PAGE_LCW_FIELDLINK.TabPage.Text
 msgid  "Field Link"
@@ -521,7 +521,7 @@ msgstr "Свързани полета"
 
 #: source/dbpilots/listcombopages.src#RID_PAGE_LCW_FIELDLINK.FT_FIELDLINK_DESC.FixedText.Text
 msgid  "This is where you select fields with matching contents so that the value from the display field will be shown."
-msgstr ""
+msgstr "Тук трябва да изберете полета със съответстващи съдържания, така че да бъде показана стойността от полето за изобразяване."
 
 #: source/dbpilots/listcombopages.src#RID_PAGE_LCW_FIELDLINK.FT_VALUELISTFIELD.FixedText.Text
 msgid  "Field from the ~Value Table"
@@ -533,7 +533,7 @@ msgstr "Поле от таблицата със с~писъка"
 
 #: source/dbpilots/listcombopages.src#RID_STR_COMBOWIZ_DBFIELD.String.Text
 msgid  "You can either save the value of the combo box in a database field or use it for display purposes."
-msgstr ""
+msgstr "Можете да запазите стойността на комбинираното поле в поле от БД или да го използвате за изобразяване."
 
 #: source/dbpilots/gridpages.src#RID_PAGE_GW_FIELDSELECTION.TabPage.Text
 msgid  "Field Selection"
@@ -589,7 +589,7 @@ msgstr "Данни"
 
 #: source/dbpilots/commonpagesdbp.src#RID_PAGE_TABLESELECTION.FT_EXPLANATION.FixedText.Text
 msgid  "Currently, the form the control belongs to is not (or not completely) bound to a data source.\n\nPlease choose a data source and a table.\n\n\nPlease note that the settings made on this page will take effect immediately upon leaving the page."
-msgstr ""
+msgstr "Формулярът, съдържащ елемента за управление, не е (или не е изцяло) привързан към източника на данни.\n\nМоля, изберете източник на данни и таблица.\n\n\nМоля, имайте предвид, че настройките, направени на тази страница, ще влязат в сила веднага след напускането й."
 
 #: source/dbpilots/commonpagesdbp.src#RID_PAGE_TABLESELECTION.FT_DATASOURCE.FixedText.Text
 msgid  "~Data source:"
@@ -701,11 +701,11 @@ msgstr "Какво да е ~заглавието на групата от пре
 
 #: source/dbpilots/groupboxpages.src#RID_PAGE_OPTIONS_FINAL.FT_THATSALL.FixedText.Text
 msgid  "These were all details needed to create the option group."
-msgstr ""
+msgstr "Това са всички подробности, необходими за създаване на групата превключватели."
 
 #: source/dbpilots/groupboxpages.src#RID_STR_GROUPWIZ_DBFIELD.String.Text
 msgid  "You can either save the value of the option group in a database field or use it for a later action."
-msgstr ""
+msgstr "Можете да запишете стойността на групата настройки в поле от БД или да я използвате по-късно."
 
 #: source/preload/preload.src#RID_DLG_OEMWIZARD.PB_PREV.PushButton.Text
 msgid  "<< Back"
@@ -737,7 +737,7 @@ msgstr "Добре дошли"
 
 #: source/preload/preload.src#RID_TP_WELCOME.FT_INFO.FixedText.Text
 msgid  "Welcome to %PRODUCTNAME %PRODUCTVERSION OEM\n\nTo start the %PRODUCTNAME %PRODUCTVERSION OEM, please enter your personal data in the dialog following the license text. Important information is contained in the readme files which are located in the %PRODUCTNAME product directory. Please read these files carefully. You can also find detailed information at the Oracle website \n\nhttp://www.oracle.com/us/products/applications/open-office."
-msgstr ""
+msgstr "Добре дошли в %PRODUCTNAME %PRODUCTVERSION OEM\n\nМоля, въведете вашите лични данни в диалоговия прозорец след текста на лицензията, за да стартирате %PRODUCTNAME %PRODUCTVERSION OEM. Файловете Readme, които се намират в директорията на продукта %PRODUCTNAME, съдържат важна информация. Моля, прочетете ги внимателно. Можете също така да намерите подробна информация на уебсайта на Oracle:\n\nhttp://www.oracle.com/us/products/applications/open-office."
 
 #: source/preload/preload.src#RID_TP_LICENSE.TabPage.Text
 msgid  "License Agreement"
@@ -753,7 +753,7 @@ msgstr "1."
 
 #: source/preload/preload.src#RID_TP_LICENSE.FT_INFO2.FixedText.Text
 msgid  "View the complete License Agreement. Please use the scroll bar or the '%PAGEDOWN' button in this dialog to view the entire license text."
-msgstr ""
+msgstr "Прегледайте изцяло лицензионното споразумение. Моля, използвайте плъзгача или бутона \"%PAGEDOWN\" в този диалогов прозорец, за да видите целия текст."
 
 #: source/preload/preload.src#RID_TP_LICENSE.PB_PAGEDOWN.PushButton.Text
 msgid  "Page Down"
@@ -801,7 +801,7 @@ msgstr "Автоматично сортиране"
 
 #: source/propctrlr/selectlabeldialog.src#RID_DLG_SELECTLABELCONTROL.1.FixedText.Text
 msgid  "These are control fields that can be used as label fields for the $control_class$ $control_name$."
-msgstr ""
+msgstr "Това са контролните полета, които могат да се използват като полета за надписване на $control_class$ $control_name$."
 
 #: source/propctrlr/selectlabeldialog.src#RID_DLG_SELECTLABELCONTROL.1.CheckBox.Text
 msgid  "~No assignment"
@@ -817,7 +817,7 @@ msgstr "Формуляри"
 
 #: source/propctrlr/pcrmiscres.src#RID_STR_CONFIRM_DELETE_DATA_TYPE.String.Text
 msgid  "Do you want to delete the data type '#type#' from the model?\nPlease note that this will affect all controls which are bound to this data type."
-msgstr ""
+msgstr "Желаете ли да изтриете типа данни \"#type#\" от модела?\nМоля, обърнете внимание, че това ще повлияе върху всички елементи за управление, обвързани с този тип данни."
 
 #: source/propctrlr/pcrmiscres.src#RID_STR_PROPTITLE_PUSHBUTTON.String.Text
 msgid  "Button"
@@ -905,7 +905,7 @@ msgstr "Свързване на полета"
 
 #: source/propctrlr/formlinkdialog.src#RID_DLG_FORMLINKS.FT_EXPLANATION.FixedText.Text
 msgid  "Sub forms can be used to display detailed data about the current record of the master form. To do this, you can specify which columns in the sub form match which columns in the master form."
-msgstr ""
+msgstr "Чрез подформуляри могат да се показват подробни данни, свързани с текущия запис в главния формуляр. За тази цел можете да зададете съответствие между колоните в подформуляра и тези в главния формуляр."
 
 #: source/propctrlr/formlinkdialog.src#RID_DLG_FORMLINKS.PB_SUGGEST.PushButton.Text
 msgid  "Suggest"
@@ -1397,7 +1397,7 @@ msgstr "Таблица"
 
 #: source/propctrlr/formres.src#RID_RSC_ENUM_LISTSOURCE_TYPE.3.String.Text
 msgid  "Query"
-msgstr "Запис"
+msgstr "Заявка"
 
 #: source/propctrlr/formres.src#RID_RSC_ENUM_LISTSOURCE_TYPE.4.String.Text
 msgid  "Sql"
@@ -1425,7 +1425,7 @@ msgstr "Отдясно"
 
 #: source/propctrlr/formres.src#RID_RSC_ENUM_BUTTONTYPE.1.String.Text
 msgid  "None"
-msgstr "Без"
+msgstr "Нищо"
 
 #: source/propctrlr/formres.src#RID_RSC_ENUM_BUTTONTYPE.2.String.Text
 msgid  "Submit form"
@@ -1597,7 +1597,7 @@ msgstr "По-външен формуляр"
 
 #: source/propctrlr/formres.src#RID_RSC_ENUM_SELECTION_TYPE.1.String.Text
 msgid  "None"
-msgstr "Без"
+msgstr "Нищо"
 
 #: source/propctrlr/formres.src#RID_RSC_ENUM_SELECTION_TYPE.2.String.Text
 msgid  "Single"
@@ -1864,8 +1864,8 @@ msgid  "Help"
 msgstr "Помощ"
 
 #: source/propctrlr/formres.src#RID_STR_UNABLETOCONNECT.String.Text
-msgid  "The connection to the data source "$name$" could not be established."
-msgstr ""
+msgid  "The connection to the data source \"$name$\" could not be established."
+msgstr "Не може да бъде установена връзка с източника на данни \"$name$\"."
 
 #: source/propctrlr/formres.src#RID_STR_TEXT.String.Text
 msgid  "Text"
@@ -2297,11 +2297,11 @@ msgstr "Въведете име за новия тип данни:"
 
 #: source/scanner/sanedlg.src#RID_SANE_DIALOG.RID_DEVICEINFO_BTN.PushButton.Text
 msgid  "About\n Dev~ice"
-msgstr ""
+msgstr "Относно\n устр~ойство"
 
 #: source/scanner/sanedlg.src#RID_SANE_DIALOG.RID_PREVIEW_BTN.PushButton.Text
 msgid  "Create\nPreview"
-msgstr ""
+msgstr "Създаване\nна мостра"
 
 #: source/scanner/sanedlg.src#RID_SANE_DIALOG.RID_PREVIEW_BOX.FixedLine.Text
 msgid  "Preview"
@@ -2357,7 +2357,7 @@ msgstr "Скенер"
 
 #: source/scanner/sanedlg.src#RID_SANE_DEVICEINFO_TXT.String.Text
 msgid  "Device: %s\nVendor: %s\nModel: %s\nType: %s"
-msgstr ""
+msgstr "Устройство: %s\nПроизводител: %s\nМодел: %s\nТип: %s"
 
 #: source/scanner/sanedlg.src#RID_SANE_SCANERROR_TXT.String.Text
 msgid  "An error occurred while scanning."
@@ -2365,7 +2365,7 @@ msgstr "Възникнала е грешка при сканиране."
 
 #: source/scanner/sanedlg.src#RID_SANE_NORESOLUTIONOPTION_TXT.String.Text
 msgid  "The device does not offer a preview option. Therefore, a normal scan will be used as a preview instead. This may take a considerable amount of time."
-msgstr ""
+msgstr "Устройството не предлага мостра, затова ще бъде извършено обикновено сканиране. Това може да отнеме значително време."
 
 #: source/scanner/sanedlg.src#RID_SANE_NOSANELIB_TXT.String.Text
 msgid  "The SANE interface could not be initialized. Scanning is not possible."
@@ -2405,7 +2405,7 @@ msgstr "%PRODUCTNAME %PRODUCTVERSION е последна версия."
 
 #: source/update/check/updatehdl.src#RID_UPDATE_STR_UPD_FOUND.String.Text
 msgid  "%PRODUCTNAME %NEXTVERSION is available.\n\nThe installed version is %PRODUCTNAME %PRODUCTVERSION.\n\nNote: Before downloading  an update, please ensure that you have sufficient access rights to install it.\nA password, usually the administrator's or root password, may be required."
-msgstr ""
+msgstr "Налице е %PRODUCTNAME %NEXTVERSION.\n\nИнсталираната версия е %PRODUCTNAME %PRODUCTVERSION.\n\nБележка: Моля, преди изтеглянето на обновление се уверете, че имате достатъчни права за достъп, за да го инсталирате.\nМоже да се изисква парола, обикновено – администраторската."
 
 #: source/update/check/updatehdl.src#RID_UPDATE_STR_DLG_TITLE.String.Text
 msgid  "Check for Updates"
@@ -2421,7 +2421,7 @@ msgstr "Изтеглянето на %PRODUCTNAME %NEXTVERSION блокира н�
 
 #: source/update/check/updatehdl.src#RID_UPDATE_STR_DOWNLOAD_WARN.String.Text
 msgid  "The download location is: %DOWNLOAD_PATH.\n\nUnder Tools – Options... - %PRODUCTNAME – Online Update you can change the download location."
-msgstr ""
+msgstr "Местоположението за изтегляне е: %DOWNLOAD_PATH.\n\nМожете да го промените от Инструменти - Настройки... - %PRODUCTNAME - Обновяване по Интернет."
 
 #: source/update/check/updatehdl.src#RID_UPDATE_STR_DOWNLOAD_DESCR.String.Text
 msgid  "%FILE_NAME has been downloaded to %DOWNLOAD_PATH."
@@ -2429,7 +2429,7 @@ msgstr "%FILE_NAME бе изтеглен в %DOWNLOAD_PATH."
 
 #: source/update/check/updatehdl.src#RID_UPDATE_STR_DOWNLOAD_UNAVAIL.String.Text
 msgid  "The automatic download of the update is currently not available.\n\nClick 'Download...' to download %PRODUCTNAME %NEXTVERSION manually from the web site."
-msgstr ""
+msgstr "Автоматичното изтегляне на обновление не е достъпно в момента.\n\nНатиснете „Изтегляне...“ за да изтеглите ръчно %PRODUCTNAME %NEXTVERSION от уебсайта."
 
 #: source/update/check/updatehdl.src#RID_UPDATE_STR_DOWNLOADING.String.Text
 msgid  "Downloading %PRODUCTNAME %NEXTVERSION..."
@@ -2437,7 +2437,7 @@ msgstr "Изтегля се %PRODUCTNAME %NEXTVERSION..."
 
 #: source/update/check/updatehdl.src#RID_UPDATE_STR_READY_INSTALL.String.Text
 msgid  "Download of %PRODUCTNAME %NEXTVERSION completed. Ready for installation."
-msgstr ""
+msgstr "Изтеглянето на %PRODUCTNAME %NEXTVERSION завърши. Готов е за инсталиране."
 
 #: source/update/check/updatehdl.src#RID_UPDATE_STR_CANCEL_TITLE.String.Text
 msgid  "%PRODUCTNAME %PRODUCTVERSION"
@@ -2449,7 +2449,7 @@ msgstr "Наистина ли желаете да прекъснете изте�
 
 #: source/update/check/updatehdl.src#RID_UPDATE_STR_BEGIN_INSTALL.String.Text
 msgid  "To install the update, %PRODUCTNAME %PRODUCTVERSION needs to be closed. Do you want to install the update now?"
-msgstr ""
+msgstr "За да инсталирате обновяването, трябва да затворите %PRODUCTNAME %PRODUCTVERSION. Желаете ли да инсталирате обновлението сега?"
 
 #: source/update/check/updatehdl.src#RID_UPDATE_STR_INSTALL_NOW.String.Text
 msgid  "Install ~now"
@@ -2461,15 +2461,15 @@ msgstr "Инсталиране ~по-късно"
 
 #: source/update/check/updatehdl.src#RID_UPDATE_STR_INSTALL_ERROR.String.Text
 msgid  "Could not run the installer application, please run %FILE_NAME in %DOWNLOAD_PATH manually."
-msgstr ""
+msgstr "Не може да се стартира приложението за инсталиране. Моля, стартирайте ръчно %FILE_NAME в %DOWNLOAD_PATH."
 
 #: source/update/check/updatehdl.src#RID_UPDATE_STR_OVERWRITE_WARNING.String.Text
 msgid  "A file with that name already exists! Do you want to overwrite the existing file?"
-msgstr ""
+msgstr "Файл с това име вече съществува! Желаете ли съществуващият файл да бъде презаписан?"
 
 #: source/update/check/updatehdl.src#RID_UPDATE_STR_RELOAD_WARNING.String.Text
 msgid  "A file with the name '%FILENAME' already exists in '%DOWNLOAD_PATH'! Do you want to continue with the download or delete and reload the file?"
-msgstr ""
+msgstr "Файл с име '%FILENAME' вече съществува в '%DOWNLOAD_PATH'! Желаете ли свалянето да продължи или да се изтрие и презареди файла?"
 
 #: source/update/check/updatehdl.src#RID_UPDATE_STR_RELOAD_RELOAD.String.Text
 msgid  "Reload File"

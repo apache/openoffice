@@ -229,11 +229,11 @@ msgstr "{[ProductName] }Instalazioak huts egin du."
 
 #: inc_openoffice/windows/msi_languages/Error.ulf#OOO_ERROR_25
 msgid  "Error reading from file: [2]. {{ System error [3].}}  Verify that the file exists and that you can access it."
-msgstr ""
+msgstr "Errorea fitxategitik irakurtzean: [2]. {{ Sistemako errorea [3].}} Egiaztatu fitxategia badagoela eta sarbidea duzula."
 
 #: inc_openoffice/windows/msi_languages/Error.ulf#OOO_ERROR_26
 msgid  "Cannot create the file [3].  A directory with this name already exists.  Cancel the installation and try installing to a different location."
-msgstr ""
+msgstr "Fitxategia ezin da sortu [3]. Izen hori duen direktorioa badago lehendik ere. Utzi bertan behera instalazioa eta saiatu beste kokaleku batean instalatzen."
 
 #: inc_openoffice/windows/msi_languages/Error.ulf#OOO_ERROR_27
 msgid  "Please insert the disk: [2]"
@@ -241,43 +241,43 @@ msgstr "Sartu disko hau: [2]"
 
 #: inc_openoffice/windows/msi_languages/Error.ulf#OOO_ERROR_28
 msgid  "The installer has insufficient privileges to access this directory: [2].  The installation cannot continue.  Log on as an administrator or contact your system administrator."
-msgstr ""
+msgstr "Instalatzaileak ez ditu nahikoa pribilegio direktorio hau atzitzeko: [2]. Instalazioak ezin du jarraitu.  Hasi saioa administratzaile gisa edo jarri harremanetan sistema-administratzailearekin."
 
 #: inc_openoffice/windows/msi_languages/Error.ulf#OOO_ERROR_29
 msgid  "Error writing to file [2].  Verify that you have access to that directory."
-msgstr ""
+msgstr "Errorea [2] fitxategian idaztean.  Egiaztatu direktorio horretarako sarbidea duzula."
 
 #: inc_openoffice/windows/msi_languages/Error.ulf#OOO_ERROR_30
 msgid  "Error reading from file [2].  Verify that the file exists and that you can access it."
-msgstr ""
+msgstr "Errorea [2] fitxategitik irakurtzean.  Egiaztatu fitxategia badagoela eta sarbidea duzula."
 
 #: inc_openoffice/windows/msi_languages/Error.ulf#OOO_ERROR_31
 msgid  "Another application has exclusive access to the file [2].  Please shut down all other applications, then click Retry."
-msgstr ""
+msgstr "Beste aplikazio batek [2] fitxategirako sarbide esklusiboa du. Itxi beste aplikazio guztiak, eta gero, sakatu 'Saiatu berriro'."
 
 #: inc_openoffice/windows/msi_languages/Error.ulf#OOO_ERROR_32
 msgid  "There is not enough disk space to install the file [2].  Free some disk space and click Retry, or click Cancel to exit."
-msgstr ""
+msgstr "Diskoan ez dago nahikoa leku [2] fitxategia instalatzeko. Egin lekua diskoan eta sakatu ‘Saiatu berriro’, bestela, sakatu ‘Utzi’ irteteko."
 
 #: inc_openoffice/windows/msi_languages/Error.ulf#OOO_ERROR_33
 msgid  "Source file not found: [2].  Verify that the file exists and that you can access it."
-msgstr ""
+msgstr "Iturburu-fitxategi hau ez da aurkitu: [2]. Egiaztatu fitxategi hori badagoela eta sarbidea duzula."
 
 #: inc_openoffice/windows/msi_languages/Error.ulf#OOO_ERROR_34
 msgid  "Error reading from file: [3]. {{ System error [2].}}  Verify that the file exists and that you can access it."
-msgstr ""
+msgstr "Errorea fitxategi honetatik irakurtzean: [3]. {{ [2] sistema-errorea.}} Egiaztatu fitxategia badagoela eta sarbidea duzula."
 
 #: inc_openoffice/windows/msi_languages/Error.ulf#OOO_ERROR_35
 msgid  "Error writing to file: [3]. {{ System error [2].}}  Verify that you have access to that directory."
-msgstr ""
+msgstr "Errorea fitxategi honetan idaztean: [3]. {{ [2] sistema-errorea.}} Egiaztatu direktorio horretarako sarbidea duzula."
 
 #: inc_openoffice/windows/msi_languages/Error.ulf#OOO_ERROR_36
 msgid  "Source file not found{{(cabinet)}}: [2].  Verify that the file exists and that you can access it."
-msgstr ""
+msgstr "Iturburu-fitxategi hau ez da aurkitu {{(kabinetea)}}: [2]. Egiaztatu fitxategia badagoela eta sarbidea duzula."
 
 #: inc_openoffice/windows/msi_languages/Error.ulf#OOO_ERROR_37
 msgid  "Cannot create the directory [2].  A file with this name already exists.  Please rename or remove the file and click Retry, or click Cancel to exit."
-msgstr ""
+msgstr "Ezin da [2] direktorioa sortu. Izen hori duen fitxategia badago lehendik. Aldatu izena edo kendu fitxategia eta sakatu ‘Saiatu berriro’, bestela, sakatu ‘Utzi’ irteteko."
 
 #: inc_openoffice/windows/msi_languages/Error.ulf#OOO_ERROR_38
 msgid  "The volume [2] is currently unavailable.  Please select another."
@@ -305,7 +305,7 @@ msgstr "Sareko errorea gertatu da [2] direktorioa sortzen saiatzean"
 
 #: inc_openoffice/windows/msi_languages/Error.ulf#OOO_ERROR_44
 msgid  "A network error occurred while attempting to open the source file cabinet [2]."
-msgstr ""
+msgstr "Sareko errorea gertatu da [2] iturburu-fitxategiaren kabinetea irekitzen saiatzean."
 
 #: inc_openoffice/windows/msi_languages/Error.ulf#OOO_ERROR_45
 msgid  "The specified path is too long [2]."
@@ -317,7 +317,7 @@ msgstr "Instalatzaileak ez ditu nahikoa pribilegio [2] fitxategia aldatzeko."
 
 #: inc_openoffice/windows/msi_languages/Error.ulf#OOO_ERROR_47
 msgid  "A portion of the path [2] exceeds the length allowed by the system."
-msgstr ""
+msgstr "[2] bide-izenaren zati batek sistemak onartzen duen luzera gainditzen du."
 
 #: inc_openoffice/windows/msi_languages/Error.ulf#OOO_ERROR_48
 msgid  "The path [2] contains words that are not valid in folders."
@@ -333,7 +333,7 @@ msgstr "[2] ez da baliozko fitxategi-izen laburra."
 
 #: inc_openoffice/windows/msi_languages/Error.ulf#OOO_ERROR_51
 msgid  "Error getting file security: [3] GetLastError: [2]"
-msgstr ""
+msgstr "Errorea fitxategi honen segurtasuna lortzean: [3] LortuAzkenErrorea: [2]"
 
 #: inc_openoffice/windows/msi_languages/Error.ulf#OOO_ERROR_52
 msgid  "Invalid Drive: [2]"
@@ -341,67 +341,67 @@ msgstr "Unitate baliogabea: [2]"
 
 #: inc_openoffice/windows/msi_languages/Error.ulf#OOO_ERROR_53
 msgid  "Error applying patch to file [2].  It has probably been updated by other means, and can no longer be modified by this patch.  For more information contact your patch vendor.  {{System Error: [3]}}"
-msgstr ""
+msgstr "Errorea [2] fitxategiari adabakia aplikatzean. Segur aski, beste baliabide baten bidez eguneratuko zen, eta ezin da adabaki horrekin aldatu. Informazio gehiago lortzeko, jarri harremanetan adabaki-fabrikatzailearekin. {{Sistemako errorea: [3]}}"
 
 #: inc_openoffice/windows/msi_languages/Error.ulf#OOO_ERROR_54
 msgid  "Could not create key [2]. {{ System error [3].}}  Verify that you have sufficient access to that key, or contact your support personnel."
-msgstr ""
+msgstr "[2] gakoa ezin izan da sortu. {{ [3] sistemako errorea.}} Egiaztatu gako horretarako sarbidea duzula, edo jarri harremanetan laguntza-taldearekin."
 
 #: inc_openoffice/windows/msi_languages/Error.ulf#OOO_ERROR_55
 msgid  "Could not open key: [2]. {{ System error [3].}}  Verify that you have sufficient access to that key, or contact your support personnel."
-msgstr ""
+msgstr "Gakoa ezin izan da ireki: [2]. {{ [3] sistema-errorea.}}  Egiaztatu gako horretarako sarbidea duzula, edo jarri harremanetan laguntza-taldearekin."
 
 #: inc_openoffice/windows/msi_languages/Error.ulf#OOO_ERROR_56
 msgid  "Could not delete value [2] from key [3]. {{ System error [4].}}  Verify that you have sufficient access to that key, or contact your support personnel."
-msgstr ""
+msgstr "[2] balioa ezin izan da [3] gakotik ezabatu. {{ [4] sistema-errorea.}} Egiaztatu gako horretarako sarbidea duzula, edo jarri harremanetan laguntza-taldearekin."
 
 #: inc_openoffice/windows/msi_languages/Error.ulf#OOO_ERROR_57
 msgid  "Could not delete key [2]. {{ System error [3].}}  Verify that you have sufficient access to that key, or contact your support personnel."
-msgstr ""
+msgstr "Ezin izan da [2] gakoa ezabatu. {{ [3] sistema-errorea.}} Egiaztatu gako horretarako sarbidea duzula, edo jarri harremanetan laguntza-taldearekin."
 
 #: inc_openoffice/windows/msi_languages/Error.ulf#OOO_ERROR_58
 msgid  "Could not read value [2] from key [3]. {{ System error [4].}}  Verify that you have sufficient access to that key, or contact your support personnel."
-msgstr ""
+msgstr "[2] balioa ezin izan da [3] gakotik irakurri. {{ [4] sistema-errorea.}} Egiaztatu gako horretarako sarbidea duzula, edo jarri harremanetan laguntza-taldearekin."
 
 #: inc_openoffice/windows/msi_languages/Error.ulf#OOO_ERROR_59
 msgid  "Could not write value [2] to key [3]. {{ System error [4].}}  Verify that you have sufficient access to that key, or contact your support personnel."
-msgstr ""
+msgstr "[2] balioa ezin izan da [3] gakoan idatzi. {{ [4] sistema-errorea.}} Egiaztatu gako horretarako sarbidea duzula, edo jarri harremanetan laguntza-taldearekin."
 
 #: inc_openoffice/windows/msi_languages/Error.ulf#OOO_ERROR_60
 msgid  "Could not get value names for key [2]. {{ System error [3].}}  Verify that you have sufficient access to that key, or contact your support personnel."
-msgstr ""
+msgstr "Balio-izenak ezin dira lortu [2] gakoarentzat. {{ [3] sistema-errorea.}} Egiaztatu gako horretarako sarbidea duzula, edo jarri harremanetan laguntza-taldearekin."
 
 #: inc_openoffice/windows/msi_languages/Error.ulf#OOO_ERROR_61
 msgid  "Could not get sub key names for key [2]. {{ System error [3].}}  Verify that you have sufficient access to that key, or contact your support personnel."
-msgstr ""
+msgstr "Ezin izan dira [2] gakoarentzako azpigakoen izenak lortu. {{ [3] sistema-errorea.}} Egiaztatu gako horretarako sarbidea duzula, edo jarri harremanetan laguntza-taldearekin."
 
 #: inc_openoffice/windows/msi_languages/Error.ulf#OOO_ERROR_62
 msgid  "Could not read security information for key [2]. {{ System error [3].}}  Verify that you have sufficient access to that key, or contact your support personnel."
-msgstr ""
+msgstr "Segurtasun-informazioa ezin izan da irakurri [2] gakoarentzat. {{ [3] sistema-errorea.}} Egiaztatu gako horretarako sarbidea duzula, edo jarri harremanetan laguntza-taldearekin."
 
 #: inc_openoffice/windows/msi_languages/Error.ulf#OOO_ERROR_63
 msgid  "Could not increase the available registry space. [2] KB of free registry space is required for the installation of this application."
-msgstr ""
+msgstr "Ezin izan da erregistroko leku erabilgarria handitu. Aplikazio hau instalatzeko, erregistroan [2] KB eduki behar dira libre."
 
 #: inc_openoffice/windows/msi_languages/Error.ulf#OOO_ERROR_64
 msgid  "Another installation is in progress. You must complete that installation before continuing this one."
-msgstr ""
+msgstr "Beste instalazio bat bideratzen ari da. Instalazio honekin jarraitu aurretik, bestea amaitu behar duzu."
 
 #: inc_openoffice/windows/msi_languages/Error.ulf#OOO_ERROR_65
 msgid  "Error accessing secured data. Please make sure the Windows Installer is configured properly and try the installation again."
-msgstr ""
+msgstr "Errorea datu seguruak atzitzean. Ziurtatu Windows Installer behar bezala konfiguratuta dagoela, eta saiatu berriro."
 
 #: inc_openoffice/windows/msi_languages/Error.ulf#OOO_ERROR_66
 msgid  "User [2] has previously initiated an installation for product [3].  That user will need to run that installation again before using that product.  Your current installation will now continue."
-msgstr ""
+msgstr "[2] erabiltzaileak lehen hasi du [3] produktuaren instalazioa. Erabiltzaile horrek instalazio hori berriro exekutatu beharko du produktua erabili aurretik. Uneko instalazioak orain jarraituko du."
 
 #: inc_openoffice/windows/msi_languages/Error.ulf#OOO_ERROR_67
 msgid  "User [2] has previously initiated an installation for product [3].  That user will need to run that installation again before using that product."
-msgstr ""
+msgstr "[2] erabiltzaileak lehen hasi du [3] produktuaren instalazioa. Erabiltzaile horrek instalazio hori berriro exekutatu beharko du produktua erabili aurretik."
 
 #: inc_openoffice/windows/msi_languages/Error.ulf#OOO_ERROR_68
 msgid  "Out of disk space -- Volume: '[2]'; required space: [3] KB; available space: [4] KB.  Free some disk space and retry."
-msgstr ""
+msgstr "Ez dago nahikoa leku diskoan – Bolumena: '[2]'; beharrezko lekua: [3] KB; leku erabilgarria: [4] KB. Egin lekua diskoan eta saiatu berriro."
 
 #: inc_openoffice/windows/msi_languages/Error.ulf#OOO_ERROR_69
 msgid  "Are you sure you want to cancel?"
@@ -409,15 +409,15 @@ msgstr "Ziur zaude bertan behera utzi nahi duzula?"
 
 #: inc_openoffice/windows/msi_languages/Error.ulf#OOO_ERROR_70
 msgid  "The file [2][3] is being held in use {by the following process: Name: [4], ID: [5], Window Title: [6]}.  Close that application and retry."
-msgstr ""
+msgstr "[2][3] fitxategia erabiltzen ari da (prozesu honek darabil: izena [4], IDa: [5], leiho-titulua [6]). Itxi aplikazio hori eta saiatu berriro."
 
 #: inc_openoffice/windows/msi_languages/Error.ulf#OOO_ERROR_71
 msgid  "The product [2] is already installed, preventing the installation of this product.  The two products are incompatible."
-msgstr ""
+msgstr "[2] produktua dagoeneko instalatuta dago, eta produktu hau instalatzea eragozten du.  Bi produktu horiek ez dira bateragarriak."
 
 #: inc_openoffice/windows/msi_languages/Error.ulf#OOO_ERROR_72
 msgid  "Out of disk space -- Volume: [2]; required space: [3] KB; available space: [4] KB.  If rollback is disabled, enough space is available. Click Cancel to quit, Retry to check available disk space again, or Ignore to continue without rollback."
-msgstr ""
+msgstr "Ez dago nahikoa leku diskoan -- Bolumena: [2]; beharrezko lekua: [3] KB; leku erabilgarria: [4] KB.  Berreskuratzea desgaituta badago, nahikoa leku egongo da erabilgarri. Sakatu ‘Utzi’ irteteko, ‘Saiatu berriro’ diskoan erabilgarri dagoen lekua berriro egiaztatzeko, edo ‘Ez ikusi egin’ berreskuratzeko aukerarik gabe jarraitzeko."
 
 #: inc_openoffice/windows/msi_languages/Error.ulf#OOO_ERROR_73
 msgid  "Could not access network location [2]."
@@ -425,11 +425,11 @@ msgstr "[2] sareko kokalekua ezin izan da atzitu."
 
 #: inc_openoffice/windows/msi_languages/Error.ulf#OOO_ERROR_74
 msgid  "The following applications should be closed before continuing the installation:"
-msgstr ""
+msgstr "Honako aplikazioak itxi egin behar dira instalazioarekin jarraitu aurretik:"
 
 #: inc_openoffice/windows/msi_languages/Error.ulf#OOO_ERROR_75
 msgid  "Could not find any previously installed compliant products on the machine for installing this product."
-msgstr ""
+msgstr "Ordenagailuan aurrez instalatutako produktu bateragarririk ezin izan da aurkitu produktu hau instalatzeko."
 
 #: inc_openoffice/windows/msi_languages/Error.ulf#OOO_ERROR_76
 msgid  "The key [2] is not valid.  Verify that you entered the correct key."
@@ -437,23 +437,23 @@ msgstr "[2] gakoa ez da baliozkoa.  Egiaztatu gako zuzena sartu duzula."
 
 #: inc_openoffice/windows/msi_languages/Error.ulf#OOO_ERROR_77
 msgid  "The installer must restart your system before configuration of [2] can continue.  Click Yes to restart now or No if you plan to restart later."
-msgstr ""
+msgstr "Instalatzaileak sistema berrabiarazi behar du [2] konfiguratzen jarraitu aurretik. Sakatu ‘Bai’ orain berrabiarazteko, edo ‘Ez’ geroago berrabiarazteko."
 
 #: inc_openoffice/windows/msi_languages/Error.ulf#OOO_ERROR_78
 msgid  "You must restart your system for the configuration changes made to [2] to take effect. Click Yes to restart now or No if you plan to restart later."
-msgstr ""
+msgstr "Sistema berrabiarazi behar duzu [2] aplikazioari egindako konfigurazio-aldaketek eragina izan dezaten. Sakatu ‘Bai’ orain berrabiarazteko, edo ‘Ez’ geroago berrabiarazteko."
 
 #: inc_openoffice/windows/msi_languages/Error.ulf#OOO_ERROR_79
 msgid  "An installation for [2] is currently suspended.  You must undo the changes made by that installation to continue.  Do you want to undo those changes?"
-msgstr ""
+msgstr "[2] aplikazioaren instalazioa une honetan esekita dago. Instalazio horrek egindako aldaketak desegin behar dituzu jarraitzeko. Aldaketa horiek desegin nahi dituzu?"
 
 #: inc_openoffice/windows/msi_languages/Error.ulf#OOO_ERROR_80
 msgid  "A previous installation for this product is in progress.  You must undo the changes made by that installation to continue.  Do you want to undo those changes?"
-msgstr ""
+msgstr "Produktu horren aurreko instalazio bat bideratzen ari da. Instalazio horrek egindako aldaketak desegin behar dituzu jarraitzeko. Aldaketa horiek desegin nahi dituzu?"
 
 #: inc_openoffice/windows/msi_languages/Error.ulf#OOO_ERROR_81
 msgid  "No valid source could be found for product [2].  The Windows Installer cannot continue."
-msgstr ""
+msgstr "Baliozko iturbururik ezin izan da aurkitu [2] produktuarentzat. Windows Installer-ek ezin du jarraitu."
 
 #: inc_openoffice/windows/msi_languages/Error.ulf#OOO_ERROR_82
 msgid  "Installation operation completed successfully."
@@ -469,23 +469,23 @@ msgstr "Produktua: [2] -- [3]"
 
 #: inc_openoffice/windows/msi_languages/Error.ulf#OOO_ERROR_85
 msgid  "You may either restore your computer to its previous state or continue the installation later. Would you like to restore?"
-msgstr ""
+msgstr "Ordenagailua aurreko egoerara leheneratu edo instalazioarekin aurrerago jarraitu dezakezu. Leheneratu nahi duzu?"
 
 #: inc_openoffice/windows/msi_languages/Error.ulf#OOO_ERROR_86
 msgid  "An error occurred while writing installation information to disk.  Check to make sure enough disk space is available, and click Retry, or Cancel to end the installation."
-msgstr ""
+msgstr "Errorea gertatu da instalazioari buruzko informazioa diskoan idaztean. Egiaztatu diskoan behar adina leku dagoela, eta sakatu 'Saiatu berriro', edo, bestela, 'Utzi' instalazioa amaitzeko."
 
 #: inc_openoffice/windows/msi_languages/Error.ulf#OOO_ERROR_87
 msgid  "One or more of the files required to restore your computer to its previous state could not be found.  Restoration will not be possible."
-msgstr ""
+msgstr "Ordenagailua aurreko egoerara leheneratzeko behar den fitxategi bat edo gehiago ezin izan dira aurkitu. Leheneratzea ezingo da egin."
 
 #: inc_openoffice/windows/msi_languages/Error.ulf#OOO_ERROR_88
 msgid  "[2] cannot install one of its required products. Contact your technical support group.  {{System Error: [3].}}"
-msgstr ""
+msgstr "[2] aplikazioak ezin du behar dituen produktuetako bat instalatu. Jarri harremanetan laguntza teknikoko taldearekin. {{Sistema-errorea: [3].}}"
 
 #: inc_openoffice/windows/msi_languages/Error.ulf#OOO_ERROR_89
 msgid  "The older version of [2] cannot be removed.  Contact your technical support group.  {{System Error [3].}}"
-msgstr ""
+msgstr "[2] aplikazioaren bertsio zaharra ezin da kendu. Jarri harremanetan laguntza teknikoko taldearekin.  {{[3] sistema-errorea.}}"
 
 #: inc_openoffice/windows/msi_languages/Error.ulf#OOO_ERROR_90
 msgid  "The path [2] is not valid.  Please specify a valid path."
@@ -497,15 +497,15 @@ msgstr "Ez dago memoriarik. Berriro saiatu aurretik, itxi beste aplikazioak."
 
 #: inc_openoffice/windows/msi_languages/Error.ulf#OOO_ERROR_92
 msgid  "There is no disk in drive [2]. Please insert one and click Retry, or click Cancel to go back to the previously selected volume."
-msgstr ""
+msgstr "[2] unitatean ez dago diskorik. Txertatu disko bat eta sakatu ‘Saiatu berriro’, edo sakatu ‘Utzi’ lehen hautatutako bolumenera itzultzeko."
 
 #: inc_openoffice/windows/msi_languages/Error.ulf#OOO_ERROR_93
 msgid  "There is no disk in drive [2]. Please insert one and click Retry, or click Cancel to return to the browse dialog and select a different volume."
-msgstr ""
+msgstr "[2] unitatean ez dago diskorik. Txertatu disko bat eta sakatu ‘Saiatu berriro’, edo sakatu ‘Utzi’ arakatzeko elkarrizketa-koadrora itzultzeko eta beste bolumen bat hautatzeko."
 
 #: inc_openoffice/windows/msi_languages/Error.ulf#OOO_ERROR_94
 msgid  "The folder [2] does not exist.  Please enter a path to an existing folder."
-msgstr ""
+msgstr "[2] karpeta ez dago.  Idatzi lehendik dagoen karpeta baten bide-izena."
 
 #: inc_openoffice/windows/msi_languages/Error.ulf#OOO_ERROR_95
 msgid  "You have insufficient privileges to read this folder."
@@ -513,7 +513,7 @@ msgstr "Karpeta hau irakurtzeko ez dituzu nahikoa pribilegio."
 
 #: inc_openoffice/windows/msi_languages/Error.ulf#OOO_ERROR_96
 msgid  "A valid destination folder for the installation could not be determined."
-msgstr ""
+msgstr "Instalazioarentzako baliozko helburu-karpeta ezin izan da zehaztu."
 
 #: inc_openoffice/windows/msi_languages/Error.ulf#OOO_ERROR_97
 msgid  "Error attempting to read from the source installation database: [2]."
@@ -521,115 +521,115 @@ msgstr "Errorea iturburu-instalazioaren datu-basetik irakurtzen saiatzean: [2]."
 
 #: inc_openoffice/windows/msi_languages/Error.ulf#OOO_ERROR_98
 msgid  "Scheduling reboot operation: Renaming file [2] to [3]. Must reboot to complete operation."
-msgstr ""
+msgstr "Berrabiarazte-eragiketa programatzen: [2] fitxategiari [3] izena jartzen. Eragiketa amaitzeko berrabiarazi egin behar da."
 
 #: inc_openoffice/windows/msi_languages/Error.ulf#OOO_ERROR_99
 msgid  "Scheduling reboot operation: Deleting file [2]. Must reboot to complete operation."
-msgstr ""
+msgstr "Berrabiarazte-eragiketa programatzen: [2] fitxategia ezabatzen. Eragiketa amaitzeko berrabiarazi egin behar da."
 
 #: inc_openoffice/windows/msi_languages/Error.ulf#OOO_ERROR_100
 msgid  "Module [2] failed to register.  HRESULT [3].  Contact your support personnel."
-msgstr ""
+msgstr "[2] moduluak huts egin du erregistratzean.  HRESULT [3]. Jarri harremanetan laguntza-taldearekin."
 
 #: inc_openoffice/windows/msi_languages/Error.ulf#OOO_ERROR_101
 msgid  "Module [2] failed to unregister.  HRESULT [3].  Contact your support personnel."
-msgstr ""
+msgstr "[2] moduluak huts egin du erregistratzean.  HRESULT [3]. Jarri harremanetan laguntza-taldearekin."
 
 #: inc_openoffice/windows/msi_languages/Error.ulf#OOO_ERROR_102
 msgid  "Failed to cache package [2]. Error: [3]. Contact your support personnel."
-msgstr ""
+msgstr "[2] paketea cache-an gordetzeak huts egin du. Errorea: [3]. Jarri harremanetan laguntza-taldearekin."
 
 #: inc_openoffice/windows/msi_languages/Error.ulf#OOO_ERROR_103
 msgid  "Could not register font [2].  Verify that you have sufficient permissions to install fonts, and that the system supports this font."
-msgstr ""
+msgstr "[2] letra-tipoa ezin izan da erregistratu. Egiaztatu letra-tipoak instalatzeko nahikoa baimen dituzula eta sistemak letra-tipo hori onartzen duela."
 
 #: inc_openoffice/windows/msi_languages/Error.ulf#OOO_ERROR_104
 msgid  "Could not unregister font [2]. Verify that you have sufficient permissions to remove fonts."
-msgstr ""
+msgstr "[2] lasterbidea ezin izan da sortu. Egiaztatu helburu-karpeta badagoela eta atzi dezakezula."
 
 #: inc_openoffice/windows/msi_languages/Error.ulf#OOO_ERROR_105
 msgid  "Could not create shortcut [2]. Verify that the destination folder exists and that you can access it."
-msgstr ""
+msgstr "[2] lasterbidea ezin izan da kendu. Egiaztatu helburu-karpeta badagoela eta atzi dezakezula."
 
 #: inc_openoffice/windows/msi_languages/Error.ulf#OOO_ERROR_106
 msgid  "Could not remove shortcut [2]. Verify that the shortcut file exists and that you can access it."
-msgstr ""
+msgstr "[2] lasterbidea ezin izan da kendu. Egiaztatu laster-tekla badagoela eta atzi dezakezula."
 
 #: inc_openoffice/windows/msi_languages/Error.ulf#OOO_ERROR_107
 msgid  "Could not register type library for file [2].  Contact your support personnel."
-msgstr ""
+msgstr "[2] fitxategiarentzako mota-liburutegia ezin izan da erregistratu. Jarri harremanetan laguntza-taldearekin."
 
 #: inc_openoffice/windows/msi_languages/Error.ulf#OOO_ERROR_108
 msgid  "Could not unregister type library for file [2].  Contact your support personnel."
-msgstr ""
+msgstr "[2] fitxategiarentzako mota-liburutegia ezin izan da erregistrotik ezabatu. Jarri harremanetan laguntza-taldearekin."
 
 #: inc_openoffice/windows/msi_languages/Error.ulf#OOO_ERROR_109
 msgid  "Could not update the INI file [2][3].  Verify that the file exists and that you can access it."
-msgstr ""
+msgstr "[2][3] INI fitxategia ezin izan da kendu. Egiaztatu fitxategia badagoela eta atzi dezakezula."
 
 #: inc_openoffice/windows/msi_languages/Error.ulf#OOO_ERROR_110
 msgid  "Could not schedule file [2] to replace file [3] on reboot.  Verify that you have write permissions to file [3]."
-msgstr ""
+msgstr "Ezin izan da programatu [2] fitxategiak [3] fitxategia ordeztea abiaraztean.  Egiaztatu [3] fitxategian idazteko baimenak dituzula."
 
 #: inc_openoffice/windows/msi_languages/Error.ulf#OOO_ERROR_111
 msgid  "Error removing ODBC driver manager, ODBC error [2]: [3]. Contact your support personnel."
-msgstr ""
+msgstr "Errorea ODBC kontrolatzaile-kudeatzailea kentzean, ODBC errorea [2]: [3]. Jarri harremanetan laguntza-taldearekin."
 
 #: inc_openoffice/windows/msi_languages/Error.ulf#OOO_ERROR_112
 msgid  "Error installing ODBC driver manager, ODBC error [2]: [3]. Contact your support personnel."
-msgstr ""
+msgstr "Errorea ODBC kontrolatzaile-kudeatzailea instalatzean, ODBC errorea [2]: [3]. Jarri harremanetan laguntza-taldearekin."
 
 #: inc_openoffice/windows/msi_languages/Error.ulf#OOO_ERROR_113
 msgid  "Error removing ODBC driver [4], ODBC error [2]: [3]. Verify that you have sufficient privileges to remove ODBC drivers."
-msgstr ""
+msgstr "Errorea [4] ODBC kontrolatzailea kentzean, ODBC errorea [2]: [3]. Egiaztatu ODBC kontrolatzaileak kentzeko nahikoa pribilegio dituzula."
 
 #: inc_openoffice/windows/msi_languages/Error.ulf#OOO_ERROR_114
 msgid  "Error installing ODBC driver [4], ODBC error [2]: [3]. Verify that the file [4] exists and that you can access it."
-msgstr ""
+msgstr "Errorea [4] ODBC kontrolatzailea instalatzean, ODBC errorea [2]: [3]. Egiaztatu [4] fitxategia badagoela eta atzi dezakezula."
 
 #: inc_openoffice/windows/msi_languages/Error.ulf#OOO_ERROR_115
 msgid  "Error configuring ODBC data source [4], ODBC error [2]: [3]. Verify that the file [4] exists and that you can access it."
-msgstr ""
+msgstr "Errorea [4] ODBC datu-iturburua konfiguratzean, ODBC errorea [2]: [3]. Egiaztatu [4] fitxategia badagoela eta atzi dezakezula."
 
 #: inc_openoffice/windows/msi_languages/Error.ulf#OOO_ERROR_116
 msgid  "Service [2] ([3]) failed to start.  Verify that you have sufficient privileges to start system services."
-msgstr ""
+msgstr "[2] ([3]) zerbitzuak huts egin du abiaraztean. Egiaztatu sistema-zerbitzuak abiarazteko nahikoa pribilegio dituzula."
 
 #: inc_openoffice/windows/msi_languages/Error.ulf#OOO_ERROR_117
 msgid  "Service [2] ([3]) could not be stopped.  Verify that you have sufficient privileges to stop system services."
-msgstr ""
+msgstr "[2] ([3]) zerbitzua ezin izan da gelditu.  Egiaztatu sistema-zerbitzuak gelditzeko nahikoa pribilegio dituzula."
 
 #: inc_openoffice/windows/msi_languages/Error.ulf#OOO_ERROR_118
 msgid  "Service [2] ([3]) could not be deleted.  Verify that you have sufficient privileges to remove system services."
-msgstr ""
+msgstr "[2] ([3]) zerbitzua ezin izan da ezabatu.  Egiaztatu sistema-zerbitzuak kentzeko nahikoa pribilegio dituzula."
 
 #: inc_openoffice/windows/msi_languages/Error.ulf#OOO_ERROR_119
 msgid  "Service [2] ([3]) could not be installed.  Verify that you have sufficient privileges to install system services."
-msgstr ""
+msgstr "[2] zerbitzua ([3]) ezin izan da instalatu.  Egiaztatu sistema-zerbitzuak instalatzeko nahikoa pribilegio dituzula."
 
 #: inc_openoffice/windows/msi_languages/Error.ulf#OOO_ERROR_120
 msgid  "Could not update environment variable [2].  Verify that you have sufficient privileges to modify environment variables."
-msgstr ""
+msgstr "[2] ingurune-aldagaia ezin izan da eguneratu. Egiaztatu ingurune-aldagaiak aldatzeko nahikoa pribilegio dituzula."
 
 #: inc_openoffice/windows/msi_languages/Error.ulf#OOO_ERROR_121
 msgid  "You do not have sufficient privileges to complete this installation for all users of the machine.  Log on as an administrator and then retry this installation."
-msgstr ""
+msgstr "Ez dituzu nahikoa pribilegio instalazio hau ordenagailu honetako erabiltzaile guztientzat egiteko. Hasi saioa administratzaile gisa, eta gero, saiatu berriro instalatzen."
 
 #: inc_openoffice/windows/msi_languages/Error.ulf#OOO_ERROR_122
 msgid  "Could not set file security for file [3]. Error: [2].  Verify that you have sufficient privileges to modify the security permissions for this file."
-msgstr ""
+msgstr "Ezin izan da [3] fitxategiarentzako fitxategi-segurtasuna ezarri. Errorea: [2]. Egiaztatu fitxategi horren segurtasun-baimenak aldatzeko nahikoa pribilegio dituzula."
 
 #: inc_openoffice/windows/msi_languages/Error.ulf#OOO_ERROR_123
 msgid  "Component Services (COM+ 1.0) are not installed on this computer.  This installation requires Component Services in order to complete successfully.  Component Services are available on Windows 2000."
-msgstr ""
+msgstr "Osagai-zerbitzuak (COM+ 1.0) ez daude instalatuta ordenagailu honetan. Instalazioak osagai-zerbitzuak behar ditu behar bezala instalatzeko. Osagai-zerbitzuak Windows 2000an daude erabilgarri."
 
 #: inc_openoffice/windows/msi_languages/Error.ulf#OOO_ERROR_124
 msgid  "Error registering COM+ application.  Contact your support personnel for more information."
-msgstr ""
+msgstr "Errorea COM+ aplikazioa erregistratzean.  Jarri harremanetan laguntza-taldearekin informazio gehiago lortzeko."
 
 #: inc_openoffice/windows/msi_languages/Error.ulf#OOO_ERROR_125
 msgid  "Error unregistering COM+ application.  Contact your support personnel for more information."
-msgstr ""
+msgstr "Errorea COM+ aplikazioa erregistrotik ezabatzean. Jarri harremanetan laguntza-taldearekin informazio gehiago lortzeko."
 
 #: inc_openoffice/windows/msi_languages/Error.ulf#OOO_ERROR_126
 msgid  "The description for service '[2]' ([3]) could not be changed."
@@ -637,23 +637,23 @@ msgstr "'[2]' ([3]) zerbitzuaren azalpena ezin izan da aldatu."
 
 #: inc_openoffice/windows/msi_languages/Error.ulf#OOO_ERROR_127
 msgid  "The Windows Installer service cannot update the system file [2] because the file is protected by Windows.  You may need to update your operating system for this program to work correctly. {{Package version: [3], OS Protected version: [4]}}"
-msgstr ""
+msgstr "Windows Installer zerbitzuak ezin du [2] sistema-fitxategia eguneratu, fitxategi hori Windows-ek babestuta baitago.  Baliteke sistema eragilea eguneratu behar izatea programak behar bezala funtzionatzeko. {{Pakete-bertsioa: [3], SE bertsio babestua: [4]}}"
 
 #: inc_openoffice/windows/msi_languages/Error.ulf#OOO_ERROR_128
 msgid  "The Windows Installer service cannot update the protected Windows file [2]. {{Package version: [3], OS Protected version: [4], SFP Error: [5]}}"
-msgstr ""
+msgstr "Windows Installer zerbitzuak ezin du [2] Windows fitxategi babestua eguneratu. {{Pakete-bertsioa: [3], SEk babestutako bertsioa: [4], SFP errorea: [5]}}"
 
 #: inc_openoffice/windows/msi_languages/Error.ulf#OOO_ERROR_129
 msgid  "This setup requires Internet Information Server 4.0 or higher for configuring IIS Virtual Roots. Please make sure that you have IIS 4.0 or higher."
-msgstr ""
+msgstr "Instalazio honek Internet Information Server 4.0 edo berriagoa behar du IIS Virtual Roots konfiguratzeko. Ziurtatu IIS 4.0 edo berriagoa duzula."
 
 #: inc_openoffice/windows/msi_languages/Error.ulf#OOO_ERROR_130
 msgid  "This setup requires Administrator privileges for configuring IIS Virtual Roots."
-msgstr ""
+msgstr "Instalazio honek administratzailearen pribilegioak behar ditu IIS Virtual Roots konfiguratzeko."
 
 #: inc_openoffice/windows/msi_languages/CustomAc.ulf#OOO_CUSTOMACTION_1
 msgid  "A newer version of [ProductName] was found. To install an older version, the newer version needs to be removed first."
-msgstr ""
+msgstr "[ProductName] aplikazioaren bertsio berriagoa aurkitu da. Bertsio zaharragoa instalatzeko, aurrena, bertsio berria kendu behar da."
 
 #: inc_openoffice/windows/msi_languages/CustomAc.ulf#OOO_CUSTOMACTION_2
 msgid  "The same version of this product is already installed."
@@ -661,11 +661,11 @@ msgstr "Produktu honen bertsio bera instalatuta dago lehendik."
 
 #: inc_openoffice/windows/msi_languages/CustomAc.ulf#OOO_CUSTOMACTION_3
 msgid  "An older version of [ProductName] was found. To install a newer version, the older version needs to be removed first."
-msgstr ""
+msgstr "[ProductName](r)en bertsio zaharragoa aurkitu da. Bertsio berriagoa instalatzeko aurrenik bertsio zaharra kendu behar da."
 
 #: inc_openoffice/windows/msi_languages/CustomAc.ulf#OOO_CUSTOMACTION_4
 msgid  "Please exit [DEFINEDPRODUCT] [DEFINEDVERSION] and the [DEFINEDPRODUCT] [DEFINEDVERSION] Quickstarter before you continue. If you are using a multi-user system, also make sure that no other user has [DEFINEDPRODUCT] [DEFINEDVERSION] open."
-msgstr ""
+msgstr "Irten [DEFINEDPRODUCT] [DEFINEDVERSION] aplikaziotik eta  [DEFINEDPRODUCT] [DEFINEDVERSION] aplikazioko abiarazle bizkorretik aurrera jarraitu aurretik. Erabiltzaile anitzeko sistema erabiltzen ari bazara, ziurtatu zaitez erabiltzaile guztiek [DEFINEDPRODUCT] [DEFINEDVERSION]  itxita edukitzeaz."
 
 #: inc_openoffice/windows/msi_languages/UIText.ulf#OOO_UITEXT_1
 msgid  "bytes"
@@ -693,15 +693,15 @@ msgstr "Eginbide hau behar denean instalatuko da."
 
 #: inc_openoffice/windows/msi_languages/UIText.ulf#OOO_UITEXT_7
 msgid  "This feature, and all subfeatures, will be installed to run from the CD."
-msgstr ""
+msgstr "Eginbide hau eta azpieginbide guztiak CDtik exekutatzeko instalatuko dira."
 
 #: inc_openoffice/windows/msi_languages/UIText.ulf#OOO_UITEXT_8
 msgid  "This feature, and all subfeatures, will be installed on local hard drive."
-msgstr ""
+msgstr "Eginbide hau eta azpieginbide guztiak disko gogor lokalean instalatuko dira."
 
 #: inc_openoffice/windows/msi_languages/UIText.ulf#OOO_UITEXT_9
 msgid  "This feature, and all subfeatures, will be installed to run from the network."
-msgstr ""
+msgstr "Eginbide hau eta azpieginbide guztiak saretik exekutatzeko instalatuko dira."
 
 #: inc_openoffice/windows/msi_languages/UIText.ulf#OOO_UITEXT_10
 msgid  "This feature will be installed to run from CD."
@@ -761,11 +761,11 @@ msgstr "Eginbide hau saretik exekutatzeko egongo da erabilgarri."
 
 #: inc_openoffice/windows/msi_languages/UIText.ulf#OOO_UITEXT_24
 msgid  "This feature will be uninstalled completely, and you won't be able to run it from CD."
-msgstr ""
+msgstr "Eginbide hau osorik desinstalatuko da, eta ezingo duzu CDtik exekutatu."
 
 #: inc_openoffice/windows/msi_languages/UIText.ulf#OOO_UITEXT_25
 msgid  "This feature was run from the CD but will be set to be installed when required."
-msgstr ""
+msgstr "Eginbide hau CDtik exekutatu da, baina behar denean instalatzeko ezarriko da."
 
 #: inc_openoffice/windows/msi_languages/UIText.ulf#OOO_UITEXT_26
 msgid  "This feature will continue to be run from the CD"
@@ -773,7 +773,7 @@ msgstr "Eginbide hau CDtik exekutatzen jarraituko da"
 
 #: inc_openoffice/windows/msi_languages/UIText.ulf#OOO_UITEXT_27
 msgid  "This feature was run from the CD but will be installed on the local hard drive."
-msgstr ""
+msgstr "Eginbide hau CDtik exekutatu da, baina disko gogor lokalean instalatuko da."
 
 #: inc_openoffice/windows/msi_languages/UIText.ulf#OOO_UITEXT_28
 msgid  "This feature frees up [1] on your hard drive."
@@ -793,11 +793,11 @@ msgstr "Eginbide hau osorik kenduko da."
 
 #: inc_openoffice/windows/msi_languages/UIText.ulf#OOO_UITEXT_32
 msgid  "This feature will be removed from your local hard drive but will be set to be installed when required."
-msgstr ""
+msgstr "Eginbide hau disko gogor lokaletik kenduko da, baina behar denean instalatzeko ezarriko da."
 
 #: inc_openoffice/windows/msi_languages/UIText.ulf#OOO_UITEXT_33
 msgid  "This feature will be removed from your local hard drive but will still be available to run from CD."
-msgstr ""
+msgstr "Eginbide hau disko gogor lokaletik kenduko da, baina CDtik exekutatzeko erabilgarri egongo da."
 
 #: inc_openoffice/windows/msi_languages/UIText.ulf#OOO_UITEXT_34
 msgid  "This feature will remain on your local hard drive."
@@ -805,19 +805,19 @@ msgstr "Eginbide hau disko gogor lokalean mantenduko da."
 
 #: inc_openoffice/windows/msi_languages/UIText.ulf#OOO_UITEXT_35
 msgid  "This feature will be removed from your local hard drive, but will be still available to run from the network."
-msgstr ""
+msgstr "Eginbide hau disko gogor lokaletik kenduko da, baina saretik exekutatzeko erabilgarri egongo da."
 
 #: inc_openoffice/windows/msi_languages/UIText.ulf#OOO_UITEXT_36
 msgid  "This feature will be uninstalled completely, and you won't be able to run it from the network."
-msgstr ""
+msgstr "Eginbide hau osorik desinstalatuko da, eta ezingo duzu saretik exekutatu."
 
 #: inc_openoffice/windows/msi_languages/UIText.ulf#OOO_UITEXT_37
 msgid  "This feature was run from the network but will be installed when required."
-msgstr ""
+msgstr "Eginbide hau saretik exekutatu da, baina behar denean instalatuko da."
 
 #: inc_openoffice/windows/msi_languages/UIText.ulf#OOO_UITEXT_38
 msgid  "This feature was run from the network but will be installed on the local hard drive."
-msgstr ""
+msgstr "Eginbide hau saretik exekutatu da, baina behar denean instalatuko da."
 
 #: inc_openoffice/windows/msi_languages/UIText.ulf#OOO_UITEXT_39
 msgid  "This feature will continue to be run from the network"
@@ -825,19 +825,19 @@ msgstr "Eginbide hau saretik exekutatzen jarraituko da."
 
 #: inc_openoffice/windows/msi_languages/UIText.ulf#OOO_UITEXT_40
 msgid  "This feature frees up [1] on your hard drive. It has [2] of [3] subfeatures selected. The subfeatures free up [4] on your hard drive."
-msgstr ""
+msgstr "Eginbide honek [1] libratzen ditu disko gogorrean. [3](e)tik [2] azpieginbide ditu hautatuta. Azpieginbideek [4] libratzen dituzte disko gogorrean."
 
 #: inc_openoffice/windows/msi_languages/UIText.ulf#OOO_UITEXT_41
 msgid  "This feature frees up [1] on your hard drive. It has [2] of [3] subfeatures selected. The subfeatures require [4] on your hard drive."
-msgstr ""
+msgstr "Eginbide honek [1] libratzen ditu disko gogorrean. [3](e)tik [2] azpieginbide ditu hautatuta. Azpieginbideek [4] behar dituzte disko gogorrean."
 
 #: inc_openoffice/windows/msi_languages/UIText.ulf#OOO_UITEXT_42
 msgid  "This feature requires [1] on your hard drive. It has [2] of [3] subfeatures selected. The subfeatures free up [4] on your hard drive."
-msgstr ""
+msgstr "Eginbide honek [1] behar ditu disko gogorrean. [3](e)tik [2] azpieginbide ditu hautatuta. Azpieginbideek [4] libratzen dituzte disko gogorrean."
 
 #: inc_openoffice/windows/msi_languages/UIText.ulf#OOO_UITEXT_43
 msgid  "This feature requires [1] on your hard drive. It has [2] of [3] subfeatures selected. The subfeatures require [4] on your hard drive."
-msgstr ""
+msgstr "Eginbide honek [1] behar ditu disko gogorrean. [3](e)tik [2] azpieginbide ditu hautatuta. Azpieginbideek [4] behar dituzte disko gogorrean."
 
 #: inc_openoffice/windows/msi_languages/UIText.ulf#OOO_UITEXT_44
 msgid  "Time remaining: {[1] min }[2] sec"
@@ -1361,7 +1361,7 @@ msgstr "Gakoa: [1], Izena: [2], Balioa: [3]"
 
 #: inc_openoffice/windows/msi_languages/LaunchCo.ulf#OOO_LAUNCH_1
 msgid  "The Installation Wizard cannot be run properly because you are logged in as a user without sufficient administrator rights for this system."
-msgstr ""
+msgstr "Instalazio-morroia ezin da behar bezala exekutatu, sistema honetarako nahikoa administratzaile-eskubide ez dituen erabiltzailea gisa konektatuta baitzaude."
 
 #: inc_openoffice/windows/msi_languages/LaunchCo.ulf#OOO_LAUNCH_2
 msgid  "Please use the file setup.exe to start the installation."
@@ -1421,7 +1421,7 @@ msgstr "Atera: "
 
 #: inc_openoffice/windows/msi_languages/Nsis.ulf#MUI_TEXT_ABORTWARNING
 msgid  "Are you sure you want to quit the %PRODUCTNAME %PRODUCTVERSION Installation Preparation"
-msgstr ""
+msgstr "Ziur zaude %PRODUCTNAME %PRODUCTVERSION instalazio-prestaketatik irten nahi duzula"
 
 #: inc_openoffice/windows/msi_languages/SIS.ulf#OOO_SIS_TITLE
 msgid  "Installation database"
@@ -1497,7 +1497,7 @@ msgstr "Zehaztu sareko kokaleku bat produktuaren zerbitzari-irudiarentzat."
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_20
 msgid  "Enter the network location or click Change to browse to a location.  Click Install to create a server image of [ProductName] at the specified network location or click Cancel to exit the wizard."
-msgstr ""
+msgstr "Sartu sareko kokalekuan edo sakatu ‘Aldatu’ kokalekua arakatzeko. Sakatu ‘Instalatu’ [ProductName] aplikazioaren zerbitzari-irudia sortzeko zehaztutako sareko kokalekuan edo sakatu ‘Utzi’ morroitik irteteko."
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_21
 msgid  "{&MSSansBold8}Network Location"
@@ -1525,11 +1525,11 @@ msgstr "&Hurrengoa >"
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_27
 msgid  "{&TahomaBold10}Welcome to the Installation Wizard for [ProductName]"
-msgstr ""
+msgstr "{&TahomaBold10}Ongi etorri [ProductName] instalatzeko instalazio-morroira"
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_28
 msgid  "The Installation Wizard will create a server image of [ProductName] at a specified network location. To continue, click Next."
-msgstr ""
+msgstr "Instalazio-morroiak [ProductName] aplikazioaren zerbitzari-irudia sortuko du zehaztutako sareko kokalekuan. Jarraitzeko, sakatu ‘Hurrengoa’."
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_29
 msgid  "&No"
@@ -1537,7 +1537,7 @@ msgstr "&Ez"
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_30
 msgid  "Are you sure you want to cancel [ProductName] installation?"
-msgstr ""
+msgstr "Ziur zaude [ProductName] aplikazioaren instalazioa bertan behera utzi nahi duzula?"
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_31
 msgid  "&Yes"
@@ -1609,7 +1609,7 @@ msgstr "Hautatu instalatu nahi duzun programaren eginbideak."
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_53
 msgid  "Click on an icon in the list below to change how a feature is installed."
-msgstr ""
+msgstr "Egin klik beheko zerrendako ikono batean eginbideak instalatzeko modua aldatzeko."
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_54
 msgid  "{&MSSansBold8}Custom Setup"
@@ -1645,7 +1645,7 @@ msgstr "Eginbide-tamaina"
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_64
 msgid  "Custom Setup allows you to selectively install program features."
-msgstr ""
+msgstr "Instalazio pertsonalizatuak programa-eginbideak selektiboki instalatzeko aukera ematen dizu."
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_65
 msgid  "{&MSSansBold8}Custom Setup Tips"
@@ -1657,7 +1657,7 @@ msgstr "Ez dela instalatuko."
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_67
 msgid  "Will be installed on first use. (Available only if the feature supports this option.)"
-msgstr ""
+msgstr "Lehenengo aldiz erabiltzean instalatuko dela. (Aukera hori eginbideak onartzen badu bakarrik egongo da erabilgarri.)"
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_68
 msgid  "This install state means the feature..."
@@ -1669,11 +1669,11 @@ msgstr "Osorik instalatuko dela disko gogor lokalean."
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_70
 msgid  "The icon next to the feature name indicates the install state of the feature. Click the icon to drop down the install state menu for each feature."
-msgstr ""
+msgstr "Eginbide-izenaren ondoko ikonoak eginbidearen instalazio-egoera adierazten du. Egin klik ikonoan eginbideen instalazio-egoeraren goitibeherako menua irekitzeko."
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_71
 msgid  "Will be installed to run from the network. (Available only if the feature supports this option.)"
-msgstr ""
+msgstr "Saretik exekutatzeko instalatuko dela. (Aukera hori eginbideak onartzen badu bakarrik egongo da erabilgarri.)"
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_72
 msgid  "OK"
@@ -1681,7 +1681,7 @@ msgstr "Ados"
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_73
 msgid  "Will have some subfeatures installed to the local hard drive. (Available only if the feature has subfeatures.)"
-msgstr ""
+msgstr "Disko gogor lokalean azpieginbide batzuk instalatuta edukiko dituela. (Eginbideak azpieginbideak baditu bakarrik egongo da erabilgarri.)"
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_74
 msgid  "< &Back"
@@ -1697,7 +1697,7 @@ msgstr "&Aldatu..."
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_79
 msgid  "Click Next to install to this folder, or click Change to install to a different folder."
-msgstr ""
+msgstr "Sakatu 'Hurrengoa' karpeta honetan instalatzeko, edo sakatu 'Aldatu' beste karpeta batean instalatzeko."
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_80
 msgid  "{&MSSansBold8}Database Folder"
@@ -1729,7 +1729,7 @@ msgstr "&Aldatu..."
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_89
 msgid  "Click Next to install to this folder, or click Change to install to a different folder."
-msgstr ""
+msgstr "Sakatu 'Hurrengoa' karpeta honetan instalatzeko, edo sakatu 'Aldatu' beste karpeta batean instalatzeko."
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_90
 msgid  "{&MSSansBold8}Destination Folder"
@@ -1753,7 +1753,7 @@ msgstr "Hautatutako eginbideak instalatzeko diskoan behar den lekua."
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_97
 msgid  "The highlighted volumes do not have enough disk space available for the currently selected features. You can remove files from the highlighted volumes, choose to install less features onto local drives, or select different destination drives."
-msgstr ""
+msgstr "Nabarmendutako bolumenek ez dute nahikoa leku hautatutako eginbideentzat. Bolumen horietatik fitxategiak kendu, unitate lokaletan eginbide gutxiago instalatzea aukeratu edo beste helburu-unitate batzuk hauta ditzakezu."
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_98
 msgid  "{&MSSansBold8}Disk Space Requirements"
@@ -1769,7 +1769,7 @@ msgstr "Eguneratu beharreko fitxategi batzuk erabiltzen ari dira."
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_104
 msgid  "The following applications are using files that need to be updated by this setup. Close these applications and click Retry to continue."
-msgstr ""
+msgstr "Honako aplikazioak instalazio honetan eguneratu beharreko fitxategiak erabiltzen ari dira. Itxi aplikazio horiek eta sakatu ‘Saiatu berriro’ jarraitzeko."
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_105
 msgid  "{&MSSansBold8}Files in Use"
@@ -1837,11 +1837,11 @@ msgstr "&Hurrengoa >"
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_126
 msgid  "{&TahomaBold10}Welcome to the Installation Wizard for [ProductName]"
-msgstr ""
+msgstr "{&TahomaBold10}Ongi etorri [ProductName] instalatzeko instalazio-morroira"
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_127
 msgid  "The Installation Wizard will install [ProductName] on your computer. To continue, click Next."
-msgstr ""
+msgstr "Instalazio-morroiak [ProductName] instalatuko du zure ordenagailuan. Jarraitzeko, sakatu ‘Hurrengoa’."
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_128
 msgid  "< &Back"
@@ -1885,11 +1885,11 @@ msgstr "&Hurrengoa >"
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_143
 msgid  "Change which program features are installed. This option displays the Custom Selection dialog in which you can change the way features are installed."
-msgstr ""
+msgstr "Aldatu instalatutako programa-eginbideak. Aukera hori ‘Hautapen pertsonalizatua’ elkarrizketa-koadroan agertzen da. Hor eginbideak instalatzeko modua alda dezakezu."
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_144
 msgid  "Repair installation errors in the program. This option fixes missing or corrupt files, shortcuts, and registry entries."
-msgstr ""
+msgstr "Konpondu programako instalazio-erroreak. Aukera horrek galdutako edo hondatutako fitxategiak, lasterbideak eta erregistro-sarrerak konpontzen ditu."
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_145
 msgid  "Remove [ProductName] from your computer."
@@ -1909,11 +1909,11 @@ msgstr "&Hurrengoa >"
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_149
 msgid  "{&TahomaBold10}Welcome to the Installation Wizard for [ProductName]"
-msgstr ""
+msgstr "{&TahomaBold10}Ongi etorri [ProductName] instalatzeko instalazio-morroira"
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_150
 msgid  "The Installation Wizard will allow you to modify, repair, or remove [ProductName]. To continue, click Next."
-msgstr ""
+msgstr "Instalazio-morroiaren bidez [ProductName] aldatu, konpondu edo ken dezakezu. Jarraitzeko, sakatu ‘Hurrengoa’."
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_153
 msgid  "Disk space required for the installation exceeds available disk space."
@@ -1921,7 +1921,7 @@ msgstr "Instalatzeko behar den lekuak diskoko leku erabilgarria gainditzen du."
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_154
 msgid  "The highlighted volumes do not have enough disk space available for the currently selected features. You can remove files from the highlighted volumes, choose to install less features onto local drives, or select different destination drives."
-msgstr ""
+msgstr "Nabarmendutako bolumenek ez dute nahikoa leku hautatutako eginbideentzat. Bolumen horietatik fitxategiak kendu, unitate lokaletan eginbide gutxiago instalatzea aukeratu edo beste helburu-unitate batzuk hauta ditzakezu."
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_155
 msgid  "{&MSSansBold8}Out of Disk Space"
@@ -1953,7 +1953,7 @@ msgstr "{&TahomaBold10}Ongi etorri [ProductName] aplikazioarentzako adabakira"
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_162
 msgid  "The Installation Wizard will install the Patch for [ProductName] on your computer.  To continue, click Update."
-msgstr ""
+msgstr "Instalazio-morroiak [ProductName] aplikazioarentzako adabakia instalatuko du ordenagailuan. Jarraitzeko, sakatu ‘Eguneratu’."
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_163
 msgid  "< &Back"
@@ -1973,7 +1973,7 @@ msgstr "Sakatu ‘Instalatu’ instalatzen hasteko."
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_169
 msgid  "If you want to review or change any of your installation settings, click Back. Click Cancel to exit the wizard."
-msgstr ""
+msgstr "Instalazio-ezarpenak berrikusi edo aldatu nahi badituzu, sakatu ‘Atzera’. Morroitik irteteko, sakatu ‘Utzi’."
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_170
 msgid  "{&MSSansBold8}Ready to Modify the Program"
@@ -2005,7 +2005,7 @@ msgstr "Programa sistematik kentzea aukeratu duzu."
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_179
 msgid  "Click Remove to remove [ProductName] from your computer. After removal, this program will no longer be available for use."
-msgstr ""
+msgstr "Sakatu ‘Kendu’ [ProductName] ordenagailutik kentzeko. Kendutakoan, programa hori ez da egongo erabilgarri."
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_180
 msgid  "If you want to review or change any settings, click Back."
@@ -2033,7 +2033,7 @@ msgstr "&Amaitu"
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_186
 msgid  "Your system has not been modified. To complete installation at another time, please run setup again."
-msgstr ""
+msgstr "Sistema ez da aldatu. Instalazioa beste une batean amaitzeko, exekutatu instalazioa berriro."
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_187
 msgid  "Click Finish to exit the wizard."
@@ -2041,7 +2041,7 @@ msgstr "Sakatu 'Amaitu' morroitik irteteko."
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_188
 msgid  "You can either keep any existing installed elements on your system to continue this installation at a later time or you can restore your system to its original state prior to the installation."
-msgstr ""
+msgstr "Instalatutako elementuak sisteman manten ditzakezu instalazioarekin aurrerago jarraitzeko, edo sistema instalazioaren aurretik zuen jatorrizko egoerara lehenera dezakezu."
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_189
 msgid  "Click Restore or Continue Later to exit the wizard."
@@ -2053,7 +2053,7 @@ msgstr "{&TahomaBold10}Instalazio-morroia amaitu da"
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_191
 msgid  "The wizard was interrupted before [ProductName] could be completely installed."
-msgstr ""
+msgstr "Morroia eten egin da [ProductName] erabat instalatu aurretik."
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_192
 msgid  "< &Back"
@@ -2065,7 +2065,7 @@ msgstr "Utzi"
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_194
 msgid  "&Yes, check for program updates (Recommended) after the setup completes."
-msgstr ""
+msgstr "&Bai, egiaztatu programa-eguneratzeak dauden (gomendatua) instalazioa amaitutakoan."
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_195
 msgid  "Launch the program"
@@ -2085,11 +2085,11 @@ msgstr "{&TahomaBold10}Instalazio-morroia amaitu da"
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_199
 msgid  "The Installation Wizard has successfully installed [ProductName]. Click Finish to exit the wizard."
-msgstr ""
+msgstr "Instalazio-morroiak behar bezala instalatu du [ProductName]. Sakatu ‘Amaitu’ morroitik irteteko."
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_200
 msgid  "The Installation Wizard has successfully uninstalled [ProductName]. Click Finish to exit the wizard."
-msgstr ""
+msgstr "Instalazio-morroiak behar bezala desinstalatu du [ProductName]. Sakatu ‘Amaitu’ morroitik irteteko."
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_201
 msgid  "Setup has finished installing [ProductName]."
@@ -2097,11 +2097,11 @@ msgstr "Instalazio-programak [ProductName] instalatu du."
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_202
 msgid  "Some program files might have been updated since you purchased your copy of [ProductName]."
-msgstr ""
+msgstr "Baliteke programa-fitxategi batzuk eguneratuta egotea [ProductName] aplikazioaren kopia erosi zenuenetik."
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_203
 msgid  "Your Internet connection can be used to make sure that you have the latest updates."
-msgstr ""
+msgstr "Internet konexioa erabil daiteke azken eguneratzeak dituzula ziurtatzeko."
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_204
 msgid  "&Abort"
@@ -2113,7 +2113,7 @@ msgstr "&Utzi"
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_206
 msgid  "error text goes here  error text goes here  error text goes here  error text goes here  error text goes here  error text goes here  error text goes here  error text goes here  error text goes here  error text goes here"
-msgstr ""
+msgstr "errorearen testua hemen doa  errorearen testua hemen doa  errorearen testua hemen doa  errorearen testua hemen doa  errorearen testua hemen doa  errorearen testua hemen doa  errorearen testua hemen doa"
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_207
 msgid  "&Ignore"
@@ -2149,11 +2149,11 @@ msgstr "&Hurrengoa >"
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_217
 msgid  "{&TahomaBold10}Welcome to the Installation Wizard for [ProductName]"
-msgstr ""
+msgstr "{&TahomaBold10}Ongi etorri [ProductName] instalatzeko instalazio-morroira"
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_218
 msgid  "[ProductName] Setup is preparing the Installation Wizard which will guide you through the program setup process.  Please wait."
-msgstr ""
+msgstr "[ProductName] instalazio-programa instalazio-morroia prestatzen ari da. Morroi horrek instalazio-prozesuan gidatuko zaitu. Itxaron."
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_219
 msgid  "< &Back"
@@ -2169,7 +2169,7 @@ msgstr "&Amaitu"
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_222
 msgid  "Your system has not been modified. To install this program at a later time, please run the installation again."
-msgstr ""
+msgstr "Sistema ez da aldatu. Programa hau aurrerago instalatzeko, exekutatu instalazioa berriro."
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_223
 msgid  "Click Finish to exit the wizard."
@@ -2177,7 +2177,7 @@ msgstr "Sakatu 'Amaitu' morroitik irteteko."
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_224
 msgid  "You can either keep any existing installed elements on your system to continue this installation at a later time or you can restore your system to its original state prior to the installation."
-msgstr ""
+msgstr "Instalatutako elementuak sisteman manten ditzakezu instalazioarekin aurrerago jarraitzeko, edo sistema instalazioaren aurretik zuen jatorrizko egoerara lehenera dezakezu."
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_225
 msgid  "Click Restore or Continue Later to exit the wizard."
@@ -2189,7 +2189,7 @@ msgstr "{&TahomaBold10}Instalazio-morroia amaitu da"
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_227
 msgid  "The wizard was interrupted before [ProductName] could be completely installed."
-msgstr ""
+msgstr "Morroia eten egin da [ProductName] erabat instalatu aurretik."
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_228
 msgid  "Progress done"
@@ -2213,11 +2213,11 @@ msgstr "Hautatu dituzun programa-eginbideak desinstalatzen ari dira."
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_236
 msgid  "Please wait while the Installation Wizard installs [ProductName]. This may take several minutes."
-msgstr ""
+msgstr "Itxaron instalazio-morroiak [ProductName] instalatu arte. Horrek minutu batzuk iraun ditzake."
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_237
 msgid  "Please wait while the Installation Wizard uninstalls [ProductName]. This may take several minutes."
-msgstr ""
+msgstr "Itxaron instalazio-morroiak [ProductName] desinstalatu arte. Horrek minutu batzuk iraun ditzake."
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_238
 msgid  "{&MSSansBold8}Installing [ProductName]"
@@ -2257,11 +2257,11 @@ msgstr "&Hurrengoa >"
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_248
 msgid  "The Installation Wizard will complete the installation of [ProductName] on your computer. To continue, click Next."
-msgstr ""
+msgstr "Instalazio-morroiak [ProductName] ordenagailuan instalatzen jarraituko du. Jarraitzeko, sakatu ‘Hurrengoa’."
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_249
 msgid  "The Installation Wizard will complete the suspended installation of [ProductName] on your computer. To continue, click Next."
-msgstr ""
+msgstr "Instalazio-morroiak [ProductName] aplikazioaren etendako instalaziorekin jarraituko du. Jarraitzeko, sakatu ‘Hurrengoa’."
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_250
 msgid  "{&TahomaBold10}Resuming the Installation Wizard for [ProductName]"
@@ -2277,11 +2277,11 @@ msgstr "Utzi"
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_255
 msgid  "The main components will be installed. Recommended for most users."
-msgstr ""
+msgstr "Osagai nagusiak instalatuko dira. Erabiltzaile gehienentzako gomendatua."
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_256
 msgid  "Choose which program features you want installed and where they will be installed. Recommended for advanced users."
-msgstr ""
+msgstr "Aukeratu zein programa-eginbide eta non instalatu nahi dituzun. Erabiltzaile aurreratuentzat gomendatua."
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_257
 msgid  "Choose the setup type that best suits your needs."
@@ -2341,11 +2341,11 @@ msgstr "&[ProductName] Writer/Web"
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_274
 msgid  "Set [DEFINEDPRODUCT] to be the default application for Microsoft Office file types."
-msgstr ""
+msgstr "Ezarri [DEFINEDPRODUCT] aplikazio lehenetsia izateko Microsoft Office-ren fitxategi motentzako."
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_275
 msgid  "[ProductName] can be set as the default application to open Microsoft Office file types. This means, for instance, that if you double click on one of these files, [ProductName] will open it, not the program that opens it now."
-msgstr ""
+msgstr "Microsoft Office-ren fitxategi motak irekitzeko aplikazio lehenetsia bezala ezar daiteke [ProductName]. Adibidez, fitxategi hauetariko batean klik eginez gero, [ProductName] aplikazioak irekiko du, ez orain arte irekitzen zuen aplikazioak."
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_276
 msgid  "File types"
@@ -2361,11 +2361,11 @@ msgstr "{&MSSansBold8}Fitxategi mota"
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_300
 msgid  "A version of [DEFINEDPRODUCT] [DEFINEDVERSION] was found by the [ProductName] Installation Wizard. This version will be updated."
-msgstr ""
+msgstr "[ProductName] instalazio-morroiak [DEFINEDPRODUCT] [DEFINEDVERSION](r)en bertsio bat aurkitu du. Lehengo bertsioa eguneratu egingo da."
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_301
 msgid  "The destination folder specified below does not contain a [DEFINEDPRODUCT] [DEFINEDVERSION] version."
-msgstr ""
+msgstr "Behean zehaztutako helburu-karpetak ez dauka [DEFINEDPRODUCT] [DEFINEDVERSION] bertsiorik."
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_302
 msgid  "A newer [DEFINEDPRODUCT] [DEFINEDVERSION] has been found."
@@ -2380,15 +2380,15 @@ msgid  "Check the destination folder."
 msgstr "Markatu helburu-karpeta."
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_305
-msgid  "To continue, click "Next"."
+msgid  "To continue, click \"Next\"."
 msgstr ""
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_306
-msgid  "To select a different version, click "Change". Otherwise click "Cancel" to abort the Installation Wizard."
+msgid  "To select a different version, click \"Change\". Otherwise click \"Cancel\" to abort the Installation Wizard."
 msgstr ""
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_307
-msgid  "To select a different folder, click "Change"."
+msgid  "To select a different folder, click \"Change\"."
 msgstr ""
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_308
@@ -2397,15 +2397,15 @@ msgstr "Instalatu [ProductName] hemen:"
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_309
 msgid  "If you are just trying out [ProductName], you probably don't want this to happen, so leave the boxes unchecked."
-msgstr ""
+msgstr "[ProductName] probatzen ari bazara, ez duzu nahiko hori gertatzerik. Horregatik, utzi koadroak markatu gabe."
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_317
 msgid  "No languages have been selected for installation. Click OK to select one or more languages for installation."
-msgstr ""
+msgstr "Ez da hizkuntzarik hautatu instalatzeko. Egin klik Ados botoian hizkuntza bat edo gehiago hautatzeko instalatzeko."
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_318
 msgid  "No applications have been selected for installation. Click OK to select one or more applications for installation."
-msgstr ""
+msgstr "Ez da aplikaziorik hautatu instalatzeko. Egin klik Ados botoian aplikazio bat edo gehiago hautatzeko instalatzeko."
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_319
 msgid  "Create a start link on desktop"

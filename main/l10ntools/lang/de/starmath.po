@@ -33,11 +33,11 @@ msgstr ""
 
 #: source/smres.src#RID_FONTDIALOG.ModalDialog.Text
 msgid  "Fonts"
-msgstr "Schriftarten"
+msgstr "Schriften"
 
 #: source/smres.src#RID_FONTDIALOG.1.FixedText.Text
 msgid  "~Font"
-msgstr "Schri~ftart"
+msgstr "~Schriftart"
 
 #: source/smres.src#RID_FONTDIALOG.1.CheckBox.Text
 msgid  "~Bold"
@@ -261,7 +261,7 @@ msgstr "~Spaltenabstand"
 
 #: source/smres.src#RID_DISTANCEDIALOG.8.1.String.Text
 msgid  "Symbols"
-msgstr "Ornamente"
+msgstr "Symbole"
 
 #: source/smres.src#RID_DISTANCEDIALOG.8.2.String.Text
 msgid  "~Primary height"
@@ -377,7 +377,7 @@ msgstr "Nur verwendete Symbole einbetten (kleinere Dateigröße)"
 
 #: source/smres.src#RID_SYMBOLDIALOG.ModalDialog.Text
 msgid  "Symbols"
-msgstr "Ornamente"
+msgstr "Symbole"
 
 #: source/smres.src#RID_SYMBOLDIALOG.1.FixedText.Text
 msgid  "~Symbol set"
@@ -445,11 +445,11 @@ msgstr "~Löschen"
 
 #: source/smres.src#RID_NOMATHTYPEFACEWARNING.WarningBox.Message
 msgid  "The 'StarMath' font has not been installed.\nWithout this font %PRODUCTNAME Math cannot function correctly.\nPlease install this font and restart %PRODUCTNAME Math."
-msgstr ""
+msgstr "Die Schriftart 'StarMath' ist nicht installiert.\nOhne diese Schrift kann %PRODUCTNAME Math nicht korrekt arbeiten.\nInstallieren Sie die Schriftart und starten Sie %PRODUCTNAME Math erneut."
 
 #: source/smres.src#RID_DEFAULTSAVEQUERY.QueryBox.Message
 msgid  "Should the changes be saved as defaults?\n\nThese changes will apply for all new formulas."
-msgstr ""
+msgstr "Sollen die Änderungen als Standard gespeichert werden?\n\nDiese Änderungen wirken sich auf alle neuen Formeln aus."
 
 #: source/smres.src#RID_FONTREGULAR.String.Text
 msgid  "Standard"
@@ -558,6 +558,10 @@ msgstr "Sans"
 #: source/smres.src#RID_FONTMENU.7.MenuItem.Text
 msgid  "Fixed"
 msgstr "Fixed"
+
+#: source/smres.src#CMDBOXWINDOW_TEXT.#define.Text
+msgid  "Commands"
+msgstr "Kommandos"
 
 #: source/smres.src#RID_DOCUMENTSTR.String.Text
 msgid  "Formula"
@@ -694,10 +698,6 @@ msgstr "~Seite anpassen"
 #: source/smres.src#RID_PRINTUIOPTIONS.item9.ItemList.item
 msgid  "~Scaling"
 msgstr "S~kalierung"
-
-#: source/smres.src#CMDBOXWINDOW_TEXT.#define.Text
-msgid  "Commands"
-msgstr "Kommandos"
 
 #: source/commands.src#RID_COMMANDMENU.RID_UNBINOPS_MENU.MenuItem.Text
 msgid  "~Unary/Binary Operators"
@@ -901,11 +901,11 @@ msgstr "ist orthogonal zu"
 
 #: source/toolbox.src#RID_TOOLBOXWINDOW.TOOLBOX_CAT_B.RID_XLESLANTY.ToolBoxItem.Text
 msgid  "Is Less Than Or Equal To"
-msgstr "ist kleiner gleich"
+msgstr "ist kleiner gleich (schräg)"
 
 #: source/toolbox.src#RID_TOOLBOXWINDOW.TOOLBOX_CAT_B.RID_XGESLANTY.ToolBoxItem.Text
 msgid  "Is Greater Than Or Equal To"
-msgstr "ist größer gleich"
+msgstr "ist größer gleich (schräg)"
 
 #: source/toolbox.src#RID_TOOLBOXWINDOW.TOOLBOX_CAT_B.RID_XSIMY.ToolBoxItem.Text
 msgid  "Is Similar To"
@@ -1033,7 +1033,7 @@ msgstr "Menge der komplexen Zahlen"
 
 #: source/toolbox.src#RID_TOOLBOXWINDOW.TOOLBOX_CAT_D.RID_EX.ToolBoxItem.Text
 msgid  "Exponential Function"
-msgstr "Exponentialfunktion"
+msgstr "e-Funktion"
 
 #: source/toolbox.src#RID_TOOLBOXWINDOW.TOOLBOX_CAT_D.RID_LNX.ToolBoxItem.Text
 msgid  "Natural Logarithm"

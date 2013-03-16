@@ -39,6 +39,10 @@ msgstr "Aukeratu tituluen, legendaren eta saretaren ezarpenak"
 msgid  "Display grids"
 msgstr "Bistaratu sareta"
 
+#: source/controller/dialogs/tp_3D_SceneGeometry.src#CUSTOMUNITTEXT_DEGREE.#define.CustomUnitText
+msgid  " degrees"
+msgstr " gradu"
+
 #: source/controller/dialogs/tp_3D_SceneGeometry.src#TP_3D_SCENEGEOMETRY.CBX_RIGHT_ANGLED_AXES.CheckBox.Text
 msgid  "~Right-angled axes"
 msgstr "~Angeluzuzendun ardatzak"
@@ -58,10 +62,6 @@ msgstr "~Z biraketa"
 #: source/controller/dialogs/tp_3D_SceneGeometry.src#TP_3D_SCENEGEOMETRY.CBX_PERSPECTIVE.CheckBox.Text
 msgid  "~Perspective"
 msgstr "~Perspektiba"
-
-#: source/controller/dialogs/tp_3D_SceneGeometry.src#CUSTOMUNITTEXT_DEGREE.#define.CustomUnitText
-msgid  " degrees"
-msgstr " gradu"
 
 #: source/controller/dialogs/Strings_AdditionalControls.src#STR_3DSCHEME_SIMPLE.String.Text
 msgid  "Simple"
@@ -257,23 +257,23 @@ msgstr "Zenbakiak behar dira. Egiaztatu zure sarrera."
 
 #: source/controller/dialogs/Strings_Scale.src#STR_STEP_GT_ZERO.String.Text
 msgid  "The major interval requires a positive number. Check your input."
-msgstr ""
+msgstr "Bitarte nagusiak zenbaki positiboa eskatzen du. Egiaztatu zure sarrera."
 
 #: source/controller/dialogs/Strings_Scale.src#STR_BAD_LOGARITHM.String.Text
 msgid  "The logarithmic scale requires positive numbers. Check your input."
-msgstr ""
+msgstr "Eskala logaritmikoak zenbaki positiboak eskatzen ditu. Egiaztatu zure sarrera."
 
 #: source/controller/dialogs/Strings_Scale.src#STR_MIN_GREATER_MAX.String.Text
 msgid  "The minimum must be lower than the maximum. Check your input."
-msgstr ""
+msgstr "Gutxienekoa gehienezkoa baino txikiagoa izan behar du. Egiaztatu zure sarrera."
 
 #: source/controller/dialogs/Strings_Scale.src#STR_INVALID_INTERVALS.String.Text
 msgid  "The major interval needs to be greater than the minor interval. Check your input."
-msgstr ""
+msgstr "Tarte nagusia txikienak baino baino handiagoa behar du izan. Sartutako baloreak egiaztatu."
 
 #: source/controller/dialogs/Strings_Scale.src#STR_INVALID_TIME_UNIT.String.Text
 msgid  "The major and minor interval need to be greater or equal to the resolution. Check your input."
-msgstr ""
+msgstr "Tarte nagusiak eta bigarrenekoak bereizmena baino handiagoak edo berdinak izango dira. Sartutako baloreak egiaztatu."
 
 #: source/controller/dialogs/dlg_DataEditor.src#DLG_DIAGRAM_DATA.ModalDialog.Text
 msgid  "Data Table"
@@ -889,7 +889,7 @@ msgstr "Asiar tipografia"
 
 #: source/controller/dialogs/Strings.src#STR_OBJECT_AVERAGE_LINE_WITH_PARAMETERS.String.Text
 msgid  "Mean value line with value %AVERAGE_VALUE and standard deviation %STD_DEVIATION"
-msgstr ""
+msgstr "Batez besteko balioaren marra %AVERAGE_VALUE balioarekin eta %STD_DEVIATION desbiderapen estandarrarekin"
 
 #: source/controller/dialogs/Strings.src#STR_OBJECT_AXIS.String.Text
 msgid  "Axis"
@@ -1097,11 +1097,11 @@ msgstr "Balioak: %POINTVALUES"
 
 #: source/controller/dialogs/Strings.src#STR_TIP_DATAPOINT.String.Text
 msgid  "Data Point %POINTNUMBER, data series %SERIESNUMBER, values: %POINTVALUES"
-msgstr ""
+msgstr "%POINTNUMBER datu-puntua, %SERIESNUMBER datu-serieak, balioa: %POINTVALUES"
 
 #: source/controller/dialogs/Strings.src#STR_STATUS_DATAPOINT_MARKED.String.Text
 msgid  "Data point %POINTNUMBER in data series %SERIESNUMBER selected, values: %POINTVALUES"
-msgstr ""
+msgstr "%SERIESNUMBER datu-serieko %POINTNUMBER datu-puntua hautatuta, balioa: %POINTVALUES"
 
 #: source/controller/dialogs/Strings.src#STR_STATUS_OBJECT_MARKED.String.Text
 msgid  "%OBJECTNAME selected"
@@ -1257,7 +1257,7 @@ msgstr "Hautatu errore-barra negatiboen barrutia"
 
 #: source/controller/dialogs/Strings.src#STR_DATA_EDITOR_INCORRECT_INPUT.String.Text
 msgid  "Your last input is incorrect.\nIgnore this change and close the dialog?"
-msgstr ""
+msgstr "Zure azken sarrera ez da zuzena.\nAldaketa honi ez ikusi egin eta elkarrizketa-koadroa ixtea nahi duzu?"
 
 #: source/controller/dialogs/Strings.src#STR_TEXT_DIRECTION_LTR.String.Text
 msgid  "Left-to-right"

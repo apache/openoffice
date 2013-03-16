@@ -49,7 +49,7 @@ msgstr "המרה"
 
 #: source/euro/euro.src#STEP_ZERO + 4.String.Text
 msgid  "Note: Currency amounts from external links and currency conversion factors in formulas cannot be converted."
-msgstr ""
+msgstr "לתשומת לבך: אין אפשרות להסב נתונים כספיים ושערי מטבע מקישורים חיצוניים בנוסחאות.‏"
 
 #: source/euro/euro.src#STEP_ZERO + 5.String.Text
 msgid  "First, unprotect all sheets."
@@ -153,7 +153,7 @@ msgstr "מצב המרת תבניות התאים:‏"
 
 #: source/euro/euro.src#STATUSLINE + 2.String.Text
 msgid  "Registration of the relevant ranges: Sheet %1Number%1 of %2TotPageCount%2"
-msgstr ""
+msgstr "רישום טווחים: גיליון %1Number%1 מתוך %2TotPageCount%2‏"
 
 #: source/euro/euro.src#STATUSLINE + 3.String.Text
 msgid  "Entry of the ranges to be converted..."
@@ -221,11 +221,11 @@ msgstr "לא ניתן להסיר הגנת הגליון"
 
 #: source/euro/euro.src#MESSAGES + 13.String.Text
 msgid  "The Wizard cannot edit this document as cell formats cannot be modified in documents containing protected spreadsheets."
-msgstr ""
+msgstr "אין אפשרות לטייס האוטומטי לערוך את המסמך מכיוון שלא ניתן לשנות צורות של תאים במסמכים המכילים גליונות מוגנים.‏"
 
 #: source/euro/euro.src#MESSAGES + 14.String.Text
 msgid  "Please note that the Euro Converter will, otherwise, not be able to edit this document!"
-msgstr ""
+msgstr "לתשומת לבך: אין אפשרות לערוך את המסמך ב'מסב האירו' חוץ מהסבת מטבע.‏"
 
 #: source/euro/euro.src#MESSAGES + 15.String.Text
 msgid  "Please choose a currency to be converted first!"
@@ -337,7 +337,7 @@ msgstr "המטבע שנקבע במסמך אינו מטבע אירופי!"
 
 #: source/euro/euro.src#CURRENCIES + 17.String.Text
 msgid  "The language set for your operating system is not a language of the European Monetary Union."
-msgstr ""
+msgstr "השפה המוגדרת עבור מערכת ההפעלה שלך אינה שפה של האיחוד המוניטרי האירופי."
 
 #: source/euro/euro.src#STEP_LASTPAGE.String.Text
 msgid  "Progress"
@@ -361,35 +361,35 @@ msgstr "הגליון תמיד ללא הגנה"
 
 #: source/formwizard/dbwizres.src#RID_COMMON_START + 0.String.Text
 msgid  "The directory '%1' could not be created.<BR>There may not be enough space left on your hard disk."
-msgstr ""
+msgstr "לא ניתן ליצור תיקיה '%1'.‏‪<br>‬‏יכול להיות שאין מקום בדיסק.‏"
 
 #: source/formwizard/dbwizres.src#RID_COMMON_START + 1.String.Text
 msgid  "The text document could not be created.<BR>Please check if the module 'PRODUCTNAME Writer' is installed."
-msgstr ""
+msgstr "לא ניתן ליצור את מסמך הטקסט.‏‪<br>‬‏נא לבדוק אם מודול הכתבן של PRODUCTNAME מותקן.‏"
 
 #: source/formwizard/dbwizres.src#RID_COMMON_START + 2.String.Text
 msgid  "The spreadsheet could not be created.<BR>Please check if the module 'PRODUCTNAME Calc' is installed."
-msgstr ""
+msgstr "לא ניתן ליצור את גליון העבודה.‏‪<br>‬‏נא לבדוק אם מודול 'Calc' של PRODUCTNAME מותקן.‏"
 
 #: source/formwizard/dbwizres.src#RID_COMMON_START + 3.String.Text
 msgid  "The presentation could not be created.<BR>Please check if the module 'PRODUCTNAME Impress' is installed."
-msgstr ""
+msgstr "לא ניתן ליצור את המצגת.‏‪<br>‬‏נא לבדוק אם מודול המצגות של אופן אופיס מותקן.‏"
 
 #: source/formwizard/dbwizres.src#RID_COMMON_START + 4.String.Text
 msgid  "The drawing could not be created.<BR>Please check if the module 'PRODUCTNAME Draw' is installed."
-msgstr ""
+msgstr "לא ניתן ליצור את הציור.‏‪<br>‬‏נא לבדוק אם מודול הצייר של אופן אופיס מותקן.‏"
 
 #: source/formwizard/dbwizres.src#RID_COMMON_START + 5.String.Text
 msgid  "The formula could not be created.<BR>Please check if the module 'PRODUCTNAME Math' is installed."
-msgstr ""
+msgstr "לא ניתן ליצור את הנוסחה.‏‪<br>‬‏נא לבדוק אם מודול הנוסחאות של אופן אופיס מותקן.‏"
 
 #: source/formwizard/dbwizres.src#RID_COMMON_START + 6.String.Text
 msgid  "The files required could not be found.<BR>Please start the %PRODUCTNAME Setup and choose 'Repair'."
-msgstr ""
+msgstr "הקבצים הנדרשים לא נמצאו.‏‪<br>‬‏נא להפעיל את תוכנית ההתקנה לש אופן אופיס מחדש ולבחור התקנת תיקון. ‏"
 
 #: source/formwizard/dbwizres.src#RID_COMMON_START + 7.String.Text
 msgid  "The file '<PATH>' already exists.<BR><BR>Would you like to overwrite the existing file?"
-msgstr ""
+msgstr "הקובץ '‏‪<PATH>‬‏' כבר קיים.‏‏‪<BR><BR>‬‏האם לדרוס את הקובץ הקיים?‏"
 
 #: source/formwizard/dbwizres.src#RID_COMMON_START + 8.String.Text
 msgid  "Yes"
@@ -445,7 +445,7 @@ msgstr "תבנית נבנתה על ידי ‏‪<wizard_name>‬‏ בתאריך
 
 #: source/formwizard/dbwizres.src#RID_COMMON_START + 21.String.Text
 msgid  "The wizard could not be run, because important files were not found.\nUnder 'Tools - Options - %PRODUCTNAME - Paths' click the 'Default' button to reset the paths to the original default settings.\nThen run the wizard again."
-msgstr ""
+msgstr "לא ניתן להפעיל את האשף כי קבצים נדרשים להפעלתו לא נמצאו.\nב 'כלים -< אפשרויות -< נתיבי אופן אופיס' יש ללחוץ על הכפתור 'ברירות מחדל' על מנת להחזיר את הנתיבים לערכים ההתחלתיים.\nלאחר מכן יש להפעיל את האשף מחדש."
 
 #: source/formwizard/dbwizres.src#RID_DB_COMMON_START + 0.String.Text
 msgid  "C~reate"
@@ -473,7 +473,7 @@ msgstr "שם טבלה"
 
 #: source/formwizard/dbwizres.src#RID_DB_COMMON_START + 6.String.Text
 msgid  "An error occurred while running the wizard. The wizard will be terminated."
-msgstr ""
+msgstr "ארעה שגיאה בעת הפעלת האשף. האשף יופסק.‏"
 
 #: source/formwizard/dbwizres.src#RID_DB_COMMON_START + 14.String.Text
 msgid  "No connection to the database could be established."
@@ -553,11 +553,11 @@ msgstr "שדות בטופס"
 
 #: source/formwizard/dbwizres.src#RID_DB_FORM_WIZARD_START + 2.String.Text
 msgid  "Binary fields are always listed and selectable from the left list.\nIf possible, they are interpreted as images."
-msgstr ""
+msgstr "שדות בינריים תמיד נרשמים ונבחרים מהרשימה השמאלית.\nבמידה ואפשר, הם מוצגים כעצמים גרפיים.‏"
 
 #: source/formwizard/dbwizres.src#RID_DB_FORM_WIZARD_START + 3.String.Text
 msgid  "A subform is a form that is inserted in another form.\nUse subforms to show data from tables or queries with a one-to-many relationship."
-msgstr ""
+msgstr "'תת טופס' הוא טופס שהוכנס בתוך טופס אחר.\nמשתמשים בתת טפסים כדי להציג נתונים מטבלאות או משאילתות כאשר קיים יחס אחד לרבים בין הנתונים."
 
 #: source/formwizard/dbwizres.src#RID_DB_FORM_WIZARD_START + 4.String.Text
 msgid  "~Add Subform"
@@ -593,7 +593,7 @@ msgstr "שדות בטופס"
 
 #: source/formwizard/dbwizres.src#RID_DB_FORM_WIZARD_START + 19.String.Text
 msgid  "The join '<FIELDNAME1>' and '<FIELDNAME2>' has been selected twice.\nBut joins may only be used once."
-msgstr ""
+msgstr "החיבור ‏‪(join)‬‏ בין ‏‫'<FIELDNAME1>'‬‏ ל ‏‪'<FIELDNAME2>'‬‏ נבחר פעמיים\nלמרות שחיבורים ניתנים לשימוש פעם אחת בלבד.‏"
 
 #: source/formwizard/dbwizres.src#RID_DB_FORM_WIZARD_START + 20.String.Text
 msgid  "~First joined subform field"
@@ -805,7 +805,7 @@ msgstr "קביעת שם לטופס"
 
 #: source/formwizard/dbwizres.src#RID_DB_FORM_WIZARD_START + 98.String.Text
 msgid  "A form with the name '%FORMNAME' already exists.\nChoose another name."
-msgstr ""
+msgstr "טופס בשם ‏‪'%FORMNAME'‬‏ כבר קיים במערכת.‏\nנא לבחור שם אחר.‏"
 
 #: source/formwizard/dbwizres.src#RID_DB_QUERY_WIZARD_START + 0.String.Text
 msgid  "Query Wizard"
@@ -1097,15 +1097,15 @@ msgstr "סקירה כללית"
 
 #: source/formwizard/dbwizres.src#RID_DB_QUERY_WIZARD_START + 88.String.Text
 msgid  "A field that has not been assigned an aggregate function must be used in a group."
-msgstr ""
+msgstr "כל קבוצה חייבת לכלול שדה שלא הושם לו פונקצית צבירה.‏"
 
 #: source/formwizard/dbwizres.src#RID_DB_QUERY_WIZARD_START + 89.String.Text
 msgid  "The condition '<FIELDNAME> <LOGICOPERATOR> <VALUE>' was chosen twice. Each condition can only be chosen once"
-msgstr ""
+msgstr "התנאי ‏‪'‏‪<FIELDNAME>‬‏ <LOGICOPERATOR> <VALUE>'‬‏ נבחר פעמיים. אסור לבחור תנאי יותר מפעם אחת.‏"
 
 #: source/formwizard/dbwizres.src#RID_DB_QUERY_WIZARD_START + 90.String.Text
 msgid  "The aggregate function <FUNCTION> has been assigned twice to the fieldname '<NUMERICFIELD>'."
-msgstr ""
+msgstr "תפקוד הצבירה ‏‪<FUNCTION>‬‏ הושם פעמיים לשדה ‏‪'<NUMERICFIELD>'‬‏.‏"
 
 #: source/formwizard/dbwizres.src#RID_DB_QUERY_WIZARD_START + 91.String.Text
 msgid  ", "
@@ -1321,11 +1321,11 @@ msgstr "טופס ‏‪'‏‪<REPORTFORM>‬‏'‬‏ לא קיים"
 
 #: source/formwizard/dbwizres.src#RID_DB_REPORT_WIZARD_START + 65.String.Text
 msgid  "The query with the statement <BR>'<STATEMENT>' <BR> could not be run. <BR> Check your data source."
-msgstr ""
+msgstr "לא ניתן להפעיל את השאילתא עם הביטוי ‏‪‏‪<BR>'<STATEMENT>‬‏' <BR>‬‏. יש לבדוק אם מקור הנתונים תומך בביטוי.‏"
 
 #: source/formwizard/dbwizres.src#RID_DB_REPORT_WIZARD_START + 66.String.Text
 msgid  "The following hidden control in the form '<REPORTFORM>' could not be read: '<CONTROLNAME>'."
-msgstr ""
+msgstr "לא ניתן לקראו את הפקד המוסתר ‏‪'‏‪<CONTROLNAME>‬‏'‬‏ בטופס ‏‪'<REPORTFORM>'‬‏.‏"
 
 #: source/formwizard/dbwizres.src#RID_DB_REPORT_WIZARD_START + 67.String.Text
 msgid  "Importing data..."
@@ -1349,7 +1349,7 @@ msgstr "ללא שם"
 
 #: source/formwizard/dbwizres.src#RID_DB_REPORT_WIZARD_START + 72.String.Text
 msgid  "An error occurred in the wizard.<BR>The template '%PATH' could be erroneous.<BR>Either the required sections or tables do not exist or exist under the wrong name.<BR>See the Help for more detailed information.<BR>Please select another template."
-msgstr ""
+msgstr "ארעה שגיאה באשף.‏‪<BR>‬‏התבנית ‏‪'%PATH'‬‏ כנראה שגויה.‏‪<BR>‬‏הקטעים או טבלאות הנדרשים אינם קיימים או קיימים תחת שם לא נכון.‏‪<BR>‬‏נא לבחור תבנית אחרת.‏"
 
 #: source/formwizard/dbwizres.src#RID_DB_REPORT_WIZARD_START + 73.String.Text
 msgid  "There is an invalid user field in a table."
@@ -1357,15 +1357,15 @@ msgstr "יש שדה משתמש בלתי חוקי בטבלה.‏"
 
 #: source/formwizard/dbwizres.src#RID_DB_REPORT_WIZARD_START + 74.String.Text
 msgid  "The sort criterium '<FIELDNAME>' was chosen twice. Each criterium can only be chosen once."
-msgstr ""
+msgstr "תנאי המיון ‏‪'‏‪<FIELDNAME>‬‏'‬‏ נבחר פעמיים. אין לבחור תנאי מסויים יותר מפעם אחת.‏"
 
 #: source/formwizard/dbwizres.src#RID_DB_REPORT_WIZARD_START + 75.String.Text
 msgid  "Note: The dummy text will be replaced by data from the database when the report is created."
-msgstr ""
+msgstr "הערה: הטקסט הסתמי יוחלף בנתונים ממסד הנתונים בעת יצירת הדו\"ח.‏"
 
 #: source/formwizard/dbwizres.src#RID_DB_REPORT_WIZARD_START + 76.String.Text
 msgid  "A report '%REPORTNAME' already exists in the database. Please assign another name."
-msgstr ""
+msgstr "דו\"ח בעל שם זהה, ‏‪'%REPORTNAME'‬‏ כבר קיים. נא לבחור שם אחר.‏"
 
 #: source/formwizard/dbwizres.src#RID_DB_REPORT_WIZARD_START + 78.String.Text
 msgid  "How do you want to proceed after creating the report?"
@@ -1465,7 +1465,7 @@ msgstr "יצירת טבלה"
 
 #: source/formwizard/dbwizres.src#RID_DB_TABLE_WIZARD_START + 14.String.Text
 msgid  "This wizard helps you to create a table for your database. After selecting a table category and a sample table, choose the fields you want to include in your table. You can include fields from more than one sample table."
-msgstr ""
+msgstr "אשף זה עוזר בהגדרת טבלאות למסד הנתונים. יש לבחור סוג של טבלה וטבלה לדוגמה, ואחר כך לבחור את שדות הטבלה. ניתן לבחור שדות מכמה טבלאות לדוגמה.‏"
 
 #: source/formwizard/dbwizres.src#RID_DB_TABLE_WIZARD_START + 15.String.Text
 msgid  "Ca~tegory"
@@ -1509,7 +1509,7 @@ msgstr "שדות נבחרים"
 
 #: source/formwizard/dbwizres.src#RID_DB_TABLE_WIZARD_START + 26.String.Text
 msgid  "A primary key uniquely identifies each record in a database table. Primary keys ease the linking of information in separate tables, and it is recommended that you have a primary key in every table. Without a primary key, it will not be possible to enter data into this table."
-msgstr ""
+msgstr "ללא מפתח עיקרי לא תהיה אפשרות להכניס נתונים לטבלה זו. המפתח העיקרי מזהה כל רשומה במסד הנתונים בנפרד. השימוש במפתחות עיקריים מאפשרת הגדרת קשרים בין מידע בטבלאות שונות. ‏"
 
 #: source/formwizard/dbwizres.src#RID_DB_TABLE_WIZARD_START + 27.String.Text
 msgid  "~Create a primary key"
@@ -1545,7 +1545,7 @@ msgstr "איזה שם לתת לטבלה?‏"
 
 #: source/formwizard/dbwizres.src#RID_DB_TABLE_WIZARD_START + 35.String.Text
 msgid  "Congratulations. You have entered all the information needed to create your table."
-msgstr ""
+msgstr "מזל טוב! כל המידע הדרוש ליצירת הטבלה הוכנס.‏"
 
 #: source/formwizard/dbwizres.src#RID_DB_TABLE_WIZARD_START + 36.String.Text
 msgid  "What do you want to do next?"
@@ -1569,11 +1569,11 @@ msgstr "לא ניתן לפתוח את הטבלה שנוצרה.‏"
 
 #: source/formwizard/dbwizres.src#RID_DB_TABLE_WIZARD_START + 41.String.Text
 msgid  "The table name '%TABLENAME' contains a character ('%SPECIALCHAR') that might not be supported by the database."
-msgstr ""
+msgstr "זהירות! שם הטבלה ‏‪'%TABLENAME'‬‏ מכיל תו מיוחד ‏‪('%SPECIALCHAR')‬‏. יתכן שתו זה אינו נתמך במסד הנתונים.‏"
 
 #: source/formwizard/dbwizres.src#RID_DB_TABLE_WIZARD_START + 42.String.Text
 msgid  "The field name '%FIELDNAME' contains a special character ('%SPECIALCHAR') that might not be supported by the database."
-msgstr ""
+msgstr "זהירות! שם השדה ‏‪'%FIELDNAME'‬‏ מכיל תו מיוחד ‏‪('%SPECIALCHAR')‬‏. יתכן שתו זה אינו נתמך במסד הנתונים.‏"
 
 #: source/formwizard/dbwizres.src#RID_DB_TABLE_WIZARD_START + 43.String.Text
 msgid  "Field"
@@ -1593,11 +1593,11 @@ msgstr "הסרת השדה הנבחר"
 
 #: source/formwizard/dbwizres.src#RID_DB_TABLE_WIZARD_START + 47.String.Text
 msgid  "The field cannot be inserted because this would exceed the maximum number of %COUNT possible fields in the database table"
-msgstr ""
+msgstr "לא ניתן להוסיף את השדה כי הטבלה כבר מכילה את מספר המירבי של שדות, ‏‪%COUNT‬‏‬‏, הנתמך בטבלאות במסד נתונים זה.‏"
 
 #: source/formwizard/dbwizres.src#RID_DB_TABLE_WIZARD_START + 48.String.Text
 msgid  "The name '%TABLENAME' already exists.\nPlease enter another name."
-msgstr ""
+msgstr "השם ‏‪'%TABLENAME'‬‏ כבר קיים.‏\n‏נא לבחור שם אחר.‏"
 
 #: source/formwizard/dbwizres.src#RID_DB_TABLE_WIZARD_START + 49.String.Text
 msgid  "Catalog of the table"
@@ -1733,7 +1733,7 @@ msgstr "עיצוב דף"
 
 #: source/formwizard/dbwizres.src#RID_LETTERWIZARDDIALOG_START + 31.String.Text
 msgid  "This wizard helps you to create a letter template. You can then use the template as the basis for writing letters as often as desired."
-msgstr ""
+msgstr "אשף זה מסייע ביצירת תבניות מכתבים. מתבנית מכתבים ניתן לחולל מכתבים בסגנון המוגדר בתבנית באופן אוטומטי למחצה.‏"
 
 #: source/formwizard/dbwizres.src#RID_LETTERWIZARDDIALOG_START + 32.String.Text
 msgid  "~Height:"
@@ -1801,11 +1801,11 @@ msgstr "כותרת תחתונה"
 
 #: source/formwizard/dbwizres.src#RID_LETTERWIZARDDIALOG_START + 48.String.Text
 msgid  "This wizard creates a letter template which enables you to create multiple letters with the same layout and settings."
-msgstr ""
+msgstr "אשף זה יוצר תבניות מכתבים שמאפשרות כתיבת מכתבים בעלי סגנון דומה באופן חצי אוטומטי.‏"
 
 #: source/formwizard/dbwizres.src#RID_LETTERWIZARDDIALOG_START + 49.String.Text
 msgid  "To create another new letter out of the template just navigate to the template location and double-click it."
-msgstr ""
+msgstr "על מנת לחולל מכתב נוסף חדש מהתבנית, יש ללחוץ פעמיים על שם התבנית.‏"
 
 #: source/formwizard/dbwizres.src#RID_LETTERWIZARDDIALOG_START + 50.String.Text
 msgid  "Template name:"
@@ -1957,7 +1957,7 @@ msgstr "עיצוב דף"
 
 #: source/formwizard/dbwizres.src#RID_FAXWIZARDDIALOG_START + 17.String.Text
 msgid  "This wizard helps you to create a fax template. The template can then be used to create a fax whenever needed."
-msgstr ""
+msgstr "אשף זה מסייע ליצירת תבניות פקס. ניתן להשתמש בתבניות אלו ליצירת פקסים באופן אוטומטי בעת הצורך.‏"
 
 #: source/formwizard/dbwizres.src#RID_FAXWIZARDDIALOG_START + 18.String.Text
 msgid  "Return address"
@@ -1981,11 +1981,11 @@ msgstr "כותרת תחתונה"
 
 #: source/formwizard/dbwizres.src#RID_FAXWIZARDDIALOG_START + 23.String.Text
 msgid  "This wizard creates a fax template which enables you to create multiple faxes with the same layout and settings."
-msgstr ""
+msgstr "אשף זה יוצר תבניות פקסים שבאמצעותן ניתן ליצור פקסים בעלי פריסה והגדרות זהות.‏"
 
 #: source/formwizard/dbwizres.src#RID_FAXWIZARDDIALOG_START + 24.String.Text
 msgid  "To create another new fax out of the template, go to the location where you saved the template and double-click the file."
-msgstr ""
+msgstr "כדי ליצור פקס חדש מתבנית זו, יש ללחוץ פעמיים על שם התבנית במקום שהיא נשמרה.‏"
 
 #: source/formwizard/dbwizres.src#RID_FAXWIZARDDIALOG_START + 25.String.Text
 msgid  "Template Name:"
@@ -2121,7 +2121,7 @@ msgstr "אשף דפי האינטרנט"
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +2.String.Text
 msgid  "This Web Wizard is to aid you in publishing documents on the Internet.\n\nIt will convert the documents so that they can be viewed by a web browser. In addition, it will generate a Table of Contents page with links for easy access to the documents. The Web Wizard will also allow you to customize the design and layout of your web site.\n\nYou will be able to keep the documents you have published on the web up-to-date and add or remove documents at any time."
-msgstr ""
+msgstr "אשף דפי האינטרנט מסייע בהוצאה לאור של דפים באינטרנט.‏\n\nהאשף ממיר מסמכים לצורה שבה ניתן להציגם בדפדפן אינטרנט. בנוסף, האשף מחולל תוכן עניינים עם קישורים שמאפשרים גישה נוחה לתוכן המסמכים. האשף מאפשר התאמה אישית של עיצוב ותכנון האתר.‏\n\nניתן לעדכן דפים באתר או להוסיף או להוריד דפים לפי הצורך.‏"
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +4.String.Text
 msgid  "~Delete"
@@ -2305,7 +2305,7 @@ msgstr "התאמה של הפריסה הנבחרת"
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +61.String.Text
 msgid  "Include the following information for each document in the table of contents:"
-msgstr ""
+msgstr "יש להוסיף את המידע הבא לכל מסמך בתוכן העניינים:‏"
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +62.String.Text
 msgid  "Optimize the layout for screen resolution:"
@@ -2345,19 +2345,19 @@ msgstr "היעד המקומי ‏‪'%FILENAME'‬‏ הינו קובץ ולא �
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +75.String.Text
 msgid  "The ZIP target '%FILENAME' already exists. Do you want to overwrite the existing target? "
-msgstr ""
+msgstr "קובץ זיפ היעד ‏‪'%FILENAME'‬‏ כבר קיים. האם להחליפו?‏"
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +76.String.Text
 msgid  "The FTP target directory '%FILENAME' is not empty. Some files might be overwritten. Do you want to continue?"
-msgstr ""
+msgstr "תיקיית היעד  ‏‪ FTP '%FILENAME'‬‏ ‏‪אינה ריקה. אפשר שחלק מהקבצים הקיימים בתיקיה יידרסו. האם להמשיך?‏"
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +77.String.Text
 msgid  "The local target directory '%FILENAME' is not empty. Some files might be overwritten. Do you want to continue?"
-msgstr ""
+msgstr "תיקיית היעד ‏‪'%FILENAME'‬‏ אינה ריקה. אפשר שחלק מהקבצים הקיימים בתיקיה יידרסו. האם להמשיך?‏"
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +78.String.Text
 msgid  "Settings already exist under the given name. Do you want to overwrite the existing settings? "
-msgstr ""
+msgstr "כבר קיימות הגדרות באותו שם. האם להחליפן?‏"
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +79.String.Text
 msgid  "Exporting documents..."
@@ -2457,7 +2457,7 @@ msgstr "ארעה שגיאה בעת העתקת קבצי הפריסה.‏"
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +108.String.Text
 msgid  "An error occurred while gathering document information for '%FILENAME'. "
-msgstr ""
+msgstr "ארעה שגיאה בעת איסוף נתוני המסמך עבור קובץ ‏‪'%FILENAME'‬‏.‏"
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +109.String.Text
 msgid  "An error occurred while exporting the document '%FILENAME'."
@@ -2473,7 +2473,7 @@ msgstr "שגיאת אבטחה ארעה  בעת יצוא המסמך '%FILENAME'.�
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +112.String.Text
 msgid  "An input/output error occurred while exporting the document '%FILENAME'."
-msgstr ""
+msgstr "שגיאת קלט/פלט ארעה בעת יצוא המסמך ‏‪'%FILENAME'‬‏.‏"
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +113.String.Text
 msgid  "An error occurred while copying media files to the temporary directory."
@@ -2541,7 +2541,7 @@ msgstr "תצוגה מקדימה"
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +130.String.Text
 msgid  "The selected settings will be deleted.\n\nDo you really want to delete these settings? "
-msgstr ""
+msgstr "ההגדרות שנבחרו תמחקנה.\n\nהאם אכן כוונתך למוחקן?‏"
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +131.String.Text
 msgid  "%NUMBER pages"
@@ -2609,19 +2609,19 @@ msgstr "לא ניתן ליצור תיקיית ‏‪FTP‬‏ בשם ‏‪'%FIL
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +147.String.Text
 msgid  "The FTP directory '%FILENAME' does not exist. \nCreate the directory now?"
-msgstr ""
+msgstr "תיקיית ה ‏‪FTP‬‏ ‏‪'%FILENAME'‬‏ ‏אינה קיימת.‏\nהאם ליצור אותה כעת?‏"
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +148.String.Text
 msgid  "The Zip file '%FILENAME' cannot be created: a directory of the same name already exists."
-msgstr ""
+msgstr "אין אפשרות ליצור קובץ זיפ בשם ‏‪'%FILENAME'‬‏ כי תיקיה בעלת שם זהה כבר קיימת.‏"
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +149.String.Text
 msgid  "The local directory '%FILENAME' cannot be created. \nPlease check your write-access."
-msgstr ""
+msgstr "אין אפשרות ליצור תיקיה מקומית ‏‪'%FILENAME'‬‏.‏\nנא לבדוק אם הרשאות המשתמש מספיקות.‏"
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +150.String.Text
 msgid  "The local directory '%FILENAME' does not exist. \nCreate the directory now?"
-msgstr ""
+msgstr "התיקיה המקומית ‏‪'%FILENAME'‬‏ אינה קיימת.‏\nהאם ליצור אותה כעת?‏"
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +151.String.Text
 msgid  "Size: %NUMBERKB"
@@ -2757,7 +2757,7 @@ msgstr "להכניס טופס לרישום פרוטוקול"
 
 #: source/formwizard/dbwizres.src#RID_AGENDAWIZARDDIALOG_START +13.String.Text
 msgid  "This wizard helps you to create an agenda template. The template can then be used to create an agenda whenever needed."
-msgstr ""
+msgstr "אשף זה עוזר ביצירת תבניות לסדר יום. אחר כך, ניתן להשתמש בתבנית ליצירת סדר יום בכל עת שתדרש.‏"
 
 #: source/formwizard/dbwizres.src#RID_AGENDAWIZARDDIALOG_START +14.String.Text
 msgid  "Time:"
@@ -2773,7 +2773,7 @@ msgstr "מיקום:‏"
 
 #: source/formwizard/dbwizres.src#RID_AGENDAWIZARDDIALOG_START +17.String.Text
 msgid  "Placeholders will be used in empty fields. You can replace placeholders with text later."
-msgstr ""
+msgstr "שומרי מקום ימוקמו בשדות הריקים. ניתן להחליפם בטקסט מאוחר יותר.‏"
 
 #: source/formwizard/dbwizres.src#RID_AGENDAWIZARDDIALOG_START +18.String.Text
 msgid  "..."
@@ -2785,7 +2785,7 @@ msgstr "יצירת סדר יום מתבנית זו"
 
 #: source/formwizard/dbwizres.src#RID_AGENDAWIZARDDIALOG_START +20.String.Text
 msgid  "To create a new agenda out of the template, go to the location where you saved the template and double-click the file."
-msgstr ""
+msgstr "כדי ליצור סדר יום מהתבנית, יש לעבור למקום שמירת התבנית וללחוץ פעמיים על שם הקובץ של התבנית"
 
 #: source/formwizard/dbwizres.src#RID_AGENDAWIZARDDIALOG_START +21.String.Text
 msgid  "Agenda item"
@@ -2829,7 +2829,7 @@ msgstr "סגל המתקן"
 
 #: source/formwizard/dbwizres.src#RID_AGENDAWIZARDDIALOG_START +31.String.Text
 msgid  "The agenda template will include placeholders for the names of the selected people. When creating an agenda from the template, you can replace these placeholder with the appropriate names."
-msgstr ""
+msgstr "תבנית סדר היום תכיל שומרי מקום לשמות של האנשים שנבחרו. בעת יצירת סדר יום מהתבנית, ניתן להחליף את שומרי המקום בשמות המתאימים.‏"
 
 #: source/formwizard/dbwizres.src#RID_AGENDAWIZARDDIALOG_START +32.String.Text
 msgid  "Type of meeting"
@@ -2857,7 +2857,7 @@ msgstr "תאריך:‏"
 
 #: source/formwizard/dbwizres.src#RID_AGENDAWIZARDDIALOG_START +39.String.Text
 msgid  "This wizard creates an agenda template which enables you to create multiple agendas with the same layout and settings."
-msgstr ""
+msgstr "אשף זה בונה תבנית למסמכי סדר יום שמאפשרת בנייה של מסמכי סדר יום בעלי הגדרות ופריסה זהות.‏"
 
 #: source/formwizard/dbwizres.src#RID_AGENDAWIZARDDIALOG_START +40.String.Text
 msgid  "Page design:"
@@ -3009,11 +3009,11 @@ msgstr "סגירה"
 
 #: source/importwizard/importwi.src#sWelcometextLabel1.String.Text
 msgid  "This wizard converts documents in %PRODUCTNAME format and Microsoft Office documents to the new OpenDocument format."
-msgstr ""
+msgstr "אשף זה ממיר מסמכים מצורת אופן אופיס ומיקרוסופט אופיס לצורה החדשה ‏‪OpenDocument"
 
 #: source/importwizard/importwi.src#sWelcometextLabel2.String.Text
 msgid  "Please note that when converting Microsoft documents any attached VBA macros lose their functionality."
-msgstr ""
+msgstr "לתשומת לבכם: מאקרוים של ‏‪VBA‬‏ במסמכי 'אופיס' של מיקרוסופט לא יעבדו אחרי יבוא.‏"
 
 #: source/importwizard/importwi.src#sWelcometextLabel3.String.Text
 msgid  "Select the document type for conversion:"
@@ -3241,59 +3241,59 @@ msgstr "אלה ייוצאו למחיצה הבאה:‏"
 
 #: source/importwizard/importwi.src#sSumSOTextDocuments.String.Text
 msgid  "All %PRODUCTNAME text documents contained in the following directory will be imported:"
-msgstr ""
+msgstr "כל מסמכי הטקסט ‏‪%PRODUCTNAME‬‏ בתיקיה הבאה ייובאו:‏"
 
 #: source/importwizard/importwi.src#sSumSOTableDocuments.String.Text
 msgid  "All %PRODUCTNAME spreadsheets contained in the following directory will be imported:"
-msgstr ""
+msgstr "כל מסמכי גליונות העבודה ‏‪%PRODUCTNAME‬‏ בתיקיה הבאה ייובאו: ‏"
 
 #: source/importwizard/importwi.src#sSumSODrawDocuments.String.Text
 msgid  "All %PRODUCTNAME drawing and presentation documents contained in the following directory will be imported:"
-msgstr ""
+msgstr "כל מסמכי הציורים והמצגות ‏‪%PRODUCTNAME‬‏ בתיקיה הבאה ייובאו: ‏"
 
 #: source/importwizard/importwi.src#sSumSOMathDocuments.String.Text
 msgid  "All %PRODUCTNAME formula documents contained in the following directory will be imported:"
-msgstr ""
+msgstr "כל מסמכי הנוסחאות ‏‪%PRODUCTNAME‬‏ בתיקיה הבאה ייובאו:‏"
 
 #: source/importwizard/importwi.src#sSumSOTextTemplates.String.Text
 msgid  "All %PRODUCTNAME text templates contained in the following directory will be imported:"
-msgstr ""
+msgstr "כל תבניות הטקסט ‏‪%PRODUCTNAME‬‏ בתיקיה הבאה ייובאו:‏"
 
 #: source/importwizard/importwi.src#sSumSOTableTemplates.String.Text
 msgid  "All %PRODUCTNAME table templates contained in the following directory will be imported:"
-msgstr ""
+msgstr "כל תבניות טבלה ‏‪%PRODUCTNAME‬‏ בתיקיה הבאה ייובאו:‏"
 
 #: source/importwizard/importwi.src#sSumSODrawTemplates.String.Text
 msgid  "All %PRODUCTNAME drawing and presentation templates contained in the following directory will be imported:"
-msgstr ""
+msgstr "כל תבניות הציורים והמצגות ‏‪%PRODUCTNAME‬‏ בתיקיה הבאה ייובאו:‏"
 
 #: source/importwizard/importwi.src#sSumSOGlobalDocuments.String.Text
 msgid  "All %PRODUCTNAME master documents contained in the following directory will be imported:"
-msgstr ""
+msgstr "כל מסמכי האב ‏‪%PRODUCTNAME‬‏ בתיקיה הבאה ייובאו:‏"
 
 #: source/importwizard/importwi.src#sSumMSTextDocuments.String.Text
 msgid  "All Word documents contained in the following directory will be imported:"
-msgstr ""
+msgstr "כל מסמכי ‏‪Word‬‏ בתיקיה הבאה ייובאו:‏"
 
 #: source/importwizard/importwi.src#sSumMSTableDocuments.String.Text
 msgid  "All Excel documents contained in the following directory will be imported:"
-msgstr ""
+msgstr "כל מסמכי ‏‪Excel‬‏ בתיקיה הבאה ייובאו:‏"
 
 #: source/importwizard/importwi.src#sSumMSDrawDocuments.String.Text
 msgid  "All PowerPoint documents contained in the following directory will be imported:"
-msgstr ""
+msgstr "כל מסמכי ‏‪PowerPoint‬‏ בתיקיה הבאה ייובאו:‏"
 
 #: source/importwizard/importwi.src#sSumMSTextTemplates.String.Text
 msgid  "All Word templates contained in the following directory will be imported:"
-msgstr ""
+msgstr "כל תבניות ‏‪Word‬‏ בתיקיה הבאה ייובאו:‏"
 
 #: source/importwizard/importwi.src#sSumMSTableTemplates.String.Text
 msgid  "All Excel templates contained in the following directory will be imported:"
-msgstr ""
+msgstr "כל תבניות ‏‪Excel‬‏ בתיקיה הבאה ייובאו:‏"
 
 #: source/importwizard/importwi.src#sSumMSDrawTemplates.String.Text
 msgid  "All PowerPoint templates contained in the following directory will be imported:"
-msgstr ""
+msgstr "כל תבניות ‏‪PowerPoint‬‏ בתיקיה הבאה ייובאו:‏"
 
 #: source/schedule/schedule.src#dlgCalTitle.String.Text
 msgid  "%PRODUCTNAME Calendar"
@@ -3481,7 +3481,7 @@ msgstr "התקדמות:‏"
 
 #: source/template/template.src#SAMPLES.String.Text
 msgid  "In order to use the full functionality of this sample, create a document that is based on this template."
-msgstr ""
+msgstr "על מנת להבין את מלוא התפקודים של דוגמה זו, יש ליצור מסמך חדש המבוסס על תבנית זו?‏"
 
 #: source/template/template.src#SAMPLES + 1.String.Text
 msgid  "Remarks"
@@ -3493,7 +3493,7 @@ msgstr "בחירת נושא רקע"
 
 #: source/template/template.src#STYLES + 1.String.Text
 msgid  "Error while saving the document to the clipboard! The following action cannot be undone."
-msgstr ""
+msgstr "שגיאה בעת שמירת המסמך לפנקס הרשומים! לא תהיה אפשרות לבטל פעולות בהמשך.‏"
 
 #: source/template/template.src#STYLES + 2.String.Text
 msgid  "~Cancel"

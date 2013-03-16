@@ -45,7 +45,7 @@ msgstr ""
 
 #: source/all/crashrep.ulf#%WELCOME_BODY2%
 msgid  "It's easy - just send the report without any further effort on your part by clicking 'Send' in the next dialog, or you can briefly describe how the error occurred and then click 'Send'. If you want to see the report, click the 'Show Report' button. No data will be sent if you click 'Do Not Send'.\n\n"
-msgstr ""
+msgstr "Lagano je - samo pošaljite izvještaj bez daljnjeg truda s vaše strane klikom na 'Pošalji' u sljedećem dijalogu ili možete ukratko opisati kako je došlo do greške i tada kliknite 'Pošalji'. Ako želite pogledati izvještaj, kliknite na dugme 'Pokaži izvještaj'. Podaci neće biti poslani ako kliknete na 'Bez slanja'.\n\n"
 
 #: source/all/crashrep.ulf#%WELCOME_BODY3%
 msgid  "Customer Privacy\nThe information gathered is limited to data concerning the state of %PRODUCTNAME% %PRODUCTVERSION% when the error occurred. Other information about passwords or document contents is not collected.\n\nThe information will only be used to improve the quality of %PRODUCTNAME% and will not be shared with third parties.\nFor more information on Apache OpenOffice's privacy policy, visit\n"
@@ -81,7 +81,7 @@ msgstr ""
 
 #: source/all/crashrep.ulf#%ENTER_TITLE%
 msgid  "Which type of document (e.g. presentation) were you using when the error occurred?"
-msgstr ""
+msgstr "Koju vrstu dokumenta (npr. prezentacija) ste koristili kada se greška pojavila?"
 
 #: source/all/crashrep.ulf#%ALLOW_CONTACT%
 msgid  "~I allow Apache OpenOffice to contact me regarding this report."
@@ -121,23 +121,23 @@ msgstr "Snimi izvještaj u"
 
 #: source/all/crashrep.ulf#%ERROR_MSG_SIMPLE_MAPI%
 msgid  "The error report could not be sent because the default e-mail program does not support MAPI.\n Please use a MAPI-compatible e-mail program."
-msgstr ""
+msgstr "Izvještaj za grešku nije moguće poslati zato što vaš uobičajeni e-mail program ne podržava MAPI.\nMolimo vas da koristite MAPI kompatibilan e-mail program."
 
 #: source/all/crashrep.ulf#%ERROR_MSG_DISK_FULL%
 msgid  "The error report could not be temporarily saved and could therefore not be sent."
-msgstr ""
+msgstr "Izvještaj o grešci nije mogao biti privremeno snimljen i zbog toga se ne može poslati."
 
 #: source/all/crashrep.ulf#%ERROR_MSG_SENDMAIL%
 msgid  "The error report could not be sent because 'sendmail' could not be started.\nPlease check the 'sendmail' settings."
-msgstr ""
+msgstr "Izvještaj o grešci nije uspješno poslan jer nije moguće pokrenuti 'sendmail'.\nMolimo Vas provjerite 'sendmail' postavke."
 
 #: source/all/crashrep.ulf#%ERROR_MSG_PROXY%
 msgid  "The error report could not be sent. Please check the proxy settings under 'Options' in the Error Report Tool."
-msgstr ""
+msgstr "Izvještaj o grešci nije mogao biti poslan. Provjerite postavke proxy-ja koristeći 'Opcije' u alatu za izvještaj o grešci."
 
 #: source/all/crashrep.ulf#%ERROR_MSG_NOCONNECT%
 msgid  "The error report could not be sent because there is no Internet connection. Please check your Internet settings."
-msgstr ""
+msgstr "Izvještaj o grešci nije mogao biti poslan jer nema internet konekcije. Provjerite postavke za povezivanje sa internetom."
 
 #: source/all/crashrep.ulf#%OPTIONS_BUTTON%
 msgid  "~Options..."
@@ -173,7 +173,7 @@ msgstr "~Port"
 
 #: source/all/crashrep.ulf#%PROXY_SETTINGS_DESCRIPTION%
 msgid  "The %PRODUCTNAME% Error Report tool needs to be connected to the Internet to be able to send error reports.\n\nCompanies often use proxy servers in conjunction with a firewall to protect the network.\n\nIf this applies to your situation, you have to specify the address and port for the server."
-msgstr ""
+msgstr "Alat za prijavu grešaka %PRODUCTNAME% mora biti povezan na Internet kako bi mogao poslati izvještaj o greškama.\n\nTvrtke često koriste proxy poslužitelje u spoju s vatrozidom kako bi zaštitili vlastitu mrežu.\n\nUkoliko je ovo primjenjivo u Vašem slučaju, morate navesti adresu i port za poslužitelj."
 
 #: source/all/crashrep.ulf#%SENDING_REPORT_HEADER%
 msgid  "Sending Error Report"
@@ -201,8 +201,8 @@ msgstr "-p <ID procesa>"
 
 #: source/all/crashrep.ulf#%MSG_PARAM_PROCESSID_DESCRIPTION%
 msgid  "Assigns the %PRODUCTNAME% process ID (PID) to the Error Report Tool"
-msgstr ""
+msgstr "Dodjeljuje %PRODUCTNAME% ID procesa (PID) alatu za pravljenje izvještaja o grešci"
 
 #: source/all/crashrep.ulf#%MSG_PARAM_HELP_DESCRIPTION%
 msgid  "Shows this help text.\nDetailed information can be found in the Setup Guide."
-msgstr ""
+msgstr "Prikazuje ovaj tekst pomoći.\nDetaljne informacije mogu se naći u Vodiču kroz postavke."

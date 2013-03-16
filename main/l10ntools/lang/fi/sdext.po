@@ -73,7 +73,7 @@ msgstr "Johdanto"
 
 #: source/minimizer/registry/data/org/openoffice/Office/extension/SunPresentationMinimizer.xcu#.SunPresentationMinimizer.Strings.STR_INTRODUCTION_T
 msgid  "The @MINIMIZEREXTENSIONPRODUCTNAME@ is used to reduce the file size of the current presentation. Images will be compressed and data, that is no longer needed, will be removed. At the last step of the wizard you can choose to apply the changes to the current presentation or to create an optimized new version of the presentation."
-msgstr ""
+msgstr "@MINIMIZEREXTENSIONPRODUCTNAME@ pienentää diaesityksen tiedostokokoa. Esityksessä olevat kuvat pakataan ja tarpeeton tieto, joka ei näy esityksessä, poistetaan. Muutokset voidaan tehdä suoraan nykyiseen esitykseen, tai esityksestä voidaan luoda uusi optimoitu versio."
 
 #: source/minimizer/registry/data/org/openoffice/Office/extension/SunPresentationMinimizer.xcu#.SunPresentationMinimizer.Strings.STR_CHOSE_SETTINGS
 msgid  "~Choose settings for @MINIMIZEREXTENSIONPRODUCTNAME@"
@@ -153,11 +153,11 @@ msgstr "Korvaa muut kuin OpenDocument-muotoiset objektit"
 
 #: source/minimizer/registry/data/org/openoffice/Office/extension/SunPresentationMinimizer.xcu#.SunPresentationMinimizer.Strings.STR_OLE_OBJECTS_DESC
 msgid  "Object Linking and Embedding (OLE) is a technology that allows embedding and linking to documents and other objects. The current presentation contains OLE objects."
-msgstr ""
+msgstr "Object Linking and Embedding (OLE) on tekniikka, joka mahdollistaa muissa sovelluksissa tehtyjen asiakirjojen sisällyttämisen esitykseen tai niihin linkittämisen. Käsiteltävä esitys sisältää OLE-objekteja."
 
 #: source/minimizer/registry/data/org/openoffice/Office/extension/SunPresentationMinimizer.xcu#.SunPresentationMinimizer.Strings.STR_NO_OLE_OBJECTS_DESC
 msgid  "Object Linking and Embedding (OLE) is a technology that allows embedding and linking to documents and other objects. The current presentation contains no OLE objects."
-msgstr ""
+msgstr "Object Linking and Embedding (OLE) on tekniikka, joka mahdollistaa muissa sovelluksissa tehtyjen asiakirjojen sisällyttämisen esitykseen tai niihin linkittämisen. Käsiteltävässä esityksessä ei ole OLE-objekteja."
 
 #: source/minimizer/registry/data/org/openoffice/Office/extension/SunPresentationMinimizer.xcu#.SunPresentationMinimizer.Strings.STR_SLIDES
 msgid  "Slides"
@@ -225,7 +225,7 @@ msgstr "Poista %SLIDES diaa."
 
 #: source/minimizer/registry/data/org/openoffice/Office/extension/SunPresentationMinimizer.xcu#.SunPresentationMinimizer.Strings.STR_OPTIMIZE_IMAGES
 msgid  "Optimize %IMAGES graphics to %QUALITY% JPEG quality at %RESOLUTION DPI."
-msgstr ""
+msgstr "Pakkaa %IMAGES kuvaa JPEG-laatutasolle %QUALITY% resoluutiolla %RESOLUTION DPI."
 
 #: source/minimizer/registry/data/org/openoffice/Office/extension/SunPresentationMinimizer.xcu#.SunPresentationMinimizer.Strings.STR_CREATE_REPLACEMENT
 msgid  "Create replacement graphics for %OLE objects."
@@ -253,7 +253,7 @@ msgstr "oletusistunto"
 
 #: source/minimizer/registry/data/org/openoffice/Office/extension/SunPresentationMinimizer.xcu#.SunPresentationMinimizer.Strings.STR_MODIFY_WARNING
 msgid  "The optimization will modify the current document. Do you want to continue?"
-msgstr ""
+msgstr "Optimoinnit muuttavat nykyistä asiakirjaa. Jatketaanko?"
 
 #: source/minimizer/registry/data/org/openoffice/Office/extension/SunPresentationMinimizer.xcu#.SunPresentationMinimizer.Strings.STR_YES
 msgid  "~Yes"
@@ -265,19 +265,19 @@ msgstr "OK"
 
 #: source/minimizer/registry/data/org/openoffice/Office/extension/SunPresentationMinimizer.xcu#.SunPresentationMinimizer.Strings.STR_INFO_1
 msgid  "The @MINIMIZEREXTENSIONPRODUCTNAME@ has successfully updated the presentation '%TITLE'. The file size has changed from %OLDFILESIZE MB to %NEWFILESIZE MB."
-msgstr ""
+msgstr "@MINIMIZEREXTENSIONPRODUCTNAME@ on päivittänyt esitystä '%TITLE'. Tiedostokoko on muuttunut %OLDFILESIZE megatavusta %NEWFILESIZE megatavuun."
 
 #: source/minimizer/registry/data/org/openoffice/Office/extension/SunPresentationMinimizer.xcu#.SunPresentationMinimizer.Strings.STR_INFO_2
 msgid  "The @MINIMIZEREXTENSIONPRODUCTNAME@ has successfully updated the presentation '%TITLE'. The file size has changed from %OLDFILESIZE MB to approximated %NEWFILESIZE MB."
-msgstr ""
+msgstr "@MINIMIZEREXTENSIONPRODUCTNAME@ on päivittänyt esitystä '%TITLE'. Tiedostokoko on muuttunut %OLDFILESIZE megatavusta arviolta %NEWFILESIZE megatavuun."
 
 #: source/minimizer/registry/data/org/openoffice/Office/extension/SunPresentationMinimizer.xcu#.SunPresentationMinimizer.Strings.STR_INFO_3
 msgid  "The @MINIMIZEREXTENSIONPRODUCTNAME@ has successfully updated the presentation '%TITLE'. The file size has changed to %NEWFILESIZE MB."
-msgstr ""
+msgstr "@MINIMIZEREXTENSIONPRODUCTNAME@ on päivittänyt esitystä '%TITLE'. Tiedostokoko on muuttunut %NEWFILESIZE megatavuun."
 
 #: source/minimizer/registry/data/org/openoffice/Office/extension/SunPresentationMinimizer.xcu#.SunPresentationMinimizer.Strings.STR_INFO_4
 msgid  "The @MINIMIZEREXTENSIONPRODUCTNAME@ has successfully updated the presentation '%TITLE'. The file size has changed to approximated %NEWFILESIZE MB."
-msgstr ""
+msgstr "@MINIMIZEREXTENSIONPRODUCTNAME@ on päivittänyt esitystä '%TITLE'. Tiedostokoko on muuttunut arviolta %NEWFILESIZE megatavuun."
 
 #: source/minimizer/registry/data/org/openoffice/Office/extension/SunPresentationMinimizer.xcu#.SunPresentationMinimizer.Strings.STR_DUPLICATING_PRESENTATION
 msgid  "Duplicating presentation..."
@@ -329,7 +329,7 @@ msgstr "@PRESENTEREXTENSIONPRODUCTNAME@ -pikanäppäimet"
 
 #: source/presenter/help/en-US/com.sun.PresenterScreen/presenter.xhp#par_id0921201912165656
 msgid  "When running a slide show using the @PRESENTEREXTENSIONPRODUCTNAME@, you can use the following keys:"
-msgstr ""
+msgstr "Kun @PRESENTEREXTENSIONPRODUCTNAME@ on käytössä, diaesityksen aikana seuraavat pikanäppäimet ovat käytettävissä:"
 
 #: source/presenter/help/en-US/com.sun.PresenterScreen/presenter.xhp#par_id0921200901104028
 msgid  "Action"
@@ -345,7 +345,7 @@ msgstr "Seuraava dia tai seuraava tehoste"
 
 #: source/presenter/help/en-US/com.sun.PresenterScreen/presenter.xhp#par_id0921200901104120
 msgid  "Left click, right arrow, down arrow, spacebar, page down, enter, return, 'N'"
-msgstr ""
+msgstr "Napsautus ykköspainikkeella, oikea nuolinäppäin, alanuolinäppäin, välilyönti, page down, enter, return tai N"
 
 #: source/presenter/help/en-US/com.sun.PresenterScreen/presenter.xhp#par_id0921200901104165
 msgid  "Previous slide, or previous effect"
@@ -353,7 +353,7 @@ msgstr "Edellinen dia tai tehoste"
 
 #: source/presenter/help/en-US/com.sun.PresenterScreen/presenter.xhp#par_id0921200901104115
 msgid  "Right click, left arrow, up arrow, page up, backspace, 'P'"
-msgstr ""
+msgstr "Napsautus kakkospainikkeella, vasen nuolinäppäin, ylänuolinäppäin, page up, askelpalautin tai P"
 
 #: source/presenter/help/en-US/com.sun.PresenterScreen/presenter.xhp#par_id0921200901104164
 msgid  "First slide"
@@ -505,7 +505,7 @@ msgstr "Sulje"
 
 #: source/presenter/registry/data/org/openoffice/Office/extension/PresenterScreen.xcu#..PresenterScreen.PresenterScreenSettings.HelpView.HelpStrings.a.Left
 msgid  "Left click, right or down arrow, spacebar, page down, enter, return, 'N'"
-msgstr ""
+msgstr "Napsautus ykköspainikkeella, oikea nuolinäppäin, alanuolinäppäin, välilyönti, page down, enter, return tai N"
 
 #: source/presenter/registry/data/org/openoffice/Office/extension/PresenterScreen.xcu#..PresenterScreen.PresenterScreenSettings.HelpView.HelpStrings.a.Right
 msgid  "Next slide, or next effect"
@@ -513,7 +513,7 @@ msgstr "Seuraava dia tai seuraava tehoste"
 
 #: source/presenter/registry/data/org/openoffice/Office/extension/PresenterScreen.xcu#..PresenterScreen.PresenterScreenSettings.HelpView.HelpStrings.b.Left
 msgid  "Right click, left or up arrow, page up, backspace, 'P'"
-msgstr ""
+msgstr "Napsautus kakkospainikkeella, vasen nuolinäppäin, ylänuolinäppäin, page up, askelpalautin tai P"
 
 #: source/presenter/registry/data/org/openoffice/Office/extension/PresenterScreen.xcu#..PresenterScreen.PresenterScreenSettings.HelpView.HelpStrings.b.Right
 msgid  "Previous slide, or previous effect"
@@ -693,7 +693,7 @@ msgstr "Nykyinen dia (%CURRENT_SLIDE_NUMBER% / %SLIDE_COUNT%)"
 
 #: source/presenter/registry/data/org/openoffice/Office/extension/PresenterScreen.xcu#..PresenterScreen.Presenter.Views.CurrentSlidePreview.AccessibleTitle
 msgid  "Current Slide, %CURRENT_SLIDE_NAME%, %CURRENT_SLIDE_NUMBER% of %SLIDE_COUNT%"
-msgstr ""
+msgstr "Nykyinen dia, %CURRENT_SLIDE_NAME%, %CURRENT_SLIDE_NUMBER% / %SLIDE_COUNT%"
 
 #: source/presenter/registry/data/org/openoffice/Office/extension/PresenterScreen.xcu#..PresenterScreen.Presenter.Views.CurrentSlidePreview.Strings.ClickToExitPresentationText.String
 msgid  "Click to exit presentation..."
@@ -713,7 +713,7 @@ msgstr "Muistiinpanot"
 
 #: source/presenter/registry/data/org/openoffice/Office/extension/PresenterScreen.xcu#..PresenterScreen.Presenter.Views.SlideSorter.AccessibleTitle
 msgid  "Slide Overview, %CURRENT_SLIDE_NAME%, %CURRENT_SLIDE_NUMBER% of %SLIDE_COUNT%"
-msgstr ""
+msgstr "Kaikki diat, %CURRENT_SLIDE_NAME%, %CURRENT_SLIDE_NUMBER% / %SLIDE_COUNT%"
 
 #: source/presenter/registry/data/org/openoffice/Office/extension/PresenterScreen.xcu#..PresenterScreen.Presenter.Views.HelpView.Title
 msgid  "Help"

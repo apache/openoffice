@@ -119,6 +119,18 @@ msgstr "Адресен бележник на Thunderbird"
 msgid  "LDAP Address Book"
 msgstr "Адресен бележник на LDAP"
 
+#: source/drivers/mozab/mozab2.xcu#.Drivers.Installed.sdbc:address:mozilla:.DriverTypeDisplayName
+msgid  "SeaMonkey Address Book"
+msgstr "Адресен бележник на SeaMonkey"
+
+#: source/drivers/mozab/mozab2.xcu#.Drivers.Installed.sdbc:address:thunderbird:.DriverTypeDisplayName
+msgid  "Thunderbird Address Book"
+msgstr "Адресен бележник на Thunderbird"
+
+#: source/drivers/mozab/mozab2.xcu#.Drivers.Installed.sdbc:address:ldap:*.DriverTypeDisplayName
+msgid  "LDAP Address Book"
+msgstr "Адресен бележник на LDAP"
+
 #: source/drivers/mysql/mysql.xcu#.Drivers.Installed.sdbc:mysql:jdbc:*.DriverTypeDisplayName
 msgid  "MySQL (JDBC)"
 msgstr "MySQL (JDBC)"
@@ -157,15 +169,15 @@ msgstr "Не се поддържа създаване на таблици за �
 
 #: source/resource/conn_shared_res.src#STR_MOZILLA_IS_RUNNING.String.Text
 msgid  "Cannot create new address books while Mozilla is running."
-msgstr ""
+msgstr "Не можете да създавате нови адресни бележници, докато е стартирана Mozilla."
 
 #: source/resource/conn_shared_res.src#STR_COULD_NOT_RETRIEVE_AB_ENTRY.String.Text
 msgid  "An address book entry could not be retrieved, an unknown error occurred."
-msgstr ""
+msgstr "Не бе възможно да се извлече запис от адресен бележник, възникна непозната грешка."
 
 #: source/resource/conn_shared_res.src#STR_COULD_NOT_GET_DIRECTORY_NAME.String.Text
 msgid  "An address book directory name could not be retrieved, an unknown error occurred."
-msgstr ""
+msgstr "Не бе възможно да се извлече име на директория с адресен бележник, възникна непозната грешка."
 
 #: source/resource/conn_shared_res.src#STR_TIMEOUT_WAITING.String.Text
 msgid  "Timed out while waiting for the result."
@@ -177,11 +189,11 @@ msgstr "Възникнала е грешка по време на изпълне
 
 #: source/resource/conn_shared_res.src#STR_MOZILLA_IS_RUNNIG_NO_CHANGES.String.Text
 msgid  "You can't make any changes to mozilla address book when mozilla is running."
-msgstr ""
+msgstr "Не можете да правите промени в адресния бележник на Mozilla, докато Mozilla е стартирана."
 
 #: source/resource/conn_shared_res.src#STR_FOREIGN_PROCESS_CHANGED_AB.String.Text
 msgid  "Mozilla Address Book has been changed out of this process, we can't modify it in this condition."
-msgstr ""
+msgstr "Адресният бележник на Mozilla е променен извън този процес. При това условие не можем да го променяме."
 
 #: source/resource/conn_shared_res.src#STR_CANT_FIND_ROW.String.Text
 msgid  "Can't find the requested row."
@@ -233,7 +245,7 @@ msgstr "Не може да се създаде нов запис."
 
 #: source/resource/conn_shared_res.src#STR_QUERY_INVALID_IS_NULL_COLUMN.String.Text
 msgid  "The query can not be executed. The 'IS NULL' can only be used with a column name."
-msgstr ""
+msgstr "Заявката не може да бъде изпълнена. „NOT LIKE“ може да се използва само с име на колона."
 
 #: source/resource/conn_shared_res.src#STR_ILLEGAL_MOVEMENT.String.Text
 msgid  "Illegal cursor movement occured."
@@ -241,7 +253,7 @@ msgstr "Възникна недопустимо преместване на ку
 
 #: source/resource/conn_shared_res.src#STR_COMMIT_ROW.String.Text
 msgid  "Please commit row '$position$' before update rows or insert new rows."
-msgstr ""
+msgstr "Моля, потвърдете запис $position$, преди да обновявате записи или да вмъквате нови."
 
 #: source/resource/conn_shared_res.src#STR_INVALID_ROW_UPDATE.String.Text
 msgid  "The update call can not be executed. The row is invalid."
@@ -268,12 +280,12 @@ msgid  "It doesn't exist a connection to the database."
 msgstr "Няма връзка с базата от данни."
 
 #: source/resource/conn_shared_res.src#STR_WRONG_PARAM_INDEX.String.Text
-msgid  "You tried to set a parameter at position '$pos$' but there is/are only '$count$' parameter(s) allowed. One reason may be that the property "ParameterNameSubstitution" is not set to TRUE in the data source."
-msgstr ""
+msgid  "You tried to set a parameter at position '$pos$' but there is/are only '$count$' parameter(s) allowed. One reason may be that the property \"ParameterNameSubstitution\" is not set to TRUE in the data source."
+msgstr "Опитахте се да зададете параметър на позиция $pos$, но броят на разрешените параметри е $count$. Една възможна причина е, че свойството „ParameterNameSubstitution“ не е със стойност TRUE в източника на данни."
 
 #: source/resource/conn_shared_res.src#STR_INPUTSTREAM_WRONG_LEN.String.Text
 msgid  "End of InputStream reached before satisfying length specified when InputStream was set."
-msgstr ""
+msgstr "Достигнат е краят на InputStream преди да е удовлетворено условието за дължина, указано при задаване на InputStream."
 
 #: source/resource/conn_shared_res.src#STR_NO_INPUTSTREAM.String.Text
 msgid  "The input stream was not set."
@@ -313,7 +325,7 @@ msgstr "Драйверът не поддържа функцията „$function
 
 #: source/resource/conn_shared_res.src#STR_UNSUPPORTED_FEATURE.String.Text
 msgid  "The driver does not support the functionality for '$featurename$'. It is not implemented."
-msgstr ""
+msgstr "Драйверът не поддържа функционалността за „$featurename$“. Тя не е реализирана."
 
 #: source/resource/conn_shared_res.src#STR_FORMULA_WRONG.String.Text
 msgid  "The formula for TypeInfoSettings is wrong!"
@@ -321,11 +333,11 @@ msgstr "Формулата за TypeInfoSettings е неправилна!"
 
 #: source/resource/conn_shared_res.src#STR_STRING_LENGTH_EXCEEDED.String.Text
 msgid  "The string '$string$' exceeds the maximum length of $maxlen$ characters when converted to the target character set '$charset$'."
-msgstr ""
+msgstr "Низът „$string$“ надхвърля максималната дължина от $maxlen$ знака след преобразуване към знаковия набор „$charset$“."
 
 #: source/resource/conn_shared_res.src#STR_CANNOT_CONVERT_STRING.String.Text
 msgid  "The string '$string$' cannot be converted using the encoding '$charset$'."
-msgstr ""
+msgstr "Низът „$string$“ не може да бъде преобразуван в кодирането „$charset$“."
 
 #: source/resource/conn_shared_res.src#STR_URI_SYNTAX_ERROR.String.Text
 msgid  "The connection URL is invalid."
@@ -341,23 +353,23 @@ msgstr "Заявката не може да бъде изпълнена. Опе�
 
 #: source/resource/conn_shared_res.src#STR_QUERY_INVALID_LIKE_COLUMN.String.Text
 msgid  "The query can not be executed. You cannot use 'LIKE' with columns of this type."
-msgstr ""
+msgstr "Заявката не може да бъде изпълнена. Не можете да използвате „LIKE“ с колони от този тип."
 
 #: source/resource/conn_shared_res.src#STR_QUERY_INVALID_LIKE_STRING.String.Text
 msgid  "The query can not be executed. 'LIKE' can be used with a string argument only."
-msgstr ""
+msgstr "Заявката не може да бъде изпълнена. „LIKE“ може да се използва само с аргумент – низ."
 
 #: source/resource/conn_shared_res.src#STR_QUERY_NOT_LIKE_TOO_COMPLEX.String.Text
 msgid  "The query can not be executed. The 'NOT LIKE' condition is too complex."
-msgstr ""
+msgstr "Заявката не може да бъде изпълнена. Условието „NOT LIKE“ е твърде сложно."
 
 #: source/resource/conn_shared_res.src#STR_QUERY_LIKE_WILDCARD.String.Text
 msgid  "The query can not be executed. The 'LIKE' condition contains wildcard in the middle."
-msgstr ""
+msgstr "Заявката не може да бъде изпълнена. Условието „NOT LIKE“ съдържа заместващ знак в средата."
 
 #: source/resource/conn_shared_res.src#STR_QUERY_LIKE_WILDCARD_MANY.String.Text
 msgid  "The query can not be executed. The 'LIKE' condition contains too many wildcards."
-msgstr ""
+msgstr "Заявката не може да бъде изпълнена. Условието „NOT LIKE“ съдържа твърде много заместващи знаци."
 
 #: source/resource/conn_shared_res.src#STR_INVALID_COLUMNNAME.String.Text
 msgid  "The column name '$columnname$' is not valid."
@@ -377,7 +389,7 @@ msgstr "Файлът $filename$ не може да бъде зареден."
 
 #: source/resource/conn_shared_res.src#STR_LOAD_FILE_ERROR_MESSAGE.String.Text
 msgid  "The attempt to load the file resulted in the following error message ($exception_type$):\n\n$error_message$"
-msgstr ""
+msgstr "Опитът за зареждане на файла доведе до следното съобщение за грешка ($exception_type$):\n\n$error_message$"
 
 #: source/resource/conn_shared_res.src#STR_TYPE_NOT_CONVERT.String.Text
 msgid  "The type could not be converted."
@@ -409,7 +421,7 @@ msgstr "Не бе възможно да се създаде потребител
 
 #: source/resource/conn_shared_res.src#STR_INVALID_VIEW_DESCRIPTOR_ERROR.String.Text
 msgid  "Could not create view: invalid object descriptor."
-msgstr ""
+msgstr "Не бе възможно да се създаде виртуална таблица: невалиден дескриптор на обект."
 
 #: source/resource/conn_shared_res.src#STR_VIEW_NO_COMMAND_ERROR.String.Text
 msgid  "Could not create view: no command object."
@@ -417,15 +429,15 @@ msgstr "Не бе възможно да се създаде виртуална �
 
 #: source/resource/conn_shared_res.src#STR_NO_CONNECTION.String.Text
 msgid  "The connection could not be created. May be the necessary data provider is not installed."
-msgstr ""
+msgstr "Не може да бъде установена връзка. Може би не е инсталиран необходимият доставчик на данни."
 
 #: source/resource/conn_shared_res.src#STR_COULD_NOT_DELETE_INDEX.String.Text
 msgid  "The index could not be deleted. An unknown error while accessing the file system occured."
-msgstr ""
+msgstr "Изтриването на индекса бе невъзможно. Възникна непозната грешка при достъп до файловата система."
 
 #: source/resource/conn_shared_res.src#STR_ONL_ONE_COLUMN_PER_INDEX.String.Text
 msgid  "The index could not be created. Only one column per index is allowed."
-msgstr ""
+msgstr "Създаването на индекса бе невъзможно. Разрешена е само по една колона на индекс."
 
 #: source/resource/conn_shared_res.src#STR_COULD_NOT_CREATE_INDEX_NOT_UNIQUE.String.Text
 msgid  "The index could not be created. The values are not unique."
@@ -437,11 +449,11 @@ msgstr "Създаването на индекса бе невъзможно. В
 
 #: source/resource/conn_shared_res.src#STR_COULD_NOT_CREATE_INDEX_NAME.String.Text
 msgid  "The index could not be created. The file '$filename$' is used by an other index."
-msgstr ""
+msgstr "Създаването на индекса бе невъзможно. Името „$filename$“ се използва от друг индекс."
 
 #: source/resource/conn_shared_res.src#STR_COULD_NOT_CREATE_INDEX_KEYSIZE.String.Text
 msgid  "The index could not be created. The size of the chosen column is to big."
-msgstr ""
+msgstr "Създаването на индекса бе невъзможно. Размерът на избраната колона е твърде голям."
 
 #: source/resource/conn_shared_res.src#STR_SQL_NAME_ERROR.String.Text
 msgid  "The name '$name$' doesn't match SQL naming constraints."
@@ -472,28 +484,28 @@ msgid  "Duplicate value found in column '$columnname$'."
 msgstr "Открита е повтаряща се стойност в колоната „$columnname$“."
 
 #: source/resource/conn_shared_res.src#STR_INVALID_COLUMN_DECIMAL_VALUE.String.Text
-msgid  "The '$columnname$' column has been defined as a "Decimal" type, the max. length is $precision$ characters (with $scale$ decimal places).\n\nThe specified value "$value$ is longer than the number of digits allowed."
-msgstr ""
+msgid  "The '$columnname$' column has been defined as a \"Decimal\" type, the max. length is $precision$ characters (with $scale$ decimal places).\n\nThe specified value \"$value$ is longer than the number of digits allowed."
+msgstr "Колоната „$columnname$“ е била дефинирана от тип „Decimal“. Максималната дължина е $precision$ знака (с $scale$ дробни позиции).\n\nЗададената стойност „$value$“ е по-дълга от разрешения брой цифри."
 
 #: source/resource/conn_shared_res.src#STR_COLUMN_NOT_ALTERABLE.String.Text
 msgid  "The column '$columnname$' could not be altered. May be the file system is write protected."
-msgstr ""
+msgstr "Не бе възможно да се промени колоната „$columnname$“. Може би файловата система е защитена срещу запис."
 
 #: source/resource/conn_shared_res.src#STR_INVALID_COLUMN_VALUE.String.Text
 msgid  "The column '$columnname$' could not be updated. The value is invalid for that column."
-msgstr ""
+msgstr "Не бе възможно да се обнови колоната „$columnname$“. Стойността е невалидна за тази колона."
 
 #: source/resource/conn_shared_res.src#STR_COLUMN_NOT_ADDABLE.String.Text
 msgid  "The column '$columnname$' could not be added. May be the file system is write protected."
-msgstr ""
+msgstr "Не бе възможно да се добави колоната „$columnname$“. Може би файловата система е защитена срещу запис."
 
 #: source/resource/conn_shared_res.src#STR_COLUMN_NOT_DROP.String.Text
 msgid  "The column at position '$position$' could not be dropped. May be the file system is write protected."
-msgstr ""
+msgstr "Не бе възможно да се изтрие колоната на позиция $position$. Може би файловата система е защитена срещу запис."
 
 #: source/resource/conn_shared_res.src#STR_TABLE_NOT_DROP.String.Text
 msgid  "The table '$tablename$' could not be dropped. May be the file system is write protected."
-msgstr ""
+msgstr "Не бе възможно да се изтрие таблицата „$tablename$“. Може би файловата система е защитена срещу запис."
 
 #: source/resource/conn_shared_res.src#STR_COULD_NOT_ALTER_TABLE.String.Text
 msgid  "The table could not be altered."
@@ -512,12 +524,12 @@ msgid  "Can only sort by table columns."
 msgstr "Може да се сортира само по колони на таблицата."
 
 #: source/resource/conn_shared_res.src#STR_QUERY_COMPLEX_COUNT.String.Text
-msgid  "The query can not be executed. It is too complex. Only "COUNT(*)" is supported."
-msgstr ""
+msgid  "The query can not be executed. It is too complex. Only \"COUNT(*)\" is supported."
+msgstr "Заявката не може да бъде изпълнена, тъй като в твърде сложна. Поддържа се само „COUNT(*)“."
 
 #: source/resource/conn_shared_res.src#STR_QUERY_INVALID_BETWEEN.String.Text
 msgid  "The query can not be executed. The 'BETWEEN' arguments are not correct."
-msgstr ""
+msgstr "Заявката не може да бъде изпълнена. Аргументите на „BETWEEN“ са неправилни."
 
 #: source/resource/conn_shared_res.src#STR_QUERY_FUNCTION_NOT_SUPPORTED.String.Text
 msgid  "The query can not be executed. The function is not supported."
@@ -528,8 +540,8 @@ msgid  "The table can not be changed. It is read only."
 msgstr "Таблицата не може да бъде променена, тъй като е само за четене."
 
 #: source/resource/conn_shared_res.src#STR_DELETE_ROW.String.Text
-msgid  "The row could not be deleted. The option "Display inactive records" is set."
-msgstr ""
+msgid  "The row could not be deleted. The option \"Display inactive records\" is set."
+msgstr "Заявката не може да бъде изпълнена."
 
 #: source/resource/conn_shared_res.src#STR_ROW_ALREADY_DELETED.String.Text
 msgid  "The row could not be deleted. It is already deleted."
@@ -537,11 +549,11 @@ msgstr "Записът не може да бъде изтрит, тъй като
 
 #: source/resource/conn_shared_res.src#STR_QUERY_MORE_TABLES.String.Text
 msgid  "The query can not be executed. It contains more than one table."
-msgstr ""
+msgstr "Заявката не може да бъде изпълнена, тъй като съдържа повече от една таблица."
 
 #: source/resource/conn_shared_res.src#STR_QUERY_NO_TABLE.String.Text
 msgid  "The query can not be executed. It contains no valid table."
-msgstr ""
+msgstr "Заявката не може да бъде изпълнена, тъй като не съдържа валидни таблици."
 
 #: source/resource/conn_shared_res.src#STR_QUERY_NO_COLUMN.String.Text
 msgid  "The query can not be executed. It contains no valid columns."
@@ -589,15 +601,15 @@ msgstr "Не бе намерена подходяща инсталация на 
 
 #: source/resource/conn_shared_res.src#STR_KDE_VERSION_TOO_OLD.String.Text
 msgid  "KDE version $major$.$minor$ or higher is required to access the KDE Address Book."
-msgstr ""
+msgstr "За достъп до адресния бележник на KDE е необходима KDE версия $major$.$minor$ или по-висока."
 
 #: source/resource/conn_shared_res.src#STR_KDE_VERSION_TOO_NEW.String.Text
 msgid  "The found KDE version is too new. Only KDE up to version $major$.$minor$ is known to work with this product.\n"
-msgstr ""
+msgstr "Намерената версия на KDE е твърде нова. Само за версиите на KDE до $major$.$minor$ е известно, че работят с настоящия продукт.\n"
 
 #: source/resource/conn_shared_res.src#STR_KDE_VERSION_TOO_NEW_WORK_AROUND.String.Text
 msgid  "If you are sure that your KDE version works, you might execute the following Basic macro to disable this version check:\n\n"
-msgstr ""
+msgstr "Ако сте сигурен, че вашата версия на KDE работи, може да стартирате следния макрос на Basic, за да изключите тази проверка на версията:\n\n"
 
 #: source/resource/conn_shared_res.src#STR_PARA_ONLY_PREPARED.String.Text
 msgid  "Parameters can appear only in prepared statements."
@@ -613,31 +625,31 @@ msgstr "Не бе намерена подходяща инсталация на 
 
 #: source/resource/conn_shared_res.src#STR_NO_DISK_SPACE.String.Text
 msgid  "The database file '$filename$' could not be created. Please check your disk space."
-msgstr ""
+msgstr "Файлът с база от данни „$filename$“ не може да бъде създаден. Моля, проверете наличното дисково пространство."
 
 #: source/resource/conn_shared_res.src#STR_COMMAND_NOT_FOUND.String.Text
 msgid  "The database '$databasename$' could not be started because the command '$progname$' could not be executed."
-msgstr ""
+msgstr "Базата от данни „$databasename$“ не може да бъде стартирана, тъй като не може да се изпълни командата „$progname$“."
 
 #: source/resource/conn_shared_res.src#STR_DATABASE_NEEDS_CONVERTING.String.Text
 msgid  "The current database need to be converted. Please insert control user  and password."
-msgstr ""
+msgstr "Текущата база от данни трябва да бъде конвертирана. Моля, въведете контролен потребител и парола."
 
 #: source/resource/conn_shared_res.src#STR_USER_NO_DELETE.String.Text
 msgid  "This user couldn't be deleted. Otherwise the database stays in a inconsistent state."
-msgstr ""
+msgstr "Потребителят не може да бъде изтрит, тъй като ще се наруши целостта на базата от данни."
 
 #: source/resource/conn_shared_res.src#STR_NO_STROAGE.String.Text
 msgid  "The connection can not be established. No storage or URL was given."
-msgstr ""
+msgstr "Не може да се установи връзка. Не е зададено устройство за съхранение или URL."
 
 #: source/resource/conn_shared_res.src#STR_INVALID_FILE_URL.String.Text
 msgid  "The given URL contains no valid local file system path. Please check the location of your database file."
-msgstr ""
+msgstr "Даденият URL адрес не съдържа валиден път в локалната файлова система. Моля, проверете местоположението на файла с базата от данни."
 
 #: source/resource/conn_shared_res.src#STR_NO_TABLE_CONTAINER.String.Text
 msgid  "An error occured while obtaining the connection's table container."
-msgstr ""
+msgstr "Възникнала е грешка при получаването на контейнера за таблици от връзката."
 
 #: source/resource/conn_shared_res.src#STR_NO_TABLE_EDITOR_DIALOG.String.Text
 msgid  "An error occured while creating the table editor dialog."
@@ -685,16 +697,4 @@ msgstr "Не съществува  $1$."
 
 #: source/resource/conn_error_message.src#256 + 2*550 + 0.String.Text
 msgid  "Unable to display the complete table content. Please apply a filter."
-msgstr ""
-
-#: source/drivers/mozab/mozab2.xcu#.Drivers.Installed.sdbc:address:mozilla:.DriverTypeDisplayName
-msgid  "SeaMonkey Address Book"
-msgstr "Адресен бележник на SeaMonkey"
-
-#: source/drivers/mozab/mozab2.xcu#.Drivers.Installed.sdbc:address:thunderbird:.DriverTypeDisplayName
-msgid  "Thunderbird Address Book"
-msgstr "Адресен бележник на Thunderbird"
-
-#: source/drivers/mozab/mozab2.xcu#.Drivers.Installed.sdbc:address:ldap:*.DriverTypeDisplayName
-msgid  "LDAP Address Book"
-msgstr "Адресен бележник на LDAP"
+msgstr "Не може да се покаже цялото съдържание на таблицата. Моля, приложете филтър."

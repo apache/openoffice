@@ -49,7 +49,7 @@ msgstr "~Μετατροπή"
 
 #: source/euro/euro.src#STEP_ZERO + 4.String.Text
 msgid  "Note: Currency amounts from external links and currency conversion factors in formulas cannot be converted."
-msgstr ""
+msgstr "Συμβουλή: Δεν είναι δυνατή η μετατροπή ενός ποσού που είναι συνδεδεμένο με εξωτερικές αναφορές, όπως και η μετατροπή παραγόντων μετατροπής νομισμάτων σε τύπους."
 
 #: source/euro/euro.src#STEP_ZERO + 5.String.Text
 msgid  "First, unprotect all sheets."
@@ -153,7 +153,7 @@ msgstr "Πρόοδος της μετατροπής για τα πρότυπα κ
 
 #: source/euro/euro.src#STATUSLINE + 2.String.Text
 msgid  "Registration of the relevant ranges: Sheet %1Number%1 of %2TotPageCount%2"
-msgstr ""
+msgstr "Καταγραφή των συναφών περιοχών προς μετατροπή: Φύλλο %1Number%1 από %2TotPageCount%2"
 
 #: source/euro/euro.src#STATUSLINE + 3.String.Text
 msgid  "Entry of the ranges to be converted..."
@@ -197,7 +197,7 @@ msgstr "Θέλετε να καταργηθεί προσωρινά η προστ�
 
 #: source/euro/euro.src#MESSAGES + 7.String.Text
 msgid  "Enter the password to unprotect the table %1TableName%1"
-msgstr ""
+msgstr "Εισάγετε τον κωδικό για να καταργήσετε την προστασία του πίνακα %1TableName%1"
 
 #: source/euro/euro.src#MESSAGES + 8.String.Text
 msgid  "Wrong Password!"
@@ -221,11 +221,11 @@ msgstr "Δεν θα γίνει κατάργηση της προστασίας τ
 
 #: source/euro/euro.src#MESSAGES + 13.String.Text
 msgid  "The Wizard cannot edit this document as cell formats cannot be modified in documents containing protected spreadsheets."
-msgstr ""
+msgstr "Η επεξεργασία αυτού του εγγράφου με τον Αυτόματο Πιλότο δεν είναι δυνατή, επειδή δεν μπορεί να εκτελεστεί η τροποποίηση πρότυπων κελιών σε έγγραφα με προστατευόμενα υπολογιστικά φύλλα."
 
 #: source/euro/euro.src#MESSAGES + 14.String.Text
 msgid  "Please note that the Euro Converter will, otherwise, not be able to edit this document!"
-msgstr ""
+msgstr "Παρακαλώ προσέξτε ότι διαφορετικά δεν θα είναι δυνατόν να γίνει επεξεργασία του εγγράφου αυτού από τον 'Μετατροπέα του Ευρώ'!"
 
 #: source/euro/euro.src#MESSAGES + 15.String.Text
 msgid  "Please choose a currency to be converted first!"
@@ -245,7 +245,7 @@ msgstr "Ακύρωση"
 
 #: source/euro/euro.src#MESSAGES + 19.String.Text
 msgid  "Please select a %PRODUCTNAME Calc document for editing!"
-msgstr ""
+msgstr "Παρακαλώ επιλέξτε για την επεξεργασία ένα έγγραφο του %PRODUCTNAME Calc!"
 
 #: source/euro/euro.src#MESSAGES + 20.String.Text
 msgid  "'<1>' is not a directory!"
@@ -337,7 +337,7 @@ msgstr "Το σύνολο νομισμάτων για το έγγραφο δεν
 
 #: source/euro/euro.src#CURRENCIES + 17.String.Text
 msgid  "The language set for your operating system is not a language of the European Monetary Union."
-msgstr ""
+msgstr "Η γλώσσα την οποία επιλέξατε για το λειτουργικό σας σύστημα δεν είναι γλώσσα της ευρωπαϊκής νομισματικής ένωσης!"
 
 #: source/euro/euro.src#STEP_LASTPAGE.String.Text
 msgid  "Progress"
@@ -361,35 +361,35 @@ msgstr "Πάντα κατάργηση της προστασίας του φύλ�
 
 #: source/formwizard/dbwizres.src#RID_COMMON_START + 0.String.Text
 msgid  "The directory '%1' could not be created.<BR>There may not be enough space left on your hard disk."
-msgstr ""
+msgstr "Αδυναμία δημιουργίας του καταλόγου '%1'.<BR>Ίσως δεν υπάρχει αρκετός χώρος στο δίσκο."
 
 #: source/formwizard/dbwizres.src#RID_COMMON_START + 1.String.Text
 msgid  "The text document could not be created.<BR>Please check if the module 'PRODUCTNAME Writer' is installed."
-msgstr ""
+msgstr "Αδυναμία δημιουργίας του εγγράφου κειμένου.<BR>Παρακαλώ ελέγξτε ότι το άρθρωμα 'PRODUCTNAME Writer' έχει εγκατασταθεί."
 
 #: source/formwizard/dbwizres.src#RID_COMMON_START + 2.String.Text
 msgid  "The spreadsheet could not be created.<BR>Please check if the module 'PRODUCTNAME Calc' is installed."
-msgstr ""
+msgstr "Αδυναμία δημιουργίας του λογιστικού φύλλου.<BR>Παρακαλώ ελέγξτε ότι το άρθρωμα 'PRODUCTNAME Calc' έχει εγκατασταθεί."
 
 #: source/formwizard/dbwizres.src#RID_COMMON_START + 3.String.Text
 msgid  "The presentation could not be created.<BR>Please check if the module 'PRODUCTNAME Impress' is installed."
-msgstr ""
+msgstr "Αδυναμία δημιουργίας της παρουσίασης.<BR>Παρακαλώ ελέγξτε ότι το άρθρωμα 'PRODUCTNAME Impress' έχει εγκατασταθεί."
 
 #: source/formwizard/dbwizres.src#RID_COMMON_START + 4.String.Text
 msgid  "The drawing could not be created.<BR>Please check if the module 'PRODUCTNAME Draw' is installed."
-msgstr ""
+msgstr "Αδυναμία δημιουργίας του σχεδίου.<BR>Παρακαλώ ελέγξτε ότι το άρθρωμα 'PRODUCTNAME Draw' έχει εγκατασταθεί."
 
 #: source/formwizard/dbwizres.src#RID_COMMON_START + 5.String.Text
 msgid  "The formula could not be created.<BR>Please check if the module 'PRODUCTNAME Math' is installed."
-msgstr ""
+msgstr "Αδυναμία δημιουργίας του μαθηματικού τύπου.<BR>Παρακαλώ ελέγξτε ότι το άρθρωμα 'PRODUCTNAME Math' έχει εγκατασταθεί."
 
 #: source/formwizard/dbwizres.src#RID_COMMON_START + 6.String.Text
 msgid  "The files required could not be found.<BR>Please start the %PRODUCTNAME Setup and choose 'Repair'."
-msgstr ""
+msgstr "Αδυναμία εύρεσης των απαιτουμένων αρχείων.<BR>Παρακαλώ εκκινήστε το %PRODUCTNAME Ρυθμίσεις και επιλέξτε 'Επισκευή'."
 
 #: source/formwizard/dbwizres.src#RID_COMMON_START + 7.String.Text
 msgid  "The file '<PATH>' already exists.<BR><BR>Would you like to overwrite the existing file?"
-msgstr ""
+msgstr "Το αρχείο '<PATH>' υπάρχει ήδη.<BR><BR>Θέλετε να αντικατασταθεί το υπάρχον αρχείο;"
 
 #: source/formwizard/dbwizres.src#RID_COMMON_START + 8.String.Text
 msgid  "Yes"
@@ -445,7 +445,7 @@ msgstr "Πρότυπο που δημιουργήθηκε με το <wizard_name>
 
 #: source/formwizard/dbwizres.src#RID_COMMON_START + 21.String.Text
 msgid  "The wizard could not be run, because important files were not found.\nUnder 'Tools - Options - %PRODUCTNAME - Paths' click the 'Default' button to reset the paths to the original default settings.\nThen run the wizard again."
-msgstr ""
+msgstr "Αδυναμία εκτέλεσης του αυτόματου πιλότου, λόγω μη εύρεσης απαραίτητων αρχείων.\nΣτο 'Εργαλεία - Ρυθμίσεις - %PRODUCTNAME - Διαδρομές' πατήστε το πλήκτρο 'Προκαθορισμένα' για να επαναφέρετε τις διαδρομές στις προκαθορισμένες ρυθμίσεις.\nΜετά εκτελέσετε ξανά τον αυτόματο πιλότο."
 
 #: source/formwizard/dbwizres.src#RID_DB_COMMON_START + 0.String.Text
 msgid  "C~reate"
@@ -473,7 +473,7 @@ msgstr "Όνομα ~πίνακα"
 
 #: source/formwizard/dbwizres.src#RID_DB_COMMON_START + 6.String.Text
 msgid  "An error occurred while running the wizard. The wizard will be terminated."
-msgstr ""
+msgstr "Παρουσιάστηκε σφάλμα κατά την εκτέλεση του αυτόματου πιλότου. Ο αυτόματος πιλότος θα τερματιστεί."
 
 #: source/formwizard/dbwizres.src#RID_DB_COMMON_START + 14.String.Text
 msgid  "No connection to the database could be established."
@@ -553,11 +553,11 @@ msgstr "Πεδία ~μέσα στη φόρμα"
 
 #: source/formwizard/dbwizres.src#RID_DB_FORM_WIZARD_START + 2.String.Text
 msgid  "Binary fields are always listed and selectable from the left list.\nIf possible, they are interpreted as images."
-msgstr ""
+msgstr "Τα δυαδικά πεδία παρατίθενται πάντα και είναι επιλέξιμα από την αριστερή λίστα.\nΑν είναι δυνατόν, αναλύονται ως εικόνες."
 
 #: source/formwizard/dbwizres.src#RID_DB_FORM_WIZARD_START + 3.String.Text
 msgid  "A subform is a form that is inserted in another form.\nUse subforms to show data from tables or queries with a one-to-many relationship."
-msgstr ""
+msgstr "Μια υποφόρμα είναι μια φόρμα που εισάγεται σε μια άλλη φόρμα.\nΧρησιμοποιήστε υποφόρμες για να παρουσιάσετε δεδομένα από πίνακες ή ερωτήματα με σχέση μια-σε-πολλές."
 
 #: source/formwizard/dbwizres.src#RID_DB_FORM_WIZARD_START + 4.String.Text
 msgid  "~Add Subform"
@@ -593,7 +593,7 @@ msgstr "Πεδία μέσα στη φόρμα"
 
 #: source/formwizard/dbwizres.src#RID_DB_FORM_WIZARD_START + 19.String.Text
 msgid  "The join '<FIELDNAME1>' and '<FIELDNAME2>' has been selected twice.\nBut joins may only be used once."
-msgstr ""
+msgstr "Ο σύνδεσμος '<FIELDNAME1>' και '<FIELDNAME2>' έχει επιλεγεί δύο φορές.\nΑλλά οι σύνδεσμοι μπορούν να χρησιμοποιηθούν μόνο μια φορά."
 
 #: source/formwizard/dbwizres.src#RID_DB_FORM_WIZARD_START + 20.String.Text
 msgid  "~First joined subform field"
@@ -805,7 +805,7 @@ msgstr "Καθορισμός του ονόματος της φόρμας"
 
 #: source/formwizard/dbwizres.src#RID_DB_FORM_WIZARD_START + 98.String.Text
 msgid  "A form with the name '%FORMNAME' already exists.\nChoose another name."
-msgstr ""
+msgstr "Μια φόρμα με το όνομα '%FORMNAME' υπάρχει ήδη.\nΠαρακαλώ, επιλέξτε ένα άλλο όνομα."
 
 #: source/formwizard/dbwizres.src#RID_DB_QUERY_WIZARD_START + 0.String.Text
 msgid  "Query Wizard"
@@ -853,11 +853,11 @@ msgstr "Ταίριαξε οποιο~δήποτε από τα ακόλουθα"
 
 #: source/formwizard/dbwizres.src#RID_DB_QUERY_WIZARD_START + 11.String.Text
 msgid  "~Detailed query (Shows all records of the query.)"
-msgstr ""
+msgstr "~Αναλυτικό ερώτημα (Εμφάνιση όλων των εγγραφών που απαντούν στο ερώτημα.)"
 
 #: source/formwizard/dbwizres.src#RID_DB_QUERY_WIZARD_START + 12.String.Text
 msgid  "~Summary query (Shows only results of aggregate functions.)"
-msgstr ""
+msgstr "~Περιληπτικό ερώτημα (Εμφάνιση μόνο των αποτελεσμάτων των περιληπτικών συναρτήσεων.)"
 
 #: source/formwizard/dbwizres.src#RID_DB_QUERY_WIZARD_START + 16.String.Text
 msgid  "Aggregate functions"
@@ -1152,16 +1152,19 @@ msgid  "Overview"
 msgstr "Σύνοψη"
 
 #: source/formwizard/dbwizres.src#RID_DB_QUERY_WIZARD_START + 88.String.Text
+#, fuzzy
 msgid  "A field that has not been assigned an aggregate function must be used in a group."
-msgstr ""
+msgstr "Για την ομαδοποίηση πρέπει να χρησιμοποιηθεί πεδίο που δεν έχει οριστεί ως συνολική συνάρτηση."
 
 #: source/formwizard/dbwizres.src#RID_DB_QUERY_WIZARD_START + 89.String.Text
+#, fuzzy
 msgid  "The condition '<FIELDNAME> <LOGICOPERATOR> <VALUE>' was chosen twice. Each condition can only be chosen once"
-msgstr ""
+msgstr "Η συνθήκη '<FIELDNAME> <LOGICOPERATOR> <VALUE>' έχει επιλεγεί δύο φορές. Κάθε συνθήκη μπορεί να επιλεγεί μόνο μία φορά."
 
 #: source/formwizard/dbwizres.src#RID_DB_QUERY_WIZARD_START + 90.String.Text
+#, fuzzy
 msgid  "The aggregate function <FUNCTION> has been assigned twice to the fieldname '<NUMERICFIELD>'."
-msgstr ""
+msgstr "Η συνολική συνάρτηση <FUNCTION> έχει οριστεί δύο φορές στο πεδίο με όνομα '<NUMERICFIELD>'."
 
 #: source/formwizard/dbwizres.src#RID_DB_QUERY_WIZARD_START + 91.String.Text
 #, fuzzy
@@ -1429,12 +1432,14 @@ msgid  "The form '<REPORTFORM>' does not exist."
 msgstr "Η φόρμα '<REPORTFORM>' δεν υπάρχει."
 
 #: source/formwizard/dbwizres.src#RID_DB_REPORT_WIZARD_START + 65.String.Text
+#, fuzzy
 msgid  "The query with the statement <BR>'<STATEMENT>' <BR> could not be run. <BR> Check your data source."
-msgstr ""
+msgstr "Το ερώτημα με τη δήλωση <BR>'<STATEMENT>' <BR> δεν μπόρεσε να εκτελεστεί. <BR> Ελέγξτε την προέλευση δεδομένων σας."
 
 #: source/formwizard/dbwizres.src#RID_DB_REPORT_WIZARD_START + 66.String.Text
+#, fuzzy
 msgid  "The following hidden control in the form '<REPORTFORM>' could not be read: '<CONTROLNAME>'."
-msgstr ""
+msgstr "Δεν ήταν δυνατή η ανάγνωση του ακόλουθου κρυμμένου στοιχείου ελέγχου στη φόρμα '<REPORTFORM>' : '<CONTROLNAME>'."
 
 #: source/formwizard/dbwizres.src#RID_DB_REPORT_WIZARD_START + 67.String.Text
 #, fuzzy
@@ -1462,8 +1467,9 @@ msgid  "Field"
 msgstr "Πεδίο"
 
 #: source/formwizard/dbwizres.src#RID_DB_REPORT_WIZARD_START + 72.String.Text
+#, fuzzy
 msgid  "An error occurred in the wizard.<BR>The template '%PATH' could be erroneous.<BR>Either the required sections or tables do not exist or exist under the wrong name.<BR>See the Help for more detailed information.<BR>Please select another template."
-msgstr ""
+msgstr "Συνέβη ένα σφάλμα στον Αυτόματο Πιλότο.<BR>Το πρότυπο '%PATH' μπορεί να είναι λάθος.<BR>Είτε τα απαιτούμενα πεδία ή πίνακες δεν υπάρχουν ή υπάρχουν με άλλα ονόματα.<BR>Δείτε τη βοήθεια για πιο λεπτομερείς πληροφορίες.<BR>Παρακαλούμε επιλέξτε ένα άλλο πρότυπο."
 
 #: source/formwizard/dbwizres.src#RID_DB_REPORT_WIZARD_START + 73.String.Text
 #, fuzzy
@@ -1471,16 +1477,19 @@ msgid  "There is an invalid user field in a table."
 msgstr "Υπάρχει ένα μη έγκυρο πεδίο χρήστη σε ένα πίνακα."
 
 #: source/formwizard/dbwizres.src#RID_DB_REPORT_WIZARD_START + 74.String.Text
+#, fuzzy
 msgid  "The sort criterium '<FIELDNAME>' was chosen twice. Each criterium can only be chosen once."
-msgstr ""
+msgstr "Το κριτήριο ταξινόμησης '<FIELDNAME>' έχει επιλεγεί δύο φορές. Κάθε κριτήριο πρέπει να επιλεγεί μόνο μία φορά."
 
 #: source/formwizard/dbwizres.src#RID_DB_REPORT_WIZARD_START + 75.String.Text
+#, fuzzy
 msgid  "Note: The dummy text will be replaced by data from the database when the report is created."
-msgstr ""
+msgstr "Σημείωση: Το τυχαίο κείμενο θα αντικατασταθεί με δεδομένα από τη βάση δεδομένων όταν δημιουργηθεί η αναφορά."
 
 #: source/formwizard/dbwizres.src#RID_DB_REPORT_WIZARD_START + 76.String.Text
+#, fuzzy
 msgid  "A report '%REPORTNAME' already exists in the database. Please assign another name."
-msgstr ""
+msgstr "Μία αναφορά με το όνομα  '%REPORTNAME' υπάρχει ήδη στη βάση δεδομένων. Εισαγάγετε ένα άλλο όνομα."
 
 #: source/formwizard/dbwizres.src#RID_DB_REPORT_WIZARD_START + 78.String.Text
 #, fuzzy
@@ -1603,8 +1612,9 @@ msgid  "Create table"
 msgstr "Δημιουργία πίνακα"
 
 #: source/formwizard/dbwizres.src#RID_DB_TABLE_WIZARD_START + 14.String.Text
+#, fuzzy
 msgid  "This wizard helps you to create a table for your database. After selecting a table category and a sample table, choose the fields you want to include in your table. You can include fields from more than one sample table."
-msgstr ""
+msgstr "Αυτός ο αυτόματος πιλότος θα σας βοηθήσει να δημιουργήσετε έναν πίνακα για τη βάση δεδομένων σας. Αφού επιλέξετε κατηγορία πίνακα και κάποιο δείγμα πίνακα, επιλέξτε ποια πεδία θέλετε να περιέχει. Μπορείτε να συμπεριλάβετε πεδία από περισσότερα από ένα δείγματα πινάκων, αν το επιθυμείτε."
 
 #: source/formwizard/dbwizres.src#RID_DB_TABLE_WIZARD_START + 15.String.Text
 #, fuzzy
@@ -1657,8 +1667,9 @@ msgid  "~Selected fields"
 msgstr "Επιλεγμέν~α πεδία"
 
 #: source/formwizard/dbwizres.src#RID_DB_TABLE_WIZARD_START + 26.String.Text
+#, fuzzy
 msgid  "A primary key uniquely identifies each record in a database table. Primary keys ease the linking of information in separate tables, and it is recommended that you have a primary key in every table. Without a primary key, it will not be possible to enter data into this table."
-msgstr ""
+msgstr "Το πρωτεύον κλειδί ταυτοποιεί μονοσήμαντα κάθε εγγραφή σε έναν πίνακα της βάση δεδομένων. Τα πρωτεύοντα κλειδιά διευκολύνουν τη σύνδεση πληροφοριών σε διαφορετικούς πίνακες, και συνιστάται να ορίζετε ένα πρωτεύον κλειδί σε κάθε πίνακα. Χωρίς πρωτεύον κλειδί, δεν θα είναι δυνατή η εισαγωγή δεδομένων σε αυτό τον πίνακα."
 
 #: source/formwizard/dbwizres.src#RID_DB_TABLE_WIZARD_START + 27.String.Text
 #, fuzzy
@@ -1701,8 +1712,9 @@ msgid  "What do you want to name your table?"
 msgstr "Πώς θέλετε να ονομάσετε τον πίνακά σας;"
 
 #: source/formwizard/dbwizres.src#RID_DB_TABLE_WIZARD_START + 35.String.Text
+#, fuzzy
 msgid  "Congratulations. You have entered all the information needed to create your table."
-msgstr ""
+msgstr "Συγχαρητήρια. Έχετε εισάγει όλη την απαιτούμενη πληροφορία για τη δημιουργία του πίνακά σας."
 
 #: source/formwizard/dbwizres.src#RID_DB_TABLE_WIZARD_START + 36.String.Text
 #, fuzzy
@@ -1730,12 +1742,14 @@ msgid  "The table you have created could not be opened."
 msgstr "Δεν ήταν δυνατό να ανοιχτεί ο πίνακας που δημιουργήσατε."
 
 #: source/formwizard/dbwizres.src#RID_DB_TABLE_WIZARD_START + 41.String.Text
+#, fuzzy
 msgid  "The table name '%TABLENAME' contains a character ('%SPECIALCHAR') that might not be supported by the database."
-msgstr ""
+msgstr "Το όνομα πίνακα '%TABLENAME' περιέχει ένα χαρακτήρα ('%SPECIALCHAR') που μπορεί να μην υποστηρίζεται από την βάση δεδομένων."
 
 #: source/formwizard/dbwizres.src#RID_DB_TABLE_WIZARD_START + 42.String.Text
+#, fuzzy
 msgid  "The field name '%FIELDNAME' contains a special character ('%SPECIALCHAR') that might not be supported by the database."
-msgstr ""
+msgstr "Το όνομα πεδίου '%FIELDNAME' περιέχει έναν ειδικό χαρακτήρα ('%SPECIALCHAR') που μπορεί να μην υποστηρίζεται από την βάση δεδομένων."
 
 #: source/formwizard/dbwizres.src#RID_DB_TABLE_WIZARD_START + 43.String.Text
 #, fuzzy
@@ -1758,12 +1772,14 @@ msgid  "Remove the selected Field"
 msgstr "Αφαίρεση των επιλεγμένων πεδίων"
 
 #: source/formwizard/dbwizres.src#RID_DB_TABLE_WIZARD_START + 47.String.Text
+#, fuzzy
 msgid  "The field cannot be inserted because this would exceed the maximum number of %COUNT possible fields in the database table"
-msgstr ""
+msgstr "Αδυναμία εισαγωγής πεδίου, γιατί θα υπερβαίνεται ο μέγιστος επιτρεπόμενος αριθμός πεδίων (%COUNT) για τον πίνακα της βάσης δεδομένων"
 
 #: source/formwizard/dbwizres.src#RID_DB_TABLE_WIZARD_START + 48.String.Text
+#, fuzzy
 msgid  "The name '%TABLENAME' already exists.\nPlease enter another name."
-msgstr ""
+msgstr "Το όνομα '%TABLENAME' υπάρχει ήδη στη βάση δεδομένων.\nΠαρακαλώ, εισαγάγετε ένα άλλο όνομα."
 
 #: source/formwizard/dbwizres.src#RID_DB_TABLE_WIZARD_START + 49.String.Text
 #, fuzzy
@@ -1931,8 +1947,9 @@ msgid  "Page design"
 msgstr "Σχεδίαση σελίδας"
 
 #: source/formwizard/dbwizres.src#RID_LETTERWIZARDDIALOG_START + 31.String.Text
+#, fuzzy
 msgid  "This wizard helps you to create a letter template. You can then use the template as the basis for writing letters as often as desired."
-msgstr ""
+msgstr "Αυτός ο Αυτόματος πιλότος σας βοηθά να δημιουργήσετε ένα πρότυπο επιστολής. Μπορείτε τότε να χρησιμοποιήσετε το πρότυπο σαν βάση για την συγγραφή επιστολών όσο συχνά επιθυμήτε."
 
 #: source/formwizard/dbwizres.src#RID_LETTERWIZARDDIALOG_START + 32.String.Text
 #, fuzzy
@@ -2015,12 +2032,14 @@ msgid  "Footer"
 msgstr "Υποσέλιδο"
 
 #: source/formwizard/dbwizres.src#RID_LETTERWIZARDDIALOG_START + 48.String.Text
+#, fuzzy
 msgid  "This wizard creates a letter template which enables you to create multiple letters with the same layout and settings."
-msgstr ""
+msgstr "Αυτός ο αυτόματος πιλότος δημιουργεί ένα πρότυπο επιστολής, το οποίο σας επιτρέπει να δημιουργήσετε διάφορες επιστολές με την ίδια διάταξη και ρυθμίσεις."
 
 #: source/formwizard/dbwizres.src#RID_LETTERWIZARDDIALOG_START + 49.String.Text
+#, fuzzy
 msgid  "To create another new letter out of the template just navigate to the template location and double-click it."
-msgstr ""
+msgstr "Για να δημιουργήσετε μία νέα επιστολή από το πρότυπο, απλά προχωρήστε στη διαδρομή μέχρι την τοποθεσία του προτύπου και κάντε διπλό κλικ πάνω του."
 
 #: source/formwizard/dbwizres.src#RID_LETTERWIZARDDIALOG_START + 50.String.Text
 #, fuzzy
@@ -2208,8 +2227,9 @@ msgid  "Page design"
 msgstr "Σχεδίαση σελίδας"
 
 #: source/formwizard/dbwizres.src#RID_FAXWIZARDDIALOG_START + 17.String.Text
+#, fuzzy
 msgid  "This wizard helps you to create a fax template. The template can then be used to create a fax whenever needed."
-msgstr ""
+msgstr "Αυτός ο οδηγός σας βοηθά να δημιουργήσετε ένα πρότυπο fax. Το πρότυπο μπορεί τότε να χρησιμοποιηθεί για την δημιουργία ενός fax όποτε χρειάζεται."
 
 #: source/formwizard/dbwizres.src#RID_FAXWIZARDDIALOG_START + 18.String.Text
 #, fuzzy
@@ -2237,12 +2257,14 @@ msgid  "Footer"
 msgstr "Υποσέλιδο"
 
 #: source/formwizard/dbwizres.src#RID_FAXWIZARDDIALOG_START + 23.String.Text
+#, fuzzy
 msgid  "This wizard creates a fax template which enables you to create multiple faxes with the same layout and settings."
-msgstr ""
+msgstr "Αυτός ο οδηγός δημιουργεί ένα πρότυπο fax που σας επιτρέπει να δημιουργήσετε πολλαπλά fax με την ίδια διάταξη και ρυθμίσεις."
 
 #: source/formwizard/dbwizres.src#RID_FAXWIZARDDIALOG_START + 24.String.Text
+#, fuzzy
 msgid  "To create another new fax out of the template, go to the location where you saved the template and double-click the file."
-msgstr ""
+msgstr "Για να δημιουργήσετε άλλο ένα νέο fax απο το πρότυπο, πηγαίνετε στην τοποθεσία που αποθηκεύσατε το πρότυπο και κάντε διπλό κλικ στο αρχείο."
 
 #: source/formwizard/dbwizres.src#RID_FAXWIZARDDIALOG_START + 25.String.Text
 #, fuzzy
@@ -2315,8 +2337,9 @@ msgid  "Use placeholders for ~recipient's address"
 msgstr "Χρήση επιλογών ένδειξης θέσης για διεύθυνση παρα~λήπτη"
 
 #: source/formwizard/dbwizres.src#RID_FAXWIZARDDIALOG_START + 39.String.Text
+#, fuzzy
 msgid  "Use address database for ~mail merge"
-msgstr ""
+msgstr "Χρήση βάσης δεδομένων διευθύνσεων για συγχώνευση στο ηλεκτρονικό ~γράμμα"
 
 #: source/formwizard/dbwizres.src#RID_FAXWIZARDDIALOG_START + 40.String.Text
 #, fuzzy
@@ -2409,8 +2432,9 @@ msgid  "Web Wizard"
 msgstr "Αυτόματος πιλότος ιστοσελίδας"
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +2.String.Text
+#, fuzzy
 msgid  "This Web Wizard is to aid you in publishing documents on the Internet.\n\nIt will convert the documents so that they can be viewed by a web browser. In addition, it will generate a Table of Contents page with links for easy access to the documents. The Web Wizard will also allow you to customize the design and layout of your web site.\n\nYou will be able to keep the documents you have published on the web up-to-date and add or remove documents at any time."
-msgstr ""
+msgstr "Αυτός ο Αυτόματος πιλότος ιστοσελίδας πρόκειται να σας βοηθήσει στην δημοσίευση εγγράφων στο διαδίκτυο.\n\nΘα μετατρέψει τα έγγραφα έτσι ώστε να μπορούν να προβληθούν από έναν περιηγητή ιστού. Επιπλέον, θα δημιουργήσει μια σελίδα περιεχομένων με συνδέσμους για εύκολη πρόσβαση στα έγγραφα. Ο Αυτόματος πιλότος γιστοσελίδας θα σας επιτρέψει επίσης να προσαρμόσετε τον σχεδιασμό και την διάταξη της ιστοσελίδας σας.\n\nΘα μπορείτε να κρατάτε ενήμερα τα έγγραφα που έχετε δημοσιεύσει στο Διαδίκτυο και να προσθέτετε ή να αφαιρείτε έγγραφα οποιαδήποτε στιγμή."
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +4.String.Text
 #, fuzzy
@@ -2628,8 +2652,9 @@ msgid  "~Size in KB"
 msgstr "~Μέγεθος σε KB"
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +59.String.Text
+#, fuzzy
 msgid  "Click 'Preview' to see a preview in your browser:"
-msgstr ""
+msgstr "Κάντε κλικ στο 'Προεπισκόπηση' για να δείτε μια προεπισκόπηση στον περιηγητή σας:"
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +60.String.Text
 #, fuzzy
@@ -2637,8 +2662,9 @@ msgid  "Customize the selected layout"
 msgstr "Προσαρμογή της επιλεγμένης διάταξης"
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +61.String.Text
+#, fuzzy
 msgid  "Include the following information for each document in the table of contents:"
-msgstr ""
+msgstr "Να συμπεριλαμβάνονται οι ακόλουθες πληροφορίες για κάθε έγγραφο στον πίνακα περιεχομένων:"
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +62.String.Text
 #, fuzzy
@@ -2686,20 +2712,24 @@ msgid  "The local target '%FILENAME' is a file."
 msgstr "Ο τοπικός προορισμός '%FILENAME' είναι ένα αρχείο."
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +75.String.Text
+#, fuzzy
 msgid  "The ZIP target '%FILENAME' already exists. Do you want to overwrite the existing target? "
-msgstr ""
+msgstr "Ο προορισμός ZIP '%FILENAME' υπάρχει ήδη. Θέλετε να διαγράψετε τον υπάρχοντα προορισμό;"
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +76.String.Text
+#, fuzzy
 msgid  "The FTP target directory '%FILENAME' is not empty. Some files might be overwritten. Do you want to continue?"
-msgstr ""
+msgstr "Ο φάκελος προορισμού FTP '%FILENAME' δεν είναι άδειος. Κάποια αρχεία μπορεί να διαγραφούν. Θέλετε να συνεχίσετε;"
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +77.String.Text
+#, fuzzy
 msgid  "The local target directory '%FILENAME' is not empty. Some files might be overwritten. Do you want to continue?"
-msgstr ""
+msgstr "Ο τοπικός φάκελος προορισμού '%FILENAME' δεν είναι άδειος. Κάποια αρχεία μπορεί να διαγραφούν. Θέλετε να συνεχίσετε;"
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +78.String.Text
+#, fuzzy
 msgid  "Settings already exist under the given name. Do you want to overwrite the existing settings? "
-msgstr ""
+msgstr "Υπάρχουν ήδη ρυθμίσεις με το τρέχον όνομα. Θέλετε να διαγράψετε τις υπάρχουσες ρυθμίσεις;"
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +79.String.Text
 #, fuzzy
@@ -2822,8 +2852,9 @@ msgid  "An error occurred while copying the layout files. "
 msgstr "Παρουσιάστηκε σφάλμα κατά την αντιγραφή αρχείων διάταξης."
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +108.String.Text
+#, fuzzy
 msgid  "An error occurred while gathering document information for '%FILENAME'. "
-msgstr ""
+msgstr "Σφάλμα κατά τη συλλογή των πληροφοριών για το έγγραφο '%FILENAME'."
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +109.String.Text
 #, fuzzy
@@ -2841,8 +2872,9 @@ msgid  "A security error occurred while exporting the document '%FILENAME'."
 msgstr "Πρόεκυψε σφάλμα ασφάλειας κατά την εξαγωγή του εγγράφου '%FILENAME'."
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +112.String.Text
+#, fuzzy
 msgid  "An input/output error occurred while exporting the document '%FILENAME'."
-msgstr ""
+msgstr "Σφάλμα I/O κατά την εξαγωγή του εγγράφου '%FILENAME'."
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +113.String.Text
 #, fuzzy
@@ -2860,8 +2892,9 @@ msgid  "An unexpected error occurred: %ERROR"
 msgstr "Ένα απροσδόκητο σφάλμα συνέβη : %ERROR"
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +116.String.Text
+#, fuzzy
 msgid  "An unexpected error occurred while validating the file: '%FILENAME'"
-msgstr ""
+msgstr "Ένα απροσδόκητο σφάλμα συνέβη κατά την επαλήθευση του αρχείου: '%FILENAME'"
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +117.String.Text
 #, fuzzy
@@ -2924,8 +2957,9 @@ msgid  "Preview"
 msgstr "Προεπισκόπηση"
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +130.String.Text
+#, fuzzy
 msgid  "The selected settings will be deleted.\n\nDo you really want to delete these settings? "
-msgstr ""
+msgstr "Οι επιλεγμένες ρυθμίσεις θα διαγραφούν.\n\nΘέλετε σίγουρα να διαγράψετε αυτές τις ρυθμίσεις?"
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +131.String.Text
 #, fuzzy
@@ -3008,20 +3042,24 @@ msgid  "The FTP directory '%FILENAME' could not be created."
 msgstr "Ο κατάλογος FTP '%FILENAME' δεν μπόρεσε να δημιουργηθεί."
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +147.String.Text
+#, fuzzy
 msgid  "The FTP directory '%FILENAME' does not exist. \nCreate the directory now?"
-msgstr ""
+msgstr "Ο φάκελος FTP '%FILENAME' δεν υπάρχει. \nΝα δημιουργηθεί ο φάκελος τώρα;"
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +148.String.Text
+#, fuzzy
 msgid  "The Zip file '%FILENAME' cannot be created: a directory of the same name already exists."
-msgstr ""
+msgstr "Το αρχείο Zip '%FILENAME' δεν μπορεί να δημιουργηθεί: υπάρχει ένας κατάλογος με το ίδιο όνομα."
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +149.String.Text
+#, fuzzy
 msgid  "The local directory '%FILENAME' cannot be created. \nPlease check your write-access."
-msgstr ""
+msgstr "Δεν είναι δυνατή η δημιουργία του τοπικού καταλόγου '%FILENAME'. \nΠαρακαλώ ελέγξτε τα δικαιώματα εγγραφής."
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +150.String.Text
+#, fuzzy
 msgid  "The local directory '%FILENAME' does not exist. \nCreate the directory now?"
-msgstr ""
+msgstr "Ο τοπικός κατάλογος '%FILENAME' δεν υπάρχει. \nΝα δημιουργηθεί ο κατάλογος τώρα;"
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +151.String.Text
 #, fuzzy
@@ -3159,8 +3197,9 @@ msgid  "Please choose the page design for the agenda"
 msgstr "Παρακαλώ επιλέξτε το σχέδιο σελίδας για το  πρόγραμμα εργασίας"
 
 #: source/formwizard/dbwizres.src#RID_AGENDAWIZARDDIALOG_START +7.String.Text
+#, fuzzy
 msgid  "Please select the headings you wish to include in your agenda template"
-msgstr ""
+msgstr "Παρακαλώ επιλέξτε τις επικεφαλίδες που θέλετε να συμπεριλάβετε στο πρότυπο προγράμματος εργασίας σας"
 
 #: source/formwizard/dbwizres.src#RID_AGENDAWIZARDDIALOG_START +8.String.Text
 #, fuzzy
@@ -3173,8 +3212,9 @@ msgid  "Please specify items for the agenda"
 msgstr "Παρακαλώ υποδείξτε αντικείμενα για το πρόγραμμα εργασίας"
 
 #: source/formwizard/dbwizres.src#RID_AGENDAWIZARDDIALOG_START +10.String.Text
+#, fuzzy
 msgid  "Please select the names you wish to include in your agenda template"
-msgstr ""
+msgstr "Παρακαλώ επιλέξτε τα ονόματα που επιθυμείτε να συμπεριλάβετε στο πρότυπο προγράμματος εργασίας σας"
 
 #: source/formwizard/dbwizres.src#RID_AGENDAWIZARDDIALOG_START +11.String.Text
 #, fuzzy
@@ -3187,8 +3227,9 @@ msgid  "Include form for recording minutes"
 msgstr "Συμπερίληψη φόρμας για την καταγραφή λεπτών"
 
 #: source/formwizard/dbwizres.src#RID_AGENDAWIZARDDIALOG_START +13.String.Text
+#, fuzzy
 msgid  "This wizard helps you to create an agenda template. The template can then be used to create an agenda whenever needed."
-msgstr ""
+msgstr "Αυτός ο οδηγός θα σας βοηθήσει να δημιουργήσετε ένα πρότυπο προγράμματος εργασίας. Το πρότυπο μπορεί τότε να χρησιμοποιηθεί για την δημιουργία ενός προγράμματος εργασίας όποτε είναι επιθυμητό."
 
 #: source/formwizard/dbwizres.src#RID_AGENDAWIZARDDIALOG_START +14.String.Text
 #, fuzzy
@@ -3206,8 +3247,9 @@ msgid  "Location:"
 msgstr "Τοποθεσία:"
 
 #: source/formwizard/dbwizres.src#RID_AGENDAWIZARDDIALOG_START +17.String.Text
+#, fuzzy
 msgid  "Placeholders will be used in empty fields. You can replace placeholders with text later."
-msgstr ""
+msgstr "Τα σύμβολα κράτησης θέσης θα χρησιμοποιηθούν σε κενά πεδία. Μπορείτε να αντικαταστήσετε τα σύμβολα κράτησης θέσης με κείμενο αργότερα."
 
 #: source/formwizard/dbwizres.src#RID_AGENDAWIZARDDIALOG_START +18.String.Text
 #, fuzzy
@@ -3220,8 +3262,9 @@ msgid  "Create an ~agenda from this template"
 msgstr "Δημιουργία ενός προγράμματος ερ~γασίας από αυτό το πρότυπο"
 
 #: source/formwizard/dbwizres.src#RID_AGENDAWIZARDDIALOG_START +20.String.Text
+#, fuzzy
 msgid  "To create a new agenda out of the template, go to the location where you saved the template and double-click the file."
-msgstr ""
+msgstr "Για να δημιουργήσετε ένα νέο πρόγραμμα εργασίας από το πρότυπο, πηγαίνετε στην τοποθεσία όπου αποθηκεύσατε το πρότυπο και κάντε διπλό κλικ στο αρχείο."
 
 #: source/formwizard/dbwizres.src#RID_AGENDAWIZARDDIALOG_START +21.String.Text
 #, fuzzy
@@ -3274,8 +3317,9 @@ msgid  "Facility personnel"
 msgstr "Διοίκηση προσωπικού"
 
 #: source/formwizard/dbwizres.src#RID_AGENDAWIZARDDIALOG_START +31.String.Text
+#, fuzzy
 msgid  "The agenda template will include placeholders for the names of the selected people. When creating an agenda from the template, you can replace these placeholder with the appropriate names."
-msgstr ""
+msgstr "Το πρότυπο προγράμματος εργασίας θα συμπεριλάβει σύμβολα κράτησης θέσης για τα ονόματα των επιλεγμένων ατόμων. Κατά την δημιουργία ενός προγράμματος εργασίας από πρότυπο, μπορείτε να αντικαταστήσετε αυτά τα σύμβολα κράτησης θέσης με τα κατάλληλα ονόματα."
 
 #: source/formwizard/dbwizres.src#RID_AGENDAWIZARDDIALOG_START +32.String.Text
 #, fuzzy
@@ -3298,8 +3342,9 @@ msgid  "Notes"
 msgstr "Σημειώσεις"
 
 #: source/formwizard/dbwizres.src#RID_AGENDAWIZARDDIALOG_START +36.String.Text
+#, fuzzy
 msgid  "The agenda template will include placeholders for the selected items."
-msgstr ""
+msgstr "Το πρότυπο πρόγραμμα εργασίας θα συμπεριλαμβάνει σύμβολα κράτησης θέσης για τα επιλεγμένα αντικείμενα."
 
 #: source/formwizard/dbwizres.src#RID_AGENDAWIZARDDIALOG_START +38.String.Text
 #, fuzzy
@@ -3307,8 +3352,9 @@ msgid  "Date:"
 msgstr "Ημερομηνία:"
 
 #: source/formwizard/dbwizres.src#RID_AGENDAWIZARDDIALOG_START +39.String.Text
+#, fuzzy
 msgid  "This wizard creates an agenda template which enables you to create multiple agendas with the same layout and settings."
-msgstr ""
+msgstr "Αυτός ο οδηγός δημιουργεί ένα πρότυπο προγράμματος εργασίας που σας επιτρέπει να δημιουργήσετε πολλαπλά προγράμματα εργασίας με την ίδια διάταξη και ρυθμίσεις."
 
 #: source/formwizard/dbwizres.src#RID_AGENDAWIZARDDIALOG_START +40.String.Text
 #, fuzzy
@@ -3326,8 +3372,9 @@ msgid  "My Agenda Template"
 msgstr "Πρότυπο προγράμματος εργασίας"
 
 #: source/formwizard/dbwizres.src#RID_AGENDAWIZARDDIALOG_START +43.String.Text
+#, fuzzy
 msgid  "An unexpected error occurred while saving the agenda template."
-msgstr ""
+msgstr "Ένα απροσδόκητο σφάλμα συνέβη κατά την αποθήκευση του προτύπου του προγράμματος εργασίας."
 
 #: source/formwizard/dbwizres.src#RID_AGENDAWIZARDDIALOG_START +44.String.Text
 #, fuzzy
@@ -3385,8 +3432,9 @@ msgid  "Name and location"
 msgstr "Όνομα και τοποθεσία"
 
 #: source/formwizard/dbwizres.src#RID_AGENDAWIZARDDIALOG_START +56.String.Text
+#, fuzzy
 msgid  "An unexpected error occurred while opening the agenda template."
-msgstr ""
+msgstr "Παρουσιάστηκε ένα απροσδόκητο σφάλμα κατά το άνοιγμα του προτύπου του προγράμματος εργασίας."
 
 #: source/formwizard/dbwizres.src#RID_AGENDAWIZARDDIALOG_START +57.String.Text
 #, fuzzy
@@ -3464,893 +3512,729 @@ msgid  "Move down"
 msgstr "Κάτω"
 
 #: source/importwizard/importwi.src#sHelpButton.String.Text
-#, fuzzy
 msgid  "~Help"
 msgstr "~Βοήθεια"
 
 #: source/importwizard/importwi.src#sCancelButton.String.Text
-#, fuzzy
 msgid  "~Cancel"
 msgstr "Α~κύρωση"
 
 #: source/importwizard/importwi.src#sBackButton.String.Text
-#, fuzzy
 msgid  "<< ~Back"
 msgstr "<< ~Πίσω"
 
 #: source/importwizard/importwi.src#sNextButton.String.Text
-#, fuzzy
 msgid  "Ne~xt >>"
 msgstr "Επόμε~νο >>"
 
 #: source/importwizard/importwi.src#sBeginButton.String.Text
-#, fuzzy
 msgid  "~Convert"
 msgstr "~Μετατροπή"
 
 #: source/importwizard/importwi.src#sCloseButton.String.Text
-#, fuzzy
 msgid  "~Close"
 msgstr "~Κλείσιμο"
 
 #: source/importwizard/importwi.src#sWelcometextLabel1.String.Text
 msgid  "This wizard converts documents in %PRODUCTNAME format and Microsoft Office documents to the new OpenDocument format."
-msgstr ""
+msgstr "Αυτό το πρόγραμμα αυτόματου πιλότου μετατρέπει εγγράφα που δημιουργήθηκαν με  μορφή του %PRODUCTNAME και του Microsoft Office σε έγγραφα με μορφή OpenDocument."
 
 #: source/importwizard/importwi.src#sWelcometextLabel2.String.Text
 msgid  "Please note that when converting Microsoft documents any attached VBA macros lose their functionality."
-msgstr ""
+msgstr "Παρακαλώ προσέξτε ότι κατά την μετατροπή των εγγράφων της Microsoft παύουν να ισχύουν οι τυχόν συνημμένες μακροεντολές του VBA."
 
 #: source/importwizard/importwi.src#sWelcometextLabel3.String.Text
-#, fuzzy
 msgid  "Select the document type for conversion:"
 msgstr "Επιλέξτε τους τύπους εγγράφων που θέλετε να μετατρέψετε:"
 
 #: source/importwizard/importwi.src#sMSTemplateCheckbox_1_.String.Text
-#, fuzzy
 msgid  "Word templates"
 msgstr "Πρότυπα Word"
 
 #: source/importwizard/importwi.src#sMSTemplateCheckbox_2_.String.Text
-#, fuzzy
 msgid  "Excel templates"
 msgstr "Πρότυπα Excel"
 
 #: source/importwizard/importwi.src#sMSTemplateCheckbox_3_.String.Text
-#, fuzzy
 msgid  "PowerPoint templates"
 msgstr "Πρότυπα PowerPoint"
 
 #: source/importwizard/importwi.src#sMSDocumentCheckbox_1_.String.Text
-#, fuzzy
 msgid  "Word documents"
 msgstr "Έγγραφα Word"
 
 #: source/importwizard/importwi.src#sMSDocumentCheckbox_2_.String.Text
-#, fuzzy
 msgid  "Excel documents"
 msgstr "Έγγραφα Excel"
 
 #: source/importwizard/importwi.src#sMSDocumentCheckbox_3_.String.Text
-#, fuzzy
 msgid  "PowerPoint documents"
 msgstr "Έγγραφα PowerPoint"
 
 #: source/importwizard/importwi.src#sSearchInSubDir.String.Text
-#, fuzzy
 msgid  "Including subdirectories"
 msgstr "μαζί με υποκαταλόγους"
 
 #: source/importwizard/importwi.src#sMSContainerName.String.Text
-#, fuzzy
 msgid  "Microsoft Office"
 msgstr "Microsoft Office"
 
 #: source/importwizard/importwi.src#sSummaryHeader.String.Text
-#, fuzzy
 msgid  "Summary:"
 msgstr "Σύνοψη:"
 
 #: source/importwizard/importwi.src#sTextImportLabel.String.Text
-#, fuzzy
 msgid  "Import from:"
 msgstr "Εισαγωγή από:"
 
 #: source/importwizard/importwi.src#sTextExportLabel.String.Text
-#, fuzzy
 msgid  "Save to:"
 msgstr "Αποθήκευση σε:"
 
 #: source/importwizard/importwi.src#sGroupnameDefault.String.Text
-#, fuzzy
 msgid  "Imported_Templates"
 msgstr "Εισαχθέντα_Πρότυπα"
 
 #: source/importwizard/importwi.src#sProgressDesc1.String.Text
-#, fuzzy
 msgid  "Progress: "
 msgstr "Πρόοδος: "
 
 #: source/importwizard/importwi.src#sProgressOneDoc.String.Text
-#, fuzzy
 msgid  "Document"
 msgstr "Έγγραφο"
 
 #: source/importwizard/importwi.src#sProgressMoreDocs.String.Text
-#, fuzzy
 msgid  "Documents"
 msgstr "Έγγραφα"
 
 #: source/importwizard/importwi.src#sProgressMoreTemplates.String.Text
-#, fuzzy
 msgid  "Templates"
 msgstr "Πρότυπα"
 
 #: source/importwizard/importwi.src#sNoDirCreation.String.Text
-#, fuzzy
 msgid  "The '%1' directory cannot be created: "
 msgstr "Δεν είναι δυνατόν να δημιουργηθεί ο κατάλογος '%1': "
 
 #: source/importwizard/importwi.src#sMsgDirNotThere.String.Text
-#, fuzzy
 msgid  "The '%1' directory does not exist."
 msgstr "Ο κατάλογος '%1' δεν υπάρχει!"
 
 #: source/importwizard/importwi.src#sQueryfornewCreation.String.Text
-#, fuzzy
 msgid  "Do you want to create it now?"
 msgstr "Θέλετε να δημιουργηθεί τώρα;"
 
 #: source/importwizard/importwi.src#sFileExists.String.Text
-#, fuzzy
 msgid  "The '<1>' file already exists.<CR>Do you want to overwrite it?"
 msgstr "Το αρχείο '<1>' υπάρχει ήδη.<CR>Θέλετε να αντικατασταθεί;"
 
 #: source/importwizard/importwi.src#sMorePathsError3.String.Text
-#, fuzzy
 msgid  "Directories do not exist"
 msgstr "Οι κατάλογοι δεν υπάρχουν"
 
 #: source/importwizard/importwi.src#sOverwriteallFiles.String.Text
-#, fuzzy
 msgid  "Do you want to overwrite documents without being asked?"
 msgstr "Θέλετε να αντικατασταθούν τα έγγραφα χωρίς να ερωτηθείτε;"
 
 #: source/importwizard/importwi.src#sreeditMacro.String.Text
-#, fuzzy
 msgid  "Document macro has to be revised."
 msgstr "Πρέπει να αναθεωρηθεί η μακροεντολή του εγγράφου."
 
 #: source/importwizard/importwi.src#scouldNotsaveDocument.String.Text
-#, fuzzy
 msgid  "Document '<1>' could not be saved."
 msgstr "Document '<1>' could not be saved"
 
 #: source/importwizard/importwi.src#scouldNotopenDocument.String.Text
-#, fuzzy
 msgid  "Document '<1>' could not be opened."
 msgstr "Document '<1>' could not be opened"
 
 #: source/importwizard/importwi.src#sConvertError1.String.Text
-#, fuzzy
 msgid  "Do you really want to terminate conversion at this point?"
 msgstr "Θέλετε πραγματικά να διακοπεί η μετατροπή σε αυτό το σημείο;"
 
 #: source/importwizard/importwi.src#sConvertError2.String.Text
-#, fuzzy
 msgid  "Cancel Wizard"
 msgstr "Ακύρωση πιλότου"
 
 #: source/importwizard/importwi.src#sRTErrorDesc.String.Text
-#, fuzzy
 msgid  "An unexpected error has occurred in the wizard."
 msgstr "Παρουσιάστηκε ένα μη αναμενόμενο σφάλμα στον αυτόματο πιλότο."
 
 #: source/importwizard/importwi.src#sRTErrorHeader.String.Text
-#, fuzzy
 msgid  "Error"
 msgstr "Σφάλμα"
 
 #: source/importwizard/importwi.src#sPathDialogMessage.String.Text
-#, fuzzy
 msgid  "Select a directory"
 msgstr "Επιλέξτε κατάλογο"
 
 #: source/importwizard/importwi.src#sDialogTitle.String.Text
-#, fuzzy
 msgid  "Document Converter"
 msgstr "Μετατροπέας εγγράφων"
 
 #: source/importwizard/importwi.src#sProgressPage1.String.Text
-#, fuzzy
 msgid  "Progress"
 msgstr "Πρόοδος εργασίας"
 
 #: source/importwizard/importwi.src#sProgressPage2.String.Text
-#, fuzzy
 msgid  "Retrieving the relevant documents:"
 msgstr "Εύρεση των σχετικών εγγράφων:"
 
 #: source/importwizard/importwi.src#sProgressPage3.String.Text
-#, fuzzy
 msgid  "Converting the documents"
 msgstr "Μετατροπή των εγγράφων"
 
 #: source/importwizard/importwi.src#sProgressFound.String.Text
-#, fuzzy
 msgid  "Found:"
 msgstr "Βρέθηκαν:"
 
 #: source/importwizard/importwi.src#sProgressPage5.String.Text
-#, fuzzy
 msgid  "%1 found"
 msgstr "Βρέθηκαν %1"
 
 #: source/importwizard/importwi.src#sReady.String.Text
-#, fuzzy
 msgid  "Finished"
 msgstr "Ολοκληρώθηκε"
 
 #: source/importwizard/importwi.src#sXMLTemplateCheckbox_1_.String.Text
-#, fuzzy
 msgid  "Text templates"
 msgstr "Πρότυπα κειμένων"
 
 #: source/importwizard/importwi.src#sXMLTemplateCheckbox_2_.String.Text
-#, fuzzy
 msgid  "Spreadsheet templates"
 msgstr "Πρότυπα υπολογιστικών φύλλων"
 
 #: source/importwizard/importwi.src#sXMLTemplateCheckbox_3_.String.Text
-#, fuzzy
 msgid  "Drawing/presentation templates"
 msgstr "Πρότυπα παρουσιάσεων/σχεδίων"
 
 #: source/importwizard/importwi.src#sXMLTemplateCheckbox_4_.String.Text
-#, fuzzy
 msgid  "Master documents"
 msgstr "Κύρια έγγραφα"
 
 #: source/importwizard/importwi.src#sXMLDocumentCheckbox_1_.String.Text
-#, fuzzy
 msgid  "Text documents"
 msgstr "Έγγραφα κειμένων"
 
 #: source/importwizard/importwi.src#sXMLDocumentCheckbox_2_.String.Text
-#, fuzzy
 msgid  "Spreadsheets"
 msgstr "Έγγραφα υπολογιστικών φύλλων"
 
 #: source/importwizard/importwi.src#sXMLDocumentCheckbox_3_.String.Text
-#, fuzzy
 msgid  "Drawing/presentation documents"
 msgstr "Έγγραφα παρουσιάσεων/σχεδίων"
 
 #: source/importwizard/importwi.src#sXMLDocumentCheckbox_4_.String.Text
-#, fuzzy
 msgid  "Master documents/formulas"
 msgstr "Κύρια έγγραφα/Τύποι"
 
 #: source/importwizard/importwi.src#sXMLHelperApplications_1.String.Text
-#, fuzzy
 msgid  "Master documents"
 msgstr "Κύρια έγγραφα"
 
 #: source/importwizard/importwi.src#sXMLHelperApplications_2.String.Text
-#, fuzzy
 msgid  "Formulas"
 msgstr "Τύποι"
 
 #: source/importwizard/importwi.src#sSourceDocuments.String.Text
-#, fuzzy
 msgid  "Source documents"
 msgstr "Έγγραφα προέλευσης"
 
 #: source/importwizard/importwi.src#sTargetDocuments.String.Text
-#, fuzzy
 msgid  "Target documents"
 msgstr "Έγγραφα προορισμού"
 
 #: source/importwizard/importwi.src#sCreateLogfile.String.Text
-#, fuzzy
 msgid  "Create log file"
 msgstr "Δημιουργία αρχείου καταγραφής"
 
 #: source/importwizard/importwi.src#sLogfileSummary.String.Text
-#, fuzzy
 msgid  "<COUNT> documents converted"
 msgstr "<COUNT> documents converted"
 
 #: source/importwizard/importwi.src#sLogfileHelpText.String.Text
-#, fuzzy
 msgid  "A log file will be created in your work directory"
 msgstr "Ένα αρχείο καταγραφής θα δημιουργηθεί στον κατάλογο εργασίας"
 
 #: source/importwizard/importwi.src#sshowLogfile.String.Text
-#, fuzzy
 msgid  "Show log file"
 msgstr "Show Logfile"
 
 #: source/importwizard/importwi.src#sSumInclusiveSubDir.String.Text
-#, fuzzy
 msgid  "All subdirectories will be taken into account"
 msgstr "Θα εξεταστούν όλοι οι υποκατάλογοι"
 
 #: source/importwizard/importwi.src#sSumSaveDokumente.String.Text
-#, fuzzy
 msgid  "These will be exported to the following directory:"
 msgstr "Η εξαγωγή τους θα γίνει στον εξής κατάλογο:"
 
 #: source/importwizard/importwi.src#sSumSOTextDocuments.String.Text
 msgid  "All %PRODUCTNAME text documents contained in the following directory will be imported:"
-msgstr ""
+msgstr "Θα εισαχθούν όλα τα έγγραφα κειμένου %PRODUCTNAME που περιέχονται στον παρακάτω κατάλογο:"
 
 #: source/importwizard/importwi.src#sSumSOTableDocuments.String.Text
 msgid  "All %PRODUCTNAME spreadsheets contained in the following directory will be imported:"
-msgstr ""
+msgstr "Θα εισαχθούν όλα τα υπολογιστικά φύλλα %PRODUCTNAME που περιέχονται στον παρακάτω κατάλογο:"
 
 #: source/importwizard/importwi.src#sSumSODrawDocuments.String.Text
 msgid  "All %PRODUCTNAME drawing and presentation documents contained in the following directory will be imported:"
-msgstr ""
+msgstr "Θα εισαχθούν όλα τα έγγραφα σχεδίασης και παρουσίασης %PRODUCTNAME που περιέχονται στον παρακάτω κατάλογο:"
 
 #: source/importwizard/importwi.src#sSumSOMathDocuments.String.Text
 msgid  "All %PRODUCTNAME formula documents contained in the following directory will be imported:"
-msgstr ""
+msgstr "Θα εισαχθούν όλα τα έγγραφα τύπων %PRODUCTNAME που περιέχονται στον παρακάτω κατάλογο:"
 
 #: source/importwizard/importwi.src#sSumSOTextTemplates.String.Text
 msgid  "All %PRODUCTNAME text templates contained in the following directory will be imported:"
-msgstr ""
+msgstr "Θα εισαχθούν όλα τα πρότυπα κειμένου %PRODUCTNAME που περιέχονται στον παρακάτω κατάλογο:"
 
 #: source/importwizard/importwi.src#sSumSOTableTemplates.String.Text
 msgid  "All %PRODUCTNAME table templates contained in the following directory will be imported:"
-msgstr ""
+msgstr "Θα εισαχθούν όλα τα πρότυπα πίνακα %PRODUCTNAME που περιέχονται στον παρακάτω κατάλογο:"
 
 #: source/importwizard/importwi.src#sSumSODrawTemplates.String.Text
 msgid  "All %PRODUCTNAME drawing and presentation templates contained in the following directory will be imported:"
-msgstr ""
+msgstr "Θα εισαχθούν όλα τα πρότυπα σχεδίασης και παρουσίασης %PRODUCTNAME που περιέχονται στον παρακάτω κατάλογο:"
 
 #: source/importwizard/importwi.src#sSumSOGlobalDocuments.String.Text
 msgid  "All %PRODUCTNAME master documents contained in the following directory will be imported:"
-msgstr ""
+msgstr "Θα εισαχθούν όλα τα κύρια έγγραφα %PRODUCTNAME που περιέχονται στον παρακάτω κατάλογο:"
 
 #: source/importwizard/importwi.src#sSumMSTextDocuments.String.Text
 msgid  "All Word documents contained in the following directory will be imported:"
-msgstr ""
+msgstr "Θα εισαχθούν όλα τα έγγραφα Word που περιέχονται στον παρακάτω κατάλογο:"
 
 #: source/importwizard/importwi.src#sSumMSTableDocuments.String.Text
 msgid  "All Excel documents contained in the following directory will be imported:"
-msgstr ""
+msgstr "Θα εισαχθούν όλα τα έγγραφα του Excel που περιέχονται στον παρακάτω κατάλογο:"
 
 #: source/importwizard/importwi.src#sSumMSDrawDocuments.String.Text
 msgid  "All PowerPoint documents contained in the following directory will be imported:"
-msgstr ""
+msgstr "Θα εισαχθούν όλα τα έγγραφα του PowerPoint που περιέχονται στον παρακάτω κατάλογο:"
 
 #: source/importwizard/importwi.src#sSumMSTextTemplates.String.Text
 msgid  "All Word templates contained in the following directory will be imported:"
-msgstr ""
+msgstr "Θα εισαχθούν όλα τα πρότυπα του Word που περιέχονται στον παρακάτω κατάλογο:"
 
 #: source/importwizard/importwi.src#sSumMSTableTemplates.String.Text
 msgid  "All Excel templates contained in the following directory will be imported:"
-msgstr ""
+msgstr "Θα εισαχθούν όλα τα πρότυπα του Excel που περιέχονται στον παρακάτω κατάλογο:"
 
 #: source/importwizard/importwi.src#sSumMSDrawTemplates.String.Text
 msgid  "All PowerPoint templates contained in the following directory will be imported:"
-msgstr ""
+msgstr "Θα εισαχθούν όλα τα πρότυπα του PowerPoint που περιέχονται στον παρακάτω κατάλογο:"
 
 #: source/schedule/schedule.src#dlgCalTitle.String.Text
-#, fuzzy
 msgid  "%PRODUCTNAME Calendar"
 msgstr "Ημερολόγιο %PRODUCTNAME"
 
 #: source/schedule/schedule.src#dlgCalTitleBack.String.Text
-#, fuzzy
 msgid  "Back"
 msgstr "Πίσω"
 
 #: source/schedule/schedule.src#dlgCalTitleOwnData.String.Text
-#, fuzzy
 msgid  "Personal Data"
 msgstr "Προσωπικά δεδομένα"
 
 #: source/schedule/schedule.src#dlgSchdlTitle.String.Text
-#, fuzzy
 msgid  "Add Holidays to Calendar"
 msgstr "Υπολογισμός ημερών αργίας"
 
 #: source/schedule/schedule.src#dlgOK.String.Text
-#, fuzzy
 msgid  "Create"
 msgstr "Δημιουργία"
 
 #: source/schedule/schedule.src#dlgCancel.String.Text
-#, fuzzy
 msgid  "Cancel"
 msgstr "Ακύρωση"
 
 #: source/schedule/schedule.src#dlgCalFrameOption.String.Text
-#, fuzzy
 msgid  "Calendar"
 msgstr "Ημερολόγιο"
 
 #: source/schedule/schedule.src#dlgCalOptionYear.String.Text
-#, fuzzy
 msgid  "~Year Overview"
 msgstr "~Σύνοψη έτους"
 
 #: source/schedule/schedule.src#dlgCalOptionMonth.String.Text
-#, fuzzy
 msgid  "~Month"
 msgstr "~Μήνας"
 
 #: source/schedule/schedule.src#dlgSchdlDescription.String.Text
-#, fuzzy
 msgid  "Add holidays for"
 msgstr "Υπολογισμός ημερών αργίας για"
 
 #: source/schedule/schedule.src#dlgSchdlCountry.String.Text
-#, fuzzy
 msgid  "USA"
 msgstr "Ελλάδα"
 
 #: source/schedule/schedule.src#dlgTime.String.Text
-#, fuzzy
 msgid  "Time Frame"
 msgstr "Χρονικό διάστημα"
 
 #: source/schedule/schedule.src#dlgYear.String.Text
-#, fuzzy
 msgid  "Year"
 msgstr "Έτος"
 
 #: source/schedule/schedule.src#dlgCalMonth.String.Text
-#, fuzzy
 msgid  "Month"
 msgstr "Μήνας"
 
 #: source/schedule/schedule.src#dlgCalOwnData.String.Text
-#, fuzzy
 msgid  "Personal Data"
 msgstr "Προσωπικά δεδομένα"
 
 #: source/schedule/schedule.src#dlgCalInsert.String.Text
-#, fuzzy
 msgid  "~Insert"
 msgstr "~Εισαγωγή"
 
 #: source/schedule/schedule.src#dlgCalDelete.String.Text
-#, fuzzy
 msgid  "~Delete"
 msgstr "Διαγρα~φή"
 
 #: source/schedule/schedule.src#dlgCalNewEvent.String.Text
-#, fuzzy
 msgid  "New Event"
 msgstr "Νέο συμβάν"
 
 #: source/schedule/schedule.src#dlgCalEvent.String.Text
-#, fuzzy
 msgid  "Event"
 msgstr "Συμβάν"
 
 #: source/schedule/schedule.src#dlgCalEventOnce.String.Text
-#, fuzzy
 msgid  "One-Time"
 msgstr "Μοναδική φορά"
 
 #: source/schedule/schedule.src#dlgCalEventDay.String.Text
-#, fuzzy
 msgid  "Day"
 msgstr "Ημέρα"
 
 #: source/schedule/schedule.src#dlgCalEventMonth.String.Text
-#, fuzzy
 msgid  "Month"
 msgstr "Μήνας"
 
 #: source/schedule/schedule.src#dlgCalEventYear.String.Text
-#, fuzzy
 msgid  "Year"
 msgstr "Έτος"
 
 #: source/schedule/schedule.src#dlgBitmapFile.String.Text
-#, fuzzy
 msgid  "usa.bmp"
 msgstr "usa.bmp"
 
 #: source/schedule/schedule.src#dlgState.String.Text
-#, fuzzy
 msgid  "Public holidays"
 msgstr "Γενικές αργίες"
 
 #: source/schedule/schedule.src#dlgMonth.String.Text
-#, fuzzy
 msgid  "January"
 msgstr "Ιανουαρίου"
 
 #: source/schedule/schedule.src#dlgMonth+1.String.Text
-#, fuzzy
 msgid  "February"
 msgstr "Φεβρουαρίου"
 
 #: source/schedule/schedule.src#dlgMonth+2.String.Text
-#, fuzzy
 msgid  "March"
 msgstr "Μαρτίου"
 
 #: source/schedule/schedule.src#dlgMonth+3.String.Text
-#, fuzzy
 msgid  "April"
 msgstr "Απριλίου"
 
 #: source/schedule/schedule.src#dlgMonth+4.String.Text
-#, fuzzy
 msgid  "May"
 msgstr "Μαΐου"
 
 #: source/schedule/schedule.src#dlgMonth+5.String.Text
-#, fuzzy
 msgid  "June"
 msgstr "Ιουνίου"
 
 #: source/schedule/schedule.src#dlgMonth+6.String.Text
-#, fuzzy
 msgid  "July"
 msgstr "Ιουλίου"
 
 #: source/schedule/schedule.src#dlgMonth+7.String.Text
-#, fuzzy
 msgid  "August"
 msgstr "Αυγούστου"
 
 #: source/schedule/schedule.src#dlgMonth+8.String.Text
-#, fuzzy
 msgid  "September"
 msgstr "Σεπτεμβρίου"
 
 #: source/schedule/schedule.src#dlgMonth+9.String.Text
-#, fuzzy
 msgid  "October"
 msgstr "Οκτωβρίου"
 
 #: source/schedule/schedule.src#dlgMonth+10.String.Text
-#, fuzzy
 msgid  "November"
 msgstr "Νοεμβρίου"
 
 #: source/schedule/schedule.src#dlgMonth+11.String.Text
-#, fuzzy
 msgid  "December"
 msgstr "Δεκεμβρίου"
 
 #: source/schedule/schedule.src#msgCalErrorTitle.String.Text
-#, fuzzy
 msgid  "Yearly / Monthly Calendar"
 msgstr "Ημερολόγιο Ετήσιο / Mηνιαίο"
 
 #: source/schedule/schedule.src#msgCalError.String.Text
-#, fuzzy
 msgid  "An error occurred while creating the calendar."
 msgstr "Παρουσιάστηκε σφάλμα κατά την δημιουργία του ημερολογίου."
 
 #: source/schedule/schedule.src#msgCalRemoveTitle.String.Text
-#, fuzzy
 msgid  "Delete event entries"
 msgstr "Διαγραφή εγγραφών συμβάντων"
 
 #: source/schedule/schedule.src#msgCalRemove.String.Text
-#, fuzzy
 msgid  "Delete the selected entries?"
 msgstr "Διαγραφή των επιλεγμένων εγγραφών;"
 
 #: source/schedule/schedule.src#stlWorkday.String.Text
-#, fuzzy
 msgid  "Workweek"
 msgstr "Εργάσιμη εβδομάδα"
 
 #: source/schedule/schedule.src#stlWeekend.String.Text
-#, fuzzy
 msgid  "Weekend"
 msgstr "Σαββατοκύριακο"
 
 #: source/schedule/schedule.src#nameCalYear.String.Text
-#, fuzzy
 msgid  "Calendar"
 msgstr "Ημερολόγιο"
 
 #: source/schedule/schedule.src#nameCalMonth.String.Text
-#, fuzzy
 msgid  "Month"
 msgstr "Μήνας"
 
 #: source/schedule/schedule.src#sProgress.String.Text
-#, fuzzy
 msgid  "Progress:"
 msgstr "Πρόοδος:"
 
 #: source/template/template.src#SAMPLES.String.Text
 msgid  "In order to use the full functionality of this sample, create a document that is based on this template."
-msgstr ""
+msgstr "Για να μπορέσετε να χρησιμοποιήσετε όλες τις λειτουργίες αυτού του παραδείγματος θα πρέπει να δημιουργήσετε ένα νέο έγγραφο βασισμένο σε αυτό το πρότυπο."
 
 #: source/template/template.src#SAMPLES + 1.String.Text
-#, fuzzy
 msgid  "Remarks"
 msgstr "Συμβουλή"
 
 #: source/template/template.src#STYLES.String.Text
-#, fuzzy
 msgid  "Theme Selection"
 msgstr "Επιλογή θεμάτων"
 
 #: source/template/template.src#STYLES + 1.String.Text
 msgid  "Error while saving the document to the clipboard! The following action cannot be undone."
-msgstr ""
+msgstr "Σφάλμα κατά την προσωρινή αποθήκευση του τρέχοντος εγγράφου! Δεν είναι δυνατή η αναίρεση της ακόλουθης ενέργειας."
 
 #: source/template/template.src#STYLES + 2.String.Text
-#, fuzzy
 msgid  "~Cancel"
 msgstr "Α~κύρωση"
 
 #: source/template/template.src#STYLES + 3.String.Text
-#, fuzzy
 msgid  "~OK"
 msgstr "~OK"
 
 #: source/template/template.src#AgendaDlgName.String.Text
-#, fuzzy
 msgid  "Minutes Template"
 msgstr "Πρότυπο πρωτόκολλου"
 
 #: source/template/template.src#AgendaDlgNoCancel.String.Text
-#, fuzzy
 msgid  "An option must be confirmed."
 msgstr "Πρέπει να γίνει επιβεβαίωση μιας επιλογής."
 
 #: source/template/template.src#AgendaDlgFrame.String.Text
-#, fuzzy
 msgid  "Minutes Type"
 msgstr "Τύπος πρωτόκολλου"
 
 #: source/template/template.src#AgendaDlgButton1.String.Text
-#, fuzzy
 msgid  "Results Minutes"
 msgstr "Πρωτόκολλο αποτελεσμάτων"
 
 #: source/template/template.src#AgendaDlgButton2.String.Text
-#, fuzzy
 msgid  "Evaluation Minutes"
 msgstr "Πρωτόκολλο εξέλιξης"
 
 #: source/template/template.src#CorrespondenceNoTextmark.String.Text
-#, fuzzy
 msgid  "The bookmark 'Recipient' is missing."
 msgstr "Λείπει ο σελιδοδείκτης 'Παραλήπτης."
 
 #: source/template/template.src#CorrespondenceNoTextmark+1.String.Text
-#, fuzzy
 msgid  "Form letter fields can not be included."
 msgstr "Δεν είναι δυνατόν να γίνει εισαγωγή των πεδίων των εγκυκλίων επιστολών."
 
 #: source/template/template.src#CorrespondenceMsgError.String.Text
-#, fuzzy
 msgid  "An error has occurred."
 msgstr "Προέκυψε ένα σφάλμα"
 
 #: source/template/template.src#CorrespondenceDialog.String.Text
-#, fuzzy
 msgid  "Addressee"
 msgstr "Παραλήπτης"
 
 #: source/template/template.src#CorrespondenceDialog+1.String.Text
-#, fuzzy
 msgid  "One recipient"
 msgstr "Ένας παραλήπτης"
 
 #: source/template/template.src#CorrespondenceDialog+2.String.Text
-#, fuzzy
 msgid  "Several recipients (address database)"
 msgstr "Πολλοί παραλήπτες (βάση δεδομένων διευθύνσεων)"
 
 #: source/template/template.src#CorrespondenceDialog+3.String.Text
-#, fuzzy
 msgid  "Use of This Template"
 msgstr "Χρήση αυτού του προτύπου"
 
 #: source/template/template.src#CorrespondenceFields.String.Text
-#, fuzzy
 msgid  "Click placeholder and overwrite"
 msgstr "Κάντε κλικ στο πλαίσιο δείκτη τοποθέτησης και αντικαταστήστε τον"
 
 #: source/template/template.src#CorrespondenceFields+1.String.Text
-#, fuzzy
 msgid  "Company"
 msgstr "Εταιρία"
 
 #: source/template/template.src#CorrespondenceFields+2.String.Text
-#, fuzzy
 msgid  "Department"
 msgstr "Τμήμα"
 
 #: source/template/template.src#CorrespondenceFields+3.String.Text
-#, fuzzy
 msgid  "First Name"
 msgstr "Όνομα"
 
 #: source/template/template.src#CorrespondenceFields+4.String.Text
-#, fuzzy
 msgid  "Last Name"
 msgstr "Επώνυμο"
 
 #: source/template/template.src#CorrespondenceFields+5.String.Text
-#, fuzzy
 msgid  "Street"
 msgstr "Οδός"
 
 #: source/template/template.src#CorrespondenceFields+6.String.Text
-#, fuzzy
 msgid  "Country"
 msgstr "Χώρα"
 
 #: source/template/template.src#CorrespondenceFields+7.String.Text
-#, fuzzy
 msgid  "ZIP/Postal Code"
 msgstr "Ταχυδρομικός κώδικας"
 
 #: source/template/template.src#CorrespondenceFields+8.String.Text
-#, fuzzy
 msgid  "City"
 msgstr "Πόλη"
 
 #: source/template/template.src#CorrespondenceFields+9.String.Text
-#, fuzzy
 msgid  "Title"
 msgstr "Τίτλος"
 
 #: source/template/template.src#CorrespondenceFields+10.String.Text
-#, fuzzy
 msgid  "Position"
 msgstr "Θέση"
 
 #: source/template/template.src#CorrespondenceFields+11.String.Text
-#, fuzzy
 msgid  "Form of Address"
 msgstr "Προσφώνηση"
 
 #: source/template/template.src#CorrespondenceFields+12.String.Text
-#, fuzzy
 msgid  "Initials"
 msgstr "Αρχικά"
 
 #: source/template/template.src#CorrespondenceFields+13.String.Text
-#, fuzzy
 msgid  "Salutation"
 msgstr "Χαιρετισμός"
 
 #: source/template/template.src#CorrespondenceFields+14.String.Text
-#, fuzzy
 msgid  "Home Phone"
 msgstr "Τηλέφωνο οικίας"
 
 #: source/template/template.src#CorrespondenceFields+15.String.Text
-#, fuzzy
 msgid  "Work Phone"
 msgstr "Τηλέφωνο εργασίας"
 
 #: source/template/template.src#CorrespondenceFields+16.String.Text
-#, fuzzy
 msgid  "Fax"
 msgstr "Φαξ"
 
 #: source/template/template.src#CorrespondenceFields+17.String.Text
-#, fuzzy
 msgid  "E-Mail"
 msgstr "Διεύθυνση ηλεκτρονικού ταχυδρομείου"
 
 #: source/template/template.src#CorrespondenceFields+18.String.Text
-#, fuzzy
 msgid  "URL"
 msgstr "URL"
 
 #: source/template/template.src#CorrespondenceFields+19.String.Text
-#, fuzzy
 msgid  "Notes"
 msgstr "Σημειώσεις"
 
 #: source/template/template.src#CorrespondenceFields+20.String.Text
-#, fuzzy
 msgid  "Alt. Field 1"
 msgstr "Εναλλακτικό πεδίο 1"
 
 #: source/template/template.src#CorrespondenceFields+21.String.Text
-#, fuzzy
 msgid  "Alt. Field 2"
 msgstr "Εναλλακτικό πεδίο 2"
 
 #: source/template/template.src#CorrespondenceFields+22.String.Text
-#, fuzzy
 msgid  "Alt. Field 3"
 msgstr "Εναλλακτικό πεδίο 3"
 
 #: source/template/template.src#CorrespondenceFields+23.String.Text
-#, fuzzy
 msgid  "Alt. Field 4"
 msgstr "Εναλλακτικό πεδίο 4"
 
 #: source/template/template.src#CorrespondenceFields+24.String.Text
-#, fuzzy
 msgid  "ID"
 msgstr "Αναγνωριστικό"
 
 #: source/template/template.src#CorrespondenceFields+25.String.Text
-#, fuzzy
 msgid  "State"
 msgstr "Νομός"
 
 #: source/template/template.src#CorrespondenceFields+26.String.Text
-#, fuzzy
 msgid  "Office Phone"
 msgstr "Τηλέφωνο γραφείου"
 
 #: source/template/template.src#CorrespondenceFields+27.String.Text
-#, fuzzy
 msgid  "Pager"
 msgstr "Βομβητής"
 
 #: source/template/template.src#CorrespondenceFields+28.String.Text
-#, fuzzy
 msgid  "Mobile Phone"
 msgstr "Κινητό τηλέφωνο"
 
 #: source/template/template.src#CorrespondenceFields+29.String.Text
-#, fuzzy
 msgid  "Other Phone"
 msgstr "Άλλο τηλέφωνο"
 
 #: source/template/template.src#CorrespondenceFields+30.String.Text
-#, fuzzy
 msgid  "Calendar URL"
 msgstr "URL ημερολογίου"
 
 #: source/template/template.src#CorrespondenceFields+31.String.Text
-#, fuzzy
 msgid  "Invite"
 msgstr "Πρόσκληση"
 
 #: source/template/template.src#TextField.String.Text
-#, fuzzy
 msgid  "User data field is not defined!"
 msgstr "Δεν ορίστηκε το πεδίο των δεδομένων του χρήστη!"
 
 #: source/template/template.src#Newsletter.String.Text
-#, fuzzy
 msgid  "General layout"
 msgstr "Γενική διάταξη"
 
 #: source/template/template.src#Newsletter + 1.String.Text
-#, fuzzy
 msgid  "Default layout"
 msgstr "Προεπιλεγμένη διάταξη"
 
 #: source/template/template.src#Newsletter + 2.String.Text
-#, fuzzy
 msgid  "Commemorative publication layout"
 msgstr "Διάταξη δημοσίευσης υπενθύμισης"
 
 #: source/template/template.src#Newsletter + 3.String.Text
-#, fuzzy
 msgid  "Brochure layout"
 msgstr "Διάταξη φυλλαδίου"
 
 #: source/template/template.src#Newsletter + 10.String.Text
-#, fuzzy
 msgid  "Format"
 msgstr "Μορφή"
 
 #: source/template/template.src#Newsletter + 11.String.Text
-#, fuzzy
 msgid  "Single-sided"
 msgstr "Μονής όψης"
 
 #: source/template/template.src#Newsletter + 12.String.Text
-#, fuzzy
 msgid  "Double-sided"
 msgstr "Διπλής όψης"

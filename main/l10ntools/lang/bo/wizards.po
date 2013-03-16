@@ -49,7 +49,7 @@ msgstr "སྒྲུར་བརྗེ།(~C)"
 
 #: source/euro/euro.src#STEP_ZERO + 4.String.Text
 msgid  "Note: Currency amounts from external links and currency conversion factors in formulas cannot be converted."
-msgstr ""
+msgstr "དྲན་སྟོན། ཕྱི་ནས་ཡོངས་བའི་གཞི་གྲངས་ཀྱི་དངུལ་ལོའི་གྲངས་འབོར་དང་སྤྱི་འགྲོས་ནང་གི་དངུལ་ལོའི་བརྗེ་རྩིས་བཏགས་གྲངས་འདྲིན་སྤྱོད་སྒྱུར་བརྗེ་བྱ་ཐབས་བྲལ།"
 
 #: source/euro/euro.src#STEP_ZERO + 5.String.Text
 msgid  "First, unprotect all sheets."
@@ -137,7 +137,7 @@ msgstr "དམིགས་འཕེན་དཀར་ཆག"
 
 #: source/euro/euro.src#STEP_AUTOPILOT + 7.String.Text
 msgid  "Temporarily unprotect sheet without query"
-msgstr ""
+msgstr "ཐད་ཀར་རེའུ་མིག་སྲུང་སྐྱོབ་རྩིས་མེད་གཏོང་རྒྱུ་དེ་གནས་སྐབས་གཏན་འཁེལ་བྱེད་དགོས་མེད།"
 
 #: source/euro/euro.src#STEP_AUTOPILOT + 10.String.Text
 msgid  "Also convert fields and tables in text documents"
@@ -153,7 +153,7 @@ msgstr "དྲ་མིག་བཟོ་ལྟའི་བརྗེ་སྒྲ
 
 #: source/euro/euro.src#STATUSLINE + 2.String.Text
 msgid  "Registration of the relevant ranges: Sheet %1Number%1 of %2TotPageCount%2"
-msgstr ""
+msgstr "བརྗེ་རྩིས་ཀྱི་ས་ཁོངས་ནང་བཅུག་ ལས་ཀའི་དེབ་ %2TotPageCount%2 ནང་གི་ %1Number%1"
 
 #: source/euro/euro.src#STATUSLINE + 3.String.Text
 msgid  "Entry of the ranges to be converted..."
@@ -197,7 +197,7 @@ msgstr "སྲུང་སྐྱོབ་ཐོབཔའི་རེའུ་མ
 
 #: source/euro/euro.src#MESSAGES + 7.String.Text
 msgid  "Enter the password to unprotect the table %1TableName%1"
-msgstr ""
+msgstr "གསང་ཨང་གཅུག་རོགས་ རེའུ་མིག%1TableName%1སྲུང་སྐྱོབ་འཆིང་རྒྱབ་རྩེས་མེད་ཐོངས།"
 
 #: source/euro/euro.src#MESSAGES + 8.String.Text
 msgid  "Wrong Password!"
@@ -221,11 +221,11 @@ msgstr "རེའུ་མིག་གི་སྲུང་སྐྱོབ་ར
 
 #: source/euro/euro.src#MESSAGES + 13.String.Text
 msgid  "The Wizard cannot edit this document as cell formats cannot be modified in documents containing protected spreadsheets."
-msgstr ""
+msgstr "རང་འགུལ་ཡིག་ཆའི་ལས་རོགས་ཀྱིས་ཡིག་ཚགས་འདེ་རྩོམ་སྒྲིག་བྱེད་ཐབས་བྲལ་ཡིག་ཚགས་ནང་སྲུང་སྐྱོབ་ཐོབ་པའི་ལས་ཁྲ་ཚུད་པའི་སྐབས་དྲ་མིག་གི་བའི་བཟོ་ལྟ་བཟོ་བཅོས་བྱེད་ཐབས་བྲལ་པའི་རྐྱེན་གྱི་་ཡིན།"
 
 #: source/euro/euro.src#MESSAGES + 14.String.Text
 msgid  "Please note that the Euro Converter will, otherwise, not be able to edit this document!"
-msgstr ""
+msgstr "དོ་སྣང་བྱེད། ད་ལྟ་མིན་ན་ཡོ་སྒོར་བརྗེ་རྩིས་ཆས་ཀྱི་ཡིག་ཚགས་འདི་རྩོམ་སྒྲིག་བྱེད་ཐབས་བྲལ།"
 
 #: source/euro/euro.src#MESSAGES + 15.String.Text
 msgid  "Please choose a currency to be converted first!"
@@ -333,11 +333,11 @@ msgstr ""
 
 #: source/euro/euro.src#CURRENCIES + 16.String.Text
 msgid  "The currency set for the document is not a European currency!"
-msgstr ""
+msgstr "ཁྱེད་རང་གི་བཀོལ་སྤྱོད་མ་ལག་བེད་སྤྱོད་བྱེད་པའི་སྐད་བརྟ་ནི་ཡོ་རོམ་གླིང་དངུལ་ལོར་མནའ་འབྲེལ་གྱིས་བོད་སྤྱོད་པའི་སྐད་བརྟ་མ་ཡིན།"
 
 #: source/euro/euro.src#CURRENCIES + 17.String.Text
 msgid  "The language set for your operating system is not a language of the European Monetary Union."
-msgstr ""
+msgstr "ལབཀོལ་སྤྱོད་རྒྱུད་ཁོངས་ལ་བཟོ་སྒྲིག་བྱས་པའི་སྐད་བརྡ་དེ་ཡོ་རོབ་གླིང་གི་དངུལ་ལོར་མཉམ་འབྲེལ་གྱིས་བེད་སྤྱོད་པའི་སྐད་བརྡ་མ་རེད།"
 
 #: source/euro/euro.src#STEP_LASTPAGE.String.Text
 msgid  "Progress"
@@ -361,35 +361,35 @@ msgstr "རང་འགུལ་རེའུ་མིག་གི་སྲུང
 
 #: source/formwizard/dbwizres.src#RID_COMMON_START + 0.String.Text
 msgid  "The directory '%1' could not be created.<BR>There may not be enough space left on your hard disk."
-msgstr ""
+msgstr "ཡིག་ཁུག་འཛུགས་ཐབས་བྲལ་ '%1' 。<BR>ཁྱེད་ཀྱི་མཁྲིགས་སྡེར་སྤྱོད་པའི་བར་སྟོང་མི་འདུག་།"
 
 #: source/formwizard/dbwizres.src#RID_COMMON_START + 1.String.Text
 msgid  "The text document could not be created.<BR>Please check if the module 'PRODUCTNAME Writer' is installed."
-msgstr ""
+msgstr "ཡིག་དེབ་ཀྱི་ཡིག་ཚགས་གསར་བཟོ་བྱེད་ཐབས་བྲལ། 'PRODUCTNAME Writer'དཔེ་རྡོག་བསྒར་སྒྲིག་བྱས་ཡོད་མེད་ཞིབ་བཤེར་བྱེད་དགོས།"
 
 #: source/formwizard/dbwizres.src#RID_COMMON_START + 2.String.Text
 msgid  "The spreadsheet could not be created.<BR>Please check if the module 'PRODUCTNAME Calc' is installed."
-msgstr ""
+msgstr "ལས་ཁྲ་སྐྱེས་གྲུབ་བྱ་ཐབས་བྲལ་<BR>བྱ་རིམ་རྨོ་ལིང་'StarSuite Calc' སྒྲིག་འཇུག་ཟིན་མིན་བརྟག་དཔྱད་བྱེད་རོགས།"
 
 #: source/formwizard/dbwizres.src#RID_COMMON_START + 3.String.Text
 msgid  "The presentation could not be created.<BR>Please check if the module 'PRODUCTNAME Impress' is installed."
-msgstr ""
+msgstr "གསལ་སྟོན་ཡིག་ཟིན་སྐྱེས་གྲུབ་བྱ་ཐབས་བྲལ་<BR>བྱ་རིམ་རྨོ་ལིང་' 'StarSuite Impress' སྒྲིག་འཇུག་ཟིན་མིན་བརྟག་དཔྱད་བྱེད་རོགས།"
 
 #: source/formwizard/dbwizres.src#RID_COMMON_START + 4.String.Text
 msgid  "The drawing could not be created.<BR>Please check if the module 'PRODUCTNAME Draw' is installed."
-msgstr ""
+msgstr "རིས་འགོད་སྐྱེས་གྲུབ་བྱ་ཐབས་བྲལ<BR>བྱ་རིམ་རྨོ་ལིང་' 'StarOffice Draw' སྒྲིག་འཇུག་ཟིན་མིན་བརྟག་དཔྱད་བྱེད་རོགས།"
 
 #: source/formwizard/dbwizres.src#RID_COMMON_START + 5.String.Text
 msgid  "The formula could not be created.<BR>Please check if the module 'PRODUCTNAME Math' is installed."
-msgstr ""
+msgstr "སྤྱི་འགྲོས་སྐྱེས་གྲུབ་བྱ་ཐབས་བྲལ་<BR>བྱ་རིམ་རྨོ་ལིང་''StarSuite Math' སྒྲིག་འཇུག་ཟིན་མིན་བརྟག་དཔྱད་བྱེད་རོགས།"
 
 #: source/formwizard/dbwizres.src#RID_COMMON_START + 6.String.Text
 msgid  "The files required could not be found.<BR>Please start the %PRODUCTNAME Setup and choose 'Repair'."
-msgstr ""
+msgstr "དགོང་ངེས་ཀྱི་ཡིག་ཆ་འཚོལ་མི་ཐུབ་<BR>ཁྱེད་ཀྱིས་ %PRODUCTNAME སྒུལ་སློང་བྱས་ནས་སྒྲིག་སྦྱོརབྱ་རིམ་ལྟར་བསྐྱར་བཅོས་ལག་བསྟར་བྱེད།"
 
 #: source/formwizard/dbwizres.src#RID_COMMON_START + 7.String.Text
 msgid  "The file '<PATH>' already exists.<BR><BR>Would you like to overwrite the existing file?"
-msgstr ""
+msgstr "ཡིག་ཆ་ '<PATH>' གནས་ཡོད་<BR><BR>ཁྱེད་རང་གིས་ད་ཡོད་ཀྱི་ཡིག་ཆ་བཟོ་འབྲི་བྱེད།"
 
 #: source/formwizard/dbwizres.src#RID_COMMON_START + 8.String.Text
 msgid  "Yes"
@@ -445,7 +445,7 @@ msgstr " <current_date> བརྒྱུད་པའི་<wizard_name>གསར�
 
 #: source/formwizard/dbwizres.src#RID_COMMON_START + 21.String.Text
 msgid  "The wizard could not be run, because important files were not found.\nUnder 'Tools - Options - %PRODUCTNAME - Paths' click the 'Default' button to reset the paths to the original default settings.\nThen run the wizard again."
-msgstr ""
+msgstr "གལ་ཆེའི་ཡིག་ཆ་མ་ཪྙེད་པར་བརྟེན་སྣེ་འཁྲེད་འཁོར་སྐྱོད་བྱ་ཐབས་བྲལ་\n“ཡོ་བྱད་” - “འདེམས་གཞི་” - %PRODUCTNAME - “བརྒྱུད་ལམ་”འོག་“ཁས་ལེན་”མཐེབ་ལ་རྐྱང་རྡེབ་བྱས་ན་ཐོག་མའི་ཁས་ལེན་བཀོད་སྒྲིག་ནང་ལམ་རྒྱུད་བསྐྱར་འཛུད་བྱེད་\nདེ་རྗེས་བསྐྱར་དུ་སྣེ་འཁྲེད་འཁོང་སྐྱོད་བྱེད།"
 
 #: source/formwizard/dbwizres.src#RID_DB_COMMON_START + 0.String.Text
 msgid  "C~reate"
@@ -473,7 +473,7 @@ msgstr "རེའུ་མིག་མིང་།(~T)"
 
 #: source/formwizard/dbwizres.src#RID_DB_COMMON_START + 6.String.Text
 msgid  "An error occurred while running the wizard. The wizard will be terminated."
-msgstr ""
+msgstr "རང་འགུལ་ཡིག་ཆའི་ལས་རོགས་ལག་སྟར་བྱེད་སྐབས་ནོར་འཁྲུལ་གཅིག་ཐོན་ཡོད་ད་ལྟ་རང་འགུལ་ཡིག་ཆའི་ལས་རོགས་མཇུག་སྒྲིལ་ཡོད།"
 
 #: source/formwizard/dbwizres.src#RID_DB_COMMON_START + 14.String.Text
 msgid  "No connection to the database could be established."
@@ -553,11 +553,11 @@ msgstr "ཁ་བྱང་འདི་བེད་སྤྱོད་བྱ་ཐ
 
 #: source/formwizard/dbwizres.src#RID_DB_FORM_WIZARD_START + 2.String.Text
 msgid  "Binary fields are always listed and selectable from the left list.\nIf possible, they are interpreted as images."
-msgstr ""
+msgstr "རེའུ་མིག་སྐྱེས་གྲུབ།"
 
 #: source/formwizard/dbwizres.src#RID_DB_FORM_WIZARD_START + 3.String.Text
 msgid  "A subform is a form that is inserted in another form.\nUse subforms to show data from tables or queries with a one-to-many relationship."
-msgstr ""
+msgstr "རེའུ་མིག་_"
 
 #: source/formwizard/dbwizres.src#RID_DB_FORM_WIZARD_START + 4.String.Text
 msgid  "~Add Subform"
@@ -593,7 +593,7 @@ msgstr "རེའུ་མིག་ནང་གི་ཡིག་དུམ།"
 
 #: source/formwizard/dbwizres.src#RID_DB_FORM_WIZARD_START + 19.String.Text
 msgid  "The join '<FIELDNAME1>' and '<FIELDNAME2>' has been selected twice.\nBut joins may only be used once."
-msgstr ""
+msgstr "གྲལ་སྟར་གཅིག་སྒྲིལ།(~T)"
 
 #: source/formwizard/dbwizres.src#RID_DB_FORM_WIZARD_START + 20.String.Text
 msgid  "~First joined subform field"
@@ -805,7 +805,7 @@ msgstr "སྒྲོམ་གཟུགས་ཀྱི་མིང་བཀོད
 
 #: source/formwizard/dbwizres.src#RID_DB_FORM_WIZARD_START + 98.String.Text
 msgid  "A form with the name '%FORMNAME' already exists.\nChoose another name."
-msgstr ""
+msgstr "མིང་ '%FORMNAME'ཡིན་པའི་སྒེའུ་ཁུང་དེ་གནས་ཟིན། \nམིང་དེ་མིན་པ་ཞིག་འདེམས་དགོས།"
 
 #: source/formwizard/dbwizres.src#RID_DB_QUERY_WIZARD_START + 0.String.Text
 msgid  "Query Wizard"
@@ -857,7 +857,7 @@ msgstr "ཞིབ་ཕྲའི་བཙ་ལ་འདྲི་བྱེད་
 
 #: source/formwizard/dbwizres.src#RID_DB_QUERY_WIZARD_START + 12.String.Text
 msgid  "~Summary query (Shows only results of aggregate functions.)"
-msgstr ""
+msgstr "བཙ་ལ་འདྲི་ཕྱོགས་སྒྲིག་（འདུ་སྤྱོར་རྟེན་གྲངས་ཀྱི་མཇུག་སྦྲས་ཁོ་ན་མངོན་པ་。）(~S)"
 
 #: source/formwizard/dbwizres.src#RID_DB_QUERY_WIZARD_START + 16.String.Text
 msgid  "Aggregate functions"
@@ -1061,7 +1061,7 @@ msgstr "དགོས་མཁོའི་སྐབས་མིང་གཞན་
 
 #: source/formwizard/dbwizres.src#RID_DB_QUERY_WIZARD_START + 77.String.Text
 msgid  "Check the overview and decide how to proceed"
-msgstr ""
+msgstr "གནས་ཚུལ་རགས་བསྡུས་བརྟག་དཔྱད་བྱེད་པ་མ་ཟད་མུ་མཐུད་བཀོལསྤྱོད་རིགས་གང་ཞིག་བྱེད་མིན་གཏན་འཁེལ་བྱེད་དགོས།"
 
 #: source/formwizard/dbwizres.src#RID_DB_QUERY_WIZARD_START + 80.String.Text
 msgid  "Field selection"
@@ -1097,15 +1097,15 @@ msgstr "གནས་ཚུལ་རགས་བསྡུས།"
 
 #: source/formwizard/dbwizres.src#RID_DB_QUERY_WIZARD_START + 88.String.Text
 msgid  "A field that has not been assigned an aggregate function must be used in a group."
-msgstr ""
+msgstr "གཏན་མ་ཕབ་པའི་འདུ་འཛོམས་རྟེན་གྲངས་ཀྱི་ཡིག་དུམ་དེ་ངེས་པར་དུ་ཚོ་སྒྲིག་ནང་སྤྱོད་དགོས།"
 
 #: source/formwizard/dbwizres.src#RID_DB_QUERY_WIZARD_START + 89.String.Text
 msgid  "The condition '<FIELDNAME> <LOGICOPERATOR> <VALUE>' was chosen twice. Each condition can only be chosen once"
-msgstr ""
+msgstr "ཆ་རྐྱེན་  '<FIELDNAME> <LOGICOPERATOR> <VALUE>' ནི་ཐེངས་གཉིས་བདམས་ཟིན་ ཆ་རྐྱེན་རེ་རེ་ཐེངས་རེ་ལས་བདམས་མི་ཆོག"
 
 #: source/formwizard/dbwizres.src#RID_DB_QUERY_WIZARD_START + 90.String.Text
 msgid  "The aggregate function <FUNCTION> has been assigned twice to the fieldname '<NUMERICFIELD>'."
-msgstr ""
+msgstr "འདུ་འཛོམས་རྐྱེན་གྲངས་ <FUNCTION> གཏན་ཕབ་པ་ fieldname '<NUMERICFIELD>' ཐེངས་གཉིས་ཟིན།"
 
 #: source/formwizard/dbwizres.src#RID_DB_QUERY_WIZARD_START + 91.String.Text
 msgid  ", "
@@ -1321,11 +1321,11 @@ msgstr "རེའུ་མིག་ '<REPORTFORM>' གནས་མེད།"
 
 #: source/formwizard/dbwizres.src#RID_DB_REPORT_WIZARD_START + 65.String.Text
 msgid  "The query with the statement <BR>'<STATEMENT>' <BR> could not be run. <BR> Check your data source."
-msgstr ""
+msgstr "ཞིབ་བརྗོད་<BR>'<STATEMENT>' <BR>བྱེད་པའི་བཙ་ལ་འདྲིའི་བཀའ་ཚིག་ཚུད་པ་ལག་བསྟར་བྱ་ཐབས་བྲལ་<BR>བེད་སྤྱོད་པའི་གཞི་གྲངས་ཁུངས་བརྟག་དཔྱད་བྱེད་རོགས།"
 
 #: source/formwizard/dbwizres.src#RID_DB_REPORT_WIZARD_START + 66.String.Text
 msgid  "The following hidden control in the form '<REPORTFORM>' could not be read: '<CONTROLNAME>'."
-msgstr ""
+msgstr "གཤམ་གྱི་རེའུ་མིག་ '<REPORTFORM>' ནང་གབ་པའི་ཚོད་འཛིན་རྣམ་གྲངས་ཀློག་ལེན་བྱ་ཐབས་བྲལ། '<CONTROLNAME>'"
 
 #: source/formwizard/dbwizres.src#RID_DB_REPORT_WIZARD_START + 67.String.Text
 msgid  "Importing data..."
@@ -1349,7 +1349,7 @@ msgstr "ཡིག་དུམ།"
 
 #: source/formwizard/dbwizres.src#RID_DB_REPORT_WIZARD_START + 72.String.Text
 msgid  "An error occurred in the wizard.<BR>The template '%PATH' could be erroneous.<BR>Either the required sections or tables do not exist or exist under the wrong name.<BR>See the Help for more detailed information.<BR>Please select another template."
-msgstr ""
+msgstr "རང་འགུལ་ཡིག་ཆའི་ལས་རོགས་ནོར་འཁྲུལ་ཞིག་ཐོན་<BR>བཟོ་ལྟ་ནང་ '%PATH' ནོར་འཁྲུལ་ཚུད་ཡོད་<BR>དགོས་ངེས་ཀྱི་ས་ཁོངས་རེའུ་མིག་གནས་མེད་ཡང་ན་གཏན་ཕབ་པའི་མིང་ཕན་མེད་ཡིན་<BR>རོགས་རམ་ནང་འབྲེལ་ཡོད་ཞིབ་ཕྲའི་གསལ་བཤད་ཀློག་བཤེར་བྱེད་<BR>བཟོ་ལྟ་གཞན་ཞིག་འདེམས་རོགས།"
 
 #: source/formwizard/dbwizres.src#RID_DB_REPORT_WIZARD_START + 73.String.Text
 msgid  "There is an invalid user field in a table."
@@ -1357,15 +1357,15 @@ msgstr "རེའུ་མིག་ནང་ཕན་མེད་ཀྱི་ར
 
 #: source/formwizard/dbwizres.src#RID_DB_REPORT_WIZARD_START + 74.String.Text
 msgid  "The sort criterium '<FIELDNAME>' was chosen twice. Each criterium can only be chosen once."
-msgstr ""
+msgstr "རིམ་སྒྲིག་ཆ་རྐྱེན་'<FIELDNAME>'ཐེངས་གཉིས་བདམས། རིམ་སྒྲིག་ཆ་རྐྱེན་རེར་ཐེངས་གཅིག་འདེམས་ཆོག"
 
 #: source/formwizard/dbwizres.src#RID_DB_REPORT_WIZARD_START + 75.String.Text
 msgid  "Note: The dummy text will be replaced by data from the database when the report is created."
-msgstr ""
+msgstr "དོ་སྣང་བྱ་རྒྱུར། སྙན་ཐོ་བཟོ་བའི་སྐབས་དཔེ་སྟོན་ཡི་གེ་དེ་གཞི་གྲངས་མཛོད་ཀྱི་ཡི་གེའི་ནང་དོན་གྱིས་ཚབ་བྱེད་ཀྱི་ཡོད།"
 
 #: source/formwizard/dbwizres.src#RID_DB_REPORT_WIZARD_START + 76.String.Text
 msgid  "A report '%REPORTNAME' already exists in the database. Please assign another name."
-msgstr ""
+msgstr "གཞི་གྲངས་མཛོད་ནང་སྙན་ཐོ་ '%REPORTNAME'གནས་ཡོད། མིང་གཞན་གཏན་ཕབ་བྱེད།"
 
 #: source/formwizard/dbwizres.src#RID_DB_REPORT_WIZARD_START + 78.String.Text
 msgid  "How do you want to proceed after creating the report?"
@@ -1465,7 +1465,7 @@ msgstr "རེའུ་མིག་གསར་བཟོ།"
 
 #: source/formwizard/dbwizres.src#RID_DB_TABLE_WIZARD_START + 14.String.Text
 msgid  "This wizard helps you to create a table for your database. After selecting a table category and a sample table, choose the fields you want to include in your table. You can include fields from more than one sample table."
-msgstr ""
+msgstr "སྣེ་སྟོན་འདིས་ཁྱེད་རང་ལ་གཞི་གྲངས་མཛོད་ཀྱི་རེའུ་མིག་གཅིག་གསར་བཟོ་བྱ་རྒྱུ་་རོགས་རམ་བྱེད་ཀྱི་རེད་ རེའུ་མིག་རིགས་དང་རེའུ་མིག་དཔེ་མཚོན་འདེམས་པའི་རྗེས་རེའུ་མིག་ནང་སྣོན་པའི་ཡིག་དུམ་འདེམས།"
 
 #: source/formwizard/dbwizres.src#RID_DB_TABLE_WIZARD_START + 15.String.Text
 msgid  "Ca~tegory"
@@ -1509,7 +1509,7 @@ msgstr "ཡིག་དུམ་འདེམས་པ།(~S)"
 
 #: source/formwizard/dbwizres.src#RID_DB_TABLE_WIZARD_START + 26.String.Text
 msgid  "A primary key uniquely identifies each record in a database table. Primary keys ease the linking of information in separate tables, and it is recommended that you have a primary key in every table. Without a primary key, it will not be possible to enter data into this table."
-msgstr ""
+msgstr "འགག་གནད་ཡི་གེ་གཙོ་བོ་ནི་གཞི་གྲངས་མཛོད་ཀྱི་རེའུ་མིག་ནང་གི་ཟིན་ཐོ་ཚང་མ་སྤྱོད་པའི་མཚོན་རྟགས་གཅིག་པོ་དེ་ཡིན་ འགག་གནད་ཡི་གེ་གཙོ་བོ་རྒྱུད་ཁེར་རྐྱང་གི་རེའུ་མིག་ཁག་ནང་གི་ཆ་འཕྲིན་སྟབས་བདེའི་སྒོ་ནས་ཐག་སྦྲེལ་བྱེད་ཐུབ་ ང་ཚོ་བྱས་ན་རེའུ་མིག་རེའི་ནང་འགག་གནད་ཡི་གེ་གཙོ་བོ་རེ་བཀོད་སྒྲིག་བྱེད་དགོས་ གལ་སྲིད་འགག་གནད་ཡི་གེ་གཙོ་བོ་མེད་ན་རེའུ་མིག་འདིའི་ནང་གཞི་གྲངས་བཅུག་ཐབས་བྲལ།"
 
 #: source/formwizard/dbwizres.src#RID_DB_TABLE_WIZARD_START + 27.String.Text
 msgid  "~Create a primary key"
@@ -1545,7 +1545,7 @@ msgstr "ཁྱེད་རང་རེའུ་མིག་ལ་མིང་ག
 
 #: source/formwizard/dbwizres.src#RID_DB_TABLE_WIZARD_START + 35.String.Text
 msgid  "Congratulations. You have entered all the information needed to create your table."
-msgstr ""
+msgstr "ཁྱེད་ལ་བཀྲ་ཤིས་ཞུ།  ཁྱེད་ཀྱིས་རེའུ་མིག་གསར་བཟོ་བྱེད་པའི་ཆ་འཕྲིན་ཚང་མ་ནང་བཅུག་ཟིན།"
 
 #: source/formwizard/dbwizres.src#RID_DB_TABLE_WIZARD_START + 36.String.Text
 msgid  "What do you want to do next?"
@@ -1569,11 +1569,11 @@ msgstr "ཁྱེད་ཀྱི་གསར་བཟོ་བྱེད་པའ
 
 #: source/formwizard/dbwizres.src#RID_DB_TABLE_WIZARD_START + 41.String.Text
 msgid  "The table name '%TABLENAME' contains a character ('%SPECIALCHAR') that might not be supported by the database."
-msgstr ""
+msgstr "རེའུ་མིག་མིང་ '%TABLENAME' ནང་གཞི་གྲངས་མཛོད་ཀྱིས་རྒྱབ་སྐྱོར་མ་བྱེད་པའི་ཡིག་རྟགས་ ('%SPECIALCHAR')ཚུད་ཟིན།"
 
 #: source/formwizard/dbwizres.src#RID_DB_TABLE_WIZARD_START + 42.String.Text
 msgid  "The field name '%FIELDNAME' contains a special character ('%SPECIALCHAR') that might not be supported by the database."
-msgstr ""
+msgstr "ཡིག་དུམ་མིང་ '%FIELDNAME' ནང་གཞི་གྲངས་མཛོད་ཀྱིས་རྒྱབ་སྐྱོར་མ་བྱེད་པའི་ཡིག་རྟགས('%SPECIALCHAR')ཚུད་ཟིན།"
 
 #: source/formwizard/dbwizres.src#RID_DB_TABLE_WIZARD_START + 43.String.Text
 msgid  "Field"
@@ -1593,11 +1593,11 @@ msgstr "འདེམས་པའི་ཡིག་དུམ་བསུབ་པ
 
 #: source/formwizard/dbwizres.src#RID_DB_TABLE_WIZARD_START + 47.String.Text
 msgid  "The field cannot be inserted because this would exceed the maximum number of %COUNT possible fields in the database table"
-msgstr ""
+msgstr "ཡིག་དུམ་བསྒར་འཛུད་བྱ་ཐབས་བྲལ་ དེ་ནི་གཞི་གྲངས་མཛོད་ཀྱི་རེའུ་མིག་ནང་ཆོག་པའི་ཡིག་དུམ་གྲངས་ཆེ་ཤོས་ %COUNT བརྒལ་བའི་རྐྱེན་གྱིས་རེད།"
 
 #: source/formwizard/dbwizres.src#RID_DB_TABLE_WIZARD_START + 48.String.Text
 msgid  "The name '%TABLENAME' already exists.\nPlease enter another name."
-msgstr ""
+msgstr "མིང་ '%TABLENAME' གནས་ཡོད་。\nམིང་གཞན་ནང་བཅུག་བྱེད།"
 
 #: source/formwizard/dbwizres.src#RID_DB_TABLE_WIZARD_START + 49.String.Text
 msgid  "Catalog of the table"
@@ -1733,7 +1733,7 @@ msgstr "ཤོག་ངོས་ཀྱི་ཉམས་འགྱུར།"
 
 #: source/formwizard/dbwizres.src#RID_LETTERWIZARDDIALOG_START + 31.String.Text
 msgid  "This wizard helps you to create a letter template. You can then use the template as the basis for writing letters as often as desired."
-msgstr ""
+msgstr "སྣེ་འདྲེན་འདིས་ཁྱེད་ལ་འཕྲིན་ཡིག་གི་མ་པང་གསར་འཛུགས་རོགས་རམ་བྱེད། དེ་རྗེས་དགོས་མཁོ་ལྟར་མ་དཔེ་དེ་ལ་གཞིགས་ནས་འཕྲིན་ཡིག་བྲིས་ཆོག"
 
 #: source/formwizard/dbwizres.src#RID_LETTERWIZARDDIALOG_START + 32.String.Text
 msgid  "~Height:"
@@ -1801,11 +1801,11 @@ msgstr "ཤོག་ཞབས།"
 
 #: source/formwizard/dbwizres.src#RID_LETTERWIZARDDIALOG_START + 48.String.Text
 msgid  "This wizard creates a letter template which enables you to create multiple letters with the same layout and settings."
-msgstr ""
+msgstr "སྣེ་སྟོན་འདིས་འཕྲིན་ཡིག་མ་པང་གསར་བཟོ་ཐུབ། དེ་བེད་སྤྱད་ནས་འདྲ་བའི་བཀོད་རྣམ་དང་བཀོད་སྒྲིག་སྤྱད་ནས་འཕྲིན་ཡིག་མང་དག་གསར་བཟོ་བྱེད་ཐུབ།"
 
 #: source/formwizard/dbwizres.src#RID_LETTERWIZARDDIALOG_START + 49.String.Text
 msgid  "To create another new letter out of the template just navigate to the template location and double-click it."
-msgstr ""
+msgstr "མ་པང་སྤྱད་དེ་འཕྲིན་ཡིག་གསར་པའི་ཡི་གེ་གཞན་ཞིག་གསར་བཟོ་ཐུབ་པར་མ་པང་ཡོད་སའི་གནས་ས་ལ་མིག་བཤར་དགོས་ དེ་རྗེས་ཆ་རྡེབ་དགོས།"
 
 #: source/formwizard/dbwizres.src#RID_LETTERWIZARDDIALOG_START + 50.String.Text
 msgid  "Template name:"
@@ -1957,7 +1957,7 @@ msgstr "ཤོག་ངོས་ཀྱི་ཉམས་འགྱུར།"
 
 #: source/formwizard/dbwizres.src#RID_FAXWIZARDDIALOG_START + 17.String.Text
 msgid  "This wizard helps you to create a fax template. The template can then be used to create a fax whenever needed."
-msgstr ""
+msgstr "སྣེ་སྟོན་འདིས་ཁྱེད་ལ་བཪྙན་སྐྱེལ་མ་པང་གསར་བཟོ་བྱེད་རོགས་བྱེད་ དེ་རྗེས་དགོས་མཁོར་བརྟེན་ནས་དུས་ཐོག་ཏུ་མ་པང་འདི་སྤྱད་དེ་བཪྙན་སྐྱེལ་གསར་བཟོ་བྱེད།"
 
 #: source/formwizard/dbwizres.src#RID_FAXWIZARDDIALOG_START + 18.String.Text
 msgid  "Return address"
@@ -1981,11 +1981,11 @@ msgstr "ཤོག་ཞབས།"
 
 #: source/formwizard/dbwizres.src#RID_FAXWIZARDDIALOG_START + 23.String.Text
 msgid  "This wizard creates a fax template which enables you to create multiple faxes with the same layout and settings."
-msgstr ""
+msgstr "སྣེ་སྟོན་འདིས་བཪྙན་སྐྱེལ་མ་པང་གསར་བཟོ་བྱེད་ཐུབ་ དེ་བེད་སྤྱད་ན་འདྲ་བའི་བཀོད་རྣམ་པ་དང་བཪྙན་སྐྱེལ་ཡི་གེ་མང་དག་བཀོད་སྒྲིག་གསར་བཟོ་བྱེད་ཐུབ།"
 
 #: source/formwizard/dbwizres.src#RID_FAXWIZARDDIALOG_START + 24.String.Text
 msgid  "To create another new fax out of the template, go to the location where you saved the template and double-click the file."
-msgstr ""
+msgstr "མ་པང་སྤྱད་ན་བཪྙན་སྐྱེལ་ཡི་གེ་གསར་པ་ཞིག་བཟོ་ཐུབ་ཀྱི་རེད་ དེ་ལ་མ་པང་གི་ཉར་ཚགས་གནས་ས་ཁོ་ན་སྒྱུར་དགོས་ དེ་རྗེས་ཡིག་ཆ་དེ་ཆ་རྡེབ་བྱེད།"
 
 #: source/formwizard/dbwizres.src#RID_FAXWIZARDDIALOG_START + 25.String.Text
 msgid  "Template Name:"
@@ -2121,7 +2121,7 @@ msgstr "Web སྣེ་སྟོན།"
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +2.String.Text
 msgid  "This Web Wizard is to aid you in publishing documents on the Internet.\n\nIt will convert the documents so that they can be viewed by a web browser. In addition, it will generate a Table of Contents page with links for easy access to the documents. The Web Wizard will also allow you to customize the design and layout of your web site.\n\nYou will be able to keep the documents you have published on the web up-to-date and add or remove documents at any time."
-msgstr ""
+msgstr "\"Web སྣེ་སྟོན་\"འདི་ཁྱེད་ཀྱི་ Internet ཐོག་ཡིག་ཚགས་ཁྱབ་བསྒྲགས་རམས་འདེགས་ལ་སྤྱོད་དགོས་\n\nདེ་ཡིག་ཚགས་བརྗེ་སྒྱུར་བྱས་ནས་ Web མིག་བཤར་ཆས་བརྒྱུད་ལྟ་ཞིབ་ཐུབ་པ་བྱེད་ གཞན་ཡང་དེས་ད་དུང་\"དཀར་ཆག་\"ཤོག་ལྷེ་སྐྱེ་གྲུབ་བྱེད་པ་དང་ཤོག་ལྷེ་དེ་ལྟོས་ཟླའི་ཡིག་ཚགས་ཀྱི་ཐག་སྦྲེལ་འཚམས་འདྲི་བྱ་རྒྱུ་སྟབས་བདེ་ཡོད་\"Web སྣེ་སྟོན་\"གྱིས་ད་དུང་དྲ་ཚུགས་ཀྱི་འཆར་བཀོད་དང་བཀོད་རྣམ་རང་མཚན་འཇོག་བྱེད་ཆོག་\n\nཁྱེད་ཀྱི་དྲ་ཐོག་ཡིག་ཚགས་རྟག་ཏུ་གསར་བཟོ་བྱེད་རྒྱུ་ཁྱབ་བསྒྲགས་བྱེད་ཐུབ་པ་མ་ཟད་དུས་ཐོག་དུ་ཡིག་ཚགས་གསབ་སྣོན་ནམ་བསུབ་ཐུབ།"
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +4.String.Text
 msgid  "~Delete"
@@ -2305,7 +2305,7 @@ msgstr "རང་མཚན་འཇོག་གི་འདེམས་པའི
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +61.String.Text
 msgid  "Include the following information for each document in the table of contents:"
-msgstr ""
+msgstr "དཀར་ཆག་ནང་ཡིག་ཚགས་རེ་རེའི་གཤམ་གྱི་ཆ་འཕྲིན་ཚུད་ཡོད།"
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +62.String.Text
 msgid  "Optimize the layout for screen resolution:"
@@ -2345,19 +2345,19 @@ msgstr "རང་སའི་དམིགས་ཡུལ་ནི་ཡིག་
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +75.String.Text
 msgid  "The ZIP target '%FILENAME' already exists. Do you want to overwrite the existing target? "
-msgstr ""
+msgstr "ZIP དམིགས་ཡུལ་གནས་ཡོད་ ད་ཡོད་དམིགས་ཡུལ་བཀབ་བམ།"
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +76.String.Text
 msgid  "The FTP target directory '%FILENAME' is not empty. Some files might be overwritten. Do you want to continue?"
-msgstr ""
+msgstr "FTP དམིགས་ཡུལ་དཀར་ཆག་སྟོང་པ་མིན་ ནང་དོན་བསུབ་བམ།"
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +77.String.Text
 msgid  "The local target directory '%FILENAME' is not empty. Some files might be overwritten. Do you want to continue?"
-msgstr ""
+msgstr "རང་སའི་དམིགས་ཡུལ་དཀར་ཆག་སྟོང་པ་མིན་ ནང་དོན་བསུབ་བམ །"
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +78.String.Text
 msgid  "Settings already exist under the given name. Do you want to overwrite the existing settings? "
-msgstr ""
+msgstr "སྤྲད་པའི་མིང་གཤམ་ལ་བཀོད་སྒྲིག་ཟིན་ ད་ཡོད་དམིགས་ཡུལ་བཀབ་བམ།"
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +79.String.Text
 msgid  "Exporting documents..."
@@ -2457,7 +2457,7 @@ msgstr "པར་ཡིག་ཆ་བསྐྱར་བཟོའི་སྐབ
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +108.String.Text
 msgid  "An error occurred while gathering document information for '%FILENAME'. "
-msgstr ""
+msgstr "'%FILENAME' ཡིག་ཚགས་ཆ་འཕྲིན་འཚོལ་བསྡུའི་སྐབས་ནོར་འཁྲུལ་ཐོན་ཡོད།"
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +109.String.Text
 msgid  "An error occurred while exporting the document '%FILENAME'."
@@ -2469,11 +2469,11 @@ msgstr "འདྲེན་སྟོན་ '%FILENAME'  དཀར་ཆག་ག�
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +111.String.Text
 msgid  "A security error occurred while exporting the document '%FILENAME'."
-msgstr ""
+msgstr "ཡིག་ཚགས་ '%FILENAME' འདྲེན་སྟོན་སྐབས་བདེ་འཇགས་རང་བཞིན་གྱི་ནོར་འཁྲུལ་ཐོན་ཡོད།"
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +112.String.Text
 msgid  "An input/output error occurred while exporting the document '%FILENAME'."
-msgstr ""
+msgstr "ཡིག་ཚགས་  '%FILENAME' འདྲེན་སྟོན་སྐབས་ནང་བཅུག་ཕྱེར་ཐོན་ནོར་འཁྲུལ་ཐོན་ཡོད།"
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +113.String.Text
 msgid  "An error occurred while copying media files to the temporary directory."
@@ -2489,7 +2489,7 @@ msgstr "བསལ་ཡུལ་ལས་འདས་པའི་ནོར་འ
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +116.String.Text
 msgid  "An unexpected error occurred while validating the file: '%FILENAME'"
-msgstr ""
+msgstr "ཡིག་ཆ་  '%FILENAME' ཚོད་ལྟའི་ར་སྤྲོད་སྐབས་བསལ་ཡུལ་ལས་འདས་པའི་ནོར་འཁྲུལ་ཞིག་ཐོན་ཡོད།"
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +117.String.Text
 msgid  "%FILENAME' is a folder."
@@ -2541,7 +2541,7 @@ msgstr "སྔོན་ལྟ།"
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +130.String.Text
 msgid  "The selected settings will be deleted.\n\nDo you really want to delete these settings? "
-msgstr ""
+msgstr "བདམས་པའི་བཀོད་སྒྲིག་བསུབ་\n\nབཀོད་སྒྲིག་འདི་དག་གཏན་འཁེལ་སུབ་བམ།"
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +131.String.Text
 msgid  "%NUMBER pages"
@@ -2609,19 +2609,19 @@ msgstr "FTP དཀར་ཆག་ '%FILENAME'གསར་བཟོ་བྱེ�
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +147.String.Text
 msgid  "The FTP directory '%FILENAME' does not exist. \nCreate the directory now?"
-msgstr ""
+msgstr "FTP དཀར་ཆག་ '%FILENAME' གནས་མེད་\nད་ལྟ་དཀར་ཆག་གསར་བཟོ་བྱེད་དམ།"
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +148.String.Text
 msgid  "The Zip file '%FILENAME' cannot be created: a directory of the same name already exists."
-msgstr ""
+msgstr "Zip ཡིག་ཆ་  '%FILENAME'གསར་བཟོ་བྱེད་ཐབས་བྲལ། མིང་གཅིག་པའི་དཀར་ཆག་གནས་ཡོད།"
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +149.String.Text
 msgid  "The local directory '%FILENAME' cannot be created. \nPlease check your write-access."
-msgstr ""
+msgstr "རང་སའི་དཀར་ཆག་'%FILENAME'གསར་བཟོ་བྱེད་ཐབས་བྲལ་\nཁྱེད་ཀྱི་འབྲི་བའི་དབང་ཚད་བརྟག་དཔྱད་བྱེད་རོགས།"
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +150.String.Text
 msgid  "The local directory '%FILENAME' does not exist. \nCreate the directory now?"
-msgstr ""
+msgstr "རང་སའི་དཀར་ཆག་ '%FILENAME' གནས་མེད།\nད་ལྟ་དཀར་ཆག་གསར་བཟོ་བྱེད་དགོས་སམ།"
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +151.String.Text
 msgid  "Size: %NUMBERKB"
@@ -2757,7 +2757,7 @@ msgstr "ཚོགས་འདུའི་ཟིན་ཐོ་ཚུད་ཡོ
 
 #: source/formwizard/dbwizres.src#RID_AGENDAWIZARDDIALOG_START +13.String.Text
 msgid  "This wizard helps you to create an agenda template. The template can then be used to create an agenda whenever needed."
-msgstr ""
+msgstr "སྣེ་འཁྲིད་འདི་བེད་སྤྱད་དེ་ཚོགས་འདུའི་གྲོས་རོགས་གྱི་མ་པར་གསར་བཟོ་བྱེད་མར་བའི་ཚོགས་འདུའི་གྲོས་རིམ་གྱི་ཡིག་ཚགས་དེ་ཆ་འདྲ་པའི་ཁ་འགྲིལ་སྟངས་དང་བཀོད་སྒྲིག་བྱེད་ཆོག"
 
 #: source/formwizard/dbwizres.src#RID_AGENDAWIZARDDIALOG_START +14.String.Text
 msgid  "Time:"
@@ -2773,7 +2773,7 @@ msgstr "ས་གནས།"
 
 #: source/formwizard/dbwizres.src#RID_AGENDAWIZARDDIALOG_START +17.String.Text
 msgid  "Placeholders will be used in empty fields. You can replace placeholders with text later."
-msgstr ""
+msgstr "ནང་དོན་ནི་སྟོང་པའི་རྣམ་གྲངས་མ་པང་ནང་གནས་ཟིན་རྟགས་ཀྱི་མཚོན་ཡོད་ཚབས་ཅིག་རྗེས་སུ་གནས་འདིར་དོན་དངོས་ནང་ནང་དོན་ནང་བཅུག་བྱེད།"
 
 #: source/formwizard/dbwizres.src#RID_AGENDAWIZARDDIALOG_START +18.String.Text
 msgid  "..."
@@ -2785,7 +2785,7 @@ msgstr "མ་པང་འདི་བོད་སྤྱད་དེ་ཚོག
 
 #: source/formwizard/dbwizres.src#RID_AGENDAWIZARDDIALOG_START +20.String.Text
 msgid  "To create a new agenda out of the template, go to the location where you saved the template and double-click the file."
-msgstr ""
+msgstr "མ་པང་སྤྱད་དེ་ཚོགས་འདུའི་གྲོས་རིམ་གསར་བཟོ་བྱེད་པ་དང་མ་་པར་འདིའི་གནས་ས་ཡར་སྟར་ཚགས་བྱེད་ཆོག་མ་པར་འདིའི་ཡིག་ཆ་རྟེབ་བྱེད།"
 
 #: source/formwizard/dbwizres.src#RID_AGENDAWIZARDDIALOG_START +21.String.Text
 msgid  "Agenda item"
@@ -2829,7 +2829,7 @@ msgstr "ཞབས་ཞུའི་མི་སྣ།"
 
 #: source/formwizard/dbwizres.src#RID_AGENDAWIZARDDIALOG_START +31.String.Text
 msgid  "The agenda template will include placeholders for the names of the selected people. When creating an agenda from the template, you can replace these placeholder with the appropriate names."
-msgstr ""
+msgstr "ཚོགས་འདུའི་གྲོས་རིམ་མ་པང་ནང་བདམས་པའི་མི་སྣའི་ཟིན་པའི་གནས་རྟགས་ཚུད་ཡོད་མ་པང་འི་གསང་བཟོ་བྱེད་པའི་དོན་དངོས་ཀྱི་ཚོགས་འདུའི་གྲོས་རིམ་གྱི་ཡིག་ཚགས་ནང་དོན་དངོས་ཀྱི་མི་སྣའི་མིང་ཚབ་བྱེད་དགོས།"
 
 #: source/formwizard/dbwizres.src#RID_AGENDAWIZARDDIALOG_START +32.String.Text
 msgid  "Type of meeting"
@@ -2857,7 +2857,7 @@ msgstr "ཚོས་གྲངས།"
 
 #: source/formwizard/dbwizres.src#RID_AGENDAWIZARDDIALOG_START +39.String.Text
 msgid  "This wizard creates an agenda template which enables you to create multiple agendas with the same layout and settings."
-msgstr ""
+msgstr "སྣེ་འཁྲིད་འདི་སྤྱད་དེ་ཚོགས་འདུའི་གྲོས་རིམ་མ་པང་གསར་བཟོ་བྱེད་མང་བའི་ཚོགས་འདུའི་གྲོས་རིམ་གྱི་ཡིག་ཚགས་དེ་ཆ་འདྲ་བའི་ཁ་འགྲེམ་སྟངས་དང་བཀོད་སྒྲིག་བྱེད་ཆོག"
 
 #: source/formwizard/dbwizres.src#RID_AGENDAWIZARDDIALOG_START +40.String.Text
 msgid  "Page design:"
@@ -2873,7 +2873,7 @@ msgstr "ངའི་གྲོས་རིམ་མ་པང་།"
 
 #: source/formwizard/dbwizres.src#RID_AGENDAWIZARDDIALOG_START +43.String.Text
 msgid  "An unexpected error occurred while saving the agenda template."
-msgstr ""
+msgstr "གྲོས་རིམ་མ་པང་ཉར་ཚགས་བྱེད་པའི་རྒྱུད་རིམ་ནང་བློ་ཡུལ་ལས་འདས་པའི་ནོར་སྐྱོན་ཐོན་ཡོད།"
 
 #: source/formwizard/dbwizres.src#RID_AGENDAWIZARDDIALOG_START +44.String.Text
 msgid  "Name"
@@ -3009,11 +3009,11 @@ msgstr "ཁ་བརྒྱབ།(~L)"
 
 #: source/importwizard/importwi.src#sWelcometextLabel1.String.Text
 msgid  "This wizard converts documents in %PRODUCTNAME format and Microsoft Office documents to the new OpenDocument format."
-msgstr ""
+msgstr "རང་ཡིག་ཡིག་ཆའི་རམ་འདེགས་དེ་%PRODUCTNAME %PRODUCTVERSIONདེ་སྔོན་གྱི་ཡིག་ཚགས་དང་Microsoft Officeཡིག་ཚགས་བརྗེ་སྒྱུར་བྱས་པའི་%PRODUCTNAME %PRODUCTVERSIONརྣམ་གཞག་གསར་པའི་ཡིག་ཚགས་ཞིག་རེད།"
 
 #: source/importwizard/importwi.src#sWelcometextLabel2.String.Text
 msgid  "Please note that when converting Microsoft documents any attached VBA macros lose their functionality."
-msgstr ""
+msgstr "གཟབ་གཟབ་གྱིས།  Microsoft ཡིག་ཆ་བརྗེ་སྒྱུར་བྱེད་སྐབས་དེ་སྔའི་ཡིག་ཆའི་ནང་ཡོད་པའི་ VBA རགས་ཀྱི་ནུས་པ་མེད་པར་གྱུར་སྲིད།"
 
 #: source/importwizard/importwi.src#sWelcometextLabel3.String.Text
 msgid  "Select the document type for conversion:"
@@ -3241,59 +3241,59 @@ msgstr "གཤམ་གྱི་དཀར་ཆག་བར་ཕྱིར་འ
 
 #: source/importwizard/importwi.src#sSumSOTextDocuments.String.Text
 msgid  "All %PRODUCTNAME text documents contained in the following directory will be imported:"
-msgstr ""
+msgstr "གཤམ་གྱི་དཀར་ཆག་ནང་གི་%PRODUCTNAME ཚང་མ་ཡིག་རྐྱང་ཡིག་ཚགས་ནང་འཇུག་པ།"
 
 #: source/importwizard/importwi.src#sSumSOTableDocuments.String.Text
 msgid  "All %PRODUCTNAME spreadsheets contained in the following directory will be imported:"
-msgstr ""
+msgstr "གཤམ་གྱི་དཀར་ཆག་ནང་གི་%PRODUCTNAME ཚང་མ་གློག་རྡུལ་རེའུ་མིག་གི་ཡིག་ཚགས་ནང་འཇུག་པ།"
 
 #: source/importwizard/importwi.src#sSumSODrawDocuments.String.Text
 msgid  "All %PRODUCTNAME drawing and presentation documents contained in the following directory will be imported:"
-msgstr ""
+msgstr "གཤམ་གྱི་དཀར་ཆག་ནང་གི་%PRODUCTNAME ཚང་མ་རི་མོ་འབྲི་བའི་ཡིག་ཚགས་དང་དཔེ་སྟོན་ཡིག་ཚགས་ནང་འཇུག་པ།"
 
 #: source/importwizard/importwi.src#sSumSOMathDocuments.String.Text
 msgid  "All %PRODUCTNAME formula documents contained in the following directory will be imported:"
-msgstr ""
+msgstr "གཤམ་གྱི་དཀར་ཆག་ནང་གི་%PRODUCTNAME ཚང་མ་སྤྱི་གྲོས་ཀྱི་ཡིག་ཚགས་ནང་འཇུག་པ།"
 
 #: source/importwizard/importwi.src#sSumSOTextTemplates.String.Text
 msgid  "All %PRODUCTNAME text templates contained in the following directory will be imported:"
-msgstr ""
+msgstr "གཤམ་གྱི་དཀར་ཆག་ནང་གི་%PRODUCTNAME ཚང་མ་ཡིག་རྐྱང་ཡིག་ཚགས་ཀྱི་དཔེ་པང་ནང་འཇུག་པ།"
 
 #: source/importwizard/importwi.src#sSumSOTableTemplates.String.Text
 msgid  "All %PRODUCTNAME table templates contained in the following directory will be imported:"
-msgstr ""
+msgstr "གཤམ་གྱི་དཀར་ཆག་ནང་གི་ %PRODUCTNAME ཚང་མ་གློག་རྡུལ་རེའུ་མིག་དེ་དཔེ་པང་གི་ཡིག་ཚགས་ནང་འཇུག་པ།"
 
 #: source/importwizard/importwi.src#sSumSODrawTemplates.String.Text
 msgid  "All %PRODUCTNAME drawing and presentation templates contained in the following directory will be imported:"
-msgstr ""
+msgstr "གཤམ་གྱི་དཀར་ཆག་ནང་གི་%PRODUCTNAME ཚང་མ་རི་མོ་འབྲི་བའི་ཡིག་ཚགས་དང་དཔེ་སྟོན་ཡིག་ཚགས་ཀྱི་དཔེ་པང་ཡིག་ཚགས་ནང་འཇུག་པ།"
 
 #: source/importwizard/importwi.src#sSumSOGlobalDocuments.String.Text
 msgid  "All %PRODUCTNAME master documents contained in the following directory will be imported:"
-msgstr ""
+msgstr "གཤམ་གྱི་དཀར་ཆག་ནང་གི་%PRODUCTNAME ཚང་མ་ཚོད་འཛིན་ཆས་གཙོ་བོའི་ཡིག་ཚགས་ནང་འཇུག་པ།"
 
 #: source/importwizard/importwi.src#sSumMSTextDocuments.String.Text
 msgid  "All Word documents contained in the following directory will be imported:"
-msgstr ""
+msgstr "གཤམ་གྱི་དཀར་ཆག་ནང་གི་ Word ཚང་མ་ཡིག་ཚགས་ནང་འཇུག་པ།"
 
 #: source/importwizard/importwi.src#sSumMSTableDocuments.String.Text
 msgid  "All Excel documents contained in the following directory will be imported:"
-msgstr ""
+msgstr "གཤམ་གྱི་དཀར་ཆག་ནང་གི་ Excel ཚང་མ་ཡིག་ཚགས་ནང་འཇུག་པ།"
 
 #: source/importwizard/importwi.src#sSumMSDrawDocuments.String.Text
 msgid  "All PowerPoint documents contained in the following directory will be imported:"
-msgstr ""
+msgstr "གཤམ་གྱི་དཀར་ཆག་ནང་གི་ PowerPoint ཚང་མ་ཡིག་ཚགས་ནང་འཇུག་པ།"
 
 #: source/importwizard/importwi.src#sSumMSTextTemplates.String.Text
 msgid  "All Word templates contained in the following directory will be imported:"
-msgstr ""
+msgstr "གཤམ་གྱི་དཀར་ཆག་ནང་གི་ Word ཚང་མ་དཔེ་པང་ནང་འཇུག་པ།"
 
 #: source/importwizard/importwi.src#sSumMSTableTemplates.String.Text
 msgid  "All Excel templates contained in the following directory will be imported:"
-msgstr ""
+msgstr "གཤམ་གྱི་དཀར་ཆག་ནང་གི་ Excel ཚང་མ་དཔེ་པང་ནང་འཇུག་པ།"
 
 #: source/importwizard/importwi.src#sSumMSDrawTemplates.String.Text
 msgid  "All PowerPoint templates contained in the following directory will be imported:"
-msgstr ""
+msgstr "གཤམ་གྱི་དཀར་ཆག་ནང་གི་ PowerPoint ཚང་མ་དཔེ་པང་ནང་འཇུག་པ།"
 
 #: source/schedule/schedule.src#dlgCalTitle.String.Text
 msgid  "%PRODUCTNAME Calendar"
@@ -3481,7 +3481,7 @@ msgstr "ལེགས་གྲུབ་ཟིན་པ།:"
 
 #: source/template/template.src#SAMPLES.String.Text
 msgid  "In order to use the full functionality of this sample, create a document that is based on this template."
-msgstr ""
+msgstr "དང་ཐོག་དཔེ་པང་གི་ཡིག་ཆ་གསར་པ་ཞིག་བཟོས་པ་དེ་གཡར་ཐུབ་ན་གཞི་ནས་དཔེ་མཚོན་བྱེད་ནུས་བེད་སྤྱོད་གང་ལེགས་ཐུབ།"
 
 #: source/template/template.src#SAMPLES + 1.String.Text
 msgid  "Remarks"
@@ -3493,7 +3493,7 @@ msgstr "རྣམ་པ་གདམ་ག"
 
 #: source/template/template.src#STYLES + 1.String.Text
 msgid  "Error while saving the document to the clipboard! The following action cannot be undone."
-msgstr ""
+msgstr "དེ་སྔའི་ཡིག་ཚགས་ཉར་ཚགས་བྱེད་སྐབས་ནོརའཁྲུལ་ཐོན་ཡོད་ གཤམ་གྱི་བཀོལ་སྤྱོད་རྩིས་མེད་གཏོང་ཐབས་བྲལ།"
 
 #: source/template/template.src#STYLES + 2.String.Text
 msgid  "~Cancel"

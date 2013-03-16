@@ -157,7 +157,7 @@ msgstr "Hiba történt a kiértékelés közben"
 
 #: source/resource/xforms.src#RID_STR_XFORMS_PATTERN_DOESNT_MATCH.String.Text
 msgid  "The string '$1' does not match the required regular expression '$2'."
-msgstr ""
+msgstr "A(z) „$1” karakterlánc nem illeszkedik erre a reguláris kifejezésre: „$2”."
 
 #: source/resource/xforms.src#RID_STR_XFORMS_BINDING_UI_NAME.String.Text
 msgid  "Binding"
@@ -177,7 +177,7 @@ msgstr "behelyettesítve"
 
 #: source/resource/strings.src#RID_STR_CONTROL_SUBSTITUTED_EPXPLAIN.String.Text
 msgid  "An error occurred while this control was being loaded. It was therefore replaced with a placeholder."
-msgstr ""
+msgstr "Hiba történt a vezérlőelem betöltése közben, ezért helykitöltő helyettesíti."
 
 #: source/resource/strings.src#RID_STR_READERROR.String.Text
 msgid  "Error reading data from database"
@@ -233,7 +233,7 @@ msgstr "Szintaktikai hiba a lekérdezésben"
 
 #: source/resource/strings.src#RID_STR_INCOMPATIBLE_TYPES.String.Text
 msgid  "The value types supported by the binding cannot be used for exchanging data with this control."
-msgstr ""
+msgstr "A kötés által támogatott adattípusok nem használhatók adatcseréhez ezzel a vezérlőelemmel."
 
 #: source/resource/strings.src#RID_STR_LABEL_RECORD.String.Text
 msgid  "Record"
@@ -241,7 +241,7 @@ msgstr "Rekord"
 
 #: source/resource/strings.src#RID_STR_INVALID_VALIDATOR.String.Text
 msgid  "The control is connected to an external value binding, which at the same time acts as validator. You need to revoke the value binding, before you can set a new validator."
-msgstr ""
+msgstr "A vezérlőelem egy külső értékkötéshez kapcsolódik, amely jelenleg érvényesítőként is működik. Vissza kell vonnia az értékkötést, mielőtt új érvényesítőt adna meg."
 
 #: source/resource/strings.src#RID_STR_LABEL_OF.String.Text
 msgid  "of"
@@ -249,7 +249,7 @@ msgstr "/"
 
 #: source/resource/strings.src#RID_STR_QUERY_SAVE_MODIFIED_ROW.String.Text
 msgid  "The content of the current form has been modified.\nDo you want to save your changes?"
-msgstr ""
+msgstr "Az aktuális űrlap tartalma megváltozott.\nAkarja menteni a változtatásokat?"
 
 #: source/resource/strings.src#RID_STR_COULD_NOT_SET_ORDER.String.Text
 msgid  "Error setting the sort criteria"
@@ -265,7 +265,7 @@ msgstr "Ennek a műveletnek a végrehajtásához paraméterek szükségesek."
 
 #: source/resource/strings.src#RID_STR_FEATURE_NOT_EXECUTABLE.String.Text
 msgid  "This function cannot be executed, but is only for status queries."
-msgstr ""
+msgstr "Ezt a műveletet nem lehet végrehajtani, csak állapotlekérdezésre szolgál."
 
 #: source/resource/strings.src#RID_STR_FEATURE_UNKNOWN.String.Text
 msgid  "Unknown function."

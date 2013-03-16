@@ -119,6 +119,19 @@ msgstr "פנקס הכתובות של Thunderbird"
 msgid  "LDAP Address Book"
 msgstr "פנקס הכתובות של LDAP"
 
+#: source/drivers/mozab/mozab2.xcu#.Drivers.Installed.sdbc:address:mozilla:.DriverTypeDisplayName
+msgid  "SeaMonkey Address Book"
+msgstr "פנקס הכתובות של SeaMonkey"
+
+#: source/drivers/mozab/mozab2.xcu#.Drivers.Installed.sdbc:address:thunderbird:.DriverTypeDisplayName
+msgid  "Thunderbird Address Book"
+msgstr "פנקס הכתובות של Thunderbird"
+
+#: source/drivers/mozab/mozab2.xcu#.Drivers.Installed.sdbc:address:ldap:*.DriverTypeDisplayName
+#, fuzzy
+msgid  "LDAP Address Book"
+msgstr "פנקס הכתובות של LDAP"
+
 #: source/drivers/mysql/mysql.xcu#.Drivers.Installed.sdbc:mysql:jdbc:*.DriverTypeDisplayName
 msgid  "MySQL (JDBC)"
 msgstr "MySQL (JDBC)"
@@ -161,11 +174,11 @@ msgstr "לא ניתן ליצור ספר כתובות חדש בעת הפעלת מ
 
 #: source/resource/conn_shared_res.src#STR_COULD_NOT_RETRIEVE_AB_ENTRY.String.Text
 msgid  "An address book entry could not be retrieved, an unknown error occurred."
-msgstr ""
+msgstr "אחזור הרשומה מספר הכתובות נכשל מסיבה לא ידועה"
 
 #: source/resource/conn_shared_res.src#STR_COULD_NOT_GET_DIRECTORY_NAME.String.Text
 msgid  "An address book directory name could not be retrieved, an unknown error occurred."
-msgstr ""
+msgstr "האחזור של שם התיקיה של ספר הכתובות נכשל מסיבה לא ידועה"
 
 #: source/resource/conn_shared_res.src#STR_TIMEOUT_WAITING.String.Text
 msgid  "Timed out while waiting for the result."
@@ -177,11 +190,11 @@ msgstr "ארעה שגיאה בעת ביצוע השאילתה"
 
 #: source/resource/conn_shared_res.src#STR_MOZILLA_IS_RUNNIG_NO_CHANGES.String.Text
 msgid  "You can't make any changes to mozilla address book when mozilla is running."
-msgstr ""
+msgstr "לא ניתן לבצע שינוים לספר כתובות של מוזילה בעת הפעלת מוזילה"
 
 #: source/resource/conn_shared_res.src#STR_FOREIGN_PROCESS_CHANGED_AB.String.Text
 msgid  "Mozilla Address Book has been changed out of this process, we can't modify it in this condition."
-msgstr ""
+msgstr "ספר הכתובות של מוזילה שונה על ידי תהליך אחר. במצב זה אין אפשרות לשנות אותו מתוך אופן אופיס"
 
 #: source/resource/conn_shared_res.src#STR_CANT_FIND_ROW.String.Text
 msgid  "Can't find the requested row."
@@ -233,7 +246,7 @@ msgstr "לא ניתן ליצור שורה חדשה."
 
 #: source/resource/conn_shared_res.src#STR_QUERY_INVALID_IS_NULL_COLUMN.String.Text
 msgid  "The query can not be executed. The 'IS NULL' can only be used with a column name."
-msgstr ""
+msgstr "לא ניתן להריץ את השאילתה. \"'IS NULL\" ניתן לשימוש רק עם שם עמודה."
 
 #: source/resource/conn_shared_res.src#STR_ILLEGAL_MOVEMENT.String.Text
 msgid  "Illegal cursor movement occured."
@@ -268,12 +281,12 @@ msgid  "It doesn't exist a connection to the database."
 msgstr "החיבור לבסיס הנתונים לא קיים."
 
 #: source/resource/conn_shared_res.src#STR_WRONG_PARAM_INDEX.String.Text
-msgid  "You tried to set a parameter at position '$pos$' but there is/are only '$count$' parameter(s) allowed. One reason may be that the property "ParameterNameSubstitution" is not set to TRUE in the data source."
-msgstr ""
+msgid  "You tried to set a parameter at position '$pos$' but there is/are only '$count$' parameter(s) allowed. One reason may be that the property \"ParameterNameSubstitution\" is not set to TRUE in the data source."
+msgstr "ניסית להגדיר פרמטר במיקום '$pos$' אבל מותר להגדיר רק '$count$' פרמטר(ים). אחת הסיבות לכך עשויה להיות שמאפיין \"ParameterNameSubstitution\" לא מוגדר כ-TRUE במקור הנתונים."
 
 #: source/resource/conn_shared_res.src#STR_INPUTSTREAM_WRONG_LEN.String.Text
 msgid  "End of InputStream reached before satisfying length specified when InputStream was set."
-msgstr ""
+msgstr "סוף זרימת קלט הגיע לפני הגעה לאורך שנקבע בתחילת זרימת הקלט."
 
 #: source/resource/conn_shared_res.src#STR_NO_INPUTSTREAM.String.Text
 msgid  "The input stream was not set."
@@ -313,7 +326,7 @@ msgstr "מנהל התקן זה אינו תומך בפונקציה '$functionname
 
 #: source/resource/conn_shared_res.src#STR_UNSUPPORTED_FEATURE.String.Text
 msgid  "The driver does not support the functionality for '$featurename$'. It is not implemented."
-msgstr ""
+msgstr "מנהל התקן זה אינו תומך בפונקציות של '$featurename$'. היא אינה ממומשת."
 
 #: source/resource/conn_shared_res.src#STR_FORMULA_WRONG.String.Text
 msgid  "The formula for TypeInfoSettings is wrong!"
@@ -321,11 +334,11 @@ msgstr "הנוסחה ל־TypeInfoSettings שגויה!"
 
 #: source/resource/conn_shared_res.src#STR_STRING_LENGTH_EXCEEDED.String.Text
 msgid  "The string '$string$' exceeds the maximum length of $maxlen$ characters when converted to the target character set '$charset$'."
-msgstr ""
+msgstr "המחרוזת ‏‪'$string$'‬‏, המומרת לסדרת תוי היעד ‏‪'$charset$'‬‏, חורגת מהאורך המקסימלי של ‏‪$maxlen$‬‏"
 
 #: source/resource/conn_shared_res.src#STR_CANNOT_CONVERT_STRING.String.Text
 msgid  "The string '$string$' cannot be converted using the encoding '$charset$'."
-msgstr ""
+msgstr "לא ניתן להמיר את המחרוזת ‏‪'$string$'‬‏ ע\"י קידוד ‏‪'$charset'‬‏.‏"
 
 #: source/resource/conn_shared_res.src#STR_URI_SYNTAX_ERROR.String.Text
 msgid  "The connection URL is invalid."
@@ -341,11 +354,11 @@ msgstr "לא ניתן להריץ את השאילתה. האופרטור מורכ�
 
 #: source/resource/conn_shared_res.src#STR_QUERY_INVALID_LIKE_COLUMN.String.Text
 msgid  "The query can not be executed. You cannot use 'LIKE' with columns of this type."
-msgstr ""
+msgstr "לא ניתן להריץ את השאילתה. אי אפשר להשתמש ב- 'LIKE' עם עמודות מסוג זה."
 
 #: source/resource/conn_shared_res.src#STR_QUERY_INVALID_LIKE_STRING.String.Text
 msgid  "The query can not be executed. 'LIKE' can be used with a string argument only."
-msgstr ""
+msgstr "לא ניתן להריץ את השאילתה. ניתן להשתמש ב- 'LIKE' רק עם ארגומנט מסוג מחרוזת."
 
 #: source/resource/conn_shared_res.src#STR_QUERY_NOT_LIKE_TOO_COMPLEX.String.Text
 msgid  "The query can not be executed. The 'NOT LIKE' condition is too complex."
@@ -353,11 +366,11 @@ msgstr "לא ניתן להריץ את השאילתה. התנאי 'NOT LIKE' מו
 
 #: source/resource/conn_shared_res.src#STR_QUERY_LIKE_WILDCARD.String.Text
 msgid  "The query can not be executed. The 'LIKE' condition contains wildcard in the middle."
-msgstr ""
+msgstr "השאילתה לא יכולה להתבצע. התנאי 'LIKE' מכיל תו חופשי באמצע."
 
 #: source/resource/conn_shared_res.src#STR_QUERY_LIKE_WILDCARD_MANY.String.Text
 msgid  "The query can not be executed. The 'LIKE' condition contains too many wildcards."
-msgstr ""
+msgstr "השאילתה לא יכולה להתבצע. התנאי 'LIKE' מכיל יותר מדי תוים חופשיים."
 
 #: source/resource/conn_shared_res.src#STR_INVALID_COLUMNNAME.String.Text
 msgid  "The column name '$columnname$' is not valid."
@@ -377,7 +390,7 @@ msgstr "לא ניתן לטעון קובץ $filename$."
 
 #: source/resource/conn_shared_res.src#STR_LOAD_FILE_ERROR_MESSAGE.String.Text
 msgid  "The attempt to load the file resulted in the following error message ($exception_type$):\n\n$error_message$"
-msgstr ""
+msgstr "נסיון טעינת הקובץ הסתיימה בשגיאה הבאה ($exception_type$):\n\n$error_message$"
 
 #: source/resource/conn_shared_res.src#STR_TYPE_NOT_CONVERT.String.Text
 msgid  "The type could not be converted."
@@ -417,11 +430,11 @@ msgstr "לא ניתן ליצור תצוגה: אין אובייקט פקודה."
 
 #: source/resource/conn_shared_res.src#STR_NO_CONNECTION.String.Text
 msgid  "The connection could not be created. May be the necessary data provider is not installed."
-msgstr ""
+msgstr "לא ניתן ליצור את החיבור. יכול להיות שספק הנתונים הדרושים לא הותקן."
 
 #: source/resource/conn_shared_res.src#STR_COULD_NOT_DELETE_INDEX.String.Text
 msgid  "The index could not be deleted. An unknown error while accessing the file system occured."
-msgstr ""
+msgstr "לא יכול למחוק את האינדקס. התרחשה שגיאה לא מוכרת בעת גישה למערכת הקבצים."
 
 #: source/resource/conn_shared_res.src#STR_ONL_ONE_COLUMN_PER_INDEX.String.Text
 msgid  "The index could not be created. Only one column per index is allowed."
@@ -437,11 +450,11 @@ msgstr "לא ניתן ליצור את האינדקס. הופיעה שגיאה ל
 
 #: source/resource/conn_shared_res.src#STR_COULD_NOT_CREATE_INDEX_NAME.String.Text
 msgid  "The index could not be created. The file '$filename$' is used by an other index."
-msgstr ""
+msgstr "לא ניתן ליצור את האינדקס. הקובץ '$filename$' נמצא בשימוש על ידי אינדקס אחר."
 
 #: source/resource/conn_shared_res.src#STR_COULD_NOT_CREATE_INDEX_KEYSIZE.String.Text
 msgid  "The index could not be created. The size of the chosen column is to big."
-msgstr ""
+msgstr "לא ניתן ליצור את האינדקס. גודל העמודה שנבחרה גדול מדי."
 
 #: source/resource/conn_shared_res.src#STR_SQL_NAME_ERROR.String.Text
 msgid  "The name '$name$' doesn't match SQL naming constraints."
@@ -472,28 +485,28 @@ msgid  "Duplicate value found in column '$columnname$'."
 msgstr "נמצאו ערכים כפולים בעמודה '$columnname$'."
 
 #: source/resource/conn_shared_res.src#STR_INVALID_COLUMN_DECIMAL_VALUE.String.Text
-msgid  "The '$columnname$' column has been defined as a "Decimal" type, the max. length is $precision$ characters (with $scale$ decimal places).\n\nThe specified value "$value$ is longer than the number of digits allowed."
-msgstr ""
+msgid  "The '$columnname$' column has been defined as a \"Decimal\" type, the max. length is $precision$ characters (with $scale$ decimal places).\n\nThe specified value \"$value$ is longer than the number of digits allowed."
+msgstr "העמודה '$columnname$' הוגדר כנתונים מסוג \"עשרונים\", האורך המקסימלי הוא $precision$ תווים (עם $scale$ מקומות עשרונים).הערך שצוין \"$value$ הוא ארוך יותר ממספר הספרות שהותרו."
 
 #: source/resource/conn_shared_res.src#STR_COLUMN_NOT_ALTERABLE.String.Text
 msgid  "The column '$columnname$' could not be altered. May be the file system is write protected."
-msgstr ""
+msgstr "העמודה '$columnname$' לא ניתנת לשינוי. יכול להיות שמערכת הקבצים מוגנת מכתיבה."
 
 #: source/resource/conn_shared_res.src#STR_INVALID_COLUMN_VALUE.String.Text
 msgid  "The column '$columnname$' could not be updated. The value is invalid for that column."
-msgstr ""
+msgstr "העמודה '$columnname$' לא ניתנת לעדכון. הערך לא חוקי לעמודה זו."
 
 #: source/resource/conn_shared_res.src#STR_COLUMN_NOT_ADDABLE.String.Text
 msgid  "The column '$columnname$' could not be added. May be the file system is write protected."
-msgstr ""
+msgstr "לא יכול להוסיף את העמודה '$columnname$'. יכול להיות שמערכת הקבצים מוגנת מכתיבה."
 
 #: source/resource/conn_shared_res.src#STR_COLUMN_NOT_DROP.String.Text
 msgid  "The column at position '$position$' could not be dropped. May be the file system is write protected."
-msgstr ""
+msgstr "העמודה במיקום '$position$' לא ניתנת לשמיטה. יכול להיות שמערכת הקבצים מוגנת מכתיבה."
 
 #: source/resource/conn_shared_res.src#STR_TABLE_NOT_DROP.String.Text
 msgid  "The table '$tablename$' could not be dropped. May be the file system is write protected."
-msgstr ""
+msgstr "הטבלה '$position$' לא ניתנת לשמיטה. יכול להיות שמערכת הקבצים מוגנת מכתיבה."
 
 #: source/resource/conn_shared_res.src#STR_COULD_NOT_ALTER_TABLE.String.Text
 msgid  "The table could not be altered."
@@ -512,8 +525,8 @@ msgid  "Can only sort by table columns."
 msgstr "ניתן למיין רק לפי עמודות טבלה."
 
 #: source/resource/conn_shared_res.src#STR_QUERY_COMPLEX_COUNT.String.Text
-msgid  "The query can not be executed. It is too complex. Only "COUNT(*)" is supported."
-msgstr ""
+msgid  "The query can not be executed. It is too complex. Only \"COUNT(*)\" is supported."
+msgstr "השאילתה לא יכולה להתבצע. היא מורכבת מדי. רק \"COUNT(*)\" נתמכת."
 
 #: source/resource/conn_shared_res.src#STR_QUERY_INVALID_BETWEEN.String.Text
 msgid  "The query can not be executed. The 'BETWEEN' arguments are not correct."
@@ -528,8 +541,8 @@ msgid  "The table can not be changed. It is read only."
 msgstr "הטבלה לא ניתנת לשינוי. היא לקריאה בלבד."
 
 #: source/resource/conn_shared_res.src#STR_DELETE_ROW.String.Text
-msgid  "The row could not be deleted. The option "Display inactive records" is set."
-msgstr ""
+msgid  "The row could not be deleted. The option \"Display inactive records\" is set."
+msgstr "השורה לא יכולה להימחק. נבחרה אפשרות \"הצג רשומות לא פעילות\"."
 
 #: source/resource/conn_shared_res.src#STR_ROW_ALREADY_DELETED.String.Text
 msgid  "The row could not be deleted. It is already deleted."
@@ -589,15 +602,15 @@ msgstr "לא נמצאה התקנה תואמת KDE."
 
 #: source/resource/conn_shared_res.src#STR_KDE_VERSION_TOO_OLD.String.Text
 msgid  "KDE version $major$.$minor$ or higher is required to access the KDE Address Book."
-msgstr ""
+msgstr "עבור גישה לפנקס הכתובות של KDE, דרוש גירסת KDE  $major$.$minor$ ומעלה."
 
 #: source/resource/conn_shared_res.src#STR_KDE_VERSION_TOO_NEW.String.Text
 msgid  "The found KDE version is too new. Only KDE up to version $major$.$minor$ is known to work with this product.\n"
-msgstr ""
+msgstr "גירסת ה- KDE שזוהתה היא חדשה מדי. מוצר זה מסוגל לעבוד רק עם KDE עד גירסה $major$.$minor$.\n"
 
 #: source/resource/conn_shared_res.src#STR_KDE_VERSION_TOO_NEW_WORK_AROUND.String.Text
 msgid  "If you are sure that your KDE version works, you might execute the following Basic macro to disable this version check:\n\n"
-msgstr ""
+msgstr "אם הינך בטוח שגירסת ה- KDE שלך תואמת, תוכל להריץ את המאקרו הבסיסי הבא לביטול בדיקת הגירסה:\n\n"
 
 #: source/resource/conn_shared_res.src#STR_PARA_ONLY_PREPARED.String.Text
 msgid  "Parameters can appear only in prepared statements."
@@ -613,19 +626,19 @@ msgstr "לא נמצא התקנה תואמת עבור מערכת הפעלה Mac."
 
 #: source/resource/conn_shared_res.src#STR_NO_DISK_SPACE.String.Text
 msgid  "The database file '$filename$' could not be created. Please check your disk space."
-msgstr ""
+msgstr "לא ניתן ליצור את קובץ מסד הנתונים '$filename$'. אנא בדוק את שטח הדיסק."
 
 #: source/resource/conn_shared_res.src#STR_COMMAND_NOT_FOUND.String.Text
 msgid  "The database '$databasename$' could not be started because the command '$progname$' could not be executed."
-msgstr ""
+msgstr "לא ניתן להפעיל את מסד הנתונים '$databasename$' בגלל שהפקודה '$progname$' לא ניתן לביצוע."
 
 #: source/resource/conn_shared_res.src#STR_DATABASE_NEEDS_CONVERTING.String.Text
 msgid  "The current database need to be converted. Please insert control user  and password."
-msgstr ""
+msgstr "דרושה המרה למסד הנתונים הנוכחי. אנא הכנס את פרטי שם המשתמש וסיסמה."
 
 #: source/resource/conn_shared_res.src#STR_USER_NO_DELETE.String.Text
 msgid  "This user couldn't be deleted. Otherwise the database stays in a inconsistent state."
-msgstr ""
+msgstr "לא ניתן למחוק את המשתמש הזה. אחרת מסד הנתונים ישאר במצב לא עקבי."
 
 #: source/resource/conn_shared_res.src#STR_NO_STROAGE.String.Text
 msgid  "The connection can not be established. No storage or URL was given."
@@ -633,7 +646,7 @@ msgstr "לא ניתן ליצור את החיבור. לא צוין מיקום א�
 
 #: source/resource/conn_shared_res.src#STR_INVALID_FILE_URL.String.Text
 msgid  "The given URL contains no valid local file system path. Please check the location of your database file."
-msgstr ""
+msgstr "כתובת ה- URL שצוינה לא מכילה נתיב חוקי במערכת הקבצים. אנא בדוק את המיקום של קובץ מסד הנתונים."
 
 #: source/resource/conn_shared_res.src#STR_NO_TABLE_CONTAINER.String.Text
 msgid  "An error occured while obtaining the connection's table container."
@@ -686,15 +699,3 @@ msgstr "$1$ לא קיים."
 #: source/resource/conn_error_message.src#256 + 2*550 + 0.String.Text
 msgid  "Unable to display the complete table content. Please apply a filter."
 msgstr "אין אפשרות להציג את כל תוכן הטבלה, יש להחיל פילטר."
-
-#: source/drivers/mozab/mozab2.xcu#.Drivers.Installed.sdbc:address:mozilla:.DriverTypeDisplayName
-msgid  "SeaMonkey Address Book"
-msgstr "פנקס הכתובות של SeaMonkey"
-
-#: source/drivers/mozab/mozab2.xcu#.Drivers.Installed.sdbc:address:thunderbird:.DriverTypeDisplayName
-msgid  "Thunderbird Address Book"
-msgstr "פנקס הכתובות של Thunderbird"
-
-#: source/drivers/mozab/mozab2.xcu#.Drivers.Installed.sdbc:address:ldap:*.DriverTypeDisplayName
-msgid  "LDAP Address Book"
-msgstr "פנקס הכתובות של LDAP"

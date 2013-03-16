@@ -33,7 +33,7 @@ msgstr ""
 
 #: source/component/warnbox.src#RID_XMLSECWB_NO_MOZILLA_PROFILE.WarningBox.Message
 msgid  "Digital signatures functionality could not be used, because no Mozilla user profile was found. Please check the Mozilla installation."
-msgstr ""
+msgstr "A digitális aláírás funkció nem használható, mert nem található a rendszeren a felhasználóhoz tartozó Mozilla-profil. Ellenőrizze a Mozilla-telepítést."
 
 #: source/dialogs/macrosecurity.src#RID_XMLSECTP_MACROSEC.TabDialog.Text
 msgid  "Macro Security"
@@ -53,19 +53,19 @@ msgstr "Alapállapot"
 
 #: source/dialogs/macrosecurity.src#RID_XMLSECTP_SECLEVEL.RB_VERYHIGH.RadioButton.Text
 msgid  "~Very high.\nOnly macros from trusted file locations are allowed to run. All other macros, regardless whether signed or not, are disabled."
-msgstr ""
+msgstr "~Nagyon magas.\nCsak megbízható fájlelérési útvonalakról származó makrók futhatnak. Az összes többi makró tiltva van, akár alá vannak írva, akár nem."
 
 #: source/dialogs/macrosecurity.src#RID_XMLSECTP_SECLEVEL.RB_HIGH.RadioButton.Text
 msgid  "H~igh.\nOnly signed macros from trusted sources are allowed to run. Unsigned macros are disabled."
-msgstr ""
+msgstr "~Magas.\nCsak a megbízható forrásból származó, aláírt makrók futhatnak. Az aláírással nem rendelkező makrók tiltva vannak."
 
 #: source/dialogs/macrosecurity.src#RID_XMLSECTP_SECLEVEL.RB_MEDIUM.RadioButton.Text
 msgid  "~Medium.\nConfirmation required before executing macros from untrusted sources."
-msgstr ""
+msgstr "~Közepes.\nA nem megbízható forrásból származó makrók végrehajtása előtt párbeszédablak jelenik meg, amelyen engedélyezni, illetve tiltani lehet a makró futását."
 
 #: source/dialogs/macrosecurity.src#RID_XMLSECTP_SECLEVEL.RB_LOW.RadioButton.Text
 msgid  "~Low (not recommended).\nAll macros will be executed without confirmation. Use this setting only if you are certain that all documents that will be opened are safe."
-msgstr ""
+msgstr "~Alacsony (nem javasolt).\nA makrók minden kérdés nélkül futhatnak. Csak akkor válassza ezt a beállítást, ha minden megnyitandó dokumentum garantáltan biztonságos."
 
 #: source/dialogs/macrosecurity.src#RID_XMLSECTP_TRUSTSOURCES.FL_TRUSTCERT.FixedLine.Text
 msgid  "Trusted certificates"
@@ -93,7 +93,7 @@ msgstr "Megbízható fájlelérési útvonalak"
 
 #: source/dialogs/macrosecurity.src#RID_XMLSECTP_TRUSTSOURCES.FI_TRUSTFILELOC.FixedText.Text
 msgid  "Document macros are always executed if they have been opened from one of the following locations."
-msgstr ""
+msgstr "A dokumentum makrói mindig futtathatók, ha a következő helyek egyikéről nyitják meg a dokumentumot."
 
 #: source/dialogs/macrosecurity.src#RID_XMLSECTP_TRUSTSOURCES.FL_ADD_TRUSTFILELOC.PushButton.Text
 msgid  "Add..."
@@ -125,7 +125,7 @@ msgstr "Aláírások megtekintése..."
 
 #: source/dialogs/warnings.src#RID_XMLSECTP_MACROWARN.FI_DESCR2.FixedText.Text
 msgid  "Macros may contain viruses. Disabling macros for a document is always save. If you disable macros you may lose functionality provided by the document macros."
-msgstr ""
+msgstr "A makrók vírusokat tartalmazhatnak. A dokumentum makróinak letiltása mindig biztonságos. Ha viszont letiltja a makrókat, az általuk nyújtott funkcionalitás elvész."
 
 #: source/dialogs/warnings.src#RID_XMLSECTP_MACROWARN.CB_ALWAYSTRUST.CheckBox.Text
 msgid  "Always trust macros from this source"
@@ -205,7 +205,7 @@ msgstr ""
 
 #: source/dialogs/digitalsignaturesdialog.src#MSG_XMLSECDLG_QUERY_REMOVEDOCSIGNBEFORESIGN.QueryBox.Message
 msgid  "Adding or removing a macro signature will remove all document signatures.\nDo you really want to continue?"
-msgstr ""
+msgstr "Makróaláírások hozzáadása és eltávolítása eltávolítja az összes dokumentum-aláírást.\nFolytatja?"
 
 #: source/dialogs/certificateviewer.src#RID_XMLSECDLG_CERTVIEWER.TabDialog.Text
 msgid  "View Certificate"
@@ -245,7 +245,7 @@ msgstr "Érvényes: %SDATE% - %EDATE%"
 
 #: source/dialogs/certificateviewer.src#RID_XMLSECTP_GENERAL.FI_CORRPRIVKEY.FixedText.Text
 msgid  "You have a private key that corresponds to this certificate."
-msgstr ""
+msgstr "Önnek van olyan személyes kulcsa, amely ennek a tanúsítványnak felel meg."
 
 #: source/dialogs/certificateviewer.src#RID_XMLSECTP_GENERAL.STR_CERTIFICATE_NOT_VALIDATED.String.Text
 msgid  "The certificate could not be validated."

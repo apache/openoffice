@@ -93,7 +93,7 @@ msgstr "Dokumento uzata"
 
 #: source/trylater.src#STR_TRYLATER_MSG.String.Text
 msgid  "Document file '$(ARG1)' is locked for editing by:\n\n$(ARG2)\n\nTry again later to save document or save a copy of that document.\n\n"
-msgstr ""
+msgstr "Dokumenta dosiero '$(ARG1)' estas ŝlosita por redakti de:\n\n$(ARG2)\n\nReprovu poste konservi dokumenton aŭ konservi kopion de tiu dokumento.\n\n"
 
 #: source/trylater.src#STR_TRYLATER_RETRYSAVING_BTN.String.Text
 msgid  "~Retry Saving"
@@ -137,7 +137,7 @@ msgstr "Celo jam ekzistas."
 
 #: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_IO_MODULESIZEEXCEEDED & ERRCODE_RES_MASK).String.Text
 msgid  "You are about to save/export a password protected basic library containing module(s) \n$(ARG1)\nwhich are too large to store in binary format. If you wish users that don't have access to the library password to be able to run macros in those module(s) you must split those modules into a number of smaller modules. Do you wish to continue to save/export this library?"
-msgstr ""
+msgstr "Vi estas konservonta/eksportonta pasvorte protektitan Basic-bibliotekton enhavantan unu aŭ pli modulojn \n$(ARG1)\nkiuj estas tro grandaj por konservi en duuma formato. Se vi deziras ke uzantoj sen aliro al la biblioteka pasvorto kapablas ruli makroojn en tiuj moduloj, vi dividu tiujn modulojn en kelkajn pli malgrandajn modulojn. Ĉu vi deziras daŭrigi konservi/eksporti ĉi tiun bibliotekon?"
 
 #: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_IO_BADCRC & ERRCODE_RES_MASK).String.Text
 msgid  "The data from $(ARG1) has an incorrect checksum."
@@ -241,11 +241,11 @@ msgstr "Ne plu estas loko sur la aparato $(ARG1)."
 
 #: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_IO_TOOMANYOPENFILES & ERRCODE_RES_MASK).String.Text
 msgid  "The operation on $(ARG1) cannot be performed because too many files are already open."
-msgstr ""
+msgstr "La operacio pri $(ARG1) ne plenumeblas ĉar tro multaj dosieroj jam estas malfermitaj."
 
 #: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_IO_OUTOFMEMORY & ERRCODE_RES_MASK).String.Text
 msgid  "The operation on $(ARG1) cannot be performed because there is no more memory available."
-msgstr ""
+msgstr "La operacio pri $(ARG1) ne plenumeblas ĉar ne pli da memoro disponeblas."
 
 #: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_IO_PENDING & ERRCODE_RES_MASK).String.Text
 msgid  "The operation on $(ARG1) cannot continue because more data is pending."
@@ -289,11 +289,11 @@ msgstr "La instalita versio de Ĝavo $(ARG1) ne estas subtenata."
 
 #: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_WRONGJAVA_MIN & ERRCODE_RES_MASK).String.Text
 msgid  "The installed Java version is not supported, at least version $(ARG1) is required."
-msgstr ""
+msgstr "La instalita ĝava versio ne estas subtenata, almenaŭ versio $(ARG1) estas bezonata."
 
 #: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_WRONGJAVA_VERSION_MIN & ERRCODE_RES_MASK).String.Text
 msgid  "The installed Java version $(ARG1) is not supported, at least version $(ARG2) is required."
-msgstr ""
+msgstr "La instalita ĝava versio $(ARG1) ne estas subtenata, almenaŭ versio $(ARG2) estas bezonata."
 
 #: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_BADPARTNERSHIP & ERRCODE_RES_MASK).String.Text
 msgid  "The data associated with the partnership is corrupted."
@@ -325,31 +325,31 @@ msgstr "La objekto ne povas esti kreita en la dosierujo $(ARG1)."
 
 #: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_IO_UNSUPPORTEDOVERWRITE & ERRCODE_RES_MASK).String.Text
 msgid  "%PRODUCTNAME cannot keep files from being overwritten when this transmission protocol is used. Do you want to continue anyway?"
-msgstr ""
+msgstr "%PRODUCTNAME ne povas malebligi anstataŭigon de dosieroj dum tiu transira protokolo uzatas. Ĉu tamen vi volas daŭrigi?"
 
 #: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_IO_BROKENPACKAGE & ERRCODE_RES_MASK).String.Text
 msgid  "The file '$(ARG1)' is corrupt and therefore cannot be opened. %PRODUCTNAME can try to repair the file.\n\nThe corruption could be the result of document manipulation or of structural document damage due to data transmission.\n\nWe recommend that you do not trust the content of the repaired document.\nExecution of macros is disabled for this document.\n\nShould %PRODUCTNAME repair the file?\n"
-msgstr ""
+msgstr "La dosiero '$(ARG1)' estas difektita. Tial ne eblas malfermi ĝin. %PRODUCTNAME povas provi ripari la dosieron.\n\nLa difekto eble estas la rezulto de modifo de la dokumento aŭ de struktura damaĝo dum transsendado.\n\nNi rekomendas ke vi ne fidu la enhavon de la riparita dokumento.\nRuli makroojn estas malŝaltita por ĉi tiu dokumento.\n\nĈu %PRODUCTNAME riparu la dosieron?\n"
 
 #: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_IO_BROKENPACKAGE_CANTREPAIR & ERRCODE_RES_MASK).String.Text
 msgid  "The file '$(ARG1)' could not be repaired and therefore cannot be opened."
-msgstr ""
+msgstr "La dosiero '$(ARG1)' ne povas esti riparita kaj do ne estas malfermebla."
 
 #: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_CONFIGURATION_BROKENDATA_NOREMOVE & ERRCODE_RES_MASK).String.Text
 msgid  "Configuration data in '$(ARG1)' is corrupted. Without this data some functions may not operate correctly.\nDo you want to continue startup of %PRODUCTNAME without the corrupted configuration data?"
-msgstr ""
+msgstr "La agordaj datumoj em '$(ARG1)' estas difektitaj. Sen tiuj datumoj iuj funkcioj eble ne ĝuste funkcios.\nĈu vi volas daŭrigi startigon de %PRODUCTNAME sen la difektitaj agordaj datumoj?"
 
 #: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_CONFIGURATION_BROKENDATA_WITHREMOVE & ERRCODE_RES_MASK).String.Text
 msgid  "The personal configuration file '$(ARG1)' is corrupted and must be deleted to continue. Some of your personal settings may be lost.\nDo you want to continue startup of %PRODUCTNAME without the corrupted configuration data?"
-msgstr ""
+msgstr "La persona agorda dosiero '$(ARG1)' estas difektita kaj vi devas forigi ĝin por daŭrigi. Iuj viaj personaj agordoj eble perdiĝos.\nĈu vi volas daŭrigi startigon de %PRODUCTNAME sen la difektitaj agordaj datumoj?"
 
 #: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_CONFIGURATION_BACKENDMISSING & ERRCODE_RES_MASK).String.Text
 msgid  "The configuration data source '$(ARG1)' is unavailable. Without this data some functions may not operate correctly."
-msgstr ""
+msgstr "La agorda datumfonto '$(ARG1)' estas nealirebla. Sen ties datumoj iuj funkcioj eble ne ĝuste funkcios."
 
 #: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_CONFIGURATION_BACKENDMISSING_WITHRECOVER & ERRCODE_RES_MASK).String.Text
 msgid  "The configuration data source '$(ARG1)' is unavailable. Without this data some functions may not operate correctly.\nDo you want to continue startup of %PRODUCTNAME without the missing configuration data?"
-msgstr ""
+msgstr "La agorda datumfonto '$(ARG1)' estas nealirebla. Sen ties datumoj iuj funkcioj eble ne ĝuste funkcios.\nĈu vi volas daŭrigi startigon de %PRODUCTNAME sen la mankantaj agordaj datumoj?"
 
 #: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_INVALID_XFORMS_SUBMISSION_DATA & ERRCODE_RES_MASK).STRING.Text
 msgid  "The form contains invalid data. Do you still want to continue?"
@@ -373,19 +373,19 @@ msgstr ""
 
 #: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_UNKNOWNAUTH_UNTRUSTED).STRING.Text
 msgid  "Unable to verify the identity of $(ARG1) site.\n\nBefore accepting this certificate, you should examine this site's certificate carefully. Are you willing to accept this certificate for the purpose of identifying the Web site $(ARG1)?"
-msgstr ""
+msgstr "Ne eblas verigi la identecon de retejo $(ARG1).\n\nAntaŭ ol akcepti tiun atestilon, vi devus zorge rigardi la atestilon de ĉi tiu retejo. Ĉu vi volontas akcepti la atestilon cele al indentigi la retejon $(ARG1)?"
 
 #: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_SSLWARN_EXPIRED_1).STRING.Text
 msgid  "$(ARG1) is a site that uses a security certificate to encrypt data during transmission, but its certificate expired on $(ARG2).\n\nYou should check to make sure that your computer's time is correct."
-msgstr ""
+msgstr "$(ARG1) estas retejo kiu uzas atestilon por ĉifri datumojn dum transigado, sed ĝia atestilo eksvalidiĝis je $(ARG2).\n\nKontrolu ke la horo de la horloĝo de via komputilo estas prava."
 
 #: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_SSLWARN_DOMAINMISMATCH_1).STRING.Text
 msgid  "You have attempted to establish a connection with $(ARG1). However, the security certificate presented belongs to $(ARG2). It is possible, though unlikely, that someone may be trying to intercept your communication with this web site.\n\nIf you suspect the certificate shown does not belong to $(ARG1), please cancel the connection and notify the site administrator.\n\nWould you like to continue anyway?"
-msgstr ""
+msgstr "Vi provis konekti al $(ARG1). Tamen, la sendita sekureca atestilo apartenas al $(ARG2). Eblas, kvankam neprobable, ke iu provas kapti komunikadon kun tiu retejo.\n\nSe vi suspektas ke la atestilo montrita ne apartenas al $(ARG1), bonvolu nuligi la konekton kaj informi la administranton de la retejo.\n\nĈu vi volas daŭrigi malgraŭe?"
 
 #: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_SSLWARN_INVALID_1).STRING.Text
 msgid  "The certificate could not be validated. You should examine this site's certificate carefully.\n\nIf you suspect the certificate shown, please cancel the connection and notify the site administrator."
-msgstr ""
+msgstr "Ne eblas validigi la atestilon. Vi devus zorge rigardi la atestilon de ĉi tiu retejo.\n\nSe vi suspektas la montritan atestilon, bonvolu nuligi la konekton kaj informi la administranton de la retejo."
 
 #: source/ids.src#RID_UUI_ERRHDL.(TITLE_UUI_SSLWARN_DOMAINMISMATCH).STRING.Text
 msgid  "Security Warning: Domain Name Mismatch"
@@ -416,8 +416,8 @@ msgid  "Enter user name and password for: \n%1"
 msgstr ""
 
 #: source/logindlg.src#DLG_UUI_LOGIN.STR_LOGIN_REALM.String.Text
-msgid  "Enter user name and password for: \n"%2" on %1"
-msgstr ""
+msgid  "Enter user name and password for: \n\"%2\" on %1"
+msgstr "Bonvolu entajpi uzantnomon kaj pasvorton por \"%2\" en %1."
 
 #: source/logindlg.src#DLG_UUI_LOGIN.FT_LOGIN_PATH.FixedText.Text
 msgid  "~Path"
@@ -469,7 +469,7 @@ msgstr "Sendi"
 
 #: source/cookiedg.src#STR_COOKIES_RECV_START.String.Text
 msgid  "The '${HOST}' server wishes to set one or more cookies.\nCookies contain information referring to certain URL classes. If %PRODUCTNAME later requests a document with a URL corresponding to the class of a previously set cookie, %PRODUCTNAME will send this information to the server. This allows a server to recognize the status of a WWW application, e.g., when shopping online.\n\nThe following Cookies should be set:\n\n"
-msgstr ""
+msgstr "La servilo '${HOST}' volas agordi almenaŭ unu kuketon.\nKuketoj enhavas informon kiu referas al specifaj URL-klasoj. Se %PRODUCTNAME poste petas dokumenton kun URL kiu rilatas al la klaso de antaŭe agordita kuketo, %PRODUCTNAME sendos tiun informon al la servilo. Tio ebligas al servilo rekoni la staton de TTT-aplikaĵo, ekzemple kiam oni butikumas Interrete.\n\nLa jenaj kuketoj devus esti agorditaj:\n\n"
 
 #: source/cookiedg.src#STR_COOKIES_RECV_COOKIES.String.Text
 msgid  "Domain: ${DOMAIN}, Path: ${PATH}, Cookie: ${COOKIE}.\n"
@@ -481,7 +481,7 @@ msgstr "Ricevo de kuketo"
 
 #: source/cookiedg.src#STR_COOKIES_SEND_START.String.Text
 msgid  "%PRODUCTNAME has saved cookies for the server '${HOST}' which will be sent when requesting the document ${PATH}.\nCookies contain information which refers to certain URL classes. They are sent by some servers to %PRODUCTNAME where they are saved when certain documents are accessed. If %PRODUCTNAME loads a document that, according to the URL, corresponds to a class of one of the previously received Cookies, %PRODUCTNAME will send this information to that server. This enables a server to keep track of the status of a WWW application, e.g., when shopping online.\n\nThe following Cookies should be set:\n\n"
-msgstr ""
+msgstr "%PRODUCTNAME konservis kuketojn por servilo '${HOST}' kiuj estos senditaj kiam petante la dokumenton ${PATH}.\nKuketoj enhavas informon kiu rilatas al specifaj URL-klasoj. Iuj serviloj sendas ilin al %PRODUCTNAME kie ili konserviĝas kiam specifaj dokumentoj estas alirataj. Se %PRODUCTNAME ŝargas dokumenton kiu, laŭ la URL, rilatas al klaso de iu antaŭe ricevita kuketo, %PRODUCTNAME sendos tiun informon al tiu servilo. Tio ebligas al servilo spuri la staton de TTT-aplikaĵo, ekzemple kiam butikumante Interrete.\n\nLa jenaj kuketoj devus esti agorditaj:\n\n"
 
 #: source/cookiedg.src#STR_COOKIES_SEND_COOKIES.String.Text
 msgid  "Domain: ${DOMAIN}, Path: ${PATH}, Cookie: ${COOKIE}.\n"
@@ -501,7 +501,7 @@ msgstr ""
 
 #: source/passworderrs.src#STR_ERROR_MASTERPASSWORD_WRONG.String.Text
 msgid  "The master password is incorrect."
-msgstr ""
+msgstr "Malĝusta pasvorto estas enigita. %PRODUCTNAME ne povas aliri retan salutan informon protektitan de Ĉefa Pasvorto.\n\nNotu: Pasvortoj estas usklodistingaj kaj longas almenaŭ kvin signoj."
 
 #: source/passworderrs.src#STR_ERROR_SIMPLE_PASSWORD_WRONG.String.Text
 msgid  "The password is incorrect."
@@ -529,7 +529,7 @@ msgstr "Dokumento uzata"
 
 #: source/openlocked.src#STR_OPENLOCKED_MSG.String.Text
 msgid  "Document file '$(ARG1)' is locked for editing by:\n\n$(ARG2)\n\nOpen document read-only or open a copy of the document for editing.\n\n"
-msgstr ""
+msgstr "Dokumenta dosiero '$(ARG1)' estas ŝlosita por redakti de:\n\n$(ARG2)\n\nMalfermu la dokumenton nur-lege aŭ kopiu la dokumenton por redakti.\n\n"
 
 #: source/openlocked.src#STR_OPENLOCKED_OPENREADONLY_BTN.String.Text
 msgid  "Open ~Read-Only"
@@ -549,7 +549,7 @@ msgstr ""
 
 #: source/filechanged.src#STR_FILECHANGED_MSG.String.Text
 msgid  "The file has been changed since it was opened for editing in %PRODUCTNAME. Saving your version of the document will overwrite changes made by others.\n\nDo you want to save anyway?\n\n"
-msgstr ""
+msgstr "Iu ŝanĝis la dosieron post malfermi ĝin por redakti en %PRODUCTNAME. Konservi vian version de la dokumento anstataŭigos ŝanĝojn faritajn de aliaj.\n\nĈu vi volas konservi malgraŭe?\n\n"
 
 #: source/filechanged.src#STR_FILECHANGED_SAVEANYWAY_BTN.String.Text
 msgid  "~Save Anyway"
@@ -561,7 +561,7 @@ msgstr "%PRODUCTNAME-aktualigo disponeblas"
 
 #: source/newerverwarn.src#RID_DLG_NEWER_VERSION_WARNING.FT_INFO.FixedText.Text
 msgid  "This document was created by a newer version of %PRODUCTNAME. It may contain features not supported by your current version.\n\nClick 'Update Now...' to run online update and get the latest version of %PRODUCTNAME."
-msgstr ""
+msgstr "Ĉi tiun dokumenton kreis nova versio de %PRODUCTNAME. Eble ĝi enhavas eblojn nesubtenatajn de la versio uzata de vi .\n\nAlklaku je 'Aktualigi nun...' por ruli konektite aktualigon kaj akiri la plej lastan version de %PRODUCTNAME."
 
 #: source/newerverwarn.src#RID_DLG_NEWER_VERSION_WARNING.PB_UPDATE.PushButton.Text
 msgid  "~Update Now..."
@@ -609,7 +609,7 @@ msgstr "Vidigi subskribojn..."
 
 #: source/secmacrowarnings.src#RID_XMLSECDLG_MACROWARN.FI_DESCR2.FixedText.Text
 msgid  "Macros may contain viruses. Disabling macros for a document is always safe. If you disable macros you may lose functionality provided by the document macros."
-msgstr ""
+msgstr "Makrooj povas enhavi virusojn. Malŝalti makroojn por dokumento ĉiam estas sekure. Se vi malŝaltas makroojn vi eble perdos funkcion provizita de la makrooj."
 
 #: source/secmacrowarnings.src#RID_XMLSECDLG_MACROWARN.CB_ALWAYSTRUST.CheckBox.Text
 msgid  "Always trust macros from this source"
@@ -637,7 +637,7 @@ msgstr "Agordi ĉefan pasvorton"
 
 #: source/masterpasscrtdlg.src#DLG_UUI_MASTERPASSWORD_CRT.FT_INFOTEXT.FixedText.Text
 msgid  "Passwords for web connections are protected by a master password. You will be asked to enter it once per session, if %PRODUCTNAME retrieves a password from the protected password list."
-msgstr ""
+msgstr "Pasvortojn por retaj konektoj protektas ĉefa pasvorto. La sistemo invitos vin enigi ĝin unufoje en ĉiu seanco, se %PRODUCTNAME trovas pasvorton el la protektita pasvorta listo."
 
 #: source/masterpasscrtdlg.src#DLG_UUI_MASTERPASSWORD_CRT.FT_MASTERPASSWORD_CRT.FixedText.Text
 msgid  "~Enter password"
@@ -649,11 +649,11 @@ msgstr "Retajpu pasvorton"
 
 #: source/masterpasscrtdlg.src#DLG_UUI_MASTERPASSWORD_CRT.FT_CAUTIONTEXT.FixedText.Text
 msgid  "Caution: If you forget the master password, you will be unable to access any of the information protected by it. Passwords are case-sensitive."
-msgstr ""
+msgstr "Averto: certigu ke vi memoras la Ĉefan Pasvorton kiun vi agordis. Se vi forgesos vian Ĉefan Pasvorton, vi ne povos aliri ajnan informon protektita de ĝi. Pasvortoj estas usklodistingaj kaj almenaŭ kvinsignaj."
 
 #: source/alreadyopen.src#STR_ALREADYOPEN_MSG.String.Text
 msgid  "Document file '$(ARG1)' is locked for editing by yourself on a different system since $(ARG2)\n\nOpen document read-only, or ignore own file locking and open the document for editing.\n\n"
-msgstr ""
+msgstr "Dokumenta dosiero '$(ARG1)' estas ŝlosita por redaktado de vi ĉe alia sistemo ek de $(ARG2)\n\nMalfermu dokumenton nur-lege, aŭ ignoru propran dosieran ŝlosadon kaj malfermu la dokumenton por redakti.\n\n"
 
 #: source/alreadyopen.src#STR_ALREADYOPEN_READONLY_BTN.String.Text
 msgid  "Open ~Read-Only"
@@ -665,7 +665,7 @@ msgstr "Malfermi"
 
 #: source/alreadyopen.src#STR_ALREADYOPEN_SAVE_MSG.String.Text
 msgid  "Document file '$(ARG1)' is locked for editing by yourself on a different system since $(ARG2)\n\nClose document on other system and retry saving or ignore own file locking and save current document.\n\n"
-msgstr ""
+msgstr "Dokumenta dosiero '$(ARG1)' estas ŝlosita por redaktado de vi ĉe alia sistemo ek de $(ARG2)\n\nMalfermu la dokumenton ĉe la alia sistemo kaj reprovu konservi aŭ ignoru propran dosieran ŝlosadon kaj konservu la aktualan dokumenton.\n\n"
 
 #: source/alreadyopen.src#STR_ALREADYOPEN_RETRY_SAVE_BTN.String.Text
 msgid  "~Retry Saving"
@@ -677,4 +677,4 @@ msgstr "Konservi"
 
 #: source/lockfailed.src#STR_LOCKFAILED_MSG.String.Text
 msgid  "The file could not be locked for exclusive access by %PRODUCTNAME, due to missing permission to create a lock file on that file location."
-msgstr ""
+msgstr "Ne eblas ŝlosi la dosieron por ekskluziva aliro de %PRODUCTNAME, ĉar mankas permeso krei ŝlosan dosieron ĉe tiu loko."

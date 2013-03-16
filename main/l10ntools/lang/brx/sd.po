@@ -129,7 +129,7 @@ msgstr "बिमुं दाजाब देरनो क्लिक खा�
 
 #: source/core/glob.src#STR_PRESOBJ_OUTLINE.String.Text
 msgid  "Click to add text"
-msgstr "फराय बिजाब दाजाबनो क्लिक खालाम"
+msgstr "मोनसे सिमाहांखो दाजाब देरनो क्लिक खालाम"
 
 #: source/core/glob.src#STR_PRESOBJ_TEXT.String.Text
 msgid  "Click to add text"
@@ -217,7 +217,7 @@ msgstr "स्लाइड्स लोरिनाय"
 
 #: source/core/glob.src#STR_NOT_ENOUGH_MEMORY.String.Text
 msgid  "Not enough memory!\nThe action will be aborted."
-msgstr ""
+msgstr "थोजासे नङै मेमरी!\nजाथायखो खाथि खाथि खालाम."
 
 #: source/core/glob.src#STR_POOLSHEET_MEASURE.String.Text
 msgid  "Dimension Line"
@@ -341,11 +341,11 @@ msgstr " $(ARG1)(row,col) आव फाइल दानाय गोरोन्
 
 #: source/core/glob.src#RID_SD_ERRHDL.ERR_CODE ( ERRCODE_CLASS_READ , ERR_FORMAT_FILE_ROWCOL ).String.Text
 msgid  "Format error discovered in the file in sub-document $(ARG1) at position $(ARG2)(row,col)."
-msgstr ""
+msgstr "$(ARG2)(row,col) थासारियाव$(ARG1) दालाय फोरमान बिलाय फाइल गोरोन्थि दानाय (बानायनाय)मोननाय. "
 
 #: source/core/glob.src#RID_SD_ERRHDL.ERR_CODE ( ERRCODE_CLASS_READ , WARN_FORMAT_FILE_ROWCOL ).String.Text
 msgid  "Format error discovered in the file in sub-document $(ARG1) at position $(ARG2)(row,col)."
-msgstr ""
+msgstr "$(ARG2)(row,col) थासारियाव$(ARG1) दालाय फोरमान बिलाय फाइल गोरोन्थि दानाय (बानायनाय)मोननाय. "
 
 #: source/core/glob.src#STR_3DOBJECTBARSHELL.String.Text
 msgid  "3-D Settings"
@@ -645,7 +645,7 @@ msgstr "बायजोनि सिमा नुथाय"
 
 #: source/ui/accessibility/accessibility.src#SID_SD_A11Y_I_OUTLINEVIEW_D.String.Text
 msgid  "This is where you enter or edit text in list form."
-msgstr ""
+msgstr "बेनो बे जायगा जेराव नोंथाङा फाराय बिजाबखौ फारिलाइ महरै सोसननो एबा सुजुयो।"
 
 #: source/ui/accessibility/accessibility.src#SID_SD_A11Y_I_SLIDEVIEW_N.String.Text
 msgid  "Slides View"
@@ -1225,7 +1225,7 @@ msgstr "ट्रिग्गार"
 
 #: source/ui/animations/CustomAnimation.src#STR_CUSTOMANIMATION_LIST_HELPTEXT.String.Text
 msgid  "First select the slide element and then click 'Add...' to add an animation effect."
-msgstr ""
+msgstr "गिबियाव स्लाइड गुदि मुवा सायख आरो बेनि उनाव मोनसे जिउगोनां जाउन दाजाबनो 'Add...' आव क्लिक खालाम।"
 
 #: source/ui/animations/SlideTransitionPane.src#DLG_SLIDE_TRANSITION_PANE.Control.Text
 msgid  "Slide Transition"
@@ -1428,7 +1428,7 @@ msgid  "~Table..."
 msgstr ""
 
 #: source/ui/app/popup2_tmpl.src#RID_GRAPHIC_TABLE_POPUP.DUMMY.MenuItem.Text
-msgid  "Colu~mn"
+msgid  "~Cell"
 msgstr ""
 
 #: source/ui/app/popup2_tmpl.src#RID_GRAPHIC_TABLE_POPUP.DUMMY.SID_TABLE_MERGE_CELLS.MenuItem.Text
@@ -1451,6 +1451,10 @@ msgstr "~मिरु"
 msgid  "~Bottom"
 msgstr "~सिंथार"
 
+#: source/ui/app/popup2_tmpl.src#RID_GRAPHIC_TABLE_POPUP.DUMMY.MenuItem.Text
+msgid  "~Row"
+msgstr ""
+
 #: source/ui/app/popup2_tmpl.src#RID_GRAPHIC_TABLE_POPUP.DUMMY.SID_TABLE_DISTRIBUTE_ROWS.MenuItem.Text
 msgid  "Space ~Equally"
 msgstr ""
@@ -1467,6 +1471,10 @@ msgstr ""
 msgid  "~Delete"
 msgstr "~हुखुमोरनाय"
 
+#: source/ui/app/popup2_tmpl.src#RID_GRAPHIC_TABLE_POPUP.DUMMY.MenuItem.Text
+msgid  "Colu~mn"
+msgstr ""
+
 #: source/ui/app/popup2_tmpl.src#RID_GRAPHIC_TABLE_POPUP.DUMMY.SID_TABLE_DISTRIBUTE_COLUMNS.MenuItem.Text
 msgid  "Space ~Equally"
 msgstr ""
@@ -1482,14 +1490,6 @@ msgstr ""
 #: source/ui/app/popup2_tmpl.src#RID_GRAPHIC_TABLE_POPUP.DUMMY.SID_TABLE_DELETE_COL.MenuItem.Text
 msgid  "~Delete"
 msgstr "~हुखुमोरनाय"
-
-#: source/ui/app/popup2_tmpl.src#RID_GRAPHIC_TABLE_POPUP.DUMMY.MenuItem.Text
-msgid  "~Cell"
-msgstr ""
-
-#: source/ui/app/popup2_tmpl.src#RID_GRAPHIC_TABLE_POPUP.DUMMY.MenuItem.Text
-msgid  "~Row"
-msgstr ""
 
 #: source/ui/app/strings.src#STR_DRAW_TOOLBOX.String.Text
 msgid  "Drawings Toolbar"
@@ -1733,7 +1733,7 @@ msgstr "अननानै गोदान थिरनि बिजौ जं�
 
 #: source/ui/app/strings.src#STR_WARN_NAME_DUPLICATE.String.Text
 msgid  "The name chosen already exists. \nPlease enter another name."
-msgstr ""
+msgstr "सायखनाय मुङा सिगाङावनो थांखानाय। \nअननानै गुबुन मोनसे मुं सोसन।"
 
 #: source/ui/app/strings.src#STR_UNDO_ANIMATION.String.Text
 msgid  "Animation parameters"
@@ -1761,7 +1761,7 @@ msgstr "मुं"
 
 #: source/ui/app/strings.src#STR_WARN_PAGE_EXISTS.String.Text
 msgid  "The slide name already exists or is invalid. Please enter another name."
-msgstr ""
+msgstr "स्लाइडनि मुङा आगोलावनो दंखायो एबा बाहाय जाथाव नङा। अननानै गुबुन मोनसे मुं सोसन।"
 
 #: source/ui/app/strings.src#STR_SNAPDLG_SETLINE.String.Text
 msgid  "Edit Snap Line"
@@ -1804,8 +1804,8 @@ msgid  "Insert slides"
 msgstr "स्लाइडस सोसन"
 
 #: source/ui/app/strings.src#STR_ASK_DELETE_LAYER.String.Text
-msgid  "Are you sure you want to delete the level "$"?\nNote: All objects on this level will be deleted!"
-msgstr ""
+msgid  "Are you sure you want to delete the level \"$\"?\nNote: All objects on this level will be deleted!"
+msgstr "नोंथाङा थारै\"$\"लेभेलखौ हुखुमोरनो सानो नामा? \nनायनो गोनां: बे लेभेलनि गासै मुवा फोरखौ हुखुमोर जागोन!"
 
 #: source/ui/app/strings.src#STR_ASK_DELETE_ALL_PICTURES.String.Text
 msgid  "Do you really want to delete all images?"
@@ -1853,7 +1853,7 @@ msgstr "फराय बिजाब दाथाय सोसन"
 
 #: source/ui/app/strings.src#STR_ACTION_NOTPOSSIBLE.String.Text
 msgid  "This function cannot be run \nwith the selected objects."
-msgstr ""
+msgstr "सायखनाय मुवा फोरजों\nबे हाबा फारिखौ सालायनो हाया।"
 
 #: source/ui/app/strings.src#STR_DLG_INSERT_PAGES_FROM_FILE.String.Text
 msgid  "Insert File"
@@ -1865,7 +1865,7 @@ msgstr "फाइलखौ ल'ड खालामनो हायाखै!"
 
 #: source/ui/app/strings.src#STR_SCALE_OBJECTS.String.Text
 msgid  "The format of the new pages will be adapted.\nDo you want to adapt the objects, too?"
-msgstr ""
+msgstr "गोदान बिखंफोरनि दाथायखौ गोरोब होजागोन।\nनोंथाङा मुवा फोरखौबो गोरोबहोनो लुबैयो नामा?"
 
 #: source/ui/app/strings.src#STR_CREATE_PAGES.String.Text
 msgid  "Create slides"
@@ -1885,7 +1885,7 @@ msgstr "~सुजु"
 
 #: source/ui/app/strings.src#RID_UNDO_DELETE_WARNING.FT_UNDO_DELETE_WARNING.FixedText.Text
 msgid  "This action deletes the list of actions that can\nbe undone. Previous changes made to the document are still valid,\nbut cannot be undone. Do you want to continue and\nthus assign the new slide design?"
-msgstr ""
+msgstr "बे हाबाया हाबाफारिनि फारिलाइखौ हुखुमोरो\nजायखौ उनाव मावफिननो हायो। फोरमान बिलाइआव आगोलाव बानायनाय सोलायनायफोरा दासोमबो बाहाय जाथाव,\nनाथाय मावफिननो हानाय नङा। नोंथाङा सोलि होबाय थानो सानो नामा आरो \nबेखायनो गोदान स्लाइड डिजाइन थि खालामना हो?"
 
 #: source/ui/app/strings.src#RID_UNDO_DELETE_WARNING.CB_UNDO_DELETE_DISABLE.CheckBox.Text
 msgid  "~Do not show this warning again"
@@ -1905,7 +1905,7 @@ msgstr "थिनाय साफायग्रायाव फोरमान 
 
 #: source/ui/app/strings.src#STR_REMOVE_LINK.String.Text
 msgid  "This graphic is linked to a document. \nDo you want to unlink the graphic in order to edit it?"
-msgstr ""
+msgstr "बे बोसावगारिया मोनसे फोरमान बिलाइजों सोमोन्दो दं।\nनोंथाङा बेखौ सुजुनो थाखाय बोसावगारि सोमोनदो गोयै खालामनो सानो नामा?"
 
 #: source/ui/app/strings.src#STR_IMPORT_GRFILTER_OPENERROR.String.Text
 msgid  "Graphics file cannot be opened"
@@ -2017,7 +2017,7 @@ msgstr "(बायजोनि सारि)"
 
 #: source/ui/app/strings.src#STR_WARN_SCALE_FAIL.String.Text
 msgid  "The specified scale is invalid.\nDo you want to enter a new one?"
-msgstr ""
+msgstr "थिनाय स्केला बाहाय जाथाव नङा।\nनोंथाङा गोदान मोनसे सोसननो सानो नामा?"
 
 #: source/ui/app/strings.src#STR_CLICK_ACTION_NONE.String.Text
 msgid  "No action"
@@ -2265,7 +2265,7 @@ msgstr "बारायनाय गैयाबालानो फाइलन�
 
 #: source/ui/app/strings.src#STR_RELEASE_GRAPHICLINK.String.Text
 msgid  "This graphic is linked to a document. Do you want to unlink the graphic in order to edit it?"
-msgstr ""
+msgstr "बे बोसावगारिया मोनसे फोरमान बिलाइजों सोमोन्दो दं। नोंथाङा सुजुनो थाखाय बोसावगारिखौ सोमोन्दो गोयै खालामनो सानो नामा?"
 
 #: source/ui/app/strings.src#STR_NEW_CUSTOMSHOW.String.Text
 msgid  "New Custom Slide Show"
@@ -2301,7 +2301,7 @@ msgstr "गासै एरनाय सावगारि मुवाफोर
 
 #: source/ui/app/strings.src#STR_PUBDLG_SAMENAME.String.Text
 msgid  "A design already exists with this name.\nDo you want to replace it?"
-msgstr ""
+msgstr "बे मुंजों आगोलावनो मोनसे डिजाइन दंखायो।\nनोंथाङा बेखौ जायगा सोलाय होनो सानो नामा?"
 
 #: source/ui/app/strings.src#STR_HTMLATTR_TEXT.String.Text
 msgid  "Text"
@@ -2417,7 +2417,7 @@ msgstr "बोसावगारि फिल्टार"
 
 #: source/ui/app/strings.src#STR_WARNING_NOSOUNDFILE.String.Text
 msgid  "The file %\nis not a valid sound file !"
-msgstr ""
+msgstr "फाइल %\n आ मोनसे बाहाय जाथाव सोदोब फाइल नङा!"
 
 #: source/ui/app/strings.src#STR_UNDO_CONVERT_TO_METAFILE.String.Text
 msgid  "Convert to metafile"
@@ -2631,6 +2631,14 @@ msgstr ""
 msgid  "Insert Movie"
 msgstr ""
 
+#: source/ui/app/res_bmp.src#SfxStyleFamiliesRes1.#define.Text
+msgid  "Graphics Styles"
+msgstr "बोसावगारि आदबफोर"
+
+#: source/ui/app/res_bmp.src#SfxStyleFamiliesRes2.#define.Text
+msgid  "Presentation Styles"
+msgstr "प्रेजेनटेसन आदबफोर"
+
 #: source/ui/app/res_bmp.src#STR_STYLE_FILTER_USED.String.Text
 msgid  "Applied Styles"
 msgstr ""
@@ -2642,14 +2650,6 @@ msgstr ""
 #: source/ui/app/res_bmp.src#STR_STYLE_FILTER_ALL.String.Text
 msgid  "All Styles"
 msgstr ""
-
-#: source/ui/app/res_bmp.src#SfxStyleFamiliesRes1.#define.Text
-msgid  "Graphics Styles"
-msgstr "बोसावगारि आदबफोर"
-
-#: source/ui/app/res_bmp.src#SfxStyleFamiliesRes2.#define.Text
-msgid  "Presentation Styles"
-msgstr "प्रेजेनटेसन आदबफोर"
 
 #: source/ui/app/menuids_tmpl.src#MN_DISTRIBUTE.SID_DISTRIBUTE_DLG.MenuItem.Text
 msgid  "~Distribution..."
@@ -3328,7 +3328,7 @@ msgid  "~Table..."
 msgstr ""
 
 #: source/ui/app/popup.src#RID_DRAW_TABLEOBJ_INSIDE_POPUP.DUMMY.MenuItem.Text
-msgid  "Colu~mn"
+msgid  "~Cell"
 msgstr ""
 
 #: source/ui/app/popup.src#RID_DRAW_TABLEOBJ_INSIDE_POPUP.DUMMY.SID_TABLE_MERGE_CELLS.MenuItem.Text
@@ -3351,6 +3351,10 @@ msgstr ""
 msgid  "~Bottom"
 msgstr ""
 
+#: source/ui/app/popup.src#RID_DRAW_TABLEOBJ_INSIDE_POPUP.DUMMY.MenuItem.Text
+msgid  "~Row"
+msgstr ""
+
 #: source/ui/app/popup.src#RID_DRAW_TABLEOBJ_INSIDE_POPUP.DUMMY.SID_TABLE_DISTRIBUTE_ROWS.MenuItem.Text
 msgid  "Space ~Equally"
 msgstr ""
@@ -3365,6 +3369,10 @@ msgstr ""
 
 #: source/ui/app/popup.src#RID_DRAW_TABLEOBJ_INSIDE_POPUP.DUMMY.SID_TABLE_DELETE_ROW.MenuItem.Text
 msgid  "~Delete"
+msgstr ""
+
+#: source/ui/app/popup.src#RID_DRAW_TABLEOBJ_INSIDE_POPUP.DUMMY.MenuItem.Text
+msgid  "Colu~mn"
 msgstr ""
 
 #: source/ui/app/popup.src#RID_DRAW_TABLEOBJ_INSIDE_POPUP.DUMMY.SID_TABLE_DISTRIBUTE_COLUMNS.MenuItem.Text
@@ -3439,33 +3447,25 @@ msgstr ""
 msgid  "~Insert Slide"
 msgstr ""
 
-#: source/ui/app/popup.src#RID_DRAW_TABLEOBJ_INSIDE_POPUP.DUMMY.MenuItem.Text
-msgid  "~Cell"
-msgstr ""
-
-#: source/ui/app/popup.src#RID_DRAW_TABLEOBJ_INSIDE_POPUP.DUMMY.MenuItem.Text
-msgid  "~Row"
-msgstr ""
-
 #: source/ui/app/sdstring.src#STR_SAR_NOT_FOUND.String.Text
 msgid  "Search key not found."
 msgstr "नागिरनाय साबिखौ मोनाखै।"
 
 #: source/ui/app/sdstring.src#STR_SAR_WRAP_FORWARD.String.Text
 msgid  "%PRODUCTNAME Impress has searched to the end of the presentation. Do you want to continue at the beginning?"
-msgstr ""
+msgstr "%PRODUCTNAME Impress आ प्रेजेनटेसननि जोबनायखौ नागिरदों। नोंथाङा जागाय जेननायाव सोलि होबाय थानो सानो नामा?"
 
 #: source/ui/app/sdstring.src#STR_SAR_WRAP_BACKWARD.String.Text
 msgid  "%PRODUCTNAME Impress has searched to the beginning of the presentation. Do you want to continue at the end?"
-msgstr ""
+msgstr "%PRODUCTNAME Impress आ प्रेजेनटेसननि जागायनायखौ नागिरदों। नोंथाङा जोबनायाव सोलि होबाय थानो सानो नामा?"
 
 #: source/ui/app/sdstring.src#STR_SAR_WRAP_FORWARD_DRAW.String.Text
 msgid  "%PRODUCTNAME Draw has searched to the end of the document. Do you want to continue at the beginning?"
-msgstr ""
+msgstr "%PRODUCTNAME Draw आ फोरमान बिलाइनि जोबनायखौ नागिरदों। नोंथाङा जागाय जेननायाव सोलि होबाय थानो सानो नामा?"
 
 #: source/ui/app/sdstring.src#STR_SAR_WRAP_BACKWARD_DRAW.String.Text
 msgid  "%PRODUCTNAME Draw has searched to the beginning of the document. Do you want to continue at the end?"
-msgstr ""
+msgstr "%PRODUCTNAME Draw आ फोरमान बिलाइनि जागायनायखौ नागिरदों। नोंथाङा जोबनायाव सोलि होबाय थानो सानो नामा?"
 
 #: source/ui/app/menuids2_tmpl.src#MN_NEWDOCDIRECT.SID_NEWDOCDIRECT.MenuItem.Text
 msgid  "~New"
@@ -3486,6 +3486,10 @@ msgstr "~दैथाय हर"
 #: source/ui/app/menuids2_tmpl.src#MN_PAGESETUP.SID_PAGESETUP.MenuItem.Text
 msgid  "~Page..."
 msgstr "~बिखं"
+
+#: source/ui/app/menuids2_tmpl.src#20.#define.Text
+msgid  "~Edit"
+msgstr "~सुजु"
 
 #: source/ui/app/menuids2_tmpl.src#MN_PASTE2.SID_PASTE2.MenuItem.Text
 msgid  "Paste ~Special..."
@@ -3510,6 +3514,10 @@ msgstr "~लेयार हुखुमोर..."
 #: source/ui/app/menuids2_tmpl.src#MN_MANAGE_LINKS.SID_MANAGE_LINKS.MenuItem.Text
 msgid  "Lin~ks..."
 msgstr "~लिंक्स"
+
+#: source/ui/app/menuids2_tmpl.src#23.#define.Text
+msgid  "~View"
+msgstr "~नुथाय"
 
 #: source/ui/app/menuids2_tmpl.src#MN_TOGGLETOOLBAR.SID_TOGGLETOOLBAR.MenuItem.Text
 msgid  "Main ~Toolbar"
@@ -3574,6 +3582,10 @@ msgstr "~खामानिनि जायगा"
 #: source/ui/app/menuids2_tmpl.src#MNSUB_MASTERPAGE.MN_SUB_MASTERPAGE.MenuItem.Text
 msgid  "~Master"
 msgstr "~गाहाय"
+
+#: source/ui/app/menuids2_tmpl.src#21.#define.Text
+msgid  "~Insert"
+msgstr "~Insert"
 
 #: source/ui/app/menuids2_tmpl.src#MN_INSERTPAGE.SID_INSERTPAGE.MenuItem.Text
 msgid  "Slid~e..."
@@ -3659,6 +3671,10 @@ msgstr "~फाइल"
 msgid  "Fiel~ds"
 msgstr "फोथारफोर"
 
+#: source/ui/app/menuids2_tmpl.src#22.#define.Text
+msgid  "F~ormat"
+msgstr "~दाथाय"
+
 #: source/ui/app/menuids2_tmpl.src#MN_TEXTATTR_DLG.SID_TEXTATTR_DLG.MenuItem.Text
 msgid  "Te~xt..."
 msgstr "~फराय बिजाब"
@@ -3682,6 +3698,14 @@ msgstr "~लेआउट सोलाय हो..."
 #: source/ui/app/menuids2_tmpl.src#MNSUB_TEMPLATES.MN_SUB_TEMPLATES.MenuItem.Text
 msgid  "Styl~es"
 msgstr "~आदबफोर"
+
+#: source/ui/app/menuids2_tmpl.src#ITEM_TOOLS_ID.#define.Text
+msgid  "~Tools"
+msgstr "~आयजें आयला"
+
+#: source/ui/app/menuids2_tmpl.src#26.#define.Text
+msgid  "~Slide Show"
+msgstr "~स्लाइड दिनथिनाय"
 
 #: source/ui/app/menuids2_tmpl.src#MN_SPELLING.SID_SPELL_DIALOG.MenuItem.Text
 msgid  "~Check..."
@@ -3722,6 +3746,10 @@ msgstr "~गावजोंगाव सोलायज्लायनाय ह
 #: source/ui/app/menuids2_tmpl.src#MNSUB_SPELLING.MN_SUB_SPELLING.MenuItem.Text
 msgid  "~Spellcheck"
 msgstr "~बानाम आनजाद"
+
+#: source/ui/app/menuids2_tmpl.src#24.#define.Text
+msgid  "~Modify"
+msgstr "~सोलाय हो"
 
 #: source/ui/app/menuids2_tmpl.src#MN_MOREFRONT.SID_MOREFRONT.MenuItem.Text
 msgid  "Bring ~Forward"
@@ -3794,34 +3822,6 @@ msgstr "~गुण दिनथिफुं"
 #: source/ui/app/menuids2_tmpl.src#MNSUB_PREVIEW_OUTPUT_QUALITY.MN_SUB_PREVIEW_OUTPUT_QUALITY.ItemList.Text
 msgid  "Pre~view Mode"
 msgstr "आवगायनि नुथाय रोखोम"
-
-#: source/ui/app/menuids2_tmpl.src#20.#define.Text
-msgid  "~Edit"
-msgstr "~सुजु"
-
-#: source/ui/app/menuids2_tmpl.src#23.#define.Text
-msgid  "~View"
-msgstr "~नुथाय"
-
-#: source/ui/app/menuids2_tmpl.src#21.#define.Text
-msgid  "~Insert"
-msgstr "~Insert"
-
-#: source/ui/app/menuids2_tmpl.src#22.#define.Text
-msgid  "F~ormat"
-msgstr "~दाथाय"
-
-#: source/ui/app/menuids2_tmpl.src#ITEM_TOOLS_ID.#define.Text
-msgid  "~Tools"
-msgstr "~आयजें आयला"
-
-#: source/ui/app/menuids2_tmpl.src#26.#define.Text
-msgid  "~Slide Show"
-msgstr "~स्लाइड दिनथिनाय"
-
-#: source/ui/app/menuids2_tmpl.src#24.#define.Text
-msgid  "~Modify"
-msgstr "~सोलाय हो"
 
 #: source/ui/dlg/sdpreslt.src#DLG_PRESLT.FT_LAYOUT.FixedText.Text
 msgid  "~Select a slide design"
@@ -4687,6 +4687,10 @@ msgstr "स्लाइडनि अनजिमा"
 msgid  "Master Elements"
 msgstr "गाहाय गुदि मुवाफोर"
 
+#: source/ui/dlg/tpoption.src#SCALE_TEXT.#define.Text
+msgid  "Scale"
+msgstr "जखा सुनाय"
+
 #: source/ui/dlg/tpoption.src#TP_OPTIONS_CONTENTS.TabPage.Text
 msgid  "Contents"
 msgstr "थानाय आयदाफोर"
@@ -4781,7 +4785,7 @@ msgstr "फोरमान बिलाइ दाथायनि थाखाय
 
 #: source/ui/dlg/tpoption.src#TP_OPTIONS_MISC.CB_MERGE_PARA_DIST.CheckBox.Text
 msgid  "Add ~spacing between paragraphs and tables (in current document)"
-msgstr ""
+msgstr "(बोहैथि फोरमान बिलाइआव)आनथोरफोर आरो फारिलाइफोरनि गेजेराव लांदां जायगाखौ दाजाबदेर"
 
 #: source/ui/dlg/tpoption.src#TP_OPTIONS_MISC.FT_ORIGINAL.FixedText.Text
 msgid  "Original"
@@ -4802,10 +4806,6 @@ msgstr "बिखं~ गुवारथि"
 #: source/ui/dlg/tpoption.src#TP_OPTIONS_MISC.FT_PAGEHEIGHT.FixedText.Text
 msgid  "Page ~height"
 msgstr "बिखं~ गोजौथि"
-
-#: source/ui/dlg/tpoption.src#SCALE_TEXT.#define.Text
-msgid  "Scale"
-msgstr "जखा सुनाय"
 
 #: source/ui/dlg/morphdlg.src#DLG_MORPH.GRP_PRESET.FixedLine.Text
 msgid  "Settings"
@@ -5056,22 +5056,6 @@ msgid  "Alignment"
 msgstr "सारि सारि साजायनाय"
 
 #: source/ui/dlg/animobjs.src#FLT_WIN_ANIMATION.LB_ADJUSTMENT.Default.StringList.item
-msgid  "Bottom Right"
-msgstr "सिंथार बाहागोनि आगदा"
-
-#: source/ui/dlg/animobjs.src#FLT_WIN_ANIMATION.BTN_CREATE_GROUP.PushButton.Text
-msgid  "Create"
-msgstr "सोरजिनाय"
-
-#: source/ui/dlg/animobjs.src#FLT_WIN_ANIMATION.GRP_ANIMATION_GROUP.FixedLine.Text
-msgid  "Animation group"
-msgstr "जिउगोनां हानजा"
-
-#: source/ui/dlg/animobjs.src#FLT_WIN_ANIMATION.STR_DISPLAY.String.Text
-msgid  "Preview"
-msgstr ""
-
-#: source/ui/dlg/animobjs.src#FLT_WIN_ANIMATION.LB_ADJUSTMENT.Default.StringList.item
 msgid  "Top Left"
 msgstr "सानि आगसि"
 
@@ -5102,6 +5086,22 @@ msgstr "सानि आगदा"
 #: source/ui/dlg/animobjs.src#FLT_WIN_ANIMATION.LB_ADJUSTMENT.Default.StringList.item
 msgid  "Right"
 msgstr "आगदा"
+
+#: source/ui/dlg/animobjs.src#FLT_WIN_ANIMATION.LB_ADJUSTMENT.Default.StringList.item
+msgid  "Bottom Right"
+msgstr "सिंथार बाहागोनि आगदा"
+
+#: source/ui/dlg/animobjs.src#FLT_WIN_ANIMATION.BTN_CREATE_GROUP.PushButton.Text
+msgid  "Create"
+msgstr "सोरजिनाय"
+
+#: source/ui/dlg/animobjs.src#FLT_WIN_ANIMATION.GRP_ANIMATION_GROUP.FixedLine.Text
+msgid  "Animation group"
+msgstr "जिउगोनां हानजा"
+
+#: source/ui/dlg/animobjs.src#FLT_WIN_ANIMATION.STR_DISPLAY.String.Text
+msgid  "Preview"
+msgstr ""
 
 #: source/ui/dlg/prntopts.src#TP_PRINT_OPTIONS.TabPage.Text
 msgid  "Options"

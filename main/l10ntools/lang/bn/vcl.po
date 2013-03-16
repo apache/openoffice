@@ -141,6 +141,11 @@ msgstr "কিমি"
 
 #: source/src/units.src#SV_FUNIT_STRINGS.FUNIT_TWIP.ItemList.item
 #, fuzzy
+msgid  "twips"
+msgstr "টুইপ্স"
+
+#: source/src/units.src#SV_FUNIT_STRINGS.FUNIT_TWIP.ItemList.item
+#, fuzzy
 msgid  "twip"
 msgstr "টুইপ"
 
@@ -156,37 +161,18 @@ msgstr "পাই"
 
 #: source/src/units.src#SV_FUNIT_STRINGS.FUNIT_INCH.ItemList.item
 #, fuzzy
-msgid  "inch"
-msgstr "ইঞ্চি"
-
-#: source/src/units.src#SV_FUNIT_STRINGS.FUNIT_FOOT.ItemList.item
-#, fuzzy
-msgid  "feet"
-msgstr "ফুট"
-
-#: source/src/units.src#SV_FUNIT_STRINGS.FUNIT_MILE.ItemList.item
-#, fuzzy
-msgid  "mile"
-msgstr "মাইল"
-
-#: source/src/units.src#SV_FUNIT_STRINGS.FUNIT_PERCENT.ItemList.item
-#, fuzzy
-msgid  "%"
-msgstr "%"
-
-#: source/src/units.src#SV_FUNIT_STRINGS.FUNIT_TWIP.ItemList.item
-#, fuzzy
-msgid  "twips"
-msgstr "টুইপ্স"
-
-#: source/src/units.src#SV_FUNIT_STRINGS.FUNIT_INCH.ItemList.item
-msgid  """
-msgstr ""
+msgid  "\""
+msgstr "\""
 
 #: source/src/units.src#SV_FUNIT_STRINGS.FUNIT_INCH.ItemList.item
 #, fuzzy
 msgid  "in"
 msgstr "মধ্যে"
+
+#: source/src/units.src#SV_FUNIT_STRINGS.FUNIT_INCH.ItemList.item
+#, fuzzy
+msgid  "inch"
+msgstr "ইঞ্চি"
 
 #: source/src/units.src#SV_FUNIT_STRINGS.FUNIT_FOOT.ItemList.item
 #, fuzzy
@@ -203,14 +189,30 @@ msgstr "ফুট"
 msgid  "foot"
 msgstr "ফুট"
 
+#: source/src/units.src#SV_FUNIT_STRINGS.FUNIT_FOOT.ItemList.item
+#, fuzzy
+msgid  "feet"
+msgstr "ফুট"
+
 #: source/src/units.src#SV_FUNIT_STRINGS.FUNIT_MILE.ItemList.item
 #, fuzzy
 msgid  "miles"
 msgstr "মাইল"
 
+#: source/src/units.src#SV_FUNIT_STRINGS.FUNIT_MILE.ItemList.item
+#, fuzzy
+msgid  "mile"
+msgstr "মাইল"
+
+#: source/src/units.src#SV_FUNIT_STRINGS.FUNIT_PERCENT.ItemList.item
+#, fuzzy
+msgid  "%"
+msgstr "%"
+
 #: source/src/stdtext.src#SV_STDTEXT_SERVICENOTAVAILABLE.String.Text
+#, fuzzy
 msgid  "The component (%s) could not be loaded.\nPlease start setup with the repair option."
-msgstr ""
+msgstr "উপাদান (%s)লোড করা যায়নি।\nদয়া করে রিপেয়ার অপশন সহ শুরু করো"
 
 #: source/src/stdtext.src#SV_STDTEXT_DONTHINTAGAIN.String.Text
 #, fuzzy
@@ -233,12 +235,14 @@ msgid  "Wrong Version"
 msgstr "ভুল ভার্সন"
 
 #: source/src/stdtext.src#SV_ACCESSERROR_BRIDGE_MSG.String.Text
+#, fuzzy
 msgid  "%PRODUCTNAME %PRODUCTVERSION requires a Java Access Bridge 1.0.3 or later version to support accessibility."
-msgstr ""
+msgstr "%উপাদানের নাম %উপাদানের সংস্করণ এর  প্রয়োজন হয় জাভা একসেস ব্রীজ 1.0.3  অথবা পরবর্তি সংস্করণ যা উপলভ্যকে সমর্থন করে। "
 
 #: source/src/stdtext.src#SV_ACCESSERROR_OK_CANCEL_MSG.String.Text
+#, fuzzy
 msgid  "Click '%OK' to start %PRODUCTNAME %PRODUCTVERSION without accessibility support, or click '%CANCEL' to exit %PRODUCTNAME %PRODUCTVERSION."
-msgstr ""
+msgstr "উপলভ্য সমর্থন ছারা %উপাদানের নাম %উপাদানের সংস্করণ শুরু করার জন্য চাপো '%OK' অথবা %উপাদানের নাম %উপাদানের সংস্করণ থেকে বের হবার জন্য চাপো '%CANCEL'।"
 
 #: source/src/stdtext.src#SV_ACCESSERROR_MISSING_BRIDGE.String.Text
 #, fuzzy
@@ -251,8 +255,9 @@ msgid  "Faulty Java Installation"
 msgstr "ত্রুটিপুর্ণ জাভা ইনস্টলেশন"
 
 #: source/src/stdtext.src#SV_ACCESSERROR_JAVA_MSG.String.Text
+#, fuzzy
 msgid  "%PRODUCTNAME %PRODUCTVERSION requires Java 1.4.0_02 or later version to support accessibility."
-msgstr ""
+msgstr "%PRODUCTNAME %PRODUCTVERSION এ সহায়ক প্রযুক্তির জন্য জাভার 1.4.0_02 বা উন্নত সংস্করণ প্রয়োজন।"
 
 #: source/src/stdtext.src#SV_ACCESSERROR_MISSING_JAVA.String.Text
 #, fuzzy
@@ -289,8 +294,9 @@ msgid  "Preferences..."
 msgstr "পছন্দসমূহ..."
 
 #: source/src/stdtext.src#SV_EDIT_WARNING_BOX.WarningBox.Message
+#, fuzzy
 msgid  "The inserted text exceeded the maximum length of this text field. The text was truncated."
-msgstr ""
+msgstr "সন্নিবেশিত লেখা এই লেখাটি ক্ষেত্রের সর্বোচ্চ দৈর্ঘ্য অতিক্রম করেছিল। লেখা বাদ দেয়া হয়েছিল।"
 
 #: source/src/stdtext.src#SV_MAC_SCREENNNAME.String.Text
 #, fuzzy
@@ -679,116 +685,93 @@ msgid  "B6 (JIS)"
 msgstr ""
 
 #: source/src/menu.src#SV_RESID_STRING_NOSELECTIONPOSSIBLE.String.Text
-#, fuzzy
 msgid  "<No selection possible>"
 msgstr "<কোন নির্বাচন সম্ভব নয়>"
 
 #: source/src/menu.src#SV_RESID_MENU_EDIT.SV_MENU_EDIT_UNDO.MenuItem.Text
-#, fuzzy
 msgid  "~Undo"
 msgstr "পুর্বাবস্থায় (~U)"
 
 #: source/src/menu.src#SV_RESID_MENU_EDIT.SV_MENU_EDIT_CUT.MenuItem.Text
-#, fuzzy
 msgid  "Cu~t"
 msgstr "কাটো (~t)"
 
 #: source/src/menu.src#SV_RESID_MENU_EDIT.SV_MENU_EDIT_COPY.MenuItem.Text
-#, fuzzy
 msgid  "~Copy"
 msgstr "কপি (~C)"
 
 #: source/src/menu.src#SV_RESID_MENU_EDIT.SV_MENU_EDIT_PASTE.MenuItem.Text
-#, fuzzy
 msgid  "~Paste"
 msgstr "পেস্ট (~P)"
 
 #: source/src/menu.src#SV_RESID_MENU_EDIT.SV_MENU_EDIT_DELETE.MenuItem.Text
-#, fuzzy
 msgid  "~Delete"
 msgstr "মুছে ফেলো (~D)"
 
 #: source/src/menu.src#SV_RESID_MENU_EDIT.SV_MENU_EDIT_SELECTALL.MenuItem.Text
-#, fuzzy
 msgid  "Select ~All"
 msgstr "সবকিছু নির্বাচন করো (~A)"
 
 #: source/src/menu.src#SV_RESID_MENU_EDIT.SV_MENU_EDIT_INSERTSYMBOL.MenuItem.Text
-#, fuzzy
 msgid  "~Special Character..."
 msgstr "বিশেষ অক্ষর... (~S)"
 
 #: source/src/menu.src#SV_MENU_MAC_SERVICES.String.Text
-#, fuzzy
 msgid  "Services"
 msgstr "সার্ভিস সমূহ"
 
 #: source/src/menu.src#SV_MENU_MAC_HIDEAPP.String.Text
-#, fuzzy
 msgid  "Hide %PRODUCTNAME"
 msgstr "%PRODUCTNAME লুকাও"
 
 #: source/src/menu.src#SV_MENU_MAC_HIDEALL.String.Text
-#, fuzzy
 msgid  "Hide Others"
 msgstr "অন্যদের লুকাও"
 
 #: source/src/menu.src#SV_MENU_MAC_SHOWALL.String.Text
-#, fuzzy
 msgid  "Show All"
 msgstr "সকলকে দেখান"
 
 #: source/src/menu.src#SV_MENU_MAC_QUITAPP.String.Text
-#, fuzzy
 msgid  "Quit %PRODUCTNAME"
 msgstr "%PRODUCTNAME ত্যাগ করুন"
 
 #: source/src/btntext.src#SV_BUTTONTEXT_OK.String.Text
-#, fuzzy
 msgid  "OK"
 msgstr "ঠিক আছে"
 
 #: source/src/btntext.src#SV_BUTTONTEXT_CANCEL.String.Text
-#, fuzzy
 msgid  "Cancel"
 msgstr "বাতিল"
 
 #: source/src/btntext.src#SV_BUTTONTEXT_YES.String.Text
-#, fuzzy
 msgid  "~Yes"
 msgstr "হ্যাঁ (~Y)"
 
 #: source/src/btntext.src#SV_BUTTONTEXT_NO.String.Text
-#, fuzzy
 msgid  "~No"
 msgstr "না (~N)"
 
 #: source/src/btntext.src#SV_BUTTONTEXT_RETRY.String.Text
-#, fuzzy
 msgid  "~Retry"
 msgstr "পুনঃচেষ্টা (~R)"
 
 #: source/src/btntext.src#SV_BUTTONTEXT_HELP.String.Text
-#, fuzzy
 msgid  "~Help"
 msgstr "সাহায্য (~H)"
 
 #: source/src/btntext.src#SV_BUTTONTEXT_MORE.String.Text
-#, fuzzy
 msgid  "~More"
 msgstr "আরও (~M)"
 
 #: source/src/btntext.src#SV_BUTTONTEXT_LESS.String.Text
-#, fuzzy
 msgid  "~More"
 msgstr "আরও (~M)"
 
 #: source/src/btntext.src#SV_BUTTONTEXT_IGNORE.String.Text
-#, fuzzy
 msgid  "~Ignore"
 msgstr "উপেক্ষা (~I)"
 
 #: source/src/btntext.src#SV_BUTTONTEXT_ABORT.String.Text
-#, fuzzy
 msgid  "~Abort"
 msgstr "বাতিল (~A)"

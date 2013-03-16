@@ -648,10 +648,50 @@ msgstr "GIF - Graphics Interchange Format"
 msgid  "PNG - Portable Network Graphic"
 msgstr "PNG - Portable Network Graphic"
 
+#: source/config/fragments/types/writerglobal8.xcu#writerglobal8.UIName
+#, fuzzy
+msgid  "Writer 8 Master Document"
+msgstr "Writer 8 Master Document"
+
+#: source/config/fragments/types/impress8.xcu#impress8.UIName
+#, fuzzy
+msgid  "Impress 8"
+msgstr "Impress 8"
+
+#: source/config/fragments/types/calc8_template.xcu#calc8_template.UIName
+#, fuzzy
+msgid  "Calc 8 Template"
+msgstr "Calc 8 Template"
+
 #: source/config/fragments/types/writer_MS_Word_2003_XML.xcu#writer_MS_Word_2003_XML.UIName
 #, fuzzy
 msgid  "Microsoft Word 2003 XML"
 msgstr "Microsoft Word 2003 XML"
+
+#: source/config/fragments/types/writer8.xcu#writer8.UIName
+#, fuzzy
+msgid  "Writer 8"
+msgstr "Writer 8"
+
+#: source/config/fragments/types/impress8_template.xcu#impress8_template.UIName
+#, fuzzy
+msgid  "Impress 8 Template"
+msgstr "Impress 8 Template"
+
+#: source/config/fragments/types/draw8_template.xcu#draw8_template.UIName
+#, fuzzy
+msgid  "Draw 8 Template"
+msgstr "Draw 8 Template"
+
+#: source/config/fragments/types/writerweb8_writer_template.xcu#writerweb8_writer_template.UIName
+#, fuzzy
+msgid  "Writer/Web 8 Template"
+msgstr "Writer/Web 8 Template"
+
+#: source/config/fragments/types/draw8.xcu#draw8.UIName
+#, fuzzy
+msgid  "Draw 8"
+msgstr "Draw 8"
 
 #: source/config/fragments/types/calc_NSO_UOF2.xcu#calc_NSO_UOF2.UIName
 msgid  "Uniform Office Format 2 spreadsheet"
@@ -667,6 +707,21 @@ msgstr "Microsoft Excel 2003 XML"
 msgid  "OpenDocument Database"
 msgstr "OpenDocument Database"
 
+#: source/config/fragments/types/calc8.xcu#calc8.UIName
+#, fuzzy
+msgid  "Calc 8"
+msgstr "Calc 8"
+
+#: source/config/fragments/types/math8.xcu#math8.UIName
+#, fuzzy
+msgid  "Math 8"
+msgstr "Math 8"
+
+#: source/config/fragments/types/writer8_template.xcu#writer8_template.UIName
+#, fuzzy
+msgid  "Writer 8 Template"
+msgstr "Writer 8 Template"
+
 #: source/config/fragments/types/writer_NSO_UOF2.xcu#writer_NSO_UOF2.UIName
 msgid  "Uniform Office Format 2 text"
 msgstr ""
@@ -675,18 +730,25 @@ msgstr ""
 msgid  "Uniform Office Format 2 presentation"
 msgstr ""
 
+#: source/config/fragments/types/chart8.xcu#chart8.UIName
+#, fuzzy
+msgid  "Chart 8"
+msgstr "Chart 8"
+
 #: source/flash/impswfdialog.src#DLG_OPTIONS.ModalDialog.Text
 #, fuzzy
 msgid  "Macromedia Flash (SWF) Options"
 msgstr "Macromedia Flash (SWF) Options"
 
 #: source/flash/impswfdialog.src#DLG_OPTIONS.FI_DESCR.FixedText.Text
+#, fuzzy
 msgid  "1: min. quality\n100: max. quality"
-msgstr ""
+msgstr "1: min. quality\n100: max. quality"
 
 #: source/graphicfilter/eps/epsstr.src#KEY_VERSION_CHECK.String.Text
+#, fuzzy
 msgid  "Warning: Not all of the imported EPS graphics could be saved at level1\nas some are at a higher level!"
-msgstr ""
+msgstr "Warning: Not all of the imported EPS graphics could be saved at level1\nas some are at a higher level!"
 
 #: source/pdf/pdf.src#PDF_PROGRESS_BAR.String.Text
 #, fuzzy
@@ -824,8 +886,9 @@ msgid  "PDF/A Export"
 msgstr "PDF/A Export"
 
 #: source/pdf/impdialog.src#RID_PDF_WARNPDFAPASSWORD.WarningBox.Message
+#, fuzzy
 msgid  "PDF/A does not allow encryption. The exported PDF file will not be password protected."
-msgstr ""
+msgstr "PDF/A does not allow encryption. The exported PDF file will not be password protected."
 
 #: source/pdf/impdialog.src#RID_PDF_TAB_OPNFTR.TabPage.Text
 #, fuzzy
@@ -1208,8 +1271,9 @@ msgid  "PDF/A transparency"
 msgstr "PDF/A transparency"
 
 #: source/pdf/impdialog.src#RID_PDF_ERROR_DLG.STR_WARN_TRANSP_PDFA.String.Text
+#, fuzzy
 msgid  "PDF/A forbids transparency. A transparent object was painted opaque instead."
-msgstr ""
+msgstr "PDF/A forbids transparency. A transparent object was painted opaque instead."
 
 #: source/pdf/impdialog.src#RID_PDF_ERROR_DLG.STR_WARN_TRANSP_VERSION_SHORT.String.Text
 #, fuzzy
@@ -1217,8 +1281,9 @@ msgid  "PDF version conflict"
 msgstr "PDF version conflict"
 
 #: source/pdf/impdialog.src#RID_PDF_ERROR_DLG.STR_WARN_TRANSP_VERSION.String.Text
+#, fuzzy
 msgid  "Transparency is not supported in PDF versions earlier than PDF 1.4. A transparent object was painted opaque instead"
-msgstr ""
+msgstr "Transparency is not supported in PDF versions earlier than PDF 1.4. A transparent object was painted opaque instead"
 
 #: source/pdf/impdialog.src#RID_PDF_ERROR_DLG.STR_WARN_FORMACTION_PDFA_SHORT.String.Text
 #, fuzzy
@@ -1226,12 +1291,14 @@ msgid  "PDF/A form action"
 msgstr "PDF/A form action"
 
 #: source/pdf/impdialog.src#RID_PDF_ERROR_DLG.STR_WARN_FORMACTION_PDFA.String.Text
+#, fuzzy
 msgid  "A form control contained an action not supported by the PDF/A standard. The action was skipped"
-msgstr ""
+msgstr "A form control contained an action not supported by the PDF/A standard. The action was skipped"
 
 #: source/pdf/impdialog.src#RID_PDF_ERROR_DLG.STR_WARN_TRANSP_CONVERTED.String.Text
+#, fuzzy
 msgid  "Some objects were converted to an image in order to remove transparencies, because the target PDF format does not support transparencies. Possibly better results can be achieved if you remove the transparent objects before exporting."
-msgstr ""
+msgstr "Some objects were converted to an image in order to remove transparencies, because the target PDF format does not support transparencies. Possibly better results can be achieved if you remove the transparent objects before exporting."
 
 #: source/pdf/impdialog.src#RID_PDF_ERROR_DLG.STR_WARN_TRANSP_CONVERTED_SHORT.String.Text
 #, fuzzy
@@ -1504,16 +1571,19 @@ msgid  "export filter"
 msgstr "export filter"
 
 #: source/xsltdialog/xmlfilterdialogstrings.src#STR_WARN_DELETE.String.Text
+#, fuzzy
 msgid  "Do you really want to delete the XML Filter '%s'? This action cannot be undone."
-msgstr ""
+msgstr "Do you really want to delete the XML Filter '%s'? This action cannot be undone."
 
 #: source/xsltdialog/xmlfilterdialogstrings.src#STR_ERROR_FILTER_NAME_EXISTS.String.Text
+#, fuzzy
 msgid  "An XML filter with the name '%s' already exists. Please enter a different name."
-msgstr ""
+msgstr "An XML filter with the name '%s' already exists. Please enter a different name."
 
 #: source/xsltdialog/xmlfilterdialogstrings.src#STR_ERROR_TYPE_NAME_EXISTS.String.Text
+#, fuzzy
 msgid  "The name for  the user interface '%s1' is already used by the XML filter '%s2'. Please enter a different name."
-msgstr ""
+msgstr "The name for the user interface '%s1' is already used by the XML filter '%s2'. Please enter a different name."
 
 #: source/xsltdialog/xmlfilterdialogstrings.src#STR_ERROR_DTD_NOT_FOUND.String.Text
 #, fuzzy
@@ -1581,8 +1651,9 @@ msgid  "%s XML filters have been installed successfully."
 msgstr "%s XML filters have been installed successfully."
 
 #: source/xsltdialog/xmlfilterdialogstrings.src#STR_NO_FILTERS_FOUND.String.Text
+#, fuzzy
 msgid  "No XML filter could be installed because the package '%s' does not contain any XML filters."
-msgstr ""
+msgstr "No XML filter could be installed because the package '%s' does not contain any XML filters."
 
 #: source/xsltdialog/xmlfiltertabpagebasic.src#RID_XML_FILTER_TABPAGE_BASIC.TabPage.Text
 #, fuzzy
@@ -1600,8 +1671,9 @@ msgid  "Application"
 msgstr "Application"
 
 #: source/xsltdialog/xmlfiltertabpagebasic.src#RID_XML_FILTER_TABPAGE_BASIC.FT_XML_INTERFACE_NAME.FixedText.Text
+#, fuzzy
 msgid  "Name of\nfile type"
-msgstr ""
+msgstr "Name of\nfile type"
 
 #: source/xsltdialog/xmlfiltertabpagebasic.src#RID_XML_FILTER_TABPAGE_BASIC.FT_XML_EXTENSION.FixedText.Text
 #, fuzzy
@@ -1622,63 +1694,3 @@ msgstr "XML Filter output"
 #, fuzzy
 msgid  "~Validate"
 msgstr "~Validate"
-
-#: source/config/fragments/types/writerglobal8.xcu#writerglobal8.UIName
-#, fuzzy
-msgid  "Writer 8 Master Document"
-msgstr "Writer 8 Master Document"
-
-#: source/config/fragments/types/impress8.xcu#impress8.UIName
-#, fuzzy
-msgid  "Impress 8"
-msgstr "Impress 8"
-
-#: source/config/fragments/types/calc8_template.xcu#calc8_template.UIName
-#, fuzzy
-msgid  "Calc 8 Template"
-msgstr "Calc 8 Template"
-
-#: source/config/fragments/types/writer8.xcu#writer8.UIName
-#, fuzzy
-msgid  "Writer 8"
-msgstr "Writer 8"
-
-#: source/config/fragments/types/impress8_template.xcu#impress8_template.UIName
-#, fuzzy
-msgid  "Impress 8 Template"
-msgstr "Impress 8 Template"
-
-#: source/config/fragments/types/draw8_template.xcu#draw8_template.UIName
-#, fuzzy
-msgid  "Draw 8 Template"
-msgstr "Draw 8 Template"
-
-#: source/config/fragments/types/writerweb8_writer_template.xcu#writerweb8_writer_template.UIName
-#, fuzzy
-msgid  "Writer/Web 8 Template"
-msgstr "Writer/Web 8 Template"
-
-#: source/config/fragments/types/draw8.xcu#draw8.UIName
-#, fuzzy
-msgid  "Draw 8"
-msgstr "Draw 8"
-
-#: source/config/fragments/types/calc8.xcu#calc8.UIName
-#, fuzzy
-msgid  "Calc 8"
-msgstr "Calc 8"
-
-#: source/config/fragments/types/math8.xcu#math8.UIName
-#, fuzzy
-msgid  "Math 8"
-msgstr "Math 8"
-
-#: source/config/fragments/types/writer8_template.xcu#writer8_template.UIName
-#, fuzzy
-msgid  "Writer 8 Template"
-msgstr "Writer 8 Template"
-
-#: source/config/fragments/types/chart8.xcu#chart8.UIName
-#, fuzzy
-msgid  "Chart 8"
-msgstr "Chart 8"

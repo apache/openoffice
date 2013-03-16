@@ -177,7 +177,7 @@ msgstr "מוחלף"
 
 #: source/resource/strings.src#RID_STR_CONTROL_SUBSTITUTED_EPXPLAIN.String.Text
 msgid  "An error occurred while this control was being loaded. It was therefore replaced with a placeholder."
-msgstr ""
+msgstr "ארעה שגיאה בעת טעינת הפקד. הפקד הוחלף בשומר מקום.‏"
 
 #: source/resource/strings.src#RID_STR_READERROR.String.Text
 msgid  "Error reading data from database"
@@ -233,7 +233,7 @@ msgstr "שגיאה תחבירית בביטוי השאילתה"
 
 #: source/resource/strings.src#RID_STR_INCOMPATIBLE_TYPES.String.Text
 msgid  "The value types supported by the binding cannot be used for exchanging data with this control."
-msgstr ""
+msgstr "אין אפשרות להשתמש בטיפוסי הערך ‏‪(value types)‬‏ הנתמכים על ידי הידוק ‏‪(binding)‬‏ זה כדי להחליף נתונים באמצעות פקד זה.‏"
 
 #: source/resource/strings.src#RID_STR_LABEL_RECORD.String.Text
 msgid  "Record"
@@ -241,7 +241,7 @@ msgstr "רשומה"
 
 #: source/resource/strings.src#RID_STR_INVALID_VALIDATOR.String.Text
 msgid  "The control is connected to an external value binding, which at the same time acts as validator. You need to revoke the value binding, before you can set a new validator."
-msgstr ""
+msgstr "הפקד הנוכחי קשור לערך הידוק ‏‪(binding value)‬‏ חיצוני המשמש גם כמאמת ‏‪(validator)‬‏. כדי להגדיר מאמת חדש צריך קודם לבטל את ההידוק הקיים.‏"
 
 #: source/resource/strings.src#RID_STR_LABEL_OF.String.Text
 msgid  "of"
@@ -249,7 +249,7 @@ msgstr "מתוך"
 
 #: source/resource/strings.src#RID_STR_QUERY_SAVE_MODIFIED_ROW.String.Text
 msgid  "The content of the current form has been modified.\nDo you want to save your changes?"
-msgstr ""
+msgstr "תוכן הטופס הנוכחי שונה.\nהאם ברצונך לשמור את השינויים?"
 
 #: source/resource/strings.src#RID_STR_COULD_NOT_SET_ORDER.String.Text
 msgid  "Error setting the sort criteria"

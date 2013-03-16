@@ -39,6 +39,10 @@ msgstr "Choisissez les paramètres des titres, de la légende et de la grille"
 msgid  "Display grids"
 msgstr "Afficher les grilles"
 
+#: source/controller/dialogs/tp_3D_SceneGeometry.src#CUSTOMUNITTEXT_DEGREE.#define.CustomUnitText
+msgid  " degrees"
+msgstr " degrés"
+
 #: source/controller/dialogs/tp_3D_SceneGeometry.src#TP_3D_SCENEGEOMETRY.CBX_RIGHT_ANGLED_AXES.CheckBox.Text
 msgid  "~Right-angled axes"
 msgstr "~Axes à angle droit"
@@ -58,10 +62,6 @@ msgstr "Rotation ~Z"
 #: source/controller/dialogs/tp_3D_SceneGeometry.src#TP_3D_SCENEGEOMETRY.CBX_PERSPECTIVE.CheckBox.Text
 msgid  "~Perspective"
 msgstr "~Perspective"
-
-#: source/controller/dialogs/tp_3D_SceneGeometry.src#CUSTOMUNITTEXT_DEGREE.#define.CustomUnitText
-msgid  " degrees"
-msgstr " degrés"
 
 #: source/controller/dialogs/Strings_AdditionalControls.src#STR_3DSCHEME_SIMPLE.String.Text
 msgid  "Simple"
@@ -257,11 +257,11 @@ msgstr "Les nombres sont requis. Vérifiez votre saisie."
 
 #: source/controller/dialogs/Strings_Scale.src#STR_STEP_GT_ZERO.String.Text
 msgid  "The major interval requires a positive number. Check your input."
-msgstr ""
+msgstr "L'intervalle principal doit être un nombre positif. Vérifiez votre saisie."
 
 #: source/controller/dialogs/Strings_Scale.src#STR_BAD_LOGARITHM.String.Text
 msgid  "The logarithmic scale requires positive numbers. Check your input."
-msgstr ""
+msgstr "L'échelle logarithmique doit être supérieure à 0. Vérifiez votre saisie."
 
 #: source/controller/dialogs/Strings_Scale.src#STR_MIN_GREATER_MAX.String.Text
 msgid  "The minimum must be lower than the maximum. Check your input."
@@ -269,11 +269,11 @@ msgstr "Le minimum doit être inférieur au maximum. Vérifiez votre saisie."
 
 #: source/controller/dialogs/Strings_Scale.src#STR_INVALID_INTERVALS.String.Text
 msgid  "The major interval needs to be greater than the minor interval. Check your input."
-msgstr ""
+msgstr "L'intervalle principal doit être plus grand que le secondaire. Vérifiez votre saisie."
 
 #: source/controller/dialogs/Strings_Scale.src#STR_INVALID_TIME_UNIT.String.Text
 msgid  "The major and minor interval need to be greater or equal to the resolution. Check your input."
-msgstr ""
+msgstr "Les intervalles doivent être supérieurs ou égaux à la résolution . Vérifiez votre saisie."
 
 #: source/controller/dialogs/dlg_DataEditor.src#DLG_DIAGRAM_DATA.ModalDialog.Text
 msgid  "Data Table"
@@ -561,7 +561,7 @@ msgstr "~Ordre des points de données"
 
 #: source/controller/dialogs/tp_DataSource.src#TP_DATA_SOURCE.FT_CAPTION_FOR_WIZARD.FixedText.Text
 msgid  "Customize data ranges for individual data series"
-msgstr ""
+msgstr "Personnaliser les plages de données pour des séries de données individuelles"
 
 #: source/controller/dialogs/tp_DataSource.src#TP_DATA_SOURCE.FT_SERIES.FixedText.Text
 msgid  "Data ~series"
@@ -889,7 +889,7 @@ msgstr "Typographie asiatique"
 
 #: source/controller/dialogs/Strings.src#STR_OBJECT_AVERAGE_LINE_WITH_PARAMETERS.String.Text
 msgid  "Mean value line with value %AVERAGE_VALUE and standard deviation %STD_DEVIATION"
-msgstr ""
+msgstr "Courbe de valeur moyenne avec valeur %AVERAGE_VALUE et écart type %STD_DEVIATION"
 
 #: source/controller/dialogs/Strings.src#STR_OBJECT_AXIS.String.Text
 msgid  "Axis"
@@ -1097,11 +1097,11 @@ msgstr "Valeurs : %POINTVALUES"
 
 #: source/controller/dialogs/Strings.src#STR_TIP_DATAPOINT.String.Text
 msgid  "Data Point %POINTNUMBER, data series %SERIESNUMBER, values: %POINTVALUES"
-msgstr ""
+msgstr "Point de données %POINTNUMBER, séries de données %SERIESNUMBER, valeurs : %POINTVALUES"
 
 #: source/controller/dialogs/Strings.src#STR_STATUS_DATAPOINT_MARKED.String.Text
 msgid  "Data point %POINTNUMBER in data series %SERIESNUMBER selected, values: %POINTVALUES"
-msgstr ""
+msgstr "Point de données %POINTNUMBER dans la série de données %SERIESNUMBER marquée, valeurs : %POINTVALUES"
 
 #: source/controller/dialogs/Strings.src#STR_STATUS_OBJECT_MARKED.String.Text
 msgid  "%OBJECTNAME selected"
@@ -1257,7 +1257,7 @@ msgstr "Sélectionnez une plage pour les barres d'erreur négatives"
 
 #: source/controller/dialogs/Strings.src#STR_DATA_EDITOR_INCORRECT_INPUT.String.Text
 msgid  "Your last input is incorrect.\nIgnore this change and close the dialog?"
-msgstr ""
+msgstr "Votre dernière saisie est incorrecte.\nIgnorer cette modification et fermer la boîte de dialogue ?"
 
 #: source/controller/dialogs/Strings.src#STR_TEXT_DIRECTION_LTR.String.Text
 msgid  "Left-to-right"

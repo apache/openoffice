@@ -37,7 +37,7 @@ msgstr "ફોન્ટ્સ"
 
 #: source/smres.src#RID_FONTDIALOG.1.FixedText.Text
 msgid  "~Font"
-msgstr "ફોન્ટ  (~F)"
+msgstr "ફોન્ટ (~F)"
 
 #: source/smres.src#RID_FONTDIALOG.1.CheckBox.Text
 msgid  "~Bold"
@@ -445,11 +445,11 @@ msgstr "દૂર કરો (~D)"
 
 #: source/smres.src#RID_NOMATHTYPEFACEWARNING.WarningBox.Message
 msgid  "The 'StarMath' font has not been installed.\nWithout this font %PRODUCTNAME Math cannot function correctly.\nPlease install this font and restart %PRODUCTNAME Math."
-msgstr ""
+msgstr "'StarMath' ફોન્ટ સ્થાપિત થયેલ નથી.\nઆ ફોન્ટ વિના %PRODUCTNAME ગણિત યોગ્ય રીતે કામ આપી શકે નહિં.\nમહેરબાની કરીને આ ફોન્ટ સ્થાપિત કરો અને %PRODUCTNAME ગણિત પુનઃશરૂ કરો."
 
 #: source/smres.src#RID_DEFAULTSAVEQUERY.QueryBox.Message
 msgid  "Should the changes be saved as defaults?\n\nThese changes will apply for all new formulas."
-msgstr ""
+msgstr "શું ફેરફારો મૂળભૂતો તરીકે સંગ્રહાવા જોઈએ?\n\nઆ ફેરફારો બધા નવા સૂત્રો માટે લાગુ પડશે."
 
 #: source/smres.src#RID_FONTREGULAR.String.Text
 msgid  "Standard"
@@ -558,6 +558,10 @@ msgstr "સાન્સ"
 #: source/smres.src#RID_FONTMENU.7.MenuItem.Text
 msgid  "Fixed"
 msgstr "ચોક્કસ"
+
+#: source/smres.src#CMDBOXWINDOW_TEXT.#define.Text
+msgid  "Commands"
+msgstr "આદેશો"
 
 #: source/smres.src#RID_DOCUMENTSTR.String.Text
 msgid  "Formula"
@@ -701,78 +705,59 @@ msgstr "પાના પર બંધબેસાડો (~p)"
 msgid  "~Scaling"
 msgstr "માપન (~S)"
 
-#: source/smres.src#CMDBOXWINDOW_TEXT.#define.Text
-#, fuzzy
-msgid  "Commands"
-msgstr "આદેશો"
-
 #: source/commands.src#RID_COMMANDMENU.RID_UNBINOPS_MENU.MenuItem.Text
-#, fuzzy
 msgid  "~Unary/Binary Operators"
 msgstr "એકાંકી/દ્રિઅંકી પ્રક્રિયકો (~U)"
 
 #: source/commands.src#RID_COMMANDMENU.RID_RELATIONS_MENU.MenuItem.Text
-#, fuzzy
 msgid  "~Relations"
 msgstr "સંબધો (~R)"
 
 #: source/commands.src#RID_COMMANDMENU.RID_SETOPERATIONS_MENU.MenuItem.Text
-#, fuzzy
 msgid  "~Set Operations"
 msgstr "સમૂહ પ્રક્રિયાઓ (~S)"
 
 #: source/commands.src#RID_COMMANDMENU.RID_FUNCTIONS_MENU.MenuItem.Text
-#, fuzzy
 msgid  "~Functions"
 msgstr "વિધેયો (~F)"
 
 #: source/commands.src#RID_COMMANDMENU.RID_FUNCTIONS_MENU.RID_FUNCTIONSOTHER1_MENU.MenuItem.Text
-#, fuzzy
 msgid  "More"
 msgstr "વધારે"
 
 #: source/commands.src#RID_COMMANDMENU.RID_OPERATORS_MENU.MenuItem.Text
-#, fuzzy
 msgid  "O~perators"
 msgstr "પ્રક્રિયકો (~p)"
 
 #: source/commands.src#RID_COMMANDMENU.RID_ATTRIBUTES_MENU.MenuItem.Text
-#, fuzzy
 msgid  "~Attributes"
 msgstr "લાક્ષણિકતાઓ (~A)"
 
 #: source/commands.src#RID_COMMANDMENU.RID_BRACKETS_MENU.MenuItem.Text
-#, fuzzy
 msgid  "~Brackets"
 msgstr "કૌંસો (~B)"
 
 #: source/commands.src#RID_COMMANDMENU.RID_FORMAT_MENU.MenuItem.Text
-#, fuzzy
 msgid  "For~mats"
 msgstr "બંધારણો (~m)"
 
 #: source/commands.src#RID_COMMANDMENU.RID_FORMAT_MENU.RID_NEWLINE.MenuItem.Text
-#, fuzzy
 msgid  "New Line"
 msgstr "નવી લીટી"
 
 #: source/commands.src#RID_COMMANDMENU.RID_FORMAT_MENU.RID_SBLANK.MenuItem.Text
-#, fuzzy
 msgid  "Small Gap"
 msgstr "નાની જગ્યા"
 
 #: source/commands.src#RID_COMMANDMENU.RID_FORMAT_MENU.RID_BLANK.MenuItem.Text
-#, fuzzy
 msgid  "Gap"
 msgstr "જગ્યા"
 
 #: source/commands.src#RID_COMMANDMENU.RID_FORMAT_MENU.RID_NOSPACE.MenuItem.Text
-#, fuzzy
 msgid  "nospace {...}"
 msgstr "nospace {...}"
 
 #: source/commands.src#RID_COMMANDMENU.RID_MISC_MENU.MenuItem.Text
-#, fuzzy
 msgid  "~Others"
 msgstr "બીજા (~O)"
 

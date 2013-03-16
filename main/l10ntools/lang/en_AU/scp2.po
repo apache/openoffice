@@ -37,12 +37,14 @@ msgid  "ActiveX Control"
 msgstr "ActiveX Control"
 
 #: source/activex/module_activex.ulf#STR_DESC_MODULE_OPTIONAL_ACTIVEXCONTROL
+#, fuzzy
 msgid  "Component to enable Microsoft Internet Explorer to display %PRODUCTNAME documents."
-msgstr ""
+msgstr "Component to enable Microsoft Internet Explorer to display %PRODUCTNAME documents."
 
 #: source/base/folderitem_base.ulf#STR_FI_TOOLTIP_BASE
+#, fuzzy
 msgid  "Manage databases, create queries and reports to track and manage your information by using Base."
-msgstr ""
+msgstr "Manage databases, create queries and reports to track and manage your information using Base."
 
 #: source/base/registryitem_base.ulf#STR_REG_VAL_OO_DATABASE
 #, fuzzy
@@ -140,8 +142,14 @@ msgid  "Spreadsheet"
 msgstr "Spreadsheet"
 
 #: source/calc/folderitem_calc.ulf#STR_FI_TOOLTIP_CALC
+#, fuzzy
 msgid  "Perform calculation, analyze information and manage lists in spreadsheets by using Calc."
-msgstr ""
+msgstr "Perform calculations, analyse information and manage lists in spreadsheets using Calc."
+
+#: source/calc/registryitem_calc.ulf#STR_REG_VAL_NEW
+#, fuzzy
+msgid  "&New"
+msgstr "&New"
 
 #: source/calc/registryitem_calc.ulf#STR_REG_VAL_SO60_SPREADSHEET
 #, fuzzy
@@ -183,19 +191,15 @@ msgstr "Microsoft Excel 97-2003 Template"
 msgid  "Microsoft Excel Template"
 msgstr "Microsoft Excel Template"
 
-#: source/calc/registryitem_calc.ulf#STR_REG_VAL_NEW
-#, fuzzy
-msgid  "&New"
-msgstr "&New"
-
 #: source/calc/module_calc.ulf#STR_NAME_MODULE_PRG_CALC
 #, fuzzy
 msgid  "%PRODUCTNAME Calc"
 msgstr "%PRODUCTNAME Calc"
 
 #: source/calc/module_calc.ulf#STR_DESC_MODULE_PRG_CALC
+#, fuzzy
 msgid  "Perform calculation, analyze information and manage lists in spreadsheets by using %PRODUCTNAME Calc."
-msgstr ""
+msgstr "Perform calculations, analyse information and manage lists in spreadsheets using %PRODUCTNAME Calc."
 
 #: source/calc/module_calc.ulf#STR_NAME_MODULE_PRG_CALC_BIN
 #, fuzzy
@@ -223,8 +227,14 @@ msgid  "Add-in"
 msgstr "Add-in"
 
 #: source/calc/module_calc.ulf#STR_DESC_MODULE_OPTIONAL_ADDINS
+#, fuzzy
 msgid  "Add-ins are additional programs that make new functions available in %PRODUCTNAME Calc."
-msgstr ""
+msgstr "Add-ins are additional programs that make new functions available in %PRODUCTNAME Calc."
+
+#: source/draw/registryitem_draw.ulf#STR_REG_VAL_NEW
+#, fuzzy
+msgid  "&New"
+msgstr "&New"
 
 #: source/draw/registryitem_draw.ulf#STR_REG_VAL_SO60_DRAWING
 #, fuzzy
@@ -246,11 +256,6 @@ msgstr "OpenDocument Drawing"
 msgid  "OpenDocument Drawing Template"
 msgstr "OpenDocument Drawing Template"
 
-#: source/draw/registryitem_draw.ulf#STR_REG_VAL_NEW
-#, fuzzy
-msgid  "&New"
-msgstr "&New"
-
 #: source/draw/folderitem_draw.ulf#STR_FI_NAME_ZEICHNUNG
 #, fuzzy
 msgid  "Drawing"
@@ -267,8 +272,9 @@ msgid  "%PRODUCTNAME Draw"
 msgstr "%PRODUCTNAME Draw"
 
 #: source/draw/module_draw.ulf#STR_DESC_MODULE_PRG_DRAW
+#, fuzzy
 msgid  "Create and edit drawings, flow charts, and logos by using %PRODUCTNAME Draw."
-msgstr ""
+msgstr "Create and edit drawings, flow charts and logos using %PRODUCTNAME Draw."
 
 #: source/draw/module_draw.ulf#STR_NAME_MODULE_PRG_DRAW_BIN
 #, fuzzy
@@ -296,8 +302,9 @@ msgid  "GNOME Integration"
 msgstr "GNOME Integration"
 
 #: source/gnome/module_gnome.ulf#STR_DESC_MODULE_OPTIONAL_GNOME
+#, fuzzy
 msgid  "System integration of %PRODUCTNAME %PRODUCTVERSION into Gnome Desktop Environment."
-msgstr ""
+msgstr "System integration of %PRODUCTNAME %PRODUCTVERSION into Gnome Desktop Environment."
 
 #: source/graphicfilter/module_graphicfilter.ulf#STR_NAME_MODULE_OPTIONAL_GRFFLT
 #, fuzzy
@@ -455,8 +462,14 @@ msgid  "Presentation"
 msgstr "Presentation"
 
 #: source/impress/folderitem_impress.ulf#STR_FI_TOOLTIP_IMPRESS
+#, fuzzy
 msgid  "Create and edit presentations for slideshows, meeting and Web pages by using Impress."
-msgstr ""
+msgstr "Create and edit presentations for slideshows, meeting and Web pages using Impress."
+
+#: source/impress/registryitem_impress.ulf#STR_REG_VAL_NEW
+#, fuzzy
+msgid  "&New"
+msgstr "&New"
 
 #: source/impress/registryitem_impress.ulf#STR_REG_VAL_SO60_SHOW
 #, fuzzy
@@ -508,19 +521,15 @@ msgstr "Microsoft PowerPoint 97-2003 Template"
 msgid  "Microsoft PowerPoint Template"
 msgstr "Microsoft PowerPoint Template"
 
-#: source/impress/registryitem_impress.ulf#STR_REG_VAL_NEW
-#, fuzzy
-msgid  "&New"
-msgstr "&New"
-
 #: source/impress/module_impress.ulf#STR_NAME_MODULE_PRG_IMPRESS
 #, fuzzy
 msgid  "%PRODUCTNAME Impress"
 msgstr "%PRODUCTNAME Impress"
 
 #: source/impress/module_impress.ulf#STR_DESC_MODULE_PRG_IMPRESS
+#, fuzzy
 msgid  "Create and edit presentations for slideshows, meeting and Web pages by using %PRODUCTNAME Impress."
-msgstr ""
+msgstr "Create and edit presentations for slideshows, meeting and Web pages using %PRODUCTNAME Impress."
 
 #: source/impress/module_impress.ulf#STR_NAME_MODULE_PRG_IMPRESS_BIN
 #, fuzzy
@@ -558,8 +567,9 @@ msgid  "Mobile Device Filters"
 msgstr "Mobile Device Filters"
 
 #: source/javafilter/module_javafilter.ulf#STR_DESC_MODULE_OPTIONAL_JAVAFILTER
+#, fuzzy
 msgid  "Text and spreadsheet filters to support import/export for Palm handheld or Pocket PC (Java required)."
-msgstr ""
+msgstr "Text and spreadsheet filters to support import/export for Palm handheld or Pocket PC (Java required)."
 
 #: source/javafilter/module_javafilter.ulf#STR_NAME_MODULE_OPTIONAL_JAVAFILTER_PALM
 #, fuzzy
@@ -687,8 +697,9 @@ msgid  "%PRODUCTNAME Math"
 msgstr "%PRODUCTNAME Math"
 
 #: source/math/module_math.ulf#STR_DESC_MODULE_PRG_MATH
+#, fuzzy
 msgid  "Create and edit scientific formulas and equations by using %PRODUCTNAME Math."
-msgstr ""
+msgstr "Create and edit scientific formulae and equations using %PRODUCTNAME Math."
 
 #: source/math/module_math.ulf#STR_NAME_MODULE_PRG_MATH_BIN
 #, fuzzy
@@ -715,6 +726,11 @@ msgstr "Help about %PRODUCTNAME Math"
 msgid  "Create and edit scientific formulas and equations by using Math."
 msgstr "Create and edit scientific formulae and equations using Math."
 
+#: source/math/registryitem_math.ulf#STR_REG_VAL_NEW
+#, fuzzy
+msgid  "&New"
+msgstr "&New"
+
 #: source/math/registryitem_math.ulf#STR_REG_VAL_SO60_FORMULA
 #, fuzzy
 msgid  "%SXWFORMATNAME %SXWFORMATVERSION Formula"
@@ -725,19 +741,20 @@ msgstr "%SXWFORMATNAME %SXWFORMATVERSION Formula"
 msgid  "OpenDocument Formula"
 msgstr "OpenDocument Formula"
 
-#: source/math/registryitem_math.ulf#STR_REG_VAL_NEW
-#, fuzzy
-msgid  "&New"
-msgstr "&New"
-
 #: source/onlineupdate/module_onlineupdate.ulf#STR_NAME_MODULE_OPT_ONLINEUPDATE
 #, fuzzy
 msgid  "Online Update"
 msgstr "Online Update"
 
 #: source/onlineupdate/module_onlineupdate.ulf#STR_DESC_MODULE_OPT_ONLINEUPDATE
+#, fuzzy
 msgid  "Get automatically notified when a new update of %PRODUCTNAME becomes available."
-msgstr ""
+msgstr "Get automatically notified when a new update of %PRODUCTNAME becomes available."
+
+#: source/ooo/registryitem_ooo.ulf#STR_REG_VAL_NEW
+#, fuzzy
+msgid  "&New"
+msgstr "&New"
 
 #: source/ooo/registryitem_ooo.ulf#STR_REG_VAL_INSTALL
 #, fuzzy
@@ -748,19 +765,14 @@ msgstr "&Install"
 msgid  "OpenOffice.org 1.1 Configuration File"
 msgstr ""
 
-#: source/ooo/registryitem_ooo.ulf#STR_REG_VAL_APPCAPABILITY_DESCRIPTION_OOO
-msgid  "office productivity suite based on Apache OpenOffice project"
-msgstr ""
-
-#: source/ooo/registryitem_ooo.ulf#STR_REG_VAL_NEW
-#, fuzzy
-msgid  "&New"
-msgstr "&New"
-
 #: source/ooo/registryitem_ooo.ulf#STR_REG_VAL_SO50_TEMPLATE_OOO
 #, fuzzy
 msgid  "StarOffice 5.0 Template"
 msgstr "StarOffice 5.0 Template"
+
+#: source/ooo/registryitem_ooo.ulf#STR_REG_VAL_APPCAPABILITY_DESCRIPTION_OOO
+msgid  "office productivity suite based on Apache OpenOffice project"
+msgstr ""
 
 #: source/ooo/module_systemint.ulf#STR_NAME_MODULE_OPTIONAL_SYSTEMINTEGRATION
 #, fuzzy
@@ -798,8 +810,9 @@ msgid  "Optional Components"
 msgstr "Optional Components"
 
 #: source/ooo/module_ooo.ulf#STR_DESC_MODULE_OPTIONAL
+#, fuzzy
 msgid  "Common components and additional programs shared by all %PRODUCTNAME programs."
-msgstr ""
+msgstr "Common components and additional programs shared by all %PRODUCTNAME programs."
 
 #: source/ooo/module_ooo.ulf#STR_NAME_MODULE_DICTIONARIES
 #, fuzzy
@@ -882,8 +895,9 @@ msgid  "Open Document"
 msgstr "Open Document"
 
 #: source/ooo/folderitem_ooo.ulf#STR_FI_TOOLTIP_SOFFICE
+#, fuzzy
 msgid  "The office productivity suite compatible to the open and standardized ODF document format. Supported by The Apache Software Foundation."
-msgstr ""
+msgstr "The office productivity suite compatible to the open and standardised ODF document format. Supported by The Apache Software Foundation."
 
 #: source/ooo/module_langpack.ulf#STR_NAME_MODULE_ROOT_LANGPACK
 #, fuzzy
@@ -1909,8 +1923,9 @@ msgid  "English (South Africa)"
 msgstr "English (South Africa)"
 
 #: source/ooo/module_langpack.ulf#STR_DESC_MODULE_LANGPACK_EN_ZA
+#, fuzzy
 msgid  "Installs English (South Africa) support in %PRODUCTNAME %PRODUCTVERSION"
-msgstr ""
+msgstr "Installs English (South Africa) support in %PRODUCTNAME %PRODUCTVERSION"
 
 #: source/ooo/module_langpack.ulf#STR_NAME_MODULE_LANGPACK_EN_GB
 #, fuzzy
@@ -1918,8 +1933,9 @@ msgid  "English (United Kingdom)"
 msgstr "English (United Kingdom)"
 
 #: source/ooo/module_langpack.ulf#STR_DESC_MODULE_LANGPACK_EN_GB
+#, fuzzy
 msgid  "Installs English (United Kingdom) support in %PRODUCTNAME %PRODUCTVERSION"
-msgstr ""
+msgstr "Installs English (United Kingdom) support in %PRODUCTNAME %PRODUCTVERSION"
 
 #: source/ooo/module_langpack.ulf#STR_NAME_MODULE_LANGPACK_UR_IN
 #, fuzzy
@@ -2055,8 +2071,9 @@ msgid  "Python-UNO Bridge"
 msgstr "Python-UNO Bridge"
 
 #: source/python/module_python.ulf#STR_DESC_MODULE_OPTIONAL_PYTHON
+#, fuzzy
 msgid  "Adds the ability to automate %PRODUCTNAME with the python scripting language. See http://udk.openoffice.org/python/python-bridge.html for a complete documentation."
-msgstr ""
+msgstr "Adds the ability to automate %PRODUCTNAME with the python scripting language. See http://udk.openoffice.org/python/python-bridge.html for complete documentation."
 
 #: source/quickstart/module_quickstart.ulf#STR_NAME_MODULE_OPTIONAL_QUICKSTART
 #, fuzzy
@@ -2064,8 +2081,9 @@ msgid  "Quickstarter"
 msgstr "Quickstarter"
 
 #: source/quickstart/module_quickstart.ulf#STR_DESC_MODULE_OPTIONAL_QUICKSTART
+#, fuzzy
 msgid  "Loads basic components on system start to accelerate start up time of %PRODUCTNAME %PRODUCTVERSION."
-msgstr ""
+msgstr "Loads basic components on system start to accelerate start up time of %PRODUCTNAME %PRODUCTVERSION."
 
 #: source/sdkoo/module_sdkoo.ulf#STR_NAME_MODULE_OPTIONAL_SDKOO
 #, fuzzy
@@ -2073,8 +2091,9 @@ msgid  "Software Development Kit (SDK)"
 msgstr "Software Development Kit (SDK)"
 
 #: source/sdkoo/module_sdkoo.ulf#STR_DESC_MODULE_OPTIONAL_SDKOO
+#, fuzzy
 msgid  "The SDK provides all necessary tools, examples and documentation to program with and for the office."
-msgstr ""
+msgstr "The SDK provides all necessary tools, examples and documentation to program with and for the office."
 
 #: source/winexplorerext/module_winexplorerext.ulf#STR_NAME_MODULE_OPTIONAL_WINDOWS_EXPLORER_EXTENSIONS
 #, fuzzy
@@ -2082,8 +2101,9 @@ msgid  "Windows Explorer Extension"
 msgstr "Windows Explorer Extension"
 
 #: source/winexplorerext/module_winexplorerext.ulf#STR_DESC_MODULE_OPTIONAL_WINDOWS_EXPLORER_EXTENSIONS
+#, fuzzy
 msgid  "Enables the Microsoft Windows Explorer to show information about %PRODUCTNAME documents, such as thumbnail previews."
-msgstr ""
+msgstr "Enables the Microsoft Windows Explorer to show information about %PRODUCTNAME documents, such as thumbnail previews."
 
 #: source/writer/folderitem_writer.ulf#STR_FI_NAME_HTMLDOKUMENT
 #, fuzzy
@@ -2096,8 +2116,14 @@ msgid  "Text Document"
 msgstr "Text Document"
 
 #: source/writer/folderitem_writer.ulf#STR_FI_TOOLTIP_WRITER
+#, fuzzy
 msgid  "Create and edit text and graphics in letters, reports, documents and Web pages by using Writer."
-msgstr ""
+msgstr "Create and edit text and graphics in letters, reports, documents and Web pages using Writer."
+
+#: source/writer/registryitem_writer.ulf#STR_REG_VAL_NEW
+#, fuzzy
+msgid  "&New"
+msgstr "&New"
 
 #: source/writer/registryitem_writer.ulf#STR_REG_VAL_SO60_TEXT
 #, fuzzy
@@ -2159,19 +2185,15 @@ msgstr "Microsoft Word Template"
 msgid  "Rich Text Document"
 msgstr "Rich Text Document"
 
-#: source/writer/registryitem_writer.ulf#STR_REG_VAL_NEW
-#, fuzzy
-msgid  "&New"
-msgstr "&New"
-
 #: source/writer/module_writer.ulf#STR_NAME_MODULE_PRG_WRT
 #, fuzzy
 msgid  "%PRODUCTNAME Writer"
 msgstr "%PRODUCTNAME Writer"
 
 #: source/writer/module_writer.ulf#STR_DESC_MODULE_PRG_WRT
+#, fuzzy
 msgid  "Create and edit text and graphics in letters, reports, documents and Web pages by using %PRODUCTNAME Writer."
-msgstr ""
+msgstr "Create and edit text and graphics in letters, reports, documents and Web pages using %PRODUCTNAME Writer."
 
 #: source/writer/module_writer.ulf#STR_NAME_MODULE_PRG_WRT_BIN
 #, fuzzy

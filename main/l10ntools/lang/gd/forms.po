@@ -89,11 +89,11 @@ msgstr "Feumaidh an t-sreang a bhith $2 caractair(ean) a dh'fhaid."
 
 #: source/resource/xforms.src#RID_STR_XFORMS_VALUE_MIN_LENGTH.String.Text
 msgid  "The string must be at least $2 characters long."
-msgstr ""
+msgstr "Feumaidh an t-sreang a bhith $2 caractair(ean) a dh'fhaid air a' char as lugha."
 
 #: source/resource/xforms.src#RID_STR_XFORMS_VALUE_MAX_LENGTH.String.Text
 msgid  "The string can only be $2 characters long at most."
-msgstr ""
+msgstr "Chan fhaod an t-sreang a bhith ach $2 caractair(ean) a dh'fhaid air a' char as motha."
 
 #: source/resource/xforms.src#RID_STR_DATATYPE_STRING.String.Text
 msgid  "String"
@@ -157,7 +157,7 @@ msgstr "Thachair mearachd rè an luachaidh"
 
 #: source/resource/xforms.src#RID_STR_XFORMS_PATTERN_DOESNT_MATCH.String.Text
 msgid  "The string '$1' does not match the required regular expression '$2'."
-msgstr ""
+msgstr "Chan eil an t-sreang '$1' a' freagairt ris an Regular Expression '$2' air a bheil feum."
 
 #: source/resource/xforms.src#RID_STR_XFORMS_BINDING_UI_NAME.String.Text
 msgid  "Binding"
@@ -165,7 +165,7 @@ msgstr "Ceangladh"
 
 #: source/resource/strings.src#RID_BASELISTBOX_ERROR_FILLLIST.String.Text
 msgid  "The contents of a combo box or list field could not be determined."
-msgstr ""
+msgstr "Cha do ghabh susbaint de bhogsa co-mheasgaichte raon liosta a dhearbhadh."
 
 #: source/resource/strings.src#RID_STR_IMPORT_GRAPHIC.String.Text
 msgid  "Insert graphics"
@@ -177,7 +177,7 @@ msgstr "air a chur 'na àite"
 
 #: source/resource/strings.src#RID_STR_CONTROL_SUBSTITUTED_EPXPLAIN.String.Text
 msgid  "An error occurred while this control was being loaded. It was therefore replaced with a placeholder."
-msgstr ""
+msgstr "Thachair mearachd fhad 's a bha an t-inneal-smachd seo 'ga luchdadh. Chaidh glèidheadair-àite a chur 'na àite air sgàth sin."
 
 #: source/resource/strings.src#RID_STR_READERROR.String.Text
 msgid  "Error reading data from database"
@@ -233,7 +233,7 @@ msgstr "Tha mearachd co-chàraidh sa cheist"
 
 #: source/resource/strings.src#RID_STR_INCOMPATIBLE_TYPES.String.Text
 msgid  "The value types supported by the binding cannot be used for exchanging data with this control."
-msgstr ""
+msgstr "Tha an ceangladh a' cur taic ri seòrsa de luachan nach urrainn dhut cleachdadh gus dàta iomlaid leis an inneal-smachd seo."
 
 #: source/resource/strings.src#RID_STR_LABEL_RECORD.String.Text
 msgid  "Record"
@@ -241,7 +241,7 @@ msgstr "Reacord"
 
 #: source/resource/strings.src#RID_STR_INVALID_VALIDATOR.String.Text
 msgid  "The control is connected to an external value binding, which at the same time acts as validator. You need to revoke the value binding, before you can set a new validator."
-msgstr ""
+msgstr "Tha an t-inneal-smachd seo 'ga cheangal ri ceangladh luach air an taobh a-muigh 's tha e ag obair mar dhearbhair aig an aon àm. Tha agad ris a' cheangal luach ais-ghairm mus urrainn dhut dearbhair ùr a shuidheachadh."
 
 #: source/resource/strings.src#RID_STR_LABEL_OF.String.Text
 msgid  "of"
@@ -249,7 +249,7 @@ msgstr "de"
 
 #: source/resource/strings.src#RID_STR_QUERY_SAVE_MODIFIED_ROW.String.Text
 msgid  "The content of the current form has been modified.\nDo you want to save your changes?"
-msgstr ""
+msgstr "Chaidh susbaint an fhoirm làithreach atharrachadh.\nA bheil thu airson na dh'atharraich thu a shàbhaladh?"
 
 #: source/resource/strings.src#RID_STR_COULD_NOT_SET_ORDER.String.Text
 msgid  "Error setting the sort criteria"
@@ -265,7 +265,7 @@ msgstr "Tha feum air paramadairean gus am foincsean seo a thoirt gu buil."
 
 #: source/resource/strings.src#RID_STR_FEATURE_NOT_EXECUTABLE.String.Text
 msgid  "This function cannot be executed, but is only for status queries."
-msgstr ""
+msgstr "Cha ghabh am foincsean seo a thoirt gu buil. 'S ann a chum ceistean inbhe a tha e."
 
 #: source/resource/strings.src#RID_STR_FEATURE_UNKNOWN.String.Text
 msgid  "Unknown function."

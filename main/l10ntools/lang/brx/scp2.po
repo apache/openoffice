@@ -37,11 +37,11 @@ msgstr "मावथि X दबथायनाय"
 
 #: source/activex/module_activex.ulf#STR_DESC_MODULE_OPTIONAL_ACTIVEXCONTROL
 msgid  "Component to enable Microsoft Internet Explorer to display %PRODUCTNAME documents."
-msgstr ""
+msgstr "%PRODUCTNAME फोरमान बिलाइफोर दिनथिफुंनो मायक्र'सफ्ट इन्टारनेट संदानग्रा हाहोनो कमपनेन्ट।"
 
 #: source/base/folderitem_base.ulf#STR_FI_TOOLTIP_BASE
 msgid  "Manage databases, create queries and reports to track and manage your information by using Base."
-msgstr ""
+msgstr "बेस बाहायनानै डाटाबेस मेनेज खालामा, सोंनायफोरखौ सोरजि आरो ट्रेकसिम फोरमायो आरो नोंथांनि मोनथिहोनायखौ मेनेज खालामो।"
 
 #: source/base/registryitem_base.ulf#STR_REG_VAL_OO_DATABASE
 msgid  "OpenDocument Database"
@@ -121,7 +121,11 @@ msgstr "स्प्रेडशिट"
 
 #: source/calc/folderitem_calc.ulf#STR_FI_TOOLTIP_CALC
 msgid  "Perform calculation, analyze information and manage lists in spreadsheets by using Calc."
-msgstr ""
+msgstr "कल्क बाहायनानै साननायखौ मावफुं, मोनथिहोनायखौ बिजिर आरो स्प्रेडशिटफोरनि फारि बिलाइफोरखौ मेनेज खालाम।"
+
+#: source/calc/registryitem_calc.ulf#STR_REG_VAL_NEW
+msgid  "&New"
+msgstr "&New"
 
 #: source/calc/registryitem_calc.ulf#STR_REG_VAL_SO60_SPREADSHEET
 msgid  "%SXWFORMATNAME %SXWFORMATVERSION Spreadsheet"
@@ -155,17 +159,13 @@ msgstr ""
 msgid  "Microsoft Excel Template"
 msgstr ""
 
-#: source/calc/registryitem_calc.ulf#STR_REG_VAL_NEW
-msgid  "&New"
-msgstr "&New"
-
 #: source/calc/module_calc.ulf#STR_NAME_MODULE_PRG_CALC
 msgid  "%PRODUCTNAME Calc"
 msgstr "%PRODUCTNAME कल्क"
 
 #: source/calc/module_calc.ulf#STR_DESC_MODULE_PRG_CALC
 msgid  "Perform calculation, analyze information and manage lists in spreadsheets by using %PRODUCTNAME Calc."
-msgstr ""
+msgstr "%PRODUCTNAME कल्क बाहायनानै साननायखौ मावफुं, मोनथिहोनायखौ बिजिर आरो स्प्रेडशिटफोरनि फारि बिलाइफोरखौ मेनेज खालाम।"
 
 #: source/calc/module_calc.ulf#STR_NAME_MODULE_PRG_CALC_BIN
 msgid  "Program Module"
@@ -189,7 +189,11 @@ msgstr "Add-in"
 
 #: source/calc/module_calc.ulf#STR_DESC_MODULE_OPTIONAL_ADDINS
 msgid  "Add-ins are additional programs that make new functions available in %PRODUCTNAME Calc."
-msgstr ""
+msgstr "%PRODUCTNAME कल्कआव Add-insआ दालाय हाबाफारिफोर जाय मोननो हाथाव गोदान हाबाफारिफोर बानायो।"
+
+#: source/draw/registryitem_draw.ulf#STR_REG_VAL_NEW
+msgid  "&New"
+msgstr "&New"
 
 #: source/draw/registryitem_draw.ulf#STR_REG_VAL_SO60_DRAWING
 msgid  "%SXWFORMATNAME %SXWFORMATVERSION Drawing"
@@ -207,17 +211,13 @@ msgstr "उदां फोरमानबिलाइ सावगारि"
 msgid  "OpenDocument Drawing Template"
 msgstr "उदां फोरमानबिलाइ सावगारि टेमप्लेट"
 
-#: source/draw/registryitem_draw.ulf#STR_REG_VAL_NEW
-msgid  "&New"
-msgstr "&New"
-
 #: source/draw/folderitem_draw.ulf#STR_FI_NAME_ZEICHNUNG
 msgid  "Drawing"
 msgstr "सावगारि"
 
 #: source/draw/folderitem_draw.ulf#STR_FI_TOOLTIP_DRAW
 msgid  "Create and edit drawings, flow charts, and logos by using Draw."
-msgstr ""
+msgstr "ड्र बाहायनानै सावगारिफोरखौ सोरजि आरो सुजु, चार्टसखौ फ्ल' खालाम, आरो ड्र बाहायनानै ल'ग'फोरखौ बानायो।"
 
 #: source/draw/module_draw.ulf#STR_NAME_MODULE_PRG_DRAW
 msgid  "%PRODUCTNAME Draw"
@@ -225,7 +225,7 @@ msgstr "%PRODUCTNAME सावगारि"
 
 #: source/draw/module_draw.ulf#STR_DESC_MODULE_PRG_DRAW
 msgid  "Create and edit drawings, flow charts, and logos by using %PRODUCTNAME Draw."
-msgstr ""
+msgstr "%PRODUCTNAME ड्र बाहायनानै सावगारिफोरखौ सोरजि आरो सुजु, चार्टसखौ फ्ल' खालाम, आरो %PRODUCTNAME ड्र बाहायनानै ल'ग'फोरखौ बानायो।"
 
 #: source/draw/module_draw.ulf#STR_NAME_MODULE_PRG_DRAW_BIN
 msgid  "Program Module"
@@ -377,7 +377,11 @@ msgstr "प्रेजेनटेसन"
 
 #: source/impress/folderitem_impress.ulf#STR_FI_TOOLTIP_IMPRESS
 msgid  "Create and edit presentations for slideshows, meeting and Web pages by using Impress."
-msgstr ""
+msgstr "इम्प्रेस बाहायना स्लाइडश'स, मिटिं आरो वेब बिखंनि थाखाय प्रेजेनटेसन सोरजि आरो सुजु।"
+
+#: source/impress/registryitem_impress.ulf#STR_REG_VAL_NEW
+msgid  "&New"
+msgstr "&New"
 
 #: source/impress/registryitem_impress.ulf#STR_REG_VAL_SO60_SHOW
 msgid  "Show"
@@ -419,17 +423,13 @@ msgstr ""
 msgid  "Microsoft PowerPoint Template"
 msgstr ""
 
-#: source/impress/registryitem_impress.ulf#STR_REG_VAL_NEW
-msgid  "&New"
-msgstr "&New"
-
 #: source/impress/module_impress.ulf#STR_NAME_MODULE_PRG_IMPRESS
 msgid  "%PRODUCTNAME Impress"
 msgstr "%PRODUCTNAME इम्प्रेस"
 
 #: source/impress/module_impress.ulf#STR_DESC_MODULE_PRG_IMPRESS
 msgid  "Create and edit presentations for slideshows, meeting and Web pages by using %PRODUCTNAME Impress."
-msgstr ""
+msgstr "%PRODUCTNAME इम्प्रेस बाहायना स्लाइडश'स, मिटिं आरो वेब बिखंनि थाखाय प्रेजेनटेसन सोरजि आरो सुजु।"
 
 #: source/impress/module_impress.ulf#STR_NAME_MODULE_PRG_IMPRESS_BIN
 msgid  "Program Module"
@@ -461,7 +461,7 @@ msgstr "गिदिंथिंनाय आदबखायदा फिल्�
 
 #: source/javafilter/module_javafilter.ulf#STR_DESC_MODULE_OPTIONAL_JAVAFILTER
 msgid  "Text and spreadsheet filters to support import/export for Palm handheld or Pocket PC (Java required)."
-msgstr ""
+msgstr "पाम हेन्डहेल्डनि एबा पकेट PC (जावा गोनांथि जानाय)नि थाखाय लाबोनाय/दैथायनायाव मदत खालामनो फराय बिजाब आरो स्प्रेडशिट फिल्टारफोर"
 
 #: source/javafilter/module_javafilter.ulf#STR_NAME_MODULE_OPTIONAL_JAVAFILTER_PALM
 msgid  "Palm"
@@ -565,7 +565,7 @@ msgstr "%PRODUCTNAME सानखानथि"
 
 #: source/math/module_math.ulf#STR_DESC_MODULE_PRG_MATH
 msgid  "Create and edit scientific formulas and equations by using %PRODUCTNAME Math."
-msgstr ""
+msgstr "%PRODUCTNAME सानखानथि बाहायनानै गोनोखोआरि फरमुलाफोर आरो समानथिफोरखौ सोरजि आरो सुजु।"
 
 #: source/math/module_math.ulf#STR_NAME_MODULE_PRG_MATH_BIN
 msgid  "Program Module"
@@ -587,6 +587,10 @@ msgstr "%PRODUCTNAME सानखानथिनि सोमोन्दै म
 msgid  "Create and edit scientific formulas and equations by using Math."
 msgstr "सानखानथि बाहायनानै गोनोखोआरि फरमुलाफोर आरो समानथिफोरखौ सोरजि आरो सुजु।"
 
+#: source/math/registryitem_math.ulf#STR_REG_VAL_NEW
+msgid  "&New"
+msgstr "&New"
+
 #: source/math/registryitem_math.ulf#STR_REG_VAL_SO60_FORMULA
 msgid  "%SXWFORMATNAME %SXWFORMATVERSION Formula"
 msgstr "%PRODUCTNAME %SXWFORMATVERSION फरमुला"
@@ -594,10 +598,6 @@ msgstr "%PRODUCTNAME %SXWFORMATVERSION फरमुला"
 #: source/math/registryitem_math.ulf#STR_REG_VAL_OO_FORMULA
 msgid  "OpenDocument Formula"
 msgstr "उदां फोरमानबिलाइ फरमुला"
-
-#: source/math/registryitem_math.ulf#STR_REG_VAL_NEW
-msgid  "&New"
-msgstr "&New"
 
 #: source/onlineupdate/module_onlineupdate.ulf#STR_NAME_MODULE_OPT_ONLINEUPDATE
 msgid  "Online Update"
@@ -607,6 +607,10 @@ msgstr ""
 msgid  "Get automatically notified when a new update of %PRODUCTNAME becomes available."
 msgstr ""
 
+#: source/ooo/registryitem_ooo.ulf#STR_REG_VAL_NEW
+msgid  "&New"
+msgstr "&New"
+
 #: source/ooo/registryitem_ooo.ulf#STR_REG_VAL_INSTALL
 msgid  "&Install"
 msgstr ""
@@ -615,17 +619,13 @@ msgstr ""
 msgid  "OpenOffice.org 1.1 Configuration File"
 msgstr ""
 
-#: source/ooo/registryitem_ooo.ulf#STR_REG_VAL_APPCAPABILITY_DESCRIPTION_OOO
-msgid  "office productivity suite based on Apache OpenOffice project"
-msgstr ""
-
-#: source/ooo/registryitem_ooo.ulf#STR_REG_VAL_NEW
-msgid  "&New"
-msgstr "&New"
-
 #: source/ooo/registryitem_ooo.ulf#STR_REG_VAL_SO50_TEMPLATE_OOO
 msgid  "StarOffice 5.0 Template"
 msgstr "StarOffice 5.0 टेमप्लेट"
+
+#: source/ooo/registryitem_ooo.ulf#STR_REG_VAL_APPCAPABILITY_DESCRIPTION_OOO
+msgid  "office productivity suite based on Apache OpenOffice project"
+msgstr ""
 
 #: source/ooo/module_systemint.ulf#STR_NAME_MODULE_OPTIONAL_SYSTEMINTEGRATION
 msgid  "Desktop integration"
@@ -657,7 +657,7 @@ msgstr "उफ्रायारि कप'नेन्टफोर"
 
 #: source/ooo/module_ooo.ulf#STR_DESC_MODULE_OPTIONAL
 msgid  "Common components and additional programs shared by all %PRODUCTNAME programs."
-msgstr ""
+msgstr "गासै %PRODUCTNAME हाबाफारिफोर बाहागो खालाम जानाय क'मन कप'नेन्टफोर आरो दालाय हाबाफारिफोर।"
 
 #: source/ooo/module_ooo.ulf#STR_NAME_MODULE_DICTIONARIES
 msgid  "Dictionaries"
@@ -1669,7 +1669,7 @@ msgstr "पाइथन-UNO दालां"
 
 #: source/python/module_python.ulf#STR_DESC_MODULE_OPTIONAL_PYTHON
 msgid  "Adds the ability to automate %PRODUCTNAME with the python scripting language. See http://udk.openoffice.org/python/python-bridge.html for a complete documentation."
-msgstr ""
+msgstr "%PRODUCTNAME पाइथन स्क्रिप्ट रावजों सालायनो हानाय गोहोखौ दाजाब। मोनसे आबुं फोरमान बिलाइनि थाखाय http://udk.openoffice.org/python/python-bridge.html आव नाय।"
 
 #: source/quickstart/module_quickstart.ulf#STR_NAME_MODULE_OPTIONAL_QUICKSTART
 msgid  "Quickstarter"
@@ -1677,7 +1677,7 @@ msgstr "गोख्रै जागायग्रा"
 
 #: source/quickstart/module_quickstart.ulf#STR_DESC_MODULE_OPTIONAL_QUICKSTART
 msgid  "Loads basic components on system start to accelerate start up time of %PRODUCTNAME %PRODUCTVERSION."
-msgstr ""
+msgstr "%PRODUCTNAME %PRODUCTVERSION नि जागायनाय समखौ बाराय होनो सिस्टेम जागायनायाव गुदि ल'ड खालाम।"
 
 #: source/sdkoo/module_sdkoo.ulf#STR_NAME_MODULE_OPTIONAL_SDKOO
 msgid  "Software Development Kit (SDK)"
@@ -1693,7 +1693,7 @@ msgstr "विंडोज संदानग्रा बारायनाय"
 
 #: source/winexplorerext/module_winexplorerext.ulf#STR_DESC_MODULE_OPTIONAL_WINDOWS_EXPLORER_EXTENSIONS
 msgid  "Enables the Microsoft Windows Explorer to show information about %PRODUCTNAME documents, such as thumbnail previews."
-msgstr ""
+msgstr "%PRODUCTNAME फोरमान बिलाइफोरनि सोमोनदै मोनथिहोनाय दिनथिनो मायक्र'सफ्ट विंडोज संदानग्रा हाहोनाय खालामो, दिनथि महरै थामनेइल गिबि नुथायफोर।"
 
 #: source/writer/folderitem_writer.ulf#STR_FI_NAME_HTMLDOKUMENT
 msgid  "HTML Document"
@@ -1705,7 +1705,11 @@ msgstr "फरायबिजाब फोरमान बिलाइ"
 
 #: source/writer/folderitem_writer.ulf#STR_FI_TOOLTIP_WRITER
 msgid  "Create and edit text and graphics in letters, reports, documents and Web pages by using Writer."
-msgstr ""
+msgstr "लिरगिरि बाहायनानै लाइजामफोर,फोरमायनायफोर, फोरमानबिलाइफोर आरो वेब बिखं फोरनि फराय बिजाब आरो बोसावगारिफोरखौ सोरजि आरो सुजु।"
+
+#: source/writer/registryitem_writer.ulf#STR_REG_VAL_NEW
+msgid  "&New"
+msgstr "&गोदान"
 
 #: source/writer/registryitem_writer.ulf#STR_REG_VAL_SO60_TEXT
 msgid  "%SXWFORMATNAME %SXWFORMATVERSION Text Document"
@@ -1755,17 +1759,13 @@ msgstr ""
 msgid  "Rich Text Document"
 msgstr ""
 
-#: source/writer/registryitem_writer.ulf#STR_REG_VAL_NEW
-msgid  "&New"
-msgstr "&गोदान"
-
 #: source/writer/module_writer.ulf#STR_NAME_MODULE_PRG_WRT
 msgid  "%PRODUCTNAME Writer"
 msgstr "%PRODUCTNAME लिरगिरि"
 
 #: source/writer/module_writer.ulf#STR_DESC_MODULE_PRG_WRT
 msgid  "Create and edit text and graphics in letters, reports, documents and Web pages by using %PRODUCTNAME Writer."
-msgstr ""
+msgstr "PRODUCTNAME लिरगिरि बाहायनानै लाइजामफोर,फोरमायनायफोर, फोरमानबिलाइफोर आरो वेब बिखंफोरनि फराय बिजाब आरो बोसावगारिफोरखौ सोरजि आरो सुजु।"
 
 #: source/writer/module_writer.ulf#STR_NAME_MODULE_PRG_WRT_BIN
 msgid  "Program Module"

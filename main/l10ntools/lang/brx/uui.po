@@ -241,11 +241,11 @@ msgstr "डिभाइस $(ARG1) आव थाबावनाय जायग�
 
 #: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_IO_TOOMANYOPENFILES & ERRCODE_RES_MASK).String.Text
 msgid  "The operation on $(ARG1) cannot be performed because too many files are already open."
-msgstr ""
+msgstr "सिगाङावनो गोबां फाइल खेवनायनि थाखाय $(ARG1) अपरेशनखौ मावफुंनो हाया।"
 
 #: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_IO_OUTOFMEMORY & ERRCODE_RES_MASK).String.Text
 msgid  "The operation on $(ARG1) cannot be performed because there is no more memory available."
-msgstr ""
+msgstr "गोबां मेमरि मोननो हायैनि थाखाय $(ARG1) अपरेशनखौ मावफुंनो हाया।"
 
 #: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_IO_PENDING & ERRCODE_RES_MASK).String.Text
 msgid  "The operation on $(ARG1) cannot continue because more data is pending."
@@ -289,11 +289,11 @@ msgstr "गायसननाय जावा भारसन $(ARG1) मदद 
 
 #: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_WRONGJAVA_MIN & ERRCODE_RES_MASK).String.Text
 msgid  "The installed Java version is not supported, at least version $(ARG1) is required."
-msgstr ""
+msgstr "गायसननाय जावा भारसनखौ मदद होया, खमैबो $(ARG1)भारसन गोनांथि जायो।"
 
 #: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_WRONGJAVA_VERSION_MIN & ERRCODE_RES_MASK).String.Text
 msgid  "The installed Java version $(ARG1) is not supported, at least version $(ARG2) is required."
-msgstr ""
+msgstr "गायसननाय जावा भारसन $(ARG1)खौ मदद होया, खमैबो $(ARG2)भारसन गोनांथि जायो।"
 
 #: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_BADPARTNERSHIP & ERRCODE_RES_MASK).String.Text
 msgid  "The data associated with the partnership is corrupted."
@@ -325,31 +325,31 @@ msgstr "डिरेक्टरि $(ARG1) आव बेसादखौ सो�
 
 #: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_IO_UNSUPPORTEDOVERWRITE & ERRCODE_RES_MASK).String.Text
 msgid  "%PRODUCTNAME cannot keep files from being overwritten when this transmission protocol is used. Do you want to continue anyway?"
-msgstr ""
+msgstr "बे दैथाय हरनाय प्र'ट'कल बाहायनाय समाव लिरदेरनाय निफ्राय फाइलखौ %PRODUCTNAME आ लाखिनो हाया। नोंथाङा जेरैखि जाया सालायलांनो सानो नामा ?"
 
 #: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_IO_BROKENPACKAGE & ERRCODE_RES_MASK).String.Text
 msgid  "The file '$(ARG1)' is corrupt and therefore cannot be opened. %PRODUCTNAME can try to repair the file.\n\nThe corruption could be the result of document manipulation or of structural document damage due to data transmission.\n\nWe recommend that you do not trust the content of the repaired document.\nExecution of macros is disabled for this document.\n\nShould %PRODUCTNAME repair the file?\n"
-msgstr ""
+msgstr "फाइल'$(ARG1)'आ गाज्रि जाबाय आरो बेनिखायनो बेखौ खेवनो हाया। %PRODUCTNAMEआ फाइलखौ फोसाबनो नामा?"
 
 #: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_IO_BROKENPACKAGE_CANTREPAIR & ERRCODE_RES_MASK).String.Text
 msgid  "The file '$(ARG1)' could not be repaired and therefore cannot be opened."
-msgstr ""
+msgstr "फाइल'$(ARG1)'खौ फोसाबनो हाया आरो बेखायनो बेखौ खेवनो हाया।"
 
 #: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_CONFIGURATION_BROKENDATA_NOREMOVE & ERRCODE_RES_MASK).String.Text
 msgid  "Configuration data in '$(ARG1)' is corrupted. Without this data some functions may not operate correctly.\nDo you want to continue startup of %PRODUCTNAME without the corrupted configuration data?"
-msgstr ""
+msgstr "बायजोनि महर डाटाया'$(ARG!)' आव गाज्रि जाबाय। बे डाटा नङाब्लासिनो खायसे खामानिखौ गेबेङै मावहोनो हानाय नङा।\nगाज्रि जानाय बायजोनि महर डाटा गैयाबालानो नोंथाङा %PRODUCTNAME नि स्टार्टआप सालायबाय थानो सानो नामा?"
 
 #: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_CONFIGURATION_BROKENDATA_WITHREMOVE & ERRCODE_RES_MASK).String.Text
 msgid  "The personal configuration file '$(ARG1)' is corrupted and must be deleted to continue. Some of your personal settings may be lost.\nDo you want to continue startup of %PRODUCTNAME without the corrupted configuration data?"
-msgstr ""
+msgstr "गावनि बायजोनि महर फाइल'$(ARG1)' आ गाज्रि जाबाय आरो सालायलांनो थाखाय हुखुमोरनो नांगोन। नोंथांनि खायसे गावनि फज'नायफोरा गोमानो हागौ।\nगाज्रि जानाय बायजोनि महर डाटा गैयाबालानो %PRODUCTNAME नि स्टार्टआपखौ नोंथाङा सालायलांनो सानो नामा?"
 
 #: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_CONFIGURATION_BACKENDMISSING & ERRCODE_RES_MASK).String.Text
 msgid  "The configuration data source '$(ARG1)' is unavailable. Without this data some functions may not operate correctly."
-msgstr ""
+msgstr "बायजोनि महर डाटा फुंखा'$(ARG1)'मोननो हाथाव नङा।  बे डाटा नङाब्ला माखासे खामानिखौ गेबेङै मावनो हानाय।"
 
 #: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_CONFIGURATION_BACKENDMISSING_WITHRECOVER & ERRCODE_RES_MASK).String.Text
 msgid  "The configuration data source '$(ARG1)' is unavailable. Without this data some functions may not operate correctly.\nDo you want to continue startup of %PRODUCTNAME without the missing configuration data?"
-msgstr ""
+msgstr "बायजोनि महर डाटा फुंखा'$(ARG1)'मोननो हाथाव नङा। बे डाटा नङाब्ला माखासे खामानिखौ गेबेङै मावनो हानाय।\nबायजोनि महर डाटा गोमायाबालानो %PRODUCTNAME नि स्टार्टआपखौ नोंथाङा सालायलांनो सानो नामा?"
 
 #: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_INVALID_XFORMS_SUBMISSION_DATA & ERRCODE_RES_MASK).STRING.Text
 msgid  "The form contains invalid data. Do you still want to continue?"
@@ -416,8 +416,8 @@ msgid  "Enter user name and password for: \n%1"
 msgstr ""
 
 #: source/logindlg.src#DLG_UUI_LOGIN.STR_LOGIN_REALM.String.Text
-msgid  "Enter user name and password for: \n"%2" on %1"
-msgstr ""
+msgid  "Enter user name and password for: \n\"%2\" on %1"
+msgstr "अननानै %1 बेयाव \"%2\"नि थाखाय बाहायग्रानि मुं आरो पासवर्डनि एन्टार खालाम।"
 
 #: source/logindlg.src#DLG_UUI_LOGIN.FT_LOGIN_PATH.FixedText.Text
 msgid  "~Path"
@@ -469,7 +469,7 @@ msgstr "दैथाय हर"
 
 #: source/cookiedg.src#STR_COOKIES_RECV_START.String.Text
 msgid  "The '${HOST}' server wishes to set one or more cookies.\nCookies contain information referring to certain URL classes. If %PRODUCTNAME later requests a document with a URL corresponding to the class of a previously set cookie, %PRODUCTNAME will send this information to the server. This allows a server to recognize the status of a WWW application, e.g., when shopping online.\n\nThe following Cookies should be set:\n\n"
-msgstr ""
+msgstr "'${HOST}'सार्भारा मोनसे एबा बांसिन कुकिफोर फज'नो  मिजिं थियो।\n कुकिफोराव थि URL थाखोफोर रेफार खालामनाय मोनथिहोनाय थायो । जदि उनाव % PRODUCTNAME आ सिगाङावनो थिखानाय थाखोजों सोमोन्दो थानाय  मोनसे URL जों मोनसे फोरमान बिलाइ खावलायोब्ला, %PRODUCTNAME आ बो मोनथिहोनायखौ सार्भाराव दैथाय हरगोन । अनलाइनाव थादनाय समाव मोनसे WWW बाहायनायनि थाखोमान सिनायथिनो मोनसे सार्भारखौ गनायथि होयो । \n.\nगाहायनि कुकिफोरा फजनांगोन ।\n .\n"
 
 #: source/cookiedg.src#STR_COOKIES_RECV_COOKIES.String.Text
 msgid  "Domain: ${DOMAIN}, Path: ${PATH}, Cookie: ${COOKIE}.\n"
@@ -481,7 +481,7 @@ msgstr "कुकि नाजावनाय"
 
 #: source/cookiedg.src#STR_COOKIES_SEND_START.String.Text
 msgid  "%PRODUCTNAME has saved cookies for the server '${HOST}' which will be sent when requesting the document ${PATH}.\nCookies contain information which refers to certain URL classes. They are sent by some servers to %PRODUCTNAME where they are saved when certain documents are accessed. If %PRODUCTNAME loads a document that, according to the URL, corresponds to a class of one of the previously received Cookies, %PRODUCTNAME will send this information to that server. This enables a server to keep track of the status of a WWW application, e.g., when shopping online.\n\nThe following Cookies should be set:\n\n"
-msgstr ""
+msgstr "%PRODUCTNAME आ सार्भार'${HOST}'नि थाखाय कुकिफोरखौ थिबाय जायखौ ${PATH}फोरमान बिलाइ खावलायनाय समाव दैथाय हरनाय जायो । \n बेफोरखौ थि फोरमान बिलाइ हाबहोनाय समाव %PRODUCTNAME आव माखासे सार्भारजों दैथाय हरजानाय जायो । जदि %PRODUCTNAME आ URL मथे, सिगाङाव मोननाय कुकिफोरनि थाखोजों सोमोन्दो थानाय फोरमान बिलाइखौ ल'ड खालामोब्ला, %PRODUCTNAME आ बे मोनथिहोनायखौ बै सार्भाराव दैथाय हरगोन ।  अनलाइनाव थादनाय समाव मोनसे WWW बाहायनायनि थाखोमान सिनायथिनो मोनसे सार्भारखौ गनायथि होयो । \n.\nगाहायनि कुकिफोरा फजनांगोन ।\n .\n"
 
 #: source/cookiedg.src#STR_COOKIES_SEND_COOKIES.String.Text
 msgid  "Domain: ${DOMAIN}, Path: ${PATH}, Cookie: ${COOKIE}.\n"
@@ -501,7 +501,7 @@ msgstr ""
 
 #: source/passworderrs.src#STR_ERROR_MASTERPASSWORD_WRONG.String.Text
 msgid  "The master password is incorrect."
-msgstr ""
+msgstr "मोनसे गोरोन्थि गाहाय पासवर्ड एन्टार खालाम बाय। अननानै बेखौ फिन एन्टार खालाम।"
 
 #: source/passworderrs.src#STR_ERROR_SIMPLE_PASSWORD_WRONG.String.Text
 msgid  "The password is incorrect."

@@ -52,8 +52,9 @@ msgid  "~Convert"
 msgstr "~Convert"
 
 #: source/euro/euro.src#STEP_ZERO + 4.String.Text
+#, fuzzy
 msgid  "Note: Currency amounts from external links and currency conversion factors in formulas cannot be converted."
-msgstr ""
+msgstr "Note: Currency amounts from external links and currency conversion factors in formulae cannot be converted."
 
 #: source/euro/euro.src#STEP_ZERO + 5.String.Text
 #, fuzzy
@@ -181,8 +182,9 @@ msgid  "Conversion status of the cell templates:"
 msgstr "Conversion status of the cell templates:"
 
 #: source/euro/euro.src#STATUSLINE + 2.String.Text
+#, fuzzy
 msgid  "Registration of the relevant ranges: Sheet %1Number%1 of %2TotPageCount%2"
-msgstr ""
+msgstr "Registration of the relevant ranges: Sheet %1Number%1 of %2TotPageCount%2"
 
 #: source/euro/euro.src#STATUSLINE + 3.String.Text
 #, fuzzy
@@ -265,12 +267,14 @@ msgid  "Sheet cannot be unprotected"
 msgstr "Sheet cannot be unprotected"
 
 #: source/euro/euro.src#MESSAGES + 13.String.Text
+#, fuzzy
 msgid  "The Wizard cannot edit this document as cell formats cannot be modified in documents containing protected spreadsheets."
-msgstr ""
+msgstr "The Wizard cannot edit this document as cell formats cannot be modified in documents containing protected spreadsheets."
 
 #: source/euro/euro.src#MESSAGES + 14.String.Text
+#, fuzzy
 msgid  "Please note that the Euro Converter will, otherwise, not be able to edit this document!"
-msgstr ""
+msgstr "Please note that the Euro Converter will, otherwise, not be able to edit this document!"
 
 #: source/euro/euro.src#MESSAGES + 15.String.Text
 #, fuzzy
@@ -408,8 +412,9 @@ msgid  "The currency set for the document is not a European currency!"
 msgstr "The currency set for the document is not a European currency!"
 
 #: source/euro/euro.src#CURRENCIES + 17.String.Text
+#, fuzzy
 msgid  "The language set for your operating system is not a language of the European Monetary Union."
-msgstr ""
+msgstr "The language set for your operating system is not a language of the European Monetary Union."
 
 #: source/euro/euro.src#STEP_LASTPAGE.String.Text
 #, fuzzy
@@ -437,36 +442,44 @@ msgid  "Sheet is always unprotected"
 msgstr "Sheet is always unprotected"
 
 #: source/formwizard/dbwizres.src#RID_COMMON_START + 0.String.Text
+#, fuzzy
 msgid  "The directory '%1' could not be created.<BR>There may not be enough space left on your hard disk."
-msgstr ""
+msgstr "The directory '%1' could not be created.<BR>There may not be enough space left on your hard disc."
 
 #: source/formwizard/dbwizres.src#RID_COMMON_START + 1.String.Text
+#, fuzzy
 msgid  "The text document could not be created.<BR>Please check if the module 'PRODUCTNAME Writer' is installed."
-msgstr ""
+msgstr "The text document could not be created.<BR>Please check if the module 'PRODUCTNAME Writer' is installed."
 
 #: source/formwizard/dbwizres.src#RID_COMMON_START + 2.String.Text
+#, fuzzy
 msgid  "The spreadsheet could not be created.<BR>Please check if the module 'PRODUCTNAME Calc' is installed."
-msgstr ""
+msgstr "The spreadsheet could not be created.<BR>Please check if the module 'PRODUCTNAME Calc' is installed."
 
 #: source/formwizard/dbwizres.src#RID_COMMON_START + 3.String.Text
+#, fuzzy
 msgid  "The presentation could not be created.<BR>Please check if the module 'PRODUCTNAME Impress' is installed."
-msgstr ""
+msgstr "The presentation could not be created.<BR>Please check if the module 'PRODUCTNAME Impress' is installed."
 
 #: source/formwizard/dbwizres.src#RID_COMMON_START + 4.String.Text
+#, fuzzy
 msgid  "The drawing could not be created.<BR>Please check if the module 'PRODUCTNAME Draw' is installed."
-msgstr ""
+msgstr "The drawing could not be created.<BR>Please check if the module 'PRODUCTNAME Draw' is installed."
 
 #: source/formwizard/dbwizres.src#RID_COMMON_START + 5.String.Text
+#, fuzzy
 msgid  "The formula could not be created.<BR>Please check if the module 'PRODUCTNAME Math' is installed."
-msgstr ""
+msgstr "The formula could not be created.<BR>Please check if the module 'PRODUCTNAME Math' is installed."
 
 #: source/formwizard/dbwizres.src#RID_COMMON_START + 6.String.Text
+#, fuzzy
 msgid  "The files required could not be found.<BR>Please start the %PRODUCTNAME Setup and choose 'Repair'."
-msgstr ""
+msgstr "The files required could not be found.<BR>Please start the %PRODUCTNAME Setup and choose 'Repair'."
 
 #: source/formwizard/dbwizres.src#RID_COMMON_START + 7.String.Text
+#, fuzzy
 msgid  "The file '<PATH>' already exists.<BR><BR>Would you like to overwrite the existing file?"
-msgstr ""
+msgstr "The file '<PATH>' already exists.<BR><BR>Would you like to overwrite the existing file?"
 
 #: source/formwizard/dbwizres.src#RID_COMMON_START + 8.String.Text
 #, fuzzy
@@ -534,8 +547,9 @@ msgid  "Template created via <wizard_name> on <current_date>."
 msgstr "Template created via <wizard_name> on <current_date>."
 
 #: source/formwizard/dbwizres.src#RID_COMMON_START + 21.String.Text
+#, fuzzy
 msgid  "The wizard could not be run, because important files were not found.\nUnder 'Tools - Options - %PRODUCTNAME - Paths' click the 'Default' button to reset the paths to the original default settings.\nThen run the wizard again."
-msgstr ""
+msgstr "The wizard could not be run, because important files were not found.\nUnder 'Tools - Options - %PRODUCTNAME - Paths' click the 'Default' button to reset the paths to the original default settings.\nThen run the wizard again."
 
 #: source/formwizard/dbwizres.src#RID_DB_COMMON_START + 0.String.Text
 #, fuzzy
@@ -568,8 +582,9 @@ msgid  "~Table name"
 msgstr "~Table name"
 
 #: source/formwizard/dbwizres.src#RID_DB_COMMON_START + 6.String.Text
+#, fuzzy
 msgid  "An error occurred while running the wizard. The wizard will be terminated."
-msgstr ""
+msgstr "An error occurred while running the wizard. The wizard will be terminated."
 
 #: source/formwizard/dbwizres.src#RID_DB_COMMON_START + 14.String.Text
 #, fuzzy
@@ -667,12 +682,14 @@ msgid  "Fields in ~the form"
 msgstr "Fields in ~the form"
 
 #: source/formwizard/dbwizres.src#RID_DB_FORM_WIZARD_START + 2.String.Text
+#, fuzzy
 msgid  "Binary fields are always listed and selectable from the left list.\nIf possible, they are interpreted as images."
-msgstr ""
+msgstr "Binary fields are always listed and selectable from the left list.\nIf possible, they are interpreted as images."
 
 #: source/formwizard/dbwizres.src#RID_DB_FORM_WIZARD_START + 3.String.Text
+#, fuzzy
 msgid  "A subform is a form that is inserted in another form.\nUse subforms to show data from tables or queries with a one-to-many relationship."
-msgstr ""
+msgstr "A sub-form is a form that is inserted in another form.\nUse sub-forms to show data from tables or queries with a one-to-many relationship."
 
 #: source/formwizard/dbwizres.src#RID_DB_FORM_WIZARD_START + 4.String.Text
 #, fuzzy
@@ -715,8 +732,9 @@ msgid  "Fields in form"
 msgstr "Fields in form"
 
 #: source/formwizard/dbwizres.src#RID_DB_FORM_WIZARD_START + 19.String.Text
+#, fuzzy
 msgid  "The join '<FIELDNAME1>' and '<FIELDNAME2>' has been selected twice.\nBut joins may only be used once."
-msgstr ""
+msgstr "The join '<FIELDNAME1>' and '<FIELDNAME2>' has been selected twice.\nBut joins may only be used once."
 
 #: source/formwizard/dbwizres.src#RID_DB_FORM_WIZARD_START + 20.String.Text
 #, fuzzy
@@ -979,8 +997,9 @@ msgid  "Set the name of the form"
 msgstr "Set the name of the form"
 
 #: source/formwizard/dbwizres.src#RID_DB_FORM_WIZARD_START + 98.String.Text
+#, fuzzy
 msgid  "A form with the name '%FORMNAME' already exists.\nChoose another name."
-msgstr ""
+msgstr "A form with the name '%FORMNAME' already exists.\nChoose another name."
 
 #: source/formwizard/dbwizres.src#RID_DB_QUERY_WIZARD_START + 0.String.Text
 #, fuzzy
@@ -1343,16 +1362,19 @@ msgid  "Overview"
 msgstr "Overview"
 
 #: source/formwizard/dbwizres.src#RID_DB_QUERY_WIZARD_START + 88.String.Text
+#, fuzzy
 msgid  "A field that has not been assigned an aggregate function must be used in a group."
-msgstr ""
+msgstr "A field that has not been assigned an aggregate function must be used in a group."
 
 #: source/formwizard/dbwizres.src#RID_DB_QUERY_WIZARD_START + 89.String.Text
+#, fuzzy
 msgid  "The condition '<FIELDNAME> <LOGICOPERATOR> <VALUE>' was chosen twice. Each condition can only be chosen once"
-msgstr ""
+msgstr "The condition '<FIELDNAME> <LOGICOPERATOR> <VALUE>' was chosen twice. Each condition can only be chosen once"
 
 #: source/formwizard/dbwizres.src#RID_DB_QUERY_WIZARD_START + 90.String.Text
+#, fuzzy
 msgid  "The aggregate function <FUNCTION> has been assigned twice to the fieldname '<NUMERICFIELD>'."
-msgstr ""
+msgstr "The aggregate function <FUNCTION> has been assigned twice to the fieldname '<NUMERICFIELD>'."
 
 #: source/formwizard/dbwizres.src#RID_DB_QUERY_WIZARD_START + 91.String.Text
 #, fuzzy
@@ -1620,12 +1642,14 @@ msgid  "The form '<REPORTFORM>' does not exist."
 msgstr "The form '<REPORTFORM>' does not exist."
 
 #: source/formwizard/dbwizres.src#RID_DB_REPORT_WIZARD_START + 65.String.Text
+#, fuzzy
 msgid  "The query with the statement <BR>'<STATEMENT>' <BR> could not be run. <BR> Check your data source."
-msgstr ""
+msgstr "The query with the statement <BR>'<STATEMENT>' <BR> could not be run. <BR> Check your data source."
 
 #: source/formwizard/dbwizres.src#RID_DB_REPORT_WIZARD_START + 66.String.Text
+#, fuzzy
 msgid  "The following hidden control in the form '<REPORTFORM>' could not be read: '<CONTROLNAME>'."
-msgstr ""
+msgstr "The following hidden control in the form '<REPORTFORM>' could not be read: '<CONTROLNAME>'."
 
 #: source/formwizard/dbwizres.src#RID_DB_REPORT_WIZARD_START + 67.String.Text
 #, fuzzy
@@ -1653,8 +1677,9 @@ msgid  "Field"
 msgstr "Field"
 
 #: source/formwizard/dbwizres.src#RID_DB_REPORT_WIZARD_START + 72.String.Text
+#, fuzzy
 msgid  "An error occurred in the wizard.<BR>The template '%PATH' could be erroneous.<BR>Either the required sections or tables do not exist or exist under the wrong name.<BR>See the Help for more detailed information.<BR>Please select another template."
-msgstr ""
+msgstr "An error occurred in the wizard.<BR>The template '%PATH' could be erroneous.<BR>Either the required sections or tables do not exist or have the wrong name.<BR>See the Help for more detailed information.<BR>Please select another template."
 
 #: source/formwizard/dbwizres.src#RID_DB_REPORT_WIZARD_START + 73.String.Text
 #, fuzzy
@@ -1662,16 +1687,19 @@ msgid  "There is an invalid user field in a table."
 msgstr "There is an invalid user field in a table."
 
 #: source/formwizard/dbwizres.src#RID_DB_REPORT_WIZARD_START + 74.String.Text
+#, fuzzy
 msgid  "The sort criterium '<FIELDNAME>' was chosen twice. Each criterium can only be chosen once."
-msgstr ""
+msgstr "The sort criterion '<FIELDNAME>' was chosen twice. Each criterion can only be chosen once."
 
 #: source/formwizard/dbwizres.src#RID_DB_REPORT_WIZARD_START + 75.String.Text
+#, fuzzy
 msgid  "Note: The dummy text will be replaced by data from the database when the report is created."
-msgstr ""
+msgstr "Note: The dummy text will be replaced by data from the database when the report is created."
 
 #: source/formwizard/dbwizres.src#RID_DB_REPORT_WIZARD_START + 76.String.Text
+#, fuzzy
 msgid  "A report '%REPORTNAME' already exists in the database. Please assign another name."
-msgstr ""
+msgstr "A report '%REPORTNAME' already exists in the database. Please assign another name."
 
 #: source/formwizard/dbwizres.src#RID_DB_REPORT_WIZARD_START + 78.String.Text
 #, fuzzy
@@ -1794,8 +1822,9 @@ msgid  "Create table"
 msgstr "Create table"
 
 #: source/formwizard/dbwizres.src#RID_DB_TABLE_WIZARD_START + 14.String.Text
+#, fuzzy
 msgid  "This wizard helps you to create a table for your database. After selecting a table category and a sample table, choose the fields you want to include in your table. You can include fields from more than one sample table."
-msgstr ""
+msgstr "This wizard helps you to create a table for your database. After selecting a table category and a sample table, choose the fields you want to include in your table. You can include fields from more than one sample table."
 
 #: source/formwizard/dbwizres.src#RID_DB_TABLE_WIZARD_START + 15.String.Text
 #, fuzzy
@@ -1848,8 +1877,9 @@ msgid  "~Selected fields"
 msgstr "~Selected fields"
 
 #: source/formwizard/dbwizres.src#RID_DB_TABLE_WIZARD_START + 26.String.Text
+#, fuzzy
 msgid  "A primary key uniquely identifies each record in a database table. Primary keys ease the linking of information in separate tables, and it is recommended that you have a primary key in every table. Without a primary key, it will not be possible to enter data into this table."
-msgstr ""
+msgstr "A primary key uniquely identifies each record in a database table. Primary keys ease the linking of information in separate tables and it is recommended that you have a primary key in every table. Without a primary key, it will not be possible to enter data into this table."
 
 #: source/formwizard/dbwizres.src#RID_DB_TABLE_WIZARD_START + 27.String.Text
 #, fuzzy
@@ -1892,8 +1922,9 @@ msgid  "What do you want to name your table?"
 msgstr "What do you want to name your table?"
 
 #: source/formwizard/dbwizres.src#RID_DB_TABLE_WIZARD_START + 35.String.Text
+#, fuzzy
 msgid  "Congratulations. You have entered all the information needed to create your table."
-msgstr ""
+msgstr "Congratulations. You have entered all the information needed to create your table."
 
 #: source/formwizard/dbwizres.src#RID_DB_TABLE_WIZARD_START + 36.String.Text
 #, fuzzy
@@ -1921,12 +1952,14 @@ msgid  "The table you have created could not be opened."
 msgstr "The table you have created could not be opened."
 
 #: source/formwizard/dbwizres.src#RID_DB_TABLE_WIZARD_START + 41.String.Text
+#, fuzzy
 msgid  "The table name '%TABLENAME' contains a character ('%SPECIALCHAR') that might not be supported by the database."
-msgstr ""
+msgstr "The table name '%TABLENAME' contains a character ('%SPECIALCHAR') that might not be supported by the database."
 
 #: source/formwizard/dbwizres.src#RID_DB_TABLE_WIZARD_START + 42.String.Text
+#, fuzzy
 msgid  "The field name '%FIELDNAME' contains a special character ('%SPECIALCHAR') that might not be supported by the database."
-msgstr ""
+msgstr "The field name '%FIELDNAME' contains a special character ('%SPECIALCHAR') that might not be supported by the database."
 
 #: source/formwizard/dbwizres.src#RID_DB_TABLE_WIZARD_START + 43.String.Text
 #, fuzzy
@@ -1949,12 +1982,14 @@ msgid  "Remove the selected Field"
 msgstr "Remove the selected Field"
 
 #: source/formwizard/dbwizres.src#RID_DB_TABLE_WIZARD_START + 47.String.Text
+#, fuzzy
 msgid  "The field cannot be inserted because this would exceed the maximum number of %COUNT possible fields in the database table"
-msgstr ""
+msgstr "The field cannot be inserted because this would exceed the maximum number of %COUNT possible fields in the database table"
 
 #: source/formwizard/dbwizres.src#RID_DB_TABLE_WIZARD_START + 48.String.Text
+#, fuzzy
 msgid  "The name '%TABLENAME' already exists.\nPlease enter another name."
-msgstr ""
+msgstr "The name '%TABLENAME' already exists.\nPlease enter another name."
 
 #: source/formwizard/dbwizres.src#RID_DB_TABLE_WIZARD_START + 49.String.Text
 #, fuzzy
@@ -2122,8 +2157,9 @@ msgid  "Page design"
 msgstr "Page design"
 
 #: source/formwizard/dbwizres.src#RID_LETTERWIZARDDIALOG_START + 31.String.Text
+#, fuzzy
 msgid  "This wizard helps you to create a letter template. You can then use the template as the basis for writing letters as often as desired."
-msgstr ""
+msgstr "This wizard helps you to create a letter template. You can then use the template as the basis for writing letters as often as desired."
 
 #: source/formwizard/dbwizres.src#RID_LETTERWIZARDDIALOG_START + 32.String.Text
 #, fuzzy
@@ -2206,12 +2242,14 @@ msgid  "Footer"
 msgstr "Footer"
 
 #: source/formwizard/dbwizres.src#RID_LETTERWIZARDDIALOG_START + 48.String.Text
+#, fuzzy
 msgid  "This wizard creates a letter template which enables you to create multiple letters with the same layout and settings."
-msgstr ""
+msgstr "This wizard creates a letter template which enables you to create multiple letters with the same layout and settings."
 
 #: source/formwizard/dbwizres.src#RID_LETTERWIZARDDIALOG_START + 49.String.Text
+#, fuzzy
 msgid  "To create another new letter out of the template just navigate to the template location and double-click it."
-msgstr ""
+msgstr "To create another new letter using the template just navigate to the template location and double-click it."
 
 #: source/formwizard/dbwizres.src#RID_LETTERWIZARDDIALOG_START + 50.String.Text
 #, fuzzy
@@ -2399,8 +2437,9 @@ msgid  "Page design"
 msgstr "Page design"
 
 #: source/formwizard/dbwizres.src#RID_FAXWIZARDDIALOG_START + 17.String.Text
+#, fuzzy
 msgid  "This wizard helps you to create a fax template. The template can then be used to create a fax whenever needed."
-msgstr ""
+msgstr "This wizard helps you to create a fax template. The template can then be used to create a fax whenever needed."
 
 #: source/formwizard/dbwizres.src#RID_FAXWIZARDDIALOG_START + 18.String.Text
 #, fuzzy
@@ -2428,12 +2467,14 @@ msgid  "Footer"
 msgstr "Footer"
 
 #: source/formwizard/dbwizres.src#RID_FAXWIZARDDIALOG_START + 23.String.Text
+#, fuzzy
 msgid  "This wizard creates a fax template which enables you to create multiple faxes with the same layout and settings."
-msgstr ""
+msgstr "This wizard creates a fax template which enables you to create multiple faxes with the same layout and settings."
 
 #: source/formwizard/dbwizres.src#RID_FAXWIZARDDIALOG_START + 24.String.Text
+#, fuzzy
 msgid  "To create another new fax out of the template, go to the location where you saved the template and double-click the file."
-msgstr ""
+msgstr "To create another new fax using the template, go to the location where you saved the template and double-click the file."
 
 #: source/formwizard/dbwizres.src#RID_FAXWIZARDDIALOG_START + 25.String.Text
 #, fuzzy
@@ -2601,8 +2642,9 @@ msgid  "Web Wizard"
 msgstr "Web Wizard"
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +2.String.Text
+#, fuzzy
 msgid  "This Web Wizard is to aid you in publishing documents on the Internet.\n\nIt will convert the documents so that they can be viewed by a web browser. In addition, it will generate a Table of Contents page with links for easy access to the documents. The Web Wizard will also allow you to customize the design and layout of your web site.\n\nYou will be able to keep the documents you have published on the web up-to-date and add or remove documents at any time."
-msgstr ""
+msgstr "This Web Wizard is to aid you in publishing documents on the Internet.\n\nIt will convert the documents so that they can be viewed by a web browser. In addition, it will generate a Table of Contents page with links for easy access to the documents. The Web Wizard will also allow you to customise the design and layout of your web site.\n\nYou will be able to keep the documents you have published on the web up-to-date and add or remove documents at any time."
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +4.String.Text
 #, fuzzy
@@ -2830,8 +2872,9 @@ msgid  "Customize the selected layout"
 msgstr "Customise the selected layout"
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +61.String.Text
+#, fuzzy
 msgid  "Include the following information for each document in the table of contents:"
-msgstr ""
+msgstr "Include the following information for each document in the table of contents:"
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +62.String.Text
 #, fuzzy
@@ -2879,20 +2922,24 @@ msgid  "The local target '%FILENAME' is a file."
 msgstr "The local target '%FILENAME' is a file."
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +75.String.Text
+#, fuzzy
 msgid  "The ZIP target '%FILENAME' already exists. Do you want to overwrite the existing target? "
-msgstr ""
+msgstr "The ZIP target '%FILENAME' already exists. Do you want to overwrite it? "
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +76.String.Text
+#, fuzzy
 msgid  "The FTP target directory '%FILENAME' is not empty. Some files might be overwritten. Do you want to continue?"
-msgstr ""
+msgstr "The FTP target directory '%FILENAME' is not empty. Some files might be overwritten. Do you want to continue?"
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +77.String.Text
+#, fuzzy
 msgid  "The local target directory '%FILENAME' is not empty. Some files might be overwritten. Do you want to continue?"
-msgstr ""
+msgstr "The local target directory '%FILENAME' is not empty. Some files might be overwritten. Do you want to continue?"
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +78.String.Text
+#, fuzzy
 msgid  "Settings already exist under the given name. Do you want to overwrite the existing settings? "
-msgstr ""
+msgstr "Settings already exist under the given name. Do you want to overwrite the existing settings? "
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +79.String.Text
 #, fuzzy
@@ -3015,8 +3062,9 @@ msgid  "An error occurred while copying the layout files. "
 msgstr "An error occurred while copying the layout files. "
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +108.String.Text
+#, fuzzy
 msgid  "An error occurred while gathering document information for '%FILENAME'. "
-msgstr ""
+msgstr "An error occurred while gathering document information for '%FILENAME'. "
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +109.String.Text
 #, fuzzy
@@ -3024,8 +3072,9 @@ msgid  "An error occurred while exporting the document '%FILENAME'."
 msgstr "An error occurred while exporting the document '%FILENAME'."
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +110.String.Text
+#, fuzzy
 msgid  "An error occurred while creating a directory for exporting '%FILENAME'."
-msgstr ""
+msgstr "An error occurred while creating a directory for exporting '%FILENAME'."
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +111.String.Text
 #, fuzzy
@@ -3033,12 +3082,14 @@ msgid  "A security error occurred while exporting the document '%FILENAME'."
 msgstr "A security error occurred while exporting the document '%FILENAME'."
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +112.String.Text
+#, fuzzy
 msgid  "An input/output error occurred while exporting the document '%FILENAME'."
-msgstr ""
+msgstr "An input/output error occurred while exporting the document '%FILENAME'."
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +113.String.Text
+#, fuzzy
 msgid  "An error occurred while copying media files to the temporary directory."
-msgstr ""
+msgstr "An error occurred while copying media files to the temporary directory."
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +114.String.Text
 #, fuzzy
@@ -3116,8 +3167,9 @@ msgid  "Preview"
 msgstr "Preview"
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +130.String.Text
+#, fuzzy
 msgid  "The selected settings will be deleted.\n\nDo you really want to delete these settings? "
-msgstr ""
+msgstr "The selected settings will be deleted.\n\nDo you really want to delete these settings? "
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +131.String.Text
 #, fuzzy
@@ -3200,20 +3252,24 @@ msgid  "The FTP directory '%FILENAME' could not be created."
 msgstr "The FTP directory '%FILENAME' could not be created."
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +147.String.Text
+#, fuzzy
 msgid  "The FTP directory '%FILENAME' does not exist. \nCreate the directory now?"
-msgstr ""
+msgstr "The FTP directory '%FILENAME' does not exist. \nCreate the directory now?"
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +148.String.Text
+#, fuzzy
 msgid  "The Zip file '%FILENAME' cannot be created: a directory of the same name already exists."
-msgstr ""
+msgstr "The Zip file '%FILENAME' cannot be created: a directory of the same name already exists."
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +149.String.Text
+#, fuzzy
 msgid  "The local directory '%FILENAME' cannot be created. \nPlease check your write-access."
-msgstr ""
+msgstr "The local directory '%FILENAME' cannot be created. \nPlease check your write-access."
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +150.String.Text
+#, fuzzy
 msgid  "The local directory '%FILENAME' does not exist. \nCreate the directory now?"
-msgstr ""
+msgstr "The local directory '%FILENAME' does not exist. \nCreate the directory now?"
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +151.String.Text
 #, fuzzy
@@ -3381,8 +3437,9 @@ msgid  "Include form for recording minutes"
 msgstr "Include form for recording minutes"
 
 #: source/formwizard/dbwizres.src#RID_AGENDAWIZARDDIALOG_START +13.String.Text
+#, fuzzy
 msgid  "This wizard helps you to create an agenda template. The template can then be used to create an agenda whenever needed."
-msgstr ""
+msgstr "This wizard helps you to create an agenda template. The template can then be used to create an agenda whenever needed."
 
 #: source/formwizard/dbwizres.src#RID_AGENDAWIZARDDIALOG_START +14.String.Text
 #, fuzzy
@@ -3400,8 +3457,9 @@ msgid  "Location:"
 msgstr "Location:"
 
 #: source/formwizard/dbwizres.src#RID_AGENDAWIZARDDIALOG_START +17.String.Text
+#, fuzzy
 msgid  "Placeholders will be used in empty fields. You can replace placeholders with text later."
-msgstr ""
+msgstr "Placeholders will be used in empty fields. You can replace them with text later."
 
 #: source/formwizard/dbwizres.src#RID_AGENDAWIZARDDIALOG_START +18.String.Text
 #, fuzzy
@@ -3414,8 +3472,9 @@ msgid  "Create an ~agenda from this template"
 msgstr "Create an ~agenda from this template"
 
 #: source/formwizard/dbwizres.src#RID_AGENDAWIZARDDIALOG_START +20.String.Text
+#, fuzzy
 msgid  "To create a new agenda out of the template, go to the location where you saved the template and double-click the file."
-msgstr ""
+msgstr "To create a new agenda using the template, go to the location where you saved the template and double-click the file."
 
 #: source/formwizard/dbwizres.src#RID_AGENDAWIZARDDIALOG_START +21.String.Text
 #, fuzzy
@@ -3468,8 +3527,9 @@ msgid  "Facility personnel"
 msgstr "Facility personnel"
 
 #: source/formwizard/dbwizres.src#RID_AGENDAWIZARDDIALOG_START +31.String.Text
+#, fuzzy
 msgid  "The agenda template will include placeholders for the names of the selected people. When creating an agenda from the template, you can replace these placeholder with the appropriate names."
-msgstr ""
+msgstr "The agenda template will include placeholders for the names of the selected people. When creating an agenda from the template, you can replace these placeholders with the appropriate names."
 
 #: source/formwizard/dbwizres.src#RID_AGENDAWIZARDDIALOG_START +32.String.Text
 #, fuzzy
@@ -3502,8 +3562,9 @@ msgid  "Date:"
 msgstr "Date:"
 
 #: source/formwizard/dbwizres.src#RID_AGENDAWIZARDDIALOG_START +39.String.Text
+#, fuzzy
 msgid  "This wizard creates an agenda template which enables you to create multiple agendas with the same layout and settings."
-msgstr ""
+msgstr "This wizard creates an agenda template which enables you to create multiple agendas with the same layout and settings."
 
 #: source/formwizard/dbwizres.src#RID_AGENDAWIZARDDIALOG_START +40.String.Text
 #, fuzzy
@@ -3691,12 +3752,14 @@ msgid  "~Close"
 msgstr "~Close"
 
 #: source/importwizard/importwi.src#sWelcometextLabel1.String.Text
+#, fuzzy
 msgid  "This wizard converts documents in %PRODUCTNAME format and Microsoft Office documents to the new OpenDocument format."
-msgstr ""
+msgstr "This wizard converts documents in %PRODUCTNAME format and Microsoft Office documents to the new OpenDocument format."
 
 #: source/importwizard/importwi.src#sWelcometextLabel2.String.Text
+#, fuzzy
 msgid  "Please note that when converting Microsoft documents any attached VBA macros lose their functionality."
-msgstr ""
+msgstr "Please note that when converting Microsoft documents any attached VBA macros lose their functionality."
 
 #: source/importwizard/importwi.src#sWelcometextLabel3.String.Text
 #, fuzzy
@@ -3979,60 +4042,74 @@ msgid  "These will be exported to the following directory:"
 msgstr "These will be exported to the following directory:"
 
 #: source/importwizard/importwi.src#sSumSOTextDocuments.String.Text
+#, fuzzy
 msgid  "All %PRODUCTNAME text documents contained in the following directory will be imported:"
-msgstr ""
+msgstr "All %PRODUCTNAME text documents contained in the following directory will be imported:"
 
 #: source/importwizard/importwi.src#sSumSOTableDocuments.String.Text
+#, fuzzy
 msgid  "All %PRODUCTNAME spreadsheets contained in the following directory will be imported:"
-msgstr ""
+msgstr "All %PRODUCTNAME spreadsheets contained in the following directory will be imported:"
 
 #: source/importwizard/importwi.src#sSumSODrawDocuments.String.Text
+#, fuzzy
 msgid  "All %PRODUCTNAME drawing and presentation documents contained in the following directory will be imported:"
-msgstr ""
+msgstr "All %PRODUCTNAME drawing and presentation documents contained in the following directory will be imported:"
 
 #: source/importwizard/importwi.src#sSumSOMathDocuments.String.Text
+#, fuzzy
 msgid  "All %PRODUCTNAME formula documents contained in the following directory will be imported:"
-msgstr ""
+msgstr "All %PRODUCTNAME formula documents contained in the following directory will be imported:"
 
 #: source/importwizard/importwi.src#sSumSOTextTemplates.String.Text
+#, fuzzy
 msgid  "All %PRODUCTNAME text templates contained in the following directory will be imported:"
-msgstr ""
+msgstr "All %PRODUCTNAME text templates contained in the following directory will be imported:"
 
 #: source/importwizard/importwi.src#sSumSOTableTemplates.String.Text
+#, fuzzy
 msgid  "All %PRODUCTNAME table templates contained in the following directory will be imported:"
-msgstr ""
+msgstr "All %PRODUCTNAME table templates contained in the following directory will be imported:"
 
 #: source/importwizard/importwi.src#sSumSODrawTemplates.String.Text
+#, fuzzy
 msgid  "All %PRODUCTNAME drawing and presentation templates contained in the following directory will be imported:"
-msgstr ""
+msgstr "All %PRODUCTNAME drawing and presentation templates contained in the following directory will be imported:"
 
 #: source/importwizard/importwi.src#sSumSOGlobalDocuments.String.Text
+#, fuzzy
 msgid  "All %PRODUCTNAME master documents contained in the following directory will be imported:"
-msgstr ""
+msgstr "All %PRODUCTNAME master documents contained in the following directory will be imported:"
 
 #: source/importwizard/importwi.src#sSumMSTextDocuments.String.Text
+#, fuzzy
 msgid  "All Word documents contained in the following directory will be imported:"
-msgstr ""
+msgstr "All Word documents contained in the following directory will be imported:"
 
 #: source/importwizard/importwi.src#sSumMSTableDocuments.String.Text
+#, fuzzy
 msgid  "All Excel documents contained in the following directory will be imported:"
-msgstr ""
+msgstr "All Excel documents contained in the following directory will be imported:"
 
 #: source/importwizard/importwi.src#sSumMSDrawDocuments.String.Text
+#, fuzzy
 msgid  "All PowerPoint documents contained in the following directory will be imported:"
-msgstr ""
+msgstr "All PowerPoint documents contained in the following directory will be imported:"
 
 #: source/importwizard/importwi.src#sSumMSTextTemplates.String.Text
+#, fuzzy
 msgid  "All Word templates contained in the following directory will be imported:"
-msgstr ""
+msgstr "All Word templates contained in the following directory will be imported:"
 
 #: source/importwizard/importwi.src#sSumMSTableTemplates.String.Text
+#, fuzzy
 msgid  "All Excel templates contained in the following directory will be imported:"
-msgstr ""
+msgstr "All Excel templates contained in the following directory will be imported:"
 
 #: source/importwizard/importwi.src#sSumMSDrawTemplates.String.Text
+#, fuzzy
 msgid  "All PowerPoint templates contained in the following directory will be imported:"
-msgstr ""
+msgstr "All PowerPoint templates contained in the following directory will be imported:"
 
 #: source/schedule/schedule.src#dlgCalTitle.String.Text
 #, fuzzy
@@ -4265,8 +4342,9 @@ msgid  "Progress:"
 msgstr "Progress:"
 
 #: source/template/template.src#SAMPLES.String.Text
+#, fuzzy
 msgid  "In order to use the full functionality of this sample, create a document that is based on this template."
-msgstr ""
+msgstr "In order to use the full functionality of this sample, create a document that is based on this template."
 
 #: source/template/template.src#SAMPLES + 1.String.Text
 #, fuzzy
@@ -4279,8 +4357,9 @@ msgid  "Theme Selection"
 msgstr "Theme Selection"
 
 #: source/template/template.src#STYLES + 1.String.Text
+#, fuzzy
 msgid  "Error while saving the document to the clipboard! The following action cannot be undone."
-msgstr ""
+msgstr "Error while saving the document to the clipboard! The following action cannot be undone."
 
 #: source/template/template.src#STYLES + 2.String.Text
 #, fuzzy

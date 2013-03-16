@@ -41,7 +41,7 @@ msgstr ""
 
 #: source/base/folderitem_base.ulf#STR_FI_TOOLTIP_BASE
 msgid  "Manage databases, create queries and reports to track and manage your information by using Base."
-msgstr ""
+msgstr "बेस के प्रयोग से डेटाबेस प्रबंधित करता है, प्रश्न बनाता है, ट्रैक रिपोर्ट रखता है आपकी सूचना की देखभाल करता है."
 
 #: source/base/registryitem_base.ulf#STR_REG_VAL_OO_DATABASE
 msgid  "OpenDocument Database"
@@ -121,7 +121,11 @@ msgstr "स्प्रेडशीट"
 
 #: source/calc/folderitem_calc.ulf#STR_FI_TOOLTIP_CALC
 msgid  "Perform calculation, analyze information and manage lists in spreadsheets by using Calc."
-msgstr ""
+msgstr "गणना करता है, सूचना विश्लेषण करता है, और Calc के प्रयोग से स्प्रेडशीट में सूची प्रबंधित करता है."
+
+#: source/calc/registryitem_calc.ulf#STR_REG_VAL_NEW
+msgid  "&New"
+msgstr "नया (&N)"
 
 #: source/calc/registryitem_calc.ulf#STR_REG_VAL_SO60_SPREADSHEET
 msgid  "%SXWFORMATNAME %SXWFORMATVERSION Spreadsheet"
@@ -155,17 +159,13 @@ msgstr "माइक्रोसॉफ़्ट एक्सेल 97-2003 न�
 msgid  "Microsoft Excel Template"
 msgstr "माइक्रोसॉफ़्ट एक्सेल नमूना ख़ाका"
 
-#: source/calc/registryitem_calc.ulf#STR_REG_VAL_NEW
-msgid  "&New"
-msgstr "नया (&N)"
-
 #: source/calc/module_calc.ulf#STR_NAME_MODULE_PRG_CALC
 msgid  "%PRODUCTNAME Calc"
 msgstr "%PRODUCTNAME गणना"
 
 #: source/calc/module_calc.ulf#STR_DESC_MODULE_PRG_CALC
 msgid  "Perform calculation, analyze information and manage lists in spreadsheets by using %PRODUCTNAME Calc."
-msgstr ""
+msgstr "गणना करता है, सूचना विश्लेषण करता है, और %PRODUCTNAME Calc के प्रयोग से स्प्रेडशीट में सूची प्रबंधित करता है."
 
 #: source/calc/module_calc.ulf#STR_NAME_MODULE_PRG_CALC_BIN
 msgid  "Program Module"
@@ -189,7 +189,11 @@ msgstr "अतिरिक्त"
 
 #: source/calc/module_calc.ulf#STR_DESC_MODULE_OPTIONAL_ADDINS
 msgid  "Add-ins are additional programs that make new functions available in %PRODUCTNAME Calc."
-msgstr ""
+msgstr "एडइन अतिरिक्त प्रोग्राम है जो कि %PRODUCTNAME Calc में नया प्रकार्य उपलब्ध करता है."
+
+#: source/draw/registryitem_draw.ulf#STR_REG_VAL_NEW
+msgid  "&New"
+msgstr "नया (&N)"
 
 #: source/draw/registryitem_draw.ulf#STR_REG_VAL_SO60_DRAWING
 msgid  "%SXWFORMATNAME %SXWFORMATVERSION Drawing"
@@ -207,17 +211,13 @@ msgstr "ओपनडॉक्यूमेंट रेखाचित्र"
 msgid  "OpenDocument Drawing Template"
 msgstr ""
 
-#: source/draw/registryitem_draw.ulf#STR_REG_VAL_NEW
-msgid  "&New"
-msgstr "नया (&N)"
-
 #: source/draw/folderitem_draw.ulf#STR_FI_NAME_ZEICHNUNG
 msgid  "Drawing"
 msgstr "रेखाचित्र"
 
 #: source/draw/folderitem_draw.ulf#STR_FI_TOOLTIP_DRAW
 msgid  "Create and edit drawings, flow charts, and logos by using Draw."
-msgstr ""
+msgstr "रेखाचित्र के प्रयोग से रेखाचित्र, फ्लोचार्ट, और लोगो बनाएं व संपादित करें."
 
 #: source/draw/module_draw.ulf#STR_NAME_MODULE_PRG_DRAW
 msgid  "%PRODUCTNAME Draw"
@@ -225,7 +225,7 @@ msgstr "%PRODUCTNAME रेखाचित्र"
 
 #: source/draw/module_draw.ulf#STR_DESC_MODULE_PRG_DRAW
 msgid  "Create and edit drawings, flow charts, and logos by using %PRODUCTNAME Draw."
-msgstr ""
+msgstr "रेखाचित्र के प्रयोग से रेखाचित्र, फ्लोचार्ट, और लोगो बनाएं व संपादित करें."
 
 #: source/draw/module_draw.ulf#STR_NAME_MODULE_PRG_DRAW_BIN
 msgid  "Program Module"
@@ -379,6 +379,10 @@ msgstr "प्रस्तुति"
 msgid  "Create and edit presentations for slideshows, meeting and Web pages by using Impress."
 msgstr ""
 
+#: source/impress/registryitem_impress.ulf#STR_REG_VAL_NEW
+msgid  "&New"
+msgstr "नया (&N)"
+
 #: source/impress/registryitem_impress.ulf#STR_REG_VAL_SO60_SHOW
 msgid  "Show"
 msgstr "दिखाएं"
@@ -419,10 +423,6 @@ msgstr "माइक्रोसॉफ़्ट पावरप्वाइं�
 msgid  "Microsoft PowerPoint Template"
 msgstr "माइक्रोसॉफ़्ट पावर प्वाइंट नमूना ख़ाका"
 
-#: source/impress/registryitem_impress.ulf#STR_REG_VAL_NEW
-msgid  "&New"
-msgstr "नया (&N)"
-
 #: source/impress/module_impress.ulf#STR_NAME_MODULE_PRG_IMPRESS
 msgid  "%PRODUCTNAME Impress"
 msgstr "%PRODUCTNAME इंप्रेस"
@@ -461,7 +461,7 @@ msgstr "गतिशील युक्ति फ़िल्टर"
 
 #: source/javafilter/module_javafilter.ulf#STR_DESC_MODULE_OPTIONAL_JAVAFILTER
 msgid  "Text and spreadsheet filters to support import/export for Palm handheld or Pocket PC (Java required)."
-msgstr ""
+msgstr "पाम हस्तगत अथवा पॉकेट PC (Java जरूरी) के लिए आयात/निर्यात समर्थन के लिए पाठ और स्प्रेडशीट."
 
 #: source/javafilter/module_javafilter.ulf#STR_NAME_MODULE_OPTIONAL_JAVAFILTER_PALM
 msgid  "Palm"
@@ -587,6 +587,10 @@ msgstr ""
 msgid  "Create and edit scientific formulas and equations by using Math."
 msgstr ""
 
+#: source/math/registryitem_math.ulf#STR_REG_VAL_NEW
+msgid  "&New"
+msgstr "नया (&N)"
+
 #: source/math/registryitem_math.ulf#STR_REG_VAL_SO60_FORMULA
 msgid  "%SXWFORMATNAME %SXWFORMATVERSION Formula"
 msgstr "%PRODUCTNAME %SXWFORMATVERSION सूत्र"
@@ -595,17 +599,18 @@ msgstr "%PRODUCTNAME %SXWFORMATVERSION सूत्र"
 msgid  "OpenDocument Formula"
 msgstr ""
 
-#: source/math/registryitem_math.ulf#STR_REG_VAL_NEW
-msgid  "&New"
-msgstr "नया (&N)"
-
 #: source/onlineupdate/module_onlineupdate.ulf#STR_NAME_MODULE_OPT_ONLINEUPDATE
 msgid  "Online Update"
 msgstr "ऑनलाइन अद्यतन"
 
 #: source/onlineupdate/module_onlineupdate.ulf#STR_DESC_MODULE_OPT_ONLINEUPDATE
 msgid  "Get automatically notified when a new update of %PRODUCTNAME becomes available."
-msgstr ""
+msgstr "स्वतः सूचना प्राप्त करता है जब %PRODUCTNAME का नया अद्यतन उपलब्ध होता है."
+
+#: source/ooo/registryitem_ooo.ulf#STR_REG_VAL_NEW
+#, fuzzy
+msgid  "&New"
+msgstr "नया (&N)"
 
 #: source/ooo/registryitem_ooo.ulf#STR_REG_VAL_INSTALL
 #, fuzzy
@@ -616,17 +621,12 @@ msgstr "संस्थापित करें (&I)"
 msgid  "OpenOffice.org 1.1 Configuration File"
 msgstr ""
 
-#: source/ooo/registryitem_ooo.ulf#STR_REG_VAL_APPCAPABILITY_DESCRIPTION_OOO
-msgid  "office productivity suite based on Apache OpenOffice project"
-msgstr ""
-
-#: source/ooo/registryitem_ooo.ulf#STR_REG_VAL_NEW
-#, fuzzy
-msgid  "&New"
-msgstr "नया (&N)"
-
 #: source/ooo/registryitem_ooo.ulf#STR_REG_VAL_SO50_TEMPLATE_OOO
 msgid  "StarOffice 5.0 Template"
+msgstr ""
+
+#: source/ooo/registryitem_ooo.ulf#STR_REG_VAL_APPCAPABILITY_DESCRIPTION_OOO
+msgid  "office productivity suite based on Apache OpenOffice project"
 msgstr ""
 
 #: source/ooo/module_systemint.ulf#STR_NAME_MODULE_OPTIONAL_SYSTEMINTEGRATION
@@ -662,8 +662,9 @@ msgid  "Optional Components"
 msgstr "वैकल्पिक घटक"
 
 #: source/ooo/module_ooo.ulf#STR_DESC_MODULE_OPTIONAL
+#, fuzzy
 msgid  "Common components and additional programs shared by all %PRODUCTNAME programs."
-msgstr ""
+msgstr "सभी %PRODUCTNAME प्रोग्रामों से उपयोग किए जाने वाले सामान्य घटक और अतिरिक्त प्रोग्राम."
 
 #: source/ooo/module_ooo.ulf#STR_NAME_MODULE_DICTIONARIES
 msgid  "Dictionaries"
@@ -694,22 +695,18 @@ msgid  "Component for enabling use %PRODUCTNAME without a display"
 msgstr "बिना प्रदर्शन का %PRODUCTNAME के प्रयोग को सक्रिय करने के लिए घटक"
 
 #: source/ooo/directory_ooo.ulf#STR_DIR_INFO
-#, fuzzy
 msgid  "Information"
 msgstr "सूचना"
 
 #: source/ooo/directory_ooo.ulf#STR_DIR_INTERNET
-#, fuzzy
 msgid  "Internet"
 msgstr "इन्टरनेट"
 
 #: source/ooo/directory_ooo.ulf#STR_DIR_JAVA
-#, fuzzy
 msgid  "Java"
 msgstr "जावा"
 
 #: source/ooo/directory_ooo.ulf#STR_DIR_FREIZEIT
-#, fuzzy
 msgid  "Fun&More"
 msgstr "मनोरंजनादि (&M)"
 
@@ -718,33 +715,29 @@ msgid  "%PRODUCTNAME API"
 msgstr ""
 
 #: source/ooo/directory_ooo.ulf#STR_DIR_TOURISMUS
-#, fuzzy
 msgid  "Travel"
 msgstr "यात्रा"
 
 #: source/ooo/directory_ooo.ulf#STR_DIR_KAPITEL
-#, fuzzy
 msgid  "Chapters"
 msgstr "अध्याय"
 
 #: source/ooo/directory_ooo.ulf#STR_DIR_DATEIEN
-#, fuzzy
 msgid  "Files"
 msgstr "फ़ाइल"
 
 #: source/ooo/folderitem_ooo.ulf#STR_FI_NAME_FROMTEMPLATE
-#, fuzzy
 msgid  "From Template"
 msgstr "नमूना से..."
 
 #: source/ooo/folderitem_ooo.ulf#STR_FI_NAME_OPENDOCUMENT
-#, fuzzy
 msgid  "Open Document"
 msgstr "दस्तावेज़ खोलें"
 
 #: source/ooo/folderitem_ooo.ulf#STR_FI_TOOLTIP_SOFFICE
+#, fuzzy
 msgid  "The office productivity suite compatible to the open and standardized ODF document format. Supported by The Apache Software Foundation."
-msgstr ""
+msgstr "मुक्त और मानक ODF दस्तावेज़ प्रारूप का आफिस उत्पादकता सूट. सन माइक्रोतंत्र के द्वारा समर्थित."
 
 #: source/ooo/module_langpack.ulf#STR_NAME_MODULE_ROOT_LANGPACK
 #, fuzzy
@@ -862,8 +855,9 @@ msgid  "Chinese (simplified)"
 msgstr "चीनी (सामान्य)"
 
 #: source/ooo/module_langpack.ulf#STR_DESC_MODULE_LANGPACK_ZH_CN
+#, fuzzy
 msgid  "Installs Chinese (simplified) support in %PRODUCTNAME %PRODUCTVERSION"
-msgstr ""
+msgstr "%PRODUCTNAME %PRODUCTVERSION में अंग्रेजी (दक्षिण अफ्रीका) समर्थन संस्थापित करता है."
 
 #: source/ooo/module_langpack.ulf#STR_NAME_MODULE_LANGPACK_ZH_TW
 #, fuzzy
@@ -871,8 +865,9 @@ msgid  "Chinese (traditional)"
 msgstr "चीनी (परम्परागत)"
 
 #: source/ooo/module_langpack.ulf#STR_DESC_MODULE_LANGPACK_ZH_TW
+#, fuzzy
 msgid  "Installs Chinese (traditional) support in %PRODUCTNAME %PRODUCTVERSION"
-msgstr ""
+msgstr "सर्बियाई (लातिन) समर्थन को %PRODUCTNAME %PRODUCTVERSION में संस्थापित करें"
 
 #: source/ooo/module_langpack.ulf#STR_NAME_MODULE_LANGPACK_NL
 #, fuzzy
@@ -1080,8 +1075,9 @@ msgid  "Southern Sotho (Sutu)"
 msgstr "दक्षिणी सोथो (Sutu)"
 
 #: source/ooo/module_langpack.ulf#STR_DESC_MODULE_LANGPACK_ST
+#, fuzzy
 msgid  "Installs Southern Sotho (Sutu) support in %PRODUCTNAME %PRODUCTVERSION"
-msgstr ""
+msgstr "%PRODUCTNAME %PRODUCTVERSION में दक्षिणी सोथो (सूटू) समर्थन संस्थापित करता है."
 
 #: source/ooo/module_langpack.ulf#STR_NAME_MODULE_LANGPACK_TN
 #, fuzzy
@@ -1159,8 +1155,9 @@ msgid  "Northern Sotho"
 msgstr "उत्तरी सोथो"
 
 #: source/ooo/module_langpack.ulf#STR_DESC_MODULE_LANGPACK_NS
+#, fuzzy
 msgid  "Installs Northern Sotho support in %PRODUCTNAME %PRODUCTVERSION"
-msgstr ""
+msgstr "%PRODUCTNAME %PRODUCTVERSION में दक्षिणी सोथो (सूटू) समर्थन संस्थापित करता है."
 
 #: source/ooo/module_langpack.ulf#STR_NAME_MODULE_LANGPACK_BN
 #, fuzzy
@@ -1318,8 +1315,9 @@ msgid  "Norwegian (Bokmål)"
 msgstr "नार्बेजियन (बोक्माल)"
 
 #: source/ooo/module_langpack.ulf#STR_DESC_MODULE_LANGPACK_NB
+#, fuzzy
 msgid  "Installs Norwegian (Bokmål) support in %PRODUCTNAME %PRODUCTVERSION"
-msgstr ""
+msgstr "%PRODUCTNAME %PRODUCTVERSION में नार्बेजियन (बोक्माल) समर्थन संस्थापित करता है."
 
 #: source/ooo/module_langpack.ulf#STR_NAME_MODULE_LANGPACK_NN
 #, fuzzy
@@ -1327,8 +1325,9 @@ msgid  "Norwegian (Nynorsk)"
 msgstr "नोर्वेजियन (नएनोर्स्क)"
 
 #: source/ooo/module_langpack.ulf#STR_DESC_MODULE_LANGPACK_NN
+#, fuzzy
 msgid  "Installs Norwegian (Nynorsk) support in %PRODUCTNAME %PRODUCTVERSION"
-msgstr ""
+msgstr "%PRODUCTNAME %PRODUCTVERSION में नार्बेजियन (बोक्माल) समर्थन संस्थापित करता है."
 
 #: source/ooo/module_langpack.ulf#STR_NAME_MODULE_LANGPACK_RM
 #, fuzzy
@@ -1336,8 +1335,9 @@ msgid  "Rhaeto-Romance"
 msgstr "राएटो-रोमान्स"
 
 #: source/ooo/module_langpack.ulf#STR_DESC_MODULE_LANGPACK_RM
+#, fuzzy
 msgid  "Installs Rhaeto-Romance support in %PRODUCTNAME %PRODUCTVERSION"
-msgstr ""
+msgstr "%PRODUCTNAME %PRODUCTVERSION में रेहेटो-रोमांस समर्थन संस्थापित करता है."
 
 #: source/ooo/module_langpack.ulf#STR_NAME_MODULE_LANGPACK_RO
 #, fuzzy
@@ -1495,8 +1495,9 @@ msgid  "Serbian (Latin)"
 msgstr "सर्बियन (लैटिन)"
 
 #: source/ooo/module_langpack.ulf#STR_DESC_MODULE_LANGPACK_SH_YU
+#, fuzzy
 msgid  "Installs Serbian (Latin) support in %PRODUCTNAME %PRODUCTVERSION"
-msgstr ""
+msgstr "सर्बियाई (लातिन) समर्थन को %PRODUCTNAME %PRODUCTVERSION में संस्थापित करें"
 
 #: source/ooo/module_langpack.ulf#STR_NAME_MODULE_LANGPACK_SH
 #, fuzzy
@@ -1504,8 +1505,9 @@ msgid  "Serbian (Latin)"
 msgstr "सर्बियाई (लातिन)"
 
 #: source/ooo/module_langpack.ulf#STR_DESC_MODULE_LANGPACK_SH
+#, fuzzy
 msgid  "Installs Serbian (Latin) support in %PRODUCTNAME %PRODUCTVERSION"
-msgstr ""
+msgstr "सर्बियाई (लातिन) समर्थन को %PRODUCTNAME %PRODUCTVERSION में संस्थापित करें"
 
 #: source/ooo/module_langpack.ulf#STR_NAME_MODULE_LANGPACK_GA
 #, fuzzy
@@ -1523,8 +1525,9 @@ msgid  "Serbian (Cyrillic)"
 msgstr "सर्बियन (सिरिलिक)"
 
 #: source/ooo/module_langpack.ulf#STR_DESC_MODULE_LANGPACK_SR_CS
+#, fuzzy
 msgid  "Installs Serbian (Cyrillic) support in %PRODUCTNAME %PRODUCTVERSION"
-msgstr ""
+msgstr "सर्बियाई (लातिन) समर्थन को %PRODUCTNAME %PRODUCTVERSION में संस्थापित करें"
 
 #: source/ooo/module_langpack.ulf#STR_NAME_MODULE_LANGPACK_SR
 #, fuzzy
@@ -1532,8 +1535,9 @@ msgid  "Serbian (Cyrillic)"
 msgstr "सर्बियाई (सिरिलिक)"
 
 #: source/ooo/module_langpack.ulf#STR_DESC_MODULE_LANGPACK_SR
+#, fuzzy
 msgid  "Installs Serbian (Cyrillic) support in %PRODUCTNAME %PRODUCTVERSION"
-msgstr ""
+msgstr "सर्बियाई (लातिन) समर्थन को %PRODUCTNAME %PRODUCTVERSION में संस्थापित करें"
 
 #: source/ooo/module_langpack.ulf#STR_NAME_MODULE_LANGPACK_BS
 #, fuzzy
@@ -1759,8 +1763,9 @@ msgid  "English (South Africa)"
 msgstr "अंग्रेजी (दक्षिण अफ्रीका)"
 
 #: source/ooo/module_langpack.ulf#STR_DESC_MODULE_LANGPACK_EN_ZA
+#, fuzzy
 msgid  "Installs English (South Africa) support in %PRODUCTNAME %PRODUCTVERSION"
-msgstr ""
+msgstr "%PRODUCTNAME %PRODUCTVERSION में अंग्रेजी (दक्षिण अफ्रीका) समर्थन संस्थापित करता है."
 
 #: source/ooo/module_langpack.ulf#STR_NAME_MODULE_LANGPACK_EN_GB
 #, fuzzy
@@ -1768,8 +1773,9 @@ msgid  "English (United Kingdom)"
 msgstr "अंग्रेजी (यूनाइडेट किंगडम)"
 
 #: source/ooo/module_langpack.ulf#STR_DESC_MODULE_LANGPACK_EN_GB
+#, fuzzy
 msgid  "Installs English (United Kingdom) support in %PRODUCTNAME %PRODUCTVERSION"
-msgstr ""
+msgstr "%PRODUCTNAME %PRODUCTVERSION में अंग्रेजी (यूनाइटेड किंगडम) समर्थन संस्थापित करता है."
 
 #: source/ooo/module_langpack.ulf#STR_NAME_MODULE_LANGPACK_UR_IN
 #, fuzzy
@@ -1885,7 +1891,6 @@ msgid  "Installs Gaelic (Scotland) support in %PRODUCTNAME %PRODUCTVERSION"
 msgstr ""
 
 #: source/python/module_python_mailmerge.ulf#STR_NAME_MODULE_OPTIONAL_PYTHON_MAILMERGE
-#, fuzzy
 msgid  "E-mail Mailmerge"
 msgstr "ई-मेल मेलमिलान"
 
@@ -1902,16 +1907,14 @@ msgid  "Adds the ability to automate %PRODUCTNAME with the python scripting lang
 msgstr ""
 
 #: source/quickstart/module_quickstart.ulf#STR_NAME_MODULE_OPTIONAL_QUICKSTART
-#, fuzzy
 msgid  "Quickstarter"
 msgstr "द्रुत आरंभकर्ता"
 
 #: source/quickstart/module_quickstart.ulf#STR_DESC_MODULE_OPTIONAL_QUICKSTART
 msgid  "Loads basic components on system start to accelerate start up time of %PRODUCTNAME %PRODUCTVERSION."
-msgstr ""
+msgstr "तंत्र पर बेसिक घटक तंत्र के आरंभ होने पर लोड करता है %PRODUCTNAME %PRODUCTVERSION के आरंभन समय को त्वरित करने के लिए."
 
 #: source/sdkoo/module_sdkoo.ulf#STR_NAME_MODULE_OPTIONAL_SDKOO
-#, fuzzy
 msgid  "Software Development Kit (SDK)"
 msgstr "सॉफ़्टवेयर डेवलेपमेंट किट (SDK)"
 
@@ -1932,13 +1935,16 @@ msgid  "HTML Document"
 msgstr ""
 
 #: source/writer/folderitem_writer.ulf#STR_FI_NAME_TEXTDOKUMENT
-#, fuzzy
 msgid  "Text Document"
 msgstr "पाठ दस्तावेज़"
 
 #: source/writer/folderitem_writer.ulf#STR_FI_TOOLTIP_WRITER
 msgid  "Create and edit text and graphics in letters, reports, documents and Web pages by using Writer."
-msgstr ""
+msgstr "लेखक के प्रयोग से पत्र, रिपोर्ट, दस्तावेज़ में पाठ व आरेख बनाएं व संपादित करें."
+
+#: source/writer/registryitem_writer.ulf#STR_REG_VAL_NEW
+msgid  "&New"
+msgstr "नया (&N)"
 
 #: source/writer/registryitem_writer.ulf#STR_REG_VAL_SO60_TEXT
 msgid  "%SXWFORMATNAME %SXWFORMATVERSION Text Document"
@@ -1969,56 +1975,42 @@ msgid  "HTML Document Template"
 msgstr ""
 
 #: source/writer/registryitem_writer.ulf#STR_REG_VAL_MS_WORD_DOCUMENT_OLD
-#, fuzzy
 msgid  "Microsoft Word 97-2003 Document"
 msgstr "माइक्रोसॉफ़्ट वर्ड 97-2003 दस्तावेज़"
 
 #: source/writer/registryitem_writer.ulf#STR_REG_VAL_MS_WORD_DOCUMENT
-#, fuzzy
 msgid  "Microsoft Word Document"
 msgstr "माइक्रोसॉफ़्ट वर्ड दस्तावेज़"
 
 #: source/writer/registryitem_writer.ulf#STR_REG_VAL_MS_WORD_TEMPLATE_OLD
-#, fuzzy
 msgid  "Microsoft Word 97-2003 Template"
 msgstr "माइक्रोसॉफ़्ट वर्ड 97-2003 नमूना ख़ाका"
 
 #: source/writer/registryitem_writer.ulf#STR_REG_VAL_MS_WORD_TEMPLATE
-#, fuzzy
 msgid  "Microsoft Word Template"
 msgstr "माइक्रोसॉफ़्ट वर्ड नमूना ख़ाका"
 
 #: source/writer/registryitem_writer.ulf#STR_REG_VAL_MS_RTF_DOCUMENT
-#, fuzzy
 msgid  "Rich Text Document"
 msgstr "समृद्ध पाठ दस्तावेज़"
 
-#: source/writer/registryitem_writer.ulf#STR_REG_VAL_NEW
-#, fuzzy
-msgid  "&New"
-msgstr "नया (&N)"
-
 #: source/writer/module_writer.ulf#STR_NAME_MODULE_PRG_WRT
-#, fuzzy
 msgid  "%PRODUCTNAME Writer"
 msgstr "%PRODUCTNAME लेखक"
 
 #: source/writer/module_writer.ulf#STR_DESC_MODULE_PRG_WRT
 msgid  "Create and edit text and graphics in letters, reports, documents and Web pages by using %PRODUCTNAME Writer."
-msgstr ""
+msgstr "लेखक के प्रयोग से पत्र, रिपोर्ट, दस्तावेज़ में पाठ व आरेख बनाएं व संपादित करें."
 
 #: source/writer/module_writer.ulf#STR_NAME_MODULE_PRG_WRT_BIN
-#, fuzzy
 msgid  "Program Module"
 msgstr "प्रोग्राम मॉड्यूल"
 
 #: source/writer/module_writer.ulf#STR_DESC_MODULE_PRG_WRT_BIN
-#, fuzzy
 msgid  "The application %PRODUCTNAME Writer"
 msgstr "अनुप्रयोग %PRODUCTNAME लेखक"
 
 #: source/writer/module_writer.ulf#STR_NAME_MODULE_PRG_WRT_HELP
-#, fuzzy
 msgid  "%PRODUCTNAME Writer Help"
 msgstr "%PRODUCTNAME लेखक"
 
@@ -2027,12 +2019,10 @@ msgid  "Help about %PRODUCTNAME Writer"
 msgstr ""
 
 #: source/writer/module_writer.ulf#STR_NAME_MODULE_PRG_WRT_WRITER2LATEX
-#, fuzzy
 msgid  "LaTeX Export"
 msgstr "लेटेक्स निर्यात"
 
 #: source/writer/module_writer.ulf#STR_DESC_MODULE_PRG_WRT_WRITER2LATEX
-#, fuzzy
 msgid  "LaTeX export filter for Writer documents."
 msgstr "राइटर दस्तावेज़ के लिए लेटेक्स निर्यात फ़िल्टर."
 

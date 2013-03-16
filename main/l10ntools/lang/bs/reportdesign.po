@@ -65,7 +65,7 @@ msgstr "Ime '#1' već postoji i ne može se ponovo dodijeliti."
 
 #: source/core/resource/strings.src#RID_STR_ERROR_WRONG_ARGUMENT.String.Text
 msgid  "You tried to set an illegal argument. Please have a look at '#1' for valid arguments."
-msgstr ""
+msgstr "Pokušali ste postaviti neispravan argument. Pogledajte na '#1' za važeće argumente."
 
 #: source/core/resource/strings.src#RID_STR_ARGUMENT_IS_NULL.String.Text
 msgid  "The element is invalid."
@@ -140,12 +140,20 @@ msgid  "Group Header"
 msgstr "Zaglavlje grupe"
 
 #: source/ui/dlg/GroupsSorting.src#RID_GROUPS_SORTING.LST_HEADERLST.Default.StringList.item
+msgid  "Present"
+msgstr "Prisutan"
+
+#: source/ui/dlg/GroupsSorting.src#RID_GROUPS_SORTING.LST_HEADERLST.Default.StringList.item
 msgid  "Not present"
 msgstr "Nije prisutan"
 
 #: source/ui/dlg/GroupsSorting.src#RID_GROUPS_SORTING.FT_FOOTER.FixedText.Text
 msgid  "Group Footer"
 msgstr "Podnožje grupe"
+
+#: source/ui/dlg/GroupsSorting.src#RID_GROUPS_SORTING.LST_FOOTERLST.Default.StringList.item
+msgid  "Present"
+msgstr "Prisutan"
 
 #: source/ui/dlg/GroupsSorting.src#RID_GROUPS_SORTING.LST_FOOTERLST.Default.StringList.item
 msgid  "Not present"
@@ -253,15 +261,7 @@ msgstr "Sačuvati grupe zajedno na jednoj stranici?"
 
 #: source/ui/dlg/GroupsSorting.src#STR_RPT_HELP_SORT.String.Text
 msgid  "Select ascending or descending sort order. Ascending means from A to Z or 0 to 9"
-msgstr ""
-
-#: source/ui/dlg/GroupsSorting.src#RID_GROUPS_SORTING.LST_HEADERLST.Default.StringList.item
-msgid  "Present"
-msgstr "Prisutan"
-
-#: source/ui/dlg/GroupsSorting.src#RID_GROUPS_SORTING.LST_FOOTERLST.Default.StringList.item
-msgid  "Present"
-msgstr "Prisutan"
+msgstr "Odaberi sortiranje u rastućem ili opadajućem redoslijedu. Rastući znači od A do Z ili 0 do 9"
 
 #: source/ui/dlg/PageNumber.src#RID_PAGENUMBERS.ModalDialog.Text
 msgid  "Page Numbers"
@@ -300,6 +300,14 @@ msgid  "Alignment:"
 msgstr "Poravnanje:"
 
 #: source/ui/dlg/PageNumber.src#RID_PAGENUMBERS.LST_ALIGNMENT.Default.StringList.item
+msgid  "Left"
+msgstr "Lijevo"
+
+#: source/ui/dlg/PageNumber.src#RID_PAGENUMBERS.LST_ALIGNMENT.Default.StringList.item
+msgid  "Center"
+msgstr "Sredina"
+
+#: source/ui/dlg/PageNumber.src#RID_PAGENUMBERS.LST_ALIGNMENT.Default.StringList.item
 msgid  "Right"
 msgstr "Desno"
 
@@ -312,20 +320,12 @@ msgid  "~Help"
 msgstr "~Pomoć"
 
 #: source/ui/dlg/PageNumber.src#STR_RPT_PN_PAGE.String.Text
-msgid  ""Page " & #PAGENUMBER#"
-msgstr ""
+msgid  "\"Page \" & #PAGENUMBER#"
+msgstr "Strana  & #PAGENUMBER#"
 
 #: source/ui/dlg/PageNumber.src#STR_RPT_PN_PAGE_OF.String.Text
-msgid  " & " of " & #PAGECOUNT#"
-msgstr ""
-
-#: source/ui/dlg/PageNumber.src#RID_PAGENUMBERS.LST_ALIGNMENT.Default.StringList.item
-msgid  "Left"
-msgstr "Lijevo"
-
-#: source/ui/dlg/PageNumber.src#RID_PAGENUMBERS.LST_ALIGNMENT.Default.StringList.item
-msgid  "Center"
-msgstr "Sredina"
+msgid  " & \" of \" & #PAGECOUNT#"
+msgstr "& \" od \" & #PAGECOUNT#"
 
 #: source/ui/dlg/dlgpage.src#RID_PAGEDIALOG_PAGE.TabDialog.Text
 msgid  "Page Setup"
@@ -456,6 +456,10 @@ msgid  "Properties..."
 msgstr "Svojstva..."
 
 #: source/ui/dlg/CondFormat.src#WIN_CONDITION.LB_COND_TYPE.Default.StringList.item
+msgid  "Field Value Is"
+msgstr "Vrijednost polja je"
+
+#: source/ui/dlg/CondFormat.src#WIN_CONDITION.LB_COND_TYPE.Default.StringList.item
 msgid  "Expression Is"
 msgstr "Izraz je"
 
@@ -550,10 +554,6 @@ msgstr "Pomoć"
 #: source/ui/dlg/CondFormat.src#ADDFIELD_HELP_FIELD.FixedText.Text
 msgid  "Highlight the fields to insert into the selected section of the template, then click Insert or press Enter."
 msgstr ""
-
-#: source/ui/dlg/CondFormat.src#WIN_CONDITION.LB_COND_TYPE.Default.StringList.item
-msgid  "Field Value Is"
-msgstr "Vrijednost polja je"
 
 #: source/ui/dlg/DateTime.src#RID_DATETIME_DLG.ModalDialog.Text
 msgid  "Date and Time"
@@ -833,7 +833,7 @@ msgstr "Poveži podređena polja"
 
 #: source/ui/inspection/inspection.src#RID_STR_EXPLANATION.String.Text
 msgid  "Charts can be used to display detailed data about the current record of the report. To do this, you can specify which columns in the chart match which columns in the report."
-msgstr ""
+msgstr "Dijagrami se mogu koristiti za prikaz detaljnih podataka o trenutnom slogu izvještaja. Da ovo uradite, možete navesti koje kolone u dijagramu odgovaraju kolonama u izvještaju"
 
 #: source/ui/inspection/inspection.src#RID_STR_DETAILLABEL.String.Text
 msgid  "Chart"
@@ -915,292 +915,234 @@ msgid  "Maximum"
 msgstr "Maksimum"
 
 #: source/ui/report/report.src#RID_STR_BRWTITLE_PROPERTIES.String.Text
-#, fuzzy
 msgid  "Properties: "
 msgstr "Osobine: "
 
 #: source/ui/report/report.src#RID_STR_BRWTITLE_NO_PROPERTIES.String.Text
-#, fuzzy
 msgid  "No Control marked"
 msgstr "Nijedna kontrola nije označena"
 
 #: source/ui/report/report.src#RID_STR_BRWTITLE_MULTISELECT.String.Text
-#, fuzzy
 msgid  "Multiselection"
 msgstr "Višestruki izbor"
 
 #: source/ui/report/report.src#RID_STR_PROPTITLE_IMAGECONTROL.String.Text
-#, fuzzy
 msgid  "Image Control"
 msgstr "Kontrola slike"
 
 #: source/ui/report/report.src#RID_STR_PROPTITLE_FIXEDTEXT.String.Text
-#, fuzzy
 msgid  "Label field"
 msgstr "Polje oznake"
 
 #: source/ui/report/report.src#RID_STR_PROPTITLE_FIXEDLINE.String.Text
-#, fuzzy
 msgid  "Line"
 msgstr "Linija"
 
 #: source/ui/report/report.src#RID_STR_PROPTITLE_FORMATTED.String.Text
-#, fuzzy
 msgid  "Formatted Field"
 msgstr "Oblikovano polje"
 
 #: source/ui/report/report.src#RID_STR_PROPTITLE_SHAPE.String.Text
-#, fuzzy
 msgid  "Shape"
 msgstr "Oblik"
 
 #: source/ui/report/report.src#RID_STR_PROPTITLE_REPORT.String.Text
-#, fuzzy
 msgid  "Report"
 msgstr "Izvještaj"
 
 #: source/ui/report/report.src#RID_STR_PROPTITLE_SECTION.String.Text
-#, fuzzy
 msgid  "Section"
 msgstr "Sekcija"
 
 #: source/ui/report/report.src#RID_STR_PROPTITLE_FUNCTION.String.Text
-#, fuzzy
 msgid  "Function"
 msgstr "Funkcija"
 
 #: source/ui/report/report.src#RID_STR_PROPTITLE_GROUP.String.Text
-#, fuzzy
 msgid  "Group"
 msgstr "Grupa"
 
 #: source/ui/report/report.src#STR_SHOW_RULER.String.Text
-#, fuzzy
 msgid  "Show ruler"
 msgstr "Prikaži linijar"
 
 #: source/ui/report/report.src#STR_SHOW_GRID.String.Text
-#, fuzzy
 msgid  "Show grid"
 msgstr "Prikaži mrežu"
 
 #: source/ui/report/report.src#RID_STR_UNDO_CHANGEPOSITION.String.Text
-#, fuzzy
 msgid  "Change Object"
 msgstr "Promijeni objekt"
 
 #: source/ui/report/report.src#RID_STR_UNDO_MOVE_GROUP.String.Text
-#, fuzzy
 msgid  "Move Group(s)"
 msgstr "Pomjeri grupu/grupe"
 
 #: source/ui/report/report.src#RID_STR_UNDO_CONDITIONAL_FORMATTING.String.Text
-#, fuzzy
 msgid  "Conditional Formatting"
 msgstr "Uslovno formatiranje"
 
 #: source/ui/report/report.src#RID_STR_UNDO_REMOVE_REPORTHEADERFOOTER.String.Text
-#, fuzzy
 msgid  "Remove report header / report footer"
 msgstr "Obriši zaglavlje/podnožje izvještaja"
 
 #: source/ui/report/report.src#RID_STR_UNDO_ADD_REPORTHEADERFOOTER.String.Text
-#, fuzzy
 msgid  "Add report header / report footer"
 msgstr "Dodaj zaglavlje/podnožje izvještaja"
 
 #: source/ui/report/report.src#RID_STR_UNDO_REMOVE_PAGEHEADERFOOTER.String.Text
-#, fuzzy
 msgid  "Remove page header / page footer"
 msgstr "Obriši zaglavlje/podnožje strane"
 
 #: source/ui/report/report.src#RID_STR_UNDO_ADD_PAGEHEADERFOOTER.String.Text
-#, fuzzy
 msgid  "Add page header / page footer"
 msgstr "Dodaj zaglavlje/podnožje stranice"
 
 #: source/ui/report/report.src#RID_STR_UNDO_PROPERTY.String.Text
-#, fuzzy
 msgid  "Change property '#'"
 msgstr "Promijeni svojstvo '#'"
 
 #: source/ui/report/report.src#RID_STR_UNDO_ADD_GROUP_HEADER.String.Text
-#, fuzzy
 msgid  "Add group header "
 msgstr "Dodaj zaglavlje grupe "
 
 #: source/ui/report/report.src#RID_STR_UNDO_REMOVE_GROUP_HEADER.String.Text
-#, fuzzy
 msgid  "Remove group header "
 msgstr "Obriši zaglavlje grupe "
 
 #: source/ui/report/report.src#RID_STR_UNDO_ADD_GROUP_FOOTER.String.Text
-#, fuzzy
 msgid  "Add group footer "
 msgstr "Dodaj podnožje grupe "
 
 #: source/ui/report/report.src#RID_STR_UNDO_REMOVE_GROUP_FOOTER.String.Text
-#, fuzzy
 msgid  "Remove group footer "
 msgstr "Obriši podnožje grupe "
 
 #: source/ui/report/report.src#RID_STR_UNDO_ADDFUNCTION.String.Text
-#, fuzzy
 msgid  "Add function"
 msgstr "Dodaj funkciju"
 
 #: source/ui/report/report.src#RID_STR_UNDO_DELETEFUNCTION.String.Text
-#, fuzzy
 msgid  "Delete function"
 msgstr "Obriši funkciju"
 
 #: source/ui/report/report.src#RID_STR_DESIGN_VIEW.String.Text
-#, fuzzy
 msgid  "Design"
 msgstr "Dizajn"
 
 #: source/ui/report/report.src#RID_STR_PREVIEW_VIEW.String.Text
-#, fuzzy
 msgid  "Preview"
 msgstr "Pregled"
 
 #: source/ui/report/report.src#STR_RPT_TITLE.String.Text
-#, fuzzy
 msgid  "Report #"
 msgstr "Izvještaj #"
 
 #: source/ui/report/report.src#STR_RPT_LABEL.String.Text
-#, fuzzy
 msgid  "~Report name"
 msgstr "Ime i~zvještaja"
 
 #: source/ui/report/report.src#RID_STR_UNDO_REMOVE_GROUP.String.Text
-#, fuzzy
 msgid  "Delete Group"
 msgstr "Obriši grupu"
 
 #: source/ui/report/report.src#RID_STR_UNDO_APPEND_GROUP.String.Text
-#, fuzzy
 msgid  "Add Group"
 msgstr "Dodaj grupu"
 
 #: source/ui/report/report.src#RID_STR_UNDO_REMOVE_SELECTION.String.Text
-#, fuzzy
 msgid  "Delete Selection"
 msgstr "Obriši izbor"
 
 #: source/ui/report/report.src#RID_STR_UNDO_REMOVE_FUNCTION.String.Text
-#, fuzzy
 msgid  "Delete Function"
 msgstr "Obriši funkciju"
 
 #: source/ui/report/report.src#RID_STR_UNDO_CHANGE_SIZE.String.Text
-#, fuzzy
 msgid  "Change Size"
 msgstr "Promijeni veličinu"
 
 #: source/ui/report/report.src#RID_STR_UNDO_PASTE.String.Text
-#, fuzzy
 msgid  "Paste"
 msgstr "Ubaci"
 
 #: source/ui/report/report.src#RID_STR_UNDO_INSERT_CONTROL.String.Text
-#, fuzzy
 msgid  "Insert Control"
 msgstr "Umetni kontrolu"
 
 #: source/ui/report/report.src#RID_STR_UNDO_DELETE_CONTROL.String.Text
-#, fuzzy
 msgid  "Delete Control"
 msgstr "Obriši kontrolu"
 
 #: source/ui/report/report.src#RID_STR_UNDO_GROUP.String.Text
-#, fuzzy
 msgid  "Insert Group"
 msgstr "Umetanje grupe"
 
 #: source/ui/report/report.src#RID_STR_UNDO_UNGROUP.String.Text
-#, fuzzy
 msgid  "Delete Group"
 msgstr "Obriši grupu"
 
 #: source/ui/report/report.src#RID_STR_GROUPHEADER.String.Text
-#, fuzzy
 msgid  "GroupHeader"
 msgstr "GrupnoZaglavlje"
 
 #: source/ui/report/report.src#RID_STR_GROUPFOOTER.String.Text
-#, fuzzy
 msgid  "GroupFooter"
 msgstr "GrupnoPodnožje"
 
 #: source/ui/report/report.src#RID_MENU_REPORT.SID_SORTINGANDGROUPING.MenuItem.Text
-#, fuzzy
 msgid  "Sorting and Grouping..."
 msgstr "Sortiranje i grupisanje..."
 
 #: source/ui/report/report.src#RID_MENU_REPORT.SID_ATTR_CHAR_COLOR_BACKGROUND.MenuItem.Text
-#, fuzzy
 msgid  "Background Color..."
 msgstr "Boja pozadine..."
 
 #: source/ui/report/report.src#RID_MENU_REPORT.SID_RULER.MenuItem.Text
-#, fuzzy
 msgid  "Ruler..."
 msgstr "Linijar..."
 
 #: source/ui/report/report.src#RID_MENU_REPORT.SID_GRID_VISIBLE.MenuItem.Text
-#, fuzzy
 msgid  "Grid..."
 msgstr "Mreža..."
 
 #: source/ui/report/report.src#RID_MENU_REPORT.SID_ARRANGEMENU.MenuItem.Text
-#, fuzzy
 msgid  "~Arrange"
 msgstr "~Rasporedi"
 
 #: source/ui/report/report.src#RID_MENU_REPORT.SID_ARRANGEMENU.SID_FRAME_UP.MenuItem.Text
-#, fuzzy
 msgid  "Bring ~Forward"
 msgstr "~Prebaci napred"
 
 #: source/ui/report/report.src#RID_MENU_REPORT.SID_ARRANGEMENU.SID_FRAME_DOWN.MenuItem.Text
-#, fuzzy
 msgid  "Send Back~ward"
 msgstr "~Pošalji nazad"
 
 #: source/ui/report/report.src#RID_MENU_REPORT.SID_OBJECT_RESIZING.MenuItem.Text
-#, fuzzy
 msgid  "~Object Resizing"
 msgstr "~Promjena veličine objekata"
 
 #: source/ui/report/report.src#RID_MENU_REPORT.SID_OBJECT_RESIZING.SID_OBJECT_SMALLESTWIDTH.MenuItem.Text
-#, fuzzy
 msgid  "~Fit to smallest width"
 msgstr "~Uskladi na najmanju širinu"
 
 #: source/ui/report/report.src#RID_MENU_REPORT.SID_OBJECT_RESIZING.SID_OBJECT_GREATESTWIDTH.MenuItem.Text
-#, fuzzy
 msgid  "~Fit to greatest width"
 msgstr "~Uskladi na najveću širinu"
 
 #: source/ui/report/report.src#RID_MENU_REPORT.SID_OBJECT_RESIZING.SID_OBJECT_SMALLESTHEIGHT.MenuItem.Text
-#, fuzzy
 msgid  "~Fit to smallest height"
 msgstr "~Uskladi na najmanju visinu"
 
 #: source/ui/report/report.src#RID_MENU_REPORT.SID_OBJECT_RESIZING.SID_OBJECT_GREATESTHEIGHT.MenuItem.Text
-#, fuzzy
 msgid  "~Fit to greatest height"
 msgstr "~Uskladi na najveću visinu"
 
 #: source/ui/report/report.src#RID_MENU_REPORT.SID_SECTION_SHRINK_MENU.MenuItem.Text
-#, fuzzy
 msgid  "Section"
 msgstr "Sekcija"
 
 #: source/ui/report/report.src#RID_MENU_REPORT.SID_SECTION_SHRINK_MENU.SID_SECTION_SHRINK.MenuItem.Text
-#, fuzzy
 msgid  "Shrink"
 msgstr "Smanji"
 
@@ -1213,154 +1155,125 @@ msgid  "Shrink from bottom"
 msgstr ""
 
 #: source/ui/report/report.src#RID_MENU_REPORT.SID_DISTRIBUTION.MenuItem.Text
-#, fuzzy
 msgid  "Distribution..."
 msgstr "Distribucija..."
 
 #: source/ui/report/report.src#RID_MENU_REPORT.SID_SHOW_PROPERTYBROWSER.MenuItem.Text
-#, fuzzy
 msgid  "Properties..."
 msgstr "Svojstva..."
 
 #: source/ui/report/report.src#RID_STR_FIELDSELECTION.String.Text
-#, fuzzy
 msgid  "Add field:"
 msgstr "Dodaj polje:"
 
 #: source/ui/report/report.src#RID_STR_FILTER.String.Text
-#, fuzzy
 msgid  "Filter"
 msgstr "Filter"
 
 #: source/ui/report/report.src#RID_APP_TITLE.String.Text
-#, fuzzy
 msgid  " - %PRODUCTNAME Base Report"
 msgstr "- %PRODUCTNAME Osnovni izvještaj"
 
 #: source/ui/report/report.src#RID_APP_NEW_DOC.String.Text
-#, fuzzy
 msgid  "Untitled"
 msgstr "Bez naslova"
 
 #: source/ui/report/report.src#RID_STR_UNDO_ALIGNMENT.String.Text
-#, fuzzy
 msgid  "Change Alignment"
 msgstr "Promijeni poravnanje"
 
 #: source/ui/report/report.src#RID_STR_HEADER.String.Text
-#, fuzzy
 msgid  "# Header"
 msgstr "# Zaglavlje"
 
 #: source/ui/report/report.src#RID_STR_FOOTER.String.Text
-#, fuzzy
 msgid  "# Footer"
 msgstr "# Podnožje"
 
 #: source/ui/report/report.src#RID_STR_IMPORT_GRAPHIC.String.Text
-#, fuzzy
 msgid  "Insert graphics"
 msgstr "Ubaci sliku"
 
 #: source/ui/report/report.src#RID_STR_DELETE.String.Text
-#, fuzzy
 msgid  "Delete"
 msgstr "Obriši"
 
 #: source/ui/report/report.src#RID_STR_FUNCTION.String.Text
-#, fuzzy
 msgid  "Function"
 msgstr "Funkcija"
 
 #: source/ui/report/report.src#RID_STR_COULD_NOT_CREATE_REPORT.String.Text
-#, fuzzy
 msgid  "An error occurred while creating the report."
 msgstr "Greška se dogodila pri kreiranju izvještaja."
 
 #: source/ui/report/report.src#RID_STR_CAUGHT_FOREIGN_EXCEPTION.String.Text
-#, fuzzy
 msgid  "An exception of type $type$ was caught."
 msgstr "Dohvaćen izuzetak tipa $type$."
 
 #: source/ui/report/report.src#RID_STR_UNDO_CHANGEFONT.String.Text
-#, fuzzy
 msgid  "Change font"
 msgstr "Promjena pisma"
 
 #: source/ui/report/report.src#RID_STR_UNDO_CHANGEPAGE.String.Text
-#, fuzzy
 msgid  "Change page attributes"
 msgstr "Promijeni atribute stranice"
 
 #: source/ui/report/report.src#RID_STR_PAGEHEADERFOOTER_INSERT.String.Text
-#, fuzzy
 msgid  "Insert Page Header/Footer"
 msgstr "Ubaci zaglavlje/podnožje strane"
 
 #: source/ui/report/report.src#RID_STR_PAGEHEADERFOOTER_DELETE.String.Text
-#, fuzzy
 msgid  "Delete Page Header/Footer"
 msgstr "Briši zaglavlje/podnožje strane"
 
 #: source/ui/report/report.src#RID_STR_COLUMNHEADERFOOTER_INSERT.String.Text
-#, fuzzy
 msgid  "Insert Column Header/Footer"
 msgstr "Ubaci zaglavlje/podnožje kolone"
 
 #: source/ui/report/report.src#RID_STR_COLUMNHEADERFOOTER_DELETE.String.Text
-#, fuzzy
 msgid  "Delete Column Header/Footer"
 msgstr "Briši zaglavlje/podnožje kolone"
 
 #: source/ui/report/report.src#RID_STR_REPORTHEADERFOOTER_INSERT.String.Text
-#, fuzzy
 msgid  "Insert Report Header/Footer"
 msgstr "Ubaci zaglavlje/podnožje izvještaja"
 
 #: source/ui/report/report.src#RID_STR_REPORTHEADERFOOTER_DELETE.String.Text
-#, fuzzy
 msgid  "Delete Report Header/Footer"
 msgstr "Obriši Zaglavlje/Podnožje izvještaja"
 
 #: source/ui/report/report.src#RID_ERR_NO_COMMAND.String.Text
-#, fuzzy
 msgid  "The report can not be executed unless it is bound to content."
 msgstr "Izvještaj se ne može izvršiti osim ako nije vezan za sadržaj."
 
 #: source/ui/report/report.src#RID_ERR_NO_OBJECTS.String.Text
 msgid  "The report can not be executed unless at least one object has been inserted."
-msgstr ""
+msgstr "Izvještaj se ne može izvršiti ako bar jedan objekat nije unesen."
 
 #: source/ui/report/report.src#RID_STR_UNDO_SHRINK.String.Text
 msgid  "Shrink Section"
 msgstr ""
 
-#: source/ui/report/report.src#RID_STR_INSERT.String.Text
-#, fuzzy
-msgid  "Insert"
-msgstr "Ubaci"
-
 #: source/ui/report/report.src#RID_STR_DETAIL.String.Text
-#, fuzzy
 msgid  "Detail"
 msgstr "Detalji"
 
 #: source/ui/report/report.src#RID_STR_PAGE_HEADER.String.Text
-#, fuzzy
 msgid  "Page Header"
 msgstr "Zaglavlje strane"
 
 #: source/ui/report/report.src#RID_STR_PAGE_FOOTER.String.Text
-#, fuzzy
 msgid  "Page Footer"
 msgstr "Podnožje strane"
 
 #: source/ui/report/report.src#RID_STR_REPORT_HEADER.String.Text
-#, fuzzy
 msgid  "Report Header"
 msgstr "Zaglavlje izvještaja"
 
 #: source/ui/report/report.src#RID_STR_REPORT_FOOTER.String.Text
-#, fuzzy
 msgid  "Report Footer"
 msgstr "Podnožje izvještaja"
+
+#: source/ui/report/report.src#RID_STR_INSERT.String.Text
+msgid  "Insert"
+msgstr "Ubaci"

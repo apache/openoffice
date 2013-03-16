@@ -125,7 +125,7 @@ msgstr "Уважліва прачытайце наступнае ліцэнзі�
 
 #: src/Localization/setupstrings.ulf#STRING_ACCEPTLICENSE3
 msgid  "If you have read and accept all the terms of the entire Software License Agreement, click 'Accept License' to continue with the installation."
-msgstr ""
+msgstr "Калі вы цалкам прачыталі і прынялі ўсе ўмовы Ліцэнзійнага пагаднення праграмнага забеспячэння, націсніце 'Прыняць ліцэнзію', каб працягваць інсталяцыю."
 
 #: src/Localization/setupstrings.ulf#STRING_CHOOSEDIRECTORY1
 msgid  "Select Installation Directory"
@@ -153,11 +153,11 @@ msgstr "Стварыць новы каталог"
 
 #: src/Localization/setupstrings.ulf#STRING_CHOOSEDIRECTORY5_QUESTION_MESSAGE
 msgid  "The directory '${DIR}' does not exist.\nDo you want to create it now?"
-msgstr ""
+msgstr "Не знойдзены каталог '${DIR}'.\nЦі жадаеце стварыць яго зараз?"
 
 #: src/Localization/setupstrings.ulf#STRING_CHOOSEDIRECTORY5_QUESTION_MESSAGE2
 msgid  "The directory '${DIR}' does not exist.\nDo you want to create it now or choose another directory?"
-msgstr ""
+msgstr "Не знойдзены каталог '${DIR}'.\nЦі жадаеце стварыць яго зараз або выбраць іншы каталог?"
 
 #: src/Localization/setupstrings.ulf#STRING_CHOOSEDIRECTORY6
 msgid  "Select root directory"
@@ -209,11 +209,11 @@ msgstr "Выберыце тып інсталяцыі"
 
 #: src/Localization/setupstrings.ulf#STRING_CHOOSEINSTALLATIONTYPE4
 msgid  "The main components will be installed. Recommended for most users."
-msgstr ""
+msgstr "Будуць інсталяваны асноўныя кампаненты. Рэкамендуецца большасці карыстальнікаў."
 
 #: src/Localization/setupstrings.ulf#STRING_CHOOSEINSTALLATIONTYPE5
 msgid  "You choose the components you want to install and where they are stored. Recommended for advanced users."
-msgstr ""
+msgstr "Выбар кампанентаў, якія трэба ўстанавіць і куды іх запісваць. Рэкамендуецца дасведчаным карыстальнікам."
 
 #: src/Localization/setupstrings.ulf#STRING_CHOOSEINSTALLATIONTYPE6
 msgid  "Typical"
@@ -253,7 +253,7 @@ msgstr "Вітаем"
 
 #: src/Localization/setupstrings.ulf#STRING_PROLOGUE2
 msgid  "This Installation Wizard will install ${PRODUCT_FULLNAME} on your computer."
-msgstr ""
+msgstr "Майстар інсталяцыі ўстановіць ${PRODUCT_FULLNAME} на вашым камп'ютэры."
 
 #: src/Localization/setupstrings.ulf#STRING_PROLOGUE3
 msgid  "To continue, click 'Next'."
@@ -277,11 +277,11 @@ msgstr "Інсталяцыя схібіла"
 
 #: src/Localization/setupstrings.ulf#STRING_INSTALLATIONCOMPLETED2
 msgid  "The Installation Wizard has successfully installed ${PRODUCT_FULLNAME} on your computer."
-msgstr ""
+msgstr "Майстар інсталяцыі паспяхова ўстанавіў ${PRODUCT_FULLNAME} на ваш камп'ютэр."
 
 #: src/Localization/setupstrings.ulf#STRING_INSTALLATIONCOMPLETED2_ABORT
 msgid  "The Installation Wizard was aborted. ${PRODUCT_NAME} is not installed on your computer."
-msgstr ""
+msgstr "Майстар інсталяцыі быў спынены. ${PRODUCT_NAME} не быў устаноўлены на ваш камп'ютар."
 
 #: src/Localization/setupstrings.ulf#STRING_INSTALLATIONCOMPLETED2_ERROR
 msgid  "An error has occurred. Thus the Installation Wizard could not install ${PRODUCT_NAME} on your computer successfully. Click 'Details...' for more information."
@@ -297,7 +297,7 @@ msgstr "Падрабязна..."
 
 #: src/Localization/setupstrings.ulf#STRING_UNINSTALLATIONPROLOGUE2
 msgid  "The ${PRODUCT_FULLNAME} Uninstallation Wizard will remove ${PRODUCT_FULLNAME} from your computer."
-msgstr ""
+msgstr "Майстар выдалення ${PRODUCT_FULLNAME} здыме ${PRODUCT_FULLNAME} з вашага камп'ютара."
 
 #: src/Localization/setupstrings.ulf#STRING_UNINSTALLATION_PROLOGUE_WRONG_PRIVILEGES_CURRENT_ROOT
 msgid  "Sorry, wrong privileges. Installation was done with User privilges, but you have Root privileges."
@@ -321,7 +321,7 @@ msgstr "часткова"
 
 #: src/Localization/setupstrings.ulf#STRING_CHOOSEUNINSTALLATIONTYPE4
 msgid  "Completely removes ${PRODUCT_FULLNAME} and all its components from your system."
-msgstr ""
+msgstr "Цалкам выдаляе з камп'ютара пакет ${PRODUCT_FULLNAME} і ўсе яго кампаненты."
 
 #: src/Localization/setupstrings.ulf#STRING_CHOOSEUNINSTALLATIONTYPE5
 msgid  "You choose the program features you want to remove."
@@ -361,7 +361,7 @@ msgstr "Дэінсталяцыя схібіла"
 
 #: src/Localization/setupstrings.ulf#STRING_UNINSTALLATIONCOMPLETED2
 msgid  "The Uninstallation Wizard has successfully removed ${PRODUCT_FULLNAME} from your computer."
-msgstr ""
+msgstr "Майстар дэінсталяцыі паспяхова выдаліў ${PRODUCT_FULLNAME} з вашага камп'ютэра."
 
 #: src/Localization/setupstrings.ulf#STRING_UNINSTALLATIONCOMPLETED2_PARTIAL
 msgid  "The Uninstallation Wizard has successfully removed the selected components of ${PRODUCT_NAME} from your computer."
@@ -449,7 +449,7 @@ msgstr "'Наперад' пераходзіць да наступнай стар
 
 #: src/Localization/setupstrings.ulf#STRING_PROLOGUE_4
 msgid  "'Cancel' ends the Installation Wizard without installing this software."
-msgstr ""
+msgstr "'Спыніць' спыняе працу Майстра інсталяцыі без устанаўлення гэтага праграмнага пакета."
 
 #: src/Localization/setupstrings.ulf#STRING_PROLOGUE_5
 msgid  "'Help' displays the Help with further information about the page currently displayed."
@@ -473,7 +473,7 @@ msgstr "'Наперад' пераходзіць да наступнай стар
 
 #: src/Localization/setupstrings.ulf#STRING_UNINSTALLATIONPROLOGUE_4
 msgid  "'Cancel' ends the Uninstallation Wizard without removing this software."
-msgstr ""
+msgstr "'Спыніць' спыняе працу Майстра дэінсталяцыі без выдалення гэтага праграмнага пакета."
 
 #: src/Localization/setupstrings.ulf#STRING_UNINSTALLATIONPROLOGUE_5
 msgid  "'Help' displays the Help with further information about the page currently displayed."
@@ -489,7 +489,7 @@ msgstr ""
 
 #: src/Localization/setupstrings.ulf#STRING_ACCEPTLICENSE_2
 msgid  "If you have read and accept all the terms of the entire Software License Agreement, click 'Accept License' to continue with the installation."
-msgstr ""
+msgstr "Калі вы цалкам прачыталі і прынялі ўсе ўмовы Ліцэнзійнага пагаднення праграмнага забеспячэння, націсніце 'Прыняць ліцэнзію', каб працягваць інсталяцыю."
 
 #: src/Localization/setupstrings.ulf#STRING_ACCEPTLICENSE_3
 msgid  "If you do not accept all the terms of the Software License Agreement, click 'Decline' to end the Installation Wizard without installing this product."

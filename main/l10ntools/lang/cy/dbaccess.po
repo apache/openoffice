@@ -41,23 +41,23 @@ msgstr "Methu creu cysylltiad."
 
 #: source/core/resource/strings.src#RID_STR_TABLE_IS_FILTERED.String.Text
 msgid  "The table $name$ already exists. It is not visible because it has been filtered out."
-msgstr ""
+msgstr "Mae'r tabl $name$ yn bodoli eisoes. Nid yw'n weladwy am ei fod wedi cael ei hidlo allan."
 
 #: source/core/resource/strings.src#RID_STR_NEED_CONFIG_WRITE_ACCESS.String.Text
 msgid  "You have no write access to the configuration data the object is based on."
-msgstr ""
+msgstr "Nid oes gennych hawl ysgrifennu i'r data ffurfweddiad mae'r gwrthrych wedi ei sylfaeni arno."
 
 #: source/core/resource/strings.src#RID_STR_COULDNOTCONNECT_UNSPECIFIED.String.Text
 msgid  "The connection to the external data source could not be established. An unknown error occurred. The driver is probably defective."
-msgstr ""
+msgstr "Methu creu cysylltiad â'r ffynhonnell data allanol. Digwyddodd gwall anhysbys. Mwy na thebyg mae'r ddisg yn wallus."
 
 #: source/core/resource/strings.src#RID_STR_COULDNOTCONNECT_NODRIVER.String.Text
 msgid  "The connection to the external data source could not be established. No SDBC driver was found for the given URL."
-msgstr ""
+msgstr "Methu creu cysylltiad â'r ffynhonnell data allanol. Doedd dim gyrwyr SDBC yn yr URL roddwyd."
 
 #: source/core/resource/strings.src#RID_STR_COULDNOTLOAD_MANAGER.String.Text
 msgid  "The connection to the external data source could not be established. The SDBC driver manager could not be loaded."
-msgstr ""
+msgstr "Methu creu cysylltiad â'r ffynhonnell data allanol. Methu llwytho rheolwr gyrrwr SDBC."
 
 #: source/core/resource/strings.src#RID_STR_FORM.String.Text
 msgid  "Form"
@@ -69,11 +69,11 @@ msgstr "Adroddiad"
 
 #: source/core/resource/strings.src#RID_STR_DATASOURCE_NOT_STORED.String.Text
 msgid  "The data source was not saved. Please use the interface XStorable to save the data source."
-msgstr ""
+msgstr "Nid yw'r ffynhonnell data wedi ei gadw. Defnyddiwch ryngwyneb XStorable i gadw'r ffynhonnell data."
 
 #: source/core/resource/strings.src#RID_STR_ONLY_QUERY.String.Text
 msgid  "The given command is not a SELECT statement.\nOnly queries are allowed."
-msgstr ""
+msgstr "Nid gosodiad SELECT yw'r gorchymyn yma.\nDim ond ymholiadau sy'n cael eu caniatáu."
 
 #: source/core/resource/strings.src#RID_STR_NO_VALUE_CHANGED.String.Text
 msgid  "No values were modified."
@@ -81,11 +81,11 @@ msgstr "Heb newid gwerthoedd"
 
 #: source/core/resource/strings.src#RID_STR_NO_XROWUPDATE.String.Text
 msgid  "Values could not be inserted. The XRowUpdate interface is not supported by ResultSet."
-msgstr ""
+msgstr "Methu mewnosod gwerthoedd. Nid yw rhyngwyneb XRowUpdate yn cael ei gynnal gan ResultSet."
 
 #: source/core/resource/strings.src#RID_STR_NO_XRESULTSETUPDATE.String.Text
 msgid  "Values could not be inserted. The XResultSetUpdate interface is not supported by ResultSet."
-msgstr ""
+msgstr "Methu mewnosod gwerthoedd. Nid yw rhyngwyneb XResultSetUpdate yn cael ei gynnal gan ResultSet."
 
 #: source/core/resource/strings.src#RID_STR_NO_UPDATE_MISSING_CONDITION.String.Text
 msgid  "Values could not be modified, due to a missing condition statement."
@@ -141,11 +141,11 @@ msgstr "Nid yw safle cymharol yn cael ei ganiatáu yn y cyflwr hwn."
 
 #: source/core/resource/strings.src#RID_STR_NO_REFESH_AFTERLAST.String.Text
 msgid  "A row cannot be refreshed when the ResultSet is positioned after the last row."
-msgstr ""
+msgstr "Nid oes modd adnewyddu rhes pan mae'r ResultSet wedi ei osod ar ôl y rhes olaf."
 
 #: source/core/resource/strings.src#RID_STR_NO_MOVETOINSERTROW_CALLED.String.Text
 msgid  "A new row cannot be inserted when the ResultSet is not first moved to the insert row."
-msgstr ""
+msgstr "Nid oes modd mewnosod rhes newydd pan nad yw ResultSet wedi ei symud yn gyntaf i'r rhes mewnosod.."
 
 #: source/core/resource/strings.src#RID_STR_NO_UPDATEROW.String.Text
 msgid  "A row cannot be modified in this state"
@@ -165,31 +165,31 @@ msgstr "Nid yw'r gyrrwr yn cynnal newid disgrifiad colofnau."
 
 #: source/core/resource/strings.src#RID_STR_COLUMN_ALTER_BY_NAME.String.Text
 msgid  "The driver does not support the modification of column descriptions by changing the name."
-msgstr ""
+msgstr "Nid yw'r gyrrwr yn cynnal newid disgrifiad colofnau drwy newid yr enw."
 
 #: source/core/resource/strings.src#RID_STR_COLUMN_ALTER_BY_INDEX.String.Text
 msgid  "The driver does not support the modification of column descriptions by changing the index."
-msgstr ""
+msgstr "Nid yw'r gyrrwr yn cynnal newid disgrifiad colofnau drwy newid y mynegai."
 
 #: source/core/resource/strings.src#RID_STR_FILE_DOES_NOT_EXIST.String.Text
-msgid  "The file "$file$" does not exist."
-msgstr ""
+msgid  "The file \"$file$\" does not exist."
+msgstr "Nid yw ffeil \"$file$\" yn bodoli."
 
 #: source/core/resource/strings.src#RID_STR_TABLE_DOES_NOT_EXIST.String.Text
-msgid  "There exists no table named "$table$"."
-msgstr ""
+msgid  "There exists no table named \"$table$\"."
+msgstr "Nid oes tabl o'r enw \"$table$\"."
 
 #: source/core/resource/strings.src#RID_STR_QUERY_DOES_NOT_EXIST.String.Text
-msgid  "There exists no query named "$table$"."
-msgstr ""
+msgid  "There exists no query named \"$table$\"."
+msgstr "Dim ymholiad o'r enw \"$table$\" yn bodoli."
 
 #: source/core/resource/strings.src#RID_STR_CONFLICTING_NAMES.String.Text
 msgid  "There are tables in the database whose names conflict with the names of existing queries. To make full use of all queries and tables, make sure they have distinct names."
-msgstr ""
+msgstr "Mae tablau yn y gronfa ddata sy'n gwrthdaro gydag enwau'r ymholiadau presennol. I wneud defnydd llawn o'r holl ymholiadau a thablau, gwnewch yn siŵr fod ganddynt enwau unigryw."
 
 #: source/core/resource/strings.src#RID_STR_COMMAND_LEADING_TO_ERROR.String.Text
 msgid  "The SQL command leading to this error is:\n\n$command$"
-msgstr ""
+msgstr "Y gorchymyn SQLsy'n arwain at y gwall yw:\n\n$command$"
 
 #: source/core/resource/strings.src#RID_STR_STATEMENT_WITHOUT_RESULT_SET.String.Text
 msgid  "The SQL command does not describe a result set."
@@ -221,15 +221,15 @@ msgstr "Methu canfod y ddogfen '$name$'."
 
 #: source/core/resource/strings.src#RID_STR_ERROR_WHILE_SAVING.String.Text
 msgid  "Could not save the document to $location$:\n$message$"
-msgstr ""
+msgstr "Methu cadw'r ddogfen i $location$:\n$message$"
 
 #: source/core/resource/strings.src#RID_NO_SUCH_DATA_SOURCE.String.Text
 msgid  "Error accessing data source '$name$':\n$error$"
-msgstr ""
+msgstr "Gwall wrth geisio mynediad i ffynhonnell data '$name$':\n$error$"
 
 #: source/core/resource/strings.src#RID_STR_NO_SUB_FOLDER.String.Text
-msgid  "There exists no folder named "$folder$"."
-msgstr ""
+msgid  "There exists no folder named \"$folder$\"."
+msgstr "Nid oes ffolder o'r enw \"$folder$\"."
 
 #: source/core/resource/strings.src#RID_STR_NO_DELETE_BEFORE_AFTER.String.Text
 msgid  "Cannot delete the before-first or after-last row."
@@ -261,7 +261,7 @@ msgstr "Nid yw breintiau INSERT ar gael."
 
 #: source/core/resource/strings.src#RID_STR_INTERNAL_ERROR.String.Text
 msgid  "Internal error: no statement object provided by the database driver."
-msgstr ""
+msgstr "Gwall mewnol: dim datganiad gwrthrych wedi ei ddarparu gan yrrwr y gronfa ddata."
 
 #: source/core/resource/strings.src#RID_STR_EXPRESSION1.String.Text
 msgid  "Expression1"
@@ -296,8 +296,8 @@ msgid  "Embedding of database documents is not supported."
 msgstr "Nid yw mewnosod dogfennau cronfa ddata'n cael ei gynnal."
 
 #: source/core/resource/strings.src#RID_STR_CONNECTION_REQUEST.String.Text
-msgid  "A connection for the following URL was requested "$name$"."
-msgstr ""
+msgid  "A connection for the following URL was requested \"$name$\"."
+msgstr "Cafwyd cais i wendu cysylltiad â'r URL canlynol \"$name$\"."
 
 #: source/core/resource/strings.src#RID_STR_MISSING_EXTENSION.String.Text
 msgid  "The extension is not installed."
@@ -428,8 +428,8 @@ msgid  "The specified file name or directory does not exist."
 msgstr "Nid yw'r enw ffeil neu gyfeiriadur yma'n bodoli."
 
 #: source/ext/adabas/AdabasNewDb.src#STR_ERROR_IN_ADABAS_INSTALLATION.String.Text
-msgid  "No new database can be created.\nPlease check your Adabas D installation, especially the variables "DBROOT" and "DBWORK"."
-msgstr ""
+msgid  "No new database can be created.\nPlease check your Adabas D installation, especially the variables \"DBROOT\" and \"DBWORK\"."
+msgstr "Nid oes modd creu cronfa ddata newydd.\nGwiriwch eich gosodiad Adabas D, yn arbennig yr amrywiolion \"DBROOT\" a \"DBWORK\"."
 
 #: source/ext/adabas/AdabasNewDb.src#STR_STAT_WARNING.String.Text
 msgid  "Warning!"
@@ -453,19 +453,19 @@ msgstr "Mae'r enw'n bodoli eisoes"
 
 #: source/ext/adabas/AdabasNewDb.src#STR_ADABAS_NO_DEFAULTNAME.String.Text
 msgid  "No default names could be set for the database files. The total length is more than 40 characters."
-msgstr ""
+msgstr "Nid oedd modd gosod enwau rhagosodedig ar ffeiliau'r gronfa ddata. Mae cyfanswm yr hyd yn fwy na 40 nod."
 
 #: source/ext/adabas/AdabasNewDb.src#STR_ADABAS_NO_ACCESSRIGHTS.String.Text
 msgid  "No default names could be set for the database files. There is no write access."
-msgstr ""
+msgstr "Nid oedd modd gosod enwau rhagosodedig ar ffeiliau'r gronfa ddata. Nid oes mynediad i ysgrifennu."
 
 #: source/ext/adabas/AdabasNewDb.src#STR_ADABAS_CANNOT_CONVERT.String.Text
 msgid  "The current database need to be converted. Please insert control user  and password."
-msgstr ""
+msgstr "Rhaid trosi'r gronfa ddata presennol. Rhowch ddefnyddiwr rheoli a chyfrinair"
 
 #: source/ext/adabas/AdabasNewDb.src#STR_ADABAS_PASSWORD_ILLEGAL.String.Text
 msgid  "Spaces are not permitted in the password. Please enter a new password."
-msgstr ""
+msgstr "Nid oes caniatâd ar gyfer bylchau o fewn y cyfrinair. Rhowch gyfrinair newydd."
 
 #: source/ext/macromigration/macromigration.src#DLG_MACRO_MIGRATION.ModalDialog.Text
 msgid  "Database Document Macro Migration"
@@ -493,11 +493,11 @@ msgstr "Croeso i Ddewin Mudo Macro Cronfa Ddata "
 
 #: source/ext/macromigration/macromigration.src#TP_PREPARE.FT_INTRODUCTION.FixedText.Text
 msgid  "This wizard will guide you through the task of migrating your macros.\n\nAfter you finished it, all macros which were formerly embedded into the forms and reports of the current database document will have been moved to the document itself. In this course, libraries will be renamed as needed.\n\nIf your forms and reports contain references to those macros, they will be adjusted, where possible.\n\nBefore the migration can start, all forms, reports, queries and tables belonging to the document must be closed. Press 'Next' to do so."
-msgstr ""
+msgstr "Bydd y dewin yn eich arwain drwy'r dasg o fudo eich macros.\n\nWedi i chi ei orffen, bydd y macros a oedd cynt wedi eu mewnosod o fewn ffurflenni ac adroddiadau eich dogfen cronfa ddata cyfredol, wedi cael eu symud i'r ddogfen ei hun. Drwy hyn, bydd llyfrgelloedd yn cael eu newid yn ôl yr angen.\n\nOs yw eich ffurflenni a'ch adroddiadau'n cynnwys cyfeiriadau at y macros yma, byddant yn cael eu haddasu, lle mae hynny'n bosibl.\n\nCyn cychwyn y mudo rhaid cau pob ffurflen, adroddiad, ymholiad a thabl sy'n perthyn i'r ddogfen. Cliciwch 'Nesaf' i wneud hynny."
 
 #: source/ext/macromigration/macromigration.src#TP_PREPARE.FT_CLOSE_DOC_ERROR.FixedText.Text
 msgid  "Not all objects could be closed. Please close them manually, and re-start the wizard."
-msgstr ""
+msgstr "Nid oedd modd cau pob gwrthrych. Caewch nhw gyda llaw, ac ailgychwyn y dewin."
 
 #: source/ext/macromigration/macromigration.src#TP_SAVE_DBDOC_AS.FT_HEADER.FixedText.Text
 msgid  "Backup your Document"
@@ -505,7 +505,7 @@ msgstr "Creu Copi wrth Gefn o'ch Dogfen"
 
 #: source/ext/macromigration/macromigration.src#TP_SAVE_DBDOC_AS.FT_EXPLANATION.FixedText.Text
 msgid  "To allow you to go back to the state before the migration, the database document will be backed up to a location of your choice. Every change done by the wizard will be made to the original document, the backup will stay untouched."
-msgstr ""
+msgstr "I ganiatáu i chi fynd yn ôl at eich cyflwr cyn mudo, bydd dogfen y gronfa ddata'n cael ei chopïo i leoliad o'ch dewis. Bydd pob newid fydd gan y dewin yn cael ei wneud i'r ddogfen wreiddiol a bydd y copi wrth gefn yn aros heb ei newid."
 
 #: source/ext/macromigration/macromigration.src#TP_SAVE_DBDOC_AS.FT_SAVE_AS_LABEL.FixedText.Text
 msgid  "Save To:"
@@ -517,7 +517,7 @@ msgstr "Pori..."
 
 #: source/ext/macromigration/macromigration.src#TP_SAVE_DBDOC_AS.FT_START_MIGRATION.FixedText.Text
 msgid  "Press 'Next' to save a copy of your document, and to begin the migration."
-msgstr ""
+msgstr "Pwyswch 'Nesaf' i gadw copi o'ch dogfen, a chychwyn mudo."
 
 #: source/ext/macromigration/macromigration.src#TP_MIGRATE.FT_HEADER.FixedText.Text
 msgid  "Migration Progress"
@@ -525,7 +525,7 @@ msgstr "Proses Mudo"
 
 #: source/ext/macromigration/macromigration.src#TP_MIGRATE.FT_OBJECT_COUNT.FixedText.Text
 msgid  "The database document contains $forms$ form(s) and $reports$ report(s), which are currently being processed:"
-msgstr ""
+msgstr "Mae dogfen y gronfa ddata yn cynnwys $forms$ ffurflen(ni) ac $reports$ adroddiad(au), sy'n cael eu prosesu ar hyn o bryd:"
 
 #: source/ext/macromigration/macromigration.src#TP_MIGRATE.FT_CURRENT_OBJECT_LABEL.FixedText.Text
 msgid  "Current object:"
@@ -545,7 +545,7 @@ msgstr "dogfen $current$ o $overall$"
 
 #: source/ext/macromigration/macromigration.src#TP_MIGRATE.FT_MIGRATION_DONE.FixedText.Text
 msgid  "All forms and reports have been successfully processed. Press 'Next' to show a detailed summary."
-msgstr ""
+msgstr "Mae pob ffurflen ac adroddiad wedi eu prosesu'n llwyddiannus. Cliciwch 'Nesaf' i ddangos crynodeb manwl."
 
 #: source/ext/macromigration/macromigration.src#TP_SUMMARY.FT_HEADER.FixedText.Text
 msgid  "Summary"
@@ -553,11 +553,11 @@ msgstr "Crynodeb"
 
 #: source/ext/macromigration/macromigration.src#TP_SUMMARY.STR_SUCCESSFUL.String.Text
 msgid  "The migration was successful. Below is a log of the actions which have been taken to your document."
-msgstr ""
+msgstr "Bu'r mudo'n llwyddiant. Isod mae cofnod o'r gweithredoedd sydd wedi eu cyflawni ar eich dogfen."
 
 #: source/ext/macromigration/macromigration.src#TP_SUMMARY.STR_UNSUCCESSFUL.String.Text
 msgid  "The migration was not successful. Examine the migration log below for details."
-msgstr ""
+msgstr "Nid fu'r mudo'n llwyddiant. Darllenwch y cofnod isod am fanylion."
 
 #: source/ext/macromigration/macromigration.src#STR_FORM.String.Text
 msgid  "Form '$name$'"
@@ -629,7 +629,7 @@ msgstr "eithriadau cipiwyd:"
 
 #: source/ext/macromigration/macromigration.src#ERR_INVALID_BACKUP_LOCATION.ErrorBox.Message
 msgid  "You need to choose a backup location other than the document location itself."
-msgstr ""
+msgstr "Rhaid dewis lleoliad wrth gefn ar wahân i leoliad y ddogfen ei hun."
 
 #: source/ext/macromigration/macromigration.src#STR_INVALID_NUMBER_ARGS.String.Text
 msgid  "Invalid number of initialization arguments. Expected 1."
@@ -645,7 +645,7 @@ msgstr "Nid yw'n berthnasol i ddogfennau darllen yn unig."
 
 #: source/sdbtools/resource/sdbt_strings.src#STR_QUERY_AND_TABLE_DISTINCT_NAMES.String.Text
 msgid  "You cannot give a table and a query the same name. Please use a name which is not yet used by a query or table."
-msgstr ""
+msgstr "Nid oes modd rhoi'r un enw i dabl ac ymholiad. Defnyddiwch enw nad yw wedi ei ddefnyddio ar gyfer ymholiad na thabl."
 
 #: source/sdbtools/resource/sdbt_strings.src#STR_BASENAME_TABLE.String.Text
 msgid  "Table"
@@ -665,11 +665,11 @@ msgstr "Nid gwrthrych tabl yw'r gwrthrych yna."
 
 #: source/sdbtools/resource/sdbt_strings.src#STR_INVALID_COMPOSITION_TYPE.String.Text
 msgid  "Invalid composition type - need a value from com.sun.star.sdb.tools.CompositionType."
-msgstr ""
+msgstr "Math cyfansoddiad anghywir - mae angen gwerth o com.sun.star.sdb.tools.CompositionType."
 
 #: source/sdbtools/resource/sdbt_strings.src#STR_INVALID_COMMAND_TYPE.String.Text
 msgid  "Invalid command type - only TABLE and QUERY from com.sun.star.sdb.CommandType are allowed."
-msgstr ""
+msgstr "Math o orchymyn annilys - dim ond TABLE a QUERY gan  com.sun.star.sdb.CommandType sy'n cael eu caniatáu."
 
 #: source/ui/app/app.src#RID_STR_NEW_FORM.String.Text
 msgid  "Create Form in Design View..."
@@ -801,15 +801,15 @@ msgstr "- Base %PRODUCTNAME "
 
 #: source/ui/app/app.src#RID_STR_REPORTS_HELP_TEXT_WIZARD.String.Text
 msgid  "The wizard will guide you through the steps necessary to create a report."
-msgstr ""
+msgstr "Bydd y dewin yn eich arwain drwy'r camau angenrheidiol i greu adroddiad."
 
 #: source/ui/app/app.src#RID_STR_FORMS_HELP_TEXT.String.Text
 msgid  "Create a form by specifying the record source, controls, and control properties."
-msgstr ""
+msgstr "Creu ffurflen drwy enwi'r ffynhonnell cofnod, rheolyddion a phriodweddau'r rheolyddion."
 
 #: source/ui/app/app.src#RID_STR_REPORT_HELP_TEXT.String.Text
 msgid  "Create a report by specifying the record source, controls, and control properties."
-msgstr ""
+msgstr "Creu adroddiad drwy enwi'r ffynhonnell cofnod, rheolyddion a phriodweddau'r rheolyddion."
 
 #: source/ui/app/app.src#RID_STR_FORMS_HELP_TEXT_WIZARD.String.Text
 msgid  "The wizard will guide you through the steps necessary to create a form."
@@ -817,7 +817,7 @@ msgstr "Bydd y dewin yn eich arwain drwy'r camau angenrheidiol i greu ffurflen."
 
 #: source/ui/app/app.src#RID_STR_QUERIES_HELP_TEXT.String.Text
 msgid  "Create a query by specifying the filters, input tables, field names,  and  properties for sorting or grouping."
-msgstr ""
+msgstr "Creu ymholiad drwy enwi'r hidlau, tablau mewnbwn, enw meysydd, a phriodweddau er mwyn trefnu neu grwpio."
 
 #: source/ui/app/app.src#RID_STR_QUERIES_HELP_TEXT_SQL.String.Text
 msgid  "Create a query  entering an SQL statement directly."
@@ -825,19 +825,19 @@ msgstr "Creu ymholiad gan osod datganiad SQL yn uniongyrchol."
 
 #: source/ui/app/app.src#RID_STR_QUERIES_HELP_TEXT_WIZARD.String.Text
 msgid  "The wizard will guide you through the steps necessary to create a query."
-msgstr ""
+msgstr "Bydd y dewin yn eich arwain drwy'r camau angenrheidiol i greu ymholiad."
 
 #: source/ui/app/app.src#RID_STR_TABLES_HELP_TEXT_DESIGN.String.Text
 msgid  "Create a table by specifying the field names and properties, as well as the data types."
-msgstr ""
+msgstr "Creu tabl drwy enwi'r enwau meysydd a phriodweddau, yn ogystal â'r mathau o ddata."
 
 #: source/ui/app/app.src#RID_STR_TABLES_HELP_TEXT_WIZARD.String.Text
 msgid  "Choose from a selection of business and personal table samples, which you customize to create a table."
-msgstr ""
+msgstr "Dewis o amrywiaeth o samplau busnes a phersonol, y mae modd i chi eu haddasu i greu tabl."
 
 #: source/ui/app/app.src#RID_STR_VIEWS_HELP_TEXT_DESIGN.String.Text
 msgid  "Create a view by specifying the tables and field names you would like to have visible."
-msgstr ""
+msgstr "Creu golwg drwy enwi tablau ac enw meysydd yr hoffech chi eu cael yn weladwy."
 
 #: source/ui/app/app.src#RID_STR_VIEWS_HELP_TEXT_WIZARD.String.Text
 msgid  "Opens the view wizard"
@@ -865,11 +865,11 @@ msgstr "Anablu Rhagolwg"
 
 #: source/ui/app/app.src#APP_SAVEMODIFIED.QueryBox.Message
 msgid  "The database has been modified.\nDo you want to save the changes?"
-msgstr ""
+msgstr "Mae'r gronfa ddata wewdi newid.\nHoffech chi gadw'r newid?"
 
 #: source/ui/app/app.src#APP_CLOSEDOCUMENTS.QueryBox.Message
 msgid  "The connection type has been altered.\nFor the changes to take effect, all forms, reports, queries and tables must be closed.\n\nDo you want to close all documents now?"
-msgstr ""
+msgstr "Mae'r math o gyswllt wedi newid.\nI'r newid ddigwydd, rhaid i bob ffurflen, adroddiad ymholiad a thablau fod wedi cau.\n\nHoffech chi gau pob dogfen?"
 
 #: source/ui/app/app.src#RID_MENU_APP_PREVIEW.SID_DB_APP_DISABLE_PREVIEW.MenuItem.Text
 msgid  "None"
@@ -882,6 +882,14 @@ msgstr "Gwybodaeth Dogfen"
 #: source/ui/app/app.src#RID_MENU_APP_PREVIEW.SID_DB_APP_VIEW_DOC_PREVIEW.MenuItem.Text
 msgid  "Document"
 msgstr "Dogfen"
+
+#: source/ui/app/app.src#RID_STR_FORM.String.Text
+msgid  "Form"
+msgstr "Ffurflen"
+
+#: source/ui/app/app.src#RID_STR_REPORT.String.Text
+msgid  "Report"
+msgstr "Adroddiad"
 
 #: source/ui/app/app.src#STR_FRM_LABEL.String.Text
 msgid  "F~orm name"
@@ -897,11 +905,11 @@ msgstr "~Enw Ffolder"
 
 #: source/ui/app/app.src#STR_SUB_DOCS_WITH_SCRIPTS.String.Text
 msgid  "The document contains forms or reports with embedded macros."
-msgstr ""
+msgstr "Mae'r ddogfen yn cynnwys ffurflenni neu adroddiadau gyda macros wedi eu mewnosod."
 
 #: source/ui/app/app.src#STR_SUB_DOCS_WITH_SCRIPTS_DETAIL.String.Text
 msgid  "Macros should be embedded into the database document itself.\n\nYou can continue to use your document as before, however, you are encouraged to migrate your macros. The menu item 'Tools / Migrate Macros ...' will assist you with this.\n\nNote that you won't be able to embed macros into the database document itself until this migration is done. "
-msgstr ""
+msgstr "Rhaid bod macros fod wedi eu mewnosod i ddogfen y gronfa ddata ei hun.\n\nMae modd parhau i ddefnyddio’r ddogfen fel cynt ond rydym yn eich annog i fudo'r ddogfen. Mae'r eitem dewislen 'Offer / Mudo Macros ...' yn eich cynorthwyo i wneud hyn.\n\nSylwch na fydd modd mewnosod y macros i ddogfen y gronfa ddata nes i hyn gael ei gyflawni. "
 
 #: source/ui/app/app.src#RID_STR_EMBEDDED_DATABASE.String.Text
 msgid  "Embedded database"
@@ -915,17 +923,9 @@ msgstr "Nid oes modd dewis categorïau gwahanol."
 msgid  "Unsupported object type found ($type$)."
 msgstr "Wedi canfod math o wrthrych nad yw'n cael ei gynnal ($type$)."
 
-#: source/ui/app/app.src#RID_STR_FORM.String.Text
-msgid  "Form"
-msgstr "Ffurflen"
-
-#: source/ui/app/app.src#RID_STR_REPORT.String.Text
-msgid  "Report"
-msgstr "Adroddiad"
-
 #: source/ui/browser/sbabrw.src#QUERY_BRW_SAVEMODIFIED.QueryBox.Message
 msgid  "The current record has been changed.\nDo you want to save the changes?"
-msgstr ""
+msgstr "Mae'r cofnod presennol wedi newid.\nHoffech chi gadw'r newid?"
 
 #: source/ui/browser/sbabrw.src#QUERY_BRW_DELETE_ROWS.QueryBox.Message
 msgid  "Do you want to delete the selected data?"
@@ -955,6 +955,18 @@ msgstr "Ymholiadau"
 msgid  "Tables"
 msgstr "Tablau"
 
+#: source/ui/browser/sbabrw.src#ID_TREE_EDIT_DATABASE.#define.Text
+msgid  "Edit ~Database File..."
+msgstr "~Golygu Ffeil y Gronfa Ddata..."
+
+#: source/ui/browser/sbabrw.src#ID_TREE_ADMINISTRATE.#define.Text
+msgid  "Registered databases ..."
+msgstr "~Golygu Ffeil y Gronfa Ddata..."
+
+#: source/ui/browser/sbabrw.src#ID_TREE_CLOSE_CONN.#define.Text
+msgid  "Disco~nnect"
+msgstr "~Datgysylltu"
+
 #: source/ui/browser/sbabrw.src#STR_TITLE_CONFIRM_DELETION.String.Text
 msgid  "Confirm Deletion"
 msgstr "Cadarnhau Dileu"
@@ -969,7 +981,7 @@ msgstr "Mae'r ymholiad yn bodoli eisoes. Hoffech chi ei ddileu?"
 
 #: source/ui/browser/sbabrw.src#QUERY_CONNECTION_LOST.QueryBox.Message
 msgid  "The connection to the database has been lost. Do you want to reconnect?"
-msgstr ""
+msgstr "Mae'r cysylltiad â'r gronfa ddata wedi ei golli. Hoffech chi ailgysylltu?"
 
 #: source/ui/browser/sbabrw.src#STR_OPENTABLES_WARNINGS.String.Text
 msgid  "Warnings encountered"
@@ -977,11 +989,11 @@ msgstr "Canfod rhybuddion"
 
 #: source/ui/browser/sbabrw.src#STR_OPENTABLES_WARNINGS_DETAILS.String.Text
 msgid  "While retrieving the tables, warnings were reported by the database connection."
-msgstr ""
+msgstr "Wrth adfer y tablau, cafwyd rhybuddion gan gysylltiad y gronfa ddata.."
 
 #: source/ui/browser/sbabrw.src#STR_CONNECTING_DATASOURCE.String.Text
-msgid  "Connecting to "$name$" ..."
-msgstr ""
+msgid  "Connecting to \"$name$\" ..."
+msgstr "Cysylltu â \"$name$\" ..."
 
 #: source/ui/browser/sbabrw.src#STR_LOADING_QUERY.String.Text
 msgid  "Loading query $name$ ..."
@@ -996,24 +1008,12 @@ msgid  "No table format could be found."
 msgstr "Methu canfod fformat tabl"
 
 #: source/ui/browser/sbabrw.src#STR_COULDNOTCONNECT_DATASOURCE.String.Text
-msgid  "The connection to the data source "$name$" could not be established."
-msgstr ""
+msgid  "The connection to the data source \"$name$\" could not be established."
+msgstr "Methu creu cysylltiad â'r ffynhonnell data\"$enw$\"."
 
 #: source/ui/browser/sbabrw.src#RID_MENU_REFRESH_DATA.ID_BROWSER_REFRESH_REBUILD.MenuItem.Text
 msgid  "Rebuild"
 msgstr "Ailadeiladu"
-
-#: source/ui/browser/sbabrw.src#ID_TREE_EDIT_DATABASE.#define.Text
-msgid  "Edit ~Database File..."
-msgstr "~Golygu Ffeil y Gronfa Ddata..."
-
-#: source/ui/browser/sbabrw.src#ID_TREE_ADMINISTRATE.#define.Text
-msgid  "Registered databases ..."
-msgstr "~Golygu Ffeil y Gronfa Ddata..."
-
-#: source/ui/browser/sbabrw.src#ID_TREE_CLOSE_CONN.#define.Text
-msgid  "Disco~nnect"
-msgstr "~Datgysylltu"
 
 #: source/ui/browser/sbagrid.src#RID_SBA_GRID_COLCTXMENU.ID_BROWSER_COLATTRSET.MenuItem.Text
 msgid  "Column ~Format..."
@@ -1052,8 +1052,8 @@ msgid  "View #"
 msgstr "Golwg #"
 
 #: source/ui/browser/sbagrid.src#STR_NAME_ALREADY_EXISTS.String.Text
-msgid  "The name "#" already exists."
-msgstr ""
+msgid  "The name \"#\" already exists."
+msgstr "Mae'r enw \"#\" yn bodoli eisoes"
 
 #: source/ui/browser/sbagrid.src#STR_NO_COLUMNNAME_MATCHING.String.Text
 msgid  "No matching column names were found."
@@ -1137,7 +1137,7 @@ msgstr "Gwiriwch y gosodiadau presennol, ee enw defnyddiwr a chyfrinair."
 
 #: source/ui/control/tabletree.src#STR_NOTABLEINFO.String.Text
 msgid  "Successfully connected, but information about database tables is not available."
-msgstr ""
+msgstr "Wedi cysylltu'n llwyddiannus, ond nid oes gwybodaeth am gronfeydd data ar gael. "
 
 #: source/ui/control/tabletree.src#STR_ALL_TABLES.String.Text
 msgid  "All tables"
@@ -1236,12 +1236,12 @@ msgid  "Do you want to save the changes made to the current index?"
 msgstr "Hoffech chi gadw'r newidiadau wnaed i'r mynegai presennol?"
 
 #: source/ui/dlg/indexdialog.src#STR_INDEX_NAME_ALREADY_USED.String.Text
-msgid  "There is already another index named "$name$"."
-msgstr ""
+msgid  "There is already another index named \"$name$\"."
+msgstr "Mae yna fynegai arall o'r enw \"$name$\"."
 
 #: source/ui/dlg/indexdialog.src#STR_INDEXDESIGN_DOUBLE_COLUMN_NAME.String.Text
-msgid  "In an index definition, no table column may occur more than once. However, you have entered column "$name$" twice."
-msgstr ""
+msgid  "In an index definition, no table column may occur more than once. However, you have entered column \"$name$\" twice."
+msgstr "Yn niffiniad y mynegai, ni fydd tabl colofn yn cael digwydd nwy nag unwaith. Er hynny, rydych wedi rhoi colofn \"$name$\" ddwywaith."
 
 #: source/ui/dlg/paramdialog.src#DLG_PARAMETERS.FL_PARAMS.FixedLine.Text
 msgid  "~Parameters"
@@ -1260,8 +1260,8 @@ msgid  "Parameter Input"
 msgstr "Mewnbwn Paramedr"
 
 #: source/ui/dlg/paramdialog.src#DLG_PARAMETERS.STR_COULD_NOT_CONVERT_PARAM.String.Text
-msgid  "The entry could not be converted to a valid value for the "$name$"column"
-msgstr ""
+msgid  "The entry could not be converted to a valid value for the \"$name$\"column"
+msgstr "Nid oedd modd trosi'r cofnod i werth dilys ar gyfer colofn \"$name$\""
 
 #: source/ui/dlg/sqlmessage.src#DLG_SQLEXCEPTIONCHAIN.ModalDialog.Text
 msgid  "%PRODUCTNAME Base"
@@ -1289,7 +1289,7 @@ msgstr "Cod gwall"
 
 #: source/ui/dlg/sqlmessage.src#STR_EXPLAN_STRINGCONVERSION_ERROR.String.Text
 msgid  "A frequent reason for this error is an inappropriate character set setting for the language of your database. Check the setting by choosing Edit - Database - Properties."
-msgstr ""
+msgstr "Rheswm aml ar gyfer y gwall hwn yw gosodiadau set nodau anghywir ar gyfer iaith eich cronfa ddata. Gwiriwch y gosodiadau drwy ddewis Golygu - Cronfa Ddata - Priodweddau."
 
 #: source/ui/dlg/sqlmessage.src#STR_EXCEPTION_ERROR.String.Text
 msgid  "Error"
@@ -1312,8 +1312,16 @@ msgid  "Standard Filter"
 msgstr "Hidl Safonol"
 
 #: source/ui/dlg/queryfilter.src#DLG_FILTERCRIT.LB_WHERECOND2.Default.StringList.item
+msgid  "AND"
+msgstr "AND"
+
+#: source/ui/dlg/queryfilter.src#DLG_FILTERCRIT.LB_WHERECOND2.Default.StringList.item
 msgid  "OR"
 msgstr "OR"
+
+#: source/ui/dlg/queryfilter.src#DLG_FILTERCRIT.LB_WHERECOND3.Default.StringList.item
+msgid  "AND"
+msgstr "AND"
 
 #: source/ui/dlg/queryfilter.src#DLG_FILTERCRIT.LB_WHERECOND3.Default.StringList.item
 msgid  "OR"
@@ -1346,14 +1354,6 @@ msgstr "- dim -"
 #: source/ui/dlg/queryfilter.src#DLG_FILTERCRIT.STR_COMPARE_OPERATORS.String.Text
 msgid  "=;<>;<;<=;>;>=;like;not like;null;not null"
 msgstr "=;<>;<;<=;>;>=;like;not like;null;not null"
-
-#: source/ui/dlg/queryfilter.src#DLG_FILTERCRIT.LB_WHERECOND2.Default.StringList.item
-msgid  "AND"
-msgstr "AND"
-
-#: source/ui/dlg/queryfilter.src#DLG_FILTERCRIT.LB_WHERECOND3.Default.StringList.item
-msgid  "AND"
-msgstr "AND"
 
 #: source/ui/dlg/RelationDlg.src#DLG_REL_PROPERTIES.ModalDialog.Text
 msgid  "Relations"
@@ -1412,12 +1412,24 @@ msgid  "Sort Order"
 msgstr "Trefnu Didoli"
 
 #: source/ui/dlg/queryorder.src#DLG_ORDERCRIT.LB_ORDERVALUE1.Default.StringList.item
+msgid  "ascending"
+msgstr "esgyn"
+
+#: source/ui/dlg/queryorder.src#DLG_ORDERCRIT.LB_ORDERVALUE1.Default.StringList.item
 msgid  "descending"
 msgstr "disgyn"
 
 #: source/ui/dlg/queryorder.src#DLG_ORDERCRIT.LB_ORDERVALUE2.Default.StringList.item
+msgid  "ascending"
+msgstr "esgyn"
+
+#: source/ui/dlg/queryorder.src#DLG_ORDERCRIT.LB_ORDERVALUE2.Default.StringList.item
 msgid  "descending"
 msgstr "disgyn"
+
+#: source/ui/dlg/queryorder.src#DLG_ORDERCRIT.LB_ORDERVALUE3.Default.StringList.item
+msgid  "ascending"
+msgstr "esgyn"
 
 #: source/ui/dlg/queryorder.src#DLG_ORDERCRIT.LB_ORDERVALUE3.Default.StringList.item
 msgid  "descending"
@@ -1450,18 +1462,6 @@ msgstr "Trefn didoli"
 #: source/ui/dlg/queryorder.src#DLG_ORDERCRIT.STR_NOENTRY.String.Text
 msgid  "<none>"
 msgstr "<dim>"
-
-#: source/ui/dlg/queryorder.src#DLG_ORDERCRIT.LB_ORDERVALUE1.Default.StringList.item
-msgid  "ascending"
-msgstr "esgyn"
-
-#: source/ui/dlg/queryorder.src#DLG_ORDERCRIT.LB_ORDERVALUE2.Default.StringList.item
-msgid  "ascending"
-msgstr "esgyn"
-
-#: source/ui/dlg/queryorder.src#DLG_ORDERCRIT.LB_ORDERVALUE3.Default.StringList.item
-msgid  "ascending"
-msgstr "esgyn"
 
 #: source/ui/dlg/advancedsettings.src#AUTO_DATAHANDLING(AUTO_Y).FL_DATAHANDLING.FixedLine.Text
 msgid  "Options"
@@ -1532,6 +1532,18 @@ msgid  "Respect the result set type from the database driver"
 msgstr "Parchu math set canlyniad o yrrwr y gronfa ddata"
 
 #: source/ui/dlg/advancedsettings.src#WORKAROUND.Default.StringList.item
+msgid  "Default"
+msgstr "Rhagosodedig"
+
+#: source/ui/dlg/advancedsettings.src#WORKAROUND.Default.StringList.item
+msgid  "SQL"
+msgstr "SQL"
+
+#: source/ui/dlg/advancedsettings.src#WORKAROUND.Default.StringList.item
+msgid  "Mixed"
+msgstr "Cymysg"
+
+#: source/ui/dlg/advancedsettings.src#WORKAROUND.Default.StringList.item
 msgid  "MS Access"
 msgstr "MS Access"
 
@@ -1571,18 +1583,6 @@ msgstr "Gosodiadau Arbennig"
 msgid  "Advanced Settings"
 msgstr "Gosodiadau Uwch"
 
-#: source/ui/dlg/advancedsettings.src#WORKAROUND.Default.StringList.item
-msgid  "Default"
-msgstr "Rhagosodedig"
-
-#: source/ui/dlg/advancedsettings.src#WORKAROUND.Default.StringList.item
-msgid  "SQL"
-msgstr "SQL"
-
-#: source/ui/dlg/advancedsettings.src#WORKAROUND.Default.StringList.item
-msgid  "Mixed"
-msgstr "Cymysg"
-
 #: source/ui/dlg/CollectionView.src#DLG_COLLECTION_VIEW.ModalDialog.Text
 msgid  "Save"
 msgstr "Cadw"
@@ -1616,12 +1616,12 @@ msgid  "The file already exists. Overwrite?"
 msgstr "Mae'r ffeil yn bodoli eisoes. Ysgrifennu trosti?"
 
 #: source/ui/dlg/dbadmin2.src#STR_ENTER_CONNECTION_PASSWORD.String.Text
-msgid  "A password is needed to connect to the data source "$name$"."
-msgstr ""
+msgid  "A password is needed to connect to the data source \"$name$\"."
+msgstr "Mae angen cyfrinair i gysylltu â'r ffynhonnell data \"$name$\"."
 
 #: source/ui/dlg/dbadmin2.src#STR_ASK_FOR_DIRECTORY_CREATION.String.Text
 msgid  "The directory\n\n$path$\n\ndoes not exist. Should it be created?"
-msgstr ""
+msgstr "Nid yw'r cyfeiriadur\n\n$path$\n\nyn bodoli. Dylai gael ei greu?"
 
 #: source/ui/dlg/dbadmin2.src#STR_COULD_NOT_CREATE_DIRECTORY.String.Text
 msgid  "The directory $name$ could not be created."
@@ -1773,7 +1773,7 @@ msgstr "Croeso i Ddewin Cronfa Ddata %PRODUCTNAME"
 
 #: source/ui/dlg/dbadmin.src#PAGE_GENERAL.FT_GENERALHELPTEXT.FixedText.Text
 msgid  "Use the Database Wizard to create a new database, open an existing database file, or connect to a database stored on a server."
-msgstr ""
+msgstr "Defnyddiwch Ddewin y Gronfa Ddata i greu cronfa ddata newydd, agor cronfa ddata, neu gysylltu â chronfa ddata ar weinydd."
 
 #: source/ui/dlg/dbadmin.src#PAGE_GENERAL.FT_DATASOURCEHEADER.FixedText.Text
 msgid  "What do you want to do?"
@@ -1797,7 +1797,7 @@ msgstr "C~ysylltu â chronfa ddata presennol"
 
 #: source/ui/dlg/dbadmin.src#PAGE_GENERAL.FT_DATASOURCETYPE_PRE.FixedText.Text
 msgid  "Select the type of database to which you want to establish a connection."
-msgstr ""
+msgstr "Dewis y math o gronfa ddata yr hoffech chi greu cysylltiad iddi."
 
 #: source/ui/dlg/dbadmin.src#PAGE_GENERAL.FT_DATATYPE.FixedText.Text
 msgid  "Database ~type "
@@ -1809,7 +1809,7 @@ msgstr "Cronfa Ddata"
 
 #: source/ui/dlg/dbadmin.src#PAGE_GENERAL.FT_DATASOURCETYPE_POST.FixedText.Text
 msgid  "On the following pages, you can make detailed settings for the connection.\n\nThe new settings you make will overwrite your existing settings."
-msgstr ""
+msgstr "Ar y tudalennau canlynol, gallwch wneud mân osodiadau ar gyfer cysylltu.\n\nBydd y gosodiadau yma'n cymryd lle'r rhai presennol."
 
 #: source/ui/dlg/dbadmin.src#PAGE_GENERAL.STR_MYSQLENTRY.String.Text
 msgid  "MySQL"
@@ -1821,11 +1821,11 @@ msgstr "Priodweddau Ffynhonnell Data: #"
 
 #: source/ui/dlg/dbadmin.src#PAGE_GENERAL.STR_COULDNOTLOAD_ODBCLIB.String.Text
 msgid  "Could not load the program library #lib# or it is corrupted. The ODBC data source selection is not available."
-msgstr ""
+msgstr "Methu llwytho llyfrgell #lib# neu mae wedi ei lygru. Nid yw'r dewis ffynhonnell data ODBC ar gael."
 
 #: source/ui/dlg/dbadmin.src#PAGE_GENERAL.STR_UNSUPPORTED_DATASOURCE_TYPE.String.Text
 msgid  "This kind of data source is not supported on this platform.\nYou are allowed to change the settings, but you probably will not be able to connect to the database."
-msgstr ""
+msgstr "Nid yw'r math yma o ddata'n cael ei gynnal ar y platfform yma.\nMae gennych hawl i newid y gosodiadau, ond mwy na thebyg, ni fydd modd i chi gysylltu â'r gronfa ddata."
 
 #: source/ui/dlg/dbadmin.src#PAGE_GENERAL.String.Text
 msgid  "General"
@@ -1841,7 +1841,7 @@ msgstr "Dangos cofnodion dilëwyd hefyd"
 
 #: source/ui/dlg/dbadmin.src#PAGE_DBASE.FT_SPECIAL_MESSAGE.FixedText.Text
 msgid  "Note: When deleted, and thus inactive, records are  displayed, you will not be able to delete records from the data source."
-msgstr ""
+msgstr "Sylwch: Pan mae cofnodion dilëwyd ac felly anweithredol yn cael ei dangos, ni fydd modd i chi ddangos y cofnodion o'r ffynhonnell data."
 
 #: source/ui/dlg/dbadmin.src#PAGE_DBASE.PB_INDICIES.PushButton.Text
 msgid  "Indexes..."
@@ -1953,7 +1953,7 @@ msgstr "~Gosodiadau Gyrrwr"
 
 #: source/ui/dlg/dbadmin.src#STR_ERR_USE_CONNECT_TO.String.Text
 msgid  "Please choose 'Connect to an existing database' to connect to an existing database instead."
-msgstr ""
+msgstr "Dewis 'Cysylltu i gronfa ddata presennol' i gysylltu â chronfa ddata presennol yn lle hynny."
 
 #: source/ui/dlg/dlgsave.src#DLG_SAVE_AS.ModalDialog.Text
 msgid  "Save As"
@@ -2025,7 +2025,7 @@ msgstr "Ffeil cronfa ddata Microsoft Access"
 
 #: source/ui/dlg/AutoControls.src#STR_NO_ADDITIONAL_SETTINGS.String.Text
 msgid  "No more settings are necessary. To verify that the connection is working, click the '%test' button."
-msgstr ""
+msgstr "Does dim angen rhagor o osodiadau. I wirio bod y cysylltiad yn gweithio, cliciwch ar y botwm '%test'."
 
 #: source/ui/dlg/AutoControls.src#STR_COMMONURL.String.Text
 msgid  "Datasource URL"
@@ -2197,7 +2197,7 @@ msgstr "Cof defnydd presennol"
 
 #: source/ui/dlg/AdabasStat.src#STR_ADABAS_ERROR_SYSTEMTABLES.String.Text
 msgid  "No information could be displayed because no access rights exist for the required system tables."
-msgstr ""
+msgstr "Methu dangos gwybodaeth am nad oes hawl mynediad yn bodoli ar gyfer y tablau system angenrheidiol."
 
 #: source/ui/dlg/directsql.src#DLG_DIRECTSQL.FL_SQL.FixedLine.Text
 msgid  "SQL command"
@@ -2233,7 +2233,7 @@ msgstr "Gorchymyn wedi ei weithredu'n llwyddiannus"
 
 #: source/ui/dlg/directsql.src#STR_DIRECTSQL_CONNECTIONLOST.String.Text
 msgid  "The connection to the database has been lost. This dialog will be closed."
-msgstr ""
+msgstr "Mae'r cysylltiad i'r gronfa ddata wedi ei golli. Bydd y deialog yn cau."
 
 #: source/ui/dlg/dbfindex.src#DLG_DBASE_INDEXES.ModalDialog.Text
 msgid  "Indexes"
@@ -2288,8 +2288,8 @@ msgid  "The database does not support user administration."
 msgstr "Nid yw'r gronfa ddata'n cynnal gweinyddiaeth defnyddiwr."
 
 #: source/ui/dlg/UserAdmin.src#DLG_PASSWORD.FL_USER.FixedLine.Text
-msgid  "User "$name$:  $""
-msgstr ""
+msgid  "User \"$name$:  $\""
+msgstr "Defnyddiwr \"$name$:  $\""
 
 #: source/ui/dlg/UserAdmin.src#DLG_PASSWORD.FT_OLDPASSWORD.FixedText.Text
 msgid  "Old p~assword"
@@ -2389,7 +2389,7 @@ msgstr "Gosod cyswllt i gronfa ddata MySQL"
 
 #: source/ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_MYSQL_INTRO.FT_MYSQL_HELPTEXT.FixedText.Text
 msgid  "You can connect to a MySQL database using either ODBC or JDBC.\nPlease contact your system administrator if you are unsure about the following settings."
-msgstr ""
+msgstr "Gallwch gysylltu â chronfa ddata MySQL gan ddefnyddio un ai ODBC neu JDBC.\nCysylltwch â'ch gweinyddwr system os ydych yn ansicr am y gosodiadau canlynol"
 
 #: source/ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_MYSQL_INTRO.FT_MYSQLCONNECTIONMODE.FixedText.Text
 msgid  "How do you want to connect to your MySQL database?"
@@ -2465,7 +2465,7 @@ msgstr "Creu cysylltiad i gronfa ddata MySQL drwy JDBC"
 
 #: source/ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_MYSQL_JDBC.STR_MYSQLJDBC_HELPTEXT.String.Text
 msgid  "Please enter the required information to connect to a MySQL database using JDBC. Note that a JDBC driver class must be installed on your system and registered with %PRODUCTNAME.\nPlease contact your system administrator if you are unsure about the following settings."
-msgstr ""
+msgstr "Rhowch y wybodaeth angenrheidiol i gysylltu â chronfa ddata MySQL drwy JDBC. Sylwch fod yn rhaid gosod dosbarth gyrrwr JDBC ar eich system â'i gofrestru gyda %PRODUCTNAME.\nCysylltwch â'ch gweinyddwr system os ydych yn ansicr am y gosodiadau canlynol."
 
 #: source/ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_MYSQL_JDBC.STR_MYSQL_DRIVERCLASSTEXT.String.Text
 msgid  "MySQL JDBC d~river class:"
@@ -2497,7 +2497,7 @@ msgstr "Gosod cyswllt i ffeiliau testun"
 
 #: source/ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_TEXT.STR_TEXT_HELPTEXT.String.Text
 msgid  "Select the folder where the CSV (Comma Separated Values) text files are stored. %PRODUCTNAME Base will open these files in read-only mode."
-msgstr ""
+msgstr "Dewis y ffolder lle mae'r ffeiliau CSV (Comma Separated Values) wedi eu cadw. Bydd Base %PRODUCTNAME yn agor y ffeiliau ym modd darllen yn unig."
 
 #: source/ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_TEXT.STR_TEXT_PATH_OR_FILE.String.Text
 msgid  "Path to text files"
@@ -2517,7 +2517,7 @@ msgstr "Creu cysylltiad i gyfeiriadur LDAP"
 
 #: source/ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_LDAP.FT_LDAP_HELPTEXT.FixedText.Text
 msgid  "Please enter the required information to connect to an LDAP directory.\nPlease contact your system administrator if you are unsure about the following settings."
-msgstr ""
+msgstr "Rhowch y wybodaeth angenrheidiol i gysylltu â chyfeiriadur LDAP.\nCysylltwch â'ch gweinyddwr system os ydych yn ansicr am y gosodiadau canlynol."
 
 #: source/ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_LDAP.STR_LDAP_DEFAULT.String.Text
 msgid  "Default: 389"
@@ -2533,7 +2533,7 @@ msgstr "Creu cysylltiad o gronfa ddata Adabas D"
 
 #: source/ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_ADABAS.STR_ADABAS_HELPTEXT.String.Text
 msgid  "Enter the name of the Adabas D database you want to connect to.\nClick 'Browse...' to select an Adabas D database that is already registered in %PRODUCTNAME."
-msgstr ""
+msgstr "Rhowch enw'r gronfa ddata Adabas D rydych am gysylltu iddi \nCliciwch 'Pori...' i ddewis cronfa ddata Adabas D sydd eisoes wedi ei chysylltu  â %PRODUCTNAME."
 
 #: source/ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_ADO.STR_ADO_HEADERTEXT.String.Text
 msgid  "Set up a connection to an ADO database"
@@ -2541,7 +2541,7 @@ msgstr "Creu cysylltiad i gronfa ddata ADO"
 
 #: source/ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_ADO.STR_ADO_HELPTEXT.String.Text
 msgid  "Please enter the URL of the ADO data source you want to connect to.\nClick 'Browse' to configure provider-specific settings.\nPlease contact your system administrator if you are unsure about the following settings."
-msgstr ""
+msgstr "Rhowch URL ffynhonnell data ADO i gysylltu iddo.\nCliciwch 'Pori' i ffurfweddu gosodiadau'r defnyddiwr.\nCysylltwch â'ch gweinyddwr system os ydych yn ansicr am y gosodiadau canlynol."
 
 #: source/ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_ODBC.STR_ODBC_HEADERTEXT.String.Text
 msgid  "Set up a connection to an ODBC database"
@@ -2549,7 +2549,7 @@ msgstr "Creu cysylltiad i gronfa ddata ODBC"
 
 #: source/ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_ODBC.STR_ODBC_HELPTEXT.String.Text
 msgid  "Enter the name of the ODBC database you want to connect to.\nClick 'Browse...' to select an ODBC database that is already registered in %PRODUCTNAME.\nPlease contact your system administrator if you are unsure about the following settings."
-msgstr ""
+msgstr "Rhowch enw'r gronfa ddata ODBC rydych am gysylltu iddi.\nCliciwch 'Pori... i ddewis y gronfa ddata sydd wedi ei chofrestri eisoes yn%PRODUCTNAME.\nCysylltwch â'ch gweinyddwr system os ydych yn ansicr am y gosodiadau canlynol."
 
 #: source/ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_JDBC.STR_JDBC_HEADERTEXT.String.Text
 msgid  "Set up a connection to a JDBC database"
@@ -2557,7 +2557,7 @@ msgstr "Creu cysylltiad i gronfa ddata JDBC"
 
 #: source/ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_JDBC.STR_JDBC_HELPTEXT.String.Text
 msgid  "Please enter the required information to connect to a JDBC database.\nPlease contact your system administrator if you are unsure about the following settings."
-msgstr ""
+msgstr "Rhowch y wybodaeth angenrheidiol i gysylltu â chyfeiriadur JDBC..\nCysylltwch â'ch gweinyddwr system os ydych yn ansicr am y gosodiadau canlynol."
 
 #: source/ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_ORACLE.STR_ORACLE_HEADERTEXT.String.Text
 msgid  "Set up a connection to an Oracle database"
@@ -2573,7 +2573,7 @@ msgstr "~Dosbarth gyrrwr Oracle JDBC"
 
 #: source/ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_ORACLE.STR_ORACLE_HELPTEXT.String.Text
 msgid  "Please enter the required information to connect to an Oracle database.Note that a JDBC Driver Class must be installed on your system and registered with %PRODUCTNAME.\nPlease contact your system administrator if you are unsure about the following settings."
-msgstr ""
+msgstr "Rhowch y wybodaeth angenrheidiol i gysylltu â chyfeiriadur Oracle. Sylwch fod yn rhaid gosod Dosbarth Gyrrwr JDBC ar eich system a'i chofrestri gyda %PRODUCTNAME. \nCysylltwch â'ch gweinyddwr system os ydych yn ansicr am y gosodiadau canlynol."
 
 #: source/ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_SPREADSHEET.STR_SPREADSHEET_HEADERTEXT.String.Text
 msgid  "Set up a connection to spreadsheets"
@@ -2581,7 +2581,7 @@ msgstr "Creu cysylltiad i daenlenni"
 
 #: source/ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_SPREADSHEET.STR_SPREADSHEET_HELPTEXT.String.Text
 msgid  "Click 'Browse...' to select a %PRODUCTNAME spreadsheet or Microsoft Excel workbook.\n%PRODUCTNAME will open this file in read-only mode."
-msgstr ""
+msgstr "Cliciwch 'Pori...' i ddewis taenlen %PRODUCTNAME neu lyfr gwaith Microsoft Excel\n.Bydd %PRODUCTNAME yn agor y ffeil ym modd darllen yn unig."
 
 #: source/ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_SPREADSHEET.STR_SPREADSHEETPATH.String.Text
 msgid  "~Location and file name"
@@ -2723,6 +2723,50 @@ msgstr "Prawf dosbarth"
 msgid  "Socket"
 msgstr "Soced"
 
+#: source/ui/inc/toolbox_tmpl.hrc#ID_BROWSER_REFRESH.#define.Text
+msgid  "Refresh"
+msgstr "Adnewyddu"
+
+#: source/ui/inc/toolbox_tmpl.hrc#ID_NEW_VIEW_DESIGN.#define.Text
+msgid  "New ~View Design"
+msgstr "Cynllun ~Golwg Newydd"
+
+#: source/ui/inc/toolbox_tmpl.hrc#ID_NEW_TABLE_DESIGN.#define.Text
+msgid  "New ~Table Design"
+msgstr "Cynllun ~Tabl Newydd"
+
+#: source/ui/inc/toolbox_tmpl.hrc#ID_NEW_QUERY_WIZARD.#define.Text
+msgid  "Query AutoPilot..."
+msgstr "Ymholiad AwtoPeilot..."
+
+#: source/ui/inc/toolbox_tmpl.hrc#ID_NEW_QUERY_DESIGN.#define.Text
+msgid  "New ~Query (Design View)"
+msgstr "~Ymholiad Newydd (Cynllun Golwg)"
+
+#: source/ui/inc/toolbox_tmpl.hrc#ID_EDIT_QUERY_DESIGN.#define.Text
+msgid  "~Edit Query"
+msgstr "~Golygu Ymholiad"
+
+#: source/ui/inc/toolbox_tmpl.hrc#ID_NEW_QUERY_SQL.#define.Text
+msgid  "New Query (~SQL View)"
+msgstr "Ymholiad Newydd (Go~lwg SQL)"
+
+#: source/ui/inc/toolbox_tmpl.hrc#ID_QUERY_EDIT_JOINCONNECTION.#define.Text
+msgid  "Edit..."
+msgstr "Golygu..."
+
+#: source/ui/inc/toolbox_tmpl.hrc#ID_BROWSER_COLWIDTH.#define.Text
+msgid  "Column ~Width..."
+msgstr "~Lled Colofn..."
+
+#: source/ui/inc/toolbox_tmpl.hrc#ID_DOCUMENT_CREATE_REPWIZ.#define.Text
+msgid  "Report Wizard..."
+msgstr "Dewin Adroddiad..."
+
+#: source/ui/inc/toolbox_tmpl.hrc#SID_DB_FORM_NEW_PILOT.#define.Text
+msgid  "Form AutoPilot..."
+msgstr "AwtoPeilot Ffurflen..."
+
 #: source/ui/misc/dbumiscres.src#RSC_CHARSETS.1.String.Text
 msgid  "System"
 msgstr "System"
@@ -2736,12 +2780,12 @@ msgid  "An unexpected error occurred. The operation could not be performed."
 msgstr "Digwyddodd gwall annisgwyl. Methu cyflawni'r weithred."
 
 #: source/ui/misc/dbumiscres.src#STR_COULDNOTOPEN_LINKEDDOC.String.Text
-msgid  "The document "$file$" could not be opened."
-msgstr ""
+msgid  "The document \"$file$\" could not be opened."
+msgstr "Nid oedd modd agor dogfen \"$file$\" ."
 
 #: source/ui/misc/dbumiscres.src#STR_MISSING_TABLES_XDROP.String.Text
 msgid  "The table cannot be deleted because the database connection does not support this."
-msgstr ""
+msgstr "Nid oes modd dileu'r tabl am nad yw'r cyswllt cronfa ddata'n cynnal hynny."
 
 #: source/ui/misc/dbumiscres.src#STR_BUTTON_TEXT_ALL.String.Text
 msgid  "~All"
@@ -2760,20 +2804,20 @@ msgid  "No corresponding column type could be found for column '#1'."
 msgstr "Methu canfod math golofn gyfatebol ar gyfer colofn '#1'."
 
 #: source/ui/misc/dbumiscres.src#STR_FILE_DOES_NOT_EXIST.String.Text
-msgid  "The file "$file$" does not exist."
-msgstr ""
+msgid  "The file \"$file$\" does not exist."
+msgstr "Nid yw ffeil  \"$file$\" yn bodoli."
 
 #: source/ui/misc/dbumiscres.src#STR_WARNINGS_DURING_CONNECT.String.Text
-msgid  "Warnings were encountered while connecting to the data source. Press "$buttontext$" to view them."
-msgstr ""
+msgid  "Warnings were encountered while connecting to the data source. Press \"$buttontext$\" to view them."
+msgstr "Cafwyd rhybudd wrth gysylltu â ffynhonnell y data. Cliciwch  \"$buttontext$\" i'w gweld."
 
 #: source/ui/misc/dbumiscres.src#STR_NAMED_OBJECT_ALREADY_EXISTS.String.Text
 msgid  "The name '$#$' already exists.\nPlease enter another name."
-msgstr ""
+msgstr "Mae'r enw '$#$' yn bodoli.\nRhowch enw arall."
 
 #: source/ui/misc/dbumiscres.src#RID_STR_EXTENSION_NOT_PRESENT.String.Text
-msgid  "The report, "$file$", requires the extension Oracle Report Builder."
-msgstr ""
+msgid  "The report, \"$file$\", requires the extension Oracle Report Builder."
+msgstr "Mae'r adroddiad, \"$file$\", angen yr estyniad Oracle Report Builder."
 
 #: source/ui/misc/WizardPages.src#STR_WIZ_COLUMN_SELECT_TITEL.String.Text
 msgid  "Apply columns"
@@ -2901,7 +2945,7 @@ msgstr "Nid yw'r enw hwn yn ddilys yn y gronfa ddata bresennol. "
 
 #: source/ui/misc/WizardPages.src#STR_SUGGEST_APPEND_TABLE_DATA.String.Text
 msgid  "Choose the option 'Append data' on the first page to append data to an existing table."
-msgstr ""
+msgstr "Dewiswch y dewis 'Atodi data' ar y dudalen gyntaf i atodi data i'r tabl presennol."
 
 #: source/ui/misc/WizardPages.src#STR_INVALID_TABLE_NAME_LENGTH.String.Text
 msgid  "Please change the table name. It is too long."
@@ -2953,15 +2997,15 @@ msgstr "Priodweddau Uniad"
 
 #: source/ui/querydesign/querydlg.src#STR_JOIN_TYPE_HINT.String.Text
 msgid  "Please note that some databases may not support this join type."
-msgstr ""
+msgstr "Sylwch na fydd rhai mathau o gronfeydd data'n cynnal y math yma o uniad."
 
 #: source/ui/querydesign/querydlg.src#STR_QUERY_INNER_JOIN.String.Text
 msgid  "Includes only records for which the contents of the related fields of both tables are identical."
-msgstr ""
+msgstr "Cynnwys dim ond cofnodion y mae eu cynnwys yn y meysydd cydberthynol y ddau dabl yn cyfateb."
 
 #: source/ui/querydesign/querydlg.src#STR_QUERY_LEFTRIGHT_JOIN.String.Text
 msgid  "Contains ALL records from table '%1' but only records from table '%2' where the values in the related fields are matching."
-msgstr ""
+msgstr "Yn cynnwys POB cofnod o dabl '%1' a dim ond cofnodion o dabl '%2' lle mae gwerthoedd mewn meysydd cydberthynol yn cydweddu."
 
 #: source/ui/querydesign/querydlg.src#STR_QUERY_FULL_JOIN.String.Text
 msgid  "Contains ALL records from '%1' and from '%2'."
@@ -2973,7 +3017,7 @@ msgstr "Mae'n cynnwys cynnyrch cartesaidd POB cofnod o '%1' ac o '%2'."
 
 #: source/ui/querydesign/querydlg.src#STR_QUERY_NATURAL_JOIN.String.Text
 msgid  "Contains only one column for each pair of equally-named columns from '%1' and from '%2'."
-msgstr ""
+msgstr "Yn cynnwys di ond un colofn o bob par o golofnau gydag enwau tebyg o '%1' ac o '%2'."
 
 #: source/ui/querydesign/query.src#STR_QUERY_UNDO_TABWINSHOW.String.Text
 msgid  "Add Table Window"
@@ -3017,7 +3061,7 @@ msgstr "Mynegiad annilys, nid yw enw maes '$name$' yn bodoli."
 
 #: source/ui/querydesign/query.src#RID_STR_TOMUCHTABLES.String.Text
 msgid  "The query covers #num# tables. The selected database type, however, can only process a maximum of #maxnum# table(s) per statement."
-msgstr ""
+msgstr "Mae'r ymholiad yn cynnwys tablau #num#. Dim ond uchafswm o #maxnum# tabl y datganiad gyda'r math yma o gronfa ddata."
 
 #: source/ui/querydesign/query.src#STR_QUERY_UNDO_TABWINDELETE.String.Text
 msgid  "Delete Table Window"
@@ -3105,7 +3149,7 @@ msgstr "Gormod o dablau."
 
 #: source/ui/querydesign/query.src#STR_QRY_NATIVE.String.Text
 msgid  "The statement will not be applied when querying in the SQL dialect of the database."
-msgstr ""
+msgstr "Ni fydd y datganiad yn cael ei osod wrth ymholi i dafodiaith SQL y gronfa ddata."
 
 #: source/ui/querydesign/query.src#ERR_QRY_AMB_FIELD.ErrorBox.Message
 msgid  "Field name not found or not unique"
@@ -3141,7 +3185,7 @@ msgstr "Methu creu ymholiad am nad oes meysydd wedi eu dewis."
 
 #: source/ui/querydesign/query.src#STR_DATASOURCE_DELETED.String.Text
 msgid  "The corresponding data source has been deleted. Therefore, data relevant to that data source cannot be saved."
-msgstr ""
+msgstr "Mae'r ffynhonnell data cyfatebol wedi ei ddileu. Felly nid oes modd cadw data sy'n berthnasol i'r ffynhonnell data honno."
 
 #: source/ui/querydesign/query.src#STR_QRY_COLUMN_NOT_FOUND.String.Text
 msgid  "The column '$name$' is unknown."
@@ -3157,7 +3201,7 @@ msgstr "Rhaid defnyddio enw colofn cyn 'LIKE'."
 
 #: source/ui/querydesign/query.src#STR_QRY_CHECK_CASESENSITIVE.String.Text
 msgid  "The column could not be found. Please note that the database is case-sensitive."
-msgstr ""
+msgstr "Methu canfod y golofn. Sylwch fod y gronfa ddata'n sensitif i lythrennau bach a mawr."
 
 #: source/ui/querydesign/query.src#STR_QUERYDESIGN.String.Text
 msgid  " - %PRODUCTNAME Base: Query Design"
@@ -3169,14 +3213,14 @@ msgstr " - Base %PRODUCTNAME: Golwg Cynllunio"
 
 #: source/ui/querydesign/query.src#STR_QUERY_SAVEMODIFIED.String.Text
 msgid  "$object$ has been changed.\nDo you want to save the changes?"
-msgstr ""
+msgstr "Mae $object$ wedi newid.\nHoffech chi gadw'r newidiadau?"
 
 #: source/ui/querydesign/query.src#STR_ERROR_PARSING_STATEMENT.String.Text
-msgid  "$object$ is based on an SQL command which could not be parsed.(except "SQL command", which doesn't make sense here) will be inserted."
+msgid  "$object$ is based on an SQL command which could not be parsed.(except \"SQL command\", which doesn't make sense here) will be inserted."
 msgstr ""
 
 #: source/ui/querydesign/query.src#STR_INFO_OPENING_IN_SQL_VIEW.String.Text
-msgid  "$object$ will be opened in SQL view.(except "SQL command", which doesn't make sense here) will be inserted."
+msgid  "$object$ will be opened in SQL view.(except \"SQL command\", which doesn't make sense here) will be inserted."
 msgstr ""
 
 #: source/ui/querydesign/query.src#RSC_QUERY_OBJECT_TYPE.1.String.Text
@@ -3193,15 +3237,15 @@ msgstr "Datganiad SQL"
 
 #: source/ui/querydesign/query.src#STR_STATEMENT_WITHOUT_RESULT_SET.String.Text
 msgid  "The query does not create a result set, and thus cannot be part of another query."
-msgstr ""
+msgstr "Nid yw'r ymholiad yn creu set adroddiad, ac felly ni all fod yn rhan o ymholiad arall."
 
 #: source/ui/querydesign/query.src#STR_NO_DATASOURCE_OR_CONNECTION.String.Text
 msgid  "Both the ActiveConnection and the DataSourceName parameter are missing or wrong - cannot initialize the query designer."
-msgstr ""
+msgstr "Mae paramedrau ActiveConnection a'r DataSourceName ar goll neu'n anghywir - methu cychwyn y cynllunydd ymholiad."
 
 #: source/ui/relationdesign/relation.src#STR_QUERY_REL_EDIT_RELATION.String.Text
 msgid  "This relation already exists. Do you want to edit it or create a new one?"
-msgstr ""
+msgstr "Mae'r gydberthynas yn bodoli. Hoffech chi ei olygu?"
 
 #: source/ui/relationdesign/relation.src#STR_QUERY_REL_EDIT.String.Text
 msgid  "Edit..."
@@ -3221,19 +3265,19 @@ msgstr "Nid yw'r gronfa ddata'n cynnal cydberthynas"
 
 #: source/ui/relationdesign/relation.src#RELATION_DESIGN_SAVEMODIFIED.QueryBox.Message
 msgid  "The relation design has been changed.\nDo you want to save the changes?"
-msgstr ""
+msgstr "Mae'r cynllun cydberthynas wedi newid.\nHoffech chi gadw'r newidiadau?"
 
 #: source/ui/relationdesign/relation.src#STR_QUERY_REL_DELETE_WINDOW.String.Text
 msgid  "When you delete this table all corresponding relations will be deleted as well. Continue?"
-msgstr ""
+msgstr "Wrth ddileu'r tabl hwn bydd holl gydberthynas gyfatebol yn cael ei ddileu hefyd. Parhau?"
 
 #: source/ui/relationdesign/relation.src#STR_QUERY_REL_COULD_NOT_CREATE.String.Text
 msgid  "The database could not create the relation. May be foreign keys for this kind of table aren't supported.\nPlease check your documentation of the database."
-msgstr ""
+msgstr "Nid oedd modd i'r gronfa ddata greu'r berthynas. Efallai nad yw allweddi dieithr yn cael eu cynnal yn y math yma o dabl.\nGwiriwch ddogfennaeth y gronfa ddata."
 
 #: source/ui/tabledesign/table.src#STR_TABLEDESIGN_DBFIELDTYPES.String.Text
 msgid  "Unknown;Text;Number;Date/Time;Date;Time;Yes/No;Currency;Memo;Counter;Image;Text (fix);Decimal;Binary (fix);Binary;BigInt;Double;Float;Real;Integer;Small Integer;Tiny Integer;SQL Null;Object;Distinct;Structure;Field;BLOB;CLOB;REF;OTHER;Bit (fix)"
-msgstr ""
+msgstr "Unknown;Text;Number;Date/Time;Date;Time;Yes/No;Currency;Memo;Counter;Image;Text (fix);Decimal;Binary (fix);Binary;BigInt;Double;Float;Real;Integer;Small Integer;Tiny Integer;SQL Null;Object;Distinct;Structure;Field;BLOB;CLOB;REF;OTHER;Bit (fix)"
 
 #: source/ui/tabledesign/table.src#STR_TABLEDESIGN_UNDO_PRIMKEY.String.Text
 msgid  "Insert/remove primary key"
@@ -3377,15 +3421,15 @@ msgstr "Enghraifft fformat"
 
 #: source/ui/tabledesign/table.src#STR_HELP_BOOL_DEFAULT.String.Text
 msgid  "Select a value that is to appear in all new records as default.\nIf the field is not to have a default value, select the empty string."
-msgstr ""
+msgstr "Dewiswch werth sydd i ymddangos mewn pob cofnod newydd fel rhagosodedig.\nOs nad yw'r maes i gael gwerth rhagosodedig, dewiswch linyn gwag."
 
 #: source/ui/tabledesign/table.src#STR_HELP_DEFAULT_VALUE.String.Text
 msgid  "Enter a default value for this field.\n\nWhen you later enter data in the table, this string will be used in each new record for the field selected. It should, therefore, correspond to the cell format that needs to be entered below."
-msgstr ""
+msgstr "Rhowch werth ragosodedig i'r maes hwn.\n\nPan fyddwch yn rhoi data i'r tabl, bydd y llinyn hwn yn cael ei ddefnyddio ar gyfer pob cofnod newydd yn y maes dewiswyd. Dylai, felly, gyd-fynd â fformat cell sydd angen ei osod islaw."
 
 #: source/ui/tabledesign/table.src#STR_HELP_FIELD_REQUIRED.String.Text
 msgid  "Activate this option if this field cannot contain NULL values, i.e. the user must always enter data."
-msgstr ""
+msgstr "Gweithredwch y dewis os nad yw'r maes yn gallu cynnwys gwerthoedd NULL, h.y. rhaid i'r defnyddiwr rhoi data bob tro."
 
 #: source/ui/tabledesign/table.src#STR_HELP_TEXT_LENGTH.String.Text
 msgid  "Enter the maximum text length permitted."
@@ -3397,7 +3441,7 @@ msgstr "Rhowch fformat rhif."
 
 #: source/ui/tabledesign/table.src#STR_HELP_LENGTH.String.Text
 msgid  "Determine the length data can have in this field.\n\nIf decimal fields, then the maximum length of the number to be entered, if binary fields, then the length of the data block.\nThe value will be corrected accordingly when it exceeds the maximum for this database."
-msgstr ""
+msgstr "Pennu hyd data yn y maes.\n\nOs meysydd degol, hyd fwyaf rhif i'w osod, os maes deuaidd hyd y bloc data.\nBydd y gwerth yn cael ei gywiro'n awtomatig pan fydd yn mynd tu hwnt i'r hiraf ar gyfer y gronfa ddata hon."
 
 #: source/ui/tabledesign/table.src#STR_HELP_SCALE.String.Text
 msgid  "Specify the number of decimal places permitted in this field."
@@ -3405,7 +3449,7 @@ msgstr "Enwi'r nifer o leoedd degol sy'n cael eu caniatáu yn y maes."
 
 #: source/ui/tabledesign/table.src#STR_HELP_FORMAT_CODE.String.Text
 msgid  "This is where you see how the data would be displayed in the current format (use the button on the right to modify the format)."
-msgstr ""
+msgstr "Dyma le rydych yn gweld sut fydd eich data'n cael ei ddangos yn ei fformat presennol (defnyddiwch y botwm ar y dde i newid y fformat)"
 
 #: source/ui/tabledesign/table.src#STR_HELP_FORMAT_BUTTON.String.Text
 msgid  "This is where you determine the output format of the data."
@@ -3413,19 +3457,19 @@ msgstr "Dyma'r lle i bennu fformat allwn y data."
 
 #: source/ui/tabledesign/table.src#STR_HELP_AUTOINCREMENT.String.Text
 msgid  "Choose if this field should contain AutoIncrement values.\n\nYou can not enter data in fields of this type. An intrinsic value will be assigned to each new record automatically (resulting from the increment of the previous record)."
-msgstr ""
+msgstr "Dewiswch os ddylai'r maes gynnwys gwerthoedd AwtoGynyddol.\n\nNid oes modd rhoi data mewn meysydd o'r math yma. Bydd gwerth cynhenid yn cael ei osod yn awtomatig i bob cofnod newydd (o ganlyniad i gynyddiad y cofnod blaenorol)."
 
 #: source/ui/tabledesign/table.src#PB_FORMAT.PushButton.Text
 msgid  "~..."
 msgstr "~..."
 
 #: source/ui/tabledesign/table.src#STR_TABLEDESIGN_DUPLICATE_NAME.String.Text
-msgid  "The table cannot be saved because column name "$column$" was assigned twice."
-msgstr ""
+msgid  "The table cannot be saved because column name \"$column$\" was assigned twice."
+msgstr "Methu cadw'r tabl oherwydd i enw'r golofn \"$column$\" gael ei neilltuo ddwywaith."
 
 #: source/ui/tabledesign/table.src#STR_TBL_COLUMN_IS_KEYCOLUMN.String.Text
-msgid  "The column "$column$" belongs to the primary key. If the column is deleted, the primary key will also be deleted. Do you really want to continue?"
-msgstr ""
+msgid  "The column \"$column$\" belongs to the primary key. If the column is deleted, the primary key will also be deleted. Do you really want to continue?"
+msgstr "Mae'r golofn \"$column$\" yn perthyn i'r allwedd gynradd. Os fydd y golofn yn cael ei ddileu. Bydd yr allwedd gynradd yn cael ei ddileu hefyd. Ydych chi wir eisiau parhau?"
 
 #: source/ui/tabledesign/table.src#STR_TBL_COLUMN_IS_KEYCOLUMN_TITLE.String.Text
 msgid  "Primary Key Affected"
@@ -3439,25 +3483,29 @@ msgstr "Colofn"
 msgid  "Continue anyway?"
 msgstr "Parhau beth bynnag?"
 
+#: source/ui/tabledesign/table.src#STR_STAT_WARNING.String.Text
+msgid  "Warning!"
+msgstr "Rhybudd!"
+
 #: source/ui/tabledesign/table.src#TABLE_DESIGN_SAVEMODIFIED.QueryBox.Message
 msgid  "The table has been changed.\nDo you want to save the changes?"
-msgstr ""
+msgstr "Mae'r tabl wedi newid.\nHoffech chi gadw'r newidiadau?"
 
 #: source/ui/tabledesign/table.src#TABLE_QUERY_CONNECTION_LOST.QueryBox.Message
 msgid  "The connection to the database was lost! The table design can only be used with limited functionality without a connection.\nReconnect?"
-msgstr ""
+msgstr "Mae'r cyswllt gyda'r gronfa ddata wedi ei cholli. Dim ond gyda swyddogaeth gyfyngedig mae modd defnyddio cynllun tabl heb gysylltiad.\nAilgysylltu?"
 
 #: source/ui/tabledesign/table.src#STR_TABLEDESIGN_CONNECTION_MISSING.String.Text
 msgid  "The table could not be saved due to problems connecting to the database."
-msgstr ""
+msgstr "Methu cadw'r tabl oherwydd anawsterau cysylltu â'r tabl."
 
 #: source/ui/tabledesign/table.src#STR_TABLEDESIGN_DATASOURCE_DELETED.String.Text
 msgid  "The table filter could not be adjusted because the data source has been deleted."
-msgstr ""
+msgstr "Methu addasu hidl y tabl gan fod y ffynhonnell data wedi ei ddileu"
 
 #: source/ui/tabledesign/table.src#QUERY_SAVE_TABLE_EDIT_INDEXES.QueryBox.Message
 msgid  "Before you can edit the indexes of a table, you have to save it.\nDo you want to save the changes now?"
-msgstr ""
+msgstr "Cyn gallu golygu mynegeion tabl, rhaid ei gadw.\nHoffech chi gadw'r newidiadau?"
 
 #: source/ui/tabledesign/table.src#STR_TABLEDESIGN_NO_PRIM_KEY_HEAD.String.Text
 msgid  "No primary key"
@@ -3465,15 +3513,15 @@ msgstr "Dim allwedd gynradd"
 
 #: source/ui/tabledesign/table.src#STR_TABLEDESIGN_NO_PRIM_KEY.String.Text
 msgid  "A unique index or primary key is required for data record identification in this database.\nYou can only enter data into this table when one of these two structural conditions has been met.\n\nShould a primary key be created now?"
-msgstr ""
+msgstr "Mae angen mynegai unigryw neu allwedd gynradd i adnabod cofnod data yn y gronfa ddata hon.\nCewch roi data yn y tabl dim ond pan fydd yr amodau strwythurol hyn wedi eu cyflawni.\n\nA ddylid creu allwedd gynradd?"
 
 #: source/ui/tabledesign/table.src#STR_TABLEDESIGN_TITLE.String.Text
 msgid  " - %PRODUCTNAME Base: Table Design"
 msgstr "%PRODUCTNAME Base: Cynllun Tabl"
 
 #: source/ui/tabledesign/table.src#STR_TABLEDESIGN_ALTER_ERROR.String.Text
-msgid  "The column "$column$" could not be changed. Should the column instead be deleted and the new format appended?"
-msgstr ""
+msgid  "The column \"$column$\" could not be changed. Should the column instead be deleted and the new format appended?"
+msgstr "Methu newid colofn \"$column$\" .A ddylid dileu'r golofn ac ategu fformat newydd?"
 
 #: source/ui/tabledesign/table.src#STR_TABLEDESIGN_SAVE_ERROR.String.Text
 msgid  "Error while saving the table design"
@@ -3485,7 +3533,7 @@ msgstr "Methu dileu colofn $column$."
 
 #: source/ui/tabledesign/table.src#TABLE_DESIGN_ALL_ROWS_DELETED.QueryBox.Message
 msgid  "You are trying to delete all the columns in the table. A table cannot exist without columns. Should the table be deleted from the database? If not, the table will remain unchanged."
-msgstr ""
+msgstr "Rydych yn ceisio dileu'r holl golofnau yn y tabl. Nid yw tabl yn gallu bodoli heb golofnau. A ddylid dileu'r tabl o'r gronfa ddata? Os nad, bydd y tabl yn parhau heb ei newid."
 
 #: source/ui/tabledesign/table.src#STR_AUTOINCREMENT_VALUE.String.Text
 msgid  "A~uto-increment statement"
@@ -3493,11 +3541,11 @@ msgstr "Datganiad ~awtogynyddol"
 
 #: source/ui/tabledesign/table.src#STR_HELP_AUTOINCREMENT_VALUE.String.Text
 msgid  "Enter an SQL statement for the auto-increment field.\n\nThis statement will be directly transferred to the database when the table is created."
-msgstr ""
+msgstr "Rhowch ddatganiad SQL ar gyfer y maes awtogynyddol.\n\nBydd y datganiad yn cael ei drosglwyddo ar ei union i'r gronfa ddata wedi i'r tabl gael ei greu."
 
 #: source/ui/tabledesign/table.src#STR_NO_TYPE_INFO_AVAILABLE.String.Text
 msgid  "No type information could be retrieved from the database.\nThe table design mode is not available for this data source."
-msgstr ""
+msgstr "Methu canfod gwybodaeth am fath o'r gronfa ddata.\nNid yw modd cynllun tabl ar gael o'r ffynhonnell data."
 
 #: source/ui/tabledesign/table.src#STR_CHANGE_COLUMN_NAME.String.Text
 msgid  "change field name"
@@ -3514,10 +3562,6 @@ msgstr "newid disgrifiad maes"
 #: source/ui/tabledesign/table.src#STR_CHANGE_COLUMN_ATTRIBUTE.String.Text
 msgid  "change field attribute"
 msgstr "newid priodoleddau maes"
-
-#: source/ui/tabledesign/table.src#STR_STAT_WARNING.String.Text
-msgid  "Warning!"
-msgstr "Rhybudd!"
 
 #: source/ui/uno/dbinteraction.src#STR_REMEMBERPASSWORD_SESSION.String.Text
 msgid  "~Remember password until end of session"
@@ -3537,7 +3581,7 @@ msgstr "Nid yw'r gronfa ddata cyrchfan yn cynnal allweddi cynradd."
 
 #: source/ui/uno/copytablewizard.src#STR_CTW_INVALID_DATA_ACCESS_DESCRIPTOR.String.Text
 msgid  "no data access descriptor found, or no data access descriptor able to provide all necessary information"
-msgstr ""
+msgstr "heb ganfod disgrifiwr mynediad i ddata, neu dim disgrifiwr mynediad i ddata sy'n darparu'r wybodaeth angenrheidiol."
 
 #: source/ui/uno/copytablewizard.src#STR_CTW_ONLY_TABLES_AND_QUERIES_SUPPORT.String.Text
 msgid  "Only tables and queries are supported at the moment."
@@ -3570,47 +3614,3 @@ msgstr "Er mwyn copïo ymholiad, rhaid i'ch cysylltiad allu darparu ymholiadau."
 #: source/ui/uno/copytablewizard.src#STR_CTW_ERROR_INVALID_INTERACTIONHANDLER.String.Text
 msgid  "The given interaction handler is invalid."
 msgstr "Mae'r triniwr rhyngweithiad yma'n annilys."
-
-#: source/ui/inc/toolbox_tmpl.hrc#ID_BROWSER_REFRESH.#define.Text
-msgid  "Refresh"
-msgstr "Adnewyddu"
-
-#: source/ui/inc/toolbox_tmpl.hrc#ID_NEW_VIEW_DESIGN.#define.Text
-msgid  "New ~View Design"
-msgstr "Cynllun ~Golwg Newydd"
-
-#: source/ui/inc/toolbox_tmpl.hrc#ID_NEW_TABLE_DESIGN.#define.Text
-msgid  "New ~Table Design"
-msgstr "Cynllun ~Tabl Newydd"
-
-#: source/ui/inc/toolbox_tmpl.hrc#ID_NEW_QUERY_WIZARD.#define.Text
-msgid  "Query AutoPilot..."
-msgstr "Ymholiad AwtoPeilot..."
-
-#: source/ui/inc/toolbox_tmpl.hrc#ID_NEW_QUERY_DESIGN.#define.Text
-msgid  "New ~Query (Design View)"
-msgstr "~Ymholiad Newydd (Cynllun Golwg)"
-
-#: source/ui/inc/toolbox_tmpl.hrc#ID_EDIT_QUERY_DESIGN.#define.Text
-msgid  "~Edit Query"
-msgstr "~Golygu Ymholiad"
-
-#: source/ui/inc/toolbox_tmpl.hrc#ID_NEW_QUERY_SQL.#define.Text
-msgid  "New Query (~SQL View)"
-msgstr "Ymholiad Newydd (Go~lwg SQL)"
-
-#: source/ui/inc/toolbox_tmpl.hrc#ID_QUERY_EDIT_JOINCONNECTION.#define.Text
-msgid  "Edit..."
-msgstr "Golygu..."
-
-#: source/ui/inc/toolbox_tmpl.hrc#ID_BROWSER_COLWIDTH.#define.Text
-msgid  "Column ~Width..."
-msgstr "~Lled Colofn..."
-
-#: source/ui/inc/toolbox_tmpl.hrc#ID_DOCUMENT_CREATE_REPWIZ.#define.Text
-msgid  "Report Wizard..."
-msgstr "Dewin Adroddiad..."
-
-#: source/ui/inc/toolbox_tmpl.hrc#SID_DB_FORM_NEW_PILOT.#define.Text
-msgid  "Form AutoPilot..."
-msgstr "AwtoPeilot Ffurflen..."

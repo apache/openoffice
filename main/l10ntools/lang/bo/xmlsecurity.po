@@ -33,7 +33,7 @@ msgstr ""
 
 #: source/component/warnbox.src#RID_XMLSECWB_NO_MOZILLA_PROFILE.WarningBox.Message
 msgid  "Digital signatures functionality could not be used, because no Mozilla user profile was found. Please check the Mozilla installation."
-msgstr ""
+msgstr "ཨང་ཀིའི་མིང་འགོད་ནུས་པ་སྤྱོད་ཐབས་བྲལ། དེའི་རྐྱེན་ནི་Mozilla སྤྱོད་དུད་བགོ་སྒྲིག་ཡིག་ཆ་བཪྙེད་མེད།  Mozilla བསྒར་སྒྲིག་ལ་ཞིབ་བཤེར་བྱེད་རྒྱུ།"
 
 #: source/dialogs/macrosecurity.src#RID_XMLSECTP_MACROSEC.TabDialog.Text
 msgid  "Macro Security"
@@ -53,19 +53,19 @@ msgstr "བསྐྱར་སྒྲིག"
 
 #: source/dialogs/macrosecurity.src#RID_XMLSECTP_SECLEVEL.RB_VERYHIGH.RadioButton.Text
 msgid  "~Very high.\nOnly macros from trusted file locations are allowed to run. All other macros, regardless whether signed or not, are disabled."
-msgstr ""
+msgstr "ཧ་ཅང་མཐོ་(~V)\nབློས་འགེལ་ཆོག་པའི་ཡིག་ཆའི་གནས་ས་ནས་བྱུང་བའི་ཧུང་ཁོ་ན་ཁོར་རྒྱུག་ཆོག"
 
 #: source/dialogs/macrosecurity.src#RID_XMLSECTP_SECLEVEL.RB_HIGH.RadioButton.Text
 msgid  "H~igh.\nOnly signed macros from trusted sources are allowed to run. Unsigned macros are disabled."
-msgstr ""
+msgstr "མཐོ་(~I)\nབློས་འགེལ་ཆོག་པའི་ཡོང་ཁུངས་ནས་ཡོང་བའི་མིང་བཀོད་ཧུང་ཁོ་ན་ཁོར་རྒྱུག་ཆོག་ མིང་རྟགས་མ་བཀོད་པའི་ཧུང་འགོག་སྤྱོད་བྱེད།"
 
 #: source/dialogs/macrosecurity.src#RID_XMLSECTP_SECLEVEL.RB_MEDIUM.RadioButton.Text
 msgid  "~Medium.\nConfirmation required before executing macros from untrusted sources."
-msgstr ""
+msgstr "དཁྱིལ་(~M)\nབློས་མི་འཁེལ་བའི་ཡོང་ཁུངས་ནས་ཡོང་བའི་ཧུང་ལག་སྟར་མ་བྱས་གོང་ལག་འགུལ་གྱིས་གཏན་འཁེལ་བྱེད་པ།"
 
 #: source/dialogs/macrosecurity.src#RID_XMLSECTP_SECLEVEL.RB_LOW.RadioButton.Text
 msgid  "~Low (not recommended).\nAll macros will be executed without confirmation. Use this setting only if you are certain that all documents that will be opened are safe."
-msgstr ""
+msgstr "དམའ་（བེད་མི་སྤྱོད་པའི་གྲོས་འགོ་འདོན་རྒྱུ་） (~L)\nངོས་འཛིན་མ་རྒྱུད་པར་ཧུང་ལག་སྟར་བྱེད་ ཁ་ཕྱེ་བའི་ཡིག་ཚགས་ཚང་མ་བདེ་འཇགས་ཡིག་ཚགས་་འགན་ལེན་ཐུབ་པ་ཁོ་ནའི་སྐབས་སྒྲིག་ཆས་འདི་སྤྱད་ཆོག"
 
 #: source/dialogs/macrosecurity.src#RID_XMLSECTP_TRUSTSOURCES.FL_TRUSTCERT.FixedLine.Text
 msgid  "Trusted certificates"
@@ -93,7 +93,7 @@ msgstr "བློས་འགེལ་ཆོག་པའི་ཡིག་ཆའ
 
 #: source/dialogs/macrosecurity.src#RID_XMLSECTP_TRUSTSOURCES.FI_TRUSTFILELOC.FixedText.Text
 msgid  "Document macros are always executed if they have been opened from one of the following locations."
-msgstr ""
+msgstr "བདེ་འཇགས་རང་བཞིན་གྱི་རིམ་པ་\"ཧ་ཅང་མཐོ་\"བར་གཏན་འཁེལ་བའི་དུས་སྐབས་ཁོ་ནར་གཞི་ནར་གཞི་ནས་བློས་འགལ་ཆག་པའི་ཡིག་ཆའི་གནས་ས་བེད་སྤྱོད་ཆོག  བཀོད་སྒྲིག་འདི་བེད་སྤྱོད་བྱ་ཐབས་གཤམ་གསལ་གནས་སའི་ཁོངས་ནས་ཡིག་ཚགས་ཁྲོད་ཀྱི་ཧུང་ཁ་འབྱེད་སྐབས་གཞི་ནས་ཧུང་དེ་དག་ལག་བསྟར་བྱ་ཐུབ།"
 
 #: source/dialogs/macrosecurity.src#RID_XMLSECTP_TRUSTSOURCES.FL_ADD_TRUSTFILELOC.PushButton.Text
 msgid  "Add..."
@@ -125,7 +125,7 @@ msgstr "མིང་རྟགས་འཚོལ་ལྟ།..."
 
 #: source/dialogs/warnings.src#RID_XMLSECTP_MACROWARN.FI_DESCR2.FixedText.Text
 msgid  "Macros may contain viruses. Disabling macros for a document is always save. If you disable macros you may lose functionality provided by the document macros."
-msgstr ""
+msgstr "སྤྱི་ཁྱབ་ལ་ནད་དུག་ཡོད་ཤས་ཆེ། ཡིག་ཚགས་ཤིག་གིས་སྤྱི་ཁྱབ་བཀོལ་སྤྱོད་བྱེད་མི་ཆོག་པའི་སྐབས་སྔ་ཕྱི་བར་གསུམ་དུ་ཉར་ཚགས་བྱེད་པ། གལ་ཏེ་ཁྱེད་ཀྱི་སྤྱི་ཁྱབ་བཀོལ་སྤྱོད་བྱེད་མི་ཆོག་པ་བཟོས་ན་ཡིག་ཚགས་ཀྱི་སྤྱི་ཁྱབ་ཀྱིས་མཁོ་འདོན་བྱས་པའི་བྱེད་ནུས་འབོར་བརླག་བྱེད་ཉེན་ཆེ།"
 
 #: source/dialogs/warnings.src#RID_XMLSECTP_MACROWARN.CB_ALWAYSTRUST.CheckBox.Text
 msgid  "Always trust macros from this source"

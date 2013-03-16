@@ -37,11 +37,11 @@ msgstr "ActiveXསྟངས་འཛིན།"
 
 #: source/activex/module_activex.ulf#STR_DESC_MODULE_OPTIONAL_ACTIVEXCONTROL
 msgid  "Component to enable Microsoft Internet Explorer to display %PRODUCTNAME documents."
-msgstr ""
+msgstr "Microsoft Internet Explorerསྤྱད་དེ་ཀྲུང་པེའོ་ཕུའུ་ཧྭ་Office ཡིག་ཚགས་ཀྱི་ལྷུ་ཆས་གསལ་བ།"
 
 #: source/base/folderitem_base.ulf#STR_FI_TOOLTIP_BASE
 msgid  "Manage databases, create queries and reports to track and manage your information by using Base."
-msgstr ""
+msgstr "ཀྲུང་པེའོ་ཧྥུ་ཧྭ་ཡི་ Officeགཞི་གྲངས་མཛོད་སྤྱད་དེ་གཞི་གྲངས་མཛོད་དོ་དམ་ཐོག་ནས་གསར་བཟོ་བཙལ་འཚོལ་དང་རེའུ་མིག་ཐོ་གཞུང་གིས་ཆ་འཕྲིན་ལ་རྗེས་འདེད་དང་དོ་དམ་བྱེད་རྒྱུ།"
 
 #: source/base/registryitem_base.ulf#STR_REG_VAL_OO_DATABASE
 msgid  "OpenDocument Database"
@@ -53,7 +53,7 @@ msgstr "%PRODUCTNAME གྲངས་གཞིའི་ཐོ་མཛོད།"
 
 #: source/base/module_base.ulf#STR_DESC_MODULE_PRG_BASE
 msgid  "Create and edit databases by using %PRODUCTNAME Base."
-msgstr ""
+msgstr "ཀྲུང་པེའོ་ཧྥུ་ཧྭ་ཡི་ Office གཞི་གྲངས་མཛོད་བེད་སྤྱད་དེ་གཞི་གྲངས་མཛོད་བཟོ་རྒྱུ་དང་རྩོམ་སྒྲིག་བྱེད་རྒྱུ།"
 
 #: source/base/module_base.ulf#STR_NAME_MODULE_PRG_BASE_BIN
 msgid  "Program Module"
@@ -121,7 +121,11 @@ msgstr "གློག་རྡུལ་རེའུ་མིག་ཡིག་ཚ
 
 #: source/calc/folderitem_calc.ulf#STR_FI_TOOLTIP_CALC
 msgid  "Perform calculation, analyze information and manage lists in spreadsheets by using Calc."
-msgstr ""
+msgstr "ཀྲུང་པེའོ་ཧྥུ་ཧྭ་ཡི་ Officeགློག་རྡུལ་རེའུ་མིག་སྤྱད་དེ་རྩིག་རྒྱག་པ་དང་།  ཆ་འཕྲིན།  དེ་བཞིན་དོ་དམ་གློག་རྡུལ་རེའུ་མིག་ནང་གི་གསལ་ཐོ་དབྱེ་ཞིབ་བྱེད་རྒྱུ"
+
+#: source/calc/registryitem_calc.ulf#STR_REG_VAL_NEW
+msgid  "&New"
+msgstr "གསར་བཟོ།(&N)"
 
 #: source/calc/registryitem_calc.ulf#STR_REG_VAL_SO60_SPREADSHEET
 msgid  "%SXWFORMATNAME %SXWFORMATVERSION Spreadsheet"
@@ -155,17 +159,13 @@ msgstr "Microsoft Excel 97-2003 དཔེ་པང་།"
 msgid  "Microsoft Excel Template"
 msgstr "Microsoft Excel དཔེ་པང་།"
 
-#: source/calc/registryitem_calc.ulf#STR_REG_VAL_NEW
-msgid  "&New"
-msgstr "གསར་བཟོ།(&N)"
-
 #: source/calc/module_calc.ulf#STR_NAME_MODULE_PRG_CALC
 msgid  "%PRODUCTNAME Calc"
 msgstr "%PRODUCTNAME ཡི་གློག་རྡུལ་རེའུ་མིག"
 
 #: source/calc/module_calc.ulf#STR_DESC_MODULE_PRG_CALC
 msgid  "Perform calculation, analyze information and manage lists in spreadsheets by using %PRODUCTNAME Calc."
-msgstr ""
+msgstr "ཀྲུང་པེའོ་ཧྥུ་ཧྭ་ཡི་ Officeགློག་རྡུལ་རེའུ་མིག་སྤྱད་དེ་རྩིག་རྒྱག་པ་དང་།  ཆ་འཕྲིན།  དེ་བཞིན་དོ་དམ་གློག་རྡུལ་རེའུ་མིག་ནང་གི་གསལ་ཐོ་དབྱེ་ཞིབ་བྱེད་རྒྱུ"
 
 #: source/calc/module_calc.ulf#STR_NAME_MODULE_PRG_CALC_BIN
 msgid  "Program Module"
@@ -181,7 +181,7 @@ msgstr "ཀྲུང་པེའོ་ཧྥུའུ་ཧྭ་ Officeཡི�
 
 #: source/calc/module_calc.ulf#STR_DESC_MODULE_PRG_CALC_HELP
 msgid  "Help about %PRODUCTNAME Calc"
-msgstr ""
+msgstr "ཀྲུང་པེའོ་ཧྥུའུ་ཧྭ་ Officeཡིས་འབྲེལ་ཡོད་ཀྲུང་པེའོ་ཧྥུའུ་ཧྭOfficeཡི་གློག་རྡུལ་རེའུ་མིག་ལ་རོགས་རམ་བྱེད་རྒྱུའི་གསལ་བཤད།"
 
 #: source/calc/module_calc.ulf#STR_NAME_MODULE_OPTIONAL_ADDINS
 msgid  "Add-in"
@@ -189,7 +189,11 @@ msgstr "Add-In"
 
 #: source/calc/module_calc.ulf#STR_DESC_MODULE_OPTIONAL_ADDINS
 msgid  "Add-ins are additional programs that make new functions available in %PRODUCTNAME Calc."
-msgstr ""
+msgstr "སྤྱི་ཁྱབ་འཇུག་སྐབས་ཀྲུའུ་པའེ་ཧྥུ་ཧྭ་ Office ཡི་གློག་རྡུལ་རེའུ་མིག་ནང་བྱེད་ནུས་གསར་པའི་ཟུར་སྣོན་བྱ་རིམ་འཇུག་ཆོག"
+
+#: source/draw/registryitem_draw.ulf#STR_REG_VAL_NEW
+msgid  "&New"
+msgstr "གསར་བཟོ།(&N)"
 
 #: source/draw/registryitem_draw.ulf#STR_REG_VAL_SO60_DRAWING
 msgid  "%SXWFORMATNAME %SXWFORMATVERSION Drawing"
@@ -207,17 +211,13 @@ msgstr "%PRODUCTNAME རི་མོ་འབྲི་བ།"
 msgid  "OpenDocument Drawing Template"
 msgstr "%PRODUCTNAME རིས་འབྲིའི་དཔེ་པང་།"
 
-#: source/draw/registryitem_draw.ulf#STR_REG_VAL_NEW
-msgid  "&New"
-msgstr "གསར་བཟོ།(&N)"
-
 #: source/draw/folderitem_draw.ulf#STR_FI_NAME_ZEICHNUNG
 msgid  "Drawing"
 msgstr "རི་མོ་འབྲི་བ།"
 
 #: source/draw/folderitem_draw.ulf#STR_FI_TOOLTIP_DRAW
 msgid  "Create and edit drawings, flow charts, and logos by using Draw."
-msgstr ""
+msgstr "ཀྲུང་པེའོ་ཧྥུ་ཧྭ་ཡི་ Officeརིས་འབྲིའི་སྒྲིག་བཟོ་བེད་སྤྱད་དེ་རིས་དབྱིབས་དང་ལས་རིམ་རི་མོ་དང་ཕྲན་ཆུང་རྟགས་བཟོ་རྒྱུ་དང་རྩོམ་སྒྲིག་བྱེད་རྒྱུ།"
 
 #: source/draw/module_draw.ulf#STR_NAME_MODULE_PRG_DRAW
 msgid  "%PRODUCTNAME Draw"
@@ -225,7 +225,7 @@ msgstr "ཀྲུང་པེའོ་ཧྥུའུ་ཧྭ་ Officeཡི�
 
 #: source/draw/module_draw.ulf#STR_DESC_MODULE_PRG_DRAW
 msgid  "Create and edit drawings, flow charts, and logos by using %PRODUCTNAME Draw."
-msgstr ""
+msgstr "ཀྲུང་པེའོ་ཧྥུ་ཧྭ་ཡི་ Officeརིས་འབྲིའི་སྒྲིག་བཟོ་བེད་སྤྱད་དེ་རིས་དབྱིབས་དང་ལས་རིམ་རི་མོ་དང་ཕྲན་ཆུང་རྟགས་བཟོ་རྒྱུ་དང་རྩོམ་སྒྲིག་བྱེད་རྒྱུ།"
 
 #: source/draw/module_draw.ulf#STR_NAME_MODULE_PRG_DRAW_BIN
 msgid  "Program Module"
@@ -241,7 +241,7 @@ msgstr "ཀྲུང་པེའོ་ཧྥུའུ་ཧྭ་ Officeཡི�
 
 #: source/draw/module_draw.ulf#STR_DESC_MODULE_PRG_DRAW_HELP
 msgid  "Help about %PRODUCTNAME Draw"
-msgstr ""
+msgstr "ཀྲུང་པེའོ་ཧྥུའུ་ཧྭ་ Office 5.0ཡིས་འབྲེལ་ཡོད་ཀྲུང་པེའོ་ཧྥུའུ་ཧྭ་Officeཡི་རིས་འབྲི་བཟོ་བའི་གསལ་བཤད།"
 
 #: source/gnome/module_gnome.ulf#STR_NAME_MODULE_OPTIONAL_GNOME
 msgid  "GNOME Integration"
@@ -249,7 +249,7 @@ msgstr "GNOMEམཉམ་སྒྲིལ།"
 
 #: source/gnome/module_gnome.ulf#STR_DESC_MODULE_OPTIONAL_GNOME
 msgid  "System integration of %PRODUCTNAME %PRODUCTVERSION into Gnome Desktop Environment."
-msgstr ""
+msgstr "%PRODUCTNAME %PRODUCTVERSION ཡི་མ་ལག་དེ་ Gnome ཅོག་ངོས་ཀྱི་ཁོར་ཡུག་གི་འདུས་གྲུབ་བྱེད་པ།"
 
 #: source/graphicfilter/module_graphicfilter.ulf#STR_NAME_MODULE_OPTIONAL_GRFFLT
 msgid  "Graphics Filters"
@@ -377,7 +377,11 @@ msgstr "སྟོན་་འགྲེམས་ཟིན་བྲིས།"
 
 #: source/impress/folderitem_impress.ulf#STR_FI_TOOLTIP_IMPRESS
 msgid  "Create and edit presentations for slideshows, meeting and Web pages by using Impress."
-msgstr ""
+msgstr "ཀྲུང་པེའོ་ཧྥུ་ཧྭ་ཡི་ Officeམངོན་པའི་ཡིག་ཆ་གསར་བཟོ་དང་།  སྒྲོན་བཪྙན།  ཚོགས་འདུ།  དྲ་ངོས་ནང་སྤྱོད་པའི་མངོན་པའི་ཡིག་ཆ་བཅས་རྩོམ་སྒྲིག་བྱེད་རྒྱུ།"
+
+#: source/impress/registryitem_impress.ulf#STR_REG_VAL_NEW
+msgid  "&New"
+msgstr "གསར་བཟོ།(&N)"
 
 #: source/impress/registryitem_impress.ulf#STR_REG_VAL_SO60_SHOW
 msgid  "Show"
@@ -419,17 +423,13 @@ msgstr "Microsoft PowerPoint 97-2003 དཔེ་པང་།"
 msgid  "Microsoft PowerPoint Template"
 msgstr "Microsoft PowerPoint དཔེ་པང་།"
 
-#: source/impress/registryitem_impress.ulf#STR_REG_VAL_NEW
-msgid  "&New"
-msgstr "གསར་བཟོ།(&N)"
-
 #: source/impress/module_impress.ulf#STR_NAME_MODULE_PRG_IMPRESS
 msgid  "%PRODUCTNAME Impress"
 msgstr "%PRODUCTNAME འགྲེམས་སྟོན་བྱ་ཡིག"
 
 #: source/impress/module_impress.ulf#STR_DESC_MODULE_PRG_IMPRESS
 msgid  "Create and edit presentations for slideshows, meeting and Web pages by using %PRODUCTNAME Impress."
-msgstr ""
+msgstr "ཀྲུང་པེའོ་ཧྥུ་ཧྭ་ཡི་ Officeམངོན་པའི་ཡིག་ཆ་གསར་བཟོ་དང་།  སྒྲོན་བཪྙན།  ཚོགས་འདུ།  དྲ་ངོས་ནང་སྤྱོད་པའི་མངོན་པའི་ཡིག་ཆ་བཅས་རྩོམ་སྒྲིག་བྱེད་རྒྱུ།"
 
 #: source/impress/module_impress.ulf#STR_NAME_MODULE_PRG_IMPRESS_BIN
 msgid  "Program Module"
@@ -445,7 +445,7 @@ msgstr "%PRODUCTNAME འགྲེམས་སྟོན་བྱ་ཡིག་�
 
 #: source/impress/module_impress.ulf#STR_DESC_MODULE_PRG_IMPRESS_HELP
 msgid  "Help about %PRODUCTNAME Impress"
-msgstr ""
+msgstr "ཀྲུང་པེའོ་ཕུའུ་ཧྭ་Office རོགས་རམ་ཁྲོད་ཀྱི་ཀྲུང་པེའོ་ཕུའུ་ཧྭ་Office འགྲེམསསྟོན་ཡིག་དེབ་ཀྱི་གསལ་བཤད།"
 
 #: source/impress/module_ogltrans.ulf#STR_NAME_MODULE_OPTIONAL_OGLTRANS
 msgid  "OpenGL slide transitions for %PRODUCTNAME Impress"
@@ -461,7 +461,7 @@ msgstr "སྟབས་བདེའི་གློག་ཀླད་འཚམས
 
 #: source/javafilter/module_javafilter.ulf#STR_DESC_MODULE_OPTIONAL_JAVAFILTER
 msgid  "Text and spreadsheet filters to support import/export for Palm handheld or Pocket PC (Java required)."
-msgstr ""
+msgstr "Palmལག་ཐོག་གློག་ཀླད་དམ་ཡང་Pocket Pcའདྲེན་འཇུག་འདྲེན་འདོན་གྱི་ཡིག་ཆ་དང་གློག་རྡུལ་རེའུ་མིག་གདམ་ཆས་ལ་རྒྱབ་སྐྱོར་བྱེད་རྒྱུར་སྤྱོད་པ( Javaདགོས་པ)"
 
 #: source/javafilter/module_javafilter.ulf#STR_NAME_MODULE_OPTIONAL_JAVAFILTER_PALM
 msgid  "Palm"
@@ -485,7 +485,7 @@ msgstr "Pocket PC"
 
 #: source/javafilter/module_javafilter.ulf#STR_DESC_MODULE_OPTIONAL_JAVAFILTER_POCKETPC_WNT
 msgid  "Filters and ActiveSync support for Pocket PC compatible handhelds"
-msgstr ""
+msgstr "Pocket PC དང་འཚམས་པའི་འཆམ་མཐུན་ལག་ཐོགས་གློག་ཀླད་འགྱུར་ཆས་དང་ ActiveSync འགྱུར་ཆས་ཙམ་མ་ཟད་་དེའི་རྒྱབ་སྐྱོར།"
 
 #: source/javafilter/module_javafilter.ulf#STR_DESC_MODULE_OPTIONAL_JAVAFILTER_POCKETPC_UNIX
 msgid  "Filters for Pocket PC compatible handhelds."
@@ -565,7 +565,7 @@ msgstr "%PRODUCTNAME སྤྱི་འགྲོས།"
 
 #: source/math/module_math.ulf#STR_DESC_MODULE_PRG_MATH
 msgid  "Create and edit scientific formulas and equations by using %PRODUCTNAME Math."
-msgstr ""
+msgstr "ཀྲུང་པེའོ་ཧྥུ་ཧྭ་ཡི་ Officeསྤྱི་འགྲོས་བེད་སྤྱད་དེ་ཚན་རིག་གི་སྤྱི་འགྲོས་དང་མཉམ་བྱའི་རྩིས་ཕྲེང་བཟོ་རྒྱུ་དང་རྩོམ་སྒྲིག་བྱེད་རྒྱུ།"
 
 #: source/math/module_math.ulf#STR_NAME_MODULE_PRG_MATH_BIN
 msgid  "Program Module"
@@ -581,11 +581,15 @@ msgstr "ཀྲུང་པེའོ་ཧྥུའུ་ཧྭ་ Officeཡི�
 
 #: source/math/module_math.ulf#STR_DESC_MODULE_PRG_MATH_HELP
 msgid  "Help about %PRODUCTNAME Math"
-msgstr ""
+msgstr "ཀྲུང་པེའོ་ཧྥུའུ་ཧྭ་ Officeཡིས་འབྲེལ་ཡོད་ཀྲུང་པེའོ་ཧྥུའུ་ཧྭ་Officeཡི་སྤྱི་བགྲོས་ལ་རོགས་རམ་བྱེད་རྒྱུའི་གསལ་བཤད།"
 
 #: source/math/folderitem_math.ulf#STR_FI_TOOLTIP_MATH
 msgid  "Create and edit scientific formulas and equations by using Math."
-msgstr ""
+msgstr "སྤྱི་འགྲོས་བེད་སྤྱད་ནས་ཚན་རིག་དང་མཐུན་པའི་སྤྱི་འགྲོས་དང་མཉམ་བྱའི་རྩིས་ཕྲེང་གསར་བཟོའི་ཐོག་རྩོམ་སྒྲིག་བྱེད་པ།"
+
+#: source/math/registryitem_math.ulf#STR_REG_VAL_NEW
+msgid  "&New"
+msgstr "གསར་བཟོ།(&N)"
 
 #: source/math/registryitem_math.ulf#STR_REG_VAL_SO60_FORMULA
 msgid  "%SXWFORMATNAME %SXWFORMATVERSION Formula"
@@ -595,10 +599,6 @@ msgstr "%PRODUCTNAME %PRODUCTVERSION སྤྱི་འགྲོས།"
 msgid  "OpenDocument Formula"
 msgstr "%PRODUCTNAME སྤྱི་འགྲོས།"
 
-#: source/math/registryitem_math.ulf#STR_REG_VAL_NEW
-msgid  "&New"
-msgstr "གསར་བཟོ།(&N)"
-
 #: source/onlineupdate/module_onlineupdate.ulf#STR_NAME_MODULE_OPT_ONLINEUPDATE
 msgid  "Online Update"
 msgstr ""
@@ -606,6 +606,11 @@ msgstr ""
 #: source/onlineupdate/module_onlineupdate.ulf#STR_DESC_MODULE_OPT_ONLINEUPDATE
 msgid  "Get automatically notified when a new update of %PRODUCTNAME becomes available."
 msgstr ""
+
+#: source/ooo/registryitem_ooo.ulf#STR_REG_VAL_NEW
+#, fuzzy
+msgid  "&New"
+msgstr "གསར་བཟོ།(&N)"
 
 #: source/ooo/registryitem_ooo.ulf#STR_REG_VAL_INSTALL
 #, fuzzy
@@ -616,19 +621,14 @@ msgstr "བསྒར་འཇུག(&I)"
 msgid  "OpenOffice.org 1.1 Configuration File"
 msgstr ""
 
-#: source/ooo/registryitem_ooo.ulf#STR_REG_VAL_APPCAPABILITY_DESCRIPTION_OOO
-msgid  "office productivity suite based on Apache OpenOffice project"
-msgstr ""
-
-#: source/ooo/registryitem_ooo.ulf#STR_REG_VAL_NEW
-#, fuzzy
-msgid  "&New"
-msgstr "གསར་བཟོ།(&N)"
-
 #: source/ooo/registryitem_ooo.ulf#STR_REG_VAL_SO50_TEMPLATE_OOO
 #, fuzzy
 msgid  "StarOffice 5.0 Template"
 msgstr "StarOffice 5.0 དཔེ་པང་།"
+
+#: source/ooo/registryitem_ooo.ulf#STR_REG_VAL_APPCAPABILITY_DESCRIPTION_OOO
+msgid  "office productivity suite based on Apache OpenOffice project"
+msgstr ""
 
 #: source/ooo/module_systemint.ulf#STR_NAME_MODULE_OPTIONAL_SYSTEMINTEGRATION
 #, fuzzy
@@ -666,8 +666,9 @@ msgid  "Optional Components"
 msgstr "བྱ་རིམ་སྒྲིག་ལྷུ་གཞན་དག"
 
 #: source/ooo/module_ooo.ulf#STR_DESC_MODULE_OPTIONAL
+#, fuzzy
 msgid  "Common components and additional programs shared by all %PRODUCTNAME programs."
-msgstr ""
+msgstr "ཀྲུང་པེའོ་ཧྥུའུ་ཧྭ་Office ཡི་གོ་རིམ་མཉམ་སྤྱོད་གོ་རིམ་ལྷུ་ལག་དང་ཟུར་སྣོན་གོ་རིམ་ཡོད་ཚད།"
 
 #: source/ooo/module_ooo.ulf#STR_NAME_MODULE_DICTIONARIES
 msgid  "Dictionaries"
@@ -693,70 +694,64 @@ msgid  "Headless application support"
 msgstr "སྤྱོད་དུད་འབྲེལ་ངོས་ཀྱི་བཀོལ་སྤྱོད་རྒྱབ་སྐྱོར་མེད་པ།"
 
 #: source/ooo/module_headless.ulf#STR_DESC_MODULE_OPTIONAL_HEADLESS
+#, fuzzy
 msgid  "Component for enabling use %PRODUCTNAME without a display"
-msgstr ""
+msgstr "གསལ་མཐོང་མེད་པའི་སྒོ་ནས་ཀྲུང་པེ་ཕུའུ་ཧྭ་Officeལྷུ་སྒྲིག་ལ་བེད་སྤྱོད་བྱས་པ།"
 
 #: source/ooo/directory_ooo.ulf#STR_DIR_INFO
-#, fuzzy
 msgid  "Information"
 msgstr "འབྲེལ་ཡོད།"
 
 #: source/ooo/directory_ooo.ulf#STR_DIR_INTERNET
-#, fuzzy
 msgid  "Internet"
 msgstr "རྒྱལ་སྤྱིའི་ཨིན་སྦྲེལ་དྲ་རྒྱ།"
 
 #: source/ooo/directory_ooo.ulf#STR_DIR_JAVA
-#, fuzzy
 msgid  "Java"
 msgstr "Java"
 
 #: source/ooo/directory_ooo.ulf#STR_DIR_FREIZEIT
-#, fuzzy
 msgid  "Fun&More"
 msgstr "སྤྲོ་གསེང་རོལ་རྩེད།"
 
 #: source/ooo/directory_ooo.ulf#STR_DIR_STARONE
-#, fuzzy
 msgid  "%PRODUCTNAME API"
 msgstr "%PRODUCTNAME API"
 
 #: source/ooo/directory_ooo.ulf#STR_DIR_TOURISMUS
-#, fuzzy
 msgid  "Travel"
 msgstr "ཡུལ་སྐོར།"
 
 #: source/ooo/directory_ooo.ulf#STR_DIR_KAPITEL
-#, fuzzy
 msgid  "Chapters"
 msgstr "Chapters"
 
 #: source/ooo/directory_ooo.ulf#STR_DIR_DATEIEN
-#, fuzzy
 msgid  "Files"
 msgstr "ཡིག་ཆ།"
 
 #: source/ooo/folderitem_ooo.ulf#STR_FI_NAME_FROMTEMPLATE
-#, fuzzy
 msgid  "From Template"
 msgstr "དཔེ་པང་ནས་ཡོང་བ།"
 
 #: source/ooo/folderitem_ooo.ulf#STR_FI_NAME_OPENDOCUMENT
-#, fuzzy
 msgid  "Open Document"
 msgstr "ཡིག་ཚགས་ཁ་འབྱེད།"
 
 #: source/ooo/folderitem_ooo.ulf#STR_FI_TOOLTIP_SOFFICE
+#, fuzzy
 msgid  "The office productivity suite compatible to the open and standardized ODF document format. Supported by The Apache Software Foundation."
-msgstr ""
+msgstr "གཞུང་ལས་ཀྱི་ལེ་ལག་ཐོན་རྫས་འདི་སྒོ་དབྱེ་དང་ཚད་ལྡན་ཅན་གྱི་ODF ཡིག་ཚགས་ཀྱི་རྣམ་གཞག་དང་མཉམ་འདུས་ཐུབ། Sun Microsystemsཡི་རྒྱབ་སྐྱོར་བྱེད་ཀྱི་ཡོད།"
 
 #: source/ooo/module_langpack.ulf#STR_NAME_MODULE_ROOT_LANGPACK
+#, fuzzy
 msgid  "Additional language packs"
-msgstr ""
+msgstr "ལསྐད་ཆ་དང་འབྲེལ་བའི་དཔེ་པང་དང་།  དཔེ་གཞི།  རང་འགུལ་རིས་ཡིག་ཚོགས་སོགས་མཁོ་ཆས།"
 
 #: source/ooo/module_langpack.ulf#STR_DESC_MODULE_ROOT_LANGPACK
+#, fuzzy
 msgid  "Additional language packs"
-msgstr ""
+msgstr "ལསྐད་ཆ་དང་འབྲེལ་བའི་དཔེ་པང་དང་།  དཔེ་གཞི།  རང་འགུལ་རིས་ཡིག་ཚོགས་སོགས་མཁོ་ཆས།"
 
 #: source/ooo/module_langpack.ulf#STR_NAME_MODULE_LANGPACK_EN_US
 #, fuzzy
@@ -1334,8 +1329,9 @@ msgid  "Norwegian (Nynorsk)"
 msgstr "ནོར་ཝེའི་སྐད(ནི་ནོ་སེ་ཁེའི་སྐད)"
 
 #: source/ooo/module_langpack.ulf#STR_DESC_MODULE_LANGPACK_NN
+#, fuzzy
 msgid  "Installs Norwegian (Nynorsk) support in %PRODUCTNAME %PRODUCTVERSION"
-msgstr ""
+msgstr "%PRODUCTNAME %PRODUCTVERSION ནང་དུ་ནོར་ཝེལ་སྐད(ཉི་ནོ་སི་ཁེའི་སྐད)འཇུག་རྒྱུ།"
 
 #: source/ooo/module_langpack.ulf#STR_NAME_MODULE_LANGPACK_RM
 #, fuzzy
@@ -1661,8 +1657,9 @@ msgid  "Ndebele South"
 msgstr "ཨེན་ཏེ་པེ་ལའི་སྐད(ལྷོ་ཕྱོགས)"
 
 #: source/ooo/module_langpack.ulf#STR_DESC_MODULE_LANGPACK_NR
+#, fuzzy
 msgid  "Installs Ndebele South support in %PRODUCTNAME %PRODUCTVERSION"
-msgstr ""
+msgstr "%PRODUCTNAME %PRODUCTVERSION ནང་དུ་ཨེན་ཏེ་པེ་ལའི་སྐད(ལྷོ་ཕྱོགས)འཇུག་རྒྱུ།"
 
 #: source/ooo/module_langpack.ulf#STR_NAME_MODULE_LANGPACK_SS
 #, fuzzy
@@ -1700,8 +1697,9 @@ msgid  "Malay (Malaysian)"
 msgstr "མ་ལའེ་སྐད(མ་ལའེ་སི་ཡ)"
 
 #: source/ooo/module_langpack.ulf#STR_DESC_MODULE_LANGPACK_MS
+#, fuzzy
 msgid  "Installs Malay (Malaysian) support in %PRODUCTNAME %PRODUCTVERSION"
-msgstr ""
+msgstr "%PRODUCTNAME %PRODUCTVERSION ནང་དུ་མ་ལེ་ཡའི་སྐད་ཡིག(མ་ལེ་ཤི་ཡ)འཇུག་རྒྱུ།"
 
 #: source/ooo/module_langpack.ulf#STR_NAME_MODULE_LANGPACK_TG
 #, fuzzy
@@ -1779,8 +1777,9 @@ msgid  "English (United Kingdom)"
 msgstr "དབྱིན་སྐད(དབྱིན་ཇི)"
 
 #: source/ooo/module_langpack.ulf#STR_DESC_MODULE_LANGPACK_EN_GB
+#, fuzzy
 msgid  "Installs English (United Kingdom) support in %PRODUCTNAME %PRODUCTVERSION"
-msgstr ""
+msgstr "%PRODUCTNAME %PRODUCTVERSION ནང་དུ་དབྱིན་ཡིག(དབྱིན་ཇི)འཇུག་རྒྱུ།"
 
 #: source/ooo/module_langpack.ulf#STR_NAME_MODULE_LANGPACK_UR_IN
 #, fuzzy
@@ -1896,31 +1895,28 @@ msgid  "Installs Gaelic (Scotland) support in %PRODUCTNAME %PRODUCTVERSION"
 msgstr ""
 
 #: source/python/module_python_mailmerge.ulf#STR_NAME_MODULE_OPTIONAL_PYTHON_MAILMERGE
-#, fuzzy
 msgid  "E-mail Mailmerge"
 msgstr "གློག་རྡུལ་སྦྲག་བསྐུར་མཉམ་འདུས།"
 
 #: source/python/module_python_mailmerge.ulf#STR_DESC_MODULE_OPTIONAL_PYTHON_MAILMERGE
 msgid  "Module for %PRODUCTNAME E-mail Mailmerge feature"
-msgstr ""
+msgstr "ཀྲུང་པེའོ་ཧྥུའུ་ཧྭ་ Officeཡི་གློག་རྡུལ་སྦྲག་བཀུརམཉམ་སྒྲིལ་བྱེད་ནུས་དཔེ་དུམ།"
 
 #: source/python/module_python.ulf#STR_NAME_MODULE_OPTIONAL_PYTHON
-#, fuzzy
 msgid  "Python-UNO Bridge"
 msgstr "Python-UNO Bridge"
 
 #: source/python/module_python.ulf#STR_DESC_MODULE_OPTIONAL_PYTHON
 msgid  "Adds the ability to automate %PRODUCTNAME with the python scripting language. See http://udk.openoffice.org/python/python-bridge.html for a complete documentation."
-msgstr ""
+msgstr "འཁྲབ་གཞུང་སྐད་རིགས་ཀྱིས་ཀྲུང་པེའོ་པུའུ་ཧྭ་Officeརང་འགུལ་ཅན་གྱི་ཐག་གཅོད་བྱེད་ཆོག"
 
 #: source/quickstart/module_quickstart.ulf#STR_NAME_MODULE_OPTIONAL_QUICKSTART
-#, fuzzy
 msgid  "Quickstarter"
 msgstr "འགུལ་སློང་བྱེད་མགྱོགས་སུ་གཏོང་བ།"
 
 #: source/quickstart/module_quickstart.ulf#STR_DESC_MODULE_OPTIONAL_QUICKSTART
 msgid  "Loads basic components on system start to accelerate start up time of %PRODUCTNAME %PRODUCTVERSION."
-msgstr ""
+msgstr "བརྒྱུད་ཁོངས་སྒུལ་སློང་བྱེད་སྐབས་གཞི་རྩའི་ལྷུ་ཆས་འཇུག་་ནས་ཀྲུང་པེ་ཕུའུ་ཧྭ་Office %PRODUCTVERSIONསྒུལ་སློང་ཇེ་མགྱོགས་སུ་གཏོང་དགོས།"
 
 #: source/sdkoo/module_sdkoo.ulf#STR_NAME_MODULE_OPTIONAL_SDKOO
 msgid  "Software Development Kit (SDK)"
@@ -1931,137 +1927,113 @@ msgid  "The SDK provides all necessary tools, examples and documentation to prog
 msgstr ""
 
 #: source/winexplorerext/module_winexplorerext.ulf#STR_NAME_MODULE_OPTIONAL_WINDOWS_EXPLORER_EXTENSIONS
-#, fuzzy
 msgid  "Windows Explorer Extension"
 msgstr "Windows ཐོན་ཁུངས་དོ་དམ་ཆས་རྒྱ་སྐྱེད།"
 
 #: source/winexplorerext/module_winexplorerext.ulf#STR_DESC_MODULE_OPTIONAL_WINDOWS_EXPLORER_EXTENSIONS
 msgid  "Enables the Microsoft Windows Explorer to show information about %PRODUCTNAME documents, such as thumbnail previews."
-msgstr ""
+msgstr "Microsoft Windows  ཡི་ཐོན་ཁུངས་དོ་དམ་ཡོ་ཆས་སྤྱད་དེ་ཀྲུང་པའོ་ཕུའུ་ཧ་Office  ཡིག་ཆའི་ཆ་འཕྲིན་མངོན་སྟོན་བྱེད་རྒྱུ། དཔེར་ན་བསྡུས་རིས་ལ་སྔོན་ལྟ་བྱེད་རྒྱུ།"
 
 #: source/writer/folderitem_writer.ulf#STR_FI_NAME_HTMLDOKUMENT
-#, fuzzy
 msgid  "HTML Document"
 msgstr "HTMLཡིག་ཚགས།"
 
 #: source/writer/folderitem_writer.ulf#STR_FI_NAME_TEXTDOKUMENT
-#, fuzzy
 msgid  "Text Document"
 msgstr "ཡིག་དེབ་ཀྱི་ཡིག་ཚགས།"
 
 #: source/writer/folderitem_writer.ulf#STR_FI_TOOLTIP_WRITER
 msgid  "Create and edit text and graphics in letters, reports, documents and Web pages by using Writer."
-msgstr ""
+msgstr "ཀྲུང་པེའོ་ཧྥུ་ཧྭ་ཡི་ Officeཡིག་གེ་ཐག་གཅོད་གསར་བཟོ་དང་ཡིག་བསྐུར་དང་།   རེའུ་མིག་ཐོ་གཞུང་།  ཡིག་ཆ།  དྲ་ངོས་ནང་གི་རིས་དབྱིབས་བཅས་རྩོམ་སྒྲིག་བྱེད་རྒྱུ།"
+
+#: source/writer/registryitem_writer.ulf#STR_REG_VAL_NEW
+msgid  "&New"
+msgstr "གསར་བཟོ།(&N)"
 
 #: source/writer/registryitem_writer.ulf#STR_REG_VAL_SO60_TEXT
-#, fuzzy
 msgid  "%SXWFORMATNAME %SXWFORMATVERSION Text Document"
 msgstr "%PRODUCTNAME %PRODUCTVERSIONཡི་ཡིག་འབྲུ་སྒྲིག་གཅོད་ཡིག་ཚགས།"
 
 #: source/writer/registryitem_writer.ulf#STR_REG_VAL_SO60_MASTERDOC
-#, fuzzy
 msgid  "%SXWFORMATNAME %SXWFORMATVERSION Master Document"
 msgstr "%PRODUCTNAME %PRODUCTVERSION ཡི་གཙོ་རྐང་ཚོད་འཛིན་ཡིག་ཚགས།"
 
 #: source/writer/registryitem_writer.ulf#STR_REG_VAL_SO60_WRITER_TEMPLATE
-#, fuzzy
 msgid  "%SXWFORMATNAME %SXWFORMATVERSION Text Document Template"
 msgstr "%PRODUCTNAME %PRODUCTVERSION ཡི་གེ་སྒྲིག་གཅོད་ཀྱི་ཡིག་ཚགས་དཔེ་པང་།"
 
 #: source/writer/registryitem_writer.ulf#STR_REG_VAL_OO_WRITER
-#, fuzzy
 msgid  "OpenDocument Text"
 msgstr "%PRODUCTNAME ཡི་ཡིག་འབྲུ་སྒྲིག་གཅོད་ཡིག་ཚགས།"
 
 #: source/writer/registryitem_writer.ulf#STR_REG_VAL_OO_WRITER_TEMPLATE
-#, fuzzy
 msgid  "OpenDocument Text Template"
 msgstr "%PRODUCTNAME ཡི་གེ་སྒྲིག་གཅོད་ཀྱི་ཡིག་ཚགས་དཔེ་པང་།"
 
 #: source/writer/registryitem_writer.ulf#STR_REG_VAL_OO_MASTERDOC
-#, fuzzy
 msgid  "OpenDocument Master Document"
 msgstr "%PRODUCTNAME ཡིས་གཙོ་འཛིན་ཡིག་ཚགས།"
 
 #: source/writer/registryitem_writer.ulf#STR_REG_VAL_OO_WEBDOC
-#, fuzzy
 msgid  "HTML Document Template"
 msgstr "HTMLཡིག་ཚགས་དཔེ་པང་།"
 
 #: source/writer/registryitem_writer.ulf#STR_REG_VAL_MS_WORD_DOCUMENT_OLD
-#, fuzzy
 msgid  "Microsoft Word 97-2003 Document"
 msgstr "Microsoft Word 97-2003ཡིག་ཚགས།"
 
 #: source/writer/registryitem_writer.ulf#STR_REG_VAL_MS_WORD_DOCUMENT
-#, fuzzy
 msgid  "Microsoft Word Document"
 msgstr "Microsoft Word ཡིག་ཚགས།"
 
 #: source/writer/registryitem_writer.ulf#STR_REG_VAL_MS_WORD_TEMPLATE_OLD
-#, fuzzy
 msgid  "Microsoft Word 97-2003 Template"
 msgstr "Microsoft Word 97-2003 དཔེ་པང་།"
 
 #: source/writer/registryitem_writer.ulf#STR_REG_VAL_MS_WORD_TEMPLATE
-#, fuzzy
 msgid  "Microsoft Word Template"
 msgstr "Microsoft Word དཔེ་པང་།"
 
 #: source/writer/registryitem_writer.ulf#STR_REG_VAL_MS_RTF_DOCUMENT
-#, fuzzy
 msgid  "Rich Text Document"
 msgstr "RTFཡིག་རྐྱང་ཡིག་ཚགས།"
 
-#: source/writer/registryitem_writer.ulf#STR_REG_VAL_NEW
-#, fuzzy
-msgid  "&New"
-msgstr "གསར་བཟོ།(&N)"
-
 #: source/writer/module_writer.ulf#STR_NAME_MODULE_PRG_WRT
-#, fuzzy
 msgid  "%PRODUCTNAME Writer"
 msgstr "%PRODUCTNAMEཡི་གེ་སྒྲིག་གཅོད།"
 
 #: source/writer/module_writer.ulf#STR_DESC_MODULE_PRG_WRT
 msgid  "Create and edit text and graphics in letters, reports, documents and Web pages by using %PRODUCTNAME Writer."
-msgstr ""
+msgstr "ཀྲུང་པེའོ་ཧྥུ་ཧྭ་ཡི་ Officeཡིག་གེ་ཐག་གཅོད་གསར་བཟོ་དང་ཡིག་བསྐུར་དང་།   རེའུ་མིག་ཐོ་གཞུང་།  ཡིག་ཆ།  དྲ་ངོས་ནང་གི་རིས་དབྱིབས་བཅས་རྩོམ་སྒྲིག་བྱེད་རྒྱུ།"
 
 #: source/writer/module_writer.ulf#STR_NAME_MODULE_PRG_WRT_BIN
-#, fuzzy
 msgid  "Program Module"
 msgstr "བྱ་རིམ་གྱི་དཔེ་དུམ།"
 
 #: source/writer/module_writer.ulf#STR_DESC_MODULE_PRG_WRT_BIN
-#, fuzzy
 msgid  "The application %PRODUCTNAME Writer"
 msgstr "ཉེར་སྤྱོད་གོ་རིམ་ཀྲུང་པའོ་ཕུའུ་ཧྭ་Officeཡི་གེ་སྒྲིག་གཅོད།"
 
 #: source/writer/module_writer.ulf#STR_NAME_MODULE_PRG_WRT_HELP
-#, fuzzy
 msgid  "%PRODUCTNAME Writer Help"
 msgstr "ཀྲུང་པེའོ་ཧྥུའུ་ཧྭ་ Officeཡི་གེ་སྒྲིག་གཅོད་ཀྱི་རོགས་རམ།"
 
 #: source/writer/module_writer.ulf#STR_DESC_MODULE_PRG_WRT_HELP
 msgid  "Help about %PRODUCTNAME Writer"
-msgstr ""
+msgstr "ཀྲུང་པེའོ་ཕུའུ་ཧྭ་Office %PRODUCTVERSION ཡི་གེ་སྒྲིག་གཅོད་ཡིག་ཚགས་ཀྱི་དཔེ་པང་།"
 
 #: source/writer/module_writer.ulf#STR_NAME_MODULE_PRG_WRT_WRITER2LATEX
-#, fuzzy
 msgid  "LaTeX Export"
 msgstr "LaTeXཕྱིར་འདྲེན།"
 
 #: source/writer/module_writer.ulf#STR_DESC_MODULE_PRG_WRT_WRITER2LATEX
-#, fuzzy
 msgid  "LaTeX export filter for Writer documents."
 msgstr "Writer ཡིག་ཚགས་ LaTeX ནས་འཚག་ཆས་ཕྱིར་འདྲེན་བྱེད།"
 
 #: source/xsltfilter/module_xsltfilter.ulf#STR_NAME_MODULE_OPTIONAL_XSLTFILTERSAMPLES
-#, fuzzy
 msgid  "XSLT Sample Filters"
 msgstr "XSLTདཔེ་སྟོན་འཚག་ཆས། "
 
 #: source/xsltfilter/module_xsltfilter.ulf#STR_DESC_MODULE_OPTIONAL_XSLTFILTERSAMPLES
-#, fuzzy
 msgid  "XSLT Sample Filters"
 msgstr "XSLTདཔེ་སྟོན་འཚག་ཆས། "

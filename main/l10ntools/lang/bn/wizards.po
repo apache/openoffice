@@ -49,7 +49,7 @@ msgstr "রূপান্তর করুন (~C)"
 
 #: source/euro/euro.src#STEP_ZERO + 4.String.Text
 msgid  "Note: Currency amounts from external links and currency conversion factors in formulas cannot be converted."
-msgstr ""
+msgstr "নোট: সূত্রের বাহ্যিক লিংক থেকে মুদ্রার পরিমান এবং মুদ্রা রূপান্তর সম্পর্কিত বিষয়সমূহ রূপান্তর করা যাবে না।"
 
 #: source/euro/euro.src#STEP_ZERO + 5.String.Text
 msgid  "First, unprotect all sheets."
@@ -153,7 +153,7 @@ msgstr "কক্ষের খসড়াগুলোর রূপান্তর�
 
 #: source/euro/euro.src#STATUSLINE + 2.String.Text
 msgid  "Registration of the relevant ranges: Sheet %1Number%1 of %2TotPageCount%2"
-msgstr ""
+msgstr "প্রাসঙ্গিক সীমার নথিভুক্তকরণ: পাতা %1Number%1 , মোট %2TotPageCount%2"
 
 #: source/euro/euro.src#STATUSLINE + 3.String.Text
 msgid  "Entry of the ranges to be converted..."
@@ -221,11 +221,11 @@ msgstr "পাতা অরক্ষিত করা যাবে না।"
 
 #: source/euro/euro.src#MESSAGES + 13.String.Text
 msgid  "The Wizard cannot edit this document as cell formats cannot be modified in documents containing protected spreadsheets."
-msgstr ""
+msgstr "উইজার্ড এই নথি সম্পাদন করতে পারবেনা কারণ যেসব নথিতে রক্ষিত স্প্রেডশিট আছে তাতে কক্ষের বিন্যাসন পরিবর্তন করা যাচ্ছে না।"
 
 #: source/euro/euro.src#MESSAGES + 14.String.Text
 msgid  "Please note that the Euro Converter will, otherwise, not be able to edit this document!"
-msgstr ""
+msgstr "মনে রাখবেন, ইউরো রুপান্তরক পারবে, অন্যথায় এই নথি সম্পাদন করতে পারবেনা!"
 
 #: source/euro/euro.src#MESSAGES + 15.String.Text
 msgid  "Please choose a currency to be converted first!"
@@ -337,7 +337,7 @@ msgstr "এই নথিরর মুদ্রার সেট ইউরোপ�
 
 #: source/euro/euro.src#CURRENCIES + 17.String.Text
 msgid  "The language set for your operating system is not a language of the European Monetary Union."
-msgstr ""
+msgstr "আপনার অপারেটিং সিস্টেমের ভাষা সেট ইউরোপীয় মানিটারি ইউনিয়নের কোনো ভাষা নয়।"
 
 #: source/euro/euro.src#STEP_LASTPAGE.String.Text
 msgid  "Progress"
@@ -361,35 +361,35 @@ msgstr "পাতাটি সবসময় অরক্ষিত থাকে
 
 #: source/formwizard/dbwizres.src#RID_COMMON_START + 0.String.Text
 msgid  "The directory '%1' could not be created.<BR>There may not be enough space left on your hard disk."
-msgstr ""
+msgstr "'%1' নির্দেশিকাটি তৈরী করা যায়নি।<BR>সম্ভবত আপনার হার্ডডিস্কে পর্যাপ্ত পরিমাণ জায়গা অবশিষ্ট নাই।"
 
 #: source/formwizard/dbwizres.src#RID_COMMON_START + 1.String.Text
 msgid  "The text document could not be created.<BR>Please check if the module 'PRODUCTNAME Writer' is installed."
-msgstr ""
+msgstr "পাঠ নথি তৈরী করা যায়নি।<BR>অনুগ্রহ করে 'PRODUCTNAME Writer' মডিউলটি সংস্থাপিত আছে কিনা পরীক্ষা করুন।"
 
 #: source/formwizard/dbwizres.src#RID_COMMON_START + 2.String.Text
 msgid  "The spreadsheet could not be created.<BR>Please check if the module 'PRODUCTNAME Calc' is installed."
-msgstr ""
+msgstr "স্প্রেডশীটটি তৈরী করা যায়নি।<BR>অনুগ্রহ করে 'PRODUCTNAME Calc' মডিউলটি সংস্থাপিত আছে কিনা পরীক্ষা করুন।"
 
 #: source/formwizard/dbwizres.src#RID_COMMON_START + 3.String.Text
 msgid  "The presentation could not be created.<BR>Please check if the module 'PRODUCTNAME Impress' is installed."
-msgstr ""
+msgstr "উপস্থাপনাটি তৈরী করা যায়নি।<BR>অনুগ্রহ করে 'PRODUCTNAME  Impress' মডিউলটি সংস্থাপিত আছে কিনা পরীক্ষা করুন।"
 
 #: source/formwizard/dbwizres.src#RID_COMMON_START + 4.String.Text
 msgid  "The drawing could not be created.<BR>Please check if the module 'PRODUCTNAME Draw' is installed."
-msgstr ""
+msgstr "অঙ্কনটি তৈরী করা যায়নি।<BR>অনুগ্রহ করে 'PRODUCTNAME  Draw' মডিউলটি সংস্থাপিত আছে কিনা পরীক্ষা করুন।"
 
 #: source/formwizard/dbwizres.src#RID_COMMON_START + 5.String.Text
 msgid  "The formula could not be created.<BR>Please check if the module 'PRODUCTNAME Math' is installed."
-msgstr ""
+msgstr "সূত্রটি তৈরী করা যায়নি।<BR>অনুগ্রহ করে 'PRODUCTNAME  Math' মডিউলটি সংস্থাপিত আছে কিনা পরীক্ষা করুন।"
 
 #: source/formwizard/dbwizres.src#RID_COMMON_START + 6.String.Text
 msgid  "The files required could not be found.<BR>Please start the %PRODUCTNAME Setup and choose 'Repair'."
-msgstr ""
+msgstr "প্রয়োজনীয় ফাইলসমূহ খুঁজে পাওয়া যায়নি।<BR>অনুগ্রহ করে %PRODUCTNAME এর বিন্যাসন চালু করুন এবং 'মেরামত' পছন্দ করুন।"
 
 #: source/formwizard/dbwizres.src#RID_COMMON_START + 7.String.Text
 msgid  "The file '<PATH>' already exists.<BR><BR>Would you like to overwrite the existing file?"
-msgstr ""
+msgstr "ফাইলটি '<PATH>' ইতোমধ্যে বিদ্যমান।<BR><BR>আপনি কি বিদ্যমান ফাইলটি উপরিলিখন করতে চান?"
 
 #: source/formwizard/dbwizres.src#RID_COMMON_START + 8.String.Text
 msgid  "Yes"
@@ -445,7 +445,7 @@ msgstr "<current_date> এ <wizard_name> এর মাধ্যমে খসড�
 
 #: source/formwizard/dbwizres.src#RID_COMMON_START + 21.String.Text
 msgid  "The wizard could not be run, because important files were not found.\nUnder 'Tools - Options - %PRODUCTNAME - Paths' click the 'Default' button to reset the paths to the original default settings.\nThen run the wizard again."
-msgstr ""
+msgstr "উইজার্ডটি চালু করা যায়নি, কারণ জরুরী ফাইলগুলো পাওয়া যাওনি।\nমূল পূর্বনির্ধারিত বিন্যাসনসমূহের পথ পুনঃবিন্যাস করতে 'টুলসমূহ - পছন্দসমূহ - %PRODUCTNAME - পথসমূহ' থেকে 'পূর্বনির্ধারিত' বোতামটি ক্লিক করুন।\nতারপর উইজার্ড চালান।"
 
 #: source/formwizard/dbwizres.src#RID_DB_COMMON_START + 0.String.Text
 msgid  "C~reate"
@@ -473,7 +473,7 @@ msgstr "সারণীর নাম (~T)"
 
 #: source/formwizard/dbwizres.src#RID_DB_COMMON_START + 6.String.Text
 msgid  "An error occurred while running the wizard. The wizard will be terminated."
-msgstr ""
+msgstr "উইজার্ডটি চালানোর সময় একটি সমস্যা হয়েছে। উইজার্ডটি বন্ধ হয়ে যাবে।"
 
 #: source/formwizard/dbwizres.src#RID_DB_COMMON_START + 14.String.Text
 msgid  "No connection to the database could be established."
@@ -553,11 +553,11 @@ msgstr "ফর্মের ক্ষেত্রগুলো (~t)"
 
 #: source/formwizard/dbwizres.src#RID_DB_FORM_WIZARD_START + 2.String.Text
 msgid  "Binary fields are always listed and selectable from the left list.\nIf possible, they are interpreted as images."
-msgstr ""
+msgstr "বাইনারী ক্ষেত্রগুলো সবসময় তালিকাভূক্ত থাকে এবং বামের তালিকা থেকে নির্বাচন করার যোগ্য।\nযদি সম্ভব হয়, সেগুলো ছবি হিসেবে ধরা হয়।"
 
 #: source/formwizard/dbwizres.src#RID_DB_FORM_WIZARD_START + 3.String.Text
 msgid  "A subform is a form that is inserted in another form.\nUse subforms to show data from tables or queries with a one-to-many relationship."
-msgstr ""
+msgstr "একটি উপফর্ম এমন একটি ফর্ম যা অন্য একটি ফর্মে প্রবেশ করা হয়েছে।\nসারণী বা জিজ্ঞাসা থেকে এক-হতে-একাধিক সম্পর্কযুক্ত উপাত্ত দেখাতে উপফর্ম ব্যবহার করুন।"
 
 #: source/formwizard/dbwizres.src#RID_DB_FORM_WIZARD_START + 4.String.Text
 msgid  "~Add Subform"
@@ -593,7 +593,7 @@ msgstr "ফর্মের ক্ষেত্রগুলো"
 
 #: source/formwizard/dbwizres.src#RID_DB_FORM_WIZARD_START + 19.String.Text
 msgid  "The join '<FIELDNAME1>' and '<FIELDNAME2>' has been selected twice.\nBut joins may only be used once."
-msgstr ""
+msgstr "সংযুক্ত '<FIELDNAME1>' এবং '<FIELDNAME2>' দুবার নির্বাচিত হয়েছে।\nকিন্তু সংযুক্ত শুধুমাত্র একবার ব্যবহার্য।"
 
 #: source/formwizard/dbwizres.src#RID_DB_FORM_WIZARD_START + 20.String.Text
 msgid  "~First joined subform field"
@@ -805,7 +805,7 @@ msgstr "ফর্মের নাম নির্ধারন করুন"
 
 #: source/formwizard/dbwizres.src#RID_DB_FORM_WIZARD_START + 98.String.Text
 msgid  "A form with the name '%FORMNAME' already exists.\nChoose another name."
-msgstr ""
+msgstr "'%FORMNAME' নামের ফর্ম ইতোমধ্যে বিদ্যমান।\nঅন্য একটি নাম পছন্দ করুন।"
 
 #: source/formwizard/dbwizres.src#RID_DB_QUERY_WIZARD_START + 0.String.Text
 msgid  "Query Wizard"
@@ -1097,15 +1097,15 @@ msgstr "অবলোকন"
 
 #: source/formwizard/dbwizres.src#RID_DB_QUERY_WIZARD_START + 88.String.Text
 msgid  "A field that has not been assigned an aggregate function must be used in a group."
-msgstr ""
+msgstr "যে ক্ষেত্রে মোট ফাংশন নির্ধারন করা হয়নি তা অবশ্যই শ্রেণীতে ব্যবহৃত হবে।"
 
 #: source/formwizard/dbwizres.src#RID_DB_QUERY_WIZARD_START + 89.String.Text
 msgid  "The condition '<FIELDNAME> <LOGICOPERATOR> <VALUE>' was chosen twice. Each condition can only be chosen once"
-msgstr ""
+msgstr "'<FIELDNAME> <LOGICOPERATOR> <VALUE>' শর্ত দুইবার পছন্দ করা হয়েছে। প্রতিটি শর্ত একবার ব্যবহার করা যেতে পারে "
 
 #: source/formwizard/dbwizres.src#RID_DB_QUERY_WIZARD_START + 90.String.Text
 msgid  "The aggregate function <FUNCTION> has been assigned twice to the fieldname '<NUMERICFIELD>'."
-msgstr ""
+msgstr "মোট ফাংশন <FUNCTION> '<NUMERICFIELD>' ক্ষেত্রনামে দুইবার বরাদ্দ করা হয়েছে।"
 
 #: source/formwizard/dbwizres.src#RID_DB_QUERY_WIZARD_START + 91.String.Text
 msgid  ", "
@@ -1321,11 +1321,11 @@ msgstr "'<REPORTFORM>' ফর্ম বিদ্যমান নয়।"
 
 #: source/formwizard/dbwizres.src#RID_DB_REPORT_WIZARD_START + 65.String.Text
 msgid  "The query with the statement <BR>'<STATEMENT>' <BR> could not be run. <BR> Check your data source."
-msgstr ""
+msgstr "<BR>'<STATEMENT>' <BR> বিবৃতি যুক্ত জিজ্ঞাসা চালানো যায়নি। <BR> আপনার উপাত্ত উৎস পরীক্ষা করুন।"
 
 #: source/formwizard/dbwizres.src#RID_DB_REPORT_WIZARD_START + 66.String.Text
 msgid  "The following hidden control in the form '<REPORTFORM>' could not be read: '<CONTROLNAME>'."
-msgstr ""
+msgstr "'<REPORTFORM>' ফর্মের নিম্নবর্ণিত লুকায়িত নিয়ন্ত্রণ পাঠ করা যায়নি: '<CONTROLNAME>'।"
 
 #: source/formwizard/dbwizres.src#RID_DB_REPORT_WIZARD_START + 67.String.Text
 msgid  "Importing data..."
@@ -1349,7 +1349,7 @@ msgstr "ক্ষেত্র"
 
 #: source/formwizard/dbwizres.src#RID_DB_REPORT_WIZARD_START + 72.String.Text
 msgid  "An error occurred in the wizard.<BR>The template '%PATH' could be erroneous.<BR>Either the required sections or tables do not exist or exist under the wrong name.<BR>See the Help for more detailed information.<BR>Please select another template."
-msgstr ""
+msgstr "উইজার্ডে একটি ত্রুটি দেখা দিয়েছে।<BR> খসড়ার '%PATH' ত্রুটিযুক্ত হতে পারে।<BR> শাখার বা সারণীর নাম হয় বিদ্যমান নয় বা ভূল নামে বিদ্যমান।<BR> আরও বিস্তারিত তথ্যের জন্য সহায়তা দেখুন।<BR> অনুগ্রহ করে অন্য খসড়া নির্বাচন করুন।"
 
 #: source/formwizard/dbwizres.src#RID_DB_REPORT_WIZARD_START + 73.String.Text
 msgid  "There is an invalid user field in a table."
@@ -1357,15 +1357,15 @@ msgstr "সারণীতে অবৈধ ব্যবহারকারীর 
 
 #: source/formwizard/dbwizres.src#RID_DB_REPORT_WIZARD_START + 74.String.Text
 msgid  "The sort criterium '<FIELDNAME>' was chosen twice. Each criterium can only be chosen once."
-msgstr ""
+msgstr "সাজানোর শর্তাবলীর '<FIELDNAME>' দুইবার পছন্দ করা হয়েছে। প্রতিটি শর্ত শুধুমাত্র একবার পছন্দ করা যায়।"
 
 #: source/formwizard/dbwizres.src#RID_DB_REPORT_WIZARD_START + 75.String.Text
 msgid  "Note: The dummy text will be replaced by data from the database when the report is created."
-msgstr ""
+msgstr "নোট: প্রতিবেদন তৈরি করার সময় উপাত্তধারের উপাত্ত দ্বারা নমুনা পাঠ প্রতিস্থাপিত হবে।"
 
 #: source/formwizard/dbwizres.src#RID_DB_REPORT_WIZARD_START + 76.String.Text
 msgid  "A report '%REPORTNAME' already exists in the database. Please assign another name."
-msgstr ""
+msgstr "উপাত্তধারের '%REPORTNAME' প্রতিবেদন ইতোমধ্যে বিদ্যমান। অনুগ্রহ করে অন্য একটি বরাদ্দ করুন।"
 
 #: source/formwizard/dbwizres.src#RID_DB_REPORT_WIZARD_START + 78.String.Text
 msgid  "How do you want to proceed after creating the report?"
@@ -1465,7 +1465,7 @@ msgstr "সারণী তৈরি করুন"
 
 #: source/formwizard/dbwizres.src#RID_DB_TABLE_WIZARD_START + 14.String.Text
 msgid  "This wizard helps you to create a table for your database. After selecting a table category and a sample table, choose the fields you want to include in your table. You can include fields from more than one sample table."
-msgstr ""
+msgstr "এই উইজার্ডটি আপনাকে আপনার উপাত্তধারের জন্য একটি সারণী তৈরী করতে সহায়তা করে। একটি সারণীর ধরন ও নমুনা সারণী নির্বাচন করার পর, আপনার সারণীতে অন্তর্ভুক্ত করতে চান এমন ক্ষেত্রসমূহ পছন্দ করুন। আপনি একাধিক নমুনা সারণী হতে ক্ষেত্রসমূহ অন্তর্ভুক্ত করতে পারেন।"
 
 #: source/formwizard/dbwizres.src#RID_DB_TABLE_WIZARD_START + 15.String.Text
 msgid  "Ca~tegory"
@@ -1509,7 +1509,7 @@ msgstr "নির্বাচিত ক্ষেত্র(~S)"
 
 #: source/formwizard/dbwizres.src#RID_DB_TABLE_WIZARD_START + 26.String.Text
 msgid  "A primary key uniquely identifies each record in a database table. Primary keys ease the linking of information in separate tables, and it is recommended that you have a primary key in every table. Without a primary key, it will not be possible to enter data into this table."
-msgstr ""
+msgstr "একটি প্রাথমিক কী উপাত্তধার সারণীর প্রতিটি রেকর্ডকে পৃথকভাবে শনাক্ত করে। প্রাথমিক কী তথ্যসমূহকে পৃথক সারণীতে সংযুক্তকরণ সহজ করে, এবং পরামর্শ দেওয়া হচ্ছে যে আপনার প্রতিটি সারণীতে প্রাথমিক কী থাকবে। প্রাথমিক কী ব্যতিত, এই সারণীতে উপাত্ত প্রবেশ করানো সম্ভব হবে না।"
 
 #: source/formwizard/dbwizres.src#RID_DB_TABLE_WIZARD_START + 27.String.Text
 msgid  "~Create a primary key"
@@ -1545,7 +1545,7 @@ msgstr "আপনার সারনীর কি নাম দিতে চা�
 
 #: source/formwizard/dbwizres.src#RID_DB_TABLE_WIZARD_START + 35.String.Text
 msgid  "Congratulations. You have entered all the information needed to create your table."
-msgstr ""
+msgstr "অভিনন্দন। আপনি আপনার সারনী তৈরির যাবতীয় তথ্য প্রবেশ করেছেন।"
 
 #: source/formwizard/dbwizres.src#RID_DB_TABLE_WIZARD_START + 36.String.Text
 msgid  "What do you want to do next?"
@@ -1569,11 +1569,11 @@ msgstr "আপনার তৈরিকৃত সারণী খোলা স�
 
 #: source/formwizard/dbwizres.src#RID_DB_TABLE_WIZARD_START + 41.String.Text
 msgid  "The table name '%TABLENAME' contains a character ('%SPECIALCHAR') that might not be supported by the database."
-msgstr ""
+msgstr "'%TABLENAME' নামের সারণীটি এমন বিশেষ বর্ণচিহ্ন ('%SPECIALCHAR') ধারণ করে যা উপাত্তধার দ্বারা সমর্থিত নাও হতে পারে। "
 
 #: source/formwizard/dbwizres.src#RID_DB_TABLE_WIZARD_START + 42.String.Text
 msgid  "The field name '%FIELDNAME' contains a special character ('%SPECIALCHAR') that might not be supported by the database."
-msgstr ""
+msgstr "'%FIELDNAME' নামের ক্ষেত্রটি এমন বিশেষ বর্ণচিহ্ন ('%SPECIALCHAR') ধারণ করে যা উপাত্তধার দ্বারা সমর্থিত নাও হতে পারে। "
 
 #: source/formwizard/dbwizres.src#RID_DB_TABLE_WIZARD_START + 43.String.Text
 msgid  "Field"
@@ -1593,11 +1593,11 @@ msgstr "নির্বাচিত ক্ষেত্র অপসারণ ক
 
 #: source/formwizard/dbwizres.src#RID_DB_TABLE_WIZARD_START + 47.String.Text
 msgid  "The field cannot be inserted because this would exceed the maximum number of %COUNT possible fields in the database table"
-msgstr ""
+msgstr "ক্ষেত্রটি প্রবেশ করা সম্ভব নয় কারণ এটি উপাত্তধার সারণীর সর্বোচ্চ %COUNT সংখ্যক সম্ভাব্য ক্ষেত্রসমূহ অতিক্রম করবে।"
 
 #: source/formwizard/dbwizres.src#RID_DB_TABLE_WIZARD_START + 48.String.Text
 msgid  "The name '%TABLENAME' already exists.\nPlease enter another name."
-msgstr ""
+msgstr "'%TABLENAME' নামটি ইতোমধ্যে বিদ্যমান।\nঅনুগ্রহ করেঅন্য নাম প্রবেশ করান।"
 
 #: source/formwizard/dbwizres.src#RID_DB_TABLE_WIZARD_START + 49.String.Text
 msgid  "Catalog of the table"
@@ -1728,915 +1728,744 @@ msgid  "Page design"
 msgstr "পৃষ্ঠা নকশা"
 
 #: source/formwizard/dbwizres.src#RID_LETTERWIZARDDIALOG_START + 30.String.Text
-#, fuzzy
 msgid  "Page design"
-msgstr "পৃষ্ঠা নকশা "
+msgstr "পৃষ্ঠা নকশা"
 
 #: source/formwizard/dbwizres.src#RID_LETTERWIZARDDIALOG_START + 31.String.Text
 msgid  "This wizard helps you to create a letter template. You can then use the template as the basis for writing letters as often as desired."
-msgstr ""
+msgstr "এই উইজার্ডটি একটি পত্রের খসড়া তৈরি করতে সহায়গতা করে। আপনি তারপর আপনার ইচ্ছানুযায়ী খসড়াটি পত্র লেখার নমুনা হিসেবে ব্যবহার করতে পারেন।"
 
 #: source/formwizard/dbwizres.src#RID_LETTERWIZARDDIALOG_START + 32.String.Text
-#, fuzzy
 msgid  "~Height:"
 msgstr "উচ্চতা: (~H)"
 
 #: source/formwizard/dbwizres.src#RID_LETTERWIZARDDIALOG_START + 33.String.Text
-#, fuzzy
 msgid  "~Width:"
 msgstr "প্রস্থ: (~W)"
 
 #: source/formwizard/dbwizres.src#RID_LETTERWIZARDDIALOG_START + 34.String.Text
-#, fuzzy
 msgid  "S~pacing to left margin:"
 msgstr " বাম মার্জিনে ফাঁকাকরণ: (~p)"
 
 #: source/formwizard/dbwizres.src#RID_LETTERWIZARDDIALOG_START + 35.String.Text
-#, fuzzy
 msgid  "Spacing ~to top margin:"
 msgstr " উপরের মার্জিনে ফাঁকাকরণ: (~t)"
 
 #: source/formwizard/dbwizres.src#RID_LETTERWIZARDDIALOG_START + 36.String.Text
-#, fuzzy
 msgid  "Height:"
 msgstr "উচ্চতা:"
 
 #: source/formwizard/dbwizres.src#RID_LETTERWIZARDDIALOG_START + 37.String.Text
-#, fuzzy
 msgid  "Width:"
 msgstr "প্রস্থ:"
 
 #: source/formwizard/dbwizres.src#RID_LETTERWIZARDDIALOG_START + 38.String.Text
-#, fuzzy
 msgid  "S~pacing to left margin:"
 msgstr "বাম মার্জিনে ফাঁকাকরণ: (~p)"
 
 #: source/formwizard/dbwizres.src#RID_LETTERWIZARDDIALOG_START + 39.String.Text
-#, fuzzy
 msgid  "Spacing ~to top margin:"
 msgstr "উপরের মার্জিনে ফাঁকাকরণ: (~t)"
 
 #: source/formwizard/dbwizres.src#RID_LETTERWIZARDDIALOG_START + 40.String.Text
-#, fuzzy
 msgid  "Height:"
 msgstr "উচ্চতা:"
 
 #: source/formwizard/dbwizres.src#RID_LETTERWIZARDDIALOG_START + 41.String.Text
-#, fuzzy
 msgid  "Use a typical letter format for this country:"
 msgstr "এই দেশের জন্য একটি আদর্শস্বরূপ পত্র বিন্যাস ব্যবহার করুন:"
 
 #: source/formwizard/dbwizres.src#RID_LETTERWIZARDDIALOG_START + 42.String.Text
-#, fuzzy
 msgid  "Sender's address"
 msgstr "প্রেরকের ঠিকানা"
 
 #: source/formwizard/dbwizres.src#RID_LETTERWIZARDDIALOG_START + 43.String.Text
-#, fuzzy
 msgid  "Name:"
 msgstr "নাম:"
 
 #: source/formwizard/dbwizres.src#RID_LETTERWIZARDDIALOG_START + 44.String.Text
-#, fuzzy
 msgid  "Street:"
 msgstr "রাস্তা:"
 
 #: source/formwizard/dbwizres.src#RID_LETTERWIZARDDIALOG_START + 45.String.Text
-#, fuzzy
 msgid  "ZIP code/State/City:"
 msgstr "জিপ কোড/রাস্তা/শহর:"
 
 #: source/formwizard/dbwizres.src#RID_LETTERWIZARDDIALOG_START + 46.String.Text
-#, fuzzy
 msgid  "Recipient's address"
 msgstr "প্রাপকের ঠিকানা:"
 
 #: source/formwizard/dbwizres.src#RID_LETTERWIZARDDIALOG_START + 47.String.Text
-#, fuzzy
 msgid  "Footer"
 msgstr "পাদটিকা"
 
 #: source/formwizard/dbwizres.src#RID_LETTERWIZARDDIALOG_START + 48.String.Text
 msgid  "This wizard creates a letter template which enables you to create multiple letters with the same layout and settings."
-msgstr ""
+msgstr "এই উইজার্ডটি এমন পত্র খসড়া তৈরি করে যা আপনাকে একই বর্হিবিন্যাস ও বিন্যসনে বহুবিধ পত্র তৈরি করতে সক্রিয় করে।"
 
 #: source/formwizard/dbwizres.src#RID_LETTERWIZARDDIALOG_START + 49.String.Text
 msgid  "To create another new letter out of the template just navigate to the template location and double-click it."
-msgstr ""
+msgstr "খসড়া বহির্ভুত অন্য নতুন পত্র তৈরি করতে, খসড়া অবস্থানে পরিক্রমন করুন এবং এতে দুবার ক্লিক করুন।"
 
 #: source/formwizard/dbwizres.src#RID_LETTERWIZARDDIALOG_START + 50.String.Text
-#, fuzzy
 msgid  "Template name:"
 msgstr "খসড়া নাম:"
 
 #: source/formwizard/dbwizres.src#RID_LETTERWIZARDDIALOG_START + 51.String.Text
-#, fuzzy
 msgid  "Location and file name:"
 msgstr "অবস্থান নাম ও ফাইল নাম:"
 
 #: source/formwizard/dbwizres.src#RID_LETTERWIZARDDIALOG_START + 52.String.Text
-#, fuzzy
 msgid  "How do you want to proceed?"
 msgstr "আপনি কিভাবে অগ্রসর হতে চান?"
 
 #: source/formwizard/dbwizres.src#RID_LETTERWIZARDDIALOG_START + 53.String.Text
-#, fuzzy
 msgid  "Please choose the type of letter and page design"
 msgstr "অনুগ্রহ করে বর্ণের ধরণ ও পৃষ্ঠার নকশা পছন্দ করুন"
 
 #: source/formwizard/dbwizres.src#RID_LETTERWIZARDDIALOG_START + 54.String.Text
-#, fuzzy
 msgid  "Select the items to be printed"
 msgstr "মুদ্রণ করার জন্য বিষয়োপকরণসমূহ নির্বাচন করুন"
 
 #: source/formwizard/dbwizres.src#RID_LETTERWIZARDDIALOG_START + 55.String.Text
-#, fuzzy
 msgid  "Specify items already on your letterhead paper"
 msgstr "আপনার পত্রশিরোনাম কাগজে বিদ্যমান বিষয়েপকরণসমূহ সুনির্দিষ্ট করুন"
 
 #: source/formwizard/dbwizres.src#RID_LETTERWIZARDDIALOG_START + 56.String.Text
-#, fuzzy
 msgid  "Specify the sender and recipient information"
 msgstr "প্রেরক ও প্রাপকের তথ্য সুনির্দিষ্ট করুন"
 
 #: source/formwizard/dbwizres.src#RID_LETTERWIZARDDIALOG_START + 57.String.Text
-#, fuzzy
 msgid  "Fill in the information you would like in the footer"
 msgstr "আপনি পাদটিকায় চান এমন তথ্য পূরণ করুন"
 
 #: source/formwizard/dbwizres.src#RID_LETTERWIZARDDIALOG_START + 58.String.Text
-#, fuzzy
 msgid  "Please specify last settings"
 msgstr "অনুগ্রহ করে সর্বশেষ বিন্যাসনসমূহ সুনির্দিষ্ট করুন"
 
 #: source/formwizard/dbwizres.src#RID_LETTERWIZARDSALUTATION_START + 1.String.Text
-#, fuzzy
 msgid  "To Whom it May Concern"
 msgstr "অবগতির জন্য জানানো যাচ্ছে"
 
 #: source/formwizard/dbwizres.src#RID_LETTERWIZARDSALUTATION_START + 2.String.Text
-#, fuzzy
 msgid  "Dear Sir or Madam"
 msgstr "শ্রদ্ধেয় জনাব বা জনাবা"
 
 #: source/formwizard/dbwizres.src#RID_LETTERWIZARDSALUTATION_START + 3.String.Text
-#, fuzzy
 msgid  "Hello"
 msgstr "হ্যালো"
 
 #: source/formwizard/dbwizres.src#RID_LETTERWIZARDGREETING_START + 1.String.Text
-#, fuzzy
 msgid  "Sincerely"
 msgstr "একান্তভাবে"
 
 #: source/formwizard/dbwizres.src#RID_LETTERWIZARDGREETING_START + 2.String.Text
-#, fuzzy
 msgid  "Best regards"
 msgstr "শুভকামনায়"
 
 #: source/formwizard/dbwizres.src#RID_LETTERWIZARDGREETING_START + 3.String.Text
-#, fuzzy
 msgid  "Cheers"
 msgstr "উৎসাহ"
 
 #: source/formwizard/dbwizres.src#RID_LETTERWIZARDROADMAP_START + 1.String.Text
-#, fuzzy
 msgid  "Page design"
 msgstr "পৃষ্ঠা নকশা"
 
 #: source/formwizard/dbwizres.src#RID_LETTERWIZARDROADMAP_START + 2.String.Text
-#, fuzzy
 msgid  "Letterhead layout"
 msgstr "পত্র-শিরোনাম বর্হিবিন্যাস"
 
 #: source/formwizard/dbwizres.src#RID_LETTERWIZARDROADMAP_START + 3.String.Text
-#, fuzzy
 msgid  "Printed items"
 msgstr "মুদ্রিত বিষয়োপকরণসমূহ"
 
 #: source/formwizard/dbwizres.src#RID_LETTERWIZARDROADMAP_START + 4.String.Text
-#, fuzzy
 msgid  "Recipient and sender"
 msgstr "প্রাপক ও প্রেরক"
 
 #: source/formwizard/dbwizres.src#RID_LETTERWIZARDROADMAP_START + 5.String.Text
-#, fuzzy
 msgid  "Footer"
 msgstr "পাদটিকা"
 
 #: source/formwizard/dbwizres.src#RID_LETTERWIZARDROADMAP_START + 6.String.Text
-#, fuzzy
 msgid  "Name and location"
 msgstr "নাম ও অবস্থান"
 
 #: source/formwizard/dbwizres.src#RID_FAXWIZARDDIALOG_START + 1.String.Text
-#, fuzzy
 msgid  "Fax Wizard"
 msgstr "ফ্যাক্স উইজার্ড"
 
 #: source/formwizard/dbwizres.src#RID_FAXWIZARDDIALOG_START + 2.String.Text
-#, fuzzy
 msgid  "Label9"
 msgstr "লেবেল৯"
 
 #: source/formwizard/dbwizres.src#RID_FAXWIZARDDIALOG_START + 3.String.Text
-#, fuzzy
 msgid  "~Business Fax"
 msgstr "ব্যবসা ফ্যাক্স (~B)"
 
 #: source/formwizard/dbwizres.src#RID_FAXWIZARDDIALOG_START + 4.String.Text
-#, fuzzy
 msgid  "~Personal Fax"
 msgstr "ব্যাক্তিগত ফ্যাক্স (~P)"
 
 #: source/formwizard/dbwizres.src#RID_FAXWIZARDDIALOG_START + 5.String.Text
-#, fuzzy
 msgid  "~Logo"
 msgstr "লোগো (~L)"
 
 #: source/formwizard/dbwizres.src#RID_FAXWIZARDDIALOG_START + 6.String.Text
-#, fuzzy
 msgid  "S~ubject line"
 msgstr "বিষয় লাইন (~u)"
 
 #: source/formwizard/dbwizres.src#RID_FAXWIZARDDIALOG_START + 7.String.Text
-#, fuzzy
 msgid  "S~alutation"
 msgstr "অভিবাদন (~a)"
 
 #: source/formwizard/dbwizres.src#RID_FAXWIZARDDIALOG_START + 8.String.Text
-#, fuzzy
 msgid  "~Complimentary close"
 msgstr "শ্রদ্ধাজ্ঞাপক সমাপ্তি (~C)"
 
 #: source/formwizard/dbwizres.src#RID_FAXWIZARDDIALOG_START + 9.String.Text
-#, fuzzy
 msgid  "~Footer"
 msgstr "পাদটিকা (~F)"
 
 #: source/formwizard/dbwizres.src#RID_FAXWIZARDDIALOG_START + 10.String.Text
-#, fuzzy
 msgid  "~Use user data for return address"
 msgstr "ফিরতি ঠিকানার জন্য ব্যবহারকারীর উপাত্ত ব্যবহার করুন (~U)"
 
 #: source/formwizard/dbwizres.src#RID_FAXWIZARDDIALOG_START + 11.String.Text
-#, fuzzy
 msgid  "~New return address"
 msgstr "নতুন ফিরতি ঠিকানা (~N)"
 
 #: source/formwizard/dbwizres.src#RID_FAXWIZARDDIALOG_START + 12.String.Text
-#, fuzzy
 msgid  "My Fax Template"
 msgstr "আমার ফ্যাক্স খসড়া"
 
 #: source/formwizard/dbwizres.src#RID_FAXWIZARDDIALOG_START + 13.String.Text
-#, fuzzy
 msgid  "Create a ~fax from this template"
 msgstr "এই খসড়া হতে ফ্যাক্স তৈরি করুন (~f)"
 
 #: source/formwizard/dbwizres.src#RID_FAXWIZARDDIALOG_START + 14.String.Text
-#, fuzzy
 msgid  "Make ~manual changes to this fax template"
 msgstr "এই খসড়া ফ্যাক্সে হস্তচালিত পরিবর্তন করুন (~m)"
 
 #: source/formwizard/dbwizres.src#RID_FAXWIZARDDIALOG_START + 15.String.Text
-#, fuzzy
 msgid  "Page design"
 msgstr "পৃষ্ঠা নকশা"
 
 #: source/formwizard/dbwizres.src#RID_FAXWIZARDDIALOG_START + 16.String.Text
-#, fuzzy
 msgid  "Page design"
 msgstr "পৃষ্ঠা নকশা"
 
 #: source/formwizard/dbwizres.src#RID_FAXWIZARDDIALOG_START + 17.String.Text
 msgid  "This wizard helps you to create a fax template. The template can then be used to create a fax whenever needed."
-msgstr ""
+msgstr "এই উইজার্ডটি আপনাকে ফ্যাক্স খসড়া তৈরি করতে সাহায্য করে। খসড়াটি অতঃপর প্রয়োজনানুযায়ী ফ্যাক্স তৈরি করতে ব্যবহৃত হতে পারে। "
 
 #: source/formwizard/dbwizres.src#RID_FAXWIZARDDIALOG_START + 18.String.Text
-#, fuzzy
 msgid  "Return address"
 msgstr "ফিরতি ঠিকানা"
 
 #: source/formwizard/dbwizres.src#RID_FAXWIZARDDIALOG_START + 19.String.Text
-#, fuzzy
 msgid  "Name:"
 msgstr "নাম:"
 
 #: source/formwizard/dbwizres.src#RID_FAXWIZARDDIALOG_START + 20.String.Text
-#, fuzzy
 msgid  "Street:"
 msgstr "রাস্তা:"
 
 #: source/formwizard/dbwizres.src#RID_FAXWIZARDDIALOG_START + 21.String.Text
-#, fuzzy
 msgid  "ZIP code/State/City:"
 msgstr "জিপ কোড/রাষ্ট্র/শহর:"
 
 #: source/formwizard/dbwizres.src#RID_FAXWIZARDDIALOG_START + 22.String.Text
-#, fuzzy
 msgid  "Footer"
 msgstr "পাদটিকা"
 
 #: source/formwizard/dbwizres.src#RID_FAXWIZARDDIALOG_START + 23.String.Text
 msgid  "This wizard creates a fax template which enables you to create multiple faxes with the same layout and settings."
-msgstr ""
+msgstr "এই উইজার্ডটি এমন একটি ফ্যাক্সের খসড়া তৈরি করে যা আপনাকে একই বর্হিবিন্যাস ও বিন্যাসন দ্বারা বহুবিধ ফ্যাক্স তৈরি করতে সক্রিয় করে। "
 
 #: source/formwizard/dbwizres.src#RID_FAXWIZARDDIALOG_START + 24.String.Text
 msgid  "To create another new fax out of the template, go to the location where you saved the template and double-click the file."
-msgstr ""
+msgstr "খসড়া বহির্ভুত আরেকটি নতুন ফ্যাক্স তৈরি করতে, আপনি খসড়াটি যেখানে সংরক্ষন করেছেন সেখানে যান এবং ফাইলটিতে দুইবার ক্লিক করুন।"
 
 #: source/formwizard/dbwizres.src#RID_FAXWIZARDDIALOG_START + 25.String.Text
-#, fuzzy
 msgid  "Template Name:"
 msgstr "খসড়ার নাম:"
 
 #: source/formwizard/dbwizres.src#RID_FAXWIZARDDIALOG_START + 26.String.Text
-#, fuzzy
 msgid  "Location and file name:"
 msgstr "অবস্থান ও ফাইল নাম:"
 
 #: source/formwizard/dbwizres.src#RID_FAXWIZARDDIALOG_START + 27.String.Text
-#, fuzzy
 msgid  "What do you want to do next?"
 msgstr "আপনি পরবর্তিতে কি করতে চান?"
 
 #: source/formwizard/dbwizres.src#RID_FAXWIZARDDIALOG_START + 28.String.Text
-#, fuzzy
 msgid  "Choose the type of fax and a page design"
 msgstr "ফ্যাক্সের ধরন এবং পৃষ্ঠার নকশা পছন্দ করুন"
 
 #: source/formwizard/dbwizres.src#RID_FAXWIZARDDIALOG_START + 29.String.Text
-#, fuzzy
 msgid  "Select items to include in the fax template"
 msgstr "ফ্যাক্স খসড়ায় বিষয়োপকরণ অন্তর্ভুক্ত করতে নির্বাচন করুন"
 
 #: source/formwizard/dbwizres.src#RID_FAXWIZARDDIALOG_START + 30.String.Text
-#, fuzzy
 msgid  "Specify sender and recipient information"
 msgstr "প্রেরক ও প্রারকের তথ্য সুনির্দিষ্ট করুন"
 
 #: source/formwizard/dbwizres.src#RID_FAXWIZARDDIALOG_START + 31.String.Text
-#, fuzzy
 msgid  "Enter text for the footer"
 msgstr "পাদটিকার জন্য পাঠ প্রবেশ করান"
 
 #: source/formwizard/dbwizres.src#RID_FAXWIZARDDIALOG_START + 32.String.Text
-#, fuzzy
 msgid  "Choose a name and save the template"
 msgstr "একটি নাম পছন্দ করুন ও খসড়াটি সংরক্ষণ করুন"
 
 #: source/formwizard/dbwizres.src#RID_FAXWIZARDDIALOG_START + 33.String.Text
-#, fuzzy
 msgid  "Include ~only on second and following pages"
 msgstr "শুধুমাত্র দ্বিতীয় এবং তার নিম্নবর্ণিত পৃষ্ঠায় অন্তর্ভুক্ত করুন (~o)"
 
 #: source/formwizard/dbwizres.src#RID_FAXWIZARDDIALOG_START + 34.String.Text
-#, fuzzy
 msgid  "~Include page number"
 msgstr "পৃষ্ঠা নম্বর সংযুক্ত করুন (~I)"
 
 #: source/formwizard/dbwizres.src#RID_FAXWIZARDDIALOG_START + 35.String.Text
-#, fuzzy
 msgid  "~Date"
 msgstr "তারিখ (~D)"
 
 #: source/formwizard/dbwizres.src#RID_FAXWIZARDDIALOG_START + 36.String.Text
-#, fuzzy
 msgid  "~Type of message"
 msgstr "বার্তার ধরন (~T)"
 
 #: source/formwizard/dbwizres.src#RID_FAXWIZARDDIALOG_START + 37.String.Text
-#, fuzzy
 msgid  "Fax Number:"
 msgstr "ফ্যাক্স নম্বর:"
 
 #: source/formwizard/dbwizres.src#RID_FAXWIZARDDIALOG_START + 38.String.Text
-#, fuzzy
 msgid  "Use placeholders for ~recipient's address"
 msgstr "প্রাপকের ঠিকানার জন্য স্থানধারক ব্যবহার করুন (~r)"
 
 #: source/formwizard/dbwizres.src#RID_FAXWIZARDDIALOG_START + 39.String.Text
-#, fuzzy
 msgid  "Use address database for ~mail merge"
 msgstr "মেইল একত্রিত করার জন্য ঠিকানা উপাত্তধার ব্যবহার করুন (~m)"
 
 #: source/formwizard/dbwizres.src#RID_FAXWIZARDDIALOG_START + 40.String.Text
-#, fuzzy
 msgid  "~New return address"
 msgstr "নতুন ফিরতি ঠিকানা (~N)"
 
 #: source/formwizard/dbwizres.src#RID_FAXWIZARDCOMMUNICATION_START + 1.String.Text
-#, fuzzy
 msgid  "Important Information!"
 msgstr "গুরুত্বপূর্ণ তথ্য"
 
 #: source/formwizard/dbwizres.src#RID_FAXWIZARDCOMMUNICATION_START + 2.String.Text
-#, fuzzy
 msgid  "For your information"
 msgstr "আপনার অবগতির জন্য "
 
 #: source/formwizard/dbwizres.src#RID_FAXWIZARDCOMMUNICATION_START + 3.String.Text
-#, fuzzy
 msgid  "News!"
 msgstr "সংবাদসমূহ!"
 
 #: source/formwizard/dbwizres.src#RID_FAXWIZARDSALUTATION_START + 1.String.Text
-#, fuzzy
 msgid  "To whom it may concern,"
 msgstr "অবগতির জন্য জানানো যাচ্ছে,"
 
 #: source/formwizard/dbwizres.src#RID_FAXWIZARDSALUTATION_START + 2.String.Text
-#, fuzzy
 msgid  "Dear Sir or Madam,"
 msgstr "শ্রদ্ধেয় স্যার বা ম্যাডাম,"
 
 #: source/formwizard/dbwizres.src#RID_FAXWIZARDSALUTATION_START + 3.String.Text
-#, fuzzy
 msgid  "Hello,"
 msgstr "হ্যালো,"
 
 #: source/formwizard/dbwizres.src#RID_FAXWIZARDSALUTATION_START + 4.String.Text
-#, fuzzy
 msgid  "Hi,"
 msgstr "হায়,"
 
 #: source/formwizard/dbwizres.src#RID_FAXWIZARDGREETING_START + 1.String.Text
-#, fuzzy
 msgid  "Sincerely"
 msgstr "একান্তভাবে"
 
 #: source/formwizard/dbwizres.src#RID_FAXWIZARDGREETING_START + 2.String.Text
-#, fuzzy
 msgid  "Yours faithfully"
 msgstr "আপনার বিশ্বস্ত"
 
 #: source/formwizard/dbwizres.src#RID_FAXWIZARDGREETING_START + 3.String.Text
-#, fuzzy
 msgid  "Regards"
 msgstr "শুভেচ্ছা"
 
 #: source/formwizard/dbwizres.src#RID_FAXWIZARDGREETING_START + 4.String.Text
-#, fuzzy
 msgid  "Love"
 msgstr "ভালবাসা"
 
 #: source/formwizard/dbwizres.src#RID_FAXWIZARDROADMAP_START + 1.String.Text
-#, fuzzy
 msgid  "Page design"
 msgstr "পৃষ্ঠা নকশা"
 
 #: source/formwizard/dbwizres.src#RID_FAXWIZARDROADMAP_START + 2.String.Text
-#, fuzzy
 msgid  "Items to include"
 msgstr "অন্তর্ভুক্ত করার বিষয়োপকরণ"
 
 #: source/formwizard/dbwizres.src#RID_FAXWIZARDROADMAP_START + 3.String.Text
-#, fuzzy
 msgid  "Sender and Recipient"
 msgstr "প্রেরক ও প্রাপক"
 
 #: source/formwizard/dbwizres.src#RID_FAXWIZARDROADMAP_START + 4.String.Text
-#, fuzzy
 msgid  "Footer"
 msgstr "পাদটিকা"
 
 #: source/formwizard/dbwizres.src#RID_FAXWIZARDROADMAP_START + 5.String.Text
-#, fuzzy
 msgid  "Name and location"
 msgstr "নাম ও অবস্থান"
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +1.String.Text
-#, fuzzy
 msgid  "Web Wizard"
 msgstr "ওয়েব উইজার্ড"
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +2.String.Text
 msgid  "This Web Wizard is to aid you in publishing documents on the Internet.\n\nIt will convert the documents so that they can be viewed by a web browser. In addition, it will generate a Table of Contents page with links for easy access to the documents. The Web Wizard will also allow you to customize the design and layout of your web site.\n\nYou will be able to keep the documents you have published on the web up-to-date and add or remove documents at any time."
-msgstr ""
+msgstr "এই ওয়েব উইজার্ড আপনাকে নথিসমূহ ইন্টারনেটে প্রকাশ করতে সহায়তা করে।\n\nএটা নথিসমূহকে রুপান্তর করবে ফলে তাদেরকে ওয়েব ব্রাউজারে দেখা যাবে। আরও, নথিসমূহে সহজে প্রবেশ করার জন্য এটা সংযোগ সহ সূচি পৃষ্ঠা তৈরি করবে। ওয়েব উইজার্ডটি আপনাকে আপনার ওয়েব সাইটের নকশা ও বর্হিবিন্যাস পছন্দসই বিন্যাস করতে সমর্থন করে।\n\nআপনি এই তারিখ পর্যন্ত যেকোনো সময় ওয়েবে যে নথিসমূহ প্রকাশ এবং সংযুক্ত বা অপসারণ করেছেন তা আপনি সংরক্ষণ করে রাখতে পারবেন।"
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +4.String.Text
-#, fuzzy
 msgid  "~Delete"
 msgstr "মুছে ফেলুন (~D)"
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +5.String.Text
-#, fuzzy
 msgid  "Introduction"
 msgstr "সূচনা"
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +6.String.Text
-#, fuzzy
 msgid  "Select the documents you want to publish"
 msgstr "আপনি প্রকাশ করতে চান এমন নথি নির্বাচন করুন"
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +8.String.Text
-#, fuzzy
 msgid  "Document information "
 msgstr "নথির তথ্য"
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +9.String.Text
-#, fuzzy
 msgid  "~Title:"
 msgstr "শিরোনাম: (~T)"
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +10.String.Text
-#, fuzzy
 msgid  "~Summary: "
 msgstr "সারাংশ: (~S)"
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +11.String.Text
-#, fuzzy
 msgid  "Au~thor:"
 msgstr "লেখক: (~t)"
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +12.String.Text
-#, fuzzy
 msgid  "~Export to file format:"
 msgstr "ফাইল বিন্যাসে রপ্তানি করুন: (~E)"
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +13.String.Text
-#, fuzzy
 msgid  "Enter general information for your web site"
 msgstr "আপনার ওয়েব সাইটের জন্য সাধারণ তথ্য প্রবেশ করান"
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +14.String.Text
-#, fuzzy
 msgid  "Title:"
 msgstr "শিরোনাম:"
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +16.String.Text
-#, fuzzy
 msgid  "Description:"
 msgstr "বর্ণনা:"
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +18.String.Text
-#, fuzzy
 msgid  "Created:"
 msgstr "তৈরিকৃত:"
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +20.String.Text
-#, fuzzy
 msgid  "E-mail:"
 msgstr "ই-মেইল:"
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +21.String.Text
-#, fuzzy
 msgid  "Copyright notice:"
 msgstr "কপিরাইট বিজ্ঞপ্তি:"
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +22.String.Text
-#, fuzzy
 msgid  "Modified:"
 msgstr "পরিবর্তিত:"
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +24.String.Text
-#, fuzzy
 msgid  "~Preview"
 msgstr "প্রাকদর্শন (~P)"
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +25.String.Text
-#, fuzzy
 msgid  "Where do you want to publish your web site?"
 msgstr "আপনার ওয়েব সাইট কোথায় প্রকাশ করতে চান?"
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +26.String.Text
-#, fuzzy
 msgid  "Publish the new web site:"
 msgstr "নতুন ওয়েব সাইটটি প্রকাশ করুন:"
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +27.String.Text
-#, fuzzy
 msgid  "To a ~local folder"
 msgstr "একটি স্থানীয় ফোল্ডারে (~l)"
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +28.String.Text
-#, fuzzy
 msgid  "..."
 msgstr "..."
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +29.String.Text
-#, fuzzy
 msgid  "To a ~web server via FTP"
 msgstr "এফটিপি হয়ে ওয়েব সার্ভারে (~w)"
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +31.String.Text
-#, fuzzy
 msgid  "~Configure..."
 msgstr "পছন্দসই বিন্যাস... (~C)"
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +32.String.Text
-#, fuzzy
 msgid  "To a ZIP ~archive"
 msgstr "জিপ সংগ্রহশালায় (~a)"
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +33.String.Text
-#, fuzzy
 msgid  "..."
 msgstr "..."
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +34.String.Text
-#, fuzzy
 msgid  "~Save settings (recommended)"
 msgstr "বিন্যাসনসমূহ সংরক্ষণ করুন (সুপারিশকৃত) (~S)"
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +35.String.Text
-#, fuzzy
 msgid  "Save ~as:"
 msgstr "এইভাবে সংরক্ষণ করুন: (~a)"
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +36.String.Text
-#, fuzzy
 msgid  "~Choose settings for the Web Wizard"
 msgstr "ওয়েব উইজার্ডটির জন্য বিন্যাসন পছন্দ করুন (~C) "
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +37.String.Text
-#, fuzzy
 msgid  "Web site content "
 msgstr "ওযেব সাইট বিষয়বস্তু"
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +38.String.Text
-#, fuzzy
 msgid  "~Add..."
 msgstr "সংযুক্ত করুন... (~A)"
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +39.String.Text
-#, fuzzy
 msgid  "Remo~ve"
 msgstr "অপসারণ করুন (~v)"
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +40.String.Text
-#, fuzzy
 msgid  "Choose a layout for the table of contents of your web site"
 msgstr "আপনার ওয়েব সাইটের সূচির জন্য বর্হিবিন্যাস পছন্দ করুন"
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +41.String.Text
-#, fuzzy
 msgid  "Select a style for the table of contents page"
 msgstr "সূচি পৃষ্ঠার জন্য একটি শৈলী নির্বাচন করুন"
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +42.String.Text
-#, fuzzy
 msgid  "~Style:"
 msgstr "শৈলী: (~S)"
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +48.String.Text
-#, fuzzy
 msgid  "~Layouts: "
 msgstr "বর্হিবিন্যাস: (~L)"
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +50.String.Text
-#, fuzzy
 msgid  "~Description"
 msgstr "বর্ণনা (~D)"
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +51.String.Text
-#, fuzzy
 msgid  "~Author"
 msgstr "লেখক (~A)"
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +52.String.Text
-#, fuzzy
 msgid  "Cr~eation date"
 msgstr "সৃষ্টির তারিখ (~e)"
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +53.String.Text
-#, fuzzy
 msgid  "~Last change date"
 msgstr "সর্বশেষ পরিবর্তন তারিখ (~L)"
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +54.String.Text
-#, fuzzy
 msgid  "~File name"
 msgstr "ফাইল নাম (~F)"
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +55.String.Text
-#, fuzzy
 msgid  "File forma~t"
 msgstr "ফাইল বিন্যাস (~t)"
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +56.String.Text
-#, fuzzy
 msgid  "File format ~icon"
 msgstr "ফাইল বিন্যাস আইকন (~i)"
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +57.String.Text
-#, fuzzy
 msgid  "Number ~of pages"
 msgstr "পৃষ্ঠা সংখ্যা (~o)"
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +58.String.Text
-#, fuzzy
 msgid  "~Size in KB"
 msgstr "আকার কিবা তে (~S)"
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +59.String.Text
-#, fuzzy
 msgid  "Click 'Preview' to see a preview in your browser:"
 msgstr "আপনার ব্রাউজারে প্রাকদর্শন দেখতে 'প্রাকদর্শন' ক্লিক করুন:"
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +60.String.Text
-#, fuzzy
 msgid  "Customize the selected layout"
 msgstr "নির্বাচিত বর্হিবিন্যাস পছন্দসই করুন"
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +61.String.Text
 msgid  "Include the following information for each document in the table of contents:"
-msgstr ""
+msgstr "সূচি প্রতিটি নথির জন্য নিম্নের তথ্য অন্তর্ভুক্ত করুন:"
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +62.String.Text
-#, fuzzy
 msgid  "Optimize the layout for screen resolution:"
 msgstr "পর্দার রেসুলেশন জন্য বর্হিবিন্যাস মানানসই করুন:"
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +64.String.Text
-#, fuzzy
 msgid  "~640x480"
 msgstr "৬৪০x৪৮০ (~6)"
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +65.String.Text
-#, fuzzy
 msgid  "~800x600"
 msgstr "৮০০x৬০০ (~8)"
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +66.String.Text
-#, fuzzy
 msgid  "~1024x768"
 msgstr "১০২৪x৭৬৮ (~1)"
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +70.String.Text
-#, fuzzy
 msgid  "Generating Your Web Site"
 msgstr "আপনার ওয়েব সাইট তৈরি করছে"
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +71.String.Text
-#, fuzzy
 msgid  "%START - %END/%TOTAL"
 msgstr "%START - %END/%TOTAL"
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +72.String.Text
-#, fuzzy
 msgid  "myWebsite"
 msgstr "আমার-ওয়েব-সাইট"
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +73.String.Text
-#, fuzzy
 msgid  "FTP target '%FILENAME' is a file."
 msgstr "এফটিপি এর উদ্দিষ্ট '%FILENAME' একটি ফাইল।"
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +74.String.Text
-#, fuzzy
 msgid  "The local target '%FILENAME' is a file."
 msgstr "স্থানীয় উদ্দিষ্ট '%FILENAME' একটি ফাইল।"
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +75.String.Text
 msgid  "The ZIP target '%FILENAME' already exists. Do you want to overwrite the existing target? "
-msgstr ""
+msgstr "জিপের উদ্দিষ্ট  '%FILENAME' ইতোমধ্যে বিদ্যমান। আপনি কি বিদ্যমান লক্ষটি উপরিলিখন করতে চান?"
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +76.String.Text
 msgid  "The FTP target directory '%FILENAME' is not empty. Some files might be overwritten. Do you want to continue?"
-msgstr ""
+msgstr "এফটিপি উদ্দিষ্ট নির্দেশিকা  '%FILENAME' খালি নয়। কিছু ফাইল উপরিলিখন হতে পারে। আপনি কি অব্যাহত রাখতে চান? "
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +77.String.Text
 msgid  "The local target directory '%FILENAME' is not empty. Some files might be overwritten. Do you want to continue?"
-msgstr ""
+msgstr "স্থানীয় উদ্দিষ্ট নির্দেশিকা  '%FILENAME' খালি নয়। কিছু ফাইল উপরিলিখন হতে পারে। আপনি কি অব্যাহত রাখতে চান? "
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +78.String.Text
 msgid  "Settings already exist under the given name. Do you want to overwrite the existing settings? "
-msgstr ""
+msgstr "বিন্যাসন প্রদত্ব নামের অধীনে ইতোমধ্যে বিদ্যমান। আপনি কি বিদ্যমান বিন্যাসনসমূহ উপরিলিখন করতে চান?"
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +79.String.Text
-#, fuzzy
 msgid  "Exporting documents..."
 msgstr "নথিসমূহ রপ্তানি করছে..."
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +80.String.Text
-#, fuzzy
 msgid  "Preparing export..."
 msgstr "রপ্তানি প্রস্তুত করছে...."
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +81.String.Text
-#, fuzzy
 msgid  "Copying layout files..."
 msgstr "বর্হিবিন্যাস ফাইলসমূহ অনুলিপি করছে..."
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +82.String.Text
-#, fuzzy
 msgid  "Preparing table of contents generation..."
 msgstr "সূচির উৎপাদন প্রস্তুত করছে..."
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +83.String.Text
-#, fuzzy
 msgid  "Generating table of contents..."
 msgstr "সূচি তৈরি করছে..."
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +84.String.Text
-#, fuzzy
 msgid  "Initializing..."
 msgstr "প্রাথমিকীকরণ করছে..."
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +86.String.Text
-#, fuzzy
 msgid  "Preparing to publish..."
 msgstr "প্রকাশ করতে প্রস্তুত করছে"
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +87.String.Text
-#, fuzzy
 msgid  "Publishing to local directory..."
 msgstr "স্থানীয় নির্দেশিকায় প্রকাশ করছে..."
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +88.String.Text
-#, fuzzy
 msgid  "Publishing to FTP destination..."
 msgstr "এফটিপি গন্তব্যে প্রকাশ করছে"
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +89.String.Text
-#, fuzzy
 msgid  "Publishing to a ZIP archive..."
 msgstr "জিপ সংগ্রহশালায় প্রকাশ করছে..."
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START + 90.String.Text
-#, fuzzy
 msgid  "Finishing..."
 msgstr "শেষ করছে..."
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START + 94.String.Text
-#, fuzzy
 msgid  "Graphic files"
 msgstr "নকশা ফাইল"
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START + 95.String.Text
-#, fuzzy
 msgid  "All files"
 msgstr "সকল ফাইল"
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START + 96.String.Text
-#, fuzzy
 msgid  "~ZIP archive files"
 msgstr "জিপ সংগ্রহশালার ফাইল (~Z)"
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START + 98.String.Text
-#, fuzzy
 msgid  "Background images"
 msgstr "প্রেক্ষাপট চিত্রাবলী"
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START + 99.String.Text
-#, fuzzy
 msgid  "Choose a background image: "
 msgstr "প্রেক্ষাপট চিত্র পছন্দ করুন:"
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START + 100.String.Text
-#, fuzzy
 msgid  "Icon sets"
 msgstr "আইকনের সমষ্টি"
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START + 101.String.Text
-#, fuzzy
 msgid  "Choose an icon set:"
 msgstr "একটি আইকন সমষ্টি পছন্দ করুন:"
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +102.String.Text
-#, fuzzy
 msgid  "Other..."
 msgstr "অন্যান্য..."
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +103.String.Text
-#, fuzzy
 msgid  "None"
 msgstr "একটিও না"
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +104.String.Text
-#, fuzzy
 msgid  "Your web site was created successfully into: %FILENAME"
 msgstr "আপনার ওয়েব সাইট সফলভাবে তৈরি হয়েছে: %FILENAME"
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +105.String.Text
-#, fuzzy
 msgid  "One or more errors occurred when generating the web site."
 msgstr "ওয়েব সাইট প্রস্তুত করার সময় এক বা একাধিক ত্রুটি দেখা দিয়েছে।"
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +106.String.Text
-#, fuzzy
 msgid  "An error occurred while generating the table of contents page(s). "
 msgstr "সূচির পৃষ্ঠাসমূহ প্রস্তুত করার সময় একটি ত্রুটি দেখা দিয়েছে।"
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +107.String.Text
-#, fuzzy
 msgid  "An error occurred while copying the layout files. "
 msgstr "বর্হিবিন্যাস ফাইলসমূহ অনুলিপি করার সময় একটি ত্রুটি দেখা দিয়েছে।"
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +108.String.Text
 msgid  "An error occurred while gathering document information for '%FILENAME'. "
-msgstr ""
+msgstr "'%FILENAME' এর জন্য নথির তথ্য সংগ্রহ করার সময় একটি ত্রুটি দেখা দিয়েছে।"
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +109.String.Text
-#, fuzzy
 msgid  "An error occurred while exporting the document '%FILENAME'."
 msgstr "নথি '%FILENAME' রপ্তানি করার সময় একটি ত্রুটি দেখা দিয়েছে।"
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +110.String.Text
 msgid  "An error occurred while creating a directory for exporting '%FILENAME'."
-msgstr ""
+msgstr "'%FILENAME' রপ্তানি করার জন্য নির্দেশিকা তৈরি করার সময় একটি ত্রুটি দেখা দিয়েছে।"
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +111.String.Text
 #, fuzzy
@@ -2644,12 +2473,14 @@ msgid  "A security error occurred while exporting the document '%FILENAME'."
 msgstr "নথি '%FILENAME' রপ্তানি করার সময় একটি নিরাপত্তা ত্রুটি দেখা দিয়েছে।"
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +112.String.Text
+#, fuzzy
 msgid  "An input/output error occurred while exporting the document '%FILENAME'."
-msgstr ""
+msgstr "নথি '%FILENAME' রপ্তানি করার সময় একটি ইনপুট/আউটপুট ত্রুটি দেখা দিয়েছে।"
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +113.String.Text
+#, fuzzy
 msgid  "An error occurred while copying media files to the temporary directory."
-msgstr ""
+msgstr "অস্থায়ী নির্দেশিকায় মিডিয়া ফাইলসমূহ অনুলিপি করার সময় একটি ত্রুটি দেখা দিয়েছে।"
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +114.String.Text
 #, fuzzy
@@ -2662,8 +2493,9 @@ msgid  "An unexpected error occurred: %ERROR"
 msgstr "একটি অপ্রত্যাশিত ত্রুটি ঘটেছে: %ERROR"
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +116.String.Text
+#, fuzzy
 msgid  "An unexpected error occurred while validating the file: '%FILENAME'"
-msgstr ""
+msgstr "ফাইলটির বৈধতা যাচাই করার সময় একটি অপ্রত্যাশিত ত্রুটি ঘটেছে:  '%FILENAME'"
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +117.String.Text
 #, fuzzy
@@ -2726,8 +2558,9 @@ msgid  "Preview"
 msgstr "প্রাকদর্শন"
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +130.String.Text
+#, fuzzy
 msgid  "The selected settings will be deleted.\n\nDo you really want to delete these settings? "
-msgstr ""
+msgstr "নির্বাচিত বিন্যাসন মুছে যাবে।\n\nআপনি কি এইসব বিন্যাসন মুছে ফেলতে চান?"
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +131.String.Text
 #, fuzzy
@@ -2810,20 +2643,24 @@ msgid  "The FTP directory '%FILENAME' could not be created."
 msgstr "'%FILENAME' এর এফটিপি নির্দেশিকা তৈরি করা যায়নি।"
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +147.String.Text
+#, fuzzy
 msgid  "The FTP directory '%FILENAME' does not exist. \nCreate the directory now?"
-msgstr ""
+msgstr " '%FILENAME' এর এফটিপি নির্দেশিকা বিদ্যমান নয।\nনির্দেশিকাটি কি এখন তৈরি করবেন?"
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +148.String.Text
+#, fuzzy
 msgid  "The Zip file '%FILENAME' cannot be created: a directory of the same name already exists."
-msgstr ""
+msgstr "'%FILENAME' জিপ ফাইলটি তৈরি করা যায়নি: একই নামের একটি নির্দেশিকা ইতোমধ্যে বিদ্যমান।"
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +149.String.Text
+#, fuzzy
 msgid  "The local directory '%FILENAME' cannot be created. \nPlease check your write-access."
-msgstr ""
+msgstr "'%FILENAME' এর স্থানীয় নির্দেশিকা তৈরি করা যায়নি।\nঅনুগ্রহ করে আপনার লিখন-অধিকার যাচাই করুন।"
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +150.String.Text
+#, fuzzy
 msgid  "The local directory '%FILENAME' does not exist. \nCreate the directory now?"
-msgstr ""
+msgstr " '%FILENAME' এর স্থানীয় নির্দেশিকা বিদ্যমান নয।\nনির্দেশিকাটি কি এখন তৈরি করবেন?"
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +151.String.Text
 #, fuzzy
@@ -2831,8 +2668,9 @@ msgid  "Size: %NUMBERKB"
 msgstr "আকার: %NUMBERKB"
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +152.String.Text
+#, fuzzy
 msgid  "File not found. Would you like to specify a new file location?"
-msgstr ""
+msgstr "ফাইল খুঁজে পাওয়া যায়নি। আপনি কি একটি নতুন ফাইল অবস্থান সুনির্দিষ্ট করতে আগ্রহী?"
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_FTP +0.String.Text
 #, fuzzy
@@ -2960,8 +2798,9 @@ msgid  "Please choose the page design for the agenda"
 msgstr "অনুগ্রহ করে অলোচ্যসূচির জন্য পৃষ্ঠা নকশা পছন্দ করুন"
 
 #: source/formwizard/dbwizres.src#RID_AGENDAWIZARDDIALOG_START +7.String.Text
+#, fuzzy
 msgid  "Please select the headings you wish to include in your agenda template"
-msgstr ""
+msgstr "আপনি আপনার অলোচ্যসূচির খসড়ায় যে শিরোনাম অন্তর্ভুক্ত করতে চান তা অনুগ্রহ করে নির্বাচন করুন"
 
 #: source/formwizard/dbwizres.src#RID_AGENDAWIZARDDIALOG_START +8.String.Text
 #, fuzzy
@@ -2974,8 +2813,9 @@ msgid  "Please specify items for the agenda"
 msgstr "অনুগ্রহ করে অলোচ্যসূচির জন্য বিষয়োপকরণ সুনির্দিষ্ট করুন "
 
 #: source/formwizard/dbwizres.src#RID_AGENDAWIZARDDIALOG_START +10.String.Text
+#, fuzzy
 msgid  "Please select the names you wish to include in your agenda template"
-msgstr ""
+msgstr "আপনি আপনার অলোচ্যসূচির খসড়ায় যে নামসমূহ অন্তর্ভুক্ত করতে চান তা অনুগ্রহ করে নির্বাচন করুন"
 
 #: source/formwizard/dbwizres.src#RID_AGENDAWIZARDDIALOG_START +11.String.Text
 #, fuzzy
@@ -2988,8 +2828,9 @@ msgid  "Include form for recording minutes"
 msgstr "মিনিট রেকর্ড করার জন্য ফর্ম অন্তর্ভুক্ত করুন"
 
 #: source/formwizard/dbwizres.src#RID_AGENDAWIZARDDIALOG_START +13.String.Text
+#, fuzzy
 msgid  "This wizard helps you to create an agenda template. The template can then be used to create an agenda whenever needed."
-msgstr ""
+msgstr "এই উইজার্ডটি আপনাকে একটি অলোচ্যসূচির খসড়া তৈরি করতে সহায়তা করে। খসড়াটি অতঃপর প্রয়োজনানুযায়ী একটি অলোচ্যসূচি তৈরি করতে ব্যবহৃত হতে পারে।"
 
 #: source/formwizard/dbwizres.src#RID_AGENDAWIZARDDIALOG_START +14.String.Text
 #, fuzzy
@@ -3007,8 +2848,9 @@ msgid  "Location:"
 msgstr "অবস্থান:"
 
 #: source/formwizard/dbwizres.src#RID_AGENDAWIZARDDIALOG_START +17.String.Text
+#, fuzzy
 msgid  "Placeholders will be used in empty fields. You can replace placeholders with text later."
-msgstr ""
+msgstr "স্থানধারক ফাঁকা ক্ষেত্রে ব্যবহৃত হবে। আপনি পাঠ পত্র দ্বারা স্থানধারক প্রতিস্থাপন করতে পারেন।"
 
 #: source/formwizard/dbwizres.src#RID_AGENDAWIZARDDIALOG_START +18.String.Text
 #, fuzzy
@@ -3021,8 +2863,9 @@ msgid  "Create an ~agenda from this template"
 msgstr "এই খসড়া হতে একটি অলোচ্যসূচি তৈরি করুন (~a)"
 
 #: source/formwizard/dbwizres.src#RID_AGENDAWIZARDDIALOG_START +20.String.Text
+#, fuzzy
 msgid  "To create a new agenda out of the template, go to the location where you saved the template and double-click the file."
-msgstr ""
+msgstr "খসড়ার বাইরে একটি নতুন অলোচ্যসূচি তৈরি করতে, আপনি খসড়াটি যেখানে সংরক্ষণ করেছেন সেখানে যান এবং ফাইলটিতে দুইবার ক্লিক করুন।"
 
 #: source/formwizard/dbwizres.src#RID_AGENDAWIZARDDIALOG_START +21.String.Text
 #, fuzzy
@@ -3075,8 +2918,9 @@ msgid  "Facility personnel"
 msgstr "সুযোগ প্রদানকারী কর্মচারী"
 
 #: source/formwizard/dbwizres.src#RID_AGENDAWIZARDDIALOG_START +31.String.Text
+#, fuzzy
 msgid  "The agenda template will include placeholders for the names of the selected people. When creating an agenda from the template, you can replace these placeholder with the appropriate names."
-msgstr ""
+msgstr "অলোচ্যসূচি খসড়া নির্বাচিত ব্যাক্তির নামের জন্য স্থানধারক অন্তর্ভুক্ত করে। যখন খসড়া হতে অলোচ্যসূচি তৈরি করে, আপনি এইসব স্থানধারক যথাযথ নামসমূহ দ্বারা প্রতিস্থাপন করতে পারেন।"
 
 #: source/formwizard/dbwizres.src#RID_AGENDAWIZARDDIALOG_START +32.String.Text
 #, fuzzy
@@ -3099,8 +2943,9 @@ msgid  "Notes"
 msgstr "নোটসমূহ"
 
 #: source/formwizard/dbwizres.src#RID_AGENDAWIZARDDIALOG_START +36.String.Text
+#, fuzzy
 msgid  "The agenda template will include placeholders for the selected items."
-msgstr ""
+msgstr "অলোচ্যসূচির খসড়া নির্বাচিত বিষয়োপকরণের জন্য স্থানধারকের অন্তর্ভুক্ত করে।"
 
 #: source/formwizard/dbwizres.src#RID_AGENDAWIZARDDIALOG_START +38.String.Text
 #, fuzzy
@@ -3108,8 +2953,9 @@ msgid  "Date:"
 msgstr "তারিখ:"
 
 #: source/formwizard/dbwizres.src#RID_AGENDAWIZARDDIALOG_START +39.String.Text
+#, fuzzy
 msgid  "This wizard creates an agenda template which enables you to create multiple agendas with the same layout and settings."
-msgstr ""
+msgstr "এই উইজার্ডটি এমন অলোচ্যসূচির খসড়া তৈরি করে যা আপনাকে একই বর্হিবিন্যাস ও বিন্যাসন দ্বারা বহুবিধ অলোচ্যসূচি তৈরি করতে সক্রিয় করে।"
 
 #: source/formwizard/dbwizres.src#RID_AGENDAWIZARDDIALOG_START +40.String.Text
 #, fuzzy
@@ -3267,893 +3113,729 @@ msgid  "Move down"
 msgstr "নীচে নামান"
 
 #: source/importwizard/importwi.src#sHelpButton.String.Text
-#, fuzzy
 msgid  "~Help"
 msgstr "সহায়তা (~H)"
 
 #: source/importwizard/importwi.src#sCancelButton.String.Text
-#, fuzzy
 msgid  "~Cancel"
 msgstr "বাতিল করুন (~C)"
 
 #: source/importwizard/importwi.src#sBackButton.String.Text
-#, fuzzy
 msgid  "<< ~Back"
 msgstr "<< পিছনে (~B)"
 
 #: source/importwizard/importwi.src#sNextButton.String.Text
-#, fuzzy
 msgid  "Ne~xt >>"
 msgstr "সামনে >> (~x)"
 
 #: source/importwizard/importwi.src#sBeginButton.String.Text
-#, fuzzy
 msgid  "~Convert"
 msgstr "রূপান্তর করুন (~C)"
 
 #: source/importwizard/importwi.src#sCloseButton.String.Text
-#, fuzzy
 msgid  "~Close"
 msgstr "বন্ধ করুন (~C)"
 
 #: source/importwizard/importwi.src#sWelcometextLabel1.String.Text
 msgid  "This wizard converts documents in %PRODUCTNAME format and Microsoft Office documents to the new OpenDocument format."
-msgstr ""
+msgstr "এই উইজার্ড %PRODUCTNAME ফরম্যাটের নথিগুলো এবং মাইক্রসফ্ট অফিস নথিগুলো নতুন ওপেন নথি বিন্যাসে রূপান্তর করে।"
 
 #: source/importwizard/importwi.src#sWelcometextLabel2.String.Text
 msgid  "Please note that when converting Microsoft documents any attached VBA macros lose their functionality."
-msgstr ""
+msgstr "মাইক্রসফট নথিগুলো রূপান্তরের সময় মনে রাখবেন যে অন্তর্ভুক্ত  VBA ম্যাক্রো তাদের কার্যকারীতা হারিয়ে ফেলবে।"
 
 #: source/importwizard/importwi.src#sWelcometextLabel3.String.Text
-#, fuzzy
 msgid  "Select the document type for conversion:"
 msgstr "রূপান্তরের জন্য নথির ধরণ নির্বাচন করুন:"
 
 #: source/importwizard/importwi.src#sMSTemplateCheckbox_1_.String.Text
-#, fuzzy
 msgid  "Word templates"
 msgstr "ওয়ার্ড খসড়া"
 
 #: source/importwizard/importwi.src#sMSTemplateCheckbox_2_.String.Text
-#, fuzzy
 msgid  "Excel templates"
 msgstr "এক্নেল খসড়া "
 
 #: source/importwizard/importwi.src#sMSTemplateCheckbox_3_.String.Text
-#, fuzzy
 msgid  "PowerPoint templates"
 msgstr "পাওয়ারপয়েন্ট খসড়া"
 
 #: source/importwizard/importwi.src#sMSDocumentCheckbox_1_.String.Text
-#, fuzzy
 msgid  "Word documents"
 msgstr "ওয়ার্ড ডকুমেন্টসমূহ"
 
 #: source/importwizard/importwi.src#sMSDocumentCheckbox_2_.String.Text
-#, fuzzy
 msgid  "Excel documents"
 msgstr "এক্সেল নথিমূহ"
 
 #: source/importwizard/importwi.src#sMSDocumentCheckbox_3_.String.Text
-#, fuzzy
 msgid  "PowerPoint documents"
 msgstr "পাওয়ারপয়েন্ট নথিসমূহ"
 
 #: source/importwizard/importwi.src#sSearchInSubDir.String.Text
-#, fuzzy
 msgid  "Including subdirectories"
 msgstr "উপনির্দেশিকাগুলো অন্তর্ভুক করুন"
 
 #: source/importwizard/importwi.src#sMSContainerName.String.Text
-#, fuzzy
 msgid  "Microsoft Office"
 msgstr "মাইক্রোসফট অফিস"
 
 #: source/importwizard/importwi.src#sSummaryHeader.String.Text
-#, fuzzy
 msgid  "Summary:"
 msgstr "সারাংশ"
 
 #: source/importwizard/importwi.src#sTextImportLabel.String.Text
-#, fuzzy
 msgid  "Import from:"
 msgstr "এখান থেকে আমদানি করুন:"
 
 #: source/importwizard/importwi.src#sTextExportLabel.String.Text
-#, fuzzy
 msgid  "Save to:"
 msgstr "এখানে সংরক্ষণ করুন:"
 
 #: source/importwizard/importwi.src#sGroupnameDefault.String.Text
-#, fuzzy
 msgid  "Imported_Templates"
 msgstr "আমদানি কৃত খসড়াসমূহ"
 
 #: source/importwizard/importwi.src#sProgressDesc1.String.Text
-#, fuzzy
 msgid  "Progress: "
 msgstr "অগ্রগতি:"
 
 #: source/importwizard/importwi.src#sProgressOneDoc.String.Text
-#, fuzzy
 msgid  "Document"
 msgstr "নথি\t"
 
 #: source/importwizard/importwi.src#sProgressMoreDocs.String.Text
-#, fuzzy
 msgid  "Documents"
 msgstr "নথিসমূহ"
 
 #: source/importwizard/importwi.src#sProgressMoreTemplates.String.Text
-#, fuzzy
 msgid  "Templates"
 msgstr "নথিসমূহ"
 
 #: source/importwizard/importwi.src#sNoDirCreation.String.Text
-#, fuzzy
 msgid  "The '%1' directory cannot be created: "
 msgstr "'%1' নির্দেশিকাটি তৈরি করা গেনা:"
 
 #: source/importwizard/importwi.src#sMsgDirNotThere.String.Text
-#, fuzzy
 msgid  "The '%1' directory does not exist."
 msgstr "'%1' নির্দেশিকাটি নেই।"
 
 #: source/importwizard/importwi.src#sQueryfornewCreation.String.Text
-#, fuzzy
 msgid  "Do you want to create it now?"
 msgstr "আপনি কি এখন এটি তৈরি করতে চান?"
 
 #: source/importwizard/importwi.src#sFileExists.String.Text
-#, fuzzy
 msgid  "The '<1>' file already exists.<CR>Do you want to overwrite it?"
 msgstr "'<1>' ফাইলটি ইতিমধ্যে আছে।<CR>আপনি কি এর উপর দিয়ে লিখতে চান?"
 
 #: source/importwizard/importwi.src#sMorePathsError3.String.Text
-#, fuzzy
 msgid  "Directories do not exist"
 msgstr "নির্দেশিকাগুলো নেই।"
 
 #: source/importwizard/importwi.src#sOverwriteallFiles.String.Text
-#, fuzzy
 msgid  "Do you want to overwrite documents without being asked?"
 msgstr "আপনি কি জিজ্ঞাসা ছারাই নথিগুলোর উপর দিয়ে লিখতে চান?"
 
 #: source/importwizard/importwi.src#sreeditMacro.String.Text
-#, fuzzy
 msgid  "Document macro has to be revised."
 msgstr "নথির ম্যাক্রো পূর্নবার দেখতে হবে।"
 
 #: source/importwizard/importwi.src#scouldNotsaveDocument.String.Text
-#, fuzzy
 msgid  "Document '<1>' could not be saved."
 msgstr "'<1>' নথিরটি সংরক্ষণ করা গেলো না।"
 
 #: source/importwizard/importwi.src#scouldNotopenDocument.String.Text
-#, fuzzy
 msgid  "Document '<1>' could not be opened."
 msgstr "'<1>' নথিরটি খোলা গেলো না।"
 
 #: source/importwizard/importwi.src#sConvertError1.String.Text
-#, fuzzy
 msgid  "Do you really want to terminate conversion at this point?"
 msgstr "আপনি কি এই পর্যায়ে রূপান্তর বন্ধ করতে চান?"
 
 #: source/importwizard/importwi.src#sConvertError2.String.Text
-#, fuzzy
 msgid  "Cancel Wizard"
 msgstr "উইজার্ড বাতিল করুন"
 
 #: source/importwizard/importwi.src#sRTErrorDesc.String.Text
-#, fuzzy
 msgid  "An unexpected error has occurred in the wizard."
 msgstr "উইজার্ডে অনাকাঙ্খিত সমস্যা হয়েছে।"
 
 #: source/importwizard/importwi.src#sRTErrorHeader.String.Text
-#, fuzzy
 msgid  "Error"
 msgstr "সমস্যা "
 
 #: source/importwizard/importwi.src#sPathDialogMessage.String.Text
-#, fuzzy
 msgid  "Select a directory"
 msgstr "একটি নির্দেশিকা নির্বাচন করুন"
 
 #: source/importwizard/importwi.src#sDialogTitle.String.Text
-#, fuzzy
 msgid  "Document Converter"
 msgstr "নথি পরিবর্তক"
 
 #: source/importwizard/importwi.src#sProgressPage1.String.Text
-#, fuzzy
 msgid  "Progress"
 msgstr "অগ্রগতি"
 
 #: source/importwizard/importwi.src#sProgressPage2.String.Text
-#, fuzzy
 msgid  "Retrieving the relevant documents:"
 msgstr "প্রাসঙ্গিক নথিগুলো আহরন করছি..."
 
 #: source/importwizard/importwi.src#sProgressPage3.String.Text
-#, fuzzy
 msgid  "Converting the documents"
 msgstr "নথিগুলো রূপান্তর করছি"
 
 #: source/importwizard/importwi.src#sProgressFound.String.Text
-#, fuzzy
 msgid  "Found:"
 msgstr "পাওয়া গেছে"
 
 #: source/importwizard/importwi.src#sProgressPage5.String.Text
-#, fuzzy
 msgid  "%1 found"
 msgstr "%1 পাওয়া গেছে"
 
 #: source/importwizard/importwi.src#sReady.String.Text
-#, fuzzy
 msgid  "Finished"
 msgstr "শেষ"
 
 #: source/importwizard/importwi.src#sXMLTemplateCheckbox_1_.String.Text
-#, fuzzy
 msgid  "Text templates"
 msgstr "লেখার খসড়াসমূহ"
 
 #: source/importwizard/importwi.src#sXMLTemplateCheckbox_2_.String.Text
-#, fuzzy
 msgid  "Spreadsheet templates"
 msgstr "স্প্রেডশীট খসড়াসমূহ"
 
 #: source/importwizard/importwi.src#sXMLTemplateCheckbox_3_.String.Text
-#, fuzzy
 msgid  "Drawing/presentation templates"
 msgstr "অংকন/উপস্থাপনের খসড়াসমূহ"
 
 #: source/importwizard/importwi.src#sXMLTemplateCheckbox_4_.String.Text
-#, fuzzy
 msgid  "Master documents"
 msgstr "প্রধান নথিসমূহ"
 
 #: source/importwizard/importwi.src#sXMLDocumentCheckbox_1_.String.Text
-#, fuzzy
 msgid  "Text documents"
 msgstr "Text ডকুমেন্টসমূহ "
 
 #: source/importwizard/importwi.src#sXMLDocumentCheckbox_2_.String.Text
-#, fuzzy
 msgid  "Spreadsheets"
 msgstr "স্প্রেডশীটসমূহ"
 
 #: source/importwizard/importwi.src#sXMLDocumentCheckbox_3_.String.Text
-#, fuzzy
 msgid  "Drawing/presentation documents"
 msgstr "অংকন/উপস্থাপনের নথিসমূহ"
 
 #: source/importwizard/importwi.src#sXMLDocumentCheckbox_4_.String.Text
-#, fuzzy
 msgid  "Master documents/formulas"
 msgstr "প্রধান নথিসমূহ/সূত্রসমূহ"
 
 #: source/importwizard/importwi.src#sXMLHelperApplications_1.String.Text
-#, fuzzy
 msgid  "Master documents"
 msgstr "প্রধান নথিসমূহ"
 
 #: source/importwizard/importwi.src#sXMLHelperApplications_2.String.Text
-#, fuzzy
 msgid  "Formulas"
 msgstr "সূত্রসমূহ"
 
 #: source/importwizard/importwi.src#sSourceDocuments.String.Text
-#, fuzzy
 msgid  "Source documents"
 msgstr "উৎস নথিসমূহ "
 
 #: source/importwizard/importwi.src#sTargetDocuments.String.Text
-#, fuzzy
 msgid  "Target documents"
 msgstr "গন্তব্য নথিসমূহ"
 
 #: source/importwizard/importwi.src#sCreateLogfile.String.Text
-#, fuzzy
 msgid  "Create log file"
 msgstr "লগ ফাইল তৈরি করুন"
 
 #: source/importwizard/importwi.src#sLogfileSummary.String.Text
-#, fuzzy
 msgid  "<COUNT> documents converted"
 msgstr "<COUNT> নথিসমূহে রূপান্তরিত হয়েছে"
 
 #: source/importwizard/importwi.src#sLogfileHelpText.String.Text
-#, fuzzy
 msgid  "A log file will be created in your work directory"
 msgstr "আপনার কর্ম নির্দেশিকাতে একটি লগ ফাইল তৈরি হবে"
 
 #: source/importwizard/importwi.src#sshowLogfile.String.Text
-#, fuzzy
 msgid  "Show log file"
 msgstr "লগ ফাইল দেখান"
 
 #: source/importwizard/importwi.src#sSumInclusiveSubDir.String.Text
-#, fuzzy
 msgid  "All subdirectories will be taken into account"
 msgstr "সবগুলো উপ-নির্দেশিকা বিবেচনা করা হবে"
 
 #: source/importwizard/importwi.src#sSumSaveDokumente.String.Text
-#, fuzzy
 msgid  "These will be exported to the following directory:"
 msgstr "এগুলো এই নির্দেশিকাতে রপ্তানী করা হবে:"
 
 #: source/importwizard/importwi.src#sSumSOTextDocuments.String.Text
 msgid  "All %PRODUCTNAME text documents contained in the following directory will be imported:"
-msgstr ""
+msgstr "এই নির্দেশিকার সবগুলো %PRODUCTNAME পাঠ্য নথি আমদানি করা হবে:"
 
 #: source/importwizard/importwi.src#sSumSOTableDocuments.String.Text
 msgid  "All %PRODUCTNAME spreadsheets contained in the following directory will be imported:"
-msgstr ""
+msgstr "এই নির্দেশিকার সবগুলো %PRODUCTNAME স্প্রেডশীট ডকুমেন্ট আমদানি করা হবে:"
 
 #: source/importwizard/importwi.src#sSumSODrawDocuments.String.Text
 msgid  "All %PRODUCTNAME drawing and presentation documents contained in the following directory will be imported:"
-msgstr ""
+msgstr "এই নির্দেশিকার সবগুলো %PRODUCTNAME অংকন এবং উপস্থাপনা নথি আমদানি করা হবে:"
 
 #: source/importwizard/importwi.src#sSumSOMathDocuments.String.Text
 msgid  "All %PRODUCTNAME formula documents contained in the following directory will be imported:"
-msgstr ""
+msgstr "এই নির্দেশিকার সবগুলো %PRODUCTNAME সূত্র নথি আমদানি করা হবে:"
 
 #: source/importwizard/importwi.src#sSumSOTextTemplates.String.Text
 msgid  "All %PRODUCTNAME text templates contained in the following directory will be imported:"
-msgstr ""
+msgstr "এই নির্দেশিকার সবগুলো %PRODUCTNAME পাঠ্য খসড়াসমূহ আমদানি করা হবে:"
 
 #: source/importwizard/importwi.src#sSumSOTableTemplates.String.Text
 msgid  "All %PRODUCTNAME table templates contained in the following directory will be imported:"
-msgstr ""
+msgstr "এই নির্দেশিকার সবগুলো %PRODUCTNAME টেবিল খসড়াসমূহ আমদানি করা হবে:"
 
 #: source/importwizard/importwi.src#sSumSODrawTemplates.String.Text
 msgid  "All %PRODUCTNAME drawing and presentation templates contained in the following directory will be imported:"
-msgstr ""
+msgstr "এই নির্দেশিকার সবগুলো %PRODUCTNAME ড্রয়িং এবং উপস্থাপনা খসড়াসমূহ আমদানি করা হবে:"
 
 #: source/importwizard/importwi.src#sSumSOGlobalDocuments.String.Text
 msgid  "All %PRODUCTNAME master documents contained in the following directory will be imported:"
-msgstr ""
+msgstr "এই নির্দেশিকার সবগুলো %PRODUCTNAME প্রধান নথি আমদানি করা হবে:"
 
 #: source/importwizard/importwi.src#sSumMSTextDocuments.String.Text
 msgid  "All Word documents contained in the following directory will be imported:"
-msgstr ""
+msgstr "এই নির্দেশিকার সবগুলো ওয়ার্ড নথি আমদানি করা হবে:"
 
 #: source/importwizard/importwi.src#sSumMSTableDocuments.String.Text
 msgid  "All Excel documents contained in the following directory will be imported:"
-msgstr ""
+msgstr "এই নির্দেশিকার সবগুলো এক্সেল নথি আমদানি করা হবে:"
 
 #: source/importwizard/importwi.src#sSumMSDrawDocuments.String.Text
 msgid  "All PowerPoint documents contained in the following directory will be imported:"
-msgstr ""
+msgstr "এই নির্দেশিকার সবগুলো পাওয়ারপয়েন্ট নথি আমদানি করা হবে:"
 
 #: source/importwizard/importwi.src#sSumMSTextTemplates.String.Text
 msgid  "All Word templates contained in the following directory will be imported:"
-msgstr ""
+msgstr "এই নির্দেশিকার সবগুলো ওয়ার্ড খসড়া আমদানি করা হবে:"
 
 #: source/importwizard/importwi.src#sSumMSTableTemplates.String.Text
 msgid  "All Excel templates contained in the following directory will be imported:"
-msgstr ""
+msgstr "এই নির্দেশিকার সবগুলো এক্সেল খসড়া আমদানি করা হবে:"
 
 #: source/importwizard/importwi.src#sSumMSDrawTemplates.String.Text
 msgid  "All PowerPoint templates contained in the following directory will be imported:"
-msgstr ""
+msgstr "এই নির্দেশিকার সবগুলো পাওয়ারপয়েন্ট খসড়া আমদানি করা হবে:"
 
 #: source/schedule/schedule.src#dlgCalTitle.String.Text
-#, fuzzy
 msgid  "%PRODUCTNAME Calendar"
 msgstr "%PRODUCTNAME বর্ষপঞ্জি"
 
 #: source/schedule/schedule.src#dlgCalTitleBack.String.Text
-#, fuzzy
 msgid  "Back"
 msgstr "পিছনে"
 
 #: source/schedule/schedule.src#dlgCalTitleOwnData.String.Text
-#, fuzzy
 msgid  "Personal Data"
 msgstr "ব্যাক্তিগত তথ্য"
 
 #: source/schedule/schedule.src#dlgSchdlTitle.String.Text
-#, fuzzy
 msgid  "Add Holidays to Calendar"
 msgstr "বর্ষপঞ্জিতে ছুটির দিনগুলো যোগ করুন"
 
 #: source/schedule/schedule.src#dlgOK.String.Text
-#, fuzzy
 msgid  "Create"
 msgstr "তৈরি করুন"
 
 #: source/schedule/schedule.src#dlgCancel.String.Text
-#, fuzzy
 msgid  "Cancel"
 msgstr "বাতিল কর"
 
 #: source/schedule/schedule.src#dlgCalFrameOption.String.Text
-#, fuzzy
 msgid  "Calendar"
 msgstr "বর্ষপঞ্জি"
 
 #: source/schedule/schedule.src#dlgCalOptionYear.String.Text
-#, fuzzy
 msgid  "~Year Overview"
 msgstr "বাৎসরিক নিরীক্ষণ (~Y)"
 
 #: source/schedule/schedule.src#dlgCalOptionMonth.String.Text
-#, fuzzy
 msgid  "~Month"
 msgstr "মাস (~M)"
 
 #: source/schedule/schedule.src#dlgSchdlDescription.String.Text
-#, fuzzy
 msgid  "Add holidays for"
 msgstr "ছুটির দিনগুলো যোগ কর, এর জন্য"
 
 #: source/schedule/schedule.src#dlgSchdlCountry.String.Text
-#, fuzzy
 msgid  "USA"
 msgstr "যুক্তরাষ্ট্র"
 
 #: source/schedule/schedule.src#dlgTime.String.Text
-#, fuzzy
 msgid  "Time Frame"
 msgstr "সময়সীমা"
 
 #: source/schedule/schedule.src#dlgYear.String.Text
-#, fuzzy
 msgid  "Year"
 msgstr "বছর"
 
 #: source/schedule/schedule.src#dlgCalMonth.String.Text
-#, fuzzy
 msgid  "Month"
 msgstr "মাস"
 
 #: source/schedule/schedule.src#dlgCalOwnData.String.Text
-#, fuzzy
 msgid  "Personal Data"
 msgstr "ব্যাক্তিগত তথ্য"
 
 #: source/schedule/schedule.src#dlgCalInsert.String.Text
-#, fuzzy
 msgid  "~Insert"
 msgstr "ঢুকান (~I)"
 
 #: source/schedule/schedule.src#dlgCalDelete.String.Text
-#, fuzzy
 msgid  "~Delete"
 msgstr "মুছুন (~D)"
 
 #: source/schedule/schedule.src#dlgCalNewEvent.String.Text
-#, fuzzy
 msgid  "New Event"
 msgstr "নতুন ইভেন্ট"
 
 #: source/schedule/schedule.src#dlgCalEvent.String.Text
-#, fuzzy
 msgid  "Event"
 msgstr "ইভেন্ট"
 
 #: source/schedule/schedule.src#dlgCalEventOnce.String.Text
-#, fuzzy
 msgid  "One-Time"
 msgstr "একবার"
 
 #: source/schedule/schedule.src#dlgCalEventDay.String.Text
-#, fuzzy
 msgid  "Day"
 msgstr "দিন"
 
 #: source/schedule/schedule.src#dlgCalEventMonth.String.Text
-#, fuzzy
 msgid  "Month"
 msgstr "মাস"
 
 #: source/schedule/schedule.src#dlgCalEventYear.String.Text
-#, fuzzy
 msgid  "Year"
 msgstr "বছর"
 
 #: source/schedule/schedule.src#dlgBitmapFile.String.Text
-#, fuzzy
 msgid  "usa.bmp"
 msgstr "usa.bmp"
 
 #: source/schedule/schedule.src#dlgState.String.Text
-#, fuzzy
 msgid  "Public holidays"
 msgstr "সরকারী ছুটির দিনসমূহ"
 
 #: source/schedule/schedule.src#dlgMonth.String.Text
-#, fuzzy
 msgid  "January"
 msgstr "জানুয়ারী"
 
 #: source/schedule/schedule.src#dlgMonth+1.String.Text
-#, fuzzy
 msgid  "February"
 msgstr "ফেব্রুয়ারী"
 
 #: source/schedule/schedule.src#dlgMonth+2.String.Text
-#, fuzzy
 msgid  "March"
 msgstr "মার্চ"
 
 #: source/schedule/schedule.src#dlgMonth+3.String.Text
-#, fuzzy
 msgid  "April"
 msgstr "এপ্রিল"
 
 #: source/schedule/schedule.src#dlgMonth+4.String.Text
-#, fuzzy
 msgid  "May"
 msgstr "মে"
 
 #: source/schedule/schedule.src#dlgMonth+5.String.Text
-#, fuzzy
 msgid  "June"
 msgstr "জুন"
 
 #: source/schedule/schedule.src#dlgMonth+6.String.Text
-#, fuzzy
 msgid  "July"
 msgstr "জুলাই"
 
 #: source/schedule/schedule.src#dlgMonth+7.String.Text
-#, fuzzy
 msgid  "August"
 msgstr "অাগস্ট"
 
 #: source/schedule/schedule.src#dlgMonth+8.String.Text
-#, fuzzy
 msgid  "September"
 msgstr "সেপ্টেম্বর"
 
 #: source/schedule/schedule.src#dlgMonth+9.String.Text
-#, fuzzy
 msgid  "October"
 msgstr "অক্টোবর"
 
 #: source/schedule/schedule.src#dlgMonth+10.String.Text
-#, fuzzy
 msgid  "November"
 msgstr "নভেম্বর"
 
 #: source/schedule/schedule.src#dlgMonth+11.String.Text
-#, fuzzy
 msgid  "December"
 msgstr "ডিসেম্বর"
 
 #: source/schedule/schedule.src#msgCalErrorTitle.String.Text
-#, fuzzy
 msgid  "Yearly / Monthly Calendar"
 msgstr "বাৎসরিক/মাসিক বর্ষপঞ্জি"
 
 #: source/schedule/schedule.src#msgCalError.String.Text
-#, fuzzy
 msgid  "An error occurred while creating the calendar."
 msgstr "বর্ষপঞ্জি তৈরির সময় একটি সমস্যা হয়েছে।"
 
 #: source/schedule/schedule.src#msgCalRemoveTitle.String.Text
-#, fuzzy
 msgid  "Delete event entries"
 msgstr "ইভেন্ট এন্ট্রিগুলো মুছুন"
 
 #: source/schedule/schedule.src#msgCalRemove.String.Text
-#, fuzzy
 msgid  "Delete the selected entries?"
 msgstr "নির্বাচিত এন্ট্রিগুলো মুছতে চান?"
 
 #: source/schedule/schedule.src#stlWorkday.String.Text
-#, fuzzy
 msgid  "Workweek"
 msgstr "কার্যসম্পাহ"
 
 #: source/schedule/schedule.src#stlWeekend.String.Text
-#, fuzzy
 msgid  "Weekend"
 msgstr "সাপ্তাহিক ছুটির দিন"
 
 #: source/schedule/schedule.src#nameCalYear.String.Text
-#, fuzzy
 msgid  "Calendar"
 msgstr "বর্ষপঞ্জি"
 
 #: source/schedule/schedule.src#nameCalMonth.String.Text
-#, fuzzy
 msgid  "Month"
 msgstr "মাস"
 
 #: source/schedule/schedule.src#sProgress.String.Text
-#, fuzzy
 msgid  "Progress:"
 msgstr "অগ্রগতি"
 
 #: source/template/template.src#SAMPLES.String.Text
 msgid  "In order to use the full functionality of this sample, create a document that is based on this template."
-msgstr ""
+msgstr "এই উদাহরণের পূর্নসুবিধা ভোগ করার জন্য এই খসড়ার উপর ভিত্তি করে একটি ডকুমেন্ট তৈরি করুন।"
 
 #: source/template/template.src#SAMPLES + 1.String.Text
-#, fuzzy
 msgid  "Remarks"
 msgstr "মন্তব্য"
 
 #: source/template/template.src#STYLES.String.Text
-#, fuzzy
 msgid  "Theme Selection"
 msgstr "থিম নির্বাচন"
 
 #: source/template/template.src#STYLES + 1.String.Text
 msgid  "Error while saving the document to the clipboard! The following action cannot be undone."
-msgstr ""
+msgstr "ক্লিপবোর্ডে নথিটি সংরক্ষন করার সময় সমস্যা হয়েছে! পরবর্তী কাজ পূর্বাবস্থায় ফিরিয়ে আনা যাবেনা।"
 
 #: source/template/template.src#STYLES + 2.String.Text
-#, fuzzy
 msgid  "~Cancel"
 msgstr "বাতিল করুন (~C)"
 
 #: source/template/template.src#STYLES + 3.String.Text
-#, fuzzy
 msgid  "~OK"
 msgstr "ঠিক আছে (~O)"
 
 #: source/template/template.src#AgendaDlgName.String.Text
-#, fuzzy
 msgid  "Minutes Template"
 msgstr "মিনিটের খসড়া"
 
 #: source/template/template.src#AgendaDlgNoCancel.String.Text
-#, fuzzy
 msgid  "An option must be confirmed."
 msgstr "একটি পছন্দ অবশ্যই নিশ্চিত করতে হবে।"
 
 #: source/template/template.src#AgendaDlgFrame.String.Text
-#, fuzzy
 msgid  "Minutes Type"
 msgstr "মিনিটের ধরন"
 
 #: source/template/template.src#AgendaDlgButton1.String.Text
-#, fuzzy
 msgid  "Results Minutes"
 msgstr "ফলাফল মিনিটগুলো"
 
 #: source/template/template.src#AgendaDlgButton2.String.Text
-#, fuzzy
 msgid  "Evaluation Minutes"
 msgstr "মূল্যায়নের মিনিটগুলো"
 
 #: source/template/template.src#CorrespondenceNoTextmark.String.Text
-#, fuzzy
 msgid  "The bookmark 'Recipient' is missing."
 msgstr "'Recipient' বুকমার্কটি নেই।"
 
 #: source/template/template.src#CorrespondenceNoTextmark+1.String.Text
-#, fuzzy
 msgid  "Form letter fields can not be included."
 msgstr "ফর্মের চিঠির ক্ষেত্রগুলো অন্তর্ভুক্ত করা গেল না।"
 
 #: source/template/template.src#CorrespondenceMsgError.String.Text
-#, fuzzy
 msgid  "An error has occurred."
 msgstr "একটি সমস্যা হয়েছে।"
 
 #: source/template/template.src#CorrespondenceDialog.String.Text
-#, fuzzy
 msgid  "Addressee"
 msgstr "প্রাপক"
 
 #: source/template/template.src#CorrespondenceDialog+1.String.Text
-#, fuzzy
 msgid  "One recipient"
 msgstr "একজন প্রাপক"
 
 #: source/template/template.src#CorrespondenceDialog+2.String.Text
-#, fuzzy
 msgid  "Several recipients (address database)"
 msgstr "কয়েকজন প্রাপক (অ্যাড্রেস ডাটাবেজ)"
 
 #: source/template/template.src#CorrespondenceDialog+3.String.Text
-#, fuzzy
 msgid  "Use of This Template"
 msgstr "এই খসড়ার ব্যবহার"
 
 #: source/template/template.src#CorrespondenceFields.String.Text
-#, fuzzy
 msgid  "Click placeholder and overwrite"
 msgstr "প্লেসহোল্ডারে ক্লিক করুন এবং উপর দিয়ে লিখুন"
 
 #: source/template/template.src#CorrespondenceFields+1.String.Text
-#, fuzzy
 msgid  "Company"
 msgstr "কোম্পানি"
 
 #: source/template/template.src#CorrespondenceFields+2.String.Text
-#, fuzzy
 msgid  "Department"
 msgstr "বিভাগ "
 
 #: source/template/template.src#CorrespondenceFields+3.String.Text
-#, fuzzy
 msgid  "First Name"
 msgstr "নামের প্রথম অংশ"
 
 #: source/template/template.src#CorrespondenceFields+4.String.Text
-#, fuzzy
 msgid  "Last Name"
 msgstr "নামের শেষ অংশ"
 
 #: source/template/template.src#CorrespondenceFields+5.String.Text
-#, fuzzy
 msgid  "Street"
 msgstr "রাস্তা"
 
 #: source/template/template.src#CorrespondenceFields+6.String.Text
-#, fuzzy
 msgid  "Country"
 msgstr "দেশ"
 
 #: source/template/template.src#CorrespondenceFields+7.String.Text
-#, fuzzy
 msgid  "ZIP/Postal Code"
 msgstr "জিপ/পোস্টাল কোড"
 
 #: source/template/template.src#CorrespondenceFields+8.String.Text
-#, fuzzy
 msgid  "City"
 msgstr "শহর"
 
 #: source/template/template.src#CorrespondenceFields+9.String.Text
-#, fuzzy
 msgid  "Title"
 msgstr "শিরোনাম "
 
 #: source/template/template.src#CorrespondenceFields+10.String.Text
-#, fuzzy
 msgid  "Position"
 msgstr "পদবী"
 
 #: source/template/template.src#CorrespondenceFields+11.String.Text
-#, fuzzy
 msgid  "Form of Address"
 msgstr "ঠিকানার ফর্ম"
 
 #: source/template/template.src#CorrespondenceFields+12.String.Text
-#, fuzzy
 msgid  "Initials"
 msgstr "নামের অদ্যাক্ষর"
 
 #: source/template/template.src#CorrespondenceFields+13.String.Text
-#, fuzzy
 msgid  "Salutation"
 msgstr "সম্বোধন"
 
 #: source/template/template.src#CorrespondenceFields+14.String.Text
-#, fuzzy
 msgid  "Home Phone"
 msgstr "বাসার ফোন"
 
 #: source/template/template.src#CorrespondenceFields+15.String.Text
-#, fuzzy
 msgid  "Work Phone"
 msgstr "কর্মস্থলের ফোন"
 
 #: source/template/template.src#CorrespondenceFields+16.String.Text
-#, fuzzy
 msgid  "Fax"
 msgstr "ফ্যাক্স"
 
 #: source/template/template.src#CorrespondenceFields+17.String.Text
-#, fuzzy
 msgid  "E-Mail"
 msgstr "ইমেইল"
 
 #: source/template/template.src#CorrespondenceFields+18.String.Text
-#, fuzzy
 msgid  "URL"
 msgstr "URL"
 
 #: source/template/template.src#CorrespondenceFields+19.String.Text
-#, fuzzy
 msgid  "Notes"
 msgstr "মন্তব্য"
 
 #: source/template/template.src#CorrespondenceFields+20.String.Text
-#, fuzzy
 msgid  "Alt. Field 1"
 msgstr "বিকল্প. ক্ষেত্র ১"
 
 #: source/template/template.src#CorrespondenceFields+21.String.Text
-#, fuzzy
 msgid  "Alt. Field 2"
 msgstr "বিকল্প. ক্ষেত্র ২"
 
 #: source/template/template.src#CorrespondenceFields+22.String.Text
-#, fuzzy
 msgid  "Alt. Field 3"
 msgstr "বিকল্প. ক্ষেত্র ৩"
 
 #: source/template/template.src#CorrespondenceFields+23.String.Text
-#, fuzzy
 msgid  "Alt. Field 4"
 msgstr "বিকল্প. ক্ষেত্র ৪"
 
 #: source/template/template.src#CorrespondenceFields+24.String.Text
-#, fuzzy
 msgid  "ID"
 msgstr "আইডি"
 
 #: source/template/template.src#CorrespondenceFields+25.String.Text
-#, fuzzy
 msgid  "State"
 msgstr "রাষ্ট্র"
 
 #: source/template/template.src#CorrespondenceFields+26.String.Text
-#, fuzzy
 msgid  "Office Phone"
 msgstr "অফিস ফোন"
 
 #: source/template/template.src#CorrespondenceFields+27.String.Text
-#, fuzzy
 msgid  "Pager"
 msgstr "পেজার"
 
 #: source/template/template.src#CorrespondenceFields+28.String.Text
-#, fuzzy
 msgid  "Mobile Phone"
 msgstr "মোবাইল ফোন"
 
 #: source/template/template.src#CorrespondenceFields+29.String.Text
-#, fuzzy
 msgid  "Other Phone"
 msgstr "অন্যান্য ফোন"
 
 #: source/template/template.src#CorrespondenceFields+30.String.Text
-#, fuzzy
 msgid  "Calendar URL"
 msgstr "বর্ষপঞ্জির URL"
 
 #: source/template/template.src#CorrespondenceFields+31.String.Text
-#, fuzzy
 msgid  "Invite"
 msgstr "আমন্ত্রন জানাও"
 
 #: source/template/template.src#TextField.String.Text
-#, fuzzy
 msgid  "User data field is not defined!"
 msgstr "ব্যবহারকারীর তথ্যের ফিল্ড সংজ্ঞায়িত নয়!"
 
 #: source/template/template.src#Newsletter.String.Text
-#, fuzzy
 msgid  "General layout"
 msgstr "সাধারণ রূপরেখা"
 
 #: source/template/template.src#Newsletter + 1.String.Text
-#, fuzzy
 msgid  "Default layout"
 msgstr "স্বাভাবিক অবস্থায় ব্যবহৃত রূপরেখা"
 
 #: source/template/template.src#Newsletter + 2.String.Text
-#, fuzzy
 msgid  "Commemorative publication layout"
 msgstr "স্বারক প্রকাশনার রূপরেখা"
 
 #: source/template/template.src#Newsletter + 3.String.Text
-#, fuzzy
 msgid  "Brochure layout"
 msgstr "বিজ্ঞাপনের রূপরেখা"
 
 #: source/template/template.src#Newsletter + 10.String.Text
-#, fuzzy
 msgid  "Format"
 msgstr "বিন্যাস"
 
 #: source/template/template.src#Newsletter + 11.String.Text
-#, fuzzy
 msgid  "Single-sided"
 msgstr "একপাশ বিশিষ্ট"
 
 #: source/template/template.src#Newsletter + 12.String.Text
-#, fuzzy
 msgid  "Double-sided"
 msgstr "উভয়পাশ বিশিষ্ট"

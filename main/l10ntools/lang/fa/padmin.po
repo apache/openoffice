@@ -33,7 +33,7 @@ msgstr ""
 
 #: source/padialog.src#RID_FONTIMPORT_DIALOG.RID_FIMP_TXT_HELP.FixedText.Text
 msgid  "Please select the folder from which you want to import fonts. Add the selected fonts by clicking the OK button."
-msgstr ""
+msgstr "لطفاً پوشه‌ای را که می‌خواهید قلم‌ها را از آن وارد کنید، انتخاب کنید. با کلیک کردن روی دکمهٔ تأیید قلم‌های انتخاب شده را اضافه کنید."
 
 #: source/padialog.src#RID_FONTIMPORT_DIALOG.RID_FIMP_FL_FROM.FixedLine.Text
 msgid  "Source directory"
@@ -61,7 +61,7 @@ msgstr "اضافه کردن قلم‌ها"
 
 #: source/padialog.src#RID_FONTIMPORT_DIALOG.RID_FIMP_STR_QUERYOVERWRITE.String.Text
 msgid  "Do you really want to overwrite this font file?\n   %s"
-msgstr ""
+msgstr "آیا واقعاً می‌خواهید روی این پرونده‌ی قلم بنویسید؟\n   %s"
 
 #: source/padialog.src#RID_FONTIMPORT_DIALOG.RID_FIMP_STR_OVERWRITEALL.String.Text
 msgid  "All"
@@ -76,12 +76,14 @@ msgid  "A format file (with an .afm extension) has not been found for the font\n
 msgstr ""
 
 #: source/padialog.src#RID_FONTIMPORT_DIALOG.RID_FIMP_STR_AFMCOPYFAILED.String.Text
+#, fuzzy
 msgid  "The metric file for the font file\n   %s\ncould not be copied. The font will not be installed."
-msgstr ""
+msgstr "نسخه‌برداری از پرونده‌ی قلم\n   %s\nممکن نیست. قلم نصب نخواهد شد."
 
 #: source/padialog.src#RID_FONTIMPORT_DIALOG.RID_FIMP_STR_FONTCOPYFAILED.String.Text
+#, fuzzy
 msgid  "The font file\n   %s\ncould not be copied. The font will not be installed."
-msgstr ""
+msgstr "نسخه‌برداری از پرونده‌ی قلم\n   %s\nممکن نیست. قلم نصب نخواهد شد."
 
 #: source/padialog.src#RID_FONTIMPORT_DIALOG.RID_FIMP_STR_NOWRITEABLEFONTSDIR.String.Text
 msgid  "A directory containing a writable fonts.dir file is not located in the Fontpath. Therefore, fonts cannot be installed."
@@ -373,8 +375,9 @@ msgid  "~Selection of drivers"
 msgstr "ا~نتخاب گرداننده"
 
 #: source/padialog.src#RID_PPDIMPORT_DLG.RID_PPDIMP_TXT_DRIVER.FixedText.Text
-msgid  "Please select the drivers to install and press "%s"."
-msgstr ""
+#, fuzzy
+msgid  "Please select the drivers to install and press \"%s\"."
+msgstr "لطفاً گرداننده‌هایی که می‌خواهید نصب شوند را انتخاب کرده و «%s» را فشار دهید."
 
 #: source/padialog.src#RID_PPDIMPORT_DLG.RID_PPDIMP_STR_LOADINGPPD.String.Text
 #, fuzzy
@@ -387,8 +390,9 @@ msgid  "Driver Installation"
 msgstr "نصب گرداننده"
 
 #: source/padialog.src#RID_QUERY_REMOVEDRIVER.String.Text
-msgid  "Do you really want to remove the driver "%s"?"
-msgstr ""
+#, fuzzy
+msgid  "Do you really want to remove the driver \"%s\"?"
+msgstr "آیا واقعاً می‌خواهید گردانندهٔ «%s» را حذف کنید؟"
 
 #: source/padialog.src#RID_QUERY_REMOVEPRINTER.String.Text
 #, fuzzy
@@ -401,20 +405,23 @@ msgid  "Do you really want to remove the selected fonts ?"
 msgstr "آیا واقعاً می‌خواهید قلم‌های انتخاب شده را حذف کنید؟"
 
 #: source/padialog.src#RID_QUERY_DRIVERUSED.String.Text
-msgid  "There are still printers using the driver "%s". Do you really want to remove it? The corresponding printers will also be removed."
-msgstr ""
+#, fuzzy
+msgid  "There are still printers using the driver \"%s\". Do you really want to remove it? The corresponding printers will also be removed."
+msgstr "هنوز چاپگرهایی هستند که از گردانندهٔ «%s» استفاده می‌کنند. آیا واقعاً می‌خواهید این گرداننده را حذف کنید؟ چاپگرهای مربوطه هم حذف خواهند شد."
 
 #: source/padialog.src#RID_ERR_REMOVESGENPRT.String.Text
-msgid  "The driver "%s" is always needed and can therefore not be removed."
-msgstr ""
+#, fuzzy
+msgid  "The driver \"%s\" is always needed and can therefore not be removed."
+msgstr "گردانندهٔ «%s» همیشه مورد نیاز است و بنابراین هیچ‌گاه نمی‌توان آن را حذف کرد."
 
 #: source/padialog.src#RID_ERR_REMOVEDRIVERFAILED.String.Text
-msgid  "The driver "%s1" could not be removed. It was not possible to remove the file\n\n%s2."
+msgid  "The driver \"%s1\" could not be removed. It was not possible to remove the file\n\n%s2."
 msgstr ""
 
 #: source/padialog.src#RID_ERR_REMOVEDEFAULTDRIVER.String.Text
-msgid  "The driver "%s" is used by your default printer. Therefore, it cannot be removed."
-msgstr ""
+#, fuzzy
+msgid  "The driver \"%s\" is used by your default printer. Therefore, it cannot be removed."
+msgstr "گردانندهٔ «%s» مورد استفادهٔ چاپگر پیش‌فرض شماست، بنابراین نمی‌توان آن را حذف کرد."
 
 #: source/padialog.src#RID_ERR_PRINTERNOTREMOVEABLE.String.Text
 #, fuzzy
@@ -422,20 +429,24 @@ msgid  "The printer %s cannot be removed."
 msgstr "نمی‌توان چاپگر %s را حذف کرد."
 
 #: source/padialog.src#RID_TXT_PRINTERALREADYEXISTS.String.Text
-msgid  "A printer named "%s" already exists. This printer will not be imported."
-msgstr ""
+#, fuzzy
+msgid  "A printer named \"%s\" already exists. This printer will not be imported."
+msgstr "چاپگری به نام «%s» از قبل موجود است. این چاپگر وارد نخواهد شد."
 
 #: source/padialog.src#RID_TXT_PRINTERWITHOUTCOMMAND.String.Text
-msgid  "The printer "%s" has no valid configuration and, therefore, cannot be imported."
-msgstr ""
+#, fuzzy
+msgid  "The printer \"%s\" has no valid configuration and, therefore, cannot be imported."
+msgstr "چاپگر «%s» پیکربندی معتبری ندارد و بنابراین نمی‌توان آن را وارد کرد."
 
 #: source/padialog.src#RID_TXT_DRIVERDOESNOTEXIST.String.Text
-msgid  "The driver for the printer "%s1" (%s2) is not installed. Therefore the printer cannot be imported."
-msgstr ""
+#, fuzzy
+msgid  "The driver for the printer \"%s1\" (%s2) is not installed. Therefore the printer cannot be imported."
+msgstr "گردانندهٔ چاپگر «%s1» (%s2) نصب نشده است، بنابراین نمی‌توان چاپگر را وارد کرد."
 
 #: source/padialog.src#RID_TXT_PRINTERADDFAILED.String.Text
-msgid  "The printer "%s" could not be added."
-msgstr ""
+#, fuzzy
+msgid  "The printer \"%s\" could not be added."
+msgstr "اضافه کردن چاپگر «%s» ممکن نبود."
 
 #: source/padialog.src#RID_ADD_PRINTER_DIALOG.RID_ADDP_BTN_FINISH.OKButton.Text
 #, fuzzy
@@ -573,11 +584,11 @@ msgid  "~Help"
 msgstr "~راهنما"
 
 #: source/padialog.src#RID_ADDP_PAGE_COMMAND.RID_ADDP_CMD_STR_PDFHELP.String.Text
-msgid  "The command line for PDF converters is executed as follows: for each document printed, "(TMP)" in the command line is replaced by a temporary file and "(OUTFILE)" in the command line is replaced by the target PDF file name. If "(TMP)" is in the command line, the PostScript code will be supplied via a file, otherwise via standard input (i.e. as a pipe)."
+msgid  "The command line for PDF converters is executed as follows: for each document printed, \"(TMP)\" in the command line is replaced by a temporary file and \"(OUTFILE)\" in the command line is replaced by the target PDF file name. If \"(TMP)\" is in the command line, the PostScript code will be supplied via a file, otherwise via standard input (i.e. as a pipe)."
 msgstr ""
 
 #: source/padialog.src#RID_ADDP_PAGE_COMMAND.RID_ADDP_CMD_STR_FAXHELP.String.Text
-msgid  "The command line for fax connections is executed as follows: for each fax sent, "(TMP)" in the command line is replaced by a temporary file and "(PHONE)" in the command line is replaced by the fax number. If "(TMP)" appears in the command line, the PostScript code will be supplied via a file, otherwise it is passed as standard input (i.e. as a pipe)."
+msgid  "The command line for fax connections is executed as follows: for each fax sent, \"(TMP)\" in the command line is replaced by a temporary file and \"(PHONE)\" in the command line is replaced by the fax number. If \"(TMP)\" appears in the command line, the PostScript code will be supplied via a file, otherwise it is passed as standard input (i.e. as a pipe)."
 msgstr ""
 
 #: source/padialog.src#RID_ADDP_PAGE_OLDPRINTERS.RID_ADDP_STR_TITLE.String.Text
@@ -586,8 +597,9 @@ msgid  "Import printers from old versions"
 msgstr "وارد کردن چاپگر از نسخه‌های قدیمی"
 
 #: source/padialog.src#RID_ADDP_PAGE_OLDPRINTERS.RID_ADDP_OLD_TXT_PRINTERS.FixedText.Text
+#, fuzzy
 msgid  "~These printers can be imported. Please select the ones you want to import."
-msgstr ""
+msgstr "~این چاپگرها را می‌توان وارد سیستم کرد. لطفاً آنهایی که می‌خواهید وارد شود را انتخاب کنید."
 
 #: source/padialog.src#RID_ADDP_PAGE_OLDPRINTERS.RID_ADDP_OLD_BTN_SELECTALL.PushButton.Text
 #, fuzzy
@@ -928,7 +940,7 @@ msgid  "~Remove"
 msgstr "~حذف شود"
 
 #: source/rtsetup.src#RID_RTS_COMMANDPAGE.RID_RTS_CMD_STR_PDFHELP.String.Text
-msgid  "The command line for PDF converters is executed as follows: for each document printed, "(TMP)" in the command line is replaced by a temporary file and "(OUTFILE)" in the command line is replaced by the target PDF file name. If "(TMP)" is in the command line, the PostScript code will be supplied via a file, otherwise via standard input (i.e. as a pipe)."
+msgid  "The command line for PDF converters is executed as follows: for each document printed, \"(TMP)\" in the command line is replaced by a temporary file and \"(OUTFILE)\" in the command line is replaced by the target PDF file name. If \"(TMP)\" is in the command line, the PostScript code will be supplied via a file, otherwise via standard input (i.e. as a pipe)."
 msgstr ""
 
 #: source/rtsetup.src#RID_RTS_COMMANDPAGE.RID_RTS_CMD_STR_PRINTERHELP.String.Text
@@ -936,7 +948,7 @@ msgid  "The command line for printer devices is executed as follows: the generat
 msgstr ""
 
 #: source/rtsetup.src#RID_RTS_COMMANDPAGE.RID_RTS_CMD_STR_FAXHELP.String.Text
-msgid  "The command line for fax devices is executed as follows: for each fax sent, "(TMP)" in the command line is replaced by a temporary file and "(PHONE)" in the command line is replaced by the fax number. If "(TMP)" appears in the command line, the PostScript code will be supplied via a file, otherwise it is passed as standard input (i.e. as a pipe)."
+msgid  "The command line for fax devices is executed as follows: for each fax sent, \"(TMP)\" in the command line is replaced by a temporary file and \"(PHONE)\" in the command line is replaced by the fax number. If \"(TMP)\" appears in the command line, the PostScript code will be supplied via a file, otherwise it is passed as standard input (i.e. as a pipe)."
 msgstr ""
 
 #: source/rtsetup.src#RID_RTS_OTHERPAGE.RID_RTS_OTHER_LEFTMARGIN_TXT.FixedText.Text

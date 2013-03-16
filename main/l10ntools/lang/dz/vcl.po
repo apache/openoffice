@@ -136,6 +136,10 @@ msgid  "km"
 msgstr "ཀེ་ཨེམ།"
 
 #: source/src/units.src#SV_FUNIT_STRINGS.FUNIT_TWIP.ItemList.item
+msgid  "twips"
+msgstr "ཊི་དྲབ་ལུ་ཨའི་པི་ཨེས།"
+
+#: source/src/units.src#SV_FUNIT_STRINGS.FUNIT_TWIP.ItemList.item
 msgid  "twip"
 msgstr "ཊི་དྲབ་ལུ་ཨའི་པི།"
 
@@ -148,32 +152,16 @@ msgid  "pi"
 msgstr "པི་ཨའི།"
 
 #: source/src/units.src#SV_FUNIT_STRINGS.FUNIT_INCH.ItemList.item
-msgid  "inch"
-msgstr "ཨིན་ཆི།"
-
-#: source/src/units.src#SV_FUNIT_STRINGS.FUNIT_FOOT.ItemList.item
-msgid  "feet"
-msgstr "ཕིཊ།"
-
-#: source/src/units.src#SV_FUNIT_STRINGS.FUNIT_MILE.ItemList.item
-msgid  "mile"
-msgstr "མ་ཡིལ"
-
-#: source/src/units.src#SV_FUNIT_STRINGS.FUNIT_PERCENT.ItemList.item
-msgid  "%"
-msgstr "%"
-
-#: source/src/units.src#SV_FUNIT_STRINGS.FUNIT_TWIP.ItemList.item
-msgid  "twips"
-msgstr "ཊི་དྲབ་ལུ་ཨའི་པི་ཨེས།"
-
-#: source/src/units.src#SV_FUNIT_STRINGS.FUNIT_INCH.ItemList.item
-msgid  """
-msgstr ""
+msgid  "\""
+msgstr "\""
 
 #: source/src/units.src#SV_FUNIT_STRINGS.FUNIT_INCH.ItemList.item
 msgid  "in"
 msgstr "ཨའི་ཨེན།"
+
+#: source/src/units.src#SV_FUNIT_STRINGS.FUNIT_INCH.ItemList.item
+msgid  "inch"
+msgstr "ཨིན་ཆི།"
 
 #: source/src/units.src#SV_FUNIT_STRINGS.FUNIT_FOOT.ItemList.item
 msgid  "'"
@@ -187,13 +175,25 @@ msgstr "ཕི་ཊི།"
 msgid  "foot"
 msgstr "ཕུཊ།"
 
+#: source/src/units.src#SV_FUNIT_STRINGS.FUNIT_FOOT.ItemList.item
+msgid  "feet"
+msgstr "ཕིཊ།"
+
 #: source/src/units.src#SV_FUNIT_STRINGS.FUNIT_MILE.ItemList.item
 msgid  "miles"
 msgstr "མ་ཡིལསི།"
 
+#: source/src/units.src#SV_FUNIT_STRINGS.FUNIT_MILE.ItemList.item
+msgid  "mile"
+msgstr "མ་ཡིལ"
+
+#: source/src/units.src#SV_FUNIT_STRINGS.FUNIT_PERCENT.ItemList.item
+msgid  "%"
+msgstr "%"
+
 #: source/src/stdtext.src#SV_STDTEXT_SERVICENOTAVAILABLE.String.Text
 msgid  "The component (%s) could not be loaded.\nPlease start setup with the repair option."
-msgstr ""
+msgstr "ཆ་ཤས་(%s) མངོན་གསལ་འབད་མ་ཚུགས \nགཞི་སྒྲིག་འདི་ཉམས་བཅོས་གདམ་ཁ་དང་མཉམ་འགོ་བཙུགས་གནང་།"
 
 #: source/src/stdtext.src#SV_STDTEXT_DONTHINTAGAIN.String.Text
 msgid  "Do not show this information again."
@@ -213,11 +213,11 @@ msgstr "ཐོན་རིམ་ཕྱི་འགྱུར།"
 
 #: source/src/stdtext.src#SV_ACCESSERROR_BRIDGE_MSG.String.Text
 msgid  "%PRODUCTNAME %PRODUCTVERSION requires a Java Access Bridge 1.0.3 or later version to support accessibility."
-msgstr ""
+msgstr "%PRODUCTNAME %PRODUCTVERSION ལུ་ཇ་བ་ཨེ་སིས་བི་རིཇ་ 1.0.3 དགོཔ་ ཡངན འཛུལ་སྤྱོད་ལུ་རྒྱབ་སྐྱོར་འབད་མིའི་ཤུལ་མའི་ཐོན་རིམ་དགོ"
 
 #: source/src/stdtext.src#SV_ACCESSERROR_OK_CANCEL_MSG.String.Text
 msgid  "Click '%OK' to start %PRODUCTNAME %PRODUCTVERSION without accessibility support, or click '%CANCEL' to exit %PRODUCTNAME %PRODUCTVERSION."
-msgstr ""
+msgstr "འཛུལ་སྤྱོད་རྒྱབ་སྐྱོར་མེད་པའི་སྒོལས་  %PRODUCTNAME %PRODUCTVERSION འགོ་བཙུག་ནི་ལུ་ '%OK'གུ་ཨེབ་གཏང་འབད་ ཡང་ན་ %PRODUCTNAME %PRODUCTVERSION ཕྱིར་འཐོན་འབད་ནི་གི་དོན་ལུ་ '%CANCEL'གུ་ཨེབ་གཏང་འབད། "
 
 #: source/src/stdtext.src#SV_ACCESSERROR_MISSING_BRIDGE.String.Text
 msgid  "No Java Access Bridge"
@@ -229,7 +229,7 @@ msgstr "སྐྱོན་ཅན་ཇ་བ་གཞི་བཙུགས།"
 
 #: source/src/stdtext.src#SV_ACCESSERROR_JAVA_MSG.String.Text
 msgid  "%PRODUCTNAME %PRODUCTVERSION requires Java 1.4.0_02 or later version to support accessibility."
-msgstr ""
+msgstr "%PRODUCTNAME %PRODUCTVERSION  ལུ་ཇ་བ་1.4.0_02 དགོཔ་ ཡངན འཛུལ་སྤྱོད་ལུ་རྒྱབ་སྐྱོར་འབད་མིའི་ཤུལ་མའི་ཐོན་རིམ་དགོ"
 
 #: source/src/stdtext.src#SV_ACCESSERROR_MISSING_JAVA.String.Text
 msgid  "No Java Installation"

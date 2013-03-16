@@ -65,7 +65,7 @@ msgstr "השם '#1' כבר הושם ולא ניתן להשמה שוב."
 
 #: source/core/resource/strings.src#RID_STR_ERROR_WRONG_ARGUMENT.String.Text
 msgid  "You tried to set an illegal argument. Please have a look at '#1' for valid arguments."
-msgstr ""
+msgstr "נסיון לקבוע ערך לא חוקי. נא לעיין ב'#1' לערכים חוקיים."
 
 #: source/core/resource/strings.src#RID_STR_ARGUMENT_IS_NULL.String.Text
 msgid  "The element is invalid."
@@ -140,12 +140,20 @@ msgid  "Group Header"
 msgstr "כותר קבוצה"
 
 #: source/ui/dlg/GroupsSorting.src#RID_GROUPS_SORTING.LST_HEADERLST.Default.StringList.item
+msgid  "Present"
+msgstr "נוכח"
+
+#: source/ui/dlg/GroupsSorting.src#RID_GROUPS_SORTING.LST_HEADERLST.Default.StringList.item
 msgid  "Not present"
 msgstr "לא נוכח"
 
 #: source/ui/dlg/GroupsSorting.src#RID_GROUPS_SORTING.FT_FOOTER.FixedText.Text
 msgid  "Group Footer"
 msgstr "כותר קבוצה תחתון"
+
+#: source/ui/dlg/GroupsSorting.src#RID_GROUPS_SORTING.LST_FOOTERLST.Default.StringList.item
+msgid  "Present"
+msgstr "נוכח"
 
 #: source/ui/dlg/GroupsSorting.src#RID_GROUPS_SORTING.LST_FOOTERLST.Default.StringList.item
 msgid  "Not present"
@@ -253,15 +261,7 @@ msgstr "להשאיר קבוצה ביחד על דף אחד?"
 
 #: source/ui/dlg/GroupsSorting.src#STR_RPT_HELP_SORT.String.Text
 msgid  "Select ascending or descending sort order. Ascending means from A to Z or 0 to 9"
-msgstr ""
-
-#: source/ui/dlg/GroupsSorting.src#RID_GROUPS_SORTING.LST_HEADERLST.Default.StringList.item
-msgid  "Present"
-msgstr "נוכח"
-
-#: source/ui/dlg/GroupsSorting.src#RID_GROUPS_SORTING.LST_FOOTERLST.Default.StringList.item
-msgid  "Present"
-msgstr "נוכח"
+msgstr "יש לבחור סדר עולה או יורד. סדר עולה הוא מA לZ או מ0 ל9"
 
 #: source/ui/dlg/PageNumber.src#RID_PAGENUMBERS.ModalDialog.Text
 msgid  "Page Numbers"
@@ -300,6 +300,14 @@ msgid  "Alignment:"
 msgstr "יישור"
 
 #: source/ui/dlg/PageNumber.src#RID_PAGENUMBERS.LST_ALIGNMENT.Default.StringList.item
+msgid  "Left"
+msgstr "שמאל"
+
+#: source/ui/dlg/PageNumber.src#RID_PAGENUMBERS.LST_ALIGNMENT.Default.StringList.item
+msgid  "Center"
+msgstr "מרכז"
+
+#: source/ui/dlg/PageNumber.src#RID_PAGENUMBERS.LST_ALIGNMENT.Default.StringList.item
 msgid  "Right"
 msgstr "ימין"
 
@@ -312,20 +320,12 @@ msgid  "~Help"
 msgstr "עזרה"
 
 #: source/ui/dlg/PageNumber.src#STR_RPT_PN_PAGE.String.Text
-msgid  ""Page " & #PAGENUMBER#"
-msgstr ""
+msgid  "\"Page \" & #PAGENUMBER#"
+msgstr "\"דף \" & #PAGENUMBER#"
 
 #: source/ui/dlg/PageNumber.src#STR_RPT_PN_PAGE_OF.String.Text
-msgid  " & " of " & #PAGECOUNT#"
-msgstr ""
-
-#: source/ui/dlg/PageNumber.src#RID_PAGENUMBERS.LST_ALIGNMENT.Default.StringList.item
-msgid  "Left"
-msgstr "שמאל"
-
-#: source/ui/dlg/PageNumber.src#RID_PAGENUMBERS.LST_ALIGNMENT.Default.StringList.item
-msgid  "Center"
-msgstr "מרכז"
+msgid  " & \" of \" & #PAGECOUNT#"
+msgstr " & \" מתוך \" & #PAGECOUNT#"
 
 #: source/ui/dlg/dlgpage.src#RID_PAGEDIALOG_PAGE.TabDialog.Text
 msgid  "Page Setup"
@@ -456,6 +456,10 @@ msgid  "Properties..."
 msgstr "תכונות..."
 
 #: source/ui/dlg/CondFormat.src#WIN_CONDITION.LB_COND_TYPE.Default.StringList.item
+msgid  "Field Value Is"
+msgstr "ערך השדה הוא"
+
+#: source/ui/dlg/CondFormat.src#WIN_CONDITION.LB_COND_TYPE.Default.StringList.item
 msgid  "Expression Is"
 msgstr "הביטוי הוא"
 
@@ -550,10 +554,6 @@ msgstr "עזרה"
 #: source/ui/dlg/CondFormat.src#ADDFIELD_HELP_FIELD.FixedText.Text
 msgid  "Highlight the fields to insert into the selected section of the template, then click Insert or press Enter."
 msgstr ""
-
-#: source/ui/dlg/CondFormat.src#WIN_CONDITION.LB_COND_TYPE.Default.StringList.item
-msgid  "Field Value Is"
-msgstr "ערך השדה הוא"
 
 #: source/ui/dlg/DateTime.src#RID_DATETIME_DLG.ModalDialog.Text
 msgid  "Date and Time"
@@ -833,7 +833,7 @@ msgstr "לקשור שדות נשלטים"
 
 #: source/ui/inspection/inspection.src#RID_STR_EXPLANATION.String.Text
 msgid  "Charts can be used to display detailed data about the current record of the report. To do this, you can specify which columns in the chart match which columns in the report."
-msgstr ""
+msgstr "ניתן להשתמש בתרשימים להציג נתונים מפורטים אודות הרשומה הנוכחית של הדו\"ח. ניתן לשייך בין עמודות התרשים לעמודות הדו\"ח."
 
 #: source/ui/inspection/inspection.src#RID_STR_DETAILLABEL.String.Text
 msgid  "Chart"
@@ -909,282 +909,226 @@ msgid  "Maximum"
 msgstr ""
 
 #: source/ui/report/report.src#RID_STR_BRWTITLE_PROPERTIES.String.Text
-#, fuzzy
 msgid  "Properties: "
 msgstr "תכונות"
 
 #: source/ui/report/report.src#RID_STR_BRWTITLE_NO_PROPERTIES.String.Text
-#, fuzzy
 msgid  "No Control marked"
 msgstr "אין בקרה מסומנת"
 
 #: source/ui/report/report.src#RID_STR_BRWTITLE_MULTISELECT.String.Text
-#, fuzzy
 msgid  "Multiselection"
 msgstr "בחירה מרובה"
 
 #: source/ui/report/report.src#RID_STR_PROPTITLE_IMAGECONTROL.String.Text
-#, fuzzy
 msgid  "Image Control"
 msgstr "בקרת תמונה"
 
 #: source/ui/report/report.src#RID_STR_PROPTITLE_FIXEDTEXT.String.Text
-#, fuzzy
 msgid  "Label field"
 msgstr "שדה תווית"
 
 #: source/ui/report/report.src#RID_STR_PROPTITLE_FIXEDLINE.String.Text
-#, fuzzy
 msgid  "Line"
 msgstr "קו"
 
 #: source/ui/report/report.src#RID_STR_PROPTITLE_FORMATTED.String.Text
-#, fuzzy
 msgid  "Formatted Field"
 msgstr "שדה מעוצב"
 
 #: source/ui/report/report.src#RID_STR_PROPTITLE_SHAPE.String.Text
-#, fuzzy
 msgid  "Shape"
 msgstr "צורה"
 
 #: source/ui/report/report.src#RID_STR_PROPTITLE_REPORT.String.Text
-#, fuzzy
 msgid  "Report"
 msgstr "דו\"ח"
 
 #: source/ui/report/report.src#RID_STR_PROPTITLE_SECTION.String.Text
-#, fuzzy
 msgid  "Section"
 msgstr "קטע"
 
 #: source/ui/report/report.src#RID_STR_PROPTITLE_FUNCTION.String.Text
-#, fuzzy
 msgid  "Function"
 msgstr "פונקציה"
 
 #: source/ui/report/report.src#RID_STR_PROPTITLE_GROUP.String.Text
-#, fuzzy
 msgid  "Group"
 msgstr "קבוצה"
 
 #: source/ui/report/report.src#STR_SHOW_RULER.String.Text
-#, fuzzy
 msgid  "Show ruler"
 msgstr "הצגת סרגל"
 
 #: source/ui/report/report.src#STR_SHOW_GRID.String.Text
-#, fuzzy
 msgid  "Show grid"
 msgstr "הצגת רשת"
 
 #: source/ui/report/report.src#RID_STR_UNDO_CHANGEPOSITION.String.Text
-#, fuzzy
 msgid  "Change Object"
 msgstr "שינוי עצם"
 
 #: source/ui/report/report.src#RID_STR_UNDO_MOVE_GROUP.String.Text
-#, fuzzy
 msgid  "Move Group(s)"
 msgstr "הזזת קבוצות"
 
 #: source/ui/report/report.src#RID_STR_UNDO_CONDITIONAL_FORMATTING.String.Text
-#, fuzzy
 msgid  "Conditional Formatting"
 msgstr "עיצוב מותנה"
 
 #: source/ui/report/report.src#RID_STR_UNDO_REMOVE_REPORTHEADERFOOTER.String.Text
-#, fuzzy
 msgid  "Remove report header / report footer"
 msgstr "הסרת כותר/כותר תחתון מדו\"ח"
 
 #: source/ui/report/report.src#RID_STR_UNDO_ADD_REPORTHEADERFOOTER.String.Text
-#, fuzzy
 msgid  "Add report header / report footer"
 msgstr "הוספת כותר/כותר תחתון לדו\"ח"
 
 #: source/ui/report/report.src#RID_STR_UNDO_REMOVE_PAGEHEADERFOOTER.String.Text
-#, fuzzy
 msgid  "Remove page header / page footer"
 msgstr "הסרת כותר/כותר תחתון מדף"
 
 #: source/ui/report/report.src#RID_STR_UNDO_ADD_PAGEHEADERFOOTER.String.Text
-#, fuzzy
 msgid  "Add page header / page footer"
 msgstr "הוספת כותר/כותר תחתון לדף"
 
 #: source/ui/report/report.src#RID_STR_UNDO_PROPERTY.String.Text
-#, fuzzy
 msgid  "Change property '#'"
 msgstr "שינוי תכונה"
 
 #: source/ui/report/report.src#RID_STR_UNDO_ADD_GROUP_HEADER.String.Text
-#, fuzzy
 msgid  "Add group header "
 msgstr "הוספת כותר קבוצה"
 
 #: source/ui/report/report.src#RID_STR_UNDO_REMOVE_GROUP_HEADER.String.Text
-#, fuzzy
 msgid  "Remove group header "
 msgstr "הסרת כותר קבוצה"
 
 #: source/ui/report/report.src#RID_STR_UNDO_ADD_GROUP_FOOTER.String.Text
-#, fuzzy
 msgid  "Add group footer "
 msgstr "הוספת כותר תחתון לקבוצה"
 
 #: source/ui/report/report.src#RID_STR_UNDO_REMOVE_GROUP_FOOTER.String.Text
-#, fuzzy
 msgid  "Remove group footer "
 msgstr "הסרת כותר תחתון לקבוצה"
 
 #: source/ui/report/report.src#RID_STR_UNDO_ADDFUNCTION.String.Text
-#, fuzzy
 msgid  "Add function"
 msgstr "הוספת פונקציה"
 
 #: source/ui/report/report.src#RID_STR_UNDO_DELETEFUNCTION.String.Text
-#, fuzzy
 msgid  "Delete function"
 msgstr "מחיקת פונקציה"
 
 #: source/ui/report/report.src#RID_STR_DESIGN_VIEW.String.Text
-#, fuzzy
 msgid  "Design"
 msgstr "עיצוב"
 
 #: source/ui/report/report.src#RID_STR_PREVIEW_VIEW.String.Text
-#, fuzzy
 msgid  "Preview"
 msgstr "תצוגה מקדימה"
 
 #: source/ui/report/report.src#STR_RPT_TITLE.String.Text
-#, fuzzy
 msgid  "Report #"
 msgstr "דו\"ח"
 
 #: source/ui/report/report.src#STR_RPT_LABEL.String.Text
-#, fuzzy
 msgid  "~Report name"
 msgstr "שם דו\"ח"
 
 #: source/ui/report/report.src#RID_STR_UNDO_REMOVE_GROUP.String.Text
-#, fuzzy
 msgid  "Delete Group"
 msgstr "מחיקת קבוצה"
 
 #: source/ui/report/report.src#RID_STR_UNDO_APPEND_GROUP.String.Text
-#, fuzzy
 msgid  "Add Group"
 msgstr "הוספת קבוצה"
 
 #: source/ui/report/report.src#RID_STR_UNDO_REMOVE_SELECTION.String.Text
-#, fuzzy
 msgid  "Delete Selection"
 msgstr "מחיקת קטע"
 
 #: source/ui/report/report.src#RID_STR_UNDO_REMOVE_FUNCTION.String.Text
-#, fuzzy
 msgid  "Delete Function"
 msgstr "מחיקת פונקציה"
 
 #: source/ui/report/report.src#RID_STR_UNDO_CHANGE_SIZE.String.Text
-#, fuzzy
 msgid  "Change Size"
 msgstr "שינוי גודל"
 
 #: source/ui/report/report.src#RID_STR_UNDO_PASTE.String.Text
-#, fuzzy
 msgid  "Paste"
 msgstr "הדבקה"
 
 #: source/ui/report/report.src#RID_STR_UNDO_INSERT_CONTROL.String.Text
-#, fuzzy
 msgid  "Insert Control"
 msgstr "הכנסת פקד"
 
 #: source/ui/report/report.src#RID_STR_UNDO_DELETE_CONTROL.String.Text
-#, fuzzy
 msgid  "Delete Control"
 msgstr "מחיקת פקד"
 
 #: source/ui/report/report.src#RID_STR_UNDO_GROUP.String.Text
-#, fuzzy
 msgid  "Insert Group"
 msgstr "הכנסת קבוצה"
 
 #: source/ui/report/report.src#RID_STR_UNDO_UNGROUP.String.Text
-#, fuzzy
 msgid  "Delete Group"
 msgstr "מחיקת קבוצה"
 
 #: source/ui/report/report.src#RID_STR_GROUPHEADER.String.Text
-#, fuzzy
 msgid  "GroupHeader"
 msgstr "GroupHeader"
 
 #: source/ui/report/report.src#RID_STR_GROUPFOOTER.String.Text
-#, fuzzy
 msgid  "GroupFooter"
 msgstr "GroupFooter"
 
 #: source/ui/report/report.src#RID_MENU_REPORT.SID_SORTINGANDGROUPING.MenuItem.Text
-#, fuzzy
 msgid  "Sorting and Grouping..."
 msgstr "מיון וקיבוץ..."
 
 #: source/ui/report/report.src#RID_MENU_REPORT.SID_ATTR_CHAR_COLOR_BACKGROUND.MenuItem.Text
-#, fuzzy
 msgid  "Background Color..."
 msgstr "רקע וצבע..."
 
 #: source/ui/report/report.src#RID_MENU_REPORT.SID_RULER.MenuItem.Text
-#, fuzzy
 msgid  "Ruler..."
 msgstr "סרגל..."
 
 #: source/ui/report/report.src#RID_MENU_REPORT.SID_GRID_VISIBLE.MenuItem.Text
-#, fuzzy
 msgid  "Grid..."
 msgstr "רשת..."
 
 #: source/ui/report/report.src#RID_MENU_REPORT.SID_ARRANGEMENU.MenuItem.Text
-#, fuzzy
 msgid  "~Arrange"
 msgstr "לסדר"
 
 #: source/ui/report/report.src#RID_MENU_REPORT.SID_ARRANGEMENU.SID_FRAME_UP.MenuItem.Text
-#, fuzzy
 msgid  "Bring ~Forward"
 msgstr "להציף קדימה"
 
 #: source/ui/report/report.src#RID_MENU_REPORT.SID_ARRANGEMENU.SID_FRAME_DOWN.MenuItem.Text
-#, fuzzy
 msgid  "Send Back~ward"
 msgstr "לשלוח אחורה"
 
 #: source/ui/report/report.src#RID_MENU_REPORT.SID_OBJECT_RESIZING.MenuItem.Text
-#, fuzzy
 msgid  "~Object Resizing"
 msgstr "שינוי גודל עצם"
 
 #: source/ui/report/report.src#RID_MENU_REPORT.SID_OBJECT_RESIZING.SID_OBJECT_SMALLESTWIDTH.MenuItem.Text
-#, fuzzy
 msgid  "~Fit to smallest width"
 msgstr "התאמה לרוחב המזערי"
 
 #: source/ui/report/report.src#RID_MENU_REPORT.SID_OBJECT_RESIZING.SID_OBJECT_GREATESTWIDTH.MenuItem.Text
-#, fuzzy
 msgid  "~Fit to greatest width"
 msgstr "התאמה לרוחב המירבי"
 
 #: source/ui/report/report.src#RID_MENU_REPORT.SID_OBJECT_RESIZING.SID_OBJECT_SMALLESTHEIGHT.MenuItem.Text
-#, fuzzy
 msgid  "~Fit to smallest height"
 msgstr "התאמה לגובה הנמוך ביותר"
 
 #: source/ui/report/report.src#RID_MENU_REPORT.SID_OBJECT_RESIZING.SID_OBJECT_GREATESTHEIGHT.MenuItem.Text
-#, fuzzy
 msgid  "~Fit to greatest height"
 msgstr "התאמה לגובה הגבוהה ביותר"
 
@@ -1321,15 +1265,12 @@ msgid  "The report can not be executed unless it is bound to content."
 msgstr "לא ניתן לבצע דו\"ח שלא קשור לתוכן."
 
 #: source/ui/report/report.src#RID_ERR_NO_OBJECTS.String.Text
+#, fuzzy
 msgid  "The report can not be executed unless at least one object has been inserted."
-msgstr ""
+msgstr "לא ניתן לבצע את הדו\"ח עד שלפחות עצם אחד הוכנס."
 
 #: source/ui/report/report.src#RID_STR_UNDO_SHRINK.String.Text
 msgid  "Shrink Section"
-msgstr ""
-
-#: source/ui/report/report.src#RID_STR_INSERT.String.Text
-msgid  "Insert"
 msgstr ""
 
 #: source/ui/report/report.src#RID_STR_DETAIL.String.Text
@@ -1350,4 +1291,8 @@ msgstr ""
 
 #: source/ui/report/report.src#RID_STR_REPORT_FOOTER.String.Text
 msgid  "Report Footer"
+msgstr ""
+
+#: source/ui/report/report.src#RID_STR_INSERT.String.Text
+msgid  "Insert"
 msgstr ""

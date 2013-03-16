@@ -337,7 +337,7 @@ msgstr "Benannte Argumente werden vom angegebenen Objekt nicht unterstützt."
 
 #: source/classes/sb.src#RID_BASIC_START.SbERR_BAD_LOCALE & ERRCODE_RES_MASK.String.Text
 msgid  "The current locale setting is not supported by the given object."
-msgstr ""
+msgstr "Das aktuelle Gebietsschema wird vom angegebenen Objekt nicht unterstützt."
 
 #: source/classes/sb.src#RID_BASIC_START.SbERR_NAMED_NOT_FOUND & ERRCODE_RES_MASK.String.Text
 msgid  "Named argument not found."
@@ -349,7 +349,7 @@ msgstr "Argument ist nicht optional."
 
 #: source/classes/sb.src#RID_BASIC_START.SbERR_WRONG_ARGS & ERRCODE_RES_MASK.String.Text
 msgid  "Invalid number of arguments."
-msgstr "Falsche Anzahl an Argumenten."
+msgstr "Ungültige Anzahl von Argumenten."
 
 #: source/classes/sb.src#RID_BASIC_START.SbERR_NOT_A_COLL & ERRCODE_RES_MASK.String.Text
 msgid  "Object is not a list."

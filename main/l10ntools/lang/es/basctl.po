@@ -137,7 +137,7 @@ msgstr "Guardar"
 
 #: source/basicide/basidesh.src#RID_STR_SOURCETOBIG.String.Text
 msgid  "The source text is too large and can be neither compiled nor saved.\nDelete some of the comments or transfer some methods into another module."
-msgstr ""
+msgstr "El texto fuente es demasiado grande por lo que no se puede guardar ni compilar.\nElimine algunos comentarios o transfiera algunos métodos a otro módulo."
 
 #: source/basicide/basidesh.src#RID_STR_ERROROPENSTORAGE.String.Text
 msgid  "Error opening file"
@@ -201,7 +201,7 @@ msgstr "El archivo 'XX' ya existe"
 
 #: source/basicide/basidesh.src#RID_STR_CANNOTRUNMACRO.String.Text
 msgid  "For security reasons, you cannot run this macro.\n\nFor more information, check the security settings."
-msgstr ""
+msgstr "Por motivos de seguridad, no puede ejecutar esta macro.\n\nPara obtener más información, verifique la configuración de seguridad."
 
 #: source/basicide/basidesh.src#RID_STR_COMPILEERROR.String.Text
 msgid  "Compile Error: "
@@ -217,7 +217,7 @@ msgstr "No se encontró la expresión buscada"
 
 #: source/basicide/basidesh.src#RID_STR_SEARCHFROMSTART.String.Text
 msgid  "Search to last module complete. Continue at first module?"
-msgstr ""
+msgstr "Se buscó hasta el último módulo. ¿Desea continuar la búsqueda en el primer módulo?"
 
 #: source/basicide/basidesh.src#RID_STR_SEARCHREPLACES.String.Text
 msgid  "Search key replaced XX times"
@@ -373,7 +373,7 @@ msgstr "Se debe introducir un nombre."
 
 #: source/basicide/basidesh.src#RID_STR_WILLSTOPPRG.String.Text
 msgid  "You will have to restart the program after this edit.\nContinue?"
-msgstr ""
+msgstr "Tendrá que volver a iniciar el programa después de estas modificaciones.\n¿Continuar?"
 
 #: source/basicide/basidesh.src#RID_STR_SEARCHALLMODULES.String.Text
 msgid  "Do you want to replace the text in all active modules?"
@@ -509,7 +509,7 @@ msgstr "Dialogo de Importación - Nombre ya usado"
 
 #: source/basicide/basidesh.src#RID_STR_DLGIMP_CLASH_TEXT.String.Text
 msgid  "The library already contains a dialog with the name:\n\n$(ARG1)\n\nRename dialog to keep current dialog or replace existing dialog.\n "
-msgstr ""
+msgstr "La biblioteca ya continene un cuadro de diálogo con el nombre:\n\n$(ARG1)\n\nRenombre el cuadro de diálogo para mantener el existente, o reemplácelo.\n "
 
 #: source/basicide/basidesh.src#RID_STR_DLGIMP_MISMATCH_ADD.String.Text
 msgid  "Add"
@@ -525,7 +525,7 @@ msgstr "Importar diálogo - Idioma incompatible"
 
 #: source/basicide/basidesh.src#RID_STR_DLGIMP_MISMATCH_TEXT.String.Text
 msgid  "The dialog to be imported supports other languages than the target library.\n\nAdd these languages to the library to keep additional language resources provided by the dialog or omit them to stay with the current library languages.\n\nNote: For languages not supported by the dialog the resources of the dialog's default language will be used.\n "
-msgstr ""
+msgstr "El diálogo que se importará admite idiomas que no están en la biblioteca de destino.\n\nAgregue estos idiomas a la biblioteca para preservar los recursos adicionales de idioma que proporciona el diálogo, u omítalos para mantener los idiomas actuales de la biblioteca.\n\nNota: Se usarán los recursos del idioma predeterminado del diálogo para aquellos idiomas que el diálogo no tenga definidos.\n "
 
 #: source/basicide/basicprint.src#RID_PRINTDLG_STRLIST.item1.ItemList.item
 msgid  "Print range"
@@ -625,15 +625,15 @@ msgstr "Cerrar"
 
 #: source/basicide/moduldlg.src#RID_TP_MODULS.RID_PB_NEWMOD.PushButton.Text
 msgid  "~New..."
-msgstr "~Nuevo..."
+msgstr "Nue~vo..."
 
 #: source/basicide/moduldlg.src#RID_TP_MODULS.RID_PB_NEWDLG.PushButton.Text
 msgid  "~New..."
-msgstr "~Nuevo..."
+msgstr "Nue~vo..."
 
 #: source/basicide/moduldlg.src#RID_TP_MODULS.RID_PB_DELETE.PushButton.Text
 msgid  "~Delete"
-msgstr "Elim~inar"
+msgstr "E~liminar"
 
 #: source/basicide/moduldlg.src#RID_TP_DLGS.RID_STR_LIB.FixedText.Text
 msgid  "Dialog"
@@ -657,7 +657,7 @@ msgstr "~Nuevo..."
 
 #: source/basicide/moduldlg.src#RID_TP_DLGS.RID_PB_DELETE.PushButton.Text
 msgid  "~Delete"
-msgstr "~Eliminar"
+msgstr "Elim~inar"
 
 #: source/basicide/moduldlg.src#RID_TP_LIBS.RID_STR_BASICS.FixedText.Text
 msgid  "L~ocation"
@@ -757,7 +757,7 @@ msgstr "Predeterminado"
 
 #: source/dlged/managelang.src#RID_DLG_MANAGE_LANGUAGE.FT_INFO.FixedText.Text
 msgid  "The default language is used if no localization for a user interface locale is present. Furthermore all strings from the default language are copied to resources of newly added languages."
-msgstr ""
+msgstr "Si una determinada configuración regional de interfaz de usuario no está localizada, se utiliza el idioma predeterminado. Asimismo, todas las cadenas del idioma predeterminado se copian en los recursos de los idiomas que se hayan incorporado."
 
 #: source/dlged/managelang.src#RID_DLG_MANAGE_LANGUAGE.PB_CLOSE.OKButton.Text
 msgid  "~Close"
@@ -781,7 +781,7 @@ msgstr "Eliminar recursos del idioma"
 
 #: source/dlged/managelang.src#RID_QRYBOX_LANGUAGE.QueryBox.Message
 msgid  "You are about to delete the resources for the selected language(s). All user interface strings for this language(s) will be deleted.\n\nDo you want to delete the resources of the selected language(s)?"
-msgstr ""
+msgstr "Va a eliminar los recursos del idioma(s) seleccionado(s). Se van a eliminar todas las cadenas de interfaz de usuario para este idioma(s).\n\n¿Desea eliminar los recursos del idioma(s) seleccionado(s)?"
 
 #: source/dlged/managelang.src#RID_DLG_SETDEF_LANGUAGE.ModalDialog.Text
 msgid  "Set Default User Interface Language"
@@ -793,7 +793,7 @@ msgstr "Idioma predeterminado"
 
 #: source/dlged/managelang.src#RID_DLG_SETDEF_LANGUAGE.FT_DEF_INFO.FixedText.Text
 msgid  "Select a language to define the default user interface language. All currently present strings will be assigned to the resources created for the selected language."
-msgstr ""
+msgstr "Seleccione un idioma para definir el idioma predeterminado de interfaz de usuario. Todas las cadenas que existan se asignarán a los recursos que creados para el idioma seleccionado."
 
 #: source/dlged/managelang.src#RID_DLG_SETDEF_LANGUAGE.STR_ADDLANG_TITLE.String.Text
 msgid  "Add User Interface Languages"
@@ -805,7 +805,7 @@ msgstr "Idiomas disponibles"
 
 #: source/dlged/managelang.src#RID_DLG_SETDEF_LANGUAGE.STR_ADDLANG_INFO.String.Text
 msgid  "Select languages to be added. Resources for these languages will be created in the library. Strings of the current default user interface language will be copied to these new resources by default."
-msgstr ""
+msgstr "Seleccione los idiomas que agregar. Los recursos de dichos idiomas se crearán en la biblioteca. Las cadenas del idioma predeterminado de interfaz de usuario se copiarán de forma predeterminada en estos recursos nuevos."
 
 #: source/dlged/dlgresid.src#RID_STR_BRWTITLE_PROPERTIES.String.Text
 msgid  "Properties: "

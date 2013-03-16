@@ -67,12 +67,10 @@ msgid  "No Text"
 msgstr "ཡི་གེ་མེད་པ།"
 
 #: source/passworddlg.src#DLG_UUI_PASSWORD.STR_ENTER_PASSWORD_TO_OPEN.String.Text
-#, fuzzy
 msgid  "Enter password to open file: \n"
 msgstr "གསང་ཨང་ནང་འཇུག"
 
 #: source/passworddlg.src#DLG_UUI_PASSWORD.STR_ENTER_PASSWORD_TO_MODIFY.String.Text
-#, fuzzy
 msgid  "Enter password to modify file: \n"
 msgstr "གསང་ཨང་ནང་འཇུག"
 
@@ -104,8 +102,9 @@ msgid  "Document in Use"
 msgstr "ཡིག་ཚགས་བེད་སྤྱོད་བྱེད་མུས།"
 
 #: source/trylater.src#STR_TRYLATER_MSG.String.Text
+#, fuzzy
 msgid  "Document file '$(ARG1)' is locked for editing by:\n\n$(ARG2)\n\nTry again later to save document or save a copy of that document.\n\n"
-msgstr ""
+msgstr "ཡིག་ཚགས་ཡིག་ཆ་'$(ARG1)' དེ $(ARG2) ཡིས་བཀག་འཛིན་བྱས་ཏེ་རྩོམ་སྒྲིག་བྱེད། \n\nཏོག་ཙམ་སོང་རྗེས་ཡིག་ཚགས་ཉར་་འཇོག་ཚོད་ལྟ་བྱེད་རྒྱུའམ། ཡང་ན་ཡིག་ཚགས་དེའི་འདྲ་དཔེ་ཞིག་ཉར་ཚགས་བྱེད་རྒྱུ།\n\n"
 
 #: source/trylater.src#STR_TRYLATER_RETRYSAVING_BTN.String.Text
 #, fuzzy
@@ -118,17 +117,14 @@ msgid  "~Save As..."
 msgstr "གཞན་ཉར།(~S)..."
 
 #: source/ids.src#RID_KEEP_PASSWORD.String.Text
-#, fuzzy
 msgid  "~Remember password until end of session"
 msgstr "བགྲོ་གླེང་མཇུག་མ་སྒྲིལ་བར་གསང་ཨང་ངེས་དགོས།"
 
 #: source/ids.src#RID_SAVE_PASSWORD.String.Text
-#, fuzzy
 msgid  "~Remember password"
 msgstr "གསང་ཨང་ཉར་ཚགས།"
 
 #: source/ids.src#STR_WARNING_BROKENSIGNATURE_TITLE.String.Text
-#, fuzzy
 msgid  "Invalid Document Signature"
 msgstr "རྩིས་འགྲོ་མེད་པའི་ཡིག་ཚགས་ཀྱི་མིང་རྟགས།"
 
@@ -137,253 +133,212 @@ msgid  "Non-Encrypted Streams"
 msgstr ""
 
 #: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_IO_ABORT & ERRCODE_RES_MASK).String.Text
-#, fuzzy
 msgid  "The operation executed on $(ARG1) was aborted."
 msgstr " $(ARG1) ཡི་བཀོལ་སྤྱོད་ལག་བསྟར་རྩིས་མེད་བྱས་ཟིན།"
 
 #: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_IO_ACCESSDENIED & ERRCODE_RES_MASK).String.Text
-#, fuzzy
 msgid  "Access to $(ARG1) was denied."
 msgstr "ཀློག་པ་ངོ་ཟློག $(ARG1) "
 
 #: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_IO_ALREADYEXISTS & ERRCODE_RES_MASK).String.Text
-#, fuzzy
 msgid  "$(ARG1) already exists."
 msgstr "$(ARG1) གནས་ཡོད།"
 
 #: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_IO_TARGETALREADYEXISTS & ERRCODE_RES_MASK).String.Text
-#, fuzzy
 msgid  "Target already exists."
 msgstr "དམིགས་ཡུལ་ད་ཆ་གནས་ཟིན།"
 
 #: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_IO_MODULESIZEEXCEEDED & ERRCODE_RES_MASK).String.Text
 msgid  "You are about to save/export a password protected basic library containing module(s) \n$(ARG1)\nwhich are too large to store in binary format. If you wish users that don't have access to the library password to be able to run macros in those module(s) you must split those modules into a number of smaller modules. Do you wish to continue to save/export this library?"
-msgstr ""
+msgstr "ཁྱེད་ཀྱིས་གསང་རྟགས་སྲུང་སྐྱོབ་ཐོབ་པའི་' Basic ཐོ་མཛོད་ཉར་འཇོག་དང་ཕྱིར་འདྲེན་བྱེད་རྩིས་འདུག  ཐོ་མཛོད་དེར་ཡོད་པའི་དཔེ་དུམ་གྱི་Basic ཐོ་མཛོད་ཆེ་དྲག་འདུག་པས་གཉིས་གོང་འགྲིལ་ལུགས་བཞིན་ཉར་འཇོག་བྱེད་མི་ཐུབ། གལ་ཏེ་ཐོ་མཛོད་ཀྱི་གསང་རྟགས་ལྟ་སྤྱོད་བྱེད་དབང་མེད་པའི་སྤྱོད་མཁན་གྱིས་དཔེ་དུམ་དེ་ཚོའི་ནང་གི་རགས་དེ་འཁོར་སྐྱོད་བྱེད་དགོས་བསམས་ན་སྔོན་དཔེ་དུམ་དེ་ཚོ་དཔེ་དུམ་ཆུང་ཆུང་མང་པོ་ཞིག་ལ་དབྱེ་དགོས། མུ་མཐུད་ཉར་འཇོག་དང་ཕྱིར་འདྲེན་བྱེད་ཀྱི་ཡིན་ནམ།"
 
 #: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_IO_BADCRC & ERRCODE_RES_MASK).String.Text
-#, fuzzy
 msgid  "The data from $(ARG1) has an incorrect checksum."
 msgstr "$(ARG1) གཞི་གྲངས་ཀྱི་ཞིབ་དཔྱད་གྲངས་ཀ་ཡང་དག་མིན།"
 
 #: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_IO_CANTCREATE & ERRCODE_RES_MASK).String.Text
-#, fuzzy
 msgid  "The object $(ARG1) cannot be created in directory $(ARG2)."
 msgstr "དཀར་ཆག་ $(ARG2) ནང་ཡུལ་ $(ARG1) གསར་འཛུགས་བྱ་ཐབས་མེད།"
 
 #: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_IO_CANTREAD & ERRCODE_RES_MASK).String.Text
-#, fuzzy
 msgid  "Data of $(ARG1) could not be read."
 msgstr " $(ARG1) ཀྱི་གཞི་གྲངས་ཀློག་འདོན་བྱ་ཐབས་མེད།"
 
 #: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_IO_CANTSEEK & ERRCODE_RES_MASK).String.Text
-#, fuzzy
 msgid  "The seek operation on $(ARG1) could not be performed."
 msgstr " $(ARG1) ལ་བཀའ་ཚིག་ seek ལག་བསྟར་བྱ་ཐབས་མེད།"
 
 #: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_IO_CANTTELL & ERRCODE_RES_MASK).String.Text
-#, fuzzy
 msgid  "The tell operation on $(ARG1) could not be performed."
 msgstr " $(ARG1) ལ་བཀའ་ཚིག་ tell ལག་བསྟར་བྱ་ཐབས་མེད།"
 
 #: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_IO_CANTWRITE & ERRCODE_RES_MASK).String.Text
-#, fuzzy
 msgid  "Data for $(ARG1) could not be written."
 msgstr " $(ARG1) ཡི་གཞི་གྲངས་བཟོ་བཅོས་བྱ་ཐབས་མེད།"
 
 #: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_IO_CURRENTDIR & ERRCODE_RES_MASK).String.Text
-#, fuzzy
 msgid  "Action impossible: $(ARG1) is the current directory."
 msgstr "བཀོལ་སྤྱོད་ལག་བསྟར་བྱ་ཐབས་མེད། $(ARG1) ནི་མིག་སྔའི་དཀར་ཆག་ཡིན།"
 
 #: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_IO_NOTREADY & ERRCODE_RES_MASK).String.Text
-#, fuzzy
 msgid  "$(ARG1) is not ready."
 msgstr "$(ARG1) གྲ་སྒྲིག་ཚགས་ཚུད་བྱུང་མེད།"
 
 #: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_IO_NOTSAMEDEVICE & ERRCODE_RES_MASK).String.Text
 msgid  "Action impossible: $(ARG1) and $(ARG2) are different devices (drives)."
-msgstr ""
+msgstr "བཀོལ་སྤྱོད་ལག་བསྟར་བྱ་ཐབས་མེད་:$(ARG1) དང་ $(ARG2) ནི་མི་འདྲ་བའི་སྒུལ་འདེད་སྡེར་ཡིན།"
 
 #: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_IO_GENERAL & ERRCODE_RES_MASK).String.Text
-#, fuzzy
 msgid  "General input/output error while accessing $(ARG1)."
 msgstr " $(ARG1) ཀློག་འདོན་སྐབས་སྤྱིར་བཏང་གི་ནང་འཇུག་/ཕྱིར་ཐོན་ནོར་འཁྲུལ་ཐོན།"
 
 #: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_IO_INVALIDACCESS & ERRCODE_RES_MASK).String.Text
-#, fuzzy
 msgid  "An attempt was made to access $(ARG1) in an invalid way."
 msgstr "ནུས་མེད་ཀྱི་ཐབས་ཚུལ་སྤྱད་ནས་ $(ARG1) ཀློག་འདོན་ལྟ་ཚོད་བྱས་པ།"
 
 #: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_IO_INVALIDCHAR & ERRCODE_RES_MASK).String.Text
-#, fuzzy
 msgid  "$(ARG1) contains invalid characters."
 msgstr "$(ARG1) ནང་ནུས་མེད་ཀྱི་ཡིག་རྟགས་འདུས་ཡོད།"
 
 #: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_IO_INVALIDDEVICE & ERRCODE_RES_MASK).String.Text
-#, fuzzy
 msgid  "The device (drive) $(ARG1) is invalid."
 msgstr "སྒུལ་འདེད་སྡེར་ $(ARG1) ནུས་མེད་ཡིན།"
 
 #: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_IO_INVALIDLENGTH & ERRCODE_RES_MASK).String.Text
-#, fuzzy
 msgid  "The data from $(ARG1) has an invalid length."
 msgstr "$(ARG1) གཞི་གྲངས་ཀྱི་རིང་ཚད་ནུས་མེད་ཡིན།"
 
 #: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_IO_INVALIDPARAMETER & ERRCODE_RES_MASK).String.Text
 msgid  "The operation on $(ARG1) was started with an invalid parameter."
-msgstr ""
+msgstr "ནུས་མེད་ཀྱི་ཞུགས་གྲངས་སྤྱད་ནས་ $(ARG1) ཡི་བཀོལ་སྤྱོད་ལ་སྤྱོད་པ་འདི་སྒུལ་སློང་བྱས།"
 
 #: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_IO_ISWILDCARD & ERRCODE_RES_MASK).String.Text
-#, fuzzy
 msgid  "The operation cannot be performed because $(ARG1) contains wildcards."
 msgstr "བཀའ་ཚིག་འདི་ལག་བསྟར་བྱ་ཐབས་མེད་ $(ARG1) ནང་ཀུན་འཕྲོད་རྟགས་འདུས་པས་ཡིན།"
 
 #: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_IO_LOCKVIOLATION & ERRCODE_RES_MASK).String.Text
-#, fuzzy
 msgid  "Error during shared access to $(ARG1)."
 msgstr "དུས་མཉམ་དུ་ $(ARG1) ཀློག་འདོན་སྐབས་ནོར་འཁྲུལ་ཐོན།"
 
 #: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_IO_MISPLACEDCHAR & ERRCODE_RES_MASK).String.Text
-#, fuzzy
 msgid  "$(ARG1) contains misplaced characters."
 msgstr "$(ARG1) ལ་འཇོག་ས་ནོར་བའི་ཡིག་རྟགས་འདུས་ཡོད།"
 
 #: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_IO_NAMETOOLONG & ERRCODE_RES_MASK).String.Text
-#, fuzzy
 msgid  "The name $(ARG1) contains too many characters."
 msgstr "མིང་ $(ARG1) ནང་ཧ་ཅང་མང་བའི་ཡིག་རྟགས་འདུས་ཡོད།"
 
 #: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_IO_NOTEXISTS & ERRCODE_RES_MASK).String.Text
 msgid  "$(ARG1) does not exist."
-msgstr ""
+msgstr "$(ARG1) ཡིག་ཆ་གནས་མེད་པའམ་ཡིག་ཆའི་མིང་ཁྲིམས་མཐུན་མིན་པའི་ཡིག་རྟགས་གནས་མེད།"
 
 #: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_IO_NOTEXISTSPATH & ERRCODE_RES_MASK).String.Text
-#, fuzzy
 msgid  "The path $(ARG1) does not exist."
 msgstr "བརྒྱུད་ལམ་ $(ARG1) གནས་མེད།"
 
 #: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_IO_NOTSUPPORTED & ERRCODE_RES_MASK).String.Text
 msgid  "The operation on $(ARG1) is not supported on this operating system."
-msgstr ""
+msgstr "བཀོལ་སྤྱོད་བྱ་རིམ་འདིས་ $(ARG1) ལ་སྤྱོད་པའི་བཀའ་ཚིག་རྒྱབ་སྐྱོར་མི་བྱེད།。"
 
 #: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_IO_NOTADIRECTORY & ERRCODE_RES_MASK).String.Text
-#, fuzzy
 msgid  "$(ARG1) is not a directory."
 msgstr "$(ARG1) ནི་དཀར་ཆག་མིན།"
 
 #: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_IO_NOTAFILE & ERRCODE_RES_MASK).String.Text
-#, fuzzy
 msgid  "$(ARG1) is not a file."
 msgstr "$(ARG1) ནི་ཡིག་ཆ་མིན།"
 
 #: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_IO_OUTOFSPACE & ERRCODE_RES_MASK).String.Text
-#, fuzzy
 msgid  "There is no space left on device $(ARG1)."
 msgstr "མཁྲེགས་སྡེར་ $(ARG1) ལ་སྤྱོད་རུང་གི་བར་སྟོང་བསྡད་མེད།"
 
 #: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_IO_TOOMANYOPENFILES & ERRCODE_RES_MASK).String.Text
 msgid  "The operation on $(ARG1) cannot be performed because too many files are already open."
-msgstr ""
+msgstr "ཧ་ཅང་མང་བའི་ཡིག་ཆ་ཁ་ཕྱིར་ཟིན་སྟབས་ $(ARG1) ལ་སྤྱོད་པའི་བཀའ་ཚིག་ལག་བསྟར་བྱ་ཐབས་མེད།"
 
 #: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_IO_OUTOFMEMORY & ERRCODE_RES_MASK).String.Text
 msgid  "The operation on $(ARG1) cannot be performed because there is no more memory available."
-msgstr ""
+msgstr "ནང་གསོག་སྤྱད་ཚར་བའི་རྐྱེན་གྱིས་ $(ARG1) ལ་སྤྱོད་པའི་བཀའ་ཚིག་ལག་བསྟར་བྱ་ཐབས་མེད།"
 
 #: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_IO_PENDING & ERRCODE_RES_MASK).String.Text
 msgid  "The operation on $(ARG1) cannot continue because more data is pending."
-msgstr ""
+msgstr "གཞན་དག་གི་གཞི་གྲངས་སྒུགསྣས་ཡོད་པས་ $(ARG1) ལ་སྤྱོད་པའི་བཀའ་ཚིག་མུ་མཐུད་ལག་བསྟར་བྱ་ཐབས་མེད།  "
 
 #: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_IO_RECURSIVE & ERRCODE_RES_MASK).String.Text
-#, fuzzy
 msgid  "$(ARG1) cannot be copied into itself."
 msgstr "$(ARG1) ཡིས་རང་ལུས་འདྲ་ཕབ་བྱ་ཐབས་མེད།"
 
 #: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_IO_UNKNOWN & ERRCODE_RES_MASK).String.Text
-#, fuzzy
 msgid  "Unknown input/output error while accessing $(ARG1)."
 msgstr " $(ARG1) ཀློག་འདོན་སྐབས་མི་གསལ་བའི་ནང་འཇུག་/ཕྱིར་ཐོན་ནོར་འཁྲུལ་ཞིག་ཐོན།"
 
 #: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_IO_WRITEPROTECTED & ERRCODE_RES_MASK).String.Text
-#, fuzzy
 msgid  "$(ARG1) is write protected."
 msgstr "$(ARG1) ནི་འབྲི་བཅོས་འགོག་པ་ཡིན།"
 
 #: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_IO_WRONGFORMAT & ERRCODE_RES_MASK).String.Text
-#, fuzzy
 msgid  "$(ARG1) is not in the correct format."
 msgstr "$(ARG1) རྣམ་གཞག་ལ་ནོར་འཛོས་ཡོད།"
 
 #: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_IO_WRONGVERSION & ERRCODE_RES_MASK).String.Text
-#, fuzzy
 msgid  "The version of $(ARG1) is not correct."
 msgstr "$(ARG1) གི་པར་གཞི་ནོར་ཡོད།"
 
 #: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_IO_NOTEXISTS_VOLUME & ERRCODE_RES_MASK).String.Text
-#, fuzzy
 msgid  "Drive $(ARG1) does not exist."
 msgstr "སྒུལ་འདེད་སྡེར་ $(ARG1) གནས་མེད།"
 
 #: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_IO_NOTEXISTS_FOLDER & ERRCODE_RES_MASK).String.Text
-#, fuzzy
 msgid  "Folder $(ARG1) does not exist."
 msgstr "ཡིག་ཁུག་ $(ARG1) གནས་མེད།"
 
 #: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_WRONGJAVA & ERRCODE_RES_MASK).String.Text
-#, fuzzy
 msgid  "The installed Java version is not supported."
 msgstr "ད་ཡོད་ཀྱི་ Java པར་གཞི་རྒྱབ་སྐྱོར་མི་བྱེད།"
 
 #: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_WRONGJAVA_VERSION & ERRCODE_RES_MASK).String.Text
-#, fuzzy
 msgid  "The installed Java version $(ARG1) is not supported."
 msgstr "ད་ཡོད་ཀྱི་ Java པར་གཞི་ $(ARG1)ལ་རྒྱབ་སྐྱོར་མི་བྱེད།"
 
 #: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_WRONGJAVA_MIN & ERRCODE_RES_MASK).String.Text
 msgid  "The installed Java version is not supported, at least version $(ARG1) is required."
-msgstr ""
+msgstr "ད་ཡོས་ཀྱི་ Java པར་གཞི་རྒྱབ་སྐྱོར་མི་བྱེད་ མ་མཐར་ཡང་པར་གཞི་ $(ARG1) དགོས་པ་ཡིན།"
 
 #: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_WRONGJAVA_VERSION_MIN & ERRCODE_RES_MASK).String.Text
 msgid  "The installed Java version $(ARG1) is not supported, at least version $(ARG2) is required."
-msgstr ""
+msgstr "ད་ཡོད་ཀྱི་ Java པར་གཞིའི་ $(ARG1) ལ་རྒྱབ་སྐྱོར་མི་བྱེད་ མ་མཐར་ཡང་པར་གཞི་ $(ARG2) དགོས་པ་ཡིན།"
 
 #: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_BADPARTNERSHIP & ERRCODE_RES_MASK).String.Text
-#, fuzzy
 msgid  "The data associated with the partnership is corrupted."
 msgstr "རོགས་པ་འདི་དང་འབྲེལ་ཡོད་ཀྱི་གཞི་གྲངས་ལ་སྐྱོན་ཤོར་ཟིན།"
 
 #: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_BADPARTNERSHIP_NAME & ERRCODE_RES_MASK).String.Text
-#, fuzzy
 msgid  "The data associated with the partnership $(ARG1) is corrupted."
 msgstr "རོགས་པ་ $(ARG1) བེད་སྤྱོད་ཀྱི་གཞི་གྲངས་ལ་སྐྱོན་ཤོར་ཟིན།"
 
 #: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_IO_NOTREADY_VOLUME & ERRCODE_RES_MASK).String.Text
-#, fuzzy
 msgid  "Volume $(ARG1) is not ready."
 msgstr "སྒུལ་འདེད་སྡེར་ $(ARG1) གྲ་སྒྲིག་ཚགས་ཚུད་མེད།"
 
 #: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_IO_NOTREADY_REMOVABLE & ERRCODE_RES_MASK).String.Text
-#, fuzzy
 msgid  "$(ARG1) is not ready; please insert a storage medium."
 msgstr "$(ARG1) གྲ་སྒྲིག་ཚགས་ཚུད་བྱུང་མེད། ཉར་སྡེར་རམ་འོད་སྡེར་འཇུག་རོགས།"
 
 #: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_IO_NOTREADY_VOLUME_REMOVABLE & ERRCODE_RES_MASK).String.Text
-#, fuzzy
 msgid  "Volume $(ARG1) is not ready; please insert a storage medium."
 msgstr "སྒུལ་འདེད་སྡེར་ $(ARG1) གྲ་སྒྲིག་ཚགས་ཚུད་མེད།  ཉར་སྡེར་འཇུག་རོགས།"
 
 #: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_WRONGMEDIUM & ERRCODE_RES_MASK).String.Text
-#, fuzzy
 msgid  "Please insert disk $(ARG1)."
 msgstr "ཁྱེད་ཀྱིས་མཉེན་སྡེར་ $(ARG1) འཇུག་རོགས།"
 
 #: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_IO_CANTCREATE_NONAME & ERRCODE_RES_MASK).String.Text
-#, fuzzy
 msgid  "The object cannot be created in directory $(ARG1)."
 msgstr "དཀར་ཆག་ $(ARG2) ནང་བྱ་ཡུལ་གསར་འཛུགས་བྱ་ཐབས་མེད།"
 
 #: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_IO_UNSUPPORTEDOVERWRITE & ERRCODE_RES_MASK).String.Text
 msgid  "%PRODUCTNAME cannot keep files from being overwritten when this transmission protocol is used. Do you want to continue anyway?"
-msgstr ""
+msgstr "%PRODUCTNAME གིས་བརྒྱུད་སྐྱེལ་གྲོས་མཐུན་འདི་བེད་སྤྱོད་པའི་གནས་ཚུལ་འོག་ཡིག་ཆ་བཅོས་འབྲི་འགོག་ཐབས་མེད། ད་དུང་མུ་མཐུད་བྱ་འདོད་དམ།"
 
 #: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_IO_BROKENPACKAGE & ERRCODE_RES_MASK).String.Text
 msgid  "The file '$(ARG1)' is corrupt and therefore cannot be opened. %PRODUCTNAME can try to repair the file.\n\nThe corruption could be the result of document manipulation or of structural document damage due to data transmission.\n\nWe recommend that you do not trust the content of the repaired document.\nExecution of macros is disabled for this document.\n\nShould %PRODUCTNAME repair the file?\n"
@@ -391,27 +346,27 @@ msgstr ""
 
 #: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_IO_BROKENPACKAGE_CANTREPAIR & ERRCODE_RES_MASK).String.Text
 msgid  "The file '$(ARG1)' could not be repaired and therefore cannot be opened."
-msgstr ""
+msgstr "ཡིག་ཆ་ '$(ARG1)'   སླར་གསོ་བྱ་ཐབས་མེད་ དེས་རྐྱེན་པས་ཡིག་ཆ་འདི་ཁ་འབྱེད་ཐབས་མེད།"
 
 #: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_CONFIGURATION_BROKENDATA_NOREMOVE & ERRCODE_RES_MASK).String.Text
 msgid  "Configuration data in '$(ARG1)' is corrupted. Without this data some functions may not operate correctly.\nDo you want to continue startup of %PRODUCTNAME without the corrupted configuration data?"
-msgstr ""
+msgstr "$(ARG1) ཁྲོད་ཀྱི་སྡེབ་སྒྲིག་གཞི་གྲངས་ལ་སྐྱོན་ཤོར་ཟིན། གཞི་གྲངས་དེ་མེད་པས་བྱེད་ནུས་འགའ་ཞིག་ཕལ་ཆེར་ཡང་དག་པར་འཁོར་རྒྱུག་བྱ་ཐབས་མེད། \nསྐྱོན་ཤོར་བའི་སྡེབ་སྒྲིག་གཞི་གྲངས་འདི་མེད་པའི་གནས་ཚུལ་འོག་མུ་མཐུད་ %PRODUCTNAMEསྒུལ་སློང་བྱ་འདོད་དམ།"
 
 #: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_CONFIGURATION_BROKENDATA_WITHREMOVE & ERRCODE_RES_MASK).String.Text
 msgid  "The personal configuration file '$(ARG1)' is corrupted and must be deleted to continue. Some of your personal settings may be lost.\nDo you want to continue startup of %PRODUCTNAME without the corrupted configuration data?"
-msgstr ""
+msgstr "མི་སྒེར་གྱི་སྡེབ་སྒྲིག་ཡིག་ཆ་ $(ARG1) སྐྱོན་ཤོར་ཟིན་  ངེས་པར་དུ་དེ་སུབ་ན་མུ་མཐུད་ཐུབ།   མི་སྒེར་གྱི་བཀོད་སྒྲིག་འགའ་ཞིག་ཕལ་ཆེར་བརླགས་ཟིན་འདུག།  \nསྐྱོན་ཤོར་བའི་སྡེབ་སྒྲིག་གཞི་གྲངས་འདི་མེད་པའི་གནས་ཚུལ་འོག་མུ་མཐུད་ %PRODUCTNAME སྒུལ་སློང་བྱ་འདོད་དམ་？"
 
 #: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_CONFIGURATION_BACKENDMISSING & ERRCODE_RES_MASK).String.Text
 msgid  "The configuration data source '$(ARG1)' is unavailable. Without this data some functions may not operate correctly."
-msgstr ""
+msgstr "སྡེབ་སྒྲིག་གཞི་གྲངས་ཁུངས་ $(ARG1) བེད་སྤྱོད་མི་རུང་།  གཞི་གྲངས་འདི་མེད་པས་བྱེད་ནུས་འགའ་རེ་ཕལ་ཆེར་ཡང་དག་པར་འཁོར་རྒྱུག་བྱ་ཐབས་མེད།"
 
 #: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_CONFIGURATION_BACKENDMISSING_WITHRECOVER & ERRCODE_RES_MASK).String.Text
 msgid  "The configuration data source '$(ARG1)' is unavailable. Without this data some functions may not operate correctly.\nDo you want to continue startup of %PRODUCTNAME without the missing configuration data?"
-msgstr ""
+msgstr "སྡེབ་སྒྲིག་གཞི་གྲངས་ཁུངས་ $(ARG1) བེད་སྤྱོད་མི་རུང་། གཞི་གྲངས་འདི་མེད་པས་བྱེད་ནུས་འགའ་རེ་ཕལ་ཆེན་ཡང་དག་པར་འཁོར་རྒྱུག་བྱ་ཐབས་མེད། \nགཞི་གྲངས་སྡེབ་སྒྲིག་མེད་པའི་གནས་ཚུལ་འོག་མུ་མཐུད་ %PRODUCTNAMEསྒུལ་སློང་བྱ་འདོད་དམ་མི་འདོད།"
 
 #: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_INVALID_XFORMS_SUBMISSION_DATA & ERRCODE_RES_MASK).STRING.Text
 msgid  "The form contains invalid data. Do you still want to continue?"
-msgstr ""
+msgstr "རེའུ་མིག་འདི་ལ་ནུས་མེད་ཀྱི་གཞི་གྲངས་འདུས་ཡོད། སྔར་བཞིན་རྒྱུན་མཐུད་བྱ་འདོད་དམ།"
 
 #: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_LOCKING_LOCKED & ERRCODE_RES_MASK).String.Text
 msgid  "The file $(ARG1) is locked by another user. Currently, another write access to this file cannot be granted."
@@ -431,37 +386,33 @@ msgstr ""
 
 #: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_UNKNOWNAUTH_UNTRUSTED).STRING.Text
 msgid  "Unable to verify the identity of $(ARG1) site.\n\nBefore accepting this certificate, you should examine this site's certificate carefully. Are you willing to accept this certificate for the purpose of identifying the Web site $(ARG1)?"
-msgstr ""
+msgstr "$(ARG1) ཚུགས་ཚེག་གི་མིང་ཐོབ་ར་སྤྲོད་བྱེད་མི་ཐུབ། \n\nལག་ཁྱེར་འདི་དང་ལེན་མ་བྱས་གོང་ཁྱེད་ཀྱིས་ཚུགས་ཚེག་དེའི་ལག་ཁྱེར་ཞིབ་བཤེར་ཞིབ་ཚགས་བྱེད་དགོས། ཁྱེད་ཀྱིས་ལག་ཁྱེར་འདི་དང་ལེན་བྱས་ནས་དྲ་ཚུགས་ $(ARG1) དབྱེ་འབྱེད་བྱེད་དམ།"
 
 #: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_SSLWARN_EXPIRED_1).STRING.Text
 msgid  "$(ARG1) is a site that uses a security certificate to encrypt data during transmission, but its certificate expired on $(ARG2).\n\nYou should check to make sure that your computer's time is correct."
-msgstr ""
+msgstr "(ARG1)ནི་བརྒྱུད་གཏོང་བྱེད་པའི་ནང་བདེ་འཇགས་ཁས་ལེན་གྱི་གསང་སྣོན་གྲངས་གཞི་སྤྱོད་པའི་ཚུགས་གནས་ཤིག་ཡིན་མོད། འོན་ཀྱང་ཚུགས་གནས་དེའི་ལག་ཁྱེར་དེ་$(ARG2) སྐབས་སུ་དུས་ཚོད་ཡོལ་བ་ཡིན། ཁྱེད་ཀྱིས་རང་གི་རྩིས་འཁོར་དུས་ཚོད་ཡང་དག་པ་ཡིན་པའི་དཔྱད་ཞིབ་ཀྱིས་འགན་ལེན་བྱེད་དགོས།"
 
 #: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_SSLWARN_DOMAINMISMATCH_1).STRING.Text
 msgid  "You have attempted to establish a connection with $(ARG1). However, the security certificate presented belongs to $(ARG2). It is possible, though unlikely, that someone may be trying to intercept your communication with this web site.\n\nIf you suspect the certificate shown does not belong to $(ARG1), please cancel the connection and notify the site administrator.\n\nWould you like to continue anyway?"
-msgstr ""
+msgstr "ཁྱེད་ཀྱིས་$(ARG1) དང་སྦྲེལ་མཐུད་བྱེད་རྩིས་འདུག འོན་ཀྱང་བདེ་འཇགས་ལག་ཁྱེར་དེ་ཕལ་ཆེར་$(ARG2) ཡིན་པ་འདྲ། དེ་འདྲ་མིན་ནའང་གང་ལྟར་ཁྱེད་རང་དྲ་ཚུགས་དེ་དང་འཕྲིན་གཏོང་བྱེད་པར་བཀག་འགོག་བྱེད་མཁན་ཡོད་པ་འདྲ། གལ་ཏེ་མངོན་སྟོན་བྱས་པའི་ལག་ཁྱེར་དེ་ $(ARG1)མིན་པར་དོགས་པ་འདུག་ན་སྦྲེལ་མཐུད་བྱེད་མཚམས་བཞག་ནས་དྲ་ཚུགས་དེའི་དོ་དམ་པར་སྙན་སེང་ཞུས་དང་།  མུ་མཐུད་ཡིན་ནམ།་"
 
 #: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_SSLWARN_INVALID_1).STRING.Text
 msgid  "The certificate could not be validated. You should examine this site's certificate carefully.\n\nIf you suspect the certificate shown, please cancel the connection and notify the site administrator."
-msgstr ""
+msgstr "ལག་འཁྱེར་འདིར་ར་སྤྲོད་ཐབས་མིན་འདུག ཁྱེད་ནས་དྲ་ཚུགས་འདིའི་ལག་ཁྱེར་ལ་ཞིབ་བཤེར་ཞིབ་ཚགས་བྱེད་དགོས། \n\nགལ་ཏེ་ཁྱེད་ཀྱིས་མངོན་སྟོན་བྱས་པའི་ལག་ཁྱེར་ལ་དོགས་པ་ཡོད་ན་འབྲེལ་མཐུད་འདི་མེད་པ་བཟོས་ནས་དྲ་ཚུགས་འདིའི་དོ་དམ་པར་བརྡ་ཁྱབ་གཏོང་དགོས།"
 
 #: source/ids.src#RID_UUI_ERRHDL.(TITLE_UUI_SSLWARN_DOMAINMISMATCH).STRING.Text
-#, fuzzy
 msgid  "Security Warning: Domain Name Mismatch"
 msgstr "བདེ་འཇགས་ཉེན་བརྡ་སྟེ། ཁོངས་མིང་ཆ་འགྲིགས་མེད་པ།"
 
 #: source/ids.src#RID_UUI_ERRHDL.(TITLE_UUI_SSLWARN_EXPIRED).STRING.Text
-#, fuzzy
 msgid  "Security Warning: Server Certificate Expired"
 msgstr "བདེ་འཇགས་ཉེན་བརྡ་སྟེ། ཞབས་ཞུའི་རྩིས་འཁོར་གྱི་ལག་ཁྱེར་དུས་ཚོད་ཡོལ་ཟིན།"
 
 #: source/ids.src#RID_UUI_ERRHDL.(TITLE_UUI_SSLWARN_INVALID).STRING.Text
-#, fuzzy
 msgid  "Security Warning: Server Certificate Invalid"
 msgstr "བདེ་འཇགས་ཉེན་བརྡ་སྟེ། ཞབས་ཞུའི་རྩིས་འཁོར་གྱི་ལག་ཁྱེར་གོ་མི་ཆོད་པར་གྱུར།"
 
 #: source/fltdlg.src#DLG_FILTER_SELECT.ModalDialog.Text
-#, fuzzy
 msgid  "Filter Selection"
 msgstr "འཚག་འདེམས་བདམས་པ།"
 
@@ -470,7 +421,6 @@ msgid  "Authentication Required"
 msgstr ""
 
 #: source/logindlg.src#DLG_UUI_LOGIN.FT_LOGIN_ERROR.FixedText.Text
-#, fuzzy
 msgid  "Message from server:"
 msgstr "ཞབས་ཆས་སྙན་ཞུ།"
 
@@ -479,31 +429,26 @@ msgid  "Enter user name and password for: \n%1"
 msgstr ""
 
 #: source/logindlg.src#DLG_UUI_LOGIN.STR_LOGIN_REALM.String.Text
-msgid  "Enter user name and password for: \n"%2" on %1"
+msgid  "Enter user name and password for: \n\"%2\" on %1"
 msgstr ""
 
 #: source/logindlg.src#DLG_UUI_LOGIN.FT_LOGIN_PATH.FixedText.Text
-#, fuzzy
 msgid  "~Path"
 msgstr "བརྒྱུད་ལམ།(~P)"
 
 #: source/logindlg.src#DLG_UUI_LOGIN.FT_LOGIN_USERNAME.FixedText.Text
-#, fuzzy
 msgid  "~User name"
 msgstr "སྤྱོད་པའི་མིང།(~U)"
 
 #: source/logindlg.src#DLG_UUI_LOGIN.FT_LOGIN_PASSWORD.FixedText.Text
-#, fuzzy
 msgid  "Pass~word"
 msgstr "གསང་ཨང་།(~W)"
 
 #: source/logindlg.src#DLG_UUI_LOGIN.FT_LOGIN_ACCOUNT.FixedText.Text
-#, fuzzy
 msgid  "A~ccount"
 msgstr "རྩིས་ཐོའི་ཨང་གྲངས།(~C)"
 
 #: source/logindlg.src#DLG_UUI_LOGIN.CB_LOGIN_SAVEPASSWORD.CheckBox.Text
-#, fuzzy
 msgid  "~Remember password"
 msgstr "གསང་ཨང་ཉར་ཚགས།"
 
@@ -512,58 +457,50 @@ msgid  "~Use system credentials"
 msgstr ""
 
 #: source/cookiedg.src#DLG_COOKIES.RB_INFUTURE_SEND.RadioButton.Text
-#, fuzzy
 msgid  "~Send"
 msgstr "བརྒྱུད་སྐྱེལ།(~S)"
 
 #: source/cookiedg.src#DLG_COOKIES.RB_INFUTURE_IGNORE.RadioButton.Text
-#, fuzzy
 msgid  "I~gnore"
 msgstr "སྣང་མེད།(~G)"
 
 #: source/cookiedg.src#DLG_COOKIES.RB_INFUTURE_INTERACTIVE.RadioButton.Text
-#, fuzzy
 msgid  "I~nteractive"
 msgstr "སྤེལ་རེས་རྣམ་པ།(~N)"
 
 #: source/cookiedg.src#DLG_COOKIES.GB_INFUTURE.GroupBox.Text
-#, fuzzy
 msgid  "Future Cookie Handling"
 msgstr "ད་ཕྱིན་ Cookie འདི་དག་ལས་སྣོན་བྱ་བའི་ཐབས་ཚུལ།"
 
 #: source/cookiedg.src#DLG_COOKIES.BTN_COOKIES_CANCEL.PushButton.Text
-#, fuzzy
 msgid  "~Ignore"
 msgstr "སྣང་མེད།(~I)"
 
 #: source/cookiedg.src#DLG_COOKIES.BTN_COOKIES_OK.PushButton.Text
-#, fuzzy
 msgid  "~Send"
 msgstr "བརྒྱུད་སྐྱེལ།(~S)"
 
 #: source/cookiedg.src#STR_COOKIES_RECV_START.String.Text
 msgid  "The '${HOST}' server wishes to set one or more cookies.\nCookies contain information referring to certain URL classes. If %PRODUCTNAME later requests a document with a URL corresponding to the class of a previously set cookie, %PRODUCTNAME will send this information to the server. This allows a server to recognize the status of a WWW application, e.g., when shopping online.\n\nThe following Cookies should be set:\n\n"
-msgstr ""
+msgstr "'${HOST}'ཞབས་ཞུའི་རྩིས་འཁོར་ལ་  Cookieགཅིག་གམ་ཡང་ན་དེ་ལས་མང་བ་སྒྲིག་བཀོད་བྱེད་དགོས། \nCookie ལ་དམིགས་གཏན་འཁེལ་བའི་URLརིགས་ཀྱི་འབྲེལ་ཡོད་ཆ་འཕྲིན་ཚུད་ཡོད།   གལ་ཏེ་%PRODUCTNAMEཡིས་རྗེས་སུ་ཡིག་ཚགས་ཤིག་རེ་བ་ཞུས་ནས་ཡིག་ཚགས་དེའི་URLདང་གོང་དུ་སྒྲིག་བཀོད་བྱས་པའི་Cookieགང་རུང་གི་རིགས་ཁ་གཏད་བྱས་ཡོད་ཚེ་%PRODUCTNAMEདེ་ཞབས་ཞུའི་རྩིས་འཁོར་ལ་ཆ་འཕྲིན་དེ་གཏོང་སྐྱེལ་བྱེད།  དེ་ལྟར་བྱས་ན་ཞབས་ཞུའི་རྩིས་འཁོར་གྱིས་WWWཡི་བཀོལ་སྤྱོད་བྱ་རིམ་གྱི་གནས་སྟངས（དཔེར་ན་དྲ་ཐོག་ཉོ་སྒྲུབ་བྱེད་སྐབས）དབྱེ་འབྱེད་བྱེད་ཐུབ།    \n\n  གཤམ་གྱི་Cookieསྒྲིག་བཀོད་བྱེད་དགོས་པ་སྟེ། \n\n"
 
 #: source/cookiedg.src#STR_COOKIES_RECV_COOKIES.String.Text
 msgid  "Domain: ${DOMAIN}, Path: ${PATH}, Cookie: ${COOKIE}.\n"
-msgstr ""
+msgstr "${DOMAIN}ཁོངས་དང་${PATH}, Cookie:${COOKIE}.\nབརྒྱུད་ལམ།"
 
 #: source/cookiedg.src#STR_COOKIES_RECV_TITLE.String.Text
-#, fuzzy
 msgid  "Cookie Reception"
 msgstr "Cookieདང་ལེན་བྱེད་པ།"
 
 #: source/cookiedg.src#STR_COOKIES_SEND_START.String.Text
 msgid  "%PRODUCTNAME has saved cookies for the server '${HOST}' which will be sent when requesting the document ${PATH}.\nCookies contain information which refers to certain URL classes. They are sent by some servers to %PRODUCTNAME where they are saved when certain documents are accessed. If %PRODUCTNAME loads a document that, according to the URL, corresponds to a class of one of the previously received Cookies, %PRODUCTNAME will send this information to that server. This enables a server to keep track of the status of a WWW application, e.g., when shopping online.\n\nThe following Cookies should be set:\n\n"
-msgstr ""
+msgstr "ཡིས་ཞབས་ཞུའི་རྩིས་འཁོར་ '${HOST}'ལ་Cookieཉར་ཚགས་བྱས་སོང་བས་ཐེངས་རྗེས་མར་ཡིག་ཚགས་${PATH}རེ་བ་ཞུ་སྐབས་Cookieདེ་དག་གཏོང་སྐྱེལ་བྱེད།  \nCookieལ་དམིགས་གཏན་འཁེལ་བའི་URLརིགས་ཀྱི་འབྲེལ་ཡོད་ཆ་འཕྲིན་ཚུད་ཡོད།  དམིགས་གཏན་འཁེལ་བའི་ཡིག་ཚགས་བཅར་འདྲི་བྱེད་སྐབས་ཞབས་ཞུའི་རྩིས་འཁོར་ཁ་ཤས་ཀྱིས་%PRODUCTNAMEལ་Cookieདེ་དག་གཏོང་སྐྱེལ་བྱེད་པ་མ་ཟད།  དེ་%PRODUCTNAMEནང་ཉར་ཚགས་བྱེད།  གལ་ཏེ་%PRODUCTNAMEལ་ཡིག་ཚགས་ཤིག་སྣོན་འགེལ་བྱས་ནས་ཡིག་ཚགས་དེའི་URLདང་གོང་དུ་འབྱོར་བའི་Cookieགང་རུང་གི་རིགས་ཁ་གཏད་བྱས་ཡོད་ཚེ་%PRODUCTNAMEདེ་ཞབས་ཞུའི་རྩིས་འཁོར་ལ་ཆ་འཕྲིན་དེ་གཏོང་སྐྱེལ་བྱེད།   དེ་ལྟར་བྱས་ན་ཞབས་ཞུའི་རྩིས་འཁོར་གྱིས་WWWབཡི་བཀོལ་སྤྱོད་བྱ་རིམ་གྱི་གནས་སྟངས（དཔེར་ན་དྲ་ཐོག་ཉོ་སྒྲུབ་བྱེད་སྐབས་）རྗེས་འདེད་གཏོང་ཐུབ  \n\n  གཤམ་གྱི་Cookieསྒྲིག་བཀོད་བྱེད་དགོས་པ་སྟེ། \n\n"
 
 #: source/cookiedg.src#STR_COOKIES_SEND_COOKIES.String.Text
 msgid  "Domain: ${DOMAIN}, Path: ${PATH}, Cookie: ${COOKIE}.\n"
-msgstr ""
+msgstr "${DOMAIN}ཁོངས་དང་${PATH}, Cookie:${COOKIE}.\nབརྒྱུད་ལམ།"
 
 #: source/cookiedg.src#STR_COOKIES_SEND_TITLE.String.Text
-#, fuzzy
 msgid  "Send Cookies"
 msgstr "Cookie གཏོང་སྐྱེལ།"
 
@@ -578,12 +515,14 @@ msgid  "The password is incorrect. The file cannot be modified."
 msgstr "གསང་ཨང་ནོར་བ། ཡིག་ཚགས་ཁ་ཕྱེ་ཐབས་མེད་པ།"
 
 #: source/passworderrs.src#STR_ERROR_MASTERPASSWORD_WRONG.String.Text
+#, fuzzy
 msgid  "The master password is incorrect."
-msgstr ""
+msgstr "ནང་འཇུག་བྱས་པའི་གཙོ་བོའི་གསང་རྟགས་ནོར་འདུག %PRODUCTNAME དེས་གཙོ་བོའི་གསང་རྟགས་ཀྱིས་སྲུང་སྐྱོབ་བྱེད་པའི་ Webའཛུལ་ཞུགས་བྱས་པའི་ཆ་འཕྲིན་ལ་ལྟ་སྐྱོད་བྱེད་ཐབས་མིན་འདུག"
 
 #: source/passworderrs.src#STR_ERROR_SIMPLE_PASSWORD_WRONG.String.Text
+#, fuzzy
 msgid  "The password is incorrect."
-msgstr ""
+msgstr "ནང་འཇུག་བྱས་པའི་གཙོ་བོའི་གསང་རྟགས་ནོར་འདུག %PRODUCTNAME དེས་གཙོ་བོའི་གསང་རྟགས་ཀྱིས་སྲུང་སྐྱོབ་བྱེད་པའི་ Webའཛུལ་ཞུགས་བྱས་པའི་ཆ་འཕྲིན་ལ་ལྟ་སྐྱོད་བྱེད་ཐབས་མིན་འདུག"
 
 #: source/passworderrs.src#STR_ERROR_PASSWORDS_NOT_IDENTICAL.String.Text
 #, fuzzy
@@ -603,26 +542,22 @@ msgid  "Rename"
 msgstr ""
 
 #: source/openlocked.src#STR_OPENLOCKED_TITLE.String.Text
-#, fuzzy
 msgid  "Document in Use"
 msgstr "ཡིག་ཚགས་བེད་སྤྱོད་བྱེད་མུས།"
 
 #: source/openlocked.src#STR_OPENLOCKED_MSG.String.Text
 msgid  "Document file '$(ARG1)' is locked for editing by:\n\n$(ARG2)\n\nOpen document read-only or open a copy of the document for editing.\n\n"
-msgstr ""
+msgstr "ཡིག་ཚགས་'$(ARG1)' \n\nདེ $(ARG2) ཡིས་རྩོམ་སྒྲིག་བྱས་པའི་རྐྱེན་གྱིས་བཀག་འཛིན་བྱས་འདུག  \n\nལྟ་ཀློག་ཁོ་ནའི་ཐོག་ནས་ཡིག་ཚགས་ཁ་ཕྱེ་རྒྱུའམ་ཡང་ན་ཡིག་ཚགས་དེའི་འདྲ་དཔེ་ཞིག་ཁ་ཕྱེ་ནས་རྩོམ་སྒྲིག་བྱེད་རྒྱུ།\n\n"
 
 #: source/openlocked.src#STR_OPENLOCKED_OPENREADONLY_BTN.String.Text
-#, fuzzy
 msgid  "Open ~Read-Only"
 msgstr "ཀློག་ཙམ་བྱེད་ཡས་ཁ་འབྱེད། (~R)"
 
 #: source/openlocked.src#STR_OPENLOCKED_OPENCOPY_BTN.String.Text
-#, fuzzy
 msgid  "Open ~Copy"
 msgstr "ཟུར་དེབ་ཁ་འབྱེད(~C)"
 
 #: source/openlocked.src#STR_UNKNOWNUSER.String.Text
-#, fuzzy
 msgid  "Unknown User"
 msgstr "ཧ་མི་གོ་བའི་སྤྱོད་དུད།"
 
@@ -632,29 +567,25 @@ msgstr ""
 
 #: source/filechanged.src#STR_FILECHANGED_MSG.String.Text
 msgid  "The file has been changed since it was opened for editing in %PRODUCTNAME. Saving your version of the document will overwrite changes made by others.\n\nDo you want to save anyway?\n\n"
-msgstr ""
+msgstr "%PRODUCTNAMEནང་ཡིག་ཆ་ཁ་ཕྱེ་ནས་རྩོམ་འབྲི་བྱས་པ་བརྟེན་ཡིག་ཆ་དེ་བཟོ་བཅོས་ཟིན་པ་རེད། ཁྱེད་ཀྱིས་བཟོ་བཅོས་ཟིན་པའི་ཡིག་ཚགས་ཉར་ཚགས་བྱས་པ་དེས་མི་གཞན་གྱི་བཟོ་བཅོས་དེ་ཁེབས་ངེས་ཡིན་པས་\n\nད་དུང་མུ་མཐུད་ཉར་ཚགས་བྱེད་མཁན་ཡིན་ནམ།\n\n"
 
 #: source/filechanged.src#STR_FILECHANGED_SAVEANYWAY_BTN.String.Text
-#, fuzzy
 msgid  "~Save Anyway"
 msgstr "མུ་མཐུད་ཉར་ཚགས།"
 
 #: source/newerverwarn.src#RID_DLG_NEWER_VERSION_WARNING.ModalDialog.Text
-#, fuzzy
 msgid  "%PRODUCTNAME Update Available"
 msgstr "%PRODUCTNAME གསར་བརྗེར་སྤྱོད་ཆོག"
 
 #: source/newerverwarn.src#RID_DLG_NEWER_VERSION_WARNING.FT_INFO.FixedText.Text
 msgid  "This document was created by a newer version of %PRODUCTNAME. It may contain features not supported by your current version.\n\nClick 'Update Now...' to run online update and get the latest version of %PRODUCTNAME."
-msgstr ""
+msgstr "ཡིག་ཚགས་འདི་ནི་%PRODUCTNAMEཡི་པར་གཞི་གསར་ཙམ་ཞིག་ལས་གསར་འཛུགས་བྱས་པ་ཞིག་ཡིན། དེར་ཕལ་ཆེར་ཁྱེད་ཀྱི་མིག་སྔའི་པར་གཞིར་རྒྱབ་སྐྱོར་མི་བྱེད་པའི་བྱེད་ནས་ལྡན་ཡོད། “ལམ་སེང་གསར་བརྗེས་…”ཞེས་པར་རྐྱང་རྡེབ་བྱས་ནས་འཁོར་སྦྲེལ་འཁོར་སྐྱོད་བྱེད་རྒྱུ་གསར་བརྗེས་བྱས་ནས་%PRODUCTNAME ཡི་པར་གཞི་གསར་ཤོས་ཐོབ་པ་བྱེད་དང་།"
 
 #: source/newerverwarn.src#RID_DLG_NEWER_VERSION_WARNING.PB_UPDATE.PushButton.Text
-#, fuzzy
 msgid  "~Update Now..."
 msgstr "ལམ་སེང་གསར་བརྗེས་བྱེད་པ། (~U)..."
 
 #: source/newerverwarn.src#RID_DLG_NEWER_VERSION_WARNING.PB_LATER.CancelButton.Text
-#, fuzzy
 msgid  "~Later"
 msgstr "ཏོག་ཙམ་སྒུག (～L)"
 
@@ -704,8 +635,9 @@ msgid  "View Signatures..."
 msgstr "མིང་འགོད་ལྟ་བཤེར།"
 
 #: source/secmacrowarnings.src#RID_XMLSECDLG_MACROWARN.FI_DESCR2.FixedText.Text
+#, fuzzy
 msgid  "Macros may contain viruses. Disabling macros for a document is always safe. If you disable macros you may lose functionality provided by the document macros."
-msgstr ""
+msgstr "སྤྱི་ཁྱབ་ལ་ནད་དུག་ཡོད་ཤས་ཆེ། ཡིག་ཚགས་ཀྱི་སྤྱི་ཁྱབ་བཀོལ་སྤྱོད་བྱེད་མི་ཆོག་པ་དེ་རྒྱུན་གཏན་བདེ་འཇགས་ཡིན། གལ་ཏེ་ཁྱེད་ཀྱི་སྤྱི་ཁྱབ་བཀོལ་སྤྱོད་བྱེད་མི་ཆོག་པ་བཟོས་ན་ཡིག་ཚགས་ཀྱི་སྤྱི་ཁྱབ་ཀྱིས་མཁོ་འདོན་བྱས་པའི་བྱེད་ནུས་འབོར་བརླག་བྱེད་ཉེན་ཆེ།"
 
 #: source/secmacrowarnings.src#RID_XMLSECDLG_MACROWARN.CB_ALWAYSTRUST.CheckBox.Text
 #, fuzzy
@@ -723,66 +655,57 @@ msgid  "~Disable Macros"
 msgstr "སྤྱོད་མི་ཆོག་པའི་སྤྱི་ཁྱབ། (~D)"
 
 #: source/masterpassworddlg.src#DLG_UUI_MASTERPASSWORD.FT_MASTERPASSWORD.FixedText.Text
-#, fuzzy
 msgid  "Enter password"
 msgstr "གསང་ཨང་།"
 
 #: source/masterpassworddlg.src#DLG_UUI_MASTERPASSWORD.HelpButton.Text
-#, fuzzy
 msgid  "Enter Master Password"
 msgstr "གསང་ཨང་གཙོ་བོ་ནང་འཇུག་བྱེད།"
 
 #: source/masterpasscrtdlg.src#DLG_UUI_MASTERPASSWORD_CRT.ModalDialog.Text
-#, fuzzy
 msgid  "Set Master Password"
 msgstr "གསང་ཨང་གཙོ་བོ་ནང་འཇུག་བྱེད།"
 
 #: source/masterpasscrtdlg.src#DLG_UUI_MASTERPASSWORD_CRT.FT_INFOTEXT.FixedText.Text
 msgid  "Passwords for web connections are protected by a master password. You will be asked to enter it once per session, if %PRODUCTNAME retrieves a password from the protected password list."
-msgstr ""
+msgstr "Web སྦྲེལ་མཐུད་བྱས་པའི་གསང་ཨང་ནི་གསང་ཨང་གཙོ་བོའི་སྲུང་སྐྱོབ་ཐོབ་པ་ཡིན། གལ་ཏེ་ %PRODUCTNAME སྦྲེདེ་སྲུང་སྐྱོབ་ཐོབ་པའི་གསང་ཨང་གསལ་ཐོ་ནང་གསང་ཨང་ཞིག་འཚོལ་ཞིབ་བྱུང་ན་སྐད་བརྡ་རེ་ཐོན་སྐབས་ཁྱེད་ལ་གསང་ཨང་དེ་ཐེངས་རེ་འདྲེན་འཇུག་བྱེད་དགོས་ཀྱི་ཡོད།"
 
 #: source/masterpasscrtdlg.src#DLG_UUI_MASTERPASSWORD_CRT.FT_MASTERPASSWORD_CRT.FixedText.Text
-#, fuzzy
 msgid  "~Enter password"
 msgstr "གསང་ཨང་གཙོ་བོ།"
 
 #: source/masterpasscrtdlg.src#DLG_UUI_MASTERPASSWORD_CRT.FT_MASTERPASSWORD_REPEAT.FixedText.Text
-#, fuzzy
 msgid  "~Reenter password"
 msgstr "གསང་ཨང་གཙོ་བོ་གཏན་འཁེལ་བྱེད།(~C)"
 
 #: source/masterpasscrtdlg.src#DLG_UUI_MASTERPASSWORD_CRT.FT_CAUTIONTEXT.FixedText.Text
 msgid  "Caution: If you forget the master password, you will be unable to access any of the information protected by it. Passwords are case-sensitive."
-msgstr ""
+msgstr "ཟབ་ནན་བྱེད་རྒྱུར། ཁྱེད་ཀྱིས་སྒྲིག་བཀོད་བྱས་པའི་གསང་ཨང་མ་བརྗེད་པ་བྱེད་དགོས། གལ་ཏེ་ཁྱེད་ཀྱིས་གསང་ཨང་ལྟེ་བ་བརྗེད་ཚེ། དེས་སྲུང་སྐྱོབ་བྱས་པའི་ཆ་འཕྲིན་གང་ལའང་ཡང་བཅར་འདྲི་བྱེད་ཐབས་མེད། གསང་ཨང་ཁུལ་དེ་ཡིག་ཆེན་དང་ཡིག་ཆུང་དུ་ཁག་དབྱེ་བྱས་ཡོད་པས་རིང་ཚད་འབྲུ་ཕྲེང་ཉུང་མཐར་ 5 དགོས།"
 
 #: source/alreadyopen.src#STR_ALREADYOPEN_MSG.String.Text
 msgid  "Document file '$(ARG1)' is locked for editing by yourself on a different system since $(ARG2)\n\nOpen document read-only, or ignore own file locking and open the document for editing.\n\n"
-msgstr ""
+msgstr "ཡིག་ཚགས་ཡིག་ཆ་'$(ARG1)' དེ $(ARG2) རྒྱུད་ཁོངས་མི་འདྲ་བའི་ནང་ཁྱེད་ཀྱིས་བཀག་འཛིན་བྱས་ཏེ་རྩོམ་སྒྲིག་བྱེད། \n\nརྒྱུལྟ་ཀློག་ཁོ་ནའི་ཐོག་ནས་ཡིག་ཚགས་ཁ་ཕྱེ་རྒྱུའམ། ཡང་ན་ཁྱེད་ཀྱིས་ཡིག་ཆ་བཀག་འཛིན་སྣང་མེད་དུ་བཏང་ནས་ཡིག་ཚགས་ཁ་ཕྱེ་ནས་རྩོམ་སྒྲིག་བྱེད་རྒྱུ།\n\n"
 
 #: source/alreadyopen.src#STR_ALREADYOPEN_READONLY_BTN.String.Text
-#, fuzzy
 msgid  "Open ~Read-Only"
 msgstr "ཀློག་ཙམ་བྱེད་ཡས་ཁ་འབྱེད། (~R)"
 
 #: source/alreadyopen.src#STR_ALREADYOPEN_OPEN_BTN.String.Text
-#, fuzzy
 msgid  "~Open"
 msgstr "ཁ་འབྱེད།(~O)"
 
 #: source/alreadyopen.src#STR_ALREADYOPEN_SAVE_MSG.String.Text
 msgid  "Document file '$(ARG1)' is locked for editing by yourself on a different system since $(ARG2)\n\nClose document on other system and retry saving or ignore own file locking and save current document.\n\n"
-msgstr ""
+msgstr "ཡིག་ཚགས་ཡིག་ཆ་'$(ARG1)' དེ $(ARG2) རྒྱུད་ཁོངས་མི་འདྲ་བའི་ནང་ཁྱེད་ཀྱིས་བཀག་འཛིན་བྱས་ཏེ་རྩོམ་སྒྲིག་བྱེད། \n\nརྒྱུད་ཁོངས་གཞན་དག་ནང་ཡིག་ཚགས་སྒོ་རྒྱག་པ་མ་ཟད། དེ་བསྐྱར་དུ་ཉར་ཚགས་བྱེད་པའི་ཚོད་ལྟ་བྱེད་པའམ་ཡང་ན་ཁྱེད་ཀྱིས་ཡིག་ཆ་བཀག་འཛིན་སྣང་མེད་དུ་བཏང་བ་མ་ཟད་ད་ལྟའི་ཡིག་ཚགས་ཉར་འཇོག་བྱེད།\n\n"
 
 #: source/alreadyopen.src#STR_ALREADYOPEN_RETRY_SAVE_BTN.String.Text
-#, fuzzy
 msgid  "~Retry Saving"
 msgstr "ཡང་བསྐྱར་ཉར་ཚགས་ཚོད་ལྟ་བྱེད་རྒྱུ་(~R)"
 
 #: source/alreadyopen.src#STR_ALREADYOPEN_SAVE_BTN.String.Text
-#, fuzzy
 msgid  "~Save"
 msgstr "ཉར་ཚགས།(~S)"
 
 #: source/lockfailed.src#STR_LOCKFAILED_MSG.String.Text
 msgid  "The file could not be locked for exclusive access by %PRODUCTNAME, due to missing permission to create a lock file on that file location."
-msgstr ""
+msgstr "%PRODUCTNAMEཡིག་ཆ་བཀག་འཛིན་བྱས་ནས་བཙན་བཟུང་བཅར་འདྲིར་སྤྱོད་ཐབས་བྲལ་བ་དེ་ནི་ཡིག་ཆའི་གནས་སར་བཀག་འཛིན་ཡིག་ཆ་ཞིག་གསར་བཟོའི་དབང་ཚད་མེད་པའི་རྐྱེན་གྱིས་རེད།"

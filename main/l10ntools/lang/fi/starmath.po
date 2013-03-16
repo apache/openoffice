@@ -341,7 +341,7 @@ msgstr "Otsikko~rivi"
 
 #: source/smres.src#RID_PRINTOPTIONPAGE.CB_EQUATION_TEXT.CheckBox.Text
 msgid  "~Formula text"
-msgstr "Kaavan teksti"
+msgstr "~Kaavan teksti"
 
 #: source/smres.src#RID_PRINTOPTIONPAGE.CB_FRAME.CheckBox.Text
 msgid  "B~order"
@@ -353,15 +353,15 @@ msgstr "Tulostusmuoto"
 
 #: source/smres.src#RID_PRINTOPTIONPAGE.RB_ORIGINAL_SIZE.RadioButton.Text
 msgid  "O~riginal size"
-msgstr "Alkuperäinen koko"
+msgstr "A~lkuperäinen koko"
 
 #: source/smres.src#RID_PRINTOPTIONPAGE.RB_FIT_TO_PAGE.RadioButton.Text
 msgid  "Fit to ~page"
-msgstr "Sovita sivulle"
+msgstr "~Sovita sivulle"
 
 #: source/smres.src#RID_PRINTOPTIONPAGE.RB_ZOOM.RadioButton.Text
 msgid  "~Scaling"
-msgstr "~Skaalaus"
+msgstr "Sk~aalaus"
 
 #: source/smres.src#RID_PRINTOPTIONPAGE.FL_MISC_OPTIONS.FixedLine.Text
 msgid  "Miscellaneous options"
@@ -445,11 +445,11 @@ msgstr "~Poista"
 
 #: source/smres.src#RID_NOMATHTYPEFACEWARNING.WarningBox.Message
 msgid  "The 'StarMath' font has not been installed.\nWithout this font %PRODUCTNAME Math cannot function correctly.\nPlease install this font and restart %PRODUCTNAME Math."
-msgstr ""
+msgstr "\"StarMath\"-fonttia ei ole asennettu.\n%PRODUCTNAME Math ei toimi kunnolla ilman tätä fonttia.\nAsenna fontti ja käynnistä %PRODUCTNAME Math uudelleen."
 
 #: source/smres.src#RID_DEFAULTSAVEQUERY.QueryBox.Message
 msgid  "Should the changes be saved as defaults?\n\nThese changes will apply for all new formulas."
-msgstr ""
+msgstr "Tallennetaanko muutokset oletuksiksi?\n\nAsetuksia käytetään kaikkiin uusiin kaavoihin."
 
 #: source/smres.src#RID_FONTREGULAR.String.Text
 msgid  "Standard"
@@ -558,6 +558,10 @@ msgstr "Groteski"
 #: source/smres.src#RID_FONTMENU.7.MenuItem.Text
 msgid  "Fixed"
 msgstr "Kiinteä"
+
+#: source/smres.src#CMDBOXWINDOW_TEXT.#define.Text
+msgid  "Commands"
+msgstr "Komennot"
 
 #: source/smres.src#RID_DOCUMENTSTR.String.Text
 msgid  "Formula"
@@ -694,10 +698,6 @@ msgstr "Sovita sivulle"
 #: source/smres.src#RID_PRINTUIOPTIONS.item9.ItemList.item
 msgid  "~Scaling"
 msgstr "~Skaalaus"
-
-#: source/smres.src#CMDBOXWINDOW_TEXT.#define.Text
-msgid  "Commands"
-msgstr "Komennot"
 
 #: source/commands.src#RID_COMMANDMENU.RID_UNBINOPS_MENU.MenuItem.Text
 msgid  "~Unary/Binary Operators"

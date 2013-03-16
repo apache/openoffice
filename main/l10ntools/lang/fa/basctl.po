@@ -137,7 +137,7 @@ msgstr "ذخیره"
 
 #: source/basicide/basidesh.src#RID_STR_SOURCETOBIG.String.Text
 msgid  "The source text is too large and can be neither compiled nor saved.\nDelete some of the comments or transfer some methods into another module."
-msgstr ""
+msgstr "متن مبدأ خیلی بزرگ است و نه قابل ترجمه است و نه قابل ذخیره.\nبعضی از توضیحات را حذف کنید یا بعضی از روش‌ها را به پیمانه‌ی دیگری انتقال دهید."
 
 #: source/basicide/basidesh.src#RID_STR_ERROROPENSTORAGE.String.Text
 msgid  "Error opening file"
@@ -201,7 +201,7 @@ msgstr "پروندهٔ «XX» از قبل وجود دارد"
 
 #: source/basicide/basidesh.src#RID_STR_CANNOTRUNMACRO.String.Text
 msgid  "For security reasons, you cannot run this macro.\n\nFor more information, check the security settings."
-msgstr ""
+msgstr "به دلایل امنیتی، شما نمی‌توانید این ماکرو را اجرا کنید.\n\nبرای اطلاعات بیشتر، به تنظیمات امنیتی مراجعه کنید."
 
 #: source/basicide/basidesh.src#RID_STR_COMPILEERROR.String.Text
 msgid  "Compile Error: "
@@ -373,7 +373,7 @@ msgstr "باید نامی وارد کنید."
 
 #: source/basicide/basidesh.src#RID_STR_WILLSTOPPRG.String.Text
 msgid  "You will have to restart the program after this edit.\nContinue?"
-msgstr ""
+msgstr "شما باید بعد از این ویرایش، برنامه را مجدداً راه‌اندازی نمائید.\nآیا ادامه می‌دهید؟"
 
 #: source/basicide/basidesh.src#RID_STR_SEARCHALLMODULES.String.Text
 msgid  "Do you want to replace the text in all active modules?"
@@ -425,7 +425,7 @@ msgstr "فعال"
 
 #: source/basicide/basidesh.src#RID_POPUP_BRKPROPS.RID_BRKPROPS.MenuItem.Text
 msgid  "Properties..."
-msgstr "خواص..."
+msgstr "ویژگی‌ها..."
 
 #: source/basicide/basidesh.src#RID_POPUP_BRKDLG.Menu.Text
 msgid  "Manage Breakpoints"
@@ -509,7 +509,7 @@ msgstr "درون‌ریزی محاوره - نام قبلاً  استفاده ش�
 
 #: source/basicide/basidesh.src#RID_STR_DLGIMP_CLASH_TEXT.String.Text
 msgid  "The library already contains a dialog with the name:\n\n$(ARG1)\n\nRename dialog to keep current dialog or replace existing dialog.\n "
-msgstr ""
+msgstr "کتابخانه پیش از این حاوی یک کادر محاوره‌ای با نام زیر می‌باشد:\n\n$(ARG1)\n\nکادر محاوره‌ای را تغییر نام دهید تا کادر موجود حفظ گردد یا کادر جدید را جایگزین نمائید. "
 
 #: source/basicide/basidesh.src#RID_STR_DLGIMP_MISMATCH_ADD.String.Text
 msgid  "Add"
@@ -525,7 +525,7 @@ msgstr "درون‌ریزی کادر محاوره‌ای - عدم تطابق ز�
 
 #: source/basicide/basidesh.src#RID_STR_DLGIMP_MISMATCH_TEXT.String.Text
 msgid  "The dialog to be imported supports other languages than the target library.\n\nAdd these languages to the library to keep additional language resources provided by the dialog or omit them to stay with the current library languages.\n\nNote: For languages not supported by the dialog the resources of the dialog's default language will be used.\n "
-msgstr ""
+msgstr "کادر محاوره‌ای انتخاب شده برای ورود، زبانی غیر از کتابخانه هدف را پشتیبانی می‌کند.\n\nبرای نگه‌داری زبان‌های اضافی منابع ارائه شده توسط کادر محاوره‌ای این زبان‌ها را به کتابخانه اضافه کنید یا برای ماندن با زبانهای کتابخانه جاری، آن را حذف کنید.\n\nتوجه: برای زبانهایی که توسط کادر محاوره‌ای منابع پشتیبانی نمی‌شوند، از زبان پیش‌گزیده کادر محاوره‌ای استفاده می‌گردد.\n "
 
 #: source/basicide/basicprint.src#RID_PRINTDLG_STRLIST.item1.ItemList.item
 msgid  "Print range"
@@ -721,7 +721,7 @@ msgstr "برون‌ریزی به صورت ~افزونه"
 
 #: source/basicide/moduldlg.src#RID_DLG_EXPORT.RB_EXPORTASBASIC.RadioButton.Text
 msgid  "Export as BASIC library"
-msgstr "برون‌ریزی به‌صورت کتابخانه بیسیک"
+msgstr "برون‌ریزی به صورت کتابخانه بیسیک"
 
 #: source/basicide/moduldlg.src#RID_STR_EXPORTPACKAGE.String.Text
 msgid  "Export library as extension"
@@ -757,7 +757,7 @@ msgstr "پیش‌گزیده"
 
 #: source/dlged/managelang.src#RID_DLG_MANAGE_LANGUAGE.FT_INFO.FixedText.Text
 msgid  "The default language is used if no localization for a user interface locale is present. Furthermore all strings from the default language are copied to resources of newly added languages."
-msgstr ""
+msgstr "اگر محلی‌سازی برای رابط محلی کاربر موجود نباشد زبان پیش‌گزیده استفاده می‌شود. علاوه بر این تمام رشته‌ها از زبان پیش‌گزیده به منابعی از زبان‌های جدیداً اضافه‌شده رو‌نوشت می‌شوند."
 
 #: source/dlged/managelang.src#RID_DLG_MANAGE_LANGUAGE.PB_CLOSE.OKButton.Text
 msgid  "~Close"
@@ -781,7 +781,7 @@ msgstr "حذف کردن منابع زبان"
 
 #: source/dlged/managelang.src#RID_QRYBOX_LANGUAGE.QueryBox.Message
 msgid  "You are about to delete the resources for the selected language(s). All user interface strings for this language(s) will be deleted.\n\nDo you want to delete the resources of the selected language(s)?"
-msgstr ""
+msgstr "شما در حال حذف کردن منابع برای زبان‌(ها)ی انتخاب‌شده هستید. تمام رشته‌های رابط کاربری برای این زبان(ها) حذف خواهند شد.\n\nآیا می‌خواهید که منابع زبان‌(ها)ی انتخاب‌شده را حذف کنید؟"
 
 #: source/dlged/managelang.src#RID_DLG_SETDEF_LANGUAGE.ModalDialog.Text
 msgid  "Set Default User Interface Language"
@@ -793,7 +793,7 @@ msgstr "زبان پیش‌گزیده"
 
 #: source/dlged/managelang.src#RID_DLG_SETDEF_LANGUAGE.FT_DEF_INFO.FixedText.Text
 msgid  "Select a language to define the default user interface language. All currently present strings will be assigned to the resources created for the selected language."
-msgstr ""
+msgstr "یک زبان را برای تعریف زبان پیش‌گزیده رابط کاربری انتخاب کنید. تمام رشته‌هایی که در حال حاضر موجود هستند به منابع ایجاد‌شده برای زبان اننخاب‌شده اختصاص داده خواهند شد."
 
 #: source/dlged/managelang.src#RID_DLG_SETDEF_LANGUAGE.STR_ADDLANG_TITLE.String.Text
 msgid  "Add User Interface Languages"
@@ -805,7 +805,7 @@ msgstr "زبان‌های در‌دسترس"
 
 #: source/dlged/managelang.src#RID_DLG_SETDEF_LANGUAGE.STR_ADDLANG_INFO.String.Text
 msgid  "Select languages to be added. Resources for these languages will be created in the library. Strings of the current default user interface language will be copied to these new resources by default."
-msgstr ""
+msgstr "زبان‌ها را برای افزودن شوند، انتخاب کنید. منابع برای این زبان‌ها در کتابخانه ایجاد خواهد شد. رشته‌های زبان پیش‌گزیده فعلی رابط کاربری به طور پیش‌گزیده در منابع جدید رونوشت خواهند شد."
 
 #: source/dlged/dlgresid.src#RID_STR_BRWTITLE_PROPERTIES.String.Text
 msgid  "Properties: "

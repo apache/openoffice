@@ -49,7 +49,7 @@ msgstr "~Trosi"
 
 #: source/euro/euro.src#STEP_ZERO + 4.String.Text
 msgid  "Note: Currency amounts from external links and currency conversion factors in formulas cannot be converted."
-msgstr ""
+msgstr "Sylwer: Methu trosi symiau arian o gysylltiadau allanol na ffactorau trosi arian."
 
 #: source/euro/euro.src#STEP_ZERO + 5.String.Text
 msgid  "First, unprotect all sheets."
@@ -153,7 +153,7 @@ msgstr "Statws trosi'r templedi cell:"
 
 #: source/euro/euro.src#STATUSLINE + 2.String.Text
 msgid  "Registration of the relevant ranges: Sheet %1Number%1 of %2TotPageCount%2"
-msgstr ""
+msgstr "Cofrestru ystodau perthnasol: Dalen %1Number%1 o %2TotPageCount%2"
 
 #: source/euro/euro.src#STATUSLINE + 3.String.Text
 msgid  "Entry of the ranges to be converted..."
@@ -221,11 +221,11 @@ msgstr "Methu dad-amddiffyn y ddalen"
 
 #: source/euro/euro.src#MESSAGES + 13.String.Text
 msgid  "The Wizard cannot edit this document as cell formats cannot be modified in documents containing protected spreadsheets."
-msgstr ""
+msgstr "Nid yw'r Dewin yn gallu golygu'r ddogfen hon gan nad oes modd newid fformat celloedd mewn dogfennau'n cynnwys taenlenni wedi eu hamddiffyn."
 
 #: source/euro/euro.src#MESSAGES + 14.String.Text
 msgid  "Please note that the Euro Converter will, otherwise, not be able to edit this document!"
-msgstr ""
+msgstr "Sylwch na fydd, fel arall, y Troswr Ewro'n gallu golygu'r ddogfen!"
 
 #: source/euro/euro.src#MESSAGES + 15.String.Text
 msgid  "Please choose a currency to be converted first!"
@@ -337,7 +337,7 @@ msgstr "Nid yw'r arian sydd wedi ei osod yn y ddogfen yn arian Ewropeaidd!"
 
 #: source/euro/euro.src#CURRENCIES + 17.String.Text
 msgid  "The language set for your operating system is not a language of the European Monetary Union."
-msgstr ""
+msgstr "Nid yw iaith eich system weithredol yn iaith yr Undeb Ariannol Ewropeaidd."
 
 #: source/euro/euro.src#STEP_LASTPAGE.String.Text
 msgid  "Progress"
@@ -361,35 +361,35 @@ msgstr "Dogfen ddiamddiffyn bob amser"
 
 #: source/formwizard/dbwizres.src#RID_COMMON_START + 0.String.Text
 msgid  "The directory '%1' could not be created.<BR>There may not be enough space left on your hard disk."
-msgstr ""
+msgstr "Methu creu cyfeiriadur '%1'.<BR>Efallai nad oes digon o le ar eich disg caled."
 
 #: source/formwizard/dbwizres.src#RID_COMMON_START + 1.String.Text
 msgid  "The text document could not be created.<BR>Please check if the module 'PRODUCTNAME Writer' is installed."
-msgstr ""
+msgstr "Methu creu'r ddogfen testun.<BR>Gwnewch yn siŵr fod y modiwl 'PRODUCTNAME Writer' wedi ei osod."
 
 #: source/formwizard/dbwizres.src#RID_COMMON_START + 2.String.Text
 msgid  "The spreadsheet could not be created.<BR>Please check if the module 'PRODUCTNAME Calc' is installed."
-msgstr ""
+msgstr "Methu creu'r daenlen.<BR>Gwnewch yn siŵr fod y modiwl 'PRODUCTNAME Calc' wedi ei osod."
 
 #: source/formwizard/dbwizres.src#RID_COMMON_START + 3.String.Text
 msgid  "The presentation could not be created.<BR>Please check if the module 'PRODUCTNAME Impress' is installed."
-msgstr ""
+msgstr "Methu creu'r cyflwyniad.<BR>Gwnewch yn siŵr fod y modiwl 'PRODUCTNAME Impress' wedi ei osod."
 
 #: source/formwizard/dbwizres.src#RID_COMMON_START + 4.String.Text
 msgid  "The drawing could not be created.<BR>Please check if the module 'PRODUCTNAME Draw' is installed."
-msgstr ""
+msgstr "Methu creu'r llun.<BR>Gwnewch yn siŵr fod y modiwl 'PRODUCTNAME Draw' wedi ei osod."
 
 #: source/formwizard/dbwizres.src#RID_COMMON_START + 5.String.Text
 msgid  "The formula could not be created.<BR>Please check if the module 'PRODUCTNAME Math' is installed."
-msgstr ""
+msgstr "Methu creu'r fformiwla.<BR>Gwnewch yn siŵr fod y modiwl 'PRODUCTNAME Math' wedi ei osod."
 
 #: source/formwizard/dbwizres.src#RID_COMMON_START + 6.String.Text
 msgid  "The files required could not be found.<BR>Please start the %PRODUCTNAME Setup and choose 'Repair'."
-msgstr ""
+msgstr "Methu canfod y ffeiliau angenrheidiol.<BR>Cychwynnwch drefn osod %PRODUCTNAME a dewis 'Trwsio'."
 
 #: source/formwizard/dbwizres.src#RID_COMMON_START + 7.String.Text
 msgid  "The file '<PATH>' already exists.<BR><BR>Would you like to overwrite the existing file?"
-msgstr ""
+msgstr "Mae'r ffeil '<PATH>' yn bod eisoes.<BR><BR>Hoffech chi ei dros ysgrifennu?"
 
 #: source/formwizard/dbwizres.src#RID_COMMON_START + 8.String.Text
 msgid  "Yes"
@@ -445,7 +445,7 @@ msgstr "<wizard_name> ymlaen<current_date>."
 
 #: source/formwizard/dbwizres.src#RID_COMMON_START + 21.String.Text
 msgid  "The wizard could not be run, because important files were not found.\nUnder 'Tools - Options - %PRODUCTNAME - Paths' click the 'Default' button to reset the paths to the original default settings.\nThen run the wizard again."
-msgstr ""
+msgstr "Nid oedd modd rhedeg y dewin, oherwydd bod ffeiliau pwysig heb eu canfod.\nO dan 'Offer - Dewisiadau - %PRODUCTNAME - Llwybrau' cliciwch y botwm 'Rhagosodedig' i ailosod y llwybrau i'r gosodiadau gwreiddiol.\nYna rhedwch y dewin eto."
 
 #: source/formwizard/dbwizres.src#RID_DB_COMMON_START + 0.String.Text
 msgid  "C~reate"
@@ -473,7 +473,7 @@ msgstr "~Enw'r tabl"
 
 #: source/formwizard/dbwizres.src#RID_DB_COMMON_START + 6.String.Text
 msgid  "An error occurred while running the wizard. The wizard will be terminated."
-msgstr ""
+msgstr "Digwyddodd gwall wrth redeg y dewin. Bydd y dewin yn cael ei gau."
 
 #: source/formwizard/dbwizres.src#RID_DB_COMMON_START + 14.String.Text
 msgid  "No connection to the database could be established."
@@ -553,11 +553,11 @@ msgstr "Meysydd yn y ~ffurflen"
 
 #: source/formwizard/dbwizres.src#RID_DB_FORM_WIZARD_START + 2.String.Text
 msgid  "Binary fields are always listed and selectable from the left list.\nIf possible, they are interpreted as images."
-msgstr ""
+msgstr "Mae meysydd deuaidd yn cael eu rhestru bob tro ac yn ddewisadwy o'r rhestr chwith.\nOs yn bosib, maent yn cael eu dehongli fel delweddau."
 
 #: source/formwizard/dbwizres.src#RID_DB_FORM_WIZARD_START + 3.String.Text
 msgid  "A subform is a form that is inserted in another form.\nUse subforms to show data from tables or queries with a one-to-many relationship."
-msgstr ""
+msgstr "Mae is-ffurflen yn ffurflen sy'n cael ei fewnosod mewn ffurflen arall.\nDefnyddiwch is-ffurflenni i ddangos data o dablau neu ymholiadau gydag un yn ormod o berthnasau."
 
 #: source/formwizard/dbwizres.src#RID_DB_FORM_WIZARD_START + 4.String.Text
 msgid  "~Add Subform"
@@ -593,7 +593,7 @@ msgstr "Meysydd yn y ffurflen"
 
 #: source/formwizard/dbwizres.src#RID_DB_FORM_WIZARD_START + 19.String.Text
 msgid  "The join '<FIELDNAME1>' and '<FIELDNAME2>' has been selected twice.\nBut joins may only be used once."
-msgstr ""
+msgstr "Mae'r uniad '<FIELDNAME1>' a '<FIELDNAME2>' wedi ei ddewis dwywaith.\nDim ond unwaith mae modd uno.."
 
 #: source/formwizard/dbwizres.src#RID_DB_FORM_WIZARD_START + 20.String.Text
 msgid  "~First joined subform field"
@@ -805,7 +805,7 @@ msgstr "Gosod enw eich ffurflen"
 
 #: source/formwizard/dbwizres.src#RID_DB_FORM_WIZARD_START + 98.String.Text
 msgid  "A form with the name '%FORMNAME' already exists.\nChoose another name."
-msgstr ""
+msgstr "Mae ffurflen gyda'r enw '%FORMNAME' yn bodoli eisoes.\nDewiswch enw arall."
 
 #: source/formwizard/dbwizres.src#RID_DB_QUERY_WIZARD_START + 0.String.Text
 msgid  "Query Wizard"
@@ -1097,15 +1097,15 @@ msgstr "Trosolwg"
 
 #: source/formwizard/dbwizres.src#RID_DB_QUERY_WIZARD_START + 88.String.Text
 msgid  "A field that has not been assigned an aggregate function must be used in a group."
-msgstr ""
+msgstr "Rhaid defnyddio maes sydd heb neulltuo iddi swyddogaeth cyfanred mewn grŵp"
 
 #: source/formwizard/dbwizres.src#RID_DB_QUERY_WIZARD_START + 89.String.Text
 msgid  "The condition '<FIELDNAME> <LOGICOPERATOR> <VALUE>' was chosen twice. Each condition can only be chosen once"
-msgstr ""
+msgstr "Mae'r amod '<FIELDNAME> <LOGICOPERATOR> <VALUE>' wedi ei ddewis ddwywaith. Dim ond un waith mae modd dewis yr amod."
 
 #: source/formwizard/dbwizres.src#RID_DB_QUERY_WIZARD_START + 90.String.Text
 msgid  "The aggregate function <FUNCTION> has been assigned twice to the fieldname '<NUMERICFIELD>'."
-msgstr ""
+msgstr "Mae swyddogaeth gyfansymiol <FUNCTION> wedi ei neulltuo ddwywaith i'r enw maes '<NUMERICFIELD>'."
 
 #: source/formwizard/dbwizres.src#RID_DB_QUERY_WIZARD_START + 91.String.Text
 msgid  ", "
@@ -1321,11 +1321,11 @@ msgstr "Nid yw'r ffurflen '<REPORTFORM>' yn bodoli."
 
 #: source/formwizard/dbwizres.src#RID_DB_REPORT_WIZARD_START + 65.String.Text
 msgid  "The query with the statement <BR>'<STATEMENT>' <BR> could not be run. <BR> Check your data source."
-msgstr ""
+msgstr "Methu rhedeg yr ymholiad gyda'r datganiad <BR>'<STATEMENT>' <BR>. <BR>  Gwiriwch eich ffynhonnell data."
 
 #: source/formwizard/dbwizres.src#RID_DB_REPORT_WIZARD_START + 66.String.Text
 msgid  "The following hidden control in the form '<REPORTFORM>' could not be read: '<CONTROLNAME>'."
-msgstr ""
+msgstr "Methu darllen y rheolydd cudd yn ffurflen '<REPORTFORM>': <CONTROLNAME>'."
 
 #: source/formwizard/dbwizres.src#RID_DB_REPORT_WIZARD_START + 67.String.Text
 msgid  "Importing data..."
@@ -1349,7 +1349,7 @@ msgstr "Maes"
 
 #: source/formwizard/dbwizres.src#RID_DB_REPORT_WIZARD_START + 72.String.Text
 msgid  "An error occurred in the wizard.<BR>The template '%PATH' could be erroneous.<BR>Either the required sections or tables do not exist or exist under the wrong name.<BR>See the Help for more detailed information.<BR>Please select another template."
-msgstr ""
+msgstr "Mae gwall wedi digwydd yn y dewin.<BR>.Efallai bod y templed '%PATH' yn wallus.<BR>Mae'r adrannau neu tablau hanfodol un ai heb fodoli, neu'n bodoli o dan yr enw anghywir.<BR>Gw. y Cymorth am fwy o wybodaeth.<BR>Dewiswch templed arall."
 
 #: source/formwizard/dbwizres.src#RID_DB_REPORT_WIZARD_START + 73.String.Text
 msgid  "There is an invalid user field in a table."
@@ -1357,15 +1357,15 @@ msgstr "Mae yna faes defnyddiwr annilys yn y tabl."
 
 #: source/formwizard/dbwizres.src#RID_DB_REPORT_WIZARD_START + 74.String.Text
 msgid  "The sort criterium '<FIELDNAME>' was chosen twice. Each criterium can only be chosen once."
-msgstr ""
+msgstr "Cafodd y maen prawf didoli '<FIELDNAME>' ei ddewis dwywaith. Dim ond un waith mae modd dewis maen prawf."
 
 #: source/formwizard/dbwizres.src#RID_DB_REPORT_WIZARD_START + 75.String.Text
 msgid  "Note: The dummy text will be replaced by data from the database when the report is created."
-msgstr ""
+msgstr "Nodyn: Bydd y testun ffug yn cael ei newid gan ddata o'r gronfa ddata pan fydd yr adroddiad yn cael ei greu."
 
 #: source/formwizard/dbwizres.src#RID_DB_REPORT_WIZARD_START + 76.String.Text
 msgid  "A report '%REPORTNAME' already exists in the database. Please assign another name."
-msgstr ""
+msgstr "Mae adroddiad '%REPORTNAME' yn bodoli eisoes yn y gronfa ddata. Neilltuwch enw arall."
 
 #: source/formwizard/dbwizres.src#RID_DB_REPORT_WIZARD_START + 78.String.Text
 msgid  "How do you want to proceed after creating the report?"
@@ -1465,7 +1465,7 @@ msgstr "Creu tabl"
 
 #: source/formwizard/dbwizres.src#RID_DB_TABLE_WIZARD_START + 14.String.Text
 msgid  "This wizard helps you to create a table for your database. After selecting a table category and a sample table, choose the fields you want to include in your table. You can include fields from more than one sample table."
-msgstr ""
+msgstr "Mae'r dewin yn eich cynorthwyo i greu tabl i'ch cronfa ddata. Ar ôl dewis gategori eich tabl a thabl enghreifftiol, dewiswch y meysydd i'w cynnwys yn eich tabl. Gallwch gynnwys meysydd o fwy nag un tabl enghreifftiol."
 
 #: source/formwizard/dbwizres.src#RID_DB_TABLE_WIZARD_START + 15.String.Text
 msgid  "Ca~tegory"
@@ -1509,7 +1509,7 @@ msgstr "~Meysydd dewis"
 
 #: source/formwizard/dbwizres.src#RID_DB_TABLE_WIZARD_START + 26.String.Text
 msgid  "A primary key uniquely identifies each record in a database table. Primary keys ease the linking of information in separate tables, and it is recommended that you have a primary key in every table. Without a primary key, it will not be possible to enter data into this table."
-msgstr ""
+msgstr "Mae allwedd gynradd yn dynodi'n unigryw pob cofnod mewn tabl cronfa ddata. Mae allweddi cynradd yn hwyluso cyswllt gwybodaeth mewn tablau gwahanol, ac argymhellir bod gennych allwedd gynradd ym mhob tabl. Heb allwedd gynradd, ni fydd yn bosib rhoi data yn y tabl."
 
 #: source/formwizard/dbwizres.src#RID_DB_TABLE_WIZARD_START + 27.String.Text
 msgid  "~Create a primary key"
@@ -1545,7 +1545,7 @@ msgstr "Pa enw ydych am roi i'ch tabl?"
 
 #: source/formwizard/dbwizres.src#RID_DB_TABLE_WIZARD_START + 35.String.Text
 msgid  "Congratulations. You have entered all the information needed to create your table."
-msgstr ""
+msgstr "Llongyfarchiadau. Rydych wedi cyflwyno'r holl wybodaeth angenrheidiol ar gyfer creu eich tabl."
 
 #: source/formwizard/dbwizres.src#RID_DB_TABLE_WIZARD_START + 36.String.Text
 msgid  "What do you want to do next?"
@@ -1569,11 +1569,11 @@ msgstr "Methu agor y tabl crëwyd gennych"
 
 #: source/formwizard/dbwizres.src#RID_DB_TABLE_WIZARD_START + 41.String.Text
 msgid  "The table name '%TABLENAME' contains a character ('%SPECIALCHAR') that might not be supported by the database."
-msgstr ""
+msgstr "Mae enw tabl '%TABLENAME' yn cynnwys nod ('%SPECIALCHAR') na fydd efallai'n cael ei gynnal gan y gronfa ddata."
 
 #: source/formwizard/dbwizres.src#RID_DB_TABLE_WIZARD_START + 42.String.Text
 msgid  "The field name '%FIELDNAME' contains a special character ('%SPECIALCHAR') that might not be supported by the database."
-msgstr ""
+msgstr "Mae enw tabl '%FIELDNAME' yn cynnwys nod ('%SPECIALCHAR') na fydd efallai'n cael ei gynnal gan y gronfa ddata."
 
 #: source/formwizard/dbwizres.src#RID_DB_TABLE_WIZARD_START + 43.String.Text
 msgid  "Field"
@@ -1593,11 +1593,11 @@ msgstr "Tynnu Maes"
 
 #: source/formwizard/dbwizres.src#RID_DB_TABLE_WIZARD_START + 47.String.Text
 msgid  "The field cannot be inserted because this would exceed the maximum number of %COUNT possible fields in the database table"
-msgstr ""
+msgstr "Methu mewnosod maes am y byddai'n fwy na'r nifer mwyaf o feysydd %COUNT posib yn nhabl y gronfa ddata"
 
 #: source/formwizard/dbwizres.src#RID_DB_TABLE_WIZARD_START + 48.String.Text
 msgid  "The name '%TABLENAME' already exists.\nPlease enter another name."
-msgstr ""
+msgstr "Mae'r enw '%TABLENAME' yn bod yn barod.\nRhowch enw arall"
 
 #: source/formwizard/dbwizres.src#RID_DB_TABLE_WIZARD_START + 49.String.Text
 msgid  "Catalog of the table"
@@ -1733,7 +1733,7 @@ msgstr "Cynllun tudalen"
 
 #: source/formwizard/dbwizres.src#RID_LETTERWIZARDDIALOG_START + 31.String.Text
 msgid  "This wizard helps you to create a letter template. You can then use the template as the basis for writing letters as often as desired."
-msgstr ""
+msgstr "Mae'r dewin yn eich cynorthwyo i greu templed llythyr. Gallwch ddefnyddio'r templed fel sail ar gyfer ysgrifennu llythyron mor aml a bo angen"
 
 #: source/formwizard/dbwizres.src#RID_LETTERWIZARDDIALOG_START + 32.String.Text
 msgid  "~Height:"
@@ -1801,11 +1801,11 @@ msgstr "Troedyn"
 
 #: source/formwizard/dbwizres.src#RID_LETTERWIZARDDIALOG_START + 48.String.Text
 msgid  "This wizard creates a letter template which enables you to create multiple letters with the same layout and settings."
-msgstr ""
+msgstr "Mae'r dewin yma'n creu templed llythyr fydd yn galluogi i chi greu llythyron niferus gyda'r un cynllun a gosodiadau."
 
 #: source/formwizard/dbwizres.src#RID_LETTERWIZARDDIALOG_START + 49.String.Text
 msgid  "To create another new letter out of the template just navigate to the template location and double-click it."
-msgstr ""
+msgstr "I greu llythyr arall newydd o'r templed ewch i leoliad y templed a rhoi clic dwbl arno."
 
 #: source/formwizard/dbwizres.src#RID_LETTERWIZARDDIALOG_START + 50.String.Text
 msgid  "Template name:"
@@ -1957,7 +1957,7 @@ msgstr "Cynllun tudalen"
 
 #: source/formwizard/dbwizres.src#RID_FAXWIZARDDIALOG_START + 17.String.Text
 msgid  "This wizard helps you to create a fax template. The template can then be used to create a fax whenever needed."
-msgstr ""
+msgstr "Mae'r dewin yn eich cynorthwyo i greu templed ffacs. Bydd y templed ar gael i greu ffacs yn ôl yr angen"
 
 #: source/formwizard/dbwizres.src#RID_FAXWIZARDDIALOG_START + 18.String.Text
 msgid  "Return address"
@@ -1981,11 +1981,11 @@ msgstr "Troedyn"
 
 #: source/formwizard/dbwizres.src#RID_FAXWIZARDDIALOG_START + 23.String.Text
 msgid  "This wizard creates a fax template which enables you to create multiple faxes with the same layout and settings."
-msgstr ""
+msgstr "Mae'r dewin yma'n creu templed ffacs fydd yn galluogi i chi greu ffacs niferus gyda'r un cynllun a gosodiadau."
 
 #: source/formwizard/dbwizres.src#RID_FAXWIZARDDIALOG_START + 24.String.Text
 msgid  "To create another new fax out of the template, go to the location where you saved the template and double-click the file."
-msgstr ""
+msgstr "I greu ffacs newydd o'r templed, ewch i leoliad lle gadwyd y templed a rhoi clic dwbl i'r ffeil."
 
 #: source/formwizard/dbwizres.src#RID_FAXWIZARDDIALOG_START + 25.String.Text
 msgid  "Template Name:"
@@ -2121,7 +2121,7 @@ msgstr "Dewin Gwe"
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +2.String.Text
 msgid  "This Web Wizard is to aid you in publishing documents on the Internet.\n\nIt will convert the documents so that they can be viewed by a web browser. In addition, it will generate a Table of Contents page with links for easy access to the documents. The Web Wizard will also allow you to customize the design and layout of your web site.\n\nYou will be able to keep the documents you have published on the web up-to-date and add or remove documents at any time."
-msgstr ""
+msgstr "Mae'r Dewin Gwe yn gallu eich cynorthwyo i gyhoeddi dogfennau ar y Rhyngrwyd.\n\nGall drosi dogfennau fel bod modd eu darllen gan borwr gwe a chynhyrchu Tabl Cynnwys gyda chysylltiadau ar gyfer mynediad hawdd i ddogfennau. Mae'r Dewin Gwe yn caniatáu i chi addasu cynllun a diwyg eich safle gwe.\n\nBydd modd i chi gadw'r dogfennau rydych wedi eu cyhoeddi ar y we yn gyfredol, ychwanegu neu dynnu dogfennau ar unrhyw adeg."
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +4.String.Text
 msgid  "~Delete"
@@ -2305,7 +2305,7 @@ msgstr "Addasu'r cynllun yma"
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +61.String.Text
 msgid  "Include the following information for each document in the table of contents:"
-msgstr ""
+msgstr "Cynnwys y wybodaeth ganlynol ar gyfer pob dogfen yn y tabl cynnwys:"
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +62.String.Text
 msgid  "Optimize the layout for screen resolution:"
@@ -2345,19 +2345,19 @@ msgstr "Mae targed lleol '%FILENAME' yn ffeil."
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +75.String.Text
 msgid  "The ZIP target '%FILENAME' already exists. Do you want to overwrite the existing target? "
-msgstr ""
+msgstr "Mae targed ZIP '%FILENAME' yn bodoli eisoes. Hoffech chi ysgrifennu dros y targed presennol?"
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +76.String.Text
 msgid  "The FTP target directory '%FILENAME' is not empty. Some files might be overwritten. Do you want to continue?"
-msgstr ""
+msgstr "Nid yw cyfeiriadur targed FTP  '%FILENAME' yn wag. Bydd rhai ffeiliau yn cael eu hysgrifennu trostynt. Parhau?"
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +77.String.Text
 msgid  "The local target directory '%FILENAME' is not empty. Some files might be overwritten. Do you want to continue?"
-msgstr ""
+msgstr "Nid yw cyfeiriadur targed lleol  '%FILENAME' yn wag. Bydd rhai ffeiliau yn cael eu hysgrifennu trostynt. Parhau?"
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +78.String.Text
 msgid  "Settings already exist under the given name. Do you want to overwrite the existing settings? "
-msgstr ""
+msgstr "Mae'r gosodiadau yn bodoli o dan enw arall. Hoffech chi ysgrifennu dros y gosodiadau presennol?"
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +79.String.Text
 msgid  "Exporting documents..."
@@ -2457,7 +2457,7 @@ msgstr "Digwyddodd gwall wrth gopïo cynllun ffeiliau"
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +108.String.Text
 msgid  "An error occurred while gathering document information for '%FILENAME'. "
-msgstr ""
+msgstr "Digwyddodd gwall wrth gasglu gwybodaeth ddogfennol am '%FILENAME'. "
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +109.String.Text
 msgid  "An error occurred while exporting the document '%FILENAME'."
@@ -2473,7 +2473,7 @@ msgstr "Digwyddodd gwall diogelwch wrth allforio'r ddogfen '%FILENAME'."
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +112.String.Text
 msgid  "An input/output error occurred while exporting the document '%FILENAME'."
-msgstr ""
+msgstr "Digwyddodd gwall mewnbwn/allbwn wrth allforio dogfen '%FILENAME'."
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +113.String.Text
 msgid  "An error occurred while copying media files to the temporary directory."
@@ -2541,7 +2541,7 @@ msgstr "Rhagolwg"
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +130.String.Text
 msgid  "The selected settings will be deleted.\n\nDo you really want to delete these settings? "
-msgstr ""
+msgstr "Methwyd dileu'r gosodiadau hyn.\n\nYdych chi wir am ddileu'r gosodiadau hyn? "
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +131.String.Text
 msgid  "%NUMBER pages"
@@ -2573,7 +2573,7 @@ msgstr "Set eicon:"
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +138.String.Text
 msgid  "The icon set is used for presentations in HTML format."
-msgstr ""
+msgstr "Mae'r set eicon yn cael ei ddefnyddio ar gyfer cyflwyniadau yn fformat HTML."
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +139.String.Text
 msgid  "HTML Metadata"
@@ -2609,19 +2609,19 @@ msgstr "Methu creu cyfeiriadur FTP '%FILENAME'."
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +147.String.Text
 msgid  "The FTP directory '%FILENAME' does not exist. \nCreate the directory now?"
-msgstr ""
+msgstr "Nid yw'r cyfeiriadur FTP '%FILENAME'. \nCreu'r cyfeiriadur?"
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +148.String.Text
 msgid  "The Zip file '%FILENAME' cannot be created: a directory of the same name already exists."
-msgstr ""
+msgstr "Methu creu ffeil ZIP '%FILENAME': mae cyfeiriadur o'r un enw'n bodoli."
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +149.String.Text
 msgid  "The local directory '%FILENAME' cannot be created. \nPlease check your write-access."
-msgstr ""
+msgstr "Methu creu'r cyfeiriadur lleol '%FILENAME'. \nGwiriwch eich mynediad ysgrifennu."
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +150.String.Text
 msgid  "The local directory '%FILENAME' does not exist. \nCreate the directory now?"
-msgstr ""
+msgstr "Nid yw'r cyfeiriadur lleol '%FILENAME' yn bodoli. \nCreu'r cyfeiriadur?"
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +151.String.Text
 msgid  "Size: %NUMBERKB"
@@ -2757,7 +2757,7 @@ msgstr "Cynnwys ffurflen i gofnodi cofnodion"
 
 #: source/formwizard/dbwizres.src#RID_AGENDAWIZARDDIALOG_START +13.String.Text
 msgid  "This wizard helps you to create an agenda template. The template can then be used to create an agenda whenever needed."
-msgstr ""
+msgstr "Mae'r dewin yn eich cynorthwyo i greu templed agenda. Bydd y templed ar gael i greu agenda yn ôl yr angen"
 
 #: source/formwizard/dbwizres.src#RID_AGENDAWIZARDDIALOG_START +14.String.Text
 msgid  "Time:"
@@ -2773,7 +2773,7 @@ msgstr "Lleoliad:"
 
 #: source/formwizard/dbwizres.src#RID_AGENDAWIZARDDIALOG_START +17.String.Text
 msgid  "Placeholders will be used in empty fields. You can replace placeholders with text later."
-msgstr ""
+msgstr "Bydd deilydd lle yn cael eu defnyddio mewn meysydd gwag. Bydd modd newid i destun yn nes ymlaen."
 
 #: source/formwizard/dbwizres.src#RID_AGENDAWIZARDDIALOG_START +18.String.Text
 msgid  "..."
@@ -2785,7 +2785,7 @@ msgstr "Creu ~agenda o'r templed yma"
 
 #: source/formwizard/dbwizres.src#RID_AGENDAWIZARDDIALOG_START +20.String.Text
 msgid  "To create a new agenda out of the template, go to the location where you saved the template and double-click the file."
-msgstr ""
+msgstr "I greu agenda newydd o'r templed, ewch i leoliad lle gadwyd y templed a rhoi clic dwbl i'r ffeil."
 
 #: source/formwizard/dbwizres.src#RID_AGENDAWIZARDDIALOG_START +21.String.Text
 msgid  "Agenda item"
@@ -2829,7 +2829,7 @@ msgstr "Staff y cyfleuster"
 
 #: source/formwizard/dbwizres.src#RID_AGENDAWIZARDDIALOG_START +31.String.Text
 msgid  "The agenda template will include placeholders for the names of the selected people. When creating an agenda from the template, you can replace these placeholder with the appropriate names."
-msgstr ""
+msgstr "Bydd templed yr agenda yn cynnwys deilydd lle ar gyfer enwau pobl unigol. Wrth greu agenda o'r templed, gallwch newid y deilydd lle gyda'r enwau priodol."
 
 #: source/formwizard/dbwizres.src#RID_AGENDAWIZARDDIALOG_START +32.String.Text
 msgid  "Type of meeting"
@@ -2857,7 +2857,7 @@ msgstr "Dyddiad:"
 
 #: source/formwizard/dbwizres.src#RID_AGENDAWIZARDDIALOG_START +39.String.Text
 msgid  "This wizard creates an agenda template which enables you to create multiple agendas with the same layout and settings."
-msgstr ""
+msgstr "Mae'r dewin yma'n creu templed agenda fydd yn galluogi i chi greu agenda niferus gyda'r un cynllun a gosodiadau."
 
 #: source/formwizard/dbwizres.src#RID_AGENDAWIZARDDIALOG_START +40.String.Text
 msgid  "Page design:"
@@ -3009,11 +3009,11 @@ msgstr "~Cau"
 
 #: source/importwizard/importwi.src#sWelcometextLabel1.String.Text
 msgid  "This wizard converts documents in %PRODUCTNAME format and Microsoft Office documents to the new OpenDocument format."
-msgstr ""
+msgstr "Mae'r dewin yn trosi dogfennau o fformat %PRODUCTNAME a Microsoft Office i fformat newydd OpenDocument."
 
 #: source/importwizard/importwi.src#sWelcometextLabel2.String.Text
 msgid  "Please note that when converting Microsoft documents any attached VBA macros lose their functionality."
-msgstr ""
+msgstr "Sylwch y bydd macros VB cysylltiedig yn colli eu swyddogaeth wrth drosi dogfennau Microsoft."
 
 #: source/importwizard/importwi.src#sWelcometextLabel3.String.Text
 msgid  "Select the document type for conversion:"
@@ -3241,59 +3241,59 @@ msgstr "Byddant yn cael eu hallforio i'r cyfeiriadur canlynol:"
 
 #: source/importwizard/importwi.src#sSumSOTextDocuments.String.Text
 msgid  "All %PRODUCTNAME text documents contained in the following directory will be imported:"
-msgstr ""
+msgstr "Bydd pob dogfen testun %PRODUCTNAME sydd o fewn y cyfeiriadur canlynol yn cael ei fewnforio:"
 
 #: source/importwizard/importwi.src#sSumSOTableDocuments.String.Text
 msgid  "All %PRODUCTNAME spreadsheets contained in the following directory will be imported:"
-msgstr ""
+msgstr "Bydd pob taenlen %PRODUCTNAME sydd o fewn y cyfeiriadur canlynol yn cael ei fewnforio:"
 
 #: source/importwizard/importwi.src#sSumSODrawDocuments.String.Text
 msgid  "All %PRODUCTNAME drawing and presentation documents contained in the following directory will be imported:"
-msgstr ""
+msgstr "Bydd pob dogfen lluniadu a chyflwyno %PRODUCTNAME sydd o fewn y cyfeiriadur canlynol yn cael ei fewnforio:"
 
 #: source/importwizard/importwi.src#sSumSOMathDocuments.String.Text
 msgid  "All %PRODUCTNAME formula documents contained in the following directory will be imported:"
-msgstr ""
+msgstr "Bydd pob dogfen fformiwla %PRODUCTNAME sydd o fewn y cyfeiriadur canlynol yn cael ei fewnforio:"
 
 #: source/importwizard/importwi.src#sSumSOTextTemplates.String.Text
 msgid  "All %PRODUCTNAME text templates contained in the following directory will be imported:"
-msgstr ""
+msgstr "Bydd pob templed testun %PRODUCTNAME sydd o fewn y cyfeiriadur canlynol yn cael ei fewnforio:"
 
 #: source/importwizard/importwi.src#sSumSOTableTemplates.String.Text
 msgid  "All %PRODUCTNAME table templates contained in the following directory will be imported:"
-msgstr ""
+msgstr "Bydd pob templed tabl %PRODUCTNAME sydd o fewn y cyfeiriadur canlynol yn cael ei fewnforio:"
 
 #: source/importwizard/importwi.src#sSumSODrawTemplates.String.Text
 msgid  "All %PRODUCTNAME drawing and presentation templates contained in the following directory will be imported:"
-msgstr ""
+msgstr "Bydd pob templed lluniadu a chyflwyno %PRODUCTNAME sydd o fewn y cyfeiriadur canlynol yn cael ei fewnforio:"
 
 #: source/importwizard/importwi.src#sSumSOGlobalDocuments.String.Text
 msgid  "All %PRODUCTNAME master documents contained in the following directory will be imported:"
-msgstr ""
+msgstr "Bydd pob prif ddogfen %PRODUCTNAME sydd o fewn y cyfeiriadur canlynol yn cael ei fewnforio:"
 
 #: source/importwizard/importwi.src#sSumMSTextDocuments.String.Text
 msgid  "All Word documents contained in the following directory will be imported:"
-msgstr ""
+msgstr "Bydd pob dogfen Word sydd o fewn y cyfeiriadur canlynol yn cael ei fewnforio."
 
 #: source/importwizard/importwi.src#sSumMSTableDocuments.String.Text
 msgid  "All Excel documents contained in the following directory will be imported:"
-msgstr ""
+msgstr "Bydd pob dogfen Excel sydd o fewn y cyfeiriadur canlynol yn cael ei fewnforio."
 
 #: source/importwizard/importwi.src#sSumMSDrawDocuments.String.Text
 msgid  "All PowerPoint documents contained in the following directory will be imported:"
-msgstr ""
+msgstr "Bydd pob dogfen PowerPoint sydd o fewn y cyfeiriadur canlynol yn cael ei fewnforio."
 
 #: source/importwizard/importwi.src#sSumMSTextTemplates.String.Text
 msgid  "All Word templates contained in the following directory will be imported:"
-msgstr ""
+msgstr "Bydd pob templed Word sydd o fewn y cyfeiriadur canlynol yn cael ei fewnforio."
 
 #: source/importwizard/importwi.src#sSumMSTableTemplates.String.Text
 msgid  "All Excel templates contained in the following directory will be imported:"
-msgstr ""
+msgstr "Bydd pob templed Excel sydd o fewn y cyfeiriadur canlynol yn cael ei fewnforio."
 
 #: source/importwizard/importwi.src#sSumMSDrawTemplates.String.Text
 msgid  "All PowerPoint templates contained in the following directory will be imported:"
-msgstr ""
+msgstr "Bydd pob templed PowerPoint sydd o fewn y cyfeiriadur canlynol yn cael ei fewnforio."
 
 #: source/schedule/schedule.src#dlgCalTitle.String.Text
 msgid  "%PRODUCTNAME Calendar"
@@ -3481,7 +3481,7 @@ msgstr "Cynnydd:"
 
 #: source/template/template.src#SAMPLES.String.Text
 msgid  "In order to use the full functionality of this sample, create a document that is based on this template."
-msgstr ""
+msgstr "Er mwyn defnyddio swyddogaeth lawn y sampl, rhaid creu dogfen yn seiliedig ar y templed hwn."
 
 #: source/template/template.src#SAMPLES + 1.String.Text
 msgid  "Remarks"
@@ -3493,7 +3493,7 @@ msgstr "Dewis Thema"
 
 #: source/template/template.src#STYLES + 1.String.Text
 msgid  "Error while saving the document to the clipboard! The following action cannot be undone."
-msgstr ""
+msgstr "Gwall wrth gadw'r ddogfen i'r clipfwrdd! Nid oes modd dadwneud y weithred ganlynol."
 
 #: source/template/template.src#STYLES + 2.String.Text
 msgid  "~Cancel"

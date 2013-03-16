@@ -97,7 +97,7 @@ msgstr "བརྩེགས་ཕུང་དྲན་ཚད་ལངམ་མི
 
 #: source/classes/sb.src#RID_BASIC_START.SbERR_PROC_UNDEFINED & ERRCODE_RES_MASK.String.Text
 msgid  "Sub-procedure or function procedure not defined."
-msgstr ""
+msgstr "ཡན་ལག་བྱ་སྒོའི་ལམ་ལུགས་ ཡང་ན་ ལས་འགན་བྱ་སྒོའི་ལམ་ལུགས་ངེས་འཛིན་མ་འབད་བས།"
 
 #: source/classes/sb.src#RID_BASIC_START.SbERR_BAD_DLL_LOAD & ERRCODE_RES_MASK.String.Text
 msgid  "Error loading DLL file."
@@ -269,7 +269,7 @@ msgstr "ཧེ་མ་ལས་ལཱ་འགན་འགྲུབ་ཡོད
 
 #: source/classes/sb.src#RID_BASIC_START.SbERR_DDE_LINK_INV_TOPIC & ERRCODE_RES_MASK.String.Text
 msgid  "Link mode cannot be set due to invalid link topic."
-msgstr ""
+msgstr "འབྲེལ་ལམ་ཐབས་ལམ་འདི་འབྲེལ་ལམ་གནད་དོན་ནུས་མེད་ལུ་བརྟེན་གཞི་སྒྲིག་འབད་མི་ཚུགས།"
 
 #: source/classes/sb.src#RID_BASIC_START.SbERR_DDE_DLL_NOT_FOUND & ERRCODE_RES_MASK.String.Text
 msgid  "DDE requires the DDEML.DLL file."
@@ -425,7 +425,7 @@ msgstr "$(ARG1) འགྱུར་ཅན་ཧེ་མ་ལས་རང་ང�
 
 #: source/classes/sb.src#RID_BASIC_START.SbERR_PROC_DEFINED & ERRCODE_RES_MASK.String.Text
 msgid  "Sub procedure or function procedure $(ARG1) already defined."
-msgstr ""
+msgstr "ཡན་ལག་བྱ་སྒོའི་ལམ་ལུགས་ ཡང་ན་ ལས་འགན་བྱ་སྒོའི་ལམ་ལུགས་ $(ARG1) ཧེ་མ་ལས་རང་ངེས་འཛིན་འབད་ཡོད།"
 
 #: source/classes/sb.src#RID_BASIC_START.SbERR_LABEL_DEFINED & ERRCODE_RES_MASK.String.Text
 msgid  "Label $(ARG1) already defined."
@@ -517,7 +517,7 @@ msgstr "དམིགས་བསལ་ $(ARG1) བྱུང་ནུག།"
 
 #: source/classes/sb.src#RID_BASIC_START.ERRCODE_BASIC_ARRAY_FIX & ERRCODE_RES_MASK.String.Text
 msgid  "This array is fixed or temporarily locked."
-msgstr ""
+msgstr "རིམ་སྒྲིག་དུས་སྟབས་བཟོ་ཡོདཔ་ཨིནམ་དང་ཡང་ན་གནས་སྐབས་ཅིག་གི་དོན་ལུ་བསྡམ་བཞག་ཡོདཔ་ཨིན་མས།"
 
 #: source/classes/sb.src#RID_BASIC_START.ERRCODE_BASIC_STRING_OVERFLOW & ERRCODE_RES_MASK.String.Text
 msgid  "Out of string space."

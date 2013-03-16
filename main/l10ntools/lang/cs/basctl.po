@@ -137,7 +137,7 @@ msgstr "Uložit"
 
 #: source/basicide/basidesh.src#RID_STR_SOURCETOBIG.String.Text
 msgid  "The source text is too large and can be neither compiled nor saved.\nDelete some of the comments or transfer some methods into another module."
-msgstr ""
+msgstr "Zdrojový text je příliš velký a nemůže být přeložen ani uložen.\nSmažte některé z komentářů nebo převeďte některé metody do jiného modulu."
 
 #: source/basicide/basidesh.src#RID_STR_ERROROPENSTORAGE.String.Text
 msgid  "Error opening file"
@@ -201,7 +201,7 @@ msgstr "Soubor 'XX' již existuje"
 
 #: source/basicide/basidesh.src#RID_STR_CANNOTRUNMACRO.String.Text
 msgid  "For security reasons, you cannot run this macro.\n\nFor more information, check the security settings."
-msgstr ""
+msgstr "Z bezpečnostních důvodů není možné spustit toto makro.\n\nPro další informace ověřte nastavení zabezpečení."
 
 #: source/basicide/basidesh.src#RID_STR_COMPILEERROR.String.Text
 msgid  "Compile Error: "
@@ -373,7 +373,7 @@ msgstr "Musí být zadán název."
 
 #: source/basicide/basidesh.src#RID_STR_WILLSTOPPRG.String.Text
 msgid  "You will have to restart the program after this edit.\nContinue?"
-msgstr ""
+msgstr "Po této úpravě budete muset restartovat program.\nPokračovat?"
 
 #: source/basicide/basidesh.src#RID_STR_SEARCHALLMODULES.String.Text
 msgid  "Do you want to replace the text in all active modules?"
@@ -509,7 +509,7 @@ msgstr "Import dialogu - jméno je již použito"
 
 #: source/basicide/basidesh.src#RID_STR_DLGIMP_CLASH_TEXT.String.Text
 msgid  "The library already contains a dialog with the name:\n\n$(ARG1)\n\nRename dialog to keep current dialog or replace existing dialog.\n "
-msgstr ""
+msgstr "Knihovna již obsahuje dialog s názvem:\n\n$(ARG1)\n\nPřejmenujte dialog, chcete-li zachovat aktuální dialog, nebo nahraďte existující dialog."
 
 #: source/basicide/basidesh.src#RID_STR_DLGIMP_MISMATCH_ADD.String.Text
 msgid  "Add"
@@ -525,7 +525,7 @@ msgstr "Import dialogu - nekompatibilní jazyky"
 
 #: source/basicide/basidesh.src#RID_STR_DLGIMP_MISMATCH_TEXT.String.Text
 msgid  "The dialog to be imported supports other languages than the target library.\n\nAdd these languages to the library to keep additional language resources provided by the dialog or omit them to stay with the current library languages.\n\nNote: For languages not supported by the dialog the resources of the dialog's default language will be used.\n "
-msgstr ""
+msgstr "Importovaný dialog podporuje jiné jazyky než cílová knihovna.\n\nPřidejte tyto jazyky do knihovny, chcete-li zachovat jazykové zdroje poskytované dialogem, nebo je vynechejte, chcete-li ponechat v knihovně pouze aktuální jazyky.\n\nPoznámka: Pro jazyky, které nepodporují zdroje dialogu, se použije výchozí jazyk dialogu."
 
 #: source/basicide/basicprint.src#RID_PRINTDLG_STRLIST.item1.ItemList.item
 msgid  "Print range"
@@ -757,7 +757,7 @@ msgstr "Výchozí"
 
 #: source/dlged/managelang.src#RID_DLG_MANAGE_LANGUAGE.FT_INFO.FixedText.Text
 msgid  "The default language is used if no localization for a user interface locale is present. Furthermore all strings from the default language are copied to resources of newly added languages."
-msgstr ""
+msgstr "Výchozí jazyk se použije, pokud není k dispozici lokalizace uživatelského rozhraní ve zvoleném jazyce. Navíc se do nově přidaných jazyků zkopírují texty z výchozího jazyka."
 
 #: source/dlged/managelang.src#RID_DLG_MANAGE_LANGUAGE.PB_CLOSE.OKButton.Text
 msgid  "~Close"
@@ -781,7 +781,7 @@ msgstr "Odstranit jazykové zdroje"
 
 #: source/dlged/managelang.src#RID_QRYBOX_LANGUAGE.QueryBox.Message
 msgid  "You are about to delete the resources for the selected language(s). All user interface strings for this language(s) will be deleted.\n\nDo you want to delete the resources of the selected language(s)?"
-msgstr ""
+msgstr "Chcete odebrat zdroje pro vybrané jazyky. Odstraní se všechny texty uživatelského rozhraní pro vybrané jazyky.\n\nOpravdu chcete odstranit jazykové zdroje vybraných jazyků?"
 
 #: source/dlged/managelang.src#RID_DLG_SETDEF_LANGUAGE.ModalDialog.Text
 msgid  "Set Default User Interface Language"
@@ -793,7 +793,7 @@ msgstr "Výchozí jazyk"
 
 #: source/dlged/managelang.src#RID_DLG_SETDEF_LANGUAGE.FT_DEF_INFO.FixedText.Text
 msgid  "Select a language to define the default user interface language. All currently present strings will be assigned to the resources created for the selected language."
-msgstr ""
+msgstr "Vyberte jazyk, který bude použit jako výchozí jazyk uživatelského rozhraní. Do zdrojů vytvořených pro zvolený jazyk se zkopírují všechny aktuální texty."
 
 #: source/dlged/managelang.src#RID_DLG_SETDEF_LANGUAGE.STR_ADDLANG_TITLE.String.Text
 msgid  "Add User Interface Languages"
@@ -805,7 +805,7 @@ msgstr "Dostupné jazyky"
 
 #: source/dlged/managelang.src#RID_DLG_SETDEF_LANGUAGE.STR_ADDLANG_INFO.String.Text
 msgid  "Select languages to be added. Resources for these languages will be created in the library. Strings of the current default user interface language will be copied to these new resources by default."
-msgstr ""
+msgstr "Vyberte jazyky, které chcete přidat. V knihovně se vytvoří zdroje pro tyto jazyky. Do těchto nových zdrojů se zkopírují texty aktuálního výchozího jazyka."
 
 #: source/dlged/dlgresid.src#RID_STR_BRWTITLE_PROPERTIES.String.Text
 msgid  "Properties: "

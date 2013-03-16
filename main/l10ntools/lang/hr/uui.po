@@ -137,7 +137,7 @@ msgstr "Cilj već postoji"
 
 #: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_IO_MODULESIZEEXCEEDED & ERRCODE_RES_MASK).String.Text
 msgid  "You are about to save/export a password protected basic library containing module(s) \n$(ARG1)\nwhich are too large to store in binary format. If you wish users that don't have access to the library password to be able to run macros in those module(s) you must split those modules into a number of smaller modules. Do you wish to continue to save/export this library?"
-msgstr ""
+msgstr "Namjeravate spremiti/izvesti lozinkom zaštićenu osnovnu knjižnicu koja sadrži modul(e)\n$(ARG1)\na koji su preveliki za zapisivanje u binarnom obliku. Ukoliko želite da korisnici, koji nemaju pristup lozinki knjižnice, mogu pokrenuti makro naredbe u tom modulu ili modulima morate razlomiti te module u više manjih modula. Želite li nastaviti sa spremanjem/izvozom ove knjižnice?"
 
 #: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_IO_BADCRC & ERRCODE_RES_MASK).String.Text
 msgid  "The data from $(ARG1) has an incorrect checksum."
@@ -241,11 +241,11 @@ msgstr "Nema dovoljno prostora na uređaju $(ARG1)"
 
 #: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_IO_TOOMANYOPENFILES & ERRCODE_RES_MASK).String.Text
 msgid  "The operation on $(ARG1) cannot be performed because too many files are already open."
-msgstr ""
+msgstr "Operacija na $(ARG1) ne može biti izvršena zbog previše otvorenih datoteka"
 
 #: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_IO_OUTOFMEMORY & ERRCODE_RES_MASK).String.Text
 msgid  "The operation on $(ARG1) cannot be performed because there is no more memory available."
-msgstr ""
+msgstr "Operacija na $(ARG1) ne može biti izvršena zbog nedostatka memorije"
 
 #: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_IO_PENDING & ERRCODE_RES_MASK).String.Text
 msgid  "The operation on $(ARG1) cannot continue because more data is pending."
@@ -289,11 +289,11 @@ msgstr "Nije podržana instalirana inačica $(ARG1) Java-e."
 
 #: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_WRONGJAVA_MIN & ERRCODE_RES_MASK).String.Text
 msgid  "The installed Java version is not supported, at least version $(ARG1) is required."
-msgstr ""
+msgstr "Instalirana inačica Java-e nije podržana, potrebna je inačica $(ARG1) ili novija."
 
 #: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_WRONGJAVA_VERSION_MIN & ERRCODE_RES_MASK).String.Text
 msgid  "The installed Java version $(ARG1) is not supported, at least version $(ARG2) is required."
-msgstr ""
+msgstr "Instalirana inačica $(ARG1) Java-e nije podržana, potrebna je inačica $(ARG2) ili novija."
 
 #: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_BADPARTNERSHIP & ERRCODE_RES_MASK).String.Text
 msgid  "The data associated with the partnership is corrupted."
@@ -325,31 +325,31 @@ msgstr "Objekt ne može biti stvoren u direktoriju $(ARG1)"
 
 #: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_IO_UNSUPPORTEDOVERWRITE & ERRCODE_RES_MASK).String.Text
 msgid  "%PRODUCTNAME cannot keep files from being overwritten when this transmission protocol is used. Do you want to continue anyway?"
-msgstr ""
+msgstr "%PRODUCTNAME ne može sadržavati datoteke iz ponovo napisanih dok se koristi ovaj transmisijski protokol. Želite li nastaviti?"
 
 #: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_IO_BROKENPACKAGE & ERRCODE_RES_MASK).String.Text
 msgid  "The file '$(ARG1)' is corrupt and therefore cannot be opened. %PRODUCTNAME can try to repair the file.\n\nThe corruption could be the result of document manipulation or of structural document damage due to data transmission.\n\nWe recommend that you do not trust the content of the repaired document.\nExecution of macros is disabled for this document.\n\nShould %PRODUCTNAME repair the file?\n"
-msgstr ""
+msgstr "Datoteka '$(ARG1)' je oštećena i stoga ne može biti otvorena. Treba li %PRODUCTNAME popraviti datoteku?"
 
 #: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_IO_BROKENPACKAGE_CANTREPAIR & ERRCODE_RES_MASK).String.Text
 msgid  "The file '$(ARG1)' could not be repaired and therefore cannot be opened."
-msgstr ""
+msgstr "Datoteka '$(ARG1)' ne može biti popravljena i stoga ne može biti otvorena."
 
 #: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_CONFIGURATION_BROKENDATA_NOREMOVE & ERRCODE_RES_MASK).String.Text
 msgid  "Configuration data in '$(ARG1)' is corrupted. Without this data some functions may not operate correctly.\nDo you want to continue startup of %PRODUCTNAME without the corrupted configuration data?"
-msgstr ""
+msgstr "Osobna konfiguracijska datoteka '$(ARG1)' je oštećena. Bez tih podataka neke vunkcije neće ispravno raditi.\n Želite li nastaviti pokretanje %PRODUCTNAME bez nepostojećih konfiguracijskih podataka?"
 
 #: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_CONFIGURATION_BROKENDATA_WITHREMOVE & ERRCODE_RES_MASK).String.Text
 msgid  "The personal configuration file '$(ARG1)' is corrupted and must be deleted to continue. Some of your personal settings may be lost.\nDo you want to continue startup of %PRODUCTNAME without the corrupted configuration data?"
-msgstr ""
+msgstr "Osobna konfiguracijska datoteka '$(ARG1)' je oštećena i za nastavak se mora obrisati. Postoji mogućnost da će neke vaše osobne postavke biti izgubljene.\n Želite li nastaviti pokretanje %PRODUCTNAME bez nepostojećih konfiguracijskih podataka?"
 
 #: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_CONFIGURATION_BACKENDMISSING & ERRCODE_RES_MASK).String.Text
 msgid  "The configuration data source '$(ARG1)' is unavailable. Without this data some functions may not operate correctly."
-msgstr ""
+msgstr "Izvor konfiguracijskih podataka '$(ARG1)' je nedostupan. Bez tih podataka neke vunkcije neće ispravno raditi."
 
 #: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_CONFIGURATION_BACKENDMISSING_WITHRECOVER & ERRCODE_RES_MASK).String.Text
 msgid  "The configuration data source '$(ARG1)' is unavailable. Without this data some functions may not operate correctly.\nDo you want to continue startup of %PRODUCTNAME without the missing configuration data?"
-msgstr ""
+msgstr "Izvor konfiguracijskih podataka '$(ARG1)' je nedostupan. Bez tih podataka neke funkcije se neće ispravno izvoditi.\n Želite li nastaviti pokretanje %PRODUCTNAME bez nepostojećih konfiguracijskih podataka?"
 
 #: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_INVALID_XFORMS_SUBMISSION_DATA & ERRCODE_RES_MASK).STRING.Text
 msgid  "The form contains invalid data. Do you still want to continue?"
@@ -416,8 +416,8 @@ msgid  "Enter user name and password for: \n%1"
 msgstr ""
 
 #: source/logindlg.src#DLG_UUI_LOGIN.STR_LOGIN_REALM.String.Text
-msgid  "Enter user name and password for: \n"%2" on %1"
-msgstr ""
+msgid  "Enter user name and password for: \n\"%2\" on %1"
+msgstr "Molim, unesite ovdje korisničko ime i lozinku za \"%2\" na %1."
 
 #: source/logindlg.src#DLG_UUI_LOGIN.FT_LOGIN_PATH.FixedText.Text
 msgid  "~Path"
@@ -469,7 +469,7 @@ msgstr "~Pošalji"
 
 #: source/cookiedg.src#STR_COOKIES_RECV_START.String.Text
 msgid  "The '${HOST}' server wishes to set one or more cookies.\nCookies contain information referring to certain URL classes. If %PRODUCTNAME later requests a document with a URL corresponding to the class of a previously set cookie, %PRODUCTNAME will send this information to the server. This allows a server to recognize the status of a WWW application, e.g., when shopping online.\n\nThe following Cookies should be set:\n\n"
-msgstr ""
+msgstr "${HOST}' poslužitelj želi postaviti jedan ili više kolačića.\nKolačić sadrži informacije koje se odnose na određenu URL klasu. Ukoliko %PRODUCTNAME kasnije zahtjeva dokument s URL koji odgovara klasi s prethodno postavljenim kolačićem, %PRODUCTNAME će tu informaciju poslati poslužitelju. To omogućava poslužitelju prepoznavanje statusa WWW aplikacije, npr. kod on-line kupovine.\n\nSljedeći kolačić treba biti postavljen:\n\n"
 
 #: source/cookiedg.src#STR_COOKIES_RECV_COOKIES.String.Text
 msgid  "Domain: ${DOMAIN}, Path: ${PATH}, Cookie: ${COOKIE}.\n"
@@ -481,7 +481,7 @@ msgstr "Primitak kolačića"
 
 #: source/cookiedg.src#STR_COOKIES_SEND_START.String.Text
 msgid  "%PRODUCTNAME has saved cookies for the server '${HOST}' which will be sent when requesting the document ${PATH}.\nCookies contain information which refers to certain URL classes. They are sent by some servers to %PRODUCTNAME where they are saved when certain documents are accessed. If %PRODUCTNAME loads a document that, according to the URL, corresponds to a class of one of the previously received Cookies, %PRODUCTNAME will send this information to that server. This enables a server to keep track of the status of a WWW application, e.g., when shopping online.\n\nThe following Cookies should be set:\n\n"
-msgstr ""
+msgstr "%PRODUCTNAME je spremio kolačić za poslužitelj '${HOST}' te će biti poslan na zahtjev dokumenta ${PATH}.\nKolačići sadrže informacije koje se odnose na određenu URL klasu. Oni su poslani od određenih poslužitelja prema %PRODUCTNAME gdje su spremljeni kad je pristupljeno određenom dokumentu. Ako %PRODUCTNAME učitava dokument koji, ovisno o URL, odgovara klasi jednog od prije primljenih kolačića, %PRODUCTNAME će poslati tu informaciju poslužitelju. To omogućava poslužitelju praćenje statusa WWW aplikacije, npr. kod on-line trgovine.\n\nSljedeći kolačić treba biti postavljen:\n\n"
 
 #: source/cookiedg.src#STR_COOKIES_SEND_COOKIES.String.Text
 msgid  "Domain: ${DOMAIN}, Path: ${PATH}, Cookie: ${COOKIE}.\n"
@@ -609,7 +609,7 @@ msgstr "Pogledaj potpise..."
 
 #: source/secmacrowarnings.src#RID_XMLSECDLG_MACROWARN.FI_DESCR2.FixedText.Text
 msgid  "Macros may contain viruses. Disabling macros for a document is always safe. If you disable macros you may lose functionality provided by the document macros."
-msgstr ""
+msgstr "Makronaredbe mogu sadržavati viruse. Onemogućavanje makronaredbi za dokument je uvijek sigurno. Ako onemogućite makronaredbe možete izgubiti funkcionalnost koju oni pružaju."
 
 #: source/secmacrowarnings.src#RID_XMLSECDLG_MACROWARN.CB_ALWAYSTRUST.CheckBox.Text
 msgid  "Always trust macros from this source"

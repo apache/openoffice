@@ -137,7 +137,7 @@ msgstr "Gardar"
 
 #: source/basicide/basidesh.src#RID_STR_SOURCETOBIG.String.Text
 msgid  "The source text is too large and can be neither compiled nor saved.\nDelete some of the comments or transfer some methods into another module."
-msgstr ""
+msgstr "O texto orixe é demasiado grande e non se pode compilar nin gardar.\nElimine algúns comentarios ou transfira algúns métodos a outro módulo."
 
 #: source/basicide/basidesh.src#RID_STR_ERROROPENSTORAGE.String.Text
 msgid  "Error opening file"
@@ -201,7 +201,7 @@ msgstr "O ficheiro 'XX' xa existe"
 
 #: source/basicide/basidesh.src#RID_STR_CANNOTRUNMACRO.String.Text
 msgid  "For security reasons, you cannot run this macro.\n\nFor more information, check the security settings."
-msgstr ""
+msgstr "Por razóns de seguranza, non é posíbel executar esta macro.\n\nPara máis información, comprobe a súa configuración de seguranza."
 
 #: source/basicide/basidesh.src#RID_STR_COMPILEERROR.String.Text
 msgid  "Compile Error: "
@@ -217,7 +217,7 @@ msgstr "Non se atopou a expresión de busca"
 
 #: source/basicide/basidesh.src#RID_STR_SEARCHFROMSTART.String.Text
 msgid  "Search to last module complete. Continue at first module?"
-msgstr ""
+msgstr "Procurouse ata o último módulo incluído. Desexa continuar a busca no primeiro módulo?"
 
 #: source/basicide/basidesh.src#RID_STR_SEARCHREPLACES.String.Text
 msgid  "Search key replaced XX times"
@@ -373,7 +373,7 @@ msgstr "Hai que introducir un nome."
 
 #: source/basicide/basidesh.src#RID_STR_WILLSTOPPRG.String.Text
 msgid  "You will have to restart the program after this edit.\nContinue?"
-msgstr ""
+msgstr "Terá que reiniciar o programa despois destas modificacións.\nDesexa continuar?"
 
 #: source/basicide/basidesh.src#RID_STR_SEARCHALLMODULES.String.Text
 msgid  "Do you want to replace the text in all active modules?"
@@ -509,7 +509,7 @@ msgstr "Importación de diálogo - O nome xa existe"
 
 #: source/basicide/basidesh.src#RID_STR_DLGIMP_CLASH_TEXT.String.Text
 msgid  "The library already contains a dialog with the name:\n\n$(ARG1)\n\nRename dialog to keep current dialog or replace existing dialog.\n "
-msgstr ""
+msgstr "A biblioteca xa contén un diálogo co nome:\n\n$(ARG1)\n\nCámbielle o nome ao diálogo para gardar o diálogo actual ou substitúa o diálogo existente.\n "
 
 #: source/basicide/basidesh.src#RID_STR_DLGIMP_MISMATCH_ADD.String.Text
 msgid  "Add"
@@ -525,7 +525,7 @@ msgstr "Importación de diálogo - O idioma non coincide"
 
 #: source/basicide/basidesh.src#RID_STR_DLGIMP_MISMATCH_TEXT.String.Text
 msgid  "The dialog to be imported supports other languages than the target library.\n\nAdd these languages to the library to keep additional language resources provided by the dialog or omit them to stay with the current library languages.\n\nNote: For languages not supported by the dialog the resources of the dialog's default language will be used.\n "
-msgstr ""
+msgstr "O diálogo que se importará é compatíbel con idiomas distintos do da biblioteca destino.\n\nEngada estes idiomas á biblioteca para gardar estes recursos adicionais de idioma fornecidos polo diálogo ou omítaos para quedarse cos idiomas da bibliotecaactual.\n\nNota: Para os idiomas non compatíbeis co diálogo, usaranse os recursos do idioma predeterminado.\n "
 
 #: source/basicide/basicprint.src#RID_PRINTDLG_STRLIST.item1.ItemList.item
 msgid  "Print range"
@@ -757,7 +757,7 @@ msgstr "Predeterminado"
 
 #: source/dlged/managelang.src#RID_DLG_MANAGE_LANGUAGE.FT_INFO.FixedText.Text
 msgid  "The default language is used if no localization for a user interface locale is present. Furthermore all strings from the default language are copied to resources of newly added languages."
-msgstr ""
+msgstr "O idioma predeterminado utilízase cando non existe a tradución da interface do usuario. Así tamén, cópianse todas as cadeas do idioma predeterminado como recursos dos idiomas engadidos recentemente."
 
 #: source/dlged/managelang.src#RID_DLG_MANAGE_LANGUAGE.PB_CLOSE.OKButton.Text
 msgid  "~Close"
@@ -781,7 +781,7 @@ msgstr "Eliminar recursos de idioma"
 
 #: source/dlged/managelang.src#RID_QRYBOX_LANGUAGE.QueryBox.Message
 msgid  "You are about to delete the resources for the selected language(s). All user interface strings for this language(s) will be deleted.\n\nDo you want to delete the resources of the selected language(s)?"
-msgstr ""
+msgstr "Está a punto de eliminar os recursos do(s) idioma(s) seleccionado(s). Eliminaranse todas as cadeas da interface do usuario neste(s) idioma(s).\n\nDesexa eliminar os recursos do(s) idioma(s) seleccionado(s)?"
 
 #: source/dlged/managelang.src#RID_DLG_SETDEF_LANGUAGE.ModalDialog.Text
 msgid  "Set Default User Interface Language"
@@ -793,7 +793,7 @@ msgstr "Idioma predeterminado"
 
 #: source/dlged/managelang.src#RID_DLG_SETDEF_LANGUAGE.FT_DEF_INFO.FixedText.Text
 msgid  "Select a language to define the default user interface language. All currently present strings will be assigned to the resources created for the selected language."
-msgstr ""
+msgstr "Seleccione o idioma predeterminado para a interface do usuario. Todas as cadeas actuais seranlles asignadas como recursos creados para o idioma seleccionado."
 
 #: source/dlged/managelang.src#RID_DLG_SETDEF_LANGUAGE.STR_ADDLANG_TITLE.String.Text
 msgid  "Add User Interface Languages"
@@ -805,7 +805,7 @@ msgstr "Idiomas dispoñíbeis"
 
 #: source/dlged/managelang.src#RID_DLG_SETDEF_LANGUAGE.STR_ADDLANG_INFO.String.Text
 msgid  "Select languages to be added. Resources for these languages will be created in the library. Strings of the current default user interface language will be copied to these new resources by default."
-msgstr ""
+msgstr "Seleccione os idiomas que desexa engadir. Crearanse recursos para estes idiomas na biblioteca. As cadeas do idioma actualmente predeterminado na interface do usuario copiaranse de modo predeterminado nos novos recursos."
 
 #: source/dlged/dlgresid.src#RID_STR_BRWTITLE_PROPERTIES.String.Text
 msgid  "Properties: "

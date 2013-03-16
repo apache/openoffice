@@ -137,7 +137,7 @@ msgstr "Enrollañ"
 
 #: source/basicide/basidesh.src#RID_STR_SOURCETOBIG.String.Text
 msgid  "The source text is too large and can be neither compiled nor saved.\nDelete some of the comments or transfer some methods into another module."
-msgstr ""
+msgstr "Re hir eo an destenn darzh : enrollañ ha kempunañ dic'hallus.\nDilamit addisplegoù pe treuzkasit hentennoù en ur mollad all."
 
 #: source/basicide/basidesh.src#RID_STR_ERROROPENSTORAGE.String.Text
 msgid  "Error opening file"
@@ -201,7 +201,7 @@ msgstr "Ar restr 'XX' zo anezhi endeo. "
 
 #: source/basicide/basidesh.src#RID_STR_CANNOTRUNMACRO.String.Text
 msgid  "For security reasons, you cannot run this macro.\n\nFor more information, check the security settings."
-msgstr ""
+msgstr "Evit abegoù diogelroez n'haller ket erounit ar makro-mañ. \n\nEvit muioc'h a stlennoù, gwiriit an arventennoù diogelroez."
 
 #: source/basicide/basidesh.src#RID_STR_COMPILEERROR.String.Text
 msgid  "Compile Error: "
@@ -217,7 +217,7 @@ msgstr "Termen klasket digavadus "
 
 #: source/basicide/basidesh.src#RID_STR_SEARCHFROMSTART.String.Text
 msgid  "Search to last module complete. Continue at first module?"
-msgstr ""
+msgstr "Graet eo bet ar c'hlask betek ar mollad diwezhañ. Fellout a ra deoc'h kenderc'hel gant ar c'hlask adalek ar mollad kentañ."
 
 #: source/basicide/basidesh.src#RID_STR_SEARCHREPLACES.String.Text
 msgid  "Search key replaced XX times"
@@ -301,7 +301,7 @@ msgstr "Barrenn vakroioù"
 
 #: source/basicide/basidesh.src#RID_STR_CANNOTCLOSE.String.Text
 msgid  "The window cannot be closed while BASIC is running."
-msgstr ""
+msgstr "N'haller ket serriñ ar prenestr\npa vez BASIC dindan erounit "
 
 #: source/basicide/basidesh.src#RID_STR_REPLACESTDLIB.String.Text
 msgid  "The default library cannot be replaced."
@@ -373,7 +373,7 @@ msgstr "Ret eo deoc'h menegiñ un anv."
 
 #: source/basicide/basidesh.src#RID_STR_WILLSTOPPRG.String.Text
 msgid  "You will have to restart the program after this edit.\nContinue?"
-msgstr ""
+msgstr "Ret e vo deoc'h adloc'hañ ar goulev goude an daskemmadur-mañ.\nKenderc'hel ?"
 
 #: source/basicide/basidesh.src#RID_STR_SEARCHALLMODULES.String.Text
 msgid  "Do you want to replace the text in all active modules?"
@@ -625,7 +625,7 @@ msgstr "Serriñ"
 
 #: source/basicide/moduldlg.src#RID_TP_MODULS.RID_PB_NEWMOD.PushButton.Text
 msgid  "~New..."
-msgstr "Nevez..."
+msgstr "~Nevez..."
 
 #: source/basicide/moduldlg.src#RID_TP_MODULS.RID_PB_NEWDLG.PushButton.Text
 msgid  "~New..."
@@ -649,7 +649,7 @@ msgstr "Serriñ"
 
 #: source/basicide/moduldlg.src#RID_TP_DLGS.RID_PB_NEWMOD.PushButton.Text
 msgid  "~New..."
-msgstr "~Nevez..."
+msgstr "Nevez..."
 
 #: source/basicide/moduldlg.src#RID_TP_DLGS.RID_PB_NEWDLG.PushButton.Text
 msgid  "~New..."
@@ -757,7 +757,7 @@ msgstr "Diouer"
 
 #: source/dlged/managelang.src#RID_DLG_MANAGE_LANGUAGE.FT_INFO.FixedText.Text
 msgid  "The default language is used if no localization for a user interface locale is present. Furthermore all strings from the default language are copied to resources of newly added languages."
-msgstr ""
+msgstr "Arveret eo ar yezh dre ziouer ma n'eus troidigezh ebet evit ar c'hetal arveriad dre ziouer. Peurliesañ e vo eilet an holl hedadoù adalek ar yezh dre ziouer betek dafarioù ar yezhoù ouzhpennet nevez zo."
 
 #: source/dlged/managelang.src#RID_DLG_MANAGE_LANGUAGE.PB_CLOSE.OKButton.Text
 msgid  "~Close"
@@ -781,7 +781,7 @@ msgstr "Delete Language Resources"
 
 #: source/dlged/managelang.src#RID_QRYBOX_LANGUAGE.QueryBox.Message
 msgid  "You are about to delete the resources for the selected language(s). All user interface strings for this language(s) will be deleted.\n\nDo you want to delete the resources of the selected language(s)?"
-msgstr ""
+msgstr "War-nes lemel kuit an dafarioù eus ar yezh(où) diuzet emaoc'h. Dilamet e vo holl hedadoù ar c'hetal arveriad evit ar yezh(où).\n\nHa fellout a ra deoc'h lemel kuit an dafarioù eus ar yezh(où) diuzet ?"
 
 #: source/dlged/managelang.src#RID_DLG_SETDEF_LANGUAGE.ModalDialog.Text
 msgid  "Set Default User Interface Language"
@@ -793,7 +793,7 @@ msgstr "Yezh dre ziouer"
 
 #: source/dlged/managelang.src#RID_DLG_SETDEF_LANGUAGE.FT_DEF_INFO.FixedText.Text
 msgid  "Select a language to define the default user interface language. All currently present strings will be assigned to the resources created for the selected language."
-msgstr ""
+msgstr "Diuzit ur yezh da vezañ implijet evit ar c'hetal arveriad dre ziouer. An holl hedadoù a zo anezho a vo arveret gant an dafarioù krouet evit ar yezh diuzet."
 
 #: source/dlged/managelang.src#RID_DLG_SETDEF_LANGUAGE.STR_ADDLANG_TITLE.String.Text
 msgid  "Add User Interface Languages"
@@ -805,7 +805,7 @@ msgstr "Yezhoù ez eus anezho"
 
 #: source/dlged/managelang.src#RID_DLG_SETDEF_LANGUAGE.STR_ADDLANG_INFO.String.Text
 msgid  "Select languages to be added. Resources for these languages will be created in the library. Strings of the current default user interface language will be copied to these new resources by default."
-msgstr ""
+msgstr "Diuzit ar yezhoù da vezañ ouzhpennet. Krouet e vo dafarioù ar yezhoù-mañ el levraoueg. Kopiet e vo hedadoù eus ar c'hetal arveriad red dre ziouer e-barzh an dafarioù-mañ dre ziouer."
 
 #: source/dlged/dlgresid.src#RID_STR_BRWTITLE_PROPERTIES.String.Text
 msgid  "Properties: "

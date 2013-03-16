@@ -33,7 +33,7 @@ msgstr ""
 
 #: source/padialog.src#RID_FONTIMPORT_DIALOG.RID_FIMP_TXT_HELP.FixedText.Text
 msgid  "Please select the folder from which you want to import fonts. Add the selected fonts by clicking the OK button."
-msgstr ""
+msgstr "Válassza ki azt a könyvtárat, amelyben a telepíteni kívánt betűkészlet található. Az OK gombbal telepítheti a kiválasztott betűkészleteket."
 
 #: source/padialog.src#RID_FONTIMPORT_DIALOG.RID_FIMP_FL_FROM.FixedLine.Text
 msgid  "Source directory"
@@ -61,7 +61,7 @@ msgstr "Betűkészletek hozzáadása"
 
 #: source/padialog.src#RID_FONTIMPORT_DIALOG.RID_FIMP_STR_QUERYOVERWRITE.String.Text
 msgid  "Do you really want to overwrite this font file?\n   %s"
-msgstr ""
+msgstr "Valóban felül akarja írni a következő betűkészletfájlt?\n   %s"
 
 #: source/padialog.src#RID_FONTIMPORT_DIALOG.RID_FIMP_STR_OVERWRITEALL.String.Text
 msgid  "All"
@@ -73,19 +73,19 @@ msgstr "Egyiket sem"
 
 #: source/padialog.src#RID_FONTIMPORT_DIALOG.RID_FIMP_STR_NOAFM.String.Text
 msgid  "A format file (with an .afm extension) has not been found for the font\n%s\ntherefore, the font cannot be installed. Format files can be created with ghostscript, for example, and have to be located in the same directory as the font files or its afm subdirectory."
-msgstr ""
+msgstr "A formátumfájl (az .afm kiterjesztésű fájl) nem található a következő betűkészlethez:\n%s\nEmiatt nem lehet telepíteni a betűkészletet. Formátumfájlokat például a Ghostscript segítségével lehet létrehozni, és a betűkészlettel azonos könyvtárban vagy a betűkészlet „afm” alkönyvtárában kell elhelyezni."
 
 #: source/padialog.src#RID_FONTIMPORT_DIALOG.RID_FIMP_STR_AFMCOPYFAILED.String.Text
 msgid  "The metric file for the font file\n   %s\ncould not be copied. The font will not be installed."
-msgstr ""
+msgstr "A(z) %s betűkészlethez tartozó metrikafájlt nem sikerült átmásolni. A betűkészlet telepítése nem lehetséges."
 
 #: source/padialog.src#RID_FONTIMPORT_DIALOG.RID_FIMP_STR_FONTCOPYFAILED.String.Text
 msgid  "The font file\n   %s\ncould not be copied. The font will not be installed."
-msgstr ""
+msgstr "A(z) %s betűkészletfájlt nem sikerült átmásolni. A betűkészlet telepítése nem lehetséges."
 
 #: source/padialog.src#RID_FONTIMPORT_DIALOG.RID_FIMP_STR_NOWRITEABLEFONTSDIR.String.Text
 msgid  "A directory containing a writable fonts.dir file is not located in the Fontpath. Therefore, fonts cannot be installed."
-msgstr ""
+msgstr "A Fontpath elérési útvonalon nem található olyan könyvtár, amelyben írható fonts.dir fájlok találhatók. Emiatt nem lehet betűkészleteket telepíteni."
 
 #: source/padialog.src#RID_FONTIMPORT_DIALOG.RID_FIMP_STR_NUMBEROFFONTSIMPORTED.String.Text
 msgid  "%d new fonts were added."
@@ -173,11 +173,11 @@ msgstr "Nem sikerült megnyitni a következő nyomtatót: %s"
 
 #: source/padialog.src#RID_PA_TXT_TESTPAGE_PRINTED.String.Text
 msgid  "The test page was printed succesfully. Please check the result."
-msgstr ""
+msgstr "A tesztoldal nyomtatása sikeresen befejeződött. Ellenőrizze az eredményt."
 
 #: source/padialog.src#RID_ERR_NOWRITE.String.Text
 msgid  "No printers can be installed, because the file system is read-only.\nPlease contact your system administrator."
-msgstr ""
+msgstr "A nyomtatókat nem lehet telepíteni, mert a fájl rendszer csak olvasható.\nVegye fel a kapcsolatot a rendszer adminisztrátorával."
 
 #: source/padialog.src#RID_QRY_PRTNAME.String.Text
 msgid  "~New printer name"
@@ -289,7 +289,7 @@ msgstr "Az állomány nem tartalmaz metrikát."
 
 #: source/padialog.src#RID_AFMERROR_BOX_TXT.String.Text
 msgid  "The metric\n\n%s\n\ncould not be converted for the following reason:\n\n"
-msgstr ""
+msgstr "A(z) %s metrika nem konvertálható az alábbiak miatt:\n\n"
 
 #: source/padialog.src#RID_PROGRESS_DLG.RID_PROGRESS_PROGRESS_TXT.FixedText.Text
 msgid  "Progress"
@@ -320,8 +320,8 @@ msgid  "~Selection of drivers"
 msgstr "~Illesztőprogramok kiválasztása"
 
 #: source/padialog.src#RID_PPDIMPORT_DLG.RID_PPDIMP_TXT_DRIVER.FixedText.Text
-msgid  "Please select the drivers to install and press "%s"."
-msgstr ""
+msgid  "Please select the drivers to install and press \"%s\"."
+msgstr "Válassza ki a telepítendő illesztőprogramokat, és nyomja meg az \"%s\" gombot."
 
 #: source/padialog.src#RID_PPDIMPORT_DLG.RID_PPDIMP_STR_LOADINGPPD.String.Text
 msgid  "Searching for drivers"
@@ -332,8 +332,8 @@ msgid  "Driver Installation"
 msgstr "Illesztőprogram telepítése"
 
 #: source/padialog.src#RID_QUERY_REMOVEDRIVER.String.Text
-msgid  "Do you really want to remove the driver "%s"?"
-msgstr ""
+msgid  "Do you really want to remove the driver \"%s\"?"
+msgstr "Valóban el akarja távolítani a(z) „%s” illesztőprogramot?"
 
 #: source/padialog.src#RID_QUERY_REMOVEPRINTER.String.Text
 msgid  "Do you really want to remove this printer ?"
@@ -344,40 +344,40 @@ msgid  "Do you really want to remove the selected fonts ?"
 msgstr "Tényleg törölni kívánja a kiválasztott betűkészleteket?"
 
 #: source/padialog.src#RID_QUERY_DRIVERUSED.String.Text
-msgid  "There are still printers using the driver "%s". Do you really want to remove it? The corresponding printers will also be removed."
-msgstr ""
+msgid  "There are still printers using the driver \"%s\". Do you really want to remove it? The corresponding printers will also be removed."
+msgstr "Egy vagy több nyomtató a(z) „%s” illesztőprogramot használja. Biztos benne, hogy el akarja távolítani? Az eltávolítással a meghajtót használó nyomtatók is eltávolításra kerülnek."
 
 #: source/padialog.src#RID_ERR_REMOVESGENPRT.String.Text
-msgid  "The driver "%s" is always needed and can therefore not be removed."
-msgstr ""
+msgid  "The driver \"%s\" is always needed and can therefore not be removed."
+msgstr "A(z) „%s” illesztőprogramra állandóan szükség van, ezért nem távolítható el."
 
 #: source/padialog.src#RID_ERR_REMOVEDRIVERFAILED.String.Text
-msgid  "The driver "%s1" could not be removed. It was not possible to remove the file\n\n%s2."
-msgstr ""
+msgid  "The driver \"%s1\" could not be removed. It was not possible to remove the file\n\n%s2."
+msgstr "A(z) „%s1” illesztőprogram eltávolítása nem sikerült. Az alábbi fájlt nem sikerült törölni:\n\n%s2."
 
 #: source/padialog.src#RID_ERR_REMOVEDEFAULTDRIVER.String.Text
-msgid  "The driver "%s" is used by your default printer. Therefore, it cannot be removed."
-msgstr ""
+msgid  "The driver \"%s\" is used by your default printer. Therefore, it cannot be removed."
+msgstr "A(z) „%s” illesztőprogramot az alapértelmezett nyomtató használja. Ezért nem lehet eltávolítani."
 
 #: source/padialog.src#RID_ERR_PRINTERNOTREMOVEABLE.String.Text
 msgid  "The printer %s cannot be removed."
 msgstr "A(z) „%s” nyomtatót nem lehet eltávolítani."
 
 #: source/padialog.src#RID_TXT_PRINTERALREADYEXISTS.String.Text
-msgid  "A printer named "%s" already exists. This printer will not be imported."
-msgstr ""
+msgid  "A printer named \"%s\" already exists. This printer will not be imported."
+msgstr "A(z) „%s” nevű nyomtató már létezik. Ez a nyomtató nem lesz importálva."
 
 #: source/padialog.src#RID_TXT_PRINTERWITHOUTCOMMAND.String.Text
-msgid  "The printer "%s" has no valid configuration and, therefore, cannot be imported."
-msgstr ""
+msgid  "The printer \"%s\" has no valid configuration and, therefore, cannot be imported."
+msgstr "A(z) „%s” nyomtatónak nincsenek érvényes beállításai, ezért nem lehet importálni."
 
 #: source/padialog.src#RID_TXT_DRIVERDOESNOTEXIST.String.Text
-msgid  "The driver for the printer "%s1" (%s2) is not installed. Therefore the printer cannot be imported."
-msgstr ""
+msgid  "The driver for the printer \"%s1\" (%s2) is not installed. Therefore the printer cannot be imported."
+msgstr "A(z) „%s1” nyomtató illesztőprogramja nincs telepítve. Ezért a nyomtatót nem lehet importálni."
 
 #: source/padialog.src#RID_TXT_PRINTERADDFAILED.String.Text
-msgid  "The printer "%s" could not be added."
-msgstr ""
+msgid  "The printer \"%s\" could not be added."
+msgstr "A(z) „%s” nyomtatót nem sikerült hozzáadni."
 
 #: source/padialog.src#RID_ADD_PRINTER_DIALOG.RID_ADDP_BTN_FINISH.OKButton.Text
 msgid  "~Finish"
@@ -488,12 +488,12 @@ msgid  "~Help"
 msgstr "~Súgó"
 
 #: source/padialog.src#RID_ADDP_PAGE_COMMAND.RID_ADDP_CMD_STR_PDFHELP.String.Text
-msgid  "The command line for PDF converters is executed as follows: for each document printed, "(TMP)" in the command line is replaced by a temporary file and "(OUTFILE)" in the command line is replaced by the target PDF file name. If "(TMP)" is in the command line, the PostScript code will be supplied via a file, otherwise via standard input (i.e. as a pipe)."
-msgstr ""
+msgid  "The command line for PDF converters is executed as follows: for each document printed, \"(TMP)\" in the command line is replaced by a temporary file and \"(OUTFILE)\" in the command line is replaced by the target PDF file name. If \"(TMP)\" is in the command line, the PostScript code will be supplied via a file, otherwise via standard input (i.e. as a pipe)."
+msgstr "A PDF-átalakító parancssor a következőképpen fut le: minden egyes nyomtatott dokumentumnál a parancssorban lévő \"(TMP)\" helyére egy ideiglenes fájl neve, az \"(OUTFILE)\" helyére a létrehozandó PDF neve kerül. Amennyiben szerepel \"(TMP)\" a parancssorban, akkor a PostScript kód továbbítása fájlon át, ellenkező esetben a szabványos bemeneten keresztül zajlik."
 
 #: source/padialog.src#RID_ADDP_PAGE_COMMAND.RID_ADDP_CMD_STR_FAXHELP.String.Text
-msgid  "The command line for fax connections is executed as follows: for each fax sent, "(TMP)" in the command line is replaced by a temporary file and "(PHONE)" in the command line is replaced by the fax number. If "(TMP)" appears in the command line, the PostScript code will be supplied via a file, otherwise it is passed as standard input (i.e. as a pipe)."
-msgstr ""
+msgid  "The command line for fax connections is executed as follows: for each fax sent, \"(TMP)\" in the command line is replaced by a temporary file and \"(PHONE)\" in the command line is replaced by the fax number. If \"(TMP)\" appears in the command line, the PostScript code will be supplied via a file, otherwise it is passed as standard input (i.e. as a pipe)."
+msgstr "A faxoló parancssor a következőképpen hajtódik végre: minden egyes küldött faxnál a parancssorban levő \"(TMP)\" helyére egy ideiglenes fájl neve, a \"(PHONE)\" helyére a faxszám kerül. Amennyiben szerepel \"(TMP)\" a parancssorban, akkor a PostScript kód továbbítása egy fájlon át, ellenkező esetben a szabványos bemeneten keresztül zajlik."
 
 #: source/padialog.src#RID_ADDP_PAGE_OLDPRINTERS.RID_ADDP_STR_TITLE.String.Text
 msgid  "Import printers from old versions"
@@ -501,7 +501,7 @@ msgstr "Nyomtatók importálása korábbi verziókból"
 
 #: source/padialog.src#RID_ADDP_PAGE_OLDPRINTERS.RID_ADDP_OLD_TXT_PRINTERS.FixedText.Text
 msgid  "~These printers can be imported. Please select the ones you want to import."
-msgstr ""
+msgstr "Ezeke~t a nyomtatókat lehet importálni. Adja meg az importálni kívánt nyomtatót."
 
 #: source/padialog.src#RID_ADDP_PAGE_OLDPRINTERS.RID_ADDP_OLD_BTN_SELECTALL.PushButton.Text
 msgid  "~Select All"
@@ -521,7 +521,7 @@ msgstr "~Az alapértelmezett illesztőprogram"
 
 #: source/padialog.src#RID_ADDP_PAGE_FAXDRIVER.RID_ADDP_FAXDRV_BTN_SELECT.RadioButton.Text
 msgid  "A speci~fic driver, to adapt the format to another printer"
-msgstr ""
+msgstr "~Egyedi illesztőprogram, hogy a formátumot egy másik nyomtatóhoz lehessen illeszteni"
 
 #: source/padialog.src#RID_ADDP_PAGE_PDFDRIVER.RID_ADDP_STR_TITLE.String.Text
 msgid  "Choose a driver"
@@ -541,7 +541,7 @@ msgstr "Az Adobe D~istiller(tm) illesztőprogram"
 
 #: source/padialog.src#RID_ADDP_PAGE_PDFDRIVER.RID_ADDP_PDFDRV_BTN_SELECT.RadioButton.Text
 msgid  "A spec~ific driver, to adapt the format to another printer"
-msgstr ""
+msgstr "~Egyedi illesztőprogram, hogy a formátumot egy másik nyomtatóhoz lehessen illeszteni"
 
 #: source/padialog.src#RID_TXT_FONT_ITALIC.String.Text
 msgid  "Italic"
@@ -737,7 +737,7 @@ msgstr "a ~nyomtató betűkészletével"
 
 #: source/rtsetup.src#RID_RTS_COMMANDPAGE.RID_RTS_CMD_CB_EXTERNAL.CheckBox.Text
 msgid  "~Use system print dialog, disable %PRODUCTNAME's print dialog"
-msgstr ""
+msgstr "A ~rendszer nyomtatási párbeszédablakának használata, az %PRODUCTNAME nyomtatási párbeszédablakának letiltása"
 
 #: source/rtsetup.src#RID_RTS_COMMANDPAGE.RID_RTS_CMD_FT_QUICKCMD.FixedText.Text
 msgid  "Command for quick printing without dialog (optional)"
@@ -788,16 +788,16 @@ msgid  "~Remove"
 msgstr "~Eltávolítás"
 
 #: source/rtsetup.src#RID_RTS_COMMANDPAGE.RID_RTS_CMD_STR_PDFHELP.String.Text
-msgid  "The command line for PDF converters is executed as follows: for each document printed, "(TMP)" in the command line is replaced by a temporary file and "(OUTFILE)" in the command line is replaced by the target PDF file name. If "(TMP)" is in the command line, the PostScript code will be supplied via a file, otherwise via standard input (i.e. as a pipe)."
-msgstr ""
+msgid  "The command line for PDF converters is executed as follows: for each document printed, \"(TMP)\" in the command line is replaced by a temporary file and \"(OUTFILE)\" in the command line is replaced by the target PDF file name. If \"(TMP)\" is in the command line, the PostScript code will be supplied via a file, otherwise via standard input (i.e. as a pipe)."
+msgstr "A PDF-átalakító parancssor a következőképpen fut le: minden egyes nyomtatott dokumentumnál a parancssorban lévő \"(TMP)\" helyére egy ideiglenes fájl neve, az \"(OUTFILE)\" helyére a létrehozandó PDF neve kerül. Amennyiben szerepel \"(TMP)\" a parancssorban, akkor a PostScript kód továbbítása fájlon át, ellenkező esetben a szabványos bemeneten keresztül zajlik."
 
 #: source/rtsetup.src#RID_RTS_COMMANDPAGE.RID_RTS_CMD_STR_PRINTERHELP.String.Text
 msgid  "The command line for printer devices is executed as follows: the generated PostScript code is supplied as standard input (i.e. as a pipe) to the command line."
-msgstr ""
+msgstr "A nyomtató-parancssor a következőképpen fut le: a létrehozott PostScript-kód a szabványos bemeneten át kerül a parancssorba."
 
 #: source/rtsetup.src#RID_RTS_COMMANDPAGE.RID_RTS_CMD_STR_FAXHELP.String.Text
-msgid  "The command line for fax devices is executed as follows: for each fax sent, "(TMP)" in the command line is replaced by a temporary file and "(PHONE)" in the command line is replaced by the fax number. If "(TMP)" appears in the command line, the PostScript code will be supplied via a file, otherwise it is passed as standard input (i.e. as a pipe)."
-msgstr ""
+msgid  "The command line for fax devices is executed as follows: for each fax sent, \"(TMP)\" in the command line is replaced by a temporary file and \"(PHONE)\" in the command line is replaced by the fax number. If \"(TMP)\" appears in the command line, the PostScript code will be supplied via a file, otherwise it is passed as standard input (i.e. as a pipe)."
+msgstr "A faxeszköz-kezelő parancssor a következőképpen fut le: minden egyes küldött fax esetén a parancssorban lévő \"(TMP)\" helyére egy ideiglenes fájl neve, a \"(PHONE)\" helyére a faxszám kerül. Amennyiben szerepel \"(TMP)\" a parancssorban, akkor a PostScript kód továbbítása egy fájlon át, ellenkező esetben a szabványos bemeneten keresztül zajlik."
 
 #: source/rtsetup.src#RID_RTS_OTHERPAGE.RID_RTS_OTHER_LEFTMARGIN_TXT.FixedText.Text
 msgid  "~Left margin"

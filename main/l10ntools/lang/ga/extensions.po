@@ -57,7 +57,7 @@ msgstr "Teideal na Foinse Sonraí"
 
 #: source/abpilot/abspilot.src#RID_PAGE_SELECTABTYPE.FT_TYPE_HINTS.FixedText.Text
 msgid  "%PRODUCTNAME lets you access address data already present in your system. To do this, a %PRODUCTNAME data source will be created in which your address data is available in tabular form.\n\nThis wizard helps you create the data source."
-msgstr ""
+msgstr "Ligeann %PRODUCTNAME duit teacht ar shonraí seolta atá suite i do chóras cheana féin. Leis seo a dhéanamh, cruthófar foinse sonraí %PRODUCTNAME ina mbeidh do chuid sonraí seolta ar fáil i bhfoirm tháblach.\n\nTabharfaidh an treoraí seo cúnamh duit an fhoinse sonraí a chruthú."
 
 #: source/abpilot/abspilot.src#RID_PAGE_SELECTABTYPE.FL_TYPE.FixedLine.Text
 msgid  "Please select the type of your external address book:"
@@ -109,7 +109,7 @@ msgstr "Foinse sheachtrach sonraí eile"
 
 #: source/abpilot/abspilot.src#RID_PAGE_ADMININVOKATION.FT_ADMINEXPLANATION.FixedText.Text
 msgid  "To set up the new data source, additional information is required.\n\nClick the following button to open another dialog in which you then enter the necessary information."
-msgstr ""
+msgstr "Chun an fhoinse sonraí a chruthú, teastaíonn níos mó eolas.\n\nCliceáil ar an gcnaipe atá le teacht chun dialóg nua a oscailt inar féidir leat an t-eolas a theastaíonn a iontráil."
 
 #: source/abpilot/abspilot.src#RID_PAGE_ADMININVOKATION.PB_INVOKE_ADMIN_DIALOG.PushButton.Text
 msgid  "Settings"
@@ -117,15 +117,15 @@ msgstr "Socruithe"
 
 #: source/abpilot/abspilot.src#RID_PAGE_ADMININVOKATION.FT_ERROR.FixedText.Text
 msgid  "The connection to the data source could not be established.\nBefore you proceed, please check the settings made, or (on the previous page) choose another address data source type."
-msgstr ""
+msgstr "Níorbh fhéidir ceangal leis an fhoinse sonraí.\nSula dtosóidh tú, seiceáil na socruithe a dhéanamh le do thoil, nó (ar an leathanach roimhe seo) roghnaigh saghas eile foinse sonraí na seolta."
 
 #: source/abpilot/abspilot.src#RID_PAGE_TABLESELECTION_AB.FL_TOOMUCHTABLES.FixedText.Text
 msgid  "The external data source you have chosen contains more than one address book.\nPlease select the one you mainly want to work with:"
-msgstr ""
+msgstr "Tá níos mó ná leabhar seoltaí amháin san fhoinse sonraí seachtracha a roghnaigh tú.\nRoghnaigh an ceann is mó a bheidh tú ag obair leis, le do thoil:"
 
 #: source/abpilot/abspilot.src#RID_PAGE_FIELDMAPPING.FT_FIELDASSIGMENTEXPL.FixedText.Text
-msgid  "To incorporate the address data in your templates, %PRODUCTNAME has to know which fields contain which data.\n\nFor instance, you could have stored the e-mail addresses in a field named "email", or "E-mail" or "EM" - or something completely different.\n\nClick the button below to open another dialog where you can enter the settings for your data source."
-msgstr ""
+msgid  "To incorporate the address data in your templates, %PRODUCTNAME has to know which fields contain which data.\n\nFor instance, you could have stored the e-mail addresses in a field named \"email\", or \"E-mail\" or \"EM\" - or something completely different.\n\nClick the button below to open another dialog where you can enter the settings for your data source."
+msgstr "Leis na sonraí seolta i do theimpléid a ionchorprú, teastaíonn uaidh %PRODUCTNAME fios a bheidh aige cé na réimsí ina bhfuil sonraí.\n\nMar shampla, d'fhéadfadh sé gur chuir tú an seoladh ríomhphost i réimse darb ainm \"ríomhphost\" nó \"Ríomh-phost\" nó \"RP\" nó rud éigin eile ar fad.\n\nCliceáil ar an gcnaipe thíos chun dialóg nua a oscailt inar féidir leat na socruithe do d'fhoinse sonraí a iontráil."
 
 #: source/abpilot/abspilot.src#RID_PAGE_FIELDMAPPING.PB_INVOKE_FIELDS_DIALOG.PushButton.Text
 msgid  "Field Assignment"
@@ -133,7 +133,7 @@ msgstr "Sannadh Réimsí"
 
 #: source/abpilot/abspilot.src#RID_PAGE_FINAL.FT_FINISH_EXPL.FixedText.Text
 msgid  "That was all the information necessary to integrate your address data into %PRODUCTNAME.\n\nNow, just enter the name under which you want to register the data source in %PRODUCTNAME."
-msgstr ""
+msgstr "Sin an méid eolas a bhí ag teastáil chun do chuid sonraí seolta a dhéanamh comhtháite i %PRODUCTNAME.\n\nAnois, níl ort ach an t-ainm ar mhaith leat a úsáid chun an fhoinse sonraí a chlárú a iontráil i %PRODUCTNAME."
 
 #: source/abpilot/abspilot.src#RID_PAGE_FINAL.FT_LOCATION.FixedText.Text
 msgid  "Location"
@@ -153,7 +153,7 @@ msgstr "Ainm an leabhair seoltaí"
 
 #: source/abpilot/abspilot.src#RID_PAGE_FINAL.FT_DUPLICATENAME.FixedText.Text
 msgid  "Another data source already has this name. As data sources have to have globally unique names, you need to choose another one."
-msgstr ""
+msgstr "Tá an t-ainm seo ar fhoinse sonraí eile cheana féin. Ós rud é go gcaithfidh ainm ar leith a bheidh ar gach foinse sonraí, beidh ort ceann nua a chumadh."
 
 #: source/abpilot/abspilot.src#RID_ERR_NEEDTYPESELECTION.ErrorBox.Message
 msgid  "Please select a type of address book."
@@ -161,7 +161,7 @@ msgstr "Roghnaigh cineál an leabhair seoltaí."
 
 #: source/abpilot/abspilot.src#RID_QRY_NOTABLES.QueryBox.Message
 msgid  "The data source does not contain any tables.\nDo you want to set it up as an address data source, anyway?"
-msgstr ""
+msgstr "Níl aon táblaí san fhoinse sonraí.\nAn bhfuil fonn ort í a shocrú mar fhoinse sonraí seolta mar sin féin?"
 
 #: source/abpilot/abspilot.src#RID_STR_DEFAULT_NAME.String.Text
 msgid  "Addresses"
@@ -184,8 +184,8 @@ msgid  "Address Data - Field Assignment"
 msgstr "Sonraí Seolta - Sannadh Réimsí"
 
 #: source/abpilot/abspilot.src#RID_STR_NOFIELDSASSIGNED.String.Text
-msgid  "There are no fields assigned at this time.\nYou can either assign fields now or do so later by first choosing:\n"File - Template - Address Book Source...""
-msgstr ""
+msgid  "There are no fields assigned at this time.\nYou can either assign fields now or do so later by first choosing:\n\"File - Template - Address Book Source...\""
+msgstr "Níl aon réimsí sannta faoi láthair.\nIs féidir leat réimsí a shannadh anois nó níos déanaí ach rogha a dhéanamh:\n\"Comhad - Teimpléad - Foinse Leabhair Seoltaí...\""
 
 #: source/bibliography/toolbar.src#RID_BIB_TOOLBAR.TBC_FT_SOURCE.ToolBoxItem.Text
 msgid  "Table"
@@ -493,7 +493,7 @@ msgstr "Rialtán"
 
 #: source/dbpilots/listcombopages.src#RID_PAGE_LCW_CONTENTSELECTION_TABLE.FT_SELECTTABLE_LABEL.FixedText.Text
 msgid  "On the right side, you see all the tables from the data source of the form.\n\n\nChoose the table from which the data should be used as basis for the list content:"
-msgstr ""
+msgstr "Ar an taobh dheis, feicfidh tú na táblaí go léir ó fhoinse sonraí na foirme.\n\n\nRoghnaigh an tábla as ar chóir na sonraí a úsáid mar bhonn don ábhar liosta:"
 
 #: source/dbpilots/listcombopages.src#RID_PAGE_LCW_CONTENTSELECTION_FIELD.TabPage.Text
 msgid  "Field Selection"
@@ -513,7 +513,7 @@ msgstr "Taispeánfar ábhar an réimse roghnaithe i liosta an bhosca teaglama."
 
 #: source/dbpilots/listcombopages.src#RID_PAGE_LCW_CONTENTSELECTION_FIELD.STR_FIELDINFO_LISTBOX.String.Text
 msgid  "The contents of the selected field will be shown in the list box if the linked fields are identical."
-msgstr ""
+msgstr "Taispeánfar ábhar an réimse roghnaithe sa bhosca liosta más ionann le chéile na réimsí nasctha."
 
 #: source/dbpilots/listcombopages.src#RID_PAGE_LCW_FIELDLINK.TabPage.Text
 msgid  "Field Link"
@@ -521,7 +521,7 @@ msgstr "Nasc Réimse"
 
 #: source/dbpilots/listcombopages.src#RID_PAGE_LCW_FIELDLINK.FT_FIELDLINK_DESC.FixedText.Text
 msgid  "This is where you select fields with matching contents so that the value from the display field will be shown."
-msgstr ""
+msgstr "Is anseo a roghnaíonn tú réimsí le hábhar comhoiriúnach ionas go dtaispeánfar an luach ón réimse."
 
 #: source/dbpilots/listcombopages.src#RID_PAGE_LCW_FIELDLINK.FT_VALUELISTFIELD.FixedText.Text
 msgid  "Field from the ~Value Table"
@@ -533,7 +533,7 @@ msgstr "Réimse ón Tábla ~Liosta"
 
 #: source/dbpilots/listcombopages.src#RID_STR_COMBOWIZ_DBFIELD.String.Text
 msgid  "You can either save the value of the combo box in a database field or use it for display purposes."
-msgstr ""
+msgstr "Tig leat luach an bhosca teaglama a shábháil i réimse bunachar sonraí nó é a úsáid chun taispeána."
 
 #: source/dbpilots/gridpages.src#RID_PAGE_GW_FIELDSELECTION.TabPage.Text
 msgid  "Field Selection"
@@ -589,7 +589,7 @@ msgstr "Sonraí"
 
 #: source/dbpilots/commonpagesdbp.src#RID_PAGE_TABLESELECTION.FT_EXPLANATION.FixedText.Text
 msgid  "Currently, the form the control belongs to is not (or not completely) bound to a data source.\n\nPlease choose a data source and a table.\n\n\nPlease note that the settings made on this page will take effect immediately upon leaving the page."
-msgstr ""
+msgstr "Faoi láthair, níl an fhoirm ar léi an rialtán ceangailte (nó ceangailte go hiomlán) le foinse sonraí.\n\nRoghnaigh foinse sonraí agus tábla.\n\n\nTabhair faoi deara go gcuirfear i bhfeidhm na socruithe a rinneadh ar an leathanach seo chomh luath is a fhágfar an leathanach."
 
 #: source/dbpilots/commonpagesdbp.src#RID_PAGE_TABLESELECTION.FT_DATASOURCE.FixedText.Text
 msgid  "~Data source:"
@@ -613,7 +613,7 @@ msgstr "An bhfuil fonn ort an luach a shábháil i réimse bunachar sonraí?"
 
 #: source/dbpilots/commonpagesdbp.src#RID_PAGE_OPTION_DBFIELD.RB_STOREINFIELD_YES.RadioButton.Text
 msgid  "~Yes, I want to save it in the following database field:"
-msgstr ""
+msgstr "~Is sea, is maith liom é a shábháil sa réimse bunachar sonraí seo a leanas:"
 
 #: source/dbpilots/commonpagesdbp.src#RID_PAGE_OPTION_DBFIELD.RB_STOREINFIELD_NO.RadioButton.Text
 msgid  "~No, I only want to save the value in the form."
@@ -681,7 +681,7 @@ msgstr "Luachanna Réimse"
 
 #: source/dbpilots/groupboxpages.src#RID_PAGE_OPTIONVALUES.FT_OPTIONVALUES_EXPL.FixedText.Text
 msgid  "When you select an option, the option group is given a specific value."
-msgstr ""
+msgstr "Nuair a roghnaíonn tú rogha, cuirtear luach faoi leith ar an ngrúpa roghanna."
 
 #: source/dbpilots/groupboxpages.src#RID_PAGE_OPTIONVALUES.FT_OPTIONVALUES.FixedText.Text
 msgid  "Which ~value do you want to assign to each option?"
@@ -705,7 +705,7 @@ msgstr "Ba iad na mionsonraí a raibh gá leo agus an grúpa roghanna á chruth�
 
 #: source/dbpilots/groupboxpages.src#RID_STR_GROUPWIZ_DBFIELD.String.Text
 msgid  "You can either save the value of the option group in a database field or use it for a later action."
-msgstr ""
+msgstr "Is féidir leat luach an ghrúpa roghanna a shábháil i réimse bunachair sonraí, nó is féidir é a úsáid i ngníomh amach anseo."
 
 #: source/preload/preload.src#RID_DLG_OEMWIZARD.PB_PREV.PushButton.Text
 msgid  "<< Back"
@@ -737,7 +737,7 @@ msgstr "Fáilte"
 
 #: source/preload/preload.src#RID_TP_WELCOME.FT_INFO.FixedText.Text
 msgid  "Welcome to %PRODUCTNAME %PRODUCTVERSION OEM\n\nTo start the %PRODUCTNAME %PRODUCTVERSION OEM, please enter your personal data in the dialog following the license text. Important information is contained in the readme files which are located in the %PRODUCTNAME product directory. Please read these files carefully. You can also find detailed information at the Oracle website \n\nhttp://www.oracle.com/us/products/applications/open-office."
-msgstr ""
+msgstr "Fáilte go %PRODUCTNAME %PRODUCTVERSION OEM\n\nLe %PRODUCTNAME %PRODUCTVERSION OEM a thosú, iontráil do shonraí pearsanta sa bhosca dialóige a leanann téacs an cheadúnais. Tá eolas tábhachtach sa chomhad 'léigh mé' atá lonnaithe i gcomhadlann %PRODUCTNAME. Léigh na comhaid seo go cúramach le do thoil. Tig leat mioneolas a fháil freisin ó shuíomh gréasáin Oracle\n\nhttp://www.oracle.com/us/products/applications/open-office."
 
 #: source/preload/preload.src#RID_TP_LICENSE.TabPage.Text
 msgid  "License Agreement"
@@ -753,7 +753,7 @@ msgstr "1."
 
 #: source/preload/preload.src#RID_TP_LICENSE.FT_INFO2.FixedText.Text
 msgid  "View the complete License Agreement. Please use the scroll bar or the '%PAGEDOWN' button in this dialog to view the entire license text."
-msgstr ""
+msgstr "Léigh an ceadúnas uile. Úsáid an scrollbharra nó an cnaipe '%PAGEDOWN' sa dialóg seo chun an ceadúnas a léamh ina iomláine."
 
 #: source/preload/preload.src#RID_TP_LICENSE.PB_PAGEDOWN.PushButton.Text
 msgid  "Page Down"
@@ -801,7 +801,7 @@ msgstr "Sórtáil go hUathoibríoch"
 
 #: source/propctrlr/selectlabeldialog.src#RID_DLG_SELECTLABELCONTROL.1.FixedText.Text
 msgid  "These are control fields that can be used as label fields for the $control_class$ $control_name$."
-msgstr ""
+msgstr "Is réimsí rialaithe iad seo atá inúsáidte mar réimsí lipéid don $control_class$ $control_name$."
 
 #: source/propctrlr/selectlabeldialog.src#RID_DLG_SELECTLABELCONTROL.1.CheckBox.Text
 msgid  "~No assignment"
@@ -817,7 +817,7 @@ msgstr "Foirmeacha"
 
 #: source/propctrlr/pcrmiscres.src#RID_STR_CONFIRM_DELETE_DATA_TYPE.String.Text
 msgid  "Do you want to delete the data type '#type#' from the model?\nPlease note that this will affect all controls which are bound to this data type."
-msgstr ""
+msgstr "An bhfuil fonn ort an cineál sonraí '#type#' a scriosadh sa tsamhail?\nTabhair faoi deara go mbeidh tionchar ag seo ar gach rialtán atá ceangailte leis an gcineál sonraí seo."
 
 #: source/propctrlr/pcrmiscres.src#RID_STR_PROPTITLE_PUSHBUTTON.String.Text
 msgid  "Button"
@@ -905,7 +905,7 @@ msgstr "Nasc réimsí"
 
 #: source/propctrlr/formlinkdialog.src#RID_DLG_FORMLINKS.FT_EXPLANATION.FixedText.Text
 msgid  "Sub forms can be used to display detailed data about the current record of the master form. To do this, you can specify which columns in the sub form match which columns in the master form."
-msgstr ""
+msgstr "Is féidir fofhoirmeacha a úsáid le mionsonraí maidir le taifead reatha na máistirfhoirme a thaispeáint. Chuige seo, is féidir leat na colúin san fhofhoirm atá ar aon dul le colúin sa phríomhfhoirm a shonrú."
 
 #: source/propctrlr/formlinkdialog.src#RID_DLG_FORMLINKS.PB_SUGGEST.PushButton.Text
 msgid  "Suggest"
@@ -1864,8 +1864,8 @@ msgid  "Help"
 msgstr "Cabhair"
 
 #: source/propctrlr/formres.src#RID_STR_UNABLETOCONNECT.String.Text
-msgid  "The connection to the data source "$name$" could not be established."
-msgstr ""
+msgid  "The connection to the data source \"$name$\" could not be established."
+msgstr "Níorbh fhéidir ceangal a bhunú leis an bhfoinse sonraí \"$name$\"."
 
 #: source/propctrlr/formres.src#RID_STR_TEXT.String.Text
 msgid  "Text"
@@ -2297,11 +2297,11 @@ msgstr "Iontráil ainm ar an gcineál nua sonraí:"
 
 #: source/scanner/sanedlg.src#RID_SANE_DIALOG.RID_DEVICEINFO_BTN.PushButton.Text
 msgid  "About\n Dev~ice"
-msgstr ""
+msgstr "Maidir le\n ~Gléas"
 
 #: source/scanner/sanedlg.src#RID_SANE_DIALOG.RID_PREVIEW_BTN.PushButton.Text
 msgid  "Create\nPreview"
-msgstr ""
+msgstr "Cruthaigh\nRéamhamharc"
 
 #: source/scanner/sanedlg.src#RID_SANE_DIALOG.RID_PREVIEW_BOX.FixedLine.Text
 msgid  "Preview"
@@ -2357,7 +2357,7 @@ msgstr "Scanóir"
 
 #: source/scanner/sanedlg.src#RID_SANE_DEVICEINFO_TXT.String.Text
 msgid  "Device: %s\nVendor: %s\nModel: %s\nType: %s"
-msgstr ""
+msgstr "Gléas: %s\nDíoltóir: %s\nDéanamh: %s\nCineál: %s"
 
 #: source/scanner/sanedlg.src#RID_SANE_SCANERROR_TXT.String.Text
 msgid  "An error occurred while scanning."
@@ -2365,7 +2365,7 @@ msgstr "Tharla earráid le linn scanadh."
 
 #: source/scanner/sanedlg.src#RID_SANE_NORESOLUTIONOPTION_TXT.String.Text
 msgid  "The device does not offer a preview option. Therefore, a normal scan will be used as a preview instead. This may take a considerable amount of time."
-msgstr ""
+msgstr "Níl rogha réamhamharc ag an ngléas. Dá bharr seo, úsáidfear gnáthscanadh mar réamhamharc ina áit. Seans go nglacfaidh sé seo roinnt mhaith ama."
 
 #: source/scanner/sanedlg.src#RID_SANE_NOSANELIB_TXT.String.Text
 msgid  "The SANE interface could not be initialized. Scanning is not possible."
@@ -2405,7 +2405,7 @@ msgstr "Ní gá le %PRODUCTNAME %PRODUCTVERSION a nuashonrú."
 
 #: source/update/check/updatehdl.src#RID_UPDATE_STR_UPD_FOUND.String.Text
 msgid  "%PRODUCTNAME %NEXTVERSION is available.\n\nThe installed version is %PRODUCTNAME %PRODUCTVERSION.\n\nNote: Before downloading  an update, please ensure that you have sufficient access rights to install it.\nA password, usually the administrator's or root password, may be required."
-msgstr ""
+msgstr "Tá %PRODUCTNAME %NEXTVERSION ar fáil.\n\nIs é %PRODUCTNAME %PRODUCTVERSION an leagan atá ann faoi láthair.\n\nNóta: Sula n-íosluchtaíonn tú nuashonrú, bí cinnte go bhfuil go leor ceadanna agat chun é a shuiteáil.\nSeans go mbeidh focal faire de dhíth ort (focal faire an fhorúsáideora de ghnáth)."
 
 #: source/update/check/updatehdl.src#RID_UPDATE_STR_DLG_TITLE.String.Text
 msgid  "Check for Updates"
@@ -2421,7 +2421,7 @@ msgstr "Tá moill ar íosluchtú %PRODUCTNAME %NEXTVERSION ag"
 
 #: source/update/check/updatehdl.src#RID_UPDATE_STR_DOWNLOAD_WARN.String.Text
 msgid  "The download location is: %DOWNLOAD_PATH.\n\nUnder Tools – Options... - %PRODUCTNAME – Online Update you can change the download location."
-msgstr ""
+msgstr "Sábhálfar an comhad íosluchtaithe anseo: %DOWNLOAD_PATH.\n\nFaoi Uirlisí - Roghanna... - %PRODUCTNAME - Nuashonrú Ar Líne, is féidir an suíomh seo a athrú."
 
 #: source/update/check/updatehdl.src#RID_UPDATE_STR_DOWNLOAD_DESCR.String.Text
 msgid  "%FILE_NAME has been downloaded to %DOWNLOAD_PATH."
@@ -2429,7 +2429,7 @@ msgstr "Íosluchtaíodh %FILE_NAME agus sábháladh é anseo: %DOWNLOAD_PATH."
 
 #: source/update/check/updatehdl.src#RID_UPDATE_STR_DOWNLOAD_UNAVAIL.String.Text
 msgid  "The automatic download of the update is currently not available.\n\nClick 'Download...' to download %PRODUCTNAME %NEXTVERSION manually from the web site."
-msgstr ""
+msgstr "Ní féidir an nuashonrú a íosluchtú go huathoibríoch faoi láthair.\n\nCliceáil 'Íosluchtaigh...' chun %PRODUCTNAME %NEXTVERSION a íosluchtú ón suíomh Gréasáin de láimh."
 
 #: source/update/check/updatehdl.src#RID_UPDATE_STR_DOWNLOADING.String.Text
 msgid  "Downloading %PRODUCTNAME %NEXTVERSION..."
@@ -2437,7 +2437,7 @@ msgstr "%PRODUCTNAME %NEXTVERSION á íosluchtú..."
 
 #: source/update/check/updatehdl.src#RID_UPDATE_STR_READY_INSTALL.String.Text
 msgid  "Download of %PRODUCTNAME %NEXTVERSION completed. Ready for installation."
-msgstr ""
+msgstr "Tá íosluchtú %PRODUCTNAME %NEXTVERSION críochnaithe. Réidh le suiteáil."
 
 #: source/update/check/updatehdl.src#RID_UPDATE_STR_CANCEL_TITLE.String.Text
 msgid  "%PRODUCTNAME %PRODUCTVERSION"
@@ -2449,7 +2449,7 @@ msgstr "An bhfuil tú cinnte gur mhaith leat an t-íosluchtú a chealú?"
 
 #: source/update/check/updatehdl.src#RID_UPDATE_STR_BEGIN_INSTALL.String.Text
 msgid  "To install the update, %PRODUCTNAME %PRODUCTVERSION needs to be closed. Do you want to install the update now?"
-msgstr ""
+msgstr "Chun an nuashonrú a shuiteáil, caithfidh tú %PRODUCTNAME %PRODUCTVERSION a dhúnadh. An bhfuil fonn ort an nuashonrú a shuiteáil anois?"
 
 #: source/update/check/updatehdl.src#RID_UPDATE_STR_INSTALL_NOW.String.Text
 msgid  "Install ~now"
@@ -2461,15 +2461,15 @@ msgstr "Suiteáil a~mach anseo"
 
 #: source/update/check/updatehdl.src#RID_UPDATE_STR_INSTALL_ERROR.String.Text
 msgid  "Could not run the installer application, please run %FILE_NAME in %DOWNLOAD_PATH manually."
-msgstr ""
+msgstr "Níorbh fhéidir an suiteálaí a rith.  Rith %FILE_NAME i %DOWNLOAD_PATH de láimh, le do thoil."
 
 #: source/update/check/updatehdl.src#RID_UPDATE_STR_OVERWRITE_WARNING.String.Text
 msgid  "A file with that name already exists! Do you want to overwrite the existing file?"
-msgstr ""
+msgstr "Tá comhad darb ainm sin ann cheana! An bhfuil fonn ort an comhad atá ann a fhorscríobh?"
 
 #: source/update/check/updatehdl.src#RID_UPDATE_STR_RELOAD_WARNING.String.Text
 msgid  "A file with the name '%FILENAME' already exists in '%DOWNLOAD_PATH'! Do you want to continue with the download or delete and reload the file?"
-msgstr ""
+msgstr "Tá comhad darb ainm '%FILENAME' i gcomhadlann '%DOWNLOAD_PATH' cheana! An bhfuil fonn ort dul ar aghaidh leis an íosluchtú, nó an comhad a scriosadh agus athluchtú?"
 
 #: source/update/check/updatehdl.src#RID_UPDATE_STR_RELOAD_RELOAD.String.Text
 msgid  "Reload File"

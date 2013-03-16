@@ -39,6 +39,10 @@ msgstr "בחירת כותרות, מקראות וקבועי רשתות"
 msgid  "Display grids"
 msgstr "הצגת רשתות"
 
+#: source/controller/dialogs/tp_3D_SceneGeometry.src#CUSTOMUNITTEXT_DEGREE.#define.CustomUnitText
+msgid  " degrees"
+msgstr " מעלות"
+
 #: source/controller/dialogs/tp_3D_SceneGeometry.src#TP_3D_SCENEGEOMETRY.CBX_RIGHT_ANGLED_AXES.CheckBox.Text
 msgid  "~Right-angled axes"
 msgstr "צירים ניצבים"
@@ -58,10 +62,6 @@ msgstr "סיבוב בציר ~Z"
 #: source/controller/dialogs/tp_3D_SceneGeometry.src#TP_3D_SCENEGEOMETRY.CBX_PERSPECTIVE.CheckBox.Text
 msgid  "~Perspective"
 msgstr "זווית ראיה"
-
-#: source/controller/dialogs/tp_3D_SceneGeometry.src#CUSTOMUNITTEXT_DEGREE.#define.CustomUnitText
-msgid  " degrees"
-msgstr " מעלות"
 
 #: source/controller/dialogs/Strings_AdditionalControls.src#STR_3DSCHEME_SIMPLE.String.Text
 msgid  "Simple"
@@ -269,11 +269,11 @@ msgstr "הערך המזערי חייב להיות פחות מהמירבי. נא 
 
 #: source/controller/dialogs/Strings_Scale.src#STR_INVALID_INTERVALS.String.Text
 msgid  "The major interval needs to be greater than the minor interval. Check your input."
-msgstr ""
+msgstr "המרווח העיקרי צריך להיות גדול יותר מאשר המרווח המשני. בדוק את הקלט שלך."
 
 #: source/controller/dialogs/Strings_Scale.src#STR_INVALID_TIME_UNIT.String.Text
 msgid  "The major and minor interval need to be greater or equal to the resolution. Check your input."
-msgstr ""
+msgstr "המרווח העיקרי והמשני צריכים להיות גדולים מהרזולוציה או שווים לה. נא לבדוק את הקלט."
 
 #: source/controller/dialogs/dlg_DataEditor.src#DLG_DIAGRAM_DATA.ModalDialog.Text
 msgid  "Data Table"
@@ -889,7 +889,7 @@ msgstr "טיפוגרפיה אסייתית"
 
 #: source/controller/dialogs/Strings.src#STR_OBJECT_AVERAGE_LINE_WITH_PARAMETERS.String.Text
 msgid  "Mean value line with value %AVERAGE_VALUE and standard deviation %STD_DEVIATION"
-msgstr ""
+msgstr "קו ממוצע עם ערך %AVERAGE_VALUE וסטיית תקן %STD_DEVIATION"
 
 #: source/controller/dialogs/Strings.src#STR_OBJECT_AXIS.String.Text
 msgid  "Axis"
@@ -1097,11 +1097,11 @@ msgstr "ערכים: %POINTVALUES"
 
 #: source/controller/dialogs/Strings.src#STR_TIP_DATAPOINT.String.Text
 msgid  "Data Point %POINTNUMBER, data series %SERIESNUMBER, values: %POINTVALUES"
-msgstr ""
+msgstr "נקודת נתונים %POINTNUMBER, סדרת נתונים %SERIESNUMBER, ערכים: %POINTVALUES"
 
 #: source/controller/dialogs/Strings.src#STR_STATUS_DATAPOINT_MARKED.String.Text
 msgid  "Data point %POINTNUMBER in data series %SERIESNUMBER selected, values: %POINTVALUES"
-msgstr ""
+msgstr "Datenpunkt $(PT_NUM) in Reihe $(ROW_NUM) markiert, Wert: $(VALUE)"
 
 #: source/controller/dialogs/Strings.src#STR_STATUS_OBJECT_MARKED.String.Text
 msgid  "%OBJECTNAME selected"
@@ -1153,7 +1153,7 @@ msgstr "פריסה אוטומטית"
 
 #: source/controller/dialogs/Strings.src#STR_ACTION_NOTPOSSIBLE.String.Text
 msgid  "This function cannot be completed with the selected objects."
-msgstr ""
+msgstr "Die Funktion kann mit den selektierten \nObjekten nicht ausgeführt werden."
 
 #: source/controller/dialogs/Strings.src#STR_ACTION_EDIT_TEXT.String.Text
 msgid  "Edit text"
@@ -1257,7 +1257,7 @@ msgstr "בחירת טווחים לסרגלי שגיאה שליליים"
 
 #: source/controller/dialogs/Strings.src#STR_DATA_EDITOR_INCORRECT_INPUT.String.Text
 msgid  "Your last input is incorrect.\nIgnore this change and close the dialog?"
-msgstr ""
+msgstr "ההקלדה האחרוני שגויה.\nהאם להתעלם ממנה?"
 
 #: source/controller/dialogs/Strings.src#STR_TEXT_DIRECTION_LTR.String.Text
 msgid  "Left-to-right"

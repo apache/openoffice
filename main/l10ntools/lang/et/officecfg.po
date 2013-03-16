@@ -82,8 +82,9 @@ msgid  "Dear Mr. <2>,"
 msgstr "Austatud härra <2>,"
 
 #: registry/data/org/openoffice/Office/Writer.xcu#..Writer.MailMergeWizard.NeutralGreetingLines
+#, fuzzy
 msgid  "To whom it may concern,;Dear Friends,;Dear Sir or Madam,;Hello,"
-msgstr ""
+msgstr "Kõigile, kellesse see puutub,;Kallid sõbrad,;Austatud härra või proua,;Tere,"
 
 #: registry/data/org/openoffice/Office/Writer.xcu#..Writer.Insert.Caption.CaptionOrderNumberingFirst
 msgid  "true"
@@ -184,52 +185,42 @@ msgid  "740"
 msgstr ""
 
 #: registry/data/org/openoffice/Office/Embedding.xcu#..Embedding.Verbs.SHOW.VerbUIName
-#, fuzzy
 msgid  "~Edit"
 msgstr "Redigeeri"
 
 #: registry/data/org/openoffice/Office/Embedding.xcu#..Embedding.Verbs.OPEN.VerbUIName
-#, fuzzy
 msgid  "~Open"
 msgstr "Ava"
 
 #: registry/data/org/openoffice/Office/Embedding.xcu#..Embedding.Verbs.PROPERTIES.VerbUIName
-#, fuzzy
 msgid  "Propert~ies..."
 msgstr "Omadused..."
 
 #: registry/data/org/openoffice/Office/Embedding.xcu#..Embedding.Verbs.SAVECOPYAS.VerbUIName
-#, fuzzy
 msgid  "Save Copy ~as..."
 msgstr "Salvesta koopia kui..."
 
 #: registry/data/org/openoffice/Office/Embedding.xcu#..Embedding.ObjectNames.Calc.ObjectUIName
-#, fuzzy
 msgid  "%PRODUCTNAME %PRODUCTVERSION Spreadsheet"
 msgstr "%PRODUCTNAME %PRODUCTVERSION arvutustabel"
 
 #: registry/data/org/openoffice/Office/Embedding.xcu#..Embedding.ObjectNames.Chart.ObjectUIName
-#, fuzzy
 msgid  "%PRODUCTNAME %PRODUCTVERSION Chart"
 msgstr "%PRODUCTNAME %PRODUCTVERSION diagramm"
 
 #: registry/data/org/openoffice/Office/Embedding.xcu#..Embedding.ObjectNames.Draw.ObjectUIName
-#, fuzzy
 msgid  "%PRODUCTNAME %PRODUCTVERSION Drawing"
 msgstr "%PRODUCTNAME %PRODUCTVERSION joonistus"
 
 #: registry/data/org/openoffice/Office/Embedding.xcu#..Embedding.ObjectNames.Impress.ObjectUIName
-#, fuzzy
 msgid  "%PRODUCTNAME %PRODUCTVERSION Presentation"
 msgstr "%PRODUCTNAME %PRODUCTVERSION esitlus"
 
 #: registry/data/org/openoffice/Office/Embedding.xcu#..Embedding.ObjectNames.Math.ObjectUIName
-#, fuzzy
 msgid  "%PRODUCTNAME %PRODUCTVERSION Formula"
 msgstr "%PRODUCTNAME %PRODUCTVERSION valem"
 
 #: registry/data/org/openoffice/Office/Embedding.xcu#..Embedding.ObjectNames.Writer.ObjectUIName
-#, fuzzy
 msgid  "%PRODUCTNAME %PRODUCTVERSION Text"
 msgstr "%PRODUCTNAME %PRODUCTVERSION tekstifail"
 
@@ -242,712 +233,570 @@ msgid  "10"
 msgstr ""
 
 #: registry/data/org/openoffice/Office/Common.xcu#..Common.Menus.New.m0.Title
-#, fuzzy
 msgid  "~Text Document"
 msgstr "Tekstidokument"
 
 #: registry/data/org/openoffice/Office/Common.xcu#..Common.Menus.New.m1.Title
-#, fuzzy
 msgid  "~Spreadsheet"
 msgstr "Arvutustabel"
 
 #: registry/data/org/openoffice/Office/Common.xcu#..Common.Menus.New.m2.Title
-#, fuzzy
 msgid  "~Presentation"
 msgstr "Esitlus"
 
 #: registry/data/org/openoffice/Office/Common.xcu#..Common.Menus.New.m3.Title
-#, fuzzy
 msgid  "~Drawing"
 msgstr "Joonistus"
 
 #: registry/data/org/openoffice/Office/Common.xcu#..Common.Menus.New.m4.Title
-#, fuzzy
 msgid  "Database"
 msgstr "Andmebaas"
 
 #: registry/data/org/openoffice/Office/Common.xcu#..Common.Menus.New.m6.Title
-#, fuzzy
 msgid  "~HTML Document"
 msgstr "HTML-dokument"
 
 #: registry/data/org/openoffice/Office/Common.xcu#..Common.Menus.New.m7.Title
-#, fuzzy
 msgid  "~XML Form Document"
 msgstr "XML vormi dokument"
 
 #: registry/data/org/openoffice/Office/Common.xcu#..Common.Menus.New.m8.Title
-#, fuzzy
 msgid  "M~aster Document"
 msgstr "Põhidokument"
 
 #: registry/data/org/openoffice/Office/Common.xcu#..Common.Menus.New.m10.Title
-#, fuzzy
 msgid  "F~ormula"
 msgstr "Valem"
 
 #: registry/data/org/openoffice/Office/Common.xcu#..Common.Menus.New.m11.Title
-#, fuzzy
 msgid  "~Labels"
 msgstr "Sildid"
 
 #: registry/data/org/openoffice/Office/Common.xcu#..Common.Menus.New.m12.Title
-#, fuzzy
 msgid  "B~usiness Cards"
 msgstr "Visiitkaardid"
 
 #: registry/data/org/openoffice/Office/Common.xcu#..Common.Menus.New.m14.Title
-#, fuzzy
 msgid  "Templates a~nd Documents"
 msgstr "Mallid ja dokumendid"
 
 #: registry/data/org/openoffice/Office/Common.xcu#..Common.Menus.Wizard.m0.Title
-#, fuzzy
 msgid  "~Letter..."
 msgstr "Kiri..."
 
 #: registry/data/org/openoffice/Office/Common.xcu#..Common.Menus.Wizard.m1.Title
-#, fuzzy
 msgid  "~Fax..."
 msgstr "Faks..."
 
 #: registry/data/org/openoffice/Office/Common.xcu#..Common.Menus.Wizard.m2.Title
-#, fuzzy
 msgid  "~Agenda..."
 msgstr "Päevakord..."
 
 #: registry/data/org/openoffice/Office/Common.xcu#..Common.Menus.Wizard.m5.Title
-#, fuzzy
 msgid  "~Presentation..."
 msgstr "Esitlus..."
 
 #: registry/data/org/openoffice/Office/Common.xcu#..Common.Menus.Wizard.m7.Title
-#, fuzzy
 msgid  "~Web Page..."
 msgstr "Veebileht..."
 
 #: registry/data/org/openoffice/Office/Common.xcu#..Common.Menus.Wizard.m11.Title
-#, fuzzy
 msgid  "Document ~Converter..."
 msgstr "Dokumentide teisendaja..."
 
 #: registry/data/org/openoffice/Office/Common.xcu#..Common.Menus.Wizard.m12.Title
-#, fuzzy
 msgid  "~Euro Converter..."
 msgstr "Euro konvertija..."
 
 #: registry/data/org/openoffice/Office/Common.xcu#..Common.Menus.Wizard.m14.Title
-#, fuzzy
 msgid  "Address Data Source..."
 msgstr "Aadressandmete allikas..."
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#..TableWizard.TableWizard.business.Name
-#, fuzzy
 msgid  "Business"
 msgstr "Äri"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#..TableWizard.TableWizard.business.Tables.categories.Name
-#, fuzzy
 msgid  "Categories"
 msgstr "Kategooriad"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#..TableWizard.TableWizard.business.Tables.categories.Fields.categoryID.Name
-#, fuzzy
 msgid  "CategoryID"
 msgstr "LiigiID"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#..TableWizard.TableWizard.business.Tables.categories.Fields.categoryID.ShortName
-#, fuzzy
 msgid  "CategoryID"
 msgstr "LiigiID"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#..TableWizard.TableWizard.business.Tables.categories.Fields.categoryname.Name
-#, fuzzy
 msgid  "CategoryName"
 msgstr "LiigiNimi"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#..TableWizard.TableWizard.business.Tables.categories.Fields.categoryname.ShortName
-#, fuzzy
 msgid  "CategName"
 msgstr "LiigiNimi"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#..TableWizard.TableWizard.business.Tables.products.Name
-#, fuzzy
 msgid  "Products"
 msgstr "Tooted"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#..TableWizard.TableWizard.business.Tables.products.Fields.productID.Name
-#, fuzzy
 msgid  "ProductID"
 msgstr "TooteID"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#..TableWizard.TableWizard.business.Tables.products.Fields.productID.ShortName
-#, fuzzy
 msgid  "ProductID"
 msgstr "TooteID"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#..TableWizard.TableWizard.business.Tables.products.Fields.productname.Name
-#, fuzzy
 msgid  "ProductName"
 msgstr "TooteNimi"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#..TableWizard.TableWizard.business.Tables.products.Fields.productname.ShortName
-#, fuzzy
 msgid  "ProdName"
 msgstr "TooteNimi"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#..TableWizard.TableWizard.business.Tables.products.Fields.productdescription.Name
-#, fuzzy
 msgid  "ProductDescription"
 msgstr "TooteKirjeldus"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#..TableWizard.TableWizard.business.Tables.products.Fields.productdescription.ShortName
-#, fuzzy
 msgid  "ProdDescr"
 msgstr "TooteKirj"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#..TableWizard.TableWizard.business.Tables.products.Fields.categoryID.Name
-#, fuzzy
 msgid  "CategoryID"
 msgstr "LiigiID"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#..TableWizard.TableWizard.business.Tables.products.Fields.categoryID.ShortName
-#, fuzzy
 msgid  "CategoryID"
 msgstr "LiigiID"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#..TableWizard.TableWizard.business.Tables.products.Fields.supplierID.Name
-#, fuzzy
 msgid  "SupplierID"
 msgstr "TarnijaID"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#..TableWizard.TableWizard.business.Tables.products.Fields.supplierID.ShortName
-#, fuzzy
 msgid  "SupplierID"
 msgstr "TarnijaID"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#..TableWizard.TableWizard.business.Tables.products.Fields.serialnumber.Name
-#, fuzzy
 msgid  "Serialnumber"
 msgstr "Seerianumber"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#..TableWizard.TableWizard.business.Tables.products.Fields.serialnumber.ShortName
-#, fuzzy
 msgid  "SerialNo"
 msgstr "SeeriaNr"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#..TableWizard.TableWizard.business.Tables.products.Fields.unitsinstock.Name
-#, fuzzy
 msgid  "UnitsInStock"
 msgstr "YhikutLaos"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#..TableWizard.TableWizard.business.Tables.products.Fields.unitsinstock.ShortName
-#, fuzzy
 msgid  "UnitsStock"
 msgstr "YhikutLaos"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#..TableWizard.TableWizard.business.Tables.products.Fields.unitsonorder.Name
-#, fuzzy
 msgid  "UnitsOnOrder"
 msgstr "YhikutTellimuses"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#..TableWizard.TableWizard.business.Tables.products.Fields.unitsonorder.ShortName
-#, fuzzy
 msgid  "UnitsOrder"
 msgstr "YhikTell"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#..TableWizard.TableWizard.business.Tables.products.Fields.unitprice.Name
-#, fuzzy
 msgid  "UnitPrice"
 msgstr "YhikuHind"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#..TableWizard.TableWizard.business.Tables.products.Fields.unitprice.ShortName
-#, fuzzy
 msgid  "UnitPrice"
 msgstr "YhikuHind"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#..TableWizard.TableWizard.business.Tables.products.Fields.reorderlevel.Name
-#, fuzzy
 msgid  "ReorderLevel"
 msgstr "KriitilineKogus"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#..TableWizard.TableWizard.business.Tables.products.Fields.reorderlevel.ShortName
-#, fuzzy
 msgid  "ReordLevel"
 msgstr "KriitKogus"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#..TableWizard.TableWizard.business.Tables.products.Fields.discontinued.Name
-#, fuzzy
 msgid  "Discontinued"
 msgstr "Lopetatud"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#..TableWizard.TableWizard.business.Tables.products.Fields.discontinued.ShortName
-#, fuzzy
 msgid  "Discontin"
 msgstr "Lopetatud"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#..TableWizard.TableWizard.business.Tables.products.Fields.leadtime.Name
-#, fuzzy
 msgid  "LeadTime"
 msgstr "TarneAeg"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#..TableWizard.TableWizard.business.Tables.products.Fields.leadtime.ShortName
-#, fuzzy
 msgid  "LeadTime"
 msgstr "TarneAeg"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#..TableWizard.TableWizard.business.Tables.suppliers.Name
-#, fuzzy
 msgid  "Suppliers"
 msgstr "Tarnijad"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#..TableWizard.TableWizard.business.Tables.suppliers.Fields.supplierID.Name
-#, fuzzy
 msgid  "SupplierID"
 msgstr "TarnijaID"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#..TableWizard.TableWizard.business.Tables.suppliers.Fields.supplierID.ShortName
-#, fuzzy
 msgid  "SupplierID"
 msgstr "TarnijaID"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#..TableWizard.TableWizard.business.Tables.suppliers.Fields.suppliername.Name
-#, fuzzy
 msgid  "SupplierName"
 msgstr "TarnijaNimi"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#..TableWizard.TableWizard.business.Tables.suppliers.Fields.suppliername.ShortName
-#, fuzzy
 msgid  "SupplName"
 msgstr "TarnNimi"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#..TableWizard.TableWizard.business.Tables.suppliers.Fields.contactname.Name
-#, fuzzy
 msgid  "ContactName"
 msgstr "KontaktNimi"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#..TableWizard.TableWizard.business.Tables.suppliers.Fields.contactname.ShortName
-#, fuzzy
 msgid  "ContctName"
 msgstr "KontNimi"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#..TableWizard.TableWizard.business.Tables.suppliers.Fields.contacttitle.Name
-#, fuzzy
 msgid  "ContactTitle"
 msgstr "KontaktTiitel"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#..TableWizard.TableWizard.business.Tables.suppliers.Fields.contacttitle.ShortName
-#, fuzzy
 msgid  "ContctTitl"
 msgstr "KonTiit"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#..TableWizard.TableWizard.business.Tables.suppliers.Fields.address.Name
-#, fuzzy
 msgid  "Address"
 msgstr "Aadress"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#..TableWizard.TableWizard.business.Tables.suppliers.Fields.address.ShortName
-#, fuzzy
 msgid  "Address"
 msgstr "Aadress"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#..TableWizard.TableWizard.business.Tables.suppliers.Fields.city.Name
-#, fuzzy
 msgid  "City"
 msgstr "Linn"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#..TableWizard.TableWizard.business.Tables.suppliers.Fields.city.ShortName
-#, fuzzy
 msgid  "City"
 msgstr "Linn"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#..TableWizard.TableWizard.business.Tables.suppliers.Fields.postalcode.Name
-#, fuzzy
 msgid  "PostalCode"
 msgstr "Sihtnumber"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#..TableWizard.TableWizard.business.Tables.suppliers.Fields.postalcode.ShortName
-#, fuzzy
 msgid  "PostalCode"
 msgstr "SihtNr"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#..TableWizard.TableWizard.business.Tables.suppliers.Fields.stateorprovince.Name
-#, fuzzy
 msgid  "StateOrProvince"
 msgstr "MaakondRegioon"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#..TableWizard.TableWizard.business.Tables.suppliers.Fields.stateorprovince.ShortName
-#, fuzzy
 msgid  "StateProvi"
 msgstr "MaakReg"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#..TableWizard.TableWizard.business.Tables.suppliers.Fields.countryorregion.Name
-#, fuzzy
 msgid  "CountryOrRegion"
 msgstr "MaaRegioon"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#..TableWizard.TableWizard.business.Tables.suppliers.Fields.countryorregion.ShortName
-#, fuzzy
 msgid  "CountryReg"
 msgstr "MaaReg"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#..TableWizard.TableWizard.business.Tables.suppliers.Fields.phonenumber.Name
-#, fuzzy
 msgid  "PhoneNumber"
 msgstr "TelefoniNumber"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#..TableWizard.TableWizard.business.Tables.suppliers.Fields.phonenumber.ShortName
-#, fuzzy
 msgid  "PhoneNo"
 msgstr "TelefNr"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#..TableWizard.TableWizard.business.Tables.suppliers.Fields.faxnumber.Name
-#, fuzzy
 msgid  "FaxNumber"
 msgstr "FaksiNumber"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#..TableWizard.TableWizard.business.Tables.suppliers.Fields.faxnumber.ShortName
-#, fuzzy
 msgid  "FaxNo"
 msgstr "FaksNr"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#..TableWizard.TableWizard.business.Tables.suppliers.Fields.paymentterms.Name
-#, fuzzy
 msgid  "PaymentTerms"
 msgstr "MakseTahtajad"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#..TableWizard.TableWizard.business.Tables.suppliers.Fields.paymentterms.ShortName
-#, fuzzy
 msgid  "PaymntTerm"
 msgstr "MkTahtaeg"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#..TableWizard.TableWizard.business.Tables.suppliers.Fields.emailaddress.Name
-#, fuzzy
 msgid  "EmailAddress"
 msgstr "EpostiAadress"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#..TableWizard.TableWizard.business.Tables.suppliers.Fields.emailaddress.ShortName
-#, fuzzy
 msgid  "EmailAddr"
 msgstr "EpostAadr"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#..TableWizard.TableWizard.business.Tables.suppliers.Fields.notes.Name
-#, fuzzy
 msgid  "Notes"
 msgstr "Markmed"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#..TableWizard.TableWizard.business.Tables.suppliers.Fields.notes.ShortName
-#, fuzzy
 msgid  "Notes"
 msgstr "Markmed"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#..TableWizard.TableWizard.business.Tables.mailinglist.Name
-#, fuzzy
 msgid  "MailingList"
 msgstr "PostiLoend"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#..TableWizard.TableWizard.business.Tables.mailinglist.Fields.mailinglistID.Name
-#, fuzzy
 msgid  "MailingListID"
 msgstr "PostiLoendiID"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#..TableWizard.TableWizard.business.Tables.mailinglist.Fields.mailinglistID.ShortName
-#, fuzzy
 msgid  "MailingID"
 msgstr "PostiLndID"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#..TableWizard.TableWizard.business.Tables.mailinglist.Fields.prefix.Name
-#, fuzzy
 msgid  "Prefix"
 msgstr "Prefiks"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#..TableWizard.TableWizard.business.Tables.mailinglist.Fields.prefix.ShortName
-#, fuzzy
 msgid  "Prefix"
 msgstr "Prefiks"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#..TableWizard.TableWizard.business.Tables.mailinglist.Fields.firstname.Name
-#, fuzzy
 msgid  "FirstName"
 msgstr "Eesnimi"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#..TableWizard.TableWizard.business.Tables.mailinglist.Fields.firstname.ShortName
-#, fuzzy
 msgid  "FirstName"
 msgstr "Eesnimi"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#..TableWizard.TableWizard.business.Tables.mailinglist.Fields.middlename.Name
-#, fuzzy
 msgid  "MiddleName"
 msgstr "Isanimi"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#..TableWizard.TableWizard.business.Tables.mailinglist.Fields.middlename.ShortName
-#, fuzzy
 msgid  "MiddleName"
 msgstr "Isanimi"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#..TableWizard.TableWizard.business.Tables.mailinglist.Fields.lastlame.Name
-#, fuzzy
 msgid  "LastName"
 msgstr "Perekonnanimi"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#..TableWizard.TableWizard.business.Tables.mailinglist.Fields.lastlame.ShortName
-#, fuzzy
 msgid  "LastName"
 msgstr "PerekNimi"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#..TableWizard.TableWizard.business.Tables.mailinglist.Fields.suffix.Name
-#, fuzzy
 msgid  "Suffix"
 msgstr "Sufiks"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#..TableWizard.TableWizard.business.Tables.mailinglist.Fields.suffix.ShortName
-#, fuzzy
 msgid  "Suffix"
 msgstr "Sufiks"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#..TableWizard.TableWizard.business.Tables.mailinglist.Fields.title.Name
-#, fuzzy
 msgid  "Title"
 msgstr "Tiitel"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#..TableWizard.TableWizard.business.Tables.mailinglist.Fields.title.ShortName
-#, fuzzy
 msgid  "Title"
 msgstr "Tiitel"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#..TableWizard.TableWizard.business.Tables.mailinglist.Fields.organizationname.Name
-#, fuzzy
 msgid  "OrganizationName"
 msgstr "OrganisatsiooniNimi"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#..TableWizard.TableWizard.business.Tables.mailinglist.Fields.organizationname.ShortName
-#, fuzzy
 msgid  "OrgName"
 msgstr "OrgNimi"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#..TableWizard.TableWizard.business.Tables.mailinglist.Fields.address.Name
-#, fuzzy
 msgid  "Address"
 msgstr "Aadress"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#..TableWizard.TableWizard.business.Tables.mailinglist.Fields.address.ShortName
-#, fuzzy
 msgid  "Address"
 msgstr "Aadress"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#..TableWizard.TableWizard.business.Tables.mailinglist.Fields.city.Name
-#, fuzzy
 msgid  "City"
 msgstr "Linn"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#..TableWizard.TableWizard.business.Tables.mailinglist.Fields.city.ShortName
-#, fuzzy
 msgid  "City"
 msgstr "Linn"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#..TableWizard.TableWizard.business.Tables.mailinglist.Fields.postalcode.Name
-#, fuzzy
 msgid  "PostalCode"
 msgstr "Sihtnumber"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#..TableWizard.TableWizard.business.Tables.mailinglist.Fields.postalcode.ShortName
-#, fuzzy
 msgid  "PostalCode"
 msgstr "SihtNr"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#..TableWizard.TableWizard.business.Tables.mailinglist.Fields.stateorprovince.Name
-#, fuzzy
 msgid  "StateOrProvince"
 msgstr "MaakondRegioon"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#..TableWizard.TableWizard.business.Tables.mailinglist.Fields.stateorprovince.ShortName
-#, fuzzy
 msgid  "StateProvi"
 msgstr "MaakReg"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#..TableWizard.TableWizard.business.Tables.mailinglist.Fields.countryorregion.Name
-#, fuzzy
 msgid  "CountryOrRegion"
 msgstr "MaaRegioon"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#..TableWizard.TableWizard.business.Tables.mailinglist.Fields.countryorregion.ShortName
-#, fuzzy
 msgid  "CountryReg"
 msgstr "MaaReg"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#..TableWizard.TableWizard.business.Tables.mailinglist.Fields.phonenumber.Name
-#, fuzzy
 msgid  "PhoneNumber"
 msgstr "Telefoninumber"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#..TableWizard.TableWizard.business.Tables.mailinglist.Fields.phonenumber.ShortName
-#, fuzzy
 msgid  "PhoneNo"
 msgstr "TelefNr"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#..TableWizard.TableWizard.business.Tables.mailinglist.Fields.faxnumber.Name
-#, fuzzy
 msgid  "FaxNumber"
 msgstr "Faksinumber"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#..TableWizard.TableWizard.business.Tables.mailinglist.Fields.faxnumber.ShortName
-#, fuzzy
 msgid  "FaxNo"
 msgstr "FaksNr"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#..TableWizard.TableWizard.business.Tables.mailinglist.Fields.mobilenumber.Name
-#, fuzzy
 msgid  "MobileNumber"
 msgstr "Mobiilinumber"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#..TableWizard.TableWizard.business.Tables.mailinglist.Fields.mobilenumber.ShortName
-#, fuzzy
 msgid  "MobileNo"
 msgstr "MobNr"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#..TableWizard.TableWizard.business.Tables.mailinglist.Fields.emailaddress.Name
-#, fuzzy
 msgid  "EmailAddress"
 msgstr "EpostiAadress"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#..TableWizard.TableWizard.business.Tables.mailinglist.Fields.emailaddress.ShortName
-#, fuzzy
 msgid  "EmailAddr"
 msgstr "EpostAadr"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#..TableWizard.TableWizard.business.Tables.mailinglist.Fields.birthdate.Name
-#, fuzzy
 msgid  "Birthdate"
 msgstr "Synnipaev"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#..TableWizard.TableWizard.business.Tables.mailinglist.Fields.birthdate.ShortName
-#, fuzzy
 msgid  "Birthdate"
 msgstr "Synnipaev"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#..TableWizard.TableWizard.business.Tables.mailinglist.Fields.nationality.Name
-#, fuzzy
 msgid  "Nationality"
 msgstr "Rahvus"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#..TableWizard.TableWizard.business.Tables.mailinglist.Fields.nationality.ShortName
-#, fuzzy
 msgid  "Nationality"
 msgstr "Rahvus"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#..TableWizard.TableWizard.business.Tables.mailinglist.Fields.dateupdated.Name
-#, fuzzy
 msgid  "DateUpdated"
 msgstr "Uuendatud"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#..TableWizard.TableWizard.business.Tables.mailinglist.Fields.dateupdated.ShortName
-#, fuzzy
 msgid  "DateUpdate"
 msgstr "UuendKuup"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#..TableWizard.TableWizard.business.Tables.mailinglist.Fields.datejoined.Name
-#, fuzzy
 msgid  "DateJoined"
 msgstr "LiitumisKuupaev"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#..TableWizard.TableWizard.business.Tables.mailinglist.Fields.datejoined.ShortName
-#, fuzzy
 msgid  "DateJoined"
 msgstr "LiitKuup"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#..TableWizard.TableWizard.business.Tables.mailinglist.Fields.membershipstatus.Name
-#, fuzzy
 msgid  "MembershipStatus"
 msgstr "Liikmelisus"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#..TableWizard.TableWizard.business.Tables.mailinglist.Fields.membershipstatus.ShortName
-#, fuzzy
 msgid  "MemberStat"
 msgstr "Liikmelis"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#..TableWizard.TableWizard.business.Tables.mailinglist.Fields.pledgeamount.Name
-#, fuzzy
 msgid  "PledgeAmount"
 msgstr "TagatiseSumma"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#..TableWizard.TableWizard.business.Tables.mailinglist.Fields.pledgeamount.ShortName
-#, fuzzy
 msgid  "PledgeAmnt"
 msgstr "TagatSum"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#..TableWizard.TableWizard.business.Tables.mailinglist.Fields.pledgepaiddate.Name
-#, fuzzy
 msgid  "PledgePaidDate"
 msgstr "TagatiseMakseKuupaev"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#..TableWizard.TableWizard.business.Tables.mailinglist.Fields.pledgepaiddate.ShortName
-#, fuzzy
 msgid  "PldgPdDate"
 msgstr "TagMkKuup"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#..TableWizard.TableWizard.business.Tables.mailinglist.Fields.duesamount.Name
-#, fuzzy
 msgid  "DuesAmount"
 msgstr "VolaSumma"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#..TableWizard.TableWizard.business.Tables.mailinglist.Fields.duesamount.ShortName
-#, fuzzy
 msgid  "DuesAmount"
 msgstr "VolaSumma"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#..TableWizard.TableWizard.business.Tables.mailinglist.Fields.duespaiddate.Name
-#, fuzzy
 msgid  "DuesPaidDate"
 msgstr "VolaMakseKuupaev"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#..TableWizard.TableWizard.business.Tables.mailinglist.Fields.duespaiddate.ShortName
-#, fuzzy
 msgid  "DuesPdDate"
 msgstr "VlMkKuup"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#..TableWizard.TableWizard.business.Tables.mailinglist.Fields.photo.Name
-#, fuzzy
 msgid  "Photo"
 msgstr "Foto"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#..TableWizard.TableWizard.business.Tables.mailinglist.Fields.photo.ShortName
-#, fuzzy
 msgid  "Photo"
 msgstr "Foto"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#..TableWizard.TableWizard.business.Tables.mailinglist.Fields.notes.Name
-#, fuzzy
 msgid  "Notes"
 msgstr "Markmed"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#..TableWizard.TableWizard.business.Tables.mailinglist.Fields.notes.ShortName
-#, fuzzy
 msgid  "Notes"
 msgstr "Markmed"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#..TableWizard.TableWizard.business.Tables.contacts.Name
-#, fuzzy
 msgid  "Contacts"
 msgstr "Kontaktid"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#..TableWizard.TableWizard.business.Tables.contacts.Fields.contactID.Name
-#, fuzzy
 msgid  "ContactID"
 msgstr "KontaktID"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#..TableWizard.TableWizard.business.Tables.contacts.Fields.contactID.ShortName
-#, fuzzy
 msgid  "ContactID"
 msgstr "KontaktID"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#..TableWizard.TableWizard.business.Tables.contacts.Fields.firstname.Name
-#, fuzzy
 msgid  "FirstName"
 msgstr "Eesnimi"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#..TableWizard.TableWizard.business.Tables.contacts.Fields.firstname.ShortName
-#, fuzzy
 msgid  "FirstName"
 msgstr "Eesnimi"
 
@@ -5617,197 +5466,158 @@ msgid  "Notes"
 msgstr "Markmed"
 
 #: registry/data/org/openoffice/Office/DataAccess.xcu#..DataAccess.DriverSettings.com.sun.star.comp.sdbc.MozabDriver.MozillaPreferences.PabDescription
-#, fuzzy
 msgid  "Personal Address book"
 msgstr "Isiklik aadressiraamat"
 
 #: registry/data/org/openoffice/Office/DataAccess.xcu#..DataAccess.DriverSettings.com.sun.star.comp.sdbc.MozabDriver.MozillaPreferences.HisDescription
-#, fuzzy
 msgid  "Collected Addresses"
 msgstr "Kogutud aadressid"
 
 #: registry/data/org/openoffice/Office/DataAccess.xcu#..DataAccess.DriverSettings.com.sun.star.comp.sdbc.MozabDriver.ColumnAliases.FirstName
-#, fuzzy
 msgid  "First Name"
 msgstr "Eesnimi"
 
 #: registry/data/org/openoffice/Office/DataAccess.xcu#..DataAccess.DriverSettings.com.sun.star.comp.sdbc.MozabDriver.ColumnAliases.LastName
-#, fuzzy
 msgid  "Last Name"
 msgstr "Perekonnanimi"
 
 #: registry/data/org/openoffice/Office/DataAccess.xcu#..DataAccess.DriverSettings.com.sun.star.comp.sdbc.MozabDriver.ColumnAliases.DisplayName
-#, fuzzy
 msgid  "Display Name"
 msgstr "Kuvatav nimi"
 
 #: registry/data/org/openoffice/Office/DataAccess.xcu#..DataAccess.DriverSettings.com.sun.star.comp.sdbc.MozabDriver.ColumnAliases.NickName
-#, fuzzy
 msgid  "Nickname"
 msgstr "Hyydnimi"
 
 #: registry/data/org/openoffice/Office/DataAccess.xcu#..DataAccess.DriverSettings.com.sun.star.comp.sdbc.MozabDriver.ColumnAliases.PrimaryEmail
-#, fuzzy
 msgid  "E-mail"
 msgstr "E-post"
 
 #: registry/data/org/openoffice/Office/DataAccess.xcu#..DataAccess.DriverSettings.com.sun.star.comp.sdbc.MozabDriver.ColumnAliases.SecondEmail
-#, fuzzy
 msgid  "E-mail (2)"
 msgstr "E-post (2)"
 
 #: registry/data/org/openoffice/Office/DataAccess.xcu#..DataAccess.DriverSettings.com.sun.star.comp.sdbc.MozabDriver.ColumnAliases.PreferMailFormat
-#, fuzzy
 msgid  "Mail Format"
 msgstr "Meilivorming"
 
 #: registry/data/org/openoffice/Office/DataAccess.xcu#..DataAccess.DriverSettings.com.sun.star.comp.sdbc.MozabDriver.ColumnAliases.WorkPhone
-#, fuzzy
 msgid  "Phone (Work)"
 msgstr "Telefon (tööl)"
 
 #: registry/data/org/openoffice/Office/DataAccess.xcu#..DataAccess.DriverSettings.com.sun.star.comp.sdbc.MozabDriver.ColumnAliases.HomePhone
-#, fuzzy
 msgid  "Phone (Home)"
 msgstr "Telefon (kodus)"
 
 #: registry/data/org/openoffice/Office/DataAccess.xcu#..DataAccess.DriverSettings.com.sun.star.comp.sdbc.MozabDriver.ColumnAliases.FaxNumber
-#, fuzzy
 msgid  "Fax"
 msgstr "Faks"
 
 #: registry/data/org/openoffice/Office/DataAccess.xcu#..DataAccess.DriverSettings.com.sun.star.comp.sdbc.MozabDriver.ColumnAliases.PagerNumber
-#, fuzzy
 msgid  "Pager"
 msgstr "Peiler"
 
 #: registry/data/org/openoffice/Office/DataAccess.xcu#..DataAccess.DriverSettings.com.sun.star.comp.sdbc.MozabDriver.ColumnAliases.CellularNumber
-#, fuzzy
 msgid  "Mobile"
 msgstr "Mobiil"
 
 #: registry/data/org/openoffice/Office/DataAccess.xcu#..DataAccess.DriverSettings.com.sun.star.comp.sdbc.MozabDriver.ColumnAliases.HomeAddress
-#, fuzzy
 msgid  "Address 1"
 msgstr "Aadress 1"
 
 #: registry/data/org/openoffice/Office/DataAccess.xcu#..DataAccess.DriverSettings.com.sun.star.comp.sdbc.MozabDriver.ColumnAliases.HomeAddress2
-#, fuzzy
 msgid  "Address 2"
 msgstr "Aadress 2"
 
 #: registry/data/org/openoffice/Office/DataAccess.xcu#..DataAccess.DriverSettings.com.sun.star.comp.sdbc.MozabDriver.ColumnAliases.HomeCity
-#, fuzzy
 msgid  "City"
 msgstr "Linn"
 
 #: registry/data/org/openoffice/Office/DataAccess.xcu#..DataAccess.DriverSettings.com.sun.star.comp.sdbc.MozabDriver.ColumnAliases.HomeState
-#, fuzzy
 msgid  "State"
 msgstr "Maakond"
 
 #: registry/data/org/openoffice/Office/DataAccess.xcu#..DataAccess.DriverSettings.com.sun.star.comp.sdbc.MozabDriver.ColumnAliases.HomeZipCode
-#, fuzzy
 msgid  "ZIP/Postal (Home)"
 msgstr "Postiindeks (kodu)"
 
 #: registry/data/org/openoffice/Office/DataAccess.xcu#..DataAccess.DriverSettings.com.sun.star.comp.sdbc.MozabDriver.ColumnAliases.HomeCountry
-#, fuzzy
 msgid  "Country"
 msgstr "Riik"
 
 #: registry/data/org/openoffice/Office/DataAccess.xcu#..DataAccess.DriverSettings.com.sun.star.comp.sdbc.MozabDriver.ColumnAliases.WorkAddress
-#, fuzzy
 msgid  "Work Address"
 msgstr "Tööaadress"
 
 #: registry/data/org/openoffice/Office/DataAccess.xcu#..DataAccess.DriverSettings.com.sun.star.comp.sdbc.MozabDriver.ColumnAliases.WorkAddress2
-#, fuzzy
 msgid  "Work Address 2"
 msgstr "Tööaadress 2"
 
 #: registry/data/org/openoffice/Office/DataAccess.xcu#..DataAccess.DriverSettings.com.sun.star.comp.sdbc.MozabDriver.ColumnAliases.WorkCity
-#, fuzzy
 msgid  "City (Work)"
 msgstr "Linn (töö)"
 
 #: registry/data/org/openoffice/Office/DataAccess.xcu#..DataAccess.DriverSettings.com.sun.star.comp.sdbc.MozabDriver.ColumnAliases.WorkState
-#, fuzzy
 msgid  "State (Work)"
 msgstr "Maakond (töö)"
 
 #: registry/data/org/openoffice/Office/DataAccess.xcu#..DataAccess.DriverSettings.com.sun.star.comp.sdbc.MozabDriver.ColumnAliases.WorkZipCode
-#, fuzzy
 msgid  "Zip/Postal (Work)"
 msgstr "Postiindeks (töö)"
 
 #: registry/data/org/openoffice/Office/DataAccess.xcu#..DataAccess.DriverSettings.com.sun.star.comp.sdbc.MozabDriver.ColumnAliases.WorkCountry
-#, fuzzy
 msgid  "Country (Work)"
 msgstr "Riik (töö)"
 
 #: registry/data/org/openoffice/Office/DataAccess.xcu#..DataAccess.DriverSettings.com.sun.star.comp.sdbc.MozabDriver.ColumnAliases.JobTitle
-#, fuzzy
 msgid  "Job Title"
 msgstr "Ametinimetus"
 
 #: registry/data/org/openoffice/Office/DataAccess.xcu#..DataAccess.DriverSettings.com.sun.star.comp.sdbc.MozabDriver.ColumnAliases.Department
-#, fuzzy
 msgid  "Department"
 msgstr "Osakond"
 
 #: registry/data/org/openoffice/Office/DataAccess.xcu#..DataAccess.DriverSettings.com.sun.star.comp.sdbc.MozabDriver.ColumnAliases.Company
-#, fuzzy
 msgid  "Company"
 msgstr "Ettevõte"
 
 #: registry/data/org/openoffice/Office/DataAccess.xcu#..DataAccess.DriverSettings.com.sun.star.comp.sdbc.MozabDriver.ColumnAliases.WebPage1
-#, fuzzy
 msgid  "Web Page (Work)"
 msgstr "Veebileht (töö)"
 
 #: registry/data/org/openoffice/Office/DataAccess.xcu#..DataAccess.DriverSettings.com.sun.star.comp.sdbc.MozabDriver.ColumnAliases.WebPage2
-#, fuzzy
 msgid  "Web Page (Home)"
 msgstr "Veebileht (kodu)"
 
 #: registry/data/org/openoffice/Office/DataAccess.xcu#..DataAccess.DriverSettings.com.sun.star.comp.sdbc.MozabDriver.ColumnAliases.BirthYear
-#, fuzzy
 msgid  "Birth Year"
 msgstr "Sünniaasta"
 
 #: registry/data/org/openoffice/Office/DataAccess.xcu#..DataAccess.DriverSettings.com.sun.star.comp.sdbc.MozabDriver.ColumnAliases.BirthMonth
-#, fuzzy
 msgid  "Birth Month"
 msgstr "Sünnikuu"
 
 #: registry/data/org/openoffice/Office/DataAccess.xcu#..DataAccess.DriverSettings.com.sun.star.comp.sdbc.MozabDriver.ColumnAliases.BirthDay
-#, fuzzy
 msgid  "Birth Day"
 msgstr "Sünnipäev"
 
 #: registry/data/org/openoffice/Office/DataAccess.xcu#..DataAccess.DriverSettings.com.sun.star.comp.sdbc.MozabDriver.ColumnAliases.Custom1
-#, fuzzy
 msgid  "Custom 1"
 msgstr "Muu 1"
 
 #: registry/data/org/openoffice/Office/DataAccess.xcu#..DataAccess.DriverSettings.com.sun.star.comp.sdbc.MozabDriver.ColumnAliases.Custom2
-#, fuzzy
 msgid  "Custom 2"
 msgstr "Muu 2"
 
 #: registry/data/org/openoffice/Office/DataAccess.xcu#..DataAccess.DriverSettings.com.sun.star.comp.sdbc.MozabDriver.ColumnAliases.Custom3
-#, fuzzy
 msgid  "Custom 3"
 msgstr "Muu 3"
 
 #: registry/data/org/openoffice/Office/DataAccess.xcu#..DataAccess.DriverSettings.com.sun.star.comp.sdbc.MozabDriver.ColumnAliases.Custom4
-#, fuzzy
 msgid  "Custom 4"
 msgstr "Muu 4"
 
 #: registry/data/org/openoffice/Office/DataAccess.xcu#..DataAccess.DriverSettings.com.sun.star.comp.sdbc.MozabDriver.ColumnAliases.Notes
-#, fuzzy
 msgid  "Comments"
 msgstr "Kommentaarid"
 
@@ -6212,32 +6022,26 @@ msgid  "All files"
 msgstr "Kõik failid"
 
 #: registry/data/org/openoffice/Office/UI/BasicIDEWindowState.xcu#..BasicIDEWindowState.UIElements.States.private:resource/toolbar/standardbar.UIName
-#, fuzzy
 msgid  "Standard"
 msgstr "Standard"
 
 #: registry/data/org/openoffice/Office/UI/BasicIDEWindowState.xcu#..BasicIDEWindowState.UIElements.States.private:resource/toolbar/macrobar.UIName
-#, fuzzy
 msgid  "Macro"
 msgstr "Makro"
 
 #: registry/data/org/openoffice/Office/UI/BasicIDEWindowState.xcu#..BasicIDEWindowState.UIElements.States.private:resource/toolbar/dialogbar.UIName
-#, fuzzy
 msgid  "Dialog"
 msgstr "Dialoog"
 
 #: registry/data/org/openoffice/Office/UI/BasicIDEWindowState.xcu#..BasicIDEWindowState.UIElements.States.private:resource/toolbar/translationbar.UIName
-#, fuzzy
 msgid  "Language"
 msgstr "Keel"
 
 #: registry/data/org/openoffice/Office/UI/BasicIDEWindowState.xcu#..BasicIDEWindowState.UIElements.States.private:resource/toolbar/insertcontrolsbar.UIName
-#, fuzzy
 msgid  "Toolbox"
 msgstr "Tööriistapalett"
 
 #: registry/data/org/openoffice/Office/UI/BasicIDEWindowState.xcu#..BasicIDEWindowState.UIElements.States.private:resource/toolbar/fullscreenbar.UIName
-#, fuzzy
 msgid  "Full Screen"
 msgstr "Täisekraan"
 
@@ -12573,27 +12377,22 @@ msgid  "Controls"
 msgstr "Juhtelemendid"
 
 #: registry/data/org/openoffice/Office/UI/BaseWindowState.xcu#..BaseWindowState.UIElements.States.private:resource/toolbar/tableobjectbar.UIName
-#, fuzzy
 msgid  "Table"
 msgstr "Tabel"
 
 #: registry/data/org/openoffice/Office/UI/BaseWindowState.xcu#..BaseWindowState.UIElements.States.private:resource/toolbar/queryobjectbar.UIName
-#, fuzzy
 msgid  "Query"
 msgstr "Päring"
 
 #: registry/data/org/openoffice/Office/UI/BaseWindowState.xcu#..BaseWindowState.UIElements.States.private:resource/toolbar/reportobjectbar.UIName
-#, fuzzy
 msgid  "Report"
 msgstr "Aruanne"
 
 #: registry/data/org/openoffice/Office/UI/BaseWindowState.xcu#..BaseWindowState.UIElements.States.private:resource/toolbar/formobjectbar.UIName
-#, fuzzy
 msgid  "Form"
 msgstr "Vorm"
 
 #: registry/data/org/openoffice/Office/UI/BaseWindowState.xcu#..BaseWindowState.UIElements.States.private:resource/toolbar/toolbar.UIName
-#, fuzzy
 msgid  "Standard"
 msgstr "Standard"
 
@@ -17920,8 +17719,9 @@ msgid  "Flower"
 msgstr "Lill"
 
 #: registry/data/org/openoffice/Office/UI/GenericCommands.xcu#..GenericCommands.UserInterface.Commands..uno:SymbolShapes.forbidden.Label
-msgid  ""Prohibited" Symbol"
-msgstr ""
+#, fuzzy
+msgid  "\"Prohibited\" Symbol"
+msgstr "Märk \"Keelatud\""
 
 #: registry/data/org/openoffice/Office/UI/GenericCommands.xcu#..GenericCommands.UserInterface.Commands..uno:SymbolShapes.heart.Label
 #, fuzzy

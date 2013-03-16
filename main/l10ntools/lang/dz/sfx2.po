@@ -61,17 +61,14 @@ msgid  "%PRODUCTNAME"
 msgstr ""
 
 #: source/appl/app.src#STR_NONAME.String.Text
-#, fuzzy
 msgid  "Untitled"
 msgstr "མགོ་མིང་མ་བཏགསཔ།"
 
 #: source/appl/app.src#STR_CLOSE.String.Text
-#, fuzzy
 msgid  "Close"
 msgstr "ཁ་བསྡམ་"
 
 #: source/appl/app.src#STR_STYLE_FILTER_AUTO.String.Text
-#, fuzzy
 msgid  "Automatic"
 msgstr "རང་བཞིན་གྱི།"
 
@@ -111,8 +108,9 @@ msgid  "Document already open."
 msgstr "ཡིག་ཆ་ཧེ་མ་ལས་རང་ ཁར་ཕྱེ་སྟེ་འདུག"
 
 #: source/appl/app.src#MSG_ERR_NO_WEBBROWSER_FOUND.ErrorBox.Message
+#, fuzzy
 msgid  "%PRODUCTNAME could not find a web browser on your system. Please check your Desktop Preferences or install a web browser (for example, Mozilla) in the default  location requested during the browser installation."
-msgstr ""
+msgstr "ཁྱོད་རའི་ རིམ་ལུགས་ནང་ལུ་ %PRODUCTNAME གིས་ཝེབ་བརའུ་ཟར་འཚོལ་མ་འཐོབ་པས། ཁྱོད་རའི་ཌེཀསི་ཊོབ་ དགའ་གདམ་ཚུ་ ཞིབ་དཔྱད་འབད་ད་ ཡང་ན་   བརའུ་ཟར་བཙུགས་པའི་སྐབས་ སྔོན་སྒྲིག་གནས་ཁོངས་ཞུ་བ་འབད་ཡོདཔ་བཞིན་    ཝེབ་བརའུ་ཟར་བཙུགས་གནང་དང་(དཔེ་འབད་བ་ཅིན་ མོ་ཛིལ་ལ་ཟེར་མི་བཟུམ)།"
 
 #: source/appl/app.src#GID_INTERN.String.Text
 #, fuzzy
@@ -245,8 +243,9 @@ msgid  "Controls"
 msgstr "ཚད་འཛིན་ནི།"
 
 #: source/appl/app.src#MSG_CANT_QUIT.InfoBox.Message
+#, fuzzy
 msgid  "The application cannot be terminated at the moment.\nPlease wait until all print jobs and/or\nOLE actions have finished and close all dialogs."
-msgstr ""
+msgstr "དུས་སྐབས་ཅིག་ གློག་རིམ་འདི་ རྩ་བསྐྲད་གཏང་མི་བཏུབ་པས།  \n དཔར་བསྐྲུན་ལས་གཡོག་ཚུ་དང་/ཡང་ན་\n ཨོ་ཨེལ་ཨི་ བྱ་བ་ཚུ་ མ་རྫོགས་ཚུན་བསྒུག་གནང་ དེ་ལས་ ཌའི་ལོག་ཚུ་ག་ར་ ཁ་བསྡམས་གནང་།"
 
 #: source/appl/app.src#STR_ISMODIFIED.String.Text
 #, fuzzy
@@ -284,8 +283,9 @@ msgid  "Function Bar"
 msgstr "ལས་འགན་ཕྲ་རིང་།"
 
 #: source/appl/app.src#RID_SPECIALCONFIG_ERROR.String.Text
+#, fuzzy
 msgid  "An error has occurred in the special configuration.\nPlease contact your administrator."
-msgstr ""
+msgstr "དམིགས་བསལ་རིམ་སྒྲིག་ནང་ལུ་ འཛོལ་བ་གཅིག་བྱུང་ནུག \n བདག་སྐྱོང་པ་དང་གཅིག་ཁར་ འབྲེལ་བ་འཐབ་གནང་།"
 
 #: source/appl/app.src#STR_QUICKSTART_EXIT.String.Text
 #, fuzzy
@@ -344,12 +344,14 @@ msgid  "DDE link to % for % area % are not available."
 msgstr "ཌི་ཌི་ཨི་ འབྲེལ་ལམ་ ལས་ % for % area % དེ་ཚུ་འཐོབ་མི་ཚུགས་པས།"
 
 #: source/appl/app.src#RID_SECURITY_WARNING_HYPERLINK.WarningBox.Message
-msgid  "This hyperlink is going to open "%s". Do you want to proceed?"
-msgstr ""
+#, fuzzy
+msgid  "This hyperlink is going to open \"%s\". Do you want to proceed?"
+msgstr "ཚད་བརྒལ་འབྲེལ་ལམ་འདི་གིས་ \"%s\" འདི་ཁ་ཕྱེ་ནི་ཨིན་པས།  འཕྲོ་མཐུད་འབད་ནི་ཨིན་ན?"
 
 #: source/appl/app.src#RID_SECURITY_WARNING_NO_HYPERLINKS.WarningBox.Message
+#, fuzzy
 msgid  "For security reasons, the hyperlink cannot be executed.\nThe stated address will not be opened."
-msgstr ""
+msgstr "ཚད་བརྒལ་འབྲེལ་ལམ་འདི་ སྲུང་སྐྱོབ་རྒྱུ་མཙན་ལུ་བརྟེན་ ལག་ལེན་འཐབ་མི་བཏུབ་པས། \n འདི་ཁར་བཀོད་ཡོད་པའི་ ཁ་བྱང་འདི་ཁ་ཕྱེ་མི་བཏུབ་པས།"
 
 #: source/appl/app.src#RID_SECURITY_WARNING_TITLE.String.Text
 #, fuzzy
@@ -357,16 +359,19 @@ msgid  "Security Warning"
 msgstr "སྲུང་སྐྱོབ་ཉེན་བརྡ།"
 
 #: source/appl/app.src#RID_XMLSEC_QUERY_LOSINGSIGNATURE.QueryBox.Message
+#, fuzzy
 msgid  "Saving will remove all existing signatures.\nDo you want to continue saving the document?"
-msgstr ""
+msgstr "སྲུང་བཞག་འབད་ནི་འདི་གིས་ ཡོད་བའིན་པའི་མིང་རྟགས་ཚུ་ཆ་མཉམ་རྩ་བསྐྲད་གཏང་འོང་།\nཁྱོད་ཀྱིས་ཡིག་ཆ་འདི་སྲུང་བཞག་འབད་ནི་འཕྲོ་མཐུད་ནི་ཨིན་ན་?"
 
 #: source/appl/app.src#RID_XMLSEC_QUERY_SAVEBEFORESIGN.QueryBox.Message
+#, fuzzy
 msgid  "The document has to be saved before it can be signed.\nDo you want to save the document?"
-msgstr ""
+msgstr "ཡིག་ཆ་འདི་ མིང་རྟགས་མ་བཀོད་པའི་ཧེ་མ་ སྲུང་བཞག་འབད་དགོསཔ་ཅིག་ཨིན།\n  ཡིག་ཆ་འདི་སྲུང་བཞག་འབད་ནི་ཨིན་ན?"
 
 #: source/appl/app.src#RID_XMLSEC_INFO_WRONGDOCFORMAT.InfoBox.Message
+#, fuzzy
 msgid  "This document must be saved in OpenDocument file format before it can be digitally signed."
-msgstr ""
+msgstr "ཡིག་ཆ་འདི་ཌི་ཇི་ཊཱལ་གྱི་དོག་ལས་ མིང་རྟགས་མ་བཀོད་པའི་ཧེ་མ་ ཁ་ཕྱེ་ཡིག་ཆའི་ ཡིག་སྣོད་རྩ་སྒྲིག་ནང་ལུ་ངེས་པར་ སྲུང་བཞག་དགོསཔ་ཨིན།"
 
 #: source/appl/app.src#RID_XMLSEC_DOCUMENTSIGNED.String.Text
 #, fuzzy
@@ -403,8 +408,9 @@ msgid  "Link graphics"
 msgstr ""
 
 #: source/appl/app.src#STR_ERRUNOEVENTBINDUNG.String.Text
+#, fuzzy
 msgid  "An appropriate component method %1\ncould not be found.\n\nCheck spelling of method name."
-msgstr ""
+msgstr "འོས་ལྡན་ཆ་ཤས་ཐབས་ལམ་ %1 ཅིག་\nའཐོབ་མ་ཚུགས།\n\nཐབས་ལམ་མིང་གི་དོན་ལུ་ཡིག་སྡེབ་ཞིབ་དཔྱད་འབད།"
 
 #: source/appl/app.src#RID_SVXSTR_GRFILTER_OPENERROR.String.Text
 msgid  "Graphics file cannot be opened"
@@ -458,7 +464,7 @@ msgstr "ཐ་སྙད་འཚོལ།(~S)"
 #: source/appl/newhelp.src#TP_HELP_INDEX.PB_OPEN_INDEX.PushButton.Text
 #, fuzzy
 msgid  "~Display"
-msgstr "བཀྲམ་སྟོན་འབད།(~D)"
+msgstr "བཀྲམ་སྟོན།(~D)"
 
 #: source/appl/newhelp.src#TP_HELP_SEARCH.FT_SEARCH.FixedText.Text
 #, fuzzy
@@ -483,7 +489,7 @@ msgstr "མགུ་རྒྱན་དེ་ཚུ་ནང་ རྐྱངམ�
 #: source/appl/newhelp.src#TP_HELP_SEARCH.PB_OPEN_SEARCH.PushButton.Text
 #, fuzzy
 msgid  "~Display"
-msgstr "བཀྲམ་སྟོན།(~D)"
+msgstr "བཀྲམ་སྟོན་འབད།(~D)"
 
 #: source/appl/newhelp.src#TP_HELP_BOOKMARKS.FT_BOOKMARKS.FixedText.Text
 #, fuzzy
@@ -607,11 +613,11 @@ msgstr "%PRODUCTNAME %MODULENAME བཀྲམ་སྟོན་དང་ འག�
 
 #: source/bastyp/fltfnc.src#STR_FILTER_NOT_INSTALLED.String.Text
 msgid  "The selected filter $(FILTER) has not been installed.\nWould you like to do this now?"
-msgstr ""
+msgstr "སེལ་འཐུ་འབད་ཡོད་པའི་ ཚགས་མ་  $(FILTER) འདི་གཞི་འཛུགས་མ་འབད་བར་ ཡོདཔ་ཨིན།\nའ་ནི་འདི་ ད་ལྟོ་འབད་ནི་ཨིན་ན?"
 
 #: source/bastyp/fltfnc.src#STR_FILTER_CONSULT_SERVICE.String.Text
 msgid  "The selected filter $(FILTER) is not included in your edition.\nYou can find information about orders on our homepage."
-msgstr ""
+msgstr "སེལ་འཐུ་འབད་ཡོད་པའི་ཚགས་མ་ $(FILTER) འདི་ ཁྱོད་རའི་དཔར་ཐེངས་གྲངས་སུ་ བཙུགས་ཏེ་མེདཔ་ཨིན།\nཁྱོད་ཀྱིས་ གོ་རིམ་ཚུ་གི་སྐོར་ལས་ བརྡ་དོན་ཚུ་ ང་བཅས་རའི་ ཁྱིམ་གྱི་ཤོག་ལེབ་ ནང་འཚོལ་ཐོབ་ཨིན།"
 
 #: source/dialog/printopt.src#TP_COMMONPRINTOPTIONS.GB_REDUCE.FixedLine.Text
 #, fuzzy
@@ -685,6 +691,31 @@ msgstr "ཧུམ་ཆ།(~l)"
 
 #: source/dialog/printopt.src#TP_COMMONPRINTOPTIONS.LB_REDUCEBITMAPS_RESOLUTION.0.StringList.item
 #, fuzzy
+msgid  "72 DPI"
+msgstr "ཌི་པི་ཨའི་ ༧༢"
+
+#: source/dialog/printopt.src#TP_COMMONPRINTOPTIONS.LB_REDUCEBITMAPS_RESOLUTION.0.StringList.item
+#, fuzzy
+msgid  "96 DPI"
+msgstr "ཌི་པི་ཨའི་ ༩༦"
+
+#: source/dialog/printopt.src#TP_COMMONPRINTOPTIONS.LB_REDUCEBITMAPS_RESOLUTION.0.StringList.item
+#, fuzzy
+msgid  "150 DPI (Fax)"
+msgstr "ཌི་པི་ཨའི་ ༡༥༠ (དཔར་འཕྲིན)"
+
+#: source/dialog/printopt.src#TP_COMMONPRINTOPTIONS.LB_REDUCEBITMAPS_RESOLUTION.0.StringList.item
+#, fuzzy
+msgid  "200 DPI (default)"
+msgstr "ཌི་པི་ཨའི་ ༢༠༠(སྔོན་སྒྲིག)"
+
+#: source/dialog/printopt.src#TP_COMMONPRINTOPTIONS.LB_REDUCEBITMAPS_RESOLUTION.0.StringList.item
+#, fuzzy
+msgid  "300 DPI"
+msgstr "ཌི་པི་ཨའི་ ༣༠༠   "
+
+#: source/dialog/printopt.src#TP_COMMONPRINTOPTIONS.LB_REDUCEBITMAPS_RESOLUTION.0.StringList.item
+#, fuzzy
 msgid  "600 DPI"
 msgstr "ཌི་པི་ཨའི་ ༦༠༠   "
 
@@ -724,8 +755,9 @@ msgid  "Warning"
 msgstr "ཉེན་བརྡ།"
 
 #: source/dialog/printopt.src#RID_WARN_PRINTTRANSPARENCY.FT_PRINTTRANSWARN.FixedText.Text
+#, fuzzy
 msgid  "Your document contains transparent objects.\nThis may lead to longer printing time on certain\nprinters. Should the aspect of transparency\nbe reduced?"
-msgstr ""
+msgstr " དྭངས་གསལ་ཅན་གྱི་དངོས་པོ་ཚུ་ ཁྱོད་ཀྱི་ཡིག་ཆ་ནང་ན་ ཤོམ་ཏེ་ཡོདཔ་ཨིན།\nའ་ནི་འདི་གིས་ དཔར་འཕྲུལ་ལ་ལོ་ཅིག་ནང་ \n དཔར་བསྐྲུན་དུས་ཚོད་རིངམ་ འགོར་ནི་ལུ་འགོ་ཁྲིད་འབད་འོང་།དྭངས་གསལ་ཅན་ \n གྱི་རྣམ་པ་འདི་ མར་ཕབ་འབད་དགོས་པས་ག?"
 
 #: source/dialog/printopt.src#RID_WARN_PRINTTRANSPARENCY.BTN_PRINTTRANS_YES.OKButton.Text
 #, fuzzy
@@ -746,31 +778,6 @@ msgstr "ཆ་མེད་གཏང་།(~C)"
 #, fuzzy
 msgid  "~Do not show warning again"
 msgstr " ད་རུང་ ལོག་སྟེ་ ཉེན་བརྡ་ མ་སྟོན།"
-
-#: source/dialog/printopt.src#TP_COMMONPRINTOPTIONS.LB_REDUCEBITMAPS_RESOLUTION.0.StringList.item
-#, fuzzy
-msgid  "72 DPI"
-msgstr "ཌི་པི་ཨའི་ ༧༢"
-
-#: source/dialog/printopt.src#TP_COMMONPRINTOPTIONS.LB_REDUCEBITMAPS_RESOLUTION.0.StringList.item
-#, fuzzy
-msgid  "96 DPI"
-msgstr "ཌི་པི་ཨའི་ ༩༦"
-
-#: source/dialog/printopt.src#TP_COMMONPRINTOPTIONS.LB_REDUCEBITMAPS_RESOLUTION.0.StringList.item
-#, fuzzy
-msgid  "150 DPI (Fax)"
-msgstr "ཌི་པི་ཨའི་ ༡༥༠ (དཔར་འཕྲིན)"
-
-#: source/dialog/printopt.src#TP_COMMONPRINTOPTIONS.LB_REDUCEBITMAPS_RESOLUTION.0.StringList.item
-#, fuzzy
-msgid  "200 DPI (default)"
-msgstr "ཌི་པི་ཨའི་ ༢༠༠(སྔོན་སྒྲིག)"
-
-#: source/dialog/printopt.src#TP_COMMONPRINTOPTIONS.LB_REDUCEBITMAPS_RESOLUTION.0.StringList.item
-#, fuzzy
-msgid  "300 DPI"
-msgstr "ཌི་པི་ཨའི་ ༣༠༠   "
 
 #: source/dialog/templdlg.src#RID_STYLECATALOG.ModalDialog.Text
 #, fuzzy
@@ -977,127 +984,102 @@ msgid  "Version comment"
 msgstr "ཐོན་རིམ་བསམ་བཀོད།"
 
 #: source/dialog/mgetempl.src#TP_MANAGE_STYLES.FT_NAME.FixedText.Text
-#, fuzzy
 msgid  "~Name"
 msgstr "མིང་།(~N)"
 
 #: source/dialog/mgetempl.src#TP_MANAGE_STYLES.CB_AUTO.CheckBox.Text
-#, fuzzy
 msgid  "~AutoUpdate"
 msgstr "རང་བཞིན་གྱིས་ དུས་མཐུན་བཟོ་བ།(~A)"
 
 #: source/dialog/mgetempl.src#TP_MANAGE_STYLES.FT_NEXT.FixedText.Text
-#, fuzzy
 msgid  "Ne~xt Style"
 msgstr "བཟོ་རྣམ་གཞན་མི།(~x)"
 
 #: source/dialog/mgetempl.src#TP_MANAGE_STYLES.FT_BASE.FixedText.Text
-#, fuzzy
 msgid  "Linked with"
 msgstr "གཅིག་ཁར་འབྲེལ་ཡོདཔ།"
 
 #: source/dialog/mgetempl.src#TP_MANAGE_STYLES.FT_REGION.FixedText.Text
-#, fuzzy
 msgid  "~Category"
 msgstr "དབྱེ་རིམ།(~C)"
 
 #: source/dialog/mgetempl.src#TP_MANAGE_STYLES.GB_DESC.FixedLine.Text
-#, fuzzy
 msgid  "Contains"
 msgstr "ནང་ན་ཡོད་པ།"
 
 #: source/dialog/filedlghelper.src#STR_SFX_FILEDLG_ACTUALVERSION.String.Text
-#, fuzzy
 msgid  "Current version"
 msgstr "ད་ལྟོའི་ཐོན་རིམ།"
 
 #: source/dialog/filedlghelper.src#STR_SFX_EXPLORERFILE_EXPORT.String.Text
-#, fuzzy
 msgid  "Export"
 msgstr "ཕྱིར་འདྲེན།"
 
 #: source/dialog/filedlghelper.src#STR_SFX_EXPLORERFILE_INSERT.String.Text
-#, fuzzy
 msgid  "Insert"
 msgstr "བཙུགས།"
 
 #: source/dialog/filedlghelper.src#STR_SFX_EXPLORERFILE_BUTTONINSERT.String.Text
-#, fuzzy
 msgid  "~Insert"
 msgstr "བཙུགས།(~I)"
 
 #: source/dialog/filedlghelper.src#STR_SFX_IMPORT_ALL.String.Text
-#, fuzzy
 msgid  "<All formats>"
 msgstr "<All formats>"
 
 #: source/dialog/filedlghelper.src#STR_CB_AUTO_EXTENSION.String.Text
-#, fuzzy
 msgid  "~Automatic file name extension"
 msgstr " ཡིག་སྣོད་ཀྱི་ མིང་རང་བཞིན་གྱི་ རྒྱ་བསྐྱེད།"
 
 #: source/dialog/filedlghelper.src#STR_CB_SELECTION.String.Text
-#, fuzzy
 msgid  "~Selection"
 msgstr "སེལ་འཐུ།(~S)"
 
 #: source/dialog/filedlghelper.src#STR_CB_INSERT_AS_LINK.String.Text
-#, fuzzy
 msgid  "~Link"
 msgstr "འབྲེལ་ལམ།(~L)"
 
 #: source/dialog/filedlghelper.src#STR_CB_SHOW_PREVIEW.String.Text
-#, fuzzy
 msgid  "Pr~eview"
 msgstr "སྔོན་ལྟ།(~e)"
 
 #: source/dialog/filedlghelper.src#STR_CB_READONLY.String.Text
-#, fuzzy
 msgid  "~Read-only"
 msgstr "ལྷག་ནི་ཙམ་གཅིག(~R)"
 
 #: source/dialog/filedlghelper.src#STR_CB_PASSWORD.String.Text
-#, fuzzy
 msgid  "Save with ~password"
 msgstr "ཆོག་ཡིག་དང་གཅིག་ཁར་ སྲུང་བཞག་འབད།(~p)"
 
 #: source/dialog/filedlghelper.src#STR_CB_FILTER_OPTIONS.String.Text
-#, fuzzy
 msgid  "Edit ~filter settings"
 msgstr "ཚགས་མ་ སྒྲིག་སྟངས་ཚུ་ ཞུན་དག་འབད།(~f)"
 
 #: source/dialog/filedlghelper.src#STR_PB_PLAY.String.Text
-#, fuzzy
 msgid  "~Play"
 msgstr "གཏང་།(~P)"
 
 #: source/dialog/filedlghelper.src#STR_PB_STOP.String.Text
-#, fuzzy
 msgid  "Sto~p"
 msgstr "བཀག(~p)"
 
 #: source/dialog/filedlghelper.src#STR_PB_OPEN.String.Text
-#, fuzzy
 msgid  "~Open"
 msgstr "ཁ་ཕྱེ་(~O)"
 
 #: source/dialog/filedlghelper.src#STR_PB_SAVE.String.Text
-#, fuzzy
 msgid  "~Save"
 msgstr "སྲུང་བཞག(~S)"
 
 #: source/dialog/filedlghelper.src#STR_LB_IMAGE_TEMPLATE.String.Text
-#, fuzzy
 msgid  "Style:"
 msgstr "བཟོ་རྣམ:"
 
 #: source/dialog/filedlghelper.src#STR_LB_TEMPLATES.String.Text
-#, fuzzy
 msgid  "~Templates:"
 msgstr "ཊེམ་པེལེཊིསི།(~T)"
 
 #: source/dialog/filedlghelper.src#STR_LB_VERSION.String.Text
-#, fuzzy
 msgid  "~Version:"
 msgstr "ཐོན་རིམ།:(~V)"
 
@@ -1124,7 +1106,7 @@ msgstr "གནད་དོན་ མཐུན་སྒྲིག(~M)"
 #: source/dialog/srchdlg.src#RID_DLG_SEARCH.CB_WRAPAROUND.CheckBox.Text
 #, fuzzy
 msgid  "Wrap ~around"
-msgstr "མཐའ་སྐོར་ ལོག་མཚམས།"
+msgstr "མཐའ་སྐོར་ ལོག་མཚམས།(~a)"
 
 #: source/dialog/srchdlg.src#RID_DLG_SEARCH.CB_BACKWARDS.CheckBox.Text
 #, fuzzy
@@ -1152,17 +1134,14 @@ msgid  "Enter Password"
 msgstr "ཆོག་ཡིག་བཙུགས།"
 
 #: source/dialog/passwd.src#DLG_PASSWD.FT_PASSWD_USER.FixedText.Text
-#, fuzzy
 msgid  "~User"
 msgstr "ལག་ལེན་པ།(~U)"
 
 #: source/dialog/passwd.src#DLG_PASSWD.FT_PASSWD_PASSWORD.FixedText.Text
-#, fuzzy
 msgid  "~Password"
 msgstr "ཆོག་ཡིག (~P)"
 
 #: source/dialog/passwd.src#DLG_PASSWD.FT_PASSWD_CONFIRM.FixedText.Text
-#, fuzzy
 msgid  "~Confirm"
 msgstr "ངེས་དཔྱད་འབད།(~C)"
 
@@ -1187,107 +1166,86 @@ msgid  "Password"
 msgstr "ཆིག་ཡིག"
 
 #: source/dialog/dinfdlg.src#STR_SFX_NEWOFFICEDOC.String.Text
-#, fuzzy
 msgid  "%PRODUCTNAME document"
 msgstr "%PRODUCTNAME ཡིག་ཆ་"
 
 #: source/dialog/dinfdlg.src#TP_DOCINFODESC.FT_TITLE.FixedText.Text
-#, fuzzy
 msgid  "~Title"
 msgstr "མགོ་མིང་།(~T)"
 
 #: source/dialog/dinfdlg.src#TP_DOCINFODESC.FT_THEMA.FixedText.Text
-#, fuzzy
 msgid  "~Subject"
 msgstr "དོན་ཚན།(~S)"
 
 #: source/dialog/dinfdlg.src#TP_DOCINFODESC.FT_KEYWORDS.FixedText.Text
-#, fuzzy
 msgid  "~Keywords"
 msgstr "གཙོ་ཚིག་ཚུ།(~K)"
 
 #: source/dialog/dinfdlg.src#TP_DOCINFODESC.FT_COMMENT.FixedText.Text
-#, fuzzy
 msgid  "~Comments"
 msgstr "བསམ་བཀོད་ཚུ།(~C)"
 
 #: source/dialog/dinfdlg.src#TP_DOCINFODOC.FT_FILE_TYP.FixedText.Text
-#, fuzzy
 msgid  "Type:"
 msgstr "ཡིག་དཔར་རྐྱབས།:"
 
 #: source/dialog/dinfdlg.src#TP_DOCINFODOC.CB_FILE_READONLY.CheckBox.Text
-#, fuzzy
 msgid  "~Read-only"
 msgstr "ལྷག་ནི་-ཙམ།(~R)"
 
 #: source/dialog/dinfdlg.src#TP_DOCINFODOC.FT_FILE.FixedText.Text
-#, fuzzy
 msgid  "Location:"
 msgstr "གནས་ཁོངས།:"
 
 #: source/dialog/dinfdlg.src#TP_DOCINFODOC.FT_FILE_SIZE.FixedText.Text
-#, fuzzy
 msgid  "Size:"
 msgstr "ཚད།:"
 
 #: source/dialog/dinfdlg.src#TP_DOCINFODOC.FT_CREATE.FixedText.Text
-#, fuzzy
 msgid  "Created:"
 msgstr "གསར་བསྐྲུན་འབད་ཡོདཔ།:"
 
 #: source/dialog/dinfdlg.src#TP_DOCINFODOC.FT_CHANGE.FixedText.Text
-#, fuzzy
 msgid  "Modified:"
 msgstr "ལེགས་བཅོས་འབད་ཡོདཔ།:"
 
 #: source/dialog/dinfdlg.src#TP_DOCINFODOC.FT_SIGNED.FixedText.Text
-#, fuzzy
 msgid  "Digitally signed:"
 msgstr "ཌི་ཇི་ཊཱལ་གྱི་ ཐོག་ལས་ མིང་རྟགས་བཀོད་པ།:"
 
 #: source/dialog/dinfdlg.src#TP_DOCINFODOC.BTN_SIGNATURE.PushButton.Text
-#, fuzzy
 msgid  "Digital Signature..."
 msgstr "ཌི་ཇི་ཊཱལ་ མིང་རྟགས།..."
 
 #: source/dialog/dinfdlg.src#TP_DOCINFODOC.STR_MULTSIGNED.String.Text
-#, fuzzy
 msgid  "Multiply signed document"
 msgstr "མིང་རྟགས་བཀོད་ཡོད་པའི་ ཡིག་ཆ་ དགུ་མཐའ་རྐྱབས།"
 
 #: source/dialog/dinfdlg.src#TP_DOCINFODOC.FT_PRINT.FixedText.Text
-#, fuzzy
 msgid  "Last printed:"
 msgstr "མཇུག་ལུ་དཔར་བསྐྲུན་འབད་འབདཝ།:"
 
 #: source/dialog/dinfdlg.src#TP_DOCINFODOC.FT_TIMELOG.FixedText.Text
-#, fuzzy
 msgid  "Total editing time:"
 msgstr "ཞུན་དག་འབད་ནི་དུས་ཚོད་ཡོངས་བསྡོམས།:"
 
 #: source/dialog/dinfdlg.src#TP_DOCINFODOC.FT_DOCNO.FixedText.Text
-#, fuzzy
 msgid  "Revision number:"
 msgstr "བསྐྱར་སྦྱོང་ཨང་གྲངས།:"
 
 #: source/dialog/dinfdlg.src#TP_DOCINFODOC.BTN_DELETE.PushButton.Text
-#, fuzzy
 msgid  "Reset"
 msgstr "སླར་སྒྲིག(~e)"
 
 #: source/dialog/dinfdlg.src#TP_DOCINFODOC.CB_USE_USERDATA.CheckBox.Text
-#, fuzzy
 msgid  "~Apply user data"
 msgstr "ལག་ལེན་པའི་ གནད་སྡུད་ འཇུག་སྤྱོད་འབད།(~A)"
 
 #: source/dialog/dinfdlg.src#TP_DOCINFODOC.FT_TEMPL.FixedText.Text
-#, fuzzy
 msgid  "Template:"
 msgstr "ཊེམ་པེལེཊི།:"
 
 #: source/dialog/dinfdlg.src#TP_DOCINFODOC.STR_UNKNOWNSIZE.String.Text
-#, fuzzy
 msgid  "unknown"
 msgstr "མ་ཤེསཔ།"
 
@@ -1296,71 +1254,58 @@ msgid  "File Name"
 msgstr ""
 
 #: source/dialog/dinfdlg.src#TP_DOCINFOUSER.BTN_EDITLABEL.PushButton.Text
-#, fuzzy
 msgid  "~Info fields..."
 msgstr "བརྡ་དོན་ས་སྒོ་ཚུ།...(~I)"
 
 #: source/dialog/dinfdlg.src#TP_DOCINFORELOAD.RB_NOAUTOUPDATE.RadioButton.Text
-#, fuzzy
 msgid  "Do not refresh automatically"
 msgstr "རང་བཞིན་གྱིས་ ཡང་སེལ་མ་འབད།"
 
 #: source/dialog/dinfdlg.src#TP_DOCINFORELOAD.RB_RELOADUPDATE.RadioButton.Text
-#, fuzzy
 msgid  "Refresh this document"
 msgstr "ཡིག་ཆ་འདི་ ཡང་སེལ་འབད།"
 
 #: source/dialog/dinfdlg.src#TP_DOCINFORELOAD.FT_EVERY.FixedText.Text
-#, fuzzy
 msgid  "every"
 msgstr "རེ་རེ།"
 
 #: source/dialog/dinfdlg.src#TP_DOCINFORELOAD.FT_RELOADSECS.FixedText.Text
-#, fuzzy
 msgid  "seconds"
 msgstr "སྐར་ཆ་ཚུ།"
 
 #: source/dialog/dinfdlg.src#TP_DOCINFORELOAD.RB_FORWARDUPDATE.RadioButton.Text
-#, fuzzy
 msgid  "Redirect from this document"
 msgstr "ཡིག་ཆ་འདི་ཁར་ལས་ བསྐྱར་ལོག་གཏང་ནི།"
 
 #: source/dialog/dinfdlg.src#TP_DOCINFORELOAD.FT_AFTER.FixedText.Text
-#, fuzzy
 msgid  "after"
 msgstr "ཤུལ་ལས།"
 
 #: source/dialog/dinfdlg.src#TP_DOCINFORELOAD.FT_FORWARDSECS.FixedText.Text
-#, fuzzy
 msgid  "seconds"
 msgstr "སྐར་ཆ་ཚུ།"
 
 #: source/dialog/dinfdlg.src#TP_DOCINFORELOAD.FT_URL.FixedText.Text
-#, fuzzy
 msgid  "to URL"
 msgstr "ཡུ་ཨར་ཨེལ་ ལུ།"
 
 #: source/dialog/dinfdlg.src#TP_DOCINFORELOAD.FT_FRAME.FixedText.Text
-#, fuzzy
 msgid  "to frame"
 msgstr "གཞི་ཁྲམ་འབད་ནི།"
 
 #: source/dialog/dinfdlg.src#TP_DOCINFORELOAD.STR_FORWARD_ERRMSSG.String.Text
-msgid  "If you select the option "%PLACEHOLDER%", you must enter a URL."
-msgstr ""
+msgid  "If you select the option \"%PLACEHOLDER%\", you must enter a URL."
+msgstr "ཁྱོད་ཀྱིས་ གདམ་ཁ་ \"%PLACEHOLDER%\" འདི་སེལ་འཐུ་འབད་བ་ཅིན་ ཡུ་ཨར་ཨེལ་ ངེས་པར་བཙུགས་དགོས།"
 
 #: source/dialog/dinfdlg.src#TP_CUSTOMPROPERTIES.FT_PROPERTIES.FixedText.Text
-#, fuzzy
 msgid  "~Properties"
 msgstr "རྒྱུ་དངོས་ཚུ།"
 
 #: source/dialog/dinfdlg.src#TP_CUSTOMPROPERTIES.CTRL_PROPERTIES.STR_HEADER_NAME.String.Text
-#, fuzzy
 msgid  "Name"
 msgstr "མིང་ཚུ།"
 
 #: source/dialog/dinfdlg.src#TP_CUSTOMPROPERTIES.CTRL_PROPERTIES.STR_HEADER_TYPE.String.Text
-#, fuzzy
 msgid  "Type"
 msgstr "ཡིག་དཔར་རྐྱབས།:"
 
@@ -1525,7 +1470,6 @@ msgid  " Y: %1 M: %2 D: %3 H: %4 M: %5 S: %6"
 msgstr ""
 
 #: source/dialog/dinfdlg.src#SFX_WIN_PROPERTY_YESNO.RB_PROPERTY_YES.RadioButton.Text
-#, fuzzy
 msgid  "Yes"
 msgstr "ཨིན།(~Y)"
 
@@ -1542,17 +1486,14 @@ msgid  "The value entered does not match the specified type.\nThe value will be 
 msgstr ""
 
 #: source/dialog/dinfdlg.src#SID_DOCINFO.TabDialog.Text
-#, fuzzy
 msgid  "Properties of "
 msgstr "གི་ རྒྱུ་དངོས་ཚུ།"
 
 #: source/dialog/dinfdlg.src#SID_DOCINFO.1.TP_DOCINFODOC.PageItem.Text
-#, fuzzy
 msgid  "General"
 msgstr "ཡོངས་ཁྱབ།"
 
 #: source/dialog/dinfdlg.src#SID_DOCINFO.1.TP_DOCINFODESC.PageItem.Text
-#, fuzzy
 msgid  "Description"
 msgstr "འགྲེལ་བཤད།"
 
@@ -1561,7 +1502,6 @@ msgid  "Custom Properties"
 msgstr ""
 
 #: source/dialog/dinfdlg.src#SID_DOCINFO.1.TP_DOCINFORELOAD.PageItem.Text
-#, fuzzy
 msgid  "Internet"
 msgstr "ཨིན་ཊར་ནེཊི།"
 
@@ -1602,7 +1542,6 @@ msgid  "Min~utes"
 msgstr ""
 
 #: source/dialog/dinfdlg.src#RID_EDIT_DURATIONS.FT_SECOND.FixedText.Text
-#, fuzzy
 msgid  "~Seconds"
 msgstr "སྐར་ཆ་ཚུ།"
 
@@ -1611,27 +1550,22 @@ msgid  "Millise~conds"
 msgstr ""
 
 #: source/dialog/dinfedt.src#DLG_DOCINFO_EDT.ModalDialog.Text
-#, fuzzy
 msgid  "Edit Field Names"
 msgstr "ས་སྒོའི་མིང་ཚུ་ ཞུན་དག་འབད།"
 
 #: source/dialog/dinfedt.src#DLG_DOCINFO_EDT.FL_INFO.FixedLine.Text
-#, fuzzy
 msgid  "Names"
 msgstr "མིང་ཚུ།"
 
 #: source/dialog/newstyle.src#DLG_NEW_STYLE_BY_EXAMPLE.ModalDialog.Text
-#, fuzzy
 msgid  "Create Style"
 msgstr "བཟོ་རྣམ་གསར་བསྐྲུན་འབད།"
 
 #: source/dialog/newstyle.src#DLG_NEW_STYLE_BY_EXAMPLE.FL_COL.FixedLine.Text
-#, fuzzy
 msgid  "Style name"
 msgstr "བཟོ་རྣམ་གི་མིང་།"
 
 #: source/dialog/newstyle.src#DLG_NEW_STYLE_BY_EXAMPLE.MSG_OVERWRITE.QueryBox.Message
-#, fuzzy
 msgid  "Style already exists. Overwrite?"
 msgstr "བཟོ་རྣམ་ཧེ་མ་ལས་རང་ གནས་ཡོད། ཚབ་སྲུང་འབད་ག?"
 
@@ -1641,8 +1575,9 @@ msgid  "Record Macro"
 msgstr "སྒྲ་བཟུང་ མེཀ་ཀོརོ།"
 
 #: source/dialog/recfloat.src#STR_MACRO_LOSS.String.Text
+#, fuzzy
 msgid  "Do you really want to cancel the recording? Any steps recorded up to this point will be lost."
-msgstr ""
+msgstr "ཁྱོད་ ཐད་རེ་འབའ་རེ་ སྒྲ་བཟུང་འདི་ ཆ་མེད་གཏང་ནི་ཨིན་ན? ད་ལྟོ་ཚུན་ཚོད་ སྒྲ་བཟུང་འབད་ཡོད་པའི་ རིམ་པ་ཚུ་ བརླག་སྟོར་ཞུགས་འོང་།"
 
 #: source/dialog/recfloat.src#STR_CANCEL_RECORDING.String.Text
 #, fuzzy
@@ -1651,68 +1586,57 @@ msgstr "སྒྲ་བཟུང་ ཆ་མེད་གཏང་།"
 
 #: source/dialog/mailwindow.src#RID_ERRBOX_MAIL_CONFIG.ErrorBox.MESSAGE
 msgid  "%PRODUCTNAME was unable to find a working e-mail configuration. Please save this document locally instead and attach it from within your e-mail client."
-msgstr ""
+msgstr "%PRODUCTNAME གིས་ ལཱ་འབད་ཡོད་པའི་གློག་འཕྲིན་ རིམ་སྒྲིག་གཅིག་ འཚོལ་མ་ཚུགས་པས། ཡིག་ཆ་འདི་ ཉེ་གནས་ ལུ་སྲུང་བཞག་ འབད་གནང་ཞིནམ་ལས་ གློག་འཕྲིན་ཞབས་ཏོག་སྤྱོད་མི་ནང་འཁོད་ནང་མཉམ་སྦྲགས་འབད་གནང་།"
 
 #: source/dialog/dialog.src#STR_RESET.String.Text
-#, fuzzy
 msgid  "~Reset"
 msgstr "སླར་སྒྲིག(~R)"
 
 #: source/dialog/dialog.src#STR_APPLY.String.Text
-#, fuzzy
 msgid  "Apply"
 msgstr "འཇུག་སྤྱོད་འབད།"
 
 #: source/dialog/dialog.src#STR_TABPAGE_MANAGESTYLES.String.Text
-#, fuzzy
 msgid  "Organizer"
 msgstr "འགོ་འདྲེན་པ།"
 
 #: source/dialog/dialog.src#MSG_TABPAGE_INVALIDNAME.InfoBox.Message
-#, fuzzy
 msgid  "This name is already in use."
 msgstr "འ་ནི་མིང་འདི་ ཧེ་མ་ལས་རང་ལག་ལེན་ འཐབ་སྟེ་ཡོད།"
 
 #: source/dialog/dialog.src#MSG_TABPAGE_INVALIDSTYLE.InfoBox.Message
-#, fuzzy
 msgid  "This Style does not exist."
 msgstr "བཟོ་རྣམ་འདི་ གནས་ཏེ་མེད།"
 
 #: source/dialog/dialog.src#MSG_TABPAGE_INVALIDPARENT.InfoBox.Message
 msgid  "This Style cannot be used as a base Style,\nbecause it would result in a recursive reference."
-msgstr ""
+msgstr "མཇུག་ལུ་གྲུབ་འབྲས་འདི་ སླར་འབྱུང་གཞི་བསྟུན་ལུ་ཐུག་ནི་ཨིནམ་ལས་བརྟེན་ འ་ནི་ བཟོ་རྣམ་འདི་ གཞི་རྩའི་བཟོ་རྣམ་འབད་ལག་ལེན་འཐབ་མི་བཏུབ་པས།"
 
 #: source/dialog/dialog.src#MSG_POOL_STYLE_NAME.InfoBox.Message
 msgid  "Name already exists as a default Style.\nPlease choose another name."
-msgstr ""
+msgstr "མིང་འདི་ཧེ་མ་ལས་རང་ སྔོན་སྒྲིག་བཟོ་རྣམ་ནང་ གནས་ཏེ་ཡོད།\n མིང་གཞན་གཅིག་ གདམ་ཁ་བརྐྱབ་གནང་།"
 
 #: source/dialog/dialog.src#STR_DELETE_STYLE.String.Text
-#, fuzzy
 msgid  "Do you really want to delete Style $1?"
 msgstr "བཟོ་རྣམ་$1 འབད་མི་འདི་ ཐད་རི་འབའ་རི་ བཏོན་གཏང་ནི་ཨིན་ན?"
 
 #: source/dialog/dialog.src#STR_DELETE_STYLE_USED.String.Text
-#, fuzzy
 msgid  "You are deleting an applied Style!\n"
 msgstr "ཁྱོད་ཀྱིས་ འཇུག་སྤྱོད་འབད་ཡོད་པའི་ བཟོ་རྣམ་གཅིག་བཏོན་གཏང་དོ!\n"
 
 #: source/dialog/dialog.src#MN_CONTEXT_TEMPLDLG.ID_NEW.MenuItem.Text
-#, fuzzy
 msgid  "New..."
 msgstr "གསརཔ..."
 
 #: source/dialog/dialog.src#MN_CONTEXT_TEMPLDLG.ID_EDIT.MenuItem.Text
-#, fuzzy
 msgid  "Modify..."
 msgstr "ལེགས་བཅོས..."
 
 #: source/dialog/dialog.src#MN_CONTEXT_TEMPLDLG.ID_DELETE.MenuItem.Text
-#, fuzzy
 msgid  "Delete..."
 msgstr "བཏོན་གཏང་..."
 
 #: source/dialog/dialog.src#SID_NAVIGATOR.String.Text
-#, fuzzy
 msgid  "Navigator"
 msgstr "འགྲུལ་བསྐྱོདཔ།"
 
@@ -1721,7 +1645,6 @@ msgid  "Task Pane"
 msgstr ""
 
 #: source/dialog/dialog.src#MSG_ERROR_WRONG_CONFIRM.ErrorBox.Message
-#, fuzzy
 msgid  "Faulty password confirmation"
 msgstr "སྐྱོན་ཅན་ཆོག་ཡིག་ངེས་དཔྱད།"
 
@@ -1747,7 +1670,7 @@ msgstr ""
 
 #: source/dialog/alienwarn.src#RID_DLG_ALIEN_WARNING.FT_INFOTEXT.FixedText.Text
 msgid  "This document may contain formatting or content that cannot be saved in the %FORMATNAME file format. Do you want to save the document in this format anyway?\n\nUse the latest ODF file format and be sure all formatting and content is saved correctly."
-msgstr ""
+msgstr "ཡིག་ཆ་འདི་ནང་རྩ་སྒྲིག་འབད་ནི་ཡོདཔ་འོང་ ཡང་ན་ %FORMATNAME  ཡིག་སྣོད་ རྩ་སྒྲིག་ནང་ལུ་སྲུང་མི་བཏུབ་པའི་ནང་དོན་ཚུ་ཡོདཔ་འོང་།ག་དེ་འབད་རུང་ཁྱོད་ཀྱིས་ཡིག་ཆ་འདི་ སྲུང་བཞག་འབད་ནི་ཨིན་ན?\n\n- %FORMATNAME ཡིག་སྣོད་ རྩ་སྒྲིག་འདི་སྲུང་བཞག་ནི་དོན་ལུ་'Yes' ཨེབ་གཏང་།\n- 'No' འདི་མཐའ་མཇུག་གི་ཁ་ཕྱེ་ཡིག་ཆའི་ རྩ་སྒྲིག་འདི་ལག་ལེན་འཐབ་ད་ཨེབ་གཏང་ནི་དང་ རྩ་སྒྲིག་འབད་ནི་ཡོད་མི་ཚུ་དང་ ནང་དོན་ཚུ་ག་ར་ངེས་བདེན་སྦེ་སྲུང་བཞག་སྟེ་ཡོདཔ་ངེས་ཏིག་འབད་དགོས།"
 
 #: source/dialog/alienwarn.src#RID_DLG_ALIEN_WARNING.PB_NO.OKButton.Text
 msgid  "~Keep Current Format"
@@ -1758,7 +1681,6 @@ msgid  "~Save in ODF Format"
 msgstr ""
 
 #: source/dialog/alienwarn.src#RID_DLG_ALIEN_WARNING.PB_MOREINFO.HelpButton.Text
-#, fuzzy
 msgid  "~More Information..."
 msgstr "བརྡ་དོན་ཧེང་བཀལ།...(~M)"
 
@@ -1767,520 +1689,436 @@ msgid  "~Ask when not saving in ODF format"
 msgstr ""
 
 #: source/doc/doctempl.src#TEMPLATE_LONG_NAMES_ARY.item1.ItemList.item
-#, fuzzy
 msgid  "My Templates"
 msgstr "ངི་གི་ ཊེམ་པེལེཊིསི།"
 
 #: source/doc/doctempl.src#TEMPLATE_LONG_NAMES_ARY.item2.ItemList.item
-#, fuzzy
 msgid  "Business Correspondence"
 msgstr "ཚོང་འབྲེལ་གྱི་ ཡིག་འགྲུལ།"
 
 #: source/doc/doctempl.src#TEMPLATE_LONG_NAMES_ARY.item3.ItemList.item
-#, fuzzy
 msgid  "Other Business Documents"
 msgstr "ཚོང་འབྲེལ་གྱི་ ཡིག་ཆ་གཞན་ཚུ།"
 
 #: source/doc/doctempl.src#TEMPLATE_LONG_NAMES_ARY.item4.ItemList.item
-#, fuzzy
 msgid  "Personal Correspondence and Documents"
 msgstr "རང་དོན་ཡིག་འགྲུལ་དང་ ཡིག་ཆ་ཚུ།"
 
 #: source/doc/doctempl.src#TEMPLATE_LONG_NAMES_ARY.item5.ItemList.item
-#, fuzzy
 msgid  "Forms and Contracts"
 msgstr "འབྲི་ཤོག་ཚུ་དང་ ཁག་འབག་ཚུ།"
 
 #: source/doc/doctempl.src#TEMPLATE_LONG_NAMES_ARY.item6.ItemList.item
-#, fuzzy
 msgid  "Finances"
 msgstr "དངུལ་རྩིས་ཚུ།"
 
 #: source/doc/doctempl.src#TEMPLATE_LONG_NAMES_ARY.item7.ItemList.item
-#, fuzzy
 msgid  "Education"
 msgstr "ཤེས་རིག"
 
 #: source/doc/doctempl.src#TEMPLATE_LONG_NAMES_ARY.item8.ItemList.item
-#, fuzzy
 msgid  "Presentation Backgrounds"
 msgstr "གསལ་སྟོན་རྒྱབ་གཞི་ཚུ།"
 
 #: source/doc/doctempl.src#TEMPLATE_LONG_NAMES_ARY.item9.ItemList.item
-#, fuzzy
 msgid  "Presentations"
 msgstr "གསལ་སྟོན་ཚུ།"
 
 #: source/doc/doctempl.src#TEMPLATE_LONG_NAMES_ARY.item10.ItemList.item
-#, fuzzy
 msgid  "Miscellaneous"
 msgstr "སྣ་ཚོགས།"
 
 #: source/doc/doctempl.src#RID_CNT_STR_WAITING.String.Text
 msgid  "The templates are being initialized for first-time usage."
-msgstr ""
+msgstr "ཊེམ་པེལེཊིསི་ དེ་ཚུ་ འགོ་དང་པ་ ལག་ལེན་འཐབ་ནི་དོན་ལུ་ གཞི་བཙུགས་འབད་དེ་ཡོད།"
 
 #: source/doc/doctdlg.src#DLG_DOC_TEMPLATE.ModalDialog.Text
-#, fuzzy
 msgid  "Templates"
 msgstr "ཊེམ་པེལེཊིསི།"
 
 #: source/doc/doctdlg.src#DLG_DOC_TEMPLATE.FL_EDIT.FixedLine.Text
-#, fuzzy
 msgid  "New template"
 msgstr "ཊེམ་པེལེཊི་ གསརཔ།"
 
 #: source/doc/doctdlg.src#DLG_DOC_TEMPLATE.FL_STYLESHEETS.FixedLine.Text
-#, fuzzy
 msgid  "Templates"
 msgstr "ཊེམ་པེལེཊིསི།"
 
 #: source/doc/doctdlg.src#DLG_DOC_TEMPLATE.FT_SECTION.FixedText.Text
-#, fuzzy
 msgid  "~Categories"
 msgstr "དབྱེ་རིམ་ཚུ།(~C)"
 
 #: source/doc/doctdlg.src#DLG_DOC_TEMPLATE.FT_STYLESHEETS.FixedText.Text
-#, fuzzy
 msgid  "~Templates"
 msgstr "ཊེམ་པེལེཊིསི།(~T)"
 
 #: source/doc/doctdlg.src#DLG_DOC_TEMPLATE.BT_EDIT.PushButton.Text
-#, fuzzy
 msgid  "~Edit"
 msgstr "ཞུན་དག(~E)"
 
 #: source/doc/doctdlg.src#DLG_DOC_TEMPLATE.BT_ORGANIZE.PushButton.Text
-#, fuzzy
 msgid  "~Organizer..."
 msgstr "འགོ་འདྲེན་པ།...(~O)"
 
 #: source/doc/doc.src#MSG_CONFIRM_FILTER.QueryBox.Message
 msgid  "Saving in external formats may have caused\n information loss. Do you still want to close?"
-msgstr ""
+msgstr "ཕྱིའི་ རྩ་སྒྲིག་ཚུ་ནང་ སྲུང་བཞག་འབད་ནི་འདི་གི་ བརྡ་དོན་བརླག་སྟོར་ཚུ་འབྱུང་བྱུངམ་འོང་།\nཁྱོད་ཀྱིས་ ད་ལྟོ་ཡང་ ཁ་བསྡམས་ནི་ཨིན་ན?"
 
 #: source/doc/doc.src#MSG_CONFIRM_OVERWRITE_TEMPLATE.QueryBox.Message
 msgid  "Name already in use.\nDo you want to overwrite document template?"
-msgstr ""
+msgstr "མིང་འདི་ཧེ་མ་ལས་རང་ ལག་ལེན་འཐབ་སྟེ་འདུག\nཡིག་ཆའི་ ཊེམ་པེལེཊི་ འདི་ཚབ་སྲུང་འབད་ནི་ཨིན་ན?"
 
 #: source/doc/doc.src#STR_DELETE_REGION.String.Text
-msgid  "Are you sure you want to delete the region "$1"?"
-msgstr ""
+msgid  "Are you sure you want to delete the region \"$1\"?"
+msgstr "ལུང་ཕྱོགས་ \"$1\"ཁྱོད་ཀྱིས་ བཏོན་གཏང་ནི་འདི་ངེས་ཏིག་ཨིན་ན?"
 
 #: source/doc/doc.src#STR_DELETE_TEMPLATE.String.Text
-msgid  "Are you sure you want to delete the entry "$1"?"
-msgstr ""
+msgid  "Are you sure you want to delete the entry \"$1\"?"
+msgstr "ཁྱོད་ཀྱིས་ \"$1\" ཐོ་བཀོད་བཏོན་གཏང་ནི་འདི་ངེས་ཏིག་ཨིན་ན?"
 
 #: source/doc/doc.src#MSG_REGION_NOTEMPTY.QueryBox.Message
 msgid  "The category is not empty.\nDelete anyway?"
-msgstr ""
+msgstr "དབྱེ་རིམ་འདི་སྟོང་པ་མིན་འདུག \nགང་རུང་སྦེ་ བཏོན་གཏང་ནི་ཨིན་ན?"
 
 #: source/doc/doc.src#STR_QUERY_SAVE_DOCUMENT.String.Text
-msgid  "The document "$(DOC)" has been modified.\nDo you want to save your changes?"
-msgstr ""
+msgid  "The document \"$(DOC)\" has been modified.\nDo you want to save your changes?"
+msgstr "ཡིག་ཆ་  \"$(DOC)\" འདི་ལེགས་བཅོས་འབད་དེ་ཡོདཔ་ཨིན།\nཁྱོད་ཀྱིས་ བསྒྱུར་བཅོས་ཚུ་ སྲུངས་ནི་ཨིན་ན?"
 
 #: source/doc/doc.src#STR_STYLES.String.Text
-#, fuzzy
 msgid  "Styles"
 msgstr "བཟོ་རྣམ་ཚུ།"
 
 #: source/doc/doc.src#STR_MACROS.String.Text
-#, fuzzy
 msgid  "Macros"
 msgstr "མེ་ཀོརོསི།"
 
 #: source/doc/doc.src#STR_CONFIG.String.Text
-#, fuzzy
 msgid  "Configuration"
 msgstr "རིམ་སྒྲིག"
 
 #: source/doc/doc.src#STR_PRINT_STYLES_HEADER.String.Text
-#, fuzzy
 msgid  "Styles in "
 msgstr "ནང་ན་ བཟོ་རྣམ་ཚུ།"
 
 #: source/doc/doc.src#STR_PRINT_STYLES.String.Text
-#, fuzzy
 msgid  "Printing Styles"
 msgstr "དཔར་འཕྲུལ་གྱི་ བཟོ་རྣམ་ཚུ།"
 
 #: source/doc/doc.src#MSG_PRINT_ERROR.ErrorBox.Message
-#, fuzzy
 msgid  "The print job could not be started."
 msgstr "དཔར་བསྐྲུན་གྱི་ལཱ་འདི་ འགོ་བཙུགས་མི་བཏུབ་པས།"
 
 #: source/doc/doc.src#STR_BACKUP_COPY.String.Text
-#, fuzzy
 msgid  "Copy"
 msgstr "འདྲ་བཤུས།"
 
 #: source/doc/doc.src#MSG_CANT_OPEN_TEMPLATE.InfoBox.Message
-#, fuzzy
 msgid  "The template could not be opened."
 msgstr "ཊེམ་པེལེཊི་ འདི་ ཁ་ཕྱེ་མི་བཏུབ་པས།"
 
 #: source/doc/doc.src#MSG_VIEW_OPEN_CANT_SAVE.InfoBox.Message
-#, fuzzy
 msgid  "Document already open for editing."
 msgstr "ཡིག་ཆ་འདི་ ཞུན་དག་དོན་ལུ་ ཧེ་མ་ལས་རང་ཁ་ཕྱེ་སྟེ་ཡོད།"
 
 #: source/doc/doc.src#STR_ERROR_SAVE.String.Text
-#, fuzzy
 msgid  "Error recording document "
 msgstr "ཡིག་ཆའི་ སྒྲ་བཟུང་ནི་ལུ་ འཛོལ་བ།"
 
 #: source/doc/doc.src#STR_TEMPLATE_FILTER.String.Text
-#, fuzzy
 msgid  "Templates"
 msgstr "ཊེམ་པེལེཊིསི།"
 
 #: source/doc/doc.src#STR_ERROR_COPY_TEMPLATE.String.Text
-msgid  "Error copying template "$1". \nA template with this name may already exist."
-msgstr ""
+msgid  "Error copying template \"$1\". \nA template with this name may already exist."
+msgstr "ཊེམ་པེལེཊི་ \"$1\"འདྲ་བཤུས་རྐྱབས་ནི་འཛོལ་བ་ \nམིང་འདི་དང་གཅིག་ཁར་འབད་མི་ཊེམ་པེལེཊི་ཅིག་ཧེ་མ་ལས་ཡོདཔ་འོང་།"
 
 #: source/doc/doc.src#STR_ERROR_DELETE_TEMPLATE.String.Text
-msgid  "The template "$1" can not be deleted."
-msgstr ""
+msgid  "The template \"$1\" can not be deleted."
+msgstr "ཊེམ་པེལེཊི་  \"$1\" འདི་ བཏོན་གཏང་མི་བཏུབ་པས།"
 
 #: source/doc/doc.src#STR_ERROR_MOVE_TEMPLATE.String.Text
-msgid  "Error moving template "$1"."
-msgstr ""
+msgid  "Error moving template \"$1\"."
+msgstr "ཊེམ་པེལེཊི་ \"$1\"  སྤོ་ནི་ལུ་འཛོལ་བ།"
 
 #: source/doc/doc.src#MSG_ERROR_RESCAN.ErrorBox.Message
-#, fuzzy
 msgid  "The update could not be saved."
 msgstr "དུས་མཐུན་བཟོ་ནི་འདི་ སྲུང་བཞག་འབད་མི་བཏུབ་པས།"
 
 #: source/doc/doc.src#STR_ERROR_SAVE_TEMPLATE.String.Text
-#, fuzzy
 msgid  "Error saving template "
 msgstr "ཊེམ་པེལེཊི་ སྲུང་བཞག་འབད་ འཛོལ་བ།"
 
 #: source/doc/doc.src#MSG_ERROR_RENAME_TEMPLATE.ErrorBox.Message
-#, fuzzy
 msgid  "Error renaming template."
 msgstr "ཊེམ་པེལེཊི་ བསྐྱར་མིང་བཏགས་ནི་ འཛོལ་བ།"
 
 #: source/doc/doc.src#MSG_ERROR_RENAME_TEMPLATE_REGION.ErrorBox.Message
-#, fuzzy
 msgid  "Error renaming template category."
 msgstr "ཊེམ་པེལེཊི་ དབྱེ་རིམ་གྱི་ བསྐྱར་མིང་བཏགས་ནི་ འཛོལ་བ།"
 
 #: source/doc/doc.src#MSG_ERROR_EMPTY_NAME.ErrorBox.Message
-#, fuzzy
 msgid  "Please specify a name."
 msgstr "མིང་གཅིག་ གསལ་བཀོད་འབད་གནང་།"
 
 #: source/doc/doc.src#MSG_ERROR_UNIQ_NAME.ErrorBox.Message
 msgid  "Please specify a unique name.\nEntries must not be case specific."
-msgstr ""
+msgstr "མཐུན་མོང་མ་ཡིན་པའི་མིང་གཅིག་ གསལ་བཀོད་འབད་གནང་།"
 
 #: source/doc/doc.src#STR_QUERY_DEFAULT_TEMPLATE.String.Text
-msgid  "Should the template "$(TEXT)" become the default template?"
-msgstr ""
+msgid  "Should the template \"$(TEXT)\" become the default template?"
+msgstr "ཊེམ་པེལེཊི་  \"$(TEXT)\" འདི་ སྔོན་སྒྲིག་ ཊེམ་པེལེཊི་ལུ་ འགྱུར་དགོས་པས་ག?"
 
 #: source/doc/doc.src#MSG_QUERY_RESET_DEFAULT_TEMPLATE.QueryBox.Message
-#, fuzzy
 msgid  "Do you want to reset the default template?"
 msgstr "ཁྱོད་ཀྱིས་ སྔོན་སྒྲིག་ཊེམ་པེལེཊི་ འདི་ སླར་སྒྲིག་འབད་ནི་ཨིན་ན?"
 
 #: source/doc/doc.src#MSG_TEMPLATE_DIR_NOT_EXIST.InfoBox.Message
 msgid  "Template directory\n$(DIR)\ndoes not exist."
-msgstr ""
+msgstr "ཊེམ་པེལེཊི་ སྣོད་ཐོ་ \n$(DIR)\n མི་གནས་པས།"
 
 #: source/doc/doc.src#MSG_DOCINFO_CANTREAD.InfoBox.Message
-#, fuzzy
 msgid  "Document info cannot be read."
 msgstr "ཡིག་ཆའི་ བརྡ་དོན་འདི་ ལྷག་མི་བཏུབ་པས།"
 
 #: source/doc/doc.src#STR_ERROR_NOSTORAGE.String.Text
-#, fuzzy
 msgid  "The selected file has an incorrect format."
 msgstr "སེལ་འཐུ་འབད་ཡོད་པའི་ ཡིག་སྣོད་ནང་ལུ་ བདེན་མེད་ རྩ་སྒྲིག་གཅིག་ འདུག"
 
 #: source/doc/doc.src#STR_QUERY_MUSTOWNFORMAT.String.Text
 msgid  "Documents cannot be saved in $(FORMAT) format. Do you\nwant to save your changes using the $(OWNFORMAT) format?"
-msgstr ""
+msgstr "$(FORMAT) རྩ་སྒྲིག་ནང་ལུ་ ཡིག་ཆ་ཚུ་ སྲུངས་བཞག་འབད་མི་བཏུབ་པས། ཁྱོད་ཀྱིས་ $(OWNFORMAT) རྩ་སྒྲིག་ལག་ལེན་ཐོག་ལས་ བསྒྱུར་བཅོས་ཚུ་ སྲུངས་ནི་ཨིན་ན?"
 
 #: source/doc/doc.src#STR_SAVEDOC.String.Text
-#, fuzzy
 msgid  "~Save"
 msgstr "སྲུངས།(~S)"
 
 #: source/doc/doc.src#STR_UPDATEDOC.String.Text
-#, fuzzy
 msgid  "~Update"
 msgstr "དུས་མཐུན་བཟོ་ནི།(~U)"
 
 #: source/doc/doc.src#STR_SAVEASDOC.String.Text
-#, fuzzy
 msgid  "Save ~As..."
 msgstr "བཟུམ་སྦེ་ སྲུངས།...(~A)"
 
 #: source/doc/doc.src#STR_SAVECOPYDOC.String.Text
-#, fuzzy
 msgid  "Save Copy ~as..."
 msgstr "བཟུམ་སྦེ་ འདྲ་བཤུས་ སྲུང་བཞག...(~a)"
 
 #: source/doc/doc.src#STR_CLOSEDOC.String.Text
-#, fuzzy
 msgid  "~Close"
 msgstr "ཁ་བསྡམས།(~C)"
 
 #: source/doc/doc.src#STR_CLOSEDOC_ANDRETURN.String.Text
-#, fuzzy
 msgid  "~Close & Return to "
 msgstr "ཁ་བསྡམས་ &ལུ་སླར་ལོག (~C)"
 
 #: source/doc/doc.src#STR_WIZARD.String.Text
-#, fuzzy
 msgid  " AutoPilot"
 msgstr "ཨོ་ཊོ་པའི་ལོཊི།"
 
 #: source/doc/doc.src#RID_STR_FILTCONFIG.String.Text
-#, fuzzy
 msgid  "Configurations"
 msgstr "རིམ་སྒྲིག་ཚུ།"
 
 #: source/doc/doc.src#RID_STR_FILTBASIC.String.Text
-#, fuzzy
 msgid  "%PRODUCTNAME Basic libraries"
 msgstr "%PRODUCTNAME གཞི་རྩའི་ དཔེ་མཛོད་ཚུ།"
 
 #: source/doc/doc.src#RID_STR_WARNSTYLEOVERWRITE.String.Text
-msgid  "Should the "$(ARG1)" Style be replaced?"
-msgstr ""
+msgid  "Should the \"$(ARG1)\" Style be replaced?"
+msgstr " \"$(ARG1)\" བཟོ་རྣམ་འདི་ ཚབ་སྲུང་འབད་དགོས་པས་ག?"
 
 #: source/doc/doc.src#STR_DOC_LOADING.String.Text
-#, fuzzy
 msgid  "Loading Document"
 msgstr "ཡིག་ཆ་མངོན་གསལ་འབད་བའི་སྒང་།"
 
 #: source/doc/doc.src#RID_DLSTATUS.INET_NAME_RESOLVE_START.String.Text
-#, fuzzy
 msgid  "Connection to: $(HOST). Waiting for response..."
 msgstr " :$(HOST) ལུ་ མཐུད་ལམ། ལན་ལུ་ བསྒུག་དོ།..."
 
 #: source/doc/doc.src#RID_DLSTATUS.INET_CONNECT_START.String.Text
-#, fuzzy
 msgid  "Opening $(TARGET) at $(HOST)"
 msgstr "$(HOST) ནང་ལུ་ $(TARGET) ཁ་ཕྱེ་དོ།"
 
 #: source/doc/doc.src#RID_DLSTATUS.INET_READ_STATUS.String.Text
 msgid  "Loading: $(TARGET) from $(HOST). Loaded: $(BYTE)"
-msgstr ""
+msgstr ":$(HOST) ནང་ལས་ $(TARGET) མངོན་གསལ་འབད་དོ།  : $(BYTE) མངོན་གསལ་འབད་ཚར་ཚརཝ།"
 
 #: source/doc/doc.src#RID_DLSTATUS.INET_CONNECTION_CLOSED.String.Text
-#, fuzzy
 msgid  "Disconnected"
 msgstr "མཐུད་ལམ་བཏོག་ཡོདཔ།"
 
 #: source/doc/doc.src#MSG_OPEN_READONLY.QueryBox.Message
 msgid  "Document cannot be opened for editing.\nDo you want to open it as read-only?"
-msgstr ""
+msgstr "ཞུན་དག་གི་དོན་ལུ་ ཡིག་ཆ་འདི་ཁ་ཕྱེ་མི་བཏུབ་པས།\nཁྱོད་ལྷག་ནི་ཙམ་གཅིག་སྦེ་ཁ་ཕྱེ་ནི་ཨིན་ན?"
 
 #: source/doc/doc.src#STR_EDIT.String.Text
-#, fuzzy
 msgid  "Edit"
 msgstr "ཞུན་དག་འབད།"
 
 #: source/doc/doc.src#RID_OFFICEFILTER.String.Text
-#, fuzzy
 msgid  "%PRODUCTNAME Documents"
 msgstr "%PRODUCTNAME  ཡིག་ཆ་ཚུ།"
 
 #: source/doc/doc.src#STR_FRAMEOBJECT_PROPERTIES.String.Text
-#, fuzzy
 msgid  "Propert~ies..."
 msgstr "རྒྱུ་དངོས་ཚུ།...(~i)"
 
 #: source/doc/doc.src#STR_FSET_FILTERNAME0.String.Text
-#, fuzzy
 msgid  "HTML (FrameSet)"
 msgstr "ཨེཆ་ཊི་ཨེམ་ཨེལ་ (གཞི་ཁྲམ་ཚན)"
 
 #: source/doc/doc.src#STR_FSET_FILTERNAME1.String.Text
-#, fuzzy
 msgid  "%PRODUCTNAME Frame Document"
 msgstr "%PRODUCTNAME གཞི་ཁྲམ་ཡིག་ཆ།"
 
 #: source/doc/doc.src#STR_TEMPL_MOVED.String.Text
-msgid  "The template "$(TEMPLATE)" was not found at the original location. A template with the same name exists at "$(FOUND)". Should this template be used in the future when comparing?"
-msgstr ""
+msgid  "The template \"$(TEMPLATE)\" was not found at the original location. A template with the same name exists at \"$(FOUND)\". Should this template be used in the future when comparing?"
+msgstr "ཊེམ་པེལེཊི་  \"$(TEMPLATE)\" འདི་ གནས་ཁོངས་ངོ་མ་ནང་ལུ་ མ་ཐོབ་པས།   མིང་གཅིག་པ་འབད་མི་ ཊེམ་པེལེཊི་ གཅིག་ \"$(FOUND)\" ནང་ལུ་ གནས་ཏེ་འདུག  འ་ནི་ ཊེམ་པེལེཊི་འདི་ མ་འོངས་པ་ནང་ལུ་ ག་བསྡུར་བརྐྱབ་པའི་སྐབས་  ལག་ལེན་འཐབ་དགོས་པས་ག?"
 
 #: source/doc/doc.src#STR_TEMPL_RESET.String.Text
-msgid  "The template "$(TEMPLATE)" has not been found. Should the template be looked for the next time the document is opened ?"
-msgstr ""
+msgid  "The template \"$(TEMPLATE)\" has not been found. Should the template be looked for the next time the document is opened ?"
+msgstr "ཊེམ་པེལེཊི་  \"$(TEMPLATE)\" འདི་མ་ཐོབ་པས།  ལོག་ཤུལ་མ་ ཡིག་ཆ་འདི་ ཁ་ཕྱེཝ་ད་ ཊེམ་པེལེཊི་ འདི་ བལྟ་དགོས་པས་ག ?"
 
 #: source/doc/doc.src#STR_AUTOMATICVERSION.String.Text
-#, fuzzy
 msgid  "Automatically saved version"
 msgstr "རང་བཞིན་གྱིས་སྲུངས་བཞག་འབད་ཡོད་པའི་ ཐོན་རིམ།"
 
 #: source/doc/doc.src#STR_DOCTYPENAME_SW.String.Text
-#, fuzzy
 msgid  "Text Document"
 msgstr "ཚིག་ཡིག་ ཡིག་ཆ།"
 
 #: source/doc/doc.src#STR_DOCTYPENAME_SWWEB.String.Text
-#, fuzzy
 msgid  "HTML Document"
 msgstr "ཨེཆ་ཊི་ཨེམ་ཨེལ་ ཡིག་ཆ།"
 
 #: source/doc/doc.src#STR_DOCTYPENAME_SWGLOB.String.Text
-#, fuzzy
 msgid  "Master Document"
 msgstr "ཡིག་ཆ་ཨམ།"
 
 #: source/doc/doc.src#STR_DOCTYPENAME_SC.String.Text
-#, fuzzy
 msgid  "Spreadsheet"
 msgstr "ཤོག་ཁྲམ།"
 
 #: source/doc/doc.src#STR_DOCTYPENAME_SI.String.Text
-#, fuzzy
 msgid  "Presentation"
 msgstr "གསལ་སྟོན།"
 
 #: source/doc/doc.src#STR_DOCTYPENAME_SD.String.Text
-#, fuzzy
 msgid  "Drawing"
 msgstr "པར་རིས།"
 
 #: source/doc/doc.src#STR_DOCTYPENAME_MESSAGE.String.Text
-#, fuzzy
 msgid  "Message"
 msgstr "འཕྲིན་དོན།"
 
 #: source/doc/doc.src#STR_NOSAVEANDCLOSE.String.Text
-#, fuzzy
 msgid  "~Discard"
 msgstr "བཏོན་བཀོག(~D)"
 
 #: source/doc/doc.src#STR_PACKNGO_NOACCESS.String.Text
-#, fuzzy
 msgid  "Access to the current data medium not possible."
 msgstr "ད་ལྟོའི་ གནད་སྡུད་ བརྡ་ལམ་ ནང་འཛུལ་སྤྱོད་འབད་མི་ཚུགས་པས།"
 
 #: source/doc/doc.src#STR_PACKNGO_NEWMEDIUM.String.Text
-#, fuzzy
 msgid  "Insert the next data carrier and click OK."
 msgstr "གནད་སྡུད་འབག་མི་ གཞན་མི་འདི་ བཙུགས་ཏེ་ བཏུབ་(OK) འདི་ཨེབ་གཏང་།"
 
 #: source/doc/doc.src#STR_OBJECT.String.Text
-#, fuzzy
 msgid  "Object"
 msgstr "དངོས་པོ།"
 
 #: source/doc/doc.src#DLG_MACROQUERY.QueryBox.Title
-#, fuzzy
 msgid  "Run Macro"
 msgstr "མེ་ཀོརོ་ གཡོག་བཀོལ་འབད།"
 
 #: source/doc/doc.src#DLG_MACROQUERY.QueryBox.Message
-#, fuzzy
 msgid  "This document contains macros. $(TEXT)"
 msgstr "ཡིག་ཆ་འདི་གི་ ནང་ན་ མེ་ཀོརོསི་ཡོད།$(TEXT)"
 
 #: source/doc/doc.src#BTN_OK.String.Text
-#, fuzzy
 msgid  "Run"
 msgstr "གཡོག་བཀོལ།"
 
 #: source/doc/doc.src#BTN_CANCEL.String.Text
-#, fuzzy
 msgid  "Do Not Run"
 msgstr "གཡོག་འབད་མི་ བཏུབ་པས།"
 
 #: source/doc/doc.src#FT_CANCEL.String.Text
 msgid  "According to the security settings, the macros in this document should not be run. Do you want to run them anyway?"
-msgstr ""
+msgstr "སྲུང་སྐྱོབ་ སྒྲིག་སྟངས་དང་འཁྲིལ་བ་ཅིན་ ཡིག་ཆ་འདི་ནང་ ཡོད་པའི་མེ་ཀོརོསི་ ཚུ་ལུ་ གཡོག་བཀོལ་འབད་མི་བཏུབ་ནི་ཨིན་པས།   ག་དེ་ཨིན་རུང་ ཁྱོད་ཀྱིས་ དེ་ཚུ་ལུ་ གཡོག་བཀོལ་འབད་ནི་ཨིན་ན?"
 
 #: source/doc/doc.src#FT_OK.String.Text
-#, fuzzy
 msgid  "Do you want to allow these macros to be run?"
 msgstr "ཁྱོད་ཀྱིས་མེ་ཀོརོསི་ དེ་ཚུ་ལུ་ གཡོག་བཀོལ་འབད་བཅུག་ནི་"
 
 #: source/doc/doc.src#STR_EXPORTASPDF_TITLE.String.Text
-#, fuzzy
 msgid  "Export as PDF"
 msgstr "པི་ཌི་ཨེཕ་ བཟུམ་སྦེ་ ཕྱིར་འདྲེན་འབད།"
 
 #: source/doc/doc.src#STR_EXPORTWITHCFGBUTTON.String.Text
-#, fuzzy
 msgid  "Export..."
 msgstr "ཕྱིར་འདྲེན།..."
 
 #: source/doc/doc.src#STR_EXPORTBUTTON.String.Text
-#, fuzzy
 msgid  "Export"
 msgstr "ཕྱིར་འདྲེན།"
 
 #: source/doc/doc.src#RID_SVXSTR_SECURITY_ADDPATH.String.Text
-#, fuzzy
 msgid  "Add this directory to the list of secure paths: "
 msgstr "སྣོད་ཐོ་འདི་ མཐའ་བཙན་བཟོ་བའི་ འགྲུལ་ལམ་ཚུ་ནང་ ཁ་སྐོང་འབད།"
 
 #: source/doc/doc.src#STR_LABEL_FILEFORMAT.String.Text
-#, fuzzy
 msgid  "File format:"
 msgstr "ཡིག་སྣོད་ རྩ་སྒྲིག:"
 
 #: source/doc/doc.src#STR_HIDDENINFO_CONTAINS.String.Text
 msgid  "This document contains:\n\n"
-msgstr ""
+msgstr "ཡིག་ཆ་འདི་གི་ནང་ན་ཡོད་པ།:\n\n"
 
 #: source/doc/doc.src#STR_HIDDENINFO_RECORDCHANGES.String.Text
-#, fuzzy
 msgid  "Recorded changes"
 msgstr "སྒྲ་བཟུང་འབད་ཡོད་པའི་བསྒྱུར་བཅོས་ཚུ།"
 
 #: source/doc/doc.src#STR_HIDDENINFO_NOTES.String.Text
-#, fuzzy
 msgid  "Notes"
 msgstr "དྲན་འཛིན་ཚུ།"
 
 #: source/doc/doc.src#STR_HIDDENINFO_DOCVERSIONS.String.Text
-#, fuzzy
 msgid  "Document versions"
 msgstr "ཡིག་ཆའི་ཐོན་རིམ་ཚུ།"
 
 #: source/doc/doc.src#STR_HIDDENINFO_FIELDS.String.Text
-#, fuzzy
 msgid  "Fields"
 msgstr "ས་སྒོ་ཚུ།"
 
 #: source/doc/doc.src#STR_HIDDENINFO_LINKDATA.String.Text
-#, fuzzy
 msgid  "Linked data..."
 msgstr "འབྲེལ་མཐུད་ འབད་ཡོད་པའི་ གནད་སྡུད།..."
 
 #: source/doc/doc.src#STR_HIDDENINFO_CONTINUE_SAVING.String.Text
-#, fuzzy
 msgid  "Do you want to continue saving the document?"
 msgstr "ཁྱོད་ཀྱིས་ ཡིག་ཆ་སྲུང་བཞག་འབད་ནི་འདི་ འཕྲོ་མཐུད་དེ་ འབད་ནི་ ཨིན་ན?"
 
 #: source/doc/doc.src#STR_HIDDENINFO_CONTINUE_PRINTING.String.Text
-#, fuzzy
 msgid  "Do you want to continue printing the document?"
 msgstr "ཁྱོད་ ཡིག་ཆ་ དཔར་བསྐྲུན་འབད་ནི་འདི་ འཕྲོ་མཐུད་དེ་འབད་ནི་ཨིན་ན?"
 
 #: source/doc/doc.src#STR_HIDDENINFO_CONTINUE_SIGNING.String.Text
-#, fuzzy
 msgid  "Do you want to continue signing the document?"
 msgstr "ཁྱོད་ ཡིག་ཆ་ནང་ མིང་རྟགས་བཀོད་ནི་འདི་ འཕྲོ་མཐུད་དེ་ འབད་ནི་ ཨིན་ན?"
 
 #: source/doc/doc.src#STR_HIDDENINFO_CONTINUE_CREATEPDF.String.Text
 msgid  "Do you want to continue creating a PDF file?"
-msgstr ""
+msgstr "ཁྱོད་ཀྱིས་ པི་ཌི་ཨེཕ་ ཡིག་སྣོད་ གསར་བསྐྲུན་འབད་ནི་འདི་ འཕྲོ་མཐུད་དེ་འབད་ནི་ཨིན་ན?"
 
 #: source/doc/doc.src#STR_NEW_FILENAME_SAVE.String.Text
 msgid  "If you do not want to overwrite the original document, you should save your work under a new filename."
-msgstr ""
+msgstr "ཁྱོད་ཀྱིས་ ཡིག་ཆ་ངོ་མ་འདི་ནང་ ཚབ་སྲུང་འབད་དགོསཔ་མ་མནོ་བ་ཅིན་ ཁྱོད་ཀྱི་ལཱ་ཚུ་ ཡིག་སྣོད་གསརཔ་གཅིག་གི་མིང་གི་འོག་ལུ་ སྲུངས་བཞག་དགོས།"
 
 #: source/doc/doc.src#STR_ERROR_DELETE_TEMPLATE_DIR.String.Text
 msgid  "Some template files are protected and can not be deleted."
-msgstr ""
+msgstr "ཊེམ་པེལེཊི་ཡིག་སྣོད་ལ་ལུ་ཅིག་ ཉེན་སྐྱོབ་འབད་ཡོད་ དེ་ལས་བཏོན་གཏང་མི་བཏུབ།"
 
 #: source/doc/doc.src#STR_DOCINFO_INFOFIELD.String.Text
 msgid  "Info %1"
@@ -2311,217 +2149,174 @@ msgid  "~Keep Old Styles"
 msgstr ""
 
 #: source/doc/docvor.src#DLG_ORGANIZE.ModalDialog.Text
-#, fuzzy
 msgid  "Template Management"
 msgstr "ཊེམ་པེལེཊི་ འཛིན་སྐྱོང་།"
 
 #: source/doc/docvor.src#DLG_ORGANIZE.BTN_OK.OKButton.Text
-#, fuzzy
 msgid  "Close"
 msgstr "ཁ་བསྡམས།"
 
 #: source/doc/docvor.src#DLG_ORGANIZE.BTN_FILES.PushButton.Text
-#, fuzzy
 msgid  "~File..."
 msgstr "ཡིག་སྣོད།...(~F)"
 
 #: source/doc/docvor.src#DLG_ORGANIZE.BTN_ADDRESSTEMPLATE.PushButton.Text
-#, fuzzy
 msgid  "~Address Book..."
 msgstr "ཁ་བྱང་དེབ།...(~A)"
 
 #: source/doc/docvor.src#DLG_ORGANIZE.LB_LEFT_TYP.Default.StringList.item
-#, fuzzy
+msgid  "Templates"
+msgstr "ཊེམ་པེལེཊིསི།"
+
+#: source/doc/docvor.src#DLG_ORGANIZE.LB_LEFT_TYP.Default.StringList.item
 msgid  "Documents"
 msgstr "ཡིག་ཆ་ཚུ།"
 
 #: source/doc/docvor.src#DLG_ORGANIZE.LB_RIGHT_TYP.Default.StringList.item
-#, fuzzy
+msgid  "Templates"
+msgstr "ཊེམ་པེལེཊིསི།"
+
+#: source/doc/docvor.src#DLG_ORGANIZE.LB_RIGHT_TYP.Default.StringList.item
 msgid  "Documents"
 msgstr "ཡིག་ཆ་ཚུ།"
 
 #: source/doc/docvor.src#DLG_ORGANIZE.BTN_EDIT.MenuButton.Text
-#, fuzzy
 msgid  "Commands"
 msgstr "བརྡ་བཀོད་ཚུ།"
 
 #: source/doc/docvor.src#DLG_ORGANIZE.BTN_EDIT.ID_NEW.MenuItem.Text
-#, fuzzy
 msgid  "~New"
 msgstr "གསརཔ།(~N)"
 
 #: source/doc/docvor.src#DLG_ORGANIZE.BTN_EDIT.ID_DELETE.MenuItem.Text
-#, fuzzy
 msgid  "~Delete"
 msgstr "བཏོན་གཏང་།(~D)"
 
 #: source/doc/docvor.src#DLG_ORGANIZE.BTN_EDIT.ID_EDIT.MenuItem.Text
-#, fuzzy
 msgid  "~Edit"
 msgstr "ཞུན་དག(~E)"
 
 #: source/doc/docvor.src#DLG_ORGANIZE.BTN_EDIT.ID_COPY_FROM.MenuItem.Text
-#, fuzzy
 msgid  "Import Template..."
 msgstr "ཊེམ་པེལེཊི་ ནང་འདྲེན་འབད།..."
 
 #: source/doc/docvor.src#DLG_ORGANIZE.BTN_EDIT.ID_COPY_TO.MenuItem.Text
-#, fuzzy
 msgid  "Export Template..."
 msgstr "ཊེམ་པེལེཊི་ ཕྱིར་འདྲེན་འབད།"
 
 #: source/doc/docvor.src#DLG_ORGANIZE.BTN_EDIT.ID_PRINT.MenuItem.Text
-#, fuzzy
 msgid  "~Print"
 msgstr "དཔར་བསྐྲུན་འབད།(~P)"
 
 #: source/doc/docvor.src#DLG_ORGANIZE.BTN_EDIT.ID_PRINTER_SETUP.MenuItem.Text
-#, fuzzy
 msgid  "Printer Settings..."
 msgstr "དཔར་འཕྲུལ་ སྒྲིག་སྟངས་ཚུ།..."
 
 #: source/doc/docvor.src#DLG_ORGANIZE.BTN_EDIT.ID_RESCAN.MenuItem.Text
-#, fuzzy
 msgid  "Update"
 msgstr "དུས་མཐུན་བཟོ་ནི།"
 
 #: source/doc/docvor.src#DLG_ORGANIZE.BTN_EDIT.ID_DEFAULT_TEMPLATE.MenuItem.Text
-#, fuzzy
 msgid  "Set As Default Template"
 msgstr "སྔོན་སྒྲིག་ ཊེམ་པེལེཊི་ བཟུམ་སྦེ་ གཞི་སྒྲིག་འབད།"
 
 #: source/doc/docvor.src#DLG_ORGANIZE.BTN_EDIT.ID_RESET_DEFAULT_TEMPLATE.MenuItem.Text
-#, fuzzy
 msgid  "Reset Default Template"
 msgstr "སྔོན་སྒྲིག་ ཊེམ་པེལེཊི་ སླར་སྒྲིག་འབད།"
 
-#: source/doc/docvor.src#DLG_ORGANIZE.LB_LEFT_TYP.Default.StringList.item
-#, fuzzy
-msgid  "Templates"
-msgstr "ཊེམ་པེལེཊིསི།"
-
-#: source/doc/docvor.src#DLG_ORGANIZE.LB_RIGHT_TYP.Default.StringList.item
-#, fuzzy
-msgid  "Templates"
-msgstr "ཊེམ་པེལེཊིསི།"
-
 #: source/doc/new.src#DLG_NEW_FILE.ModalDialog.Text
-#, fuzzy
 msgid  "New"
 msgstr "གསརཔ།"
 
 #: source/doc/new.src#DLG_NEW_FILE.FT_REGION.FixedText.Text
-#, fuzzy
 msgid  "~Categories"
 msgstr "དབྱེ་རིམ་ཚུ།(~C)"
 
 #: source/doc/new.src#DLG_NEW_FILE.FT_TEMPLATE.FixedText.Text
-#, fuzzy
 msgid  "T~emplates"
 msgstr "ཊེམ་པེལེཊིསི་(~e)"
 
 #: source/doc/new.src#DLG_NEW_FILE.BT_MORE.MoreButton.Text
-#, fuzzy
 msgid  "~More"
 msgstr "ཧེང་བཀལ།(~M)"
 
 #: source/doc/new.src#DLG_NEW_FILE.BTN_PREVIEW.CheckBox.Text
-#, fuzzy
 msgid  "Pre~view"
 msgstr "སྔོན་ལྟ།(~v)"
 
 #: source/doc/new.src#DLG_NEW_FILE.GB_DOCINFO.FixedLine.Text
-#, fuzzy
 msgid  "Description"
 msgstr "འགྲེལ་བཤད།"
 
 #: source/doc/new.src#DLG_NEW_FILE.CB_TEXT_STYLE.CheckBox.Text
-#, fuzzy
 msgid  "Te~xt"
 msgstr "ཚིག་ཡིག(~x)"
 
 #: source/doc/new.src#DLG_NEW_FILE.CB_FRAME_STYLE.CheckBox.Text
-#, fuzzy
 msgid  "~Frame"
 msgstr "གཞི་ཁྲམ།(~F)"
 
 #: source/doc/new.src#DLG_NEW_FILE.CB_PAGE_STYLE.CheckBox.Text
-#, fuzzy
 msgid  "~Pages"
 msgstr "ཤོག་ལེབ་ཚུ།(~P)"
 
 #: source/doc/new.src#DLG_NEW_FILE.CB_NUM_STYLE.CheckBox.Text
-#, fuzzy
 msgid  "N~umbering"
 msgstr "ཨང་བརྐྱབ་ནི།"
 
 #: source/doc/new.src#DLG_NEW_FILE.CB_MERGE_STYLE.CheckBox.Text
-#, fuzzy
 msgid  "~Overwrite"
 msgstr "ཚབ་སྲུང་འབད།(~O)"
 
 #: source/doc/new.src#DLG_NEW_FILE.PB_LOAD_FILE.PushButton.Text
-#, fuzzy
 msgid  "From File..."
 msgstr "ཡིག་སྣོད་ནང་ལས།..."
 
 #: source/doc/new.src#DLG_NEW_FILE.STR_LOAD_TEMPLATE.String.Text
-#, fuzzy
 msgid  "Load Styles"
 msgstr "བཟོ་རྣམ་ཚུ་ མངོན་གསལ་འབད།"
 
 #: source/doc/new.src#DLG_NEW_FILE.FT_TITLE.FixedText.Text
-#, fuzzy
 msgid  "~Title"
 msgstr "མགོ་མིང་།(~T)"
 
 #: source/doc/new.src#DLG_NEW_FILE.FT_THEMA.FixedText.Text
-#, fuzzy
 msgid  "Subject"
 msgstr "དོན་ཚན།"
 
 #: source/doc/new.src#DLG_NEW_FILE.FT_KEYWORDS.FixedText.Text
-#, fuzzy
 msgid  "~Key words"
 msgstr "གཙོ་ཚིག་ཚུ།(~K)"
 
 #: source/doc/new.src#DLG_NEW_FILE.FT_DESC.FixedText.Text
-#, fuzzy
 msgid  "~Description"
 msgstr "འགྲེལ་བཤད།(~D)"
 
 #: source/menu/menu.src#STR_MENU_CFGITEM.String.Text
-#, fuzzy
 msgid  "Configuration Menu"
 msgstr "རིམ་སྒྲིག་དཀར་ཆག"
 
 #: source/menu/menu.src#STR_MENU_ADDONS.String.Text
-#, fuzzy
 msgid  "~Add-Ons"
 msgstr "བསྣོན་བྱ།"
 
 #: source/menu/menu.src#MN_CLIPBOARDFUNCS.SID_CUT.MenuItem.Text
-#, fuzzy
 msgid  "Cu~t"
 msgstr "བཏོག(~t)"
 
 #: source/menu/menu.src#MN_CLIPBOARDFUNCS.SID_COPY.MenuItem.Text
-#, fuzzy
 msgid  "~Copy"
 msgstr "འདྲ་བཤུས།(~C)"
 
 #: source/menu/menu.src#MN_CLIPBOARDFUNCS.SID_PASTE.MenuItem.Text
-#, fuzzy
 msgid  "~Paste"
 msgstr "སྦྱར།(~P)"
 
 #: source/menu/menu.src#SID_WIN_FULLSCREEN.String.Text
-#, fuzzy
 msgid  "Leave Full-Screen Mode"
 msgstr "གསལ་གཞི་ཆ་ཚང་ ཐབས་ལམ་ནང་བཞག"
 
 #: source/menu/menu.src#STR_MENU_ADDONHELP.String.Text
-#, fuzzy
 msgid  "Add-~On Help"
 msgstr "གྲོགས་རམ་གུ་ ཁ་སྐོང་རྐྱབས།(~O)"
 
@@ -2539,77 +2334,77 @@ msgstr ""
 
 #: source/view/view.src#STR_NODEFPRINTER.String.Text
 msgid  "No default printer found.\nPlease choose a printer and try again."
-msgstr ""
+msgstr "དཔར་འཕྲུལ་སྔོན་སྒྲིག་ འཚོལ་མ་འཐོབ་ཨིན་པས།\nདཔར་འཕྲུལ་ གཅིག་ གདམ་ཏེ་ ལོག་སྟེ་རང་འབད་རྩོལ་བསྐྱེད་གནང་།"
 
 #: source/view/view.src#STR_NOSTARTPRINTER.String.Text
 msgid  "Could not start printer.\nPlease check your printer configuration."
-msgstr ""
+msgstr "དཔར་འཕྲུལ་ འགོ་བཙུགས་མི་ཚུགས་པས།\nདཔར་འཕྲུལ་ རིམ་སྒྲིག་ ཞིབ་དཔྱད་འབད་གནང་།"
 
 #: source/view/view.src#STR_PRINTER_NOTAVAIL.String.Text
 msgid  "This document has been formatted for the printer $1. The specified printer is not available. \nDo you want to use the standard printer $2 ?"
-msgstr ""
+msgstr "ཡིག་ཆ་འདི་ དཔར་འཕྲུལ་ $1 གི་དོན་ལུ་ རྩ་སྒྲིག་འབད་དེ་ཡོདཔ་ཨིན།  གསལ་བཀོད་འབད་ཡོད་པའི་ དཔར་འཕྲུལ་འདི་ འཐོབ་མི་ཚུགས་པས། \nཚད་ལྡན་ དཔར་འཕྲུལ་ $2 འདི་ལག་ལེན་འཐབ་ནི་ཨིན་ན?"
 
 #: source/view/view.src#STR_PRINT_OPTIONS.String.Text
-#, fuzzy
 msgid  "Options..."
 msgstr "གདམ་ཁ་ཚུ།..."
 
 #: source/view/view.src#STR_PRINT_OPTIONS_TITLE.String.Text
-#, fuzzy
 msgid  "Printer Options"
 msgstr "དཔར་འཕྲུལ་གྱི་ གདམ་ཁ་ཚུ།"
 
 #: source/view/view.src#STR_ERROR_PRINTER_BUSY.String.Text
-#, fuzzy
 msgid  "Printer busy"
 msgstr "དཔར་འཕྲུལ་ ཁོམ་མེད།"
 
 #: source/view/view.src#STR_ERROR_PRINT.String.Text
-#, fuzzy
 msgid  "Error while printing"
 msgstr "དཔར་འཕྲུལ་འབད་བའི་ སྐབས་ལུ་ འཛོལ་བ།"
 
 #: source/view/view.src#STR_PRINTING.String.Text
-#, fuzzy
 msgid  "Printing"
 msgstr "དཔར་འཕྲུལ་འབད་ནི།"
 
 #: source/view/view.src#STR_PAGE.String.Text
-#, fuzzy
 msgid  "Page "
 msgstr "ཤོག་ལེབ།"
 
+#: source/view/view.src#STR_ERROR_SAVE_TEMPLATE.String.Text
+msgid  "Error saving template "
+msgstr "ཊེམ་པེལེཊི་ སྲུང་བཞག་འབད་ནི་འཛོལ་བ།"
+
 #: source/view/view.src#STR_READONLY.String.Text
-#, fuzzy
 msgid  " (read-only)"
 msgstr " (ལྷག་ནི་-ཙམ།)"
 
 #: source/view/view.src#STR_PRINT_NEWORI.String.Text
 msgid  "The page size and orientation have been modified.\nWould you like to save the new settings in the\nactive document?"
-msgstr ""
+msgstr "ཤོག་ལེབ་ཀྱི་ ཚད་དང་ ཕྱོགས་ཚུ་ ལེགས་བཅོས་འབད་དེ་ཡོད།\n\n ཤུགས་ལྡན་ཡིག་ཆ་ནང་ལུ་ སྒྲིག་སྟངས་གསརཔ་འདི་ སྲུང་བཞག་འབད་ནི་ཨིན་ན?"
 
 #: source/view/view.src#STR_PRINT_NEWSIZE.String.Text
 msgid  "The page size has been modified.\nShould the new settings be saved\nin the active document?"
-msgstr ""
+msgstr "ཤོག་ལེབ་ཀྱི་ཚད་འདི་ ལེགས་བཅོས་འབད་ཡོདཔ་ཨིན།\nསྒྲིག་སྟངས་གསརཔ་འདི་ ཤུགས་ལྡན་ཡིག་ཆ་ནང་ལུ་ སྲུང་བཞག་\nའབད་དགོས་པས་ག?"
 
 #: source/view/view.src#STR_PRINT_NEWORISIZE.String.Text
 msgid  "The page size and orientation have been modified.\nWould you like to save the new settings in the\nactive document?"
-msgstr ""
+msgstr "ཤོག་ལེབ་ཀྱི་ ཚད་དང་ ཕྱོགས་ཚུ་ ལེགས་བཅོས་འབད་དེ་ཡོདཔ་ཨིན།\n\n ཤུགས་ལྡན་ཡིག་ཆ་ནང་ལུ་ སྒྲིག་སྟངས་གསརཔ་ཚུ་ སྲུང་བཞག་འབད་ནི་ཨིན་ན?"
 
 #: source/view/view.src#STR_PREVIEW_DOCINFO.String.Text
-msgid  "<html><body BGCOLOR="#c0c0c0"><font FACE="Arial"><dl><dt><b>Title:</b><dd>$(TITEL)<dt><b>Subject:</b><dd>$(THEME)<dt><b>Keywords:</b><dd>$(KEYWORDS)<dt><b>Description:</b><dd>$(TEXT)</dl></font></body></html>"
-msgstr ""
+msgid  "<html><body BGCOLOR=\"#c0c0c0\"><font FACE=\"Arial\"><dl><dt><b>Title:</b><dd>$(TITEL)<dt><b>Subject:</b><dd>$(THEME)<dt><b>Keywords:</b><dd>$(KEYWORDS)<dt><b>Description:</b><dd>$(TEXT)</dl></font></body></html>"
+msgstr "<html><body BGCOLOR=\"#c0c0c0\"><font FACE=\"Arial\"><dl><dt><b>མགོ་མིང་:</b><dd>$(TITEL)<dt><b>དོན་ཚན:</b><dd>$(THEME)<dt><b>གཙོ་ཚིག:</b><dd>$(KEYWORDS)<dt><b>འགྲེལ་བཤད:</b><dd>$(TEXT)</dl></font></body></html>"
 
 #: source/view/view.src#STR_PREVIEW_NODOCINFO.String.Text
-msgid  "<HTML><BODY BGCOLOR="#c0c0c0"><BR><BR><P><FONT FACE="Arial"><B>No document properties found.</B></FONT></P></BODY></HTML>"
-msgstr ""
+msgid  "<HTML><BODY BGCOLOR=\"#c0c0c0\"><BR><BR><P><FONT FACE=\"Arial\"><B>No document properties found.</B></FONT></P></BODY></HTML>"
+msgstr "<HTML><BODY BGCOLOR=\"#c0c0c0\"><BR><BR><P><FONT FACE=\"Arial\"><B>ཡིག་ཆའི་ རྒྱུ་དངོས་ཚུ་མ་ཐོབ.</B></FONT></P></BODY></HTML>"
 
 #: source/view/view.src#MSG_CANT_CLOSE.InfoBox.Message
 msgid  "The document cannot be closed because a\n print job is being carried out."
-msgstr ""
+msgstr " དཔར་བསྐྲུན་གྱི་ལཱ་གཅིག་ \nའབད་ཡོདཔ་ལས་བརྟེན་ ཡིག་ཆ་འདི་ ཁ་བསྡམས་མི་བཏུབ་པས།"
+
+#: source/view/view.src#DLG_PRINTMONITOR_TEXT.#define.Text
+msgid  "Print Monitor"
+msgstr "དཔར་བསྐྲུན་གསལ་འཕྲུལ།"
 
 #: source/view/view.src#DLG_PRINTMONITOR.FT_PRINTING.FixedText.Text
-#, fuzzy
 msgid  "is being printed on"
 msgstr "གུ་ལུ་ དཔར་བསྐྲུན་འབད་ཡོདཔ།"
 
@@ -2619,27 +2414,16 @@ msgstr ""
 
 #: source/view/view.src#MSG_ERROR_SEND_MAIL.InfoBox.Message
 msgid  "An error occurred in sending the message. Possible errors could be a missing user account or a defective setup.\nPlease check the %PRODUCTNAME settings or your e-mail program settings."
-msgstr ""
+msgstr "འཕྲིན་དོན་གཏང་ནི་ལུ་འཛོལ་བ་བྱུང་ནུག     འཛོལ་བ་འདི་ ལག་ལེན་པའི་ རྩིས་ཐོ་ བརླག་སྟོར་ཞུགས་ནི་དང་ གཞི་སྒྲིག་སྐྱོན་ཅན་ལུ་བརྟེན་ འབྱུང་སྲིད།\nཁྱོད་ཀྱི་ གློག་འཕྲིན་ལས་རིམ་སྒྲིག་སྟངས་ཚུ་ནང་ལུ་ %PRODUCTNAME སྒྲིག་སྟངས་ཚུ་ ཞིབ་དཔྱད་འབད་གནང་།"
 
 #: source/view/view.src#MSG_QUERY_OPENASTEMPLATE.QueryBox.Message
 msgid  "This document cannot be edited, possibly due to missing access rights. Do you want to edit a copy of the document?"
-msgstr ""
+msgstr "ཡིག་ཆ་འདི་ ཞུན་དག་འབད་མི་བཏུབ་པས་ དེ་ཡང་ འཛུལ་སྤྱོད་འབད་ནི་དབང་ཆ་ཚུ་ བརླག་སྟོར་ཞུགས་ཡོདཔ་ལས་ བརྟེན་འོང་སྲིད།    ཡིག་ཆ་འདི་གི་ འདྲ་བཤུས་གཅིག་ ཞུན་དག་འབད་ནི་ཨིན་ན?"
 
 #: source/view/view.src#STR_REPAIREDDOCUMENT.String.Text
-#, fuzzy
 msgid  " (repaired document)"
 msgstr "(ཡིག་ཆ་ ཉམས་བཅོས་འབད་འབདཝ།)"
 
 #: source/view/view.src#MSG_ERROR_NO_WEBBROWSER_FOUND.ErrorBox.Message
 msgid  "%PRODUCTNAME could not find a web browser on your system. Please check your Desktop Preferences or install a web browser (for example, Mozilla) in the default  location requested during the browser installation."
 msgstr ""
-
-#: source/view/view.src#DLG_PRINTMONITOR_TEXT.#define.Text
-#, fuzzy
-msgid  "Print Monitor"
-msgstr "དཔར་བསྐྲུན་གསལ་འཕྲུལ།"
-
-#: source/view/view.src#STR_ERROR_SAVE_TEMPLATE.String.Text
-#, fuzzy
-msgid  "Error saving template "
-msgstr "ཊེམ་པེལེཊི་ སྲུང་བཞག་འབད་ནི་འཛོལ་བ།"

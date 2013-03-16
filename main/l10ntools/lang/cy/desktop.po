@@ -32,8 +32,8 @@ msgstr ""
 
 
 #: source/app/desktop.src#STR_RECOVER_QUERY.String.Text
-msgid  "Should the file "$1" be restored?"
-msgstr ""
+msgid  "Should the file \"$1\" be restored?"
+msgstr "A ddylai'r ffeil \"$1\"gael ei hadfer?"
 
 #: source/app/desktop.src#STR_RECOVER_TITLE.String.Text
 msgid  "File Recovery"
@@ -41,15 +41,15 @@ msgstr "Adfer Ffeil"
 
 #: source/app/desktop.src#STR_RECOVER_PREPARED.WarningBox.Message
 msgid  "An unrecoverable error has occurred.\n\nAll modified files have been saved and can\nprobably be recovered at program restart."
-msgstr ""
+msgstr "Digwyddodd gwall anadferadwy.\n\nMae pob ffeil newidiwyd wedi eu cadw ac mae'n\nbosibl bod modd eu hadfer wrth ailgychwyn y rhaglen."
 
 #: source/app/desktop.src#STR_BOOTSTRAP_ERR_CANNOT_START.String.Text
 msgid  "The application cannot be started. "
 msgstr "Methu cychwyn y rhaglen"
 
 #: source/app/desktop.src#STR_BOOTSTRAP_ERR_DIR_MISSING.String.Text
-msgid  "The configuration directory "$1" could not be found."
-msgstr ""
+msgid  "The configuration directory \"$1\" could not be found."
+msgstr "Methu canfod cyfeiriadur ffurfweddu \"$1\"."
 
 #: source/app/desktop.src#STR_BOOTSTRAP_ERR_PATH_INVALID.String.Text
 msgid  "The installation path is invalid."
@@ -64,16 +64,16 @@ msgid  "An internal error occurred."
 msgstr "Ddigwyddodd gwall mewnol"
 
 #: source/app/desktop.src#STR_BOOTSTRAP_ERR_FILE_CORRUPT.String.Text
-msgid  "The configuration file "$1" is corrupt."
-msgstr ""
+msgid  "The configuration file \"$1\" is corrupt."
+msgstr "Mae'r ffeil ffurfweddiad \"$1\" wedi llygru."
 
 #: source/app/desktop.src#STR_BOOTSTRAP_ERR_FILE_MISSING.String.Text
-msgid  "The configuration file "$1" was not found."
-msgstr ""
+msgid  "The configuration file \"$1\" was not found."
+msgstr "Methu canfod ffeil ffurfweddiad \"$1\"."
 
 #: source/app/desktop.src#STR_BOOTSTRAP_ERR_NO_SUPPORT.String.Text
-msgid  "The configuration file "$1" does not support the current version."
-msgstr ""
+msgid  "The configuration file \"$1\" does not support the current version."
+msgstr "Nid yw'r ffeil ffurfweddiad \"$1\" yn cynnal y fersiwn presennol."
 
 #: source/app/desktop.src#STR_BOOTSTRAP_ERR_LANGUAGE_MISSING.String.Text
 msgid  "The user interface language cannot be determined."
@@ -93,11 +93,11 @@ msgstr ""
 
 #: source/app/desktop.src#STR_ASK_START_SETUP_MANUALLY.String.Text
 msgid  "Start the setup application to repair the installation from the CD or the folder containing the installation packages."
-msgstr ""
+msgstr "Cychwyn y rhaglen osod i drwsio'r gosodiad o'r CD neu ffolder sy'n cynnwys y pecynnau gosod."
 
 #: source/app/desktop.src#STR_CONFIG_ERR_SETTINGS_INCOMPLETE.String.Text
 msgid  "The startup settings for accessing the central configuration are incomplete. "
-msgstr ""
+msgstr "Mae'r gosodiadau cychwyn ar gyfer cael mynediad i'r ffurfweddiad canolog yn anghyflawn."
 
 #: source/app/desktop.src#STR_CONFIG_ERR_CANNOT_CONNECT.String.Text
 msgid  "A connection to the central configuration could not be established. "
@@ -105,19 +105,19 @@ msgstr "Methu creu cysylltiad i'r ffurfwedd ganolog."
 
 #: source/app/desktop.src#STR_CONFIG_ERR_RIGHTS_MISSING.String.Text
 msgid  "You cannot access the central configuration because of missing access rights. "
-msgstr ""
+msgstr "Methu cael mynediad i'r ffurfweddiad canolog oherwydd diffyg caniatâd mynediad. "
 
 #: source/app/desktop.src#STR_CONFIG_ERR_ACCESS_GENERAL.String.Text
 msgid  "A general error occurred while accessing your central configuration. "
-msgstr ""
+msgstr "Digwyddodd gwall cyffredinol wrth gael mynediad i'ch ffurfweddiad canolog."
 
 #: source/app/desktop.src#STR_CONFIG_ERR_NO_WRITE_ACCESS.String.Text
 msgid  "The changes to your personal settings cannot be stored centrally because of missing access rights. "
-msgstr ""
+msgstr "Methu cadw newidiadau i'ch gosodiadau personol oherwydd hawliau mynediad canolog coll."
 
 #: source/app/desktop.src#STR_BOOTSTRAP_ERR_CFG_DATAACCESS.String.Text
 msgid  "%PRODUCTNAME cannot be started due to an error in accessing the %PRODUCTNAME configuration data.\n\nPlease contact your system administrator."
-msgstr ""
+msgstr "Methu cychwyn %PRODUCTNAME oherwydd gwall mynediad i ddata ffurfweddu %PRODUCTNAME.\n\nCysylltwch â'ch gweinyddwr system."
 
 #: source/app/desktop.src#STR_INTERNAL_ERRMSG.String.Text
 msgid  "The following internal error has occurred: "
@@ -125,7 +125,7 @@ msgstr "Digwyddodd y gwall mewnol canlynol:"
 
 #: source/app/desktop.src#QBX_USERDATALOCKED.QueryBox.Message
 msgid  "Either another instance of %PRODUCTNAME is accessing your personal settings or your personal settings are locked.\nSimultaneous access can lead to inconsistencies in your personal settings. Before continuing, you should make sure user '$u' closes %PRODUCTNAME on host '$h'.\n\nDo you really want to continue?"
-msgstr ""
+msgstr "Un ai mae enghraifft arall o %PRODUCTNAME yn cael mynediad i'ch gosodiadau personol neu mae eich gosodiadau personol wedi eu cloi.\nGall mynediad ar y cyd greu anghysonderau i'ch gosodiadau personol. Cyn parhau, dylech sicrhau fod defnyddiwr '$u' yn cau %PRODUCTNAME ar westeiwr '$h'.\n\nYdych chi am barhau?"
 
 #: source/app/desktop.src#STR_TITLE_USERDATALOCKED.String.Text
 msgid  "%PRODUCTNAME %PRODUCTVERSION"
@@ -149,11 +149,11 @@ msgstr "Nid yw'r rheolwr llwybr ar gael.\n"
 
 #: source/app/desktop.src#STR_BOOSTRAP_ERR_NOTENOUGHDISKSPACE.String.Text
 msgid  "%PRODUCTNAME user installation could not be completed due to insufficient free disk space. Please free more disc space at the following location and restart %PRODUCTNAME:\n\n"
-msgstr ""
+msgstr "Nid oedd modd cwblhau gosodiad defnyddiwr %PRODUCTNAME am nad oedd yna ddigon o le rhydd ar ddisg. Ryddhewch le yn y lleoliad canlynol ac ailgychwyn %PRODUCTNAME:\n\n"
 
 #: source/app/desktop.src#STR_BOOSTRAP_ERR_NOACCESSRIGHTS.String.Text
 msgid  "%PRODUCTNAME user installation could not be processed due to missing access rights. Please make sure that you have sufficient access rights for the following location and restart %PRODUCTNAME:\n\n"
-msgstr ""
+msgstr "Nid oedd modd prosesu gosodiad defnyddiwr %PRODUCTNAME oherwydd hawl mynediad coll. Gwnewch yn siŵr fod gennych hawl mynediad digonol ar gyfer y lleoliad canlynol ac ailgychwyn %PRODUCTNAME:\n\n"
 
 #: source/deployment/gui/dp_gui_versionboxes.src#RID_WARNINGBOX_VERSION_LESS.WarningBox.Message
 msgid  "You are about to install version $NEW of the extension \'$NAME\'.\nThe newer version $DEPLOYED is already installed.\nClick \'OK\' to replace the installed extension.\nClick \'Cancel\' to stop the installation."
@@ -185,7 +185,7 @@ msgstr "Gwiriad dibyniaethau system"
 
 #: source/deployment/gui/dp_gui_dependencydialog.src#RID_DLG_DEPENDENCIES.RID_DLG_DEPENDENCIES_TEXT.FixedText.Text
 msgid  "The extension cannot be installed as the following\nsystem dependencies are not fulfilled:"
-msgstr ""
+msgstr "Nid oes modd gosod yr estyniad gan nad yw'r \ndibyniaethau system canlynol wedi eu bodloni:"
 
 #: source/deployment/gui/dp_gui_dialog.src#RID_STR_ADD_PACKAGES.String.Text
 msgid  "Add Extension(s)"
@@ -253,11 +253,11 @@ msgstr "Gadael"
 
 #: source/deployment/gui/dp_gui_dialog.src#RID_STR_NO_ADMIN_PRIVILEGE.String.Text
 msgid  "%PRODUCTNAME has been updated to a new version. Some shared %PRODUCTNAME extensions are not compatible with this version and need to be updated before %PRODUCTNAME can be started.\n\nUpdating of shared extension requires administrator privileges. Contact your system administrator to update the following shared extensions:"
-msgstr ""
+msgstr "Mae %PRODUCTNAME wedi ei ddiweddaru i fersiwn newydd. Nid yw rhai estyniadau %PRODUCTNAME yn cydweddu gyda'r fersiwn yma ac mae angen eu diweddaru cyn bod modd cychwyn %PRODUCTNAME.\n\nMae diweddaru estyniadau yn gofyn am ganiatâd gweinyddwr. Cysylltwch â'ch gweinyddwr system i ddiweddaru'r estyniadau rhanedig canlynol:\n"
 
 #: source/deployment/gui/dp_gui_dialog.src#RID_STR_ERROR_MISSING_DEPENDENCIES.String.Text
 msgid  "The extension cannot be enabled as the following system dependencies are not fulfilled:"
-msgstr ""
+msgstr "Nid oes modd galluogi'r estyniad gan nad yw'r \ndibyniaethau system canlynol wedi eu bodloni:"
 
 #: source/deployment/gui/dp_gui_dialog.src#RID_STR_ERROR_MISSING_LICENSE.String.Text
 msgid  "This extension is disabled because you haven't accepted the license yet.\n"
@@ -273,7 +273,7 @@ msgstr "Cytundeb Trwyddedu Meddalwedd Estyniad"
 
 #: source/deployment/gui/dp_gui_dialog.src#RID_DLG_LICENSE.FT_LICENSE_HEADER.FixedText.Text
 msgid  "Please follow these steps to proceed with the installation of the extension:"
-msgstr ""
+msgstr "Dilynwch y camau canlynol i osod yr estyniad:"
 
 #: source/deployment/gui/dp_gui_dialog.src#RID_DLG_LICENSE.FT_LICENSE_BODY_1.FixedText.Text
 msgid  "1."
@@ -437,7 +437,7 @@ msgstr "Nid oes diweddariadau newydd ar gael."
 
 #: source/deployment/gui/dp_gui_updatedialog.src#RID_DLG_UPDATE.RID_DLG_UPDATE_NOINSTALLABLE.String.Text
 msgid  "No installable updates are available. To see ignored or disabled updates, mark the check box 'Show all updates'."
-msgstr ""
+msgstr "Dim diweddariadau gosodadwy ar gael. I weld pob diweddariad, marciwch y blwch ticio 'Dangos pob diweddariad'."
 
 #: source/deployment/gui/dp_gui_updatedialog.src#RID_DLG_UPDATE.RID_DLG_UPDATE_FAILURE.String.Text
 msgid  "An error occurred:"
@@ -521,7 +521,7 @@ msgstr "Mae angen Diweddaru'r Estyniad"
 
 #: source/deployment/gui/dp_gui_dialog2.src#RID_DLG_UPDATE_REQUIRED.RID_EM_FT_MSG.FixedText.Text
 msgid  "%PRODUCTNAME has been updated to a new version. Some installed %PRODUCTNAME extensions are not compatible with this version and need to be updated before they can be used."
-msgstr ""
+msgstr "Mae %PRODUCTNAME wedi ei ddiweddaru i fersiwn newydd. Nid yw rhai estyniadau sydd ar %PRODUCTNAME yn cydweddu a'r fersiwn yma ac mae angen eu diweddaru cyn bod modd eu defnyddio."
 
 #: source/deployment/gui/dp_gui_dialog2.src#RID_DLG_UPDATE_REQUIRED.RID_EM_FT_PROGRESS.FixedText.Text
 msgid  "Adding %EXTENSION_NAME"
@@ -537,7 +537,7 @@ msgstr "Analluogi popeth"
 
 #: source/deployment/gui/dp_gui_dialog2.src#RID_QUERYBOX_INSTALL_FOR_ALL.QueryBox.Message
 msgid  "Make sure that no further users are working with the same %PRODUCTNAME, when installing an extension for all users in a multi user environment.\n\nFor whom do you want to install the extension?\n"
-msgstr ""
+msgstr "Gwnewch yn siŵr nad oes rhagor o ddefnyddwyr yn gweithio gyda'r un %PRODUCTNAME, wrth osod estyniad ar gyfer pob defnyddiwr mewn amgylchedd defnyddwyr niferus.\n\nAr gyfer pwy rydych yn gosod yr estyniad?\n"
 
 #: source/deployment/manager/dp_manager.src#RID_STR_COPYING_PACKAGE.String.Text
 msgid  "Copying: "
@@ -641,7 +641,7 @@ msgstr "Nid oes modd gosod yr estyniad oherwydd:\n"
 
 #: source/deployment/registry/help/dp_help.src#RID_STR_HELPPROCESSING_XMLPARSING_ERROR.String.Text
 msgid  "The extension will not be installed because an error occurred in the Help files:\n"
-msgstr ""
+msgstr "Nid oedd modd gosod yr estyniad am i wall ddigwydd yn y ffeiliau Cymorth."
 
 #: source/deployment/registry/package/dp_package.src#RID_STR_PACKAGE_BUNDLE.String.Text
 msgid  "Extension"
@@ -672,16 +672,16 @@ msgid  "Extension Software License Agreement of $NAME:"
 msgstr "Cytundeb Trwydded Meddalwedd Estyniad $NAME:"
 
 #: source/deployment/unopkg/unopkg.src#RID_STR_UNOPKG_ACCEPT_LIC_2.String.Text
-msgid  "Read the complete License Agreement displayed above. Accept the License Agreement by typing "yes" on the console then press the Return key. Type "no" to decline and to abort the extension setup."
-msgstr ""
+msgid  "Read the complete License Agreement displayed above. Accept the License Agreement by typing \"yes\" on the console then press the Return key. Type \"no\" to decline and to abort the extension setup."
+msgstr "Darllennwchy yr holl Gytunedb Trwydded uchod. Derbyniwch y Cytundeb Trwydded drwy deipio \"iawn\" ar y consol ac yna pwyso'r bysell Return. Teipiwch \"na\" i wrthod ac atal gosod yr estyniad."
 
 #: source/deployment/unopkg/unopkg.src#RID_STR_UNOPKG_ACCEPT_LIC_3.String.Text
-msgid  "[Enter "yes" or "no"]:"
-msgstr ""
+msgid  "[Enter \"yes\" or \"no\"]:"
+msgstr "[Rhowch \"iawn\" neu \"na\"]:"
 
 #: source/deployment/unopkg/unopkg.src#RID_STR_UNOPKG_ACCEPT_LIC_4.String.Text
-msgid  "Your input was not correct. Please enter "yes" or "no":"
-msgstr ""
+msgid  "Your input was not correct. Please enter \"yes\" or \"no\":"
+msgstr "Nid oedd eich mewnbwn yn gywir. Rhowch \"iawn\" neu \"na\":"
 
 #: source/deployment/unopkg/unopkg.src#RID_STR_UNOPKG_ACCEPT_LIC_YES.String.Text
 msgid  "YES"
@@ -701,7 +701,7 @@ msgstr "N"
 
 #: source/deployment/unopkg/unopkg.src#RID_STR_CONCURRENTINSTANCE.String.Text
 msgid  "unopkg cannot be started. The lock file indicates it as already running. If this does not apply, delete the lock file at:"
-msgstr ""
+msgstr "methu cychwyn unopkg. Mae'r ffeil cloi yn awgrymu ei fod dal yn rhedeg. Os nad yw hyn yn berthnasol, dilëwch y ffeil cloi yn:"
 
 #: source/deployment/unopkg/unopkg.src#RID_STR_UNOPKG_ERROR.String.Text
 msgid  "ERROR: "
@@ -737,11 +737,11 @@ msgstr "Cofrestru"
 
 #: source/migration/wizard.src#STR_WELCOME_MIGRATION.String.Text
 msgid  "This wizard will guide you through the license agreement, the transfer of user data from %OLD_VERSION and the registration of %PRODUCTNAME.\n\nClick 'Next' to continue."
-msgstr ""
+msgstr "Bydd y dewin yn eich arwain drwy'r cytundeb trwyddedu, trosglwyddo data'r defnyddiwr o %OLD_VERSION a chofrestru %PRODUCTNAME.\n\nCliciwch 'Nesaf' i barhau.."
 
 #: source/migration/wizard.src#STR_WELCOME_WITHOUT_LICENSE.String.Text
 msgid  "This wizard will guide you through the registration of %PRODUCTNAME.\n\nClick 'Next' to continue."
-msgstr ""
+msgstr "Bydd y dewin yn eich harwain drwy gofrestriad %PRODUCTNAME.\n\nCliciwch 'Nesaf' i barhau."
 
 #: source/migration/wizard.src#STR_FINISH.String.Text
 msgid  "~Finish"
@@ -749,11 +749,11 @@ msgstr "~Gorffen"
 
 #: source/migration/wizard.src#STR_REGISTRATION_OOO.String.Text
 msgid  "You now have the opportunity to support and contribute to the fastest growing open source community in the world.\n\nHelp us prove that %PRODUCTNAME has already gained significant market share by registering.\n\nRegistering is voluntary and without obligation."
-msgstr ""
+msgstr "Mae gennych y cyfle i gefnogi a chyfrannu tuag at y gymuned cod agored sy'n tyfu cyflymaf yn y byd.\n\nGallwch ein cynorthwyo i brofi fod %PRODUCTNAME wedi ennill cyfran arwyddocaol o'r farchnad drwy gofrestru.\n\nMae cofrestru'n gam gwirfoddol a heb unrhyw oblygiad i chi."
 
 #: source/migration/wizard.src#ERRBOX_REG_NOSYSBROWSER.ErrorBox.Message
 msgid  "An error occurred in starting the web browser.\nPlease check the %PRODUCTNAME and web browser settings."
-msgstr ""
+msgstr "Digwyddodd gwall wrth gychwyn y porwr.\nGwiriwch osodiadau %PRODUCTNAME a'r porwr."
 
 #: source/migration/wizard.src#QB_ASK_DECLINE.QueryBox.Message
 msgid  "Do you really want to decline?"
@@ -765,7 +765,7 @@ msgstr "Croeso i %PRODUCTNAME %PRODUCTVERSION"
 
 #: source/migration/wizard.src#TP_WELCOME.FT_WELCOME_BODY.FixedText.Text
 msgid  "This wizard will guide you through the license agreement and the registration of %PRODUCTNAME.\n\nClick 'Next' to continue."
-msgstr ""
+msgstr "Bydd y dewin yn eich arwain drwy'r cytundeb trwyddedu a chofrestru %PRODUCTNAME.\n\nCliciwch 'Nesaf' i barhau.."
 
 #: source/migration/wizard.src#TP_LICENSE.FT_LICENSE_HEADER.FixedText.Text
 msgid  "Please follow these steps to accept the license"
@@ -777,7 +777,7 @@ msgstr "1."
 
 #: source/migration/wizard.src#TP_LICENSE.FT_LICENSE_BODY_1_TXT.FixedText.Text
 msgid  "View the complete License Agreement. Please use the scrollbar or the '%PAGEDOWN' button in this dialog to view the entire license text."
-msgstr ""
+msgstr "Darllenwch y Cytundeb Trwyddedu cyfan.  Defnyddiwch y bar sgrolio neu'r botwm  '%PAGEDOWN' er mwyn ei darllen i gyd."
 
 #: source/migration/wizard.src#TP_LICENSE.FT_LICENSE_BODY_2.FixedText.Text
 msgid  "2."
@@ -805,7 +805,7 @@ msgstr "Trosglwyddo gwybodaeth bersonol"
 
 #: source/migration/wizard.src#TP_MIGRATION.FT_MIGRATION_BODY.FixedText.Text
 msgid  "Most personal data from %OLDPRODUCT installation can be reused in %PRODUCTNAME %PRODUCTVERSION.\n\nIf you do not want to reuse any settings in %PRODUCTNAME %PRODUCTVERSION, unmark the check box."
-msgstr ""
+msgstr "Mae modd defnyddio'r rhan fwyaf o ddata personol o %OLDPRODUCT yn %PRODUCTNAME %PRODUCTVERSION.\n\nOs nad ydych am ail ddefnyddio unrhyw osodiadau yn %PRODUCTNAME %PRODUCTVERSION, dad-diciwch y blwch."
 
 #: source/migration/wizard.src#TP_MIGRATION.CB_MIGRATION.CheckBox.Text
 msgid  "Transfer personal data"
@@ -817,7 +817,7 @@ msgstr "Diweddariad Ar-lein"
 
 #: source/migration/wizard.src#TP_UPDATE_CHECK.FT_UPDATE_CHECK_BODY.FixedText.Text
 msgid  "%PRODUCTNAME searches automatically at regular intervals for new versions.\nIn doing so online update does not transfer personal data.\nAs soon as a new version is available, you will be notified.\n\nYou can configure this feature at Tools / Options... / %PRODUCTNAME / Online Update."
-msgstr ""
+msgstr "Mae %PRODUCTNAME yn chwilio yn awtomatig ar gyfnodau penodol am fersiwn newydd.\nWrth wneud hynny nid yw'r diweddaru ar-lein yn trosglwyddo data personol.\nCewch eich hysbysu cynted ag y bydd fersiwn newydd ar gael.\n\nGallwch ffurfweddu'r nodwedd yn Offer/Dewisiadau.../ %PRODUCTNAME / Diweddaru Ar-lein."
 
 #: source/migration/wizard.src#TP_UPDATE_CHECK.CB_UPDATE_CHECK.CheckBox.Text
 msgid  "~Check for updates automatically"
@@ -829,7 +829,7 @@ msgstr "Rhowch eich enw llawn isod"
 
 #: source/migration/wizard.src#TP_USER.FT_USER_BODY.FixedText.Text
 msgid  "The user name will be used in the document properties, templates and when you record changes made to documents."
-msgstr ""
+msgstr "Bydd yr enw defnyddiwr yn cael ei ddefnyddio ym mrhiodweddau dogfennau, templedi a phan fyddwch yn cofnodi newidiadau mewn dogfennau."
 
 #: source/migration/wizard.src#TP_USER.FT_USER_FIRST.FixedText.Text
 msgid  "~First name"
@@ -853,7 +853,7 @@ msgstr "Cofrestru %PRODUCTNAME"
 
 #: source/migration/wizard.src#TP_REGISTRATION.FT_REGISTRATION_BODY.FixedText.Text
 msgid  "You now have the opportunity to register as a %PRODUCTNAME user. Registration is voluntary and is without obligation.\n\nIf you register, we can inform you about new developments concerning this product."
-msgstr ""
+msgstr "Mae gennych gyfle i gofrestru fel defnyddiwr %PRODUCTNAME. Mae cofrestru yn beth gwirfoddol a does dim rhwymedigaeth.\n\nOs fyddwch yn cofrestru, gallwn eich hysbysu am ddatblygiadau newydd ynglŷn â'r cynnyrch."
 
 #: source/migration/wizard.src#TP_REGISTRATION.RB_REGISTRATION_NOW.RadioButton.Text
 msgid  "I want to register ~now"
@@ -869,7 +869,7 @@ msgstr "~Nid wyf am gofrestru"
 
 #: source/migration/wizard.src#TP_REGISTRATION.FT_REGISTRATION_END.FixedText.Text
 msgid  "We hope you enjoy working with %PRODUCTNAME.\n\nTo exit the wizard, click 'Finish'."
-msgstr ""
+msgstr "Rydym yn gobeithio y byddwch yn mwynhau gweithio gyda %PRODUCTNAME.\n\nI adael y dewin, cliciwch 'Gorffen'."
 
 #: win32/source/rebase/rebasegui.ulf#%APP_TITLE%
 msgid  "Installation Status"
@@ -886,6 +886,10 @@ msgstr "Gosod wedi ei optimeiddio ar gyfer gweinyddion"
 #: win32/source/rebase/rebasegui.ulf#%MSG_NO_INSTALLATION_FOUND%
 msgid  "Cannot find Office installation."
 msgstr "Methu canfod gosodiad Office"
+
+#: win32/source/setup/setup.ulf#%APP_TITLE%
+msgid  "Setup"
+msgstr "Gosod"
 
 #: win32/source/setup/setup.ulf#%APP_PROD_TITLE%
 msgid  "The %PRODUCTNAME Setup"
@@ -905,7 +909,7 @@ msgstr "Diddymwyd y gosod"
 
 #: win32/source/setup/setup.ulf#%REQUIRES_ADMIN_PRIV%
 msgid  "Administrator privileges are required for upgrading the Windows Installer."
-msgstr ""
+msgstr "Mae angen breintiau gweinyddwr i uwchraddio Windows Installer."
 
 #: win32/source/setup/setup.ulf#%FILE_NOT_FOUND%
 msgid  "Setup was unable to find the file '%s'."
@@ -917,15 +921,15 @@ msgstr "Dewis llinell orchymyn annilys '%s'. Defnyddiwch '/?' am gymorth."
 
 #: win32/source/setup/setup.ulf#%SETUP_TO_OLD%
 msgid  "This package requires at least the version '%s' of the Windows Installer. \nYou have Windows Installer '%s' on your system!"
-msgstr ""
+msgstr "Mae'r pecyn angen o leiaf fersiwn '%s' o Gosodwr Windows. \nMae gennych Gosodwr Windows '%s' ar eich system!"
 
 #: win32/source/setup/setup.ulf#%SETUP_NOT_FOUND%
 msgid  "This package requires the Windows Installer. \nYou need at least Windows Installer '%s' on your system!"
-msgstr ""
+msgstr "Mae'r pecyn angen Gosodwr Windows. \nMae'r pecyn angen o leiaf fersiwn '%s' o Gosodwr Windows ar eich system!"
 
 #: win32/source/setup/setup.ulf#%USAGE%
 msgid  "Usage:\n   /? :  Shows this dialog.\n   /a :  Performs an administrative installation.\n   /j[u|m] :  Performs an advertising installation.\n   /q[n] : Do not show any user interface (silent mode).\n"
-msgstr ""
+msgstr "Defnydd:\n   /? :  Dangos y deialog.\n   /a :  Gyflawni gosodiad gweinyddol.\n   /j[u|m] :  Cyflawni gosodiad hysbysebu.\n   /q[n] : Peidio dangos unrhyw ryngwyneb defnyddiwr (modd tawel).\n"
 
 #: win32/source/setup/setup.ulf#%ALREADY_RUNNING%
 msgid  "There is already a setup process running."
@@ -1046,7 +1050,3 @@ msgstr "Tsieinëeg"
 #: win32/source/setup/setup.ulf#%LANGUAGE_PT_PT%
 msgid  "Portuguese (Portugal)"
 msgstr "Portiwgaleg (Portiwgal)"
-
-#: win32/source/setup/setup.ulf#%APP_TITLE%
-msgid  "Setup"
-msgstr "Gosod"

@@ -123,6 +123,10 @@ msgstr "Spreadsheet"
 msgid  "Perform calculation, analyze information and manage lists in spreadsheets by using Calc."
 msgstr "Perform calculation, analyze information and manage lists in spreadsheets by using Calc."
 
+#: source/calc/registryitem_calc.ulf#STR_REG_VAL_NEW
+msgid  "&New"
+msgstr "&New"
+
 #: source/calc/registryitem_calc.ulf#STR_REG_VAL_SO60_SPREADSHEET
 msgid  "%SXWFORMATNAME %SXWFORMATVERSION Spreadsheet"
 msgstr "%SXWFORMATNAME %SXWFORMATVERSION Spreadsheet"
@@ -154,10 +158,6 @@ msgstr "Microsoft Excel 97-2003 Template"
 #: source/calc/registryitem_calc.ulf#STR_REG_VAL_MS_EXCEL_TEMPLATE
 msgid  "Microsoft Excel Template"
 msgstr "Microsoft Excel Template"
-
-#: source/calc/registryitem_calc.ulf#STR_REG_VAL_NEW
-msgid  "&New"
-msgstr "&New"
 
 #: source/calc/module_calc.ulf#STR_NAME_MODULE_PRG_CALC
 msgid  "%PRODUCTNAME Calc"
@@ -191,6 +191,10 @@ msgstr "Add-in"
 msgid  "Add-ins are additional programs that make new functions available in %PRODUCTNAME Calc."
 msgstr "Add-ins are additional programs that make new functions available in %PRODUCTNAME Calc."
 
+#: source/draw/registryitem_draw.ulf#STR_REG_VAL_NEW
+msgid  "&New"
+msgstr "&New"
+
 #: source/draw/registryitem_draw.ulf#STR_REG_VAL_SO60_DRAWING
 msgid  "%SXWFORMATNAME %SXWFORMATVERSION Drawing"
 msgstr "%SXWFORMATNAME %SXWFORMATVERSION Drawing"
@@ -206,10 +210,6 @@ msgstr "OpenDocument Drawing"
 #: source/draw/registryitem_draw.ulf#STR_REG_VAL_OO_DRAW_TEMPLATE
 msgid  "OpenDocument Drawing Template"
 msgstr "OpenDocument Drawing Template"
-
-#: source/draw/registryitem_draw.ulf#STR_REG_VAL_NEW
-msgid  "&New"
-msgstr "&New"
 
 #: source/draw/folderitem_draw.ulf#STR_FI_NAME_ZEICHNUNG
 msgid  "Drawing"
@@ -379,6 +379,10 @@ msgstr "Presentation"
 msgid  "Create and edit presentations for slideshows, meeting and Web pages by using Impress."
 msgstr "Create and edit presentations for slideshows, meeting and Web pages by using Impress."
 
+#: source/impress/registryitem_impress.ulf#STR_REG_VAL_NEW
+msgid  "&New"
+msgstr "&New"
+
 #: source/impress/registryitem_impress.ulf#STR_REG_VAL_SO60_SHOW
 msgid  "Show"
 msgstr "Show"
@@ -418,10 +422,6 @@ msgstr "Microsoft PowerPoint 97-2003 Template"
 #: source/impress/registryitem_impress.ulf#STR_REG_VAL_MS_POWERPOINT_TEMPLATE
 msgid  "Microsoft PowerPoint Template"
 msgstr "Microsoft PowerPoint Template"
-
-#: source/impress/registryitem_impress.ulf#STR_REG_VAL_NEW
-msgid  "&New"
-msgstr "&New"
 
 #: source/impress/module_impress.ulf#STR_NAME_MODULE_PRG_IMPRESS
 msgid  "%PRODUCTNAME Impress"
@@ -587,6 +587,10 @@ msgstr "Help about %PRODUCTNAME Math"
 msgid  "Create and edit scientific formulas and equations by using Math."
 msgstr "Create and edit scientific formulas and equations by using Math."
 
+#: source/math/registryitem_math.ulf#STR_REG_VAL_NEW
+msgid  "&New"
+msgstr "&New"
+
 #: source/math/registryitem_math.ulf#STR_REG_VAL_SO60_FORMULA
 msgid  "%SXWFORMATNAME %SXWFORMATVERSION Formula"
 msgstr "%SXWFORMATNAME %SXWFORMATVERSION Formula"
@@ -594,10 +598,6 @@ msgstr "%SXWFORMATNAME %SXWFORMATVERSION Formula"
 #: source/math/registryitem_math.ulf#STR_REG_VAL_OO_FORMULA
 msgid  "OpenDocument Formula"
 msgstr "OpenDocument Formula"
-
-#: source/math/registryitem_math.ulf#STR_REG_VAL_NEW
-msgid  "&New"
-msgstr "&New"
 
 #: source/onlineupdate/module_onlineupdate.ulf#STR_NAME_MODULE_OPT_ONLINEUPDATE
 msgid  "Online Update"
@@ -607,6 +607,10 @@ msgstr "Online Update"
 msgid  "Get automatically notified when a new update of %PRODUCTNAME becomes available."
 msgstr "Get automatically notified when a new update of %PRODUCTNAME becomes available."
 
+#: source/ooo/registryitem_ooo.ulf#STR_REG_VAL_NEW
+msgid  "&New"
+msgstr "&New"
+
 #: source/ooo/registryitem_ooo.ulf#STR_REG_VAL_INSTALL
 msgid  "&Install"
 msgstr "&Install"
@@ -615,17 +619,13 @@ msgstr "&Install"
 msgid  "OpenOffice.org 1.1 Configuration File"
 msgstr "OpenOffice.org 1.1 Configuration File"
 
-#: source/ooo/registryitem_ooo.ulf#STR_REG_VAL_APPCAPABILITY_DESCRIPTION_OOO
-msgid  "office productivity suite based on Apache OpenOffice project"
-msgstr "office productivity suite based on Apache OpenOffice project"
-
-#: source/ooo/registryitem_ooo.ulf#STR_REG_VAL_NEW
-msgid  "&New"
-msgstr "&New"
-
 #: source/ooo/registryitem_ooo.ulf#STR_REG_VAL_SO50_TEMPLATE_OOO
 msgid  "StarOffice 5.0 Template"
 msgstr "StarOffice 5.0 Template"
+
+#: source/ooo/registryitem_ooo.ulf#STR_REG_VAL_APPCAPABILITY_DESCRIPTION_OOO
+msgid  "office productivity suite based on Apache OpenOffice project"
+msgstr "office productivity suite based on Apache OpenOffice project"
 
 #: source/ooo/module_systemint.ulf#STR_NAME_MODULE_OPTIONAL_SYSTEMINTEGRATION
 msgid  "Desktop integration"
@@ -1707,6 +1707,10 @@ msgstr "Text Document"
 msgid  "Create and edit text and graphics in letters, reports, documents and Web pages by using Writer."
 msgstr "Create and edit text and graphics in letters, reports, documents and Web pages by using Writer."
 
+#: source/writer/registryitem_writer.ulf#STR_REG_VAL_NEW
+msgid  "&New"
+msgstr "&New"
+
 #: source/writer/registryitem_writer.ulf#STR_REG_VAL_SO60_TEXT
 msgid  "%SXWFORMATNAME %SXWFORMATVERSION Text Document"
 msgstr "%SXWFORMATNAME %SXWFORMATVERSION Text Document"
@@ -1754,10 +1758,6 @@ msgstr "Microsoft Word Template"
 #: source/writer/registryitem_writer.ulf#STR_REG_VAL_MS_RTF_DOCUMENT
 msgid  "Rich Text Document"
 msgstr "Rich Text Document"
-
-#: source/writer/registryitem_writer.ulf#STR_REG_VAL_NEW
-msgid  "&New"
-msgstr "&New"
 
 #: source/writer/module_writer.ulf#STR_NAME_MODULE_PRG_WRT
 msgid  "%PRODUCTNAME Writer"

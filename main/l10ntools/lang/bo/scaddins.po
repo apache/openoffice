@@ -437,7 +437,7 @@ msgstr "FACTDOUBLE"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Workday.1.String.Text
 msgid  "Returns the serial number of the date before or after a specified number of workdays"
-msgstr ""
+msgstr "སྟོན་པའི་ལས་ཀའི་ཉིན་གྱི་ཚེས་གྲངས་སྔོན་ནམ་རྗེས་ལ་བར་ཆོད་པའི་ཚེས་གྲངས་ཕྱིར་ལོག་པ།"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Workday.2.String.Text
 msgid  "Start date"
@@ -461,11 +461,11 @@ msgstr "holidays"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Workday.7.String.Text
 msgid  "List of date values of days off (vacation, holidays, etc.)"
-msgstr ""
+msgstr "འཁོར་ཞག་དང་ཁྲིམས་བཀོད་ངལ་གསོའི་དུས་སོགས་ཚུད་པའི་ཚེས་གྲངས་གཞི་གྲངས་ཤོག་ཚན།"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Yearfrac.1.String.Text
 msgid  "Returns the number of whole days between 'start date' and 'end date' as a year fraction"
-msgstr ""
+msgstr "འགོ་ཚུགས་ཚེས་གྲངས་དང་མཇུག་སྒྲིལ་ཚེས་གྲངས་དབར་གྱི་ཉིན་གྲངས་དང་ལོ་ཧྲིལ་པོའི་ཉིན་གྲངས་ཀྱི་བརྒྱ་ཆའི་གྲངས་བརྩི་རྒྱུ།"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Yearfrac.2.String.Text
 msgid  "Start date"
@@ -493,7 +493,7 @@ msgstr "གཏན་འཁེལ་སྐྱེས་ཀའི་ཉིན་ག
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Edate.1.String.Text
 msgid  "Returns the serial number of the date that is a specified number of months before or after the start date"
-msgstr ""
+msgstr "ངེས་པའི་ཚེས་གྲངས་ཞིག་གི་སྔོན་ལའམ་རྗེས་ལ་ཟླ་གྲངས་གཏན་ཕབ་པའི་ཚེས་གྲངས་བརྒྱུད་གྲས་གྲངས་ཕྱིར་ལོག་བྱེད།"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Edate.2.String.Text
 msgid  "Start date"
@@ -513,7 +513,7 @@ msgstr "ངེས་པའི་ཚེས་གྲངས་ཞིག་གི་
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Weeknum.1.String.Text
 msgid  "Returns the number of the calendar week in which the specified date occurs."
-msgstr ""
+msgstr "ཚེས་གྲངས་གཅིག་ལ་གཞིགས་ནས་ལོ་གཅིག་ནང་གི་གཟའ་འཁོར་རིམ་གྲངས་བརྩི་རྒྱུ།"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Weeknum.2.String.Text
 msgid  "Date"
@@ -529,11 +529,11 @@ msgstr "return_type"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Weeknum.5.String.Text
 msgid  "A number from 1 to 3 that specifies the day with which a week begins"
-msgstr ""
+msgstr "1ནས་3ནང་གི་གྲངས་ཀ་གཅིག་ནི་ཉིན་གང་ཞིག་གཟའ་འཁོར་གཅིག་གི་འགོ་ཚུགས་ཉིན་ཡིན་མིན་སྟོན་རྒྱུར་སྤྱོད་པ།"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Eomonth.1.String.Text
 msgid  "Returns the serial number of the last day of the month that comes a certain number of months before or after the start date"
-msgstr ""
+msgstr "ངེས་པའི་འགོ་ཚུགས་ཚེས་གྲངས་ཞིག་གི་སྔོན་ལ་མ་རྗེས་ཀྱི་ཟླ་བའི་ནང་གི་མཇུག་མཐའི་ཉིན་གྱི་རྒྱུད་གྲས་གྲངས་རྩིས་རྒྱག་རྒྱུ།"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Eomonth.2.String.Text
 msgid  "Start date"
@@ -577,7 +577,7 @@ msgstr "holidays"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Networkdays.7.String.Text
 msgid  "List of date values representing days off (vacation, holidays, etc.)"
-msgstr ""
+msgstr "འཁོར་ཞག་དང་ཁྲིམས་བཀོད་ངལ་གསོའི་དུས་སོགས་ཚུད་པའི་ཚེས་གྲངས་གཞི་གྲངས་ཤོག་ཚན།"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Iseven.1.String.Text
 msgid  "Returns the value 'true' if the number is even"
@@ -605,7 +605,7 @@ msgstr "གྲངས་ཀ།"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Multinomial.1.String.Text
 msgid  "Returns the multinomial coefficient of a set of numbers"
-msgstr ""
+msgstr "གྲངས་སྐོར་གྱི་ཐེམ་སྒྱུར་དང་གྲངས་སྐོར་སོ་སོའི་ཐེམ་སྒྱུར་བསྒྱུར་ཐོབ་ཀྱི་སྡུར་ཐང་བརྩི་རྒྱུ།"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Multinomial.2.String.Text
 msgid  "Number(s)"
@@ -613,7 +613,7 @@ msgstr "number(s)"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Multinomial.3.String.Text
 msgid  "Number or list of numbers for which you want the multinomial coefficient"
-msgstr ""
+msgstr "དེའི་ཐེམ་སྒྱུར་གྱི་སྡུར་ཐང་གི་གཞི་གྲངས་སམ་གཞི་གྲངས་ཤོག་ཚན་བརྩི་རྒྱུ།"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Seriessum.1.String.Text
 msgid  "Returns the sum of a power series"
@@ -649,7 +649,7 @@ msgstr "Coefficients"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Seriessum.9.String.Text
 msgid  "Set of coefficients by which each successive power of the variable x is multiplied"
-msgstr ""
+msgstr "x ཡི་རིམ་པ་ཁག་གི་རང་བསྒྱུར་ཕན་ཚུན་སྒྱུར་བའི་བཏགས་གྲངས་བརྒྱུས་གྲས་གཅིག་ཡིན།"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Quotient.1.String.Text
 msgid  "Returns the integer portion of a division"
@@ -829,7 +829,7 @@ msgstr "BesselK རྟེན་གྲངས་གཅིག་གི་ཐེམ�
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Bin2Oct.1.String.Text
 msgid  "Converts a binary number to an octal number"
-msgstr ""
+msgstr "གཉིས་གོང་སྒྲིལ་ལུགས་ཀྱི་གྲངས་ཀ་ཞིག་བརྒྱད་གོང་སྒྲིལ་ལུགས་ཀྱི་གྲངས་ཀར་ཕབ་བ།"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Bin2Oct.2.String.Text
 msgid  "Number"
@@ -861,7 +861,7 @@ msgstr "ཡི་གེར་རྩི་བའི་གཉིས་གོང་
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Bin2Hex.1.String.Text
 msgid  "Converts a binary number to a hexadecimal number"
-msgstr ""
+msgstr "གཉིས་གོང་སྒྲིལ་ལུགས་ཀྱི་གྲངས་ཀ་ཞིག་བཅུ་དྲུག་གོང་སྒྲིལ་ལུགས་ཀྱི་གྲངས་ཀར་ཕབ་བ།"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Bin2Hex.2.String.Text
 msgid  "Number"
@@ -881,7 +881,7 @@ msgstr "སྤྱོད་རྒྱུའི་ཡིག་རྟགས་ཁ་
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Oct2Bin.1.String.Text
 msgid  "Converts an octal number to a binary number"
-msgstr ""
+msgstr "བརྒྱད་གོང་སྒྲིལ་ལུགས་ཀྱི་གྲངས་ཀ་ཞིག་གཉིས་གོང་སྒྲིལ་ལུགས་ཀྱི་གྲངས་ཀར་ཕབ་བ།"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Oct2Bin.2.String.Text
 msgid  "Number"
@@ -901,7 +901,7 @@ msgstr "སྤྱོད་རྒྱུའི་ཡིག་རྟགས་ཁ་
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Oct2Dec.1.String.Text
 msgid  "Converts an octal number to a decimal number"
-msgstr ""
+msgstr "བརྒྱད་གོང་སྒྲིལ་ལུགས་ཀྱི་གྲངས་ཀ་ཞིག་བཅུ་གོང་སྒྲིལ་ལུགས་ཀྱི་གྲངས་ཀར་ཕབ་བ།"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Oct2Dec.2.String.Text
 msgid  "Number"
@@ -913,7 +913,7 @@ msgstr "ཡི་གེར་རྩི་བའི་བརྒྱད་གོང
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Oct2Hex.1.String.Text
 msgid  "Converts an octal number to a hexadecimal number"
-msgstr ""
+msgstr "བརྒྱད་གོང་སྒྲིལ་ལུགས་ཀྱི་གྲངས་ཀ་ཞིག་བཅུ་དྲུག་གོང་སྒྲིལ་ལུགས་ཀྱི་གྲངས་ཀར་ཕབ་བ།"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Oct2Hex.2.String.Text
 msgid  "Number"
@@ -953,7 +953,7 @@ msgstr "སྤྱོད་རྒྱུའི་ཡིག་རྟགས་ཁ་
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Dec2Hex.1.String.Text
 msgid  "Converts a decimal number to a hexadecimal number"
-msgstr ""
+msgstr "བཅུ་གོང་སྒྲིལ་ལུགས་ཀྱི་གྲངས་ཀ་ཞིག་བཅུ་དྲུག་གོང་སྒྲིལ་ལུགས་ཀྱི་གྲངས་ཀར་ཕབ་བ།"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Dec2Hex.2.String.Text
 msgid  "Number"
@@ -973,7 +973,7 @@ msgstr "སྤྱོད་རྒྱུའི་ཡིག་རྟགས་ཁ་
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Dec2Oct.1.String.Text
 msgid  "Converts a decimal number into an octal number"
-msgstr ""
+msgstr "བཅུ་གོང་སྒྲིལ་ལུགས་ཀྱི་གྲངས་ཀ་ཞིག་བརྒྱད་གོང་སྒྲིལ་ལུགས་ཀྱི་གྲངས་ཀར་ཕབ་བ།"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Dec2Oct.2.String.Text
 msgid  "Number"
@@ -993,7 +993,7 @@ msgstr "སྤྱོད་རྒྱུའི་ཡིག་རྟགས་ཁ་
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Hex2Bin.1.String.Text
 msgid  "Converts a hexadecimal number to a binary number"
-msgstr ""
+msgstr "བཅུ་དྲུག་གོང་སྒྲིལ་ལུགས་ཀྱི་གྲངས་ཀ་ཞིག་གཉིས་གོང་སྒྲིལ་ལུགས་ཀྱི་གྲངས་ཀར་ཕབ་པ།"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Hex2Bin.2.String.Text
 msgid  "Number"
@@ -1013,7 +1013,7 @@ msgstr "སྤྱོད་རྒྱུའི་ཡིག་རྟགས་ཁ་
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Hex2Dec.1.String.Text
 msgid  "Converts a hexadecimal number to a decimal number"
-msgstr ""
+msgstr "བཅུ་དྲུག་གོང་སྒྲིལ་ལུགས་ཀྱི་གྲངས་ཀ་ཞིག་བཅུ་གོང་སྒྲིལ་ལུགས་ཀྱི་གྲངས་ཀར་ཕབ་བ།"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Hex2Dec.2.String.Text
 msgid  "Number"
@@ -1025,7 +1025,7 @@ msgstr "ཡི་གེར་རྩི་བའི་བཅུ་དྲུག་
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Hex2Oct.1.String.Text
 msgid  "Converts a hexadecimal number to an octal number"
-msgstr ""
+msgstr "བཅུ་དྲུག་གོང་སྒྲིལ་ལུགས་ཀྱི་གྲངས་ཀ་ཞིག་བརྒྱད་གོང་སྒྲིལ་ལུགས་ཀྱི་གྲངས་ཀར་ཕབ་བ།"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Hex2Oct.2.String.Text
 msgid  "Number"
@@ -1097,7 +1097,7 @@ msgstr "ཆ་བསགས་གཅིག་གི་འོག་མཚམས།
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Gestep.1.String.Text
 msgid  "Tests whether a number is greater than a threshold value"
-msgstr ""
+msgstr "གྲངས་ཐང་གཅིག་ནི་རྗེས་མའི་ཅུང་ཆུང་བར་དོར་འཇུག་བྱས་པའི་གྲངས་ཐང་ལས་ཆེ་བ་ཡོད་མིན་བརྟག་དཔྱད་བྱེད་རྒྱུ།"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Gestep.2.String.Text
 msgid  "Number"
@@ -1517,7 +1517,7 @@ msgstr "མཇུག་འབྲས་ཀྱི་འཇལ་བྱེད་ཚ
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Amordegrc.1.String.Text
 msgid  "Returns the prorated linear depreciation of an asset for each accounting period"
-msgstr ""
+msgstr "རྩིས་པའི་འཁོང་ཡུན་ནང་སྡུར་ཚད་གཞིགས་ནས་བགོ་བཤའ་བྱེད་པའི་ཐིག་གཤིས་ཪྙིང་འགྱུར་དངུལ་གྲངས་བརྩི་བ།"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Amordegrc.2.String.Text
 msgid  "Cost"
@@ -1577,7 +1577,7 @@ msgstr "སྤྱོད་རྒྱུའི་ལོའི་ཉིན་གྲ
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Amorlinc.1.String.Text
 msgid  "Returns the prorated linear depreciation of an asset for each accounting period"
-msgstr ""
+msgstr "རྩིས་པའི་འཁོང་ཡུན་ནང་སྡུར་ཚད་གཞིགས་ནས་བགོ་བཤའ་བྱེད་པའི་ཐིག་གཤིས་ཪྙིང་འགྱུར་དངུལ་གྲངས་བརྩི་བ།"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Amorlinc.2.String.Text
 msgid  "Cost"
@@ -1637,7 +1637,7 @@ msgstr "སྤྱོད་རྒྱུའི་ལོའི་ཉིན་གྲ
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Accrint.1.String.Text
 msgid  "Returns the accrued interest for a security that pays periodic interest"
-msgstr ""
+msgstr "འཁོར་ཡུན་ཞིག་ལ་གཞིགས་ནས་སྤྲོད་པའི་རིན་ལྡན་དངུལ་འཛིན་(རྐྱང་རྐང་སྐྱེས་ཀ་)གྱི་སྐྱེད་ཀ་རྩིས་རྒྱག"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Accrint.2.String.Text
 msgid  "Issue"
@@ -1697,7 +1697,7 @@ msgstr "ལོའི་ཉིན་གྲངས་ཀྱི་རྨང་གྲ
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Accrintm.1.String.Text
 msgid  "Returns the accrued interest for a security that pays interest at maturity"
-msgstr ""
+msgstr "དུས་ཟིན་པའི་རིན་ལྡན་དངུལ་འཛིན་ཞིག་གི་སྐྱེད་ཀ་རྩིས་རྒྱག་པ་(རྐྱང་རྐང་སྐྱེད་ཀ་)"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Accrintm.2.String.Text
 msgid  "Issue"
@@ -1741,7 +1741,7 @@ msgstr "ལོའི་ཉིན་གྲངས་ཀྱི་རྨང་གྲ
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Received.1.String.Text
 msgid  "Returns the amount paid out at maturity for a fully invested security"
-msgstr ""
+msgstr "ཐེངས་གཅིག་ལ་སྐྱེས་ཀ་སྤྲོད་པའི་རིན་ལྡན་དངུལ་འཛིན་དུས་ཟིན་སྐབས་ཀྱི་དངུལ་གྲངས་སྡོམ་འབོར་བརྩི་རྒྱུ།"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Received.2.String.Text
 msgid  "Settlement"
@@ -1829,7 +1829,7 @@ msgstr "ལོའི་ཉིན་གྲངས་ཀྱི་རྨང་གྲ
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Duration.1.String.Text
 msgid  "Returns the annual Macaulay duration of a security with periodic interest payments"
-msgstr ""
+msgstr "དུས་ཚོད་ངེས་པར་སྐྱེས་ཀ་སྤྲོད་པའི་རིན་ལྡན་དངུལ་འཛིན་གྱི་ Macaulay དུས་མཚམས་རྩི་བ།"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Duration.2.String.Text
 msgid  "Settlement"
@@ -1901,7 +1901,7 @@ msgstr "འཁོར་ཡུག"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Cumprinc.1.String.Text
 msgid  "Returns the cumulative principal on a loan to be paid between two periods"
-msgstr ""
+msgstr "དངུལ་བུན་ཞིག་འཁོར་ཡུན་གཉིས་དབར་སྡེབ་རྩིས་སྐྱིན་པ་འཇལ་དགོས་པའི་མ་དངུལ་གྲངས་འབོར་བརྩི་རྒྱུ།"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Cumprinc.2.String.Text
 msgid  "Rate"
@@ -2005,7 +2005,7 @@ msgstr "དུས་ཟིན་རིགས།"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Price.1.String.Text
 msgid  "Returns the price per 100 currency units face value of a security that pays periodic interest"
-msgstr ""
+msgstr "དུས་ངེས་སྐྱེས་ཀ་སྤྲོད་པའི་ངོས་འབོར་ནི་སྒོར་100ཡིན་པའི་རིན་ལྡན་དངུལ་འཛིན་ཞིག་གི་རིན་ཐང་བརྩི་རྒྱུ།"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Price.2.String.Text
 msgid  "Settlement"
@@ -2065,7 +2065,7 @@ msgstr "ལོའི་ཉིན་གྲངས་ཀྱི་རྨང་གྲ
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Pricedisc.1.String.Text
 msgid  "Returns the price per 100 currency units face value of a discounted security"
-msgstr ""
+msgstr "སྐྱེས་ཀ་མི་རྩི་ཞིང་ངོས་འབོར་ནི་སྒོར་100ཡིན་པའི་རིན་ལྡན་དངུལ་འཛིན་གྱི་རིན་ཐང་བརྩི་རྒྱུ།"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Pricedisc.2.String.Text
 msgid  "Settlement"
@@ -2109,7 +2109,7 @@ msgstr "ལོའི་ཉིན་གྲངས་ཀྱི་རྨང་གྲ
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Pricemat.1.String.Text
 msgid  "Returns the price per 100 currency units face value of a security that pays interest at maturity"
-msgstr ""
+msgstr "དུས་ཟིན་སྐྱེས་ཀ་སྤྲོད་པའི་ངོས་འབོར་ནི་སྒོར་100ཡིན་པའི་རིན་ལྡན་དངུལ་འཛིན་ཞིག་གི་རིན་ཐང་བརྩི་རྒྱུ།"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Pricemat.2.String.Text
 msgid  "Settlement"
@@ -2161,7 +2161,7 @@ msgstr "ལོའི་ཉིན་གྲངས་ཀྱི་རྨང་གྲ
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Mduration.1.String.Text
 msgid  "Returns the Macaulay modified duration for a security with an assumed par value of 100 currency units"
-msgstr ""
+msgstr "ངོས་འབོར་ནི་སྒོར་100ཡིན་པའི་རིན་ལྡན་དངུལ་འཛིན་གྱི་ Macauley བཟོ་བཅོས་དུས་མཚམས་བརྩི་རྒྱུ།"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Mduration.2.String.Text
 msgid  "Settlement"
@@ -2233,7 +2233,7 @@ msgstr "འཁོར་ཡུག"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Dollarfr.1.String.Text
 msgid  "Converts a price expressed as a decimal into a price expressed as a fraction"
-msgstr ""
+msgstr "སིལ་གྲངས་ཀྱིས་མཚོན་པའི་རིན་ཐང་ཞིག་མཉམ་བསྲེས་ཚུལ་གྱི་གྲངས་ཆའི་མཚོན་ཐབས་ཀྱི་རིན་ཐང་ལ་སྒྱུར་བ།"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Dollarfr.2.String.Text
 msgid  "Decimal dollar"
@@ -2253,7 +2253,7 @@ msgstr "མ་ཆ།"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Dollarde.1.String.Text
 msgid  "Converts a price expressed as a fraction into a price expressed as a decimal"
-msgstr ""
+msgstr "གྲངས་ཆ་གཞིགས་གིས་མཚོན་པའི་རིན་ཐང་དེ་སིལ་གྲངས་མཚོན་ཐབས་ཀྱི་རིན་ཐང་ལ་ཕབ་སྒྱུར།"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Dollarde.2.String.Text
 msgid  "Fractional dollar"
@@ -2333,7 +2333,7 @@ msgstr "ལོའི་ཉིན་གྲངས་ཀྱི་རྨང་གྲ
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Yielddisc.1.String.Text
 msgid  "Returns the annual yield for a discounted security"
-msgstr ""
+msgstr "དུས་མ་ཟིན་པའི་སྐྱེས་ཀ་ཞིག་གི་རིན་ལྡན་དངུལ་འཛིན་གྱི་ལོའི་ཡོང་འབབ་ཚད་བརྩི་རྒྱུ།"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Yielddisc.2.String.Text
 msgid  "Settlement"
@@ -2429,7 +2429,7 @@ msgstr "ལོའི་ཉིན་གྲངས་ཀྱི་རྨང་གྲ
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Tbilleq.1.String.Text
 msgid  "Returns the bond-equivalent yield for a treasury bill"
-msgstr ""
+msgstr "རྒྱལ་ཁབ་ཞིག་གི་ནོར་སྲིད་པུའུ་དངུལ་འཛིན་གྱི་ཐང་མཚུངས་ཡོང་འབབ་ཚད་བརྩི་རྒྱུ།"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Tbilleq.2.String.Text
 msgid  "Settlement"
@@ -2513,7 +2513,7 @@ msgstr "རིན་ལྡན་དངུལ་འཛིན་གྱི་དང
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Oddfprice.1.String.Text
 msgid  "Returns the price per $100 face value of a security with an odd first period"
-msgstr ""
+msgstr "ངོས་འབོར་ནི་སྒོར་100ཡིན་ཞིང་ཐེངས་དང་པོའི་སྐྱེས་ཀ་སྤྲོད་པའི་དུས་གཏན་འཁེལ་མེད་པའི་རིན་ལྡན་དངུལ་འཛིན་གྱི་དངོས་ཡོད་རིན་ཐང་བརྩི་རྒྱུ།"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Oddfprice.2.String.Text
 msgid  "Settlement"
@@ -2589,7 +2589,7 @@ msgstr "ལོའི་ཉིན་གྲངས་ཀྱི་རྨང་གྲ
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Oddfyield.1.String.Text
 msgid  "Returns the yield of a security with an odd first period"
-msgstr ""
+msgstr "ཐེངས་དང་པོའི་སྐྱེས་ཀ་སྤྲོད་པའི་ཉིན་གཏན་མི་འཁེལ་བའི་རིན་ལྡན་དངུལ་འཛིན་ཞིག་གི་ཡོང་འབབ་ཚད་བརྩི་རྒྱུ།"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Oddfyield.2.String.Text
 msgid  "Settlement"
@@ -2665,7 +2665,7 @@ msgstr "ལོའི་ཉིན་གྲངས་ཀྱི་རྨང་གྲ
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Oddlprice.1.String.Text
 msgid  "Returns the price per $100 face value of a security with an odd last period"
-msgstr ""
+msgstr "ངོས་འབོར་ནི་སྒོར་100ཡིན་ཞིང་མཇུག་གི་སྐྱེད་ཀ་སྤྲོད་པའི་དུས་གཏན་མི་འཁེལ་བའི་རིན་ལྡན་དངུལ་འཛིན་གྱི་དངོས་ཡོད་རིན་ཐང་བརྩི་རྒྱུ།"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Oddlprice.2.String.Text
 msgid  "Settlement"
@@ -2733,7 +2733,7 @@ msgstr "ལོའི་ཉིན་གྲངས་ཀྱི་རྨང་གྲ
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Oddlyield.1.String.Text
 msgid  "Returns the yield of a security with an odd last period"
-msgstr ""
+msgstr "མཇུག་མཐའི་སྐྱེས་ཀ་སྤྲོད་རྒྱུ་གཏན་མི་འཁེལ་བའི་རིན་ལྡན་དངུལ་འཛིན་ཞིག་གི་་ཡོང་འབབ་ཚད་བརྩི་རྒྱུ།"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Oddlyield.2.String.Text
 msgid  "Settlement"
@@ -2801,7 +2801,7 @@ msgstr "ལོའི་ཉིན་གྲངས་ཀྱི་རྨང་གྲ
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Xirr.1.String.Text
 msgid  "Returns the internal rate of return for a non-periodic schedule of payments"
-msgstr ""
+msgstr "དུས་ངེས་མེད་པའི་དངུལ་སྨར་རྒྱུན་ཞིག་གི་ནང་རོལ་ཡོང་འབབ་ཚད་བརྩི་རྒྱུ།"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Xirr.2.String.Text
 msgid  "Values"
@@ -2829,7 +2829,7 @@ msgstr "XIRR རྟེན་གྲངས་རྩིས་རྒྱག་མཇ�
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Xnpv.1.String.Text
 msgid  "Returns the net present value for a non-periodic schedule of payments"
-msgstr ""
+msgstr "དུས་ངེས་མེད་ཀྱི་དངུལ་སྨར་རྒྱུན་ཚོ་གཅིག་གི་ཁེ་གཙང་དངོས་གྲངས་(མ་རྩ་)བརྩི་རྒྱུ།"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Xnpv.2.String.Text
 msgid  "Rate"
@@ -2901,7 +2901,7 @@ msgstr "ལོའི་ཉིན་གྲངས་ཀྱི་རྨང་གྲ
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Coupncd.1.String.Text
 msgid  "Returns the first coupon date after the settlement date"
-msgstr ""
+msgstr "རིན་ལྡན་དངུལ་འཛིན་ཞིག་གི་ཉོ་ཚོང་སྒྲིག་པའི་ཉིན་ཡོལ་རྗེས་ཀྱི་རྗེས་མའི་སྐྱེད་ཀ་སྤྲོད་པའི་ཚེས་གྲངས་བརྩི་བ།"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Coupncd.2.String.Text
 msgid  "Settlement"
@@ -2937,7 +2937,7 @@ msgstr "ལོའི་ཉིན་གྲངས་ཀྱི་རྨང་གྲ
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Coupdays.1.String.Text
 msgid  "Returns the number of days in the coupon period containing the settlement date"
-msgstr ""
+msgstr "རིན་ལྡན་དངུལ་འཛིན་ཞིག་གི་ཉོ་ཚོང་སྒྲིག་པའི་ཉིན་ཚུད་པའི་སྐྱེད་ཀ་སྤྲོད་པའི་ཉིན་གྲངས་བརྩི་བ།"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Coupdays.2.String.Text
 msgid  "Settlement"
@@ -2973,7 +2973,7 @@ msgstr "ལོའི་ཉིན་གྲངས་ཀྱི་རྨང་གྲ
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Coupdaysnc.1.String.Text
 msgid  "Returns the number of days from the settlement date to the next coupon date"
-msgstr ""
+msgstr "རིན་ལྡན་དངུལ་འཛིན་ཞིག་གི་ཉོ་ཚོང་སྒྲིག་པའི་ཉིན་ནས་རྗེས་མའི་སྐྱེད་ཀ་སྤྲོད་པའི་ཉིན་བར་གྱི་ཉིན་གྲངས་བརྩི་བ།"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Coupdaysnc.2.String.Text
 msgid  "Settlement"
@@ -3009,7 +3009,7 @@ msgstr "ལོའི་ཉིན་གྲངས་ཀྱི་རྨང་གྲ
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Coupdaybs.1.String.Text
 msgid  "Returns the number of days from the beginning of the coupon period to the settlement date"
-msgstr ""
+msgstr "རིན་ལྡན་དངུལ་འཛིན་ཞིག་ཉོ་ཚོང་འགོ་ཚུགས་ཉིན་ནས་སྐྱེད་ཀ་སྤྲོད་པའི་བར་གྱི་ཉིན་གྲངས་རྩི་རྒྱུ།"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Coupdaybs.2.String.Text
 msgid  "Settlement"
@@ -3045,7 +3045,7 @@ msgstr "ལོའི་ཉིན་གྲངས་ཀྱི་རྨང་གྲ
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Couppcd.1.String.Text
 msgid  "Returns the last coupon date preceding the settlement date"
-msgstr ""
+msgstr "རིན་ལྡན་དངུལ་འཛིན་ཞིག་གི་ཉོ་ཚོང་སྒྲིག་པའི་ཉིན་སྔོན་གྱི་མཐའ་མའི་སྐྱེད་ཀ་སྤྲོད་པའི་ཚེས་གྲངས།"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Couppcd.2.String.Text
 msgid  "Settlement"
@@ -3081,7 +3081,7 @@ msgstr "ལོའི་ཉིན་གྲངས་ཀྱི་རྨང་གྲ
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Coupnum.1.String.Text
 msgid  "Returns the number of coupons payable between the settlement and maturity dates"
-msgstr ""
+msgstr "རིན་ལྡན་དངུལ་འཛིན་ཞིག་གི་ཉོ་ཚོང་སྒྲིག་པའི་ཉིན་ནས་དུས་ཟིན་པའི་ཚེས་གྲངས་དབར་གྱི་སྐྱེད་ཀ་སྤྲོད་པའི་ཐེངས་གྲངས་བརྩི་བ།"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Coupnum.2.String.Text
 msgid  "Settlement"
@@ -3117,7 +3117,7 @@ msgstr "ལོའི་ཉིན་གྲངས་ཀྱི་རྨང་གྲ
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Fvschedule.1.String.Text
 msgid  "Returns the future value of the initial principal after a series of compound interest rates are applied"
-msgstr ""
+msgstr "བསྐྱར་གྱི་སྐྱེས་ཀ་མི་འདྲ་བ་བརྒྱུས་གྲས་གཅིག་གི་མ་དངུལ་གྱི་མ་འོངས་ཐང་བཙི་རྒྱུ།"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Fvschedule.2.String.Text
 msgid  "Principal"
@@ -3161,7 +3161,7 @@ msgstr "type"
 
 #: source/datefunc/datefunc.src#RID_DATE_FUNCTION_DESCRIPTIONS.DATE_FUNCDESC_DiffWeeks.7.String.Text
 msgid  "Type of calculation: Type=0 means the time interval, Type=1 means calendar weeks."
-msgstr ""
+msgstr "རིགས་བརྩི་རྒྱུ། Type=0 གྱིས་འཁོར་ཡུན་ནང་བསྡུས་པའི་གཟའ་འཁོར་ཁ་གྲངས་   Type=1 གིས་གཟའ་འཁོར་རིམ་གྲངས་མཚོན།"
 
 #: source/datefunc/datefunc.src#RID_DATE_FUNCTION_DESCRIPTIONS.DATE_FUNCDESC_DiffMonths.1.String.Text
 msgid  "Determines the number of months in a specific period."
@@ -3189,7 +3189,7 @@ msgstr "type"
 
 #: source/datefunc/datefunc.src#RID_DATE_FUNCTION_DESCRIPTIONS.DATE_FUNCDESC_DiffMonths.7.String.Text
 msgid  "Type of calculation: Type=0 means the time interval, Type=1 means calendar months."
-msgstr ""
+msgstr "རིགས་བརྩི་རྒྱུ།Type=0 གིས་དུས་དུམ་དེའི་ནང་བསྡུས་པའི་ཟླ་གྲངས་མཚོན་  Type=1 གིས་ཟླ་རིམ་གྲངས་མཚོན།"
 
 #: source/datefunc/datefunc.src#RID_DATE_FUNCTION_DESCRIPTIONS.DATE_FUNCDESC_DiffYears.1.String.Text
 msgid  "Calculates the number of years in a specific period."
@@ -3217,11 +3217,11 @@ msgstr "type"
 
 #: source/datefunc/datefunc.src#RID_DATE_FUNCTION_DESCRIPTIONS.DATE_FUNCDESC_DiffYears.7.String.Text
 msgid  "Type of calculation: Type=0 means the time interval, Type=1 means calendar years."
-msgstr ""
+msgstr "རིགས་བརྩི་རྒྱུ། Type=0 གྱིས་འཁོར་ཡུན་དེའི་ནང་བསྡུས་པའི་ལོ་གྲངས་མཚོན་ Type=1 གིས་ལོའི་རིམ་གྲངས་མཚོན།"
 
 #: source/datefunc/datefunc.src#RID_DATE_FUNCTION_DESCRIPTIONS.DATE_FUNCDESC_IsLeapYear.1.String.Text
 msgid  "Returns 1 (TRUE) if the date is a day of a leap year, otherwise 0 (FALSE)."
-msgstr ""
+msgstr "ཉིན་དེ་བཤོལ་ལོའི་ནང་གི་ཉིན་གཅིག་ཡིན་ན་1ཟློས་སྐྱེལ་བྱས་ (TRUE)  ལྡོག་ན་ 0 (FALSE)ཟློག་སྐྱེལ་བྱེད།"
 
 #: source/datefunc/datefunc.src#RID_DATE_FUNCTION_DESCRIPTIONS.DATE_FUNCDESC_IsLeapYear.2.String.Text
 msgid  "Date"
@@ -3233,7 +3233,7 @@ msgstr "ལོ་གཅིག་ནང་གི་ཉིན་གང་རུང
 
 #: source/datefunc/datefunc.src#RID_DATE_FUNCTION_DESCRIPTIONS.DATE_FUNCDESC_DaysInMonth.1.String.Text
 msgid  "Returns the number of days of the month in which the date entered occurs"
-msgstr ""
+msgstr "ངེས་སྟོན་གྱི་ཚེས་གྲངས་གནས་སའི་ཟླ་དེའི་ཉིན་གྲངས་ལན་སློག་རྒྱུ།"
 
 #: source/datefunc/datefunc.src#RID_DATE_FUNCTION_DESCRIPTIONS.DATE_FUNCDESC_DaysInMonth.2.String.Text
 msgid  "Date"
@@ -3245,7 +3245,7 @@ msgstr "ངེས་སྟོན་གྱི་ཟླ་དེའི་ནང་
 
 #: source/datefunc/datefunc.src#RID_DATE_FUNCTION_DESCRIPTIONS.DATE_FUNCDESC_DaysInYear.1.String.Text
 msgid  "Returns the number of days of the year in which the date entered occurs."
-msgstr ""
+msgstr "ངེས་སྟོན་གྱི་ཚེས་གྲངས་གནས་སའི་ལོ་དེའི་ཉིན་གྲངས་ལན་སློག་རྒྱུ།"
 
 #: source/datefunc/datefunc.src#RID_DATE_FUNCTION_DESCRIPTIONS.DATE_FUNCDESC_DaysInYear.2.String.Text
 msgid  "Date"
@@ -3257,7 +3257,7 @@ msgstr "ལོ་གཅིག་ནང་གི་ཉིན་གང་རུང
 
 #: source/datefunc/datefunc.src#RID_DATE_FUNCTION_DESCRIPTIONS.DATE_FUNCDESC_WeeksInYear.1.String.Text
 msgid  "Returns the number of weeks of the year in which the date entered occurs"
-msgstr ""
+msgstr "ངེས་སྟོན་གྱི་ཚེས་གྲངས་གནས་པའི་ལོ་ལ་ཡོད་པའི་གཟའ་འཁོར་གྲངས་ཟློས་སྐྱེལ་དགོས།"
 
 #: source/datefunc/datefunc.src#RID_DATE_FUNCTION_DESCRIPTIONS.DATE_FUNCDESC_WeeksInYear.2.String.Text
 msgid  "Date"
@@ -3269,7 +3269,7 @@ msgstr "ལོ་གཅིག་ནང་གི་ཉིན་གང་རུང
 
 #: source/datefunc/datefunc.src#RID_DATE_FUNCTION_DESCRIPTIONS.DATE_FUNCDESC_Rot13.1.String.Text
 msgid  "Encrypts or decrypts a text using the ROT13 algorithm"
-msgstr ""
+msgstr "ROT13 རྩིས་རྒྱག་ངེས་སྲོལ་ལ་བརྟེན་ནས་ཡིག་དེབ་གཅིག་ལ་གསང་སྣོན་ནམ་གསང་འགྲོལ་བྱེད།"
 
 #: source/datefunc/datefunc.src#RID_DATE_FUNCTION_DESCRIPTIONS.DATE_FUNCDESC_Rot13.2.String.Text
 msgid  "Text"

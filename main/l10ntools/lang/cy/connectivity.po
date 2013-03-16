@@ -119,6 +119,18 @@ msgstr "Llyfr Cyfeiriadau Thunderbird"
 msgid  "LDAP Address Book"
 msgstr "Llyfr Cyfeiriadau LDAP"
 
+#: source/drivers/mozab/mozab2.xcu#.Drivers.Installed.sdbc:address:mozilla:.DriverTypeDisplayName
+msgid  "SeaMonkey Address Book"
+msgstr "Llyfr Cyfeiriadau SeaMonkey"
+
+#: source/drivers/mozab/mozab2.xcu#.Drivers.Installed.sdbc:address:thunderbird:.DriverTypeDisplayName
+msgid  "Thunderbird Address Book"
+msgstr "Llyfr Cyfeiriadau Thunderbird"
+
+#: source/drivers/mozab/mozab2.xcu#.Drivers.Installed.sdbc:address:ldap:*.DriverTypeDisplayName
+msgid  "LDAP Address Book"
+msgstr "Llyfr Cyfeiriadau LDAP"
+
 #: source/drivers/mysql/mysql.xcu#.Drivers.Installed.sdbc:mysql:jdbc:*.DriverTypeDisplayName
 msgid  "MySQL (JDBC)"
 msgstr "MySQL (JDBC)"
@@ -153,7 +165,7 @@ msgstr "Llyfr Cyfeiriadau Outlook (MAPI)"
 
 #: source/resource/conn_shared_res.src#STR_NO_TABLE_CREATION_SUPPORT.String.Text
 msgid  "Creating tables is not supported for this kind of address books."
-msgstr ""
+msgstr "Nid yw creu tablau'n cae ei gynnal ar gyfer y math yma o lyfr cyfeiriadur."
 
 #: source/resource/conn_shared_res.src#STR_MOZILLA_IS_RUNNING.String.Text
 msgid  "Cannot create new address books while Mozilla is running."
@@ -161,11 +173,11 @@ msgstr "Methu creu llyfrau cyfeiriadur tra bod Mozilla yn rhedeg."
 
 #: source/resource/conn_shared_res.src#STR_COULD_NOT_RETRIEVE_AB_ENTRY.String.Text
 msgid  "An address book entry could not be retrieved, an unknown error occurred."
-msgstr ""
+msgstr "Nid oedd modd estyn cofnod llyfr cyfeiriadau, neu digwyddodd gwall anhysbys."
 
 #: source/resource/conn_shared_res.src#STR_COULD_NOT_GET_DIRECTORY_NAME.String.Text
 msgid  "An address book directory name could not be retrieved, an unknown error occurred."
-msgstr ""
+msgstr "Nid oedd modd estyn enw cyfeiriadur llyfr cyfeiriadau, neu digwyddodd gwall anhysbys."
 
 #: source/resource/conn_shared_res.src#STR_TIMEOUT_WAITING.String.Text
 msgid  "Timed out while waiting for the result."
@@ -177,11 +189,11 @@ msgstr "Digwyddodd gwall wrth weithredu ymholiad."
 
 #: source/resource/conn_shared_res.src#STR_MOZILLA_IS_RUNNIG_NO_CHANGES.String.Text
 msgid  "You can't make any changes to mozilla address book when mozilla is running."
-msgstr ""
+msgstr "Nid oes modd gwneud newidiadau i lyfr cyfeiriad Mozilla pan mae Mozilla'n rhedeg."
 
 #: source/resource/conn_shared_res.src#STR_FOREIGN_PROCESS_CHANGED_AB.String.Text
 msgid  "Mozilla Address Book has been changed out of this process, we can't modify it in this condition."
-msgstr ""
+msgstr "Mae Llyfr Cyfeiriadau Mozilla wedi ei newid tu allan i'r broses hon, nid oes modd ei newid yn y cyflwr hwn."
 
 #: source/resource/conn_shared_res.src#STR_CANT_FIND_ROW.String.Text
 msgid  "Can't find the requested row."
@@ -201,7 +213,7 @@ msgstr "Nid yw'r gyrrwr yn cynnal y swyddogaeth 'COUNT'."
 
 #: source/resource/conn_shared_res.src#STR_STMT_TYPE_NOT_SUPPORTED.String.Text
 msgid  "This statement type not supported by this database driver."
-msgstr ""
+msgstr "Nid yw'r math yma o ddatganiad yn cael ei gynnal gan yrrwr y gronfa ddata hon."
 
 #: source/resource/conn_shared_res.src#STR_UNSPECIFIED_ERROR.String.Text
 msgid  "An unknown error occured."
@@ -233,7 +245,7 @@ msgstr "Nid oes modd creu rhes newydd."
 
 #: source/resource/conn_shared_res.src#STR_QUERY_INVALID_IS_NULL_COLUMN.String.Text
 msgid  "The query can not be executed. The 'IS NULL' can only be used with a column name."
-msgstr ""
+msgstr "Nid oes modd gweithredu'r ymholiad. Dim ond gydag enw colofn mae modd defnyddio 'IS NULL'."
 
 #: source/resource/conn_shared_res.src#STR_ILLEGAL_MOVEMENT.String.Text
 msgid  "Illegal cursor movement occured."
@@ -241,7 +253,7 @@ msgstr "Digwyddodd symudiad cyrchwr anghyfreithlon."
 
 #: source/resource/conn_shared_res.src#STR_COMMIT_ROW.String.Text
 msgid  "Please commit row '$position$' before update rows or insert new rows."
-msgstr ""
+msgstr "Cyflwynwch res '$position$' cyn diweddaru rhesi neu fewnosod rhesi newydd."
 
 #: source/resource/conn_shared_res.src#STR_INVALID_ROW_UPDATE.String.Text
 msgid  "The update call can not be executed. The row is invalid."
@@ -268,12 +280,12 @@ msgid  "It doesn't exist a connection to the database."
 msgstr "Nid yw'n bodoli fel cysylltiad yn y gronfa ddata."
 
 #: source/resource/conn_shared_res.src#STR_WRONG_PARAM_INDEX.String.Text
-msgid  "You tried to set a parameter at position '$pos$' but there is/are only '$count$' parameter(s) allowed. One reason may be that the property "ParameterNameSubstitution" is not set to TRUE in the data source."
-msgstr ""
+msgid  "You tried to set a parameter at position '$pos$' but there is/are only '$count$' parameter(s) allowed. One reason may be that the property \"ParameterNameSubstitution\" is not set to TRUE in the data source."
+msgstr "Rydych wedi ceisio gosod paramedr ar safle '$pos$' ond dim ond caniatâd i '$count$' paramedr sydd. Un rheswm gall fod yw nad yw priodwedd \"ParameterNameSubstitution\" wedi ei osod i TRUE yn ffynhonnell y data."
 
 #: source/resource/conn_shared_res.src#STR_INPUTSTREAM_WRONG_LEN.String.Text
 msgid  "End of InputStream reached before satisfying length specified when InputStream was set."
-msgstr ""
+msgstr "Wedi cyrraedd diwedd InputStream cyn bodloni'r hyd a bennwyd pan osodwyd InputStream."
 
 #: source/resource/conn_shared_res.src#STR_NO_INPUTSTREAM.String.Text
 msgid  "The input stream was not set."
@@ -313,7 +325,7 @@ msgstr "Nid yw'r gyrrwr yn cynnal y swyddogaeth '$functionname$'."
 
 #: source/resource/conn_shared_res.src#STR_UNSUPPORTED_FEATURE.String.Text
 msgid  "The driver does not support the functionality for '$featurename$'. It is not implemented."
-msgstr ""
+msgstr "Nid yw'r gyrrwr yn cynnal y swyddogaeth '$functionname$'.Nid yw wedi ei wireddu eto."
 
 #: source/resource/conn_shared_res.src#STR_FORMULA_WRONG.String.Text
 msgid  "The formula for TypeInfoSettings is wrong!"
@@ -321,11 +333,11 @@ msgstr "Mae'r fformiwla ar gyfer TypeInfoSettings yn anghywir!"
 
 #: source/resource/conn_shared_res.src#STR_STRING_LENGTH_EXCEEDED.String.Text
 msgid  "The string '$string$' exceeds the maximum length of $maxlen$ characters when converted to the target character set '$charset$'."
-msgstr ""
+msgstr "Mae'r llinyn '$string$' yn fwy na hyd mwyaf nodau $maxlen$ pan cant eu trosi i'r set nod targed  '$charset$'."
 
 #: source/resource/conn_shared_res.src#STR_CANNOT_CONVERT_STRING.String.Text
 msgid  "The string '$string$' cannot be converted using the encoding '$charset$'."
-msgstr ""
+msgstr "Nid oes modd trosi llinyn '$string$' gan ddefnyddio amgodiad '$charset'."
 
 #: source/resource/conn_shared_res.src#STR_URI_SYNTAX_ERROR.String.Text
 msgid  "The connection URL is invalid."
@@ -341,23 +353,23 @@ msgstr "Nid oes modd gweithredu'r ymholiad. Mae'r gweithredydd yn rhy gymhleth."
 
 #: source/resource/conn_shared_res.src#STR_QUERY_INVALID_LIKE_COLUMN.String.Text
 msgid  "The query can not be executed. You cannot use 'LIKE' with columns of this type."
-msgstr ""
+msgstr "Nid owes modd gweithredu'r ymholiad. Nid oes modd defnyddio 'LIKE' gyda cholofnau o'r math yma."
 
 #: source/resource/conn_shared_res.src#STR_QUERY_INVALID_LIKE_STRING.String.Text
 msgid  "The query can not be executed. 'LIKE' can be used with a string argument only."
-msgstr ""
+msgstr "Nid oes modd gweithredu'r ymholiad. Dim ond gydag ymresymiad llinyn y mae modd defnyddio 'LIKE'."
 
 #: source/resource/conn_shared_res.src#STR_QUERY_NOT_LIKE_TOO_COMPLEX.String.Text
 msgid  "The query can not be executed. The 'NOT LIKE' condition is too complex."
-msgstr ""
+msgstr "Nid oes modd gweithredu'r ymholiad. Mae'r cyflwr 'NOT LIKE' yn rhy gymhleth."
 
 #: source/resource/conn_shared_res.src#STR_QUERY_LIKE_WILDCARD.String.Text
 msgid  "The query can not be executed. The 'LIKE' condition contains wildcard in the middle."
-msgstr ""
+msgstr "Nid oes modd gweithredu'r ymholiad. Mae'r cyflwr 'NOT LIKE' yn cynnwys nod chwiliwr yn y canol."
 
 #: source/resource/conn_shared_res.src#STR_QUERY_LIKE_WILDCARD_MANY.String.Text
 msgid  "The query can not be executed. The 'LIKE' condition contains too many wildcards."
-msgstr ""
+msgstr "Nid oes modd gweithredu'r ymholiad. Mae'r cyflwr 'NOT LIKE' yn cynnwys gormod o nod chwilwyr."
 
 #: source/resource/conn_shared_res.src#STR_INVALID_COLUMNNAME.String.Text
 msgid  "The column name '$columnname$' is not valid."
@@ -377,7 +389,7 @@ msgstr "Nid oedd modd llwytho'r ffeil $filename$."
 
 #: source/resource/conn_shared_res.src#STR_LOAD_FILE_ERROR_MESSAGE.String.Text
 msgid  "The attempt to load the file resulted in the following error message ($exception_type$):\n\n$error_message$"
-msgstr ""
+msgstr "Cynhyrchodd yr ymgais i lwytho'r ffeil y neges gwall canlynol ($exception_type$):\n\n$error_message$"
 
 #: source/resource/conn_shared_res.src#STR_TYPE_NOT_CONVERT.String.Text
 msgid  "The type could not be converted."
@@ -417,15 +429,15 @@ msgstr "Methu creu golwg: gwrthrych heb orchymyn."
 
 #: source/resource/conn_shared_res.src#STR_NO_CONNECTION.String.Text
 msgid  "The connection could not be created. May be the necessary data provider is not installed."
-msgstr ""
+msgstr "Nid oedd modd creu'r cysylltiad. Efallai nad yw'r darparwr data angenrheidiol wedi ei osod."
 
 #: source/resource/conn_shared_res.src#STR_COULD_NOT_DELETE_INDEX.String.Text
 msgid  "The index could not be deleted. An unknown error while accessing the file system occured."
-msgstr ""
+msgstr "Nid oedd modd dileu'r mynegai. Digwyddodd gwall anhysbys wrth gael mynediad at y system ffeiliau."
 
 #: source/resource/conn_shared_res.src#STR_ONL_ONE_COLUMN_PER_INDEX.String.Text
 msgid  "The index could not be created. Only one column per index is allowed."
-msgstr ""
+msgstr "Nid oedd modd creu'r mynegai. Dim ond caniatâd ar gyfer un golofn y mynegai."
 
 #: source/resource/conn_shared_res.src#STR_COULD_NOT_CREATE_INDEX_NOT_UNIQUE.String.Text
 msgid  "The index could not be created. The values are not unique."
@@ -437,11 +449,11 @@ msgstr "Nid oedd modd creu mynegai. Digwyddodd gwall anhysbys."
 
 #: source/resource/conn_shared_res.src#STR_COULD_NOT_CREATE_INDEX_NAME.String.Text
 msgid  "The index could not be created. The file '$filename$' is used by an other index."
-msgstr ""
+msgstr "Nid oedd modd creu mynegai. Mae'r ffeil  '$filename$' yn cael ei ddefnyddio gan fynegai arall."
 
 #: source/resource/conn_shared_res.src#STR_COULD_NOT_CREATE_INDEX_KEYSIZE.String.Text
 msgid  "The index could not be created. The size of the chosen column is to big."
-msgstr ""
+msgstr "Nid oedd modd creu'r mynegai. Mae maint y golofn hon yn rhy fawr"
 
 #: source/resource/conn_shared_res.src#STR_SQL_NAME_ERROR.String.Text
 msgid  "The name '$name$' doesn't match SQL naming constraints."
@@ -472,28 +484,28 @@ msgid  "Duplicate value found in column '$columnname$'."
 msgstr "Gwerth dyblyg wedi ei ganfod yn '$columnname$'."
 
 #: source/resource/conn_shared_res.src#STR_INVALID_COLUMN_DECIMAL_VALUE.String.Text
-msgid  "The '$columnname$' column has been defined as a "Decimal" type, the max. length is $precision$ characters (with $scale$ decimal places).\n\nThe specified value "$value$ is longer than the number of digits allowed."
-msgstr ""
+msgid  "The '$columnname$' column has been defined as a \"Decimal\" type, the max. length is $precision$ characters (with $scale$ decimal places).\n\nThe specified value \"$value$ is longer than the number of digits allowed."
+msgstr "Mae'r golofn '$columnname$' wedi ei diffinio fel math \"Degol\", yr hyd mwyaf yw $precision$ nod (gyda $scale$ man degol).\n\nMae'r gwerth yma \"$value$ yn hirach na'r nifer o nodau sy'n cael eu caniatau."
 
 #: source/resource/conn_shared_res.src#STR_COLUMN_NOT_ALTERABLE.String.Text
 msgid  "The column '$columnname$' could not be altered. May be the file system is write protected."
-msgstr ""
+msgstr "Nid oedd modd newid colofn '$columnname$'. Efallai fod y system ffeil wedi ei amddiffyn rhag ysgrifennu."
 
 #: source/resource/conn_shared_res.src#STR_INVALID_COLUMN_VALUE.String.Text
 msgid  "The column '$columnname$' could not be updated. The value is invalid for that column."
-msgstr ""
+msgstr "Nid oedd modd diweddaru colofn '$columnname$'. Mae'r gwerth yn annilys ar gyfer y golofn honno."
 
 #: source/resource/conn_shared_res.src#STR_COLUMN_NOT_ADDABLE.String.Text
 msgid  "The column '$columnname$' could not be added. May be the file system is write protected."
-msgstr ""
+msgstr "Nid oedd modd ychwanegu colofn '$columnname$'. Efallai fod y system ffeil wedi ei amddiffyn rhag ysgrifennu."
 
 #: source/resource/conn_shared_res.src#STR_COLUMN_NOT_DROP.String.Text
 msgid  "The column at position '$position$' could not be dropped. May be the file system is write protected."
-msgstr ""
+msgstr "Nid oedd modd gollwng colofn ar safle '$position$'. Efallai fod y system ffeil wedi ei amddiffyn rhag ysgrifennu."
 
 #: source/resource/conn_shared_res.src#STR_TABLE_NOT_DROP.String.Text
 msgid  "The table '$tablename$' could not be dropped. May be the file system is write protected."
-msgstr ""
+msgstr "Nid oedd modd gollwng tabl '$tablename$'. Efallai fod y system ffeil wedi ei amddiffyn rhag ysgrifennu."
 
 #: source/resource/conn_shared_res.src#STR_COULD_NOT_ALTER_TABLE.String.Text
 msgid  "The table could not be altered."
@@ -512,24 +524,24 @@ msgid  "Can only sort by table columns."
 msgstr "Didoli yn ôl colofnau tabl yn unig."
 
 #: source/resource/conn_shared_res.src#STR_QUERY_COMPLEX_COUNT.String.Text
-msgid  "The query can not be executed. It is too complex. Only "COUNT(*)" is supported."
-msgstr ""
+msgid  "The query can not be executed. It is too complex. Only \"COUNT(*)\" is supported."
+msgstr "Nid oes modd gweithredu'r ymholiad. Mae'n rhy gymhleth. Dim ond \"COUNT(*)\" sy'n cael ei gynnal."
 
 #: source/resource/conn_shared_res.src#STR_QUERY_INVALID_BETWEEN.String.Text
 msgid  "The query can not be executed. The 'BETWEEN' arguments are not correct."
-msgstr ""
+msgstr "Nid oes modd gweithredu'r ymholiad. Nid yw'r ymresymiad 'BETWEEN' yn gywir."
 
 #: source/resource/conn_shared_res.src#STR_QUERY_FUNCTION_NOT_SUPPORTED.String.Text
 msgid  "The query can not be executed. The function is not supported."
-msgstr ""
+msgstr "Nid oes modd gweithredu'r ymholiad. Nid yw'r swyddogaeth yn cael ei gynnal."
 
 #: source/resource/conn_shared_res.src#STR_TABLE_READONLY.String.Text
 msgid  "The table can not be changed. It is read only."
 msgstr "Nid oes modd newid y tabl. Darllen yn unig."
 
 #: source/resource/conn_shared_res.src#STR_DELETE_ROW.String.Text
-msgid  "The row could not be deleted. The option "Display inactive records" is set."
-msgstr ""
+msgid  "The row could not be deleted. The option \"Display inactive records\" is set."
+msgstr "Nid oes modd dileu'r rhes. Mae'r dewis \"Dangos cofnodion anactif\" wedi ei osod."
 
 #: source/resource/conn_shared_res.src#STR_ROW_ALREADY_DELETED.String.Text
 msgid  "The row could not be deleted. It is already deleted."
@@ -589,15 +601,15 @@ msgstr "Nid oes gosodiad KDE addas ar gael."
 
 #: source/resource/conn_shared_res.src#STR_KDE_VERSION_TOO_OLD.String.Text
 msgid  "KDE version $major$.$minor$ or higher is required to access the KDE Address Book."
-msgstr ""
+msgstr "Mae angen fersiwn KDE $major$.$minor$ neu uwch ar gyfer mynediad at Lyfr Cyfeiriad KDE."
 
 #: source/resource/conn_shared_res.src#STR_KDE_VERSION_TOO_NEW.String.Text
 msgid  "The found KDE version is too new. Only KDE up to version $major$.$minor$ is known to work with this product.\n"
-msgstr ""
+msgstr "Mae'r fersiwn gyfredol o KDE yn rhy ddiweddar. Dim ond KDE hyd at fersiwn $major$.$minor$ sy'n hysbys ei bod yn gweithio gyda 'r cynnyrch hwn.\n"
 
 #: source/resource/conn_shared_res.src#STR_KDE_VERSION_TOO_NEW_WORK_AROUND.String.Text
 msgid  "If you are sure that your KDE version works, you might execute the following Basic macro to disable this version check:\n\n"
-msgstr ""
+msgstr "Os ydych yn siŵr fod eich fersiwn chi o KDE yn gweithio, gallwch weithredu'r macro Basic canlynol er mwyn anablu gwiriad y fersiwn:\n"
 
 #: source/resource/conn_shared_res.src#STR_PARA_ONLY_PREPARED.String.Text
 msgid  "Parameters can appear only in prepared statements."
@@ -613,19 +625,19 @@ msgstr "Heb ganfod gosodiad Mac OS addas."
 
 #: source/resource/conn_shared_res.src#STR_NO_DISK_SPACE.String.Text
 msgid  "The database file '$filename$' could not be created. Please check your disk space."
-msgstr ""
+msgstr "Nid oedd modd creu'r ffeil cronfa ddata '$filename$'. Gwiriwch eich gofod ar ddisg."
 
 #: source/resource/conn_shared_res.src#STR_COMMAND_NOT_FOUND.String.Text
 msgid  "The database '$databasename$' could not be started because the command '$progname$' could not be executed."
-msgstr ""
+msgstr "Nid oedd modd cychwyn y gronfa ddata '$databasename$' am nad oedd modd gweithredu'r gorchymyn '$progname$'."
 
 #: source/resource/conn_shared_res.src#STR_DATABASE_NEEDS_CONVERTING.String.Text
 msgid  "The current database need to be converted. Please insert control user  and password."
-msgstr ""
+msgstr "Rhaid trosi'r gronfa ddata presennol. Rhowch ddefnyddiwr rheoli  a chyfrinair."
 
 #: source/resource/conn_shared_res.src#STR_USER_NO_DELETE.String.Text
 msgid  "This user couldn't be deleted. Otherwise the database stays in a inconsistent state."
-msgstr ""
+msgstr "Nid oedd modd dileu'r defnyddiwr. Fel arall mae'r gronfa ddata'n aros mewn cyflwr anghyson."
 
 #: source/resource/conn_shared_res.src#STR_NO_STROAGE.String.Text
 msgid  "The connection can not be established. No storage or URL was given."
@@ -633,7 +645,7 @@ msgstr "Nid oedd modd creu'r cysylltiad. Ni roddwyd storfa na URL."
 
 #: source/resource/conn_shared_res.src#STR_INVALID_FILE_URL.String.Text
 msgid  "The given URL contains no valid local file system path. Please check the location of your database file."
-msgstr ""
+msgstr "Nid yw'r URL yma'n cynnwys llwybr system ffeil lleol. Gwiriwch leoliad eich ffeil cronfa ddata."
 
 #: source/resource/conn_shared_res.src#STR_NO_TABLE_CONTAINER.String.Text
 msgid  "An error occured while obtaining the connection's table container."
@@ -657,7 +669,7 @@ msgstr "Mae'r weithred recordio wedi ei hatal."
 
 #: source/resource/conn_error_message.src#256 + 2*200 + 0.String.Text
 msgid  "The statement contains a cyclic reference to one or more sub queries."
-msgstr ""
+msgstr "Mae'r gosodiad yn cynnwys cyfeirnod cylchol i un neu fwy o is ymholiadau."
 
 #: source/resource/conn_error_message.src#256 + 2*300 + 0.String.Text
 msgid  "The name must not contain any slashes ('/')."
@@ -686,15 +698,3 @@ msgstr "Dim $1$ yn bodoli."
 #: source/resource/conn_error_message.src#256 + 2*550 + 0.String.Text
 msgid  "Unable to display the complete table content. Please apply a filter."
 msgstr "Methu dangos cynnwys y tabl llawn. Mae angen gosod hidl."
-
-#: source/drivers/mozab/mozab2.xcu#.Drivers.Installed.sdbc:address:mozilla:.DriverTypeDisplayName
-msgid  "SeaMonkey Address Book"
-msgstr "Llyfr Cyfeiriadau SeaMonkey"
-
-#: source/drivers/mozab/mozab2.xcu#.Drivers.Installed.sdbc:address:thunderbird:.DriverTypeDisplayName
-msgid  "Thunderbird Address Book"
-msgstr "Llyfr Cyfeiriadau Thunderbird"
-
-#: source/drivers/mozab/mozab2.xcu#.Drivers.Installed.sdbc:address:ldap:*.DriverTypeDisplayName
-msgid  "LDAP Address Book"
-msgstr "Llyfr Cyfeiriadau LDAP"

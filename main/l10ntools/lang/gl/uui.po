@@ -85,7 +85,7 @@ msgstr "Introducir o contrasinal"
 
 #: source/passworddlg.src#DLG_UUI_PASSWORD.STR_PASSWORD_MISMATCH.String.Text
 msgid  "The confirmation password did not match the password. Set the password again by entering the same password in both boxes."
-msgstr ""
+msgstr "O contrasinal de confirmación non coincide co contrasinal. Estabeleza o contrasinal outra vez escribindo o mesmo contrasinal en ambas caixas."
 
 #: source/trylater.src#STR_TRYLATER_TITLE.String.Text
 msgid  "Document in Use"
@@ -93,7 +93,7 @@ msgstr "Documento en uso"
 
 #: source/trylater.src#STR_TRYLATER_MSG.String.Text
 msgid  "Document file '$(ARG1)' is locked for editing by:\n\n$(ARG2)\n\nTry again later to save document or save a copy of that document.\n\n"
-msgstr ""
+msgstr "O ficheiro '$(ARG1)' está bloqueado para edición por:\n\n$(ARG2)\n\nTénte gardar o seu documento máis tarde ou garde unha copia do documento.\n\n"
 
 #: source/trylater.src#STR_TRYLATER_RETRYSAVING_BTN.String.Text
 msgid  "~Retry Saving"
@@ -137,7 +137,7 @@ msgstr "O destino xa existe."
 
 #: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_IO_MODULESIZEEXCEEDED & ERRCODE_RES_MASK).String.Text
 msgid  "You are about to save/export a password protected basic library containing module(s) \n$(ARG1)\nwhich are too large to store in binary format. If you wish users that don't have access to the library password to be able to run macros in those module(s) you must split those modules into a number of smaller modules. Do you wish to continue to save/export this library?"
-msgstr ""
+msgstr "Está a punto de gardar/exportar unha biblioteca básica protexida con contrasinal que contén módulo(s) \n$(ARG1)\nque é demasiado grande para almacenala en formato binario. Se quere que os usuarios que non teñan acceso ao contrasinal da biblioteca poidan executar macros neses módulos debe dividilos nun número menor de módulos. Quere continuar a gardar/exportar esta biblioteca?"
 
 #: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_IO_BADCRC & ERRCODE_RES_MASK).String.Text
 msgid  "The data from $(ARG1) has an incorrect checksum."
@@ -173,7 +173,7 @@ msgstr "$(ARG1) non está preparado."
 
 #: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_IO_NOTSAMEDEVICE & ERRCODE_RES_MASK).String.Text
 msgid  "Action impossible: $(ARG1) and $(ARG2) are different devices (drives)."
-msgstr ""
+msgstr "Acción imposíbel: $(ARG1) e $(ARG2) son dispositivos (unidades) diferentes."
 
 #: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_IO_GENERAL & ERRCODE_RES_MASK).String.Text
 msgid  "General input/output error while accessing $(ARG1)."
@@ -201,7 +201,7 @@ msgstr "A operación efectuada en $(ARG1) foi iniciada cun parámetro incorrecto
 
 #: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_IO_ISWILDCARD & ERRCODE_RES_MASK).String.Text
 msgid  "The operation cannot be performed because $(ARG1) contains wildcards."
-msgstr ""
+msgstr "Non se puido executar a operación porque $(ARG1) contén caracteres comodín."
 
 #: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_IO_LOCKVIOLATION & ERRCODE_RES_MASK).String.Text
 msgid  "Error during shared access to $(ARG1)."
@@ -225,7 +225,7 @@ msgstr "A ruta $(ARG1) non existe."
 
 #: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_IO_NOTSUPPORTED & ERRCODE_RES_MASK).String.Text
 msgid  "The operation on $(ARG1) is not supported on this operating system."
-msgstr ""
+msgstr "A operación efectuada en $(ARG1) non é compatíbel con este sistema operativo."
 
 #: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_IO_NOTADIRECTORY & ERRCODE_RES_MASK).String.Text
 msgid  "$(ARG1) is not a directory."
@@ -241,11 +241,11 @@ msgstr "Non hai espazo libre no dispositivo $(ARG1)."
 
 #: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_IO_TOOMANYOPENFILES & ERRCODE_RES_MASK).String.Text
 msgid  "The operation on $(ARG1) cannot be performed because too many files are already open."
-msgstr ""
+msgstr "Non se puido executar a operación en $(ARG1) por causa do exceso de ficheiros abertos."
 
 #: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_IO_OUTOFMEMORY & ERRCODE_RES_MASK).String.Text
 msgid  "The operation on $(ARG1) cannot be performed because there is no more memory available."
-msgstr ""
+msgstr "Non se puido executar a operación en $(ARG1) por falta de memoria."
 
 #: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_IO_PENDING & ERRCODE_RES_MASK).String.Text
 msgid  "The operation on $(ARG1) cannot continue because more data is pending."
@@ -289,11 +289,11 @@ msgstr "Non hai compatibilidade coa versión Java instalada $(ARG1)."
 
 #: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_WRONGJAVA_MIN & ERRCODE_RES_MASK).String.Text
 msgid  "The installed Java version is not supported, at least version $(ARG1) is required."
-msgstr ""
+msgstr "Non hai compatibilidade coa versión Java instalada. Necesítase usar polo menos a versión $(ARG1)."
 
 #: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_WRONGJAVA_VERSION_MIN & ERRCODE_RES_MASK).String.Text
 msgid  "The installed Java version $(ARG1) is not supported, at least version $(ARG2) is required."
-msgstr ""
+msgstr "Non hai compatibilidade coa versión $(ARG1) de Java instalada. Necesítase usar polo menos a versión $(ARG2)."
 
 #: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_BADPARTNERSHIP & ERRCODE_RES_MASK).String.Text
 msgid  "The data associated with the partnership is corrupted."
@@ -325,43 +325,43 @@ msgstr "Non é posíbel crear o obxecto no cartafol $(ARG1)."
 
 #: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_IO_UNSUPPORTEDOVERWRITE & ERRCODE_RES_MASK).String.Text
 msgid  "%PRODUCTNAME cannot keep files from being overwritten when this transmission protocol is used. Do you want to continue anyway?"
-msgstr ""
+msgstr "%PRODUCTNAME non pode evitar que se substitúan os ficheiros cando se usa este protocolo de transmisión. Desexa continuar de toda maneiras?"
 
 #: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_IO_BROKENPACKAGE & ERRCODE_RES_MASK).String.Text
 msgid  "The file '$(ARG1)' is corrupt and therefore cannot be opened. %PRODUCTNAME can try to repair the file.\n\nThe corruption could be the result of document manipulation or of structural document damage due to data transmission.\n\nWe recommend that you do not trust the content of the repaired document.\nExecution of macros is disabled for this document.\n\nShould %PRODUCTNAME repair the file?\n"
-msgstr ""
+msgstr "O ficheiro '$(ARG1)' esta'corrupto e daquela non se pode abrir. %PRODUCTNAME pode tentar reparar o ficheiro.\n\nA corrupción podería ser o resultado da manipulación do documento ou dalgún dano estrutural debido á transmisión de datos.\n\nRecomendámoslle que non confíe no contido do documentos reparado.\nEstá desactivada a execución de macros para este documento.\n\nDebería %PRODUCTNAME reparar este ficheiro?\n"
 
 #: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_IO_BROKENPACKAGE_CANTREPAIR & ERRCODE_RES_MASK).String.Text
 msgid  "The file '$(ARG1)' could not be repaired and therefore cannot be opened."
-msgstr ""
+msgstr "Non se puido reparar o ficheiro '$(ARG1)' e por iso non se pode abrir."
 
 #: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_CONFIGURATION_BROKENDATA_NOREMOVE & ERRCODE_RES_MASK).String.Text
 msgid  "Configuration data in '$(ARG1)' is corrupted. Without this data some functions may not operate correctly.\nDo you want to continue startup of %PRODUCTNAME without the corrupted configuration data?"
-msgstr ""
+msgstr "Os datos de configuración de '$(ARG1)' están danados. Sen eles talvez non se executen correctamente algunhas funcións.\nDesexa continuar a iniciar %PRODUCTNAME sen os datos de configuración danados?"
 
 #: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_CONFIGURATION_BROKENDATA_WITHREMOVE & ERRCODE_RES_MASK).String.Text
 msgid  "The personal configuration file '$(ARG1)' is corrupted and must be deleted to continue. Some of your personal settings may be lost.\nDo you want to continue startup of %PRODUCTNAME without the corrupted configuration data?"
-msgstr ""
+msgstr "O ficheiro de configuración persoal '$(ARG1)' está danado e por iso debe eliminalo para poder continuar. Algunhas das súas configuracións persoais poden perderse.\nDesexa iniciar %PRODUCTNAME sen os datos de configuración danados?"
 
 #: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_CONFIGURATION_BACKENDMISSING & ERRCODE_RES_MASK).String.Text
 msgid  "The configuration data source '$(ARG1)' is unavailable. Without this data some functions may not operate correctly."
-msgstr ""
+msgstr "A orixe de datos de configuración '$(ARG1)' non está dispoñíbel. Sen eles, algunhas funcións poden non funcionar correctamente."
 
 #: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_CONFIGURATION_BACKENDMISSING_WITHRECOVER & ERRCODE_RES_MASK).String.Text
 msgid  "The configuration data source '$(ARG1)' is unavailable. Without this data some functions may not operate correctly.\nDo you want to continue startup of %PRODUCTNAME without the missing configuration data?"
-msgstr ""
+msgstr "A orixe de datos de configuración '$(ARG1)' non está dispoñíbel. Sen eles, talvez non se executen correctamente algunhas funcións.\nDesexa iniciar %PRODUCTNAME sen os datos de configuración que faltan?"
 
 #: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_INVALID_XFORMS_SUBMISSION_DATA & ERRCODE_RES_MASK).STRING.Text
 msgid  "The form contains invalid data. Do you still want to continue?"
-msgstr ""
+msgstr "O formulario contén datos incorrectos. Desexa continuar de todos os xeitos?"
 
 #: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_LOCKING_LOCKED & ERRCODE_RES_MASK).String.Text
 msgid  "The file $(ARG1) is locked by another user. Currently, another write access to this file cannot be granted."
-msgstr ""
+msgstr "O ficheiro $(ARG1) está trabado por outro usuario. Neste intre, non se pode conceder outro aceso de escritura nese ficheiro."
 
 #: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_LOCKING_LOCKED_SELF & ERRCODE_RES_MASK).String.Text
 msgid  "The file $(ARG1) is locked by yourself. Currently, another write access to this file cannot be granted."
-msgstr ""
+msgstr "O ficheiro $(ARG1) está trabado por vostede mesmo. Neste intre, non se pode conceder outro acceso de escritura a ese ficheiro."
 
 #: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_LOCKING_NOT_LOCKED & ERRCODE_RES_MASK).String.Text
 msgid  "The file $(ARG1) is currently not locked by yourself."
@@ -369,23 +369,23 @@ msgstr "O ficheiro $(ARG1) non está trabado por vostede."
 
 #: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_LOCKING_LOCK_EXPIRED & ERRCODE_RES_MASK).String.Text
 msgid  "The previously obtained lock for file $(ARG1) has expired.\nThis can happen due to problems on the server managing the file lock. It cannot be guaranteed that write operations on this file will not overwrite changes done by other users!"
-msgstr ""
+msgstr "A traba anterior do ficheiro $(ARG1) expirou.\nIsto pode ocorrer por problemas no servidor xestor da traba do ficheiro. Non é posíbel garantir que as operacións de escritura neste ficheiro non sobreescriban as alteracións feitas por outros usuarios!"
 
 #: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_UNKNOWNAUTH_UNTRUSTED).STRING.Text
 msgid  "Unable to verify the identity of $(ARG1) site.\n\nBefore accepting this certificate, you should examine this site's certificate carefully. Are you willing to accept this certificate for the purpose of identifying the Web site $(ARG1)?"
-msgstr ""
+msgstr "Non se puido comprobar a identidade do sitio $(ARG1).\n\nAntes de aceptar este certificado, debería examinalo máis a fondo. Está seguro de querer aceptar este certificado para identificar o sitio web $(ARG1)?"
 
 #: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_SSLWARN_EXPIRED_1).STRING.Text
 msgid  "$(ARG1) is a site that uses a security certificate to encrypt data during transmission, but its certificate expired on $(ARG2).\n\nYou should check to make sure that your computer's time is correct."
-msgstr ""
+msgstr "$(ARG1) usa un certificado de seguranza que cifra os datos durante a transmisión, pero este certificado caducou no $(ARG2).\n\nDebería comprobar que a data do seu equipo é correcta."
 
 #: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_SSLWARN_DOMAINMISMATCH_1).STRING.Text
 msgid  "You have attempted to establish a connection with $(ARG1). However, the security certificate presented belongs to $(ARG2). It is possible, though unlikely, that someone may be trying to intercept your communication with this web site.\n\nIf you suspect the certificate shown does not belong to $(ARG1), please cancel the connection and notify the site administrator.\n\nWould you like to continue anyway?"
-msgstr ""
+msgstr "Vostede intentou estabelecer unha conexión con $(ARG1). Porén, o certificado de seguranza presentado pertence a $(ARG2). É posíbel, aínda que improbábel, que alguén estea tentando interceptar comunicación co sitio web.\n\nSe sospeita que o certificado amosado non pertence a $(ARG1), por favor cancele a conexión e notifíqueo ao administrador do sitio.\n\nDesexa continuar de todas formas?"
 
 #: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_SSLWARN_INVALID_1).STRING.Text
 msgid  "The certificate could not be validated. You should examine this site's certificate carefully.\n\nIf you suspect the certificate shown, please cancel the connection and notify the site administrator."
-msgstr ""
+msgstr "O certificado non se puido validar. Debería examinar o certificado desta páxina con coidado.\n\nSe ten unha sospeita sobre o certificado que se amosa cancele a conexión e notifíquello ao administrador da páxina."
 
 #: source/ids.src#RID_UUI_ERRHDL.(TITLE_UUI_SSLWARN_DOMAINMISMATCH).STRING.Text
 msgid  "Security Warning: Domain Name Mismatch"
@@ -413,11 +413,11 @@ msgstr "Mensaxe do servidor"
 
 #: source/logindlg.src#DLG_UUI_LOGIN.FT_INFO_LOGIN_REQUEST.FixedText.Text
 msgid  "Enter user name and password for: \n%1"
-msgstr ""
+msgstr "Introduza o nome de usuario e os contrasinais de:\n%1"
 
 #: source/logindlg.src#DLG_UUI_LOGIN.STR_LOGIN_REALM.String.Text
-msgid  "Enter user name and password for: \n"%2" on %1"
-msgstr ""
+msgid  "Enter user name and password for: \n\"%2\" on %1"
+msgstr "Introduza o nome de usuario e o contrasinal de:\n\"%2\" en %1"
 
 #: source/logindlg.src#DLG_UUI_LOGIN.FT_LOGIN_PATH.FixedText.Text
 msgid  "~Path"
@@ -469,7 +469,7 @@ msgstr "~Enviar"
 
 #: source/cookiedg.src#STR_COOKIES_RECV_START.String.Text
 msgid  "The '${HOST}' server wishes to set one or more cookies.\nCookies contain information referring to certain URL classes. If %PRODUCTNAME later requests a document with a URL corresponding to the class of a previously set cookie, %PRODUCTNAME will send this information to the server. This allows a server to recognize the status of a WWW application, e.g., when shopping online.\n\nThe following Cookies should be set:\n\n"
-msgstr ""
+msgstr "O servidor '${HOST}' desexa utilizar unha cookie ou máis.\nAs cookies conteñen información referente a certas clases de URL. Se %PRODUCTNAME solicita posteriormente un documento cun URL correspondente á clase dunha cookie utilizada con anterioridade, %PRODUCTNAME enviaralle esa información ao servidor. Desa forma, o servidor poderá identificar o estado dun aplicativo WWW, por exemplo, ao facer compras en liña.\n\nDeberíanse instalar as seguintes cookies:\n\n"
 
 #: source/cookiedg.src#STR_COOKIES_RECV_COOKIES.String.Text
 msgid  "Domain: ${DOMAIN}, Path: ${PATH}, Cookie: ${COOKIE}.\n"
@@ -481,7 +481,7 @@ msgstr "Recepción dunha cookie"
 
 #: source/cookiedg.src#STR_COOKIES_SEND_START.String.Text
 msgid  "%PRODUCTNAME has saved cookies for the server '${HOST}' which will be sent when requesting the document ${PATH}.\nCookies contain information which refers to certain URL classes. They are sent by some servers to %PRODUCTNAME where they are saved when certain documents are accessed. If %PRODUCTNAME loads a document that, according to the URL, corresponds to a class of one of the previously received Cookies, %PRODUCTNAME will send this information to that server. This enables a server to keep track of the status of a WWW application, e.g., when shopping online.\n\nThe following Cookies should be set:\n\n"
-msgstr ""
+msgstr "%PRODUCTNAME gardou no servidor '${HOST}' algunhas cookies que serán enviadas cando solicite o documento ${PATH}.\nAs cookies conteñen información referente a certas clases de URL e son enviadas por algúns servidores a %PRODUCTNAME, onde se gardan cando se accede a determinados documentos. Se %PRODUCTNAME carga un documento que, de acordo co URL, corresponde á clase dunha das cookies anteriormente recibidas, %PRODUCTNAME enviaralle esa información ao servidor. Iso permitirá que o servidor controle o estado dun aplicativo WWW, por exemplo, ao facer compras en liña.\n\nDeberíanse instalar as seguintes cookies:\n\n"
 
 #: source/cookiedg.src#STR_COOKIES_SEND_COOKIES.String.Text
 msgid  "Domain: ${DOMAIN}, Path: ${PATH}, Cookie: ${COOKIE}.\n"
@@ -529,7 +529,7 @@ msgstr "Documento en uso"
 
 #: source/openlocked.src#STR_OPENLOCKED_MSG.String.Text
 msgid  "Document file '$(ARG1)' is locked for editing by:\n\n$(ARG2)\n\nOpen document read-only or open a copy of the document for editing.\n\n"
-msgstr ""
+msgstr "O ficheiro '$(ARG1)' está bloqueado para edición por:\n\n$(ARG2)\n\nAbra o documento en modo que só permite lectura ou abra unha copia do documento para editalo.\n\n"
 
 #: source/openlocked.src#STR_OPENLOCKED_OPENREADONLY_BTN.String.Text
 msgid  "Open ~Read-Only"
@@ -549,7 +549,7 @@ msgstr "O documento foi modificado por outros"
 
 #: source/filechanged.src#STR_FILECHANGED_MSG.String.Text
 msgid  "The file has been changed since it was opened for editing in %PRODUCTNAME. Saving your version of the document will overwrite changes made by others.\n\nDo you want to save anyway?\n\n"
-msgstr ""
+msgstr "O ficheiro cambiou desde a última vez que foi aberto para edición no %PRODUCTNAME. Gardar a súa versión do documento sobreescribirá os cambios feitos por outros.\n\nQuere gardar de todos os modos?\n\n"
 
 #: source/filechanged.src#STR_FILECHANGED_SAVEANYWAY_BTN.String.Text
 msgid  "~Save Anyway"
@@ -561,7 +561,7 @@ msgstr "Actualización dispoñíbel de %PRODUCTNAME"
 
 #: source/newerverwarn.src#RID_DLG_NEWER_VERSION_WARNING.FT_INFO.FixedText.Text
 msgid  "This document was created by a newer version of %PRODUCTNAME. It may contain features not supported by your current version.\n\nClick 'Update Now...' to run online update and get the latest version of %PRODUCTNAME."
-msgstr ""
+msgstr "Este documento creouse nunha versión máis nova de %PRODUCTNAME. Pode conter funcionalidades non compatíbeis coa súa versión actual.\n\nPrema en 'Actualizar Agora...' para executar a actualización en liña e obter a última versión de %PRODUCTNAME."
 
 #: source/newerverwarn.src#RID_DLG_NEWER_VERSION_WARNING.PB_UPDATE.PushButton.Text
 msgid  "~Update Now..."
@@ -609,7 +609,7 @@ msgstr "Ver sinaturas..."
 
 #: source/secmacrowarnings.src#RID_XMLSECDLG_MACROWARN.FI_DESCR2.FixedText.Text
 msgid  "Macros may contain viruses. Disabling macros for a document is always safe. If you disable macros you may lose functionality provided by the document macros."
-msgstr ""
+msgstr "As macros poden conter virus. Aínda que é sempre seguro desactivalas en calquera documento, ao facelo pódese perder algunha funcionalidade."
 
 #: source/secmacrowarnings.src#RID_XMLSECDLG_MACROWARN.CB_ALWAYSTRUST.CheckBox.Text
 msgid  "Always trust macros from this source"
@@ -637,7 +637,7 @@ msgstr "Estabelecer contrasinal mestre"
 
 #: source/masterpasscrtdlg.src#DLG_UUI_MASTERPASSWORD_CRT.FT_INFOTEXT.FixedText.Text
 msgid  "Passwords for web connections are protected by a master password. You will be asked to enter it once per session, if %PRODUCTNAME retrieves a password from the protected password list."
-msgstr ""
+msgstr "Os contrasinais para conexións web están protexidos por un contrasinal mestre. Pediráselle que o introduza unha vez por sesión, se %PRODUCTNAME obtén un contrasinal da lista de contrasinais protexidos."
 
 #: source/masterpasscrtdlg.src#DLG_UUI_MASTERPASSWORD_CRT.FT_MASTERPASSWORD_CRT.FixedText.Text
 msgid  "~Enter password"
@@ -649,11 +649,11 @@ msgstr "~Volva a introducir o contrasinal"
 
 #: source/masterpasscrtdlg.src#DLG_UUI_MASTERPASSWORD_CRT.FT_CAUTIONTEXT.FixedText.Text
 msgid  "Caution: If you forget the master password, you will be unable to access any of the information protected by it. Passwords are case-sensitive."
-msgstr ""
+msgstr "Precaucións: Asegúrese que recorda o contrasinal mestre que estableceu. Se olvida o contrasinal mestre non poderá acceder a ningunha da información protexida polo mesmo. Os contrasinais distinguen maiúsculas de minúsculas e teñen polo menos 5 caracteres."
 
 #: source/alreadyopen.src#STR_ALREADYOPEN_MSG.String.Text
 msgid  "Document file '$(ARG1)' is locked for editing by yourself on a different system since $(ARG2)\n\nOpen document read-only, or ignore own file locking and open the document for editing.\n\n"
-msgstr ""
+msgstr "O ficheiro do documento '$(ARG1)' está bloqueado para edición por vostede mesmo noutro sistema desde $(ARG2)\n\nAbra o documento en modo que só permite lectura, ou ignore o seu propio bloqueo sobre o ficheiro e abra o ficheiro para editalo.\n\n"
 
 #: source/alreadyopen.src#STR_ALREADYOPEN_READONLY_BTN.String.Text
 msgid  "Open ~Read-Only"
@@ -665,7 +665,7 @@ msgstr "~Abrir"
 
 #: source/alreadyopen.src#STR_ALREADYOPEN_SAVE_MSG.String.Text
 msgid  "Document file '$(ARG1)' is locked for editing by yourself on a different system since $(ARG2)\n\nClose document on other system and retry saving or ignore own file locking and save current document.\n\n"
-msgstr ""
+msgstr "O ficheiro do documento '$(ARG1)' está bloqueado para edición por vostede mesmo noutro sistema desde $(ARG2)\n\nPeche o documento noutro sistema e volva tentar gardalo ou ignore o seu propio bloqueo sobre o ficheiro e garde o documento actual.\n\n"
 
 #: source/alreadyopen.src#STR_ALREADYOPEN_RETRY_SAVE_BTN.String.Text
 msgid  "~Retry Saving"
@@ -677,4 +677,4 @@ msgstr "~Gardar"
 
 #: source/lockfailed.src#STR_LOCKFAILED_MSG.String.Text
 msgid  "The file could not be locked for exclusive access by %PRODUCTNAME, due to missing permission to create a lock file on that file location."
-msgstr ""
+msgstr "O ficheiro non se puido trabar para acceso exclusivo do %PRODUCTNAME, debido a que faltan permisos para crear un ficheiro de traba na localización do ficheiro."

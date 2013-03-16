@@ -33,7 +33,7 @@ msgstr ""
 
 #: source/padialog.src#RID_FONTIMPORT_DIALOG.RID_FIMP_TXT_HELP.FixedText.Text
 msgid  "Please select the folder from which you want to import fonts. Add the selected fonts by clicking the OK button."
-msgstr ""
+msgstr "Παρακαλώ επιλέξτε τον φάκελο από τον οποίο θέλετε να κάνετε εισαγωγή γραμματοσειρών. Προσθέστε τις επιλεγμένες γραμματοσειρές πατώντας το κουμπί \"ΟΚ\"."
 
 #: source/padialog.src#RID_FONTIMPORT_DIALOG.RID_FIMP_FL_FROM.FixedLine.Text
 msgid  "Source directory"
@@ -61,7 +61,7 @@ msgstr "Προσθήκη γραμματοσειρών"
 
 #: source/padialog.src#RID_FONTIMPORT_DIALOG.RID_FIMP_STR_QUERYOVERWRITE.String.Text
 msgid  "Do you really want to overwrite this font file?\n   %s"
-msgstr ""
+msgstr "Θέλετε σίγουρα να αντικατασταθεί η γραμματοσειρά;\n   %s ;"
 
 #: source/padialog.src#RID_FONTIMPORT_DIALOG.RID_FIMP_STR_OVERWRITEALL.String.Text
 msgid  "All"
@@ -73,19 +73,19 @@ msgstr "Κανένα"
 
 #: source/padialog.src#RID_FONTIMPORT_DIALOG.RID_FIMP_STR_NOAFM.String.Text
 msgid  "A format file (with an .afm extension) has not been found for the font\n%s\ntherefore, the font cannot be installed. Format files can be created with ghostscript, for example, and have to be located in the same directory as the font files or its afm subdirectory."
-msgstr ""
+msgstr "Δεν είναι δυνατή η εγκατάσταση του αρχείου γραμματοσειράς\n%s\n επειδή δεν βρέθηκε το κατάλληλο αρχείο μορφής ( με την προέκταση .afm ). Τα αρχεία μορφής μπορούν να δημιουργηθούν π.χ. με το ghostscript και πρέπει να υπάρχουν στον ίδιο κατάλογο με τα αρχεία γραμματοσειρών ή στον υποκατάλογο αυτών με την ονομασία 'afm'."
 
 #: source/padialog.src#RID_FONTIMPORT_DIALOG.RID_FIMP_STR_AFMCOPYFAILED.String.Text
 msgid  "The metric file for the font file\n   %s\ncould not be copied. The font will not be installed."
-msgstr ""
+msgstr "Δεν ήταν δυνατόν να γίνει η αντιγραφή του αρχείου μετρικής του αρχείου της γραμματοσειράς\n   %s\nΗ γραμματοσειρά δεν θα εγκατασταθεί."
 
 #: source/padialog.src#RID_FONTIMPORT_DIALOG.RID_FIMP_STR_FONTCOPYFAILED.String.Text
 msgid  "The font file\n   %s\ncould not be copied. The font will not be installed."
-msgstr ""
+msgstr "Δεν ήταν δυνατόν να γίνει η αντιγραφή του αρχείου γραμματοσειράς\n   %s\nΗ γραμματοσειρά δεν θα εγκατασταθεί."
 
 #: source/padialog.src#RID_FONTIMPORT_DIALOG.RID_FIMP_STR_NOWRITEABLEFONTSDIR.String.Text
 msgid  "A directory containing a writable fonts.dir file is not located in the Fontpath. Therefore, fonts cannot be installed."
-msgstr ""
+msgstr "Δεν βρέθηκε κατάλογος στο Fontpath, ο οποίος να περιέχει ένα κατάλληλο αρχείο εγγραφής fonts.dir. Δεν είναι δυνατή η εγκατάσταση γραμματοσειρών."
 
 #: source/padialog.src#RID_FONTIMPORT_DIALOG.RID_FIMP_STR_NUMBEROFFONTSIMPORTED.String.Text
 msgid  "%d new fonts were added."
@@ -173,7 +173,7 @@ msgstr "Δεν ήταν δυνατόν να ανοιχτεί ο εκτυπωτή
 
 #: source/padialog.src#RID_PA_TXT_TESTPAGE_PRINTED.String.Text
 msgid  "The test page was printed succesfully. Please check the result."
-msgstr ""
+msgstr "Η εκτύπωση της σελίδας δοκιμής ολοκληρώθηκε επιτυχώς. Παρακαλώ ελέγξτε το αποτέλεσμα της εκτύπωσης."
 
 #: source/padialog.src#RID_ERR_NOWRITE.String.Text
 msgid  "No printers can be installed, because the file system is read-only.\nPlease contact your system administrator."
@@ -237,7 +237,7 @@ msgstr "~Νέο όνομα για το %s (%d1 του %d2)"
 
 #: source/padialog.src#RID_FONTNAMEDIALOG.RID_FNTNM_STR_NOTRENAMABLE.String.Text
 msgid  "The font %s cannot be renamed due to missing write permission."
-msgstr ""
+msgstr "Δεν είναι δυνατή η μετονομασία της γραμματοσειράς %s, επειδή δεν υπάρχει δικαίωμα εγγραφής."
 
 #: source/padialog.src#RID_FONTNAMEDIALOG.String.Text
 msgid  "Fonts"
@@ -289,7 +289,7 @@ msgstr "Το αρχείο δεν περιέχει μετρική."
 
 #: source/padialog.src#RID_AFMERROR_BOX_TXT.String.Text
 msgid  "The metric\n\n%s\n\ncould not be converted for the following reason:\n\n"
-msgstr ""
+msgstr "Δεν ήταν δυνατόν να γίνει η μετατροπή της μετρικής\n\n%s\n\n για τον εξής λόγο:\n\n"
 
 #: source/padialog.src#RID_PROGRESS_DLG.RID_PROGRESS_PROGRESS_TXT.FixedText.Text
 msgid  "Progress"
@@ -320,8 +320,8 @@ msgid  "~Selection of drivers"
 msgstr "Επι~λογή προγραμμάτων οδήγησης"
 
 #: source/padialog.src#RID_PPDIMPORT_DLG.RID_PPDIMP_TXT_DRIVER.FixedText.Text
-msgid  "Please select the drivers to install and press "%s"."
-msgstr ""
+msgid  "Please select the drivers to install and press \"%s\"."
+msgstr "Παρακαλώ επιλέξτε τα προγράμματα οδήγησης που επιθυμείτε να εγκαταστήσετε και επιβεβαιώστε την επιλογή σας πατώντας το \"%s\"."
 
 #: source/padialog.src#RID_PPDIMPORT_DLG.RID_PPDIMP_STR_LOADINGPPD.String.Text
 msgid  "Searching for drivers"
@@ -332,8 +332,8 @@ msgid  "Driver Installation"
 msgstr "Εγκατάσταση προγράμματος οδήγησης"
 
 #: source/padialog.src#RID_QUERY_REMOVEDRIVER.String.Text
-msgid  "Do you really want to remove the driver "%s"?"
-msgstr ""
+msgid  "Do you really want to remove the driver \"%s\"?"
+msgstr "Είστε βέβαιοι ότι θέλετε να καταργήσετε το πρόγραμμα οδήγησης \"%s\";"
 
 #: source/padialog.src#RID_QUERY_REMOVEPRINTER.String.Text
 msgid  "Do you really want to remove this printer ?"
@@ -344,40 +344,40 @@ msgid  "Do you really want to remove the selected fonts ?"
 msgstr "Θέλετε σίγουρα να διαγραφούν οι επιλεγμένες γραμματοσειρές;"
 
 #: source/padialog.src#RID_QUERY_DRIVERUSED.String.Text
-msgid  "There are still printers using the driver "%s". Do you really want to remove it? The corresponding printers will also be removed."
-msgstr ""
+msgid  "There are still printers using the driver \"%s\". Do you really want to remove it? The corresponding printers will also be removed."
+msgstr "Υπάρχουν ακόμα κάποιοι εκτυπωτές που χρησιμοποιούν το πρόγραμμα οδήγησης \"%s\". Είστε βέβαιοι ότι θέλετε να το καταργήσετε; Θα καταργηθούν και οι αντίστοιχοι εκτυπωτές."
 
 #: source/padialog.src#RID_ERR_REMOVESGENPRT.String.Text
-msgid  "The driver "%s" is always needed and can therefore not be removed."
-msgstr ""
+msgid  "The driver \"%s\" is always needed and can therefore not be removed."
+msgstr "The driver \"%s\" is always needed and can therefore not be removed."
 
 #: source/padialog.src#RID_ERR_REMOVEDRIVERFAILED.String.Text
-msgid  "The driver "%s1" could not be removed. It was not possible to remove the file\n\n%s2."
-msgstr ""
+msgid  "The driver \"%s1\" could not be removed. It was not possible to remove the file\n\n%s2."
+msgstr "Ο οδηγός \"%s1\" δεν μπορεί να απομακρυθεί.Δεν ήταν δυνατή η απομάκρυνση του αρχείου\n\n%s2."
 
 #: source/padialog.src#RID_ERR_REMOVEDEFAULTDRIVER.String.Text
-msgid  "The driver "%s" is used by your default printer. Therefore, it cannot be removed."
-msgstr ""
+msgid  "The driver \"%s\" is used by your default printer. Therefore, it cannot be removed."
+msgstr "Το πρόγραμμα οδήγησης \"%s\" χρησιμοποιείται από τον προεπιλεγμένο εκτυπωτή. Κατά συνέπεια, δεν είναι δυνατό να καταργηθεί."
 
 #: source/padialog.src#RID_ERR_PRINTERNOTREMOVEABLE.String.Text
 msgid  "The printer %s cannot be removed."
 msgstr "Δεν είναι δυνατόν να καταργηθεί ο εκτυπωτής %s."
 
 #: source/padialog.src#RID_TXT_PRINTERALREADYEXISTS.String.Text
-msgid  "A printer named "%s" already exists. This printer will not be imported."
-msgstr ""
+msgid  "A printer named \"%s\" already exists. This printer will not be imported."
+msgstr "Υπάρχει ήδη ένας εκτυπωτής με το όνομα \"%s\". Ο εκτυπωτής αυτός δεν θα εισαχθεί."
 
 #: source/padialog.src#RID_TXT_PRINTERWITHOUTCOMMAND.String.Text
-msgid  "The printer "%s" has no valid configuration and, therefore, cannot be imported."
-msgstr ""
+msgid  "The printer \"%s\" has no valid configuration and, therefore, cannot be imported."
+msgstr "Ο εκτυπωτής \"%s\" δεν είναι δυνατόν να εισαχθεί επειδή δεν έχει έγκυρη διαμόρφωση."
 
 #: source/padialog.src#RID_TXT_DRIVERDOESNOTEXIST.String.Text
-msgid  "The driver for the printer "%s1" (%s2) is not installed. Therefore the printer cannot be imported."
-msgstr ""
+msgid  "The driver for the printer \"%s1\" (%s2) is not installed. Therefore the printer cannot be imported."
+msgstr "Το πρόγραμμα οδήγησης για τον εκτυπωτή \"%s1\" (%s2) δεν έχει εγκατασταθεί. Για αυτό δεν είναι δυνατή η εισαγωγή του εκτυπωτή."
 
 #: source/padialog.src#RID_TXT_PRINTERADDFAILED.String.Text
-msgid  "The printer "%s" could not be added."
-msgstr ""
+msgid  "The printer \"%s\" could not be added."
+msgstr "Δεν είναι δυνατόν να καταργηθεί ο εκτυπωτής %s."
 
 #: source/padialog.src#RID_ADD_PRINTER_DIALOG.RID_ADDP_BTN_FINISH.OKButton.Text
 msgid  "~Finish"
@@ -488,12 +488,12 @@ msgid  "~Help"
 msgstr "~Βοήθεια"
 
 #: source/padialog.src#RID_ADDP_PAGE_COMMAND.RID_ADDP_CMD_STR_PDFHELP.String.Text
-msgid  "The command line for PDF converters is executed as follows: for each document printed, "(TMP)" in the command line is replaced by a temporary file and "(OUTFILE)" in the command line is replaced by the target PDF file name. If "(TMP)" is in the command line, the PostScript code will be supplied via a file, otherwise via standard input (i.e. as a pipe)."
-msgstr ""
+msgid  "The command line for PDF converters is executed as follows: for each document printed, \"(TMP)\" in the command line is replaced by a temporary file and \"(OUTFILE)\" in the command line is replaced by the target PDF file name. If \"(TMP)\" is in the command line, the PostScript code will be supplied via a file, otherwise via standard input (i.e. as a pipe)."
+msgstr "Η γραμμή εντολών για μετατροπείς αρχείων PDF εκτελείται ως εξής: για κάθε έγγραφο που εκτυπώνεται, το \"(TMP)\" στη γραμμή εντολών αντικαθίσταται από ένα προσωρινό αρχείο και το \"(OUTFILE)\" στη γραμμή εντολών αντικαθίσταται από το όνομα του PDF αρχείου προορισμού. Αν το \"(TMP)\" είναι στη γραμμή εντολών, ο κώδικας PostScript θα παρέχεται μέσω ενός αρχείου, αλλιώς μέσω της κανονικής εισόδου (δηλαδή ως δίαυλος)."
 
 #: source/padialog.src#RID_ADDP_PAGE_COMMAND.RID_ADDP_CMD_STR_FAXHELP.String.Text
-msgid  "The command line for fax connections is executed as follows: for each fax sent, "(TMP)" in the command line is replaced by a temporary file and "(PHONE)" in the command line is replaced by the fax number. If "(TMP)" appears in the command line, the PostScript code will be supplied via a file, otherwise it is passed as standard input (i.e. as a pipe)."
-msgstr ""
+msgid  "The command line for fax connections is executed as follows: for each fax sent, \"(TMP)\" in the command line is replaced by a temporary file and \"(PHONE)\" in the command line is replaced by the fax number. If \"(TMP)\" appears in the command line, the PostScript code will be supplied via a file, otherwise it is passed as standard input (i.e. as a pipe)."
+msgstr "Η γραμμή εντολών για συνδέσεις φαξ εκτελείται ως εξής: για κάθε φαξ που στέλνεται, το \"(TMP)\" στη γραμμή εντολών αντικαθίσταται από ένα προσωρινό αρχείο και το \"(PHONE)\" στη γραμμή εντολών αντικαθίσταται από τον αριθμό φαξ. Αν το \"(TMP)\" εμφανίζεται στη γραμμή εντολών, ο κώδικας PostScript θα δοθεί μέσω ενός αρχείου, αλλιώς διαβιβάζεται μέσω της κανονικής εισόδου (δηλαδή ως δίαυλος)."
 
 #: source/padialog.src#RID_ADDP_PAGE_OLDPRINTERS.RID_ADDP_STR_TITLE.String.Text
 msgid  "Import printers from old versions"
@@ -501,7 +501,7 @@ msgstr "Εισαγωγή εκτυπωτών από παλαιότερες εκδ
 
 #: source/padialog.src#RID_ADDP_PAGE_OLDPRINTERS.RID_ADDP_OLD_TXT_PRINTERS.FixedText.Text
 msgid  "~These printers can be imported. Please select the ones you want to import."
-msgstr ""
+msgstr "Αυτοί οι ε~κτυπωτές μπορούν να εισαχθούν. Παρακαλώ επιλέξτε αυτούς που θέλετε να εισάγετε."
 
 #: source/padialog.src#RID_ADDP_PAGE_OLDPRINTERS.RID_ADDP_OLD_BTN_SELECTALL.PushButton.Text
 msgid  "~Select All"
@@ -521,7 +521,7 @@ msgstr "Το ~προεπιλεγμένο πρόγραμμα οδήγησης"
 
 #: source/padialog.src#RID_ADDP_PAGE_FAXDRIVER.RID_ADDP_FAXDRV_BTN_SELECT.RadioButton.Text
 msgid  "A speci~fic driver, to adapt the format to another printer"
-msgstr ""
+msgstr "Ένα συ~γκεκριμένο πρόγραμμα οδήγησης, για προσαρμογή της μορφοποίησης σε έναν άλλο εκτυπωτή"
 
 #: source/padialog.src#RID_ADDP_PAGE_PDFDRIVER.RID_ADDP_STR_TITLE.String.Text
 msgid  "Choose a driver"
@@ -529,7 +529,7 @@ msgstr "Επιλογή προγράμματος οδήγησης"
 
 #: source/padialog.src#RID_ADDP_PAGE_PDFDRIVER.RID_ADDP_PDFDRV_TXT_DRIVER.FixedText.Text
 msgid  "Use the following driver for this PDF converter"
-msgstr ""
+msgstr "Χρησιμοποιήστε το ακόλουθο πρόγραμμα οδήγησης για αυτόν το μετατροπέα αρχείων PDF."
 
 #: source/padialog.src#RID_ADDP_PAGE_PDFDRIVER.RID_ADDP_PDFDRV_BTN_DEFAULT.RadioButton.Text
 msgid  "T~he default driver"
@@ -541,7 +541,7 @@ msgstr "Το πρόγραμμα ο~δήγησης του Adobe Distiller(tm)"
 
 #: source/padialog.src#RID_ADDP_PAGE_PDFDRIVER.RID_ADDP_PDFDRV_BTN_SELECT.RadioButton.Text
 msgid  "A spec~ific driver, to adapt the format to another printer"
-msgstr ""
+msgstr "Ένα συ~γκεκριμένο πρόγραμμα οδήγησης, για προσαρμογή της μορφοποίησης σε έναν άλλο εκτυπωτή"
 
 #: source/padialog.src#RID_TXT_FONT_ITALIC.String.Text
 msgid  "Italic"
@@ -737,7 +737,7 @@ msgstr "από τη γρα~μματοσειρά του εκτυπωτή"
 
 #: source/rtsetup.src#RID_RTS_COMMANDPAGE.RID_RTS_CMD_CB_EXTERNAL.CheckBox.Text
 msgid  "~Use system print dialog, disable %PRODUCTNAME's print dialog"
-msgstr ""
+msgstr "~Χρήση του παραθύρου διαλόγου του συστήματος κατά την εκτύπωση, απενεργοποίηση του παραθύρου διαλόγου του  %PRODUCTNAME για την εκτύπωση"
 
 #: source/rtsetup.src#RID_RTS_COMMANDPAGE.RID_RTS_CMD_FT_QUICKCMD.FixedText.Text
 msgid  "Command for quick printing without dialog (optional)"
@@ -788,16 +788,16 @@ msgid  "~Remove"
 msgstr "~Αφαίρεση"
 
 #: source/rtsetup.src#RID_RTS_COMMANDPAGE.RID_RTS_CMD_STR_PDFHELP.String.Text
-msgid  "The command line for PDF converters is executed as follows: for each document printed, "(TMP)" in the command line is replaced by a temporary file and "(OUTFILE)" in the command line is replaced by the target PDF file name. If "(TMP)" is in the command line, the PostScript code will be supplied via a file, otherwise via standard input (i.e. as a pipe)."
-msgstr ""
+msgid  "The command line for PDF converters is executed as follows: for each document printed, \"(TMP)\" in the command line is replaced by a temporary file and \"(OUTFILE)\" in the command line is replaced by the target PDF file name. If \"(TMP)\" is in the command line, the PostScript code will be supplied via a file, otherwise via standard input (i.e. as a pipe)."
+msgstr "Η γραμμή εντολών για μετατροπείς αρχείων PDF εκτελείται ως εξής: για κάθε έγγραφο που εκτυπώνεται, το \"(TMP)\" στη γραμμή εντολών αντικαθίσταται από ένα προσωρινό αρχείο και το \"(OUTFILE)\" στη γραμμή εντολών αντικαθίσταται από το όνομα του PDF αρχείου προορισμού. Αν το \"(TMP)\" είναι στη γραμμή εντολών, ο κώδικας PostScript θα παρέχεται μέσω ενός αρχείου, αλλιώς μέσω της κανονικής εισόδου (δηλαδή ως δίαυλος)."
 
 #: source/rtsetup.src#RID_RTS_COMMANDPAGE.RID_RTS_CMD_STR_PRINTERHELP.String.Text
 msgid  "The command line for printer devices is executed as follows: the generated PostScript code is supplied as standard input (i.e. as a pipe) to the command line."
-msgstr ""
+msgstr "Η γραμμή εντολών για συσκευές εκτυπωτή εκτελείται ως εξής: ο παραγόμενος κώδικας Postscript δίνεται ως κανονική είσοδος (δηλαδή ως δίαυλος) στη γραμμή εντολών."
 
 #: source/rtsetup.src#RID_RTS_COMMANDPAGE.RID_RTS_CMD_STR_FAXHELP.String.Text
-msgid  "The command line for fax devices is executed as follows: for each fax sent, "(TMP)" in the command line is replaced by a temporary file and "(PHONE)" in the command line is replaced by the fax number. If "(TMP)" appears in the command line, the PostScript code will be supplied via a file, otherwise it is passed as standard input (i.e. as a pipe)."
-msgstr ""
+msgid  "The command line for fax devices is executed as follows: for each fax sent, \"(TMP)\" in the command line is replaced by a temporary file and \"(PHONE)\" in the command line is replaced by the fax number. If \"(TMP)\" appears in the command line, the PostScript code will be supplied via a file, otherwise it is passed as standard input (i.e. as a pipe)."
+msgstr "Η γραμμή εντολών για συσκευές φαξ εκτελείται ως εξής: για κάθε φαξ που αποστέλλεται, το \"(TMP)\" στη γραμμή εντολών αντικαθίσταται από ένα προσωρινό αρχείο και το \"(PHONE)\" στη γραμμή εντολών αντικαθίσταται από τον αριθμό φαξ. Αν το \"(TMP)\" εμφανίζεται στη γραμμή εντολών, ο κώδικας PostScript θα δοθεί μέσω ενός αρχείου, αλλιώς διαβιβάζεται μέσω της κανονικής εισόδου (δηλαδή ως δίαυλος)."
 
 #: source/rtsetup.src#RID_RTS_OTHERPAGE.RID_RTS_OTHER_LEFTMARGIN_TXT.FixedText.Text
 msgid  "~Left margin"

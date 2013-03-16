@@ -539,9 +539,41 @@ msgstr "GIF - Graphics Interchange Format"
 msgid  "PNG - Portable Network Graphic"
 msgstr "PNG - Portable Network Graphic"
 
+#: source/config/fragments/types/writerglobal8.xcu#writerglobal8.UIName
+msgid  "Writer 8 Master Document"
+msgstr "Prìomh-sgrìobhainn Writer 8"
+
+#: source/config/fragments/types/impress8.xcu#impress8.UIName
+msgid  "Impress 8"
+msgstr "Impress 8"
+
+#: source/config/fragments/types/calc8_template.xcu#calc8_template.UIName
+msgid  "Calc 8 Template"
+msgstr "Teamplaid Calc 8"
+
 #: source/config/fragments/types/writer_MS_Word_2003_XML.xcu#writer_MS_Word_2003_XML.UIName
 msgid  "Microsoft Word 2003 XML"
 msgstr "Microsoft Word 2003 XML"
+
+#: source/config/fragments/types/writer8.xcu#writer8.UIName
+msgid  "Writer 8"
+msgstr "Writer 8"
+
+#: source/config/fragments/types/impress8_template.xcu#impress8_template.UIName
+msgid  "Impress 8 Template"
+msgstr "Teamplaid Impress 8"
+
+#: source/config/fragments/types/draw8_template.xcu#draw8_template.UIName
+msgid  "Draw 8 Template"
+msgstr "Teamplaid Draw 8"
+
+#: source/config/fragments/types/writerweb8_writer_template.xcu#writerweb8_writer_template.UIName
+msgid  "Writer/Web 8 Template"
+msgstr "Teamplaid Writer/Web 8"
+
+#: source/config/fragments/types/draw8.xcu#draw8.UIName
+msgid  "Draw 8"
+msgstr "Draw 8"
 
 #: source/config/fragments/types/calc_NSO_UOF2.xcu#calc_NSO_UOF2.UIName
 msgid  "Uniform Office Format 2 spreadsheet"
@@ -555,6 +587,18 @@ msgstr "Microsoft Excel 2003 XML"
 msgid  "OpenDocument Database"
 msgstr "Stòr-dàta OpenDocument"
 
+#: source/config/fragments/types/calc8.xcu#calc8.UIName
+msgid  "Calc 8"
+msgstr "Calc 8"
+
+#: source/config/fragments/types/math8.xcu#math8.UIName
+msgid  "Math 8"
+msgstr "Math 8"
+
+#: source/config/fragments/types/writer8_template.xcu#writer8_template.UIName
+msgid  "Writer 8 Template"
+msgstr "Teamplaid Writer 8"
+
 #: source/config/fragments/types/writer_NSO_UOF2.xcu#writer_NSO_UOF2.UIName
 msgid  "Uniform Office Format 2 text"
 msgstr ""
@@ -563,17 +607,21 @@ msgstr ""
 msgid  "Uniform Office Format 2 presentation"
 msgstr ""
 
+#: source/config/fragments/types/chart8.xcu#chart8.UIName
+msgid  "Chart 8"
+msgstr "Chart 8"
+
 #: source/flash/impswfdialog.src#DLG_OPTIONS.ModalDialog.Text
 msgid  "Macromedia Flash (SWF) Options"
 msgstr "Roghainnean Macromedia Flash (SWF)"
 
 #: source/flash/impswfdialog.src#DLG_OPTIONS.FI_DESCR.FixedText.Text
 msgid  "1: min. quality\n100: max. quality"
-msgstr ""
+msgstr "1: càileachd as lugha\n100: càileachd as motha"
 
 #: source/graphicfilter/eps/epsstr.src#KEY_VERSION_CHECK.String.Text
 msgid  "Warning: Not all of the imported EPS graphics could be saved at level1\nas some are at a higher level!"
-msgstr ""
+msgstr "Rabhadh: Cha deach gach grafaig EPS a dh'ion-phortaich thu a shàbhaladh\naig leibheil 1 a chionn 's gu bheil cuid dhiubh aig ìre nas àirde!"
 
 #: source/pdf/pdf.src#PDF_PROGRESS_BAR.String.Text
 msgid  "Export as PDF"
@@ -685,7 +733,7 @@ msgstr "Às-phortadh PDF/A"
 
 #: source/pdf/impdialog.src#RID_PDF_WARNPDFAPASSWORD.WarningBox.Message
 msgid  "PDF/A does not allow encryption. The exported PDF file will not be password protected."
-msgstr ""
+msgstr "Chan eil dubh-cheileadh ceadaichte ann am PDF/A. Cha bhi am faidhle PDF fo dhìon facail-fhaire."
 
 #: source/pdf/impdialog.src#RID_PDF_TAB_OPNFTR.TabPage.Text
 msgid  "Initial View"
@@ -853,7 +901,7 @@ msgstr "Cha dèid an sgrìobhainn PDF a dhubh-cheileadh"
 
 #: source/pdf/impdialog.src#RID_PDF_TAB_SECURITY.STR_USER_PWD_PDFA.String.Text
 msgid  "PDF document will not be encrypted due to PDF/A export."
-msgstr ""
+msgstr "Cha dèid an sgrìobhainn PDF a dhubh-cheileadh air sgàth 's gur e às-phortachadh PDF/A a tha ann."
 
 #: source/pdf/impdialog.src#RID_PDF_TAB_SECURITY.STR_OWNER_PWD_SET.String.Text
 msgid  "Permission password set"
@@ -873,7 +921,7 @@ msgstr "Cha bhi cuingealachadh air an sgrìobhainn PDF"
 
 #: source/pdf/impdialog.src#RID_PDF_TAB_SECURITY.STR_OWNER_PWD_PDFA.String.Text
 msgid  "PDF document will not be restricted due to PDF/A export."
-msgstr ""
+msgstr "Cha dèid an sgrìobhainn PDF a chuingeachadh air sgàth 's gur e às-phortachadh PDF/A a tha ann."
 
 #: source/pdf/impdialog.src#RID_PDF_TAB_SECURITY.FL_PRINT_PERMISSIONS.FixedLine.Text
 msgid  "Printing"
@@ -993,7 +1041,7 @@ msgstr "Trìd-shoilleireachd PDF/A"
 
 #: source/pdf/impdialog.src#RID_PDF_ERROR_DLG.STR_WARN_TRANSP_PDFA.String.Text
 msgid  "PDF/A forbids transparency. A transparent object was painted opaque instead."
-msgstr ""
+msgstr "Chan eil trìd-shoilleireachd ceadaichte ann am PDF/A. Chaidh oibseact trìd-shoilleir a dhèanamh trìd-dhoilleir 'na àite."
 
 #: source/pdf/impdialog.src#RID_PDF_ERROR_DLG.STR_WARN_TRANSP_VERSION_SHORT.String.Text
 msgid  "PDF version conflict"
@@ -1001,7 +1049,7 @@ msgstr "Còmhstri nan tionndadh PDF"
 
 #: source/pdf/impdialog.src#RID_PDF_ERROR_DLG.STR_WARN_TRANSP_VERSION.String.Text
 msgid  "Transparency is not supported in PDF versions earlier than PDF 1.4. A transparent object was painted opaque instead"
-msgstr ""
+msgstr "Chan eil trìd-shoilleireachd ceadaichte ann an tionndaidhean nas sine na PDF 1.4. Chaidh oibseact trìd-shoilleir a dhèanamh trìd-dhoilleir 'na àite"
 
 #: source/pdf/impdialog.src#RID_PDF_ERROR_DLG.STR_WARN_FORMACTION_PDFA_SHORT.String.Text
 msgid  "PDF/A form action"
@@ -1009,11 +1057,11 @@ msgstr "Gnìomh foirm PDF/A"
 
 #: source/pdf/impdialog.src#RID_PDF_ERROR_DLG.STR_WARN_FORMACTION_PDFA.String.Text
 msgid  "A form control contained an action not supported by the PDF/A standard. The action was skipped"
-msgstr ""
+msgstr "Bha gnìomh ann an inneal-smachd foirm nach eil taic ann dha sa bhun-tomhas PDF/A. Chaidh leum a ghearradh thairis air a' ghnìomh"
 
 #: source/pdf/impdialog.src#RID_PDF_ERROR_DLG.STR_WARN_TRANSP_CONVERTED.String.Text
 msgid  "Some objects were converted to an image in order to remove transparencies, because the target PDF format does not support transparencies. Possibly better results can be achieved if you remove the transparent objects before exporting."
-msgstr ""
+msgstr "Chaidh cuid dhe na h-oibseactan iompachadh 'nan dealbhan gus trìd-shoilleireachd a thoirt air falbh. Chan eil am PDF uidhe a' toirt taic do thrìd-shoilleireachd. Faodaidh gum bi toradh nas fhearr agad ma bheir thu às na h-oibseactan trìd-shoilleir mus às-phortaich thu iad."
 
 #: source/pdf/impdialog.src#RID_PDF_ERROR_DLG.STR_WARN_TRANSP_CONVERTED_SHORT.String.Text
 msgid  "Transparencies removed"
@@ -1233,15 +1281,15 @@ msgstr "criathrag às-phortaidh"
 
 #: source/xsltdialog/xmlfilterdialogstrings.src#STR_WARN_DELETE.String.Text
 msgid  "Do you really want to delete the XML Filter '%s'? This action cannot be undone."
-msgstr ""
+msgstr "A bheil thu cinnteach gu bheil thu airson a' chriathrag XML '%s' a sguabadh às? Cha ghabh an gnìomh seo a neo-dhèanamh."
 
 #: source/xsltdialog/xmlfilterdialogstrings.src#STR_ERROR_FILTER_NAME_EXISTS.String.Text
 msgid  "An XML filter with the name '%s' already exists. Please enter a different name."
-msgstr ""
+msgstr "Tha criathrag XML ann mu thràth air a bheil '%s'. Cuir a-steach ainm eile."
 
 #: source/xsltdialog/xmlfilterdialogstrings.src#STR_ERROR_TYPE_NAME_EXISTS.String.Text
 msgid  "The name for  the user interface '%s1' is already used by the XML filter '%s2'. Please enter a different name."
-msgstr ""
+msgstr "Tha an t-ainm airson eadar-aghaidh a' chleachdaiche '%s1' 'ga chleachdadh leis a' chriathrag XML '%s2' mu thràth. Cuir a-steach ainm eile."
 
 #: source/xsltdialog/xmlfilterdialogstrings.src#STR_ERROR_DTD_NOT_FOUND.String.Text
 msgid  "The DTD could not be found. Please enter a valid path."
@@ -1253,11 +1301,11 @@ msgstr "Cha deach an XSLT às-phortaidh a lorg. Cuir a-steach slighe dhligheach.
 
 #: source/xsltdialog/xmlfilterdialogstrings.src#STR_ERROR_IMPORT_XSLT_NOT_FOUND.String.Text
 msgid  "The XSLT for import cannot be found. Please enter a valid path."
-msgstr ""
+msgstr "Cha deach an XSLT ion-phortaidh a lorg. Cuir a-steach slighe dhligheach."
 
 #: source/xsltdialog/xmlfilterdialogstrings.src#STR_ERROR_IMPORT_TEMPLATE_NOT_FOUND.String.Text
 msgid  "The given import template cannot be found. Please enter a valid path."
-msgstr ""
+msgstr "Cha deach an teamplaid ion-phortaidh a lorg. Cuir a-steach slighe dhligheach."
 
 #: source/xsltdialog/xmlfilterdialogstrings.src#STR_NOT_SPECIFIED.String.Text
 msgid  "Not specified"
@@ -1297,7 +1345,7 @@ msgstr "Chaidh %s criathragan XML a stàladh gu soirbheachail."
 
 #: source/xsltdialog/xmlfilterdialogstrings.src#STR_NO_FILTERS_FOUND.String.Text
 msgid  "No XML filter could be installed because the package '%s' does not contain any XML filters."
-msgstr ""
+msgstr "Cha deach criathrag XML a stàladh a chionn 's nach eil criathrag XML sam bith sa phacaid '%s'."
 
 #: source/xsltdialog/xmlfiltertabpagebasic.src#RID_XML_FILTER_TABPAGE_BASIC.TabPage.Text
 msgid  "General"
@@ -1313,7 +1361,7 @@ msgstr "Prògram"
 
 #: source/xsltdialog/xmlfiltertabpagebasic.src#RID_XML_FILTER_TABPAGE_BASIC.FT_XML_INTERFACE_NAME.FixedText.Text
 msgid  "Name of\nfile type"
-msgstr ""
+msgstr "Ainm seòrsa\nan fhaidhle"
 
 #: source/xsltdialog/xmlfiltertabpagebasic.src#RID_XML_FILTER_TABPAGE_BASIC.FT_XML_EXTENSION.FixedText.Text
 msgid  "File extension"
@@ -1330,51 +1378,3 @@ msgstr "Às-chur na criathraige XML"
 #: source/xsltdialog/xmlfileview.src#DLG_XML_SOURCE_FILE_DIALOG.PB_VALIDATE.PushButton.Text
 msgid  "~Validate"
 msgstr "~Dearbhaich"
-
-#: source/config/fragments/types/writerglobal8.xcu#writerglobal8.UIName
-msgid  "Writer 8 Master Document"
-msgstr "Prìomh-sgrìobhainn Writer 8"
-
-#: source/config/fragments/types/impress8.xcu#impress8.UIName
-msgid  "Impress 8"
-msgstr "Impress 8"
-
-#: source/config/fragments/types/calc8_template.xcu#calc8_template.UIName
-msgid  "Calc 8 Template"
-msgstr "Teamplaid Calc 8"
-
-#: source/config/fragments/types/writer8.xcu#writer8.UIName
-msgid  "Writer 8"
-msgstr "Writer 8"
-
-#: source/config/fragments/types/impress8_template.xcu#impress8_template.UIName
-msgid  "Impress 8 Template"
-msgstr "Teamplaid Impress 8"
-
-#: source/config/fragments/types/draw8_template.xcu#draw8_template.UIName
-msgid  "Draw 8 Template"
-msgstr "Teamplaid Draw 8"
-
-#: source/config/fragments/types/writerweb8_writer_template.xcu#writerweb8_writer_template.UIName
-msgid  "Writer/Web 8 Template"
-msgstr "Teamplaid Writer/Web 8"
-
-#: source/config/fragments/types/draw8.xcu#draw8.UIName
-msgid  "Draw 8"
-msgstr "Draw 8"
-
-#: source/config/fragments/types/calc8.xcu#calc8.UIName
-msgid  "Calc 8"
-msgstr "Calc 8"
-
-#: source/config/fragments/types/math8.xcu#math8.UIName
-msgid  "Math 8"
-msgstr "Math 8"
-
-#: source/config/fragments/types/writer8_template.xcu#writer8_template.UIName
-msgid  "Writer 8 Template"
-msgstr "Teamplaid Writer 8"
-
-#: source/config/fragments/types/chart8.xcu#chart8.UIName
-msgid  "Chart 8"
-msgstr "Chart 8"

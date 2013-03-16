@@ -224,7 +224,7 @@ msgstr "~Root spacing"
 #: source/smres.src#RID_DISTANCEDIALOG.2.1.String.Text
 #, fuzzy
 msgid  "Indexes"
-msgstr "Indexes"
+msgstr "Indices"
 
 #: source/smres.src#RID_DISTANCEDIALOG.2.2.String.Text
 #, fuzzy
@@ -434,7 +434,7 @@ msgstr "Print format"
 #: source/smres.src#RID_PRINTOPTIONPAGE.RB_ORIGINAL_SIZE.RadioButton.Text
 #, fuzzy
 msgid  "O~riginal size"
-msgstr "B~orders"
+msgstr "O~riginal size"
 
 #: source/smres.src#RID_PRINTOPTIONPAGE.RB_FIT_TO_PAGE.RadioButton.Text
 #, fuzzy
@@ -547,12 +547,14 @@ msgid  "~Delete"
 msgstr "~Delete"
 
 #: source/smres.src#RID_NOMATHTYPEFACEWARNING.WarningBox.Message
+#, fuzzy
 msgid  "The 'StarMath' font has not been installed.\nWithout this font %PRODUCTNAME Math cannot function correctly.\nPlease install this font and restart %PRODUCTNAME Math."
-msgstr ""
+msgstr "The 'StarMath' font has not been installed.\nWithout this font %PRODUCTNAME Math cannot function correctly.\nPlease install this font and restart %PRODUCTNAME Math."
 
 #: source/smres.src#RID_DEFAULTSAVEQUERY.QueryBox.Message
+#, fuzzy
 msgid  "Should the changes be saved as defaults?\n\nThese changes will apply for all new formulas."
-msgstr ""
+msgstr "Should the changes be saved as defaults?\n\nThese changes will apply for all new formulae."
 
 #: source/smres.src#RID_FONTREGULAR.String.Text
 #, fuzzy
@@ -688,6 +690,11 @@ msgstr "Sans"
 #, fuzzy
 msgid  "Fixed"
 msgstr "Fixed"
+
+#: source/smres.src#CMDBOXWINDOW_TEXT.#define.Text
+#, fuzzy
+msgid  "Commands"
+msgstr "Commands"
 
 #: source/smres.src#RID_DOCUMENTSTR.String.Text
 #, fuzzy
@@ -858,11 +865,6 @@ msgstr "Fit to ~page"
 #, fuzzy
 msgid  "~Scaling"
 msgstr "~Scaling"
-
-#: source/smres.src#CMDBOXWINDOW_TEXT.#define.Text
-#, fuzzy
-msgid  "Commands"
-msgstr "Commands"
 
 #: source/commands.src#RID_COMMANDMENU.RID_UNBINOPS_MENU.MenuItem.Text
 #, fuzzy

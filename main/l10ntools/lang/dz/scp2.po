@@ -37,11 +37,11 @@ msgstr "ཨེག་ཊིབ་ཨེགས་ཚད་འཛིན།"
 
 #: source/activex/module_activex.ulf#STR_DESC_MODULE_OPTIONAL_ACTIVEXCONTROL
 msgid  "Component to enable Microsoft Internet Explorer to display %PRODUCTNAME documents."
-msgstr ""
+msgstr "མའི་ཀོ་རོ་སོབཋ་ཨིན་ཊར་ནེཊ་ཨེགས་པོ་ལོ་རོ་གི་%PRODUCTNAME་ཡིག་ཆ་བཀྲམ་སྟོན་འབད་ནི་གི་དོན་གྱི་ཆ་ཤས།"
 
 #: source/base/folderitem_base.ulf#STR_FI_TOOLTIP_BASE
 msgid  "Manage databases, create queries and reports to track and manage your information by using Base."
-msgstr ""
+msgstr "གནད་སྡུད་གཞི་རྟེན་ཚུ་འཛིན་སྐྱོང་འབད་དེ་འདྲི་དཔྱད་དང་སྙན་ཞུ་ཚུ་གླུ་རིམ་ནང་གསར་བསྐྲུན་འབད་དེ་གཞི་རྟེན་བེད་སྤྱོད་ཐོག་ལས་ཁྱོད་རའི་བརྡ་དོན་ཚུ་འཛིན་སྐྱོང་འབད་འོང།"
 
 #: source/base/registryitem_base.ulf#STR_REG_VAL_OO_DATABASE
 msgid  "OpenDocument Database"
@@ -53,7 +53,7 @@ msgstr "%PRODUCTNAME གཞི་རྟེན།"
 
 #: source/base/module_base.ulf#STR_DESC_MODULE_PRG_BASE
 msgid  "Create and edit databases by using %PRODUCTNAME Base."
-msgstr ""
+msgstr "%PRODUCTNAME གཞི་རྟེན་ལག་ལེན་འཐབ་ཐོག་ལས་གནད་སྡུད་གཞི་རྟེན་ཚུ་ཞུན་དག་དང་གསར་བསྐྲུན་འབད་འོང།"
 
 #: source/base/module_base.ulf#STR_NAME_MODULE_PRG_BASE_BIN
 msgid  "Program Module"
@@ -121,7 +121,11 @@ msgstr "ཤོག་ཁྲམ།"
 
 #: source/calc/folderitem_calc.ulf#STR_FI_TOOLTIP_CALC
 msgid  "Perform calculation, analyze information and manage lists in spreadsheets by using Calc."
-msgstr ""
+msgstr "་  ཀེལ་སི་་ལག་ལེན་འཐབ་ཐོག་ལས་ རྩིས་ལས་ཀྱི་ལཱ་འགན་འགྲུབ་ནི་ བརྡ་དོན་དཔྱད་ཞིབ་འབད་ནི་དང ཤོག་ཁྲམ་ནང་ཡོད་མི་་ཐོ་ཡིག་ཚུ་ འཛིན་སྐྱོང་འཐབ།"
+
+#: source/calc/registryitem_calc.ulf#STR_REG_VAL_NEW
+msgid  "&New"
+msgstr "གསརཔ།(&N)"
 
 #: source/calc/registryitem_calc.ulf#STR_REG_VAL_SO60_SPREADSHEET
 msgid  "%SXWFORMATNAME %SXWFORMATVERSION Spreadsheet"
@@ -155,17 +159,13 @@ msgstr ""
 msgid  "Microsoft Excel Template"
 msgstr ""
 
-#: source/calc/registryitem_calc.ulf#STR_REG_VAL_NEW
-msgid  "&New"
-msgstr "གསརཔ།(&N)"
-
 #: source/calc/module_calc.ulf#STR_NAME_MODULE_PRG_CALC
 msgid  "%PRODUCTNAME Calc"
 msgstr "%PRODUCTNAME ཀེལ་སི།"
 
 #: source/calc/module_calc.ulf#STR_DESC_MODULE_PRG_CALC
 msgid  "Perform calculation, analyze information and manage lists in spreadsheets by using %PRODUCTNAME Calc."
-msgstr ""
+msgstr " %PRODUCTNAME ཀེལ་སི་ ལག་ལེན་འཐབ་ཐོག་ལས་ ཤོག་ཁྲམ་ནང་ལུ་ ཐོ་བཀོད་ཚུ་ འཛིན་སྐྱོང་འབད་ནི་དང་ བརྡ་དོན་དབྱེ་ཞིབ་ འབད་ནི་ དེ་ལས་ རྩིས་ལས་ཀྱི་ལས་འགན་འགྲུབ་ནི་ཚུ་འབདཝ་ཨིན།"
 
 #: source/calc/module_calc.ulf#STR_NAME_MODULE_PRG_CALC_BIN
 msgid  "Program Module"
@@ -189,7 +189,11 @@ msgstr "ནང་ན་ཁ་སྐོང་འབད།"
 
 #: source/calc/module_calc.ulf#STR_DESC_MODULE_OPTIONAL_ADDINS
 msgid  "Add-ins are additional programs that make new functions available in %PRODUCTNAME Calc."
-msgstr ""
+msgstr "Add-ins  ཚུ་ %PRODUCTNAME  ཀེལ་སི་ ནང་ལུ་ ལས་འགན་གསརཔ་ འཐོབ་ཚུགསཔ་ བཟོ་བའི་ ཁ་སྐོང་ལས་རིམ་ཅིག་ཨིན།"
+
+#: source/draw/registryitem_draw.ulf#STR_REG_VAL_NEW
+msgid  "&New"
+msgstr "གསརཔ།(&N)"
 
 #: source/draw/registryitem_draw.ulf#STR_REG_VAL_SO60_DRAWING
 msgid  "%SXWFORMATNAME %SXWFORMATVERSION Drawing"
@@ -207,17 +211,13 @@ msgstr "ཡིག་ཆ་ཁ་ཕྱེའི་པར་རིས།"
 msgid  "OpenDocument Drawing Template"
 msgstr "པར་རིས་ ཡིག་ཆའི་ ཊེམ་པེལེཊི་ ཁ་ཕྱེ།"
 
-#: source/draw/registryitem_draw.ulf#STR_REG_VAL_NEW
-msgid  "&New"
-msgstr "གསརཔ།(&N)"
-
 #: source/draw/folderitem_draw.ulf#STR_FI_NAME_ZEICHNUNG
 msgid  "Drawing"
 msgstr "པར་རིས།"
 
 #: source/draw/folderitem_draw.ulf#STR_FI_TOOLTIP_DRAW
 msgid  "Create and edit drawings, flow charts, and logos by using Draw."
-msgstr ""
+msgstr "འཐེན་ ལག་ལེན་འཐབ་ཀྱི་ཐོག་ལས་ པར་རིས་ཚུ་དང་འབབ་རྒྱུན་དཔེ་རིས་ དེ་ལས་ མེ་ཏོག་ཤར་བ་ཚུ་གསར་བསྐྲུན་དང་ ཞུན་དག་འབད།"
 
 #: source/draw/module_draw.ulf#STR_NAME_MODULE_PRG_DRAW
 msgid  "%PRODUCTNAME Draw"
@@ -225,7 +225,7 @@ msgstr "%PRODUCTNAME འཐེན།"
 
 #: source/draw/module_draw.ulf#STR_DESC_MODULE_PRG_DRAW
 msgid  "Create and edit drawings, flow charts, and logos by using %PRODUCTNAME Draw."
-msgstr ""
+msgstr "%PRODUCTNAME ལག་ལེན་འཐབ་ཀྱི་ཐོག་ལས་ འབབ་རྒྱུན་དཔེ་རིས་ཚུ་དང་ ལས་རྟགས་ཚུ་ དེ་ལས་པར་རིས་ཚུ་ གསར་བསྐྲུན་དང་ ཞུན་དག་འབད།"
 
 #: source/draw/module_draw.ulf#STR_NAME_MODULE_PRG_DRAW_BIN
 msgid  "Program Module"
@@ -249,7 +249,7 @@ msgstr "GNOME Integration"
 
 #: source/gnome/module_gnome.ulf#STR_DESC_MODULE_OPTIONAL_GNOME
 msgid  "System integration of %PRODUCTNAME %PRODUCTVERSION into Gnome Desktop Environment."
-msgstr ""
+msgstr "System integration of %PRODUCTNAME %PRODUCTVERSION into Gnome Desktop Environment."
 
 #: source/graphicfilter/module_graphicfilter.ulf#STR_NAME_MODULE_OPTIONAL_GRFFLT
 msgid  "Graphics Filters"
@@ -377,7 +377,11 @@ msgstr "གསལ་སྟོན།"
 
 #: source/impress/folderitem_impress.ulf#STR_FI_TOOLTIP_IMPRESS
 msgid  "Create and edit presentations for slideshows, meeting and Web pages by using Impress."
-msgstr ""
+msgstr "ཨིམ་པེརེསི་ ལག་ལེན་ཐོག་ལས་ བཤུད་སྟོན་ཚུ་གི་དོན་ལུ་ གསལ་སྟོན་དང་ འཛོམས་འདུ་དེ་ལས་ ཝེབ་ཤོག་ལེབ་ཚུ་ གསར་བསྐྲུན་དང་ ཞུན་དག་འབད།"
+
+#: source/impress/registryitem_impress.ulf#STR_REG_VAL_NEW
+msgid  "&New"
+msgstr "གསརཔ།(&N)"
 
 #: source/impress/registryitem_impress.ulf#STR_REG_VAL_SO60_SHOW
 msgid  "Show"
@@ -419,17 +423,13 @@ msgstr ""
 msgid  "Microsoft PowerPoint Template"
 msgstr ""
 
-#: source/impress/registryitem_impress.ulf#STR_REG_VAL_NEW
-msgid  "&New"
-msgstr "གསརཔ།(&N)"
-
 #: source/impress/module_impress.ulf#STR_NAME_MODULE_PRG_IMPRESS
 msgid  "%PRODUCTNAME Impress"
 msgstr "%PRODUCTNAME ཨིམ་པེརེསི།"
 
 #: source/impress/module_impress.ulf#STR_DESC_MODULE_PRG_IMPRESS
 msgid  "Create and edit presentations for slideshows, meeting and Web pages by using %PRODUCTNAME Impress."
-msgstr ""
+msgstr " %PRODUCTNAME ཨིམ་པེརེསི་ ལག་ལེན་འཐབ་ཐོག་ལས་ བཤུད་སྟོན་ཚུ་གི་དོན་ལུ་ གསལ་སྟོན་དང་ འཛོམས་འདུ་ དེ་ལས་ཝེབ་ཤོག་ལེབ་ཚུ་ གསར་བསྐྲུན་དང་ཞུན་དག་འབད།"
 
 #: source/impress/module_impress.ulf#STR_NAME_MODULE_PRG_IMPRESS_BIN
 msgid  "Program Module"
@@ -461,7 +461,7 @@ msgstr "འགྲུལ་འཕྲིན་ ཐབས་འཕྲུལ་ག�
 
 #: source/javafilter/module_javafilter.ulf#STR_DESC_MODULE_OPTIONAL_JAVAFILTER
 msgid  "Text and spreadsheet filters to support import/export for Palm handheld or Pocket PC (Java required)."
-msgstr ""
+msgstr "ནང་འདྲེན་/ཕྱིར་འདྲེན་ དོན་ལུ་དངཔཱམ་ ལག་བཟུང་ ཡང་ན་ པོ་ཀེཊ་ པི་སི་ཚུ་ལུ་ རྒྱབ་སྐྱོར་ ཚིག་ཡིག་དང་ཤོག་ཁྲམ་ ཚགས་མ་ཚུ།  ་(ཇ་བ་དགོས་མཁོ་ཡོདཔ)"
 
 #: source/javafilter/module_javafilter.ulf#STR_NAME_MODULE_OPTIONAL_JAVAFILTER_PALM
 msgid  "Palm"
@@ -485,7 +485,7 @@ msgstr "པོ་ཀེཊ་ པི་སི།"
 
 #: source/javafilter/module_javafilter.ulf#STR_DESC_MODULE_OPTIONAL_JAVAFILTER_POCKETPC_WNT
 msgid  "Filters and ActiveSync support for Pocket PC compatible handhelds"
-msgstr ""
+msgstr "པོ་ཀེཊ་ པི་སི་ ལག་བཟུང་མཐུན་འགྱུར་ཅན་ཚུ་གི་དོན་ལུ་ རྒྱབ་སྐྱོར་  ཚགས་མ་དང་ ཨེཀ་ཊིབ ་སིངཀ་ཚུ།"
 
 #: source/javafilter/module_javafilter.ulf#STR_DESC_MODULE_OPTIONAL_JAVAFILTER_POCKETPC_UNIX
 msgid  "Filters for Pocket PC compatible handhelds."
@@ -541,7 +541,7 @@ msgstr "པོ་ཀེཊ་ མིང་ཚིག་ཡིག་ཆ་-པོ�
 
 #: source/javafilter/registryitem_javafilter.ulf#STR_VALUE_HKLM_SOFT_SUN_STAROFFICE_XMERGESYNC_MSGS_ERROR_CLASSPATH
 msgid  "The %PRODUCTNAME mobile device filters cannot be located."
-msgstr ""
+msgstr "The %PRODUCTNAME འགྲུལ་འཕྲིན་གྱི་ ཐབས་འཕྲུལ་ཚགས་མ་ཚུ་ག་ཡོད་འཚོལ་མི་བཏུབ་པས།"
 
 #: source/javafilter/registryitem_javafilter.ulf#STR_VALUE_HKLM_SOFT_SUN_STAROFFICE_XMERGESYNC_MSGS_ERROR_JAVA
 msgid  "A Java 1.4 installation cannot be located."
@@ -549,7 +549,7 @@ msgstr "ཇ་བ་ ༡་༤ གཞི་བཙུགས་འབད་ནི�
 
 #: source/javafilter/registryitem_javafilter.ulf#STR_VALUE_HKLM_SOFT_SUN_STAROFFICE_XMERGESYNC_MSGS_ERROR_JAVAINIT
 msgid  "There was an error while initializing the Java Runtime Environment."
-msgstr ""
+msgstr "ཇ་བ་ རཱན་ཊའིམ་ ཨིན་བའི་རོ་མེནཊ་ འགོ་འབྱེད་འབད་བའི་སྐབས་ལུ་ འཛོལ་བ་གཅིག་འདུག"
 
 #: source/kde/module_kde.ulf#STR_NAME_MODULE_OPTIONAL_KDE
 msgid  "KDE Integration"
@@ -565,7 +565,7 @@ msgstr "ཨང་རྩིས་%PRODUCTNAME "
 
 #: source/math/module_math.ulf#STR_DESC_MODULE_PRG_MATH
 msgid  "Create and edit scientific formulas and equations by using %PRODUCTNAME Math."
-msgstr ""
+msgstr "ཨང་རྩིས་ %PRODUCTNAME ལག་ལེན་འཐབ་ཐོག་ལས་ ཚན་རིག་གི་ མན་ངག་དང་ ཨི་ཀུའེ་ཊོ་ཤཱན་ཚུ་ གསར་བསྐྲུན་དང་ ཞུན་དག་འབད།"
 
 #: source/math/module_math.ulf#STR_NAME_MODULE_PRG_MATH_BIN
 msgid  "Program Module"
@@ -585,7 +585,11 @@ msgstr " %PRODUCTNAME ཨང་རྩིས་ རོགས་རམ་ བས�
 
 #: source/math/folderitem_math.ulf#STR_FI_TOOLTIP_MATH
 msgid  "Create and edit scientific formulas and equations by using Math."
-msgstr ""
+msgstr "ཨང་རྩིས་ ལག་ལེན་འཐབ་ཐོག་ལས་ ཚན་རིག་གི་ མན་ངག་དང་ ཨི་ཀུའེ་ཊེ་ཤཱན་ཚུ་ གསར་བསྐྲུན་དང་ ཞུན་དག་འབད།"
+
+#: source/math/registryitem_math.ulf#STR_REG_VAL_NEW
+msgid  "&New"
+msgstr "གསརཔ(n)"
 
 #: source/math/registryitem_math.ulf#STR_REG_VAL_SO60_FORMULA
 msgid  "%SXWFORMATNAME %SXWFORMATVERSION Formula"
@@ -595,17 +599,18 @@ msgstr "%PRODUCTNAME %SXWFORMATVERSION གི་མན་ངག"
 msgid  "OpenDocument Formula"
 msgstr "མན་ངག་ ཡིག་ཆ་ ཁ་ཕྱེ།"
 
-#: source/math/registryitem_math.ulf#STR_REG_VAL_NEW
-msgid  "&New"
-msgstr "གསརཔ(n)"
-
 #: source/onlineupdate/module_onlineupdate.ulf#STR_NAME_MODULE_OPT_ONLINEUPDATE
 msgid  "Online Update"
 msgstr "Online Update"
 
 #: source/onlineupdate/module_onlineupdate.ulf#STR_DESC_MODULE_OPT_ONLINEUPDATE
 msgid  "Get automatically notified when a new update of %PRODUCTNAME becomes available."
-msgstr ""
+msgstr "Get automatically notified when a new update of %PRODUCTNAME becomes available."
+
+#: source/ooo/registryitem_ooo.ulf#STR_REG_VAL_NEW
+#, fuzzy
+msgid  "&New"
+msgstr "གསརཔ(&N)"
 
 #: source/ooo/registryitem_ooo.ulf#STR_REG_VAL_INSTALL
 #, fuzzy
@@ -616,19 +621,14 @@ msgstr "གཞི་བཙུགས། (&I)"
 msgid  "OpenOffice.org 1.1 Configuration File"
 msgstr ""
 
-#: source/ooo/registryitem_ooo.ulf#STR_REG_VAL_APPCAPABILITY_DESCRIPTION_OOO
-msgid  "office productivity suite based on Apache OpenOffice project"
-msgstr ""
-
-#: source/ooo/registryitem_ooo.ulf#STR_REG_VAL_NEW
-#, fuzzy
-msgid  "&New"
-msgstr "གསརཔ(&N)"
-
 #: source/ooo/registryitem_ooo.ulf#STR_REG_VAL_SO50_TEMPLATE_OOO
 #, fuzzy
 msgid  "StarOffice 5.0 Template"
 msgstr "སི་ཊར་ཡིག་ཚང་ ༥་༠ ཊིམ་པེལེཊི།"
+
+#: source/ooo/registryitem_ooo.ulf#STR_REG_VAL_APPCAPABILITY_DESCRIPTION_OOO
+msgid  "office productivity suite based on Apache OpenOffice project"
+msgstr ""
 
 #: source/ooo/module_systemint.ulf#STR_NAME_MODULE_OPTIONAL_SYSTEMINTEGRATION
 #, fuzzy
@@ -666,8 +666,9 @@ msgid  "Optional Components"
 msgstr "འདམ་ཁ་ཅན་གྱི་ཆ་ཤས་ཚུ།"
 
 #: source/ooo/module_ooo.ulf#STR_DESC_MODULE_OPTIONAL
+#, fuzzy
 msgid  "Common components and additional programs shared by all %PRODUCTNAME programs."
-msgstr ""
+msgstr " %PRODUCTNAME ལས་རིམ་ཚུ་རུབ་སྤྱོད་ཐོག་ལས་འབད་ཡོད་པའི་ མཐུན་མོང་ཆ་ཤས་ཚུ་དང་ ཁ་སྐོང་ལས་རིམ་ཚུ།"
 
 #: source/ooo/module_ooo.ulf#STR_NAME_MODULE_DICTIONARIES
 msgid  "Dictionaries"
@@ -682,7 +683,6 @@ msgid  "Java Runtime Environment (%JAVAVERSION)"
 msgstr ""
 
 #: source/ooo/module_java.ulf#STR_DESC_MODULE_OPTIONAL_JAVA
-#, fuzzy
 msgid  "Component for setting up the Java Environment"
 msgstr "ཇ་བ་མཐའ་འཁོར་འདི་སྒྲིག་སྟངས་དོན་ལུ་ཆ་ཤས།"
 
@@ -695,52 +695,42 @@ msgid  "Component for enabling use %PRODUCTNAME without a display"
 msgstr ""
 
 #: source/ooo/directory_ooo.ulf#STR_DIR_INFO
-#, fuzzy
 msgid  "Information"
 msgstr "བརྡ་དོན།"
 
 #: source/ooo/directory_ooo.ulf#STR_DIR_INTERNET
-#, fuzzy
 msgid  "Internet"
 msgstr "ཨིན་ཊར་ནེཊི།"
 
 #: source/ooo/directory_ooo.ulf#STR_DIR_JAVA
-#, fuzzy
 msgid  "Java"
 msgstr "ཇ་བ།"
 
 #: source/ooo/directory_ooo.ulf#STR_DIR_FREIZEIT
-#, fuzzy
 msgid  "Fun&More"
 msgstr "དགོད་བྲ་དང་གཞན།(&M)"
 
 #: source/ooo/directory_ooo.ulf#STR_DIR_STARONE
-#, fuzzy
 msgid  "%PRODUCTNAME API"
 msgstr "%PRODUCTNAME ཨེ་པི་ཨའི།"
 
 #: source/ooo/directory_ooo.ulf#STR_DIR_TOURISMUS
-#, fuzzy
 msgid  "Travel"
 msgstr "ལམ་འགྲུལ།"
 
 #: source/ooo/directory_ooo.ulf#STR_DIR_KAPITEL
-#, fuzzy
 msgid  "Chapters"
 msgstr "ལེའུ་ཚུ།"
 
 #: source/ooo/directory_ooo.ulf#STR_DIR_DATEIEN
-#, fuzzy
 msgid  "Files"
 msgstr "ཡིག་སྣོད་ཚུ།"
 
 #: source/ooo/folderitem_ooo.ulf#STR_FI_NAME_FROMTEMPLATE
-#, fuzzy
 msgid  "From Template"
 msgstr "ཊེམ་པེལེཊི་ལས།"
 
 #: source/ooo/folderitem_ooo.ulf#STR_FI_NAME_OPENDOCUMENT
-#, fuzzy
 msgid  "Open Document"
 msgstr "ཡིག་ཆ་ ཁ་ཕྱེ།"
 
@@ -749,12 +739,10 @@ msgid  "The office productivity suite compatible to the open and standardized OD
 msgstr ""
 
 #: source/ooo/module_langpack.ulf#STR_NAME_MODULE_ROOT_LANGPACK
-#, fuzzy
 msgid  "Additional language packs"
 msgstr "ཁ་སྐད་སྦུང་ཚན་ཚུ་ཁ་སྐོང་།"
 
 #: source/ooo/module_langpack.ulf#STR_DESC_MODULE_ROOT_LANGPACK
-#, fuzzy
 msgid  "Additional language packs"
 msgstr "ཁ་སྐད་སྦུང་ཚན་ཚུ་ཁ་སྐོང་།"
 
@@ -794,8 +782,9 @@ msgid  "Italian"
 msgstr "ཨི་ཊ་ལི་ཡཱན།"
 
 #: source/ooo/module_langpack.ulf#STR_DESC_MODULE_LANGPACK_IT
+#, fuzzy
 msgid  "Installs Italian support in %PRODUCTNAME %PRODUCTVERSION"
-msgstr ""
+msgstr "%PRODUCTNAME %PRODUCTVERSIONནང་ཨི་ཊ་ལི་ཡཱན་རྒྱབ་སྐྱོར་གཞི་བཙུགས་འབདཝ་ཨིན།"
 
 #: source/ooo/module_langpack.ulf#STR_NAME_MODULE_LANGPACK_ES
 #, fuzzy
@@ -823,8 +812,9 @@ msgid  "Portuguese"
 msgstr "པོར་ཊུ་གིསི།"
 
 #: source/ooo/module_langpack.ulf#STR_DESC_MODULE_LANGPACK_PT
+#, fuzzy
 msgid  "Installs Portuguese support in %PRODUCTNAME %PRODUCTVERSION"
-msgstr ""
+msgstr "%PRODUCTNAME %PRODUCTVERSIONནང་པོར་ཊུ་གིསི་རྒྱབ་སྐྱོར་གཞི་བཙུགས་འབདཝ་ཨིན། "
 
 #: source/ooo/module_langpack.ulf#STR_NAME_MODULE_LANGPACK_PT_BR
 #, fuzzy
@@ -832,8 +822,9 @@ msgid  "Portuguese (Brazil)"
 msgstr "པོར་ཊུ་གིསི།(བ་ར་ཛིལ།)"
 
 #: source/ooo/module_langpack.ulf#STR_DESC_MODULE_LANGPACK_PT_BR
+#, fuzzy
 msgid  "Installs Portuguese support in %PRODUCTNAME %PRODUCTVERSION"
-msgstr ""
+msgstr "%PRODUCTNAME %PRODUCTVERSIONནང་པོར་ཊུ་གིསི་རྒྱབ་སྐྱོར་གཞི་བཙུགས་འབདཝ་ཨིན། "
 
 #: source/ooo/module_langpack.ulf#STR_NAME_MODULE_LANGPACK_JA
 #, fuzzy
@@ -851,8 +842,9 @@ msgid  "Korean"
 msgstr "ཀོ་རི་ཡའི།"
 
 #: source/ooo/module_langpack.ulf#STR_DESC_MODULE_LANGPACK_KO
+#, fuzzy
 msgid  "Installs Korean support in %PRODUCTNAME %PRODUCTVERSION"
-msgstr ""
+msgstr "%PRODUCTNAME %PRODUCTVERSIONནང་ཀོ་རི་ཡའི་རྒྱབ་སྐྱོར་གཞི་བཙུགས་འབདཝ་ཨིན། "
 
 #: source/ooo/module_langpack.ulf#STR_NAME_MODULE_LANGPACK_ZH_CN
 #, fuzzy
@@ -860,8 +852,9 @@ msgid  "Chinese (simplified)"
 msgstr "རྒྱ་ནག(འཇམ་སམ་བཟོ་ཡོདཔ།)"
 
 #: source/ooo/module_langpack.ulf#STR_DESC_MODULE_LANGPACK_ZH_CN
+#, fuzzy
 msgid  "Installs Chinese (simplified) support in %PRODUCTNAME %PRODUCTVERSION"
-msgstr ""
+msgstr "%PRODUCTNAME %PRODUCTVERSIONནང་རྒྱ་ནག་(འཇམ་སམ་བཟོ་ཡོདཔ།)གི་སྐད་རྒྱབ་སྐྱོར་གཞི་བཙུགས་འབད་ཡོདཔ། "
 
 #: source/ooo/module_langpack.ulf#STR_NAME_MODULE_LANGPACK_ZH_TW
 #, fuzzy
@@ -869,8 +862,9 @@ msgid  "Chinese (traditional)"
 msgstr "རྒྱ་ནག་གི་སྐད།(སྔར་སྲོལ་གྱི།)"
 
 #: source/ooo/module_langpack.ulf#STR_DESC_MODULE_LANGPACK_ZH_TW
+#, fuzzy
 msgid  "Installs Chinese (traditional) support in %PRODUCTNAME %PRODUCTVERSION"
-msgstr ""
+msgstr "%PRODUCTNAME %PRODUCTVERSIONནང་རྒྱ་ནག་གི་སྐད་(སྔར་སྲོལ་གྱི་)རྒྱབ་སྐྱོར་གཞི་བཙུགས་འབདཝ་ཨིན། "
 
 #: source/ooo/module_langpack.ulf#STR_NAME_MODULE_LANGPACK_NL
 #, fuzzy
@@ -888,8 +882,9 @@ msgid  "Hungarian"
 msgstr "ཧང་ག་རི་ཡཱན།"
 
 #: source/ooo/module_langpack.ulf#STR_DESC_MODULE_LANGPACK_HU
+#, fuzzy
 msgid  "Installs Hungarian support in %PRODUCTNAME %PRODUCTVERSION"
-msgstr ""
+msgstr "%PRODUCTNAME %PRODUCTVERSIONནང་ཧང་ག་རི་ཡཱན་རྒྱབ་སྐྱོར་གཞི་བཙུགས་འབདཝ་ཨིན།"
 
 #: source/ooo/module_langpack.ulf#STR_NAME_MODULE_LANGPACK_PL
 #, fuzzy
@@ -967,8 +962,9 @@ msgid  "Croatian"
 msgstr "ཀོརོ་ཤི་ཡཱན།"
 
 #: source/ooo/module_langpack.ulf#STR_DESC_MODULE_LANGPACK_HR
+#, fuzzy
 msgid  "Installs Croatian support in %PRODUCTNAME %PRODUCTVERSION"
-msgstr ""
+msgstr "%PRODUCTNAME %PRODUCTVERSIONནང་ཀོརོ་ཤི་ཡཱན་རྒྱབ་སྐྱོར་གཞི་བཙུགས་འབདཝ་ཨིན། "
 
 #: source/ooo/module_langpack.ulf#STR_NAME_MODULE_LANGPACK_ET
 #, fuzzy
@@ -976,8 +972,9 @@ msgid  "Estonian"
 msgstr "ཨིསི་ཊོ་ནི་ཡཱན།"
 
 #: source/ooo/module_langpack.ulf#STR_DESC_MODULE_LANGPACK_ET
+#, fuzzy
 msgid  "Installs Estonian support in %PRODUCTNAME %PRODUCTVERSION"
-msgstr ""
+msgstr "%PRODUCTNAME %PRODUCTVERSIONནང་ཨིསི་ཊོ་ནི་ཡཱན་རྒྱབ་སྐྱོར་གཞི་བཙུགས་འབདཝ་ཨིན། "
 
 #: source/ooo/module_langpack.ulf#STR_NAME_MODULE_LANGPACK_VI
 #, fuzzy
@@ -985,8 +982,9 @@ msgid  "Vietnamese"
 msgstr "ཝེཊི་ན་མིསི།"
 
 #: source/ooo/module_langpack.ulf#STR_DESC_MODULE_LANGPACK_VI
+#, fuzzy
 msgid  "Installs Vietnamese support in %PRODUCTNAME %PRODUCTVERSION"
-msgstr ""
+msgstr "%PRODUCTNAME %PRODUCTVERSIONནང་ཝེཊི་ན་མིསི་རྒྱབ་སྐྱོར་གཞི་བཙུགས་འབདཝ་ཨིན།"
 
 #: source/ooo/module_langpack.ulf#STR_NAME_MODULE_LANGPACK_BG
 #, fuzzy
@@ -994,8 +992,9 @@ msgid  "Bulgarian"
 msgstr "བཱལ་ག་རི་ཡཱན།"
 
 #: source/ooo/module_langpack.ulf#STR_DESC_MODULE_LANGPACK_BG
+#, fuzzy
 msgid  "Installs Bulgarian support in %PRODUCTNAME %PRODUCTVERSION"
-msgstr ""
+msgstr "%PRODUCTNAME %PRODUCTVERSIONནང་བཱལ་ག་རི་ཡཱན་རྒྱབ་སྐྱོར་གཞི་བཙུགས་འབདཝ་ཨིན། "
 
 #: source/ooo/module_langpack.ulf#STR_NAME_MODULE_LANGPACK_KM
 #, fuzzy
@@ -1073,8 +1072,9 @@ msgid  "Southern Sotho (Sutu)"
 msgstr "ལྷོ་ཕྱོགས་སོ་ཐོ།(སུ་ཐུ།)"
 
 #: source/ooo/module_langpack.ulf#STR_DESC_MODULE_LANGPACK_ST
+#, fuzzy
 msgid  "Installs Southern Sotho (Sutu) support in %PRODUCTNAME %PRODUCTVERSION"
-msgstr ""
+msgstr "%PRODUCTNAME %PRODUCTVERSIONནང་སོ་ཐོ་(སུ་ཐུ་)རྒྱབ་སྐྱོར་གཞི་བཙུགས་འབདཝ་ཨིན།"
 
 #: source/ooo/module_langpack.ulf#STR_NAME_MODULE_LANGPACK_TN
 #, fuzzy
@@ -1092,8 +1092,9 @@ msgid  "Xhosa"
 msgstr "ཨེགསི་ཨོ་ས།"
 
 #: source/ooo/module_langpack.ulf#STR_DESC_MODULE_LANGPACK_XH
+#, fuzzy
 msgid  "Installs Xhosa support in %PRODUCTNAME %PRODUCTVERSION"
-msgstr ""
+msgstr "%PRODUCTNAME %PRODUCTVERSIONནང་ཨེགསི་ཨོ་ས་རྒྱབ་སྐྱོར་གཞི་བཙུགས་འབདཝ་ཨིན།"
 
 #: source/ooo/module_langpack.ulf#STR_NAME_MODULE_LANGPACK_ZU
 #, fuzzy
@@ -1111,8 +1112,9 @@ msgid  "Afrikaans"
 msgstr "ཨཕ་རི་ཀཱནསི།"
 
 #: source/ooo/module_langpack.ulf#STR_DESC_MODULE_LANGPACK_AF
+#, fuzzy
 msgid  "Installs Afrikaans support in %PRODUCTNAME %PRODUCTVERSION"
-msgstr ""
+msgstr "%PRODUCTNAME %PRODUCTVERSIONནང་ཨཕ་རི་ཀཱནསི་རྒྱབ་སྐྱོར་གཞི་བཙུགས་འབདཝ་ཨིན།"
 
 #: source/ooo/module_langpack.ulf#STR_NAME_MODULE_LANGPACK_SW
 #, fuzzy
@@ -1170,8 +1172,9 @@ msgid  "Bengali (Bangladesh)"
 msgstr "བེང་ག་ལི།(བང་ལ་དིཤི།)"
 
 #: source/ooo/module_langpack.ulf#STR_DESC_MODULE_LANGPACK_BN_BD
+#, fuzzy
 msgid  "Installs Bengali (Bangladesh) support in %PRODUCTNAME %PRODUCTVERSION"
-msgstr ""
+msgstr "%PRODUCTNAME %PRODUCTVERSIONནང་བེང་ག་ལི་(བང་ལ་དིཤི)རྒྱབ་སྐྱོར་གཞི་འབདཝ་ཨིན།"
 
 #: source/ooo/module_langpack.ulf#STR_NAME_MODULE_LANGPACK_BN_IN
 #, fuzzy
@@ -1179,8 +1182,9 @@ msgid  "Bengali (India)"
 msgstr "བེང་ག་ལི།(རྒྱ་གར།)"
 
 #: source/ooo/module_langpack.ulf#STR_DESC_MODULE_LANGPACK_BN_IN
+#, fuzzy
 msgid  "Installs Bengali (India) support in %PRODUCTNAME %PRODUCTVERSION"
-msgstr ""
+msgstr "%PRODUCTNAME %PRODUCTVERSIONནང་བེང་ག་ལི་(རྒྱ་གར་)རྒྱབ་སྐྱོར་གཞི་བཙུགས་འབདཝ་ཨིན། "
 
 #: source/ooo/module_langpack.ulf#STR_NAME_MODULE_LANGPACK_OR
 #, fuzzy
@@ -1288,8 +1292,9 @@ msgid  "Hebrew"
 msgstr "ཧེབ་བིརིའུ།"
 
 #: source/ooo/module_langpack.ulf#STR_DESC_MODULE_LANGPACK_HE
+#, fuzzy
 msgid  "Installs Hebrew support in %PRODUCTNAME %PRODUCTVERSION"
-msgstr ""
+msgstr "%PRODUCTNAME %PRODUCTVERSIONནང་ཧེབ་བིརིའུ་རྒྱབ་སྐྱོར་གཞི་བཙུགས་འབདཝ་ཨིན།"
 
 #: source/ooo/module_langpack.ulf#STR_NAME_MODULE_LANGPACK_IS
 #, fuzzy
@@ -1297,8 +1302,9 @@ msgid  "Icelandic"
 msgstr "ཨའིསི་ལེན་ཌིཀ།"
 
 #: source/ooo/module_langpack.ulf#STR_DESC_MODULE_LANGPACK_IS
+#, fuzzy
 msgid  "Installs Icelandic support in %PRODUCTNAME %PRODUCTVERSION"
-msgstr ""
+msgstr "%PRODUCTNAME %PRODUCTVERSIONནང་ཨའིསི་ལེན་ཌིཀ་རྒྱབ་སྐྱོར་གཞི་བཙུགས་འབདཝ་ཨིན།"
 
 #: source/ooo/module_langpack.ulf#STR_NAME_MODULE_LANGPACK_NB
 #, fuzzy
@@ -1306,8 +1312,9 @@ msgid  "Norwegian (Bokmål)"
 msgstr "ནོར་ཝེ་ཇི་ཡཱན།(བོག་མཱལ།)"
 
 #: source/ooo/module_langpack.ulf#STR_DESC_MODULE_LANGPACK_NB
+#, fuzzy
 msgid  "Installs Norwegian (Bokmål) support in %PRODUCTNAME %PRODUCTVERSION"
-msgstr ""
+msgstr "%PRODUCTNAME %PRODUCTVERSIONནང་ནོར་ཝེ་ཇི་ཡཱན་(བོག་མཱལ།)རྒྱབ་སྐྱོར་གཞི་བཙུགས་འབདཝ་ཨིན། "
 
 #: source/ooo/module_langpack.ulf#STR_NAME_MODULE_LANGPACK_NN
 #, fuzzy
@@ -1315,8 +1322,9 @@ msgid  "Norwegian (Nynorsk)"
 msgstr "ནོར་ཝེ་ཇི་ཡཱན།(ནི་ནོརཀི།)"
 
 #: source/ooo/module_langpack.ulf#STR_DESC_MODULE_LANGPACK_NN
+#, fuzzy
 msgid  "Installs Norwegian (Nynorsk) support in %PRODUCTNAME %PRODUCTVERSION"
-msgstr ""
+msgstr "%PRODUCTNAME %PRODUCTVERSIONནང་ནོར་ཝེ་ཇི་ཡཱན་(ནི་ནོརཀ།)རྒྱབ་སྐྱོར་གཞི་བཙུགས་འབདཝ་ཨིན།"
 
 #: source/ooo/module_langpack.ulf#STR_NAME_MODULE_LANGPACK_RM
 #, fuzzy
@@ -1324,8 +1332,9 @@ msgid  "Rhaeto-Romance"
 msgstr "རེ་ཏོ-རོམ་མེནིསི།"
 
 #: source/ooo/module_langpack.ulf#STR_DESC_MODULE_LANGPACK_RM
+#, fuzzy
 msgid  "Installs Rhaeto-Romance support in %PRODUCTNAME %PRODUCTVERSION"
-msgstr ""
+msgstr "%PRODUCTNAME %PRODUCTVERSIONནང་རེ་ཏོ་རོམ་ནིསི་རྒྱབ་སྐྱོར་གཞི་བཙུགས་འབདཝ་ཨིན། "
 
 #: source/ooo/module_langpack.ulf#STR_NAME_MODULE_LANGPACK_RO
 #, fuzzy
@@ -1333,8 +1342,9 @@ msgid  "Romanian"
 msgstr "རོ་མ་ནི་ཡཱན།"
 
 #: source/ooo/module_langpack.ulf#STR_DESC_MODULE_LANGPACK_RO
+#, fuzzy
 msgid  "Installs Romanian support in %PRODUCTNAME %PRODUCTVERSION"
-msgstr ""
+msgstr "%PRODUCTNAME %PRODUCTVERSIONནང་རོ་མ་ནི་ཡཱན་རྒྱབ་སྐྱོར་གཞི་བཙུགས་འབདཝ་ཨིན། "
 
 #: source/ooo/module_langpack.ulf#STR_NAME_MODULE_LANGPACK_SQ
 #, fuzzy
@@ -1342,8 +1352,9 @@ msgid  "Albanian"
 msgstr "ཨཱལ་བཱ་ནི་ཡཱན།"
 
 #: source/ooo/module_langpack.ulf#STR_DESC_MODULE_LANGPACK_SQ
+#, fuzzy
 msgid  "Installs Albanian support in %PRODUCTNAME %PRODUCTVERSION"
-msgstr ""
+msgstr "%PRODUCTNAME %PRODUCTVERSIONནང་ཨཱལ་བཱ་ནི་ཡཱན་རྒྱབ་སྐྱོར་གཞི་བཙུགས་འབདཝ་ཨིན། "
 
 #: source/ooo/module_langpack.ulf#STR_NAME_MODULE_LANGPACK_UR
 #, fuzzy
@@ -1361,8 +1372,9 @@ msgid  "Indonesian"
 msgstr "ཨིན་དོ་ནི་ཤེ་ཡཱན།"
 
 #: source/ooo/module_langpack.ulf#STR_DESC_MODULE_LANGPACK_ID
+#, fuzzy
 msgid  "Installs Indonesian support in %PRODUCTNAME %PRODUCTVERSION"
-msgstr ""
+msgstr "%PRODUCTNAME %PRODUCTVERSIONང་ཨིན་ཌོ་ནེ་ཤི་ཡཱན་རྒྱབ་སྐྱོར་གཞི་བཙུགས་འབདཝ་ཨིན། "
 
 #: source/ooo/module_langpack.ulf#STR_NAME_MODULE_LANGPACK_UK
 #, fuzzy
@@ -1370,8 +1382,9 @@ msgid  "Ukrainian"
 msgstr "ཡུཀ་རའི་ནི་ཡཱན།"
 
 #: source/ooo/module_langpack.ulf#STR_DESC_MODULE_LANGPACK_UK
+#, fuzzy
 msgid  "Installs Ukrainian support in %PRODUCTNAME %PRODUCTVERSION"
-msgstr ""
+msgstr "%PRODUCTNAME %PRODUCTVERSIONནང་ཡུཀ་རཱི་ནི་ཡཱན་རྒྱབ་སྐྱོར་གཞི་བཙུགས་འབདཝ་ཨིན།"
 
 #: source/ooo/module_langpack.ulf#STR_NAME_MODULE_LANGPACK_BE_BY
 #, fuzzy
@@ -1379,8 +1392,9 @@ msgid  "Belarusian"
 msgstr " བེ་ལ་རུ་སི་ཡཱན།"
 
 #: source/ooo/module_langpack.ulf#STR_DESC_MODULE_LANGPACK_BE_BY
+#, fuzzy
 msgid  "Installs Belarusian support in %PRODUCTNAME %PRODUCTVERSION"
-msgstr ""
+msgstr "%PRODUCTNAME %PRODUCTVERSIONནང་བེ་ལ་རུ་སི་ཡཱན་རྒྱབ་སྐྱོར་འདི་གཞི་བཙུགས་འབདཝ་ཨིན་"
 
 #: source/ooo/module_langpack.ulf#STR_NAME_MODULE_LANGPACK_SL
 #, fuzzy
@@ -1388,8 +1402,9 @@ msgid  "Slovenian"
 msgstr "སོལོ་བི་ནི་ཡཱན།"
 
 #: source/ooo/module_langpack.ulf#STR_DESC_MODULE_LANGPACK_SL
+#, fuzzy
 msgid  "Installs Slovenian support in %PRODUCTNAME %PRODUCTVERSION"
-msgstr ""
+msgstr "%PRODUCTNAME %PRODUCTVERSIONནང་ སོལོ་བི་ནི་ཡཱན་རྒྱབ་སྐྱོར་གཞི་བཙུགས་འབདཝ་ཨིན་"
 
 #: source/ooo/module_langpack.ulf#STR_NAME_MODULE_LANGPACK_LV
 #, fuzzy
@@ -1397,8 +1412,9 @@ msgid  "Latvian"
 msgstr "ལེཊི་བི་ཡཱན།"
 
 #: source/ooo/module_langpack.ulf#STR_DESC_MODULE_LANGPACK_LV
+#, fuzzy
 msgid  "Installs Latvian support in %PRODUCTNAME %PRODUCTVERSION"
-msgstr ""
+msgstr "%PRODUCTNAME %PRODUCTVERSIONནང་ ལེཊི་བི་ཡཱན་རྒྱབ་སྐྱོར་གཞི་བཙུགས་འབདཝ་ཨིན་"
 
 #: source/ooo/module_langpack.ulf#STR_NAME_MODULE_LANGPACK_LT
 #, fuzzy
@@ -1406,8 +1422,9 @@ msgid  "Lithuanian"
 msgstr "ལི་ཐུ་འ་ནི་ཡཱན།"
 
 #: source/ooo/module_langpack.ulf#STR_DESC_MODULE_LANGPACK_LT
+#, fuzzy
 msgid  "Installs Lithuanian support in %PRODUCTNAME %PRODUCTVERSION"
-msgstr ""
+msgstr "%PRODUCTNAME %PRODUCTVERSIONནང་ ལི་ཐུ་ནི་ཡཱན་རྒྱབ་སྐྱོར་གཞི་བཙུགས་འབདཝ་ཨིན་"
 
 #: source/ooo/module_langpack.ulf#STR_NAME_MODULE_LANGPACK_HY
 #, fuzzy
@@ -1415,8 +1432,9 @@ msgid  "Armenian"
 msgstr "ཨར་མི་ནི་ཡཱན།"
 
 #: source/ooo/module_langpack.ulf#STR_DESC_MODULE_LANGPACK_HY
+#, fuzzy
 msgid  "Installs Armenian support in %PRODUCTNAME %PRODUCTVERSION"
-msgstr ""
+msgstr "%PRODUCTNAME %PRODUCTVERSIONནང་ ཨར་མི་ནི་ཡཱན་རྒྱབ་སྐྱོར་གཞི་བཙུགས་འབདཝ་ཨིན་"
 
 #: source/ooo/module_langpack.ulf#STR_NAME_MODULE_LANGPACK_EU
 #, fuzzy
@@ -1434,8 +1452,9 @@ msgid  "Macedonian"
 msgstr "མེ་སི་ཌོ་ནི་ཡཱན།"
 
 #: source/ooo/module_langpack.ulf#STR_DESC_MODULE_LANGPACK_MK
+#, fuzzy
 msgid  "Installs Macedonian support in %PRODUCTNAME %PRODUCTVERSION"
-msgstr ""
+msgstr "%PRODUCTNAME %PRODUCTVERSIONནང་  མེ་སི་ཌོ་ནི་ཡཱན་རྒྱབ་སྐྱོར་གཞི་བཙུགས་འབདཝ་ཨིན་"
 
 #: source/ooo/module_langpack.ulf#STR_NAME_MODULE_LANGPACK_MT
 #, fuzzy
@@ -1443,8 +1462,9 @@ msgid  "Maltese"
 msgstr "མཱལ་ཊི་སི།"
 
 #: source/ooo/module_langpack.ulf#STR_DESC_MODULE_LANGPACK_MT
+#, fuzzy
 msgid  "Installs Maltese support in %PRODUCTNAME %PRODUCTVERSION"
-msgstr ""
+msgstr "%PRODUCTNAME %PRODUCTVERSIONནང་  མཱལ་ཊི་སི་རྒྱབ་སྐྱོར་གཞི་བཙུགས་འབདཝ་ཨིན་"
 
 #: source/ooo/module_langpack.ulf#STR_NAME_MODULE_LANGPACK_CY
 #, fuzzy
@@ -1462,8 +1482,9 @@ msgid  "Galician"
 msgstr "གེ་ལི་ཤི་ཡཱན།"
 
 #: source/ooo/module_langpack.ulf#STR_DESC_MODULE_LANGPACK_GL
+#, fuzzy
 msgid  "Installs Galician support in %PRODUCTNAME %PRODUCTVERSION"
-msgstr ""
+msgstr "%PRODUCTNAME %PRODUCTVERSIONནང་  གེ་ལི་ཤི་ཡཱན་རྒྱབ་སྐྱོར་གཞི་བཙུགས་འབདཝ་ཨིན་"
 
 #: source/ooo/module_langpack.ulf#STR_NAME_MODULE_LANGPACK_SH_YU
 #, fuzzy
@@ -1471,8 +1492,9 @@ msgid  "Serbian (Latin)"
 msgstr "སར་བི་ཡཱན། (ལེ་ཊིན་)"
 
 #: source/ooo/module_langpack.ulf#STR_DESC_MODULE_LANGPACK_SH_YU
+#, fuzzy
 msgid  "Installs Serbian (Latin) support in %PRODUCTNAME %PRODUCTVERSION"
-msgstr ""
+msgstr "%PRODUCTNAME %PRODUCTVERSIONནང་  སར་བི་ཡཱན་ (ལེ་ཊིན་)རྒྱབ་སྐྱོར་གཞི་བཙུགས་འབདཝ་ཨིན་"
 
 #: source/ooo/module_langpack.ulf#STR_NAME_MODULE_LANGPACK_SH
 #, fuzzy
@@ -1480,8 +1502,9 @@ msgid  "Serbian (Latin)"
 msgstr "སར་བི་ཡཱན། (ལེ་ཊིན་)"
 
 #: source/ooo/module_langpack.ulf#STR_DESC_MODULE_LANGPACK_SH
+#, fuzzy
 msgid  "Installs Serbian (Latin) support in %PRODUCTNAME %PRODUCTVERSION"
-msgstr ""
+msgstr "%PRODUCTNAME %PRODUCTVERSIONནང་  སར་བི་ཡཱན་ (ལེ་ཊིན་)རྒྱབ་སྐྱོར་གཞི་བཙུགས་འབདཝ་ཨིན་"
 
 #: source/ooo/module_langpack.ulf#STR_NAME_MODULE_LANGPACK_GA
 #, fuzzy
@@ -1499,8 +1522,9 @@ msgid  "Serbian (Cyrillic)"
 msgstr "སར་བི་ཡཱན། (སི་རི་ལིཀ་)"
 
 #: source/ooo/module_langpack.ulf#STR_DESC_MODULE_LANGPACK_SR_CS
+#, fuzzy
 msgid  "Installs Serbian (Cyrillic) support in %PRODUCTNAME %PRODUCTVERSION"
-msgstr ""
+msgstr "%PRODUCTNAME %PRODUCTVERSIONནང་  སར་བི་ཡཱན་ (སི་རི་ལིཀ་)རྒྱབ་སྐྱོར་གཞི་བཙུགས་འབདཝ་ཨིན་"
 
 #: source/ooo/module_langpack.ulf#STR_NAME_MODULE_LANGPACK_SR
 #, fuzzy
@@ -1508,8 +1532,9 @@ msgid  "Serbian (Cyrillic)"
 msgstr "སར་བི་ཡཱན། (སི་རི་ལིཀ་)"
 
 #: source/ooo/module_langpack.ulf#STR_DESC_MODULE_LANGPACK_SR
+#, fuzzy
 msgid  "Installs Serbian (Cyrillic) support in %PRODUCTNAME %PRODUCTVERSION"
-msgstr ""
+msgstr "%PRODUCTNAME %PRODUCTVERSIONནང་  སར་བི་ཡཱན་ (སི་རི་ལིཀ་)རྒྱབ་སྐྱོར་གཞི་བཙུགས་འབདཝ་ཨིན་"
 
 #: source/ooo/module_langpack.ulf#STR_NAME_MODULE_LANGPACK_BS
 #, fuzzy
@@ -1517,8 +1542,9 @@ msgid  "Bosnian"
 msgstr "བོསི་ནི་ཡཱན།"
 
 #: source/ooo/module_langpack.ulf#STR_DESC_MODULE_LANGPACK_BS
+#, fuzzy
 msgid  "Installs Bosnian support in %PRODUCTNAME %PRODUCTVERSION"
-msgstr ""
+msgstr "%PRODUCTNAME %PRODUCTVERSIONནང་ བོསི་ནི་ཡཱན་རྒྱབ་སྐྱོར་གཞི་བཙུགས་འབདཝ་ཨིན་"
 
 #: source/ooo/module_langpack.ulf#STR_NAME_MODULE_LANGPACK_AS_IN
 #, fuzzy
@@ -1536,8 +1562,9 @@ msgid  "Kinyarwanda"
 msgstr "ཀིན་ཡར་ཝན་ཌ།"
 
 #: source/ooo/module_langpack.ulf#STR_DESC_MODULE_LANGPACK_RW
+#, fuzzy
 msgid  "Installs Kinyarwanda support in %PRODUCTNAME %PRODUCTVERSION"
-msgstr ""
+msgstr "%PRODUCTNAME %PRODUCTVERSIONནང་  ཀིན་ཡར་ཝན་ཌ་རྒྱབ་སྐྱོར་གཞི་བཙུགས་འབདཝ་ཨིན་"
 
 #: source/ooo/module_langpack.ulf#STR_NAME_MODULE_LANGPACK_SA
 #, fuzzy
@@ -1563,8 +1590,9 @@ msgid  "Faroese"
 msgstr "ཕེ་རོ་སི།"
 
 #: source/ooo/module_langpack.ulf#STR_DESC_MODULE_LANGPACK_FO
+#, fuzzy
 msgid  "Installs Faroese support in %PRODUCTNAME %PRODUCTVERSION"
-msgstr ""
+msgstr "%PRODUCTNAME %PRODUCTVERSIONནང་  ཕེ་རོ་སི་རྒྱབ་སྐྱོར་གཞི་བཙུགས་འབདཝ་ཨིན་"
 
 #: source/ooo/module_langpack.ulf#STR_NAME_MODULE_LANGPACK_SB
 #, fuzzy
@@ -1572,8 +1600,9 @@ msgid  "Sorbian"
 msgstr "སོར་བི་ཡཱན།"
 
 #: source/ooo/module_langpack.ulf#STR_DESC_MODULE_LANGPACK_SB
+#, fuzzy
 msgid  "Installs Sorbian support in %PRODUCTNAME %PRODUCTVERSION"
-msgstr ""
+msgstr "%PRODUCTNAME %PRODUCTVERSIONནང་  སོར་བི་ཡཱན་རྒྱབ་སྐྱོར་གཞི་བཙུགས་འབདཝ་ཨིན་"
 
 #: source/ooo/module_langpack.ulf#STR_NAME_MODULE_LANGPACK_TT
 #, fuzzy
@@ -1611,8 +1640,9 @@ msgid  "Breton"
 msgstr "བིརི་ཊཱོན།"
 
 #: source/ooo/module_langpack.ulf#STR_DESC_MODULE_LANGPACK_BR
+#, fuzzy
 msgid  "Installs Breton support in %PRODUCTNAME %PRODUCTVERSION"
-msgstr ""
+msgstr "%PRODUCTNAME %PRODUCTVERSIONནང་  བིརི་ཊཱོན་རྒྱབ་སྐྱོར་གཞི་བཙུགས་འབདཝ་ཨིན་"
 
 #: source/ooo/module_langpack.ulf#STR_NAME_MODULE_LANGPACK_NR
 #, fuzzy
@@ -1620,8 +1650,9 @@ msgid  "Ndebele South"
 msgstr "ཌི་བི་ལི་ལྷོ།"
 
 #: source/ooo/module_langpack.ulf#STR_DESC_MODULE_LANGPACK_NR
+#, fuzzy
 msgid  "Installs Ndebele South support in %PRODUCTNAME %PRODUCTVERSION"
-msgstr ""
+msgstr "%PRODUCTNAME %PRODUCTVERSIONནང་  ཌི་བི་ལི་ལྷོ་རྒྱབ་སྐྱོར་གཞི་བཙུགས་འབདཝ་ཨིན་"
 
 #: source/ooo/module_langpack.ulf#STR_NAME_MODULE_LANGPACK_SS
 #, fuzzy
@@ -1659,8 +1690,9 @@ msgid  "Malay (Malaysian)"
 msgstr "མ་ལེ། (མ་ལེ་ཤི་ཡཱན་)"
 
 #: source/ooo/module_langpack.ulf#STR_DESC_MODULE_LANGPACK_MS
+#, fuzzy
 msgid  "Installs Malay (Malaysian) support in %PRODUCTNAME %PRODUCTVERSION"
-msgstr ""
+msgstr "%PRODUCTNAME %PRODUCTVERSIONནང་  མ་ལེ་ (མ་ལེ་ཤི་ཡཱན་)རྒྱབ་སྐྱོར་གཞི་བཙུགས་འབདཝ་ཨིན་"
 
 #: source/ooo/module_langpack.ulf#STR_NAME_MODULE_LANGPACK_TG
 #, fuzzy
@@ -1733,8 +1765,9 @@ msgid  "English (United Kingdom)"
 msgstr ""
 
 #: source/ooo/module_langpack.ulf#STR_DESC_MODULE_LANGPACK_EN_GB
+#, fuzzy
 msgid  "Installs English (United Kingdom) support in %PRODUCTNAME %PRODUCTVERSION"
-msgstr ""
+msgstr "%PRODUCTNAME %PRODUCTVERSIONནང་བེང་ག་ལི་(རྒྱ་གར་)རྒྱབ་སྐྱོར་གཞི་བཙུགས་འབདཝ་ཨིན། "
 
 #: source/ooo/module_langpack.ulf#STR_NAME_MODULE_LANGPACK_UR_IN
 #, fuzzy
@@ -1787,8 +1820,9 @@ msgid  "Mongolian"
 msgstr ""
 
 #: source/ooo/module_langpack.ulf#STR_DESC_MODULE_LANGPACK_MN
+#, fuzzy
 msgid  "Installs Mongolian support in %PRODUCTNAME %PRODUCTVERSION"
-msgstr ""
+msgstr "%PRODUCTNAME %PRODUCTVERSIONནང་ཧང་ག་རི་ཡཱན་རྒྱབ་སྐྱོར་གཞི་བཙུགས་འབདཝ་ཨིན།"
 
 #: source/ooo/module_langpack.ulf#STR_NAME_MODULE_LANGPACK_OC
 msgid  "Occitan"
@@ -1831,8 +1865,9 @@ msgid  "Asturian"
 msgstr ""
 
 #: source/ooo/module_langpack.ulf#STR_DESC_MODULE_LANGPACK_AST
+#, fuzzy
 msgid  "Installs Asturian support in %PRODUCTNAME %PRODUCTVERSION"
-msgstr ""
+msgstr "%PRODUCTNAME %PRODUCTVERSIONནང་ཨིསི་ཊོ་ནི་ཡཱན་རྒྱབ་སྐྱོར་གཞི་བཙུགས་འབདཝ་ཨིན། "
 
 #: source/ooo/module_langpack.ulf#STR_NAME_MODULE_LANGPACK_GD
 msgid  "Gaelic (Scotland)"
@@ -1843,31 +1878,28 @@ msgid  "Installs Gaelic (Scotland) support in %PRODUCTNAME %PRODUCTVERSION"
 msgstr ""
 
 #: source/python/module_python_mailmerge.ulf#STR_NAME_MODULE_OPTIONAL_PYTHON_MAILMERGE
-#, fuzzy
 msgid  "E-mail Mailmerge"
 msgstr "གློག་འཕྲིན་ ཡིག་འཕྲིན་མཉམ་བསྡོམས་འབད་ནི།"
 
 #: source/python/module_python_mailmerge.ulf#STR_DESC_MODULE_OPTIONAL_PYTHON_MAILMERGE
 msgid  "Module for %PRODUCTNAME E-mail Mailmerge feature"
-msgstr ""
+msgstr "%PRODUCTNAME གློག་འཕྲིན་ ཡིག་འཕྲིན་མཉམ་བསྡོམས་འབད་ནི་ ཁྱད་རྣམ་གི་དོན་ལུ་ཚད་གཞི།"
 
 #: source/python/module_python.ulf#STR_NAME_MODULE_OPTIONAL_PYTHON
-#, fuzzy
 msgid  "Python-UNO Bridge"
 msgstr "པ་ཡི་ཐཱོན་-ཡུ་ཨེན་ཨོ་ ཟམ།"
 
 #: source/python/module_python.ulf#STR_DESC_MODULE_OPTIONAL_PYTHON
 msgid  "Adds the ability to automate %PRODUCTNAME with the python scripting language. See http://udk.openoffice.org/python/python-bridge.html for a complete documentation."
-msgstr ""
+msgstr "%PRODUCTNAME འདི་པ་ཡི་ཐཱོན་ཡིག་ཚུགས་འབྲི་ནི་ ཁ་སྐད་དང་གཅིག་ཁར་ ལྕོགས་གྲུབ་ཅན་བཟོ་ནི་ལུ་ འཕྲུལ་སྤྱོད་དང་ཁ་སྐོང་འབད་འོང་།མཇུག་བསྡུ་ཡིག་ཐོག་དོན་ལུ་http://udk.openoffice.org/python/python-bridge.htmlགཟིགས་གནང་།"
 
 #: source/quickstart/module_quickstart.ulf#STR_NAME_MODULE_OPTIONAL_QUICKSTART
-#, fuzzy
 msgid  "Quickstarter"
 msgstr "འཕྲལ་མགྱོགས་འགོ་བཙུགས་མི།"
 
 #: source/quickstart/module_quickstart.ulf#STR_DESC_MODULE_OPTIONAL_QUICKSTART
 msgid  "Loads basic components on system start to accelerate start up time of %PRODUCTNAME %PRODUCTVERSION."
-msgstr ""
+msgstr " %PRODUCTNAME %PRODUCTVERSION གི་འགོ་བཙུགས་དུས་ཚོད་མགྱོགས་བསྐྱོད་ འབད་ནི་རིམ་རུགས་ཚུ་ལུ་ གཞི་རྩ་ཆ་ཤས་མངོན་གསལ་འབད་འོང་།"
 
 #: source/sdkoo/module_sdkoo.ulf#STR_NAME_MODULE_OPTIONAL_SDKOO
 msgid  "Software Development Kit (SDK)"
@@ -1878,60 +1910,54 @@ msgid  "The SDK provides all necessary tools, examples and documentation to prog
 msgstr ""
 
 #: source/winexplorerext/module_winexplorerext.ulf#STR_NAME_MODULE_OPTIONAL_WINDOWS_EXPLORER_EXTENSIONS
-#, fuzzy
 msgid  "Windows Explorer Extension"
 msgstr "སྒོ་སྒྲིག་གི་ཐབས་འཚོལ་རྒྱ་བསྐྱེད།"
 
 #: source/winexplorerext/module_winexplorerext.ulf#STR_DESC_MODULE_OPTIONAL_WINDOWS_EXPLORER_EXTENSIONS
 msgid  "Enables the Microsoft Windows Explorer to show information about %PRODUCTNAME documents, such as thumbnail previews."
-msgstr ""
+msgstr "%PRODUCTNAME ཡིག་ཆ་ཚུ་གི་ བསྐོར་ལས་བརྡ་དོན་སྟོན་ཏེ་ མའི་ཀོརོ་སོཕཊ་ སྒོ་སྒྲིག་ཐབས་འཚོལ་ཚུ་ ལྕོགས་ཅན་བཟོ་འོང་ འདི་ཡང་ ཐམབ་ནེལ་ པིརི་ཝིཝསི་ཟེར་མི་བཟུམ་ཨིན།"
 
 #: source/writer/folderitem_writer.ulf#STR_FI_NAME_HTMLDOKUMENT
-#, fuzzy
 msgid  "HTML Document"
 msgstr "ཨེཆ་ཊི་ཨེམ་ཨེལ་ ཡིག་ཆ།"
 
 #: source/writer/folderitem_writer.ulf#STR_FI_NAME_TEXTDOKUMENT
-#, fuzzy
 msgid  "Text Document"
 msgstr "ཚིག་ཡིག་ ཡིག་ཆ།"
 
 #: source/writer/folderitem_writer.ulf#STR_FI_TOOLTIP_WRITER
 msgid  "Create and edit text and graphics in letters, reports, documents and Web pages by using Writer."
-msgstr ""
+msgstr "   རྩོམ་འབྲི་པ་ལག་ལེན་འཐབ་ཀྱི་ཐོག་ལས་ ཚིག་ཡིག་དང་ ཚད་རིས་ཚུ་ཡི་གུ་དང་ སྙན་ཞུ་ ཡིག་ཆ་ དེ་ལས་ ཝེབ་ཤོག་ལེབ་ཚུ་ ནང་གསར་བསྐྲུན་དང་ ཞུན་དག་འབད།"
+
+#: source/writer/registryitem_writer.ulf#STR_REG_VAL_NEW
+msgid  "&New"
+msgstr "གསརཔ།(&N)"
 
 #: source/writer/registryitem_writer.ulf#STR_REG_VAL_SO60_TEXT
-#, fuzzy
 msgid  "%SXWFORMATNAME %SXWFORMATVERSION Text Document"
 msgstr "%PRODUCTNAME %SXWFORMATVERSION  ཚིག་ཡིག་  ཡིག་ཆ།"
 
 #: source/writer/registryitem_writer.ulf#STR_REG_VAL_SO60_MASTERDOC
-#, fuzzy
 msgid  "%SXWFORMATNAME %SXWFORMATVERSION Master Document"
 msgstr "%PRODUCTNAME %SXWFORMATVERSION ཡིག་ཆ་ཨམ།"
 
 #: source/writer/registryitem_writer.ulf#STR_REG_VAL_SO60_WRITER_TEMPLATE
-#, fuzzy
 msgid  "%SXWFORMATNAME %SXWFORMATVERSION Text Document Template"
 msgstr "%PRODUCTNAME %SXWFORMATVERSION  ཚིག་ཡིག་ ཡིག་ཆ་ཊེམ་པེལེཊི།"
 
 #: source/writer/registryitem_writer.ulf#STR_REG_VAL_OO_WRITER
-#, fuzzy
 msgid  "OpenDocument Text"
 msgstr "ཨོ་པཱན་ཌོ་ཀུ་མེནཊ་ ཚིག་ཡིག"
 
 #: source/writer/registryitem_writer.ulf#STR_REG_VAL_OO_WRITER_TEMPLATE
-#, fuzzy
 msgid  "OpenDocument Text Template"
 msgstr "ཨོ་པཱན་ཌོ་ཀུ་མེནཊ་ ཚིག་ཡིག་ ཊེམ་པེལེཊི།"
 
 #: source/writer/registryitem_writer.ulf#STR_REG_VAL_OO_MASTERDOC
-#, fuzzy
 msgid  "OpenDocument Master Document"
 msgstr "ཨོ་པཱན་ཌོ་ཀུ་མེནཊ་ ཡིག་ཆ་ཨམ།"
 
 #: source/writer/registryitem_writer.ulf#STR_REG_VAL_OO_WEBDOC
-#, fuzzy
 msgid  "HTML Document Template"
 msgstr "ཨེཆ་ཊི་ཨེམ་ཨེལ་ ཡིག་ཆའི་ ཊེམ་པེལེཊི།"
 
@@ -1955,37 +1981,27 @@ msgstr ""
 msgid  "Rich Text Document"
 msgstr ""
 
-#: source/writer/registryitem_writer.ulf#STR_REG_VAL_NEW
-#, fuzzy
-msgid  "&New"
-msgstr "གསརཔ།(&N)"
-
 #: source/writer/module_writer.ulf#STR_NAME_MODULE_PRG_WRT
-#, fuzzy
 msgid  "%PRODUCTNAME Writer"
 msgstr "%PRODUCTNAME  རྩོམ་འབྲི་པ།"
 
 #: source/writer/module_writer.ulf#STR_DESC_MODULE_PRG_WRT
 msgid  "Create and edit text and graphics in letters, reports, documents and Web pages by using %PRODUCTNAME Writer."
-msgstr ""
+msgstr " %PRODUCTNAME  རྩོམ་འབྲི་པ་ ལག་ལེན་འཐབ་ཀྱི་ཐོག་ལས་  ཚིག་ཡིག་དང་ ཚད་རིས་ཚུ་ ཡི་གུ་དང་ སྙན་ཞུ་ དེ་ལས་ ཡིག་ཆ་དང་ཝེབ་ཤོག་ལེབ་ཚུ་ནང་ གསར་བསྐྲུན་དང་ ཞུན་དག་འབད།"
 
 #: source/writer/module_writer.ulf#STR_NAME_MODULE_PRG_WRT_BIN
-#, fuzzy
 msgid  "Program Module"
 msgstr "ལས་རིམ་ ཚད་གཞི།"
 
 #: source/writer/module_writer.ulf#STR_DESC_MODULE_PRG_WRT_BIN
-#, fuzzy
 msgid  "The application %PRODUCTNAME Writer"
 msgstr " %PRODUCTNAME  གློག་རིམ་ རྩོམ་འབྲི་པ།"
 
 #: source/writer/module_writer.ulf#STR_NAME_MODULE_PRG_WRT_HELP
-#, fuzzy
 msgid  "%PRODUCTNAME Writer Help"
 msgstr "%PRODUCTNAME རྩོམ་འབྲི་པའི་ རོགས་རམ།"
 
 #: source/writer/module_writer.ulf#STR_DESC_MODULE_PRG_WRT_HELP
-#, fuzzy
 msgid  "Help about %PRODUCTNAME Writer"
 msgstr "%PRODUCTNAME རྩོམ་འབྲི་པའི་བསྐོར་ལས་ རོགས་རམ།"
 
@@ -1998,11 +2014,9 @@ msgid  "LaTeX export filter for Writer documents."
 msgstr ""
 
 #: source/xsltfilter/module_xsltfilter.ulf#STR_NAME_MODULE_OPTIONAL_XSLTFILTERSAMPLES
-#, fuzzy
 msgid  "XSLT Sample Filters"
 msgstr "ཨེཀསི་ ཨེས་ཨེལ་ཊི་ དཔེ་ཚད་ཚགས་མ།"
 
 #: source/xsltfilter/module_xsltfilter.ulf#STR_DESC_MODULE_OPTIONAL_XSLTFILTERSAMPLES
-#, fuzzy
 msgid  "XSLT Sample Filters"
 msgstr "ཨེཀསི་ཨེས་ ཨེལ་ཊི་ དཔེ་ཚད་ཚགས་མ།"

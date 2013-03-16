@@ -57,7 +57,7 @@ msgstr "Títol de la font de dades"
 
 #: source/abpilot/abspilot.src#RID_PAGE_SELECTABTYPE.FT_TYPE_HINTS.FixedText.Text
 msgid  "%PRODUCTNAME lets you access address data already present in your system. To do this, a %PRODUCTNAME data source will be created in which your address data is available in tabular form.\n\nThis wizard helps you create the data source."
-msgstr ""
+msgstr "L'%PRODUCTNAME vos permet accedir a les dades d'adreces present al sistema. Per fer-ho, es crearà una font de dades de l'%PRODUCTNAME que contindrà les dades d'adreces en forma tabular.\n\nEste auxiliar vos ajuda a crear la font de dades esmentada."
 
 #: source/abpilot/abspilot.src#RID_PAGE_SELECTABTYPE.FL_TYPE.FixedLine.Text
 msgid  "Please select the type of your external address book:"
@@ -109,7 +109,7 @@ msgstr "Un altre tipus de dades externes"
 
 #: source/abpilot/abspilot.src#RID_PAGE_ADMININVOKATION.FT_ADMINEXPLANATION.FixedText.Text
 msgid  "To set up the new data source, additional information is required.\n\nClick the following button to open another dialog in which you then enter the necessary information."
-msgstr ""
+msgstr "Per establir la nova font de dades cal informació addicional.\n\nFeu clic al botó següent per obrir un altre diàleg i especificar-hi la informació necessària."
 
 #: source/abpilot/abspilot.src#RID_PAGE_ADMININVOKATION.PB_INVOKE_ADMIN_DIALOG.PushButton.Text
 msgid  "Settings"
@@ -117,15 +117,15 @@ msgstr "Configuració"
 
 #: source/abpilot/abspilot.src#RID_PAGE_ADMININVOKATION.FT_ERROR.FixedText.Text
 msgid  "The connection to the data source could not be established.\nBefore you proceed, please check the settings made, or (on the previous page) choose another address data source type."
-msgstr ""
+msgstr "No s'ha pogut establir la connexió amb la font de dades.\nAbans de continuar, comproveu els paràmetres o trieu en la pàgina anterior un altre tipus de font de dades d'adreces."
 
 #: source/abpilot/abspilot.src#RID_PAGE_TABLESELECTION_AB.FL_TOOMUCHTABLES.FixedText.Text
 msgid  "The external data source you have chosen contains more than one address book.\nPlease select the one you mainly want to work with:"
-msgstr ""
+msgstr "La font de dades externes que heu triat conté més d'una llibreta d'adreces.\nTrieu aquella amb què vulgueu treballar principalment:"
 
 #: source/abpilot/abspilot.src#RID_PAGE_FIELDMAPPING.FT_FIELDASSIGMENTEXPL.FixedText.Text
-msgid  "To incorporate the address data in your templates, %PRODUCTNAME has to know which fields contain which data.\n\nFor instance, you could have stored the e-mail addresses in a field named "email", or "E-mail" or "EM" - or something completely different.\n\nClick the button below to open another dialog where you can enter the settings for your data source."
-msgstr ""
+msgid  "To incorporate the address data in your templates, %PRODUCTNAME has to know which fields contain which data.\n\nFor instance, you could have stored the e-mail addresses in a field named \"email\", or \"E-mail\" or \"EM\" - or something completely different.\n\nClick the button below to open another dialog where you can enter the settings for your data source."
+msgstr "Per incorporar les dades d'adreces de les plantilles, cal que l'%PRODUCTNAME sàpiga quins camps contenen quines dades.\n\nPer exemple, podríeu haver alçat les adreces de correu en un camp anomenat «email», «E-mail», «EM» o qualsevol altra cosa.\n\nFeu clic al botó de sota per obrir un altre diàleg on entrar els paràmetres de la vostra font de dades."
 
 #: source/abpilot/abspilot.src#RID_PAGE_FIELDMAPPING.PB_INVOKE_FIELDS_DIALOG.PushButton.Text
 msgid  "Field Assignment"
@@ -133,7 +133,7 @@ msgstr "Assignació de camps"
 
 #: source/abpilot/abspilot.src#RID_PAGE_FINAL.FT_FINISH_EXPL.FixedText.Text
 msgid  "That was all the information necessary to integrate your address data into %PRODUCTNAME.\n\nNow, just enter the name under which you want to register the data source in %PRODUCTNAME."
-msgstr ""
+msgstr "Esta és tota la informació necessària per integrar les vostres dades d'adreces en l'%PRODUCTNAME.\n\nAra escriviu el nom amb què voleu registrar la font de dades en l'%PRODUCTNAME."
 
 #: source/abpilot/abspilot.src#RID_PAGE_FINAL.FT_LOCATION.FixedText.Text
 msgid  "Location"
@@ -145,7 +145,7 @@ msgstr "Navega..."
 
 #: source/abpilot/abspilot.src#RID_PAGE_FINAL.CB_REGISTER_DS.CheckBox.Text
 msgid  "Make this address book available to all modules in %PRODUCTNAME."
-msgstr ""
+msgstr "Fes disponible esta llibreta d'adreces per a tots els mòduls de l'%PRODUCTNAME."
 
 #: source/abpilot/abspilot.src#RID_PAGE_FINAL.FT_NAME_EXPL.FixedText.Text
 msgid  "Address book name"
@@ -153,7 +153,7 @@ msgstr "Nom de la llibreta d'adreces"
 
 #: source/abpilot/abspilot.src#RID_PAGE_FINAL.FT_DUPLICATENAME.FixedText.Text
 msgid  "Another data source already has this name. As data sources have to have globally unique names, you need to choose another one."
-msgstr ""
+msgstr "Ja existeix una altra font de dades amb este nom. Heu de triar-ne un altre perquè el nom de la font de dades ha de ser globalment únic."
 
 #: source/abpilot/abspilot.src#RID_ERR_NEEDTYPESELECTION.ErrorBox.Message
 msgid  "Please select a type of address book."
@@ -161,7 +161,7 @@ msgstr "Seleccioneu el tipus de llibreta d'adreces."
 
 #: source/abpilot/abspilot.src#RID_QRY_NOTABLES.QueryBox.Message
 msgid  "The data source does not contain any tables.\nDo you want to set it up as an address data source, anyway?"
-msgstr ""
+msgstr "La font de dades no conté cap taula.\nVoleu configurar-la igualment com a font de dades d'adreces?"
 
 #: source/abpilot/abspilot.src#RID_STR_DEFAULT_NAME.String.Text
 msgid  "Addresses"
@@ -184,8 +184,8 @@ msgid  "Address Data - Field Assignment"
 msgstr "Dades d'adreces - Assignació de camps"
 
 #: source/abpilot/abspilot.src#RID_STR_NOFIELDSASSIGNED.String.Text
-msgid  "There are no fields assigned at this time.\nYou can either assign fields now or do so later by first choosing:\n"File - Template - Address Book Source...""
-msgstr ""
+msgid  "There are no fields assigned at this time.\nYou can either assign fields now or do so later by first choosing:\n\"File - Template - Address Book Source...\""
+msgstr "No hi ha cap camp assignat en este moment.\nPodeu assignar els camps ara o fer-ho més avant seleccionant:\nFitxer - Plantilla - Font de la llibreta d'adreces..."
 
 #: source/bibliography/toolbar.src#RID_BIB_TOOLBAR.TBC_FT_SOURCE.ToolBoxItem.Text
 msgid  "Table"
@@ -233,7 +233,7 @@ msgstr "Fullets"
 
 #: source/bibliography/sections.src#RID_TP_GENERAL.ST_TYPE_CONFERENCE.String.Text
 msgid  "Conference proceedings"
-msgstr "Acta d'una conferència"
+msgstr "Procediment de conferència"
 
 #: source/bibliography/sections.src#RID_TP_GENERAL.ST_TYPE_INBOOK.String.Text
 msgid  "Book excerpt"
@@ -245,7 +245,7 @@ msgstr "Extracte de llibre amb el títol"
 
 #: source/bibliography/sections.src#RID_TP_GENERAL.ST_TYPE_INPROCEEDINGS.String.Text
 msgid  "Conference proceedings"
-msgstr "Acta d'una conferència"
+msgstr "Procediment de conferència"
 
 #: source/bibliography/sections.src#RID_TP_GENERAL.ST_TYPE_JOURNAL.String.Text
 msgid  "Journal"
@@ -493,7 +493,7 @@ msgstr "Control"
 
 #: source/dbpilots/listcombopages.src#RID_PAGE_LCW_CONTENTSELECTION_TABLE.FT_SELECTTABLE_LABEL.FixedText.Text
 msgid  "On the right side, you see all the tables from the data source of the form.\n\n\nChoose the table from which the data should be used as basis for the list content:"
-msgstr ""
+msgstr "A la dreta podeu veure totes les taules de la font de dades del formulari.\n\n\nTrieu la taula que continga les dades que vulgueu utilitzar com a base per al contingut de la llista:"
 
 #: source/dbpilots/listcombopages.src#RID_PAGE_LCW_CONTENTSELECTION_FIELD.TabPage.Text
 msgid  "Field Selection"
@@ -509,11 +509,11 @@ msgstr "Camp de visualització"
 
 #: source/dbpilots/listcombopages.src#RID_PAGE_LCW_CONTENTSELECTION_FIELD.STR_FIELDINFO_COMBOBOX.String.Text
 msgid  "The contents of the field selected will be shown in the combo box list."
-msgstr ""
+msgstr "El contingut del camp seleccionat apareixerà en la llista del quadre combinat."
 
 #: source/dbpilots/listcombopages.src#RID_PAGE_LCW_CONTENTSELECTION_FIELD.STR_FIELDINFO_LISTBOX.String.Text
 msgid  "The contents of the selected field will be shown in the list box if the linked fields are identical."
-msgstr ""
+msgstr "El contingut del camp seleccionat apareixerà en el quadre de llista si els camps enllaçats són idèntics."
 
 #: source/dbpilots/listcombopages.src#RID_PAGE_LCW_FIELDLINK.TabPage.Text
 msgid  "Field Link"
@@ -521,7 +521,7 @@ msgstr "Enllaç de camp"
 
 #: source/dbpilots/listcombopages.src#RID_PAGE_LCW_FIELDLINK.FT_FIELDLINK_DESC.FixedText.Text
 msgid  "This is where you select fields with matching contents so that the value from the display field will be shown."
-msgstr ""
+msgstr "Ací és on es seleccionen els camps amb contingut coincident a fi de mostrar el valor del camp de visualització."
 
 #: source/dbpilots/listcombopages.src#RID_PAGE_LCW_FIELDLINK.FT_VALUELISTFIELD.FixedText.Text
 msgid  "Field from the ~Value Table"
@@ -533,7 +533,7 @@ msgstr "Camp de la taula de ~llista"
 
 #: source/dbpilots/listcombopages.src#RID_STR_COMBOWIZ_DBFIELD.String.Text
 msgid  "You can either save the value of the combo box in a database field or use it for display purposes."
-msgstr ""
+msgstr "Podeu alçar el valor del quadre combinat en un camp d'una base de dades o bé utilitzar-lo amb finalitats de visualització."
 
 #: source/dbpilots/gridpages.src#RID_PAGE_GW_FIELDSELECTION.TabPage.Text
 msgid  "Field Selection"
@@ -589,7 +589,7 @@ msgstr "Dades"
 
 #: source/dbpilots/commonpagesdbp.src#RID_PAGE_TABLESELECTION.FT_EXPLANATION.FixedText.Text
 msgid  "Currently, the form the control belongs to is not (or not completely) bound to a data source.\n\nPlease choose a data source and a table.\n\n\nPlease note that the settings made on this page will take effect immediately upon leaving the page."
-msgstr ""
+msgstr "Ara mateix el formulari al qual pertany el control no està lligat a una font de dades (o no ho està completament).\n\nTrieu una font de dades i una taula.\n\n\nTingueu en compte que els paràmetres establerts en esta pàgina tindran efecte tan prompte com l'abandoneu."
 
 #: source/dbpilots/commonpagesdbp.src#RID_PAGE_TABLESELECTION.FT_DATASOURCE.FixedText.Text
 msgid  "~Data source:"
@@ -681,7 +681,7 @@ msgstr "Valors del camp"
 
 #: source/dbpilots/groupboxpages.src#RID_PAGE_OPTIONVALUES.FT_OPTIONVALUES_EXPL.FixedText.Text
 msgid  "When you select an option, the option group is given a specific value."
-msgstr ""
+msgstr "Quan seleccioneu una opció es donarà un valor determinat al grup d'opcions."
 
 #: source/dbpilots/groupboxpages.src#RID_PAGE_OPTIONVALUES.FT_OPTIONVALUES.FixedText.Text
 msgid  "Which ~value do you want to assign to each option?"
@@ -705,7 +705,7 @@ msgstr "Estos eren tots els detalls necessaris per crear el grup d'opcions."
 
 #: source/dbpilots/groupboxpages.src#RID_STR_GROUPWIZ_DBFIELD.String.Text
 msgid  "You can either save the value of the option group in a database field or use it for a later action."
-msgstr ""
+msgstr "Podeu alçar el valor del grup d'opcions a un camp de base de dades o bé utilitzar-lo per a una acció posterior."
 
 #: source/preload/preload.src#RID_DLG_OEMWIZARD.PB_PREV.PushButton.Text
 msgid  "<< Back"
@@ -737,7 +737,7 @@ msgstr "Benvinguda"
 
 #: source/preload/preload.src#RID_TP_WELCOME.FT_INFO.FixedText.Text
 msgid  "Welcome to %PRODUCTNAME %PRODUCTVERSION OEM\n\nTo start the %PRODUCTNAME %PRODUCTVERSION OEM, please enter your personal data in the dialog following the license text. Important information is contained in the readme files which are located in the %PRODUCTNAME product directory. Please read these files carefully. You can also find detailed information at the Oracle website \n\nhttp://www.oracle.com/us/products/applications/open-office."
-msgstr ""
+msgstr "Vos donem la benvinguda a l'%PRODUCTNAME %PRODUCTVERSION OEM\n\nPer iniciar l'%PRODUCTNAME %PRODUCTVERSION OEM, introduïu les vostres dades personals al diàleg següent al text de la llicència. Els fitxers «readme» (ubicats al directori del producte %PRODUCTNAME) contenen informació important. Llegiu estos fitxers amb atenció. També podeu trobar informació detallada al lloc web d'Oracle \n\nhttp://www.oracle.com/vos/products/applications/open-office."
 
 #: source/preload/preload.src#RID_TP_LICENSE.TabPage.Text
 msgid  "License Agreement"
@@ -753,7 +753,7 @@ msgstr "1."
 
 #: source/preload/preload.src#RID_TP_LICENSE.FT_INFO2.FixedText.Text
 msgid  "View the complete License Agreement. Please use the scroll bar or the '%PAGEDOWN' button in this dialog to view the entire license text."
-msgstr ""
+msgstr "Visualitzeu l'acord de llicència complet. Utilitzeu la barra de desplaçament o el botó '%PAGEDOWN' en este diàleg per visualitzar el text de llicència complet."
 
 #: source/preload/preload.src#RID_TP_LICENSE.PB_PAGEDOWN.PushButton.Text
 msgid  "Page Down"
@@ -801,7 +801,7 @@ msgstr "Ordenació automàtica"
 
 #: source/propctrlr/selectlabeldialog.src#RID_DLG_SELECTLABELCONTROL.1.FixedText.Text
 msgid  "These are control fields that can be used as label fields for the $control_class$ $control_name$."
-msgstr ""
+msgstr "Estos són camps de control que es poden utilitzar com a camps d'etiqueta per al $control_class$ $control_name$."
 
 #: source/propctrlr/selectlabeldialog.src#RID_DLG_SELECTLABELCONTROL.1.CheckBox.Text
 msgid  "~No assignment"
@@ -817,7 +817,7 @@ msgstr "Formularis"
 
 #: source/propctrlr/pcrmiscres.src#RID_STR_CONFIRM_DELETE_DATA_TYPE.String.Text
 msgid  "Do you want to delete the data type '#type#' from the model?\nPlease note that this will affect all controls which are bound to this data type."
-msgstr ""
+msgstr "Voleu suprimir el tipus de dades '#type#' del model?\nAixò afectarà tots els controls vinculats a este tipus de dades."
 
 #: source/propctrlr/pcrmiscres.src#RID_STR_PROPTITLE_PUSHBUTTON.String.Text
 msgid  "Button"
@@ -905,7 +905,7 @@ msgstr "Enllaça els camps"
 
 #: source/propctrlr/formlinkdialog.src#RID_DLG_FORMLINKS.FT_EXPLANATION.FixedText.Text
 msgid  "Sub forms can be used to display detailed data about the current record of the master form. To do this, you can specify which columns in the sub form match which columns in the master form."
-msgstr ""
+msgstr "Els subformularis es poden utilitzar per mostrar dades detallades del registre actual del formulari mestre. Per fer-ho, especifiqueu quines columnes del subformulari es corresponen amb columnes del formulari mestre."
 
 #: source/propctrlr/formlinkdialog.src#RID_DLG_FORMLINKS.PB_SUGGEST.PushButton.Text
 msgid  "Suggest"
@@ -1864,8 +1864,8 @@ msgid  "Help"
 msgstr "Ajuda"
 
 #: source/propctrlr/formres.src#RID_STR_UNABLETOCONNECT.String.Text
-msgid  "The connection to the data source "$name$" could not be established."
-msgstr ""
+msgid  "The connection to the data source \"$name$\" could not be established."
+msgstr "No s'ha pogut establir la connexió amb la font de dades \"$name$\"."
 
 #: source/propctrlr/formres.src#RID_STR_TEXT.String.Text
 msgid  "Text"
@@ -2297,11 +2297,11 @@ msgstr "Escriviu un nom per al tipus de dades nou:"
 
 #: source/scanner/sanedlg.src#RID_SANE_DIALOG.RID_DEVICEINFO_BTN.PushButton.Text
 msgid  "About\n Dev~ice"
-msgstr ""
+msgstr "Quant al\n D~ispositiu"
 
 #: source/scanner/sanedlg.src#RID_SANE_DIALOG.RID_PREVIEW_BTN.PushButton.Text
 msgid  "Create\nPreview"
-msgstr ""
+msgstr "Crea una\nprevisualització"
 
 #: source/scanner/sanedlg.src#RID_SANE_DIALOG.RID_PREVIEW_BOX.FixedLine.Text
 msgid  "Preview"
@@ -2357,7 +2357,7 @@ msgstr "Escàner"
 
 #: source/scanner/sanedlg.src#RID_SANE_DEVICEINFO_TXT.String.Text
 msgid  "Device: %s\nVendor: %s\nModel: %s\nType: %s"
-msgstr ""
+msgstr "Dispositiu: %s\nProveïdor: %s\nModel: %s\nTipus: %s"
 
 #: source/scanner/sanedlg.src#RID_SANE_SCANERROR_TXT.String.Text
 msgid  "An error occurred while scanning."
@@ -2365,11 +2365,11 @@ msgstr "S'ha produït un error en escanejar."
 
 #: source/scanner/sanedlg.src#RID_SANE_NORESOLUTIONOPTION_TXT.String.Text
 msgid  "The device does not offer a preview option. Therefore, a normal scan will be used as a preview instead. This may take a considerable amount of time."
-msgstr ""
+msgstr "El dispositiu no ofereix l'opció de previsualització i, per tant, s'utilitzarà un escaneig normal com a previsualització. Això pot trigar força temps."
 
 #: source/scanner/sanedlg.src#RID_SANE_NOSANELIB_TXT.String.Text
 msgid  "The SANE interface could not be initialized. Scanning is not possible."
-msgstr ""
+msgstr "No s'ha pogut inicialitzar la interfície del SANE. L'escaneig no és possible."
 
 #: source/scanner/grid.src#GRID_DIALOG.GRID_DIALOG_RESET_BTN.PushButton.Text
 msgid  "Set"
@@ -2405,7 +2405,7 @@ msgstr "L'%PRODUCTNAME %PRODUCTVERSION ja està actualitzat."
 
 #: source/update/check/updatehdl.src#RID_UPDATE_STR_UPD_FOUND.String.Text
 msgid  "%PRODUCTNAME %NEXTVERSION is available.\n\nThe installed version is %PRODUCTNAME %PRODUCTVERSION.\n\nNote: Before downloading  an update, please ensure that you have sufficient access rights to install it.\nA password, usually the administrator's or root password, may be required."
-msgstr ""
+msgstr "Hi ha disponible l'%PRODUCTNAME %NEXTVERSION.\n\nLa versió instal·lada és l'%PRODUCTNAME %PRODUCTVERSION.\n\nNota: abans de baixar una actualització heu de comprovar que teniu els permisos necessaris per instal·lar-la.\nÉs possible que es requerisca una contrasenya, normalment la de l'administrador o superusuari."
 
 #: source/update/check/updatehdl.src#RID_UPDATE_STR_DLG_TITLE.String.Text
 msgid  "Check for Updates"
@@ -2421,7 +2421,7 @@ msgstr "Baixada de l'%PRODUCTNAME %NEXTVERSION encallada a..."
 
 #: source/update/check/updatehdl.src#RID_UPDATE_STR_DOWNLOAD_WARN.String.Text
 msgid  "The download location is: %DOWNLOAD_PATH.\n\nUnder Tools – Options... - %PRODUCTNAME – Online Update you can change the download location."
-msgstr ""
+msgstr "La ubicació de baixada és: %DOWNLOAD_PATH.\n\nPodeu canviar-la a Eines – Opcions... - %PRODUCTNAME – Actualització en línia."
 
 #: source/update/check/updatehdl.src#RID_UPDATE_STR_DOWNLOAD_DESCR.String.Text
 msgid  "%FILE_NAME has been downloaded to %DOWNLOAD_PATH."
@@ -2429,7 +2429,7 @@ msgstr "El fitxer %FILE_NAME s'ha baixat a %DOWNLOAD_PATH."
 
 #: source/update/check/updatehdl.src#RID_UPDATE_STR_DOWNLOAD_UNAVAIL.String.Text
 msgid  "The automatic download of the update is currently not available.\n\nClick 'Download...' to download %PRODUCTNAME %NEXTVERSION manually from the web site."
-msgstr ""
+msgstr "La baixada automàtica de l'actualització no està disponible ara mateix.\n\nFeu clic a 'Baixa...' per baixar l'%PRODUCTNAME %NEXTVERSION manualment des de la pàgina web."
 
 #: source/update/check/updatehdl.src#RID_UPDATE_STR_DOWNLOADING.String.Text
 msgid  "Downloading %PRODUCTNAME %NEXTVERSION..."
@@ -2437,7 +2437,7 @@ msgstr "S'està baixant l'%PRODUCTNAME %NEXTVERSION..."
 
 #: source/update/check/updatehdl.src#RID_UPDATE_STR_READY_INSTALL.String.Text
 msgid  "Download of %PRODUCTNAME %NEXTVERSION completed. Ready for installation."
-msgstr ""
+msgstr "S'ha completat la baixada de l'%PRODUCTNAME %NEXTVERSION. A punt per a la instal·lació."
 
 #: source/update/check/updatehdl.src#RID_UPDATE_STR_CANCEL_TITLE.String.Text
 msgid  "%PRODUCTNAME %PRODUCTVERSION"
@@ -2449,7 +2449,7 @@ msgstr "Esteu segur que voleu cancel·lar la baixada?"
 
 #: source/update/check/updatehdl.src#RID_UPDATE_STR_BEGIN_INSTALL.String.Text
 msgid  "To install the update, %PRODUCTNAME %PRODUCTVERSION needs to be closed. Do you want to install the update now?"
-msgstr ""
+msgstr "Heu de tancar l'%PRODUCTNAME %PRODUCTVERSION per instal·lar l'actualització. Voleu instal·lar-la ara?"
 
 #: source/update/check/updatehdl.src#RID_UPDATE_STR_INSTALL_NOW.String.Text
 msgid  "Install ~now"
@@ -2461,15 +2461,15 @@ msgstr "Instal·la ~més tard"
 
 #: source/update/check/updatehdl.src#RID_UPDATE_STR_INSTALL_ERROR.String.Text
 msgid  "Could not run the installer application, please run %FILE_NAME in %DOWNLOAD_PATH manually."
-msgstr ""
+msgstr "No s'ha pogut executar l'aplicació d'instal·lació. Hauríeu d'executar %FILE_NAME a %DOWNLOAD_PATH manualment."
 
 #: source/update/check/updatehdl.src#RID_UPDATE_STR_OVERWRITE_WARNING.String.Text
 msgid  "A file with that name already exists! Do you want to overwrite the existing file?"
-msgstr ""
+msgstr "Ja hi ha un fitxer amb este nom. Voleu sobreescriure el fitxer existent?"
 
 #: source/update/check/updatehdl.src#RID_UPDATE_STR_RELOAD_WARNING.String.Text
 msgid  "A file with the name '%FILENAME' already exists in '%DOWNLOAD_PATH'! Do you want to continue with the download or delete and reload the file?"
-msgstr ""
+msgstr "Ja existeix un fitxer amb el nom '%FILENAME' a '%DOWNLOAD_PATH'. Voleu continuar la baixada o bé suprimir i tornar a carregar el fitxer?"
 
 #: source/update/check/updatehdl.src#RID_UPDATE_STR_RELOAD_RELOAD.String.Text
 msgid  "Reload File"
@@ -2517,7 +2517,7 @@ msgstr "Cancel·la"
 
 #: source/update/check/updatehdl.src#RID_UPDATE_BUBBLE_T_UPDATE_AVAIL.String.Text
 msgid  "%PRODUCTNAME update available"
-msgstr "Hi ha una actualització disponible per a l'%PRODUCTNAME"
+msgstr "Hi ha una actualització de l'%PRODUCTNAME disponible"
 
 #: source/update/check/updatehdl.src#RID_UPDATE_BUBBLE_UPDATE_AVAIL.String.Text
 msgid  "Click here to start the download."
@@ -2525,11 +2525,11 @@ msgstr "Feu clic ací per començar-la a baixar."
 
 #: source/update/check/updatehdl.src#RID_UPDATE_BUBBLE_T_UPDATE_NO_DOWN.String.Text
 msgid  "%PRODUCTNAME update available"
-msgstr "Hi ha una actualització disponible per a l'%PRODUCTNAME"
+msgstr "Hi ha una actualització de l'%PRODUCTNAME disponible"
 
 #: source/update/check/updatehdl.src#RID_UPDATE_BUBBLE_UPDATE_NO_DOWN.String.Text
 msgid  "Click here for more information."
-msgstr "Feu clic ací per obtindre més informació."
+msgstr "Feu clic ací per a més informació."
 
 #: source/update/check/updatehdl.src#RID_UPDATE_BUBBLE_T_AUTO_START.String.Text
 msgid  "%PRODUCTNAME update available"

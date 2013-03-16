@@ -157,7 +157,7 @@ msgstr "Fehler bei der Auswertung"
 
 #: source/resource/xforms.src#RID_STR_XFORMS_PATTERN_DOESNT_MATCH.String.Text
 msgid  "The string '$1' does not match the required regular expression '$2'."
-msgstr ""
+msgstr "Die Zeichenkette '$1' entspricht nicht dem geforderten regulären Ausdruck '$2'."
 
 #: source/resource/xforms.src#RID_STR_XFORMS_BINDING_UI_NAME.String.Text
 msgid  "Binding"
@@ -165,7 +165,7 @@ msgstr "Bindung"
 
 #: source/resource/strings.src#RID_BASELISTBOX_ERROR_FILLLIST.String.Text
 msgid  "The contents of a combo box or list field could not be determined."
-msgstr ""
+msgstr "Der Inhalt eines Kombinations- oder Listenfeldes konnte nicht ermittelt werden."
 
 #: source/resource/strings.src#RID_STR_IMPORT_GRAPHIC.String.Text
 msgid  "Insert graphics"
@@ -177,7 +177,7 @@ msgstr "ersetzt"
 
 #: source/resource/strings.src#RID_STR_CONTROL_SUBSTITUTED_EPXPLAIN.String.Text
 msgid  "An error occurred while this control was being loaded. It was therefore replaced with a placeholder."
-msgstr ""
+msgstr "Beim Laden dieses Controls trat ein Fehler auf. Es wurde daher durch einen Platzhalter ersetzt."
 
 #: source/resource/strings.src#RID_STR_READERROR.String.Text
 msgid  "Error reading data from database"
@@ -233,7 +233,7 @@ msgstr "Fehler bei der Analyse des Anfrageausdrucks"
 
 #: source/resource/strings.src#RID_STR_INCOMPATIBLE_TYPES.String.Text
 msgid  "The value types supported by the binding cannot be used for exchanging data with this control."
-msgstr ""
+msgstr "Die von dem Binding unterstützten Typen können nicht zum Datenaustausch mit diesem Kontrollfeld benutzt werden."
 
 #: source/resource/strings.src#RID_STR_LABEL_RECORD.String.Text
 msgid  "Record"
@@ -241,7 +241,7 @@ msgstr "Datensatz"
 
 #: source/resource/strings.src#RID_STR_INVALID_VALIDATOR.String.Text
 msgid  "The control is connected to an external value binding, which at the same time acts as validator. You need to revoke the value binding, before you can set a new validator."
-msgstr ""
+msgstr "Das Kontrollfeld hat eine Bindung an einen externen Wert, welche gleichzeitig als Validator fungiert. Diese Bindung muss gelöst werden, bevor ein neuer Validator eingesetzt werden kann."
 
 #: source/resource/strings.src#RID_STR_LABEL_OF.String.Text
 msgid  "of"
@@ -249,7 +249,7 @@ msgstr "von"
 
 #: source/resource/strings.src#RID_STR_QUERY_SAVE_MODIFIED_ROW.String.Text
 msgid  "The content of the current form has been modified.\nDo you want to save your changes?"
-msgstr ""
+msgstr "Der Inhalt des aktuellen Formulars wurde geändert.\nSollen die Änderungen gespeichert werden?"
 
 #: source/resource/strings.src#RID_STR_COULD_NOT_SET_ORDER.String.Text
 msgid  "Error setting the sort criteria"
@@ -265,7 +265,7 @@ msgstr "Zum Ausführen dieser Funktion werden Parameter benötigt."
 
 #: source/resource/strings.src#RID_STR_FEATURE_NOT_EXECUTABLE.String.Text
 msgid  "This function cannot be executed, but is only for status queries."
-msgstr ""
+msgstr "Diese Funktion kann nicht ausgeführt werden, sondern dient nur der Statusabfrage."
 
 #: source/resource/strings.src#RID_STR_FEATURE_UNKNOWN.String.Text
 msgid  "Unknown function."

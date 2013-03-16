@@ -193,7 +193,7 @@ msgstr "An ùine air fhàgail: {[1] mionaid }{[2] diog}"
 
 #: inc_openoffice/windows/msi_languages/Error.ulf#OOO_ERROR_16
 msgid  "Out of memory. Shut down other applications before retrying."
-msgstr ""
+msgstr "Gun chuimhne gu leòr. Dùin aplacaidean eile mus feuch thu ris a-rithist."
 
 #: inc_openoffice/windows/msi_languages/Error.ulf#OOO_ERROR_17
 msgid  "Installer is no longer responding."
@@ -217,7 +217,7 @@ msgstr "A' toirt air falbh seann tionndaidhean na h-aplacaide seo"
 
 #: inc_openoffice/windows/msi_languages/Error.ulf#OOO_ERROR_22
 msgid  "Preparing to remove older versions of this application"
-msgstr ""
+msgstr "Ag ullachadh gus seann tionndaidhean na h-aplacaide seo a thoirt air falbh"
 
 #: inc_openoffice/windows/msi_languages/Error.ulf#OOO_ERROR_23
 msgid  "{[ProductName] }Setup completed successfully."
@@ -229,11 +229,11 @@ msgstr "Dh'fhàillig suidheachadh {[ProductName] }."
 
 #: inc_openoffice/windows/msi_languages/Error.ulf#OOO_ERROR_25
 msgid  "Error reading from file: [2]. {{ System error [3].}}  Verify that the file exists and that you can access it."
-msgstr ""
+msgstr "Mearachd le leughadh on fhaidhle: [2]. {{ Mearachd an t-siostaim [3].}}  Dèan cinnteach gu bheil am faidhle seo ann 's gu bheil cead inntrigidh agad thuige."
 
 #: inc_openoffice/windows/msi_languages/Error.ulf#OOO_ERROR_26
 msgid  "Cannot create the file [3].  A directory with this name already exists.  Cancel the installation and try installing to a different location."
-msgstr ""
+msgstr "Cha ghabh am faidhle [3] a chruthachadh.  Tha eòlaire ann mu thràth air a bheil an t-ainm seo.  Sguir dhen stàladh agus feuch ri stàladh ann an àite eile."
 
 #: inc_openoffice/windows/msi_languages/Error.ulf#OOO_ERROR_27
 msgid  "Please insert the disk: [2]"
@@ -241,43 +241,43 @@ msgstr "Cuir a-steach an diosg: [2]"
 
 #: inc_openoffice/windows/msi_languages/Error.ulf#OOO_ERROR_28
 msgid  "The installer has insufficient privileges to access this directory: [2].  The installation cannot continue.  Log on as an administrator or contact your system administrator."
-msgstr ""
+msgstr "Chan eil pribhleidean inntrigidh gu leòr aig an stàlaichear san eòlaire seo: [2]  Cha lean an stàladh air adhart.  Log a-steach mar rianaire no bruidhinn ri rianaire an t-siostaim agad."
 
 #: inc_openoffice/windows/msi_languages/Error.ulf#OOO_ERROR_29
 msgid  "Error writing to file [2].  Verify that you have access to that directory."
-msgstr ""
+msgstr "Mearachd le sgrìobhadh san fhaidhle [2].  Dèan cinnteach gu bheil cead inntrigidh agad san eòlaire sin."
 
 #: inc_openoffice/windows/msi_languages/Error.ulf#OOO_ERROR_30
 msgid  "Error reading from file [2].  Verify that the file exists and that you can access it."
-msgstr ""
+msgstr "Mearachd le leughadh on fhaidhle [2].  Dèan cinnteach gu bheil am faidhle ann 's gu bheil cead inntrigidh agad."
 
 #: inc_openoffice/windows/msi_languages/Error.ulf#OOO_ERROR_31
 msgid  "Another application has exclusive access to the file [2].  Please shut down all other applications, then click Retry."
-msgstr ""
+msgstr "Tha cead inntrigidh aig aplacaid eile dhan fhaidhle [2] 's cha leig e le feadhainn eile inntrigeadh a dhèanamh.  Dùin gach aplacaid eile 's briog air 'Feuch ris a-rithist' an uairsin."
 
 #: inc_openoffice/windows/msi_languages/Error.ulf#OOO_ERROR_32
 msgid  "There is not enough disk space to install the file [2].  Free some disk space and click Retry, or click Cancel to exit."
-msgstr ""
+msgstr "Chan eil àite gu leòr air an diosg gus am faidhle [2] a stàladh.  Saor àite air an diosg is briog air 'Feuch ris a-rithist' an uairsin no briog air 'Sguir dheth' gus seo fhàgail."
 
 #: inc_openoffice/windows/msi_languages/Error.ulf#OOO_ERROR_33
 msgid  "Source file not found: [2].  Verify that the file exists and that you can access it."
-msgstr ""
+msgstr "Cha deach an tùs-fhaidhle seo a lorg: [2]  Dèan cinnteach gu bheil am faidhle seo ann 's gu bheil cead inntrigidh agad ann."
 
 #: inc_openoffice/windows/msi_languages/Error.ulf#OOO_ERROR_34
 msgid  "Error reading from file: [3]. {{ System error [2].}}  Verify that the file exists and that you can access it."
-msgstr ""
+msgstr "Mearachd le leughadh on fhaidhle: [3]. {{ Mearachd an t-siostaim [2].}}  Dèan cinnteach gu bheil am faidhle seo ann 's gu bheil cead inntrigidh agad ann."
 
 #: inc_openoffice/windows/msi_languages/Error.ulf#OOO_ERROR_35
 msgid  "Error writing to file: [3]. {{ System error [2].}}  Verify that you have access to that directory."
-msgstr ""
+msgstr "Mearachd le sgrìobhadh san fhaidhle: [3]. {{ Mearachd an t-siostaim [2].}}  Dèan cinnteach gu bheil cead inntrigidh agad san eòlaire sin."
 
 #: inc_openoffice/windows/msi_languages/Error.ulf#OOO_ERROR_36
 msgid  "Source file not found{{(cabinet)}}: [2].  Verify that the file exists and that you can access it."
-msgstr ""
+msgstr "Cha deach an tùs-fhaidhle a lorg{{(cabinet)}}: [2].  Dèan cinnteach gu bheil am faidhle seo ann 's gu bheil cead inntrigidh agad ann."
 
 #: inc_openoffice/windows/msi_languages/Error.ulf#OOO_ERROR_37
 msgid  "Cannot create the directory [2].  A file with this name already exists.  Please rename or remove the file and click Retry, or click Cancel to exit."
-msgstr ""
+msgstr "Cha ghabh an t-eòlaire seo a chruthachadh [2].  Tha faidhle ann mu thràth air a bheil an t-ainm seo.  Cuir ainm eile air an fhaidhle no thoir às am faidhle is briog air 'Feuch ris a-rithist' an uairsin no briog air 'Sguir dheth' gus seo fhàgail."
 
 #: inc_openoffice/windows/msi_languages/Error.ulf#OOO_ERROR_38
 msgid  "The volume [2] is currently unavailable.  Please select another."
@@ -293,19 +293,19 @@ msgstr "Cha ghabh sgrìobhadh dhan phasgan a shònraich thu [2]."
 
 #: inc_openoffice/windows/msi_languages/Error.ulf#OOO_ERROR_41
 msgid  "A network error occurred while attempting to read from the file [2]"
-msgstr ""
+msgstr "Thachair mearachd lìonraidh fhad 's a bhathar a' feuchainn ri leughadh on fhaidhle [2]"
 
 #: inc_openoffice/windows/msi_languages/Error.ulf#OOO_ERROR_42
 msgid  "An error occurred while attempting to create the directory [2]"
-msgstr ""
+msgstr "Thachair mearachd fhad 's a bhathar a feuchainn ris an t-eòlaire [2] a chruthachadh"
 
 #: inc_openoffice/windows/msi_languages/Error.ulf#OOO_ERROR_43
 msgid  "A network error occurred while attempting to create the directory [2]"
-msgstr ""
+msgstr "Thachair mearachd lìonraidh fhad 's a bhathar a feuchainn ris an t-eòlaire [2] a chruthachadh"
 
 #: inc_openoffice/windows/msi_languages/Error.ulf#OOO_ERROR_44
 msgid  "A network error occurred while attempting to open the source file cabinet [2]."
-msgstr ""
+msgstr "Thachair mearachd lìonraidh fhad 's a bhathar a' feuchainn ri caibineit an tùs-fhaidhle [2] fhosgladh."
 
 #: inc_openoffice/windows/msi_languages/Error.ulf#OOO_ERROR_45
 msgid  "The specified path is too long [2]."
@@ -313,11 +313,11 @@ msgstr "Tha an t-slighe a shònraich thu ro fhada: [2]."
 
 #: inc_openoffice/windows/msi_languages/Error.ulf#OOO_ERROR_46
 msgid  "The Installer has insufficient privileges to modify the file [2]."
-msgstr ""
+msgstr "Chan eil pribhleidean gu leòr aig an stàlaichear agus chan urrainn dha am faidhle [2] atharrachadh."
 
 #: inc_openoffice/windows/msi_languages/Error.ulf#OOO_ERROR_47
 msgid  "A portion of the path [2] exceeds the length allowed by the system."
-msgstr ""
+msgstr "Tha cuid dhen t-slighe [2] thairis na tha ceadaichte a dh'fhaid leis an t-siostam."
 
 #: inc_openoffice/windows/msi_languages/Error.ulf#OOO_ERROR_48
 msgid  "The path [2] contains words that are not valid in folders."
@@ -341,67 +341,67 @@ msgstr "Draibh mì-dhligheach: [2]"
 
 #: inc_openoffice/windows/msi_languages/Error.ulf#OOO_ERROR_53
 msgid  "Error applying patch to file [2].  It has probably been updated by other means, and can no longer be modified by this patch.  For more information contact your patch vendor.  {{System Error: [3]}}"
-msgstr ""
+msgstr "Mearachd le bhith a' cur brèid air an fhaidhle [2].  'S mathaid gun deach ùrachadh air dòigh eile agus cha ghabh atharrachadh leis a' bhrèid tuilleadh.  Bruidhinn ri reiceadair na brèide airson barrachd fiosrachaidh.  {{Mearachd an t-siostaim: [3]}}"
 
 #: inc_openoffice/windows/msi_languages/Error.ulf#OOO_ERROR_54
 msgid  "Could not create key [2]. {{ System error [3].}}  Verify that you have sufficient access to that key, or contact your support personnel."
-msgstr ""
+msgstr "Cha do ghabh an iuchair [2] a chruthachadh. {{ Mearachd an t-siostaim [3].}}  Dearbhaich gu bheil cead inntrigidh agad airson na h-iuchrachd no bruidhinn ris an luchd-taice agad."
 
 #: inc_openoffice/windows/msi_languages/Error.ulf#OOO_ERROR_55
 msgid  "Could not open key: [2]. {{ System error [3].}}  Verify that you have sufficient access to that key, or contact your support personnel."
-msgstr ""
+msgstr "Cha do ghabh an iuchair [2] fhosgladh. {{ Mearachd an t-siostaim [3].}}  Dearbhaich gu bheil cead inntrigidh agad airson na h-iuchrachd no bruidhinn ris an luchd-taice agad."
 
 #: inc_openoffice/windows/msi_languages/Error.ulf#OOO_ERROR_56
 msgid  "Could not delete value [2] from key [3]. {{ System error [4].}}  Verify that you have sufficient access to that key, or contact your support personnel."
-msgstr ""
+msgstr "Cha do ghabh an luach [2] a sguabadh à [3]. {{ Mearachd an t-siostaim [4].}}  Dearbhaich gu bheil cead inntrigidh agad airson na h-iuchrachd no bruidhinn ris an luchd-taice agad."
 
 #: inc_openoffice/windows/msi_languages/Error.ulf#OOO_ERROR_57
 msgid  "Could not delete key [2]. {{ System error [3].}}  Verify that you have sufficient access to that key, or contact your support personnel."
-msgstr ""
+msgstr "Cha do ghabh an iuchair [2] a sguabadh às. {{ Mearachd an t-siostaim [3].}}  Dearbhaich gu bheil cead inntrigidh agad airson na h-iuchrachd no bruidhinn ris an luchd-taice agad."
 
 #: inc_openoffice/windows/msi_languages/Error.ulf#OOO_ERROR_58
 msgid  "Could not read value [2] from key [3]. {{ System error [4].}}  Verify that you have sufficient access to that key, or contact your support personnel."
-msgstr ""
+msgstr "Cha do ghabh an luach [2] a leughadh ann an [3]. {{ Mearachd an t-siostaim [4].}}  Dearbhaich gu bheil cead inntrigidh agad airson na h-iuchrachd no bruidhinn ris an luchd-taice agad."
 
 #: inc_openoffice/windows/msi_languages/Error.ulf#OOO_ERROR_59
 msgid  "Could not write value [2] to key [3]. {{ System error [4].}}  Verify that you have sufficient access to that key, or contact your support personnel."
-msgstr ""
+msgstr "Cha do ghabh an luach [2] a sgrìobhadh san iuchair [3]. {{ Mearachd an t-siostaim [4].}}  Dearbhaich gu bheil cead inntrigidh agad airson na h-iuchrachd no bruidhinn ris an luchd-taice agad."
 
 #: inc_openoffice/windows/msi_languages/Error.ulf#OOO_ERROR_60
 msgid  "Could not get value names for key [2]. {{ System error [3].}}  Verify that you have sufficient access to that key, or contact your support personnel."
-msgstr ""
+msgstr "Cha do ghabh ainmean luachan na h-iuchrach [2] fhaighinn. {{ Mearachd an t-siostaim [3].}}  Dearbhaich gu bheil cead inntrigidh agad airson na h-iuchrachd no bruidhinn ris an luchd-taice agad."
 
 #: inc_openoffice/windows/msi_languages/Error.ulf#OOO_ERROR_61
 msgid  "Could not get sub key names for key [2]. {{ System error [3].}}  Verify that you have sufficient access to that key, or contact your support personnel."
-msgstr ""
+msgstr "Cha do ghabh fo-ainmean iuchraichean na h-iuchrach [2] fhaighinn. {{ Mearachd an t-siostaim [3].}}  Dearbhaich gu bheil cead inntrigidh agad airson na h-iuchrachd no bruidhinn ris an luchd-taice agad."
 
 #: inc_openoffice/windows/msi_languages/Error.ulf#OOO_ERROR_62
 msgid  "Could not read security information for key [2]. {{ System error [3].}}  Verify that you have sufficient access to that key, or contact your support personnel."
-msgstr ""
+msgstr "Cha do ghabh fiosrachadh tèarainteachd na h-iuchrach [2] a leughadh. {{ Mearachd an t-siostaim [3].}}  Dearbhaich gu bheil cead inntrigidh agad airson na h-iuchrachd no bruidhinn ris an luchd-taice agad."
 
 #: inc_openoffice/windows/msi_languages/Error.ulf#OOO_ERROR_63
 msgid  "Could not increase the available registry space. [2] KB of free registry space is required for the installation of this application."
-msgstr ""
+msgstr "Cha do ghabh an t-àite sa chlàr-lann a chur am meud. Feumaidh tu [2] KB de dh'àite saor sa chlàr-lann mus urrainn dhut an aplacaid seo a stàladh."
 
 #: inc_openoffice/windows/msi_languages/Error.ulf#OOO_ERROR_64
 msgid  "Another installation is in progress. You must complete that installation before continuing this one."
-msgstr ""
+msgstr "Tha rud eile 'ga stàladh an-dràsta fhèin. Feumaidh tu crìoch a chur air an stàladh sin mus lean thu air adhart leis an fhear seo."
 
 #: inc_openoffice/windows/msi_languages/Error.ulf#OOO_ERROR_65
 msgid  "Error accessing secured data. Please make sure the Windows Installer is configured properly and try the installation again."
-msgstr ""
+msgstr "Mearachd le inntrigeadh do dhàta tèarainte. Dèan cinnteach gu bheil stàlaichear Windows air a rèiteachadh mar bu chòir agus feuch ris a stàladh a-rithist."
 
 #: inc_openoffice/windows/msi_languages/Error.ulf#OOO_ERROR_66
 msgid  "User [2] has previously initiated an installation for product [3].  That user will need to run that installation again before using that product.  Your current installation will now continue."
-msgstr ""
+msgstr "Thòisich an cleachdaiche [2] air stàladh a' bhathar seo, [3], roimhe.  Bidh aig a' chleachdaiche sin an stàladh sin a ruith a-rithist mus urrainn dhaibh am bathar seo a chleachdadh.  Leanaidh an stàladh agad-sa air adhart an-dràsta."
 
 #: inc_openoffice/windows/msi_languages/Error.ulf#OOO_ERROR_67
 msgid  "User [2] has previously initiated an installation for product [3].  That user will need to run that installation again before using that product."
-msgstr ""
+msgstr "Thòisich an cleachdaiche [2] air stàladh a' bhathar seo, [3], roimhe.  Bidh aig a' chleachdaiche sin an stàladh sin a ruith a-rithist mus urrainn dhaibh am bathar seo a chleachdadh."
 
 #: inc_openoffice/windows/msi_languages/Error.ulf#OOO_ERROR_68
 msgid  "Out of disk space -- Volume: '[2]'; required space: [3] KB; available space: [4] KB.  Free some disk space and retry."
-msgstr ""
+msgstr "Chan eil àite gu leòr air an diosg -- Clàr: '[2]'; àite air a bheil feum: [3] KB; àite a tha ri làimh: [4] KB.  Saor àite air an diosg is feuch ris a-rithist."
 
 #: inc_openoffice/windows/msi_languages/Error.ulf#OOO_ERROR_69
 msgid  "Are you sure you want to cancel?"
@@ -409,15 +409,15 @@ msgstr "A bheil thu cinnteach gu bheil thu airson sgur dheth?"
 
 #: inc_openoffice/windows/msi_languages/Error.ulf#OOO_ERROR_70
 msgid  "The file [2][3] is being held in use {by the following process: Name: [4], ID: [5], Window Title: [6]}.  Close that application and retry."
-msgstr ""
+msgstr "Tha am faidhle [2][3] 'ga chleachdadh mu thràth {leis a' phròiseas a leanas: Ainm: [4], ID: [5], ainm na h-uinneige: [6]}  Dùin an aplacaid sin is feuch ris a-rithist."
 
 #: inc_openoffice/windows/msi_languages/Error.ulf#OOO_ERROR_71
 msgid  "The product [2] is already installed, preventing the installation of this product.  The two products are incompatible."
-msgstr ""
+msgstr "Tha am bathar seo, [2], air a stàladh mu thràth agus tha seo a' cur bacadh air ath-stàladh a' bhathar seo.  Chan eil dà bhathar co-chòrdail."
 
 #: inc_openoffice/windows/msi_languages/Error.ulf#OOO_ERROR_72
 msgid  "Out of disk space -- Volume: [2]; required space: [3] KB; available space: [4] KB.  If rollback is disabled, enough space is available. Click Cancel to quit, Retry to check available disk space again, or Ignore to continue without rollback."
-msgstr ""
+msgstr "Chan eil àite gu leòr air an diosg -- Clàr: [2]; àite air a bheil feum: [3] KB; àite saor: [4] KB.  Ma chuireas tu an roladh air ais à comas, bidh àite gu leòr ann. Briog air 'Sguir dheth' gus sgur dheth, 'Feuch ris a-rithist' gus an t-àite saor a tha ri fhaighinn a sgrùdadh a-rithist no 'Leig seachad' gus leantainn air adhart as aonais an roladh air ais."
 
 #: inc_openoffice/windows/msi_languages/Error.ulf#OOO_ERROR_73
 msgid  "Could not access network location [2]."
@@ -425,35 +425,35 @@ msgstr "Cha do ghabh inntrigeadh a dhèanamh dhan ionad seo, [2], air an lìonra
 
 #: inc_openoffice/windows/msi_languages/Error.ulf#OOO_ERROR_74
 msgid  "The following applications should be closed before continuing the installation:"
-msgstr ""
+msgstr "Bu chòir dhut na h-aplacaidean a leanas a dhùnadh mus lean thu air adhart leis an stàladh:"
 
 #: inc_openoffice/windows/msi_languages/Error.ulf#OOO_ERROR_75
 msgid  "Could not find any previously installed compliant products on the machine for installing this product."
-msgstr ""
+msgstr "Cha deach bathar freagarrach sam bith eile a chaidh a stàladh roimhe a lorg air an inneal seo a chum a' bhathar seo a stàladh."
 
 #: inc_openoffice/windows/msi_languages/Error.ulf#OOO_ERROR_76
 msgid  "The key [2] is not valid.  Verify that you entered the correct key."
-msgstr ""
+msgstr "Chan eil an iuchair [2] dligheach.  Dèan cinnteach gun do chuir thu a-steach an tè cheart."
 
 #: inc_openoffice/windows/msi_languages/Error.ulf#OOO_ERROR_77
 msgid  "The installer must restart your system before configuration of [2] can continue.  Click Yes to restart now or No if you plan to restart later."
-msgstr ""
+msgstr "Feumaidh an stàlaichear an siostam agad tòiseachadh a-rithist mus urrainn dhut leantainn air adhart le rèiteachadh [2].  Briog air 'Tha' ma tha thu airson tòiseachadh a-rithist an-dràsta no air 'Chan eil' ma tha dùil agad tòiseachadh a-rithist an ceann tàmaill."
 
 #: inc_openoffice/windows/msi_languages/Error.ulf#OOO_ERROR_78
 msgid  "You must restart your system for the configuration changes made to [2] to take effect. Click Yes to restart now or No if you plan to restart later."
-msgstr ""
+msgstr "Feumaidh tu an siostam agad tòiseachadh a-rithist mus bi buaidh air na dh'atharraich thu ann an rèiteachadh [2]. Briog air 'Tha' ma tha thu airson tòiseachadh a-rithist an-dràsta no air 'Chan eil' ma tha dùil agad tòiseachadh a-rithist an ceann tàmaill."
 
 #: inc_openoffice/windows/msi_languages/Error.ulf#OOO_ERROR_79
 msgid  "An installation for [2] is currently suspended.  You must undo the changes made by that installation to continue.  Do you want to undo those changes?"
-msgstr ""
+msgstr "Tha stàladh [2] 'na thàmh an-dràsta.  Feumaidh tu na h-atharraichean a rinn an stàladh sin a thoirt às mus urrainn dhut leantainn air adhart.  A bheil thu airson na h-atharraichean seo a chur gu neoini?"
 
 #: inc_openoffice/windows/msi_languages/Error.ulf#OOO_ERROR_80
 msgid  "A previous installation for this product is in progress.  You must undo the changes made by that installation to continue.  Do you want to undo those changes?"
-msgstr ""
+msgstr "Tha stàladh a' bhathar seo a' dol mu thràth.  Feumaidh tu na h-atharraichean a rinn an stàladh seo a thoirt às mus urrainn dhut leantainn air adhart.  A bheil thu airson na h-atharraichean seo a chur gu neoini?"
 
 #: inc_openoffice/windows/msi_languages/Error.ulf#OOO_ERROR_81
 msgid  "No valid source could be found for product [2].  The Windows Installer cannot continue."
-msgstr ""
+msgstr "Cha deach tùs dligheach a lorg airson a' bhathar seo: [2].  Chan urrainn do stàlaichear Windows leantainn air adhart."
 
 #: inc_openoffice/windows/msi_languages/Error.ulf#OOO_ERROR_82
 msgid  "Installation operation completed successfully."
@@ -469,23 +469,23 @@ msgstr "Bathar: [2] -- [3]"
 
 #: inc_openoffice/windows/msi_languages/Error.ulf#OOO_ERROR_85
 msgid  "You may either restore your computer to its previous state or continue the installation later. Would you like to restore?"
-msgstr ""
+msgstr "'S urrainn dhut an coimpiutair agad aiseag dhan t-suidheachadh roimhe no leantainn air adhart leis an stàladh uaireigin eile. A bheil thu airson an suidheachadh roimhe aiseag?"
 
 #: inc_openoffice/windows/msi_languages/Error.ulf#OOO_ERROR_86
 msgid  "An error occurred while writing installation information to disk.  Check to make sure enough disk space is available, and click Retry, or Cancel to end the installation."
-msgstr ""
+msgstr "Thachair mearachd fhad 's a bhathar a' sgrìobhadh fiosrachadh stàladh air an diosg.  Dèan cinnteach gu bheil àite saor gu leòr air an diosg agus briog air 'Feuch ris a-rithist' no air 'Sguir dheth' gus crìoch a chur air an stàladh."
 
 #: inc_openoffice/windows/msi_languages/Error.ulf#OOO_ERROR_87
 msgid  "One or more of the files required to restore your computer to its previous state could not be found.  Restoration will not be possible."
-msgstr ""
+msgstr "Tha aon fhaidhle ann air a' char lugha nach deach a lorg ach air a bheil feum gus an coimpiutair agad aiseag dhan t-suidheachadh roimhe.  Cha ghabh an suidheachadh roimhe aiseag."
 
 #: inc_openoffice/windows/msi_languages/Error.ulf#OOO_ERROR_88
 msgid  "[2] cannot install one of its required products. Contact your technical support group.  {{System Error: [3].}}"
-msgstr ""
+msgstr "Chan urrainn do [2] bathar a stàladh ach tha feum air. Bruidhinn ris an luchd-taice agad.  {{Mearachd an t-siostaim: [3].}}"
 
 #: inc_openoffice/windows/msi_languages/Error.ulf#OOO_ERROR_89
 msgid  "The older version of [2] cannot be removed.  Contact your technical support group.  {{System Error [3].}}"
-msgstr ""
+msgstr "Cha ghabh an seann tionndadh de [2] a thoirt air falbh.  Bruidhinn ris an luchd-taice agad.  {{Mearachd an t-siostaim: [3].}}"
 
 #: inc_openoffice/windows/msi_languages/Error.ulf#OOO_ERROR_90
 msgid  "The path [2] is not valid.  Please specify a valid path."
@@ -493,19 +493,19 @@ msgstr "Chan e slighe dhligheach a tha ann an [2].  Sònraich slighe dhligheach.
 
 #: inc_openoffice/windows/msi_languages/Error.ulf#OOO_ERROR_91
 msgid  "Out of memory. Shut down other applications before retrying."
-msgstr ""
+msgstr "Chan eil cuimhne gu leòr ann. Dùin aplacaidean eile mus feuch thu ris a-rithist."
 
 #: inc_openoffice/windows/msi_languages/Error.ulf#OOO_ERROR_92
 msgid  "There is no disk in drive [2]. Please insert one and click Retry, or click Cancel to go back to the previously selected volume."
-msgstr ""
+msgstr "Chan eil diosg san draibh [2]. Cuir a-steach fear agus briog aig 'Feuch ris a-rithist' no air 'Sguir dheth' gus tilleadh dhan chlàr a thagh thu roimhe."
 
 #: inc_openoffice/windows/msi_languages/Error.ulf#OOO_ERROR_93
 msgid  "There is no disk in drive [2]. Please insert one and click Retry, or click Cancel to return to the browse dialog and select a different volume."
-msgstr ""
+msgstr "Chan eil diosg san draibh [2]. Cuir a-steach fear agus briog air 'Feuch ris a-rithist' no air 'Sguir dheth' gus tilleadh dhan chòmhradh bhrabhsaidh gus clàr eile a thaghadh."
 
 #: inc_openoffice/windows/msi_languages/Error.ulf#OOO_ERROR_94
 msgid  "The folder [2] does not exist.  Please enter a path to an existing folder."
-msgstr ""
+msgstr "Chan eil am pasgan [2] ann.  Cuir a-steach slighe gu pasgan a tha ann."
 
 #: inc_openoffice/windows/msi_languages/Error.ulf#OOO_ERROR_95
 msgid  "You have insufficient privileges to read this folder."
@@ -513,7 +513,7 @@ msgstr "Chan eil pribhleidean gu leòr agad gus am pasgan seo a leughadh."
 
 #: inc_openoffice/windows/msi_languages/Error.ulf#OOO_ERROR_96
 msgid  "A valid destination folder for the installation could not be determined."
-msgstr ""
+msgstr "Cha do ghabh pasgan-uidhe dligheach a lorg airson an stàlaidh."
 
 #: inc_openoffice/windows/msi_languages/Error.ulf#OOO_ERROR_97
 msgid  "Error attempting to read from the source installation database: [2]."
@@ -521,115 +521,115 @@ msgstr "Mearachd ann an leughadh o stòr-dàta an tùs-stàlaidh: [2]."
 
 #: inc_openoffice/windows/msi_languages/Error.ulf#OOO_ERROR_98
 msgid  "Scheduling reboot operation: Renaming file [2] to [3]. Must reboot to complete operation."
-msgstr ""
+msgstr "Ag ullachadh an ath-thòiseachadh: A' cur [3] air an fhaidhle [2]. Feumaidh tu tòiseachadh a-rithist gus an t-obrachadh a choileanadh."
 
 #: inc_openoffice/windows/msi_languages/Error.ulf#OOO_ERROR_99
 msgid  "Scheduling reboot operation: Deleting file [2]. Must reboot to complete operation."
-msgstr ""
+msgstr "Ag ullachadh an ath-thòiseachadh: A' sguabadh às an fhaidhle [2]. Feumaidh tu tòiseachadh a-rithist gus an t-obrachadh a choileanadh."
 
 #: inc_openoffice/windows/msi_languages/Error.ulf#OOO_ERROR_100
 msgid  "Module [2] failed to register.  HRESULT [3].  Contact your support personnel."
-msgstr ""
+msgstr "Dh'fhàillig clàradh a' mhòideil [2].  HRESULT [3].  Bruidhinn ris an luchd-taice agad."
 
 #: inc_openoffice/windows/msi_languages/Error.ulf#OOO_ERROR_101
 msgid  "Module [2] failed to unregister.  HRESULT [3].  Contact your support personnel."
-msgstr ""
+msgstr "Dh'fhàillig dì-chlàradh a' mhòideil [2].  HRESULT [3].  Bruidhinn ris an luchd-taice agad."
 
 #: inc_openoffice/windows/msi_languages/Error.ulf#OOO_ERROR_102
 msgid  "Failed to cache package [2]. Error: [3]. Contact your support personnel."
-msgstr ""
+msgstr "Dh'fhàillig tasglannadh a' mhòideil [2]. Mearachd: [3]. Bruidhinn ris an luchd-taice agad."
 
 #: inc_openoffice/windows/msi_languages/Error.ulf#OOO_ERROR_103
 msgid  "Could not register font [2].  Verify that you have sufficient permissions to install fonts, and that the system supports this font."
-msgstr ""
+msgstr "Cha do ghabh an cruth-clò [2] a chlàradh.  Dèan cinnteach gu bheil cead agad cruthan-clò a stàladh agus gu bheil an siostam a' cur taic ris a' chruth-chlò."
 
 #: inc_openoffice/windows/msi_languages/Error.ulf#OOO_ERROR_104
 msgid  "Could not unregister font [2]. Verify that you have sufficient permissions to remove fonts."
-msgstr ""
+msgstr "Cha do ghabh an cruth-clò [2] a dhì-chlàradh. Dèan cinnteach gu bheil cead agad cruthan-clò a thoirt air falbh."
 
 #: inc_openoffice/windows/msi_languages/Error.ulf#OOO_ERROR_105
 msgid  "Could not create shortcut [2]. Verify that the destination folder exists and that you can access it."
-msgstr ""
+msgstr "Cha do ghabh an ath-ghoirid [2] a chruthachadh. Dèan cinnteach gu bheil am pasgan-uidhe ann agus gun urrainn dhut inntrigeadh a dhèanamh ann."
 
 #: inc_openoffice/windows/msi_languages/Error.ulf#OOO_ERROR_106
 msgid  "Could not remove shortcut [2]. Verify that the shortcut file exists and that you can access it."
-msgstr ""
+msgstr "Cha do ghabh an ath-ghoirid [2] a thoirt air falbh. Dèan cinnteach gu bheil faidhle na h-ath-ghoirid ann agus gun urrainn dhut inntrigeadh a dhèanamh ann."
 
 #: inc_openoffice/windows/msi_languages/Error.ulf#OOO_ERROR_107
 msgid  "Could not register type library for file [2].  Contact your support personnel."
-msgstr ""
+msgstr "Cha do ghabh leabharlann sheòrsaichean airson an fhaidhle [2] a chlàradh.  Bruidhinn ris an luchd-taice agad."
 
 #: inc_openoffice/windows/msi_languages/Error.ulf#OOO_ERROR_108
 msgid  "Could not unregister type library for file [2].  Contact your support personnel."
-msgstr ""
+msgstr "Cha do ghabh leabharlann sheòrsaichean airson an fhaidhle [2] a dhì-chlàradh.  Bruidhinn ris an luchd-taice agad."
 
 #: inc_openoffice/windows/msi_languages/Error.ulf#OOO_ERROR_109
 msgid  "Could not update the INI file [2][3].  Verify that the file exists and that you can access it."
-msgstr ""
+msgstr "Cha do ghabh am faidhle INI [2][3] ùrachadh.  Dèan cinnteach gu bheil am faidhle ann agus gun urrainn dhut inntrigeadh a dhèanamh ann."
 
 #: inc_openoffice/windows/msi_languages/Error.ulf#OOO_ERROR_110
 msgid  "Could not schedule file [2] to replace file [3] on reboot.  Verify that you have write permissions to file [3]."
-msgstr ""
+msgstr "Cha do ghabh am faidhle [2] a sgeidealadh gus a chur an àite an fhaidhle [3] nuair a thòisicheas tu an siostam a-rithist.  Dèan cinnteach gu bheil cead agad sgrìobhadh san fhaidhle [3]."
 
 #: inc_openoffice/windows/msi_languages/Error.ulf#OOO_ERROR_111
 msgid  "Error removing ODBC driver manager, ODBC error [2]: [3]. Contact your support personnel."
-msgstr ""
+msgstr "Mearachd le toirt air falbh manaidsear nan draibhearan ODBC, mearachd ODBC [2]: [3]. Bruidhinn ris an luchd-taice agad."
 
 #: inc_openoffice/windows/msi_languages/Error.ulf#OOO_ERROR_112
 msgid  "Error installing ODBC driver manager, ODBC error [2]: [3]. Contact your support personnel."
-msgstr ""
+msgstr "Mearachd le stàladh manaidsear nan draibhearan ODBC, mearachd ODBC [2]: [3]. Bruidhinn ris an luchd-taice agad."
 
 #: inc_openoffice/windows/msi_languages/Error.ulf#OOO_ERROR_113
 msgid  "Error removing ODBC driver [4], ODBC error [2]: [3]. Verify that you have sufficient privileges to remove ODBC drivers."
-msgstr ""
+msgstr "Mearachd le toirt air falbh an draibheir ODBC [4], mearachd ODBC [2]: [3]. Dèan cinnteach gu bheil pribhleidean gu leòr agad draibhearan ODBC a thoirt air falbh."
 
 #: inc_openoffice/windows/msi_languages/Error.ulf#OOO_ERROR_114
 msgid  "Error installing ODBC driver [4], ODBC error [2]: [3]. Verify that the file [4] exists and that you can access it."
-msgstr ""
+msgstr "Mearachd le stàladh an draibheir ODBC [4], mearachd ODBC [2]: [3]. Dèan cinnteach gu bheil am faidhle [4] ann agus gun urrainn dhut inntrigeadh a dhèanamh ann."
 
 #: inc_openoffice/windows/msi_languages/Error.ulf#OOO_ERROR_115
 msgid  "Error configuring ODBC data source [4], ODBC error [2]: [3]. Verify that the file [4] exists and that you can access it."
-msgstr ""
+msgstr "Mearachd le rèiteachadh tùs an dàta ODBC [4], mearachd ODBC [2]: [3]. Dèan cinnteach gu bheil am faidhle [4] ann agus gun urrainn dhut inntrigeadh a dhèanamh ann."
 
 #: inc_openoffice/windows/msi_languages/Error.ulf#OOO_ERROR_116
 msgid  "Service [2] ([3]) failed to start.  Verify that you have sufficient privileges to start system services."
-msgstr ""
+msgstr "Cha do thòisich an t-seirbheis [2] ([3]).  Dèan cinnteach gu bheil pribhleidean gu leòr agad gus seirbheisean siostaim a thòiseachadh."
 
 #: inc_openoffice/windows/msi_languages/Error.ulf#OOO_ERROR_117
 msgid  "Service [2] ([3]) could not be stopped.  Verify that you have sufficient privileges to stop system services."
-msgstr ""
+msgstr "Cha do ghabh crìoch a chur air an t-seirbheis [2] ([3]).  Dèan cinnteach gu bheil pribhleidean gu leòr agad crìoch a chur air seirbheisean siostaim."
 
 #: inc_openoffice/windows/msi_languages/Error.ulf#OOO_ERROR_118
 msgid  "Service [2] ([3]) could not be deleted.  Verify that you have sufficient privileges to remove system services."
-msgstr ""
+msgstr "Cha do ghabh an t-seirbheis [2] ([3]) a sguabadh às.  Dèan cinnteach gu bheil pribhleidean gu leòr agad seirbheisean siostaim a thoirt air falbh."
 
 #: inc_openoffice/windows/msi_languages/Error.ulf#OOO_ERROR_119
 msgid  "Service [2] ([3]) could not be installed.  Verify that you have sufficient privileges to install system services."
-msgstr ""
+msgstr "Cha do ghabh an t-seirbheis [2] ([3]) a stàladh.  Dèan cinnteach gu bheil pribhleidean gu leòr agad seirbheisean siostaim a stàladh."
 
 #: inc_openoffice/windows/msi_languages/Error.ulf#OOO_ERROR_120
 msgid  "Could not update environment variable [2].  Verify that you have sufficient privileges to modify environment variables."
-msgstr ""
+msgstr "Cha do ghabh caochladair na h-àrainneachd [2] ùrachadh.  Dèan cinnteach gu bheil pribhleidean gu leòr agad caochladairean àrainneachd atharrachadh."
 
 #: inc_openoffice/windows/msi_languages/Error.ulf#OOO_ERROR_121
 msgid  "You do not have sufficient privileges to complete this installation for all users of the machine.  Log on as an administrator and then retry this installation."
-msgstr ""
+msgstr "Chan eil pribhleidean gu leòr agad an stàladh seo a choileanadh airson gach cleachdaiche air an inneal seo.  Log a-steach mar rianaire agus feuch ris a stàladh a-rithist."
 
 #: inc_openoffice/windows/msi_languages/Error.ulf#OOO_ERROR_122
 msgid  "Could not set file security for file [3]. Error: [2].  Verify that you have sufficient privileges to modify the security permissions for this file."
-msgstr ""
+msgstr "Cha do ghabh tèarainteachd an fhaidhle [3] a shuidheachadh. Mearachd: [2].  Dèan cinnteach gu bheil pribhleidean gu leòr agad ceadan tèarainteachd an fhaidhle seo atharrachadh."
 
 #: inc_openoffice/windows/msi_languages/Error.ulf#OOO_ERROR_123
 msgid  "Component Services (COM+ 1.0) are not installed on this computer.  This installation requires Component Services in order to complete successfully.  Component Services are available on Windows 2000."
-msgstr ""
+msgstr "Chan eil seirbheisean cho-phàirtean (COM+ 1.0) air a stàladh air a' choimpiutair seo.  Feumaidh an stàladh seo na seirbheisean co-phàirtean mus dig e gu crìoch mar bu chòir.  Tha seirbheisean cho-phàirtean ri fhaighinn air Windows 2000."
 
 #: inc_openoffice/windows/msi_languages/Error.ulf#OOO_ERROR_124
 msgid  "Error registering COM+ application.  Contact your support personnel for more information."
-msgstr ""
+msgstr "Mearachd le clàradh na h-aplacaid COM+.  Cuir fios gun luchd-taice agad airson barrachd fiosrachaidh."
 
 #: inc_openoffice/windows/msi_languages/Error.ulf#OOO_ERROR_125
 msgid  "Error unregistering COM+ application.  Contact your support personnel for more information."
-msgstr ""
+msgstr "Mearachd le dì-chlàradh na h-aplacaid COM+.  Cuir fios gun luchd-taice agad airson barrachd fiosrachaidh."
 
 #: inc_openoffice/windows/msi_languages/Error.ulf#OOO_ERROR_126
 msgid  "The description for service '[2]' ([3]) could not be changed."
@@ -637,23 +637,23 @@ msgstr "Cha do ghabh tuairisgeul na seirbheise '[2]' ([3]) atharrachadh."
 
 #: inc_openoffice/windows/msi_languages/Error.ulf#OOO_ERROR_127
 msgid  "The Windows Installer service cannot update the system file [2] because the file is protected by Windows.  You may need to update your operating system for this program to work correctly. {{Package version: [3], OS Protected version: [4]}}"
-msgstr ""
+msgstr "Chan urrainn dhan t-seirbheis stàlaidh aig Windows am faidhle siostaim [2] ùrachadh a chionn 's gu bheil am faidhle seo 'ga dhìon le Windows.  Faodaidh gum bi agad an siostam-obrachaidh agad ùrachadh mus obraich am prògram seo gu ceart. {{Tionndadh na pacaide: [3], Tionndadh 'ga dhìon leis an t-siostam-obrachaidh: [4]}}"
 
 #: inc_openoffice/windows/msi_languages/Error.ulf#OOO_ERROR_128
 msgid  "The Windows Installer service cannot update the protected Windows file [2]. {{Package version: [3], OS Protected version: [4], SFP Error: [5]}}"
-msgstr ""
+msgstr "Chan urrainn dhan t-seirbheis stàlaidh aig Windows am faidhle Windows [2] ùrachadh a tha fo dhìon. {{Tionndadh na pacaide: [3], Tionndadh 'ga dhìon leis an t-siostam-obrachaidh: [4], Mearachd SFP: [5]}}"
 
 #: inc_openoffice/windows/msi_languages/Error.ulf#OOO_ERROR_129
 msgid  "This setup requires Internet Information Server 4.0 or higher for configuring IIS Virtual Roots. Please make sure that you have IIS 4.0 or higher."
-msgstr ""
+msgstr "Feumaidh an suidheachadh seo Internet Information Server 4.0 no tionndadh nas ùire gus IIS Virtual Roots a rèiteachadh. Dèan cinnteach gu bheil IIS 4.0 no tionndadh nas ùire agad."
 
 #: inc_openoffice/windows/msi_languages/Error.ulf#OOO_ERROR_130
 msgid  "This setup requires Administrator privileges for configuring IIS Virtual Roots."
-msgstr ""
+msgstr "Feumaidh an suidheachadh seo pribhleidean rianaire gus IIS Virtual Roots a rèiteachadh."
 
 #: inc_openoffice/windows/msi_languages/CustomAc.ulf#OOO_CUSTOMACTION_1
 msgid  "A newer version of [ProductName] was found. To install an older version, the newer version needs to be removed first."
-msgstr ""
+msgstr "Tha tionndadh nas ùire de [ProductName] a lorg. Ma tha thu airson tionndadh nas sine a stàladh, bidh agad ris an tionndadh nas ùire a thoirt air falbh an toiseach."
 
 #: inc_openoffice/windows/msi_languages/CustomAc.ulf#OOO_CUSTOMACTION_2
 msgid  "The same version of this product is already installed."
@@ -661,11 +661,11 @@ msgstr "Tha an dearbh-thionndadh dhen bhathar seo air a stàladh mu thràth."
 
 #: inc_openoffice/windows/msi_languages/CustomAc.ulf#OOO_CUSTOMACTION_3
 msgid  "An older version of [ProductName] was found. To install a newer version, the older version needs to be removed first."
-msgstr ""
+msgstr "Chaidh tionndadh nas sine de [ProductName] a lorg. Ma tha thu airson tionndadh nas ùire a stàladh, bidh agad ris an tionndadh nas sine a dhì-stàladh an toiseach."
 
 #: inc_openoffice/windows/msi_languages/CustomAc.ulf#OOO_CUSTOMACTION_4
 msgid  "Please exit [DEFINEDPRODUCT] [DEFINEDVERSION] and the [DEFINEDPRODUCT] [DEFINEDVERSION] Quickstarter before you continue. If you are using a multi-user system, also make sure that no other user has [DEFINEDPRODUCT] [DEFINEDVERSION] open."
-msgstr ""
+msgstr "Bu chòir dhut [DEFINEDPRODUCT] [DEFINEDVERSION] agus grad-tòisiche [DEFINEDPRODUCT] [DEFINEDVERSION] fhàgail mus lean thu air adhart. Mas ann air siostam le iomadh cleachdaiche a tha thu, dèan cinnteach cuideachd nach eil [DEFINEDPRODUCT] [DEFINEDVERSION] fosgailte aig duine sam bith eile."
 
 #: inc_openoffice/windows/msi_languages/UIText.ulf#OOO_UITEXT_1
 msgid  "bytes"
@@ -693,19 +693,19 @@ msgstr "Thèid am feart seo a stàladh nuair a bhios feum air."
 
 #: inc_openoffice/windows/msi_languages/UIText.ulf#OOO_UITEXT_7
 msgid  "This feature, and all subfeatures, will be installed to run from the CD."
-msgstr ""
+msgstr "Thèid am feart seo agus gach feart foidhe an stàladh is iad 'gan ruith on CD."
 
 #: inc_openoffice/windows/msi_languages/UIText.ulf#OOO_UITEXT_8
 msgid  "This feature, and all subfeatures, will be installed on local hard drive."
-msgstr ""
+msgstr "Thèid am feart seo agus gach feart foidhe a stàladh air a' chlàr chruaidh ionadail."
 
 #: inc_openoffice/windows/msi_languages/UIText.ulf#OOO_UITEXT_9
 msgid  "This feature, and all subfeatures, will be installed to run from the network."
-msgstr ""
+msgstr "Thèid am feart seo agus gach feart foidhe a stàladh is iad 'gan ruith on lìonra."
 
 #: inc_openoffice/windows/msi_languages/UIText.ulf#OOO_UITEXT_10
 msgid  "This feature will be installed to run from CD."
-msgstr "Thèid am feart seo a stàladh 's e 'ga ruith on CD."
+msgstr "Thèid am feart seo a stàladh is e 'ga ruith on CD."
 
 #: inc_openoffice/windows/msi_languages/UIText.ulf#OOO_UITEXT_11
 msgid  "This feature will be installed on local hard drive."
@@ -761,11 +761,11 @@ msgstr "Bidh am feart seo ri fhaighinn 's e 'ga ruith on lìonra."
 
 #: inc_openoffice/windows/msi_languages/UIText.ulf#OOO_UITEXT_24
 msgid  "This feature will be uninstalled completely, and you won't be able to run it from CD."
-msgstr ""
+msgstr "Thèid am feart seo a dhì-stàladh gu tur 's chan urrainn dhut a ruith on CD o seo a-mach."
 
 #: inc_openoffice/windows/msi_languages/UIText.ulf#OOO_UITEXT_25
 msgid  "This feature was run from the CD but will be set to be installed when required."
-msgstr ""
+msgstr "Bha am feart seo 'ga ruith on CD ach thèid a stàladh nuair a bhios feum air o seo a-mach."
 
 #: inc_openoffice/windows/msi_languages/UIText.ulf#OOO_UITEXT_26
 msgid  "This feature will continue to be run from the CD"
@@ -773,7 +773,7 @@ msgstr "Bidh am feart seo 'ga ruith on CD fhathast"
 
 #: inc_openoffice/windows/msi_languages/UIText.ulf#OOO_UITEXT_27
 msgid  "This feature was run from the CD but will be installed on the local hard drive."
-msgstr ""
+msgstr "Bha am feart seo 'ga ruith on CD ach thèid a stàladh air a' chlàr chruaidh ionadail."
 
 #: inc_openoffice/windows/msi_languages/UIText.ulf#OOO_UITEXT_28
 msgid  "This feature frees up [1] on your hard drive."
@@ -793,11 +793,11 @@ msgstr "Thèid am feart seo a thoirt air falbh gu tur."
 
 #: inc_openoffice/windows/msi_languages/UIText.ulf#OOO_UITEXT_32
 msgid  "This feature will be removed from your local hard drive but will be set to be installed when required."
-msgstr ""
+msgstr "Thèid am feart seo a thoirt air falbh on chlàr chruaidh ionadail agad ach thèid a stàladh a-rithist ma bhios feum air."
 
 #: inc_openoffice/windows/msi_languages/UIText.ulf#OOO_UITEXT_33
 msgid  "This feature will be removed from your local hard drive but will still be available to run from CD."
-msgstr ""
+msgstr "Thèid am feart seo a thoirt air falbh on chlàr chruaidh ionadail agad ach bi e ri do làimh 's e 'ga ruith on CD fhathast."
 
 #: inc_openoffice/windows/msi_languages/UIText.ulf#OOO_UITEXT_34
 msgid  "This feature will remain on your local hard drive."
@@ -805,19 +805,19 @@ msgstr "Fuirichidh am feart seo air a' chlàr chruaidh ionadail agad."
 
 #: inc_openoffice/windows/msi_languages/UIText.ulf#OOO_UITEXT_35
 msgid  "This feature will be removed from your local hard drive, but will be still available to run from the network."
-msgstr ""
+msgstr "Thèid am feart seo a thoirt air falbh on chlàr chruaidh ionadail agad ach bidh e ri do làimh fhathast 's e 'ga ruith on lìonra."
 
 #: inc_openoffice/windows/msi_languages/UIText.ulf#OOO_UITEXT_36
 msgid  "This feature will be uninstalled completely, and you won't be able to run it from the network."
-msgstr ""
+msgstr "Thèid am feart seo a dhì-stàladh gu tur agus chan urrainn dhut a ruith on lìonra as dèidh seo."
 
 #: inc_openoffice/windows/msi_languages/UIText.ulf#OOO_UITEXT_37
 msgid  "This feature was run from the network but will be installed when required."
-msgstr ""
+msgstr "Bha am feart seo 'ga ruith on lìonra ach thèid a stàladh ma bhios feum air."
 
 #: inc_openoffice/windows/msi_languages/UIText.ulf#OOO_UITEXT_38
 msgid  "This feature was run from the network but will be installed on the local hard drive."
-msgstr ""
+msgstr "Bha am feart seo 'ga ruith on lìonra ach thèid a stàladh air a' chlàr chruaidh ionadail."
 
 #: inc_openoffice/windows/msi_languages/UIText.ulf#OOO_UITEXT_39
 msgid  "This feature will continue to be run from the network"
@@ -825,19 +825,19 @@ msgstr "Bidh am feart seo 'ga ruith on lìonra fhathast as dèidh seo"
 
 #: inc_openoffice/windows/msi_languages/UIText.ulf#OOO_UITEXT_40
 msgid  "This feature frees up [1] on your hard drive. It has [2] of [3] subfeatures selected. The subfeatures free up [4] on your hard drive."
-msgstr ""
+msgstr "Saoraidh am feart seo [1] air a' chlàr chruaidh agad. Thagh thu [2] dhe na fo-fheartan aige ([3] gu h-iomlan). Saoraidh na fo-fheartan [4] air a' chlàr chruaidh agad."
 
 #: inc_openoffice/windows/msi_languages/UIText.ulf#OOO_UITEXT_41
 msgid  "This feature frees up [1] on your hard drive. It has [2] of [3] subfeatures selected. The subfeatures require [4] on your hard drive."
-msgstr ""
+msgstr "Saoraidh am feart seo [1] air a' chlàr chruaidh agad. Thagh thu [2] dhe na fo-fheartan aige ([3] gu h-iomlan). Feumaidh na fo-fheartan [4] air a' chlàr chruaidh agad."
 
 #: inc_openoffice/windows/msi_languages/UIText.ulf#OOO_UITEXT_42
 msgid  "This feature requires [1] on your hard drive. It has [2] of [3] subfeatures selected. The subfeatures free up [4] on your hard drive."
-msgstr ""
+msgstr "Feumaidh am feart seo [1] air a' chlàr chruaidh agad. Thagh thu [2] dhe na fo-fheartan aige ([3] gu h-iomlan). Saoraidh na fo-fheartan [4] air a' chlàr chruaidh agad."
 
 #: inc_openoffice/windows/msi_languages/UIText.ulf#OOO_UITEXT_43
 msgid  "This feature requires [1] on your hard drive. It has [2] of [3] subfeatures selected. The subfeatures require [4] on your hard drive."
-msgstr ""
+msgstr "Feumaidh am feart seo [1] air a' chlàr chruaidh agad. Thagh thu [2] dhe na fo-fheartan aige ([3] gu h-iomlan). Feumaidh na fo-fheartan [4] air a' chlàr chruaidh agad."
 
 #: inc_openoffice/windows/msi_languages/UIText.ulf#OOO_UITEXT_44
 msgid  "Time remaining: {[1] min }[2] sec"
@@ -1041,7 +1041,7 @@ msgstr "A' foillseachadh nan co-phàirtean freagarrach"
 
 #: inc_openoffice/windows/msi_languages/ActionTe.ulf#OOO_ACTIONTEXT_45
 msgid  "Component ID: [1], Qualifier: [2]"
-msgstr "ID na co-phàirte: [1], Càilichear: [2]"
+msgstr "ID na co-phàirt: [1], Freagarraiche: [2]"
 
 #: inc_openoffice/windows/msi_languages/ActionTe.ulf#OOO_ACTIONTEXT_46
 msgid  "Publishing product features"
@@ -1061,7 +1061,7 @@ msgstr "A' clàradh nam frithealaichean clas"
 
 #: inc_openoffice/windows/msi_languages/ActionTe.ulf#OOO_ACTIONTEXT_50
 msgid  "Class ID: [1]"
-msgstr "ID clas: [1]"
+msgstr "ID a' chlas: [1]"
 
 #: inc_openoffice/windows/msi_languages/ActionTe.ulf#OOO_ACTIONTEXT_51
 msgid  "Registering COM+ Applications and Components"
@@ -1361,7 +1361,7 @@ msgstr "Iuchair: [1], Ainm: [2], Luach: [3]"
 
 #: inc_openoffice/windows/msi_languages/LaunchCo.ulf#OOO_LAUNCH_1
 msgid  "The Installation Wizard cannot be run properly because you are logged in as a user without sufficient administrator rights for this system."
-msgstr ""
+msgstr "Cha ruith an draoidh stàlaidh mar bu chòir a chionn 's gu bheil thu air logadh a-steach air cunntas cleachdaiche aig nach eil còraichean rianachd gu leòr air an t-siostam seo."
 
 #: inc_openoffice/windows/msi_languages/LaunchCo.ulf#OOO_LAUNCH_2
 msgid  "Please use the file setup.exe to start the installation."
@@ -1421,7 +1421,7 @@ msgstr "Às-tharraing: "
 
 #: inc_openoffice/windows/msi_languages/Nsis.ulf#MUI_TEXT_ABORTWARNING
 msgid  "Are you sure you want to quit the %PRODUCTNAME %PRODUCTVERSION Installation Preparation"
-msgstr ""
+msgstr "A bheil thu cinnteach gu bheil thu airson sgur de ullachadh stàlaidh %PRODUCTNAME %PRODUCTVERSION"
 
 #: inc_openoffice/windows/msi_languages/SIS.ulf#OOO_SIS_TITLE
 msgid  "Installation database"
@@ -1453,11 +1453,11 @@ msgstr "Sguir dheth"
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_5
 msgid  "&Look in:"
-msgstr "L&org ann an:"
+msgstr "&Lorg ann an:"
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_6
 msgid  "Browse to the destination folder."
-msgstr "Brabhsaich dhan phasgan-uidhe."
+msgstr "Tagh am pasgan-uidhe."
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_7
 msgid  "{&MSSansBold8}Change Current Destination Folder"
@@ -1481,11 +1481,11 @@ msgstr "Suas aon leibheil|"
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_14
 msgid  "< &Back"
-msgstr "< Air ai&s"
+msgstr "< &Air ais"
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_17
 msgid  "&Change..."
-msgstr "Ath&arraich..."
+msgstr "&Atharraich..."
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_18
 msgid  "Cancel"
@@ -1497,7 +1497,7 @@ msgstr "Sònraich àite air an lìonra airson ìomhaigh frithealaiche a' bhathar
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_20
 msgid  "Enter the network location or click Change to browse to a location.  Click Install to create a server image of [ProductName] at the specified network location or click Cancel to exit the wizard."
-msgstr ""
+msgstr "Cuir a-steach an t-àite air an lìonra no briog air Atharraich gus brabhsadh dhan àite.  Briog air Stàlaich gus ìomhaigh frithealaiche de [ProductName] a chruthachadh san àite a shònraich thu air an lìonra no briog air 'Sguir dheth' gus an draoidh fhàgail."
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_21
 msgid  "{&MSSansBold8}Network Location"
@@ -1513,7 +1513,7 @@ msgstr "Àite air an &lìonra:"
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_24
 msgid  "< &Back"
-msgstr "< Air ai&s"
+msgstr "< &Air ais"
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_25
 msgid  "Cancel"
@@ -1521,15 +1521,15 @@ msgstr "Sguir dheth"
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_26
 msgid  "&Next >"
-msgstr "&Air adhart >"
+msgstr "Air a&dhart >"
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_27
 msgid  "{&TahomaBold10}Welcome to the Installation Wizard for [ProductName]"
-msgstr "{&TahomaBold10}Fàilte gun draoidh stàlaidh aig [ProductName]"
+msgstr "{&TahomaBold10}Fàilte dhan draoidh stàlaidh aig [ProductName]"
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_28
 msgid  "The Installation Wizard will create a server image of [ProductName] at a specified network location. To continue, click Next."
-msgstr ""
+msgstr "Cruthaichidh draoidh an stàlaidh ìomhaigh frithealaiche de [ProductName] air àite sònraichte air an lìonra. Gus leantainn air adhart, briog air 'Air adhart'."
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_29
 msgid  "&No"
@@ -1537,7 +1537,7 @@ msgstr "&Chan eil"
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_30
 msgid  "Are you sure you want to cancel [ProductName] installation?"
-msgstr ""
+msgstr "A bheil thu cinnteach gu bheil thu airson sgur de stàladh [ProductName]?"
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_31
 msgid  "&Yes"
@@ -1545,7 +1545,7 @@ msgstr "&Tha"
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_32
 msgid  "< &Back"
-msgstr "< Air ai&s"
+msgstr "< &Air ais"
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_35
 msgid  "Cancel"
@@ -1581,7 +1581,7 @@ msgstr "&Ainm cleachdaiche:"
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_43
 msgid  "&Next >"
-msgstr "&Air adhart >"
+msgstr "Air a&dhart >"
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_45
 msgid  "&Serial Number:"
@@ -1589,7 +1589,7 @@ msgstr "Àireamh &shreathach:"
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_46
 msgid  "< &Back"
-msgstr "< Air ai&s"
+msgstr "< &Air ais"
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_49
 msgid  "Cancel"
@@ -1597,7 +1597,7 @@ msgstr "Sguir dheth"
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_50
 msgid  "&Change..."
-msgstr "&Atharraich..."
+msgstr "Ath&arraich..."
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_51
 msgid  "&Space"
@@ -1609,7 +1609,7 @@ msgstr "Tagh feartan a' phrògraim a bu toigh leat stàladh."
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_53
 msgid  "Click on an icon in the list below to change how a feature is installed."
-msgstr ""
+msgstr "Briog air ìomhaigheag sa liosta gu h-ìosal gus an dòigh atharrachadh air a thèid feart a stàladh."
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_54
 msgid  "{&MSSansBold8}Custom Setup"
@@ -1645,7 +1645,7 @@ msgstr "Meud an fheart"
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_64
 msgid  "Custom Setup allows you to selectively install program features."
-msgstr ""
+msgstr "Leigidh an stàladh gnàthaichte leat feartan fa leth a thaghadh a thèid a stàladh."
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_65
 msgid  "{&MSSansBold8}Custom Setup Tips"
@@ -1657,7 +1657,7 @@ msgstr "Nach dèid a stàladh."
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_67
 msgid  "Will be installed on first use. (Available only if the feature supports this option.)"
-msgstr ""
+msgstr "Gun dèid a stàladh a' chiad turas a bhios feum air. (Cha bhi seo ri làimh ach ma chuireas am feart seo taic dhan roghainn seo.)"
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_68
 msgid  "This install state means the feature..."
@@ -1669,11 +1669,11 @@ msgstr "Gun dèid a stàladh gu tur air a' chlàr chruaidh ionadail."
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_70
 msgid  "The icon next to the feature name indicates the install state of the feature. Click the icon to drop down the install state menu for each feature."
-msgstr ""
+msgstr "Tha an ìomhaigheag ri taobh an fheart ag innse dhut dè an roghainn stàlaidh a tha aige. Briog air an ìomhaigheag gus clàr-taice stàlaidh de gach feart fhaicinn."
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_71
 msgid  "Will be installed to run from the network. (Available only if the feature supports this option.)"
-msgstr ""
+msgstr "Gun dèid a stàladh 's e 'ga ruith on lìonra. (Cha bhi seo ri làimh ach ma chuireas am feart seo taic dhan roghainn seo.)"
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_72
 msgid  "OK"
@@ -1681,11 +1681,11 @@ msgstr "Ceart ma-thà"
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_73
 msgid  "Will have some subfeatures installed to the local hard drive. (Available only if the feature has subfeatures.)"
-msgstr ""
+msgstr "Gun dèid cuid dhe na fo-fheartan aige a stàladh air a' chlàr chruaidh ionadail. (Cha bhi seo ri làimh ach ma chuireas am feart seo taic dhan roghainn seo.)"
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_74
 msgid  "< &Back"
-msgstr "< Air ai&s"
+msgstr "< &Air ais"
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_77
 msgid  "Cancel"
@@ -1697,7 +1697,7 @@ msgstr "&Atharraich..."
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_79
 msgid  "Click Next to install to this folder, or click Change to install to a different folder."
-msgstr ""
+msgstr "Briog air \"Air adhart\" gus a stàladh dhan phasgan seo no briog air \"Atharraich\" gus a stàladh do phasgan eile."
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_80
 msgid  "{&MSSansBold8}Database Folder"
@@ -1713,7 +1713,7 @@ msgstr "Stàlaich stòr-dàta [ProductName] ann an:"
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_83
 msgid  "&Next >"
-msgstr "&Air adhart >"
+msgstr "Air a&dhart >"
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_84
 msgid  "< &Back"
@@ -1729,7 +1729,7 @@ msgstr "&Atharraich..."
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_89
 msgid  "Click Next to install to this folder, or click Change to install to a different folder."
-msgstr ""
+msgstr "Briog air \"Air adhart\" gus a stàladh sa phasgan seo no briog air \"Sguir dheth\" gus a stàladh ann am pasgan eile."
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_90
 msgid  "{&MSSansBold8}Destination Folder"
@@ -1749,11 +1749,11 @@ msgstr "&Air adhart >"
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_96
 msgid  "The disk space required for the installation of the selected features."
-msgstr ""
+msgstr "An t-àite air an diosg air a bheil feum a thaobh stàladh nam feartan a thagh thu."
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_97
 msgid  "The highlighted volumes do not have enough disk space available for the currently selected features. You can remove files from the highlighted volumes, choose to install less features onto local drives, or select different destination drives."
-msgstr ""
+msgstr "Chan eil àite gu leòr air na clàir chomharraichte gus na feartan a thagh thu a stàladh. 'S urrainn dhut faidhlichean a thoirt air falbh o na clàir chomharraichte, feartan nas lugha a thaghadh a thèid a stàladh air a' chlàr chruaidh no clàr-uidhe eile a thaghadh."
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_98
 msgid  "{&MSSansBold8}Disk Space Requirements"
@@ -1765,11 +1765,11 @@ msgstr "Ceart ma-thà"
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_103
 msgid  "Some files that need to be updated are currently in use."
-msgstr ""
+msgstr "Tha grunn fhaidhlichean feumach air ùrachadh ach tha iad 'gan cleachdadh an-dràsta fhèin."
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_104
 msgid  "The following applications are using files that need to be updated by this setup. Close these applications and click Retry to continue."
-msgstr ""
+msgstr "Tha na h-aplacaidean a leanas a' cleachdadh faidhlichean a tha feumach air ùrachadh an cois an t-suidheachaidh seo. Dùin na h-aplacaidean seo agus briog air 'Feuch ris a-rithist' gus leantainn air adhart."
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_105
 msgid  "{&MSSansBold8}Files in Use"
@@ -1841,7 +1841,7 @@ msgstr "{&TahomaBold10}Fàilte gun draoidh stàlaidh aig [ProductName]"
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_127
 msgid  "The Installation Wizard will install [ProductName] on your computer. To continue, click Next."
-msgstr ""
+msgstr "Stàlaichidh an draoidh stàlaidh [ProductName] air a' choimpiutair agad. Briog air 'Air adhart' gus leantainn air adhart."
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_128
 msgid  "< &Back"
@@ -1885,11 +1885,11 @@ msgstr "&Air adhart >"
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_143
 msgid  "Change which program features are installed. This option displays the Custom Selection dialog in which you can change the way features are installed."
-msgstr ""
+msgstr "Atharraich dè na feartan prògraim a tha air a stàladh. Seallaidh an roghainn seo còmhradh an taghaidh ghnàthaichte leis an urrainn dhut an dòigh atharrachadh air a thèid feartan a stàladh."
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_144
 msgid  "Repair installation errors in the program. This option fixes missing or corrupt files, shortcuts, and registry entries."
-msgstr ""
+msgstr "Càirich mearachdan stàlaidh sa phrògram. Càirichidh an roghainn seo faidhlichean, ath-ghoiridean is rudan sa chlàr-lann a tha a dhìth no truaillte."
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_145
 msgid  "Remove [ProductName] from your computer."
@@ -1913,15 +1913,15 @@ msgstr "{&TahomaBold10}Fàilte gun draoidh stàlaidh aig [ProductName]"
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_150
 msgid  "The Installation Wizard will allow you to modify, repair, or remove [ProductName]. To continue, click Next."
-msgstr ""
+msgstr "Leigidh an draoidh stàlaidh leat [ProductName] atharrachadh, a chàradh no a thoirt air falbh. Briog air 'Air adhart' gus leantainn air adhart."
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_153
 msgid  "Disk space required for the installation exceeds available disk space."
-msgstr ""
+msgstr "Tha feum air barrachd àite airson a stàladh na tha ri fhaighinn air an diosg."
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_154
 msgid  "The highlighted volumes do not have enough disk space available for the currently selected features. You can remove files from the highlighted volumes, choose to install less features onto local drives, or select different destination drives."
-msgstr ""
+msgstr "Chan eil àite gu leòr air na clàir chomharraichte gus na feartan a thagh thu a stàladh. 'S urrainn dhut faidhlichean a thoirt air falbh o na clàir chomharraichte, feartan nas lugha a thaghadh a thèid a stàladh air a' chlàr chruaidh no clàr-uidhe eile a thaghadh."
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_155
 msgid  "{&MSSansBold8}Out of Disk Space"
@@ -1953,7 +1953,7 @@ msgstr "{&TahomaBold10}Fàilte dhan bhrèid airson [ProductName]"
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_162
 msgid  "The Installation Wizard will install the Patch for [ProductName] on your computer.  To continue, click Update."
-msgstr ""
+msgstr "Stàlaichidh an draoidh stàlaidh a' bhrèid airson [ProductName] air a' choimpiutair agad.  Briog air Ùraich gus leantainn air adhart."
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_163
 msgid  "< &Back"
@@ -1973,7 +1973,7 @@ msgstr "Briog air Stàlaich gus tòiseachadh air an stàladh."
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_169
 msgid  "If you want to review or change any of your installation settings, click Back. Click Cancel to exit the wizard."
-msgstr ""
+msgstr "Ma tha thu airson sùil eile a thoirt air roghainnean an stàlaidh no atharrachadh, briog air 'Air ais'. Briog air 'Sguir dheth' gus an draoidh fhàgail."
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_170
 msgid  "{&MSSansBold8}Ready to Modify the Program"
@@ -2005,11 +2005,11 @@ msgstr "Chuir thu romhad am prògram a thoirt air falbh on t-siostam agad."
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_179
 msgid  "Click Remove to remove [ProductName] from your computer. After removal, this program will no longer be available for use."
-msgstr ""
+msgstr "Briog air 'Thoir air falbh' gus [ProductName] a thoirt air falbh on choimpiutair agad. Cha bhi am prògram ri do làimh tuilleadh as dèidh dhut a thoirt air falbh."
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_180
 msgid  "If you want to review or change any settings, click Back."
-msgstr ""
+msgstr "Ma tha thu airson roghainn sam bith atharrachadh no sùil eile a thoirt orra, briog air 'Air ais'."
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_181
 msgid  "{&MSSansBold8}Remove the Program"
@@ -2033,7 +2033,7 @@ msgstr "&Crìochnaich"
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_186
 msgid  "Your system has not been modified. To complete installation at another time, please run setup again."
-msgstr ""
+msgstr "Cha deach an siostam agad atharrachadh. Cuir gu dol an suidheachadh a-rithist gus an stàladh a choileanadh uaireigin eile."
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_187
 msgid  "Click Finish to exit the wizard."
@@ -2041,7 +2041,7 @@ msgstr "Briog air Crìochnaich gus an draoidh fhàgail."
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_188
 msgid  "You can either keep any existing installed elements on your system to continue this installation at a later time or you can restore your system to its original state prior to the installation."
-msgstr ""
+msgstr "'S urrainn dhut na h-eileamaidean a tha air an stàladh mu thràth a chumail air an t-siostam agad gus leantainn air an stàladh seo uaireigin eile air neo 's urrainn dhut an siostam agad aiseag dhan t-suidheachadh mar a bha e mus do thòisich thu air an stàladh."
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_189
 msgid  "Click Restore or Continue Later to exit the wizard."
@@ -2053,7 +2053,7 @@ msgstr "{&TahomaBold10}Tha an draoidh stàlaidh deiseil"
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_191
 msgid  "The wizard was interrupted before [ProductName] could be completely installed."
-msgstr ""
+msgstr "Bhris rudeigin a-steach air an draoidh mus deach [ProductName] a stàladh gu tur."
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_192
 msgid  "< &Back"
@@ -2065,7 +2065,7 @@ msgstr "Sguir dheth"
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_194
 msgid  "&Yes, check for program updates (Recommended) after the setup completes."
-msgstr ""
+msgstr "&Seadh, thoir sùil airson ùrachaidhean prògraim (mholamaid seo) as dèidh dhan t-suidheachadh crìochnachadh."
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_195
 msgid  "Launch the program"
@@ -2085,11 +2085,11 @@ msgstr "{&TahomaBold10}Tha an draoidh stàlaidh deiseil"
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_199
 msgid  "The Installation Wizard has successfully installed [ProductName]. Click Finish to exit the wizard."
-msgstr ""
+msgstr "Choilean an draoidh an stàladh de [ProductName] gu soirbheachail. Briog air Crìochnaich gus an draoidh fhàgail."
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_200
 msgid  "The Installation Wizard has successfully uninstalled [ProductName]. Click Finish to exit the wizard."
-msgstr ""
+msgstr "Choilean an draoidh an dì-stàladh de [ProductName] gu soirbheachail. Briog air Crìochnaich gus an draoidh fhàgail."
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_201
 msgid  "Setup has finished installing [ProductName]."
@@ -2097,11 +2097,11 @@ msgstr "Tha an stàladh de [ProductName] deiseil."
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_202
 msgid  "Some program files might have been updated since you purchased your copy of [ProductName]."
-msgstr ""
+msgstr "Faodaidh gun deach cuid de dh'faidhlichean a' phrògraim ùrachadh on a fhuair thu an lethbhreac seo de [ProductName]."
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_203
 msgid  "Your Internet connection can be used to make sure that you have the latest updates."
-msgstr ""
+msgstr "'S urrainn dhut an ceangal-lìn agad a chleachdadh gus dèanamh cinnteach gu bheil an tionndadh as ùire agad."
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_204
 msgid  "&Abort"
@@ -2113,7 +2113,7 @@ msgstr "&Sguir dheth"
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_206
 msgid  "error text goes here  error text goes here  error text goes here  error text goes here  error text goes here  error text goes here  error text goes here  error text goes here  error text goes here  error text goes here"
-msgstr ""
+msgstr "teacsa mearachd an-seo  teacsa mearachd an-seo  teacsa mearachd an-seo  teacsa mearachd an-seo  teacsa mearachd an-seo  teacsa mearachd an-seo  teacsa mearachd an-seo  teacsa mearachd an-seo  teacsa mearachd an-seo  teacsa mearachd an-seo"
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_207
 msgid  "&Ignore"
@@ -2153,7 +2153,7 @@ msgstr "{&TahomaBold10}Fàilte gun draoidh stàlaidh aig [ProductName]"
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_218
 msgid  "[ProductName] Setup is preparing the Installation Wizard which will guide you through the program setup process.  Please wait."
-msgstr ""
+msgstr "Tha suidheachadh [ProductName] ag ullachadh an draoidh stàlaidh a threòraicheas tu tro phròiseas an stàlaidh.  Fuirich ort."
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_219
 msgid  "< &Back"
@@ -2169,7 +2169,7 @@ msgstr "&Crìochnaich"
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_222
 msgid  "Your system has not been modified. To install this program at a later time, please run the installation again."
-msgstr ""
+msgstr "Cha deach an siostam agad atharrachadh. Gus am prògram seo a stàladh uaireigin eile, cuir gu dol an stàladh a-rithist."
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_223
 msgid  "Click Finish to exit the wizard."
@@ -2177,7 +2177,7 @@ msgstr "Briog air Crìochnaich gus an draoidh fhàgail."
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_224
 msgid  "You can either keep any existing installed elements on your system to continue this installation at a later time or you can restore your system to its original state prior to the installation."
-msgstr ""
+msgstr "'S urrainn dhut na h-eileamaidean a tha air an stàladh mu thràth a chumail air an t-siostam agad gus leantainn air an stàladh seo uaireigin eile air neo 's urrainn dhut an siostam agad aiseag dhan t-suidheachadh mar a bha e mus do thòisich thu air an stàladh."
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_225
 msgid  "Click Restore or Continue Later to exit the wizard."
@@ -2189,7 +2189,7 @@ msgstr "{&TahomaBold10}Tha an draoidh stàlaidh deiseil"
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_227
 msgid  "The wizard was interrupted before [ProductName] could be completely installed."
-msgstr ""
+msgstr "Bhris rudeigin a-steach air an draoidh mus deach [ProductName] a stàladh gu tur."
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_228
 msgid  "Progress done"
@@ -2213,11 +2213,11 @@ msgstr "Tha na feartan prògraim a thagh thu 'gan dì-stàladh."
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_236
 msgid  "Please wait while the Installation Wizard installs [ProductName]. This may take several minutes."
-msgstr ""
+msgstr "Fuirich ort fhad 's a stàlaicheas an draoidh stàlaidh [ProductName]. Faodaidh gum feum seo mionaid no dhà."
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_237
 msgid  "Please wait while the Installation Wizard uninstalls [ProductName]. This may take several minutes."
-msgstr ""
+msgstr "Fuirich ort fhad 's a dhì-stàlaicheas an draoidh stàlaidh [ProductName]. Faodaidh gum feum seo mionaid no dhà."
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_238
 msgid  "{&MSSansBold8}Installing [ProductName]"
@@ -2257,15 +2257,15 @@ msgstr "&Air adhart >"
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_248
 msgid  "The Installation Wizard will complete the installation of [ProductName] on your computer. To continue, click Next."
-msgstr ""
+msgstr "Coileanaidh an draoidh stàlaidh an stàladh de [ProductName] air a' choimpiutair agad. Briog air 'Air adhart' gus leantainn air adhart."
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_249
 msgid  "The Installation Wizard will complete the suspended installation of [ProductName] on your computer. To continue, click Next."
-msgstr ""
+msgstr "Coileanaidh an draoidh stàlaidh an stàladh de [ProductName] a bha 'na thàmh air a' choimpiutair agad. Briog air 'Air adhart' gus leantainn air adhart."
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_250
 msgid  "{&TahomaBold10}Resuming the Installation Wizard for [ProductName]"
-msgstr ""
+msgstr "{&TahomaBold10}A' leantainn air leis an draoidh stàlaidh de [ProductName]"
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_251
 msgid  "< &Back"
@@ -2277,11 +2277,11 @@ msgstr "Sguir dheth"
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_255
 msgid  "The main components will be installed. Recommended for most users."
-msgstr ""
+msgstr "Thèid na co-phàirtean as cudromaiche a stàladh. Mholamaid seo dhan a' mhòrchuid de chleachdaichean."
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_256
 msgid  "Choose which program features you want installed and where they will be installed. Recommended for advanced users."
-msgstr ""
+msgstr "Tagh thu fhèin dè na feartan a thèid a stàladh agus càit an dèid an stàladh. Mholamaid seo do chleachdaichean adhartach."
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_257
 msgid  "Choose the setup type that best suits your needs."
@@ -2341,11 +2341,11 @@ msgstr "&[ProductName] Writer/Web"
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_274
 msgid  "Set [DEFINEDPRODUCT] to be the default application for Microsoft Office file types."
-msgstr ""
+msgstr "Suidhich [DEFINEDPRODUCT] mar am prògram leis an fhosglar faidhlichean Microsoft Office a ghnàth."
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_275
 msgid  "[ProductName] can be set as the default application to open Microsoft Office file types. This means, for instance, that if you double click on one of these files, [ProductName] will open it, not the program that opens it now."
-msgstr ""
+msgstr "'S urrainn dhut [ProductName] a shuidheachadh mar am prògram leis an fhosglar faidhlichean Microsoft Office a ghnàth. 'S ciall dha seo, mar eisimpleir, gum fosgail [ProductName] faidhlichean dhen t-seòrsa sin ma nì thu briogadh dùbailte orra, seach am prògram a tha 'gam fosgladh an-dràsta."
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_276
 msgid  "File types"
@@ -2361,11 +2361,11 @@ msgstr "{&MSSansBold8}Seòrsa an fhaidhle"
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_300
 msgid  "A version of [DEFINEDPRODUCT] [DEFINEDVERSION] was found by the [ProductName] Installation Wizard. This version will be updated."
-msgstr ""
+msgstr "Lorg stàlaichear [ProductName] tionndadh de [DEFINEDPRODUCT] [DEFINEDVERSION]. Thèid an tionndadh sin ùrachadh."
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_301
 msgid  "The destination folder specified below does not contain a [DEFINEDPRODUCT] [DEFINEDVERSION] version."
-msgstr ""
+msgstr "Chan eil tionndadh de [DEFINEDPRODUCT] [DEFINEDVERSION] sa phasgan-uidhe a shònraich thu gu h-ìosal."
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_302
 msgid  "A newer [DEFINEDPRODUCT] [DEFINEDVERSION] has been found."
@@ -2380,15 +2380,15 @@ msgid  "Check the destination folder."
 msgstr "Thoir sùil air a' phasgan-uidhe."
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_305
-msgid  "To continue, click "Next"."
+msgid  "To continue, click \"Next\"."
 msgstr ""
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_306
-msgid  "To select a different version, click "Change". Otherwise click "Cancel" to abort the Installation Wizard."
+msgid  "To select a different version, click \"Change\". Otherwise click \"Cancel\" to abort the Installation Wizard."
 msgstr ""
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_307
-msgid  "To select a different folder, click "Change"."
+msgid  "To select a different folder, click \"Change\"."
 msgstr ""
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_308
@@ -2397,15 +2397,15 @@ msgstr "Stàlaich [ProductName] ann an:"
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_309
 msgid  "If you are just trying out [ProductName], you probably don't want this to happen, so leave the boxes unchecked."
-msgstr ""
+msgstr "Ma tha thu dìreach airson [ProductName] fheuchainn, 's mathaid nach eil thu ag iarraidh seo is fàg na bogsaichean neo-chomharraichte mar sin."
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_317
 msgid  "No languages have been selected for installation. Click OK to select one or more languages for installation."
-msgstr ""
+msgstr "Cha deach cànan sam bith a thaghadh airson an stàlaidh. Briog air 'Ceart ma-thà' gus cànan, no cànain, a thaghadh gus an stàladh."
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_318
 msgid  "No applications have been selected for installation. Click OK to select one or more applications for installation."
-msgstr ""
+msgstr "Cha deach aplacaid sam bith a thaghadh airson an stàlaidh. Briog air 'Ceart ma-thà' gus aplacaid, no aplacaidean, a thaghadh gus an stàladh."
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_319
 msgid  "Create a start link on desktop"

@@ -125,7 +125,7 @@ msgstr "Olvassa el figyelmesen a következő licencszerződést."
 
 #: src/Localization/setupstrings.ulf#STRING_ACCEPTLICENSE3
 msgid  "If you have read and accept all the terms of the entire Software License Agreement, click 'Accept License' to continue with the installation."
-msgstr ""
+msgstr "Ha elolvasta és elfogadta a Szoftverlicenc-szerződés valamennyi pontját, kattintson a Licenc elfogadása gombra a telepítés folytatásához."
 
 #: src/Localization/setupstrings.ulf#STRING_CHOOSEDIRECTORY1
 msgid  "Select Installation Directory"
@@ -153,11 +153,11 @@ msgstr "Új könyvtár létrehozása"
 
 #: src/Localization/setupstrings.ulf#STRING_CHOOSEDIRECTORY5_QUESTION_MESSAGE
 msgid  "The directory '${DIR}' does not exist.\nDo you want to create it now?"
-msgstr ""
+msgstr "A(z) „${DIR}” könyvtár nem létezik.\nLétrehozza most?"
 
 #: src/Localization/setupstrings.ulf#STRING_CHOOSEDIRECTORY5_QUESTION_MESSAGE2
 msgid  "The directory '${DIR}' does not exist.\nDo you want to create it now or choose another directory?"
-msgstr ""
+msgstr "A(z) „${DIR}” könyvtár nem létezik.\nLétrehozza most, vagy választ egy másik könyvtárat?"
 
 #: src/Localization/setupstrings.ulf#STRING_CHOOSEDIRECTORY6
 msgid  "Select root directory"
@@ -185,7 +185,7 @@ msgstr "További komponensek kijelölése"
 
 #: src/Localization/setupstrings.ulf#STRING_CHOOSECOMPONENTS2
 msgid  "Marked components will be installed. Please mark them accordingly"
-msgstr ""
+msgstr "A megjelölt komponensek telepítve lesznek. Jelölje be őket ennek megfelelően."
 
 #: src/Localization/setupstrings.ulf#STRING_CHOOSECOMPONENTS3
 msgid  "Feature Description"
@@ -209,11 +209,11 @@ msgstr "Telepítés típusának kiválasztása"
 
 #: src/Localization/setupstrings.ulf#STRING_CHOOSEINSTALLATIONTYPE4
 msgid  "The main components will be installed. Recommended for most users."
-msgstr ""
+msgstr "A fő komponensek lesznek telepítve. A legtöbb felhasználó számára ez javasolt."
 
 #: src/Localization/setupstrings.ulf#STRING_CHOOSEINSTALLATIONTYPE5
 msgid  "You choose the components you want to install and where they are stored. Recommended for advanced users."
-msgstr ""
+msgstr "Kiválaszthatja a telepítendő komponenseket és a telepítés helyét. Haladó felhasználók számára javasolt."
 
 #: src/Localization/setupstrings.ulf#STRING_CHOOSEINSTALLATIONTYPE6
 msgid  "Typical"
@@ -253,7 +253,7 @@ msgstr "Üdvözöljük!"
 
 #: src/Localization/setupstrings.ulf#STRING_PROLOGUE2
 msgid  "This Installation Wizard will install ${PRODUCT_FULLNAME} on your computer."
-msgstr ""
+msgstr "Ez a Telepítő telepíteni fogja a ${PRODUCT_FULLNAME} alkalmazást a számítógépre."
 
 #: src/Localization/setupstrings.ulf#STRING_PROLOGUE3
 msgid  "To continue, click 'Next'."
@@ -261,7 +261,7 @@ msgstr "A folytatáshoz kattintson a Tovább gombra."
 
 #: src/Localization/setupstrings.ulf#STRING_PROLOGUE4
 msgid  "Note: This installation will be done without root privileges. Therefore you will have a reduced functionality (Java Runtime Environment (JRE) not installable, system integration not possible).\nClick 'Cancel' and change your privileges to root privileges, if you want to use the complete functionality."
-msgstr ""
+msgstr "Megjegyzés: Ez a telepítés rendszergazdai jogok nélkül történik. Emiatt a funkcionalitás csökkentett lesz (a Java-futtatókörnyezet (JRE) nem telepíthető, a rendszerintegráció nem lehetséges).\nKattintson a „Mégse” gombra, és váltson át rendszergazdai jogkörre, ha a teljes funkcionalitást szeretné."
 
 #: src/Localization/setupstrings.ulf#STRING_INSTALLATIONCOMPLETED1
 msgid  "Installation Completed"
@@ -277,15 +277,15 @@ msgstr "Telepítés sikertelen"
 
 #: src/Localization/setupstrings.ulf#STRING_INSTALLATIONCOMPLETED2
 msgid  "The Installation Wizard has successfully installed ${PRODUCT_FULLNAME} on your computer."
-msgstr ""
+msgstr "A Telepítő sikeresen telepítette a ${PRODUCT_FULLNAME} alkalmazást a számítógépre."
 
 #: src/Localization/setupstrings.ulf#STRING_INSTALLATIONCOMPLETED2_ABORT
 msgid  "The Installation Wizard was aborted. ${PRODUCT_NAME} is not installed on your computer."
-msgstr ""
+msgstr "A Telepítőt megszakították. A ${PRODUCT_FULLNAME} nem lett telepítve a számítógépre."
 
 #: src/Localization/setupstrings.ulf#STRING_INSTALLATIONCOMPLETED2_ERROR
 msgid  "An error has occurred. Thus the Installation Wizard could not install ${PRODUCT_NAME} on your computer successfully. Click 'Details...' for more information."
-msgstr ""
+msgstr "Hiba történt. Emiatt a Telepítő nem tudta telepíteni az ${PRODUCT_NAME} alkalmazást a számítógépre. További információkért kattintson a Részletek... gombra."
 
 #: src/Localization/setupstrings.ulf#STRING_INSTALLATIONCOMPLETED3
 msgid  "Click 'Finish' to exit the Wizard."
@@ -297,15 +297,15 @@ msgstr "Részletek..."
 
 #: src/Localization/setupstrings.ulf#STRING_UNINSTALLATIONPROLOGUE2
 msgid  "The ${PRODUCT_FULLNAME} Uninstallation Wizard will remove ${PRODUCT_FULLNAME} from your computer."
-msgstr ""
+msgstr "A ${PRODUCT_FULLNAME} Eltávolító eltávolítja a ${PRODUCT_FULLNAME} alkalmazást a számítógépről."
 
 #: src/Localization/setupstrings.ulf#STRING_UNINSTALLATION_PROLOGUE_WRONG_PRIVILEGES_CURRENT_ROOT
 msgid  "Sorry, wrong privileges. Installation was done with User privilges, but you have Root privileges."
-msgstr ""
+msgstr "Sajnáljuk, nem megfelelő jogosultsági szint. A telepítés felhasználói jogokkal történt, jelenleg viszont rendszergazdaként van bejelentkezve."
 
 #: src/Localization/setupstrings.ulf#STRING_UNINSTALLATION_PROLOGUE_WRONG_PRIVILEGES_CURRENT_USER
 msgid  "Sorry, wrong privileges. Installation was done with Root privilges, but you have User privileges."
-msgstr ""
+msgstr "Sajnáljuk, nem megfelelő jogosultsági szint. A telepítés rendszergazdai jogokkal történt, jelenleg viszont felhasználóként van bejelentkezve."
 
 #: src/Localization/setupstrings.ulf#STRING_CHOOSEUNINSTALLATIONTYPE1
 msgid  "Select the Type of Uninstallation"
@@ -321,7 +321,7 @@ msgstr "Részleges"
 
 #: src/Localization/setupstrings.ulf#STRING_CHOOSEUNINSTALLATIONTYPE4
 msgid  "Completely removes ${PRODUCT_FULLNAME} and all its components from your system."
-msgstr ""
+msgstr "Teljesen eltávolítja a ${PRODUCT_FULLNAME} alkalmazást és minden komponensét a számítógépről."
 
 #: src/Localization/setupstrings.ulf#STRING_CHOOSEUNINSTALLATIONTYPE5
 msgid  "You choose the program features you want to remove."
@@ -333,7 +333,7 @@ msgstr "Teljes"
 
 #: src/Localization/setupstrings.ulf#STRING_CHOOSEUNINSTALLATIONCOMPONENTS2
 msgid  "Components marked with an X will be removed. Mark the components you want to remove."
-msgstr ""
+msgstr "Az X-szel jelölt komponensek el lesznek távolítva. Jelölje be az eltávolítandó komponenseket."
 
 #: src/Localization/setupstrings.ulf#STRING_UNINSTALLATIONIMMINENT1
 msgid  "Ready to Remove"
@@ -361,19 +361,19 @@ msgstr "Eltávolítás sikertelen"
 
 #: src/Localization/setupstrings.ulf#STRING_UNINSTALLATIONCOMPLETED2
 msgid  "The Uninstallation Wizard has successfully removed ${PRODUCT_FULLNAME} from your computer."
-msgstr ""
+msgstr "Az Eltávolító sikeresen eltávolította a ${PRODUCT_FULLNAME} alkalmazást a számítógépről."
 
 #: src/Localization/setupstrings.ulf#STRING_UNINSTALLATIONCOMPLETED2_PARTIAL
 msgid  "The Uninstallation Wizard has successfully removed the selected components of ${PRODUCT_NAME} from your computer."
-msgstr ""
+msgstr "Az Eltávolító sikeresen eltávolította az ${PRODUCT_NAME} alkalmazás kijelölt komponenseit a számítógépről."
 
 #: src/Localization/setupstrings.ulf#STRING_UNINSTALLATIONCOMPLETED2_ABORT
 msgid  "The Uninstallation Wizard was aborted before completely removing ${PRODUCT_NAME} from your computer."
-msgstr ""
+msgstr "Az Eltávolítót megszakították. Az ${PRODUCT_NAME} nem lett teljesen eltávolítva a számítógépről."
 
 #: src/Localization/setupstrings.ulf#STRING_UNINSTALLATIONCOMPLETED2_ERROR
 msgid  "An error has occurred. Thus the Uninstallation Wizard could not remove ${PRODUCT_NAME} from your computer successfully. Click 'Details...' for more information."
-msgstr ""
+msgstr "Hiba történt. Emiatt az Eltávolító nem tudta eltávolítani az ${PRODUCT_NAME} alkalmazást a számítógépről. További információkért kattintson a Részletek... gombra."
 
 #: src/Localization/setupstrings.ulf#STRING_INSTALLERFACTORY_OS_NOT_SUPPORTED
 msgid  "Sorry, this Operating System is not supported yet."
@@ -381,19 +381,19 @@ msgstr "Sajnáljuk, ez az operációs rendszer egyelőre nem támogatott."
 
 #: src/Localization/setupstrings.ulf#STRING_OLDER_VERSION_INSTALLED_FOUND
 msgid  "An older version of ${PRODUCT_NAME} was found on your system in:"
-msgstr ""
+msgstr "Az ${PRODUCT_NAME} régebbi verziója található a rendszeren a következő helyen:"
 
 #: src/Localization/setupstrings.ulf#STRING_OLDER_VERSION_INSTALLED_REMOVE
 msgid  "You have to remove the older version of ${PRODUCT_NAME} before you can install the newer one."
-msgstr ""
+msgstr "El kell távolítania az ${PRODUCT_NAME} régebbi verzióját az újabb verzió telepítése előtt."
 
 #: src/Localization/setupstrings.ulf#STRING_NEWER_VERSION_INSTALLED_FOUND
 msgid  "A newer version of ${PRODUCT_NAME} was found on your system in:"
-msgstr ""
+msgstr "Az ${PRODUCT_NAME} újabb verziója található a rendszeren a következő helyen:"
 
 #: src/Localization/setupstrings.ulf#STRING_NEWER_VERSION_INSTALLED_REMOVE
 msgid  "You have to remove the newer version of ${PRODUCT_NAME} before you can install the older one."
-msgstr ""
+msgstr "El kell távolítania az ${PRODUCT_NAME} újabb verzióját a régebbi verzió telepítése előtt."
 
 #: src/Localization/setupstrings.ulf#STRING_NEWER_VERSION_DATABASE
 msgid  "Database"
@@ -409,7 +409,7 @@ msgstr "A jelenleg aktív felhasználói fiókból nem futtatható a Telepítő.
 
 #: src/Localization/setupstrings.ulf#STRING_ROOT_PRIVILEGES_REQUIRED_2
 msgid  "Please log out and log back in as a user with system administrator rights."
-msgstr ""
+msgstr "Jelentkezzen ki, majd jelentkezzen be rendszergazdai jogkörrel rendelkező felhasználói fiókba."
 
 #: src/Localization/setupstrings.ulf#STRING_DISCSPACE_INSUFFICIENT
 msgid  "Not enough discspace available for installation."
@@ -425,7 +425,7 @@ msgstr "Szabad lemezterület"
 
 #: src/Localization/setupstrings.ulf#STRING_DISCSPACE_TIP
 msgid  "Please use another directory for installation or change your module selection."
-msgstr ""
+msgstr "Telepítse másik könyvtárba, vagy módosítsa a telepítésre kijelölt modulok listáját."
 
 #: src/Localization/setupstrings.ulf#STRING_ANALYZING_DATABASE1
 msgid  "Analyzing ..."
@@ -433,11 +433,11 @@ msgstr "Elemzés folyamatban..."
 
 #: src/Localization/setupstrings.ulf#STRING_ANALYZING_DATABASE2
 msgid  "Analyzing database\nPlease wait a moment ..."
-msgstr ""
+msgstr "Adatbázis elemzése\nVárjon..."
 
 #: src/Localization/setupstrings.ulf#STRING_PROLOGUE_1
 msgid  "Welcome to the Installation Wizard.<p>This wizard asks you to supply configuration settings.<p>At the bottom of each page are navigation buttons that let you move through the Installation Wizard:"
-msgstr ""
+msgstr "Üdvözli a Telepítő!<p>A telepítési folyamat során meg kell adnia néhány beállítást.<p>A lapok alján elhelyezkedő navigációs gombokkal lépkedhet a telepítés lépései között."
 
 #: src/Localization/setupstrings.ulf#STRING_PROLOGUE_2
 msgid  "'Back' returns you to the previous page."
@@ -453,7 +453,7 @@ msgstr "A Mégse gomb kilép a Telepítőből a szoftver telepítése nélkül."
 
 #: src/Localization/setupstrings.ulf#STRING_PROLOGUE_5
 msgid  "'Help' displays the Help with further information about the page currently displayed."
-msgstr ""
+msgstr "A Súgó gomb az adott laphoz tartozó súgót jeleníti meg."
 
 #: src/Localization/setupstrings.ulf#STRING_PROLOGUE_6
 msgid  "'OK' exits the Help page and returns you to the Installation Wizard."
@@ -461,7 +461,7 @@ msgstr "Az OK gomb kilép a Súgóból, és visszatér a Telepítőhöz."
 
 #: src/Localization/setupstrings.ulf#STRING_UNINSTALLATIONPROLOGUE_1
 msgid  "Welcome to the Uninstallation Wizard.<p>This wizard asks you to supply configuration settings.<p>At the bottom of each page are navigation buttons that let you move through the Uninstallation Wizard:"
-msgstr ""
+msgstr "Üdvözli az Eltávolító!<p>Az eltávolítási folyamat során meg kell adnia néhány beállítást.<p>A lapok alján elhelyezkedő navigációs gombokkal lépkedhet az eltávolítás lépései között."
 
 #: src/Localization/setupstrings.ulf#STRING_UNINSTALLATIONPROLOGUE_2
 msgid  "'Back' returns you to the previous page."
@@ -477,7 +477,7 @@ msgstr "A Mégse gomb kilép az Eltávolítóból a szoftver eltávolítása né
 
 #: src/Localization/setupstrings.ulf#STRING_UNINSTALLATIONPROLOGUE_5
 msgid  "'Help' displays the Help with further information about the page currently displayed."
-msgstr ""
+msgstr "A Súgó gomb az adott laphoz tartozó súgót jeleníti meg."
 
 #: src/Localization/setupstrings.ulf#STRING_UNINSTALLATIONPROLOGUE_6
 msgid  "'OK' exits the Help page and returns you to the Uninstallation Wizard."
@@ -485,55 +485,55 @@ msgstr "Az OK gomb kilép a Súgóból, és visszatér az Eltávolítóhoz."
 
 #: src/Localization/setupstrings.ulf#STRING_ACCEPTLICENSE_1
 msgid  "Before you install this product, you must read and accept the entire Software License Agreement under which this software is licensed for your use."
-msgstr ""
+msgstr "A termék telepítése előtt el kell olvasnia, és el kell fogadnia a teljes Szoftverlicenc-szerződést, amely a szoftver használatának feltételeit tartalmazza."
 
 #: src/Localization/setupstrings.ulf#STRING_ACCEPTLICENSE_2
 msgid  "If you have read and accept all the terms of the entire Software License Agreement, click 'Accept License' to continue with the installation."
-msgstr ""
+msgstr "Ha elolvasta és elfogadta a Szoftverlicenc-szerződés valamennyi pontját, kattintson a Licenc elfogadása gombra a telepítés folytatásához."
 
 #: src/Localization/setupstrings.ulf#STRING_ACCEPTLICENSE_3
 msgid  "If you do not accept all the terms of the Software License Agreement, click 'Decline' to end the Installation Wizard without installing this product."
-msgstr ""
+msgstr "Ha nem fogadja el a Szoftverlicenc-szerződés valamennyi pontját, kattintson az Elutasítás gombra. Ekkor a Telepítő kilép, és a termék nem telepítődik."
 
 #: src/Localization/setupstrings.ulf#STRING_CHOOSEINSTALLATIONTYPE_1
 msgid  "Select the type of product installation to perform from the following choices. This will determine how much information you need to provide for product configuration."
-msgstr ""
+msgstr "Válassza ki a termék telepítésének típusát a következő lehetőségek közül. Ez meghatározza, hogy mennyi információt kell a termék konfigurálása során megadnia."
 
 #: src/Localization/setupstrings.ulf#STRING_CHOOSEDIRECTORY_1
 msgid  "It is recommended that you install this product in the directory suggested by this Installation Wizard. <p>To choose a different location, click 'Browse...' or specify the full path of the directory to use in the text box below. <p>If this product is already installed, you cannot change the destination directory."
-msgstr ""
+msgstr "Javasoljuk, hogy ezt a terméket a Telepítő által felajánlott könyvtárba telepítse. <p>Eltérő hely választásához kattintson a Tallózás gombra, vagy adja meg a használandó könyvtár teljes elérési útját az alábbi szövegmezőben. <p>Ha a termék már telepítve van, akkor nem módosíthatja a telepítési könyvtárat."
 
 #: src/Localization/setupstrings.ulf#STRING_CHOOSECOMPONENTS_1
 msgid  "Components marked in color will be installed. Click the icon of a component to mark or unmark the component.<p>All already installed components cannot be selected for installation."
-msgstr ""
+msgstr "A színnel megjelölt komponensek telepítve lesznek. Kattintson a komponens ikonjára a kijelöléséhez vagy a kijelölés leszedéséhez.<p>A már telepített komponensek nem jelölhetők ki telepítésre."
 
 #: src/Localization/setupstrings.ulf#STRING_INSTALLATIONIMMINENT_1
 msgid  "The listed components are ready for installation based on your configuration settings. <p>If you are satisfied with your selection, click 'Install Now' to begin. <p>To check or modify your settings on the previous pages, click 'Back'."
-msgstr ""
+msgstr "A konfigurációs beállítások alapján a felsorolt komponensek készen állnak a telepítésre.<p>Ha elégedett a listával, kattintson a Telepítés gombra a telepítés elkezdéséhez.<p>A beállítások ellenőrzéséhez vagy módosításához kattintson a Vissza gombra."
 
 #: src/Localization/setupstrings.ulf#STRING_UNINSTALLATIONIMMINENT_1
 msgid  "The listed components are ready for uninstallation based on your configuration settings. <p>If you are satisfied with your selection, click 'Remove Now' to begin. <p>To check or modify your settings on the previous pages, click 'Back'."
-msgstr ""
+msgstr "A konfigurációs beállítások alapján a felsorolt komponensek készen állnak az eltávolításra.<p>Ha elégedett a listával, kattintson az Eltávolítás gombra az eltávolítás elkezdéséhez.<p>A beállítások ellenőrzéséhez vagy módosításához kattintson a Vissza gombra."
 
 #: src/Localization/setupstrings.ulf#STRING_INSTALLATIONONGOING_1
 msgid  "This page indicates the progress of the installation with the aid of a progress bar. To abort the installation process, click 'Stop'."
-msgstr ""
+msgstr "Ez a lap a telepítés folyamatát jeleníti meg egy folyamatsáv segítségével. A telepítés megszakításához kattintson a Leállítás gombra."
 
 #: src/Localization/setupstrings.ulf#STRING_UNINSTALLATIONONGOING_1
 msgid  "This page indicates the progress of the uninstallation with the aid of a progress bar. To abort the uninstallation, click 'Stop'."
-msgstr ""
+msgstr "Ez a lap az eltávolítás folyamatát jeleníti meg egy folyamatsáv segítségével. Az eltávolítás megszakításához kattintson a Leállítás gombra."
 
 #: src/Localization/setupstrings.ulf#STRING_CHOOSEUNINSTALLATIONTYPE_1
 msgid  "Complete: This will remove all installed components of your version.<p>Partial: This removes only the components you will choose out of the components list."
-msgstr ""
+msgstr "Teljes: A telepített verzió minden komponensét eltávolítja.<p>Részleges: Csak a komponenslistáról kijelölt komponenseket távolítja el."
 
 #: src/Localization/setupstrings.ulf#STRING_CHOOSEUNINSTALLATIONCOMPONENTS_1
 msgid  "Components marked with an X will be removed. Click next to a component to mark or unmark it with an X."
-msgstr ""
+msgstr "Az X-szel jelölt komponensek el lesznek távolítva. Kattintson a komponens mellett a bejelöléshez vagy a bejelölés megszüntetéséhez."
 
 #: src/Localization/setupstrings.ulf#STRING_PACKAGEFORMAT_NOT_SUPPORTED
 msgid  "This package format is currently not supported for your operating system!"
-msgstr ""
+msgstr "Ezt a csomagformátum ezen az operációs rendszeren jelenleg nem támogatott."
 
 #: src/Localization/setupstrings.ulf#STRING_OPERATING_SYSTEM
 msgid  "Operating system"
@@ -553,7 +553,7 @@ msgstr "Egy komponens sincs kijelölve telepítésre."
 
 #: src/Localization/setupstrings.ulf#STRING_NO_COMPONENTS_SELECTED_2
 msgid  "Click 'OK' to select one or more components for installation or to exit the Installation Wizard."
-msgstr ""
+msgstr "Kattintson az OK gombra a komponensek kijelöléséhez vagy a kilépéshez a Telepítőből."
 
 #: src/Localization/setupstrings.ulf#STRING_NO_LANGUAGE_SELECTED_1
 msgid  "No languages have been selected for installation."
@@ -561,7 +561,7 @@ msgstr "Egy nyelv sincs kijelölve telepítésre."
 
 #: src/Localization/setupstrings.ulf#STRING_NO_LANGUAGE_SELECTED_2
 msgid  "Click 'OK' to select one or more languages for installation or to exit the Installation Wizard."
-msgstr ""
+msgstr "Kattintson az OK gombra a nyelvek kijelöléséhez vagy a kilépéshez a Telepítővarázslóból."
 
 #: src/Localization/setupstrings.ulf#STRING_NO_APPLICATION_SELECTED_1
 msgid  "No applications have been selected for installation."
@@ -569,7 +569,7 @@ msgstr "Egy alkalmazás sincs kijelölve telepítésre."
 
 #: src/Localization/setupstrings.ulf#STRING_NO_APPLICATION_SELECTED_2
 msgid  "Click 'OK' to select one or more application for installation or to exit the Installation Wizard."
-msgstr ""
+msgstr "Kattintson az OK gombra az alkalmazások kijelöléséhez vagy a kilépéshez a Telepítővarázslóból."
 
 #: src/Localization/setupstrings.ulf#STRING_NOTHING_TO_UNINSTALL
 msgid  "Nothing to uninstall"
@@ -581,7 +581,7 @@ msgstr "Egy komponens sincs kijelölve eltávolításra."
 
 #: src/Localization/setupstrings.ulf#STRING_NO_UNINSTALLCOMPONENTS_SELECTED_2
 msgid  "Click 'OK' to select one or more components for uninstallation or to exit the Uninstallation Wizard."
-msgstr ""
+msgstr "Kattintson az OK gombra a komponensek kijelöléséhez vagy a kilépéshez az Eltávolítóból."
 
 #: src/Localization/setupstrings.ulf#STRING_ALL_LANGUAGECOMPONENTS_SELECTED_1
 msgid  "All language components have been selected for uninstallation."
@@ -589,7 +589,7 @@ msgstr "Az összes nyelvkomponens ki van jelölve eltávolításra."
 
 #: src/Localization/setupstrings.ulf#STRING_ALL_LANGUAGECOMPONENTS_SELECTED_2
 msgid  "Click 'OK' to select one or more language components not for uninstallation or to exit the Uninstallation Wizard."
-msgstr ""
+msgstr "Kattintson az OK gombra az eltávolítandó nyelvkomponensek kijelöléséhez vagy a kilépéshez az Eltávolítóvarázslóból."
 
 #: src/Localization/setupstrings.ulf#STRING_ALL_APPLICATIONCOMPONENTS_SELECTED_1
 msgid  "All application components have been selected for uninstallation."
@@ -597,7 +597,7 @@ msgstr "Az összes alkalmazás ki van jelölve eltávolításra."
 
 #: src/Localization/setupstrings.ulf#STRING_ALL_APPLICATIONCOMPONENTS_SELECTED_2
 msgid  "Click 'OK' to select one or more application components not for uninstallation or to exit the Uninstallation Wizard."
-msgstr ""
+msgstr "Kattintson az OK gombra az eltávolítandó alkalmazás komponensek kijelöléséhez vagy a kilépéshez az Eltávolítóvarázslóból."
 
 #: src/Localization/setupstrings.ulf#STRING_CHANGE_SELECTION
 msgid  "Please change selection"

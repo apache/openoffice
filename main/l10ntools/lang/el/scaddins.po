@@ -530,190 +530,160 @@ msgstr "FACTDOUBLE"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Workday.1.String.Text
 msgid  "Returns the serial number of the date before or after a specified number of workdays"
-msgstr ""
+msgstr "Επιστρέφει τον αριθμό σειράς για την ημερομηνία πριν ή μετά από έναν καθορισμένο αριθμό εργάσιμων ημερών."
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Workday.2.String.Text
-#, fuzzy
 msgid  "Start date"
 msgstr "Ημερομηνία έναρξης"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Workday.3.String.Text
-#, fuzzy
 msgid  "The start date"
 msgstr "Η ημερομηνία έναρξης"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Workday.4.String.Text
-#, fuzzy
 msgid  "Days"
 msgstr "Ημέρες"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Workday.5.String.Text
-#, fuzzy
 msgid  "The number of workdays before or after the start date"
 msgstr "Ο αριθμός εργάσιμων ημερών πριν ή μετά την ημερομηνία έναρξης"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Workday.6.String.Text
-#, fuzzy
 msgid  "Holidays"
 msgstr "Διακοπές"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Workday.7.String.Text
 msgid  "List of date values of days off (vacation, holidays, etc.)"
-msgstr ""
+msgstr "Λίστα με τις τιμές ημερομηνίας των μη εργάσιμων ημερών(διακοπές, αργίες κλπ.)"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Yearfrac.1.String.Text
 msgid  "Returns the number of whole days between 'start date' and 'end date' as a year fraction"
-msgstr ""
+msgstr "Επιστρέφει τον αριθμό των ολόκληρων ημερών μεταξύ της 'ημερομηνίας έναρξης' και της 'ημερομηνία λήξης' ως κλάσμα του έτους."
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Yearfrac.2.String.Text
-#, fuzzy
 msgid  "Start date"
 msgstr "Ημερομηνία έναρξης"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Yearfrac.3.String.Text
-#, fuzzy
 msgid  "The start date"
 msgstr "Η ημερομηνία έναρξης"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Yearfrac.4.String.Text
-#, fuzzy
 msgid  "End date"
-msgstr "Η ημερομηνία λήξης"
+msgstr "Ημερομηνία λήξης"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Yearfrac.5.String.Text
-#, fuzzy
 msgid  "The end date"
 msgstr "Η ημερομηνία λήξης"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Yearfrac.6.String.Text
-#, fuzzy
 msgid  "Basis"
 msgstr "Βάση"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Yearfrac.7.String.Text
-#, fuzzy
 msgid  "Basis for determining the interest days"
 msgstr "Βάση για τον καθορισμό των ημερών τόκου"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Edate.1.String.Text
 msgid  "Returns the serial number of the date that is a specified number of months before or after the start date"
-msgstr ""
+msgstr "Επιστρέφει τον αριθμό σειράς για την ημερομηνία που βρίσκεται έναν καθορισμένο αριθμό μηνών πριν ή μετά την ημερομηνία έναρξης"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Edate.2.String.Text
-#, fuzzy
 msgid  "Start date"
 msgstr "Ημερομηνία έναρξης"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Edate.3.String.Text
-#, fuzzy
 msgid  "The start date"
 msgstr "Η ημερομηνία έναρξης"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Edate.4.String.Text
-#, fuzzy
 msgid  "Months"
 msgstr "Μήνες"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Edate.5.String.Text
-#, fuzzy
 msgid  "Number of months before or after the start date"
 msgstr "Ο αριθμός των μηνών πριν ή μετά την ημερομηνία έναρξης"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Weeknum.1.String.Text
 msgid  "Returns the number of the calendar week in which the specified date occurs."
-msgstr ""
+msgstr "Επιστρέφει τον αριθμό της ημερολογιακής εβδομάδας στην οποία ανήκει η καθορισμένη ημερομηνία."
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Weeknum.2.String.Text
-#, fuzzy
 msgid  "Date"
 msgstr "Ημερομηνία"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Weeknum.3.String.Text
-#, fuzzy
 msgid  "The date"
 msgstr "Η ημερομηνία"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Weeknum.4.String.Text
-#, fuzzy
 msgid  "Return type"
 msgstr "Τύπος επιστρεφόμενης τιμής"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Weeknum.5.String.Text
 msgid  "A number from 1 to 3 that specifies the day with which a week begins"
-msgstr ""
+msgstr "Ένας αριθμός από το 1 μέχρι το 3 που καθορίζει την ημέρα με την οποία ξεκινά η εβδομάδα"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Eomonth.1.String.Text
 msgid  "Returns the serial number of the last day of the month that comes a certain number of months before or after the start date"
-msgstr ""
+msgstr "Επιστρέφει τον αριθμό σειράς για την τελευταία ημέρα του μήνα που είναι ένα συγκεκριμένο αριθμό μηνών πριν ή μετά την ημερομηνία έναρξης"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Eomonth.2.String.Text
-#, fuzzy
 msgid  "Start date"
 msgstr "Ημερομηνία έναρξης"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Eomonth.3.String.Text
-#, fuzzy
 msgid  "The start date"
 msgstr "Η ημερομηνία έναρξης"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Eomonth.4.String.Text
-#, fuzzy
 msgid  "Months"
 msgstr "Μήνες"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Eomonth.5.String.Text
-#, fuzzy
 msgid  "Number of months before or after the start date"
 msgstr "Ο αριθμός των μηνών πριν ή μετά την ημερομηνία έναρξης"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Networkdays.1.String.Text
-#, fuzzy
 msgid  "Returns the number of workdays between two dates"
 msgstr "Επιστρέφει τον αριθμό των εργάσιμων ημερών μεταξύ δύο ημερομηνιών"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Networkdays.2.String.Text
-#, fuzzy
 msgid  "Start date"
 msgstr "Ημερομηνία έναρξης"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Networkdays.3.String.Text
-#, fuzzy
 msgid  "The start date"
 msgstr "Η ημερομηνία έναρξης"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Networkdays.4.String.Text
-#, fuzzy
 msgid  "End date"
 msgstr "Η ημερομηνία λήξης"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Networkdays.5.String.Text
-#, fuzzy
 msgid  "The end date"
 msgstr "Η ημερομηνία λήξης"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Networkdays.6.String.Text
-#, fuzzy
 msgid  "Holidays"
 msgstr "Διακοπές"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Networkdays.7.String.Text
 msgid  "List of date values representing days off (vacation, holidays, etc.)"
-msgstr ""
+msgstr "Λίστα με τις τιμές ημερομηνίας των μη εργάσιμων ημερών(διακοπές, αργίες κλπ.)"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Iseven.1.String.Text
-#, fuzzy
 msgid  "Returns the value 'true' if the number is even"
 msgstr "Επιστρέφει την τιμή 'αληθής' αν ο αριθμός είναι άρτιος"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Iseven.2.String.Text
-#, fuzzy
 msgid  "Number"
 msgstr "Αριθμός"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Iseven.3.String.Text
 #, fuzzy
 msgid  "The number"
-msgstr "Ο αριθμός"
+msgstr "Ο  αριθμός"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Isodd.1.String.Text
 #, fuzzy
@@ -741,8 +711,9 @@ msgid  "Number(s)"
 msgstr "Αριθμός(οί)"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Multinomial.3.String.Text
+#, fuzzy
 msgid  "Number or list of numbers for which you want the multinomial coefficient"
-msgstr ""
+msgstr "Ο αριθμός ή η λίστα αριθμών για τους οποίους θέλετε τον πολυωνυμικό συντελεστή"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Seriessum.1.String.Text
 #, fuzzy
@@ -752,7 +723,7 @@ msgstr "Επιστρέφει το άθροισμα μιας δυναμοσειρ
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Seriessum.2.String.Text
 #, fuzzy
 msgid  "X"
-msgstr "Χ"
+msgstr "X"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Seriessum.3.String.Text
 #, fuzzy
@@ -762,7 +733,7 @@ msgstr "Η ανεξάρτητη μεταβλητή της δυναμοσειρά
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Seriessum.4.String.Text
 #, fuzzy
 msgid  "N"
-msgstr "Ν"
+msgstr "N"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Seriessum.5.String.Text
 #, fuzzy
@@ -785,8 +756,9 @@ msgid  "Coefficients"
 msgstr "Συντελεστές"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Seriessum.9.String.Text
+#, fuzzy
 msgid  "Set of coefficients by which each successive power of the variable x is multiplied"
-msgstr ""
+msgstr "Σύνολο συντελεστών με το οποίο πολλαπλασιάζεται κάθε διαδοχική δύναμη της μεταβλητής x"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Quotient.1.String.Text
 #, fuzzy
@@ -814,8 +786,9 @@ msgid  "The divisor"
 msgstr "Ο διαιρέτης"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Mround.1.String.Text
+#, fuzzy
 msgid  "Returns a number rounded to a specified multiple"
-msgstr ""
+msgstr "Επιστρέφει έναν αριθμό στρογγυλοποιημένο σε ένα συγκεκριμένο πολλαπλάσιο"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Mround.2.String.Text
 #, fuzzy
@@ -838,8 +811,9 @@ msgid  "The multiple to which you want to round number"
 msgstr "Το πολλαπλάσιο στο οποίο θέλετε να στρογγυλοποιήσετε τον αριθμό"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Sqrtpi.1.String.Text
+#, fuzzy
 msgid  "Returns the square root of a number which has been multiplied by pi"
-msgstr ""
+msgstr "Επιστρέφει την τετραγωνική ρίζα ενός αριθμού ο οποίος έχει πολλαπλασιαστεί με το π"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Sqrtpi.2.String.Text
 #, fuzzy
@@ -914,7 +888,7 @@ msgstr "Επιστρέφει την τροποποιημένη συνάρτησ�
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Besseli.2.String.Text
 #, fuzzy
 msgid  "X"
-msgstr "Χ"
+msgstr "X"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Besseli.3.String.Text
 #, fuzzy
@@ -924,7 +898,7 @@ msgstr "Η τιμή στην οποία θα υπολογιστεί η συνά�
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Besseli.4.String.Text
 #, fuzzy
 msgid  "N"
-msgstr "Ν"
+msgstr "N"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Besseli.5.String.Text
 #, fuzzy
@@ -1019,7 +993,7 @@ msgstr "Αριθμός"
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Bin2Oct.3.String.Text
 #, fuzzy
 msgid  "The binary number to be converted (as text)"
-msgstr "Ο δυαδικός αριθμός που θα μετατραπεί (ως κείμενο)"
+msgstr "Ο δυαδικός αριθμός που θα μετατραπεί (ως κείμενο)ο "
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Bin2Oct.4.String.Text
 #, fuzzy
@@ -1492,8 +1466,9 @@ msgid  "The divisor"
 msgstr "Ο διαιρέτης"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Imexp.1.String.Text
+#, fuzzy
 msgid  "Returns the algebraic form of the exponential of a complex number"
-msgstr ""
+msgstr "Επιστρέφει την αλγεβρική μορφή της εκθετικής συνάρτησης ενός μιγαδικού αριθμού"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Imexp.2.String.Text
 #, fuzzy
@@ -1772,8 +1747,9 @@ msgid  "A complex number"
 msgstr ""
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Complex.1.String.Text
+#, fuzzy
 msgid  "Converts real and imaginary coefficients into a complex number"
-msgstr ""
+msgstr "Μετατρέπει έναν πραγματικό και έναν φανταστικό συντελεστή σε ένα μιγαδικό αριθμό"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Complex.2.String.Text
 #, fuzzy
@@ -1841,8 +1817,9 @@ msgid  "Unit of measure for the result"
 msgstr "Η μονάδα μέτρησης του αποτελέσματος"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Amordegrc.1.String.Text
+#, fuzzy
 msgid  "Returns the prorated linear depreciation of an asset for each accounting period"
-msgstr ""
+msgstr "Επιστρέφει την κατανεμημένη γραμμική απόσβεση ενός περιουσιακού στοιχείου για κάθε λογιστική περίοδο"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Amordegrc.2.String.Text
 #, fuzzy
@@ -1902,7 +1879,7 @@ msgstr "Επιτόκιο"
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Amordegrc.13.String.Text
 #, fuzzy
 msgid  "The rate of depreciation"
-msgstr "Το επιτόκιο απαξίωσης"
+msgstr "το επιτόκιο απαξίωσης"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Amordegrc.14.String.Text
 #, fuzzy
@@ -1915,8 +1892,9 @@ msgid  "The year basis to be used"
 msgstr "Η ετήσια βάση που θα χρησιμοποιηθεί"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Amorlinc.1.String.Text
+#, fuzzy
 msgid  "Returns the prorated linear depreciation of an asset for each accounting period"
-msgstr ""
+msgstr "Επιστρέφει την κατανεμημένη γραμμική απόσβεση ενός περιουσιακού στοιχείου για κάθε λογιστική περίοδο"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Amorlinc.2.String.Text
 #, fuzzy
@@ -1989,8 +1967,9 @@ msgid  "The year basis to be used"
 msgstr "Η ετήσια βάση που θα χρησιμοποιηθεί"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Accrint.1.String.Text
+#, fuzzy
 msgid  "Returns the accrued interest for a security that pays periodic interest"
-msgstr ""
+msgstr "Επιστρέφει τον συσσωρευμένο τόκο για έναν τίτλο που αποδίδει περιοδικό τόκο"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Accrint.2.String.Text
 #, fuzzy
@@ -2030,7 +2009,7 @@ msgstr "Επιτόκιο"
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Accrint.9.String.Text
 #, fuzzy
 msgid  "The rate"
-msgstr "Το πιτόκιο"
+msgstr "Το επιτόκιο"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Accrint.10.String.Text
 #, fuzzy
@@ -2063,8 +2042,9 @@ msgid  "The basis"
 msgstr "Η βάση"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Accrintm.1.String.Text
+#, fuzzy
 msgid  "Returns the accrued interest for a security that pays interest at maturity"
-msgstr ""
+msgstr "Επιστρέφει τον συσσωρευμένο τόκο για έναν τίτλο που αποδίδει τόκο κατά τη λήξη του"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Accrintm.2.String.Text
 #, fuzzy
@@ -2117,8 +2097,9 @@ msgid  "The basis"
 msgstr "Η βάση"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Received.1.String.Text
+#, fuzzy
 msgid  "Returns the amount paid out at maturity for a fully invested security"
-msgstr ""
+msgstr "Επιστρέφει το ποσό που καταβάλλεται κατά τη λήξη για έναν τίτλο πλήρους επένδυσης"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Received.2.String.Text
 #, fuzzy
@@ -2226,8 +2207,9 @@ msgid  "The basis"
 msgstr "Η βάση"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Duration.1.String.Text
+#, fuzzy
 msgid  "Returns the annual Macaulay duration of a security with periodic interest payments"
-msgstr ""
+msgstr "Επιστρέφει την ετήσια διάρκεια, κατά Macaulay, ενός τίτλου με περιοδικές πληρωμές τόκου"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Duration.2.String.Text
 #, fuzzy
@@ -2262,7 +2244,7 @@ msgstr "Το επιτόκιο των κουπονιών"
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Duration.8.String.Text
 #, fuzzy
 msgid  "Yield"
-msgstr "Απόδοση"
+msgstr "Απόδοση στη λήξη (yield to maturity)"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Duration.9.String.Text
 #, fuzzy
@@ -2315,8 +2297,9 @@ msgid  "The periods"
 msgstr "Οι περίοδοι"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Cumprinc.1.String.Text
+#, fuzzy
 msgid  "Returns the cumulative principal on a loan to be paid between two periods"
-msgstr ""
+msgstr "Επιστρέφει το αθροιστικό κεφάλαιο ενός δανείου που πρέπει να πληρωθεί μεταξύ δύο περιόδων"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Cumprinc.2.String.Text
 #, fuzzy
@@ -2326,7 +2309,7 @@ msgstr "Επιτόκιο"
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Cumprinc.3.String.Text
 #, fuzzy
 msgid  "The rate"
-msgstr "Το επιτόκιο"
+msgstr "Το πιτόκιο"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Cumprinc.4.String.Text
 #, fuzzy
@@ -2379,8 +2362,9 @@ msgid  "The type of maturity"
 msgstr "Ο τύπος της ημερομηνίας λήξης"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Cumipmt.1.String.Text
+#, fuzzy
 msgid  "Returns the cumulative interest to be paid between two periods"
-msgstr ""
+msgstr "Επιστρέφει τον αθροιστικό τόκο που πρέπει να καταβληθεί μεταξύ δύο περιόδων"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Cumipmt.2.String.Text
 #, fuzzy
@@ -2443,8 +2427,9 @@ msgid  "The type of maturity"
 msgstr "Ο τύπος της ημερομηνίας λήξης"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Price.1.String.Text
+#, fuzzy
 msgid  "Returns the price per 100 currency units face value of a security that pays periodic interest"
-msgstr ""
+msgstr "Επιστρέφει την τιμή ανά 100 νομισματικές μονάδες της ονομαστικής αξίας ενός τίτλου που αποδίδει περιοδικό τόκο"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Price.2.String.Text
 #, fuzzy
@@ -2517,8 +2502,9 @@ msgid  "The basis"
 msgstr "Η βάση"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Pricedisc.1.String.Text
+#, fuzzy
 msgid  "Returns the price per 100 currency units face value of a discounted security"
-msgstr ""
+msgstr "Επιστρέφει την τιμή ανά 100 νομισματικές μονάδες της ονομαστικής αξίας για έναν τίτλο που πωλείται με τιμή μικρότερη της ονομαστικής του αξίας"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Pricedisc.2.String.Text
 #, fuzzy
@@ -2571,8 +2557,9 @@ msgid  "The basis"
 msgstr "Η βάση"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Pricemat.1.String.Text
+#, fuzzy
 msgid  "Returns the price per 100 currency units face value of a security that pays interest at maturity"
-msgstr ""
+msgstr "Επιστρέφει την τιμή ανά 100 νομισματικές μονάδες της ονομαστικής αξίας ενός τίτλου που αποδίδει τόκο με τη λήξη του"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Pricemat.2.String.Text
 #, fuzzy
@@ -2635,8 +2622,9 @@ msgid  "The basis"
 msgstr "Η βάση"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Mduration.1.String.Text
+#, fuzzy
 msgid  "Returns the Macaulay modified duration for a security with an assumed par value of 100 currency units"
-msgstr ""
+msgstr "Επιστρέφει την τροποποιημένη διάρκεια, κατά Macaulay, ενός τίτλου με υποθετική παρούσα αξία 100 νομισματικών μονάδων"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Mduration.2.String.Text
 #, fuzzy
@@ -2724,8 +2712,9 @@ msgid  "The periods"
 msgstr "Οι περίοδοι"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Dollarfr.1.String.Text
+#, fuzzy
 msgid  "Converts a price expressed as a decimal into a price expressed as a fraction"
-msgstr ""
+msgstr "Μετατρέπει μια τιμή που εκφράζεται με δεκαδικά ψηφία σε μια τιμή εκφρασμένη ως κλάσμα"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Dollarfr.2.String.Text
 #, fuzzy
@@ -2748,8 +2737,9 @@ msgid  "The divisor"
 msgstr "Ο διαιρέτης"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Dollarde.1.String.Text
+#, fuzzy
 msgid  "Converts a price expressed as a fraction into a price expressed as a decimal"
-msgstr ""
+msgstr "Μετατρέπει μια τιμή εκφρασμένη ως κλάσμα σε μια τιμή εκφρασμένη ως δεκαδικά ψηφία"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Dollarde.2.String.Text
 #, fuzzy
@@ -2847,8 +2837,9 @@ msgid  "The basis"
 msgstr "Η βάση"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Yielddisc.1.String.Text
+#, fuzzy
 msgid  "Returns the annual yield for a discounted security"
-msgstr ""
+msgstr "Επιστρέφει την ετήσια απόδοση ενός τίτλου που διατίθεται με τιμή μικρότερη από την ονομαστική του αξία"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Yielddisc.2.String.Text
 #, fuzzy
@@ -2901,8 +2892,9 @@ msgid  "The basis"
 msgstr "Η βάση"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Yieldmat.1.String.Text
+#, fuzzy
 msgid  "Returns the annual yield of a security that pays interest at maturity"
-msgstr ""
+msgstr "Επιστρέφει την ετήσια απόδοση για έναν τίτλο που αποδίδει τόκο με τη λήξη του"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Yieldmat.2.String.Text
 #, fuzzy
@@ -2965,8 +2957,9 @@ msgid  "The basis"
 msgstr "Η βάση"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Tbilleq.1.String.Text
+#, fuzzy
 msgid  "Returns the bond-equivalent yield for a treasury bill"
-msgstr ""
+msgstr "Επιστρέφει την απόδοση της ισοδύναμης ομολογίας για ένα κρατικό γραμμάτιο"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Tbilleq.2.String.Text
 #, fuzzy
@@ -2999,8 +2992,9 @@ msgid  "The discount rate"
 msgstr "Το προεξοφλητικό επιτόκιο"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Tbillprice.1.String.Text
+#, fuzzy
 msgid  "Returns the price of 100 currency units face value for a treasury bill"
-msgstr ""
+msgstr "Επιστρέφει την τιμή για 100 νομισματικές μονάδες της ονομαστικής αξίας ενός κρατικού γραμματίου"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Tbillprice.2.String.Text
 #, fuzzy
@@ -3068,8 +3062,9 @@ msgid  "The price"
 msgstr "Η τιμή"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Oddfprice.1.String.Text
+#, fuzzy
 msgid  "Returns the price per $100 face value of a security with an odd first period"
-msgstr ""
+msgstr "Επιστρέφει την τιμή ανά $100 της ονομαστικής αξίας ενός τίτλου με πρώτη περίοδο ειδικής διάρκειας"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Oddfprice.2.String.Text
 #, fuzzy
@@ -3257,8 +3252,9 @@ msgid  "The basis"
 msgstr "Η βάση"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Oddlprice.1.String.Text
+#, fuzzy
 msgid  "Returns the price per $100 face value of a security with an odd last period"
-msgstr ""
+msgstr "Επιστρέφει την τιμή ανά $100 της ονομαστικής αξίας ενός τίτλου με τελευταία περίοδο ειδικής διάρκειας"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Oddlprice.2.String.Text
 #, fuzzy
@@ -3341,8 +3337,9 @@ msgid  "The basis"
 msgstr "Η βάση"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Oddlyield.1.String.Text
+#, fuzzy
 msgid  "Returns the yield of a security with an odd last period"
-msgstr ""
+msgstr "Επιστρέφει την απόδοση ενός τίτλου με τελευταία περίοδο ειδικής διάρκειας"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Oddlyield.2.String.Text
 #, fuzzy
@@ -3425,8 +3422,9 @@ msgid  "The basis"
 msgstr "Η βάση"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Xirr.1.String.Text
+#, fuzzy
 msgid  "Returns the internal rate of return for a non-periodic schedule of payments"
-msgstr ""
+msgstr "Επιστρέφει τον εσωτερικό βαθμό απόδοσης για ένα μη περιοδικό πρόγραμμα πληρωμών"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Xirr.2.String.Text
 #, fuzzy
@@ -3446,7 +3444,7 @@ msgstr "Ημερομηνίες"
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Xirr.5.String.Text
 #, fuzzy
 msgid  "The dates"
-msgstr "Η ημερομηνίες"
+msgstr "Οι ημερομηνίες"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Xirr.6.String.Text
 #, fuzzy
@@ -3459,8 +3457,9 @@ msgid  "The guess"
 msgstr "Η εκτίμηση"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Xnpv.1.String.Text
+#, fuzzy
 msgid  "Returns the net present value for a non-periodic schedule of payments"
-msgstr ""
+msgstr "Επιστρέφει την καθαρή παρούσα αξία για ένα μη περιοδικό πρόγραμμα πληρωμών"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Xnpv.2.String.Text
 #, fuzzy
@@ -3548,8 +3547,9 @@ msgid  "The basis"
 msgstr "Η βάση"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Coupncd.1.String.Text
+#, fuzzy
 msgid  "Returns the first coupon date after the settlement date"
-msgstr ""
+msgstr "Επιστρέφει την ημερομηνία του πρώτου τοκομεριδίου μετά την ημερομηνία διακανονισμού "
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Coupncd.2.String.Text
 #, fuzzy
@@ -3592,8 +3592,9 @@ msgid  "The basis"
 msgstr "Η βάση"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Coupdays.1.String.Text
+#, fuzzy
 msgid  "Returns the number of days in the coupon period containing the settlement date"
-msgstr ""
+msgstr "Επιστρέφει τον αριθμό των ημερών στην περίοδο τοκομεριδίου που περιέχει την ημερομηνία διακανονισμού"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Coupdays.2.String.Text
 #, fuzzy
@@ -3636,8 +3637,9 @@ msgid  "The basis"
 msgstr "Η βάση"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Coupdaysnc.1.String.Text
+#, fuzzy
 msgid  "Returns the number of days from the settlement date to the next coupon date"
-msgstr ""
+msgstr "Επιστρέφει τον αριθμό των ημερών από την ημερομηνία διακανονισμού μέχρι την ημερομηνία του επόμενου τοκομεριδίου"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Coupdaysnc.2.String.Text
 #, fuzzy
@@ -3680,8 +3682,9 @@ msgid  "The basis"
 msgstr "Η βάση"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Coupdaybs.1.String.Text
+#, fuzzy
 msgid  "Returns the number of days from the beginning of the coupon period to the settlement date"
-msgstr ""
+msgstr "Επιστρέφει τον αριθμό των ημερών από την αρχή της περιόδου του τοκομεριδίου μέχρι την ημερομηνία διακανονισμού"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Coupdaybs.2.String.Text
 #, fuzzy
@@ -3724,8 +3727,9 @@ msgid  "The basis"
 msgstr "Η βάση"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Couppcd.1.String.Text
+#, fuzzy
 msgid  "Returns the last coupon date preceding the settlement date"
-msgstr ""
+msgstr "Επιστρέφει την τελευταία ημερομηνία τοκομεριδίου που προηγείται της ημερομηνίας διακανονισμού"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Couppcd.2.String.Text
 #, fuzzy
@@ -3768,8 +3772,9 @@ msgid  "The basis"
 msgstr "Η βάση"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Coupnum.1.String.Text
+#, fuzzy
 msgid  "Returns the number of coupons payable between the settlement and maturity dates"
-msgstr ""
+msgstr "Επιστρέφει τον αριθμό των πληρωτέων τοκομεριδίων μεταξύ των ημερομηνιών διακανονισμού και λήξης"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Coupnum.2.String.Text
 #, fuzzy
@@ -3812,8 +3817,9 @@ msgid  "The basis"
 msgstr "Η βάση"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Fvschedule.1.String.Text
+#, fuzzy
 msgid  "Returns the future value of the initial principal after a series of compound interest rates are applied"
-msgstr ""
+msgstr "Επιστρέφει την μελλοντική αξία του αρχικού κεφαλαίου μετά από την εφαρμογή μιας σειράς επιτοκίων ανατοκισμού"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Fvschedule.2.String.Text
 #, fuzzy
@@ -3836,213 +3842,177 @@ msgid  "The schedule"
 msgstr "Το πρόγραμμα"
 
 #: source/datefunc/datefunc.src#RID_DATE_FUNCTION_DESCRIPTIONS.DATE_FUNCDESC_DiffWeeks.1.String.Text
-#, fuzzy
 msgid  "Calculates the number of weeks in a specific period"
 msgstr "Υπολογίζει τον αριθμό των εβδομάδων σε μια συγκεκριμένη περίοδο"
 
 #: source/datefunc/datefunc.src#RID_DATE_FUNCTION_DESCRIPTIONS.DATE_FUNCDESC_DiffWeeks.2.String.Text
-#, fuzzy
 msgid  "Start date"
 msgstr "Ημερομηνία έναρξης"
 
 #: source/datefunc/datefunc.src#RID_DATE_FUNCTION_DESCRIPTIONS.DATE_FUNCDESC_DiffWeeks.3.String.Text
-#, fuzzy
 msgid  "First day of the period"
 msgstr "Πρώτη ημέρα της περιόδου"
 
 #: source/datefunc/datefunc.src#RID_DATE_FUNCTION_DESCRIPTIONS.DATE_FUNCDESC_DiffWeeks.4.String.Text
-#, fuzzy
 msgid  "End date"
 msgstr "Ημερομηνία λήξης"
 
 #: source/datefunc/datefunc.src#RID_DATE_FUNCTION_DESCRIPTIONS.DATE_FUNCDESC_DiffWeeks.5.String.Text
-#, fuzzy
 msgid  "Last day of the period"
 msgstr "Τελευταία ημέρα της περιόδου"
 
 #: source/datefunc/datefunc.src#RID_DATE_FUNCTION_DESCRIPTIONS.DATE_FUNCDESC_DiffWeeks.6.String.Text
-#, fuzzy
 msgid  "Type"
 msgstr "Τύπος"
 
 #: source/datefunc/datefunc.src#RID_DATE_FUNCTION_DESCRIPTIONS.DATE_FUNCDESC_DiffWeeks.7.String.Text
 msgid  "Type of calculation: Type=0 means the time interval, Type=1 means calendar weeks."
-msgstr ""
+msgstr "Τύπος υπολογισμού: Τύπος=0 σημαίνει το χρονικό διάστημα, Τύπος=1 σημαίνει ημερολογιακές εβδομάδες."
 
 #: source/datefunc/datefunc.src#RID_DATE_FUNCTION_DESCRIPTIONS.DATE_FUNCDESC_DiffMonths.1.String.Text
-#, fuzzy
 msgid  "Determines the number of months in a specific period."
 msgstr "Καθορίζει τον αριθμό των μηνών σε μια συγκεκριμένη περίοδο."
 
 #: source/datefunc/datefunc.src#RID_DATE_FUNCTION_DESCRIPTIONS.DATE_FUNCDESC_DiffMonths.2.String.Text
-#, fuzzy
 msgid  "Start date"
 msgstr "Ημερομηνία έναρξης"
 
 #: source/datefunc/datefunc.src#RID_DATE_FUNCTION_DESCRIPTIONS.DATE_FUNCDESC_DiffMonths.3.String.Text
-#, fuzzy
 msgid  "First day of the period."
 msgstr "Πρώτη ημέρα της περιόδου."
 
 #: source/datefunc/datefunc.src#RID_DATE_FUNCTION_DESCRIPTIONS.DATE_FUNCDESC_DiffMonths.4.String.Text
-#, fuzzy
 msgid  "End date"
 msgstr "Ημερομηνία λήξης"
 
 #: source/datefunc/datefunc.src#RID_DATE_FUNCTION_DESCRIPTIONS.DATE_FUNCDESC_DiffMonths.5.String.Text
-#, fuzzy
 msgid  "Last day of the period."
 msgstr "Τελευταία ημέρα της περιόδου."
 
 #: source/datefunc/datefunc.src#RID_DATE_FUNCTION_DESCRIPTIONS.DATE_FUNCDESC_DiffMonths.6.String.Text
-#, fuzzy
 msgid  "Type"
 msgstr "Τύπος"
 
 #: source/datefunc/datefunc.src#RID_DATE_FUNCTION_DESCRIPTIONS.DATE_FUNCDESC_DiffMonths.7.String.Text
 msgid  "Type of calculation: Type=0 means the time interval, Type=1 means calendar months."
-msgstr ""
+msgstr "Τύπος υπολογισμού: Τύπος=0 σημαίνει το χρονικό διάστημα, Τύπος=1 σημαίνει ημερολογιακοί μήνες."
 
 #: source/datefunc/datefunc.src#RID_DATE_FUNCTION_DESCRIPTIONS.DATE_FUNCDESC_DiffYears.1.String.Text
-#, fuzzy
 msgid  "Calculates the number of years in a specific period."
 msgstr "Υπολογίζει τον αριθμό των ετών μέσα σε μια συγκεκριμένη περίοδο."
 
 #: source/datefunc/datefunc.src#RID_DATE_FUNCTION_DESCRIPTIONS.DATE_FUNCDESC_DiffYears.2.String.Text
-#, fuzzy
 msgid  "Start date"
 msgstr "Ημερομηνία έναρξης"
 
 #: source/datefunc/datefunc.src#RID_DATE_FUNCTION_DESCRIPTIONS.DATE_FUNCDESC_DiffYears.3.String.Text
-#, fuzzy
 msgid  "First day of the period"
 msgstr "Πρώτη ημέρα της περιόδου"
 
 #: source/datefunc/datefunc.src#RID_DATE_FUNCTION_DESCRIPTIONS.DATE_FUNCDESC_DiffYears.4.String.Text
-#, fuzzy
 msgid  "End date"
 msgstr "Ημερομηνία λήξης"
 
 #: source/datefunc/datefunc.src#RID_DATE_FUNCTION_DESCRIPTIONS.DATE_FUNCDESC_DiffYears.5.String.Text
-#, fuzzy
 msgid  "Last day of the period"
 msgstr "Τελευταία ημέρα της περιόδου"
 
 #: source/datefunc/datefunc.src#RID_DATE_FUNCTION_DESCRIPTIONS.DATE_FUNCDESC_DiffYears.6.String.Text
-#, fuzzy
 msgid  "Type"
 msgstr "Τύπος"
 
 #: source/datefunc/datefunc.src#RID_DATE_FUNCTION_DESCRIPTIONS.DATE_FUNCDESC_DiffYears.7.String.Text
 msgid  "Type of calculation: Type=0 means the time interval, Type=1 means calendar years."
-msgstr ""
+msgstr "Τύπος υπολογισμού: Τύπος=0 σημαίνει το χρονικό διάστημα, Τύπος=1 σημαίνει ημερολογιακά έτη."
 
 #: source/datefunc/datefunc.src#RID_DATE_FUNCTION_DESCRIPTIONS.DATE_FUNCDESC_IsLeapYear.1.String.Text
 msgid  "Returns 1 (TRUE) if the date is a day of a leap year, otherwise 0 (FALSE)."
-msgstr ""
+msgstr "Επιστρέφει 1 (ΑΛΗΘΗΣ) αν η ημερομηνία είναι μια ημέρα δίσεκτου έτους, αλλιώς 0 (ΨΕΥΔΗΣ)."
 
 #: source/datefunc/datefunc.src#RID_DATE_FUNCTION_DESCRIPTIONS.DATE_FUNCDESC_IsLeapYear.2.String.Text
-#, fuzzy
 msgid  "Date"
 msgstr "Ημερομηνία"
 
 #: source/datefunc/datefunc.src#RID_DATE_FUNCTION_DESCRIPTIONS.DATE_FUNCDESC_IsLeapYear.3.String.Text
-#, fuzzy
 msgid  "Any day in the desired year"
 msgstr "Οποιαδήποτε ημέρα στον επιθυμητό μήνα"
 
 #: source/datefunc/datefunc.src#RID_DATE_FUNCTION_DESCRIPTIONS.DATE_FUNCDESC_DaysInMonth.1.String.Text
 msgid  "Returns the number of days of the month in which the date entered occurs"
-msgstr ""
+msgstr "Επιστρέφει τον αριθμό των ημερών του μήνα στον οποίο ανήκει η ημερομηνία που δόθηκε."
 
 #: source/datefunc/datefunc.src#RID_DATE_FUNCTION_DESCRIPTIONS.DATE_FUNCDESC_DaysInMonth.2.String.Text
-#, fuzzy
 msgid  "Date"
 msgstr "Ημερομηνία"
 
 #: source/datefunc/datefunc.src#RID_DATE_FUNCTION_DESCRIPTIONS.DATE_FUNCDESC_DaysInMonth.3.String.Text
-#, fuzzy
 msgid  "Any day in the desired month"
 msgstr "Οποιαδήποτε ημέρα στον επιθυμητό μήνα"
 
 #: source/datefunc/datefunc.src#RID_DATE_FUNCTION_DESCRIPTIONS.DATE_FUNCDESC_DaysInYear.1.String.Text
 msgid  "Returns the number of days of the year in which the date entered occurs."
-msgstr ""
+msgstr "Επιστρέφει τον αριθμό των ημερών του έτους στο οποίο ανήκει η ημερομηνία που δόθηκε."
 
 #: source/datefunc/datefunc.src#RID_DATE_FUNCTION_DESCRIPTIONS.DATE_FUNCDESC_DaysInYear.2.String.Text
-#, fuzzy
 msgid  "Date"
 msgstr "Ημερομηνία"
 
 #: source/datefunc/datefunc.src#RID_DATE_FUNCTION_DESCRIPTIONS.DATE_FUNCDESC_DaysInYear.3.String.Text
-#, fuzzy
 msgid  "Any day in the desired year"
 msgstr "Οποιαδήποτε ημέρα στον επιθυμητό μήνα"
 
 #: source/datefunc/datefunc.src#RID_DATE_FUNCTION_DESCRIPTIONS.DATE_FUNCDESC_WeeksInYear.1.String.Text
 msgid  "Returns the number of weeks of the year in which the date entered occurs"
-msgstr ""
+msgstr "Επιστρέφει τον αριθμό των εβδομάδων του έτους στο οποίο ανήκει η ημερομηνία που δόθηκε"
 
 #: source/datefunc/datefunc.src#RID_DATE_FUNCTION_DESCRIPTIONS.DATE_FUNCDESC_WeeksInYear.2.String.Text
-#, fuzzy
 msgid  "Date"
 msgstr "Ημερομηνία"
 
 #: source/datefunc/datefunc.src#RID_DATE_FUNCTION_DESCRIPTIONS.DATE_FUNCDESC_WeeksInYear.3.String.Text
-#, fuzzy
 msgid  "Any day in the desired year"
 msgstr "Οποιαδήποτε ημέρα στον επιθυμητό μήνα"
 
 #: source/datefunc/datefunc.src#RID_DATE_FUNCTION_DESCRIPTIONS.DATE_FUNCDESC_Rot13.1.String.Text
 msgid  "Encrypts or decrypts a text using the ROT13 algorithm"
-msgstr ""
+msgstr "Κρυπτογραφεί ή αποκρυπτογραφεί ένα κείμενο χρησιμοποιώντας τον αλγόριθμο ROT13"
 
 #: source/datefunc/datefunc.src#RID_DATE_FUNCTION_DESCRIPTIONS.DATE_FUNCDESC_Rot13.2.String.Text
-#, fuzzy
 msgid  "Text"
 msgstr "Κείμενο"
 
 #: source/datefunc/datefunc.src#RID_DATE_FUNCTION_DESCRIPTIONS.DATE_FUNCDESC_Rot13.3.String.Text
-#, fuzzy
 msgid  "Text to be encrypted or text already encrypted"
 msgstr "Το κείμενο που θα κρυπτογραφηθεί ή που έχει ήδη κρυπτογραφηθεί"
 
 #: source/datefunc/datefunc.src#RID_DATE_FUNCTION_NAMES.DATE_FUNCNAME_DiffWeeks.String.Text
-#, fuzzy
 msgid  "WEEKS"
 msgstr "WEEKS"
 
 #: source/datefunc/datefunc.src#RID_DATE_FUNCTION_NAMES.DATE_FUNCNAME_DiffMonths.String.Text
-#, fuzzy
 msgid  "MONTHS"
 msgstr "MONTHS"
 
 #: source/datefunc/datefunc.src#RID_DATE_FUNCTION_NAMES.DATE_FUNCNAME_DiffYears.String.Text
-#, fuzzy
 msgid  "YEARS"
 msgstr "YEARS"
 
 #: source/datefunc/datefunc.src#RID_DATE_FUNCTION_NAMES.DATE_FUNCNAME_IsLeapYear.String.Text
-#, fuzzy
 msgid  "ISLEAPYEAR"
 msgstr "ISLEAPYEAR"
 
 #: source/datefunc/datefunc.src#RID_DATE_FUNCTION_NAMES.DATE_FUNCNAME_DaysInMonth.String.Text
-#, fuzzy
 msgid  "DAYSINMONTH"
 msgstr "DAYSINMONTH"
 
 #: source/datefunc/datefunc.src#RID_DATE_FUNCTION_NAMES.DATE_FUNCNAME_DaysInYear.String.Text
-#, fuzzy
 msgid  "DAYSINYEAR"
 msgstr "DAYSINYEAR"
 
 #: source/datefunc/datefunc.src#RID_DATE_FUNCTION_NAMES.DATE_FUNCNAME_WeeksInYear.String.Text
-#, fuzzy
 msgid  "WEEKSINYEAR"
 msgstr "WEEKSINYEAR"
 
 #: source/datefunc/datefunc.src#RID_DATE_FUNCTION_NAMES.DATE_FUNCNAME_Rot13.String.Text
-#, fuzzy
 msgid  "ROT13"
 msgstr "ROT13"

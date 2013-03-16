@@ -97,7 +97,7 @@ msgstr "Δεν υπάρχει αρκετή μνήμη στοίβας."
 
 #: source/classes/sb.src#RID_BASIC_START.SbERR_PROC_UNDEFINED & ERRCODE_RES_MASK.String.Text
 msgid  "Sub-procedure or function procedure not defined."
-msgstr ""
+msgstr "Δεν καθορίστηκε υπο-διαδικασία (Sub) ή διαδικασία λειτουργίας (Function)."
 
 #: source/classes/sb.src#RID_BASIC_START.SbERR_BAD_DLL_LOAD & ERRCODE_RES_MASK.String.Text
 msgid  "Error loading DLL file."
@@ -269,7 +269,7 @@ msgstr "Η επικόλληση συνδέσμου εκτελέστηκε ήδη
 
 #: source/classes/sb.src#RID_BASIC_START.SbERR_DDE_LINK_INV_TOPIC & ERRCODE_RES_MASK.String.Text
 msgid  "Link mode cannot be set due to invalid link topic."
-msgstr ""
+msgstr "Δεν είναι δυνατόν να οριστεί η κατάσταση σύνδεσης εξαιτίας μη έγκυρων θεμάτων σύνδεσης."
 
 #: source/classes/sb.src#RID_BASIC_START.SbERR_DDE_DLL_NOT_FOUND & ERRCODE_RES_MASK.String.Text
 msgid  "DDE requires the DDEML.DLL file."
@@ -337,7 +337,7 @@ msgstr "Τα ονομαζόμενα ορίσματα δεν υποστηρίζο
 
 #: source/classes/sb.src#RID_BASIC_START.SbERR_BAD_LOCALE & ERRCODE_RES_MASK.String.Text
 msgid  "The current locale setting is not supported by the given object."
-msgstr ""
+msgstr "Οι τρέχουσες τοπικές ρυθμίσεις δεν υποστηρίζονται από αυτό το αντικείμενο."
 
 #: source/classes/sb.src#RID_BASIC_START.SbERR_NAMED_NOT_FOUND & ERRCODE_RES_MASK.String.Text
 msgid  "Named argument not found."
@@ -425,7 +425,7 @@ msgstr "Η μεταβλητή $(ARG1) έχει ήδη ορισθεί."
 
 #: source/classes/sb.src#RID_BASIC_START.SbERR_PROC_DEFINED & ERRCODE_RES_MASK.String.Text
 msgid  "Sub procedure or function procedure $(ARG1) already defined."
-msgstr ""
+msgstr "Η υπο-διαδικασία (Sub) ή η διαδικασία λειτουργίας (Function) $(ARG1) έχει ήδη ορισθεί."
 
 #: source/classes/sb.src#RID_BASIC_START.SbERR_LABEL_DEFINED & ERRCODE_RES_MASK.String.Text
 msgid  "Label $(ARG1) already defined."

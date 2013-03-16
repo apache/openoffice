@@ -33,7 +33,7 @@ msgstr ""
 
 #: source/component/warnbox.src#RID_XMLSECWB_NO_MOZILLA_PROFILE.WarningBox.Message
 msgid  "Digital signatures functionality could not be used, because no Mozilla user profile was found. Please check the Mozilla installation."
-msgstr ""
+msgstr "N'eo ket bet evit bezañ arveret ar c'heweriuster sinañ niverel rak n'eus aelad arveriad Mozilla ebet bet kavet. Gwiriit emañ Mozilla staliet mat."
 
 #: source/dialogs/macrosecurity.src#RID_XMLSECTP_MACROSEC.TabDialog.Text
 msgid  "Macro Security"
@@ -53,19 +53,19 @@ msgstr "Adderaouekaat"
 
 #: source/dialogs/macrosecurity.src#RID_XMLSECTP_SECLEVEL.RB_VERYHIGH.RadioButton.Text
 msgid  "~Very high.\nOnly macros from trusted file locations are allowed to run. All other macros, regardless whether signed or not, are disabled."
-msgstr ""
+msgstr "Li~ve diogelroez uhel kenañ. \nAr makroioù o tont eus lec'hioù restroù a fiziañs nemeto a c'hello bezañ erounezet. An holl vakroioù all, sinet pe get, a vo diweredekaet."
 
 #: source/dialogs/macrosecurity.src#RID_XMLSECTP_SECLEVEL.RB_HIGH.RadioButton.Text
 msgid  "H~igh.\nOnly signed macros from trusted sources are allowed to run. Unsigned macros are disabled."
-msgstr ""
+msgstr "L~ive diogelroez uhel. \nAr makroioù sinet o tont eus tarzhioù a fiziañs a c'hall bezañ erounezet. Diweredekaet e vo ar makroioù disinet."
 
 #: source/dialogs/macrosecurity.src#RID_XMLSECTP_SECLEVEL.RB_MEDIUM.RadioButton.Text
 msgid  "~Medium.\nConfirmation required before executing macros from untrusted sources."
-msgstr ""
+msgstr "Live diogelroez krenn. \nGoulennet e vo ur c'hadarnadur a-raok erounit ar ~makroioù o tont eus tarzhioù diziogelroezet."
 
 #: source/dialogs/macrosecurity.src#RID_XMLSECTP_SECLEVEL.RB_LOW.RadioButton.Text
 msgid  "~Low (not recommended).\nAll macros will be executed without confirmation. Use this setting only if you are certain that all documents that will be opened are safe."
-msgstr ""
+msgstr "Live dioge~lroez gwan (dialiet). \nErounezet e vo ar makroioù hep kadarnadur. Dibabit an arventenn-mañ mard oc'h sur da vat da zigeriñ teulioù diarvar nemetken."
 
 #: source/dialogs/macrosecurity.src#RID_XMLSECTP_TRUSTSOURCES.FL_TRUSTCERT.FixedLine.Text
 msgid  "Trusted certificates"
@@ -93,7 +93,7 @@ msgstr "Lec'hiadurioù restroù a fiziañs"
 
 #: source/dialogs/macrosecurity.src#RID_XMLSECTP_TRUSTSOURCES.FI_TRUSTFILELOC.FixedText.Text
 msgid  "Document macros are always executed if they have been opened from one of the following locations."
-msgstr ""
+msgstr "Atav e vo erounezet ar makroioù teul mar bezont digoret adalek unan eus al lec'hiadurioù-mañ."
 
 #: source/dialogs/macrosecurity.src#RID_XMLSECTP_TRUSTSOURCES.FL_ADD_TRUSTFILELOC.PushButton.Text
 msgid  "Add..."
@@ -125,7 +125,7 @@ msgstr "Skrammañ ar sinadurioù..."
 
 #: source/dialogs/warnings.src#RID_XMLSECTP_MACROWARN.FI_DESCR2.FixedText.Text
 msgid  "Macros may contain viruses. Disabling macros for a document is always save. If you disable macros you may lose functionality provided by the document macros."
-msgstr ""
+msgstr "Viruz zo gant ar makroioù. Suroc'h eo diweredekaat ar makroioù en teul. Mar bez diweredekaet ar makroioù ganeoc'h e vo kollet arc'hwelerezhioù moarvat."
 
 #: source/dialogs/warnings.src#RID_XMLSECTP_MACROWARN.CB_ALWAYSTRUST.CheckBox.Text
 msgid  "Always trust macros from this source"

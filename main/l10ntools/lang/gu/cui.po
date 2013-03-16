@@ -31,6 +31,10 @@ msgstr ""
 "X-Generator: genLang\n"
 
 
+#: source/customize/selector.src#FIXEDTEXT_DIALOG_DESCRIPTION.#define.Text
+msgid  "Select the library that contains the macro you want. Then select the macro under 'Macro name'."
+msgstr "લાઇબ્રેરીને પસંદ કરો કે જે તમે માંગો તે મેક્રોને સમાવે છે. પછી 'મેક્રો નામ' ની હેઠળ મેક્રોને પસંદ કરો."
+
 #: source/customize/selector.src#STR_SELECTOR_ADD_COMMANDS.String.TEXT
 msgid  "Add Commands"
 msgstr "આદેશોને ઉમેરો"
@@ -61,7 +65,7 @@ msgstr "બંધ કરો"
 
 #: source/customize/selector.src#STR_SELECTOR_ADD_COMMANDS_DESCRIPTION.String.TEXT
 msgid  "To add a command to a toolbar, select the category and then the command. Then drag the command to the Commands list of the Toolbars tab page in the Customize dialog."
-msgstr ""
+msgstr "સાધનપટ્ટીમાં આદેશને ઉમેરવા માટે, વર્ગ ને પસંદ કરો અને પછી આદેશને. પછી વૈવિધ્યપૂર્ણ થયેલ સંવાદમાં સાધનપટ્ટીઓ ટેબની આદેશોની યાદી માંથી આદેશને ખેંચો."
 
 #: source/customize/selector.src#STR_BASICMACROS.String.Text
 msgid  "BASIC Macros"
@@ -91,9 +95,41 @@ msgstr "મેક્રો નામ"
 msgid  "Description"
 msgstr "વર્ણન"
 
-#: source/customize/selector.src#FIXEDTEXT_DIALOG_DESCRIPTION.#define.Text
-msgid  "Select the library that contains the macro you want. Then select the macro under 'Macro name'."
-msgstr ""
+#: source/customize/acccfg.src#PUSHBUTTON_TEXT_SAVE.#define.Text
+msgid  "~Save..."
+msgstr "સંગ્રહો (~S)..."
+
+#: source/customize/acccfg.src#PUSHBUTTON_TEXT_RESET.#define.Text
+msgid  "R~eset"
+msgstr "ફરી ગોઠવો (~e)"
+
+#: source/customize/acccfg.src#PUSHBUTTON_TEXT_LOAD.#define.Text
+msgid  "~Load..."
+msgstr "લાવો (~L)..."
+
+#: source/customize/acccfg.src#PUSHBUTTON_TEXT_REMOVE.#define.Text
+msgid  "~Delete"
+msgstr "દૂર કરો (~D)"
+
+#: source/customize/acccfg.src#PUSHBUTTON_TEXT_CHANGE.#define.Text
+msgid  "~Modify"
+msgstr "સુધારેલ (~M)"
+
+#: source/customize/acccfg.src#PUSHBUTTON_TEXT_NEW.#define.Text
+msgid  "~New"
+msgstr "નવું (~N)"
+
+#: source/customize/acccfg.src#FIXEDTEXT_TEXT_GROUP.#define.Text
+msgid  "~Category"
+msgstr "વર્ગ (~C)"
+
+#: source/customize/acccfg.src#FIXEDTEXT_TEXT_FUNCTION.#define.Text
+msgid  "Function"
+msgstr "વિધેય"
+
+#: source/customize/acccfg.src#GROUPBOX_TEXT_FUNCTIONS.#define.Text
+msgid  "Functions"
+msgstr "વિધેયો"
 
 #: source/customize/acccfg.src#RID_SVXPAGE_KEYBOARD.GRP_ACC_KEYBOARD.FixedLine.Text
 msgid  "Shortcut keys"
@@ -134,42 +170,6 @@ msgstr "%PRODUCTNAME મેક્રો"
 #: source/customize/acccfg.src#RID_SVXPAGE_CONFIGGROUPBOX.STR_GROUP_STYLES.String.Text
 msgid  "Styles"
 msgstr "શૈલીઓ"
-
-#: source/customize/acccfg.src#PUSHBUTTON_TEXT_SAVE.#define.Text
-msgid  "~Save..."
-msgstr "સંગ્રહો (~S)..."
-
-#: source/customize/acccfg.src#PUSHBUTTON_TEXT_RESET.#define.Text
-msgid  "R~eset"
-msgstr "ફરી ગોઠવો (~e)"
-
-#: source/customize/acccfg.src#PUSHBUTTON_TEXT_LOAD.#define.Text
-msgid  "~Load..."
-msgstr "લાવો (~L)..."
-
-#: source/customize/acccfg.src#PUSHBUTTON_TEXT_REMOVE.#define.Text
-msgid  "~Delete"
-msgstr "દૂર કરો (~D)"
-
-#: source/customize/acccfg.src#PUSHBUTTON_TEXT_CHANGE.#define.Text
-msgid  "~Modify"
-msgstr "સુધારેલ (~M)"
-
-#: source/customize/acccfg.src#PUSHBUTTON_TEXT_NEW.#define.Text
-msgid  "~New"
-msgstr "નવું (~N)"
-
-#: source/customize/acccfg.src#FIXEDTEXT_TEXT_GROUP.#define.Text
-msgid  "~Category"
-msgstr "વર્ગ (~C)"
-
-#: source/customize/acccfg.src#FIXEDTEXT_TEXT_FUNCTION.#define.Text
-msgid  "Function"
-msgstr "વિધેય"
-
-#: source/customize/acccfg.src#GROUPBOX_TEXT_FUNCTIONS.#define.Text
-msgid  "Functions"
-msgstr "વિધેયો"
 
 #: source/customize/eventdlg.src#RID_SVXPAGE_EVENTS.STR_EVENT.String.Text
 msgid  "Event"
@@ -547,6 +547,50 @@ msgstr "સાધનપટ્ટીઓ"
 msgid  "Events"
 msgstr "ઘટકો"
 
+#: source/customize/cfg.src#TEXT_MENU.#define.Text
+msgid  "Menu"
+msgstr "મેનુ"
+
+#: source/customize/cfg.src#TEXT_BEGIN_GROUP.#define.Text
+msgid  "Begin a Group"
+msgstr "ગ્રુપ શરુ કરો"
+
+#: source/customize/cfg.src#TEXT_RENAME.#define.Text
+msgid  "Rename..."
+msgstr "નામને બદલો..."
+
+#: source/customize/cfg.src#TEXT_DELETE.#define.Text
+msgid  "Delete..."
+msgstr "કાઢો..."
+
+#: source/customize/cfg.src#TEXT_DELETE_NODOTS.#define.Text
+msgid  "Delete"
+msgstr "કાઢો"
+
+#: source/customize/cfg.src#TEXT_MOVE.#define.Text
+msgid  "Move..."
+msgstr "ખસેડો..."
+
+#: source/customize/cfg.src#TEXT_DEFAULT_STYLE.#define.Text
+msgid  "Restore Default Settings"
+msgstr "મૂળભૂત સુયોજનોને પુન:સંગ્રહો"
+
+#: source/customize/cfg.src#TEXT_DEFAULT_COMMAND.#define.Text
+msgid  "Restore Default Command"
+msgstr "મૂળભૂત આદેશને પુન:સંગ્રહો"
+
+#: source/customize/cfg.src#TEXT_TEXT_ONLY.#define.Text
+msgid  "Text only"
+msgstr "ફક્ત લખાણ"
+
+#: source/customize/cfg.src#TEXT_TOOLBAR_NAME.#define.Text
+msgid  "Toolbar Name"
+msgstr "સાધનપટ્ટી નામ"
+
+#: source/customize/cfg.src#TEXT_SAVE_IN.#define.Text
+msgid  "Save In"
+msgstr "માં સંગ્રહો"
+
 #: source/customize/cfg.src#RID_SVXPAGE_MENUS.GRP_MENUS.FixedLine.Text
 msgid  "%PRODUCTNAME %MODULENAME Menus"
 msgstr "%PRODUCTNAME %MODULENAME મેનુઓ"
@@ -617,7 +661,7 @@ msgstr "ઉપમેનુ નામ"
 
 #: source/customize/cfg.src#RID_SVXSTR_MENU_ADDCOMMANDS_DESCRIPTION.String.Text
 msgid  "To add a command to a menu, select the category and then the command. You can also drag the command to the Commands list of the Menus tab page in the Customize dialog."
-msgstr ""
+msgstr "મેનુમાં આદેશને ઉમેરવા માટે, વર્ગ ને પસંદ કરો અને પછી આદેશ. તમે કસ્ટમાઇઝ સંવાદમાં મેનુ ટેબ પાનાંની આદેશો યાદીમાં આદેશને પણ ખેંચી શકો છો."
 
 #: source/customize/cfg.src#MD_MENU_ORGANISER.ModalDialog.Text
 msgid  "New Menu"
@@ -649,11 +693,11 @@ msgstr "બહારથી લાવવું..."
 
 #: source/customize/cfg.src#MD_ICONSELECTOR.BTN_DELETE.PushButton.Text
 msgid  "Delete..."
-msgstr "કાઢો..."
+msgstr "દૂર કરો..."
 
 #: source/customize/cfg.src#MD_ICONSELECTOR.FT_NOTE.FixedText.Text
 msgid  "Note:\nThe size of an icon should be 16x16 pixel to achieve best quality. Different sized icons will be scaled automatically."
-msgstr ""
+msgstr "નોંધ:\nચિહ્નનું માપ સારી ગુણવત્તા મેળવવા માટે 16x16 પિક્સેલનું હોવુ જોઇએ. વિવિધ માપ થયેલ ચિહ્નો આપમેળે માપ થયેલ હશે."
 
 #: source/customize/cfg.src#MD_ICONCHANGE.ModalDialog.Text
 msgid  "%PRODUCTNAME %PRODUCTVERSION"
@@ -661,11 +705,11 @@ msgstr "%PRODUCTNAME %PRODUCTVERSION"
 
 #: source/customize/cfg.src#MD_ICONCHANGE.FTCHGE_DESCRIPTION.FixedText.Text
 msgid  "The files listed below could not be imported.\nThe file format could not be interpreted."
-msgstr ""
+msgstr "નીચે યાદી થયેલ ફાઇલોને આયાત કરી શક્યા નહિં.\nફાઇલ બંધારણનો અર્થ કાઢી શક્યા નહિં."
 
 #: source/customize/cfg.src#RID_SVXSTR_IMPORT_ICON_ERROR.String.Text
 msgid  "The files listed below could not be imported. The file format could not be interpreted."
-msgstr ""
+msgstr "નીચે યાદી થયેલ ફાઇલોને આયાત કરી શક્યા નહિં. ફાઇલ બંધારણનો અર્થ કાઢી શક્યા નહિં."
 
 #: source/customize/cfg.src#RID_SVXSTR_DELETE_ICON_CONFIRM.String.Text
 msgid  "Are you sure to delete the image?"
@@ -673,7 +717,7 @@ msgstr "શું તમે ખરેખર ઇમેજને કાઢવા �
 
 #: source/customize/cfg.src#RID_SVXSTR_REPLACE_ICON_WARNING.String.Text
 msgid  "The icon %ICONNAME is already contained in the image list.\nWould you like to replace the existing icon?"
-msgstr ""
+msgstr "ચિહ્ન %ICONNAME એ પહેલેથી જ ઇમેજ યાદીમાં સમાવેલ છે.\nશું તમને હાલનાં ચિહ્નને બદલવાનું ગમશે?"
 
 #: source/customize/cfg.src#RID_SVXSTR_REPLACE_ICON_CONFIRM.String.Text
 msgid  "Confirm Icon Replacement"
@@ -709,23 +753,23 @@ msgstr "શું તમે ખરેખર '%MENUNAME' મેનુ દુર �
 
 #: source/customize/cfg.src#QBX_CONFIRM_DELETE_TOOLBAR.QueryBox.Message
 msgid  "There are no more commands on the toolbar. Do you want to delete the toolbar?"
-msgstr ""
+msgstr "આ સાધનપટ્ટીમાં હવે કોઇ કમાંડ નથી. શું તમે સાધનપટ્ટી દુર કરવા માંગો છો?"
 
 #: source/customize/cfg.src#QBX_CONFIRM_RESET.QueryBox.Message
 msgid  "The menu configuration for %SAVE IN SELECTION% will be reset to the factory settings. Do you want to continue?"
-msgstr ""
+msgstr "%SAVE IN SELECTION% માટેનું મેનુ રૂપરેખાંકન કારખાનાં સુયોજનોમાં પુનઃસુયોજિત થઈ જશે. શું તમે ચાલુ રાખવા માંગો છો?"
 
 #: source/customize/cfg.src#RID_SVXSTR_CONFIRM_MENU_RESET.String.Text
 msgid  "The menu configuration for %SAVE IN SELECTION% will be reset to the factory settings. Do you want to continue?"
-msgstr ""
+msgstr "%SAVE IN SELECTION% માટેનું મેનુ રૂપરેખાંકન કારખાનાં સુયોજનોમાં પુનઃસુયોજિત થઈ જશે. શું તમે ચાલુ રાખવા માંગો છો?"
 
 #: source/customize/cfg.src#RID_SVXSTR_CONFIRM_TOOLBAR_RESET.String.Text
 msgid  "The toolbar configuration for %SAVE IN SELECTION% will be reset to the factory settings. Do you want to continue?"
-msgstr ""
+msgstr "આ  સાધનપટ્ટીની ગોઠવણ %SAVE IN SELECTION% બદલાઇને ફેકટરીની ગોઠવણ મુજબ થઇ રહી છે. શું તમે આગળ વધવા માંગો છો?"
 
 #: source/customize/cfg.src#QBX_CONFIRM_RESTORE_DEFAULT.QueryBox.Message
 msgid  "This will delete all changes previously made to this toolbar. Do you really want to reset the toolbar?"
-msgstr ""
+msgstr "આને કારણે તમે સાધનપટ્ટીમાં કરેલાં પાછલાં બધાં ફેરફારો જતાં રહેશે. શું તમે ખરેખર સાધનપટ્ટીને મુળ િસ્થતીમાં લાવવા માંગો છો?"
 
 #: source/customize/cfg.src#IBX_MNUCFG_ALREADY_INCLUDED.InfoBox.Message
 msgid  "Function is already included in this popup."
@@ -750,50 +794,6 @@ msgstr ""
 #: source/customize/cfg.src#BUTTON_STR_DOWN.String.Text
 msgid  "Down"
 msgstr ""
-
-#: source/customize/cfg.src#TEXT_MENU.#define.Text
-msgid  "Menu"
-msgstr "મેનુ"
-
-#: source/customize/cfg.src#TEXT_BEGIN_GROUP.#define.Text
-msgid  "Begin a Group"
-msgstr "ગ્રુપ શરુ કરો"
-
-#: source/customize/cfg.src#TEXT_RENAME.#define.Text
-msgid  "Rename..."
-msgstr "નામને બદલો..."
-
-#: source/customize/cfg.src#TEXT_DELETE.#define.Text
-msgid  "Delete..."
-msgstr "દૂર કરો..."
-
-#: source/customize/cfg.src#TEXT_DELETE_NODOTS.#define.Text
-msgid  "Delete"
-msgstr "કાઢો"
-
-#: source/customize/cfg.src#TEXT_MOVE.#define.Text
-msgid  "Move..."
-msgstr "ખસેડો..."
-
-#: source/customize/cfg.src#TEXT_DEFAULT_STYLE.#define.Text
-msgid  "Restore Default Settings"
-msgstr "મૂળભૂત સુયોજનોને પુન:સંગ્રહો"
-
-#: source/customize/cfg.src#TEXT_DEFAULT_COMMAND.#define.Text
-msgid  "Restore Default Command"
-msgstr "મૂળભૂત આદેશને પુન:સંગ્રહો"
-
-#: source/customize/cfg.src#TEXT_TEXT_ONLY.#define.Text
-msgid  "Text only"
-msgstr "ફક્ત લખાણ"
-
-#: source/customize/cfg.src#TEXT_TOOLBAR_NAME.#define.Text
-msgid  "Toolbar Name"
-msgstr "સાધનપટ્ટી નામ"
-
-#: source/customize/cfg.src#TEXT_SAVE_IN.#define.Text
-msgid  "Save In"
-msgstr "માં સંગ્રહો"
 
 #: source/dialogs/commonlingui.src#RID_SVX_WND_COMMON_LINGU.FT_WORD.FixedText.Text
 msgid  "Origi~nal"
@@ -993,24 +993,29 @@ msgid  "An error occurred while running the %LANGUAGENAME script %SCRIPTNAME."
 msgstr "ભુલ ઉદભવી જયારે %LANGUAGENAME સ્ક્રિપટ %SCRIPTNAME."
 
 #: source/dialogs/scriptdlg.src#RID_SVXSTR_EXCEPTION_RUNNING.String.Text
+#, fuzzy
 msgid  "An exception occurred while running the %LANGUAGENAME script %SCRIPTNAME."
-msgstr ""
+msgstr "અપવાદરૂપ ભુલ ઉદભવી જયારે %LANGUAGENAME સ્ક્રિપટ %SCRIPTNAME."
 
 #: source/dialogs/scriptdlg.src#RID_SVXSTR_ERROR_AT_LINE.String.Text
+#, fuzzy
 msgid  "An error occurred while running the %LANGUAGENAME script %SCRIPTNAME at line: %LINENUMBER."
-msgstr ""
+msgstr "ભુલ ઉદભવી જયારે %LANGUAGENAME સ્ક્રિપટ %SCRIPTNAME લીટી નંબર : %LINENUMBER."
 
 #: source/dialogs/scriptdlg.src#RID_SVXSTR_EXCEPTION_AT_LINE.String.Text
+#, fuzzy
 msgid  "An exception occurred while running the %LANGUAGENAME script %SCRIPTNAME at line: %LINENUMBER."
-msgstr ""
+msgstr "અપવાદરૂપ ભુલ ઉદભવી જયારે %LANGUAGENAME સ્ક્રિપટ %SCRIPTNAME લીટી નંબર : %LINENUMBER."
 
 #: source/dialogs/scriptdlg.src#RID_SVXSTR_FRAMEWORK_ERROR_RUNNING.String.Text
+#, fuzzy
 msgid  "A Scripting Framework error occurred while running the %LANGUAGENAME script %SCRIPTNAME."
-msgstr ""
+msgstr "સ્ક્રિપટીંગ ફ્રેમવકૅમાં ભુલ ઉદભવી જયારે %LANGUAGENAME સ્ક્રિપટ %SCRIPTNAME."
 
 #: source/dialogs/scriptdlg.src#RID_SVXSTR_FRAMEWORK_ERROR_AT_LINE.String.Text
+#, fuzzy
 msgid  "A Scripting Framework error occurred while running the %LANGUAGENAME script %SCRIPTNAME at line: %LINENUMBER."
-msgstr ""
+msgstr "સ્ક્રિપટીંગ ફ્રેમવકૅમાં ભુલ ઉદભવી જયારે %LANGUAGENAME સ્ક્રિપટ %SCRIPTNAME લીટી નંબર : %LINENUMBER."
 
 #: source/dialogs/scriptdlg.src#RID_SVXSTR_ERROR_TYPE_LABEL.String.Text
 #, fuzzy
@@ -1348,6 +1353,11 @@ msgstr "ફોર્મ (~o)"
 
 #: source/dialogs/hyperdlg.src#RID_SVXPAGE_HYPERLINK_INTERNET.LB_FORM.Default.StringList.item
 #, fuzzy
+msgid  "Text"
+msgstr "લખાણ"
+
+#: source/dialogs/hyperdlg.src#RID_SVXPAGE_HYPERLINK_INTERNET.LB_FORM.Default.StringList.item
+#, fuzzy
 msgid  "Button"
 msgstr "બટન"
 
@@ -1425,6 +1435,11 @@ msgstr "ફ્રેમ (~r)"
 #, fuzzy
 msgid  "F~orm"
 msgstr "ફોર્મ (~o)"
+
+#: source/dialogs/hyperdlg.src#RID_SVXPAGE_HYPERLINK_MAIL.LB_FORM.Default.StringList.item
+#, fuzzy
+msgid  "Text"
+msgstr "લખાણ"
 
 #: source/dialogs/hyperdlg.src#RID_SVXPAGE_HYPERLINK_MAIL.LB_FORM.Default.StringList.item
 #, fuzzy
@@ -1523,6 +1538,11 @@ msgstr "ફોર્મ (~o)"
 
 #: source/dialogs/hyperdlg.src#RID_SVXPAGE_HYPERLINK_DOCUMENT.LB_FORM.Default.StringList.item
 #, fuzzy
+msgid  "Text"
+msgstr "લખાણ"
+
+#: source/dialogs/hyperdlg.src#RID_SVXPAGE_HYPERLINK_DOCUMENT.LB_FORM.Default.StringList.item
+#, fuzzy
 msgid  "Button"
 msgstr "બટન"
 
@@ -1603,6 +1623,11 @@ msgstr "ફોર્મ (~o)"
 
 #: source/dialogs/hyperdlg.src#RID_SVXPAGE_HYPERLINK_NEWDOCUMENT.LB_FORM.Default.StringList.item
 #, fuzzy
+msgid  "Text"
+msgstr "લખાણ"
+
+#: source/dialogs/hyperdlg.src#RID_SVXPAGE_HYPERLINK_NEWDOCUMENT.LB_FORM.Default.StringList.item
+#, fuzzy
 msgid  "Button"
 msgstr "બટન"
 
@@ -1667,8 +1692,9 @@ msgid  "Internet"
 msgstr "ઇન્ટરનેટ"
 
 #: source/dialogs/hyperdlg.src#RID_SVXSTR_HYPERDLG_HLINETTP_HELP.String.Text
+#, fuzzy
 msgid  "This is where you create a hyperlink to a Web page, FTP server or Telnet connection."
-msgstr ""
+msgstr "અહીં તમે વેબ-પાના માટે હાઈપરલિંક બનાવી શકો છો, FTP સર્વર અથવા ટેલનેટ જોડાણથી."
 
 #: source/dialogs/hyperdlg.src#RID_SVXSTR_HYPERDLG_HLMAILTP.String.Text
 #, fuzzy
@@ -1686,8 +1712,9 @@ msgid  "Document"
 msgstr "દસ્તાવેજ"
 
 #: source/dialogs/hyperdlg.src#RID_SVXSTR_HYPERDLG_HLDOCTP_HELP.String.Text
+#, fuzzy
 msgid  "This is where you create a hyperlink to an existing document or a target within a document."
-msgstr ""
+msgstr "આ કે જ્યાં તમે અસ્તિત્વ ધરાવતા દસ્તાવેજમાં હાઇપરલિંકને બનાવો અથવા દસ્તાવેજમાં લક્ષ્ય કરો."
 
 #: source/dialogs/hyperdlg.src#RID_SVXSTR_HYPERDLG_HLDOCNTP.String.Text
 #, fuzzy
@@ -1713,26 +1740,6 @@ msgstr "લખાણ"
 #, fuzzy
 msgid  "The file already exists. Overwrite?"
 msgstr "ફાઇલ પહેલેથી અસ્તિત્વ ધરાવે છે. શું તેની પર લખવા માગો છો?"
-
-#: source/dialogs/hyperdlg.src#RID_SVXPAGE_HYPERLINK_INTERNET.LB_FORM.Default.StringList.item
-#, fuzzy
-msgid  "Text"
-msgstr "લખાણ"
-
-#: source/dialogs/hyperdlg.src#RID_SVXPAGE_HYPERLINK_MAIL.LB_FORM.Default.StringList.item
-#, fuzzy
-msgid  "Text"
-msgstr "લખાણ"
-
-#: source/dialogs/hyperdlg.src#RID_SVXPAGE_HYPERLINK_DOCUMENT.LB_FORM.Default.StringList.item
-#, fuzzy
-msgid  "Text"
-msgstr "લખાણ"
-
-#: source/dialogs/hyperdlg.src#RID_SVXPAGE_HYPERLINK_NEWDOCUMENT.LB_FORM.Default.StringList.item
-#, fuzzy
-msgid  "Text"
-msgstr "લખાણ"
 
 #: source/dialogs/passwdomdlg.src#RID_DLG_PASSWORD_TO_OPEN_MODIFY.ModalDialog.Text
 #, fuzzy
@@ -1794,16 +1801,19 @@ msgid  "Fewer ~Options"
 msgstr "થોડા વિકલ્પો (~O)"
 
 #: source/dialogs/passwdomdlg.src#RID_DLG_PASSWORD_TO_OPEN_MODIFY.STR_ONE_PASSWORD_MISMATCH.String.Text
+#, fuzzy
 msgid  "The confirmation password did not match the password. Set the password again by entering the same password in both boxes."
-msgstr ""
+msgstr "ખાતરીયુક્ત પાસવર્ડ પાસવર્ડ સાથે બંધબેસતુ નથી. બંને બોક્સોમાં એજ પાસવર્ડ દાખલ કરીને ફરીથી પાસવર્ડને સુયોજિત કરો."
 
 #: source/dialogs/passwdomdlg.src#RID_DLG_PASSWORD_TO_OPEN_MODIFY.STR_TWO_PASSWORDS_MISMATCH.String.Text
+#, fuzzy
 msgid  "The confirmation passwords did not match the original passwords. Set the passwords again."
-msgstr ""
+msgstr "ખાતરીયુક્ત પાસવર્ડો મૂળ પાસવર્ડો સાથે બંધબેસતા નથી. ફરીથી પાસવર્ડોને સુયોજિત કરો."
 
 #: source/dialogs/passwdomdlg.src#RID_DLG_PASSWORD_TO_OPEN_MODIFY.STR_INVALID_STATE_FOR_OK_BUTTON.String.Text
+#, fuzzy
 msgid  "Please enter a password to open or to modify, or check the open read-only option to continue."
-msgstr ""
+msgstr "મહેરબાની કરીને ખોલવા અથવા બદલવા માટે પાસવર્ડને દાખલ કરો, અથવા ચાલુ રાખવા માટે વાંચી શકાય તેવા વિકલ્પને ખોલવાનું ચકાસો."
 
 #: source/dialogs/grfflt.src#RID_SVX_GRFFILTER_DLG_MOSAIC.ModalDialog.Text
 #, fuzzy
@@ -2076,27 +2086,22 @@ msgid  "Close"
 msgstr "બંધ કરો"
 
 #: source/dialogs/charmap.src#RID_SVXDLG_CHARMAP.ModalDialog.Text
-#, fuzzy
 msgid  "Special Characters"
 msgstr "વિશિષ્ટ અક્ષરો"
 
 #: source/dialogs/charmap.src#RID_SVXDLG_CHARMAP.FT_FONT.FixedText.Text
-#, fuzzy
 msgid  "~Font"
 msgstr "ફોન્ટ (~F)"
 
 #: source/dialogs/charmap.src#RID_SVXDLG_CHARMAP.FT_SUBSET.FixedText.Text
-#, fuzzy
 msgid  "~Subset"
 msgstr "સબસેટ (~S)"
 
 #: source/dialogs/charmap.src#RID_SVXDLG_CHARMAP.FT_SYMBOLE.FixedText.Text
-#, fuzzy
 msgid  "Characters:"
 msgstr "અક્ષરો:"
 
 #: source/dialogs/charmap.src#RID_SVXDLG_CHARMAP.BTN_DELETE.PushButton.Text
-#, fuzzy
 msgid  "~Delete"
 msgstr "કાઢો (~D)"
 
@@ -2129,8 +2134,9 @@ msgid  "Notice"
 msgstr ""
 
 #: source/dialogs/hyphen.src#RID_SVXSTR_HMERR_CHECKINSTALL.String.Text
+#, fuzzy
 msgid  "is not available for spellchecking\nPlease check your installation and install the desired language\n"
-msgstr ""
+msgstr "જોડણી ચકાસણી માટે ઉપલબ્ધ નથી\nમહેરબાની કરીને તમારું સ્થાપન ચકાસો અને જરૂરી ભાષા સ્થાપિત કરો\n"
 
 #: source/dialogs/hyphen.src#RID_SVXDLG_HYPHENATE.ModalDialog.Text
 #, fuzzy
@@ -3002,8 +3008,9 @@ msgid  "~Book mode"
 msgstr "બુક સ્થિતિ (~B)"
 
 #: source/dialogs/showcols.src#RID_SVX_DLG_SHOWGRIDCOLUMNS.1.FixedText.Text
+#, fuzzy
 msgid  "The following columns are currently hidden. Please mark the fields you want to show and choose OK."
-msgstr ""
+msgstr "નીચેના સ્તંભો હાલ છુપાયેલા છે. મહેરબાની કરીને તમે જોવા ઈચ્છતા ક્ષેત્રો નિશાનીત કરો અને 'બરાબર' પસંદ કરો"
 
 #: source/dialogs/showcols.src#RID_SVX_DLG_SHOWGRIDCOLUMNS.CancelButton.Text
 #, fuzzy
@@ -3406,12 +3413,14 @@ msgid  "~Manual"
 msgstr "જાતે(~M)"
 
 #: source/options/optinet2.src#RID_SVXPAGE_INET_PROXY.ST_MSG_255_0.String.Text
+#, fuzzy
 msgid  "is not a valid entry for this field. Please specify a value between 0 and 255."
-msgstr ""
+msgstr "આ ક્ષેત્ર માટે યોગ્ય પ્રવેશ નથી. મહેરબાની કરીને કિંમત ૦ અને ૨૫૫ વચ્ચે સ્પષ્ટ કરો."
 
 #: source/options/optinet2.src#RID_SVXPAGE_INET_PROXY.ST_MSG_255_1.String.Text
+#, fuzzy
 msgid  "is not a valid entry for this field. Please specify a value between 1 and 255."
-msgstr ""
+msgstr "આ ક્ષેત્ર માટે યોગ્ય પ્રવેશ નથી. મહેરબાની કરીને કિંમત ૧ અને ૨૫૫ વચ્ચે સ્પષ્ટ કરો."
 
 #: source/options/optinet2.src#RID_SVXPAGE_INET_SEARCH.TabPage.Text
 #, fuzzy
@@ -3518,8 +3527,9 @@ msgid  "Security options and warnings"
 msgstr "સુરક્ષા વિકલ્પો અને ચેતવણીઓ"
 
 #: source/options/optinet2.src#RID_SVXPAGE_INET_SECURITY.FI_SEC_SECURITYOPTIONS.FixedText.Text
+#, fuzzy
 msgid  "Adjust security related options and define warnings for hidden information in documents."
-msgstr ""
+msgstr "સુરક્ષા સંબંધિત વિકલ્પોને ગોઠવો અને દસ્તાવેજોમાં છુપાયેલ જાણકારી માટે ચેતવણીઓને વ્યાખ્યાયિત કરો."
 
 #: source/options/optinet2.src#RID_SVXPAGE_INET_SECURITY.PB_SEC_SECURITYOPTIONS.PushButton.Text
 #, fuzzy
@@ -3547,8 +3557,9 @@ msgid  "Protected by a master password (recommended)"
 msgstr "મુખ્ય પાસવર્ડ દ્રારા સુરક્ષિત થયેલ છે (અગ્રહણીય)"
 
 #: source/options/optinet2.src#RID_SVXPAGE_INET_SECURITY.FI_SEC_MASTERPASSWORD.FixedText.Text
+#, fuzzy
 msgid  "Passwords are protected by a master password. You will be asked to enter it once per session, if %PRODUCTNAME retrieves a password from the protected password list."
-msgstr ""
+msgstr "પાસવર્ડો એ મુખ્ય પાસવર્ડ દ્દારા સુરક્ષિત થયેલ છે. તમે તેને એકવાર પ્રતિ સત્રમાં દાખલ કરવા માટે પૂછશો, જો %PRODUCTNAME સુરક્ષિત થયેલ પાસવર્ડ યાદી માંથી પાસવર્ડ ને મેળવવુ હોય તો."
 
 #: source/options/optinet2.src#RID_SVXPAGE_INET_SECURITY.PB_SEC_MASTERPASSWORD.PushButton.Text
 #, fuzzy
@@ -3561,8 +3572,9 @@ msgid  "Macro security"
 msgstr "મેક્રો સુરક્ષા"
 
 #: source/options/optinet2.src#RID_SVXPAGE_INET_SECURITY.FI_SEC_MACROSEC.FixedText.Text
+#, fuzzy
 msgid  "Adjust the security level for executing macros and specify trusted macro developers."
-msgstr ""
+msgstr "મેક્રો ચલાવવા માટે સુરક્ષાનું સ્તર યોગ્ય કરો અને વિષ્વાસુ મેક્રો વિકાસ કરનારાઓ જણાવો."
 
 #: source/options/optinet2.src#RID_SVXPAGE_INET_SECURITY.PB_SEC_MACROSEC.PushButton.Text
 #, fuzzy
@@ -3570,16 +3582,19 @@ msgid  "Macro Security..."
 msgstr "મેક્રો સુરક્ષા..."
 
 #: source/options/optinet2.src#RID_SVXPAGE_INET_SECURITY.STR_SEC_NOPASSWDSAVE.String.Text
+#, fuzzy
 msgid  "Disabling the function to persistently store passwords deletes the list of passwords stored and resets the master password.\n\nDo you want to delete password list and reset master password?"
-msgstr ""
+msgstr "સંગ્રહ થયેલ પાસવર્ડોની યાદી ને દૂર કરવા માટે નિરંતર પાસવર્ડો ને સંગ્રહવા વિધેય ને નિષ્ક્રિય કરી રહ્યા છે અને મુખ્ય પાસવર્ડ ને ફરી સુયોજિત કરો.\n\nશું તમે પાસવર્ડ ને દૂર કરવા માંગો છો અને મુખ્ય પાસવર્ડને ફરી સુયોજિત કરવા માંગો છો?"
 
 #: source/options/optinet2.src#RID_SVXERR_OPT_PROXYPORTS.ErrorBox.Message
+#, fuzzy
 msgid  "Invalid value!\n\nThe maximum value for a port number is 65535."
-msgstr ""
+msgstr "અયોગ્ય કિંમત!\n\nપોર્ટ નંબરની મહત્તમ કિંમત 65535 છે."
 
 #: source/options/optinet2.src#RID_SVXDLG_OPT_JAVASCRIPT_DISABLE.FT_JSCPT_WARNING.FixedText.Text
+#, fuzzy
 msgid  "Please note that with Java\nyou disable Javascript as well.\n\nDo you still want to disable Java?"
-msgstr ""
+msgstr "મહેરબાની કરીને નોંધ કરો કે Java સાથે\nતમે Javascript પણ નિષ્ક્રિય કરો.\n\nશું તમે હજુ પણ Java નિષ્ક્રિય કરવા માંગો છો?"
 
 #: source/options/optinet2.src#RID_SVXDLG_OPT_JAVASCRIPT_DISABLE.CB_JSCPT_DISABLE.CheckBox.Text
 #, fuzzy
@@ -3677,8 +3692,9 @@ msgid  "City/State/Zip"
 msgstr "શહેર/રાજ્ય/પીનકોડ"
 
 #: source/options/optgenrl.src#RID_SFXPAGE_GENERAL.STR_QUERY_REG.String.Text
+#, fuzzy
 msgid  "Note that street, Zip code and city are used to generate the registration key. You will not be able to change the user data again until the registration has been carried out. Do you want to modify the user data now?"
-msgstr ""
+msgstr "નોંધ કરો કે, નોંધણી કળ બનાવવા માટે શેરી, પિનકોડ અને શહેર વપરાય છે.નોંધણી થઈ ન જાય ત્યાં સુધી તમે વપરાશકર્તાની માહિતીમાં ફેરફાર કરવા માટે સક્ષમ નથી.શું તમે વપરાશકર્તાની માહિતીમાં ફેરફાર કરવા ઈચ્છો છો?"
 
 #: source/options/optgenrl.src#RID_SVXQB_CHANGEDATA.QueryBox.Message
 msgid  "The User Data have been changed.\nDo you really want to change your User Data?"
@@ -4260,16 +4276,19 @@ msgid  "Create Database Link"
 msgstr "ડેટાબેઝ કડીને બનાવો"
 
 #: source/options/doclinkdialog.src#STR_LINKEDDOC_DOESNOTEXIST.String.Text
+#, fuzzy
 msgid  "The file\n$file$\ndoes not exist."
-msgstr ""
+msgstr "ફાઇલ\n$file$\nઅસ્તિત્વ ધરાવતુ નથી."
 
 #: source/options/doclinkdialog.src#STR_LINKEDDOC_NO_SYSTEM_FILE.String.Text
+#, fuzzy
 msgid  "The file\n$file$\ndoes not exist in the local file system."
-msgstr ""
+msgstr "ફાઇલ\n$file$\nસ્થાનિય ફાઇલ સિસ્ટમમાં અસ્તિત્વ ધરાવતી નથી."
 
 #: source/options/doclinkdialog.src#STR_NAME_CONFLICT.String.Text
+#, fuzzy
 msgid  "The name '$file$' is already used for another database.\nPlease choose a different name."
-msgstr ""
+msgstr "નામ '$file$' પહેલેથી બીજા ડેટાબેઝ માટે વપરાયેલ છે.\nમહેરબાની કરીને અલગ નામ ને પસંદ કરો."
 
 #: source/options/doclinkdialog.src#QUERY_DELETE_CONFIRM.QueryBox.Message
 #, fuzzy
@@ -4292,52 +4311,64 @@ msgid  "The selected module could not be loaded."
 msgstr "પસંદિત મોડ્યુલ લાવી શકાયું નહિ."
 
 #: source/options/treeopt.src#RID_OFADLG_OPTIONS_TREE.STR_HELPTEXTS.SID_GENERAL_OPTIONS.ItemList.item
+#, fuzzy
 msgid  "This dialog is used to define general settings when working with %PRODUCTNAME. Enter your personal data, the defaults to be used when saving documents, and paths to important files. These settings will be saved automatically and used in later sessions as well."
-msgstr ""
+msgstr "%PRODUCTNAME સાથે કામ કરતી વખતે આ સંવાદ સામાન્ય સુયોજનો વ્યાખ્યાયિત કરવા માટે વપરાય છે. તમારી ખાનગી માહિતી દાખલ કરો, મૂળભુતો દસ્તાવેજોનો સંગ્રહ કરતી વખતે વપરાય છે, અને પથ ખાનગી ફાઈલો માટે વપરાય છે. સુયોજનો આપમેળે સંગ્રહાઈ જાય છે અને પછીના વિભાગોમાં પણ વપરાય છે."
 
 #: source/options/treeopt.src#RID_OFADLG_OPTIONS_TREE.STR_HELPTEXTS.SID_LANGUAGE_OPTIONS.ItemList.item
+#, fuzzy
 msgid  "This is where you make settings concerning language and writing aids for your work with %PRODUCTNAME."
-msgstr ""
+msgstr "આ જગ્યા છે જ્યાં તમે તમારી ભાષાને લગતા સુયોજનો કરી શકો છો અને %PRODUCTNAME સાથે કામ કરવાની વધારાની મદદો મેળવી શકો છો."
 
 #: source/options/treeopt.src#RID_OFADLG_OPTIONS_TREE.STR_HELPTEXTS.SID_INET_DLG.ItemList.item
+#, fuzzy
 msgid  "This is where you configure %PRODUCTNAME for the Internet. You can define search engines or save your proxy settings."
-msgstr ""
+msgstr "આ જગ્યા છે કે જ્યાં તમે તમારા ઈન્ટરનેટ માટે %PRODUCTNAME રુપરેખાંકિત કરી શકો. તમે શોધ યંત્રો વ્યાખ્યાયિત કરી શકો અને તમારા પ્રોક્સી સુયોજનો સંગ્રહી શકો છો."
 
 #: source/options/treeopt.src#RID_OFADLG_OPTIONS_TREE.STR_HELPTEXTS.SID_SW_EDITOPTIONS.ItemList.item
+#, fuzzy
 msgid  "This is where you specify various settings for text documents. These settings determine how your text documents are handled in %PRODUCTNAME and are valid for all new %PRODUCTNAME Writer documents. You can also define a few settings for the active text document if you save it afterwards."
-msgstr ""
+msgstr "આ જગ્યા છે કે જ્યાં તમે તમારા લખાણના દસ્તાવેજો માટે ઘણા સુયોજનો સ્પષ્ટ કરી શકો છો. આ સુયોજનો તમારા લખાણના દસ્તાવેજો %PRODUCTNAME માં કેવી રીતે નિયંત્રિત થશે અને તેઓ નવા %PRODUCTNAME લખાણના દસ્તાવેજો માટે યોગ્ય છે કે નહિં તે નક્કી કરે છે. જે તમે પછી પણ તેનો સંગ્રહ કરો તો તમે સક્રિય લખાણના દસ્તાવેજ માટે થોડા સુયોજનો પણ કરી શકો છો."
 
 #: source/options/treeopt.src#RID_OFADLG_OPTIONS_TREE.STR_HELPTEXTS.SID_SW_ONLINEOPTIONS.ItemList.item
+#, fuzzy
 msgid  "This is where you define the basic settings for %PRODUCTNAME documents in HTML format. For example, you decide which contents should be displayed on the screen or printed, how the pages are scrolled on the screen, in which color keywords are highlighted in the source text and much more."
-msgstr ""
+msgstr "આ જગ્યા છે કે જ્યાં તમે %PRODUCTNAME દસ્તાવેજો માટે સામાન્ય સુયોજનો HTML માળખામાં છે. ઉદાહરણ તરીકે, તમે નક્કી કરો કે કયા સમાવિષ્ટો સ્ક્રીન પર દેખાશે કે છપાશે, પાનાઓ કેવી રીતે સ્ક્રીન પર સરકશે, કયા કલરમાં કીવર્ડો પ્રકાશિત થશે સ્રોત લખાણનાં અને બીજુ ઘણું બધું."
 
 #: source/options/treeopt.src#RID_OFADLG_OPTIONS_TREE.STR_HELPTEXTS.SID_SC_EDITOPTIONS.ItemList.item
+#, fuzzy
 msgid  "This is where you define various global settings for spreadsheets. For example, you can define which contents should be displayed and in which direction the cursor will move after you enter data in a cell. You also define sort lists, the number of the decimal places displayed, etc."
-msgstr ""
+msgstr "આ જગ્યા છે કે જ્યાં તમારી સ્પ્રેડશીટ માટે ઘણા ઉમદા સુયોજનો તમે વ્યાખ્યાયિત કરી શકો છો. ઉદાહરણ તરીકે, તમે વ્યાખ્યાયિત કરી શકો છો કે કયા સમાવિષ્ટો પ્રદર્શિત થશે અને કઈ દિશામાં કર્સર ખશસે તમારા ખાનામાં માહિતી દાખલ કર્યા પછી. તમે ક્રમાંકિત યાદીઓ પણ વ્યાખ્યાયિત કરી શકો છો, પ્રદર્શિત દશાંશ સ્થળોની સંખ્યા, વગેરે."
 
 #: source/options/treeopt.src#RID_OFADLG_OPTIONS_TREE.STR_HELPTEXTS.SID_SD_EDITOPTIONS.ItemList.item
+#, fuzzy
 msgid  "This is where you define the settings that apply to all newly saved presentations. Among other things, you decide which contents are displayed on the slides, which default unit of measure is used, if and how grid alignment is used, and if notes and handouts are always printed."
-msgstr ""
+msgstr "આ જગ્યા છે કે જ્યાં તમે દરેક નવા સંગ્રહિત રજૂઆતો પર અમલમાં મૂકાતી સુયોજનો વ્યાખ્યાયિત કરી શકો છો. બીજી બધી બાબતોમાંથી, તમે નક્કી કરો કે કયા સમાવિષ્ટો સ્લાઈડ પર દેખાશો, માપનનો કયો એકમ વપરાશે, જાળીની ગોઠવણી વપરાશે અને કેવી રીતે, અને શું નોંધો અને લખાણો હંમેશા છપાશે."
 
 #: source/options/treeopt.src#RID_OFADLG_OPTIONS_TREE.STR_HELPTEXTS.SID_SD_GRAPHIC_OPTIONS.ItemList.item
+#, fuzzy
 msgid  "This is where you define the settings for drawing documents. Among other things, you determine which contents are displayed on the pages, which scale is used, if and how grid alignment is used, and which contents are printed by default."
-msgstr ""
+msgstr "આ જગ્યા છે કે જ્યાં તમે દોરવાના દસ્તાવેજો માટે સુયોજનો વ્યાખ્યાયિત કરી શકો છો. બીજી બધી બાબતોમાં, તમે નક્કી કરી શકો છો કે કયા સમાવિષ્ટો પાનાઓ પર પ્રદર્શિત થશે, કયું માપ વપરાશે, શું જળીની ગોઠવણી વપરાશે અને કેવી રીતે, અને કયા સમાવિષ્ટો મૂળભુત રીતે છપાશે."
 
 #: source/options/treeopt.src#RID_OFADLG_OPTIONS_TREE.STR_HELPTEXTS.SID_SM_EDITOPTIONS.ItemList.item
+#, fuzzy
 msgid  "This is where you select the print format and print options for all newly saved formula documents. These options take effect when you want to print a formula directly from %PRODUCTNAME Math."
-msgstr ""
+msgstr "આ જગ્યા છે કે જ્યાં તમે બધા નવા સંગ્રહિત સમીકરણવાળા દસ્તાવેજો માટે છાપવાનું બંધારણ અને છાપવાના વિકલ્પો પસંદ કરી શકો છો. આ વિકલ્પો ત્યારે જ અસર કરશે જ્યારે તમને સમીકરણ સીધું જ %PRODUCTNAME ગણિતમાંથી છાપવાનું હશે."
 
 #: source/options/treeopt.src#RID_OFADLG_OPTIONS_TREE.STR_HELPTEXTS.SID_SCH_EDITOPTIONS.ItemList.item
+#, fuzzy
 msgid  "This is where you specify general default settings for your %PRODUCTNAME Charts. Set the colors you want for all new charts."
-msgstr ""
+msgstr "આ જગ્યા છે કે જ્યાં તમે તમારા %PRODUCTNAME આલેખો માટે સામાન્ય મૂળભુત સુયોજનો સ્પષ્ટ કરી શકો છો. બધા નવા આલેખો કે જેની તમને જરુર છે તેના માટે રંગો પસંદ કરો."
 
 #: source/options/treeopt.src#RID_OFADLG_OPTIONS_TREE.STR_HELPTEXTS.SID_SB_STARBASEOPTIONS.ItemList.item
+#, fuzzy
 msgid  "This is where you define general settings for accessing external data sources."
-msgstr ""
+msgstr "આ જગ્યા છે કે જ્યાં તમે બાહ્ય માહિતી સ્રોતોને ચલાવવા માટે સામાન્ય સુયોજનો વ્યાખ્યાયિત કરી શકો છો."
 
 #: source/options/treeopt.src#RID_OFADLG_OPTIONS_TREE.STR_HELPTEXTS.SID_FILTER_DLG.ItemList.item
+#, fuzzy
 msgid  "This is where you define general settings for opening and saving documents in external formats. You can control the behavior of macros or OLE objects in Microsoft Office documents or define settings for HTML documents."
-msgstr ""
+msgstr "આ જગ્યા છે કે જ્યાં તમે દસ્તાવેજો બાહ્ય બંધારણમાં ખોલવા અને સંગ્રહવા માટે વ્યાખ્યાયિત કરી શકો છો. તમે માઈક્રોસોફ્ટ ઓફિસ દસ્તાવેજમાં મેક્રોની વર્તણૂક અથવા OLE વસ્તુઓનું નિયંત્રણ કરી શકો છો અથવા HTML દસ્તાવેજો માટે સુયોજનો વ્યાખ્યાયિત કરી શકો છો."
 
 #: source/options/treeopt.src#RID_OFADLG_OPTIONS_TREE_PAGES.SID_GENERAL_OPTIONS.0.ItemList.item
 #, fuzzy
@@ -4477,7 +4508,7 @@ msgstr "સામાન્ય"
 #: source/options/treeopt.src#RID_OFADLG_OPTIONS_TREE_PAGES.SID_SW_EDITOPTIONS.RID_SW_TP_CONTENT_OPT.ItemList.item
 #, fuzzy
 msgid  "View"
-msgstr "દર્શાવો "
+msgstr "દર્શાવો"
 
 #: source/options/treeopt.src#RID_OFADLG_OPTIONS_TREE_PAGES.SID_SW_EDITOPTIONS.RID_SW_TP_OPTSHDWCRSR.ItemList.item
 #, fuzzy
@@ -4924,75 +4955,73 @@ msgid  "~Remove"
 msgstr "દૂર કરો (~R)"
 
 #: source/options/optjava.src#RID_SVXERR_JRE_NOT_RECOGNIZED.ErrorBox.Message
+#, fuzzy
 msgid  "The folder you selected does not contain a Java runtime environment.\nPlease select a different folder."
-msgstr ""
+msgstr "તમે પસંદ કરેલ છે તે ફોલ્ડર Java runtime environment ને સમાવતુ નથી.\nમહેરબાની કરીને વિવિધ ફોલ્ડરને પસંદ કરો."
 
 #: source/options/optjava.src#RID_SVXERR_JRE_FAILED_VERSION.ErrorBox.Message
+#, fuzzy
 msgid  "The Java runtime environment you selected is not the required version.\nPlease select a different folder."
-msgstr ""
+msgstr "Java runtime environment નું તમે પસંદ કરેલ છે તે જરૂરી આવૃત્તિ નથી.\nમહેરબાની કરીને વિવિધ ફોલ્ડરને પસંદ કરો."
 
 #: source/options/optjava.src#RID_SVX_MSGBOX_JAVA_RESTART.WarningBox.Message
+#, fuzzy
 msgid  "For the selected Java runtime environment to work properly, %PRODUCTNAME must be restarted.\nPlease restart %PRODUCTNAME now."
-msgstr ""
+msgstr "યોગ્ય રીતે કામ કરવા માટે પસંદ થયેલ Java runtime environment માટે, %PRODUCTNAME ને પુન:શરૂ કરવુ જ પડશે.\nમહેરબાની કરીને હવે %PRODUCTNAME ને પુન:શરૂ કરો."
 
 #: source/options/optjava.src#RID_SVX_MSGBOX_JAVA_RESTART2.WarningBox.Message
+#, fuzzy
 msgid  "You have to restart %PRODUCTNAME so the new or modified values can take effect.\nPlease restart %PRODUCTNAME now."
-msgstr ""
+msgstr "તમારે %PRODUCTNAME ને પુન:શરૂ કરવુ જ પડશે તેથી નવી અને બદલાયેલ કિંમતો અસર કરી શકે છે.\nમહેરબાની કરીને હવે %PRODUCTNAME ને પુન:શરૂ કરો."
 
 #: source/options/connpooloptions.src#RID_OFAPAGE_CONNPOOLOPTIONS.FL_POOLING.FixedLine.Text
-#, fuzzy
 msgid  "Connection pool"
 msgstr "સાંકળવાનું જોડાણ"
 
 #: source/options/connpooloptions.src#RID_OFAPAGE_CONNPOOLOPTIONS.CB_POOL_CONNS.CheckBox.Text
-#, fuzzy
 msgid  "Connection pooling enabled"
 msgstr "સાંકળવાનો જોડાણ સક્રિય છે"
 
 #: source/options/connpooloptions.src#RID_OFAPAGE_CONNPOOLOPTIONS.FT_DRIVERS.FixedText.Text
-#, fuzzy
 msgid  "Drivers known in %PRODUCTNAME"
 msgstr "%PRODUCTNAME માં જાણીતા ડ્રાઇવર"
 
 #: source/options/connpooloptions.src#RID_OFAPAGE_CONNPOOLOPTIONS.FT_DRIVERLABEL.FixedText.Text
-#, fuzzy
 msgid  "Current driver:"
 msgstr "વર્તમાન ડ્રાઇવર:"
 
 #: source/options/connpooloptions.src#RID_OFAPAGE_CONNPOOLOPTIONS.CB_DRIVERPOOLING.CheckBox.Text
-#, fuzzy
 msgid  "Enable pooling for this driver"
 msgstr "આ ડ્રાઇવર માટે જોડાણ કરવાનુ સક્રિય કરો"
 
 #: source/options/connpooloptions.src#RID_OFAPAGE_CONNPOOLOPTIONS.FT_TIMEOUT.FixedText.Text
-#, fuzzy
 msgid  "Timeout (seconds)"
 msgstr "સમય પૂરો (સેકંડો)"
 
 #: source/options/connpooloptions.src#RID_OFAPAGE_CONNPOOLOPTIONS.STR_DRIVER_NAME.String.Text
-#, fuzzy
 msgid  "Driver name"
 msgstr "ડ્રાઇવર નામ"
 
 #: source/options/connpooloptions.src#RID_OFAPAGE_CONNPOOLOPTIONS.STR_POOLED_FLAG.String.Text
-#, fuzzy
 msgid  "Pool"
 msgstr "જોડાણ"
 
 #: source/options/connpooloptions.src#RID_OFAPAGE_CONNPOOLOPTIONS.STR_POOL_TIMEOUT.String.Text
-#, fuzzy
 msgid  "Timeout"
 msgstr "સમય પૂરો"
 
 #: source/options/connpooloptions.src#RID_OFAPAGE_CONNPOOLOPTIONS.STR_YES.String.Text
-#, fuzzy
 msgid  "Yes"
 msgstr "હા"
 
 #: source/options/connpooloptions.src#RID_OFAPAGE_CONNPOOLOPTIONS.STR_NO.String.Text
-#, fuzzy
 msgid  "No"
 msgstr "ના"
+
+#: source/options/optsave.src#TEXT_SAVEPAGE.#define.Text
+#, fuzzy
+msgid  "Save"
+msgstr "સંગ્રહો"
 
 #: source/options/optsave.src#RID_SFXPAGE_SAVE.LB_LOAD.FixedLine.Text
 #, fuzzy
@@ -5130,13 +5159,9 @@ msgid  "Not using ODF 1.2 Extended may cause infomation to be lost."
 msgstr "ODF 1.2 ને ન વિસ્તારીએ તો જાણકારીનું ગુમ થવાનું કારણ થઇ શકે છે."
 
 #: source/options/optsave.src#RID_SVXDLG_FILTER_WARNING.FT_FILTER_WARNING.FixedText.Text
-msgid  "Using "%1" as default file format may cause information loss.\n"
-msgstr ""
-
-#: source/options/optsave.src#TEXT_SAVEPAGE.#define.Text
 #, fuzzy
-msgid  "Save"
-msgstr "સંગ્રહો"
+msgid  "Using \"%1\" as default file format may cause information loss.\n"
+msgstr "\"%1\" ને મૂળભૂત બંધારણ તરીકે વાપરવાનું જાણકારી નષ્ટ થઈ જવામાં પરિણમી શકે.\n"
 
 #: source/options/optimprove.src#RID_SVXPAGE_IMPROVEMENT.TabPage.Text
 #, fuzzy
@@ -5149,12 +5174,14 @@ msgid  "Improvement Program"
 msgstr "સુધારા પ્રક્રિયા"
 
 #: source/options/optimprove.src#RID_SVXPAGE_IMPROVEMENT.FT_INVITATION.FixedText.Text
+#, fuzzy
 msgid  "We invite you to join our %PRODUCTNAME Improvement Program to help optimize the quality of %PRODUCTNAME.\n\nIf you are willing to participate, we will collect anonymous statistics about how you use %PRODUCTNAME. The data is used to identify usage patterns.\n\nThe %PRODUCTNAME Improvement Program will not collect any personal data, or document content."
-msgstr ""
+msgstr "અમે %PRODUCTNAME ની ગુણવત્તાને શ્રેષ્ટ કરવા મદદ કરવા માટે અમારી %PRODUCTNAME સુધારા પ્રક્રિયા સાથે જોડાવા માટે તમને આમંત્રણ આપે છે.\n\nજો તમે ભાગ લેવા માટે આતુર હોય તો, કેવી રીતે %PRODUCTNAME ને વાપરો તે વિશે નામ વગરની પરિસ્થિતિ ને અમે ભેગી કરીશું. માહિતી એ વપરાશ નમૂનાઓને ઓળખવા માટે વપરાયેલ છે.\n\n%PRODUCTNAME સુધારા પ્રક્રિયા એ કોઇપણ વ્યક્તિગત માહિતીને ભેગી કરશે નહિં, અથવા દસ્તાવેજ સમાવિષ્ટ."
 
 #: source/options/optimprove.src#RID_SVXPAGE_IMPROVEMENT.RB_YES.RadioButton.Text
+#, fuzzy
 msgid  "~Yes, I am willing to participate in the %PRODUCTNAME Improvement Program"
-msgstr ""
+msgstr "હા, હું આતુરતાથી %PRODUCTNAME સુધારા પ્રક્રિયામાં ભાગ લેવા માંગુ છુ"
 
 #: source/options/optimprove.src#RID_SVXPAGE_IMPROVEMENT.RB_NO.RadioButton.Text
 #, fuzzy
@@ -5292,8 +5319,9 @@ msgid  "Edit Paths: %1"
 msgstr "પાથોમાં ફેરફાર કરો: %1"
 
 #: source/options/optpath.src#RID_SVXERR_OPT_DOUBLEPATHS.ErrorBox.Message
+#, fuzzy
 msgid  "The configuration and mail directories must be specified as separate directories.\nPlease choose a new path."
-msgstr ""
+msgstr "રૂપરેખાંકન અને મેઈલ ડિરેક્ટરીઓ અલગ ડિરેક્ટરીઓ તરીકે સ્પષ્ટ થયેલ હોવી જ જોઈએ.\nમહેરબાની કરીને નવો પાથ પસંદ કરો."
 
 #: source/options/optpath.src#RID_SVXSTR_KEY_CONFIG_DIR.String.Text
 #, fuzzy
@@ -5531,8 +5559,9 @@ msgid  "Document status"
 msgstr "દસ્તાવેજ સ્થિતિ"
 
 #: source/options/optgdlg.src#OFA_TP_MISC.CB_DOCSTATUS.CheckBox.Text
-msgid  "~Printing sets "document modified" status"
-msgstr ""
+#, fuzzy
+msgid  "~Printing sets \"document modified\" status"
+msgstr "\"document modified\" સ્થિતિ છાપી રહ્યા છીએ"
 
 #: source/options/optgdlg.src#OFA_TP_MISC.FL_TWOFIGURE.FixedLine.Text
 #, fuzzy
@@ -5597,7 +5626,7 @@ msgstr "મોટું"
 #: source/options/optgdlg.src#OFA_TP_VIEW.LB_ICONSTYLE.item1.StringList.item
 #, fuzzy
 msgid  "Automatic"
-msgstr "આપમેળે"
+msgstr "આપોઆપ"
 
 #: source/options/optgdlg.src#OFA_TP_VIEW.LB_ICONSTYLE.item2.StringList.item
 #, fuzzy
@@ -5823,8 +5852,9 @@ msgid  "Show UI elements for B~i-Directional writing"
 msgstr ""
 
 #: source/options/optgdlg.src#RID_SVX_MSGBOX_LANGUAGE_RESTART.InfoBox.Message
+#, fuzzy
 msgid  "The language setting of the user interface has been updated and will take effect the next time you start %PRODUCTNAME %PRODUCTVERSION"
-msgstr ""
+msgstr "વપરાશકર્તા ઇન્ટરફેસનું ભાષા સુયોજનને સુધારી દેવામાં આવ્યુ છે અને પછીથી તેની અસર થશે જ્યારે તમે %PRODUCTNAME %PRODUCTVERSION ને શરૂ કરો"
 
 #: source/options/optspell.src#RID_SFXPAGE_SPELL.TabPage.Text
 #, fuzzy
@@ -6007,8 +6037,9 @@ msgid  "~Close"
 msgstr "બંધ કરો(~C)"
 
 #: source/options/optdict.src#RID_SVXSTR_OPT_DOUBLE_DICTS.String.Text
+#, fuzzy
 msgid  "The specified name already exists.\nPlease enter a new name."
-msgstr ""
+msgstr "સ્પષ્ટ થયેલ નામ પહેલાથી જ હાજર છે.\nમહેરબાની કરીને નવું નામ દાખલ કરો."
 
 #: source/options/optdict.src#RID_SFXQB_SET_LANGUAGE.QueryBox.Message
 #, fuzzy
@@ -6230,17 +6261,14 @@ msgid  "Registered databases"
 msgstr "ડેટાબેઝો રજીસ્ટર થયેલ છે"
 
 #: source/options/dbregister.src#RID_SFXPAGE_DBREGISTER.FT_TYPE.FixedText.Text
-#, fuzzy
 msgid  "Registered name"
 msgstr "રજિસ્ટડૅ નામ"
 
 #: source/options/dbregister.src#RID_SFXPAGE_DBREGISTER.FT_PATH.FixedText.Text
-#, fuzzy
 msgid  "Database file"
 msgstr "ડેટાબેઝ ફાઇલ"
 
 #: source/options/dbregister.src#RID_SFXPAGE_DBREGISTER.BTN_NEW.PushButton.Text
-#, fuzzy
 msgid  "~New..."
 msgstr "નવું(~N)..."
 
@@ -6420,8 +6448,9 @@ msgid  "Security warnings"
 msgstr "સુરક્ષા ચેતવણીઓ"
 
 #: source/options/securityoptions.src#RID_SVXDLG_SECURITY_OPTIONS.FI_WARNINGS.FixedText.Text
+#, fuzzy
 msgid  "Warn if document contains recorded changes, versions, hidden information or notes:"
-msgstr ""
+msgstr "ચેતવણી જો દસ્તાવેજ એ અહેવાલ થયેલ બદલાવો, આવૃત્તિઓ, છુપાયેલ જાણકારી અથવા નોંધોને સમાવે છે:"
 
 #: source/options/securityoptions.src#RID_SVXDLG_SECURITY_OPTIONS.CB_SAVESENDDOCS.CheckBox.Text
 #, fuzzy
@@ -6730,6 +6759,31 @@ msgstr "પ્રકાર (~p)"
 
 #: source/tabpages/tabarea.src#RID_SVXPAGE_TRANSPARENCE.LB_TRGR_GRADIENT_TYPES.Default.StringList.item
 #, fuzzy
+msgid  "Linear"
+msgstr "એકસરખું"
+
+#: source/tabpages/tabarea.src#RID_SVXPAGE_TRANSPARENCE.LB_TRGR_GRADIENT_TYPES.Default.StringList.item
+#, fuzzy
+msgid  "Axial"
+msgstr "અક્ષીય"
+
+#: source/tabpages/tabarea.src#RID_SVXPAGE_TRANSPARENCE.LB_TRGR_GRADIENT_TYPES.Default.StringList.item
+#, fuzzy
+msgid  "Radial"
+msgstr "ત્રિજ્યા"
+
+#: source/tabpages/tabarea.src#RID_SVXPAGE_TRANSPARENCE.LB_TRGR_GRADIENT_TYPES.Default.StringList.item
+#, fuzzy
+msgid  "Ellipsoid"
+msgstr "દીર્ઘવૃત્તીય"
+
+#: source/tabpages/tabarea.src#RID_SVXPAGE_TRANSPARENCE.LB_TRGR_GRADIENT_TYPES.Default.StringList.item
+#, fuzzy
+msgid  "Quadratic"
+msgstr "વર્ગાત્મક"
+
+#: source/tabpages/tabarea.src#RID_SVXPAGE_TRANSPARENCE.LB_TRGR_GRADIENT_TYPES.Default.StringList.item
+#, fuzzy
 msgid  "Square"
 msgstr "ચોરસ"
 
@@ -6782,6 +6836,26 @@ msgstr "વિસ્તાર"
 #, fuzzy
 msgid  "Fill"
 msgstr "ભરો"
+
+#: source/tabpages/tabarea.src#RID_SVXPAGE_AREA.LB_AREA_TYPE.Default.StringList.item
+#, fuzzy
+msgid  "None"
+msgstr "કંઇ નહિં"
+
+#: source/tabpages/tabarea.src#RID_SVXPAGE_AREA.LB_AREA_TYPE.Default.StringList.item
+#, fuzzy
+msgid  "Color"
+msgstr "રંગ"
+
+#: source/tabpages/tabarea.src#RID_SVXPAGE_AREA.LB_AREA_TYPE.Default.StringList.item
+#, fuzzy
+msgid  "Gradient"
+msgstr "ઢાળ"
+
+#: source/tabpages/tabarea.src#RID_SVXPAGE_AREA.LB_AREA_TYPE.Default.StringList.item
+#, fuzzy
+msgid  "Hatching"
+msgstr "હેચીંગ"
 
 #: source/tabpages/tabarea.src#RID_SVXPAGE_AREA.LB_AREA_TYPE.Default.StringList.item
 #, fuzzy
@@ -6935,6 +7009,16 @@ msgstr "લીટી પ્રકાર (~L)"
 
 #: source/tabpages/tabarea.src#RID_SVXPAGE_HATCH.LB_LINE_TYPE.Default.StringList.item
 #, fuzzy
+msgid  "Single"
+msgstr "એક"
+
+#: source/tabpages/tabarea.src#RID_SVXPAGE_HATCH.LB_LINE_TYPE.Default.StringList.item
+#, fuzzy
+msgid  "Crossed"
+msgstr "ક્રોસ થયેલ"
+
+#: source/tabpages/tabarea.src#RID_SVXPAGE_HATCH.LB_LINE_TYPE.Default.StringList.item
+#, fuzzy
 msgid  "Triple"
 msgstr "ત્રણગણું"
 
@@ -7045,6 +7129,31 @@ msgstr "પ્રકાર (~p)"
 
 #: source/tabpages/tabarea.src#RID_SVXPAGE_GRADIENT.LB_GRADIENT_TYPES.Default.StringList.item
 #, fuzzy
+msgid  "Linear"
+msgstr "એકસરખું"
+
+#: source/tabpages/tabarea.src#RID_SVXPAGE_GRADIENT.LB_GRADIENT_TYPES.Default.StringList.item
+#, fuzzy
+msgid  "Axial"
+msgstr "અક્ષીય"
+
+#: source/tabpages/tabarea.src#RID_SVXPAGE_GRADIENT.LB_GRADIENT_TYPES.Default.StringList.item
+#, fuzzy
+msgid  "Radial"
+msgstr "ત્રિજ્યા"
+
+#: source/tabpages/tabarea.src#RID_SVXPAGE_GRADIENT.LB_GRADIENT_TYPES.Default.StringList.item
+#, fuzzy
+msgid  "Ellipsoid"
+msgstr "દીર્ઘવૃત્તીય"
+
+#: source/tabpages/tabarea.src#RID_SVXPAGE_GRADIENT.LB_GRADIENT_TYPES.Default.StringList.item
+#, fuzzy
+msgid  "Square"
+msgstr "ચોરસ"
+
+#: source/tabpages/tabarea.src#RID_SVXPAGE_GRADIENT.LB_GRADIENT_TYPES.Default.StringList.item
+#, fuzzy
 msgid  "Rectangular"
 msgstr "લંબચોરસ"
 
@@ -7135,6 +7244,11 @@ msgstr "રંગ કોષ્ટક"
 
 #: source/tabpages/tabarea.src#RID_SVXPAGE_COLOR.LB_COLORMODEL.Default.StringList.item
 #, fuzzy
+msgid  "RGB"
+msgstr "RGB"
+
+#: source/tabpages/tabarea.src#RID_SVXPAGE_COLOR.LB_COLORMODEL.Default.StringList.item
+#, fuzzy
 msgid  "CMYK"
 msgstr "CMYK"
 
@@ -7215,91 +7329,6 @@ msgstr ""
 #: source/tabpages/tabarea.src#STR_CUI_COLORMODEL.String.Text
 msgid  "Color Mode"
 msgstr ""
-
-#: source/tabpages/tabarea.src#RID_SVXPAGE_TRANSPARENCE.LB_TRGR_GRADIENT_TYPES.Default.StringList.item
-#, fuzzy
-msgid  "Linear"
-msgstr "એકસરખું"
-
-#: source/tabpages/tabarea.src#RID_SVXPAGE_TRANSPARENCE.LB_TRGR_GRADIENT_TYPES.Default.StringList.item
-#, fuzzy
-msgid  "Axial"
-msgstr "અક્ષીય"
-
-#: source/tabpages/tabarea.src#RID_SVXPAGE_TRANSPARENCE.LB_TRGR_GRADIENT_TYPES.Default.StringList.item
-#, fuzzy
-msgid  "Radial"
-msgstr "ત્રિજ્યા"
-
-#: source/tabpages/tabarea.src#RID_SVXPAGE_TRANSPARENCE.LB_TRGR_GRADIENT_TYPES.Default.StringList.item
-#, fuzzy
-msgid  "Ellipsoid"
-msgstr "દીર્ઘવૃત્તીય"
-
-#: source/tabpages/tabarea.src#RID_SVXPAGE_TRANSPARENCE.LB_TRGR_GRADIENT_TYPES.Default.StringList.item
-#, fuzzy
-msgid  "Quadratic"
-msgstr "વર્ગાત્મક"
-
-#: source/tabpages/tabarea.src#RID_SVXPAGE_AREA.LB_AREA_TYPE.Default.StringList.item
-#, fuzzy
-msgid  "None"
-msgstr "કંઇ નહિં"
-
-#: source/tabpages/tabarea.src#RID_SVXPAGE_AREA.LB_AREA_TYPE.Default.StringList.item
-#, fuzzy
-msgid  "Color"
-msgstr "રંગ"
-
-#: source/tabpages/tabarea.src#RID_SVXPAGE_AREA.LB_AREA_TYPE.Default.StringList.item
-#, fuzzy
-msgid  "Gradient"
-msgstr "ઢાળ"
-
-#: source/tabpages/tabarea.src#RID_SVXPAGE_AREA.LB_AREA_TYPE.Default.StringList.item
-#, fuzzy
-msgid  "Hatching"
-msgstr "હેચીંગ"
-
-#: source/tabpages/tabarea.src#RID_SVXPAGE_HATCH.LB_LINE_TYPE.Default.StringList.item
-#, fuzzy
-msgid  "Single"
-msgstr "એક"
-
-#: source/tabpages/tabarea.src#RID_SVXPAGE_HATCH.LB_LINE_TYPE.Default.StringList.item
-#, fuzzy
-msgid  "Crossed"
-msgstr "ક્રોસ થયેલ"
-
-#: source/tabpages/tabarea.src#RID_SVXPAGE_GRADIENT.LB_GRADIENT_TYPES.Default.StringList.item
-#, fuzzy
-msgid  "Linear"
-msgstr "એકસરખું"
-
-#: source/tabpages/tabarea.src#RID_SVXPAGE_GRADIENT.LB_GRADIENT_TYPES.Default.StringList.item
-#, fuzzy
-msgid  "Axial"
-msgstr "અક્ષીય"
-
-#: source/tabpages/tabarea.src#RID_SVXPAGE_GRADIENT.LB_GRADIENT_TYPES.Default.StringList.item
-#, fuzzy
-msgid  "Radial"
-msgstr "ત્રિજ્યા"
-
-#: source/tabpages/tabarea.src#RID_SVXPAGE_GRADIENT.LB_GRADIENT_TYPES.Default.StringList.item
-#, fuzzy
-msgid  "Ellipsoid"
-msgstr "દીર્ઘવૃત્તીય"
-
-#: source/tabpages/tabarea.src#RID_SVXPAGE_GRADIENT.LB_GRADIENT_TYPES.Default.StringList.item
-#, fuzzy
-msgid  "Square"
-msgstr "ચોરસ"
-
-#: source/tabpages/tabarea.src#RID_SVXPAGE_COLOR.LB_COLORMODEL.Default.StringList.item
-#, fuzzy
-msgid  "RGB"
-msgstr "RGB"
 
 #: source/tabpages/frmdirlbox.src#RID_SVXSTR_FRAMEDIR_LTR.String.Text
 #, fuzzy
@@ -7418,6 +7447,21 @@ msgstr "પાનાનો દેખાવ"
 
 #: source/tabpages/page.src#RID_SVXPAGE_PAGE.LB_LAYOUT.Default.StringList.item
 #, fuzzy
+msgid  "Right and left"
+msgstr "જમણુંં અને ડાબુંં"
+
+#: source/tabpages/page.src#RID_SVXPAGE_PAGE.LB_LAYOUT.Default.StringList.item
+#, fuzzy
+msgid  "Mirrored"
+msgstr "પ્રતિબિંબિત"
+
+#: source/tabpages/page.src#RID_SVXPAGE_PAGE.LB_LAYOUT.Default.StringList.item
+#, fuzzy
+msgid  "Only right"
+msgstr "ફ્કત જમણુંં"
+
+#: source/tabpages/page.src#RID_SVXPAGE_PAGE.LB_LAYOUT.Default.StringList.item
+#, fuzzy
 msgid  "Only left"
 msgstr "ફ્કત ડાબુંં"
 
@@ -7425,6 +7469,31 @@ msgstr "ફ્કત ડાબુંં"
 #, fuzzy
 msgid  "For~mat"
 msgstr "બંધારણ(~m)"
+
+#: source/tabpages/page.src#RID_SVXPAGE_PAGE.LB_NUMBER_FORMAT.Default.StringList.item
+#, fuzzy
+msgid  "A, B, C, ..."
+msgstr "A, B, C..."
+
+#: source/tabpages/page.src#RID_SVXPAGE_PAGE.LB_NUMBER_FORMAT.Default.StringList.item
+#, fuzzy
+msgid  "a, b, c, ..."
+msgstr "a, b, c, ..."
+
+#: source/tabpages/page.src#RID_SVXPAGE_PAGE.LB_NUMBER_FORMAT.Default.StringList.item
+#, fuzzy
+msgid  "I, II, III, ..."
+msgstr "I, II, III, ... "
+
+#: source/tabpages/page.src#RID_SVXPAGE_PAGE.LB_NUMBER_FORMAT.Default.StringList.item
+#, fuzzy
+msgid  "i, ii, iii, ..."
+msgstr "i, ii, iii, ... "
+
+#: source/tabpages/page.src#RID_SVXPAGE_PAGE.LB_NUMBER_FORMAT.Default.StringList.item
+#, fuzzy
+msgid  "1, 2, 3, ..."
+msgstr "૧, ૨, ૩, ..."
 
 #: source/tabpages/page.src#RID_SVXPAGE_PAGE.LB_NUMBER_FORMAT.Default.StringList.item
 #, fuzzy
@@ -7472,8 +7541,9 @@ msgid  "O~uter"
 msgstr "બહારનું (~u)"
 
 #: source/tabpages/page.src#RID_SVXPAGE_PAGE.STR_QUERY_PRINTRANGE.String.Text
+#, fuzzy
 msgid  "The margin settings are out of print range.\n\nDo you still want to apply these settings?"
-msgstr ""
+msgstr "હાંસિય સુયોજનો છાપન વિસ્તારની બહાર છે.\n\nશું તમે હજુ પણ સુયોજનો લાગુ કરવા માંગો છો?"
 
 #: source/tabpages/page.src#RID_SVXSTRARY_PAPERSIZE_STD.PAPERSIZE_A6.ItemList.item
 msgid  "A6"
@@ -7758,46 +7828,6 @@ msgstr "Dia સ્લાઇડ"
 msgid  "Screen"
 msgstr "સ્ક્રીન"
 
-#: source/tabpages/page.src#RID_SVXPAGE_PAGE.LB_LAYOUT.Default.StringList.item
-#, fuzzy
-msgid  "Right and left"
-msgstr "જમણુંં અને ડાબુંં"
-
-#: source/tabpages/page.src#RID_SVXPAGE_PAGE.LB_LAYOUT.Default.StringList.item
-#, fuzzy
-msgid  "Mirrored"
-msgstr "પ્રતિબિંબિત"
-
-#: source/tabpages/page.src#RID_SVXPAGE_PAGE.LB_LAYOUT.Default.StringList.item
-#, fuzzy
-msgid  "Only right"
-msgstr "ફ્કત જમણુંં"
-
-#: source/tabpages/page.src#RID_SVXPAGE_PAGE.LB_NUMBER_FORMAT.Default.StringList.item
-#, fuzzy
-msgid  "A, B, C, ..."
-msgstr "A, B, C..."
-
-#: source/tabpages/page.src#RID_SVXPAGE_PAGE.LB_NUMBER_FORMAT.Default.StringList.item
-#, fuzzy
-msgid  "a, b, c, ..."
-msgstr "a, b, c, ..."
-
-#: source/tabpages/page.src#RID_SVXPAGE_PAGE.LB_NUMBER_FORMAT.Default.StringList.item
-#, fuzzy
-msgid  "I, II, III, ..."
-msgstr "I, II, III, ... "
-
-#: source/tabpages/page.src#RID_SVXPAGE_PAGE.LB_NUMBER_FORMAT.Default.StringList.item
-#, fuzzy
-msgid  "i, ii, iii, ..."
-msgstr "i, ii, iii, ... "
-
-#: source/tabpages/page.src#RID_SVXPAGE_PAGE.LB_NUMBER_FORMAT.Default.StringList.item
-#, fuzzy
-msgid  "1, 2, 3, ..."
-msgstr "૧, ૨, ૩, ..."
-
 #: source/tabpages/numfmt.src#RID_SVXPAGE_NUMBERFORMAT.TabPage.Text
 #, fuzzy
 msgid  "Number Format"
@@ -7807,6 +7837,56 @@ msgstr "નંબર બંધારણ"
 #, fuzzy
 msgid  "~Category"
 msgstr "વર્ગ (~C)"
+
+#: source/tabpages/numfmt.src#RID_SVXPAGE_NUMBERFORMAT.LB_CATEGORY.Default.StringList.item
+#, fuzzy
+msgid  "All"
+msgstr "બધા"
+
+#: source/tabpages/numfmt.src#RID_SVXPAGE_NUMBERFORMAT.LB_CATEGORY.Default.StringList.item
+#, fuzzy
+msgid  "User-defined"
+msgstr "વપરાશકર્તા-વ્યાખ્યાયિત થયેલ"
+
+#: source/tabpages/numfmt.src#RID_SVXPAGE_NUMBERFORMAT.LB_CATEGORY.Default.StringList.item
+#, fuzzy
+msgid  "Number"
+msgstr "નંબર"
+
+#: source/tabpages/numfmt.src#RID_SVXPAGE_NUMBERFORMAT.LB_CATEGORY.Default.StringList.item
+#, fuzzy
+msgid  "Percent"
+msgstr "ટકા"
+
+#: source/tabpages/numfmt.src#RID_SVXPAGE_NUMBERFORMAT.LB_CATEGORY.Default.StringList.item
+#, fuzzy
+msgid  "Currency"
+msgstr "ચલણ"
+
+#: source/tabpages/numfmt.src#RID_SVXPAGE_NUMBERFORMAT.LB_CATEGORY.Default.StringList.item
+#, fuzzy
+msgid  "Date"
+msgstr "તારીખ"
+
+#: source/tabpages/numfmt.src#RID_SVXPAGE_NUMBERFORMAT.LB_CATEGORY.Default.StringList.item
+#, fuzzy
+msgid  "Time"
+msgstr "સમય"
+
+#: source/tabpages/numfmt.src#RID_SVXPAGE_NUMBERFORMAT.LB_CATEGORY.Default.StringList.item
+#, fuzzy
+msgid  "Scientific"
+msgstr "વૈજ્ઞાનિક"
+
+#: source/tabpages/numfmt.src#RID_SVXPAGE_NUMBERFORMAT.LB_CATEGORY.Default.StringList.item
+#, fuzzy
+msgid  "Fraction"
+msgstr "ફ્રેક્શન"
+
+#: source/tabpages/numfmt.src#RID_SVXPAGE_NUMBERFORMAT.LB_CATEGORY.Default.StringList.item
+#, fuzzy
+msgid  "Boolean Value"
+msgstr "બુલિયન કિંમત"
 
 #: source/tabpages/numfmt.src#RID_SVXPAGE_NUMBERFORMAT.LB_CATEGORY.Default.StringList.item
 #, fuzzy
@@ -7882,56 +7962,6 @@ msgstr "ટિપ્પણીમાં ફેરફાર કરો"
 #, fuzzy
 msgid  "Automatic"
 msgstr "આપોઆપ"
-
-#: source/tabpages/numfmt.src#RID_SVXPAGE_NUMBERFORMAT.LB_CATEGORY.Default.StringList.item
-#, fuzzy
-msgid  "All"
-msgstr "બધા"
-
-#: source/tabpages/numfmt.src#RID_SVXPAGE_NUMBERFORMAT.LB_CATEGORY.Default.StringList.item
-#, fuzzy
-msgid  "User-defined"
-msgstr "વપરાશકર્તા-વ્યાખ્યાયિત થયેલ"
-
-#: source/tabpages/numfmt.src#RID_SVXPAGE_NUMBERFORMAT.LB_CATEGORY.Default.StringList.item
-#, fuzzy
-msgid  "Number"
-msgstr "નંબર"
-
-#: source/tabpages/numfmt.src#RID_SVXPAGE_NUMBERFORMAT.LB_CATEGORY.Default.StringList.item
-#, fuzzy
-msgid  "Percent"
-msgstr "ટકા"
-
-#: source/tabpages/numfmt.src#RID_SVXPAGE_NUMBERFORMAT.LB_CATEGORY.Default.StringList.item
-#, fuzzy
-msgid  "Currency"
-msgstr "ચલણ"
-
-#: source/tabpages/numfmt.src#RID_SVXPAGE_NUMBERFORMAT.LB_CATEGORY.Default.StringList.item
-#, fuzzy
-msgid  "Date"
-msgstr "તારીખ"
-
-#: source/tabpages/numfmt.src#RID_SVXPAGE_NUMBERFORMAT.LB_CATEGORY.Default.StringList.item
-#, fuzzy
-msgid  "Time"
-msgstr "સમય"
-
-#: source/tabpages/numfmt.src#RID_SVXPAGE_NUMBERFORMAT.LB_CATEGORY.Default.StringList.item
-#, fuzzy
-msgid  "Scientific"
-msgstr "વૈજ્ઞાનિક"
-
-#: source/tabpages/numfmt.src#RID_SVXPAGE_NUMBERFORMAT.LB_CATEGORY.Default.StringList.item
-#, fuzzy
-msgid  "Fraction"
-msgstr "ફ્રેક્શન"
-
-#: source/tabpages/numfmt.src#RID_SVXPAGE_NUMBERFORMAT.LB_CATEGORY.Default.StringList.item
-#, fuzzy
-msgid  "Boolean Value"
-msgstr "બુલિયન કિંમત"
 
 #: source/tabpages/numpages.src#RID_SVXPAGE_PICK_BULLET.FL_VALUES.FixedLine.Text
 #, fuzzy
@@ -8433,6 +8463,11 @@ msgstr "જગ્યા છોડો(~p)"
 msgid  "~Bottom"
 msgstr "નીચે (~B)"
 
+#: source/tabpages/backgrnd.src#UNLINKED_IMAGE.#define.Text
+#, fuzzy
+msgid  "Unlinked graphic"
+msgstr "કડી ન થયેલ ગ્રાફીક"
+
 #: source/tabpages/backgrnd.src#RID_SVXPAGE_BACKGROUND.TabPage.Text
 #, fuzzy
 msgid  "Background"
@@ -8442,6 +8477,11 @@ msgstr "પાશ્ર્વ ભાગ"
 #, fuzzy
 msgid  "A~s"
 msgstr "તરીકે (~s)"
+
+#: source/tabpages/backgrnd.src#RID_SVXPAGE_BACKGROUND.LB_SELECTOR.Default.StringList.item
+#, fuzzy
+msgid  "Color"
+msgstr "રંગ"
 
 #: source/tabpages/backgrnd.src#RID_SVXPAGE_BACKGROUND.LB_SELECTOR.Default.StringList.item
 #, fuzzy
@@ -8537,16 +8577,6 @@ msgstr "પૂર્વદર્શન(~v)"
 #, fuzzy
 msgid  "Find graphics"
 msgstr "ગ્રાફિક્સ શોધો"
-
-#: source/tabpages/backgrnd.src#UNLINKED_IMAGE.#define.Text
-#, fuzzy
-msgid  "Unlinked graphic"
-msgstr "કડી ન થયેલ ગ્રાફીક"
-
-#: source/tabpages/backgrnd.src#RID_SVXPAGE_BACKGROUND.LB_SELECTOR.Default.StringList.item
-#, fuzzy
-msgid  "Color"
-msgstr "રંગ"
 
 #: source/tabpages/macroass.src#RID_SVXPAGE_EVENTASSIGN.TabPage.Text
 #, fuzzy
@@ -8974,8 +9004,9 @@ msgid  "C~ollect words"
 msgstr "શબ્દો ભેગા કરો(~o)"
 
 #: source/tabpages/autocdlg.src#RID_OFAPAGE_AUTOCOMPLETE_OPTIONS.CB_REMOVE_LIST.CheckBox.Text
+#, fuzzy
 msgid  "~When closing a document, remove the words collected from it from the list"
-msgstr ""
+msgstr "જ્યારે દસ્તાવેજને બંધ કરી રહ્યા હોય ત્યારે, યાદીમાંથી તે માંથી ભેગા થયેલ શબ્દોને દૂર કરો (~W)"
 
 #: source/tabpages/autocdlg.src#RID_OFAPAGE_AUTOCOMPLETE_OPTIONS.FT_EXPAND_KEY.FixedText.Text
 #, fuzzy
@@ -9033,8 +9064,9 @@ msgid  "Do you want to delete the gradient?"
 msgstr "શું તમે ઢાળને કાઢી નાખવા માગો છો?"
 
 #: source/tabpages/strings.src#RID_SVXSTR_ASK_CHANGE_GRADIENT.String.Text
+#, fuzzy
 msgid  "The gradient was modified without saving. \nModify the selected gradient or add a new gradient."
-msgstr ""
+msgstr "ઢાળ સંગ્રહ્યા વિના સુધારાયેલ હતો. \nપસંદ કરેલ ઢાળ સુધારો અથવા નવો ઢાળ ઉમેરો."
 
 #: source/tabpages/strings.src#RID_SVXSTR_DESC_NEW_BITMAP.String.Text
 #, fuzzy
@@ -9052,8 +9084,9 @@ msgid  "Are you sure you want to delete the bitmap?"
 msgstr "ನಿಶ್ಚಿತವಾಗಿಯೂશું તમે ખરેખર બીટમેપને દુર કરવા માંગો છો?"
 
 #: source/tabpages/strings.src#RID_SVXSTR_ASK_CHANGE_BITMAP.String.Text
+#, fuzzy
 msgid  "The bitmap was modified without saving. \nModify the selected bitmap or add a new bitmap."
-msgstr ""
+msgstr "બીટમેપ સંગ્રહ્યા વિના સુધારાયેલ હતો. \nપસંદ કરેલ બીટમેપ સુધારો અથવા નવો બીટમેપ ઉમેરો."
 
 #: source/tabpages/strings.src#RID_SVXSTR_DESC_LINESTYLE.String.Text
 #, fuzzy
@@ -9066,8 +9099,9 @@ msgid  "Do you want to delete the line style?"
 msgstr "શું તમે લીટીની શૈલીને કાઢી નાખવા માગો છો?"
 
 #: source/tabpages/strings.src#RID_SVXSTR_ASK_CHANGE_LINESTYLE.String.Text
+#, fuzzy
 msgid  "The line style was modified without saving. \nModify the selected line style or add a new line style."
-msgstr ""
+msgstr "લીટી શૈલી સંગ્રહ્યા વિના સુધારાયેલ હતી. \nપસંદ કરેલ લીટી શૈલી સુધારો અથવા નવી લીટી શૈલી ઉમેરો."
 
 #: source/tabpages/strings.src#RID_SVXSTR_DESC_HATCH.String.Text
 #, fuzzy
@@ -9080,8 +9114,9 @@ msgid  "Do you want to delete the hatching?"
 msgstr "હેચિંગ કાઢી નાંખવા ઈચ્છો છો?"
 
 #: source/tabpages/strings.src#RID_SVXSTR_ASK_CHANGE_HATCH.String.Text
+#, fuzzy
 msgid  "The hatching type was modified but not saved. \nModify the selected hatching type or add a new hatching type."
-msgstr ""
+msgstr "હેચીંગ પ્રકાર સંગ્રહ્યા વિના સુધારાયેલ હતો. \nપસંદ કરેલ હેચીંગ પ્રકાર સુધારો અથવા નવો હેચીંગ પ્રકાર ઉમેરો."
 
 #: source/tabpages/strings.src#RID_SVXSTR_CHANGE.String.Text
 #, fuzzy
@@ -9104,8 +9139,9 @@ msgid  "Do you want to delete the color?"
 msgstr "શું તમે રંગ કાઢી નાંખવા ઈચ્છો છો?"
 
 #: source/tabpages/strings.src#RID_SVXSTR_ASK_CHANGE_COLOR.String.Text
+#, fuzzy
 msgid  "The color was modified without saving.\nModify the selected color or add a new color."
-msgstr ""
+msgstr "સંગ્રહ્યા વિના રંગ સુધારાયેલ હતો.\nપસંદ કરેલ રંગ સુધારો અથવા નવો રંગ ઉમેરો."
 
 #: source/tabpages/strings.src#RID_SVXSTR_TABLE.String.Text
 #, fuzzy
@@ -9123,12 +9159,14 @@ msgid  "The file could not be loaded!"
 msgstr "ફાઇલ લાવી શકાતી નથી!"
 
 #: source/tabpages/strings.src#RID_SVXSTR_WARN_TABLE_OVERWRITE.String.Text
+#, fuzzy
 msgid  "The list was modified without saving. Would you like to save the list now?"
-msgstr ""
+msgstr "યાદીનો સંગ્રહ થયા વિના ફેરફાર થયો હતો. શું તમે યાદીનો હાલ સંગ્રહ કરવા ઈચ્છો છો?"
 
 #: source/tabpages/strings.src#RID_SVXSTR_WARN_NAME_DUPLICATE.String.Text
+#, fuzzy
 msgid  "The name you have entered already exists. \nPlease choose another name."
-msgstr ""
+msgstr "તમે દાખલ કરેલ નામ પહેલાથી જ હાજર છે. \nમહેરબાની કરીને અન્ય નામ દાખલ કરો."
 
 #: source/tabpages/strings.src#RID_SVXSTR_DESC_LINEEND.String.Text
 #, fuzzy
@@ -9141,8 +9179,9 @@ msgid  "Do you want to delete the arrowhead?"
 msgstr "શું તમે તીરનું મથાળું કાઢી નાંખવા ઈચ્છો છો?"
 
 #: source/tabpages/strings.src#RID_SVXSTR_ASK_CHANGE_LINEEND.String.Text
+#, fuzzy
 msgid  "The arrowhead was modified without saving.\nWould you like to save the arrowhead now?"
-msgstr ""
+msgstr "તીરમથાળું સંગ્રહ્યા વિના સુધારાયેલ હતું.\nશું તમે તીરમથાળું હમણાં સંગ્રહવા માંગો છો?"
 
 #: source/tabpages/paragrph.src#RID_SVXPAGE_STD_PARAGRAPH.TabPage.Text
 #, fuzzy
@@ -9188,6 +9227,31 @@ msgstr "ફકરાની નીચે"
 #, fuzzy
 msgid  "Spacing"
 msgstr "જગ્યા છોડો"
+
+#: source/tabpages/paragrph.src#RID_SVXPAGE_STD_PARAGRAPH.LB_LINEDIST.Default.StringList.item
+#, fuzzy
+msgid  "Single"
+msgstr "એક જ"
+
+#: source/tabpages/paragrph.src#RID_SVXPAGE_STD_PARAGRAPH.LB_LINEDIST.Default.StringList.item
+#, fuzzy
+msgid  "1.5 lines"
+msgstr "૧.૫ લીટીઓ"
+
+#: source/tabpages/paragrph.src#RID_SVXPAGE_STD_PARAGRAPH.LB_LINEDIST.Default.StringList.item
+#, fuzzy
+msgid  "Double"
+msgstr "બમણું"
+
+#: source/tabpages/paragrph.src#RID_SVXPAGE_STD_PARAGRAPH.LB_LINEDIST.Default.StringList.item
+#, fuzzy
+msgid  "Proportional"
+msgstr "સંપ્રમાણ"
+
+#: source/tabpages/paragrph.src#RID_SVXPAGE_STD_PARAGRAPH.LB_LINEDIST.Default.StringList.item
+#, fuzzy
+msgid  "At least"
+msgstr "ઓછામાં ઓછુ"
 
 #: source/tabpages/paragrph.src#RID_SVXPAGE_STD_PARAGRAPH.LB_LINEDIST.Default.StringList.item
 #, fuzzy
@@ -9263,6 +9327,21 @@ msgstr "જમણું/નીચેનું (~t)"
 #, fuzzy
 msgid  "~Last line"
 msgstr "છેલ્લી લીટી(~L)"
+
+#: source/tabpages/paragrph.src#RID_SVXPAGE_ALIGN_PARAGRAPH.LB_LASTLINE.Default.StringList.item
+#, fuzzy
+msgid  "Default"
+msgstr "મૂળભૂત"
+
+#: source/tabpages/paragrph.src#RID_SVXPAGE_ALIGN_PARAGRAPH.LB_LASTLINE.Default.StringList.item
+#, fuzzy
+msgid  "Left"
+msgstr "ડાબુ"
+
+#: source/tabpages/paragrph.src#RID_SVXPAGE_ALIGN_PARAGRAPH.LB_LASTLINE.Default.StringList.item
+#, fuzzy
+msgid  "Centered"
+msgstr "મધ્યમાં"
 
 #: source/tabpages/paragrph.src#RID_SVXPAGE_ALIGN_PARAGRAPH.LB_LASTLINE.Default.StringList.item
 #, fuzzy
@@ -9473,46 +9552,6 @@ msgstr "ઉદાહરણ"
 msgid  "Page Style"
 msgstr ""
 
-#: source/tabpages/paragrph.src#RID_SVXPAGE_STD_PARAGRAPH.LB_LINEDIST.Default.StringList.item
-#, fuzzy
-msgid  "Single"
-msgstr "એક જ"
-
-#: source/tabpages/paragrph.src#RID_SVXPAGE_STD_PARAGRAPH.LB_LINEDIST.Default.StringList.item
-#, fuzzy
-msgid  "1.5 lines"
-msgstr "૧.૫ લીટીઓ"
-
-#: source/tabpages/paragrph.src#RID_SVXPAGE_STD_PARAGRAPH.LB_LINEDIST.Default.StringList.item
-#, fuzzy
-msgid  "Double"
-msgstr "બમણું"
-
-#: source/tabpages/paragrph.src#RID_SVXPAGE_STD_PARAGRAPH.LB_LINEDIST.Default.StringList.item
-#, fuzzy
-msgid  "Proportional"
-msgstr "સંપ્રમાણ"
-
-#: source/tabpages/paragrph.src#RID_SVXPAGE_STD_PARAGRAPH.LB_LINEDIST.Default.StringList.item
-#, fuzzy
-msgid  "At least"
-msgstr "ઓછામાં ઓછુ"
-
-#: source/tabpages/paragrph.src#RID_SVXPAGE_ALIGN_PARAGRAPH.LB_LASTLINE.Default.StringList.item
-#, fuzzy
-msgid  "Default"
-msgstr "મૂળભૂત"
-
-#: source/tabpages/paragrph.src#RID_SVXPAGE_ALIGN_PARAGRAPH.LB_LASTLINE.Default.StringList.item
-#, fuzzy
-msgid  "Left"
-msgstr "ડાબુ"
-
-#: source/tabpages/paragrph.src#RID_SVXPAGE_ALIGN_PARAGRAPH.LB_LASTLINE.Default.StringList.item
-#, fuzzy
-msgid  "Centered"
-msgstr "મધ્યમાં"
-
 #: source/tabpages/textanim.src#RID_SVXPAGE_TEXTANIMATION.TabPage.Text
 #, fuzzy
 msgid  "Animation"
@@ -9527,6 +9566,26 @@ msgstr "લખાણ એનીમેશન અસર"
 #, fuzzy
 msgid  "E~ffect"
 msgstr "અસર(~f)"
+
+#: source/tabpages/textanim.src#RID_SVXPAGE_TEXTANIMATION.LB_EFFECT.Default.StringList.item
+#, fuzzy
+msgid  "No Effect"
+msgstr "કોઈ અસર નથી"
+
+#: source/tabpages/textanim.src#RID_SVXPAGE_TEXTANIMATION.LB_EFFECT.Default.StringList.item
+#, fuzzy
+msgid  "Blink"
+msgstr "જબુકવુ"
+
+#: source/tabpages/textanim.src#RID_SVXPAGE_TEXTANIMATION.LB_EFFECT.Default.StringList.item
+#, fuzzy
+msgid  "Scroll Through"
+msgstr "થી સરકાવો"
+
+#: source/tabpages/textanim.src#RID_SVXPAGE_TEXTANIMATION.LB_EFFECT.Default.StringList.item
+#, fuzzy
+msgid  "Scroll Back and Forth"
+msgstr "આગળ પાછળ સરકાવો"
 
 #: source/tabpages/textanim.src#RID_SVXPAGE_TEXTANIMATION.LB_EFFECT.Default.StringList.item
 #, fuzzy
@@ -9617,26 +9676,6 @@ msgstr "લખાણ"
 #, fuzzy
 msgid  "Text Animation"
 msgstr "લખાણ એનીમેશન"
-
-#: source/tabpages/textanim.src#RID_SVXPAGE_TEXTANIMATION.LB_EFFECT.Default.StringList.item
-#, fuzzy
-msgid  "No Effect"
-msgstr "કોઈ અસર નથી"
-
-#: source/tabpages/textanim.src#RID_SVXPAGE_TEXTANIMATION.LB_EFFECT.Default.StringList.item
-#, fuzzy
-msgid  "Blink"
-msgstr "જબુકવુ"
-
-#: source/tabpages/textanim.src#RID_SVXPAGE_TEXTANIMATION.LB_EFFECT.Default.StringList.item
-#, fuzzy
-msgid  "Scroll Through"
-msgstr "થી સરકાવો"
-
-#: source/tabpages/textanim.src#RID_SVXPAGE_TEXTANIMATION.LB_EFFECT.Default.StringList.item
-#, fuzzy
-msgid  "Scroll Back and Forth"
-msgstr "આગળ પાછળ સરકાવો"
 
 #: source/tabpages/measure.src#RID_SVXPAGE_MEASURE.TabPage.Text
 #, fuzzy
@@ -10038,6 +10077,11 @@ msgstr "ખૂણો (~A)"
 msgid  " degrees"
 msgstr " અંશો"
 
+#: source/tabpages/transfrm.src#_POS_SIZE_TEXT.#define.Text
+#, fuzzy
+msgid  "Position and Size"
+msgstr "સ્થાન અને માપ"
+
 #: source/tabpages/transfrm.src#RID_SVXDLG_TRANSFORM.TabDialog.Text
 #, fuzzy
 msgid  "Position and Size"
@@ -10052,11 +10096,6 @@ msgstr "ફેરવો"
 #, fuzzy
 msgid  "Slant & Corner Radius"
 msgstr "ઢાળ અને ખૂણાની ત્રિજ્યા"
-
-#: source/tabpages/transfrm.src#_POS_SIZE_TEXT.#define.Text
-#, fuzzy
-msgid  "Position and Size"
-msgstr "સ્થાન અને માપ"
 
 #: source/tabpages/textattr.src#RID_SVXPAGE_TEXTATTR.TabPage.Text
 #, fuzzy
@@ -10209,32 +10248,26 @@ msgid  "Alignment"
 msgstr "ગોઠવણી"
 
 #: source/tabpages/align.src#RID_SVXPAGE_ALIGNMENT.FL_ALIGNMENT.FixedLine.Text
-#, fuzzy
 msgid  "Text alignment"
 msgstr "લખાણની ગોઠવણી"
 
 #: source/tabpages/align.src#RID_SVXPAGE_ALIGNMENT.FT_HORALIGN.FixedText.Text
-#, fuzzy
 msgid  "Hori~zontal"
 msgstr "આડુ (~z)"
 
 #: source/tabpages/align.src#RID_SVXPAGE_ALIGNMENT.LB_HORALIGN.ALIGNDLG_HORALIGN_STD.StringList.item
-#, fuzzy
 msgid  "Default"
 msgstr "મૂળભૂત"
 
 #: source/tabpages/align.src#RID_SVXPAGE_ALIGNMENT.LB_HORALIGN.ALIGNDLG_HORALIGN_LEFT.StringList.item
-#, fuzzy
 msgid  "Left"
 msgstr "ડાબુ"
 
 #: source/tabpages/align.src#RID_SVXPAGE_ALIGNMENT.LB_HORALIGN.ALIGNDLG_HORALIGN_CENTER.StringList.item
-#, fuzzy
 msgid  "Center"
 msgstr "કેન્દ્ર"
 
 #: source/tabpages/align.src#RID_SVXPAGE_ALIGNMENT.LB_HORALIGN.ALIGNDLG_HORALIGN_RIGHT.StringList.item
-#, fuzzy
 msgid  "Right"
 msgstr "જમણું"
 
@@ -10670,6 +10703,26 @@ msgstr "અસરો (~E)"
 
 #: source/tabpages/chardlg.src#RID_SVXPAGE_CHAR_EFFECTS.LB_EFFECTS2.Default.StringList.item
 #, fuzzy
+msgid  "(Without)"
+msgstr "(વગર)"
+
+#: source/tabpages/chardlg.src#RID_SVXPAGE_CHAR_EFFECTS.LB_EFFECTS2.Default.StringList.item
+#, fuzzy
+msgid  "Capitals"
+msgstr "મોટા અક્ષરો"
+
+#: source/tabpages/chardlg.src#RID_SVXPAGE_CHAR_EFFECTS.LB_EFFECTS2.Default.StringList.item
+#, fuzzy
+msgid  "Lowercase"
+msgstr "નાંના અક્ષર"
+
+#: source/tabpages/chardlg.src#RID_SVXPAGE_CHAR_EFFECTS.LB_EFFECTS2.Default.StringList.item
+#, fuzzy
+msgid  "Title"
+msgstr "શીર્ષક"
+
+#: source/tabpages/chardlg.src#RID_SVXPAGE_CHAR_EFFECTS.LB_EFFECTS2.Default.StringList.item
+#, fuzzy
 msgid  "Small capitals"
 msgstr "નાનાં અક્ષરો"
 
@@ -10677,6 +10730,16 @@ msgstr "નાનાં અક્ષરો"
 #, fuzzy
 msgid  "~Relief"
 msgstr "રાહત(~R)"
+
+#: source/tabpages/chardlg.src#RID_SVXPAGE_CHAR_EFFECTS.LB_RELIEF.Default.StringList.item
+#, fuzzy
+msgid  "(Without)"
+msgstr "(વગર)"
+
+#: source/tabpages/chardlg.src#RID_SVXPAGE_CHAR_EFFECTS.LB_RELIEF.Default.StringList.item
+#, fuzzy
+msgid  "Embossed"
+msgstr "ઉભારેલું"
 
 #: source/tabpages/chardlg.src#RID_SVXPAGE_CHAR_EFFECTS.LB_RELIEF.Default.StringList.item
 #, fuzzy
@@ -10940,6 +11003,26 @@ msgstr "એમ્ફસિસ ચિહ્ન (~h)"
 
 #: source/tabpages/chardlg.src#RID_SVXPAGE_CHAR_EFFECTS.LB_EMPHASIS.default.StringList.item
 #, fuzzy
+msgid  "(Without)"
+msgstr "(વગર)"
+
+#: source/tabpages/chardlg.src#RID_SVXPAGE_CHAR_EFFECTS.LB_EMPHASIS.default.StringList.item
+#, fuzzy
+msgid  "Dot"
+msgstr "બિંદુ"
+
+#: source/tabpages/chardlg.src#RID_SVXPAGE_CHAR_EFFECTS.LB_EMPHASIS.default.StringList.item
+#, fuzzy
+msgid  "Circle"
+msgstr "ગોળ"
+
+#: source/tabpages/chardlg.src#RID_SVXPAGE_CHAR_EFFECTS.LB_EMPHASIS.default.StringList.item
+#, fuzzy
+msgid  "Disc"
+msgstr "ડિસ્ક"
+
+#: source/tabpages/chardlg.src#RID_SVXPAGE_CHAR_EFFECTS.LB_EMPHASIS.default.StringList.item
+#, fuzzy
 msgid  "Accent"
 msgstr "ઍક્સન્ટ"
 
@@ -10966,12 +11049,12 @@ msgstr "ઉદાહરણ"
 #: source/tabpages/chardlg.src#RID_SVXPAGE_CHAR_EFFECTS.STR_EFFECTS_CAPITALS.String.Text
 #, fuzzy
 msgid  "Capitals"
-msgstr "મોટા અક્ષરો"
+msgstr "મોટા અક્ષર"
 
 #: source/tabpages/chardlg.src#RID_SVXPAGE_CHAR_EFFECTS.STR_EFFECTS_LOWERCASE.String.Text
 #, fuzzy
 msgid  "Lowercase"
-msgstr "નાંના અક્ષર"
+msgstr "નાનાં અક્ષર"
 
 #: source/tabpages/chardlg.src#RID_SVXPAGE_CHAR_EFFECTS.STR_EFFECTS_TITLE.String.Text
 #, fuzzy
@@ -11077,6 +11160,16 @@ msgstr "પહોળાઇનું માપ લો (~w)"
 #, fuzzy
 msgid  "Spacing"
 msgstr "અંતર"
+
+#: source/tabpages/chardlg.src#RID_SVXPAGE_CHAR_POSITION.LB_KERNING2.Default.StringList.item
+#, fuzzy
+msgid  "Default"
+msgstr "મૂળભૂત"
+
+#: source/tabpages/chardlg.src#RID_SVXPAGE_CHAR_POSITION.LB_KERNING2.Default.StringList.item
+#, fuzzy
+msgid  "Expanded"
+msgstr "વિસ્તરેલ"
 
 #: source/tabpages/chardlg.src#RID_SVXPAGE_CHAR_POSITION.LB_KERNING2.Default.StringList.item
 #, fuzzy
@@ -11187,66 +11280,6 @@ msgstr "બીજા અક્ષરો..."
 #, fuzzy
 msgid  "Example"
 msgstr "ઉદાહરણ"
-
-#: source/tabpages/chardlg.src#RID_SVXPAGE_CHAR_EFFECTS.LB_EFFECTS2.Default.StringList.item
-#, fuzzy
-msgid  "(Without)"
-msgstr "(વગર)"
-
-#: source/tabpages/chardlg.src#RID_SVXPAGE_CHAR_EFFECTS.LB_EFFECTS2.Default.StringList.item
-#, fuzzy
-msgid  "Capitals"
-msgstr "મોટા અક્ષર"
-
-#: source/tabpages/chardlg.src#RID_SVXPAGE_CHAR_EFFECTS.LB_EFFECTS2.Default.StringList.item
-#, fuzzy
-msgid  "Lowercase"
-msgstr "નાનાં અક્ષર"
-
-#: source/tabpages/chardlg.src#RID_SVXPAGE_CHAR_EFFECTS.LB_EFFECTS2.Default.StringList.item
-#, fuzzy
-msgid  "Title"
-msgstr "શીર્ષક"
-
-#: source/tabpages/chardlg.src#RID_SVXPAGE_CHAR_EFFECTS.LB_RELIEF.Default.StringList.item
-#, fuzzy
-msgid  "(Without)"
-msgstr "(વગર)"
-
-#: source/tabpages/chardlg.src#RID_SVXPAGE_CHAR_EFFECTS.LB_RELIEF.Default.StringList.item
-#, fuzzy
-msgid  "Embossed"
-msgstr "ઉભારેલું"
-
-#: source/tabpages/chardlg.src#RID_SVXPAGE_CHAR_EFFECTS.LB_EMPHASIS.default.StringList.item
-#, fuzzy
-msgid  "(Without)"
-msgstr "(વગર)"
-
-#: source/tabpages/chardlg.src#RID_SVXPAGE_CHAR_EFFECTS.LB_EMPHASIS.default.StringList.item
-#, fuzzy
-msgid  "Dot"
-msgstr "બિંદુ"
-
-#: source/tabpages/chardlg.src#RID_SVXPAGE_CHAR_EFFECTS.LB_EMPHASIS.default.StringList.item
-#, fuzzy
-msgid  "Circle"
-msgstr "ગોળ"
-
-#: source/tabpages/chardlg.src#RID_SVXPAGE_CHAR_EFFECTS.LB_EMPHASIS.default.StringList.item
-#, fuzzy
-msgid  "Disc"
-msgstr "ડિસ્ક"
-
-#: source/tabpages/chardlg.src#RID_SVXPAGE_CHAR_POSITION.LB_KERNING2.Default.StringList.item
-#, fuzzy
-msgid  "Default"
-msgstr "મૂળભૂત"
-
-#: source/tabpages/chardlg.src#RID_SVXPAGE_CHAR_POSITION.LB_KERNING2.Default.StringList.item
-#, fuzzy
-msgid  "Expanded"
-msgstr "વિસ્તરેલ"
 
 #: source/tabpages/border.src#RID_SVXPAGE_BORDER.TabPage.Text
 #, fuzzy
@@ -11485,6 +11518,11 @@ msgstr "શ્રેષ્ઠ"
 
 #: source/tabpages/labdlg.src#RID_SVXPAGE_CAPTION.LB_ANSATZ.3.StringList.item
 #, fuzzy
+msgid  "From top"
+msgstr "ઉપર તરફથી"
+
+#: source/tabpages/labdlg.src#RID_SVXPAGE_CAPTION.LB_ANSATZ.3.StringList.item
+#, fuzzy
 msgid  "From left"
 msgstr "ડાબે માંથી"
 
@@ -11548,6 +11586,11 @@ msgstr "ઉપર;મધ્યમાં;નીચે"
 msgid  "Left;Middle;Right"
 msgstr "ડાબે;મધ્યમાં;જમણે"
 
+#: source/tabpages/labdlg.src#_POS_SIZE_TEXT.#define.Text
+#, fuzzy
+msgid  "Position and Size"
+msgstr "સ્થાન અને માપ"
+
 #: source/tabpages/labdlg.src#RID_SVXDLG_CAPTION.TabDialog.Text
 #, fuzzy
 msgid  "Callouts"
@@ -11557,16 +11600,6 @@ msgstr "કોલઆઉટો"
 #, fuzzy
 msgid  "Callout"
 msgstr "કોલઆઉટ"
-
-#: source/tabpages/labdlg.src#_POS_SIZE_TEXT.#define.Text
-#, fuzzy
-msgid  "Position and Size"
-msgstr "સ્થાન અને માપ"
-
-#: source/tabpages/labdlg.src#RID_SVXPAGE_CAPTION.LB_ANSATZ.3.StringList.item
-#, fuzzy
-msgid  "From top"
-msgstr "ઉપર તરફથી"
 
 #: source/tabpages/tabline.src#RID_SVXPAGE_LINE.TabPage.Text
 #, fuzzy
@@ -11770,8 +11803,18 @@ msgstr "પ્રકાર (~T)"
 
 #: source/tabpages/tabline.src#RID_SVXPAGE_LINE_DEF.LB_TYPE_1.Default.StringList.item
 #, fuzzy
+msgid  "Dot"
+msgstr "બિંદુ"
+
+#: source/tabpages/tabline.src#RID_SVXPAGE_LINE_DEF.LB_TYPE_1.Default.StringList.item
+#, fuzzy
 msgid  "Dash"
 msgstr "ડૅશ"
+
+#: source/tabpages/tabline.src#RID_SVXPAGE_LINE_DEF.LB_TYPE_2.Default.StringList.item
+#, fuzzy
+msgid  "Dot"
+msgstr "બિંદુ"
 
 #: source/tabpages/tabline.src#RID_SVXPAGE_LINE_DEF.LB_TYPE_2.Default.StringList.item
 #, fuzzy
@@ -11926,13 +11969,3 @@ msgstr "લીટી શૈલીઓ"
 #, fuzzy
 msgid  "Arrow Styles"
 msgstr "તીર શૈલીઓ"
-
-#: source/tabpages/tabline.src#RID_SVXPAGE_LINE_DEF.LB_TYPE_1.Default.StringList.item
-#, fuzzy
-msgid  "Dot"
-msgstr "બિંદુ"
-
-#: source/tabpages/tabline.src#RID_SVXPAGE_LINE_DEF.LB_TYPE_2.Default.StringList.item
-#, fuzzy
-msgid  "Dot"
-msgstr "બિંદુ"

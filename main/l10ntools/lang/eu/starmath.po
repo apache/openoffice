@@ -341,7 +341,7 @@ msgstr "~Tituluaren errenkada"
 
 #: source/smres.src#RID_PRINTOPTIONPAGE.CB_EQUATION_TEXT.CheckBox.Text
 msgid  "~Formula text"
-msgstr "Dokumentuaren izena inprimatuko den edo ez zehazten du."
+msgstr "~Formularen testua"
 
 #: source/smres.src#RID_PRINTOPTIONPAGE.CB_FRAME.CheckBox.Text
 msgid  "B~order"
@@ -353,15 +353,15 @@ msgstr "Inprimatzeko formatua"
 
 #: source/smres.src#RID_PRINTOPTIONPAGE.RB_ORIGINAL_SIZE.RadioButton.Text
 msgid  "O~riginal size"
-msgstr "J~atorrizko tamaina"
+msgstr "E~rtzak"
 
 #: source/smres.src#RID_PRINTOPTIONPAGE.RB_FIT_TO_PAGE.RadioButton.Text
 msgid  "Fit to ~page"
-msgstr "Doitu ~orrialdeari"
+msgstr "Ertz mehe bat aplikatzen dio formularen areari inprimatzean."
 
 #: source/smres.src#RID_PRINTOPTIONPAGE.RB_ZOOM.RadioButton.Text
 msgid  "~Scaling"
-msgstr "~Eskala"
+msgstr "Tamaina"
 
 #: source/smres.src#RID_PRINTOPTIONPAGE.FL_MISC_OPTIONS.FixedLine.Text
 msgid  "Miscellaneous options"
@@ -445,11 +445,11 @@ msgstr "E~zabatu"
 
 #: source/smres.src#RID_NOMATHTYPEFACEWARNING.WarningBox.Message
 msgid  "The 'StarMath' font has not been installed.\nWithout this font %PRODUCTNAME Math cannot function correctly.\nPlease install this font and restart %PRODUCTNAME Math."
-msgstr ""
+msgstr "'StarMath' letra-tipoa ez dago instalaturik.\nLetra-tipo hori gabe %PRODUCTNAME Math ez da behar bezala ibiliko.\nInstalatu letra-tipo hori eta berrabiarazi %PRODUCTNAME Math."
 
 #: source/smres.src#RID_DEFAULTSAVEQUERY.QueryBox.Message
 msgid  "Should the changes be saved as defaults?\n\nThese changes will apply for all new formulas."
-msgstr ""
+msgstr "Aldaketak lehenespen gisa gorde behar dira?\n\nAldaketa horiek formula berri guztiei aplikatuko zaizkie."
 
 #: source/smres.src#RID_FONTREGULAR.String.Text
 msgid  "Standard"
@@ -558,6 +558,10 @@ msgstr "Sans"
 #: source/smres.src#RID_FONTMENU.7.MenuItem.Text
 msgid  "Fixed"
 msgstr "Finkoa"
+
+#: source/smres.src#CMDBOXWINDOW_TEXT.#define.Text
+msgid  "Commands"
+msgstr "Komandoak"
 
 #: source/smres.src#RID_DOCUMENTSTR.String.Text
 msgid  "Formula"
@@ -681,7 +685,7 @@ msgstr "~Formularen testua"
 
 #: source/smres.src#RID_PRINTUIOPTIONS.item6.ItemList.item
 msgid  "Size"
-msgstr ""
+msgstr "'Komandoak' leihoko edukia behean inprimatzeko sartuko den edo ez zehazten du."
 
 #: source/smres.src#RID_PRINTUIOPTIONS.item7.ItemList.item
 msgid  "O~riginal size"
@@ -694,10 +698,6 @@ msgstr "Doitu ~orrialdeari"
 #: source/smres.src#RID_PRINTUIOPTIONS.item9.ItemList.item
 msgid  "~Scaling"
 msgstr "~Eskala"
-
-#: source/smres.src#CMDBOXWINDOW_TEXT.#define.Text
-msgid  "Commands"
-msgstr "Komandoak"
 
 #: source/commands.src#RID_COMMANDMENU.RID_UNBINOPS_MENU.MenuItem.Text
 msgid  "~Unary/Binary Operators"

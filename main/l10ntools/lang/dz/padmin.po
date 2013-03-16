@@ -33,7 +33,7 @@ msgstr ""
 
 #: source/padialog.src#RID_FONTIMPORT_DIALOG.RID_FIMP_TXT_HELP.FixedText.Text
 msgid  "Please select the folder from which you want to import fonts. Add the selected fonts by clicking the OK button."
-msgstr ""
+msgstr "ཁྱོད་ཀྱིས་ ཡིག་གཟུགས་ག་སྟེ་ལས་ནང་འདྲེན་འབད་ནི་ཨིན་ན་ དེ་ནང་ལས་སྣོད་འཛིན་སེལ་འཐུ་འབད་གནང་། ཨེབ་རྟ་ བཏུབ་ ལུ་ཨེབ་གཏང་འབད་དེ་ སེལ་འཐུ་འབད་ཡོད་མི་ ཡིག་གཟུགས་ཚུ་ཁ་སྐོང་རྐྱབས།"
 
 #: source/padialog.src#RID_FONTIMPORT_DIALOG.RID_FIMP_FL_FROM.FixedLine.Text
 msgid  "Source directory"
@@ -61,7 +61,7 @@ msgstr "ཡིག་གཟུགས་ཁ་སྐོང་རྐྱབས།"
 
 #: source/padialog.src#RID_FONTIMPORT_DIALOG.RID_FIMP_STR_QUERYOVERWRITE.String.Text
 msgid  "Do you really want to overwrite this font file?\n   %s"
-msgstr ""
+msgstr "ཁྱོད་ཀྱིས་ ཡིག་གཟུགས་ཀྱི་ཡིག་སྣོད་འདི་ ཐད་རི་འབའ་རི་ཚབ་སྲུང་འབད་ནི་ཨིན་ན?\n   %s"
 
 #: source/padialog.src#RID_FONTIMPORT_DIALOG.RID_FIMP_STR_OVERWRITEALL.String.Text
 msgid  "All"
@@ -73,19 +73,19 @@ msgstr "ཅི་མེད།"
 
 #: source/padialog.src#RID_FONTIMPORT_DIALOG.RID_FIMP_STR_NOAFM.String.Text
 msgid  "A format file (with an .afm extension) has not been found for the font\n%s\ntherefore, the font cannot be installed. Format files can be created with ghostscript, for example, and have to be located in the same directory as the font files or its afm subdirectory."
-msgstr ""
+msgstr " \n%s\n གི་དོན་ལུ་རྩ་སྒྲིག་གི་ཡིག་སྣོད་ (ཨེ་ཨེཕ་ཨེམ རྒྱ་བསྐྱེད་དང་བཅས་ཡོད་མི་འདི་)འཚོལ་མ་འཐོབ་ དེ་འབདཝ་ལས་ཡིག་གཟུགས་གཞི་བཙུགས་འབད་མི་ཚུགས། རྩ་སྒྲིག་ཡིག་སྣོད་ཚུ་དཔེར་ན་གྲིབ་ཡིག་གི་ཐོག་ལས་གསར་བསྐྲུན་འབད་ཚུགས་ དེ་ལས་ ཡིག་གཟུགས་ཡིག་སྣོད་ཡང་ན་ འདི་གི་ཨེ་ཨེཕ་ཨེམ་ཡན་ལག་སྣོད་ཐོ་བཟུམ་སྦེ་ སྣོད་ཐོ་གཅིག་པའི་ནང་ལུ་ བཞག་དགོ"
 
 #: source/padialog.src#RID_FONTIMPORT_DIALOG.RID_FIMP_STR_AFMCOPYFAILED.String.Text
 msgid  "The metric file for the font file\n   %s\ncould not be copied. The font will not be installed."
-msgstr ""
+msgstr "ཡིག་གཟུགས་ཀྱི་ཡིག་སྣོད་\n   %s\nགི་དོན་ལུ་ མེ་ཊིཀ་ཡིག་སྣོད་ འདྲ་བཤུས་བརྐྱབ་མི་ཚུགས། ཡིག་གཟུགས་འདི་གཞི་བཙུགས་མི་འབད།"
 
 #: source/padialog.src#RID_FONTIMPORT_DIALOG.RID_FIMP_STR_FONTCOPYFAILED.String.Text
 msgid  "The font file\n   %s\ncould not be copied. The font will not be installed."
-msgstr ""
+msgstr "ཡིག་གཟུགས་ཀྱི་ཡིག་སྣོད་\n   %s\nདེ་ འདྲ་བཤུས་བརྐྱབ་མི་ཚུགས། ཡིག་གཟུགས་འདི་གཞི་བཙུགས་མི་འབད།"
 
 #: source/padialog.src#RID_FONTIMPORT_DIALOG.RID_FIMP_STR_NOWRITEABLEFONTSDIR.String.Text
 msgid  "A directory containing a writable fonts.dir file is not located in the Fontpath. Therefore, fonts cannot be installed."
-msgstr ""
+msgstr "འབྲི་བཏུབ་པའི་ཡིག་གཟུགས་སྣོད་ཐོའི་ཡིག་སྣོད་ཡོད་མི་སྣོད་ཐོ་དེ་ ཡིག་ལམ་ནང་ལུ་ བཞག་སྟེ་མིན་འདུག དེ་འབད་ནི་དེ་གིས་ ཡིག་གཟུགས་གཞི་བཙུགས་འབད་མ་ཚུགས།"
 
 #: source/padialog.src#RID_FONTIMPORT_DIALOG.RID_FIMP_STR_NUMBEROFFONTSIMPORTED.String.Text
 msgid  "%d new fonts were added."
@@ -237,7 +237,7 @@ msgstr "%s (%d1 of %d2)ལུ་མིང་གསརཔ།(~N)"
 
 #: source/padialog.src#RID_FONTNAMEDIALOG.RID_FNTNM_STR_NOTRENAMABLE.String.Text
 msgid  "The font %s cannot be renamed due to missing write permission."
-msgstr ""
+msgstr "ཡིག་གཟུགས %s དེ་ གནང་བ་བྲིས་ཟེར་མི་དེ་ བརླག་སྟོར་ཞུགས་ཡོདཔ་ལས་ བསྐྱར་མིང་བཏགས་མི་ཚུགས།"
 
 #: source/padialog.src#RID_FONTNAMEDIALOG.String.Text
 msgid  "Fonts"
@@ -289,7 +289,7 @@ msgstr "ཡིག་སྣོད་ནང་ལུ་ མེ་ཊིག་མ�
 
 #: source/padialog.src#RID_AFMERROR_BOX_TXT.String.Text
 msgid  "The metric\n\n%s\n\ncould not be converted for the following reason:\n\n"
-msgstr ""
+msgstr "མེ་ཊིག་\n\n%s\n\nདེ་ འོག་གི་རྒྱུ་མཚན་ཚུ་གི་དོན་ལུ་ གཞི་བསྒྱུར་འབད་མ་ཚུགས།\n\n"
 
 #: source/padialog.src#RID_PROGRESS_DLG.RID_PROGRESS_PROGRESS_TXT.FixedText.Text
 msgid  "Progress"
@@ -320,8 +320,8 @@ msgid  "~Selection of drivers"
 msgstr "འདྲེན་འཕྲུལ་གྱི་སེལ་འཐུ།(~S)"
 
 #: source/padialog.src#RID_PPDIMPORT_DLG.RID_PPDIMP_TXT_DRIVER.FixedText.Text
-msgid  "Please select the drivers to install and press "%s"."
-msgstr ""
+msgid  "Please select the drivers to install and press \"%s\"."
+msgstr "\"%s\".གཞི་བཙུགས་འབད་ནི་དང་ གཡེབ་ནིའི་དོན་ལུ་ འདྲེན་འཕྲུལ་ཚུ་སེལ་འཐུ་འབད།"
 
 #: source/padialog.src#RID_PPDIMPORT_DLG.RID_PPDIMP_STR_LOADINGPPD.String.Text
 msgid  "Searching for drivers"
@@ -332,8 +332,8 @@ msgid  "Driver Installation"
 msgstr "འདྲེན་འཕྲུལ་གཞི་བཙུགས།"
 
 #: source/padialog.src#RID_QUERY_REMOVEDRIVER.String.Text
-msgid  "Do you really want to remove the driver "%s"?"
-msgstr ""
+msgid  "Do you really want to remove the driver \"%s\"?"
+msgstr "ཁྱོད་ཀྱིས་ འདྲེན་འཕྲུལ་\"%s\"རྩ་བསྐྲད་གཏང་ནི་དེ་ཐད་རི་འབའ་རི་ཨིན་ན?"
 
 #: source/padialog.src#RID_QUERY_REMOVEPRINTER.String.Text
 msgid  "Do you really want to remove this printer ?"
@@ -341,43 +341,43 @@ msgstr "ཁྱོད་ཀྱིས་དཔར་འཕྲུལ་འདི་
 
 #: source/padialog.src#RID_QUERY_REMOVEFONTFROMLIST.String.Text
 msgid  "Do you really want to remove the selected fonts ?"
-msgstr ""
+msgstr "ཁྱོད་ཀྱིས་ཐད་རི་འབའ་རི་ སེལ་འཐུ་འབད་ཡོད་མི་ཡིག་གཟུགས་ཚུ་ རྩ་བསཀྲད་གཏང་ནི་ཨིན་ན?"
 
 #: source/padialog.src#RID_QUERY_DRIVERUSED.String.Text
-msgid  "There are still printers using the driver "%s". Do you really want to remove it? The corresponding printers will also be removed."
-msgstr ""
+msgid  "There are still printers using the driver \"%s\". Do you really want to remove it? The corresponding printers will also be removed."
+msgstr "\"%s\"ལག་ལེན་འཐབ་མི་པར་འཕྲུལ་ད་ལྟོ་ཡང་ཡོད། ཁྱོད་ཀྱིས་འདི་ཐད་རི་འབའ་རི་རྩ་བསྐྲད་གཏང་ནི་ཨངན་ན? དཔར་འཕྲུལ་ཆ་མཉམ་པ་སྦེ་ཡོད་མི་ཚུ་ཡང་ རྩ་བསྐརད་གཏང་འོང་།"
 
 #: source/padialog.src#RID_ERR_REMOVESGENPRT.String.Text
-msgid  "The driver "%s" is always needed and can therefore not be removed."
-msgstr ""
+msgid  "The driver \"%s\" is always needed and can therefore not be removed."
+msgstr "འདྲེན་འཕྲུལ་\"%s\"འདི་ཨ་རྟག་རང་དགོཔ་ཡོད་ དོ་འབདཝ་ལས་ རྩ་བསྐྲད་མ་གཏང་པར་བཞག་ཚུགས།"
 
 #: source/padialog.src#RID_ERR_REMOVEDRIVERFAILED.String.Text
-msgid  "The driver "%s1" could not be removed. It was not possible to remove the file\n\n%s2."
-msgstr ""
+msgid  "The driver \"%s1\" could not be removed. It was not possible to remove the file\n\n%s2."
+msgstr "འདྲེན་འཕྲུལ་\"%s1\"རྩ་བསྐྲད་གཏང་མ་ཚུགས། ཡིག་སྣོད་\n\n%s2 རྩ་བསྐྲད་གཏང་ནི་དེ་ འབད་མ་ཚུགས།"
 
 #: source/padialog.src#RID_ERR_REMOVEDEFAULTDRIVER.String.Text
-msgid  "The driver "%s" is used by your default printer. Therefore, it cannot be removed."
-msgstr ""
+msgid  "The driver \"%s\" is used by your default printer. Therefore, it cannot be removed."
+msgstr "འདྲེན་འཕྲུལ་\"%s\"འདི་ཁྱོད་རའི་སྔོན་སྒྲིག་དཔར་འཕྲུལ་གྱིས་ ལག་ལེན་འཐབ་ཡོདཔ་ཨིན། དེ་འབད་ནི་དེ་གིས་ འདི་རྩ་བསྐྲད་གཏང་མི་ཚུགས།"
 
 #: source/padialog.src#RID_ERR_PRINTERNOTREMOVEABLE.String.Text
 msgid  "The printer %s cannot be removed."
 msgstr "དཔར་འཕྲུལ་ %s དེ་ རྩ་བསྐྲད་གཏང་མ་ཚུགས།"
 
 #: source/padialog.src#RID_TXT_PRINTERALREADYEXISTS.String.Text
-msgid  "A printer named "%s" already exists. This printer will not be imported."
-msgstr ""
+msgid  "A printer named \"%s\" already exists. This printer will not be imported."
+msgstr "དཔར་འཕྲུལ་ \"%s\"ཟེར་མི་འདི་ ཧེ་མ་ལས་རང་ཡོད། དཔར་འཕྲུལ་འདི་ནང་འདྲེན་མི་འབད།"
 
 #: source/padialog.src#RID_TXT_PRINTERWITHOUTCOMMAND.String.Text
-msgid  "The printer "%s" has no valid configuration and, therefore, cannot be imported."
-msgstr ""
+msgid  "The printer \"%s\" has no valid configuration and, therefore, cannot be imported."
+msgstr "དཔར་འཕྲུལ་\"%s\"དེ་ལུ་ནུས་ཅན་རིམ་སྒྲིག་མིན་འཐུག་ དེ་འབད་ནི་དེ་གིས་ ནང་འདྲེན་འབད་མི་ཚུགས།"
 
 #: source/padialog.src#RID_TXT_DRIVERDOESNOTEXIST.String.Text
-msgid  "The driver for the printer "%s1" (%s2) is not installed. Therefore the printer cannot be imported."
-msgstr ""
+msgid  "The driver for the printer \"%s1\" (%s2) is not installed. Therefore the printer cannot be imported."
+msgstr "\"%s1\" (%s2)གི་དོན་ལུ་ འདྲེན་འཕྲུལ་ཞགི་བཙུགས་མ་འབད་བས། དེ་འབད་ནི་དེ་གིས་ དཔར་འཕྲུལ་དེ་ནང་འདྲེན་འབད་མི་ཚུགས།"
 
 #: source/padialog.src#RID_TXT_PRINTERADDFAILED.String.Text
-msgid  "The printer "%s" could not be added."
-msgstr ""
+msgid  "The printer \"%s\" could not be added."
+msgstr "དཔར་འཕྲུལ་\"%s\"དེ་ཁ་སྐོང་བརྐྱབས་མ་ཚུགས།"
 
 #: source/padialog.src#RID_ADD_PRINTER_DIALOG.RID_ADDP_BTN_FINISH.OKButton.Text
 msgid  "~Finish"
@@ -398,7 +398,7 @@ msgstr "དཔར་འཕྲུལ་ཁ་སྐོང་རྐྱབས།"
 #: source/padialog.src#RID_ADDP_PAGE_CHOOSEDRIVER.RID_ADDP_STR_TITLE.String.Text
 #, fuzzy
 msgid  "Choose a driver"
-msgstr "འདྲེན་འཕྲུལ་གཅིག་གདམ་ཁ་རྐྱབས།"
+msgstr "འདྲེན་འཕྲུལ་གདམ་ཁ་རྐྱབས།"
 
 #: source/padialog.src#RID_ADDP_PAGE_CHOOSEDRIVER.RID_ADDP_CHDRV_TXT_DRIVER.FixedText.Text
 #, fuzzy
@@ -496,8 +496,9 @@ msgid  "Choose a command line"
 msgstr "བརྡ་བཀོད་གྲལ་ཐིག་གདམ་ཁ་རྐྱབས།"
 
 #: source/padialog.src#RID_ADDP_PAGE_COMMAND.RID_ADDP_CMD_TXT_COMMAND.FixedText.Text
+#, fuzzy
 msgid  "Please enter a c~ommand line appropriate for this device."
-msgstr ""
+msgstr "ཐབས་འཕྲུལ་འདི་གི་དོན་ལུ་ འོས་འབབ་དང་ལྡན་མི་ བརྡ་བཀོད་གཅིག་བཙུགས་གནང་།(~o)"
 
 #: source/padialog.src#RID_ADDP_PAGE_COMMAND.RID_ADDP_CMD_TXT_PDFDIR.FixedText.Text
 #, fuzzy
@@ -510,12 +511,14 @@ msgid  "~Help"
 msgstr "གྲོགས་རམ།(~H)"
 
 #: source/padialog.src#RID_ADDP_PAGE_COMMAND.RID_ADDP_CMD_STR_PDFHELP.String.Text
-msgid  "The command line for PDF converters is executed as follows: for each document printed, "(TMP)" in the command line is replaced by a temporary file and "(OUTFILE)" in the command line is replaced by the target PDF file name. If "(TMP)" is in the command line, the PostScript code will be supplied via a file, otherwise via standard input (i.e. as a pipe)."
-msgstr ""
+#, fuzzy
+msgid  "The command line for PDF converters is executed as follows: for each document printed, \"(TMP)\" in the command line is replaced by a temporary file and \"(OUTFILE)\" in the command line is replaced by the target PDF file name. If \"(TMP)\" is in the command line, the PostScript code will be supplied via a file, otherwise via standard input (i.e. as a pipe)."
+msgstr "པི་ཌི་ཨེཕ་གཞི་བསྒྱུར་པ་ཚུ་གི་དོན་ལུ་ བརྡ་བཀོད་གྲལ་ཐིག་དེ་ འོག་ལུ་བཀོད་དེ་ཡོད་དོ་བཟུམ་སྦེ་ དཔར་བསྐྲུན་འབད་ཡོད་མི་ ཡིག་ཆ་རེ་རེ་ལུ་ ལག་ལེན་འཐབ་ཨིན བརྡ་བཀོད་གྲལ་ཐིག་ནང་གི་\"(TMP)\"དེ་ གནས་སྐབས་ཀྱི་ཡིག་སྣོད་ཀྱིས་ཚབས་བཙུགསཔ་ཨིནམ་དང་ བརྡ་བཀོད་ནང་གི་དང་ \"(OUTFILདེ་དམིགས་གཏད་ པི་ཌི་ཨེཕ་ ཡིག་སྣོད་མིང་གིས་ཚབས་བཙུགསཔ་ཨིན། ག་དེ་ཅིག་སྦེ་\"(TMP)\"བརྡ་བཀོད་གྲལ་ཐིག་ནང་ཡོད་པ་ཅིན་ པོསིཊི་སིཀིརིཔཊི་གི་ཨང་རྟགས་དེ་ ཡིག་སྣོད་བརྒྱུད་དེ་ བཀྲམ་སྤེལ་འབད་ནི་ཨིན་ དེ་མེན་པ་ཅིན་ ཚད་ལྡན་ཨིན་པུཊི་བརྒྱུད་དེ་འབད་འོང་།(དེ་ཡང་རྒྱུད་དུང་བཟུམ་སྦེ་).E)\" "
 
 #: source/padialog.src#RID_ADDP_PAGE_COMMAND.RID_ADDP_CMD_STR_FAXHELP.String.Text
-msgid  "The command line for fax connections is executed as follows: for each fax sent, "(TMP)" in the command line is replaced by a temporary file and "(PHONE)" in the command line is replaced by the fax number. If "(TMP)" appears in the command line, the PostScript code will be supplied via a file, otherwise it is passed as standard input (i.e. as a pipe)."
-msgstr ""
+#, fuzzy
+msgid  "The command line for fax connections is executed as follows: for each fax sent, \"(TMP)\" in the command line is replaced by a temporary file and \"(PHONE)\" in the command line is replaced by the fax number. If \"(TMP)\" appears in the command line, the PostScript code will be supplied via a file, otherwise it is passed as standard input (i.e. as a pipe)."
+msgstr "དཔར་འཕྲིན་འབྲེལ་མཐུད་ཀྱི་དོན་ལུ་ འོག་ལུ་བཏོད་དེ་ཡོད་དོ་བཟུམ་སྦེ་ གཏང་ཚར་མི་དཔར་འཕྲུན་རེ་རེ་ལུ་ བརྡ་བཀོད་གྲལ་ཐིག་ལག་ལེན་འཐབ་ཡོདཔ་ཨིན། བརྡ་བཀོད་གྲལ་ཐིག་ནང་ལུ་\"(TMP)\"ཡོད་མི་དེ་ གནས་སྐབས་ཡིག་སྣོད་མིང་གིས་ཚབ་བཙུགསཔ་ཨིནམ་དང་ བརྡ་བཀོད་གྲལ་ཐིག་ནང་ལུ་\"(PHONE)\"ཡོད་མི་དེ་ དཔར་འཕྲིན་ཨང་གྲངས་ཀྱིས་ཚབས་བཙུགསཔ་ཨིན། བརྡ་བཀོད་གྲལ་ཐིག་ནང་\"(TMP)\"འབྱུང་པ་ཅིན་ པོསིཊི་སིཀིརིཔཊི་ཨང་རྟགས་དེ་ ཡིག་སྣོད་བརྒྱུད་དེ་ བཀྲམ་སྤེལ་འབད་ནི་ཨིན་ དེ་མེན་པ་ཅིན་ འ་ནི་འདི་ཚད་ལྡན་ཨིན་པུཊི་བཟུམ་སྦེ་རྩིས་སྤྲོད་འབདཝ་ཨིན།(དེ་ཡང་རྒྱུད་དུང་བཟུམ་སྦེ་)"
 
 #: source/padialog.src#RID_ADDP_PAGE_OLDPRINTERS.RID_ADDP_STR_TITLE.String.Text
 #, fuzzy
@@ -523,8 +526,9 @@ msgid  "Import printers from old versions"
 msgstr "ཐོན་རིམ་རྙིངམ་ནང་ལས་ དཔར་འཕྲུལ་ནང་འདྲེན་འབད།"
 
 #: source/padialog.src#RID_ADDP_PAGE_OLDPRINTERS.RID_ADDP_OLD_TXT_PRINTERS.FixedText.Text
+#, fuzzy
 msgid  "~These printers can be imported. Please select the ones you want to import."
-msgstr ""
+msgstr "པར་འཕྲུལ་དེ་ཚུ་ནང་འདྲེན་འབད་ཚུགས། ཁྱོད་ཀྱིས་ནང་འདྲེན་འབད་ནི་ཨིན་མི་དེ་ཚུ་སེལ་འཐུ་འབད་གནང་།(~T)"
 
 #: source/padialog.src#RID_ADDP_PAGE_OLDPRINTERS.RID_ADDP_OLD_BTN_SELECTALL.PushButton.Text
 #, fuzzy
@@ -534,20 +538,22 @@ msgstr "ཆ་མཉམ་སེལ་འཐུ་འབད།(~S)"
 #: source/padialog.src#RID_ADDP_PAGE_FAXDRIVER.RID_ADDP_STR_TITLE.String.Text
 #, fuzzy
 msgid  "Choose a driver"
-msgstr "འདྲེན་འཕྲུལ་གདམ་ཁ་རྐྱབས།"
+msgstr "འདྲེན་འཕྲུལ་གཅིག་གདམ་ཁ་རྐྱབས།"
 
 #: source/padialog.src#RID_ADDP_PAGE_FAXDRIVER.RID_ADDP_FAXDRV_TXT_DRIVER.FixedText.Text
+#, fuzzy
 msgid  "Use the following driver for this fax connection"
-msgstr ""
+msgstr "དཔར་འཕྲིན་མཐུད་ལམ་འདི་གི་དོན་ལུ་ འོག་ལུ་བཀོད་དེ་ཡོད་མི་འདྲེན་འཕྲུལ་ལག་ལེན་འཐབ།"
 
 #: source/padialog.src#RID_ADDP_PAGE_FAXDRIVER.RID_ADDP_FAXDRV_BTN_DEFAULT.RadioButton.Text
 #, fuzzy
 msgid  "T~he default driver"
-msgstr "སྔོན་སྒྲིག་འདྲེན་འཕྲུལ།"
+msgstr "སྔོན་སྒྲིག་འདྲེན་འཕྲུལ།(~h)"
 
 #: source/padialog.src#RID_ADDP_PAGE_FAXDRIVER.RID_ADDP_FAXDRV_BTN_SELECT.RadioButton.Text
+#, fuzzy
 msgid  "A speci~fic driver, to adapt the format to another printer"
-msgstr ""
+msgstr "དཔར་འཕྲུལ་ གཞན་མི་ཅིག་ནང་ལུ་ རྩ་སྒྲིག་མཐུན་བསྒྱུར་འབད་ནི་ལུ་ གསལ་བཀོད་འབད་ཡོད་མི་འདྲེན་འཕྲུལ།(~f)"
 
 #: source/padialog.src#RID_ADDP_PAGE_PDFDRIVER.RID_ADDP_STR_TITLE.String.Text
 #, fuzzy
@@ -555,8 +561,9 @@ msgid  "Choose a driver"
 msgstr "འདྲེན་འཕྲུལ་གདམ་ཁ་རྐྱབས།"
 
 #: source/padialog.src#RID_ADDP_PAGE_PDFDRIVER.RID_ADDP_PDFDRV_TXT_DRIVER.FixedText.Text
+#, fuzzy
 msgid  "Use the following driver for this PDF converter"
-msgstr ""
+msgstr "པི་ཌི་ཨེཕ་གཞི་བསྒྱུར་པ་འདི་གི་དོན་ལུ་ འོག་ལུ་བཀོད་དེ་ཡོད་མི་འདྲེན་འཕྲུལ་ལག་ལེན་འཐབ།"
 
 #: source/padialog.src#RID_ADDP_PAGE_PDFDRIVER.RID_ADDP_PDFDRV_BTN_DEFAULT.RadioButton.Text
 #, fuzzy
@@ -569,8 +576,9 @@ msgid  "The Adobe D~istiller(tm) driver"
 msgstr "ཨེ་ཌོབ་ཌིསི་ཊི་ལར་ འདྲེན་འཕྲུལ།"
 
 #: source/padialog.src#RID_ADDP_PAGE_PDFDRIVER.RID_ADDP_PDFDRV_BTN_SELECT.RadioButton.Text
+#, fuzzy
 msgid  "A spec~ific driver, to adapt the format to another printer"
-msgstr ""
+msgstr "དཔར་འཕྲུལ་གཞན་མི་ཅིག་ལུ་རྩ་སྒྲིག་མཐུན་བསྒྱུར་འབད་ནིའི་དོན་ལུ་ གསལ་བཀོད་འབད་ཡོད་པའི་འདྲེན་འཕྲུལ།"
 
 #: source/padialog.src#RID_TXT_FONT_ITALIC.String.Text
 #, fuzzy
@@ -870,16 +878,19 @@ msgid  "~Remove"
 msgstr "རྩ་བསྐྲད།(~R)"
 
 #: source/rtsetup.src#RID_RTS_COMMANDPAGE.RID_RTS_CMD_STR_PDFHELP.String.Text
-msgid  "The command line for PDF converters is executed as follows: for each document printed, "(TMP)" in the command line is replaced by a temporary file and "(OUTFILE)" in the command line is replaced by the target PDF file name. If "(TMP)" is in the command line, the PostScript code will be supplied via a file, otherwise via standard input (i.e. as a pipe)."
-msgstr ""
+#, fuzzy
+msgid  "The command line for PDF converters is executed as follows: for each document printed, \"(TMP)\" in the command line is replaced by a temporary file and \"(OUTFILE)\" in the command line is replaced by the target PDF file name. If \"(TMP)\" is in the command line, the PostScript code will be supplied via a file, otherwise via standard input (i.e. as a pipe)."
+msgstr "པི་ཌི་ཨེཕ་གཞི་བསྒྱུར་པ་ཚུ་གི་དོན་ལུ་ བརྡ་བཀོད་གྲལ་ཐིག་དེ་ འོག་ལུ་བཀོད་དེ་ཡོད་དོ་བཟུམ་སྦེ་ དཔར་བསྐྲུན་འབད་ཡོད་མི་ ཡིག་ཆ་རེ་རེ་ལུ་ ལག་ལེན་འཐབ་ཨིན བརྡ་བཀོད་གྲལ་ཐིག་ནང་གི་\"(TMP)\"དེ་ གནས་སྐབས་ཀྱི་ཡིག་སྣོད་ཀྱིས་ཚབས་བཙུགསཔ་ཨིནམ་དང་ བརྡ་བཀོད་ནང་གི་དང་ \"(OUTFILEདེ་དམིགས་གཏད་ པི་ཌི་ཨེཕ་ ཡིག་སྣོད་མིང་གིས་ཚབས་བཙུགསཔ་ཨིན། ག་དེ་ཅིག་སྦེ་\"(TMP)\"བརྡ་བཀོད་གྲལ་ཐིག་ནང་ཡོད་པ་ཅིན་ པོསིཊི་སིཀིརིཔཊི་གི་ཨང་རྟགས་དེ་ ཡིག་སྣོད་བརྒྱུད་དེ་ བཀྲམ་སྤེལ་འབད་ནི་ཨིན་ དེ་མེན་པ་ཅིན་ ཚད་ལྡན་ཨིན་པུཊི་བརྒྱུད་དེ་འབད་འོང་།(དེ་ཡང་རྒྱུད་དུང་བཟུམ་སྦེ་)."
 
 #: source/rtsetup.src#RID_RTS_COMMANDPAGE.RID_RTS_CMD_STR_PRINTERHELP.String.Text
+#, fuzzy
 msgid  "The command line for printer devices is executed as follows: the generated PostScript code is supplied as standard input (i.e. as a pipe) to the command line."
-msgstr ""
+msgstr "དཔར་འཕྲུལ་ཐབས་ལམ་གྱི་དོན་ལུ་ བརྡ་བརྡ་བཀོད་གྲལ་ཐིག་དེ་ འོག་ལུ་བཀོད་དེ་ཡོད་དོ་བཟུམ་སྦེ་ ལག་ལེན་འཐབ་ཡོདཔ་ཨིན: བཟོ་བཏོན་འབད་ཡོད་པའི་པོསིཊི་སིཀིརིཔཊི་ཨང་རྟགས་དེ་ བརྡ་བཀོད་གྲལ་ཐིག་ལུ་ ཚད་ལྡན་ཨིན་པུཊི་བཟུམ་སྦེ་བཀྲམ་སྤེལ་འབད་ཡོདཔ་ཨིན།"
 
 #: source/rtsetup.src#RID_RTS_COMMANDPAGE.RID_RTS_CMD_STR_FAXHELP.String.Text
-msgid  "The command line for fax devices is executed as follows: for each fax sent, "(TMP)" in the command line is replaced by a temporary file and "(PHONE)" in the command line is replaced by the fax number. If "(TMP)" appears in the command line, the PostScript code will be supplied via a file, otherwise it is passed as standard input (i.e. as a pipe)."
-msgstr ""
+#, fuzzy
+msgid  "The command line for fax devices is executed as follows: for each fax sent, \"(TMP)\" in the command line is replaced by a temporary file and \"(PHONE)\" in the command line is replaced by the fax number. If \"(TMP)\" appears in the command line, the PostScript code will be supplied via a file, otherwise it is passed as standard input (i.e. as a pipe)."
+msgstr "དཔར་འཕྲིན་ཐབས་ལམ་གྱི་དོན་ལུ་ འོག་ལུ་བཏོད་དེ་ཡོད་དོ་བཟུམ་སྦེ་ གཏང་ཚར་མི་དཔར་འཕྲུན་རེ་རེ་ལུ་ བརྡ་བཀོད་གྲལ་ཐིག་ལག་ལེན་འཐབ་ཡོདཔ་ཨིན། བརྡ་བཀོད་གྲལ་ཐིག་ནང་ལུ་\"(TMP)\"ཡོད་མི་དེ་ གནས་སྐབས་ཀྱི་ཡིག་སྣོད་མིང་གིས་ཚབ་བཙུགསཔ་ཨིནམ་དང་ བརྡ་བཀོད་གྲལ་ཐིག་ནང་ལུ་\"(PHONE)\"ཡོད་མི་དེ་ དཔར་འཕྲིན་ཨང་གྲངས་ཀྱིས་ཚབས་བཙུགསཔ་ཨིན། བརྡ་བཀོད་གྲལ་ཐིག་ནང་\"(TMP)\"འབྱུང་པ་ཅིན་ པོསིཊི་སིཀིརིཔཊི་ཨང་རྟགས་དེ་ ཡིག་སྣོད་བརྒྱུད་དེ་ བཀྲམ་སྤེལ་འབད་ནི་ཨིན་ དེ་མེན་པ་ཅིན་ འ་ནི་འདི་ཚད་ལྡན་ཨིན་པུཊི་བཟུམ་སྦེ་རྩིས་སྤྲོད་འབདཝ་ཨིན།(དེ་ཡང་རྒྱུད་དུང་བཟུམ་སྦེ་)"
 
 #: source/rtsetup.src#RID_RTS_OTHERPAGE.RID_RTS_OTHER_LEFTMARGIN_TXT.FixedText.Text
 #, fuzzy

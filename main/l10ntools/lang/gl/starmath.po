@@ -361,7 +361,7 @@ msgstr "Axustar á ~páxina"
 
 #: source/smres.src#RID_PRINTOPTIONPAGE.RB_ZOOM.RadioButton.Text
 msgid  "~Scaling"
-msgstr "~Escalado"
+msgstr "~Escala"
 
 #: source/smres.src#RID_PRINTOPTIONPAGE.FL_MISC_OPTIONS.FixedLine.Text
 msgid  "Miscellaneous options"
@@ -445,11 +445,11 @@ msgstr "~Eliminar"
 
 #: source/smres.src#RID_NOMATHTYPEFACEWARNING.WarningBox.Message
 msgid  "The 'StarMath' font has not been installed.\nWithout this font %PRODUCTNAME Math cannot function correctly.\nPlease install this font and restart %PRODUCTNAME Math."
-msgstr ""
+msgstr "O tipo de letra «StarMath» non se instalou.\nSen este tipo de letra %PRODUCTNAME Math non pode funcionar correctamente.\nInstale este tipo de letra e reinicie %PRODUCTNAME Math."
 
 #: source/smres.src#RID_DEFAULTSAVEQUERY.QueryBox.Message
 msgid  "Should the changes be saved as defaults?\n\nThese changes will apply for all new formulas."
-msgstr ""
+msgstr "Deberíanse gardar as alteracións como predeterminadas?\n\nEsas alteracións aplicaránselles a todas as novas fórmulas."
 
 #: source/smres.src#RID_FONTREGULAR.String.Text
 msgid  "Standard"
@@ -558,6 +558,10 @@ msgstr "Sans"
 #: source/smres.src#RID_FONTMENU.7.MenuItem.Text
 msgid  "Fixed"
 msgstr "Fixo"
+
+#: source/smres.src#CMDBOXWINDOW_TEXT.#define.Text
+msgid  "Commands"
+msgstr "Ordes"
 
 #: source/smres.src#RID_DOCUMENTSTR.String.Text
 msgid  "Formula"
@@ -694,10 +698,6 @@ msgstr "Axustar á ~páxina"
 #: source/smres.src#RID_PRINTUIOPTIONS.item9.ItemList.item
 msgid  "~Scaling"
 msgstr "~Escalado"
-
-#: source/smres.src#CMDBOXWINDOW_TEXT.#define.Text
-msgid  "Commands"
-msgstr "Ordes"
 
 #: source/commands.src#RID_COMMANDMENU.RID_UNBINOPS_MENU.MenuItem.Text
 msgid  "~Unary/Binary Operators"
@@ -901,7 +901,7 @@ msgstr "É Ortogonal a"
 
 #: source/toolbox.src#RID_TOOLBOXWINDOW.TOOLBOX_CAT_B.RID_XLESLANTY.ToolBoxItem.Text
 msgid  "Is Less Than Or Equal To"
-msgstr "É Menor que ou Igual a"
+msgstr "É Menos que ou Igual a"
 
 #: source/toolbox.src#RID_TOOLBOXWINDOW.TOOLBOX_CAT_B.RID_XGESLANTY.ToolBoxItem.Text
 msgid  "Is Greater Than Or Equal To"

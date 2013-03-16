@@ -37,11 +37,11 @@ msgstr "Contrôle ActiveX"
 
 #: source/activex/module_activex.ulf#STR_DESC_MODULE_OPTIONAL_ACTIVEXCONTROL
 msgid  "Component to enable Microsoft Internet Explorer to display %PRODUCTNAME documents."
-msgstr ""
+msgstr "Composant permettant à Microsoft Internet Explorer d'afficher les documents %PRODUCTNAME."
 
 #: source/base/folderitem_base.ulf#STR_FI_TOOLTIP_BASE
 msgid  "Manage databases, create queries and reports to track and manage your information by using Base."
-msgstr ""
+msgstr "Base : gestion de bases de données, création de requêtes et rapports pour mieux gérer les informations."
 
 #: source/base/registryitem_base.ulf#STR_REG_VAL_OO_DATABASE
 msgid  "OpenDocument Database"
@@ -121,7 +121,11 @@ msgstr "Classeur"
 
 #: source/calc/folderitem_calc.ulf#STR_FI_TOOLTIP_CALC
 msgid  "Perform calculation, analyze information and manage lists in spreadsheets by using Calc."
-msgstr ""
+msgstr "Calc : calculs, analyse d'informations et gestion de listes dans des feuilles de calcul."
+
+#: source/calc/registryitem_calc.ulf#STR_REG_VAL_NEW
+msgid  "&New"
+msgstr "&Nouveau"
 
 #: source/calc/registryitem_calc.ulf#STR_REG_VAL_SO60_SPREADSHEET
 msgid  "%SXWFORMATNAME %SXWFORMATVERSION Spreadsheet"
@@ -155,17 +159,13 @@ msgstr "Modèle Microsoft Excel 97-2003"
 msgid  "Microsoft Excel Template"
 msgstr "Modèle Microsoft Excel"
 
-#: source/calc/registryitem_calc.ulf#STR_REG_VAL_NEW
-msgid  "&New"
-msgstr "&Nouveau"
-
 #: source/calc/module_calc.ulf#STR_NAME_MODULE_PRG_CALC
 msgid  "%PRODUCTNAME Calc"
 msgstr "%PRODUCTNAME Calc"
 
 #: source/calc/module_calc.ulf#STR_DESC_MODULE_PRG_CALC
 msgid  "Perform calculation, analyze information and manage lists in spreadsheets by using %PRODUCTNAME Calc."
-msgstr ""
+msgstr "%PRODUCTNAME Calc : calculs, analyse d'informations et gestion de listes dans des feuilles de calcul."
 
 #: source/calc/module_calc.ulf#STR_NAME_MODULE_PRG_CALC_BIN
 msgid  "Program Module"
@@ -189,7 +189,11 @@ msgstr "Add-in"
 
 #: source/calc/module_calc.ulf#STR_DESC_MODULE_OPTIONAL_ADDINS
 msgid  "Add-ins are additional programs that make new functions available in %PRODUCTNAME Calc."
-msgstr ""
+msgstr "Les add-in sont des programmes additionnels qui permettent d'utiliser des fonctions complémentaires dans %PRODUCTNAME Calc."
+
+#: source/draw/registryitem_draw.ulf#STR_REG_VAL_NEW
+msgid  "&New"
+msgstr "&Nouveau"
 
 #: source/draw/registryitem_draw.ulf#STR_REG_VAL_SO60_DRAWING
 msgid  "%SXWFORMATNAME %SXWFORMATVERSION Drawing"
@@ -207,10 +211,6 @@ msgstr "Dessin OpenDocument"
 msgid  "OpenDocument Drawing Template"
 msgstr "Modèle de dessin OpenDocument"
 
-#: source/draw/registryitem_draw.ulf#STR_REG_VAL_NEW
-msgid  "&New"
-msgstr "&Nouveau"
-
 #: source/draw/folderitem_draw.ulf#STR_FI_NAME_ZEICHNUNG
 msgid  "Drawing"
 msgstr "Dessin"
@@ -225,7 +225,7 @@ msgstr "%PRODUCTNAME Draw"
 
 #: source/draw/module_draw.ulf#STR_DESC_MODULE_PRG_DRAW
 msgid  "Create and edit drawings, flow charts, and logos by using %PRODUCTNAME Draw."
-msgstr ""
+msgstr "%PRODUCTNAME Draw : création et édition de dessins, d'organigrammes et de logos."
 
 #: source/draw/module_draw.ulf#STR_NAME_MODULE_PRG_DRAW_BIN
 msgid  "Program Module"
@@ -249,7 +249,7 @@ msgstr "Intégration GNOME"
 
 #: source/gnome/module_gnome.ulf#STR_DESC_MODULE_OPTIONAL_GNOME
 msgid  "System integration of %PRODUCTNAME %PRODUCTVERSION into Gnome Desktop Environment."
-msgstr ""
+msgstr "Intégration système de %PRODUCTNAME %PRODUCTVERSION dans l'environnement de bureau Gnome Desktop."
 
 #: source/graphicfilter/module_graphicfilter.ulf#STR_NAME_MODULE_OPTIONAL_GRFFLT
 msgid  "Graphics Filters"
@@ -257,7 +257,7 @@ msgstr "Filtres d'images"
 
 #: source/graphicfilter/module_graphicfilter.ulf#STR_DESC_MODULE_OPTIONAL_GRFFLT
 msgid  "Additional filters required to read alien graphic formats."
-msgstr ""
+msgstr "Des filtres supplémentaires sont requis pour lire les formats de graphique inconnus."
 
 #: source/graphicfilter/module_graphicfilter.ulf#STR_NAME_MODULE_OPTIONAL_GRFFLT_ADOBE
 msgid  "Adobe Photoshop Import Filter"
@@ -377,7 +377,11 @@ msgstr "Présentation"
 
 #: source/impress/folderitem_impress.ulf#STR_FI_TOOLTIP_IMPRESS
 msgid  "Create and edit presentations for slideshows, meeting and Web pages by using Impress."
-msgstr ""
+msgstr "Impress : création et édition de présentations pour diaporamas, réunions et pages Web."
+
+#: source/impress/registryitem_impress.ulf#STR_REG_VAL_NEW
+msgid  "&New"
+msgstr "&Nouveau"
 
 #: source/impress/registryitem_impress.ulf#STR_REG_VAL_SO60_SHOW
 msgid  "Show"
@@ -419,17 +423,13 @@ msgstr "Modèle Microsoft PowerPoint 97-2003"
 msgid  "Microsoft PowerPoint Template"
 msgstr "Modèle Microsoft PowerPoint"
 
-#: source/impress/registryitem_impress.ulf#STR_REG_VAL_NEW
-msgid  "&New"
-msgstr "&Nouveau"
-
 #: source/impress/module_impress.ulf#STR_NAME_MODULE_PRG_IMPRESS
 msgid  "%PRODUCTNAME Impress"
 msgstr "%PRODUCTNAME Impress"
 
 #: source/impress/module_impress.ulf#STR_DESC_MODULE_PRG_IMPRESS
 msgid  "Create and edit presentations for slideshows, meeting and Web pages by using %PRODUCTNAME Impress."
-msgstr ""
+msgstr "%PRODUCTNAME Impress : création et édition de présentations pour diaporamas, réunions et pages Web."
 
 #: source/impress/module_impress.ulf#STR_NAME_MODULE_PRG_IMPRESS_BIN
 msgid  "Program Module"
@@ -461,7 +461,7 @@ msgstr "Filtres pour mobiles"
 
 #: source/javafilter/module_javafilter.ulf#STR_DESC_MODULE_OPTIONAL_JAVAFILTER
 msgid  "Text and spreadsheet filters to support import/export for Palm handheld or Pocket PC (Java required)."
-msgstr ""
+msgstr "Filtres pour textes et feuilles de calcul permettant d'obtenir le support d'import-export pour votre mobile Palm ou Pocket PC (Java requis)."
 
 #: source/javafilter/module_javafilter.ulf#STR_NAME_MODULE_OPTIONAL_JAVAFILTER_PALM
 msgid  "Palm"
@@ -549,7 +549,7 @@ msgstr "Impossible de détecter une installation de Java 1.4."
 
 #: source/javafilter/registryitem_javafilter.ulf#STR_VALUE_HKLM_SOFT_SUN_STAROFFICE_XMERGESYNC_MSGS_ERROR_JAVAINIT
 msgid  "There was an error while initializing the Java Runtime Environment."
-msgstr ""
+msgstr "Une erreur est survenue durant l'initialisation de l'environnement d'exécution Java."
 
 #: source/kde/module_kde.ulf#STR_NAME_MODULE_OPTIONAL_KDE
 msgid  "KDE Integration"
@@ -557,7 +557,7 @@ msgstr "Intégration KDE"
 
 #: source/kde/module_kde.ulf#STR_DESC_MODULE_OPTIONAL_KDE
 msgid  "System integration of %PRODUCTNAME %PRODUCTVERSION into KDE."
-msgstr ""
+msgstr "Intégration système de %PRODUCTNAME %PRODUCTVERSION dans un environnement de bureau KDE."
 
 #: source/math/module_math.ulf#STR_NAME_MODULE_PRG_MATH
 msgid  "%PRODUCTNAME Math"
@@ -565,7 +565,7 @@ msgstr "%PRODUCTNAME Math"
 
 #: source/math/module_math.ulf#STR_DESC_MODULE_PRG_MATH
 msgid  "Create and edit scientific formulas and equations by using %PRODUCTNAME Math."
-msgstr ""
+msgstr "%PRODUCTNAME Math : création et édition de formules scientifiques et d'équations."
 
 #: source/math/module_math.ulf#STR_NAME_MODULE_PRG_MATH_BIN
 msgid  "Program Module"
@@ -587,6 +587,10 @@ msgstr "L'aide pour l'éditeur de formules %PRODUCTNAME Math"
 msgid  "Create and edit scientific formulas and equations by using Math."
 msgstr "Math : création et édition de formules scientifiques et d'équations."
 
+#: source/math/registryitem_math.ulf#STR_REG_VAL_NEW
+msgid  "&New"
+msgstr "&Nouveau"
+
 #: source/math/registryitem_math.ulf#STR_REG_VAL_SO60_FORMULA
 msgid  "%SXWFORMATNAME %SXWFORMATVERSION Formula"
 msgstr "Formule %SXWFORMATNAME %SXWFORMATVERSION"
@@ -595,17 +599,17 @@ msgstr "Formule %SXWFORMATNAME %SXWFORMATVERSION"
 msgid  "OpenDocument Formula"
 msgstr "Formule OpenDocument"
 
-#: source/math/registryitem_math.ulf#STR_REG_VAL_NEW
-msgid  "&New"
-msgstr "&Nouveau"
-
 #: source/onlineupdate/module_onlineupdate.ulf#STR_NAME_MODULE_OPT_ONLINEUPDATE
 msgid  "Online Update"
 msgstr "Mise à jour en ligne"
 
 #: source/onlineupdate/module_onlineupdate.ulf#STR_DESC_MODULE_OPT_ONLINEUPDATE
 msgid  "Get automatically notified when a new update of %PRODUCTNAME becomes available."
-msgstr ""
+msgstr "Recevez une notification automatique lorsqu'une nouvelle mise à jour de %PRODUCTNAME est disponible."
+
+#: source/ooo/registryitem_ooo.ulf#STR_REG_VAL_NEW
+msgid  "&New"
+msgstr "&Nouveau"
 
 #: source/ooo/registryitem_ooo.ulf#STR_REG_VAL_INSTALL
 msgid  "&Install"
@@ -615,17 +619,13 @@ msgstr "&Installer"
 msgid  "OpenOffice.org 1.1 Configuration File"
 msgstr ""
 
-#: source/ooo/registryitem_ooo.ulf#STR_REG_VAL_APPCAPABILITY_DESCRIPTION_OOO
-msgid  "office productivity suite based on Apache OpenOffice project"
-msgstr ""
-
-#: source/ooo/registryitem_ooo.ulf#STR_REG_VAL_NEW
-msgid  "&New"
-msgstr "&Nouveau"
-
 #: source/ooo/registryitem_ooo.ulf#STR_REG_VAL_SO50_TEMPLATE_OOO
 msgid  "StarOffice 5.0 Template"
 msgstr "StarOffice 5.0 Modèle"
+
+#: source/ooo/registryitem_ooo.ulf#STR_REG_VAL_APPCAPABILITY_DESCRIPTION_OOO
+msgid  "office productivity suite based on Apache OpenOffice project"
+msgstr ""
 
 #: source/ooo/module_systemint.ulf#STR_NAME_MODULE_OPTIONAL_SYSTEMINTEGRATION
 msgid  "Desktop integration"
@@ -657,7 +657,7 @@ msgstr "Composants optionnels"
 
 #: source/ooo/module_ooo.ulf#STR_DESC_MODULE_OPTIONAL
 msgid  "Common components and additional programs shared by all %PRODUCTNAME programs."
-msgstr ""
+msgstr "Composants communs et programmes optionnels utilisés par les différentes applications de %PRODUCTNAME."
 
 #: source/ooo/module_ooo.ulf#STR_NAME_MODULE_DICTIONARIES
 msgid  "Dictionaries"
@@ -725,7 +725,7 @@ msgstr "Ouvrir un document"
 
 #: source/ooo/folderitem_ooo.ulf#STR_FI_TOOLTIP_SOFFICE
 msgid  "The office productivity suite compatible to the open and standardized ODF document format. Supported by The Apache Software Foundation."
-msgstr ""
+msgstr "La suite bureautique compatible avec le format de document ODF ouvert et normalisé. Supporté par la Fondation Apache."
 
 #: source/ooo/module_langpack.ulf#STR_NAME_MODULE_ROOT_LANGPACK
 msgid  "Additional language packs"
@@ -741,7 +741,7 @@ msgstr "Anglais"
 
 #: source/ooo/module_langpack.ulf#STR_DESC_MODULE_LANGPACK_EN_US
 msgid  "Installs English support in %PRODUCTNAME %PRODUCTVERSION"
-msgstr ""
+msgstr "Installe la prise en charge de l'anglais dans %PRODUCTNAME %PRODUCTVERSION"
 
 #: source/ooo/module_langpack.ulf#STR_NAME_MODULE_LANGPACK_DE
 msgid  "German"
@@ -749,7 +749,7 @@ msgstr "Allemand"
 
 #: source/ooo/module_langpack.ulf#STR_DESC_MODULE_LANGPACK_DE
 msgid  "Installs German support in %PRODUCTNAME %PRODUCTVERSION"
-msgstr ""
+msgstr "Installe la prise en charge de l'allemand dans %PRODUCTNAME %PRODUCTVERSION"
 
 #: source/ooo/module_langpack.ulf#STR_NAME_MODULE_LANGPACK_FR
 msgid  "French"
@@ -757,7 +757,7 @@ msgstr "Français"
 
 #: source/ooo/module_langpack.ulf#STR_DESC_MODULE_LANGPACK_FR
 msgid  "Installs French support in %PRODUCTNAME %PRODUCTVERSION"
-msgstr ""
+msgstr "Installe la prise en charge du français dans %PRODUCTNAME %PRODUCTVERSION"
 
 #: source/ooo/module_langpack.ulf#STR_NAME_MODULE_LANGPACK_IT
 msgid  "Italian"
@@ -765,7 +765,7 @@ msgstr "Italien"
 
 #: source/ooo/module_langpack.ulf#STR_DESC_MODULE_LANGPACK_IT
 msgid  "Installs Italian support in %PRODUCTNAME %PRODUCTVERSION"
-msgstr ""
+msgstr "Installe le support de langue italienne dans %PRODUCTNAME %PRODUCTVERSION"
 
 #: source/ooo/module_langpack.ulf#STR_NAME_MODULE_LANGPACK_ES
 msgid  "Spanish"
@@ -773,7 +773,7 @@ msgstr "Espagnol"
 
 #: source/ooo/module_langpack.ulf#STR_DESC_MODULE_LANGPACK_ES
 msgid  "Installs Spanish support in %PRODUCTNAME %PRODUCTVERSION"
-msgstr ""
+msgstr "Installe la prise en charge de l'espagnol dans %PRODUCTNAME %PRODUCTVERSION"
 
 #: source/ooo/module_langpack.ulf#STR_NAME_MODULE_LANGPACK_SV
 msgid  "Swedish"
@@ -781,7 +781,7 @@ msgstr "Suédois"
 
 #: source/ooo/module_langpack.ulf#STR_DESC_MODULE_LANGPACK_SV
 msgid  "Installs Swedish support in %PRODUCTNAME %PRODUCTVERSION"
-msgstr ""
+msgstr "Installe la prise en charge du suédois dans %PRODUCTNAME %PRODUCTVERSION"
 
 #: source/ooo/module_langpack.ulf#STR_NAME_MODULE_LANGPACK_PT
 msgid  "Portuguese"
@@ -789,7 +789,7 @@ msgstr "Portugais"
 
 #: source/ooo/module_langpack.ulf#STR_DESC_MODULE_LANGPACK_PT
 msgid  "Installs Portuguese support in %PRODUCTNAME %PRODUCTVERSION"
-msgstr ""
+msgstr "Installe la prise en charge du portugais dans %PRODUCTNAME %PRODUCTVERSION"
 
 #: source/ooo/module_langpack.ulf#STR_NAME_MODULE_LANGPACK_PT_BR
 msgid  "Portuguese (Brazil)"
@@ -797,7 +797,7 @@ msgstr "Portugais (Brésil)"
 
 #: source/ooo/module_langpack.ulf#STR_DESC_MODULE_LANGPACK_PT_BR
 msgid  "Installs Portuguese support in %PRODUCTNAME %PRODUCTVERSION"
-msgstr ""
+msgstr "Installe la prise en charge du portugais dans %PRODUCTNAME %PRODUCTVERSION"
 
 #: source/ooo/module_langpack.ulf#STR_NAME_MODULE_LANGPACK_JA
 msgid  "Japanese"
@@ -805,7 +805,7 @@ msgstr "Japonais"
 
 #: source/ooo/module_langpack.ulf#STR_DESC_MODULE_LANGPACK_JA
 msgid  "Installs Japanese support in %PRODUCTNAME %PRODUCTVERSION"
-msgstr ""
+msgstr "Installe la prise en charge du japonais dans %PRODUCTNAME %PRODUCTVERSION"
 
 #: source/ooo/module_langpack.ulf#STR_NAME_MODULE_LANGPACK_KO
 msgid  "Korean"
@@ -821,7 +821,7 @@ msgstr "Chinois (simplifié)"
 
 #: source/ooo/module_langpack.ulf#STR_DESC_MODULE_LANGPACK_ZH_CN
 msgid  "Installs Chinese (simplified) support in %PRODUCTNAME %PRODUCTVERSION"
-msgstr ""
+msgstr "Installe la prise en charge du chinois (chinois simplifié) dans %PRODUCTNAME %PRODUCTVERSION"
 
 #: source/ooo/module_langpack.ulf#STR_NAME_MODULE_LANGPACK_ZH_TW
 msgid  "Chinese (traditional)"
@@ -829,7 +829,7 @@ msgstr "Chinois (traditionnel)"
 
 #: source/ooo/module_langpack.ulf#STR_DESC_MODULE_LANGPACK_ZH_TW
 msgid  "Installs Chinese (traditional) support in %PRODUCTNAME %PRODUCTVERSION"
-msgstr ""
+msgstr "Installe la prise en charge du chinois (chinois traditionnel) dans %PRODUCTNAME %PRODUCTVERSION"
 
 #: source/ooo/module_langpack.ulf#STR_NAME_MODULE_LANGPACK_NL
 msgid  "Dutch"
@@ -837,7 +837,7 @@ msgstr "Néerlandais"
 
 #: source/ooo/module_langpack.ulf#STR_DESC_MODULE_LANGPACK_NL
 msgid  "Installs Dutch support in %PRODUCTNAME %PRODUCTVERSION"
-msgstr ""
+msgstr "Installe la prise en charge du néerlandais dans %PRODUCTNAME %PRODUCTVERSION"
 
 #: source/ooo/module_langpack.ulf#STR_NAME_MODULE_LANGPACK_HU
 msgid  "Hungarian"
@@ -845,7 +845,7 @@ msgstr "Hongrois"
 
 #: source/ooo/module_langpack.ulf#STR_DESC_MODULE_LANGPACK_HU
 msgid  "Installs Hungarian support in %PRODUCTNAME %PRODUCTVERSION"
-msgstr ""
+msgstr "Installe la prise en charge du hongrois dans %PRODUCTNAME %PRODUCTVERSION"
 
 #: source/ooo/module_langpack.ulf#STR_NAME_MODULE_LANGPACK_PL
 msgid  "Polish"
@@ -853,7 +853,7 @@ msgstr "Polonais"
 
 #: source/ooo/module_langpack.ulf#STR_DESC_MODULE_LANGPACK_PL
 msgid  "Installs Polish support in %PRODUCTNAME %PRODUCTVERSION"
-msgstr ""
+msgstr "Installe la prise en charge du polonais dans %PRODUCTNAME %PRODUCTVERSION"
 
 #: source/ooo/module_langpack.ulf#STR_NAME_MODULE_LANGPACK_RU
 msgid  "Russian"
@@ -893,7 +893,7 @@ msgstr "Tchèque"
 
 #: source/ooo/module_langpack.ulf#STR_DESC_MODULE_LANGPACK_CS
 msgid  "Installs Czech support in %PRODUCTNAME %PRODUCTVERSION"
-msgstr ""
+msgstr "Installe la prise en charge du tchèque dans %PRODUCTNAME %PRODUCTVERSION"
 
 #: source/ooo/module_langpack.ulf#STR_NAME_MODULE_LANGPACK_SK
 msgid  "Slovak"
@@ -901,7 +901,7 @@ msgstr "Slovaque"
 
 #: source/ooo/module_langpack.ulf#STR_DESC_MODULE_LANGPACK_SK
 msgid  "Installs Slovak support in %PRODUCTNAME %PRODUCTVERSION"
-msgstr ""
+msgstr "Installe la prise en charge du slovaque dans %PRODUCTNAME %PRODUCTVERSION"
 
 #: source/ooo/module_langpack.ulf#STR_NAME_MODULE_LANGPACK_HR
 msgid  "Croatian"
@@ -917,7 +917,7 @@ msgstr "Estonien"
 
 #: source/ooo/module_langpack.ulf#STR_DESC_MODULE_LANGPACK_ET
 msgid  "Installs Estonian support in %PRODUCTNAME %PRODUCTVERSION"
-msgstr ""
+msgstr "Installe la prise en charge de l'estonien dans %PRODUCTNAME %PRODUCTVERSION"
 
 #: source/ooo/module_langpack.ulf#STR_NAME_MODULE_LANGPACK_VI
 msgid  "Vietnamese"
@@ -925,7 +925,7 @@ msgstr "Vietnamien"
 
 #: source/ooo/module_langpack.ulf#STR_DESC_MODULE_LANGPACK_VI
 msgid  "Installs Vietnamese support in %PRODUCTNAME %PRODUCTVERSION"
-msgstr ""
+msgstr "Installe la prise en charge du vietnamien dans %PRODUCTNAME %PRODUCTVERSION"
 
 #: source/ooo/module_langpack.ulf#STR_NAME_MODULE_LANGPACK_BG
 msgid  "Bulgarian"
@@ -933,7 +933,7 @@ msgstr "Bulgare"
 
 #: source/ooo/module_langpack.ulf#STR_DESC_MODULE_LANGPACK_BG
 msgid  "Installs Bulgarian support in %PRODUCTNAME %PRODUCTVERSION"
-msgstr ""
+msgstr "Installe la prise en charge du bulgare dans %PRODUCTNAME %PRODUCTVERSION"
 
 #: source/ooo/module_langpack.ulf#STR_NAME_MODULE_LANGPACK_KM
 msgid  "Khmer"
@@ -949,7 +949,7 @@ msgstr "Panjabi"
 
 #: source/ooo/module_langpack.ulf#STR_DESC_MODULE_LANGPACK_PA_IN
 msgid  "Installs Punjabi support in %PRODUCTNAME %PRODUCTVERSION"
-msgstr ""
+msgstr "Installe la prise en charge du panjabi dans %PRODUCTNAME %PRODUCTVERSION"
 
 #: source/ooo/module_langpack.ulf#STR_NAME_MODULE_LANGPACK_GU_IN
 msgid  "Gujarati"
@@ -957,7 +957,7 @@ msgstr "Goujarati"
 
 #: source/ooo/module_langpack.ulf#STR_DESC_MODULE_LANGPACK_GU_IN
 msgid  "Installs Gujarati support in %PRODUCTNAME %PRODUCTVERSION"
-msgstr ""
+msgstr "Installe la prise en charge du goujarati dans %PRODUCTNAME %PRODUCTVERSION"
 
 #: source/ooo/module_langpack.ulf#STR_NAME_MODULE_LANGPACK_TA
 msgid  "Tamil"
@@ -981,7 +981,7 @@ msgstr "Hindi"
 
 #: source/ooo/module_langpack.ulf#STR_DESC_MODULE_LANGPACK_HI
 msgid  "Installs Hindi support in %PRODUCTNAME %PRODUCTVERSION"
-msgstr ""
+msgstr "Installe la prise en charge de l'hindi dans %PRODUCTNAME %PRODUCTVERSION"
 
 #: source/ooo/module_langpack.ulf#STR_NAME_MODULE_LANGPACK_HI_IN
 msgid  "Hindi"
@@ -989,7 +989,7 @@ msgstr "Hindi"
 
 #: source/ooo/module_langpack.ulf#STR_DESC_MODULE_LANGPACK_HI_IN
 msgid  "Installs Hindi support in %PRODUCTNAME %PRODUCTVERSION"
-msgstr ""
+msgstr "Installe la prise en charge de l'hindi dans %PRODUCTNAME %PRODUCTVERSION"
 
 #: source/ooo/module_langpack.ulf#STR_NAME_MODULE_LANGPACK_ST
 msgid  "Southern Sotho (Sutu)"
@@ -997,7 +997,7 @@ msgstr "Sotho du Sud (sutu)"
 
 #: source/ooo/module_langpack.ulf#STR_DESC_MODULE_LANGPACK_ST
 msgid  "Installs Southern Sotho (Sutu) support in %PRODUCTNAME %PRODUCTVERSION"
-msgstr ""
+msgstr "Installe la prise en charge du sotho du Sud dans %PRODUCTNAME %PRODUCTVERSION"
 
 #: source/ooo/module_langpack.ulf#STR_NAME_MODULE_LANGPACK_TN
 msgid  "Tswana"
@@ -1029,7 +1029,7 @@ msgstr "Afrikaans"
 
 #: source/ooo/module_langpack.ulf#STR_DESC_MODULE_LANGPACK_AF
 msgid  "Installs Afrikaans support in %PRODUCTNAME %PRODUCTVERSION"
-msgstr ""
+msgstr "Installe la prise en charge de l'afrikaans dans %PRODUCTNAME %PRODUCTVERSION"
 
 #: source/ooo/module_langpack.ulf#STR_NAME_MODULE_LANGPACK_SW
 msgid  "Swahili"
@@ -1037,7 +1037,7 @@ msgstr "Swahili"
 
 #: source/ooo/module_langpack.ulf#STR_DESC_MODULE_LANGPACK_SW
 msgid  "Installs Swahili support in %PRODUCTNAME %PRODUCTVERSION"
-msgstr ""
+msgstr "Installe la prise en charge du swahili dans %PRODUCTNAME %PRODUCTVERSION"
 
 #: source/ooo/module_langpack.ulf#STR_NAME_MODULE_LANGPACK_SW_TZ
 msgid  "Swahili"
@@ -1045,7 +1045,7 @@ msgstr "Swahili"
 
 #: source/ooo/module_langpack.ulf#STR_DESC_MODULE_LANGPACK_SW_TZ
 msgid  "Installs Swahili support in %PRODUCTNAME %PRODUCTVERSION"
-msgstr ""
+msgstr "Installe la prise en charge du swahili dans %PRODUCTNAME %PRODUCTVERSION"
 
 #: source/ooo/module_langpack.ulf#STR_NAME_MODULE_LANGPACK_LO
 msgid  "Lao"
@@ -1053,7 +1053,7 @@ msgstr "Laotien"
 
 #: source/ooo/module_langpack.ulf#STR_DESC_MODULE_LANGPACK_LO
 msgid  "Installs Lao support in %PRODUCTNAME %PRODUCTVERSION"
-msgstr ""
+msgstr "Installe la prise en charge du laotien dans %PRODUCTNAME %PRODUCTVERSION"
 
 #: source/ooo/module_langpack.ulf#STR_NAME_MODULE_LANGPACK_NS
 msgid  "Northern Sotho"
@@ -1061,7 +1061,7 @@ msgstr "Sotho du Nord"
 
 #: source/ooo/module_langpack.ulf#STR_DESC_MODULE_LANGPACK_NS
 msgid  "Installs Northern Sotho support in %PRODUCTNAME %PRODUCTVERSION"
-msgstr ""
+msgstr "Installe la prise en charge du sotho du Nord dans %PRODUCTNAME %PRODUCTVERSION"
 
 #: source/ooo/module_langpack.ulf#STR_NAME_MODULE_LANGPACK_BN
 msgid  "Bengali"
@@ -1069,7 +1069,7 @@ msgstr "Bengali"
 
 #: source/ooo/module_langpack.ulf#STR_DESC_MODULE_LANGPACK_BN
 msgid  "Installs Bengali support in %PRODUCTNAME %PRODUCTVERSION"
-msgstr ""
+msgstr "Installe la prise en charge du bengali (Bangladesh) dans %PRODUCTNAME %PRODUCTVERSION"
 
 #: source/ooo/module_langpack.ulf#STR_NAME_MODULE_LANGPACK_BN_BD
 msgid  "Bengali (Bangladesh)"
@@ -1077,7 +1077,7 @@ msgstr "Bengali (Bangladesh)"
 
 #: source/ooo/module_langpack.ulf#STR_DESC_MODULE_LANGPACK_BN_BD
 msgid  "Installs Bengali (Bangladesh) support in %PRODUCTNAME %PRODUCTVERSION"
-msgstr ""
+msgstr "Installe la prise en charge du bengali (Bangladesh) dans %PRODUCTNAME %PRODUCTVERSION"
 
 #: source/ooo/module_langpack.ulf#STR_NAME_MODULE_LANGPACK_BN_IN
 msgid  "Bengali (India)"
@@ -1085,7 +1085,7 @@ msgstr "Bengali (Inde)"
 
 #: source/ooo/module_langpack.ulf#STR_DESC_MODULE_LANGPACK_BN_IN
 msgid  "Installs Bengali (India) support in %PRODUCTNAME %PRODUCTVERSION"
-msgstr ""
+msgstr "Installe la prise en charge du bengali (Inde) dans %PRODUCTNAME %PRODUCTVERSION"
 
 #: source/ooo/module_langpack.ulf#STR_NAME_MODULE_LANGPACK_OR
 msgid  "Oriya"
@@ -1093,7 +1093,7 @@ msgstr "Oriya"
 
 #: source/ooo/module_langpack.ulf#STR_DESC_MODULE_LANGPACK_OR
 msgid  "Installs Oriya support in %PRODUCTNAME %PRODUCTVERSION"
-msgstr ""
+msgstr "Installe la prise en charge de l'oriya dans %PRODUCTNAME %PRODUCTVERSION"
 
 #: source/ooo/module_langpack.ulf#STR_NAME_MODULE_LANGPACK_OR_IN
 msgid  "Oriya"
@@ -1101,7 +1101,7 @@ msgstr "Oriya"
 
 #: source/ooo/module_langpack.ulf#STR_DESC_MODULE_LANGPACK_OR_IN
 msgid  "Installs Oriya support in %PRODUCTNAME %PRODUCTVERSION"
-msgstr ""
+msgstr "Installe la prise en charge de l'oriya dans %PRODUCTNAME %PRODUCTVERSION"
 
 #: source/ooo/module_langpack.ulf#STR_NAME_MODULE_LANGPACK_MR
 msgid  "Marathi"
@@ -1109,7 +1109,7 @@ msgstr "Marathi"
 
 #: source/ooo/module_langpack.ulf#STR_DESC_MODULE_LANGPACK_MR
 msgid  "Installs Marathi support in %PRODUCTNAME %PRODUCTVERSION"
-msgstr ""
+msgstr "Installe la prise en charge du marathi dans %PRODUCTNAME %PRODUCTVERSION"
 
 #: source/ooo/module_langpack.ulf#STR_NAME_MODULE_LANGPACK_MR_IN
 msgid  "Marathi"
@@ -1117,7 +1117,7 @@ msgstr "Marathi"
 
 #: source/ooo/module_langpack.ulf#STR_DESC_MODULE_LANGPACK_MR_IN
 msgid  "Installs Marathi support in %PRODUCTNAME %PRODUCTVERSION"
-msgstr ""
+msgstr "Installe la prise en charge du marathi dans %PRODUCTNAME %PRODUCTVERSION"
 
 #: source/ooo/module_langpack.ulf#STR_NAME_MODULE_LANGPACK_NE
 msgid  "Nepali"
@@ -1125,7 +1125,7 @@ msgstr "Népalais"
 
 #: source/ooo/module_langpack.ulf#STR_DESC_MODULE_LANGPACK_NE
 msgid  "Installs Nepali support in %PRODUCTNAME %PRODUCTVERSION"
-msgstr ""
+msgstr "Installe la prise en charge du népalais dans %PRODUCTNAME %PRODUCTVERSION"
 
 #: source/ooo/module_langpack.ulf#STR_NAME_MODULE_LANGPACK_AR
 msgid  "Arabic"
@@ -1133,7 +1133,7 @@ msgstr "Arabe"
 
 #: source/ooo/module_langpack.ulf#STR_DESC_MODULE_LANGPACK_AR
 msgid  "Installs Arabic support in %PRODUCTNAME %PRODUCTVERSION"
-msgstr ""
+msgstr "Installe la prise en charge de l'arabe dans %PRODUCTNAME %PRODUCTVERSION"
 
 #: source/ooo/module_langpack.ulf#STR_NAME_MODULE_LANGPACK_AR_SA
 msgid  "Arabic"
@@ -1141,7 +1141,7 @@ msgstr "Arabe"
 
 #: source/ooo/module_langpack.ulf#STR_DESC_MODULE_LANGPACK_AR_SA
 msgid  "Installs Arabic support in %PRODUCTNAME %PRODUCTVERSION"
-msgstr ""
+msgstr "Installe la prise en charge de l'arabe dans %PRODUCTNAME %PRODUCTVERSION"
 
 #: source/ooo/module_langpack.ulf#STR_NAME_MODULE_LANGPACK_CA
 msgid  "Catalan"
@@ -1149,7 +1149,7 @@ msgstr "Catalan"
 
 #: source/ooo/module_langpack.ulf#STR_DESC_MODULE_LANGPACK_CA
 msgid  "Installs Catalan support in %PRODUCTNAME %PRODUCTVERSION"
-msgstr ""
+msgstr "Installe la prise en charge du catalan dans %PRODUCTNAME %PRODUCTVERSION"
 
 #: source/ooo/module_langpack.ulf#STR_NAME_MODULE_LANGPACK_DA
 msgid  "Danish"
@@ -1165,7 +1165,7 @@ msgstr "Finnois"
 
 #: source/ooo/module_langpack.ulf#STR_DESC_MODULE_LANGPACK_FI
 msgid  "Installs Finnish support in %PRODUCTNAME %PRODUCTVERSION"
-msgstr ""
+msgstr "Installe la prise en charge du finnois dans %PRODUCTNAME %PRODUCTVERSION"
 
 #: source/ooo/module_langpack.ulf#STR_NAME_MODULE_LANGPACK_HE
 msgid  "Hebrew"
@@ -1173,7 +1173,7 @@ msgstr "Hébreu"
 
 #: source/ooo/module_langpack.ulf#STR_DESC_MODULE_LANGPACK_HE
 msgid  "Installs Hebrew support in %PRODUCTNAME %PRODUCTVERSION"
-msgstr ""
+msgstr "Installe la prise en charge de l'hébreu dans %PRODUCTNAME %PRODUCTVERSION"
 
 #: source/ooo/module_langpack.ulf#STR_NAME_MODULE_LANGPACK_IS
 msgid  "Icelandic"
@@ -1181,7 +1181,7 @@ msgstr "Islandais"
 
 #: source/ooo/module_langpack.ulf#STR_DESC_MODULE_LANGPACK_IS
 msgid  "Installs Icelandic support in %PRODUCTNAME %PRODUCTVERSION"
-msgstr ""
+msgstr "Installe la prise en charge de l'islandais dans %PRODUCTNAME %PRODUCTVERSION"
 
 #: source/ooo/module_langpack.ulf#STR_NAME_MODULE_LANGPACK_NB
 msgid  "Norwegian (Bokmål)"
@@ -1189,7 +1189,7 @@ msgstr "Norvégien (Bokmål)"
 
 #: source/ooo/module_langpack.ulf#STR_DESC_MODULE_LANGPACK_NB
 msgid  "Installs Norwegian (Bokmål) support in %PRODUCTNAME %PRODUCTVERSION"
-msgstr ""
+msgstr "Installe la prise en charge du norvégien (Bokmål) dans %PRODUCTNAME %PRODUCTVERSION"
 
 #: source/ooo/module_langpack.ulf#STR_NAME_MODULE_LANGPACK_NN
 msgid  "Norwegian (Nynorsk)"
@@ -1197,7 +1197,7 @@ msgstr "Norvégien (Nynorsk)"
 
 #: source/ooo/module_langpack.ulf#STR_DESC_MODULE_LANGPACK_NN
 msgid  "Installs Norwegian (Nynorsk) support in %PRODUCTNAME %PRODUCTVERSION"
-msgstr ""
+msgstr "Installe la prise en charge du norvégien (Nynorsk) dans %PRODUCTNAME %PRODUCTVERSION"
 
 #: source/ooo/module_langpack.ulf#STR_NAME_MODULE_LANGPACK_RM
 msgid  "Rhaeto-Romance"
@@ -1205,7 +1205,7 @@ msgstr "Rhéto-roman"
 
 #: source/ooo/module_langpack.ulf#STR_DESC_MODULE_LANGPACK_RM
 msgid  "Installs Rhaeto-Romance support in %PRODUCTNAME %PRODUCTVERSION"
-msgstr ""
+msgstr "Installe la prise en charge du rhéto-roman dans %PRODUCTNAME %PRODUCTVERSION"
 
 #: source/ooo/module_langpack.ulf#STR_NAME_MODULE_LANGPACK_RO
 msgid  "Romanian"
@@ -1213,7 +1213,7 @@ msgstr "Roumain"
 
 #: source/ooo/module_langpack.ulf#STR_DESC_MODULE_LANGPACK_RO
 msgid  "Installs Romanian support in %PRODUCTNAME %PRODUCTVERSION"
-msgstr ""
+msgstr "Installe la prise en charge du roumain dans %PRODUCTNAME %PRODUCTVERSION"
 
 #: source/ooo/module_langpack.ulf#STR_NAME_MODULE_LANGPACK_SQ
 msgid  "Albanian"
@@ -1221,7 +1221,7 @@ msgstr "Albanais"
 
 #: source/ooo/module_langpack.ulf#STR_DESC_MODULE_LANGPACK_SQ
 msgid  "Installs Albanian support in %PRODUCTNAME %PRODUCTVERSION"
-msgstr ""
+msgstr "Installe la prise en charge de l'albanais dans %PRODUCTNAME %PRODUCTVERSION"
 
 #: source/ooo/module_langpack.ulf#STR_NAME_MODULE_LANGPACK_UR
 msgid  "Urdu"
@@ -1229,7 +1229,7 @@ msgstr "Ourdou"
 
 #: source/ooo/module_langpack.ulf#STR_DESC_MODULE_LANGPACK_UR
 msgid  "Installs Urdu support in %PRODUCTNAME %PRODUCTVERSION"
-msgstr ""
+msgstr "Installe la prise en charge de l'ourdou dans %PRODUCTNAME %PRODUCTVERSION"
 
 #: source/ooo/module_langpack.ulf#STR_NAME_MODULE_LANGPACK_ID
 msgid  "Indonesian"
@@ -1237,7 +1237,7 @@ msgstr "Indonésien"
 
 #: source/ooo/module_langpack.ulf#STR_DESC_MODULE_LANGPACK_ID
 msgid  "Installs Indonesian support in %PRODUCTNAME %PRODUCTVERSION"
-msgstr ""
+msgstr "Installe la prise en charge de l'indonésien dans %PRODUCTNAME %PRODUCTVERSION"
 
 #: source/ooo/module_langpack.ulf#STR_NAME_MODULE_LANGPACK_UK
 msgid  "Ukrainian"
@@ -1245,7 +1245,7 @@ msgstr "Ukrainien"
 
 #: source/ooo/module_langpack.ulf#STR_DESC_MODULE_LANGPACK_UK
 msgid  "Installs Ukrainian support in %PRODUCTNAME %PRODUCTVERSION"
-msgstr ""
+msgstr "Installe la prise en charge de l'ukrainien dans %PRODUCTNAME %PRODUCTVERSION"
 
 #: source/ooo/module_langpack.ulf#STR_NAME_MODULE_LANGPACK_BE_BY
 msgid  "Belarusian"
@@ -1253,7 +1253,7 @@ msgstr "Biélorusse"
 
 #: source/ooo/module_langpack.ulf#STR_DESC_MODULE_LANGPACK_BE_BY
 msgid  "Installs Belarusian support in %PRODUCTNAME %PRODUCTVERSION"
-msgstr ""
+msgstr "Installe la prise en charge du biélorusse dans %PRODUCTNAME %PRODUCTVERSION"
 
 #: source/ooo/module_langpack.ulf#STR_NAME_MODULE_LANGPACK_SL
 msgid  "Slovenian"
@@ -1261,7 +1261,7 @@ msgstr "Slovène"
 
 #: source/ooo/module_langpack.ulf#STR_DESC_MODULE_LANGPACK_SL
 msgid  "Installs Slovenian support in %PRODUCTNAME %PRODUCTVERSION"
-msgstr ""
+msgstr "Installe la prise en charge du slovène dans %PRODUCTNAME %PRODUCTVERSION"
 
 #: source/ooo/module_langpack.ulf#STR_NAME_MODULE_LANGPACK_LV
 msgid  "Latvian"
@@ -1277,7 +1277,7 @@ msgstr "Lithuanien"
 
 #: source/ooo/module_langpack.ulf#STR_DESC_MODULE_LANGPACK_LT
 msgid  "Installs Lithuanian support in %PRODUCTNAME %PRODUCTVERSION"
-msgstr ""
+msgstr "Installe la prise en charge du lituanien dans %PRODUCTNAME %PRODUCTVERSION"
 
 #: source/ooo/module_langpack.ulf#STR_NAME_MODULE_LANGPACK_HY
 msgid  "Armenian"
@@ -1285,7 +1285,7 @@ msgstr "Arménien"
 
 #: source/ooo/module_langpack.ulf#STR_DESC_MODULE_LANGPACK_HY
 msgid  "Installs Armenian support in %PRODUCTNAME %PRODUCTVERSION"
-msgstr ""
+msgstr "Installe la prise en charge de l'arménien dans %PRODUCTNAME %PRODUCTVERSION"
 
 #: source/ooo/module_langpack.ulf#STR_NAME_MODULE_LANGPACK_EU
 msgid  "Basque"
@@ -1301,7 +1301,7 @@ msgstr "Macédonien"
 
 #: source/ooo/module_langpack.ulf#STR_DESC_MODULE_LANGPACK_MK
 msgid  "Installs Macedonian support in %PRODUCTNAME %PRODUCTVERSION"
-msgstr ""
+msgstr "Installe la prise en charge du macédonien dans %PRODUCTNAME %PRODUCTVERSION"
 
 #: source/ooo/module_langpack.ulf#STR_NAME_MODULE_LANGPACK_MT
 msgid  "Maltese"
@@ -1309,7 +1309,7 @@ msgstr "Maltais"
 
 #: source/ooo/module_langpack.ulf#STR_DESC_MODULE_LANGPACK_MT
 msgid  "Installs Maltese support in %PRODUCTNAME %PRODUCTVERSION"
-msgstr ""
+msgstr "Installe la prise en charge du maltais dans %PRODUCTNAME %PRODUCTVERSION"
 
 #: source/ooo/module_langpack.ulf#STR_NAME_MODULE_LANGPACK_CY
 msgid  "Welsh"
@@ -1317,7 +1317,7 @@ msgstr "Gallois"
 
 #: source/ooo/module_langpack.ulf#STR_DESC_MODULE_LANGPACK_CY
 msgid  "Installs Welsh support in %PRODUCTNAME %PRODUCTVERSION"
-msgstr ""
+msgstr "Installe la prise en charge du gallois dans %PRODUCTNAME %PRODUCTVERSION"
 
 #: source/ooo/module_langpack.ulf#STR_NAME_MODULE_LANGPACK_GL
 msgid  "Galician"
@@ -1325,7 +1325,7 @@ msgstr "Galicien"
 
 #: source/ooo/module_langpack.ulf#STR_DESC_MODULE_LANGPACK_GL
 msgid  "Installs Galician support in %PRODUCTNAME %PRODUCTVERSION"
-msgstr ""
+msgstr "Installe la prise en charge du galicien dans %PRODUCTNAME %PRODUCTVERSION"
 
 #: source/ooo/module_langpack.ulf#STR_NAME_MODULE_LANGPACK_SH_YU
 msgid  "Serbian (Latin)"
@@ -1333,7 +1333,7 @@ msgstr "Serbe (Latin)"
 
 #: source/ooo/module_langpack.ulf#STR_DESC_MODULE_LANGPACK_SH_YU
 msgid  "Installs Serbian (Latin) support in %PRODUCTNAME %PRODUCTVERSION"
-msgstr ""
+msgstr "Installe la prise en charge du serbe (latin) dans %PRODUCTNAME %PRODUCTVERSION"
 
 #: source/ooo/module_langpack.ulf#STR_NAME_MODULE_LANGPACK_SH
 msgid  "Serbian (Latin)"
@@ -1341,7 +1341,7 @@ msgstr "Serbe (Latin)"
 
 #: source/ooo/module_langpack.ulf#STR_DESC_MODULE_LANGPACK_SH
 msgid  "Installs Serbian (Latin) support in %PRODUCTNAME %PRODUCTVERSION"
-msgstr ""
+msgstr "Installe la prise en charge du serbe (latin) dans %PRODUCTNAME %PRODUCTVERSION"
 
 #: source/ooo/module_langpack.ulf#STR_NAME_MODULE_LANGPACK_GA
 msgid  "Irish"
@@ -1349,7 +1349,7 @@ msgstr "Irlandais"
 
 #: source/ooo/module_langpack.ulf#STR_DESC_MODULE_LANGPACK_GA
 msgid  "Installs Irish support in %PRODUCTNAME %PRODUCTVERSION"
-msgstr ""
+msgstr "Installe la prise en charge de l'irlandais dans %PRODUCTNAME %PRODUCTVERSION"
 
 #: source/ooo/module_langpack.ulf#STR_NAME_MODULE_LANGPACK_SR_CS
 msgid  "Serbian (Cyrillic)"
@@ -1357,7 +1357,7 @@ msgstr "Serbe (Cyrillique)"
 
 #: source/ooo/module_langpack.ulf#STR_DESC_MODULE_LANGPACK_SR_CS
 msgid  "Installs Serbian (Cyrillic) support in %PRODUCTNAME %PRODUCTVERSION"
-msgstr ""
+msgstr "Installe la prise en charge du serbe (cyrillique) dans %PRODUCTNAME %PRODUCTVERSION"
 
 #: source/ooo/module_langpack.ulf#STR_NAME_MODULE_LANGPACK_SR
 msgid  "Serbian (Cyrillic)"
@@ -1365,7 +1365,7 @@ msgstr "Serbe (Cyrillique)"
 
 #: source/ooo/module_langpack.ulf#STR_DESC_MODULE_LANGPACK_SR
 msgid  "Installs Serbian (Cyrillic) support in %PRODUCTNAME %PRODUCTVERSION"
-msgstr ""
+msgstr "Installe la prise en charge du serbe (cyrillique) dans %PRODUCTNAME %PRODUCTVERSION"
 
 #: source/ooo/module_langpack.ulf#STR_NAME_MODULE_LANGPACK_BS
 msgid  "Bosnian"
@@ -1373,7 +1373,7 @@ msgstr "Bosnien"
 
 #: source/ooo/module_langpack.ulf#STR_DESC_MODULE_LANGPACK_BS
 msgid  "Installs Bosnian support in %PRODUCTNAME %PRODUCTVERSION"
-msgstr ""
+msgstr "Installe la prise en charge du bosnien dans %PRODUCTNAME %PRODUCTVERSION"
 
 #: source/ooo/module_langpack.ulf#STR_NAME_MODULE_LANGPACK_AS_IN
 msgid  "Assamese"
@@ -1381,7 +1381,7 @@ msgstr "Assamais"
 
 #: source/ooo/module_langpack.ulf#STR_DESC_MODULE_LANGPACK_AS_IN
 msgid  "Installs Assamese support in %PRODUCTNAME %PRODUCTVERSION"
-msgstr ""
+msgstr "Installe la prise en charge de l'assamais dans %PRODUCTNAME %PRODUCTVERSION"
 
 #: source/ooo/module_langpack.ulf#STR_NAME_MODULE_LANGPACK_RW
 msgid  "Kinyarwanda"
@@ -1389,7 +1389,7 @@ msgstr "Kinyarwanda"
 
 #: source/ooo/module_langpack.ulf#STR_DESC_MODULE_LANGPACK_RW
 msgid  "Installs Kinyarwanda support in %PRODUCTNAME %PRODUCTVERSION"
-msgstr ""
+msgstr "Installe la prise en charge du kinyarwanda dans %PRODUCTNAME %PRODUCTVERSION"
 
 #: source/ooo/module_langpack.ulf#STR_NAME_MODULE_LANGPACK_SA
 msgid  "Sanskrit"
@@ -1397,7 +1397,7 @@ msgstr "Sanskrit"
 
 #: source/ooo/module_langpack.ulf#STR_DESC_MODULE_LANGPACK_SA
 msgid  "Installs Sanskrit support in %PRODUCTNAME %PRODUCTVERSION"
-msgstr ""
+msgstr "Installe la prise en charge du sanskrit dans %PRODUCTNAME %PRODUCTVERSION"
 
 #: source/ooo/module_langpack.ulf#STR_NAME_MODULE_LANGPACK_FA
 msgid  "Persian"
@@ -1413,7 +1413,7 @@ msgstr "Féringien"
 
 #: source/ooo/module_langpack.ulf#STR_DESC_MODULE_LANGPACK_FO
 msgid  "Installs Faroese support in %PRODUCTNAME %PRODUCTVERSION"
-msgstr ""
+msgstr "Installe la prise en charge du féringien dans %PRODUCTNAME %PRODUCTVERSION"
 
 #: source/ooo/module_langpack.ulf#STR_NAME_MODULE_LANGPACK_SB
 msgid  "Sorbian"
@@ -1445,7 +1445,7 @@ msgstr "Yiddish"
 
 #: source/ooo/module_langpack.ulf#STR_DESC_MODULE_LANGPACK_YI
 msgid  "Installs Yiddish support in %PRODUCTNAME %PRODUCTVERSION"
-msgstr ""
+msgstr "Installe la prise en charge du yiddish dans %PRODUCTNAME %PRODUCTVERSION"
 
 #: source/ooo/module_langpack.ulf#STR_NAME_MODULE_LANGPACK_BR
 msgid  "Breton"
@@ -1461,7 +1461,7 @@ msgstr "Sud Ndebele"
 
 #: source/ooo/module_langpack.ulf#STR_DESC_MODULE_LANGPACK_NR
 msgid  "Installs Ndebele South support in %PRODUCTNAME %PRODUCTVERSION"
-msgstr ""
+msgstr "Installe la prise en charge du sud ndebele dans %PRODUCTNAME %PRODUCTVERSION"
 
 #: source/ooo/module_langpack.ulf#STR_NAME_MODULE_LANGPACK_SS
 msgid  "Swazi"
@@ -1485,7 +1485,7 @@ msgstr "Kannada"
 
 #: source/ooo/module_langpack.ulf#STR_DESC_MODULE_LANGPACK_KN
 msgid  "Installs Kannada support in %PRODUCTNAME %PRODUCTVERSION"
-msgstr ""
+msgstr "Installe la prise en charge du kannada dans %PRODUCTNAME %PRODUCTVERSION"
 
 #: source/ooo/module_langpack.ulf#STR_NAME_MODULE_LANGPACK_MS
 msgid  "Malay (Malaysian)"
@@ -1493,7 +1493,7 @@ msgstr "Malais (Malaisien)"
 
 #: source/ooo/module_langpack.ulf#STR_DESC_MODULE_LANGPACK_MS
 msgid  "Installs Malay (Malaysian) support in %PRODUCTNAME %PRODUCTVERSION"
-msgstr ""
+msgstr "Installe la prise en charge du malais (malaisien) dans %PRODUCTNAME %PRODUCTVERSION"
 
 #: source/ooo/module_langpack.ulf#STR_NAME_MODULE_LANGPACK_TG
 msgid  "Tajik"
@@ -1517,7 +1517,7 @@ msgstr "Dzongkha"
 
 #: source/ooo/module_langpack.ulf#STR_DESC_MODULE_LANGPACK_DZ
 msgid  "Installs Dzongkha support in %PRODUCTNAME %PRODUCTVERSION"
-msgstr ""
+msgstr "Installe la prise en charge du dzongkha dans %PRODUCTNAME %PRODUCTVERSION"
 
 #: source/ooo/module_langpack.ulf#STR_NAME_MODULE_LANGPACK_KA
 msgid  "Georgian"
@@ -1533,7 +1533,7 @@ msgstr "Espéranto"
 
 #: source/ooo/module_langpack.ulf#STR_DESC_MODULE_LANGPACK_EO
 msgid  "Installs Esperanto support in %PRODUCTNAME %PRODUCTVERSION"
-msgstr ""
+msgstr "Installe la prise en charge de l'espéranto dans %PRODUCTNAME %PRODUCTVERSION"
 
 #: source/ooo/module_langpack.ulf#STR_NAME_MODULE_LANGPACK_GU
 msgid  "Gujarati"
@@ -1541,7 +1541,7 @@ msgstr "Gujarati"
 
 #: source/ooo/module_langpack.ulf#STR_DESC_MODULE_LANGPACK_GU
 msgid  "Installs Gujarati support in %PRODUCTNAME %PRODUCTVERSION"
-msgstr ""
+msgstr "Installe la prise en charge du gujarati dans %PRODUCTNAME %PRODUCTVERSION"
 
 #: source/ooo/module_langpack.ulf#STR_NAME_MODULE_LANGPACK_EN_ZA
 msgid  "English (South Africa)"
@@ -1549,7 +1549,7 @@ msgstr "Anglais (Afrique du Sud)"
 
 #: source/ooo/module_langpack.ulf#STR_DESC_MODULE_LANGPACK_EN_ZA
 msgid  "Installs English (South Africa) support in %PRODUCTNAME %PRODUCTVERSION"
-msgstr ""
+msgstr "Installe la prise en charge de l'anglais (Afrique du Sud) dans %PRODUCTNAME %PRODUCTVERSION"
 
 #: source/ooo/module_langpack.ulf#STR_NAME_MODULE_LANGPACK_EN_GB
 msgid  "English (United Kingdom)"
@@ -1557,7 +1557,7 @@ msgstr "Anglais (Royaume Uni)"
 
 #: source/ooo/module_langpack.ulf#STR_DESC_MODULE_LANGPACK_EN_GB
 msgid  "Installs English (United Kingdom) support in %PRODUCTNAME %PRODUCTVERSION"
-msgstr ""
+msgstr "Installe la prise en charge de l'anglais (Royaume Uni) dans %PRODUCTNAME %PRODUCTVERSION"
 
 #: source/ooo/module_langpack.ulf#STR_NAME_MODULE_LANGPACK_UR_IN
 msgid  "Urdu"
@@ -1565,7 +1565,7 @@ msgstr "Urdu"
 
 #: source/ooo/module_langpack.ulf#STR_DESC_MODULE_LANGPACK_UR_IN
 msgid  "Installs Urdu support in %PRODUCTNAME %PRODUCTVERSION"
-msgstr ""
+msgstr "Installe la prise en charge de l'ourdou dans %PRODUCTNAME %PRODUCTVERSION"
 
 #: source/ooo/module_langpack.ulf#STR_NAME_MODULE_LANGPACK_ML_IN
 msgid  "Malayalam"
@@ -1573,7 +1573,7 @@ msgstr "Malayalam"
 
 #: source/ooo/module_langpack.ulf#STR_DESC_MODULE_LANGPACK_ML_IN
 msgid  "Installs Malayalam support in %PRODUCTNAME %PRODUCTVERSION"
-msgstr ""
+msgstr "Installe la prise en charge du malayalam dans %PRODUCTNAME %PRODUCTVERSION"
 
 #: source/ooo/module_langpack.ulf#STR_NAME_MODULE_LANGPACK_TE_IN
 msgid  "Telugu"
@@ -1589,7 +1589,7 @@ msgstr "Tigrinya"
 
 #: source/ooo/module_langpack.ulf#STR_DESC_MODULE_LANGPACK_TI_ER
 msgid  "Installs Tigrinya support in %PRODUCTNAME %PRODUCTVERSION"
-msgstr ""
+msgstr "Installe la prise en charge du tigrinya dans %PRODUCTNAME %PRODUCTVERSION"
 
 #: source/ooo/module_langpack.ulf#STR_NAME_MODULE_LANGPACK_UZ
 msgid  "Uzbek"
@@ -1597,7 +1597,7 @@ msgstr "Ouzbek"
 
 #: source/ooo/module_langpack.ulf#STR_DESC_MODULE_LANGPACK_UZ
 msgid  "Installs Uzbek support in %PRODUCTNAME %PRODUCTVERSION"
-msgstr ""
+msgstr "Installe la prise en charge de l'ouzbek dans %PRODUCTNAME %PRODUCTVERSION"
 
 #: source/ooo/module_langpack.ulf#STR_NAME_MODULE_LANGPACK_MN
 msgid  "Mongolian"
@@ -1613,7 +1613,7 @@ msgstr "Occitan"
 
 #: source/ooo/module_langpack.ulf#STR_DESC_MODULE_LANGPACK_OC
 msgid  "Installs Occitan support in %PRODUCTNAME %PRODUCTVERSION"
-msgstr ""
+msgstr "Installe la prise en charge de l'Occitan dans %PRODUCTNAME %PRODUCTVERSION"
 
 #: source/ooo/module_langpack.ulf#STR_NAME_MODULE_LANGPACK_UG
 msgid  "Uighur"
@@ -1621,7 +1621,7 @@ msgstr "Ouïghour"
 
 #: source/ooo/module_langpack.ulf#STR_DESC_MODULE_LANGPACK_UG
 msgid  "Installs Uighur support in %PRODUCTNAME %PRODUCTVERSION"
-msgstr ""
+msgstr "Installe la prise en charge du Ouïghour dans %PRODUCTNAME %PRODUCTVERSION"
 
 #: source/ooo/module_langpack.ulf#STR_NAME_MODULE_LANGPACK_SI
 msgid  "Sinhala"
@@ -1629,7 +1629,7 @@ msgstr "Cingalais"
 
 #: source/ooo/module_langpack.ulf#STR_DESC_MODULE_LANGPACK_SI
 msgid  "Installs Sinhala support in %PRODUCTNAME %PRODUCTVERSION"
-msgstr ""
+msgstr "Installe la prise en charge du Cingalais dans %PRODUCTNAME %PRODUCTVERSION"
 
 #: source/ooo/module_langpack.ulf#STR_NAME_MODULE_LANGPACK_OM
 msgid  "Oromo"
@@ -1645,7 +1645,7 @@ msgstr "Asturien"
 
 #: source/ooo/module_langpack.ulf#STR_DESC_MODULE_LANGPACK_AST
 msgid  "Installs Asturian support in %PRODUCTNAME %PRODUCTVERSION"
-msgstr ""
+msgstr "Installe la prise en charge de l'Asturien dans %PRODUCTNAME %PRODUCTVERSION"
 
 #: source/ooo/module_langpack.ulf#STR_NAME_MODULE_LANGPACK_GD
 msgid  "Gaelic (Scotland)"
@@ -1669,7 +1669,7 @@ msgstr "Passerelle Python-UNO"
 
 #: source/python/module_python.ulf#STR_DESC_MODULE_OPTIONAL_PYTHON
 msgid  "Adds the ability to automate %PRODUCTNAME with the python scripting language. See http://udk.openoffice.org/python/python-bridge.html for a complete documentation."
-msgstr ""
+msgstr "Permet d'automatiser %PRODUCTNAME avec le language de script Python. Une documentation complète est disponible sur http://udk.openoffice.org/python/python-bridge.html."
 
 #: source/quickstart/module_quickstart.ulf#STR_NAME_MODULE_OPTIONAL_QUICKSTART
 msgid  "Quickstarter"
@@ -1677,7 +1677,7 @@ msgstr "Démarrage rapide"
 
 #: source/quickstart/module_quickstart.ulf#STR_DESC_MODULE_OPTIONAL_QUICKSTART
 msgid  "Loads basic components on system start to accelerate start up time of %PRODUCTNAME %PRODUCTVERSION."
-msgstr ""
+msgstr "Charge les composants standard au démarrage du système afin d'accélérer le démarrage de %PRODUCTNAME %PRODUCTVERSION."
 
 #: source/sdkoo/module_sdkoo.ulf#STR_NAME_MODULE_OPTIONAL_SDKOO
 msgid  "Software Development Kit (SDK)"
@@ -1685,7 +1685,7 @@ msgstr "Software Development Kit (SDK)"
 
 #: source/sdkoo/module_sdkoo.ulf#STR_DESC_MODULE_OPTIONAL_SDKOO
 msgid  "The SDK provides all necessary tools, examples and documentation to program with and for the office."
-msgstr ""
+msgstr "Le SDK fournit tous les outils nécessaires, les exemples et la documentation pour programmer avec et pour la suite bureautique."
 
 #: source/winexplorerext/module_winexplorerext.ulf#STR_NAME_MODULE_OPTIONAL_WINDOWS_EXPLORER_EXTENSIONS
 msgid  "Windows Explorer Extension"
@@ -1693,7 +1693,7 @@ msgstr "Extension de Windows Explorer"
 
 #: source/winexplorerext/module_winexplorerext.ulf#STR_DESC_MODULE_OPTIONAL_WINDOWS_EXPLORER_EXTENSIONS
 msgid  "Enables the Microsoft Windows Explorer to show information about %PRODUCTNAME documents, such as thumbnail previews."
-msgstr ""
+msgstr "Permet à l'Explorateur Microsoft Windows d'afficher les informations relatives aux documents %PRODUCTNAME, tels que des aperçus miniatures."
 
 #: source/writer/folderitem_writer.ulf#STR_FI_NAME_HTMLDOKUMENT
 msgid  "HTML Document"
@@ -1705,7 +1705,11 @@ msgstr "Texte"
 
 #: source/writer/folderitem_writer.ulf#STR_FI_TOOLTIP_WRITER
 msgid  "Create and edit text and graphics in letters, reports, documents and Web pages by using Writer."
-msgstr ""
+msgstr "Writer : création et édition de textes et d'images pour courriers, rapports, documents et pages Web."
+
+#: source/writer/registryitem_writer.ulf#STR_REG_VAL_NEW
+msgid  "&New"
+msgstr "&Nouveau"
 
 #: source/writer/registryitem_writer.ulf#STR_REG_VAL_SO60_TEXT
 msgid  "%SXWFORMATNAME %SXWFORMATVERSION Text Document"
@@ -1755,17 +1759,13 @@ msgstr "Modèle Microsoft Word"
 msgid  "Rich Text Document"
 msgstr "Document Rich Text"
 
-#: source/writer/registryitem_writer.ulf#STR_REG_VAL_NEW
-msgid  "&New"
-msgstr "&Nouveau"
-
 #: source/writer/module_writer.ulf#STR_NAME_MODULE_PRG_WRT
 msgid  "%PRODUCTNAME Writer"
 msgstr "%PRODUCTNAME Writer"
 
 #: source/writer/module_writer.ulf#STR_DESC_MODULE_PRG_WRT
 msgid  "Create and edit text and graphics in letters, reports, documents and Web pages by using %PRODUCTNAME Writer."
-msgstr ""
+msgstr "%PRODUCTNAME Writer : création et édition de textes et d'images pour courriers, rapports, documents et pages Web."
 
 #: source/writer/module_writer.ulf#STR_NAME_MODULE_PRG_WRT_BIN
 msgid  "Program Module"

@@ -57,7 +57,7 @@ msgstr "Andmeallika nimi"
 
 #: source/abpilot/abspilot.src#RID_PAGE_SELECTABTYPE.FT_TYPE_HINTS.FixedText.Text
 msgid  "%PRODUCTNAME lets you access address data already present in your system. To do this, a %PRODUCTNAME data source will be created in which your address data is available in tabular form.\n\nThis wizard helps you create the data source."
-msgstr ""
+msgstr "%PRODUCTNAME võimaldab ligipääsu süsteemis olemasolevatele aadressiraamatutele. Selleks on vaja luua andmeallikas, milles on sinu aadressandmed tabeli kujul.\n\nSee nõustaja aitab sul andmeallikat luua."
 
 #: source/abpilot/abspilot.src#RID_PAGE_SELECTABTYPE.FL_TYPE.FixedLine.Text
 msgid  "Please select the type of your external address book:"
@@ -109,7 +109,7 @@ msgstr "Muu väline andmeallikas"
 
 #: source/abpilot/abspilot.src#RID_PAGE_ADMININVOKATION.FT_ADMINEXPLANATION.FixedText.Text
 msgid  "To set up the new data source, additional information is required.\n\nClick the following button to open another dialog in which you then enter the necessary information."
-msgstr ""
+msgstr "Uue andmeallika loomiseks on vaja lisainfot.\n\nNupule klõpsates avaneb vajaliku info sisestamise dialoog."
 
 #: source/abpilot/abspilot.src#RID_PAGE_ADMININVOKATION.PB_INVOKE_ADMIN_DIALOG.PushButton.Text
 msgid  "Settings"
@@ -117,15 +117,15 @@ msgstr "Sätted"
 
 #: source/abpilot/abspilot.src#RID_PAGE_ADMININVOKATION.FT_ERROR.FixedText.Text
 msgid  "The connection to the data source could not be established.\nBefore you proceed, please check the settings made, or (on the previous page) choose another address data source type."
-msgstr ""
+msgstr "Ühenduse loomine andmeallikaga ei õnnestunud.\nPalun kontrolli enne jätkamist oma sätteid või vali eelmiselt lehelt mõni muu andmeallika tüüp."
 
 #: source/abpilot/abspilot.src#RID_PAGE_TABLESELECTION_AB.FL_TOOMUCHTABLES.FixedText.Text
 msgid  "The external data source you have chosen contains more than one address book.\nPlease select the one you mainly want to work with:"
-msgstr ""
+msgstr "Sinu poolt valitud väline andmeallikas sisaldab rohkem kui üht aadressiraamatut.\nPalun vali, millist sa kavatsed põhiliselt kasutada:"
 
 #: source/abpilot/abspilot.src#RID_PAGE_FIELDMAPPING.FT_FIELDASSIGMENTEXPL.FixedText.Text
-msgid  "To incorporate the address data in your templates, %PRODUCTNAME has to know which fields contain which data.\n\nFor instance, you could have stored the e-mail addresses in a field named "email", or "E-mail" or "EM" - or something completely different.\n\nClick the button below to open another dialog where you can enter the settings for your data source."
-msgstr ""
+msgid  "To incorporate the address data in your templates, %PRODUCTNAME has to know which fields contain which data.\n\nFor instance, you could have stored the e-mail addresses in a field named \"email\", or \"E-mail\" or \"EM\" - or something completely different.\n\nClick the button below to open another dialog where you can enter the settings for your data source."
+msgstr "Aadressandmete mallidesse lisamiseks peab %PRODUCTNAME teadma, mis väli milliseid andmeid sisaldab.\n\nNäiteks võid sa hoida meiliaddresse väljas nimega \"email\", \"E-mail\" või \"EM\" - või hoopis mõnes muus.\n\nKlõpsates allpool oleval nupul avaneb uus dialoog, milles saad määratleda andmeallika sätteid."
 
 #: source/abpilot/abspilot.src#RID_PAGE_FIELDMAPPING.PB_INVOKE_FIELDS_DIALOG.PushButton.Text
 msgid  "Field Assignment"
@@ -133,7 +133,7 @@ msgstr "Välja omistamine"
 
 #: source/abpilot/abspilot.src#RID_PAGE_FINAL.FT_FINISH_EXPL.FixedText.Text
 msgid  "That was all the information necessary to integrate your address data into %PRODUCTNAME.\n\nNow, just enter the name under which you want to register the data source in %PRODUCTNAME."
-msgstr ""
+msgstr "See oligi kogu aadressandmete %PRODUCTNAME-iga integreerimiseks vajalik info.\n\nNüüd sisesta veel uue %PRODUCTNAME-i andmeallika nimi."
 
 #: source/abpilot/abspilot.src#RID_PAGE_FINAL.FT_LOCATION.FixedText.Text
 msgid  "Location"
@@ -153,7 +153,7 @@ msgstr "Aadressiraamatu nimi"
 
 #: source/abpilot/abspilot.src#RID_PAGE_FINAL.FT_DUPLICATENAME.FixedText.Text
 msgid  "Another data source already has this name. As data sources have to have globally unique names, you need to choose another one."
-msgstr ""
+msgstr "See nimi on juba teisel andmeallikal. Kuna andmeallikatel peavad olema unikaalsed nimed, siis pead sa mõne muu nime valima."
 
 #: source/abpilot/abspilot.src#RID_ERR_NEEDTYPESELECTION.ErrorBox.Message
 msgid  "Please select a type of address book."
@@ -161,7 +161,7 @@ msgstr "Palun vali aadressiraamatu tüüp."
 
 #: source/abpilot/abspilot.src#RID_QRY_NOTABLES.QueryBox.Message
 msgid  "The data source does not contain any tables.\nDo you want to set it up as an address data source, anyway?"
-msgstr ""
+msgstr "Andmeallikas ei sisalda ühtegi tabelit.\nKas sa soovid määrata seda siiski aadressandmete allikaks?"
 
 #: source/abpilot/abspilot.src#RID_STR_DEFAULT_NAME.String.Text
 msgid  "Addresses"
@@ -184,8 +184,8 @@ msgid  "Address Data - Field Assignment"
 msgstr "Aadressandmed - väljade omistamine"
 
 #: source/abpilot/abspilot.src#RID_STR_NOFIELDSASSIGNED.String.Text
-msgid  "There are no fields assigned at this time.\nYou can either assign fields now or do so later by first choosing:\n"File - Template - Address Book Source...""
-msgstr ""
+msgid  "There are no fields assigned at this time.\nYou can either assign fields now or do so later by first choosing:\n\"File - Template - Address Book Source...\""
+msgstr "Hetkel pole veel ühtegi välja omistatud.\nVälju saab omistada praegu või ka hiljem valides:\n\"Fail - Mallid - Aadressiraamatu allikas...\""
 
 #: source/bibliography/toolbar.src#RID_BIB_TOOLBAR.TBC_FT_SOURCE.ToolBoxItem.Text
 msgid  "Table"
@@ -493,7 +493,7 @@ msgstr "Juhtelement"
 
 #: source/dbpilots/listcombopages.src#RID_PAGE_LCW_CONTENTSELECTION_TABLE.FT_SELECTTABLE_LABEL.FixedText.Text
 msgid  "On the right side, you see all the tables from the data source of the form.\n\n\nChoose the table from which the data should be used as basis for the list content:"
-msgstr ""
+msgstr "Paremal poolel on kõik vormi andmeallika tabelid.\n\n\nVali tabel, mille andmeid kasutada loendi sisuna:"
 
 #: source/dbpilots/listcombopages.src#RID_PAGE_LCW_CONTENTSELECTION_FIELD.TabPage.Text
 msgid  "Field Selection"
@@ -513,7 +513,7 @@ msgstr "Valitud välja sisu hakatakse näitama liitboksis."
 
 #: source/dbpilots/listcombopages.src#RID_PAGE_LCW_CONTENTSELECTION_FIELD.STR_FIELDINFO_LISTBOX.String.Text
 msgid  "The contents of the selected field will be shown in the list box if the linked fields are identical."
-msgstr ""
+msgstr "Valitud välja sisu hakatakse näitama loendiboksis juhul, kui lingitud väljad on identsed."
 
 #: source/dbpilots/listcombopages.src#RID_PAGE_LCW_FIELDLINK.TabPage.Text
 msgid  "Field Link"
@@ -521,7 +521,7 @@ msgstr "Välja link"
 
 #: source/dbpilots/listcombopages.src#RID_PAGE_LCW_FIELDLINK.FT_FIELDLINK_DESC.FixedText.Text
 msgid  "This is where you select fields with matching contents so that the value from the display field will be shown."
-msgstr ""
+msgstr "Siin saad sa valida vastava sisuga väljasid nii, et näidatakse kuvamisvälja väärtusi."
 
 #: source/dbpilots/listcombopages.src#RID_PAGE_LCW_FIELDLINK.FT_VALUELISTFIELD.FixedText.Text
 msgid  "Field from the ~Value Table"
@@ -533,7 +533,7 @@ msgstr "Väli ~loendi tabelist"
 
 #: source/dbpilots/listcombopages.src#RID_STR_COMBOWIZ_DBFIELD.String.Text
 msgid  "You can either save the value of the combo box in a database field or use it for display purposes."
-msgstr ""
+msgstr "Sa saad salvestada liitboksi väärtust andmebaasis või kasutada seda lihtsalt näitamiseks."
 
 #: source/dbpilots/gridpages.src#RID_PAGE_GW_FIELDSELECTION.TabPage.Text
 msgid  "Field Selection"
@@ -589,7 +589,7 @@ msgstr "Andmed"
 
 #: source/dbpilots/commonpagesdbp.src#RID_PAGE_TABLESELECTION.FT_EXPLANATION.FixedText.Text
 msgid  "Currently, the form the control belongs to is not (or not completely) bound to a data source.\n\nPlease choose a data source and a table.\n\n\nPlease note that the settings made on this page will take effect immediately upon leaving the page."
-msgstr ""
+msgstr "See vorm, millele kuulub juhtelement, ei ole seotud (või on mittetäielikult seotud) andmeallikaga.\n\nPalun vali andmeallikas ja tabel.\n\n\nPane tähele, et sellel leheküljel tehtud muudatused hakkavad kehtima kohe pärast leheküljelt väljumist."
 
 #: source/dbpilots/commonpagesdbp.src#RID_PAGE_TABLESELECTION.FT_DATASOURCE.FixedText.Text
 msgid  "~Data source:"
@@ -705,7 +705,7 @@ msgstr "See oligi kõik, mida oli vaja uue valikugrupi loomiseks."
 
 #: source/dbpilots/groupboxpages.src#RID_STR_GROUPWIZ_DBFIELD.String.Text
 msgid  "You can either save the value of the option group in a database field or use it for a later action."
-msgstr ""
+msgstr "Sa saad kas salvestada valikugrupi väärtuse andmebaasis või kasutada seda hilisemas tegevuses."
 
 #: source/preload/preload.src#RID_DLG_OEMWIZARD.PB_PREV.PushButton.Text
 msgid  "<< Back"
@@ -737,7 +737,7 @@ msgstr "Tere tulemast!"
 
 #: source/preload/preload.src#RID_TP_WELCOME.FT_INFO.FixedText.Text
 msgid  "Welcome to %PRODUCTNAME %PRODUCTVERSION OEM\n\nTo start the %PRODUCTNAME %PRODUCTVERSION OEM, please enter your personal data in the dialog following the license text. Important information is contained in the readme files which are located in the %PRODUCTNAME product directory. Please read these files carefully. You can also find detailed information at the Oracle website \n\nhttp://www.oracle.com/us/products/applications/open-office."
-msgstr ""
+msgstr "Tere tulemast kasutama rakendust %PRODUCTNAME %PRODUCTVERSION OEM\n\nPalun sisesta %PRODUCTNAME %PRODUCTVERSION OEM-i käivitamiseks oma isikuandmed litsentsitekstile järgnevasse dialoogi. %PRODUCTNAME-i kataloogis asuvad LOEMIND-failid sisaldavad tähtsat infot, seepärast loe neid tähelepanelikult. Üksikasjalikku infot leiad ka Sun'i veebilehelt \n\nhttp://www.sun.com/staroffice.\n\nKasutajatugi ja koolitus:\n\nTASUTA tugi tarkvarale on tagatud 60 päeva jooksul alates tarkvara ostmise päevast. Pakkumise kasutamiseks külasta alltoodud veebilehte.\n\nhttp://www.sun.com/star/service\n\nLoodame, et Sulle meeldib töötada %PRODUCTNAME-i keskkonnas."
 
 #: source/preload/preload.src#RID_TP_LICENSE.TabPage.Text
 msgid  "License Agreement"
@@ -753,7 +753,7 @@ msgstr "1."
 
 #: source/preload/preload.src#RID_TP_LICENSE.FT_INFO2.FixedText.Text
 msgid  "View the complete License Agreement. Please use the scroll bar or the '%PAGEDOWN' button in this dialog to view the entire license text."
-msgstr ""
+msgstr "Loe terve litsentsileping läbi. Kasuta litsentsi kogu teksti nägemiseks kerimisriba või nuppu '%PAGEDOWN'."
 
 #: source/preload/preload.src#RID_TP_LICENSE.PB_PAGEDOWN.PushButton.Text
 msgid  "Page Down"
@@ -805,8 +805,9 @@ msgid  "Automatic Sort"
 msgstr "Automaatne sortimine"
 
 #: source/propctrlr/selectlabeldialog.src#RID_DLG_SELECTLABELCONTROL.1.FixedText.Text
+#, fuzzy
 msgid  "These are control fields that can be used as label fields for the $control_class$ $control_name$."
-msgstr ""
+msgstr "Need on juhtväljad, mida saab kasutada $control_class$ $control_name$ pealdisväljadena."
 
 #: source/propctrlr/selectlabeldialog.src#RID_DLG_SELECTLABELCONTROL.1.CheckBox.Text
 #, fuzzy
@@ -825,164 +826,133 @@ msgstr "Vormid"
 
 #: source/propctrlr/pcrmiscres.src#RID_STR_CONFIRM_DELETE_DATA_TYPE.String.Text
 msgid  "Do you want to delete the data type '#type#' from the model?\nPlease note that this will affect all controls which are bound to this data type."
-msgstr ""
+msgstr "Kas sa soovid kustutada mudelist andmetüüpi '#type#'?\nPane tähele, et see mõjutab kõiki selle andmetüübiga seondatud juhtelemente."
 
 #: source/propctrlr/pcrmiscres.src#RID_STR_PROPTITLE_PUSHBUTTON.String.Text
-#, fuzzy
 msgid  "Button"
 msgstr "Nupp"
 
 #: source/propctrlr/pcrmiscres.src#RID_STR_PROPTITLE_RADIOBUTTON.String.Text
-#, fuzzy
 msgid  "Option Button"
 msgstr "Raadionupp"
 
 #: source/propctrlr/pcrmiscres.src#RID_STR_PROPTITLE_CHECKBOX.String.Text
-#, fuzzy
 msgid  "Check Box"
 msgstr "Märkeruut"
 
 #: source/propctrlr/pcrmiscres.src#RID_STR_PROPTITLE_FIXEDTEXT.String.Text
-#, fuzzy
 msgid  "Label Field"
 msgstr "Pealdisväli"
 
 #: source/propctrlr/pcrmiscres.src#RID_STR_PROPTITLE_GROUPBOX.String.Text
-#, fuzzy
 msgid  "Group Box"
 msgstr "Rühmaboks"
 
 #: source/propctrlr/pcrmiscres.src#RID_STR_PROPTITLE_EDIT.String.Text
-#, fuzzy
 msgid  "Text Box"
 msgstr "Tekstiboks"
 
 #: source/propctrlr/pcrmiscres.src#RID_STR_PROPTITLE_FORMATTED.String.Text
-#, fuzzy
 msgid  "Formatted Field"
 msgstr "Vormindatud väli"
 
 #: source/propctrlr/pcrmiscres.src#RID_STR_PROPTITLE_LISTBOX.String.Text
-#, fuzzy
 msgid  "List Box"
 msgstr "Loendiboks"
 
 #: source/propctrlr/pcrmiscres.src#RID_STR_PROPTITLE_COMBOBOX.String.Text
-#, fuzzy
 msgid  "Combo Box"
 msgstr "Liitboks"
 
 #: source/propctrlr/pcrmiscres.src#RID_STR_PROPTITLE_IMAGEBUTTON.String.Text
-#, fuzzy
 msgid  "Image Button"
 msgstr "Pildinupp"
 
 #: source/propctrlr/pcrmiscres.src#RID_STR_PROPTITLE_HIDDENCONTROL.String.Text
-#, fuzzy
 msgid  "Hidden Control"
 msgstr "Peidetud juhtelement"
 
 #: source/propctrlr/pcrmiscres.src#RID_STR_PROPTITLE_UNKNOWNCONTROL.String.Text
-#, fuzzy
 msgid  "Control (unknown type)"
 msgstr "Juhtelement (tundmatu tüüp)"
 
 #: source/propctrlr/pcrmiscres.src#RID_STR_PROPTITLE_IMAGECONTROL.String.Text
-#, fuzzy
 msgid  "Image Control"
 msgstr "Pilt"
 
 #: source/propctrlr/pcrmiscres.src#RID_STR_PROPTITLE_FILECONTROL.String.Text
-#, fuzzy
 msgid  "File Selection"
 msgstr "Faili valimine"
 
 #: source/propctrlr/pcrmiscres.src#RID_STR_PROPTITLE_DATEFIELD.String.Text
-#, fuzzy
 msgid  "Date Field"
 msgstr "Kuupäevaväli"
 
 #: source/propctrlr/pcrmiscres.src#RID_STR_PROPTITLE_TIMEFIELD.String.Text
-#, fuzzy
 msgid  "Time Field"
 msgstr "Ajaväli"
 
 #: source/propctrlr/pcrmiscres.src#RID_STR_PROPTITLE_NUMERICFIELD.String.Text
-#, fuzzy
 msgid  "Numeric Field"
 msgstr "Arvuväli"
 
 #: source/propctrlr/pcrmiscres.src#RID_STR_PROPTITLE_CURRENCYFIELD.String.Text
-#, fuzzy
 msgid  "Currency Field"
 msgstr "Rahaväli"
 
 #: source/propctrlr/pcrmiscres.src#RID_STR_PROPTITLE_PATTERNFIELD.String.Text
-#, fuzzy
 msgid  "Pattern Field"
 msgstr "Mustriväli"
 
 #: source/propctrlr/pcrmiscres.src#RID_STR_PROPTITLE_DBGRID.String.Text
-#, fuzzy
 msgid  "Table Control "
 msgstr "Tabelelement "
 
 #: source/propctrlr/formlinkdialog.src#RID_DLG_FORMLINKS.ModalDialog.Text
-#, fuzzy
 msgid  "Link fields"
 msgstr "Väljade linkimine"
 
 #: source/propctrlr/formlinkdialog.src#RID_DLG_FORMLINKS.FT_EXPLANATION.FixedText.Text
 msgid  "Sub forms can be used to display detailed data about the current record of the master form. To do this, you can specify which columns in the sub form match which columns in the master form."
-msgstr ""
+msgstr "Alamvorme kasutatakse detailsemate andmete näitamiseks põhivormist valitud kirje kohta. Selleks pead määrama, millised alamvormi veerud vastavad põhivormi veergudele."
 
 #: source/propctrlr/formlinkdialog.src#RID_DLG_FORMLINKS.PB_SUGGEST.PushButton.Text
-#, fuzzy
 msgid  "Suggest"
 msgstr "Soovita"
 
 #: source/propctrlr/formlinkdialog.src#RID_DLG_FORMLINKS.STR_DETAIL_FORM.String.Text
-#, fuzzy
 msgid  "Sub Form"
 msgstr "Alamvorm"
 
 #: source/propctrlr/formlinkdialog.src#RID_DLG_FORMLINKS.STR_MASTER_FORM.String.Text
-#, fuzzy
 msgid  "Master Form"
 msgstr "Põhivorm"
 
 #: source/propctrlr/formlinkdialog.src#RID_DLG_FORMLINKS.STR_ERROR_RETRIEVING_COLUMNS.String.Text
-#, fuzzy
 msgid  "The columns of '#' could not be retrieved."
 msgstr "Alamvormi '#' veergude hankimine ei õnnestunud."
 
 #: source/propctrlr/propres.src#RID_STR_STANDARD.String.Text
-#, fuzzy
 msgid  "Default"
 msgstr "Vaikimisi"
 
 #: source/propctrlr/propres.src#RID_STR_PROPPAGE_DEFAULT.String.Text
-#, fuzzy
 msgid  "General"
 msgstr "Üldine"
 
 #: source/propctrlr/propres.src#RID_STR_PROPPAGE_DATA.String.Text
-#, fuzzy
 msgid  "Data"
 msgstr "Andmed"
 
 #: source/propctrlr/propres.src#RID_RSC_ENUM_YESNO.1.String.Text
-#, fuzzy
 msgid  "No"
 msgstr "Ei"
 
 #: source/propctrlr/propres.src#RID_RSC_ENUM_YESNO.2.String.Text
-#, fuzzy
 msgid  "Yes"
 msgstr "Jah"
 
 #: source/propctrlr/propres.src#RID_STR_HELP_SECTION_LABEL.String.Text
-#, fuzzy
 msgid  "Help"
 msgstr "Abi"
 
@@ -996,1881 +966,1516 @@ msgid  "Text"
 msgstr "Tekst"
 
 #: source/propctrlr/formres.src#RID_STR_EDITMASK.String.Text
-#, fuzzy
 msgid  "Edit mask"
 msgstr "Sisestusmask"
 
 #: source/propctrlr/formres.src#RID_STR_LITERALMASK.String.Text
-#, fuzzy
 msgid  "Literal mask"
 msgstr "Täpne mask"
 
 #: source/propctrlr/formres.src#RID_STR_READONLY.String.Text
-#, fuzzy
 msgid  "Read-only"
 msgstr "Kirjutuskaitstud"
 
 #: source/propctrlr/formres.src#RID_STR_ENABLED.String.Text
-#, fuzzy
 msgid  "Enabled"
 msgstr "Lubatud"
 
 #: source/propctrlr/formres.src#RID_STR_ENABLE_VISIBLE.String.Text
-#, fuzzy
 msgid  "Visible"
 msgstr "Nähtav"
 
 #: source/propctrlr/formres.src#RID_STR_AUTOCOMPLETE.String.Text
-#, fuzzy
 msgid  "AutoFill"
 msgstr "Automaattäide"
 
 #: source/propctrlr/formres.src#RID_STR_LINECOUNT.String.Text
-#, fuzzy
 msgid  "Line count"
 msgstr "Ridade arv"
 
 #: source/propctrlr/formres.src#RID_STR_MAXTEXTLEN.String.Text
-#, fuzzy
 msgid  "Max. text length"
 msgstr "Maks. teksti pikkus"
 
 #: source/propctrlr/formres.src#RID_STR_SPIN.String.Text
-#, fuzzy
 msgid  "Spin Button"
 msgstr "Kerimisnupp"
 
 #: source/propctrlr/formres.src#RID_STR_STRICTFORMAT.String.Text
-#, fuzzy
 msgid  "Strict format"
 msgstr "Täpne vorming"
 
 #: source/propctrlr/formres.src#RID_STR_SHOWTHOUSANDSEP.String.Text
-#, fuzzy
 msgid  "Thousands separator"
 msgstr "Tuhandeliste eraldaja"
 
 #: source/propctrlr/formres.src#RID_STR_PRINTABLE.String.Text
-#, fuzzy
 msgid  "Printable"
 msgstr "Prinditav"
 
 #: source/propctrlr/formres.src#RID_STR_TARGET_URL.String.Text
-#, fuzzy
 msgid  "URL"
 msgstr "URL"
 
 #: source/propctrlr/formres.src#RID_STR_TARGET_FRAME.String.Text
-#, fuzzy
 msgid  "Frame"
 msgstr "Paneel"
 
 #: source/propctrlr/formres.src#RID_STR_HELPTEXT.String.Text
-#, fuzzy
 msgid  "Help text"
 msgstr "Abitekst"
 
 #: source/propctrlr/formres.src#RID_STR_HELPURL.String.Text
-#, fuzzy
 msgid  "Help URL"
 msgstr "Abi-URL"
 
 #: source/propctrlr/formres.src#RID_STR_TAG.String.Text
-#, fuzzy
 msgid  "Additional information"
 msgstr "Lisainfo"
 
 #: source/propctrlr/formres.src#RID_STR_ECHO_CHAR.String.Text
-#, fuzzy
 msgid  "Password character"
 msgstr "Parooli märk"
 
 #: source/propctrlr/formres.src#RID_STR_TRISTATE.String.Text
-#, fuzzy
 msgid  "Tristate"
 msgstr "Kolmeolekuline"
 
 #: source/propctrlr/formres.src#RID_STR_EMPTY_IS_NULL.String.Text
-#, fuzzy
 msgid  "Empty string is NULL"
 msgstr "Tühi string on NULL"
 
 #: source/propctrlr/formres.src#RID_STR_DECIMAL_ACCURACY.String.Text
-#, fuzzy
 msgid  "Decimal accuracy"
 msgstr "Komakohtade täpsus"
 
 #: source/propctrlr/formres.src#RID_STR_IMAGE_URL.String.Text
-#, fuzzy
 msgid  "Graphics"
 msgstr "Pilt"
 
 #: source/propctrlr/formres.src#RID_STR_DEFAULT_SELECT_SEQ.String.Text
-#, fuzzy
 msgid  "Default selection"
 msgstr "Vaikimisi valik"
 
 #: source/propctrlr/formres.src#RID_STR_DEFAULT_BUTTON.String.Text
-#, fuzzy
 msgid  "Default button"
 msgstr "Vaikimisi nupp"
 
 #: source/propctrlr/formres.src#RID_STR_LABELCONTROL.String.Text
-#, fuzzy
 msgid  "Label Field"
 msgstr "Pealdisväli"
 
 #: source/propctrlr/formres.src#RID_STR_LABEL.String.Text
-#, fuzzy
 msgid  "Label"
 msgstr "Silt"
 
 #: source/propctrlr/formres.src#RID_STR_ALIGN.String.Text
-#, fuzzy
 msgid  "Alignment"
 msgstr "Joondus"
 
 #: source/propctrlr/formres.src#RID_STR_VERTICAL_ALIGN.String.Text
-#, fuzzy
 msgid  "Vert. Alignment"
 msgstr "Püstjoondus"
 
 #: source/propctrlr/formres.src#RID_RSC_ENUM_VERTICAL_ALIGN.1.String.Text
-#, fuzzy
 msgid  "Top"
 msgstr "Üles"
 
 #: source/propctrlr/formres.src#RID_RSC_ENUM_VERTICAL_ALIGN.2.String.Text
-#, fuzzy
 msgid  "Middle"
 msgstr "Keskele"
 
 #: source/propctrlr/formres.src#RID_RSC_ENUM_VERTICAL_ALIGN.3.String.Text
-#, fuzzy
 msgid  "Bottom"
 msgstr "Alla"
 
 #: source/propctrlr/formres.src#RID_STR_IMAGEPOSITION.String.Text
-#, fuzzy
 msgid  "Graphics alignment"
 msgstr "Pildi joondus"
 
 #: source/propctrlr/formres.src#RID_STR_FONT.String.Text
-#, fuzzy
 msgid  "Font"
 msgstr "Font"
 
 #: source/propctrlr/formres.src#RID_STR_BACKGROUNDCOLOR.String.Text
-#, fuzzy
 msgid  "Background color"
 msgstr "Taustavärv"
 
 #: source/propctrlr/formres.src#RID_STR_BORDER.String.Text
-#, fuzzy
 msgid  "Border"
 msgstr "Ääris"
 
 #: source/propctrlr/formres.src#RID_STR_ICONSIZE.String.Text
-#, fuzzy
 msgid  "Icon size"
 msgstr "Ikooni suurus"
 
 #: source/propctrlr/formres.src#RID_RSC_ENUM_ICONSIZE_TYPE.1.String.Text
-#, fuzzy
 msgid  "Small"
 msgstr "Väike"
 
 #: source/propctrlr/formres.src#RID_RSC_ENUM_ICONSIZE_TYPE.2.String.Text
-#, fuzzy
 msgid  "Large"
 msgstr "Suur"
 
 #: source/propctrlr/formres.src#RID_STR_SHOW_POSITION.String.Text
-#, fuzzy
 msgid  "Positioning"
 msgstr "Paigutus"
 
 #: source/propctrlr/formres.src#RID_STR_SHOW_NAVIGATION.String.Text
-#, fuzzy
 msgid  "Navigation"
 msgstr "Liikumine"
 
 #: source/propctrlr/formres.src#RID_STR_SHOW_RECORDACTIONS.String.Text
-#, fuzzy
 msgid  "Acting on a record"
 msgstr "Käitumine salvestamisel"
 
 #: source/propctrlr/formres.src#RID_STR_SHOW_FILTERSORT.String.Text
-#, fuzzy
 msgid  "Filtering / Sorting"
 msgstr "Filtreerimine/sortimine"
 
 #: source/propctrlr/formres.src#RID_STR_HSCROLL.String.Text
-#, fuzzy
 msgid  "Horizontal scroll bar"
 msgstr "Horisontaalne kerimisriba"
 
 #: source/propctrlr/formres.src#RID_STR_VSCROLL.String.Text
-#, fuzzy
 msgid  "Vertical scroll bar"
 msgstr "Vertikaalne kerimisriba"
 
 #: source/propctrlr/formres.src#RID_STR_WORDBREAK.String.Text
-#, fuzzy
 msgid  "Word break"
 msgstr "Sõna murdmine"
 
 #: source/propctrlr/formres.src#RID_STR_MULTILINE.String.Text
-#, fuzzy
 msgid  "Multiline input"
 msgstr "Mitmerealine sisestus"
 
 #: source/propctrlr/formres.src#RID_STR_MULTISELECTION.String.Text
-#, fuzzy
 msgid  "Multiselection"
 msgstr "Mitmeline valik"
 
 #: source/propctrlr/formres.src#RID_STR_NAME.String.Text
-#, fuzzy
 msgid  "Name"
 msgstr "Nimi"
 
 #: source/propctrlr/formres.src#RID_STR_TABINDEX.String.Text
-#, fuzzy
 msgid  "Tab order"
 msgstr "Tabeldusjärjekord"
 
 #: source/propctrlr/formres.src#RID_STR_WHEEL_BEHAVIOR.String.Text
-#, fuzzy
 msgid  "Mouse wheel scroll"
 msgstr "Hiirerulli kerimisel"
 
 #: source/propctrlr/formres.src#RID_STR_FILTER.String.Text
-#, fuzzy
 msgid  "Filter"
 msgstr "Filter"
 
 #: source/propctrlr/formres.src#RID_STR_SORT_CRITERIA.String.Text
-#, fuzzy
 msgid  "Sort"
 msgstr "Sordi"
 
 #: source/propctrlr/formres.src#RID_STR_RECORDMARKER.String.Text
-#, fuzzy
 msgid  "Record marker"
 msgstr "Kirje marker"
 
 #: source/propctrlr/formres.src#RID_STR_FILTERPROPOSAL.String.Text
-#, fuzzy
 msgid  "Filter proposal"
 msgstr "Filtri ettepanek"
 
 #: source/propctrlr/formres.src#RID_STR_NAVIGATION.String.Text
-#, fuzzy
 msgid  "Navigation bar"
 msgstr "Navigeerimisriba"
 
 #: source/propctrlr/formres.src#RID_STR_CYCLE.String.Text
-#, fuzzy
 msgid  "Cycle"
 msgstr "Tsükkel"
 
 #: source/propctrlr/formres.src#RID_STR_TABSTOP.String.Text
-#, fuzzy
 msgid  "Tabstop"
 msgstr "Tabelduskoht"
 
 #: source/propctrlr/formres.src#RID_STR_CONTROLSOURCE.String.Text
-#, fuzzy
 msgid  "Data field"
 msgstr "Andmeväli"
 
 #: source/propctrlr/formres.src#RID_STR_DROPDOWN.String.Text
-#, fuzzy
 msgid  "Dropdown"
 msgstr "Ripploend"
 
 #: source/propctrlr/formres.src#RID_STR_BOUNDCOLUMN.String.Text
-#, fuzzy
 msgid  "Bound field"
 msgstr "Seotud väli"
 
 #: source/propctrlr/formres.src#RID_STR_LISTSOURCE.String.Text
-#, fuzzy
 msgid  "List content"
 msgstr "Loendi sisu"
 
 #: source/propctrlr/formres.src#RID_STR_LISTSOURCETYPE.String.Text
-#, fuzzy
 msgid  "Type of list contents"
 msgstr "Loendi sisu tüüp"
 
 #: source/propctrlr/formres.src#RID_STR_CURSORSOURCE.String.Text
-#, fuzzy
 msgid  "Content"
 msgstr "Sisu"
 
 #: source/propctrlr/formres.src#RID_STR_CURSORSOURCETYPE.String.Text
-#, fuzzy
 msgid  "Content type"
 msgstr "Sisutüüp"
 
 #: source/propctrlr/formres.src#RID_STR_ALLOW_ADDITIONS.String.Text
-#, fuzzy
 msgid  "Allow additions"
 msgstr "Lisamine lubatud"
 
 #: source/propctrlr/formres.src#RID_STR_ALLOW_DELETIONS.String.Text
-#, fuzzy
 msgid  "Allow deletions"
 msgstr "Kustutamine lubatud"
 
 #: source/propctrlr/formres.src#RID_STR_ALLOW_EDITS.String.Text
-#, fuzzy
 msgid  "Allow modifications"
 msgstr "Muutmine lubatud"
 
 #: source/propctrlr/formres.src#RID_STR_DATAENTRY.String.Text
-#, fuzzy
 msgid  "Add data only"
 msgstr "Ainult andmete lisamine"
 
 #: source/propctrlr/formres.src#RID_STR_DATASOURCE.String.Text
-#, fuzzy
 msgid  "Data source"
 msgstr "Andmeallikas"
 
 #: source/propctrlr/formres.src#RID_STR_MASTERFIELDS.String.Text
-#, fuzzy
 msgid  "Link master fields"
 msgstr "Põhiväljade linkimine"
 
 #: source/propctrlr/formres.src#RID_STR_SLAVEFIELDS.String.Text
-#, fuzzy
 msgid  "Link slave fields"
 msgstr "Alamväljade linkimine"
 
 #: source/propctrlr/formres.src#RID_STR_VALUEMIN.String.Text
-#, fuzzy
 msgid  "Value min."
 msgstr "Min. suurus"
 
 #: source/propctrlr/formres.src#RID_STR_VALUEMAX.String.Text
-#, fuzzy
 msgid  "Value max."
 msgstr "Maks. suurus"
 
 #: source/propctrlr/formres.src#RID_STR_VALUESTEP.String.Text
-#, fuzzy
 msgid  "Incr./decrement value"
 msgstr "Suurendus-/vähendussamm"
 
 #: source/propctrlr/formres.src#RID_STR_CURRENCYSYMBOL.String.Text
-#, fuzzy
 msgid  "Currency symbol"
 msgstr "Rahaühiku tähis"
 
 #: source/propctrlr/formres.src#RID_STR_DATEMIN.String.Text
-#, fuzzy
 msgid  "Date min."
 msgstr "Min. kuupäev"
 
 #: source/propctrlr/formres.src#RID_STR_DATEMAX.String.Text
-#, fuzzy
 msgid  "Date max."
 msgstr "Maks. kuupäev"
 
 #: source/propctrlr/formres.src#RID_STR_DATEFORMAT.String.Text
-#, fuzzy
 msgid  "Date format"
 msgstr "Kuupäeva vorming"
 
 #: source/propctrlr/formres.src#RID_STR_SELECTEDITEMS.String.Text
-#, fuzzy
 msgid  "Selection"
 msgstr "Valik"
 
 #: source/propctrlr/formres.src#RID_STR_TIMEMIN.String.Text
-#, fuzzy
 msgid  "Time min."
 msgstr "Min. aeg"
 
 #: source/propctrlr/formres.src#RID_STR_TIMEMAX.String.Text
-#, fuzzy
 msgid  "Time max."
 msgstr "Maks. aeg"
 
 #: source/propctrlr/formres.src#RID_STR_TIMEFORMAT.String.Text
-#, fuzzy
 msgid  "Time format"
 msgstr "Aja vorming"
 
 #: source/propctrlr/formres.src#RID_STR_CURRSYM_POSITION.String.Text
-#, fuzzy
 msgid  "Prefix symbol"
 msgstr "Prefiksi sümbol"
 
 #: source/propctrlr/formres.src#RID_STR_VALUE.String.Text
-#, fuzzy
 msgid  "Value"
 msgstr "Väärtus"
 
 #: source/propctrlr/formres.src#RID_STR_FORMATKEY.String.Text
-#, fuzzy
 msgid  "Formatting"
 msgstr "Vormindus"
 
 #: source/propctrlr/formres.src#RID_STR_CLASSID.String.Text
-#, fuzzy
 msgid  "Class ID"
 msgstr "Klassi ID"
 
 #: source/propctrlr/formres.src#RID_STR_HEIGHT.String.Text
-#, fuzzy
 msgid  "Height"
 msgstr "Kõrgus"
 
 #: source/propctrlr/formres.src#RID_STR_WIDTH.String.Text
-#, fuzzy
 msgid  "Width"
 msgstr "Laius"
 
 #: source/propctrlr/formres.src#RID_STR_LISTINDEX.String.Text
-#, fuzzy
 msgid  "List index"
 msgstr "Loendi indeks"
 
 #: source/propctrlr/formres.src#RID_STR_ROWHEIGHT.String.Text
-#, fuzzy
 msgid  "Row height"
 msgstr "Rea kõrgus"
 
 #: source/propctrlr/formres.src#RID_STR_FILLCOLOR.String.Text
-#, fuzzy
 msgid  "Fill color"
 msgstr "Täitevärv"
 
 #: source/propctrlr/formres.src#RID_STR_LINECOLOR.String.Text
-#, fuzzy
 msgid  "Line color"
 msgstr "Joone värv"
 
 #: source/propctrlr/formres.src#RID_STR_REFVALUE.String.Text
-#, fuzzy
 msgid  "Reference value (on)"
 msgstr "Viiteväärtus (sees)"
 
 #: source/propctrlr/formres.src#RID_STR_UNCHECKEDREFVALUE.String.Text
-#, fuzzy
 msgid  "Reference value (off)"
 msgstr "Viiteväärtus (väljas)"
 
 #: source/propctrlr/formres.src#RID_STR_STRINGITEMLIST.String.Text
-#, fuzzy
 msgid  "List entries"
 msgstr "Loendikirjed"
 
 #: source/propctrlr/formres.src#RID_STR_BUTTONTYPE.String.Text
-#, fuzzy
 msgid  "Action"
 msgstr "Toiming"
 
 #: source/propctrlr/formres.src#RID_STR_SUBMIT_ACTION.String.Text
-#, fuzzy
 msgid  "URL"
 msgstr "URL"
 
 #: source/propctrlr/formres.src#RID_STR_SUBMIT_METHOD.String.Text
-#, fuzzy
 msgid  "Type of submission"
 msgstr "Saatmistüüp"
 
 #: source/propctrlr/formres.src#RID_STR_DEFAULT_STATE.String.Text
-#, fuzzy
 msgid  "Default status"
 msgstr "Vaikimisi olek"
 
 #: source/propctrlr/formres.src#RID_STR_SUBMIT_ENCODING.String.Text
-#, fuzzy
 msgid  "Submission encoding"
 msgstr "Saatmise kodeering"
 
 #: source/propctrlr/formres.src#RID_STR_DEFAULTVALUE.String.Text
-#, fuzzy
 msgid  "Default value"
 msgstr "Vaikeväärtus"
 
 #: source/propctrlr/formres.src#RID_STR_DEFAULTTEXT.String.Text
-#, fuzzy
 msgid  "Default text"
 msgstr "Vaikimisi tekst"
 
 #: source/propctrlr/formres.src#RID_STR_DEFAULTDATE.String.Text
-#, fuzzy
 msgid  "Default date"
 msgstr "Vaikimisi kuupäev"
 
 #: source/propctrlr/formres.src#RID_STR_DEFAULTTIME.String.Text
-#, fuzzy
 msgid  "Default time"
 msgstr "Vaikimisi aeg"
 
 #: source/propctrlr/formres.src#RID_STR_SUBMIT_TARGET.String.Text
-#, fuzzy
 msgid  "Frame"
 msgstr "Paneel"
 
 #: source/propctrlr/formres.src#RID_RSC_ENUM_BORDER_TYPE.1.String.Text
-#, fuzzy
 msgid  "Without frame"
 msgstr "Ilma raamita"
 
 #: source/propctrlr/formres.src#RID_RSC_ENUM_BORDER_TYPE.2.String.Text
-#, fuzzy
 msgid  "3D look"
 msgstr "Ruumiline vaade"
 
 #: source/propctrlr/formres.src#RID_RSC_ENUM_BORDER_TYPE.3.String.Text
-#, fuzzy
 msgid  "Flat"
 msgstr "Lame"
 
 #: source/propctrlr/formres.src#RID_RSC_ENUM_LISTSOURCE_TYPE.1.String.Text
-#, fuzzy
 msgid  "Valuelist"
 msgstr "Väärtusteloend"
 
 #: source/propctrlr/formres.src#RID_RSC_ENUM_LISTSOURCE_TYPE.2.String.Text
-#, fuzzy
 msgid  "Table"
 msgstr "Tabel"
 
 #: source/propctrlr/formres.src#RID_RSC_ENUM_LISTSOURCE_TYPE.3.String.Text
-#, fuzzy
 msgid  "Query"
 msgstr "Päring"
 
 #: source/propctrlr/formres.src#RID_RSC_ENUM_LISTSOURCE_TYPE.4.String.Text
-#, fuzzy
 msgid  "Sql"
 msgstr "Sql"
 
 #: source/propctrlr/formres.src#RID_RSC_ENUM_LISTSOURCE_TYPE.5.String.Text
-#, fuzzy
 msgid  "Sql [Native]"
 msgstr "Sql [Native]"
 
 #: source/propctrlr/formres.src#RID_RSC_ENUM_LISTSOURCE_TYPE.6.String.Text
-#, fuzzy
 msgid  "Tablefields"
 msgstr "Tabeliväljad"
 
 #: source/propctrlr/formres.src#RID_RSC_ENUM_ALIGNMENT.1.String.Text
-#, fuzzy
 msgid  "Left"
 msgstr "Vasakule"
 
 #: source/propctrlr/formres.src#RID_RSC_ENUM_ALIGNMENT.2.String.Text
-#, fuzzy
 msgid  "Center"
 msgstr "Keskele"
 
 #: source/propctrlr/formres.src#RID_RSC_ENUM_ALIGNMENT.3.String.Text
-#, fuzzy
 msgid  "Right"
 msgstr "Paremale"
 
 #: source/propctrlr/formres.src#RID_RSC_ENUM_BUTTONTYPE.1.String.Text
-#, fuzzy
 msgid  "None"
 msgstr "Puudub"
 
 #: source/propctrlr/formres.src#RID_RSC_ENUM_BUTTONTYPE.2.String.Text
-#, fuzzy
 msgid  "Submit form"
 msgstr "Saada vorm"
 
 #: source/propctrlr/formres.src#RID_RSC_ENUM_BUTTONTYPE.3.String.Text
-#, fuzzy
 msgid  "Reset form"
 msgstr "Lähtesta vorm"
 
 #: source/propctrlr/formres.src#RID_RSC_ENUM_BUTTONTYPE.4.String.Text
-#, fuzzy
 msgid  "Open document/web page"
 msgstr "Ava dokument/veebileht"
 
 #: source/propctrlr/formres.src#RID_RSC_ENUM_BUTTONTYPE.5.String.Text
-#, fuzzy
 msgid  "First record"
 msgstr "Esimene kirje"
 
 #: source/propctrlr/formres.src#RID_RSC_ENUM_BUTTONTYPE.6.String.Text
-#, fuzzy
 msgid  "Previous record"
 msgstr "Eelmine kirje"
 
 #: source/propctrlr/formres.src#RID_RSC_ENUM_BUTTONTYPE.7.String.Text
-#, fuzzy
 msgid  "Next record"
 msgstr "Järgmine kirje"
 
 #: source/propctrlr/formres.src#RID_RSC_ENUM_BUTTONTYPE.8.String.Text
-#, fuzzy
 msgid  "Last record"
 msgstr "Viimane kirje"
 
 #: source/propctrlr/formres.src#RID_RSC_ENUM_BUTTONTYPE.9.String.Text
-#, fuzzy
 msgid  "Save record"
 msgstr "Salvesta kirje"
 
 #: source/propctrlr/formres.src#RID_RSC_ENUM_BUTTONTYPE.10.String.Text
-#, fuzzy
 msgid  "Undo data entry"
 msgstr "Tühista andmete sisestamine"
 
 #: source/propctrlr/formres.src#RID_RSC_ENUM_BUTTONTYPE.11.String.Text
-#, fuzzy
 msgid  "New record"
 msgstr "Uus kirje"
 
 #: source/propctrlr/formres.src#RID_RSC_ENUM_BUTTONTYPE.12.String.Text
-#, fuzzy
 msgid  "Delete record"
 msgstr "Kustuta kirje"
 
 #: source/propctrlr/formres.src#RID_RSC_ENUM_BUTTONTYPE.13.String.Text
-#, fuzzy
 msgid  "Refresh form"
 msgstr "Värskenda vormi"
 
 #: source/propctrlr/formres.src#RID_RSC_ENUM_SUBMIT_METHOD.1.String.Text
-#, fuzzy
 msgid  "Get"
 msgstr "Get"
 
 #: source/propctrlr/formres.src#RID_RSC_ENUM_SUBMIT_METHOD.2.String.Text
-#, fuzzy
 msgid  "Post"
 msgstr "Post"
 
 #: source/propctrlr/formres.src#RID_RSC_ENUM_SUBMIT_ENCODING.1.String.Text
-#, fuzzy
 msgid  "URL"
 msgstr "URL"
 
 #: source/propctrlr/formres.src#RID_RSC_ENUM_SUBMIT_ENCODING.2.String.Text
-#, fuzzy
 msgid  "Multipart"
 msgstr "Mitmeosaline"
 
 #: source/propctrlr/formres.src#RID_RSC_ENUM_SUBMIT_ENCODING.3.String.Text
-#, fuzzy
 msgid  "Text"
 msgstr "Tekst"
 
 #: source/propctrlr/formres.src#RID_RSC_ENUM_DATEFORMAT_LIST.1.String.Text
-#, fuzzy
 msgid  "Standard (short)"
 msgstr "Standardne (lühike)"
 
 #: source/propctrlr/formres.src#RID_RSC_ENUM_DATEFORMAT_LIST.2.String.Text
-#, fuzzy
 msgid  "Standard (short YY)"
 msgstr "Standardne (lühike YY)"
 
 #: source/propctrlr/formres.src#RID_RSC_ENUM_DATEFORMAT_LIST.3.String.Text
-#, fuzzy
 msgid  "Standard (short YYYY)"
 msgstr "Standardne (lühike YYYY)"
 
 #: source/propctrlr/formres.src#RID_RSC_ENUM_DATEFORMAT_LIST.4.String.Text
-#, fuzzy
 msgid  "Standard (long)"
 msgstr "Standardne (pikk)"
 
 #: source/propctrlr/formres.src#RID_RSC_ENUM_DATEFORMAT_LIST.5.String.Text
-#, fuzzy
 msgid  "DD/MM/YY"
 msgstr "DD/MM/YY"
 
 #: source/propctrlr/formres.src#RID_RSC_ENUM_DATEFORMAT_LIST.6.String.Text
-#, fuzzy
 msgid  "MM/DD/YY"
 msgstr "MM/DD/YY"
 
 #: source/propctrlr/formres.src#RID_RSC_ENUM_DATEFORMAT_LIST.7.String.Text
-#, fuzzy
 msgid  "YY/MM/DD"
 msgstr "YY/MM/DD"
 
 #: source/propctrlr/formres.src#RID_RSC_ENUM_DATEFORMAT_LIST.8.String.Text
-#, fuzzy
 msgid  "DD/MM/YYYY"
 msgstr "DD/MM/YYYY"
 
 #: source/propctrlr/formres.src#RID_RSC_ENUM_DATEFORMAT_LIST.9.String.Text
-#, fuzzy
 msgid  "MM/DD/YYYY"
 msgstr "MM/DD/YYYY"
 
 #: source/propctrlr/formres.src#RID_RSC_ENUM_DATEFORMAT_LIST.10.String.Text
-#, fuzzy
 msgid  "YYYY/MM/DD"
 msgstr "YYYY/MM/DD"
 
 #: source/propctrlr/formres.src#RID_RSC_ENUM_DATEFORMAT_LIST.11.String.Text
-#, fuzzy
 msgid  "YY-MM-DD"
 msgstr "YY-MM-DD"
 
 #: source/propctrlr/formres.src#RID_RSC_ENUM_DATEFORMAT_LIST.12.String.Text
-#, fuzzy
 msgid  "YYYY-MM-DD"
 msgstr "YYYY-MM-DD"
 
 #: source/propctrlr/formres.src#RID_RSC_ENUM_TIMEFORMAT_LIST.1.String.Text
-#, fuzzy
 msgid  "13:45"
 msgstr "13:45"
 
 #: source/propctrlr/formres.src#RID_RSC_ENUM_TIMEFORMAT_LIST.2.String.Text
-#, fuzzy
 msgid  "13:45:00"
 msgstr "13:45:00"
 
 #: source/propctrlr/formres.src#RID_RSC_ENUM_TIMEFORMAT_LIST.3.String.Text
-#, fuzzy
 msgid  "01:45 PM"
 msgstr "01:45 PM"
 
 #: source/propctrlr/formres.src#RID_RSC_ENUM_TIMEFORMAT_LIST.4.String.Text
-#, fuzzy
 msgid  "01:45:00 PM"
 msgstr "01:45:00 PM"
 
 #: source/propctrlr/formres.src#RID_RSC_ENUM_CHECKED.1.String.Text
-#, fuzzy
 msgid  "Not Selected"
 msgstr "Pole valitud"
 
 #: source/propctrlr/formres.src#RID_RSC_ENUM_CHECKED.2.String.Text
-#, fuzzy
 msgid  "Selected"
 msgstr "Valitud"
 
 #: source/propctrlr/formres.src#RID_RSC_ENUM_CHECKED.3.String.Text
-#, fuzzy
 msgid  "Not Defined"
 msgstr "Määramata"
 
 #: source/propctrlr/formres.src#RID_RSC_ENUM_CYCLE.1.String.Text
-#, fuzzy
 msgid  "All records"
 msgstr "Kõik kirjed"
 
 #: source/propctrlr/formres.src#RID_RSC_ENUM_CYCLE.2.String.Text
-#, fuzzy
 msgid  "Active record"
 msgstr "Aktiivne kirje"
 
 #: source/propctrlr/formres.src#RID_RSC_ENUM_CYCLE.3.String.Text
-#, fuzzy
 msgid  "Current page"
 msgstr "Käesolev lehekülg"
 
 #: source/propctrlr/formres.src#RID_RSC_ENUM_NAVIGATION.1.String.Text
-#, fuzzy
 msgid  "No"
 msgstr "Ei"
 
 #: source/propctrlr/formres.src#RID_RSC_ENUM_NAVIGATION.2.String.Text
-#, fuzzy
 msgid  "Yes"
 msgstr "Jah"
 
 #: source/propctrlr/formres.src#RID_RSC_ENUM_NAVIGATION.3.String.Text
-#, fuzzy
 msgid  "Parent Form"
 msgstr "Põhivorm"
 
 #: source/propctrlr/formres.src#RID_RSC_ENUM_SELECTION_TYPE.1.String.Text
-#, fuzzy
 msgid  "None"
 msgstr "Puudub"
 
 #: source/propctrlr/formres.src#RID_RSC_ENUM_SELECTION_TYPE.2.String.Text
-#, fuzzy
 msgid  "Single"
 msgstr "Üksik"
 
 #: source/propctrlr/formres.src#RID_RSC_ENUM_SELECTION_TYPE.3.String.Text
-#, fuzzy
 msgid  "Multi"
 msgstr "Mitu"
 
 #: source/propctrlr/formres.src#RID_RSC_ENUM_SELECTION_TYPE.4.String.Text
-#, fuzzy
 msgid  "Range"
 msgstr "Vahemik"
 
 #: source/propctrlr/formres.src#RID_STR_EVT_APPROVEPARAMETER.String.Text
-#, fuzzy
 msgid  "Fill parameters"
 msgstr "Parameetrite täitmine"
 
 #: source/propctrlr/formres.src#RID_STR_EVT_ACTIONPERFORMED.String.Text
-#, fuzzy
 msgid  "Execute action"
 msgstr "Tegevuse käivitamine"
 
 #: source/propctrlr/formres.src#RID_STR_EVT_AFTERUPDATE.String.Text
-#, fuzzy
 msgid  "After updating"
 msgstr "Pärast värskendamist"
 
 #: source/propctrlr/formres.src#RID_STR_EVT_BEFOREUPDATE.String.Text
-#, fuzzy
 msgid  "Before updating"
 msgstr "Enne värskendamist"
 
 #: source/propctrlr/formres.src#RID_STR_EVT_APPROVEROWCHANGE.String.Text
-#, fuzzy
 msgid  "Before record action"
 msgstr "Enne kirje muutmist"
 
 #: source/propctrlr/formres.src#RID_STR_EVT_ROWCHANGE.String.Text
-#, fuzzy
 msgid  "After record action"
 msgstr "Pärast kirje muutmist"
 
 #: source/propctrlr/formres.src#RID_STR_EVT_CONFIRMDELETE.String.Text
-#, fuzzy
 msgid  "Confirm deletion"
 msgstr "Kustutamise kinnitamine"
 
 #: source/propctrlr/formres.src#RID_STR_EVT_ERROROCCURED.String.Text
-#, fuzzy
 msgid  "Error occurred"
 msgstr "Ilmnes tõrge"
 
 #: source/propctrlr/formres.src#RID_STR_EVT_FOCUSGAINED.String.Text
-#, fuzzy
 msgid  "When receiving focus"
 msgstr "Fookuse saamisel"
 
 #: source/propctrlr/formres.src#RID_STR_EVT_FOCUSLOST.String.Text
-#, fuzzy
 msgid  "When losing focus"
 msgstr "Fookuse kaotamisel"
 
 #: source/propctrlr/formres.src#RID_STR_EVT_ITEMSTATECHANGED.String.Text
-#, fuzzy
 msgid  "Item status changed"
 msgstr "Elemendi staatus muutus"
 
 #: source/propctrlr/formres.src#RID_STR_EVT_KEYTYPED.String.Text
-#, fuzzy
 msgid  "Key pressed"
 msgstr "Klahvivajutusel"
 
 #: source/propctrlr/formres.src#RID_STR_EVT_KEYUP.String.Text
-#, fuzzy
 msgid  "Key released"
 msgstr "Klahvivabastusel"
 
 #: source/propctrlr/formres.src#RID_STR_EVT_LOADED.String.Text
-#, fuzzy
 msgid  "When loading"
 msgstr "Laadimisel"
 
 #: source/propctrlr/formres.src#RID_STR_EVT_RELOADING.String.Text
-#, fuzzy
 msgid  "Before reloading"
 msgstr "Enne uuesti laadimist"
 
 #: source/propctrlr/formres.src#RID_STR_EVT_RELOADED.String.Text
-#, fuzzy
 msgid  "When reloading"
 msgstr "Uuesti laadimisel"
 
 #: source/propctrlr/formres.src#RID_STR_EVT_MOUSEDRAGGED.String.Text
-#, fuzzy
 msgid  "Mouse moved while key pressed"
 msgstr "Hiirt liigutatakse klahvivajutuse ajal"
 
 #: source/propctrlr/formres.src#RID_STR_EVT_MOUSEENTERED.String.Text
-#, fuzzy
 msgid  "Mouse inside"
 msgstr "Hiir sees"
 
 #: source/propctrlr/formres.src#RID_STR_EVT_MOUSEEXITED.String.Text
-#, fuzzy
 msgid  "Mouse outside"
 msgstr "Hiir väljas"
 
 #: source/propctrlr/formres.src#RID_STR_EVT_MOUSEMOVED.String.Text
-#, fuzzy
 msgid  "Mouse moved"
 msgstr "Hiire liikumisel"
 
 #: source/propctrlr/formres.src#RID_STR_EVT_MOUSEPRESSED.String.Text
-#, fuzzy
 msgid  "Mouse button pressed"
 msgstr "Hiirenupu vajutamisel"
 
 #: source/propctrlr/formres.src#RID_STR_EVT_MOUSERELEASED.String.Text
-#, fuzzy
 msgid  "Mouse button released"
 msgstr "Hiirenupu vabastamisel"
 
 #: source/propctrlr/formres.src#RID_STR_EVT_POSITIONING.String.Text
-#, fuzzy
 msgid  "Before record change"
 msgstr "Enne kirje muutmist"
 
 #: source/propctrlr/formres.src#RID_STR_EVT_POSITIONED.String.Text
-#, fuzzy
 msgid  "After record change"
 msgstr "Pärast kirje muutmist"
 
 #: source/propctrlr/formres.src#RID_STR_EVT_RESETTED.String.Text
-#, fuzzy
 msgid  "After resetting"
 msgstr "Pärast lähtestamist"
 
 #: source/propctrlr/formres.src#RID_STR_EVT_APPROVERESETTED.String.Text
-#, fuzzy
 msgid  "Prior to reset"
 msgstr "Enne lähtestamist"
 
 #: source/propctrlr/formres.src#RID_STR_EVT_APPROVEACTIONPERFORMED.String.Text
-#, fuzzy
 msgid  "Approve action"
 msgstr "Tegevuse kinnitamine"
 
 #: source/propctrlr/formres.src#RID_STR_EVT_SUBMITTED.String.Text
-#, fuzzy
 msgid  "Before submitting"
 msgstr "Enne edastamist"
 
 #: source/propctrlr/formres.src#RID_STR_EVT_TEXTCHANGED.String.Text
-#, fuzzy
 msgid  "Text modified"
 msgstr "Teksti on muudetud"
 
 #: source/propctrlr/formres.src#RID_STR_EVT_UNLOADING.String.Text
-#, fuzzy
 msgid  "Before unloading"
 msgstr "Enne mahalaadimist"
 
 #: source/propctrlr/formres.src#RID_STR_EVT_UNLOADED.String.Text
-#, fuzzy
 msgid  "When unloading"
 msgstr "Mahalaadimisel"
 
 #: source/propctrlr/formres.src#RID_STR_EVT_CHANGED.String.Text
-#, fuzzy
 msgid  "Changed"
 msgstr "Muudetud"
 
 #: source/propctrlr/formres.src#RID_STR_EVENTS.String.Text
-#, fuzzy
 msgid  "Events"
 msgstr "Sündmused"
 
 #: source/propctrlr/formres.src#RID_STR_ESCAPE_PROCESSING.String.Text
-#, fuzzy
 msgid  "Analyze SQL command"
 msgstr "Analüüsi SQL käsku"
 
 #: source/propctrlr/formres.src#RID_STR_POSITIONX.String.Text
-#, fuzzy
 msgid  "PositionX"
 msgstr "X-positsioon"
 
 #: source/propctrlr/formres.src#RID_STR_POSITIONY.String.Text
-#, fuzzy
 msgid  "PositionY"
 msgstr "Y-positsioon"
 
 #: source/propctrlr/formres.src#RID_STR_TITLE.String.Text
-#, fuzzy
 msgid  "Title"
 msgstr "Tiitel"
 
 #: source/propctrlr/formres.src#RID_STR_STEP.String.Text
-#, fuzzy
 msgid  "Page (step)"
 msgstr "Lehekülg (samm)"
 
 #: source/propctrlr/formres.src#RID_STR_PROGRESSVALUE.String.Text
-#, fuzzy
 msgid  "Progress value"
 msgstr "Edenemisväärtus"
 
 #: source/propctrlr/formres.src#RID_STR_PROGRESSVALUE_MIN.String.Text
-#, fuzzy
 msgid  "Progress value min."
 msgstr "Min. edenemisväärtus"
 
 #: source/propctrlr/formres.src#RID_STR_PROGRESSVALUE_MAX.String.Text
-#, fuzzy
 msgid  "Progress value max."
 msgstr "Maks. edenemisväärtus"
 
 #: source/propctrlr/formres.src#RID_STR_SCROLLVALUE.String.Text
-#, fuzzy
 msgid  "Scroll value"
 msgstr "Kerimisväärtus"
 
 #: source/propctrlr/formres.src#RID_STR_SCROLLVALUE_MAX.String.Text
-#, fuzzy
 msgid  "Scroll value max."
 msgstr "Maks. kerimisväärtus"
 
 #: source/propctrlr/formres.src#RID_STR_SCROLLVALUE_MIN.String.Text
-#, fuzzy
 msgid  "Scroll value min."
 msgstr "Min. kerimisväärtus"
 
 #: source/propctrlr/formres.src#RID_STR_DEFAULT_SCROLLVALUE.String.Text
-#, fuzzy
 msgid  "Default scroll value"
 msgstr "Vaikimisi kerimisväärtus"
 
 #: source/propctrlr/formres.src#RID_STR_LINEINCREMENT.String.Text
-#, fuzzy
 msgid  "Small change"
 msgstr "Väike muudatus"
 
 #: source/propctrlr/formres.src#RID_STR_BLOCKINCREMENT.String.Text
-#, fuzzy
 msgid  "Large change"
 msgstr "Suur muudatus"
 
 #: source/propctrlr/formres.src#RID_STR_REPEAT_DELAY.String.Text
-#, fuzzy
 msgid  "Delay"
 msgstr "Viivitus"
 
 #: source/propctrlr/formres.src#RID_STR_REPEAT.String.Text
-#, fuzzy
 msgid  "Repeat"
 msgstr "Kordus"
 
 #: source/propctrlr/formres.src#RID_STR_VISIBLESIZE.String.Text
-#, fuzzy
 msgid  "Visible size"
 msgstr "Nähtav suurus"
 
 #: source/propctrlr/formres.src#RID_STR_ORIENTATION.String.Text
-#, fuzzy
 msgid  "Orientation"
 msgstr "Suund"
 
 #: source/propctrlr/formres.src#RID_RSC_ENUM_ORIENTATION.1.String.Text
-#, fuzzy
 msgid  "Horizontal"
 msgstr "Rõhtne"
 
 #: source/propctrlr/formres.src#RID_RSC_ENUM_ORIENTATION.2.String.Text
-#, fuzzy
 msgid  "Vertical"
 msgstr "Püstine"
 
 #: source/propctrlr/formres.src#RID_STR_EVT_ADJUSTMENTVALUECHANGED.String.Text
-#, fuzzy
 msgid  "While adjusting"
 msgstr "Kohandamisel"
 
 #: source/propctrlr/formres.src#RID_STR_DATE.String.Text
-#, fuzzy
 msgid  "Date"
 msgstr "Kuupäev"
 
 #: source/propctrlr/formres.src#RID_STR_STATE.String.Text
-#, fuzzy
 msgid  "State"
 msgstr "Olek"
 
 #: source/propctrlr/formres.src#RID_STR_TIME.String.Text
-#, fuzzy
 msgid  "Time"
 msgstr "Kellaaeg"
 
 #: source/propctrlr/formres.src#RID_STR_SCALEIMAGE.String.Text
-#, fuzzy
 msgid  "Scale"
 msgstr "Skaleerimine"
 
 #: source/propctrlr/formres.src#RID_STR_PUSHBUTTONTYPE.String.Text
-#, fuzzy
 msgid  "Button type"
 msgstr "Nupu tüüp"
 
 #: source/propctrlr/formres.src#RID_RSC_ENUM_PUSHBUTTONTYPE.1.String.Text
-#, fuzzy
 msgid  "Default"
 msgstr "Vaikeväärtused"
 
 #: source/propctrlr/formres.src#RID_RSC_ENUM_PUSHBUTTONTYPE.2.String.Text
-#, fuzzy
 msgid  "OK"
 msgstr "Sobib"
 
 #: source/propctrlr/formres.src#RID_RSC_ENUM_PUSHBUTTONTYPE.3.String.Text
-#, fuzzy
 msgid  "Cancel"
 msgstr "Loobu"
 
 #: source/propctrlr/formres.src#RID_RSC_ENUM_PUSHBUTTONTYPE.4.String.Text
-#, fuzzy
 msgid  "Help"
 msgstr "Abi"
 
 #: source/propctrlr/formres.src#RID_STR_UNABLETOCONNECT.String.Text
-msgid  "The connection to the data source "$name$" could not be established."
-msgstr ""
+msgid  "The connection to the data source \"$name$\" could not be established."
+msgstr "Ühenduse loomine andmeallikaga \"$name$\" ei õnnestunud."
 
 #: source/propctrlr/formres.src#RID_STR_TEXT.String.Text
-#, fuzzy
 msgid  "Text"
 msgstr "Tekst"
 
 #: source/propctrlr/formres.src#RID_STR_BOUND_CELL.String.Text
-#, fuzzy
 msgid  "Linked cell"
 msgstr "Lingitud lahter"
 
 #: source/propctrlr/formres.src#RID_STR_LIST_CELL_RANGE.String.Text
-#, fuzzy
 msgid  "Source cell range"
 msgstr "Lahtrite lähtevahemik"
 
 #: source/propctrlr/formres.src#RID_STR_CELL_EXCHANGE_TYPE.String.Text
-#, fuzzy
 msgid  "Contents of the linked cell"
 msgstr "Lingitud lahtrite sisu"
 
 #: source/propctrlr/formres.src#RID_RSC_ENUM_CELL_EXCHANGE_TYPE.1.String.Text
-#, fuzzy
 msgid  "The selected entry"
 msgstr "Valitud kirje"
 
 #: source/propctrlr/formres.src#RID_RSC_ENUM_CELL_EXCHANGE_TYPE.2.String.Text
-#, fuzzy
 msgid  "Position of the selected entry"
 msgstr "Valitud kirje asukoht"
 
 #: source/propctrlr/formres.src#RID_STR_SHOW_SCROLLBARS.String.Text
-#, fuzzy
 msgid  "Scrollbars"
 msgstr "Kerimisribad"
 
 #: source/propctrlr/formres.src#RID_RSC_ENUM_TEXTTYPE.1.String.Text
-#, fuzzy
 msgid  "Single-line"
 msgstr "Üks rida"
 
 #: source/propctrlr/formres.src#RID_RSC_ENUM_TEXTTYPE.2.String.Text
-#, fuzzy
 msgid  "Multi-line"
 msgstr "Mitu rida"
 
 #: source/propctrlr/formres.src#RID_RSC_ENUM_TEXTTYPE.3.String.Text
-#, fuzzy
 msgid  "Multi-line with formatting"
 msgstr "Mitu rida koos vormindusega"
 
 #: source/propctrlr/formres.src#RID_STR_SYMBOLCOLOR.String.Text
-#, fuzzy
 msgid  "Symbol color"
 msgstr "Sümboli värv"
 
 #: source/propctrlr/formres.src#RID_STR_LINEEND_FORMAT.String.Text
-#, fuzzy
 msgid  "Text lines end with"
 msgstr "Tekstiread lõpevad märgiga"
 
 #: source/propctrlr/formres.src#RID_RSC_ENUM_LINEEND_FORMAT.1.String.Text
-#, fuzzy
 msgid  "LF (Unix)"
 msgstr "LF (Unix)"
 
 #: source/propctrlr/formres.src#RID_RSC_ENUM_LINEEND_FORMAT.2.String.Text
-#, fuzzy
 msgid  "CR+LF (Windows)"
 msgstr "CR+LF (Windows)"
 
 #: source/propctrlr/formres.src#RID_RSC_ENUM_SCROLLBARS.1.String.Text
-#, fuzzy
 msgid  "None"
 msgstr "Puudub"
 
 #: source/propctrlr/formres.src#RID_RSC_ENUM_SCROLLBARS.2.String.Text
-#, fuzzy
 msgid  "Horizontal"
 msgstr "Rõhtne"
 
 #: source/propctrlr/formres.src#RID_RSC_ENUM_SCROLLBARS.3.String.Text
-#, fuzzy
 msgid  "Vertical"
 msgstr "Püstine"
 
 #: source/propctrlr/formres.src#RID_RSC_ENUM_SCROLLBARS.4.String.Text
-#, fuzzy
 msgid  "Both"
 msgstr "Mõlemad"
 
 #: source/propctrlr/formres.src#RID_RSC_ENUM_COMMAND_TYPE.1.String.Text
-#, fuzzy
 msgid  "Table"
 msgstr "Tabel"
 
 #: source/propctrlr/formres.src#RID_RSC_ENUM_COMMAND_TYPE.2.String.Text
-#, fuzzy
 msgid  "Query"
 msgstr "Päring"
 
 #: source/propctrlr/formres.src#RID_RSC_ENUM_COMMAND_TYPE.3.String.Text
-#, fuzzy
 msgid  "SQL command"
 msgstr "SQL-käsk"
 
 #: source/propctrlr/formres.src#RID_STR_TOGGLE.String.Text
-#, fuzzy
 msgid  "Toggle"
 msgstr "Lülitamine"
 
 #: source/propctrlr/formres.src#RID_STR_FOCUSONCLICK.String.Text
-#, fuzzy
 msgid  "Take Focus on Click"
 msgstr "Klõpsamisel fookuse haaramine"
 
 #: source/propctrlr/formres.src#RID_STR_HIDEINACTIVESELECTION.String.Text
-#, fuzzy
 msgid  "Hide selection"
 msgstr "Valiku peitmine"
 
 #: source/propctrlr/formres.src#RID_STR_VISUALEFFECT.String.Text
-#, fuzzy
 msgid  "Style"
 msgstr "Stiil"
 
 #: source/propctrlr/formres.src#RID_RSC_ENUM_VISUALEFFECT.1.String.Text
-#, fuzzy
 msgid  "3D"
 msgstr "Ruumiline"
 
 #: source/propctrlr/formres.src#RID_RSC_ENUM_VISUALEFFECT.2.String.Text
-#, fuzzy
 msgid  "Flat"
 msgstr "Lame"
 
 #: source/propctrlr/formres.src#RID_STR_BORDERCOLOR.String.Text
-#, fuzzy
 msgid  "Border color"
 msgstr "Äärise värv"
 
 #: source/propctrlr/formres.src#RID_RSC_ENUM_IMAGE_POSITION.1.String.Text
-#, fuzzy
 msgid  "Left top"
 msgstr "Vasakul üleval"
 
 #: source/propctrlr/formres.src#RID_RSC_ENUM_IMAGE_POSITION.2.String.Text
-#, fuzzy
 msgid  "Left centered"
 msgstr "Vasakul keskel"
 
 #: source/propctrlr/formres.src#RID_RSC_ENUM_IMAGE_POSITION.3.String.Text
-#, fuzzy
 msgid  "Left bottom"
 msgstr "Vasakul all"
 
 #: source/propctrlr/formres.src#RID_RSC_ENUM_IMAGE_POSITION.4.String.Text
-#, fuzzy
 msgid  "Right top"
 msgstr "Paremal üleval"
 
 #: source/propctrlr/formres.src#RID_RSC_ENUM_IMAGE_POSITION.5.String.Text
-#, fuzzy
 msgid  "Right centered"
 msgstr "Paremal keskel"
 
 #: source/propctrlr/formres.src#RID_RSC_ENUM_IMAGE_POSITION.6.String.Text
-#, fuzzy
 msgid  "Right bottom"
 msgstr "Paremal all"
 
 #: source/propctrlr/formres.src#RID_RSC_ENUM_IMAGE_POSITION.7.String.Text
-#, fuzzy
 msgid  "Above left"
 msgstr "Üleval vasakul"
 
 #: source/propctrlr/formres.src#RID_RSC_ENUM_IMAGE_POSITION.8.String.Text
-#, fuzzy
 msgid  "Above centered"
 msgstr "Üleval keskel"
 
 #: source/propctrlr/formres.src#RID_RSC_ENUM_IMAGE_POSITION.9.String.Text
-#, fuzzy
 msgid  "Above right"
 msgstr "Üleval paremal"
 
 #: source/propctrlr/formres.src#RID_RSC_ENUM_IMAGE_POSITION.10.String.Text
-#, fuzzy
 msgid  "Below left"
 msgstr "All vasakul"
 
 #: source/propctrlr/formres.src#RID_RSC_ENUM_IMAGE_POSITION.11.String.Text
-#, fuzzy
 msgid  "Below centered"
 msgstr "All keskel"
 
 #: source/propctrlr/formres.src#RID_RSC_ENUM_IMAGE_POSITION.12.String.Text
-#, fuzzy
 msgid  "Below right"
 msgstr "All paremal"
 
 #: source/propctrlr/formres.src#RID_RSC_ENUM_IMAGE_POSITION.13.String.Text
-#, fuzzy
 msgid  "Centered"
 msgstr "Keskele"
 
 #: source/propctrlr/formres.src#RID_STR_AUTOLINEBREAK.String.Text
-#, fuzzy
 msgid  "Wrap text automatically"
 msgstr "Teksti automaatne murdmine"
 
 #: source/propctrlr/formres.src#RID_STR_TEXTTYPE.String.Text
-#, fuzzy
 msgid  "Text type"
 msgstr "Tekst;tüüp"
 
 #: source/propctrlr/formres.src#RID_RSC_ENUM_SHOWHIDE.1.String.Text
-#, fuzzy
 msgid  "Hide"
 msgstr "Peida"
 
 #: source/propctrlr/formres.src#RID_RSC_ENUM_SHOWHIDE.2.String.Text
-#, fuzzy
 msgid  "Show"
 msgstr "Näita"
 
 #: source/propctrlr/formres.src#RID_STR_XML_DATA_MODEL.String.Text
-#, fuzzy
 msgid  "XML data model"
 msgstr "XML andmemudel"
 
 #: source/propctrlr/formres.src#RID_STR_BIND_EXPRESSION.String.Text
-#, fuzzy
 msgid  "Binding expression"
 msgstr "Seondamise avaldis"
 
 #: source/propctrlr/formres.src#RID_STR_XSD_REQUIRED.String.Text
-#, fuzzy
 msgid  "Required"
 msgstr "Nõutav"
 
 #: source/propctrlr/formres.src#RID_STR_LIST_BINDING.String.Text
-#, fuzzy
 msgid  "List entry source"
 msgstr "Loendikirjete allikas"
 
 #: source/propctrlr/formres.src#RID_STR_XSD_RELEVANT.String.Text
-#, fuzzy
 msgid  "Relevant"
 msgstr "Relevantne"
 
 #: source/propctrlr/formres.src#RID_STR_XSD_READONLY.String.Text
-#, fuzzy
 msgid  "Read-only"
 msgstr "Kirjutuskaitstud"
 
 #: source/propctrlr/formres.src#RID_STR_XSD_CONSTRAINT.String.Text
-#, fuzzy
 msgid  "Constraint"
 msgstr "Piirang"
 
 #: source/propctrlr/formres.src#RID_STR_XSD_CALCULATION.String.Text
-#, fuzzy
 msgid  "Calculation"
 msgstr "Arvutamine"
 
 #: source/propctrlr/formres.src#RID_STR_XSD_DATA_TYPE.String.Text
-#, fuzzy
 msgid  "Data type"
 msgstr "Andmetüüp"
 
 #: source/propctrlr/formres.src#RID_STR_XSD_WHITESPACES.String.Text
-#, fuzzy
 msgid  "Whitespaces"
 msgstr "Tühikud"
 
 #: source/propctrlr/formres.src#RID_RSC_ENUM_WHITESPACE_HANDLING.1.String.Text
-#, fuzzy
 msgid  "Preserve"
 msgstr "Säilita"
 
 #: source/propctrlr/formres.src#RID_RSC_ENUM_WHITESPACE_HANDLING.2.String.Text
-#, fuzzy
 msgid  "Replace"
 msgstr "Asenda"
 
 #: source/propctrlr/formres.src#RID_RSC_ENUM_WHITESPACE_HANDLING.3.String.Text
-#, fuzzy
 msgid  "Collapse"
 msgstr "Lase kokku"
 
 #: source/propctrlr/formres.src#RID_STR_XSD_PATTERN.String.Text
-#, fuzzy
 msgid  "Pattern"
 msgstr "Mustrid"
 
 #: source/propctrlr/formres.src#RID_STR_XSD_LENGTH.String.Text
-#, fuzzy
 msgid  "Length"
 msgstr "Pikkus"
 
 #: source/propctrlr/formres.src#RID_STR_XSD_MIN_LENGTH.String.Text
-#, fuzzy
 msgid  "Length (at least)"
 msgstr "Pikkus (vähim)"
 
 #: source/propctrlr/formres.src#RID_STR_XSD_MAX_LENGTH.String.Text
-#, fuzzy
 msgid  "Length (at most)"
 msgstr "Pikkus (suurim)"
 
 #: source/propctrlr/formres.src#RID_STR_XSD_TOTAL_DIGITS.String.Text
-#, fuzzy
 msgid  "Digits (total)"
 msgstr "Numbreid (kokku)"
 
 #: source/propctrlr/formres.src#RID_STR_XSD_FRACTION_DIGITS.String.Text
-#, fuzzy
 msgid  "Digits (fraction)"
 msgstr "Numbreid (murdosa)"
 
 #: source/propctrlr/formres.src#RID_STR_XSD_MAX_INCLUSIVE.String.Text
-#, fuzzy
 msgid  "Max. (inclusive)"
 msgstr "Maks. (kaasavalt)"
 
 #: source/propctrlr/formres.src#RID_STR_XSD_MAX_EXCLUSIVE.String.Text
-#, fuzzy
 msgid  "Max. (exclusive)"
 msgstr "Maks. (välistavalt)"
 
 #: source/propctrlr/formres.src#RID_STR_XSD_MIN_INCLUSIVE.String.Text
-#, fuzzy
 msgid  "Min. (inclusive)"
 msgstr "Min. (kaasavalt)"
 
 #: source/propctrlr/formres.src#RID_STR_XSD_MIN_EXCLUSIVE.String.Text
-#, fuzzy
 msgid  "Min. (exclusive)"
 msgstr "Min. (välistavalt)"
 
 #: source/propctrlr/formres.src#RID_STR_SUBMISSION_ID.String.Text
-#, fuzzy
 msgid  "Submission"
 msgstr "Saatmine"
 
 #: source/propctrlr/formres.src#RID_STR_BINDING_UI_NAME.String.Text
-#, fuzzy
 msgid  "Binding"
 msgstr "Seondamine"
 
 #: source/propctrlr/formres.src#RID_STR_SELECTION_TYPE.String.Text
-#, fuzzy
 msgid  "Selection type"
 msgstr "Valiku tüüp"
 
 #: source/propctrlr/formres.src#RID_STR_ROOT_DISPLAYED.String.Text
-#, fuzzy
 msgid  "Root displayed"
 msgstr "Juurelemendi kuvamine"
 
 #: source/propctrlr/formres.src#RID_STR_SHOWS_HANDLES.String.Text
-#, fuzzy
 msgid  "Show handles"
 msgstr "Pidemete kuvamine"
 
 #: source/propctrlr/formres.src#RID_STR_SHOWS_ROOT_HANDLES.String.Text
-#, fuzzy
 msgid  "Show root handles"
 msgstr "Juurelemendi pidemete kuvamine"
 
 #: source/propctrlr/formres.src#RID_STR_EDITABLE.String.Text
-#, fuzzy
 msgid  "Editable"
 msgstr "Redigeeritav"
 
 #: source/propctrlr/formres.src#RID_STR_INVOKES_STOP_NOT_EDITING.String.Text
-#, fuzzy
 msgid  "Invokes stop node editing"
 msgstr "Katkestab punktide redigeerimise"
 
 #: source/propctrlr/formres.src#RID_STR_DECORATION.String.Text
-#, fuzzy
 msgid  "With title bar"
 msgstr "Koos tiitliribaga"
 
 #: source/propctrlr/formres.src#RID_STR_NOLABEL.String.Text
-#, fuzzy
 msgid  "No Label"
 msgstr "Silt puudub"
 
 #: source/propctrlr/formres.src#RID_RSC_ENUM_SCALE_MODE.1.String.Text
-#, fuzzy
 msgid  "No"
 msgstr "Ei"
 
 #: source/propctrlr/formres.src#RID_RSC_ENUM_SCALE_MODE.2.String.Text
-#, fuzzy
 msgid  "Keep Ratio"
 msgstr "Proportsionaalne"
 
 #: source/propctrlr/formres.src#RID_RSC_ENUM_SCALE_MODE.3.String.Text
-#, fuzzy
 msgid  "Fit to Size"
 msgstr "Sobitamine suurusega"
 
 #: source/propctrlr/formres.src#RID_STR_INPUT_REQUIRED.String.Text
-#, fuzzy
 msgid  "Input required"
 msgstr "Sisestus on nõutav"
 
 #: source/propctrlr/formres.src#RID_STR_WRITING_MODE.String.Text
-#, fuzzy
 msgid  "Text direction"
 msgstr "Teksti suund"
 
 #: source/propctrlr/formres.src#RID_RSC_ENUM_WRITING_MODE.1.String.Text
-#, fuzzy
 msgid  "Left-to-right"
 msgstr "Vasakult paremale"
 
 #: source/propctrlr/formres.src#RID_RSC_ENUM_WRITING_MODE.2.String.Text
-#, fuzzy
 msgid  "Right-to-left"
 msgstr "Paremalt vasakule"
 
 #: source/propctrlr/formres.src#RID_RSC_ENUM_WRITING_MODE.3.String.Text
-#, fuzzy
 msgid  "Use superordinate object settings"
 msgstr "Kasutatakse ülemobjekti sätteid"
 
 #: source/propctrlr/formres.src#RID_RSC_ENUM_WHEEL_BEHAVIOR.1.String.Text
-#, fuzzy
 msgid  "Never"
 msgstr "Mitte kunagi"
 
 #: source/propctrlr/formres.src#RID_RSC_ENUM_WHEEL_BEHAVIOR.2.String.Text
-#, fuzzy
 msgid  "When focused"
 msgstr "Fookuse kaotamisel"
 
 #: source/propctrlr/formres.src#RID_RSC_ENUM_WHEEL_BEHAVIOR.3.String.Text
-#, fuzzy
 msgid  "Always"
 msgstr "Alati"
 
 #: source/propctrlr/formres.src#RID_STR_ANCHOR_TYPE.String.Text
-#, fuzzy
 msgid  "Anchor"
 msgstr "Ankurdamine"
 
 #: source/propctrlr/formres.src#RID_RSC_ENUM_TEXT_ANCHOR_TYPE.1.String.Text
-#, fuzzy
 msgid  "To Paragraph"
 msgstr "Lõigule"
 
 #: source/propctrlr/formres.src#RID_RSC_ENUM_TEXT_ANCHOR_TYPE.2.String.Text
-#, fuzzy
 msgid  "As Character"
 msgstr "Märgina"
 
 #: source/propctrlr/formres.src#RID_RSC_ENUM_TEXT_ANCHOR_TYPE.3.String.Text
-#, fuzzy
 msgid  "To Page"
 msgstr "Leheküljele"
 
 #: source/propctrlr/formres.src#RID_RSC_ENUM_TEXT_ANCHOR_TYPE.4.String.Text
-#, fuzzy
 msgid  "To Frame"
 msgstr "Paneelile"
 
 #: source/propctrlr/formres.src#RID_RSC_ENUM_TEXT_ANCHOR_TYPE.5.String.Text
-#, fuzzy
 msgid  "To Character"
 msgstr "Märgile"
 
 #: source/propctrlr/formres.src#RID_RSC_ENUM_SHEET_ANCHOR_TYPE.1.String.Text
-#, fuzzy
 msgid  "To Page"
 msgstr "Leheküljele"
 
 #: source/propctrlr/formres.src#RID_RSC_ENUM_SHEET_ANCHOR_TYPE.2.String.Text
-#, fuzzy
 msgid  "To Cell"
 msgstr "Lahtrile"
 
 #: source/propctrlr/formres.src#RID_STR_FONTSTYLE_REGULAR.String.Text
-#, fuzzy
 msgid  "Regular"
 msgstr "Tavaline"
 
 #: source/propctrlr/formres.src#RID_STR_FONTSTYLE_BOLD_ITALIC.String.Text
-#, fuzzy
 msgid  "Bold Italic"
 msgstr "Paks kaldkiri"
 
 #: source/propctrlr/formres.src#RID_STR_FONTSTYLE_ITALIC.String.Text
-#, fuzzy
 msgid  "Italic"
 msgstr "Kaldkiri"
 
 #: source/propctrlr/formres.src#RID_STR_FONTSTYLE_BOLD.String.Text
-#, fuzzy
 msgid  "Bold"
 msgstr "Paks"
 
 #: source/propctrlr/formres.src#RID_STR_FONT_DEFAULT.String.Text
-#, fuzzy
 msgid  "(Default)"
 msgstr "(Vaikimisi)"
 
 #: source/propctrlr/fontdialog.src#RID_TABDLG_FONTDIALOG.TabDialog.Text
-#, fuzzy
 msgid  "Character"
 msgstr "Märk"
 
 #: source/propctrlr/fontdialog.src#RID_TABDLG_FONTDIALOG.1.TABPAGE_CHARACTERS.PageItem.Text
-#, fuzzy
 msgid  "Font"
 msgstr "Font"
 
 #: source/propctrlr/fontdialog.src#RID_TABDLG_FONTDIALOG.1.TABPAGE_CHARACTERS_EXT.PageItem.Text
-#, fuzzy
 msgid  "Font Effects"
 msgstr "Fondiefektid"
 
 #: source/propctrlr/newdatatype.src#RID_DLG_NEW_DATA_TYPE.ModalDialog.Text
-#, fuzzy
 msgid  "New Data Type"
 msgstr "Uus andmetüüp"
 
 #: source/propctrlr/newdatatype.src#RID_DLG_NEW_DATA_TYPE.FT_LABEL.FixedText.Text
-#, fuzzy
 msgid  "Type a name for the new data type:"
 msgstr "Sisesta uue andmetüübi nimi:"
 
 #: source/scanner/sanedlg.src#RID_SANE_DIALOG.RID_DEVICEINFO_BTN.PushButton.Text
 msgid  "About\n Dev~ice"
-msgstr ""
+msgstr "Seadme\n info"
 
 #: source/scanner/sanedlg.src#RID_SANE_DIALOG.RID_PREVIEW_BTN.PushButton.Text
 msgid  "Create\nPreview"
-msgstr ""
+msgstr "Loo\neelvaade"
 
 #: source/scanner/sanedlg.src#RID_SANE_DIALOG.RID_PREVIEW_BOX.FixedLine.Text
-#, fuzzy
 msgid  "Preview"
 msgstr "Eelvaade"
 
 #: source/scanner/sanedlg.src#RID_SANE_DIALOG.RID_SCANAREA_BOX.FixedLine.Text
-#, fuzzy
 msgid  "Scan area"
 msgstr "Skaneerimispiirkond"
 
 #: source/scanner/sanedlg.src#RID_SANE_DIALOG.RID_SCAN_LEFT_TXT.FixedText.Text
-#, fuzzy
 msgid  "Left:"
 msgstr "Vasak:"
 
 #: source/scanner/sanedlg.src#RID_SANE_DIALOG.RID_SCAN_TOP_TXT.FixedText.Text
-#, fuzzy
 msgid  "Top:"
 msgstr "Ülemine:"
 
 #: source/scanner/sanedlg.src#RID_SANE_DIALOG.RID_SCAN_RIGHT_TXT.FixedText.Text
-#, fuzzy
 msgid  "Right:"
 msgstr "Parem:"
 
 #: source/scanner/sanedlg.src#RID_SANE_DIALOG.RID_SCAN_BOTTOM_TXT.FixedText.Text
-#, fuzzy
 msgid  "Bottom:"
 msgstr "Alumine:"
 
 #: source/scanner/sanedlg.src#RID_SANE_DIALOG.RID_DEVICE_BOX_TXT.FixedText.Text
-#, fuzzy
 msgid  "Device used:"
 msgstr "Kasutatud seade:"
 
 #: source/scanner/sanedlg.src#RID_SANE_DIALOG.RID_SCAN_RESOLUTION_TXT.FixedText.Text
-#, fuzzy
 msgid  "Resolution [~DPI]"
 msgstr "Eraldusvõime [DPI]"
 
 #: source/scanner/sanedlg.src#RID_SANE_DIALOG.RID_SCAN_ADVANCED_TXT.FixedText.Text
-#, fuzzy
 msgid  "Show advanced options"
 msgstr "Lisavalikute näitamine"
 
 #: source/scanner/sanedlg.src#RID_SANE_DIALOG.RID_SCAN_OPTION_TXT.FixedText.Text
-#, fuzzy
 msgid  "Options:"
 msgstr "Sätted:"
 
 #: source/scanner/sanedlg.src#RID_SANE_DIALOG.RID_SCAN_NUMERIC_VECTOR_TXT.FixedText.Text
-#, fuzzy
 msgid  "Vector element"
 msgstr "Vektorelement"
 
 #: source/scanner/sanedlg.src#RID_SANE_DIALOG.RID_SCAN_BUTTON_OPTION_BTN.PushButton.Text
-#, fuzzy
 msgid  "Set"
 msgstr "Määra"
 
 #: source/scanner/sanedlg.src#RID_SANE_DIALOG.Bitmap.Text
-#, fuzzy
 msgid  "Scanner"
 msgstr "Skänner"
 
 #: source/scanner/sanedlg.src#RID_SANE_DEVICEINFO_TXT.String.Text
 msgid  "Device: %s\nVendor: %s\nModel: %s\nType: %s"
-msgstr ""
+msgstr "Seade: %s\nTootja: %s\nMudel: %s\nTüüp: %s"
 
 #: source/scanner/sanedlg.src#RID_SANE_SCANERROR_TXT.String.Text
-#, fuzzy
 msgid  "An error occurred while scanning."
 msgstr "Skaneerimisel tekkis tõrge."
 
 #: source/scanner/sanedlg.src#RID_SANE_NORESOLUTIONOPTION_TXT.String.Text
 msgid  "The device does not offer a preview option. Therefore, a normal scan will be used as a preview instead. This may take a considerable amount of time."
-msgstr ""
+msgstr "Seadmel pole eelvaate võimalust ja seetõttu kasutatakse eelvaate asemel tavalist skaneerimist. See võib võtta aega."
 
 #: source/scanner/sanedlg.src#RID_SANE_NOSANELIB_TXT.String.Text
 msgid  "The SANE interface could not be initialized. Scanning is not possible."
-msgstr ""
+msgstr "SANE liidese initsialiseerimine ei õnnestunud. Skaneerimine pole võimalik."
 
 #: source/scanner/grid.src#GRID_DIALOG.GRID_DIALOG_RESET_BTN.PushButton.Text
-#, fuzzy
 msgid  "Set"
 msgstr "Määra"
 
 #: source/scanner/grid.src#GRID_DIALOG.RESET_TYPE_LINEAR_ASCENDING.String.Text
-#, fuzzy
 msgid  "Linear ascending"
 msgstr "Lineaarselt suurenev"
 
 #: source/scanner/grid.src#GRID_DIALOG.RESET_TYPE_LINEAR_DESCENDING.String.Text
-#, fuzzy
 msgid  "Linear descending"
 msgstr "Lineaarselt vähenev"
 
 #: source/scanner/grid.src#GRID_DIALOG.RESET_TYPE_RESET.String.Text
-#, fuzzy
 msgid  "Original values"
 msgstr "Algväärtused"
 
 #: source/scanner/grid.src#GRID_DIALOG.RESET_TYPE_EXPONENTIAL.String.Text
-#, fuzzy
 msgid  "Exponential increasing"
 msgstr "Eksponentsiaalne kasv"
 
 #: source/update/check/updatehdl.src#RID_UPDATE_STR_CHECKING.String.Text
-#, fuzzy
 msgid  "Checking..."
 msgstr "Kontrollimine..."
 
 #: source/update/check/updatehdl.src#RID_UPDATE_STR_CHECKING_ERR.String.Text
-#, fuzzy
 msgid  "Checking for an update failed."
 msgstr "Uuenduste kontrollimine nurjus."
 
 #: source/update/check/updatehdl.src#RID_UPDATE_STR_NO_UPD_FOUND.String.Text
-#, fuzzy
 msgid  "%PRODUCTNAME %PRODUCTVERSION is up to date."
 msgstr "%PRODUCTNAME %PRODUCTVERSION ei vaja uuendamist."
 
 #: source/update/check/updatehdl.src#RID_UPDATE_STR_UPD_FOUND.String.Text
 msgid  "%PRODUCTNAME %NEXTVERSION is available.\n\nThe installed version is %PRODUCTNAME %PRODUCTVERSION.\n\nNote: Before downloading  an update, please ensure that you have sufficient access rights to install it.\nA password, usually the administrator's or root password, may be required."
-msgstr ""
+msgstr "%PRODUCTNAME %NEXTVERSION on saadaval.\n\nPraegu on paigaldatud %PRODUCTNAME %PRODUCTVERSION.\n\nMärkus: enne uuenduse allalaadimist veendu, et sul on selle paigaldamiseks vajalikud õigused.\nVaja võib minna parooli, tavaliselt administraatori oma."
 
 #: source/update/check/updatehdl.src#RID_UPDATE_STR_DLG_TITLE.String.Text
-#, fuzzy
 msgid  "Check for Updates"
 msgstr "Uuenduste olemasolu kontrollimine"
 
 #: source/update/check/updatehdl.src#RID_UPDATE_STR_DOWNLOAD_PAUSE.String.Text
-#, fuzzy
 msgid  "Downloading %PRODUCTNAME %NEXTVERSION paused at..."
 msgstr "%PRODUCTNAME %NEXTVERSION allalaadimine peatati..."
 
 #: source/update/check/updatehdl.src#RID_UPDATE_STR_DOWNLOAD_ERR.String.Text
-#, fuzzy
 msgid  "Downloading %PRODUCTNAME %NEXTVERSION stalled at"
 msgstr "%PRODUCTNAME %NEXTVERSION allalaadimine seiskus"
 
 #: source/update/check/updatehdl.src#RID_UPDATE_STR_DOWNLOAD_WARN.String.Text
 msgid  "The download location is: %DOWNLOAD_PATH.\n\nUnder Tools – Options... - %PRODUCTNAME – Online Update you can change the download location."
-msgstr ""
+msgstr "Allalaadimise asukoht: %DOWNLOAD_PATH.\n\nDialoogis Tööriistad – Sätted... - %PRODUCTNAME – Internetiuuendus saab allalaadimise asukohta muuta."
 
 #: source/update/check/updatehdl.src#RID_UPDATE_STR_DOWNLOAD_DESCR.String.Text
-#, fuzzy
 msgid  "%FILE_NAME has been downloaded to %DOWNLOAD_PATH."
 msgstr "%FILE_NAME salvestati asukohta %DOWNLOAD_PATH."
 
 #: source/update/check/updatehdl.src#RID_UPDATE_STR_DOWNLOAD_UNAVAIL.String.Text
 msgid  "The automatic download of the update is currently not available.\n\nClick 'Download...' to download %PRODUCTNAME %NEXTVERSION manually from the web site."
-msgstr ""
+msgstr "Automaatne uuenduse allalaadimine pole praegu võimalik.\n\n%PRODUCTNAME %NEXTVERSION käsitsi allalaadimiseks veebilehelt klõpsa 'Laadi alla...'."
 
 #: source/update/check/updatehdl.src#RID_UPDATE_STR_DOWNLOADING.String.Text
-#, fuzzy
 msgid  "Downloading %PRODUCTNAME %NEXTVERSION..."
 msgstr "%PRODUCTNAME %NEXTVERSION allalaadimine..."
 
 #: source/update/check/updatehdl.src#RID_UPDATE_STR_READY_INSTALL.String.Text
 msgid  "Download of %PRODUCTNAME %NEXTVERSION completed. Ready for installation."
-msgstr ""
+msgstr "%PRODUCTNAME %NEXTVERSION allalaadimine on lõpetatud. Alustada võib paigaldamist."
 
 #: source/update/check/updatehdl.src#RID_UPDATE_STR_CANCEL_TITLE.String.Text
-#, fuzzy
 msgid  "%PRODUCTNAME %PRODUCTVERSION"
 msgstr "%PRODUCTNAME %PRODUCTVERSION"
 
 #: source/update/check/updatehdl.src#RID_UPDATE_STR_CANCEL_DOWNLOAD.String.Text
-#, fuzzy
 msgid  "Do you really want to cancel the download?"
 msgstr "Kas soovid tõesti allalaadimisest loobuda?"
 
 #: source/update/check/updatehdl.src#RID_UPDATE_STR_BEGIN_INSTALL.String.Text
 msgid  "To install the update, %PRODUCTNAME %PRODUCTVERSION needs to be closed. Do you want to install the update now?"
-msgstr ""
+msgstr "Uuenduse paigaldamiseks tuleb %PRODUCTNAME %PRODUCTVERSION sulgeda. Kas soovid paigaldada uuenduse kohe?"
 
 #: source/update/check/updatehdl.src#RID_UPDATE_STR_INSTALL_NOW.String.Text
-#, fuzzy
 msgid  "Install ~now"
 msgstr "Paigaldan kohe"
 
 #: source/update/check/updatehdl.src#RID_UPDATE_STR_INSTALL_LATER.String.Text
-#, fuzzy
 msgid  "Install ~later"
 msgstr "Paigaldan hiljem"
 
 #: source/update/check/updatehdl.src#RID_UPDATE_STR_INSTALL_ERROR.String.Text
 msgid  "Could not run the installer application, please run %FILE_NAME in %DOWNLOAD_PATH manually."
-msgstr ""
+msgstr "Paigaldusrakenduse käivitamine nurjus, palun käivita fail %FILE_NAME asukohas %DOWNLOAD_PATH käsitsi."
 
 #: source/update/check/updatehdl.src#RID_UPDATE_STR_OVERWRITE_WARNING.String.Text
 msgid  "A file with that name already exists! Do you want to overwrite the existing file?"
-msgstr ""
+msgstr "Selle nimega fail on juba olemas! Kas soovid olemasoleva faili üle kirjutada?"
 
 #: source/update/check/updatehdl.src#RID_UPDATE_STR_RELOAD_WARNING.String.Text
 msgid  "A file with the name '%FILENAME' already exists in '%DOWNLOAD_PATH'! Do you want to continue with the download or delete and reload the file?"
@@ -2885,126 +2490,101 @@ msgid  "Continue"
 msgstr ""
 
 #: source/update/check/updatehdl.src#RID_UPDATE_STR_PERCENT.String.Text
-#, fuzzy
 msgid  "%PERCENT%"
 msgstr "%PERCENT%"
 
 #: source/update/check/updatehdl.src#RID_UPDATE_FT_STATUS.String.Text
-#, fuzzy
 msgid  "Status"
 msgstr "Olek"
 
 #: source/update/check/updatehdl.src#RID_UPDATE_FT_DESCRIPTION.String.Text
-#, fuzzy
 msgid  "Description"
 msgstr "Kirjeldus"
 
 #: source/update/check/updatehdl.src#RID_UPDATE_BTN_CLOSE.String.Text
-#, fuzzy
 msgid  "Close"
 msgstr "Sulge"
 
 #: source/update/check/updatehdl.src#RID_UPDATE_BTN_DOWNLOAD.String.Text
-#, fuzzy
 msgid  "~Download"
 msgstr "Laadi alla"
 
 #: source/update/check/updatehdl.src#RID_UPDATE_BTN_INSTALL.String.Text
-#, fuzzy
 msgid  "~Install"
 msgstr "Paigalda"
 
 #: source/update/check/updatehdl.src#RID_UPDATE_BTN_PAUSE.String.Text
-#, fuzzy
 msgid  "~Pause"
 msgstr "Peata"
 
 #: source/update/check/updatehdl.src#RID_UPDATE_BTN_RESUME.String.Text
-#, fuzzy
 msgid  "~Resume"
 msgstr "Jätka"
 
 #: source/update/check/updatehdl.src#RID_UPDATE_BTN_CANCEL.String.Text
-#, fuzzy
 msgid  "Cancel"
 msgstr "Loobu"
 
 #: source/update/check/updatehdl.src#RID_UPDATE_BUBBLE_T_UPDATE_AVAIL.String.Text
-#, fuzzy
 msgid  "%PRODUCTNAME update available"
 msgstr "%PRODUCTNAME-i uuendus on saadaval"
 
 #: source/update/check/updatehdl.src#RID_UPDATE_BUBBLE_UPDATE_AVAIL.String.Text
-#, fuzzy
 msgid  "Click here to start the download."
 msgstr "Klõpsa allalaadimise alustamiseks siia."
 
 #: source/update/check/updatehdl.src#RID_UPDATE_BUBBLE_T_UPDATE_NO_DOWN.String.Text
-#, fuzzy
 msgid  "%PRODUCTNAME update available"
 msgstr "%PRODUCTNAME-i uuendus on saadaval"
 
 #: source/update/check/updatehdl.src#RID_UPDATE_BUBBLE_UPDATE_NO_DOWN.String.Text
-#, fuzzy
 msgid  "Click here for more information."
 msgstr "Rohkema teabe saamiseks klõpsa siia."
 
 #: source/update/check/updatehdl.src#RID_UPDATE_BUBBLE_T_AUTO_START.String.Text
-#, fuzzy
 msgid  "%PRODUCTNAME update available"
 msgstr "%PRODUCTNAME-i uuendus on saadaval"
 
 #: source/update/check/updatehdl.src#RID_UPDATE_BUBBLE_AUTO_START.String.Text
-#, fuzzy
 msgid  "Download of update begins."
 msgstr "Uuenduse allalaadimine algab."
 
 #: source/update/check/updatehdl.src#RID_UPDATE_BUBBLE_T_DOWNLOADING.String.Text
-#, fuzzy
 msgid  "Download of update in progress"
 msgstr "Toimub uuenduse allalaadimine"
 
 #: source/update/check/updatehdl.src#RID_UPDATE_BUBBLE_T_DOWNLOAD_PAUSED.String.Text
-#, fuzzy
 msgid  "Download of update paused"
 msgstr "Uuenduse allalaadimine on peatatud"
 
 #: source/update/check/updatehdl.src#RID_UPDATE_BUBBLE_DOWNLOAD_PAUSED.String.Text
-#, fuzzy
 msgid  "Click here to resume."
 msgstr "Klõpsa jätkamiseks siia."
 
 #: source/update/check/updatehdl.src#RID_UPDATE_BUBBLE_T_ERROR_DOWNLOADING.String.Text
-#, fuzzy
 msgid  "Download of update stalled"
 msgstr "Uuenduse allalaadimine seiskus"
 
 #: source/update/check/updatehdl.src#RID_UPDATE_BUBBLE_ERROR_DOWNLOADING.String.Text
-#, fuzzy
 msgid  "Click here for more information."
 msgstr "Rohkema teabe saamiseks klõpsa siia."
 
 #: source/update/check/updatehdl.src#RID_UPDATE_BUBBLE_T_DOWNLOAD_AVAIL.String.Text
-#, fuzzy
 msgid  "Download of update completed"
 msgstr "Uuenduse allalaadimine on lõppenud"
 
 #: source/update/check/updatehdl.src#RID_UPDATE_BUBBLE_DOWNLOAD_AVAIL.String.Text
-#, fuzzy
 msgid  "Click here to start the installation."
 msgstr "Paigalduse alustamiseks klõpsa siia."
 
 #: source/update/check/updatehdl.src#RID_UPDATE_BUBBLE_T_EXT_UPD_AVAIL.String.Text
-#, fuzzy
 msgid  "Updates for extensions available"
 msgstr "Laienduste uuendused on saadaval"
 
 #: source/update/check/updatehdl.src#RID_UPDATE_BUBBLE_EXT_UPD_AVAIL.String.Text
-#, fuzzy
 msgid  "Click here for more information."
 msgstr "Rohkema teabe saamiseks klõpsa siia."
 
 #: source/update/check/Addons.xcu#.Addons.AddonUI.OfficeHelp.UpdateCheckJob.Title
-#, fuzzy
 msgid  "Check for ~Updates..."
 msgstr "Kontrolli uuenduste olemasolu..."

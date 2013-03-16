@@ -41,23 +41,23 @@ msgstr "कोई कनैक्शन नेईं जुड़ी सके�
 
 #: source/core/resource/strings.src#RID_STR_TABLE_IS_FILTERED.String.Text
 msgid  "The table $name$ already exists. It is not visible because it has been filtered out."
-msgstr ""
+msgstr "$name$ टेबल पैह्‌लें गै मजूद ऐ. एह् द्रिश्टीगोचर नेईं ऐ की जे इसी पुनियै कड्ढी ओड़े दा ऐ. "
 
 #: source/core/resource/strings.src#RID_STR_NEED_CONFIG_WRITE_ACCESS.String.Text
 msgid  "You have no write access to the configuration data the object is based on."
-msgstr ""
+msgstr "जिस पर चीज अधारत ऐ,उस संरूपण-डेटे लेई लिखने दी पुज्ज नेईं ऐ. "
 
 #: source/core/resource/strings.src#RID_STR_COULDNOTCONNECT_UNSPECIFIED.String.Text
 msgid  "The connection to the external data source could not be established. An unknown error occurred. The driver is probably defective."
-msgstr ""
+msgstr "बाह्‌री डेटा –स्रोत कन्नै कनैक्शन स्थापत नेईं होई सकेआ.इक अनजांती गल्ती घटत होई.खबरै चालक खराब ऐ. "
 
 #: source/core/resource/strings.src#RID_STR_COULDNOTCONNECT_NODRIVER.String.Text
 msgid  "The connection to the external data source could not be established. No SDBC driver was found for the given URL."
-msgstr ""
+msgstr "बाह्‌री डेटा –स्रोत कन्नै कनैक्शन स्थापत नेईं होई सकेआ. दित्ते दे URLलेई  कोई बी  SDBC चालक नेईं लब्भा. "
 
 #: source/core/resource/strings.src#RID_STR_COULDNOTLOAD_MANAGER.String.Text
 msgid  "The connection to the external data source could not be established. The SDBC driver manager could not be loaded."
-msgstr ""
+msgstr "बाह्‌री डेटा –स्रोत कन्नै कनैक्शन स्थापत नेईं होई सकेआ. SDBC चालक मैन्जर  लोड नेईं होई  सकेआ. "
 
 #: source/core/resource/strings.src#RID_STR_FORM.String.Text
 msgid  "Form"
@@ -69,11 +69,11 @@ msgstr "रपोट"
 
 #: source/core/resource/strings.src#RID_STR_DATASOURCE_NOT_STORED.String.Text
 msgid  "The data source was not saved. Please use the interface XStorable to save the data source."
-msgstr ""
+msgstr "डेटा-स्रोत बचे दा नेईं हा. कृपया डेटा- स्रोत बचाने लेई Xस्टोरेबल इंटरफेस बरतो. "
 
 #: source/core/resource/strings.src#RID_STR_ONLY_QUERY.String.Text
 msgid  "The given command is not a SELECT statement.\nOnly queries are allowed."
-msgstr ""
+msgstr "दित्ते दा आदेश SELECT कथन नेईं ऐ.\\ सिर्फ पुच्छें दी इजाज़त ऐ. "
 
 #: source/core/resource/strings.src#RID_STR_NO_VALUE_CHANGED.String.Text
 msgid  "No values were modified."
@@ -81,11 +81,11 @@ msgstr "कुसै बी मुल्लै च तरमीम नेईं 
 
 #: source/core/resource/strings.src#RID_STR_NO_XROWUPDATE.String.Text
 msgid  "Values could not be inserted. The XRowUpdate interface is not supported by ResultSet."
-msgstr ""
+msgstr "मुल्लें दा समावेश नेईं होई सकेआ. ResultSet आसेआ  XRowUpdate इंटरफेस समर्थत नेईं ऐ. "
 
 #: source/core/resource/strings.src#RID_STR_NO_XRESULTSETUPDATE.String.Text
 msgid  "Values could not be inserted. The XResultSetUpdate interface is not supported by ResultSet."
-msgstr ""
+msgstr "मुल्लें दा समावेश नेईं होई सकेआ."
 
 #: source/core/resource/strings.src#RID_STR_NO_UPDATE_MISSING_CONDITION.String.Text
 msgid  "Values could not be modified, due to a missing condition statement."
@@ -141,11 +141,11 @@ msgstr "इस अवस्था च निस्बतन स्थिति�
 
 #: source/core/resource/strings.src#RID_STR_NO_REFESH_AFTERLAST.String.Text
 msgid  "A row cannot be refreshed when the ResultSet is positioned after the last row."
-msgstr ""
+msgstr "जिसलै ResultSet खीरली पंगताला दे परैंत स्थित होऐ तां पंगताला दा सजराकरण नेईं होई सकदा. "
 
 #: source/core/resource/strings.src#RID_STR_NO_MOVETOINSERTROW_CALLED.String.Text
 msgid  "A new row cannot be inserted when the ResultSet is not first moved to the insert row."
-msgstr ""
+msgstr "जिसलै ResultSet पैह्‌लें समावेशत  पंगताला च नेईं लेते दा होऐ ,नमीं पंगताल समावेशत नेईं हेई सकदी. "
 
 #: source/core/resource/strings.src#RID_STR_NO_UPDATEROW.String.Text
 msgid  "A row cannot be modified in this state"
@@ -165,31 +165,31 @@ msgstr "ड्राईवर स्तंभ-विवरणें दा स�
 
 #: source/core/resource/strings.src#RID_STR_COLUMN_ALTER_BY_NAME.String.Text
 msgid  "The driver does not support the modification of column descriptions by changing the name."
-msgstr ""
+msgstr "ड्राईवर नांऽ बदलियै स्तंभ-विवरणें च तरमीम करने दा समर्थन  नेईं करदा."
 
 #: source/core/resource/strings.src#RID_STR_COLUMN_ALTER_BY_INDEX.String.Text
 msgid  "The driver does not support the modification of column descriptions by changing the index."
-msgstr ""
+msgstr "ड्राईवर इंडैक्स बदलियै स्तंभ-विवरणें च तरमीम करने दा समर्थन  नेईं करदा. "
 
 #: source/core/resource/strings.src#RID_STR_FILE_DOES_NOT_EXIST.String.Text
-msgid  "The file "$file$" does not exist."
-msgstr ""
+msgid  "The file \"$file$\" does not exist."
+msgstr "\"$file$\" फाईल मजूद नेईं ऐ. "
 
 #: source/core/resource/strings.src#RID_STR_TABLE_DOES_NOT_EXIST.String.Text
-msgid  "There exists no table named "$table$"."
-msgstr ""
+msgid  "There exists no table named \"$table$\"."
+msgstr "$name$ टेबल खोह्‌ल्लने दी कोशश कीती. "
 
 #: source/core/resource/strings.src#RID_STR_QUERY_DOES_NOT_EXIST.String.Text
-msgid  "There exists no query named "$table$"."
+msgid  "There exists no query named \"$table$\"."
 msgstr ""
 
 #: source/core/resource/strings.src#RID_STR_CONFLICTING_NAMES.String.Text
 msgid  "There are tables in the database whose names conflict with the names of existing queries. To make full use of all queries and tables, make sure they have distinct names."
-msgstr ""
+msgstr "डेटाबेस च नेह् टेबल न,जिं’दे नांऽ पैह्‌लें थमां मजूद पुच्छें दे नांऽ कन्नै झमेला पैदा करदे न.पुच्छें ते टेबलें दा पूरा-पूरा उपयोग करने लेई इस गल्ला गी पक्का करी लैओ जे इंदे नांऽ बक्खरे-बक्खरे होन."
 
 #: source/core/resource/strings.src#RID_STR_COMMAND_LEADING_TO_ERROR.String.Text
 msgid  "The SQL command leading to this error is:\n\n$command$"
-msgstr ""
+msgstr "एह् गल्ती करने आह्‌ला SQL आदेश ऐ:\n\n$command$"
 
 #: source/core/resource/strings.src#RID_STR_STATEMENT_WITHOUT_RESULT_SET.String.Text
 msgid  "The SQL command does not describe a result set."
@@ -228,7 +228,7 @@ msgid  "Error accessing data source '$name$':\n$error$"
 msgstr ""
 
 #: source/core/resource/strings.src#RID_STR_NO_SUB_FOLDER.String.Text
-msgid  "There exists no folder named "$folder$"."
+msgid  "There exists no folder named \"$folder$\"."
 msgstr ""
 
 #: source/core/resource/strings.src#RID_STR_NO_DELETE_BEFORE_AFTER.String.Text
@@ -296,7 +296,7 @@ msgid  "Embedding of database documents is not supported."
 msgstr ""
 
 #: source/core/resource/strings.src#RID_STR_CONNECTION_REQUEST.String.Text
-msgid  "A connection for the following URL was requested "$name$"."
+msgid  "A connection for the following URL was requested \"$name$\"."
 msgstr ""
 
 #: source/core/resource/strings.src#RID_STR_MISSING_EXTENSION.String.Text
@@ -428,7 +428,7 @@ msgid  "The specified file name or directory does not exist."
 msgstr ""
 
 #: source/ext/adabas/AdabasNewDb.src#STR_ERROR_IN_ADABAS_INSTALLATION.String.Text
-msgid  "No new database can be created.\nPlease check your Adabas D installation, especially the variables "DBROOT" and "DBWORK"."
+msgid  "No new database can be created.\nPlease check your Adabas D installation, especially the variables \"DBROOT\" and \"DBWORK\"."
 msgstr ""
 
 #: source/ext/adabas/AdabasNewDb.src#STR_STAT_WARNING.String.Text
@@ -645,7 +645,7 @@ msgstr ""
 
 #: source/sdbtools/resource/sdbt_strings.src#STR_QUERY_AND_TABLE_DISTINCT_NAMES.String.Text
 msgid  "You cannot give a table and a query the same name. Please use a name which is not yet used by a query or table."
-msgstr ""
+msgstr "तुस इक टेबल ते इक पुच्छ गी इक्कै नांऽ नेईं देई सकदे. किरपा करियै ओह् नांऽ बरतो ,जेह्‌ड़ा अजें तोड़ी कुसै पुच्छ जां टेबल नेईं बरतेआ गेदा . "
 
 #: source/sdbtools/resource/sdbt_strings.src#STR_BASENAME_TABLE.String.Text
 msgid  "Table"
@@ -801,11 +801,11 @@ msgstr "- %PRODUCTNAME अधार "
 
 #: source/ui/app/app.src#RID_STR_REPORTS_HELP_TEXT_WIZARD.String.Text
 msgid  "The wizard will guide you through the steps necessary to create a report."
-msgstr ""
+msgstr "रपोट सिरजने लेई जरूरी चरणें पर विशारद मार्गदर्शन करग. "
 
 #: source/ui/app/app.src#RID_STR_FORMS_HELP_TEXT.String.Text
 msgid  "Create a form by specifying the record source, controls, and control properties."
-msgstr ""
+msgstr "रकाड स्रोत,नियंत्रणें ते नियंत्रण-विशेशताएं गी निश्चत करियै फार्म सिरजो . "
 
 #: source/ui/app/app.src#RID_STR_REPORT_HELP_TEXT.String.Text
 msgid  "Create a report by specifying the record source, controls, and control properties."
@@ -817,7 +817,7 @@ msgstr "फार्म सिरजने लेई जरूरी चरण�
 
 #: source/ui/app/app.src#RID_STR_QUERIES_HELP_TEXT.String.Text
 msgid  "Create a query by specifying the filters, input tables, field names,  and  properties for sorting or grouping."
-msgstr ""
+msgstr "छंटाई ते समूहीकरण लेई पूनियें, इनपुट टेबलें, खेतर नांएं गी निश्चत करियै पुच्छ सिरजो ."
 
 #: source/ui/app/app.src#RID_STR_QUERIES_HELP_TEXT_SQL.String.Text
 msgid  "Create a query  entering an SQL statement directly."
@@ -825,19 +825,19 @@ msgstr "SQL कथन दा सिद्धे प्रवेश करिय�
 
 #: source/ui/app/app.src#RID_STR_QUERIES_HELP_TEXT_WIZARD.String.Text
 msgid  "The wizard will guide you through the steps necessary to create a query."
-msgstr ""
+msgstr "पुच्छ सिरजने लेई जरूरी चरणें पर विशारद मार्गदर्शन करग. "
 
 #: source/ui/app/app.src#RID_STR_TABLES_HELP_TEXT_DESIGN.String.Text
 msgid  "Create a table by specifying the field names and properties, as well as the data types."
-msgstr ""
+msgstr "खेतर  नांएं  ते विशेशताएं दे कन्नै गै डेटा किस्में गी निश्चत करियै टेबल सिरजो. "
 
 #: source/ui/app/app.src#RID_STR_TABLES_HELP_TEXT_WIZARD.String.Text
 msgid  "Choose from a selection of business and personal table samples, which you customize to create a table."
-msgstr ""
+msgstr "टेबल सिरजने लेई तुस जिसी लोड़ मताबक करदे ओ, ब्यहारी ते निजी टेबल-नमूनें दी चोन चा तालो. "
 
 #: source/ui/app/app.src#RID_STR_VIEWS_HELP_TEXT_DESIGN.String.Text
 msgid  "Create a view by specifying the tables and field names you would like to have visible."
-msgstr ""
+msgstr "टेबलें ते खेतर-नांएं ,तुस जि’नेंगी द्रिश्टीगोचर चांह्‌दे ओ, गी निश्चत करियै द्रिश्श सिरजो.  "
 
 #: source/ui/app/app.src#RID_STR_VIEWS_HELP_TEXT_WIZARD.String.Text
 msgid  "Opens the view wizard"
@@ -865,11 +865,11 @@ msgstr "पूर्वद्रिश्श असमर्थ करो "
 
 #: source/ui/app/app.src#APP_SAVEMODIFIED.QueryBox.Message
 msgid  "The database has been modified.\nDo you want to save the changes?"
-msgstr ""
+msgstr "डेटाबेस च  तरमीम होई गेई ऐ.\\क्या तुस तब्दीलियें गी बचाना चांह्‌दे ओ? "
 
 #: source/ui/app/app.src#APP_CLOSEDOCUMENTS.QueryBox.Message
 msgid  "The connection type has been altered.\nFor the changes to take effect, all forms, reports, queries and tables must be closed.\n\nDo you want to close all documents now?"
-msgstr ""
+msgstr "कनैक्शन किस्म च फेर-बदल होई गेआ ऐ.\\तब्दीलियें दा असर होने लेई सब्भै फार्म,रपोटां, पुच्छां ते टेबल बंद कीते लोड़दे.\n\\क्या तुस सब्भै दस्तावेज हूनै बंद करना चांह्‌दे ओ? "
 
 #: source/ui/app/app.src#RID_MENU_APP_PREVIEW.SID_DB_APP_DISABLE_PREVIEW.MenuItem.Text
 msgid  "None"
@@ -882,6 +882,14 @@ msgstr "दस्तावेज जानकारी"
 #: source/ui/app/app.src#RID_MENU_APP_PREVIEW.SID_DB_APP_VIEW_DOC_PREVIEW.MenuItem.Text
 msgid  "Document"
 msgstr "दस्तावेज "
+
+#: source/ui/app/app.src#RID_STR_FORM.String.Text
+msgid  "Form"
+msgstr "फार्म"
+
+#: source/ui/app/app.src#RID_STR_REPORT.String.Text
+msgid  "Report"
+msgstr "रपोट "
 
 #: source/ui/app/app.src#STR_FRM_LABEL.String.Text
 msgid  "F~orm name"
@@ -915,17 +923,9 @@ msgstr ""
 msgid  "Unsupported object type found ($type$)."
 msgstr ""
 
-#: source/ui/app/app.src#RID_STR_FORM.String.Text
-msgid  "Form"
-msgstr "फार्म"
-
-#: source/ui/app/app.src#RID_STR_REPORT.String.Text
-msgid  "Report"
-msgstr "रपोट "
-
 #: source/ui/browser/sbabrw.src#QUERY_BRW_SAVEMODIFIED.QueryBox.Message
 msgid  "The current record has been changed.\nDo you want to save the changes?"
-msgstr ""
+msgstr "मजूदा रकाड बदलोई गेदा ऐ.\n क्या तुस तब्दीलियां बचाना चांह्‌दे ओ?"
 
 #: source/ui/browser/sbabrw.src#QUERY_BRW_DELETE_ROWS.QueryBox.Message
 msgid  "Do you want to delete the selected data?"
@@ -955,6 +955,18 @@ msgstr "पुच्छां "
 msgid  "Tables"
 msgstr "टेबल(बहु.) "
 
+#: source/ui/browser/sbabrw.src#ID_TREE_EDIT_DATABASE.#define.Text
+msgid  "Edit ~Database File..."
+msgstr "संपादन करो~ डेटाबेस फाइल ... "
+
+#: source/ui/browser/sbabrw.src#ID_TREE_ADMINISTRATE.#define.Text
+msgid  "Registered databases ..."
+msgstr " पंजीकृत डेटाबेस(बहु.) "
+
+#: source/ui/browser/sbabrw.src#ID_TREE_CLOSE_CONN.#define.Text
+msgid  "Disco~nnect"
+msgstr "कनैक्शन त्रोड़ो"
+
 #: source/ui/browser/sbabrw.src#STR_TITLE_CONFIRM_DELETION.String.Text
 msgid  "Confirm Deletion"
 msgstr "म्हेसने दी पुश्टी करो "
@@ -969,7 +981,7 @@ msgstr "पुच्छ पैह्‌लें शा मजूद ऐ. क्
 
 #: source/ui/browser/sbabrw.src#QUERY_CONNECTION_LOST.QueryBox.Message
 msgid  "The connection to the database has been lost. Do you want to reconnect?"
-msgstr ""
+msgstr "डेटाबेस कन्नै कनैक्शन त्रुटी गेदा ऐ. क्या तुस इसी परतियै जोड़ना चांह्‌दे ओ ?  "
 
 #: source/ui/browser/sbabrw.src#STR_OPENTABLES_WARNINGS.String.Text
 msgid  "Warnings encountered"
@@ -977,11 +989,11 @@ msgstr "चेतावनियां दरपेश आइयां. "
 
 #: source/ui/browser/sbabrw.src#STR_OPENTABLES_WARNINGS_DETAILS.String.Text
 msgid  "While retrieving the tables, warnings were reported by the database connection."
-msgstr ""
+msgstr "टेबल वापस हासल करदे बेल्लै, चेतावनियां डेटाबेस कनैक्शन आसेआ दित्तियां गेइयां हियां. "
 
 #: source/ui/browser/sbabrw.src#STR_CONNECTING_DATASOURCE.String.Text
-msgid  "Connecting to "$name$" ..."
-msgstr ""
+msgid  "Connecting to \"$name$\" ..."
+msgstr "\"$name$\" कन्नै कनैक्शन जोड़ा करदा ऐ ... "
 
 #: source/ui/browser/sbabrw.src#STR_LOADING_QUERY.String.Text
 msgid  "Loading query $name$ ..."
@@ -996,24 +1008,12 @@ msgid  "No table format could be found."
 msgstr "कोई टेबल रूप-रचना नेईं लब्भी सकी. "
 
 #: source/ui/browser/sbabrw.src#STR_COULDNOTCONNECT_DATASOURCE.String.Text
-msgid  "The connection to the data source "$name$" could not be established."
-msgstr ""
+msgid  "The connection to the data source \"$name$\" could not be established."
+msgstr "डेटा स्रोत \"$name$\" कन्नै कनैक्शन स्थापत नेईं होई सकेआ. "
 
 #: source/ui/browser/sbabrw.src#RID_MENU_REFRESH_DATA.ID_BROWSER_REFRESH_REBUILD.MenuItem.Text
 msgid  "Rebuild"
 msgstr "परतियै बनाओ "
-
-#: source/ui/browser/sbabrw.src#ID_TREE_EDIT_DATABASE.#define.Text
-msgid  "Edit ~Database File..."
-msgstr "संपादन करो~ डेटाबेस फाइल ... "
-
-#: source/ui/browser/sbabrw.src#ID_TREE_ADMINISTRATE.#define.Text
-msgid  "Registered databases ..."
-msgstr " पंजीकृत डेटाबेस(बहु.) "
-
-#: source/ui/browser/sbabrw.src#ID_TREE_CLOSE_CONN.#define.Text
-msgid  "Disco~nnect"
-msgstr "कनैक्शन त्रोड़ो"
 
 #: source/ui/browser/sbagrid.src#RID_SBA_GRID_COLCTXMENU.ID_BROWSER_COLATTRSET.MenuItem.Text
 msgid  "Column ~Format..."
@@ -1052,8 +1052,8 @@ msgid  "View #"
 msgstr "दिक्खो # "
 
 #: source/ui/browser/sbagrid.src#STR_NAME_ALREADY_EXISTS.String.Text
-msgid  "The name "#" already exists."
-msgstr ""
+msgid  "The name \"#\" already exists."
+msgstr "\"#\" नांऽ पैह्‌लें शा मजूद ऐ.   "
 
 #: source/ui/browser/sbagrid.src#STR_NO_COLUMNNAME_MATCHING.String.Text
 msgid  "No matching column names were found."
@@ -1137,7 +1137,7 @@ msgstr "कृपया चालू सैट्टिंगें गी ज�
 
 #: source/ui/control/tabletree.src#STR_NOTABLEINFO.String.Text
 msgid  "Successfully connected, but information about database tables is not available."
-msgstr ""
+msgstr "कनैक्शन सफलतापूर्वक जुड़ी गेआ. पर डेटाबेस टेबलें बारै जानकारी उपलब्ध नेईं ऐ. "
 
 #: source/ui/control/tabletree.src#STR_ALL_TABLES.String.Text
 msgid  "All tables"
@@ -1236,12 +1236,12 @@ msgid  "Do you want to save the changes made to the current index?"
 msgstr "क्या तुस चालू इंडैक्स च कीती दियें तब्दीलियें गी बचाना चांह्‌दे ओ? "
 
 #: source/ui/dlg/indexdialog.src#STR_INDEX_NAME_ALREADY_USED.String.Text
-msgid  "There is already another index named "$name$"."
-msgstr ""
+msgid  "There is already another index named \"$name$\"."
+msgstr "\"$name$\" नां दी इंडैक्स पैह्‌लें शा मजूद ऐ. "
 
 #: source/ui/dlg/indexdialog.src#STR_INDEXDESIGN_DOUBLE_COLUMN_NAME.String.Text
-msgid  "In an index definition, no table column may occur more than once. However, you have entered column "$name$" twice."
-msgstr ""
+msgid  "In an index definition, no table column may occur more than once. However, you have entered column \"$name$\" twice."
+msgstr "इक इंडैक्स परिभाशा च, कोई बी टेबल स्तंभ इक बारी शा बद्ध नेईं आई सकदा.फ्ही बी , तुसें \"$name$\"स्तंभ दो बारी प्रविश्ट कीता ऐ. "
 
 #: source/ui/dlg/paramdialog.src#DLG_PARAMETERS.FL_PARAMS.FixedLine.Text
 msgid  "~Parameters"
@@ -1260,8 +1260,8 @@ msgid  "Parameter Input"
 msgstr "पैरामीटर इनपुट"
 
 #: source/ui/dlg/paramdialog.src#DLG_PARAMETERS.STR_COULD_NOT_CONVERT_PARAM.String.Text
-msgid  "The entry could not be converted to a valid value for the "$name$"column"
-msgstr ""
+msgid  "The entry could not be converted to a valid value for the \"$name$\"column"
+msgstr "प्रविष्टि को \"$name$\"कॉलम के लिये मान्य मूल्य में बदल नहीं सकते है"
 
 #: source/ui/dlg/sqlmessage.src#DLG_SQLEXCEPTIONCHAIN.ModalDialog.Text
 msgid  "%PRODUCTNAME Base"
@@ -1289,7 +1289,7 @@ msgstr "गल्ती कोड "
 
 #: source/ui/dlg/sqlmessage.src#STR_EXPLAN_STRINGCONVERSION_ERROR.String.Text
 msgid  "A frequent reason for this error is an inappropriate character set setting for the language of your database. Check the setting by choosing Edit - Database - Properties."
-msgstr ""
+msgstr "इस गल्ती लेई घड़ी-घड़ी होने आह्‌ला कारण थुआढ़े डेटाबेस दी भाशा लेई इक गैरमनासब   वर्ण-सैट्ट दी सैट्टिंग ऐ.   संपादन – डेटाबेस-विशेशतां चुनियै इस सैट्टिंग गी जाचो.  "
 
 #: source/ui/dlg/sqlmessage.src#STR_EXCEPTION_ERROR.String.Text
 msgid  "Error"
@@ -1312,8 +1312,16 @@ msgid  "Standard Filter"
 msgstr "मानक पूनी "
 
 #: source/ui/dlg/queryfilter.src#DLG_FILTERCRIT.LB_WHERECOND2.Default.StringList.item
+msgid  "AND"
+msgstr "AND"
+
+#: source/ui/dlg/queryfilter.src#DLG_FILTERCRIT.LB_WHERECOND2.Default.StringList.item
 msgid  "OR"
 msgstr "OR"
+
+#: source/ui/dlg/queryfilter.src#DLG_FILTERCRIT.LB_WHERECOND3.Default.StringList.item
+msgid  "AND"
+msgstr "AND"
 
 #: source/ui/dlg/queryfilter.src#DLG_FILTERCRIT.LB_WHERECOND3.Default.StringList.item
 msgid  "OR"
@@ -1346,14 +1354,6 @@ msgstr "-कोई नेईं- "
 #: source/ui/dlg/queryfilter.src#DLG_FILTERCRIT.STR_COMPARE_OPERATORS.String.Text
 msgid  "=;<>;<;<=;>;>=;like;not like;null;not null"
 msgstr "=;<>;<;<=;>;>=;like;not like;null;not null"
-
-#: source/ui/dlg/queryfilter.src#DLG_FILTERCRIT.LB_WHERECOND2.Default.StringList.item
-msgid  "AND"
-msgstr "AND"
-
-#: source/ui/dlg/queryfilter.src#DLG_FILTERCRIT.LB_WHERECOND3.Default.StringList.item
-msgid  "AND"
-msgstr "AND"
 
 #: source/ui/dlg/RelationDlg.src#DLG_REL_PROPERTIES.ModalDialog.Text
 msgid  "Relations"
@@ -1412,12 +1412,24 @@ msgid  "Sort Order"
 msgstr "छंटाई-क्रम "
 
 #: source/ui/dlg/queryorder.src#DLG_ORDERCRIT.LB_ORDERVALUE1.Default.StringList.item
+msgid  "ascending"
+msgstr "चढदा क्रम "
+
+#: source/ui/dlg/queryorder.src#DLG_ORDERCRIT.LB_ORDERVALUE1.Default.StringList.item
 msgid  "descending"
 msgstr "उतरदा क्रम "
 
 #: source/ui/dlg/queryorder.src#DLG_ORDERCRIT.LB_ORDERVALUE2.Default.StringList.item
+msgid  "ascending"
+msgstr "चढदा क्रम "
+
+#: source/ui/dlg/queryorder.src#DLG_ORDERCRIT.LB_ORDERVALUE2.Default.StringList.item
 msgid  "descending"
 msgstr "उतरदा क्रम "
+
+#: source/ui/dlg/queryorder.src#DLG_ORDERCRIT.LB_ORDERVALUE3.Default.StringList.item
+msgid  "ascending"
+msgstr "चढदा क्रम "
 
 #: source/ui/dlg/queryorder.src#DLG_ORDERCRIT.LB_ORDERVALUE3.Default.StringList.item
 msgid  "descending"
@@ -1450,18 +1462,6 @@ msgstr "छंटाईक्रम "
 #: source/ui/dlg/queryorder.src#DLG_ORDERCRIT.STR_NOENTRY.String.Text
 msgid  "<none>"
 msgstr "<none>"
-
-#: source/ui/dlg/queryorder.src#DLG_ORDERCRIT.LB_ORDERVALUE1.Default.StringList.item
-msgid  "ascending"
-msgstr "चढदा क्रम "
-
-#: source/ui/dlg/queryorder.src#DLG_ORDERCRIT.LB_ORDERVALUE2.Default.StringList.item
-msgid  "ascending"
-msgstr "चढदा क्रम "
-
-#: source/ui/dlg/queryorder.src#DLG_ORDERCRIT.LB_ORDERVALUE3.Default.StringList.item
-msgid  "ascending"
-msgstr "चढदा क्रम "
 
 #: source/ui/dlg/advancedsettings.src#AUTO_DATAHANDLING(AUTO_Y).FL_DATAHANDLING.FixedLine.Text
 msgid  "Options"
@@ -1532,6 +1532,18 @@ msgid  "Respect the result set type from the database driver"
 msgstr ""
 
 #: source/ui/dlg/advancedsettings.src#WORKAROUND.Default.StringList.item
+msgid  "Default"
+msgstr "बिलानिर्देश"
+
+#: source/ui/dlg/advancedsettings.src#WORKAROUND.Default.StringList.item
+msgid  "SQL"
+msgstr "SQL"
+
+#: source/ui/dlg/advancedsettings.src#WORKAROUND.Default.StringList.item
+msgid  "Mixed"
+msgstr "मिश्रत "
+
+#: source/ui/dlg/advancedsettings.src#WORKAROUND.Default.StringList.item
 msgid  "MS Access"
 msgstr "MSपुज्ज "
 
@@ -1571,18 +1583,6 @@ msgstr "विशेश सैट्टिंगां "
 msgid  "Advanced Settings"
 msgstr "उच्च विशेशतां "
 
-#: source/ui/dlg/advancedsettings.src#WORKAROUND.Default.StringList.item
-msgid  "Default"
-msgstr "बिलानिर्देश"
-
-#: source/ui/dlg/advancedsettings.src#WORKAROUND.Default.StringList.item
-msgid  "SQL"
-msgstr "SQL"
-
-#: source/ui/dlg/advancedsettings.src#WORKAROUND.Default.StringList.item
-msgid  "Mixed"
-msgstr "मिश्रत "
-
 #: source/ui/dlg/CollectionView.src#DLG_COLLECTION_VIEW.ModalDialog.Text
 msgid  "Save"
 msgstr "बचाइयै रक्खो "
@@ -1616,12 +1616,12 @@ msgid  "The file already exists. Overwrite?"
 msgstr "फाइल पैह्‌लें गै मजूद ऐ. ओवरराइट करी दित्ता जाऽ? "
 
 #: source/ui/dlg/dbadmin2.src#STR_ENTER_CONNECTION_PASSWORD.String.Text
-msgid  "A password is needed to connect to the data source "$name$"."
-msgstr ""
+msgid  "A password is needed to connect to the data source \"$name$\"."
+msgstr "\"$name$\" डेटा स्रोत कन्नै जोड़ने लेई पासवर्ड लोड़दा ऐ. "
 
 #: source/ui/dlg/dbadmin2.src#STR_ASK_FOR_DIRECTORY_CREATION.String.Text
 msgid  "The directory\n\n$path$\n\ndoes not exist. Should it be created?"
-msgstr ""
+msgstr "डरैक्टरी \n\n$path$\n\\मजूद नेईं ऐ. क्या एह् सिरजी जानी चाहिदी? "
 
 #: source/ui/dlg/dbadmin2.src#STR_COULD_NOT_CREATE_DIRECTORY.String.Text
 msgid  "The directory $name$ could not be created."
@@ -1773,7 +1773,7 @@ msgstr "%PRODUCTNAME डेटाबेस विशारद च सुआग�
 
 #: source/ui/dlg/dbadmin.src#PAGE_GENERAL.FT_GENERALHELPTEXT.FixedText.Text
 msgid  "Use the Database Wizard to create a new database, open an existing database file, or connect to a database stored on a server."
-msgstr ""
+msgstr "नमां डेटाबेस सिरजने लेई डेटाबेस विशारद बरतो,इक मजूद डेटाबेस फाइल खोह्‌ल्लो,जां सर्वर पर रक्खे दे डेटाबेस कन्नै जोड़ो."
 
 #: source/ui/dlg/dbadmin.src#PAGE_GENERAL.FT_DATASOURCEHEADER.FixedText.Text
 msgid  "What do you want to do?"
@@ -1797,7 +1797,7 @@ msgstr "इक मजूद डेटाबेस कन्नै कनैक�
 
 #: source/ui/dlg/dbadmin.src#PAGE_GENERAL.FT_DATASOURCETYPE_PRE.FixedText.Text
 msgid  "Select the type of database to which you want to establish a connection."
-msgstr ""
+msgstr "डेटाबेस दी किस्म चुनो, जिस कन्नै तुस कनैक्शन स्थापत करना चांह्‌दे ओ. "
 
 #: source/ui/dlg/dbadmin.src#PAGE_GENERAL.FT_DATATYPE.FixedText.Text
 msgid  "Database ~type "
@@ -1809,7 +1809,7 @@ msgstr "डेटाबेस "
 
 #: source/ui/dlg/dbadmin.src#PAGE_GENERAL.FT_DATASOURCETYPE_POST.FixedText.Text
 msgid  "On the following pages, you can make detailed settings for the connection.\n\nThe new settings you make will overwrite your existing settings."
-msgstr ""
+msgstr "ख’लके सफें पर,तुस कनैक्शन लेई तफलीली सैट्टिंगां बनाई सकदे ओ. n\nनमियां सैट्टिंगां तुस बनांदे ओ तां ओह् थुआढ़ी मजूद सैट्टिंगें गी ओवरराइट करी देङन.   "
 
 #: source/ui/dlg/dbadmin.src#PAGE_GENERAL.STR_MYSQLENTRY.String.Text
 msgid  "MySQL"
@@ -1821,11 +1821,11 @@ msgstr "डेटा स्रोत विशेशतां: # "
 
 #: source/ui/dlg/dbadmin.src#PAGE_GENERAL.STR_COULDNOTLOAD_ODBCLIB.String.Text
 msgid  "Could not load the program library #lib# or it is corrupted. The ODBC data source selection is not available."
-msgstr ""
+msgstr "प्रोग्राम लाइब्रेरी #lib# लोड नेईं होई सकी जां एह् भ्रश्ट ऐ . ODBC डेटा स्रोत चोन उपलब्ध नेईं ऐ.. "
 
 #: source/ui/dlg/dbadmin.src#PAGE_GENERAL.STR_UNSUPPORTED_DATASOURCE_TYPE.String.Text
 msgid  "This kind of data source is not supported on this platform.\nYou are allowed to change the settings, but you probably will not be able to connect to the database."
-msgstr ""
+msgstr "डेटा स्रोत दी एह् किस्म इस प्लेटफार्म पर समर्थत नेईं ऐ. \\ सैट्टिंगां बदलने दी तुसें गी इजाज़त ऐ, पर खबरै तुस डेटाबेस कन्नै जोड़ने च समर्थ नेईं होगेओ. "
 
 #: source/ui/dlg/dbadmin.src#PAGE_GENERAL.String.Text
 msgid  "General"
@@ -1841,7 +1841,7 @@ msgstr "कन्नै गै म्हिसे दे रकाडें द�
 
 #: source/ui/dlg/dbadmin.src#PAGE_DBASE.FT_SPECIAL_MESSAGE.FixedText.Text
 msgid  "Note: When deleted, and thus inactive, records are  displayed, you will not be able to delete records from the data source."
-msgstr ""
+msgstr "नोट: जिसलै म्हेसे, ते इ’यां निश्क्रिय , रकाड प्रदर्शत न, तुस डेटा स्रोत चा रकाड म्हेसने च समर्थ नेईं होगेओ. "
 
 #: source/ui/dlg/dbadmin.src#PAGE_DBASE.PB_INDICIES.PushButton.Text
 msgid  "Indexes..."
@@ -2025,7 +2025,7 @@ msgstr "माइक्रोसाफ्ट ऐक्सैस डेटाब�
 
 #: source/ui/dlg/AutoControls.src#STR_NO_ADDITIONAL_SETTINGS.String.Text
 msgid  "No more settings are necessary. To verify that the connection is working, click the '%test' button."
-msgstr ""
+msgstr "होर सैट्टिंगें दी जरूरत नेईं ऐ.प्रमाणत करने लेई जे कनैक्शन कम्म करा करदा ऐ,  '%test' बटन क्लिक करा. "
 
 #: source/ui/dlg/AutoControls.src#STR_COMMONURL.String.Text
 msgid  "Datasource URL"
@@ -2197,7 +2197,7 @@ msgstr "इसलै बरतोई दी मैमरी "
 
 #: source/ui/dlg/AdabasStat.src#STR_ADABAS_ERROR_SYSTEMTABLES.String.Text
 msgid  "No information could be displayed because no access rights exist for the required system tables."
-msgstr ""
+msgstr "कोई बी जानकारी प्रदर्शत नेईं होई सकी की जे लोड़दे सिस्टम टेबलें लेई कोई बी पुज्ज- अधिकार मजूद नेईं हैन. "
 
 #: source/ui/dlg/directsql.src#DLG_DIRECTSQL.FL_SQL.FixedLine.Text
 msgid  "SQL command"
@@ -2233,7 +2233,7 @@ msgstr "आदेश सफलतापूर्वक पूरा होआ "
 
 #: source/ui/dlg/directsql.src#STR_DIRECTSQL_CONNECTIONLOST.String.Text
 msgid  "The connection to the database has been lost. This dialog will be closed."
-msgstr ""
+msgstr "डेटाबेस कन्नै कनैक्शन त्रुट्टी गेआ ऐ. एह् संवाद बंद होई जाग. "
 
 #: source/ui/dlg/dbfindex.src#DLG_DBASE_INDEXES.ModalDialog.Text
 msgid  "Indexes"
@@ -2288,8 +2288,8 @@ msgid  "The database does not support user administration."
 msgstr "डेटाबेस बरतूनी प्रशासक दा समर्थन नेईं करदा."
 
 #: source/ui/dlg/UserAdmin.src#DLG_PASSWORD.FL_USER.FixedLine.Text
-msgid  "User "$name$:  $""
-msgstr ""
+msgid  "User \"$name$:  $\""
+msgstr "बरतूनी \"$name$: $\" "
 
 #: source/ui/dlg/UserAdmin.src#DLG_PASSWORD.FT_OLDPASSWORD.FixedText.Text
 msgid  "Old p~assword"
@@ -2389,7 +2389,7 @@ msgstr "MySQL डेटाबेस कन्नै कनैक्शन सै
 
 #: source/ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_MYSQL_INTRO.FT_MYSQL_HELPTEXT.FixedText.Text
 msgid  "You can connect to a MySQL database using either ODBC or JDBC.\nPlease contact your system administrator if you are unsure about the following settings."
-msgstr ""
+msgstr "तुस ODBC जां JDBC बरतियै MySQL डेटाबेस कनैक्शन नेईं जोड़ी सकदे. \n कृपया अपने सिस्टम प्रशासक कन्नै रावता करो जेकर ख’लकी सैट्टिंगें बारै दुबधा च ओ. "
 
 #: source/ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_MYSQL_INTRO.FT_MYSQLCONNECTIONMODE.FixedText.Text
 msgid  "How do you want to connect to your MySQL database?"
@@ -2413,7 +2413,7 @@ msgstr "बरतूनी प्रमाणीकरण सैट्ट कर
 
 #: source/ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_AUTHENTIFICATION.FT_AUTHENTIFICATIONHELPTEXT.FixedText.Text
 msgid  "Some databases require you to enter a user name."
-msgstr ""
+msgstr "किश डेटाबेसें च प्रविश्ट होने लेई तुसें गी बरतूनी-नांऽ दी लोड़ पौंदी ऐ. "
 
 #: source/ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_AUTHENTIFICATION.FT_GENERALUSERNAME.FixedText.Text
 msgid  "~User name"
@@ -2465,7 +2465,7 @@ msgstr "JDBC बरतियै MySQL डेटाबेस कन्नै क�
 
 #: source/ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_MYSQL_JDBC.STR_MYSQLJDBC_HELPTEXT.String.Text
 msgid  "Please enter the required information to connect to a MySQL database using JDBC. Note that a JDBC driver class must be installed on your system and registered with %PRODUCTNAME.\nPlease contact your system administrator if you are unsure about the following settings."
-msgstr ""
+msgstr "JDBC बरतियै MySQL डेटाबेस कन्नै कनैक्शन जोड़ने लेई कृपया लोड़दी जानकारी  प्रविश्ट करो.नोट करो जे JDBC ड्राईवर जमात थुआढ़े  सिस्टम पर प्रस्थापत ऐ ते   %PRODUCTNAME कन्नै पंजीकृत ऐ .  \n कृपया अपने सिस्टम प्रशासक कन्नै रावता करो जेकर ख’लकी सैट्टिंगें बारै दुबधा च ओ."
 
 #: source/ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_MYSQL_JDBC.STR_MYSQL_DRIVERCLASSTEXT.String.Text
 msgid  "MySQL JDBC d~river class:"
@@ -2497,7 +2497,7 @@ msgstr "इबारत फाइलें कन्नै कनैक्शन
 
 #: source/ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_TEXT.STR_TEXT_HELPTEXT.String.Text
 msgid  "Select the folder where the CSV (Comma Separated Values) text files are stored. %PRODUCTNAME Base will open these files in read-only mode."
-msgstr ""
+msgstr "ओह् फोल्डर चुनो जित्थै  CSV (कॉमा सेपरेटड मुल्ल) फाइलां रक्खी दियां न. %PRODUCTNAME अधार इ’नें फाइलें गी सिर्फ पढ़न-जोग अवस्था च खोह्‌ल्लग. "
 
 #: source/ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_TEXT.STR_TEXT_PATH_OR_FILE.String.Text
 msgid  "Path to text files"
@@ -2509,7 +2509,7 @@ msgstr "माईक्रोसाफ्ट पुज्ज डेटाबे�
 
 #: source/ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_MSACCESS.STR_MSACCESS_HELPTEXT.String.Text
 msgid  "Please select the Microsoft Access file you want to access."
-msgstr ""
+msgstr "जिस  माईक्रोसाफ्ट पुज्ज फाइल तगर तुस पुज्जना चांह्‌दे ओ, कृपया उसी चुनो. "
 
 #: source/ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_LDAP.FT_LDAP_HEADERTEXT.FixedText.Text
 msgid  "Set up a connection to an LDAP directory"
@@ -2517,7 +2517,7 @@ msgstr "LDAP डरैक्टरी कन्नै कनैक्शन स�
 
 #: source/ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_LDAP.FT_LDAP_HELPTEXT.FixedText.Text
 msgid  "Please enter the required information to connect to an LDAP directory.\nPlease contact your system administrator if you are unsure about the following settings."
-msgstr ""
+msgstr "LDAP डरैक्टरी कन्नै कनैक्शन जोड़ने लेई कृपया लोड़दी जानकारी  प्रविश्ट करो. \n कृपया अपने सिस्टम प्रशासक कन्नै रावता करो जेकर ख’लकी सैट्टिंगें बारै दुबधा च ओ."
 
 #: source/ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_LDAP.STR_LDAP_DEFAULT.String.Text
 msgid  "Default: 389"
@@ -2533,7 +2533,7 @@ msgstr "अडबॅस D कन्नै कनैक्शन सैट्ट 
 
 #: source/ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_ADABAS.STR_ADABAS_HELPTEXT.String.Text
 msgid  "Enter the name of the Adabas D database you want to connect to.\nClick 'Browse...' to select an Adabas D database that is already registered in %PRODUCTNAME."
-msgstr ""
+msgstr "जिस अडबॅस D डेटाबेस कन्नै कनैक्शन जोड़ना चांह्‌दे ओ, उसदा नां प्रविश्ट करो. n %PRODUCTNAME च पैह्‌लें शा पंजीकृत  अडबॅस D डेटाबेस चुनने लेई ‘ तपाशो ... .’ पर क्लिक करो."
 
 #: source/ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_ADO.STR_ADO_HEADERTEXT.String.Text
 msgid  "Set up a connection to an ADO database"
@@ -2541,7 +2541,7 @@ msgstr "ADO डेटाबेस कन्नै कनैक्शन सै�
 
 #: source/ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_ADO.STR_ADO_HELPTEXT.String.Text
 msgid  "Please enter the URL of the ADO data source you want to connect to.\nClick 'Browse' to configure provider-specific settings.\nPlease contact your system administrator if you are unsure about the following settings."
-msgstr ""
+msgstr "ADO   डेटा  स्रोत कन्नै कनैक्शन जोड़ना चांह्‌दे ओ, कृपया उसदा URL प्रविश्ट करो.  nप्रदाता-निर्धारित सैट्टिंगें दे संरूपण लेई  ‘ तपाशो ’ पर क्लिक करो.\n कृपया अपने सिस्टम प्रशासक कन्नै रावता करो जेकर ख’लकी सैट्टिंगें बारै दुबधा च ओ."
 
 #: source/ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_ODBC.STR_ODBC_HEADERTEXT.String.Text
 msgid  "Set up a connection to an ODBC database"
@@ -2549,7 +2549,7 @@ msgstr "ODBC डेटाबेस कन्नै कनैक्शन सै�
 
 #: source/ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_ODBC.STR_ODBC_HELPTEXT.String.Text
 msgid  "Enter the name of the ODBC database you want to connect to.\nClick 'Browse...' to select an ODBC database that is already registered in %PRODUCTNAME.\nPlease contact your system administrator if you are unsure about the following settings."
-msgstr ""
+msgstr "जिस ODBC डेटाबेस कन्नै कनैक्शन जोड़ना चांह्‌दे ओ, उसदा नां प्रविश्ट करो..\n%PRODUCTNAME च पैह्‌लें शा पंजीकृत  ODBC डेटाबेस चुनने लेई ‘ तपाशो ... .’ पर क्लिक करो.\n कृपया अपने सिस्टम प्रशासक कन्नै रावता करो जेकर ख’लकी सैट्टिंगें बारै दुबधा च ओ."
 
 #: source/ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_JDBC.STR_JDBC_HEADERTEXT.String.Text
 msgid  "Set up a connection to a JDBC database"
@@ -2557,7 +2557,7 @@ msgstr "JDBC डेटाबेस कन्नै कनैक्शन सै�
 
 #: source/ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_JDBC.STR_JDBC_HELPTEXT.String.Text
 msgid  "Please enter the required information to connect to a JDBC database.\nPlease contact your system administrator if you are unsure about the following settings."
-msgstr ""
+msgstr "JDBC डेटाबेस कन्नै कनैक्शन जोड़ने लेई कृपया लोड़दी जानकारी  प्रविश्ट करो.\n कृपया अपने सिस्टम प्रशासक कन्नै रावता करो जेकर ख’लकी सैट्टिंगें बारै दुबधा च ओ. "
 
 #: source/ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_ORACLE.STR_ORACLE_HEADERTEXT.String.Text
 msgid  "Set up a connection to an Oracle database"
@@ -2573,7 +2573,7 @@ msgstr "JDBC ओरेकल ~ड्राईवर जमात "
 
 #: source/ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_ORACLE.STR_ORACLE_HELPTEXT.String.Text
 msgid  "Please enter the required information to connect to an Oracle database.Note that a JDBC Driver Class must be installed on your system and registered with %PRODUCTNAME.\nPlease contact your system administrator if you are unsure about the following settings."
-msgstr ""
+msgstr "  ओरेकल डेटाबेस कन्नै कनैक्शन जोड़ने लेई कृपया लोड़दी जानकारी  प्रविश्ट करो.\\ नोट करो जे JDBC ड्राईवर जमात थुआढ़े  सिस्टम पर प्रस्थापत ते   %PRODUCTNAME कन्नै पंजीकृत लोड़दी ऐ  .  \n कृपया अपने सिस्टम प्रशासक कन्नै रावता करो जेकर ख’लकी सैट्टिंगें बारै दुबधा च ओ.   "
 
 #: source/ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_SPREADSHEET.STR_SPREADSHEET_HEADERTEXT.String.Text
 msgid  "Set up a connection to spreadsheets"
@@ -2581,7 +2581,7 @@ msgstr "स्प्रैडशीटें कन्नै कनैक्श�
 
 #: source/ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_SPREADSHEET.STR_SPREADSHEET_HELPTEXT.String.Text
 msgid  "Click 'Browse...' to select a %PRODUCTNAME spreadsheet or Microsoft Excel workbook.\n%PRODUCTNAME will open this file in read-only mode."
-msgstr ""
+msgstr "%PRODUCTNAME स्प्रैडशीट जां माईक्रोसाफ्ट एक्सैल वर्कबुक चुनने लेई ‘ तपाशो ’ पर क्लिक करो.\n%PRODUCTNAME   फाइल गी सिर्फ पढ़न-जोग अवस्था च खोह्‌ल्लग."
 
 #: source/ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_SPREADSHEET.STR_SPREADSHEETPATH.String.Text
 msgid  "~Location and file name"
@@ -2649,7 +2649,7 @@ msgstr "~ वर्ण सैट्ट "
 
 #: source/ui/dlg/AutoControls_tmpl.hrc#AUTO_SEPARATORCONTROLGROUP(AUTO_Y,AUTOPAGE_X).FT_AUTOEXTENSIONHEADER.FixedText.Text
 msgid  "Specify the type of files you want to access"
-msgstr ""
+msgstr "जेह्‌ड़ियें फाइलें तगर तुस पुज्जना चांह्‌दे ओ,उंदी किस्मा बारै विशेश ब्यौरा देओ. "
 
 #: source/ui/dlg/AutoControls_tmpl.hrc#AUTO_SEPARATORCONTROLGROUP(AUTO_Y,AUTOPAGE_X).RB_AUTOACCESSCTEXTFILES.RadioButton.Text
 msgid  "Plain text files (*.txt)"
@@ -2723,6 +2723,50 @@ msgstr ""
 msgid  "Socket"
 msgstr ""
 
+#: source/ui/inc/toolbox_tmpl.hrc#ID_BROWSER_REFRESH.#define.Text
+msgid  "Refresh"
+msgstr "सजराकरण  करो"
+
+#: source/ui/inc/toolbox_tmpl.hrc#ID_NEW_VIEW_DESIGN.#define.Text
+msgid  "New ~View Design"
+msgstr "नमां ~द्रिश्श-डजैन "
+
+#: source/ui/inc/toolbox_tmpl.hrc#ID_NEW_TABLE_DESIGN.#define.Text
+msgid  "New ~Table Design"
+msgstr "नमां ~टेबल-डजैन"
+
+#: source/ui/inc/toolbox_tmpl.hrc#ID_NEW_QUERY_WIZARD.#define.Text
+msgid  "Query AutoPilot..."
+msgstr "स्वचलत पायलट पुच्छ... "
+
+#: source/ui/inc/toolbox_tmpl.hrc#ID_NEW_QUERY_DESIGN.#define.Text
+msgid  "New ~Query (Design View)"
+msgstr "नमीं ~पुच्छ (डजैन-द्रिश्श) "
+
+#: source/ui/inc/toolbox_tmpl.hrc#ID_EDIT_QUERY_DESIGN.#define.Text
+msgid  "~Edit Query"
+msgstr "~पुच्छ संपादत करो "
+
+#: source/ui/inc/toolbox_tmpl.hrc#ID_NEW_QUERY_SQL.#define.Text
+msgid  "New Query (~SQL View)"
+msgstr "(~ SQL द्रिश्श) नमीं पुच्छ"
+
+#: source/ui/inc/toolbox_tmpl.hrc#ID_QUERY_EDIT_JOINCONNECTION.#define.Text
+msgid  "Edit..."
+msgstr "संपादन करो... "
+
+#: source/ui/inc/toolbox_tmpl.hrc#ID_BROWSER_COLWIDTH.#define.Text
+msgid  "Column ~Width..."
+msgstr "स्तंभ~ चौड़ाई... "
+
+#: source/ui/inc/toolbox_tmpl.hrc#ID_DOCUMENT_CREATE_REPWIZ.#define.Text
+msgid  "Report Wizard..."
+msgstr "रपोट विशारद "
+
+#: source/ui/inc/toolbox_tmpl.hrc#SID_DB_FORM_NEW_PILOT.#define.Text
+msgid  "Form AutoPilot..."
+msgstr "स्वचलत पायलट फार्म... "
+
 #: source/ui/misc/dbumiscres.src#RSC_CHARSETS.1.String.Text
 msgid  "System"
 msgstr "व्यवस्था"
@@ -2736,12 +2780,12 @@ msgid  "An unexpected error occurred. The operation could not be performed."
 msgstr "अनपेक्षत समस्या घटत होई. कार्ये नेईं होई सकेआ. "
 
 #: source/ui/misc/dbumiscres.src#STR_COULDNOTOPEN_LINKEDDOC.String.Text
-msgid  "The document "$file$" could not be opened."
+msgid  "The document \"$file$\" could not be opened."
 msgstr ""
 
 #: source/ui/misc/dbumiscres.src#STR_MISSING_TABLES_XDROP.String.Text
 msgid  "The table cannot be deleted because the database connection does not support this."
-msgstr ""
+msgstr "टेबल म्हिसी नेईं सकदा कीजे डेटाबेस-जोड़ इसदा समर्थन नेईं करदा. "
 
 #: source/ui/misc/dbumiscres.src#STR_BUTTON_TEXT_ALL.String.Text
 msgid  "~All"
@@ -2760,19 +2804,19 @@ msgid  "No corresponding column type could be found for column '#1'."
 msgstr "'#1' स्तंभ लेई कोई सरबंधत स्तंभ किस्म नेईं लब्भी."
 
 #: source/ui/misc/dbumiscres.src#STR_FILE_DOES_NOT_EXIST.String.Text
-msgid  "The file "$file$" does not exist."
-msgstr ""
+msgid  "The file \"$file$\" does not exist."
+msgstr "'#1' स्तंभ लेई कोई सरबंधत स्तंभ किस्म नेईं लब्भी. "
 
 #: source/ui/misc/dbumiscres.src#STR_WARNINGS_DURING_CONNECT.String.Text
-msgid  "Warnings were encountered while connecting to the data source. Press "$buttontext$" to view them."
-msgstr ""
+msgid  "Warnings were encountered while connecting to the data source. Press \"$buttontext$\" to view them."
+msgstr "डेटा स्रोत कन्नै कनैक्शन जोड़दे बेल्लै चेतावनियां दरपेश आइयां. उ’नेंगी दिक्खने लेई\"$बटन-इबारत$\" दबाओ. "
 
 #: source/ui/misc/dbumiscres.src#STR_NAMED_OBJECT_ALREADY_EXISTS.String.Text
 msgid  "The name '$#$' already exists.\nPlease enter another name."
-msgstr ""
+msgstr "'$#$' नांऽ पैह्‌लें गै मजूद ऐ.\n किरपा करियै इक दूआ नांऽ प्रविश्ट करो. "
 
 #: source/ui/misc/dbumiscres.src#RID_STR_EXTENSION_NOT_PRESENT.String.Text
-msgid  "The report, "$file$", requires the extension Oracle Report Builder."
+msgid  "The report, \"$file$\", requires the extension Oracle Report Builder."
 msgstr ""
 
 #: source/ui/misc/WizardPages.src#STR_WIZ_COLUMN_SELECT_TITEL.String.Text
@@ -2785,7 +2829,7 @@ msgstr "टाइप रूप-रचनाकरण "
 
 #: source/ui/misc/WizardPages.src#STR_WIZ_PKEY_ALREADY_DEFINED.String.Text
 msgid  "The following fields have already been set as primary keys:\n"
-msgstr ""
+msgstr "ख’लके खेतर पैह्‌लें गै प्राइमरी कुंजियें दे तौरा पर सैट न:\n "
 
 #: source/ui/misc/WizardPages.src#STR_WIZ_NAME_MATCHING_TITEL.String.Text
 msgid  "Assign columns"
@@ -2837,11 +2881,11 @@ msgstr "प्राईमरी कुंजी"
 
 #: source/ui/misc/WizardPages.src#TAB_WIZ_NAME_MATCHING.FT_TABLE_LEFT.FixedText.Text
 msgid  "Source table: \n"
-msgstr ""
+msgstr "स्रोत टेबल: \n "
 
 #: source/ui/misc/WizardPages.src#TAB_WIZ_NAME_MATCHING.FT_TABLE_RIGHT.FixedText.Text
 msgid  "Destination table: \n"
-msgstr ""
+msgstr "मंजल- टेबल: \n "
 
 #: source/ui/misc/WizardPages.src#TAB_WIZ_NAME_MATCHING.PB_ALL.PushButton.Text
 msgid  "~All"
@@ -2901,7 +2945,7 @@ msgstr ""
 
 #: source/ui/misc/WizardPages.src#STR_SUGGEST_APPEND_TABLE_DATA.String.Text
 msgid  "Choose the option 'Append data' on the first page to append data to an existing table."
-msgstr ""
+msgstr "डेटे गी इक मजूद टेबल कन्नै जक्कने लेई  ' डेटा कन्नै जक्को ' विकल्प तालो"
 
 #: source/ui/misc/WizardPages.src#STR_INVALID_TABLE_NAME_LENGTH.String.Text
 msgid  "Please change the table name. It is too long."
@@ -2953,15 +2997,15 @@ msgstr "जोड़  विशेशतां "
 
 #: source/ui/querydesign/querydlg.src#STR_JOIN_TYPE_HINT.String.Text
 msgid  "Please note that some databases may not support this join type."
-msgstr ""
+msgstr "किरपा करियै ध्यान र’वै जे होई सकदा ऐ किश डेटाबेस इस जोड़  किस्मा दा समर्थन नेईं करन . "
 
 #: source/ui/querydesign/querydlg.src#STR_QUERY_INNER_JOIN.String.Text
 msgid  "Includes only records for which the contents of the related fields of both tables are identical."
-msgstr ""
+msgstr "सिर्फ ओह्  रकाड शामल होंदे न ,जिं’दे लेई दौनें टेबलें दे सरबंधत खेतरें दी विशे- समग्री इक जनेही होंदी ऐ. "
 
 #: source/ui/querydesign/querydlg.src#STR_QUERY_LEFTRIGHT_JOIN.String.Text
 msgid  "Contains ALL records from table '%1' but only records from table '%2' where the values in the related fields are matching."
-msgstr ""
+msgstr "'%1' टेबल चा ALL रकाड होंदे न, पर '%2' टेबल चा सिर्फ ओह् रकाड जित्थै सरबंधत खेतरें दे मुल्ल मेल खंदे न. "
 
 #: source/ui/querydesign/querydlg.src#STR_QUERY_FULL_JOIN.String.Text
 msgid  "Contains ALL records from '%1' and from '%2'."
@@ -3017,7 +3061,7 @@ msgstr "अमान्य अभिव्यक्ति, '$name$' खेतर
 
 #: source/ui/querydesign/query.src#RID_STR_TOMUCHTABLES.String.Text
 msgid  "The query covers #num# tables. The selected database type, however, can only process a maximum of #maxnum# table(s) per statement."
-msgstr ""
+msgstr "पुच्छा च  #num# टेबल औंदे न.जद्‌के चुनी दी डेटाबेस  किस्म च सिर्फ फी कथन बद्धोबद्ध #maxnum# टेबल(0) दी गै प्रक्रिया  होई सकदे न. "
 
 #: source/ui/querydesign/query.src#STR_QUERY_UNDO_TABWINDELETE.String.Text
 msgid  "Delete Table Window"
@@ -3065,7 +3109,7 @@ msgstr "अनोखे मुल्ल"
 
 #: source/ui/querydesign/query.src#STR_QUERY_HANDLETEXT.String.Text
 msgid  "Field;Alias;Table;Sort;Visible;Function;Criterion;Or;Or"
-msgstr ""
+msgstr "खेतर;उर्फ नांऽ (बहु․); टेबल;छंटाई;द्रिश्टीगोचर;फंक्शन;ध्रुवा (बहु․);जां;जां"
 
 #: source/ui/querydesign/query.src#STR_QRY_TOO_MANY_COLUMNS.String.Text
 msgid  "There are too many columns."
@@ -3105,7 +3149,7 @@ msgstr "टेबल बड़े मते न. "
 
 #: source/ui/querydesign/query.src#STR_QRY_NATIVE.String.Text
 msgid  "The statement will not be applied when querying in the SQL dialect of the database."
-msgstr ""
+msgstr "डेटाबेस दी SQL उपभाशा च पुच्छ करदे एह् कथन लागू नेईं होग."
 
 #: source/ui/querydesign/query.src#ERR_QRY_AMB_FIELD.ErrorBox.Message
 msgid  "Field name not found or not unique"
@@ -3141,7 +3185,7 @@ msgstr "कोई पुच्छ नेईं सरजोई सकी.  क�
 
 #: source/ui/querydesign/query.src#STR_DATASOURCE_DELETED.String.Text
 msgid  "The corresponding data source has been deleted. Therefore, data relevant to that data source cannot be saved."
-msgstr ""
+msgstr "सरबंधत डेटा स्रोत मस्होई गेदा ऐ. इसलेई, उस डेटा स्रोत लेई प्रासंगिक डेटा नेईं बची सकदा. "
 
 #: source/ui/querydesign/query.src#STR_QRY_COLUMN_NOT_FOUND.String.Text
 msgid  "The column '$name$' is unknown."
@@ -3157,7 +3201,7 @@ msgstr "'LIKE' शा पैह्‌लें स्तंभ नांऽ ज�
 
 #: source/ui/querydesign/query.src#STR_QRY_CHECK_CASESENSITIVE.String.Text
 msgid  "The column could not be found. Please note that the database is case-sensitive."
-msgstr ""
+msgstr "स्तंभ नेईं लब्भा. किरपा करियै ध्यान र’वै जे डेटाबेस  केस-संवेदनशील ऐ. "
 
 #: source/ui/querydesign/query.src#STR_QUERYDESIGN.String.Text
 msgid  " - %PRODUCTNAME Base: Query Design"
@@ -3172,11 +3216,11 @@ msgid  "$object$ has been changed.\nDo you want to save the changes?"
 msgstr ""
 
 #: source/ui/querydesign/query.src#STR_ERROR_PARSING_STATEMENT.String.Text
-msgid  "$object$ is based on an SQL command which could not be parsed.(except "SQL command", which doesn't make sense here) will be inserted."
+msgid  "$object$ is based on an SQL command which could not be parsed.(except \"SQL command\", which doesn't make sense here) will be inserted."
 msgstr ""
 
 #: source/ui/querydesign/query.src#STR_INFO_OPENING_IN_SQL_VIEW.String.Text
-msgid  "$object$ will be opened in SQL view.(except "SQL command", which doesn't make sense here) will be inserted."
+msgid  "$object$ will be opened in SQL view.(except \"SQL command\", which doesn't make sense here) will be inserted."
 msgstr ""
 
 #: source/ui/querydesign/query.src#RSC_QUERY_OBJECT_TYPE.1.String.Text
@@ -3193,7 +3237,7 @@ msgstr ""
 
 #: source/ui/querydesign/query.src#STR_STATEMENT_WITHOUT_RESULT_SET.String.Text
 msgid  "The query does not create a result set, and thus cannot be part of another query."
-msgstr ""
+msgstr "पुच्छ नतीजा-सैट्ट दी सिरजना नेईं करदी ,ते इसलेई कुसै होर दूई पुच्छ दा हिस्सा नेईं होई सकदी  "
 
 #: source/ui/querydesign/query.src#STR_NO_DATASOURCE_OR_CONNECTION.String.Text
 msgid  "Both the ActiveConnection and the DataSourceName parameter are missing or wrong - cannot initialize the query designer."
@@ -3221,11 +3265,11 @@ msgstr "डेटाबेस सरबंधें दा समर्थन �
 
 #: source/ui/relationdesign/relation.src#RELATION_DESIGN_SAVEMODIFIED.QueryBox.Message
 msgid  "The relation design has been changed.\nDo you want to save the changes?"
-msgstr ""
+msgstr "सरबंध डजैन बदलोई गेदा ऐ.\n क्या तुस तब्दीलियां बचाना चांह्‌दे ओ? "
 
 #: source/ui/relationdesign/relation.src#STR_QUERY_REL_DELETE_WINDOW.String.Text
 msgid  "When you delete this table all corresponding relations will be deleted as well. Continue?"
-msgstr ""
+msgstr "जिसलै इस टेबल गी  म्हेसदे ओ, सब्भै सरबंधत सरबंध कन्नै गै मस्होई जाङन. क्या जारी र’वै? "
 
 #: source/ui/relationdesign/relation.src#STR_QUERY_REL_COULD_NOT_CREATE.String.Text
 msgid  "The database could not create the relation. May be foreign keys for this kind of table aren't supported.\nPlease check your documentation of the database."
@@ -3233,7 +3277,7 @@ msgstr ""
 
 #: source/ui/tabledesign/table.src#STR_TABLEDESIGN_DBFIELDTYPES.String.Text
 msgid  "Unknown;Text;Number;Date/Time;Date;Time;Yes/No;Currency;Memo;Counter;Image;Text (fix);Decimal;Binary (fix);Binary;BigInt;Double;Float;Real;Integer;Small Integer;Tiny Integer;SQL Null;Object;Distinct;Structure;Field;BLOB;CLOB;REF;OTHER;Bit (fix)"
-msgstr ""
+msgstr "अनजांता;इबारत;नंबर․;तरीक/समां; समां/तरीक;हां/नेईं;मुद्रा;मैमो;काऊंटर;बिंब; इबारत (निश्चत);इशारिया;बाइनरी (निश्चत); बाइनरी;बड्डा Int;दुगना;चलायमान;असली;पूर्णांक;लौह्‌का पूर्णांक;निक्क हारा पूर्णांक;SQL नल्ल;चीज;बक्खरा टकोह्‌दा;ढांचा;खेतर;BLOB;CLOB;REF;OTHER "
 
 #: source/ui/tabledesign/table.src#STR_TABLEDESIGN_UNDO_PRIMKEY.String.Text
 msgid  "Insert/remove primary key"
@@ -3377,15 +3421,15 @@ msgstr "रूप-रचना उदाहरण "
 
 #: source/ui/tabledesign/table.src#STR_HELP_BOOL_DEFAULT.String.Text
 msgid  "Select a value that is to appear in all new records as default.\nIf the field is not to have a default value, select the empty string."
-msgstr ""
+msgstr "इक मुल्ल चुनो ,जेह्‌ड़ा सभनें नमें रकाडें च बिलानिर्देश  लब्भना ऐ. \nजेकर  खेतर च बिलानिर्देश मुल्ल नेईं होऐ तां सक्खनी अक्खर -लड़ी चुनो. "
 
 #: source/ui/tabledesign/table.src#STR_HELP_DEFAULT_VALUE.String.Text
 msgid  "Enter a default value for this field.\n\nWhen you later enter data in the table, this string will be used in each new record for the field selected. It should, therefore, correspond to the cell format that needs to be entered below."
-msgstr ""
+msgstr "इस खेतरै लेई बिलानिर्देश –मुल्ल प्रविश्ट करो. \n\\बाद च जिसलै टेबल च डेटा प्रविश्ट करदेओ, एह् अक्खर-लड़ी चनोए दे खेतरै लेई हर नमें रकाड च बरतोग.इसलेई इन सैल्ल रूप-रचना जिसी हेठ प्रविश्ट करने दी लोड़ ऐ, दे अनुकूल होना चाहिदा. "
 
 #: source/ui/tabledesign/table.src#STR_HELP_FIELD_REQUIRED.String.Text
 msgid  "Activate this option if this field cannot contain NULL values, i.e. the user must always enter data."
-msgstr ""
+msgstr "जेकर इस खेतरै च  NULL मुल्ल  नेईं होई सकदे ,एह् विकल्प क्रियाशील करो, यानि के बरतूनी ने डेटा म्हेशा प्रविश्ट कीता लोड़दा. "
 
 #: source/ui/tabledesign/table.src#STR_HELP_TEXT_LENGTH.String.Text
 msgid  "Enter the maximum text length permitted."
@@ -3397,7 +3441,7 @@ msgstr "नंबर रूप-रचना प्रविश्ट करो."
 
 #: source/ui/tabledesign/table.src#STR_HELP_LENGTH.String.Text
 msgid  "Determine the length data can have in this field.\n\nIf decimal fields, then the maximum length of the number to be entered, if binary fields, then the length of the data block.\nThe value will be corrected accordingly when it exceeds the maximum for this database."
-msgstr ""
+msgstr "इस खेतर दी डेटा-लम्बाई तैऽ करो. \n\nजेकर इशारिया खेतर न तां नंबरें दी बद्धोबद्ध लम्बाई प्रविश्ट करनी होग,जेकर खेतर बाईनरी न तां लम्बाई डेटा –ब्लाक जिन्नी होग.  \\Nजिसलै मुल्ल इस डेटाबेस दे बद्धोबद्ध शा बद्ध होई  जंदा ऐ तां मुल्ल उसदे मताबक स्हेई होई जाग. "
 
 #: source/ui/tabledesign/table.src#STR_HELP_SCALE.String.Text
 msgid  "Specify the number of decimal places permitted in this field."
@@ -3405,7 +3449,7 @@ msgstr "इस खेतर च इजाज़तशुदा इशारि�
 
 #: source/ui/tabledesign/table.src#STR_HELP_FORMAT_CODE.String.Text
 msgid  "This is where you see how the data would be displayed in the current format (use the button on the right to modify the format)."
-msgstr ""
+msgstr "एह् ओह् थां ऐ जित्थै  तुस दिखदे ओ जे मजूदा रूप-रचना च डेटा कि’यां प्रदर्शत होग ( रूप-रचना च तरमीम करने लेई सज्जे पास्से आह्‌ला बटन बरतो ). "
 
 #: source/ui/tabledesign/table.src#STR_HELP_FORMAT_BUTTON.String.Text
 msgid  "This is where you determine the output format of the data."
@@ -3413,19 +3457,19 @@ msgstr "एह् ओह् थां ऐ ,जित्थै  तुस डे�
 
 #: source/ui/tabledesign/table.src#STR_HELP_AUTOINCREMENT.String.Text
 msgid  "Choose if this field should contain AutoIncrement values.\n\nYou can not enter data in fields of this type. An intrinsic value will be assigned to each new record automatically (resulting from the increment of the previous record)."
-msgstr ""
+msgstr "जेकर इस खेतरै च स्वचलत बढ़ोतरी मुल्ल होने चाहिदे तां तालो . \n\nइस किस्मा दे खेतरें च डेटा प्रविश्ट नेईं करी सकदे.हर इक नमें रकाड गी अपने आप इक अंदरूनी मुल्ल निर्दिश्ट होई जाग. (पिछले रकाड दी बढ़ोतरी दे फलसरूप). "
 
 #: source/ui/tabledesign/table.src#PB_FORMAT.PushButton.Text
 msgid  "~..."
 msgstr "~..."
 
 #: source/ui/tabledesign/table.src#STR_TABLEDESIGN_DUPLICATE_NAME.String.Text
-msgid  "The table cannot be saved because column name "$column$" was assigned twice."
-msgstr ""
+msgid  "The table cannot be saved because column name \"$column$\" was assigned twice."
+msgstr "टेबल नेईं बची सकदा की जे स्तंभ नांऽ \"$column$\" दो बारी निर्दिश्ट होए दा हा . "
 
 #: source/ui/tabledesign/table.src#STR_TBL_COLUMN_IS_KEYCOLUMN.String.Text
-msgid  "The column "$column$" belongs to the primary key. If the column is deleted, the primary key will also be deleted. Do you really want to continue?"
-msgstr ""
+msgid  "The column \"$column$\" belongs to the primary key. If the column is deleted, the primary key will also be deleted. Do you really want to continue?"
+msgstr "स्तंभ \"$column$\" प्राइमरी कुंजी कन्नै सरबंधत ऐ. जेकर स्तंभ म्हेसेआ तां प्राइमरी कुंजी  बी म्हिसी जाग . तुस सच्चें जारी रक्खना चांह्‌दे ओ? "
 
 #: source/ui/tabledesign/table.src#STR_TBL_COLUMN_IS_KEYCOLUMN_TITLE.String.Text
 msgid  "Primary Key Affected"
@@ -3439,25 +3483,29 @@ msgstr "स्तंभ "
 msgid  "Continue anyway?"
 msgstr "क्या हर हालता च जारी रक्खेआ जाऽ? "
 
+#: source/ui/tabledesign/table.src#STR_STAT_WARNING.String.Text
+msgid  "Warning!"
+msgstr "चेतावनी! "
+
 #: source/ui/tabledesign/table.src#TABLE_DESIGN_SAVEMODIFIED.QueryBox.Message
 msgid  "The table has been changed.\nDo you want to save the changes?"
-msgstr ""
+msgstr "टेबल बदलोई गेदा ऐ. \nक्या तुस तब्दीलियां बचाना चांह्‌दे ओ? "
 
 #: source/ui/tabledesign/table.src#TABLE_QUERY_CONNECTION_LOST.QueryBox.Message
 msgid  "The connection to the database was lost! The table design can only be used with limited functionality without a connection.\nReconnect?"
-msgstr ""
+msgstr "डेटाबेस कन्नै कनैक्शन त्रुट्टी गेआ हा.बिजन कनैक्शन दे टेबल डजैन सीमत कार्यात्मकता कन्नै बरतोई सकदा ऐ . \nक्या कनैक्शन परतियै जोड़ेआ जाऽ? "
 
 #: source/ui/tabledesign/table.src#STR_TABLEDESIGN_CONNECTION_MISSING.String.Text
 msgid  "The table could not be saved due to problems connecting to the database."
-msgstr ""
+msgstr "डेटाबेस कन्नै कनैक्शन जोड़ने च समस्यां होने कारण टेबल बची नेईं सकेआ. "
 
 #: source/ui/tabledesign/table.src#STR_TABLEDESIGN_DATASOURCE_DELETED.String.Text
 msgid  "The table filter could not be adjusted because the data source has been deleted."
-msgstr ""
+msgstr "टेबल पूनी व्यवस्थित नेईं होई सकी की जे डेटा स्रोत म्हिसी गेदा ऐ. "
 
 #: source/ui/tabledesign/table.src#QUERY_SAVE_TABLE_EDIT_INDEXES.QueryBox.Message
 msgid  "Before you can edit the indexes of a table, you have to save it.\nDo you want to save the changes now?"
-msgstr ""
+msgstr "टेबल दियें इंडैक्सें दा संपादन करी सकने शा पैह्‌लें तुसें इसी बचाना होग.\n क्या तुस तब्दीलियां हूनै बचाना चांह्‌दे ओ? "
 
 #: source/ui/tabledesign/table.src#STR_TABLEDESIGN_NO_PRIM_KEY_HEAD.String.Text
 msgid  "No primary key"
@@ -3465,15 +3513,15 @@ msgstr " कोई प्राइमरी कुंजी नेईं"
 
 #: source/ui/tabledesign/table.src#STR_TABLEDESIGN_NO_PRIM_KEY.String.Text
 msgid  "A unique index or primary key is required for data record identification in this database.\nYou can only enter data into this table when one of these two structural conditions has been met.\n\nShould a primary key be created now?"
-msgstr ""
+msgstr "इस डेटाबेस च डेटा रकाड शनाख्त लेई इक नोखी इंडैक्स जां प्राइमरी कुंजी  लोड़दी ऐ. \nतुस इस टेबल च डेटा सिर्फ उसलै प्रविश्ट करी सकदे ओ जिसलै एह् दोऐ ढांचागत शर्तां पूरियां होन. \n\nक्या प्राइमरी कुंजी हूनै सिरजनी चाहिदी? "
 
 #: source/ui/tabledesign/table.src#STR_TABLEDESIGN_TITLE.String.Text
 msgid  " - %PRODUCTNAME Base: Table Design"
 msgstr "- %PRODUCTNAME अधार:टेबल डजैन "
 
 #: source/ui/tabledesign/table.src#STR_TABLEDESIGN_ALTER_ERROR.String.Text
-msgid  "The column "$column$" could not be changed. Should the column instead be deleted and the new format appended?"
-msgstr ""
+msgid  "The column \"$column$\" could not be changed. Should the column instead be deleted and the new format appended?"
+msgstr "स्तंभ \"$column$\" नेईं बदलोई सकेआ. क्या इसदे बजाए स्तंभ म्हेसी ओड़ना चाहिदा ते नमीं रूप-रचना कन्नै जक्की ओड़नी चाहिदी  ? "
 
 #: source/ui/tabledesign/table.src#STR_TABLEDESIGN_SAVE_ERROR.String.Text
 msgid  "Error while saving the table design"
@@ -3485,7 +3533,7 @@ msgstr " $स्तंभ$ स्तंभ नेईं म्हेसेआ �
 
 #: source/ui/tabledesign/table.src#TABLE_DESIGN_ALL_ROWS_DELETED.QueryBox.Message
 msgid  "You are trying to delete all the columns in the table. A table cannot exist without columns. Should the table be deleted from the database? If not, the table will remain unchanged."
-msgstr ""
+msgstr "तुस टेबल दे सभनें स्तंभें गी म्हेसने दी कोशश करा करदे ओ. बिजन स्तंभें इक टेबल मजूद नेईं रेही सकदा.क्या डेटाबेस चा टेबल म्हेसी ओड़ना चाहिदा  ? जेकर नेईं, तां टेबल बिनबदलेआ रौह्‌ग. "
 
 #: source/ui/tabledesign/table.src#STR_AUTOINCREMENT_VALUE.String.Text
 msgid  "A~uto-increment statement"
@@ -3493,11 +3541,11 @@ msgstr "स्वचलत बढ़ोतरी कथन"
 
 #: source/ui/tabledesign/table.src#STR_HELP_AUTOINCREMENT_VALUE.String.Text
 msgid  "Enter an SQL statement for the auto-increment field.\n\nThis statement will be directly transferred to the database when the table is created."
-msgstr ""
+msgstr "स्वचलत बढ़ोतरी खेतरा लेई SQLकथन प्रविश्ट करो  .\n\nजिसलै टेबल सरजोग तां इस  कथन दा तबादला सिद्धे डेटाबेस च होई जाग. "
 
 #: source/ui/tabledesign/table.src#STR_NO_TYPE_INFO_AVAILABLE.String.Text
 msgid  "No type information could be retrieved from the database.\nThe table design mode is not available for this data source."
-msgstr ""
+msgstr "कुसै बी किस्मा दी जानकारी डेटाबेस चा वापस हासल नेईं होई सकी. N इस डेटा स्रोत लेई टेबल डजैन अवस्था उपलब्ध नेईं ऐ."
 
 #: source/ui/tabledesign/table.src#STR_CHANGE_COLUMN_NAME.String.Text
 msgid  "change field name"
@@ -3514,10 +3562,6 @@ msgstr "खेतर-विवरण बदलो"
 #: source/ui/tabledesign/table.src#STR_CHANGE_COLUMN_ATTRIBUTE.String.Text
 msgid  "change field attribute"
 msgstr "खेतर खासियत बदलो "
-
-#: source/ui/tabledesign/table.src#STR_STAT_WARNING.String.Text
-msgid  "Warning!"
-msgstr "चेतावनी! "
 
 #: source/ui/uno/dbinteraction.src#STR_REMEMBERPASSWORD_SESSION.String.Text
 msgid  "~Remember password until end of session"
@@ -3570,47 +3614,3 @@ msgstr ""
 #: source/ui/uno/copytablewizard.src#STR_CTW_ERROR_INVALID_INTERACTIONHANDLER.String.Text
 msgid  "The given interaction handler is invalid."
 msgstr ""
-
-#: source/ui/inc/toolbox_tmpl.hrc#ID_BROWSER_REFRESH.#define.Text
-msgid  "Refresh"
-msgstr "सजराकरण  करो"
-
-#: source/ui/inc/toolbox_tmpl.hrc#ID_NEW_VIEW_DESIGN.#define.Text
-msgid  "New ~View Design"
-msgstr "नमां ~द्रिश्श-डजैन "
-
-#: source/ui/inc/toolbox_tmpl.hrc#ID_NEW_TABLE_DESIGN.#define.Text
-msgid  "New ~Table Design"
-msgstr "नमां ~टेबल-डजैन"
-
-#: source/ui/inc/toolbox_tmpl.hrc#ID_NEW_QUERY_WIZARD.#define.Text
-msgid  "Query AutoPilot..."
-msgstr "स्वचलत पायलट पुच्छ... "
-
-#: source/ui/inc/toolbox_tmpl.hrc#ID_NEW_QUERY_DESIGN.#define.Text
-msgid  "New ~Query (Design View)"
-msgstr "नमीं ~पुच्छ (डजैन-द्रिश्श) "
-
-#: source/ui/inc/toolbox_tmpl.hrc#ID_EDIT_QUERY_DESIGN.#define.Text
-msgid  "~Edit Query"
-msgstr "~पुच्छ संपादत करो "
-
-#: source/ui/inc/toolbox_tmpl.hrc#ID_NEW_QUERY_SQL.#define.Text
-msgid  "New Query (~SQL View)"
-msgstr "(~ SQL द्रिश्श) नमीं पुच्छ"
-
-#: source/ui/inc/toolbox_tmpl.hrc#ID_QUERY_EDIT_JOINCONNECTION.#define.Text
-msgid  "Edit..."
-msgstr "संपादन करो... "
-
-#: source/ui/inc/toolbox_tmpl.hrc#ID_BROWSER_COLWIDTH.#define.Text
-msgid  "Column ~Width..."
-msgstr "स्तंभ~ चौड़ाई... "
-
-#: source/ui/inc/toolbox_tmpl.hrc#ID_DOCUMENT_CREATE_REPWIZ.#define.Text
-msgid  "Report Wizard..."
-msgstr "रपोट विशारद "
-
-#: source/ui/inc/toolbox_tmpl.hrc#SID_DB_FORM_NEW_PILOT.#define.Text
-msgid  "Form AutoPilot..."
-msgstr "स्वचलत पायलट फार्म... "

@@ -163,6 +163,22 @@ msgstr "ATANH"
 msgid  "ACOTH"
 msgstr "ACOTH"
 
+#: source/core/resource/core_resource.src#RID_STRLIST_FUNCTION_NAMES.SC_OPCODE_COSECANT.String.Text
+msgid  "CSC"
+msgstr ""
+
+#: source/core/resource/core_resource.src#RID_STRLIST_FUNCTION_NAMES.SC_OPCODE_SECANT.String.Text
+msgid  "SEC"
+msgstr ""
+
+#: source/core/resource/core_resource.src#RID_STRLIST_FUNCTION_NAMES.SC_OPCODE_COSECANT_HYP.String.Text
+msgid  "CSCH"
+msgstr ""
+
+#: source/core/resource/core_resource.src#RID_STRLIST_FUNCTION_NAMES.SC_OPCODE_SECANT_HYP.String.Text
+msgid  "SECH"
+msgstr ""
+
 #: source/core/resource/core_resource.src#RID_STRLIST_FUNCTION_NAMES.SC_OPCODE_EXP.String.Text
 msgid  "EXP"
 msgstr "EXP"
@@ -1227,21 +1243,9 @@ msgstr "#NUM !"
 msgid  "#N/A"
 msgstr "#N/D"
 
-#: source/core/resource/core_resource.src#RID_STRLIST_FUNCTION_NAMES.SC_OPCODE_COSECANT.String.Text
-msgid  "CSC"
-msgstr ""
-
-#: source/core/resource/core_resource.src#RID_STRLIST_FUNCTION_NAMES.SC_OPCODE_SECANT.String.Text
-msgid  "SEC"
-msgstr ""
-
-#: source/core/resource/core_resource.src#RID_STRLIST_FUNCTION_NAMES.SC_OPCODE_COSECANT_HYP.String.Text
-msgid  "CSCH"
-msgstr ""
-
-#: source/core/resource/core_resource.src#RID_STRLIST_FUNCTION_NAMES.SC_OPCODE_SECANT_HYP.String.Text
-msgid  "SECH"
-msgstr ""
+#: source/ui/dlg/formdlgs.src#RID_FORMULATAB_FUNCTION.LB_CATEGORY.Default.StringList.item
+msgid  "Last Used"
+msgstr "Dernières utilisées"
 
 #: source/ui/dlg/formdlgs.src#RID_FORMULATAB_FUNCTION.LB_CATEGORY.Default.StringList.item
 msgid  "All"
@@ -1309,7 +1313,7 @@ msgstr "Assistant Fonction"
 
 #: source/ui/dlg/formdlgs.src#RID_FORMULADLG_FORMULA_MODAL.STR_TITLE2.String.Text
 msgid  "Function Wizard  -"
-msgstr "Assistant Fonction - "
+msgstr "Assistant Fonction -"
 
 #: source/ui/dlg/formdlgs.src#RID_FORMULADLG_FORMULA_MODAL.STR_END.String.Text
 msgid  "~End"
@@ -1363,9 +1367,9 @@ msgstr "Assistant Fonction - "
 msgid  "~End"
 msgstr "~Fin"
 
-#: source/ui/dlg/formdlgs.src#RID_FORMULATAB_FUNCTION.LB_CATEGORY.Default.StringList.item
-msgid  "Last Used"
-msgstr "Dernières utilisées"
+#: source/ui/dlg/parawin.src#RB_ARGBLOCK( y ).#define.QuickHelpText
+msgid  "Select"
+msgstr "Sélectionner"
 
 #: source/ui/dlg/parawin.src#RID_FORMULATAB_PARAMETER.FT_EDITDESC.FixedText.Text
 msgid  "Function not known"
@@ -1378,7 +1382,3 @@ msgstr "(facultatif)"
 #: source/ui/dlg/parawin.src#RID_FORMULATAB_PARAMETER.STR_REQUIRED.String.Text
 msgid  "(required)"
 msgstr "(requis)"
-
-#: source/ui/dlg/parawin.src#RB_ARGBLOCK( y ).#define.QuickHelpText
-msgid  "Select"
-msgstr "Sélectionner"

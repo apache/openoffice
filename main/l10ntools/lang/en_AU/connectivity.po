@@ -141,6 +141,21 @@ msgstr "Thunderbird Address Book"
 msgid  "LDAP Address Book"
 msgstr "LDAP Address Book"
 
+#: source/drivers/mozab/mozab2.xcu#.Drivers.Installed.sdbc:address:mozilla:.DriverTypeDisplayName
+#, fuzzy
+msgid  "SeaMonkey Address Book"
+msgstr "Mozilla Address Book"
+
+#: source/drivers/mozab/mozab2.xcu#.Drivers.Installed.sdbc:address:thunderbird:.DriverTypeDisplayName
+#, fuzzy
+msgid  "Thunderbird Address Book"
+msgstr "Thunderbird Address Book"
+
+#: source/drivers/mozab/mozab2.xcu#.Drivers.Installed.sdbc:address:ldap:*.DriverTypeDisplayName
+#, fuzzy
+msgid  "LDAP Address Book"
+msgstr "LDAP Address Book"
+
 #: source/drivers/mysql/mysql.xcu#.Drivers.Installed.sdbc:mysql:jdbc:*.DriverTypeDisplayName
 #, fuzzy
 msgid  "MySQL (JDBC)"
@@ -192,12 +207,14 @@ msgid  "Cannot create new address books while Mozilla is running."
 msgstr "Cannot create new address books while Mozilla is running."
 
 #: source/resource/conn_shared_res.src#STR_COULD_NOT_RETRIEVE_AB_ENTRY.String.Text
+#, fuzzy
 msgid  "An address book entry could not be retrieved, an unknown error occurred."
-msgstr ""
+msgstr "An address book entry could not be retrieved, an unknown error occurred."
 
 #: source/resource/conn_shared_res.src#STR_COULD_NOT_GET_DIRECTORY_NAME.String.Text
+#, fuzzy
 msgid  "An address book directory name could not be retrieved, an unknown error occurred."
-msgstr ""
+msgstr "An address book directory name could not be retrieved, an unknown error occurred."
 
 #: source/resource/conn_shared_res.src#STR_TIMEOUT_WAITING.String.Text
 #, fuzzy
@@ -210,12 +227,14 @@ msgid  "An error occurred while executing the query."
 msgstr "An error occurred while executing the query."
 
 #: source/resource/conn_shared_res.src#STR_MOZILLA_IS_RUNNIG_NO_CHANGES.String.Text
+#, fuzzy
 msgid  "You can't make any changes to mozilla address book when mozilla is running."
-msgstr ""
+msgstr "You can't make any changes to Mozilla address book when Mozilla is running."
 
 #: source/resource/conn_shared_res.src#STR_FOREIGN_PROCESS_CHANGED_AB.String.Text
+#, fuzzy
 msgid  "Mozilla Address Book has been changed out of this process, we can't modify it in this condition."
-msgstr ""
+msgstr "Mozilla Address Book has been changed out of this process, we can't modify it in this condition."
 
 #: source/resource/conn_shared_res.src#STR_CANT_FIND_ROW.String.Text
 #, fuzzy
@@ -278,8 +297,9 @@ msgid  "A new row can not be created."
 msgstr "A new row can not be created."
 
 #: source/resource/conn_shared_res.src#STR_QUERY_INVALID_IS_NULL_COLUMN.String.Text
+#, fuzzy
 msgid  "The query can not be executed. The 'IS NULL' can only be used with a column name."
-msgstr ""
+msgstr "The query can not be executed. The 'IS NULL' can only be used with a column name."
 
 #: source/resource/conn_shared_res.src#STR_ILLEGAL_MOVEMENT.String.Text
 #, fuzzy
@@ -322,12 +342,14 @@ msgid  "It doesn't exist a connection to the database."
 msgstr "It doesn't exist a connection to the database."
 
 #: source/resource/conn_shared_res.src#STR_WRONG_PARAM_INDEX.String.Text
-msgid  "You tried to set a parameter at position '$pos$' but there is/are only '$count$' parameter(s) allowed. One reason may be that the property "ParameterNameSubstitution" is not set to TRUE in the data source."
-msgstr ""
+#, fuzzy
+msgid  "You tried to set a parameter at position '$pos$' but there is/are only '$count$' parameter(s) allowed. One reason may be that the property \"ParameterNameSubstitution\" is not set to TRUE in the data source."
+msgstr "You tried to set a parameter at position '$pos$' but there is/are only '$count$' parameter(s) allowed. One reason may be that the property \"ParameterNameSubstitution\" is not set to TRUE in the data source."
 
 #: source/resource/conn_shared_res.src#STR_INPUTSTREAM_WRONG_LEN.String.Text
+#, fuzzy
 msgid  "End of InputStream reached before satisfying length specified when InputStream was set."
-msgstr ""
+msgstr "End of InputStream reached before satisfying length specified when InputStream was set."
 
 #: source/resource/conn_shared_res.src#STR_NO_INPUTSTREAM.String.Text
 #, fuzzy
@@ -375,8 +397,9 @@ msgid  "The driver does not support the function '$functionname$'."
 msgstr "The driver does not support the function '$functionname$'."
 
 #: source/resource/conn_shared_res.src#STR_UNSUPPORTED_FEATURE.String.Text
+#, fuzzy
 msgid  "The driver does not support the functionality for '$featurename$'. It is not implemented."
-msgstr ""
+msgstr "The driver does not support the functionality for '$featurename$'. It is not implemented."
 
 #: source/resource/conn_shared_res.src#STR_FORMULA_WRONG.String.Text
 #, fuzzy
@@ -384,12 +407,14 @@ msgid  "The formula for TypeInfoSettings is wrong!"
 msgstr "The formula for TypeInfoSettings is wrong!"
 
 #: source/resource/conn_shared_res.src#STR_STRING_LENGTH_EXCEEDED.String.Text
+#, fuzzy
 msgid  "The string '$string$' exceeds the maximum length of $maxlen$ characters when converted to the target character set '$charset$'."
-msgstr ""
+msgstr "The string '$string$' exceeds the maximum length of $maxlen$ characters when converted to the target character set '$charset$'."
 
 #: source/resource/conn_shared_res.src#STR_CANNOT_CONVERT_STRING.String.Text
+#, fuzzy
 msgid  "The string '$string$' cannot be converted using the encoding '$charset$'."
-msgstr ""
+msgstr "The string '$string$' cannot be converted using the encoding '$charset$'."
 
 #: source/resource/conn_shared_res.src#STR_URI_SYNTAX_ERROR.String.Text
 #, fuzzy
@@ -407,24 +432,29 @@ msgid  "The query can not be executed. The operator is too complex."
 msgstr "The query can not be executed. The operator is too complex."
 
 #: source/resource/conn_shared_res.src#STR_QUERY_INVALID_LIKE_COLUMN.String.Text
+#, fuzzy
 msgid  "The query can not be executed. You cannot use 'LIKE' with columns of this type."
-msgstr ""
+msgstr "The query can not be executed. You cannot use 'LIKE' with columns of this type."
 
 #: source/resource/conn_shared_res.src#STR_QUERY_INVALID_LIKE_STRING.String.Text
+#, fuzzy
 msgid  "The query can not be executed. 'LIKE' can be used with a string argument only."
-msgstr ""
+msgstr "The query can not be executed. 'LIKE' can be used with a string argument only."
 
 #: source/resource/conn_shared_res.src#STR_QUERY_NOT_LIKE_TOO_COMPLEX.String.Text
+#, fuzzy
 msgid  "The query can not be executed. The 'NOT LIKE' condition is too complex."
-msgstr ""
+msgstr "The query can not be executed. The 'NOT LIKE' condition is too complex."
 
 #: source/resource/conn_shared_res.src#STR_QUERY_LIKE_WILDCARD.String.Text
+#, fuzzy
 msgid  "The query can not be executed. The 'LIKE' condition contains wildcard in the middle."
-msgstr ""
+msgstr "The query can not be executed. The 'LIKE' condition contains wildcard in the middle."
 
 #: source/resource/conn_shared_res.src#STR_QUERY_LIKE_WILDCARD_MANY.String.Text
+#, fuzzy
 msgid  "The query can not be executed. The 'LIKE' condition contains too many wildcards."
-msgstr ""
+msgstr "The query can not be executed. The 'LIKE' condition contains too many wildcards."
 
 #: source/resource/conn_shared_res.src#STR_INVALID_COLUMNNAME.String.Text
 #, fuzzy
@@ -447,8 +477,9 @@ msgid  "The file $filename$ could not be loaded."
 msgstr "The file $filename$ could not be loaded."
 
 #: source/resource/conn_shared_res.src#STR_LOAD_FILE_ERROR_MESSAGE.String.Text
+#, fuzzy
 msgid  "The attempt to load the file resulted in the following error message ($exception_type$):\n\n$error_message$"
-msgstr ""
+msgstr "The attempt to load the file resulted in the following error message ($exception_type$):\n\n$error_message$"
 
 #: source/resource/conn_shared_res.src#STR_TYPE_NOT_CONVERT.String.Text
 #, fuzzy
@@ -496,12 +527,14 @@ msgid  "Could not create view: no command object."
 msgstr "Could not create view: no command object."
 
 #: source/resource/conn_shared_res.src#STR_NO_CONNECTION.String.Text
+#, fuzzy
 msgid  "The connection could not be created. May be the necessary data provider is not installed."
-msgstr ""
+msgstr "The connection could not be created. Perhaps the necessary data provider is not installed."
 
 #: source/resource/conn_shared_res.src#STR_COULD_NOT_DELETE_INDEX.String.Text
+#, fuzzy
 msgid  "The index could not be deleted. An unknown error while accessing the file system occured."
-msgstr ""
+msgstr "The index could not be deleted. An unknown error while accessing the file system occurred."
 
 #: source/resource/conn_shared_res.src#STR_ONL_ONE_COLUMN_PER_INDEX.String.Text
 #, fuzzy
@@ -519,12 +552,14 @@ msgid  "The index could not be created. An unknown error appeared."
 msgstr "The index could not be created. An unknown error appeared."
 
 #: source/resource/conn_shared_res.src#STR_COULD_NOT_CREATE_INDEX_NAME.String.Text
+#, fuzzy
 msgid  "The index could not be created. The file '$filename$' is used by an other index."
-msgstr ""
+msgstr "The index could not be created. The file '$filename$' is used by an other index."
 
 #: source/resource/conn_shared_res.src#STR_COULD_NOT_CREATE_INDEX_KEYSIZE.String.Text
+#, fuzzy
 msgid  "The index could not be created. The size of the chosen column is to big."
-msgstr ""
+msgstr "The index could not be created. The size of the chosen column is too big."
 
 #: source/resource/conn_shared_res.src#STR_SQL_NAME_ERROR.String.Text
 #, fuzzy
@@ -562,28 +597,34 @@ msgid  "Duplicate value found in column '$columnname$'."
 msgstr "Duplicate value found in column '$columnname$'."
 
 #: source/resource/conn_shared_res.src#STR_INVALID_COLUMN_DECIMAL_VALUE.String.Text
-msgid  "The '$columnname$' column has been defined as a "Decimal" type, the max. length is $precision$ characters (with $scale$ decimal places).\n\nThe specified value "$value$ is longer than the number of digits allowed."
-msgstr ""
+#, fuzzy
+msgid  "The '$columnname$' column has been defined as a \"Decimal\" type, the max. length is $precision$ characters (with $scale$ decimal places).\n\nThe specified value \"$value$ is longer than the number of digits allowed."
+msgstr "The '$columnname$' column has been defined as a \"Decimal\" type, the max. length is $precision$ characters (with $scale$ decimal places).\n\nThe specified value \"$value$ is longer than the number of digits allowed."
 
 #: source/resource/conn_shared_res.src#STR_COLUMN_NOT_ALTERABLE.String.Text
+#, fuzzy
 msgid  "The column '$columnname$' could not be altered. May be the file system is write protected."
-msgstr ""
+msgstr "The column '$columnname$' could not be altered. Perhaps the file system is write protected."
 
 #: source/resource/conn_shared_res.src#STR_INVALID_COLUMN_VALUE.String.Text
+#, fuzzy
 msgid  "The column '$columnname$' could not be updated. The value is invalid for that column."
-msgstr ""
+msgstr "The column '$columnname$' could not be updated. The value is invalid for that column."
 
 #: source/resource/conn_shared_res.src#STR_COLUMN_NOT_ADDABLE.String.Text
+#, fuzzy
 msgid  "The column '$columnname$' could not be added. May be the file system is write protected."
-msgstr ""
+msgstr "The column '$columnname$' could not be added. Perhaps the file system is write protected."
 
 #: source/resource/conn_shared_res.src#STR_COLUMN_NOT_DROP.String.Text
+#, fuzzy
 msgid  "The column at position '$position$' could not be dropped. May be the file system is write protected."
-msgstr ""
+msgstr "The column at position '$position$' could not be dropped. Perhaps the file system is write protected."
 
 #: source/resource/conn_shared_res.src#STR_TABLE_NOT_DROP.String.Text
+#, fuzzy
 msgid  "The table '$tablename$' could not be dropped. May be the file system is write protected."
-msgstr ""
+msgstr "The table '$tablename$' could not be dropped. Perhaps the file system is write protected."
 
 #: source/resource/conn_shared_res.src#STR_COULD_NOT_ALTER_TABLE.String.Text
 #, fuzzy
@@ -606,12 +647,14 @@ msgid  "Can only sort by table columns."
 msgstr "Can only sort by table columns."
 
 #: source/resource/conn_shared_res.src#STR_QUERY_COMPLEX_COUNT.String.Text
-msgid  "The query can not be executed. It is too complex. Only "COUNT(*)" is supported."
-msgstr ""
+#, fuzzy
+msgid  "The query can not be executed. It is too complex. Only \"COUNT(*)\" is supported."
+msgstr "The query can not be executed. It is too complex. Only \"COUNT(*)\" is supported."
 
 #: source/resource/conn_shared_res.src#STR_QUERY_INVALID_BETWEEN.String.Text
+#, fuzzy
 msgid  "The query can not be executed. The 'BETWEEN' arguments are not correct."
-msgstr ""
+msgstr "The query can not be executed. The 'BETWEEN' arguments are not correct."
 
 #: source/resource/conn_shared_res.src#STR_QUERY_FUNCTION_NOT_SUPPORTED.String.Text
 #, fuzzy
@@ -624,8 +667,9 @@ msgid  "The table can not be changed. It is read only."
 msgstr "The table can not be changed. It is read-only."
 
 #: source/resource/conn_shared_res.src#STR_DELETE_ROW.String.Text
-msgid  "The row could not be deleted. The option "Display inactive records" is set."
-msgstr ""
+#, fuzzy
+msgid  "The row could not be deleted. The option \"Display inactive records\" is set."
+msgstr "The row could not be deleted. The option \"Display inactive records\" is set."
 
 #: source/resource/conn_shared_res.src#STR_ROW_ALREADY_DELETED.String.Text
 #, fuzzy
@@ -698,16 +742,19 @@ msgid  "No suitable KDE installation was found."
 msgstr "No suitable KDE installation was found."
 
 #: source/resource/conn_shared_res.src#STR_KDE_VERSION_TOO_OLD.String.Text
+#, fuzzy
 msgid  "KDE version $major$.$minor$ or higher is required to access the KDE Address Book."
-msgstr ""
+msgstr "KDE version $major$.$minor$ or higher is required to access the KDE Address Book."
 
 #: source/resource/conn_shared_res.src#STR_KDE_VERSION_TOO_NEW.String.Text
+#, fuzzy
 msgid  "The found KDE version is too new. Only KDE up to version $major$.$minor$ is known to work with this product.\n"
-msgstr ""
+msgstr "The found KDE version is too new. Only KDE up to version $major$.$minor$ is known to work with this product.\n"
 
 #: source/resource/conn_shared_res.src#STR_KDE_VERSION_TOO_NEW_WORK_AROUND.String.Text
+#, fuzzy
 msgid  "If you are sure that your KDE version works, you might execute the following Basic macro to disable this version check:\n\n"
-msgstr ""
+msgstr "If you are sure that your KDE version works, you might execute the following Basic macro to disable this version check:\n\n"
 
 #: source/resource/conn_shared_res.src#STR_PARA_ONLY_PREPARED.String.Text
 #, fuzzy
@@ -725,20 +772,24 @@ msgid  "No suitable Mac OS installation was found."
 msgstr "No suitable Mac OS installation was found."
 
 #: source/resource/conn_shared_res.src#STR_NO_DISK_SPACE.String.Text
+#, fuzzy
 msgid  "The database file '$filename$' could not be created. Please check your disk space."
-msgstr ""
+msgstr "The database file '$filename$' could not be created. Please check your disc space."
 
 #: source/resource/conn_shared_res.src#STR_COMMAND_NOT_FOUND.String.Text
+#, fuzzy
 msgid  "The database '$databasename$' could not be started because the command '$progname$' could not be executed."
-msgstr ""
+msgstr "The database '$databasename$' could not be started because the command '$progname$' could not be executed."
 
 #: source/resource/conn_shared_res.src#STR_DATABASE_NEEDS_CONVERTING.String.Text
+#, fuzzy
 msgid  "The current database need to be converted. Please insert control user  and password."
-msgstr ""
+msgstr "The current database needs to be converted. Please insert control user and password."
 
 #: source/resource/conn_shared_res.src#STR_USER_NO_DELETE.String.Text
+#, fuzzy
 msgid  "This user couldn't be deleted. Otherwise the database stays in a inconsistent state."
-msgstr ""
+msgstr "This user couldn't be deleted. Otherwise the database stays in a inconsistent state."
 
 #: source/resource/conn_shared_res.src#STR_NO_STROAGE.String.Text
 #, fuzzy
@@ -746,8 +797,9 @@ msgid  "The connection can not be established. No storage or URL was given."
 msgstr "The connection can not be established. No storage or URL was given."
 
 #: source/resource/conn_shared_res.src#STR_INVALID_FILE_URL.String.Text
+#, fuzzy
 msgid  "The given URL contains no valid local file system path. Please check the location of your database file."
-msgstr ""
+msgstr "The given URL contains no valid local file system path. Please check the location of your database file."
 
 #: source/resource/conn_shared_res.src#STR_NO_TABLE_CONTAINER.String.Text
 #, fuzzy
@@ -813,18 +865,3 @@ msgstr "No $1$ exists."
 #, fuzzy
 msgid  "Unable to display the complete table content. Please apply a filter."
 msgstr "Unable to display the complete table content. Please apply a filter."
-
-#: source/drivers/mozab/mozab2.xcu#.Drivers.Installed.sdbc:address:mozilla:.DriverTypeDisplayName
-#, fuzzy
-msgid  "SeaMonkey Address Book"
-msgstr "Mozilla Address Book"
-
-#: source/drivers/mozab/mozab2.xcu#.Drivers.Installed.sdbc:address:thunderbird:.DriverTypeDisplayName
-#, fuzzy
-msgid  "Thunderbird Address Book"
-msgstr "Thunderbird Address Book"
-
-#: source/drivers/mozab/mozab2.xcu#.Drivers.Installed.sdbc:address:ldap:*.DriverTypeDisplayName
-#, fuzzy
-msgid  "LDAP Address Book"
-msgstr "LDAP Address Book"

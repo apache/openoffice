@@ -341,7 +341,7 @@ msgstr "Радок загалоўка"
 
 #: source/smres.src#RID_PRINTOPTIONPAGE.CB_EQUATION_TEXT.CheckBox.Text
 msgid  "~Formula text"
-msgstr "Вызначае, ці дадаваць у выдрук назву дакумента."
+msgstr "Тэкст формулы"
 
 #: source/smres.src#RID_PRINTOPTIONPAGE.CB_FRAME.CheckBox.Text
 msgid  "B~order"
@@ -353,15 +353,15 @@ msgstr "Фармат друкавання"
 
 #: source/smres.src#RID_PRINTOPTIONPAGE.RB_ORIGINAL_SIZE.RadioButton.Text
 msgid  "O~riginal size"
-msgstr "Пачатковы памер"
+msgstr "Межы"
 
 #: source/smres.src#RID_PRINTOPTIONPAGE.RB_FIT_TO_PAGE.RadioButton.Text
 msgid  "Fit to ~page"
-msgstr "Дапасоўваць да аркуша"
+msgstr "Дадае тонкую рамку вакол абшару формулы ў выдруку."
 
 #: source/smres.src#RID_PRINTOPTIONPAGE.RB_ZOOM.RadioButton.Text
 msgid  "~Scaling"
-msgstr "Маштаб"
+msgstr "Памер"
 
 #: source/smres.src#RID_PRINTOPTIONPAGE.FL_MISC_OPTIONS.FixedLine.Text
 msgid  "Miscellaneous options"
@@ -445,11 +445,11 @@ msgstr "Сцерці"
 
 #: source/smres.src#RID_NOMATHTYPEFACEWARNING.WarningBox.Message
 msgid  "The 'StarMath' font has not been installed.\nWithout this font %PRODUCTNAME Math cannot function correctly.\nPlease install this font and restart %PRODUCTNAME Math."
-msgstr ""
+msgstr "Не знойдзены шрыфт 'StarMath'.\nБез гэтага шрыфта, %PRODUCTNAME Math не можа працаваць правільна.\nУстанавіце гэты шрыфт і перастартуйце %PRODUCTNAME Math."
 
 #: source/smres.src#RID_DEFAULTSAVEQUERY.QueryBox.Message
 msgid  "Should the changes be saved as defaults?\n\nThese changes will apply for all new formulas."
-msgstr ""
+msgstr "Ці трэба запісаць змены ў якасці прадвызначэнняў?\n\nГэтыя змены будуць дзейнічаць у ўсіх новых формулах."
 
 #: source/smres.src#RID_FONTREGULAR.String.Text
 msgid  "Standard"
@@ -558,6 +558,10 @@ msgstr "Без засечак"
 #: source/smres.src#RID_FONTMENU.7.MenuItem.Text
 msgid  "Fixed"
 msgstr "Роўнашырокі"
+
+#: source/smres.src#CMDBOXWINDOW_TEXT.#define.Text
+msgid  "Commands"
+msgstr "Каманды"
 
 #: source/smres.src#RID_DOCUMENTSTR.String.Text
 msgid  "Formula"
@@ -694,10 +698,6 @@ msgstr "Дапасоўваць да аркуша"
 #: source/smres.src#RID_PRINTUIOPTIONS.item9.ItemList.item
 msgid  "~Scaling"
 msgstr "Маштаб"
-
-#: source/smres.src#CMDBOXWINDOW_TEXT.#define.Text
-msgid  "Commands"
-msgstr "Каманды"
 
 #: source/commands.src#RID_COMMANDMENU.RID_UNBINOPS_MENU.MenuItem.Text
 msgid  "~Unary/Binary Operators"

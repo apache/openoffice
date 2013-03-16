@@ -33,7 +33,7 @@ msgstr ""
 
 #: source/padialog.src#RID_FONTIMPORT_DIALOG.RID_FIMP_TXT_HELP.FixedText.Text
 msgid  "Please select the folder from which you want to import fonts. Add the selected fonts by clicking the OK button."
-msgstr ""
+msgstr "Bitte wählen Sie zunächst den Ordner aus dem Sie Schriften importieren möchten an. Starten Sie dann das Hinzufügen der selektierten Schriften mit der OK-Schaltfläche."
 
 #: source/padialog.src#RID_FONTIMPORT_DIALOG.RID_FIMP_FL_FROM.FixedLine.Text
 msgid  "Source directory"
@@ -53,7 +53,7 @@ msgstr "Beim Hinzufügen nur ~Softlinks anlegen"
 
 #: source/padialog.src#RID_FONTIMPORT_DIALOG.RID_FIMP_BTN_SELECTALL.PushButton.Text
 msgid  "~Select All"
-msgstr "~Alle markieren"
+msgstr "~Alle auswählen"
 
 #: source/padialog.src#RID_FONTIMPORT_DIALOG.RID_FIMP_STR_IMPORTOP.String.Text
 msgid  "Add fonts"
@@ -61,7 +61,7 @@ msgstr "Füge Schriften hinzu"
 
 #: source/padialog.src#RID_FONTIMPORT_DIALOG.RID_FIMP_STR_QUERYOVERWRITE.String.Text
 msgid  "Do you really want to overwrite this font file?\n   %s"
-msgstr ""
+msgstr "Wollen Sie die Schriftdatei\n   %s\n wirklich überschreiben?"
 
 #: source/padialog.src#RID_FONTIMPORT_DIALOG.RID_FIMP_STR_OVERWRITEALL.String.Text
 msgid  "All"
@@ -73,19 +73,19 @@ msgstr "Keine"
 
 #: source/padialog.src#RID_FONTIMPORT_DIALOG.RID_FIMP_STR_NOAFM.String.Text
 msgid  "A format file (with an .afm extension) has not been found for the font\n%s\ntherefore, the font cannot be installed. Format files can be created with ghostscript, for example, and have to be located in the same directory as the font files or its afm subdirectory."
-msgstr ""
+msgstr "Zu der Sriftdatei\n%s\nwurde keine Formatdatei ( mit Endung .afm ) gefunden, weshalb sie nicht installiert werden kann. Formatdateien können z.B. mit ghostscript erstellt werden und müssen im gleichen Verzeichnis wie die Schriftdateien oder in dessen Unterverzeichnis afm stehen."
 
 #: source/padialog.src#RID_FONTIMPORT_DIALOG.RID_FIMP_STR_AFMCOPYFAILED.String.Text
 msgid  "The metric file for the font file\n   %s\ncould not be copied. The font will not be installed."
-msgstr ""
+msgstr "Die Metrikdatei zur Schriftdatei\n   %s\nkonnte nicht kopiert werden. Die Schrift wird nicht installiert."
 
 #: source/padialog.src#RID_FONTIMPORT_DIALOG.RID_FIMP_STR_FONTCOPYFAILED.String.Text
 msgid  "The font file\n   %s\ncould not be copied. The font will not be installed."
-msgstr ""
+msgstr "Die Schriftdatei\n   %s\nkonnte nicht kopiert werden. Die Schrift wird nicht installiert."
 
 #: source/padialog.src#RID_FONTIMPORT_DIALOG.RID_FIMP_STR_NOWRITEABLEFONTSDIR.String.Text
 msgid  "A directory containing a writable fonts.dir file is not located in the Fontpath. Therefore, fonts cannot be installed."
-msgstr ""
+msgstr "Es wurde kein Verzeichnis im Fontpath gefunden, welches eine screibbare fonts.dir Datei enthält. Es können keine Schriften installiert werden."
 
 #: source/padialog.src#RID_FONTIMPORT_DIALOG.RID_FIMP_STR_NUMBEROFFONTSIMPORTED.String.Text
 msgid  "%d new fonts were added."
@@ -173,11 +173,11 @@ msgstr "Der Drucker %s konnte nicht geöffnet werden."
 
 #: source/padialog.src#RID_PA_TXT_TESTPAGE_PRINTED.String.Text
 msgid  "The test page was printed succesfully. Please check the result."
-msgstr ""
+msgstr "Die Testseite wurde erfolgreich gedruckt. Bitte prüfen Sie das Ergebnis."
 
 #: source/padialog.src#RID_ERR_NOWRITE.String.Text
 msgid  "No printers can be installed, because the file system is read-only.\nPlease contact your system administrator."
-msgstr ""
+msgstr "Es kann kein Drucker installiert werden, da sie keine Schreibrechte haben.\nKontaktieren Sie ihr System Administrator"
 
 #: source/padialog.src#RID_QRY_PRTNAME.String.Text
 msgid  "~New printer name"
@@ -237,7 +237,7 @@ msgstr "~Neuer Name für %s (%d1 von %d2)"
 
 #: source/padialog.src#RID_FONTNAMEDIALOG.RID_FNTNM_STR_NOTRENAMABLE.String.Text
 msgid  "The font %s cannot be renamed due to missing write permission."
-msgstr ""
+msgstr "Die Schrift %s kann aufgrund mangelnder Schreibrechte nicht umbenannt werden."
 
 #: source/padialog.src#RID_FONTNAMEDIALOG.String.Text
 msgid  "Fonts"
@@ -289,7 +289,7 @@ msgstr "Die Datei enthält keine Metrik."
 
 #: source/padialog.src#RID_AFMERROR_BOX_TXT.String.Text
 msgid  "The metric\n\n%s\n\ncould not be converted for the following reason:\n\n"
-msgstr ""
+msgstr "Die Metrik\n\n%s\n\nkonnte aus folgendem Grund nicht konvertiert werden:\n\n"
 
 #: source/padialog.src#RID_PROGRESS_DLG.RID_PROGRESS_PROGRESS_TXT.FixedText.Text
 msgid  "Progress"
@@ -320,8 +320,8 @@ msgid  "~Selection of drivers"
 msgstr "Treiber~auswahl"
 
 #: source/padialog.src#RID_PPDIMPORT_DLG.RID_PPDIMP_TXT_DRIVER.FixedText.Text
-msgid  "Please select the drivers to install and press "%s"."
-msgstr ""
+msgid  "Please select the drivers to install and press \"%s\"."
+msgstr "Bitte wählen Sie die gewünschten Treiber aus und bestätigen mit der Schaltfläche \"%s\"."
 
 #: source/padialog.src#RID_PPDIMPORT_DLG.RID_PPDIMP_STR_LOADINGPPD.String.Text
 msgid  "Searching for drivers"
@@ -332,8 +332,8 @@ msgid  "Driver Installation"
 msgstr "Treiberinstallation"
 
 #: source/padialog.src#RID_QUERY_REMOVEDRIVER.String.Text
-msgid  "Do you really want to remove the driver "%s"?"
-msgstr ""
+msgid  "Do you really want to remove the driver \"%s\"?"
+msgstr "Wollen Sie den Treiber \"%s\" wirklich entfernen?"
 
 #: source/padialog.src#RID_QUERY_REMOVEPRINTER.String.Text
 msgid  "Do you really want to remove this printer ?"
@@ -344,40 +344,40 @@ msgid  "Do you really want to remove the selected fonts ?"
 msgstr "Wollen Sie die ausgewählten Schriften wirklich entfernen?"
 
 #: source/padialog.src#RID_QUERY_DRIVERUSED.String.Text
-msgid  "There are still printers using the driver "%s". Do you really want to remove it? The corresponding printers will also be removed."
-msgstr ""
+msgid  "There are still printers using the driver \"%s\". Do you really want to remove it? The corresponding printers will also be removed."
+msgstr "Es gibt noch Drucker, die den Treiber \"%s\" benutzen. Wollen Sie ihn wirklich entfernen? Die entsprechenden Drucker werden dann ebenfalls entfernt."
 
 #: source/padialog.src#RID_ERR_REMOVESGENPRT.String.Text
-msgid  "The driver "%s" is always needed and can therefore not be removed."
-msgstr ""
+msgid  "The driver \"%s\" is always needed and can therefore not be removed."
+msgstr "Der Treiber \"%s\" wird immer gebraucht und kann daher nicht entfernt werden."
 
 #: source/padialog.src#RID_ERR_REMOVEDRIVERFAILED.String.Text
-msgid  "The driver "%s1" could not be removed. It was not possible to remove the file\n\n%s2."
-msgstr ""
+msgid  "The driver \"%s1\" could not be removed. It was not possible to remove the file\n\n%s2."
+msgstr "Der Treiber \"%s1\" konnte nicht entfernt werden. Das Löschen der Datei\n\n%s2\n\nist fehlgeschlagen."
 
 #: source/padialog.src#RID_ERR_REMOVEDEFAULTDRIVER.String.Text
-msgid  "The driver "%s" is used by your default printer. Therefore, it cannot be removed."
-msgstr ""
+msgid  "The driver \"%s\" is used by your default printer. Therefore, it cannot be removed."
+msgstr "Der Treiber \"%s\" wird von Ihrem Standarddrucker verwendet. Deshalb kann er nicht entfernt werden."
 
 #: source/padialog.src#RID_ERR_PRINTERNOTREMOVEABLE.String.Text
 msgid  "The printer %s cannot be removed."
 msgstr "Der Drucker %s kann nicht entfernt werden."
 
 #: source/padialog.src#RID_TXT_PRINTERALREADYEXISTS.String.Text
-msgid  "A printer named "%s" already exists. This printer will not be imported."
-msgstr ""
+msgid  "A printer named \"%s\" already exists. This printer will not be imported."
+msgstr "Es existiert bereits ein Drucker mit dem Namen \"%s\". Dieser Drucker wird nicht importiert."
 
 #: source/padialog.src#RID_TXT_PRINTERWITHOUTCOMMAND.String.Text
-msgid  "The printer "%s" has no valid configuration and, therefore, cannot be imported."
-msgstr ""
+msgid  "The printer \"%s\" has no valid configuration and, therefore, cannot be imported."
+msgstr "Der Drucker \"%s\" ist unvollständig konfiguriert und kann daher nicht importiert werden."
 
 #: source/padialog.src#RID_TXT_DRIVERDOESNOTEXIST.String.Text
-msgid  "The driver for the printer "%s1" (%s2) is not installed. Therefore the printer cannot be imported."
-msgstr ""
+msgid  "The driver for the printer \"%s1\" (%s2) is not installed. Therefore the printer cannot be imported."
+msgstr "Der Treiber für den Drucker \"%s1\" (%s2) ist nicht installiert. Daher kann der Drucker nicht importiert werden."
 
 #: source/padialog.src#RID_TXT_PRINTERADDFAILED.String.Text
-msgid  "The printer "%s" could not be added."
-msgstr ""
+msgid  "The printer \"%s\" could not be added."
+msgstr "Der Drucker \"%s\" konnte nicht erzeugt werden."
 
 #: source/padialog.src#RID_ADD_PRINTER_DIALOG.RID_ADDP_BTN_FINISH.OKButton.Text
 msgid  "~Finish"
@@ -477,7 +477,7 @@ msgstr "Eine Kommandozeile auswählen"
 
 #: source/padialog.src#RID_ADDP_PAGE_COMMAND.RID_ADDP_CMD_TXT_COMMAND.FixedText.Text
 msgid  "Please enter a c~ommand line appropriate for this device."
-msgstr ""
+msgstr "Geben Sie bitte eine ~Kommandozeile ein, mit der dieses Gerät angesprochen werden kann"
 
 #: source/padialog.src#RID_ADDP_PAGE_COMMAND.RID_ADDP_CMD_TXT_PDFDIR.FixedText.Text
 msgid  "PDF ~target directory"
@@ -488,12 +488,12 @@ msgid  "~Help"
 msgstr "~Hilfe"
 
 #: source/padialog.src#RID_ADDP_PAGE_COMMAND.RID_ADDP_CMD_STR_PDFHELP.String.Text
-msgid  "The command line for PDF converters is executed as follows: for each document printed, "(TMP)" in the command line is replaced by a temporary file and "(OUTFILE)" in the command line is replaced by the target PDF file name. If "(TMP)" is in the command line, the PostScript code will be supplied via a file, otherwise via standard input (i.e. as a pipe)."
-msgstr ""
+msgid  "The command line for PDF converters is executed as follows: for each document printed, \"(TMP)\" in the command line is replaced by a temporary file and \"(OUTFILE)\" in the command line is replaced by the target PDF file name. If \"(TMP)\" is in the command line, the PostScript code will be supplied via a file, otherwise via standard input (i.e. as a pipe)."
+msgstr "Die Kommandozeile bei PDF Konvertern wird wie folgt verarbeitet: bei jedem gedruckten Dokument wird in der Kommandozeile jeweils \"(TMP)\" durch eine temporäre Datei und \"(OUTFILE)\" durch die zu erzeugende PDF Datei ersetzt. Wenn \"(TMP)\" in der Kommandozeile vorkommt wird der PostScript-code in einer Datei übergeben, andernfalls über die Standardeingabe (d.h. als Pipe)."
 
 #: source/padialog.src#RID_ADDP_PAGE_COMMAND.RID_ADDP_CMD_STR_FAXHELP.String.Text
-msgid  "The command line for fax connections is executed as follows: for each fax sent, "(TMP)" in the command line is replaced by a temporary file and "(PHONE)" in the command line is replaced by the fax number. If "(TMP)" appears in the command line, the PostScript code will be supplied via a file, otherwise it is passed as standard input (i.e. as a pipe)."
-msgstr ""
+msgid  "The command line for fax connections is executed as follows: for each fax sent, \"(TMP)\" in the command line is replaced by a temporary file and \"(PHONE)\" in the command line is replaced by the fax number. If \"(TMP)\" appears in the command line, the PostScript code will be supplied via a file, otherwise it is passed as standard input (i.e. as a pipe)."
+msgstr "Die Kommandozeile bei Faxanbindungen wird wie folgt verarbeitet: bei jedem gesendeten Fax wird in der Kommandozeile jeweils \"(TMP)\" durch eine temporäre Datei und \"(PHONE)\" durch die Faxnummer ersetzt. Wenn \"(TMP)\" in der Kommandozeile vorkommt wird der PostScript-code in einer Datei übergeben, andernfalls über die Standardeingabe (d.h. als Pipe)."
 
 #: source/padialog.src#RID_ADDP_PAGE_OLDPRINTERS.RID_ADDP_STR_TITLE.String.Text
 msgid  "Import printers from old versions"
@@ -501,7 +501,7 @@ msgstr "Drucker älterer Versionen importieren"
 
 #: source/padialog.src#RID_ADDP_PAGE_OLDPRINTERS.RID_ADDP_OLD_TXT_PRINTERS.FixedText.Text
 msgid  "~These printers can be imported. Please select the ones you want to import."
-msgstr ""
+msgstr "~Diese Drucker können importiert werden. Bitte wählen Sie diejenigen, die Sie importieren möchten."
 
 #: source/padialog.src#RID_ADDP_PAGE_OLDPRINTERS.RID_ADDP_OLD_BTN_SELECTALL.PushButton.Text
 msgid  "~Select All"
@@ -517,11 +517,11 @@ msgstr "Für diese Faxanbindung soll folgender Treiber verwendet werden"
 
 #: source/padialog.src#RID_ADDP_PAGE_FAXDRIVER.RID_ADDP_FAXDRV_BTN_DEFAULT.RadioButton.Text
 msgid  "T~he default driver"
-msgstr "Der ~Standardtreiber"
+msgstr "der ~Standardtreiber"
 
 #: source/padialog.src#RID_ADDP_PAGE_FAXDRIVER.RID_ADDP_FAXDRV_BTN_SELECT.RadioButton.Text
 msgid  "A speci~fic driver, to adapt the format to another printer"
-msgstr ""
+msgstr "ein spezifischer ~Treiber, um die Formatierung einem anderen Drucker anzugleichen"
 
 #: source/padialog.src#RID_ADDP_PAGE_PDFDRIVER.RID_ADDP_STR_TITLE.String.Text
 msgid  "Choose a driver"
@@ -541,7 +541,7 @@ msgstr "Der Adobe ~Distiller(tm) Treiber"
 
 #: source/padialog.src#RID_ADDP_PAGE_PDFDRIVER.RID_ADDP_PDFDRV_BTN_SELECT.RadioButton.Text
 msgid  "A spec~ific driver, to adapt the format to another printer"
-msgstr ""
+msgstr "Ein spezifischer ~Treiber, um die Formatierung einem anderen Drucker anzugleichen"
 
 #: source/padialog.src#RID_TXT_FONT_ITALIC.String.Text
 msgid  "Italic"
@@ -788,16 +788,16 @@ msgid  "~Remove"
 msgstr "~Entfernen"
 
 #: source/rtsetup.src#RID_RTS_COMMANDPAGE.RID_RTS_CMD_STR_PDFHELP.String.Text
-msgid  "The command line for PDF converters is executed as follows: for each document printed, "(TMP)" in the command line is replaced by a temporary file and "(OUTFILE)" in the command line is replaced by the target PDF file name. If "(TMP)" is in the command line, the PostScript code will be supplied via a file, otherwise via standard input (i.e. as a pipe)."
-msgstr ""
+msgid  "The command line for PDF converters is executed as follows: for each document printed, \"(TMP)\" in the command line is replaced by a temporary file and \"(OUTFILE)\" in the command line is replaced by the target PDF file name. If \"(TMP)\" is in the command line, the PostScript code will be supplied via a file, otherwise via standard input (i.e. as a pipe)."
+msgstr "Die Kommandozeile bei PDF-Konvertern wird wie folgt verarbeitet: bei jedem gedruckten Dokument wird in der Kommandozeile jeweils \"(TMP)\" durch eine temporäre Datei und \"(OUTFILE)\" durch die zu erzeugende PDF Datei ersetzt. Wenn \"(TMP)\" in der Kommandozeile vorkommt wird der PostScript-code in einer Datei übergeben, andernfalls über die Standardeingabe (d.h. als Pipe)."
 
 #: source/rtsetup.src#RID_RTS_COMMANDPAGE.RID_RTS_CMD_STR_PRINTERHELP.String.Text
 msgid  "The command line for printer devices is executed as follows: the generated PostScript code is supplied as standard input (i.e. as a pipe) to the command line."
-msgstr ""
+msgstr "Die Kommandozeile bei Druckern wird wie folgt verarbeitet: der erzeugte PostScript-code wird der Kommandozeile als Standardeingabe (d.h. als Pipe) übergeben."
 
 #: source/rtsetup.src#RID_RTS_COMMANDPAGE.RID_RTS_CMD_STR_FAXHELP.String.Text
-msgid  "The command line for fax devices is executed as follows: for each fax sent, "(TMP)" in the command line is replaced by a temporary file and "(PHONE)" in the command line is replaced by the fax number. If "(TMP)" appears in the command line, the PostScript code will be supplied via a file, otherwise it is passed as standard input (i.e. as a pipe)."
-msgstr ""
+msgid  "The command line for fax devices is executed as follows: for each fax sent, \"(TMP)\" in the command line is replaced by a temporary file and \"(PHONE)\" in the command line is replaced by the fax number. If \"(TMP)\" appears in the command line, the PostScript code will be supplied via a file, otherwise it is passed as standard input (i.e. as a pipe)."
+msgstr "Die Kommandozeile bei Faxgeräten wird wie folgt verarbeitet: bei jedem gesendeten Fax wird in der Kommandozeile jeweils \"(TMP)\" durch eine temporäre Datei und \"(PHONE)\" durch die Faxnummer ersetzt. Wenn \"(TMP)\" in der Kommandozeile vorkommt wird der PostScript-code in einer Datei übergeben, andernfalls über die Standardeingabe (d.h. als Pipe)."
 
 #: source/rtsetup.src#RID_RTS_OTHERPAGE.RID_RTS_OTHER_LEFTMARGIN_TXT.FixedText.Text
 msgid  "~Left margin"

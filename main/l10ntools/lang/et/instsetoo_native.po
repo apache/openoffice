@@ -229,11 +229,11 @@ msgstr "{[ProductName] }paigaldamine nurjus."
 
 #: inc_openoffice/windows/msi_languages/Error.ulf#OOO_ERROR_25
 msgid  "Error reading from file: [2]. {{ System error [3].}}  Verify that the file exists and that you can access it."
-msgstr ""
+msgstr "Viga faili [2] lugemisel. {{ Süsteemne viga [3].}}  Kontrolli, et fail oleks olemas ja juurdepääs sellele tagatud."
 
 #: inc_openoffice/windows/msi_languages/Error.ulf#OOO_ERROR_26
 msgid  "Cannot create the file [3].  A directory with this name already exists.  Cancel the installation and try installing to a different location."
-msgstr ""
+msgstr "Faili [3] ei saa luua.  Selle nimega kataloog on juba olemas.  Katkesta paigaldamine ja proovi paigaldamiseks kasutada teist asukohta."
 
 #: inc_openoffice/windows/msi_languages/Error.ulf#OOO_ERROR_27
 msgid  "Please insert the disk: [2]"
@@ -241,43 +241,43 @@ msgstr "Palun sisesta andmekandja: [2]"
 
 #: inc_openoffice/windows/msi_languages/Error.ulf#OOO_ERROR_28
 msgid  "The installer has insufficient privileges to access this directory: [2].  The installation cannot continue.  Log on as an administrator or contact your system administrator."
-msgstr ""
+msgstr "Paigaldusprogrammil ei ole piisavalt õigusi kataloogi [2] sisenemiseks.  Paigaldust ei saa jätkata.  Logi sisse kas administraatorina või võta ühendust oma süsteemiadministraatoriga."
 
 #: inc_openoffice/windows/msi_languages/Error.ulf#OOO_ERROR_29
 msgid  "Error writing to file [2].  Verify that you have access to that directory."
-msgstr ""
+msgstr "Viga faili [2] kirjutamisel.  Kontrolli, et sul oleks sellele kataloogile juurdepääs."
 
 #: inc_openoffice/windows/msi_languages/Error.ulf#OOO_ERROR_30
 msgid  "Error reading from file [2].  Verify that the file exists and that you can access it."
-msgstr ""
+msgstr "Viga faili [2] lugemisel.  Kontrolli, et fail on olemas ja juurdepääsetav."
 
 #: inc_openoffice/windows/msi_languages/Error.ulf#OOO_ERROR_31
 msgid  "Another application has exclusive access to the file [2].  Please shut down all other applications, then click Retry."
-msgstr ""
+msgstr "Teine programm on faili [2] lukustanud.  Palun sulge kõik teised rakendused ja klõpsa \"Proovi uuesti\"."
 
 #: inc_openoffice/windows/msi_languages/Error.ulf#OOO_ERROR_32
 msgid  "There is not enough disk space to install the file [2].  Free some disk space and click Retry, or click Cancel to exit."
-msgstr ""
+msgstr "Faili [2] paigaldamiseks ei jätku kettaruumi.  Vabasta kettaruum ja klõpsa \"Proovi uuesti\", programmist väljumiseks klõpsa \"Loobu\"."
 
 #: inc_openoffice/windows/msi_languages/Error.ulf#OOO_ERROR_33
 msgid  "Source file not found: [2].  Verify that the file exists and that you can access it."
-msgstr ""
+msgstr "Lähtefaili ei leitud: [2].  Kontrolli, et fail oleks olemas ja juurdepääsetav."
 
 #: inc_openoffice/windows/msi_languages/Error.ulf#OOO_ERROR_34
 msgid  "Error reading from file: [3]. {{ System error [2].}}  Verify that the file exists and that you can access it."
-msgstr ""
+msgstr "Viga faili lugemisel: [3]. {{ Süsteemne viga [2].}}  Kontrolli, et fail oleks olemas ja juurdepääsetav."
 
 #: inc_openoffice/windows/msi_languages/Error.ulf#OOO_ERROR_35
 msgid  "Error writing to file: [3]. {{ System error [2].}}  Verify that you have access to that directory."
-msgstr ""
+msgstr "Viga faili kirjutamisel: [3]. {{ Süsteemne viga [2].}}  Kontrolli, et sul oleks juurdepääs kataloogile."
 
 #: inc_openoffice/windows/msi_languages/Error.ulf#OOO_ERROR_36
 msgid  "Source file not found{{(cabinet)}}: [2].  Verify that the file exists and that you can access it."
-msgstr ""
+msgstr "Lähtefaili ei leitud{{(cabinet)}}: [2].  Kontrolli, et fail oleks olemas ja juurdepääsetav."
 
 #: inc_openoffice/windows/msi_languages/Error.ulf#OOO_ERROR_37
 msgid  "Cannot create the directory [2].  A file with this name already exists.  Please rename or remove the file and click Retry, or click Cancel to exit."
-msgstr ""
+msgstr "Kataloogi [2] ei saa luua.  Selle nimega fail on juba olemas.  Palun eemalda fail või muuda selle nime ja klõpsa \"Proovi uuesti\" või klõpsa \"Loobu\" paigalduse katkestamiseks."
 
 #: inc_openoffice/windows/msi_languages/Error.ulf#OOO_ERROR_38
 msgid  "The volume [2] is currently unavailable.  Please select another."
@@ -305,7 +305,7 @@ msgstr "Katse luua kataloogi [2] nurjus võrgu vea tõttu."
 
 #: inc_openoffice/windows/msi_languages/Error.ulf#OOO_ERROR_44
 msgid  "A network error occurred while attempting to open the source file cabinet [2]."
-msgstr ""
+msgstr "Lähtefailiks oleva cab-faili [2] avamine nurjus võrgu vea tõttu."
 
 #: inc_openoffice/windows/msi_languages/Error.ulf#OOO_ERROR_45
 msgid  "The specified path is too long [2]."
@@ -341,67 +341,67 @@ msgstr "Sobimatu ketas: [2]"
 
 #: inc_openoffice/windows/msi_languages/Error.ulf#OOO_ERROR_53
 msgid  "Error applying patch to file [2].  It has probably been updated by other means, and can no longer be modified by this patch.  For more information contact your patch vendor.  {{System Error: [3]}}"
-msgstr ""
+msgstr "Viga faili [2] paranduse paigaldamisel.  Võimalik, et faili on uuendatud muul viisil ja seetõttu ei saa seda käesoleva paranduse abil muuta.  Rohkema teabe saamiseks tuleks võtta ühendust paranduse tarnijaga.  {{Süsteemne viga: [3]}}"
 
 #: inc_openoffice/windows/msi_languages/Error.ulf#OOO_ERROR_54
 msgid  "Could not create key [2]. {{ System error [3].}}  Verify that you have sufficient access to that key, or contact your support personnel."
-msgstr ""
+msgstr "Võtit [2] ei suudetud luua. {{ Süsteemne viga [3].}}  Kontrolli, kas sul on võtme loomiseks piisavalt õigusi, või võta ühendust süsteemiadministraatoriga."
 
 #: inc_openoffice/windows/msi_languages/Error.ulf#OOO_ERROR_55
 msgid  "Could not open key: [2]. {{ System error [3].}}  Verify that you have sufficient access to that key, or contact your support personnel."
-msgstr ""
+msgstr "Võtit [2] ei suudetud avada. {{ Süsteemne viga [3].}}  Kontrolli, kas sul on võtme lugemiseks piisavalt õigusi, või võta ühendust süsteemiadministraatoriga."
 
 #: inc_openoffice/windows/msi_languages/Error.ulf#OOO_ERROR_56
 msgid  "Could not delete value [2] from key [3]. {{ System error [4].}}  Verify that you have sufficient access to that key, or contact your support personnel."
-msgstr ""
+msgstr "Võtme [3] väärtust [2] ei suudetud kustutada. {{ Süsteemne viga [4].}}  Kontrolli, kas sul on võtme muutmiseks piisavalt õigusi, või võta ühendust süsteemiadministraatoriga."
 
 #: inc_openoffice/windows/msi_languages/Error.ulf#OOO_ERROR_57
 msgid  "Could not delete key [2]. {{ System error [3].}}  Verify that you have sufficient access to that key, or contact your support personnel."
-msgstr ""
+msgstr "Võtit [2] ei suudetud kustutada. {{ Süsteemne viga [3].}}  Kontrolli, kas sul on võtme kustutamiseks piisavalt õigusi, või võta ühendust süsteemiadministraatoriga."
 
 #: inc_openoffice/windows/msi_languages/Error.ulf#OOO_ERROR_58
 msgid  "Could not read value [2] from key [3]. {{ System error [4].}}  Verify that you have sufficient access to that key, or contact your support personnel."
-msgstr ""
+msgstr "Võtme [3] väärtust [2] ei suudetud lugeda. {{ Süsteemne viga [4].}}  Kontrolli, kas sul on võtme lugemiseks piisavalt õigusi, või võta ühendust süsteemiadministraatoriga."
 
 #: inc_openoffice/windows/msi_languages/Error.ulf#OOO_ERROR_59
 msgid  "Could not write value [2] to key [3]. {{ System error [4].}}  Verify that you have sufficient access to that key, or contact your support personnel."
-msgstr ""
+msgstr "Võtme [3] väärtust [2] ei suudetud salvestada. {{ Süsteemne viga [4].}}  Kontrolli, kas sul on võtme muutmiseks piisavalt õigusi, või võta ühendust süsteemiadministraatoriga."
 
 #: inc_openoffice/windows/msi_languages/Error.ulf#OOO_ERROR_60
 msgid  "Could not get value names for key [2]. {{ System error [3].}}  Verify that you have sufficient access to that key, or contact your support personnel."
-msgstr ""
+msgstr "Võtme [2] väärtuste nimesid ei suudetud lugeda. {{ Süsteemne viga [3].}}  Kontrolli, kas sul on võtme lugemiseks piisavalt õigusi, või võta ühendust süsteemiadministraatoriga."
 
 #: inc_openoffice/windows/msi_languages/Error.ulf#OOO_ERROR_61
 msgid  "Could not get sub key names for key [2]. {{ System error [3].}}  Verify that you have sufficient access to that key, or contact your support personnel."
-msgstr ""
+msgstr "Võtme [2] alamvõtmete nimesid ei suudetud lugeda. {{ Süsteemne viga [3].}}  Kontrolli, kas sul on võtme lugemiseks piisavalt õigusi, või võta ühendust süsteemiadministraatoriga."
 
 #: inc_openoffice/windows/msi_languages/Error.ulf#OOO_ERROR_62
 msgid  "Could not read security information for key [2]. {{ System error [3].}}  Verify that you have sufficient access to that key, or contact your support personnel."
-msgstr ""
+msgstr "Võtme [2] turvalisuse teavet ei suudetud lugeda. {{ Süsteemne viga [3].}}  Kontrolli, kas sul on võtme lugemiseks piisavalt õigusi, või võta ühendust süsteemiadministraatoriga."
 
 #: inc_openoffice/windows/msi_languages/Error.ulf#OOO_ERROR_63
 msgid  "Could not increase the available registry space. [2] KB of free registry space is required for the installation of this application."
-msgstr ""
+msgstr "Saadaolevat registri mahtu ei suudetud suurendada. Selle rakenduse paigaldamiseks on tarvis [2] KB vaba registri mahtu."
 
 #: inc_openoffice/windows/msi_languages/Error.ulf#OOO_ERROR_64
 msgid  "Another installation is in progress. You must complete that installation before continuing this one."
-msgstr ""
+msgstr "Samaaegselt toimub teine paigaldus. See tuleb enne käesoleva paigalduse jätkamist lõpuni viia."
 
 #: inc_openoffice/windows/msi_languages/Error.ulf#OOO_ERROR_65
 msgid  "Error accessing secured data. Please make sure the Windows Installer is configured properly and try the installation again."
-msgstr ""
+msgstr "Viga juurdepääsul turvatud andmetele. Kontrolli, et Windowsi paigaldusprogramm oleks õigesti häälestatud, ja proovi siis uuesti."
 
 #: inc_openoffice/windows/msi_languages/Error.ulf#OOO_ERROR_66
 msgid  "User [2] has previously initiated an installation for product [3].  That user will need to run that installation again before using that product.  Your current installation will now continue."
-msgstr ""
+msgstr "Kasutaja [2] on eelnevalt üritanud alustada toote [3] paigaldamist.  See kasutaja peab enne toote kasutamist paigaldamise uuesti läbi viima.  Sinu käesolevat paigaldust ei jätkata."
 
 #: inc_openoffice/windows/msi_languages/Error.ulf#OOO_ERROR_67
 msgid  "User [2] has previously initiated an installation for product [3].  That user will need to run that installation again before using that product."
-msgstr ""
+msgstr "Kasutaja [2] on eelnevalt üritanud alustada toote [3] paigaldamist.  See kasutaja peab enne toote kasutamist paigaldamise uuesti läbi viima."
 
 #: inc_openoffice/windows/msi_languages/Error.ulf#OOO_ERROR_68
 msgid  "Out of disk space -- Volume: '[2]'; required space: [3] KB; available space: [4] KB.  Free some disk space and retry."
-msgstr ""
+msgstr "Kettaruumi ei jätku -- Andmeruum: '[2]'; vajalik ruum: [3] KB; saadaolev ruum: [4] KB.  Vabasta vajalik kettaruum ja proovi uuesti."
 
 #: inc_openoffice/windows/msi_languages/Error.ulf#OOO_ERROR_69
 msgid  "Are you sure you want to cancel?"
@@ -409,15 +409,15 @@ msgstr "Kas sa tõesti soovid loobuda?"
 
 #: inc_openoffice/windows/msi_languages/Error.ulf#OOO_ERROR_70
 msgid  "The file [2][3] is being held in use {by the following process: Name: [4], ID: [5], Window Title: [6]}.  Close that application and retry."
-msgstr ""
+msgstr "Faili [2][3] kasutatakse {järgeva protsessi poolt: nimi: [4], ID: [5], akna pealkiri: [6]}.  Sulge see rakendus ja proovi uuesti."
 
 #: inc_openoffice/windows/msi_languages/Error.ulf#OOO_ERROR_71
 msgid  "The product [2] is already installed, preventing the installation of this product.  The two products are incompatible."
-msgstr ""
+msgstr "Toode [2], mis takistab käesoleva toote paigaldamist, on juba paigaldatud.  Need kaks toodet ei sobi omavahel."
 
 #: inc_openoffice/windows/msi_languages/Error.ulf#OOO_ERROR_72
 msgid  "Out of disk space -- Volume: [2]; required space: [3] KB; available space: [4] KB.  If rollback is disabled, enough space is available. Click Cancel to quit, Retry to check available disk space again, or Ignore to continue without rollback."
-msgstr ""
+msgstr "Kettaruum on otsas -- Andmeruum: [2]; vajalik ruum: [3] KB; saadaolev ruum: [4] KB.  Kui taastamisvõimalus oleks välja lülitatud, siis ruumi jätkuks. Klõpsa \"Loobu\" lõpetamiseks, \"Proovi uuesti\" kettaruumi veelkordseks kontrollimiseks või \"Ignoreeri\" jätkamiseks ilma taastamisvõimaluseta."
 
 #: inc_openoffice/windows/msi_languages/Error.ulf#OOO_ERROR_73
 msgid  "Could not access network location [2]."
@@ -425,11 +425,11 @@ msgstr "Võrgukoht [2] ei ole ligipääsetav."
 
 #: inc_openoffice/windows/msi_languages/Error.ulf#OOO_ERROR_74
 msgid  "The following applications should be closed before continuing the installation:"
-msgstr ""
+msgstr "Enne paigaldamise jätkamist tuleb sulgeda järgnevad rakendused:"
 
 #: inc_openoffice/windows/msi_languages/Error.ulf#OOO_ERROR_75
 msgid  "Could not find any previously installed compliant products on the machine for installing this product."
-msgstr ""
+msgstr "Selle toote paigaldamiseks ei leitud ühtegi varem paigaldatud nõutavat toodet."
 
 #: inc_openoffice/windows/msi_languages/Error.ulf#OOO_ERROR_76
 msgid  "The key [2] is not valid.  Verify that you entered the correct key."
@@ -437,23 +437,23 @@ msgstr "Võti [2] ei ole sobiv.  Kontrolli, kas sa sisestasid võtme õigesti."
 
 #: inc_openoffice/windows/msi_languages/Error.ulf#OOO_ERROR_77
 msgid  "The installer must restart your system before configuration of [2] can continue.  Click Yes to restart now or No if you plan to restart later."
-msgstr ""
+msgstr "Paigaldusprogramm peab enne, kui [2] häälestamist saab jätkata, masina taaskäivitama.  Koheseks taaskäivitamiseks klõpsa \"Jah\", hilisemaks taaskäivitamiseks \"Ei\"."
 
 #: inc_openoffice/windows/msi_languages/Error.ulf#OOO_ERROR_78
 msgid  "You must restart your system for the configuration changes made to [2] to take effect. Click Yes to restart now or No if you plan to restart later."
-msgstr ""
+msgstr "Muudatuste jõustumiseks [2] häälestuses tuleb masin taaskäivitada.  Koheseks taaskäivitamiseks klõpsa \"Jah\", hilisemaks taaskäivitamiseks \"Ei\"."
 
 #: inc_openoffice/windows/msi_languages/Error.ulf#OOO_ERROR_79
 msgid  "An installation for [2] is currently suspended.  You must undo the changes made by that installation to continue.  Do you want to undo those changes?"
-msgstr ""
+msgstr "Üks [2] paigaldamine on parasjagu peatatud.  Jätkamiseks tuleb selle paigaldamise poolt tehtud muudatused tühistada.  Soovid sa neid muudatusi tühistada?"
 
 #: inc_openoffice/windows/msi_languages/Error.ulf#OOO_ERROR_80
 msgid  "A previous installation for this product is in progress.  You must undo the changes made by that installation to continue.  Do you want to undo those changes?"
-msgstr ""
+msgstr "Toote eelmine paigaldamine käib parajasti.  Jätkamiseks tuleb selle paigaldamise poolt tehtud muudatused tühistada.  Soovid sa neid muudatusi tühistada?"
 
 #: inc_openoffice/windows/msi_languages/Error.ulf#OOO_ERROR_81
 msgid  "No valid source could be found for product [2].  The Windows Installer cannot continue."
-msgstr ""
+msgstr "Toote [2] jaoks ei leitud ühtegi sobivat allikat.  Windows'i paigaldusprogramm ei saa jätkata."
 
 #: inc_openoffice/windows/msi_languages/Error.ulf#OOO_ERROR_82
 msgid  "Installation operation completed successfully."
@@ -469,23 +469,23 @@ msgstr "Toode: [2] -- [3]"
 
 #: inc_openoffice/windows/msi_languages/Error.ulf#OOO_ERROR_85
 msgid  "You may either restore your computer to its previous state or continue the installation later. Would you like to restore?"
-msgstr ""
+msgstr "Sa võid taastada oma arvuti esialgse olukorra või jätkata paigaldust hiljem. Soovid sa taastada esialgset olukorda?"
 
 #: inc_openoffice/windows/msi_languages/Error.ulf#OOO_ERROR_86
 msgid  "An error occurred while writing installation information to disk.  Check to make sure enough disk space is available, and click Retry, or Cancel to end the installation."
-msgstr ""
+msgstr "Paigaldusinfo kirjutamisel kettale tekkis viga.  Kontrolli, kas saadaolev kettaruum on piisav, ja klõpsa \"Proovi uuesti\" jätkamiseks või \"Loobu\" paigaldusest loobumiseks."
 
 #: inc_openoffice/windows/msi_languages/Error.ulf#OOO_ERROR_87
 msgid  "One or more of the files required to restore your computer to its previous state could not be found.  Restoration will not be possible."
-msgstr ""
+msgstr "Üht või mitut faili, mida vajatakse arvuti esialgse seisundi taastamiseks, ei leitud. Taastamine ei ole võimalik."
 
 #: inc_openoffice/windows/msi_languages/Error.ulf#OOO_ERROR_88
 msgid  "[2] cannot install one of its required products. Contact your technical support group.  {{System Error: [3].}}"
-msgstr ""
+msgstr "[2] ei suuda paigaldada üht vajalikest toodetest. Võta ühendust tehnilise toega.  {{Süsteemne viga: [3].}}"
 
 #: inc_openoffice/windows/msi_languages/Error.ulf#OOO_ERROR_89
 msgid  "The older version of [2] cannot be removed.  Contact your technical support group.  {{System Error [3].}}"
-msgstr ""
+msgstr "[2] vanemat versiooni ei suudetud eemaldada.  Võta ühendust tehnilise toega.  {{Süsteemne viga [3].}}"
 
 #: inc_openoffice/windows/msi_languages/Error.ulf#OOO_ERROR_90
 msgid  "The path [2] is not valid.  Please specify a valid path."
@@ -497,15 +497,15 @@ msgstr "Mälu ei jätku. Sulge enne jätkamist mõni töötav rakendus."
 
 #: inc_openoffice/windows/msi_languages/Error.ulf#OOO_ERROR_92
 msgid  "There is no disk in drive [2]. Please insert one and click Retry, or click Cancel to go back to the previously selected volume."
-msgstr ""
+msgstr "Seadmes [2] pole ketast. Palun sisesta see ja klõpsa \"Proovi uuesti\" või klõpsa \"Loobu\", pöördumaks tagasi eelnevalt valitud andmeruumi juurde."
 
 #: inc_openoffice/windows/msi_languages/Error.ulf#OOO_ERROR_93
 msgid  "There is no disk in drive [2]. Please insert one and click Retry, or click Cancel to return to the browse dialog and select a different volume."
-msgstr ""
+msgstr "Seadmes [2] pole ketast. Palun sisesta see ja klõpsa \"Proovi uuesti\" või klõpsa \"Loobu\", pöördumaks tagasi lehitsemise dialoogi juurde, ja vali mõni muu andmeruum."
 
 #: inc_openoffice/windows/msi_languages/Error.ulf#OOO_ERROR_94
 msgid  "The folder [2] does not exist.  Please enter a path to an existing folder."
-msgstr ""
+msgstr "Kausta [2] pole olemas.  Palun sisesta eksisteeriva kausta asukoht."
 
 #: inc_openoffice/windows/msi_languages/Error.ulf#OOO_ERROR_95
 msgid  "You have insufficient privileges to read this folder."
@@ -513,7 +513,7 @@ msgstr "Sul ei ole selle kausta lugemiseks piisavalt õigusi."
 
 #: inc_openoffice/windows/msi_languages/Error.ulf#OOO_ERROR_96
 msgid  "A valid destination folder for the installation could not be determined."
-msgstr ""
+msgstr "Sobivat paigaldamise sihtkausta ei suudetud tuvastada."
 
 #: inc_openoffice/windows/msi_languages/Error.ulf#OOO_ERROR_97
 msgid  "Error attempting to read from the source installation database: [2]."
@@ -521,115 +521,115 @@ msgstr "Viga katsel lugeda paigaldusallika andmebaasist: [2]."
 
 #: inc_openoffice/windows/msi_languages/Error.ulf#OOO_ERROR_98
 msgid  "Scheduling reboot operation: Renaming file [2] to [3]. Must reboot to complete operation."
-msgstr ""
+msgstr "Tegevus pannakse järjekorda: faili [2] ümbernimetamine [3]-ks. Tegevuse teostamiseks on vaja süsteem taaskäivitada."
 
 #: inc_openoffice/windows/msi_languages/Error.ulf#OOO_ERROR_99
 msgid  "Scheduling reboot operation: Deleting file [2]. Must reboot to complete operation."
-msgstr ""
+msgstr "Tegevus pannakse järjekorda: faili [2] kustutamine. Tegevuse teostamiseks on vaja süsteem taaskäivitada."
 
 #: inc_openoffice/windows/msi_languages/Error.ulf#OOO_ERROR_100
 msgid  "Module [2] failed to register.  HRESULT [3].  Contact your support personnel."
-msgstr ""
+msgstr "Mooduli [2] registreerimine nurjus.  HRESULT [3].  Võta ühendust tehnilise toega."
 
 #: inc_openoffice/windows/msi_languages/Error.ulf#OOO_ERROR_101
 msgid  "Module [2] failed to unregister.  HRESULT [3].  Contact your support personnel."
-msgstr ""
+msgstr "Mooduli [2] eemaldamine registrist nurjus.  HRESULT [3].  Võta ühendust tehnilise toega."
 
 #: inc_openoffice/windows/msi_languages/Error.ulf#OOO_ERROR_102
 msgid  "Failed to cache package [2]. Error: [3]. Contact your support personnel."
-msgstr ""
+msgstr "Paki [2] puhverdamine nurjus. Viga: [3]. Võta ühendust tehnilise toega."
 
 #: inc_openoffice/windows/msi_languages/Error.ulf#OOO_ERROR_103
 msgid  "Could not register font [2].  Verify that you have sufficient permissions to install fonts, and that the system supports this font."
-msgstr ""
+msgstr "Fonti [2] ei suudetud registreerida.  Kontrolli, kas sul on piisavalt õigusi fontide paigaldamiseks ja kas süsteem toetab seda fonti."
 
 #: inc_openoffice/windows/msi_languages/Error.ulf#OOO_ERROR_104
 msgid  "Could not unregister font [2]. Verify that you have sufficient permissions to remove fonts."
-msgstr ""
+msgstr "Fonti [2] ei suudetud registrist eemaldada.  Kontrolli, kas sul on piisavalt õigusi fontide eemaldamiseks."
 
 #: inc_openoffice/windows/msi_languages/Error.ulf#OOO_ERROR_105
 msgid  "Could not create shortcut [2]. Verify that the destination folder exists and that you can access it."
-msgstr ""
+msgstr "Otseteed [2] ei suudetud luua. Kontrolli, kas sihtkaust on olemas ja kas sul on sellele juurdepääs."
 
 #: inc_openoffice/windows/msi_languages/Error.ulf#OOO_ERROR_106
 msgid  "Could not remove shortcut [2]. Verify that the shortcut file exists and that you can access it."
-msgstr ""
+msgstr "Otseteed [2] ei suudetud eemaldada. Kontrolli, kas otsetee on olemas ja kas sul on sellele juurdepääs."
 
 #: inc_openoffice/windows/msi_languages/Error.ulf#OOO_ERROR_107
 msgid  "Could not register type library for file [2].  Contact your support personnel."
-msgstr ""
+msgstr "Faili [2] tüübi teeki ei suudetud registreerida.  Võta ühendust tehnilise toega."
 
 #: inc_openoffice/windows/msi_languages/Error.ulf#OOO_ERROR_108
 msgid  "Could not unregister type library for file [2].  Contact your support personnel."
-msgstr ""
+msgstr "Faili [2] tüübi teeki ei suudetud registrist eemaldada.  Võta ühendust tehnilise toega."
 
 #: inc_openoffice/windows/msi_languages/Error.ulf#OOO_ERROR_109
 msgid  "Could not update the INI file [2][3].  Verify that the file exists and that you can access it."
-msgstr ""
+msgstr "INI-faili [2][3] ei suudetud muuta.  Kontrolli, kas fail on olemas ja kas sul on sellele juurdepääs."
 
 #: inc_openoffice/windows/msi_languages/Error.ulf#OOO_ERROR_110
 msgid  "Could not schedule file [2] to replace file [3] on reboot.  Verify that you have write permissions to file [3]."
-msgstr ""
+msgstr "Faili [2] asendamist failiga [3] ei suudetud taaskäivitamise toimingute hulka lisada.  Kontrolli, kas sul on faili [3] kirjutamisõigus."
 
 #: inc_openoffice/windows/msi_languages/Error.ulf#OOO_ERROR_111
 msgid  "Error removing ODBC driver manager, ODBC error [2]: [3]. Contact your support personnel."
-msgstr ""
+msgstr "Viga ODBC draiverihalduri eemaldamisel, ODBC viga [2]: [3]. Võta ühendust tehnilise toega."
 
 #: inc_openoffice/windows/msi_languages/Error.ulf#OOO_ERROR_112
 msgid  "Error installing ODBC driver manager, ODBC error [2]: [3]. Contact your support personnel."
-msgstr ""
+msgstr "Viga ODBC draiverihalduri paigaldamisel, ODBC viga [2]: [3]. Võta ühendust tehnilise toega."
 
 #: inc_openoffice/windows/msi_languages/Error.ulf#OOO_ERROR_113
 msgid  "Error removing ODBC driver [4], ODBC error [2]: [3]. Verify that you have sufficient privileges to remove ODBC drivers."
-msgstr ""
+msgstr "Viga ODBC draiveri [4] eemaldamisel, ODBC viga [2]: [3]. Kontrolli, kas sul on piisavalt õigusi ODBC draiverite eemaldamiseks."
 
 #: inc_openoffice/windows/msi_languages/Error.ulf#OOO_ERROR_114
 msgid  "Error installing ODBC driver [4], ODBC error [2]: [3]. Verify that the file [4] exists and that you can access it."
-msgstr ""
+msgstr "Viga ODBC draiveri [4] paigaldamisel, ODBC viga [2]: [3]. Kontrolli, kas fail [4] on olemas ja kas sul on sellele juurdepääs."
 
 #: inc_openoffice/windows/msi_languages/Error.ulf#OOO_ERROR_115
 msgid  "Error configuring ODBC data source [4], ODBC error [2]: [3]. Verify that the file [4] exists and that you can access it."
-msgstr ""
+msgstr "Viga ODBC andmeallika [4] häälestamisel, ODBC viga [2]: [3]. Kontrolli, kas fail [4] on olemas ja kas sul on sellele juurdepääs."
 
 #: inc_openoffice/windows/msi_languages/Error.ulf#OOO_ERROR_116
 msgid  "Service [2] ([3]) failed to start.  Verify that you have sufficient privileges to start system services."
-msgstr ""
+msgstr "Teenust [2] ([3]) ei suudetud käivitada.  Kontrolli, kas sul on piisavalt õigusi süsteemsete teenuste käivitamiseks."
 
 #: inc_openoffice/windows/msi_languages/Error.ulf#OOO_ERROR_117
 msgid  "Service [2] ([3]) could not be stopped.  Verify that you have sufficient privileges to stop system services."
-msgstr ""
+msgstr "Teenust [2] ([3]) ei suudetud peatada.  Kontrolli, kas sul on piisavalt õigusi süsteemsete teenuste peatamiseks."
 
 #: inc_openoffice/windows/msi_languages/Error.ulf#OOO_ERROR_118
 msgid  "Service [2] ([3]) could not be deleted.  Verify that you have sufficient privileges to remove system services."
-msgstr ""
+msgstr "Teenust [2] ([3]) ei suudetud eemaldada.  Kontrolli, kas sul on piisavalt õigusi süsteemsete teenuste eemaldamiseks."
 
 #: inc_openoffice/windows/msi_languages/Error.ulf#OOO_ERROR_119
 msgid  "Service [2] ([3]) could not be installed.  Verify that you have sufficient privileges to install system services."
-msgstr ""
+msgstr "Teenust [2] ([3]) ei suudetud paigaldada.  Kontrolli, kas sul on piisavalt õigusi süsteemsete teenuste paigaldamiseks."
 
 #: inc_openoffice/windows/msi_languages/Error.ulf#OOO_ERROR_120
 msgid  "Could not update environment variable [2].  Verify that you have sufficient privileges to modify environment variables."
-msgstr ""
+msgstr "Süsteemset muutujat [2] ei suudetud uuendada.  Kontrolli, kas sul on piisavalt õigusi süsteemsete muutujate redigeerimiseks."
 
 #: inc_openoffice/windows/msi_languages/Error.ulf#OOO_ERROR_121
 msgid  "You do not have sufficient privileges to complete this installation for all users of the machine.  Log on as an administrator and then retry this installation."
-msgstr ""
+msgstr "Sul ei ole piisavalt õigusi, et viia läbi toote paigaldamine kõigi selle masina kasutajate jaoks.  Logi sisse administraatorina ja proovi uuesti."
 
 #: inc_openoffice/windows/msi_languages/Error.ulf#OOO_ERROR_122
 msgid  "Could not set file security for file [3]. Error: [2].  Verify that you have sufficient privileges to modify the security permissions for this file."
-msgstr ""
+msgstr "Viga faili [3] turvasätete määramisel. Viga: [2].  Kontrolli, kas sul on piisavalt õigusi faili turvasätete muutmiseks."
 
 #: inc_openoffice/windows/msi_languages/Error.ulf#OOO_ERROR_123
 msgid  "Component Services (COM+ 1.0) are not installed on this computer.  This installation requires Component Services in order to complete successfully.  Component Services are available on Windows 2000."
-msgstr ""
+msgstr "Komponenditeenused (COM+ 1.0) ei ole arvutisse paigaldatud.  Paigaldusprogramm vajab töö edukaks kulgemiseks komponenditeenuseid.  Komponenditeenused on saadaval koos Windows 2000-ga."
 
 #: inc_openoffice/windows/msi_languages/Error.ulf#OOO_ERROR_124
 msgid  "Error registering COM+ application.  Contact your support personnel for more information."
-msgstr ""
+msgstr "Viga COM+ rakenduse registreerimisel.  Rohkema teabe saamiseks võta ühendust tehnilise toega"
 
 #: inc_openoffice/windows/msi_languages/Error.ulf#OOO_ERROR_125
 msgid  "Error unregistering COM+ application.  Contact your support personnel for more information."
-msgstr ""
+msgstr "Viga COM+ rakenduse registrist eemaldamisel.  Rohkema teabe saamiseks võta ühendust tehnilise toega"
 
 #: inc_openoffice/windows/msi_languages/Error.ulf#OOO_ERROR_126
 msgid  "The description for service '[2]' ([3]) could not be changed."
@@ -637,23 +637,23 @@ msgstr "Teenuse '[2]' ([3]) kirjeldust ei suudetud muuta."
 
 #: inc_openoffice/windows/msi_languages/Error.ulf#OOO_ERROR_127
 msgid  "The Windows Installer service cannot update the system file [2] because the file is protected by Windows.  You may need to update your operating system for this program to work correctly. {{Package version: [3], OS Protected version: [4]}}"
-msgstr ""
+msgstr "Windows'i paigaldusteenus ei suutnud muuta süsteemifaili [2], sest fail on Windows'i poolt kaitstud.  Võimalik, et programmi häireteta tööks on vaja uuendada operatsioonisüsteemi. {{Paketi versioon: [3], OS kaitstud versioon: [4]}}"
 
 #: inc_openoffice/windows/msi_languages/Error.ulf#OOO_ERROR_128
 msgid  "The Windows Installer service cannot update the protected Windows file [2]. {{Package version: [3], OS Protected version: [4], SFP Error: [5]}}"
-msgstr ""
+msgstr "Windows'i paigaldusteenus ei suutnud muuta kaitstud Windows'i faili [2]. {{Paketi versioon: [3], OS kaitstud versioon: [4], SFP viga: [5]}}"
 
 #: inc_openoffice/windows/msi_languages/Error.ulf#OOO_ERROR_129
 msgid  "This setup requires Internet Information Server 4.0 or higher for configuring IIS Virtual Roots. Please make sure that you have IIS 4.0 or higher."
-msgstr ""
+msgstr "Paigaldusprogramm vajab IIS virtuaalsete juurkataloogide häälestamiseks Internet Information Server 4.0 või uuemat. Kontrolli palun, kas sul on IIS 4.0 või uuem."
 
 #: inc_openoffice/windows/msi_languages/Error.ulf#OOO_ERROR_130
 msgid  "This setup requires Administrator privileges for configuring IIS Virtual Roots."
-msgstr ""
+msgstr "Paigaldusprogramm vajab IIS virtuaalsete juurkataloogide häälestamiseks administraatori õigusi."
 
 #: inc_openoffice/windows/msi_languages/CustomAc.ulf#OOO_CUSTOMACTION_1
 msgid  "A newer version of [ProductName] was found. To install an older version, the newer version needs to be removed first."
-msgstr ""
+msgstr "Leiti uuem [ProductName] versioon. Vanema versiooni paigaldamiseks tuleb uuem esmalt eemaldada."
 
 #: inc_openoffice/windows/msi_languages/CustomAc.ulf#OOO_CUSTOMACTION_2
 msgid  "The same version of this product is already installed."
@@ -661,11 +661,11 @@ msgstr "Toote sama versioon on juba paigaldatud."
 
 #: inc_openoffice/windows/msi_languages/CustomAc.ulf#OOO_CUSTOMACTION_3
 msgid  "An older version of [ProductName] was found. To install a newer version, the older version needs to be removed first."
-msgstr ""
+msgstr "Leiti vanem [ProductName] versioon. Uuema versiooni paigaldamiseks tuleb vanem esmalt eemaldada."
 
 #: inc_openoffice/windows/msi_languages/CustomAc.ulf#OOO_CUSTOMACTION_4
 msgid  "Please exit [DEFINEDPRODUCT] [DEFINEDVERSION] and the [DEFINEDPRODUCT] [DEFINEDVERSION] Quickstarter before you continue. If you are using a multi-user system, also make sure that no other user has [DEFINEDPRODUCT] [DEFINEDVERSION] open."
-msgstr ""
+msgstr "Palun sulge enne jätkamist [DEFINEDPRODUCT] [DEFINEDVERSION] ja [DEFINEDPRODUCT] [DEFINEDVERSION] kiirkäivitaja. Kui kasutad mitme kasutaja süsteemi, kontrolli, et teistel kasutajatel poleks [DEFINEDPRODUCT] [DEFINEDVERSION] avatud."
 
 #: inc_openoffice/windows/msi_languages/UIText.ulf#OOO_UITEXT_1
 msgid  "bytes"
@@ -693,15 +693,15 @@ msgstr "Komponent paigaldatakse nõudmisel."
 
 #: inc_openoffice/windows/msi_languages/UIText.ulf#OOO_UITEXT_7
 msgid  "This feature, and all subfeatures, will be installed to run from the CD."
-msgstr ""
+msgstr "Komponenti koos alamkomponentidega saab käivitada CD-lt."
 
 #: inc_openoffice/windows/msi_languages/UIText.ulf#OOO_UITEXT_8
 msgid  "This feature, and all subfeatures, will be installed on local hard drive."
-msgstr ""
+msgstr "Komponent koos alamkomponentidega paigaldatakse lokaalsele kõvakettale."
 
 #: inc_openoffice/windows/msi_languages/UIText.ulf#OOO_UITEXT_9
 msgid  "This feature, and all subfeatures, will be installed to run from the network."
-msgstr ""
+msgstr "Komponent koos alamkomponentidega käivitatakse võrgust."
 
 #: inc_openoffice/windows/msi_languages/UIText.ulf#OOO_UITEXT_10
 msgid  "This feature will be installed to run from CD."
@@ -761,11 +761,11 @@ msgstr "Komponent on käivitatav võrgust."
 
 #: inc_openoffice/windows/msi_languages/UIText.ulf#OOO_UITEXT_24
 msgid  "This feature will be uninstalled completely, and you won't be able to run it from CD."
-msgstr ""
+msgstr "Komponent eemaldatakse täielikult ja seda ei saa ka CD-lt käivitada."
 
 #: inc_openoffice/windows/msi_languages/UIText.ulf#OOO_UITEXT_25
 msgid  "This feature was run from the CD but will be set to be installed when required."
-msgstr ""
+msgstr "Komponent oli käivitatav CD-lt, kuid nüüd paigaldatakse ta esimesel nõudmisel."
 
 #: inc_openoffice/windows/msi_languages/UIText.ulf#OOO_UITEXT_26
 msgid  "This feature will continue to be run from the CD"
@@ -773,7 +773,7 @@ msgstr "Kompenent on jätkuvalt käivitatav CD-lt."
 
 #: inc_openoffice/windows/msi_languages/UIText.ulf#OOO_UITEXT_27
 msgid  "This feature was run from the CD but will be installed on the local hard drive."
-msgstr ""
+msgstr "Komponent oli käivitatav Cd-lt, kuid nüüd paigaldatakse ta lokaalsele kõvakettale."
 
 #: inc_openoffice/windows/msi_languages/UIText.ulf#OOO_UITEXT_28
 msgid  "This feature frees up [1] on your hard drive."
@@ -793,11 +793,11 @@ msgstr "Komponent eemaldatakse täielikult."
 
 #: inc_openoffice/windows/msi_languages/UIText.ulf#OOO_UITEXT_32
 msgid  "This feature will be removed from your local hard drive but will be set to be installed when required."
-msgstr ""
+msgstr "Komponent eemaldatakse lokaalselt kõvakettalt, kuid ta paigaldatakse uuesti esimesel nõudmisel."
 
 #: inc_openoffice/windows/msi_languages/UIText.ulf#OOO_UITEXT_33
 msgid  "This feature will be removed from your local hard drive but will still be available to run from CD."
-msgstr ""
+msgstr "Komponent eemaldatakse lokaalselt kõvakettalt, kuid ta jääb käivitatavaks CD-lt."
 
 #: inc_openoffice/windows/msi_languages/UIText.ulf#OOO_UITEXT_34
 msgid  "This feature will remain on your local hard drive."
@@ -805,19 +805,19 @@ msgstr "Komponent jääb lokaalsele kõvakettale."
 
 #: inc_openoffice/windows/msi_languages/UIText.ulf#OOO_UITEXT_35
 msgid  "This feature will be removed from your local hard drive, but will be still available to run from the network."
-msgstr ""
+msgstr "Komponent eemaldatakse lokaalselt kõvakettalt, kuid ta jääb käivitatavaks võrgust."
 
 #: inc_openoffice/windows/msi_languages/UIText.ulf#OOO_UITEXT_36
 msgid  "This feature will be uninstalled completely, and you won't be able to run it from the network."
-msgstr ""
+msgstr "Komponent eemaldatakse täielikult ja teda ei saa ka võrgust käivitada."
 
 #: inc_openoffice/windows/msi_languages/UIText.ulf#OOO_UITEXT_37
 msgid  "This feature was run from the network but will be installed when required."
-msgstr ""
+msgstr "Komponent oli käivitatav võrgust, kuid nüüd paigaldatakse ta esimesel nõudmisel."
 
 #: inc_openoffice/windows/msi_languages/UIText.ulf#OOO_UITEXT_38
 msgid  "This feature was run from the network but will be installed on the local hard drive."
-msgstr ""
+msgstr "Komponent oli käivitatav võrgust, kuid nüüd paigaldatakse ta lokaalsele kõvakettale."
 
 #: inc_openoffice/windows/msi_languages/UIText.ulf#OOO_UITEXT_39
 msgid  "This feature will continue to be run from the network"
@@ -825,19 +825,19 @@ msgstr "Komponet on jätkuvalt käivitatav võrgust."
 
 #: inc_openoffice/windows/msi_languages/UIText.ulf#OOO_UITEXT_40
 msgid  "This feature frees up [1] on your hard drive. It has [2] of [3] subfeatures selected. The subfeatures free up [4] on your hard drive."
-msgstr ""
+msgstr "See komponent vabastab [1] kettaruumi. Valitud on [2] alamkomponenti [3]-st. Need alamkomponendid vabastavad [4] kettaruumi."
 
 #: inc_openoffice/windows/msi_languages/UIText.ulf#OOO_UITEXT_41
 msgid  "This feature frees up [1] on your hard drive. It has [2] of [3] subfeatures selected. The subfeatures require [4] on your hard drive."
-msgstr ""
+msgstr "See komponent vabastab [1] kettaruumi. Valitud on [2] alamkomponenti [3]-st. Need alamkomponendid vajavad [4] kettaruumi."
 
 #: inc_openoffice/windows/msi_languages/UIText.ulf#OOO_UITEXT_42
 msgid  "This feature requires [1] on your hard drive. It has [2] of [3] subfeatures selected. The subfeatures free up [4] on your hard drive."
-msgstr ""
+msgstr "See komponent vajab [1] kettaruumi. Valitud on [2] alamkomponenti [3]-st. Need alamkomponendid vabastavad [4] kettaruumi."
 
 #: inc_openoffice/windows/msi_languages/UIText.ulf#OOO_UITEXT_43
 msgid  "This feature requires [1] on your hard drive. It has [2] of [3] subfeatures selected. The subfeatures require [4] on your hard drive."
-msgstr ""
+msgstr "See komponent vajab [1] kettaruumi. Valitud on [2] alamkomponenti [3]-st. Need alamkomponendid vajavad [4] kettaruumi."
 
 #: inc_openoffice/windows/msi_languages/UIText.ulf#OOO_UITEXT_44
 msgid  "Time remaining: {[1] min }[2] sec"
@@ -1361,7 +1361,7 @@ msgstr "Võti: [1], nimi: [2], väärtus: [3]"
 
 #: inc_openoffice/windows/msi_languages/LaunchCo.ulf#OOO_LAUNCH_1
 msgid  "The Installation Wizard cannot be run properly because you are logged in as a user without sufficient administrator rights for this system."
-msgstr ""
+msgstr "Paigaldusnõustaja ei saa täita kõiki oma funktsioone, sest sa oled sisse loginud kasutajana, kes ei oma piisavaid õigusi selle süsteemi haldamiseks."
 
 #: inc_openoffice/windows/msi_languages/LaunchCo.ulf#OOO_LAUNCH_2
 msgid  "Please use the file setup.exe to start the installation."
@@ -1421,7 +1421,7 @@ msgstr "Lahtipakkimine: "
 
 #: inc_openoffice/windows/msi_languages/Nsis.ulf#MUI_TEXT_ABORTWARNING
 msgid  "Are you sure you want to quit the %PRODUCTNAME %PRODUCTVERSION Installation Preparation"
-msgstr ""
+msgstr "Kas sa tõesti soovid %PRODUCTNAME %PRODUCTVERSION paigaldusprogrammi käivitamist katkestada?"
 
 #: inc_openoffice/windows/msi_languages/SIS.ulf#OOO_SIS_TITLE
 msgid  "Installation database"
@@ -1497,7 +1497,7 @@ msgstr "Määra toote serveripildi asukoht võrgus."
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_20
 msgid  "Enter the network location or click Change to browse to a location.  Click Install to create a server image of [ProductName] at the specified network location or click Cancel to exit the wizard."
-msgstr ""
+msgstr "Sisesta asukoht võrgus või klõpsa asukoha määramiseks nupul \"Muuda\". Pärast klõpsamist nupul \"Paigalda\" luuakse määratud asukohta [ProductName] serveripilt, klõps nupul \"Loobu\" sulgeb nõustaja."
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_21
 msgid  "{&MSSansBold8}Network Location"
@@ -1529,7 +1529,7 @@ msgstr "{&TahomaBold10}Edukat [ProductName] paigaldusnõustaja kasutamist"
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_28
 msgid  "The Installation Wizard will create a server image of [ProductName] at a specified network location. To continue, click Next."
-msgstr ""
+msgstr "Paigaldusnõustaja loob määratud asukohta võrgus [ProductName] serveripildi. Jätkamiseks klõpsa \"Edasi\"."
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_29
 msgid  "&No"
@@ -1609,7 +1609,7 @@ msgstr "Vali programmi komponendid, mida soovid paigaldada."
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_53
 msgid  "Click on an icon in the list below to change how a feature is installed."
-msgstr ""
+msgstr "Komponendi paigaldusviisi muutmiseks klõpsa vastaval ikoonil loendis."
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_54
 msgid  "{&MSSansBold8}Custom Setup"
@@ -1645,7 +1645,7 @@ msgstr "Komponendi suurus"
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_64
 msgid  "Custom Setup allows you to selectively install program features."
-msgstr ""
+msgstr "Kohandatud paigalduse puhul saab valida, millised komponendid paigaldatakse."
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_65
 msgid  "{&MSSansBold8}Custom Setup Tips"
@@ -1657,7 +1657,7 @@ msgstr "Ei paigaldata."
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_67
 msgid  "Will be installed on first use. (Available only if the feature supports this option.)"
-msgstr ""
+msgstr "Paigaldatakse esmakordsel kasutamisel (komponent peab seda sätet toetama)."
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_68
 msgid  "This install state means the feature..."
@@ -1669,11 +1669,11 @@ msgstr "Paigaldatakse tervikuna kohalikule kõvakettale."
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_70
 msgid  "The icon next to the feature name indicates the install state of the feature. Click the icon to drop down the install state menu for each feature."
-msgstr ""
+msgstr "Ikoon komponendi nime järel näitab komponendi paigaldusviisi. Klõps ikoonil avab komponendi võimalike paigaldusviiside ripploendi."
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_71
 msgid  "Will be installed to run from the network. (Available only if the feature supports this option.)"
-msgstr ""
+msgstr "Paigaldatakse käivitamiseks võrgust. (Saadaval, kui komponent seda toetab.)"
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_72
 msgid  "OK"
@@ -1681,7 +1681,7 @@ msgstr "Sobib"
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_73
 msgid  "Will have some subfeatures installed to the local hard drive. (Available only if the feature has subfeatures.)"
-msgstr ""
+msgstr "Mõned alamkomponendid paigaldatakse kohalikule kõvakettale. (Saadaval, kui komponent sisaldab alamkomponente.)"
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_74
 msgid  "< &Back"
@@ -1697,7 +1697,7 @@ msgstr "&Muuda..."
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_79
 msgid  "Click Next to install to this folder, or click Change to install to a different folder."
-msgstr ""
+msgstr "Klõpsa \"Edasi\" paigaldamiseks sellesse kausta või \"Muuda\" paigaldamiseks mõnda teise kausta."
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_80
 msgid  "{&MSSansBold8}Database Folder"
@@ -1729,7 +1729,7 @@ msgstr "&Muuda..."
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_89
 msgid  "Click Next to install to this folder, or click Change to install to a different folder."
-msgstr ""
+msgstr "Klõpsa \"Edasi\" paigaldamiseks sellesse kausta või \"Muuda\" paigaldamiseks mõnda teise kausta."
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_90
 msgid  "{&MSSansBold8}Destination Folder"
@@ -1753,7 +1753,7 @@ msgstr "Valitud komponentide paigaldamiseks vajalik kettaruum."
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_97
 msgid  "The highlighted volumes do not have enough disk space available for the currently selected features. You can remove files from the highlighted volumes, choose to install less features onto local drives, or select different destination drives."
-msgstr ""
+msgstr "Esiletõstetud andmeruumides ei ole piisavalt ruumi valitud komponentide paigaldamiseks. Probleemi lahendamiseks võib esiletõstetud andmeruumidest eemaldada faile, vähendada kohalikele ketastele paigaldatavate komponentide valikut või valida mõni muu sihtketas."
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_98
 msgid  "{&MSSansBold8}Disk Space Requirements"
@@ -1769,7 +1769,7 @@ msgstr "Mõned uuendamist vajavad failid on parajasti kasutuses."
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_104
 msgid  "The following applications are using files that need to be updated by this setup. Close these applications and click Retry to continue."
-msgstr ""
+msgstr "Järgnevad rakendused kasutavad faile, mida on vaja paigalduse käigus uuendada. Sulge need rakendused ja klõpsa jätkamiseks \"Proovi uuesti\"."
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_105
 msgid  "{&MSSansBold8}Files in Use"
@@ -1841,7 +1841,7 @@ msgstr "{&TahomaBold10}Edukat [ProductName] paigaldusnõustaja kasutamist"
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_127
 msgid  "The Installation Wizard will install [ProductName] on your computer. To continue, click Next."
-msgstr ""
+msgstr "Paigaldusnõustaja paigaldab [ProductName] sinu arvutisse. Jätkamiseks klõpsa \"Edasi\"."
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_128
 msgid  "< &Back"
@@ -1885,11 +1885,11 @@ msgstr "&Edasi >"
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_143
 msgid  "Change which program features are installed. This option displays the Custom Selection dialog in which you can change the way features are installed."
-msgstr ""
+msgstr "Võimaldab muuta programmi komponentide paigaldamise viisi. Selle sätte valimisel avatakse dialoog \"Kohandatud paigaldus\", mis võimaldab muuta komponentide paigaldusviisi."
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_144
 msgid  "Repair installation errors in the program. This option fixes missing or corrupt files, shortcuts, and registry entries."
-msgstr ""
+msgstr "Parandab rakenduse paigaldamise käigus tekkinud vead. Selle funktsiooni abil on võimalik parandada puuduvad või vigased failid, otseteed ja registrikirjed."
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_145
 msgid  "Remove [ProductName] from your computer."
@@ -1913,7 +1913,7 @@ msgstr "{&TahomaBold10}Edukat [ProductName] paigaldusnõustaja kasutamist"
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_150
 msgid  "The Installation Wizard will allow you to modify, repair, or remove [ProductName]. To continue, click Next."
-msgstr ""
+msgstr "Paigaldusnõustaja abil on võimalik [ProductName] paigaldust muuta, parandada ja eemaldada. Jätkamiseks klõpsa \"Edasi\"."
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_153
 msgid  "Disk space required for the installation exceeds available disk space."
@@ -1921,7 +1921,7 @@ msgstr "Paigalduseks vajalik kettaruum ületab saadaoleva kettaruumi suuruse."
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_154
 msgid  "The highlighted volumes do not have enough disk space available for the currently selected features. You can remove files from the highlighted volumes, choose to install less features onto local drives, or select different destination drives."
-msgstr ""
+msgstr "Esiletõstetud andmeruumides ei ole piisavalt ruumi valitud komponentide paigaldamiseks. Probleemi lahendamiseks võib esiletõstetud andmeruumidest eemaldada faile, vähendada kohalikele ketastele paigaldatavate komponentide valikut või valida mõni muu sihtketas."
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_155
 msgid  "{&MSSansBold8}Out of Disk Space"
@@ -1953,7 +1953,7 @@ msgstr "{&TahomaBold10}[ProductName] paranduse paigaldamine"
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_162
 msgid  "The Installation Wizard will install the Patch for [ProductName] on your computer.  To continue, click Update."
-msgstr ""
+msgstr "Paigaldusnõustaja paigaldab [ProductName] paranduse sinu arvutisse.  Jätkamiseks klõpsa \"Uuenda\"."
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_163
 msgid  "< &Back"
@@ -1973,7 +1973,7 @@ msgstr "Paigaldamise alustamiseks klõpsa nupul \"Paigalda\"."
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_169
 msgid  "If you want to review or change any of your installation settings, click Back. Click Cancel to exit the wizard."
-msgstr ""
+msgstr "Soovi korral vaadata või muuta paigaldussätteid klõpsa \"Tagasi\". Nõustajast väljumiseks klõpsa \"Loobu\"."
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_170
 msgid  "{&MSSansBold8}Ready to Modify the Program"
@@ -2005,7 +2005,7 @@ msgstr "See valik eemaldab programmi süsteemist."
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_179
 msgid  "Click Remove to remove [ProductName] from your computer. After removal, this program will no longer be available for use."
-msgstr ""
+msgstr "Klõps nupul \"Eemalda\" eemaldab [ProductName] sinu arvutist. Pärast eemaldamist ei saa programmi enam kasutada."
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_180
 msgid  "If you want to review or change any settings, click Back."
@@ -2033,7 +2033,7 @@ msgstr "&Lõpeta"
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_186
 msgid  "Your system has not been modified. To complete installation at another time, please run setup again."
-msgstr ""
+msgstr "Süsteemi ei muudetud. Paigalduse lõpetamiseks mõni teine kord tuleb paigaldusprogramm uuesti käivitada."
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_187
 msgid  "Click Finish to exit the wizard."
@@ -2041,19 +2041,19 @@ msgstr "Klõps nupul \"Lõpeta\" sulgeb nõustaja."
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_188
 msgid  "You can either keep any existing installed elements on your system to continue this installation at a later time or you can restore your system to its original state prior to the installation."
-msgstr ""
+msgstr "Võimalik on säilitada kõik juba paigaldatud komponendid ning jätkata paigaldamist hiljem, samuti võib taastada süsteemi sellisena, nagu see oli enne paigalduse alustamist."
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_189
 msgid  "Click Restore or Continue Later to exit the wizard."
-msgstr "Nõustajast väljumiseks klõpsa \"Taasta\" või \"Jätka hiljem\"."
+msgstr "Klõpsa \"Taasta\" või nõustajast väljumiseks \"Jätka hiljem\"."
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_190
 msgid  "{&TahomaBold10}Installation Wizard Completed"
-msgstr "{&TahomaBold10}Paigaldamine lõpetatud."
+msgstr "{&TahomaBold10}Paigaldusnõustaja lõpetas töö."
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_191
 msgid  "The wizard was interrupted before [ProductName] could be completely installed."
-msgstr ""
+msgstr "Nõustaja töö katkestati enne [ProductName] paigaldamise lõppu."
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_192
 msgid  "< &Back"
@@ -2065,7 +2065,7 @@ msgstr "Loobu"
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_194
 msgid  "&Yes, check for program updates (Recommended) after the setup completes."
-msgstr ""
+msgstr "&Jah, kontrolli uuenduste olemasolu (soovituslik) kohe pärast paigalduse lõpetamist."
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_195
 msgid  "Launch the program"
@@ -2081,15 +2081,15 @@ msgstr "&Lõpeta"
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_198
 msgid  "{&TahomaBold10}Installation Wizard Completed"
-msgstr "{&TahomaBold10}Paigaldamine lõpetatud."
+msgstr "{&TahomaBold10}Paigaldusnõustaja lõpetas töö."
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_199
 msgid  "The Installation Wizard has successfully installed [ProductName]. Click Finish to exit the wizard."
-msgstr ""
+msgstr "[ProductName] paigaldamine lõppes edukalt. Nõustajast väljumiseks klõpsa \"Lõpeta\"."
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_200
 msgid  "The Installation Wizard has successfully uninstalled [ProductName]. Click Finish to exit the wizard."
-msgstr ""
+msgstr "Paigaldusnõustaja eemaldas [ProductName] edukalt. Klõpsa \"Lõpeta\" nõustajast väljumiseks."
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_201
 msgid  "Setup has finished installing [ProductName]."
@@ -2097,11 +2097,11 @@ msgstr "Paigaldusprogramm lõpetas [ProductName] paigaldamise."
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_202
 msgid  "Some program files might have been updated since you purchased your copy of [ProductName]."
-msgstr ""
+msgstr "Mõnele rakenduse failile võib pärast [ProductName] koopia soetamist olla ilmunud uuendusi."
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_203
 msgid  "Your Internet connection can be used to make sure that you have the latest updates."
-msgstr ""
+msgstr "Uuenduste olemasolu saab kontrollida Interneti kaudu."
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_204
 msgid  "&Abort"
@@ -2113,7 +2113,7 @@ msgstr "&Loobu"
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_206
 msgid  "error text goes here  error text goes here  error text goes here  error text goes here  error text goes here  error text goes here  error text goes here  error text goes here  error text goes here  error text goes here"
-msgstr ""
+msgstr "siia läheb vea tekst  siia läheb vea tekst  siia läheb vea tekst  siia läheb vea tekst  siia läheb vea tekst  siia läheb vea tekst  siia läheb vea tekst  siia läheb vea tekst  siia läheb vea tekst  siia läheb vea tekst"
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_207
 msgid  "&Ignore"
@@ -2153,7 +2153,7 @@ msgstr "{&TahomaBold10}Edukat [ProductName] paigaldusnõustaja kasutamist"
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_218
 msgid  "[ProductName] Setup is preparing the Installation Wizard which will guide you through the program setup process.  Please wait."
-msgstr ""
+msgstr "[ProductName] paigaldusprogramm käivitab paigaldusnõustaja, mis juhib sind läbi paigaldusprotsessi.  Palun oota."
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_219
 msgid  "< &Back"
@@ -2169,7 +2169,7 @@ msgstr "&Lõpeta"
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_222
 msgid  "Your system has not been modified. To install this program at a later time, please run the installation again."
-msgstr ""
+msgstr "Süsteemi ei muudetud. Kui soovid rakendust paigaldada, siis käivita paigaldusprogramm uuesti."
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_223
 msgid  "Click Finish to exit the wizard."
@@ -2177,7 +2177,7 @@ msgstr "Klõps nupul \"Lõpeta\" sulgeb nõustaja."
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_224
 msgid  "You can either keep any existing installed elements on your system to continue this installation at a later time or you can restore your system to its original state prior to the installation."
-msgstr ""
+msgstr "Võimalik on säilitada kõik juba paigaldatud komponendid ning jätkata paigaldamist hiljem, samuti võib taastada süsteemi sellisena, nagu see oli enne paigalduse alustamist."
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_225
 msgid  "Click Restore or Continue Later to exit the wizard."
@@ -2189,7 +2189,7 @@ msgstr "{&TahomaBold10}Paigaldamine lõpetatud."
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_227
 msgid  "The wizard was interrupted before [ProductName] could be completely installed."
-msgstr ""
+msgstr "Nõustaja töö katkestati enne [ProductName] paigaldamise lõppu."
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_228
 msgid  "Progress done"
@@ -2213,11 +2213,11 @@ msgstr "Valitud komponentide eemaldamine."
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_236
 msgid  "Please wait while the Installation Wizard installs [ProductName]. This may take several minutes."
-msgstr ""
+msgstr "Palun oota, kuni paigaldusnõustaja paigaldab [ProductName]. Selleks kulub pisut aega."
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_237
 msgid  "Please wait while the Installation Wizard uninstalls [ProductName]. This may take several minutes."
-msgstr ""
+msgstr "Palun oota, kuni [ProductName] eemaldatakse süsteemist. Selleks kulub pisut aega."
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_238
 msgid  "{&MSSansBold8}Installing [ProductName]"
@@ -2257,11 +2257,11 @@ msgstr "&Edasi >"
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_248
 msgid  "The Installation Wizard will complete the installation of [ProductName] on your computer. To continue, click Next."
-msgstr ""
+msgstr "Paigaldusnõustaja lõpetab [ProductName] paigaldamise sinu arvutisse. Jätkamiseks klõpsa \"Edasi\"."
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_249
 msgid  "The Installation Wizard will complete the suspended installation of [ProductName] on your computer. To continue, click Next."
-msgstr ""
+msgstr "Paigaldusnõustaja lõpetab [ProductName] varem katkestatud paigaldamise sinu arvutisse. Jätkamiseks klõpsa \"Edasi\"."
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_250
 msgid  "{&TahomaBold10}Resuming the Installation Wizard for [ProductName]"
@@ -2277,11 +2277,11 @@ msgstr "Loobu"
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_255
 msgid  "The main components will be installed. Recommended for most users."
-msgstr ""
+msgstr "Paigaldatakse kõik rakenduse komponendid (nõuab kõige rohkem kettaruumi)."
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_256
 msgid  "Choose which program features you want installed and where they will be installed. Recommended for advanced users."
-msgstr ""
+msgstr "Võimaldab valida, millised rakenduse komponendid ja kuhu paigaldatakse. Soovitatav edasijõudnud kasutajatele."
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_257
 msgid  "Choose the setup type that best suits your needs."
@@ -2341,11 +2341,11 @@ msgstr "&[ProductName] Writer/Web"
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_274
 msgid  "Set [DEFINEDPRODUCT] to be the default application for Microsoft Office file types."
-msgstr ""
+msgstr "[DEFINEDPRODUCT] määratakse nende failitüüpide avamise vaikerakenduseks."
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_275
 msgid  "[ProductName] can be set as the default application to open Microsoft Office file types. This means, for instance, that if you double click on one of these files, [ProductName] will open it, not the program that opens it now."
-msgstr ""
+msgstr "[ProductName] on võimalik määrata järgnevate failitüüpide vaikimisi rakenduseks. See tähendab, et kui teed vastavat tüüpi failil topeltklõpsu, siis avatakse see [ProductName] abil, mitte programmiga, mis avab seda tüüpi faile praegu."
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_276
 msgid  "File types"
@@ -2361,11 +2361,11 @@ msgstr "{&MSSansBold8}Faili tüüp"
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_300
 msgid  "A version of [DEFINEDPRODUCT] [DEFINEDVERSION] was found by the [ProductName] Installation Wizard. This version will be updated."
-msgstr ""
+msgstr "[ProductName] paigaldusnõustaja avastas [DEFINEDPRODUCT] [DEFINEDVERSION]. Seda versiooni uuendatakse."
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_301
 msgid  "The destination folder specified below does not contain a [DEFINEDPRODUCT] [DEFINEDVERSION] version."
-msgstr ""
+msgstr "Allpool määratud sihtkaust ei sisalda [DEFINEDPRODUCT] [DEFINEDVERSION]."
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_302
 msgid  "A newer [DEFINEDPRODUCT] [DEFINEDVERSION] has been found."
@@ -2380,15 +2380,15 @@ msgid  "Check the destination folder."
 msgstr "Kontrolli sihtkausta."
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_305
-msgid  "To continue, click "Next"."
+msgid  "To continue, click \"Next\"."
 msgstr ""
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_306
-msgid  "To select a different version, click "Change". Otherwise click "Cancel" to abort the Installation Wizard."
+msgid  "To select a different version, click \"Change\". Otherwise click \"Cancel\" to abort the Installation Wizard."
 msgstr ""
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_307
-msgid  "To select a different folder, click "Change"."
+msgid  "To select a different folder, click \"Change\"."
 msgstr ""
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_308
@@ -2397,15 +2397,15 @@ msgstr "[ProductName] paigaldatakse:"
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_309
 msgid  "If you are just trying out [ProductName], you probably don't want this to happen, so leave the boxes unchecked."
-msgstr ""
+msgstr "Kui paigaldasid [ProductName] ainult proovimiseks, siis ilmselt ei soovi sa nende failitüüpide seoseid muuta ja peaksid jätma ruudud märkimata."
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_317
 msgid  "No languages have been selected for installation. Click OK to select one or more languages for installation."
-msgstr ""
+msgstr "Ühtki keelt pole paigalduseks valitud. Klõpsa ühe või mitme paigaldatava keele valimiseks \"Sobib\"."
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_318
 msgid  "No applications have been selected for installation. Click OK to select one or more applications for installation."
-msgstr ""
+msgstr "Ühtki rakendust pole paigalduseks valitud. Klõpsa ühe või mitme paigaldatava rakenduse valimiseks \"Sobib\"."
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_319
 msgid  "Create a start link on desktop"

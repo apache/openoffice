@@ -57,7 +57,7 @@ msgstr "Τίτλος προέλευσης δεδομένων"
 
 #: source/abpilot/abspilot.src#RID_PAGE_SELECTABTYPE.FT_TYPE_HINTS.FixedText.Text
 msgid  "%PRODUCTNAME lets you access address data already present in your system. To do this, a %PRODUCTNAME data source will be created in which your address data is available in tabular form.\n\nThis wizard helps you create the data source."
-msgstr ""
+msgstr "Το %PRODUCTNAME σας επιτρέπει να προσπελάσετε δεδομένα διευθύνσεων που υπάρχουν ήδη στο σύστημά σας. Για να γίνει αυτό, θα δημιουργηθεί μία προέλευση δεδομένων %PRODUCTNAME στην οποία τα δεδομένα διευθύνσεών σας θα είναι διαθέσιμα σε μορφή πίνακα. \n\nΜέσω του πιλότου μπορείτε να δημιουργήσετε την προέλευση δεδομένων."
 
 #: source/abpilot/abspilot.src#RID_PAGE_SELECTABTYPE.FL_TYPE.FixedLine.Text
 msgid  "Please select the type of your external address book:"
@@ -109,7 +109,7 @@ msgstr "Άλλη εξωτερική προέλευση δεδομένων"
 
 #: source/abpilot/abspilot.src#RID_PAGE_ADMININVOKATION.FT_ADMINEXPLANATION.FixedText.Text
 msgid  "To set up the new data source, additional information is required.\n\nClick the following button to open another dialog in which you then enter the necessary information."
-msgstr ""
+msgstr "Για να ρυθμίσετε τη νέα προέλευση δεδομένων, απαιτούνται πρόσθετες πληροφορίες.\n\nΚάντε κλικ στο παρακάτω κουμπί για να ανοίξετε ένα άλλο πλαίσιο διαλόγου στο οποίο εισάγετε στη συνέχεια τις απαραίτητες πληροφορίες."
 
 #: source/abpilot/abspilot.src#RID_PAGE_ADMININVOKATION.PB_INVOKE_ADMIN_DIALOG.PushButton.Text
 msgid  "Settings"
@@ -117,15 +117,15 @@ msgstr "Ρυθμίσεις"
 
 #: source/abpilot/abspilot.src#RID_PAGE_ADMININVOKATION.FT_ERROR.FixedText.Text
 msgid  "The connection to the data source could not be established.\nBefore you proceed, please check the settings made, or (on the previous page) choose another address data source type."
-msgstr ""
+msgstr "Η σύνδεση με την προέλευση δεδομένων δεν μπόρεσε να δημιουργηθεί.\nΠριν συνεχίσετε, παρακαλούμε ελέγξτε τις ρυθμίσεις που κάνατε, ή (στην προηγούμενη σελίδα) επιλέξτε ένα άλλο τύπο προέλευσης δεδομένων διευθύνσεων."
 
 #: source/abpilot/abspilot.src#RID_PAGE_TABLESELECTION_AB.FL_TOOMUCHTABLES.FixedText.Text
 msgid  "The external data source you have chosen contains more than one address book.\nPlease select the one you mainly want to work with:"
-msgstr ""
+msgstr "Η εξωτερική προέλευση δεδομένων που έχετε επιλέξει περιέχει περισσότερα από ένα βιβλία διευθύνσεων.\nΠαρακαλούμε επιλέξτε αυτό με το οποίο θέλετε κυρίως να δουλέψετε:"
 
 #: source/abpilot/abspilot.src#RID_PAGE_FIELDMAPPING.FT_FIELDASSIGMENTEXPL.FixedText.Text
-msgid  "To incorporate the address data in your templates, %PRODUCTNAME has to know which fields contain which data.\n\nFor instance, you could have stored the e-mail addresses in a field named "email", or "E-mail" or "EM" - or something completely different.\n\nClick the button below to open another dialog where you can enter the settings for your data source."
-msgstr ""
+msgid  "To incorporate the address data in your templates, %PRODUCTNAME has to know which fields contain which data.\n\nFor instance, you could have stored the e-mail addresses in a field named \"email\", or \"E-mail\" or \"EM\" - or something completely different.\n\nClick the button below to open another dialog where you can enter the settings for your data source."
+msgstr "Για να ενσωματώσει τα δεδομένα διευθύνσεων των προτύπων σας, το %PRODUCTNAME πρέπει να ξέρει ποια πεδία περιέχουν ποια δεδομένα.\n\nΓια παράδειγμα, θα μπορούσατε να έχετε αποθηκεύσει τη διεύθυνση ηλεκτρονικού ταχυδρομείου σε ένα πεδίο με όνομα \"email\", ή \"E-mail\" ή \"EM\" - ή κάτι εντελώς διαφορετικό.\n\nΚάντε κλικ στο παρακάτω κουμπί για να ανοίξει ένας άλλος διάλογος όπου θα μπορέσετε να ρυθμίσετε την προέλευση δεδομένων σας."
 
 #: source/abpilot/abspilot.src#RID_PAGE_FIELDMAPPING.PB_INVOKE_FIELDS_DIALOG.PushButton.Text
 msgid  "Field Assignment"
@@ -133,7 +133,7 @@ msgstr "Ανάθεση πεδίων"
 
 #: source/abpilot/abspilot.src#RID_PAGE_FINAL.FT_FINISH_EXPL.FixedText.Text
 msgid  "That was all the information necessary to integrate your address data into %PRODUCTNAME.\n\nNow, just enter the name under which you want to register the data source in %PRODUCTNAME."
-msgstr ""
+msgstr "Αυτές ήταν όλες οι απαραίτητες πληροφορίες για την ενσωμάτωση των δεδομένων διευθύνσεων στο %PRODUCTNAME.\n\nΤώρα, δώστε απλώς το όνομα με το οποίο θέλετε να δηλώσετε την προέλευση δεδομένων στο %PRODUCTNAME."
 
 #: source/abpilot/abspilot.src#RID_PAGE_FINAL.FT_LOCATION.FixedText.Text
 msgid  "Location"
@@ -145,7 +145,7 @@ msgstr "Αναζήτηση..."
 
 #: source/abpilot/abspilot.src#RID_PAGE_FINAL.CB_REGISTER_DS.CheckBox.Text
 msgid  "Make this address book available to all modules in %PRODUCTNAME."
-msgstr ""
+msgstr "Κάνε αυτό το βιβλίου διευθύνσεων διαθέσιμο σε όλα τα αρθρώματα του %PRODUCTNAME."
 
 #: source/abpilot/abspilot.src#RID_PAGE_FINAL.FT_NAME_EXPL.FixedText.Text
 msgid  "Address book name"
@@ -153,7 +153,7 @@ msgstr "Όνομα βιβλίου διευθύνσεων"
 
 #: source/abpilot/abspilot.src#RID_PAGE_FINAL.FT_DUPLICATENAME.FixedText.Text
 msgid  "Another data source already has this name. As data sources have to have globally unique names, you need to choose another one."
-msgstr ""
+msgstr "Μία άλλη προέλευση δεδομένων έχει ήδη αυτό το όνομα. Καθώς οι προελεύσεις δεδομένων πρέπει να έχουν καθολικά μοναδικά ονόματα, πρέπει να διαλέξετε άλλο όνομα."
 
 #: source/abpilot/abspilot.src#RID_ERR_NEEDTYPESELECTION.ErrorBox.Message
 msgid  "Please select a type of address book."
@@ -161,7 +161,7 @@ msgstr "Επιλέξτε έναν τύπο βιβλίου διευθύνσεων
 
 #: source/abpilot/abspilot.src#RID_QRY_NOTABLES.QueryBox.Message
 msgid  "The data source does not contain any tables.\nDo you want to set it up as an address data source, anyway?"
-msgstr ""
+msgstr "Η προέλευση δεδομένων δεν περιέχει πίνακες.\nΕίστε βέβαιοι ότι θέλετε να την ορίσετε ως προέλευση δεδομένων διευθύνσεων;"
 
 #: source/abpilot/abspilot.src#RID_STR_DEFAULT_NAME.String.Text
 msgid  "Addresses"
@@ -184,8 +184,8 @@ msgid  "Address Data - Field Assignment"
 msgstr "Δεδομένα διευθύνσεων - Ανάθεση πεδίων"
 
 #: source/abpilot/abspilot.src#RID_STR_NOFIELDSASSIGNED.String.Text
-msgid  "There are no fields assigned at this time.\nYou can either assign fields now or do so later by first choosing:\n"File - Template - Address Book Source...""
-msgstr ""
+msgid  "There are no fields assigned at this time.\nYou can either assign fields now or do so later by first choosing:\n\"File - Template - Address Book Source...\""
+msgstr "Δεν έχει γίνει ακόμα ανάθεση πεδίων.\nΜπορείτε να κάνετε ανάθεση πεδίων τώρα ή να το κάνετε αργότερα επιλέγοντας πρώτα:\n\"Αρχείο - Πρότυπο - Δομή βιβλίου διευθύνσεων...\""
 
 #: source/bibliography/toolbar.src#RID_BIB_TOOLBAR.TBC_FT_SOURCE.ToolBoxItem.Text
 msgid  "Table"
@@ -493,7 +493,7 @@ msgstr "Πεδίο ελέγχου"
 
 #: source/dbpilots/listcombopages.src#RID_PAGE_LCW_CONTENTSELECTION_TABLE.FT_SELECTTABLE_LABEL.FixedText.Text
 msgid  "On the right side, you see all the tables from the data source of the form.\n\n\nChoose the table from which the data should be used as basis for the list content:"
-msgstr ""
+msgstr "Στη δεξιά πλευρά, βλέπετε όλους τους πίνακες από την προέλευση δεδομένων της φόρμας.\n\n\nΕπιλέξτε τον πίνακα του οποίου τα δεδομένα θα χρησιμοποιηθούν σαν βάση για τα περιεχόμενα της λίστας:"
 
 #: source/dbpilots/listcombopages.src#RID_PAGE_LCW_CONTENTSELECTION_FIELD.TabPage.Text
 msgid  "Field Selection"
@@ -509,11 +509,11 @@ msgstr "Πεδίο προβολής"
 
 #: source/dbpilots/listcombopages.src#RID_PAGE_LCW_CONTENTSELECTION_FIELD.STR_FIELDINFO_COMBOBOX.String.Text
 msgid  "The contents of the field selected will be shown in the combo box list."
-msgstr ""
+msgstr "Το περιεχόμενο του επιλεγμένου πεδίου εμφανίζεται στην λίστα του πλαισίου συνδυασμού."
 
 #: source/dbpilots/listcombopages.src#RID_PAGE_LCW_CONTENTSELECTION_FIELD.STR_FIELDINFO_LISTBOX.String.Text
 msgid  "The contents of the selected field will be shown in the list box if the linked fields are identical."
-msgstr ""
+msgstr "Το περιεχόμενο του επιλεγμένου πεδίου εμφανίζεται στο πλαίσιο λίστας όταν τα συνδεδεμένα πεδία είναι πανομοιότυπα."
 
 #: source/dbpilots/listcombopages.src#RID_PAGE_LCW_FIELDLINK.TabPage.Text
 msgid  "Field Link"
@@ -521,7 +521,7 @@ msgstr "Πεδίο δεσμού"
 
 #: source/dbpilots/listcombopages.src#RID_PAGE_LCW_FIELDLINK.FT_FIELDLINK_DESC.FixedText.Text
 msgid  "This is where you select fields with matching contents so that the value from the display field will be shown."
-msgstr ""
+msgstr "Εδώ επιλέγετε πεδία των οποίων τα περιεχόμενα συμφωνούν, ώστε να εμφανιστεί η τιμή του πεδίου εμφάνισης."
 
 #: source/dbpilots/listcombopages.src#RID_PAGE_LCW_FIELDLINK.FT_VALUELISTFIELD.FixedText.Text
 msgid  "Field from the ~Value Table"
@@ -533,7 +533,7 @@ msgstr "Πεδίο από τον πίνακα ~λίστας"
 
 #: source/dbpilots/listcombopages.src#RID_STR_COMBOWIZ_DBFIELD.String.Text
 msgid  "You can either save the value of the combo box in a database field or use it for display purposes."
-msgstr ""
+msgstr "Μπορείτε να αποθηκεύσετε την τιμή του πλαισίου συνδυασμού σε ένα πεδίο βάσης δεδομένων ή να την χρησιμοποιήσετε για λόγους εμφάνισης."
 
 #: source/dbpilots/gridpages.src#RID_PAGE_GW_FIELDSELECTION.TabPage.Text
 msgid  "Field Selection"
@@ -577,7 +577,7 @@ msgstr "Αυτόματος πιλότος πεδίου συνδυασμού"
 
 #: source/dbpilots/dbpilots.src#RID_STR_COULDNOTOPENTABLE.String.Text
 msgid  "The table connection to the data source could not be established."
-msgstr ""
+msgstr "Δεν ήταν δυνατόν να πραγματοποιηθεί η σύνδεση με την προέλευση των δεδομένων."
 
 #: source/dbpilots/commonpagesdbp.src#RID_PAGE_TABLESELECTION.TabPage.Text
 msgid  "Data"
@@ -589,7 +589,7 @@ msgstr "Δεδομένα"
 
 #: source/dbpilots/commonpagesdbp.src#RID_PAGE_TABLESELECTION.FT_EXPLANATION.FixedText.Text
 msgid  "Currently, the form the control belongs to is not (or not completely) bound to a data source.\n\nPlease choose a data source and a table.\n\n\nPlease note that the settings made on this page will take effect immediately upon leaving the page."
-msgstr ""
+msgstr "Αυτή τη στιγμή, η φόρμα στην οποία ανήκει στο στοιχείο ελέγχου , δεν είναι συνδεδεμένη ολοκληρωτικά με μια προέλευση δεδομένων.\n\nΠαρακαλώ επιλέξτε μια προέλευση δεδομένων και ένα πίνακα.\n\n\nΣημειώστε ότι οι ρυθμίσεις που κάνατε σε αυτή τη σελίδα θα πραγματοποιηθούν αμέσως μετά την έξοδο σας από τη σελίδα."
 
 #: source/dbpilots/commonpagesdbp.src#RID_PAGE_TABLESELECTION.FT_DATASOURCE.FixedText.Text
 msgid  "~Data source:"
@@ -681,7 +681,7 @@ msgstr "Πεδίο τιμών"
 
 #: source/dbpilots/groupboxpages.src#RID_PAGE_OPTIONVALUES.FT_OPTIONVALUES_EXPL.FixedText.Text
 msgid  "When you select an option, the option group is given a specific value."
-msgstr ""
+msgstr "Όταν κάνετε μια επιλογή, η ομάδα επιλογής παίρνει μια συγκεκριμένη τιμή."
 
 #: source/dbpilots/groupboxpages.src#RID_PAGE_OPTIONVALUES.FT_OPTIONVALUES.FixedText.Text
 msgid  "Which ~value do you want to assign to each option?"
@@ -701,11 +701,11 @@ msgstr "Επιλέξτε τη λε~ζάντα για την ομάδα σας ε
 
 #: source/dbpilots/groupboxpages.src#RID_PAGE_OPTIONS_FINAL.FT_THATSALL.FixedText.Text
 msgid  "These were all details needed to create the option group."
-msgstr ""
+msgstr "Αυτά ήταν τα δεδομένα που απαιτούνται για την δημιουργία της ομάδας επιλογών."
 
 #: source/dbpilots/groupboxpages.src#RID_STR_GROUPWIZ_DBFIELD.String.Text
 msgid  "You can either save the value of the option group in a database field or use it for a later action."
-msgstr ""
+msgstr "Μπορείτε να αποθηκεύσετε την τιμή της ομάδας επιλογής σε ένα πεδίο βάσης δεδομένων ή να το χρησιμοποιήσετε μελλοντικά για κάποια ενέργεια."
 
 #: source/preload/preload.src#RID_DLG_OEMWIZARD.PB_PREV.PushButton.Text
 msgid  "<< Back"
@@ -737,7 +737,7 @@ msgstr "Καλώς ήλθατε"
 
 #: source/preload/preload.src#RID_TP_WELCOME.FT_INFO.FixedText.Text
 msgid  "Welcome to %PRODUCTNAME %PRODUCTVERSION OEM\n\nTo start the %PRODUCTNAME %PRODUCTVERSION OEM, please enter your personal data in the dialog following the license text. Important information is contained in the readme files which are located in the %PRODUCTNAME product directory. Please read these files carefully. You can also find detailed information at the Oracle website \n\nhttp://www.oracle.com/us/products/applications/open-office."
-msgstr ""
+msgstr "Καλώς ορίσατε στο %PRODUCTNAME %PRODUCTVERSION OEM\n\nΓια να ξεκινήσει το %PRODUCTNAME %PRODUCTVERSION OEM, εισαγάγετε τα προσωπικά σας δεδομένα στο παράθυρο διαλόγου που ακολουθεί το κείμενο της άδειας. Τα αρχεία readme που βρίσκονται στον κατάλογο προϊόντος του %PRODUCTNAME περιέχουν σημαντικές πληροφορίες. Διαβάστε αυτά τα αρχεία προσεκτικά. Μπορείτε επίσης να βρείτε αναλυτικές πληροφορίες στην τοποθεσία Web της Oracle στη διεύθυνση\n\nhttp://www.oracle.com/us/products/applications/open-office."
 
 #: source/preload/preload.src#RID_TP_LICENSE.TabPage.Text
 msgid  "License Agreement"
@@ -745,7 +745,7 @@ msgstr "Άδεια χρήσης"
 
 #: source/preload/preload.src#RID_TP_LICENSE.FT_INFO1.FixedText.Text
 msgid  "Please follow these steps to proceed with the installation:"
-msgstr ""
+msgstr "Παρακαλώ ακολουθήστε αυτά τα βήματα για να συνεχίσετε με την εγκατάσταση:"
 
 #: source/preload/preload.src#RID_TP_LICENSE.FT_INFO2_1.FixedText.Text
 msgid  "1."
@@ -753,7 +753,7 @@ msgstr "1."
 
 #: source/preload/preload.src#RID_TP_LICENSE.FT_INFO2.FixedText.Text
 msgid  "View the complete License Agreement. Please use the scroll bar or the '%PAGEDOWN' button in this dialog to view the entire license text."
-msgstr ""
+msgstr "Προβολή ολόκληρης της άδειας χρήσης. Παρακαλώ χρησιμοποιήστε την μπάρα κύλισης ή το πλήκτρο '%PAGEDOWN' για να διαβάσετε όλο το κείμενο της άδειας."
 
 #: source/preload/preload.src#RID_TP_LICENSE.PB_PAGEDOWN.PushButton.Text
 msgid  "Page Down"
@@ -801,7 +801,7 @@ msgstr "Αυτόματη ταξινόμηση"
 
 #: source/propctrlr/selectlabeldialog.src#RID_DLG_SELECTLABELCONTROL.1.FixedText.Text
 msgid  "These are control fields that can be used as label fields for the $control_class$ $control_name$."
-msgstr ""
+msgstr "Αυτά είναι πεδία ελέγχου τα οποία μπορούν να χρησιμοποιηθούν ως πεδία επισήμανσης για το $control_class$ $control_name$."
 
 #: source/propctrlr/selectlabeldialog.src#RID_DLG_SELECTLABELCONTROL.1.CheckBox.Text
 msgid  "~No assignment"
@@ -817,7 +817,7 @@ msgstr "Φόρμες"
 
 #: source/propctrlr/pcrmiscres.src#RID_STR_CONFIRM_DELETE_DATA_TYPE.String.Text
 msgid  "Do you want to delete the data type '#type#' from the model?\nPlease note that this will affect all controls which are bound to this data type."
-msgstr ""
+msgstr "Θέλετε να διαγράψετε τον τύπο δεδομένων '#type#' από το μοντέλο;\nΣημειώστε ότι αυτό θα επηρεάσει όλα στα στοιχεία ελέγχου που είναι συνδεδεμένα με αυτό το τύπο δεδομένων."
 
 #: source/propctrlr/pcrmiscres.src#RID_STR_PROPTITLE_PUSHBUTTON.String.Text
 msgid  "Button"
@@ -905,7 +905,7 @@ msgstr "Σύνδεση πεδίων"
 
 #: source/propctrlr/formlinkdialog.src#RID_DLG_FORMLINKS.FT_EXPLANATION.FixedText.Text
 msgid  "Sub forms can be used to display detailed data about the current record of the master form. To do this, you can specify which columns in the sub form match which columns in the master form."
-msgstr ""
+msgstr "Μπορούν να χρησιμοποιηθούν υποφόρμες για την εμφάνιση λεπτομερών δεδομένων σχετικά με την τρέχουσα εγγραφή της κύρια φόρμας. Για να γίνει αυτό, θα πρέπει να καθορίσετε ποιες στήλες της υποφόρμας ταιριάζουν με ποιες στήλες της κύριας φόρμας."
 
 #: source/propctrlr/formlinkdialog.src#RID_DLG_FORMLINKS.PB_SUGGEST.PushButton.Text
 msgid  "Suggest"
@@ -1009,7 +1009,7 @@ msgstr "URL"
 
 #: source/propctrlr/formres.src#RID_STR_TARGET_FRAME.String.Text
 msgid  "Frame"
-msgstr "πλαίσιο"
+msgstr "Πλαίσιο"
 
 #: source/propctrlr/formres.src#RID_STR_HELPTEXT.String.Text
 msgid  "Help text"
@@ -1864,8 +1864,8 @@ msgid  "Help"
 msgstr "Βοήθεια"
 
 #: source/propctrlr/formres.src#RID_STR_UNABLETOCONNECT.String.Text
-msgid  "The connection to the data source "$name$" could not be established."
-msgstr ""
+msgid  "The connection to the data source \"$name$\" could not be established."
+msgstr "Δεν ήταν δυνατή η δημιουργία σύνδεσης με την προέλευση δεδομένων\"$name$\"."
 
 #: source/propctrlr/formres.src#RID_STR_TEXT.String.Text
 msgid  "Text"
@@ -2297,11 +2297,11 @@ msgstr "Δώστε ένα όνομα για το νέο τύπο δεδομέν�
 
 #: source/scanner/sanedlg.src#RID_SANE_DIALOG.RID_DEVICEINFO_BTN.PushButton.Text
 msgid  "About\n Dev~ice"
-msgstr ""
+msgstr "Πληροφορίες\n συσκ~ευής"
 
 #: source/scanner/sanedlg.src#RID_SANE_DIALOG.RID_PREVIEW_BTN.PushButton.Text
 msgid  "Create\nPreview"
-msgstr ""
+msgstr "Δημιουργία\nπροεπισκόπησης"
 
 #: source/scanner/sanedlg.src#RID_SANE_DIALOG.RID_PREVIEW_BOX.FixedLine.Text
 msgid  "Preview"
@@ -2357,7 +2357,7 @@ msgstr "Σαρωτής"
 
 #: source/scanner/sanedlg.src#RID_SANE_DEVICEINFO_TXT.String.Text
 msgid  "Device: %s\nVendor: %s\nModel: %s\nType: %s"
-msgstr ""
+msgstr "Συσκευή: %s\nΚατασκευαστής: %s\nΜοντέλο: %s\nΤύπος: %s"
 
 #: source/scanner/sanedlg.src#RID_SANE_SCANERROR_TXT.String.Text
 msgid  "An error occurred while scanning."
@@ -2365,7 +2365,7 @@ msgstr "Παρουσιάστηκε σφάλμα κατά την σάρωση."
 
 #: source/scanner/sanedlg.src#RID_SANE_NORESOLUTIONOPTION_TXT.String.Text
 msgid  "The device does not offer a preview option. Therefore, a normal scan will be used as a preview instead. This may take a considerable amount of time."
-msgstr ""
+msgstr "Η συσκευή δε διαθέτει επιλογή προεπισκόπησης. Για αυτό το λόγο, μία κανονική σάρωση θα χρησιμοποιηθεί σαν προεπισκόπηση. Αυτό μπορεί να πάρει πολύ χρόνο."
 
 #: source/scanner/sanedlg.src#RID_SANE_NOSANELIB_TXT.String.Text
 msgid  "The SANE interface could not be initialized. Scanning is not possible."
@@ -2405,7 +2405,7 @@ msgstr "%PRODUCTNAME %PRODUCTVERSION είναι ενημερωμένο."
 
 #: source/update/check/updatehdl.src#RID_UPDATE_STR_UPD_FOUND.String.Text
 msgid  "%PRODUCTNAME %NEXTVERSION is available.\n\nThe installed version is %PRODUCTNAME %PRODUCTVERSION.\n\nNote: Before downloading  an update, please ensure that you have sufficient access rights to install it.\nA password, usually the administrator's or root password, may be required."
-msgstr ""
+msgstr "%PRODUCTNAME %NEXTVERSION είναι διαθέσιμο.\n\nΗ εγκατεστημένη έκδοση είναι %PRODUCTNAME %PRODUCTVERSION.\n\nΣημείωση: Πριν κάνετε λήψη μιας ενημέρωσης, παρακαλώ ελέγξτε ότι έχετε επαρκή δικαιώματα πρόσβασης για την εγκατάσταση της.\nΟ κωδικός πρόσβασης, συνήθως του διαχειριστή ή του χρήση root, μπορεί να ζητηθεί."
 
 #: source/update/check/updatehdl.src#RID_UPDATE_STR_DLG_TITLE.String.Text
 msgid  "Check for Updates"
@@ -2421,7 +2421,7 @@ msgstr "Η λήψη του %PRODUCTNAME %NEXTVERSION κόλλησε στο"
 
 #: source/update/check/updatehdl.src#RID_UPDATE_STR_DOWNLOAD_WARN.String.Text
 msgid  "The download location is: %DOWNLOAD_PATH.\n\nUnder Tools – Options... - %PRODUCTNAME – Online Update you can change the download location."
-msgstr ""
+msgstr "Η τοποθεσία λήψης  είναι: %DOWNLOAD_PATH.\n\nΣτα Εργαλεία – Επιλογές... - %PRODUCTNAME – Ενημέρωση μέσω διαδικτύου μπορείτε να αλλάξετε τη τοποθεσία λήψης ."
 
 #: source/update/check/updatehdl.src#RID_UPDATE_STR_DOWNLOAD_DESCR.String.Text
 msgid  "%FILE_NAME has been downloaded to %DOWNLOAD_PATH."
@@ -2429,7 +2429,7 @@ msgstr "%FILE_NAME έχει ληφθεί στο %DOWNLOAD_PATH."
 
 #: source/update/check/updatehdl.src#RID_UPDATE_STR_DOWNLOAD_UNAVAIL.String.Text
 msgid  "The automatic download of the update is currently not available.\n\nClick 'Download...' to download %PRODUCTNAME %NEXTVERSION manually from the web site."
-msgstr ""
+msgstr "Η αυτόματη λήψη της ενημέρωσης προσωρινά δεν είναι διαθέσιμη.\n\nΠατήστε 'Λήψη...' για να κάνετε λήψη του  το %PRODUCTNAME %NEXTVERSION χειροκίνητα από τον δικτυακό τόπο."
 
 #: source/update/check/updatehdl.src#RID_UPDATE_STR_DOWNLOADING.String.Text
 msgid  "Downloading %PRODUCTNAME %NEXTVERSION..."
@@ -2437,7 +2437,7 @@ msgstr "Λήψη του %PRODUCTNAME %NEXTVERSION..."
 
 #: source/update/check/updatehdl.src#RID_UPDATE_STR_READY_INSTALL.String.Text
 msgid  "Download of %PRODUCTNAME %NEXTVERSION completed. Ready for installation."
-msgstr ""
+msgstr "Η λήψη του %PRODUCTNAME %NEXTVERSION ολοκληρώθηκε. Έτοιμο για εγκατάσταση."
 
 #: source/update/check/updatehdl.src#RID_UPDATE_STR_CANCEL_TITLE.String.Text
 msgid  "%PRODUCTNAME %PRODUCTVERSION"
@@ -2449,7 +2449,7 @@ msgstr "Θέλετε πραγματικά να ακυρώσετε τη λήψη;
 
 #: source/update/check/updatehdl.src#RID_UPDATE_STR_BEGIN_INSTALL.String.Text
 msgid  "To install the update, %PRODUCTNAME %PRODUCTVERSION needs to be closed. Do you want to install the update now?"
-msgstr ""
+msgstr "Για να εγκατασταθεί η ενημέρωση, %PRODUCTNAME %PRODUCTVERSION πρέπει να κλείσει. Θέλετε να εγκαταστήσετε την ενημέρωση τώρα;"
 
 #: source/update/check/updatehdl.src#RID_UPDATE_STR_INSTALL_NOW.String.Text
 msgid  "Install ~now"
@@ -2461,15 +2461,15 @@ msgstr "Εγκαταστήστε  α~ργότερα"
 
 #: source/update/check/updatehdl.src#RID_UPDATE_STR_INSTALL_ERROR.String.Text
 msgid  "Could not run the installer application, please run %FILE_NAME in %DOWNLOAD_PATH manually."
-msgstr ""
+msgstr "Δεν μπορεί να εκτελεστεί η εφαρμογή εγκατάστασης, παρακαλώ εκτελέστε το %FILE_NAME στο %DOWNLOAD_PATH χειροκίνητα."
 
 #: source/update/check/updatehdl.src#RID_UPDATE_STR_OVERWRITE_WARNING.String.Text
 msgid  "A file with that name already exists! Do you want to overwrite the existing file?"
-msgstr ""
+msgstr "Ένα αρχείο με το ίδιο όνομα υπάρχει ήδη! Θέλετε να επικαλύψετε το υπάρχον αρχείο;"
 
 #: source/update/check/updatehdl.src#RID_UPDATE_STR_RELOAD_WARNING.String.Text
 msgid  "A file with the name '%FILENAME' already exists in '%DOWNLOAD_PATH'! Do you want to continue with the download or delete and reload the file?"
-msgstr ""
+msgstr "Ένα αρχείο με το όνομα '%FILENAME' υπάρχει ήδη στο '%DOWNLOAD_PATH'! Θέλετε να συνεχίσετε με τη λήψη του αρχείου ή να διαγράψετε και να επαναφορτώσετε το αρχείο;"
 
 #: source/update/check/updatehdl.src#RID_UPDATE_STR_RELOAD_RELOAD.String.Text
 msgid  "Reload File"

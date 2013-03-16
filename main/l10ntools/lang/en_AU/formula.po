@@ -195,6 +195,22 @@ msgstr "ATANH"
 msgid  "ACOTH"
 msgstr "ACOTH"
 
+#: source/core/resource/core_resource.src#RID_STRLIST_FUNCTION_NAMES.SC_OPCODE_COSECANT.String.Text
+msgid  "CSC"
+msgstr ""
+
+#: source/core/resource/core_resource.src#RID_STRLIST_FUNCTION_NAMES.SC_OPCODE_SECANT.String.Text
+msgid  "SEC"
+msgstr ""
+
+#: source/core/resource/core_resource.src#RID_STRLIST_FUNCTION_NAMES.SC_OPCODE_COSECANT_HYP.String.Text
+msgid  "CSCH"
+msgstr ""
+
+#: source/core/resource/core_resource.src#RID_STRLIST_FUNCTION_NAMES.SC_OPCODE_SECANT_HYP.String.Text
+msgid  "SECH"
+msgstr ""
+
 #: source/core/resource/core_resource.src#RID_STRLIST_FUNCTION_NAMES.SC_OPCODE_EXP.String.Text
 #, fuzzy
 msgid  "EXP"
@@ -1517,21 +1533,10 @@ msgstr "#NUM!"
 msgid  "#N/A"
 msgstr "#N/A"
 
-#: source/core/resource/core_resource.src#RID_STRLIST_FUNCTION_NAMES.SC_OPCODE_COSECANT.String.Text
-msgid  "CSC"
-msgstr ""
-
-#: source/core/resource/core_resource.src#RID_STRLIST_FUNCTION_NAMES.SC_OPCODE_SECANT.String.Text
-msgid  "SEC"
-msgstr ""
-
-#: source/core/resource/core_resource.src#RID_STRLIST_FUNCTION_NAMES.SC_OPCODE_COSECANT_HYP.String.Text
-msgid  "CSCH"
-msgstr ""
-
-#: source/core/resource/core_resource.src#RID_STRLIST_FUNCTION_NAMES.SC_OPCODE_SECANT_HYP.String.Text
-msgid  "SECH"
-msgstr ""
+#: source/ui/dlg/formdlgs.src#RID_FORMULATAB_FUNCTION.LB_CATEGORY.Default.StringList.item
+#, fuzzy
+msgid  "Last Used"
+msgstr "Last Used"
 
 #: source/ui/dlg/formdlgs.src#RID_FORMULATAB_FUNCTION.LB_CATEGORY.Default.StringList.item
 #, fuzzy
@@ -1683,10 +1688,10 @@ msgstr "Function Wizard  -"
 msgid  "~End"
 msgstr "~End"
 
-#: source/ui/dlg/formdlgs.src#RID_FORMULATAB_FUNCTION.LB_CATEGORY.Default.StringList.item
+#: source/ui/dlg/parawin.src#RB_ARGBLOCK( y ).#define.QuickHelpText
 #, fuzzy
-msgid  "Last Used"
-msgstr "Last Used"
+msgid  "Select"
+msgstr "Select"
 
 #: source/ui/dlg/parawin.src#RID_FORMULATAB_PARAMETER.FT_EDITDESC.FixedText.Text
 #, fuzzy
@@ -1702,8 +1707,3 @@ msgstr "(optional)"
 #, fuzzy
 msgid  "(required)"
 msgstr "(required)"
-
-#: source/ui/dlg/parawin.src#RB_ARGBLOCK( y ).#define.QuickHelpText
-#, fuzzy
-msgid  "Select"
-msgstr "Select"

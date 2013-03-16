@@ -36,7 +36,6 @@ msgid  "%PRODUCTNAME% %PRODUCTVERSION% Error Report"
 msgstr "%PRODUCTNAME% %PRODUCTVERSION% ত্রুটি রিপোর্ট"
 
 #: source/all/crashrep.ulf#%WELCOME_HEADER%
-#, fuzzy
 msgid  "Welcome to the %PRODUCTNAME% %PRODUCTVERSION% Error Report"
 msgstr "%PRODUCTNAME% %PRODUCTVERSION% ত্রুটি রিপোর্টে স্বাগতম"
 
@@ -45,8 +44,9 @@ msgid  "This error report tool gathers information about how %PRODUCTNAME% is wo
 msgstr ""
 
 #: source/all/crashrep.ulf#%WELCOME_BODY2%
+#, fuzzy
 msgid  "It's easy - just send the report without any further effort on your part by clicking 'Send' in the next dialog, or you can briefly describe how the error occurred and then click 'Send'. If you want to see the report, click the 'Show Report' button. No data will be sent if you click 'Do Not Send'.\n\n"
-msgstr ""
+msgstr "'পাঠাও' বাটনে ক্লিক করে শুধু ত্রুটি রিপোর্টটি পাঠিয়ে দিন, অথবা কিভাবে ত্রুটিটি হলো তা সংক্ষেপে লিখে 'পাঠাও' বাটনে ক্লিক করুন। যদি রিপোর্টিটি দেখতে চান, শুধু 'রিপোর্ট দেখাও' বাটনে ক্লিক করুন। কোন ডাটা পাঠাতে না চাইলে 'পাঠিও না' বাটনে ক্লিক করুন।\n\n"
 
 #: source/all/crashrep.ulf#%WELCOME_BODY3%
 msgid  "Customer Privacy\nThe information gathered is limited to data concerning the state of %PRODUCTNAME% %PRODUCTVERSION% when the error occurred. Other information about passwords or document contents is not collected.\n\nThe information will only be used to improve the quality of %PRODUCTNAME% and will not be shared with third parties.\nFor more information on Apache OpenOffice's privacy policy, visit\n"
@@ -86,8 +86,9 @@ msgid  "The %PRODUCTNAME% %PRODUCTVERSION% Error Report has gathered information
 msgstr ""
 
 #: source/all/crashrep.ulf#%ENTER_TITLE%
+#, fuzzy
 msgid  "Which type of document (e.g. presentation) were you using when the error occurred?"
-msgstr ""
+msgstr "যখন ত্রুটিটি ঘটেছিল তখন আপনি কোন ধরনের ডকুমেন্টে (যেমন প্রেজেন্টেশান)কাজ করছিলেন?"
 
 #: source/all/crashrep.ulf#%ALLOW_CONTACT%
 msgid  "~I allow Apache OpenOffice to contact me regarding this report."
@@ -134,24 +135,29 @@ msgid  "Save Report to"
 msgstr " রিপোর্ট সংরক্ষন করুন"
 
 #: source/all/crashrep.ulf#%ERROR_MSG_SIMPLE_MAPI%
+#, fuzzy
 msgid  "The error report could not be sent because the default e-mail program does not support MAPI.\n Please use a MAPI-compatible e-mail program."
-msgstr ""
+msgstr "সমস্যা রিপোর্টটি পাঠানো গেলো না কারন ডিফল্ট ই-মেইল প্রোগ্রামটি MAPI সমর্থন করে না। অনুগ্রহ করে MAPI-সঙ্গতিপূর্ণ একটি ই-মেইল প্রোগ্রাম ব্যবহার করুন।"
 
 #: source/all/crashrep.ulf#%ERROR_MSG_DISK_FULL%
+#, fuzzy
 msgid  "The error report could not be temporarily saved and could therefore not be sent."
-msgstr ""
+msgstr "ত্রুটি রিপোর্টটি সাময়িক ভাবে সংরক্ষন সম্ভব নয়, তাই পাঠানো যাচ্ছে না। "
 
 #: source/all/crashrep.ulf#%ERROR_MSG_SENDMAIL%
+#, fuzzy
 msgid  "The error report could not be sent because 'sendmail' could not be started.\nPlease check the 'sendmail' settings."
-msgstr ""
+msgstr "ত্রুটি রিপোর্টটি পাঠানো সম্ভব নয় কারণ 'সেন্ডমেইল' সার্ভিসটি চালু নেই। \n দয়াকরে 'সেন্ডমেইল' সেটিংস দেখুন। "
 
 #: source/all/crashrep.ulf#%ERROR_MSG_PROXY%
+#, fuzzy
 msgid  "The error report could not be sent. Please check the proxy settings under 'Options' in the Error Report Tool."
-msgstr ""
+msgstr "ত্রুটি রিপোর্টটি পাঠানো সম্ভব নয়। দয়াকরে ত্রুটি রিপোর্ট টুলের অপশন থেকে প্রক্সি সেটিংসটি চেক করুন। "
 
 #: source/all/crashrep.ulf#%ERROR_MSG_NOCONNECT%
+#, fuzzy
 msgid  "The error report could not be sent because there is no Internet connection. Please check your Internet settings."
-msgstr ""
+msgstr "সম্ভবত ইন্টারনেট সংযোগ নেই, তাই ত্রুটি রিপোর্টটি পাঠানো সম্ভব নয়। দয়াকরে ইন্টারনেট সেটিংস চেক করুন। "
 
 #: source/all/crashrep.ulf#%OPTIONS_BUTTON%
 #, fuzzy
@@ -194,8 +200,9 @@ msgid  "~Port"
 msgstr "পোর্ট (~P)"
 
 #: source/all/crashrep.ulf#%PROXY_SETTINGS_DESCRIPTION%
+#, fuzzy
 msgid  "The %PRODUCTNAME% Error Report tool needs to be connected to the Internet to be able to send error reports.\n\nCompanies often use proxy servers in conjunction with a firewall to protect the network.\n\nIf this applies to your situation, you have to specify the address and port for the server."
-msgstr ""
+msgstr "%PRODUCTNAME% সমস্যা রিপোর্ট টুলটির সমস্যা রিপোর্ট পাঠানোর জন্য ইন্টারনেটে সংযুক্ত হওয়া প্রয়োজন।\n\nনেটওয়ার্কের প্রতিরক্ষার জন্য কোম্পানিগুলো প্রায়ই ফায়ারওয়াল এর সাথে প্রক্সি সার্ভার ব্যবহার করে।\n\nযদি আপনার অবস্থাও এরকম হয়ে থাকে, তাহলে আপনাকে সার্ভারের ঠিকানা এবং পোর্ট উল্লেখ করে দিতে হবে।"
 
 #: source/all/crashrep.ulf#%SENDING_REPORT_HEADER%
 #, fuzzy
@@ -232,5 +239,6 @@ msgid  "Assigns the %PRODUCTNAME% process ID (PID) to the Error Report Tool"
 msgstr "সমস্যা রিপোর্ট টুলের সাথে %PRODUCTNAME% প্রসেস আইডি (PID) যোগ কর"
 
 #: source/all/crashrep.ulf#%MSG_PARAM_HELP_DESCRIPTION%
+#, fuzzy
 msgid  "Shows this help text.\nDetailed information can be found in the Setup Guide."
-msgstr ""
+msgstr "ব্যবহারবিধি দেখুন।\n সেটআপ গাইডে বিস্তারিত তথ্য পাওয়া যাবে। "

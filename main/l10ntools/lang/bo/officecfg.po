@@ -81,7 +81,7 @@ msgstr "གུས་བརྩེའི་<2>སྐུ་ཞབས།"
 
 #: registry/data/org/openoffice/Office/Writer.xcu#..Writer.MailMergeWizard.NeutralGreetingLines
 msgid  "To whom it may concern,;Dear Friends,;Dear Sir or Madam,;Hello,"
-msgstr ""
+msgstr "འབྲེལ་ཡོད་མི་ལ།   གཅེས་འོས་པའི་གྲོགས་པོ།   གུས་བརྩེའི་སྐུ་ཞབས་སམ་སྐུ་སྐྱེ་མ།   ཁྱེད་ཡག"
 
 #: registry/data/org/openoffice/Office/Writer.xcu#..Writer.Insert.Caption.CaptionOrderNumberingFirst
 msgid  "true"
@@ -11301,27 +11301,22 @@ msgid  "Controls"
 msgstr "ཚོད་འཛིན་སྡེ་ཚན།"
 
 #: registry/data/org/openoffice/Office/UI/BaseWindowState.xcu#..BaseWindowState.UIElements.States.private:resource/toolbar/tableobjectbar.UIName
-#, fuzzy
 msgid  "Table"
 msgstr "རེའུ་མིག་བྱ་ཡུལ།"
 
 #: registry/data/org/openoffice/Office/UI/BaseWindowState.xcu#..BaseWindowState.UIElements.States.private:resource/toolbar/queryobjectbar.UIName
-#, fuzzy
 msgid  "Query"
 msgstr "བཙལ་འདྲི།"
 
 #: registry/data/org/openoffice/Office/UI/BaseWindowState.xcu#..BaseWindowState.UIElements.States.private:resource/toolbar/reportobjectbar.UIName
-#, fuzzy
 msgid  "Report"
 msgstr "སྙན་ཐོ།"
 
 #: registry/data/org/openoffice/Office/UI/BaseWindowState.xcu#..BaseWindowState.UIElements.States.private:resource/toolbar/formobjectbar.UIName
-#, fuzzy
 msgid  "Form"
 msgstr "སྒྲོམ་གཟུགས།"
 
 #: registry/data/org/openoffice/Office/UI/BaseWindowState.xcu#..BaseWindowState.UIElements.States.private:resource/toolbar/toolbar.UIName
-#, fuzzy
 msgid  "Standard"
 msgstr "རྒྱུན་སྤྱོད།"
 
@@ -11522,17 +11517,14 @@ msgid  "Column Arrangement..."
 msgstr ""
 
 #: registry/data/org/openoffice/Office/UI/BibliographyCommands.xcu#..BibliographyCommands.UserInterface.Commands..uno:Bib/autoFilter.Label
-#, fuzzy
 msgid  "AutoFilter"
 msgstr "རང་འགུལ་འཚག་འདེམས།"
 
 #: registry/data/org/openoffice/Office/UI/BibliographyCommands.xcu#..BibliographyCommands.UserInterface.Commands..uno:Bib/query.Label
-#, fuzzy
 msgid  "Search Key"
 msgstr "འགག་གནད་ཡི་གེ་བཤེར་འཚོལ།"
 
 #: registry/data/org/openoffice/Office/UI/BibliographyCommands.xcu#..BibliographyCommands.UserInterface.Commands..uno:Bib/removeFilter.Label
-#, fuzzy
 msgid  "Remove Filter"
 msgstr "འཚག་འདེམས་རྩིས་མེད།"
 
@@ -11541,7 +11533,6 @@ msgid  "Choose Data Source..."
 msgstr ""
 
 #: registry/data/org/openoffice/Office/UI/BibliographyCommands.xcu#..BibliographyCommands.UserInterface.Commands..uno:Bib/source.Label
-#, fuzzy
 msgid  "Table"
 msgstr "རེའུ་མིག་བྱ་ཡུལ།"
 
@@ -12169,7 +12160,6 @@ msgid  "Cancel"
 msgstr "རྩིས་མེད།"
 
 #: registry/data/org/openoffice/Office/UI/CalcCommands.xcu#..CalcCommands.UserInterface.Commands..uno:ChooseDesign.Label
-#, fuzzy
 msgid  "Choose Themes"
 msgstr "ཉམས་འགྱུར་འདེམས་པ།"
 
@@ -12361,7 +12351,6 @@ msgid  "Undo Selection"
 msgstr "བདམས་པ་རྩིས་མེད།"
 
 #: registry/data/org/openoffice/Office/UI/CalcCommands.xcu#..CalcCommands.UserInterface.Commands..uno:DrawChart.Label
-#, fuzzy
 msgid  "Insert Chart"
 msgstr "རིས་མཚོན།"
 
@@ -12386,7 +12375,6 @@ msgid  "Edit..."
 msgstr ""
 
 #: registry/data/org/openoffice/Office/UI/CalcCommands.xcu#..CalcCommands.UserInterface.Commands..uno:EuroConverter.Label
-#, fuzzy
 msgid  "Euro Converter"
 msgstr "ཡོ་སྒོར་བརྗེ་རྩིས་ཆས།"
 
@@ -12439,7 +12427,6 @@ msgid  "Up"
 msgstr ""
 
 #: registry/data/org/openoffice/Office/UI/CalcCommands.xcu#..CalcCommands.UserInterface.Commands..uno:FirstPage.Label
-#, fuzzy
 msgid  "First Page"
 msgstr "མགོ་ཤོག"
 
@@ -12449,7 +12436,6 @@ msgid  "Sheet Area Input Field"
 msgstr "ལས་ཁྲའི་ས་ཁོངས་-ཡིག་དུམ་ནང་བཅུག"
 
 #: registry/data/org/openoffice/Office/UI/CalcCommands.xcu#..CalcCommands.UserInterface.Commands..uno:FocusInputLine.Label
-#, fuzzy
 msgid  "Input Line"
 msgstr "ཕྲེང་ནང་བཅུག"
 
@@ -12478,17 +12464,14 @@ msgid  "Function..."
 msgstr ""
 
 #: registry/data/org/openoffice/Office/UI/CalcCommands.xcu#..CalcCommands.UserInterface.Commands..uno:GoDownToEndOfData.Label
-#, fuzzy
 msgid  "To Lower Block Margin"
 msgstr "གཤམ་ཤོག་གི་མཐའི་བར་ཐག་ལ།"
 
 #: registry/data/org/openoffice/Office/UI/CalcCommands.xcu#..CalcCommands.UserInterface.Commands..uno:GoDownToEndOfDataSel.Label
-#, fuzzy
 msgid  "Select to Lower Block Margin"
 msgstr "གཤམ་ཤོག་གི་མཐའི་བར་ཐག་བར་འདེམས་པ།"
 
 #: registry/data/org/openoffice/Office/UI/CalcCommands.xcu#..CalcCommands.UserInterface.Commands..uno:GoLeftToStartOfData.Label
-#, fuzzy
 msgid  "To Left Block Margin"
 msgstr "གཡོན་ཤོག་གི་མཐའི་བར་ཐག་ལ།"
 
@@ -12498,17 +12481,14 @@ msgid  "Select to Left Block Margin"
 msgstr "གཡོན་ཤོག་གི་མཐའི་བར་ཐག་བར་འདེམས་པ།"
 
 #: registry/data/org/openoffice/Office/UI/CalcCommands.xcu#..CalcCommands.UserInterface.Commands..uno:GoRightBlock.Label
-#, fuzzy
 msgid  "Page Right"
 msgstr "ཡ་གྲངས་ཤོག་ལྷེ།"
 
 #: registry/data/org/openoffice/Office/UI/CalcCommands.xcu#..CalcCommands.UserInterface.Commands..uno:GoRightBlockSel.Label
-#, fuzzy
 msgid  "Select to Page Right"
 msgstr "ཡ་གྲངས་ཀྱི་ཤོག་ལྷེ་བར་འདེམས་པ།"
 
 #: registry/data/org/openoffice/Office/UI/CalcCommands.xcu#..CalcCommands.UserInterface.Commands..uno:GoRightToEndOfData.Label
-#, fuzzy
 msgid  "To Right Block Margin"
 msgstr "གཡས་ཤོག་གི་མཐའི་བར་ཐག་ལ།"
 
@@ -12523,12 +12503,10 @@ msgid  "To Current Cell"
 msgstr "མིག་སྔའི་དྲ་མིག་ལ།"
 
 #: registry/data/org/openoffice/Office/UI/CalcCommands.xcu#..CalcCommands.UserInterface.Commands..uno:GoUpToStartOfData.Label
-#, fuzzy
 msgid  "To Upper Block Margin"
 msgstr "གོང་ཤོག་གི་མཐའི་བར་ཐག་ལ།"
 
 #: registry/data/org/openoffice/Office/UI/CalcCommands.xcu#..CalcCommands.UserInterface.Commands..uno:GoUpToStartOfDataSel.Label
-#, fuzzy
 msgid  "Select to Upper Block Margin"
 msgstr "གོང་ཤོག་གི་མཐའི་བར་ཐག་བར་འདེམས་པ།"
 
@@ -12669,12 +12647,10 @@ msgid  "To Previous Unprotected Cell"
 msgstr "སྔོན་གྱི་སྲུང་སྐྱོབ་མེད་པའི་དྲ་མིག་དུ།"
 
 #: registry/data/org/openoffice/Office/UI/CalcCommands.xcu#..CalcCommands.UserInterface.Commands..uno:LastPage.Label
-#, fuzzy
 msgid  "Last Page"
 msgstr "མཐའ་མའི་ཤོག་ལྷེ།"
 
 #: registry/data/org/openoffice/Office/UI/CalcCommands.xcu#..CalcCommands.UserInterface.Commands..uno:Margins.Label
-#, fuzzy
 msgid  "Margins"
 msgstr "ཤོག་ངོས་མཐའ་ཐག"
 
@@ -12692,7 +12668,6 @@ msgid  "Rename Sheet"
 msgstr "ལས་ཁྲ་བསྐྱར་མིང་འདོགས་པ།"
 
 #: registry/data/org/openoffice/Office/UI/CalcCommands.xcu#..CalcCommands.UserInterface.Commands..uno:NextPage.Label
-#, fuzzy
 msgid  "Next Page"
 msgstr "རྗེས་ཀྱི་ཤོག་ལྷེ།"
 
@@ -12719,12 +12694,10 @@ msgid  "Number Format: Add Decimal Place"
 msgstr "གྲངས་ཆུང་གྲངས་གནས་སྣོན་པ།"
 
 #: registry/data/org/openoffice/Office/UI/CalcCommands.xcu#..CalcCommands.UserInterface.Commands..uno:ObjectMirrorHorizontal.Label
-#, fuzzy
 msgid  "Flip Object Horizontally"
 msgstr "ཆུ་སྙོམས་མགོ་རྟིང་སློག་པ།"
 
 #: registry/data/org/openoffice/Office/UI/CalcCommands.xcu#..CalcCommands.UserInterface.Commands..uno:ObjectMirrorVertical.Label
-#, fuzzy
 msgid  "Flip Vertically"
 msgstr "དྲང་འཕྱང་མགོ་རྟིང་སློག་པ།"
 
@@ -12741,7 +12714,6 @@ msgid  "Page Break Preview"
 msgstr ""
 
 #: registry/data/org/openoffice/Office/UI/CalcCommands.xcu#..CalcCommands.UserInterface.Commands..uno:PreviousPage.Label
-#, fuzzy
 msgid  "Previous Page"
 msgstr "སྔོན་གྱི་ཤོག་ལྷེ།"
 
@@ -12796,7 +12768,6 @@ msgid  "Scale Screen Display"
 msgstr "གསལ་ཡོལ་མངོན་པའི་སྡུར་ཚད།"
 
 #: registry/data/org/openoffice/Office/UI/CalcCommands.xcu#..CalcCommands.UserInterface.Commands..uno:ScalingFactor.Label
-#, fuzzy
 msgid  "Scaling Factor"
 msgstr "ཆེ་གཏོང་ཆུང་གཏོང་།"
 
@@ -12956,7 +12927,6 @@ msgid  "Show"
 msgstr ""
 
 #: registry/data/org/openoffice/Office/UI/CalcCommands.xcu#..CalcCommands.UserInterface.Commands..uno:SimpleReferenz.Label
-#, fuzzy
 msgid  "Enter References"
 msgstr "འདྲེན་སྤྱོད་ནང་བཅུག"
 
@@ -12997,27 +12967,22 @@ msgid  "Chart..."
 msgstr ""
 
 #: registry/data/org/openoffice/Office/UI/CalcCommands.xcu#..CalcCommands.UserInterface.Commands..uno:StatusDocPos.Label
-#, fuzzy
 msgid  "Position in Document"
 msgstr "ཡིག་ཚགས་ནང་གི་གནས་ས།"
 
 #: registry/data/org/openoffice/Office/UI/CalcCommands.xcu#..CalcCommands.UserInterface.Commands..uno:StatusPageStyle.Label
-#, fuzzy
 msgid  "Page Format"
 msgstr "ཤོག་ངོས་རྣམ་གཞག"
 
 #: registry/data/org/openoffice/Office/UI/CalcCommands.xcu#..CalcCommands.UserInterface.Commands..uno:StatusSelectionMode.Label
-#, fuzzy
 msgid  "Selection Mode"
 msgstr "བདམས་ཟིན་མ་ཚུལ།"
 
 #: registry/data/org/openoffice/Office/UI/CalcCommands.xcu#..CalcCommands.UserInterface.Commands..uno:StatusSelectionModeExp.Label
-#, fuzzy
 msgid  "Status Expanded Selection"
 msgstr "རྣམ་གཞགའི་ཟུར་སྣོན་བདམས་པ།"
 
 #: registry/data/org/openoffice/Office/UI/CalcCommands.xcu#..CalcCommands.UserInterface.Commands..uno:StatusSelectionModeExt.Label
-#, fuzzy
 msgid  "Status Extended Selection"
 msgstr "རྣམ་གཞགའི་མཐོ་རིམ་བདམས་པ།"
 
@@ -16644,8 +16609,9 @@ msgid  "Flower"
 msgstr "མེ་ཏོག"
 
 #: registry/data/org/openoffice/Office/UI/GenericCommands.xcu#..GenericCommands.UserInterface.Commands..uno:SymbolShapes.forbidden.Label
-msgid  ""Prohibited" Symbol"
-msgstr ""
+#, fuzzy
+msgid  "\"Prohibited\" Symbol"
+msgstr "བཀག་འགོག་རྟགས།"
 
 #: registry/data/org/openoffice/Office/UI/GenericCommands.xcu#..GenericCommands.UserInterface.Commands..uno:SymbolShapes.heart.Label
 #, fuzzy
