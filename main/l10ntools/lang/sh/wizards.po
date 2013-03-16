@@ -49,7 +49,7 @@ msgstr "~Pretvori"
 
 #: source/euro/euro.src#STEP_ZERO + 4.String.Text
 msgid  "Note: Currency amounts from external links and currency conversion factors in formulas cannot be converted."
-msgstr ""
+msgstr "Napomena: ne mogu da pretvorim iznose valuta iz spoljnih veza i faktore pretvaranja valuta u formulama."
 
 #: source/euro/euro.src#STEP_ZERO + 5.String.Text
 msgid  "First, unprotect all sheets."
@@ -153,7 +153,7 @@ msgstr "Stanje koverzije šablona polja:"
 
 #: source/euro/euro.src#STATUSLINE + 2.String.Text
 msgid  "Registration of the relevant ranges: Sheet %1Number%1 of %2TotPageCount%2"
-msgstr ""
+msgstr "Registracija relevantnih opsega: list %1Number%1 od %2TotPageCount%2"
 
 #: source/euro/euro.src#STATUSLINE + 3.String.Text
 msgid  "Entry of the ranges to be converted..."
@@ -221,11 +221,11 @@ msgstr "Ne mogu da uklonim zaštitu sa lista"
 
 #: source/euro/euro.src#MESSAGES + 13.String.Text
 msgid  "The Wizard cannot edit this document as cell formats cannot be modified in documents containing protected spreadsheets."
-msgstr ""
+msgstr "AutoPilot ne može da uredi ovaj dokument jer se formati polja ne mogu menjati u dokumentima koji sadrže zaštićene tablice."
 
 #: source/euro/euro.src#MESSAGES + 14.String.Text
 msgid  "Please note that the Euro Converter will, otherwise, not be able to edit this document!"
-msgstr ""
+msgstr "Napomena: Evro prebacivač u suprotnom neće moći da uredi ovaj dokument!"
 
 #: source/euro/euro.src#MESSAGES + 15.String.Text
 msgid  "Please choose a currency to be converted first!"
@@ -337,7 +337,7 @@ msgstr "Valuta podešena za ovaj dokument nije evropska valuta!"
 
 #: source/euro/euro.src#CURRENCIES + 17.String.Text
 msgid  "The language set for your operating system is not a language of the European Monetary Union."
-msgstr ""
+msgstr "Jezik podešen na vašem operativnom sistemu nije jezik Evropske monetarne zajednice."
 
 #: source/euro/euro.src#STEP_LASTPAGE.String.Text
 msgid  "Progress"
@@ -361,35 +361,35 @@ msgstr "List je uvek nezaštićen"
 
 #: source/formwizard/dbwizres.src#RID_COMMON_START + 0.String.Text
 msgid  "The directory '%1' could not be created.<BR>There may not be enough space left on your hard disk."
-msgstr ""
+msgstr "Ne mogu da napravim direktorijum „%1“.<BR>Možda nema više mesta na čvrstom disku?"
 
 #: source/formwizard/dbwizres.src#RID_COMMON_START + 1.String.Text
 msgid  "The text document could not be created.<BR>Please check if the module 'PRODUCTNAME Writer' is installed."
-msgstr ""
+msgstr "Ne mogu da napravim tekstualni dokument.<BR>Proverite da li je instaliran modul „PRODUCTNAME Pisac“."
 
 #: source/formwizard/dbwizres.src#RID_COMMON_START + 2.String.Text
 msgid  "The spreadsheet could not be created.<BR>Please check if the module 'PRODUCTNAME Calc' is installed."
-msgstr ""
+msgstr "Ne mogu da napravim tablicu.<BR>Proverite da li je modul „PRODUCTNAME Račun“ instaliran."
 
 #: source/formwizard/dbwizres.src#RID_COMMON_START + 3.String.Text
 msgid  "The presentation could not be created.<BR>Please check if the module 'PRODUCTNAME Impress' is installed."
-msgstr ""
+msgstr "Ne mogu da napravim prezentaciju.<BR>Proverite da li je instaliran modul „PRODUCTNAME Prezentacija“."
 
 #: source/formwizard/dbwizres.src#RID_COMMON_START + 4.String.Text
 msgid  "The drawing could not be created.<BR>Please check if the module 'PRODUCTNAME Draw' is installed."
-msgstr ""
+msgstr "Ne mogu da napravim sliku.<BR>Proverite da li je instaliran modul „PRODUCTNAME Crtanje“."
 
 #: source/formwizard/dbwizres.src#RID_COMMON_START + 5.String.Text
 msgid  "The formula could not be created.<BR>Please check if the module 'PRODUCTNAME Math' is installed."
-msgstr ""
+msgstr "Ne mogu da napravim formulu.<BR>Proverite da li je instaliran modul „PRODUCTNAME Matematika“."
 
 #: source/formwizard/dbwizres.src#RID_COMMON_START + 6.String.Text
 msgid  "The files required could not be found.<BR>Please start the %PRODUCTNAME Setup and choose 'Repair'."
-msgstr ""
+msgstr "Nisu pronađene potrebne datoteke.<BR>Pokrenite %PRODUCTNAME podešavanje i izaberite „Popravi“."
 
 #: source/formwizard/dbwizres.src#RID_COMMON_START + 7.String.Text
 msgid  "The file '<PATH>' already exists.<BR><BR>Would you like to overwrite the existing file?"
-msgstr ""
+msgstr "Već postoji datoteka „<PATH>“.<BR><BR>Želite li da je prepišete?"
 
 #: source/formwizard/dbwizres.src#RID_COMMON_START + 8.String.Text
 msgid  "Yes"
@@ -445,7 +445,7 @@ msgstr "Šablon napravljen putem <wizard_name> u <current_date>."
 
 #: source/formwizard/dbwizres.src#RID_COMMON_START + 21.String.Text
 msgid  "The wizard could not be run, because important files were not found.\nUnder 'Tools - Options - %PRODUCTNAME - Paths' click the 'Default' button to reset the paths to the original default settings.\nThen run the wizard again."
-msgstr ""
+msgstr "Ne mogu da pokrenem pomoćnika jer važne datoteke nisu pronađene.\nPod „Alatke - Podešavanja - %PRODUCTNAME - Putanje“ kliknite na dugme „Podrazumevano“ za vraćanje podešavanja putanja na podrazumevana.\nNakon toga ponovo pokrenite pomoćnika."
 
 #: source/formwizard/dbwizres.src#RID_DB_COMMON_START + 0.String.Text
 msgid  "C~reate"
@@ -473,7 +473,7 @@ msgstr "Ime ~tabele"
 
 #: source/formwizard/dbwizres.src#RID_DB_COMMON_START + 6.String.Text
 msgid  "An error occurred while running the wizard. The wizard will be terminated."
-msgstr ""
+msgstr "Greška tokom rada pomoćnika. Pomoćnik će biti prekinut."
 
 #: source/formwizard/dbwizres.src#RID_DB_COMMON_START + 14.String.Text
 msgid  "No connection to the database could be established."
@@ -553,11 +553,11 @@ msgstr "Polja u ~obrascu"
 
 #: source/formwizard/dbwizres.src#RID_DB_FORM_WIZARD_START + 2.String.Text
 msgid  "Binary fields are always listed and selectable from the left list.\nIf possible, they are interpreted as images."
-msgstr ""
+msgstr "Binarna polja su uvek navedena i uvek ih je moguće izabrati iz liste levo.\nAko je to moguće, predstavljena su kao slike."
 
 #: source/formwizard/dbwizres.src#RID_DB_FORM_WIZARD_START + 3.String.Text
 msgid  "A subform is a form that is inserted in another form.\nUse subforms to show data from tables or queries with a one-to-many relationship."
-msgstr ""
+msgstr "Podobrazac je obrazac koji je unet u drugi obrazac.\nKoristi podobrasce za prikaz podataka iz tabela ili upita sa relacijom „jedan prema više“."
 
 #: source/formwizard/dbwizres.src#RID_DB_FORM_WIZARD_START + 4.String.Text
 msgid  "~Add Subform"
@@ -593,7 +593,7 @@ msgstr "Polja u obrascu"
 
 #: source/formwizard/dbwizres.src#RID_DB_FORM_WIZARD_START + 19.String.Text
 msgid  "The join '<FIELDNAME1>' and '<FIELDNAME2>' has been selected twice.\nBut joins may only be used once."
-msgstr ""
+msgstr "Spajanje „<FIELDNAME1>“ i „<FIELDNAME2>“ je izabrano dva puta.\nMožete koristiti spajanje samo jednom."
 
 #: source/formwizard/dbwizres.src#RID_DB_FORM_WIZARD_START + 20.String.Text
 msgid  "~First joined subform field"
@@ -805,7 +805,7 @@ msgstr "Postavi ime obrasca"
 
 #: source/formwizard/dbwizres.src#RID_DB_FORM_WIZARD_START + 98.String.Text
 msgid  "A form with the name '%FORMNAME' already exists.\nChoose another name."
-msgstr ""
+msgstr "Obrazac „%FORMNAME“ već postoji.\nIzaberite drugi naziv."
 
 #: source/formwizard/dbwizres.src#RID_DB_QUERY_WIZARD_START + 0.String.Text
 msgid  "Query Wizard"
@@ -1097,15 +1097,15 @@ msgstr "Opšti pregled"
 
 #: source/formwizard/dbwizres.src#RID_DB_QUERY_WIZARD_START + 88.String.Text
 msgid  "A field that has not been assigned an aggregate function must be used in a group."
-msgstr ""
+msgstr "Morate koristiti polje kome nije dodeljena agregatna funkcija u grupi."
 
 #: source/formwizard/dbwizres.src#RID_DB_QUERY_WIZARD_START + 89.String.Text
 msgid  "The condition '<FIELDNAME> <LOGICOPERATOR> <VALUE>' was chosen twice. Each condition can only be chosen once"
-msgstr ""
+msgstr "Uslov „<FIELDNAME> <LOGICOPERATOR> <VALUE>“ je izabran dva puta. Svaki uslov možete izabrati samo jednom"
 
 #: source/formwizard/dbwizres.src#RID_DB_QUERY_WIZARD_START + 90.String.Text
 msgid  "The aggregate function <FUNCTION> has been assigned twice to the fieldname '<NUMERICFIELD>'."
-msgstr ""
+msgstr "Agregatna funcija <FUNCTION> je dodeljena dva puta polju „<NUMERICFIELD>“."
 
 #: source/formwizard/dbwizres.src#RID_DB_QUERY_WIZARD_START + 91.String.Text
 msgid  ", "
@@ -1321,11 +1321,11 @@ msgstr "Obrazac „<REPORTFORM>“ ne postoji."
 
 #: source/formwizard/dbwizres.src#RID_DB_REPORT_WIZARD_START + 65.String.Text
 msgid  "The query with the statement <BR>'<STATEMENT>' <BR> could not be run. <BR> Check your data source."
-msgstr ""
+msgstr "Ne mogu da pokrenem upit sa izrazom <BR>„<STATEMENT>“ <BR>. <BR> Proverite izvor podataka."
 
 #: source/formwizard/dbwizres.src#RID_DB_REPORT_WIZARD_START + 66.String.Text
 msgid  "The following hidden control in the form '<REPORTFORM>' could not be read: '<CONTROLNAME>'."
-msgstr ""
+msgstr "Ne mogu da pročitam sledeću skrivenu kontrolu u obrascu „<REPORTFORM>“: „<CONTROLNAME>“."
 
 #: source/formwizard/dbwizres.src#RID_DB_REPORT_WIZARD_START + 67.String.Text
 msgid  "Importing data..."
@@ -1349,7 +1349,7 @@ msgstr "Polje"
 
 #: source/formwizard/dbwizres.src#RID_DB_REPORT_WIZARD_START + 72.String.Text
 msgid  "An error occurred in the wizard.<BR>The template '%PATH' could be erroneous.<BR>Either the required sections or tables do not exist or exist under the wrong name.<BR>See the Help for more detailed information.<BR>Please select another template."
-msgstr ""
+msgstr "Greška u radu pomoćnika.<BR>Šablon „%PATH“ možda sadrži greške.<BR>Ili potrebni odeljci ili tabele ne postoje, ili postoje pod pogrešnim imenom.<BR>Pogledajte „Pomoć“ za više podataka.<BR>Izaberite drugi šablon."
 
 #: source/formwizard/dbwizres.src#RID_DB_REPORT_WIZARD_START + 73.String.Text
 msgid  "There is an invalid user field in a table."
@@ -1357,15 +1357,15 @@ msgstr "Postoji neispravno korisničko polje u tabeli."
 
 #: source/formwizard/dbwizres.src#RID_DB_REPORT_WIZARD_START + 74.String.Text
 msgid  "The sort criterium '<FIELDNAME>' was chosen twice. Each criterium can only be chosen once."
-msgstr ""
+msgstr "Kriterijum poretka „<FIELDNAME>“ je izabran dva puta. Svaki kriterijum se možete izabrati samo jednom."
 
 #: source/formwizard/dbwizres.src#RID_DB_REPORT_WIZARD_START + 75.String.Text
 msgid  "Note: The dummy text will be replaced by data from the database when the report is created."
-msgstr ""
+msgstr "Napomena: nepotrebni tekst će biti zamenjen podacima iz baze podataka kada se napravi izveštaj."
 
 #: source/formwizard/dbwizres.src#RID_DB_REPORT_WIZARD_START + 76.String.Text
 msgid  "A report '%REPORTNAME' already exists in the database. Please assign another name."
-msgstr ""
+msgstr "Izveštaj „%REPORTNAME“ već postoji u bazi podataka. Dodelite drugo ime."
 
 #: source/formwizard/dbwizres.src#RID_DB_REPORT_WIZARD_START + 78.String.Text
 msgid  "How do you want to proceed after creating the report?"
@@ -1465,7 +1465,7 @@ msgstr "Napravi tabelu"
 
 #: source/formwizard/dbwizres.src#RID_DB_TABLE_WIZARD_START + 14.String.Text
 msgid  "This wizard helps you to create a table for your database. After selecting a table category and a sample table, choose the fields you want to include in your table. You can include fields from more than one sample table."
-msgstr ""
+msgstr "Ovaj pomoćnik pomaže u izradi tabele za bazu podataka. Posle izbora kategorije za tabelu i uzorka tabele, izaberite polja koja želite da uključite u tabelu. Možete uključiti polja iz više od jedne tabele uzoraka."
 
 #: source/formwizard/dbwizres.src#RID_DB_TABLE_WIZARD_START + 15.String.Text
 msgid  "Ca~tegory"
@@ -1509,7 +1509,7 @@ msgstr "~Izabrana polja"
 
 #: source/formwizard/dbwizres.src#RID_DB_TABLE_WIZARD_START + 26.String.Text
 msgid  "A primary key uniquely identifies each record in a database table. Primary keys ease the linking of information in separate tables, and it is recommended that you have a primary key in every table. Without a primary key, it will not be possible to enter data into this table."
-msgstr ""
+msgstr "Primarni ključ jedinstveno predstavlja svaki zapis u tabeli baze podataka. Primarni ključevi olakšavaju spajanje podataka u različitim tabelama i preporučljivo je da postoji primarni ključ u svakoj tabeli. Bez primarnog ključa nije moguć unos podataka u ovu tabelu."
 
 #: source/formwizard/dbwizres.src#RID_DB_TABLE_WIZARD_START + 27.String.Text
 msgid  "~Create a primary key"
@@ -1545,7 +1545,7 @@ msgstr "Kako želite da nazovete tabelu?"
 
 #: source/formwizard/dbwizres.src#RID_DB_TABLE_WIZARD_START + 35.String.Text
 msgid  "Congratulations. You have entered all the information needed to create your table."
-msgstr ""
+msgstr "Odlično! Uneli ste sve podatke koji su potrebni za izradu tabele."
 
 #: source/formwizard/dbwizres.src#RID_DB_TABLE_WIZARD_START + 36.String.Text
 msgid  "What do you want to do next?"
@@ -1569,11 +1569,11 @@ msgstr "Ne mogu da otvorim napravljenu tabelu."
 
 #: source/formwizard/dbwizres.src#RID_DB_TABLE_WIZARD_START + 41.String.Text
 msgid  "The table name '%TABLENAME' contains a character ('%SPECIALCHAR') that might not be supported by the database."
-msgstr ""
+msgstr "Ime tabele „%TABLENAME“ sadrži znak („%SPECIALCHAR“) koji baza podataka možda ne podržava."
 
 #: source/formwizard/dbwizres.src#RID_DB_TABLE_WIZARD_START + 42.String.Text
 msgid  "The field name '%FIELDNAME' contains a special character ('%SPECIALCHAR') that might not be supported by the database."
-msgstr ""
+msgstr "Ime polja „%FIELDNAME“ sadrži poseban znak („%SPECIALCHAR“) koji baza podataka možda ne podržava."
 
 #: source/formwizard/dbwizres.src#RID_DB_TABLE_WIZARD_START + 43.String.Text
 msgid  "Field"
@@ -1593,11 +1593,11 @@ msgstr "Ukloni izabrano polje"
 
 #: source/formwizard/dbwizres.src#RID_DB_TABLE_WIZARD_START + 47.String.Text
 msgid  "The field cannot be inserted because this would exceed the maximum number of %COUNT possible fields in the database table"
-msgstr ""
+msgstr "Ne mogu da umetnem polje jer bi to premašilo dozvoljeni broj polja u tabeli baze (dozvoljeno: %COUNT)"
 
 #: source/formwizard/dbwizres.src#RID_DB_TABLE_WIZARD_START + 48.String.Text
 msgid  "The name '%TABLENAME' already exists.\nPlease enter another name."
-msgstr ""
+msgstr "Naziv „%TABLENAME“ već postoji.\nUnesite drugi naziv."
 
 #: source/formwizard/dbwizres.src#RID_DB_TABLE_WIZARD_START + 49.String.Text
 msgid  "Catalog of the table"
@@ -1733,7 +1733,7 @@ msgstr "Dizajn stranice"
 
 #: source/formwizard/dbwizres.src#RID_LETTERWIZARDDIALOG_START + 31.String.Text
 msgid  "This wizard helps you to create a letter template. You can then use the template as the basis for writing letters as often as desired."
-msgstr ""
+msgstr "Ovaj pomoćnik pomaže u pravljenju šablona za pismo. Šablone možete da koristite kao osnovu za pisanje novih pisama."
 
 #: source/formwizard/dbwizres.src#RID_LETTERWIZARDDIALOG_START + 32.String.Text
 msgid  "~Height:"
@@ -1801,11 +1801,11 @@ msgstr "Podnožje"
 
 #: source/formwizard/dbwizres.src#RID_LETTERWIZARDDIALOG_START + 48.String.Text
 msgid  "This wizard creates a letter template which enables you to create multiple letters with the same layout and settings."
-msgstr ""
+msgstr "Ovaj pomoćnik pravi šablon za pismo koje omogućava da se napravi više pisama sa istim izgledom i podešavanjima."
 
 #: source/formwizard/dbwizres.src#RID_LETTERWIZARDDIALOG_START + 49.String.Text
 msgid  "To create another new letter out of the template just navigate to the template location and double-click it."
-msgstr ""
+msgstr "Da napravite još jedno pismo po šablonu, idite do mesta gde ste sačuvali šablon i dva puta kliknite na njega."
 
 #: source/formwizard/dbwizres.src#RID_LETTERWIZARDDIALOG_START + 50.String.Text
 msgid  "Template name:"
@@ -1957,7 +1957,7 @@ msgstr "Dizajn stranice"
 
 #: source/formwizard/dbwizres.src#RID_FAXWIZARDDIALOG_START + 17.String.Text
 msgid  "This wizard helps you to create a fax template. The template can then be used to create a fax whenever needed."
-msgstr ""
+msgstr "Ovaj pomoćnik pomaže u pravljenju šablona za faks. Šablone možete da koristite za pisanje novih faksova."
 
 #: source/formwizard/dbwizres.src#RID_FAXWIZARDDIALOG_START + 18.String.Text
 msgid  "Return address"
@@ -1981,11 +1981,11 @@ msgstr "Podnožje"
 
 #: source/formwizard/dbwizres.src#RID_FAXWIZARDDIALOG_START + 23.String.Text
 msgid  "This wizard creates a fax template which enables you to create multiple faxes with the same layout and settings."
-msgstr ""
+msgstr "Ovaj pomoćnik pomaže u izradi šablona za više faksova istog izgleda i podešavanja."
 
 #: source/formwizard/dbwizres.src#RID_FAXWIZARDDIALOG_START + 24.String.Text
 msgid  "To create another new fax out of the template, go to the location where you saved the template and double-click the file."
-msgstr ""
+msgstr "Da napravite još jedan faks po šablonu, idite do mesta gde ste sačuvali šablon i dva puta kliknite na njega."
 
 #: source/formwizard/dbwizres.src#RID_FAXWIZARDDIALOG_START + 25.String.Text
 msgid  "Template Name:"
@@ -2121,7 +2121,7 @@ msgstr "Pomoćnik za veb"
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +2.String.Text
 msgid  "This Web Wizard is to aid you in publishing documents on the Internet.\n\nIt will convert the documents so that they can be viewed by a web browser. In addition, it will generate a Table of Contents page with links for easy access to the documents. The Web Wizard will also allow you to customize the design and layout of your web site.\n\nYou will be able to keep the documents you have published on the web up-to-date and add or remove documents at any time."
-msgstr ""
+msgstr "Pomoćnik za veb pomaže u objavljivanju dokumenata na Internet.\n\nPretvoriće dokumente tako da se mogu videti iz veb preglednika. Dodatno će napraviti stranicu sa sadržajem i vezama za jednostavan pristup dokumentima. Pomoćnik za veb će takođe dozvoliti prilagođavanje dizajna i izgleda veb lokacije. \n\nMoći ćete da održavate dokumente objavljena na vebu ažurnim i da u svakom trenutku dodate ili uklonite dokumente."
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +4.String.Text
 msgid  "~Delete"
@@ -2305,7 +2305,7 @@ msgstr "Prilagodi izabrani raspored"
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +61.String.Text
 msgid  "Include the following information for each document in the table of contents:"
-msgstr ""
+msgstr "Uključi sledeći podatak u svaki dokument u sadržaju:"
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +62.String.Text
 msgid  "Optimize the layout for screen resolution:"
@@ -2345,19 +2345,19 @@ msgstr "Lokacija „%FILENAME“ je lokalna datoteka."
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +75.String.Text
 msgid  "The ZIP target '%FILENAME' already exists. Do you want to overwrite the existing target? "
-msgstr ""
+msgstr "ZIP datoteka „%FILENAME“ već postoji. Želite li da je prepišete? "
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +76.String.Text
 msgid  "The FTP target directory '%FILENAME' is not empty. Some files might be overwritten. Do you want to continue?"
-msgstr ""
+msgstr "FTP direktorijum „%FILENAME“ nije prazan. Neke datoteke će možda biti prepisane. Želite li da nastavite?"
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +77.String.Text
 msgid  "The local target directory '%FILENAME' is not empty. Some files might be overwritten. Do you want to continue?"
-msgstr ""
+msgstr "Lokalni direktorijum „%FILENAME“ nije prazan. Neke datoteke će možda biti prepisane. Želite li da nastavite?"
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +78.String.Text
 msgid  "Settings already exist under the given name. Do you want to overwrite the existing settings? "
-msgstr ""
+msgstr "Podešavanja već postoje pod datim imenom. Želite li da prepišete postojeća podešavanja? "
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +79.String.Text
 msgid  "Exporting documents..."
@@ -2457,7 +2457,7 @@ msgstr "Greška pri kopiranju datoteka sa izgledom. "
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +108.String.Text
 msgid  "An error occurred while gathering document information for '%FILENAME'. "
-msgstr ""
+msgstr "Greška pri sakupljanju podataka za „%FILENAME“. "
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +109.String.Text
 msgid  "An error occurred while exporting the document '%FILENAME'."
@@ -2473,11 +2473,11 @@ msgstr "Pojavila se sigurnosna greška pri izvozu dokumenta „%FILENAME“."
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +112.String.Text
 msgid  "An input/output error occurred while exporting the document '%FILENAME'."
-msgstr ""
+msgstr "Pojavila se ulazno/izlazna greška pri izvozu dokumenta „%FILENAME“."
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +113.String.Text
 msgid  "An error occurred while copying media files to the temporary directory."
-msgstr ""
+msgstr "Greška pri kopiranju multimedijalnih datoteka u privremeni direktorijum."
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +114.String.Text
 msgid  "The web site could not be copied to the following destination: %URL"
@@ -2541,7 +2541,7 @@ msgstr "Pregled"
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +130.String.Text
 msgid  "The selected settings will be deleted.\n\nDo you really want to delete these settings? "
-msgstr ""
+msgstr "Izabrana podešavanja će biti obrisana.\n\nŽelite li da obrišete ova podešavanja? "
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +131.String.Text
 msgid  "%NUMBER pages"
@@ -2609,19 +2609,19 @@ msgstr "Ne mogu da napravim FTP direktorijum „%FILENAME“."
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +147.String.Text
 msgid  "The FTP directory '%FILENAME' does not exist. \nCreate the directory now?"
-msgstr ""
+msgstr "FTP direktorijum „%FILENAME“ ne postoji. \nDa napravim ovaj direktorijum?"
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +148.String.Text
 msgid  "The Zip file '%FILENAME' cannot be created: a directory of the same name already exists."
-msgstr ""
+msgstr "Ne mogu da napravim ZIP arhivsku datoteku „%FILENAME“: već postoji direktorijum sa istim imenom."
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +149.String.Text
 msgid  "The local directory '%FILENAME' cannot be created. \nPlease check your write-access."
-msgstr ""
+msgstr "Ne mogu da napravim lokalni direktorijum „%FILENAME“. \nProverite ovlašćenja za upis."
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +150.String.Text
 msgid  "The local directory '%FILENAME' does not exist. \nCreate the directory now?"
-msgstr ""
+msgstr "Ne postoji lokalni direktorijum „%FILENAME“. \nDa napravim ovaj direktorijum?"
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +151.String.Text
 msgid  "Size: %NUMBERKB"
@@ -2757,7 +2757,7 @@ msgstr "Uključi obrazac za beleženje minuta"
 
 #: source/formwizard/dbwizres.src#RID_AGENDAWIZARDDIALOG_START +13.String.Text
 msgid  "This wizard helps you to create an agenda template. The template can then be used to create an agenda whenever needed."
-msgstr ""
+msgstr "Ovaj pomoćnik pomaže pri izradi šablona za planer. Šablon se onda može koristiti za izradu planera po potrebi."
 
 #: source/formwizard/dbwizres.src#RID_AGENDAWIZARDDIALOG_START +14.String.Text
 msgid  "Time:"
@@ -2773,7 +2773,7 @@ msgstr "Lokacija:"
 
 #: source/formwizard/dbwizres.src#RID_AGENDAWIZARDDIALOG_START +17.String.Text
 msgid  "Placeholders will be used in empty fields. You can replace placeholders with text later."
-msgstr ""
+msgstr "Mestodržači će biti korišćeni u praznim poljima. Kasnije se mogu zameniti tekstom."
 
 #: source/formwizard/dbwizres.src#RID_AGENDAWIZARDDIALOG_START +18.String.Text
 msgid  "..."
@@ -2785,7 +2785,7 @@ msgstr "Napravi ~planer po ovom šablonu"
 
 #: source/formwizard/dbwizres.src#RID_AGENDAWIZARDDIALOG_START +20.String.Text
 msgid  "To create a new agenda out of the template, go to the location where you saved the template and double-click the file."
-msgstr ""
+msgstr "Za izradu novog planera od šablona, idite na mesto gde je sačuvan šablon i dvokliknite na datoteku."
 
 #: source/formwizard/dbwizres.src#RID_AGENDAWIZARDDIALOG_START +21.String.Text
 msgid  "Agenda item"
@@ -2829,7 +2829,7 @@ msgstr "Osoblje zgrade"
 
 #: source/formwizard/dbwizres.src#RID_AGENDAWIZARDDIALOG_START +31.String.Text
 msgid  "The agenda template will include placeholders for the names of the selected people. When creating an agenda from the template, you can replace these placeholder with the appropriate names."
-msgstr ""
+msgstr "Šablon planera će uključiti mestodržače za imena izabranih ljudi. U toku pravljenja planera od šablona, taj mestodržač se može zameniti odgovarajućim imenom."
 
 #: source/formwizard/dbwizres.src#RID_AGENDAWIZARDDIALOG_START +32.String.Text
 msgid  "Type of meeting"
@@ -2857,7 +2857,7 @@ msgstr "Datum:"
 
 #: source/formwizard/dbwizres.src#RID_AGENDAWIZARDDIALOG_START +39.String.Text
 msgid  "This wizard creates an agenda template which enables you to create multiple agendas with the same layout and settings."
-msgstr ""
+msgstr "Ovaj pomoćnik pravi šablon planera koji omogućava izradu više planera sa istim razmeštajem i podešavanjima."
 
 #: source/formwizard/dbwizres.src#RID_AGENDAWIZARDDIALOG_START +40.String.Text
 msgid  "Page design:"
@@ -3009,11 +3009,11 @@ msgstr "~Zatvori"
 
 #: source/importwizard/importwi.src#sWelcometextLabel1.String.Text
 msgid  "This wizard converts documents in %PRODUCTNAME format and Microsoft Office documents to the new OpenDocument format."
-msgstr ""
+msgstr "Ovaj pomoćnik prevodi dokumente u %PRODUCTNAME formatu i Microsoft Office dokumente u novi otvoreni dokument-format (ODF)."
 
 #: source/importwizard/importwi.src#sWelcometextLabel2.String.Text
 msgid  "Please note that when converting Microsoft documents any attached VBA macros lose their functionality."
-msgstr ""
+msgstr "Napomena: pri prevođenju Microsoft dokumenata pridruženi VBA makroi gube funkcionalnost."
 
 #: source/importwizard/importwi.src#sWelcometextLabel3.String.Text
 msgid  "Select the document type for conversion:"
@@ -3241,59 +3241,59 @@ msgstr "Dokumenti će biti izvezeni u sledeći direktorijum:"
 
 #: source/importwizard/importwi.src#sSumSOTextDocuments.String.Text
 msgid  "All %PRODUCTNAME text documents contained in the following directory will be imported:"
-msgstr ""
+msgstr "Biće uvezeni svi %PRODUCTNAME tekstualni dokumenti u sledećem direktorijumu:"
 
 #: source/importwizard/importwi.src#sSumSOTableDocuments.String.Text
 msgid  "All %PRODUCTNAME spreadsheets contained in the following directory will be imported:"
-msgstr ""
+msgstr "Sve %PRODUCTNAME tablice iz sledećeg direktorijuma će biti uvezene:"
 
 #: source/importwizard/importwi.src#sSumSODrawDocuments.String.Text
 msgid  "All %PRODUCTNAME drawing and presentation documents contained in the following directory will be imported:"
-msgstr ""
+msgstr "Biže uvezeni svi %PRODUCTNAME crteži i prezentacije u sledećem direktorijumu:"
 
 #: source/importwizard/importwi.src#sSumSOMathDocuments.String.Text
 msgid  "All %PRODUCTNAME formula documents contained in the following directory will be imported:"
-msgstr ""
+msgstr "Biće uvezeni svi %PRODUCTNAME dokumenti sa formulama u sledećem direktorijumu:"
 
 #: source/importwizard/importwi.src#sSumSOTextTemplates.String.Text
 msgid  "All %PRODUCTNAME text templates contained in the following directory will be imported:"
-msgstr ""
+msgstr "Biće uvezeni svi %PRODUCTNAME šabloni za tekst u sledećem direktorijumu:"
 
 #: source/importwizard/importwi.src#sSumSOTableTemplates.String.Text
 msgid  "All %PRODUCTNAME table templates contained in the following directory will be imported:"
-msgstr ""
+msgstr "Biće uvezeni svi %PRODUCTNAME šabloni za tabele u sledećem direktorijumu:"
 
 #: source/importwizard/importwi.src#sSumSODrawTemplates.String.Text
 msgid  "All %PRODUCTNAME drawing and presentation templates contained in the following directory will be imported:"
-msgstr ""
+msgstr "Biće uvezeni svi %PRODUCTNAME šabloni za crteže i predstave u sledećem direktorijumu:"
 
 #: source/importwizard/importwi.src#sSumSOGlobalDocuments.String.Text
 msgid  "All %PRODUCTNAME master documents contained in the following directory will be imported:"
-msgstr ""
+msgstr "Biće uvezeni svi glavni %PRODUCTNAME dokumenti iz fascikle:"
 
 #: source/importwizard/importwi.src#sSumMSTextDocuments.String.Text
 msgid  "All Word documents contained in the following directory will be imported:"
-msgstr ""
+msgstr "Biće uvezeni svi Word dokumenti u sledećem direktorijumu:"
 
 #: source/importwizard/importwi.src#sSumMSTableDocuments.String.Text
 msgid  "All Excel documents contained in the following directory will be imported:"
-msgstr ""
+msgstr "Biće uvezeni svi Excel dokumenti u sledećem direktorijumu:"
 
 #: source/importwizard/importwi.src#sSumMSDrawDocuments.String.Text
 msgid  "All PowerPoint documents contained in the following directory will be imported:"
-msgstr ""
+msgstr "Biće uvezeni svi PowerPoint dokumenti u sledećem direktorijumu:"
 
 #: source/importwizard/importwi.src#sSumMSTextTemplates.String.Text
 msgid  "All Word templates contained in the following directory will be imported:"
-msgstr ""
+msgstr "Biće uvezeni svi Word šabloni u sledećem direktorijumu:"
 
 #: source/importwizard/importwi.src#sSumMSTableTemplates.String.Text
 msgid  "All Excel templates contained in the following directory will be imported:"
-msgstr ""
+msgstr "Biće uvezeni svi Excel šabloni u sledećem direktorijumu:"
 
 #: source/importwizard/importwi.src#sSumMSDrawTemplates.String.Text
 msgid  "All PowerPoint templates contained in the following directory will be imported:"
-msgstr ""
+msgstr "Biće uvezeni svi PowerPoint šabloni u sledećem direktorijumu:"
 
 #: source/schedule/schedule.src#dlgCalTitle.String.Text
 msgid  "%PRODUCTNAME Calendar"
@@ -3481,7 +3481,7 @@ msgstr "Napredak:"
 
 #: source/template/template.src#SAMPLES.String.Text
 msgid  "In order to use the full functionality of this sample, create a document that is based on this template."
-msgstr ""
+msgstr "Da biste iskoristili sve funkcije ovog uzorka, napravite dokument baziran na ovom šablonu."
 
 #: source/template/template.src#SAMPLES + 1.String.Text
 msgid  "Remarks"
@@ -3493,7 +3493,7 @@ msgstr "Izbor teme"
 
 #: source/template/template.src#STYLES + 1.String.Text
 msgid  "Error while saving the document to the clipboard! The following action cannot be undone."
-msgstr ""
+msgstr "Greška prilikom čuvanja dokumenta u spisak isečaka! Ne mogu da opozovem sledeću naredbu."
 
 #: source/template/template.src#STYLES + 2.String.Text
 msgid  "~Cancel"

@@ -45,7 +45,7 @@ msgstr ""
 
 #: source/all/crashrep.ulf#%WELCOME_BODY2%
 msgid  "It's easy - just send the report without any further effort on your part by clicking 'Send' in the next dialog, or you can briefly describe how the error occurred and then click 'Send'. If you want to see the report, click the 'Show Report' button. No data will be sent if you click 'Do Not Send'.\n\n"
-msgstr ""
+msgstr "'அனுப்பு' பொத்தானை அழுத்தி இந்த பிழை அறிக்கையை சுலபமாக அனுப்பலாம் அல்லது பிழை நேர்ந்த காரணத்தை விளக்கி அனுப்பலாம். 'காட்டு அறிக்கை' பொத்தானை அழுத்தி அறிக்கையை காணலாம். 'அனுப்பாதே' பொத்தானை அழுத்தினால் அறிக்கை அனுப்பப்படமாட்டாது.\n\n"
 
 #: source/all/crashrep.ulf#%WELCOME_BODY3%
 msgid  "Customer Privacy\nThe information gathered is limited to data concerning the state of %PRODUCTNAME% %PRODUCTVERSION% when the error occurred. Other information about passwords or document contents is not collected.\n\nThe information will only be used to improve the quality of %PRODUCTNAME% and will not be shared with third parties.\nFor more information on Apache OpenOffice's privacy policy, visit\n"
@@ -81,7 +81,7 @@ msgstr ""
 
 #: source/all/crashrep.ulf#%ENTER_TITLE%
 msgid  "Which type of document (e.g. presentation) were you using when the error occurred?"
-msgstr ""
+msgstr "பிழை நேர்ந்தப் பொழுது எந்த வகை ஆவணத்தை (எ.கா. வழங்கல்) உபயோகித்துக் கொண்டிருந்தீர்கள்?"
 
 #: source/all/crashrep.ulf#%ALLOW_CONTACT%
 msgid  "~I allow Apache OpenOffice to contact me regarding this report."
@@ -93,7 +93,7 @@ msgstr "மின்னஞ்சல் முகவரியை உள்ளி�
 
 #: source/all/crashrep.ulf#%ENTER_DESCRIPTION%
 msgid  "~How were you using %PRODUCTNAME% when the error occurred ?"
-msgstr ""
+msgstr "%PRODUCTNAME% ஐ எவ்வாறு பயன்படுத்திக் கொண்டிருந்தபோது பிழை நேர்ந்தது? (~H)"
 
 #: source/all/crashrep.ulf#%BACK_BUTTON%
 msgid  " << ~Back"
@@ -121,23 +121,23 @@ msgstr "அறிக்கையில் சேமி"
 
 #: source/all/crashrep.ulf#%ERROR_MSG_SIMPLE_MAPI%
 msgid  "The error report could not be sent because the default e-mail program does not support MAPI.\n Please use a MAPI-compatible e-mail program."
-msgstr ""
+msgstr "அனுப்ப இயலாது முன்பிருந்த மின் அஞ்சல் நிரல் MAPI ஐ ஆதரிக்காததால் பிழை அறிக்கையை முடியாததால். \nதயவு செய்து MAPI ஐ ஆதரிக்கும் மின் அஞ்சல் நிரலைலை பயன்படுத்தவும்."
 
 #: source/all/crashrep.ulf#%ERROR_MSG_DISK_FULL%
 msgid  "The error report could not be temporarily saved and could therefore not be sent."
-msgstr ""
+msgstr "பிழை அறிக்கையை தற்காலிகமாக சேமிக்க முடியாததால் அதை அனுப்ப இயலாது."
 
 #: source/all/crashrep.ulf#%ERROR_MSG_SENDMAIL%
 msgid  "The error report could not be sent because 'sendmail' could not be started.\nPlease check the 'sendmail' settings."
-msgstr ""
+msgstr "'அஞ்சல் அனுப்பு' ஐ தொடங்க முடியாததால் பிழை அறிக்கையை அனுப்ப இயலாது.\n 'sendmail' அமைவுகளை சரிபார்க்கவும்."
 
 #: source/all/crashrep.ulf#%ERROR_MSG_PROXY%
 msgid  "The error report could not be sent. Please check the proxy settings under 'Options' in the Error Report Tool."
-msgstr ""
+msgstr "பிழை அறிக்கையை அனுப்ப முடியவில்லை. பிழை அறிக்கை கருவியில் 'விருப்பங்கள்' உள்ள ப்ராக்ஸி அமைவுகளை சரிபார்க்கவும்."
 
 #: source/all/crashrep.ulf#%ERROR_MSG_NOCONNECT%
 msgid  "The error report could not be sent because there is no Internet connection. Please check your Internet settings."
-msgstr ""
+msgstr "இணையத் தொடர்பு இல்லாததால் பிழை அறிக்கையையை அனுப்ப முடியவில்லை. இணையத்தள  அமைவுகளை சரிபார்க்கவும்."
 
 #: source/all/crashrep.ulf#%OPTIONS_BUTTON%
 msgid  "~Options..."
@@ -173,7 +173,7 @@ msgstr "துறை (~P)"
 
 #: source/all/crashrep.ulf#%PROXY_SETTINGS_DESCRIPTION%
 msgid  "The %PRODUCTNAME% Error Report tool needs to be connected to the Internet to be able to send error reports.\n\nCompanies often use proxy servers in conjunction with a firewall to protect the network.\n\nIf this applies to your situation, you have to specify the address and port for the server."
-msgstr ""
+msgstr "The %PRODUCTNAME% Error Report tool needs to be connected to the Internet to be able to send error reports.\n\nCompanies often use proxy servers in conjunction with a firewall to protect the network.\n\nIf this applies to your situation, you have to specify the address and port for the server."
 
 #: source/all/crashrep.ulf#%SENDING_REPORT_HEADER%
 msgid  "Sending Error Report"
@@ -201,8 +201,8 @@ msgstr "-p <process ID>"
 
 #: source/all/crashrep.ulf#%MSG_PARAM_PROCESSID_DESCRIPTION%
 msgid  "Assigns the %PRODUCTNAME% process ID (PID) to the Error Report Tool"
-msgstr ""
+msgstr "%PRODUCTNAME% செய்முறை அடையாளத்தை (PID) பிழை அறிக்கை கருவிக்கு ஒதுக்குகிறது"
 
 #: source/all/crashrep.ulf#%MSG_PARAM_HELP_DESCRIPTION%
 msgid  "Shows this help text.\nDetailed information can be found in the Setup Guide."
-msgstr ""
+msgstr "இந்த உதவி உரையைக் காட்டும்.\nவிரிவான தகவலை அமைவு கையேட்டில் காணலாம்."

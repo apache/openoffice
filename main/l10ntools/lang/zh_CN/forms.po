@@ -177,7 +177,7 @@ msgstr "替换"
 
 #: source/resource/strings.src#RID_STR_CONTROL_SUBSTITUTED_EPXPLAIN.String.Text
 msgid  "An error occurred while this control was being loaded. It was therefore replaced with a placeholder."
-msgstr ""
+msgstr "加载此控件时出错。因此用占位符替换此控件。"
 
 #: source/resource/strings.src#RID_STR_READERROR.String.Text
 msgid  "Error reading data from database"
@@ -233,7 +233,7 @@ msgstr "查询语句出现语法错误。"
 
 #: source/resource/strings.src#RID_STR_INCOMPATIBLE_TYPES.String.Text
 msgid  "The value types supported by the binding cannot be used for exchanging data with this control."
-msgstr ""
+msgstr "绑定功能支持的值类型不能用于与此控件交换数据。"
 
 #: source/resource/strings.src#RID_STR_LABEL_RECORD.String.Text
 msgid  "Record"
@@ -241,7 +241,7 @@ msgstr "记录"
 
 #: source/resource/strings.src#RID_STR_INVALID_VALIDATOR.String.Text
 msgid  "The control is connected to an external value binding, which at the same time acts as validator. You need to revoke the value binding, before you can set a new validator."
-msgstr ""
+msgstr "该控件连接到同时起到验证程序功能的外部值绑定。只有先将该值绑定取消，才可设置新验证程序。"
 
 #: source/resource/strings.src#RID_STR_LABEL_OF.String.Text
 msgid  "of"
@@ -249,7 +249,7 @@ msgstr "/"
 
 #: source/resource/strings.src#RID_STR_QUERY_SAVE_MODIFIED_ROW.String.Text
 msgid  "The content of the current form has been modified.\nDo you want to save your changes?"
-msgstr ""
+msgstr "当前窗体的内容已修改。\n是否保存这些更改？"
 
 #: source/resource/strings.src#RID_STR_COULD_NOT_SET_ORDER.String.Text
 msgid  "Error setting the sort criteria"

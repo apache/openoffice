@@ -65,7 +65,7 @@ msgstr "'#1' adı daha önceden kullanılmış ve tekrar atanamadı."
 
 #: source/core/resource/strings.src#RID_STR_ERROR_WRONG_ARGUMENT.String.Text
 msgid  "You tried to set an illegal argument. Please have a look at '#1' for valid arguments."
-msgstr ""
+msgstr "Küme geçersiz bir değişkenle denenmiş. Lütfen geçerli değişkenler için '#1' 'e bakın."
 
 #: source/core/resource/strings.src#RID_STR_ARGUMENT_IS_NULL.String.Text
 msgid  "The element is invalid."
@@ -140,12 +140,20 @@ msgid  "Group Header"
 msgstr "Grup Üst Bilgisi"
 
 #: source/ui/dlg/GroupsSorting.src#RID_GROUPS_SORTING.LST_HEADERLST.Default.StringList.item
+msgid  "Present"
+msgstr "Mevcut"
+
+#: source/ui/dlg/GroupsSorting.src#RID_GROUPS_SORTING.LST_HEADERLST.Default.StringList.item
 msgid  "Not present"
 msgstr "Mevcut değil"
 
 #: source/ui/dlg/GroupsSorting.src#RID_GROUPS_SORTING.FT_FOOTER.FixedText.Text
 msgid  "Group Footer"
 msgstr "Grup Alt Bilgisi"
+
+#: source/ui/dlg/GroupsSorting.src#RID_GROUPS_SORTING.LST_FOOTERLST.Default.StringList.item
+msgid  "Present"
+msgstr "Mevcut"
 
 #: source/ui/dlg/GroupsSorting.src#RID_GROUPS_SORTING.LST_FOOTERLST.Default.StringList.item
 msgid  "Not present"
@@ -253,15 +261,7 @@ msgstr "Tek sayfada grubu beraber tut?"
 
 #: source/ui/dlg/GroupsSorting.src#STR_RPT_HELP_SORT.String.Text
 msgid  "Select ascending or descending sort order. Ascending means from A to Z or 0 to 9"
-msgstr ""
-
-#: source/ui/dlg/GroupsSorting.src#RID_GROUPS_SORTING.LST_HEADERLST.Default.StringList.item
-msgid  "Present"
-msgstr "Mevcut"
-
-#: source/ui/dlg/GroupsSorting.src#RID_GROUPS_SORTING.LST_FOOTERLST.Default.StringList.item
-msgid  "Present"
-msgstr "Mevcut"
+msgstr "Azalan ya da artan sıralama düzeni seçin. A'dan Z'ye ya da 0'dan 9'a artış."
 
 #: source/ui/dlg/PageNumber.src#RID_PAGENUMBERS.ModalDialog.Text
 msgid  "Page Numbers"
@@ -300,6 +300,14 @@ msgid  "Alignment:"
 msgstr "Hizalama:"
 
 #: source/ui/dlg/PageNumber.src#RID_PAGENUMBERS.LST_ALIGNMENT.Default.StringList.item
+msgid  "Left"
+msgstr "Sol"
+
+#: source/ui/dlg/PageNumber.src#RID_PAGENUMBERS.LST_ALIGNMENT.Default.StringList.item
+msgid  "Center"
+msgstr "Merkez"
+
+#: source/ui/dlg/PageNumber.src#RID_PAGENUMBERS.LST_ALIGNMENT.Default.StringList.item
 msgid  "Right"
 msgstr "Sağ"
 
@@ -312,20 +320,12 @@ msgid  "~Help"
 msgstr "~Yardım"
 
 #: source/ui/dlg/PageNumber.src#STR_RPT_PN_PAGE.String.Text
-msgid  ""Page " & #PAGENUMBER#"
-msgstr ""
+msgid  "\"Page \" & #PAGENUMBER#"
+msgstr "\"Sayfa \" & #PAGENUMBER#"
 
 #: source/ui/dlg/PageNumber.src#STR_RPT_PN_PAGE_OF.String.Text
-msgid  " & " of " & #PAGECOUNT#"
-msgstr ""
-
-#: source/ui/dlg/PageNumber.src#RID_PAGENUMBERS.LST_ALIGNMENT.Default.StringList.item
-msgid  "Left"
-msgstr "Sol"
-
-#: source/ui/dlg/PageNumber.src#RID_PAGENUMBERS.LST_ALIGNMENT.Default.StringList.item
-msgid  "Center"
-msgstr "Merkez"
+msgid  " & \" of \" & #PAGECOUNT#"
+msgstr " & \" / \" & #PAGECOUNT#"
 
 #: source/ui/dlg/dlgpage.src#RID_PAGEDIALOG_PAGE.TabDialog.Text
 msgid  "Page Setup"
@@ -456,6 +456,10 @@ msgid  "Properties..."
 msgstr "Özellikler..."
 
 #: source/ui/dlg/CondFormat.src#WIN_CONDITION.LB_COND_TYPE.Default.StringList.item
+msgid  "Field Value Is"
+msgstr "Alan Değeri"
+
+#: source/ui/dlg/CondFormat.src#WIN_CONDITION.LB_COND_TYPE.Default.StringList.item
 msgid  "Expression Is"
 msgstr "Deyim"
 
@@ -549,11 +553,7 @@ msgstr "Yardım"
 
 #: source/ui/dlg/CondFormat.src#ADDFIELD_HELP_FIELD.FixedText.Text
 msgid  "Highlight the fields to insert into the selected section of the template, then click Insert or press Enter."
-msgstr ""
-
-#: source/ui/dlg/CondFormat.src#WIN_CONDITION.LB_COND_TYPE.Default.StringList.item
-msgid  "Field Value Is"
-msgstr "Alan Değeri"
+msgstr "Şablonun seçili bölümüne eklenecek alanları vurgulayın, sonra Ekle'yı tıklayın veya Enter'a basın."
 
 #: source/ui/dlg/DateTime.src#RID_DATETIME_DLG.ModalDialog.Text
 msgid  "Date and Time"
@@ -833,7 +833,7 @@ msgstr "Alt alanlara bağlantı"
 
 #: source/ui/inspection/inspection.src#RID_STR_EXPLANATION.String.Text
 msgid  "Charts can be used to display detailed data about the current record of the report. To do this, you can specify which columns in the chart match which columns in the report."
-msgstr ""
+msgstr "Çizelgeler rapordaki geçerli kayıt hakkında ayrıntılı bir şekilde veri gösterebilir. Bunu yapmak için rapordaki sütunlarla çizelgedeki sütunların eşleştirilmesi yeterlidir."
 
 #: source/ui/inspection/inspection.src#RID_STR_DETAILLABEL.String.Text
 msgid  "Chart"
@@ -1241,15 +1241,11 @@ msgstr "İçeriğe bağlı rapor çalıştırılamaz."
 
 #: source/ui/report/report.src#RID_ERR_NO_OBJECTS.String.Text
 msgid  "The report can not be executed unless at least one object has been inserted."
-msgstr ""
+msgstr "Raporun çalıştırılması için en az bir nesne olması gerekir."
 
 #: source/ui/report/report.src#RID_STR_UNDO_SHRINK.String.Text
 msgid  "Shrink Section"
 msgstr "Bölümü Küçült"
-
-#: source/ui/report/report.src#RID_STR_INSERT.String.Text
-msgid  "Insert"
-msgstr "Ekle"
 
 #: source/ui/report/report.src#RID_STR_DETAIL.String.Text
 msgid  "Detail"
@@ -1270,3 +1266,7 @@ msgstr "Rapor Üst Bilgisi"
 #: source/ui/report/report.src#RID_STR_REPORT_FOOTER.String.Text
 msgid  "Report Footer"
 msgstr "Rapor Alt Bilgisi"
+
+#: source/ui/report/report.src#RID_STR_INSERT.String.Text
+msgid  "Insert"
+msgstr "Ekle"

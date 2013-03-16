@@ -49,7 +49,7 @@ msgstr "資料表選取範圍"
 
 #: source/abpilot/abspilot.src#RID_DLG_ADDRESSBOOKSOURCEPILOT.STR_MANUAL_FIELD_MAPPING.String.Text
 msgid  "Field Assignment"
-msgstr "指定欄位"
+msgstr "欄位指定"
 
 #: source/abpilot/abspilot.src#RID_DLG_ADDRESSBOOKSOURCEPILOT.STR_FINAL_CONFIRM.String.Text
 msgid  "Data Source Title"
@@ -57,7 +57,7 @@ msgstr "資料來源標題"
 
 #: source/abpilot/abspilot.src#RID_PAGE_SELECTABTYPE.FT_TYPE_HINTS.FixedText.Text
 msgid  "%PRODUCTNAME lets you access address data already present in your system. To do this, a %PRODUCTNAME data source will be created in which your address data is available in tabular form.\n\nThis wizard helps you create the data source."
-msgstr ""
+msgstr "%PRODUCTNAME 可讓您存取系統中存在的地址資料。若要執行此動作，必須在表格表單中為可使用的地址資料建立 %PRODUCTNAME 資料來源。\n\n這個精靈可以幫助您建立資料來源。"
 
 #: source/abpilot/abspilot.src#RID_PAGE_SELECTABTYPE.FL_TYPE.FixedLine.Text
 msgid  "Please select the type of your external address book:"
@@ -109,7 +109,7 @@ msgstr "其它的資料來源"
 
 #: source/abpilot/abspilot.src#RID_PAGE_ADMININVOKATION.FT_ADMINEXPLANATION.FixedText.Text
 msgid  "To set up the new data source, additional information is required.\n\nClick the following button to open another dialog in which you then enter the necessary information."
-msgstr ""
+msgstr "新增一個資料來源還必須做其它的設定。\n\n按一下下方的按鈕，就會開啟一個對話方塊。在這個對話方塊之中就可以做所有未完成的設定。"
 
 #: source/abpilot/abspilot.src#RID_PAGE_ADMININVOKATION.PB_INVOKE_ADMIN_DIALOG.PushButton.Text
 msgid  "Settings"
@@ -117,15 +117,15 @@ msgstr "設定"
 
 #: source/abpilot/abspilot.src#RID_PAGE_ADMININVOKATION.FT_ERROR.FixedText.Text
 msgid  "The connection to the data source could not be established.\nBefore you proceed, please check the settings made, or (on the previous page) choose another address data source type."
-msgstr ""
+msgstr "無法和資料來源連線。\n在繼續執行指令之前，請檢查所有完成的設定，或者返回到上一頁，選擇另外一個地址資料來源。"
 
 #: source/abpilot/abspilot.src#RID_PAGE_TABLESELECTION_AB.FL_TOOMUCHTABLES.FixedText.Text
 msgid  "The external data source you have chosen contains more than one address book.\nPlease select the one you mainly want to work with:"
-msgstr ""
+msgstr "已經選取的外部資料來源內含多個通訊錄。\n請選取其中一個主要使用的通訊錄："
 
 #: source/abpilot/abspilot.src#RID_PAGE_FIELDMAPPING.FT_FIELDASSIGMENTEXPL.FixedText.Text
-msgid  "To incorporate the address data in your templates, %PRODUCTNAME has to know which fields contain which data.\n\nFor instance, you could have stored the e-mail addresses in a field named "email", or "E-mail" or "EM" - or something completely different.\n\nClick the button below to open another dialog where you can enter the settings for your data source."
-msgstr ""
+msgid  "To incorporate the address data in your templates, %PRODUCTNAME has to know which fields contain which data.\n\nFor instance, you could have stored the e-mail addresses in a field named \"email\", or \"E-mail\" or \"EM\" - or something completely different.\n\nClick the button below to open another dialog where you can enter the settings for your data source."
+msgstr "要在範本之中正確使用通訊錄資料就必須讓 %PRODUCTNAME 知道哪些欄位含有何種資料。\n\n例如，可以在一個自訂名稱的欄位之内或在一個採用欄位名稱「EMail」，或「E-Mail」或「EM」欄位之内儲存電子郵件地址。\n\n按下方的按鈕，就會開啟一個提供設定資料來源的對話方塊。"
 
 #: source/abpilot/abspilot.src#RID_PAGE_FIELDMAPPING.PB_INVOKE_FIELDS_DIALOG.PushButton.Text
 msgid  "Field Assignment"
@@ -133,7 +133,7 @@ msgstr "指定欄位"
 
 #: source/abpilot/abspilot.src#RID_PAGE_FINAL.FT_FINISH_EXPL.FixedText.Text
 msgid  "That was all the information necessary to integrate your address data into %PRODUCTNAME.\n\nNow, just enter the name under which you want to register the data source in %PRODUCTNAME."
-msgstr ""
+msgstr "您已經完成所有必須的 %PRODUCTNAME 整合通訊錄資料的設定。\n\n現在您只需要輸入 %PRODUCTNAME 用來登記和使用這個資料來源的名稱。"
 
 #: source/abpilot/abspilot.src#RID_PAGE_FINAL.FT_LOCATION.FixedText.Text
 msgid  "Location"
@@ -153,7 +153,7 @@ msgstr "通訊錄名稱"
 
 #: source/abpilot/abspilot.src#RID_PAGE_FINAL.FT_DUPLICATENAME.FixedText.Text
 msgid  "Another data source already has this name. As data sources have to have globally unique names, you need to choose another one."
-msgstr ""
+msgstr "已經存在一個同名的資料來源。因為一個資料來源名稱必須是在資料庫範圍內是唯一的，請採用另外一個有效的名稱。"
 
 #: source/abpilot/abspilot.src#RID_ERR_NEEDTYPESELECTION.ErrorBox.Message
 msgid  "Please select a type of address book."
@@ -161,7 +161,7 @@ msgstr "請選擇一個合適的通訊錄類型。"
 
 #: source/abpilot/abspilot.src#RID_QRY_NOTABLES.QueryBox.Message
 msgid  "The data source does not contain any tables.\nDo you want to set it up as an address data source, anyway?"
-msgstr ""
+msgstr "這個資料來源沒有任何的資料表。\n無論如何，還是用它作為通訊錄資料來源嗎？"
 
 #: source/abpilot/abspilot.src#RID_STR_DEFAULT_NAME.String.Text
 msgid  "Addresses"
@@ -184,8 +184,8 @@ msgid  "Address Data - Field Assignment"
 msgstr "通訊錄資料 - 指定欄位"
 
 #: source/abpilot/abspilot.src#RID_STR_NOFIELDSASSIGNED.String.Text
-msgid  "There are no fields assigned at this time.\nYou can either assign fields now or do so later by first choosing:\n"File - Template - Address Book Source...""
-msgstr ""
+msgid  "There are no fields assigned at this time.\nYou can either assign fields now or do so later by first choosing:\n\"File - Template - Address Book Source...\""
+msgstr "至今還未指定任何欄位。\n如果現在不指定欄位，也可以以後再做這個設定：\n按功能表 [檔案] - [範本] - [通訊錄資料來源...]。"
 
 #: source/bibliography/toolbar.src#RID_BIB_TOOLBAR.TBC_FT_SOURCE.ToolBoxItem.Text
 msgid  "Table"
@@ -233,7 +233,7 @@ msgstr "小手冊"
 
 #: source/bibliography/sections.src#RID_TP_GENERAL.ST_TYPE_CONFERENCE.String.Text
 msgid  "Conference proceedings"
-msgstr "會議報告"
+msgstr "研討會論文集"
 
 #: source/bibliography/sections.src#RID_TP_GENERAL.ST_TYPE_INBOOK.String.Text
 msgid  "Book excerpt"
@@ -493,7 +493,7 @@ msgstr "控制項"
 
 #: source/dbpilots/listcombopages.src#RID_PAGE_LCW_CONTENTSELECTION_TABLE.FT_SELECTTABLE_LABEL.FixedText.Text
 msgid  "On the right side, you see all the tables from the data source of the form.\n\n\nChoose the table from which the data should be used as basis for the list content:"
-msgstr ""
+msgstr "在右邊您能夠看到表單資料來源的所有資料表。\n\n\n請選擇一些用於組成清單內容的基本資料的資料表："
 
 #: source/dbpilots/listcombopages.src#RID_PAGE_LCW_CONTENTSELECTION_FIELD.TabPage.Text
 msgid  "Field Selection"
@@ -513,7 +513,7 @@ msgstr "選擇的欄位內容會顯示在組合欄位的清單之中。"
 
 #: source/dbpilots/listcombopages.src#RID_PAGE_LCW_CONTENTSELECTION_FIELD.STR_FIELDINFO_LISTBOX.String.Text
 msgid  "The contents of the selected field will be shown in the list box if the linked fields are identical."
-msgstr ""
+msgstr "如果連結的欄位相符，所選擇的欄位內容就會顯示在清單方塊之中。"
 
 #: source/dbpilots/listcombopages.src#RID_PAGE_LCW_FIELDLINK.TabPage.Text
 msgid  "Field Link"
@@ -521,7 +521,7 @@ msgstr "欄位連結"
 
 #: source/dbpilots/listcombopages.src#RID_PAGE_LCW_FIELDLINK.FT_FIELDLINK_DESC.FixedText.Text
 msgid  "This is where you select fields with matching contents so that the value from the display field will be shown."
-msgstr ""
+msgstr "在這裡選擇其內容必須相同的欄位，用於在顯示欄位內顯示相關的值。"
 
 #: source/dbpilots/listcombopages.src#RID_PAGE_LCW_FIELDLINK.FT_VALUELISTFIELD.FixedText.Text
 msgid  "Field from the ~Value Table"
@@ -533,7 +533,7 @@ msgstr "清單資料表的欄位(~L)"
 
 #: source/dbpilots/listcombopages.src#RID_STR_COMBOWIZ_DBFIELD.String.Text
 msgid  "You can either save the value of the combo box in a database field or use it for display purposes."
-msgstr ""
+msgstr "您能夠將組合方塊的值存入一個資料庫欄位或用於顯示。"
 
 #: source/dbpilots/gridpages.src#RID_PAGE_GW_FIELDSELECTION.TabPage.Text
 msgid  "Field Selection"
@@ -589,7 +589,7 @@ msgstr "資料"
 
 #: source/dbpilots/commonpagesdbp.src#RID_PAGE_TABLESELECTION.FT_EXPLANATION.FixedText.Text
 msgid  "Currently, the form the control belongs to is not (or not completely) bound to a data source.\n\nPlease choose a data source and a table.\n\n\nPlease note that the settings made on this page will take effect immediately upon leaving the page."
-msgstr ""
+msgstr "目前從屬於這個表單的控制項尚未(或沒有完全)和一個資料來源連線。\n\n請您選擇一個資料來源和一個資料表。\n\n\n請注意：離開這個頁面時，所有的新設定就會立刻生效。"
 
 #: source/dbpilots/commonpagesdbp.src#RID_PAGE_TABLESELECTION.FT_DATASOURCE.FixedText.Text
 msgid  "~Data source:"
@@ -705,7 +705,7 @@ msgstr "這些是用於製作選項群組所需的全部的設定資料。"
 
 #: source/dbpilots/groupboxpages.src#RID_STR_GROUPWIZ_DBFIELD.String.Text
 msgid  "You can either save the value of the option group in a database field or use it for a later action."
-msgstr ""
+msgstr "您能夠在一個資料庫欄位內儲存選項群組的值，以備之後使用。"
 
 #: source/preload/preload.src#RID_DLG_OEMWIZARD.PB_PREV.PushButton.Text
 msgid  "<< Back"
@@ -737,7 +737,7 @@ msgstr "歡迎"
 
 #: source/preload/preload.src#RID_TP_WELCOME.FT_INFO.FixedText.Text
 msgid  "Welcome to %PRODUCTNAME %PRODUCTVERSION OEM\n\nTo start the %PRODUCTNAME %PRODUCTVERSION OEM, please enter your personal data in the dialog following the license text. Important information is contained in the readme files which are located in the %PRODUCTNAME product directory. Please read these files carefully. You can also find detailed information at the Oracle website \n\nhttp://www.oracle.com/us/products/applications/open-office."
-msgstr ""
+msgstr "歡迎使用 %PRODUCTNAME %PRODUCTVERSION OEM\n\n若要啟動 %PRODUCTNAME %PRODUCTVERSION OEM，請在許可授權文字後面出現的對話方塊中輸入您的個人資料。在讀我檔案中包含重要的資訊，其位置在 %PRODUCTNAME 產品目錄中。請仔細閱讀這些檔案。您也可以在 Oracle 網站找到詳細資訊：\n\nhttp://www.oracle.com/us/products/applications/open-office"
 
 #: source/preload/preload.src#RID_TP_LICENSE.TabPage.Text
 msgid  "License Agreement"
@@ -753,7 +753,7 @@ msgstr "1."
 
 #: source/preload/preload.src#RID_TP_LICENSE.FT_INFO2.FixedText.Text
 msgid  "View the complete License Agreement. Please use the scroll bar or the '%PAGEDOWN' button in this dialog to view the entire license text."
-msgstr ""
+msgstr "閱讀整份許可授權合約。請使用捲軸或此對話方塊中的 '%PAGEDOWN' 按鈕來檢視完整的許可授權合約內容。"
 
 #: source/preload/preload.src#RID_TP_LICENSE.PB_PAGEDOWN.PushButton.Text
 msgid  "Page Down"
@@ -801,7 +801,7 @@ msgstr "自動排序"
 
 #: source/propctrlr/selectlabeldialog.src#RID_DLG_SELECTLABELCONTROL.1.FixedText.Text
 msgid  "These are control fields that can be used as label fields for the $control_class$ $control_name$."
-msgstr ""
+msgstr "這些是全部的控制項，它們能夠被當作分類 $control_class$ $control_name$ 標籤欄位。"
 
 #: source/propctrlr/selectlabeldialog.src#RID_DLG_SELECTLABELCONTROL.1.CheckBox.Text
 msgid  "~No assignment"
@@ -817,7 +817,7 @@ msgstr "表單"
 
 #: source/propctrlr/pcrmiscres.src#RID_STR_CONFIRM_DELETE_DATA_TYPE.String.Text
 msgid  "Do you want to delete the data type '#type#' from the model?\nPlease note that this will affect all controls which are bound to this data type."
-msgstr ""
+msgstr "您要刪除模型中的資料類型「#type#」嗎？\n請注意，這將會影響所有連結到此資料類型的控制項。"
 
 #: source/propctrlr/pcrmiscres.src#RID_STR_PROPTITLE_PUSHBUTTON.String.Text
 msgid  "Button"
@@ -905,7 +905,7 @@ msgstr "連結欄位"
 
 #: source/propctrlr/formlinkdialog.src#RID_DLG_FORMLINKS.FT_EXPLANATION.FixedText.Text
 msgid  "Sub forms can be used to display detailed data about the current record of the master form. To do this, you can specify which columns in the sub form match which columns in the master form."
-msgstr ""
+msgstr "子表單可以用來顯示有關主表單目前記錄的詳細資料。若要執行上述動作，您可以指定子表單中的哪一欄要符合主表單中的哪一欄。"
 
 #: source/propctrlr/formlinkdialog.src#RID_DLG_FORMLINKS.PB_SUGGEST.PushButton.Text
 msgid  "Suggest"
@@ -1385,7 +1385,7 @@ msgstr "3D 外觀"
 
 #: source/propctrlr/formres.src#RID_RSC_ENUM_BORDER_TYPE.3.String.Text
 msgid  "Flat"
-msgstr "平坦"
+msgstr "平型"
 
 #: source/propctrlr/formres.src#RID_RSC_ENUM_LISTSOURCE_TYPE.1.String.Text
 msgid  "Valuelist"
@@ -1864,8 +1864,8 @@ msgid  "Help"
 msgstr "說明"
 
 #: source/propctrlr/formres.src#RID_STR_UNABLETOCONNECT.String.Text
-msgid  "The connection to the data source "$name$" could not be established."
-msgstr ""
+msgid  "The connection to the data source \"$name$\" could not be established."
+msgstr "無法連線到資料來源 \"$name$\"。"
 
 #: source/propctrlr/formres.src#RID_STR_TEXT.String.Text
 msgid  "Text"
@@ -2297,11 +2297,11 @@ msgstr "輸入新資料類型的名稱："
 
 #: source/scanner/sanedlg.src#RID_SANE_DIALOG.RID_DEVICEINFO_BTN.PushButton.Text
 msgid  "About\n Dev~ice"
-msgstr ""
+msgstr "設備說明資料(~I)"
 
 #: source/scanner/sanedlg.src#RID_SANE_DIALOG.RID_PREVIEW_BTN.PushButton.Text
 msgid  "Create\nPreview"
-msgstr ""
+msgstr "建立預覽"
 
 #: source/scanner/sanedlg.src#RID_SANE_DIALOG.RID_PREVIEW_BOX.FixedLine.Text
 msgid  "Preview"
@@ -2357,7 +2357,7 @@ msgstr "掃描器"
 
 #: source/scanner/sanedlg.src#RID_SANE_DEVICEINFO_TXT.String.Text
 msgid  "Device: %s\nVendor: %s\nModel: %s\nType: %s"
-msgstr ""
+msgstr "設備：%s\n製造商：%s\n型號：%s\n類型：%s"
 
 #: source/scanner/sanedlg.src#RID_SANE_SCANERROR_TXT.String.Text
 msgid  "An error occurred while scanning."
@@ -2365,7 +2365,7 @@ msgstr "在掃描時發生一個錯誤。"
 
 #: source/scanner/sanedlg.src#RID_SANE_NORESOLUTIONOPTION_TXT.String.Text
 msgid  "The device does not offer a preview option. Therefore, a normal scan will be used as a preview instead. This may take a considerable amount of time."
-msgstr ""
+msgstr "這個設備沒有設定預視功能，因此採用普通的掃描方式預覽會需要較長的時間。"
 
 #: source/scanner/sanedlg.src#RID_SANE_NOSANELIB_TXT.String.Text
 msgid  "The SANE interface could not be initialized. Scanning is not possible."
@@ -2405,7 +2405,7 @@ msgstr "%PRODUCTNAME %PRODUCTVERSION 已是最新版。"
 
 #: source/update/check/updatehdl.src#RID_UPDATE_STR_UPD_FOUND.String.Text
 msgid  "%PRODUCTNAME %NEXTVERSION is available.\n\nThe installed version is %PRODUCTNAME %PRODUCTVERSION.\n\nNote: Before downloading  an update, please ensure that you have sufficient access rights to install it.\nA password, usually the administrator's or root password, may be required."
-msgstr ""
+msgstr "%PRODUCTNAME %NEXTVERSION 可用。\n\n安裝的版本為 %PRODUCTNAME %PRODUCTVERSION。\n\n注意：下載更新之前，請確定您有足夠的存取權限進行安裝。\n可能需要密碼 (通常是管理員或超級使用者的密碼)。"
 
 #: source/update/check/updatehdl.src#RID_UPDATE_STR_DLG_TITLE.String.Text
 msgid  "Check for Updates"
@@ -2421,7 +2421,7 @@ msgstr "正在下載延遲的 %PRODUCTNAME %NEXTVERSION 於"
 
 #: source/update/check/updatehdl.src#RID_UPDATE_STR_DOWNLOAD_WARN.String.Text
 msgid  "The download location is: %DOWNLOAD_PATH.\n\nUnder Tools – Options... - %PRODUCTNAME – Online Update you can change the download location."
-msgstr ""
+msgstr "下載位置：%DOWNLOAD_PATH。\n\n在 [工具] – [選項...] - [%PRODUCTNAME] – [線上更新] 下，您可以變更下載位置。"
 
 #: source/update/check/updatehdl.src#RID_UPDATE_STR_DOWNLOAD_DESCR.String.Text
 msgid  "%FILE_NAME has been downloaded to %DOWNLOAD_PATH."
@@ -2429,7 +2429,7 @@ msgstr "%FILE_NAME 已下載至 %DOWNLOAD_PATH。"
 
 #: source/update/check/updatehdl.src#RID_UPDATE_STR_DOWNLOAD_UNAVAIL.String.Text
 msgid  "The automatic download of the update is currently not available.\n\nClick 'Download...' to download %PRODUCTNAME %NEXTVERSION manually from the web site."
-msgstr ""
+msgstr "目前沒有提供自動下載更新。\n\n請按一下 [下載...] 以手動從網站下載 %PRODUCTNAME %NEXTVERSION。"
 
 #: source/update/check/updatehdl.src#RID_UPDATE_STR_DOWNLOADING.String.Text
 msgid  "Downloading %PRODUCTNAME %NEXTVERSION..."
@@ -2437,7 +2437,7 @@ msgstr "正在下載 %PRODUCTNAME %NEXTVERSION..."
 
 #: source/update/check/updatehdl.src#RID_UPDATE_STR_READY_INSTALL.String.Text
 msgid  "Download of %PRODUCTNAME %NEXTVERSION completed. Ready for installation."
-msgstr ""
+msgstr "%PRODUCTNAME %NEXTVERSION 的下載已完成。準備進行安裝。"
 
 #: source/update/check/updatehdl.src#RID_UPDATE_STR_CANCEL_TITLE.String.Text
 msgid  "%PRODUCTNAME %PRODUCTVERSION"
@@ -2449,7 +2449,7 @@ msgstr "您確定要取消下載？"
 
 #: source/update/check/updatehdl.src#RID_UPDATE_STR_BEGIN_INSTALL.String.Text
 msgid  "To install the update, %PRODUCTNAME %PRODUCTVERSION needs to be closed. Do you want to install the update now?"
-msgstr ""
+msgstr "若要安裝更新，需要關閉 %PRODUCTNAME %PRODUCTVERSION。您要立即安裝更新嗎？"
 
 #: source/update/check/updatehdl.src#RID_UPDATE_STR_INSTALL_NOW.String.Text
 msgid  "Install ~now"
@@ -2461,15 +2461,15 @@ msgstr "稍後安裝(~L)"
 
 #: source/update/check/updatehdl.src#RID_UPDATE_STR_INSTALL_ERROR.String.Text
 msgid  "Could not run the installer application, please run %FILE_NAME in %DOWNLOAD_PATH manually."
-msgstr ""
+msgstr "無法執行安裝應用程式，請手動執行 %DOWNLOAD_PATH 中的 %FILE_NAME。"
 
 #: source/update/check/updatehdl.src#RID_UPDATE_STR_OVERWRITE_WARNING.String.Text
 msgid  "A file with that name already exists! Do you want to overwrite the existing file?"
-msgstr ""
+msgstr "已存在同名的檔案！您要覆寫現有檔案嗎？"
 
 #: source/update/check/updatehdl.src#RID_UPDATE_STR_RELOAD_WARNING.String.Text
 msgid  "A file with the name '%FILENAME' already exists in '%DOWNLOAD_PATH'! Do you want to continue with the download or delete and reload the file?"
-msgstr ""
+msgstr "「%DOWNLOAD_PATH」中已存在名稱為「%FILENAME」的檔案！您是否要繼續下載，或刪除並重新載入檔案？"
 
 #: source/update/check/updatehdl.src#RID_UPDATE_STR_RELOAD_RELOAD.String.Text
 msgid  "Reload File"

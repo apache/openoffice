@@ -33,7 +33,7 @@ msgstr ""
 
 #: source/component/warnbox.src#RID_XMLSECWB_NO_MOZILLA_PROFILE.WarningBox.Message
 msgid  "Digital signatures functionality could not be used, because no Mozilla user profile was found. Please check the Mozilla installation."
-msgstr ""
+msgstr "無法使用數位簽名功能，因為找不到 Mozilla 使用者設定檔。請檢查 Mozilla 安裝。"
 
 #: source/dialogs/macrosecurity.src#RID_XMLSECTP_MACROSEC.TabDialog.Text
 msgid  "Macro Security"
@@ -53,19 +53,19 @@ msgstr "重設"
 
 #: source/dialogs/macrosecurity.src#RID_XMLSECTP_SECLEVEL.RB_VERYHIGH.RadioButton.Text
 msgid  "~Very high.\nOnly macros from trusted file locations are allowed to run. All other macros, regardless whether signed or not, are disabled."
-msgstr ""
+msgstr "~非常高。\n只有來自受信任檔案位置的巨集才能執行。停用所有其他巨集，不論其是否經過簽署。"
 
 #: source/dialogs/macrosecurity.src#RID_XMLSECTP_SECLEVEL.RB_HIGH.RadioButton.Text
 msgid  "H~igh.\nOnly signed macros from trusted sources are allowed to run. Unsigned macros are disabled."
-msgstr ""
+msgstr "高。\n只有來自受信任之來源的已簽署巨集才能執行。停用未簽署的巨集(~I)。"
 
 #: source/dialogs/macrosecurity.src#RID_XMLSECTP_SECLEVEL.RB_MEDIUM.RadioButton.Text
 msgid  "~Medium.\nConfirmation required before executing macros from untrusted sources."
-msgstr ""
+msgstr "中。\n執行來自不受信任來源的巨集前需要進行確認。"
 
 #: source/dialogs/macrosecurity.src#RID_XMLSECTP_SECLEVEL.RB_LOW.RadioButton.Text
 msgid  "~Low (not recommended).\nAll macros will be executed without confirmation. Use this setting only if you are certain that all documents that will be opened are safe."
-msgstr ""
+msgstr "低 (不建議)。\n不作任何確認即執行全部巨集。使用此設定時，請確保開啟的所有文件都很安全(~L)。"
 
 #: source/dialogs/macrosecurity.src#RID_XMLSECTP_TRUSTSOURCES.FL_TRUSTCERT.FixedLine.Text
 msgid  "Trusted certificates"
@@ -93,7 +93,7 @@ msgstr "信任的檔案位置"
 
 #: source/dialogs/macrosecurity.src#RID_XMLSECTP_TRUSTSOURCES.FI_TRUSTFILELOC.FixedText.Text
 msgid  "Document macros are always executed if they have been opened from one of the following locations."
-msgstr ""
+msgstr "若是從下列位置之一開啟文件巨集，則必定會執行那些巨集。"
 
 #: source/dialogs/macrosecurity.src#RID_XMLSECTP_TRUSTSOURCES.FL_ADD_TRUSTFILELOC.PushButton.Text
 msgid  "Add..."
@@ -125,7 +125,7 @@ msgstr "檢視簽名..."
 
 #: source/dialogs/warnings.src#RID_XMLSECTP_MACROWARN.FI_DESCR2.FixedText.Text
 msgid  "Macros may contain viruses. Disabling macros for a document is always save. If you disable macros you may lose functionality provided by the document macros."
-msgstr ""
+msgstr "巨集可能包含病毒。停用文件巨集通常比較安全。如果停用巨集，您可能無法使用文件巨集所提供的功能。"
 
 #: source/dialogs/warnings.src#RID_XMLSECTP_MACROWARN.CB_ALWAYSTRUST.CheckBox.Text
 msgid  "Always trust macros from this source"
@@ -205,7 +205,7 @@ msgstr ""
 
 #: source/dialogs/digitalsignaturesdialog.src#MSG_XMLSECDLG_QUERY_REMOVEDOCSIGNBEFORESIGN.QueryBox.Message
 msgid  "Adding or removing a macro signature will remove all document signatures.\nDo you really want to continue?"
-msgstr ""
+msgstr "增加或移除巨集簽名將會移除所有文件簽名。\n確定要繼續？"
 
 #: source/dialogs/certificateviewer.src#RID_XMLSECDLG_CERTVIEWER.TabDialog.Text
 msgid  "View Certificate"

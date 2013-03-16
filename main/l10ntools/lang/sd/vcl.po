@@ -136,6 +136,10 @@ msgid  "km"
 msgstr "km"
 
 #: source/src/units.src#SV_FUNIT_STRINGS.FUNIT_TWIP.ItemList.item
+msgid  "twips"
+msgstr "twips"
+
+#: source/src/units.src#SV_FUNIT_STRINGS.FUNIT_TWIP.ItemList.item
 msgid  "twip"
 msgstr "twips"
 
@@ -148,32 +152,16 @@ msgid  "pi"
 msgstr "pi"
 
 #: source/src/units.src#SV_FUNIT_STRINGS.FUNIT_INCH.ItemList.item
-msgid  "inch"
-msgstr "اِنچ "
-
-#: source/src/units.src#SV_FUNIT_STRINGS.FUNIT_FOOT.ItemList.item
-msgid  "feet"
-msgstr "فوٽَ"
-
-#: source/src/units.src#SV_FUNIT_STRINGS.FUNIT_MILE.ItemList.item
-msgid  "mile"
-msgstr "ميلُ "
-
-#: source/src/units.src#SV_FUNIT_STRINGS.FUNIT_PERCENT.ItemList.item
-msgid  "%"
-msgstr "%"
-
-#: source/src/units.src#SV_FUNIT_STRINGS.FUNIT_TWIP.ItemList.item
-msgid  "twips"
-msgstr "twips"
-
-#: source/src/units.src#SV_FUNIT_STRINGS.FUNIT_INCH.ItemList.item
-msgid  """
-msgstr ""
+msgid  "\""
+msgstr "\""
 
 #: source/src/units.src#SV_FUNIT_STRINGS.FUNIT_INCH.ItemList.item
 msgid  "in"
 msgstr "۾ "
+
+#: source/src/units.src#SV_FUNIT_STRINGS.FUNIT_INCH.ItemList.item
+msgid  "inch"
+msgstr "اِنچ "
 
 #: source/src/units.src#SV_FUNIT_STRINGS.FUNIT_FOOT.ItemList.item
 msgid  "'"
@@ -187,13 +175,25 @@ msgstr "ft"
 msgid  "foot"
 msgstr "فوٽ "
 
+#: source/src/units.src#SV_FUNIT_STRINGS.FUNIT_FOOT.ItemList.item
+msgid  "feet"
+msgstr "فوٽَ"
+
 #: source/src/units.src#SV_FUNIT_STRINGS.FUNIT_MILE.ItemList.item
 msgid  "miles"
 msgstr "ميلَ "
 
+#: source/src/units.src#SV_FUNIT_STRINGS.FUNIT_MILE.ItemList.item
+msgid  "mile"
+msgstr "ميلُ "
+
+#: source/src/units.src#SV_FUNIT_STRINGS.FUNIT_PERCENT.ItemList.item
+msgid  "%"
+msgstr "%"
+
 #: source/src/stdtext.src#SV_STDTEXT_SERVICENOTAVAILABLE.String.Text
 msgid  "The component (%s) could not be loaded.\nPlease start setup with the repair option."
-msgstr ""
+msgstr "(%s)  جزو لوڊ نہ ٿي سگهيو۔\n مهرباني ڪري درستيءَ جي وڪلپ سان سيٽ اپ شروع ڪريو "
 
 #: source/src/stdtext.src#SV_STDTEXT_DONTHINTAGAIN.String.Text
 msgid  "Do not show this information again."
@@ -213,11 +213,11 @@ msgstr "غلط سنسڪرڻ "
 
 #: source/src/stdtext.src#SV_ACCESSERROR_BRIDGE_MSG.String.Text
 msgid  "%PRODUCTNAME %PRODUCTVERSION requires a Java Access Bridge 1.0.3 or later version to support accessibility."
-msgstr ""
+msgstr "%PRODUCTNAME %PRODUCTVERSION  کي جاوا ايڪسيس برج 1.0.3 يا اُن کان پوءِ جي سنسڪرڻ جي داخل ڪرڻ جي ڪريا جي آڌار لاءِ ضرورت آہي "
 
 #: source/src/stdtext.src#SV_ACCESSERROR_OK_CANCEL_MSG.String.Text
 msgid  "Click '%OK' to start %PRODUCTNAME %PRODUCTVERSION without accessibility support, or click '%CANCEL' to exit %PRODUCTNAME %PRODUCTVERSION."
-msgstr ""
+msgstr "%PRODUCTNAME %PRODUCTVERSION  بنا داخلا ڪرڻ جي سمرٿن جي شروع ڪرڻ لاءِ '%OK' تي ڪلڪ ڪريو۔ يا %PRODUCTNAME %PRODUCTVERSION ڪڍي ڇڏڻ لاءِ رد ڪريو۔ تي ڪلڪ ڪريو "
 
 #: source/src/stdtext.src#SV_ACCESSERROR_MISSING_BRIDGE.String.Text
 msgid  "No Java Access Bridge"
@@ -229,7 +229,7 @@ msgstr "عيبدار جاوا اِسٿاپن "
 
 #: source/src/stdtext.src#SV_ACCESSERROR_JAVA_MSG.String.Text
 msgid  "%PRODUCTNAME %PRODUCTVERSION requires Java 1.4.0_02 or later version to support accessibility."
-msgstr ""
+msgstr "داخل ڪرڻ جي سمرٿن لاءِ %PRODUCTNAME %PRODUCTVERSION کي جاوا 1.4.0_02 جي ضرورت آهي۔ "
 
 #: source/src/stdtext.src#SV_ACCESSERROR_MISSING_JAVA.String.Text
 msgid  "No Java Installation"

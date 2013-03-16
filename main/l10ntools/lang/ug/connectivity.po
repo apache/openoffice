@@ -119,6 +119,18 @@ msgstr "Thunderbird ئادرېس دەپتىرى"
 msgid  "LDAP Address Book"
 msgstr "LDAP ئادرېس دەپتىرى"
 
+#: source/drivers/mozab/mozab2.xcu#.Drivers.Installed.sdbc:address:mozilla:.DriverTypeDisplayName
+msgid  "SeaMonkey Address Book"
+msgstr "SeaMonkey ئادرېس دەپتىرى"
+
+#: source/drivers/mozab/mozab2.xcu#.Drivers.Installed.sdbc:address:thunderbird:.DriverTypeDisplayName
+msgid  "Thunderbird Address Book"
+msgstr "Thunderbird ئادرېس دەپتىرى"
+
+#: source/drivers/mozab/mozab2.xcu#.Drivers.Installed.sdbc:address:ldap:*.DriverTypeDisplayName
+msgid  "LDAP Address Book"
+msgstr "LDAP ئادرېس دەپتىرى"
+
 #: source/drivers/mysql/mysql.xcu#.Drivers.Installed.sdbc:mysql:jdbc:*.DriverTypeDisplayName
 msgid  "MySQL (JDBC)"
 msgstr "MySQL (JDBC)"
@@ -161,11 +173,11 @@ msgstr "Mozilla ئىجرا بولۇۋاتقاندا يېڭى ئادرېس دەپ
 
 #: source/resource/conn_shared_res.src#STR_COULD_NOT_RETRIEVE_AB_ENTRY.String.Text
 msgid  "An address book entry could not be retrieved, an unknown error occurred."
-msgstr ""
+msgstr "ئادرېس دەپتەر مۇندەرىجە ئاتىنى ئىزدەپ تاپالمىدى، نامەلۇم خاتالىق كۆرۈلدى."
 
 #: source/resource/conn_shared_res.src#STR_COULD_NOT_GET_DIRECTORY_NAME.String.Text
 msgid  "An address book directory name could not be retrieved, an unknown error occurred."
-msgstr ""
+msgstr "ئادرېس دەپتەر مۇندەرىجە ئاتىنى ئىزدەپ تاپالمىدى، نامەلۇم خاتالىق كۆرۈلدى."
 
 #: source/resource/conn_shared_res.src#STR_TIMEOUT_WAITING.String.Text
 msgid  "Timed out while waiting for the result."
@@ -177,11 +189,11 @@ msgstr "سۈرۈشتۈرۈش ئىجرا قىلغاندا خاتالىق كۆرۈ
 
 #: source/resource/conn_shared_res.src#STR_MOZILLA_IS_RUNNIG_NO_CHANGES.String.Text
 msgid  "You can't make any changes to mozilla address book when mozilla is running."
-msgstr ""
+msgstr "mozilla نى ئىجرا قىلغاندا mozilla ئادرېس دەپتىرىگە ھېچقانداق ئۆزگەرتىش ئېلىپ بارالمايدۇ."
 
 #: source/resource/conn_shared_res.src#STR_FOREIGN_PROCESS_CHANGED_AB.String.Text
 msgid  "Mozilla Address Book has been changed out of this process, we can't modify it in this condition."
-msgstr ""
+msgstr "مەزكۇر جەرياننىڭ سىرتىدا Mozilla ئادرېس دەپتىرى ئۆزگەرتىلدى. بۇ خىل ئەھۋالدا ئۇنىڭغا ئۆزگەرتىش ئېلىپ بارالمايدۇ."
 
 #: source/resource/conn_shared_res.src#STR_CANT_FIND_ROW.String.Text
 msgid  "Can't find the requested row."
@@ -233,7 +245,7 @@ msgstr "يېڭى قۇر قۇرالمىدى."
 
 #: source/resource/conn_shared_res.src#STR_QUERY_INVALID_IS_NULL_COLUMN.String.Text
 msgid  "The query can not be executed. The 'IS NULL' can only be used with a column name."
-msgstr ""
+msgstr "سۈرۈشتۈرۈشنى ئىجرا قىلالمايدۇ. 'IS NULL' نى ستون ئاتى بىلەنلا ئىشلەتكىلى بولىدۇ."
 
 #: source/resource/conn_shared_res.src#STR_ILLEGAL_MOVEMENT.String.Text
 msgid  "Illegal cursor movement occured."
@@ -268,12 +280,12 @@ msgid  "It doesn't exist a connection to the database."
 msgstr "ساندان ئۇلىنىشى مەۋجۇد ئەمەس."
 
 #: source/resource/conn_shared_res.src#STR_WRONG_PARAM_INDEX.String.Text
-msgid  "You tried to set a parameter at position '$pos$' but there is/are only '$count$' parameter(s) allowed. One reason may be that the property "ParameterNameSubstitution" is not set to TRUE in the data source."
-msgstr ""
+msgid  "You tried to set a parameter at position '$pos$' but there is/are only '$count$' parameter(s) allowed. One reason may be that the property \"ParameterNameSubstitution\" is not set to TRUE in the data source."
+msgstr "سىز '$pos$' ئورۇندا پارامېتىردىن بىرنى تەڭشىمەكچى، ئەمما بۇ ئورۇندا پەقەت '$count$' پارامېتىر تەڭشەشكە يول قويىدۇ. بىر سەۋەبى سانلىق مەلۇمات مەنبەسىنىڭ خاسلىقى \"ParameterNameSubstitution\" نى TRUE قىلىپ تەڭشىمىگەن بولۇشى مۇمكىن."
 
 #: source/resource/conn_shared_res.src#STR_INPUTSTREAM_WRONG_LEN.String.Text
 msgid  "End of InputStream reached before satisfying length specified when InputStream was set."
-msgstr ""
+msgstr "InputStream نى تەڭشىگەندە بەلگىلەنگەن ئۇزۇنلۇقنى قانائەتلەندۈرۈشتىن ئىلگىرى كىرگۈزۈش ئېقىمى ئاخىرلاشتى."
 
 #: source/resource/conn_shared_res.src#STR_NO_INPUTSTREAM.String.Text
 msgid  "The input stream was not set."
@@ -313,7 +325,7 @@ msgstr "قوزغىتىش پروگراممىسى '$functionname$' فونكسىي�
 
 #: source/resource/conn_shared_res.src#STR_UNSUPPORTED_FEATURE.String.Text
 msgid  "The driver does not support the functionality for '$featurename$'. It is not implemented."
-msgstr ""
+msgstr "قوزغىتىش پروگراممىسى '$featurename$' فونكسىيىسىنى قوللىمايدۇ. بۇ فونكسىيە تېخى ئىشقا ئاشمىغان."
 
 #: source/resource/conn_shared_res.src#STR_FORMULA_WRONG.String.Text
 msgid  "The formula for TypeInfoSettings is wrong!"
@@ -321,11 +333,11 @@ msgstr "TypeInfoSettings فورمۇلاسى خاتا!"
 
 #: source/resource/conn_shared_res.src#STR_STRING_LENGTH_EXCEEDED.String.Text
 msgid  "The string '$string$' exceeds the maximum length of $maxlen$ characters when converted to the target character set '$charset$'."
-msgstr ""
+msgstr "ھەرپ بەلگى '$string$' نى نىشان ھەرپ بەلگە $maxlen$ غا ئالماشتۇرغاندا بۇ ھەرپ تىزمىسى '$charset$' نىڭ ئەڭ ئۇزۇن چەكلىمىسىدىن ئېشىپ كەتتى."
 
 #: source/resource/conn_shared_res.src#STR_CANNOT_CONVERT_STRING.String.Text
 msgid  "The string '$string$' cannot be converted using the encoding '$charset$'."
-msgstr ""
+msgstr "'$charset$' كودلاشنى ئىشلىتىپ '$string$' ھەرپ تىزمىسىنى ئالماشتۇرالمايدۇ."
 
 #: source/resource/conn_shared_res.src#STR_URI_SYNTAX_ERROR.String.Text
 msgid  "The connection URL is invalid."
@@ -341,11 +353,11 @@ msgstr "سۈرۈشتۈرۈشنى ئىجرا قىلالمايدۇ. بۇ مەشغ�
 
 #: source/resource/conn_shared_res.src#STR_QUERY_INVALID_LIKE_COLUMN.String.Text
 msgid  "The query can not be executed. You cannot use 'LIKE' with columns of this type."
-msgstr ""
+msgstr "سۈرۈشتۈرۈش ئىجرا قىلالمايدۇ. بۇ خىل ستوندا 'LIKE' ئىشلەتكىلى بولمايدۇ."
 
 #: source/resource/conn_shared_res.src#STR_QUERY_INVALID_LIKE_STRING.String.Text
 msgid  "The query can not be executed. 'LIKE' can be used with a string argument only."
-msgstr ""
+msgstr "سۈرۈشتۈرۈشنى ئىجرا قىلالمايدۇ. 'LIKE' نى ھەرپ تىزمىسى پارامېتىرى بىلەنلا ئىشلەتكىلى بولىدۇ."
 
 #: source/resource/conn_shared_res.src#STR_QUERY_NOT_LIKE_TOO_COMPLEX.String.Text
 msgid  "The query can not be executed. The 'NOT LIKE' condition is too complex."
@@ -353,11 +365,11 @@ msgstr "سۈرۈشتۈرۈشنى ئىجرا قىلالمايدۇ. 'NOT LIKE' ب�
 
 #: source/resource/conn_shared_res.src#STR_QUERY_LIKE_WILDCARD.String.Text
 msgid  "The query can not be executed. The 'LIKE' condition contains wildcard in the middle."
-msgstr ""
+msgstr "سۈرۈشتۈرۈشنى ئىجرا قىلالمايدۇ. 'LIKE' جۈملىسىدە ئورتاق بەلگە بار."
 
 #: source/resource/conn_shared_res.src#STR_QUERY_LIKE_WILDCARD_MANY.String.Text
 msgid  "The query can not be executed. The 'LIKE' condition contains too many wildcards."
-msgstr ""
+msgstr "سۈرۈشتۈرۈشنى ئىجرا قىلالمايدۇ. 'LIKE' جۈملىسىدە بەك كۆپ ئورتاق بەلگە بار."
 
 #: source/resource/conn_shared_res.src#STR_INVALID_COLUMNNAME.String.Text
 msgid  "The column name '$columnname$' is not valid."
@@ -377,7 +389,7 @@ msgstr "بۇ ھۆججەت $filename$ نى يۈكلىيەلمىدى!"
 
 #: source/resource/conn_shared_res.src#STR_LOAD_FILE_ERROR_MESSAGE.String.Text
 msgid  "The attempt to load the file resulted in the following error message ($exception_type$):\n\n$error_message$"
-msgstr ""
+msgstr "ھۆججەت يۈكلەش تۆۋەندىكى خاتالىق ئۇچۇرىنى كەلتۈرۈپ چىقاردى. ($exception_type$):\n\n$error_message$"
 
 #: source/resource/conn_shared_res.src#STR_TYPE_NOT_CONVERT.String.Text
 msgid  "The type could not be converted."
@@ -417,11 +429,11 @@ msgstr "كۆرۈنۈش قۇرالمىدى: بۇيرۇق ئوبيېكتى يوق.
 
 #: source/resource/conn_shared_res.src#STR_NO_CONNECTION.String.Text
 msgid  "The connection could not be created. May be the necessary data provider is not installed."
-msgstr ""
+msgstr "ئۇلىنىش قۇرالمىدى. لازىملىق سانلىق مەلۇمات تەمىنلەش پروگراممىسى قاچىلانمىغان بولۇشى مۇمكىن."
 
 #: source/resource/conn_shared_res.src#STR_COULD_NOT_DELETE_INDEX.String.Text
 msgid  "The index could not be deleted. An unknown error while accessing the file system occured."
-msgstr ""
+msgstr "ئىندېكسنى ئۆچۈرەلمەيدۇ. ھۆججەت زىيارەت قىلغاندا نامەلۇم خاتالىق يۈز بەردى."
 
 #: source/resource/conn_shared_res.src#STR_ONL_ONE_COLUMN_PER_INDEX.String.Text
 msgid  "The index could not be created. Only one column per index is allowed."
@@ -437,11 +449,11 @@ msgstr "ئىندېكس قۇرالمىدى. نامەلۇم خاتالىق كۆر�
 
 #: source/resource/conn_shared_res.src#STR_COULD_NOT_CREATE_INDEX_NAME.String.Text
 msgid  "The index could not be created. The file '$filename$' is used by an other index."
-msgstr ""
+msgstr "ئىندېكس قۇرالمىدى. '$filename$' ھۆججەتنى باشقا ئىندېكس ئىشلىتىۋاتىدۇ."
 
 #: source/resource/conn_shared_res.src#STR_COULD_NOT_CREATE_INDEX_KEYSIZE.String.Text
 msgid  "The index could not be created. The size of the chosen column is to big."
-msgstr ""
+msgstr "ئىندېكس قۇرالمايدۇ. تاللىغان ستون بەك چوڭ."
 
 #: source/resource/conn_shared_res.src#STR_SQL_NAME_ERROR.String.Text
 msgid  "The name '$name$' doesn't match SQL naming constraints."
@@ -461,7 +473,7 @@ msgstr "'$columnname$' ستوننىڭ ئېنىقلىق دەرىجىسى ئىنا
 
 #: source/resource/conn_shared_res.src#STR_INVALID_PRECISION_SCALE.String.Text
 msgid  "Precision is less than scale for column '$columnname$'."
-msgstr ""
+msgstr "'$columnname$' ستوننىڭ ئېنىقلىق دەرىجىسى سانلىق قىممەت دائىرىسىدىن كىچىك."
 
 #: source/resource/conn_shared_res.src#STR_INVALID_COLUMN_NAME_LENGTH.String.Text
 msgid  "Invalid column name length for column '$columnname$'."
@@ -472,28 +484,28 @@ msgid  "Duplicate value found in column '$columnname$'."
 msgstr "'$columnname$' ستوندا تەكرار قىممەت بايقالدى."
 
 #: source/resource/conn_shared_res.src#STR_INVALID_COLUMN_DECIMAL_VALUE.String.Text
-msgid  "The '$columnname$' column has been defined as a "Decimal" type, the max. length is $precision$ characters (with $scale$ decimal places).\n\nThe specified value "$value$ is longer than the number of digits allowed."
-msgstr ""
+msgid  "The '$columnname$' column has been defined as a \"Decimal\" type, the max. length is $precision$ characters (with $scale$ decimal places).\n\nThe specified value \"$value$ is longer than the number of digits allowed."
+msgstr "'$columnname$' ستون \"ئونلۇق سىستېما\" تىپى قىلىپ بەلگىلەندى، ئۇزۇنلۇقى  $precision$ خانە (كەسىر چېكىتى خانىسى $scale$)\n\nبەلگىلەنگەن قىممەت \"$value$ يول قويىدىغان خانە سانىدىن كۆپ."
 
 #: source/resource/conn_shared_res.src#STR_COLUMN_NOT_ALTERABLE.String.Text
 msgid  "The column '$columnname$' could not be altered. May be the file system is write protected."
-msgstr ""
+msgstr "'$columnname$' ستوننى ئۆزگەرتەلمىدى. ھۆججەت سىستېمىسى يېزىشتىن قوغدالغان بولۇشى مۇمكىن."
 
 #: source/resource/conn_shared_res.src#STR_INVALID_COLUMN_VALUE.String.Text
 msgid  "The column '$columnname$' could not be updated. The value is invalid for that column."
-msgstr ""
+msgstr "'$columnname$' ستوننى يېڭىلىيالمىدى. بۇ قىممەت نۆۋەتتىكى ستونغا نىسبەتەن ئىناۋەتسىز."
 
 #: source/resource/conn_shared_res.src#STR_COLUMN_NOT_ADDABLE.String.Text
 msgid  "The column '$columnname$' could not be added. May be the file system is write protected."
-msgstr ""
+msgstr "'$columnname$' ستوننى قوشالمىدى. ھۆججەت سىستېمىسى يېزىشتىن قوغدالغان بولۇشى مۇمكىن."
 
 #: source/resource/conn_shared_res.src#STR_COLUMN_NOT_DROP.String.Text
 msgid  "The column at position '$position$' could not be dropped. May be the file system is write protected."
-msgstr ""
+msgstr "'$position$' ئورۇندىكى ستوننى ئۆچۈرەلمىدى. ھۆججەت سىستېمىسى يېزىشتىن قوغدالغان بولۇشى مۇمكىن."
 
 #: source/resource/conn_shared_res.src#STR_TABLE_NOT_DROP.String.Text
 msgid  "The table '$tablename$' could not be dropped. May be the file system is write protected."
-msgstr ""
+msgstr "'$tablename$' جەدۋەلنى ئۆچۈرەلمىدى. ھۆججەت سىستېمىسى يېزىشتىن قوغدالغان بولۇشى مۇمكىن."
 
 #: source/resource/conn_shared_res.src#STR_COULD_NOT_ALTER_TABLE.String.Text
 msgid  "The table could not be altered."
@@ -512,8 +524,8 @@ msgid  "Can only sort by table columns."
 msgstr "جەدۋەل ستون بويىچىلا تەرتىپلىيەلەيدۇ."
 
 #: source/resource/conn_shared_res.src#STR_QUERY_COMPLEX_COUNT.String.Text
-msgid  "The query can not be executed. It is too complex. Only "COUNT(*)" is supported."
-msgstr ""
+msgid  "The query can not be executed. It is too complex. Only \"COUNT(*)\" is supported."
+msgstr "سۈرۈشتۈرۈشنى ئىجرا قىلالمايدۇ. ئۇ سۈرۈشتۈرۈش بەك مۇرەككەپ. پەقەت \"COUNT(*)\" نىلا قوللايدۇ."
 
 #: source/resource/conn_shared_res.src#STR_QUERY_INVALID_BETWEEN.String.Text
 msgid  "The query can not be executed. The 'BETWEEN' arguments are not correct."
@@ -528,8 +540,8 @@ msgid  "The table can not be changed. It is read only."
 msgstr "جەدۋەلنى ئۆزگەرتەلمەيدۇ. ئۇنى ئوقۇشقىلا بولىدۇ."
 
 #: source/resource/conn_shared_res.src#STR_DELETE_ROW.String.Text
-msgid  "The row could not be deleted. The option "Display inactive records" is set."
-msgstr ""
+msgid  "The row could not be deleted. The option \"Display inactive records\" is set."
+msgstr "بۇ قۇرنى ئۆچۈرەلمەيدۇ. \"ئاكتىپ بولمىغان خاتىرىنى كۆرسەت\" تاللانمىسى تەڭشەلگەن."
 
 #: source/resource/conn_shared_res.src#STR_ROW_ALREADY_DELETED.String.Text
 msgid  "The row could not be deleted. It is already deleted."
@@ -589,15 +601,15 @@ msgstr "مۇناسىپ KDE قاچىلاش پروگراممىسى تېپىلمى�
 
 #: source/resource/conn_shared_res.src#STR_KDE_VERSION_TOO_OLD.String.Text
 msgid  "KDE version $major$.$minor$ or higher is required to access the KDE Address Book."
-msgstr ""
+msgstr "KDE ئالاقە دەپتىرىنى زىيارەت قىلىش ئۈچۈن $major$.$minor$ ياكى تېخىمۇ يۇقىرى نەشرىدىكى KDE بولۇشى لازىم."
 
 #: source/resource/conn_shared_res.src#STR_KDE_VERSION_TOO_NEW.String.Text
 msgid  "The found KDE version is too new. Only KDE up to version $major$.$minor$ is known to work with this product.\n"
-msgstr ""
+msgstr "تېپىلغان KDE نەشرى بەك يېڭى. بۇ مەھسۇلاتنى ئەڭ يېڭى بولغاندىمۇ $major$.$minor$ نەشرىدىكى KDE بىلەن ئىشلەتكىلى بولىدۇ.\n"
 
 #: source/resource/conn_shared_res.src#STR_KDE_VERSION_TOO_NEW_WORK_AROUND.String.Text
 msgid  "If you are sure that your KDE version works, you might execute the following Basic macro to disable this version check:\n\n"
-msgstr ""
+msgstr "ئەگەر KDE نەشرىڭىز تەلەپكە ئۇيغۇن بولسا، تۆۋەندىكى Basic ماكرونى ئىجرا قىلىپ بۇ نەشر تەكشۈرۈشنى چەكلەڭ:\n\n"
 
 #: source/resource/conn_shared_res.src#STR_PARA_ONLY_PREPARED.String.Text
 msgid  "Parameters can appear only in prepared statements."
@@ -613,19 +625,19 @@ msgstr "مۇۋاپىق Mac OS قاچىلاش پروگراممىسى تېپىلم
 
 #: source/resource/conn_shared_res.src#STR_NO_DISK_SPACE.String.Text
 msgid  "The database file '$filename$' could not be created. Please check your disk space."
-msgstr ""
+msgstr "'$filename$' ساندان ھۆججىتىنى قۇرالمىدى. دىسكا بوشلۇقىڭىزنى تەكشۈرۈڭ."
 
 #: source/resource/conn_shared_res.src#STR_COMMAND_NOT_FOUND.String.Text
 msgid  "The database '$databasename$' could not be started because the command '$progname$' could not be executed."
-msgstr ""
+msgstr "'$databasename$' سانداننى قوزغىتالمىدى سەۋەبى '$progname$' بۇيرۇقىنى ئىجرا قىلالمىدى."
 
 #: source/resource/conn_shared_res.src#STR_DATABASE_NEEDS_CONVERTING.String.Text
 msgid  "The current database need to be converted. Please insert control user  and password."
-msgstr ""
+msgstr "نۆۋەتتىكى سانداننى ئايلاندۇرۇش لازىم. باشقۇرۇش ھوقۇقى بار  ئىشلەتكۈچى ئاتى ۋە ئىم كىرگۈزۈڭ."
 
 #: source/resource/conn_shared_res.src#STR_USER_NO_DELETE.String.Text
 msgid  "This user couldn't be deleted. Otherwise the database stays in a inconsistent state."
-msgstr ""
+msgstr "بۇ ئىشلەتكۈچىنى ئۆچۈرەلمەيدۇ. بولمىسا ساندان بىردەك بولمىغان ھالەتتە تۇرىدۇ."
 
 #: source/resource/conn_shared_res.src#STR_NO_STROAGE.String.Text
 msgid  "The connection can not be established. No storage or URL was given."
@@ -633,7 +645,7 @@ msgstr "ئۇلىنىش قۇرالمىدى. ساقلىغۇچ ياكى URL بېر�
 
 #: source/resource/conn_shared_res.src#STR_INVALID_FILE_URL.String.Text
 msgid  "The given URL contains no valid local file system path. Please check the location of your database file."
-msgstr ""
+msgstr "بېرىلگەن URL ئىناۋەتسىز يەرلىك ھۆججەت سىستېما يولىنى ئۆز ئىچىگە ئالغان. ساندان ھۆججىتىڭىزنىڭ ئورنىنى تەكشۈرۈڭ."
 
 #: source/resource/conn_shared_res.src#STR_NO_TABLE_CONTAINER.String.Text
 msgid  "An error occured while obtaining the connection's table container."
@@ -686,15 +698,3 @@ msgstr "$1$ مەۋجۇد ئەمەس."
 #: source/resource/conn_error_message.src#256 + 2*550 + 0.String.Text
 msgid  "Unable to display the complete table content. Please apply a filter."
 msgstr "جەدۋەل مەزمۇنىنى تولۇق كۆرسىتەلمەيدۇ. سۈزگۈچ قوللىنىڭ."
-
-#: source/drivers/mozab/mozab2.xcu#.Drivers.Installed.sdbc:address:mozilla:.DriverTypeDisplayName
-msgid  "SeaMonkey Address Book"
-msgstr "SeaMonkey ئادرېس دەپتىرى"
-
-#: source/drivers/mozab/mozab2.xcu#.Drivers.Installed.sdbc:address:thunderbird:.DriverTypeDisplayName
-msgid  "Thunderbird Address Book"
-msgstr "Thunderbird ئادرېس دەپتىرى"
-
-#: source/drivers/mozab/mozab2.xcu#.Drivers.Installed.sdbc:address:ldap:*.DriverTypeDisplayName
-msgid  "LDAP Address Book"
-msgstr "LDAP ئادرېس دەپتىرى"

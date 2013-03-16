@@ -229,7 +229,7 @@ msgstr "{[ProductName] }Oʻrnatish xatolik bilan tugadi."
 
 #: inc_openoffice/windows/msi_languages/Error.ulf#OOO_ERROR_25
 msgid  "Error reading from file: [2]. {{ System error [3].}}  Verify that the file exists and that you can access it."
-msgstr ""
+msgstr "Manba fayli topilmadi: [2].  Fayl mavjudligini va Sizning unga boʻlgan huquqlaringizni tekshirib koʻring."
 
 #: inc_openoffice/windows/msi_languages/Error.ulf#OOO_ERROR_26
 msgid  "Cannot create the file [3].  A directory with this name already exists.  Cancel the installation and try installing to a different location."
@@ -241,39 +241,39 @@ msgstr "Iltimos diskni qoʻying: [2]"
 
 #: inc_openoffice/windows/msi_languages/Error.ulf#OOO_ERROR_28
 msgid  "The installer has insufficient privileges to access this directory: [2].  The installation cannot continue.  Log on as an administrator or contact your system administrator."
-msgstr ""
+msgstr "Oʻrnatgichda quyidagi jildni ochish uchun yetarli huquq yoʻq: [2].  Oʻrnatishni davom ettirb boʻlmaydi.  Tizimga boshqaruvchi sifatida kiring yoki boshqaruvchi bilan bogʻlaning."
 
 #: inc_openoffice/windows/msi_languages/Error.ulf#OOO_ERROR_29
 msgid  "Error writing to file [2].  Verify that you have access to that directory."
-msgstr ""
+msgstr "[2] fayliga yozib boʻlmadi.  Ushbu jildga boʻlgan huquqlaringizni tekshirib koʻring."
 
 #: inc_openoffice/windows/msi_languages/Error.ulf#OOO_ERROR_30
 msgid  "Error reading from file [2].  Verify that the file exists and that you can access it."
-msgstr ""
+msgstr "Manba fayli topilmadi: [2].  Fayl mavjudligini va Sizning unga boʻlgan huquqlaringizni tekshirib koʻring."
 
 #: inc_openoffice/windows/msi_languages/Error.ulf#OOO_ERROR_31
 msgid  "Another application has exclusive access to the file [2].  Please shut down all other applications, then click Retry."
-msgstr ""
+msgstr "Boshqa dastur [2] fayliga eksklyuziv huquqqa ega.  Iltimos barcha boshqa dasturlarni yoping va Qaytadan urinish tugmasini bosing."
 
 #: inc_openoffice/windows/msi_languages/Error.ulf#OOO_ERROR_32
 msgid  "There is not enough disk space to install the file [2].  Free some disk space and click Retry, or click Cancel to exit."
-msgstr ""
+msgstr "[2] faylini oʻrnatish uchun diskda yetarli joy yoʻq.  Diskni biroz boʻshating va Qaytadan urinib koʻrish tugmasini yoki chiqish uchun Bekor qilish tugmasini bosing."
 
 #: inc_openoffice/windows/msi_languages/Error.ulf#OOO_ERROR_33
 msgid  "Source file not found: [2].  Verify that the file exists and that you can access it."
-msgstr ""
+msgstr "Manba fayli topilmadi: [2].  Fayl mavjudligini va Sizning unga boʻlgan huquqlaringizni tekshirib koʻring."
 
 #: inc_openoffice/windows/msi_languages/Error.ulf#OOO_ERROR_34
 msgid  "Error reading from file: [3]. {{ System error [2].}}  Verify that the file exists and that you can access it."
-msgstr ""
+msgstr "Manba fayli topilmadi: [2].  Fayl mavjudligini va Sizning unga boʻlgan huquqlaringizni tekshirib koʻring."
 
 #: inc_openoffice/windows/msi_languages/Error.ulf#OOO_ERROR_35
 msgid  "Error writing to file: [3]. {{ System error [2].}}  Verify that you have access to that directory."
-msgstr ""
+msgstr "[2] fayliga yozib boʻlmadi.  Ushbu jildga boʻlgan huquqlaringizni tekshirib koʻring."
 
 #: inc_openoffice/windows/msi_languages/Error.ulf#OOO_ERROR_36
 msgid  "Source file not found{{(cabinet)}}: [2].  Verify that the file exists and that you can access it."
-msgstr ""
+msgstr "Manba fayli topilmadi{{(cabinet)}}: [2].  Fayl mavjudligini va Sizning unga boʻlgan huquqlaringizni tekshirib koʻring."
 
 #: inc_openoffice/windows/msi_languages/Error.ulf#OOO_ERROR_37
 msgid  "Cannot create the directory [2].  A file with this name already exists.  Please rename or remove the file and click Retry, or click Cancel to exit."
@@ -305,7 +305,7 @@ msgstr "[2] jildini yaratish mobaynida tarmoq xatoligi roʻy berdi."
 
 #: inc_openoffice/windows/msi_languages/Error.ulf#OOO_ERROR_44
 msgid  "A network error occurred while attempting to open the source file cabinet [2]."
-msgstr ""
+msgstr "[2] manba faylini ochishda tarmoq xatoligi roʻy berdi."
 
 #: inc_openoffice/windows/msi_languages/Error.ulf#OOO_ERROR_45
 msgid  "The specified path is too long [2]."
@@ -317,7 +317,7 @@ msgstr "Oʻrnatgichda [2] faylini oʻzgartirish uchun yetarli huquqlar yoʻq."
 
 #: inc_openoffice/windows/msi_languages/Error.ulf#OOO_ERROR_47
 msgid  "A portion of the path [2] exceeds the length allowed by the system."
-msgstr ""
+msgstr "[2] yoʻlining qismi tizim tomonidan ruxsat berilgan uzunlikdan oshib ketdi."
 
 #: inc_openoffice/windows/msi_languages/Error.ulf#OOO_ERROR_48
 msgid  "The path [2] contains words that are not valid in folders."
@@ -385,7 +385,7 @@ msgstr ""
 
 #: inc_openoffice/windows/msi_languages/Error.ulf#OOO_ERROR_64
 msgid  "Another installation is in progress. You must complete that installation before continuing this one."
-msgstr ""
+msgstr "Oʻrnatuvchining boshqa nusxasi ishlamoqda. Joriy oʻrnatuvchini davom ettirishdan avval, olingisini tugatishingiz kerak"
 
 #: inc_openoffice/windows/msi_languages/Error.ulf#OOO_ERROR_65
 msgid  "Error accessing secured data. Please make sure the Windows Installer is configured properly and try the installation again."
@@ -413,7 +413,7 @@ msgstr ""
 
 #: inc_openoffice/windows/msi_languages/Error.ulf#OOO_ERROR_71
 msgid  "The product [2] is already installed, preventing the installation of this product.  The two products are incompatible."
-msgstr ""
+msgstr "[2] allaqachon oʻrnatilgan.  Ushbu mahsulotlarni birgalikda ishlatib boʻlmaydi."
 
 #: inc_openoffice/windows/msi_languages/Error.ulf#OOO_ERROR_72
 msgid  "Out of disk space -- Volume: [2]; required space: [3] KB; available space: [4] KB.  If rollback is disabled, enough space is available. Click Cancel to quit, Retry to check available disk space again, or Ignore to continue without rollback."
@@ -425,7 +425,7 @@ msgstr ""
 
 #: inc_openoffice/windows/msi_languages/Error.ulf#OOO_ERROR_74
 msgid  "The following applications should be closed before continuing the installation:"
-msgstr ""
+msgstr "Oʻrnatishni boshlashdan avval quyidagi dasturlar yopilishi kerak:"
 
 #: inc_openoffice/windows/msi_languages/Error.ulf#OOO_ERROR_75
 msgid  "Could not find any previously installed compliant products on the machine for installing this product."
@@ -437,19 +437,19 @@ msgstr "[2] kaliti notoʻgʻri.  Toʻgʻri kalit kiritganingizni tekshirib koʻr
 
 #: inc_openoffice/windows/msi_languages/Error.ulf#OOO_ERROR_77
 msgid  "The installer must restart your system before configuration of [2] can continue.  Click Yes to restart now or No if you plan to restart later."
-msgstr ""
+msgstr "[2]'ni moslash uchun, kompyuterni oʻchirib-yoqish kerak.  Oʻchirib-yoqish uchun \"Ha\" tugmasini yoki keyinroq qoʻlbola oʻchirib-qish uchun \"Yoʻq\" tugmasini bosing."
 
 #: inc_openoffice/windows/msi_languages/Error.ulf#OOO_ERROR_78
 msgid  "You must restart your system for the configuration changes made to [2] to take effect. Click Yes to restart now or No if you plan to restart later."
-msgstr ""
+msgstr "Oʻzgrishlar [2] ga qoʻllanishi uchun kompyuterni oʻchirib yoqishingiz kerak. Oʻchirib-yoqish uchun Ha tugmasini, keyinroq oʻchirib-yoqish uchun Yoʻq tugmasini bosing."
 
 #: inc_openoffice/windows/msi_languages/Error.ulf#OOO_ERROR_79
 msgid  "An installation for [2] is currently suspended.  You must undo the changes made by that installation to continue.  Do you want to undo those changes?"
-msgstr ""
+msgstr "[2]ni oʻrnatish toʻxtatildi.  Davom etish uchun oʻrnatuvchi tomonidan qilingan oʻzgarishlarni bekor qilishingiz kerak.  Oʻzgarishlarni bekor qilishni istaysizmi?"
 
 #: inc_openoffice/windows/msi_languages/Error.ulf#OOO_ERROR_80
 msgid  "A previous installation for this product is in progress.  You must undo the changes made by that installation to continue.  Do you want to undo those changes?"
-msgstr ""
+msgstr "Ushbu mahsulot uchun oldingi oʻrnatish dastur davom etmoqda. Davom ettirish uchun oldingi oʻrnatuvchi tomonidan qilingan oʻzgarishlarni bekor qilishingiz shart. Oʻzgarishlarni bekor qilishni istaysizmi?"
 
 #: inc_openoffice/windows/msi_languages/Error.ulf#OOO_ERROR_81
 msgid  "No valid source could be found for product [2].  The Windows Installer cannot continue."
@@ -469,11 +469,11 @@ msgstr "Mahsulot: [2] -- [3]"
 
 #: inc_openoffice/windows/msi_languages/Error.ulf#OOO_ERROR_85
 msgid  "You may either restore your computer to its previous state or continue the installation later. Would you like to restore?"
-msgstr ""
+msgstr "Siz kompyuterni oldingi holiga qayta tiklashingiz yoki oʻrnatishni keyinroq davom ettirishingiz mumkin. Tiklashni istaysizmi?"
 
 #: inc_openoffice/windows/msi_languages/Error.ulf#OOO_ERROR_86
 msgid  "An error occurred while writing installation information to disk.  Check to make sure enough disk space is available, and click Retry, or Cancel to end the installation."
-msgstr ""
+msgstr "Oʻrnatish maʼlumotlarini diskka yozishda xatolik roʻy berdi. Boʻsh joy yetarli ekanligini tekshirib koʻring va Qaytadan urinish yoki oʻrnatishni tugatish uchun Bekor qilish tugmasini bosing."
 
 #: inc_openoffice/windows/msi_languages/Error.ulf#OOO_ERROR_87
 msgid  "One or more of the files required to restore your computer to its previous state could not be found.  Restoration will not be possible."
@@ -481,11 +481,11 @@ msgstr ""
 
 #: inc_openoffice/windows/msi_languages/Error.ulf#OOO_ERROR_88
 msgid  "[2] cannot install one of its required products. Contact your technical support group.  {{System Error: [3].}}"
-msgstr ""
+msgstr "[2] talab qilingan narsani oʻrnatib boʻlmadi. Texnik yordam guruhingiz bilan bogʻlaning.  {{System Error: [3].}}"
 
 #: inc_openoffice/windows/msi_languages/Error.ulf#OOO_ERROR_89
 msgid  "The older version of [2] cannot be removed.  Contact your technical support group.  {{System Error [3].}}"
-msgstr ""
+msgstr "[2] eski versisini olib tashlab boʻlmaydi.  Texnik yordam markazingiz bilan bogʻlaning.  {{System Error [3].}}"
 
 #: inc_openoffice/windows/msi_languages/Error.ulf#OOO_ERROR_90
 msgid  "The path [2] is not valid.  Please specify a valid path."
@@ -497,15 +497,15 @@ msgstr ""
 
 #: inc_openoffice/windows/msi_languages/Error.ulf#OOO_ERROR_92
 msgid  "There is no disk in drive [2]. Please insert one and click Retry, or click Cancel to go back to the previously selected volume."
-msgstr ""
+msgstr "2] diskovodida disk mavjud emas.  Iltimos diskni qoʻying va Qaytadan urinish tugmasini yoki oldin tanlangan diskka qaytish uchun Bekor qilish tugmasini bosing."
 
 #: inc_openoffice/windows/msi_languages/Error.ulf#OOO_ERROR_93
 msgid  "There is no disk in drive [2]. Please insert one and click Retry, or click Cancel to return to the browse dialog and select a different volume."
-msgstr ""
+msgstr "[2] diskovodida disk mavjud emas.  Iltimos diskni qoʻying va Qaytadan urinish tugmasini yoki boshqa diskni tanlash oynasiga qaytish uchun Bekor qilish tugmasini bosing."
 
 #: inc_openoffice/windows/msi_languages/Error.ulf#OOO_ERROR_94
 msgid  "The folder [2] does not exist.  Please enter a path to an existing folder."
-msgstr ""
+msgstr "[2] jildi mavjud emas.  Iltimos mavjud jild yoʻlini koʻrsating."
 
 #: inc_openoffice/windows/msi_languages/Error.ulf#OOO_ERROR_95
 msgid  "You have insufficient privileges to read this folder."
@@ -513,7 +513,7 @@ msgstr "Ushbu jildni oʻqish uchun sizda yetarli huquqlar yoʻq."
 
 #: inc_openoffice/windows/msi_languages/Error.ulf#OOO_ERROR_96
 msgid  "A valid destination folder for the installation could not be determined."
-msgstr ""
+msgstr "Oʻrnatish uchun moʻljallangan jildni topib boʻlmadi."
 
 #: inc_openoffice/windows/msi_languages/Error.ulf#OOO_ERROR_97
 msgid  "Error attempting to read from the source installation database: [2]."
@@ -613,7 +613,7 @@ msgstr ""
 
 #: inc_openoffice/windows/msi_languages/Error.ulf#OOO_ERROR_121
 msgid  "You do not have sufficient privileges to complete this installation for all users of the machine.  Log on as an administrator and then retry this installation."
-msgstr ""
+msgstr "Ushbu oʻrnatishni tizimdagi barcha foydalanuvchilar uchun oʻrnatishga sizda yetarli huquq yoʻq. Boshqaruvchi usulida kirib, qaytadan urinib koʻring."
 
 #: inc_openoffice/windows/msi_languages/Error.ulf#OOO_ERROR_122
 msgid  "Could not set file security for file [3]. Error: [2].  Verify that you have sufficient privileges to modify the security permissions for this file."
@@ -645,15 +645,15 @@ msgstr ""
 
 #: inc_openoffice/windows/msi_languages/Error.ulf#OOO_ERROR_129
 msgid  "This setup requires Internet Information Server 4.0 or higher for configuring IIS Virtual Roots. Please make sure that you have IIS 4.0 or higher."
-msgstr ""
+msgstr "Oʻrnatish dasturi virtual saytlarni (IIS Virtual Roots) moslash uchun Internet Information Server 4.0 yoki undan keyingisini talab qildi. Iltimos sizda IIS 4.0 yoki undan keyingisi mavjudligini tekshirib koʻring."
 
 #: inc_openoffice/windows/msi_languages/Error.ulf#OOO_ERROR_130
 msgid  "This setup requires Administrator privileges for configuring IIS Virtual Roots."
-msgstr ""
+msgstr "Oʻrnatish dasturi virtual saytlarni (IIS Virtual Roots) moslash uchun boshqaruvchi huquqini talab qiladi."
 
 #: inc_openoffice/windows/msi_languages/CustomAc.ulf#OOO_CUSTOMACTION_1
 msgid  "A newer version of [ProductName] was found. To install an older version, the newer version needs to be removed first."
-msgstr ""
+msgstr "Yangi [ProductName] versiya topildi. Eski versiyani oʻrnatish uchun avval yangi versiyani olib tashlashingiz kerak."
 
 #: inc_openoffice/windows/msi_languages/CustomAc.ulf#OOO_CUSTOMACTION_2
 msgid  "The same version of this product is already installed."
@@ -661,7 +661,7 @@ msgstr "Xuddi shundan versiya allaqachon oʻrnatilgan."
 
 #: inc_openoffice/windows/msi_languages/CustomAc.ulf#OOO_CUSTOMACTION_3
 msgid  "An older version of [ProductName] was found. To install a newer version, the older version needs to be removed first."
-msgstr ""
+msgstr "Yangi [ProductName] versiya topildi. Eski versiyani oʻrnatish uchun avval yangi versiyani olib tashlashingiz kerak."
 
 #: inc_openoffice/windows/msi_languages/CustomAc.ulf#OOO_CUSTOMACTION_4
 msgid  "Please exit [DEFINEDPRODUCT] [DEFINEDVERSION] and the [DEFINEDPRODUCT] [DEFINEDVERSION] Quickstarter before you continue. If you are using a multi-user system, also make sure that no other user has [DEFINEDPRODUCT] [DEFINEDVERSION] open."
@@ -693,15 +693,15 @@ msgstr "Ushbu komponent talab qilinganda oʻrnatiladi."
 
 #: inc_openoffice/windows/msi_languages/UIText.ulf#OOO_UITEXT_7
 msgid  "This feature, and all subfeatures, will be installed to run from the CD."
-msgstr ""
+msgstr "Ushbu komponent  va barcha quyi komponentlar CD'dan yuklash uchun oʻrnatiladi."
 
 #: inc_openoffice/windows/msi_languages/UIText.ulf#OOO_UITEXT_8
 msgid  "This feature, and all subfeatures, will be installed on local hard drive."
-msgstr ""
+msgstr "Ushbu komponent  va barcha quyi komponentlar qattiq diskka oʻrnatiladi."
 
 #: inc_openoffice/windows/msi_languages/UIText.ulf#OOO_UITEXT_9
 msgid  "This feature, and all subfeatures, will be installed to run from the network."
-msgstr ""
+msgstr "Ushbu komponent  va barcha quyi komponentlar tarmoqdan yuklash uchun oʻrnatiladi."
 
 #: inc_openoffice/windows/msi_languages/UIText.ulf#OOO_UITEXT_10
 msgid  "This feature will be installed to run from CD."
@@ -761,11 +761,11 @@ msgstr "Ushbu komponent tarmoqdan ishga tushirish uchun oʻnatiladi."
 
 #: inc_openoffice/windows/msi_languages/UIText.ulf#OOO_UITEXT_24
 msgid  "This feature will be uninstalled completely, and you won't be able to run it from CD."
-msgstr ""
+msgstr "Ushbu komponent toʻliq olib tashlanadi va CD'dan yuklanmaydi."
 
 #: inc_openoffice/windows/msi_languages/UIText.ulf#OOO_UITEXT_25
 msgid  "This feature was run from the CD but will be set to be installed when required."
-msgstr ""
+msgstr "Komponent CD'dan yuklandi, ammo birinchi talab qilinganda oʻrnatiladi."
 
 #: inc_openoffice/windows/msi_languages/UIText.ulf#OOO_UITEXT_26
 msgid  "This feature will continue to be run from the CD"
@@ -773,7 +773,7 @@ msgstr "Komponent CD'dan yuklanishda davom etadi."
 
 #: inc_openoffice/windows/msi_languages/UIText.ulf#OOO_UITEXT_27
 msgid  "This feature was run from the CD but will be installed on the local hard drive."
-msgstr ""
+msgstr "mponent CD'dan yuklandi, ammo qattiq diskka oʻrnatiladi."
 
 #: inc_openoffice/windows/msi_languages/UIText.ulf#OOO_UITEXT_28
 msgid  "This feature frees up [1] on your hard drive."
@@ -793,11 +793,11 @@ msgstr "Komponent toʻliq olib tashlanadi."
 
 #: inc_openoffice/windows/msi_languages/UIText.ulf#OOO_UITEXT_32
 msgid  "This feature will be removed from your local hard drive but will be set to be installed when required."
-msgstr ""
+msgstr "Ushbu komponent qattiq diskdan olib tashlanadi, ammo birinchi talab qilinganda oʻrnatiladi."
 
 #: inc_openoffice/windows/msi_languages/UIText.ulf#OOO_UITEXT_33
 msgid  "This feature will be removed from your local hard drive but will still be available to run from CD."
-msgstr ""
+msgstr "Ushbu komponent qattiq diskdan olib tashlanadi, ammo CD'dan yuklanadi."
 
 #: inc_openoffice/windows/msi_languages/UIText.ulf#OOO_UITEXT_34
 msgid  "This feature will remain on your local hard drive."
@@ -805,19 +805,19 @@ msgstr "Komponent qattiq diskda qoladi."
 
 #: inc_openoffice/windows/msi_languages/UIText.ulf#OOO_UITEXT_35
 msgid  "This feature will be removed from your local hard drive, but will be still available to run from the network."
-msgstr ""
+msgstr "Ushbu komponent qattiq diskdan olib tashlanadi, ammo tarmoqdan yuklanadi."
 
 #: inc_openoffice/windows/msi_languages/UIText.ulf#OOO_UITEXT_36
 msgid  "This feature will be uninstalled completely, and you won't be able to run it from the network."
-msgstr ""
+msgstr "Ushbu komponent toʻliq olib tashlanadi va tarmoqdan yuklanmaydi."
 
 #: inc_openoffice/windows/msi_languages/UIText.ulf#OOO_UITEXT_37
 msgid  "This feature was run from the network but will be installed when required."
-msgstr ""
+msgstr "Komponent tarmoqdan yuklandi, ammo birinchi talab qilinganda oʻrnatiladi."
 
 #: inc_openoffice/windows/msi_languages/UIText.ulf#OOO_UITEXT_38
 msgid  "This feature was run from the network but will be installed on the local hard drive."
-msgstr ""
+msgstr "Komponent tarmoqdan yuklandi, ammo qattiq diskda oʻrnatiladi."
 
 #: inc_openoffice/windows/msi_languages/UIText.ulf#OOO_UITEXT_39
 msgid  "This feature will continue to be run from the network"
@@ -825,19 +825,19 @@ msgstr "Komponent tarmoqdan yuklanishda davom etadi."
 
 #: inc_openoffice/windows/msi_languages/UIText.ulf#OOO_UITEXT_40
 msgid  "This feature frees up [1] on your hard drive. It has [2] of [3] subfeatures selected. The subfeatures free up [4] on your hard drive."
-msgstr ""
+msgstr "Ushbu komponent diskdan [1]'ni talab qiladi. [3]'dan [2] element tanlangan. Ushbu elementlar uchun diskdan [4] talab qilinadi."
 
 #: inc_openoffice/windows/msi_languages/UIText.ulf#OOO_UITEXT_41
 msgid  "This feature frees up [1] on your hard drive. It has [2] of [3] subfeatures selected. The subfeatures require [4] on your hard drive."
-msgstr ""
+msgstr "Ushbu komponent diskdan [1]'ni talab qiladi. [3]'dan [2] element tanlangan. Ushbu elementlar uchun diskdan [4] talab qilinadi."
 
 #: inc_openoffice/windows/msi_languages/UIText.ulf#OOO_UITEXT_42
 msgid  "This feature requires [1] on your hard drive. It has [2] of [3] subfeatures selected. The subfeatures free up [4] on your hard drive."
-msgstr ""
+msgstr "Ushbu komponent diskdan [1]'ni talab qiladi. [3]'dan [2] element tanlangan. Ushbu elementlar uchun diskdan [4] talab qilinadi."
 
 #: inc_openoffice/windows/msi_languages/UIText.ulf#OOO_UITEXT_43
 msgid  "This feature requires [1] on your hard drive. It has [2] of [3] subfeatures selected. The subfeatures require [4] on your hard drive."
-msgstr ""
+msgstr "Ushbu komponent diskdan [1]'ni talab qiladi. [3]'dan [2] element tanlangan. Ushbu elementlar uchun diskdan [4] talab qilinadi."
 
 #: inc_openoffice/windows/msi_languages/UIText.ulf#OOO_UITEXT_44
 msgid  "Time remaining: {[1] min }[2] sec"
@@ -1361,7 +1361,7 @@ msgstr "Kalit: [1], Nomi: [2], Qiymat: [3]"
 
 #: inc_openoffice/windows/msi_languages/LaunchCo.ulf#OOO_LAUNCH_1
 msgid  "The Installation Wizard cannot be run properly because you are logged in as a user without sufficient administrator rights for this system."
-msgstr ""
+msgstr "Oʻrnatish ustasi oʻrnatishni toʻgʻri davom ettira olmaydi, chunki siz tizimga boshqaruvchi huquqlarisiz kirgansiz."
 
 #: inc_openoffice/windows/msi_languages/LaunchCo.ulf#OOO_LAUNCH_2
 msgid  "Please use the file setup.exe to start the installation."
@@ -1373,7 +1373,7 @@ msgstr "%PRODUCTNAME %PRODUCTVERSION oʻrnatuvchisi tayyorlanmoqda"
 
 #: inc_openoffice/windows/msi_languages/Nsis.ulf#MUI_TEXT_WELCOME_INFO_TITLE
 msgid  "Thank you for downloading %PRODUCTNAME %PRODUCTVERSION."
-msgstr ""
+msgstr "%PRODUCTNAME %PRODUCTVERSION'ni tanlaganingiz uchun minnatdorchilik bildiramiz."
 
 #: inc_openoffice/windows/msi_languages/Nsis.ulf#MUI_TEXT_WELCOME_INFO_TEXT
 msgid  "The installation files must be unpacked and copied to your hard disk in preparation for the installation. After that, the %PRODUCTNAME installation will start automatically.\r\n\r\nClick \'Next\' to continue."
@@ -1421,7 +1421,7 @@ msgstr "Ajratish:"
 
 #: inc_openoffice/windows/msi_languages/Nsis.ulf#MUI_TEXT_ABORTWARNING
 msgid  "Are you sure you want to quit the %PRODUCTNAME %PRODUCTVERSION Installation Preparation"
-msgstr ""
+msgstr "Rostdan ham %PRODUCTNAME %PRODUCTVERSION dasturini oʻrnatishni bekor qilmoqchimisiz?"
 
 #: inc_openoffice/windows/msi_languages/SIS.ulf#OOO_SIS_TITLE
 msgid  "Installation database"
@@ -1461,7 +1461,7 @@ msgstr ""
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_7
 msgid  "{&MSSansBold8}Change Current Destination Folder"
-msgstr "{&MSSansBold8} Joriy moʻljal jildni oʻzgartirish"
+msgstr "{&MSSansBold8}Joriy moʻljal jildni oʻzgartirish"
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_9
 msgid  "Create new folder|"
@@ -1529,7 +1529,7 @@ msgstr "{&TahomaBold10}[ProductName] oʻrnatish ustasiga marhamat"
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_28
 msgid  "The Installation Wizard will create a server image of [ProductName] at a specified network location. To continue, click Next."
-msgstr ""
+msgstr "Oʻrnatish ustasi koʻrsatilgan tarmoq manzilida [ProductName]'ning tarmoq tasviri yaratiladi. Davom ettirish uchun \"Keyingi\" tugmasini bosing."
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_29
 msgid  "&No"
@@ -1537,7 +1537,7 @@ msgstr "&Yoʻq"
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_30
 msgid  "Are you sure you want to cancel [ProductName] installation?"
-msgstr ""
+msgstr "[ProductName] dasturini oʻrnatishni bekor qilishga ishonchingiz komilmi?"
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_31
 msgid  "&Yes"
@@ -1645,7 +1645,7 @@ msgstr "Komponentning hajmi"
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_64
 msgid  "Custom Setup allows you to selectively install program features."
-msgstr ""
+msgstr "Boshqa oʻrnatish dastur komponentlarini tanlab oʻrnatish imkoniyatini beradi."
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_65
 msgid  "{&MSSansBold8}Custom Setup Tips"
@@ -1657,7 +1657,7 @@ msgstr "Oʻrnatilmaydi."
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_67
 msgid  "Will be installed on first use. (Available only if the feature supports this option.)"
-msgstr ""
+msgstr "Birinchi marta foydalanilganda oʻrnatiladi. (Agar komponent ushbu xususiyatni qoʻllasa.)"
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_68
 msgid  "This install state means the feature..."
@@ -1669,11 +1669,11 @@ msgstr "Diskka toʻliq oʻrnatiladi."
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_70
 msgid  "The icon next to the feature name indicates the install state of the feature. Click the icon to drop down the install state menu for each feature."
-msgstr ""
+msgstr "Komponent nomidan keyingi nishoncha komponentning oʻrnatilish holatini koʻrsatadi. Har bir komponent uchun holatni koʻrish uchun nishonchani bosing."
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_71
 msgid  "Will be installed to run from the network. (Available only if the feature supports this option.)"
-msgstr ""
+msgstr "Tarmoqdan ishga tushirish uchun oʻrnatiladi. (Agar komponent shunday oʻrnatish turini qoʻllasa.)"
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_72
 msgid  "OK"
@@ -1697,7 +1697,7 @@ msgstr "&Oʻzgartirish..."
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_79
 msgid  "Click Next to install to this folder, or click Change to install to a different folder."
-msgstr ""
+msgstr "Ushbu jildga oʻrnatish uchun Keyingi tugmasini bosing yoki boshqa jildga oʻrnatish uchun Oʻzgartirish tugmasini bosing."
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_80
 msgid  "{&MSSansBold8}Database Folder"
@@ -1729,7 +1729,7 @@ msgstr "&Oʻzgartirish..."
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_89
 msgid  "Click Next to install to this folder, or click Change to install to a different folder."
-msgstr ""
+msgstr "Ushbu jildga oʻrnatish uchun Keyingi tugmasini bosing yoki boshqa jildga oʻrnatish uchun Oʻzgartirish tugmasini bosing."
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_90
 msgid  "{&MSSansBold8}Destination Folder"
@@ -1741,7 +1741,7 @@ msgstr "[INSTALLDIR]"
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_92
 msgid  "Install [ProductName] to:"
-msgstr "[ProductName] ni bu yerga oʻrnatish:"
+msgstr "[ProductName] oʻrnatiladigan manzil:"
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_93
 msgid  "&Next >"
@@ -1749,7 +1749,7 @@ msgstr "&Keyingi >"
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_96
 msgid  "The disk space required for the installation of the selected features."
-msgstr ""
+msgstr "Tanlangan komponentlarni oʻrnatish uchun diskdan boʻsh joy talab qilinadi."
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_97
 msgid  "The highlighted volumes do not have enough disk space available for the currently selected features. You can remove files from the highlighted volumes, choose to install less features onto local drives, or select different destination drives."
@@ -1769,7 +1769,7 @@ msgstr "Yangilanishi kerak boʻlgan baʼzi fayllardan foydalanilmoqda."
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_104
 msgid  "The following applications are using files that need to be updated by this setup. Close these applications and click Retry to continue."
-msgstr ""
+msgstr "Quyidagi dasturlar yangilanishi kerak boʻlgan fayllardan foydalanmoqda. Ushbu dasturlarni yoping va \"Qaytadan urinish\" tugmasini bosing."
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_105
 msgid  "{&MSSansBold8}Files in Use"
@@ -1841,7 +1841,7 @@ msgstr "{&TahomaBold10}[ProductName] oʻrnatish ustasiga marhamat"
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_127
 msgid  "The Installation Wizard will install [ProductName] on your computer. To continue, click Next."
-msgstr ""
+msgstr "Oʻrnatish ustasi kompyuteringizga [ProductName]'ni oʻrnatadi. Davom ettirish uchun \"Keyingi\" tugmasini bosing."
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_128
 msgid  "< &Back"
@@ -1913,11 +1913,11 @@ msgstr "{&TahomaBold10}[ProductName] oʻrnatish ustasiga marhamat"
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_150
 msgid  "The Installation Wizard will allow you to modify, repair, or remove [ProductName]. To continue, click Next."
-msgstr ""
+msgstr "Oʻrnatish ustasi [ProductName]'ni oʻzgartirish, tuzatish yoki olib tashlash imkoniyatini beradi. Davom ettirish uchun \"Keyingi\" tugmasini bosing."
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_153
 msgid  "Disk space required for the installation exceeds available disk space."
-msgstr ""
+msgstr "Oʻrnatish uchun talab qilinadigan disk hajmi, mavjud diskdagi boʻsh joydan oshib ketdi."
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_154
 msgid  "The highlighted volumes do not have enough disk space available for the currently selected features. You can remove files from the highlighted volumes, choose to install less features onto local drives, or select different destination drives."
@@ -1953,7 +1953,7 @@ msgstr ""
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_162
 msgid  "The Installation Wizard will install the Patch for [ProductName] on your computer.  To continue, click Update."
-msgstr ""
+msgstr "Oʻrnatish ustasi [ProductName] uchun pachni oʻrnatadi.  Davom ettirish uchun \"Yangilash\" tugmasini bosing."
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_163
 msgid  "< &Back"
@@ -1973,7 +1973,7 @@ msgstr "Oʻrnatishni boshlash uchun Oʻrnatish tugmasini bosing."
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_169
 msgid  "If you want to review or change any of your installation settings, click Back. Click Cancel to exit the wizard."
-msgstr ""
+msgstr "Oʻrnatish parametrlarini koʻrish yoki oʻzgartirish uchun «Orqaga» tugmasini bosing. Usta ishini tugatish uchun «Bekor qilish» tugmasini bosing."
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_170
 msgid  "{&MSSansBold8}Ready to Modify the Program"
@@ -2033,11 +2033,11 @@ msgstr "&Tayyor"
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_186
 msgid  "Your system has not been modified. To complete installation at another time, please run setup again."
-msgstr ""
+msgstr "Tizimingiz moslamalari oʻzgarmagan. Oʻrnatishni boshqa safar oxirigacha yetkazish uchun, oʻrnatish dasturini ishga tushiring."
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_187
 msgid  "Click Finish to exit the wizard."
-msgstr "Ustadan chiqish uchun Tayyor tugmasini bosing."
+msgstr "Ustadan chiqsh uchun Tayyor tugmasini bosing."
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_188
 msgid  "You can either keep any existing installed elements on your system to continue this installation at a later time or you can restore your system to its original state prior to the installation."
@@ -2065,7 +2065,7 @@ msgstr "Bekor qilish"
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_194
 msgid  "&Yes, check for program updates (Recommended) after the setup completes."
-msgstr ""
+msgstr "&Ha, oʻrnatishdan soʻng yangilanishlarga tekshirilsin. (Tavsiya etiladi)"
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_195
 msgid  "Launch the program"
@@ -2085,11 +2085,11 @@ msgstr "{&TahomaBold10}Oʻrnatish ustasi fazifasi tugadi"
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_199
 msgid  "The Installation Wizard has successfully installed [ProductName]. Click Finish to exit the wizard."
-msgstr ""
+msgstr "Oʻrnatish ustasi [ProductName]'ni muvaffaqiyatli oʻrnatdi. Ustadan chiqish uchun Tayyor tugmasini bosing."
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_200
 msgid  "The Installation Wizard has successfully uninstalled [ProductName]. Click Finish to exit the wizard."
-msgstr ""
+msgstr "Oʻrnatish ustasi [ProductName]'ni muvaffaqiyatli olib tashladi. Ustadan chiqish uchun Tayyor tugmasini bosing."
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_201
 msgid  "Setup has finished installing [ProductName]."
@@ -2097,11 +2097,11 @@ msgstr "Oʻrnatgich [ProductName] oʻrnatishini tugatdi."
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_202
 msgid  "Some program files might have been updated since you purchased your copy of [ProductName]."
-msgstr ""
+msgstr "Baʼzi dastur fayllari Siz [ProductName] nusxangizni sotib olganingizdan soʻng yangilangan boʻlishi mumkin."
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_203
 msgid  "Your Internet connection can be used to make sure that you have the latest updates."
-msgstr ""
+msgstr "Oxirgi yangilanishlarni tekshirish uchun internetga ulanishingiz kerak boʻlishi mumkin."
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_204
 msgid  "&Abort"
@@ -2169,7 +2169,7 @@ msgstr "&Tayyor"
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_222
 msgid  "Your system has not been modified. To install this program at a later time, please run the installation again."
-msgstr ""
+msgstr "Tizimingiz moslamalari oʻzgarmagan. Ushbu dasturni boshqa safar oʻrnatish uchun, oʻrnatish dasturini ishgaa tushiring."
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_223
 msgid  "Click Finish to exit the wizard."
@@ -2213,11 +2213,11 @@ msgstr "Dasturning siz tanlagan komponentlari olib tashlanadi."
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_236
 msgid  "Please wait while the Installation Wizard installs [ProductName]. This may take several minutes."
-msgstr ""
+msgstr "Iltimos kutib turing, oʻrnatish ustasi [ProductName] dasturini oʻrnatmoqda. Bu biroz vaqtni olishi mumkin."
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_237
 msgid  "Please wait while the Installation Wizard uninstalls [ProductName]. This may take several minutes."
-msgstr ""
+msgstr "Iltimos kutib turing, oʻrnatish ustasi [ProductName] dasturini oʻrnatmoqda. Bu biroz vaqtni olishi mumkin."
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_238
 msgid  "{&MSSansBold8}Installing [ProductName]"
@@ -2257,11 +2257,11 @@ msgstr "&Keyingi >"
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_248
 msgid  "The Installation Wizard will complete the installation of [ProductName] on your computer. To continue, click Next."
-msgstr ""
+msgstr "Oʻrnatish ustasi [ProductName] dasturini oʻrnatishni yakunlaydi. Davom ettirish uchun \"Keyingi\" tugmasini bosing."
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_249
 msgid  "The Installation Wizard will complete the suspended installation of [ProductName] on your computer. To continue, click Next."
-msgstr ""
+msgstr "Oʻrnatish ustasi vaqtinchalik toʻxtatilgan [ProductName]'ni oʻrnatishni davom ettiradi. Davom ettirish uchun \"Keyingi\" tugmasini bosing."
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_250
 msgid  "{&TahomaBold10}Resuming the Installation Wizard for [ProductName]"
@@ -2281,7 +2281,7 @@ msgstr ""
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_256
 msgid  "Choose which program features you want installed and where they will be installed. Recommended for advanced users."
-msgstr ""
+msgstr "Dasturning oʻrnatilishi kerak boʻlgan xususiyatlarini va qaerga oʻrnatilishini tanlang. Tajribali foydalanuvchilar uchun tavsiya qilinadi."
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_257
 msgid  "Choose the setup type that best suits your needs."
@@ -2341,7 +2341,7 @@ msgstr "&[ProductName] Writer/Web"
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_274
 msgid  "Set [DEFINEDPRODUCT] to be the default application for Microsoft Office file types."
-msgstr ""
+msgstr "Quyidagi tur fayllar uchun [DEFINEDPRODUCT] dasturini andoza sifatida oʻrnatish."
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_275
 msgid  "[ProductName] can be set as the default application to open Microsoft Office file types. This means, for instance, that if you double click on one of these files, [ProductName] will open it, not the program that opens it now."
@@ -2361,11 +2361,11 @@ msgstr "{&MSSansBold8}Fayl turi"
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_300
 msgid  "A version of [DEFINEDPRODUCT] [DEFINEDVERSION] was found by the [ProductName] Installation Wizard. This version will be updated."
-msgstr ""
+msgstr "[ProductName] oʻrnatish ustasi tomonidan [DEFINEDPRODUCT] [DEFINEDVERSION] versiya aniqlandi. Ushbu versiya oʻrnatiladi."
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_301
 msgid  "The destination folder specified below does not contain a [DEFINEDPRODUCT] [DEFINEDVERSION] version."
-msgstr ""
+msgstr "Koʻrsatilgan jildda [DEFINEDPRODUCT] [DEFINEDVERSION] versiya mavjud emas."
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_302
 msgid  "A newer [DEFINEDPRODUCT] [DEFINEDVERSION] has been found."
@@ -2380,15 +2380,15 @@ msgid  "Check the destination folder."
 msgstr ""
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_305
-msgid  "To continue, click "Next"."
+msgid  "To continue, click \"Next\"."
 msgstr ""
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_306
-msgid  "To select a different version, click "Change". Otherwise click "Cancel" to abort the Installation Wizard."
+msgid  "To select a different version, click \"Change\". Otherwise click \"Cancel\" to abort the Installation Wizard."
 msgstr ""
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_307
-msgid  "To select a different folder, click "Change"."
+msgid  "To select a different folder, click \"Change\"."
 msgstr ""
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_308
@@ -2397,7 +2397,7 @@ msgstr "[ProductName] ni bu yerga oʻrnatish:"
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_309
 msgid  "If you are just trying out [ProductName], you probably don't want this to happen, so leave the boxes unchecked."
-msgstr ""
+msgstr "Agar [ProductName] dasturini shunchaki sinab koʻrmoqchi boʻlsangiz, bu sizga kerak boʻlmasligi mumkin. Shuning uchun bayroqchani olib tashlang."
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_317
 msgid  "No languages have been selected for installation. Click OK to select one or more languages for installation."

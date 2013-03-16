@@ -125,7 +125,7 @@ msgstr "Pozorno preberite sledečo licenčno pogodbo."
 
 #: src/Localization/setupstrings.ulf#STRING_ACCEPTLICENSE3
 msgid  "If you have read and accept all the terms of the entire Software License Agreement, click 'Accept License' to continue with the installation."
-msgstr ""
+msgstr "Če ste prebrali licenčno pogodbo v celoti in sprejemate njene pogoje, kliknite 'Sprejmem licenco' za nadaljevanje namestitve."
 
 #: src/Localization/setupstrings.ulf#STRING_CHOOSEDIRECTORY1
 msgid  "Select Installation Directory"
@@ -153,11 +153,11 @@ msgstr "Ustvari novo mapo"
 
 #: src/Localization/setupstrings.ulf#STRING_CHOOSEDIRECTORY5_QUESTION_MESSAGE
 msgid  "The directory '${DIR}' does not exist.\nDo you want to create it now?"
-msgstr ""
+msgstr "Mapa '${DIR}' ne obstaja.\nJo želite ustvariti?"
 
 #: src/Localization/setupstrings.ulf#STRING_CHOOSEDIRECTORY5_QUESTION_MESSAGE2
 msgid  "The directory '${DIR}' does not exist.\nDo you want to create it now or choose another directory?"
-msgstr ""
+msgstr "Mapa '${DIR}' ne obstaja.\nJo želite ustvariti ali izbrati drugo mapo?"
 
 #: src/Localization/setupstrings.ulf#STRING_CHOOSEDIRECTORY6
 msgid  "Select root directory"
@@ -185,7 +185,7 @@ msgstr "Izberite dodatne komponente"
 
 #: src/Localization/setupstrings.ulf#STRING_CHOOSECOMPONENTS2
 msgid  "Marked components will be installed. Please mark them accordingly"
-msgstr ""
+msgstr "Nameščene bodo le označene komponente. Temu primerno označite komponente"
 
 #: src/Localization/setupstrings.ulf#STRING_CHOOSECOMPONENTS3
 msgid  "Feature Description"
@@ -213,7 +213,7 @@ msgstr "Nameščene bodo glavne komponente. Priporočljivo za večino uporabniko
 
 #: src/Localization/setupstrings.ulf#STRING_CHOOSEINSTALLATIONTYPE5
 msgid  "You choose the components you want to install and where they are stored. Recommended for advanced users."
-msgstr ""
+msgstr "Izberete želene komponente za namestitev in mesto, kjer naj bodo shranjene. Priporočljivo za napredne uporabnike."
 
 #: src/Localization/setupstrings.ulf#STRING_CHOOSEINSTALLATIONTYPE6
 msgid  "Typical"
@@ -253,7 +253,7 @@ msgstr "Dobrodošli"
 
 #: src/Localization/setupstrings.ulf#STRING_PROLOGUE2
 msgid  "This Installation Wizard will install ${PRODUCT_FULLNAME} on your computer."
-msgstr ""
+msgstr "Čarovnik za namestitev bo na vaš računalnik namestil ${PRODUCT_FULLNAME}."
 
 #: src/Localization/setupstrings.ulf#STRING_PROLOGUE3
 msgid  "To continue, click 'Next'."
@@ -261,7 +261,7 @@ msgstr "Za nadaljevanje kliknite 'Naprej'."
 
 #: src/Localization/setupstrings.ulf#STRING_PROLOGUE4
 msgid  "Note: This installation will be done without root privileges. Therefore you will have a reduced functionality (Java Runtime Environment (JRE) not installable, system integration not possible).\nClick 'Cancel' and change your privileges to root privileges, if you want to use the complete functionality."
-msgstr ""
+msgstr "Opomba: namestitev bo izvedena brez korenskih pravic. Zato bo funkcionalnost okrnjena (ne boste mogli namestiti izvajalnega okolja Java (JRE), sistemska integracija ni možna).\nKliknite 'Prekliči' in spremenite svoje pravice v korenske, če želite polno funkcionalnost."
 
 #: src/Localization/setupstrings.ulf#STRING_INSTALLATIONCOMPLETED1
 msgid  "Installation Completed"
@@ -277,15 +277,15 @@ msgstr "Namestitev ni uspela"
 
 #: src/Localization/setupstrings.ulf#STRING_INSTALLATIONCOMPLETED2
 msgid  "The Installation Wizard has successfully installed ${PRODUCT_FULLNAME} on your computer."
-msgstr ""
+msgstr "Namestitveni čarovnik je ${PRODUCT_FULLNAME} uspešno namestil na vaš računalnik."
 
 #: src/Localization/setupstrings.ulf#STRING_INSTALLATIONCOMPLETED2_ABORT
 msgid  "The Installation Wizard was aborted. ${PRODUCT_NAME} is not installed on your computer."
-msgstr ""
+msgstr "Namestitveni čarovnik je bil prekinjen: ${PRODUCT_NAME} ni nameščena na vašem računalniku."
 
 #: src/Localization/setupstrings.ulf#STRING_INSTALLATIONCOMPLETED2_ERROR
 msgid  "An error has occurred. Thus the Installation Wizard could not install ${PRODUCT_NAME} on your computer successfully. Click 'Details...' for more information."
-msgstr ""
+msgstr "Prišlo je do napake. Namestitveni čarovnik ni uspel namestiti ${PRODUCT_NAME} na vaš računalnik. Kliknite 'Podrobnosti ...' za več informacij."
 
 #: src/Localization/setupstrings.ulf#STRING_INSTALLATIONCOMPLETED3
 msgid  "Click 'Finish' to exit the Wizard."
@@ -297,15 +297,15 @@ msgstr "Podrobnosti ..."
 
 #: src/Localization/setupstrings.ulf#STRING_UNINSTALLATIONPROLOGUE2
 msgid  "The ${PRODUCT_FULLNAME} Uninstallation Wizard will remove ${PRODUCT_FULLNAME} from your computer."
-msgstr ""
+msgstr "Čarovnik za odstranitev ${PRODUCT_FULLNAME} bo odstranil ${PRODUCT_FULLNAME} z vašega računalnika."
 
 #: src/Localization/setupstrings.ulf#STRING_UNINSTALLATION_PROLOGUE_WRONG_PRIVILEGES_CURRENT_ROOT
 msgid  "Sorry, wrong privileges. Installation was done with User privilges, but you have Root privileges."
-msgstr ""
+msgstr "Žal nimate ustreznih pravic. Namestitev je bila izvedena s pravicami navadnega uporabnika, vi pa imate korenske pravice."
 
 #: src/Localization/setupstrings.ulf#STRING_UNINSTALLATION_PROLOGUE_WRONG_PRIVILEGES_CURRENT_USER
 msgid  "Sorry, wrong privileges. Installation was done with Root privilges, but you have User privileges."
-msgstr ""
+msgstr "Žal nimate ustreznih pravic. Namestitev je bila izvedena s korenskimi pravicami, vi pa imate navadne uporabniške pravice."
 
 #: src/Localization/setupstrings.ulf#STRING_CHOOSEUNINSTALLATIONTYPE1
 msgid  "Select the Type of Uninstallation"
@@ -321,7 +321,7 @@ msgstr "Delna"
 
 #: src/Localization/setupstrings.ulf#STRING_CHOOSEUNINSTALLATIONTYPE4
 msgid  "Completely removes ${PRODUCT_FULLNAME} and all its components from your system."
-msgstr ""
+msgstr "Z vašega sistema v celoti odstrani ${PRODUCT_FULLNAME} in vse njene komponente."
 
 #: src/Localization/setupstrings.ulf#STRING_CHOOSEUNINSTALLATIONTYPE5
 msgid  "You choose the program features you want to remove."
@@ -333,7 +333,7 @@ msgstr "Popolna"
 
 #: src/Localization/setupstrings.ulf#STRING_CHOOSEUNINSTALLATIONCOMPONENTS2
 msgid  "Components marked with an X will be removed. Mark the components you want to remove."
-msgstr ""
+msgstr "Odstranjene bodo komponente, označene s križcem (X). Označite komponente, ki jih želite odstraniti."
 
 #: src/Localization/setupstrings.ulf#STRING_UNINSTALLATIONIMMINENT1
 msgid  "Ready to Remove"
@@ -361,19 +361,19 @@ msgstr "Odstranitev ni uspela"
 
 #: src/Localization/setupstrings.ulf#STRING_UNINSTALLATIONCOMPLETED2
 msgid  "The Uninstallation Wizard has successfully removed ${PRODUCT_FULLNAME} from your computer."
-msgstr ""
+msgstr "Čarovnik za odstranitev je z vašega računalnika uspešno odstranil ${PRODUCT_FULLNAME}."
 
 #: src/Localization/setupstrings.ulf#STRING_UNINSTALLATIONCOMPLETED2_PARTIAL
 msgid  "The Uninstallation Wizard has successfully removed the selected components of ${PRODUCT_NAME} from your computer."
-msgstr ""
+msgstr "Čarovnik za odstranitev je z vašega računalnika uspešno odstranil izbrane komponente ${PRODUCT_NAME}."
 
 #: src/Localization/setupstrings.ulf#STRING_UNINSTALLATIONCOMPLETED2_ABORT
 msgid  "The Uninstallation Wizard was aborted before completely removing ${PRODUCT_NAME} from your computer."
-msgstr ""
+msgstr "Čarovnik za odstranitev je bil prekinjen, preden je v celoti z vašega računalnika odstranil ${PRODUCT_NAME}."
 
 #: src/Localization/setupstrings.ulf#STRING_UNINSTALLATIONCOMPLETED2_ERROR
 msgid  "An error has occurred. Thus the Uninstallation Wizard could not remove ${PRODUCT_NAME} from your computer successfully. Click 'Details...' for more information."
-msgstr ""
+msgstr "Prišlo je do napake. Čarovnik za odstranitev ni mogel odstraniti ${PRODUCT_NAME} z vašega računalnika. Za več informacij kliknite 'Podrobnosti ...'."
 
 #: src/Localization/setupstrings.ulf#STRING_INSTALLERFACTORY_OS_NOT_SUPPORTED
 msgid  "Sorry, this Operating System is not supported yet."
@@ -385,7 +385,7 @@ msgstr "Starejša različica ${PRODUCT_NAME} se nahaja tukaj:"
 
 #: src/Localization/setupstrings.ulf#STRING_OLDER_VERSION_INSTALLED_REMOVE
 msgid  "You have to remove the older version of ${PRODUCT_NAME} before you can install the newer one."
-msgstr ""
+msgstr "Preden lahko namestite novejšo različico ${PRODUCT_NAME}, morate odstraniti staro."
 
 #: src/Localization/setupstrings.ulf#STRING_NEWER_VERSION_INSTALLED_FOUND
 msgid  "A newer version of ${PRODUCT_NAME} was found on your system in:"
@@ -393,7 +393,7 @@ msgstr "V vašem sistemu se že nahaja novejša različica ${PRODUCT_NAME}:"
 
 #: src/Localization/setupstrings.ulf#STRING_NEWER_VERSION_INSTALLED_REMOVE
 msgid  "You have to remove the newer version of ${PRODUCT_NAME} before you can install the older one."
-msgstr ""
+msgstr "Preden lahko namestite starejšo različico, morate odstraniti novejšo različico ${PRODUCT_NAME}."
 
 #: src/Localization/setupstrings.ulf#STRING_NEWER_VERSION_DATABASE
 msgid  "Database"
@@ -405,11 +405,11 @@ msgstr "Prosim, izberite drugo namestitveno mapo."
 
 #: src/Localization/setupstrings.ulf#STRING_ROOT_PRIVILEGES_REQUIRED_1
 msgid  "The user you are logged in as cannot run the Installation Wizard."
-msgstr ""
+msgstr "Uporabniško ime, s katerim ste prijavljeni, nima zadostnih pravic za zagon namestitvenega čarovnika."
 
 #: src/Localization/setupstrings.ulf#STRING_ROOT_PRIVILEGES_REQUIRED_2
 msgid  "Please log out and log back in as a user with system administrator rights."
-msgstr ""
+msgstr "Prosim, da se odjavite in nato znova prijavite kot uporabnik s skrbniškimi pravicami."
 
 #: src/Localization/setupstrings.ulf#STRING_DISCSPACE_INSUFFICIENT
 msgid  "Not enough discspace available for installation."
@@ -425,7 +425,7 @@ msgstr "Prostor na voljo"
 
 #: src/Localization/setupstrings.ulf#STRING_DISCSPACE_TIP
 msgid  "Please use another directory for installation or change your module selection."
-msgstr ""
+msgstr "Za namestitev izberite drugo namestitveno mapo ali spremenite izbor modulov."
 
 #: src/Localization/setupstrings.ulf#STRING_ANALYZING_DATABASE1
 msgid  "Analyzing ..."
@@ -433,11 +433,11 @@ msgstr "Analiza je v teku ..."
 
 #: src/Localization/setupstrings.ulf#STRING_ANALYZING_DATABASE2
 msgid  "Analyzing database\nPlease wait a moment ..."
-msgstr ""
+msgstr "Analiza zbirke podatkov je v teku\nPočakajte trenutek ..."
 
 #: src/Localization/setupstrings.ulf#STRING_PROLOGUE_1
 msgid  "Welcome to the Installation Wizard.<p>This wizard asks you to supply configuration settings.<p>At the bottom of each page are navigation buttons that let you move through the Installation Wizard:"
-msgstr ""
+msgstr "Dobrodošli v namestitveni čarovnik.<p>Čarovnik vas bo povprašal za konfiguracijske nastavitve.<p> Na dnu vsake strani so gumbi za krmarjenje, ki omogočajo pomikanje po namestitvenem čarovniku:"
 
 #: src/Localization/setupstrings.ulf#STRING_PROLOGUE_2
 msgid  "'Back' returns you to the previous page."
@@ -453,7 +453,7 @@ msgstr "'Prekliči' prekine čarovnika brez namestitve programske opreme."
 
 #: src/Localization/setupstrings.ulf#STRING_PROLOGUE_5
 msgid  "'Help' displays the Help with further information about the page currently displayed."
-msgstr ""
+msgstr "'Pomoč' prikaže vsebino pomoči z nadaljnjimi podatki o strani, ki je trenutno prikazana."
 
 #: src/Localization/setupstrings.ulf#STRING_PROLOGUE_6
 msgid  "'OK' exits the Help page and returns you to the Installation Wizard."
@@ -461,7 +461,7 @@ msgstr "'V redu' zapusti stran pomoči in vas vrne k namestitvenemu čarovniku."
 
 #: src/Localization/setupstrings.ulf#STRING_UNINSTALLATIONPROLOGUE_1
 msgid  "Welcome to the Uninstallation Wizard.<p>This wizard asks you to supply configuration settings.<p>At the bottom of each page are navigation buttons that let you move through the Uninstallation Wizard:"
-msgstr ""
+msgstr "Dobrodošli v čarovniku za odstranitev.<p>Čarovnik vas bo povprašal za konfiguracijske nastavitve.<p>Na dnu vsake strani so gumbi za krmarjenje, ki omogočajo pomikanje po čarovniku za odstranitev:"
 
 #: src/Localization/setupstrings.ulf#STRING_UNINSTALLATIONPROLOGUE_2
 msgid  "'Back' returns you to the previous page."
@@ -477,7 +477,7 @@ msgstr "'Prekliči' prekine čarovnika brez odstranitve programske opreme."
 
 #: src/Localization/setupstrings.ulf#STRING_UNINSTALLATIONPROLOGUE_5
 msgid  "'Help' displays the Help with further information about the page currently displayed."
-msgstr ""
+msgstr "'Pomoč' prikaže vsebino pomoči z nadaljnjimi podatki o strani, ki je trenutno prikazana."
 
 #: src/Localization/setupstrings.ulf#STRING_UNINSTALLATIONPROLOGUE_6
 msgid  "'OK' exits the Help page and returns you to the Uninstallation Wizard."
@@ -485,55 +485,55 @@ msgstr "'V redu' zapusti stran pomoči in vas vrne k čarovniku za odstranitev."
 
 #: src/Localization/setupstrings.ulf#STRING_ACCEPTLICENSE_1
 msgid  "Before you install this product, you must read and accept the entire Software License Agreement under which this software is licensed for your use."
-msgstr ""
+msgstr "Preden ta izdelek namestite, morate prebrati in sprejeti programsko licenčno pogodbo, pod katero je ta izdelek licenciran za uporabo."
 
 #: src/Localization/setupstrings.ulf#STRING_ACCEPTLICENSE_2
 msgid  "If you have read and accept all the terms of the entire Software License Agreement, click 'Accept License' to continue with the installation."
-msgstr ""
+msgstr "Če ste prebrali licenčno pogodbo v celoti in sprejemate njene pogoje, kliknite 'Sprejmem licenco' za nadaljevanje namestitve."
 
 #: src/Localization/setupstrings.ulf#STRING_ACCEPTLICENSE_3
 msgid  "If you do not accept all the terms of the Software License Agreement, click 'Decline' to end the Installation Wizard without installing this product."
-msgstr ""
+msgstr "Če ne sprejemate vseh zahtev licenčne pogodbe, kliknite 'Ne sprejmem', da prekinete čarovnika brez namestitve izdelka."
 
 #: src/Localization/setupstrings.ulf#STRING_CHOOSEINSTALLATIONTYPE_1
 msgid  "Select the type of product installation to perform from the following choices. This will determine how much information you need to provide for product configuration."
-msgstr ""
+msgstr "Med naslednjimi možnostmi izberite vrsto namestitve. S tem boste določili, koliko podatkov boste morali podati za konfiguracijo izdelka."
 
 #: src/Localization/setupstrings.ulf#STRING_CHOOSEDIRECTORY_1
 msgid  "It is recommended that you install this product in the directory suggested by this Installation Wizard. <p>To choose a different location, click 'Browse...' or specify the full path of the directory to use in the text box below. <p>If this product is already installed, you cannot change the destination directory."
-msgstr ""
+msgstr "Izdelek je priporočeno namestiti v mapo, ki jo predlaga namestitveni čarovnik.<p>Če želite izbrati drugo mesto, kliknite 'Prebrskaj ...' ali navedite polno pot v spodnjem polju.<p>Če je ta izdelek že nameščen, namestitvene mape ne morete spremeniti."
 
 #: src/Localization/setupstrings.ulf#STRING_CHOOSECOMPONENTS_1
 msgid  "Components marked in color will be installed. Click the icon of a component to mark or unmark the component.<p>All already installed components cannot be selected for installation."
-msgstr ""
+msgstr "Nameščene bodo obarvane komponente. Če želite komponento označiti ali preklicati njeno označitev, kliknite njeno ikono.<p>Vseh že nameščenih komponent ne morete označiti za odstranitev."
 
 #: src/Localization/setupstrings.ulf#STRING_INSTALLATIONIMMINENT_1
 msgid  "The listed components are ready for installation based on your configuration settings. <p>If you are satisfied with your selection, click 'Install Now' to begin. <p>To check or modify your settings on the previous pages, click 'Back'."
-msgstr ""
+msgstr "Navedene komponente so glede na vaše nastavitve pripravljene za namestitev. <p>Če vam izbor ustreza, kliknite 'Namesti zdaj' za začetek. <p>Če želite preveriti ali spremeniti nastavitve na prejšnjih straneh, kliknite 'Nazaj'."
 
 #: src/Localization/setupstrings.ulf#STRING_UNINSTALLATIONIMMINENT_1
 msgid  "The listed components are ready for uninstallation based on your configuration settings. <p>If you are satisfied with your selection, click 'Remove Now' to begin. <p>To check or modify your settings on the previous pages, click 'Back'."
-msgstr ""
+msgstr "Navedene komponente so glede na vaše nastavitve pripravljene za odstranitev. <p>Če vam izbor ustreza, kliknite 'Odstrani zdaj' za začetek. <p>Če želite preveriti ali spremeniti nastavitve na prejšnjih straneh, kliknite 'Nazaj'."
 
 #: src/Localization/setupstrings.ulf#STRING_INSTALLATIONONGOING_1
 msgid  "This page indicates the progress of the installation with the aid of a progress bar. To abort the installation process, click 'Stop'."
-msgstr ""
+msgstr "Ta stran kaže napredek namestitve s pomočjo vrstice napredka. Če želite prekiniti potek namestitve, kliknite 'Ustavi'."
 
 #: src/Localization/setupstrings.ulf#STRING_UNINSTALLATIONONGOING_1
 msgid  "This page indicates the progress of the uninstallation with the aid of a progress bar. To abort the uninstallation, click 'Stop'."
-msgstr ""
+msgstr "Ta stran kaže napredek odstranjevanja s pomočjo vrstice napredka. Če želite prekiniti odstranitev, kliknite 'Ustavi'."
 
 #: src/Localization/setupstrings.ulf#STRING_CHOOSEUNINSTALLATIONTYPE_1
 msgid  "Complete: This will remove all installed components of your version.<p>Partial: This removes only the components you will choose out of the components list."
-msgstr ""
+msgstr "Popolna: Odstranjene bodo vse nameščene komponente vaše različice.<p>Delna: Odstranjene bodo samo komponente, ki jih boste izbrali s seznama komponent."
 
 #: src/Localization/setupstrings.ulf#STRING_CHOOSEUNINSTALLATIONCOMPONENTS_1
 msgid  "Components marked with an X will be removed. Click next to a component to mark or unmark it with an X."
-msgstr ""
+msgstr "Komponente, označene z X, bodo odstranjene. Če želite komponento označiti ali preklicati njen izbor, kliknite poleg nje."
 
 #: src/Localization/setupstrings.ulf#STRING_PACKAGEFORMAT_NOT_SUPPORTED
 msgid  "This package format is currently not supported for your operating system!"
-msgstr ""
+msgstr "Ta vrsta paketov za vaš operacijski sistem trenutno ni podprta!"
 
 #: src/Localization/setupstrings.ulf#STRING_OPERATING_SYSTEM
 msgid  "Operating system"
@@ -553,7 +553,7 @@ msgstr "Za namestitev niste izbrali nobene komponente."
 
 #: src/Localization/setupstrings.ulf#STRING_NO_COMPONENTS_SELECTED_2
 msgid  "Click 'OK' to select one or more components for installation or to exit the Installation Wizard."
-msgstr ""
+msgstr "Kliknite 'V redu' za izbor ene ali več komponent za namestitev ali za izhod iz namestitvenega čarovnika."
 
 #: src/Localization/setupstrings.ulf#STRING_NO_LANGUAGE_SELECTED_1
 msgid  "No languages have been selected for installation."
@@ -561,7 +561,7 @@ msgstr "Za namestitev ni izbran noben jezik."
 
 #: src/Localization/setupstrings.ulf#STRING_NO_LANGUAGE_SELECTED_2
 msgid  "Click 'OK' to select one or more languages for installation or to exit the Installation Wizard."
-msgstr ""
+msgstr "Kliknite 'V redu', če želite izbrati namestitev enega ali več jezikov ali če želite zapustiti namestitvenega čarovnika."
 
 #: src/Localization/setupstrings.ulf#STRING_NO_APPLICATION_SELECTED_1
 msgid  "No applications have been selected for installation."
@@ -569,7 +569,7 @@ msgstr "Za namestitev ni izbran noben modul."
 
 #: src/Localization/setupstrings.ulf#STRING_NO_APPLICATION_SELECTED_2
 msgid  "Click 'OK' to select one or more application for installation or to exit the Installation Wizard."
-msgstr ""
+msgstr "Kliknite 'V redu', če želite izbrati namestitev enega ali več modulov ali zapustiti namestitvenega čarovnika."
 
 #: src/Localization/setupstrings.ulf#STRING_NOTHING_TO_UNINSTALL
 msgid  "Nothing to uninstall"
@@ -581,7 +581,7 @@ msgstr "Za odstranitev niste izbrali nobene komponente."
 
 #: src/Localization/setupstrings.ulf#STRING_NO_UNINSTALLCOMPONENTS_SELECTED_2
 msgid  "Click 'OK' to select one or more components for uninstallation or to exit the Uninstallation Wizard."
-msgstr ""
+msgstr "Kliknite 'V redu' za izbor ene ali več komponent za odstranitev ali za izhod iz čarovnika za odstranitev."
 
 #: src/Localization/setupstrings.ulf#STRING_ALL_LANGUAGECOMPONENTS_SELECTED_1
 msgid  "All language components have been selected for uninstallation."
@@ -589,7 +589,7 @@ msgstr "Za odstranitev so bile označene vse jezikovne komponente."
 
 #: src/Localization/setupstrings.ulf#STRING_ALL_LANGUAGECOMPONENTS_SELECTED_2
 msgid  "Click 'OK' to select one or more language components not for uninstallation or to exit the Uninstallation Wizard."
-msgstr ""
+msgstr "Kliknite 'V redu', če želite izbrati prepoved odstranitve ene ali več komponent jezikov ali zapustiti čarovnika za odstranitev."
 
 #: src/Localization/setupstrings.ulf#STRING_ALL_APPLICATIONCOMPONENTS_SELECTED_1
 msgid  "All application components have been selected for uninstallation."
@@ -597,7 +597,7 @@ msgstr "Za odstranitev so bile izbrane vse komponente modulov."
 
 #: src/Localization/setupstrings.ulf#STRING_ALL_APPLICATIONCOMPONENTS_SELECTED_2
 msgid  "Click 'OK' to select one or more application components not for uninstallation or to exit the Uninstallation Wizard."
-msgstr ""
+msgstr "Kliknite 'V redu', če želite izbrati prepoved odstranitve ene ali več komponent modulov ali zapustiti čarovnika za odstranitev."
 
 #: src/Localization/setupstrings.ulf#STRING_CHANGE_SELECTION
 msgid  "Please change selection"

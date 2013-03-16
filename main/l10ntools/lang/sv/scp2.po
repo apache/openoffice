@@ -37,11 +37,11 @@ msgstr "ActiveX-kontroll"
 
 #: source/activex/module_activex.ulf#STR_DESC_MODULE_OPTIONAL_ACTIVEXCONTROL
 msgid  "Component to enable Microsoft Internet Explorer to display %PRODUCTNAME documents."
-msgstr ""
+msgstr "Komponent som gör att %PRODUCTNAME dokument kan visas i Microsoft Internet Explorer."
 
 #: source/base/folderitem_base.ulf#STR_FI_TOOLTIP_BASE
 msgid  "Manage databases, create queries and reports to track and manage your information by using Base."
-msgstr ""
+msgstr "Hantera databaser, skapa sökningar och rapporter för att spåra och hantera information med hjälp av Base."
 
 #: source/base/registryitem_base.ulf#STR_REG_VAL_OO_DATABASE
 msgid  "OpenDocument Database"
@@ -121,7 +121,11 @@ msgstr "Kalkylblad"
 
 #: source/calc/folderitem_calc.ulf#STR_FI_TOOLTIP_CALC
 msgid  "Perform calculation, analyze information and manage lists in spreadsheets by using Calc."
-msgstr ""
+msgstr "Utföra beräkningar, analysera information och hantera listor i kalkylblad med hjälp av Calc."
+
+#: source/calc/registryitem_calc.ulf#STR_REG_VAL_NEW
+msgid  "&New"
+msgstr "&Nytt"
 
 #: source/calc/registryitem_calc.ulf#STR_REG_VAL_SO60_SPREADSHEET
 msgid  "%SXWFORMATNAME %SXWFORMATVERSION Spreadsheet"
@@ -155,17 +159,13 @@ msgstr "Microsoft Excel 97-2003-mall"
 msgid  "Microsoft Excel Template"
 msgstr "Microsoft Excel-mall"
 
-#: source/calc/registryitem_calc.ulf#STR_REG_VAL_NEW
-msgid  "&New"
-msgstr "&Nytt"
-
 #: source/calc/module_calc.ulf#STR_NAME_MODULE_PRG_CALC
 msgid  "%PRODUCTNAME Calc"
 msgstr "%PRODUCTNAME Calc"
 
 #: source/calc/module_calc.ulf#STR_DESC_MODULE_PRG_CALC
 msgid  "Perform calculation, analyze information and manage lists in spreadsheets by using %PRODUCTNAME Calc."
-msgstr ""
+msgstr "Beräkna, analysera information och hantera listor i kalkylblad med hjälp av %PRODUCTNAME Calc."
 
 #: source/calc/module_calc.ulf#STR_NAME_MODULE_PRG_CALC_BIN
 msgid  "Program Module"
@@ -189,7 +189,11 @@ msgstr "Add-in"
 
 #: source/calc/module_calc.ulf#STR_DESC_MODULE_OPTIONAL_ADDINS
 msgid  "Add-ins are additional programs that make new functions available in %PRODUCTNAME Calc."
-msgstr ""
+msgstr "Tillägg är extraprogram som gör nya funktioner tillgängliga i %PRODUCTNAME Calc."
+
+#: source/draw/registryitem_draw.ulf#STR_REG_VAL_NEW
+msgid  "&New"
+msgstr "&Nytt"
 
 #: source/draw/registryitem_draw.ulf#STR_REG_VAL_SO60_DRAWING
 msgid  "%SXWFORMATNAME %SXWFORMATVERSION Drawing"
@@ -207,17 +211,13 @@ msgstr "OpenDocument teckning"
 msgid  "OpenDocument Drawing Template"
 msgstr "OpenDocument teckningsmall"
 
-#: source/draw/registryitem_draw.ulf#STR_REG_VAL_NEW
-msgid  "&New"
-msgstr "&Nytt"
-
 #: source/draw/folderitem_draw.ulf#STR_FI_NAME_ZEICHNUNG
 msgid  "Drawing"
 msgstr "Teckning"
 
 #: source/draw/folderitem_draw.ulf#STR_FI_TOOLTIP_DRAW
 msgid  "Create and edit drawings, flow charts, and logos by using Draw."
-msgstr ""
+msgstr "Skapa och redigera ritningar, flödesscheman och logotyper med hjälp av Draw."
 
 #: source/draw/module_draw.ulf#STR_NAME_MODULE_PRG_DRAW
 msgid  "%PRODUCTNAME Draw"
@@ -225,7 +225,7 @@ msgstr "%PRODUCTNAME Draw"
 
 #: source/draw/module_draw.ulf#STR_DESC_MODULE_PRG_DRAW
 msgid  "Create and edit drawings, flow charts, and logos by using %PRODUCTNAME Draw."
-msgstr ""
+msgstr "Skapa och redigera ritobjekt, flödesscheman och logotyper med %PRODUCTNAME Draw."
 
 #: source/draw/module_draw.ulf#STR_NAME_MODULE_PRG_DRAW_BIN
 msgid  "Program Module"
@@ -249,7 +249,7 @@ msgstr "GNOME-integration"
 
 #: source/gnome/module_gnome.ulf#STR_DESC_MODULE_OPTIONAL_GNOME
 msgid  "System integration of %PRODUCTNAME %PRODUCTVERSION into Gnome Desktop Environment."
-msgstr ""
+msgstr "Systemintegration av %PRODUCTNAME %PRODUCTVERSION i skrivbordsmiljön GNOME."
 
 #: source/graphicfilter/module_graphicfilter.ulf#STR_NAME_MODULE_OPTIONAL_GRFFLT
 msgid  "Graphics Filters"
@@ -377,7 +377,11 @@ msgstr "Presentation"
 
 #: source/impress/folderitem_impress.ulf#STR_FI_TOOLTIP_IMPRESS
 msgid  "Create and edit presentations for slideshows, meeting and Web pages by using Impress."
-msgstr ""
+msgstr "Skapa och redigera presentationer för bildspel, mötes- och webbsidor med hjälp av Impress."
+
+#: source/impress/registryitem_impress.ulf#STR_REG_VAL_NEW
+msgid  "&New"
+msgstr "&Nytt"
 
 #: source/impress/registryitem_impress.ulf#STR_REG_VAL_SO60_SHOW
 msgid  "Show"
@@ -419,17 +423,13 @@ msgstr "Microsoft PowerPoint 97-2003-mall"
 msgid  "Microsoft PowerPoint Template"
 msgstr "Microsoft PowerPoint-mall"
 
-#: source/impress/registryitem_impress.ulf#STR_REG_VAL_NEW
-msgid  "&New"
-msgstr "&Nytt"
-
 #: source/impress/module_impress.ulf#STR_NAME_MODULE_PRG_IMPRESS
 msgid  "%PRODUCTNAME Impress"
 msgstr "%PRODUCTNAME Impress"
 
 #: source/impress/module_impress.ulf#STR_DESC_MODULE_PRG_IMPRESS
 msgid  "Create and edit presentations for slideshows, meeting and Web pages by using %PRODUCTNAME Impress."
-msgstr ""
+msgstr "Skapa och redigera presentationer för bildspel, möten och webbsidor med %PRODUCTNAME Impress."
 
 #: source/impress/module_impress.ulf#STR_NAME_MODULE_PRG_IMPRESS_BIN
 msgid  "Program Module"
@@ -461,7 +461,7 @@ msgstr "Filter för mobila enheter"
 
 #: source/javafilter/module_javafilter.ulf#STR_DESC_MODULE_OPTIONAL_JAVAFILTER
 msgid  "Text and spreadsheet filters to support import/export for Palm handheld or Pocket PC (Java required)."
-msgstr ""
+msgstr "Text- och kalkylbladsfilter som stöder import/export för Palms handdatorer eller Pocket PC (Java krävs)."
 
 #: source/javafilter/module_javafilter.ulf#STR_NAME_MODULE_OPTIONAL_JAVAFILTER_PALM
 msgid  "Palm"
@@ -557,7 +557,7 @@ msgstr "KDE-integration"
 
 #: source/kde/module_kde.ulf#STR_DESC_MODULE_OPTIONAL_KDE
 msgid  "System integration of %PRODUCTNAME %PRODUCTVERSION into KDE."
-msgstr ""
+msgstr "Systemintegration av %PRODUCTNAME %PRODUCTVERSION med K Desktop Environment (KDE)."
 
 #: source/math/module_math.ulf#STR_NAME_MODULE_PRG_MATH
 msgid  "%PRODUCTNAME Math"
@@ -565,7 +565,7 @@ msgstr "%PRODUCTNAME Math"
 
 #: source/math/module_math.ulf#STR_DESC_MODULE_PRG_MATH
 msgid  "Create and edit scientific formulas and equations by using %PRODUCTNAME Math."
-msgstr ""
+msgstr "Skapa och redigera vetenskapliga formler och ekvationer med hjälp av %PRODUCTNAME Math."
 
 #: source/math/module_math.ulf#STR_NAME_MODULE_PRG_MATH_BIN
 msgid  "Program Module"
@@ -585,7 +585,11 @@ msgstr "%PRODUCTNAME-hjälpen för %PRODUCTNAME Math."
 
 #: source/math/folderitem_math.ulf#STR_FI_TOOLTIP_MATH
 msgid  "Create and edit scientific formulas and equations by using Math."
-msgstr ""
+msgstr "Skapa och redigera vetenskapliga formler och ekvationer med hjälp av Math."
+
+#: source/math/registryitem_math.ulf#STR_REG_VAL_NEW
+msgid  "&New"
+msgstr "&Nytt"
 
 #: source/math/registryitem_math.ulf#STR_REG_VAL_SO60_FORMULA
 msgid  "%SXWFORMATNAME %SXWFORMATVERSION Formula"
@@ -595,17 +599,17 @@ msgstr "%SXWFORMATNAME Formel för %SXWFORMATVERSION"
 msgid  "OpenDocument Formula"
 msgstr "OpenDocument formel"
 
-#: source/math/registryitem_math.ulf#STR_REG_VAL_NEW
-msgid  "&New"
-msgstr "&Nytt"
-
 #: source/onlineupdate/module_onlineupdate.ulf#STR_NAME_MODULE_OPT_ONLINEUPDATE
 msgid  "Online Update"
 msgstr "Online-uppdatering"
 
 #: source/onlineupdate/module_onlineupdate.ulf#STR_DESC_MODULE_OPT_ONLINEUPDATE
 msgid  "Get automatically notified when a new update of %PRODUCTNAME becomes available."
-msgstr ""
+msgstr "Få meddelanden automatiskt när en ny uppdatering av %PRODUCTNAME finns tillgänglig."
+
+#: source/ooo/registryitem_ooo.ulf#STR_REG_VAL_NEW
+msgid  "&New"
+msgstr "&Nytt"
 
 #: source/ooo/registryitem_ooo.ulf#STR_REG_VAL_INSTALL
 msgid  "&Install"
@@ -615,17 +619,13 @@ msgstr "&Installera"
 msgid  "OpenOffice.org 1.1 Configuration File"
 msgstr ""
 
-#: source/ooo/registryitem_ooo.ulf#STR_REG_VAL_APPCAPABILITY_DESCRIPTION_OOO
-msgid  "office productivity suite based on Apache OpenOffice project"
-msgstr ""
-
-#: source/ooo/registryitem_ooo.ulf#STR_REG_VAL_NEW
-msgid  "&New"
-msgstr "&Nytt"
-
 #: source/ooo/registryitem_ooo.ulf#STR_REG_VAL_SO50_TEMPLATE_OOO
 msgid  "StarOffice 5.0 Template"
 msgstr "StarOffice 5.0-mall"
+
+#: source/ooo/registryitem_ooo.ulf#STR_REG_VAL_APPCAPABILITY_DESCRIPTION_OOO
+msgid  "office productivity suite based on Apache OpenOffice project"
+msgstr ""
 
 #: source/ooo/module_systemint.ulf#STR_NAME_MODULE_OPTIONAL_SYSTEMINTEGRATION
 msgid  "Desktop integration"
@@ -657,7 +657,7 @@ msgstr "Valfria komponenter"
 
 #: source/ooo/module_ooo.ulf#STR_DESC_MODULE_OPTIONAL
 msgid  "Common components and additional programs shared by all %PRODUCTNAME programs."
-msgstr ""
+msgstr "Gemensamma komponenter och tilläggsprogram som används av alla %PRODUCTNAME program."
 
 #: source/ooo/module_ooo.ulf#STR_NAME_MODULE_DICTIONARIES
 msgid  "Dictionaries"
@@ -725,7 +725,7 @@ msgstr "Öppna dokument"
 
 #: source/ooo/folderitem_ooo.ulf#STR_FI_TOOLTIP_SOFFICE
 msgid  "The office productivity suite compatible to the open and standardized ODF document format. Supported by The Apache Software Foundation."
-msgstr ""
+msgstr "Kontorsprogramsviten som är kompatibel med det öppna, standardiserade dokumentformatet ODF. Stöds av The Apache Software Foundation."
 
 #: source/ooo/module_langpack.ulf#STR_NAME_MODULE_ROOT_LANGPACK
 msgid  "Additional language packs"
@@ -821,7 +821,7 @@ msgstr "Kinesiska (förenklad)"
 
 #: source/ooo/module_langpack.ulf#STR_DESC_MODULE_LANGPACK_ZH_CN
 msgid  "Installs Chinese (simplified) support in %PRODUCTNAME %PRODUCTVERSION"
-msgstr ""
+msgstr "Installerar stöd för kinesiska (förenklad) i %PRODUCTNAME %PRODUCTVERSION"
 
 #: source/ooo/module_langpack.ulf#STR_NAME_MODULE_LANGPACK_ZH_TW
 msgid  "Chinese (traditional)"
@@ -829,7 +829,7 @@ msgstr "Kinesiska (traditionell)"
 
 #: source/ooo/module_langpack.ulf#STR_DESC_MODULE_LANGPACK_ZH_TW
 msgid  "Installs Chinese (traditional) support in %PRODUCTNAME %PRODUCTVERSION"
-msgstr ""
+msgstr "Installerar stöd för kinesiska (traditionell) i %PRODUCTNAME %PRODUCTVERSION"
 
 #: source/ooo/module_langpack.ulf#STR_NAME_MODULE_LANGPACK_NL
 msgid  "Dutch"
@@ -1077,7 +1077,7 @@ msgstr "Bengali (Bangladesh)"
 
 #: source/ooo/module_langpack.ulf#STR_DESC_MODULE_LANGPACK_BN_BD
 msgid  "Installs Bengali (Bangladesh) support in %PRODUCTNAME %PRODUCTVERSION"
-msgstr ""
+msgstr "Installerar stöd för bengali (Bangladesh) i %PRODUCTNAME %PRODUCTVERSION"
 
 #: source/ooo/module_langpack.ulf#STR_NAME_MODULE_LANGPACK_BN_IN
 msgid  "Bengali (India)"
@@ -1357,7 +1357,7 @@ msgstr "serbiska (kyrillisk)"
 
 #: source/ooo/module_langpack.ulf#STR_DESC_MODULE_LANGPACK_SR_CS
 msgid  "Installs Serbian (Cyrillic) support in %PRODUCTNAME %PRODUCTVERSION"
-msgstr ""
+msgstr "Installerar stöd för serbiska (kyrillisk) i %PRODUCTNAME %PRODUCTVERSION"
 
 #: source/ooo/module_langpack.ulf#STR_NAME_MODULE_LANGPACK_SR
 msgid  "Serbian (Cyrillic)"
@@ -1365,7 +1365,7 @@ msgstr "serbiska (kyrillisk)"
 
 #: source/ooo/module_langpack.ulf#STR_DESC_MODULE_LANGPACK_SR
 msgid  "Installs Serbian (Cyrillic) support in %PRODUCTNAME %PRODUCTVERSION"
-msgstr ""
+msgstr "Installerar stöd för serbiska (kyrillisk) i %PRODUCTNAME %PRODUCTVERSION"
 
 #: source/ooo/module_langpack.ulf#STR_NAME_MODULE_LANGPACK_BS
 msgid  "Bosnian"
@@ -1493,7 +1493,7 @@ msgstr "Malaysiska (Malaysian)"
 
 #: source/ooo/module_langpack.ulf#STR_DESC_MODULE_LANGPACK_MS
 msgid  "Installs Malay (Malaysian) support in %PRODUCTNAME %PRODUCTVERSION"
-msgstr ""
+msgstr "Installerar stöd för malaysiska  (Malaysia) i %PRODUCTNAME %PRODUCTVERSION"
 
 #: source/ooo/module_langpack.ulf#STR_NAME_MODULE_LANGPACK_TG
 msgid  "Tajik"
@@ -1557,7 +1557,7 @@ msgstr "Engelska (Storbritannien)"
 
 #: source/ooo/module_langpack.ulf#STR_DESC_MODULE_LANGPACK_EN_GB
 msgid  "Installs English (United Kingdom) support in %PRODUCTNAME %PRODUCTVERSION"
-msgstr ""
+msgstr "Installerar stöd för bengali (Indien) i %PRODUCTNAME %PRODUCTVERSION"
 
 #: source/ooo/module_langpack.ulf#STR_NAME_MODULE_LANGPACK_UR_IN
 msgid  "Urdu"
@@ -1669,7 +1669,7 @@ msgstr "Python-UNO-språkförbindelse"
 
 #: source/python/module_python.ulf#STR_DESC_MODULE_OPTIONAL_PYTHON
 msgid  "Adds the ability to automate %PRODUCTNAME with the python scripting language. See http://udk.openoffice.org/python/python-bridge.html for a complete documentation."
-msgstr ""
+msgstr "Gör så att %PRODUCTNAME kan automatiseras med skriptspråket Python. Den kompletta dokumentationen finns på http://udk.openoffice.org/python/python-bridge.html."
 
 #: source/quickstart/module_quickstart.ulf#STR_NAME_MODULE_OPTIONAL_QUICKSTART
 msgid  "Quickstarter"
@@ -1677,7 +1677,7 @@ msgstr "Snabbstart"
 
 #: source/quickstart/module_quickstart.ulf#STR_DESC_MODULE_OPTIONAL_QUICKSTART
 msgid  "Loads basic components on system start to accelerate start up time of %PRODUCTNAME %PRODUCTVERSION."
-msgstr ""
+msgstr "Laddar grundkomponenter vid systemstarten så att %PRODUCTNAME %PRODUCTVERSION kan starta snabbare."
 
 #: source/sdkoo/module_sdkoo.ulf#STR_NAME_MODULE_OPTIONAL_SDKOO
 msgid  "Software Development Kit (SDK)"
@@ -1685,7 +1685,7 @@ msgstr "Software Development Kit (SDK)"
 
 #: source/sdkoo/module_sdkoo.ulf#STR_DESC_MODULE_OPTIONAL_SDKOO
 msgid  "The SDK provides all necessary tools, examples and documentation to program with and for the office."
-msgstr ""
+msgstr "Programutvecklingskomponenterna (SDK) innefattar alla verktyg, exempel och dokumentation du behöver för att programmera i och för kontorsmiljön."
 
 #: source/winexplorerext/module_winexplorerext.ulf#STR_NAME_MODULE_OPTIONAL_WINDOWS_EXPLORER_EXTENSIONS
 msgid  "Windows Explorer Extension"
@@ -1693,7 +1693,7 @@ msgstr "Tillägg till Utforskaren i Windows"
 
 #: source/winexplorerext/module_winexplorerext.ulf#STR_DESC_MODULE_OPTIONAL_WINDOWS_EXPLORER_EXTENSIONS
 msgid  "Enables the Microsoft Windows Explorer to show information about %PRODUCTNAME documents, such as thumbnail previews."
-msgstr ""
+msgstr "Gör att Utforskaren i Microsoft Windows kan visa information om %PRODUCTNAME dokument, till exempel miniatyrbilder. (Behörighet som administratör krävs.)"
 
 #: source/writer/folderitem_writer.ulf#STR_FI_NAME_HTMLDOKUMENT
 msgid  "HTML Document"
@@ -1705,7 +1705,11 @@ msgstr "Textdokument"
 
 #: source/writer/folderitem_writer.ulf#STR_FI_TOOLTIP_WRITER
 msgid  "Create and edit text and graphics in letters, reports, documents and Web pages by using Writer."
-msgstr ""
+msgstr "Skapa och redigera text och grafik i brev, rapporter, dokument och webbsidor med hjälp av Writer."
+
+#: source/writer/registryitem_writer.ulf#STR_REG_VAL_NEW
+msgid  "&New"
+msgstr "&Nytt"
 
 #: source/writer/registryitem_writer.ulf#STR_REG_VAL_SO60_TEXT
 msgid  "%SXWFORMATNAME %SXWFORMATVERSION Text Document"
@@ -1755,17 +1759,13 @@ msgstr "Microsoft Word-mall"
 msgid  "Rich Text Document"
 msgstr "Rich Text-dokument"
 
-#: source/writer/registryitem_writer.ulf#STR_REG_VAL_NEW
-msgid  "&New"
-msgstr "&Nytt"
-
 #: source/writer/module_writer.ulf#STR_NAME_MODULE_PRG_WRT
 msgid  "%PRODUCTNAME Writer"
 msgstr "%PRODUCTNAME Writer"
 
 #: source/writer/module_writer.ulf#STR_DESC_MODULE_PRG_WRT
 msgid  "Create and edit text and graphics in letters, reports, documents and Web pages by using %PRODUCTNAME Writer."
-msgstr ""
+msgstr "Skapa och redigera text och grafik i brev, rapporter, dokument och webbsidor med hjälp av %PRODUCTNAME Writer."
 
 #: source/writer/module_writer.ulf#STR_NAME_MODULE_PRG_WRT_BIN
 msgid  "Program Module"

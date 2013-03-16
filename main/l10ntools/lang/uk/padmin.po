@@ -33,7 +33,7 @@ msgstr ""
 
 #: source/padialog.src#RID_FONTIMPORT_DIALOG.RID_FIMP_TXT_HELP.FixedText.Text
 msgid  "Please select the folder from which you want to import fonts. Add the selected fonts by clicking the OK button."
-msgstr ""
+msgstr "Виберіть теку з якої необхідно імпортувати шрифти. Додайте виділені шрифти, натиснувши кнопку \"Гаразд\"."
 
 #: source/padialog.src#RID_FONTIMPORT_DIALOG.RID_FIMP_FL_FROM.FixedLine.Text
 msgid  "Source directory"
@@ -61,7 +61,7 @@ msgstr "Додати шрифти"
 
 #: source/padialog.src#RID_FONTIMPORT_DIALOG.RID_FIMP_STR_QUERYOVERWRITE.String.Text
 msgid  "Do you really want to overwrite this font file?\n   %s"
-msgstr ""
+msgstr "Ви дійсно хочете перезаписати файл шрифтів?\n %s"
 
 #: source/padialog.src#RID_FONTIMPORT_DIALOG.RID_FIMP_STR_OVERWRITEALL.String.Text
 msgid  "All"
@@ -73,19 +73,19 @@ msgstr "Немає"
 
 #: source/padialog.src#RID_FONTIMPORT_DIALOG.RID_FIMP_STR_NOAFM.String.Text
 msgid  "A format file (with an .afm extension) has not been found for the font\n%s\ntherefore, the font cannot be installed. Format files can be created with ghostscript, for example, and have to be located in the same directory as the font files or its afm subdirectory."
-msgstr ""
+msgstr "Для шрифтового файлу \n%s\n не знайдено файл формату (з розширенням .afm). Тому шрифт неможливо встановити. Файли формату можуть бути створені, наприклад, за допомогою ghostscript, та мають знаходитись у тому самому каталозі, що й файли шрифтів, або у його підкаталозі для afm-файлів."
 
 #: source/padialog.src#RID_FONTIMPORT_DIALOG.RID_FIMP_STR_AFMCOPYFAILED.String.Text
 msgid  "The metric file for the font file\n   %s\ncould not be copied. The font will not be installed."
-msgstr ""
+msgstr "Не вдається скопіювати файл метрик шрифту\n   %s.\n Шрифт не буде встановлений."
 
 #: source/padialog.src#RID_FONTIMPORT_DIALOG.RID_FIMP_STR_FONTCOPYFAILED.String.Text
 msgid  "The font file\n   %s\ncould not be copied. The font will not be installed."
-msgstr ""
+msgstr "Не вдається скопіювати файл шрифту\n   %s.\n Шрифт не буде встановлений."
 
 #: source/padialog.src#RID_FONTIMPORT_DIALOG.RID_FIMP_STR_NOWRITEABLEFONTSDIR.String.Text
 msgid  "A directory containing a writable fonts.dir file is not located in the Fontpath. Therefore, fonts cannot be installed."
-msgstr ""
+msgstr "Не вдається встановити шрифти. Каталог, що містить файл записуваних шрифтів fonts.dir не знайдений за вказаним шляхом."
 
 #: source/padialog.src#RID_FONTIMPORT_DIALOG.RID_FIMP_STR_NUMBEROFFONTSIMPORTED.String.Text
 msgid  "%d new fonts were added."
@@ -289,7 +289,7 @@ msgstr "Файл не містить метрик."
 
 #: source/padialog.src#RID_AFMERROR_BOX_TXT.String.Text
 msgid  "The metric\n\n%s\n\ncould not be converted for the following reason:\n\n"
-msgstr ""
+msgstr "Метрика\n\n%s\n\nне може бути перетворена по наступним причинам:\n\n"
 
 #: source/padialog.src#RID_PROGRESS_DLG.RID_PROGRESS_PROGRESS_TXT.FixedText.Text
 msgid  "Progress"
@@ -320,8 +320,8 @@ msgid  "~Selection of drivers"
 msgstr "~Вибір драйверів"
 
 #: source/padialog.src#RID_PPDIMPORT_DLG.RID_PPDIMP_TXT_DRIVER.FixedText.Text
-msgid  "Please select the drivers to install and press "%s"."
-msgstr ""
+msgid  "Please select the drivers to install and press \"%s\"."
+msgstr "Виберіть необхідний драйвер та натисніть \"%s\"."
 
 #: source/padialog.src#RID_PPDIMPORT_DLG.RID_PPDIMP_STR_LOADINGPPD.String.Text
 msgid  "Searching for drivers"
@@ -332,8 +332,8 @@ msgid  "Driver Installation"
 msgstr "Встановлення драйвера"
 
 #: source/padialog.src#RID_QUERY_REMOVEDRIVER.String.Text
-msgid  "Do you really want to remove the driver "%s"?"
-msgstr ""
+msgid  "Do you really want to remove the driver \"%s\"?"
+msgstr "Ви дійсно хочете видалити драйвер \"%s\"?"
 
 #: source/padialog.src#RID_QUERY_REMOVEPRINTER.String.Text
 msgid  "Do you really want to remove this printer ?"
@@ -344,40 +344,40 @@ msgid  "Do you really want to remove the selected fonts ?"
 msgstr "Ви дійсно хочете видалити виділені шрифти ?"
 
 #: source/padialog.src#RID_QUERY_DRIVERUSED.String.Text
-msgid  "There are still printers using the driver "%s". Do you really want to remove it? The corresponding printers will also be removed."
-msgstr ""
+msgid  "There are still printers using the driver \"%s\". Do you really want to remove it? The corresponding printers will also be removed."
+msgstr "Деякі принтери досі використовують драйвер \"%s\". Ви дійсно хочете його видалити? При видалені драйвера будуть видалені відповідні принтери."
 
 #: source/padialog.src#RID_ERR_REMOVESGENPRT.String.Text
-msgid  "The driver "%s" is always needed and can therefore not be removed."
-msgstr ""
+msgid  "The driver \"%s\" is always needed and can therefore not be removed."
+msgstr "Драйвер \"%s\" потрібний завжди і тому не може бути видалений."
 
 #: source/padialog.src#RID_ERR_REMOVEDRIVERFAILED.String.Text
-msgid  "The driver "%s1" could not be removed. It was not possible to remove the file\n\n%s2."
-msgstr ""
+msgid  "The driver \"%s1\" could not be removed. It was not possible to remove the file\n\n%s2."
+msgstr "Драйвер \"%s1\" не може бути видалений. Неможливо видалити файл\n\n%s2."
 
 #: source/padialog.src#RID_ERR_REMOVEDEFAULTDRIVER.String.Text
-msgid  "The driver "%s" is used by your default printer. Therefore, it cannot be removed."
-msgstr ""
+msgid  "The driver \"%s\" is used by your default printer. Therefore, it cannot be removed."
+msgstr "Драйвер \"%s\" використовується типовим принтером. Тому його не можна видалити."
 
 #: source/padialog.src#RID_ERR_PRINTERNOTREMOVEABLE.String.Text
 msgid  "The printer %s cannot be removed."
 msgstr "Не вдається видалити принтер %s."
 
 #: source/padialog.src#RID_TXT_PRINTERALREADYEXISTS.String.Text
-msgid  "A printer named "%s" already exists. This printer will not be imported."
-msgstr ""
+msgid  "A printer named \"%s\" already exists. This printer will not be imported."
+msgstr "Принтер з назвою \"%s\" вже існує. Тому цей принтер не буде імпортований."
 
 #: source/padialog.src#RID_TXT_PRINTERWITHOUTCOMMAND.String.Text
-msgid  "The printer "%s" has no valid configuration and, therefore, cannot be imported."
-msgstr ""
+msgid  "The printer \"%s\" has no valid configuration and, therefore, cannot be imported."
+msgstr "Неповна конфігурація принтера \"%s\". Не вдається імпортувати принтер."
 
 #: source/padialog.src#RID_TXT_DRIVERDOESNOTEXIST.String.Text
-msgid  "The driver for the printer "%s1" (%s2) is not installed. Therefore the printer cannot be imported."
-msgstr ""
+msgid  "The driver for the printer \"%s1\" (%s2) is not installed. Therefore the printer cannot be imported."
+msgstr "Драйвер принтера \"%s1\" (%s2) не встановлений. Тому принтер неможливо імпортувати."
 
 #: source/padialog.src#RID_TXT_PRINTERADDFAILED.String.Text
-msgid  "The printer "%s" could not be added."
-msgstr ""
+msgid  "The printer \"%s\" could not be added."
+msgstr "Принтер \"%s\" неможливо додати."
 
 #: source/padialog.src#RID_ADD_PRINTER_DIALOG.RID_ADDP_BTN_FINISH.OKButton.Text
 msgid  "~Finish"
@@ -488,12 +488,12 @@ msgid  "~Help"
 msgstr "~Довідка"
 
 #: source/padialog.src#RID_ADDP_PAGE_COMMAND.RID_ADDP_CMD_STR_PDFHELP.String.Text
-msgid  "The command line for PDF converters is executed as follows: for each document printed, "(TMP)" in the command line is replaced by a temporary file and "(OUTFILE)" in the command line is replaced by the target PDF file name. If "(TMP)" is in the command line, the PostScript code will be supplied via a file, otherwise via standard input (i.e. as a pipe)."
-msgstr ""
+msgid  "The command line for PDF converters is executed as follows: for each document printed, \"(TMP)\" in the command line is replaced by a temporary file and \"(OUTFILE)\" in the command line is replaced by the target PDF file name. If \"(TMP)\" is in the command line, the PostScript code will be supplied via a file, otherwise via standard input (i.e. as a pipe)."
+msgstr "Командний рядок для конвертерів PDF обробляється наступним чином: у кожному друкованому документі \"(TMP)\" у командному рядку замінюється тимчасовим файлом, а \"(OUTFILE)\" - файлом PDF, який потрібно створити. Якщо у командному рядку знаходиться \"(TMP)\", то код PostScript передається у файлі, інакше він передається стандартним чином (тобто як pipe)."
 
 #: source/padialog.src#RID_ADDP_PAGE_COMMAND.RID_ADDP_CMD_STR_FAXHELP.String.Text
-msgid  "The command line for fax connections is executed as follows: for each fax sent, "(TMP)" in the command line is replaced by a temporary file and "(PHONE)" in the command line is replaced by the fax number. If "(TMP)" appears in the command line, the PostScript code will be supplied via a file, otherwise it is passed as standard input (i.e. as a pipe)."
-msgstr ""
+msgid  "The command line for fax connections is executed as follows: for each fax sent, \"(TMP)\" in the command line is replaced by a temporary file and \"(PHONE)\" in the command line is replaced by the fax number. If \"(TMP)\" appears in the command line, the PostScript code will be supplied via a file, otherwise it is passed as standard input (i.e. as a pipe)."
+msgstr "Командний рядок при підключення факсів обробляється наступним чином: під час передачі кожного факсу \"(TMP)\" замінюється тимчасовим файлом у командному рядку, а \"(PHONE)\" - номером факсу. Якщо у командному рядку вже є \"(TMP)\", то код PostScript передається у файлі, у іншому випадку він передається стандартним чином (тобто як pipe)."
 
 #: source/padialog.src#RID_ADDP_PAGE_OLDPRINTERS.RID_ADDP_STR_TITLE.String.Text
 msgid  "Import printers from old versions"
@@ -501,7 +501,7 @@ msgstr "Імпорт принтерів з попередніх версій"
 
 #: source/padialog.src#RID_ADDP_PAGE_OLDPRINTERS.RID_ADDP_OLD_TXT_PRINTERS.FixedText.Text
 msgid  "~These printers can be imported. Please select the ones you want to import."
-msgstr ""
+msgstr "~Ці принтери можна імпортувати. Виберіть з них ті, які потрібно імпортувати."
 
 #: source/padialog.src#RID_ADDP_PAGE_OLDPRINTERS.RID_ADDP_OLD_BTN_SELECTALL.PushButton.Text
 msgid  "~Select All"
@@ -513,7 +513,7 @@ msgstr "Вибрати драйвера"
 
 #: source/padialog.src#RID_ADDP_PAGE_FAXDRIVER.RID_ADDP_FAXDRV_TXT_DRIVER.FixedText.Text
 msgid  "Use the following driver for this fax connection"
-msgstr ""
+msgstr "Для цього факсимільного підключення потрібно використовувати наступний драйвер"
 
 #: source/padialog.src#RID_ADDP_PAGE_FAXDRIVER.RID_ADDP_FAXDRV_BTN_DEFAULT.RadioButton.Text
 msgid  "T~he default driver"
@@ -788,16 +788,16 @@ msgid  "~Remove"
 msgstr "В~идалити"
 
 #: source/rtsetup.src#RID_RTS_COMMANDPAGE.RID_RTS_CMD_STR_PDFHELP.String.Text
-msgid  "The command line for PDF converters is executed as follows: for each document printed, "(TMP)" in the command line is replaced by a temporary file and "(OUTFILE)" in the command line is replaced by the target PDF file name. If "(TMP)" is in the command line, the PostScript code will be supplied via a file, otherwise via standard input (i.e. as a pipe)."
-msgstr ""
+msgid  "The command line for PDF converters is executed as follows: for each document printed, \"(TMP)\" in the command line is replaced by a temporary file and \"(OUTFILE)\" in the command line is replaced by the target PDF file name. If \"(TMP)\" is in the command line, the PostScript code will be supplied via a file, otherwise via standard input (i.e. as a pipe)."
+msgstr "Командний рядок для конвертерів PDF обробляється наступним чином: у кожному друкованому документі \"(TMP)\" у командному рядку замінюється тимчасовим файлом, а \"(OUTFILE)\" - файлом PDF, який потрібно створити. Якщо у командному рядку знаходиться \"(TMP)\", то код PostScript передається у файлі, інакше він передається стандартним чином (тобто як pipe)."
 
 #: source/rtsetup.src#RID_RTS_COMMANDPAGE.RID_RTS_CMD_STR_PRINTERHELP.String.Text
 msgid  "The command line for printer devices is executed as follows: the generated PostScript code is supplied as standard input (i.e. as a pipe) to the command line."
-msgstr ""
+msgstr "Командний рядок для принтерів обробляється наступним чином: створений код PostScript передається у командний рядок стандартним чином (тобто як pipe)."
 
 #: source/rtsetup.src#RID_RTS_COMMANDPAGE.RID_RTS_CMD_STR_FAXHELP.String.Text
-msgid  "The command line for fax devices is executed as follows: for each fax sent, "(TMP)" in the command line is replaced by a temporary file and "(PHONE)" in the command line is replaced by the fax number. If "(TMP)" appears in the command line, the PostScript code will be supplied via a file, otherwise it is passed as standard input (i.e. as a pipe)."
-msgstr ""
+msgid  "The command line for fax devices is executed as follows: for each fax sent, \"(TMP)\" in the command line is replaced by a temporary file and \"(PHONE)\" in the command line is replaced by the fax number. If \"(TMP)\" appears in the command line, the PostScript code will be supplied via a file, otherwise it is passed as standard input (i.e. as a pipe)."
+msgstr "Командний рядок для факсів обробляється наступним чином: під час передачі кожного факсу \"(TMP)\" у командному рядку замінюється тимчасовим файлом, а \"(PHONE)\" - номером факсу. Якщо \"(TMP)\" вже існує у командному рядку, то код PostScript передається у файлі, у іншому разі він передається стандартним чином (тобто як pipe)."
 
 #: source/rtsetup.src#RID_RTS_OTHERPAGE.RID_RTS_OTHER_LEFTMARGIN_TXT.FixedText.Text
 msgid  "~Left margin"

@@ -32,8 +32,8 @@ msgstr ""
 
 
 #: source/app/desktop.src#STR_RECOVER_QUERY.String.Text
-msgid  "Should the file "$1" be restored?"
-msgstr ""
+msgid  "Should the file \"$1\" be restored?"
+msgstr "\"$1\" faylini tiklashni istaysizmi?"
 
 #: source/app/desktop.src#STR_RECOVER_TITLE.String.Text
 msgid  "File Recovery"
@@ -41,15 +41,15 @@ msgstr "Faylni tiklash"
 
 #: source/app/desktop.src#STR_RECOVER_PREPARED.WarningBox.Message
 msgid  "An unrecoverable error has occurred.\n\nAll modified files have been saved and can\nprobably be recovered at program restart."
-msgstr ""
+msgstr "Tuzatib boʻlmaydigan xatolik yuz berdi.\n\nBarcha oʻzgartirish kiritilgan fayllar saqlanadi\nva ularni dasturni keyingi ishga tushirganda tiklash mumkin."
 
 #: source/app/desktop.src#STR_BOOTSTRAP_ERR_CANNOT_START.String.Text
 msgid  "The application cannot be started. "
 msgstr "Dasturni ishga tushirib boʻlmadi. "
 
 #: source/app/desktop.src#STR_BOOTSTRAP_ERR_DIR_MISSING.String.Text
-msgid  "The configuration directory "$1" could not be found."
-msgstr ""
+msgid  "The configuration directory \"$1\" could not be found."
+msgstr "\"$1\" moslash jildi topilmadi."
 
 #: source/app/desktop.src#STR_BOOTSTRAP_ERR_PATH_INVALID.String.Text
 msgid  "The installation path is invalid."
@@ -64,16 +64,16 @@ msgid  "An internal error occurred."
 msgstr "Ichki xato roʻy berdi."
 
 #: source/app/desktop.src#STR_BOOTSTRAP_ERR_FILE_CORRUPT.String.Text
-msgid  "The configuration file "$1" is corrupt."
-msgstr ""
+msgid  "The configuration file \"$1\" is corrupt."
+msgstr "\"$1\" moslama fayli buzuq."
 
 #: source/app/desktop.src#STR_BOOTSTRAP_ERR_FILE_MISSING.String.Text
-msgid  "The configuration file "$1" was not found."
-msgstr ""
+msgid  "The configuration file \"$1\" was not found."
+msgstr "\"$1\" moslama fayli topilmadi."
 
 #: source/app/desktop.src#STR_BOOTSTRAP_ERR_NO_SUPPORT.String.Text
-msgid  "The configuration file "$1" does not support the current version."
-msgstr ""
+msgid  "The configuration file \"$1\" does not support the current version."
+msgstr "Moslama fayli \"$1\" joriy versiyani qoʻllamaydi."
 
 #: source/app/desktop.src#STR_BOOTSTRAP_ERR_LANGUAGE_MISSING.String.Text
 msgid  "The user interface language cannot be determined."
@@ -93,11 +93,11 @@ msgstr ""
 
 #: source/app/desktop.src#STR_ASK_START_SETUP_MANUALLY.String.Text
 msgid  "Start the setup application to repair the installation from the CD or the folder containing the installation packages."
-msgstr ""
+msgstr "Oʻrnatishni diskdan yoki tarkibida oʻrnatish paketlari boʻlgan jilddan ishga tushirish uchun Oʻrnatish dasturini ishga tushiring."
 
 #: source/app/desktop.src#STR_CONFIG_ERR_SETTINGS_INCOMPLETE.String.Text
 msgid  "The startup settings for accessing the central configuration are incomplete. "
-msgstr ""
+msgstr "Markaziy moslama kirish uchun boshlangʻich moslamalar qilinmagan. "
 
 #: source/app/desktop.src#STR_CONFIG_ERR_CANNOT_CONNECT.String.Text
 msgid  "A connection to the central configuration could not be established. "
@@ -105,7 +105,7 @@ msgstr "Markaziy moslama bilan aloqa oʻrnatib boʻlmadi."
 
 #: source/app/desktop.src#STR_CONFIG_ERR_RIGHTS_MISSING.String.Text
 msgid  "You cannot access the central configuration because of missing access rights. "
-msgstr ""
+msgstr "Markaziy moslamagan kirib boʻlmaydi, kirish huquqi mavjud emas."
 
 #: source/app/desktop.src#STR_CONFIG_ERR_ACCESS_GENERAL.String.Text
 msgid  "A general error occurred while accessing your central configuration. "
@@ -113,11 +113,11 @@ msgstr "Markaziy moslamaga kirishda xatolik yuz berdi."
 
 #: source/app/desktop.src#STR_CONFIG_ERR_NO_WRITE_ACCESS.String.Text
 msgid  "The changes to your personal settings cannot be stored centrally because of missing access rights. "
-msgstr ""
+msgstr "Shaxsiy moslamalaringizni markazlashgan holda saqlab boʻlmaydi, chunki yetarli huquqingiz yoʻq."
 
 #: source/app/desktop.src#STR_BOOTSTRAP_ERR_CFG_DATAACCESS.String.Text
 msgid  "%PRODUCTNAME cannot be started due to an error in accessing the %PRODUCTNAME configuration data.\n\nPlease contact your system administrator."
-msgstr ""
+msgstr "%PRODUCTNAME dasturini %PRODUCTNAME moslama fayliga kirish huquqi yoʻqligi sababli ishga tushirib boʻlmay.\n\nIltimos tizim administratori bilan bogʻlaning."
 
 #: source/app/desktop.src#STR_INTERNAL_ERRMSG.String.Text
 msgid  "The following internal error has occurred: "
@@ -125,7 +125,7 @@ msgstr "Quyidagi ichki xato roʻy berdi: "
 
 #: source/app/desktop.src#QBX_USERDATALOCKED.QueryBox.Message
 msgid  "Either another instance of %PRODUCTNAME is accessing your personal settings or your personal settings are locked.\nSimultaneous access can lead to inconsistencies in your personal settings. Before continuing, you should make sure user '$u' closes %PRODUCTNAME on host '$h'.\n\nDo you really want to continue?"
-msgstr ""
+msgstr "Ayni paytda shaxsiy moslamalaringizga kirib boʻlmayapti. Balki %PRODUCTNAME dasturining boshqa nusxasi shaxsiy moslamalringizdan foydalanayotgan yoki umuman unga kirish taʼqiqlangan boʻlishi mumkin.\nBir vaqtning oʻzida shaxsiy maʼlumotlarga murojaat nomutanosiblikka olib kelishi mumkin. Davom ettirshdan oldin '$u' foydalanuvchi '$h' xostda %PRODUCTNAME bilan ishni tugatganligiga ishonch hosil qiling.\n\nRostdan ham davom ettirishni istaysizmi?"
 
 #: source/app/desktop.src#STR_TITLE_USERDATALOCKED.String.Text
 msgid  "%PRODUCTNAME %PRODUCTVERSION"
@@ -149,11 +149,11 @@ msgstr "Manzil boshqaruvchisi mavjud emas.\n"
 
 #: source/app/desktop.src#STR_BOOSTRAP_ERR_NOTENOUGHDISKSPACE.String.Text
 msgid  "%PRODUCTNAME user installation could not be completed due to insufficient free disk space. Please free more disc space at the following location and restart %PRODUCTNAME:\n\n"
-msgstr ""
+msgstr "%PRODUCTNAME foydalanuvchi uchun oʻrnatuvchisi diskda joy yetishmaganligi sababli oʻrnatishni tugata olmaydi. Iltimos koʻrsatilgan joyda yetarlicha boʻsh joy yarating va %PRODUCTNAME dasturini qayta ishga tushiring:\n\n"
 
 #: source/app/desktop.src#STR_BOOSTRAP_ERR_NOACCESSRIGHTS.String.Text
 msgid  "%PRODUCTNAME user installation could not be processed due to missing access rights. Please make sure that you have sufficient access rights for the following location and restart %PRODUCTNAME:\n\n"
-msgstr ""
+msgstr "%PRODUCTNAME foydalanuvchi uchun oʻrnatuvchisi yetarli huquqlar yoʻqligi sababli davom ettirilmaydi. Iltimos koʻrsatilgan manzil uchun huquqlarni tekshirib koʻring va %PRODUCTNAME dasturini qayta ishga tushiring:\n\n"
 
 #: source/deployment/gui/dp_gui_versionboxes.src#RID_WARNINGBOX_VERSION_LESS.WarningBox.Message
 msgid  "You are about to install version $NEW of the extension \'$NAME\'.\nThe newer version $DEPLOYED is already installed.\nClick \'OK\' to replace the installed extension.\nClick \'Cancel\' to stop the installation."
@@ -185,7 +185,7 @@ msgstr "Tizimga bogʻliqligini tekshirish"
 
 #: source/deployment/gui/dp_gui_dependencydialog.src#RID_DLG_DEPENDENCIES.RID_DLG_DEPENDENCIES_TEXT.FixedText.Text
 msgid  "The extension cannot be installed as the following\nsystem dependencies are not fulfilled:"
-msgstr ""
+msgstr "Quyidagi tizimdagi kelishmovchiliklar sababli\nkengaytmani oʻrnatib boʻlmaydi:"
 
 #: source/deployment/gui/dp_gui_dialog.src#RID_STR_ADD_PACKAGES.String.Text
 msgid  "Add Extension(s)"
@@ -257,7 +257,7 @@ msgstr ""
 
 #: source/deployment/gui/dp_gui_dialog.src#RID_STR_ERROR_MISSING_DEPENDENCIES.String.Text
 msgid  "The extension cannot be enabled as the following system dependencies are not fulfilled:"
-msgstr ""
+msgstr "Quyidagi tizimdagi kelishmovchiliklar sababli\nkengaytmani oʻrnatib boʻlmaydi:"
 
 #: source/deployment/gui/dp_gui_dialog.src#RID_STR_ERROR_MISSING_LICENSE.String.Text
 msgid  "This extension is disabled because you haven't accepted the license yet.\n"
@@ -274,10 +274,9 @@ msgstr "Kengaytma litsenziya kelishuvi"
 
 #: source/deployment/gui/dp_gui_dialog.src#RID_DLG_LICENSE.FT_LICENSE_HEADER.FixedText.Text
 msgid  "Please follow these steps to proceed with the installation of the extension:"
-msgstr ""
+msgstr "Kengaytmani oʻrnatish uchun quyidagilarni bajaring:"
 
 #: source/deployment/gui/dp_gui_dialog.src#RID_DLG_LICENSE.FT_LICENSE_BODY_1.FixedText.Text
-#, fuzzy
 msgid  "1."
 msgstr "1."
 
@@ -286,7 +285,6 @@ msgid  "Read the complete License Agreement. Use the scroll bar or the \'Scroll 
 msgstr ""
 
 #: source/deployment/gui/dp_gui_dialog.src#RID_DLG_LICENSE.FT_LICENSE_BODY_2.FixedText.Text
-#, fuzzy
 msgid  "2."
 msgstr "2."
 
@@ -295,17 +293,14 @@ msgid  "Accept the License Agreement for the extension by pressing the \'Accept\
 msgstr ""
 
 #: source/deployment/gui/dp_gui_dialog.src#RID_DLG_LICENSE.PB_LICENSE_DOWN.PushButton.Text
-#, fuzzy
 msgid  "~Scroll Down"
 msgstr "Pastga ~varaqlash"
 
 #: source/deployment/gui/dp_gui_dialog.src#RID_DLG_LICENSE.BTN_LICENSE_ACCEPT.OKButton.Text
-#, fuzzy
 msgid  "Accept"
 msgstr "Qabul qilish"
 
 #: source/deployment/gui/dp_gui_dialog.src#RID_DLG_LICENSE.BTN_LICENSE_DECLINE.CancelButton.Text
-#, fuzzy
 msgid  "Decline"
 msgstr "Voz kechish"
 
@@ -468,8 +463,9 @@ msgid  "No new updates are available."
 msgstr "Yangilanish mavjud."
 
 #: source/deployment/gui/dp_gui_updatedialog.src#RID_DLG_UPDATE.RID_DLG_UPDATE_NOINSTALLABLE.String.Text
+#, fuzzy
 msgid  "No installable updates are available. To see ignored or disabled updates, mark the check box 'Show all updates'."
-msgstr ""
+msgstr "Yangilanishlar mavjud emas. Barcha yangilanishlarni koʻrish uchun 'Hamma yangilanishlarni koʻrsatish' bandini belgilang."
 
 #: source/deployment/gui/dp_gui_updatedialog.src#RID_DLG_UPDATE.RID_DLG_UPDATE_FAILURE.String.Text
 #, fuzzy
@@ -581,31 +577,27 @@ msgid  "Disable all"
 msgstr ""
 
 #: source/deployment/gui/dp_gui_dialog2.src#RID_QUERYBOX_INSTALL_FOR_ALL.QueryBox.Message
+#, fuzzy
 msgid  "Make sure that no further users are working with the same %PRODUCTNAME, when installing an extension for all users in a multi user environment.\n\nFor whom do you want to install the extension?\n"
-msgstr ""
+msgstr "Bir necha foydalanuvchi muhitida barcha foydalanuvchilar uchun kengaytma oʻrnatayotganda, boshqa foydalanuvchilar %PRODUCTNAME dan foydalanmayotganligiga ishonch hosil qiling\n\nKengaytma qaysi foydalanuvchi uchun oʻrnatilsin?\n"
 
 #: source/deployment/manager/dp_manager.src#RID_STR_COPYING_PACKAGE.String.Text
-#, fuzzy
 msgid  "Copying: "
 msgstr "Nusxa olish:"
 
 #: source/deployment/manager/dp_manager.src#RID_STR_ERROR_WHILE_ADDING.String.Text
-#, fuzzy
 msgid  "Error while adding: "
 msgstr "Qoʻshish davridagi xatolik:"
 
 #: source/deployment/manager/dp_manager.src#RID_STR_ERROR_WHILE_REMOVING.String.Text
-#, fuzzy
 msgid  "Error while removing: "
 msgstr "Olib tashlashdagi xatolik:"
 
 #: source/deployment/manager/dp_manager.src#RID_STR_PACKAGE_ALREADY_ADDED.String.Text
-#, fuzzy
 msgid  "Extension has already been added: "
 msgstr "Kengaytma allaqachon qoʻshilgan:"
 
 #: source/deployment/manager/dp_manager.src#RID_STR_NO_SUCH_PACKAGE.String.Text
-#, fuzzy
 msgid  "There is no such extension deployed: "
 msgstr "kengaytma oʻrnatilmagan:"
 
@@ -614,7 +606,6 @@ msgid  "Synchronizing repository for %NAME extensions"
 msgstr ""
 
 #: source/deployment/misc/dp_misc.src#RID_DEPLYOMENT_DEPENDENCIES_UNKNOWN.String.Text
-#, fuzzy
 msgid  "Unknown"
 msgstr "Nomaʼlum"
 
@@ -627,47 +618,38 @@ msgid  "Extension doesn't support versions greater than: Apache OpenOffice %VERS
 msgstr ""
 
 #: source/deployment/registry/dp_registry.src#RID_STR_REGISTERING_PACKAGE.String.Text
-#, fuzzy
 msgid  "Enabling: "
 msgstr "Yoqish:"
 
 #: source/deployment/registry/dp_registry.src#RID_STR_REVOKING_PACKAGE.String.Text
-#, fuzzy
 msgid  "Disabling: "
 msgstr "Oʻchirish:"
 
 #: source/deployment/registry/dp_registry.src#RID_STR_CANNOT_DETECT_MEDIA_TYPE.String.Text
-#, fuzzy
 msgid  "Cannot detect media-type: "
 msgstr "Media turini topib boʻlmadi:"
 
 #: source/deployment/registry/dp_registry.src#RID_STR_UNSUPPORTED_MEDIA_TYPE.String.Text
-#, fuzzy
 msgid  "This media-type is not supported: "
 msgstr "Media turi qoʻllanilmaydi:"
 
 #: source/deployment/registry/dp_registry.src#RID_STR_ERROR_WHILE_REGISTERING.String.Text
-#, fuzzy
 msgid  "An error occurred while enabling: "
 msgstr "Yoqish davridagi xatolik:"
 
 #: source/deployment/registry/dp_registry.src#RID_STR_ERROR_WHILE_REVOKING.String.Text
-#, fuzzy
 msgid  "An error occurred while disabling: "
 msgstr "Oʻchirish davridagi xatolik:"
 
 #: source/deployment/registry/component/dp_component.src#RID_STR_DYN_COMPONENT.String.Text
-#, fuzzy
 msgid  "UNO Dynamic Library Component"
 msgstr "UNO dinamik kutubxonasi komponenti"
 
 #: source/deployment/registry/component/dp_component.src#RID_STR_JAVA_COMPONENT.String.Text
-#, fuzzy
 msgid  "UNO Java Component"
 msgstr "UNO Java komponenti"
 
 #: source/deployment/registry/component/dp_component.src#RID_STR_PYTHON_COMPONENT.String.Text
-#, fuzzy
 msgid  "UNO Python Component"
 msgstr "UNO Python komponenti"
 
@@ -676,66 +658,54 @@ msgid  "UNO Components"
 msgstr ""
 
 #: source/deployment/registry/component/dp_component.src#RID_STR_RDB_TYPELIB.String.Text
-#, fuzzy
 msgid  "UNO RDB Type Library"
 msgstr "UNO RDB turi komponenti"
 
 #: source/deployment/registry/component/dp_component.src#RID_STR_JAVA_TYPELIB.String.Text
-#, fuzzy
 msgid  "UNO Java Type Library"
 msgstr "UNO Java turi komponenti"
 
 #: source/deployment/registry/configuration/dp_configuration.src#RID_STR_CONF_SCHEMA.String.Text
-#, fuzzy
 msgid  "Configuration Schema"
 msgstr "Moslamshsxemasi"
 
 #: source/deployment/registry/configuration/dp_configuration.src#RID_STR_CONF_DATA.String.Text
-#, fuzzy
 msgid  "Configuration Data"
 msgstr "Maʼlumotni moslash"
 
 #: source/deployment/registry/help/dp_help.src#RID_STR_HELP.String.Text
-#, fuzzy
 msgid  "Help"
 msgstr "Yordam"
 
 #: source/deployment/registry/help/dp_help.src#RID_STR_HELPPROCESSING_GENERAL_ERROR.String.Text
-#, fuzzy
 msgid  "The extension cannot be installed because:\n"
 msgstr "Kengaytmani oʻrnatib boʻlmaydi, chunki:\n"
 
 #: source/deployment/registry/help/dp_help.src#RID_STR_HELPPROCESSING_XMLPARSING_ERROR.String.Text
 msgid  "The extension will not be installed because an error occurred in the Help files:\n"
-msgstr ""
+msgstr "Kengaytmani oʻrnatib boʻlmaydi, chunki yordam fayllarida xato mavjud:\n"
 
 #: source/deployment/registry/package/dp_package.src#RID_STR_PACKAGE_BUNDLE.String.Text
-#, fuzzy
 msgid  "Extension"
 msgstr "Kengaytma"
 
 #: source/deployment/registry/script/dp_script.src#RID_STR_BASIC_LIB.String.Text
-#, fuzzy
 msgid  "%PRODUCTNAME Basic Library"
 msgstr "%PRODUCTNAME Basic kutubxonasi"
 
 #: source/deployment/registry/script/dp_script.src#RID_STR_DIALOG_LIB.String.Text
-#, fuzzy
 msgid  "Dialog Library"
 msgstr "Dialog kutubxonasi"
 
 #: source/deployment/registry/script/dp_script.src#RID_STR_CANNOT_DETERMINE_LIBNAME.String.Text
-#, fuzzy
 msgid  "The library name could not be determined."
 msgstr "Kutubxona nomini aniqlab boʻlmadi."
 
 #: source/deployment/registry/script/dp_script.src#RID_STR_LIBNAME_ALREADY_EXISTS.String.Text
-#, fuzzy
 msgid  "This library name already exists. Please choose a different name."
 msgstr "Kutubxona nomi allaqachon mavjud. Iltimos boshqa nom tanlang."
 
 #: source/deployment/registry/sfwk/dp_sfwk.src#RID_STR_SFWK_LIB.String.Text
-#, fuzzy
 msgid  "%MACROLANG Library"
 msgstr "%MACROLANG kutubxonasi"
 
@@ -744,34 +714,30 @@ msgid  "Extension Software License Agreement of $NAME:"
 msgstr ""
 
 #: source/deployment/unopkg/unopkg.src#RID_STR_UNOPKG_ACCEPT_LIC_2.String.Text
-msgid  "Read the complete License Agreement displayed above. Accept the License Agreement by typing "yes" on the console then press the Return key. Type "no" to decline and to abort the extension setup."
-msgstr ""
+msgid  "Read the complete License Agreement displayed above. Accept the License Agreement by typing \"yes\" on the console then press the Return key. Type \"no\" to decline and to abort the extension setup."
+msgstr "Quyidagi litsenziya kelishuvini oxirigacha oʻqib chiqing. Qabul qilish uchun terminalda \"yes\" soʻzini yozib Enter tugmasini bosing. Rad etish uchun \"no\" soʻzini yozib Enter tugmasini bosing."
 
 #: source/deployment/unopkg/unopkg.src#RID_STR_UNOPKG_ACCEPT_LIC_3.String.Text
-msgid  "[Enter "yes" or "no"]:"
-msgstr ""
+msgid  "[Enter \"yes\" or \"no\"]:"
+msgstr "[\"ha\" yoki \"yoʻq\" tugmasini bosing]:"
 
 #: source/deployment/unopkg/unopkg.src#RID_STR_UNOPKG_ACCEPT_LIC_4.String.Text
-msgid  "Your input was not correct. Please enter "yes" or "no":"
-msgstr ""
+msgid  "Your input was not correct. Please enter \"yes\" or \"no\":"
+msgstr "Xato kiritish. Iltimos \"yes\" yoki \"no\" deb kiriting:"
 
 #: source/deployment/unopkg/unopkg.src#RID_STR_UNOPKG_ACCEPT_LIC_YES.String.Text
-#, fuzzy
 msgid  "YES"
 msgstr "HA"
 
 #: source/deployment/unopkg/unopkg.src#RID_STR_UNOPKG_ACCEPT_LIC_Y.String.Text
-#, fuzzy
 msgid  "Y"
 msgstr "H"
 
 #: source/deployment/unopkg/unopkg.src#RID_STR_UNOPKG_ACCEPT_LIC_NO.String.Text
-#, fuzzy
 msgid  "NO"
 msgstr "YOʻQ"
 
 #: source/deployment/unopkg/unopkg.src#RID_STR_UNOPKG_ACCEPT_LIC_N.String.Text
-#, fuzzy
 msgid  "N"
 msgstr "Y"
 
@@ -784,197 +750,168 @@ msgid  "ERROR: "
 msgstr ""
 
 #: source/migration/wizard.src#DLG_FIRSTSTART_WIZARD.ModalDialog.Text
-#, fuzzy
 msgid  "Welcome to %PRODUCTNAME %PRODUCTVERSION"
 msgstr "%PRODUCTNAME %PRODUCTVERSION'ga marhamat"
 
 #: source/migration/wizard.src#STR_STATE_WELCOME.String.Text
-#, fuzzy
 msgid  "Welcome"
 msgstr "Marhamat"
 
 #: source/migration/wizard.src#STR_STATE_LICENSE.String.Text
-#, fuzzy
 msgid  "License Agreement"
 msgstr "Litsenziya kelishuvi"
 
 #: source/migration/wizard.src#STR_STATE_MIGRATION.String.Text
-#, fuzzy
 msgid  "Personal Data"
 msgstr "Shaxsiy maʼlumot"
 
 #: source/migration/wizard.src#STR_STATE_USER.String.Text
-#, fuzzy
 msgid  "User name"
 msgstr "Foydalanuvchi"
 
 #: source/migration/wizard.src#STR_STATE_UPDATE_CHECK.String.Text
-#, fuzzy
 msgid  "Online Update"
 msgstr "Onlayn yangilash"
 
 #: source/migration/wizard.src#STR_STATE_REGISTRATION.String.Text
-#, fuzzy
 msgid  "Registration"
 msgstr "Roʻyxatdan oʻtish"
 
 #: source/migration/wizard.src#STR_WELCOME_MIGRATION.String.Text
 msgid  "This wizard will guide you through the license agreement, the transfer of user data from %OLD_VERSION and the registration of %PRODUCTNAME.\n\nClick 'Next' to continue."
-msgstr ""
+msgstr "Ubu usta litsenziya kelishuvi orqali foydalanuvchi maʼlumotlarini %OLD_VERSION versiyadan olib %PRODUCTNAME dasturini roʻyxatdan oʻtkazadi.\n\nDavom etish uchun 'keyingi' tugmasini bosing."
 
 #: source/migration/wizard.src#STR_WELCOME_WITHOUT_LICENSE.String.Text
 msgid  "This wizard will guide you through the registration of %PRODUCTNAME.\n\nClick 'Next' to continue."
-msgstr ""
+msgstr "Ushbu usta sizni %PRODUCTNAME ni roʻyxatdan oʻtkazishda yordam beradi.\n\nDAvom ettirish uchun 'Keyingi' tugmasini bosing."
 
 #: source/migration/wizard.src#STR_FINISH.String.Text
-#, fuzzy
 msgid  "~Finish"
 msgstr "~Tayyor"
 
 #: source/migration/wizard.src#STR_REGISTRATION_OOO.String.Text
 msgid  "You now have the opportunity to support and contribute to the fastest growing open source community in the world.\n\nHelp us prove that %PRODUCTNAME has already gained significant market share by registering.\n\nRegistering is voluntary and without obligation."
-msgstr ""
+msgstr "Dunyoda tez rivojlanib borayotgan ochiq kodli dasturiy ta'minot rivojiga oʻz hissangizni qoʻshishingiz mumkin.\n\n%PRODUCTNAME mahsulotini roʻyxatdan oʻtkazib, u bozorda oʻz oʻrniga ega ekanligini takidlashimizga yordam bering.\n\nRoʻyxatdan oʻtish ixtiyoriy va unga majbur qilinmaydi."
 
 #: source/migration/wizard.src#ERRBOX_REG_NOSYSBROWSER.ErrorBox.Message
 msgid  "An error occurred in starting the web browser.\nPlease check the %PRODUCTNAME and web browser settings."
-msgstr ""
+msgstr "Veb brauzerni ochishda xatolik yuz berdi.\nIltimos %PRODUCTNAME dasturini va brauzer moslamalarini tekshirib koʻring."
 
 #: source/migration/wizard.src#QB_ASK_DECLINE.QueryBox.Message
-#, fuzzy
 msgid  "Do you really want to decline?"
 msgstr "Rostdan ham voz kechmoqchimisiz?"
 
 #: source/migration/wizard.src#TP_WELCOME.FT_WELCOME_HEADER.FixedText.Text
-#, fuzzy
 msgid  "Welcome to %PRODUCTNAME %PRODUCTVERSION"
 msgstr "%PRODUCTNAME %PRODUCTVERSION'ga marhamat"
 
 #: source/migration/wizard.src#TP_WELCOME.FT_WELCOME_BODY.FixedText.Text
 msgid  "This wizard will guide you through the license agreement and the registration of %PRODUCTNAME.\n\nClick 'Next' to continue."
-msgstr ""
+msgstr "Ushbu usta litsenziya kelishuvi orqali %PRODUCTNAME dasturini roʻyxatdan oʻtkazadi.\n\nDavom etish uchun 'Keyingi' tugmasini bosing."
 
 #: source/migration/wizard.src#TP_LICENSE.FT_LICENSE_HEADER.FixedText.Text
-#, fuzzy
 msgid  "Please follow these steps to accept the license"
 msgstr "Litsenziya kelishuvini qabul qilish uchun quyidagini bajaring"
 
 #: source/migration/wizard.src#TP_LICENSE.FT_LICENSE_BODY_1.FixedText.Text
-#, fuzzy
 msgid  "1."
 msgstr "1."
 
 #: source/migration/wizard.src#TP_LICENSE.FT_LICENSE_BODY_1_TXT.FixedText.Text
 msgid  "View the complete License Agreement. Please use the scrollbar or the '%PAGEDOWN' button in this dialog to view the entire license text."
-msgstr ""
+msgstr "Litsenziya kelishuvini toʻliq koʻrib chiqish. Iltimos ushbu oynadagi litsenziya kelishuvi matnini koʻrib chiqish uchun sichqoncha gʻildiragidan yoki '%PAGEDOWN' tugmasidan foydalaning."
 
 #: source/migration/wizard.src#TP_LICENSE.FT_LICENSE_BODY_2.FixedText.Text
-#, fuzzy
 msgid  "2."
 msgstr "2."
 
 #: source/migration/wizard.src#TP_LICENSE.FT_LICENSE_BODY_2_TXT.FixedText.Text
 msgid  "Click 'Accept' to accept the terms of the Agreement."
-msgstr ""
+msgstr "Litsenziya kelishuvi bilan rozi boʻlsangiz 'Qabul qilish' tugmasini bosing."
 
 #: source/migration/wizard.src#TP_LICENSE.PB_LICENSE_DOWN.PushButton.Text
-#, fuzzy
 msgid  "Scroll Do~wn"
 msgstr "~Pastga varaqlash"
 
 #: source/migration/wizard.src#STR_LICENSE_ACCEPT.String.Text
-#, fuzzy
 msgid  "~Accept"
 msgstr "Qa~bul qilish"
 
 #: source/migration/wizard.src#STR_LICENSE_DECLINE.String.Text
-#, fuzzy
 msgid  "~Decline"
 msgstr "~Rad etish"
 
 #: source/migration/wizard.src#TP_MIGRATION.FT_MIGRATION_HEADER.FixedText.Text
-#, fuzzy
 msgid  "Transfer personal data"
 msgstr "Shaxsiy maʼlumotlarni uzatish"
 
 #: source/migration/wizard.src#TP_MIGRATION.FT_MIGRATION_BODY.FixedText.Text
 msgid  "Most personal data from %OLDPRODUCT installation can be reused in %PRODUCTNAME %PRODUCTVERSION.\n\nIf you do not want to reuse any settings in %PRODUCTNAME %PRODUCTVERSION, unmark the check box."
-msgstr ""
+msgstr "%OLDPRODUCT versiyadagi shaxsiy maʼlumotlar %PRODUCTNAME %PRODUCTVERSION versiyada ishlatilishi mumkin.\n\nUshbu moslamalardan %PRODUCTNAME %PRODUCTVERSION da foydalanish uchun bu yerni belgilang."
 
 #: source/migration/wizard.src#TP_MIGRATION.CB_MIGRATION.CheckBox.Text
-#, fuzzy
 msgid  "Transfer personal data"
 msgstr "Shaxsiy maʼlumotlarni uzatish"
 
 #: source/migration/wizard.src#TP_UPDATE_CHECK.FT_UPDATE_CHECK_HEADER.FixedText.Text
-#, fuzzy
 msgid  "Online Update"
 msgstr "Onlayn yangilash"
 
 #: source/migration/wizard.src#TP_UPDATE_CHECK.FT_UPDATE_CHECK_BODY.FixedText.Text
 msgid  "%PRODUCTNAME searches automatically at regular intervals for new versions.\nIn doing so online update does not transfer personal data.\nAs soon as a new version is available, you will be notified.\n\nYou can configure this feature at Tools / Options... / %PRODUCTNAME / Online Update."
-msgstr ""
+msgstr "%PRODUCTNAME dasturi doimiy ravishda yangi versiyalar mavjudligini tekshirib turadi.\nBunda hech qanday shaxsiy maʼlumotlardan foydalanilmaydi.\nAgar yangi versiya mavjud boʻlsa, Sizga maʼlum qilinadi.\n\nUshbu xossani menyudagi Vositalar boʻlimidan moslashingiz mumkin."
 
 #: source/migration/wizard.src#TP_UPDATE_CHECK.CB_UPDATE_CHECK.CheckBox.Text
-#, fuzzy
 msgid  "~Check for updates automatically"
 msgstr "Yangilanishga avtomatik ~tekshirish"
 
 #: source/migration/wizard.src#TP_USER.FT_USER_HEADER.FixedText.Text
-#, fuzzy
 msgid  "Provide your full name and initials below"
 msgstr "Toʻliq ism-sharifingizni kiriting"
 
 #: source/migration/wizard.src#TP_USER.FT_USER_BODY.FixedText.Text
 msgid  "The user name will be used in the document properties, templates and when you record changes made to documents."
-msgstr ""
+msgstr "Foydalanuvchi nomi hujjat xossalari, shablonlari va hujjatlarga oʻzgartirishlar kiritilganda foydalaniladi."
 
 #: source/migration/wizard.src#TP_USER.FT_USER_FIRST.FixedText.Text
-#, fuzzy
 msgid  "~First name"
 msgstr "~Ismi"
 
 #: source/migration/wizard.src#TP_USER.FT_USER_LAST.FixedText.Text
-#, fuzzy
 msgid  "~Last name"
 msgstr "~Familiyasi"
 
 #: source/migration/wizard.src#TP_USER.FT_USER_INITIALS.FixedText.Text
-#, fuzzy
 msgid  "~Initials"
 msgstr "~Initsiallar"
 
 #: source/migration/wizard.src#TP_USER.FT_USER_FATHER.FixedText.Text
-#, fuzzy
 msgid  "~Father's name"
 msgstr "~Otasini ismi"
 
 #: source/migration/wizard.src#TP_REGISTRATION.FT_REGISTRATION_HEADER.FixedText.Text
-#, fuzzy
 msgid  "%PRODUCTNAME Registration"
 msgstr "%PRODUCTNAME roʻyxatdan oʻtish"
 
 #: source/migration/wizard.src#TP_REGISTRATION.FT_REGISTRATION_BODY.FixedText.Text
 msgid  "You now have the opportunity to register as a %PRODUCTNAME user. Registration is voluntary and is without obligation.\n\nIf you register, we can inform you about new developments concerning this product."
-msgstr ""
+msgstr "Sizda %PRODUCTNAME foydalanuvchisi sifatida roʻyxatdan oʻtish imkoniyati mavjud. Roʻyxatdan oʻtish ixtiyoriy boʻlib, hech qanday majburiyatga eg emas.\n\nAgar roʻyxatdan oʻtsangiz, sizga ushbu mahsulot haqida yangiliklarni xabar qilishimiz mumkin."
 
 #: source/migration/wizard.src#TP_REGISTRATION.RB_REGISTRATION_NOW.RadioButton.Text
-#, fuzzy
 msgid  "I want to register ~now"
 msgstr "Roʻy~xatdan oʻtish"
 
 #: source/migration/wizard.src#TP_REGISTRATION.RB_REGISTRATION_LATER.RadioButton.Text
-#, fuzzy
 msgid  "I want to register ~later"
 msgstr "Roʻyxatdan ~keyinroq oʻtish"
 
 #: source/migration/wizard.src#TP_REGISTRATION.RB_REGISTRATION_NEVER.RadioButton.Text
-#, fuzzy
 msgid  "I do not want to ~register"
 msgstr "Roʻyxatdan oʻt~kzilmasin"
 
 #: source/migration/wizard.src#TP_REGISTRATION.FT_REGISTRATION_END.FixedText.Text
 msgid  "We hope you enjoy working with %PRODUCTNAME.\n\nTo exit the wizard, click 'Finish'."
-msgstr ""
+msgstr "%PRODUCTNAME bilan ishlash Sizga yoqadi degan umiddamiz.\n\nUstadan chiqish uchun 'Tayyor' tugmasini bosing."
 
 #: win32/source/rebase/rebasegui.ulf#%APP_TITLE%
 msgid  "Installation Status"
@@ -992,38 +929,37 @@ msgstr ""
 msgid  "Cannot find Office installation."
 msgstr ""
 
+#: win32/source/setup/setup.ulf#%APP_TITLE%
+msgid  "Setup"
+msgstr "Oʻrnatish"
+
 #: win32/source/setup/setup.ulf#%APP_PROD_TITLE%
-#, fuzzy
 msgid  "The %PRODUCTNAME Setup"
 msgstr "%PRODUCTNAME oʻrnatish"
 
 #: win32/source/setup/setup.ulf#%OUTOFMEM%
-#, fuzzy
 msgid  "Out of Memory"
 msgstr "Xotira yetishmayapti"
 
 #: win32/source/setup/setup.ulf#%NOMSI%
-#, fuzzy
 msgid  "Setup was unable to find the msi package."
 msgstr "Oʻrnatuvchi msi paketini topa olmadi."
 
 #: win32/source/setup/setup.ulf#%USER_CANCELLED%
-#, fuzzy
 msgid  "Setup was cancelled"
 msgstr "Oʻrnatish bekor qilindi"
 
 #: win32/source/setup/setup.ulf#%REQUIRES_ADMIN_PRIV%
 msgid  "Administrator privileges are required for upgrading the Windows Installer."
-msgstr ""
+msgstr "Windows oʻrnatuvchisini yangilash uchun boshqaruvchi huquqlari talab qilinadi."
 
 #: win32/source/setup/setup.ulf#%FILE_NOT_FOUND%
-#, fuzzy
 msgid  "Setup was unable to find the file '%s'."
 msgstr "Oʻrnatuvchi '%s' faylini topa olmadi."
 
 #: win32/source/setup/setup.ulf#%INVALID_PARAM%
 msgid  "Invalid command line option '%s'. Please use '/?' for help."
-msgstr ""
+msgstr "Buyruqlar qatorining '%s' xato parametri. Iltimos yordam uchun '/?' belgisidan foydalaning."
 
 #: win32/source/setup/setup.ulf#%SETUP_TO_OLD%
 msgid  "This package requires at least the version '%s' of the Windows Installer. \nYou have Windows Installer '%s' on your system!"
@@ -1035,120 +971,97 @@ msgstr ""
 
 #: win32/source/setup/setup.ulf#%USAGE%
 msgid  "Usage:\n   /? :  Shows this dialog.\n   /a :  Performs an administrative installation.\n   /j[u|m] :  Performs an advertising installation.\n   /q[n] : Do not show any user interface (silent mode).\n"
-msgstr ""
+msgstr "Foydalanish:\n   /? :  Ushbu yordam matnini koʻrsatadi.\n   /a :  administrativ oʻrnatishni amalga oshiradi.\n   /j[u|m] :  Namoyishli oʻrnatishni amalga oshiradi.\n   /q[n] : Foydalanuvchi interfeysi koʻrsatilmasin (silent mode).\n"
 
 #: win32/source/setup/setup.ulf#%ALREADY_RUNNING%
-#, fuzzy
 msgid  "There is already a setup process running."
 msgstr "Allaqachon oʻrnatuvchi ishlamoqda."
 
 #: win32/source/setup/setup.ulf#%UNKNOWN_ERROR%
-#, fuzzy
 msgid  "An Unknown Error occured!"
 msgstr "Nomaʼlum xatolik yuz berdi!"
 
 #: win32/source/setup/setup.ulf#%INVALID_PROFILE%
-#, fuzzy
 msgid  "Invalid or incomplete profile."
 msgstr "Xato yoki toʻliq boʻlmagan profil"
 
 #: win32/source/setup/setup.ulf#%UNKNOWN_LANG%
-#, fuzzy
 msgid  "Unknown Language: %d"
 msgstr "Nomaʼlum til: %d"
 
 #: win32/source/setup/setup.ulf#%LANGUAGE_ZH_TW%
-#, fuzzy
 msgid  "Chinese (traditional)"
 msgstr "Xitoycha (Anʼanaviy)"
 
 #: win32/source/setup/setup.ulf#%LANGUAGE_CS%
-#, fuzzy
 msgid  "Czech"
 msgstr "Chexcha"
 
 #: win32/source/setup/setup.ulf#%LANGUAGE_DA%
-#, fuzzy
 msgid  "Danish"
 msgstr "Daniyaliklar tili"
 
 #: win32/source/setup/setup.ulf#%LANGUAGE_DE_DE%
-#, fuzzy
 msgid  "German (Germany)"
 msgstr "Nemischa (Germaniya)"
 
 #: win32/source/setup/setup.ulf#%LANGUAGE_EL%
-#, fuzzy
 msgid  "Greek"
 msgstr "Yunoncha"
 
 #: win32/source/setup/setup.ulf#%LANGUAGE_EN_US%
-#, fuzzy
 msgid  "English (USA)"
 msgstr "Inglizcha (AQSH)"
 
 #: win32/source/setup/setup.ulf#%LANGUAGE_ES%
-#, fuzzy
 msgid  "Spanish (Spain)"
 msgstr "Ispancha (Ispaniya)"
 
 #: win32/source/setup/setup.ulf#%LANGUAGE_FI%
-#, fuzzy
 msgid  "Finnish"
 msgstr "Fincha"
 
 #: win32/source/setup/setup.ulf#%LANGUAGE_FR_FR%
-#, fuzzy
 msgid  "French (France)"
 msgstr "Fransuzcha (Fransiya)"
 
 #: win32/source/setup/setup.ulf#%LANGUAGE_HE%
-#, fuzzy
 msgid  "Hebrew"
 msgstr "Yahudiycha"
 
 #: win32/source/setup/setup.ulf#%LANGUAGE_HU%
-#, fuzzy
 msgid  "Hungarian"
 msgstr "Vengrcha"
 
 #: win32/source/setup/setup.ulf#%LANGUAGE_IT_IT%
-#, fuzzy
 msgid  "Italian (Italy)"
 msgstr "Italyancha (Italiya)"
 
 #: win32/source/setup/setup.ulf#%LANGUAGE_JA%
-#, fuzzy
 msgid  "Japanese"
 msgstr "Yaponcha"
 
 #: win32/source/setup/setup.ulf#%LANGUAGE_KO%
-#, fuzzy
 msgid  "Korean"
 msgstr "Koreyscha"
 
 #: win32/source/setup/setup.ulf#%LANGUAGE_NL_NL%
-#, fuzzy
 msgid  "Dutch (Netherlands)"
 msgstr "Gollandcha (Niderlandlar)"
 
 #: win32/source/setup/setup.ulf#%LANGUAGE_NO_NO%
-#, fuzzy
 msgid  "Norwegian (Bokmål)"
 msgstr "Norvegcha (Bokmaal)"
 
 #: win32/source/setup/setup.ulf#%LANGUAGE_PL%
-#, fuzzy
 msgid  "Polish"
 msgstr "Polyakcha"
 
 #: win32/source/setup/setup.ulf#%LANGUAGE_PT_BR%
-#, fuzzy
 msgid  "Portuguese (Brazil)"
 msgstr "Portugalcha (Braziliya)"
 
 #: win32/source/setup/setup.ulf#%LANGUAGE_RU%
-#, fuzzy
 msgid  "Russian"
 msgstr "Ruscha"
 
@@ -1157,36 +1070,25 @@ msgid  "Slovak"
 msgstr ""
 
 #: win32/source/setup/setup.ulf#%LANGUAGE_SV_SE%
-#, fuzzy
 msgid  "Swedish (Sweden)"
 msgstr "Shvedcha (Shvetsiya)"
 
 #: win32/source/setup/setup.ulf#%LANGUAGE_TH%
-#, fuzzy
 msgid  "Thai"
 msgstr "Taycha"
 
 #: win32/source/setup/setup.ulf#%LANGUAGE_TR%
-#, fuzzy
 msgid  "Turkish"
 msgstr "Turkcha"
 
 #: win32/source/setup/setup.ulf#%LANGUAGE_ET%
-#, fuzzy
 msgid  "Estonian"
 msgstr "Estoncha"
 
 #: win32/source/setup/setup.ulf#%LANGUAGE_ZH_CN%
-#, fuzzy
 msgid  "Chinese (Simplified)"
 msgstr "Xitoycha (Soddalashtirilgan)"
 
 #: win32/source/setup/setup.ulf#%LANGUAGE_PT_PT%
-#, fuzzy
 msgid  "Portuguese (Portugal)"
 msgstr "Portugalcha (Portugaliya)"
-
-#: win32/source/setup/setup.ulf#%APP_TITLE%
-#, fuzzy
-msgid  "Setup"
-msgstr "Oʻrnatish"

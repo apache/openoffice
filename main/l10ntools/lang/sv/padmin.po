@@ -33,7 +33,7 @@ msgstr ""
 
 #: source/padialog.src#RID_FONTIMPORT_DIALOG.RID_FIMP_TXT_HELP.FixedText.Text
 msgid  "Please select the folder from which you want to import fonts. Add the selected fonts by clicking the OK button."
-msgstr ""
+msgstr "Välj först den mapp som du vill importera teckensnitt ifrån. Lägg sedan till de markerade teckensnitten med OK."
 
 #: source/padialog.src#RID_FONTIMPORT_DIALOG.RID_FIMP_FL_FROM.FixedLine.Text
 msgid  "Source directory"
@@ -53,7 +53,7 @@ msgstr "Skapa bara ~softlinks"
 
 #: source/padialog.src#RID_FONTIMPORT_DIALOG.RID_FIMP_BTN_SELECTALL.PushButton.Text
 msgid  "~Select All"
-msgstr "Välj ~alla"
+msgstr "Markera ~alla"
 
 #: source/padialog.src#RID_FONTIMPORT_DIALOG.RID_FIMP_STR_IMPORTOP.String.Text
 msgid  "Add fonts"
@@ -61,7 +61,7 @@ msgstr "Lägger till teckensnitt"
 
 #: source/padialog.src#RID_FONTIMPORT_DIALOG.RID_FIMP_STR_QUERYOVERWRITE.String.Text
 msgid  "Do you really want to overwrite this font file?\n   %s"
-msgstr ""
+msgstr "Vill du verkligen skriva över den här teckensnittsfilen\n   %s?"
 
 #: source/padialog.src#RID_FONTIMPORT_DIALOG.RID_FIMP_STR_OVERWRITEALL.String.Text
 msgid  "All"
@@ -73,19 +73,19 @@ msgstr "Inga"
 
 #: source/padialog.src#RID_FONTIMPORT_DIALOG.RID_FIMP_STR_NOAFM.String.Text
 msgid  "A format file (with an .afm extension) has not been found for the font\n%s\ntherefore, the font cannot be installed. Format files can be created with ghostscript, for example, and have to be located in the same directory as the font files or its afm subdirectory."
-msgstr ""
+msgstr "Det hittades ingen formatfil (med filtillägget .afm) till teckensnittsfilen\n%s\n, varför den inte kan installeras. Formatfiler kan t.ex. skapas med ghostscript och måste finnas i samma katalog som teckensnittsfilerna eller i katalogens underordnade kataloger."
 
 #: source/padialog.src#RID_FONTIMPORT_DIALOG.RID_FIMP_STR_AFMCOPYFAILED.String.Text
 msgid  "The metric file for the font file\n   %s\ncould not be copied. The font will not be installed."
-msgstr ""
+msgstr "Det gick inte att kopiera metrikfilen till teckensnittsfilen\n   %s\n. Teckensnittet kommer inte att installeras."
 
 #: source/padialog.src#RID_FONTIMPORT_DIALOG.RID_FIMP_STR_FONTCOPYFAILED.String.Text
 msgid  "The font file\n   %s\ncould not be copied. The font will not be installed."
-msgstr ""
+msgstr "Det gick inte att kopiera teckensnittsfilen\n   %s\n. Teckensnittet installeras inte."
 
 #: source/padialog.src#RID_FONTIMPORT_DIALOG.RID_FIMP_STR_NOWRITEABLEFONTSDIR.String.Text
 msgid  "A directory containing a writable fonts.dir file is not located in the Fontpath. Therefore, fonts cannot be installed."
-msgstr ""
+msgstr "I Fontpath finns det ingen katalog som innehåller en skrivbar fonts.dir-fil. Det går inte att skapa några teckensnitt."
 
 #: source/padialog.src#RID_FONTIMPORT_DIALOG.RID_FIMP_STR_NUMBEROFFONTSIMPORTED.String.Text
 msgid  "%d new fonts were added."
@@ -177,7 +177,7 @@ msgstr "Testsidan har skrivits ut. Kontrollera resultatet."
 
 #: source/padialog.src#RID_ERR_NOWRITE.String.Text
 msgid  "No printers can be installed, because the file system is read-only.\nPlease contact your system administrator."
-msgstr ""
+msgstr "Inga skrivare kan installeras eftersom filsystemet inte är skrivbart.\nVar vänlig kontakta din systemadministratör."
 
 #: source/padialog.src#RID_QRY_PRTNAME.String.Text
 msgid  "~New printer name"
@@ -237,7 +237,7 @@ msgstr "~Nytt namn för %s (%d1 av %d2)"
 
 #: source/padialog.src#RID_FONTNAMEDIALOG.RID_FNTNM_STR_NOTRENAMABLE.String.Text
 msgid  "The font %s cannot be renamed due to missing write permission."
-msgstr ""
+msgstr "Det går inte att döpa om teckensnittet %s eftersom skrivrättigheter saknas."
 
 #: source/padialog.src#RID_FONTNAMEDIALOG.String.Text
 msgid  "Fonts"
@@ -289,7 +289,7 @@ msgstr "Filen innehåller ingen metrik."
 
 #: source/padialog.src#RID_AFMERROR_BOX_TXT.String.Text
 msgid  "The metric\n\n%s\n\ncould not be converted for the following reason:\n\n"
-msgstr ""
+msgstr "Det gick inte att konvertera metriken\n\n%s\n\n av följande skäl:\n\n"
 
 #: source/padialog.src#RID_PROGRESS_DLG.RID_PROGRESS_PROGRESS_TXT.FixedText.Text
 msgid  "Progress"
@@ -320,8 +320,8 @@ msgid  "~Selection of drivers"
 msgstr "Tillgängliga ~drivrutiner"
 
 #: source/padialog.src#RID_PPDIMPORT_DLG.RID_PPDIMP_TXT_DRIVER.FixedText.Text
-msgid  "Please select the drivers to install and press "%s"."
-msgstr ""
+msgid  "Please select the drivers to install and press \"%s\"."
+msgstr "Välj drivrutiner och bekräfta med kommandoknappen \"%s\"."
 
 #: source/padialog.src#RID_PPDIMPORT_DLG.RID_PPDIMP_STR_LOADINGPPD.String.Text
 msgid  "Searching for drivers"
@@ -332,8 +332,8 @@ msgid  "Driver Installation"
 msgstr "Drivrutinsinstallation"
 
 #: source/padialog.src#RID_QUERY_REMOVEDRIVER.String.Text
-msgid  "Do you really want to remove the driver "%s"?"
-msgstr ""
+msgid  "Do you really want to remove the driver \"%s\"?"
+msgstr "Vill du verkligen ta bort drivrutinen \"%s\"?"
 
 #: source/padialog.src#RID_QUERY_REMOVEPRINTER.String.Text
 msgid  "Do you really want to remove this printer ?"
@@ -344,40 +344,40 @@ msgid  "Do you really want to remove the selected fonts ?"
 msgstr "Vill du verkligen ta bort de markerade teckensnitten ?"
 
 #: source/padialog.src#RID_QUERY_DRIVERUSED.String.Text
-msgid  "There are still printers using the driver "%s". Do you really want to remove it? The corresponding printers will also be removed."
-msgstr ""
+msgid  "There are still printers using the driver \"%s\". Do you really want to remove it? The corresponding printers will also be removed."
+msgstr "Det finns fortfarande skrivare som använder drivrutinen \"%s\". Vill du verkligen ta bort den? Då tas även motsvarande skrivare bort."
 
 #: source/padialog.src#RID_ERR_REMOVESGENPRT.String.Text
-msgid  "The driver "%s" is always needed and can therefore not be removed."
-msgstr ""
+msgid  "The driver \"%s\" is always needed and can therefore not be removed."
+msgstr "Drivrutinen \"%s\" behövs alltid och kan därför inte tas bort."
 
 #: source/padialog.src#RID_ERR_REMOVEDRIVERFAILED.String.Text
-msgid  "The driver "%s1" could not be removed. It was not possible to remove the file\n\n%s2."
-msgstr ""
+msgid  "The driver \"%s1\" could not be removed. It was not possible to remove the file\n\n%s2."
+msgstr "Drivrutinen \"%s1\" kunde inte tas bort. Det gick inte att radera filen\n\n%s2."
 
 #: source/padialog.src#RID_ERR_REMOVEDEFAULTDRIVER.String.Text
-msgid  "The driver "%s" is used by your default printer. Therefore, it cannot be removed."
-msgstr ""
+msgid  "The driver \"%s\" is used by your default printer. Therefore, it cannot be removed."
+msgstr "Drivrutinen \"%s\" används av din standardskrivare. Därför går det inte att ta bort den."
 
 #: source/padialog.src#RID_ERR_PRINTERNOTREMOVEABLE.String.Text
 msgid  "The printer %s cannot be removed."
 msgstr "Det går inte att ta bort skrivaren %s."
 
 #: source/padialog.src#RID_TXT_PRINTERALREADYEXISTS.String.Text
-msgid  "A printer named "%s" already exists. This printer will not be imported."
-msgstr ""
+msgid  "A printer named \"%s\" already exists. This printer will not be imported."
+msgstr "Det finns redan en skrivare som heter \"%s\". Den här skrivaren importeras inte."
 
 #: source/padialog.src#RID_TXT_PRINTERWITHOUTCOMMAND.String.Text
-msgid  "The printer "%s" has no valid configuration and, therefore, cannot be imported."
-msgstr ""
+msgid  "The printer \"%s\" has no valid configuration and, therefore, cannot be imported."
+msgstr "Det går inte att importera skrivaren \"%s\" eftersom den inte är fullständigt konfigurerad."
 
 #: source/padialog.src#RID_TXT_DRIVERDOESNOTEXIST.String.Text
-msgid  "The driver for the printer "%s1" (%s2) is not installed. Therefore the printer cannot be imported."
-msgstr ""
+msgid  "The driver for the printer \"%s1\" (%s2) is not installed. Therefore the printer cannot be imported."
+msgstr "Drivrutinen för skrivaren \"%s1\" (%s2) är inte installerad. Därför går det inte att importera skrivaren."
 
 #: source/padialog.src#RID_TXT_PRINTERADDFAILED.String.Text
-msgid  "The printer "%s" could not be added."
-msgstr ""
+msgid  "The printer \"%s\" could not be added."
+msgstr "Det gick inte att lägga till skrivaren \"%s\"."
 
 #: source/padialog.src#RID_ADD_PRINTER_DIALOG.RID_ADDP_BTN_FINISH.OKButton.Text
 msgid  "~Finish"
@@ -488,12 +488,12 @@ msgid  "~Help"
 msgstr "~Hjälp"
 
 #: source/padialog.src#RID_ADDP_PAGE_COMMAND.RID_ADDP_CMD_STR_PDFHELP.String.Text
-msgid  "The command line for PDF converters is executed as follows: for each document printed, "(TMP)" in the command line is replaced by a temporary file and "(OUTFILE)" in the command line is replaced by the target PDF file name. If "(TMP)" is in the command line, the PostScript code will be supplied via a file, otherwise via standard input (i.e. as a pipe)."
-msgstr ""
+msgid  "The command line for PDF converters is executed as follows: for each document printed, \"(TMP)\" in the command line is replaced by a temporary file and \"(OUTFILE)\" in the command line is replaced by the target PDF file name. If \"(TMP)\" is in the command line, the PostScript code will be supplied via a file, otherwise via standard input (i.e. as a pipe)."
+msgstr "Kommandoraden för PDF-konverterare bearbetas på följande sätt: på varje utskrivet dokument ersätts \"(TMP)\" och \"(OUTFILE)\" i kommandoraden av en temporär fil resp. av PDF-filen som ska skapas. Om \"(TMP)\" förekommer i kommandoraden överförs PostScript-koden i en fil, i annat fall via standardinmatningen (d.v.s. som pipe)."
 
 #: source/padialog.src#RID_ADDP_PAGE_COMMAND.RID_ADDP_CMD_STR_FAXHELP.String.Text
-msgid  "The command line for fax connections is executed as follows: for each fax sent, "(TMP)" in the command line is replaced by a temporary file and "(PHONE)" in the command line is replaced by the fax number. If "(TMP)" appears in the command line, the PostScript code will be supplied via a file, otherwise it is passed as standard input (i.e. as a pipe)."
-msgstr ""
+msgid  "The command line for fax connections is executed as follows: for each fax sent, \"(TMP)\" in the command line is replaced by a temporary file and \"(PHONE)\" in the command line is replaced by the fax number. If \"(TMP)\" appears in the command line, the PostScript code will be supplied via a file, otherwise it is passed as standard input (i.e. as a pipe)."
+msgstr "Kommandoraden för faxanslutningar bearbetas på följande sätt: på varje fax som skickas ersätts \"(TMP)\" och \"(PHONE)\" i kommandoraden av en temporär fil resp. av faxnumret. Om \"(TMP)\" förekommer i kommandoraden överförs PostScript-koden i en fil, i annat fall via standardinmatningen (d.v.s. som pipe)."
 
 #: source/padialog.src#RID_ADDP_PAGE_OLDPRINTERS.RID_ADDP_STR_TITLE.String.Text
 msgid  "Import printers from old versions"
@@ -501,7 +501,7 @@ msgstr "Importera skrivare från äldre versioner"
 
 #: source/padialog.src#RID_ADDP_PAGE_OLDPRINTERS.RID_ADDP_OLD_TXT_PRINTERS.FixedText.Text
 msgid  "~These printers can be imported. Please select the ones you want to import."
-msgstr ""
+msgstr "~De här skrivarna kan importeras. Välj de som du vill importera."
 
 #: source/padialog.src#RID_ADDP_PAGE_OLDPRINTERS.RID_ADDP_OLD_BTN_SELECTALL.PushButton.Text
 msgid  "~Select All"
@@ -521,7 +521,7 @@ msgstr "~Standarddrivrutinen"
 
 #: source/padialog.src#RID_ADDP_PAGE_FAXDRIVER.RID_ADDP_FAXDRV_BTN_SELECT.RadioButton.Text
 msgid  "A speci~fic driver, to adapt the format to another printer"
-msgstr ""
+msgstr "en specifik drivru~tin för att anpassa formateringen till en annan skrivare"
 
 #: source/padialog.src#RID_ADDP_PAGE_PDFDRIVER.RID_ADDP_STR_TITLE.String.Text
 msgid  "Choose a driver"
@@ -541,7 +541,7 @@ msgstr "Drivrutinen Adobe ~Distiller(tm)"
 
 #: source/padialog.src#RID_ADDP_PAGE_PDFDRIVER.RID_ADDP_PDFDRV_BTN_SELECT.RadioButton.Text
 msgid  "A spec~ific driver, to adapt the format to another printer"
-msgstr ""
+msgstr "En specifik drivru~tin för att anpassa formateringen till en annan skrivare"
 
 #: source/padialog.src#RID_TXT_FONT_ITALIC.String.Text
 msgid  "Italic"
@@ -725,7 +725,7 @@ msgstr "~Lägg till"
 
 #: source/rtsetup.src#RID_RTS_FONTSUBSTPAGE.RID_RTS_FS_REMOVE_BTN.PushButton.Text
 msgid  "~Remove"
-msgstr "~Ta bort"
+msgstr "Ta ~bort"
 
 #: source/rtsetup.src#RID_RTS_FONTSUBSTPAGE.RID_RTS_FS_FROM_TXT.FixedText.Text
 msgid  "Repla~ce font"
@@ -737,7 +737,7 @@ msgstr "med s~krivarteckensnitt"
 
 #: source/rtsetup.src#RID_RTS_COMMANDPAGE.RID_RTS_CMD_CB_EXTERNAL.CheckBox.Text
 msgid  "~Use system print dialog, disable %PRODUCTNAME's print dialog"
-msgstr ""
+msgstr "~Använd operativsystemets dialogruta för utskrift och avaktivera %PRODUCTNAMEs dialogruta."
 
 #: source/rtsetup.src#RID_RTS_COMMANDPAGE.RID_RTS_CMD_FT_QUICKCMD.FixedText.Text
 msgid  "Command for quick printing without dialog (optional)"
@@ -788,16 +788,16 @@ msgid  "~Remove"
 msgstr "~Ta bort"
 
 #: source/rtsetup.src#RID_RTS_COMMANDPAGE.RID_RTS_CMD_STR_PDFHELP.String.Text
-msgid  "The command line for PDF converters is executed as follows: for each document printed, "(TMP)" in the command line is replaced by a temporary file and "(OUTFILE)" in the command line is replaced by the target PDF file name. If "(TMP)" is in the command line, the PostScript code will be supplied via a file, otherwise via standard input (i.e. as a pipe)."
-msgstr ""
+msgid  "The command line for PDF converters is executed as follows: for each document printed, \"(TMP)\" in the command line is replaced by a temporary file and \"(OUTFILE)\" in the command line is replaced by the target PDF file name. If \"(TMP)\" is in the command line, the PostScript code will be supplied via a file, otherwise via standard input (i.e. as a pipe)."
+msgstr "Kommandoraden för PDF-konverterare bearbetas på följande sätt: på varje utskrivet dokument ersätts \"(TMP)\" och \"(OUTFILE)\" i kommandoraden av en temporär fil resp. av PDF-filen som ska skapas. Om \"(TMP)\" förekommer i kommandoraden överförs PostScript-koden i en fil, i annat fall via standardinmatningen (d.v.s. som pipe)."
 
 #: source/rtsetup.src#RID_RTS_COMMANDPAGE.RID_RTS_CMD_STR_PRINTERHELP.String.Text
 msgid  "The command line for printer devices is executed as follows: the generated PostScript code is supplied as standard input (i.e. as a pipe) to the command line."
-msgstr ""
+msgstr "Kommandoraden för skrivare bearbetas på följande sätt: den skapade PostScript-koden överförs som standardinmatning (d.v.s. som pipe) till kommandoraden."
 
 #: source/rtsetup.src#RID_RTS_COMMANDPAGE.RID_RTS_CMD_STR_FAXHELP.String.Text
-msgid  "The command line for fax devices is executed as follows: for each fax sent, "(TMP)" in the command line is replaced by a temporary file and "(PHONE)" in the command line is replaced by the fax number. If "(TMP)" appears in the command line, the PostScript code will be supplied via a file, otherwise it is passed as standard input (i.e. as a pipe)."
-msgstr ""
+msgid  "The command line for fax devices is executed as follows: for each fax sent, \"(TMP)\" in the command line is replaced by a temporary file and \"(PHONE)\" in the command line is replaced by the fax number. If \"(TMP)\" appears in the command line, the PostScript code will be supplied via a file, otherwise it is passed as standard input (i.e. as a pipe)."
+msgstr "Kommandoraden för faxar bearbetas på följande sätt: för varje fax som skickas ersätts \"(TMP)\" och \"(PHONE)\" med en temporär fil resp. av faxnumret. Om \"(TMP)\" förekommer i kommandoraden överförs PostScript-koden i en fil, i annat fall via standardinmatningen (d.v.s. som pipe)."
 
 #: source/rtsetup.src#RID_RTS_OTHERPAGE.RID_RTS_OTHER_LEFTMARGIN_TXT.FixedText.Text
 msgid  "~Left margin"

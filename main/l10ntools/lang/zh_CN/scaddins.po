@@ -437,7 +437,7 @@ msgstr "FACTDOUBLE"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Workday.1.String.Text
 msgid  "Returns the serial number of the date before or after a specified number of workdays"
-msgstr ""
+msgstr "返回某一指定工作日日期之前或之后相隔的日期数值。"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Workday.2.String.Text
 msgid  "Start date"
@@ -465,7 +465,7 @@ msgstr "一个包含休假和法定节假日等的日期数据列单。"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Yearfrac.1.String.Text
 msgid  "Returns the number of whole days between 'start date' and 'end date' as a year fraction"
-msgstr ""
+msgstr "计算某一开始日期和结束日期之间的天数和全年天数的百分比。"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Yearfrac.2.String.Text
 msgid  "Start date"
@@ -493,7 +493,7 @@ msgstr "表示确定利息天数的基数"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Edate.1.String.Text
 msgid  "Returns the serial number of the date that is a specified number of months before or after the start date"
-msgstr ""
+msgstr "返回某一指定日期之前或之后指定月份数的日期系列数。"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Edate.2.String.Text
 msgid  "Start date"
@@ -509,11 +509,11 @@ msgstr "months"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Edate.5.String.Text
 msgid  "Number of months before or after the start date"
-msgstr "开始日期之前或之后的月份数。"
+msgstr "某一指定日期之前或之后的月份数。"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Weeknum.1.String.Text
 msgid  "Returns the number of the calendar week in which the specified date occurs."
-msgstr ""
+msgstr "计算某一日期在一年当中的周序列数。"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Weeknum.2.String.Text
 msgid  "Date"
@@ -533,7 +533,7 @@ msgstr "1至3中的一个数字用来指定哪一天是一周的开始。"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Eomonth.1.String.Text
 msgid  "Returns the serial number of the last day of the month that comes a certain number of months before or after the start date"
-msgstr ""
+msgstr "计算某一指定开始日期之前或之后的月份中最后一天的序列数。"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Eomonth.2.String.Text
 msgid  "Start date"
@@ -589,7 +589,7 @@ msgstr "number"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Iseven.3.String.Text
 msgid  "The number"
-msgstr "数字"
+msgstr "数值"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Isodd.1.String.Text
 msgid  "Returns the value 'true' if the number is odd"
@@ -601,7 +601,7 @@ msgstr "number"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Isodd.3.String.Text
 msgid  "The number"
-msgstr "数字"
+msgstr "数值"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Multinomial.1.String.Text
 msgid  "Returns the multinomial coefficient of a set of numbers"
@@ -609,11 +609,11 @@ msgstr "计算数组的阶乘和与各数组阶乘乘积的比值。"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Multinomial.2.String.Text
 msgid  "Number(s)"
-msgstr "numbers"
+msgstr "number(s)"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Multinomial.3.String.Text
 msgid  "Number or list of numbers for which you want the multinomial coefficient"
-msgstr ""
+msgstr "要计算其阶乘的比值的数据或数据列单。"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Seriessum.1.String.Text
 msgid  "Returns the sum of a power series"
@@ -621,7 +621,7 @@ msgstr "计算某一乘积的和。"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Seriessum.2.String.Text
 msgid  "X"
-msgstr "X"
+msgstr "x"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Seriessum.3.String.Text
 msgid  "The independent variable of the power series"
@@ -629,7 +629,7 @@ msgstr "独立的冥级数的参数。"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Seriessum.4.String.Text
 msgid  "N"
-msgstr "N"
+msgstr "n"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Seriessum.5.String.Text
 msgid  "The initial power to which x is to be raised"
@@ -649,7 +649,7 @@ msgstr "Coefficients"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Seriessum.9.String.Text
 msgid  "Set of coefficients by which each successive power of the variable x is multiplied"
-msgstr ""
+msgstr "是一系列与 x 各级乘幂相乘的系数。"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Quotient.1.String.Text
 msgid  "Returns the integer portion of a division"
@@ -657,7 +657,7 @@ msgstr "舍掉某一商的小数部分，得出商的整数部分。"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Quotient.2.String.Text
 msgid  "Numerator"
-msgstr "numerator"
+msgstr "inumber_1"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Quotient.3.String.Text
 msgid  "The dividend"
@@ -665,11 +665,11 @@ msgstr "分子"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Quotient.4.String.Text
 msgid  "Denominator"
-msgstr "Denominator"
+msgstr "inumber_2"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Quotient.5.String.Text
 msgid  "The divisor"
-msgstr "分母"
+msgstr "整数分母"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Mround.1.String.Text
 msgid  "Returns a number rounded to a specified multiple"
@@ -757,7 +757,7 @@ msgstr "x"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Besseli.3.String.Text
 msgid  "The value at which the function is to be evaluated"
-msgstr "用于计算 BesselJ 函数的参数值。"
+msgstr "用来计算函数的值"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Besseli.4.String.Text
 msgid  "N"
@@ -765,7 +765,7 @@ msgstr "n"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Besseli.5.String.Text
 msgid  "The order of the Bessel function"
-msgstr "一个 BesselJ 函数的阶数。"
+msgstr "Bessel 函数的阶数"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Besselj.1.String.Text
 msgid  "Returns the Bessel function Jn(x)"
@@ -773,19 +773,19 @@ msgstr "计算修正的 Bessel 函数值 Jn(x) 。"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Besselj.2.String.Text
 msgid  "X"
-msgstr "X"
+msgstr "x"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Besselj.3.String.Text
 msgid  "The value at which the function is to be evaluated"
-msgstr "用于计算 BesselK 函数的参数值。"
+msgstr "用于计算 BesselJ 函数的参数值。"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Besselj.4.String.Text
 msgid  "N"
-msgstr "N"
+msgstr "n"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Besselj.5.String.Text
 msgid  "The order of the Bessel function"
-msgstr "一个 BesselK 函数的阶数。"
+msgstr "一个 BesselJ 函数的阶数。"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Besselk.1.String.Text
 msgid  "Returns the Bessel function Kn(x)"
@@ -797,7 +797,7 @@ msgstr "x"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Besselk.3.String.Text
 msgid  "The value at which the function is to be evaluated"
-msgstr "用于计算 BesselY 函数的参数值。"
+msgstr "用于计算 BesselK 函数的参数值。"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Besselk.4.String.Text
 msgid  "N"
@@ -805,7 +805,7 @@ msgstr "n"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Besselk.5.String.Text
 msgid  "The order of the Bessel function"
-msgstr "一个 BesselY 函数的阶数。"
+msgstr "一个 BesselK 函数的阶数。"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Bessely.1.String.Text
 msgid  "Returns the Bessel function Yn(x)"
@@ -837,7 +837,7 @@ msgstr "number"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Bin2Oct.3.String.Text
 msgid  "The binary number to be converted (as text)"
-msgstr "一个当作文字的二进制数字。"
+msgstr "要转换的二进制数值（作为文字）"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Bin2Oct.4.String.Text
 msgid  "Places"
@@ -845,7 +845,7 @@ msgstr "places"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Bin2Oct.5.String.Text
 msgid  "Number of places used"
-msgstr "一个要使用的字符数目。"
+msgstr "使用的位数"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Bin2Dec.1.String.Text
 msgid  "Converts a binary number to a decimal number"
@@ -857,7 +857,7 @@ msgstr "number"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Bin2Dec.3.String.Text
 msgid  "The binary number to be converted (as text)"
-msgstr "是一个当作文字的二进制数字。"
+msgstr "一个当作文字的二进制数字。"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Bin2Hex.1.String.Text
 msgid  "Converts a binary number to a hexadecimal number"
@@ -897,7 +897,7 @@ msgstr "places"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Oct2Bin.5.String.Text
 msgid  "Number of places used"
-msgstr "是一个要使用的字符数目。"
+msgstr "一个要使用的字符数目。"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Oct2Dec.1.String.Text
 msgid  "Converts an octal number to a decimal number"
@@ -949,7 +949,7 @@ msgstr "places"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Dec2Bin.5.String.Text
 msgid  "Number of places used"
-msgstr "一个要使用的字符数目。"
+msgstr "是一个要使用的字符数目。"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Dec2Hex.1.String.Text
 msgid  "Converts a decimal number to a hexadecimal number"
@@ -981,7 +981,7 @@ msgstr "number"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Dec2Oct.3.String.Text
 msgid  "The decimal number"
-msgstr "十进制数值"
+msgstr "十进制数字"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Dec2Oct.4.String.Text
 msgid  "Places"
@@ -1001,7 +1001,7 @@ msgstr "number"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Hex2Bin.3.String.Text
 msgid  "The hexadecimal number to be converted (as text)"
-msgstr "一个当作文字的十六进制数字。"
+msgstr "要转换的十六进制数值（作为文字）"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Hex2Bin.4.String.Text
 msgid  "Places"
@@ -1133,7 +1133,7 @@ msgstr "计算某一复数的绝对值。"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Imabs.2.String.Text
 msgid  "Complex number"
-msgstr "inumber_1"
+msgstr "inumber"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Imabs.3.String.Text
 msgid  "The complex number"
@@ -1145,7 +1145,7 @@ msgstr "计算某一复数的虚数。"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Imaginary.2.String.Text
 msgid  "Complex number"
-msgstr "inumber_2"
+msgstr "inumber"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Imaginary.3.String.Text
 msgid  "The complex number"
@@ -1157,7 +1157,7 @@ msgstr "计算某一复数的整数次冥。"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Impower.2.String.Text
 msgid  "Complex number"
-msgstr "inumber_1"
+msgstr "inumber"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Impower.3.String.Text
 msgid  "The complex number"
@@ -1213,7 +1213,7 @@ msgstr "Denominator"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Imdiv.5.String.Text
 msgid  "The divisor"
-msgstr "分母"
+msgstr "整数分母"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Imexp.1.String.Text
 msgid  "Returns the algebraic form of the exponential of a complex number"
@@ -1233,7 +1233,7 @@ msgstr "计算某一复数的共轭复数。"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Imconjugate.2.String.Text
 msgid  "Complex number"
-msgstr "inumber_1"
+msgstr "inumber"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Imconjugate.3.String.Text
 msgid  "The complex number"
@@ -1245,7 +1245,7 @@ msgstr "计算某一复数的自然对数。"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Imln.2.String.Text
 msgid  "Complex number"
-msgstr "inumber_2"
+msgstr "inumber"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Imln.3.String.Text
 msgid  "The complex number"
@@ -1257,7 +1257,7 @@ msgstr "计算某一复数以10为底数的对数。"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Imlog10.2.String.Text
 msgid  "Complex number"
-msgstr "inumber_1"
+msgstr "inumber"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Imlog10.3.String.Text
 msgid  "The complex number"
@@ -1325,7 +1325,7 @@ msgstr "计算两个复数的差。"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Imsub.2.String.Text
 msgid  "Complex number 1"
-msgstr "第一个复数"
+msgstr "inumber_1"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Imsub.3.String.Text
 msgid  "Complex number 1"
@@ -1333,7 +1333,7 @@ msgstr "第一个复数"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Imsub.4.String.Text
 msgid  "Complex number 2"
-msgstr "第二个复数"
+msgstr "inumber_2"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Imsub.5.String.Text
 msgid  "Complex number 2"
@@ -1517,7 +1517,7 @@ msgstr "结果的度量单位。"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Amordegrc.1.String.Text
 msgid  "Returns the prorated linear depreciation of an asset for each accounting period"
-msgstr ""
+msgstr "计算一个会计周期内按比例分配的线性折旧金额。"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Amordegrc.2.String.Text
 msgid  "Cost"
@@ -1577,7 +1577,7 @@ msgstr "要使用的年天数的基数。"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Amorlinc.1.String.Text
 msgid  "Returns the prorated linear depreciation of an asset for each accounting period"
-msgstr ""
+msgstr "计算一个会计周期内按比例分配的线性折旧金额。"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Amorlinc.2.String.Text
 msgid  "Cost"
@@ -1661,7 +1661,7 @@ msgstr "settlement"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Accrint.7.String.Text
 msgid  "The settlement"
-msgstr "有价证券的交易日期。"
+msgstr "有价证券的交易日期"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Accrint.8.String.Text
 msgid  "Rate"
@@ -1669,7 +1669,7 @@ msgstr "rate"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Accrint.9.String.Text
 msgid  "The rate"
-msgstr "有价证券的年息票利率"
+msgstr "利率"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Accrint.10.String.Text
 msgid  "Par"
@@ -1693,11 +1693,11 @@ msgstr "basis"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Accrint.15.String.Text
 msgid  "The basis"
-msgstr "要使用的年天数的基数"
+msgstr "基数"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Accrintm.1.String.Text
 msgid  "Returns the accrued interest for a security that pays interest at maturity"
-msgstr ""
+msgstr "计算某一到期的有价证券的利息(单股利息)。"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Accrintm.2.String.Text
 msgid  "Issue"
@@ -1705,7 +1705,7 @@ msgstr "issue"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Accrintm.3.String.Text
 msgid  "The issue date"
-msgstr "有价证券的发行日期"
+msgstr "发行日期"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Accrintm.4.String.Text
 msgid  "Settlement"
@@ -1713,7 +1713,7 @@ msgstr "settlement"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Accrintm.5.String.Text
 msgid  "The settlement"
-msgstr "国库券的交易日期"
+msgstr "有价证券的交易日期"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Accrintm.6.String.Text
 msgid  "Rate"
@@ -1721,7 +1721,7 @@ msgstr "rate"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Accrintm.7.String.Text
 msgid  "The rate"
-msgstr "利息"
+msgstr "有价证券的年息票利率"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Accrintm.8.String.Text
 msgid  "Par"
@@ -1737,7 +1737,7 @@ msgstr "basis"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Accrintm.11.String.Text
 msgid  "The basis"
-msgstr "年天数的基数"
+msgstr "要使用的年天数的基数"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Received.1.String.Text
 msgid  "Returns the amount paid out at maturity for a fully invested security"
@@ -1749,7 +1749,7 @@ msgstr "settlement"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Received.3.String.Text
 msgid  "The settlement"
-msgstr "国库券的交易日期"
+msgstr "有价证券的交易日期"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Received.4.String.Text
 msgid  "Maturity"
@@ -1773,7 +1773,7 @@ msgstr "discount"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Received.9.String.Text
 msgid  "The discount"
-msgstr "有价证券的贴现率"
+msgstr "贴现率"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Received.10.String.Text
 msgid  "Basis"
@@ -1781,7 +1781,7 @@ msgstr "basis"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Received.11.String.Text
 msgid  "The basis"
-msgstr "使用的年天数的基数"
+msgstr "年天数的基数"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Disc.1.String.Text
 msgid  "Returns the discount rate for a security"
@@ -1793,7 +1793,7 @@ msgstr "settlement"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Disc.3.String.Text
 msgid  "The settlement"
-msgstr "国库券的交易日期"
+msgstr "有价证券的交易日期"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Disc.4.String.Text
 msgid  "Maturity"
@@ -1809,7 +1809,7 @@ msgstr "price"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Disc.7.String.Text
 msgid  "The price"
-msgstr "有价证券的实际价格。"
+msgstr "价格"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Disc.8.String.Text
 msgid  "Redemption"
@@ -1817,7 +1817,7 @@ msgstr "redemption"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Disc.9.String.Text
 msgid  "The redemption value"
-msgstr "有价证券的偿还价格。"
+msgstr "偿还价格"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Disc.10.String.Text
 msgid  "Basis"
@@ -1829,7 +1829,7 @@ msgstr "年天数的基数"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Duration.1.String.Text
 msgid  "Returns the annual Macaulay duration of a security with periodic interest payments"
-msgstr ""
+msgstr "计算某一定期付息的有价证券的 Macaulay 期限。"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Duration.2.String.Text
 msgid  "Settlement"
@@ -1853,7 +1853,7 @@ msgstr "coupon"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Duration.7.String.Text
 msgid  "The coupon rate"
-msgstr "某一有价证券的年息票利率。"
+msgstr "有价证券的年息票利率"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Duration.8.String.Text
 msgid  "Yield"
@@ -1861,7 +1861,7 @@ msgstr "yield"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Duration.9.String.Text
 msgid  "The yield"
-msgstr "是某一有价证券的年收益率。"
+msgstr "收益率"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Duration.10.String.Text
 msgid  "Frequency"
@@ -1901,7 +1901,7 @@ msgstr "周期"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Cumprinc.1.String.Text
 msgid  "Returns the cumulative principal on a loan to be paid between two periods"
-msgstr ""
+msgstr "计算某一贷款在两个周期之间要累计偿还的本金数额。"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Cumprinc.2.String.Text
 msgid  "Rate"
@@ -1909,7 +1909,7 @@ msgstr "rate"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Cumprinc.3.String.Text
 msgid  "The rate"
-msgstr "有价证券的利率"
+msgstr "利息"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Cumprinc.4.String.Text
 msgid  "Nper"
@@ -1917,7 +1917,7 @@ msgstr "nper"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Cumprinc.5.String.Text
 msgid  "Number of payment periods"
-msgstr "支付周期数。"
+msgstr "支付周期数"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Cumprinc.6.String.Text
 msgid  "Pv"
@@ -1961,7 +1961,7 @@ msgstr "rate"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Cumipmt.3.String.Text
 msgid  "The rate"
-msgstr "有价证券的利率。"
+msgstr "利息"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Cumipmt.4.String.Text
 msgid  "Nper"
@@ -2005,7 +2005,7 @@ msgstr "到期类型"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Price.1.String.Text
 msgid  "Returns the price per 100 currency units face value of a security that pays periodic interest"
-msgstr ""
+msgstr "计算某一定期付息的面额为100元的有价证券的价格。"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Price.2.String.Text
 msgid  "Settlement"
@@ -2029,7 +2029,7 @@ msgstr "rate"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Price.7.String.Text
 msgid  "The rate"
-msgstr "有价证券的利率。"
+msgstr "有价证券的利率"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Price.8.String.Text
 msgid  "Yield"
@@ -2037,7 +2037,7 @@ msgstr "yield"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Price.9.String.Text
 msgid  "The yield"
-msgstr "有价证券的年收益率。"
+msgstr "是某一有价证券的年收益率。"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Price.10.String.Text
 msgid  "Redemption"
@@ -2045,7 +2045,7 @@ msgstr "redemption"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Price.11.String.Text
 msgid  "The redemption value"
-msgstr "偿还价格"
+msgstr "有价证券的偿还价格。"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Price.12.String.Text
 msgid  "Frequency"
@@ -2065,7 +2065,7 @@ msgstr "年天数的基数"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Pricedisc.1.String.Text
 msgid  "Returns the price per 100 currency units face value of a discounted security"
-msgstr ""
+msgstr "计算某一不计算利息的、面额为100元的有价证券的价格。"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Pricedisc.2.String.Text
 msgid  "Settlement"
@@ -2097,7 +2097,7 @@ msgstr "redemption"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Pricedisc.9.String.Text
 msgid  "The redemption value"
-msgstr "有价证券的偿还价格"
+msgstr "有价证券的偿还价格。"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Pricedisc.10.String.Text
 msgid  "Basis"
@@ -2109,7 +2109,7 @@ msgstr "年天数的基数"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Pricemat.1.String.Text
 msgid  "Returns the price per 100 currency units face value of a security that pays interest at maturity"
-msgstr ""
+msgstr "计算某一到期付息的面额为100元的有价证券的价格。"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Pricemat.2.String.Text
 msgid  "Settlement"
@@ -2133,7 +2133,7 @@ msgstr "issue"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Pricemat.7.String.Text
 msgid  "The issue date"
-msgstr "有价证券的发行日期。"
+msgstr "有价证券的发行日期"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Pricemat.8.String.Text
 msgid  "Rate"
@@ -2141,7 +2141,7 @@ msgstr "rate"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Pricemat.9.String.Text
 msgid  "The rate"
-msgstr "是某一有价证券的年息票利率。"
+msgstr "有价证券的利率。"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Pricemat.10.String.Text
 msgid  "Yield"
@@ -2149,7 +2149,7 @@ msgstr "yield"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Pricemat.11.String.Text
 msgid  "The yield"
-msgstr "有价证券的收益率。"
+msgstr "有价证券的年收益率。"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Pricemat.12.String.Text
 msgid  "Basis"
@@ -2161,7 +2161,7 @@ msgstr "年天数的基数"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Mduration.1.String.Text
 msgid  "Returns the Macaulay modified duration for a security with an assumed par value of 100 currency units"
-msgstr ""
+msgstr "计算某一面额为100元的有价证券的 Macauley 修正期限。"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Mduration.2.String.Text
 msgid  "Settlement"
@@ -2193,7 +2193,7 @@ msgstr "yield"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Mduration.9.String.Text
 msgid  "The yield"
-msgstr "是某一有价证券的年收益率。"
+msgstr "有价证券的收益率。"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Mduration.10.String.Text
 msgid  "Frequency"
@@ -2233,7 +2233,7 @@ msgstr "周期"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Dollarfr.1.String.Text
 msgid  "Converts a price expressed as a decimal into a price expressed as a fraction"
-msgstr ""
+msgstr "将某一用小数表示的价格转换成混合式的分数表示的价格。"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Dollarfr.2.String.Text
 msgid  "Decimal dollar"
@@ -2253,7 +2253,7 @@ msgstr "分母"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Dollarde.1.String.Text
 msgid  "Converts a price expressed as a fraction into a price expressed as a decimal"
-msgstr ""
+msgstr "将某一按分数表示的价格转换成小数表示的价格。"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Dollarde.2.String.Text
 msgid  "Fractional dollar"
@@ -2297,7 +2297,7 @@ msgstr "rate"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Yield.7.String.Text
 msgid  "The rate"
-msgstr "利率"
+msgstr "有价证券的利率"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Yield.8.String.Text
 msgid  "Price"
@@ -2305,7 +2305,7 @@ msgstr "price"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Yield.9.String.Text
 msgid  "The price"
-msgstr "有价证券的价格。"
+msgstr "有价证券的实际价格。"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Yield.10.String.Text
 msgid  "Redemption"
@@ -2313,7 +2313,7 @@ msgstr "redemption"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Yield.11.String.Text
 msgid  "The redemption value"
-msgstr "有价证券的偿还价格"
+msgstr "有价证券的偿还价格。"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Yield.12.String.Text
 msgid  "Frequency"
@@ -2357,7 +2357,7 @@ msgstr "price"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Yielddisc.7.String.Text
 msgid  "The price"
-msgstr "国库券的实际价格"
+msgstr "有价证券的价格。"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Yielddisc.8.String.Text
 msgid  "Redemption"
@@ -2401,7 +2401,7 @@ msgstr "issue"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Yieldmat.7.String.Text
 msgid  "The issue date"
-msgstr "有价证券的发行日期"
+msgstr "有价证券的发行日期。"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Yieldmat.8.String.Text
 msgid  "Rate"
@@ -2409,7 +2409,7 @@ msgstr "rate"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Yieldmat.9.String.Text
 msgid  "The rate"
-msgstr "一组现金流的贴现率。"
+msgstr "有价证券的利率。"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Yieldmat.10.String.Text
 msgid  "Price"
@@ -2417,7 +2417,7 @@ msgstr "price"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Yieldmat.11.String.Text
 msgid  "The price"
-msgstr "是某一面额为100元的有价证券的价格。"
+msgstr "国库券的实际价格"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Yieldmat.12.String.Text
 msgid  "Basis"
@@ -2509,11 +2509,11 @@ msgstr "price"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Tbillyield.7.String.Text
 msgid  "The price"
-msgstr "有价证券的实际价格"
+msgstr "是某一面额为100元的有价证券的价格。"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Oddfprice.1.String.Text
 msgid  "Returns the price per $100 face value of a security with an odd first period"
-msgstr ""
+msgstr "计算每一面额为100元且首期付息日不固定的有价证券的实际价格。"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Oddfprice.2.String.Text
 msgid  "Settlement"
@@ -2545,7 +2545,7 @@ msgstr "first_coupon"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Oddfprice.9.String.Text
 msgid  "The first coupon date"
-msgstr "有价证券的首期息票的日期"
+msgstr "首期利息支付日"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Oddfprice.10.String.Text
 msgid  "Rate"
@@ -2553,7 +2553,7 @@ msgstr "rate"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Oddfprice.11.String.Text
 msgid  "The rate"
-msgstr "利率"
+msgstr "是某一有价证券的年息票利率。"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Oddfprice.12.String.Text
 msgid  "Yield"
@@ -2665,7 +2665,7 @@ msgstr "年天数的基数"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Oddlprice.1.String.Text
 msgid  "Returns the price per $100 face value of a security with an odd last period"
-msgstr ""
+msgstr "计算每一面额为100元且末期付息日不固定的有价证券的实际价格。"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Oddlprice.2.String.Text
 msgid  "Settlement"
@@ -2713,7 +2713,7 @@ msgstr "redemption"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Oddlprice.13.String.Text
 msgid  "The redemption value"
-msgstr "有价证券的偿还价格"
+msgstr "偿还价格"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Oddlprice.14.String.Text
 msgid  "Frequency"
@@ -2801,7 +2801,7 @@ msgstr "年天数的基数"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Xirr.1.String.Text
 msgid  "Returns the internal rate of return for a non-periodic schedule of payments"
-msgstr ""
+msgstr "计算某一不定期的现金流的内部收益率。"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Xirr.2.String.Text
 msgid  "Values"
@@ -2937,7 +2937,7 @@ msgstr "年天数的基数"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Coupdays.1.String.Text
 msgid  "Returns the number of days in the coupon period containing the settlement date"
-msgstr ""
+msgstr "计算某一有价证券的包含成交日在内的付息期的天数。"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Coupdays.2.String.Text
 msgid  "Settlement"
@@ -2973,7 +2973,7 @@ msgstr "年天数的基数"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Coupdaysnc.1.String.Text
 msgid  "Returns the number of days from the settlement date to the next coupon date"
-msgstr ""
+msgstr "计算某一有价证券成交日至下一个付息日的天数。"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Coupdaysnc.2.String.Text
 msgid  "Settlement"
@@ -3009,7 +3009,7 @@ msgstr "使用的年天数的基数"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Coupdaybs.1.String.Text
 msgid  "Returns the number of days from the beginning of the coupon period to the settlement date"
-msgstr ""
+msgstr "计算某一有价证券从成交日开始至付息日的天数。"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Coupdaybs.2.String.Text
 msgid  "Settlement"
@@ -3081,7 +3081,7 @@ msgstr "年天数的基数"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Coupnum.1.String.Text
 msgid  "Returns the number of coupons payable between the settlement and maturity dates"
-msgstr ""
+msgstr "计算某一有价证券从成交日起至到期日期的付息次数。"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Coupnum.2.String.Text
 msgid  "Settlement"
@@ -3117,7 +3117,7 @@ msgstr "年天数的基数"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Fvschedule.1.String.Text
 msgid  "Returns the future value of the initial principal after a series of compound interest rates are applied"
-msgstr ""
+msgstr "计算一系列复利各不相同的本金的未来值。"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Fvschedule.2.String.Text
 msgid  "Principal"
@@ -3161,7 +3161,7 @@ msgstr "type"
 
 #: source/datefunc/datefunc.src#RID_DATE_FUNCTION_DESCRIPTIONS.DATE_FUNCDESC_DiffWeeks.7.String.Text
 msgid  "Type of calculation: Type=0 means the time interval, Type=1 means calendar weeks."
-msgstr ""
+msgstr "计算类型：Type=0 表示该周期内包含的星期数，Type=1 表示星期序列数。"
 
 #: source/datefunc/datefunc.src#RID_DATE_FUNCTION_DESCRIPTIONS.DATE_FUNCDESC_DiffMonths.1.String.Text
 msgid  "Determines the number of months in a specific period."
@@ -3189,7 +3189,7 @@ msgstr "type"
 
 #: source/datefunc/datefunc.src#RID_DATE_FUNCTION_DESCRIPTIONS.DATE_FUNCDESC_DiffMonths.7.String.Text
 msgid  "Type of calculation: Type=0 means the time interval, Type=1 means calendar months."
-msgstr ""
+msgstr "计算类型：Type=0 表示该时期内所包含的月份数，Type=1 表示月序列数。"
 
 #: source/datefunc/datefunc.src#RID_DATE_FUNCTION_DESCRIPTIONS.DATE_FUNCDESC_DiffYears.1.String.Text
 msgid  "Calculates the number of years in a specific period."
@@ -3217,11 +3217,11 @@ msgstr "type"
 
 #: source/datefunc/datefunc.src#RID_DATE_FUNCTION_DESCRIPTIONS.DATE_FUNCDESC_DiffYears.7.String.Text
 msgid  "Type of calculation: Type=0 means the time interval, Type=1 means calendar years."
-msgstr ""
+msgstr "计算类型：Type=0 表示时间间隔，Type=1 表示日历年份数。"
 
 #: source/datefunc/datefunc.src#RID_DATE_FUNCTION_DESCRIPTIONS.DATE_FUNCDESC_IsLeapYear.1.String.Text
 msgid  "Returns 1 (TRUE) if the date is a day of a leap year, otherwise 0 (FALSE)."
-msgstr ""
+msgstr "反馈 1 (TRUE)，若该日期是闰年内的一个日期，否则反馈 0 (FALSE)。"
 
 #: source/datefunc/datefunc.src#RID_DATE_FUNCTION_DESCRIPTIONS.DATE_FUNCDESC_IsLeapYear.2.String.Text
 msgid  "Date"
@@ -3233,7 +3233,7 @@ msgstr "指定的一年中的任意一天。"
 
 #: source/datefunc/datefunc.src#RID_DATE_FUNCTION_DESCRIPTIONS.DATE_FUNCDESC_DaysInMonth.1.String.Text
 msgid  "Returns the number of days of the month in which the date entered occurs"
-msgstr ""
+msgstr "反馈指定的日期所在月份的天数。"
 
 #: source/datefunc/datefunc.src#RID_DATE_FUNCTION_DESCRIPTIONS.DATE_FUNCDESC_DaysInMonth.2.String.Text
 msgid  "Date"
@@ -3245,7 +3245,7 @@ msgstr "指定的月份中的任意一天。"
 
 #: source/datefunc/datefunc.src#RID_DATE_FUNCTION_DESCRIPTIONS.DATE_FUNCDESC_DaysInYear.1.String.Text
 msgid  "Returns the number of days of the year in which the date entered occurs."
-msgstr ""
+msgstr "反馈指定的日期所在年份的天数。"
 
 #: source/datefunc/datefunc.src#RID_DATE_FUNCTION_DESCRIPTIONS.DATE_FUNCDESC_DaysInYear.2.String.Text
 msgid  "Date"
@@ -3257,7 +3257,7 @@ msgstr "指定的一年中的任意一天。"
 
 #: source/datefunc/datefunc.src#RID_DATE_FUNCTION_DESCRIPTIONS.DATE_FUNCDESC_WeeksInYear.1.String.Text
 msgid  "Returns the number of weeks of the year in which the date entered occurs"
-msgstr ""
+msgstr "反馈指定的日期所在年份具有的星期数。"
 
 #: source/datefunc/datefunc.src#RID_DATE_FUNCTION_DESCRIPTIONS.DATE_FUNCDESC_WeeksInYear.2.String.Text
 msgid  "Date"

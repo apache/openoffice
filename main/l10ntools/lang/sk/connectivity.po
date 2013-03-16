@@ -119,6 +119,18 @@ msgstr "Adresár Thunderbird"
 msgid  "LDAP Address Book"
 msgstr "Adresár LDAP"
 
+#: source/drivers/mozab/mozab2.xcu#.Drivers.Installed.sdbc:address:mozilla:.DriverTypeDisplayName
+msgid  "SeaMonkey Address Book"
+msgstr "Adresár SeaMonkey"
+
+#: source/drivers/mozab/mozab2.xcu#.Drivers.Installed.sdbc:address:thunderbird:.DriverTypeDisplayName
+msgid  "Thunderbird Address Book"
+msgstr "Adresár Thunderbird"
+
+#: source/drivers/mozab/mozab2.xcu#.Drivers.Installed.sdbc:address:ldap:*.DriverTypeDisplayName
+msgid  "LDAP Address Book"
+msgstr "Adresár LDAP"
+
 #: source/drivers/mysql/mysql.xcu#.Drivers.Installed.sdbc:mysql:jdbc:*.DriverTypeDisplayName
 msgid  "MySQL (JDBC)"
 msgstr "MySQL (JDBC)"
@@ -161,11 +173,11 @@ msgstr "Nieje možné vytvárať nové adresára pokým je spustená Mozilla."
 
 #: source/resource/conn_shared_res.src#STR_COULD_NOT_RETRIEVE_AB_ENTRY.String.Text
 msgid  "An address book entry could not be retrieved, an unknown error occurred."
-msgstr ""
+msgstr "Nemohla byť získaná položka adresára, objavila sa neznáma chyba."
 
 #: source/resource/conn_shared_res.src#STR_COULD_NOT_GET_DIRECTORY_NAME.String.Text
 msgid  "An address book directory name could not be retrieved, an unknown error occurred."
-msgstr ""
+msgstr "Nemohol byť získaný názov podadresára v adresári, objavila sa neznáma chyba."
 
 #: source/resource/conn_shared_res.src#STR_TIMEOUT_WAITING.String.Text
 msgid  "Timed out while waiting for the result."
@@ -177,11 +189,11 @@ msgstr "Počas vykonávania dotazu sa objavila chyba."
 
 #: source/resource/conn_shared_res.src#STR_MOZILLA_IS_RUNNIG_NO_CHANGES.String.Text
 msgid  "You can't make any changes to mozilla address book when mozilla is running."
-msgstr ""
+msgstr "Nemôžete upravovať mozilla adresár, pokým je spustený program mozilla."
 
 #: source/resource/conn_shared_res.src#STR_FOREIGN_PROCESS_CHANGED_AB.String.Text
 msgid  "Mozilla Address Book has been changed out of this process, we can't modify it in this condition."
-msgstr ""
+msgstr "Adresár Mozilla Address Book bol zmenený mimo tohto procesu, v tomto stave sa nedá upravovať."
 
 #: source/resource/conn_shared_res.src#STR_CANT_FIND_ROW.String.Text
 msgid  "Can't find the requested row."
@@ -233,7 +245,7 @@ msgstr "Nemôže byť vytvorený nový riadok."
 
 #: source/resource/conn_shared_res.src#STR_QUERY_INVALID_IS_NULL_COLUMN.String.Text
 msgid  "The query can not be executed. The 'IS NULL' can only be used with a column name."
-msgstr ""
+msgstr "Dotaz nemôže byť vykonaný. 'IS NULL' môže byť použité len s názvom stĺpca."
 
 #: source/resource/conn_shared_res.src#STR_ILLEGAL_MOVEMENT.String.Text
 msgid  "Illegal cursor movement occured."
@@ -241,7 +253,7 @@ msgstr "Objavil sa zakázaný pohyb kurzora."
 
 #: source/resource/conn_shared_res.src#STR_COMMIT_ROW.String.Text
 msgid  "Please commit row '$position$' before update rows or insert new rows."
-msgstr ""
+msgstr "Prosím pošlite zmeny v riadku '$position$' pred aktualizáciou riadkov alebo vkladaním nových riadkov."
 
 #: source/resource/conn_shared_res.src#STR_INVALID_ROW_UPDATE.String.Text
 msgid  "The update call can not be executed. The row is invalid."
@@ -268,12 +280,12 @@ msgid  "It doesn't exist a connection to the database."
 msgstr "Spojenie na databázu neexistuje."
 
 #: source/resource/conn_shared_res.src#STR_WRONG_PARAM_INDEX.String.Text
-msgid  "You tried to set a parameter at position '$pos$' but there is/are only '$count$' parameter(s) allowed. One reason may be that the property "ParameterNameSubstitution" is not set to TRUE in the data source."
-msgstr ""
+msgid  "You tried to set a parameter at position '$pos$' but there is/are only '$count$' parameter(s) allowed. One reason may be that the property \"ParameterNameSubstitution\" is not set to TRUE in the data source."
+msgstr "Pokúsili ste sa nastaviť parameter na pozícii '$pos$', ale je možné nastaviť len '$count$' parametru(ov). Jenou z príčin môže byť že vlastnosť \"ParameterNameSubstitution\" nie je nastavená na TRUE v zdroji dát."
 
 #: source/resource/conn_shared_res.src#STR_INPUTSTREAM_WRONG_LEN.String.Text
 msgid  "End of InputStream reached before satisfying length specified when InputStream was set."
-msgstr ""
+msgstr "Bol dosiahnutý koniec InputStream pred uspokojením dĺžky uvedenej v nastavení InputStream."
 
 #: source/resource/conn_shared_res.src#STR_NO_INPUTSTREAM.String.Text
 msgid  "The input stream was not set."
@@ -313,7 +325,7 @@ msgstr "Ovládač nepodporuje funkciu '$functionname$'."
 
 #: source/resource/conn_shared_res.src#STR_UNSUPPORTED_FEATURE.String.Text
 msgid  "The driver does not support the functionality for '$featurename$'. It is not implemented."
-msgstr ""
+msgstr "Ovládač nepodporuje funkcionalitu pre '$featurename$'. Nie je implementovaná."
 
 #: source/resource/conn_shared_res.src#STR_FORMULA_WRONG.String.Text
 msgid  "The formula for TypeInfoSettings is wrong!"
@@ -321,11 +333,11 @@ msgstr "Vzorec pre TypeInfoSettings je nesprávny!"
 
 #: source/resource/conn_shared_res.src#STR_STRING_LENGTH_EXCEEDED.String.Text
 msgid  "The string '$string$' exceeds the maximum length of $maxlen$ characters when converted to the target character set '$charset$'."
-msgstr ""
+msgstr "Po prevode do cieľovej znakovej sady '$charset$' reťazec '$string$' presahuje maximálnu dĺžku $maxlen$ znakov."
 
 #: source/resource/conn_shared_res.src#STR_CANNOT_CONVERT_STRING.String.Text
 msgid  "The string '$string$' cannot be converted using the encoding '$charset$'."
-msgstr ""
+msgstr "Reťazec '$string$' nemôže byť prevedený s použitím kódovania '$charset$'."
 
 #: source/resource/conn_shared_res.src#STR_URI_SYNTAX_ERROR.String.Text
 msgid  "The connection URL is invalid."
@@ -341,11 +353,11 @@ msgstr "Dotaz nemôže byť vykonaný. Operátor je príliš komplexný."
 
 #: source/resource/conn_shared_res.src#STR_QUERY_INVALID_LIKE_COLUMN.String.Text
 msgid  "The query can not be executed. You cannot use 'LIKE' with columns of this type."
-msgstr ""
+msgstr "Dotaz nemôže byť vykonaný. Nie je možné použiť 'LIKE' pri stĺpcoch tohto typu."
 
 #: source/resource/conn_shared_res.src#STR_QUERY_INVALID_LIKE_STRING.String.Text
 msgid  "The query can not be executed. 'LIKE' can be used with a string argument only."
-msgstr ""
+msgstr "Dotaz nemôže byť vykonaný. 'LIKE' môže byť použité len s textovým argumentom."
 
 #: source/resource/conn_shared_res.src#STR_QUERY_NOT_LIKE_TOO_COMPLEX.String.Text
 msgid  "The query can not be executed. The 'NOT LIKE' condition is too complex."
@@ -353,11 +365,11 @@ msgstr "Dotaz nemôže byť vykonaný. Podmienka 'NOT LIKE' je príliš komplexn
 
 #: source/resource/conn_shared_res.src#STR_QUERY_LIKE_WILDCARD.String.Text
 msgid  "The query can not be executed. The 'LIKE' condition contains wildcard in the middle."
-msgstr ""
+msgstr "Dotaz nemôže byť vykonaný. Podmienka 'LIKE' obsahuje v strede zástupný znak."
 
 #: source/resource/conn_shared_res.src#STR_QUERY_LIKE_WILDCARD_MANY.String.Text
 msgid  "The query can not be executed. The 'LIKE' condition contains too many wildcards."
-msgstr ""
+msgstr "Dotaz nemôže byť vykonaný. Podmienka 'LIKE' obsahuje príliš veľa zástupných znakov."
 
 #: source/resource/conn_shared_res.src#STR_INVALID_COLUMNNAME.String.Text
 msgid  "The column name '$columnname$' is not valid."
@@ -377,7 +389,7 @@ msgstr "Súbor $filename$ nemohol byť načítaný."
 
 #: source/resource/conn_shared_res.src#STR_LOAD_FILE_ERROR_MESSAGE.String.Text
 msgid  "The attempt to load the file resulted in the following error message ($exception_type$):\n\n$error_message$"
-msgstr ""
+msgstr "Pokus o načítanie súboru viedol k nasledujúcej chybovej správe ($exception_type$):\n\n$error_message$"
 
 #: source/resource/conn_shared_res.src#STR_TYPE_NOT_CONVERT.String.Text
 msgid  "The type could not be converted."
@@ -417,15 +429,15 @@ msgstr "Nebolo možné vytvoriť pohľad: neexistuje príkazový objekt."
 
 #: source/resource/conn_shared_res.src#STR_NO_CONNECTION.String.Text
 msgid  "The connection could not be created. May be the necessary data provider is not installed."
-msgstr ""
+msgstr "Spojenie nemohlo byť vytvorené. Možno nie je nainštalovaný potrebný poskytovateľ dát."
 
 #: source/resource/conn_shared_res.src#STR_COULD_NOT_DELETE_INDEX.String.Text
 msgid  "The index could not be deleted. An unknown error while accessing the file system occured."
-msgstr ""
+msgstr "Index nemohol byť zmazaný. Pri pristupovaní k súborovému systému sa vyskytla neznáma chyba."
 
 #: source/resource/conn_shared_res.src#STR_ONL_ONE_COLUMN_PER_INDEX.String.Text
 msgid  "The index could not be created. Only one column per index is allowed."
-msgstr ""
+msgstr "Nemohol byť vytvorený index. Je povolený len jeden stĺpec pre každý index."
 
 #: source/resource/conn_shared_res.src#STR_COULD_NOT_CREATE_INDEX_NOT_UNIQUE.String.Text
 msgid  "The index could not be created. The values are not unique."
@@ -437,11 +449,11 @@ msgstr "Nemohol byť vytvorený index. Objavila sa neznáma chyba."
 
 #: source/resource/conn_shared_res.src#STR_COULD_NOT_CREATE_INDEX_NAME.String.Text
 msgid  "The index could not be created. The file '$filename$' is used by an other index."
-msgstr ""
+msgstr "Nemohol byť vytvorený index. Súbor '$filename$' je používaný iným indexom."
 
 #: source/resource/conn_shared_res.src#STR_COULD_NOT_CREATE_INDEX_KEYSIZE.String.Text
 msgid  "The index could not be created. The size of the chosen column is to big."
-msgstr ""
+msgstr "Nemohol byť vytvorený index. Veľkosť zvoleného stĺpca je príliš veľká."
 
 #: source/resource/conn_shared_res.src#STR_SQL_NAME_ERROR.String.Text
 msgid  "The name '$name$' doesn't match SQL naming constraints."
@@ -472,28 +484,28 @@ msgid  "Duplicate value found in column '$columnname$'."
 msgstr "V stĺpci '$columnname$' bola nájdená duplicitná hodnota."
 
 #: source/resource/conn_shared_res.src#STR_INVALID_COLUMN_DECIMAL_VALUE.String.Text
-msgid  "The '$columnname$' column has been defined as a "Decimal" type, the max. length is $precision$ characters (with $scale$ decimal places).\n\nThe specified value "$value$ is longer than the number of digits allowed."
-msgstr ""
+msgid  "The '$columnname$' column has been defined as a \"Decimal\" type, the max. length is $precision$ characters (with $scale$ decimal places).\n\nThe specified value \"$value$ is longer than the number of digits allowed."
+msgstr "Stĺpec '$columnname$' bol definovaný ako \"Desatinný\" typ, pričom maximálna dĺžka je $precision$ znakov (s $scale$ desatinnými miestami).\n\nZadaná hodnota \"$value$ je dlhšia ako povolený počet číslic."
 
 #: source/resource/conn_shared_res.src#STR_COLUMN_NOT_ALTERABLE.String.Text
 msgid  "The column '$columnname$' could not be altered. May be the file system is write protected."
-msgstr ""
+msgstr "Stĺpec '$columnname$' nemohol byť zmenený. Je možné, že súborový systém je chránený proti zápisu."
 
 #: source/resource/conn_shared_res.src#STR_INVALID_COLUMN_VALUE.String.Text
 msgid  "The column '$columnname$' could not be updated. The value is invalid for that column."
-msgstr ""
+msgstr "Stĺpec '$columnname$' nemohol byť aktualizovaný. Hodnota je neplatná pre tento stĺpec."
 
 #: source/resource/conn_shared_res.src#STR_COLUMN_NOT_ADDABLE.String.Text
 msgid  "The column '$columnname$' could not be added. May be the file system is write protected."
-msgstr ""
+msgstr "Stĺpec '$columnname$' nemohol byť pridaný. Je možné, že súborový systém je chránený proti zápisu."
 
 #: source/resource/conn_shared_res.src#STR_COLUMN_NOT_DROP.String.Text
 msgid  "The column at position '$position$' could not be dropped. May be the file system is write protected."
-msgstr ""
+msgstr "Stĺpec na pozícii '$position$' nemohol byť zahodený. Je možné, že súborový systém je chránený proti zápisu."
 
 #: source/resource/conn_shared_res.src#STR_TABLE_NOT_DROP.String.Text
 msgid  "The table '$tablename$' could not be dropped. May be the file system is write protected."
-msgstr ""
+msgstr "Tabuľka '$tablename$' nemohla byť zahodená. Je možné, že súborový systém je chránený proti zápisu."
 
 #: source/resource/conn_shared_res.src#STR_COULD_NOT_ALTER_TABLE.String.Text
 msgid  "The table could not be altered."
@@ -512,8 +524,8 @@ msgid  "Can only sort by table columns."
 msgstr "Tabuľka sa môže zoradiť len podľa stĺpcov."
 
 #: source/resource/conn_shared_res.src#STR_QUERY_COMPLEX_COUNT.String.Text
-msgid  "The query can not be executed. It is too complex. Only "COUNT(*)" is supported."
-msgstr ""
+msgid  "The query can not be executed. It is too complex. Only \"COUNT(*)\" is supported."
+msgstr "Dotaz nemôže byť vykonaný. Je príliš komplexný. Podporované je len \"COUNT(*)\"."
 
 #: source/resource/conn_shared_res.src#STR_QUERY_INVALID_BETWEEN.String.Text
 msgid  "The query can not be executed. The 'BETWEEN' arguments are not correct."
@@ -528,8 +540,8 @@ msgid  "The table can not be changed. It is read only."
 msgstr "Tabuľka nemôže byť zmenená. Je iba na čítanie."
 
 #: source/resource/conn_shared_res.src#STR_DELETE_ROW.String.Text
-msgid  "The row could not be deleted. The option "Display inactive records" is set."
-msgstr ""
+msgid  "The row could not be deleted. The option \"Display inactive records\" is set."
+msgstr "Riadok nemohol byť zmazaný. Je nastavená možnosť \"Zobraziť neaktívne záznamy\"."
 
 #: source/resource/conn_shared_res.src#STR_ROW_ALREADY_DELETED.String.Text
 msgid  "The row could not be deleted. It is already deleted."
@@ -589,15 +601,15 @@ msgstr "Nebola nájdená vhodná inštalácia KDE."
 
 #: source/resource/conn_shared_res.src#STR_KDE_VERSION_TOO_OLD.String.Text
 msgid  "KDE version $major$.$minor$ or higher is required to access the KDE Address Book."
-msgstr ""
+msgstr "Pre prístup ku Adresáru KDE je potrebná verzia KDE $major$.$minor$ alebo vyššia."
 
 #: source/resource/conn_shared_res.src#STR_KDE_VERSION_TOO_NEW.String.Text
 msgid  "The found KDE version is too new. Only KDE up to version $major$.$minor$ is known to work with this product.\n"
-msgstr ""
+msgstr "Nájdená verzia KDE je príliš nová. Len verzie KDE do $major$.$minor$ môžu fungovať s týmto produktom.\n"
 
 #: source/resource/conn_shared_res.src#STR_KDE_VERSION_TOO_NEW_WORK_AROUND.String.Text
 msgid  "If you are sure that your KDE version works, you might execute the following Basic macro to disable this version check:\n\n"
-msgstr ""
+msgstr "Ak ste si istý, že vaša verzia KDE funguje, môžete spustiť nasledujúce makro BASICu pre vypnutie overovania tejto verzie:\n\n"
 
 #: source/resource/conn_shared_res.src#STR_PARA_ONLY_PREPARED.String.Text
 msgid  "Parameters can appear only in prepared statements."
@@ -613,19 +625,19 @@ msgstr "Nebola nájdená žiadna vhodná inštalácia Mac OS."
 
 #: source/resource/conn_shared_res.src#STR_NO_DISK_SPACE.String.Text
 msgid  "The database file '$filename$' could not be created. Please check your disk space."
-msgstr ""
+msgstr "Databázový súbor '$filename$' nemohol byť vytvorený. Prosím skontrolujte miesto na disku."
 
 #: source/resource/conn_shared_res.src#STR_COMMAND_NOT_FOUND.String.Text
 msgid  "The database '$databasename$' could not be started because the command '$progname$' could not be executed."
-msgstr ""
+msgstr "Databáza '$databasename$' nemohla byť spustená pretože program '$progname$' nemohol byť vykonaný."
 
 #: source/resource/conn_shared_res.src#STR_DATABASE_NEEDS_CONVERTING.String.Text
 msgid  "The current database need to be converted. Please insert control user  and password."
-msgstr ""
+msgstr "Aktuálna databáza musí byť prevedená. Prosím zadajte riadiaceho používateľa  a heslo."
 
 #: source/resource/conn_shared_res.src#STR_USER_NO_DELETE.String.Text
 msgid  "This user couldn't be deleted. Otherwise the database stays in a inconsistent state."
-msgstr ""
+msgstr "Tento používateľ nemohol byť zmazaný. V opačnom prípade by databáza zostala v nekonzistentnom stave."
 
 #: source/resource/conn_shared_res.src#STR_NO_STROAGE.String.Text
 msgid  "The connection can not be established. No storage or URL was given."
@@ -633,7 +645,7 @@ msgstr "Spojenie nemôže byť nadviazané. Nebolo zadané úložné miesto aleb
 
 #: source/resource/conn_shared_res.src#STR_INVALID_FILE_URL.String.Text
 msgid  "The given URL contains no valid local file system path. Please check the location of your database file."
-msgstr ""
+msgstr "Zadaná URL neobsahuje žiadnu platnú cestu súborového systému. Prosím skontrolujte váš databázový súbor."
 
 #: source/resource/conn_shared_res.src#STR_NO_TABLE_CONTAINER.String.Text
 msgid  "An error occured while obtaining the connection's table container."
@@ -686,15 +698,3 @@ msgstr "Neexituje $1$."
 #: source/resource/conn_error_message.src#256 + 2*550 + 0.String.Text
 msgid  "Unable to display the complete table content. Please apply a filter."
 msgstr "Nebolo možné zobraziť celý obsah tabuľky. Prosím použite filter."
-
-#: source/drivers/mozab/mozab2.xcu#.Drivers.Installed.sdbc:address:mozilla:.DriverTypeDisplayName
-msgid  "SeaMonkey Address Book"
-msgstr "Adresár SeaMonkey"
-
-#: source/drivers/mozab/mozab2.xcu#.Drivers.Installed.sdbc:address:thunderbird:.DriverTypeDisplayName
-msgid  "Thunderbird Address Book"
-msgstr "Adresár Thunderbird"
-
-#: source/drivers/mozab/mozab2.xcu#.Drivers.Installed.sdbc:address:ldap:*.DriverTypeDisplayName
-msgid  "LDAP Address Book"
-msgstr "Adresár LDAP"

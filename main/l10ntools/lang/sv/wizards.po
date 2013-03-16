@@ -49,7 +49,7 @@ msgstr "~Konvertera"
 
 #: source/euro/euro.src#STEP_ZERO + 4.String.Text
 msgid  "Note: Currency amounts from external links and currency conversion factors in formulas cannot be converted."
-msgstr ""
+msgstr "OBS: valutabelopp som har externa referenser, liksom valutaomräkningsfaktorer i formler kan inte konverteras."
 
 #: source/euro/euro.src#STEP_ZERO + 5.String.Text
 msgid  "First, unprotect all sheets."
@@ -153,7 +153,7 @@ msgstr "Konverteringsframsteg för cellformatmallarna"
 
 #: source/euro/euro.src#STATUSLINE + 2.String.Text
 msgid  "Registration of the relevant ranges: Sheet %1Number%1 of %2TotPageCount%2"
-msgstr ""
+msgstr "Bestämning av områdena som skall räknas om: Ark %1Number%1 av %2TotPageCount%2"
 
 #: source/euro/euro.src#STATUSLINE + 3.String.Text
 msgid  "Entry of the ranges to be converted..."
@@ -221,11 +221,11 @@ msgstr "Tabellskydd upphävs inte!"
 
 #: source/euro/euro.src#MESSAGES + 13.String.Text
 msgid  "The Wizard cannot edit this document as cell formats cannot be modified in documents containing protected spreadsheets."
-msgstr ""
+msgstr "Guiden kan inte redigera det här dokument eftersom cellformaten inte kan ändras i dokument som innehåller skyddade tabeller."
 
 #: source/euro/euro.src#MESSAGES + 14.String.Text
 msgid  "Please note that the Euro Converter will, otherwise, not be able to edit this document!"
-msgstr ""
+msgstr "Tänk på att Eurokonverteraren inte kan redigera dokumentet annars!"
 
 #: source/euro/euro.src#MESSAGES + 15.String.Text
 msgid  "Please choose a currency to be converted first!"
@@ -337,7 +337,7 @@ msgstr "Valutan för dokumentet är inte europeisk!"
 
 #: source/euro/euro.src#CURRENCIES + 17.String.Text
 msgid  "The language set for your operating system is not a language of the European Monetary Union."
-msgstr ""
+msgstr "Språket för ditt operativsystem är inte ett av den Europeiska monetära unionens."
 
 #: source/euro/euro.src#STEP_LASTPAGE.String.Text
 msgid  "Progress"
@@ -361,35 +361,35 @@ msgstr "Tabellskydd upphävs alltid"
 
 #: source/formwizard/dbwizres.src#RID_COMMON_START + 0.String.Text
 msgid  "The directory '%1' could not be created.<BR>There may not be enough space left on your hard disk."
-msgstr ""
+msgstr "Det gick inte att skapa katalogen '%1'.<BR>Det kanske inte finns tillräckligt med utrymme på din hårddisk!"
 
 #: source/formwizard/dbwizres.src#RID_COMMON_START + 1.String.Text
 msgid  "The text document could not be created.<BR>Please check if the module 'PRODUCTNAME Writer' is installed."
-msgstr ""
+msgstr "Det gick inte att skapa textdokumentet.<BR>Kontrollera att modulen \"PRODUCTNAME Writer\" är installerad."
 
 #: source/formwizard/dbwizres.src#RID_COMMON_START + 2.String.Text
 msgid  "The spreadsheet could not be created.<BR>Please check if the module 'PRODUCTNAME Calc' is installed."
-msgstr ""
+msgstr "Det gick inte att skapa kalkylbladet.<BR>Kontrollera att PRODUCTNAME Calc är installerad."
 
 #: source/formwizard/dbwizres.src#RID_COMMON_START + 3.String.Text
 msgid  "The presentation could not be created.<BR>Please check if the module 'PRODUCTNAME Impress' is installed."
-msgstr ""
+msgstr "Det gick inte att skapa presentationen.<BR>Kontrollera att modulen \"PRODUCTNAME Impress\" är installerad."
 
 #: source/formwizard/dbwizres.src#RID_COMMON_START + 4.String.Text
 msgid  "The drawing could not be created.<BR>Please check if the module 'PRODUCTNAME Draw' is installed."
-msgstr ""
+msgstr "Det gick inte att skapa teckningen.<BR>Kontrollera att modulen \"PRODUCTNAME Draw\" är installerad."
 
 #: source/formwizard/dbwizres.src#RID_COMMON_START + 5.String.Text
 msgid  "The formula could not be created.<BR>Please check if the module 'PRODUCTNAME Math' is installed."
-msgstr ""
+msgstr "Det gick inte att skapa formeln.<BR>Kontrollera att modulen \"PRODUCTNAME Math\" är installerad."
 
 #: source/formwizard/dbwizres.src#RID_COMMON_START + 6.String.Text
 msgid  "The files required could not be found.<BR>Please start the %PRODUCTNAME Setup and choose 'Repair'."
-msgstr ""
+msgstr "Det gick inte att hitta filerna som krävs.<BR>Starta installationsprogrammet för %PRODUCTNAME och välj Reparation."
 
 #: source/formwizard/dbwizres.src#RID_COMMON_START + 7.String.Text
 msgid  "The file '<PATH>' already exists.<BR><BR>Would you like to overwrite the existing file?"
-msgstr ""
+msgstr "Filen '<PATH>' finns redan.<BR><BR>Vill du skriva över den existerande filen?"
 
 #: source/formwizard/dbwizres.src#RID_COMMON_START + 8.String.Text
 msgid  "Yes"
@@ -445,7 +445,7 @@ msgstr "Mall skapad via <guidenamn> på <aktuellt_datum>."
 
 #: source/formwizard/dbwizres.src#RID_COMMON_START + 21.String.Text
 msgid  "The wizard could not be run, because important files were not found.\nUnder 'Tools - Options - %PRODUCTNAME - Paths' click the 'Default' button to reset the paths to the original default settings.\nThen run the wizard again."
-msgstr ""
+msgstr "Guiden kunde inte köras eftersom det inte gick att hitta viktiga filer.\nKlicka på Standard under Verktyg - Alternativ - %PRODUCTNAME - Sökvägar för att återställa sökvägarna till de ursprungliga standardinställningarna.\nKör sedan guiden igen."
 
 #: source/formwizard/dbwizres.src#RID_DB_COMMON_START + 0.String.Text
 msgid  "C~reate"
@@ -473,7 +473,7 @@ msgstr "~Tabellnamn"
 
 #: source/formwizard/dbwizres.src#RID_DB_COMMON_START + 6.String.Text
 msgid  "An error occurred while running the wizard. The wizard will be terminated."
-msgstr ""
+msgstr "Ett fel uppstod när guiden kördes. Guiden kommer att avslutas."
 
 #: source/formwizard/dbwizres.src#RID_DB_COMMON_START + 14.String.Text
 msgid  "No connection to the database could be established."
@@ -553,11 +553,11 @@ msgstr "Fält i formuläre~t"
 
 #: source/formwizard/dbwizres.src#RID_DB_FORM_WIZARD_START + 2.String.Text
 msgid  "Binary fields are always listed and selectable from the left list.\nIf possible, they are interpreted as images."
-msgstr ""
+msgstr "Binära fält anges alltid och kan väljas i den vänstra listan.\nDe tolkas som bilder, om det går."
 
 #: source/formwizard/dbwizres.src#RID_DB_FORM_WIZARD_START + 3.String.Text
 msgid  "A subform is a form that is inserted in another form.\nUse subforms to show data from tables or queries with a one-to-many relationship."
-msgstr ""
+msgstr "Ett underordnat formulär är ett formulär som infogas i ett annat formulär.\nDu använder underordnade formulär när du vill visa data från tabeller eller frågor som har en 1:N-relation."
 
 #: source/formwizard/dbwizres.src#RID_DB_FORM_WIZARD_START + 4.String.Text
 msgid  "~Add Subform"
@@ -593,7 +593,7 @@ msgstr "Fält i ~formulär"
 
 #: source/formwizard/dbwizres.src#RID_DB_FORM_WIZARD_START + 19.String.Text
 msgid  "The join '<FIELDNAME1>' and '<FIELDNAME2>' has been selected twice.\nBut joins may only be used once."
-msgstr ""
+msgstr "Kopplingen \"<FÄLTNAMN1>\" och \"<FÄLTNAMN2>\" har valts två gånger.\nKopplingar kan bara användas en gång."
 
 #: source/formwizard/dbwizres.src#RID_DB_FORM_WIZARD_START + 20.String.Text
 msgid  "~First joined subform field"
@@ -805,7 +805,7 @@ msgstr "Ange namn på formuläret"
 
 #: source/formwizard/dbwizres.src#RID_DB_FORM_WIZARD_START + 98.String.Text
 msgid  "A form with the name '%FORMNAME' already exists.\nChoose another name."
-msgstr ""
+msgstr "Det finns redan ett dokument med namnet \"%FORMNAME\".\nVälj ett annat namn."
 
 #: source/formwizard/dbwizres.src#RID_DB_QUERY_WIZARD_START + 0.String.Text
 msgid  "Query Wizard"
@@ -1097,15 +1097,15 @@ msgstr "Översikt"
 
 #: source/formwizard/dbwizres.src#RID_DB_QUERY_WIZARD_START + 88.String.Text
 msgid  "A field that has not been assigned an aggregate function must be used in a group."
-msgstr ""
+msgstr "Ett fält som inte har tilldelats en mängdfunktion måste användas i en grupp."
 
 #: source/formwizard/dbwizres.src#RID_DB_QUERY_WIZARD_START + 89.String.Text
 msgid  "The condition '<FIELDNAME> <LOGICOPERATOR> <VALUE>' was chosen twice. Each condition can only be chosen once"
-msgstr ""
+msgstr "Villkoret \"<FIELDNAME> <LOGICOPERATOR> <VALUE>\" har valts två gånger. Det går bara att välja ett villkor en gång"
 
 #: source/formwizard/dbwizres.src#RID_DB_QUERY_WIZARD_START + 90.String.Text
 msgid  "The aggregate function <FUNCTION> has been assigned twice to the fieldname '<NUMERICFIELD>'."
-msgstr ""
+msgstr "Mängdfunktionen <FUNCTION> har tilldelats två gånger till fältnamnet !<NUMERICFIELD>!."
 
 #: source/formwizard/dbwizres.src#RID_DB_QUERY_WIZARD_START + 91.String.Text
 msgid  ", "
@@ -1321,11 +1321,11 @@ msgstr "Formuläret '<REPORTFORM>' existerar inte."
 
 #: source/formwizard/dbwizres.src#RID_DB_REPORT_WIZARD_START + 65.String.Text
 msgid  "The query with the statement <BR>'<STATEMENT>' <BR> could not be run. <BR> Check your data source."
-msgstr ""
+msgstr "Det gick inte att utföra sökningen med uttrycket <BR>'<STATEMENT>' <BR>. <BR> Kontrollera din datakälla."
 
 #: source/formwizard/dbwizres.src#RID_DB_REPORT_WIZARD_START + 66.String.Text
 msgid  "The following hidden control in the form '<REPORTFORM>' could not be read: '<CONTROLNAME>'."
-msgstr ""
+msgstr "Det gick inte att läsa följande dolda kontrollelement i formuläret '<REPORTFORM>': '<CONTROLNAME>'."
 
 #: source/formwizard/dbwizres.src#RID_DB_REPORT_WIZARD_START + 67.String.Text
 msgid  "Importing data..."
@@ -1349,7 +1349,7 @@ msgstr "Fält"
 
 #: source/formwizard/dbwizres.src#RID_DB_REPORT_WIZARD_START + 72.String.Text
 msgid  "An error occurred in the wizard.<BR>The template '%PATH' could be erroneous.<BR>Either the required sections or tables do not exist or exist under the wrong name.<BR>See the Help for more detailed information.<BR>Please select another template."
-msgstr ""
+msgstr "Det har uppstått ett fel i guiden.<BR>Mallen '%PATH' kan vara felaktig.<BR>Antingen finns inte de krävda områdena resp. tabellerna eller så har de  ett felaktigt namn.<BR>Se hjälpen för mer information.<BR>Välj en annan mall."
 
 #: source/formwizard/dbwizres.src#RID_DB_REPORT_WIZARD_START + 73.String.Text
 msgid  "There is an invalid user field in a table."
@@ -1357,15 +1357,15 @@ msgstr "Det finns ett ogiltigt användarfält i en tabell."
 
 #: source/formwizard/dbwizres.src#RID_DB_REPORT_WIZARD_START + 74.String.Text
 msgid  "The sort criterium '<FIELDNAME>' was chosen twice. Each criterium can only be chosen once."
-msgstr ""
+msgstr "Sorteringskriteriet '<FIELDNAME>' valdes två gånger. Det går bara att välja varje sorteringskriterium en gång."
 
 #: source/formwizard/dbwizres.src#RID_DB_REPORT_WIZARD_START + 75.String.Text
 msgid  "Note: The dummy text will be replaced by data from the database when the report is created."
-msgstr ""
+msgstr "Obs.: Utfyllnadstexten kommer att ersättas med data från databasen när rapporten skapas."
 
 #: source/formwizard/dbwizres.src#RID_DB_REPORT_WIZARD_START + 76.String.Text
 msgid  "A report '%REPORTNAME' already exists in the database. Please assign another name."
-msgstr ""
+msgstr "Rapporten \"%REPORTNAME\" finns redan i databasen. Tilldela ett annat namn."
 
 #: source/formwizard/dbwizres.src#RID_DB_REPORT_WIZARD_START + 78.String.Text
 msgid  "How do you want to proceed after creating the report?"
@@ -1465,7 +1465,7 @@ msgstr "Skapa tabell"
 
 #: source/formwizard/dbwizres.src#RID_DB_TABLE_WIZARD_START + 14.String.Text
 msgid  "This wizard helps you to create a table for your database. After selecting a table category and a sample table, choose the fields you want to include in your table. You can include fields from more than one sample table."
-msgstr ""
+msgstr "Den här guiden hjälper dig att skapa en tabell för databasen. När du har valt en tabellkategori och en exempeltabell, väljer du vilka vält som ska ingå i tabellen. Du kan ta med fält från fler än en exempeltabell."
 
 #: source/formwizard/dbwizres.src#RID_DB_TABLE_WIZARD_START + 15.String.Text
 msgid  "Ca~tegory"
@@ -1509,7 +1509,7 @@ msgstr "~Markerade fält"
 
 #: source/formwizard/dbwizres.src#RID_DB_TABLE_WIZARD_START + 26.String.Text
 msgid  "A primary key uniquely identifies each record in a database table. Primary keys ease the linking of information in separate tables, and it is recommended that you have a primary key in every table. Without a primary key, it will not be possible to enter data into this table."
-msgstr ""
+msgstr "En primärnyckel identifierar varje post unikt i en databastabell. Primärnycklar gör det enklare att länka information i olika tabeller, och du bör har en primärnyckel i varje tabell. Utan primärnyckel går det inte att ange data i den här tabellen."
 
 #: source/formwizard/dbwizres.src#RID_DB_TABLE_WIZARD_START + 27.String.Text
 msgid  "~Create a primary key"
@@ -1545,7 +1545,7 @@ msgstr "Vad ska tabellen heta?"
 
 #: source/formwizard/dbwizres.src#RID_DB_TABLE_WIZARD_START + 35.String.Text
 msgid  "Congratulations. You have entered all the information needed to create your table."
-msgstr ""
+msgstr "Gratulerar. Du har angett all information som behövs för att skapa tabellen."
 
 #: source/formwizard/dbwizres.src#RID_DB_TABLE_WIZARD_START + 36.String.Text
 msgid  "What do you want to do next?"
@@ -1569,11 +1569,11 @@ msgstr "Tabellen som du har skapat kan inte öppnas."
 
 #: source/formwizard/dbwizres.src#RID_DB_TABLE_WIZARD_START + 41.String.Text
 msgid  "The table name '%TABLENAME' contains a character ('%SPECIALCHAR') that might not be supported by the database."
-msgstr ""
+msgstr "Tabellen \"%TABLENAME\" innehåller ett tecken (\"%SPECIALCHAR\") som kanske inte kan användas i databasen."
 
 #: source/formwizard/dbwizres.src#RID_DB_TABLE_WIZARD_START + 42.String.Text
 msgid  "The field name '%FIELDNAME' contains a special character ('%SPECIALCHAR') that might not be supported by the database."
-msgstr ""
+msgstr "Fältet \"%FIELDNAME\" innehåller ett specialtecken (\"%SPECIALCHAR\") som kanske inte kan användas i databasen."
 
 #: source/formwizard/dbwizres.src#RID_DB_TABLE_WIZARD_START + 43.String.Text
 msgid  "Field"
@@ -1593,11 +1593,11 @@ msgstr "Ta bort det markerade fältet"
 
 #: source/formwizard/dbwizres.src#RID_DB_TABLE_WIZARD_START + 47.String.Text
 msgid  "The field cannot be inserted because this would exceed the maximum number of %COUNT possible fields in the database table"
-msgstr ""
+msgstr "Fältet kan inte infogas eftersom det högsta antalet %COUNT möjliga fält då överskrids i databastabellen"
 
 #: source/formwizard/dbwizres.src#RID_DB_TABLE_WIZARD_START + 48.String.Text
 msgid  "The name '%TABLENAME' already exists.\nPlease enter another name."
-msgstr ""
+msgstr "Namnet %TABLENAME finns redan.\nSkriv ett annat namn."
 
 #: source/formwizard/dbwizres.src#RID_DB_TABLE_WIZARD_START + 49.String.Text
 msgid  "Catalog of the table"
@@ -1733,7 +1733,7 @@ msgstr "Siddesign"
 
 #: source/formwizard/dbwizres.src#RID_LETTERWIZARDDIALOG_START + 31.String.Text
 msgid  "This wizard helps you to create a letter template. You can then use the template as the basis for writing letters as often as desired."
-msgstr ""
+msgstr "Med den här guiden får du hjälp att skapa en brevmall. Du kan sedan använda mallen som bas när du skriver brev."
 
 #: source/formwizard/dbwizres.src#RID_LETTERWIZARDDIALOG_START + 32.String.Text
 msgid  "~Height:"
@@ -1801,11 +1801,11 @@ msgstr "Sidfot"
 
 #: source/formwizard/dbwizres.src#RID_LETTERWIZARDDIALOG_START + 48.String.Text
 msgid  "This wizard creates a letter template which enables you to create multiple letters with the same layout and settings."
-msgstr ""
+msgstr "Den här guiden skapar en brevmall som du kan använda när du vill skapa flera brev med samma layout och inställningar."
 
 #: source/formwizard/dbwizres.src#RID_LETTERWIZARDDIALOG_START + 49.String.Text
 msgid  "To create another new letter out of the template just navigate to the template location and double-click it."
-msgstr ""
+msgstr "Om du vill skapa ett nytt brev från mallen flyttar du bara till mallen och dubbelklickar på den."
 
 #: source/formwizard/dbwizres.src#RID_LETTERWIZARDDIALOG_START + 50.String.Text
 msgid  "Template name:"
@@ -1957,7 +1957,7 @@ msgstr "Siddesign"
 
 #: source/formwizard/dbwizres.src#RID_FAXWIZARDDIALOG_START + 17.String.Text
 msgid  "This wizard helps you to create a fax template. The template can then be used to create a fax whenever needed."
-msgstr ""
+msgstr "Med den här guiden får du hjälp att skapa en faxmall. Du kan sedan skapa fax med  hjälp av mallen."
 
 #: source/formwizard/dbwizres.src#RID_FAXWIZARDDIALOG_START + 18.String.Text
 msgid  "Return address"
@@ -1981,11 +1981,11 @@ msgstr "Sidfot"
 
 #: source/formwizard/dbwizres.src#RID_FAXWIZARDDIALOG_START + 23.String.Text
 msgid  "This wizard creates a fax template which enables you to create multiple faxes with the same layout and settings."
-msgstr ""
+msgstr "Den här guiden skapar en faxmall som du kan använda när du vill skapa flera fax med samma layout och inställningar."
 
 #: source/formwizard/dbwizres.src#RID_FAXWIZARDDIALOG_START + 24.String.Text
 msgid  "To create another new fax out of the template, go to the location where you saved the template and double-click the file."
-msgstr ""
+msgstr "Om du vill skapa ett fax utifrån mallen, flyttar du till den plats där du skapade mallen och dubbelklickar på filen."
 
 #: source/formwizard/dbwizres.src#RID_FAXWIZARDDIALOG_START + 25.String.Text
 msgid  "Template Name:"
@@ -2121,7 +2121,7 @@ msgstr "Webbguiden"
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +2.String.Text
 msgid  "This Web Wizard is to aid you in publishing documents on the Internet.\n\nIt will convert the documents so that they can be viewed by a web browser. In addition, it will generate a Table of Contents page with links for easy access to the documents. The Web Wizard will also allow you to customize the design and layout of your web site.\n\nYou will be able to keep the documents you have published on the web up-to-date and add or remove documents at any time."
-msgstr ""
+msgstr "Med den här webbguiden får du hjälp med att publicera dokument på Internet.\n\nDen omvandlar dokumenten så att de kan visas i en webbläsare. Här skapas också en innehållsförteckning med länkar så att det blir enklare att komma åt dokumenten. I webbguiden kan du också anpassa design och layout för webbplatsen.\n\nDu kan hålla dokumenten som du publicerar uppdaterade och när som helst lägga till eller ta bort dokument."
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +4.String.Text
 msgid  "~Delete"
@@ -2297,7 +2297,7 @@ msgstr "~Storlek i KB"
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +59.String.Text
 msgid  "Click 'Preview' to see a preview in your browser:"
-msgstr ""
+msgstr "Klicka på Förhandsgranskning om du vill visa en förhandsgranskning i webbläsaren:"
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +60.String.Text
 msgid  "Customize the selected layout"
@@ -2305,7 +2305,7 @@ msgstr "Anpassa den markerade layouten"
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +61.String.Text
 msgid  "Include the following information for each document in the table of contents:"
-msgstr ""
+msgstr "Ta med följande information för varje dokument i innehållsförteckningen:"
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +62.String.Text
 msgid  "Optimize the layout for screen resolution:"
@@ -2345,19 +2345,19 @@ msgstr "Det lokala målet \"%FILENAME\" är en fil."
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +75.String.Text
 msgid  "The ZIP target '%FILENAME' already exists. Do you want to overwrite the existing target? "
-msgstr ""
+msgstr "ZIP-målet \"%FILENAME\" finns redan. Vill du skriva över det befintliga målet? "
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +76.String.Text
 msgid  "The FTP target directory '%FILENAME' is not empty. Some files might be overwritten. Do you want to continue?"
-msgstr ""
+msgstr "FTP-målkatalogen \"%FILENAME\" är inte tom. Vissa filer kan skrivas över. Vill du fortsätta?"
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +77.String.Text
 msgid  "The local target directory '%FILENAME' is not empty. Some files might be overwritten. Do you want to continue?"
-msgstr ""
+msgstr "Den lokala målkatalogen \"%FILENAME\" är inte tom. Vissa filer kan skrivas över. Vill du fortsätta?"
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +78.String.Text
 msgid  "Settings already exist under the given name. Do you want to overwrite the existing settings? "
-msgstr ""
+msgstr "Det finns redan inställningar med det här namnet.  Ska de existerande inställningarna skrivas över? "
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +79.String.Text
 msgid  "Exporting documents..."
@@ -2457,7 +2457,7 @@ msgstr "Ett fel inträffade när layoutfilerna kopierades. "
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +108.String.Text
 msgid  "An error occurred while gathering document information for '%FILENAME'. "
-msgstr ""
+msgstr "Ett fel inträffade när dokumentinformation samlades in för '%FILENAME'. "
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +109.String.Text
 msgid  "An error occurred while exporting the document '%FILENAME'."
@@ -2473,11 +2473,11 @@ msgstr "Ett säkerhetsfel inträffade när dokumentet %FILENAME exporterades."
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +112.String.Text
 msgid  "An input/output error occurred while exporting the document '%FILENAME'."
-msgstr ""
+msgstr "Ett indata/utdatafel inträffade när dokumentet '%FILENAME' exporterades."
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +113.String.Text
 msgid  "An error occurred while copying media files to the temporary directory."
-msgstr ""
+msgstr "Ett fel inträffade när mediafiler kopierades till den tillfälliga katalogen."
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +114.String.Text
 msgid  "The web site could not be copied to the following destination: %URL"
@@ -2541,7 +2541,7 @@ msgstr "Förhandsgranskning"
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +130.String.Text
 msgid  "The selected settings will be deleted.\n\nDo you really want to delete these settings? "
-msgstr ""
+msgstr "De valda inställningarna kommer att tas bort.\n\nVill du ta bort dessa inställningar? "
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +131.String.Text
 msgid  "%NUMBER pages"
@@ -2609,19 +2609,19 @@ msgstr "Det går inte att skapa FTP-katalogen \"%FILENAME\"."
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +147.String.Text
 msgid  "The FTP directory '%FILENAME' does not exist. \nCreate the directory now?"
-msgstr ""
+msgstr "FTP-katalogen \"%FILENAME\" finns inte. \nVill du skapa katalogen nu?"
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +148.String.Text
 msgid  "The Zip file '%FILENAME' cannot be created: a directory of the same name already exists."
-msgstr ""
+msgstr "Det går inte att skapa ZIP-filen \"%FILENAME\": Det finns redan en katalog med det namnet."
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +149.String.Text
 msgid  "The local directory '%FILENAME' cannot be created. \nPlease check your write-access."
-msgstr ""
+msgstr "Det går inte att skapa den lokala katalogen \"%FILENAME\": \nKontrollera att du har behörighet att skriva."
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +150.String.Text
 msgid  "The local directory '%FILENAME' does not exist. \nCreate the directory now?"
-msgstr ""
+msgstr "Den lokala katalogen \"%FILENAME\" finns inte. \nVill du skapa katalogen nu?"
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +151.String.Text
 msgid  "Size: %NUMBERKB"
@@ -2757,7 +2757,7 @@ msgstr "Infoga formulär för anteckningar."
 
 #: source/formwizard/dbwizres.src#RID_AGENDAWIZARDDIALOG_START +13.String.Text
 msgid  "This wizard helps you to create an agenda template. The template can then be used to create an agenda whenever needed."
-msgstr ""
+msgstr "Med den här guiden får du hjälp att skapa en agendamall. Du kan sedan använda mallen när du skapar en agenda."
 
 #: source/formwizard/dbwizres.src#RID_AGENDAWIZARDDIALOG_START +14.String.Text
 msgid  "Time:"
@@ -2773,7 +2773,7 @@ msgstr "Plats:"
 
 #: source/formwizard/dbwizres.src#RID_AGENDAWIZARDDIALOG_START +17.String.Text
 msgid  "Placeholders will be used in empty fields. You can replace placeholders with text later."
-msgstr ""
+msgstr "Platshållare används i tomma fält. Du kan senare ersätta platshållarna med text."
 
 #: source/formwizard/dbwizres.src#RID_AGENDAWIZARDDIALOG_START +18.String.Text
 msgid  "..."
@@ -2785,7 +2785,7 @@ msgstr "Skapa en ~agenda från denna mall"
 
 #: source/formwizard/dbwizres.src#RID_AGENDAWIZARDDIALOG_START +20.String.Text
 msgid  "To create a new agenda out of the template, go to the location where you saved the template and double-click the file."
-msgstr ""
+msgstr "Du skapar en ny agenda från mallen genom att gå till den plats där du sparade mallen och dubbelklicka på filen."
 
 #: source/formwizard/dbwizres.src#RID_AGENDAWIZARDDIALOG_START +21.String.Text
 msgid  "Agenda item"
@@ -2829,7 +2829,7 @@ msgstr "Resurspersoner"
 
 #: source/formwizard/dbwizres.src#RID_AGENDAWIZARDDIALOG_START +31.String.Text
 msgid  "The agenda template will include placeholders for the names of the selected people. When creating an agenda from the template, you can replace these placeholder with the appropriate names."
-msgstr ""
+msgstr "Agendamallen innehåller platshållare för namnen på de valda personerna. När du skapar en agenda från mallen, kan du ersätta dessa platshållare med rätt namn."
 
 #: source/formwizard/dbwizres.src#RID_AGENDAWIZARDDIALOG_START +32.String.Text
 msgid  "Type of meeting"
@@ -2857,7 +2857,7 @@ msgstr "Date:"
 
 #: source/formwizard/dbwizres.src#RID_AGENDAWIZARDDIALOG_START +39.String.Text
 msgid  "This wizard creates an agenda template which enables you to create multiple agendas with the same layout and settings."
-msgstr ""
+msgstr "Den här guiden skapar en agendamall som du använder när du vill skapa flera agendor med samma layout och inställningar."
 
 #: source/formwizard/dbwizres.src#RID_AGENDAWIZARDDIALOG_START +40.String.Text
 msgid  "Page design:"
@@ -3009,11 +3009,11 @@ msgstr "~Stäng"
 
 #: source/importwizard/importwi.src#sWelcometextLabel1.String.Text
 msgid  "This wizard converts documents in %PRODUCTNAME format and Microsoft Office documents to the new OpenDocument format."
-msgstr ""
+msgstr "Den här guiden konverterar dokument i %PRODUCTNAME-format och Microsoft Office-dokument till det nya OpenDocument-formatet."
 
 #: source/importwizard/importwi.src#sWelcometextLabel2.String.Text
 msgid  "Please note that when converting Microsoft documents any attached VBA macros lose their functionality."
-msgstr ""
+msgstr "Observera att bifogade VBA-makron förlorar sin funktionalitet när Microsoft dokument konverteras."
 
 #: source/importwizard/importwi.src#sWelcometextLabel3.String.Text
 msgid  "Select the document type for conversion:"
@@ -3105,7 +3105,7 @@ msgstr "Kataloger finns ej"
 
 #: source/importwizard/importwi.src#sOverwriteallFiles.String.Text
 msgid  "Do you want to overwrite documents without being asked?"
-msgstr ""
+msgstr "Vill du att dokument ska skrivas över utan att du blir tillfrågad först?"
 
 #: source/importwizard/importwi.src#sreeditMacro.String.Text
 msgid  "Document macro has to be revised."
@@ -3241,59 +3241,59 @@ msgstr "De exporteras till följande katalog:"
 
 #: source/importwizard/importwi.src#sSumSOTextDocuments.String.Text
 msgid  "All %PRODUCTNAME text documents contained in the following directory will be imported:"
-msgstr ""
+msgstr "Alla %PRODUCTNAME textdokument som finns i följande katalog importeras:"
 
 #: source/importwizard/importwi.src#sSumSOTableDocuments.String.Text
 msgid  "All %PRODUCTNAME spreadsheets contained in the following directory will be imported:"
-msgstr ""
+msgstr "Alla %PRODUCTNAME kalkylblad som finns i följande katalog kommer att importeras:"
 
 #: source/importwizard/importwi.src#sSumSODrawDocuments.String.Text
 msgid  "All %PRODUCTNAME drawing and presentation documents contained in the following directory will be imported:"
-msgstr ""
+msgstr "Alla %PRODUCTNAME tecknings- och presentationsdokument som finns i följande katalog importeras:"
 
 #: source/importwizard/importwi.src#sSumSOMathDocuments.String.Text
 msgid  "All %PRODUCTNAME formula documents contained in the following directory will be imported:"
-msgstr ""
+msgstr "Alla %PRODUCTNAME formeldokument som finns i följande katalog importeras:"
 
 #: source/importwizard/importwi.src#sSumSOTextTemplates.String.Text
 msgid  "All %PRODUCTNAME text templates contained in the following directory will be imported:"
-msgstr ""
+msgstr "Alla %PRODUCTNAME textmallar som finns i följande katalog importeras:"
 
 #: source/importwizard/importwi.src#sSumSOTableTemplates.String.Text
 msgid  "All %PRODUCTNAME table templates contained in the following directory will be imported:"
-msgstr ""
+msgstr "Alla %PRODUCTNAME tabellmallar som finns i följande katalog importeras:"
 
 #: source/importwizard/importwi.src#sSumSODrawTemplates.String.Text
 msgid  "All %PRODUCTNAME drawing and presentation templates contained in the following directory will be imported:"
-msgstr ""
+msgstr "Alla %PRODUCTNAME tecknings- och presentationsmallar som finns i följande katalog importeras:"
 
 #: source/importwizard/importwi.src#sSumSOGlobalDocuments.String.Text
 msgid  "All %PRODUCTNAME master documents contained in the following directory will be imported:"
-msgstr ""
+msgstr "Alla %PRODUCTNAME samlingsdokument som finns i följande katalog importeras:"
 
 #: source/importwizard/importwi.src#sSumMSTextDocuments.String.Text
 msgid  "All Word documents contained in the following directory will be imported:"
-msgstr ""
+msgstr "Alla Word dokument som finns i följande katalog importeras:"
 
 #: source/importwizard/importwi.src#sSumMSTableDocuments.String.Text
 msgid  "All Excel documents contained in the following directory will be imported:"
-msgstr ""
+msgstr "Alla Excel dokument som finns i följande katalog importeras:"
 
 #: source/importwizard/importwi.src#sSumMSDrawDocuments.String.Text
 msgid  "All PowerPoint documents contained in the following directory will be imported:"
-msgstr ""
+msgstr "Alla PowerPoint dokument som finns i följande katalog importeras:"
 
 #: source/importwizard/importwi.src#sSumMSTextTemplates.String.Text
 msgid  "All Word templates contained in the following directory will be imported:"
-msgstr ""
+msgstr "Alla Word-mallar som finns i följande katalog importeras:"
 
 #: source/importwizard/importwi.src#sSumMSTableTemplates.String.Text
 msgid  "All Excel templates contained in the following directory will be imported:"
-msgstr ""
+msgstr "Alla Excel-mallar som finns i följande katalog importeras:"
 
 #: source/importwizard/importwi.src#sSumMSDrawTemplates.String.Text
 msgid  "All PowerPoint templates contained in the following directory will be imported:"
-msgstr ""
+msgstr "Alla PowerPoint-mallar som finns i följande katalog importeras:"
 
 #: source/schedule/schedule.src#dlgCalTitle.String.Text
 msgid  "%PRODUCTNAME Calendar"
@@ -3481,7 +3481,7 @@ msgstr "Framsteg:"
 
 #: source/template/template.src#SAMPLES.String.Text
 msgid  "In order to use the full functionality of this sample, create a document that is based on this template."
-msgstr ""
+msgstr "Ett nytt dokument måste skapas med den här mallen som grund för att alla funktioner i detta exempel skall vara tillgängliga."
 
 #: source/template/template.src#SAMPLES + 1.String.Text
 msgid  "Remarks"
@@ -3493,7 +3493,7 @@ msgstr "Temaurval"
 
 #: source/template/template.src#STYLES + 1.String.Text
 msgid  "Error while saving the document to the clipboard! The following action cannot be undone."
-msgstr ""
+msgstr "Fel uppstod när det aktuella dokumentet skulle sparas i urklippet! Följande åtgärd går inte att ångra."
 
 #: source/template/template.src#STYLES + 2.String.Text
 msgid  "~Cancel"

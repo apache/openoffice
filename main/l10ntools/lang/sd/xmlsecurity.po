@@ -33,7 +33,7 @@ msgstr ""
 
 #: source/component/warnbox.src#RID_XMLSECWB_NO_MOZILLA_PROFILE.WarningBox.Message
 msgid  "Digital signatures functionality could not be used, because no Mozilla user profile was found. Please check the Mozilla installation."
-msgstr ""
+msgstr "ڊجيٽل صحيحين جي ڪاريہ جي قوت جو اِستعمال نہ ٿي شگہيو ڇو تہ موزيلا اِستعمال ڪندڙ جي پروفائل جو پتو نہ لڳي سگهيو۔ مہرباني ڪري موزيلا جو اِسٿاپن چڪاسيو۔ "
 
 #: source/dialogs/macrosecurity.src#RID_XMLSECTP_MACROSEC.TabDialog.Text
 msgid  "Macro Security"
@@ -53,19 +53,19 @@ msgstr "وري سيٽ ڪريو "
 
 #: source/dialogs/macrosecurity.src#RID_XMLSECTP_SECLEVEL.RB_VERYHIGH.RadioButton.Text
 msgid  "~Very high.\nOnly macros from trusted file locations are allowed to run. All other macros, regardless whether signed or not, are disabled."
-msgstr ""
+msgstr "تمام اوچو۔ \n فقط وشواس جوڳن آسٿانن کان ميڪروز هلائڻ جي اجازت مليل آهي۔ ٻيا سڀ ميڪرو توڙي انہن جو قرار ڪيو ويو آهي يا نہ اَسمرٿ آهن۔ "
 
 #: source/dialogs/macrosecurity.src#RID_XMLSECTP_SECLEVEL.RB_HIGH.RadioButton.Text
 msgid  "H~igh.\nOnly signed macros from trusted sources are allowed to run. Unsigned macros are disabled."
-msgstr ""
+msgstr "اوچو \n فقط وشواس جوڳن مولن جا قرار ڪيل ميڪروز هلائڻ جي اجازت ملي آهي۔ قرار نہ ڪيل ميڪروز اَسمرٿ آهن "
 
 #: source/dialogs/macrosecurity.src#RID_XMLSECTP_SECLEVEL.RB_MEDIUM.RadioButton.Text
 msgid  "~Medium.\nConfirmation required before executing macros from untrusted sources."
-msgstr ""
+msgstr "وچولو \n اَوشواس جوڳن مولن مان ميڪروز هلائڻ کان آڳ بناوت جي ضرورت آهي۔ "
 
 #: source/dialogs/macrosecurity.src#RID_XMLSECTP_SECLEVEL.RB_LOW.RadioButton.Text
 msgid  "~Low (not recommended).\nAll macros will be executed without confirmation. Use this setting only if you are certain that all documents that will be opened are safe."
-msgstr ""
+msgstr "گهٽ (صلاح نٿي ڏجي)۔ \n بنا بناوت جي سڀ ميڪروز هلايا ويندا۔ ان طئہ ڪيل ترتيب جو اِستعمال فقط تڏهن ڪريو جڏهن توهانکي پڪ هجي تہ سڀ کلندڙ دستاويز محفوظ آهن۔ "
 
 #: source/dialogs/macrosecurity.src#RID_XMLSECTP_TRUSTSOURCES.FL_TRUSTCERT.FixedLine.Text
 msgid  "Trusted certificates"
@@ -93,7 +93,7 @@ msgstr "وشواس جوڳا فائلن جا آسٿان "
 
 #: source/dialogs/macrosecurity.src#RID_XMLSECTP_TRUSTSOURCES.FI_TRUSTFILELOC.FixedText.Text
 msgid  "Document macros are always executed if they have been opened from one of the following locations."
-msgstr ""
+msgstr "دستاويز جا ميڪروز هميشهہ هلايا وڃن ٿا اگر اُهي هيٺين آسٿان مان ڪنهن هڪ مان کوليا ويا آهن۔ "
 
 #: source/dialogs/macrosecurity.src#RID_XMLSECTP_TRUSTSOURCES.FL_ADD_TRUSTFILELOC.PushButton.Text
 msgid  "Add..."

@@ -33,7 +33,7 @@ msgstr ""
 
 #: source/component/warnbox.src#RID_XMLSECWB_NO_MOZILLA_PROFILE.WarningBox.Message
 msgid  "Digital signatures functionality could not be used, because no Mozilla user profile was found. Please check the Mozilla installation."
-msgstr ""
+msgstr "رەقەملىك ئىمزا ئىقتىدارىنى ئىشلەتكىلى بولمايدۇ، سەۋەبى Mozilla نىڭ ئىشلەتكۈچى سەپلەش ھۆججىتى تېپىلمىدى. Mozilla قاچىلاشنى تەكشۈرۈڭ."
 
 #: source/dialogs/macrosecurity.src#RID_XMLSECTP_MACROSEC.TabDialog.Text
 msgid  "Macro Security"
@@ -53,19 +53,19 @@ msgstr "ئەسلىگە قايتۇر"
 
 #: source/dialogs/macrosecurity.src#RID_XMLSECTP_SECLEVEL.RB_VERYHIGH.RadioButton.Text
 msgid  "~Very high.\nOnly macros from trusted file locations are allowed to run. All other macros, regardless whether signed or not, are disabled."
-msgstr ""
+msgstr "ناھايىتى يۇقىرى\nپەقەت ئىشەنچلىك ئورۇننىڭ ماكروسىلا ئىجرا قىلىشقا يول قويۇلىدۇ. باشقا ماكرولار ئىمزالىق، ئىمزاسىز بولۇشىدىن قەتئىينەزەر ھەممىسى چەكلىنىدۇ(~V)."
 
 #: source/dialogs/macrosecurity.src#RID_XMLSECTP_SECLEVEL.RB_HIGH.RadioButton.Text
 msgid  "H~igh.\nOnly signed macros from trusted sources are allowed to run. Unsigned macros are disabled."
-msgstr ""
+msgstr "يۇقىرى\nئىشەنچلىك مەنبەنىڭ ئىمزالىق ماكروسىنىلا ئىجرا قىلىشقا يول قويىدۇ. ئىمزاسىز ماكرو چەكلىنىدۇ(~I)."
 
 #: source/dialogs/macrosecurity.src#RID_XMLSECTP_SECLEVEL.RB_MEDIUM.RadioButton.Text
 msgid  "~Medium.\nConfirmation required before executing macros from untrusted sources."
-msgstr ""
+msgstr "ئوتتۇرا\nئىشەنچسىز مەنبەدىن كەلگەن ماكرونى ئەسكەرتىپ جەزملەيدۇ(~M)."
 
 #: source/dialogs/macrosecurity.src#RID_XMLSECTP_SECLEVEL.RB_LOW.RadioButton.Text
 msgid  "~Low (not recommended).\nAll macros will be executed without confirmation. Use this setting only if you are certain that all documents that will be opened are safe."
-msgstr ""
+msgstr "تۆۋەن\nجەزملىمەيلا ماكرو ئىجر قىلىدۇ. بۇ تەڭشەك پەقەت ئېچىلغان ھەممە پۈتۈكلەرنىڭ بىخەتەر ئىكەنلىكىگە كاپالەتلىك قىلغاندىلا ئاندىن ئىشلىتىلىدۇ(~L)."
 
 #: source/dialogs/macrosecurity.src#RID_XMLSECTP_TRUSTSOURCES.FL_TRUSTCERT.FixedLine.Text
 msgid  "Trusted certificates"
@@ -93,7 +93,7 @@ msgstr "ئىشەنچلىك ھۆججەت ئورنى"
 
 #: source/dialogs/macrosecurity.src#RID_XMLSECTP_TRUSTSOURCES.FI_TRUSTFILELOC.FixedText.Text
 msgid  "Document macros are always executed if they have been opened from one of the following locations."
-msgstr ""
+msgstr "ئەگەر تۆۋەندىكى ئورۇنلارنىڭ بىرسىدىن پۈتۈك ماكروسى ئېچىلسا ئۇنداقتا بۇ ماكرولار ئىزچىل ئىجرا قىلىنىدۇ."
 
 #: source/dialogs/macrosecurity.src#RID_XMLSECTP_TRUSTSOURCES.FL_ADD_TRUSTFILELOC.PushButton.Text
 msgid  "Add..."
@@ -125,7 +125,7 @@ msgstr "ئىمزا كۆرسەت…"
 
 #: source/dialogs/warnings.src#RID_XMLSECTP_MACROWARN.FI_DESCR2.FixedText.Text
 msgid  "Macros may contain viruses. Disabling macros for a document is always save. If you disable macros you may lose functionality provided by the document macros."
-msgstr ""
+msgstr "ماكرودا ۋىرۇس بولۇشى مۇمكىن. مەلۇم پۈتۈككە ئېلىپ بېرىلغان ماكرو چەكلەش مەشغۇلاتى ئىزچىل ساقلىنىدۇ. ئەگەر ماكرو چەكلىسىڭىز، پۈتۈك تەمىنلىگەن ئىقتىدار يوقىلىشى مۇمكىن."
 
 #: source/dialogs/warnings.src#RID_XMLSECTP_MACROWARN.CB_ALWAYSTRUST.CheckBox.Text
 msgid  "Always trust macros from this source"
@@ -205,7 +205,7 @@ msgstr ""
 
 #: source/dialogs/digitalsignaturesdialog.src#MSG_XMLSECDLG_QUERY_REMOVEDOCSIGNBEFORESIGN.QueryBox.Message
 msgid  "Adding or removing a macro signature will remove all document signatures.\nDo you really want to continue?"
-msgstr ""
+msgstr "ماكرو ئىمزاسى قوشۇلسا ياكى ئۆچۈرۈلسە، پۈتكۈل پۈتۈكنىڭ ئىمزاسى ئۆچۈرۈلىدۇ.\nراستىنلا داۋاملاشتۇرامسىز؟"
 
 #: source/dialogs/certificateviewer.src#RID_XMLSECDLG_CERTVIEWER.TabDialog.Text
 msgid  "View Certificate"

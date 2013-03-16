@@ -445,11 +445,11 @@ msgstr "ئۆچۈر(~D)"
 
 #: source/smres.src#RID_NOMATHTYPEFACEWARNING.WarningBox.Message
 msgid  "The 'StarMath' font has not been installed.\nWithout this font %PRODUCTNAME Math cannot function correctly.\nPlease install this font and restart %PRODUCTNAME Math."
-msgstr ""
+msgstr "\"StarMath\" خەت نۇسخىسى قاچىلانمىغان.\nبۇ %PRODUCTNAME Math خەت نۇسخىسى بولمىسا پروگرامما نورمال ئىجرا بولمايدۇ.\nبۇ خەت نۇسخىسىنى قاچىلاپ %PRODUCTNAME Math قايتا قوزغىتىڭ."
 
 #: source/smres.src#RID_DEFAULTSAVEQUERY.QueryBox.Message
 msgid  "Should the changes be saved as defaults?\n\nThese changes will apply for all new formulas."
-msgstr ""
+msgstr "ئۆزگەرتكەننى كۆڭۈلدىكى قىلىپ ساقلامسىز؟\n\nبۇ ئۆزگەرتىش بارلىق فورمۇلالارغا تەسىر كۆرسىتىدۇ."
 
 #: source/smres.src#RID_FONTREGULAR.String.Text
 msgid  "Standard"
@@ -558,6 +558,10 @@ msgstr "Sans"
 #: source/smres.src#RID_FONTMENU.7.MenuItem.Text
 msgid  "Fixed"
 msgstr "مۇقىم"
+
+#: source/smres.src#CMDBOXWINDOW_TEXT.#define.Text
+msgid  "Commands"
+msgstr "بۇيرۇقلار"
 
 #: source/smres.src#RID_DOCUMENTSTR.String.Text
 msgid  "Formula"
@@ -694,10 +698,6 @@ msgstr "بەتكە ماسلاش(~P)"
 #: source/smres.src#RID_PRINTUIOPTIONS.item9.ItemList.item
 msgid  "~Scaling"
 msgstr "كۆرسىتىش نىسبىتى(~S)"
-
-#: source/smres.src#CMDBOXWINDOW_TEXT.#define.Text
-msgid  "Commands"
-msgstr "بۇيرۇقلار"
 
 #: source/commands.src#RID_COMMANDMENU.RID_UNBINOPS_MENU.MenuItem.Text
 msgid  "~Unary/Binary Operators"

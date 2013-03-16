@@ -137,7 +137,7 @@ msgstr "ساقلا"
 
 #: source/basicide/basidesh.src#RID_STR_SOURCETOBIG.String.Text
 msgid  "The source text is too large and can be neither compiled nor saved.\nDelete some of the comments or transfer some methods into another module."
-msgstr ""
+msgstr "ئەسلى تېكست بەك كۆپ،  ساقلاپ ۋە تەرجىمە-تەھرىرلىيەلمەيدۇ.\nبەزى ئىزاھات ياكى بىر قانچە ئۇسۇلنى باشقا بۆلەككە يۆتكەڭ."
 
 #: source/basicide/basidesh.src#RID_STR_ERROROPENSTORAGE.String.Text
 msgid  "Error opening file"
@@ -201,7 +201,7 @@ msgstr "'XX' ھۆججەت مەۋجۇد"
 
 #: source/basicide/basidesh.src#RID_STR_CANNOTRUNMACRO.String.Text
 msgid  "For security reasons, you cannot run this macro.\n\nFor more information, check the security settings."
-msgstr ""
+msgstr "بىخەتەرلىك سەۋەبىدىن بۇ ماكرونى ئىجرا قىلالمايسىز.\n\nتېخىمۇ كۆپ ئۇچۇرنى بىخەتەرلىك تەڭشىكىدىن تەكشۈرۈڭ."
 
 #: source/basicide/basidesh.src#RID_STR_COMPILEERROR.String.Text
 msgid  "Compile Error: "
@@ -373,7 +373,7 @@ msgstr "ئاتتىن بىرنى كىرگۈزۈش زۆرۈر."
 
 #: source/basicide/basidesh.src#RID_STR_WILLSTOPPRG.String.Text
 msgid  "You will have to restart the program after this edit.\nContinue?"
-msgstr ""
+msgstr "تەھرىرلىگەندىن كېيىن بۇ پروگراممىنى قايتا قوزغىتىڭ.\nداۋاملاشتۇرامسىز؟"
 
 #: source/basicide/basidesh.src#RID_STR_SEARCHALLMODULES.String.Text
 msgid  "Do you want to replace the text in all active modules?"
@@ -509,7 +509,7 @@ msgstr "سۆزلىشىش رامكىسى ئەكىر - ئاتى ئىشلىتىلگ
 
 #: source/basicide/basidesh.src#RID_STR_DLGIMP_CLASH_TEXT.String.Text
 msgid  "The library already contains a dialog with the name:\n\n$(ARG1)\n\nRename dialog to keep current dialog or replace existing dialog.\n "
-msgstr ""
+msgstr "بۇ ئامباردا تۆۋەندىكى ئاتنى ئۆز ئىچىگە ئالغان سۆزلەشكۈ بار:\n\n$(ARG1)\n\nسۆزلەشكۈنىڭ ئاتىنى ئۆزگەرتىپ نۆۋەتتىكى سۆزلەشكۈنى ساقلاپ قالغىلى ياكى نۆۋەتتىكى سۆزلەشكۈنى ئالماشتۇرۇشقىمۇ بولىدۇ.\n "
 
 #: source/basicide/basidesh.src#RID_STR_DLGIMP_MISMATCH_ADD.String.Text
 msgid  "Add"
@@ -525,7 +525,7 @@ msgstr "سۆزلىشىش رامكىسى ئەكىر - تىل ماسلاشمىدى
 
 #: source/basicide/basidesh.src#RID_STR_DLGIMP_MISMATCH_TEXT.String.Text
 msgid  "The dialog to be imported supports other languages than the target library.\n\nAdd these languages to the library to keep additional language resources provided by the dialog or omit them to stay with the current library languages.\n\nNote: For languages not supported by the dialog the resources of the dialog's default language will be used.\n "
-msgstr ""
+msgstr "ئەكىرىدىغان سۆزلەشكۈ نىشان ئامبار تىلى سىرتىدىكى باشقا تىللارنى قوللايدۇ.\n\nبۇ تىللارنى ئامبارغا قوشۇپ سۆزلەشكۈدە تەمىنلەنگەن باشقا تىل مەنبەلىرىنى ساقلاپ قالغىلى ياكى ئۇلارغا پەرۋا قىلماي نۆۋەتتىكى تىل ئامبىرىنى ساقلاپ قالغىلىمۇ بولىدۇ.\n\nئىزاھ: ئەگەر بەزى تىللارنى سۆزلەشكۈ قوللىمىسا، سۆزلەشكۈدىكى كۆڭۈلدىكى تىل مەنبەسىنى ئىشلىتىدۇ.\n "
 
 #: source/basicide/basicprint.src#RID_PRINTDLG_STRLIST.item1.ItemList.item
 msgid  "Print range"
@@ -757,7 +757,7 @@ msgstr "كۆڭۈلدىكى"
 
 #: source/dlged/managelang.src#RID_DLG_MANAGE_LANGUAGE.FT_INFO.FixedText.Text
 msgid  "The default language is used if no localization for a user interface locale is present. Furthermore all strings from the default language are copied to resources of newly added languages."
-msgstr ""
+msgstr "ئەگەر يەرلەشتۈرۈلگەن ئىشلەتكۈچى كۆرۈنمە يۈزى تىل مۇھىتى بولمىسا ئۇنداقتا كۆڭۈلدىكى تىلنى ئىشلىتىدۇ. ئۇندىن باشقا، كۆڭۈلدىكى تىلنىڭ بارلىق ھەرپ تىزمىسى يېڭىدىن قوشۇلغان تىل مەنبەسىگە كۆچۈرۈلىدۇ."
 
 #: source/dlged/managelang.src#RID_DLG_MANAGE_LANGUAGE.PB_CLOSE.OKButton.Text
 msgid  "~Close"
@@ -781,7 +781,7 @@ msgstr "تىل مەنبەسىنى ئۆچۈر"
 
 #: source/dlged/managelang.src#RID_QRYBOX_LANGUAGE.QueryBox.Message
 msgid  "You are about to delete the resources for the selected language(s). All user interface strings for this language(s) will be deleted.\n\nDo you want to delete the resources of the selected language(s)?"
-msgstr ""
+msgstr "سىز تاللىغان تىلنىڭ مەنبەسىنى ئۆچۈرمەكچى. بۇ تىلنىڭ بارلىق ئىشلەتكۈچى كۆرۈنمە ھەرپ تىزمىسى ئۆچۈرۈلىدۇ.\n\nتاللىغان تىلنىڭ مەنبەسىنى ئۆچۈرەمسىز؟"
 
 #: source/dlged/managelang.src#RID_DLG_SETDEF_LANGUAGE.ModalDialog.Text
 msgid  "Set Default User Interface Language"
@@ -793,7 +793,7 @@ msgstr "كۆڭۈلدىكى تىل"
 
 #: source/dlged/managelang.src#RID_DLG_SETDEF_LANGUAGE.FT_DEF_INFO.FixedText.Text
 msgid  "Select a language to define the default user interface language. All currently present strings will be assigned to the resources created for the selected language."
-msgstr ""
+msgstr "تىلدىن بىرنى تاللاپ كۆڭۈلدىكى ئىشلەتكۈچى كۆرۈنۈشىنى بەلگىلەڭ. نۆۋەتتە مەۋجۇد بولغان بارلىق ھەرپ تىزمىسى تاللىغان تىل قۇرغان مەنبەگە بۇيرۇلىدۇ."
 
 #: source/dlged/managelang.src#RID_DLG_SETDEF_LANGUAGE.STR_ADDLANG_TITLE.String.Text
 msgid  "Add User Interface Languages"
@@ -805,7 +805,7 @@ msgstr "ئىشلىتىلىشچان تىل"
 
 #: source/dlged/managelang.src#RID_DLG_SETDEF_LANGUAGE.STR_ADDLANG_INFO.String.Text
 msgid  "Select languages to be added. Resources for these languages will be created in the library. Strings of the current default user interface language will be copied to these new resources by default."
-msgstr ""
+msgstr "قوشىدىغان تىلنى تاللاڭ. سانداندا بۇ تىللارنىڭ مەنبەسى قۇرۇلىدۇ. ئادەتتىكى ئەھۋالدا نۆۋەتتىكى ئىشلەتكۈچى كۆرۈنمە تىلىنىڭ ھەرپ تىزمىسى بۇ يېڭى مەنبەگە كۆچۈرۈلىدۇ."
 
 #: source/dlged/dlgresid.src#RID_STR_BRWTITLE_PROPERTIES.String.Text
 msgid  "Properties: "

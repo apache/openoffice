@@ -129,7 +129,7 @@ msgstr "शीर्षकं समावेशयितुं क्लिक�
 
 #: source/core/glob.src#STR_PRESOBJ_OUTLINE.String.Text
 msgid  "Click to add text"
-msgstr "पाठं समावेशयितुं क्लिक्कुरु"
+msgstr "बहिर्रेखां समावेशयितुं क्लिक्कुरु"
 
 #: source/core/glob.src#STR_PRESOBJ_TEXT.String.Text
 msgid  "Click to add text"
@@ -217,7 +217,7 @@ msgstr " अवसर्पिणीम् चालय "
 
 #: source/core/glob.src#STR_NOT_ENOUGH_MEMORY.String.Text
 msgid  "Not enough memory!\nThe action will be aborted."
-msgstr ""
+msgstr "न पर्याप्तस्मृतिः ! \nक्रियां मुञ्चिता।"
 
 #: source/core/glob.src#STR_POOLSHEET_MEASURE.String.Text
 msgid  "Dimension Line"
@@ -341,11 +341,11 @@ msgstr "$(ARG2)(पंक्तिः,स्तंभः) मध्ये सं
 
 #: source/core/glob.src#RID_SD_ERRHDL.ERR_CODE ( ERRCODE_CLASS_READ , ERR_FORMAT_FILE_ROWCOL ).String.Text
 msgid  "Format error discovered in the file in sub-document $(ARG1) at position $(ARG2)(row,col)."
-msgstr ""
+msgstr "उपलेख्यपत्रं $(ARG1) मध्ये $(ARG2)(row,col) संचिकायां संरचन त्रुटिः प्राप्ता।"
 
 #: source/core/glob.src#RID_SD_ERRHDL.ERR_CODE ( ERRCODE_CLASS_READ , WARN_FORMAT_FILE_ROWCOL ).String.Text
 msgid  "Format error discovered in the file in sub-document $(ARG1) at position $(ARG2)(row,col)."
-msgstr ""
+msgstr "उपलेख्यपत्रं $(ARG1)मध्ये $(ARG2)(row,col)  संचिकायां संरचन त्रुटिः प्राप्ता।"
 
 #: source/core/glob.src#STR_3DOBJECTBARSHELL.String.Text
 msgid  "3-D Settings"
@@ -625,7 +625,7 @@ msgstr "HTML घटनं पुनराख्याहि"
 
 #: source/ui/accessibility/accessibility.src#SID_SD_A11Y_D_DRAWVIEW_N.String.Text
 msgid  "Drawing View"
-msgstr "चित्रणदृश्यम्"
+msgstr "रेखाचित्रदृश्यम् "
 
 #: source/ui/accessibility/accessibility.src#SID_SD_A11Y_D_DRAWVIEW_D.String.Text
 msgid  "This is where you create and edit drawings."
@@ -785,7 +785,7 @@ msgstr "प्रभाव-विकल्पाः"
 
 #: source/ui/animations/CustomAnimationDialog.src#DLG_CUSTOMANIMATION.1.RID_TP_CUSTOMANIMATION_EFFECT.PageItem.Text
 msgid  "Effect"
-msgstr "प्रभावः "
+msgstr "प्रभावः"
 
 #: source/ui/animations/CustomAnimationDialog.src#DLG_CUSTOMANIMATION.1.RID_TP_CUSTOMANIMATION_DURATION.PageItem.Text
 msgid  "Timing"
@@ -1013,7 +1013,7 @@ msgstr "वृहत्तरः"
 
 #: source/ui/animations/CustomAnimation.src#RID_CUSTOMANIMATION_FONTSIZE_POPUP.CM_SIZE_400.MenuItem.Text
 msgid  "Extra large"
-msgstr "अतिदीर्घः"
+msgstr "अतिविशालः"
 
 #: source/ui/animations/CustomAnimation.src#RID_CUSTOMANIMATION_SCALE_POPUP.CM_SIZE_25.MenuItem.Text
 msgid  "Tiny"
@@ -1225,7 +1225,7 @@ msgstr "ट्रिगर्"
 
 #: source/ui/animations/CustomAnimation.src#STR_CUSTOMANIMATION_LIST_HELPTEXT.String.Text
 msgid  "First select the slide element and then click 'Add...' to add an animation effect."
-msgstr ""
+msgstr "प्रथमं अवसर्पिणी-तत्वं चिनुहि अनन्तरम् एकं सञ्जीवन-प्रभावं समायोजयितुं 'समायोजय...'  क्लिक् कुरु।"
 
 #: source/ui/animations/SlideTransitionPane.src#DLG_SLIDE_TRANSITION_PANE.Control.Text
 msgid  "Slide Transition"
@@ -1428,8 +1428,8 @@ msgid  "~Table..."
 msgstr "~सारणी..."
 
 #: source/ui/app/popup2_tmpl.src#RID_GRAPHIC_TABLE_POPUP.DUMMY.MenuItem.Text
-msgid  "Colu~mn"
-msgstr "स्तंभ"
+msgid  "~Cell"
+msgstr "~कोष्ठिका"
 
 #: source/ui/app/popup2_tmpl.src#RID_GRAPHIC_TABLE_POPUP.DUMMY.SID_TABLE_MERGE_CELLS.MenuItem.Text
 msgid  "~Merge"
@@ -1451,9 +1451,13 @@ msgstr "केंद्रः"
 msgid  "~Bottom"
 msgstr "तलम् "
 
+#: source/ui/app/popup2_tmpl.src#RID_GRAPHIC_TABLE_POPUP.DUMMY.MenuItem.Text
+msgid  "~Row"
+msgstr "~पंक्ति"
+
 #: source/ui/app/popup2_tmpl.src#RID_GRAPHIC_TABLE_POPUP.DUMMY.SID_TABLE_DISTRIBUTE_ROWS.MenuItem.Text
 msgid  "Space ~Equally"
-msgstr "Space ~Equally"
+msgstr "अन्तरं ~समानतया"
 
 #: source/ui/app/popup2_tmpl.src#RID_GRAPHIC_TABLE_POPUP.DUMMY.SID_TABLE_SELECT_ROW.MenuItem.Text
 msgid  "~Select"
@@ -1466,6 +1470,10 @@ msgstr ""
 #: source/ui/app/popup2_tmpl.src#RID_GRAPHIC_TABLE_POPUP.DUMMY.SID_TABLE_DELETE_ROW.MenuItem.Text
 msgid  "~Delete"
 msgstr "लोपय"
+
+#: source/ui/app/popup2_tmpl.src#RID_GRAPHIC_TABLE_POPUP.DUMMY.MenuItem.Text
+msgid  "Colu~mn"
+msgstr "स्तंभ"
 
 #: source/ui/app/popup2_tmpl.src#RID_GRAPHIC_TABLE_POPUP.DUMMY.SID_TABLE_DISTRIBUTE_COLUMNS.MenuItem.Text
 msgid  "Space ~Equally"
@@ -1482,14 +1490,6 @@ msgstr ""
 #: source/ui/app/popup2_tmpl.src#RID_GRAPHIC_TABLE_POPUP.DUMMY.SID_TABLE_DELETE_COL.MenuItem.Text
 msgid  "~Delete"
 msgstr "लोपय"
-
-#: source/ui/app/popup2_tmpl.src#RID_GRAPHIC_TABLE_POPUP.DUMMY.MenuItem.Text
-msgid  "~Cell"
-msgstr "~कोष्ठिका"
-
-#: source/ui/app/popup2_tmpl.src#RID_GRAPHIC_TABLE_POPUP.DUMMY.MenuItem.Text
-msgid  "~Row"
-msgstr "~पंक्ति"
 
 #: source/ui/app/strings.src#STR_DRAW_TOOLBOX.String.Text
 msgid  "Drawings Toolbar"
@@ -1733,7 +1733,7 @@ msgstr "कृपया नूतन-शरचिह्नमुखस्य क
 
 #: source/ui/app/strings.src#STR_WARN_NAME_DUPLICATE.String.Text
 msgid  "The name chosen already exists. \nPlease enter another name."
-msgstr ""
+msgstr "चित नाम पूर्वतः विद्यते। \nकृपया अन्यत् नाम अभिलिख।"
 
 #: source/ui/app/strings.src#STR_UNDO_ANIMATION.String.Text
 msgid  "Animation parameters"
@@ -1761,7 +1761,7 @@ msgstr "नाम"
 
 #: source/ui/app/strings.src#STR_WARN_PAGE_EXISTS.String.Text
 msgid  "The slide name already exists or is invalid. Please enter another name."
-msgstr ""
+msgstr "अवसर्पिणी नाम पूर्वतः एव विद्यते अथवा अवेद्यम् अस्ति।कृपया अन्यत् नाम अभिलिखत।"
 
 #: source/ui/app/strings.src#STR_SNAPDLG_SETLINE.String.Text
 msgid  "Edit Snap Line"
@@ -1804,8 +1804,8 @@ msgid  "Insert slides"
 msgstr "अवसर्पिणीः समावेशय"
 
 #: source/ui/app/strings.src#STR_ASK_DELETE_LAYER.String.Text
-msgid  "Are you sure you want to delete the level "$"?\nNote: All objects on this level will be deleted!"
-msgstr ""
+msgid  "Are you sure you want to delete the level \"$\"?\nNote: All objects on this level will be deleted!"
+msgstr "किं भवान्त्वं \"$\" स्तरं विलोपितुं दृढमनाः अस्ति\nटिप्पणी : अस्य स्तरस्य उपरि सर्वाणि वस्तूनि लुप्स्यन्ति!"
 
 #: source/ui/app/strings.src#STR_ASK_DELETE_ALL_PICTURES.String.Text
 msgid  "Do you really want to delete all images?"
@@ -1853,7 +1853,7 @@ msgstr "पाठाबन्धं समावेशय"
 
 #: source/ui/app/strings.src#STR_ACTION_NOTPOSSIBLE.String.Text
 msgid  "This function cannot be run \nwith the selected objects."
-msgstr ""
+msgstr "चितैः वस्तुभिः सह चालने एषा क्रिया अशक्या\n"
 
 #: source/ui/app/strings.src#STR_DLG_INSERT_PAGES_FROM_FILE.String.Text
 msgid  "Insert File"
@@ -1865,7 +1865,7 @@ msgstr "संचिका सढ्चयितुं न शक्या !"
 
 #: source/ui/app/strings.src#STR_SCALE_OBJECTS.String.Text
 msgid  "The format of the new pages will be adapted.\nDo you want to adapt the objects, too?"
-msgstr ""
+msgstr "नूतनपृष्ठस्य संरचना स्वीकरिष्यते । \n  किं भवान् वस्तु अपि स्वीकर्तुम् इच्छति ?"
 
 #: source/ui/app/strings.src#STR_CREATE_PAGES.String.Text
 msgid  "Create slides"
@@ -1885,7 +1885,7 @@ msgstr "संपादय"
 
 #: source/ui/app/strings.src#RID_UNDO_DELETE_WARNING.FT_UNDO_DELETE_WARNING.FixedText.Text
 msgid  "This action deletes the list of actions that can\nbe undone. Previous changes made to the document are still valid,\nbut cannot be undone. Do you want to continue and\nthus assign the new slide design?"
-msgstr ""
+msgstr "एषा क्रिया, क्रियाणां सूचीं लोपयति \nएतत् अन्यथा कर्तुं शक्यते।लेख्यपत्रे पूर्वं कृतानि परिवर्तनानि इदानीमपि विद्यते।\nपरन्तु तानि अन्यथा कर्तुं न शक्तानि\nकिं भवान् अनुवर्तितुम् इच्छति एवम् इत्थं नूतनावमर्षिण्याः घटनं निश्चयितुमिच्छति?"
 
 #: source/ui/app/strings.src#RID_UNDO_DELETE_WARNING.CB_UNDO_DELETE_DISABLE.CheckBox.Text
 msgid  "~Do not show this warning again"
@@ -1905,7 +1905,7 @@ msgstr "निर्दिष्ट-मुद्रके लेख्यपत�
 
 #: source/ui/app/strings.src#STR_REMOVE_LINK.String.Text
 msgid  "This graphic is linked to a document. \nDo you want to unlink the graphic in order to edit it?"
-msgstr ""
+msgstr "एतत् सुचित्रम् लेक्यपत्रेण संपृक्तम् अस्ति। \nकिं भवान् संपादनार्थं संपर्कं सुचित्रम् अपनयितुम् इच्छति ?"
 
 #: source/ui/app/strings.src#STR_IMPORT_GRFILTER_OPENERROR.String.Text
 msgid  "Graphics file cannot be opened"
@@ -2017,7 +2017,7 @@ msgstr " (बहिर्रेखा)"
 
 #: source/ui/app/strings.src#STR_WARN_SCALE_FAIL.String.Text
 msgid  "The specified scale is invalid.\nDo you want to enter a new one?"
-msgstr ""
+msgstr "निर्दिष्टमापकः अवैधः अस्ति । \nकिं भवान् एकं नूतनं प्रवेशितुम् इच्छति ?"
 
 #: source/ui/app/strings.src#STR_CLICK_ACTION_NONE.String.Text
 msgid  "No action"
@@ -2265,7 +2265,7 @@ msgstr "विस्तार-रहितं संचिकानाम "
 
 #: source/ui/app/strings.src#STR_RELEASE_GRAPHICLINK.String.Text
 msgid  "This graphic is linked to a document. Do you want to unlink the graphic in order to edit it?"
-msgstr ""
+msgstr "एतत् सुचित्रं लेख्यपत्राय संपृक्तम् अस्ति। किं भवान् सुचित्रं संपादनार्थं संपर्कम् अपनयितुम् इच्छति?"
 
 #: source/ui/app/strings.src#STR_NEW_CUSTOMSHOW.String.Text
 msgid  "New Custom Slide Show"
@@ -2301,11 +2301,11 @@ msgstr "सर्वेषां रेखाचित्र-वस्तुष�
 
 #: source/ui/app/strings.src#STR_PUBDLG_SAMENAME.String.Text
 msgid  "A design already exists with this name.\nDo you want to replace it?"
-msgstr ""
+msgstr "एतेन नाम्ना सह एकं घटनं पूर्वमेव विद्यते ।..\n किं भवान् एतत् प्रतिस्थापितुंम् इच्छति ?"
 
 #: source/ui/app/strings.src#STR_HTMLATTR_TEXT.String.Text
 msgid  "Text"
-msgstr "पाठ्यम्"
+msgstr "पाठः"
 
 #: source/ui/app/strings.src#STR_HTMLATTR_LINK.String.Text
 msgid  "Hyperlink"
@@ -2417,7 +2417,7 @@ msgstr "चित्रनिष्यन्दकाः"
 
 #: source/ui/app/strings.src#STR_WARNING_NOSOUNDFILE.String.Text
 msgid  "The file %\nis not a valid sound file !"
-msgstr ""
+msgstr "संचिका %\n वैध-ध्वनिः-संचिका नास्ति !"
 
 #: source/ui/app/strings.src#STR_UNDO_CONVERT_TO_METAFILE.String.Text
 msgid  "Convert to metafile"
@@ -2631,6 +2631,14 @@ msgstr ""
 msgid  "Insert Movie"
 msgstr ""
 
+#: source/ui/app/res_bmp.src#SfxStyleFamiliesRes1.#define.Text
+msgid  "Graphics Styles"
+msgstr "सुचित्रशैल्यः"
+
+#: source/ui/app/res_bmp.src#SfxStyleFamiliesRes2.#define.Text
+msgid  "Presentation Styles"
+msgstr "प्रस्तुतिशैल्यः"
+
 #: source/ui/app/res_bmp.src#STR_STYLE_FILTER_USED.String.Text
 msgid  "Applied Styles"
 msgstr ""
@@ -2642,14 +2650,6 @@ msgstr ""
 #: source/ui/app/res_bmp.src#STR_STYLE_FILTER_ALL.String.Text
 msgid  "All Styles"
 msgstr ""
-
-#: source/ui/app/res_bmp.src#SfxStyleFamiliesRes1.#define.Text
-msgid  "Graphics Styles"
-msgstr "सुचित्रशैल्यः"
-
-#: source/ui/app/res_bmp.src#SfxStyleFamiliesRes2.#define.Text
-msgid  "Presentation Styles"
-msgstr "प्रस्तुतिशैल्यः"
 
 #: source/ui/app/menuids_tmpl.src#MN_DISTRIBUTE.SID_DISTRIBUTE_DLG.MenuItem.Text
 msgid  "~Distribution..."
@@ -2933,7 +2933,7 @@ msgstr "तलम् "
 
 #: source/ui/app/menuids_tmpl.src#MN_CLOSE_OBJECT.SID_OBJECT_CLOSE.MenuItem.Text
 msgid  "Close ~Object"
-msgstr "वस्तु संवर्तय"
+msgstr "वस्तु पिधेहि"
 
 #: source/ui/app/menuids_tmpl.src#MN_BEZIER.SID_BEZIER_EDIT.MenuItem.Text
 msgid  "Edit ~Points"
@@ -3309,7 +3309,7 @@ msgstr "साधनपट्टा:"
 
 #: source/ui/app/toolbox.src#RID_DRAW_VIEWER_TOOLBOX.String.Text
 msgid  "Function Bar (viewing mode)"
-msgstr "व्यापारपट्टः (दृश्यपक्षः)"
+msgstr "क्रियापट्टः (दृश्यप्रकारः)"
 
 #: source/ui/app/toolbox.src#RID_GRAPHIC_VIEWER_TOOLBOX.String.Text
 msgid  "Function Bar (viewing mode)"
@@ -3328,7 +3328,7 @@ msgid  "~Table..."
 msgstr ""
 
 #: source/ui/app/popup.src#RID_DRAW_TABLEOBJ_INSIDE_POPUP.DUMMY.MenuItem.Text
-msgid  "Colu~mn"
+msgid  "~Cell"
 msgstr ""
 
 #: source/ui/app/popup.src#RID_DRAW_TABLEOBJ_INSIDE_POPUP.DUMMY.SID_TABLE_MERGE_CELLS.MenuItem.Text
@@ -3351,6 +3351,10 @@ msgstr ""
 msgid  "~Bottom"
 msgstr ""
 
+#: source/ui/app/popup.src#RID_DRAW_TABLEOBJ_INSIDE_POPUP.DUMMY.MenuItem.Text
+msgid  "~Row"
+msgstr ""
+
 #: source/ui/app/popup.src#RID_DRAW_TABLEOBJ_INSIDE_POPUP.DUMMY.SID_TABLE_DISTRIBUTE_ROWS.MenuItem.Text
 msgid  "Space ~Equally"
 msgstr ""
@@ -3365,6 +3369,10 @@ msgstr ""
 
 #: source/ui/app/popup.src#RID_DRAW_TABLEOBJ_INSIDE_POPUP.DUMMY.SID_TABLE_DELETE_ROW.MenuItem.Text
 msgid  "~Delete"
+msgstr ""
+
+#: source/ui/app/popup.src#RID_DRAW_TABLEOBJ_INSIDE_POPUP.DUMMY.MenuItem.Text
+msgid  "Colu~mn"
 msgstr ""
 
 #: source/ui/app/popup.src#RID_DRAW_TABLEOBJ_INSIDE_POPUP.DUMMY.SID_TABLE_DISTRIBUTE_COLUMNS.MenuItem.Text
@@ -3439,33 +3447,25 @@ msgstr ""
 msgid  "~Insert Slide"
 msgstr ""
 
-#: source/ui/app/popup.src#RID_DRAW_TABLEOBJ_INSIDE_POPUP.DUMMY.MenuItem.Text
-msgid  "~Cell"
-msgstr ""
-
-#: source/ui/app/popup.src#RID_DRAW_TABLEOBJ_INSIDE_POPUP.DUMMY.MenuItem.Text
-msgid  "~Row"
-msgstr ""
-
 #: source/ui/app/sdstring.src#STR_SAR_NOT_FOUND.String.Text
 msgid  "Search key not found."
 msgstr "अनुसन्धानकुञ्चिका न प्राप्ता।"
 
 #: source/ui/app/sdstring.src#STR_SAR_WRAP_FORWARD.String.Text
 msgid  "%PRODUCTNAME Impress has searched to the end of the presentation. Do you want to continue at the beginning?"
-msgstr ""
+msgstr "%PRODUCTNAME इंप्रेस् प्रस्तुतेः अन्तम् आन्वेषयत्।किं भवान् प्रारंभतः अनुवर्तयितुम् इच्छति?"
 
 #: source/ui/app/sdstring.src#STR_SAR_WRAP_BACKWARD.String.Text
 msgid  "%PRODUCTNAME Impress has searched to the beginning of the presentation. Do you want to continue at the end?"
-msgstr ""
+msgstr "%PRODUCTNAME इंप्रेस् प्रस्तुतेः प्रारंभम् आन्वेषयत्।किं भवान् अन्तपर्यन्तम् अनुवर्तयितुम् इच्छति?"
 
 #: source/ui/app/sdstring.src#STR_SAR_WRAP_FORWARD_DRAW.String.Text
 msgid  "%PRODUCTNAME Draw has searched to the end of the document. Do you want to continue at the beginning?"
-msgstr ""
+msgstr "%PRODUCTNAME ड्रा लेख्यपत्रस्य अन्तम् आन्वेषयत्।किं भवान् प्रारंभे अनुवर्तयितुम् इच्छति?"
 
 #: source/ui/app/sdstring.src#STR_SAR_WRAP_BACKWARD_DRAW.String.Text
 msgid  "%PRODUCTNAME Draw has searched to the beginning of the document. Do you want to continue at the end?"
-msgstr ""
+msgstr "%PRODUCTNAME ड्रा लेख्यपत्रस्य प्रारंभम् आन्वेषयत्।किं भवान् अन्तपर्यन्तम् अनुवर्तयितुम् इच्छति?"
 
 #: source/ui/app/menuids2_tmpl.src#MN_NEWDOCDIRECT.SID_NEWDOCDIRECT.MenuItem.Text
 msgid  "~New"
@@ -3486,6 +3486,10 @@ msgstr "प्रेषय"
 #: source/ui/app/menuids2_tmpl.src#MN_PAGESETUP.SID_PAGESETUP.MenuItem.Text
 msgid  "~Page..."
 msgstr "पृष्ठः..."
+
+#: source/ui/app/menuids2_tmpl.src#20.#define.Text
+msgid  "~Edit"
+msgstr "संपादय"
 
 #: source/ui/app/menuids2_tmpl.src#MN_PASTE2.SID_PASTE2.MenuItem.Text
 msgid  "Paste ~Special..."
@@ -3510,6 +3514,10 @@ msgstr "स्तरं लोपय..."
 #: source/ui/app/menuids2_tmpl.src#MN_MANAGE_LINKS.SID_MANAGE_LINKS.MenuItem.Text
 msgid  "Lin~ks..."
 msgstr "संपर्काः..."
+
+#: source/ui/app/menuids2_tmpl.src#23.#define.Text
+msgid  "~View"
+msgstr "दृश्यम्"
 
 #: source/ui/app/menuids2_tmpl.src#MN_TOGGLETOOLBAR.SID_TOGGLETOOLBAR.MenuItem.Text
 msgid  "Main ~Toolbar"
@@ -3575,6 +3583,10 @@ msgstr "कार्यस्थानम्"
 msgid  "~Master"
 msgstr "प्रधानः"
 
+#: source/ui/app/menuids2_tmpl.src#21.#define.Text
+msgid  "~Insert"
+msgstr "समावेशय"
+
 #: source/ui/app/menuids2_tmpl.src#MN_INSERTPAGE.SID_INSERTPAGE.MenuItem.Text
 msgid  "Slid~e..."
 msgstr "अवसर्पिणी..."
@@ -3597,7 +3609,7 @@ msgstr "सारांशावसर्पिणी "
 
 #: source/ui/app/menuids2_tmpl.src#MN_INSERTLAYER.SID_INSERTLAYER.MenuItem.Text
 msgid  "~Layer..."
-msgstr "स्तरः..."
+msgstr "स्तरम्..."
 
 #: source/ui/app/menuids2_tmpl.src#MN_INSERT_FLD_DATE_FIX.SID_INSERT_FLD_DATE_FIX.MenuItem.Text
 msgid  "~Date (fixed)"
@@ -3659,6 +3671,10 @@ msgstr "संचिका..."
 msgid  "Fiel~ds"
 msgstr "क्षेत्राणि"
 
+#: source/ui/app/menuids2_tmpl.src#22.#define.Text
+msgid  "F~ormat"
+msgstr "रचना"
+
 #: source/ui/app/menuids2_tmpl.src#MN_TEXTATTR_DLG.SID_TEXTATTR_DLG.MenuItem.Text
 msgid  "Te~xt..."
 msgstr "पाठः..."
@@ -3682,6 +3698,14 @@ msgstr "अभिन्यासं विवर्तय..."
 #: source/ui/app/menuids2_tmpl.src#MNSUB_TEMPLATES.MN_SUB_TEMPLATES.MenuItem.Text
 msgid  "Styl~es"
 msgstr "शैल्यः"
+
+#: source/ui/app/menuids2_tmpl.src#ITEM_TOOLS_ID.#define.Text
+msgid  "~Tools"
+msgstr "उपकरणानि"
+
+#: source/ui/app/menuids2_tmpl.src#26.#define.Text
+msgid  "~Slide Show"
+msgstr "अवसर्पिणी-प्रदर्शनम्"
 
 #: source/ui/app/menuids2_tmpl.src#MN_SPELLING.SID_SPELL_DIALOG.MenuItem.Text
 msgid  "~Check..."
@@ -3723,6 +3747,10 @@ msgstr "अंतःक्रिया..."
 msgid  "~Spellcheck"
 msgstr "वर्तनीपरीक्षणम्"
 
+#: source/ui/app/menuids2_tmpl.src#24.#define.Text
+msgid  "~Modify"
+msgstr "विवर्तय"
+
 #: source/ui/app/menuids2_tmpl.src#MN_MOREFRONT.SID_MOREFRONT.MenuItem.Text
 msgid  "Bring ~Forward"
 msgstr "पुरस्तादानय"
@@ -3761,11 +3789,11 @@ msgstr "ग्रेमापकम्"
 
 #: source/ui/app/menuids2_tmpl.src#MN_OUTPUT_QUALITY_BLACKWHITE.SID_OUTPUT_QUALITY_BLACKWHITE.MenuItem.Text
 msgid  "~Black and White"
-msgstr "धवलः कृष्णश्च"
+msgstr "धवलकृष्णश्च"
 
 #: source/ui/app/menuids2_tmpl.src#MN_OUTPUT_QUALITY_CONTRAST.SID_OUTPUT_QUALITY_CONTRAST.MenuItem.Text
 msgid  "~High Contrast"
-msgstr "उच्चैः भेदः"
+msgstr "उच्-विरोधी "
 
 #: source/ui/app/menuids2_tmpl.src#MN_PREVIEW_QUALITY_COLOR.SID_PREVIEW_QUALITY_COLOR.MenuItem.Text
 msgid  "~Color"
@@ -3794,34 +3822,6 @@ msgstr "गुणवत्तां प्रदर्शय"
 #: source/ui/app/menuids2_tmpl.src#MNSUB_PREVIEW_OUTPUT_QUALITY.MN_SUB_PREVIEW_OUTPUT_QUALITY.ItemList.Text
 msgid  "Pre~view Mode"
 msgstr "पूर्वदृश्यप्रकारः"
-
-#: source/ui/app/menuids2_tmpl.src#20.#define.Text
-msgid  "~Edit"
-msgstr "संपादय"
-
-#: source/ui/app/menuids2_tmpl.src#23.#define.Text
-msgid  "~View"
-msgstr "दृश्यम्"
-
-#: source/ui/app/menuids2_tmpl.src#21.#define.Text
-msgid  "~Insert"
-msgstr "समावेशय"
-
-#: source/ui/app/menuids2_tmpl.src#22.#define.Text
-msgid  "F~ormat"
-msgstr "रचना"
-
-#: source/ui/app/menuids2_tmpl.src#ITEM_TOOLS_ID.#define.Text
-msgid  "~Tools"
-msgstr "उपकरणानि"
-
-#: source/ui/app/menuids2_tmpl.src#26.#define.Text
-msgid  "~Slide Show"
-msgstr "अवसर्पिणी-प्रदर्शनम्"
-
-#: source/ui/app/menuids2_tmpl.src#24.#define.Text
-msgid  "~Modify"
-msgstr "विवर्तय"
 
 #: source/ui/dlg/sdpreslt.src#DLG_PRESLT.FT_LAYOUT.FixedText.Text
 msgid  "~Select a slide design"
@@ -4687,6 +4687,10 @@ msgstr "अवसर्पिणीसंख्या"
 msgid  "Master Elements"
 msgstr "मुख्यतत्वानि"
 
+#: source/ui/dlg/tpoption.src#SCALE_TEXT.#define.Text
+msgid  "Scale"
+msgstr "मापकः"
+
 #: source/ui/dlg/tpoption.src#TP_OPTIONS_CONTENTS.TabPage.Text
 msgid  "Contents"
 msgstr "विषयाः"
@@ -4802,10 +4806,6 @@ msgstr "पृष्ठविस्तारः"
 #: source/ui/dlg/tpoption.src#TP_OPTIONS_MISC.FT_PAGEHEIGHT.FixedText.Text
 msgid  "Page ~height"
 msgstr "पृष्ठोच्चता"
-
-#: source/ui/dlg/tpoption.src#SCALE_TEXT.#define.Text
-msgid  "Scale"
-msgstr "मापकः"
 
 #: source/ui/dlg/morphdlg.src#DLG_MORPH.GRP_PRESET.FixedLine.Text
 msgid  "Settings"
@@ -5056,22 +5056,6 @@ msgid  "Alignment"
 msgstr "पंक्तीकरणम्"
 
 #: source/ui/dlg/animobjs.src#FLT_WIN_ANIMATION.LB_ADJUSTMENT.Default.StringList.item
-msgid  "Bottom Right"
-msgstr "दक्षिणतलम्"
-
-#: source/ui/dlg/animobjs.src#FLT_WIN_ANIMATION.BTN_CREATE_GROUP.PushButton.Text
-msgid  "Create"
-msgstr "निर्मातु"
-
-#: source/ui/dlg/animobjs.src#FLT_WIN_ANIMATION.GRP_ANIMATION_GROUP.FixedLine.Text
-msgid  "Animation group"
-msgstr "सञ्जीवनसमूहः"
-
-#: source/ui/dlg/animobjs.src#FLT_WIN_ANIMATION.STR_DISPLAY.String.Text
-msgid  "Preview"
-msgstr ""
-
-#: source/ui/dlg/animobjs.src#FLT_WIN_ANIMATION.LB_ADJUSTMENT.Default.StringList.item
 msgid  "Top Left"
 msgstr "ऊर्ध्ववामभाग:"
 
@@ -5102,6 +5086,22 @@ msgstr "ऊर्ध्वदक्षिणभागः"
 #: source/ui/dlg/animobjs.src#FLT_WIN_ANIMATION.LB_ADJUSTMENT.Default.StringList.item
 msgid  "Right"
 msgstr "दक्षिणम्"
+
+#: source/ui/dlg/animobjs.src#FLT_WIN_ANIMATION.LB_ADJUSTMENT.Default.StringList.item
+msgid  "Bottom Right"
+msgstr "दक्षिणतलम्"
+
+#: source/ui/dlg/animobjs.src#FLT_WIN_ANIMATION.BTN_CREATE_GROUP.PushButton.Text
+msgid  "Create"
+msgstr "निर्मातु"
+
+#: source/ui/dlg/animobjs.src#FLT_WIN_ANIMATION.GRP_ANIMATION_GROUP.FixedLine.Text
+msgid  "Animation group"
+msgstr "सञ्जीवनसमूहः"
+
+#: source/ui/dlg/animobjs.src#FLT_WIN_ANIMATION.STR_DISPLAY.String.Text
+msgid  "Preview"
+msgstr ""
 
 #: source/ui/dlg/prntopts.src#TP_PRINT_OPTIONS.TabPage.Text
 msgid  "Options"

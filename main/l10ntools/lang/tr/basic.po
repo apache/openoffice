@@ -333,7 +333,7 @@ msgstr "Bu işlem belirtilen nesne tarafından desteklenmiyor."
 
 #: source/classes/sb.src#RID_BASIC_START.SbERR_NO_NAMED_ARGS & ERRCODE_RES_MASK.String.Text
 msgid  "Named arguments are not supported by given object."
-msgstr ""
+msgstr "Adlandırılmış bağımsız değişkenler, belirtilen nesne tarafından desteklenmiyor."
 
 #: source/classes/sb.src#RID_BASIC_START.SbERR_BAD_LOCALE & ERRCODE_RES_MASK.String.Text
 msgid  "The current locale setting is not supported by the given object."
@@ -349,7 +349,7 @@ msgstr "Bağımsız değişken isteğe bağlı değil."
 
 #: source/classes/sb.src#RID_BASIC_START.SbERR_WRONG_ARGS & ERRCODE_RES_MASK.String.Text
 msgid  "Invalid number of arguments."
-msgstr "Bağımsız değişken sayısı geçersiz."
+msgstr "Bağımsız değişken sayısı yanlış."
 
 #: source/classes/sb.src#RID_BASIC_START.SbERR_NOT_A_COLL & ERRCODE_RES_MASK.String.Text
 msgid  "Object is not a list."

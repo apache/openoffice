@@ -217,7 +217,7 @@ msgstr "تام تەسۋىر يۆتكە"
 
 #: source/core/glob.src#STR_NOT_ENOUGH_MEMORY.String.Text
 msgid  "Not enough memory!\nThe action will be aborted."
-msgstr ""
+msgstr "ئەسلەك يېتىشمىدى!\nمەشغۇلات ئۆزۈلدى."
 
 #: source/core/glob.src#STR_POOLSHEET_MEASURE.String.Text
 msgid  "Dimension Line"
@@ -341,11 +341,11 @@ msgstr "$(ARG1) (قۇر، ستون)دا ھۆججەت فورمات خاتالىق
 
 #: source/core/glob.src#RID_SD_ERRHDL.ERR_CODE ( ERRCODE_CLASS_READ , ERR_FORMAT_FILE_ROWCOL ).String.Text
 msgid  "Format error discovered in the file in sub-document $(ARG1) at position $(ARG2)(row,col)."
-msgstr ""
+msgstr "ھۆججەتنىڭ تاماق $(ARG1) پۈتۈكىدە فورمات خاتالىقى بايقالدى، ئورنى $(ARG2) (قۇر، ستون)"
 
 #: source/core/glob.src#RID_SD_ERRHDL.ERR_CODE ( ERRCODE_CLASS_READ , WARN_FORMAT_FILE_ROWCOL ).String.Text
 msgid  "Format error discovered in the file in sub-document $(ARG1) at position $(ARG2)(row,col)."
-msgstr ""
+msgstr "ھۆججەتنىڭ تاماق $(ARG1) پۈتۈكىدە فورمات خاتالىقى بايقالدى، ئورنى $(ARG2) (قۇر، ستون)"
 
 #: source/core/glob.src#STR_3DOBJECTBARSHELL.String.Text
 msgid  "3-D Settings"
@@ -1225,7 +1225,7 @@ msgstr "قوزغات"
 
 #: source/ui/animations/CustomAnimation.src#STR_CUSTOMANIMATION_LIST_HELPTEXT.String.Text
 msgid  "First select the slide element and then click 'Add...' to add an animation effect."
-msgstr ""
+msgstr "ئالدى بىلەن تام تەسۋىر ئېلېمېنتىنى تاللاپ، ئاندىن «قوش…» نى چېكىپ ھەرىكەت ئۈنۈمى قوشۇلىدۇ."
 
 #: source/ui/animations/SlideTransitionPane.src#DLG_SLIDE_TRANSITION_PANE.Control.Text
 msgid  "Slide Transition"
@@ -1381,19 +1381,19 @@ msgstr "(يازغۇچى يوق)"
 
 #: source/ui/annotations/annotations.src#STR_ANNOTATION_WRAP_FORWARD.String.Text
 msgid  "%PRODUCTNAME Impress reached the end of the presentation. Do you want to continue at the beginning?"
-msgstr ""
+msgstr "%PRODUCTNAME Impress كۆرسەتمە ھۆججەت ئاخىرىغىچە ئىزدىدى. ھۆججەت بېشىدىن داۋاملىق تەكشۈرسۇنمۇ؟"
 
 #: source/ui/annotations/annotations.src#STR_ANNOTATION_WRAP_BACKWARD.String.Text
 msgid  "%PRODUCTNAME Impress reached the beginning of the presentation. Do you want to continue at the end?"
-msgstr ""
+msgstr "%PRODUCTNAME Impress كۆرسەتمە ھۆججەت بېشىغىچە ئىزدىدى. ھۆججەت ئاخىرىدىن داۋاملىق تەكشۈرسۇنمۇ؟"
 
 #: source/ui/annotations/annotations.src#STR_ANNOTATION_WRAP_FORWARD_DRAW.String.Text
 msgid  "%PRODUCTNAME Draw reached the end of the document. Do you want to continue at the beginning?"
-msgstr ""
+msgstr "%PRODUCTNAME Draw پۈتۈك ئاخىرىغىچە ئىزدىدى. پۈتۈك بېشىدىن داۋاملىق تەكشۈرسۇنمۇ؟"
 
 #: source/ui/annotations/annotations.src#STR_ANNOTATION_WRAP_BACKWARD_DRAW.String.Text
 msgid  "%PRODUCTNAME Draw reached the beginning of the document. Do you want to continue at the end?"
-msgstr ""
+msgstr "%PRODUCTNAME Draw پۈتۈك بېشىغىچە ئىزدىدى. پۈتۈك ئاخىرىدىن داۋاملىق تەكشۈرسۇنمۇ؟"
 
 #: source/ui/annotations/annotations.src#STR_ANNOTATION_UNDO_INSERT.String.Text
 msgid  "Insert Comment"
@@ -1428,8 +1428,8 @@ msgid  "~Table..."
 msgstr "جەدۋەل(~T)…"
 
 #: source/ui/app/popup2_tmpl.src#RID_GRAPHIC_TABLE_POPUP.DUMMY.MenuItem.Text
-msgid  "Colu~mn"
-msgstr "ستون(~M)"
+msgid  "~Cell"
+msgstr "كاتەكچە(~C)"
 
 #: source/ui/app/popup2_tmpl.src#RID_GRAPHIC_TABLE_POPUP.DUMMY.SID_TABLE_MERGE_CELLS.MenuItem.Text
 msgid  "~Merge"
@@ -1451,6 +1451,10 @@ msgstr "ئوتتۇرا(~E)"
 msgid  "~Bottom"
 msgstr "ئاستى(~B)"
 
+#: source/ui/app/popup2_tmpl.src#RID_GRAPHIC_TABLE_POPUP.DUMMY.MenuItem.Text
+msgid  "~Row"
+msgstr "قۇر(~R)"
+
 #: source/ui/app/popup2_tmpl.src#RID_GRAPHIC_TABLE_POPUP.DUMMY.SID_TABLE_DISTRIBUTE_ROWS.MenuItem.Text
 msgid  "Space ~Equally"
 msgstr "ئارىلىق تەڭ(~E)"
@@ -1467,6 +1471,10 @@ msgstr "قىستۇر(~I)…"
 msgid  "~Delete"
 msgstr "ئۆچۈر(~D)"
 
+#: source/ui/app/popup2_tmpl.src#RID_GRAPHIC_TABLE_POPUP.DUMMY.MenuItem.Text
+msgid  "Colu~mn"
+msgstr "ستون(~M)"
+
 #: source/ui/app/popup2_tmpl.src#RID_GRAPHIC_TABLE_POPUP.DUMMY.SID_TABLE_DISTRIBUTE_COLUMNS.MenuItem.Text
 msgid  "Space ~Equally"
 msgstr "ئارىلىق تەڭ(~E)"
@@ -1482,14 +1490,6 @@ msgstr "قىستۇر(~I)…"
 #: source/ui/app/popup2_tmpl.src#RID_GRAPHIC_TABLE_POPUP.DUMMY.SID_TABLE_DELETE_COL.MenuItem.Text
 msgid  "~Delete"
 msgstr "ئۆچۈر(~D)"
-
-#: source/ui/app/popup2_tmpl.src#RID_GRAPHIC_TABLE_POPUP.DUMMY.MenuItem.Text
-msgid  "~Cell"
-msgstr "كاتەكچە(~C)"
-
-#: source/ui/app/popup2_tmpl.src#RID_GRAPHIC_TABLE_POPUP.DUMMY.MenuItem.Text
-msgid  "~Row"
-msgstr "قۇر(~R)"
 
 #: source/ui/app/strings.src#STR_DRAW_TOOLBOX.String.Text
 msgid  "Drawings Toolbar"
@@ -1733,7 +1733,7 @@ msgstr "يېڭى يا ئوق بېشىغا ئاتتىن بىرنى كىرگۈزۈ
 
 #: source/ui/app/strings.src#STR_WARN_NAME_DUPLICATE.String.Text
 msgid  "The name chosen already exists. \nPlease enter another name."
-msgstr ""
+msgstr "تاللانغان ئات مەۋجۇد.\nباشقا ئات كىرگۈزۈڭ."
 
 #: source/ui/app/strings.src#STR_UNDO_ANIMATION.String.Text
 msgid  "Animation parameters"
@@ -1804,8 +1804,8 @@ msgid  "Insert slides"
 msgstr "تام تەسۋىر قىستۇر"
 
 #: source/ui/app/strings.src#STR_ASK_DELETE_LAYER.String.Text
-msgid  "Are you sure you want to delete the level "$"?\nNote: All objects on this level will be deleted!"
-msgstr ""
+msgid  "Are you sure you want to delete the level \"$\"?\nNote: All objects on this level will be deleted!"
+msgstr "سىز راستىنلا \"$\" قەۋەتنى ئۆچۈرەمسىز؟ \nدىققەت: بۇ قەۋەتتىكى ھەممە ئوبيېكتلار ئۆچۈرۈلىدۇ!"
 
 #: source/ui/app/strings.src#STR_ASK_DELETE_ALL_PICTURES.String.Text
 msgid  "Do you really want to delete all images?"
@@ -1853,7 +1853,7 @@ msgstr "تېكست كاندۇك قىستۇر"
 
 #: source/ui/app/strings.src#STR_ACTION_NOTPOSSIBLE.String.Text
 msgid  "This function cannot be run \nwith the selected objects."
-msgstr ""
+msgstr "تاللىغان ئوبيېكتقا نىسبەتەن بۇ ئىقتىدارنى ئىشلەتكىلى بولمايدۇ."
 
 #: source/ui/app/strings.src#STR_DLG_INSERT_PAGES_FROM_FILE.String.Text
 msgid  "Insert File"
@@ -1865,7 +1865,7 @@ msgstr "بۇ ھۆججەتنى يۈكلىيەلمىدى!"
 
 #: source/ui/app/strings.src#STR_SCALE_OBJECTS.String.Text
 msgid  "The format of the new pages will be adapted.\nDo you want to adapt the objects, too?"
-msgstr ""
+msgstr "يېڭى بەت فورماتى مۇۋاپىق تەڭشەلدى.\nبۇ ئوبيېكتنىمۇ مۇناسىپ تەڭشەمسىز؟"
 
 #: source/ui/app/strings.src#STR_CREATE_PAGES.String.Text
 msgid  "Create slides"
@@ -1885,7 +1885,7 @@ msgstr "تەھرىر(~E)"
 
 #: source/ui/app/strings.src#RID_UNDO_DELETE_WARNING.FT_UNDO_DELETE_WARNING.FixedText.Text
 msgid  "This action deletes the list of actions that can\nbe undone. Previous changes made to the document are still valid,\nbut cannot be undone. Do you want to continue and\nthus assign the new slide design?"
-msgstr ""
+msgstr "بۇ مەشغۇلات يېنىۋېلىشقا يول قويىدىغان مەشغۇلات تىزىملىكىنى ئۆچۈرىدۇ.\nئىلگىرىكى پۈتۈككە ئېلىپ بارغان ئۆزگەرتىش مەشغۇلاتىڭىز يەنىلا كۈچكە ئىگە،\nئەمما بۇ مەشغۇلاتلاردىن قايتا يېنىۋالالمايسىز. داۋاملاشتۇرۇپ، \nيېڭى تام تەسۋىر لايىھىسىنى ئىشلىتەمسىز؟"
 
 #: source/ui/app/strings.src#RID_UNDO_DELETE_WARNING.CB_UNDO_DELETE_DISABLE.CheckBox.Text
 msgid  "~Do not show this warning again"
@@ -1905,7 +1905,7 @@ msgstr "بۇ پۈتۈك فورماتىنى پرىنتېر قوللىمايدۇ."
 
 #: source/ui/app/strings.src#STR_REMOVE_LINK.String.Text
 msgid  "This graphic is linked to a document. \nDo you want to unlink the graphic in order to edit it?"
-msgstr ""
+msgstr "بۇ گرافىك پۈتۈككە ئۇلانغان. \nبۇ ئۇلانمىنى بىكار قىلىپ، گرافىكنى تەھرىرلەمسىز؟"
 
 #: source/ui/app/strings.src#STR_IMPORT_GRFILTER_OPENERROR.String.Text
 msgid  "Graphics file cannot be opened"
@@ -2017,7 +2017,7 @@ msgstr " (تېزىس)"
 
 #: source/ui/app/strings.src#STR_WARN_SCALE_FAIL.String.Text
 msgid  "The specified scale is invalid.\nDo you want to enter a new one?"
-msgstr ""
+msgstr "بەلگىلەنگەن كۆرسىتىش نىسبىتى ئىناۋەتسىز.\nيېڭى كۆرسىتىش نىسبىتىنى كىرگۈزەمسىز؟"
 
 #: source/ui/app/strings.src#STR_CLICK_ACTION_NONE.String.Text
 msgid  "No action"
@@ -2265,7 +2265,7 @@ msgstr "كېڭەيتىلگەن ئىسمى يوق ھۆججەت"
 
 #: source/ui/app/strings.src#STR_RELEASE_GRAPHICLINK.String.Text
 msgid  "This graphic is linked to a document. Do you want to unlink the graphic in order to edit it?"
-msgstr ""
+msgstr "بۇ گرافىك پۈتۈككە ئۇلانغان. بۇ ئۇلانمىنى بىكار قىلىپ، گرافىكنى تەھرىرلەمسىز؟"
 
 #: source/ui/app/strings.src#STR_NEW_CUSTOMSHOW.String.Text
 msgid  "New Custom Slide Show"
@@ -2301,7 +2301,7 @@ msgstr "بارلىق سىزمىچىلىق ئوبيېكتىنى پارچىلىي�
 
 #: source/ui/app/strings.src#STR_PUBDLG_SAMENAME.String.Text
 msgid  "A design already exists with this name.\nDo you want to replace it?"
-msgstr ""
+msgstr "ئوخشاش ئاتتىكى لايىھەدىن بىرى مەۋجۇد.\nئۇنى ئالماشتۇرامسىز؟"
 
 #: source/ui/app/strings.src#STR_HTMLATTR_TEXT.String.Text
 msgid  "Text"
@@ -2417,7 +2417,7 @@ msgstr "گرافىك سۈزگۈچ"
 
 #: source/ui/app/strings.src#STR_WARNING_NOSOUNDFILE.String.Text
 msgid  "The file %\nis not a valid sound file !"
-msgstr ""
+msgstr "بۇ ھۆججەت % \nئىناۋەتلىك ئاۋاز ھۆججىتى ئەمەس!"
 
 #: source/ui/app/strings.src#STR_UNDO_CONVERT_TO_METAFILE.String.Text
 msgid  "Convert to metafile"
@@ -2631,6 +2631,14 @@ msgstr "رەسىم قىستۇر"
 msgid  "Insert Movie"
 msgstr "كىنو قىستۇر"
 
+#: source/ui/app/res_bmp.src#SfxStyleFamiliesRes1.#define.Text
+msgid  "Graphics Styles"
+msgstr "گرافىك ئۇسلۇبى"
+
+#: source/ui/app/res_bmp.src#SfxStyleFamiliesRes2.#define.Text
+msgid  "Presentation Styles"
+msgstr "كۆرسەتمە ئۇسلۇبى"
+
 #: source/ui/app/res_bmp.src#STR_STYLE_FILTER_USED.String.Text
 msgid  "Applied Styles"
 msgstr "قوللىنىلغان ئۇسلۇب"
@@ -2642,14 +2650,6 @@ msgstr "ئىختىيارىي ئۇسلۇبلار"
 #: source/ui/app/res_bmp.src#STR_STYLE_FILTER_ALL.String.Text
 msgid  "All Styles"
 msgstr "بارلىق ئۇسلۇبلار"
-
-#: source/ui/app/res_bmp.src#SfxStyleFamiliesRes1.#define.Text
-msgid  "Graphics Styles"
-msgstr "گرافىك ئۇسلۇبى"
-
-#: source/ui/app/res_bmp.src#SfxStyleFamiliesRes2.#define.Text
-msgid  "Presentation Styles"
-msgstr "كۆرسەتمە ئۇسلۇبى"
 
 #: source/ui/app/menuids_tmpl.src#MN_DISTRIBUTE.SID_DISTRIBUTE_DLG.MenuItem.Text
 msgid  "~Distribution..."
@@ -3328,8 +3328,8 @@ msgid  "~Table..."
 msgstr "جەدۋەل(~T)…"
 
 #: source/ui/app/popup.src#RID_DRAW_TABLEOBJ_INSIDE_POPUP.DUMMY.MenuItem.Text
-msgid  "Colu~mn"
-msgstr "ستون(~M)"
+msgid  "~Cell"
+msgstr "كاتەكچە(~C)"
 
 #: source/ui/app/popup.src#RID_DRAW_TABLEOBJ_INSIDE_POPUP.DUMMY.SID_TABLE_MERGE_CELLS.MenuItem.Text
 msgid  "~Merge"
@@ -3351,6 +3351,10 @@ msgstr "ئوتتۇرا(~E)"
 msgid  "~Bottom"
 msgstr "ئاستى(~B)"
 
+#: source/ui/app/popup.src#RID_DRAW_TABLEOBJ_INSIDE_POPUP.DUMMY.MenuItem.Text
+msgid  "~Row"
+msgstr "قۇر(~R)"
+
 #: source/ui/app/popup.src#RID_DRAW_TABLEOBJ_INSIDE_POPUP.DUMMY.SID_TABLE_DISTRIBUTE_ROWS.MenuItem.Text
 msgid  "Space ~Equally"
 msgstr "ئارىلىق تەڭ(~E)"
@@ -3366,6 +3370,10 @@ msgstr "قىستۇر(~I)…"
 #: source/ui/app/popup.src#RID_DRAW_TABLEOBJ_INSIDE_POPUP.DUMMY.SID_TABLE_DELETE_ROW.MenuItem.Text
 msgid  "~Delete"
 msgstr "ئۆچۈر(~D)"
+
+#: source/ui/app/popup.src#RID_DRAW_TABLEOBJ_INSIDE_POPUP.DUMMY.MenuItem.Text
+msgid  "Colu~mn"
+msgstr "ستون(~M)"
 
 #: source/ui/app/popup.src#RID_DRAW_TABLEOBJ_INSIDE_POPUP.DUMMY.SID_TABLE_DISTRIBUTE_COLUMNS.MenuItem.Text
 msgid  "Space ~Equally"
@@ -3439,33 +3447,25 @@ msgstr "تاللانغان تام تەسۋىرگە قوللان(~S)"
 msgid  "~Insert Slide"
 msgstr "تام تەسۋىر قىستۇر(~I)"
 
-#: source/ui/app/popup.src#RID_DRAW_TABLEOBJ_INSIDE_POPUP.DUMMY.MenuItem.Text
-msgid  "~Cell"
-msgstr "كاتەكچە(~C)"
-
-#: source/ui/app/popup.src#RID_DRAW_TABLEOBJ_INSIDE_POPUP.DUMMY.MenuItem.Text
-msgid  "~Row"
-msgstr "قۇر(~R)"
-
 #: source/ui/app/sdstring.src#STR_SAR_NOT_FOUND.String.Text
 msgid  "Search key not found."
 msgstr "ئىزدەيدىغان ھالقىلىق سۆز تېپىلمىدى!"
 
 #: source/ui/app/sdstring.src#STR_SAR_WRAP_FORWARD.String.Text
 msgid  "%PRODUCTNAME Impress has searched to the end of the presentation. Do you want to continue at the beginning?"
-msgstr ""
+msgstr "%PRODUCTNAME Impress ھۆججەت ئاخىرىغىچە ئىزدىدى. ھۆججەت بېشىدىن داۋاملىق تەكشۈرسۇنمۇ؟"
 
 #: source/ui/app/sdstring.src#STR_SAR_WRAP_BACKWARD.String.Text
 msgid  "%PRODUCTNAME Impress has searched to the beginning of the presentation. Do you want to continue at the end?"
-msgstr ""
+msgstr "%PRODUCTNAME Impress ھۆججەت بېشىغىچە ئىزدىدى. ھۆججەت ئاخىرىدىن داۋاملىق تەكشۈرسۇنمۇ؟"
 
 #: source/ui/app/sdstring.src#STR_SAR_WRAP_FORWARD_DRAW.String.Text
 msgid  "%PRODUCTNAME Draw has searched to the end of the document. Do you want to continue at the beginning?"
-msgstr ""
+msgstr "%PRODUCTNAME Draw پۈتۈك ئاخىرىغىچە ئىزدىدى. پۈتۈك بېشىدىن داۋاملىق تەكشۈرسۇنمۇ؟"
 
 #: source/ui/app/sdstring.src#STR_SAR_WRAP_BACKWARD_DRAW.String.Text
 msgid  "%PRODUCTNAME Draw has searched to the beginning of the document. Do you want to continue at the end?"
-msgstr ""
+msgstr "%PRODUCTNAME Draw پۈتۈك بېشىغىچە ئىزدىدى. پۈتۈك ئاخىرىدىن داۋاملىق تەكشۈرسۇنمۇ؟"
 
 #: source/ui/app/menuids2_tmpl.src#MN_NEWDOCDIRECT.SID_NEWDOCDIRECT.MenuItem.Text
 msgid  "~New"
@@ -3486,6 +3486,10 @@ msgstr "يوللا(~D)"
 #: source/ui/app/menuids2_tmpl.src#MN_PAGESETUP.SID_PAGESETUP.MenuItem.Text
 msgid  "~Page..."
 msgstr "بەت(~P)…"
+
+#: source/ui/app/menuids2_tmpl.src#20.#define.Text
+msgid  "~Edit"
+msgstr "تەھرىر(~E)"
 
 #: source/ui/app/menuids2_tmpl.src#MN_PASTE2.SID_PASTE2.MenuItem.Text
 msgid  "Paste ~Special..."
@@ -3510,6 +3514,10 @@ msgstr "قەۋەت ئۆچۈر(~L)…"
 #: source/ui/app/menuids2_tmpl.src#MN_MANAGE_LINKS.SID_MANAGE_LINKS.MenuItem.Text
 msgid  "Lin~ks..."
 msgstr "ئۇلانما(~K)…"
+
+#: source/ui/app/menuids2_tmpl.src#23.#define.Text
+msgid  "~View"
+msgstr "كۆرۈنۈش(~V)"
 
 #: source/ui/app/menuids2_tmpl.src#MN_TOGGLETOOLBAR.SID_TOGGLETOOLBAR.MenuItem.Text
 msgid  "Main ~Toolbar"
@@ -3574,6 +3582,10 @@ msgstr "خىزمەت رايونى(~K)"
 #: source/ui/app/menuids2_tmpl.src#MNSUB_MASTERPAGE.MN_SUB_MASTERPAGE.MenuItem.Text
 msgid  "~Master"
 msgstr "قېلىپ(~M)"
+
+#: source/ui/app/menuids2_tmpl.src#21.#define.Text
+msgid  "~Insert"
+msgstr "قىستۇر(~I)"
 
 #: source/ui/app/menuids2_tmpl.src#MN_INSERTPAGE.SID_INSERTPAGE.MenuItem.Text
 msgid  "Slid~e..."
@@ -3659,6 +3671,10 @@ msgstr "ھۆججەت(~F)…"
 msgid  "Fiel~ds"
 msgstr "سۆز بۆلىكى(~D)"
 
+#: source/ui/app/menuids2_tmpl.src#22.#define.Text
+msgid  "F~ormat"
+msgstr "فورمات(~O)"
+
 #: source/ui/app/menuids2_tmpl.src#MN_TEXTATTR_DLG.SID_TEXTATTR_DLG.MenuItem.Text
 msgid  "Te~xt..."
 msgstr "تېكست(~X)…"
@@ -3682,6 +3698,14 @@ msgstr "ئۇسلۇب ئۆزگەرت(~L)"
 #: source/ui/app/menuids2_tmpl.src#MNSUB_TEMPLATES.MN_SUB_TEMPLATES.MenuItem.Text
 msgid  "Styl~es"
 msgstr "ئۇسلۇب(~E)"
+
+#: source/ui/app/menuids2_tmpl.src#ITEM_TOOLS_ID.#define.Text
+msgid  "~Tools"
+msgstr "قورال(~T)"
+
+#: source/ui/app/menuids2_tmpl.src#26.#define.Text
+msgid  "~Slide Show"
+msgstr "تام تەسۋىر كۆرسەت(~S)"
 
 #: source/ui/app/menuids2_tmpl.src#MN_SPELLING.SID_SPELL_DIALOG.MenuItem.Text
 msgid  "~Check..."
@@ -3722,6 +3746,10 @@ msgstr "سۆزلىشىش(~I)…"
 #: source/ui/app/menuids2_tmpl.src#MNSUB_SPELLING.MN_SUB_SPELLING.MenuItem.Text
 msgid  "~Spellcheck"
 msgstr "ئىملا تەكشۈر(~S)"
+
+#: source/ui/app/menuids2_tmpl.src#24.#define.Text
+msgid  "~Modify"
+msgstr "ئۆزگەرت(~M)"
 
 #: source/ui/app/menuids2_tmpl.src#MN_MOREFRONT.SID_MOREFRONT.MenuItem.Text
 msgid  "Bring ~Forward"
@@ -3794,34 +3822,6 @@ msgstr "كۆرسىتىش سۈپىتى(~D)"
 #: source/ui/app/menuids2_tmpl.src#MNSUB_PREVIEW_OUTPUT_QUALITY.MN_SUB_PREVIEW_OUTPUT_QUALITY.ItemList.Text
 msgid  "Pre~view Mode"
 msgstr "ئالدىن كۆزىتىش ئۈنۈمى(~V)"
-
-#: source/ui/app/menuids2_tmpl.src#20.#define.Text
-msgid  "~Edit"
-msgstr "تەھرىر(~E)"
-
-#: source/ui/app/menuids2_tmpl.src#23.#define.Text
-msgid  "~View"
-msgstr "كۆرۈنۈش(~V)"
-
-#: source/ui/app/menuids2_tmpl.src#21.#define.Text
-msgid  "~Insert"
-msgstr "قىستۇر(~I)"
-
-#: source/ui/app/menuids2_tmpl.src#22.#define.Text
-msgid  "F~ormat"
-msgstr "فورمات(~O)"
-
-#: source/ui/app/menuids2_tmpl.src#ITEM_TOOLS_ID.#define.Text
-msgid  "~Tools"
-msgstr "قورال(~T)"
-
-#: source/ui/app/menuids2_tmpl.src#26.#define.Text
-msgid  "~Slide Show"
-msgstr "تام تەسۋىر كۆرسەت(~S)"
-
-#: source/ui/app/menuids2_tmpl.src#24.#define.Text
-msgid  "~Modify"
-msgstr "ئۆزگەرت(~M)"
 
 #: source/ui/dlg/sdpreslt.src#DLG_PRESLT.FT_LAYOUT.FixedText.Text
 msgid  "~Select a slide design"
@@ -4177,7 +4177,7 @@ msgstr "ئۆزىڭىز ياكى شىركىتىڭىزنى ئاتى؟"
 
 #: source/ui/dlg/dlgass.src#DLG_ASS.FT_PAGE4_ASKTOPIC.FixedText.Text
 msgid  "What is the subject of your presentation?"
-msgstr ""
+msgstr "كۆرسەتمە ھۆججىتىڭىزنىڭ ئاساسىي تېمىسى قايسى تەرەپلەرنى ئۆز ئىچىگە ئالىدۇ؟"
 
 #: source/ui/dlg/dlgass.src#DLG_ASS.FT_PAGE4_ASKINFORMATION.FixedText.Text
 msgid  "Further ideas to be presented?"
@@ -4687,6 +4687,10 @@ msgstr "تام تەسۋىر تەرتىپ نومۇرى"
 msgid  "Master Elements"
 msgstr "قېلىپ ئېلېمېنتى"
 
+#: source/ui/dlg/tpoption.src#SCALE_TEXT.#define.Text
+msgid  "Scale"
+msgstr "نىسبىتى"
+
 #: source/ui/dlg/tpoption.src#TP_OPTIONS_CONTENTS.TabPage.Text
 msgid  "Contents"
 msgstr "مەزمۇنلار"
@@ -4802,10 +4806,6 @@ msgstr "بەت كەڭلىكى(~W)"
 #: source/ui/dlg/tpoption.src#TP_OPTIONS_MISC.FT_PAGEHEIGHT.FixedText.Text
 msgid  "Page ~height"
 msgstr "بەت ئېگىزلىكى(~H)"
-
-#: source/ui/dlg/tpoption.src#SCALE_TEXT.#define.Text
-msgid  "Scale"
-msgstr "نىسبىتى"
 
 #: source/ui/dlg/morphdlg.src#DLG_MORPH.GRP_PRESET.FixedLine.Text
 msgid  "Settings"
@@ -5056,22 +5056,6 @@ msgid  "Alignment"
 msgstr "توغرىلا"
 
 #: source/ui/dlg/animobjs.src#FLT_WIN_ANIMATION.LB_ADJUSTMENT.Default.StringList.item
-msgid  "Bottom Right"
-msgstr "ئوڭ ئاستى"
-
-#: source/ui/dlg/animobjs.src#FLT_WIN_ANIMATION.BTN_CREATE_GROUP.PushButton.Text
-msgid  "Create"
-msgstr "ياسا"
-
-#: source/ui/dlg/animobjs.src#FLT_WIN_ANIMATION.GRP_ANIMATION_GROUP.FixedLine.Text
-msgid  "Animation group"
-msgstr "ھەرىكەت گۇرۇپپىسى"
-
-#: source/ui/dlg/animobjs.src#FLT_WIN_ANIMATION.STR_DISPLAY.String.Text
-msgid  "Preview"
-msgstr "ئالدىن كۆزەت"
-
-#: source/ui/dlg/animobjs.src#FLT_WIN_ANIMATION.LB_ADJUSTMENT.Default.StringList.item
 msgid  "Top Left"
 msgstr "سول ئۈستى"
 
@@ -5102,6 +5086,22 @@ msgstr "ئوڭ ئۈستى"
 #: source/ui/dlg/animobjs.src#FLT_WIN_ANIMATION.LB_ADJUSTMENT.Default.StringList.item
 msgid  "Right"
 msgstr "ئوڭ"
+
+#: source/ui/dlg/animobjs.src#FLT_WIN_ANIMATION.LB_ADJUSTMENT.Default.StringList.item
+msgid  "Bottom Right"
+msgstr "ئوڭ ئاستى"
+
+#: source/ui/dlg/animobjs.src#FLT_WIN_ANIMATION.BTN_CREATE_GROUP.PushButton.Text
+msgid  "Create"
+msgstr "ياسا"
+
+#: source/ui/dlg/animobjs.src#FLT_WIN_ANIMATION.GRP_ANIMATION_GROUP.FixedLine.Text
+msgid  "Animation group"
+msgstr "ھەرىكەت گۇرۇپپىسى"
+
+#: source/ui/dlg/animobjs.src#FLT_WIN_ANIMATION.STR_DISPLAY.String.Text
+msgid  "Preview"
+msgstr "ئالدىن كۆزەت"
 
 #: source/ui/dlg/prntopts.src#TP_PRINT_OPTIONS.TabPage.Text
 msgid  "Options"
@@ -5285,346 +5285,277 @@ msgid  "~End Show"
 msgstr "كۆرسىتىش تامام(~E)"
 
 #: source/ui/slidesorter/view/SlsResource.src#RID_SLIDESORTER_ICONS.STRING_DRAG_AND_DROP_PAGES.String.Text
-#, fuzzy
 msgid  "Drag and Drop Pages"
 msgstr "سۆرەپ تاشلىغان بەتلەر"
 
 #: source/ui/slidesorter/view/SlsResource.src#RID_SLIDESORTER_ICONS.STRING_DRAG_AND_DROP_SLIDES.String.Text
-#, fuzzy
 msgid  "Drag and Drop Slides"
 msgstr "سۆرەپ تاشلىغان تام تەسۋىر"
 
 #: source/ui/slidesorter/view/SlsResource.src#RID_SLIDESORTER_ICONS.STRING_COMMAND1.String.Text
-#, fuzzy
 msgid  "Start Slide Show"
 msgstr "تام تەسۋىرنى باشلا"
 
 #: source/ui/slidesorter/view/SlsResource.src#RID_SLIDESORTER_ICONS.STRING_COMMAND2_A.String.Text
-#, fuzzy
 msgid  "Hide Slide"
 msgstr "تام تەسۋىر يوشۇر"
 
 #: source/ui/slidesorter/view/SlsResource.src#RID_SLIDESORTER_ICONS.STRING_COMMAND2_B.String.Text
-#, fuzzy
 msgid  "Show Slide"
 msgstr "تام تەسۋىر كۆرسەت"
 
 #: source/ui/slidesorter/view/SlsResource.src#RID_SLIDESORTER_ICONS.STRING_COMMAND3.String.Text
-#, fuzzy
 msgid  "Duplicate Slide"
 msgstr "تام تەسۋىرنى نۇسخىلا"
 
 #: source/ui/table/TableDesignPane.src#DLG_TABLEDESIGNPANE.Control.Text
-#, fuzzy
 msgid  "Table Design"
 msgstr "جەدۋەل لايىھە"
 
 #: source/ui/table/TableDesignPane.src#DLG_TABLEDESIGNPANE.FL_STYLE_OPTIONS+1.FixedLine.Text
-#, fuzzy
 msgid  "Show"
 msgstr "كۆرسەت"
 
 #: source/ui/table/TableDesignPane.src#DLG_TABLEDESIGNPANE.CB_HEADER_ROW+1.CheckBox.Text
-#, fuzzy
 msgid  "Header Row"
 msgstr "ماۋزۇ قۇرى"
 
 #: source/ui/table/TableDesignPane.src#DLG_TABLEDESIGNPANE.CB_TOTAL_ROW+1.CheckBox.Text
-#, fuzzy
 msgid  "Total Row"
 msgstr "جەمئى قۇر سانى"
 
 #: source/ui/table/TableDesignPane.src#DLG_TABLEDESIGNPANE.CB_BANDED_ROWS+1.CheckBox.Text
-#, fuzzy
 msgid  "Banded Rows"
 msgstr "جىيەك قۇر"
 
 #: source/ui/table/TableDesignPane.src#DLG_TABLEDESIGNPANE.CB_FIRST_COLUMN+1.CheckBox.Text
-#, fuzzy
 msgid  "First Column"
 msgstr "بىرىنچى ستون"
 
 #: source/ui/table/TableDesignPane.src#DLG_TABLEDESIGNPANE.CB_LAST_COLUMN+1.CheckBox.Text
-#, fuzzy
 msgid  "Last Column"
 msgstr "ئاخىرقى ستون"
 
 #: source/ui/table/TableDesignPane.src#DLG_TABLEDESIGNPANE.CB_BANDED_COLUMNS+1.CheckBox.Text
-#, fuzzy
 msgid  "Banded Columns"
 msgstr "جىيەك ستون"
 
 #: source/ui/table/TableDesignPane.src#DLG_TABLEDESIGNPANE.FL_TABLE_STYLES+1.FixedLine.Text
-#, fuzzy
 msgid  "Styles"
 msgstr "ئۇسلۇبلار"
 
 #: source/ui/table/TableDesignPane.src#DLG_TABLEDESIGNPANE.ModalDialog.Text
-#, fuzzy
 msgid  "Table Design"
 msgstr "جەدۋەل لايىھە"
 
 #: source/ui/view/DocumentRenderer.src#_STR_IMPRESS_PRINT_UI_OPTIONS._STR_IMPRESS_PRINT_UI_GROUP_NAME.String.Text
-#, fuzzy
 msgid  "%PRODUCTNAME %s"
 msgstr "%PRODUCTNAME %s"
 
 #: source/ui/view/DocumentRenderer.src#_STR_IMPRESS_PRINT_UI_OPTIONS._STR_IMPRESS_PRINT_UI_PRINT_CONTENT.String.Text
-#, fuzzy
 msgid  "Print content"
 msgstr "بېسىش مەزمۇنى"
 
 #: source/ui/view/DocumentRenderer.src#_STR_IMPRESS_PRINT_UI_OPTIONS._STR_IMPRESS_PRINT_UI_PRINT_GROUP.String.Text
-#, fuzzy
 msgid  "Print"
 msgstr "باس"
 
 #: source/ui/view/DocumentRenderer.src#_STR_IMPRESS_PRINT_UI_OPTIONS._STR_IMPRESS_PRINT_UI_CONTENT.String.Text
-#, fuzzy
 msgid  "Document"
 msgstr "پۈتۈك"
 
 #: source/ui/view/DocumentRenderer.src#_STR_IMPRESS_PRINT_UI_OPTIONS._STR_IMPRESS_PRINT_UI_CONTENT_CHOICES.item1.ItemList.item
-#, fuzzy
 msgid  "Slides"
 msgstr "تام تەسۋىرلەر"
 
 #: source/ui/view/DocumentRenderer.src#_STR_IMPRESS_PRINT_UI_OPTIONS._STR_IMPRESS_PRINT_UI_CONTENT_CHOICES.item2.ItemList.item
-#, fuzzy
 msgid  "Handouts"
 msgstr "كونسپىت"
 
 #: source/ui/view/DocumentRenderer.src#_STR_IMPRESS_PRINT_UI_OPTIONS._STR_IMPRESS_PRINT_UI_CONTENT_CHOICES.item3.ItemList.item
-#, fuzzy
 msgid  "Notes"
 msgstr "ئىزاھ"
 
 #: source/ui/view/DocumentRenderer.src#_STR_IMPRESS_PRINT_UI_OPTIONS._STR_IMPRESS_PRINT_UI_CONTENT_CHOICES.item4.ItemList.item
-#, fuzzy
 msgid  "Outline"
 msgstr "تىزېس"
 
 #: source/ui/view/DocumentRenderer.src#_STR_IMPRESS_PRINT_UI_OPTIONS._STR_IMPRESS_PRINT_UI_SLIDESPERPAGE.String.Text
-#, fuzzy
 msgid  "Slides per page"
 msgstr "ھەر بەتتىكى تام تەسۋىر"
 
 #: source/ui/view/DocumentRenderer.src#_STR_IMPRESS_PRINT_UI_OPTIONS._STR_IMPRESS_PRINT_UI_SLIDESPERPAGE_CHOICES.item1.ItemList.item
-#, fuzzy
 msgid  "Default"
 msgstr "كۆڭۈلدىكى"
 
 #: source/ui/view/DocumentRenderer.src#_STR_IMPRESS_PRINT_UI_OPTIONS._STR_IMPRESS_PRINT_UI_SLIDESPERPAGE_CHOICES.item2.ItemList.item
-#, fuzzy
 msgid  "1"
 msgstr "1"
 
 #: source/ui/view/DocumentRenderer.src#_STR_IMPRESS_PRINT_UI_OPTIONS._STR_IMPRESS_PRINT_UI_SLIDESPERPAGE_CHOICES.item3.ItemList.item
-#, fuzzy
 msgid  "2"
 msgstr "2"
 
 #: source/ui/view/DocumentRenderer.src#_STR_IMPRESS_PRINT_UI_OPTIONS._STR_IMPRESS_PRINT_UI_SLIDESPERPAGE_CHOICES.item4.ItemList.item
-#, fuzzy
 msgid  "3"
 msgstr "3"
 
 #: source/ui/view/DocumentRenderer.src#_STR_IMPRESS_PRINT_UI_OPTIONS._STR_IMPRESS_PRINT_UI_SLIDESPERPAGE_CHOICES.item5.ItemList.item
-#, fuzzy
 msgid  "4"
 msgstr "4"
 
 #: source/ui/view/DocumentRenderer.src#_STR_IMPRESS_PRINT_UI_OPTIONS._STR_IMPRESS_PRINT_UI_SLIDESPERPAGE_CHOICES.item6.ItemList.item
-#, fuzzy
 msgid  "6"
 msgstr "6"
 
 #: source/ui/view/DocumentRenderer.src#_STR_IMPRESS_PRINT_UI_OPTIONS._STR_IMPRESS_PRINT_UI_SLIDESPERPAGE_CHOICES.item7.ItemList.item
-#, fuzzy
 msgid  "9"
 msgstr "9"
 
 #: source/ui/view/DocumentRenderer.src#_STR_IMPRESS_PRINT_UI_OPTIONS._STR_IMPRESS_PRINT_UI_ORDER.String.Text
-#, fuzzy
 msgid  "Order"
 msgstr "تەرتىپ"
 
 #: source/ui/view/DocumentRenderer.src#_STR_IMPRESS_PRINT_UI_OPTIONS._STR_IMPRESS_PRINT_UI_ORDER_CHOICES.item1.ItemList.item
-#, fuzzy
 msgid  "Left to right, then down"
 msgstr "سولدىن ئوڭغا، ئاندىن تۆۋەنگە"
 
 #: source/ui/view/DocumentRenderer.src#_STR_IMPRESS_PRINT_UI_OPTIONS._STR_IMPRESS_PRINT_UI_ORDER_CHOICES.item2.ItemList.item
-#, fuzzy
 msgid  "Top to bottom, then right"
 msgstr "ئۈستىدىن ئاستىغا، ئاندىن ئوڭغا"
 
 #: source/ui/view/DocumentRenderer.src#_STR_IMPRESS_PRINT_UI_OPTIONS._STR_IMPRESS_PRINT_UI_INCLUDE_CONTENT.String.Text
-#, fuzzy
 msgid  "~Contents"
 msgstr "مەزمۇنى(~C)"
 
 #: source/ui/view/DocumentRenderer.src#_STR_IMPRESS_PRINT_UI_OPTIONS._STR_IMPRESS_PRINT_UI_IS_PRINT_NAME.String.Text
-#, fuzzy
 msgid  "~Slide name"
 msgstr "تام تەسۋىر ئاتى(~S)"
 
 #: source/ui/view/DocumentRenderer.src#_STR_IMPRESS_PRINT_UI_OPTIONS._STR_DRAW_PRINT_UI_IS_PRINT_NAME.String.Text
-#, fuzzy
 msgid  "P~age name"
 msgstr "بەت ئاتى(~A)"
 
 #: source/ui/view/DocumentRenderer.src#_STR_IMPRESS_PRINT_UI_OPTIONS._STR_IMPRESS_PRINT_UI_IS_PRINT_DATE.String.Text
-#, fuzzy
 msgid  "~Date and time"
 msgstr "چېسلا ۋە ۋاقىت(~D)"
 
 #: source/ui/view/DocumentRenderer.src#_STR_IMPRESS_PRINT_UI_OPTIONS._STR_IMPRESS_PRINT_UI_IS_PRINT_HIDDEN.String.Text
-#, fuzzy
 msgid  "Hidden pages"
 msgstr "يوشۇرۇن بەتلەر"
 
 #: source/ui/view/DocumentRenderer.src#_STR_IMPRESS_PRINT_UI_OPTIONS._STR_IMPRESS_PRINT_UI_OUTPUT_OPTIONS_GROUP.String.Text
-#, fuzzy
 msgid  "Output options"
 msgstr "چىقىرىش تاللانما"
 
 #: source/ui/view/DocumentRenderer.src#_STR_IMPRESS_PRINT_UI_OPTIONS._STR_IMPRESS_PRINT_UI_QUALITY.String.Text
-#, fuzzy
 msgid  "Color"
 msgstr "رەڭ"
 
 #: source/ui/view/DocumentRenderer.src#_STR_IMPRESS_PRINT_UI_OPTIONS._STR_IMPRESS_PRINT_UI_QUALITY_CHOICES.item1.ItemList.item
-#, fuzzy
 msgid  "Original colors"
 msgstr "ئەسلى رەڭ"
 
 #: source/ui/view/DocumentRenderer.src#_STR_IMPRESS_PRINT_UI_OPTIONS._STR_IMPRESS_PRINT_UI_QUALITY_CHOICES.item2.ItemList.item
-#, fuzzy
 msgid  "Grayscale"
 msgstr "كۈلرەڭلىكى"
 
 #: source/ui/view/DocumentRenderer.src#_STR_IMPRESS_PRINT_UI_OPTIONS._STR_IMPRESS_PRINT_UI_QUALITY_CHOICES.item3.ItemList.item
-#, fuzzy
 msgid  "Black & white"
 msgstr "ئاق&قارا"
 
 #: source/ui/view/DocumentRenderer.src#_STR_IMPRESS_PRINT_UI_OPTIONS._STR_IMPRESS_PRINT_UI_PAGE_OPTIONS.String.Text
-#, fuzzy
 msgid  "~Size"
 msgstr "چوڭلۇقى(~S)"
 
 #: source/ui/view/DocumentRenderer.src#_STR_IMPRESS_PRINT_UI_OPTIONS._STR_IMPRESS_PRINT_UI_PAGE_OPTIONS_CHOICES.item1.ItemList.item
-#, fuzzy
 msgid  "Original size"
 msgstr "ئەسلى چوڭلۇقى"
 
 #: source/ui/view/DocumentRenderer.src#_STR_IMPRESS_PRINT_UI_OPTIONS._STR_IMPRESS_PRINT_UI_PAGE_OPTIONS_CHOICES.item2.ItemList.item
-#, fuzzy
 msgid  "Fit to printable page"
 msgstr "بېسىشچان بەتكە ماسلاش"
 
 #: source/ui/view/DocumentRenderer.src#_STR_IMPRESS_PRINT_UI_OPTIONS._STR_IMPRESS_PRINT_UI_PAGE_OPTIONS_CHOICES.item3.ItemList.item
-#, fuzzy
 msgid  "Distribute on multiple sheets of paper"
 msgstr "قەغەزنىڭ كۆپ ۋارىقىنى تەقسىملەيدۇ"
 
 #: source/ui/view/DocumentRenderer.src#_STR_IMPRESS_PRINT_UI_OPTIONS._STR_IMPRESS_PRINT_UI_PAGE_OPTIONS_CHOICES.item4.ItemList.item
-#, fuzzy
 msgid  "Tile sheet of paper with repeated slides"
 msgstr "تەكرارلىنىدىغان تام تەسۋىرنى قەغەز ۋارىقىدەك يايىدۇ"
 
 #: source/ui/view/DocumentRenderer.src#_STR_IMPRESS_PRINT_UI_OPTIONS._STR_IMPRESS_PRINT_UI_PAGE_OPTIONS_CHOICES_DRAW.item1.ItemList.item
-#, fuzzy
 msgid  "Original size"
 msgstr "ئەسلى چوڭلۇقى"
 
 #: source/ui/view/DocumentRenderer.src#_STR_IMPRESS_PRINT_UI_OPTIONS._STR_IMPRESS_PRINT_UI_PAGE_OPTIONS_CHOICES_DRAW.item2.ItemList.item
-#, fuzzy
 msgid  "Fit to printable page"
 msgstr "بېسىشچان بەتكە ماسلاش"
 
 #: source/ui/view/DocumentRenderer.src#_STR_IMPRESS_PRINT_UI_OPTIONS._STR_IMPRESS_PRINT_UI_PAGE_OPTIONS_CHOICES_DRAW.item3.ItemList.item
-#, fuzzy
 msgid  "Distribute on multiple sheets of paper"
 msgstr "قەغەزنىڭ كۆپ ۋارىقىنى تەقسىملەيدۇ"
 
 #: source/ui/view/DocumentRenderer.src#_STR_IMPRESS_PRINT_UI_OPTIONS._STR_IMPRESS_PRINT_UI_PAGE_OPTIONS_CHOICES_DRAW.item4.ItemList.item
-#, fuzzy
 msgid  "Tile sheet of paper with repeated pages"
 msgstr "تەكرارلىنىدىغان بەتلەرنى قەغەز ۋارىقىدەك يايىدۇ"
 
 #: source/ui/view/DocumentRenderer.src#_STR_IMPRESS_PRINT_UI_OPTIONS._STR_IMPRESS_PRINT_UI_BROCHURE.String.Text
-#, fuzzy
 msgid  "Brochure"
 msgstr "كىتابچە"
 
 #: source/ui/view/DocumentRenderer.src#_STR_IMPRESS_PRINT_UI_OPTIONS._STR_IMPRESS_PRINT_UI_PAGE_SIDES.String.Text
-#, fuzzy
 msgid  "Page sides"
 msgstr "بەت يۈزى"
 
 #: source/ui/view/DocumentRenderer.src#_STR_IMPRESS_PRINT_UI_OPTIONS._STR_IMPRESS_PRINT_UI_BROCHURE_INCLUDE.String.Text
-#, fuzzy
 msgid  "Include"
 msgstr "ئىچىدە"
 
 #: source/ui/view/DocumentRenderer.src#_STR_IMPRESS_PRINT_UI_OPTIONS._STR_IMPRESS_PRINT_UI_BROCHURE_INCLUDE_LIST.item1.ItemList.item
-#, fuzzy
 msgid  "All pages"
 msgstr "ھەممە بەت"
 
 #: source/ui/view/DocumentRenderer.src#_STR_IMPRESS_PRINT_UI_OPTIONS._STR_IMPRESS_PRINT_UI_BROCHURE_INCLUDE_LIST.item2.ItemList.item
-#, fuzzy
 msgid  "Front sides / right pages"
 msgstr "ئالدى يۈزى / ئوڭ بەت"
 
 #: source/ui/view/DocumentRenderer.src#_STR_IMPRESS_PRINT_UI_OPTIONS._STR_IMPRESS_PRINT_UI_BROCHURE_INCLUDE_LIST.item3.ItemList.item
-#, fuzzy
 msgid  "Back sides / left pages"
 msgstr "ئارقا يۈزى / سول بەت"
 
 #: source/ui/view/DocumentRenderer.src#_STR_IMPRESS_PRINT_UI_OPTIONS._STR_IMPRESS_PRINT_UI_PAPER_TRAY_GROUP.String.Text
-#, fuzzy
 msgid  "Paper tray"
 msgstr "قەغەز قۇتىسى"
 
 #: source/ui/view/DocumentRenderer.src#_STR_IMPRESS_PRINT_UI_OPTIONS._STR_IMPRESS_PRINT_UI_PAPER_TRAY.String.Text
-#, fuzzy
 msgid  "~Use only paper tray from printer preferences"
 msgstr "پرىنتېر مايىللىقىدىكى قەغەز مەنبەسىنىلا ئىشلەت(~U)"
 
 #: source/ui/view/DocumentRenderer.src#_STR_IMPRESS_PRINT_UI_OPTIONS._STR_IMPRESS_PRINT_UI_PAGE_RANGE.String.Text
-#, fuzzy
 msgid  "Print range"
 msgstr "بېسىش دائىرىسى"
 
 #: source/ui/view/DocumentRenderer.src#_STR_IMPRESS_PRINT_UI_OPTIONS._STR_IMPRESS_PRINT_UI_PAGE_RANGE_CHOICE.item1.ItemList.item
-#, fuzzy
 msgid  "~All slides"
 msgstr "ھەممە تام تەسۋىر(~A)"
 
 #: source/ui/view/DocumentRenderer.src#_STR_IMPRESS_PRINT_UI_OPTIONS._STR_IMPRESS_PRINT_UI_PAGE_RANGE_CHOICE.item2.ItemList.item
-#, fuzzy
 msgid  "~Slides"
 msgstr "تام تەسۋىرلەر(~S)"
 
 #: source/ui/view/DocumentRenderer.src#_STR_IMPRESS_PRINT_UI_OPTIONS._STR_IMPRESS_PRINT_UI_PAGE_RANGE_CHOICE.item3.ItemList.item
-#, fuzzy
 msgid  "Se~lection"
 msgstr "تاللاش(~L)"
 
 #: source/ui/view/DocumentRenderer.src#_STR_IMPRESS_PRINT_UI_OPTIONS._STR_DRAW_PRINT_UI_PAGE_RANGE_CHOICE.item1.ItemList.item
-#, fuzzy
 msgid  "~All pages"
 msgstr "ھەممە بەت(~A)"
 
 #: source/ui/view/DocumentRenderer.src#_STR_IMPRESS_PRINT_UI_OPTIONS._STR_DRAW_PRINT_UI_PAGE_RANGE_CHOICE.item2.ItemList.item
-#, fuzzy
 msgid  "Pa~ges"
 msgstr "بەتلەر(~G)"
 
 #: source/ui/view/DocumentRenderer.src#_STR_IMPRESS_PRINT_UI_OPTIONS._STR_DRAW_PRINT_UI_PAGE_RANGE_CHOICE.item3.ItemList.item
-#, fuzzy
 msgid  "Se~lection"
 msgstr "تاللاش(~L)"

@@ -119,6 +119,18 @@ msgstr ""
 msgid  "LDAP Address Book"
 msgstr ""
 
+#: source/drivers/mozab/mozab2.xcu#.Drivers.Installed.sdbc:address:mozilla:.DriverTypeDisplayName
+msgid  "SeaMonkey Address Book"
+msgstr ""
+
+#: source/drivers/mozab/mozab2.xcu#.Drivers.Installed.sdbc:address:thunderbird:.DriverTypeDisplayName
+msgid  "Thunderbird Address Book"
+msgstr ""
+
+#: source/drivers/mozab/mozab2.xcu#.Drivers.Installed.sdbc:address:ldap:*.DriverTypeDisplayName
+msgid  "LDAP Address Book"
+msgstr ""
+
 #: source/drivers/mysql/mysql.xcu#.Drivers.Installed.sdbc:mysql:jdbc:*.DriverTypeDisplayName
 msgid  "MySQL (JDBC)"
 msgstr ""
@@ -161,11 +173,11 @@ msgstr "मोजिला क्रीयमाणे सति, मोजि�
 
 #: source/resource/conn_shared_res.src#STR_COULD_NOT_RETRIEVE_AB_ENTRY.String.Text
 msgid  "An address book entry could not be retrieved, an unknown error occurred."
-msgstr ""
+msgstr "पत्रादेशिका-निर्देशिकायाः प्रविष्टिः पुनः न प्रापणीया, अज्ञाता त्रूटिः सञ्जाता."
 
 #: source/resource/conn_shared_res.src#STR_COULD_NOT_GET_DIRECTORY_NAME.String.Text
 msgid  "An address book directory name could not be retrieved, an unknown error occurred."
-msgstr ""
+msgstr "पत्रादेशिका-निर्देशिकायाः नाम उद्धारे असमर्थः, एका अज्ञाता त्रुटिः सञ्जाता."
 
 #: source/resource/conn_shared_res.src#STR_TIMEOUT_WAITING.String.Text
 msgid  "Timed out while waiting for the result."
@@ -177,11 +189,11 @@ msgstr "प्रश्न-निष्पादन-काले त्रुट
 
 #: source/resource/conn_shared_res.src#STR_MOZILLA_IS_RUNNIG_NO_CHANGES.String.Text
 msgid  "You can't make any changes to mozilla address book when mozilla is running."
-msgstr ""
+msgstr "मोजिला क्रीयमाणे सति, मोजिला-पत्रादेशिकायाः परिवर्तनं न सम्भवपरम्."
 
 #: source/resource/conn_shared_res.src#STR_FOREIGN_PROCESS_CHANGED_AB.String.Text
 msgid  "Mozilla Address Book has been changed out of this process, we can't modify it in this condition."
-msgstr ""
+msgstr "मोजिला पत्रादेशिका परिवर्तिता, संशोधनं न सम्भवपरम्."
 
 #: source/resource/conn_shared_res.src#STR_CANT_FIND_ROW.String.Text
 msgid  "Can't find the requested row."
@@ -268,7 +280,7 @@ msgid  "It doesn't exist a connection to the database."
 msgstr ""
 
 #: source/resource/conn_shared_res.src#STR_WRONG_PARAM_INDEX.String.Text
-msgid  "You tried to set a parameter at position '$pos$' but there is/are only '$count$' parameter(s) allowed. One reason may be that the property "ParameterNameSubstitution" is not set to TRUE in the data source."
+msgid  "You tried to set a parameter at position '$pos$' but there is/are only '$count$' parameter(s) allowed. One reason may be that the property \"ParameterNameSubstitution\" is not set to TRUE in the data source."
 msgstr ""
 
 #: source/resource/conn_shared_res.src#STR_INPUTSTREAM_WRONG_LEN.String.Text
@@ -321,11 +333,11 @@ msgstr ""
 
 #: source/resource/conn_shared_res.src#STR_STRING_LENGTH_EXCEEDED.String.Text
 msgid  "The string '$string$' exceeds the maximum length of $maxlen$ characters when converted to the target character set '$charset$'."
-msgstr ""
+msgstr "लक्ष्यसंप्रतीकस्थापन '$charset$' कृते परिवर्तिते सति स्ट्रिङग् '$स्ट्रिङ्ग्$' अधिकतमदैर्घ्यम् अतिक्रामति।"
 
 #: source/resource/conn_shared_res.src#STR_CANNOT_CONVERT_STRING.String.Text
 msgid  "The string '$string$' cannot be converted using the encoding '$charset$'."
-msgstr ""
+msgstr "एन्कोडिङ्ग् चार्सेट् उपयुज्य '$स्ट्रिङ्ग्$' स्ट्रि्ङ्ग्स् च परिवर्तितुं न शक्यते। '$"
 
 #: source/resource/conn_shared_res.src#STR_URI_SYNTAX_ERROR.String.Text
 msgid  "The connection URL is invalid."
@@ -377,7 +389,7 @@ msgstr "सञ्चिका सञ्चिकानाम लोड् कर
 
 #: source/resource/conn_shared_res.src#STR_LOAD_FILE_ERROR_MESSAGE.String.Text
 msgid  "The attempt to load the file resulted in the following error message ($exception_type$):\n\n$error_message$"
-msgstr ""
+msgstr "सञ्चिका लोड् कर्तुं प्रयत्नं कृते सति अनुकरणदोषसन्देशे फलति ($अपवादवर्गः_$):\n\n$दोष_सन्देशः$"
 
 #: source/resource/conn_shared_res.src#STR_TYPE_NOT_CONVERT.String.Text
 msgid  "The type could not be converted."
@@ -472,7 +484,7 @@ msgid  "Duplicate value found in column '$columnname$'."
 msgstr ""
 
 #: source/resource/conn_shared_res.src#STR_INVALID_COLUMN_DECIMAL_VALUE.String.Text
-msgid  "The '$columnname$' column has been defined as a "Decimal" type, the max. length is $precision$ characters (with $scale$ decimal places).\n\nThe specified value "$value$ is longer than the number of digits allowed."
+msgid  "The '$columnname$' column has been defined as a \"Decimal\" type, the max. length is $precision$ characters (with $scale$ decimal places).\n\nThe specified value \"$value$ is longer than the number of digits allowed."
 msgstr ""
 
 #: source/resource/conn_shared_res.src#STR_COLUMN_NOT_ALTERABLE.String.Text
@@ -512,7 +524,7 @@ msgid  "Can only sort by table columns."
 msgstr ""
 
 #: source/resource/conn_shared_res.src#STR_QUERY_COMPLEX_COUNT.String.Text
-msgid  "The query can not be executed. It is too complex. Only "COUNT(*)" is supported."
+msgid  "The query can not be executed. It is too complex. Only \"COUNT(*)\" is supported."
 msgstr ""
 
 #: source/resource/conn_shared_res.src#STR_QUERY_INVALID_BETWEEN.String.Text
@@ -528,7 +540,7 @@ msgid  "The table can not be changed. It is read only."
 msgstr ""
 
 #: source/resource/conn_shared_res.src#STR_DELETE_ROW.String.Text
-msgid  "The row could not be deleted. The option "Display inactive records" is set."
+msgid  "The row could not be deleted. The option \"Display inactive records\" is set."
 msgstr ""
 
 #: source/resource/conn_shared_res.src#STR_ROW_ALREADY_DELETED.String.Text
@@ -657,7 +669,7 @@ msgstr "रेकोर्ड् ओपेरेशन् विटोड् न
 
 #: source/resource/conn_error_message.src#256 + 2*200 + 0.String.Text
 msgid  "The statement contains a cyclic reference to one or more sub queries."
-msgstr ""
+msgstr "निवेदनान्तर्गतम् एकम् अथवा एकस्याधिकोप्रश्नेभ्यः चक्राकारसन्दर्भम् अस्ति।  "
 
 #: source/resource/conn_error_message.src#256 + 2*300 + 0.String.Text
 msgid  "The name must not contain any slashes ('/')."
@@ -685,16 +697,4 @@ msgstr ""
 
 #: source/resource/conn_error_message.src#256 + 2*550 + 0.String.Text
 msgid  "Unable to display the complete table content. Please apply a filter."
-msgstr ""
-
-#: source/drivers/mozab/mozab2.xcu#.Drivers.Installed.sdbc:address:mozilla:.DriverTypeDisplayName
-msgid  "SeaMonkey Address Book"
-msgstr ""
-
-#: source/drivers/mozab/mozab2.xcu#.Drivers.Installed.sdbc:address:thunderbird:.DriverTypeDisplayName
-msgid  "Thunderbird Address Book"
-msgstr ""
-
-#: source/drivers/mozab/mozab2.xcu#.Drivers.Installed.sdbc:address:ldap:*.DriverTypeDisplayName
-msgid  "LDAP Address Book"
 msgstr ""

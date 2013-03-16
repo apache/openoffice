@@ -32,8 +32,8 @@ msgstr ""
 
 
 #: source/app/desktop.src#STR_RECOVER_QUERY.String.Text
-msgid  "Should the file "$1" be restored?"
-msgstr ""
+msgid  "Should the file \"$1\" be restored?"
+msgstr "要修复文件 \"$1\" 吗？"
 
 #: source/app/desktop.src#STR_RECOVER_TITLE.String.Text
 msgid  "File Recovery"
@@ -41,15 +41,15 @@ msgstr "修复文件"
 
 #: source/app/desktop.src#STR_RECOVER_PREPARED.WarningBox.Message
 msgid  "An unrecoverable error has occurred.\n\nAll modified files have been saved and can\nprobably be recovered at program restart."
-msgstr ""
+msgstr "发生了无法排除的错误。\n修改过的文件已经保存。\n在下一次启动程序时很可能重新恢复这些文件。"
 
 #: source/app/desktop.src#STR_BOOTSTRAP_ERR_CANNOT_START.String.Text
 msgid  "The application cannot be started. "
 msgstr "无法启动该应用程序。"
 
 #: source/app/desktop.src#STR_BOOTSTRAP_ERR_DIR_MISSING.String.Text
-msgid  "The configuration directory "$1" could not be found."
-msgstr ""
+msgid  "The configuration directory \"$1\" could not be found."
+msgstr "无法找到配置路径 \"$1\"。"
 
 #: source/app/desktop.src#STR_BOOTSTRAP_ERR_PATH_INVALID.String.Text
 msgid  "The installation path is invalid."
@@ -64,16 +64,16 @@ msgid  "An internal error occurred."
 msgstr "出现了一个内部的错误。"
 
 #: source/app/desktop.src#STR_BOOTSTRAP_ERR_FILE_CORRUPT.String.Text
-msgid  "The configuration file "$1" is corrupt."
-msgstr ""
+msgid  "The configuration file \"$1\" is corrupt."
+msgstr "配置文件 \"$1\" 已经损坏。"
 
 #: source/app/desktop.src#STR_BOOTSTRAP_ERR_FILE_MISSING.String.Text
-msgid  "The configuration file "$1" was not found."
-msgstr ""
+msgid  "The configuration file \"$1\" was not found."
+msgstr "无法找到配置文件 \"$1\" 。"
 
 #: source/app/desktop.src#STR_BOOTSTRAP_ERR_NO_SUPPORT.String.Text
-msgid  "The configuration file "$1" does not support the current version."
-msgstr ""
+msgid  "The configuration file \"$1\" does not support the current version."
+msgstr "配置文件 \"$1\" 不支持当前版本。"
 
 #: source/app/desktop.src#STR_BOOTSTRAP_ERR_LANGUAGE_MISSING.String.Text
 msgid  "The user interface language cannot be determined."
@@ -89,15 +89,15 @@ msgstr "配置服务不可用。"
 
 #: source/app/desktop.src#STR_BOOTSTRAP_ERR_MULTISESSION.String.Text
 msgid  "You have another instance running in a different terminal session. Close that instance and then try again."
-msgstr ""
+msgstr "您有另一个实例正在其它终端会话中运行，请关闭该实例后重试。"
 
 #: source/app/desktop.src#STR_ASK_START_SETUP_MANUALLY.String.Text
 msgid  "Start the setup application to repair the installation from the CD or the folder containing the installation packages."
-msgstr ""
+msgstr "要修复您的程序，请您从光盘启动安装程序或从存有安装数据的目录直接启动安装程序。"
 
 #: source/app/desktop.src#STR_CONFIG_ERR_SETTINGS_INCOMPLETE.String.Text
 msgid  "The startup settings for accessing the central configuration are incomplete. "
-msgstr ""
+msgstr "用于访问中心配置的启动设置不完整。"
 
 #: source/app/desktop.src#STR_CONFIG_ERR_CANNOT_CONNECT.String.Text
 msgid  "A connection to the central configuration could not be established. "
@@ -105,7 +105,7 @@ msgstr "无法和中心配置建立连接。"
 
 #: source/app/desktop.src#STR_CONFIG_ERR_RIGHTS_MISSING.String.Text
 msgid  "You cannot access the central configuration because of missing access rights. "
-msgstr ""
+msgstr "因为您缺少访问权限而无法访问中心配置数据。"
 
 #: source/app/desktop.src#STR_CONFIG_ERR_ACCESS_GENERAL.String.Text
 msgid  "A general error occurred while accessing your central configuration. "
@@ -113,11 +113,11 @@ msgstr "在访问您的中心配置时发生了一般的访问错误。"
 
 #: source/app/desktop.src#STR_CONFIG_ERR_NO_WRITE_ACCESS.String.Text
 msgid  "The changes to your personal settings cannot be stored centrally because of missing access rights. "
-msgstr ""
+msgstr "因为您缺少访问权限而无法将修改的个人数据存入中心配置。"
 
 #: source/app/desktop.src#STR_BOOTSTRAP_ERR_CFG_DATAACCESS.String.Text
 msgid  "%PRODUCTNAME cannot be started due to an error in accessing the %PRODUCTNAME configuration data.\n\nPlease contact your system administrator."
-msgstr ""
+msgstr "%PRODUCTNAME 无法启动，原因是访问 %PRODUCTNAME 配置数据时发生错误。\n\n请您与系统管理员联系。"
 
 #: source/app/desktop.src#STR_INTERNAL_ERRMSG.String.Text
 msgid  "The following internal error has occurred: "
@@ -125,7 +125,7 @@ msgstr "发生了以下的内部错误："
 
 #: source/app/desktop.src#QBX_USERDATALOCKED.QueryBox.Message
 msgid  "Either another instance of %PRODUCTNAME is accessing your personal settings or your personal settings are locked.\nSimultaneous access can lead to inconsistencies in your personal settings. Before continuing, you should make sure user '$u' closes %PRODUCTNAME on host '$h'.\n\nDo you really want to continue?"
-msgstr ""
+msgstr "%PRODUCTNAME 的另外一个实例正在访问您的个人设置或您的设置已经被锁定。\n同时访问个人设置会造成数据不一致。继续前请您确定用户 '$u' 已关闭主机 '$h' 上运行的 %PRODUCTNAME 。\n\n您真的继续吗？"
 
 #: source/app/desktop.src#STR_TITLE_USERDATALOCKED.String.Text
 msgid  "%PRODUCTNAME %PRODUCTVERSION"
@@ -149,11 +149,11 @@ msgstr "无法使用路径管理器。\n"
 
 #: source/app/desktop.src#STR_BOOSTRAP_ERR_NOTENOUGHDISKSPACE.String.Text
 msgid  "%PRODUCTNAME user installation could not be completed due to insufficient free disk space. Please free more disc space at the following location and restart %PRODUCTNAME:\n\n"
-msgstr ""
+msgstr "由于可用磁盘空间不足，无法完成 %PRODUCTNAME 用户安装。请在以下位置释放更多的磁盘空间，然后重新启动 %PRODUCTNAME：\n\n"
 
 #: source/app/desktop.src#STR_BOOSTRAP_ERR_NOACCESSRIGHTS.String.Text
 msgid  "%PRODUCTNAME user installation could not be processed due to missing access rights. Please make sure that you have sufficient access rights for the following location and restart %PRODUCTNAME:\n\n"
-msgstr ""
+msgstr "由于缺少访问权限，无法完成 %PRODUCTNAME 用户安装。请确保您对以下位置具有足够的访问权限，然后重新启动 %PRODUCTNAME：\n\n"
 
 #: source/deployment/gui/dp_gui_versionboxes.src#RID_WARNINGBOX_VERSION_LESS.WarningBox.Message
 msgid  "You are about to install version $NEW of the extension \'$NAME\'.\nThe newer version $DEPLOYED is already installed.\nClick \'OK\' to replace the installed extension.\nClick \'Cancel\' to stop the installation."
@@ -185,7 +185,7 @@ msgstr "系统依赖性检查"
 
 #: source/deployment/gui/dp_gui_dependencydialog.src#RID_DLG_DEPENDENCIES.RID_DLG_DEPENDENCIES_TEXT.FixedText.Text
 msgid  "The extension cannot be installed as the following\nsystem dependencies are not fulfilled:"
-msgstr ""
+msgstr "由于未满足以下系统依赖性，\n因此无法安装扩展："
 
 #: source/deployment/gui/dp_gui_dialog.src#RID_STR_ADD_PACKAGES.String.Text
 msgid  "Add Extension(s)"
@@ -253,11 +253,11 @@ msgstr "退出"
 
 #: source/deployment/gui/dp_gui_dialog.src#RID_STR_NO_ADMIN_PRIVILEGE.String.Text
 msgid  "%PRODUCTNAME has been updated to a new version. Some shared %PRODUCTNAME extensions are not compatible with this version and need to be updated before %PRODUCTNAME can be started.\n\nUpdating of shared extension requires administrator privileges. Contact your system administrator to update the following shared extensions:"
-msgstr ""
+msgstr "%PRODUCTNAME 已更新至新版本。某些共享的 %PRODUCTNAME 扩展与此版本不兼容，必须更新这些扩展才能启动 %PRODUCTNAME。\n\n更新共享的扩展需要管理员权限。请与您的系统管理员联系以更新以下共享的扩展："
 
 #: source/deployment/gui/dp_gui_dialog.src#RID_STR_ERROR_MISSING_DEPENDENCIES.String.Text
 msgid  "The extension cannot be enabled as the following system dependencies are not fulfilled:"
-msgstr ""
+msgstr "无法启用该扩展，因为不满足以下系统依赖性："
 
 #: source/deployment/gui/dp_gui_dialog.src#RID_STR_ERROR_MISSING_LICENSE.String.Text
 msgid  "This extension is disabled because you haven't accepted the license yet.\n"
@@ -273,7 +273,7 @@ msgstr "扩展软件许可协议"
 
 #: source/deployment/gui/dp_gui_dialog.src#RID_DLG_LICENSE.FT_LICENSE_HEADER.FixedText.Text
 msgid  "Please follow these steps to proceed with the installation of the extension:"
-msgstr ""
+msgstr "请执行以下步骤继续安装扩展软件:"
 
 #: source/deployment/gui/dp_gui_dialog.src#RID_DLG_LICENSE.FT_LICENSE_BODY_1.FixedText.Text
 msgid  "1."
@@ -437,7 +437,7 @@ msgstr "没有新的更新。"
 
 #: source/deployment/gui/dp_gui_updatedialog.src#RID_DLG_UPDATE.RID_DLG_UPDATE_NOINSTALLABLE.String.Text
 msgid  "No installable updates are available. To see ignored or disabled updates, mark the check box 'Show all updates'."
-msgstr ""
+msgstr "没有可安装的更新。要查看所有更新，请选中“显示所有更新”复选框。"
 
 #: source/deployment/gui/dp_gui_updatedialog.src#RID_DLG_UPDATE.RID_DLG_UPDATE_FAILURE.String.Text
 msgid  "An error occurred:"
@@ -521,7 +521,7 @@ msgstr "需要更新扩展"
 
 #: source/deployment/gui/dp_gui_dialog2.src#RID_DLG_UPDATE_REQUIRED.RID_EM_FT_MSG.FixedText.Text
 msgid  "%PRODUCTNAME has been updated to a new version. Some installed %PRODUCTNAME extensions are not compatible with this version and need to be updated before they can be used."
-msgstr ""
+msgstr "%PRODUCTNAME 已更新至新版本。某些已安装的 %PRODUCTNAME 扩展与此版本不兼容，必须更新这些扩展才能使用它们。"
 
 #: source/deployment/gui/dp_gui_dialog2.src#RID_DLG_UPDATE_REQUIRED.RID_EM_FT_PROGRESS.FixedText.Text
 msgid  "Adding %EXTENSION_NAME"
@@ -537,7 +537,7 @@ msgstr "全部禁用"
 
 #: source/deployment/gui/dp_gui_dialog2.src#RID_QUERYBOX_INSTALL_FOR_ALL.QueryBox.Message
 msgid  "Make sure that no further users are working with the same %PRODUCTNAME, when installing an extension for all users in a multi user environment.\n\nFor whom do you want to install the extension?\n"
-msgstr ""
+msgstr "当在多用户环境下为所有用户安装扩展时，请确保没有其他用户在使用同一个 %PRODUCTNAME。\n\n您想为谁安装该扩展？\n"
 
 #: source/deployment/manager/dp_manager.src#RID_STR_COPYING_PACKAGE.String.Text
 msgid  "Copying: "
@@ -641,7 +641,7 @@ msgstr "不能安装此扩展，因为:\n"
 
 #: source/deployment/registry/help/dp_help.src#RID_STR_HELPPROCESSING_XMLPARSING_ERROR.String.Text
 msgid  "The extension will not be installed because an error occurred in the Help files:\n"
-msgstr ""
+msgstr "将不安装该扩展，因为帮助文件中出错：\n"
 
 #: source/deployment/registry/package/dp_package.src#RID_STR_PACKAGE_BUNDLE.String.Text
 msgid  "Extension"
@@ -672,16 +672,16 @@ msgid  "Extension Software License Agreement of $NAME:"
 msgstr "$NAME 扩展软件许可协议:"
 
 #: source/deployment/unopkg/unopkg.src#RID_STR_UNOPKG_ACCEPT_LIC_2.String.Text
-msgid  "Read the complete License Agreement displayed above. Accept the License Agreement by typing "yes" on the console then press the Return key. Type "no" to decline and to abort the extension setup."
-msgstr ""
+msgid  "Read the complete License Agreement displayed above. Accept the License Agreement by typing \"yes\" on the console then press the Return key. Type \"no\" to decline and to abort the extension setup."
+msgstr "阅读上面显示的完整许可协议。在控制台上键入“是”接受许可协议，然后按 Return 键。键入“否”可拒绝并终止安装扩展软件。"
 
 #: source/deployment/unopkg/unopkg.src#RID_STR_UNOPKG_ACCEPT_LIC_3.String.Text
-msgid  "[Enter "yes" or "no"]:"
-msgstr ""
+msgid  "[Enter \"yes\" or \"no\"]:"
+msgstr "[输入“是”或“否”]:"
 
 #: source/deployment/unopkg/unopkg.src#RID_STR_UNOPKG_ACCEPT_LIC_4.String.Text
-msgid  "Your input was not correct. Please enter "yes" or "no":"
-msgstr ""
+msgid  "Your input was not correct. Please enter \"yes\" or \"no\":"
+msgstr "输入错误。请输入“是”或“否”:"
 
 #: source/deployment/unopkg/unopkg.src#RID_STR_UNOPKG_ACCEPT_LIC_YES.String.Text
 msgid  "YES"
@@ -701,7 +701,7 @@ msgstr "N"
 
 #: source/deployment/unopkg/unopkg.src#RID_STR_CONCURRENTINSTANCE.String.Text
 msgid  "unopkg cannot be started. The lock file indicates it as already running. If this does not apply, delete the lock file at:"
-msgstr ""
+msgstr "无法启动 unopkg。锁定文件指示它已在运行。如果这种情况不适用，请删除位于以下位置的锁定文件："
 
 #: source/deployment/unopkg/unopkg.src#RID_STR_UNOPKG_ERROR.String.Text
 msgid  "ERROR: "
@@ -737,11 +737,11 @@ msgstr "注册"
 
 #: source/migration/wizard.src#STR_WELCOME_MIGRATION.String.Text
 msgid  "This wizard will guide you through the license agreement, the transfer of user data from %OLD_VERSION and the registration of %PRODUCTNAME.\n\nClick 'Next' to continue."
-msgstr ""
+msgstr "此向导将引导您阅读许可协议、从 %OLD_VERSION 传送用户数据和注册 %PRODUCTNAME。\n\n单击“下一步”继续。"
 
 #: source/migration/wizard.src#STR_WELCOME_WITHOUT_LICENSE.String.Text
 msgid  "This wizard will guide you through the registration of %PRODUCTNAME.\n\nClick 'Next' to continue."
-msgstr ""
+msgstr "此向导将引导您完成 %PRODUCTNAME 注册。\n\n单击“下一步”继续。"
 
 #: source/migration/wizard.src#STR_FINISH.String.Text
 msgid  "~Finish"
@@ -749,11 +749,11 @@ msgstr "完成(~F)"
 
 #: source/migration/wizard.src#STR_REGISTRATION_OOO.String.Text
 msgid  "You now have the opportunity to support and contribute to the fastest growing open source community in the world.\n\nHelp us prove that %PRODUCTNAME has already gained significant market share by registering.\n\nRegistering is voluntary and without obligation."
-msgstr ""
+msgstr "现在，您有机会支持并为世界上发展最迅速的开源社区做贡献。\n\n请通过注册，帮助我们证明 %PRODUCTNAME 已经获得很大的市场份额。\n\n注册出于自愿，而非强制要求。"
 
 #: source/migration/wizard.src#ERRBOX_REG_NOSYSBROWSER.ErrorBox.Message
 msgid  "An error occurred in starting the web browser.\nPlease check the %PRODUCTNAME and web browser settings."
-msgstr ""
+msgstr "启动浏览器时发生一个错误。\n请您检查 %PRODUCTNAME 的设置和浏览器的设置。"
 
 #: source/migration/wizard.src#QB_ASK_DECLINE.QueryBox.Message
 msgid  "Do you really want to decline?"
@@ -765,7 +765,7 @@ msgstr "欢迎使用 %PRODUCTNAME %PRODUCTVERSION"
 
 #: source/migration/wizard.src#TP_WELCOME.FT_WELCOME_BODY.FixedText.Text
 msgid  "This wizard will guide you through the license agreement and the registration of %PRODUCTNAME.\n\nClick 'Next' to continue."
-msgstr ""
+msgstr "此向导将引导您阅读许可协议和注册 %PRODUCTNAME。\n\n单击“下一步”继续。"
 
 #: source/migration/wizard.src#TP_LICENSE.FT_LICENSE_HEADER.FixedText.Text
 msgid  "Please follow these steps to accept the license"
@@ -777,7 +777,7 @@ msgstr "1."
 
 #: source/migration/wizard.src#TP_LICENSE.FT_LICENSE_BODY_1_TXT.FixedText.Text
 msgid  "View the complete License Agreement. Please use the scrollbar or the '%PAGEDOWN' button in this dialog to view the entire license text."
-msgstr ""
+msgstr "查看完整的“许可协议”。请使用此对话框中的滚动条或 \"%PAGEDOWN\" 按钮查看整个许可文本。"
 
 #: source/migration/wizard.src#TP_LICENSE.FT_LICENSE_BODY_2.FixedText.Text
 msgid  "2."
@@ -805,7 +805,7 @@ msgstr "传送个人数据"
 
 #: source/migration/wizard.src#TP_MIGRATION.FT_MIGRATION_BODY.FixedText.Text
 msgid  "Most personal data from %OLDPRODUCT installation can be reused in %PRODUCTNAME %PRODUCTVERSION.\n\nIf you do not want to reuse any settings in %PRODUCTNAME %PRODUCTVERSION, unmark the check box."
-msgstr ""
+msgstr "%OLDPRODUCT 安装中的大部分个人数据可在 %PRODUCTNAME %PRODUCTVERSION 中重新使用。\n\n如果您不想在 %PRODUCTNAME %PRODUCTVERSION 中重新使用任何设置，请取消复选框选中标记。"
 
 #: source/migration/wizard.src#TP_MIGRATION.CB_MIGRATION.CheckBox.Text
 msgid  "Transfer personal data"
@@ -817,7 +817,7 @@ msgstr "联机更新"
 
 #: source/migration/wizard.src#TP_UPDATE_CHECK.FT_UPDATE_CHECK_BODY.FixedText.Text
 msgid  "%PRODUCTNAME searches automatically at regular intervals for new versions.\nIn doing so online update does not transfer personal data.\nAs soon as a new version is available, you will be notified.\n\nYou can configure this feature at Tools / Options... / %PRODUCTNAME / Online Update."
-msgstr ""
+msgstr "%PRODUCTNAME 会定期自动搜索新的版本。\n在此过程中，联机更新不会传送个人数据。\n一旦发现新版本，系统即会向您发送通知。\n\n可以使用“工具”/“选项...”/ \"%PRODUCTNAME\" /“联机更新”配置此功能。"
 
 #: source/migration/wizard.src#TP_UPDATE_CHECK.CB_UPDATE_CHECK.CheckBox.Text
 msgid  "~Check for updates automatically"
@@ -829,7 +829,7 @@ msgstr "请在下面提供您的全名和缩写"
 
 #: source/migration/wizard.src#TP_USER.FT_USER_BODY.FixedText.Text
 msgid  "The user name will be used in the document properties, templates and when you record changes made to documents."
-msgstr ""
+msgstr "在文档属性、模板中以及记录文档修改时都将使用用户名。"
 
 #: source/migration/wizard.src#TP_USER.FT_USER_FIRST.FixedText.Text
 msgid  "~First name"
@@ -853,7 +853,7 @@ msgstr "%PRODUCTNAME 注册"
 
 #: source/migration/wizard.src#TP_REGISTRATION.FT_REGISTRATION_BODY.FixedText.Text
 msgid  "You now have the opportunity to register as a %PRODUCTNAME user. Registration is voluntary and is without obligation.\n\nIf you register, we can inform you about new developments concerning this product."
-msgstr ""
+msgstr "现在，您可以注册为 %PRODUCTNAME 用户。注册出于自愿，无任何强迫。\n\n如果您进行注册，我们可以通知您有关本产品的最新发展资讯。"
 
 #: source/migration/wizard.src#TP_REGISTRATION.RB_REGISTRATION_NOW.RadioButton.Text
 msgid  "I want to register ~now"
@@ -869,7 +869,7 @@ msgstr "不注册(~R)"
 
 #: source/migration/wizard.src#TP_REGISTRATION.FT_REGISTRATION_END.FixedText.Text
 msgid  "We hope you enjoy working with %PRODUCTNAME.\n\nTo exit the wizard, click 'Finish'."
-msgstr ""
+msgstr "我们衷心希望您能喜欢使用 %PRODUCTNAME。\n\n要退出向导，请单击“完成”。"
 
 #: win32/source/rebase/rebasegui.ulf#%APP_TITLE%
 msgid  "Installation Status"
@@ -886,6 +886,10 @@ msgstr "优化服务器端。"
 #: win32/source/rebase/rebasegui.ulf#%MSG_NO_INSTALLATION_FOUND%
 msgid  "Cannot find Office installation."
 msgstr "无法找到Office安装。"
+
+#: win32/source/setup/setup.ulf#%APP_TITLE%
+msgid  "Setup"
+msgstr "安装"
 
 #: win32/source/setup/setup.ulf#%APP_PROD_TITLE%
 msgid  "The %PRODUCTNAME Setup"
@@ -905,7 +909,7 @@ msgstr "安装已取消"
 
 #: win32/source/setup/setup.ulf#%REQUIRES_ADMIN_PRIV%
 msgid  "Administrator privileges are required for upgrading the Windows Installer."
-msgstr ""
+msgstr "升级 Windows Installer 需要具有管理员权限。"
 
 #: win32/source/setup/setup.ulf#%FILE_NOT_FOUND%
 msgid  "Setup was unable to find the file '%s'."
@@ -917,15 +921,15 @@ msgstr "无效的命令行选项 %s。请使用 /? 获得帮助。"
 
 #: win32/source/setup/setup.ulf#%SETUP_TO_OLD%
 msgid  "This package requires at least the version '%s' of the Windows Installer. \nYou have Windows Installer '%s' on your system!"
-msgstr ""
+msgstr "此包需要 Windows Installer '%s' 及以上版本。\n系统已装有 Windows Installer '%s' ！"
 
 #: win32/source/setup/setup.ulf#%SETUP_NOT_FOUND%
 msgid  "This package requires the Windows Installer. \nYou need at least Windows Installer '%s' on your system!"
-msgstr ""
+msgstr "此包需要 Windows Installer。\n要求系统包括至少 Windows Installer '%s' 。"
 
 #: win32/source/setup/setup.ulf#%USAGE%
 msgid  "Usage:\n   /? :  Shows this dialog.\n   /a :  Performs an administrative installation.\n   /j[u|m] :  Performs an advertising installation.\n   /q[n] : Do not show any user interface (silent mode).\n"
-msgstr ""
+msgstr "用法:\n   /?:  显示此对话框。\n   /a :执行管理员安装。\n   /j[u|m] : 执行最小安装。\n   /q[n] :不显示任何用户界面（无提示模式）。\n"
 
 #: win32/source/setup/setup.ulf#%ALREADY_RUNNING%
 msgid  "There is already a setup process running."
@@ -1046,7 +1050,3 @@ msgstr "中文（简体）"
 #: win32/source/setup/setup.ulf#%LANGUAGE_PT_PT%
 msgid  "Portuguese (Portugal)"
 msgstr "葡萄牙语（葡萄牙）"
-
-#: win32/source/setup/setup.ulf#%APP_TITLE%
-msgid  "Setup"
-msgstr "安装"

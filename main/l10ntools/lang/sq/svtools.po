@@ -169,7 +169,7 @@ msgstr "Përmban shabllone për krijimin e dokumenteve të reja"
 
 #: source/contnr/templwin.src#STR_SVT_SAMPLES_HELP.String.Text
 msgid  "Contains a selection of sample letters, reports and other documents"
-msgstr ""
+msgstr "Përmban një përzgjedhje të shkronjave mostra, raporte dhe dokumente tjera"
 
 #: source/contnr/fileview.src#STR_SVT_FILEVIEW_COLUMN_TITLE.String.Text
 msgid  "Title"
@@ -321,15 +321,15 @@ msgstr "Ky është font i ekranit. Figura në shtypës mund të ndryshojë."
 
 #: source/control/ctrltool.src#STR_SVT_FONTMAP_SIZENOTAVAILABLE.String.Text
 msgid  "This font size has not been installed. The closest available size will be used."
-msgstr ""
+msgstr "Kjo madhësi e fontit nuk është instaluar. Do të përdoret madhësia më e përafërt"
 
 #: source/control/ctrltool.src#STR_SVT_FONTMAP_STYLENOTAVAILABLE.String.Text
 msgid  "This font style will be simulated or the closest matching style will be used."
-msgstr ""
+msgstr "Ky stil i fontit do të simulohet ose do të përdoret stili më i përafërt"
 
 #: source/control/ctrltool.src#STR_SVT_FONTMAP_NOTAVAILABLE.String.Text
 msgid  "This font has not been installed. The closest available font will be used."
-msgstr ""
+msgstr "Ky font nuk është instaluar. Do të përdoret fonti më i përafërt i mundshëm"
 
 #: source/control/ctrlbox.src#STR_SVT_AUTOMATIC_COLOR.String.Text
 msgid  "Automatic"
@@ -577,594 +577,478 @@ msgid  "~Options..."
 msgstr "Opcionet"
 
 #: source/dialogs/filedlg2.src#STR_FILEDLG_SELECT.String.Text
-#, fuzzy
 msgid  "Select Directory"
 msgstr "Zgjidh folderin"
 
 #: source/dialogs/filedlg2.src#STR_FILEDLG_CANTCHDIR.String.Text
-#, fuzzy
 msgid  "Cannot change to directory"
 msgstr "Nuk mund të ndërrojë në direktorium"
 
 #: source/dialogs/filedlg2.src#STR_FILEDLG_OPEN.String.Text
-#, fuzzy
 msgid  "Open"
 msgstr "Hape"
 
 #: source/dialogs/filedlg2.src#STR_FILEDLG_FILE.String.Text
-#, fuzzy
 msgid  "~File"
 msgstr "Fajll"
 
 #: source/dialogs/filedlg2.src#STR_FILEDLG_DIR.String.Text
-#, fuzzy
 msgid  "~Directory"
 msgstr "Folderi"
 
 #: source/dialogs/filedlg2.src#STR_FILEDLG_TYPE.String.Text
-#, fuzzy
 msgid  "File ~type"
 msgstr "Lloji i fajllit"
 
 #: source/dialogs/filedlg2.src#STR_FILEDLG_CANTOPENFILE.String.Text
-#, fuzzy
 msgid  "Can't open file"
 msgstr "s'mund ta hapë fajllin"
 
 #: source/dialogs/filedlg2.src#STR_FILEDLG_CANTOPENDIR.String.Text
-#, fuzzy
 msgid  "Can't open directory"
 msgstr "s'mund ta hapë folderin"
 
 #: source/dialogs/filedlg2.src#STR_FILEDLG_OVERWRITE.String.Text
 msgid  "This file already exists. \nOverwrite ?"
-msgstr ""
+msgstr "Fajli tanimë ekziston. \nTë mbishkruhet ?"
 
 #: source/dialogs/filedlg2.src#STR_FILEDLG_GOUP.String.Text
-#, fuzzy
 msgid  "Up One Level"
 msgstr "Një  nivel më lartë"
 
 #: source/dialogs/filedlg2.src#STR_FILEDLG_SAVE.String.Text
-#, fuzzy
 msgid  "Save"
 msgstr "Ruaje"
 
 #: source/dialogs/filedlg2.src#STR_FILEDLG_DRIVES.String.Text
-#, fuzzy
 msgid  "D~rive"
 msgstr "Drajvi"
 
 #: source/dialogs/filedlg2.src#STR_FILEDLG_HOME.String.Text
-#, fuzzy
 msgid  "User Directory"
 msgstr "Folderi i Shfrytëzuesit"
 
 #: source/dialogs/filedlg2.src#STR_FILEDLG_NEWDIR.String.Text
-#, fuzzy
 msgid  "Create Directory"
 msgstr "Krijo folderin"
 
 #: source/dialogs/filedlg2.src#STR_FILEDLG_ASKNEWDIR.String.Text
-#, fuzzy
 msgid  "Do you want the directory %s to be created ?"
 msgstr "A dëshironi që të krijohet folderi %s?"
 
 #: source/dialogs/addresstemplate.src#DLG_ADDRESSBOOKSOURCE.ModalDialog.Text
-#, fuzzy
 msgid  "Templates: Address Book Assignment"
 msgstr "Shabllonet: Caktimi i Adresarit"
 
 #: source/dialogs/addresstemplate.src#DLG_ADDRESSBOOKSOURCE.FL_DATASOURCEFRAME.FixedLine.Text
-#, fuzzy
 msgid  "Address Book Source"
 msgstr "Burimi i adresarit"
 
 #: source/dialogs/addresstemplate.src#DLG_ADDRESSBOOKSOURCE.FT_DATASOURCE.FixedText.Text
-#, fuzzy
 msgid  "Data source"
 msgstr "Burimi i të dhënave"
 
 #: source/dialogs/addresstemplate.src#DLG_ADDRESSBOOKSOURCE.PB_ADMINISTATE_DATASOURCES.PushButton.Text
-#, fuzzy
 msgid  "~Address Data Source..."
 msgstr "AutoPilot: Burimi i bazës së adresave"
 
 #: source/dialogs/addresstemplate.src#DLG_ADDRESSBOOKSOURCE.FT_TABLE.FixedText.Text
-#, fuzzy
 msgid  "Table"
 msgstr "Tabelë"
 
 #: source/dialogs/addresstemplate.src#DLG_ADDRESSBOOKSOURCE.FT_FIELDS.FixedText.Text
-#, fuzzy
 msgid  "Field assignment"
 msgstr "Caktim i fushës"
 
 #: source/dialogs/addresstemplate.src#DLG_ADDRESSBOOKSOURCE.STR_NO_FIELD_SELECTION.String.Text
-#, fuzzy
 msgid  "<none>"
 msgstr "<asnjë>"
 
 #: source/dialogs/addresstemplate.src#DLG_ADDRESSBOOKSOURCE.STR_FIELD_COMPANY.String.Text
-#, fuzzy
 msgid  "Company"
 msgstr "Kompania"
 
 #: source/dialogs/addresstemplate.src#DLG_ADDRESSBOOKSOURCE.STR_FIELD_DEPARTMENT.String.Text
-#, fuzzy
 msgid  "Department"
 msgstr "Departmenti"
 
 #: source/dialogs/addresstemplate.src#DLG_ADDRESSBOOKSOURCE.STR_FIELD_FIRSTNAME.String.Text
-#, fuzzy
 msgid  "First name"
 msgstr "Emri"
 
 #: source/dialogs/addresstemplate.src#DLG_ADDRESSBOOKSOURCE.STR_FIELD_LASTNAME.String.Text
-#, fuzzy
 msgid  "Last name"
 msgstr "Mbiemri"
 
 #: source/dialogs/addresstemplate.src#DLG_ADDRESSBOOKSOURCE.STR_FIELD_STREET.String.Text
-#, fuzzy
 msgid  "Street"
 msgstr "Rruga"
 
 #: source/dialogs/addresstemplate.src#DLG_ADDRESSBOOKSOURCE.STR_FIELD_COUNTRY.String.Text
-#, fuzzy
 msgid  "Country"
 msgstr "Vendi"
 
 #: source/dialogs/addresstemplate.src#DLG_ADDRESSBOOKSOURCE.STR_FIELD_ZIPCODE.String.Text
-#, fuzzy
 msgid  "ZIP Code"
 msgstr "ZIP Kodi"
 
 #: source/dialogs/addresstemplate.src#DLG_ADDRESSBOOKSOURCE.STR_FIELD_CITY.String.Text
-#, fuzzy
 msgid  "City"
 msgstr "Qyteti"
 
 #: source/dialogs/addresstemplate.src#DLG_ADDRESSBOOKSOURCE.STR_FIELD_TITLE.String.Text
-#, fuzzy
 msgid  "Title"
 msgstr "Titulli"
 
 #: source/dialogs/addresstemplate.src#DLG_ADDRESSBOOKSOURCE.STR_FIELD_POSITION.String.Text
-#, fuzzy
 msgid  "Position"
 msgstr "Pozicion"
 
 #: source/dialogs/addresstemplate.src#DLG_ADDRESSBOOKSOURCE.STR_FIELD_ADDRFORM.String.Text
-#, fuzzy
 msgid  "Addr. Form"
 msgstr "Formulari i adresës"
 
 #: source/dialogs/addresstemplate.src#DLG_ADDRESSBOOKSOURCE.STR_FIELD_INITIALS.String.Text
-#, fuzzy
 msgid  "Initials"
 msgstr "Inicialet"
 
 #: source/dialogs/addresstemplate.src#DLG_ADDRESSBOOKSOURCE.STR_FIELD_SALUTATION.String.Text
-#, fuzzy
 msgid  "Complimentary close"
 msgstr "Komplimenti mbyllës"
 
 #: source/dialogs/addresstemplate.src#DLG_ADDRESSBOOKSOURCE.STR_FIELD_HOMETEL.String.Text
-#, fuzzy
 msgid  "Tel: Home"
 msgstr "Tel: shtëpi"
 
 #: source/dialogs/addresstemplate.src#DLG_ADDRESSBOOKSOURCE.STR_FIELD_WORKTEL.String.Text
-#, fuzzy
 msgid  "Tel: Work"
 msgstr "Tel: punë"
 
 #: source/dialogs/addresstemplate.src#DLG_ADDRESSBOOKSOURCE.STR_FIELD_FAX.String.Text
-#, fuzzy
 msgid  "FAX"
 msgstr "Fax"
 
 #: source/dialogs/addresstemplate.src#DLG_ADDRESSBOOKSOURCE.STR_FIELD_EMAIL.String.Text
-#, fuzzy
 msgid  "E-mail"
 msgstr "E-mail"
 
 #: source/dialogs/addresstemplate.src#DLG_ADDRESSBOOKSOURCE.STR_FIELD_URL.String.Text
-#, fuzzy
 msgid  "URL"
 msgstr "URL"
 
 #: source/dialogs/addresstemplate.src#DLG_ADDRESSBOOKSOURCE.STR_FIELD_NOTE.String.Text
-#, fuzzy
 msgid  "Note"
 msgstr "Shënim"
 
 #: source/dialogs/addresstemplate.src#DLG_ADDRESSBOOKSOURCE.STR_FIELD_USER1.String.Text
-#, fuzzy
 msgid  "User 1"
 msgstr "Shfrytëzuesi 1"
 
 #: source/dialogs/addresstemplate.src#DLG_ADDRESSBOOKSOURCE.STR_FIELD_USER2.String.Text
-#, fuzzy
 msgid  "User 2"
 msgstr "Shfrytëzuesi 2"
 
 #: source/dialogs/addresstemplate.src#DLG_ADDRESSBOOKSOURCE.STR_FIELD_USER3.String.Text
-#, fuzzy
 msgid  "User 3"
 msgstr "Shfrytëzuesi 3"
 
 #: source/dialogs/addresstemplate.src#DLG_ADDRESSBOOKSOURCE.STR_FIELD_USER4.String.Text
-#, fuzzy
 msgid  "User 4"
 msgstr "Shfrytëzuesi 4"
 
 #: source/dialogs/addresstemplate.src#DLG_ADDRESSBOOKSOURCE.STR_FIELD_ID.String.Text
-#, fuzzy
 msgid  "ID"
 msgstr "ID"
 
 #: source/dialogs/addresstemplate.src#DLG_ADDRESSBOOKSOURCE.STR_FIELD_STATE.String.Text
-#, fuzzy
 msgid  "State"
 msgstr "Shteti"
 
 #: source/dialogs/addresstemplate.src#DLG_ADDRESSBOOKSOURCE.STR_FIELD_OFFICETEL.String.Text
-#, fuzzy
 msgid  "Tel: Office"
 msgstr "Tel: Zyrë"
 
 #: source/dialogs/addresstemplate.src#DLG_ADDRESSBOOKSOURCE.STR_FIELD_PAGER.String.Text
-#, fuzzy
 msgid  "Pager"
 msgstr "Pager"
 
 #: source/dialogs/addresstemplate.src#DLG_ADDRESSBOOKSOURCE.STR_FIELD_MOBILE.String.Text
-#, fuzzy
 msgid  "Mobile"
 msgstr "Celulari"
 
 #: source/dialogs/addresstemplate.src#DLG_ADDRESSBOOKSOURCE.STR_FIELD_TELOTHER.String.Text
-#, fuzzy
 msgid  "Tel: Other"
 msgstr "Tel: tjetër"
 
 #: source/dialogs/addresstemplate.src#DLG_ADDRESSBOOKSOURCE.STR_FIELD_CALENDAR.String.Text
-#, fuzzy
 msgid  "Calendar"
 msgstr "Kalendari"
 
 #: source/dialogs/addresstemplate.src#DLG_ADDRESSBOOKSOURCE.STR_FIELD_INVITE.String.Text
-#, fuzzy
 msgid  "Invite"
 msgstr "Fto"
 
 #: source/dialogs/formats.src#STR_FORMAT_STRING.String.Text
-#, fuzzy
 msgid  "Unformatted text"
 msgstr "Tekst i paformatizuar"
 
 #: source/dialogs/formats.src#STR_FORMAT_BITMAP.String.Text
-#, fuzzy
 msgid  "Bitmap"
 msgstr "Bitmap"
 
 #: source/dialogs/formats.src#STR_FORMAT_GDIMETAFILE.String.Text
-#, fuzzy
 msgid  "GDI metafile"
 msgstr "Metafile GDI"
 
 #: source/dialogs/formats.src#STR_FORMAT_RTF.String.Text
-#, fuzzy
 msgid  "Formatted text [RTF]"
 msgstr "Tekst i formatizuar [RTF]"
 
 #: source/dialogs/formats.src#STR_FORMAT_ID_DRAWING.String.Text
-#, fuzzy
 msgid  "Drawing format"
 msgstr "Formati i vizatimit"
 
 #: source/dialogs/formats.src#STR_FORMAT_ID_SVXB.String.Text
-#, fuzzy
 msgid  "SVXB (StarView bitmap/animation)"
 msgstr "SVXB (StarView bitmap/animation)"
 
 #: source/dialogs/formats.src#STR_FORMAT_ID_INTERNALLINK_STATE.String.Text
-#, fuzzy
 msgid  "Status Info from Svx Internal Link"
 msgstr "Informata mbi statusin nga linku i brendshwm Svx"
 
 #: source/dialogs/formats.src#STR_FORMAT_ID_SOLK.String.Text
-#, fuzzy
 msgid  "SOLK (%PRODUCTNAME Link)"
 msgstr "SOLK (%PRODUCTNAME Link)"
 
 #: source/dialogs/formats.src#STR_FORMAT_ID_NETSCAPE_BOOKMARK.String.Text
-#, fuzzy
 msgid  "Netscape Bookmark"
 msgstr "Netscape Shënjim"
 
 #: source/dialogs/formats.src#STR_FORMAT_ID_STARSERVER.String.Text
-#, fuzzy
 msgid  "Star server format"
 msgstr "Format Star server"
 
 #: source/dialogs/formats.src#STR_FORMAT_ID_STAROBJECT.String.Text
-#, fuzzy
 msgid  "Star object format"
 msgstr "Format i objektit Star"
 
 #: source/dialogs/formats.src#STR_FORMAT_ID_APPLETOBJECT.String.Text
-#, fuzzy
 msgid  "Applet object"
 msgstr "Applet Objekt"
 
 #: source/dialogs/formats.src#STR_FORMAT_ID_PLUGIN_OBJECT.String.Text
-#, fuzzy
 msgid  "Plug-in object"
 msgstr "Objekti shtesë (plug-in)"
 
 #: source/dialogs/formats.src#STR_FORMAT_ID_STARWRITER_30.String.Text
-#, fuzzy
 msgid  "StarWriter 3.0 object"
 msgstr "Objekt i StarWriter 3.0"
 
 #: source/dialogs/formats.src#STR_FORMAT_ID_STARWRITER_40.String.Text
-#, fuzzy
 msgid  "StarWriter 4.0 object"
 msgstr "Objekt i StarWriter 4.0"
 
 #: source/dialogs/formats.src#STR_FORMAT_ID_STARWRITER_50.String.Text
-#, fuzzy
 msgid  "StarWriter 5.0 object"
 msgstr "Objekt i StarWriter 5.0"
 
 #: source/dialogs/formats.src#STR_FORMAT_ID_STARWRITERWEB_40.String.Text
-#, fuzzy
 msgid  "StarWriter/Web 4.0 object"
 msgstr "Objekt i Starwriter/Web 4.0"
 
 #: source/dialogs/formats.src#STR_FORMAT_ID_STARWRITERWEB_50.String.Text
-#, fuzzy
 msgid  "StarWriter/Web 5.0 object"
 msgstr "Objekt i Starwriter/Web 5.0"
 
 #: source/dialogs/formats.src#STR_FORMAT_ID_STARWRITERGLOB_40.String.Text
-#, fuzzy
 msgid  "StarWriter/Master 4.0 object"
 msgstr "Objekt i Starwriter/Master 4.0"
 
 #: source/dialogs/formats.src#STR_FORMAT_ID_STARWRITERGLOB_50.String.Text
-#, fuzzy
 msgid  "StarWriter/Master 5.0 object"
 msgstr "Objekt i Starwriter/Master 4.0"
 
 #: source/dialogs/formats.src#STR_FORMAT_ID_STARDRAW.String.Text
-#, fuzzy
 msgid  "StarDraw object"
 msgstr "Objekt i Star Draw"
 
 #: source/dialogs/formats.src#STR_FORMAT_ID_STARDRAW_40.String.Text
-#, fuzzy
 msgid  "StarDraw 4.0 object"
 msgstr "Objekt i StarDraw 4.0"
 
 #: source/dialogs/formats.src#STR_FORMAT_ID_STARIMPRESS_50.String.Text
-#, fuzzy
 msgid  "StarImpress 5.0 object"
 msgstr "Objekt i StarImpress 5.0"
 
 #: source/dialogs/formats.src#STR_FORMAT_ID_STARDRAW_50.String.Text
-#, fuzzy
 msgid  "StarDraw 5.0 object"
 msgstr "Objekt i StarDraw 5.0"
 
 #: source/dialogs/formats.src#STR_FORMAT_ID_STARCALC.String.Text
-#, fuzzy
 msgid  "StarCalc object"
 msgstr "Objekt i StarCalc"
 
 #: source/dialogs/formats.src#STR_FORMAT_ID_STARCALC_40.String.Text
-#, fuzzy
 msgid  "StarCalc  4.0 object"
 msgstr "Objekt i StarCalc 4.0"
 
 #: source/dialogs/formats.src#STR_FORMAT_ID_STARCALC_50.String.Text
-#, fuzzy
 msgid  "StarCalc 5.0 object"
 msgstr "Objekt i StarCalc 5.0"
 
 #: source/dialogs/formats.src#STR_FORMAT_ID_STARCHART.String.Text
-#, fuzzy
 msgid  "StarChart object"
 msgstr "Objekt i StarChart"
 
 #: source/dialogs/formats.src#STR_FORMAT_ID_STARCHART_40.String.Text
-#, fuzzy
 msgid  "StarChart 4.0 object"
 msgstr "Objekt i StarChart 4.0"
 
 #: source/dialogs/formats.src#STR_FORMAT_ID_STARCHART_50.String.Text
-#, fuzzy
 msgid  "StarChart 5.0 object"
 msgstr "Objekt i StarChart 5.0"
 
 #: source/dialogs/formats.src#STR_FORMAT_ID_STARIMAGE.String.Text
-#, fuzzy
 msgid  "StarImage object"
 msgstr "Objekti i StarImage"
 
 #: source/dialogs/formats.src#STR_FORMAT_ID_STARIMAGE_40.String.Text
-#, fuzzy
 msgid  "StarImage 4.0 object"
 msgstr "Objekti i StarImage 4.0"
 
 #: source/dialogs/formats.src#STR_FORMAT_ID_STARIMAGE_50.String.Text
-#, fuzzy
 msgid  "StarImage 5.0 object"
 msgstr "Objekti i StarImage 5.0"
 
 #: source/dialogs/formats.src#STR_FORMAT_ID_STARMATH.String.Text
-#, fuzzy
 msgid  "StarMath object"
 msgstr "Objekti i Star Math"
 
 #: source/dialogs/formats.src#STR_FORMAT_ID_STARMATH_40.String.Text
-#, fuzzy
 msgid  "StarMath 4.0 object"
 msgstr "Objekti i Star Math 4.0"
 
 #: source/dialogs/formats.src#STR_FORMAT_ID_STARMATH_50.String.Text
-#, fuzzy
 msgid  "StarMath 5.0 object"
 msgstr "Objekti i Star Math 5.0"
 
 #: source/dialogs/formats.src#STR_FORMAT_ID_STAROBJECT_PAINTDOC.String.Text
-#, fuzzy
 msgid  "StarObject Paint object"
 msgstr "Objekti i StarObject Paint "
 
 #: source/dialogs/formats.src#STR_FORMAT_ID_HTML.String.Text
-#, fuzzy
 msgid  "HTML (HyperText Markup Language)"
 msgstr "HTML (HyperText Markup Language)"
 
 #: source/dialogs/formats.src#STR_FORMAT_ID_HTML_SIMPLE.String.Text
-#, fuzzy
 msgid  "HTML format"
 msgstr "Formati HTML"
 
 #: source/dialogs/formats.src#STR_FORMAT_ID_BIFF_5.String.Text
-#, fuzzy
 msgid  "Biff5 (Microsoft Excel 5.0/95)"
 msgstr "Biff5 (Microsoft Excel 5.0/95)"
 
 #: source/dialogs/formats.src#STR_FORMAT_ID_BIFF_8.String.Text
-#, fuzzy
 msgid  "Biff8 (Microsoft Excel 97/2000/XP)"
 msgstr "Biff8 (Microsoft Excel 97/2000/XP)"
 
 #: source/dialogs/formats.src#STR_FORMAT_ID_SYLK.String.Text
-#, fuzzy
 msgid  "Sylk"
 msgstr "Sylk"
 
 #: source/dialogs/formats.src#STR_FORMAT_ID_LINK.String.Text
-#, fuzzy
 msgid  "DDE link"
 msgstr "DDE link"
 
 #: source/dialogs/formats.src#STR_FORMAT_ID_DIF.String.Text
-#, fuzzy
 msgid  "DIF"
 msgstr "DIF"
 
 #: source/dialogs/formats.src#STR_FORMAT_ID_MSWORD_DOC.String.Text
-#, fuzzy
 msgid  "Microsoft Word object"
 msgstr "Objekt i Microsoft Word"
 
 #: source/dialogs/formats.src#STR_FORMAT_ID_STAR_FRAMESET_DOC.String.Text
-#, fuzzy
 msgid  "StarFrameSet object"
 msgstr "Objekt i StarFrameSet"
 
 #: source/dialogs/formats.src#STR_FORMAT_ID_OFFICE_DOC.String.Text
-#, fuzzy
 msgid  "Office document object"
 msgstr "Objekt i dokument të Office"
 
 #: source/dialogs/formats.src#STR_FORMAT_ID_NOTES_DOCINFO.String.Text
-#, fuzzy
 msgid  "Notes document info"
 msgstr "Informata të shënimeve të dokumentit"
 
 #: source/dialogs/formats.src#STR_FORMAT_ID_SFX_DOC.String.Text
-#, fuzzy
 msgid  "Sfx document"
 msgstr "Sfx dokument"
 
 #: source/dialogs/formats.src#STR_FORMAT_ID_STARCHARTDOCUMENT_50.String.Text
-#, fuzzy
 msgid  "StarChart 5.0 object"
 msgstr "Objekt i StarChart 5.0"
 
 #: source/dialogs/formats.src#STR_FORMAT_ID_GRAPHOBJ.String.Text
-#, fuzzy
 msgid  "Graphic object"
 msgstr "Objekt grafik"
 
 #: source/dialogs/formats.src#STR_FORMAT_ID_STARWRITER_60.String.Text
-#, fuzzy
 msgid  "%PRODUCTXMLFILEFORMATNAME %PRODUCTXMLFILEFORMATVERSION Writer object"
 msgstr "%PRODUCTNAME 6.0 Writer/Web object"
 
 #: source/dialogs/formats.src#STR_FORMAT_ID_STARWRITERWEB_60.String.Text
 msgid  "%PRODUCTXMLFILEFORMATNAME %PRODUCTXMLFILEFORMATVERSION Writer/Web object"
-msgstr ""
+msgstr "%PRODUCTNAME 6.0 Writer/Web object"
 
 #: source/dialogs/formats.src#STR_FORMAT_ID_STARWRITERGLOB_60.String.Text
 msgid  "%PRODUCTXMLFILEFORMATNAME %PRODUCTXMLFILEFORMATVERSION Writer/Master object"
-msgstr ""
+msgstr "%PRODUCTNAME 6.0 Writer/Web object"
 
 #: source/dialogs/formats.src#STR_FORMAT_ID_STARDRAW_60.String.Text
-#, fuzzy
 msgid  "%PRODUCTXMLFILEFORMATNAME %PRODUCTXMLFILEFORMATVERSION Draw object"
 msgstr "Vizato shiritin e objektit/Grafikat"
 
 #: source/dialogs/formats.src#STR_FORMAT_ID_STARIMPRESS_60.String.Text
-#, fuzzy
 msgid  "%PRODUCTXMLFILEFORMATNAME %PRODUCTXMLFILEFORMATVERSION Impress object"
 msgstr "Vizato shiritin e objektit/Grafikat"
 
 #: source/dialogs/formats.src#STR_FORMAT_ID_STARCALC_60.String.Text
-#, fuzzy
 msgid  "%PRODUCTXMLFILEFORMATNAME %PRODUCTXMLFILEFORMATVERSION Calc object"
 msgstr "Shto %PRODUCTNAME Math objektin"
 
 #: source/dialogs/formats.src#STR_FORMAT_ID_STARCHART_60.String.Text
-#, fuzzy
 msgid  "%PRODUCTXMLFILEFORMATNAME %PRODUCTXMLFILEFORMATVERSION Chart object"
 msgstr "Vizato shiritin e objektit/Grafikat"
 
 #: source/dialogs/formats.src#STR_FORMAT_ID_STARMATH_60.String.Text
-#, fuzzy
 msgid  "%PRODUCTXMLFILEFORMATNAME %PRODUCTXMLFILEFORMATVERSION Math object"
 msgstr "Shto %PRODUCTNAME Math objektin"
 
 #: source/dialogs/formats.src#STR_FORMAT_ID_WMF.String.Text
-#, fuzzy
 msgid  "Windows metafile"
 msgstr "Windows Metafile"
 
 #: source/dialogs/formats.src#STR_FORMAT_ID_DBACCESS_QUERY.String.Text
-#, fuzzy
 msgid  "Data source object"
 msgstr "Objekt i burimit të të dhënave"
 
 #: source/dialogs/formats.src#STR_FORMAT_ID_DBACCESS_TABLE.String.Text
-#, fuzzy
 msgid  "Data source table"
 msgstr "Tabelë e burimit të të dhënave"
 
 #: source/dialogs/formats.src#STR_FORMAT_ID_DBACCESS_COMMAND.String.Text
-#, fuzzy
 msgid  "SQL query"
 msgstr "Pyetësor SQL"
 
 #: source/dialogs/formats.src#STR_FORMAT_ID_DIALOG_60.String.Text
-#, fuzzy
 msgid  "%PRODUCTXMLFILEFORMATNAME %PRODUCTXMLFILEFORMATVERSION dialog"
 msgstr "%PRODUCTNAME %PRODUCTXMLFILEFORMATVERSION formulë"
 
 #: source/dialogs/formats.src#STR_FORMAT_ID_FILEGRPDESCRIPTOR.String.Text
-#, fuzzy
 msgid  "Link"
 msgstr "Link"
 
 #: source/dialogs/formats.src#STR_FORMAT_ID_HTML_NO_COMMENT.String.Text
-#, fuzzy
 msgid  "HTML format without comments"
 msgstr "HTML format pa komente"
 
@@ -1234,8 +1118,9 @@ msgid  "OLE could not connect to a network device (server)."
 msgstr "OLE nuk mund të lidhet me paisjen e rrjetit (serverin)"
 
 #: source/dialogs/so3res.src#RID_SO_ERROR_HANDLER.ERRCODE_SO_MK_INTERMEDIATE_INTERFACE_NOT_SUPPORTED&S_MAX.String.Text
+#, fuzzy
 msgid  "The object found does not support the interface required for the desired operation."
-msgstr ""
+msgstr "Objekti i gjetur nuk e mbështetë interfejsin e kërkuar për operacionin e dëshiruar"
 
 #: source/dialogs/so3res.src#RID_SO_ERROR_HANDLER.ERRCODE_SO_NO_INTERFACE&S_MAX.String.Text
 #, fuzzy
@@ -1273,8 +1158,9 @@ msgid  "The connection name is contained in the other one."
 msgstr "Emri i koneksionit përfshihet në tjetrën."
 
 #: source/dialogs/so3res.src#RID_SO_ERROR_HANDLER.ERRCODE_SO_MK_US&S_MAX.String.Text
+#, fuzzy
 msgid  "The connection names (the receiver and the other moniker) are identical."
-msgstr ""
+msgstr "Emrat e koneksioneve (marrësi dhe nofka tjetër) janë identike."
 
 #: source/dialogs/so3res.src#RID_SO_ERROR_HANDLER.ERRCODE_SO_MK_ME&S_MAX.String.Text
 #, fuzzy
@@ -1372,28 +1258,34 @@ msgid  "Inserts a new %1-Object into your document as a symbol."
 msgstr " Shton një objekt %1-Object në dokumentin tuaj si simbol."
 
 #: source/dialogs/so3res.src#STR_INS_FILE.String.Text
+#, fuzzy
 msgid  "Inserts the contents of the file into your document to enable later editing in the original application."
-msgstr ""
+msgstr "Shton përmbajtjet e fajlit në dokumentin tuaj që të mundësojwërregullimin më vonë në aplikacionin origjinal."
 
 #: source/dialogs/so3res.src#STR_INS_PLUGIN.String.Text
+#, fuzzy
 msgid  "Inserts a plug-in object into your document with a reference to the plug-in data. When the object is activated, the plug-in is automatically executed."
-msgstr ""
+msgstr "Shton një objekt plug-in në dokumentin tuaj, me referencë tek plug-in. Kur objekti aktivizohet, programi shtesë ekzekutohet automatikisht."
 
 #: source/dialogs/so3res.src#STR_INS_APPLET.String.Text
+#, fuzzy
 msgid  "Inserts an applet object into your document. When the object is activated, the applet is automatically executed."
-msgstr ""
+msgstr "Shton një objekt aplet në dokumentin tuaj. Kur objekti aktivizohet, programi shtesë ekzekutohet automatikisht."
 
 #: source/dialogs/so3res.src#STR_INS_FILE_ICON.String.Text
+#, fuzzy
 msgid  "Inserts the contents of the file as an icon into your document."
-msgstr ""
+msgstr "Shton përmbajtjen e fajlit, që paraqitet si një ikonë në dokumentin tuaj."
 
 #: source/dialogs/so3res.src#STR_INS_FILE_LINK.String.Text
+#, fuzzy
 msgid  "Inserts the contents of the file into your document and creates a link to the source file. Changes made to the source file will be reflected in your document."
-msgstr ""
+msgstr "Shton përmbajtjet e fajllit në dokumentin tuaj dhe krijon një lidhje me fajllin burimor. Ndryshimet e bëra në fajllin burimor do të reflektohen në dokumentin tuaj."
 
 #: source/dialogs/so3res.src#STR_INS_FILE_ICON_LINK.String.Text
+#, fuzzy
 msgid  "Inserts an icon into your document representing the file. Changes made to the source file will be reflected in your document."
-msgstr ""
+msgstr "Shton një ikonë në dokumentin tuaj duke përfaqësuar fajllin. Ndryshimet e bëra me fajllin burimor do të reflektohen në dokumentin tuaj."
 
 #: source/dialogs/so3res.src#STR_PASTE.String.Text
 #, fuzzy
@@ -1406,8 +1298,9 @@ msgid  "Converts the selected %1object to the object type %2."
 msgstr "Shndërron objektin e zgjedhur %1 në objekt të llojit %2."
 
 #: source/dialogs/so3res.src#STR_ACTIVATE_AS.String.Text
+#, fuzzy
 msgid  "All objects of type %1 are activated as %2, but not converted"
-msgstr ""
+msgstr "Të gjitha objektet të tipit %1 janë të aktivizuara si %2, por nuk janë të shndërruara"
 
 #: source/dialogs/so3res.src#STR_VERB_OPEN.String.Text
 #, fuzzy
@@ -1747,332 +1640,266 @@ msgid  "~Repeat: "
 msgstr ""
 
 #: source/misc/imagemgr.src#STR_DESCRIPTION_SOURCEFILE.String.Text
-#, fuzzy
 msgid  "Source code"
 msgstr "Kodi burimor"
 
 #: source/misc/imagemgr.src#STR_DESCRIPTION_BOOKMARKFILE.String.Text
-#, fuzzy
 msgid  "Bookmark file"
 msgstr "Fajlli shënjues"
 
 #: source/misc/imagemgr.src#STR_DESCRIPTION_GRAPHIC_DOC.String.Text
-#, fuzzy
 msgid  "Graphics"
 msgstr "Grafikat"
 
 #: source/misc/imagemgr.src#STR_DESCRIPTION_CFGFILE.String.Text
-#, fuzzy
 msgid  "Configuration file"
 msgstr "Fajlli konfigurues"
 
 #: source/misc/imagemgr.src#STR_DESCRIPTION_APPLICATION.String.Text
-#, fuzzy
 msgid  "Application"
 msgstr "Aplikacioni"
 
 #: source/misc/imagemgr.src#STR_DESCRIPTION_DATABASE_TABLE.String.Text
-#, fuzzy
 msgid  "Database table"
 msgstr "Tabelat e databazës"
 
 #: source/misc/imagemgr.src#STR_DESCRIPTION_SYSFILE.String.Text
-#, fuzzy
 msgid  "System file"
 msgstr "Fajlli sistemor"
 
 #: source/misc/imagemgr.src#STR_DESCRIPTION_WORD_DOC.String.Text
-#, fuzzy
 msgid  "MS Word document"
 msgstr "MS Word dokument"
 
 #: source/misc/imagemgr.src#STR_DESCRIPTION_HELP_DOC.String.Text
-#, fuzzy
 msgid  "Help file"
 msgstr "Fajlli i ndihmës"
 
 #: source/misc/imagemgr.src#STR_DESCRIPTION_HTMLFILE.String.Text
-#, fuzzy
 msgid  "HTML document"
 msgstr "HTML Dokument"
 
 #: source/misc/imagemgr.src#STR_DESCRIPTION_ARCHIVFILE.String.Text
-#, fuzzy
 msgid  "Archive file"
 msgstr "Arkivo fajllin"
 
 #: source/misc/imagemgr.src#STR_DESCRIPTION_LOGFILE.String.Text
-#, fuzzy
 msgid  "Log file"
 msgstr "Log fajll"
 
 #: source/misc/imagemgr.src#STR_DESCRIPTION_SDATABASE_DOC.String.Text
-#, fuzzy
 msgid  "%STAROFFICE Database"
 msgstr "StarOffice 5.2 Import i të Dhënave Bazë"
 
 #: source/misc/imagemgr.src#STR_DESCRIPTION_GLOBALDOC.String.Text
-#, fuzzy
 msgid  "StarWriter 4.0 / 5.0 Master Document"
 msgstr "StarOffice 5.0 Master Dokument"
 
 #: source/misc/imagemgr.src#STR_DESCRIPTION_SIMAGE_DOC.String.Text
-#, fuzzy
 msgid  "%STAROFFICE Image"
 msgstr "Pikë fotografi"
 
 #: source/misc/imagemgr.src#STR_DESCRIPTION_TEXTFILE.String.Text
-#, fuzzy
 msgid  "Text file"
 msgstr "Tekst fajll"
 
 #: source/misc/imagemgr.src#STR_DESCRIPTION_LINK.String.Text
-#, fuzzy
 msgid  "Link"
 msgstr "Link"
 
 #: source/misc/imagemgr.src#STR_DESCRIPTION_SOFFICE_TEMPLATE_DOC.String.Text
-#, fuzzy
 msgid  "%STAROFFICE 3.0 - 5.0 Template"
 msgstr "StarOffice 5.0 Shabllon"
 
 #: source/misc/imagemgr.src#STR_DESCRIPTION_EXCEL_DOC.String.Text
-#, fuzzy
 msgid  "MS Excel document"
 msgstr "MS Excel dokument"
 
 #: source/misc/imagemgr.src#STR_DESCRIPTION_EXCEL_TEMPLATE_DOC.String.Text
-#, fuzzy
 msgid  "MS Excel template"
 msgstr "MS Excel shabllon"
 
 #: source/misc/imagemgr.src#STR_DESCRIPTION_BATCHFILE.String.Text
-#, fuzzy
 msgid  "Batch file"
 msgstr "Batch fajlli"
 
 #: source/misc/imagemgr.src#STR_DESCRIPTION_FILE.String.Text
-#, fuzzy
 msgid  "File"
 msgstr "Fajlli"
 
 #: source/misc/imagemgr.src#STR_DESCRIPTION_FOLDER.String.Text
-#, fuzzy
 msgid  "Folder"
 msgstr "Folder"
 
 #: source/misc/imagemgr.src#STR_DESCRIPTION_FACTORY_WRITER.String.Text
-#, fuzzy
 msgid  "Text Document"
 msgstr "Tekst dokument"
 
 #: source/misc/imagemgr.src#STR_DESCRIPTION_FACTORY_CALC.String.Text
-#, fuzzy
 msgid  "Spreadsheet"
 msgstr "Tabelë kalkuluese"
 
 #: source/misc/imagemgr.src#STR_DESCRIPTION_FACTORY_IMPRESS.String.Text
-#, fuzzy
 msgid  "Presentation"
 msgstr "Prezantim"
 
 #: source/misc/imagemgr.src#STR_DESCRIPTION_FACTORY_DRAW.String.Text
-#, fuzzy
 msgid  "Drawing"
 msgstr "Vizatim "
 
 #: source/misc/imagemgr.src#STR_DESCRIPTION_FACTORY_WRITERWEB.String.Text
-#, fuzzy
 msgid  "HTML document"
 msgstr "HTML Dokument"
 
 #: source/misc/imagemgr.src#STR_DESCRIPTION_FACTORY_GLOBALDOC.String.Text
-#, fuzzy
 msgid  "Master document"
 msgstr "Dokumenti kryesor"
 
 #: source/misc/imagemgr.src#STR_DESCRIPTION_FACTORY_MATH.String.Text
-#, fuzzy
 msgid  "Formula"
 msgstr "Formula"
 
 #: source/misc/imagemgr.src#STR_DESCRIPTION_FACTORY_DATABASE.String.Text
-#, fuzzy
 msgid  "Database"
 msgstr "Databaza"
 
 #: source/misc/imagemgr.src#STR_DESCRIPTION_CALC_TEMPLATE.String.Text
-#, fuzzy
 msgid  "%PRODUCTXMLFILEFORMATNAME %PRODUCTXMLFILEFORMATVERSION Spreadsheet Template"
-msgstr "%PRODUCTNAME %PRODUCTXMLFILEFORMATVERSION shbllon tabele kalkuluese"
+msgstr ""
 
 #: source/misc/imagemgr.src#STR_DESCRIPTION_DRAW_TEMPLATE.String.Text
-#, fuzzy
 msgid  "%PRODUCTXMLFILEFORMATNAME %PRODUCTXMLFILEFORMATVERSION Drawing Template"
-msgstr "%PRODUCTNAME %PRODUCTXMLFILEFORMATVERSION shabllon vizatimi"
+msgstr ""
 
 #: source/misc/imagemgr.src#STR_DESCRIPTION_IMPRESS_TEMPLATE.String.Text
-#, fuzzy
 msgid  "%PRODUCTXMLFILEFORMATNAME %PRODUCTXMLFILEFORMATVERSION Presentation Template"
-msgstr "%PRODUCTNAME %PRODUCTXMLFILEFORMATVERSION shabllon prezantimi"
+msgstr ""
 
 #: source/misc/imagemgr.src#STR_DESCRIPTION_WRITER_TEMPLATE.String.Text
-#, fuzzy
 msgid  "%PRODUCTXMLFILEFORMATNAME %PRODUCTXMLFILEFORMATVERSION Text Document Template"
-msgstr "%PRODUCTNAME %PRODUCTXMLFILEFORMATVERSION Shabllon i Tekst Dokumentit"
+msgstr ""
 
 #: source/misc/imagemgr.src#STR_DESCRIPTION_LOCALE_VOLUME.String.Text
-#, fuzzy
 msgid  "Local drive"
 msgstr "Pajisje lokale"
 
 #: source/misc/imagemgr.src#STR_DESCRIPTION_FLOPPY_VOLUME.String.Text
-#, fuzzy
 msgid  "Disk drive"
 msgstr "Pajisje e Diskut"
 
 #: source/misc/imagemgr.src#STR_DESCRIPTION_CDROM_VOLUME.String.Text
-#, fuzzy
 msgid  "CD-ROM drive"
 msgstr "Pajisje e CD-ROM"
 
 #: source/misc/imagemgr.src#STR_DESCRIPTION_REMOTE_VOLUME.String.Text
-#, fuzzy
 msgid  "Network connection"
 msgstr "Lidhje në rrjet"
 
 #: source/misc/imagemgr.src#STR_DESCRIPTION_POWERPOINT.String.Text
-#, fuzzy
 msgid  "MS PowerPoint Document"
 msgstr "Dokument i Microsoft PowerPoint"
 
 #: source/misc/imagemgr.src#STR_DESCRIPTION_POWERPOINT_TEMPLATE.String.Text
-#, fuzzy
 msgid  "MS PowerPoint Template"
 msgstr "MS PowerPoint shabllon"
 
 #: source/misc/imagemgr.src#STR_DESCRIPTION_POWERPOINT_SHOW.String.Text
-#, fuzzy
 msgid  "MS PowerPoint Show"
 msgstr "MS PowerPoint shfaqje"
 
 #: source/misc/imagemgr.src#STR_DESCRIPTION_SXMATH_DOC.String.Text
-#, fuzzy
 msgid  "%PRODUCTXMLFILEFORMATNAME %PRODUCTXMLFILEFORMATVERSION Formula"
-msgstr "%PRODUCTNAME %PRODUCTXMLFILEFORMATVERSION formulë"
+msgstr ""
 
 #: source/misc/imagemgr.src#STR_DESCRIPTION_SXCHART_DOC.String.Text
-#, fuzzy
 msgid  "%PRODUCTXMLFILEFORMATNAME %PRODUCTXMLFILEFORMATVERSION Chart"
-msgstr "%PRODUCTNAME %PRODUCTXMLFILEFORMATVERSION Grafikon"
+msgstr ""
 
 #: source/misc/imagemgr.src#STR_DESCRIPTION_SXDRAW_DOC.String.Text
-#, fuzzy
 msgid  "%PRODUCTXMLFILEFORMATNAME %PRODUCTXMLFILEFORMATVERSION Drawing"
-msgstr "%PRODUCTNAME %PRODUCTXMLFILEFORMATVERSION vizatim"
+msgstr ""
 
 #: source/misc/imagemgr.src#STR_DESCRIPTION_SXCALC_DOC.String.Text
-#, fuzzy
 msgid  "%PRODUCTXMLFILEFORMATNAME %PRODUCTXMLFILEFORMATVERSION Spreadsheet"
-msgstr "%PRODUCTNAME %PRODUCTXMLFILEFORMATVERSION tabelë kalkuluese"
+msgstr ""
 
 #: source/misc/imagemgr.src#STR_DESCRIPTION_SXIMPRESS_DOC.String.Text
-#, fuzzy
 msgid  "%PRODUCTXMLFILEFORMATNAME %PRODUCTXMLFILEFORMATVERSION Presentation"
-msgstr "%PRODUCTNAME %PRODUCTXMLFILEFORMATVERSION prezantim"
+msgstr ""
 
 #: source/misc/imagemgr.src#STR_DESCRIPTION_SXWRITER_DOC.String.Text
-#, fuzzy
 msgid  "%PRODUCTXMLFILEFORMATNAME %PRODUCTXMLFILEFORMATVERSION Text Document"
-msgstr "%PRODUCTNAME %PRODUCTXMLFILEFORMATVERSION Tekst Dokument"
+msgstr ""
 
 #: source/misc/imagemgr.src#STR_DESCRIPTION_SXGLOBAL_DOC.String.Text
-#, fuzzy
 msgid  "%PRODUCTXMLFILEFORMATNAME %PRODUCTXMLFILEFORMATVERSION Master Document"
-msgstr "%PRODUCTNAME %PRODUCTXMLFILEFORMATVERSION Dokument kryesor"
+msgstr ""
 
 #: source/misc/imagemgr.src#STR_DESCRIPTION_MATHML_DOC.String.Text
-#, fuzzy
 msgid  "MathML Document"
 msgstr "Dokument MathML"
 
 #: source/misc/imagemgr.src#STR_DESCRIPTION_OO_DATABASE_DOC.String.Text
-#, fuzzy
 msgid  "OpenDocument Database"
 msgstr "OpenDocument Bazë e shënimeve"
 
 #: source/misc/imagemgr.src#STR_DESCRIPTION_OO_DRAW_DOC.String.Text
-#, fuzzy
 msgid  "OpenDocument Drawing"
 msgstr "OpenDocument Vizatim"
 
 #: source/misc/imagemgr.src#STR_DESCRIPTION_OO_MATH_DOC.String.Text
-#, fuzzy
 msgid  "OpenDocument Formula"
 msgstr "OpenDocument Formulë"
 
 #: source/misc/imagemgr.src#STR_DESCRIPTION_OO_GLOBAL_DOC.String.Text
-#, fuzzy
 msgid  "OpenDocument Master Document"
 msgstr "OpenDokument Master Dokument"
 
 #: source/misc/imagemgr.src#STR_DESCRIPTION_OO_IMPRESS_DOC.String.Text
-#, fuzzy
 msgid  "OpenDocument Presentation"
 msgstr "OpenDokument Prezantim"
 
 #: source/misc/imagemgr.src#STR_DESCRIPTION_OO_CALC_DOC.String.Text
-#, fuzzy
 msgid  "OpenDocument Spreadsheet"
 msgstr "Tabelar OpenDokument"
 
 #: source/misc/imagemgr.src#STR_DESCRIPTION_OO_WRITER_DOC.String.Text
-#, fuzzy
 msgid  "OpenDocument Text"
 msgstr "OpenDocument Tekst"
 
 #: source/misc/imagemgr.src#STR_DESCRIPTION_OO_CALC_TEMPLATE.String.Text
-#, fuzzy
 msgid  "OpenDocument Spreadsheet Template"
 msgstr "Shabllon tabelar OpenDokument"
 
 #: source/misc/imagemgr.src#STR_DESCRIPTION_OO_DRAW_TEMPLATE.String.Text
-#, fuzzy
 msgid  "OpenDocument Drawing Template"
 msgstr "OpenDocument Shabllon vizatimi"
 
 #: source/misc/imagemgr.src#STR_DESCRIPTION_OO_IMPRESS_TEMPLATE.String.Text
-#, fuzzy
 msgid  "OpenDocument Presentation Template"
 msgstr "OpenDokument Presentation Templatek"
 
 #: source/misc/imagemgr.src#STR_DESCRIPTION_OO_WRITER_TEMPLATE.String.Text
-#, fuzzy
 msgid  "OpenDocument Text Template"
 msgstr "OpenDokument Tekst Shabllon"
 
 #: source/misc/imagemgr.src#STR_DESCRIPTION_EXTENSION.String.Text
-#, fuzzy
 msgid  "%PRODUCTNAME Extension"
 msgstr "%PRODUCTNAME %PRODUCTVERSION"
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_NONE.PairedList.item
-#, fuzzy
 msgid  "[None]"
 msgstr "[Ssnjë]"
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_DONTKNOW.PairedList.item
-#, fuzzy
 msgid  "Unknown"
 msgstr "I panjohur"
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_SYSTEM.PairedList.item
-#, fuzzy
 msgid  "Default"
 msgstr "Standarde"
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_AFRIKAANS.PairedList.item
-#, fuzzy
 msgid  "Afrikaans (South Africa)"
 msgstr "Dalje Jug-Perëndim"
 
@@ -2081,7 +1908,6 @@ msgid  "Albanian"
 msgstr ""
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_ARABIC_PRIMARY_ONLY.PairedList.item
-#, fuzzy
 msgid  "Arabic"
 msgstr "Arabe"
 
@@ -2194,12 +2020,10 @@ msgid  "Assami"
 msgstr ""
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_AZERI_LATIN.PairedList.item
-#, fuzzy
 msgid  "Azerbaijani Latin"
 msgstr "Amerikano-Latine"
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_AZERI_CYRILLIC.PairedList.item
-#, fuzzy
 msgid  "Azerbaijani Cyrillic"
 msgstr "Serbe (Cirilike)"
 
@@ -2212,12 +2036,10 @@ msgid  "Bengali (India)"
 msgstr ""
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_BULGARIAN.PairedList.item
-#, fuzzy
 msgid  "Bulgarian"
 msgstr "Bullgare"
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_BELARUSIAN.PairedList.item
-#, fuzzy
 msgid  "Belarusian"
 msgstr "Bjelloruse"
 
@@ -2226,12 +2048,10 @@ msgid  "Catalan"
 msgstr ""
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_CHINESE_TRADITIONAL.PairedList.item
-#, fuzzy
 msgid  "Chinese (traditional)"
 msgstr "Kineze (tradicionale)"
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_CHINESE_SIMPLIFIED.PairedList.item
-#, fuzzy
 msgid  "Chinese (simplified)"
 msgstr "Kineze ( e thjeshtë)"
 
@@ -2240,27 +2060,22 @@ msgid  "Chinese (Hong Kong)"
 msgstr ""
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_CHINESE_SINGAPORE.PairedList.item
-#, fuzzy
 msgid  "Chinese (Singapore)"
 msgstr "Përkthim kinez"
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_CHINESE_MACAU.PairedList.item
-#, fuzzy
 msgid  "Chinese (Macau)"
 msgstr "Përkthim kinez"
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_CROATIAN.PairedList.item
-#, fuzzy
 msgid  "Croatian"
 msgstr "Kroate"
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_CZECH.PairedList.item
-#, fuzzy
 msgid  "Czech"
 msgstr "Çekisht"
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_DANISH.PairedList.item
-#, fuzzy
 msgid  "Danish"
 msgstr "Daneze"
 
@@ -2269,87 +2084,70 @@ msgid  "Dutch (Netherlands)"
 msgstr ""
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_DUTCH_BELGIAN.PairedList.item
-#, fuzzy
 msgid  "Dutch (Belgium)"
 msgstr "Franceze"
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_ENGLISH_US.PairedList.item
-#, fuzzy
 msgid  "English (USA)"
 msgstr "Angleze (SHBA)"
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_ENGLISH_UK.PairedList.item
-#, fuzzy
 msgid  "English (UK)"
 msgstr "Angleze (SHBA)"
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_ENGLISH_AUS.PairedList.item
-#, fuzzy
 msgid  "English (Australia)"
 msgstr "Angleze (SHBA)"
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_ENGLISH_CAN.PairedList.item
-#, fuzzy
 msgid  "English (Canada)"
 msgstr "Angleze (SHBA)"
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_ENGLISH_NZ.PairedList.item
-#, fuzzy
 msgid  "English (New Zealand)"
 msgstr "Listë e re e adresave"
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_ENGLISH_EIRE.PairedList.item
-#, fuzzy
 msgid  "English (Eire)"
 msgstr "Angleze (SHBA)"
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_ENGLISH_SAFRICA.PairedList.item
-#, fuzzy
 msgid  "English (South Africa)"
 msgstr "Dalje Jug-Perëndim"
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_ENGLISH_JAMAICA.PairedList.item
-#, fuzzy
 msgid  "English (Jamaica)"
 msgstr "Angleze (SHBA)"
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_ENGLISH_CARRIBEAN.PairedList.item
-#, fuzzy
 msgid  "English (Caribbean)"
 msgstr "Angleze (SHBA)"
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_ENGLISH_BELIZE.PairedList.item
-#, fuzzy
 msgid  "English (Belize)"
 msgstr "Angleze (SHBA)"
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_ENGLISH_TRINIDAD.PairedList.item
-#, fuzzy
 msgid  "English (Trinidad)"
 msgstr "Angleze (SHBA)"
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_ENGLISH_ZIMBABWE.PairedList.item
-#, fuzzy
 msgid  "English (Zimbabwe)"
 msgstr "Angleze (SHBA)"
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_ENGLISH_PHILIPPINES.PairedList.item
-#, fuzzy
 msgid  "English (Philippines)"
 msgstr "Angleze (SHBA)"
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_ENGLISH_INDIA.PairedList.item
-#, fuzzy
 msgid  "English (India)"
 msgstr "Angleze (SHBA)"
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_ESTONIAN.PairedList.item
-#, fuzzy
 msgid  "Estonian"
 msgstr "Estone"
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_FINNISH.PairedList.item
-#, fuzzy
 msgid  "Finnish"
 msgstr "Finlandeze"
 
@@ -2362,32 +2160,26 @@ msgid  "Persian"
 msgstr ""
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_FRENCH.PairedList.item
-#, fuzzy
 msgid  "French (France)"
 msgstr "Franceze"
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_FRENCH_BELGIAN.PairedList.item
-#, fuzzy
 msgid  "French (Belgium)"
 msgstr "Franceze"
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_FRENCH_CANADIAN.PairedList.item
-#, fuzzy
 msgid  "French (Canada)"
 msgstr "Franceze"
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_FRENCH_SWISS.PairedList.item
-#, fuzzy
 msgid  "French (Switzerland)"
 msgstr "Franceze"
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_FRENCH_LUXEMBOURG.PairedList.item
-#, fuzzy
 msgid  "French (Luxembourg)"
 msgstr "Franceze"
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_FRENCH_MONACO.PairedList.item
-#, fuzzy
 msgid  "French (Monaco)"
 msgstr "Franceze"
 
@@ -2396,32 +2188,26 @@ msgid  "Gascon"
 msgstr ""
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_GERMAN.PairedList.item
-#, fuzzy
 msgid  "German (Germany)"
 msgstr "Gjermane (Zvicra)"
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_GERMAN_SWISS.PairedList.item
-#, fuzzy
 msgid  "German (Switzerland)"
 msgstr "Gjermane (Zvicra)"
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_GERMAN_AUSTRIAN.PairedList.item
-#, fuzzy
 msgid  "German (Austria)"
 msgstr "Gjermane (Zvicra)"
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_GERMAN_LUXEMBOURG.PairedList.item
-#, fuzzy
 msgid  "German (Luxembourg)"
 msgstr "Gjermane (Zvicra)"
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_GERMAN_LIECHTENSTEIN.PairedList.item
-#, fuzzy
 msgid  "German (Liechtenstein)"
 msgstr "Gjermane (Zvicra)"
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_GREEK.PairedList.item
-#, fuzzy
 msgid  "Greek"
 msgstr "Greke"
 
@@ -2430,22 +2216,18 @@ msgid  "Gujarati"
 msgstr ""
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_HEBREW.PairedList.item
-#, fuzzy
 msgid  "Hebrew"
 msgstr "Hebraike"
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_HINDI.PairedList.item
-#, fuzzy
 msgid  "Hindi"
 msgstr "Hindi"
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_HUNGARIAN.PairedList.item
-#, fuzzy
 msgid  "Hungarian"
 msgstr "Hungareze"
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_ICELANDIC.PairedList.item
-#, fuzzy
 msgid  "Icelandic"
 msgstr "Islandeze"
 
@@ -2454,17 +2236,14 @@ msgid  "Indonesian"
 msgstr ""
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_ITALIAN.PairedList.item
-#, fuzzy
 msgid  "Italian (Italy)"
 msgstr "Italiane (Amiga)"
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_ITALIAN_SWISS.PairedList.item
-#, fuzzy
 msgid  "Italian (Switzerland)"
 msgstr "Italiane (Amiga)"
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_JAPANESE.PairedList.item
-#, fuzzy
 msgid  "Japanese"
 msgstr "Japonisht"
 
@@ -2493,17 +2272,14 @@ msgid  "Korean (RoK)"
 msgstr ""
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_LATVIAN.PairedList.item
-#, fuzzy
 msgid  "Latvian"
 msgstr "Letone"
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_LITHUANIAN.PairedList.item
-#, fuzzy
 msgid  "Lithuanian"
 msgstr "Lituane"
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_MACEDONIAN.PairedList.item
-#, fuzzy
 msgid  "Macedonian"
 msgstr "Maqedonase"
 
@@ -2536,12 +2312,10 @@ msgid  "Nepali (India)"
 msgstr ""
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_NORWEGIAN_BOKMAL.PairedList.item
-#, fuzzy
 msgid  "Norwegian, Bokmål"
 msgstr "Norvegjeze (Sun; lloji 4)"
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_NORWEGIAN_NYNORSK.PairedList.item
-#, fuzzy
 msgid  "Norwegian, Nynorsk"
 msgstr "Norvegjeze (Sun; lloji 4)"
 
@@ -2550,17 +2324,14 @@ msgid  "Oriya"
 msgstr ""
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_POLISH.PairedList.item
-#, fuzzy
 msgid  "Polish"
 msgstr "Polonisht"
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_PORTUGUESE.PairedList.item
-#, fuzzy
 msgid  "Portuguese (Portugal)"
 msgstr "Portugalisht (Brazil)"
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_PORTUGUESE_BRAZILIAN.PairedList.item
-#, fuzzy
 msgid  "Portuguese (Brazil)"
 msgstr "Portugalisht (Brazil)"
 
@@ -2573,12 +2344,10 @@ msgid  "Rhaeto-Romance"
 msgstr ""
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_ROMANIAN.PairedList.item
-#, fuzzy
 msgid  "Romanian"
 msgstr "Rumune"
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_RUSSIAN.PairedList.item
-#, fuzzy
 msgid  "Russian"
 msgstr "Rusisht"
 
@@ -2619,22 +2388,18 @@ msgid  "Slovak"
 msgstr ""
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_SLOVENIAN.PairedList.item
-#, fuzzy
 msgid  "Slovenian"
 msgstr "Sllovake"
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_SPANISH.PairedList.item
-#, fuzzy
 msgid  "Spanish (Spain)"
 msgstr "Port_of_Spain"
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_SPANISH_MEXICAN.PairedList.item
-#, fuzzy
 msgid  "Spanish (Mexico)"
 msgstr "Mexico_City"
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_SPANISH_GUATEMALA.PairedList.item
-#, fuzzy
 msgid  "Spanish (Guatemala)"
 msgstr "Spanjolle (Amiga)"
 
@@ -2643,72 +2408,58 @@ msgid  "Spanish (Costa Rica)"
 msgstr ""
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_SPANISH_PANAMA.PairedList.item
-#, fuzzy
 msgid  "Spanish (Panama)"
 msgstr "Spanjolle (Amiga)"
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_SPANISH_DOMINICAN_REPUBLIC.PairedList.item
-#, fuzzy
 msgid  "Spanish (Dom. Rep.)"
 msgstr "Zëvendëso (vetëm tekst)"
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_SPANISH_VENEZUELA.PairedList.item
-#, fuzzy
 msgid  "Spanish (Venezuela)"
 msgstr "Spanjolle (Amiga)"
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_SPANISH_COLOMBIA.PairedList.item
-#, fuzzy
 msgid  "Spanish (Colombia)"
 msgstr "Spanjolle (Amiga)"
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_SPANISH_PERU.PairedList.item
-#, fuzzy
 msgid  "Spanish (Peru)"
 msgstr "Spanjolle (Amiga)"
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_SPANISH_ARGENTINA.PairedList.item
-#, fuzzy
 msgid  "Spanish (Argentina)"
 msgstr "Argjentina/Catamarca"
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_SPANISH_ECUADOR.PairedList.item
-#, fuzzy
 msgid  "Spanish (Ecuador)"
 msgstr "Spanjolle (Amiga)"
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_SPANISH_CHILE.PairedList.item
-#, fuzzy
 msgid  "Spanish (Chile)"
 msgstr "Spanjolle (Amiga)"
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_SPANISH_URUGUAY.PairedList.item
-#, fuzzy
 msgid  "Spanish (Uruguay)"
 msgstr "Spanjolle (Amiga)"
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_SPANISH_PARAGUAY.PairedList.item
-#, fuzzy
 msgid  "Spanish (Paraguay)"
 msgstr "Spanjolle (Amiga)"
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_SPANISH_BOLIVIA.PairedList.item
-#, fuzzy
 msgid  "Spanish (Bolivia)"
 msgstr "Spanjolle (Amiga)"
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_SPANISH_EL_SALVADOR.PairedList.item
-#, fuzzy
 msgid  "Spanish (El Salvador)"
 msgstr "Shtylla e parë si emë~tim"
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_SPANISH_HONDURAS.PairedList.item
-#, fuzzy
 msgid  "Spanish (Honduras)"
 msgstr "Spanjolle (Amiga)"
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_SPANISH_NICARAGUA.PairedList.item
-#, fuzzy
 msgid  "Spanish (Nicaragua)"
 msgstr "Spanjolle (Amiga)"
 
@@ -2721,12 +2472,10 @@ msgid  "Swahili (Kenya)"
 msgstr ""
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_SWEDISH.PairedList.item
-#, fuzzy
 msgid  "Swedish (Sweden)"
 msgstr "Suedeze (Amiga)"
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_SWEDISH_FINLAND.PairedList.item
-#, fuzzy
 msgid  "Swedish (Finland)"
 msgstr "Suedeze (Amiga)"
 
@@ -2751,7 +2500,6 @@ msgid  "Thai"
 msgstr ""
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_TURKISH.PairedList.item
-#, fuzzy
 msgid  "Turkish"
 msgstr "Turke (planimetri F)"
 
@@ -2764,12 +2512,10 @@ msgid  "Urdu (India)"
 msgstr ""
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_UKRAINIAN.PairedList.item
-#, fuzzy
 msgid  "Ukrainian"
 msgstr "Ukraine"
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_UZBEK_LATIN.PairedList.item
-#, fuzzy
 msgid  "Uzbek Latin"
 msgstr "Amerikano-Latine"
 
@@ -2778,52 +2524,42 @@ msgid  "Welsh"
 msgstr ""
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER1.PairedList.item
-#, fuzzy
 msgid  "User 1"
 msgstr "Shfrytëzuesi 1"
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER2.PairedList.item
-#, fuzzy
 msgid  "User 2"
 msgstr "Shfrytëzuesi 2"
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER3.PairedList.item
-#, fuzzy
 msgid  "User 3"
 msgstr "Shfrytëzuesi 3"
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER4.PairedList.item
-#, fuzzy
 msgid  "User 4"
 msgstr "Shfrytëzuesi 4"
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER5.PairedList.item
-#, fuzzy
 msgid  "User 5"
 msgstr "[përdorues]"
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER6.PairedList.item
-#, fuzzy
 msgid  "User 6"
 msgstr "[përdorues]"
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER7.PairedList.item
-#, fuzzy
 msgid  "User 7"
 msgstr "[përdorues]"
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER8.PairedList.item
-#, fuzzy
 msgid  "User 8"
 msgstr "[përdorues]"
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER9.PairedList.item
-#, fuzzy
 msgid  "User 9"
 msgstr "[përdorues]"
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_LATIN.PairedList.item
-#, fuzzy
 msgid  "Latin"
 msgstr "Amerikano-Latine"
 
@@ -2836,7 +2572,6 @@ msgid  "Kinyarwanda (Rwanda)"
 msgstr ""
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_MAORI_NEW_ZEALAND.PairedList.item
-#, fuzzy
 msgid  "Maori (New Zealand)"
 msgstr "Listë e re e adresave"
 
@@ -2877,7 +2612,6 @@ msgid  "Occitan"
 msgstr ""
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_KHMER.PairedList.item
-#, fuzzy
 msgid  "Khmer"
 msgstr "Khmer"
 
@@ -2918,7 +2652,6 @@ msgid  "Irish"
 msgstr ""
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_TIBETAN.PairedList.item
-#, fuzzy
 msgid  "Tibetan (PR China)"
 msgstr "Ga~bimi i kaluar"
 
@@ -2931,7 +2664,6 @@ msgid  "Frisian"
 msgstr ""
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_TSWANA.PairedList.item
-#, fuzzy
 msgid  "Tswana (South Africa)"
 msgstr "Dalje Jug-Perëndim"
 
@@ -2952,7 +2684,6 @@ msgid  "Kalaallisut"
 msgstr ""
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER_NDEBELE_SOUTH.PairedList.item
-#, fuzzy
 msgid  "Ndebele, South"
 msgstr "Dalje në Jug"
 
@@ -3013,7 +2744,6 @@ msgid  "Afrikaans (Namibia)"
 msgstr ""
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER_ENGLISH_NAMIBIA.PairedList.item
-#, fuzzy
 msgid  "English (Namibia)"
 msgstr "Angleze (SHBA)"
 
@@ -3042,7 +2772,6 @@ msgid  "Kirghiz"
 msgstr ""
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER_GERMAN_BELGIUM.PairedList.item
-#, fuzzy
 msgid  "German (Belgium)"
 msgstr "Gjermane (Zvicra)"
 
@@ -3067,7 +2796,6 @@ msgid  "Éwé"
 msgstr ""
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER_ENGLISH_GHANA.PairedList.item
-#, fuzzy
 msgid  "English (Ghana)"
 msgstr "Angleze (SHBA)"
 
@@ -3088,7 +2816,6 @@ msgid  "Lingala"
 msgstr ""
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER_LOW_GERMAN.PairedList.item
-#, fuzzy
 msgid  "Low German"
 msgstr "Gjermane (Zvicra)"
 
@@ -3105,7 +2832,6 @@ msgid  "Kashubian"
 msgstr ""
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER_SPANISH_CUBA.PairedList.item
-#, fuzzy
 msgid  "Spanish (Cuba)"
 msgstr "Spanjolle (Amiga)"
 
@@ -3114,12 +2840,10 @@ msgid  "Tetun (Indonesia)"
 msgstr ""
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER_QUECHUA_NORTH_BOLIVIA.PairedList.item
-#, fuzzy
 msgid  "Quechua (Bolivia, North)"
 msgstr "Dalje Veri-Perëndim"
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER_QUECHUA_SOUTH_BOLIVIA.PairedList.item
-#, fuzzy
 msgid  "Quechua (Bolivia, South)"
 msgstr "Dalje Jug-Perëndim"
 
@@ -3164,7 +2888,6 @@ msgid  "Sami, Southern (Sweden)"
 msgstr ""
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER_SAMI_KILDIN_RUSSIA.PairedList.item
-#, fuzzy
 msgid  "Sami, Kildin (Russia)"
 msgstr "Europe/Moscow"
 
@@ -3221,7 +2944,6 @@ msgid  "Yiddish (Israel)"
 msgstr ""
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_QUECHUA_ECUADOR.PairedList.item
-#, fuzzy
 msgid  "Quechua (Ecuador)"
 msgstr "Spanjolle (Amiga)"
 
@@ -3230,7 +2952,6 @@ msgid  "Uyghur"
 msgstr ""
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER_ASTURIAN.PairedList.item
-#, fuzzy
 msgid  "Asturian"
 msgstr "Estone"
 
@@ -3331,107 +3052,86 @@ msgid  "Haitian"
 msgstr ""
 
 #: source/plugapp/testtool.src#DisplayHidToolBox.TT_SHOW.ToolBoxItem.Text
-#, fuzzy
 msgid  "Display IDs"
 msgstr "Paraqit ID-të"
 
 #: source/plugapp/testtool.src#DisplayHidToolBox.TT_OUTPUT.ToolBoxItem.Text
-#, fuzzy
 msgid  "This is the input window"
 msgstr "Kjo është dritarja e hyrjeve"
 
 #: source/plugapp/testtool.src#DisplayHidToolBox.TT_SEND_DATA.ToolBoxItem.Text
-#, fuzzy
 msgid  "Transfer to TestTool"
 msgstr "Transferi në TestTool"
 
 #: source/plugapp/testtool.src#DisplayHidToolBox.TT_ALLWIN.ToolBoxItem.Text
-#, fuzzy
 msgid  "Show all windows"
 msgstr "Trego të gjitha dritare"
 
 #: source/plugapp/testtool.src#DisplayHidToolBox.TT_KURZNAME.ToolBoxItem.Text
-#, fuzzy
 msgid  "Show short names (if available)"
 msgstr "Paraqiti emrat e shkurtë (nëse janë në dispozicion)"
 
 #: source/plugapp/testtool.src#DisplayHidToolBox.TT_LANGNAME.ToolBoxItem.Text
-#, fuzzy
 msgid  "Always show long-name"
 msgstr "Gjithmonë paraqiti emrat e gjatë"
 
 #: source/plugapp/testtool.src#DisplayHidToolBox.ToolBoxItem.Text
-#, fuzzy
 msgid  "DisplayHID"
 msgstr "DisplayHID"
 
 #: source/plugapp/testtool.src#TT_INLINE_TRANSLATION.TT_GB_TRANSLATION.GroupBox.Text
-#, fuzzy
 msgid  "Translation"
 msgstr "Përkthim"
 
 #: source/plugapp/testtool.src#TT_INLINE_TRANSLATION.TT_E_NEW.Edit.Text
-#, fuzzy
 msgid  "~Edit"
 msgstr "Edito"
 
 #: source/plugapp/testtool.src#TT_INLINE_TRANSLATION.TT_FT_OLD.FixedText.Text
-#, fuzzy
 msgid  "Original Text"
 msgstr "Tekst origjinal"
 
 #: source/plugapp/testtool.src#TT_INLINE_TRANSLATION.TT_GB_COMMENT.GroupBox.Text
-#, fuzzy
 msgid  "Comment"
 msgstr "Koment"
 
 #: source/plugapp/testtool.src#TT_INLINE_TRANSLATION.TT_E_COMMENT.Edit.Text
-#, fuzzy
 msgid  "~Comment"
 msgstr "Koment"
 
 #: source/plugapp/testtool.src#TT_INLINE_TRANSLATION.TT_PB_SELECT.PushButton.Text
-#, fuzzy
 msgid  "~Select"
 msgstr "Zgjedh"
 
 #: source/plugapp/testtool.src#TT_INLINE_TRANSLATION.TT_PB_RESTORE.PushButton.Text
-#, fuzzy
 msgid  "~Restore"
 msgstr "S'mund ta rikthej"
 
 #: source/plugapp/testtool.src#TT_INLINE_TRANSLATION.TT_PB_ACCEPT.PushButton.Text
-#, fuzzy
 msgid  "~Accept"
 msgstr "Prano"
 
 #: source/plugapp/testtool.src#TT_INLINE_TRANSLATION.TT_PB_NEXT.PushButton.Text
-#, fuzzy
 msgid  "~Next"
 msgstr "Tjetri"
 
 #: source/plugapp/testtool.src#TT_INLINE_TRANSLATION.PushButton.Text
-#, fuzzy
 msgid  "Inplace Translation"
 msgstr "Përkthim vetvetiu"
 
 #: source/plugapp/testtool.src#TT_DISCARD_CHANGED_DATA.MessBox.Message
-#, fuzzy
 msgid  "The Translation will be lost. Proceed anyway?"
 msgstr "Përkthimi do të humbë. A të vazhdohet?"
 
 #: source/plugapp/testtool.src#TT_NO_CONTROL.ErrorBox.Message
-#, fuzzy
 msgid  "The Control is no longer valid. The Translation cannot be saved."
 msgstr "Kontrolli më nuk është i vlefshëm"
 
 #: source/plugapp/testtool.src#TT_GPF.String.Text
-#, fuzzy
 msgid  "GPF occurred"
 msgstr "Ka ndodhur GPF"
 
 #: source/plugapp/testtool.src#TT_ALTERNATE_CAPTION.String.Text
-#, fuzzy
 msgid  "HelpID does not match UniqueID: "
 msgstr "HelpID nuk përshtatet me UniqueID: "
 
@@ -3444,26 +3144,21 @@ msgid  "Tab Panel Scroll Button, forward"
 msgstr ""
 
 #: workben/unodialog/roadmapskeleton.src#DLG_ROADMAP_SKELETON.ModalDialog.Text
-#, fuzzy
 msgid  "Roadmap Skeleton Demo"
 msgstr "Dil nga demo e instaluesit"
 
 #: workben/unodialog/roadmapskeleton.src#DLG_ROADMAP_SKELETON.STR_STATE_WELCOME.String.Text
-#, fuzzy
 msgid  "Welcome"
 msgstr "Mirësevini"
 
 #: workben/unodialog/roadmapskeleton.src#DLG_ROADMAP_SKELETON.STR_STATE_PREPARE.String.Text
-#, fuzzy
 msgid  "Prepare"
 msgstr "Përgatit ngjitjen e postës"
 
 #: workben/unodialog/roadmapskeleton.src#DLG_ROADMAP_SKELETON.STR_STATE_SETUP.String.Text
-#, fuzzy
 msgid  "Setup"
 msgstr "Setup..."
 
 #: workben/unodialog/roadmapskeleton.src#DLG_ROADMAP_SKELETON.STR_STATE_FINISH.String.Text
-#, fuzzy
 msgid  "Finish"
 msgstr "Përfundimi"

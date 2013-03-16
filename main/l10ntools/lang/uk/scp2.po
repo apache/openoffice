@@ -37,11 +37,11 @@ msgstr "Елемент керування ActiveX"
 
 #: source/activex/module_activex.ulf#STR_DESC_MODULE_OPTIONAL_ACTIVEXCONTROL
 msgid  "Component to enable Microsoft Internet Explorer to display %PRODUCTNAME documents."
-msgstr ""
+msgstr "Компонент для перегляду інформації про документ %PRODUCTNAME за допомогою Microsoft Internet Explorer"
 
 #: source/base/folderitem_base.ulf#STR_FI_TOOLTIP_BASE
 msgid  "Manage databases, create queries and reports to track and manage your information by using Base."
-msgstr ""
+msgstr "Управління базами даних, створення запитів і звітів для керування та наглядом за даними за допомогою Бази Даних."
 
 #: source/base/registryitem_base.ulf#STR_REG_VAL_OO_DATABASE
 msgid  "OpenDocument Database"
@@ -121,7 +121,11 @@ msgstr "Електронна таблиця"
 
 #: source/calc/folderitem_calc.ulf#STR_FI_TOOLTIP_CALC
 msgid  "Perform calculation, analyze information and manage lists in spreadsheets by using Calc."
-msgstr ""
+msgstr "Виконання обчислень, аналіз інформації та керування листами у електронних таблицях за допомогою Calc."
+
+#: source/calc/registryitem_calc.ulf#STR_REG_VAL_NEW
+msgid  "&New"
+msgstr "&Новий"
 
 #: source/calc/registryitem_calc.ulf#STR_REG_VAL_SO60_SPREADSHEET
 msgid  "%SXWFORMATNAME %SXWFORMATVERSION Spreadsheet"
@@ -155,17 +159,13 @@ msgstr ""
 msgid  "Microsoft Excel Template"
 msgstr ""
 
-#: source/calc/registryitem_calc.ulf#STR_REG_VAL_NEW
-msgid  "&New"
-msgstr "&Новий"
-
 #: source/calc/module_calc.ulf#STR_NAME_MODULE_PRG_CALC
 msgid  "%PRODUCTNAME Calc"
 msgstr "%PRODUCTNAME Сalc"
 
 #: source/calc/module_calc.ulf#STR_DESC_MODULE_PRG_CALC
 msgid  "Perform calculation, analyze information and manage lists in spreadsheets by using %PRODUCTNAME Calc."
-msgstr ""
+msgstr "Виконання обчислень, аналіз інформації та керування списками у електронних таблицях за допомогою %PRODUCTNAME Calc."
 
 #: source/calc/module_calc.ulf#STR_NAME_MODULE_PRG_CALC_BIN
 msgid  "Program Module"
@@ -189,7 +189,11 @@ msgstr "Додатковий модуль"
 
 #: source/calc/module_calc.ulf#STR_DESC_MODULE_OPTIONAL_ADDINS
 msgid  "Add-ins are additional programs that make new functions available in %PRODUCTNAME Calc."
-msgstr ""
+msgstr "Модулі, що надають додаткові можливості %PRODUCTNAME Calc."
+
+#: source/draw/registryitem_draw.ulf#STR_REG_VAL_NEW
+msgid  "&New"
+msgstr "&Новий"
 
 #: source/draw/registryitem_draw.ulf#STR_REG_VAL_SO60_DRAWING
 msgid  "%SXWFORMATNAME %SXWFORMATVERSION Drawing"
@@ -207,17 +211,13 @@ msgstr "Рисунок OpenDocument"
 msgid  "OpenDocument Drawing Template"
 msgstr "Шаблон рисунка OpenDocument"
 
-#: source/draw/registryitem_draw.ulf#STR_REG_VAL_NEW
-msgid  "&New"
-msgstr "&Новий"
-
 #: source/draw/folderitem_draw.ulf#STR_FI_NAME_ZEICHNUNG
 msgid  "Drawing"
 msgstr "Рисунок"
 
 #: source/draw/folderitem_draw.ulf#STR_FI_TOOLTIP_DRAW
 msgid  "Create and edit drawings, flow charts, and logos by using Draw."
-msgstr ""
+msgstr "Створення та редагування рисунків, діаграм, та емблем за допомогою Draw."
 
 #: source/draw/module_draw.ulf#STR_NAME_MODULE_PRG_DRAW
 msgid  "%PRODUCTNAME Draw"
@@ -225,7 +225,7 @@ msgstr "%PRODUCTNAME Draw"
 
 #: source/draw/module_draw.ulf#STR_DESC_MODULE_PRG_DRAW
 msgid  "Create and edit drawings, flow charts, and logos by using %PRODUCTNAME Draw."
-msgstr ""
+msgstr "Створення та редагування рисунків, діаграм та емблем за допомогою %PRODUCTNAME Draw."
 
 #: source/draw/module_draw.ulf#STR_NAME_MODULE_PRG_DRAW_BIN
 msgid  "Program Module"
@@ -249,7 +249,7 @@ msgstr "Інтеграція з GNOME"
 
 #: source/gnome/module_gnome.ulf#STR_DESC_MODULE_OPTIONAL_GNOME
 msgid  "System integration of %PRODUCTNAME %PRODUCTVERSION into Gnome Desktop Environment."
-msgstr ""
+msgstr "Системна інтеграція %PRODUCTNAME %PRODUCTVERSION з оточенням Gnome."
 
 #: source/graphicfilter/module_graphicfilter.ulf#STR_NAME_MODULE_OPTIONAL_GRFFLT
 msgid  "Graphics Filters"
@@ -377,7 +377,11 @@ msgstr "Презентація"
 
 #: source/impress/folderitem_impress.ulf#STR_FI_TOOLTIP_IMPRESS
 msgid  "Create and edit presentations for slideshows, meeting and Web pages by using Impress."
-msgstr ""
+msgstr "Створення та редагування презентацій для зустрічей, конференцій та веб-сайтів за допомогою Impress."
+
+#: source/impress/registryitem_impress.ulf#STR_REG_VAL_NEW
+msgid  "&New"
+msgstr "&Створити"
 
 #: source/impress/registryitem_impress.ulf#STR_REG_VAL_SO60_SHOW
 msgid  "Show"
@@ -419,17 +423,13 @@ msgstr ""
 msgid  "Microsoft PowerPoint Template"
 msgstr ""
 
-#: source/impress/registryitem_impress.ulf#STR_REG_VAL_NEW
-msgid  "&New"
-msgstr "&Створити"
-
 #: source/impress/module_impress.ulf#STR_NAME_MODULE_PRG_IMPRESS
 msgid  "%PRODUCTNAME Impress"
 msgstr "%PRODUCTNAME Impress"
 
 #: source/impress/module_impress.ulf#STR_DESC_MODULE_PRG_IMPRESS
 msgid  "Create and edit presentations for slideshows, meeting and Web pages by using %PRODUCTNAME Impress."
-msgstr ""
+msgstr "Impress %PRODUCTNAME дозволяє створювати та редагувати презентації для зустрічей, конференцій та веб-сайтів."
 
 #: source/impress/module_impress.ulf#STR_NAME_MODULE_PRG_IMPRESS_BIN
 msgid  "Program Module"
@@ -461,7 +461,7 @@ msgstr "Фільтри для мобільних пристроїв"
 
 #: source/javafilter/module_javafilter.ulf#STR_DESC_MODULE_OPTIONAL_JAVAFILTER
 msgid  "Text and spreadsheet filters to support import/export for Palm handheld or Pocket PC (Java required)."
-msgstr ""
+msgstr "Фільтри для тексту та електронних таблиць для підтримки імпорту/експорту у Palm чи Pocket PC (вимагається Java)."
 
 #: source/javafilter/module_javafilter.ulf#STR_NAME_MODULE_OPTIONAL_JAVAFILTER_PALM
 msgid  "Palm"
@@ -565,7 +565,7 @@ msgstr "%PRODUCTNAME Math"
 
 #: source/math/module_math.ulf#STR_DESC_MODULE_PRG_MATH
 msgid  "Create and edit scientific formulas and equations by using %PRODUCTNAME Math."
-msgstr ""
+msgstr "Створення та редагування наукових формул та рівнянь за допомогою %PRODUCTNAME Math."
 
 #: source/math/module_math.ulf#STR_NAME_MODULE_PRG_MATH_BIN
 msgid  "Program Module"
@@ -587,6 +587,10 @@ msgstr "Довідка з %PRODUCTNAME Math"
 msgid  "Create and edit scientific formulas and equations by using Math."
 msgstr "Створення та редагування наукових формул та рівнянь."
 
+#: source/math/registryitem_math.ulf#STR_REG_VAL_NEW
+msgid  "&New"
+msgstr "&Створити"
+
 #: source/math/registryitem_math.ulf#STR_REG_VAL_SO60_FORMULA
 msgid  "%SXWFORMATNAME %SXWFORMATVERSION Formula"
 msgstr "формула %PRODUCTNAME %SXWFORMATVERSION"
@@ -595,17 +599,18 @@ msgstr "формула %PRODUCTNAME %SXWFORMATVERSION"
 msgid  "OpenDocument Formula"
 msgstr "Формула OpenDocument"
 
-#: source/math/registryitem_math.ulf#STR_REG_VAL_NEW
-msgid  "&New"
-msgstr "&Створити"
-
 #: source/onlineupdate/module_onlineupdate.ulf#STR_NAME_MODULE_OPT_ONLINEUPDATE
 msgid  "Online Update"
 msgstr "Перевірка оновлень"
 
 #: source/onlineupdate/module_onlineupdate.ulf#STR_DESC_MODULE_OPT_ONLINEUPDATE
 msgid  "Get automatically notified when a new update of %PRODUCTNAME becomes available."
-msgstr ""
+msgstr "Повідомляти, коли доступні оновлення %PRODUCTNAME."
+
+#: source/ooo/registryitem_ooo.ulf#STR_REG_VAL_NEW
+#, fuzzy
+msgid  "&New"
+msgstr "&Новий"
 
 #: source/ooo/registryitem_ooo.ulf#STR_REG_VAL_INSTALL
 #, fuzzy
@@ -616,19 +621,14 @@ msgstr "&Встановити"
 msgid  "OpenOffice.org 1.1 Configuration File"
 msgstr ""
 
-#: source/ooo/registryitem_ooo.ulf#STR_REG_VAL_APPCAPABILITY_DESCRIPTION_OOO
-msgid  "office productivity suite based on Apache OpenOffice project"
-msgstr ""
-
-#: source/ooo/registryitem_ooo.ulf#STR_REG_VAL_NEW
-#, fuzzy
-msgid  "&New"
-msgstr "&Новий"
-
 #: source/ooo/registryitem_ooo.ulf#STR_REG_VAL_SO50_TEMPLATE_OOO
 #, fuzzy
 msgid  "StarOffice 5.0 Template"
 msgstr "Шаблон StarOffice 5.0"
+
+#: source/ooo/registryitem_ooo.ulf#STR_REG_VAL_APPCAPABILITY_DESCRIPTION_OOO
+msgid  "office productivity suite based on Apache OpenOffice project"
+msgstr ""
 
 #: source/ooo/module_systemint.ulf#STR_NAME_MODULE_OPTIONAL_SYSTEMINTEGRATION
 #, fuzzy
@@ -666,8 +666,9 @@ msgid  "Optional Components"
 msgstr "Додаткові компоненти"
 
 #: source/ooo/module_ooo.ulf#STR_DESC_MODULE_OPTIONAL
+#, fuzzy
 msgid  "Common components and additional programs shared by all %PRODUCTNAME programs."
-msgstr ""
+msgstr "Загальні компоненти і додаткові програми, що використовуються всіма програмами %PRODUCTNAME."
 
 #: source/ooo/module_ooo.ulf#STR_NAME_MODULE_DICTIONARIES
 msgid  "Dictionaries"
@@ -698,58 +699,49 @@ msgid  "Component for enabling use %PRODUCTNAME without a display"
 msgstr "Компонент для запуску %PRODUCTNAME без інтерфейсу"
 
 #: source/ooo/directory_ooo.ulf#STR_DIR_INFO
-#, fuzzy
 msgid  "Information"
 msgstr "Інформація"
 
 #: source/ooo/directory_ooo.ulf#STR_DIR_INTERNET
-#, fuzzy
 msgid  "Internet"
 msgstr "Інтернет"
 
 #: source/ooo/directory_ooo.ulf#STR_DIR_JAVA
-#, fuzzy
 msgid  "Java"
 msgstr "Java"
 
 #: source/ooo/directory_ooo.ulf#STR_DIR_FREIZEIT
-#, fuzzy
 msgid  "Fun&More"
 msgstr "&Забавки"
 
 #: source/ooo/directory_ooo.ulf#STR_DIR_STARONE
-#, fuzzy
 msgid  "%PRODUCTNAME API"
 msgstr "%PRODUCTNAME API"
 
 #: source/ooo/directory_ooo.ulf#STR_DIR_TOURISMUS
-#, fuzzy
 msgid  "Travel"
 msgstr "Туризм"
 
 #: source/ooo/directory_ooo.ulf#STR_DIR_KAPITEL
-#, fuzzy
 msgid  "Chapters"
 msgstr "Розділи"
 
 #: source/ooo/directory_ooo.ulf#STR_DIR_DATEIEN
-#, fuzzy
 msgid  "Files"
 msgstr "Файли"
 
 #: source/ooo/folderitem_ooo.ulf#STR_FI_NAME_FROMTEMPLATE
-#, fuzzy
 msgid  "From Template"
 msgstr "З шаблону"
 
 #: source/ooo/folderitem_ooo.ulf#STR_FI_NAME_OPENDOCUMENT
-#, fuzzy
 msgid  "Open Document"
 msgstr "Відкрити документ"
 
 #: source/ooo/folderitem_ooo.ulf#STR_FI_TOOLTIP_SOFFICE
+#, fuzzy
 msgid  "The office productivity suite compatible to the open and standardized ODF document format. Supported by The Apache Software Foundation."
-msgstr ""
+msgstr "Офісний пакет є сумісний з відкритим та стандартним форматом документів ODF і підтримується Sun Microsystems."
 
 #: source/ooo/module_langpack.ulf#STR_NAME_MODULE_ROOT_LANGPACK
 #, fuzzy
@@ -867,8 +859,9 @@ msgid  "Chinese (simplified)"
 msgstr "Китайська (спрощена)"
 
 #: source/ooo/module_langpack.ulf#STR_DESC_MODULE_LANGPACK_ZH_CN
+#, fuzzy
 msgid  "Installs Chinese (simplified) support in %PRODUCTNAME %PRODUCTVERSION"
-msgstr ""
+msgstr "Встановити підтримку спрощеної китайської у %PRODUCTNAME %PRODUCTVERSION"
 
 #: source/ooo/module_langpack.ulf#STR_NAME_MODULE_LANGPACK_ZH_TW
 #, fuzzy
@@ -876,8 +869,9 @@ msgid  "Chinese (traditional)"
 msgstr "Китайська (традиційна)"
 
 #: source/ooo/module_langpack.ulf#STR_DESC_MODULE_LANGPACK_ZH_TW
+#, fuzzy
 msgid  "Installs Chinese (traditional) support in %PRODUCTNAME %PRODUCTVERSION"
-msgstr ""
+msgstr "Встановити підтримку традиційної китайської у %PRODUCTNAME %PRODUCTVERSION"
 
 #: source/ooo/module_langpack.ulf#STR_NAME_MODULE_LANGPACK_NL
 #, fuzzy
@@ -1085,8 +1079,9 @@ msgid  "Southern Sotho (Sutu)"
 msgstr "Південний сото (суту)"
 
 #: source/ooo/module_langpack.ulf#STR_DESC_MODULE_LANGPACK_ST
+#, fuzzy
 msgid  "Installs Southern Sotho (Sutu) support in %PRODUCTNAME %PRODUCTVERSION"
-msgstr ""
+msgstr "Встановити підтримку південного сото (суту) у %PRODUCTNAME %PRODUCTVERSION"
 
 #: source/ooo/module_langpack.ulf#STR_NAME_MODULE_LANGPACK_TN
 #, fuzzy
@@ -1184,8 +1179,9 @@ msgid  "Bengali (Bangladesh)"
 msgstr "Бенгальська (Бангладеш)"
 
 #: source/ooo/module_langpack.ulf#STR_DESC_MODULE_LANGPACK_BN_BD
+#, fuzzy
 msgid  "Installs Bengali (Bangladesh) support in %PRODUCTNAME %PRODUCTVERSION"
-msgstr ""
+msgstr "Встановити підтримку бенгальської (Бангладеш) у %PRODUCTNAME %PRODUCTVERSION"
 
 #: source/ooo/module_langpack.ulf#STR_NAME_MODULE_LANGPACK_BN_IN
 #, fuzzy
@@ -1193,8 +1189,9 @@ msgid  "Bengali (India)"
 msgstr "Бенгальська"
 
 #: source/ooo/module_langpack.ulf#STR_DESC_MODULE_LANGPACK_BN_IN
+#, fuzzy
 msgid  "Installs Bengali (India) support in %PRODUCTNAME %PRODUCTVERSION"
-msgstr ""
+msgstr "Встановити підтримку бенгальської (Індія) у %PRODUCTNAME %PRODUCTVERSION"
 
 #: source/ooo/module_langpack.ulf#STR_NAME_MODULE_LANGPACK_OR
 #, fuzzy
@@ -1322,8 +1319,9 @@ msgid  "Norwegian (Bokmål)"
 msgstr "Норвезька (букмол)"
 
 #: source/ooo/module_langpack.ulf#STR_DESC_MODULE_LANGPACK_NB
+#, fuzzy
 msgid  "Installs Norwegian (Bokmål) support in %PRODUCTNAME %PRODUCTVERSION"
-msgstr ""
+msgstr "Встановити підтримку норвезької (букмал) мови у %PRODUCTNAME %PRODUCTVERSION"
 
 #: source/ooo/module_langpack.ulf#STR_NAME_MODULE_LANGPACK_NN
 #, fuzzy
@@ -1331,8 +1329,9 @@ msgid  "Norwegian (Nynorsk)"
 msgstr "Норвезька (нюнорськ)"
 
 #: source/ooo/module_langpack.ulf#STR_DESC_MODULE_LANGPACK_NN
+#, fuzzy
 msgid  "Installs Norwegian (Nynorsk) support in %PRODUCTNAME %PRODUCTVERSION"
-msgstr ""
+msgstr "Встановити підтримку норвезької (нюньорск) мови у %PRODUCTNAME %PRODUCTVERSION"
 
 #: source/ooo/module_langpack.ulf#STR_NAME_MODULE_LANGPACK_RM
 #, fuzzy
@@ -1500,8 +1499,9 @@ msgid  "Serbian (Latin)"
 msgstr "Сербська (латиниця)"
 
 #: source/ooo/module_langpack.ulf#STR_DESC_MODULE_LANGPACK_SH_YU
+#, fuzzy
 msgid  "Installs Serbian (Latin) support in %PRODUCTNAME %PRODUCTVERSION"
-msgstr ""
+msgstr "Встановити підтримку сербської (латиниця) у %PRODUCTNAME %PRODUCTVERSION"
 
 #: source/ooo/module_langpack.ulf#STR_NAME_MODULE_LANGPACK_SH
 #, fuzzy
@@ -1509,8 +1509,9 @@ msgid  "Serbian (Latin)"
 msgstr "Сербська (латиниця)"
 
 #: source/ooo/module_langpack.ulf#STR_DESC_MODULE_LANGPACK_SH
+#, fuzzy
 msgid  "Installs Serbian (Latin) support in %PRODUCTNAME %PRODUCTVERSION"
-msgstr ""
+msgstr "Встановити підтримку сербської (латиниця) у %PRODUCTNAME %PRODUCTVERSION"
 
 #: source/ooo/module_langpack.ulf#STR_NAME_MODULE_LANGPACK_GA
 #, fuzzy
@@ -1528,8 +1529,9 @@ msgid  "Serbian (Cyrillic)"
 msgstr "Сербська (кирилиця)"
 
 #: source/ooo/module_langpack.ulf#STR_DESC_MODULE_LANGPACK_SR_CS
+#, fuzzy
 msgid  "Installs Serbian (Cyrillic) support in %PRODUCTNAME %PRODUCTVERSION"
-msgstr ""
+msgstr "Встановити підтримку сербської (кирилиця) у %PRODUCTNAME %PRODUCTVERSION"
 
 #: source/ooo/module_langpack.ulf#STR_NAME_MODULE_LANGPACK_SR
 #, fuzzy
@@ -1537,8 +1539,9 @@ msgid  "Serbian (Cyrillic)"
 msgstr "Сербська (кирилиця)"
 
 #: source/ooo/module_langpack.ulf#STR_DESC_MODULE_LANGPACK_SR
+#, fuzzy
 msgid  "Installs Serbian (Cyrillic) support in %PRODUCTNAME %PRODUCTVERSION"
-msgstr ""
+msgstr "Встановити підтримку сербської (кирилиця) у %PRODUCTNAME %PRODUCTVERSION"
 
 #: source/ooo/module_langpack.ulf#STR_NAME_MODULE_LANGPACK_BS
 #, fuzzy
@@ -1764,8 +1767,9 @@ msgid  "English (South Africa)"
 msgstr "Англійська (Південна Африка)"
 
 #: source/ooo/module_langpack.ulf#STR_DESC_MODULE_LANGPACK_EN_ZA
+#, fuzzy
 msgid  "Installs English (South Africa) support in %PRODUCTNAME %PRODUCTVERSION"
-msgstr ""
+msgstr "Встановити підтримку англійської (Південна Африка) у %PRODUCTNAME %PRODUCTVERSION"
 
 #: source/ooo/module_langpack.ulf#STR_NAME_MODULE_LANGPACK_EN_GB
 #, fuzzy
@@ -1773,8 +1777,9 @@ msgid  "English (United Kingdom)"
 msgstr "Англійська (Великобританія)"
 
 #: source/ooo/module_langpack.ulf#STR_DESC_MODULE_LANGPACK_EN_GB
+#, fuzzy
 msgid  "Installs English (United Kingdom) support in %PRODUCTNAME %PRODUCTVERSION"
-msgstr ""
+msgstr "Встановити підтримку англійської (Великобританія) у %PRODUCTNAME %PRODUCTVERSION"
 
 #: source/ooo/module_langpack.ulf#STR_NAME_MODULE_LANGPACK_UR_IN
 #, fuzzy
@@ -1890,32 +1895,28 @@ msgid  "Installs Gaelic (Scotland) support in %PRODUCTNAME %PRODUCTVERSION"
 msgstr ""
 
 #: source/python/module_python_mailmerge.ulf#STR_NAME_MODULE_OPTIONAL_PYTHON_MAILMERGE
-#, fuzzy
 msgid  "E-mail Mailmerge"
 msgstr "Розсилка електронних листів"
 
 #: source/python/module_python_mailmerge.ulf#STR_DESC_MODULE_OPTIONAL_PYTHON_MAILMERGE
-#, fuzzy
 msgid  "Module for %PRODUCTNAME E-mail Mailmerge feature"
 msgstr "Модуль для функції складений електронних листів для %PRODUCTNAME"
 
 #: source/python/module_python.ulf#STR_NAME_MODULE_OPTIONAL_PYTHON
-#, fuzzy
 msgid  "Python-UNO Bridge"
 msgstr "Інтеграція Python-UNO"
 
 #: source/python/module_python.ulf#STR_DESC_MODULE_OPTIONAL_PYTHON
 msgid  "Adds the ability to automate %PRODUCTNAME with the python scripting language. See http://udk.openoffice.org/python/python-bridge.html for a complete documentation."
-msgstr ""
+msgstr "Додає можливість автоматизувати роботу з %PRODUCTNAME з скриптовою мовою Python. Перегляньте http://udk.openoffice.org/python/python-bridge.html для повної документації."
 
 #: source/quickstart/module_quickstart.ulf#STR_NAME_MODULE_OPTIONAL_QUICKSTART
-#, fuzzy
 msgid  "Quickstarter"
 msgstr "Засіб швидкого запуску"
 
 #: source/quickstart/module_quickstart.ulf#STR_DESC_MODULE_OPTIONAL_QUICKSTART
 msgid  "Loads basic components on system start to accelerate start up time of %PRODUCTNAME %PRODUCTVERSION."
-msgstr ""
+msgstr "Завантажує основні компоненти при старті системи для прискорення часу запуску %PRODUCTNAME %PRODUCTVERSION."
 
 #: source/sdkoo/module_sdkoo.ulf#STR_NAME_MODULE_OPTIONAL_SDKOO
 msgid  "Software Development Kit (SDK)"
@@ -1926,60 +1927,54 @@ msgid  "The SDK provides all necessary tools, examples and documentation to prog
 msgstr ""
 
 #: source/winexplorerext/module_winexplorerext.ulf#STR_NAME_MODULE_OPTIONAL_WINDOWS_EXPLORER_EXTENSIONS
-#, fuzzy
 msgid  "Windows Explorer Extension"
 msgstr "Розширення Провідника Windows"
 
 #: source/winexplorerext/module_winexplorerext.ulf#STR_DESC_MODULE_OPTIONAL_WINDOWS_EXPLORER_EXTENSIONS
 msgid  "Enables the Microsoft Windows Explorer to show information about %PRODUCTNAME documents, such as thumbnail previews."
-msgstr ""
+msgstr "Дозволяє Microsoft Windows Explorer показувати інформацію про документи %PRODUCTNAME як у ескізах."
 
 #: source/writer/folderitem_writer.ulf#STR_FI_NAME_HTMLDOKUMENT
-#, fuzzy
 msgid  "HTML Document"
 msgstr "Документ HTML"
 
 #: source/writer/folderitem_writer.ulf#STR_FI_NAME_TEXTDOKUMENT
-#, fuzzy
 msgid  "Text Document"
 msgstr "Текстовий документ"
 
 #: source/writer/folderitem_writer.ulf#STR_FI_TOOLTIP_WRITER
 msgid  "Create and edit text and graphics in letters, reports, documents and Web pages by using Writer."
-msgstr ""
+msgstr "Створення та редагування тексту та малюнків у листах, звітах, документах чи веб-сторінках."
+
+#: source/writer/registryitem_writer.ulf#STR_REG_VAL_NEW
+msgid  "&New"
+msgstr "&Новий"
 
 #: source/writer/registryitem_writer.ulf#STR_REG_VAL_SO60_TEXT
-#, fuzzy
 msgid  "%SXWFORMATNAME %SXWFORMATVERSION Text Document"
 msgstr "Текстовий документ %PRODUCTNAME %SXWFORMATVERSION"
 
 #: source/writer/registryitem_writer.ulf#STR_REG_VAL_SO60_MASTERDOC
-#, fuzzy
 msgid  "%SXWFORMATNAME %SXWFORMATVERSION Master Document"
 msgstr "Складений документ %PRODUCTNAME %SXWFORMATVERSION"
 
 #: source/writer/registryitem_writer.ulf#STR_REG_VAL_SO60_WRITER_TEMPLATE
-#, fuzzy
 msgid  "%SXWFORMATNAME %SXWFORMATVERSION Text Document Template"
 msgstr "Шаблон текстового документу %PRODUCTNAME %SXWFORMATVERSION"
 
 #: source/writer/registryitem_writer.ulf#STR_REG_VAL_OO_WRITER
-#, fuzzy
 msgid  "OpenDocument Text"
 msgstr "Текстовий документ OpenDocument"
 
 #: source/writer/registryitem_writer.ulf#STR_REG_VAL_OO_WRITER_TEMPLATE
-#, fuzzy
 msgid  "OpenDocument Text Template"
 msgstr "Шаблон текстового документу OpenDocument"
 
 #: source/writer/registryitem_writer.ulf#STR_REG_VAL_OO_MASTERDOC
-#, fuzzy
 msgid  "OpenDocument Master Document"
 msgstr "Складений документ OpenDocument"
 
 #: source/writer/registryitem_writer.ulf#STR_REG_VAL_OO_WEBDOC
-#, fuzzy
 msgid  "HTML Document Template"
 msgstr "Шаблон HTML-документу"
 
@@ -2003,37 +1998,27 @@ msgstr ""
 msgid  "Rich Text Document"
 msgstr ""
 
-#: source/writer/registryitem_writer.ulf#STR_REG_VAL_NEW
-#, fuzzy
-msgid  "&New"
-msgstr "&Новий"
-
 #: source/writer/module_writer.ulf#STR_NAME_MODULE_PRG_WRT
-#, fuzzy
 msgid  "%PRODUCTNAME Writer"
 msgstr "%PRODUCTNAME Writer"
 
 #: source/writer/module_writer.ulf#STR_DESC_MODULE_PRG_WRT
 msgid  "Create and edit text and graphics in letters, reports, documents and Web pages by using %PRODUCTNAME Writer."
-msgstr ""
+msgstr "Створення та редагування тексту та рисунків у листах, звітах, документах чи веб-сторінках за допомогою %PRODUCTNAME Writer."
 
 #: source/writer/module_writer.ulf#STR_NAME_MODULE_PRG_WRT_BIN
-#, fuzzy
 msgid  "Program Module"
 msgstr "Програмний модуль"
 
 #: source/writer/module_writer.ulf#STR_DESC_MODULE_PRG_WRT_BIN
-#, fuzzy
 msgid  "The application %PRODUCTNAME Writer"
 msgstr "Програма %PRODUCTNAME Writer"
 
 #: source/writer/module_writer.ulf#STR_NAME_MODULE_PRG_WRT_HELP
-#, fuzzy
 msgid  "%PRODUCTNAME Writer Help"
 msgstr "Довідка з %PRODUCTNAME Writer"
 
 #: source/writer/module_writer.ulf#STR_DESC_MODULE_PRG_WRT_HELP
-#, fuzzy
 msgid  "Help about %PRODUCTNAME Writer"
 msgstr "Довідка з %PRODUCTNAME Writer"
 
@@ -2046,11 +2031,9 @@ msgid  "LaTeX export filter for Writer documents."
 msgstr ""
 
 #: source/xsltfilter/module_xsltfilter.ulf#STR_NAME_MODULE_OPTIONAL_XSLTFILTERSAMPLES
-#, fuzzy
 msgid  "XSLT Sample Filters"
 msgstr "Приклади фільтрів XSLT"
 
 #: source/xsltfilter/module_xsltfilter.ulf#STR_DESC_MODULE_OPTIONAL_XSLTFILTERSAMPLES
-#, fuzzy
 msgid  "XSLT Sample Filters"
 msgstr "Приклади фільтрів XSLT"

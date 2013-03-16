@@ -539,9 +539,41 @@ msgstr "GIF - 图形交换格式"
 msgid  "PNG - Portable Network Graphic"
 msgstr "PNG - 可移植网络图形"
 
+#: source/config/fragments/types/writerglobal8.xcu#writerglobal8.UIName
+msgid  "Writer 8 Master Document"
+msgstr "Writer 8 主控文档"
+
+#: source/config/fragments/types/impress8.xcu#impress8.UIName
+msgid  "Impress 8"
+msgstr "Impress 8"
+
+#: source/config/fragments/types/calc8_template.xcu#calc8_template.UIName
+msgid  "Calc 8 Template"
+msgstr "Calc 8 模板"
+
 #: source/config/fragments/types/writer_MS_Word_2003_XML.xcu#writer_MS_Word_2003_XML.UIName
 msgid  "Microsoft Word 2003 XML"
 msgstr "Microsoft Word 2003 XML"
+
+#: source/config/fragments/types/writer8.xcu#writer8.UIName
+msgid  "Writer 8"
+msgstr "Writer 8"
+
+#: source/config/fragments/types/impress8_template.xcu#impress8_template.UIName
+msgid  "Impress 8 Template"
+msgstr "Impress 8 模板"
+
+#: source/config/fragments/types/draw8_template.xcu#draw8_template.UIName
+msgid  "Draw 8 Template"
+msgstr "Draw 8 模板"
+
+#: source/config/fragments/types/writerweb8_writer_template.xcu#writerweb8_writer_template.UIName
+msgid  "Writer/Web 8 Template"
+msgstr "Writer/Web 8 模板"
+
+#: source/config/fragments/types/draw8.xcu#draw8.UIName
+msgid  "Draw 8"
+msgstr "Draw 8"
 
 #: source/config/fragments/types/calc_NSO_UOF2.xcu#calc_NSO_UOF2.UIName
 msgid  "Uniform Office Format 2 spreadsheet"
@@ -555,6 +587,18 @@ msgstr "Microsoft Excel 2003 XML"
 msgid  "OpenDocument Database"
 msgstr "OpenDocument 数据库"
 
+#: source/config/fragments/types/calc8.xcu#calc8.UIName
+msgid  "Calc 8"
+msgstr "Calc 8"
+
+#: source/config/fragments/types/math8.xcu#math8.UIName
+msgid  "Math 8"
+msgstr "Math 8"
+
+#: source/config/fragments/types/writer8_template.xcu#writer8_template.UIName
+msgid  "Writer 8 Template"
+msgstr "Writer 8 模板"
+
 #: source/config/fragments/types/writer_NSO_UOF2.xcu#writer_NSO_UOF2.UIName
 msgid  "Uniform Office Format 2 text"
 msgstr ""
@@ -563,17 +607,21 @@ msgstr ""
 msgid  "Uniform Office Format 2 presentation"
 msgstr ""
 
+#: source/config/fragments/types/chart8.xcu#chart8.UIName
+msgid  "Chart 8"
+msgstr "Chart 8"
+
 #: source/flash/impswfdialog.src#DLG_OPTIONS.ModalDialog.Text
 msgid  "Macromedia Flash (SWF) Options"
 msgstr "Macromedia Flash (SWF) 选项"
 
 #: source/flash/impswfdialog.src#DLG_OPTIONS.FI_DESCR.FixedText.Text
 msgid  "1: min. quality\n100: max. quality"
-msgstr ""
+msgstr "1: 最差质量 \n100: 最佳质量"
 
 #: source/graphicfilter/eps/epsstr.src#KEY_VERSION_CHECK.String.Text
 msgid  "Warning: Not all of the imported EPS graphics could be saved at level1\nas some are at a higher level!"
-msgstr ""
+msgstr "警告：并非所有导入的 EPS 图形都可以保存在级别 1 上，\n因为某些图形的级别要高于级别 1！"
 
 #: source/pdf/pdf.src#PDF_PROGRESS_BAR.String.Text
 msgid  "Export as PDF"
@@ -685,7 +733,7 @@ msgstr "PDF/A 导出"
 
 #: source/pdf/impdialog.src#RID_PDF_WARNPDFAPASSWORD.WarningBox.Message
 msgid  "PDF/A does not allow encryption. The exported PDF file will not be password protected."
-msgstr ""
+msgstr "PDF / A 的不允许加密。导出的PDF文件将不会密码保护。"
 
 #: source/pdf/impdialog.src#RID_PDF_TAB_OPNFTR.TabPage.Text
 msgid  "Initial View"
@@ -993,7 +1041,7 @@ msgstr "PDF/A 透明"
 
 #: source/pdf/impdialog.src#RID_PDF_ERROR_DLG.STR_WARN_TRANSP_PDFA.String.Text
 msgid  "PDF/A forbids transparency. A transparent object was painted opaque instead."
-msgstr ""
+msgstr "PDF/A 禁止透明。透明对象被绘制成不透明。"
 
 #: source/pdf/impdialog.src#RID_PDF_ERROR_DLG.STR_WARN_TRANSP_VERSION_SHORT.String.Text
 msgid  "PDF version conflict"
@@ -1001,7 +1049,7 @@ msgstr "PDF 版本冲突"
 
 #: source/pdf/impdialog.src#RID_PDF_ERROR_DLG.STR_WARN_TRANSP_VERSION.String.Text
 msgid  "Transparency is not supported in PDF versions earlier than PDF 1.4. A transparent object was painted opaque instead"
-msgstr ""
+msgstr "PDF 1.4. 之前的 PDF 版本不支持透明。透明对象被绘制成不透明"
 
 #: source/pdf/impdialog.src#RID_PDF_ERROR_DLG.STR_WARN_FORMACTION_PDFA_SHORT.String.Text
 msgid  "PDF/A form action"
@@ -1009,11 +1057,11 @@ msgstr "PDF/A 表单操作"
 
 #: source/pdf/impdialog.src#RID_PDF_ERROR_DLG.STR_WARN_FORMACTION_PDFA.String.Text
 msgid  "A form control contained an action not supported by the PDF/A standard. The action was skipped"
-msgstr ""
+msgstr "表单控件中包含一个 PDF/A 标准不支持的操作。该操作被跳过"
 
 #: source/pdf/impdialog.src#RID_PDF_ERROR_DLG.STR_WARN_TRANSP_CONVERTED.String.Text
 msgid  "Some objects were converted to an image in order to remove transparencies, because the target PDF format does not support transparencies. Possibly better results can be achieved if you remove the transparent objects before exporting."
-msgstr ""
+msgstr "为了去除透明效果，一些对象转换成了图像，因为目标 PDF 格式不支持透明效果。如果在导出之前删除透明对象，可能获得更好的效果"
 
 #: source/pdf/impdialog.src#RID_PDF_ERROR_DLG.STR_WARN_TRANSP_CONVERTED_SHORT.String.Text
 msgid  "Transparencies removed"
@@ -1233,15 +1281,15 @@ msgstr "输出筛选器"
 
 #: source/xsltdialog/xmlfilterdialogstrings.src#STR_WARN_DELETE.String.Text
 msgid  "Do you really want to delete the XML Filter '%s'? This action cannot be undone."
-msgstr ""
+msgstr "您真的要删除 XML 筛选器 '%s'? 此操作将无法撤销。"
 
 #: source/xsltdialog/xmlfilterdialogstrings.src#STR_ERROR_FILTER_NAME_EXISTS.String.Text
 msgid  "An XML filter with the name '%s' already exists. Please enter a different name."
-msgstr ""
+msgstr "已经存在一个名称为'%s'的 XML 筛选器 。请输入一个不同的名称。"
 
 #: source/xsltdialog/xmlfilterdialogstrings.src#STR_ERROR_TYPE_NAME_EXISTS.String.Text
 msgid  "The name for  the user interface '%s1' is already used by the XML filter '%s2'. Please enter a different name."
-msgstr ""
+msgstr "XML 筛选器 '%s2' 已经使用了使用界面 '%s1' 的名称。请输入一个不同的名称。"
 
 #: source/xsltdialog/xmlfilterdialogstrings.src#STR_ERROR_DTD_NOT_FOUND.String.Text
 msgid  "The DTD could not be found. Please enter a valid path."
@@ -1297,7 +1345,7 @@ msgstr "已经成功地安装了 %s XML 筛选器。"
 
 #: source/xsltdialog/xmlfilterdialogstrings.src#STR_NO_FILTERS_FOUND.String.Text
 msgid  "No XML filter could be installed because the package '%s' does not contain any XML filters."
-msgstr ""
+msgstr "因为软件包 '%s' 没有包含任何的 XML 筛选器， 因此无法安装 XML 筛选器。"
 
 #: source/xsltdialog/xmlfiltertabpagebasic.src#RID_XML_FILTER_TABPAGE_BASIC.TabPage.Text
 msgid  "General"
@@ -1313,7 +1361,7 @@ msgstr "应用程序"
 
 #: source/xsltdialog/xmlfiltertabpagebasic.src#RID_XML_FILTER_TABPAGE_BASIC.FT_XML_INTERFACE_NAME.FixedText.Text
 msgid  "Name of\nfile type"
-msgstr ""
+msgstr "文件类型名称"
 
 #: source/xsltdialog/xmlfiltertabpagebasic.src#RID_XML_FILTER_TABPAGE_BASIC.FT_XML_EXTENSION.FixedText.Text
 msgid  "File extension"
@@ -1330,51 +1378,3 @@ msgstr "XML 筛选器输出"
 #: source/xsltdialog/xmlfileview.src#DLG_XML_SOURCE_FILE_DIALOG.PB_VALIDATE.PushButton.Text
 msgid  "~Validate"
 msgstr "验证(~V)"
-
-#: source/config/fragments/types/writerglobal8.xcu#writerglobal8.UIName
-msgid  "Writer 8 Master Document"
-msgstr "Writer 8 主控文档"
-
-#: source/config/fragments/types/impress8.xcu#impress8.UIName
-msgid  "Impress 8"
-msgstr "Impress 8"
-
-#: source/config/fragments/types/calc8_template.xcu#calc8_template.UIName
-msgid  "Calc 8 Template"
-msgstr "Calc 8 模板"
-
-#: source/config/fragments/types/writer8.xcu#writer8.UIName
-msgid  "Writer 8"
-msgstr "Writer 8"
-
-#: source/config/fragments/types/impress8_template.xcu#impress8_template.UIName
-msgid  "Impress 8 Template"
-msgstr "Impress 8 模板"
-
-#: source/config/fragments/types/draw8_template.xcu#draw8_template.UIName
-msgid  "Draw 8 Template"
-msgstr "Draw 8 模板"
-
-#: source/config/fragments/types/writerweb8_writer_template.xcu#writerweb8_writer_template.UIName
-msgid  "Writer/Web 8 Template"
-msgstr "Writer/Web 8 模板"
-
-#: source/config/fragments/types/draw8.xcu#draw8.UIName
-msgid  "Draw 8"
-msgstr "Draw 8"
-
-#: source/config/fragments/types/calc8.xcu#calc8.UIName
-msgid  "Calc 8"
-msgstr "Calc 8"
-
-#: source/config/fragments/types/math8.xcu#math8.UIName
-msgid  "Math 8"
-msgstr "Math 8"
-
-#: source/config/fragments/types/writer8_template.xcu#writer8_template.UIName
-msgid  "Writer 8 Template"
-msgstr "Writer 8 模板"
-
-#: source/config/fragments/types/chart8.xcu#chart8.UIName
-msgid  "Chart 8"
-msgstr "Chart 8"

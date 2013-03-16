@@ -61,17 +61,14 @@ msgid  "%PRODUCTNAME"
 msgstr ""
 
 #: source/appl/app.src#STR_NONAME.String.Text
-#, fuzzy
 msgid  "Untitled"
 msgstr "தலைப்பில்லாத"
 
 #: source/appl/app.src#STR_CLOSE.String.Text
-#, fuzzy
 msgid  "Close"
 msgstr "மூடு"
 
 #: source/appl/app.src#STR_STYLE_FILTER_AUTO.String.Text
-#, fuzzy
 msgid  "Automatic"
 msgstr "தன்னியக்கம்"
 
@@ -111,8 +108,9 @@ msgid  "Document already open."
 msgstr "ஆவணம் ஏற்கனவே திறக்கப்பட்டுள்ளது."
 
 #: source/appl/app.src#MSG_ERR_NO_WEBBROWSER_FOUND.ErrorBox.Message
+#, fuzzy
 msgid  "%PRODUCTNAME could not find a web browser on your system. Please check your Desktop Preferences or install a web browser (for example, Mozilla) in the default  location requested during the browser installation."
-msgstr ""
+msgstr "%PRODUCTNAME could not find a web browser on your system. Please check your Desktop Preferences or install a web browser (for example, Mozilla) in the default  location requested during the browser installation."
 
 #: source/appl/app.src#GID_INTERN.String.Text
 #, fuzzy
@@ -245,8 +243,9 @@ msgid  "Controls"
 msgstr "கட்டுப்பாடுகள்"
 
 #: source/appl/app.src#MSG_CANT_QUIT.InfoBox.Message
+#, fuzzy
 msgid  "The application cannot be terminated at the moment.\nPlease wait until all print jobs and/or\nOLE actions have finished and close all dialogs."
-msgstr ""
+msgstr "தற்போது இந்த பயன்பாட்டை நீக்க முடியாது.\nஎல்லா அச்சு வேலைகள் மற்றும் OLE செயல்கள் முடியும்வரை காத்திரு. எல்லா உரையாடல்களையும் மூடு."
 
 #: source/appl/app.src#STR_ISMODIFIED.String.Text
 #, fuzzy
@@ -284,8 +283,9 @@ msgid  "Function Bar"
 msgstr "செயல்பாட்டு பட்டி"
 
 #: source/appl/app.src#RID_SPECIALCONFIG_ERROR.String.Text
+#, fuzzy
 msgid  "An error has occurred in the special configuration.\nPlease contact your administrator."
-msgstr ""
+msgstr "விசேஷ அமைப்பின்போது பிழை நேர்ந்துள்ளது.\nஉங்கள் நிர்வாகியை தொடர்பு கொள்ளவும்."
 
 #: source/appl/app.src#STR_QUICKSTART_EXIT.String.Text
 #, fuzzy
@@ -347,12 +347,14 @@ msgid  "DDE link to % for % area % are not available."
 msgstr "தகவலுக்கான தொடர்புகள் இல்லை "
 
 #: source/appl/app.src#RID_SECURITY_WARNING_HYPERLINK.WarningBox.Message
-msgid  "This hyperlink is going to open "%s". Do you want to proceed?"
-msgstr ""
+#, fuzzy
+msgid  "This hyperlink is going to open \"%s\". Do you want to proceed?"
+msgstr "இந்த மீதொகுப்பு \"%s\"ஐ திறக்கப்போகிறது. தொடர வேண்டுமா?"
 
 #: source/appl/app.src#RID_SECURITY_WARNING_NO_HYPERLINKS.WarningBox.Message
+#, fuzzy
 msgid  "For security reasons, the hyperlink cannot be executed.\nThe stated address will not be opened."
-msgstr ""
+msgstr "For security reasons, the hyperlink cannot be executed.\nThe stated address will not be opened."
 
 #: source/appl/app.src#RID_SECURITY_WARNING_TITLE.String.Text
 #, fuzzy
@@ -360,16 +362,19 @@ msgid  "Security Warning"
 msgstr "பாதுகாப்பு எச்சரிக்கை"
 
 #: source/appl/app.src#RID_XMLSEC_QUERY_LOSINGSIGNATURE.QueryBox.Message
+#, fuzzy
 msgid  "Saving will remove all existing signatures.\nDo you want to continue saving the document?"
-msgstr ""
+msgstr "Saving will remove all existing signatures.\nDo you want to continue saving the document?"
 
 #: source/appl/app.src#RID_XMLSEC_QUERY_SAVEBEFORESIGN.QueryBox.Message
+#, fuzzy
 msgid  "The document has to be saved before it can be signed.\nDo you want to save the document?"
-msgstr ""
+msgstr "The document has to be saved before it can be signed.\nDo you want to save the document?"
 
 #: source/appl/app.src#RID_XMLSEC_INFO_WRONGDOCFORMAT.InfoBox.Message
+#, fuzzy
 msgid  "This document must be saved in OpenDocument file format before it can be digitally signed."
-msgstr ""
+msgstr "This document must be saved in OpenDocument file format before it can be digitally signed."
 
 #: source/appl/app.src#RID_XMLSEC_DOCUMENTSIGNED.String.Text
 #, fuzzy
@@ -406,8 +411,9 @@ msgid  "Link graphics"
 msgstr ""
 
 #: source/appl/app.src#STR_ERRUNOEVENTBINDUNG.String.Text
+#, fuzzy
 msgid  "An appropriate component method %1\ncould not be found.\n\nCheck spelling of method name."
-msgstr ""
+msgstr "An appropriate component method %1\ncould not be found.\n\nCheck spelling of method name."
 
 #: source/appl/app.src#RID_SVXSTR_GRFILTER_OPENERROR.String.Text
 msgid  "Graphics file cannot be opened"
@@ -461,7 +467,7 @@ msgstr "~தொடரைத் தேடுக"
 #: source/appl/newhelp.src#TP_HELP_INDEX.PB_OPEN_INDEX.PushButton.Text
 #, fuzzy
 msgid  "~Display"
-msgstr "காட்டு"
+msgstr "காட்டுக"
 
 #: source/appl/newhelp.src#TP_HELP_SEARCH.FT_SEARCH.FixedText.Text
 #, fuzzy
@@ -486,7 +492,7 @@ msgstr "~தலைப்புக்களில் மட்டும் கண
 #: source/appl/newhelp.src#TP_HELP_SEARCH.PB_OPEN_SEARCH.PushButton.Text
 #, fuzzy
 msgid  "~Display"
-msgstr "காட்டு"
+msgstr "காட்டுக"
 
 #: source/appl/newhelp.src#TP_HELP_BOOKMARKS.FT_BOOKMARKS.FixedText.Text
 #, fuzzy
@@ -610,11 +616,11 @@ msgstr "~Display %PRODUCTNAME %MODULENAME Help at Startup"
 
 #: source/bastyp/fltfnc.src#STR_FILTER_NOT_INSTALLED.String.Text
 msgid  "The selected filter $(FILTER) has not been installed.\nWould you like to do this now?"
-msgstr ""
+msgstr "The selected filter $(FILTER) has not been installed.\nWould you like to do this now?"
 
 #: source/bastyp/fltfnc.src#STR_FILTER_CONSULT_SERVICE.String.Text
 msgid  "The selected filter $(FILTER) is not included in your edition.\nYou can find information about orders on our homepage."
-msgstr ""
+msgstr "தேர்ந்தெடுக்கப்பட்ட வடிகட்டி $(FILTER) உங்கள் பதிப்பில் இல்லை.\nஎங்கள் வீட்டுப் பக்கத்தில் இருந்து நீங்கள் தேவையான தகவலை தேடலாம்."
 
 #: source/dialog/printopt.src#TP_COMMONPRINTOPTIONS.GB_REDUCE.FixedLine.Text
 #, fuzzy
@@ -688,6 +694,31 @@ msgstr "தீ~ர்வு"
 
 #: source/dialog/printopt.src#TP_COMMONPRINTOPTIONS.LB_REDUCEBITMAPS_RESOLUTION.0.StringList.item
 #, fuzzy
+msgid  "72 DPI"
+msgstr "72 DPI"
+
+#: source/dialog/printopt.src#TP_COMMONPRINTOPTIONS.LB_REDUCEBITMAPS_RESOLUTION.0.StringList.item
+#, fuzzy
+msgid  "96 DPI"
+msgstr "96 DPI"
+
+#: source/dialog/printopt.src#TP_COMMONPRINTOPTIONS.LB_REDUCEBITMAPS_RESOLUTION.0.StringList.item
+#, fuzzy
+msgid  "150 DPI (Fax)"
+msgstr "150 DPI (தொலைநகல்)"
+
+#: source/dialog/printopt.src#TP_COMMONPRINTOPTIONS.LB_REDUCEBITMAPS_RESOLUTION.0.StringList.item
+#, fuzzy
+msgid  "200 DPI (default)"
+msgstr "200 DPI (கொடாநிலை)"
+
+#: source/dialog/printopt.src#TP_COMMONPRINTOPTIONS.LB_REDUCEBITMAPS_RESOLUTION.0.StringList.item
+#, fuzzy
+msgid  "300 DPI"
+msgstr "300 DPI"
+
+#: source/dialog/printopt.src#TP_COMMONPRINTOPTIONS.LB_REDUCEBITMAPS_RESOLUTION.0.StringList.item
+#, fuzzy
 msgid  "600 DPI"
 msgstr "600 DPI"
 
@@ -727,8 +758,9 @@ msgid  "Warning"
 msgstr "எச்சரிக்கை"
 
 #: source/dialog/printopt.src#RID_WARN_PRINTTRANSPARENCY.FT_PRINTTRANSWARN.FixedText.Text
+#, fuzzy
 msgid  "Your document contains transparent objects.\nThis may lead to longer printing time on certain\nprinters. Should the aspect of transparency\nbe reduced?"
-msgstr ""
+msgstr "இந்த ஆவணத்தில் தெரியக்கூடிய பொருள்கள் உள்ளன.\nஇதனால் சில அச்சியந்திரங்களில் அச்சடிக்கும் நேரம் தாமதமாகும்.\nதெரியக்கூடியவற்றின் தோற்றத்தை குறைக்க வேண்டுமா?"
 
 #: source/dialog/printopt.src#RID_WARN_PRINTTRANSPARENCY.BTN_PRINTTRANS_YES.OKButton.Text
 #, fuzzy
@@ -749,31 +781,6 @@ msgstr "~ரத்து செய்"
 #, fuzzy
 msgid  "~Do not show warning again"
 msgstr "~எச்சரிக்கையை காட்டாதே"
-
-#: source/dialog/printopt.src#TP_COMMONPRINTOPTIONS.LB_REDUCEBITMAPS_RESOLUTION.0.StringList.item
-#, fuzzy
-msgid  "72 DPI"
-msgstr "72 DPI"
-
-#: source/dialog/printopt.src#TP_COMMONPRINTOPTIONS.LB_REDUCEBITMAPS_RESOLUTION.0.StringList.item
-#, fuzzy
-msgid  "96 DPI"
-msgstr "96 DPI"
-
-#: source/dialog/printopt.src#TP_COMMONPRINTOPTIONS.LB_REDUCEBITMAPS_RESOLUTION.0.StringList.item
-#, fuzzy
-msgid  "150 DPI (Fax)"
-msgstr "150 DPI (தொலைநகல்)"
-
-#: source/dialog/printopt.src#TP_COMMONPRINTOPTIONS.LB_REDUCEBITMAPS_RESOLUTION.0.StringList.item
-#, fuzzy
-msgid  "200 DPI (default)"
-msgstr "200 DPI (கொடாநிலை)"
-
-#: source/dialog/printopt.src#TP_COMMONPRINTOPTIONS.LB_REDUCEBITMAPS_RESOLUTION.0.StringList.item
-#, fuzzy
-msgid  "300 DPI"
-msgstr "300 DPI"
 
 #: source/dialog/templdlg.src#RID_STYLECATALOG.ModalDialog.Text
 #, fuzzy
@@ -980,127 +987,102 @@ msgid  "Version comment"
 msgstr "பதிவு உரை"
 
 #: source/dialog/mgetempl.src#TP_MANAGE_STYLES.FT_NAME.FixedText.Text
-#, fuzzy
 msgid  "~Name"
 msgstr "பெயர்"
 
 #: source/dialog/mgetempl.src#TP_MANAGE_STYLES.CB_AUTO.CheckBox.Text
-#, fuzzy
 msgid  "~AutoUpdate"
 msgstr "~தன்னியக்க உடன்நிகழ்வு"
 
 #: source/dialog/mgetempl.src#TP_MANAGE_STYLES.FT_NEXT.FixedText.Text
-#, fuzzy
 msgid  "Ne~xt Style"
 msgstr "அ~டுத்த பாங்கு"
 
 #: source/dialog/mgetempl.src#TP_MANAGE_STYLES.FT_BASE.FixedText.Text
-#, fuzzy
 msgid  "Linked with"
 msgstr "~இருந்து"
 
 #: source/dialog/mgetempl.src#TP_MANAGE_STYLES.FT_REGION.FixedText.Text
-#, fuzzy
 msgid  "~Category"
 msgstr "வகை"
 
 #: source/dialog/mgetempl.src#TP_MANAGE_STYLES.GB_DESC.FixedLine.Text
-#, fuzzy
 msgid  "Contains"
 msgstr "கொண்டுள்ளது"
 
 #: source/dialog/filedlghelper.src#STR_SFX_FILEDLG_ACTUALVERSION.String.Text
-#, fuzzy
 msgid  "Current version"
 msgstr "நடப்பு பதிப்பு"
 
 #: source/dialog/filedlghelper.src#STR_SFX_EXPLORERFILE_EXPORT.String.Text
-#, fuzzy
 msgid  "Export"
 msgstr "ஏற்றுமதி"
 
 #: source/dialog/filedlghelper.src#STR_SFX_EXPLORERFILE_INSERT.String.Text
-#, fuzzy
 msgid  "Insert"
 msgstr "சொருகு"
 
 #: source/dialog/filedlghelper.src#STR_SFX_EXPLORERFILE_BUTTONINSERT.String.Text
-#, fuzzy
 msgid  "~Insert"
 msgstr "~சேர்க்க"
 
 #: source/dialog/filedlghelper.src#STR_SFX_IMPORT_ALL.String.Text
-#, fuzzy
 msgid  "<All formats>"
 msgstr "<அனைத்து வடிவங்கள்>"
 
 #: source/dialog/filedlghelper.src#STR_CB_AUTO_EXTENSION.String.Text
-#, fuzzy
 msgid  "~Automatic file name extension"
 msgstr "~தன்னியக்க கோப்புப் பெயர் விரிவாக்கம்"
 
 #: source/dialog/filedlghelper.src#STR_CB_SELECTION.String.Text
-#, fuzzy
 msgid  "~Selection"
 msgstr "~தேர்வு"
 
 #: source/dialog/filedlghelper.src#STR_CB_INSERT_AS_LINK.String.Text
-#, fuzzy
 msgid  "~Link"
 msgstr "~இணைப்பு"
 
 #: source/dialog/filedlghelper.src#STR_CB_SHOW_PREVIEW.String.Text
-#, fuzzy
 msgid  "Pr~eview"
 msgstr "மு~ன்காட்சி"
 
 #: source/dialog/filedlghelper.src#STR_CB_READONLY.String.Text
-#, fuzzy
 msgid  "~Read-only"
 msgstr "வாசிக்க மட்டும்"
 
 #: source/dialog/filedlghelper.src#STR_CB_PASSWORD.String.Text
-#, fuzzy
 msgid  "Save with ~password"
 msgstr "கடவுச்சொல்லை ~சேமிக்க"
 
 #: source/dialog/filedlghelper.src#STR_CB_FILTER_OPTIONS.String.Text
-#, fuzzy
 msgid  "Edit ~filter settings"
 msgstr "வடிகட்டி அ~மைவுகளை பதிப்பிக்க"
 
 #: source/dialog/filedlghelper.src#STR_PB_PLAY.String.Text
-#, fuzzy
 msgid  "~Play"
 msgstr "~இயக்குக"
 
 #: source/dialog/filedlghelper.src#STR_PB_STOP.String.Text
-#, fuzzy
 msgid  "Sto~p"
 msgstr "நி~றுத்துக"
 
 #: source/dialog/filedlghelper.src#STR_PB_OPEN.String.Text
-#, fuzzy
 msgid  "~Open"
 msgstr "திறற"
 
 #: source/dialog/filedlghelper.src#STR_PB_SAVE.String.Text
-#, fuzzy
 msgid  "~Save"
 msgstr "~சேமிக்க"
 
 #: source/dialog/filedlghelper.src#STR_LB_IMAGE_TEMPLATE.String.Text
-#, fuzzy
 msgid  "Style:"
 msgstr "பாங்கு:"
 
 #: source/dialog/filedlghelper.src#STR_LB_TEMPLATES.String.Text
-#, fuzzy
 msgid  "~Templates:"
 msgstr "~படிமஅச்சுக்கள்:"
 
 #: source/dialog/filedlghelper.src#STR_LB_VERSION.String.Text
-#, fuzzy
 msgid  "~Version:"
 msgstr "~பதிவு:"
 
@@ -1155,17 +1137,14 @@ msgid  "Enter Password"
 msgstr "கடவுச்சொல்லை உள்ளிடு"
 
 #: source/dialog/passwd.src#DLG_PASSWD.FT_PASSWD_USER.FixedText.Text
-#, fuzzy
 msgid  "~User"
 msgstr "~பயனர்"
 
 #: source/dialog/passwd.src#DLG_PASSWD.FT_PASSWD_PASSWORD.FixedText.Text
-#, fuzzy
 msgid  "~Password"
 msgstr "கடவுச்சொல்"
 
 #: source/dialog/passwd.src#DLG_PASSWD.FT_PASSWD_CONFIRM.FixedText.Text
-#, fuzzy
 msgid  "~Confirm"
 msgstr "~உறுதி செய்க"
 
@@ -1190,107 +1169,86 @@ msgid  "Password"
 msgstr "கடவுச்சொல்"
 
 #: source/dialog/dinfdlg.src#STR_SFX_NEWOFFICEDOC.String.Text
-#, fuzzy
 msgid  "%PRODUCTNAME document"
 msgstr "%PRODUCTNAME document"
 
 #: source/dialog/dinfdlg.src#TP_DOCINFODESC.FT_TITLE.FixedText.Text
-#, fuzzy
 msgid  "~Title"
 msgstr "~தலைப்பு"
 
 #: source/dialog/dinfdlg.src#TP_DOCINFODESC.FT_THEMA.FixedText.Text
-#, fuzzy
 msgid  "~Subject"
 msgstr "~பாடம்"
 
 #: source/dialog/dinfdlg.src#TP_DOCINFODESC.FT_KEYWORDS.FixedText.Text
-#, fuzzy
 msgid  "~Keywords"
 msgstr "~முக்கியச்சொற்கள்"
 
 #: source/dialog/dinfdlg.src#TP_DOCINFODESC.FT_COMMENT.FixedText.Text
-#, fuzzy
 msgid  "~Comments"
 msgstr "~விளக்கம்"
 
 #: source/dialog/dinfdlg.src#TP_DOCINFODOC.FT_FILE_TYP.FixedText.Text
-#, fuzzy
 msgid  "Type:"
 msgstr "வகை:"
 
 #: source/dialog/dinfdlg.src#TP_DOCINFODOC.CB_FILE_READONLY.CheckBox.Text
-#, fuzzy
 msgid  "~Read-only"
 msgstr "வாசிக்க மட்டும்"
 
 #: source/dialog/dinfdlg.src#TP_DOCINFODOC.FT_FILE.FixedText.Text
-#, fuzzy
 msgid  "Location:"
 msgstr "அமைவு:"
 
 #: source/dialog/dinfdlg.src#TP_DOCINFODOC.FT_FILE_SIZE.FixedText.Text
-#, fuzzy
 msgid  "Size:"
 msgstr "அளவு:"
 
 #: source/dialog/dinfdlg.src#TP_DOCINFODOC.FT_CREATE.FixedText.Text
-#, fuzzy
 msgid  "Created:"
 msgstr "உருவாக்கப்பட்டது:"
 
 #: source/dialog/dinfdlg.src#TP_DOCINFODOC.FT_CHANGE.FixedText.Text
-#, fuzzy
 msgid  "Modified:"
 msgstr "மாற்றப்பட்டது:"
 
 #: source/dialog/dinfdlg.src#TP_DOCINFODOC.FT_SIGNED.FixedText.Text
-#, fuzzy
 msgid  "Digitally signed:"
 msgstr "Digitally signed:"
 
 #: source/dialog/dinfdlg.src#TP_DOCINFODOC.BTN_SIGNATURE.PushButton.Text
-#, fuzzy
 msgid  "Digital Signature..."
 msgstr "Digital Signature..."
 
 #: source/dialog/dinfdlg.src#TP_DOCINFODOC.STR_MULTSIGNED.String.Text
-#, fuzzy
 msgid  "Multiply signed document"
 msgstr "Multiply signed document"
 
 #: source/dialog/dinfdlg.src#TP_DOCINFODOC.FT_PRINT.FixedText.Text
-#, fuzzy
 msgid  "Last printed:"
 msgstr "அச்சிடப்பட்டது:"
 
 #: source/dialog/dinfdlg.src#TP_DOCINFODOC.FT_TIMELOG.FixedText.Text
-#, fuzzy
 msgid  "Total editing time:"
 msgstr "Total editing time:"
 
 #: source/dialog/dinfdlg.src#TP_DOCINFODOC.FT_DOCNO.FixedText.Text
-#, fuzzy
 msgid  "Revision number:"
 msgstr "Revision number:"
 
 #: source/dialog/dinfdlg.src#TP_DOCINFODOC.BTN_DELETE.PushButton.Text
-#, fuzzy
 msgid  "Reset"
 msgstr "மறுஅமை"
 
 #: source/dialog/dinfdlg.src#TP_DOCINFODOC.CB_USE_USERDATA.CheckBox.Text
-#, fuzzy
 msgid  "~Apply user data"
 msgstr "~பயனர் தரவை பயன்படுத்துக"
 
 #: source/dialog/dinfdlg.src#TP_DOCINFODOC.FT_TEMPL.FixedText.Text
-#, fuzzy
 msgid  "Template:"
 msgstr "படிமஅச்சு:"
 
 #: source/dialog/dinfdlg.src#TP_DOCINFODOC.STR_UNKNOWNSIZE.String.Text
-#, fuzzy
 msgid  "unknown"
 msgstr "அறியாதது"
 
@@ -1299,241 +1257,194 @@ msgid  "File Name"
 msgstr ""
 
 #: source/dialog/dinfdlg.src#TP_DOCINFOUSER.BTN_EDITLABEL.PushButton.Text
-#, fuzzy
 msgid  "~Info fields..."
 msgstr "~தகவல் புலங்கள்..."
 
 #: source/dialog/dinfdlg.src#TP_DOCINFORELOAD.RB_NOAUTOUPDATE.RadioButton.Text
-#, fuzzy
 msgid  "Do not refresh automatically"
 msgstr "தானாகவே புதுப்பிக்காதே"
 
 #: source/dialog/dinfdlg.src#TP_DOCINFORELOAD.RB_RELOADUPDATE.RadioButton.Text
-#, fuzzy
 msgid  "Refresh this document"
 msgstr "இந்த ஆவணத்தை புதுப்பி"
 
 #: source/dialog/dinfdlg.src#TP_DOCINFORELOAD.FT_EVERY.FixedText.Text
-#, fuzzy
 msgid  "every"
 msgstr "ஒவ்வொரு"
 
 #: source/dialog/dinfdlg.src#TP_DOCINFORELOAD.FT_RELOADSECS.FixedText.Text
-#, fuzzy
 msgid  "seconds"
 msgstr "விநாடிகள்"
 
 #: source/dialog/dinfdlg.src#TP_DOCINFORELOAD.RB_FORWARDUPDATE.RadioButton.Text
-#, fuzzy
 msgid  "Redirect from this document"
 msgstr "இந்த ஆவணத்தில் இருந்து திசை மாற்று"
 
 #: source/dialog/dinfdlg.src#TP_DOCINFORELOAD.FT_AFTER.FixedText.Text
-#, fuzzy
 msgid  "after"
 msgstr "பிறகு"
 
 #: source/dialog/dinfdlg.src#TP_DOCINFORELOAD.FT_FORWARDSECS.FixedText.Text
-#, fuzzy
 msgid  "seconds"
 msgstr "விநாடிகள்"
 
 #: source/dialog/dinfdlg.src#TP_DOCINFORELOAD.FT_URL.FixedText.Text
-#, fuzzy
 msgid  "to URL"
 msgstr "~URL"
 
 #: source/dialog/dinfdlg.src#TP_DOCINFORELOAD.FT_FRAME.FixedText.Text
-#, fuzzy
 msgid  "to frame"
 msgstr "சட்டத்துக்கு"
 
 #: source/dialog/dinfdlg.src#TP_DOCINFORELOAD.STR_FORWARD_ERRMSSG.String.Text
-msgid  "If you select the option "%PLACEHOLDER%", you must enter a URL."
-msgstr ""
+msgid  "If you select the option \"%PLACEHOLDER%\", you must enter a URL."
+msgstr "\"%PLACEHOLDER%\" தேர்வை தேர்ந்தெடுக்கும்போது, வலைமனையை உள்ளிட வேண்டும்."
 
 #: source/dialog/dinfdlg.src#TP_CUSTOMPROPERTIES.FT_PROPERTIES.FixedText.Text
-#, fuzzy
 msgid  "~Properties"
 msgstr "தன்மைகள்"
 
 #: source/dialog/dinfdlg.src#TP_CUSTOMPROPERTIES.CTRL_PROPERTIES.STR_HEADER_NAME.String.Text
-#, fuzzy
 msgid  "Name"
 msgstr "பெயர்"
 
 #: source/dialog/dinfdlg.src#TP_CUSTOMPROPERTIES.CTRL_PROPERTIES.STR_HEADER_TYPE.String.Text
-#, fuzzy
 msgid  "Type"
 msgstr "வகை"
 
 #: source/dialog/dinfdlg.src#TP_CUSTOMPROPERTIES.CTRL_PROPERTIES.STR_HEADER_VALUE.String.Text
-#, fuzzy
 msgid  "Value"
 msgstr "மதிப்பு"
 
 #: source/dialog/dinfdlg.src#TP_CUSTOMPROPERTIES.BTN_ADD.PushButton.Text
-#, fuzzy
 msgid  "~Add"
 msgstr "சேர்"
 
 #: source/dialog/dinfdlg.src#SFX_CB_PROPERTY_NAME.ComboBox.QuickHelpText
-#, fuzzy
 msgid  "Property Name"
 msgstr "தன்மை பெயர்"
 
 #: source/dialog/dinfdlg.src#SFX_CB_PROPERTY_NAME.item1.StringList.item
-#, fuzzy
 msgid  "Checked by"
 msgstr "சரிபார்த்தவர்"
 
 #: source/dialog/dinfdlg.src#SFX_CB_PROPERTY_NAME.item2.StringList.item
-#, fuzzy
 msgid  "Client"
 msgstr "கிளையன்"
 
 #: source/dialog/dinfdlg.src#SFX_CB_PROPERTY_NAME.item3.StringList.item
-#, fuzzy
 msgid  "Date completed"
 msgstr "முடிந்த தேதி"
 
 #: source/dialog/dinfdlg.src#SFX_CB_PROPERTY_NAME.item4.StringList.item
-#, fuzzy
 msgid  "Department"
 msgstr "துறை"
 
 #: source/dialog/dinfdlg.src#SFX_CB_PROPERTY_NAME.item5.StringList.item
-#, fuzzy
 msgid  "Destinations"
 msgstr "இலக்குகள்"
 
 #: source/dialog/dinfdlg.src#SFX_CB_PROPERTY_NAME.item6.StringList.item
-#, fuzzy
 msgid  "Disposition"
 msgstr "Disposition"
 
 #: source/dialog/dinfdlg.src#SFX_CB_PROPERTY_NAME.item7.StringList.item
-#, fuzzy
 msgid  "Division"
 msgstr "வகுத்தல்"
 
 #: source/dialog/dinfdlg.src#SFX_CB_PROPERTY_NAME.item8.StringList.item
-#, fuzzy
 msgid  "Document number"
 msgstr "ஆவண எண்"
 
 #: source/dialog/dinfdlg.src#SFX_CB_PROPERTY_NAME.item9.StringList.item
-#, fuzzy
 msgid  "Editor"
 msgstr "திருத்தி"
 
 #: source/dialog/dinfdlg.src#SFX_CB_PROPERTY_NAME.item10.StringList.item
-#, fuzzy
 msgid  "E-Mail"
 msgstr "மின்னஞ்சல்"
 
 #: source/dialog/dinfdlg.src#SFX_CB_PROPERTY_NAME.item11.StringList.item
-#, fuzzy
 msgid  "Forward to"
 msgstr "முன்னனுப்பல்"
 
 #: source/dialog/dinfdlg.src#SFX_CB_PROPERTY_NAME.item12.StringList.item
-#, fuzzy
 msgid  "Group"
 msgstr "குழு"
 
 #: source/dialog/dinfdlg.src#SFX_CB_PROPERTY_NAME.item13.StringList.item
-#, fuzzy
 msgid  "Info"
 msgstr "தகவல்"
 
 #: source/dialog/dinfdlg.src#SFX_CB_PROPERTY_NAME.item14.StringList.item
-#, fuzzy
 msgid  "Language"
 msgstr "மொழி"
 
 #: source/dialog/dinfdlg.src#SFX_CB_PROPERTY_NAME.item15.StringList.item
-#, fuzzy
 msgid  "Mailstop"
 msgstr "Mailstop"
 
 #: source/dialog/dinfdlg.src#SFX_CB_PROPERTY_NAME.item16.StringList.item
-#, fuzzy
 msgid  "Matter"
 msgstr "மேட்டர்"
 
 #: source/dialog/dinfdlg.src#SFX_CB_PROPERTY_NAME.item17.StringList.item
-#, fuzzy
 msgid  "Office"
 msgstr "அலுவலகம்"
 
 #: source/dialog/dinfdlg.src#SFX_CB_PROPERTY_NAME.item18.StringList.item
-#, fuzzy
 msgid  "Owner"
 msgstr "உரிமையாளர்"
 
 #: source/dialog/dinfdlg.src#SFX_CB_PROPERTY_NAME.item19.StringList.item
-#, fuzzy
 msgid  "Project"
 msgstr "திட்டம்"
 
 #: source/dialog/dinfdlg.src#SFX_CB_PROPERTY_NAME.item20.StringList.item
-#, fuzzy
 msgid  "Publisher"
 msgstr "வெளியீட்டாளர்"
 
 #: source/dialog/dinfdlg.src#SFX_CB_PROPERTY_NAME.item21.StringList.item
-#, fuzzy
 msgid  "Purpose"
 msgstr "நோக்கம்"
 
 #: source/dialog/dinfdlg.src#SFX_CB_PROPERTY_NAME.item22.StringList.item
-#, fuzzy
 msgid  "Received from"
 msgstr "பெற்ற இடம்"
 
 #: source/dialog/dinfdlg.src#SFX_CB_PROPERTY_NAME.item23.StringList.item
-#, fuzzy
 msgid  "Recorded by"
 msgstr "பதிவு செய்தவர்"
 
 #: source/dialog/dinfdlg.src#SFX_CB_PROPERTY_NAME.item24.StringList.item
-#, fuzzy
 msgid  "Recorded date"
 msgstr "பதிவு செய்யப்பட்ட தேதி"
 
 #: source/dialog/dinfdlg.src#SFX_CB_PROPERTY_NAME.item25.StringList.item
-#, fuzzy
 msgid  "Reference"
 msgstr "குறிப்பு"
 
 #: source/dialog/dinfdlg.src#SFX_CB_PROPERTY_NAME.item26.StringList.item
-#, fuzzy
 msgid  "Source"
 msgstr "மூலம்"
 
 #: source/dialog/dinfdlg.src#SFX_CB_PROPERTY_NAME.item27.StringList.item
-#, fuzzy
 msgid  "Status"
 msgstr "நிலை"
 
 #: source/dialog/dinfdlg.src#SFX_CB_PROPERTY_NAME.item28.StringList.item
-#, fuzzy
 msgid  "Telephone number"
 msgstr "தொலைபேசி எண்"
 
 #: source/dialog/dinfdlg.src#SFX_CB_PROPERTY_NAME.item29.StringList.item
-#, fuzzy
 msgid  "Typist"
 msgstr "தட்டச்சாளர்"
 
 #: source/dialog/dinfdlg.src#SFX_CB_PROPERTY_NAME.item30.StringList.item
-#, fuzzy
 msgid  "URL"
 msgstr "URL"
 
 #: source/dialog/dinfdlg.src#SFX_LB_PROPERTY_TYPE.CUSTOM_TYPE_TEXT.StringList.item
-#, fuzzy
 msgid  "Text"
 msgstr "உரை"
 
@@ -1542,7 +1453,6 @@ msgid  "DateTime"
 msgstr ""
 
 #: source/dialog/dinfdlg.src#SFX_LB_PROPERTY_TYPE.CUSTOM_TYPE_DATE.StringList.item
-#, fuzzy
 msgid  "Date"
 msgstr "தேதி"
 
@@ -1551,12 +1461,10 @@ msgid  "Duration"
 msgstr ""
 
 #: source/dialog/dinfdlg.src#SFX_LB_PROPERTY_TYPE.CUSTOM_TYPE_NUMBER.StringList.item
-#, fuzzy
 msgid  "Number"
 msgstr "எண்"
 
 #: source/dialog/dinfdlg.src#SFX_LB_PROPERTY_TYPE.CUSTOM_TYPE_BOOLEAN.StringList.item
-#, fuzzy
 msgid  "Yes or no"
 msgstr "ஆம் அல்லது இல்லை"
 
@@ -1565,46 +1473,38 @@ msgid  " Y: %1 M: %2 D: %3 H: %4 M: %5 S: %6"
 msgstr ""
 
 #: source/dialog/dinfdlg.src#SFX_WIN_PROPERTY_YESNO.RB_PROPERTY_YES.RadioButton.Text
-#, fuzzy
 msgid  "Yes"
 msgstr "ஆம்"
 
 #: source/dialog/dinfdlg.src#SFX_WIN_PROPERTY_YESNO.RB_PROPERTY_NO.RadioButton.Text
-#, fuzzy
 msgid  "No"
 msgstr "இல்லை"
 
 #: source/dialog/dinfdlg.src#SFX_PB_PROPERTY_REMOVE.ImageButton.QuickHelpText
-#, fuzzy
 msgid  "Remove Property"
 msgstr "தன்மையை நீக்கு"
 
 #: source/dialog/dinfdlg.src#SFX_QB_WRONG_TYPE.QueryBox.Message
 msgid  "The value entered does not match the specified type.\nThe value will be stored as text."
-msgstr ""
+msgstr "The value entered does not match the specified type.\nThe value will be stored as text."
 
 #: source/dialog/dinfdlg.src#SID_DOCINFO.TabDialog.Text
-#, fuzzy
 msgid  "Properties of "
 msgstr "தன்மைகள்"
 
 #: source/dialog/dinfdlg.src#SID_DOCINFO.1.TP_DOCINFODOC.PageItem.Text
-#, fuzzy
 msgid  "General"
 msgstr "பொது"
 
 #: source/dialog/dinfdlg.src#SID_DOCINFO.1.TP_DOCINFODESC.PageItem.Text
-#, fuzzy
 msgid  "Description"
 msgstr "விளக்கவுரை"
 
 #: source/dialog/dinfdlg.src#SID_DOCINFO.1.TP_CUSTOMPROPERTIES.PageItem.Text
-#, fuzzy
 msgid  "Custom Properties"
 msgstr "தனிபயன் தன்மைகள்"
 
 #: source/dialog/dinfdlg.src#SID_DOCINFO.1.TP_DOCINFORELOAD.PageItem.Text
-#, fuzzy
 msgid  "Internet"
 msgstr "இணையம்"
 
@@ -1645,7 +1545,6 @@ msgid  "Min~utes"
 msgstr ""
 
 #: source/dialog/dinfdlg.src#RID_EDIT_DURATIONS.FT_SECOND.FixedText.Text
-#, fuzzy
 msgid  "~Seconds"
 msgstr "விநாடிகள்"
 
@@ -1654,27 +1553,22 @@ msgid  "Millise~conds"
 msgstr ""
 
 #: source/dialog/dinfedt.src#DLG_DOCINFO_EDT.ModalDialog.Text
-#, fuzzy
 msgid  "Edit Field Names"
 msgstr "புலப்பெயர்களை பதிப்பிக்க"
 
 #: source/dialog/dinfedt.src#DLG_DOCINFO_EDT.FL_INFO.FixedLine.Text
-#, fuzzy
 msgid  "Names"
 msgstr "பெயர்கள்"
 
 #: source/dialog/newstyle.src#DLG_NEW_STYLE_BY_EXAMPLE.ModalDialog.Text
-#, fuzzy
 msgid  "Create Style"
 msgstr "பாங்கை உருவாக்குக"
 
 #: source/dialog/newstyle.src#DLG_NEW_STYLE_BY_EXAMPLE.FL_COL.FixedLine.Text
-#, fuzzy
 msgid  "Style name"
 msgstr "பாங்கு பெயர்"
 
 #: source/dialog/newstyle.src#DLG_NEW_STYLE_BY_EXAMPLE.MSG_OVERWRITE.QueryBox.Message
-#, fuzzy
 msgid  "Style already exists. Overwrite?"
 msgstr "Style already exists. Overwrite?"
 
@@ -1684,8 +1578,9 @@ msgid  "Record Macro"
 msgstr "குறும்பயனை பதிவுசெய்"
 
 #: source/dialog/recfloat.src#STR_MACRO_LOSS.String.Text
+#, fuzzy
 msgid  "Do you really want to cancel the recording? Any steps recorded up to this point will be lost."
-msgstr ""
+msgstr "பதிவு செய்வதை ரத்து செய்யவேண்டுமா? இதுவரை பதிவுசெய்யப்பட்ட வழிமுறைகளை இழக்க நேரிடும்."
 
 #: source/dialog/recfloat.src#STR_CANCEL_RECORDING.String.Text
 #, fuzzy
@@ -1694,68 +1589,57 @@ msgstr "பதிவு செய்தலை ரத்து செய்"
 
 #: source/dialog/mailwindow.src#RID_ERRBOX_MAIL_CONFIG.ErrorBox.MESSAGE
 msgid  "%PRODUCTNAME was unable to find a working e-mail configuration. Please save this document locally instead and attach it from within your e-mail client."
-msgstr ""
+msgstr "%PRODUCTNAME was unable to find a working e-mail configuration. Please save this document locally instead and attach it from within your e-mail client."
 
 #: source/dialog/dialog.src#STR_RESET.String.Text
-#, fuzzy
 msgid  "~Reset"
 msgstr "~மாற்றியமைக்க"
 
 #: source/dialog/dialog.src#STR_APPLY.String.Text
-#, fuzzy
 msgid  "Apply"
 msgstr "பயன்படுத்துக"
 
 #: source/dialog/dialog.src#STR_TABPAGE_MANAGESTYLES.String.Text
-#, fuzzy
 msgid  "Organizer"
 msgstr "ஒருங்கிணைப்பான்"
 
 #: source/dialog/dialog.src#MSG_TABPAGE_INVALIDNAME.InfoBox.Message
-#, fuzzy
 msgid  "This name is already in use."
 msgstr "இப்பெயர் ஏற்கனவே உபயோகத்திலுள்ளது."
 
 #: source/dialog/dialog.src#MSG_TABPAGE_INVALIDSTYLE.InfoBox.Message
-#, fuzzy
 msgid  "This Style does not exist."
 msgstr "இப்பாங்கு காணப்படவில்லை."
 
 #: source/dialog/dialog.src#MSG_TABPAGE_INVALIDPARENT.InfoBox.Message
 msgid  "This Style cannot be used as a base Style,\nbecause it would result in a recursive reference."
-msgstr ""
+msgstr "இந்த பாணியை அடிப்படை பாணியாக பயன்படுத்த இயலாது,\nஏணெண்றால் இது தொடர்ச்சி அழைப்பை விளைவிக்கும்."
 
 #: source/dialog/dialog.src#MSG_POOL_STYLE_NAME.InfoBox.Message
 msgid  "Name already exists as a default Style.\nPlease choose another name."
-msgstr ""
+msgstr "பெயர் ஏற்கெனவே நிலையான பாணியாக உள்ளது\nவேறு பெயரை தேர்ந்தெடு."
 
 #: source/dialog/dialog.src#STR_DELETE_STYLE.String.Text
-#, fuzzy
 msgid  "Do you really want to delete Style $1?"
 msgstr "பாங்கு$1 நீக்கவா?"
 
 #: source/dialog/dialog.src#STR_DELETE_STYLE_USED.String.Text
-#, fuzzy
 msgid  "You are deleting an applied Style!\n"
 msgstr "பயன்படுத்தப்பட்ட பாணியை நீக்கி கொண்டிருக்கிறீர்கள்\n"
 
 #: source/dialog/dialog.src#MN_CONTEXT_TEMPLDLG.ID_NEW.MenuItem.Text
-#, fuzzy
 msgid  "New..."
 msgstr "புதிய..."
 
 #: source/dialog/dialog.src#MN_CONTEXT_TEMPLDLG.ID_EDIT.MenuItem.Text
-#, fuzzy
 msgid  "Modify..."
 msgstr "மாற்றுக..."
 
 #: source/dialog/dialog.src#MN_CONTEXT_TEMPLDLG.ID_DELETE.MenuItem.Text
-#, fuzzy
 msgid  "Delete..."
 msgstr "நீக்குக..."
 
 #: source/dialog/dialog.src#SID_NAVIGATOR.String.Text
-#, fuzzy
 msgid  "Navigator"
 msgstr "இடைமாற்றி"
 
@@ -1764,12 +1648,10 @@ msgid  "Task Pane"
 msgstr ""
 
 #: source/dialog/dialog.src#MSG_ERROR_WRONG_CONFIRM.ErrorBox.Message
-#, fuzzy
 msgid  "Faulty password confirmation"
 msgstr "தவறான கடவுச்சொல் உறுதியளிப்பு"
 
 #: source/dialog/dialog.src#STR_PDF_EXPORT_SEND.String.Text
-#, fuzzy
 msgid  "Send"
 msgstr "அனுப்பு"
 
@@ -1791,25 +1673,21 @@ msgstr ""
 
 #: source/dialog/alienwarn.src#RID_DLG_ALIEN_WARNING.FT_INFOTEXT.FixedText.Text
 msgid  "This document may contain formatting or content that cannot be saved in the %FORMATNAME file format. Do you want to save the document in this format anyway?\n\nUse the latest ODF file format and be sure all formatting and content is saved correctly."
-msgstr ""
+msgstr "This document may contain formatting or content that cannot be saved in the %FORMATNAME file format. Do you want to save the document in this format anyway?\n\n- Click 'Yes' to save in %FORMATNAME file format.\n- Click 'No' to use the latest OpenDocument file format and be sure all formatting and content is saved correctly."
 
 #: source/dialog/alienwarn.src#RID_DLG_ALIEN_WARNING.PB_NO.OKButton.Text
-#, fuzzy
 msgid  "~Keep Current Format"
 msgstr "நடப்பு வடிவத்தை வைக்கவும்"
 
 #: source/dialog/alienwarn.src#RID_DLG_ALIEN_WARNING.PB_YES.CancelButton.Text
-#, fuzzy
 msgid  "~Save in ODF Format"
 msgstr "ODF வடிவமாக சேமி"
 
 #: source/dialog/alienwarn.src#RID_DLG_ALIEN_WARNING.PB_MOREINFO.HelpButton.Text
-#, fuzzy
 msgid  "~More Information..."
 msgstr "~More Information..."
 
 #: source/dialog/alienwarn.src#RID_DLG_ALIEN_WARNING.CB_WARNING_OFF.CheckBox.Text
-#, fuzzy
 msgid  "~Ask when not saving in ODF format"
 msgstr "Do not show this warning again"
 
@@ -1871,7 +1749,7 @@ msgstr "படிமஅச்சுக்கள் முதன்முறை �
 #: source/doc/doctdlg.src#DLG_DOC_TEMPLATE.ModalDialog.Text
 #, fuzzy
 msgid  "Templates"
-msgstr "~படிமஅச்சுக்கள்"
+msgstr "Templates"
 
 #: source/doc/doctdlg.src#DLG_DOC_TEMPLATE.FL_EDIT.FixedLine.Text
 #, fuzzy
@@ -1905,75 +1783,65 @@ msgstr "~ஒருங்கிணைப்பான்..."
 
 #: source/doc/doc.src#MSG_CONFIRM_FILTER.QueryBox.Message
 msgid  "Saving in external formats may have caused\n information loss. Do you still want to close?"
-msgstr ""
+msgstr "உள் வடிவமைப்புகளில் சேமிப்பதால் தகவலை இழக்க நேரிடலாம்.\nஇப்போது அதை மூட வேண்டுமா?"
 
 #: source/doc/doc.src#MSG_CONFIRM_OVERWRITE_TEMPLATE.QueryBox.Message
 msgid  "Name already in use.\nDo you want to overwrite document template?"
-msgstr ""
+msgstr "பெயர் ஏற்கெனவே உபயோகத்தில் உள்ளது.\nஆவண வார்ப்புருவை மேலெழுதவேண்டுமா?"
 
 #: source/doc/doc.src#STR_DELETE_REGION.String.Text
-msgid  "Are you sure you want to delete the region "$1"?"
-msgstr ""
+msgid  "Are you sure you want to delete the region \"$1\"?"
+msgstr "இப்பகுதி \"$1\" நீக்கவா?"
 
 #: source/doc/doc.src#STR_DELETE_TEMPLATE.String.Text
-msgid  "Are you sure you want to delete the entry "$1"?"
-msgstr ""
+msgid  "Are you sure you want to delete the entry \"$1\"?"
+msgstr "இப்பதிவு \"$1\" நீக்கவா?"
 
 #: source/doc/doc.src#MSG_REGION_NOTEMPTY.QueryBox.Message
 msgid  "The category is not empty.\nDelete anyway?"
-msgstr ""
+msgstr "இந்த வகை காலியாக இல்லை.\nஎந்த வகையிலாவது நீக்கு?"
 
 #: source/doc/doc.src#STR_QUERY_SAVE_DOCUMENT.String.Text
-msgid  "The document "$(DOC)" has been modified.\nDo you want to save your changes?"
-msgstr ""
+msgid  "The document \"$(DOC)\" has been modified.\nDo you want to save your changes?"
+msgstr "\"$(DOC)\" ஆவணத்தை மாற்ற இயலவில்லை.\nமாற்றங்களை சேமிக்க வேண்டுமா?"
 
 #: source/doc/doc.src#STR_STYLES.String.Text
-#, fuzzy
 msgid  "Styles"
 msgstr "பாங்குகள்"
 
 #: source/doc/doc.src#STR_MACROS.String.Text
-#, fuzzy
 msgid  "Macros"
 msgstr "பெருமங்கள்"
 
 #: source/doc/doc.src#STR_CONFIG.String.Text
-#, fuzzy
 msgid  "Configuration"
 msgstr "கட்டமைப்பு"
 
 #: source/doc/doc.src#STR_PRINT_STYLES_HEADER.String.Text
-#, fuzzy
 msgid  "Styles in "
 msgstr "உள்ள பாங்குகள் "
 
 #: source/doc/doc.src#STR_PRINT_STYLES.String.Text
-#, fuzzy
 msgid  "Printing Styles"
 msgstr "அச்சுப் பாங்குகள்"
 
 #: source/doc/doc.src#MSG_PRINT_ERROR.ErrorBox.Message
-#, fuzzy
 msgid  "The print job could not be started."
 msgstr "அச்சுப்பணியை தொடங்க முடியாது."
 
 #: source/doc/doc.src#STR_BACKUP_COPY.String.Text
-#, fuzzy
 msgid  "Copy"
 msgstr "படியெடு"
 
 #: source/doc/doc.src#MSG_CANT_OPEN_TEMPLATE.InfoBox.Message
-#, fuzzy
 msgid  "The template could not be opened."
 msgstr "படிம அச்சை திறக்கவியலாது."
 
 #: source/doc/doc.src#MSG_VIEW_OPEN_CANT_SAVE.InfoBox.Message
-#, fuzzy
 msgid  "Document already open for editing."
 msgstr "ஆவணம் பதிப்பித்தலுக்கு ஏற்கனவே திறக்கப்பட்டுள்ளது."
 
 #: source/doc/doc.src#STR_ERROR_SAVE.String.Text
-#, fuzzy
 msgid  "Error recording document "
 msgstr "ஆவணத்தில் பிழை "
 
@@ -1983,16 +1851,19 @@ msgid  "Templates"
 msgstr "~படிமஅச்சுக்கள்"
 
 #: source/doc/doc.src#STR_ERROR_COPY_TEMPLATE.String.Text
-msgid  "Error copying template "$1". \nA template with this name may already exist."
-msgstr ""
+#, fuzzy
+msgid  "Error copying template \"$1\". \nA template with this name may already exist."
+msgstr "\"$1\" வார்ப்புருவை நகல் எடுக்கும்போது பிழை.\nஇந்தப் பெயரில் ஏற்கெனவே ஒரு வார்ப்புரு இருக்கலாம்."
 
 #: source/doc/doc.src#STR_ERROR_DELETE_TEMPLATE.String.Text
-msgid  "The template "$1" can not be deleted."
-msgstr ""
+#, fuzzy
+msgid  "The template \"$1\" can not be deleted."
+msgstr "படிம அச்சு\"$1\" நீக்கவியலாது."
 
 #: source/doc/doc.src#STR_ERROR_MOVE_TEMPLATE.String.Text
-msgid  "Error moving template "$1"."
-msgstr ""
+#, fuzzy
+msgid  "Error moving template \"$1\"."
+msgstr "படிமஅச்சை நகர்த்துதலில் \"$1\" பிழை."
 
 #: source/doc/doc.src#MSG_ERROR_RESCAN.ErrorBox.Message
 #, fuzzy
@@ -2020,12 +1891,14 @@ msgid  "Please specify a name."
 msgstr "வேறு பெயரை அளிக்கவும்."
 
 #: source/doc/doc.src#MSG_ERROR_UNIQ_NAME.ErrorBox.Message
+#, fuzzy
 msgid  "Please specify a unique name.\nEntries must not be case specific."
-msgstr ""
+msgstr "தனிப்பட்ட பெயரைக் குறிப்பிடவும்.\nஉள்ளீடுகளை எழுத்துகளில் குறிப்பிடக்கூடாது."
 
 #: source/doc/doc.src#STR_QUERY_DEFAULT_TEMPLATE.String.Text
-msgid  "Should the template "$(TEXT)" become the default template?"
-msgstr ""
+#, fuzzy
+msgid  "Should the template \"$(TEXT)\" become the default template?"
+msgstr "படிம அச்சு \"$(TEXT)\" கொடாநிலை அச்சாக கொள்ளப்படும்?"
 
 #: source/doc/doc.src#MSG_QUERY_RESET_DEFAULT_TEMPLATE.QueryBox.Message
 #, fuzzy
@@ -2033,8 +1906,9 @@ msgid  "Do you want to reset the default template?"
 msgstr "கொடாநிலை அச்சை மாற்றியமைக்கவா?"
 
 #: source/doc/doc.src#MSG_TEMPLATE_DIR_NOT_EXIST.InfoBox.Message
+#, fuzzy
 msgid  "Template directory\n$(DIR)\ndoes not exist."
-msgstr ""
+msgstr "வார்ப்புரு அடைவு\n $(DIR)\nஇல்லை."
 
 #: source/doc/doc.src#MSG_DOCINFO_CANTREAD.InfoBox.Message
 #, fuzzy
@@ -2047,8 +1921,9 @@ msgid  "The selected file has an incorrect format."
 msgstr "தேர்ந்தெடுக்கப்பட்ட கோப்புக்கள் தவறான வடிவத்தில் உள்ளன."
 
 #: source/doc/doc.src#STR_QUERY_MUSTOWNFORMAT.String.Text
+#, fuzzy
 msgid  "Documents cannot be saved in $(FORMAT) format. Do you\nwant to save your changes using the $(OWNFORMAT) format?"
-msgstr ""
+msgstr "$(FORMAT) வடிவமைப்பில் ஆவணங்களை சேமிக்க இயலவில்லை.\n $(OWNFORMAT) வடிவமைப்பை பயன்படுத்தி மாற்றங்களை சேமிக்க வேண்டுமா?"
 
 #: source/doc/doc.src#STR_SAVEDOC.String.Text
 #, fuzzy
@@ -2096,8 +1971,9 @@ msgid  "%PRODUCTNAME Basic libraries"
 msgstr "%PRODUCTNAME அடிப்படையான நூலகங்கள்"
 
 #: source/doc/doc.src#RID_STR_WARNSTYLEOVERWRITE.String.Text
-msgid  "Should the "$(ARG1)" Style be replaced?"
-msgstr ""
+#, fuzzy
+msgid  "Should the \"$(ARG1)\" Style be replaced?"
+msgstr " \"$(ARG1)\" பாங்கை மாற்றவா?"
 
 #: source/doc/doc.src#STR_DOC_LOADING.String.Text
 #, fuzzy
@@ -2125,8 +2001,9 @@ msgid  "Disconnected"
 msgstr "துண்டிக்கப்பட்டது"
 
 #: source/doc/doc.src#MSG_OPEN_READONLY.QueryBox.Message
+#, fuzzy
 msgid  "Document cannot be opened for editing.\nDo you want to open it as read-only?"
-msgstr ""
+msgstr "ஆவணத்தை திருத்துவதற்காக திறக்க முடியவில்லை.\nபடிக்க மட்டும் அதை திறக்கவேண்டுமா?"
 
 #: source/doc/doc.src#STR_EDIT.String.Text
 #, fuzzy
@@ -2154,12 +2031,14 @@ msgid  "%PRODUCTNAME Frame Document"
 msgstr "%PRODUCTNAME சட்ட ஆவணம்"
 
 #: source/doc/doc.src#STR_TEMPL_MOVED.String.Text
-msgid  "The template "$(TEMPLATE)" was not found at the original location. A template with the same name exists at "$(FOUND)". Should this template be used in the future when comparing?"
-msgstr ""
+#, fuzzy
+msgid  "The template \"$(TEMPLATE)\" was not found at the original location. A template with the same name exists at \"$(FOUND)\". Should this template be used in the future when comparing?"
+msgstr "படிம அச்சு \"$(TEMPLATE)\" கொடுக்கப்பட்ட அமைவில் இல்லை.  \"$(FOUND)\". பிற்காலத்தில் ஒப்பிடுதலுக்கு இதைப் பயன்படுத்தவா?"
 
 #: source/doc/doc.src#STR_TEMPL_RESET.String.Text
-msgid  "The template "$(TEMPLATE)" has not been found. Should the template be looked for the next time the document is opened ?"
-msgstr ""
+#, fuzzy
+msgid  "The template \"$(TEMPLATE)\" has not been found. Should the template be looked for the next time the document is opened ?"
+msgstr "படிமஅச்சு \"$(TEMPLATE)\" காணப்படவில்லை. இப்படிம அச்சே பின்னாளில் திறக்கப்பயன்படுத்தப்பட வேண்டுமா ?"
 
 #: source/doc/doc.src#STR_AUTOMATICVERSION.String.Text
 #, fuzzy
@@ -2242,8 +2121,9 @@ msgid  "Do Not Run"
 msgstr "இயக்காதே"
 
 #: source/doc/doc.src#FT_CANCEL.String.Text
+#, fuzzy
 msgid  "According to the security settings, the macros in this document should not be run. Do you want to run them anyway?"
-msgstr ""
+msgstr "பாதுகாப்பு அமைப்புகளைப் பொறுத்து, மேக்ரோவை இந்த ஆவணத்தில் இயக்கக் கூடாது. எந்தவகையிலாவது அவற்றை இயக்க வேண்டுமா?"
 
 #: source/doc/doc.src#FT_OK.String.Text
 #, fuzzy
@@ -2276,8 +2156,9 @@ msgid  "File format:"
 msgstr "கோப்பு வடிவமைப்பு:"
 
 #: source/doc/doc.src#STR_HIDDENINFO_CONTAINS.String.Text
+#, fuzzy
 msgid  "This document contains:\n\n"
-msgstr ""
+msgstr "This document contains:\n\n"
 
 #: source/doc/doc.src#STR_HIDDENINFO_RECORDCHANGES.String.Text
 #, fuzzy
@@ -2325,8 +2206,9 @@ msgid  "Do you want to continue creating a PDF file?"
 msgstr "Do you want to continue creating a PDF file?"
 
 #: source/doc/doc.src#STR_NEW_FILENAME_SAVE.String.Text
+#, fuzzy
 msgid  "If you do not want to overwrite the original document, you should save your work under a new filename."
-msgstr ""
+msgstr "If you do not want to overwrite the original document, you should save your work under a new filename."
 
 #: source/doc/doc.src#STR_ERROR_DELETE_TEMPLATE_DIR.String.Text
 #, fuzzy
@@ -2344,16 +2226,19 @@ msgid  " (shared)"
 msgstr " (shared)"
 
 #: source/doc/doc.src#STR_XMLSEC_ODF12_EXPECTED.String.Text
+#, fuzzy
 msgid  "The document format version is set to ODF 1.1 (OpenOffice.org 2.x) in Tools-Options-Load/Save-General. Signing documents requires ODF 1.2 (OpenOffice.org 3.x)."
-msgstr ""
+msgstr "The document format version is set to ODF 1.1 (OpenOffice.org 2.x) in Tools-Options-Load/Save-General. Signing documents requires ODF 1.2 (OpenOffice.org 3.x)."
 
 #: source/doc/doc.src#MSG_XMLSEC_QUERY_SAVESIGNEDBEFORESIGN.QueryBox.Message
+#, fuzzy
 msgid  "The document has to be saved before it can be signed. Saving the document removes all present signatures.\nDo you want to save the document?"
-msgstr ""
+msgstr "The document has to be saved before it can be signed. Saving the document removes all present signatures.\nDo you want to save the document?"
 
 #: source/doc/doc.src#STR_QRYTEMPL_MESSAGE.String.Text
+#, fuzzy
 msgid  "The template '$(ARG1)' on which this document is based, has been modified. Do you want to update style based formattings according to the modified template?"
-msgstr ""
+msgstr "The template '$(ARG1)' on which this document is based, has been modified. Do you want to update style based formattings according to the modified template?"
 
 #: source/doc/doc.src#STR_QRYTEMPL_UPDATE_BTN.String.Text
 #, fuzzy
@@ -2387,8 +2272,18 @@ msgstr "~முகவரி புத்தகம்.."
 
 #: source/doc/docvor.src#DLG_ORGANIZE.LB_LEFT_TYP.Default.StringList.item
 #, fuzzy
+msgid  "Templates"
+msgstr "~படிமஅச்சுக்கள்"
+
+#: source/doc/docvor.src#DLG_ORGANIZE.LB_LEFT_TYP.Default.StringList.item
+#, fuzzy
 msgid  "Documents"
 msgstr "Documents"
+
+#: source/doc/docvor.src#DLG_ORGANIZE.LB_RIGHT_TYP.Default.StringList.item
+#, fuzzy
+msgid  "Templates"
+msgstr "Templates"
 
 #: source/doc/docvor.src#DLG_ORGANIZE.LB_RIGHT_TYP.Default.StringList.item
 #, fuzzy
@@ -2449,16 +2344,6 @@ msgstr "கொடாநிலை படிம அச்சாக அளிக
 #, fuzzy
 msgid  "Reset Default Template"
 msgstr "கொடாநிலை படிமஅச்சை மாற்றியமைக்க"
-
-#: source/doc/docvor.src#DLG_ORGANIZE.LB_LEFT_TYP.Default.StringList.item
-#, fuzzy
-msgid  "Templates"
-msgstr "Templates"
-
-#: source/doc/docvor.src#DLG_ORGANIZE.LB_RIGHT_TYP.Default.StringList.item
-#, fuzzy
-msgid  "Templates"
-msgstr "Templates"
 
 #: source/doc/new.src#DLG_NEW_FILE.ModalDialog.Text
 #, fuzzy
@@ -2546,37 +2431,30 @@ msgid  "~Description"
 msgstr "~விளக்கவுரை"
 
 #: source/menu/menu.src#STR_MENU_CFGITEM.String.Text
-#, fuzzy
 msgid  "Configuration Menu"
 msgstr "கட்டமைப்பு பட்டி"
 
 #: source/menu/menu.src#STR_MENU_ADDONS.String.Text
-#, fuzzy
 msgid  "~Add-Ons"
 msgstr "~சேர்-Ons"
 
 #: source/menu/menu.src#MN_CLIPBOARDFUNCS.SID_CUT.MenuItem.Text
-#, fuzzy
 msgid  "Cu~t"
 msgstr "வெ~ட்டுக"
 
 #: source/menu/menu.src#MN_CLIPBOARDFUNCS.SID_COPY.MenuItem.Text
-#, fuzzy
 msgid  "~Copy"
 msgstr "~படியெடு"
 
 #: source/menu/menu.src#MN_CLIPBOARDFUNCS.SID_PASTE.MenuItem.Text
-#, fuzzy
 msgid  "~Paste"
 msgstr "~ஒட்டுக"
 
 #: source/menu/menu.src#SID_WIN_FULLSCREEN.String.Text
-#, fuzzy
 msgid  "Leave Full-Screen Mode"
 msgstr "முழுத் திரை முறைமையிலிருந்து வெளியேறுயேறு"
 
 #: source/menu/menu.src#STR_MENU_ADDONHELP.String.Text
-#, fuzzy
 msgid  "Add-~On Help"
 msgstr "உபரி உதவி"
 
@@ -2594,108 +2472,96 @@ msgstr ""
 
 #: source/view/view.src#STR_NODEFPRINTER.String.Text
 msgid  "No default printer found.\nPlease choose a printer and try again."
-msgstr ""
+msgstr "முன்னிருந்த அச்சியந்திரம் கிடைக்கவில்லை.\nஒரு அச்சியந்திரத்தை தேர்ந்தெடுத்து திரும்பவும் முயற்சி செய்யவும்."
 
 #: source/view/view.src#STR_NOSTARTPRINTER.String.Text
 msgid  "Could not start printer.\nPlease check your printer configuration."
-msgstr ""
+msgstr "அச்சியந்திரத்தை துவக்க முடியவில்லை.\nஅச்சியந்திர அமைப்பை சரிபார்க்கவும்."
 
 #: source/view/view.src#STR_PRINTER_NOTAVAIL.String.Text
 msgid  "This document has been formatted for the printer $1. The specified printer is not available. \nDo you want to use the standard printer $2 ?"
-msgstr ""
+msgstr "இந்த ஆவணம் $1 அச்சியந்திரத்துக்காக வடிவமைக்கப்பட்டுள்ளது. குறிப்பிடப்பட்ட அச்சியந்திரம் இல்லை.\n$2 அச்சியந்திரத்தை பயன்படுத்த வேண்டுமா?"
 
 #: source/view/view.src#STR_PRINT_OPTIONS.String.Text
-#, fuzzy
 msgid  "Options..."
 msgstr "விருப்பங்கள்..."
 
 #: source/view/view.src#STR_PRINT_OPTIONS_TITLE.String.Text
-#, fuzzy
 msgid  "Printer Options"
 msgstr "அச்சுப்பொறி விருப்பங்கள்"
 
 #: source/view/view.src#STR_ERROR_PRINTER_BUSY.String.Text
-#, fuzzy
 msgid  "Printer busy"
 msgstr "அச்சுப்பொறி இயக்கத்திலுள்ளது"
 
 #: source/view/view.src#STR_ERROR_PRINT.String.Text
-#, fuzzy
 msgid  "Error while printing"
 msgstr "அச்சடிக்கும்போது பிழை"
 
 #: source/view/view.src#STR_PRINTING.String.Text
-#, fuzzy
 msgid  "Printing"
 msgstr "அச்சில்"
 
 #: source/view/view.src#STR_PAGE.String.Text
-#, fuzzy
 msgid  "Page "
 msgstr "பக்கம்"
 
+#: source/view/view.src#STR_ERROR_SAVE_TEMPLATE.String.Text
+msgid  "Error saving template "
+msgstr " படிமஅச்சை சேமித்தலில் பிழை"
+
 #: source/view/view.src#STR_READONLY.String.Text
-#, fuzzy
 msgid  " (read-only)"
 msgstr " (வாசிக்க-மட்டும்)"
 
 #: source/view/view.src#STR_PRINT_NEWORI.String.Text
 msgid  "The page size and orientation have been modified.\nWould you like to save the new settings in the\nactive document?"
-msgstr ""
+msgstr "The page size and orientation have been modified.\nWould you like to save the new settings in the\nactive document?"
 
 #: source/view/view.src#STR_PRINT_NEWSIZE.String.Text
 msgid  "The page size has been modified.\nShould the new settings be saved\nin the active document?"
-msgstr ""
+msgstr "பக்க அளவும் இடமும் மாற்றப்பட்டது.\nநடப்பு ஆவணத்தில் புதிய \nஅமைப்புகளை சேமிக்கவேண்டுமா?"
 
 #: source/view/view.src#STR_PRINT_NEWORISIZE.String.Text
 msgid  "The page size and orientation have been modified.\nWould you like to save the new settings in the\nactive document?"
-msgstr ""
+msgstr "The page size and orientation have been modified.\nWould you like to save the new settings in the\nactive document?"
 
 #: source/view/view.src#STR_PREVIEW_DOCINFO.String.Text
-msgid  "<html><body BGCOLOR="#c0c0c0"><font FACE="Arial"><dl><dt><b>Title:</b><dd>$(TITEL)<dt><b>Subject:</b><dd>$(THEME)<dt><b>Keywords:</b><dd>$(KEYWORDS)<dt><b>Description:</b><dd>$(TEXT)</dl></font></body></html>"
-msgstr ""
+msgid  "<html><body BGCOLOR=\"#c0c0c0\"><font FACE=\"Arial\"><dl><dt><b>Title:</b><dd>$(TITEL)<dt><b>Subject:</b><dd>$(THEME)<dt><b>Keywords:</b><dd>$(KEYWORDS)<dt><b>Description:</b><dd>$(TEXT)</dl></font></body></html>"
+msgstr "<html><body BGCOLOR=\"#c0c0c0\"><font FACE=\"Arial\"><dl><dt><b>தலைப்பு:</b><dd>$(TITEL)<dt><b>பொருள்:</b><dd>$(THEME)<dt><b>முக்கிய வார்த்தைகள்:</b><dd>$(KEYWORDS)<dt><b>விவரம்:</b><dd>$(TEXT)</dl></font></body></html>"
 
 #: source/view/view.src#STR_PREVIEW_NODOCINFO.String.Text
-msgid  "<HTML><BODY BGCOLOR="#c0c0c0"><BR><BR><P><FONT FACE="Arial"><B>No document properties found.</B></FONT></P></BODY></HTML>"
-msgstr ""
+msgid  "<HTML><BODY BGCOLOR=\"#c0c0c0\"><BR><BR><P><FONT FACE=\"Arial\"><B>No document properties found.</B></FONT></P></BODY></HTML>"
+msgstr "<HTML><BODY BGCOLOR=\"#c0c0c0\"><BR><BR><P><FONT FACE=\"Arial\"><B>No document properties found.</B></FONT></P></BODY></HTML>"
 
 #: source/view/view.src#MSG_CANT_CLOSE.InfoBox.Message
 msgid  "The document cannot be closed because a\n print job is being carried out."
-msgstr ""
+msgstr "அச்சடிக்கும் வேலை நடந்துக் கொண்டிருப்பதால் ஆவணத்தை மூட இயலவில்லை."
+
+#: source/view/view.src#DLG_PRINTMONITOR_TEXT.#define.Text
+msgid  "Print Monitor"
+msgstr "அச்சுப்பொறி கண்கணிப்பான்"
 
 #: source/view/view.src#DLG_PRINTMONITOR.FT_PRINTING.FixedText.Text
-#, fuzzy
 msgid  "is being printed on"
 msgstr "அச்சிடப்படுகிறது"
 
 #: source/view/view.src#DLG_PRINTMONITOR.STR_FT_PREPARATION.String.Text
-#, fuzzy
 msgid  "is being prepared for printing"
 msgstr "அச்சிடுவதற்கு தயாராக உள்ளது"
 
 #: source/view/view.src#MSG_ERROR_SEND_MAIL.InfoBox.Message
 msgid  "An error occurred in sending the message. Possible errors could be a missing user account or a defective setup.\nPlease check the %PRODUCTNAME settings or your e-mail program settings."
-msgstr ""
+msgstr "செய்தியை அனுப்பும்போது பிழை. பயனீட்டாளர் கணக்கு அல்லது பழுதடைந்த அமைப்பு பிழைகளாக இருக்கலாம். %PRODUCTNAME அமைப்புகள் அல்லது உங்கள் மின் அஞ்சல் நிரலி அமைப்புகளை சரிபார்க்கவும்."
 
 #: source/view/view.src#MSG_QUERY_OPENASTEMPLATE.QueryBox.Message
 msgid  "This document cannot be edited, possibly due to missing access rights. Do you want to edit a copy of the document?"
-msgstr ""
+msgstr "தவறான அணுக்க முறைமையினால், \n ஆவணத்தை பதிப்பித்தலுக்கு திறக்கவியலாது.இதை புதிய ஆவணங்களை\n உருவாக்க படிம அச்சாகப் பயன்படுத்தவா?"
 
 #: source/view/view.src#STR_REPAIREDDOCUMENT.String.Text
-#, fuzzy
 msgid  " (repaired document)"
 msgstr "பழுதுபார்க்கப்பட்ட ஆவணம்"
 
 #: source/view/view.src#MSG_ERROR_NO_WEBBROWSER_FOUND.ErrorBox.Message
 msgid  "%PRODUCTNAME could not find a web browser on your system. Please check your Desktop Preferences or install a web browser (for example, Mozilla) in the default  location requested during the browser installation."
-msgstr ""
-
-#: source/view/view.src#DLG_PRINTMONITOR_TEXT.#define.Text
-#, fuzzy
-msgid  "Print Monitor"
-msgstr "அச்சுப்பொறி கண்கணிப்பான்"
-
-#: source/view/view.src#STR_ERROR_SAVE_TEMPLATE.String.Text
-#, fuzzy
-msgid  "Error saving template "
-msgstr " படிமஅச்சை சேமித்தலில் பிழை"
+msgstr "%PRODUCTNAME could not find a web browser on your system. Please check your Desktop Preferences or install a web browser (for example, Mozilla) in the default  location requested during the browser installation."

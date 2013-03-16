@@ -97,7 +97,7 @@ msgstr "پۈتۈك ئېچىلغان."
 
 #: source/appl/app.src#MSG_ERR_NO_WEBBROWSER_FOUND.ErrorBox.Message
 msgid  "%PRODUCTNAME could not find a web browser on your system. Please check your Desktop Preferences or install a web browser (for example, Mozilla) in the default  location requested during the browser installation."
-msgstr ""
+msgstr "%PRODUCTNAME سىستېمىدىن توركۆرگۈ تاپالمىدى. ئۈستەل يۈزى مايىللىقىنى تەكشۈرۈڭ ياكى توركۆرگۈ قاچىلاش جەريانىدا توركۆرگۈ (مەسىلەن، Mozilla)نى كۆڭۈلدىكى ئورۇنغا قاچىلاڭ."
 
 #: source/appl/app.src#GID_INTERN.String.Text
 msgid  "Internal"
@@ -205,7 +205,7 @@ msgstr "كونتروللار"
 
 #: source/appl/app.src#MSG_CANT_QUIT.InfoBox.Message
 msgid  "The application cannot be terminated at the moment.\nPlease wait until all print jobs and/or\nOLE actions have finished and close all dialogs."
-msgstr ""
+msgstr "بۇ قوللىنىشچان پروگراممىنى ھازىر ئاخىرلاشتۇرالمايدۇ.\n بېسىش ۋەزىپىسى ياكى OLE قوزغىتىش ھالىتى ئاخىرلاشقىچە ساقلاڭ، \nئاندىن ھەممە سۆزلىشىش رامكىسىنى يېپىڭ."
 
 #: source/appl/app.src#STR_ISMODIFIED.String.Text
 msgid  "Do you want to save the changes to %1?"
@@ -237,7 +237,7 @@ msgstr "ئىقتىدار بالداق"
 
 #: source/appl/app.src#RID_SPECIALCONFIG_ERROR.String.Text
 msgid  "An error has occurred in the special configuration.\nPlease contact your administrator."
-msgstr ""
+msgstr "ئالاھىدە سەپلىمە ھۆججەتتە خاتالىق بايقالدى.\nباشقۇرغۇچىڭىز بىلەن ئالاقىلىشىڭ."
 
 #: source/appl/app.src#STR_QUICKSTART_EXIT.String.Text
 msgid  "Exit Quickstarter"
@@ -288,12 +288,12 @@ msgid  "DDE link to % for % area % are not available."
 msgstr "% كۆرسەتكەن % ئۇلىنىشىغا ئېرىشەلمىدى،  دائىرىسى %"
 
 #: source/appl/app.src#RID_SECURITY_WARNING_HYPERLINK.WarningBox.Message
-msgid  "This hyperlink is going to open "%s". Do you want to proceed?"
-msgstr ""
+msgid  "This hyperlink is going to open \"%s\". Do you want to proceed?"
+msgstr "بۇ ئۇلانما \"%s\" نى ئاچىدۇ. داۋاملاشتۇرامسىز؟"
 
 #: source/appl/app.src#RID_SECURITY_WARNING_NO_HYPERLINKS.WarningBox.Message
 msgid  "For security reasons, the hyperlink cannot be executed.\nThe stated address will not be opened."
-msgstr ""
+msgstr "بىخەتەرلىك سەۋەبىدىن، بۇ ئۇلانمىنى ئىجرا قىلالمايدۇ.\nبەلگىلەنگەن ئادرېسنى ئاچالمايدۇ."
 
 #: source/appl/app.src#RID_SECURITY_WARNING_TITLE.String.Text
 msgid  "Security Warning"
@@ -301,15 +301,15 @@ msgstr "بىخەتەرلىك ئاگاھلاندۇرۇش"
 
 #: source/appl/app.src#RID_XMLSEC_QUERY_LOSINGSIGNATURE.QueryBox.Message
 msgid  "Saving will remove all existing signatures.\nDo you want to continue saving the document?"
-msgstr ""
+msgstr "ساقلانسا نۆۋەتتىكى ئىمزا ئۆچۈرۈلىدۇ.\nپۈتۈكنى ساقلاۋېرەمسىز؟"
 
 #: source/appl/app.src#RID_XMLSEC_QUERY_SAVEBEFORESIGN.QueryBox.Message
 msgid  "The document has to be saved before it can be signed.\nDo you want to save the document?"
-msgstr ""
+msgstr "بۇ پۈتۈكنى ساقلىغاندىن كېيىن ئاندىن ئىمزا قويغىلى بولىدۇ. \nپۈتۈكنى ساقلامسىز؟"
 
 #: source/appl/app.src#RID_XMLSEC_INFO_WRONGDOCFORMAT.InfoBox.Message
 msgid  "This document must be saved in OpenDocument file format before it can be digitally signed."
-msgstr ""
+msgstr "بۇ پۈتۈكنى ئالدى بىلەن OpenDocument فورماتىدا ساقلاپ ئاندىن ئىمزا قويغىلى بولىدۇ."
 
 #: source/appl/app.src#RID_XMLSEC_DOCUMENTSIGNED.String.Text
 msgid  " (Signed)"
@@ -341,7 +341,7 @@ msgstr "گرافىكقا ئۇلا"
 
 #: source/appl/app.src#STR_ERRUNOEVENTBINDUNG.String.Text
 msgid  "An appropriate component method %1\ncould not be found.\n\nCheck spelling of method name."
-msgstr ""
+msgstr "مۇۋاپىق بولغان بۆلەك ئۇسۇلى %1 نى \nتاپالمىدى.\n\nئۇسۇل ئاتىنىڭ ئىملاسىنى تەكشۈرۈڭ."
 
 #: source/appl/app.src#RID_SVXSTR_GRFILTER_OPENERROR.String.Text
 msgid  "Graphics file cannot be opened"
@@ -509,11 +509,11 @@ msgstr "قوزغالغاندا %PRODUCTNAME %MODULENAME ياردەمنى كۆر�
 
 #: source/bastyp/fltfnc.src#STR_FILTER_NOT_INSTALLED.String.Text
 msgid  "The selected filter $(FILTER) has not been installed.\nWould you like to do this now?"
-msgstr ""
+msgstr "تاللىغان سۈزگۈچ $(FILTER) تېخى قاچىلانمىغان.\nھازىر قاچىلامسىز؟"
 
 #: source/bastyp/fltfnc.src#STR_FILTER_CONSULT_SERVICE.String.Text
 msgid  "The selected filter $(FILTER) is not included in your edition.\nYou can find information about orders on our homepage."
-msgstr ""
+msgstr "بۇ نەشرى سىز تاللىغان سۈزگۈچ $(FILTER) نى تېخى تەمىنلىمىگەن\nسىز تور بېتىمىزدىن يۇمشاق دېتال زاكاز قىلىش ئۇچۇرىنى ئوقۇڭ."
 
 #: source/dialog/printopt.src#TP_COMMONPRINTOPTIONS.GB_REDUCE.FixedLine.Text
 msgid  "Reduce print data"
@@ -572,6 +572,26 @@ msgid  "Reso~lution"
 msgstr "پەرق ئېتىش نىسبىتى(~L)"
 
 #: source/dialog/printopt.src#TP_COMMONPRINTOPTIONS.LB_REDUCEBITMAPS_RESOLUTION.0.StringList.item
+msgid  "72 DPI"
+msgstr "72 DPI"
+
+#: source/dialog/printopt.src#TP_COMMONPRINTOPTIONS.LB_REDUCEBITMAPS_RESOLUTION.0.StringList.item
+msgid  "96 DPI"
+msgstr "96 DPI"
+
+#: source/dialog/printopt.src#TP_COMMONPRINTOPTIONS.LB_REDUCEBITMAPS_RESOLUTION.0.StringList.item
+msgid  "150 DPI (Fax)"
+msgstr "(فاكس)150 DPI"
+
+#: source/dialog/printopt.src#TP_COMMONPRINTOPTIONS.LB_REDUCEBITMAPS_RESOLUTION.0.StringList.item
+msgid  "200 DPI (default)"
+msgstr "(كۆڭۈلدىكى)200 DPI"
+
+#: source/dialog/printopt.src#TP_COMMONPRINTOPTIONS.LB_REDUCEBITMAPS_RESOLUTION.0.StringList.item
+msgid  "300 DPI"
+msgstr "300 DPI"
+
+#: source/dialog/printopt.src#TP_COMMONPRINTOPTIONS.LB_REDUCEBITMAPS_RESOLUTION.0.StringList.item
 msgid  "600 DPI"
 msgstr "600 DPI"
 
@@ -605,7 +625,7 @@ msgstr "دىققەت"
 
 #: source/dialog/printopt.src#RID_WARN_PRINTTRANSPARENCY.FT_PRINTTRANSWARN.FixedText.Text
 msgid  "Your document contains transparent objects.\nThis may lead to longer printing time on certain\nprinters. Should the aspect of transparency\nbe reduced?"
-msgstr ""
+msgstr "پۈتۈكىڭىزدە سۈزۈك ئوبيېكت بار.\nبۇ نۇرغۇن پرىنتېرلارنىڭ ئۇزۇن ۋاقىتتا\nبېسىش ۋەزىپىسىنى تاماملىشىنى كەلتۈرۈپ چىقىرىدۇ.\nپرىنتېر بۇ سۈزۈك ئوبيېكتلارغا پەرۋا قىلمىسۇنمۇ؟"
 
 #: source/dialog/printopt.src#RID_WARN_PRINTTRANSPARENCY.BTN_PRINTTRANS_YES.OKButton.Text
 msgid  "~Yes"
@@ -622,26 +642,6 @@ msgstr "ۋاز كەچ(~C)"
 #: source/dialog/printopt.src#RID_WARN_PRINTTRANSPARENCY.CBX_NOPRINTTRANSWARN.CheckBox.Text
 msgid  "~Do not show warning again"
 msgstr "ئاگاھلاندۇرۇشنى قايتا كۆرسەتمە(~D)"
-
-#: source/dialog/printopt.src#TP_COMMONPRINTOPTIONS.LB_REDUCEBITMAPS_RESOLUTION.0.StringList.item
-msgid  "72 DPI"
-msgstr "72 DPI"
-
-#: source/dialog/printopt.src#TP_COMMONPRINTOPTIONS.LB_REDUCEBITMAPS_RESOLUTION.0.StringList.item
-msgid  "96 DPI"
-msgstr "96 DPI"
-
-#: source/dialog/printopt.src#TP_COMMONPRINTOPTIONS.LB_REDUCEBITMAPS_RESOLUTION.0.StringList.item
-msgid  "150 DPI (Fax)"
-msgstr "(فاكس)150 DPI"
-
-#: source/dialog/printopt.src#TP_COMMONPRINTOPTIONS.LB_REDUCEBITMAPS_RESOLUTION.0.StringList.item
-msgid  "200 DPI (default)"
-msgstr "(كۆڭۈلدىكى)200 DPI"
-
-#: source/dialog/printopt.src#TP_COMMONPRINTOPTIONS.LB_REDUCEBITMAPS_RESOLUTION.0.StringList.item
-msgid  "300 DPI"
-msgstr "300 DPI"
 
 #: source/dialog/templdlg.src#RID_STYLECATALOG.ModalDialog.Text
 msgid  "Style Catalog"
@@ -733,7 +733,7 @@ msgstr "قوغدىما(~U)…"
 
 #: source/dialog/securitypage.src#TP_DOCINFOSECURITY.STR_END_REDLINING_WARNING.String.Text
 msgid  "This action will exit the change recording mode.\nAny information about changes will be lost.\n\nExit change recording mode?\n\n"
-msgstr ""
+msgstr "بۇ مەشغۇلات خاتىرە ئۆزگەرتىش ھالىتىدىن چېكىنىدۇ.\nئۆزگەرتكەن مەزمۇن يوقىلىدۇ.\n\nخاتىرە ئۆزگەرتىش ھالىتىدىن چېكىنەمسىز؟\n\n"
 
 #: source/dialog/securitypage.src#RID_SFX_PROTECT_RECORDS.String.Text
 msgid  "Protect Records"
@@ -1116,8 +1116,8 @@ msgid  "to frame"
 msgstr "كاندۇكقا"
 
 #: source/dialog/dinfdlg.src#TP_DOCINFORELOAD.STR_FORWARD_ERRMSSG.String.Text
-msgid  "If you select the option "%PLACEHOLDER%", you must enter a URL."
-msgstr ""
+msgid  "If you select the option \"%PLACEHOLDER%\", you must enter a URL."
+msgstr "ئەگەر \"%PLACEHOLDER%\" تاللانمىنى تاللىسىڭىز، چوقۇم URL دىن بىرنى كىرگۈزۈڭ."
 
 #: source/dialog/dinfdlg.src#TP_CUSTOMPROPERTIES.FT_PROPERTIES.FixedText.Text
 msgid  "~Properties"
@@ -1305,7 +1305,7 @@ msgstr "خاسلىق چىقىرىۋەت"
 
 #: source/dialog/dinfdlg.src#SFX_QB_WRONG_TYPE.QueryBox.Message
 msgid  "The value entered does not match the specified type.\nThe value will be stored as text."
-msgstr ""
+msgstr "كىرگۈزگەن قىممەت بىلەن بەلگىلەنگەن تىپ ماسلاشمىدى\nبۇ قىممەت تېكست سۈپىتىدە ساقلىنىدۇ."
 
 #: source/dialog/dinfdlg.src#SID_DOCINFO.TabDialog.Text
 msgid  "Properties of "
@@ -1397,7 +1397,7 @@ msgstr "ماكرو خاتىرىلە"
 
 #: source/dialog/recfloat.src#STR_MACRO_LOSS.String.Text
 msgid  "Do you really want to cancel the recording? Any steps recorded up to this point will be lost."
-msgstr ""
+msgstr "خاتىرىلەشتىن راستىنلا ۋاز كېچەمسىز؟ نۆۋەتتە خاتىرىلەنگەن ھەممە خاتىرە مەزمۇنى يوقىلىدۇ."
 
 #: source/dialog/recfloat.src#STR_CANCEL_RECORDING.String.Text
 msgid  "Cancel Recording"
@@ -1405,7 +1405,7 @@ msgstr "خاتىرىلەشنى توختات"
 
 #: source/dialog/mailwindow.src#RID_ERRBOX_MAIL_CONFIG.ErrorBox.MESSAGE
 msgid  "%PRODUCTNAME was unable to find a working e-mail configuration. Please save this document locally instead and attach it from within your e-mail client."
-msgstr ""
+msgstr "%PRODUCTNAME ئىناۋەتلىك ئېلخەت تەڭشىكىنى تاپالمىدى. بۇ پۈتۈكنى يەرلىك دىسكىدا ساقلاپ، ئېلخەت خېرىدار پروگراممىڭىزدا قوشۇمچە سۈپىتىدە قوشۇڭ."
 
 #: source/dialog/dialog.src#STR_RESET.String.Text
 msgid  "~Reset"
@@ -1429,11 +1429,11 @@ msgstr "بۇ ئۇسلۇب مەۋجۇد ئەمەس."
 
 #: source/dialog/dialog.src#MSG_TABPAGE_INVALIDPARENT.InfoBox.Message
 msgid  "This Style cannot be used as a base Style,\nbecause it would result in a recursive reference."
-msgstr ""
+msgstr "بۇ ئۇسلۇبنى ئاساسىي ئۇسلۇب قىلغىلى بولمايدۇ،\nبولمىسا قايتلانما نەقىلنى كەلتۈرۈپ چىقىرىدۇ."
 
 #: source/dialog/dialog.src#MSG_POOL_STYLE_NAME.InfoBox.Message
 msgid  "Name already exists as a default Style.\nPlease choose another name."
-msgstr ""
+msgstr "بۇ كۆڭۈلدىكى ئۇسلۇب ئاتى.\nباشقا ئاتنى تاللاڭ."
 
 #: source/dialog/dialog.src#STR_DELETE_STYLE.String.Text
 msgid  "Do you really want to delete Style $1?"
@@ -1489,7 +1489,7 @@ msgstr "ۋەزىپە"
 
 #: source/dialog/alienwarn.src#RID_DLG_ALIEN_WARNING.FT_INFOTEXT.FixedText.Text
 msgid  "This document may contain formatting or content that cannot be saved in the %FORMATNAME file format. Do you want to save the document in this format anyway?\n\nUse the latest ODF file format and be sure all formatting and content is saved correctly."
-msgstr ""
+msgstr "بۇ پۈتۈكتە %FORMATNAME ھۆججەت فورماتىدا ساقلىغىلى بولمايدىغان مەزمۇن ياكى فورمات مەۋجۇد. پۈتۈكنى يەنىلا مۇشۇ فورماتتا ساقلاۋېرەمسىز؟\n\nئەڭ يېڭى ODF ھۆججەت فورماتىدا ھەممە فورمات ۋە مەزمۇننى توغرا ساقلىغىلى بولىدۇ."
 
 #: source/dialog/alienwarn.src#RID_DLG_ALIEN_WARNING.PB_NO.OKButton.Text
 msgid  "~Keep Current Format"
@@ -1581,27 +1581,27 @@ msgstr "باشقۇر(~O)…"
 
 #: source/doc/doc.src#MSG_CONFIRM_FILTER.QueryBox.Message
 msgid  "Saving in external formats may have caused\n information loss. Do you still want to close?"
-msgstr ""
+msgstr "ھۆججەت سىرتقى فورماتتا ساقلانسا ئۇچۇر يوقىلىشى مۇمكىن.\nبۇ ھۆججەتنى ياپامسىز؟"
 
 #: source/doc/doc.src#MSG_CONFIRM_OVERWRITE_TEMPLATE.QueryBox.Message
 msgid  "Name already in use.\nDo you want to overwrite document template?"
-msgstr ""
+msgstr "بۇ ئات ئىشلىتىلگەن.\nبۇ پۈتۈك قېلىپىنى قاپلىۋېتەمسىز؟"
 
 #: source/doc/doc.src#STR_DELETE_REGION.String.Text
-msgid  "Are you sure you want to delete the region "$1"?"
-msgstr ""
+msgid  "Are you sure you want to delete the region \"$1\"?"
+msgstr "دائىرە\"$1\"نى راستىنلا ئۆچۈرەمسىز؟"
 
 #: source/doc/doc.src#STR_DELETE_TEMPLATE.String.Text
-msgid  "Are you sure you want to delete the entry "$1"?"
-msgstr ""
+msgid  "Are you sure you want to delete the entry \"$1\"?"
+msgstr "تۈر\"$1\"نى راستىنلا ئۆچۈرەمسىز؟"
 
 #: source/doc/doc.src#MSG_REGION_NOTEMPTY.QueryBox.Message
 msgid  "The category is not empty.\nDelete anyway?"
-msgstr ""
+msgstr "بۇ دائىرە بوش ئەمەس.\nئۆچۈرۈۋېتەمسىز؟"
 
 #: source/doc/doc.src#STR_QUERY_SAVE_DOCUMENT.String.Text
-msgid  "The document "$(DOC)" has been modified.\nDo you want to save your changes?"
-msgstr ""
+msgid  "The document \"$(DOC)\" has been modified.\nDo you want to save your changes?"
+msgstr "\"$(DOC)\" پۈتۈك ئۆزگەرتىلدى.\nئۆزگەرتكەننى ساقلامسىز؟"
 
 #: source/doc/doc.src#STR_STYLES.String.Text
 msgid  "Styles"
@@ -1648,16 +1648,16 @@ msgid  "Templates"
 msgstr "قېلىپ"
 
 #: source/doc/doc.src#STR_ERROR_COPY_TEMPLATE.String.Text
-msgid  "Error copying template "$1". \nA template with this name may already exist."
-msgstr ""
+msgid  "Error copying template \"$1\". \nA template with this name may already exist."
+msgstr "قېلىپ\"$1\"نى كۆچۈرگەندە خاتالىق كۆرۈلدى.\nئوخشاش ئاتلىق قېلىپ مەۋجۇد بولۇشى مۇمكىن."
 
 #: source/doc/doc.src#STR_ERROR_DELETE_TEMPLATE.String.Text
-msgid  "The template "$1" can not be deleted."
-msgstr ""
+msgid  "The template \"$1\" can not be deleted."
+msgstr "قېلىپ\"$1\"نى ئۆچۈرەلمەيدۇ."
 
 #: source/doc/doc.src#STR_ERROR_MOVE_TEMPLATE.String.Text
-msgid  "Error moving template "$1"."
-msgstr ""
+msgid  "Error moving template \"$1\"."
+msgstr "قېلىپ\"$1\"نى يۆتكىگەندە خاتالىق كۆرۈلدى."
 
 #: source/doc/doc.src#MSG_ERROR_RESCAN.ErrorBox.Message
 msgid  "The update could not be saved."
@@ -1681,11 +1681,11 @@ msgstr "ئاتتىن بىرنى بەلگىلەڭ."
 
 #: source/doc/doc.src#MSG_ERROR_UNIQ_NAME.ErrorBox.Message
 msgid  "Please specify a unique name.\nEntries must not be case specific."
-msgstr ""
+msgstr "بىردىنبىر ئاتتىن بىرنى بەلگىلەڭ.\nتۈردە چوڭ كىچىك يېزىلىش پەرقلەندۈرۈلمەيدۇ."
 
 #: source/doc/doc.src#STR_QUERY_DEFAULT_TEMPLATE.String.Text
-msgid  "Should the template "$(TEXT)" become the default template?"
-msgstr ""
+msgid  "Should the template \"$(TEXT)\" become the default template?"
+msgstr "قېلىپ\"$(TEXT)\"نى كۆڭۈلدىكى قېلىپ قىلىپ تەڭشەمسىز؟"
 
 #: source/doc/doc.src#MSG_QUERY_RESET_DEFAULT_TEMPLATE.QueryBox.Message
 msgid  "Do you want to reset the default template?"
@@ -1693,7 +1693,7 @@ msgstr "كۆڭۈلدىكى قېلىپقا ئەسلىگە قايتۇرامسىز�
 
 #: source/doc/doc.src#MSG_TEMPLATE_DIR_NOT_EXIST.InfoBox.Message
 msgid  "Template directory\n$(DIR)\ndoes not exist."
-msgstr ""
+msgstr "قېلىپ مۇندەرىجە\n$(DIR)\nمەۋجۇد ئەمەس."
 
 #: source/doc/doc.src#MSG_DOCINFO_CANTREAD.InfoBox.Message
 msgid  "Document info cannot be read."
@@ -1705,7 +1705,7 @@ msgstr "تاللانغان ھۆججەتنىڭ فورماتى خاتا."
 
 #: source/doc/doc.src#STR_QUERY_MUSTOWNFORMAT.String.Text
 msgid  "Documents cannot be saved in $(FORMAT) format. Do you\nwant to save your changes using the $(OWNFORMAT) format?"
-msgstr ""
+msgstr "پۈتۈك $(FORMAT) فورماتىدا ساقلانمايدۇ.\nئۆزگەرتكەننى $(OWNFORMAT) فورماتىدا ساقلامسىز؟"
 
 #: source/doc/doc.src#STR_SAVEDOC.String.Text
 msgid  "~Save"
@@ -1744,8 +1744,8 @@ msgid  "%PRODUCTNAME Basic libraries"
 msgstr "%PRODUCTNAME Basic ئامبىرى"
 
 #: source/doc/doc.src#RID_STR_WARNSTYLEOVERWRITE.String.Text
-msgid  "Should the "$(ARG1)" Style be replaced?"
-msgstr ""
+msgid  "Should the \"$(ARG1)\" Style be replaced?"
+msgstr "ئۇسلۇب \"$(ARG1)\" نى ئالماشتۇرامسىز؟"
 
 #: source/doc/doc.src#STR_DOC_LOADING.String.Text
 msgid  "Loading Document"
@@ -1769,7 +1769,7 @@ msgstr "ئۈزۈلدى"
 
 #: source/doc/doc.src#MSG_OPEN_READONLY.QueryBox.Message
 msgid  "Document cannot be opened for editing.\nDo you want to open it as read-only?"
-msgstr ""
+msgstr "پۈتۈكنى تەھرىرلەش ھالىتىدە ئاچالمايسىز.\nئوقۇشقىلا بولىدىغان ھالەتتە ئاچامسىز؟"
 
 #: source/doc/doc.src#STR_EDIT.String.Text
 msgid  "Edit"
@@ -1792,12 +1792,12 @@ msgid  "%PRODUCTNAME Frame Document"
 msgstr "%PRODUCTNAME كاندۇك پۈتۈك"
 
 #: source/doc/doc.src#STR_TEMPL_MOVED.String.Text
-msgid  "The template "$(TEMPLATE)" was not found at the original location. A template with the same name exists at "$(FOUND)". Should this template be used in the future when comparing?"
-msgstr ""
+msgid  "The template \"$(TEMPLATE)\" was not found at the original location. A template with the same name exists at \"$(FOUND)\". Should this template be used in the future when comparing?"
+msgstr "\"$(TEMPLATE)\" قېلىپ ئەسلىدىكى ئورنىدىن تېپىلمىدى.  ئوخشاش ئاتتىكى قېلىپ \"$(FOUND)\" مەۋجۇد. كېيىن سېلىشتۇرغاندا بۇ قېلىپنى ئىشلەتسۇنمۇ؟"
 
 #: source/doc/doc.src#STR_TEMPL_RESET.String.Text
-msgid  "The template "$(TEMPLATE)" has not been found. Should the template be looked for the next time the document is opened ?"
-msgstr ""
+msgid  "The template \"$(TEMPLATE)\" has not been found. Should the template be looked for the next time the document is opened ?"
+msgstr "\"$(TEMPLATE)\" قېلىپ تېپىلمىدى. كېيىنكى قېتىم پۈتۈك ئاچقاندا ئۇنى ئىزدىسۇنمۇ؟"
 
 #: source/doc/doc.src#STR_AUTOMATICVERSION.String.Text
 msgid  "Automatically saved version"
@@ -1865,7 +1865,7 @@ msgstr "ئىجرا قىلما"
 
 #: source/doc/doc.src#FT_CANCEL.String.Text
 msgid  "According to the security settings, the macros in this document should not be run. Do you want to run them anyway?"
-msgstr ""
+msgstr "نۆۋەتتىكى بىخەتەرلىك تەڭشىكىگە ئاساسەن، بۇ پۈتۈكتىكى ماكرونى ئىجرا قىلماڭ. بۇ ماكرونى ئىجرا قىلامسىز؟"
 
 #: source/doc/doc.src#FT_OK.String.Text
 msgid  "Do you want to allow these macros to be run?"
@@ -1893,7 +1893,7 @@ msgstr "ھۆججەت فورماتى:"
 
 #: source/doc/doc.src#STR_HIDDENINFO_CONTAINS.String.Text
 msgid  "This document contains:\n\n"
-msgstr ""
+msgstr "بۇ پۈتۈك مەزمۇنىدا:\n\n"
 
 #: source/doc/doc.src#STR_HIDDENINFO_RECORDCHANGES.String.Text
 msgid  "Recorded changes"
@@ -1933,7 +1933,7 @@ msgstr "PDF ھۆججىتى قۇرۇشنى داۋاملاشتۇرامسىز؟"
 
 #: source/doc/doc.src#STR_NEW_FILENAME_SAVE.String.Text
 msgid  "If you do not want to overwrite the original document, you should save your work under a new filename."
-msgstr ""
+msgstr "ئەگەر ئەسلى پۈتۈكنى قاپلاشنى خالىمىسىڭىز ئۇنداقتا ھۆججەتنى يېڭى ئات بىلەن ساقلاڭ."
 
 #: source/doc/doc.src#STR_ERROR_DELETE_TEMPLATE_DIR.String.Text
 msgid  "Some template files are protected and can not be deleted."
@@ -1949,15 +1949,15 @@ msgstr " (ھەمبەھىر)"
 
 #: source/doc/doc.src#STR_XMLSEC_ODF12_EXPECTED.String.Text
 msgid  "The document format version is set to ODF 1.1 (OpenOffice.org 2.x) in Tools-Options-Load/Save-General. Signing documents requires ODF 1.2 (OpenOffice.org 3.x)."
-msgstr ""
+msgstr "قورال - تاللانما - يۈكلە/ساقلا - ئادەتتىكى كۆزنىكىدە پۈتۈك فورمات نەشرى ODF 1.1 (OpenOffice.org 2.x) گە تەڭشەلگەن. ئىمزالىق پۈتۈك ODF 1.2 (OpenOffice.org 3.x) تەلەپ قىلىدۇ."
 
 #: source/doc/doc.src#MSG_XMLSEC_QUERY_SAVESIGNEDBEFORESIGN.QueryBox.Message
 msgid  "The document has to be saved before it can be signed. Saving the document removes all present signatures.\nDo you want to save the document?"
-msgstr ""
+msgstr "بۇ پۈتۈكنى ساقلىغاندىن كېيىن ئاندىن ئىمزا قويغىلى بولىدۇ. پۈتۈك ساقلانسا ھازىرقى ھەممە ئىمزا ئۆچۈرۈلىدۇ.\nپۈتۈكنى ساقلامسىز؟"
 
 #: source/doc/doc.src#STR_QRYTEMPL_MESSAGE.String.Text
 msgid  "The template '$(ARG1)' on which this document is based, has been modified. Do you want to update style based formattings according to the modified template?"
-msgstr ""
+msgstr "بۇ پۈتۈك ئاساس قىلغان'$(ARG1)' قېلىپ ئۆزگەرتىلدى. ئۆزگەرتىلگەندىن كېيىنكى قېلىپ بويىچە ئۇسلۇب ئاساسىدىكى فورماتنى ئۆزگەرتەمسىز؟"
 
 #: source/doc/doc.src#STR_QRYTEMPL_UPDATE_BTN.String.Text
 msgid  "~Update Styles"
@@ -1984,8 +1984,16 @@ msgid  "~Address Book..."
 msgstr "ئادرېس دەپتىرى(~A)…"
 
 #: source/doc/docvor.src#DLG_ORGANIZE.LB_LEFT_TYP.Default.StringList.item
+msgid  "Templates"
+msgstr "قېلىپ"
+
+#: source/doc/docvor.src#DLG_ORGANIZE.LB_LEFT_TYP.Default.StringList.item
 msgid  "Documents"
 msgstr "پۈتۈكلەر"
+
+#: source/doc/docvor.src#DLG_ORGANIZE.LB_RIGHT_TYP.Default.StringList.item
+msgid  "Templates"
+msgstr "قېلىپ"
 
 #: source/doc/docvor.src#DLG_ORGANIZE.LB_RIGHT_TYP.Default.StringList.item
 msgid  "Documents"
@@ -2034,14 +2042,6 @@ msgstr "كۆڭۈلدىكى قېلىپ قىلىپ تەڭشە"
 #: source/doc/docvor.src#DLG_ORGANIZE.BTN_EDIT.ID_RESET_DEFAULT_TEMPLATE.MenuItem.Text
 msgid  "Reset Default Template"
 msgstr "كۆڭۈلدىكى تەڭشەككە قايتۇر"
-
-#: source/doc/docvor.src#DLG_ORGANIZE.LB_LEFT_TYP.Default.StringList.item
-msgid  "Templates"
-msgstr "قېلىپ"
-
-#: source/doc/docvor.src#DLG_ORGANIZE.LB_RIGHT_TYP.Default.StringList.item
-msgid  "Templates"
-msgstr "قېلىپ"
 
 #: source/doc/new.src#DLG_NEW_FILE.ModalDialog.Text
 msgid  "New"
@@ -2153,15 +2153,15 @@ msgstr "مەنىداش سۆزلەر لۇغىتى(~T)…"
 
 #: source/view/view.src#STR_NODEFPRINTER.String.Text
 msgid  "No default printer found.\nPlease choose a printer and try again."
-msgstr ""
+msgstr "كۆڭۈلدىكى پرىنتېر تېپىلمىدى.\nپرىنتېردىن بىرنى تاللاپ ئاندىن قايتا سىناڭ."
 
 #: source/view/view.src#STR_NOSTARTPRINTER.String.Text
 msgid  "Could not start printer.\nPlease check your printer configuration."
-msgstr ""
+msgstr "پرىنتېرنى قوزغىتالمىدى.\nپرىنتېر سەپلىمىسىنى تەكشۈرۈڭ."
 
 #: source/view/view.src#STR_PRINTER_NOTAVAIL.String.Text
 msgid  "This document has been formatted for the printer $1. The specified printer is not available. \nDo you want to use the standard printer $2 ?"
-msgstr ""
+msgstr "بۇ پۈتۈك فورماتى مەخسۇس $1 پرىنتېر ئۈچۈن تەڭشەلگەن.\nئەمما بۇ پرىنتېر مەۋجۇد ئەمەس. كۆڭۈلدىكى $2 پرىنتېرنى ئىشلىتەمسىز؟"
 
 #: source/view/view.src#STR_PRINT_OPTIONS.String.Text
 msgid  "Options..."
@@ -2187,33 +2187,41 @@ msgstr "بېسىۋاتىدۇ"
 msgid  "Page "
 msgstr "بەت "
 
+#: source/view/view.src#STR_ERROR_SAVE_TEMPLATE.String.Text
+msgid  "Error saving template "
+msgstr "قېلىپ ساقلىغاندا خاتالىق كۆرۈلدى "
+
 #: source/view/view.src#STR_READONLY.String.Text
 msgid  " (read-only)"
 msgstr " (ئوقۇشقىلا بولىدۇ)"
 
 #: source/view/view.src#STR_PRINT_NEWORI.String.Text
 msgid  "The page size and orientation have been modified.\nWould you like to save the new settings in the\nactive document?"
-msgstr ""
+msgstr "بەت چوڭلۇقى ۋە بەت يۆنىلىشى ئۆزگەرتىلدى.\nيېڭى تەڭشەكنى ئاكتىپ پۈتۈككە\n ساقلامسىز؟"
 
 #: source/view/view.src#STR_PRINT_NEWSIZE.String.Text
 msgid  "The page size has been modified.\nShould the new settings be saved\nin the active document?"
-msgstr ""
+msgstr "بەت چوڭلۇقى ئۆزگەرتىلدى.\nيېڭى تەڭشەكنى ئاكتىپ پۈتۈككە\n ساقلامسىز؟"
 
 #: source/view/view.src#STR_PRINT_NEWORISIZE.String.Text
 msgid  "The page size and orientation have been modified.\nWould you like to save the new settings in the\nactive document?"
-msgstr ""
+msgstr "بەت چوڭلۇقى ۋە بەت يۆنىلىشى ئۆزگەرتىلدى.\nيېڭى تەڭشەكنى ئاكتىپ پۈتۈككە\n ساقلامسىز؟"
 
 #: source/view/view.src#STR_PREVIEW_DOCINFO.String.Text
-msgid  "<html><body BGCOLOR="#c0c0c0"><font FACE="Arial"><dl><dt><b>Title:</b><dd>$(TITEL)<dt><b>Subject:</b><dd>$(THEME)<dt><b>Keywords:</b><dd>$(KEYWORDS)<dt><b>Description:</b><dd>$(TEXT)</dl></font></body></html>"
-msgstr ""
+msgid  "<html><body BGCOLOR=\"#c0c0c0\"><font FACE=\"Arial\"><dl><dt><b>Title:</b><dd>$(TITEL)<dt><b>Subject:</b><dd>$(THEME)<dt><b>Keywords:</b><dd>$(KEYWORDS)<dt><b>Description:</b><dd>$(TEXT)</dl></font></body></html>"
+msgstr "<html><body BGCOLOR=\"#c0c0c0\"><font FACE=\"Arial\"><dl><dt><b>ماۋزۇ:</b><dd>$(TITEL)<dt><b>تېما:</b><dd>$(THEME)<dt><b>ھالقىلىق سۆز:</b><dd>$(KEYWORDS)<dt><b>چۈشەندۈرۈش:</b><dd>$(TEXT)</dl></font></body></html>"
 
 #: source/view/view.src#STR_PREVIEW_NODOCINFO.String.Text
-msgid  "<HTML><BODY BGCOLOR="#c0c0c0"><BR><BR><P><FONT FACE="Arial"><B>No document properties found.</B></FONT></P></BODY></HTML>"
-msgstr ""
+msgid  "<HTML><BODY BGCOLOR=\"#c0c0c0\"><BR><BR><P><FONT FACE=\"Arial\"><B>No document properties found.</B></FONT></P></BODY></HTML>"
+msgstr "<HTML><BODY BGCOLOR=\"#c0c0c0\"><BR><BR><P><FONT FACE=\"Arial\"><B>پۈتۈك خاسلىقى تېپىلمىدى.</B></FONT></P></BODY></HTML>"
 
 #: source/view/view.src#MSG_CANT_CLOSE.InfoBox.Message
 msgid  "The document cannot be closed because a\n print job is being carried out."
-msgstr ""
+msgstr "بۇ پۈتۈكنى ياپالمايدۇ چۈنكى\nبېسىش ۋەزىپىسىدىن بىرنى ئىجرا قىلىۋاتىدۇ."
+
+#: source/view/view.src#DLG_PRINTMONITOR_TEXT.#define.Text
+msgid  "Print Monitor"
+msgstr "بېسىشنى كۆزەتكۈچ"
 
 #: source/view/view.src#DLG_PRINTMONITOR.FT_PRINTING.FixedText.Text
 msgid  "is being printed on"
@@ -2225,11 +2233,11 @@ msgstr "بېسىشقا تەييارلىنىۋاتىدۇ"
 
 #: source/view/view.src#MSG_ERROR_SEND_MAIL.InfoBox.Message
 msgid  "An error occurred in sending the message. Possible errors could be a missing user account or a defective setup.\nPlease check the %PRODUCTNAME settings or your e-mail program settings."
-msgstr ""
+msgstr "ئېلخەت يوللىغاندا خاتالىق يۈز بەردى. ئىشلەتكۈچى ھېساباتى كەم ياكى قاچىلاش پروگراممىسىدا خاتالىق بولۇشى مۇمكىن.\n%PRODUCTNAME نىڭ تەڭشىكى ياكى ئېلخەت پروگرامما تەڭشىكىڭىزنى تەكشۈرۈڭ."
 
 #: source/view/view.src#MSG_QUERY_OPENASTEMPLATE.QueryBox.Message
 msgid  "This document cannot be edited, possibly due to missing access rights. Do you want to edit a copy of the document?"
-msgstr ""
+msgstr "بۇ پۈتۈكنى تەھرىرلىيەلمەيدۇ، سەۋەبى زىيارەت قىلىش ھوقۇقى يوق بولۇشى مۇمكىن. بۇ پۈتۈكنىڭ كۆپەيتمە نەشرىنى تەھرىرلەمسىز؟"
 
 #: source/view/view.src#STR_REPAIREDDOCUMENT.String.Text
 msgid  " (repaired document)"
@@ -2237,12 +2245,4 @@ msgstr " (ئوڭشالغان پۈتۈك)"
 
 #: source/view/view.src#MSG_ERROR_NO_WEBBROWSER_FOUND.ErrorBox.Message
 msgid  "%PRODUCTNAME could not find a web browser on your system. Please check your Desktop Preferences or install a web browser (for example, Mozilla) in the default  location requested during the browser installation."
-msgstr ""
-
-#: source/view/view.src#DLG_PRINTMONITOR_TEXT.#define.Text
-msgid  "Print Monitor"
-msgstr "بېسىشنى كۆزەتكۈچ"
-
-#: source/view/view.src#STR_ERROR_SAVE_TEMPLATE.String.Text
-msgid  "Error saving template "
-msgstr "قېلىپ ساقلىغاندا خاتالىق كۆرۈلدى "
+msgstr "%PRODUCTNAME سىستېمىدىن توركۆرگۈ تاپالمىدى. ئۈستەل يۈزى مايىللىقىنى تەكشۈرۈڭ ياكى توركۆرگۈ قاچىلاش جەريانىدا توركۆرگۈ (مەسىلەن، Mozilla)نى كۆڭۈلدىكى ئورۇنغا قاچىلاڭ."

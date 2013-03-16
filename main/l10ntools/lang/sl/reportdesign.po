@@ -65,7 +65,7 @@ msgstr "Ime '#1' že obstaja in ga ni mogoče znova dodeliti."
 
 #: source/core/resource/strings.src#RID_STR_ERROR_WRONG_ARGUMENT.String.Text
 msgid  "You tried to set an illegal argument. Please have a look at '#1' for valid arguments."
-msgstr ""
+msgstr "Nastaviti ste hoteli neveljaven argument. Prosimo, oglejte si '#1' za veljavne argumente."
 
 #: source/core/resource/strings.src#RID_STR_ARGUMENT_IS_NULL.String.Text
 msgid  "The element is invalid."
@@ -140,12 +140,20 @@ msgid  "Group Header"
 msgstr "Glava skupine"
 
 #: source/ui/dlg/GroupsSorting.src#RID_GROUPS_SORTING.LST_HEADERLST.Default.StringList.item
+msgid  "Present"
+msgstr "Je prisotna"
+
+#: source/ui/dlg/GroupsSorting.src#RID_GROUPS_SORTING.LST_HEADERLST.Default.StringList.item
 msgid  "Not present"
 msgstr "Ni prisotna"
 
 #: source/ui/dlg/GroupsSorting.src#RID_GROUPS_SORTING.FT_FOOTER.FixedText.Text
 msgid  "Group Footer"
 msgstr "Noga skupine"
+
+#: source/ui/dlg/GroupsSorting.src#RID_GROUPS_SORTING.LST_FOOTERLST.Default.StringList.item
+msgid  "Present"
+msgstr "Je prisotna"
 
 #: source/ui/dlg/GroupsSorting.src#RID_GROUPS_SORTING.LST_FOOTERLST.Default.StringList.item
 msgid  "Not present"
@@ -229,7 +237,7 @@ msgstr "Interval"
 
 #: source/ui/dlg/GroupsSorting.src#STR_RPT_HELP_FIELD.String.Text
 msgid  "Select a field or type an expression to sort or group on."
-msgstr ""
+msgstr "Izberite polje ali vrsto izraza, na osnovi bo izvedeno razvrščanje ali deljenje po skupinah."
 
 #: source/ui/dlg/GroupsSorting.src#STR_RPT_HELP_HEADER.String.Text
 msgid  "Display a header for this group?"
@@ -253,15 +261,7 @@ msgstr "Želite obdržati skupino skupaj na eni strani?"
 
 #: source/ui/dlg/GroupsSorting.src#STR_RPT_HELP_SORT.String.Text
 msgid  "Select ascending or descending sort order. Ascending means from A to Z or 0 to 9"
-msgstr ""
-
-#: source/ui/dlg/GroupsSorting.src#RID_GROUPS_SORTING.LST_HEADERLST.Default.StringList.item
-msgid  "Present"
-msgstr "Je prisotna"
-
-#: source/ui/dlg/GroupsSorting.src#RID_GROUPS_SORTING.LST_FOOTERLST.Default.StringList.item
-msgid  "Present"
-msgstr "Je prisotna"
+msgstr "Izberite naraščajoče ali padajoče razvrščanje. Naraščajoče pomeni od A do Z oz. od 0 do 9."
 
 #: source/ui/dlg/PageNumber.src#RID_PAGENUMBERS.ModalDialog.Text
 msgid  "Page Numbers"
@@ -300,6 +300,14 @@ msgid  "Alignment:"
 msgstr "Poravnava:"
 
 #: source/ui/dlg/PageNumber.src#RID_PAGENUMBERS.LST_ALIGNMENT.Default.StringList.item
+msgid  "Left"
+msgstr "Levo"
+
+#: source/ui/dlg/PageNumber.src#RID_PAGENUMBERS.LST_ALIGNMENT.Default.StringList.item
+msgid  "Center"
+msgstr "Sredina"
+
+#: source/ui/dlg/PageNumber.src#RID_PAGENUMBERS.LST_ALIGNMENT.Default.StringList.item
 msgid  "Right"
 msgstr "Desno"
 
@@ -312,20 +320,12 @@ msgid  "~Help"
 msgstr "~Pomoč"
 
 #: source/ui/dlg/PageNumber.src#STR_RPT_PN_PAGE.String.Text
-msgid  ""Page " & #PAGENUMBER#"
-msgstr ""
+msgid  "\"Page \" & #PAGENUMBER#"
+msgstr "\"Stran \" & #PAGENUMBER#"
 
 #: source/ui/dlg/PageNumber.src#STR_RPT_PN_PAGE_OF.String.Text
-msgid  " & " of " & #PAGECOUNT#"
-msgstr ""
-
-#: source/ui/dlg/PageNumber.src#RID_PAGENUMBERS.LST_ALIGNMENT.Default.StringList.item
-msgid  "Left"
-msgstr "Levo"
-
-#: source/ui/dlg/PageNumber.src#RID_PAGENUMBERS.LST_ALIGNMENT.Default.StringList.item
-msgid  "Center"
-msgstr "Sredina"
+msgid  " & \" of \" & #PAGECOUNT#"
+msgstr " & \" od \" & #PAGECOUNT#"
 
 #: source/ui/dlg/dlgpage.src#RID_PAGEDIALOG_PAGE.TabDialog.Text
 msgid  "Page Setup"
@@ -456,6 +456,10 @@ msgid  "Properties..."
 msgstr "Lastnosti ..."
 
 #: source/ui/dlg/CondFormat.src#WIN_CONDITION.LB_COND_TYPE.Default.StringList.item
+msgid  "Field Value Is"
+msgstr "Vrednost polja"
+
+#: source/ui/dlg/CondFormat.src#WIN_CONDITION.LB_COND_TYPE.Default.StringList.item
 msgid  "Expression Is"
 msgstr "Izraz"
 
@@ -549,11 +553,7 @@ msgstr "Pomoč"
 
 #: source/ui/dlg/CondFormat.src#ADDFIELD_HELP_FIELD.FixedText.Text
 msgid  "Highlight the fields to insert into the selected section of the template, then click Insert or press Enter."
-msgstr ""
-
-#: source/ui/dlg/CondFormat.src#WIN_CONDITION.LB_COND_TYPE.Default.StringList.item
-msgid  "Field Value Is"
-msgstr "Vrednost polja"
+msgstr "Poudarite polja, ki jih želite vstaviti v izbrani odsek predloge, nato kliknite Vstavi ali pritisnite Enter."
 
 #: source/ui/dlg/DateTime.src#RID_DATETIME_DLG.ModalDialog.Text
 msgid  "Date and Time"
@@ -833,7 +833,7 @@ msgstr "Poveži podrejena polja"
 
 #: source/ui/inspection/inspection.src#RID_STR_EXPLANATION.String.Text
 msgid  "Charts can be used to display detailed data about the current record of the report. To do this, you can specify which columns in the chart match which columns in the report."
-msgstr ""
+msgstr "Grafikone lahko uporabite za prikaz podrobnih podatkov o trenutnem zapisu poročila. To storite tako, da določite, kateri stolpci grafikona se ujemajo s stolpci v poročilu."
 
 #: source/ui/inspection/inspection.src#RID_STR_DETAILLABEL.String.Text
 msgid  "Chart"
@@ -1241,15 +1241,11 @@ msgstr "Poročila ni mogoče izvesti, če ni povezan z vsebino."
 
 #: source/ui/report/report.src#RID_ERR_NO_OBJECTS.String.Text
 msgid  "The report can not be executed unless at least one object has been inserted."
-msgstr ""
+msgstr "Poročila ni mogoče izvesti, če ni bil vstavljen niti en predmet."
 
 #: source/ui/report/report.src#RID_STR_UNDO_SHRINK.String.Text
 msgid  "Shrink Section"
 msgstr "Skrči odsek"
-
-#: source/ui/report/report.src#RID_STR_INSERT.String.Text
-msgid  "Insert"
-msgstr "Vstavi"
 
 #: source/ui/report/report.src#RID_STR_DETAIL.String.Text
 msgid  "Detail"
@@ -1270,3 +1266,7 @@ msgstr "Glava poročila"
 #: source/ui/report/report.src#RID_STR_REPORT_FOOTER.String.Text
 msgid  "Report Footer"
 msgstr "Noga poročila"
+
+#: source/ui/report/report.src#RID_STR_INSERT.String.Text
+msgid  "Insert"
+msgstr "Vstavi"

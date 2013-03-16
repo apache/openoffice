@@ -33,7 +33,7 @@ msgstr ""
 
 #: source/padialog.src#RID_FONTIMPORT_DIALOG.RID_FIMP_TXT_HELP.FixedText.Text
 msgid  "Please select the folder from which you want to import fonts. Add the selected fonts by clicking the OK button."
-msgstr ""
+msgstr "Одредите фасциклу за увоз фонтова. Додајте изабране фонтове кликом на дугме „У реду“."
 
 #: source/padialog.src#RID_FONTIMPORT_DIALOG.RID_FIMP_FL_FROM.FixedLine.Text
 msgid  "Source directory"
@@ -61,7 +61,7 @@ msgstr "Додај фонтове"
 
 #: source/padialog.src#RID_FONTIMPORT_DIALOG.RID_FIMP_STR_QUERYOVERWRITE.String.Text
 msgid  "Do you really want to overwrite this font file?\n   %s"
-msgstr ""
+msgstr "Стварно желите да препишете ову датотеку фонта?\n   %s"
 
 #: source/padialog.src#RID_FONTIMPORT_DIALOG.RID_FIMP_STR_OVERWRITEALL.String.Text
 msgid  "All"
@@ -73,19 +73,19 @@ msgstr "Ниједну"
 
 #: source/padialog.src#RID_FONTIMPORT_DIALOG.RID_FIMP_STR_NOAFM.String.Text
 msgid  "A format file (with an .afm extension) has not been found for the font\n%s\ntherefore, the font cannot be installed. Format files can be created with ghostscript, for example, and have to be located in the same directory as the font files or its afm subdirectory."
-msgstr ""
+msgstr "Датотека облика (са .afm додатком) није пронађена за фонт\n%s\nстога, фонт неће бити инсталиран. Датотеке облика може направити ghostscript, на пример, и морају се поставити у исти директоријум са фонтовима или његов afm поддиректоријум."
 
 #: source/padialog.src#RID_FONTIMPORT_DIALOG.RID_FIMP_STR_AFMCOPYFAILED.String.Text
 msgid  "The metric file for the font file\n   %s\ncould not be copied. The font will not be installed."
-msgstr ""
+msgstr "Метричка датотека за фонт \n   %s\nсе није могле умножити. Фонт неће бити инсталиран."
 
 #: source/padialog.src#RID_FONTIMPORT_DIALOG.RID_FIMP_STR_FONTCOPYFAILED.String.Text
 msgid  "The font file\n   %s\ncould not be copied. The font will not be installed."
-msgstr ""
+msgstr "Датотека фонта \n   %s\nсе није могла умножити. Фонт неће бити инсталиран."
 
 #: source/padialog.src#RID_FONTIMPORT_DIALOG.RID_FIMP_STR_NOWRITEABLEFONTSDIR.String.Text
 msgid  "A directory containing a writable fonts.dir file is not located in the Fontpath. Therefore, fonts cannot be installed."
-msgstr ""
+msgstr "Директоријум са уписивом датотеком fonts.dir није пронађен у путањи за фонтове. Фонтови стога неће бити инсталирани."
 
 #: source/padialog.src#RID_FONTIMPORT_DIALOG.RID_FIMP_STR_NUMBEROFFONTSIMPORTED.String.Text
 msgid  "%d new fonts were added."
@@ -289,7 +289,7 @@ msgstr "Датотека не садржи метричке податке."
 
 #: source/padialog.src#RID_AFMERROR_BOX_TXT.String.Text
 msgid  "The metric\n\n%s\n\ncould not be converted for the following reason:\n\n"
-msgstr ""
+msgstr "Метрички податак \n\n%s\n\nсе не може превести из следећег разлога:\n\n"
 
 #: source/padialog.src#RID_PROGRESS_DLG.RID_PROGRESS_PROGRESS_TXT.FixedText.Text
 msgid  "Progress"
@@ -320,8 +320,8 @@ msgid  "~Selection of drivers"
 msgstr "~Избор драјвера"
 
 #: source/padialog.src#RID_PPDIMPORT_DLG.RID_PPDIMP_TXT_DRIVER.FixedText.Text
-msgid  "Please select the drivers to install and press "%s"."
-msgstr ""
+msgid  "Please select the drivers to install and press \"%s\"."
+msgstr "Изаберите драјвер за инсталирање и притисните „%s‟."
 
 #: source/padialog.src#RID_PPDIMPORT_DLG.RID_PPDIMP_STR_LOADINGPPD.String.Text
 msgid  "Searching for drivers"
@@ -332,8 +332,8 @@ msgid  "Driver Installation"
 msgstr "Инсталирање драјвера"
 
 #: source/padialog.src#RID_QUERY_REMOVEDRIVER.String.Text
-msgid  "Do you really want to remove the driver "%s"?"
-msgstr ""
+msgid  "Do you really want to remove the driver \"%s\"?"
+msgstr "Стварно желите да уклоните драјвер „%s‟?"
 
 #: source/padialog.src#RID_QUERY_REMOVEPRINTER.String.Text
 msgid  "Do you really want to remove this printer ?"
@@ -344,40 +344,40 @@ msgid  "Do you really want to remove the selected fonts ?"
 msgstr "Стварно желите да уклоните изабране фонтове?"
 
 #: source/padialog.src#RID_QUERY_DRIVERUSED.String.Text
-msgid  "There are still printers using the driver "%s". Do you really want to remove it? The corresponding printers will also be removed."
-msgstr ""
+msgid  "There are still printers using the driver \"%s\". Do you really want to remove it? The corresponding printers will also be removed."
+msgstr "Постоје штампачи који још увек користе драјвер „%s‟. Да ли желите да га уклоните? Поменути штампачи ће такође бити уклоњени."
 
 #: source/padialog.src#RID_ERR_REMOVESGENPRT.String.Text
-msgid  "The driver "%s" is always needed and can therefore not be removed."
-msgstr ""
+msgid  "The driver \"%s\" is always needed and can therefore not be removed."
+msgstr "Драјвер „%s‟ је увек неопходан и стога се не може уклонити."
 
 #: source/padialog.src#RID_ERR_REMOVEDRIVERFAILED.String.Text
-msgid  "The driver "%s1" could not be removed. It was not possible to remove the file\n\n%s2."
-msgstr ""
+msgid  "The driver \"%s1\" could not be removed. It was not possible to remove the file\n\n%s2."
+msgstr "Драјвер „%s1‟ се не може уклонити. Немогуће је уклонити датотеку\n\n%s2."
 
 #: source/padialog.src#RID_ERR_REMOVEDEFAULTDRIVER.String.Text
-msgid  "The driver "%s" is used by your default printer. Therefore, it cannot be removed."
-msgstr ""
+msgid  "The driver \"%s\" is used by your default printer. Therefore, it cannot be removed."
+msgstr "Подразумевани штампач користи драјвер „%s‟. Стога програм не може бити уклоњен."
 
 #: source/padialog.src#RID_ERR_PRINTERNOTREMOVEABLE.String.Text
 msgid  "The printer %s cannot be removed."
 msgstr "Штампач %s се не може уклонити."
 
 #: source/padialog.src#RID_TXT_PRINTERALREADYEXISTS.String.Text
-msgid  "A printer named "%s" already exists. This printer will not be imported."
-msgstr ""
+msgid  "A printer named \"%s\" already exists. This printer will not be imported."
+msgstr "Штампач „%s‟ већ постоји. Овај штампач неће бити увезен."
 
 #: source/padialog.src#RID_TXT_PRINTERWITHOUTCOMMAND.String.Text
-msgid  "The printer "%s" has no valid configuration and, therefore, cannot be imported."
-msgstr ""
+msgid  "The printer \"%s\" has no valid configuration and, therefore, cannot be imported."
+msgstr "Штампач „%s‟ нема исправна подешавања и стога неће бити увезен."
 
 #: source/padialog.src#RID_TXT_DRIVERDOESNOTEXIST.String.Text
-msgid  "The driver for the printer "%s1" (%s2) is not installed. Therefore the printer cannot be imported."
-msgstr ""
+msgid  "The driver for the printer \"%s1\" (%s2) is not installed. Therefore the printer cannot be imported."
+msgstr "Драјвер за штампач „%s1‟ (%s2) није инсталиран. Због тога штампач неће бити увезен."
 
 #: source/padialog.src#RID_TXT_PRINTERADDFAILED.String.Text
-msgid  "The printer "%s" could not be added."
-msgstr ""
+msgid  "The printer \"%s\" could not be added."
+msgstr "Штампач „%s‟ се не може додати."
 
 #: source/padialog.src#RID_ADD_PRINTER_DIALOG.RID_ADDP_BTN_FINISH.OKButton.Text
 msgid  "~Finish"
@@ -488,12 +488,12 @@ msgid  "~Help"
 msgstr "~Помоћ"
 
 #: source/padialog.src#RID_ADDP_PAGE_COMMAND.RID_ADDP_CMD_STR_PDFHELP.String.Text
-msgid  "The command line for PDF converters is executed as follows: for each document printed, "(TMP)" in the command line is replaced by a temporary file and "(OUTFILE)" in the command line is replaced by the target PDF file name. If "(TMP)" is in the command line, the PostScript code will be supplied via a file, otherwise via standard input (i.e. as a pipe)."
-msgstr ""
+msgid  "The command line for PDF converters is executed as follows: for each document printed, \"(TMP)\" in the command line is replaced by a temporary file and \"(OUTFILE)\" in the command line is replaced by the target PDF file name. If \"(TMP)\" is in the command line, the PostScript code will be supplied via a file, otherwise via standard input (i.e. as a pipe)."
+msgstr "Наредба за ПДФ прабациваче је извршена на следећи начин: за сваки одштампан документ, „(TMP)‟ у наредби је замењен привременом датотеком и „(OUTFILE)‟ у наредби је замењен називом циљне ПДФ datoteke. Ako је „(TMP)‟ садржан у наредби, постскрипт код ће бити обезбеђен из датотеке, а у супротном се узима са стандардног улаза (нпр. са цевовода)."
 
 #: source/padialog.src#RID_ADDP_PAGE_COMMAND.RID_ADDP_CMD_STR_FAXHELP.String.Text
-msgid  "The command line for fax connections is executed as follows: for each fax sent, "(TMP)" in the command line is replaced by a temporary file and "(PHONE)" in the command line is replaced by the fax number. If "(TMP)" appears in the command line, the PostScript code will be supplied via a file, otherwise it is passed as standard input (i.e. as a pipe)."
-msgstr ""
+msgid  "The command line for fax connections is executed as follows: for each fax sent, \"(TMP)\" in the command line is replaced by a temporary file and \"(PHONE)\" in the command line is replaced by the fax number. If \"(TMP)\" appears in the command line, the PostScript code will be supplied via a file, otherwise it is passed as standard input (i.e. as a pipe)."
+msgstr "Наредба за факс везе је извршена на следећи начин: за сваки послат факс,  „(TMP)‟ у наредби је замењен привременом датотеком и „(PHONE)‟ у наредби је замењен бројем факса. Ако је „(TMP)‟ садржан у наредби, постскрипт код се узима из датотеке, а у супротном са стандардног улаза (нпр. са цевовода)."
 
 #: source/padialog.src#RID_ADDP_PAGE_OLDPRINTERS.RID_ADDP_STR_TITLE.String.Text
 msgid  "Import printers from old versions"
@@ -501,7 +501,7 @@ msgstr "Увези штампаче из старијих издања"
 
 #: source/padialog.src#RID_ADDP_PAGE_OLDPRINTERS.RID_ADDP_OLD_TXT_PRINTERS.FixedText.Text
 msgid  "~These printers can be imported. Please select the ones you want to import."
-msgstr ""
+msgstr "~Ови штампачи се могу увести. Изаберите који желите да увезем."
 
 #: source/padialog.src#RID_ADDP_PAGE_OLDPRINTERS.RID_ADDP_OLD_BTN_SELECTALL.PushButton.Text
 msgid  "~Select All"
@@ -737,7 +737,7 @@ msgstr "фонтом штампача"
 
 #: source/rtsetup.src#RID_RTS_COMMANDPAGE.RID_RTS_CMD_CB_EXTERNAL.CheckBox.Text
 msgid  "~Use system print dialog, disable %PRODUCTNAME's print dialog"
-msgstr ""
+msgstr "~Користи системско прозорче за штампање и онемогући оно из пакета %PRODUCTNAME"
 
 #: source/rtsetup.src#RID_RTS_COMMANDPAGE.RID_RTS_CMD_FT_QUICKCMD.FixedText.Text
 msgid  "Command for quick printing without dialog (optional)"
@@ -788,16 +788,16 @@ msgid  "~Remove"
 msgstr "~Уклони"
 
 #: source/rtsetup.src#RID_RTS_COMMANDPAGE.RID_RTS_CMD_STR_PDFHELP.String.Text
-msgid  "The command line for PDF converters is executed as follows: for each document printed, "(TMP)" in the command line is replaced by a temporary file and "(OUTFILE)" in the command line is replaced by the target PDF file name. If "(TMP)" is in the command line, the PostScript code will be supplied via a file, otherwise via standard input (i.e. as a pipe)."
-msgstr ""
+msgid  "The command line for PDF converters is executed as follows: for each document printed, \"(TMP)\" in the command line is replaced by a temporary file and \"(OUTFILE)\" in the command line is replaced by the target PDF file name. If \"(TMP)\" is in the command line, the PostScript code will be supplied via a file, otherwise via standard input (i.e. as a pipe)."
+msgstr "Наредба за ПДФ прабациваче је извршена на следећи начин: за сваки одштампан документ, „(TMP)‟ у наредби је замењен привременом датотеком и „(OUTFILE)‟ у наредби је замењен називом циљне ПДФ datoteke. Ako је „(TMP)‟ садржан у наредби, постскрипт код ће бити обезбеђен из датотеке, а у супротном се узима са стандардног улаза (нпр. са цевовода)."
 
 #: source/rtsetup.src#RID_RTS_COMMANDPAGE.RID_RTS_CMD_STR_PRINTERHELP.String.Text
 msgid  "The command line for printer devices is executed as follows: the generated PostScript code is supplied as standard input (i.e. as a pipe) to the command line."
-msgstr ""
+msgstr "Наредба за штампачке уређаје је извршена на следећи начин: остварен постскрипт код је преко стандардног улаза (нпр. кроз цевовод) предат наредби."
 
 #: source/rtsetup.src#RID_RTS_COMMANDPAGE.RID_RTS_CMD_STR_FAXHELP.String.Text
-msgid  "The command line for fax devices is executed as follows: for each fax sent, "(TMP)" in the command line is replaced by a temporary file and "(PHONE)" in the command line is replaced by the fax number. If "(TMP)" appears in the command line, the PostScript code will be supplied via a file, otherwise it is passed as standard input (i.e. as a pipe)."
-msgstr ""
+msgid  "The command line for fax devices is executed as follows: for each fax sent, \"(TMP)\" in the command line is replaced by a temporary file and \"(PHONE)\" in the command line is replaced by the fax number. If \"(TMP)\" appears in the command line, the PostScript code will be supplied via a file, otherwise it is passed as standard input (i.e. as a pipe)."
+msgstr "Наредба за факс уређаје се извршава на следећи начин: за сваки послат факс, „(TMP)‟ у наредби ће бити замењен привременом датотеком, а „(PHONE)‟ у наредби бројем факса. Ако се „(TMP)‟ појављује у наредби, постскрипт код ће смештен у датотеку, у супротном ће бити прослеђен на стандардни улаз (на пример као цевовод)."
 
 #: source/rtsetup.src#RID_RTS_OTHERPAGE.RID_RTS_OTHER_LEFTMARGIN_TXT.FixedText.Text
 msgid  "~Left margin"

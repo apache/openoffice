@@ -37,7 +37,7 @@ msgstr "Звіт про помилку у %PRODUCTNAME% %productversion%"
 
 #: source/all/crashrep.ulf#%WELCOME_HEADER%
 msgid  "Welcome to the %PRODUCTNAME% %PRODUCTVERSION% Error Report"
-msgstr ""
+msgstr "Ласкаво просимо до засобу створення звіту про помилку %PRODUCTNAME% %productversion%"
 
 #: source/all/crashrep.ulf#%WELCOME_BODY1%
 msgid  "This error report tool gathers information about how %PRODUCTNAME% is working and sends it to Apache OpenOffice to help improve future versions.\n\n"
@@ -45,7 +45,7 @@ msgstr ""
 
 #: source/all/crashrep.ulf#%WELCOME_BODY2%
 msgid  "It's easy - just send the report without any further effort on your part by clicking 'Send' in the next dialog, or you can briefly describe how the error occurred and then click 'Send'. If you want to see the report, click the 'Show Report' button. No data will be sent if you click 'Do Not Send'.\n\n"
-msgstr ""
+msgstr "Це дуже легко - просто відішліть звіт без будь-яких зусиль з вашого боку натиском на 'Надіслати' в наступному діалозі, або ж можете коротко описати як сталася помилка і потім клацнути 'Надіслати'. Якщо ви хочете переглянути звіт, натисніть на кнопці 'Показати звіт'. Дані не будуть надіслані, якщо ви натиснете кнопку 'Не надсилати'.\n\n"
 
 #: source/all/crashrep.ulf#%WELCOME_BODY3%
 msgid  "Customer Privacy\nThe information gathered is limited to data concerning the state of %PRODUCTNAME% %PRODUCTVERSION% when the error occurred. Other information about passwords or document contents is not collected.\n\nThe information will only be used to improve the quality of %PRODUCTNAME% and will not be shared with third parties.\nFor more information on Apache OpenOffice's privacy policy, visit\n"
@@ -81,7 +81,7 @@ msgstr ""
 
 #: source/all/crashrep.ulf#%ENTER_TITLE%
 msgid  "Which type of document (e.g. presentation) were you using when the error occurred?"
-msgstr ""
+msgstr "З яким типом документу (наприклад, презентацією) ви працювали коли сталася помилка?"
 
 #: source/all/crashrep.ulf#%ALLOW_CONTACT%
 msgid  "~I allow Apache OpenOffice to contact me regarding this report."
@@ -121,23 +121,23 @@ msgstr "Зберегти звіт до"
 
 #: source/all/crashrep.ulf#%ERROR_MSG_SIMPLE_MAPI%
 msgid  "The error report could not be sent because the default e-mail program does not support MAPI.\n Please use a MAPI-compatible e-mail program."
-msgstr ""
+msgstr "Звіт про помилку неможливо надіслати тому типовий поштовий клієнт не підтримує MAPI.\nВикористовуйте поштову програму, що сумісна з MAPI."
 
 #: source/all/crashrep.ulf#%ERROR_MSG_DISK_FULL%
 msgid  "The error report could not be temporarily saved and could therefore not be sent."
-msgstr ""
+msgstr "Звіт про помилку неможливо зберегти у тимчасовому файлі, тому його неможливо надіслати."
 
 #: source/all/crashrep.ulf#%ERROR_MSG_SENDMAIL%
 msgid  "The error report could not be sent because 'sendmail' could not be started.\nPlease check the 'sendmail' settings."
-msgstr ""
+msgstr "Звіт про помилку неможливо надіслати, оскільки не вдається запустити 'sendmail'.\nПеревірте параметри sendmail."
 
 #: source/all/crashrep.ulf#%ERROR_MSG_PROXY%
 msgid  "The error report could not be sent. Please check the proxy settings under 'Options' in the Error Report Tool."
-msgstr ""
+msgstr "Звіт про помилку неможливо надіслати. Перевірте параметри проксі-сервера у вкладці «Параметри»."
 
 #: source/all/crashrep.ulf#%ERROR_MSG_NOCONNECT%
 msgid  "The error report could not be sent because there is no Internet connection. Please check your Internet settings."
-msgstr ""
+msgstr "Звіт про помилку неможливо надіслати, оскільки немає з'єднання з Інтернет. Перевірте параметри з'єднання з Інтернет."
 
 #: source/all/crashrep.ulf#%OPTIONS_BUTTON%
 msgid  "~Options..."
@@ -173,7 +173,7 @@ msgstr "~Порт"
 
 #: source/all/crashrep.ulf#%PROXY_SETTINGS_DESCRIPTION%
 msgid  "The %PRODUCTNAME% Error Report tool needs to be connected to the Internet to be able to send error reports.\n\nCompanies often use proxy servers in conjunction with a firewall to protect the network.\n\nIf this applies to your situation, you have to specify the address and port for the server."
-msgstr ""
+msgstr "Засіб звітування про помилки %PRODUCTNAME% потребує підключення до інтернет, щоб надіслати звіт про помилку.\n\nКомпанії часто використовують проксі-сервери разом з мережним екраном для захисту мережі.\n\nЯкщо це стосується і вас, треба вказати адресу і порт проксі-сервера."
 
 #: source/all/crashrep.ulf#%SENDING_REPORT_HEADER%
 msgid  "Sending Error Report"
@@ -201,8 +201,8 @@ msgstr "-p <ідентифікатор процесу>"
 
 #: source/all/crashrep.ulf#%MSG_PARAM_PROCESSID_DESCRIPTION%
 msgid  "Assigns the %PRODUCTNAME% process ID (PID) to the Error Report Tool"
-msgstr ""
+msgstr "Прив'язати ідентифікатор процесу (PID) %PRODUCTNAME% до засобу звітування про помилки"
 
 #: source/all/crashrep.ulf#%MSG_PARAM_HELP_DESCRIPTION%
 msgid  "Shows this help text.\nDetailed information can be found in the Setup Guide."
-msgstr ""
+msgstr "Показує цю довідку.\nДокладну інформацію можна знайти у посібнику з встановлення."

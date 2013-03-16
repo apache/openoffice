@@ -32,8 +32,8 @@ msgstr ""
 
 
 #: source/app/desktop.src#STR_RECOVER_QUERY.String.Text
-msgid  "Should the file "$1" be restored?"
-msgstr ""
+msgid  "Should the file \"$1\" be restored?"
+msgstr "\"$1\" ھۆججەت ئەسلىگە كەلتۈرۈلەمدۇ؟"
 
 #: source/app/desktop.src#STR_RECOVER_TITLE.String.Text
 msgid  "File Recovery"
@@ -41,15 +41,15 @@ msgstr "ھۆججەت ئەسلىگە كەلتۈر"
 
 #: source/app/desktop.src#STR_RECOVER_PREPARED.WarningBox.Message
 msgid  "An unrecoverable error has occurred.\n\nAll modified files have been saved and can\nprobably be recovered at program restart."
-msgstr ""
+msgstr "ناھايىتى ئەپسۇس، ئەسلىگە كەلتۈرگىلى بولمايدىغان خاتالىق يۈز بەردى.\n\nئۆزگەرتىلگەن ھۆججەت ساقلاندى.\nكېيىنكى قېتىم قايتا قوزغالغاندا بۇ ھۆججەتلەر قايتىدىن ئەسلىگە كەلتۈرۈلۈشى مۇمكىن."
 
 #: source/app/desktop.src#STR_BOOTSTRAP_ERR_CANNOT_START.String.Text
 msgid  "The application cannot be started. "
 msgstr "بۇ قوللىنىشچان پروگراممىنى قايتا قوزغىتالمىدى. "
 
 #: source/app/desktop.src#STR_BOOTSTRAP_ERR_DIR_MISSING.String.Text
-msgid  "The configuration directory "$1" could not be found."
-msgstr ""
+msgid  "The configuration directory \"$1\" could not be found."
+msgstr "سەپلەش مۇندەرىجىسى \"$1\" نى تاپالمىدى."
 
 #: source/app/desktop.src#STR_BOOTSTRAP_ERR_PATH_INVALID.String.Text
 msgid  "The installation path is invalid."
@@ -64,16 +64,16 @@ msgid  "An internal error occurred."
 msgstr "ئىچكى خاتالىق يۈز بەردى."
 
 #: source/app/desktop.src#STR_BOOTSTRAP_ERR_FILE_CORRUPT.String.Text
-msgid  "The configuration file "$1" is corrupt."
-msgstr ""
+msgid  "The configuration file \"$1\" is corrupt."
+msgstr "سەپلىمە ھۆججىتى \"$1\" بۇزۇلغان."
 
 #: source/app/desktop.src#STR_BOOTSTRAP_ERR_FILE_MISSING.String.Text
-msgid  "The configuration file "$1" was not found."
-msgstr ""
+msgid  "The configuration file \"$1\" was not found."
+msgstr "سەپلەش ھۆججىتى \"$1\" نى تاپالمىدى."
 
 #: source/app/desktop.src#STR_BOOTSTRAP_ERR_NO_SUPPORT.String.Text
-msgid  "The configuration file "$1" does not support the current version."
-msgstr ""
+msgid  "The configuration file \"$1\" does not support the current version."
+msgstr "سەپلىمە ھۆججىتى \"$1\" نۆۋەتتىكى نەشرىنى قوللىمايدۇ."
 
 #: source/app/desktop.src#STR_BOOTSTRAP_ERR_LANGUAGE_MISSING.String.Text
 msgid  "The user interface language cannot be determined."
@@ -93,11 +93,11 @@ msgstr ""
 
 #: source/app/desktop.src#STR_ASK_START_SETUP_MANUALLY.String.Text
 msgid  "Start the setup application to repair the installation from the CD or the folder containing the installation packages."
-msgstr ""
+msgstr "پروگراممىڭىزنى ئوڭشاشتا نۇر دىسكىدىكى ياكى قاچىلاش پروگراممىسى ساقلانغان مۇندەرىجىدىكى قاچىلاش پروگراممىسىنى قوزغىتىڭ."
 
 #: source/app/desktop.src#STR_CONFIG_ERR_SETTINGS_INCOMPLETE.String.Text
 msgid  "The startup settings for accessing the central configuration are incomplete. "
-msgstr ""
+msgstr "مەركىزى سەپلىمە ساقلاشقا ئىشلىتىدىغان قوزغىتىش تەڭشىكى مۇكەممەل ئەمەس. "
 
 #: source/app/desktop.src#STR_CONFIG_ERR_CANNOT_CONNECT.String.Text
 msgid  "A connection to the central configuration could not be established. "
@@ -105,19 +105,19 @@ msgstr "مەركىزى سەپلىمە بىلەن ئۇلىنالمىدى. "
 
 #: source/app/desktop.src#STR_CONFIG_ERR_RIGHTS_MISSING.String.Text
 msgid  "You cannot access the central configuration because of missing access rights. "
-msgstr ""
+msgstr "زىيارەت ھوقۇقىڭىز بولمىغانلىقتىن مەركىزى سەپلىمە سانلىق مەلۇماتىنى ساقلىيالمايسىز. "
 
 #: source/app/desktop.src#STR_CONFIG_ERR_ACCESS_GENERAL.String.Text
 msgid  "A general error occurred while accessing your central configuration. "
-msgstr ""
+msgstr "مەركىزى سەپلىمە ھۆججەتنى ساقلىغاندا ئادەتتىكى ساقلاش خاتالىقى يۈز بەردى. "
 
 #: source/app/desktop.src#STR_CONFIG_ERR_NO_WRITE_ACCESS.String.Text
 msgid  "The changes to your personal settings cannot be stored centrally because of missing access rights. "
-msgstr ""
+msgstr "زىيارەت ھوقۇقىڭىز بولمىغانلىقتىن ئۆزگەرتكەن شەخسىي سانلىق مەلۇماتلىرىڭىزنى مەركىزى سەپلىمىگە ساقلىيالمايسىز. "
 
 #: source/app/desktop.src#STR_BOOTSTRAP_ERR_CFG_DATAACCESS.String.Text
 msgid  "%PRODUCTNAME cannot be started due to an error in accessing the %PRODUCTNAME configuration data.\n\nPlease contact your system administrator."
-msgstr ""
+msgstr "%PRODUCTNAME نى قوزغىتالمىدى. سەۋەبى %PRODUCTNAME سەپلىمە سانلىق مەلۇماتىنى ساقلىغاندا خاتالىق يۈز بەردى.\n\nسىستېما باشقۇرغۇچى بىلەن ئالاقىلىشىڭ."
 
 #: source/app/desktop.src#STR_INTERNAL_ERRMSG.String.Text
 msgid  "The following internal error has occurred: "
@@ -125,7 +125,7 @@ msgstr "تۆۋەندىكىدەك ئىچكى خاتالىق يۈز بەردى: "
 
 #: source/app/desktop.src#QBX_USERDATALOCKED.QueryBox.Message
 msgid  "Either another instance of %PRODUCTNAME is accessing your personal settings or your personal settings are locked.\nSimultaneous access can lead to inconsistencies in your personal settings. Before continuing, you should make sure user '$u' closes %PRODUCTNAME on host '$h'.\n\nDo you really want to continue?"
-msgstr ""
+msgstr "%PRODUCTNAME نىڭ باشقا بىر ئەمەلىي مىسالى شەخسي تەڭشىكىڭىزنى ساقلاۋاتىدۇ ياكى تەڭشىكىڭىز قۇلۇپلانغان. \nبىرلا ۋاقىتتا شەخسىي تەڭشەكنى ساقلاش سانلىق مەلۇماتنىڭ بىردەك بولماسلىقىنى كەلتۈرۈپ چىقىرىدۇ. داۋاملاشتۇرۇشتىن ئىلگىرى ئىشلەتكۈچى '$u' نىڭ '$h' كومپيۇتېردا ئىجرا بولۇۋاتقان %PRODUCTNAME نى ياپقانلىقىنى جەزملەڭ. \n\nراستىنلا داۋاملاشتۇرامسىز؟"
 
 #: source/app/desktop.src#STR_TITLE_USERDATALOCKED.String.Text
 msgid  "%PRODUCTNAME %PRODUCTVERSION"
@@ -149,11 +149,11 @@ msgstr "يول باشقۇرغۇچنى ئىشلەتكىلى بولمايدۇ.\n"
 
 #: source/app/desktop.src#STR_BOOSTRAP_ERR_NOTENOUGHDISKSPACE.String.Text
 msgid  "%PRODUCTNAME user installation could not be completed due to insufficient free disk space. Please free more disc space at the following location and restart %PRODUCTNAME:\n\n"
-msgstr ""
+msgstr "دىسكا بوشلۇقى يېتىشمىگەنلىكتىن %PRODUCTNAME ئىشلەتكۈچى قاچىلاشنى تاماملىيالمىدى. تۆۋەندىكى ئورۇندىن يېتەرلىك بوشلۇق بىكارلاپ ئاندىن %PRODUCTNAME نى قايتا قوزغىتىڭ:\n\n"
 
 #: source/app/desktop.src#STR_BOOSTRAP_ERR_NOACCESSRIGHTS.String.Text
 msgid  "%PRODUCTNAME user installation could not be processed due to missing access rights. Please make sure that you have sufficient access rights for the following location and restart %PRODUCTNAME:\n\n"
-msgstr ""
+msgstr "زىيارەت قىلىش ھوقۇقى بولمىغانلىقتىن %PRODUCTNAME ئىشلەتكۈچى قاچىلاشنى تاماملىيالمىدى. تۆۋەندىكى ئورۇنغا نىسبەتەن يېتەرلىك ھوقۇقىڭىز بارلىقىغا كاپالەتلىك قىلىپ ئاندىن %PRODUCTNAME نى قايتا قوزغىتىڭ:\n\n"
 
 #: source/deployment/gui/dp_gui_versionboxes.src#RID_WARNINGBOX_VERSION_LESS.WarningBox.Message
 msgid  "You are about to install version $NEW of the extension \'$NAME\'.\nThe newer version $DEPLOYED is already installed.\nClick \'OK\' to replace the installed extension.\nClick \'Cancel\' to stop the installation."
@@ -185,7 +185,7 @@ msgstr "سىستېما تايىنىشچانلىق تەكشۈر"
 
 #: source/deployment/gui/dp_gui_dependencydialog.src#RID_DLG_DEPENDENCIES.RID_DLG_DEPENDENCIES_TEXT.FixedText.Text
 msgid  "The extension cannot be installed as the following\nsystem dependencies are not fulfilled:"
-msgstr ""
+msgstr "تۆۋەندىكى سىستېما تايىنىشچانلىقىنى قاندۇرالمىغاچقا\nكېڭەيتىلمىنى قاچىلىيالمايدۇ."
 
 #: source/deployment/gui/dp_gui_dialog.src#RID_STR_ADD_PACKAGES.String.Text
 msgid  "Add Extension(s)"
@@ -253,11 +253,11 @@ msgstr "ئاخىرلاشتۇر"
 
 #: source/deployment/gui/dp_gui_dialog.src#RID_STR_NO_ADMIN_PRIVILEGE.String.Text
 msgid  "%PRODUCTNAME has been updated to a new version. Some shared %PRODUCTNAME extensions are not compatible with this version and need to be updated before %PRODUCTNAME can be started.\n\nUpdating of shared extension requires administrator privileges. Contact your system administrator to update the following shared extensions:"
-msgstr ""
+msgstr "%PRODUCTNAME يېڭى نەشرىگە يېڭىلاندى، بەزى ھەمبەھىر %PRODUCTNAME كېڭەيتىلمىسى بۇ نەشرى بىلەن ماسلاشمايدۇ، بۇ كېڭەيتىلمىلەرنى يېڭىلىغاندىلا ئاندىن %PRODUCTNAME قوزغىتالايدۇ.\n\nھەمبەھىر كېڭەيتىلمىنى يېڭىلاشقا باشقۇرغۇچى ھوقۇقى بولۇشى لازىم. سىستېما باشقۇرغۇچىڭىز بىلەن ئالاقىلىشىپ، تۆۋەندىكى ھەمبەھىر كېڭەيتىلمىنى يېڭىلاڭ:"
 
 #: source/deployment/gui/dp_gui_dialog.src#RID_STR_ERROR_MISSING_DEPENDENCIES.String.Text
 msgid  "The extension cannot be enabled as the following system dependencies are not fulfilled:"
-msgstr ""
+msgstr "تۆۋەندىكى سىستېما تايىنىشچانلىقىنى قاندۇرالمىغاچقا كېڭەيتىلمىنى قوزغىتالمايدۇ:"
 
 #: source/deployment/gui/dp_gui_dialog.src#RID_STR_ERROR_MISSING_LICENSE.String.Text
 msgid  "This extension is disabled because you haven't accepted the license yet.\n"
@@ -273,7 +273,7 @@ msgstr "كېڭەيتىلگەن يۇمشاق دېتال ئىجازەت كېلىش
 
 #: source/deployment/gui/dp_gui_dialog.src#RID_DLG_LICENSE.FT_LICENSE_HEADER.FixedText.Text
 msgid  "Please follow these steps to proceed with the installation of the extension:"
-msgstr ""
+msgstr "تۆۋەندىكى قەدەم باسقۇچنى ئىجرا قىلىپ ئاندىن كېڭەيتىلمە قاچىلاشنى داۋاملاشتۇرۇڭ:"
 
 #: source/deployment/gui/dp_gui_dialog.src#RID_DLG_LICENSE.FT_LICENSE_BODY_1.FixedText.Text
 msgid  "1."
@@ -437,7 +437,7 @@ msgstr "يېڭى يېڭىلاش يوق."
 
 #: source/deployment/gui/dp_gui_updatedialog.src#RID_DLG_UPDATE.RID_DLG_UPDATE_NOINSTALLABLE.String.Text
 msgid  "No installable updates are available. To see ignored or disabled updates, mark the check box 'Show all updates'."
-msgstr ""
+msgstr "ئورناتقىلى بولىدىغان يېڭىلاش يوق. پەرۋا قىلمىغان ياكى چەكلەنگەن يېڭىلاشنى كۆرۈشتە «ھەممە يېڭىلاشنى كۆرسەت» تاللاش رامكىسىنى تاللاڭ."
 
 #: source/deployment/gui/dp_gui_updatedialog.src#RID_DLG_UPDATE.RID_DLG_UPDATE_FAILURE.String.Text
 msgid  "An error occurred:"
@@ -521,7 +521,7 @@ msgstr "كېڭەيتىلمە يېڭىلاش زۆرۈر"
 
 #: source/deployment/gui/dp_gui_dialog2.src#RID_DLG_UPDATE_REQUIRED.RID_EM_FT_MSG.FixedText.Text
 msgid  "%PRODUCTNAME has been updated to a new version. Some installed %PRODUCTNAME extensions are not compatible with this version and need to be updated before they can be used."
-msgstr ""
+msgstr "%PRODUCTNAME يېڭى نەشرىگە يېڭىلاندى. قاچىلانغان بەزى  %PRODUCTNAME كېڭەيتىلمە بىلەن بۇ نەشرى ماسلاشمايدۇ، بۇ كېڭەيتىلمىلەرنى يېڭىلىغاندىلا ئىشلەتكىلى بولىدۇ."
 
 #: source/deployment/gui/dp_gui_dialog2.src#RID_DLG_UPDATE_REQUIRED.RID_EM_FT_PROGRESS.FixedText.Text
 msgid  "Adding %EXTENSION_NAME"
@@ -537,7 +537,7 @@ msgstr "ھەممىنى چەكلە"
 
 #: source/deployment/gui/dp_gui_dialog2.src#RID_QUERYBOX_INSTALL_FOR_ALL.QueryBox.Message
 msgid  "Make sure that no further users are working with the same %PRODUCTNAME, when installing an extension for all users in a multi user environment.\n\nFor whom do you want to install the extension?\n"
-msgstr ""
+msgstr "كۆپ ئىشلەتكۈچى مۇھىتىدا ھەممە ئىشلەتكۈچىگە كېڭەيتىلمە قاچىلىغاندا، باشقا ئىشلەتكۈچىنىڭ ئوخشاش بىر %PRODUCTNAME ئىشلەتمىگەنلىكىگە كاپالەتلىك قىلىڭ.\nسىز بۇ كېڭەيتىلمىنى كىمگە قاچىلىماقچى؟\n"
 
 #: source/deployment/manager/dp_manager.src#RID_STR_COPYING_PACKAGE.String.Text
 msgid  "Copying: "
@@ -641,7 +641,7 @@ msgstr "بۇ كېڭەيتىلمىنى قاچىلىغى بولمايدۇ چۈنك
 
 #: source/deployment/registry/help/dp_help.src#RID_STR_HELPPROCESSING_XMLPARSING_ERROR.String.Text
 msgid  "The extension will not be installed because an error occurred in the Help files:\n"
-msgstr ""
+msgstr "بۇ كېڭەيتىلمە قاچىلانمىدى، سەۋەبى ياردەم ھۆججىتىدە خاتالىق كۆرۈلدى:\n"
 
 #: source/deployment/registry/package/dp_package.src#RID_STR_PACKAGE_BUNDLE.String.Text
 msgid  "Extension"
@@ -672,16 +672,16 @@ msgid  "Extension Software License Agreement of $NAME:"
 msgstr "$NAME نىڭ كېڭەيتىلگەن يۇمشاق دېتال ئىجازەت كېلىشىمى:"
 
 #: source/deployment/unopkg/unopkg.src#RID_STR_UNOPKG_ACCEPT_LIC_2.String.Text
-msgid  "Read the complete License Agreement displayed above. Accept the License Agreement by typing "yes" on the console then press the Return key. Type "no" to decline and to abort the extension setup."
-msgstr ""
+msgid  "Read the complete License Agreement displayed above. Accept the License Agreement by typing \"yes\" on the console then press the Return key. Type \"no\" to decline and to abort the extension setup."
+msgstr "يۇقىرىدا كۆرسىتىلگەن تولۇق ئىجازەتنامىنى ئوقۇڭ. كونترول سۇپىسىدا \"ھەئە\"نى كىرگۈزۈپ كېلىشىمنى قوبۇل قىلىپ ئاندىن Return كۇنۇپكىسىنى بېسىڭ. \"ياق\" نى كىرگۈزۈپ رەت قىلىپ كېڭەيتىلمە يۇمشاق دېتالنى قاچىلىمىسىڭىز بولىدۇ."
 
 #: source/deployment/unopkg/unopkg.src#RID_STR_UNOPKG_ACCEPT_LIC_3.String.Text
-msgid  "[Enter "yes" or "no"]:"
-msgstr ""
+msgid  "[Enter \"yes\" or \"no\"]:"
+msgstr "[\"ھەئە\" ياكى \"ياق\" كىرگۈزۈڭ]:"
 
 #: source/deployment/unopkg/unopkg.src#RID_STR_UNOPKG_ACCEPT_LIC_4.String.Text
-msgid  "Your input was not correct. Please enter "yes" or "no":"
-msgstr ""
+msgid  "Your input was not correct. Please enter \"yes\" or \"no\":"
+msgstr "كىرگۈزگىنىڭىز خاتا. \"ھەئە\" ياكى \"ياق\" كىرگۈزۈڭ:"
 
 #: source/deployment/unopkg/unopkg.src#RID_STR_UNOPKG_ACCEPT_LIC_YES.String.Text
 msgid  "YES"
@@ -701,7 +701,7 @@ msgstr "N"
 
 #: source/deployment/unopkg/unopkg.src#RID_STR_CONCURRENTINSTANCE.String.Text
 msgid  "unopkg cannot be started. The lock file indicates it as already running. If this does not apply, delete the lock file at:"
-msgstr ""
+msgstr "unopkg نى قوزغىتالمىدى. قۇلۇپلانغان ھۆججەت ئىجرا قىلىنىۋاتقانلىقىنى كۆرسىتىدۇ. ئەگەر بۇ خىل ئەھۋال مۇۋاپىق كەلمىسە، تۆۋەندىكى ئورۇندىكى قۇلۇپلانغان ھۆججەتنى ئۆچۈرۈڭ:"
 
 #: source/deployment/unopkg/unopkg.src#RID_STR_UNOPKG_ERROR.String.Text
 msgid  "ERROR: "
@@ -737,11 +737,11 @@ msgstr "خەتلەش"
 
 #: source/migration/wizard.src#STR_WELCOME_MIGRATION.String.Text
 msgid  "This wizard will guide you through the license agreement, the transfer of user data from %OLD_VERSION and the registration of %PRODUCTNAME.\n\nClick 'Next' to continue."
-msgstr ""
+msgstr "بۇ يېتەكچى سىزنى ئىجازەتنامىنى ئوقۇش %OLD_VERSION دىن ئىشلەتكۈچى ئۇچۇرى يوللاش ۋە %PRODUCTNAME نى خەتلەشكە يېتەكلەيدۇ.\n\n«كەينى» چېكىلسە داۋاملىشىدۇ."
 
 #: source/migration/wizard.src#STR_WELCOME_WITHOUT_LICENSE.String.Text
 msgid  "This wizard will guide you through the registration of %PRODUCTNAME.\n\nClick 'Next' to continue."
-msgstr ""
+msgstr "بۇ يېتەكچى سىزنى %PRODUCTNAME نى خەتلەشكە يېتەكلەيدۇ.\n\n«كەينى» چېكىلسە داۋاملىشىدۇ."
 
 #: source/migration/wizard.src#STR_FINISH.String.Text
 msgid  "~Finish"
@@ -749,11 +749,11 @@ msgstr "تامام(~F)"
 
 #: source/migration/wizard.src#STR_REGISTRATION_OOO.String.Text
 msgid  "You now have the opportunity to support and contribute to the fastest growing open source community in the world.\n\nHelp us prove that %PRODUCTNAME has already gained significant market share by registering.\n\nRegistering is voluntary and without obligation."
-msgstr ""
+msgstr "ھازىر سىزنىڭ قوللاش پۇرسىڭىز ۋە دۇنيادىكى تەرەققىياتى ئەڭ تېز مەنبە كودى ئاشكارا ئىجتىمائى رايوندا تۆھپە قوشۇش پۇرسىتىڭىز بار.\n\nخەتلىتىش ئارقىلىق %PRODUCTNAME نىڭ تېخىمۇ كۆپ بازار تەقسىمات ئۈلۈشىگە ئېرىشكەنلىكىمىزنى ئىسپاتلاشقا ياردەملىشىڭ.\n\nخەتلىتىش ئۆز ئىختىيارلىقى بىلەن، ھەرگىزمۇ مەجبۇرىي ئەمەس."
 
 #: source/migration/wizard.src#ERRBOX_REG_NOSYSBROWSER.ErrorBox.Message
 msgid  "An error occurred in starting the web browser.\nPlease check the %PRODUCTNAME and web browser settings."
-msgstr ""
+msgstr "توركۆرگۈنى قوزغاتقاندا خاتالىق كۆرۈلدى.\n%PRODUCTNAME ۋە تور كۆرگۈ تەڭشىكىنى تەكشۈرۈڭ."
 
 #: source/migration/wizard.src#QB_ASK_DECLINE.QueryBox.Message
 msgid  "Do you really want to decline?"
@@ -765,7 +765,7 @@ msgstr "%PRODUCTNAME %PRODUCTVERSION مەرھابا"
 
 #: source/migration/wizard.src#TP_WELCOME.FT_WELCOME_BODY.FixedText.Text
 msgid  "This wizard will guide you through the license agreement and the registration of %PRODUCTNAME.\n\nClick 'Next' to continue."
-msgstr ""
+msgstr "بۇ يېتەكچى سىزنى ئىجازەتنامىنى ئوقۇش ۋە %PRODUCTNAME نى خەتلەشكە يېتەكلەيدۇ.\n\n«كەينى» چېكىلسە داۋاملىشىدۇ."
 
 #: source/migration/wizard.src#TP_LICENSE.FT_LICENSE_HEADER.FixedText.Text
 msgid  "Please follow these steps to accept the license"
@@ -777,7 +777,7 @@ msgstr "1."
 
 #: source/migration/wizard.src#TP_LICENSE.FT_LICENSE_BODY_1_TXT.FixedText.Text
 msgid  "View the complete License Agreement. Please use the scrollbar or the '%PAGEDOWN' button in this dialog to view the entire license text."
-msgstr ""
+msgstr "ئىجازەت كېلىشىمىنى تولۇق ئوقۇڭ، بۇ سۆزلىشىش رامكىسىدىكى دۇمىلىما سۈرگۈچ ياكى '%PAGEDOWN' كۇنۇپكىسىنى بېسىپ، ئىجازەتنامىنىڭ تولۇق تېكستىنى ئوقۇڭ."
 
 #: source/migration/wizard.src#TP_LICENSE.FT_LICENSE_BODY_2.FixedText.Text
 msgid  "2."
@@ -805,7 +805,7 @@ msgstr "شەخسىي سانلىق مەلۇمات يوللا"
 
 #: source/migration/wizard.src#TP_MIGRATION.FT_MIGRATION_BODY.FixedText.Text
 msgid  "Most personal data from %OLDPRODUCT installation can be reused in %PRODUCTNAME %PRODUCTVERSION.\n\nIf you do not want to reuse any settings in %PRODUCTNAME %PRODUCTVERSION, unmark the check box."
-msgstr ""
+msgstr "%OLDPRODUCT قاچىلاش جەريانىدىكى كۆپ قىسىم شەخسىي سانلىق مەلۇماتلار %PRODUCTNAME %PRODUCTVERSION دا تەكرار ئىشلىتىلىدۇ.\n\nئەگەر سىز %PRODUCTNAME %PRODUCTVERSION دا ھەر قانداق تەڭشەكنى تەكرار ئىشلەتمىسىڭىز، كۆپ تاللاش رامكىسىدىكى تاللاش بەلگىسىنى چىقىرىۋېتىڭ."
 
 #: source/migration/wizard.src#TP_MIGRATION.CB_MIGRATION.CheckBox.Text
 msgid  "Transfer personal data"
@@ -817,7 +817,7 @@ msgstr "توردا يېڭىلا"
 
 #: source/migration/wizard.src#TP_UPDATE_CHECK.FT_UPDATE_CHECK_BODY.FixedText.Text
 msgid  "%PRODUCTNAME searches automatically at regular intervals for new versions.\nIn doing so online update does not transfer personal data.\nAs soon as a new version is available, you will be notified.\n\nYou can configure this feature at Tools / Options... / %PRODUCTNAME / Online Update."
-msgstr ""
+msgstr "%PRODUCTNAME قەرەلىك ھالدا يېڭى نەشرىنى ئۆزلۈكىدىن ئىزدەيدۇ.\nبۇ جەرياندا توردا يېڭىلاش شەخسىي سانلىق مەلۇمات يوللىمايدۇ.\nيېڭى نەشرىنى بايقىسىلا، سىستېما سىزگە ئەسكەرتىدۇ.\n\n«قورال/تاللانما…/ %PRODUCTNAME /توردا يېڭىلا» دىن بۇ ئىقتىدارنى تەڭشىيەلەيسىز."
 
 #: source/migration/wizard.src#TP_UPDATE_CHECK.CB_UPDATE_CHECK.CheckBox.Text
 msgid  "~Check for updates automatically"
@@ -829,7 +829,7 @@ msgstr "تۆۋەندە تولۇق ئاتىڭىز ۋە قىسقارتىلمىسى
 
 #: source/migration/wizard.src#TP_USER.FT_USER_BODY.FixedText.Text
 msgid  "The user name will be used in the document properties, templates and when you record changes made to documents."
-msgstr ""
+msgstr "پۈتۈك خاسلىقى، قېلىپ ۋە پۈتۈكتىكى خاتىرە ئۆزگەرتىلگەندە ئىشلەتكۈچى ئاتى ئىشلىتىدۇ."
 
 #: source/migration/wizard.src#TP_USER.FT_USER_FIRST.FixedText.Text
 msgid  "~First name"
@@ -853,7 +853,7 @@ msgstr "%PRODUCTNAME خەتلە"
 
 #: source/migration/wizard.src#TP_REGISTRATION.FT_REGISTRATION_BODY.FixedText.Text
 msgid  "You now have the opportunity to register as a %PRODUCTNAME user. Registration is voluntary and is without obligation.\n\nIf you register, we can inform you about new developments concerning this product."
-msgstr ""
+msgstr "سىز %PRODUCTNAME نىڭ ئىشلەتكۈچىسى بولۇپ خەتلىتەلەيسىز. خەتلىتىش ئۆز ئىختىيارىڭىزدا، ھەرگىز مەجبۇرلانمايسىز.\n\nئەگەر سىز خەتلەتسىڭىز، مەزكۇر مەھسۇلاتنىڭ ئەڭ يېڭى تەرەققىيات ئۇچۇرلىرىدىن سىزنى خەۋەردار قىلىمىز."
 
 #: source/migration/wizard.src#TP_REGISTRATION.RB_REGISTRATION_NOW.RadioButton.Text
 msgid  "I want to register ~now"
@@ -869,7 +869,7 @@ msgstr "خەتلەتمەيمەن(~R)"
 
 #: source/migration/wizard.src#TP_REGISTRATION.FT_REGISTRATION_END.FixedText.Text
 msgid  "We hope you enjoy working with %PRODUCTNAME.\n\nTo exit the wizard, click 'Finish'."
-msgstr ""
+msgstr "%PRODUCTNAME نى  ئىشلىتىشنى ياقتۇرۇشىڭىزنى چىن دىلىمىزدىن ئۈمىد قىلىمىز.\n\nيېتەكچىدىن چېكىنسىڭىز، «تامام» نى چېكىڭ."
 
 #: win32/source/rebase/rebasegui.ulf#%APP_TITLE%
 msgid  "Installation Status"
@@ -886,6 +886,10 @@ msgstr "قاچىلاش مۇلازىمىتىرنى ئەلالاشتۇردى."
 #: win32/source/rebase/rebasegui.ulf#%MSG_NO_INSTALLATION_FOUND%
 msgid  "Cannot find Office installation."
 msgstr "Office قاچىلىنىشى تېپىلمىدى."
+
+#: win32/source/setup/setup.ulf#%APP_TITLE%
+msgid  "Setup"
+msgstr "قاچىلا"
 
 #: win32/source/setup/setup.ulf#%APP_PROD_TITLE%
 msgid  "The %PRODUCTNAME Setup"
@@ -905,7 +909,7 @@ msgstr "قاچىلاشتىن ۋاز كەچتى"
 
 #: win32/source/setup/setup.ulf#%REQUIRES_ADMIN_PRIV%
 msgid  "Administrator privileges are required for upgrading the Windows Installer."
-msgstr ""
+msgstr "Windows Installer يېڭىلاشقا باشقۇرغۇچى ھوقۇقى بولۇشى لازىم."
 
 #: win32/source/setup/setup.ulf#%FILE_NOT_FOUND%
 msgid  "Setup was unable to find the file '%s'."
@@ -917,15 +921,15 @@ msgstr "ئىناۋەتسىز بۇيرۇق پارامېتىرى '%s'. '/?' ئىش
 
 #: win32/source/setup/setup.ulf#%SETUP_TO_OLD%
 msgid  "This package requires at least the version '%s' of the Windows Installer. \nYou have Windows Installer '%s' on your system!"
-msgstr ""
+msgstr "بۇ يۇمشاق دېتال بوغچىسىنى قاچىلاشقا '%s' نەشرىدىكى Windows Installer بولۇشى لازىم. \nسىستېمىدىكى Windows Installer نەشرى '%s' !"
 
 #: win32/source/setup/setup.ulf#%SETUP_NOT_FOUND%
 msgid  "This package requires the Windows Installer. \nYou need at least Windows Installer '%s' on your system!"
-msgstr ""
+msgstr "بۇ يۇمشاق دېتال بوغچىسىنى قاچىلاشقا Windows Installer بولۇشى لازىم. \nسىستېمىدا Windows Installer نىڭ '%s' نەشرى بولۇشى لازىم!"
 
 #: win32/source/setup/setup.ulf#%USAGE%
 msgid  "Usage:\n   /? :  Shows this dialog.\n   /a :  Performs an administrative installation.\n   /j[u|m] :  Performs an advertising installation.\n   /q[n] : Do not show any user interface (silent mode).\n"
-msgstr ""
+msgstr "ئىشلىتىش ئۇسۇلى:\n   /? :  مەزكۇر كۆزنەكنى كۆرسىتىدۇ.\n   /a :  باشقۇرغۇچى سۈپىتىدە قاچىلايدۇ. \n   /j[u|m] :  ئىخچام قاچىلاشنى ئىجرا قىلىدۇ. \n   /q[n] : ھېچقانداق ئىشلەتكۈچى كۆرۈنمە يۈزىنى كۆرسەتمەيدۇ (جىمجىت ھالەت)\n"
 
 #: win32/source/setup/setup.ulf#%ALREADY_RUNNING%
 msgid  "There is already a setup process running."
@@ -1046,7 +1050,3 @@ msgstr "خەنزۇچە (ئاددى)"
 #: win32/source/setup/setup.ulf#%LANGUAGE_PT_PT%
 msgid  "Portuguese (Portugal)"
 msgstr "پورتۇگالچە (پورتۇگالىيە)"
-
-#: win32/source/setup/setup.ulf#%APP_TITLE%
-msgid  "Setup"
-msgstr "قاچىلا"

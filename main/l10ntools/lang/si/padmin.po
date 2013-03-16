@@ -33,7 +33,7 @@ msgstr ""
 
 #: source/padialog.src#RID_FONTIMPORT_DIALOG.RID_FIMP_TXT_HELP.FixedText.Text
 msgid  "Please select the folder from which you want to import fonts. Add the selected fonts by clicking the OK button."
-msgstr ""
+msgstr "ඔබට අකුරු ආයාත කිරීමට අවශ්‍ය කුමන බහලුමෙන්දැයි තෝරන්න. හරි බොත්තම එබීමෙන් තේරූ අකුරු එක් කරන්න."
 
 #: source/padialog.src#RID_FONTIMPORT_DIALOG.RID_FIMP_FL_FROM.FixedLine.Text
 msgid  "Source directory"
@@ -61,7 +61,7 @@ msgstr "ෆොන්ට එක් කරන්න"
 
 #: source/padialog.src#RID_FONTIMPORT_DIALOG.RID_FIMP_STR_QUERYOVERWRITE.String.Text
 msgid  "Do you really want to overwrite this font file?\n   %s"
-msgstr ""
+msgstr "ඔබට ඇත්තටම මෙම ෆොන්ට ගොනුව මත ලිවීමට අවශ්‍යද?\n   %s"
 
 #: source/padialog.src#RID_FONTIMPORT_DIALOG.RID_FIMP_STR_OVERWRITEALL.String.Text
 msgid  "All"
@@ -73,19 +73,19 @@ msgstr "කිසිවක් නැත"
 
 #: source/padialog.src#RID_FONTIMPORT_DIALOG.RID_FIMP_STR_NOAFM.String.Text
 msgid  "A format file (with an .afm extension) has not been found for the font\n%s\ntherefore, the font cannot be installed. Format files can be created with ghostscript, for example, and have to be located in the same directory as the font files or its afm subdirectory."
-msgstr ""
+msgstr "%s ෆොන්ටය සඳහා හැඩතල ගොනුවක් (.afm දිගුවක් සහිත) හමු නොවුණු නිසා \n‍ෆොන්ටය ස්ථාපනය කිරීමට නොහැක. හැඩතල ගොනු ghostscript මඟින් සාදගත හැක, උදාහරණයක් ලෙස සහ ෆොන්ට ගොනු හෝ ඒවායේ afm උප බහලුම් පිහිටි බහලුමේහිම පිහිටීමට අවශ්‍යය."
 
 #: source/padialog.src#RID_FONTIMPORT_DIALOG.RID_FIMP_STR_AFMCOPYFAILED.String.Text
 msgid  "The metric file for the font file\n   %s\ncould not be copied. The font will not be installed."
-msgstr ""
+msgstr "%s ෆොන්ට ගොනුව සඳහා ප්‍රමිති ගොනුව\nපිටපත් කිරීමට නොහැකි විය. ෆොන්ටය ස්ථාපනය නොවනු ඇත."
 
 #: source/padialog.src#RID_FONTIMPORT_DIALOG.RID_FIMP_STR_FONTCOPYFAILED.String.Text
 msgid  "The font file\n   %s\ncould not be copied. The font will not be installed."
-msgstr ""
+msgstr "ෆොන්ට ගොනුව\n%s\n ගොනුව පිටපත් කිරීමට නොහැකි විය. ෆොන්ට ස්ථාපනය නොවනු ඇත."
 
 #: source/padialog.src#RID_FONTIMPORT_DIALOG.RID_FIMP_STR_NOWRITEABLEFONTSDIR.String.Text
 msgid  "A directory containing a writable fonts.dir file is not located in the Fontpath. Therefore, fonts cannot be installed."
-msgstr ""
+msgstr "ලිවිය හැකි fonts.dir ගොනුවක් සහිත බහලුමක් ෆොන්ට පෙතේ අඩංගු නොවේ. එමනිසා ෆොන්ට ස්ථාපනය කළ නොහැක."
 
 #: source/padialog.src#RID_FONTIMPORT_DIALOG.RID_FIMP_STR_NUMBEROFFONTSIMPORTED.String.Text
 msgid  "%d new fonts were added."
@@ -173,7 +173,7 @@ msgstr "%s මුද්‍රණ යන්ත්‍රය විවෘත කි
 
 #: source/padialog.src#RID_PA_TXT_TESTPAGE_PRINTED.String.Text
 msgid  "The test page was printed succesfully. Please check the result."
-msgstr ""
+msgstr "පරීක්ෂණ පිටුව සාර්ථක ලෙස මුද්‍රණය කරන ලදි. කරුණාකර ප්‍රතිඵලය පරීක්ෂා කරන්න."
 
 #: source/padialog.src#RID_ERR_NOWRITE.String.Text
 msgid  "No printers can be installed, because the file system is read-only.\nPlease contact your system administrator."
@@ -289,7 +289,7 @@ msgstr "ගොනුවේ ප්‍රමිතියක් අඩංගු න
 
 #: source/padialog.src#RID_AFMERROR_BOX_TXT.String.Text
 msgid  "The metric\n\n%s\n\ncould not be converted for the following reason:\n\n"
-msgstr ""
+msgstr "මෙට්‍රික්\n\n%s\n\nපහත හේතුව නිසා අනුවර්තනය කල නොහැක:\n\n"
 
 #: source/padialog.src#RID_PROGRESS_DLG.RID_PROGRESS_PROGRESS_TXT.FixedText.Text
 msgid  "Progress"
@@ -320,8 +320,8 @@ msgid  "~Selection of drivers"
 msgstr "ධාවක තේරීම (~S)"
 
 #: source/padialog.src#RID_PPDIMPORT_DLG.RID_PPDIMP_TXT_DRIVER.FixedText.Text
-msgid  "Please select the drivers to install and press "%s"."
-msgstr ""
+msgid  "Please select the drivers to install and press \"%s\"."
+msgstr "කරුණාකර ස්ථාපනය කිරීමට අවශ්‍ය ධාවක තෝරා \"%s\" ඔබන්න."
 
 #: source/padialog.src#RID_PPDIMPORT_DLG.RID_PPDIMP_STR_LOADINGPPD.String.Text
 msgid  "Searching for drivers"
@@ -332,8 +332,8 @@ msgid  "Driver Installation"
 msgstr "ධාවකය ස්ථාපනය කිරීම"
 
 #: source/padialog.src#RID_QUERY_REMOVEDRIVER.String.Text
-msgid  "Do you really want to remove the driver "%s"?"
-msgstr ""
+msgid  "Do you really want to remove the driver \"%s\"?"
+msgstr "ඔබට ඇත්තටම \"%s\" ධාවකය ඉවත් කිරීමට අවශ්‍යද?"
 
 #: source/padialog.src#RID_QUERY_REMOVEPRINTER.String.Text
 msgid  "Do you really want to remove this printer ?"
@@ -344,40 +344,40 @@ msgid  "Do you really want to remove the selected fonts ?"
 msgstr "ඔබට ඇත්තටම තේරූ ෆොන්ට ඉවත් කිරීමට අවශ්‍යද?"
 
 #: source/padialog.src#RID_QUERY_DRIVERUSED.String.Text
-msgid  "There are still printers using the driver "%s". Do you really want to remove it? The corresponding printers will also be removed."
-msgstr ""
+msgid  "There are still printers using the driver \"%s\". Do you really want to remove it? The corresponding printers will also be removed."
+msgstr "දැනටමත්  \"%s\" ධාවකය භාවිතා කරන මුද්‍රණ යන්ත පවතී. ඔබට ඇත්තටම එය ඉවත් කිරීමට අවශ්‍යද? අනුරූප මුද්‍රණ යන්ත්‍රද ඉවත් වනු ඇත."
 
 #: source/padialog.src#RID_ERR_REMOVESGENPRT.String.Text
-msgid  "The driver "%s" is always needed and can therefore not be removed."
-msgstr ""
+msgid  "The driver \"%s\" is always needed and can therefore not be removed."
+msgstr "\"%s\"  ධාවකය සෑම විටම අවශ්‍ය වන නිසා ඉවත් කළ නොහැක."
 
 #: source/padialog.src#RID_ERR_REMOVEDRIVERFAILED.String.Text
-msgid  "The driver "%s1" could not be removed. It was not possible to remove the file\n\n%s2."
-msgstr ""
+msgid  "The driver \"%s1\" could not be removed. It was not possible to remove the file\n\n%s2."
+msgstr " \"%s1\"ධාවකය ඉවත් කිරීමට නොහැකි විය. ගොනුව ඉවත් කිරීමට නොහැකි විය.\n\n%s2"
 
 #: source/padialog.src#RID_ERR_REMOVEDEFAULTDRIVER.String.Text
-msgid  "The driver "%s" is used by your default printer. Therefore, it cannot be removed."
-msgstr ""
+msgid  "The driver \"%s\" is used by your default printer. Therefore, it cannot be removed."
+msgstr "\"%s\" ධාවකය ඔබගේ පෙරනිමි මුද්‍රණ යන්ත්‍රය විසින් භාවිතා කරනු ලබයි. එමනිසා එය ඉවත් කළ නොහැක."
 
 #: source/padialog.src#RID_ERR_PRINTERNOTREMOVEABLE.String.Text
 msgid  "The printer %s cannot be removed."
 msgstr "%s මුද්‍රණ යන්ත්‍රය ඉවත් කළ නොහැක."
 
 #: source/padialog.src#RID_TXT_PRINTERALREADYEXISTS.String.Text
-msgid  "A printer named "%s" already exists. This printer will not be imported."
-msgstr ""
+msgid  "A printer named \"%s\" already exists. This printer will not be imported."
+msgstr "\"%s\" නමින් මුද්‍රණ යන්ත්‍රයක් දැනටමත් පවතී. මෙම මුද්‍රණ යන්ත්‍රය ආයාත නොවනු ඇත."
 
 #: source/padialog.src#RID_TXT_PRINTERWITHOUTCOMMAND.String.Text
-msgid  "The printer "%s" has no valid configuration and, therefore, cannot be imported."
-msgstr ""
+msgid  "The printer \"%s\" has no valid configuration and, therefore, cannot be imported."
+msgstr " \"%s\"  මුද්‍රණ යන්ත්‍රයට වලංගු වින්‍යාසගත කිරීමක් නැති නිසා ආයාත කළ නොහැක."
 
 #: source/padialog.src#RID_TXT_DRIVERDOESNOTEXIST.String.Text
-msgid  "The driver for the printer "%s1" (%s2) is not installed. Therefore the printer cannot be imported."
-msgstr ""
+msgid  "The driver for the printer \"%s1\" (%s2) is not installed. Therefore the printer cannot be imported."
+msgstr "\"%s1\" (%s2) මුද්‍රණ යන්ත්‍රය සඳහා ධාවකය ස්ථාපනය කර නොමැත. එමනිසා මුද්‍රණ යන්ත්‍රය ආයාත කළ නොහැක."
 
 #: source/padialog.src#RID_TXT_PRINTERADDFAILED.String.Text
-msgid  "The printer "%s" could not be added."
-msgstr ""
+msgid  "The printer \"%s\" could not be added."
+msgstr "\"%s\"මුද්‍රණ යන්ත්‍රය එක් කිරීමට නොහැකි විය."
 
 #: source/padialog.src#RID_ADD_PRINTER_DIALOG.RID_ADDP_BTN_FINISH.OKButton.Text
 msgid  "~Finish"
@@ -488,12 +488,12 @@ msgid  "~Help"
 msgstr "උදව් (~H)"
 
 #: source/padialog.src#RID_ADDP_PAGE_COMMAND.RID_ADDP_CMD_STR_PDFHELP.String.Text
-msgid  "The command line for PDF converters is executed as follows: for each document printed, "(TMP)" in the command line is replaced by a temporary file and "(OUTFILE)" in the command line is replaced by the target PDF file name. If "(TMP)" is in the command line, the PostScript code will be supplied via a file, otherwise via standard input (i.e. as a pipe)."
-msgstr ""
+msgid  "The command line for PDF converters is executed as follows: for each document printed, \"(TMP)\" in the command line is replaced by a temporary file and \"(OUTFILE)\" in the command line is replaced by the target PDF file name. If \"(TMP)\" is in the command line, the PostScript code will be supplied via a file, otherwise via standard input (i.e. as a pipe)."
+msgstr "PDF පරිවර්තක සඳහා විධාන රේඛාව පහත පරිදි ක්‍රියාත්මක කරයි: සෑම මුද්‍රණය කරන ලිපියක් සඳහාම විධාන රේඛාවේ  \"(TMP)\" තාවකාලික ගොනුවකින් ප්‍රතිස්ථාපනය කරනු ලබන අතර විධාන රේඛාවේ  \"(OUTFILE)\" , ඉලක්ක PDF ගොනු නාමයෙන් ප්‍රතිස්ථාපනය කරනු ලබයි. \"(TMP)\"  විධාන රේඛාවේ නම් පසු සටහන් කේතය ගොනුවක් හරහා සපයනු ලබන අතර එසේ නොවේ නම් සම්මත ආදානය ලෙස (උදා. නළයක් ලෙස) සපයනු ලබයි."
 
 #: source/padialog.src#RID_ADDP_PAGE_COMMAND.RID_ADDP_CMD_STR_FAXHELP.String.Text
-msgid  "The command line for fax connections is executed as follows: for each fax sent, "(TMP)" in the command line is replaced by a temporary file and "(PHONE)" in the command line is replaced by the fax number. If "(TMP)" appears in the command line, the PostScript code will be supplied via a file, otherwise it is passed as standard input (i.e. as a pipe)."
-msgstr ""
+msgid  "The command line for fax connections is executed as follows: for each fax sent, \"(TMP)\" in the command line is replaced by a temporary file and \"(PHONE)\" in the command line is replaced by the fax number. If \"(TMP)\" appears in the command line, the PostScript code will be supplied via a file, otherwise it is passed as standard input (i.e. as a pipe)."
+msgstr "ෆැක්ස් සම්බන්ධතා සඳහා විධාන රේඛාව පහත පරිදි ක්‍රියාත්මක කරයි: සෑම යැවූ ෆැක්ස් පිටපත් සඳහාම \"(TMP)\"  විධාන රේඛාව තාවකාලික ගොනුවකින් ප්‍රතිස්ථාපනය කරනු ලබන අතර විධාන රේඛාවේ \"(PHONE)\" , ෆැක්ස් අංකයෙන් ප්‍රතිස්ථාපනය කරනු ලබයි. විධාන රේඛාවේ  \"(TMP)\" පෙනීමට ඇත්නම් පසු සටහන් කේතය ගොනුවක් හරහා සපයනු ලබන අතර එසේ නොවේ නම් සම්මත ආදානය ලෙස (උදා. නළයක් ලෙස) සපයනු ලබයි."
 
 #: source/padialog.src#RID_ADDP_PAGE_OLDPRINTERS.RID_ADDP_STR_TITLE.String.Text
 msgid  "Import printers from old versions"
@@ -501,7 +501,7 @@ msgstr "පැරණි අනුවාද වලින් මුද්‍රණ
 
 #: source/padialog.src#RID_ADDP_PAGE_OLDPRINTERS.RID_ADDP_OLD_TXT_PRINTERS.FixedText.Text
 msgid  "~These printers can be imported. Please select the ones you want to import."
-msgstr ""
+msgstr "මෙම මුද්‍රණ යන්ත්‍ර ආයාත කළ හැක. කරුණාකර ඔබට ආයාත කිරීමට අවශ්‍ය ඒවා තෝරන්න."
 
 #: source/padialog.src#RID_ADDP_PAGE_OLDPRINTERS.RID_ADDP_OLD_BTN_SELECTALL.PushButton.Text
 msgid  "~Select All"
@@ -737,7 +737,7 @@ msgstr "මුද්‍රකයේ ෆොන්ටයෙන් (~p)"
 
 #: source/rtsetup.src#RID_RTS_COMMANDPAGE.RID_RTS_CMD_CB_EXTERNAL.CheckBox.Text
 msgid  "~Use system print dialog, disable %PRODUCTNAME's print dialog"
-msgstr ""
+msgstr "පද්ධති මුද්‍රණ කිරීමේ සංවාදය භාවිතා කරන්න, %PRODUCTNAME හි මුද්‍රණ සංවාදය අක්‍රිය කරන්න (~U)"
 
 #: source/rtsetup.src#RID_RTS_COMMANDPAGE.RID_RTS_CMD_FT_QUICKCMD.FixedText.Text
 msgid  "Command for quick printing without dialog (optional)"
@@ -788,16 +788,16 @@ msgid  "~Remove"
 msgstr "ඉවත් කරන්න (~R)"
 
 #: source/rtsetup.src#RID_RTS_COMMANDPAGE.RID_RTS_CMD_STR_PDFHELP.String.Text
-msgid  "The command line for PDF converters is executed as follows: for each document printed, "(TMP)" in the command line is replaced by a temporary file and "(OUTFILE)" in the command line is replaced by the target PDF file name. If "(TMP)" is in the command line, the PostScript code will be supplied via a file, otherwise via standard input (i.e. as a pipe)."
-msgstr ""
+msgid  "The command line for PDF converters is executed as follows: for each document printed, \"(TMP)\" in the command line is replaced by a temporary file and \"(OUTFILE)\" in the command line is replaced by the target PDF file name. If \"(TMP)\" is in the command line, the PostScript code will be supplied via a file, otherwise via standard input (i.e. as a pipe)."
+msgstr "PDF පරිවර්ථක සඳහා විධාන රේඛාව පහත පරිදි ක්‍රියාත්මක කරයි: සෑම මුද්‍රණය කරන ලිපියක් සඳහාම විධාන රේඛාවේ  \"(TMP)\" තාවකාලික ගොනුවකින් ප්‍රතිස්ථාපනය කරනු ලබන අතර විධාන රේඛාවේ  \"(OUTFILE)\" , ඉලක්ක PDF ගොනු නාමයෙන් ප්‍රතිස්ථාපනය කරනු ලබයි. \"(TMP)\"  විධාන රේඛාවේ නම් පසු සටහන් කේතය ගොනුවක් හරහා සපයනු ලබන අතර එසේ නොවේ නම් සම්මත ආදානය ලෙස (උදා. නළයක් ලෙස) සපයනු ලබයි."
 
 #: source/rtsetup.src#RID_RTS_COMMANDPAGE.RID_RTS_CMD_STR_PRINTERHELP.String.Text
 msgid  "The command line for printer devices is executed as follows: the generated PostScript code is supplied as standard input (i.e. as a pipe) to the command line."
-msgstr ""
+msgstr "මුද්‍රණ යන්ත්‍ර උපාංග සඳහා විධාන රේඛාව පහත පරිදි ක්‍රියාත්මක කරයි: ජනනය කළ පසු සටහන් කේත විධාන රේඛාවට සම්මත ආදානය ලෙස (උදා: නළයක් ලෙස) සපයයි."
 
 #: source/rtsetup.src#RID_RTS_COMMANDPAGE.RID_RTS_CMD_STR_FAXHELP.String.Text
-msgid  "The command line for fax devices is executed as follows: for each fax sent, "(TMP)" in the command line is replaced by a temporary file and "(PHONE)" in the command line is replaced by the fax number. If "(TMP)" appears in the command line, the PostScript code will be supplied via a file, otherwise it is passed as standard input (i.e. as a pipe)."
-msgstr ""
+msgid  "The command line for fax devices is executed as follows: for each fax sent, \"(TMP)\" in the command line is replaced by a temporary file and \"(PHONE)\" in the command line is replaced by the fax number. If \"(TMP)\" appears in the command line, the PostScript code will be supplied via a file, otherwise it is passed as standard input (i.e. as a pipe)."
+msgstr "ෆැක්ස් සම්බන්ධතා සඳහා විධාන රේඛාව පහත පරිදි ක්‍රියාත්මක කරයි: සෑම යැවූ ෆැක්ස් පිටපත් සඳහාම විධාන රේඛාවේ \"(TMP)\" , තාවකාලික ගොනුවකින් ප්‍රතිස්ථාපනය කරනු ලබන අතර විධාන රේඛාවේ \"(PHONE)\" , ෆැක්ස් අංකයෙන් ප්‍රතිස්ථාපනය කරනු ලබයි. විධාන රේඛාවේ \"(TMP)\" පෙනීමට ඇත්නම් පසු සටහන් කේතය ගොනුවක් හරහා සපයනු ලබන අතර එසේ නොවේ නම් සම්මත ප්‍රදානය ලෙස (උදා. නළයක් ලෙස) සපයනු ලබයි."
 
 #: source/rtsetup.src#RID_RTS_OTHERPAGE.RID_RTS_OTHER_LEFTMARGIN_TXT.FixedText.Text
 msgid  "~Left margin"

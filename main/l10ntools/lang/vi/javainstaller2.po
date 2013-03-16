@@ -125,7 +125,7 @@ msgstr "Hãy đọc kỹ thỏa thuận giấy phép dưới đây."
 
 #: src/Localization/setupstrings.ulf#STRING_ACCEPTLICENSE3
 msgid  "If you have read and accept all the terms of the entire Software License Agreement, click 'Accept License' to continue with the installation."
-msgstr ""
+msgstr "Nếu bạn đã đọc và chấp thuận mọi thỏa thuận giấy phép phần mềm này thì nhắp nút « Đồng ý » để tiếp tục tiến trình cài đặt."
 
 #: src/Localization/setupstrings.ulf#STRING_CHOOSEDIRECTORY1
 msgid  "Select Installation Directory"
@@ -153,11 +153,11 @@ msgstr "Tạo thư mục mới"
 
 #: src/Localization/setupstrings.ulf#STRING_CHOOSEDIRECTORY5_QUESTION_MESSAGE
 msgid  "The directory '${DIR}' does not exist.\nDo you want to create it now?"
-msgstr ""
+msgstr "Thư mục « ${DIR} » không tồn tại.\nBạn có muốn tạo nó ngay bây giờ không?"
 
 #: src/Localization/setupstrings.ulf#STRING_CHOOSEDIRECTORY5_QUESTION_MESSAGE2
 msgid  "The directory '${DIR}' does not exist.\nDo you want to create it now or choose another directory?"
-msgstr ""
+msgstr "Thư mục « ${DIR} » không tồn tại.\nBạn có muốn tạo nó ngay bây giờ, hoặc chọn thư mục khác?"
 
 #: src/Localization/setupstrings.ulf#STRING_CHOOSEDIRECTORY6
 msgid  "Select root directory"
@@ -209,11 +209,11 @@ msgstr "Chọn cách cài đặt"
 
 #: src/Localization/setupstrings.ulf#STRING_CHOOSEINSTALLATIONTYPE4
 msgid  "The main components will be installed. Recommended for most users."
-msgstr ""
+msgstr "Các thành phần chính sẽ được cài đặt. Khuyến khích cho phần lớn người dùng."
 
 #: src/Localization/setupstrings.ulf#STRING_CHOOSEINSTALLATIONTYPE5
 msgid  "You choose the components you want to install and where they are stored. Recommended for advanced users."
-msgstr ""
+msgstr "Bạn chọn những thành phần cần cài đặt, và vị trí vào đó cần cài đặt. Khuyến khích chỉ cho người dùng thành thạo."
 
 #: src/Localization/setupstrings.ulf#STRING_CHOOSEINSTALLATIONTYPE6
 msgid  "Typical"
@@ -253,7 +253,7 @@ msgstr "Chào mừng"
 
 #: src/Localization/setupstrings.ulf#STRING_PROLOGUE2
 msgid  "This Installation Wizard will install ${PRODUCT_FULLNAME} on your computer."
-msgstr ""
+msgstr "Trợ thủ Cài đặt này sẽ cài đặt ${PRODUCT_FULLNAME} vào máy tính của bạn."
 
 #: src/Localization/setupstrings.ulf#STRING_PROLOGUE3
 msgid  "To continue, click 'Next'."
@@ -261,7 +261,7 @@ msgstr "Để tiếp tục, nhắp 'Tiếp'."
 
 #: src/Localization/setupstrings.ulf#STRING_PROLOGUE4
 msgid  "Note: This installation will be done without root privileges. Therefore you will have a reduced functionality (Java Runtime Environment (JRE) not installable, system integration not possible).\nClick 'Cancel' and change your privileges to root privileges, if you want to use the complete functionality."
-msgstr ""
+msgstr "Ghi chú : Tiến trình cài đặt này không cần quyền root. Do đó, sẽ có một số tính năng bị hạn chế (không thể cài đặt môi trường thực thi Java (JRE), không thể hợp nhất với hệ thống).\nMuốn sử dụng chức năng đầy đủ thì nhắp nút 'Thôi' và thay đổi quyền hạn thành quyền người chủ."
 
 #: src/Localization/setupstrings.ulf#STRING_INSTALLATIONCOMPLETED1
 msgid  "Installation Completed"
@@ -277,15 +277,15 @@ msgstr "Tiến trình cài đặt đã bị lỗi."
 
 #: src/Localization/setupstrings.ulf#STRING_INSTALLATIONCOMPLETED2
 msgid  "The Installation Wizard has successfully installed ${PRODUCT_FULLNAME} on your computer."
-msgstr ""
+msgstr "Trợ thủ Cài đặt đã cài đặt thành công ${PRODUCT_FULLNAME} vào máy tính này"
 
 #: src/Localization/setupstrings.ulf#STRING_INSTALLATIONCOMPLETED2_ABORT
 msgid  "The Installation Wizard was aborted. ${PRODUCT_NAME} is not installed on your computer."
-msgstr ""
+msgstr "Trợ thủ Cài đặt đã bị huy bỏ nên ${PRODUCT_NAME} chưa được cài đặt vào máy tính này."
 
 #: src/Localization/setupstrings.ulf#STRING_INSTALLATIONCOMPLETED2_ERROR
 msgid  "An error has occurred. Thus the Installation Wizard could not install ${PRODUCT_NAME} on your computer successfully. Click 'Details...' for more information."
-msgstr ""
+msgstr "Lỗi xảy ra. Không thể cài đặt thành công ${PRODUCT_NAME} vào máy tính này. Nhắp 'Chi tiết...' để xem thông tin thêm."
 
 #: src/Localization/setupstrings.ulf#STRING_INSTALLATIONCOMPLETED3
 msgid  "Click 'Finish' to exit the Wizard."
@@ -297,15 +297,15 @@ msgstr "Chi tiết..."
 
 #: src/Localization/setupstrings.ulf#STRING_UNINSTALLATIONPROLOGUE2
 msgid  "The ${PRODUCT_FULLNAME} Uninstallation Wizard will remove ${PRODUCT_FULLNAME} from your computer."
-msgstr ""
+msgstr "Trợ lý gỡ bỏ ${PRODUCT_FULLNAME} sẽ gỡ bỏ ${PRODUCT_FULLNAME} khỏi máy tính này."
 
 #: src/Localization/setupstrings.ulf#STRING_UNINSTALLATION_PROLOGUE_WRONG_PRIVILEGES_CURRENT_ROOT
 msgid  "Sorry, wrong privileges. Installation was done with User privilges, but you have Root privileges."
-msgstr ""
+msgstr "Sai quyền hạn. Tiến trình cài đặt đã chạy với quyền hạn của người dùng, còn bạn có quyền Root."
 
 #: src/Localization/setupstrings.ulf#STRING_UNINSTALLATION_PROLOGUE_WRONG_PRIVILEGES_CURRENT_USER
 msgid  "Sorry, wrong privileges. Installation was done with Root privilges, but you have User privileges."
-msgstr ""
+msgstr "Sai quyền hạn. Tiến trình cài đặt đã chạy với quyền của người chủ, còn bạn có quyền User."
 
 #: src/Localization/setupstrings.ulf#STRING_CHOOSEUNINSTALLATIONTYPE1
 msgid  "Select the Type of Uninstallation"
@@ -321,7 +321,7 @@ msgstr "Từng phần"
 
 #: src/Localization/setupstrings.ulf#STRING_CHOOSEUNINSTALLATIONTYPE4
 msgid  "Completely removes ${PRODUCT_FULLNAME} and all its components from your system."
-msgstr ""
+msgstr "Gỡ bỏ hoàn toàn ${PRODUCT_FULLNAME} và mọi thành phần của nó khỏi hệ thống này  "
 
 #: src/Localization/setupstrings.ulf#STRING_CHOOSEUNINSTALLATIONTYPE5
 msgid  "You choose the program features you want to remove."
@@ -333,7 +333,7 @@ msgstr "Toàn bộ"
 
 #: src/Localization/setupstrings.ulf#STRING_CHOOSEUNINSTALLATIONCOMPONENTS2
 msgid  "Components marked with an X will be removed. Mark the components you want to remove."
-msgstr ""
+msgstr "Đánh dấu những thành phần cần gỡ bỏ."
 
 #: src/Localization/setupstrings.ulf#STRING_UNINSTALLATIONIMMINENT1
 msgid  "Ready to Remove"
@@ -361,19 +361,19 @@ msgstr "Việc gỡ bỏ đã bị lỗi."
 
 #: src/Localization/setupstrings.ulf#STRING_UNINSTALLATIONCOMPLETED2
 msgid  "The Uninstallation Wizard has successfully removed ${PRODUCT_FULLNAME} from your computer."
-msgstr ""
+msgstr "Trợ lý đã gỡ bỏ thành công ${PRODUCT_FULLNAME} khỏi máy tính này."
 
 #: src/Localization/setupstrings.ulf#STRING_UNINSTALLATIONCOMPLETED2_PARTIAL
 msgid  "The Uninstallation Wizard has successfully removed the selected components of ${PRODUCT_NAME} from your computer."
-msgstr ""
+msgstr "Trợ lý đã gỡ bỏ thành công những thành phần ${PRODUCT_NAME} đã chọn khỏi máy tính này."
 
 #: src/Localization/setupstrings.ulf#STRING_UNINSTALLATIONCOMPLETED2_ABORT
 msgid  "The Uninstallation Wizard was aborted before completely removing ${PRODUCT_NAME} from your computer."
-msgstr ""
+msgstr "Trợ thủ Hủy Cài đặt đã bị hủy bỏ trước khi gỡ bỏ hoàn toàn ${PRODUCT_NAME} khỏi máy tính này."
 
 #: src/Localization/setupstrings.ulf#STRING_UNINSTALLATIONCOMPLETED2_ERROR
 msgid  "An error has occurred. Thus the Uninstallation Wizard could not remove ${PRODUCT_NAME} from your computer successfully. Click 'Details...' for more information."
-msgstr ""
+msgstr "Lỗi xảy ra. Trợ thủ hủy cài đặt không thể gỡ bỏ thành công ${PRODUCT_NAME} khỏi máy tính này. Nhắp 'Chi tiết...' để xem thông tin thêm."
 
 #: src/Localization/setupstrings.ulf#STRING_INSTALLERFACTORY_OS_NOT_SUPPORTED
 msgid  "Sorry, this Operating System is not supported yet."
@@ -385,7 +385,7 @@ msgstr "Tìm thấy một phiên bản ${PRODUCT_NAME} cũ trên hệ thống n�
 
 #: src/Localization/setupstrings.ulf#STRING_OLDER_VERSION_INSTALLED_REMOVE
 msgid  "You have to remove the older version of ${PRODUCT_NAME} before you can install the newer one."
-msgstr ""
+msgstr "Vậy bạn cần phải gỡ bỏ phiên bản ${PRODUCT_NAME} cũ, để cài đặt phiên bản mới."
 
 #: src/Localization/setupstrings.ulf#STRING_NEWER_VERSION_INSTALLED_FOUND
 msgid  "A newer version of ${PRODUCT_NAME} was found on your system in:"
@@ -393,7 +393,7 @@ msgstr "Tìm thấy một phiên bản ${PRODUCT_NAME} mới trên hệ thống 
 
 #: src/Localization/setupstrings.ulf#STRING_NEWER_VERSION_INSTALLED_REMOVE
 msgid  "You have to remove the newer version of ${PRODUCT_NAME} before you can install the older one."
-msgstr ""
+msgstr "Vậy bạn cần phải gỡ bỏ phiên bản ${PRODUCT_NAME} mới, để cài đặt phiên bản cũ."
 
 #: src/Localization/setupstrings.ulf#STRING_NEWER_VERSION_DATABASE
 msgid  "Database"
@@ -405,11 +405,11 @@ msgstr "Hãy chọn thư mục cài đặt khác."
 
 #: src/Localization/setupstrings.ulf#STRING_ROOT_PRIVILEGES_REQUIRED_1
 msgid  "The user you are logged in as cannot run the Installation Wizard."
-msgstr ""
+msgstr "Bạn đã đăng nhập bằng một người dùng không có quyền chạy Trợ thủ Cài đặt."
 
 #: src/Localization/setupstrings.ulf#STRING_ROOT_PRIVILEGES_REQUIRED_2
 msgid  "Please log out and log back in as a user with system administrator rights."
-msgstr ""
+msgstr "Hãy đăng xuất rồi đăng nhập lại dưới một người dùng có quyền quản trị hệ thống."
 
 #: src/Localization/setupstrings.ulf#STRING_DISCSPACE_INSUFFICIENT
 msgid  "Not enough discspace available for installation."
@@ -425,7 +425,7 @@ msgstr "Chỗ có sẵn"
 
 #: src/Localization/setupstrings.ulf#STRING_DISCSPACE_TIP
 msgid  "Please use another directory for installation or change your module selection."
-msgstr ""
+msgstr "Hãy dùng thư mục khác để cài đặt, hoặc thay đổi các mô-đun được chọn."
 
 #: src/Localization/setupstrings.ulf#STRING_ANALYZING_DATABASE1
 msgid  "Analyzing ..."
@@ -433,19 +433,19 @@ msgstr "Đang phân tích..."
 
 #: src/Localization/setupstrings.ulf#STRING_ANALYZING_DATABASE2
 msgid  "Analyzing database\nPlease wait a moment ..."
-msgstr ""
+msgstr "Đang phân tích cơ sở dữ liệu...\nHãy đợi một chút."
 
 #: src/Localization/setupstrings.ulf#STRING_PROLOGUE_1
 msgid  "Welcome to the Installation Wizard.<p>This wizard asks you to supply configuration settings.<p>At the bottom of each page are navigation buttons that let you move through the Installation Wizard:"
-msgstr ""
+msgstr "Chào mừng bạn dùng Trợ thủ Cài đặt.<p>Trợ thủ này giúp cấu hình ứng dụng.<p>Ở dưới mỗi trang có các nút điều hướng cho phép chuyển tới Trợ lý Cài đặt."
 
 #: src/Localization/setupstrings.ulf#STRING_PROLOGUE_2
 msgid  "'Back' returns you to the previous page."
-msgstr "Nút \"Lùi\" sẽ đưa bạn trở về trang trước."
+msgstr "Nút \"Lùi\" để trở về trang trước."
 
 #: src/Localization/setupstrings.ulf#STRING_PROLOGUE_3
 msgid  "'Next' takes you to the next page. "
-msgstr "Nút « Tiếp » thì tiếp tới trang sau. "
+msgstr "Nhấn  \"Tiếp\" để chuyển tới trang sau."
 
 #: src/Localization/setupstrings.ulf#STRING_PROLOGUE_4
 msgid  "'Cancel' ends the Installation Wizard without installing this software."
@@ -453,7 +453,7 @@ msgstr "Nhấn \"Thôi\" sẽ kết thúc Trợ thủ Cài đặt, dừng không
 
 #: src/Localization/setupstrings.ulf#STRING_PROLOGUE_5
 msgid  "'Help' displays the Help with further information about the page currently displayed."
-msgstr ""
+msgstr "Nhấn \"Trợ giúp\" sẽ hiển thị thêm thông tin về trang bạn đang xem."
 
 #: src/Localization/setupstrings.ulf#STRING_PROLOGUE_6
 msgid  "'OK' exits the Help page and returns you to the Installation Wizard."
@@ -461,7 +461,7 @@ msgstr "Nhấn \"OK\" để dời trang Trợ giúp và trở về Trợ thủ C
 
 #: src/Localization/setupstrings.ulf#STRING_UNINSTALLATIONPROLOGUE_1
 msgid  "Welcome to the Uninstallation Wizard.<p>This wizard asks you to supply configuration settings.<p>At the bottom of each page are navigation buttons that let you move through the Uninstallation Wizard:"
-msgstr ""
+msgstr "Chào mừng bạn dùng Trợ thủ Hủy Cài đặt.<p>Trợ thủ này giúp  cấu hình ứng dụng.<p>Ở dưới mỗi trang có các nút điều hướng mà cho phép tới Trợ lý hủy cài đặt:"
 
 #: src/Localization/setupstrings.ulf#STRING_UNINSTALLATIONPROLOGUE_2
 msgid  "'Back' returns you to the previous page."
@@ -477,7 +477,7 @@ msgstr "Nhắp 'Thôi' để kết thúc Trợ thủ Cài đặt nhưng không g
 
 #: src/Localization/setupstrings.ulf#STRING_UNINSTALLATIONPROLOGUE_5
 msgid  "'Help' displays the Help with further information about the page currently displayed."
-msgstr ""
+msgstr "Nút « Trợ giúp » thì hiển thị thêm thông tin về trang bạn đang xem."
 
 #: src/Localization/setupstrings.ulf#STRING_UNINSTALLATIONPROLOGUE_6
 msgid  "'OK' exits the Help page and returns you to the Uninstallation Wizard."
@@ -485,55 +485,55 @@ msgstr "Nút « OK » thì rời trang Trợ giúp và trở về Trợ lý Hủ
 
 #: src/Localization/setupstrings.ulf#STRING_ACCEPTLICENSE_1
 msgid  "Before you install this product, you must read and accept the entire Software License Agreement under which this software is licensed for your use."
-msgstr ""
+msgstr "Trước khi cài đặt sản phẩm này, bạn phải đọc và đồng ý với mọi điều kiện quyền dùng phần mềm này."
 
 #: src/Localization/setupstrings.ulf#STRING_ACCEPTLICENSE_2
 msgid  "If you have read and accept all the terms of the entire Software License Agreement, click 'Accept License' to continue with the installation."
-msgstr ""
+msgstr "Bạn đọc và đồng ý với mọi điều kiện quyền dùng phần mềm này thì nhắp nút « Đồng ý » để tiếp tục lại tiến trình cài đặt."
 
 #: src/Localization/setupstrings.ulf#STRING_ACCEPTLICENSE_3
 msgid  "If you do not accept all the terms of the Software License Agreement, click 'Decline' to end the Installation Wizard without installing this product."
-msgstr ""
+msgstr "Không đồng ý với điều kiện thì nhắp nút « Từ chối » để kết thúc trợ lý cài đặt mà không cài đặt sản phẩm này."
 
 #: src/Localization/setupstrings.ulf#STRING_CHOOSEINSTALLATIONTYPE_1
 msgid  "Select the type of product installation to perform from the following choices. This will determine how much information you need to provide for product configuration."
-msgstr ""
+msgstr "Chọn cách cài đặt sản phẩm trong những sự chọn theo đây. Sự chọn này thì quyết định kiểu cấu hình cần thiết."
 
 #: src/Localization/setupstrings.ulf#STRING_CHOOSEDIRECTORY_1
 msgid  "It is recommended that you install this product in the directory suggested by this Installation Wizard. <p>To choose a different location, click 'Browse...' or specify the full path of the directory to use in the text box below. <p>If this product is already installed, you cannot change the destination directory."
-msgstr ""
+msgstr "Bạn nên cài đặt sản phẩm này vào thư mục được trợ lý cài đặt đề nghị.<p>Để chọn vị trí khác, nhắp nút « Duyệt... », hoặc xác định đường dẫn đầy đủ đến thư mục cần dùng trong hộp văn bản bên dưới.<p>Nếu sản phẩm đã được cài đặt thì bạn không thể thay đổi thư mục đích."
 
 #: src/Localization/setupstrings.ulf#STRING_CHOOSECOMPONENTS_1
 msgid  "Components marked in color will be installed. Click the icon of a component to mark or unmark the component.<p>All already installed components cannot be selected for installation."
-msgstr ""
+msgstr "Đánh dấu bằng màu những thành phần cần cài đặt. Nhắp vào biểu tượng của mỗi thành phần để đánh dấu hay bỏ dấu của nó.<p>Thành phần đã được cài đặt thì không thể được chọn để cài đặt lại."
 
 #: src/Localization/setupstrings.ulf#STRING_INSTALLATIONIMMINENT_1
 msgid  "The listed components are ready for installation based on your configuration settings. <p>If you are satisfied with your selection, click 'Install Now' to begin. <p>To check or modify your settings on the previous pages, click 'Back'."
-msgstr ""
+msgstr "Những thành phần được liệt kê thì sẵn sàng cài đặt dựa trên cấu hình bạn đã đặt.<p>Sự chọn ổn thoả thì nhắp \" Cài đặt ngay\".<p>Để kiểm tra hay sửa đổi thiết lập trên các trang trước, nhắp \"Lùi\"."
 
 #: src/Localization/setupstrings.ulf#STRING_UNINSTALLATIONIMMINENT_1
 msgid  "The listed components are ready for uninstallation based on your configuration settings. <p>If you are satisfied with your selection, click 'Remove Now' to begin. <p>To check or modify your settings on the previous pages, click 'Back'."
-msgstr ""
+msgstr "Những thành phần được liệt kê thì sẵn sàng hủy cài đặt dựa trên cấu hình bạn đã đặt.<p>Sự chọn ổn thoả thì nhấn vào nút \"Gỡ bỏ ngay\".<p>Để kiểm tra hay sửa đổi thiết lập trên các trang trước, nhắp vào nút \"Lùi\"."
 
 #: src/Localization/setupstrings.ulf#STRING_INSTALLATIONONGOING_1
 msgid  "This page indicates the progress of the installation with the aid of a progress bar. To abort the installation process, click 'Stop'."
-msgstr ""
+msgstr "Trang này hiển thị thành tiến hành cài đặt đang chạy. Để hủy bỏ tiến trình cài đặt, nhắp vào nút « Dừng »."
 
 #: src/Localization/setupstrings.ulf#STRING_UNINSTALLATIONONGOING_1
 msgid  "This page indicates the progress of the uninstallation with the aid of a progress bar. To abort the uninstallation, click 'Stop'."
-msgstr ""
+msgstr "Trang này hiển thị thành tiến hành hủy cài đặt đang chạy. Để hủy bỏ tiến trình hủy cài đặt, nhắp vào nút « Dừng »."
 
 #: src/Localization/setupstrings.ulf#STRING_CHOOSEUNINSTALLATIONTYPE_1
 msgid  "Complete: This will remove all installed components of your version.<p>Partial: This removes only the components you will choose out of the components list."
-msgstr ""
+msgstr "Hoàn toàn: sự chọn này sẽ gỡ bỏ mọi thành phần đã cài đặt của phiên bản.<p>Từng phần: sự chọn này sẽ gỡ bỏ chỉ những thành phần bạn chọn trong danh sách các thành phần."
 
 #: src/Localization/setupstrings.ulf#STRING_CHOOSEUNINSTALLATIONCOMPONENTS_1
 msgid  "Components marked with an X will be removed. Click next to a component to mark or unmark it with an X."
-msgstr ""
+msgstr "Đánh dấu (bằng X) những thành phần cần gỡ bỏ. Nhắp chuột bên cạnh mỗi thành phần để đánh dấu hay bỏ dấu của nó."
 
 #: src/Localization/setupstrings.ulf#STRING_PACKAGEFORMAT_NOT_SUPPORTED
 msgid  "This package format is currently not supported for your operating system!"
-msgstr ""
+msgstr "Hiện thời không hỗ trợ định dạng gói này cho hệ điều hành này."
 
 #: src/Localization/setupstrings.ulf#STRING_OPERATING_SYSTEM
 msgid  "Operating system"
@@ -553,7 +553,7 @@ msgstr "Không có thành phần được chọn để cài đặt."
 
 #: src/Localization/setupstrings.ulf#STRING_NO_COMPONENTS_SELECTED_2
 msgid  "Click 'OK' to select one or more components for installation or to exit the Installation Wizard."
-msgstr ""
+msgstr "Nhắp vào nút « OK » để chọn một hay nhiều thành phần cần cài đặt, hoặc để thoát khỏi trợ lý cài đặt."
 
 #: src/Localization/setupstrings.ulf#STRING_NO_LANGUAGE_SELECTED_1
 msgid  "No languages have been selected for installation."
@@ -561,7 +561,7 @@ msgstr "Không có ngôn ngữ được chọn để cài đặt."
 
 #: src/Localization/setupstrings.ulf#STRING_NO_LANGUAGE_SELECTED_2
 msgid  "Click 'OK' to select one or more languages for installation or to exit the Installation Wizard."
-msgstr ""
+msgstr "Nhắp vào nút « OK » để chọn một hay nhiều ngôn ngữ cần cài đặt, hoặc để thoát khỏi trợ lý cài đặt."
 
 #: src/Localization/setupstrings.ulf#STRING_NO_APPLICATION_SELECTED_1
 msgid  "No applications have been selected for installation."
@@ -569,7 +569,7 @@ msgstr "Không có ứng dụng được chọn để cài đặt."
 
 #: src/Localization/setupstrings.ulf#STRING_NO_APPLICATION_SELECTED_2
 msgid  "Click 'OK' to select one or more application for installation or to exit the Installation Wizard."
-msgstr ""
+msgstr "Nhắp vào nút « OK » để chọn một hay nhiều ứng dụng cần cài đặt, hoặc để thoát khỏi trợ lý cài đặt."
 
 #: src/Localization/setupstrings.ulf#STRING_NOTHING_TO_UNINSTALL
 msgid  "Nothing to uninstall"
@@ -581,7 +581,7 @@ msgstr "Không có thành phần được chọn để hủy cài đặt."
 
 #: src/Localization/setupstrings.ulf#STRING_NO_UNINSTALLCOMPONENTS_SELECTED_2
 msgid  "Click 'OK' to select one or more components for uninstallation or to exit the Uninstallation Wizard."
-msgstr ""
+msgstr "Nhắp vào nút « OK » để chọn một hay nhiều thành phần cần hủy cài đặt, hoặc để thoát khỏi trợ lý hủy cài đặt."
 
 #: src/Localization/setupstrings.ulf#STRING_ALL_LANGUAGECOMPONENTS_SELECTED_1
 msgid  "All language components have been selected for uninstallation."
@@ -589,7 +589,7 @@ msgstr "Tất cả các thành phần ngôn ngữ đều được chọn để h
 
 #: src/Localization/setupstrings.ulf#STRING_ALL_LANGUAGECOMPONENTS_SELECTED_2
 msgid  "Click 'OK' to select one or more language components not for uninstallation or to exit the Uninstallation Wizard."
-msgstr ""
+msgstr "Nhắp vào nút « OK » để chọn một hay nhiều thành phần ngôn ngữ không cần hủy cài đặt, hoặc để thoát khỏi Trợ lý Hủy Cài đặt."
 
 #: src/Localization/setupstrings.ulf#STRING_ALL_APPLICATIONCOMPONENTS_SELECTED_1
 msgid  "All application components have been selected for uninstallation."
@@ -597,7 +597,7 @@ msgstr "Tất cả các thành phần ứng dụng đều được chọn để 
 
 #: src/Localization/setupstrings.ulf#STRING_ALL_APPLICATIONCOMPONENTS_SELECTED_2
 msgid  "Click 'OK' to select one or more application components not for uninstallation or to exit the Uninstallation Wizard."
-msgstr ""
+msgstr "Nhắp vào nút « OK » để chọn một hay nhiều thành phần ứng dụng không cần hủy cài đặt, hoặc để thoát khỏi trợ lý Hủy Cài đặt."
 
 #: src/Localization/setupstrings.ulf#STRING_CHANGE_SELECTION
 msgid  "Please change selection"

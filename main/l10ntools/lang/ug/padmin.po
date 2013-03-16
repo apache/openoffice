@@ -33,7 +33,7 @@ msgstr ""
 
 #: source/padialog.src#RID_FONTIMPORT_DIALOG.RID_FIMP_TXT_HELP.FixedText.Text
 msgid  "Please select the folder from which you want to import fonts. Add the selected fonts by clicking the OK button."
-msgstr ""
+msgstr "خەت نۇسخا ئەكىرىدىغان مۇندەرىجىنى تاللاڭ. ئاندىن «جەزملە»نى چېكىپ تاللانغان خەت نۇسخىلىرىنى قوشۇڭ."
 
 #: source/padialog.src#RID_FONTIMPORT_DIALOG.RID_FIMP_FL_FROM.FixedLine.Text
 msgid  "Source directory"
@@ -61,7 +61,7 @@ msgstr "خەت نۇسخا قوش"
 
 #: source/padialog.src#RID_FONTIMPORT_DIALOG.RID_FIMP_STR_QUERYOVERWRITE.String.Text
 msgid  "Do you really want to overwrite this font file?\n   %s"
-msgstr ""
+msgstr "خەت نۇسخا ھۆججىتىنى قاپلىۋېتەمسىز؟\n   %s"
 
 #: source/padialog.src#RID_FONTIMPORT_DIALOG.RID_FIMP_STR_OVERWRITEALL.String.Text
 msgid  "All"
@@ -73,19 +73,19 @@ msgstr "يوق"
 
 #: source/padialog.src#RID_FONTIMPORT_DIALOG.RID_FIMP_STR_NOAFM.String.Text
 msgid  "A format file (with an .afm extension) has not been found for the font\n%s\ntherefore, the font cannot be installed. Format files can be created with ghostscript, for example, and have to be located in the same directory as the font files or its afm subdirectory."
-msgstr ""
+msgstr "خەت نۇسخىسى\n%s\nنىڭ فورمات ھۆججىتى (كېڭەيتىلگەن ئاتى .afm)نى تاپالمىدى، شۇڭلاشقا بۇ خەت نۇسخىسىنى قاچىلىيالمايدۇ. فورمات ھۆججىتى ghostscript تەرىپىدىن شەكىللىنىپ خەت نۇسخىسى تۇرۇشلۇق مۇندەرىجە ياكى ئۇنىڭ تارماق مۇندەرىجىسى afm كە قويۇلىدۇ."
 
 #: source/padialog.src#RID_FONTIMPORT_DIALOG.RID_FIMP_STR_AFMCOPYFAILED.String.Text
 msgid  "The metric file for the font file\n   %s\ncould not be copied. The font will not be installed."
-msgstr ""
+msgstr "خەت نۇسخا ئۆلچەم ھۆججىتىنى كۆچۈرەلمىدى\n   %s\nبۇ خەت نۇسخىسىنى قاچىلىيالمايدۇ."
 
 #: source/padialog.src#RID_FONTIMPORT_DIALOG.RID_FIMP_STR_FONTCOPYFAILED.String.Text
 msgid  "The font file\n   %s\ncould not be copied. The font will not be installed."
-msgstr ""
+msgstr "خەت نۇسخا ھۆججىتىنى كۆچۈرەلمىدى\n   %s\nبۇ خەت نۇسخىسىنى قاچىلىيالمايدۇ."
 
 #: source/padialog.src#RID_FONTIMPORT_DIALOG.RID_FIMP_STR_NOWRITEABLEFONTSDIR.String.Text
 msgid  "A directory containing a writable fonts.dir file is not located in the Fontpath. Therefore, fonts cannot be installed."
-msgstr ""
+msgstr "خەت نۇسخا يولىدا ئىناۋەتلىك بولغان ئوقۇپ يازىدىغان fonts.dir ھۆججىتى يوق. شۇڭلاشقا ھېچقانداق خەت نۇسخىسى قاچىلىيالمايدۇ."
 
 #: source/padialog.src#RID_FONTIMPORT_DIALOG.RID_FIMP_STR_NUMBEROFFONTSIMPORTED.String.Text
 msgid  "%d new fonts were added."
@@ -177,7 +177,7 @@ msgstr "سىناق بەت مۇۋەپپەقىيەتلىك بېسىلدى. بېس�
 
 #: source/padialog.src#RID_ERR_NOWRITE.String.Text
 msgid  "No printers can be installed, because the file system is read-only.\nPlease contact your system administrator."
-msgstr ""
+msgstr "سىناق بېتى مۇۋەپپەقىيەتلىك بېسىپ چىقىرىلدى. تەكشۈرۈپ كۆرۈڭ."
 
 #: source/padialog.src#RID_QRY_PRTNAME.String.Text
 msgid  "~New printer name"
@@ -225,7 +225,7 @@ msgstr "قوش(~A)…"
 
 #: source/padialog.src#RID_FONTNAMEDIALOG.RID_FNTNM_FIXED.FixedText.Text
 msgid  "Note: The fonts are only available to the applications."
-msgstr ""
+msgstr "ئەسكەرتىش: بۇ خەت نۇسخىلىرىنى قوللىنىشچان پروگراممىلاردىلا ئىشلەتكىلى بولىدۇ."
 
 #: source/padialog.src#RID_FONTNAMEDIALOG.RID_FNTNM_STR_RENAME.String.Text
 msgid  "~New name for %s"
@@ -289,7 +289,7 @@ msgstr "بۇ ھۆججەتتە خەت نۇسخا ئۆلچەم سانلىق مەل
 
 #: source/padialog.src#RID_AFMERROR_BOX_TXT.String.Text
 msgid  "The metric\n\n%s\n\ncould not be converted for the following reason:\n\n"
-msgstr ""
+msgstr "خەت نۇسخا ئۆلچەم ھۆججىتى\n\n%s\n\nئايلاندۇرالمىدى، سەۋەبى تۆۋەندىكىچە:\n\n"
 
 #: source/padialog.src#RID_PROGRESS_DLG.RID_PROGRESS_PROGRESS_TXT.FixedText.Text
 msgid  "Progress"
@@ -320,8 +320,8 @@ msgid  "~Selection of drivers"
 msgstr "قوزغاتقۇچ تاللا(~S)"
 
 #: source/padialog.src#RID_PPDIMPORT_DLG.RID_PPDIMP_TXT_DRIVER.FixedText.Text
-msgid  "Please select the drivers to install and press "%s"."
-msgstr ""
+msgid  "Please select the drivers to install and press \"%s\"."
+msgstr "قاچىلايدىغان قوزغىتىش پروگراممىسىنى تاللاپ ئاندىن \"%s\"نى چېكىڭ."
 
 #: source/padialog.src#RID_PPDIMPORT_DLG.RID_PPDIMP_STR_LOADINGPPD.String.Text
 msgid  "Searching for drivers"
@@ -332,8 +332,8 @@ msgid  "Driver Installation"
 msgstr "قوزغىتىش پروگراممىسى قاچىلاش"
 
 #: source/padialog.src#RID_QUERY_REMOVEDRIVER.String.Text
-msgid  "Do you really want to remove the driver "%s"?"
-msgstr ""
+msgid  "Do you really want to remove the driver \"%s\"?"
+msgstr "\"%s\" بۇ قوزغىتىش پروگراممىسىنى راستىنلا ئۆچۈرەمسىز؟"
 
 #: source/padialog.src#RID_QUERY_REMOVEPRINTER.String.Text
 msgid  "Do you really want to remove this printer ?"
@@ -344,40 +344,40 @@ msgid  "Do you really want to remove the selected fonts ?"
 msgstr "تاللىغان خەت نۇسخىسىنى راستىنلا ئۆچۈرەمسىز؟"
 
 #: source/padialog.src#RID_QUERY_DRIVERUSED.String.Text
-msgid  "There are still printers using the driver "%s". Do you really want to remove it? The corresponding printers will also be removed."
-msgstr ""
+msgid  "There are still printers using the driver \"%s\". Do you really want to remove it? The corresponding printers will also be removed."
+msgstr "\"%s\" بۇ قوزغىتىش پروگراممىسىنى ئىشلىتىدىغان پرىنتېر مەۋجۇد. بۇ قوزغىتىش پروگراممىسىنى راستىنلا ئۆچۈرەمسىز؟ بۇنداق بولغاندا مۇناسىۋەتلىك پرىنتېرلارمۇ بىرلىكتە ئۆچۈرۈلىدۇ."
 
 #: source/padialog.src#RID_ERR_REMOVESGENPRT.String.Text
-msgid  "The driver "%s" is always needed and can therefore not be removed."
-msgstr ""
+msgid  "The driver \"%s\" is always needed and can therefore not be removed."
+msgstr "\"%s\" بۇ زۆرۈر بولغان قوزغىتىش پروگراممىسى، شۇڭلاشقا ئۆچۈرگىلى بولمايدۇ."
 
 #: source/padialog.src#RID_ERR_REMOVEDRIVERFAILED.String.Text
-msgid  "The driver "%s1" could not be removed. It was not possible to remove the file\n\n%s2."
-msgstr ""
+msgid  "The driver \"%s1\" could not be removed. It was not possible to remove the file\n\n%s2."
+msgstr "\"%s1\" قوزغىتىش پروگراممىسىنى چىقىرىۋېتەلمەيدۇ. تۆۋەندىكى ھۆججەتنى مۇۋەپپەقىيەتلىك ئۆچۈرەلمىدى\n\n%s2."
 
 #: source/padialog.src#RID_ERR_REMOVEDEFAULTDRIVER.String.Text
-msgid  "The driver "%s" is used by your default printer. Therefore, it cannot be removed."
-msgstr ""
+msgid  "The driver \"%s\" is used by your default printer. Therefore, it cannot be removed."
+msgstr "سىزنىڭ كۆڭۈلدىكى پرىنتېرىڭىز \"%s\" قوزغىتىش پروگراممىسى ئىشلىتىدۇ. شۇڭلاشقا بۇ قوزغىتىش پروگراممىسىنى چىقىرىۋېتەلمەيدۇ."
 
 #: source/padialog.src#RID_ERR_PRINTERNOTREMOVEABLE.String.Text
 msgid  "The printer %s cannot be removed."
 msgstr "%s پرىنتېرنى چىقىرىۋېتەلمىدى."
 
 #: source/padialog.src#RID_TXT_PRINTERALREADYEXISTS.String.Text
-msgid  "A printer named "%s" already exists. This printer will not be imported."
-msgstr ""
+msgid  "A printer named \"%s\" already exists. This printer will not be imported."
+msgstr "ئوخشاش ئاتتىكى \"%s\" پرىنتېر مەۋجۇد، شۇڭلاشقا بۇ پرىنتېرنى قوشالمايدۇ."
 
 #: source/padialog.src#RID_TXT_PRINTERWITHOUTCOMMAND.String.Text
-msgid  "The printer "%s" has no valid configuration and, therefore, cannot be imported."
-msgstr ""
+msgid  "The printer \"%s\" has no valid configuration and, therefore, cannot be imported."
+msgstr "پرىنتېر \"%s\"  سەپلىمىسى تولۇق ئەمەس. شۇڭلاشقا بۇ پرىنتېرنى قوشالمايدۇ."
 
 #: source/padialog.src#RID_TXT_DRIVERDOESNOTEXIST.String.Text
-msgid  "The driver for the printer "%s1" (%s2) is not installed. Therefore the printer cannot be imported."
-msgstr ""
+msgid  "The driver for the printer \"%s1\" (%s2) is not installed. Therefore the printer cannot be imported."
+msgstr "پرىنتېر \"%s1\" (%s2) ئېھتىياجلىق قوزغىتىش پروگراممىسى قاچىلانمىغان. شۇڭلاشقا بۇ پرىنتېرنى قوشالمايدۇ."
 
 #: source/padialog.src#RID_TXT_PRINTERADDFAILED.String.Text
-msgid  "The printer "%s" could not be added."
-msgstr ""
+msgid  "The printer \"%s\" could not be added."
+msgstr "\"%s\" پرىنتېرنى قوشالمىدى."
 
 #: source/padialog.src#RID_ADD_PRINTER_DIALOG.RID_ADDP_BTN_FINISH.OKButton.Text
 msgid  "~Finish"
@@ -488,12 +488,12 @@ msgid  "~Help"
 msgstr "ياردەم(~H)"
 
 #: source/padialog.src#RID_ADDP_PAGE_COMMAND.RID_ADDP_CMD_STR_PDFHELP.String.Text
-msgid  "The command line for PDF converters is executed as follows: for each document printed, "(TMP)" in the command line is replaced by a temporary file and "(OUTFILE)" in the command line is replaced by the target PDF file name. If "(TMP)" is in the command line, the PostScript code will be supplied via a file, otherwise via standard input (i.e. as a pipe)."
-msgstr ""
+msgid  "The command line for PDF converters is executed as follows: for each document printed, \"(TMP)\" in the command line is replaced by a temporary file and \"(OUTFILE)\" in the command line is replaced by the target PDF file name. If \"(TMP)\" is in the command line, the PostScript code will be supplied via a file, otherwise via standard input (i.e. as a pipe)."
+msgstr "PDF ئايلاندۇرغۇچنىڭ بۇيرۇق بىر تەرەپ قىلىش ئۇسۇلى تۆۋەندىكىچە: ھەر بىر پۈتۈكنى باسقاندا بۇيرۇق كىرگۈزۈش قۇرىدا ۋاقىتلىق ھۆججەتتىن بىرنى ئىشلىتىپ \"(TMP)\" بىلەن ئالماشتۇرىدۇ، نىشان PDF ھۆججەت ئاتى بىلەن \"(OUTFILE)\" نى ئالماشتۇرىدۇ. ئەگەر بۇيرۇق قۇرىدا \"(TMP)\" بولسا PostScript مەنبە كودى بىر ھۆججەتكە ئايلاندۇرىدۇ، بولمىسا ئۆلچەملىك كىرگۈزۈش سۈپىتىدە مۇئامىلە قىلىدۇ (مەسىلەن، pipe سۈپىتىدە)"
 
 #: source/padialog.src#RID_ADDP_PAGE_COMMAND.RID_ADDP_CMD_STR_FAXHELP.String.Text
-msgid  "The command line for fax connections is executed as follows: for each fax sent, "(TMP)" in the command line is replaced by a temporary file and "(PHONE)" in the command line is replaced by the fax number. If "(TMP)" appears in the command line, the PostScript code will be supplied via a file, otherwise it is passed as standard input (i.e. as a pipe)."
-msgstr ""
+msgid  "The command line for fax connections is executed as follows: for each fax sent, \"(TMP)\" in the command line is replaced by a temporary file and \"(PHONE)\" in the command line is replaced by the fax number. If \"(TMP)\" appears in the command line, the PostScript code will be supplied via a file, otherwise it is passed as standard input (i.e. as a pipe)."
+msgstr "فاكسنىڭ يەككە بۇيرۇق بىر تەرەپ قىلىش ئۇسۇلى تۆۋەندىكىچە: فاكس يوللىغاندا بۇيرۇق كىرگۈزۈش قۇرى ئارقىلىق ۋاقىتلىق ھۆججەتتىن بىرنى ئىشلىتىپ \"(TMP)\"ئالماشتۇرىدۇ، فاكس نومۇرىنى \"(PHONE)\" غا ئالماشتۇرىدۇ. ئەگەر بۇيرۇق قۇرىدا \"(TMP)\" بولسا PostScript مەنبە كودى بىر ھۆججەتكە ئايلاندۇرىدۇ، بولمىسا ئۆلچەملىك كىرگۈزۈش سۈپىتىدە مۇئامىلە قىلىدۇ (مەسىلەن، pipe سۈپىتىدە)"
 
 #: source/padialog.src#RID_ADDP_PAGE_OLDPRINTERS.RID_ADDP_STR_TITLE.String.Text
 msgid  "Import printers from old versions"
@@ -501,7 +501,7 @@ msgstr "كونا نەشرىدىن پرىنتېر ئەكىر"
 
 #: source/padialog.src#RID_ADDP_PAGE_OLDPRINTERS.RID_ADDP_OLD_TXT_PRINTERS.FixedText.Text
 msgid  "~These printers can be imported. Please select the ones you want to import."
-msgstr ""
+msgstr "بۇ پرىنتېرلار ئەكىرەلەيدۇ. لازىملىق پرىنتېرنى تاللاڭ(~T)."
 
 #: source/padialog.src#RID_ADDP_PAGE_OLDPRINTERS.RID_ADDP_OLD_BTN_SELECTALL.PushButton.Text
 msgid  "~Select All"
@@ -737,7 +737,7 @@ msgstr "پرىنتېر خەت نۇسخىسى ئىشلەت(~P)"
 
 #: source/rtsetup.src#RID_RTS_COMMANDPAGE.RID_RTS_CMD_CB_EXTERNAL.CheckBox.Text
 msgid  "~Use system print dialog, disable %PRODUCTNAME's print dialog"
-msgstr ""
+msgstr "سىستېما پرىنتېر سۆزلىشىش رامكىسى ئىشلەت،  %PRODUCTNAME پرىنتېر سۆزلىشىش رامكىسىنى چەكلە(~U)."
 
 #: source/rtsetup.src#RID_RTS_COMMANDPAGE.RID_RTS_CMD_FT_QUICKCMD.FixedText.Text
 msgid  "Command for quick printing without dialog (optional)"
@@ -788,16 +788,16 @@ msgid  "~Remove"
 msgstr "چىقىرىۋەت(~R)"
 
 #: source/rtsetup.src#RID_RTS_COMMANDPAGE.RID_RTS_CMD_STR_PDFHELP.String.Text
-msgid  "The command line for PDF converters is executed as follows: for each document printed, "(TMP)" in the command line is replaced by a temporary file and "(OUTFILE)" in the command line is replaced by the target PDF file name. If "(TMP)" is in the command line, the PostScript code will be supplied via a file, otherwise via standard input (i.e. as a pipe)."
-msgstr ""
+msgid  "The command line for PDF converters is executed as follows: for each document printed, \"(TMP)\" in the command line is replaced by a temporary file and \"(OUTFILE)\" in the command line is replaced by the target PDF file name. If \"(TMP)\" is in the command line, the PostScript code will be supplied via a file, otherwise via standard input (i.e. as a pipe)."
+msgstr "PDF ئايلاندۇرغۇچنىڭ بۇيرۇق بىر تەرەپ قىلىش ئۇسۇلى تۆۋەندىكىچە: ھەر بىر پۈتۈكنى باسقاندا بۇيرۇق كىرگۈزۈش قۇرىدا ۋاقىتلىق ھۆججەتتىن بىرنى ئىشلىتىپ \"(TMP)\" بىلەن ئالماشتۇرىدۇ، نىشان PDF ھۆججەت ئاتى بىلەن \"(OUTFILE)\" نى ئالماشتۇرىدۇ. ئەگەر بۇيرۇق قۇرىدا \"(TMP)\" بولسا PostScript مەنبە كودى بىر ھۆججەتكە ئايلاندۇرىدۇ، بولمىسا ئۆلچەملىك كىرگۈزۈش سۈپىتىدە مۇئامىلە قىلىدۇ (مەسىلەن، pipe سۈپىتىدە)"
 
 #: source/rtsetup.src#RID_RTS_COMMANDPAGE.RID_RTS_CMD_STR_PRINTERHELP.String.Text
 msgid  "The command line for printer devices is executed as follows: the generated PostScript code is supplied as standard input (i.e. as a pipe) to the command line."
-msgstr ""
+msgstr "پرىنتېرنىڭ يەككە بۇيرۇق بىر تەرەپ قىلىش ئۇسۇلى تۆۋەندىكىچە: شەكىللەنگەن PostScript مەنبە كودى ئۆلچەملىك كىرگۈزۈش سۈپىتىدە ( pipe سۈپىتىدە)بۇيرۇق قۇرىغا يوللايدۇ."
 
 #: source/rtsetup.src#RID_RTS_COMMANDPAGE.RID_RTS_CMD_STR_FAXHELP.String.Text
-msgid  "The command line for fax devices is executed as follows: for each fax sent, "(TMP)" in the command line is replaced by a temporary file and "(PHONE)" in the command line is replaced by the fax number. If "(TMP)" appears in the command line, the PostScript code will be supplied via a file, otherwise it is passed as standard input (i.e. as a pipe)."
-msgstr ""
+msgid  "The command line for fax devices is executed as follows: for each fax sent, \"(TMP)\" in the command line is replaced by a temporary file and \"(PHONE)\" in the command line is replaced by the fax number. If \"(TMP)\" appears in the command line, the PostScript code will be supplied via a file, otherwise it is passed as standard input (i.e. as a pipe)."
+msgstr "فاكسنىڭ يەككە بۇيرۇق بىر تەرەپ قىلىش ئۇسۇلى تۆۋەندىكىچە: فاكس يوللىغاندا بۇيرۇق كىرگۈزۈش قۇرى ئارقىلىق ۋاقىتلىق ھۆججەتتىن بىرنى ئىشلىتىپ \"(TMP)\"ئالماشتۇرىدۇ، فاكس نومۇرىنى \"(PHONE)\" غا ئالماشتۇرىدۇ. ئەگەر بۇيرۇق قۇرىدا \"(TMP)\" بولسا PostScript مەنبە كودى بىر ھۆججەتكە ئايلاندۇرىدۇ، بولمىسا ئۆلچەملىك كىرگۈزۈش سۈپىتىدە مۇئامىلە قىلىدۇ ( pipe سۈپىتىدە)"
 
 #: source/rtsetup.src#RID_RTS_OTHERPAGE.RID_RTS_OTHER_LEFTMARGIN_TXT.FixedText.Text
 msgid  "~Left margin"

@@ -137,7 +137,7 @@ msgstr "लक्ष्यं पूर्वमव विद्यते।"
 
 #: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_IO_MODULESIZEEXCEEDED & ERRCODE_RES_MASK).String.Text
 msgid  "You are about to save/export a password protected basic library containing module(s) \n$(ARG1)\nwhich are too large to store in binary format. If you wish users that don't have access to the library password to be able to run macros in those module(s) you must split those modules into a number of smaller modules. Do you wish to continue to save/export this library?"
-msgstr ""
+msgstr "$(ARG1) मोड्यूल्(स्) यस्मिन् विद्यते तं गुह्यपदरक्षितम् आधारपुस्तकालयं सञ्चयितुं/निर्याणं  \nकर्तुं सज्जोऽअसि \nयानि द्विमानरचनायां सञ्चयितुम् अतिबृहन्ति सन्ति। येषां प्रयोक्तॄणां पार्श्वे पुस्तकालयगुह्यपदप्रवेशः नास्ति तेऽपि तन्मोड्यूल्(स्) मध्ये मैक्रोस् चालयितुं समर्थाः भवेयुः इति यदि त्वमिच्छसि, तर्हि तानि मोड्यूल्स् लघुतरमोड्यूल्स् इति विभाजयेः। अस्य पुस्तकालयस्य सञ्चयं/निर्याणम् अनुसन्तनोतुमिच्छसि किम्?"
 
 #: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_IO_BADCRC & ERRCODE_RES_MASK).String.Text
 msgid  "The data from $(ARG1) has an incorrect checksum."
@@ -241,15 +241,15 @@ msgstr "इदानीं $(ARG1) यन्त्रे स्थानं श�
 
 #: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_IO_TOOMANYOPENFILES & ERRCODE_RES_MASK).String.Text
 msgid  "The operation on $(ARG1) cannot be performed because too many files are already open."
-msgstr ""
+msgstr "$(ARG1) इत्यस्मिन् कार्यं निष्पादयितुं न शक्यते, यतः बहुसञ्चिकाः पूर्वमेव उद्घाटिताः सन्ति।"
 
 #: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_IO_OUTOFMEMORY & ERRCODE_RES_MASK).String.Text
 msgid  "The operation on $(ARG1) cannot be performed because there is no more memory available."
-msgstr ""
+msgstr "पर्याप्तस्मृत्यनुपलब्धिहेतोः $(ARG1) इत्यस्मिन् कार्यं निष्पादयितुं न शक्यते।"
 
 #: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_IO_PENDING & ERRCODE_RES_MASK).String.Text
 msgid  "The operation on $(ARG1) cannot continue because more data is pending."
-msgstr ""
+msgstr "अत्यधिकडाटा अवशिष्टमिति कारणात् $(ARG1) इत्यस्मिन् कार्यम् अनुसन्तनोतुं न शक्यते।"
 
 #: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_IO_RECURSIVE & ERRCODE_RES_MASK).String.Text
 msgid  "$(ARG1) cannot be copied into itself."
@@ -289,11 +289,11 @@ msgstr "संस्थापितं जावा-संस्करणं $(A
 
 #: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_WRONGJAVA_MIN & ERRCODE_RES_MASK).String.Text
 msgid  "The installed Java version is not supported, at least version $(ARG1) is required."
-msgstr ""
+msgstr "संस्थापितं जावा-संस्करणं समर्थितं नास्ति, अवरतः $(ARG1) संस्करणमपेक्षते।"
 
 #: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_WRONGJAVA_VERSION_MIN & ERRCODE_RES_MASK).String.Text
 msgid  "The installed Java version $(ARG1) is not supported, at least version $(ARG2) is required."
-msgstr ""
+msgstr "संस्थापितं जावा-संस्करणं $(ARG1) समर्थितं नास्ति,  अवरतः $(ARG2) संस्करणमपेक्षते।"
 
 #: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_BADPARTNERSHIP & ERRCODE_RES_MASK).String.Text
 msgid  "The data associated with the partnership is corrupted."
@@ -325,31 +325,31 @@ msgstr "$(ARG2) निर्देशिकायां वस्तु उत�
 
 #: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_IO_UNSUPPORTEDOVERWRITE & ERRCODE_RES_MASK).String.Text
 msgid  "%PRODUCTNAME cannot keep files from being overwritten when this transmission protocol is used. Do you want to continue anyway?"
-msgstr ""
+msgstr "यदा इदं सञ्चरणप्रोटोकोल् उपयुक्तमस्ति, तदा %PRODUCTNAME अधिलेखनात् सञ्चिकाः रक्षितुं न शक्नोति। तथापि अनुसन्तनोतुमिच्छसि किम्? "
 
 #: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_IO_BROKENPACKAGE & ERRCODE_RES_MASK).String.Text
 msgid  "The file '$(ARG1)' is corrupt and therefore cannot be opened. %PRODUCTNAME can try to repair the file.\n\nThe corruption could be the result of document manipulation or of structural document damage due to data transmission.\n\nWe recommend that you do not trust the content of the repaired document.\nExecution of macros is disabled for this document.\n\nShould %PRODUCTNAME repair the file?\n"
-msgstr ""
+msgstr "'$(ARG1)' सञ्चिका दूषिता अस्ति अतः उद्घाटनं न शक्यते। किं %PRODUCTNAME द्वारा सञ्चिकायाः पुनःसन्धानं कर्तव्यम्?"
 
 #: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_IO_BROKENPACKAGE_CANTREPAIR & ERRCODE_RES_MASK).String.Text
 msgid  "The file '$(ARG1)' could not be repaired and therefore cannot be opened."
-msgstr ""
+msgstr "'$(ARG1)' सञ्चिकायाः पुनःसन्धानं न शक्यते अतः उद्घाटनं न शक्यते।"
 
 #: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_CONFIGURATION_BROKENDATA_NOREMOVE & ERRCODE_RES_MASK).String.Text
 msgid  "Configuration data in '$(ARG1)' is corrupted. Without this data some functions may not operate correctly.\nDo you want to continue startup of %PRODUCTNAME without the corrupted configuration data?"
-msgstr ""
+msgstr "'$(ARG1)' इत्यस्मिन् विन्यासडाटा दूषितमस्ति। इदं डाटा विना कानिचन कार्याणि समीचीनतया कार्यं न कुर्युः।\nदूषितविन्यासडाटा विना %PRODUCTNAME इत्यस्य आरम्भम् अनुसन्तनोतुमिच्छसि किम्?"
 
 #: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_CONFIGURATION_BROKENDATA_WITHREMOVE & ERRCODE_RES_MASK).String.Text
 msgid  "The personal configuration file '$(ARG1)' is corrupted and must be deleted to continue. Some of your personal settings may be lost.\nDo you want to continue startup of %PRODUCTNAME without the corrupted configuration data?"
-msgstr ""
+msgstr "'$(ARG1)' नैजविन्याससञ्चिका दूषिता अस्ति, अतः अनुसन्तनोतुं लोपः आवश्यकः। तव नैजनिर्धारणानि नष्टानि भवेयुः।\nदूषितविन्यासडाटा विना %PRODUCTNAME इत्यस्य आरम्भम् अनुसन्तनोतुमिच्छसि किम्?"
 
 #: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_CONFIGURATION_BACKENDMISSING & ERRCODE_RES_MASK).String.Text
 msgid  "The configuration data source '$(ARG1)' is unavailable. Without this data some functions may not operate correctly."
-msgstr ""
+msgstr "'$(ARG1)' विन्यासडाटामूलम् अनुपलब्धमस्ति। इदं डाटा विना कानिचन कार्याणि समीचीनतया कार्यं न कुर्युः।"
 
 #: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_CONFIGURATION_BACKENDMISSING_WITHRECOVER & ERRCODE_RES_MASK).String.Text
 msgid  "The configuration data source '$(ARG1)' is unavailable. Without this data some functions may not operate correctly.\nDo you want to continue startup of %PRODUCTNAME without the missing configuration data?"
-msgstr ""
+msgstr "'$(ARG1)' विन्यासडाटामूलम् अनुपलब्धमस्ति। इदं डाटा विना कानिचन कार्याणि समीचीनतया कार्यं न कुर्युः।\nअनुपस्थितविन्यासडाटा विना %PRODUCTNAME इत्यस्य प्रारम्भम् अनुसन्तनोतुमिच्छसि किम्?"
 
 #: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_INVALID_XFORMS_SUBMISSION_DATA & ERRCODE_RES_MASK).STRING.Text
 msgid  "The form contains invalid data. Do you still want to continue?"
@@ -373,19 +373,19 @@ msgstr ""
 
 #: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_UNKNOWNAUTH_UNTRUSTED).STRING.Text
 msgid  "Unable to verify the identity of $(ARG1) site.\n\nBefore accepting this certificate, you should examine this site's certificate carefully. Are you willing to accept this certificate for the purpose of identifying the Web site $(ARG1)?"
-msgstr ""
+msgstr "$(ARG1) सैट् अभिज्ञानं सत्यापयितुं न शक्यते।\n\nएतत्प्रमाणपत्राङ्गीकरणात् पूर्वम्, सैट् प्रमाणपत्रं सावधानतया परीक्षस्व। $(ARG1) वेब्सैट् अभिज्ञातुं त्वम् इदं प्रमाणपत्रम् अङ्गीकरोषि किम्?"
 
 #: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_SSLWARN_EXPIRED_1).STRING.Text
 msgid  "$(ARG1) is a site that uses a security certificate to encrypt data during transmission, but its certificate expired on $(ARG2).\n\nYou should check to make sure that your computer's time is correct."
-msgstr ""
+msgstr "प्रेषणसमये डाटा एन्क्रिप्ट् कर्तुं $(ARG1) सैट् सुरक्षाप्रमाणपत्रम् उपयोजयति, परन्तु तस्य प्रमाणपत्रं $(ARG2) मध्ये समाप्तम् अभवत्।\n\nतव गणकयन्त्रस्य समयः समीचीनः वेति निश्चिनुहि।"
 
 #: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_SSLWARN_DOMAINMISMATCH_1).STRING.Text
 msgid  "You have attempted to establish a connection with $(ARG1). However, the security certificate presented belongs to $(ARG2). It is possible, though unlikely, that someone may be trying to intercept your communication with this web site.\n\nIf you suspect the certificate shown does not belong to $(ARG1), please cancel the connection and notify the site administrator.\n\nWould you like to continue anyway?"
-msgstr ""
+msgstr "$(ARG1) सह संयोगं प्रतिष्ठापयितुं प्रयतसे। परं, दत्तं सुरक्षाप्रमाणपत्रं $(ARG2) इत्यस्य अस्ति। एतत् शक्यमेव, यद्यपि असम्भवम्, यत्, वेब्सैट् सह तव सञ्चारं बाधितुं केनापि प्रयत्नः क्रियते इति।\n\nदर्शितप्रमाणपत्रं $(ARG1) इत्यस्य नास्तीति यदि त्वं शङ्कसे, तर्हि कृपया संयोगनिरसनं कुरु तथा सैट् प्रशासकं सूचय।\n\nतथापि त्वम् अनुसन्तनोतुम् इच्छसि किम्?"
 
 #: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_SSLWARN_INVALID_1).STRING.Text
 msgid  "The certificate could not be validated. You should examine this site's certificate carefully.\n\nIf you suspect the certificate shown, please cancel the connection and notify the site administrator."
-msgstr ""
+msgstr "प्रमाणपत्रं सत्यापयितुं न शक्यते। सैट् प्रमाणपत्रं सावधानेन परीक्षस्व।\n\nयदि दर्शितप्रमाणपत्रं शङ्कसे, तर्हि कृपया संयोगनिरसनं कुरु तथा सैट् प्रशासकं सूचय। "
 
 #: source/ids.src#RID_UUI_ERRHDL.(TITLE_UUI_SSLWARN_DOMAINMISMATCH).STRING.Text
 msgid  "Security Warning: Domain Name Mismatch"
@@ -416,8 +416,8 @@ msgid  "Enter user name and password for: \n%1"
 msgstr ""
 
 #: source/logindlg.src#DLG_UUI_LOGIN.STR_LOGIN_REALM.String.Text
-msgid  "Enter user name and password for: \n"%2" on %1"
-msgstr ""
+msgid  "Enter user name and password for: \n\"%2\" on %1"
+msgstr "कृपया \"%2\" कृते %1 मध्ये अत्र प्रयोक्तृनाम गुह्यपदञ्च निवेशय।"
 
 #: source/logindlg.src#DLG_UUI_LOGIN.FT_LOGIN_PATH.FixedText.Text
 msgid  "~Path"
@@ -469,7 +469,7 @@ msgstr "प्रेषय"
 
 #: source/cookiedg.src#STR_COOKIES_RECV_START.String.Text
 msgid  "The '${HOST}' server wishes to set one or more cookies.\nCookies contain information referring to certain URL classes. If %PRODUCTNAME later requests a document with a URL corresponding to the class of a previously set cookie, %PRODUCTNAME will send this information to the server. This allows a server to recognize the status of a WWW application, e.g., when shopping online.\n\nThe following Cookies should be set:\n\n"
-msgstr ""
+msgstr "'${HOST}' सर्वर् एकं तदधिकं वा कुक्कीस् स्थापयितुम् इच्छति।\nकुक्कीस् मध्ये काञ्चन URL वर्गान् निर्दिशन्ती सूचना अस्ति। यदि %PRODUCTNAME तदनन्तरं पूर्वस्थापित-कुक्की-वर्गानुरूप-URL सह लेख्यपत्रं प्रार्थयति, तर्हि %PRODUCTNAME इमां सूचनां सर्वर् प्रति प्रेषयिष्यति। इदं WWW प्रयोगवस्तुस्थितिम् प्रत्यभिज्ञातुं सर्वर् अनुमोदयति। उदाहरणार्थम् - ओन्लैन् क्रयसमये।\n\nइमानि कुक्कीस् स्थापयेत् :\n\n"
 
 #: source/cookiedg.src#STR_COOKIES_RECV_COOKIES.String.Text
 msgid  "Domain: ${DOMAIN}, Path: ${PATH}, Cookie: ${COOKIE}.\n"
@@ -481,7 +481,7 @@ msgstr "कुक्की-ग्रहणम्"
 
 #: source/cookiedg.src#STR_COOKIES_SEND_START.String.Text
 msgid  "%PRODUCTNAME has saved cookies for the server '${HOST}' which will be sent when requesting the document ${PATH}.\nCookies contain information which refers to certain URL classes. They are sent by some servers to %PRODUCTNAME where they are saved when certain documents are accessed. If %PRODUCTNAME loads a document that, according to the URL, corresponds to a class of one of the previously received Cookies, %PRODUCTNAME will send this information to that server. This enables a server to keep track of the status of a WWW application, e.g., when shopping online.\n\nThe following Cookies should be set:\n\n"
-msgstr ""
+msgstr "%PRODUCTNAME '${HOST}' सर्वर् कृते कुक्कीस् अरक्षत्, यानि ${PATH} लेख्यपत्रप्रार्थनासमये प्रेषितानि भविष्यन्ति।\nकुक्कीस् मध्ये काञ्चन URL वर्गान् निर्दिशन्ती सूचना अस्ति। इमानि कैश्चन सर्वर्स् द्वारा %PRODUCTNAME प्रति प्रेषितानि, यत्र तानि केषाञ्चन लेख्यपत्राणां प्राप्तिसमये रक्षितानि। यदि %PRODUCTNAME एकं लेख्यपत्रं लोड् करोति, यत् URL अनुसारेण पूर्वप्राप्त-कुक्कीस् मध्ये एकेन वर्गेण सह अनुरूपं वर्तते, तर्हि %PRODUCTNAME इमां सूचनां तत् सर्वर् प्रति प्रेषयिष्यति। इदं WWW प्रयोगवस्तुस्थितिमार्गं धर्तुं सर्वर् प्रकारयति। उदाहरणार्थम् - ओन्लैन् क्रयसमये।\n\nइमानि कुक्कीस् स्थापयेत् :\n\n"
 
 #: source/cookiedg.src#STR_COOKIES_SEND_COOKIES.String.Text
 msgid  "Domain: ${DOMAIN}, Path: ${PATH}, Cookie: ${COOKIE}.\n"
@@ -529,7 +529,7 @@ msgstr "उपयोगे लेख्यपत्रम्"
 
 #: source/openlocked.src#STR_OPENLOCKED_MSG.String.Text
 msgid  "Document file '$(ARG1)' is locked for editing by:\n\n$(ARG2)\n\nOpen document read-only or open a copy of the document for editing.\n\n"
-msgstr ""
+msgstr "अनेन सम्पादनाय '$(ARG1)' लेख्पत्रसञ्चिका पिहिता :\n\n$(ARG2)\n\nपठन-मात्रलेख्यपत्रम् उद्घाटय अथवा सम्पादनाय लेख्यपत्रस्य कापी उद्घाटय।"
 
 #: source/openlocked.src#STR_OPENLOCKED_OPENREADONLY_BTN.String.Text
 msgid  "Open ~Read-Only"
@@ -609,7 +609,7 @@ msgstr "हस्ताक्षरान् पश्य..."
 
 #: source/secmacrowarnings.src#RID_XMLSECDLG_MACROWARN.FI_DESCR2.FixedText.Text
 msgid  "Macros may contain viruses. Disabling macros for a document is always safe. If you disable macros you may lose functionality provided by the document macros."
-msgstr ""
+msgstr "मैक्रोस् अन्तर्गतं वैरेसेस् भवेयुः। लेख्यपत्राय मैक्रोस् निष्प्रकारणं सर्वदा सुरक्षितम्। यदि त्वं मैक्रोस् निष्प्रकारयसि तर्हि त्वं लेख्यपत्रमैक्रोस् द्वारा दत्तं क्रियात्वं नष्टं भवेत्।"
 
 #: source/secmacrowarnings.src#RID_XMLSECDLG_MACROWARN.CB_ALWAYSTRUST.CheckBox.Text
 msgid  "Always trust macros from this source"

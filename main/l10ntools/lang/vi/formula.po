@@ -163,6 +163,22 @@ msgstr "ATANH"
 msgid  "ACOTH"
 msgstr "ACOTH"
 
+#: source/core/resource/core_resource.src#RID_STRLIST_FUNCTION_NAMES.SC_OPCODE_COSECANT.String.Text
+msgid  "CSC"
+msgstr ""
+
+#: source/core/resource/core_resource.src#RID_STRLIST_FUNCTION_NAMES.SC_OPCODE_SECANT.String.Text
+msgid  "SEC"
+msgstr ""
+
+#: source/core/resource/core_resource.src#RID_STRLIST_FUNCTION_NAMES.SC_OPCODE_COSECANT_HYP.String.Text
+msgid  "CSCH"
+msgstr ""
+
+#: source/core/resource/core_resource.src#RID_STRLIST_FUNCTION_NAMES.SC_OPCODE_SECANT_HYP.String.Text
+msgid  "SECH"
+msgstr ""
+
 #: source/core/resource/core_resource.src#RID_STRLIST_FUNCTION_NAMES.SC_OPCODE_EXP.String.Text
 msgid  "EXP"
 msgstr "EXP"
@@ -1227,21 +1243,9 @@ msgstr "#NUM!"
 msgid  "#N/A"
 msgstr "#N/A"
 
-#: source/core/resource/core_resource.src#RID_STRLIST_FUNCTION_NAMES.SC_OPCODE_COSECANT.String.Text
-msgid  "CSC"
-msgstr ""
-
-#: source/core/resource/core_resource.src#RID_STRLIST_FUNCTION_NAMES.SC_OPCODE_SECANT.String.Text
-msgid  "SEC"
-msgstr ""
-
-#: source/core/resource/core_resource.src#RID_STRLIST_FUNCTION_NAMES.SC_OPCODE_COSECANT_HYP.String.Text
-msgid  "CSCH"
-msgstr ""
-
-#: source/core/resource/core_resource.src#RID_STRLIST_FUNCTION_NAMES.SC_OPCODE_SECANT_HYP.String.Text
-msgid  "SECH"
-msgstr ""
+#: source/ui/dlg/formdlgs.src#RID_FORMULATAB_FUNCTION.LB_CATEGORY.Default.StringList.item
+msgid  "Last Used"
+msgstr "Được sử dụng gần nhất"
 
 #: source/ui/dlg/formdlgs.src#RID_FORMULATAB_FUNCTION.LB_CATEGORY.Default.StringList.item
 msgid  "All"
@@ -1281,7 +1285,7 @@ msgstr "Công ~thức"
 
 #: source/ui/dlg/formdlgs.src#RID_FORMULADLG_FORMULA_MODAL.FT_RESULT.FixedText.Text
 msgid  "Function result"
-msgstr "Kết quả hàm"
+msgstr "Kết quả của hàm"
 
 #: source/ui/dlg/formdlgs.src#RID_FORMULADLG_FORMULA_MODAL.FT_FORMULA_RESULT.FixedText.Text
 msgid  "Result"
@@ -1309,7 +1313,7 @@ msgstr "Trợ lý hàm"
 
 #: source/ui/dlg/formdlgs.src#RID_FORMULADLG_FORMULA_MODAL.STR_TITLE2.String.Text
 msgid  "Function Wizard  -"
-msgstr "Trợ lý hàm"
+msgstr "Trợ lý hàm -"
 
 #: source/ui/dlg/formdlgs.src#RID_FORMULADLG_FORMULA_MODAL.STR_END.String.Text
 msgid  "~End"
@@ -1363,9 +1367,9 @@ msgstr "Trợ lý hàm"
 msgid  "~End"
 msgstr "~Kết thúc"
 
-#: source/ui/dlg/formdlgs.src#RID_FORMULATAB_FUNCTION.LB_CATEGORY.Default.StringList.item
-msgid  "Last Used"
-msgstr "Được sử dụng gần nhất"
+#: source/ui/dlg/parawin.src#RB_ARGBLOCK( y ).#define.QuickHelpText
+msgid  "Select"
+msgstr "Chọn"
 
 #: source/ui/dlg/parawin.src#RID_FORMULATAB_PARAMETER.FT_EDITDESC.FixedText.Text
 msgid  "Function not known"
@@ -1378,7 +1382,3 @@ msgstr "(tùy chọn)"
 #: source/ui/dlg/parawin.src#RID_FORMULATAB_PARAMETER.STR_REQUIRED.String.Text
 msgid  "(required)"
 msgstr "(bắt buộc)"
-
-#: source/ui/dlg/parawin.src#RB_ARGBLOCK( y ).#define.QuickHelpText
-msgid  "Select"
-msgstr "Chọn"

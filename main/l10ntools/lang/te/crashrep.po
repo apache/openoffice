@@ -45,7 +45,7 @@ msgstr ""
 
 #: source/all/crashrep.ulf#%WELCOME_BODY2%
 msgid  "It's easy - just send the report without any further effort on your part by clicking 'Send' in the next dialog, or you can briefly describe how the error occurred and then click 'Send'. If you want to see the report, click the 'Show Report' button. No data will be sent if you click 'Do Not Send'.\n\n"
-msgstr ""
+msgstr "చాలా సులభము -ఏ ప్రయత్నం లేకుండ కేవలం పంపును తరువాత వివరణలో క్లిక్ చేసి నివేదనను పంపవలెను ,లేదా నీవు ఎలా దోషము ఏర్పడ్డదో వివరింపవలెను తరువాత పంపును క్లిక్ చేయవలెను.మరల నీవు నివేదనను చూడాలనుకుంటే నివేదనను చూపు అను బొత్తమును క్లిక్ చేయవలెను. ఎప్పుడైతే పంపవద్దు అని క్లిక్ చేస్తావో అప్పుడు ఏ దత్తాంశము పంపడడదు.\n\n"
 
 #: source/all/crashrep.ulf#%WELCOME_BODY3%
 msgid  "Customer Privacy\nThe information gathered is limited to data concerning the state of %PRODUCTNAME% %PRODUCTVERSION% when the error occurred. Other information about passwords or document contents is not collected.\n\nThe information will only be used to improve the quality of %PRODUCTNAME% and will not be shared with third parties.\nFor more information on Apache OpenOffice's privacy policy, visit\n"
@@ -81,7 +81,7 @@ msgstr ""
 
 #: source/all/crashrep.ulf#%ENTER_TITLE%
 msgid  "Which type of document (e.g. presentation) were you using when the error occurred?"
-msgstr ""
+msgstr "దోషం వచ్చినప్పుడు ఏ రకమైన పత్రమును (ఇ.జి.సమర్పణ) ఉపయోగిస్తున్నావు? "
 
 #: source/all/crashrep.ulf#%ALLOW_CONTACT%
 msgid  "~I allow Apache OpenOffice to contact me regarding this report."
@@ -93,7 +93,7 @@ msgstr "దయచేసి మీ ఈ-మేల్ చిరునామాన�
 
 #: source/all/crashrep.ulf#%ENTER_DESCRIPTION%
 msgid  "~How were you using %PRODUCTNAME% when the error occurred ?"
-msgstr ""
+msgstr "దోషం వచ్చినప్పుడు నీవు %PRODUCTNAMEను ఏ విధముగా ఉపయోగించుకుంటున్నావు ? (~H)"
 
 #: source/all/crashrep.ulf#%BACK_BUTTON%
 msgid  " << ~Back"
@@ -121,23 +121,23 @@ msgstr "నివేదనను దాచుటకు"
 
 #: source/all/crashrep.ulf#%ERROR_MSG_SIMPLE_MAPI%
 msgid  "The error report could not be sent because the default e-mail program does not support MAPI.\n Please use a MAPI-compatible e-mail program."
-msgstr ""
+msgstr "దోష నివేదన పంపించలేము ఎంతకంటె అప్రమేయ ఈ-మైలు     కార్యక్రమం  మపైను సహకరించదు.\nదయచేసి మపై-సరిపడు ఈ-మైలు కార్యక్రమం ఉపయోగించుకోండి."
 
 #: source/all/crashrep.ulf#%ERROR_MSG_DISK_FULL%
 msgid  "The error report could not be temporarily saved and could therefore not be sent."
-msgstr ""
+msgstr "దోష నివేదన తాత్కాలికంగ దాచలేదు మరియు అందువలన పంపించలేదు"
 
 #: source/all/crashrep.ulf#%ERROR_MSG_SENDMAIL%
 msgid  "The error report could not be sent because 'sendmail' could not be started.\nPlease check the 'sendmail' settings."
-msgstr ""
+msgstr "దోష నివేదన పంపించలేము ఎంతకంటె పంబడిన ఈ-మైలు ప్రారంభించలేము.\nదయచేసి 'సెండ్ మైల్'కూర్పులను తనిఖీ చేయుము."
 
 #: source/all/crashrep.ulf#%ERROR_MSG_PROXY%
 msgid  "The error report could not be sent. Please check the proxy settings under 'Options' in the Error Report Tool."
-msgstr ""
+msgstr "దోష నివేదన పంపించలేము.దయచేసి దోష నివేదన పనిముట్లలోని ఇచ్ఛాపూర్వకములోగల ప్రాతినిధ్య కూర్పులను తనిఖీ చేయుము"
 
 #: source/all/crashrep.ulf#%ERROR_MSG_NOCONNECT%
 msgid  "The error report could not be sent because there is no Internet connection. Please check your Internet settings."
-msgstr ""
+msgstr "ఓష నివేదన పంపించలేము ఎంతకంటె అక్కడ ఇంటర్ నెట్ బంధం లేదు.దయచేసి మీరు ఇంటర్ నెట్ ను తనిఖీ చేయుము."
 
 #: source/all/crashrep.ulf#%OPTIONS_BUTTON%
 msgid  "~Options..."
@@ -173,7 +173,7 @@ msgstr "పోర్ట్ (~P)"
 
 #: source/all/crashrep.ulf#%PROXY_SETTINGS_DESCRIPTION%
 msgid  "The %PRODUCTNAME% Error Report tool needs to be connected to the Internet to be able to send error reports.\n\nCompanies often use proxy servers in conjunction with a firewall to protect the network.\n\nIf this applies to your situation, you have to specify the address and port for the server."
-msgstr ""
+msgstr "%PRODUCTNAME% దోష నివేదన పనిముట్లు ఇంటర్ నెట్ కు బంధించవలెను మరియు దోష నివేదనను పంపించవలెను .\n\nఅటువంటి వాటిలో ప్రాతినిధ్య సేవికలను ఉపయోగించి కంపనీల అల్లికను రక్షించును.\nఎప్పుడైతే అది సంధర్భమమును వర్తించునో అప్పుడు చిరునమము మరియు సేవికల యొక్క రేవను స్పష్టముగా చెప్పు."
 
 #: source/all/crashrep.ulf#%SENDING_REPORT_HEADER%
 msgid  "Sending Error Report"
@@ -201,8 +201,8 @@ msgstr "-పి <క్రమగతి ఐ డి>"
 
 #: source/all/crashrep.ulf#%MSG_PARAM_PROCESSID_DESCRIPTION%
 msgid  "Assigns the %PRODUCTNAME% process ID (PID) to the Error Report Tool"
-msgstr ""
+msgstr "%PRODUCTNAME% యొక్క క్రమగతి గుచికి (పిఐడి)  స్థానం ఇచ్చుటకు  పనిముట్ల నివేదన దోషం"
 
 #: source/all/crashrep.ulf#%MSG_PARAM_HELP_DESCRIPTION%
 msgid  "Shows this help text.\nDetailed information can be found in the Setup Guide."
-msgstr ""
+msgstr "ఈ సహాయ పాఠమును మలుచుకొను.\nవివరంగా వర్ణించు సమాచారము అమర్చిపెట్టు  మార్గములో దొరుకును."

@@ -119,6 +119,18 @@ msgstr "Thunderbird 通讯簿"
 msgid  "LDAP Address Book"
 msgstr "LDAP 通讯簿"
 
+#: source/drivers/mozab/mozab2.xcu#.Drivers.Installed.sdbc:address:mozilla:.DriverTypeDisplayName
+msgid  "SeaMonkey Address Book"
+msgstr "Mozilla 通讯薄"
+
+#: source/drivers/mozab/mozab2.xcu#.Drivers.Installed.sdbc:address:thunderbird:.DriverTypeDisplayName
+msgid  "Thunderbird Address Book"
+msgstr "Thunderbird 通讯簿"
+
+#: source/drivers/mozab/mozab2.xcu#.Drivers.Installed.sdbc:address:ldap:*.DriverTypeDisplayName
+msgid  "LDAP Address Book"
+msgstr "LDAP 通讯簿"
+
 #: source/drivers/mysql/mysql.xcu#.Drivers.Installed.sdbc:mysql:jdbc:*.DriverTypeDisplayName
 msgid  "MySQL (JDBC)"
 msgstr "MySQL (JDBC)"
@@ -161,11 +173,11 @@ msgstr "运行 Mozilla 时无法创建新的通讯簿。"
 
 #: source/resource/conn_shared_res.src#STR_COULD_NOT_RETRIEVE_AB_ENTRY.String.Text
 msgid  "An address book entry could not be retrieved, an unknown error occurred."
-msgstr ""
+msgstr "无法检索通讯簿条目，出现未知错误。"
 
 #: source/resource/conn_shared_res.src#STR_COULD_NOT_GET_DIRECTORY_NAME.String.Text
 msgid  "An address book directory name could not be retrieved, an unknown error occurred."
-msgstr ""
+msgstr "无法检索通讯簿目录名称，出现未知错误。"
 
 #: source/resource/conn_shared_res.src#STR_TIMEOUT_WAITING.String.Text
 msgid  "Timed out while waiting for the result."
@@ -177,11 +189,11 @@ msgstr "执行查询时出错。"
 
 #: source/resource/conn_shared_res.src#STR_MOZILLA_IS_RUNNIG_NO_CHANGES.String.Text
 msgid  "You can't make any changes to mozilla address book when mozilla is running."
-msgstr ""
+msgstr "运行 Mozilla 时无法对 Mozilla 通讯簿进行任何更改。"
 
 #: source/resource/conn_shared_res.src#STR_FOREIGN_PROCESS_CHANGED_AB.String.Text
 msgid  "Mozilla Address Book has been changed out of this process, we can't modify it in this condition."
-msgstr ""
+msgstr "已经在此进程之外对 Mozilla 通讯簿进行了更改，在这种情况下无法对其进行修改。"
 
 #: source/resource/conn_shared_res.src#STR_CANT_FIND_ROW.String.Text
 msgid  "Can't find the requested row."
@@ -233,7 +245,7 @@ msgstr "无法创建新行。"
 
 #: source/resource/conn_shared_res.src#STR_QUERY_INVALID_IS_NULL_COLUMN.String.Text
 msgid  "The query can not be executed. The 'IS NULL' can only be used with a column name."
-msgstr ""
+msgstr "无法执行查询。'IS NULL' 只能与列名称一起使用。"
 
 #: source/resource/conn_shared_res.src#STR_ILLEGAL_MOVEMENT.String.Text
 msgid  "Illegal cursor movement occured."
@@ -268,12 +280,12 @@ msgid  "It doesn't exist a connection to the database."
 msgstr "不存在到该数据库的连接。"
 
 #: source/resource/conn_shared_res.src#STR_WRONG_PARAM_INDEX.String.Text
-msgid  "You tried to set a parameter at position '$pos$' but there is/are only '$count$' parameter(s) allowed. One reason may be that the property "ParameterNameSubstitution" is not set to TRUE in the data source."
-msgstr ""
+msgid  "You tried to set a parameter at position '$pos$' but there is/are only '$count$' parameter(s) allowed. One reason may be that the property \"ParameterNameSubstitution\" is not set to TRUE in the data source."
+msgstr "您试图在 '$pos$' 位置设置一个参数，但是该位置最多只允许设置 '$count$' 个参数。一个原因可能是由于在数据源中属性 \"ParameterNameSubstitution\" 没有被设置为 TRUE。"
 
 #: source/resource/conn_shared_res.src#STR_INPUTSTREAM_WRONG_LEN.String.Text
 msgid  "End of InputStream reached before satisfying length specified when InputStream was set."
-msgstr ""
+msgstr "在满足设置 InputStream 时指定的长度之前输入流结束。"
 
 #: source/resource/conn_shared_res.src#STR_NO_INPUTSTREAM.String.Text
 msgid  "The input stream was not set."
@@ -313,7 +325,7 @@ msgstr "驱动程序不支持 '$functionname$' 函数。"
 
 #: source/resource/conn_shared_res.src#STR_UNSUPPORTED_FEATURE.String.Text
 msgid  "The driver does not support the functionality for '$featurename$'. It is not implemented."
-msgstr ""
+msgstr "驱动程序不支持 '$featurename$' 函数。该函数尚未实现。"
 
 #: source/resource/conn_shared_res.src#STR_FORMULA_WRONG.String.Text
 msgid  "The formula for TypeInfoSettings is wrong!"
@@ -321,11 +333,11 @@ msgstr "TypeInfoSettings 公式错误！"
 
 #: source/resource/conn_shared_res.src#STR_STRING_LENGTH_EXCEEDED.String.Text
 msgid  "The string '$string$' exceeds the maximum length of $maxlen$ characters when converted to the target character set '$charset$'."
-msgstr ""
+msgstr "将字符串 '$string$' 转换为目标字符集 '$charset$' 时，该字符串超过 $maxlen$ 字符的最大长度。"
 
 #: source/resource/conn_shared_res.src#STR_CANNOT_CONVERT_STRING.String.Text
 msgid  "The string '$string$' cannot be converted using the encoding '$charset$'."
-msgstr ""
+msgstr "无法使用编码 '$charset$' 转换字符串 '$string$'。"
 
 #: source/resource/conn_shared_res.src#STR_URI_SYNTAX_ERROR.String.Text
 msgid  "The connection URL is invalid."
@@ -341,11 +353,11 @@ msgstr "无法执行查询。该操作符太复杂。"
 
 #: source/resource/conn_shared_res.src#STR_QUERY_INVALID_LIKE_COLUMN.String.Text
 msgid  "The query can not be executed. You cannot use 'LIKE' with columns of this type."
-msgstr ""
+msgstr "无法执行查询。此类列中不能使用 'LIKE' 。 "
 
 #: source/resource/conn_shared_res.src#STR_QUERY_INVALID_LIKE_STRING.String.Text
 msgid  "The query can not be executed. 'LIKE' can be used with a string argument only."
-msgstr ""
+msgstr "无法执行查询。'LIKE' 只能与字符串参数一起使用。"
 
 #: source/resource/conn_shared_res.src#STR_QUERY_NOT_LIKE_TOO_COMPLEX.String.Text
 msgid  "The query can not be executed. The 'NOT LIKE' condition is too complex."
@@ -353,11 +365,11 @@ msgstr "无法执行查询。'NOT LIKE' 太复杂。"
 
 #: source/resource/conn_shared_res.src#STR_QUERY_LIKE_WILDCARD.String.Text
 msgid  "The query can not be executed. The 'LIKE' condition contains wildcard in the middle."
-msgstr ""
+msgstr "无法执行查询。'LIKE' 语句中包含通配符。"
 
 #: source/resource/conn_shared_res.src#STR_QUERY_LIKE_WILDCARD_MANY.String.Text
 msgid  "The query can not be executed. The 'LIKE' condition contains too many wildcards."
-msgstr ""
+msgstr "无法执行查询。'LIKE' 语句包含太多通配符。"
 
 #: source/resource/conn_shared_res.src#STR_INVALID_COLUMNNAME.String.Text
 msgid  "The column name '$columnname$' is not valid."
@@ -377,7 +389,7 @@ msgstr "无法载入文件 $filename$。"
 
 #: source/resource/conn_shared_res.src#STR_LOAD_FILE_ERROR_MESSAGE.String.Text
 msgid  "The attempt to load the file resulted in the following error message ($exception_type$):\n\n$error_message$"
-msgstr ""
+msgstr "文件载入导致以下错误信息 ($exception_type$):\n\n$error_message$"
 
 #: source/resource/conn_shared_res.src#STR_TYPE_NOT_CONVERT.String.Text
 msgid  "The type could not be converted."
@@ -417,11 +429,11 @@ msgstr "无法创建视图：没有命令对象。"
 
 #: source/resource/conn_shared_res.src#STR_NO_CONNECTION.String.Text
 msgid  "The connection could not be created. May be the necessary data provider is not installed."
-msgstr ""
+msgstr "无法创建连接。可能是由于没有安装必需的数据提供程序。"
 
 #: source/resource/conn_shared_res.src#STR_COULD_NOT_DELETE_INDEX.String.Text
 msgid  "The index could not be deleted. An unknown error while accessing the file system occured."
-msgstr ""
+msgstr "无法删除索引。访问文件系统时出现未知错误。"
 
 #: source/resource/conn_shared_res.src#STR_ONL_ONE_COLUMN_PER_INDEX.String.Text
 msgid  "The index could not be created. Only one column per index is allowed."
@@ -437,11 +449,11 @@ msgstr "无法创建索引。出现未知错误。"
 
 #: source/resource/conn_shared_res.src#STR_COULD_NOT_CREATE_INDEX_NAME.String.Text
 msgid  "The index could not be created. The file '$filename$' is used by an other index."
-msgstr ""
+msgstr "无法创建索引。'$filename$' 文件正在被其他索引使用。"
 
 #: source/resource/conn_shared_res.src#STR_COULD_NOT_CREATE_INDEX_KEYSIZE.String.Text
 msgid  "The index could not be created. The size of the chosen column is to big."
-msgstr ""
+msgstr "无法创建索引。选定列过大。"
 
 #: source/resource/conn_shared_res.src#STR_SQL_NAME_ERROR.String.Text
 msgid  "The name '$name$' doesn't match SQL naming constraints."
@@ -472,28 +484,28 @@ msgid  "Duplicate value found in column '$columnname$'."
 msgstr "列 '$columnname$' 中含有重复值。"
 
 #: source/resource/conn_shared_res.src#STR_INVALID_COLUMN_DECIMAL_VALUE.String.Text
-msgid  "The '$columnname$' column has been defined as a "Decimal" type, the max. length is $precision$ characters (with $scale$ decimal places).\n\nThe specified value "$value$ is longer than the number of digits allowed."
-msgstr ""
+msgid  "The '$columnname$' column has been defined as a \"Decimal\" type, the max. length is $precision$ characters (with $scale$ decimal places).\n\nThe specified value \"$value$ is longer than the number of digits allowed."
+msgstr "列 '$columnname$' 已经被定义为“十进制”类型，最长 $precision$ 位（$scale$ 个小数位）。\n\n指定的数值 \"$value$ 大于允许的位数。"
 
 #: source/resource/conn_shared_res.src#STR_COLUMN_NOT_ALTERABLE.String.Text
 msgid  "The column '$columnname$' could not be altered. May be the file system is write protected."
-msgstr ""
+msgstr "无法更改列 '$columnname$'。也许文件系统被写保护了。"
 
 #: source/resource/conn_shared_res.src#STR_INVALID_COLUMN_VALUE.String.Text
 msgid  "The column '$columnname$' could not be updated. The value is invalid for that column."
-msgstr ""
+msgstr "无法更新列 '$columnname$'。该值对于当前列来说无效。"
 
 #: source/resource/conn_shared_res.src#STR_COLUMN_NOT_ADDABLE.String.Text
 msgid  "The column '$columnname$' could not be added. May be the file system is write protected."
-msgstr ""
+msgstr "无法添加列 '$columnname$'。也许文件系统被写保护了。"
 
 #: source/resource/conn_shared_res.src#STR_COLUMN_NOT_DROP.String.Text
 msgid  "The column at position '$position$' could not be dropped. May be the file system is write protected."
-msgstr ""
+msgstr "无法删除 '$position$' 位置的列。也许文件系统被写保护了。"
 
 #: source/resource/conn_shared_res.src#STR_TABLE_NOT_DROP.String.Text
 msgid  "The table '$tablename$' could not be dropped. May be the file system is write protected."
-msgstr ""
+msgstr "无法删除表格 '$tablename$'。也许文件系统被写保护了。"
 
 #: source/resource/conn_shared_res.src#STR_COULD_NOT_ALTER_TABLE.String.Text
 msgid  "The table could not be altered."
@@ -512,8 +524,8 @@ msgid  "Can only sort by table columns."
 msgstr "只能按列排序。"
 
 #: source/resource/conn_shared_res.src#STR_QUERY_COMPLEX_COUNT.String.Text
-msgid  "The query can not be executed. It is too complex. Only "COUNT(*)" is supported."
-msgstr ""
+msgid  "The query can not be executed. It is too complex. Only \"COUNT(*)\" is supported."
+msgstr "无法执行查询。该查询太复杂。只支持 \"COUNT(*)\"。"
 
 #: source/resource/conn_shared_res.src#STR_QUERY_INVALID_BETWEEN.String.Text
 msgid  "The query can not be executed. The 'BETWEEN' arguments are not correct."
@@ -528,8 +540,8 @@ msgid  "The table can not be changed. It is read only."
 msgstr "无法更改表格。它是只读的。"
 
 #: source/resource/conn_shared_res.src#STR_DELETE_ROW.String.Text
-msgid  "The row could not be deleted. The option "Display inactive records" is set."
-msgstr ""
+msgid  "The row could not be deleted. The option \"Display inactive records\" is set."
+msgstr "无法删除该行。“显示非活动的记录”选项已被设置。"
 
 #: source/resource/conn_shared_res.src#STR_ROW_ALREADY_DELETED.String.Text
 msgid  "The row could not be deleted. It is already deleted."
@@ -589,15 +601,15 @@ msgstr "未找到合适的 KDE 安装程序。"
 
 #: source/resource/conn_shared_res.src#STR_KDE_VERSION_TOO_OLD.String.Text
 msgid  "KDE version $major$.$minor$ or higher is required to access the KDE Address Book."
-msgstr ""
+msgstr "为了访问 KDE 通讯簿，需要 $major$.$minor$ 或更高版本的 KDE。"
 
 #: source/resource/conn_shared_res.src#STR_KDE_VERSION_TOO_NEW.String.Text
 msgid  "The found KDE version is too new. Only KDE up to version $major$.$minor$ is known to work with this product.\n"
-msgstr ""
+msgstr "找到的 KDE 版本太新。该产品最多只能与 $major$.$minor$ 版本的 KDE 一起使用。\n"
 
 #: source/resource/conn_shared_res.src#STR_KDE_VERSION_TOO_NEW_WORK_AROUND.String.Text
 msgid  "If you are sure that your KDE version works, you might execute the following Basic macro to disable this version check:\n\n"
-msgstr ""
+msgstr "如果您确定您的 KDE 版本符合要求，就可以执行下面的 Basic 宏以禁用该版本检查：\n\n"
 
 #: source/resource/conn_shared_res.src#STR_PARA_ONLY_PREPARED.String.Text
 msgid  "Parameters can appear only in prepared statements."
@@ -613,19 +625,19 @@ msgstr "未找到合适的 Mac OS 安装程序。"
 
 #: source/resource/conn_shared_res.src#STR_NO_DISK_SPACE.String.Text
 msgid  "The database file '$filename$' could not be created. Please check your disk space."
-msgstr ""
+msgstr "无法创建数据库文件 '$filename$'。请检查您的磁盘空间。"
 
 #: source/resource/conn_shared_res.src#STR_COMMAND_NOT_FOUND.String.Text
 msgid  "The database '$databasename$' could not be started because the command '$progname$' could not be executed."
-msgstr ""
+msgstr "由于无法执行 '$progname$' 命令，数据库 '$databasename$' 无法启动。"
 
 #: source/resource/conn_shared_res.src#STR_DATABASE_NEEDS_CONVERTING.String.Text
 msgid  "The current database need to be converted. Please insert control user  and password."
-msgstr ""
+msgstr "需要转换当前数据库。请输入控制权限用户和密码。"
 
 #: source/resource/conn_shared_res.src#STR_USER_NO_DELETE.String.Text
 msgid  "This user couldn't be deleted. Otherwise the database stays in a inconsistent state."
-msgstr ""
+msgstr "无法删除该用户。否则数据库会处于不一致的状态。"
 
 #: source/resource/conn_shared_res.src#STR_NO_STROAGE.String.Text
 msgid  "The connection can not be established. No storage or URL was given."
@@ -633,7 +645,7 @@ msgstr "无法建立连接。未给定存储或 URL。"
 
 #: source/resource/conn_shared_res.src#STR_INVALID_FILE_URL.String.Text
 msgid  "The given URL contains no valid local file system path. Please check the location of your database file."
-msgstr ""
+msgstr "给定的 URL 包含无效的本地文件系统路径。请检查您数据库文件的位置。"
 
 #: source/resource/conn_shared_res.src#STR_NO_TABLE_CONTAINER.String.Text
 msgid  "An error occured while obtaining the connection's table container."
@@ -686,15 +698,3 @@ msgstr "不存在 $1$ 。"
 #: source/resource/conn_error_message.src#256 + 2*550 + 0.String.Text
 msgid  "Unable to display the complete table content. Please apply a filter."
 msgstr "无法完整显示表格内容。请指定筛选器。"
-
-#: source/drivers/mozab/mozab2.xcu#.Drivers.Installed.sdbc:address:mozilla:.DriverTypeDisplayName
-msgid  "SeaMonkey Address Book"
-msgstr "Mozilla 通讯薄"
-
-#: source/drivers/mozab/mozab2.xcu#.Drivers.Installed.sdbc:address:thunderbird:.DriverTypeDisplayName
-msgid  "Thunderbird Address Book"
-msgstr "Thunderbird 通讯簿"
-
-#: source/drivers/mozab/mozab2.xcu#.Drivers.Installed.sdbc:address:ldap:*.DriverTypeDisplayName
-msgid  "LDAP Address Book"
-msgstr "LDAP 通讯簿"

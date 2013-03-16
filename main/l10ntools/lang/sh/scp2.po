@@ -37,11 +37,11 @@ msgstr "ActiveX kontrola"
 
 #: source/activex/module_activex.ulf#STR_DESC_MODULE_OPTIONAL_ACTIVEXCONTROL
 msgid  "Component to enable Microsoft Internet Explorer to display %PRODUCTNAME documents."
-msgstr ""
+msgstr "Komponenta koja omogućava da Microsoft Internet Explorer prikazuje %PRODUCTNAME dokumente."
 
 #: source/base/folderitem_base.ulf#STR_FI_TOOLTIP_BASE
 msgid  "Manage databases, create queries and reports to track and manage your information by using Base."
-msgstr ""
+msgstr "Upravljajte bazama podataka, napravite upite i izveštaje za praćenje podataka u programu Baza."
 
 #: source/base/registryitem_base.ulf#STR_REG_VAL_OO_DATABASE
 msgid  "OpenDocument Database"
@@ -121,7 +121,11 @@ msgstr "Tablica"
 
 #: source/calc/folderitem_calc.ulf#STR_FI_TOOLTIP_CALC
 msgid  "Perform calculation, analyze information and manage lists in spreadsheets by using Calc."
-msgstr ""
+msgstr "Izvedite proračune, analizirajte podatke i upravljajte listama u unakrsnim tablicama u Računu."
+
+#: source/calc/registryitem_calc.ulf#STR_REG_VAL_NEW
+msgid  "&New"
+msgstr "&Nov"
 
 #: source/calc/registryitem_calc.ulf#STR_REG_VAL_SO60_SPREADSHEET
 msgid  "%SXWFORMATNAME %SXWFORMATVERSION Spreadsheet"
@@ -155,17 +159,13 @@ msgstr "Microsoft Excel 97-2003 šablon"
 msgid  "Microsoft Excel Template"
 msgstr "Microsoft Excel šablon"
 
-#: source/calc/registryitem_calc.ulf#STR_REG_VAL_NEW
-msgid  "&New"
-msgstr "&Nov"
-
 #: source/calc/module_calc.ulf#STR_NAME_MODULE_PRG_CALC
 msgid  "%PRODUCTNAME Calc"
 msgstr "%PRODUCTNAME Račun"
 
 #: source/calc/module_calc.ulf#STR_DESC_MODULE_PRG_CALC
 msgid  "Perform calculation, analyze information and manage lists in spreadsheets by using %PRODUCTNAME Calc."
-msgstr ""
+msgstr "Izvedite proračune, analizirajte podatke i upravljajte listama u unakrsnim tablicama u %PRODUCTNAME Računu."
 
 #: source/calc/module_calc.ulf#STR_NAME_MODULE_PRG_CALC_BIN
 msgid  "Program Module"
@@ -189,7 +189,11 @@ msgstr "Dodatak"
 
 #: source/calc/module_calc.ulf#STR_DESC_MODULE_OPTIONAL_ADDINS
 msgid  "Add-ins are additional programs that make new functions available in %PRODUCTNAME Calc."
-msgstr ""
+msgstr "Umetci su dodatni programi koji obezbeđuju nove funkcije za %PRODUCTNAME Račun."
+
+#: source/draw/registryitem_draw.ulf#STR_REG_VAL_NEW
+msgid  "&New"
+msgstr "&Nov"
 
 #: source/draw/registryitem_draw.ulf#STR_REG_VAL_SO60_DRAWING
 msgid  "%SXWFORMATNAME %SXWFORMATVERSION Drawing"
@@ -207,10 +211,6 @@ msgstr "ODF crtež"
 msgid  "OpenDocument Drawing Template"
 msgstr "ODF šablon crteža"
 
-#: source/draw/registryitem_draw.ulf#STR_REG_VAL_NEW
-msgid  "&New"
-msgstr "&Nov"
-
 #: source/draw/folderitem_draw.ulf#STR_FI_NAME_ZEICHNUNG
 msgid  "Drawing"
 msgstr "Crtež"
@@ -225,7 +225,7 @@ msgstr "%PRODUCTNAME Crtanje"
 
 #: source/draw/module_draw.ulf#STR_DESC_MODULE_PRG_DRAW
 msgid  "Create and edit drawings, flow charts, and logos by using %PRODUCTNAME Draw."
-msgstr ""
+msgstr "Napravite i uređujte crteže, dijagrame toka i logotipe u %PRODUCTNAME Crtanju."
 
 #: source/draw/module_draw.ulf#STR_NAME_MODULE_PRG_DRAW_BIN
 msgid  "Program Module"
@@ -249,7 +249,7 @@ msgstr "Integracija u Gnom"
 
 #: source/gnome/module_gnome.ulf#STR_DESC_MODULE_OPTIONAL_GNOME
 msgid  "System integration of %PRODUCTNAME %PRODUCTVERSION into Gnome Desktop Environment."
-msgstr ""
+msgstr "Integracija paketa %PRODUCTNAME %PRODUCTVERSION u Gnom radno okruženje."
 
 #: source/graphicfilter/module_graphicfilter.ulf#STR_NAME_MODULE_OPTIONAL_GRFFLT
 msgid  "Graphics Filters"
@@ -257,7 +257,7 @@ msgstr "Grafički filteri"
 
 #: source/graphicfilter/module_graphicfilter.ulf#STR_DESC_MODULE_OPTIONAL_GRFFLT
 msgid  "Additional filters required to read alien graphic formats."
-msgstr ""
+msgstr "Da bi mogli da se čitaju strani grafički formati, neophodni su dodatni filteri."
 
 #: source/graphicfilter/module_graphicfilter.ulf#STR_NAME_MODULE_OPTIONAL_GRFFLT_ADOBE
 msgid  "Adobe Photoshop Import Filter"
@@ -377,7 +377,11 @@ msgstr "Prezentacija"
 
 #: source/impress/folderitem_impress.ulf#STR_FI_TOOLTIP_IMPRESS
 msgid  "Create and edit presentations for slideshows, meeting and Web pages by using Impress."
-msgstr ""
+msgstr "Napravite i uređujte prezentacije za projekcije, sastanke i Internet u Prezentaciji."
+
+#: source/impress/registryitem_impress.ulf#STR_REG_VAL_NEW
+msgid  "&New"
+msgstr "&Nov"
 
 #: source/impress/registryitem_impress.ulf#STR_REG_VAL_SO60_SHOW
 msgid  "Show"
@@ -419,17 +423,13 @@ msgstr "Microsoft PowerPoint 97-2003 šablon"
 msgid  "Microsoft PowerPoint Template"
 msgstr "Microsoft PowerPoint šablon"
 
-#: source/impress/registryitem_impress.ulf#STR_REG_VAL_NEW
-msgid  "&New"
-msgstr "&Nov"
-
 #: source/impress/module_impress.ulf#STR_NAME_MODULE_PRG_IMPRESS
 msgid  "%PRODUCTNAME Impress"
 msgstr "%PRODUCTNAME Prezentacija"
 
 #: source/impress/module_impress.ulf#STR_DESC_MODULE_PRG_IMPRESS
 msgid  "Create and edit presentations for slideshows, meeting and Web pages by using %PRODUCTNAME Impress."
-msgstr ""
+msgstr "Napravite i uređujte prezentacije za projekcije, sastanke i Internet u %PRODUCTNAME Prezentaciji."
 
 #: source/impress/module_impress.ulf#STR_NAME_MODULE_PRG_IMPRESS_BIN
 msgid  "Program Module"
@@ -461,7 +461,7 @@ msgstr "Filteri za prenosne uređaje"
 
 #: source/javafilter/module_javafilter.ulf#STR_DESC_MODULE_OPTIONAL_JAVAFILTER
 msgid  "Text and spreadsheet filters to support import/export for Palm handheld or Pocket PC (Java required)."
-msgstr ""
+msgstr "Filteri za podršku uvoza i izvoza teksta i tablica za Palm ili Poket-PC prenosne uređaje (java je neophodna)."
 
 #: source/javafilter/module_javafilter.ulf#STR_NAME_MODULE_OPTIONAL_JAVAFILTER_PALM
 msgid  "Palm"
@@ -565,7 +565,7 @@ msgstr "%PRODUCTNAME Matematika"
 
 #: source/math/module_math.ulf#STR_DESC_MODULE_PRG_MATH
 msgid  "Create and edit scientific formulas and equations by using %PRODUCTNAME Math."
-msgstr ""
+msgstr "Napravite i uređujte naučne formule i jednačine u %PRODUCTNAME Matematici."
 
 #: source/math/module_math.ulf#STR_NAME_MODULE_PRG_MATH_BIN
 msgid  "Program Module"
@@ -587,6 +587,10 @@ msgstr "Pomoć za %PRODUCTNAME Matematiku"
 msgid  "Create and edit scientific formulas and equations by using Math."
 msgstr "Napravite i uređujte naučne formule i jednačine u Matematici."
 
+#: source/math/registryitem_math.ulf#STR_REG_VAL_NEW
+msgid  "&New"
+msgstr "&Nov"
+
 #: source/math/registryitem_math.ulf#STR_REG_VAL_SO60_FORMULA
 msgid  "%SXWFORMATNAME %SXWFORMATVERSION Formula"
 msgstr "%SXWFORMATNAME %SXWFORMATVERSION Formule"
@@ -595,17 +599,17 @@ msgstr "%SXWFORMATNAME %SXWFORMATVERSION Formule"
 msgid  "OpenDocument Formula"
 msgstr "ODF formula"
 
-#: source/math/registryitem_math.ulf#STR_REG_VAL_NEW
-msgid  "&New"
-msgstr "&Nov"
-
 #: source/onlineupdate/module_onlineupdate.ulf#STR_NAME_MODULE_OPT_ONLINEUPDATE
 msgid  "Online Update"
 msgstr "Ažuriranje preko mreže"
 
 #: source/onlineupdate/module_onlineupdate.ulf#STR_DESC_MODULE_OPT_ONLINEUPDATE
 msgid  "Get automatically notified when a new update of %PRODUCTNAME becomes available."
-msgstr ""
+msgstr "Budite obavešteni čim postane dostupno novo izdanje paketa %PRODUCTNAME."
+
+#: source/ooo/registryitem_ooo.ulf#STR_REG_VAL_NEW
+msgid  "&New"
+msgstr "&Nov"
 
 #: source/ooo/registryitem_ooo.ulf#STR_REG_VAL_INSTALL
 msgid  "&Install"
@@ -615,17 +619,13 @@ msgstr "&Instaliraj"
 msgid  "OpenOffice.org 1.1 Configuration File"
 msgstr ""
 
-#: source/ooo/registryitem_ooo.ulf#STR_REG_VAL_APPCAPABILITY_DESCRIPTION_OOO
-msgid  "office productivity suite based on Apache OpenOffice project"
-msgstr ""
-
-#: source/ooo/registryitem_ooo.ulf#STR_REG_VAL_NEW
-msgid  "&New"
-msgstr "&Nov"
-
 #: source/ooo/registryitem_ooo.ulf#STR_REG_VAL_SO50_TEMPLATE_OOO
 msgid  "StarOffice 5.0 Template"
 msgstr "StarOffice 5.0 šablon"
+
+#: source/ooo/registryitem_ooo.ulf#STR_REG_VAL_APPCAPABILITY_DESCRIPTION_OOO
+msgid  "office productivity suite based on Apache OpenOffice project"
+msgstr ""
 
 #: source/ooo/module_systemint.ulf#STR_NAME_MODULE_OPTIONAL_SYSTEMINTEGRATION
 msgid  "Desktop integration"
@@ -657,7 +657,7 @@ msgstr "Opcione komponente"
 
 #: source/ooo/module_ooo.ulf#STR_DESC_MODULE_OPTIONAL
 msgid  "Common components and additional programs shared by all %PRODUCTNAME programs."
-msgstr ""
+msgstr "Uobičajene komponente i dodatni programi deljeni među svim programima paketa %PRODUCTNAME."
 
 #: source/ooo/module_ooo.ulf#STR_NAME_MODULE_DICTIONARIES
 msgid  "Dictionaries"
@@ -725,7 +725,7 @@ msgstr "Otvori dokument"
 
 #: source/ooo/folderitem_ooo.ulf#STR_FI_TOOLTIP_SOFFICE
 msgid  "The office productivity suite compatible to the open and standardized ODF document format. Supported by The Apache Software Foundation."
-msgstr ""
+msgstr "Kancelarijski paket saglasan sa standardizovanim ODF formatom. Podržan od strane korporacije Oracle."
 
 #: source/ooo/module_langpack.ulf#STR_NAME_MODULE_ROOT_LANGPACK
 msgid  "Additional language packs"
@@ -821,7 +821,7 @@ msgstr "kineski (pojednostavljeno)"
 
 #: source/ooo/module_langpack.ulf#STR_DESC_MODULE_LANGPACK_ZH_CN
 msgid  "Installs Chinese (simplified) support in %PRODUCTNAME %PRODUCTVERSION"
-msgstr ""
+msgstr "Instalira podršku za kineski s pojednostavljenim karakterima u %PRODUCTNAME %PRODUCTVERSION"
 
 #: source/ooo/module_langpack.ulf#STR_NAME_MODULE_LANGPACK_ZH_TW
 msgid  "Chinese (traditional)"
@@ -829,7 +829,7 @@ msgstr "kineski (tradicionalni)"
 
 #: source/ooo/module_langpack.ulf#STR_DESC_MODULE_LANGPACK_ZH_TW
 msgid  "Installs Chinese (traditional) support in %PRODUCTNAME %PRODUCTVERSION"
-msgstr ""
+msgstr "Instalira podršku za tradicioalni kineski u %PRODUCTNAME %PRODUCTVERSION"
 
 #: source/ooo/module_langpack.ulf#STR_NAME_MODULE_LANGPACK_NL
 msgid  "Dutch"
@@ -1077,7 +1077,7 @@ msgstr "bengalski (Bangladeš)"
 
 #: source/ooo/module_langpack.ulf#STR_DESC_MODULE_LANGPACK_BN_BD
 msgid  "Installs Bengali (Bangladesh) support in %PRODUCTNAME %PRODUCTVERSION"
-msgstr ""
+msgstr "Instalira podršku za bengalski (Bangladeš) u %PRODUCTNAME %PRODUCTVERSION"
 
 #: source/ooo/module_langpack.ulf#STR_NAME_MODULE_LANGPACK_BN_IN
 msgid  "Bengali (India)"
@@ -1549,7 +1549,7 @@ msgstr "engleski (Južna Afrika)"
 
 #: source/ooo/module_langpack.ulf#STR_DESC_MODULE_LANGPACK_EN_ZA
 msgid  "Installs English (South Africa) support in %PRODUCTNAME %PRODUCTVERSION"
-msgstr ""
+msgstr "Instalira podšku za engleski (Južna Afrika) u %PRODUCTNAME %PRODUCTVERSION"
 
 #: source/ooo/module_langpack.ulf#STR_NAME_MODULE_LANGPACK_EN_GB
 msgid  "English (United Kingdom)"
@@ -1557,7 +1557,7 @@ msgstr "engleski (Velika Britanija)"
 
 #: source/ooo/module_langpack.ulf#STR_DESC_MODULE_LANGPACK_EN_GB
 msgid  "Installs English (United Kingdom) support in %PRODUCTNAME %PRODUCTVERSION"
-msgstr ""
+msgstr "Instalira podršku za engleski (Velika Britanija) u %PRODUCTNAME %PRODUCTVERSION"
 
 #: source/ooo/module_langpack.ulf#STR_NAME_MODULE_LANGPACK_UR_IN
 msgid  "Urdu"
@@ -1669,7 +1669,7 @@ msgstr "Python-UNO most"
 
 #: source/python/module_python.ulf#STR_DESC_MODULE_OPTIONAL_PYTHON
 msgid  "Adds the ability to automate %PRODUCTNAME with the python scripting language. See http://udk.openoffice.org/python/python-bridge.html for a complete documentation."
-msgstr ""
+msgstr "Dodaje mogućnost da se %PRODUCTNAME automatizuje pomoću skript jezika pajton. Pogledajte http://udk.openoffice.org/python/python-bridge.html za celokupnu dokumentaciju."
 
 #: source/quickstart/module_quickstart.ulf#STR_NAME_MODULE_OPTIONAL_QUICKSTART
 msgid  "Quickstarter"
@@ -1677,7 +1677,7 @@ msgstr "Brzi pokretač"
 
 #: source/quickstart/module_quickstart.ulf#STR_DESC_MODULE_OPTIONAL_QUICKSTART
 msgid  "Loads basic components on system start to accelerate start up time of %PRODUCTNAME %PRODUCTVERSION."
-msgstr ""
+msgstr "Učitava osnovne delove odmah po uključivanju sistema kako bi se %PRODUCTNAME %PRODUCTVERSION brže pokretao."
 
 #: source/sdkoo/module_sdkoo.ulf#STR_NAME_MODULE_OPTIONAL_SDKOO
 msgid  "Software Development Kit (SDK)"
@@ -1685,7 +1685,7 @@ msgstr "Komplet za razvoj softvera (SDK)"
 
 #: source/sdkoo/module_sdkoo.ulf#STR_DESC_MODULE_OPTIONAL_SDKOO
 msgid  "The SDK provides all necessary tools, examples and documentation to program with and for the office."
-msgstr ""
+msgstr "Komplet za razvoj softvera sadrži sav neophodan alat, primere i dokumentaciju za programiranje sa i za kancelarijski paket."
 
 #: source/winexplorerext/module_winexplorerext.ulf#STR_NAME_MODULE_OPTIONAL_WINDOWS_EXPLORER_EXTENSIONS
 msgid  "Windows Explorer Extension"
@@ -1693,7 +1693,7 @@ msgstr "Proširenje za Windows Explorer"
 
 #: source/winexplorerext/module_winexplorerext.ulf#STR_DESC_MODULE_OPTIONAL_WINDOWS_EXPLORER_EXTENSIONS
 msgid  "Enables the Microsoft Windows Explorer to show information about %PRODUCTNAME documents, such as thumbnail previews."
-msgstr ""
+msgstr "Omogućava da Microsoft Windows Explorer može da prikazuje podatke o %PRODUCTNAME dokumentima, na primer njihove umanjene preglede."
 
 #: source/writer/folderitem_writer.ulf#STR_FI_NAME_HTMLDOKUMENT
 msgid  "HTML Document"
@@ -1705,7 +1705,11 @@ msgstr "Tekst"
 
 #: source/writer/folderitem_writer.ulf#STR_FI_TOOLTIP_WRITER
 msgid  "Create and edit text and graphics in letters, reports, documents and Web pages by using Writer."
-msgstr ""
+msgstr "Pišite i uređujte tekst i grafiku u pismima, izveštajima i veb stranicama u Piscu."
+
+#: source/writer/registryitem_writer.ulf#STR_REG_VAL_NEW
+msgid  "&New"
+msgstr "&Nov"
 
 #: source/writer/registryitem_writer.ulf#STR_REG_VAL_SO60_TEXT
 msgid  "%SXWFORMATNAME %SXWFORMATVERSION Text Document"
@@ -1755,17 +1759,13 @@ msgstr "Microsoft Word šablon"
 msgid  "Rich Text Document"
 msgstr "Obogaćeni tekst dokument (RTF)"
 
-#: source/writer/registryitem_writer.ulf#STR_REG_VAL_NEW
-msgid  "&New"
-msgstr "&Nov"
-
 #: source/writer/module_writer.ulf#STR_NAME_MODULE_PRG_WRT
 msgid  "%PRODUCTNAME Writer"
 msgstr "%PRODUCTNAME Pisac"
 
 #: source/writer/module_writer.ulf#STR_DESC_MODULE_PRG_WRT
 msgid  "Create and edit text and graphics in letters, reports, documents and Web pages by using %PRODUCTNAME Writer."
-msgstr ""
+msgstr "Pišite i uređujte tekst i grafiku u pismima, izveštajima i veb stranicama u %PRODUCTNAME Piscu."
 
 #: source/writer/module_writer.ulf#STR_NAME_MODULE_PRG_WRT_BIN
 msgid  "Program Module"

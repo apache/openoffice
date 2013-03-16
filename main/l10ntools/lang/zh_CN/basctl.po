@@ -137,7 +137,7 @@ msgstr "保存"
 
 #: source/basicide/basidesh.src#RID_STR_SOURCETOBIG.String.Text
 msgid  "The source text is too large and can be neither compiled nor saved.\nDelete some of the comments or transfer some methods into another module."
-msgstr ""
+msgstr "源文本太大，无法保存和编译。\n请删除一些注解或者将几个方法转移到其他的模块中。"
 
 #: source/basicide/basidesh.src#RID_STR_ERROROPENSTORAGE.String.Text
 msgid  "Error opening file"
@@ -201,7 +201,7 @@ msgstr "文件 'XX' 已经存在。"
 
 #: source/basicide/basidesh.src#RID_STR_CANNOTRUNMACRO.String.Text
 msgid  "For security reasons, you cannot run this macro.\n\nFor more information, check the security settings."
-msgstr ""
+msgstr "为了安全起见，您不能运行此宏。\n\n有关详细信息，请检查安全设置。"
 
 #: source/basicide/basidesh.src#RID_STR_COMPILEERROR.String.Text
 msgid  "Compile Error: "
@@ -301,7 +301,7 @@ msgstr "宏栏"
 
 #: source/basicide/basidesh.src#RID_STR_CANNOTCLOSE.String.Text
 msgid  "The window cannot be closed while BASIC is running."
-msgstr ""
+msgstr "在 BASIC 程序运行时\n无法关闭窗口。"
 
 #: source/basicide/basidesh.src#RID_STR_REPLACESTDLIB.String.Text
 msgid  "The default library cannot be replaced."
@@ -373,7 +373,7 @@ msgstr "必须给定一个名称。"
 
 #: source/basicide/basidesh.src#RID_STR_WILLSTOPPRG.String.Text
 msgid  "You will have to restart the program after this edit.\nContinue?"
-msgstr ""
+msgstr "修改之后您必须重新启动这个程序。\n您要继续吗？"
 
 #: source/basicide/basidesh.src#RID_STR_SEARCHALLMODULES.String.Text
 msgid  "Do you want to replace the text in all active modules?"
@@ -509,7 +509,7 @@ msgstr "对话框导入 - 名称已被使用"
 
 #: source/basicide/basidesh.src#RID_STR_DLGIMP_CLASH_TEXT.String.Text
 msgid  "The library already contains a dialog with the name:\n\n$(ARG1)\n\nRename dialog to keep current dialog or replace existing dialog.\n "
-msgstr ""
+msgstr "该库已包含具有以下名称的对话框：\n\n$(ARG1)\n\n可以重命名对话框以保留当前对话框，也可以替换现有对话框。\n "
 
 #: source/basicide/basidesh.src#RID_STR_DLGIMP_MISMATCH_ADD.String.Text
 msgid  "Add"
@@ -525,7 +525,7 @@ msgstr "对话框导入 - 语言不匹配"
 
 #: source/basicide/basidesh.src#RID_STR_DLGIMP_MISMATCH_TEXT.String.Text
 msgid  "The dialog to be imported supports other languages than the target library.\n\nAdd these languages to the library to keep additional language resources provided by the dialog or omit them to stay with the current library languages.\n\nNote: For languages not supported by the dialog the resources of the dialog's default language will be used.\n "
-msgstr ""
+msgstr "要导入的对话框支持目标库语言以外的其他语言。\n\n可以将这些语言添加到库以保留对话框提供的其他语言资源，也可以忽略它们以保留当前库语言。\n\n注意：如果某些语言不受对话框支持，将会使用对话框的默认语言资源。\n "
 
 #: source/basicide/basicprint.src#RID_PRINTDLG_STRLIST.item1.ItemList.item
 msgid  "Print range"
@@ -757,7 +757,7 @@ msgstr "默认"
 
 #: source/dlged/managelang.src#RID_DLG_MANAGE_LANGUAGE.FT_INFO.FixedText.Text
 msgid  "The default language is used if no localization for a user interface locale is present. Furthermore all strings from the default language are copied to resources of newly added languages."
-msgstr ""
+msgstr "如果没有本地化的用户界面语言环境，则使用默认语言。另外，默认语言的所有字符串都将复制到新添加的语言资源中。"
 
 #: source/dlged/managelang.src#RID_DLG_MANAGE_LANGUAGE.PB_CLOSE.OKButton.Text
 msgid  "~Close"
@@ -781,7 +781,7 @@ msgstr "删除语言资源"
 
 #: source/dlged/managelang.src#RID_QRYBOX_LANGUAGE.QueryBox.Message
 msgid  "You are about to delete the resources for the selected language(s). All user interface strings for this language(s) will be deleted.\n\nDo you want to delete the resources of the selected language(s)?"
-msgstr ""
+msgstr "您要删除选定语言的资源。将删除此语言的所有用户界面字符串。\n\n是否要删除选定语言的资源？"
 
 #: source/dlged/managelang.src#RID_DLG_SETDEF_LANGUAGE.ModalDialog.Text
 msgid  "Set Default User Interface Language"
@@ -793,7 +793,7 @@ msgstr "默认语言"
 
 #: source/dlged/managelang.src#RID_DLG_SETDEF_LANGUAGE.FT_DEF_INFO.FixedText.Text
 msgid  "Select a language to define the default user interface language. All currently present strings will be assigned to the resources created for the selected language."
-msgstr ""
+msgstr "选择一种语言来定义默认的用户界面语言。所有当前存在的字符串都将指定给为选定语言创建的资源。"
 
 #: source/dlged/managelang.src#RID_DLG_SETDEF_LANGUAGE.STR_ADDLANG_TITLE.String.Text
 msgid  "Add User Interface Languages"
@@ -805,7 +805,7 @@ msgstr "可用语言"
 
 #: source/dlged/managelang.src#RID_DLG_SETDEF_LANGUAGE.STR_ADDLANG_INFO.String.Text
 msgid  "Select languages to be added. Resources for these languages will be created in the library. Strings of the current default user interface language will be copied to these new resources by default."
-msgstr ""
+msgstr "选择要添加的语言。将在库中创建这些语言的资源。默认情况下，当前默认用户界面语言的字符串将复制到这些新资源中。"
 
 #: source/dlged/dlgresid.src#RID_STR_BRWTITLE_PROPERTIES.String.Text
 msgid  "Properties: "

@@ -725,7 +725,7 @@ msgstr "Ин дафтари WinWord6 намебошад"
 
 #: source/ui/app/error.src#RID_SW_ERRHDL.ERR_CODE ( ERRCODE_CLASS_READ , ERR_WW6_FASTSAVE_ERR ).String.Text
 msgid  "This file was saved with WinWord in 'Fast Save' mode. Please unmark the WinWord option 'Allow Fast Saves' and save the file again."
-msgstr ""
+msgstr "Ин дафтар аз WinWord дар режими 'Сабткунии тез' сабт карда шудааст. Илтимос, параметри 'Иҷозат ба сабткунии тез'-ро бекор кунед ва аз нав ин дафтарро аз WinWord сабт кунед."
 
 #: source/ui/app/error.src#RID_SW_ERRHDL.ERR_CODE ( ERRCODE_CLASS_READ , ERR_FORMAT_ROWCOL ).String.Text
 msgid  "File format error found at $(ARG1)(row,col)."
@@ -741,7 +741,7 @@ msgstr "Ин дафтари WinWord97 намебошад"
 
 #: source/ui/app/error.src#RID_SW_ERRHDL.ERR_CODE ( ERRCODE_CLASS_READ , ERR_FORMAT_FILE_ROWCOL ).String.Text
 msgid  "Format error discovered in the file in sub-document $(ARG1) at $(ARG2)(row,col)."
-msgstr ""
+msgstr "Хатогии формати дафтар дар зерҳуҷҷати $(ARG1) дар мақоми $(ARG2)(сатр, сутун)."
 
 #: source/ui/app/error.src#RID_SW_ERRHDL.ERR_CODE ( ERRCODE_CLASS_WRITE , ERR_SWG_WRITE_ERROR ).String.Text
 msgid  "Error writing file."
@@ -789,7 +789,7 @@ msgstr "Имкони хондани расм нест"
 
 #: source/ui/app/error.src#RID_SW_ERRHDL.WARN_CODE ( ERRCODE_CLASS_READ , WARN_WW6_FASTSAVE_ERR ).String.Text
 msgid  "This file was saved with WinWord in 'Fast Save' mode. Please unmark the WinWord option 'Allow Fast Saves' and save the file again."
-msgstr ""
+msgstr "Ин дафтар аз WinWord дар режими 'Сабткунии тез' сабт карда шудааст. Илтимос, параметри 'Иҷозат ба сабткунии тез'-ро бекор кунед ва аз нав ин дафтарро аз WinWord сабт кунед."
 
 #: source/ui/app/error.src#RID_SW_ERRHDL.WARN_CODE ( ERRCODE_CLASS_READ , WARN_SWG_FEATURES_LOST ).String.Text
 msgid  "Not all attributes could be read."
@@ -817,7 +817,7 @@ msgstr "Пурра сабт кардани ҳуҷҷат имкон надора�
 
 #: source/ui/app/error.src#RID_SW_ERRHDL.WARN_CODE ( ERRCODE_CLASS_WRITE , WARN_SWG_HTML_NO_MACROS).String.Text
 msgid  "This HTML document contains %PRODUCTNAME Basic macros.\nThey were not saved with the current export settings."
-msgstr ""
+msgstr "Ин ҳуҷҷати HTML макроси Бейсики %PRODUCTNAME дорад.\nОнҳо бо ҷӯрсозиҳои ҷории экспорт сабт нашудаанд."
 
 #: source/ui/app/error.src#RID_SW_ERRHDL.ERR_CODE ( ERRCODE_CLASS_WRITE , WARN_WRITE_ERROR_FILE ).String.Text
 msgid  "Error in writing sub-document $(ARG1)."
@@ -825,7 +825,7 @@ msgstr "Хатогии сабти зерҳуҷҷати $(ARG1)"
 
 #: source/ui/app/error.src#RID_SW_ERRHDL.ERR_CODE ( ERRCODE_CLASS_WRITE , WARN_FORMAT_FILE_ROWCOL ).String.Text
 msgid  "Format error discovered in the file in sub-document $(ARG1) at $(ARG2)(row,col)."
-msgstr ""
+msgstr "Хатогии формати дафтар дар зерҳуҷҷати $(ARG1) дар мақоми $(ARG2)(сатр, сутун)."
 
 #: source/ui/app/app.src#STR_PRINT_MERGE_MACRO.String.Text
 msgid  "Print form letters"
@@ -1076,8 +1076,8 @@ msgid  "Adapt Objects..."
 msgstr "Мутобиқсозии объектҳо..."
 
 #: source/ui/app/app.src#MSG_COMCORE_ASKSEARCH.QueryBox.Message
-msgid  "To proceed with this action, you must first turn off the "undo" function. Do you want to turn off the "undo" function?"
-msgstr ""
+msgid  "To proceed with this action, you must first turn off the \"undo\" function. Do you want to turn off the \"undo\" function?"
+msgstr "Барои инкор кардани ин амал шумо бояд функтсияи \"инкор\"-ро бекор кунед.\nШумо мехоҳед \"инкор\" бекор карда шавад?"
 
 #: source/ui/app/app.src#STR_TABLE_DEFNAME.String.Text
 msgid  "Table"
@@ -1109,15 +1109,15 @@ msgstr "Саҳифаи холӣ"
 
 #: source/ui/app/app.src#MSG_CLPBRD_CLEAR.QueryBox.Message
 msgid  "You have a large amount of data saved in the clipboard.\nShould the clipboard contents remain available for other applications?"
-msgstr ""
+msgstr "Шумо шумораи калони далелҳоро дар ганҷӣ ҷой додед.\nМехоҳед онҳоро барои барномаҳои дигар нигоҳ доред?"
 
 #: source/ui/app/app.src#MSG_SAVE_HTML_QUERY.QueryBox.Message
 msgid  "Conversion into HTML format \nmay cause information loss. \nDo you want to save the document?"
-msgstr ""
+msgstr "Табдилдиҳи ба формати HTML \nсабаби гумшавии маълумот мегардад. \nШумо ҳуҷҷатро сабт кардан мехоҳед?"
 
 #: source/ui/app/app.src#MSG_SAVEAS_HTML_QUERY.QueryBox.Message
 msgid  "The source code can only be displayed if the document is saved in HTML format.\nWould you like to save the document as HTML?"
-msgstr ""
+msgstr "Коди ибтидоӣ дар ҳолати сабткунӣ дар формати HTML нишон дода мешавад.\nМехоҳед ҳуҷҷатро дар формати HTML сабт кунед?"
 
 #: source/ui/app/app.src#STR_ABSTRACT_TITLE.String.Text
 msgid  "Abstract: "
@@ -1161,11 +1161,11 @@ msgstr "номаълум"
 
 #: source/ui/app/app.src#MSG_DISABLE_UNDO_QUESTION.WarningBox.Message
 msgid  "This action deletes the list of actions that can be undone. Previous changes made to the document are still valid, but cannot be undone. Do you want to continue formatting?"
-msgstr ""
+msgstr "Бо ин амал рӯйхати амалҳое, ки инкор карданашон имкон дорад маҳв мегардад. Дигаргуниҳои то ин дам дар ҳуҷҷат шуда сабт карда мешаванд, вале инкор кардани онҳо ғайриимкон мегардад. Форматноккуниро давом диҳам?"
 
 #: source/ui/app/app.src#MSG_PRINT_AS_MERGE.QueryBox.Message
 msgid  "Your document contains address database fields. Do you want to print a form letter?"
-msgstr ""
+msgstr "Ҳуҷҷати шумо майдони махзани далелҳои адресҳо дорад. Шумо мехоҳед, ки ҳамчун нома чоп кунед?"
 
 #: source/ui/app/app.src#DLG_MERGE_SOURCE_UNAVAILABLE.ST_MERGE_SOURCE_UNAVAILABLE.FixedText.Text
 msgid  "The data source \'%1\' was not found. Thus the connection to the data source could not be established.\n\nPlease check the connections settings."
@@ -1177,7 +1177,7 @@ msgstr "Ҷӯрсозиҳои пайвастшавиро санҷед..."
 
 #: source/ui/app/app.src#MSG_DATA_SOURCES_UNAVAILABLE.WarningBox.Message
 msgid  "No data source has been set up yet. You need a data source, such as a database, to supply data (for example, names and addresses) for the fields."
-msgstr ""
+msgstr "Манбаи далелҳо дода нашудааст. Манбаи далелҳо (мисол, махзани далелҳо) барои пур кардани майдонҳо зарур аст (мисол, номҳо ва адресҳо)."
 
 #: source/ui/app/app.src#RID_MODULE_TOOLBOX.String.Text
 msgid  "Function Bar (viewing mode)"
@@ -1193,7 +1193,7 @@ msgstr ""
 
 #: source/ui/app/app.src#MSG_DISABLE_READLINE_QUESTION.WarningBox.Message
 msgid  "In the current document, changes are being recorded but not shown as such. In large documents, delays can occur when the document is edited. Do you want to show the changes to avoid delays?"
-msgstr ""
+msgstr "Дар ҳуҷҷати ҷорӣ дигаргуниҳо сабт шуданд, вале ин тавр вонамуд намешавад. Дар ҳуҷҷатҳои калон мумкин аст вақт барои ислоҳкунӣ сарф шавад. Мехоҳед дигаргуниҳо нишон дода шаванд, барои сарфакорӣ?"
 
 #: source/ui/app/mn.src#MN_TXT.FN_FORMAT_PAGE_DLG.MenuItem.Text
 msgid  "Pa~ge..."
@@ -2041,7 +2041,7 @@ msgstr "[Ҳеҷ]"
 
 #: source/ui/chrdlg/chrdlg.src#MSG_ILLEGAL_PAGENUM.InfoBox.Message
 msgid  "Page numbers cannot be applied to the current page.  Even numbers can be used on left pages, odd numbers on right pages."
-msgstr ""
+msgstr "Имкони гузоштани рақами ин саҳифа нест. Дар саҳифаҳои чап танҳо рақамҳои ҷуфт ва дар рост танҳо рақамҳои тоқ ҷойгир мешаванд."
 
 #: source/ui/chrdlg/swbreak.src#DLG_BREAK.ModalDialog.Text
 msgid  "Insert Break"
@@ -2797,7 +2797,7 @@ msgstr "<Ҷӯрсозиҳои истифодабар>"
 
 #: source/ui/config/optcomp.src#TP_OPTCOMPATIBILITY_PAGE.STR_QRYBOX_USEASDEFAULT.String.Text
 msgid  "Do you want to change the compatibility options of the default template?\nThis will affect all new documents based on the default template."
-msgstr ""
+msgstr "Мехоҳед ҷӯрсозиҳои мувофиқатро барои қолаби аслӣ тағир диҳед?\nИн ба ҳуҷҷати навви дар асоси ин қолаб сохташуда таъсир мерасонад."
 
 #: source/ui/config/optcomp.src#TP_OPTCOMPATIBILITY_PAGE.STR_PRINTER_METRICS.String.Text
 msgid  "Use printer metrics for document formatting"
@@ -2809,7 +2809,7 @@ msgstr "Иловакунии холигӣ миёни параграф ва ҷа�
 
 #: source/ui/config/optcomp.src#TP_OPTCOMPATIBILITY_PAGE.STR_MERGE_PARA_DIST_PAGESTART.String.Text
 msgid  "Add paragraph and table spacing at tops of pages (in current document)"
-msgstr ""
+msgstr "Иловакунии холигӣ миёни параграф ва ҷадвалҳо дар болои саҳифа (дар ҳуҷҷати ҷорӣ)"
 
 #: source/ui/config/optcomp.src#TP_OPTCOMPATIBILITY_PAGE.STR_TAB_ALIGNMENT.String.Text
 msgid  "Use %WRITERCOMPATIBILITYVERSIONOOO11 tabstop formatting"
@@ -2833,7 +2833,7 @@ msgstr "Истифодабарии ҷойгиркунии объектҳои %WR
 
 #: source/ui/config/optcomp.src#TP_OPTCOMPATIBILITY_PAGE.STR_USE_OURTEXTWRAPPING.String.Text
 msgid  "Use %WRITERCOMPATIBILITYVERSIONOOO11 text wrapping around objects"
-msgstr ""
+msgstr "Истифодаи ғунории матн дар гирди объекти %WRITERCOMPATIBILITYVERSIONOOO11"
 
 #: source/ui/config/optcomp.src#TP_OPTCOMPATIBILITY_PAGE.STR_CONSIDER_WRAPPINGSTYLE.String.Text
 msgid  "Consider wrapping style when positioning objects"
@@ -2897,7 +2897,7 @@ msgstr "Ном"
 
 #: source/ui/config/optload.src#TP_OPTCAPTION_PAGE.FT_OBJECTS.FixedText.Text
 msgid  "Add captions automatically\nwhen inserting:"
-msgstr ""
+msgstr "Иловакунии автоматӣ\nҳангоми дохилкунӣ:"
 
 #: source/ui/config/optload.src#TP_OPTCAPTION_PAGE.FT_ORDER.FixedText.Text
 msgid  "Caption order"
@@ -3129,7 +3129,7 @@ msgstr "Афтод"
 
 #: source/ui/config/mailconfigpage.src#DLG_MM_TESTACCOUNTSETTINGS.ST_ERROR_SERVER.String.Text
 msgid  "%PRODUCTNAME could not connect to the outgoing mail server. Check your system's settings and the settings in %PRODUCTNAME. Check the server name, the port and the secure connections settings"
-msgstr ""
+msgstr "%PRODUCTNAME ба сервери хориҷкунии нома пайваст шуда натавонист. Ҷӯрсозиҳои система ва %PRODUCTNAME санҷед. Номи сервер, порт ва ҷӯрсозиҳои пайвастагии бехатарро санҷед."
 
 #: source/ui/config/mailconfigpage.src#DLG_MM_SERVERAUTHENTICATION.ModalDialog.Text
 msgid  "Server Authentication"
@@ -3157,7 +3157,7 @@ msgstr "Парол"
 
 #: source/ui/config/mailconfigpage.src#DLG_MM_SERVERAUTHENTICATION.RB_SMPTAFTERPOP.RadioButton.Text
 msgid  "The outgoing mail server uses the same authentication as the ~incoming mail server. Enter the settings of the incoming mail server."
-msgstr ""
+msgstr "Сервери воридкунии нома ҳамон ҷӯрсозиҳои сервери хориҷкунии номаро (SMTP) истифода мекунад. Ҷӯрсозиҳои сервери воридкунии номаро дохил кунед."
 
 #: source/ui/config/mailconfigpage.src#DLG_MM_SERVERAUTHENTICATION.FT_INCOMINGSERVER.FixedText.Text
 msgid  "Incoming mail server:"
@@ -3197,7 +3197,7 @@ msgstr "Интихоби Рӯйхати адресҳоро"
 
 #: source/ui/dbui/addresslistdialog.src#DLG_MM_ADDRESSLISTDIALOG.FI_DESCRIPTION.FixedText.Text
 msgid  "Select an address list. Click '%1' to select recipients from a different list. If you do not have an address list you can create one by clicking '%2'."
-msgstr ""
+msgstr "Рӯйхати адресҳоро интихоб кунед. '%1'-ро пахш кунед барои интихоби номагир аз дигар рӯйхат. Агар шумо рӯйхати адресҳо надошта бошед, метавонед онро бо пахш кардани '%2' созед."
 
 #: source/ui/dbui/addresslistdialog.src#DLG_MM_ADDRESSLISTDIALOG.FT_LIST.FixedText.Text
 msgid  "Your recipients are currently selected from:"
@@ -3249,7 +3249,7 @@ msgstr "1."
 
 #: source/ui/dbui/mmaddressblockpage.src#DLG_MM_ADDRESSBLOCK_PAGE.FI_ADDRESSLIST.FixedText.Text
 msgid  "Select the address list containing the address data you want to use. This data is needed to create the address block."
-msgstr ""
+msgstr "Рӯйхати адресҳоеро, ки истифода кардан мехоҳед интихоб кунед. Ин далелҳо барои сохтани блоки адресҳо истифода мешаванд."
 
 #: source/ui/dbui/mmaddressblockpage.src#DLG_MM_ADDRESSBLOCK_PAGE.PB_ADDRESSLIST.PushButton.Text
 msgid  "Select A~ddress List..."
@@ -3285,7 +3285,7 @@ msgstr "3."
 
 #: source/ui/dbui/mmaddressblockpage.src#DLG_MM_ADDRESSBLOCK_PAGE.FI_MATCH_FIELDS.FixedText.Text
 msgid  "Match the field name used in the mail merge to the column headers in your data source."
-msgstr ""
+msgstr "Пайвастани майдонҳои дар mail merge истифодашуда бо майдонҳои манбаи далелҳо."
 
 #: source/ui/dbui/mmaddressblockpage.src#DLG_MM_ADDRESSBLOCK_PAGE.PB_ASSIGN.PushButton.Text
 msgid  "Match ~Fields..."
@@ -3346,6 +3346,10 @@ msgstr "~Ҳамеша мамлакат/вилоятро ҳамроҳ кун"
 #: source/ui/dbui/mmaddressblockpage.src#DLG_MM_SELECTADDRESSBLOCK.RB_DEPENDENT.RadioButton.Text
 msgid  "Only ~include the country/region if it is not:"
 msgstr "~Онгоҳ мамлакат/вилоятро ҳамроҳ кун, агар набошад:"
+
+#: source/ui/dbui/mmaddressblockpage.src#WORKAROUND.#define.Text
+msgid  "New Address Block"
+msgstr "Блоки адреси нав"
 
 #: source/ui/dbui/mmaddressblockpage.src#DLG_MM_CUSTOMIZEADDRESSBLOCK.ST_TITLE_EDIT.String.Text
 msgid  "Edit Address Block"
@@ -3481,11 +3485,11 @@ msgstr "Мувофиқати майдонҳо"
 
 #: source/ui/dbui/mmaddressblockpage.src#DLG_MM_ASSIGNFIELDS.FI_MATCHING.FixedText.Text
 msgid  "Assign the fields from your data source to match the address elements."
-msgstr ""
+msgstr "Майдонро аз манбаи далелҳо интихоб кунед, ки ба элементи адрес мувофиқ бошад."
 
 #: source/ui/dbui/mmaddressblockpage.src#DLG_MM_ASSIGNFIELDS.ST_SALUTATIONMATCHING.String.Text
 msgid  "Assign the fields from your data source to match the salutation elements."
-msgstr ""
+msgstr "Майдонро аз манбаи далелҳо интихоб кунед, ки ба элементи саломдиҳӣ мувофиқ бошад."
 
 #: source/ui/dbui/mmaddressblockpage.src#DLG_MM_ASSIGNFIELDS.FI_PREVIEW.FixedText.Text
 msgid  "Address block preview"
@@ -3515,17 +3519,13 @@ msgstr "Намоиши пешакӣ"
 msgid  "< none >"
 msgstr ""
 
-#: source/ui/dbui/mmaddressblockpage.src#WORKAROUND.#define.Text
-msgid  "New Address Block"
-msgstr "Блоки адреси нав"
-
 #: source/ui/dbui/selectdbtabledialog.src#DLG_MM_SELECTDBTABLEDDIALOG.ModalDialog.Text
 msgid  "Select Table"
 msgstr "Интихоби ҷадвал"
 
 #: source/ui/dbui/selectdbtabledialog.src#DLG_MM_SELECTDBTABLEDDIALOG.FI_SELECT.FixedText.Text
 msgid  "The file you have selected contains more than one table. Please select the table containing the address list you want to use."
-msgstr ""
+msgstr "Дафтаре, ки шумо интихоб кардед зиёда аз як ҷадвал дорад. Марҳамат карда ҷадвалеро интихоб кунед, ки рӯйхати адресҳо дорад."
 
 #: source/ui/dbui/selectdbtabledialog.src#DLG_MM_SELECTDBTABLEDDIALOG.PB_PREVIEW.PushButton.Text
 msgid  "~Preview"
@@ -3741,7 +3741,7 @@ msgstr "Шахсигардонии ҳуҷҷати mail merge"
 
 #: source/ui/dbui/mmmergepage.src#DLG_MM_MERGE_PAGE.FI_EDIT.FixedText.Text
 msgid  "You can personalize particular documents. Clicking '%1' will temporarily reduce the wizard to a small window so you can edit your document. After editing the document, return to the wizard by clicking 'Return to Mail Merge Wizard' in the small window."
-msgstr ""
+msgstr "Шумо метавонед ин ҳуҷҷатҳоро шахсӣ гардонед. Пахш кардани '%1' Ёварро хурд мегардонад, то ки шумо ҳуҷҷатро ислоҳ кунед. Пасон бо пахш кардани 'Бозгашт ба Ёвари Mail Merge' Ёварро барқарор кунед."
 
 #: source/ui/dbui/mmmergepage.src#DLG_MM_MERGE_PAGE.PB_EDIT.PushButton.Text
 msgid  "~Edit individual document..."
@@ -3909,7 +3909,7 @@ msgstr "Беном"
 
 #: source/ui/dbui/mmoutputpage.src#DLG_MM_OUTPUT_PAGE.ST_SUBJECTQUERY.String.Text
 msgid  "You did not specify a subject for this message. If you would like to provide one, please type it now."
-msgstr ""
+msgstr "Шумо мавзӯи ин номаро муайян накардаед. Агар хоҳед, ҳоло метавонед онро дохил кунед."
 
 #: source/ui/dbui/mmoutputpage.src#DLG_MM_OUTPUT_PAGE.ST_NOSUBJECT.String.Text
 msgid  "No subject"
@@ -3917,11 +3917,11 @@ msgstr "Бе мавзӯъ"
 
 #: source/ui/dbui/mmoutputpage.src#DLG_MM_OUTPUT_PAGE.ST_NOATTACHMENTNAME.String.Text
 msgid  "You did not specify a new name for the attachment. If you would like to provide one, please type it now."
-msgstr ""
+msgstr "Шумо номи навро ба замима нагузоштаед, марҳамат номгузорӣ кунед."
 
 #: source/ui/dbui/mmoutputpage.src#DLG_MM_OUTPUT_PAGE.ST_CONFIGUREMAIL.String.Text
 msgid  "In order to be able to send mail merge documents by e-mail, %PRODUCTNAME requires information about the e-mail account to be used.\n\n Do you want to enter e-mail account information now?"
-msgstr ""
+msgstr "Барои фиристодани ҳуҷҷатҳои mail merge бо номаи электронӣ, %PRODUCTNAME маълумотро оиди номаи электронӣ талаб мекунад.\n\nИн маълумотро дохил кардан мехоҳед?"
 
 #: source/ui/dbui/mmoutputpage.src#DLG_MM_COPYTO.ModalDialog.Text
 msgid  "Copy To"
@@ -3941,11 +3941,11 @@ msgstr "~Нбб"
 
 #: source/ui/dbui/mmoutputpage.src#DLG_MM_COPYTO.FI_NOTE.FixedText.Text
 msgid  "Note:\nSeparate e-mail addresses with a semicolon (;)."
-msgstr ""
+msgstr "Эзоҳ:\nадресҳои алоҳида бо (;)."
 
 #: source/ui/dbui/mmoutputpage.src#DLG_MM_SAVEWARNING.FI_WARNING.FixedText.Text
 msgid  "A document with the name '%1' already exists. Please save this document under a different name."
-msgstr ""
+msgstr "Ҳуҷҷат бо номи '%1' аллакай мавҷуд аст. Марҳамат карда ҳуҷҷатро бо дигар ном сабт кунед."
 
 #: source/ui/dbui/mmoutputpage.src#DLG_MM_SAVEWARNING.FT_FILENAME.FixedText.Text
 msgid  "New document name"
@@ -4001,7 +4001,7 @@ msgstr "Ҳуҷҷати оғозиро барои mail merge интихоб ку�
 
 #: source/ui/dbui/mmdocselectpage.src#DLG_MM_DOCSELECT_PAGE.FT_HOWTO.FixedText.Text
 msgid  "Select the document upon which to base the mail merge document"
-msgstr ""
+msgstr "Ҳуҷҷатеро интихоб кунед, ки дар асоси он ҳуҷҷати mail merge сохта мешавад"
 
 #: source/ui/dbui/mmdocselectpage.src#DLG_MM_DOCSELECT_PAGE.RB_CURRENTDOC.RadioButton.Text
 msgid  "Use the current ~document"
@@ -4131,6 +4131,10 @@ msgstr "~Ҷустуҷӯ"
 msgid  "~Close"
 msgstr "~Пӯшонидан"
 
+#: source/ui/dbui/mailmergechildwindow.src#WORKAROUND.#define.Text
+msgid  "Return to Mail Merge Wizard"
+msgstr "Бозгашт ба Ёвари Mail Merge"
+
 #: source/ui/dbui/mailmergechildwindow.src#DLG_MAILMERGECHILD.FloatingWindow.Text
 msgid  "Mail Merge Wizard"
 msgstr "Ёвари Mail Merge "
@@ -4209,7 +4213,7 @@ msgstr "Фиристодан афтод (адреси ғалатӣ)"
 
 #: source/ui/dbui/mailmergechildwindow.src#DLG_MM_SENDMAILS.ST_TERMINATEQUERY.String.Text
 msgid  "There are still e-mail messages in your %PRODUCTNAME Outbox.\nWould you like to exit anyway?"
-msgstr ""
+msgstr "Дар қутти фиристодани номаи электронии %PRODUCTNAME ҳоло ҳам номаҳо ҳастанд.\nБа ин нигоҳ накарда барномаро қатъ кунам?"
 
 #: source/ui/dbui/mailmergechildwindow.src#DLG_MM_SENDWARNING.ModalDialog.Text
 msgid  "E-Mails could not be sent"
@@ -4222,10 +4226,6 @@ msgstr "Хатогии зерин рух дод:"
 #: source/ui/dbui/mailmergechildwindow.src#DLG_MM_SENDWARNING.FT_DETAILS.FixedText.Text
 msgid  "Detailed information"
 msgstr "Маълумоти муфассал"
-
-#: source/ui/dbui/mailmergechildwindow.src#WORKAROUND.#define.Text
-msgid  "Return to Mail Merge Wizard"
-msgstr "Бозгашт ба Ёвари Mail Merge"
 
 #: source/ui/dbui/dbtablepreviewdialog.src#DLG_MM_DBTABLEPREVIEWDIALOG.ModalDialog.Text
 msgid  "Mail Merge Recipients"
@@ -4265,11 +4265,11 @@ msgstr "Номаи электронӣ:"
 
 #: source/ui/dbui/mmoutputtypepage.src#DLG_MM_OUTPUTTYPE_PAGE.ST_LETTERHINT.String.Text
 msgid  "Send letters to a group of recipients. The letters can contain an address block and a salutation. The letters can be personalized for each recipient."
-msgstr ""
+msgstr "Фиристодани мактуб ба гурӯҳи номагирҳо. Мактубҳо метавонанд блоки адресҳо ва саломдиҳӣ дошта бошанд. Мактубҳоро барои ҳар як номагир махсус гардонидан мумкин аст."
 
 #: source/ui/dbui/mmoutputtypepage.src#DLG_MM_OUTPUTTYPE_PAGE.ST_MAILHINT.String.Text
 msgid  "Send e-mail messages to a group of recipients. The e-mail messages can contain a salutation. The e-mail messages can be personalized for each recipient."
-msgstr ""
+msgstr "Фиристодани мактуб ба гурӯҳи номагирҳо. Мактубҳо метавонанд блоки адресҳо ва саломдиҳӣ дошта бошанд. Мактубҳоро барои ҳар як номагир махсус гардонидан мумкин аст."
 
 #: source/ui/dbui/mmpreparemergepage.src#DLG_MM_PREPAREMERGE_PAGE.FI_HEADER.FixedText.Text
 msgid  "Preview and edit the document"
@@ -4277,7 +4277,7 @@ msgstr "Намоиш ва ислоҳкунии ҳуҷҷат"
 
 #: source/ui/dbui/mmpreparemergepage.src#DLG_MM_PREPAREMERGE_PAGE.FI_PREVIEW.FixedText.Text
 msgid  "The preview of a merged document is visible now. To see the preview of another document click one of the arrows."
-msgstr ""
+msgstr "Намоиши пешакии ҳуҷҷати якҷояшуда ҳоло имкон дорад. Барои дидани ҳуҷҷати дигар яке аз тирчаҳоро пахш кунед."
 
 #: source/ui/dbui/mmpreparemergepage.src#DLG_MM_PREPAREMERGE_PAGE.FT_RECIPIENT.FixedText.Text
 msgid  "~Recipient"
@@ -4309,7 +4309,7 @@ msgstr "Ислоҳкунии ҳуҷҷат"
 
 #: source/ui/dbui/mmpreparemergepage.src#DLG_MM_PREPAREMERGE_PAGE.FI_EDIT.FixedText.Text
 msgid  "Write or edit your document now if you have not already done so. The changes will effect all merged documents.\n\nClicking 'Edit Document...' will temporarily reduce the wizard to a small window so you can edit the mail merge document. After editing the document, return to the wizard by clicking 'Return to Mail Merge Wizard' in the small window."
-msgstr ""
+msgstr "Ҳуҷатро нависед ё сабт кунед, агар то ҳол накарда бошед. Тағирот ба ҳама ҳуҷҷатҳои якҷояшуда таъсир мекунанд.\n\n'Ислоҳкунии ҳуҷҷат...'ро пахш  кунед то кӣ равзана хурд шавад ва ислоҳкунии ҳуҷҷати mail merge мумкин гардад. Пас аз ислоҳот бо пахшкунии 'Бозгашт ба Ёвари Mail Merge' дар равзанаи хурд ба ҳолати муқаррарӣ баргардед."
 
 #: source/ui/dbui/mmpreparemergepage.src#DLG_MM_PREPAREMERGE_PAGE.PB_EDIT.PushButton.Text
 msgid  "~Edit Document..."
@@ -4535,6 +4535,66 @@ msgstr "Калимаҳо:"
 msgid  "Characters:"
 msgstr "Рамзҳо:"
 
+#: source/ui/dialog/regionsw.src#FT_SUBREG_TEXT.#define.Text
+msgid  "~Section"
+msgstr "Қисм"
+
+#: source/ui/dialog/regionsw.src#CB_HIDE_TEXT.#define.Text
+msgid  "H~ide"
+msgstr "Пинҳонкунӣ"
+
+#: source/ui/dialog/regionsw.src#FL_HIDE_TEXT.#define.Text
+msgid  "Hide"
+msgstr "Пинҳонкунӣ"
+
+#: source/ui/dialog/regionsw.src#CB_CONDITION_TEXT.#define.Text
+msgid  "~With Condition"
+msgstr "Бо шарти"
+
+#: source/ui/dialog/regionsw.src#FL_PROPERTIES_TEXT.#define.Text
+msgid  "Properties"
+msgstr "Хосиятҳо"
+
+#: source/ui/dialog/regionsw.src#CB_EDIT_IN_READONLY_TEXT.#define.Text
+msgid  "E~ditable in read-only document"
+msgstr "И~слоҳшаванда дар ҳуҷҷати танҳо барои хониш"
+
+#: source/ui/dialog/regionsw.src#FL_FILE_TEXT.#define.Text
+msgid  "Link"
+msgstr "Алоқа"
+
+#: source/ui/dialog/regionsw.src#CB_FILE_TEXT.#define.Text
+msgid  "~Link"
+msgstr "~Ҳавола"
+
+#: source/ui/dialog/regionsw.src#CB_DDE_TEXT.#define.Text
+msgid  "DD~E"
+msgstr "DD~E"
+
+#: source/ui/dialog/regionsw.src#FT_DDE_TEXT.#define.Text
+msgid  "DDE ~command"
+msgstr "Командаи DDE~"
+
+#: source/ui/dialog/regionsw.src#FT_FILE_TEXT.#define.Text
+msgid  "~File name"
+msgstr "Номи дафтар"
+
+#: source/ui/dialog/regionsw.src#GB_HIDE_TEXT.#define.Text
+msgid  "Hide"
+msgstr "Пинҳонкунӣ"
+
+#: source/ui/dialog/regionsw.src#GB_OPTIONS_TEXT.#define.Text
+msgid  "Options"
+msgstr "Параметрҳо"
+
+#: source/ui/dialog/regionsw.src#FL_PROTECT_TEXT.#define.Text
+msgid  "Write protection"
+msgstr "Ҳифз аз тағирот"
+
+#: source/ui/dialog/regionsw.src#CB_PASSWD_TEXT.#define.Text
+msgid  "Wit~h password"
+msgstr "Бо парол"
+
 #: source/ui/dialog/regionsw.src#MD_EDIT_REGION.ModalDialog.Text
 msgid  "Edit Sections"
 msgstr "Ислоҳкунии бобҳо"
@@ -4565,7 +4625,7 @@ msgstr "Номи такрории боб"
 
 #: source/ui/dialog/regionsw.src#QB_CONNECT.QueryBox.Message
 msgid  "A file connection will delete the contents of the current section. Connect anyway?"
-msgstr ""
+msgstr "Пайвастшавии дафтар таркиби ҳозираи бобро нобуд месозад. Ба ин нигоҳ накарда давом диҳам?"
 
 #: source/ui/dialog/regionsw.src#REG_WRONG_PASSWORD.InfoBox.Message
 msgid  "The password entered is invalid."
@@ -4699,66 +4759,6 @@ msgstr "То боб"
 msgid  "~After section"
 msgstr "Баъд аз боб"
 
-#: source/ui/dialog/regionsw.src#FT_SUBREG_TEXT.#define.Text
-msgid  "~Section"
-msgstr "Қисм"
-
-#: source/ui/dialog/regionsw.src#CB_HIDE_TEXT.#define.Text
-msgid  "H~ide"
-msgstr "Пинҳонкунӣ"
-
-#: source/ui/dialog/regionsw.src#FL_HIDE_TEXT.#define.Text
-msgid  "Hide"
-msgstr "Пинҳонкунӣ"
-
-#: source/ui/dialog/regionsw.src#CB_CONDITION_TEXT.#define.Text
-msgid  "~With Condition"
-msgstr "Бо шарти"
-
-#: source/ui/dialog/regionsw.src#FL_PROPERTIES_TEXT.#define.Text
-msgid  "Properties"
-msgstr "Хосиятҳо"
-
-#: source/ui/dialog/regionsw.src#CB_EDIT_IN_READONLY_TEXT.#define.Text
-msgid  "E~ditable in read-only document"
-msgstr "И~слоҳшаванда дар ҳуҷҷати танҳо барои хониш"
-
-#: source/ui/dialog/regionsw.src#FL_FILE_TEXT.#define.Text
-msgid  "Link"
-msgstr "Алоқа"
-
-#: source/ui/dialog/regionsw.src#CB_FILE_TEXT.#define.Text
-msgid  "~Link"
-msgstr "~Ҳавола"
-
-#: source/ui/dialog/regionsw.src#CB_DDE_TEXT.#define.Text
-msgid  "DD~E"
-msgstr "DD~E"
-
-#: source/ui/dialog/regionsw.src#FT_DDE_TEXT.#define.Text
-msgid  "DDE ~command"
-msgstr "Командаи DDE~"
-
-#: source/ui/dialog/regionsw.src#FT_FILE_TEXT.#define.Text
-msgid  "~File name"
-msgstr "Номи дафтар"
-
-#: source/ui/dialog/regionsw.src#GB_HIDE_TEXT.#define.Text
-msgid  "Hide"
-msgstr "Пинҳонкунӣ"
-
-#: source/ui/dialog/regionsw.src#GB_OPTIONS_TEXT.#define.Text
-msgid  "Options"
-msgstr "Параметрҳо"
-
-#: source/ui/dialog/regionsw.src#FL_PROTECT_TEXT.#define.Text
-msgid  "Write protection"
-msgstr "Ҳифз аз тағирот"
-
-#: source/ui/dialog/regionsw.src#CB_PASSWD_TEXT.#define.Text
-msgid  "Wit~h password"
-msgstr "Бо парол"
-
 #: source/ui/dialog/abstract.src#DLG_INSERT_ABSTRACT.FL_1.FixedLine.Text
 msgid  "Properties"
 msgstr "Хосиятҳо"
@@ -4773,7 +4773,7 @@ msgstr "Параграфҳо дар дараҷа"
 
 #: source/ui/dialog/abstract.src#DLG_INSERT_ABSTRACT.FT_DESC.FixedText.Text
 msgid  "The abstract contains the selected number of paragraphs from the included outline levels."
-msgstr ""
+msgstr "Абстракт шумораи интихобшудаи параграфҳоро дорад, ки аз дараҷаи сохтор гирифта шудаанд"
 
 #: source/ui/dialog/abstract.src#DLG_INSERT_ABSTRACT.HelpButton.Text
 msgid  "Create AutoAbstract"
@@ -4853,7 +4853,7 @@ msgstr ""
 
 #: source/ui/dochdl/dochdl.src#STR_NO_TABLE.String.Text
 msgid  "A table cannot be inserted into another table. However, you can paste the data into the document when the cursor is not in a table."
-msgstr ""
+msgstr "Ҳоло иловакунии ҷадвал имкон надорад"
 
 #: source/ui/dochdl/dochdl.src#MSG_ERR_INSERT_GLOS.InfoBox.Message
 msgid  "AutoText could not be created."
@@ -4865,7 +4865,7 @@ msgstr "Формати дилхоҳи ганҷӣ мавҷуд нест."
 
 #: source/ui/dochdl/dochdl.src#MSG_UPDATE_NEW_GLOS_FMT.QueryBox.Message
 msgid  "The section format is outdated.\nIt needs to be converted so that changes\ncan be saved.\nShould it be converted now?"
-msgstr ""
+msgstr "Формати қисм кӯҳна шудааст.\nОнро бояд табдил дод то кӣ \nтағирот сабт карда шавад.\nТабдил диҳам?"
 
 #: source/ui/dochdl/dochdl.src#STR_PRIVATETEXT.String.Text
 msgid  "%PRODUCTNAME Writer"
@@ -5039,6 +5039,26 @@ msgstr "Фрейми ибтидоӣ аллакай манбаи ҳавола м�
 msgid  "A closed link is not possible."
 msgstr "Ҳавола сарбаста шуда наметавонад"
 
+#: source/ui/docvw/docvw.src#STR_REDLINE_INSERT.String.Text
+msgid  "Inserted"
+msgstr "Иловашуда"
+
+#: source/ui/docvw/docvw.src#STR_REDLINE_DELETE.String.Text
+msgid  "Deleted"
+msgstr "Кӯршуда"
+
+#: source/ui/docvw/docvw.src#STR_REDLINE_FORMAT.String.Text
+msgid  "Formatted"
+msgstr "Форматшуда"
+
+#: source/ui/docvw/docvw.src#STR_REDLINE_TABLE.String.Text
+msgid  "Table changed"
+msgstr "Ҷадвал тағир ёфт"
+
+#: source/ui/docvw/docvw.src#STR_REDLINE_FMTCOLL.String.Text
+msgid  "Applied Paragraph Styles"
+msgstr "Истифодабарии услуби параграф"
+
 #: source/ui/docvw/docvw.src#STR_ENDNOTE.String.Text
 msgid  "Endnote: "
 msgstr "Зерэзоҳ:  "
@@ -5049,7 +5069,7 @@ msgstr "Сарэзоҳ:  "
 
 #: source/ui/docvw/docvw.src#MSG_READONLY_CONTENT.InfoBox.Message
 msgid  "Readonly content cannot be changed.\nNo modifications will be accepted"
-msgstr ""
+msgstr "Таркиби танҳо барои хониш иваз карда намешаванд.\nТағирот қабул карда намешавад"
 
 #: source/ui/docvw/docvw.src#STR_TABLE_COL_ADJUST.String.Text
 msgid  "Adjust table column"
@@ -5074,26 +5094,6 @@ msgstr "Интихоби сутуни ҷадвал"
 #: source/ui/docvw/docvw.src#STR_SMARTTAG_CLICK.String.Text
 msgid  "%s-click to open Smart Tag menu"
 msgstr ""
-
-#: source/ui/docvw/docvw.src#STR_REDLINE_INSERT.String.Text
-msgid  "Inserted"
-msgstr "Иловашуда"
-
-#: source/ui/docvw/docvw.src#STR_REDLINE_DELETE.String.Text
-msgid  "Deleted"
-msgstr "Кӯршуда"
-
-#: source/ui/docvw/docvw.src#STR_REDLINE_FORMAT.String.Text
-msgid  "Formatted"
-msgstr "Форматшуда"
-
-#: source/ui/docvw/docvw.src#STR_REDLINE_TABLE.String.Text
-msgid  "Table changed"
-msgstr "Ҷадвал тағир ёфт"
-
-#: source/ui/docvw/docvw.src#STR_REDLINE_FMTCOLL.String.Text
-msgid  "Applied Paragraph Styles"
-msgstr "Истифодабарии услуби параграф"
 
 #: source/ui/docvw/access.src#STR_ACCESS_DOC_NAME.String.Text
 msgid  "Document view"
@@ -5214,6 +5214,10 @@ msgstr "- Чопкунак васл нашудааст -"
 #: source/ui/envelp/envprt.src#TP_ENV_PRT.BTN_PRTSETUP.PushButton.Text
 msgid  "Setup..."
 msgstr "Васлкунӣ..."
+
+#: source/ui/envelp/mailmrge.src#_MAIL_MERGE_STRING_.#define.Text
+msgid  "Mail Merge"
+msgstr "Фиристодани нома"
 
 #: source/ui/envelp/mailmrge.src#DLG_MAILMERGE.RB_ALL.RadioButton.Text
 msgid  "~All"
@@ -5337,11 +5341,7 @@ msgstr "~Сохтани пайвастагии нав"
 
 #: source/ui/envelp/mailmrge.src#DLG_MERGE_FIELD_CONNECTIONS.FT_INFO.FixedText.Text
 msgid  "Fields are used to personalize form letters. The fields are placeholders for data from a data source, such as a database. The fields in the form letter must be connected to the data source."
-msgstr ""
-
-#: source/ui/envelp/mailmrge.src#_MAIL_MERGE_STRING_.#define.Text
-msgid  "Mail Merge"
-msgstr "Фиристодани нома"
+msgstr "Майдон барои шахсигардонии формаи нома истифода мешавад. Майдон- ин ҷоест, дар он далелҳо аз манбаи далелҳо, ба мили махзани далелҳо ҷой доранд. Майдонҳо дар формаи нома бояд бо манбаи далелҳо пайваст бошанд."
 
 #: source/ui/envelp/labprt.src#TP_LAB_PRT.BTN_PAGE.RadioButton.Text
 msgid  "~Entire page"
@@ -5397,7 +5397,7 @@ msgstr "Ҳуҷ. ~нав"
 
 #: source/ui/envelp/envelp.src#STR_SENDER_TOKENS.String.Text
 msgid  "COMPANY;CR;FIRSTNAME; ;LASTNAME;CR;ADDRESS;CR;CITY; ;STATEPROV; ;POSTALCODE;CR;COUNTRY;CR;"
-msgstr ""
+msgstr "COMPANY;CR;FIRSTNAME; ;LASTNAME;CR;ADDRESS;CR;CITY; ;STATEPROV; ;POSTALCODE;CR;COUNTRY;CR;"
 
 #: source/ui/envelp/envfmt.src#TP_ENV_FMT.FL_ADDRESSEE.FixedLine.Text
 msgid  "Addressee"
@@ -5470,6 +5470,14 @@ msgstr "Рамзҳо..."
 #: source/ui/envelp/envfmt.src#MNU_EDIT.MID_PARA.MenuItem.Text
 msgid  "P~aragraph..."
 msgstr "Параграф..."
+
+#: source/ui/envelp/label.src#LABEL_STRING.#define.Text
+msgid  "Labels"
+msgstr "Дурӯшҳо"
+
+#: source/ui/envelp/label.src#BUSINESS_CARD_STRING.#define.Text
+msgid  "Business Cards"
+msgstr "Корти хидматӣ"
 
 #: source/ui/envelp/label.src#DLG_LAB.1.TP_PRIVATE_DATA.PageItem.Text
 msgid  "Private"
@@ -5639,14 +5647,6 @@ msgstr "Факс"
 msgid  "Ho~mepage / e-mail"
 msgstr "Веб~саҳифа /номаи эл."
 
-#: source/ui/envelp/label.src#LABEL_STRING.#define.Text
-msgid  "Labels"
-msgstr "Дурӯшҳо"
-
-#: source/ui/envelp/label.src#BUSINESS_CARD_STRING.#define.Text
-msgid  "Business Cards"
-msgstr "Корти хидматӣ"
-
 #: source/ui/envelp/labfmt.src#TP_LAB_FMT.TXT_HDIST.FixedText.Text
 msgid  "Hori~zontal pitch"
 msgstr "Қадами уфуқӣ."
@@ -5728,8 +5728,8 @@ msgid  "Options"
 msgstr "Параметрҳо"
 
 #: source/ui/envelp/labfmt.src#DLG_SAVE_LABEL.MB_QUERY.QueryBox.Message
-msgid  "The label "%1 / %2" already exists.\nDo you want to overwrite it?"
-msgstr ""
+msgid  "The label \"%1 / %2\" already exists.\nDo you want to overwrite it?"
+msgstr "Номи \"%1 / %2\" аллакай вуҷуд дорад.\nШумо мехоҳед онро рӯйнавис кунед?"
 
 #: source/ui/envelp/labfmt.src#DLG_SAVE_LABEL.QueryBox.Text
 msgid  "Save Label Format"
@@ -6609,7 +6609,7 @@ msgstr "Намоиш..."
 
 #: source/ui/fldui/changedb.src#DLG_CHANGE_DB.FT_DESC.FixedText.Text
 msgid  "Use this dialog to replace the databases you access in your document via database fields, with other databases. You can only make one change at a time. Multiple selection is possible in the list on the left.\nUse the browse button to select a database file."
-msgstr ""
+msgstr "Бо истифодаи муколама махзани далелҳоро иваз кунед. Шумо метавонед дар як вақт як тағиротро иҷро намоед.\nТугмачаи намоишро пахш карда МДро интихоб кунед."
 
 #: source/ui/fldui/changedb.src#DLG_CHANGE_DB.FT_DOCDBTEXT.FixedText.Text
 msgid  "Database applied to document:"
@@ -7388,6 +7388,14 @@ msgid  "~Position"
 msgstr "Ҷойгиршавӣ"
 
 #: source/ui/frmdlg/column.src#TP_COLUMN.LB_POSITION.Default.StringList.item
+msgid  "Top"
+msgstr "Боло"
+
+#: source/ui/frmdlg/column.src#TP_COLUMN.LB_POSITION.Default.StringList.item
+msgid  "Centered"
+msgstr "Марказонидашуда"
+
+#: source/ui/frmdlg/column.src#TP_COLUMN.LB_POSITION.Default.StringList.item
 msgid  "Bottom"
 msgstr "Поён"
 
@@ -7450,14 +7458,6 @@ msgstr ""
 #: source/ui/frmdlg/column.src#STR_ACCESS_COLUMN_WIDTH.String.Text
 msgid  "Column %1 Width"
 msgstr ""
-
-#: source/ui/frmdlg/column.src#TP_COLUMN.LB_POSITION.Default.StringList.item
-msgid  "Top"
-msgstr "Боло"
-
-#: source/ui/frmdlg/column.src#TP_COLUMN.LB_POSITION.Default.StringList.item
-msgid  "Centered"
-msgstr "Марказонидашуда"
 
 #: source/ui/frmdlg/frmui.src#STR_TOP.String.Text
 msgid  "~Top"
@@ -7667,6 +7667,10 @@ msgstr "Ҳуҷҷати асосӣ"
 msgid  "%PRODUCTNAME %PRODUCTVERSION Master Document"
 msgstr "Ҳуҷҷати асосии %PRODUCTNAME %PRODUCTVERSION"
 
+#: source/ui/index/idxmrk.src#IDX_PHONETIC_LISTBOX_DESCRIPTION.#define.Text
+msgid  "Phonetic reading"
+msgstr "Хониши фонетикӣ"
+
 #: source/ui/index/idxmrk.src#IDX_DIALOG_WINDOW.WIN_DLG.BT_OK.OKButton.Text
 msgid  "Insert"
 msgstr "Иловакунӣ"
@@ -7805,11 +7809,7 @@ msgstr "Иловакунии навишти библиографӣ"
 
 #: source/ui/index/idxmrk.src#DLG_CHANGE_AUTH_ENTRY.QueryBox.Message
 msgid  "The document already contains the bibliography entry but with different data. Do you want to adjust the existing entries?"
-msgstr ""
-
-#: source/ui/index/idxmrk.src#IDX_PHONETIC_LISTBOX_DESCRIPTION.#define.Text
-msgid  "Phonetic reading"
-msgstr "Хониши фонетикӣ"
+msgstr "Ин ҳуҷҷат аллакай библиография дорад, вале бо дигар далелҳо. Ҳаволаҳо мувофиқ карда шаванд?"
 
 #: source/ui/index/cnttab.src#STR_TITLE.String.Text
 msgid  "Title"
@@ -7824,8 +7824,8 @@ msgid  "Level "
 msgstr "Дараҷа  "
 
 #: source/ui/index/cnttab.src#STR_FILE_NOT_FOUND.String.Text
-msgid  "The file, "%1" in the "%2" path could not be found."
-msgstr ""
+msgid  "The file, \"%1\" in the \"%2\" path could not be found."
+msgstr "Дафтари \"%1\"  дар роҳи \"%2\" пайдо нашуд."
 
 #: source/ui/index/cnttab.src#DLG_MULTI_TOX.1.TP_TOX_SELECT.PageItem.Text
 msgid  "Index/Table"
@@ -8557,7 +8557,7 @@ msgstr "Роҳ..."
 
 #: source/ui/misc/glossary.src#DLG_GLOSSARY.ST_READONLY_PATH.String.Text
 msgid  "The 'AutoText' directories are read-only. Do you want to call the path settings dialog?"
-msgstr ""
+msgstr "Рафи 'Автоматн' танҳо барои хондан аст. Диалоги кофтукови роҳ нишон дода шавад?"
 
 #: source/ui/misc/glossary.src#DLG_GLOSSARY.MNU_EDIT.FN_GL_DEFINE.MenuItem.Text
 msgid  "~New"
@@ -8672,6 +8672,14 @@ msgid  "~Position"
 msgstr "Ҷойгиршавӣ"
 
 #: source/ui/misc/pgfnote.src#TP_FOOTNOTE_PAGE.DLB_LINEPOS.Default.StringList.item
+msgid  "Left"
+msgstr "Чап"
+
+#: source/ui/misc/pgfnote.src#TP_FOOTNOTE_PAGE.DLB_LINEPOS.Default.StringList.item
+msgid  "Centered"
+msgstr "Марказонидашуда"
+
+#: source/ui/misc/pgfnote.src#TP_FOOTNOTE_PAGE.DLB_LINEPOS.Default.StringList.item
 msgid  "Right"
 msgstr "Рост"
 
@@ -8690,14 +8698,6 @@ msgstr "Масофи то матни сарэзоҳ"
 #: source/ui/misc/pgfnote.src#TP_FOOTNOTE_PAGE.FL_LINE.FixedLine.Text
 msgid  "Separator line"
 msgstr "Хати ҷудокунак"
-
-#: source/ui/misc/pgfnote.src#TP_FOOTNOTE_PAGE.DLB_LINEPOS.Default.StringList.item
-msgid  "Left"
-msgstr "Чап"
-
-#: source/ui/misc/pgfnote.src#TP_FOOTNOTE_PAGE.DLB_LINEPOS.Default.StringList.item
-msgid  "Centered"
-msgstr "Марказонидашуда"
 
 #: source/ui/misc/num.src#TP_NUM_POSITION.FL_LEVEL.FixedLine.Text
 msgid  "Level"
@@ -10065,7 +10065,7 @@ msgstr "Автоформат"
 
 #: source/ui/shells/shells.src#STR_REDLINE_MSG.String.Text
 msgid  "AutoCorrect completed.\nYou can accept or reject all changes,\nor accept or reject particular changes."
-msgstr ""
+msgstr "Автоформат иҷро шуд.\nШумо метавонед ҳама тағирот ё худ қисми\n онро қабул ё инкор кунед."
 
 #: source/ui/shells/shells.src#STR_REDLINE_ACCEPT_ALL.String.Text
 msgid  "Accept All"
@@ -10309,7 +10309,7 @@ msgstr "Ҳамагӣ"
 
 #: source/ui/table/tautofmt.src#DLG_AUTOFMT_TABLE.STR_INVALID_AFNAME.String.Text
 msgid  "You have entered an invalid name.\nThe desired AutoFormat could not be created. \nTry again using a different name."
-msgstr ""
+msgstr "Шумо номи ғалатиро дохил кардед.\nАвтоформати дилхоҳ сохта нашуд. \nАз нав номгузори карда давом диҳед."
 
 #: source/ui/table/mergetbl.src#DLG_MERGE_TABLE.FL_MERGE.FixedLine.Text
 msgid  "Mode"
@@ -10493,7 +10493,7 @@ msgstr "Сутуни аввал ҳамчун ном"
 
 #: source/ui/table/chartins.src#DLG_INSERT_CHART.FT_TEXT.FixedText.Text
 msgid  "If the selected cells do not contain the desired data, select the data range now.\n\nInclude the cells containing column and row labels if you want them to be included in your chart."
-msgstr ""
+msgstr "Агар чашмакҳои интихобшуда далелҳои дилхоҳро надошта бошанд, қитъаи далелҳоро интихоб кунед.\n\nСатр ва сутуни номдорро низ интихоб кунед барои дар диаграмаатон дохил кардан."
 
 #: source/ui/table/chartins.src#DLG_INSERT_CHART.BT_PREV.PushButton.Text
 msgid  "<< ~Back"
@@ -10506,6 +10506,10 @@ msgstr "Давом >>"
 #: source/ui/table/chartins.src#DLG_INSERT_CHART.BT_FINISH.PushButton.Text
 msgid  "Cre~ate"
 msgstr "Тайёр"
+
+#: source/ui/table/tabledlg.src#TEXT_TEXTFLOW.#define.Text
+msgid  "Text Flow"
+msgstr "Самти матн"
 
 #: source/ui/table/tabledlg.src#DLG_FORMAT_TABLE.TabDialog.Text
 msgid  "Table Format"
@@ -10715,10 +10719,6 @@ msgstr "Поён"
 msgid  "The name of the table must not contain spaces."
 msgstr "Номи ҷадвал набояд холигӣ дошта бошад."
 
-#: source/ui/table/tabledlg.src#TEXT_TEXTFLOW.#define.Text
-msgid  "Text Flow"
-msgstr "Самти матн"
-
 #: source/ui/table/splittbl.src#DLG_SPLIT_TABLE.FL_SPLIT.FixedLine.Text
 msgid  "Mode"
 msgstr "Режим"
@@ -10753,7 +10753,7 @@ msgstr "Матни асосӣ тафтиш карда шавад?"
 
 #: source/ui/uiview/view.src#DLG_PRT_FIELDNAME.QueryBox.Message
 msgid  "Show field commands option is checked.\nDo you want to print the document with field names?"
-msgstr ""
+msgstr "Нишон медиҳад, ки параметрҳои фармон интихоб шудааст.\nҲуҷҷатро бо номи майдонҳо чоп кардан мехоҳед?"
 
 #: source/ui/uiview/view.src#DLG_SPECIAL.QueryBox.Message
 msgid  "Do you want check the special regions?"
@@ -10761,7 +10761,7 @@ msgstr "Қитъаҳои махсус тафтиш карда шаванд?"
 
 #: source/ui/uiview/view.src#DLG_THESAURUS.QueryBox.Message
 msgid  "This word appears in the list of words you want to avoid! Start thesaurus?"
-msgstr ""
+msgstr "Хуб аст аз истифодаи ин калима худдори кард! Тезаурусро оғоз кунам?"
 
 #: source/ui/uiview/view.src#DLG_SPECIAL_FORCED.QueryBox.Message
 msgid  "Check special regions is deactivated. Check anyway?"
@@ -10769,15 +10769,19 @@ msgstr "Тафтиши қитъаҳои асосӣ фаъол нест. Ба и�
 
 #: source/ui/uiview/view.src#MSG_SEARCH_END.QueryBox.Message
 msgid  "%PRODUCTNAME Writer has searched to the end of the document. Do you want to continue at the beginning?"
-msgstr ""
+msgstr "%PRODUCTNAME Writer ҷустуҷӯро то охири ҳуҷҷат давом дод. Ҷустуҷӯ аз аввал оғоз карда шавад?"
 
 #: source/ui/uiview/view.src#MSG_SEARCH_START.QueryBox.Message
 msgid  "%PRODUCTNAME Writer has searched to the beginning of the document. Do you want to continue at the end?"
-msgstr ""
+msgstr "%PRODUCTNAME Writer ҷустуҷӯро то аввали ҳуҷҷат давом дод. Ҷустуҷӯ аз охир оғоз карда шавад?"
 
 #: source/ui/uiview/view.src#MSG_NO_MERGE_ENTRY.InfoBox.Message
 msgid  "Could not merge documents."
 msgstr "Якҷоякунии ҳуҷҷатҳо имкон надорад."
+
+#: source/ui/uiview/view.src#MSG_ERR_INSERT_GLOS.InfoBox.Message
+msgid  "AutoText could not be created."
+msgstr "Имкони сохтани автоматн нест."
 
 #: source/ui/uiview/view.src#MSG_ERR_SRCSTREAM.InfoBox.Message
 msgid  "The source cannot be loaded."
@@ -10871,10 +10875,6 @@ msgstr "Матни ибтидоӣ дар формати HTML"
 msgid  "HTML Source"
 msgstr "Матни ибтидоии HTML"
 
-#: source/ui/uiview/view.src#MSG_ERR_INSERT_GLOS.InfoBox.Message
-msgid  "AutoText could not be created."
-msgstr "Имкони сохтани автоматн нест."
-
 #: source/ui/uiview/pview.src#DLG_PAGEPREVIEW_ZOOM.ModalDialog.Text
 msgid  "Multiple Pages"
 msgstr "Масштаб"
@@ -10908,7 +10908,7 @@ msgid  "Capitalize first letter of sentences"
 msgstr "Оғозкунии ҳар як ҷумла бо ҳарфи калон"
 
 #: source/ui/utlui/utlui.src#RID_SHELLRES_AUTOFMTSTRS.STR_AUTOFMTREDL_TYPO+1.String.Text
-msgid  "Replace "standard" quotes with %1 \bcustom%2 quotes"
+msgid  "Replace \"standard\" quotes with %1 \bcustom%2 quotes"
 msgstr ""
 
 #: source/ui/utlui/utlui.src#RID_SHELLRES_AUTOFMTSTRS.STR_AUTOFMTREDL_USER_STYLE+1.String.Text
@@ -10948,28 +10948,28 @@ msgid  "Combine single line paragraphs"
 msgstr "Якҷоясозии прарграфҳои яксатра"
 
 #: source/ui/utlui/utlui.src#RID_SHELLRES_AUTOFMTSTRS.STR_AUTOFMTREDL_SET_TMPL_TEXT +1.String.Text
-msgid  "Set "Text body" Style"
-msgstr ""
+msgid  "Set \"Text body\" Style"
+msgstr "Истифодабарии услуби \"Матни асосӣ\""
 
 #: source/ui/utlui/utlui.src#RID_SHELLRES_AUTOFMTSTRS.STR_AUTOFMTREDL_SET_TMPL_INDENT.String.Text
-msgid  "Set "Text body indent" Style"
-msgstr ""
+msgid  "Set \"Text body indent\" Style"
+msgstr "Истифодабарии \"Сатри аввал бо масофа\""
 
 #: source/ui/utlui/utlui.src#RID_SHELLRES_AUTOFMTSTRS.STR_AUTOFMTREDL_SET_TMPL_NEG_INDENT.String.Text
-msgid  "Set "Hanging indent" Style"
-msgstr ""
+msgid  "Set \"Hanging indent\" Style"
+msgstr "Истифодабарии услуби \"Масофаи баръакс\""
 
 #: source/ui/utlui/utlui.src#RID_SHELLRES_AUTOFMTSTRS.STR_AUTOFMTREDL_SET_TMPL_TEXT_INDENT +1.String.Text
-msgid  "Set "Text body indent" Style"
-msgstr ""
+msgid  "Set \"Text body indent\" Style"
+msgstr "Истифодабарии \"Сатри аввал бо масофа\""
 
 #: source/ui/utlui/utlui.src#RID_SHELLRES_AUTOFMTSTRS.STR_AUTOFMTREDL_SET_TMPL_HEADLINE +1.String.Text
-msgid  "Set "Heading $(ARG1)" Style"
-msgstr ""
+msgid  "Set \"Heading $(ARG1)\" Style"
+msgstr "Истифодабарии услуби \"Сарлавҳаи $(ARG1)\""
 
 #: source/ui/utlui/utlui.src#RID_SHELLRES_AUTOFMTSTRS.STR_AUTOFMTREDL_SET_NUMBULET +1.String.Text
-msgid  "Set "Bullet" or "Numbering" Style"
-msgstr ""
+msgid  "Set \"Bullet\" or \"Numbering\" Style"
+msgstr "Истифодабарии услуби \"Рӯйхат\" ё \"Рақамгузорӣ\""
 
 #: source/ui/utlui/utlui.src#RID_SHELLRES_AUTOFMTSTRS.STR_AUTOFMTREDL_DEL_MORELINES +1.String.Text
 msgid  "Combine paragraphs"
@@ -11137,11 +11137,11 @@ msgstr "[Система]"
 
 #: source/ui/utlui/utlui.src#STR_MULT_INTERACT_SPELL_WARN.String.Text
 msgid  "The interactive spellcheck is already active\nin a different document"
-msgstr ""
+msgstr "Тафтиши имло дар ҳуҷҷати\nдигар фаъол аст"
 
 #: source/ui/utlui/utlui.src#STR_MULT_INTERACT_HYPH_WARN.String.Text
 msgid  "The interactive hyphenation is already active\nin a different document"
-msgstr ""
+msgstr "Азсатргузаронӣ дар ҳуҷҷати\nдигар фаъол аст"
 
 #: source/ui/utlui/utlui.src#STR_SPELL_TITLE.String.Text
 msgid  "Spellcheck"
@@ -12667,6 +12667,18 @@ msgstr "Амудӣ ба марказ"
 msgid  "at bottom"
 msgstr "дар поён"
 
+#: source/ui/utlui/attrdesc.src#STR_LINE_TOP.String.Text
+msgid  "Top of line"
+msgstr "Болои сатр"
+
+#: source/ui/utlui/attrdesc.src#STR_LINE_CENTER.String.Text
+msgid  "Line centered"
+msgstr "Марказонидани амуди нисбат ба сатр"
+
+#: source/ui/utlui/attrdesc.src#STR_LINE_BOTTOM.String.Text
+msgid  "Bottom of line"
+msgstr "Поёни сатр"
+
 #: source/ui/utlui/attrdesc.src#STR_REGISTER_ON.String.Text
 msgid  "Register-true"
 msgstr "Регистр"
@@ -12834,18 +12846,6 @@ msgstr "Якҷоякунии сарҳадот"
 #: source/ui/utlui/attrdesc.src#STR_CONNECT_BORDER_OFF.String.Text
 msgid  "Do not merge borders"
 msgstr "Якҷоя накардани сарҳадот"
-
-#: source/ui/utlui/attrdesc.src#STR_LINE_TOP.String.Text
-msgid  "Top of line"
-msgstr "Болои сатр"
-
-#: source/ui/utlui/attrdesc.src#STR_LINE_CENTER.String.Text
-msgid  "Line centered"
-msgstr "Марказонидани амуди нисбат ба сатр"
-
-#: source/ui/utlui/attrdesc.src#STR_LINE_BOTTOM.String.Text
-msgid  "Bottom of line"
-msgstr "Поёни сатр"
 
 #: source/ui/web/web.src#STR_HUMAN_SWWEBDOC_NAME.String.Text
 msgid  "HTML"

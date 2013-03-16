@@ -136,6 +136,10 @@ msgid  "km"
 msgstr "км"
 
 #: source/src/units.src#SV_FUNIT_STRINGS.FUNIT_TWIP.ItemList.item
+msgid  "twips"
+msgstr "твіпи"
+
+#: source/src/units.src#SV_FUNIT_STRINGS.FUNIT_TWIP.ItemList.item
 msgid  "twip"
 msgstr "твіп"
 
@@ -148,31 +152,15 @@ msgid  "pi"
 msgstr "пі"
 
 #: source/src/units.src#SV_FUNIT_STRINGS.FUNIT_INCH.ItemList.item
-msgid  "inch"
-msgstr "дюйм"
-
-#: source/src/units.src#SV_FUNIT_STRINGS.FUNIT_FOOT.ItemList.item
-msgid  "feet"
-msgstr "футів"
-
-#: source/src/units.src#SV_FUNIT_STRINGS.FUNIT_MILE.ItemList.item
-msgid  "mile"
-msgstr "миля"
-
-#: source/src/units.src#SV_FUNIT_STRINGS.FUNIT_PERCENT.ItemList.item
-msgid  "%"
-msgstr "%"
-
-#: source/src/units.src#SV_FUNIT_STRINGS.FUNIT_TWIP.ItemList.item
-msgid  "twips"
-msgstr "твіпи"
-
-#: source/src/units.src#SV_FUNIT_STRINGS.FUNIT_INCH.ItemList.item
-msgid  """
-msgstr ""
+msgid  "\""
+msgstr "\""
 
 #: source/src/units.src#SV_FUNIT_STRINGS.FUNIT_INCH.ItemList.item
 msgid  "in"
+msgstr "дюйм"
+
+#: source/src/units.src#SV_FUNIT_STRINGS.FUNIT_INCH.ItemList.item
+msgid  "inch"
 msgstr "дюйм"
 
 #: source/src/units.src#SV_FUNIT_STRINGS.FUNIT_FOOT.ItemList.item
@@ -187,13 +175,25 @@ msgstr "фут"
 msgid  "foot"
 msgstr "фут"
 
+#: source/src/units.src#SV_FUNIT_STRINGS.FUNIT_FOOT.ItemList.item
+msgid  "feet"
+msgstr "футів"
+
 #: source/src/units.src#SV_FUNIT_STRINGS.FUNIT_MILE.ItemList.item
 msgid  "miles"
 msgstr "милі"
 
+#: source/src/units.src#SV_FUNIT_STRINGS.FUNIT_MILE.ItemList.item
+msgid  "mile"
+msgstr "миля"
+
+#: source/src/units.src#SV_FUNIT_STRINGS.FUNIT_PERCENT.ItemList.item
+msgid  "%"
+msgstr "%"
+
 #: source/src/stdtext.src#SV_STDTEXT_SERVICENOTAVAILABLE.String.Text
 msgid  "The component (%s) could not be loaded.\nPlease start setup with the repair option."
-msgstr ""
+msgstr "Не вдається завантажити компонент (%s).\nЗапустіть встановлення у режимі Відновлення."
 
 #: source/src/stdtext.src#SV_STDTEXT_DONTHINTAGAIN.String.Text
 msgid  "Do not show this information again."
@@ -213,11 +213,11 @@ msgstr "Неправильна версія"
 
 #: source/src/stdtext.src#SV_ACCESSERROR_BRIDGE_MSG.String.Text
 msgid  "%PRODUCTNAME %PRODUCTVERSION requires a Java Access Bridge 1.0.3 or later version to support accessibility."
-msgstr ""
+msgstr "%PRODUCTNAME %PRODUCTVERSION вимагає Java Access Bridge 1.0.3 або вищу версію для підтримки функцій доступності."
 
 #: source/src/stdtext.src#SV_ACCESSERROR_OK_CANCEL_MSG.String.Text
 msgid  "Click '%OK' to start %PRODUCTNAME %PRODUCTVERSION without accessibility support, or click '%CANCEL' to exit %PRODUCTNAME %PRODUCTVERSION."
-msgstr ""
+msgstr "Клацніть '%OK' для запуску %PRODUCTNAME %PRODUCTVERSION без підтримки функцій доступності, або клацніть '%CANCEL' для виходу з %PRODUCTNAME %PRODUCTVERSION."
 
 #: source/src/stdtext.src#SV_ACCESSERROR_MISSING_BRIDGE.String.Text
 msgid  "No Java Access Bridge"
@@ -229,7 +229,7 @@ msgstr "Неправильне встановлення Java"
 
 #: source/src/stdtext.src#SV_ACCESSERROR_JAVA_MSG.String.Text
 msgid  "%PRODUCTNAME %PRODUCTVERSION requires Java 1.4.0_02 or later version to support accessibility."
-msgstr ""
+msgstr "%PRODUCTNAME %PRODUCTVERSION вимагає Java 1.4.0_02 або старшу версію для підтримки функцій доступності."
 
 #: source/src/stdtext.src#SV_ACCESSERROR_MISSING_JAVA.String.Text
 msgid  "No Java Installation"
@@ -261,7 +261,7 @@ msgstr "Параметри..."
 
 #: source/src/stdtext.src#SV_EDIT_WARNING_BOX.WarningBox.Message
 msgid  "The inserted text exceeded the maximum length of this text field. The text was truncated."
-msgstr ""
+msgstr "Вставлений текст перевищує максимально допустиму довжину цього текстового поля. Текст буде відрізаний."
 
 #: source/src/stdtext.src#SV_MAC_SCREENNNAME.String.Text
 msgid  "Screen %d"

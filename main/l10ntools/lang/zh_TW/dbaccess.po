@@ -41,23 +41,23 @@ msgstr "無法建立連線。"
 
 #: source/core/resource/strings.src#RID_STR_TABLE_IS_FILTERED.String.Text
 msgid  "The table $name$ already exists. It is not visible because it has been filtered out."
-msgstr ""
+msgstr "資料表 $name$ 已經存在。因爲被篩選掉而無法顯示。"
 
 #: source/core/resource/strings.src#RID_STR_NEED_CONFIG_WRITE_ACCESS.String.Text
 msgid  "You have no write access to the configuration data the object is based on."
-msgstr ""
+msgstr "您沒有權限存取這個物件的配置資料。"
 
 #: source/core/resource/strings.src#RID_STR_COULDNOTCONNECT_UNSPECIFIED.String.Text
 msgid  "The connection to the external data source could not be established. An unknown error occurred. The driver is probably defective."
-msgstr ""
+msgstr "無法與外部的資料來源連線。出現一個不明的錯誤。原因可能是驅動程式已經損壞。"
 
 #: source/core/resource/strings.src#RID_STR_COULDNOTCONNECT_NODRIVER.String.Text
 msgid  "The connection to the external data source could not be established. No SDBC driver was found for the given URL."
-msgstr ""
+msgstr "無法與外部的資料來源連線。無法在指定的 URL 位置找到 SDBC 驅動程式。"
 
 #: source/core/resource/strings.src#RID_STR_COULDNOTLOAD_MANAGER.String.Text
 msgid  "The connection to the external data source could not be established. The SDBC driver manager could not be loaded."
-msgstr ""
+msgstr "無法與外部的資料來源連線。無法載入 SDBC 驅動程式管理員。"
 
 #: source/core/resource/strings.src#RID_STR_FORM.String.Text
 msgid  "Form"
@@ -69,11 +69,11 @@ msgstr "報表"
 
 #: source/core/resource/strings.src#RID_STR_DATASOURCE_NOT_STORED.String.Text
 msgid  "The data source was not saved. Please use the interface XStorable to save the data source."
-msgstr ""
+msgstr "未儲存資料來源。請使用介面 XStorable 來儲存資料來源。"
 
 #: source/core/resource/strings.src#RID_STR_ONLY_QUERY.String.Text
 msgid  "The given command is not a SELECT statement.\nOnly queries are allowed."
-msgstr ""
+msgstr "提供的指令並不是 SELECT 陳述式。\n僅允許查詢。"
 
 #: source/core/resource/strings.src#RID_STR_NO_VALUE_CHANGED.String.Text
 msgid  "No values were modified."
@@ -81,11 +81,11 @@ msgstr "未修改任何值。"
 
 #: source/core/resource/strings.src#RID_STR_NO_XROWUPDATE.String.Text
 msgid  "Values could not be inserted. The XRowUpdate interface is not supported by ResultSet."
-msgstr ""
+msgstr "無法插入值。ResultSet 不支援 XRowUpdate 介面。"
 
 #: source/core/resource/strings.src#RID_STR_NO_XRESULTSETUPDATE.String.Text
 msgid  "Values could not be inserted. The XResultSetUpdate interface is not supported by ResultSet."
-msgstr ""
+msgstr "無法插入值。ResultSet 不支援 XResultSetpdate 介面。"
 
 #: source/core/resource/strings.src#RID_STR_NO_UPDATE_MISSING_CONDITION.String.Text
 msgid  "Values could not be modified, due to a missing condition statement."
@@ -141,11 +141,11 @@ msgstr "不允許在此狀態下進行相對定位。"
 
 #: source/core/resource/strings.src#RID_STR_NO_REFESH_AFTERLAST.String.Text
 msgid  "A row cannot be refreshed when the ResultSet is positioned after the last row."
-msgstr ""
+msgstr "當 ResultSet 被定位在最後一列之後時，即無法重新整理列。"
 
 #: source/core/resource/strings.src#RID_STR_NO_MOVETOINSERTROW_CALLED.String.Text
 msgid  "A new row cannot be inserted when the ResultSet is not first moved to the insert row."
-msgstr ""
+msgstr "當 ResultSet 未先移至插入列時即無法插入新列。"
 
 #: source/core/resource/strings.src#RID_STR_NO_UPDATEROW.String.Text
 msgid  "A row cannot be modified in this state"
@@ -165,31 +165,31 @@ msgstr "驅動程式不支援修改欄說明。"
 
 #: source/core/resource/strings.src#RID_STR_COLUMN_ALTER_BY_NAME.String.Text
 msgid  "The driver does not support the modification of column descriptions by changing the name."
-msgstr ""
+msgstr "驅動程式不支援以變更名稱的方式修改欄說明。"
 
 #: source/core/resource/strings.src#RID_STR_COLUMN_ALTER_BY_INDEX.String.Text
 msgid  "The driver does not support the modification of column descriptions by changing the index."
-msgstr ""
+msgstr "驅動程式不支援以變更索引的方式修改欄說明。"
 
 #: source/core/resource/strings.src#RID_STR_FILE_DOES_NOT_EXIST.String.Text
-msgid  "The file "$file$" does not exist."
-msgstr ""
+msgid  "The file \"$file$\" does not exist."
+msgstr "檔案「$file$」不存在。"
 
 #: source/core/resource/strings.src#RID_STR_TABLE_DOES_NOT_EXIST.String.Text
-msgid  "There exists no table named "$table$"."
-msgstr ""
+msgid  "There exists no table named \"$table$\"."
+msgstr "不存在名稱為「$table$」的資料表。 "
 
 #: source/core/resource/strings.src#RID_STR_QUERY_DOES_NOT_EXIST.String.Text
-msgid  "There exists no query named "$table$"."
-msgstr ""
+msgid  "There exists no query named \"$table$\"."
+msgstr "不存在名為「$table$」的查詢。"
 
 #: source/core/resource/strings.src#RID_STR_CONFLICTING_NAMES.String.Text
 msgid  "There are tables in the database whose names conflict with the names of existing queries. To make full use of all queries and tables, make sure they have distinct names."
-msgstr ""
+msgstr "資料庫中有資料表的名稱與現有的查詢名稱相衝突。若要充分利用所有查詢及資料表，請確定每個查詢及資料表名稱不同。"
 
 #: source/core/resource/strings.src#RID_STR_COMMAND_LEADING_TO_ERROR.String.Text
 msgid  "The SQL command leading to this error is:\n\n$command$"
-msgstr ""
+msgstr "導致此錯誤的 SQL 指令為:\n\n$command$"
 
 #: source/core/resource/strings.src#RID_STR_STATEMENT_WITHOUT_RESULT_SET.String.Text
 msgid  "The SQL command does not describe a result set."
@@ -221,15 +221,15 @@ msgstr "找不到文件「$name$」。"
 
 #: source/core/resource/strings.src#RID_STR_ERROR_WHILE_SAVING.String.Text
 msgid  "Could not save the document to $location$:\n$message$"
-msgstr ""
+msgstr "無法將文件儲存至 $location$：\n$message$"
 
 #: source/core/resource/strings.src#RID_NO_SUCH_DATA_SOURCE.String.Text
 msgid  "Error accessing data source '$name$':\n$error$"
-msgstr ""
+msgstr "存取資料來源「$name$」時發生錯誤：\n$error$"
 
 #: source/core/resource/strings.src#RID_STR_NO_SUB_FOLDER.String.Text
-msgid  "There exists no folder named "$folder$"."
-msgstr ""
+msgid  "There exists no folder named \"$folder$\"."
+msgstr "不存在名稱為「$folder$」的資料夾。 "
 
 #: source/core/resource/strings.src#RID_STR_NO_DELETE_BEFORE_AFTER.String.Text
 msgid  "Cannot delete the before-first or after-last row."
@@ -296,8 +296,8 @@ msgid  "Embedding of database documents is not supported."
 msgstr "不支援內嵌式資料庫文件。"
 
 #: source/core/resource/strings.src#RID_STR_CONNECTION_REQUEST.String.Text
-msgid  "A connection for the following URL was requested "$name$"."
-msgstr ""
+msgid  "A connection for the following URL was requested \"$name$\"."
+msgstr "已請求下列 URL 的連線「$name$」。"
 
 #: source/core/resource/strings.src#RID_STR_MISSING_EXTENSION.String.Text
 msgid  "The extension is not installed."
@@ -428,8 +428,8 @@ msgid  "The specified file name or directory does not exist."
 msgstr "指定的檔案名稱或目錄不存在。"
 
 #: source/ext/adabas/AdabasNewDb.src#STR_ERROR_IN_ADABAS_INSTALLATION.String.Text
-msgid  "No new database can be created.\nPlease check your Adabas D installation, especially the variables "DBROOT" and "DBWORK"."
-msgstr ""
+msgid  "No new database can be created.\nPlease check your Adabas D installation, especially the variables \"DBROOT\" and \"DBWORK\"."
+msgstr "無法建立任何新的資料庫。\n請檢查您的 Adabas D 安裝，特別是變數「DBROOT」和「DBWORK」。"
 
 #: source/ext/adabas/AdabasNewDb.src#STR_STAT_WARNING.String.Text
 msgid  "Warning!"
@@ -453,15 +453,15 @@ msgstr "輸入的名稱已經存在。"
 
 #: source/ext/adabas/AdabasNewDb.src#STR_ADABAS_NO_DEFAULTNAME.String.Text
 msgid  "No default names could be set for the database files. The total length is more than 40 characters."
-msgstr ""
+msgstr "無法為資料庫檔案設定預設名稱。名稱總長度超過 40 個字元。"
 
 #: source/ext/adabas/AdabasNewDb.src#STR_ADABAS_NO_ACCESSRIGHTS.String.Text
 msgid  "No default names could be set for the database files. There is no write access."
-msgstr ""
+msgstr "無法為資料庫檔案設定預設名稱。沒有寫入存取權限。"
 
 #: source/ext/adabas/AdabasNewDb.src#STR_ADABAS_CANNOT_CONVERT.String.Text
 msgid  "The current database need to be converted. Please insert control user  and password."
-msgstr ""
+msgstr "必須轉換目前的資料庫。請輸入控制使用者和密碼。"
 
 #: source/ext/adabas/AdabasNewDb.src#STR_ADABAS_PASSWORD_ILLEGAL.String.Text
 msgid  "Spaces are not permitted in the password. Please enter a new password."
@@ -493,11 +493,11 @@ msgstr "歡迎使用資料庫巨集遷移精靈"
 
 #: source/ext/macromigration/macromigration.src#TP_PREPARE.FT_INTRODUCTION.FixedText.Text
 msgid  "This wizard will guide you through the task of migrating your macros.\n\nAfter you finished it, all macros which were formerly embedded into the forms and reports of the current database document will have been moved to the document itself. In this course, libraries will be renamed as needed.\n\nIf your forms and reports contain references to those macros, they will be adjusted, where possible.\n\nBefore the migration can start, all forms, reports, queries and tables belonging to the document must be closed. Press 'Next' to do so."
-msgstr ""
+msgstr "此精靈會引導您完成遷移巨集的工作。\n\n完成此工作之後，先前內嵌於目前資料庫文件之表單和報告中的所有巨集，均會移至該文件內。在此過程中，會視需要將程式庫重新命名。\n\n若您的表單和報告包含對這些巨集的參照，則可能也會對其進行調整。\n\n開始遷移之前，必須關閉所有屬於該文件的表單、報告、查詢及資料表。按 [下一步] 可加以關閉。"
 
 #: source/ext/macromigration/macromigration.src#TP_PREPARE.FT_CLOSE_DOC_ERROR.FixedText.Text
 msgid  "Not all objects could be closed. Please close them manually, and re-start the wizard."
-msgstr ""
+msgstr "無法關閉某些物件。請手動關閉這些物件，然後重新啟動精靈。"
 
 #: source/ext/macromigration/macromigration.src#TP_SAVE_DBDOC_AS.FT_HEADER.FixedText.Text
 msgid  "Backup your Document"
@@ -505,7 +505,7 @@ msgstr "備份您的文件"
 
 #: source/ext/macromigration/macromigration.src#TP_SAVE_DBDOC_AS.FT_EXPLANATION.FixedText.Text
 msgid  "To allow you to go back to the state before the migration, the database document will be backed up to a location of your choice. Every change done by the wizard will be made to the original document, the backup will stay untouched."
-msgstr ""
+msgstr "為了讓您可以回到遷移之前的狀態，系統會將您的資料庫文件備份至您所選擇的位置上。由精靈所做的每項變更均會更改至原始的文件中，備份將保持不動。"
 
 #: source/ext/macromigration/macromigration.src#TP_SAVE_DBDOC_AS.FT_SAVE_AS_LABEL.FixedText.Text
 msgid  "Save To:"
@@ -517,7 +517,7 @@ msgstr "瀏覽..."
 
 #: source/ext/macromigration/macromigration.src#TP_SAVE_DBDOC_AS.FT_START_MIGRATION.FixedText.Text
 msgid  "Press 'Next' to save a copy of your document, and to begin the migration."
-msgstr ""
+msgstr "按 [下一步] 以儲存文件副本，並開始遷移。"
 
 #: source/ext/macromigration/macromigration.src#TP_MIGRATE.FT_HEADER.FixedText.Text
 msgid  "Migration Progress"
@@ -525,7 +525,7 @@ msgstr "遷移進度"
 
 #: source/ext/macromigration/macromigration.src#TP_MIGRATE.FT_OBJECT_COUNT.FixedText.Text
 msgid  "The database document contains $forms$ form(s) and $reports$ report(s), which are currently being processed:"
-msgstr ""
+msgstr "資料庫文件包含 $forms$ 表單和 $reports$ 報表，目前正在處理這些表單與報表："
 
 #: source/ext/macromigration/macromigration.src#TP_MIGRATE.FT_CURRENT_OBJECT_LABEL.FixedText.Text
 msgid  "Current object:"
@@ -545,7 +545,7 @@ msgstr "$overall$ 的文件 $current$"
 
 #: source/ext/macromigration/macromigration.src#TP_MIGRATE.FT_MIGRATION_DONE.FixedText.Text
 msgid  "All forms and reports have been successfully processed. Press 'Next' to show a detailed summary."
-msgstr ""
+msgstr "已成功處理所有表單及報告。按 [下一步] 可顯示詳細的摘要。"
 
 #: source/ext/macromigration/macromigration.src#TP_SUMMARY.FT_HEADER.FixedText.Text
 msgid  "Summary"
@@ -553,11 +553,11 @@ msgstr "摘要"
 
 #: source/ext/macromigration/macromigration.src#TP_SUMMARY.STR_SUCCESSFUL.String.Text
 msgid  "The migration was successful. Below is a log of the actions which have been taken to your document."
-msgstr ""
+msgstr "遷移成功。以下是對文件所執行過動作的記錄。"
 
 #: source/ext/macromigration/macromigration.src#TP_SUMMARY.STR_UNSUCCESSFUL.String.Text
 msgid  "The migration was not successful. Examine the migration log below for details."
-msgstr ""
+msgstr "遷移不成功。請檢查下列遷移記錄以取得詳細資訊。"
 
 #: source/ext/macromigration/macromigration.src#STR_FORM.String.Text
 msgid  "Form '$name$'"
@@ -629,7 +629,7 @@ msgstr "發現異常:"
 
 #: source/ext/macromigration/macromigration.src#ERR_INVALID_BACKUP_LOCATION.ErrorBox.Message
 msgid  "You need to choose a backup location other than the document location itself."
-msgstr ""
+msgstr "您必須選擇文件所在位置以外的其他備份位置。"
 
 #: source/ext/macromigration/macromigration.src#STR_INVALID_NUMBER_ARGS.String.Text
 msgid  "Invalid number of initialization arguments. Expected 1."
@@ -645,7 +645,7 @@ msgstr "不適用於唯讀文件。"
 
 #: source/sdbtools/resource/sdbt_strings.src#STR_QUERY_AND_TABLE_DISTINCT_NAMES.String.Text
 msgid  "You cannot give a table and a query the same name. Please use a name which is not yet used by a query or table."
-msgstr ""
+msgstr "資料表與查詢不可使用相同的名稱。請使用查詢或資料表尚未使用的名稱。"
 
 #: source/sdbtools/resource/sdbt_strings.src#STR_BASENAME_TABLE.String.Text
 msgid  "Table"
@@ -665,11 +665,11 @@ msgstr "指定的物件不是資料表物件。"
 
 #: source/sdbtools/resource/sdbt_strings.src#STR_INVALID_COMPOSITION_TYPE.String.Text
 msgid  "Invalid composition type - need a value from com.sun.star.sdb.tools.CompositionType."
-msgstr ""
+msgstr "無效的組成類型 - 需要來自 com.sun.star.sdb.tools.CompositionType 的值。"
 
 #: source/sdbtools/resource/sdbt_strings.src#STR_INVALID_COMMAND_TYPE.String.Text
 msgid  "Invalid command type - only TABLE and QUERY from com.sun.star.sdb.CommandType are allowed."
-msgstr ""
+msgstr "無效的指令類型 - 僅允許來自 com.sun.star.sdb.CommandType 的 TABLE 與 QUERY。"
 
 #: source/ui/app/app.src#RID_STR_NEW_FORM.String.Text
 msgid  "Create Form in Design View..."
@@ -801,15 +801,15 @@ msgstr "- %PRODUCTNAME Base"
 
 #: source/ui/app/app.src#RID_STR_REPORTS_HELP_TEXT_WIZARD.String.Text
 msgid  "The wizard will guide you through the steps necessary to create a report."
-msgstr ""
+msgstr "精靈會引導您完成建立報表所需的步驟。"
 
 #: source/ui/app/app.src#RID_STR_FORMS_HELP_TEXT.String.Text
 msgid  "Create a form by specifying the record source, controls, and control properties."
-msgstr ""
+msgstr "指定來記錄來源、控制項及控制項屬性以建立表單。"
 
 #: source/ui/app/app.src#RID_STR_REPORT_HELP_TEXT.String.Text
 msgid  "Create a report by specifying the record source, controls, and control properties."
-msgstr ""
+msgstr "指定條目來源、控制項及控制項屬性以建立報表。"
 
 #: source/ui/app/app.src#RID_STR_FORMS_HELP_TEXT_WIZARD.String.Text
 msgid  "The wizard will guide you through the steps necessary to create a form."
@@ -817,7 +817,7 @@ msgstr "精靈會透過建立表單所需的步驟給予您指導。"
 
 #: source/ui/app/app.src#RID_STR_QUERIES_HELP_TEXT.String.Text
 msgid  "Create a query by specifying the filters, input tables, field names,  and  properties for sorting or grouping."
-msgstr ""
+msgstr "指定篩選器、輸入資料表、欄位名稱及排序或群組屬性以建立查詢。"
 
 #: source/ui/app/app.src#RID_STR_QUERIES_HELP_TEXT_SQL.String.Text
 msgid  "Create a query  entering an SQL statement directly."
@@ -825,19 +825,19 @@ msgstr "直接輸入 SQL 陳述式來建立查詢。"
 
 #: source/ui/app/app.src#RID_STR_QUERIES_HELP_TEXT_WIZARD.String.Text
 msgid  "The wizard will guide you through the steps necessary to create a query."
-msgstr ""
+msgstr "精靈會透過建立查詢所需的步驟給予您指導。"
 
 #: source/ui/app/app.src#RID_STR_TABLES_HELP_TEXT_DESIGN.String.Text
 msgid  "Create a table by specifying the field names and properties, as well as the data types."
-msgstr ""
+msgstr "指定欄位名稱與屬性，以及資料類型以建立資料表。"
 
 #: source/ui/app/app.src#RID_STR_TABLES_HELP_TEXT_WIZARD.String.Text
 msgid  "Choose from a selection of business and personal table samples, which you customize to create a table."
-msgstr ""
+msgstr "從諸多企業與個人表格樣本中選擇，自訂來建立資料表。"
 
 #: source/ui/app/app.src#RID_STR_VIEWS_HELP_TEXT_DESIGN.String.Text
 msgid  "Create a view by specifying the tables and field names you would like to have visible."
-msgstr ""
+msgstr "指定你想看的資料表與欄位名稱以建立檢視。"
 
 #: source/ui/app/app.src#RID_STR_VIEWS_HELP_TEXT_WIZARD.String.Text
 msgid  "Opens the view wizard"
@@ -865,11 +865,11 @@ msgstr "停用預覽"
 
 #: source/ui/app/app.src#APP_SAVEMODIFIED.QueryBox.Message
 msgid  "The database has been modified.\nDo you want to save the changes?"
-msgstr ""
+msgstr "資料庫已修改。\n您想要儲存變更嗎？"
 
 #: source/ui/app/app.src#APP_CLOSEDOCUMENTS.QueryBox.Message
 msgid  "The connection type has been altered.\nFor the changes to take effect, all forms, reports, queries and tables must be closed.\n\nDo you want to close all documents now?"
-msgstr ""
+msgstr "連線類型已改變。\n必須關閉所有表單、報表、查詢和資料表，變更才能生效。\n\n是否要現在關閉所有文件？"
 
 #: source/ui/app/app.src#RID_MENU_APP_PREVIEW.SID_DB_APP_DISABLE_PREVIEW.MenuItem.Text
 msgid  "None"
@@ -882,6 +882,14 @@ msgstr "文件資訊"
 #: source/ui/app/app.src#RID_MENU_APP_PREVIEW.SID_DB_APP_VIEW_DOC_PREVIEW.MenuItem.Text
 msgid  "Document"
 msgstr "文件"
+
+#: source/ui/app/app.src#RID_STR_FORM.String.Text
+msgid  "Form"
+msgstr "表單"
+
+#: source/ui/app/app.src#RID_STR_REPORT.String.Text
+msgid  "Report"
+msgstr "報表"
 
 #: source/ui/app/app.src#STR_FRM_LABEL.String.Text
 msgid  "F~orm name"
@@ -901,7 +909,7 @@ msgstr "該文件包含具有內嵌式巨集的表單或報告。"
 
 #: source/ui/app/app.src#STR_SUB_DOCS_WITH_SCRIPTS_DETAIL.String.Text
 msgid  "Macros should be embedded into the database document itself.\n\nYou can continue to use your document as before, however, you are encouraged to migrate your macros. The menu item 'Tools / Migrate Macros ...' will assist you with this.\n\nNote that you won't be able to embed macros into the database document itself until this migration is done. "
-msgstr ""
+msgstr "巨集應內嵌於資料庫文件。\n\n您可以如同往常般地繼續使用文件，不過，我們建議您遷移巨集。功能表項目 [工具] / [遷移巨集...] 會協助您完成此作業。\n\n請注意，在完成此項遷移之前，您無法將巨集內嵌於資料庫文件中。"
 
 #: source/ui/app/app.src#RID_STR_EMBEDDED_DATABASE.String.Text
 msgid  "Embedded database"
@@ -915,17 +923,9 @@ msgstr "您無法選取不同的種類。"
 msgid  "Unsupported object type found ($type$)."
 msgstr "發現不支援的物件類型 ($type$)。"
 
-#: source/ui/app/app.src#RID_STR_FORM.String.Text
-msgid  "Form"
-msgstr "表單"
-
-#: source/ui/app/app.src#RID_STR_REPORT.String.Text
-msgid  "Report"
-msgstr "報表"
-
 #: source/ui/browser/sbabrw.src#QUERY_BRW_SAVEMODIFIED.QueryBox.Message
 msgid  "The current record has been changed.\nDo you want to save the changes?"
-msgstr ""
+msgstr "目前的資料已經變更。\n要儲存變更的資料條目？"
 
 #: source/ui/browser/sbabrw.src#QUERY_BRW_DELETE_ROWS.QueryBox.Message
 msgid  "Do you want to delete the selected data?"
@@ -955,6 +955,18 @@ msgstr "查詢"
 msgid  "Tables"
 msgstr "資料表"
 
+#: source/ui/browser/sbabrw.src#ID_TREE_EDIT_DATABASE.#define.Text
+msgid  "Edit ~Database File..."
+msgstr "編輯資料庫檔案(~D)..."
+
+#: source/ui/browser/sbabrw.src#ID_TREE_ADMINISTRATE.#define.Text
+msgid  "Registered databases ..."
+msgstr "已註冊的資料庫..."
+
+#: source/ui/browser/sbabrw.src#ID_TREE_CLOSE_CONN.#define.Text
+msgid  "Disco~nnect"
+msgstr "結束連線(~N)"
+
 #: source/ui/browser/sbabrw.src#STR_TITLE_CONFIRM_DELETION.String.Text
 msgid  "Confirm Deletion"
 msgstr "確認刪除"
@@ -977,11 +989,11 @@ msgstr "遇到警告訊息"
 
 #: source/ui/browser/sbabrw.src#STR_OPENTABLES_WARNINGS_DETAILS.String.Text
 msgid  "While retrieving the tables, warnings were reported by the database connection."
-msgstr ""
+msgstr "讀取資料表時，資料庫連線傳回警告。"
 
 #: source/ui/browser/sbabrw.src#STR_CONNECTING_DATASOURCE.String.Text
-msgid  "Connecting to "$name$" ..."
-msgstr ""
+msgid  "Connecting to \"$name$\" ..."
+msgstr "連線到 \"$name$\" ..."
 
 #: source/ui/browser/sbabrw.src#STR_LOADING_QUERY.String.Text
 msgid  "Loading query $name$ ..."
@@ -996,24 +1008,12 @@ msgid  "No table format could be found."
 msgstr "找不到資料表格式。"
 
 #: source/ui/browser/sbabrw.src#STR_COULDNOTCONNECT_DATASOURCE.String.Text
-msgid  "The connection to the data source "$name$" could not be established."
-msgstr ""
+msgid  "The connection to the data source \"$name$\" could not be established."
+msgstr "無法建立與資料來源「$name$」的連線。"
 
 #: source/ui/browser/sbabrw.src#RID_MENU_REFRESH_DATA.ID_BROWSER_REFRESH_REBUILD.MenuItem.Text
 msgid  "Rebuild"
 msgstr "重新建立"
-
-#: source/ui/browser/sbabrw.src#ID_TREE_EDIT_DATABASE.#define.Text
-msgid  "Edit ~Database File..."
-msgstr "編輯資料庫檔案(~D)..."
-
-#: source/ui/browser/sbabrw.src#ID_TREE_ADMINISTRATE.#define.Text
-msgid  "Registered databases ..."
-msgstr "已註冊的資料庫..."
-
-#: source/ui/browser/sbabrw.src#ID_TREE_CLOSE_CONN.#define.Text
-msgid  "Disco~nnect"
-msgstr "結束連線(~N)"
 
 #: source/ui/browser/sbagrid.src#RID_SBA_GRID_COLCTXMENU.ID_BROWSER_COLATTRSET.MenuItem.Text
 msgid  "Column ~Format..."
@@ -1052,8 +1052,8 @@ msgid  "View #"
 msgstr "檢視 #"
 
 #: source/ui/browser/sbagrid.src#STR_NAME_ALREADY_EXISTS.String.Text
-msgid  "The name "#" already exists."
-msgstr ""
+msgid  "The name \"#\" already exists."
+msgstr "名稱「#」已經存在。"
 
 #: source/ui/browser/sbagrid.src#STR_NO_COLUMNNAME_MATCHING.String.Text
 msgid  "No matching column names were found."
@@ -1137,7 +1137,7 @@ msgstr "請您檢查目前的設定，如使用者和密碼。"
 
 #: source/ui/control/tabletree.src#STR_NOTABLEINFO.String.Text
 msgid  "Successfully connected, but information about database tables is not available."
-msgstr ""
+msgstr "已經成功連線，但是無法取得資料庫的資料表。"
 
 #: source/ui/control/tabletree.src#STR_ALL_TABLES.String.Text
 msgid  "All tables"
@@ -1236,12 +1236,12 @@ msgid  "Do you want to save the changes made to the current index?"
 msgstr "要儲存目前索引的變更內容？"
 
 #: source/ui/dlg/indexdialog.src#STR_INDEX_NAME_ALREADY_USED.String.Text
-msgid  "There is already another index named "$name$"."
-msgstr ""
+msgid  "There is already another index named \"$name$\"."
+msgstr "已經存在一個索引「$name$」。"
 
 #: source/ui/dlg/indexdialog.src#STR_INDEXDESIGN_DOUBLE_COLUMN_NAME.String.Text
-msgid  "In an index definition, no table column may occur more than once. However, you have entered column "$name$" twice."
-msgstr ""
+msgid  "In an index definition, no table column may occur more than once. However, you have entered column \"$name$\" twice."
+msgstr "索引定義中，一個資料表欄位只能使用一次。但你輸入了兩次「$name$」欄位。"
 
 #: source/ui/dlg/paramdialog.src#DLG_PARAMETERS.FL_PARAMS.FixedLine.Text
 msgid  "~Parameters"
@@ -1260,8 +1260,8 @@ msgid  "Parameter Input"
 msgstr "輸入參數值"
 
 #: source/ui/dlg/paramdialog.src#DLG_PARAMETERS.STR_COULD_NOT_CONVERT_PARAM.String.Text
-msgid  "The entry could not be converted to a valid value for the "$name$"column"
-msgstr ""
+msgid  "The entry could not be converted to a valid value for the \"$name$\"column"
+msgstr "這個輸入值無法轉換成欄「$name$」的有效值。"
 
 #: source/ui/dlg/sqlmessage.src#DLG_SQLEXCEPTIONCHAIN.ModalDialog.Text
 msgid  "%PRODUCTNAME Base"
@@ -1289,7 +1289,7 @@ msgstr "錯誤碼"
 
 #: source/ui/dlg/sqlmessage.src#STR_EXPLAN_STRINGCONVERSION_ERROR.String.Text
 msgid  "A frequent reason for this error is an inappropriate character set setting for the language of your database. Check the setting by choosing Edit - Database - Properties."
-msgstr ""
+msgstr "發生這項錯誤通常是因為資料庫語言的字元組設定不正確。可選擇 [編輯] - [資料庫] - [屬性]，來檢查設定。"
 
 #: source/ui/dlg/sqlmessage.src#STR_EXCEPTION_ERROR.String.Text
 msgid  "Error"
@@ -1312,8 +1312,16 @@ msgid  "Standard Filter"
 msgstr "標準篩選"
 
 #: source/ui/dlg/queryfilter.src#DLG_FILTERCRIT.LB_WHERECOND2.Default.StringList.item
+msgid  "AND"
+msgstr "AND"
+
+#: source/ui/dlg/queryfilter.src#DLG_FILTERCRIT.LB_WHERECOND2.Default.StringList.item
 msgid  "OR"
 msgstr "OR"
+
+#: source/ui/dlg/queryfilter.src#DLG_FILTERCRIT.LB_WHERECOND3.Default.StringList.item
+msgid  "AND"
+msgstr "AND"
 
 #: source/ui/dlg/queryfilter.src#DLG_FILTERCRIT.LB_WHERECOND3.Default.StringList.item
 msgid  "OR"
@@ -1346,14 +1354,6 @@ msgstr "- 無 -"
 #: source/ui/dlg/queryfilter.src#DLG_FILTERCRIT.STR_COMPARE_OPERATORS.String.Text
 msgid  "=;<>;<;<=;>;>=;like;not like;null;not null"
 msgstr "=;<>;<;<=;>;>=;等於;不等於;空缺;不空缺"
-
-#: source/ui/dlg/queryfilter.src#DLG_FILTERCRIT.LB_WHERECOND2.Default.StringList.item
-msgid  "AND"
-msgstr "AND"
-
-#: source/ui/dlg/queryfilter.src#DLG_FILTERCRIT.LB_WHERECOND3.Default.StringList.item
-msgid  "AND"
-msgstr "AND"
 
 #: source/ui/dlg/RelationDlg.src#DLG_REL_PROPERTIES.ModalDialog.Text
 msgid  "Relations"
@@ -1412,12 +1412,24 @@ msgid  "Sort Order"
 msgstr "排序"
 
 #: source/ui/dlg/queryorder.src#DLG_ORDERCRIT.LB_ORDERVALUE1.Default.StringList.item
+msgid  "ascending"
+msgstr "向上"
+
+#: source/ui/dlg/queryorder.src#DLG_ORDERCRIT.LB_ORDERVALUE1.Default.StringList.item
 msgid  "descending"
 msgstr "向下"
 
 #: source/ui/dlg/queryorder.src#DLG_ORDERCRIT.LB_ORDERVALUE2.Default.StringList.item
+msgid  "ascending"
+msgstr "向上"
+
+#: source/ui/dlg/queryorder.src#DLG_ORDERCRIT.LB_ORDERVALUE2.Default.StringList.item
 msgid  "descending"
 msgstr "向下"
+
+#: source/ui/dlg/queryorder.src#DLG_ORDERCRIT.LB_ORDERVALUE3.Default.StringList.item
+msgid  "ascending"
+msgstr "向上"
 
 #: source/ui/dlg/queryorder.src#DLG_ORDERCRIT.LB_ORDERVALUE3.Default.StringList.item
 msgid  "descending"
@@ -1450,18 +1462,6 @@ msgstr "排序"
 #: source/ui/dlg/queryorder.src#DLG_ORDERCRIT.STR_NOENTRY.String.Text
 msgid  "<none>"
 msgstr "<無>"
-
-#: source/ui/dlg/queryorder.src#DLG_ORDERCRIT.LB_ORDERVALUE1.Default.StringList.item
-msgid  "ascending"
-msgstr "向上"
-
-#: source/ui/dlg/queryorder.src#DLG_ORDERCRIT.LB_ORDERVALUE2.Default.StringList.item
-msgid  "ascending"
-msgstr "向上"
-
-#: source/ui/dlg/queryorder.src#DLG_ORDERCRIT.LB_ORDERVALUE3.Default.StringList.item
-msgid  "ascending"
-msgstr "向上"
 
 #: source/ui/dlg/advancedsettings.src#AUTO_DATAHANDLING(AUTO_Y).FL_DATAHANDLING.FixedLine.Text
 msgid  "Options"
@@ -1532,6 +1532,18 @@ msgid  "Respect the result set type from the database driver"
 msgstr "以資料庫驅動程式傳回的結果集類型為準。"
 
 #: source/ui/dlg/advancedsettings.src#WORKAROUND.Default.StringList.item
+msgid  "Default"
+msgstr "預設"
+
+#: source/ui/dlg/advancedsettings.src#WORKAROUND.Default.StringList.item
+msgid  "SQL"
+msgstr "SQL"
+
+#: source/ui/dlg/advancedsettings.src#WORKAROUND.Default.StringList.item
+msgid  "Mixed"
+msgstr "混合"
+
+#: source/ui/dlg/advancedsettings.src#WORKAROUND.Default.StringList.item
 msgid  "MS Access"
 msgstr "MS Access"
 
@@ -1571,18 +1583,6 @@ msgstr "特殊設定"
 msgid  "Advanced Settings"
 msgstr "進階設定"
 
-#: source/ui/dlg/advancedsettings.src#WORKAROUND.Default.StringList.item
-msgid  "Default"
-msgstr "預設"
-
-#: source/ui/dlg/advancedsettings.src#WORKAROUND.Default.StringList.item
-msgid  "SQL"
-msgstr "SQL"
-
-#: source/ui/dlg/advancedsettings.src#WORKAROUND.Default.StringList.item
-msgid  "Mixed"
-msgstr "混合"
-
 #: source/ui/dlg/CollectionView.src#DLG_COLLECTION_VIEW.ModalDialog.Text
 msgid  "Save"
 msgstr "儲存"
@@ -1616,12 +1616,12 @@ msgid  "The file already exists. Overwrite?"
 msgstr "檔案已經存在。要覆寫？"
 
 #: source/ui/dlg/dbadmin2.src#STR_ENTER_CONNECTION_PASSWORD.String.Text
-msgid  "A password is needed to connect to the data source "$name$"."
-msgstr ""
+msgid  "A password is needed to connect to the data source \"$name$\"."
+msgstr "連線到資料來源「$name$」必須輸入一個密碼。"
 
 #: source/ui/dlg/dbadmin2.src#STR_ASK_FOR_DIRECTORY_CREATION.String.Text
 msgid  "The directory\n\n$path$\n\ndoes not exist. Should it be created?"
-msgstr ""
+msgstr "這個目錄\n\n$path$\n\n不存在。要新增這個目錄？"
 
 #: source/ui/dlg/dbadmin2.src#STR_COULD_NOT_CREATE_DIRECTORY.String.Text
 msgid  "The directory $name$ could not be created."
@@ -1773,7 +1773,7 @@ msgstr "歡迎使用 %PRODUCTNAME 資料庫精靈"
 
 #: source/ui/dlg/dbadmin.src#PAGE_GENERAL.FT_GENERALHELPTEXT.FixedText.Text
 msgid  "Use the Database Wizard to create a new database, open an existing database file, or connect to a database stored on a server."
-msgstr ""
+msgstr "使用「資料庫精靈」可以建立一個新的資料庫、開啟現有的資料庫檔案，或連線到儲存於伺服器的資料庫。"
 
 #: source/ui/dlg/dbadmin.src#PAGE_GENERAL.FT_DATASOURCEHEADER.FixedText.Text
 msgid  "What do you want to do?"
@@ -1797,7 +1797,7 @@ msgstr "連線到現有資料庫(~X)"
 
 #: source/ui/dlg/dbadmin.src#PAGE_GENERAL.FT_DATASOURCETYPE_PRE.FixedText.Text
 msgid  "Select the type of database to which you want to establish a connection."
-msgstr ""
+msgstr "選取您想要與其建立連線的資料庫的類型。"
 
 #: source/ui/dlg/dbadmin.src#PAGE_GENERAL.FT_DATATYPE.FixedText.Text
 msgid  "Database ~type "
@@ -1809,7 +1809,7 @@ msgstr "資料庫"
 
 #: source/ui/dlg/dbadmin.src#PAGE_GENERAL.FT_DATASOURCETYPE_POST.FixedText.Text
 msgid  "On the following pages, you can make detailed settings for the connection.\n\nThe new settings you make will overwrite your existing settings."
-msgstr ""
+msgstr "在下列幾頁中，您可以建立詳細的連線設定。\n\n您建立的新設定將會覆蓋您現有的設定。"
 
 #: source/ui/dlg/dbadmin.src#PAGE_GENERAL.STR_MYSQLENTRY.String.Text
 msgid  "MySQL"
@@ -1821,11 +1821,11 @@ msgstr "資料來源屬性：#"
 
 #: source/ui/dlg/dbadmin.src#PAGE_GENERAL.STR_COULDNOTLOAD_ODBCLIB.String.Text
 msgid  "Could not load the program library #lib# or it is corrupted. The ODBC data source selection is not available."
-msgstr ""
+msgstr "無法載入程式庫 #lib# 或已經已經損坏。無法選擇 ODBC 資料來源。"
 
 #: source/ui/dlg/dbadmin.src#PAGE_GENERAL.STR_UNSUPPORTED_DATASOURCE_TYPE.String.Text
 msgid  "This kind of data source is not supported on this platform.\nYou are allowed to change the settings, but you probably will not be able to connect to the database."
-msgstr ""
+msgstr "這個操作系統不支援這個類型的資料庫類型。\n您可以變更這些設定，但不太可能連線到一個資料庫。"
 
 #: source/ui/dlg/dbadmin.src#PAGE_GENERAL.String.Text
 msgid  "General"
@@ -1841,7 +1841,7 @@ msgstr "同時顯示已刪除的記錄"
 
 #: source/ui/dlg/dbadmin.src#PAGE_DBASE.FT_SPECIAL_MESSAGE.FixedText.Text
 msgid  "Note: When deleted, and thus inactive, records are  displayed, you will not be able to delete records from the data source."
-msgstr ""
+msgstr "備註：刪除 (因此成為非作用中) 後，將會顯示出記錄，但您將無法將這些記錄從資料來源中刪除。"
 
 #: source/ui/dlg/dbadmin.src#PAGE_DBASE.PB_INDICIES.PushButton.Text
 msgid  "Indexes..."
@@ -1953,7 +1953,7 @@ msgstr "驅動程式設定(~D)"
 
 #: source/ui/dlg/dbadmin.src#STR_ERR_USE_CONNECT_TO.String.Text
 msgid  "Please choose 'Connect to an existing database' to connect to an existing database instead."
-msgstr ""
+msgstr "請選擇 [連線到現有資料庫]，以改為連線到現有的資料庫。"
 
 #: source/ui/dlg/dlgsave.src#DLG_SAVE_AS.ModalDialog.Text
 msgid  "Save As"
@@ -2025,7 +2025,7 @@ msgstr "Microsoft Access 資料庫檔案"
 
 #: source/ui/dlg/AutoControls.src#STR_NO_ADDITIONAL_SETTINGS.String.Text
 msgid  "No more settings are necessary. To verify that the connection is working, click the '%test' button."
-msgstr ""
+msgstr "不需要更多的設定。若要確認連線是否正在運作，請按一下 [%test] 按鈕。"
 
 #: source/ui/dlg/AutoControls.src#STR_COMMONURL.String.Text
 msgid  "Datasource URL"
@@ -2197,7 +2197,7 @@ msgstr "目前占用的記憶體"
 
 #: source/ui/dlg/AdabasStat.src#STR_ADABAS_ERROR_SYSTEMTABLES.String.Text
 msgid  "No information could be displayed because no access rights exist for the required system tables."
-msgstr ""
+msgstr "存取所需的系統資料表的權限不足，無法顯示任何的資訊。"
 
 #: source/ui/dlg/directsql.src#DLG_DIRECTSQL.FL_SQL.FixedLine.Text
 msgid  "SQL command"
@@ -2233,7 +2233,7 @@ msgstr "執行指令已經成功。"
 
 #: source/ui/dlg/directsql.src#STR_DIRECTSQL_CONNECTIONLOST.String.Text
 msgid  "The connection to the database has been lost. This dialog will be closed."
-msgstr ""
+msgstr "已經結束與資料庫的連線。現在關閉這個對話方塊。"
 
 #: source/ui/dlg/dbfindex.src#DLG_DBASE_INDEXES.ModalDialog.Text
 msgid  "Indexes"
@@ -2288,8 +2288,8 @@ msgid  "The database does not support user administration."
 msgstr "資料夾不支援使用者管理。"
 
 #: source/ui/dlg/UserAdmin.src#DLG_PASSWORD.FL_USER.FixedLine.Text
-msgid  "User "$name$:  $""
-msgstr ""
+msgid  "User \"$name$:  $\""
+msgstr "使用者「$name$：$」"
 
 #: source/ui/dlg/UserAdmin.src#DLG_PASSWORD.FT_OLDPASSWORD.FixedText.Text
 msgid  "Old p~assword"
@@ -2389,7 +2389,7 @@ msgstr "設定到 MySQL 資料庫的連線"
 
 #: source/ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_MYSQL_INTRO.FT_MYSQL_HELPTEXT.FixedText.Text
 msgid  "You can connect to a MySQL database using either ODBC or JDBC.\nPlease contact your system administrator if you are unsure about the following settings."
-msgstr ""
+msgstr "您可以透過 ODBC 或 JDBC 連線到 MySQL 資料庫。\n若對於下列設定有不確定之處，請與系統管理員聯繫。"
 
 #: source/ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_MYSQL_INTRO.FT_MYSQLCONNECTIONMODE.FixedText.Text
 msgid  "How do you want to connect to your MySQL database?"
@@ -2465,7 +2465,7 @@ msgstr "透過 JDBC 設定到 MySQL 資料庫的連線"
 
 #: source/ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_MYSQL_JDBC.STR_MYSQLJDBC_HELPTEXT.String.Text
 msgid  "Please enter the required information to connect to a MySQL database using JDBC. Note that a JDBC driver class must be installed on your system and registered with %PRODUCTNAME.\nPlease contact your system administrator if you are unsure about the following settings."
-msgstr ""
+msgstr "請輸入要透過 JDBC 設定 MySQL 資料庫連線的必要資訊。請注意，系統上必須安裝 JDBC 驅動程式類別並向 %PRODUCTNAME 註冊。\n若對於下列設定有不確定之處，請與系統管理員聯繫。"
 
 #: source/ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_MYSQL_JDBC.STR_MYSQL_DRIVERCLASSTEXT.String.Text
 msgid  "MySQL JDBC d~river class:"
@@ -2497,7 +2497,7 @@ msgstr "設定到文字檔案的連線"
 
 #: source/ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_TEXT.STR_TEXT_HELPTEXT.String.Text
 msgid  "Select the folder where the CSV (Comma Separated Values) text files are stored. %PRODUCTNAME Base will open these files in read-only mode."
-msgstr ""
+msgstr "選取儲存 CSV (逗號分隔值) 文字檔案的資料夾。%PRODUCTNAME Base 將以唯讀模式開啟這些檔案。"
 
 #: source/ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_TEXT.STR_TEXT_PATH_OR_FILE.String.Text
 msgid  "Path to text files"
@@ -2517,7 +2517,7 @@ msgstr "設定到 LDAP 目錄的連線"
 
 #: source/ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_LDAP.FT_LDAP_HELPTEXT.FixedText.Text
 msgid  "Please enter the required information to connect to an LDAP directory.\nPlease contact your system administrator if you are unsure about the following settings."
-msgstr ""
+msgstr "請輸入連線到 LDAP 目錄的必要資訊。\n若對於下列設定有不確定之處，請與系統管理員聯繫。"
 
 #: source/ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_LDAP.STR_LDAP_DEFAULT.String.Text
 msgid  "Default: 389"
@@ -2533,7 +2533,7 @@ msgstr "設定到 Adabas D 資料庫的連線"
 
 #: source/ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_ADABAS.STR_ADABAS_HELPTEXT.String.Text
 msgid  "Enter the name of the Adabas D database you want to connect to.\nClick 'Browse...' to select an Adabas D database that is already registered in %PRODUCTNAME."
-msgstr ""
+msgstr "輸入您要連線的 Adabas D 資料庫之名稱。\n按一下 [瀏覽...] 以選取已經於 %PRODUCTNAME 註冊的 Adabas D 資料庫。"
 
 #: source/ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_ADO.STR_ADO_HEADERTEXT.String.Text
 msgid  "Set up a connection to an ADO database"
@@ -2541,7 +2541,7 @@ msgstr "設定到 ADO 資料庫的連線"
 
 #: source/ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_ADO.STR_ADO_HELPTEXT.String.Text
 msgid  "Please enter the URL of the ADO data source you want to connect to.\nClick 'Browse' to configure provider-specific settings.\nPlease contact your system administrator if you are unsure about the following settings."
-msgstr ""
+msgstr "請輸入您要連線的 ADO 資料來源之 URL。\n按一下 [瀏覽] 以配置與提供者相關的設定。\n若對下列設定有不確定之處，請與系統管理員聯繫。"
 
 #: source/ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_ODBC.STR_ODBC_HEADERTEXT.String.Text
 msgid  "Set up a connection to an ODBC database"
@@ -2549,7 +2549,7 @@ msgstr "設定到 ODBC 資料庫的連線"
 
 #: source/ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_ODBC.STR_ODBC_HELPTEXT.String.Text
 msgid  "Enter the name of the ODBC database you want to connect to.\nClick 'Browse...' to select an ODBC database that is already registered in %PRODUCTNAME.\nPlease contact your system administrator if you are unsure about the following settings."
-msgstr ""
+msgstr "請輸入您要連線的 ODBC 資料庫之名稱。\n按一下 [瀏覽...] 以選擇一個已經於 %PRODUCTNAME 註冊的 ODBC 資料庫。\n若對下列設定有不確定之處，請與系統管理員聯繫。"
 
 #: source/ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_JDBC.STR_JDBC_HEADERTEXT.String.Text
 msgid  "Set up a connection to a JDBC database"
@@ -2557,7 +2557,7 @@ msgstr "設定到 JDBC 資料庫的連線"
 
 #: source/ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_JDBC.STR_JDBC_HELPTEXT.String.Text
 msgid  "Please enter the required information to connect to a JDBC database.\nPlease contact your system administrator if you are unsure about the following settings."
-msgstr ""
+msgstr "請輸入連線到 JDBC 資料庫的必要資訊。\n若對於下列設定有不確定之處，請與系統管理員聯繫。"
 
 #: source/ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_ORACLE.STR_ORACLE_HEADERTEXT.String.Text
 msgid  "Set up a connection to an Oracle database"
@@ -2573,7 +2573,7 @@ msgstr "Oracle JDBC 驅動程式類別(~D)"
 
 #: source/ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_ORACLE.STR_ORACLE_HELPTEXT.String.Text
 msgid  "Please enter the required information to connect to an Oracle database.Note that a JDBC Driver Class must be installed on your system and registered with %PRODUCTNAME.\nPlease contact your system administrator if you are unsure about the following settings."
-msgstr ""
+msgstr "請輸入連線到 Oracle 資料庫的必要資訊。請注意，系統上必須安裝 JDBC 驅動程式類別並向 %PRODUCTNAME 註冊。\n若對於下列設定有不確定之處，請與系統管理員聯繫。"
 
 #: source/ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_SPREADSHEET.STR_SPREADSHEET_HEADERTEXT.String.Text
 msgid  "Set up a connection to spreadsheets"
@@ -2581,7 +2581,7 @@ msgstr "設定到試算表的連線"
 
 #: source/ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_SPREADSHEET.STR_SPREADSHEET_HELPTEXT.String.Text
 msgid  "Click 'Browse...' to select a %PRODUCTNAME spreadsheet or Microsoft Excel workbook.\n%PRODUCTNAME will open this file in read-only mode."
-msgstr ""
+msgstr "按一下 [瀏覽...] 以選取 %PRODUCTNAME 試算表或 Microsoft Excel 活頁簿。\n%PRODUCTNAME 將以唯讀模式開啟這個檔案。"
 
 #: source/ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_SPREADSHEET.STR_SPREADSHEETPATH.String.Text
 msgid  "~Location and file name"
@@ -2723,6 +2723,50 @@ msgstr "測試類別"
 msgid  "Socket"
 msgstr "Socket"
 
+#: source/ui/inc/toolbox_tmpl.hrc#ID_BROWSER_REFRESH.#define.Text
+msgid  "Refresh"
+msgstr "更新"
+
+#: source/ui/inc/toolbox_tmpl.hrc#ID_NEW_VIEW_DESIGN.#define.Text
+msgid  "New ~View Design"
+msgstr "新增檢視設計(~V)"
+
+#: source/ui/inc/toolbox_tmpl.hrc#ID_NEW_TABLE_DESIGN.#define.Text
+msgid  "New ~Table Design"
+msgstr "新增資料表設計(~T)"
+
+#: source/ui/inc/toolbox_tmpl.hrc#ID_NEW_QUERY_WIZARD.#define.Text
+msgid  "Query AutoPilot..."
+msgstr "查詢自動檔案助理..."
+
+#: source/ui/inc/toolbox_tmpl.hrc#ID_NEW_QUERY_DESIGN.#define.Text
+msgid  "New ~Query (Design View)"
+msgstr "新增查詢 (設計檢視)(~Q)"
+
+#: source/ui/inc/toolbox_tmpl.hrc#ID_EDIT_QUERY_DESIGN.#define.Text
+msgid  "~Edit Query"
+msgstr "編輯查詢(~E)"
+
+#: source/ui/inc/toolbox_tmpl.hrc#ID_NEW_QUERY_SQL.#define.Text
+msgid  "New Query (~SQL View)"
+msgstr "新增查詢 (~SQL 檢視)"
+
+#: source/ui/inc/toolbox_tmpl.hrc#ID_QUERY_EDIT_JOINCONNECTION.#define.Text
+msgid  "Edit..."
+msgstr "編輯..."
+
+#: source/ui/inc/toolbox_tmpl.hrc#ID_BROWSER_COLWIDTH.#define.Text
+msgid  "Column ~Width..."
+msgstr "欄寬(~W)..."
+
+#: source/ui/inc/toolbox_tmpl.hrc#ID_DOCUMENT_CREATE_REPWIZ.#define.Text
+msgid  "Report Wizard..."
+msgstr "報表精靈..."
+
+#: source/ui/inc/toolbox_tmpl.hrc#SID_DB_FORM_NEW_PILOT.#define.Text
+msgid  "Form AutoPilot..."
+msgstr "表單自動檔案助理..."
+
 #: source/ui/misc/dbumiscres.src#RSC_CHARSETS.1.String.Text
 msgid  "System"
 msgstr "系統"
@@ -2736,12 +2780,12 @@ msgid  "An unexpected error occurred. The operation could not be performed."
 msgstr "發生一個意外的錯誤。無法執行這個動作。"
 
 #: source/ui/misc/dbumiscres.src#STR_COULDNOTOPEN_LINKEDDOC.String.Text
-msgid  "The document "$file$" could not be opened."
-msgstr ""
+msgid  "The document \"$file$\" could not be opened."
+msgstr "無法開啟文件「$file$」。"
 
 #: source/ui/misc/dbumiscres.src#STR_MISSING_TABLES_XDROP.String.Text
 msgid  "The table cannot be deleted because the database connection does not support this."
-msgstr ""
+msgstr "資料庫連線不支援，無法刪除資料表。"
 
 #: source/ui/misc/dbumiscres.src#STR_BUTTON_TEXT_ALL.String.Text
 msgid  "~All"
@@ -2760,20 +2804,20 @@ msgid  "No corresponding column type could be found for column '#1'."
 msgstr "無法為欄 '#1' 找到合適的欄類型。"
 
 #: source/ui/misc/dbumiscres.src#STR_FILE_DOES_NOT_EXIST.String.Text
-msgid  "The file "$file$" does not exist."
-msgstr ""
+msgid  "The file \"$file$\" does not exist."
+msgstr "檔案「$file$」不存在。"
 
 #: source/ui/misc/dbumiscres.src#STR_WARNINGS_DURING_CONNECT.String.Text
-msgid  "Warnings were encountered while connecting to the data source. Press "$buttontext$" to view them."
-msgstr ""
+msgid  "Warnings were encountered while connecting to the data source. Press \"$buttontext$\" to view them."
+msgstr "連線至資料來源時出現警告。按 [$buttontext$] 可檢視這些警告。"
 
 #: source/ui/misc/dbumiscres.src#STR_NAMED_OBJECT_ALREADY_EXISTS.String.Text
 msgid  "The name '$#$' already exists.\nPlease enter another name."
-msgstr ""
+msgstr "名稱「$#$」已經存在。\n請輸入其他名稱。"
 
 #: source/ui/misc/dbumiscres.src#RID_STR_EXTENSION_NOT_PRESENT.String.Text
-msgid  "The report, "$file$", requires the extension Oracle Report Builder."
-msgstr ""
+msgid  "The report, \"$file$\", requires the extension Oracle Report Builder."
+msgstr "「$file$」報告需要擴充軟體 Oracle Report Builder。"
 
 #: source/ui/misc/WizardPages.src#STR_WIZ_COLUMN_SELECT_TITEL.String.Text
 msgid  "Apply columns"
@@ -2901,7 +2945,7 @@ msgstr "目前的資料庫不接受這個資料表名稱。"
 
 #: source/ui/misc/WizardPages.src#STR_SUGGEST_APPEND_TABLE_DATA.String.Text
 msgid  "Choose the option 'Append data' on the first page to append data to an existing table."
-msgstr ""
+msgstr "在首頁選擇 [附加資料] 選項，將資料附加到現有的資料表。"
 
 #: source/ui/misc/WizardPages.src#STR_INVALID_TABLE_NAME_LENGTH.String.Text
 msgid  "Please change the table name. It is too long."
@@ -2957,11 +3001,11 @@ msgstr "請注意，有些資料庫可能不支援此連結類型。"
 
 #: source/ui/querydesign/querydlg.src#STR_QUERY_INNER_JOIN.String.Text
 msgid  "Includes only records for which the contents of the related fields of both tables are identical."
-msgstr ""
+msgstr "僅包含兩個資料表中相關欄位相同的資料條目。"
 
 #: source/ui/querydesign/querydlg.src#STR_QUERY_LEFTRIGHT_JOIN.String.Text
 msgid  "Contains ALL records from table '%1' but only records from table '%2' where the values in the related fields are matching."
-msgstr ""
+msgstr "含有「%1」中的所有資料條目，和「%2」中兩個資料表的相關欄位相同的資料條目。"
 
 #: source/ui/querydesign/querydlg.src#STR_QUERY_FULL_JOIN.String.Text
 msgid  "Contains ALL records from '%1' and from '%2'."
@@ -2973,7 +3017,7 @@ msgstr "包含來自「%1」和「%2」的所有記錄之卡笛生乘積 (Cartes
 
 #: source/ui/querydesign/querydlg.src#STR_QUERY_NATURAL_JOIN.String.Text
 msgid  "Contains only one column for each pair of equally-named columns from '%1' and from '%2'."
-msgstr ""
+msgstr "僅包含「%1」和「%2」中每組相同名稱欄中的一欄。"
 
 #: source/ui/querydesign/query.src#STR_QUERY_UNDO_TABWINSHOW.String.Text
 msgid  "Add Table Window"
@@ -3017,7 +3061,7 @@ msgstr "因無法確定欄位名稱「$name$」而造成這個表達式無效﹗
 
 #: source/ui/querydesign/query.src#RID_STR_TOMUCHTABLES.String.Text
 msgid  "The query covers #num# tables. The selected database type, however, can only process a maximum of #maxnum# table(s) per statement."
-msgstr ""
+msgstr "此查詢包含 #num# 個資料表。不過，所選的資料庫類型，每個陳述式，最多只能使用 #maxnum# 個資料表。"
 
 #: source/ui/querydesign/query.src#STR_QUERY_UNDO_TABWINDELETE.String.Text
 msgid  "Delete Table Window"
@@ -3105,7 +3149,7 @@ msgstr "資料表太多。"
 
 #: source/ui/querydesign/query.src#STR_QRY_NATIVE.String.Text
 msgid  "The statement will not be applied when querying in the SQL dialect of the database."
-msgstr ""
+msgstr "不接受資料庫的 SQL 方言查詢陳述式。"
 
 #: source/ui/querydesign/query.src#ERR_QRY_AMB_FIELD.ErrorBox.Message
 msgid  "Field name not found or not unique"
@@ -3141,7 +3185,7 @@ msgstr "因為沒有選中任何欄位而無法建立查詢。"
 
 #: source/ui/querydesign/query.src#STR_DATASOURCE_DELETED.String.Text
 msgid  "The corresponding data source has been deleted. Therefore, data relevant to that data source cannot be saved."
-msgstr ""
+msgstr "這個資料來源已經被刪除。因此無法儲存任何資料。"
 
 #: source/ui/querydesign/query.src#STR_QRY_COLUMN_NOT_FOUND.String.Text
 msgid  "The column '$name$' is unknown."
@@ -3157,7 +3201,7 @@ msgstr "在 'LIKE' 之前必須輸入一個欄位名稱。"
 
 #: source/ui/querydesign/query.src#STR_QRY_CHECK_CASESENSITIVE.String.Text
 msgid  "The column could not be found. Please note that the database is case-sensitive."
-msgstr ""
+msgstr "無法找到欄位。請注意本資料庫區分字母的大小寫。"
 
 #: source/ui/querydesign/query.src#STR_QUERYDESIGN.String.Text
 msgid  " - %PRODUCTNAME Base: Query Design"
@@ -3169,14 +3213,14 @@ msgstr "- %PRODUCTNAME Base：檢視設計"
 
 #: source/ui/querydesign/query.src#STR_QUERY_SAVEMODIFIED.String.Text
 msgid  "$object$ has been changed.\nDo you want to save the changes?"
-msgstr ""
+msgstr "$object$ 已變更。\n是否要儲存變更？"
 
 #: source/ui/querydesign/query.src#STR_ERROR_PARSING_STATEMENT.String.Text
-msgid  "$object$ is based on an SQL command which could not be parsed.(except "SQL command", which doesn't make sense here) will be inserted."
+msgid  "$object$ is based on an SQL command which could not be parsed.(except \"SQL command\", which doesn't make sense here) will be inserted."
 msgstr ""
 
 #: source/ui/querydesign/query.src#STR_INFO_OPENING_IN_SQL_VIEW.String.Text
-msgid  "$object$ will be opened in SQL view.(except "SQL command", which doesn't make sense here) will be inserted."
+msgid  "$object$ will be opened in SQL view.(except \"SQL command\", which doesn't make sense here) will be inserted."
 msgstr ""
 
 #: source/ui/querydesign/query.src#RSC_QUERY_OBJECT_TYPE.1.String.Text
@@ -3193,15 +3237,15 @@ msgstr "SQL 陳述式"
 
 #: source/ui/querydesign/query.src#STR_STATEMENT_WITHOUT_RESULT_SET.String.Text
 msgid  "The query does not create a result set, and thus cannot be part of another query."
-msgstr ""
+msgstr "查詢不會建立結果集，因此無法成為其他查詢的一部份。"
 
 #: source/ui/querydesign/query.src#STR_NO_DATASOURCE_OR_CONNECTION.String.Text
 msgid  "Both the ActiveConnection and the DataSourceName parameter are missing or wrong - cannot initialize the query designer."
-msgstr ""
+msgstr "ActiveConnection 與 DataSourceName 參數不存在或有誤 - 無法初始化查詢設計工具。"
 
 #: source/ui/relationdesign/relation.src#STR_QUERY_REL_EDIT_RELATION.String.Text
 msgid  "This relation already exists. Do you want to edit it or create a new one?"
-msgstr ""
+msgstr "此關係已存在。是否要編輯此關係或建立新的關係？"
 
 #: source/ui/relationdesign/relation.src#STR_QUERY_REL_EDIT.String.Text
 msgid  "Edit..."
@@ -3221,19 +3265,19 @@ msgstr "這個資料庫不支援關係功能。"
 
 #: source/ui/relationdesign/relation.src#RELATION_DESIGN_SAVEMODIFIED.QueryBox.Message
 msgid  "The relation design has been changed.\nDo you want to save the changes?"
-msgstr ""
+msgstr "這個關係設計已經變更。\n要儲存變更內容？"
 
 #: source/ui/relationdesign/relation.src#STR_QUERY_REL_DELETE_WINDOW.String.Text
 msgid  "When you delete this table all corresponding relations will be deleted as well. Continue?"
-msgstr ""
+msgstr "刪除這個資料表，也會一起刪除全部相關的關聯。要繼續？"
 
 #: source/ui/relationdesign/relation.src#STR_QUERY_REL_COULD_NOT_CREATE.String.Text
 msgid  "The database could not create the relation. May be foreign keys for this kind of table aren't supported.\nPlease check your documentation of the database."
-msgstr ""
+msgstr "資料庫無法建立關聯。可能是此類型的資料表不支援外鍵。\n請查閱資料庫的說明文件。"
 
 #: source/ui/tabledesign/table.src#STR_TABLEDESIGN_DBFIELDTYPES.String.Text
 msgid  "Unknown;Text;Number;Date/Time;Date;Time;Yes/No;Currency;Memo;Counter;Image;Text (fix);Decimal;Binary (fix);Binary;BigInt;Double;Float;Real;Integer;Small Integer;Tiny Integer;SQL Null;Object;Distinct;Structure;Field;BLOB;CLOB;REF;OTHER;Bit (fix)"
-msgstr ""
+msgstr "不明;文字;數字;日期/時間;日期;時間;是/否;貨幣;備忘錄;計數器;影像;文字 (固定);十進位;二進位 (固定);二進位;大整數;雙精度;浮動;實數;整數;小整數;微整數;SQL 空值;物件;明確;結構;欄位;BLOB;CLOB;REF;OTHER;位元 (固定)"
 
 #: source/ui/tabledesign/table.src#STR_TABLEDESIGN_UNDO_PRIMKEY.String.Text
 msgid  "Insert/remove primary key"
@@ -3377,15 +3421,15 @@ msgstr "格式示範"
 
 #: source/ui/tabledesign/table.src#STR_HELP_BOOL_DEFAULT.String.Text
 msgid  "Select a value that is to appear in all new records as default.\nIf the field is not to have a default value, select the empty string."
-msgstr ""
+msgstr "請選擇一個用於每一個新增資料條目的預設值。\n若欄位不應該含有這個預設值，就選擇一個空字串。"
 
 #: source/ui/tabledesign/table.src#STR_HELP_DEFAULT_VALUE.String.Text
 msgid  "Enter a default value for this field.\n\nWhen you later enter data in the table, this string will be used in each new record for the field selected. It should, therefore, correspond to the cell format that needs to be entered below."
-msgstr ""
+msgstr "請輸入欄位輸入的預設值。\n\n輸入資料時，新資料會自動採用這個值。故請依下面儲存格格式輸入預設值。"
 
 #: source/ui/tabledesign/table.src#STR_HELP_FIELD_REQUIRED.String.Text
 msgid  "Activate this option if this field cannot contain NULL values, i.e. the user must always enter data."
-msgstr ""
+msgstr "如果要設定這個欄位內不可以輸入零值而必須輸入有效值時，您就必須採用這個選項。"
 
 #: source/ui/tabledesign/table.src#STR_HELP_TEXT_LENGTH.String.Text
 msgid  "Enter the maximum text length permitted."
@@ -3397,7 +3441,7 @@ msgstr "請設定數字類型。"
 
 #: source/ui/tabledesign/table.src#STR_HELP_LENGTH.String.Text
 msgid  "Determine the length data can have in this field.\n\nIf decimal fields, then the maximum length of the number to be entered, if binary fields, then the length of the data block.\nThe value will be corrected accordingly when it exceeds the maximum for this database."
-msgstr ""
+msgstr "請設定這個欄位類型的長度。\n\n十進位欄位指定指是輸入數字的最長數目，二進位欄位是指資料區域的長度。\n如果輸入數值超過設定範圍，程式就會自動修正。"
 
 #: source/ui/tabledesign/table.src#STR_HELP_SCALE.String.Text
 msgid  "Specify the number of decimal places permitted in this field."
@@ -3405,7 +3449,7 @@ msgstr "請設定欄位允許輸入的小數點數位。"
 
 #: source/ui/tabledesign/table.src#STR_HELP_FORMAT_CODE.String.Text
 msgid  "This is where you see how the data would be displayed in the current format (use the button on the right to modify the format)."
-msgstr ""
+msgstr "在這裏您能夠看到透過按一下旁邊的按鈕來修改目前的欄內資料格式。"
 
 #: source/ui/tabledesign/table.src#STR_HELP_FORMAT_BUTTON.String.Text
 msgid  "This is where you determine the output format of the data."
@@ -3413,19 +3457,19 @@ msgstr "您能夠在這設定資料的列印格式。"
 
 #: source/ui/tabledesign/table.src#STR_HELP_AUTOINCREMENT.String.Text
 msgid  "Choose if this field should contain AutoIncrement values.\n\nYou can not enter data in fields of this type. An intrinsic value will be assigned to each new record automatically (resulting from the increment of the previous record)."
-msgstr ""
+msgstr "請您選擇這個欄位是否應該含有自動遞增的值。\n\n您不能直接輸入資料﹐因為每個新資料組會自動得到一個自己的值 (從它之前的資料組中透過遞增得出)。"
 
 #: source/ui/tabledesign/table.src#PB_FORMAT.PushButton.Text
 msgid  "~..."
 msgstr "~..."
 
 #: source/ui/tabledesign/table.src#STR_TABLEDESIGN_DUPLICATE_NAME.String.Text
-msgid  "The table cannot be saved because column name "$column$" was assigned twice."
-msgstr ""
+msgid  "The table cannot be saved because column name \"$column$\" was assigned twice."
+msgstr "無法儲存資料表，因為「$column$」欄位有兩個。"
 
 #: source/ui/tabledesign/table.src#STR_TBL_COLUMN_IS_KEYCOLUMN.String.Text
-msgid  "The column "$column$" belongs to the primary key. If the column is deleted, the primary key will also be deleted. Do you really want to continue?"
-msgstr ""
+msgid  "The column \"$column$\" belongs to the primary key. If the column is deleted, the primary key will also be deleted. Do you really want to continue?"
+msgstr "這個欄「$column$」屬於主關鍵字。如果刪除這個欄位，也就會一起刪除主關鍵字。要刪除這個欄位？"
 
 #: source/ui/tabledesign/table.src#STR_TBL_COLUMN_IS_KEYCOLUMN_TITLE.String.Text
 msgid  "Primary Key Affected"
@@ -3439,25 +3483,29 @@ msgstr "欄位"
 msgid  "Continue anyway?"
 msgstr "繼續？"
 
+#: source/ui/tabledesign/table.src#STR_STAT_WARNING.String.Text
+msgid  "Warning!"
+msgstr "警告！"
+
 #: source/ui/tabledesign/table.src#TABLE_DESIGN_SAVEMODIFIED.QueryBox.Message
 msgid  "The table has been changed.\nDo you want to save the changes?"
-msgstr ""
+msgstr "這個資料表已經變更。\n您要儲存變更內容？"
 
 #: source/ui/tabledesign/table.src#TABLE_QUERY_CONNECTION_LOST.QueryBox.Message
 msgid  "The connection to the database was lost! The table design can only be used with limited functionality without a connection.\nReconnect?"
-msgstr ""
+msgstr "資料庫已斷線！未連線時只能使用部份資料表設計功能。\n要重新連線？"
 
 #: source/ui/tabledesign/table.src#STR_TABLEDESIGN_CONNECTION_MISSING.String.Text
 msgid  "The table could not be saved due to problems connecting to the database."
-msgstr ""
+msgstr "無法建立資料庫連線，無法儲存資料表。"
 
 #: source/ui/tabledesign/table.src#STR_TABLEDESIGN_DATASOURCE_DELETED.String.Text
 msgid  "The table filter could not be adjusted because the data source has been deleted."
-msgstr ""
+msgstr "無法調整資料表篩選，因爲資料來源已經被刪除。"
 
 #: source/ui/tabledesign/table.src#QUERY_SAVE_TABLE_EDIT_INDEXES.QueryBox.Message
 msgid  "Before you can edit the indexes of a table, you have to save it.\nDo you want to save the changes now?"
-msgstr ""
+msgstr "要先儲存資料表，才能編輯資料表索引。\n要儲存變更內容？"
 
 #: source/ui/tabledesign/table.src#STR_TABLEDESIGN_NO_PRIM_KEY_HEAD.String.Text
 msgid  "No primary key"
@@ -3465,15 +3513,15 @@ msgstr "無主關鍵字"
 
 #: source/ui/tabledesign/table.src#STR_TABLEDESIGN_NO_PRIM_KEY.String.Text
 msgid  "A unique index or primary key is required for data record identification in this database.\nYou can only enter data into this table when one of these two structural conditions has been met.\n\nShould a primary key be created now?"
-msgstr ""
+msgstr "這個資料庫需要單一索引或主鍵，來識別資料。\n只有滿足上述條件時，您才能輸入資料。\n\n現在要建立一個主鍵嗎？"
 
 #: source/ui/tabledesign/table.src#STR_TABLEDESIGN_TITLE.String.Text
 msgid  " - %PRODUCTNAME Base: Table Design"
 msgstr "- %PRODUCTNAME Base：資料表設計"
 
 #: source/ui/tabledesign/table.src#STR_TABLEDESIGN_ALTER_ERROR.String.Text
-msgid  "The column "$column$" could not be changed. Should the column instead be deleted and the new format appended?"
-msgstr ""
+msgid  "The column \"$column$\" could not be changed. Should the column instead be deleted and the new format appended?"
+msgstr "無法變更欄「$column$」。要刪除它再重新設定格式？"
 
 #: source/ui/tabledesign/table.src#STR_TABLEDESIGN_SAVE_ERROR.String.Text
 msgid  "Error while saving the table design"
@@ -3485,7 +3533,7 @@ msgstr "無法刪除 $column$ 欄。"
 
 #: source/ui/tabledesign/table.src#TABLE_DESIGN_ALL_ROWS_DELETED.QueryBox.Message
 msgid  "You are trying to delete all the columns in the table. A table cannot exist without columns. Should the table be deleted from the database? If not, the table will remain unchanged."
-msgstr ""
+msgstr "您正要刪除資料表的所有欄位。資料表不能沒有欄位。您要刪除這個資料表嗎？否則，資料表不會異動。"
 
 #: source/ui/tabledesign/table.src#STR_AUTOINCREMENT_VALUE.String.Text
 msgid  "A~uto-increment statement"
@@ -3493,11 +3541,11 @@ msgstr "自動遞增陳述式(~U)"
 
 #: source/ui/tabledesign/table.src#STR_HELP_AUTOINCREMENT_VALUE.String.Text
 msgid  "Enter an SQL statement for the auto-increment field.\n\nThis statement will be directly transferred to the database when the table is created."
-msgstr ""
+msgstr "在此輸入一個用於自動遞增欄位的 SQL 陳述式。\n\n在產生資料表的同時，這個陳述式會被直接傳給資料庫。"
 
 #: source/ui/tabledesign/table.src#STR_NO_TYPE_INFO_AVAILABLE.String.Text
 msgid  "No type information could be retrieved from the database.\nThe table design mode is not available for this data source."
-msgstr ""
+msgstr "無法從資料庫取得資料類型。\n這個資料來源無法使用資料表設計模式。"
 
 #: source/ui/tabledesign/table.src#STR_CHANGE_COLUMN_NAME.String.Text
 msgid  "change field name"
@@ -3514,10 +3562,6 @@ msgstr "變更欄位說明"
 #: source/ui/tabledesign/table.src#STR_CHANGE_COLUMN_ATTRIBUTE.String.Text
 msgid  "change field attribute"
 msgstr "變更欄位屬性"
-
-#: source/ui/tabledesign/table.src#STR_STAT_WARNING.String.Text
-msgid  "Warning!"
-msgstr "警告！"
 
 #: source/ui/uno/dbinteraction.src#STR_REMEMBERPASSWORD_SESSION.String.Text
 msgid  "~Remember password until end of session"
@@ -3537,7 +3581,7 @@ msgstr "目標資料庫不支援主關鍵字。"
 
 #: source/ui/uno/copytablewizard.src#STR_CTW_INVALID_DATA_ACCESS_DESCRIPTOR.String.Text
 msgid  "no data access descriptor found, or no data access descriptor able to provide all necessary information"
-msgstr ""
+msgstr "找不到資料存取描述元，或沒有資料存取描述元可提供所有必要的資訊"
 
 #: source/ui/uno/copytablewizard.src#STR_CTW_ONLY_TABLES_AND_QUERIES_SUPPORT.String.Text
 msgid  "Only tables and queries are supported at the moment."
@@ -3570,47 +3614,3 @@ msgstr "若要複製查詢，您的連線必須能夠提供查詢。"
 #: source/ui/uno/copytablewizard.src#STR_CTW_ERROR_INVALID_INTERACTIONHANDLER.String.Text
 msgid  "The given interaction handler is invalid."
 msgstr "指定的互動式處理程式無效。"
-
-#: source/ui/inc/toolbox_tmpl.hrc#ID_BROWSER_REFRESH.#define.Text
-msgid  "Refresh"
-msgstr "更新"
-
-#: source/ui/inc/toolbox_tmpl.hrc#ID_NEW_VIEW_DESIGN.#define.Text
-msgid  "New ~View Design"
-msgstr "新增檢視設計(~V)"
-
-#: source/ui/inc/toolbox_tmpl.hrc#ID_NEW_TABLE_DESIGN.#define.Text
-msgid  "New ~Table Design"
-msgstr "新增資料表設計(~T)"
-
-#: source/ui/inc/toolbox_tmpl.hrc#ID_NEW_QUERY_WIZARD.#define.Text
-msgid  "Query AutoPilot..."
-msgstr "查詢自動檔案助理..."
-
-#: source/ui/inc/toolbox_tmpl.hrc#ID_NEW_QUERY_DESIGN.#define.Text
-msgid  "New ~Query (Design View)"
-msgstr "新增查詢 (設計檢視)(~Q)"
-
-#: source/ui/inc/toolbox_tmpl.hrc#ID_EDIT_QUERY_DESIGN.#define.Text
-msgid  "~Edit Query"
-msgstr "編輯查詢(~E)"
-
-#: source/ui/inc/toolbox_tmpl.hrc#ID_NEW_QUERY_SQL.#define.Text
-msgid  "New Query (~SQL View)"
-msgstr "新增查詢 (~SQL 檢視)"
-
-#: source/ui/inc/toolbox_tmpl.hrc#ID_QUERY_EDIT_JOINCONNECTION.#define.Text
-msgid  "Edit..."
-msgstr "編輯..."
-
-#: source/ui/inc/toolbox_tmpl.hrc#ID_BROWSER_COLWIDTH.#define.Text
-msgid  "Column ~Width..."
-msgstr "欄寬(~W)..."
-
-#: source/ui/inc/toolbox_tmpl.hrc#ID_DOCUMENT_CREATE_REPWIZ.#define.Text
-msgid  "Report Wizard..."
-msgstr "報表精靈..."
-
-#: source/ui/inc/toolbox_tmpl.hrc#SID_DB_FORM_NEW_PILOT.#define.Text
-msgid  "Form AutoPilot..."
-msgstr "表單自動檔案助理..."

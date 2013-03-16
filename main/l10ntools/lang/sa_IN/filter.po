@@ -539,9 +539,41 @@ msgstr "GIF -सुचित्राणिविपर्यासरचना"
 msgid  "PNG - Portable Network Graphic"
 msgstr "PNG - सुवहनीयजालकसुचित्रम् "
 
+#: source/config/fragments/types/writerglobal8.xcu#writerglobal8.UIName
+msgid  "Writer 8 Master Document"
+msgstr "लेखकः 8 मुख्यलेख्यपत्रम् "
+
+#: source/config/fragments/types/impress8.xcu#impress8.UIName
+msgid  "Impress 8"
+msgstr "डाटाबेस् लेख्यपत्रम् उद्घाटय"
+
+#: source/config/fragments/types/calc8_template.xcu#calc8_template.UIName
+msgid  "Calc 8 Template"
+msgstr "Calc 8 रचना"
+
 #: source/config/fragments/types/writer_MS_Word_2003_XML.xcu#writer_MS_Word_2003_XML.UIName
 msgid  "Microsoft Word 2003 XML"
 msgstr "मैक्रोसोफ्ट् वर्ड् 2003 XML"
+
+#: source/config/fragments/types/writer8.xcu#writer8.UIName
+msgid  "Writer 8"
+msgstr "लेखकः 8"
+
+#: source/config/fragments/types/impress8_template.xcu#impress8_template.UIName
+msgid  "Impress 8 Template"
+msgstr "इम्प्रेस् 8 रचना"
+
+#: source/config/fragments/types/draw8_template.xcu#draw8_template.UIName
+msgid  "Draw 8 Template"
+msgstr "रेखाचित्रम् 8 रचना"
+
+#: source/config/fragments/types/writerweb8_writer_template.xcu#writerweb8_writer_template.UIName
+msgid  "Writer/Web 8 Template"
+msgstr "लेखकः/वेब् 8 रचना"
+
+#: source/config/fragments/types/draw8.xcu#draw8.UIName
+msgid  "Draw 8"
+msgstr "रेखाचित्रम् 8"
 
 #: source/config/fragments/types/calc_NSO_UOF2.xcu#calc_NSO_UOF2.UIName
 msgid  "Uniform Office Format 2 spreadsheet"
@@ -555,6 +587,18 @@ msgstr "मैक्रोसोफ्ट् 2003 XML"
 msgid  "OpenDocument Database"
 msgstr "डाटाबेस् लेख्यपत्रम् उद्घाटय"
 
+#: source/config/fragments/types/calc8.xcu#calc8.UIName
+msgid  "Calc 8"
+msgstr "Calc 8"
+
+#: source/config/fragments/types/math8.xcu#math8.UIName
+msgid  "Math 8"
+msgstr "गणितम् 8"
+
+#: source/config/fragments/types/writer8_template.xcu#writer8_template.UIName
+msgid  "Writer 8 Template"
+msgstr "लेखकः 8 रचना"
+
 #: source/config/fragments/types/writer_NSO_UOF2.xcu#writer_NSO_UOF2.UIName
 msgid  "Uniform Office Format 2 text"
 msgstr ""
@@ -563,13 +607,17 @@ msgstr ""
 msgid  "Uniform Office Format 2 presentation"
 msgstr ""
 
+#: source/config/fragments/types/chart8.xcu#chart8.UIName
+msgid  "Chart 8"
+msgstr "तालिका 8"
+
 #: source/flash/impswfdialog.src#DLG_OPTIONS.ModalDialog.Text
 msgid  "Macromedia Flash (SWF) Options"
 msgstr "मैक्रोमीडिया फ्लैश (SWF) विकल्पानि"
 
 #: source/flash/impswfdialog.src#DLG_OPTIONS.FI_DESCR.FixedText.Text
 msgid  "1: min. quality\n100: max. quality"
-msgstr ""
+msgstr "1: न्यूनतम-गुणवत्ता\n100: अधिकतम-गुणवत्ता"
 
 #: source/graphicfilter/eps/epsstr.src#KEY_VERSION_CHECK.String.Text
 msgid  "Warning: Not all of the imported EPS graphics could be saved at level1\nas some are at a higher level!"
@@ -993,7 +1041,7 @@ msgstr "PDF/Aपारदर्शिता "
 
 #: source/pdf/impdialog.src#RID_PDF_ERROR_DLG.STR_WARN_TRANSP_PDFA.String.Text
 msgid  "PDF/A forbids transparency. A transparent object was painted opaque instead."
-msgstr ""
+msgstr "PDF/Aपारदर्शितां वारयति।अपारदर्शिता स्थाने पारदर्शकवस्तु वर्मलेपनं कृतम्।"
 
 #: source/pdf/impdialog.src#RID_PDF_ERROR_DLG.STR_WARN_TRANSP_VERSION_SHORT.String.Text
 msgid  "PDF version conflict"
@@ -1001,7 +1049,7 @@ msgstr "PDF विरोधसंस्करणम् "
 
 #: source/pdf/impdialog.src#RID_PDF_ERROR_DLG.STR_WARN_TRANSP_VERSION.String.Text
 msgid  "Transparency is not supported in PDF versions earlier than PDF 1.4. A transparent object was painted opaque instead"
-msgstr ""
+msgstr "PDF 1.4.PDF एतसमात् पूर्वं संस्करणेषु पारदर्शिता न समर्थिता।अपारदर्शिता स्थाने पारदर्शकवस्तु वर्मलेपनं कृतम्।"
 
 #: source/pdf/impdialog.src#RID_PDF_ERROR_DLG.STR_WARN_FORMACTION_PDFA_SHORT.String.Text
 msgid  "PDF/A form action"
@@ -1009,7 +1057,7 @@ msgstr "PDF/Aफोर्म् क्रिया "
 
 #: source/pdf/impdialog.src#RID_PDF_ERROR_DLG.STR_WARN_FORMACTION_PDFA.String.Text
 msgid  "A form control contained an action not supported by the PDF/A standard. The action was skipped"
-msgstr ""
+msgstr "फोर्म्नियन्त्रणं PDF/A प्रमाणेन असमर्थितक्रियान्तर्गतम् अस्ति।क्रिया उपेक्षिता  "
 
 #: source/pdf/impdialog.src#RID_PDF_ERROR_DLG.STR_WARN_TRANSP_CONVERTED.String.Text
 msgid  "Some objects were converted to an image in order to remove transparencies, because the target PDF format does not support transparencies. Possibly better results can be achieved if you remove the transparent objects before exporting."
@@ -1233,15 +1281,15 @@ msgstr "निष्यन्दकं निर्यातय"
 
 #: source/xsltdialog/xmlfilterdialogstrings.src#STR_WARN_DELETE.String.Text
 msgid  "Do you really want to delete the XML Filter '%s'? This action cannot be undone."
-msgstr ""
+msgstr "किं भवान् सत्यमेव XML निष्यन्दकं '%s' लोपियितुम् इच्छति ? एतत् निष्कर्तुं न शक्नोति ।"
 
 #: source/xsltdialog/xmlfilterdialogstrings.src#STR_ERROR_FILTER_NAME_EXISTS.String.Text
 msgid  "An XML filter with the name '%s' already exists. Please enter a different name."
-msgstr ""
+msgstr "एकः XML निष्यन्दकः '%s' नाम्ना पूर्वमेव उपस्थितः. कृपया अन्यं नाम देहि ।"
 
 #: source/xsltdialog/xmlfilterdialogstrings.src#STR_ERROR_TYPE_NAME_EXISTS.String.Text
 msgid  "The name for  the user interface '%s1' is already used by the XML filter '%s2'. Please enter a different name."
-msgstr ""
+msgstr "प्रयोक्ता अंतरफलक '%s1' नाम XML निष्यन्दक '%s2' द्वारा पूर्वमेव प्रयुक्तमस्ति. एक अलग नाम डालिये."
 
 #: source/xsltdialog/xmlfilterdialogstrings.src#STR_ERROR_DTD_NOT_FOUND.String.Text
 msgid  "The DTD could not be found. Please enter a valid path."
@@ -1257,7 +1305,7 @@ msgstr "आयाताय XSLT न प्राप्तः । कृपया
 
 #: source/xsltdialog/xmlfilterdialogstrings.src#STR_ERROR_IMPORT_TEMPLATE_NOT_FOUND.String.Text
 msgid  "The given import template cannot be found. Please enter a valid path."
-msgstr ""
+msgstr "निर्दिष्टं आयात-प्रतिरूपं न प्राप्तम् । कृपया अन्यं वैधं पन्थानं प्रवेशय ।"
 
 #: source/xsltdialog/xmlfilterdialogstrings.src#STR_NOT_SPECIFIED.String.Text
 msgid  "Not specified"
@@ -1297,7 +1345,7 @@ msgstr "%s XML निष्यन्दकाः सफलतापूर्व�
 
 #: source/xsltdialog/xmlfilterdialogstrings.src#STR_NO_FILTERS_FOUND.String.Text
 msgid  "No XML filter could be installed because the package '%s' does not contain any XML filters."
-msgstr ""
+msgstr "कोऽपि XML निष्यन्दकः संस्थापितुं नाशक्यत यतः '%s' संकुले कोऽपि XML निष्यन्दकः नास्ति ।"
 
 #: source/xsltdialog/xmlfiltertabpagebasic.src#RID_XML_FILTER_TABPAGE_BASIC.TabPage.Text
 msgid  "General"
@@ -1313,7 +1361,7 @@ msgstr "प्रयोगः"
 
 #: source/xsltdialog/xmlfiltertabpagebasic.src#RID_XML_FILTER_TABPAGE_BASIC.FT_XML_INTERFACE_NAME.FixedText.Text
 msgid  "Name of\nfile type"
-msgstr ""
+msgstr "नाम\nसञ्चिकाप्रकारः"
 
 #: source/xsltdialog/xmlfiltertabpagebasic.src#RID_XML_FILTER_TABPAGE_BASIC.FT_XML_EXTENSION.FixedText.Text
 msgid  "File extension"
@@ -1330,51 +1378,3 @@ msgstr "XML निष्यन्दक-निर्गमः"
 #: source/xsltdialog/xmlfileview.src#DLG_XML_SOURCE_FILE_DIALOG.PB_VALIDATE.PushButton.Text
 msgid  "~Validate"
 msgstr "वैधीकुरु"
-
-#: source/config/fragments/types/writerglobal8.xcu#writerglobal8.UIName
-msgid  "Writer 8 Master Document"
-msgstr "लेखकः 8 मुख्यलेख्यपत्रम् "
-
-#: source/config/fragments/types/impress8.xcu#impress8.UIName
-msgid  "Impress 8"
-msgstr "डाटाबेस् लेख्यपत्रम् उद्घाटय"
-
-#: source/config/fragments/types/calc8_template.xcu#calc8_template.UIName
-msgid  "Calc 8 Template"
-msgstr "Calc 8 रचना"
-
-#: source/config/fragments/types/writer8.xcu#writer8.UIName
-msgid  "Writer 8"
-msgstr "लेखकः 8"
-
-#: source/config/fragments/types/impress8_template.xcu#impress8_template.UIName
-msgid  "Impress 8 Template"
-msgstr "इम्प्रेस् 8 रचना"
-
-#: source/config/fragments/types/draw8_template.xcu#draw8_template.UIName
-msgid  "Draw 8 Template"
-msgstr "रेखाचित्रम् 8 रचना"
-
-#: source/config/fragments/types/writerweb8_writer_template.xcu#writerweb8_writer_template.UIName
-msgid  "Writer/Web 8 Template"
-msgstr "लेखकः/वेब् 8 रचना"
-
-#: source/config/fragments/types/draw8.xcu#draw8.UIName
-msgid  "Draw 8"
-msgstr "रेखाचित्रम् 8"
-
-#: source/config/fragments/types/calc8.xcu#calc8.UIName
-msgid  "Calc 8"
-msgstr "Calc 8"
-
-#: source/config/fragments/types/math8.xcu#math8.UIName
-msgid  "Math 8"
-msgstr "गणितम् 8"
-
-#: source/config/fragments/types/writer8_template.xcu#writer8_template.UIName
-msgid  "Writer 8 Template"
-msgstr "लेखकः 8 रचना"
-
-#: source/config/fragments/types/chart8.xcu#chart8.UIName
-msgid  "Chart 8"
-msgstr "तालिका 8"

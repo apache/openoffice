@@ -37,11 +37,11 @@ msgstr "ActiveX 控制"
 
 #: source/activex/module_activex.ulf#STR_DESC_MODULE_OPTIONAL_ACTIVEXCONTROL
 msgid  "Component to enable Microsoft Internet Explorer to display %PRODUCTNAME documents."
-msgstr ""
+msgstr "启用 Microsoft Internet Explorer 以显示 %PRODUCTNAME 文档的组件。"
 
 #: source/base/folderitem_base.ulf#STR_FI_TOOLTIP_BASE
 msgid  "Manage databases, create queries and reports to track and manage your information by using Base."
-msgstr ""
+msgstr "使用 Base 管理数据库并创建查询和报表以对信息进行跟踪和管理。"
 
 #: source/base/registryitem_base.ulf#STR_REG_VAL_OO_DATABASE
 msgid  "OpenDocument Database"
@@ -121,7 +121,11 @@ msgstr "电子表格文档"
 
 #: source/calc/folderitem_calc.ulf#STR_FI_TOOLTIP_CALC
 msgid  "Perform calculation, analyze information and manage lists in spreadsheets by using Calc."
-msgstr ""
+msgstr "使用 Calc 进行计算、分析信息以及管理电子表格中的列表。"
+
+#: source/calc/registryitem_calc.ulf#STR_REG_VAL_NEW
+msgid  "&New"
+msgstr "新建(&N)"
 
 #: source/calc/registryitem_calc.ulf#STR_REG_VAL_SO60_SPREADSHEET
 msgid  "%SXWFORMATNAME %SXWFORMATVERSION Spreadsheet"
@@ -155,17 +159,13 @@ msgstr "Microsoft Excel 97-2003 模板"
 msgid  "Microsoft Excel Template"
 msgstr "Microsoft Excel 模板"
 
-#: source/calc/registryitem_calc.ulf#STR_REG_VAL_NEW
-msgid  "&New"
-msgstr "新建(&N)"
-
 #: source/calc/module_calc.ulf#STR_NAME_MODULE_PRG_CALC
 msgid  "%PRODUCTNAME Calc"
 msgstr "%PRODUCTNAME Calc"
 
 #: source/calc/module_calc.ulf#STR_DESC_MODULE_PRG_CALC
 msgid  "Perform calculation, analyze information and manage lists in spreadsheets by using %PRODUCTNAME Calc."
-msgstr ""
+msgstr "使用 %PRODUCTNAME Calc 进行计算、分析信息以及管理电子表格中的列表。"
 
 #: source/calc/module_calc.ulf#STR_NAME_MODULE_PRG_CALC_BIN
 msgid  "Program Module"
@@ -189,7 +189,11 @@ msgstr "Add-In"
 
 #: source/calc/module_calc.ulf#STR_DESC_MODULE_OPTIONAL_ADDINS
 msgid  "Add-ins are additional programs that make new functions available in %PRODUCTNAME Calc."
-msgstr ""
+msgstr "加载宏是可以在 %PRODUCTNAME Calc 中添加新功能的附加程序。"
+
+#: source/draw/registryitem_draw.ulf#STR_REG_VAL_NEW
+msgid  "&New"
+msgstr "新建(&N)"
 
 #: source/draw/registryitem_draw.ulf#STR_REG_VAL_SO60_DRAWING
 msgid  "%SXWFORMATNAME %SXWFORMATVERSION Drawing"
@@ -207,10 +211,6 @@ msgstr "Open Office 绘图"
 msgid  "OpenDocument Drawing Template"
 msgstr "Open Office 绘图模板"
 
-#: source/draw/registryitem_draw.ulf#STR_REG_VAL_NEW
-msgid  "&New"
-msgstr "新建(&N)"
-
 #: source/draw/folderitem_draw.ulf#STR_FI_NAME_ZEICHNUNG
 msgid  "Drawing"
 msgstr "绘图"
@@ -225,7 +225,7 @@ msgstr "%PRODUCTNAME Draw"
 
 #: source/draw/module_draw.ulf#STR_DESC_MODULE_PRG_DRAW
 msgid  "Create and edit drawings, flow charts, and logos by using %PRODUCTNAME Draw."
-msgstr ""
+msgstr "使用 %PRODUCTNAME Draw 创建并编辑图形、流程图和徽标。"
 
 #: source/draw/module_draw.ulf#STR_NAME_MODULE_PRG_DRAW_BIN
 msgid  "Program Module"
@@ -249,7 +249,7 @@ msgstr "GNOME 整合"
 
 #: source/gnome/module_gnome.ulf#STR_DESC_MODULE_OPTIONAL_GNOME
 msgid  "System integration of %PRODUCTNAME %PRODUCTVERSION into Gnome Desktop Environment."
-msgstr ""
+msgstr "将 %PRODUCTNAME %PRODUCTVERSION 系统集成到 Gnome 桌面环境。"
 
 #: source/graphicfilter/module_graphicfilter.ulf#STR_NAME_MODULE_OPTIONAL_GRFFLT
 msgid  "Graphics Filters"
@@ -377,7 +377,11 @@ msgstr "演示文稿"
 
 #: source/impress/folderitem_impress.ulf#STR_FI_TOOLTIP_IMPRESS
 msgid  "Create and edit presentations for slideshows, meeting and Web pages by using Impress."
-msgstr ""
+msgstr "使用 Impress 创建并编辑幻灯片、会议和网页中使用的演示文稿。"
+
+#: source/impress/registryitem_impress.ulf#STR_REG_VAL_NEW
+msgid  "&New"
+msgstr "新建(&N)"
 
 #: source/impress/registryitem_impress.ulf#STR_REG_VAL_SO60_SHOW
 msgid  "Show"
@@ -419,17 +423,13 @@ msgstr "Microsoft PowerPoint 97-2003 模板"
 msgid  "Microsoft PowerPoint Template"
 msgstr "Microsoft PowerPoint 模板"
 
-#: source/impress/registryitem_impress.ulf#STR_REG_VAL_NEW
-msgid  "&New"
-msgstr "新建(&N)"
-
 #: source/impress/module_impress.ulf#STR_NAME_MODULE_PRG_IMPRESS
 msgid  "%PRODUCTNAME Impress"
 msgstr "%PRODUCTNAME Impress"
 
 #: source/impress/module_impress.ulf#STR_DESC_MODULE_PRG_IMPRESS
 msgid  "Create and edit presentations for slideshows, meeting and Web pages by using %PRODUCTNAME Impress."
-msgstr ""
+msgstr "使用 %PRODUCTNAME Impress 创建并编辑幻灯片、会议和网页中使用的演示文稿。"
 
 #: source/impress/module_impress.ulf#STR_NAME_MODULE_PRG_IMPRESS_BIN
 msgid  "Program Module"
@@ -461,7 +461,7 @@ msgstr "适用于便携式电脑的转换器"
 
 #: source/javafilter/module_javafilter.ulf#STR_DESC_MODULE_OPTIONAL_JAVAFILTER
 msgid  "Text and spreadsheet filters to support import/export for Palm handheld or Pocket PC (Java required)."
-msgstr ""
+msgstr "用于支持 Palm 掌上电脑或 Pocket PC 导入/导出的文本和电子表格筛选器（需要 Java)。"
 
 #: source/javafilter/module_javafilter.ulf#STR_NAME_MODULE_OPTIONAL_JAVAFILTER_PALM
 msgid  "Palm"
@@ -565,7 +565,7 @@ msgstr "%PRODUCTNAME Math"
 
 #: source/math/module_math.ulf#STR_DESC_MODULE_PRG_MATH
 msgid  "Create and edit scientific formulas and equations by using %PRODUCTNAME Math."
-msgstr ""
+msgstr "使用 %PRODUCTNAME Math 创建和编辑科学公式与方程式。"
 
 #: source/math/module_math.ulf#STR_NAME_MODULE_PRG_MATH_BIN
 msgid  "Program Module"
@@ -587,6 +587,10 @@ msgstr "%PRODUCTNAME 帮助中有关 %PRODUCTNAME Math 的说明。"
 msgid  "Create and edit scientific formulas and equations by using Math."
 msgstr "使用 Math 创建并编辑科学公式和方程式。"
 
+#: source/math/registryitem_math.ulf#STR_REG_VAL_NEW
+msgid  "&New"
+msgstr "新建(&N)"
+
 #: source/math/registryitem_math.ulf#STR_REG_VAL_SO60_FORMULA
 msgid  "%SXWFORMATNAME %SXWFORMATVERSION Formula"
 msgstr "%SXWFORMATNAME %SXWFORMATVERSION 公式"
@@ -595,17 +599,17 @@ msgstr "%SXWFORMATNAME %SXWFORMATVERSION 公式"
 msgid  "OpenDocument Formula"
 msgstr "OpenDocument 公式"
 
-#: source/math/registryitem_math.ulf#STR_REG_VAL_NEW
-msgid  "&New"
-msgstr "新建(&N)"
-
 #: source/onlineupdate/module_onlineupdate.ulf#STR_NAME_MODULE_OPT_ONLINEUPDATE
 msgid  "Online Update"
 msgstr "联机更新"
 
 #: source/onlineupdate/module_onlineupdate.ulf#STR_DESC_MODULE_OPT_ONLINEUPDATE
 msgid  "Get automatically notified when a new update of %PRODUCTNAME becomes available."
-msgstr ""
+msgstr "当有新的 %PRODUCTNAME 更新时自动获得通知。"
+
+#: source/ooo/registryitem_ooo.ulf#STR_REG_VAL_NEW
+msgid  "&New"
+msgstr "新建(&N)"
 
 #: source/ooo/registryitem_ooo.ulf#STR_REG_VAL_INSTALL
 msgid  "&Install"
@@ -615,17 +619,13 @@ msgstr "安装(&I)"
 msgid  "OpenOffice.org 1.1 Configuration File"
 msgstr ""
 
-#: source/ooo/registryitem_ooo.ulf#STR_REG_VAL_APPCAPABILITY_DESCRIPTION_OOO
-msgid  "office productivity suite based on Apache OpenOffice project"
-msgstr ""
-
-#: source/ooo/registryitem_ooo.ulf#STR_REG_VAL_NEW
-msgid  "&New"
-msgstr "新建(&N)"
-
 #: source/ooo/registryitem_ooo.ulf#STR_REG_VAL_SO50_TEMPLATE_OOO
 msgid  "StarOffice 5.0 Template"
 msgstr "StarOffice 5.0 模板"
+
+#: source/ooo/registryitem_ooo.ulf#STR_REG_VAL_APPCAPABILITY_DESCRIPTION_OOO
+msgid  "office productivity suite based on Apache OpenOffice project"
+msgstr ""
 
 #: source/ooo/module_systemint.ulf#STR_NAME_MODULE_OPTIONAL_SYSTEMINTEGRATION
 msgid  "Desktop integration"
@@ -657,7 +657,7 @@ msgstr "可选的程序组件"
 
 #: source/ooo/module_ooo.ulf#STR_DESC_MODULE_OPTIONAL
 msgid  "Common components and additional programs shared by all %PRODUCTNAME programs."
-msgstr ""
+msgstr "所有 %PRODUCTNAME 程序共同使用的程序组件和附加程序。"
 
 #: source/ooo/module_ooo.ulf#STR_NAME_MODULE_DICTIONARIES
 msgid  "Dictionaries"
@@ -725,7 +725,7 @@ msgstr "打开文档"
 
 #: source/ooo/folderitem_ooo.ulf#STR_FI_TOOLTIP_SOFFICE
 msgid  "The office productivity suite compatible to the open and standardized ODF document format. Supported by The Apache Software Foundation."
-msgstr ""
+msgstr "The office productivity suite compatible to the open and standardized ODF document format. Supported by The Apache Software Foundation."
 
 #: source/ooo/module_langpack.ulf#STR_NAME_MODULE_ROOT_LANGPACK
 msgid  "Additional language packs"
@@ -1557,7 +1557,7 @@ msgstr "英语（英国）"
 
 #: source/ooo/module_langpack.ulf#STR_DESC_MODULE_LANGPACK_EN_GB
 msgid  "Installs English (United Kingdom) support in %PRODUCTNAME %PRODUCTVERSION"
-msgstr ""
+msgstr "在 %PRODUCTNAME %PRODUCTVERSION 中安装英语（英国）支持"
 
 #: source/ooo/module_langpack.ulf#STR_NAME_MODULE_LANGPACK_UR_IN
 msgid  "Urdu"
@@ -1669,7 +1669,7 @@ msgstr "Python-UNO Bridge"
 
 #: source/python/module_python.ulf#STR_DESC_MODULE_OPTIONAL_PYTHON
 msgid  "Adds the ability to automate %PRODUCTNAME with the python scripting language. See http://udk.openoffice.org/python/python-bridge.html for a complete documentation."
-msgstr ""
+msgstr "允许使用脚本语言对 %PRODUCTNAME 自动化处理。如需要参考完整的使用说明。请访问：http://udk.openoffice.org/python/python-bridge.html "
 
 #: source/quickstart/module_quickstart.ulf#STR_NAME_MODULE_OPTIONAL_QUICKSTART
 msgid  "Quickstarter"
@@ -1677,7 +1677,7 @@ msgstr "快速启动"
 
 #: source/quickstart/module_quickstart.ulf#STR_DESC_MODULE_OPTIONAL_QUICKSTART
 msgid  "Loads basic components on system start to accelerate start up time of %PRODUCTNAME %PRODUCTVERSION."
-msgstr ""
+msgstr "在系统启动时加载基本组件以加速 %PRODUCTNAME %PRODUCTVERSION 的启动。"
 
 #: source/sdkoo/module_sdkoo.ulf#STR_NAME_MODULE_OPTIONAL_SDKOO
 msgid  "Software Development Kit (SDK)"
@@ -1685,7 +1685,7 @@ msgstr "软件开发工具包 (Software Development Kit, SDK)"
 
 #: source/sdkoo/module_sdkoo.ulf#STR_DESC_MODULE_OPTIONAL_SDKOO
 msgid  "The SDK provides all necessary tools, examples and documentation to program with and for the office."
-msgstr ""
+msgstr "该 SDK 提供所有必需的工具、示例以及文档，以用于辅助办公软件的开发和应用。"
 
 #: source/winexplorerext/module_winexplorerext.ulf#STR_NAME_MODULE_OPTIONAL_WINDOWS_EXPLORER_EXTENSIONS
 msgid  "Windows Explorer Extension"
@@ -1693,7 +1693,7 @@ msgstr "Windows 资源管理器扩展"
 
 #: source/winexplorerext/module_winexplorerext.ulf#STR_DESC_MODULE_OPTIONAL_WINDOWS_EXPLORER_EXTENSIONS
 msgid  "Enables the Microsoft Windows Explorer to show information about %PRODUCTNAME documents, such as thumbnail previews."
-msgstr ""
+msgstr "启用 Microsoft Windows 资源管理器，以显示有关 %PRODUCTNAME 文档的信息，例如缩略图预览。"
 
 #: source/writer/folderitem_writer.ulf#STR_FI_NAME_HTMLDOKUMENT
 msgid  "HTML Document"
@@ -1705,7 +1705,11 @@ msgstr "文本文档"
 
 #: source/writer/folderitem_writer.ulf#STR_FI_TOOLTIP_WRITER
 msgid  "Create and edit text and graphics in letters, reports, documents and Web pages by using Writer."
-msgstr ""
+msgstr "使用 Writer 创建并编辑信函、报表、文档和网页中的文本和图形。"
+
+#: source/writer/registryitem_writer.ulf#STR_REG_VAL_NEW
+msgid  "&New"
+msgstr "新建(&N)"
 
 #: source/writer/registryitem_writer.ulf#STR_REG_VAL_SO60_TEXT
 msgid  "%SXWFORMATNAME %SXWFORMATVERSION Text Document"
@@ -1755,17 +1759,13 @@ msgstr "Microsoft Word 模板"
 msgid  "Rich Text Document"
 msgstr "RTF 文本文档"
 
-#: source/writer/registryitem_writer.ulf#STR_REG_VAL_NEW
-msgid  "&New"
-msgstr "新建(&N)"
-
 #: source/writer/module_writer.ulf#STR_NAME_MODULE_PRG_WRT
 msgid  "%PRODUCTNAME Writer"
 msgstr "%PRODUCTNAME Writer"
 
 #: source/writer/module_writer.ulf#STR_DESC_MODULE_PRG_WRT
 msgid  "Create and edit text and graphics in letters, reports, documents and Web pages by using %PRODUCTNAME Writer."
-msgstr ""
+msgstr "使用 %PRODUCTNAME Writer 创建并编辑信函、报表、文档和网页中的文本与图形。"
 
 #: source/writer/module_writer.ulf#STR_NAME_MODULE_PRG_WRT_BIN
 msgid  "Program Module"

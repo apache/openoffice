@@ -125,7 +125,7 @@ msgstr "Lees die volgende lisensieooreenkoms asseblief versigtig deur."
 
 #: src/Localization/setupstrings.ulf#STRING_ACCEPTLICENSE3
 msgid  "If you have read and accept all the terms of the entire Software License Agreement, click 'Accept License' to continue with the installation."
-msgstr ""
+msgstr "As u al die bepalings van die hele sagtewarelisensieooreenkoms gelees het en daartoe instem, kliek 'Aanvaar lisensie' om met die installasie voort te gaan."
 
 #: src/Localization/setupstrings.ulf#STRING_CHOOSEDIRECTORY1
 msgid  "Select Installation Directory"
@@ -153,11 +153,11 @@ msgstr "Skep nuwe gids"
 
 #: src/Localization/setupstrings.ulf#STRING_CHOOSEDIRECTORY5_QUESTION_MESSAGE
 msgid  "The directory '${DIR}' does not exist.\nDo you want to create it now?"
-msgstr ""
+msgstr "Die gids '${DIR}' bestaan nie.\nWil u dit nou skep?"
 
 #: src/Localization/setupstrings.ulf#STRING_CHOOSEDIRECTORY5_QUESTION_MESSAGE2
 msgid  "The directory '${DIR}' does not exist.\nDo you want to create it now or choose another directory?"
-msgstr ""
+msgstr "Die gids '${DIR}' bestaan nie.\nWil u dit nou skep of 'n ander gids kies?"
 
 #: src/Localization/setupstrings.ulf#STRING_CHOOSEDIRECTORY6
 msgid  "Select root directory"
@@ -185,7 +185,7 @@ msgstr "Kies bykomende komponente"
 
 #: src/Localization/setupstrings.ulf#STRING_CHOOSECOMPONENTS2
 msgid  "Marked components will be installed. Please mark them accordingly"
-msgstr ""
+msgstr "Gemerkte komponente sal geïnstalleer word. Merk hulle asseblief daarvolgens"
 
 #: src/Localization/setupstrings.ulf#STRING_CHOOSECOMPONENTS3
 msgid  "Feature Description"
@@ -209,11 +209,11 @@ msgstr "Kies die soort installasie"
 
 #: src/Localization/setupstrings.ulf#STRING_CHOOSEINSTALLATIONTYPE4
 msgid  "The main components will be installed. Recommended for most users."
-msgstr ""
+msgstr "Die hoofkomponente sal geïnstalleer word. Aanbeveel vir die meeste gebruikers."
 
 #: src/Localization/setupstrings.ulf#STRING_CHOOSEINSTALLATIONTYPE5
 msgid  "You choose the components you want to install and where they are stored. Recommended for advanced users."
-msgstr ""
+msgstr "U kies die komponente wat u wil installeer, en waar hulle geïnstalleer moet word. Aanbeveel vir gevorderde gebruikers."
 
 #: src/Localization/setupstrings.ulf#STRING_CHOOSEINSTALLATIONTYPE6
 msgid  "Typical"
@@ -253,7 +253,7 @@ msgstr "Welkom"
 
 #: src/Localization/setupstrings.ulf#STRING_PROLOGUE2
 msgid  "This Installation Wizard will install ${PRODUCT_FULLNAME} on your computer."
-msgstr ""
+msgstr "Hierdie installeerslimmerd sal ${PRODUCT_FULLNAME} op u rekenaar installeer."
 
 #: src/Localization/setupstrings.ulf#STRING_PROLOGUE3
 msgid  "To continue, click 'Next'."
@@ -261,7 +261,7 @@ msgstr "Om voort te gaan, kliek 'Volgende'."
 
 #: src/Localization/setupstrings.ulf#STRING_PROLOGUE4
 msgid  "Note: This installation will be done without root privileges. Therefore you will have a reduced functionality (Java Runtime Environment (JRE) not installable, system integration not possible).\nClick 'Cancel' and change your privileges to root privileges, if you want to use the complete functionality."
-msgstr ""
+msgstr "Nota: Hierdie installasie sal sonder wortelregte gedoen word. U sal dus verminderde funksionaliteit hê (geen stelselintegrasie nie, geen Java-looptydomgewing nie).\nKliek 'Kanselleer' en verander u regte na wortelregte indien u wel volledige funksionaliteit wil hê."
 
 #: src/Localization/setupstrings.ulf#STRING_INSTALLATIONCOMPLETED1
 msgid  "Installation Completed"
@@ -277,15 +277,15 @@ msgstr "Installasie misluk"
 
 #: src/Localization/setupstrings.ulf#STRING_INSTALLATIONCOMPLETED2
 msgid  "The Installation Wizard has successfully installed ${PRODUCT_FULLNAME} on your computer."
-msgstr ""
+msgstr "Die installeerslimmerd het ${PRODUCT_FULLNAME} suksesvol op u rekenaar geïnstalleer."
 
 #: src/Localization/setupstrings.ulf#STRING_INSTALLATIONCOMPLETED2_ABORT
 msgid  "The Installation Wizard was aborted. ${PRODUCT_NAME} is not installed on your computer."
-msgstr ""
+msgstr "Die installasieslimmerd is gestaak. ${PRODUCT_NAME} is nie op u rekenaar geïnstalleer nie."
 
 #: src/Localization/setupstrings.ulf#STRING_INSTALLATIONCOMPLETED2_ERROR
 msgid  "An error has occurred. Thus the Installation Wizard could not install ${PRODUCT_NAME} on your computer successfully. Click 'Details...' for more information."
-msgstr ""
+msgstr "'n Fout het voorgekom. Die installeerslimmerd kon dus nie ${PRODUCT_NAME} suksesvol op jou rekenaar installeer nie. Kliek 'Details...' vir nadere besonderhede."
 
 #: src/Localization/setupstrings.ulf#STRING_INSTALLATIONCOMPLETED3
 msgid  "Click 'Finish' to exit the Wizard."
@@ -297,15 +297,15 @@ msgstr "Besonderhede..."
 
 #: src/Localization/setupstrings.ulf#STRING_UNINSTALLATIONPROLOGUE2
 msgid  "The ${PRODUCT_FULLNAME} Uninstallation Wizard will remove ${PRODUCT_FULLNAME} from your computer."
-msgstr ""
+msgstr "Die ${PRODUCT_FULLNAME}-deïnstallasieslimmerd sal ${PRODUCT_FULLNAME} van u rekenaar verwyder."
 
 #: src/Localization/setupstrings.ulf#STRING_UNINSTALLATION_PROLOGUE_WRONG_PRIVILEGES_CURRENT_ROOT
 msgid  "Sorry, wrong privileges. Installation was done with User privilges, but you have Root privileges."
-msgstr ""
+msgstr "Jammer, verkeerde regte. Installasie is gedoen met gebruikerregte, maar u het wortelregte."
 
 #: src/Localization/setupstrings.ulf#STRING_UNINSTALLATION_PROLOGUE_WRONG_PRIVILEGES_CURRENT_USER
 msgid  "Sorry, wrong privileges. Installation was done with Root privilges, but you have User privileges."
-msgstr ""
+msgstr "Jammer, verkeerde regte. Installasie is gedoen met wortelregte, maar u het gebruikerregte."
 
 #: src/Localization/setupstrings.ulf#STRING_CHOOSEUNINSTALLATIONTYPE1
 msgid  "Select the Type of Uninstallation"
@@ -321,7 +321,7 @@ msgstr "Gedeeltelik"
 
 #: src/Localization/setupstrings.ulf#STRING_CHOOSEUNINSTALLATIONTYPE4
 msgid  "Completely removes ${PRODUCT_FULLNAME} and all its components from your system."
-msgstr ""
+msgstr "Verwyder ${PRODUCT_FULLNAME} en al sy komponente geheel en al van u stelsel."
 
 #: src/Localization/setupstrings.ulf#STRING_CHOOSEUNINSTALLATIONTYPE5
 msgid  "You choose the program features you want to remove."
@@ -333,7 +333,7 @@ msgstr "Volledig"
 
 #: src/Localization/setupstrings.ulf#STRING_CHOOSEUNINSTALLATIONCOMPONENTS2
 msgid  "Components marked with an X will be removed. Mark the components you want to remove."
-msgstr ""
+msgstr "Komponente gemerk met X sal verwyder word. Merk die komponente wat u wil verwyder."
 
 #: src/Localization/setupstrings.ulf#STRING_UNINSTALLATIONIMMINENT1
 msgid  "Ready to Remove"
@@ -361,19 +361,19 @@ msgstr "Deïnstallasie misluk"
 
 #: src/Localization/setupstrings.ulf#STRING_UNINSTALLATIONCOMPLETED2
 msgid  "The Uninstallation Wizard has successfully removed ${PRODUCT_FULLNAME} from your computer."
-msgstr ""
+msgstr "Die deïnstalleerslimmerd het ${PRODUCT_FULLNAME} suksesvol van u rekenaar verwyder."
 
 #: src/Localization/setupstrings.ulf#STRING_UNINSTALLATIONCOMPLETED2_PARTIAL
 msgid  "The Uninstallation Wizard has successfully removed the selected components of ${PRODUCT_NAME} from your computer."
-msgstr ""
+msgstr "Die deïnstalleerslimmerd het die gemerkte komponente van ${PRODUCT_NAME} suksesvol van u rekenaar verwyder."
 
 #: src/Localization/setupstrings.ulf#STRING_UNINSTALLATIONCOMPLETED2_ABORT
 msgid  "The Uninstallation Wizard was aborted before completely removing ${PRODUCT_NAME} from your computer."
-msgstr ""
+msgstr "Die deïnstalleerslimmerd is gestaak voor dit ${PRODUCT_NAME} volledig van u rekenaar kon verwyder."
 
 #: src/Localization/setupstrings.ulf#STRING_UNINSTALLATIONCOMPLETED2_ERROR
 msgid  "An error has occurred. Thus the Uninstallation Wizard could not remove ${PRODUCT_NAME} from your computer successfully. Click 'Details...' for more information."
-msgstr ""
+msgstr "'n Fout het voorgekom. Daarom kon die deïnstalleerslimmerd nie ${PRODUCT_NAME} van u rekenaar verwyder nie. Kliek 'Details...' vir nadere besonderhede."
 
 #: src/Localization/setupstrings.ulf#STRING_INSTALLERFACTORY_OS_NOT_SUPPORTED
 msgid  "Sorry, this Operating System is not supported yet."
@@ -385,7 +385,7 @@ msgstr "'n Ouer weergawe van ${PRODUCT_NAME} is op u rekenaar gevind in:"
 
 #: src/Localization/setupstrings.ulf#STRING_OLDER_VERSION_INSTALLED_REMOVE
 msgid  "You have to remove the older version of ${PRODUCT_NAME} before you can install the newer one."
-msgstr ""
+msgstr "U moet die ouer weergawe van ${PRODUCT_NAME} verwyder voor u die nuwer een kan installeer."
 
 #: src/Localization/setupstrings.ulf#STRING_NEWER_VERSION_INSTALLED_FOUND
 msgid  "A newer version of ${PRODUCT_NAME} was found on your system in:"
@@ -393,7 +393,7 @@ msgstr "'n Nuwer weergawe van ${PRODUCT_NAME} is gevind op u stelsel in:"
 
 #: src/Localization/setupstrings.ulf#STRING_NEWER_VERSION_INSTALLED_REMOVE
 msgid  "You have to remove the newer version of ${PRODUCT_NAME} before you can install the older one."
-msgstr ""
+msgstr "U moet die nuwer weergawe van ${PRODUCT_NAME} verwyder voor u die ouer weergawe kan installeer."
 
 #: src/Localization/setupstrings.ulf#STRING_NEWER_VERSION_DATABASE
 msgid  "Database"
@@ -405,11 +405,11 @@ msgstr "Kies 'n ander installasiegids."
 
 #: src/Localization/setupstrings.ulf#STRING_ROOT_PRIVILEGES_REQUIRED_1
 msgid  "The user you are logged in as cannot run the Installation Wizard."
-msgstr ""
+msgstr "Die gebruiker as wie u aangemeld is, kan nie die installasieslimmerd laat loop nie."
 
 #: src/Localization/setupstrings.ulf#STRING_ROOT_PRIVILEGES_REQUIRED_2
 msgid  "Please log out and log back in as a user with system administrator rights."
-msgstr ""
+msgstr "Meld asseblief af en meld weer aan as 'n gebruiker met stelseladministrateurregte."
 
 #: src/Localization/setupstrings.ulf#STRING_DISCSPACE_INSUFFICIENT
 msgid  "Not enough discspace available for installation."
@@ -425,7 +425,7 @@ msgstr "Beskikbare skyfspasie"
 
 #: src/Localization/setupstrings.ulf#STRING_DISCSPACE_TIP
 msgid  "Please use another directory for installation or change your module selection."
-msgstr ""
+msgstr "Gebruik asseblief 'n ander gids vir installasie of verander u modulekeuse."
 
 #: src/Localization/setupstrings.ulf#STRING_ANALYZING_DATABASE1
 msgid  "Analyzing ..."
@@ -433,11 +433,11 @@ msgstr "Ontleed tans..."
 
 #: src/Localization/setupstrings.ulf#STRING_ANALYZING_DATABASE2
 msgid  "Analyzing database\nPlease wait a moment ..."
-msgstr ""
+msgstr "Ontleed tans databasis\nWag 'n oomblik..."
 
 #: src/Localization/setupstrings.ulf#STRING_PROLOGUE_1
 msgid  "Welcome to the Installation Wizard.<p>This wizard asks you to supply configuration settings.<p>At the bottom of each page are navigation buttons that let you move through the Installation Wizard:"
-msgstr ""
+msgstr "Welkom by die installasieslimmerd.<p>Hierdie slimmerd vra u vir opstellinginstellings.<p>Onderaan elke bladsy is navigasieknoppies waarmee u deur die installasieslimmerd kan beweeg:"
 
 #: src/Localization/setupstrings.ulf#STRING_PROLOGUE_2
 msgid  "'Back' returns you to the previous page."
@@ -449,11 +449,11 @@ msgstr "'Volgende' neem u na die volgende bladsy. "
 
 #: src/Localization/setupstrings.ulf#STRING_PROLOGUE_4
 msgid  "'Cancel' ends the Installation Wizard without installing this software."
-msgstr ""
+msgstr "'Kanselleer' beëindig die installasieslimmerd sonder om hierdie sagteware te installeer."
 
 #: src/Localization/setupstrings.ulf#STRING_PROLOGUE_5
 msgid  "'Help' displays the Help with further information about the page currently displayed."
-msgstr ""
+msgstr "'Hulp' wys die Hulp met verdere inligting oor die bladsy wat tans gewys word."
 
 #: src/Localization/setupstrings.ulf#STRING_PROLOGUE_6
 msgid  "'OK' exits the Help page and returns you to the Installation Wizard."
@@ -461,7 +461,7 @@ msgstr "'OK' sluit die Hulp-bladsy af en keer na die installasieslimmerd terug."
 
 #: src/Localization/setupstrings.ulf#STRING_UNINSTALLATIONPROLOGUE_1
 msgid  "Welcome to the Uninstallation Wizard.<p>This wizard asks you to supply configuration settings.<p>At the bottom of each page are navigation buttons that let you move through the Uninstallation Wizard:"
-msgstr ""
+msgstr "Welkom by die deïnstallasieslimmerd.<p>Hierdie slimmerd vra u vir opstellinginstellings.<p>Onderaan elke bladsy is navigasieknoppies waarmee u deur die deïnstallasieslimmerd kan beweeg:"
 
 #: src/Localization/setupstrings.ulf#STRING_UNINSTALLATIONPROLOGUE_2
 msgid  "'Back' returns you to the previous page."
@@ -473,67 +473,67 @@ msgstr "'Volgende' neem u na die volgende bladsy. "
 
 #: src/Localization/setupstrings.ulf#STRING_UNINSTALLATIONPROLOGUE_4
 msgid  "'Cancel' ends the Uninstallation Wizard without removing this software."
-msgstr ""
+msgstr "'Kanselleer' beëindig die deïnstallasieslimmerd sonder om hierdie sagteware te verwyder."
 
 #: src/Localization/setupstrings.ulf#STRING_UNINSTALLATIONPROLOGUE_5
 msgid  "'Help' displays the Help with further information about the page currently displayed."
-msgstr ""
+msgstr "'Hulp' wys die Hulp met verdere inligting oor die bladsy wat tans gewys word."
 
 #: src/Localization/setupstrings.ulf#STRING_UNINSTALLATIONPROLOGUE_6
 msgid  "'OK' exits the Help page and returns you to the Uninstallation Wizard."
-msgstr ""
+msgstr "'OK' sluit die Hulp-bladsy af en keer na die deïnstallasieslimmerd terug."
 
 #: src/Localization/setupstrings.ulf#STRING_ACCEPTLICENSE_1
 msgid  "Before you install this product, you must read and accept the entire Software License Agreement under which this software is licensed for your use."
-msgstr ""
+msgstr "Voor u hierdie produk installeer, moet u die hele sagtewarelisensieooreenkoms lees en daartoe instem, ingevolge waarvan hierdie sagteware aan u gelisensieer word."
 
 #: src/Localization/setupstrings.ulf#STRING_ACCEPTLICENSE_2
 msgid  "If you have read and accept all the terms of the entire Software License Agreement, click 'Accept License' to continue with the installation."
-msgstr ""
+msgstr "As u al die bepalings van die hele sagtewarelisensieooreenkoms gelees het en daartoe instem, kliek 'Aanvaar lisensie' om met die installasie voort te gaan."
 
 #: src/Localization/setupstrings.ulf#STRING_ACCEPTLICENSE_3
 msgid  "If you do not accept all the terms of the Software License Agreement, click 'Decline' to end the Installation Wizard without installing this product."
-msgstr ""
+msgstr "As u nie tot al die bepalings van die hele sagtewarelisensieooreenkoms instem nie, kliek 'Wys van die hand' om die installasieslimmerd af te sluit sonder om hierdie produk te installeer."
 
 #: src/Localization/setupstrings.ulf#STRING_CHOOSEINSTALLATIONTYPE_1
 msgid  "Select the type of product installation to perform from the following choices. This will determine how much information you need to provide for product configuration."
-msgstr ""
+msgstr "Kies die soort produkinstallasie om te doen, met die volgende opsies. Dit sal bepaal hoeveel inligting u vir die produkopstelling moet verskaf."
 
 #: src/Localization/setupstrings.ulf#STRING_CHOOSEDIRECTORY_1
 msgid  "It is recommended that you install this product in the directory suggested by this Installation Wizard. <p>To choose a different location, click 'Browse...' or specify the full path of the directory to use in the text box below. <p>If this product is already installed, you cannot change the destination directory."
-msgstr ""
+msgstr "Ons beveel aan dat u hierdie produk installeer in die gids wat deur die installasieslimmerd voorgestel word. <p>Om 'n ander ligging te kies, kliek 'Blaai...' of spesifiseer die volle pad van die gids om te gebruik in die tekshokkie hier onder. <p>As die produk reeds geïnstalleer is, kan u nie die bestemminggids verander nie."
 
 #: src/Localization/setupstrings.ulf#STRING_CHOOSECOMPONENTS_1
 msgid  "Components marked in color will be installed. Click the icon of a component to mark or unmark the component.<p>All already installed components cannot be selected for installation."
-msgstr ""
+msgstr "Komponente wat in kleur gemerk is, sal geïnstalleer word. Kliek die ikoon van 'n komponent om die komponent te merk of te ontmerk.<p>Al die komponente wat reeds geïnstalleer is, kan nie vir installasie gemerk word nie."
 
 #: src/Localization/setupstrings.ulf#STRING_INSTALLATIONIMMINENT_1
 msgid  "The listed components are ready for installation based on your configuration settings. <p>If you are satisfied with your selection, click 'Install Now' to begin. <p>To check or modify your settings on the previous pages, click 'Back'."
-msgstr ""
+msgstr "Die gelyste rekenaars is reg vir installasie, gebaseer op u opstellinginstellings. <p>Indien u met u keuse tevrede is, kliek 'Installeer nou' om te begin. <p>Om u instellings op die vorige bladsye te kontroleer of te wysig, kliek 'Terug'."
 
 #: src/Localization/setupstrings.ulf#STRING_UNINSTALLATIONIMMINENT_1
 msgid  "The listed components are ready for uninstallation based on your configuration settings. <p>If you are satisfied with your selection, click 'Remove Now' to begin. <p>To check or modify your settings on the previous pages, click 'Back'."
-msgstr ""
+msgstr "Die gelyste komponente is reg vir deïnstallasie, gebaseer op u opstellinginstellings. <p>Indien u met u keuse tevrede is, kliek 'Verwyder nou' om te begin. <p>Om u instellings op die vorige bladsye te kontroleer of te wysig, kliek 'Terug'."
 
 #: src/Localization/setupstrings.ulf#STRING_INSTALLATIONONGOING_1
 msgid  "This page indicates the progress of the installation with the aid of a progress bar. To abort the installation process, click 'Stop'."
-msgstr ""
+msgstr "Hierdie bladsy dui die vordering aan van die installasie, met behulp van 'n vorderingstaaf. Om die installasieproses te staak, kliek 'Stop'."
 
 #: src/Localization/setupstrings.ulf#STRING_UNINSTALLATIONONGOING_1
 msgid  "This page indicates the progress of the uninstallation with the aid of a progress bar. To abort the uninstallation, click 'Stop'."
-msgstr ""
+msgstr "Hierdie bladsy dui die vordering aan van die deïnstallasie, met behulp van 'n vorderingstaaf. Om die deïnstallasieproses te staak, kliek 'Stop'."
 
 #: src/Localization/setupstrings.ulf#STRING_CHOOSEUNINSTALLATIONTYPE_1
 msgid  "Complete: This will remove all installed components of your version.<p>Partial: This removes only the components you will choose out of the components list."
-msgstr ""
+msgstr "Volledig: Dit sal alle geïnstalleerde komponente van u weergawe verwyder.<p>Gedeeltelik: Dit verwyder net die komponente wat u uit die komponentelys kies."
 
 #: src/Localization/setupstrings.ulf#STRING_CHOOSEUNINSTALLATIONCOMPONENTS_1
 msgid  "Components marked with an X will be removed. Click next to a component to mark or unmark it with an X."
-msgstr ""
+msgstr "Komponente gemerk met X sal verwyder word. Kliek langs die komponent om dit te merk of te ontmerk met 'n X."
 
 #: src/Localization/setupstrings.ulf#STRING_PACKAGEFORMAT_NOT_SUPPORTED
 msgid  "This package format is currently not supported for your operating system!"
-msgstr ""
+msgstr "Hierdie pakketformaat word tans nie deur u bedryfstelsel ondersteun nie!"
 
 #: src/Localization/setupstrings.ulf#STRING_OPERATING_SYSTEM
 msgid  "Operating system"
@@ -553,7 +553,7 @@ msgstr "Geen komponente is vir installasie gekies nie."
 
 #: src/Localization/setupstrings.ulf#STRING_NO_COMPONENTS_SELECTED_2
 msgid  "Click 'OK' to select one or more components for installation or to exit the Installation Wizard."
-msgstr ""
+msgstr "Kliek 'OK' om een of meer komponente vir installasie te merk, of om die installasieslimmerd af te sluit."
 
 #: src/Localization/setupstrings.ulf#STRING_NO_LANGUAGE_SELECTED_1
 msgid  "No languages have been selected for installation."
@@ -561,7 +561,7 @@ msgstr "Geen tale is gekies om geïnstalleer te word nie."
 
 #: src/Localization/setupstrings.ulf#STRING_NO_LANGUAGE_SELECTED_2
 msgid  "Click 'OK' to select one or more languages for installation or to exit the Installation Wizard."
-msgstr ""
+msgstr "Kliek 'OK' om een of meer tale vir installasie te merk, of om die installasieslimmerd af te sluit."
 
 #: src/Localization/setupstrings.ulf#STRING_NO_APPLICATION_SELECTED_1
 msgid  "No applications have been selected for installation."
@@ -569,7 +569,7 @@ msgstr "Geen toepassings is gekies om geïnstalleer te word nie."
 
 #: src/Localization/setupstrings.ulf#STRING_NO_APPLICATION_SELECTED_2
 msgid  "Click 'OK' to select one or more application for installation or to exit the Installation Wizard."
-msgstr ""
+msgstr "Kliek 'OK' om een of meer toepassing vir installering te merk, of om die installeerslimmerd af te sluit."
 
 #: src/Localization/setupstrings.ulf#STRING_NOTHING_TO_UNINSTALL
 msgid  "Nothing to uninstall"
@@ -581,7 +581,7 @@ msgstr "Geen komponente is vir deïnstallasie gekies nie."
 
 #: src/Localization/setupstrings.ulf#STRING_NO_UNINSTALLCOMPONENTS_SELECTED_2
 msgid  "Click 'OK' to select one or more components for uninstallation or to exit the Uninstallation Wizard."
-msgstr ""
+msgstr "Kliek 'OK' om een of meer komponente vir deïnstallasie te kies of om die deïnstallasieslimmerd af te sluit."
 
 #: src/Localization/setupstrings.ulf#STRING_ALL_LANGUAGECOMPONENTS_SELECTED_1
 msgid  "All language components have been selected for uninstallation."
@@ -589,7 +589,7 @@ msgstr "Alle taalkomponente is gekies vir deïnstallasie."
 
 #: src/Localization/setupstrings.ulf#STRING_ALL_LANGUAGECOMPONENTS_SELECTED_2
 msgid  "Click 'OK' to select one or more language components not for uninstallation or to exit the Uninstallation Wizard."
-msgstr ""
+msgstr "Kliek 'OK' om een of meer tale te kies wat nie gedeïnstalleer moet word nie, of om die deïnstallasieslimmerd af te sluit."
 
 #: src/Localization/setupstrings.ulf#STRING_ALL_APPLICATIONCOMPONENTS_SELECTED_1
 msgid  "All application components have been selected for uninstallation."
@@ -597,7 +597,7 @@ msgstr "Alle toepassingkomponente is vir deïnstallering gekies."
 
 #: src/Localization/setupstrings.ulf#STRING_ALL_APPLICATIONCOMPONENTS_SELECTED_2
 msgid  "Click 'OK' to select one or more application components not for uninstallation or to exit the Uninstallation Wizard."
-msgstr ""
+msgstr "Kliek 'OK' om een of meer toepassingskomponente te kies wat nie gedeïnstalleer moet word nie, of om die deïnstallasieslimmerd af te sluit."
 
 #: src/Localization/setupstrings.ulf#STRING_CHANGE_SELECTION
 msgid  "Please change selection"

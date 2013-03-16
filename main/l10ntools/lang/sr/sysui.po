@@ -126,12 +126,12 @@ msgstr "Додатак за %PRODUCTNAME"
 #: desktop/share/documents.ulf#ms-excel-sheet-12
 #, fuzzy
 msgid  "Microsoft Excel Worksheet"
-msgstr "Microsoft PowerPoint радна свеска"
+msgstr "Microsoft Excel радни лист"
 
 #: desktop/share/documents.ulf#ms-excel-template-12
 #, fuzzy
 msgid  "Microsoft Excel Worksheet Template"
-msgstr "Microsoft PowerPoint шаблон радне свеске"
+msgstr "Microsoft Excel шаблон радног листа"
 
 #: desktop/share/documents.ulf#ms-powerpoint-presentation-12
 #, fuzzy
@@ -166,7 +166,7 @@ msgstr "Microsoft PowerPoint шаблон презентације"
 #: desktop/share/documents.ulf#openxmlformats-officedocument-spreadsheetml-sheet
 #, fuzzy
 msgid  "Microsoft Excel Worksheet"
-msgstr "Microsoft Excel радна свеска"
+msgstr "Microsoft PowerPoint радна свеска"
 
 #: desktop/share/documents.ulf#openxmlformats-officedocument-spreadsheetml-template
 #, fuzzy
@@ -234,12 +234,14 @@ msgid  "%PRODUCTNAME Printer Administration"
 msgstr "%PRODUCTNAME подешавање штампача"
 
 #: desktop/share/launcher_comment.ulf#writer
+#, fuzzy
 msgid  "Create and edit text and graphics in letters, reports, documents and Web pages by using Writer."
-msgstr ""
+msgstr "Пишите и уређујте текст и графику у писмима, извештајима и веб страницама у Писцу."
 
 #: desktop/share/launcher_comment.ulf#impress
+#, fuzzy
 msgid  "Create and edit presentations for slideshows, meeting and Web pages by using Impress."
-msgstr ""
+msgstr "Направите и уређујте презентације за пројекције, састанке и Интернет у Презентацији."
 
 #: desktop/share/launcher_comment.ulf#draw
 #, fuzzy
@@ -247,8 +249,9 @@ msgid  "Create and edit drawings, flow charts, and logos by using Draw."
 msgstr "Направите и уређујте цртеже, дијаграме тока и логотипе у Цртању."
 
 #: desktop/share/launcher_comment.ulf#calc
+#, fuzzy
 msgid  "Perform calculation, analyze information and manage lists in spreadsheets by using Calc."
-msgstr ""
+msgstr "Изведите прорачуне, анализирајте податке и управљајте листама у таблицама са унакрсним израчунавањем у Рачуну."
 
 #: desktop/share/launcher_comment.ulf#math
 #, fuzzy
@@ -256,8 +259,9 @@ msgid  "Create and edit scientific formulas and equations by using Math."
 msgstr "Направите и уређујте научне формуле и једначине у Математици."
 
 #: desktop/share/launcher_comment.ulf#base
+#, fuzzy
 msgid  "Manage databases, create queries and reports to track and manage your information by using Base."
-msgstr ""
+msgstr "Управљајте базама података, направите упите и извештаје за праћење података у програму База."
 
 #: desktop/share/launcher_comment.ulf#startcenter
 msgid  "The office productivity suite compatible to the open and standardized ODF document format. Supported by Apache OpenOffice."

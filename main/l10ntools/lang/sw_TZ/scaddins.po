@@ -437,7 +437,7 @@ msgstr "FACTDOUBLE"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Workday.1.String.Text
 msgid  "Returns the serial number of the date before or after a specified number of workdays"
-msgstr ""
+msgstr "Hurejesha namba mfulizo ya kabla au baada ya namba za siku za kazi zilizobainishwa."
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Workday.2.String.Text
 msgid  "Start date"
@@ -461,11 +461,11 @@ msgstr "Siku za mapumziko"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Workday.7.String.Text
 msgid  "List of date values of days off (vacation, holidays, etc.)"
-msgstr ""
+msgstr "Orodha ya thamani ya tarehe ya siku za kupumzika (likizo, siku za mapumziko, n.k)"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Yearfrac.1.String.Text
 msgid  "Returns the number of whole days between 'start date' and 'end date' as a year fraction"
-msgstr ""
+msgstr "Hurejesha namba za siku zote kati ya 'tarehe ya kuanza' na 'tarehe ya kiusha' kama mwaka sehemu"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Yearfrac.2.String.Text
 msgid  "Start date"
@@ -493,7 +493,7 @@ msgstr "Msingi wa kuukiria siku za riba"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Edate.1.String.Text
 msgid  "Returns the serial number of the date that is a specified number of months before or after the start date"
-msgstr ""
+msgstr "Hurejesha namba mfulizo ya tarehe ambayo ni imebainisha namba za miezi kabla na baada ya tarehe ya kuanzia"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Edate.2.String.Text
 msgid  "Start date"
@@ -513,7 +513,7 @@ msgstr "Namba za miezi kabla au baada ya tarehe ya kuanza"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Weeknum.1.String.Text
 msgid  "Returns the number of the calendar week in which the specified date occurs."
-msgstr ""
+msgstr "Hurejesha namba ya kalenda ya wiki katika ambazo tarehe iliyobainishwa imetokea."
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Weeknum.2.String.Text
 msgid  "Date"
@@ -533,7 +533,7 @@ msgstr "Namba kutoka 1 hadi 3 ambazo zinazabainisha siku na ambazo wiki inaanza"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Eomonth.1.String.Text
 msgid  "Returns the serial number of the last day of the month that comes a certain number of months before or after the start date"
-msgstr ""
+msgstr "Returns the serial number of the last day of the month that comes a certain number of months before or after the start date"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Eomonth.2.String.Text
 msgid  "Start date"
@@ -577,7 +577,7 @@ msgstr "Siku za mapumziko"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Networkdays.7.String.Text
 msgid  "List of date values representing days off (vacation, holidays, etc.)"
-msgstr ""
+msgstr "Orodha ya thamani ya tarehe zinazowasilisha siku za kupumzika (likizo, siku za mapumziko, n.k)"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Iseven.1.String.Text
 msgid  "Returns the value 'true' if the number is even"
@@ -613,7 +613,7 @@ msgstr "Namba"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Multinomial.3.String.Text
 msgid  "Number or list of numbers for which you want the multinomial coefficient"
-msgstr ""
+msgstr "Number or list of numbers for which you want the multinomial coefficient"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Seriessum.1.String.Text
 msgid  "Returns the sum of a power series"
@@ -649,7 +649,7 @@ msgstr "Vizigeu"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Seriessum.9.String.Text
 msgid  "Set of coefficients by which each successive power of the variable x is multiplied"
-msgstr ""
+msgstr "Set of coefficients by which each successive power of the variable x is multiplied"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Quotient.1.String.Text
 msgid  "Returns the integer portion of a division"
@@ -1517,7 +1517,7 @@ msgstr "Kizio cha kupima kwa ajili ya matokeo"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Amordegrc.1.String.Text
 msgid  "Returns the prorated linear depreciation of an asset for each accounting period"
-msgstr ""
+msgstr "Hurejesha uchakavu mnyoofu uwiani wa mali kwa kila kipindi cha mahesabu"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Amordegrc.2.String.Text
 msgid  "Cost"
@@ -1577,7 +1577,7 @@ msgstr "Mwaka wa msingi utakaotumika"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Amorlinc.1.String.Text
 msgid  "Returns the prorated linear depreciation of an asset for each accounting period"
-msgstr ""
+msgstr "Hurejesha uchakavu mnyoofu uwiani wa mali kwa kila kipindi cha mahesabu"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Amorlinc.2.String.Text
 msgid  "Cost"
@@ -1697,7 +1697,7 @@ msgstr "Upevu"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Accrintm.1.String.Text
 msgid  "Returns the accrued interest for a security that pays interest at maturity"
-msgstr ""
+msgstr "Hurejesha riba ongezeko kwa ajili ya usalama ambayo italipa riba wakati wa upevu."
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Accrintm.2.String.Text
 msgid  "Issue"
@@ -1741,7 +1741,7 @@ msgstr "Upevu"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Received.1.String.Text
 msgid  "Returns the amount paid out at maturity for a fully invested security"
-msgstr ""
+msgstr "Hurejesha kiasi kilicholipwa nje wakati wa upevu kwa ajili uwekezaji kamili wa usalama"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Received.2.String.Text
 msgid  "Settlement"
@@ -1829,7 +1829,7 @@ msgstr "Upevu"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Duration.1.String.Text
 msgid  "Returns the annual Macaulay duration of a security with periodic interest payments"
-msgstr ""
+msgstr "Returns the annual Macaulay duration of a security with periodic interest payments"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Duration.2.String.Text
 msgid  "Settlement"
@@ -1901,7 +1901,7 @@ msgstr "Vipindi"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Cumprinc.1.String.Text
 msgid  "Returns the cumulative principal on a loan to be paid between two periods"
-msgstr ""
+msgstr "Hurejesha riba limbiko wa mkopo utakaolipwa baina ya vipindi viwili"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Cumprinc.2.String.Text
 msgid  "Rate"
@@ -2005,7 +2005,7 @@ msgstr "Aina ya upevu"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Price.1.String.Text
 msgid  "Returns the price per 100 currency units face value of a security that pays periodic interest"
-msgstr ""
+msgstr "Hurejesha bei kwa fedha kizio 100 inayokabili thamani ya usalama ambayo inalipa riba kwa kipindi"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Price.2.String.Text
 msgid  "Settlement"
@@ -2065,7 +2065,7 @@ msgstr "Upevu"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Pricedisc.1.String.Text
 msgid  "Returns the price per 100 currency units face value of a discounted security"
-msgstr ""
+msgstr "Hurejesha bei kwa fedha kizio 100 inayokabili thamani ya usalama uliopunguzwa"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Pricedisc.2.String.Text
 msgid  "Settlement"
@@ -2109,7 +2109,7 @@ msgstr "Upevu"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Pricemat.1.String.Text
 msgid  "Returns the price per 100 currency units face value of a security that pays interest at maturity"
-msgstr ""
+msgstr "Hurejesha bei kwa fedha kizio 100 inayokabili thamani ya usalama ambayo inalipa riba wakati wa upevu"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Pricemat.2.String.Text
 msgid  "Settlement"
@@ -2161,7 +2161,7 @@ msgstr "Upevu"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Mduration.1.String.Text
 msgid  "Returns the Macaulay modified duration for a security with an assumed par value of 100 currency units"
-msgstr ""
+msgstr "Returns the Macaulay modified duration for a security with an assumed par value of 100 currency units"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Mduration.2.String.Text
 msgid  "Settlement"
@@ -2233,7 +2233,7 @@ msgstr "Vipindi"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Dollarfr.1.String.Text
 msgid  "Converts a price expressed as a decimal into a price expressed as a fraction"
-msgstr ""
+msgstr "Inageuza bei iliyoelezwa kama desimali katika bei iliyoelezwa kama sehemu"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Dollarfr.2.String.Text
 msgid  "Decimal dollar"
@@ -2253,7 +2253,7 @@ msgstr "Kigawo"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Dollarde.1.String.Text
 msgid  "Converts a price expressed as a fraction into a price expressed as a decimal"
-msgstr ""
+msgstr "Inageuza bei iliyoelezwa kama sehemu katika bei iliyoelezwa kama desimali"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Dollarde.2.String.Text
 msgid  "Fractional dollar"
@@ -2377,7 +2377,7 @@ msgstr "Upevu"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Yieldmat.1.String.Text
 msgid  "Returns the annual yield of a security that pays interest at maturity"
-msgstr ""
+msgstr "Hurejesha mapato ya mwaka ya usalama ambayo inalipa riba wakati wa upevu"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Yieldmat.2.String.Text
 msgid  "Settlement"
@@ -2457,7 +2457,7 @@ msgstr "Kiasi cha kipunguzi"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Tbillprice.1.String.Text
 msgid  "Returns the price of 100 currency units face value for a treasury bill"
-msgstr ""
+msgstr "Hurejesha bei kwa fedha kizio 100 inayokabili thamani kwa ajili ya hawala za serikali"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Tbillprice.2.String.Text
 msgid  "Settlement"
@@ -2513,7 +2513,7 @@ msgstr "Bei"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Oddfprice.1.String.Text
 msgid  "Returns the price per $100 face value of a security with an odd first period"
-msgstr ""
+msgstr "Hurejesha bei kwa $100 inayokabili thamani ya usalama na kipindi cha kwanza tasa"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Oddfprice.2.String.Text
 msgid  "Settlement"
@@ -2665,7 +2665,7 @@ msgstr "Upevu"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Oddlprice.1.String.Text
 msgid  "Returns the price per $100 face value of a security with an odd last period"
-msgstr ""
+msgstr "Hurejesha bei kwa $100 inayokabili thamani ya usalama na kipindi cha kwanza tasa"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Oddlprice.2.String.Text
 msgid  "Settlement"
@@ -2801,7 +2801,7 @@ msgstr "Upevu"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Xirr.1.String.Text
 msgid  "Returns the internal rate of return for a non-periodic schedule of payments"
-msgstr ""
+msgstr "Hurejesha kiasi cha ndani ya kurudisha kwa ajili ya ratiba ya malipo isiyo ya kipindi"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Xirr.2.String.Text
 msgid  "Values"
@@ -2829,7 +2829,7 @@ msgstr "Otea"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Xnpv.1.String.Text
 msgid  "Returns the net present value for a non-periodic schedule of payments"
-msgstr ""
+msgstr "Hurejesha thamani ya jumla ya sasa kwa ratiba za malipo zisizo za kipindi"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Xnpv.2.String.Text
 msgid  "Rate"
@@ -2937,7 +2937,7 @@ msgstr "Upevu"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Coupdays.1.String.Text
 msgid  "Returns the number of days in the coupon period containing the settlement date"
-msgstr ""
+msgstr "Hurejesha namba za siku katika kipindi cha kuponi inayojumuhisha tarehe ya maafikiano"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Coupdays.2.String.Text
 msgid  "Settlement"
@@ -2973,7 +2973,7 @@ msgstr "Upevu"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Coupdaysnc.1.String.Text
 msgid  "Returns the number of days from the settlement date to the next coupon date"
-msgstr ""
+msgstr "Hurejesha namba za siku kutoka tarehe ya maafikiano kwa tarehe ya kuponi inayofuata"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Coupdaysnc.2.String.Text
 msgid  "Settlement"
@@ -3009,7 +3009,7 @@ msgstr "Upevu"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Coupdaybs.1.String.Text
 msgid  "Returns the number of days from the beginning of the coupon period to the settlement date"
-msgstr ""
+msgstr "Hurejesha namba za siku kutoka mwanzo wa kipindi cha kuponi kwa tarehe ya maafikiano"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Coupdaybs.2.String.Text
 msgid  "Settlement"
@@ -3081,7 +3081,7 @@ msgstr "Upevu"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Coupnum.1.String.Text
 msgid  "Returns the number of coupons payable between the settlement and maturity dates"
-msgstr ""
+msgstr "Hurejesha namba ya kuponi kati ya tarehe za maafikiano na upevu"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Coupnum.2.String.Text
 msgid  "Settlement"
@@ -3117,7 +3117,7 @@ msgstr "Upevu"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Fvschedule.1.String.Text
 msgid  "Returns the future value of the initial principal after a series of compound interest rates are applied"
-msgstr ""
+msgstr "Hurejesha thamani ya mbele ya mtaji wa mwanzo baada ya mfululizo wa kiasi cha riba zalishi kutekelezwa"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Fvschedule.2.String.Text
 msgid  "Principal"
@@ -3161,7 +3161,7 @@ msgstr "Aina"
 
 #: source/datefunc/datefunc.src#RID_DATE_FUNCTION_DESCRIPTIONS.DATE_FUNCDESC_DiffWeeks.7.String.Text
 msgid  "Type of calculation: Type=0 means the time interval, Type=1 means calendar weeks."
-msgstr ""
+msgstr "Aina ya ukokotoaji: Aina=0 inamaanisha nafasi ya muda, Aina=1 inamaanisha wiki za kalenda."
 
 #: source/datefunc/datefunc.src#RID_DATE_FUNCTION_DESCRIPTIONS.DATE_FUNCDESC_DiffMonths.1.String.Text
 msgid  "Determines the number of months in a specific period."
@@ -3189,7 +3189,7 @@ msgstr "Aina"
 
 #: source/datefunc/datefunc.src#RID_DATE_FUNCTION_DESCRIPTIONS.DATE_FUNCDESC_DiffMonths.7.String.Text
 msgid  "Type of calculation: Type=0 means the time interval, Type=1 means calendar months."
-msgstr ""
+msgstr "Aina ya ukokotoaji: Aina:0 inamaanisha nafasi ya muda, Aina=1 inamaanisha miezi ya kalenda."
 
 #: source/datefunc/datefunc.src#RID_DATE_FUNCTION_DESCRIPTIONS.DATE_FUNCDESC_DiffYears.1.String.Text
 msgid  "Calculates the number of years in a specific period."
@@ -3217,11 +3217,11 @@ msgstr "Aina"
 
 #: source/datefunc/datefunc.src#RID_DATE_FUNCTION_DESCRIPTIONS.DATE_FUNCDESC_DiffYears.7.String.Text
 msgid  "Type of calculation: Type=0 means the time interval, Type=1 means calendar years."
-msgstr ""
+msgstr "Aina ya ukokotoaji: Aina=0 inamaanisha nafasi ya muda, Aina=1 inamaanisha miaka ya kalenda."
 
 #: source/datefunc/datefunc.src#RID_DATE_FUNCTION_DESCRIPTIONS.DATE_FUNCDESC_IsLeapYear.1.String.Text
 msgid  "Returns 1 (TRUE) if the date is a day of a leap year, otherwise 0 (FALSE)."
-msgstr ""
+msgstr "Rejea 1 (KWELI) kama tarehe ni siku ya mwaka mrefu, vinginevyo 0 (SIKWELI)."
 
 #: source/datefunc/datefunc.src#RID_DATE_FUNCTION_DESCRIPTIONS.DATE_FUNCDESC_IsLeapYear.2.String.Text
 msgid  "Date"
@@ -3233,7 +3233,7 @@ msgstr "Siku yoyote katika mwaka uliotamaniwa"
 
 #: source/datefunc/datefunc.src#RID_DATE_FUNCTION_DESCRIPTIONS.DATE_FUNCDESC_DaysInMonth.1.String.Text
 msgid  "Returns the number of days of the month in which the date entered occurs"
-msgstr ""
+msgstr "Rejea namba za siku za mwezi katika ambazo tarehe iliyoingizwa imetokea"
 
 #: source/datefunc/datefunc.src#RID_DATE_FUNCTION_DESCRIPTIONS.DATE_FUNCDESC_DaysInMonth.2.String.Text
 msgid  "Date"
@@ -3245,7 +3245,7 @@ msgstr "Siku yoyote katika mwezi uliotamaniwa"
 
 #: source/datefunc/datefunc.src#RID_DATE_FUNCTION_DESCRIPTIONS.DATE_FUNCDESC_DaysInYear.1.String.Text
 msgid  "Returns the number of days of the year in which the date entered occurs."
-msgstr ""
+msgstr "Rejea namba za siku za mwaka katika ambazo tarehe iliyoingizwa imetokea."
 
 #: source/datefunc/datefunc.src#RID_DATE_FUNCTION_DESCRIPTIONS.DATE_FUNCDESC_DaysInYear.2.String.Text
 msgid  "Date"
@@ -3257,7 +3257,7 @@ msgstr "Siku yoyote katika mwaka uliotamaniwa"
 
 #: source/datefunc/datefunc.src#RID_DATE_FUNCTION_DESCRIPTIONS.DATE_FUNCDESC_WeeksInYear.1.String.Text
 msgid  "Returns the number of weeks of the year in which the date entered occurs"
-msgstr ""
+msgstr "Rejea namba za wiki za mwaka katika ambazo tarehe iliyoingizwa imetokea"
 
 #: source/datefunc/datefunc.src#RID_DATE_FUNCTION_DESCRIPTIONS.DATE_FUNCDESC_WeeksInYear.2.String.Text
 msgid  "Date"

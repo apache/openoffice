@@ -241,11 +241,11 @@ msgstr "$(ARG1) اُپڪرڻ ۾ جاءِ بچيل ناهي۔ "
 
 #: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_IO_TOOMANYOPENFILES & ERRCODE_RES_MASK).String.Text
 msgid  "The operation on $(ARG1) cannot be performed because too many files are already open."
-msgstr ""
+msgstr "$(ARG1) تي ڪارروائي ڪانہ ٿي سگهي ڇو تہ اڳ ۾ ئي گهڻيون فائلون کليل آهن۔  "
 
 #: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_IO_OUTOFMEMORY & ERRCODE_RES_MASK).String.Text
 msgid  "The operation on $(ARG1) cannot be performed because there is no more memory available."
-msgstr ""
+msgstr "$(ARG1) تي ڪارروائي ڪانہ ٿي سگهي ڇو تہ وڌيڪ ميموري مؤجود ناهي۔ "
 
 #: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_IO_PENDING & ERRCODE_RES_MASK).String.Text
 msgid  "The operation on $(ARG1) cannot continue because more data is pending."
@@ -289,11 +289,11 @@ msgstr "$(ARG1) اسٿاپت جاوا سنسڪرڻ کي سمرٿن مليل نا
 
 #: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_WRONGJAVA_MIN & ERRCODE_RES_MASK).String.Text
 msgid  "The installed Java version is not supported, at least version $(ARG1) is required."
-msgstr ""
+msgstr "اِسٿاپت ڪيل جاوا سنسڪرڻ کي سمرٿن مليل ناهي، گهٽ ۾ گهٽ $(ARG1) سنسڪرڻ جي ضرورت آهي۔ "
 
 #: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_WRONGJAVA_VERSION_MIN & ERRCODE_RES_MASK).String.Text
 msgid  "The installed Java version $(ARG1) is not supported, at least version $(ARG2) is required."
-msgstr ""
+msgstr "اِسٿاپت ڪيل $(ARG1) ڄاوا سنسڪرڻ کي سمرٿن نہ مليو آهي، گهٽ ۾ گهٽ $(ARG2) سنسڪرڻ جي ضرورت آهي۔ "
 
 #: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_BADPARTNERSHIP & ERRCODE_RES_MASK).String.Text
 msgid  "The data associated with the partnership is corrupted."
@@ -325,35 +325,35 @@ msgstr "$(ARG1) هدايت نامي ۾ اِها شئہ نٿي خلقجي سگه�
 
 #: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_IO_UNSUPPORTEDOVERWRITE & ERRCODE_RES_MASK).String.Text
 msgid  "%PRODUCTNAME cannot keep files from being overwritten when this transmission protocol is used. Do you want to continue anyway?"
-msgstr ""
+msgstr "جڏهن هي پرسار جو مسودو اِستعمال ڪيو وڃي ٿو تڏهن %PRODUCTNAME فائل کي مٿان لکڻ کان نٿو بچئي رکي سگهي۔ تنهن هوندي بہ ڇا توهين جاري رکڻ چاهيو ٿا؟ "
 
 #: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_IO_BROKENPACKAGE & ERRCODE_RES_MASK).String.Text
 msgid  "The file '$(ARG1)' is corrupt and therefore cannot be opened. %PRODUCTNAME can try to repair the file.\n\nThe corruption could be the result of document manipulation or of structural document damage due to data transmission.\n\nWe recommend that you do not trust the content of the repaired document.\nExecution of macros is disabled for this document.\n\nShould %PRODUCTNAME repair the file?\n"
-msgstr ""
+msgstr " '$(ARG1)' فائل عيبدار آهي ۽ ان ڪري نٿي کُلي سگهي۔ ڇا %PRODUCTNAME فائل کي درست ڪري؟ "
 
 #: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_IO_BROKENPACKAGE_CANTREPAIR & ERRCODE_RES_MASK).String.Text
 msgid  "The file '$(ARG1)' could not be repaired and therefore cannot be opened."
-msgstr ""
+msgstr "'$(ARG1)' فائل درست نہ ٿي سگهي ان ڪري کلي نٿي سگهي "
 
 #: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_CONFIGURATION_BROKENDATA_NOREMOVE & ERRCODE_RES_MASK).String.Text
 msgid  "Configuration data in '$(ARG1)' is corrupted. Without this data some functions may not operate correctly.\nDo you want to continue startup of %PRODUCTNAME without the corrupted configuration data?"
-msgstr ""
+msgstr "'$(ARG1)' ۾ سامگريءَ جي بناوت عيبائتي آهي۔ ان سامگريءَ بنا ڪجهہ ڪاريہ صحيح نموني نٿا هلائي سگهجن۔ ڇا توهين بنا عيبائتيءَ بناوت جي سامگزيءَ جي شروع ڪيل %PRODUCTNAME جاري رکڻ چاهيو ٿا؟ "
 
 #: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_CONFIGURATION_BROKENDATA_WITHREMOVE & ERRCODE_RES_MASK).String.Text
 msgid  "The personal configuration file '$(ARG1)' is corrupted and must be deleted to continue. Some of your personal settings may be lost.\nDo you want to continue startup of %PRODUCTNAME without the corrupted configuration data?"
-msgstr ""
+msgstr "'$(ARG1)'  شخصي بناوت جي فائل عيبائتي آهي ۽ جاري رکڻ کان ضرور خارج ڪئي وڃي۔ توهانجون شخصي طئہ ڪيل ترتيبن مان ڪجهہ گم ٿي سگهن ٿيون۔ \n ڇا توهين بنا عيباتيءَ بناوت جي سامگريءَ جي شروع ڪيل%PRODUCTNAME  جاري رکڻ چاهيو ٿا؟  "
 
 #: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_CONFIGURATION_BACKENDMISSING & ERRCODE_RES_MASK).String.Text
 msgid  "The configuration data source '$(ARG1)' is unavailable. Without this data some functions may not operate correctly."
-msgstr ""
+msgstr "'$(ARG1)' بناوت جي سامگريءَ جو مول مؤجود ناهي۔ اِن سامگزيءَ بنا ڪجهہ ڪاريہ صحيح نموني نٿا هلائي سگهجن۔ "
 
 #: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_CONFIGURATION_BACKENDMISSING_WITHRECOVER & ERRCODE_RES_MASK).String.Text
 msgid  "The configuration data source '$(ARG1)' is unavailable. Without this data some functions may not operate correctly.\nDo you want to continue startup of %PRODUCTNAME without the missing configuration data?"
-msgstr ""
+msgstr "'$(ARG1)' بناوت جي سامگزيءَ جو مؤل مؤجود ناهي۔ ان سامگريءَ بنا ڪجهہ ڪاريہ صحيح نموني نٿا هلائي سگهجن۔ ڇا توهين گل ٿيل بناوت جي سامگزيءَ جي شروع ڪيل %PRODUCTNAME جاري رکڻ چاهيو ٿا؟ "
 
 #: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_INVALID_XFORMS_SUBMISSION_DATA & ERRCODE_RES_MASK).STRING.Text
 msgid  "The form contains invalid data. Do you still want to continue?"
-msgstr ""
+msgstr "ان فارم ۾ نامنظور سامگري آهي۔ ڇا توهين تنهن هوندي بہ جاري رکڻ چاهيو ٿا؟ "
 
 #: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_LOCKING_LOCKED & ERRCODE_RES_MASK).String.Text
 msgid  "The file $(ARG1) is locked by another user. Currently, another write access to this file cannot be granted."
@@ -416,8 +416,8 @@ msgid  "Enter user name and password for: \n%1"
 msgstr ""
 
 #: source/logindlg.src#DLG_UUI_LOGIN.STR_LOGIN_REALM.String.Text
-msgid  "Enter user name and password for: \n"%2" on %1"
-msgstr ""
+msgid  "Enter user name and password for: \n\"%2\" on %1"
+msgstr "هتي  %1 تي \"%2\" لاءِ اِستعمال ڪندڙ جو نالو ۽ ڳجهو لفظ داخل ڪريو۔ "
 
 #: source/logindlg.src#DLG_UUI_LOGIN.FT_LOGIN_PATH.FixedText.Text
 msgid  "~Path"
@@ -469,7 +469,7 @@ msgstr "موڪليو"
 
 #: source/cookiedg.src#STR_COOKIES_RECV_START.String.Text
 msgid  "The '${HOST}' server wishes to set one or more cookies.\nCookies contain information referring to certain URL classes. If %PRODUCTNAME later requests a document with a URL corresponding to the class of a previously set cookie, %PRODUCTNAME will send this information to the server. This allows a server to recognize the status of a WWW application, e.g., when shopping online.\n\nThe following Cookies should be set:\n\n"
-msgstr ""
+msgstr "'${HOST}'  سرور هڪ يا هڪ کان وڌيڪ ڪڪيز سيٽ ڪرڻ چاهي ٿو۔ ڪڪيز ۾ ڪن URL درجن جو حوالو ڏيندڙ معلومت مؤجود آهي۔ اگر اڳتي %PRODUCTNAME  سيٽ ڪيل درجي سان واسطو رکندڙ URL سميت دستاويز جو عرض ڪري ٿو تہ %PRODUCTNAME اها معلومات سرور ڏانهن موڪلي ٿي جيڪا سرور ڪي WWW  عرض جي حالت، مثال طور؛ آن لائين خريداريءَ وقت، سڃاڻڻ جي اجازت ڏئي ٿي۔ \n\n هيٺ ڏنل ڪُڪيز سيٽ ڪرڻ گهرجن "
 
 #: source/cookiedg.src#STR_COOKIES_RECV_COOKIES.String.Text
 msgid  "Domain: ${DOMAIN}, Path: ${PATH}, Cookie: ${COOKIE}.\n"
@@ -481,7 +481,7 @@ msgstr "Cookie Reception"
 
 #: source/cookiedg.src#STR_COOKIES_SEND_START.String.Text
 msgid  "%PRODUCTNAME has saved cookies for the server '${HOST}' which will be sent when requesting the document ${PATH}.\nCookies contain information which refers to certain URL classes. They are sent by some servers to %PRODUCTNAME where they are saved when certain documents are accessed. If %PRODUCTNAME loads a document that, according to the URL, corresponds to a class of one of the previously received Cookies, %PRODUCTNAME will send this information to that server. This enables a server to keep track of the status of a WWW application, e.g., when shopping online.\n\nThe following Cookies should be set:\n\n"
-msgstr ""
+msgstr "%PRODUCTNAME ان '${HOST}' سرور لاءِ ڪڪيز سانڍيون آهن، جيڪي ${PATH} دستاويز جي عرضظ وقت موڪليون وينديون \n ڪڪيڙ ۾ اُها معلومات مؤجود آهي جيڪا ڪن URL درجن جو حوالو ڏئي ٿي۔ اهي ڪن سرورن ذريعي %PRODUCTNAME ڏانهن موڪلجن ٿيون جتي ڪجهہ دستاوير ٿيڻ وقت سانڍيو وڃن ٿيون۔ اگر %PRODUCTNAME اگر ان دستاويز کي اڳہ ۾ حاصل ڪيل ڪڪيز مان هک جري سان ميل کائيندڙ URL لوڊ ڪري ٿو تہ %PRODUCTNAME  اها معلومات هن سرور ڏانهن موکليندو۔ اها ڳالهہ سرور کي WWW عرصن جي حالت مثال طور آن لائين تي خريداريءَ سان سنٻنڌ رکندو۔ \n\n هيٺ ڏنل ڪڪيز سيٽ ڪرڻ گهرجن۔ \n\n"
 
 #: source/cookiedg.src#STR_COOKIES_SEND_COOKIES.String.Text
 msgid  "Domain: ${DOMAIN}, Path: ${PATH}, Cookie: ${COOKIE}.\n"

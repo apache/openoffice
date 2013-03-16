@@ -445,11 +445,11 @@ msgstr "~Olib tashlash"
 
 #: source/smres.src#RID_NOMATHTYPEFACEWARNING.WarningBox.Message
 msgid  "The 'StarMath' font has not been installed.\nWithout this font %PRODUCTNAME Math cannot function correctly.\nPlease install this font and restart %PRODUCTNAME Math."
-msgstr ""
+msgstr "\"StarMath\" shrifti oʻrnatilmagan.\nWithout this font %PRODUCTNAME Math cannot function correctly.\nPlease install this font and restart %PRODUCTNAME Math."
 
 #: source/smres.src#RID_DEFAULTSAVEQUERY.QueryBox.Message
 msgid  "Should the changes be saved as defaults?\n\nThese changes will apply for all new formulas."
-msgstr ""
+msgstr "Oʻzgarishlar andoza sifatida saqlansinmi?\n\nUshbu oʻzgarishlar barcha yangi formulalarga qoʻllaniladi."
 
 #: source/smres.src#RID_FONTREGULAR.String.Text
 msgid  "Standard"
@@ -558,6 +558,10 @@ msgstr "Sans"
 #: source/smres.src#RID_FONTMENU.7.MenuItem.Text
 msgid  "Fixed"
 msgstr "Oʻrnatilgan"
+
+#: source/smres.src#CMDBOXWINDOW_TEXT.#define.Text
+msgid  "Commands"
+msgstr "Buyruqlar"
 
 #: source/smres.src#RID_DOCUMENTSTR.String.Text
 msgid  "Formula"
@@ -701,68 +705,51 @@ msgstr "~Sahifaga moslash"
 msgid  "~Scaling"
 msgstr "~Masshtablash"
 
-#: source/smres.src#CMDBOXWINDOW_TEXT.#define.Text
-#, fuzzy
-msgid  "Commands"
-msgstr "Buyruqlar"
-
 #: source/commands.src#RID_COMMANDMENU.RID_UNBINOPS_MENU.MenuItem.Text
-#, fuzzy
 msgid  "~Unary/Binary Operators"
 msgstr "~Birlik/Ikkilik operatorlar"
 
 #: source/commands.src#RID_COMMANDMENU.RID_RELATIONS_MENU.MenuItem.Text
-#, fuzzy
 msgid  "~Relations"
 msgstr "~Bogʻliqliklar"
 
 #: source/commands.src#RID_COMMANDMENU.RID_SETOPERATIONS_MENU.MenuItem.Text
-#, fuzzy
 msgid  "~Set Operations"
 msgstr "~Toʻplam operatsiyalari"
 
 #: source/commands.src#RID_COMMANDMENU.RID_FUNCTIONS_MENU.MenuItem.Text
-#, fuzzy
 msgid  "~Functions"
 msgstr "~Funksiyalar"
 
 #: source/commands.src#RID_COMMANDMENU.RID_FUNCTIONS_MENU.RID_FUNCTIONSOTHER1_MENU.MenuItem.Text
-#, fuzzy
 msgid  "More"
 msgstr "Qoʻshimcha"
 
 #: source/commands.src#RID_COMMANDMENU.RID_OPERATORS_MENU.MenuItem.Text
-#, fuzzy
 msgid  "O~perators"
 msgstr "~Operatorlar"
 
 #: source/commands.src#RID_COMMANDMENU.RID_ATTRIBUTES_MENU.MenuItem.Text
-#, fuzzy
 msgid  "~Attributes"
 msgstr "~Atributlar"
 
 #: source/commands.src#RID_COMMANDMENU.RID_BRACKETS_MENU.MenuItem.Text
-#, fuzzy
 msgid  "~Brackets"
 msgstr "Qa~vslar"
 
 #: source/commands.src#RID_COMMANDMENU.RID_FORMAT_MENU.MenuItem.Text
-#, fuzzy
 msgid  "For~mats"
 msgstr "Format~lar"
 
 #: source/commands.src#RID_COMMANDMENU.RID_FORMAT_MENU.RID_NEWLINE.MenuItem.Text
-#, fuzzy
 msgid  "New Line"
 msgstr "Yangi satr"
 
 #: source/commands.src#RID_COMMANDMENU.RID_FORMAT_MENU.RID_SBLANK.MenuItem.Text
-#, fuzzy
 msgid  "Small Gap"
 msgstr "Kichik bo'shliq"
 
 #: source/commands.src#RID_COMMANDMENU.RID_FORMAT_MENU.RID_BLANK.MenuItem.Text
-#, fuzzy
 msgid  "Gap"
 msgstr "Bo'shliq"
 
@@ -771,7 +758,6 @@ msgid  "nospace {...}"
 msgstr ""
 
 #: source/commands.src#RID_COMMANDMENU.RID_MISC_MENU.MenuItem.Text
-#, fuzzy
 msgid  "~Others"
 msgstr "~Boshqalar"
 

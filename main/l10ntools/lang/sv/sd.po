@@ -53,7 +53,7 @@ msgstr "Måttlinjer"
 
 #: source/core/glob.src#STR_PAGE.String.Text
 msgid  "Slide"
-msgstr "Bild"
+msgstr "Sida"
 
 #: source/core/glob.src#STR_PAGE_NAME.String.Text
 msgid  "Page"
@@ -201,7 +201,7 @@ msgstr "Standard"
 
 #: source/core/glob.src#STR_LAYOUT_DEFAULT_TITLE_NAME.String.Text
 msgid  "Title"
-msgstr "Rubrik"
+msgstr "Titel"
 
 #: source/core/glob.src#STR_STANDARD_STYLESHEET_NAME.String.Text
 msgid  "Default"
@@ -217,7 +217,7 @@ msgstr "Flytta sidor"
 
 #: source/core/glob.src#STR_NOT_ENOUGH_MEMORY.String.Text
 msgid  "Not enough memory!\nThe action will be aborted."
-msgstr ""
+msgstr "Inte tillräckligt med minne!\nÅtgärden avbryts."
 
 #: source/core/glob.src#STR_POOLSHEET_MEASURE.String.Text
 msgid  "Dimension Line"
@@ -257,7 +257,7 @@ msgstr "Brödtext indrag"
 
 #: source/core/glob.src#STR_POOLSHEET_TITLE.String.Text
 msgid  "Title"
-msgstr "Rubrik"
+msgstr "Titel"
 
 #: source/core/glob.src#STR_POOLSHEET_TITLE1.String.Text
 msgid  "Title1"
@@ -341,11 +341,11 @@ msgstr "Filformatfel vid $(ARG1)(rad,kol)."
 
 #: source/core/glob.src#RID_SD_ERRHDL.ERR_CODE ( ERRCODE_CLASS_READ , ERR_FORMAT_FILE_ROWCOL ).String.Text
 msgid  "Format error discovered in the file in sub-document $(ARG1) at position $(ARG2)(row,col)."
-msgstr ""
+msgstr "Formatfel i filen i underdokumentet $(ARG1) vid position $(ARG2)(rad,kol)."
 
 #: source/core/glob.src#RID_SD_ERRHDL.ERR_CODE ( ERRCODE_CLASS_READ , WARN_FORMAT_FILE_ROWCOL ).String.Text
 msgid  "Format error discovered in the file in sub-document $(ARG1) at position $(ARG2)(row,col)."
-msgstr ""
+msgstr "Formatfel i filen i underdokumentet $(ARG1) vid position $(ARG2)(rad,kol)."
 
 #: source/core/glob.src#STR_3DOBJECTBARSHELL.String.Text
 msgid  "3-D Settings"
@@ -413,7 +413,7 @@ msgstr "Standard-HTML med ~ramar"
 
 #: source/filter/html/pubdlg.src#DLG_PUBLISHING.PAGE2_KIOSK.RadioButton.Text
 msgid  "~Automatic"
-msgstr "A~utomatisk"
+msgstr "Aut~omatisk"
 
 #: source/filter/html/pubdlg.src#DLG_PUBLISHING.PAGE2_WEBCAST.RadioButton.Text
 msgid  "~WebCast"
@@ -1225,7 +1225,7 @@ msgstr "Utlösare"
 
 #: source/ui/animations/CustomAnimation.src#STR_CUSTOMANIMATION_LIST_HELPTEXT.String.Text
 msgid  "First select the slide element and then click 'Add...' to add an animation effect."
-msgstr ""
+msgstr "Markera först bildelementet och klicka på \"Lägg till\" om du vill lägga till en animationseffekt."
 
 #: source/ui/animations/SlideTransitionPane.src#DLG_SLIDE_TRANSITION_PANE.Control.Text
 msgid  "Slide Transition"
@@ -1381,19 +1381,19 @@ msgstr "(ingen författare)"
 
 #: source/ui/annotations/annotations.src#STR_ANNOTATION_WRAP_FORWARD.String.Text
 msgid  "%PRODUCTNAME Impress reached the end of the presentation. Do you want to continue at the beginning?"
-msgstr ""
+msgstr "%PRODUCTNAME Impress har nått slutet på presentationen. Vill du fortsätta från början?"
 
 #: source/ui/annotations/annotations.src#STR_ANNOTATION_WRAP_BACKWARD.String.Text
 msgid  "%PRODUCTNAME Impress reached the beginning of the presentation. Do you want to continue at the end?"
-msgstr ""
+msgstr "%PRODUCTNAME Impress har nått början på presentationen. Vill du fortsätta från slutet?"
 
 #: source/ui/annotations/annotations.src#STR_ANNOTATION_WRAP_FORWARD_DRAW.String.Text
 msgid  "%PRODUCTNAME Draw reached the end of the document. Do you want to continue at the beginning?"
-msgstr ""
+msgstr "%PRODUCTNAME Draw har nått slutet på dokumentet. Vill du fortsätta från början?"
 
 #: source/ui/annotations/annotations.src#STR_ANNOTATION_WRAP_BACKWARD_DRAW.String.Text
 msgid  "%PRODUCTNAME Draw reached the beginning of the document. Do you want to continue at the end?"
-msgstr ""
+msgstr "%PRODUCTNAME Draw har nått början på dokumentet. Vill du fortsätta från slutet?"
 
 #: source/ui/annotations/annotations.src#STR_ANNOTATION_UNDO_INSERT.String.Text
 msgid  "Insert Comment"
@@ -1428,8 +1428,8 @@ msgid  "~Table..."
 msgstr "Tabell..."
 
 #: source/ui/app/popup2_tmpl.src#RID_GRAPHIC_TABLE_POPUP.DUMMY.MenuItem.Text
-msgid  "Colu~mn"
-msgstr "Kolu~mn"
+msgid  "~Cell"
+msgstr "~Cell"
 
 #: source/ui/app/popup2_tmpl.src#RID_GRAPHIC_TABLE_POPUP.DUMMY.SID_TABLE_MERGE_CELLS.MenuItem.Text
 msgid  "~Merge"
@@ -1451,6 +1451,10 @@ msgstr "~Mitten"
 msgid  "~Bottom"
 msgstr "~Underst"
 
+#: source/ui/app/popup2_tmpl.src#RID_GRAPHIC_TABLE_POPUP.DUMMY.MenuItem.Text
+msgid  "~Row"
+msgstr "R~ad"
+
 #: source/ui/app/popup2_tmpl.src#RID_GRAPHIC_TABLE_POPUP.DUMMY.SID_TABLE_DISTRIBUTE_ROWS.MenuItem.Text
 msgid  "Space ~Equally"
 msgstr "Fördela ~jämnt"
@@ -1467,6 +1471,10 @@ msgstr "~Infoga..."
 msgid  "~Delete"
 msgstr "~Radera"
 
+#: source/ui/app/popup2_tmpl.src#RID_GRAPHIC_TABLE_POPUP.DUMMY.MenuItem.Text
+msgid  "Colu~mn"
+msgstr "Kolu~mn"
+
 #: source/ui/app/popup2_tmpl.src#RID_GRAPHIC_TABLE_POPUP.DUMMY.SID_TABLE_DISTRIBUTE_COLUMNS.MenuItem.Text
 msgid  "Space ~Equally"
 msgstr "Fördela ~jämnt"
@@ -1482,14 +1490,6 @@ msgstr "~Infoga..."
 #: source/ui/app/popup2_tmpl.src#RID_GRAPHIC_TABLE_POPUP.DUMMY.SID_TABLE_DELETE_COL.MenuItem.Text
 msgid  "~Delete"
 msgstr "~Radera"
-
-#: source/ui/app/popup2_tmpl.src#RID_GRAPHIC_TABLE_POPUP.DUMMY.MenuItem.Text
-msgid  "~Cell"
-msgstr "~Cell"
-
-#: source/ui/app/popup2_tmpl.src#RID_GRAPHIC_TABLE_POPUP.DUMMY.MenuItem.Text
-msgid  "~Row"
-msgstr "R~ad"
 
 #: source/ui/app/strings.src#STR_DRAW_TOOLBOX.String.Text
 msgid  "Drawings Toolbar"
@@ -1617,7 +1617,7 @@ msgstr "Disposition"
 
 #: source/ui/app/strings.src#STR_NOTES_MODE.String.Text
 msgid  "Notes"
-msgstr "Anteckningar"
+msgstr "Anteckningsvy"
 
 #: source/ui/app/strings.src#STR_HANDOUT_MODE.String.Text
 msgid  "Handout"
@@ -1733,7 +1733,7 @@ msgstr "Ange ett namn för det nya linjeslutet:"
 
 #: source/ui/app/strings.src#STR_WARN_NAME_DUPLICATE.String.Text
 msgid  "The name chosen already exists. \nPlease enter another name."
-msgstr ""
+msgstr "Namnet som du har valt finns redan. \nVälj ett annat namn."
 
 #: source/ui/app/strings.src#STR_UNDO_ANIMATION.String.Text
 msgid  "Animation parameters"
@@ -1804,8 +1804,8 @@ msgid  "Insert slides"
 msgstr "Infoga sidor"
 
 #: source/ui/app/strings.src#STR_ASK_DELETE_LAYER.String.Text
-msgid  "Are you sure you want to delete the level "$"?\nNote: All objects on this level will be deleted!"
-msgstr ""
+msgid  "Are you sure you want to delete the level \"$\"?\nNote: All objects on this level will be deleted!"
+msgstr "Vill du verkligen radera nivå '$'?\nAlla objekt på den här nivån kommer också att raderas!"
 
 #: source/ui/app/strings.src#STR_ASK_DELETE_ALL_PICTURES.String.Text
 msgid  "Do you really want to delete all images?"
@@ -1853,7 +1853,7 @@ msgstr "Infoga textram"
 
 #: source/ui/app/strings.src#STR_ACTION_NOTPOSSIBLE.String.Text
 msgid  "This function cannot be run \nwith the selected objects."
-msgstr ""
+msgstr "Funktionen kan inte utföras med \nde markerade objekten"
 
 #: source/ui/app/strings.src#STR_DLG_INSERT_PAGES_FROM_FILE.String.Text
 msgid  "Insert File"
@@ -1865,7 +1865,7 @@ msgstr "Filen kunde inte laddas!"
 
 #: source/ui/app/strings.src#STR_SCALE_OBJECTS.String.Text
 msgid  "The format of the new pages will be adapted.\nDo you want to adapt the objects, too?"
-msgstr ""
+msgstr "De nya sidornas format anpassas.\nVill du anpassa objekten också?"
 
 #: source/ui/app/strings.src#STR_CREATE_PAGES.String.Text
 msgid  "Create slides"
@@ -1885,7 +1885,7 @@ msgstr "~Redigera"
 
 #: source/ui/app/strings.src#RID_UNDO_DELETE_WARNING.FT_UNDO_DELETE_WARNING.FixedText.Text
 msgid  "This action deletes the list of actions that can\nbe undone. Previous changes made to the document are still valid,\nbut cannot be undone. Do you want to continue and\nthus assign the new slide design?"
-msgstr ""
+msgstr "Den här åtgärden raderar listan med arbetssteg som\ngår att ångra. Ändringar som har\ngjorts hittills i dokumentet finns kvar men går\ninte att ångra längre. Vill du fortsätta\noch tilldela den nya sidformatmallen?"
 
 #: source/ui/app/strings.src#RID_UNDO_DELETE_WARNING.CB_UNDO_DELETE_DISABLE.CheckBox.Text
 msgid  "~Do not show this warning again"
@@ -1905,7 +1905,7 @@ msgstr "Dokumentformatet kunde inte ställas in på skrivaren."
 
 #: source/ui/app/strings.src#STR_REMOVE_LINK.String.Text
 msgid  "This graphic is linked to a document. \nDo you want to unlink the graphic in order to edit it?"
-msgstr ""
+msgstr "Det här grafikobjektet är länkat till dokumentet.\nVill du upphäva länken så att du kan redigera grafikobjektet?"
 
 #: source/ui/app/strings.src#STR_IMPORT_GRFILTER_OPENERROR.String.Text
 msgid  "Graphics file cannot be opened"
@@ -2017,7 +2017,7 @@ msgstr "(Disposition)"
 
 #: source/ui/app/strings.src#STR_WARN_SCALE_FAIL.String.Text
 msgid  "The specified scale is invalid.\nDo you want to enter a new one?"
-msgstr ""
+msgstr "Den angivna skalan är ogiltig.\nVill du ange en ny?"
 
 #: source/ui/app/strings.src#STR_CLICK_ACTION_NONE.String.Text
 msgid  "No action"
@@ -2265,7 +2265,7 @@ msgstr "Filnamn utan tillägg"
 
 #: source/ui/app/strings.src#STR_RELEASE_GRAPHICLINK.String.Text
 msgid  "This graphic is linked to a document. Do you want to unlink the graphic in order to edit it?"
-msgstr ""
+msgstr "Det här grafikobjektet är länkat till ett dokument. Vill du upphäva länken så att du kan redigera grafikobjektet?"
 
 #: source/ui/app/strings.src#STR_NEW_CUSTOMSHOW.String.Text
 msgid  "New Custom Slide Show"
@@ -2301,7 +2301,7 @@ msgstr "Det gick inte att bryta upp grupperingarna för alla ritobjekt!"
 
 #: source/ui/app/strings.src#STR_PUBDLG_SAMENAME.String.Text
 msgid  "A design already exists with this name.\nDo you want to replace it?"
-msgstr ""
+msgstr "Det existerar redan en design med samma namn.\nSkall den skrivas över?"
 
 #: source/ui/app/strings.src#STR_HTMLATTR_TEXT.String.Text
 msgid  "Text"
@@ -2417,7 +2417,7 @@ msgstr "Grafikfilter"
 
 #: source/ui/app/strings.src#STR_WARNING_NOSOUNDFILE.String.Text
 msgid  "The file %\nis not a valid sound file !"
-msgstr ""
+msgstr "Fil %\när ingen giltig ljudfil !"
 
 #: source/ui/app/strings.src#STR_UNDO_CONVERT_TO_METAFILE.String.Text
 msgid  "Convert to metafile"
@@ -2631,6 +2631,14 @@ msgstr "Infoga bild"
 msgid  "Insert Movie"
 msgstr "Infoga film"
 
+#: source/ui/app/res_bmp.src#SfxStyleFamiliesRes1.#define.Text
+msgid  "Graphics Styles"
+msgstr "Grafikformat"
+
+#: source/ui/app/res_bmp.src#SfxStyleFamiliesRes2.#define.Text
+msgid  "Presentation Styles"
+msgstr "Presentationsformat"
+
 #: source/ui/app/res_bmp.src#STR_STYLE_FILTER_USED.String.Text
 msgid  "Applied Styles"
 msgstr "Tillämpade stilar"
@@ -2642,14 +2650,6 @@ msgstr "Anpassade stilar"
 #: source/ui/app/res_bmp.src#STR_STYLE_FILTER_ALL.String.Text
 msgid  "All Styles"
 msgstr "Alla stilar"
-
-#: source/ui/app/res_bmp.src#SfxStyleFamiliesRes1.#define.Text
-msgid  "Graphics Styles"
-msgstr "Grafikformat"
-
-#: source/ui/app/res_bmp.src#SfxStyleFamiliesRes2.#define.Text
-msgid  "Presentation Styles"
-msgstr "Presentationsformat"
 
 #: source/ui/app/menuids_tmpl.src#MN_DISTRIBUTE.SID_DISTRIBUTE_DLG.MenuItem.Text
 msgid  "~Distribution..."
@@ -2897,7 +2897,7 @@ msgstr "~Höger"
 
 #: source/ui/app/menuids_tmpl.src#MN_TEXT_ALIGN.DUMMY.SID_ATTR_PARA_ADJUST_CENTER.MenuItem.Text
 msgid  "~Centered"
-msgstr "~Centrerat"
+msgstr "~Centrerad"
 
 #: source/ui/app/menuids_tmpl.src#MN_TEXT_ALIGN.DUMMY.SID_ATTR_PARA_ADJUST_BLOCK.MenuItem.Text
 msgid  "Justified"
@@ -2933,7 +2933,7 @@ msgstr "~Underst"
 
 #: source/ui/app/menuids_tmpl.src#MN_CLOSE_OBJECT.SID_OBJECT_CLOSE.MenuItem.Text
 msgid  "Close ~Object"
-msgstr "Slut ~objekt"
+msgstr "Slut obje~kt"
 
 #: source/ui/app/menuids_tmpl.src#MN_BEZIER.SID_BEZIER_EDIT.MenuItem.Text
 msgid  "Edit ~Points"
@@ -3285,7 +3285,7 @@ msgstr "~Dölj bild"
 
 #: source/ui/app/menuids3_tmpl.src#MN_GROUP_IMPRESS.SID_GROUP.MenuItem.Text
 msgid  "~Group"
-msgstr "~Grupp"
+msgstr "~Gruppera"
 
 #: source/ui/app/menuids3_tmpl.src#MN_UNGROUP_IMPRESS.SID_UNGROUP.MenuItem.Text
 msgid  "~Ungroup"
@@ -3328,8 +3328,8 @@ msgid  "~Table..."
 msgstr "Tabell..."
 
 #: source/ui/app/popup.src#RID_DRAW_TABLEOBJ_INSIDE_POPUP.DUMMY.MenuItem.Text
-msgid  "Colu~mn"
-msgstr "Kolu~mn"
+msgid  "~Cell"
+msgstr "~Cell"
 
 #: source/ui/app/popup.src#RID_DRAW_TABLEOBJ_INSIDE_POPUP.DUMMY.SID_TABLE_MERGE_CELLS.MenuItem.Text
 msgid  "~Merge"
@@ -3351,6 +3351,10 @@ msgstr "~Mitten"
 msgid  "~Bottom"
 msgstr "~Nere"
 
+#: source/ui/app/popup.src#RID_DRAW_TABLEOBJ_INSIDE_POPUP.DUMMY.MenuItem.Text
+msgid  "~Row"
+msgstr "R~ad"
+
 #: source/ui/app/popup.src#RID_DRAW_TABLEOBJ_INSIDE_POPUP.DUMMY.SID_TABLE_DISTRIBUTE_ROWS.MenuItem.Text
 msgid  "Space ~Equally"
 msgstr "Fördela ~jämnt"
@@ -3366,6 +3370,10 @@ msgstr "~Infoga..."
 #: source/ui/app/popup.src#RID_DRAW_TABLEOBJ_INSIDE_POPUP.DUMMY.SID_TABLE_DELETE_ROW.MenuItem.Text
 msgid  "~Delete"
 msgstr "Ta ~bort"
+
+#: source/ui/app/popup.src#RID_DRAW_TABLEOBJ_INSIDE_POPUP.DUMMY.MenuItem.Text
+msgid  "Colu~mn"
+msgstr "Kolu~mn"
 
 #: source/ui/app/popup.src#RID_DRAW_TABLEOBJ_INSIDE_POPUP.DUMMY.SID_TABLE_DISTRIBUTE_COLUMNS.MenuItem.Text
 msgid  "Space ~Equally"
@@ -3439,33 +3447,25 @@ msgstr "Använd i valda bilder"
 msgid  "~Insert Slide"
 msgstr "Infoga sida"
 
-#: source/ui/app/popup.src#RID_DRAW_TABLEOBJ_INSIDE_POPUP.DUMMY.MenuItem.Text
-msgid  "~Cell"
-msgstr "~Cell"
-
-#: source/ui/app/popup.src#RID_DRAW_TABLEOBJ_INSIDE_POPUP.DUMMY.MenuItem.Text
-msgid  "~Row"
-msgstr "R~ad"
-
 #: source/ui/app/sdstring.src#STR_SAR_NOT_FOUND.String.Text
 msgid  "Search key not found."
 msgstr "Sökord hittades inte."
 
 #: source/ui/app/sdstring.src#STR_SAR_WRAP_FORWARD.String.Text
 msgid  "%PRODUCTNAME Impress has searched to the end of the presentation. Do you want to continue at the beginning?"
-msgstr ""
+msgstr "%PRODUCTNAME Impress har sökt till slutet av presentationen. Vill du fortsätta sökningen i början?"
 
 #: source/ui/app/sdstring.src#STR_SAR_WRAP_BACKWARD.String.Text
 msgid  "%PRODUCTNAME Impress has searched to the beginning of the presentation. Do you want to continue at the end?"
-msgstr ""
+msgstr "%PRODUCTNAME Impress har sökt till början av presentationen. Vill du fortsätta sökningen i slutet?"
 
 #: source/ui/app/sdstring.src#STR_SAR_WRAP_FORWARD_DRAW.String.Text
 msgid  "%PRODUCTNAME Draw has searched to the end of the document. Do you want to continue at the beginning?"
-msgstr ""
+msgstr "%PRODUCTNAME Draw har sökt till slutet av dokumentet. Vill du fortsätta sökningen i början?"
 
 #: source/ui/app/sdstring.src#STR_SAR_WRAP_BACKWARD_DRAW.String.Text
 msgid  "%PRODUCTNAME Draw has searched to the beginning of the document. Do you want to continue at the end?"
-msgstr ""
+msgstr "%PRODUCTNAME Draw har sökt till början av dokumentet. Vill du fortsätta sökningen i slutet?"
 
 #: source/ui/app/menuids2_tmpl.src#MN_NEWDOCDIRECT.SID_NEWDOCDIRECT.MenuItem.Text
 msgid  "~New"
@@ -3486,6 +3486,10 @@ msgstr "Ski~cka"
 #: source/ui/app/menuids2_tmpl.src#MN_PAGESETUP.SID_PAGESETUP.MenuItem.Text
 msgid  "~Page..."
 msgstr "~Sida..."
+
+#: source/ui/app/menuids2_tmpl.src#20.#define.Text
+msgid  "~Edit"
+msgstr "~Redigera"
 
 #: source/ui/app/menuids2_tmpl.src#MN_PASTE2.SID_PASTE2.MenuItem.Text
 msgid  "Paste ~Special..."
@@ -3510,6 +3514,10 @@ msgstr "Radera nivå..."
 #: source/ui/app/menuids2_tmpl.src#MN_MANAGE_LINKS.SID_MANAGE_LINKS.MenuItem.Text
 msgid  "Lin~ks..."
 msgstr "~Länkar..."
+
+#: source/ui/app/menuids2_tmpl.src#23.#define.Text
+msgid  "~View"
+msgstr "Vi~sa"
 
 #: source/ui/app/menuids2_tmpl.src#MN_TOGGLETOOLBAR.SID_TOGGLETOOLBAR.MenuItem.Text
 msgid  "Main ~Toolbar"
@@ -3574,6 +3582,10 @@ msgstr "Arbet~sområde"
 #: source/ui/app/menuids2_tmpl.src#MNSUB_MASTERPAGE.MN_SUB_MASTERPAGE.MenuItem.Text
 msgid  "~Master"
 msgstr "Bakgrund"
+
+#: source/ui/app/menuids2_tmpl.src#21.#define.Text
+msgid  "~Insert"
+msgstr "~Infoga"
 
 #: source/ui/app/menuids2_tmpl.src#MN_INSERTPAGE.SID_INSERTPAGE.MenuItem.Text
 msgid  "Slid~e..."
@@ -3659,6 +3671,10 @@ msgstr "F~il..."
 msgid  "Fiel~ds"
 msgstr "~Fältkommando"
 
+#: source/ui/app/menuids2_tmpl.src#22.#define.Text
+msgid  "F~ormat"
+msgstr "F~ormat"
+
 #: source/ui/app/menuids2_tmpl.src#MN_TEXTATTR_DLG.SID_TEXTATTR_DLG.MenuItem.Text
 msgid  "Te~xt..."
 msgstr "~Text..."
@@ -3682,6 +3698,14 @@ msgstr "Ändra sidlayout..."
 #: source/ui/app/menuids2_tmpl.src#MNSUB_TEMPLATES.MN_SUB_TEMPLATES.MenuItem.Text
 msgid  "Styl~es"
 msgstr "Format~mallar"
+
+#: source/ui/app/menuids2_tmpl.src#ITEM_TOOLS_ID.#define.Text
+msgid  "~Tools"
+msgstr "~Verktyg"
+
+#: source/ui/app/menuids2_tmpl.src#26.#define.Text
+msgid  "~Slide Show"
+msgstr "Bildskärms~presentation"
 
 #: source/ui/app/menuids2_tmpl.src#MN_SPELLING.SID_SPELL_DIALOG.MenuItem.Text
 msgid  "~Check..."
@@ -3722,6 +3746,10 @@ msgstr "Interaktion..."
 #: source/ui/app/menuids2_tmpl.src#MNSUB_SPELLING.MN_SUB_SPELLING.MenuItem.Text
 msgid  "~Spellcheck"
 msgstr "~Rättstavning"
+
+#: source/ui/app/menuids2_tmpl.src#24.#define.Text
+msgid  "~Modify"
+msgstr "Ä~ndra"
 
 #: source/ui/app/menuids2_tmpl.src#MN_MOREFRONT.SID_MOREFRONT.MenuItem.Text
 msgid  "Bring ~Forward"
@@ -3794,34 +3822,6 @@ msgstr "~Visningskvalitet"
 #: source/ui/app/menuids2_tmpl.src#MNSUB_PREVIEW_OUTPUT_QUALITY.MN_SUB_PREVIEW_OUTPUT_QUALITY.ItemList.Text
 msgid  "Pre~view Mode"
 msgstr "Fö~rhandsvisning visningskvalitet"
-
-#: source/ui/app/menuids2_tmpl.src#20.#define.Text
-msgid  "~Edit"
-msgstr "~Redigera"
-
-#: source/ui/app/menuids2_tmpl.src#23.#define.Text
-msgid  "~View"
-msgstr "Vi~sa"
-
-#: source/ui/app/menuids2_tmpl.src#21.#define.Text
-msgid  "~Insert"
-msgstr "~Infoga"
-
-#: source/ui/app/menuids2_tmpl.src#22.#define.Text
-msgid  "F~ormat"
-msgstr "F~ormat"
-
-#: source/ui/app/menuids2_tmpl.src#ITEM_TOOLS_ID.#define.Text
-msgid  "~Tools"
-msgstr "~Verktyg"
-
-#: source/ui/app/menuids2_tmpl.src#26.#define.Text
-msgid  "~Slide Show"
-msgstr "Bildskärms~presentation"
-
-#: source/ui/app/menuids2_tmpl.src#24.#define.Text
-msgid  "~Modify"
-msgstr "Ä~ndra"
 
 #: source/ui/dlg/sdpreslt.src#DLG_PRESLT.FT_LAYOUT.FixedText.Text
 msgid  "~Select a slide design"
@@ -4445,7 +4445,7 @@ msgstr "Linje"
 
 #: source/ui/dlg/prltempl.src#TAB_PRES_LAYOUT_TEMPLATE.1.RID_SVXPAGE_AREA.PageItem.Text
 msgid  "Area"
-msgstr "Område"
+msgstr "Yta"
 
 #: source/ui/dlg/prltempl.src#TAB_PRES_LAYOUT_TEMPLATE.1.RID_SVXPAGE_SHADOW.PageItem.Text
 msgid  "Shadow"
@@ -4687,6 +4687,10 @@ msgstr "Bildnummer"
 msgid  "Master Elements"
 msgstr "Huvudlayout"
 
+#: source/ui/dlg/tpoption.src#SCALE_TEXT.#define.Text
+msgid  "Scale"
+msgstr "Skala"
+
 #: source/ui/dlg/tpoption.src#TP_OPTIONS_CONTENTS.TabPage.Text
 msgid  "Contents"
 msgstr "Innehåll"
@@ -4781,7 +4785,7 @@ msgstr "An~vänd skrivarmått för dokumentformatering"
 
 #: source/ui/dlg/tpoption.src#TP_OPTIONS_MISC.CB_MERGE_PARA_DIST.CheckBox.Text
 msgid  "Add ~spacing between paragraphs and tables (in current document)"
-msgstr ""
+msgstr "A~ddera avstånd mellan stycken och tabeller (i det aktuella dokumentet)"
 
 #: source/ui/dlg/tpoption.src#TP_OPTIONS_MISC.FT_ORIGINAL.FixedText.Text
 msgid  "Original"
@@ -4802,10 +4806,6 @@ msgstr "Sid~bredd"
 #: source/ui/dlg/tpoption.src#TP_OPTIONS_MISC.FT_PAGEHEIGHT.FixedText.Text
 msgid  "Page ~height"
 msgstr "S~idhöjd"
-
-#: source/ui/dlg/tpoption.src#SCALE_TEXT.#define.Text
-msgid  "Scale"
-msgstr "Skala"
 
 #: source/ui/dlg/morphdlg.src#DLG_MORPH.GRP_PRESET.FixedLine.Text
 msgid  "Settings"
@@ -5056,22 +5056,6 @@ msgid  "Alignment"
 msgstr "Anpassning"
 
 #: source/ui/dlg/animobjs.src#FLT_WIN_ANIMATION.LB_ADJUSTMENT.Default.StringList.item
-msgid  "Bottom Right"
-msgstr "Höger/nere"
-
-#: source/ui/dlg/animobjs.src#FLT_WIN_ANIMATION.BTN_CREATE_GROUP.PushButton.Text
-msgid  "Create"
-msgstr "Skapa"
-
-#: source/ui/dlg/animobjs.src#FLT_WIN_ANIMATION.GRP_ANIMATION_GROUP.FixedLine.Text
-msgid  "Animation group"
-msgstr "Animationsgrupp"
-
-#: source/ui/dlg/animobjs.src#FLT_WIN_ANIMATION.STR_DISPLAY.String.Text
-msgid  "Preview"
-msgstr "~Förhandsvisning"
-
-#: source/ui/dlg/animobjs.src#FLT_WIN_ANIMATION.LB_ADJUSTMENT.Default.StringList.item
 msgid  "Top Left"
 msgstr "Vänster/uppe"
 
@@ -5103,6 +5087,22 @@ msgstr "Höger/uppe"
 msgid  "Right"
 msgstr "Till höger"
 
+#: source/ui/dlg/animobjs.src#FLT_WIN_ANIMATION.LB_ADJUSTMENT.Default.StringList.item
+msgid  "Bottom Right"
+msgstr "Höger/nere"
+
+#: source/ui/dlg/animobjs.src#FLT_WIN_ANIMATION.BTN_CREATE_GROUP.PushButton.Text
+msgid  "Create"
+msgstr "Skapa"
+
+#: source/ui/dlg/animobjs.src#FLT_WIN_ANIMATION.GRP_ANIMATION_GROUP.FixedLine.Text
+msgid  "Animation group"
+msgstr "Animationsgrupp"
+
+#: source/ui/dlg/animobjs.src#FLT_WIN_ANIMATION.STR_DISPLAY.String.Text
+msgid  "Preview"
+msgstr "~Förhandsvisning"
+
 #: source/ui/dlg/prntopts.src#TP_PRINT_OPTIONS.TabPage.Text
 msgid  "Options"
 msgstr "Alternativ"
@@ -5133,7 +5133,7 @@ msgstr "Utmatningskvalitet"
 
 #: source/ui/dlg/prntopts.src#TP_PRINT_OPTIONS.RBT_COLOR.RadioButton.Text
 msgid  "Default"
-msgstr "St~andard"
+msgstr "Standa~rd"
 
 #: source/ui/dlg/prntopts.src#TP_PRINT_OPTIONS.RBT_GRAYSCALE.RadioButton.Text
 msgid  "Gra~yscale"
@@ -5465,7 +5465,7 @@ msgstr "Anpassa till utskrivbar sidstorlek"
 
 #: source/ui/view/DocumentRenderer.src#_STR_IMPRESS_PRINT_UI_OPTIONS._STR_IMPRESS_PRINT_UI_PAGE_OPTIONS_CHOICES.item3.ItemList.item
 msgid  "Distribute on multiple sheets of paper"
-msgstr "Fördela på flera sidor"
+msgstr "Fördela på flera utskriftsidor"
 
 #: source/ui/view/DocumentRenderer.src#_STR_IMPRESS_PRINT_UI_OPTIONS._STR_IMPRESS_PRINT_UI_PAGE_OPTIONS_CHOICES.item4.ItemList.item
 msgid  "Tile sheet of paper with repeated slides"

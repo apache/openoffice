@@ -136,6 +136,10 @@ msgid  "km"
 msgstr "km"
 
 #: source/src/units.src#SV_FUNIT_STRINGS.FUNIT_TWIP.ItemList.item
+msgid  "twips"
+msgstr "twips"
+
+#: source/src/units.src#SV_FUNIT_STRINGS.FUNIT_TWIP.ItemList.item
 msgid  "twip"
 msgstr "twip"
 
@@ -148,32 +152,16 @@ msgid  "pi"
 msgstr "pi"
 
 #: source/src/units.src#SV_FUNIT_STRINGS.FUNIT_INCH.ItemList.item
-msgid  "inch"
-msgstr "इञ्च्"
-
-#: source/src/units.src#SV_FUNIT_STRINGS.FUNIT_FOOT.ItemList.item
-msgid  "feet"
-msgstr "फीट्"
-
-#: source/src/units.src#SV_FUNIT_STRINGS.FUNIT_MILE.ItemList.item
-msgid  "mile"
-msgstr "मैल्"
-
-#: source/src/units.src#SV_FUNIT_STRINGS.FUNIT_PERCENT.ItemList.item
-msgid  "%"
-msgstr "%"
-
-#: source/src/units.src#SV_FUNIT_STRINGS.FUNIT_TWIP.ItemList.item
-msgid  "twips"
-msgstr "twips"
-
-#: source/src/units.src#SV_FUNIT_STRINGS.FUNIT_INCH.ItemList.item
-msgid  """
-msgstr ""
+msgid  "\""
+msgstr "\""
 
 #: source/src/units.src#SV_FUNIT_STRINGS.FUNIT_INCH.ItemList.item
 msgid  "in"
 msgstr "in"
+
+#: source/src/units.src#SV_FUNIT_STRINGS.FUNIT_INCH.ItemList.item
+msgid  "inch"
+msgstr "इञ्च्"
 
 #: source/src/units.src#SV_FUNIT_STRINGS.FUNIT_FOOT.ItemList.item
 msgid  "'"
@@ -187,13 +175,25 @@ msgstr "ft"
 msgid  "foot"
 msgstr "फुट्"
 
+#: source/src/units.src#SV_FUNIT_STRINGS.FUNIT_FOOT.ItemList.item
+msgid  "feet"
+msgstr "फीट्"
+
 #: source/src/units.src#SV_FUNIT_STRINGS.FUNIT_MILE.ItemList.item
 msgid  "miles"
 msgstr "मैल्स्"
 
+#: source/src/units.src#SV_FUNIT_STRINGS.FUNIT_MILE.ItemList.item
+msgid  "mile"
+msgstr "मैल्"
+
+#: source/src/units.src#SV_FUNIT_STRINGS.FUNIT_PERCENT.ItemList.item
+msgid  "%"
+msgstr "%"
+
 #: source/src/stdtext.src#SV_STDTEXT_SERVICENOTAVAILABLE.String.Text
 msgid  "The component (%s) could not be loaded.\nPlease start setup with the repair option."
-msgstr ""
+msgstr "अवयवं(%s) लोड् कर्तुं न शक्यते । \nकृपया पुनःसन्धानविकल्पेन सह स्थापनां प्रारभस्व।"
 
 #: source/src/stdtext.src#SV_STDTEXT_DONTHINTAGAIN.String.Text
 msgid  "Do not show this information again."
@@ -213,11 +213,11 @@ msgstr "अशुद्धसंस्करणम्"
 
 #: source/src/stdtext.src#SV_ACCESSERROR_BRIDGE_MSG.String.Text
 msgid  "%PRODUCTNAME %PRODUCTVERSION requires a Java Access Bridge 1.0.3 or later version to support accessibility."
-msgstr ""
+msgstr "प्राप्तिसमर्थनाय %PRODUCTNAME %PRODUCTVERSION जावा ऐक्सस् ब्रिड्ज् 1.0.3 तदधिकं वा वाञ्छति।"
 
 #: source/src/stdtext.src#SV_ACCESSERROR_OK_CANCEL_MSG.String.Text
 msgid  "Click '%OK' to start %PRODUCTNAME %PRODUCTVERSION without accessibility support, or click '%CANCEL' to exit %PRODUCTNAME %PRODUCTVERSION."
-msgstr ""
+msgstr "प्राप्तिसमर्थनं विना %PRODUCTNAME %PRODUCTVERSION प्रारम्भाय '%OK' क्लिक्कुरु, अथवा %PRODUCTNAME %PRODUCTVERSION तः निर्गमनार्थं '%CANCEL' क्लिक्कुरु।"
 
 #: source/src/stdtext.src#SV_ACCESSERROR_MISSING_BRIDGE.String.Text
 msgid  "No Java Access Bridge"
@@ -229,7 +229,7 @@ msgstr "दोषयुक्तं जावा-संस्थापनम्"
 
 #: source/src/stdtext.src#SV_ACCESSERROR_JAVA_MSG.String.Text
 msgid  "%PRODUCTNAME %PRODUCTVERSION requires Java 1.4.0_02 or later version to support accessibility."
-msgstr ""
+msgstr "प्राप्तिसमर्थनाय %PRODUCTNAME %PRODUCTVERSION जावा 1.4.0_02 तदधिकं वा वाञ्छति।"
 
 #: source/src/stdtext.src#SV_ACCESSERROR_MISSING_JAVA.String.Text
 msgid  "No Java Installation"
@@ -261,7 +261,7 @@ msgstr "ऐच्छिकाः..."
 
 #: source/src/stdtext.src#SV_EDIT_WARNING_BOX.WarningBox.Message
 msgid  "The inserted text exceeded the maximum length of this text field. The text was truncated."
-msgstr ""
+msgstr "अस्य विषयक्षेत्रस्य अधिकतमदैर्घ्यं समावेशितविषयम् अतिक्रामति। विषयः त्रुटितः आसीत्।"
 
 #: source/src/stdtext.src#SV_MAC_SCREENNNAME.String.Text
 msgid  "Screen %d"

@@ -437,7 +437,7 @@ msgstr "FACTDOUBLE"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Workday.1.String.Text
 msgid  "Returns the serial number of the date before or after a specified number of workdays"
-msgstr ""
+msgstr "ส่งกลับหมายเลขลำดับของวันที่ก่อนหรือหลังจากจำนวนวันทำงานที่ระบุ"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Workday.2.String.Text
 msgid  "Start date"
@@ -457,7 +457,7 @@ msgstr "จำนวนวันทำงานก่อนหรือหลั
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Workday.6.String.Text
 msgid  "Holidays"
-msgstr "วันหยุดนักขัตฤกษ์"
+msgstr "วันหยุด"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Workday.7.String.Text
 msgid  "List of date values of days off (vacation, holidays, etc.)"
@@ -465,7 +465,7 @@ msgstr "รายการค่าวันที่ของวันหยุ
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Yearfrac.1.String.Text
 msgid  "Returns the number of whole days between 'start date' and 'end date' as a year fraction"
-msgstr ""
+msgstr "ส่งกลับจำนวนวันทั้งหมดระหว่าง 'วันเริ่มต้น' และ 'วันสิ้นสุด' เป็นเศษส่วนของปีหนึ่ง"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Yearfrac.2.String.Text
 msgid  "Start date"
@@ -493,7 +493,7 @@ msgstr "หลักเกณฑ์สำหรับการกำหนดว
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Edate.1.String.Text
 msgid  "Returns the serial number of the date that is a specified number of months before or after the start date"
-msgstr ""
+msgstr "ส่งกลับหมายเลขลำดับของวันที่ระบุจำนวนเดือนก่อนและหลังจากวันที่เริ่มต้น"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Edate.2.String.Text
 msgid  "Start date"
@@ -513,7 +513,7 @@ msgstr "จำนวนเดือนก่อนหรือหลังจา
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Weeknum.1.String.Text
 msgid  "Returns the number of the calendar week in which the specified date occurs."
-msgstr ""
+msgstr "ส่งกลับจำนวนสัปดาห์ตามปฏิทินในวันที่ระบุที่เกิดขึ้น"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Weeknum.2.String.Text
 msgid  "Date"
@@ -533,7 +533,7 @@ msgstr "ตัวเลขจาก 1 ถึง 3 ที่ระบุวัน
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Eomonth.1.String.Text
 msgid  "Returns the serial number of the last day of the month that comes a certain number of months before or after the start date"
-msgstr ""
+msgstr "ส่งกลับหมายเลขลำดับของวันสุดท้ายของเดือนที่มากับจำนวนเดือนที่แน่นอนก่อนหรือหลังจากวันที่เริ่มต้น"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Eomonth.2.String.Text
 msgid  "Start date"
@@ -577,7 +577,7 @@ msgstr "วันหยุดนักขัตฤกษ์"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Networkdays.7.String.Text
 msgid  "List of date values representing days off (vacation, holidays, etc.)"
-msgstr ""
+msgstr "รายการค่าของวันที่แสดงถึงวันหยุด (วันหยุดพักผ่อน, วันหยุดนักขัตฤกษ์, ฯลฯ)"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Iseven.1.String.Text
 msgid  "Returns the value 'true' if the number is even"
@@ -613,7 +613,7 @@ msgstr "ตัวเลข"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Multinomial.3.String.Text
 msgid  "Number or list of numbers for which you want the multinomial coefficient"
-msgstr ""
+msgstr "จำนวนรายการตัวเลขที่คุณต้องการสัมประสิทธิ์พหุนาม"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Seriessum.1.String.Text
 msgid  "Returns the sum of a power series"
@@ -649,7 +649,7 @@ msgstr "สัมประสิทธิ์"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Seriessum.9.String.Text
 msgid  "Set of coefficients by which each successive power of the variable x is multiplied"
-msgstr ""
+msgstr "ชุดสัมประสิทธิ์โดยกำลังต่อเนื่องแต่ละจำนวนของตัวแปร x ที่ถูกคูณอยู่"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Quotient.1.String.Text
 msgid  "Returns the integer portion of a division"
@@ -661,7 +661,7 @@ msgstr "เศษ"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Quotient.3.String.Text
 msgid  "The dividend"
-msgstr "จำนวนที่ถูกหาร"
+msgstr "ตัวตั้งหาร"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Quotient.4.String.Text
 msgid  "Denominator"
@@ -837,7 +837,7 @@ msgstr "ตัวเลข"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Bin2Oct.3.String.Text
 msgid  "The binary number to be converted (as text)"
-msgstr "แปลงเลขฐานสอง (เป็นข้อความ)"
+msgstr "แปลงตัวเลขฐานสอง (เป็นข้อความ)"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Bin2Oct.4.String.Text
 msgid  "Places"
@@ -941,7 +941,7 @@ msgstr "ตัวเลข"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Dec2Bin.3.String.Text
 msgid  "The decimal integer to be converted"
-msgstr "แปลงจำนวนเต็มฐานสิบ"
+msgstr "แปลงเลขฐานสิบ"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Dec2Bin.4.String.Text
 msgid  "Places"
@@ -981,7 +981,7 @@ msgstr "ตัวเลข"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Dec2Oct.3.String.Text
 msgid  "The decimal number"
-msgstr "ตัวเลขมีทศนิยม"
+msgstr "เลขฐานสิบ"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Dec2Oct.4.String.Text
 msgid  "Places"
@@ -1173,7 +1173,7 @@ msgstr "กำลังที่จำนวนเชิงซ้อนถูก
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Imargument.1.String.Text
 msgid  "Returns the argument theta, an angle expressed in radians"
-msgstr ""
+msgstr "ส่งกลับเธตะของอาร์กิวเม้นท์, มุมที่อธิบายในส่วนของวงกลมที่มีความกว้างเท่ากับรัศมี"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Imargument.2.String.Text
 msgid  "Complex number"
@@ -1517,7 +1517,7 @@ msgstr "หน่วยวัดสำหรับผลลัพธ์"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Amordegrc.1.String.Text
 msgid  "Returns the prorated linear depreciation of an asset for each accounting period"
-msgstr ""
+msgstr "ส่งกลับค่าเสื่อมราคาสินทรัพย์แบบเส้นตรงตามสัดส่วนสำหรับแต่ละงวดบัญชี"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Amordegrc.2.String.Text
 msgid  "Cost"
@@ -1577,7 +1577,7 @@ msgstr "หลักเกณฑ์ของปีที่ใช้"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Amorlinc.1.String.Text
 msgid  "Returns the prorated linear depreciation of an asset for each accounting period"
-msgstr ""
+msgstr "ส่งกลับค่าเสื่อมราคาของสินทรัพย์แบบเส้นตรงตามสัดส่วนสำหรับแต่ละงวดบัญชี"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Amorlinc.2.String.Text
 msgid  "Cost"
@@ -1657,11 +1657,11 @@ msgstr "วันแรกของดอกเบี้ยเงินประ
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Accrint.6.String.Text
 msgid  "Settlement"
-msgstr "ชำระบัญชีี้"
+msgstr "ชำระบัญชี"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Accrint.7.String.Text
 msgid  "The settlement"
-msgstr "ชำระบัญชีี้"
+msgstr "ชำระบัญชี"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Accrint.8.String.Text
 msgid  "Rate"
@@ -1673,7 +1673,7 @@ msgstr "อัตรา"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Accrint.10.String.Text
 msgid  "Par"
-msgstr "พาร์"
+msgstr "ค่าพาร์"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Accrint.11.String.Text
 msgid  "The par value"
@@ -1697,7 +1697,7 @@ msgstr "หลักเกณฑ์"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Accrintm.1.String.Text
 msgid  "Returns the accrued interest for a security that pays interest at maturity"
-msgstr ""
+msgstr "ส่งกลับดอกเบี้ยที่เพิ่มพูนสำหรับเงินประกันที่จ่ายดอกเบี้ย ณ วันครบกำหนด"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Accrintm.2.String.Text
 msgid  "Issue"
@@ -1709,11 +1709,11 @@ msgstr "วันที่มีผล"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Accrintm.4.String.Text
 msgid  "Settlement"
-msgstr "ชำระบัญชีี้"
+msgstr "ชำระบัญชี"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Accrintm.5.String.Text
 msgid  "The settlement"
-msgstr "ชำระบัญชีี้"
+msgstr "ชำระบัญชี"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Accrintm.6.String.Text
 msgid  "Rate"
@@ -1745,11 +1745,11 @@ msgstr "ส่งกลับจำนวนเงินที่จ่าย �
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Received.2.String.Text
 msgid  "Settlement"
-msgstr "ชำระบัญชีี้"
+msgstr "ชำระบัญชี"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Received.3.String.Text
 msgid  "The settlement"
-msgstr "ชำระบัญชี"
+msgstr "ชำระบัญชีี้"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Received.4.String.Text
 msgid  "Maturity"
@@ -1761,11 +1761,11 @@ msgstr "ครบกำหนด"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Received.6.String.Text
 msgid  "Investment"
-msgstr "การลงทุน"
+msgstr "ลงทุน"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Received.7.String.Text
 msgid  "The investment"
-msgstr "การลงทุน"
+msgstr "ลงทุน"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Received.8.String.Text
 msgid  "Discount"
@@ -1789,11 +1789,11 @@ msgstr "ส่งกลับอัตราส่วนลดสำหรับ
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Disc.2.String.Text
 msgid  "Settlement"
-msgstr "ชำระบัญชีี้"
+msgstr "ชำระบัญชี"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Disc.3.String.Text
 msgid  "The settlement"
-msgstr "ชำระบัญชีี้"
+msgstr "ชำระบัญชี"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Disc.4.String.Text
 msgid  "Maturity"
@@ -1829,15 +1829,15 @@ msgstr "หลักเกณฑ์"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Duration.1.String.Text
 msgid  "Returns the annual Macaulay duration of a security with periodic interest payments"
-msgstr ""
+msgstr "ส่งกลับ Macauley ประจำปีระยะเวลาเงินประกันด้วยการชำระดอกเบี้ยเป็นรายงวด"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Duration.2.String.Text
 msgid  "Settlement"
-msgstr "ชำระบัญชีี้"
+msgstr "ชำระบัญชี"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Duration.3.String.Text
 msgid  "The settlement"
-msgstr "ชำระบัญชีี้"
+msgstr "ชำระบัญชี"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Duration.4.String.Text
 msgid  "Maturity"
@@ -1901,7 +1901,7 @@ msgstr "งวด"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Cumprinc.1.String.Text
 msgid  "Returns the cumulative principal on a loan to be paid between two periods"
-msgstr ""
+msgstr "ส่งกลับหลักการสะสมเงินกู้ที่จ่ายระหว่างงวดสองงวด"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Cumprinc.2.String.Text
 msgid  "Rate"
@@ -1937,11 +1937,11 @@ msgstr "งวดเริ่มต้น"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Cumprinc.10.String.Text
 msgid  "End period"
-msgstr "งวดสุดท้าย"
+msgstr "งวดสิ้นสุด"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Cumprinc.11.String.Text
 msgid  "The end period"
-msgstr "งวดสุดท้าย"
+msgstr "งวดสิ้นสุด"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Cumprinc.12.String.Text
 msgid  "Type"
@@ -2005,15 +2005,15 @@ msgstr "ชนิดของการครบกำหนด"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Price.1.String.Text
 msgid  "Returns the price per 100 currency units face value of a security that pays periodic interest"
-msgstr ""
+msgstr "ส่งกลับราคาต่อ 100 หน่วยเงิน ของเงินประกันที่จ่ายดอกเบี้ยเป็นรายงวด"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Price.2.String.Text
 msgid  "Settlement"
-msgstr "ชำระบัญชีี้"
+msgstr "ชำระบัญชี"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Price.3.String.Text
 msgid  "The settlement"
-msgstr "ชำระบัญชีี้"
+msgstr "ชำระบัญชี"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Price.4.String.Text
 msgid  "Maturity"
@@ -2065,7 +2065,7 @@ msgstr "หลักเกณฑ์"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Pricedisc.1.String.Text
 msgid  "Returns the price per 100 currency units face value of a discounted security"
-msgstr ""
+msgstr "ส่งกลับราคาต่อ 100 หน่วยเงิน ของเงินประกันที่มีส่วนลด"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Pricedisc.2.String.Text
 msgid  "Settlement"
@@ -2073,7 +2073,7 @@ msgstr "ชำระบัญชี"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Pricedisc.3.String.Text
 msgid  "The settlement"
-msgstr "ชำระบัญชี"
+msgstr "ชำระบัญชีี้"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Pricedisc.4.String.Text
 msgid  "Maturity"
@@ -2109,15 +2109,15 @@ msgstr "หลักเกณฑ์"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Pricemat.1.String.Text
 msgid  "Returns the price per 100 currency units face value of a security that pays interest at maturity"
-msgstr ""
+msgstr "ส่งกลับราคาต่อ 100 หน่วยเงิน ของเงินประกันที่จ่ายดอกเบี้ย ณ วันครบกำหนด"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Pricemat.2.String.Text
 msgid  "Settlement"
-msgstr "ชำระบัญชี"
+msgstr "ชำระบัญชีี้"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Pricemat.3.String.Text
 msgid  "The settlement"
-msgstr "ชำระบัญชี"
+msgstr "ชำระบัญชีี้"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Pricemat.4.String.Text
 msgid  "Maturity"
@@ -2161,7 +2161,7 @@ msgstr "หลักเกณฑ์"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Mduration.1.String.Text
 msgid  "Returns the Macaulay modified duration for a security with an assumed par value of 100 currency units"
-msgstr ""
+msgstr "ส่งกลับ Macauley ที่แก้ไขระยะเวลาสำหรับเงินประกันด้วยที่มีค่าพาร์ 100 หน่วยเงิน"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Mduration.2.String.Text
 msgid  "Settlement"
@@ -2169,7 +2169,7 @@ msgstr "ชำระบัญชี"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Mduration.3.String.Text
 msgid  "The settlement"
-msgstr "ชำระบัญชีี้"
+msgstr "ชำระบัญชี"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Mduration.4.String.Text
 msgid  "Maturity"
@@ -2233,7 +2233,7 @@ msgstr "งวด"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Dollarfr.1.String.Text
 msgid  "Converts a price expressed as a decimal into a price expressed as a fraction"
-msgstr ""
+msgstr "แปลงราคาที่เป็นทศนิยมเป็นราคาที่เป็นเศษส่วน"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Dollarfr.2.String.Text
 msgid  "Decimal dollar"
@@ -2253,7 +2253,7 @@ msgstr "ตัวหาร"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Dollarde.1.String.Text
 msgid  "Converts a price expressed as a fraction into a price expressed as a decimal"
-msgstr ""
+msgstr "แปลงราคาที่เป็นเศษส่วนเป็นราคาที่เป็นทศนิยม"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Dollarde.2.String.Text
 msgid  "Fractional dollar"
@@ -2281,7 +2281,7 @@ msgstr "ชำระบัญชีี้"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Yield.3.String.Text
 msgid  "The settlement"
-msgstr "ชำระบัญชี"
+msgstr "ชำระบัญชีี้"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Yield.4.String.Text
 msgid  "Maturity"
@@ -2513,7 +2513,7 @@ msgstr "ราคา"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Oddfprice.1.String.Text
 msgid  "Returns the price per $100 face value of a security with an odd first period"
-msgstr ""
+msgstr "ส่งกลับราคาต่อ 100 หน่วยเงิน ของเงินประกันด้วยงวดแรกคี่"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Oddfprice.2.String.Text
 msgid  "Settlement"
@@ -2545,7 +2545,7 @@ msgstr "คูปองแรก"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Oddfprice.9.String.Text
 msgid  "The first coupon date"
-msgstr "วันที่แรกของคูปอง"
+msgstr "วันที่ของคูปองแรก"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Oddfprice.10.String.Text
 msgid  "Rate"
@@ -2593,11 +2593,11 @@ msgstr "ส่งกลับผลที่งอกเงยของเงิ
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Oddfyield.2.String.Text
 msgid  "Settlement"
-msgstr "ชำระบัญชี"
+msgstr "ชำระบัญชีี้"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Oddfyield.3.String.Text
 msgid  "The settlement"
-msgstr "ชำระบัญชี"
+msgstr "ชำระบัญชีี้"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Oddfyield.4.String.Text
 msgid  "Maturity"
@@ -2665,15 +2665,15 @@ msgstr "หลักเกณฑ์"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Oddlprice.1.String.Text
 msgid  "Returns the price per $100 face value of a security with an odd last period"
-msgstr ""
+msgstr "ส่งกลับราคาต่อ 100 หน่วยเงิน ของเงินประกันด้วยงวดคี่สุดท้าย"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Oddlprice.2.String.Text
 msgid  "Settlement"
-msgstr "ชำระบัญชี"
+msgstr "ชำระบัญชีี้"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Oddlprice.3.String.Text
 msgid  "The settlement"
-msgstr "ชำระบัญชีี้"
+msgstr "ชำระบัญชี"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Oddlprice.4.String.Text
 msgid  "Maturity"
@@ -2801,7 +2801,7 @@ msgstr "หลักเกณฑ์"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Xirr.1.String.Text
 msgid  "Returns the internal rate of return for a non-periodic schedule of payments"
-msgstr ""
+msgstr "ส่งกลับอัตราผลตอบแทนภายในสำหรับกำหนดการชำระเงินแบบไม่เป็นรายงวด"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Xirr.2.String.Text
 msgid  "Values"
@@ -2937,7 +2937,7 @@ msgstr "หลักเกณฑ์"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Coupdays.1.String.Text
 msgid  "Returns the number of days in the coupon period containing the settlement date"
-msgstr ""
+msgstr "ส่งกลับจำนวนวันในงวดของคูปองมีวันที่ชำระบัญชี"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Coupdays.2.String.Text
 msgid  "Settlement"
@@ -2973,7 +2973,7 @@ msgstr "หลักเกณฑ์"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Coupdaysnc.1.String.Text
 msgid  "Returns the number of days from the settlement date to the next coupon date"
-msgstr ""
+msgstr "ส่งกลับจำนวนวันจากวันชำระบัญชีถึงวันถัดไปของคูปอง"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Coupdaysnc.2.String.Text
 msgid  "Settlement"
@@ -3009,7 +3009,7 @@ msgstr "หลักเกณฑ์"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Coupdaybs.1.String.Text
 msgid  "Returns the number of days from the beginning of the coupon period to the settlement date"
-msgstr ""
+msgstr "ส่งกลับจำนวนวันจากงวดแรกของคูปองถึงวันชำระบัญชี"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Coupdaybs.2.String.Text
 msgid  "Settlement"
@@ -3081,7 +3081,7 @@ msgstr "หลักเกณฑ์"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Coupnum.1.String.Text
 msgid  "Returns the number of coupons payable between the settlement and maturity dates"
-msgstr ""
+msgstr "ส่งกลับจำนวนคูปองที่สามารถจ่ายระหว่างวันชำระบัญชีและครบกำหนด"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Coupnum.2.String.Text
 msgid  "Settlement"
@@ -3117,7 +3117,7 @@ msgstr "หลักเกณฑ์"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Fvschedule.1.String.Text
 msgid  "Returns the future value of the initial principal after a series of compound interest rates are applied"
-msgstr ""
+msgstr "ส่งกลับค่าอนาคตของหลักการเริ่มหลังจากอนุกรมของอัตราดอกเบี้ยผสมถูกใช้"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Fvschedule.2.String.Text
 msgid  "Principal"
@@ -3161,7 +3161,7 @@ msgstr "Type"
 
 #: source/datefunc/datefunc.src#RID_DATE_FUNCTION_DESCRIPTIONS.DATE_FUNCDESC_DiffWeeks.7.String.Text
 msgid  "Type of calculation: Type=0 means the time interval, Type=1 means calendar weeks."
-msgstr ""
+msgstr "Type of calculation: Type=0 means the time interval, Type=1 means calendar weeks.Type of calculation: Type=0 means the time interval, Type=1 means calendar weeks."
 
 #: source/datefunc/datefunc.src#RID_DATE_FUNCTION_DESCRIPTIONS.DATE_FUNCDESC_DiffMonths.1.String.Text
 msgid  "Determines the number of months in a specific period."
@@ -3189,7 +3189,7 @@ msgstr "Type"
 
 #: source/datefunc/datefunc.src#RID_DATE_FUNCTION_DESCRIPTIONS.DATE_FUNCDESC_DiffMonths.7.String.Text
 msgid  "Type of calculation: Type=0 means the time interval, Type=1 means calendar months."
-msgstr ""
+msgstr "Type of calculation: Type=0 means the time interval, Type=1 means calendar months.Type of calculation: Type=0 means the time interval, Type=1 means calendar months."
 
 #: source/datefunc/datefunc.src#RID_DATE_FUNCTION_DESCRIPTIONS.DATE_FUNCDESC_DiffYears.1.String.Text
 msgid  "Calculates the number of years in a specific period."
@@ -3217,11 +3217,11 @@ msgstr "Type"
 
 #: source/datefunc/datefunc.src#RID_DATE_FUNCTION_DESCRIPTIONS.DATE_FUNCDESC_DiffYears.7.String.Text
 msgid  "Type of calculation: Type=0 means the time interval, Type=1 means calendar years."
-msgstr ""
+msgstr "Type of calculation: Type=0 means the time interval, Typee=1 means calendar years.Type of calculation: Type=0 means the time interval, Typee=1 means calendar years."
 
 #: source/datefunc/datefunc.src#RID_DATE_FUNCTION_DESCRIPTIONS.DATE_FUNCDESC_IsLeapYear.1.String.Text
 msgid  "Returns 1 (TRUE) if the date is a day of a leap year, otherwise 0 (FALSE)."
-msgstr ""
+msgstr "Returns 1 (TRUE) if the date is a day of a leap year, otherwise 0 (FALSE).Returns 1 (TRUE) if the date is a day of a leap year, otherwise 0 (FALSE)."
 
 #: source/datefunc/datefunc.src#RID_DATE_FUNCTION_DESCRIPTIONS.DATE_FUNCDESC_IsLeapYear.2.String.Text
 msgid  "Date"
@@ -3233,7 +3233,7 @@ msgstr "Any day in the desired year"
 
 #: source/datefunc/datefunc.src#RID_DATE_FUNCTION_DESCRIPTIONS.DATE_FUNCDESC_DaysInMonth.1.String.Text
 msgid  "Returns the number of days of the month in which the date entered occurs"
-msgstr ""
+msgstr "Returns the number of days of the month in which the date entered occursReturns the number of days of the month in which the date entered occurs"
 
 #: source/datefunc/datefunc.src#RID_DATE_FUNCTION_DESCRIPTIONS.DATE_FUNCDESC_DaysInMonth.2.String.Text
 msgid  "Date"
@@ -3245,7 +3245,7 @@ msgstr "Any day in the desired month"
 
 #: source/datefunc/datefunc.src#RID_DATE_FUNCTION_DESCRIPTIONS.DATE_FUNCDESC_DaysInYear.1.String.Text
 msgid  "Returns the number of days of the year in which the date entered occurs."
-msgstr ""
+msgstr "Returns the number of days of the year in which the date entered occurs.Returns the number of days of the year in which the date entered occurs."
 
 #: source/datefunc/datefunc.src#RID_DATE_FUNCTION_DESCRIPTIONS.DATE_FUNCDESC_DaysInYear.2.String.Text
 msgid  "Date"
@@ -3257,7 +3257,7 @@ msgstr "Any day in the desired year"
 
 #: source/datefunc/datefunc.src#RID_DATE_FUNCTION_DESCRIPTIONS.DATE_FUNCDESC_WeeksInYear.1.String.Text
 msgid  "Returns the number of weeks of the year in which the date entered occurs"
-msgstr ""
+msgstr "Returns the number of weeks of the year in which the date entered occursReturns the number of weeks of the year in which the date entered occurs"
 
 #: source/datefunc/datefunc.src#RID_DATE_FUNCTION_DESCRIPTIONS.DATE_FUNCDESC_WeeksInYear.2.String.Text
 msgid  "Date"

@@ -53,7 +53,7 @@ msgstr "定量线"
 
 #: source/core/glob.src#STR_PAGE.String.Text
 msgid  "Slide"
-msgstr "幻灯片"
+msgstr "页"
 
 #: source/core/glob.src#STR_PAGE_NAME.String.Text
 msgid  "Page"
@@ -217,7 +217,7 @@ msgstr "移动页面"
 
 #: source/core/glob.src#STR_NOT_ENOUGH_MEMORY.String.Text
 msgid  "Not enough memory!\nThe action will be aborted."
-msgstr ""
+msgstr "内存不足！\n中断执行操作。"
 
 #: source/core/glob.src#STR_POOLSHEET_MEASURE.String.Text
 msgid  "Dimension Line"
@@ -341,11 +341,11 @@ msgstr "在 $(ARG1)(row,col) 处发现文件格式错误。"
 
 #: source/core/glob.src#RID_SD_ERRHDL.ERR_CODE ( ERRCODE_CLASS_READ , ERR_FORMAT_FILE_ROWCOL ).String.Text
 msgid  "Format error discovered in the file in sub-document $(ARG1) at position $(ARG2)(row,col)."
-msgstr ""
+msgstr "在文件的子文档 $(ARG1) 内的 $(ARG2)(row,col) 处发现格式错误。"
 
 #: source/core/glob.src#RID_SD_ERRHDL.ERR_CODE ( ERRCODE_CLASS_READ , WARN_FORMAT_FILE_ROWCOL ).String.Text
 msgid  "Format error discovered in the file in sub-document $(ARG1) at position $(ARG2)(row,col)."
-msgstr ""
+msgstr "在文件的子文档 $(ARG1) 中发现格式错误，位置在 $(ARG2)（行，列）。"
 
 #: source/core/glob.src#STR_3DOBJECTBARSHELL.String.Text
 msgid  "3-D Settings"
@@ -1225,7 +1225,7 @@ msgstr "触发"
 
 #: source/ui/animations/CustomAnimation.src#STR_CUSTOMANIMATION_LIST_HELPTEXT.String.Text
 msgid  "First select the slide element and then click 'Add...' to add an animation effect."
-msgstr ""
+msgstr "首先选择幻灯片元素，然后单击“添加...”以添加动画效果。"
 
 #: source/ui/animations/SlideTransitionPane.src#DLG_SLIDE_TRANSITION_PANE.Control.Text
 msgid  "Slide Transition"
@@ -1381,19 +1381,19 @@ msgstr "（无作者）"
 
 #: source/ui/annotations/annotations.src#STR_ANNOTATION_WRAP_FORWARD.String.Text
 msgid  "%PRODUCTNAME Impress reached the end of the presentation. Do you want to continue at the beginning?"
-msgstr ""
+msgstr "%PRODUCTNAME Impress 已经查找至演示文稿的结束位置。是否要从起始位置继续？"
 
 #: source/ui/annotations/annotations.src#STR_ANNOTATION_WRAP_BACKWARD.String.Text
 msgid  "%PRODUCTNAME Impress reached the beginning of the presentation. Do you want to continue at the end?"
-msgstr ""
+msgstr "%PRODUCTNAME Impress 已经查找至演示文稿的起始位置。是否要从文档的结束位置继续？"
 
 #: source/ui/annotations/annotations.src#STR_ANNOTATION_WRAP_FORWARD_DRAW.String.Text
 msgid  "%PRODUCTNAME Draw reached the end of the document. Do you want to continue at the beginning?"
-msgstr ""
+msgstr "%PRODUCTNAME Draw 已经查找至文档结束位置是否要从起始位置继续？"
 
 #: source/ui/annotations/annotations.src#STR_ANNOTATION_WRAP_BACKWARD_DRAW.String.Text
 msgid  "%PRODUCTNAME Draw reached the beginning of the document. Do you want to continue at the end?"
-msgstr ""
+msgstr "%PRODUCTNAME Draw 已经查找至文档起始位置是否要从文档的结束位置继续？"
 
 #: source/ui/annotations/annotations.src#STR_ANNOTATION_UNDO_INSERT.String.Text
 msgid  "Insert Comment"
@@ -1428,8 +1428,8 @@ msgid  "~Table..."
 msgstr "表格(~T)..."
 
 #: source/ui/app/popup2_tmpl.src#RID_GRAPHIC_TABLE_POPUP.DUMMY.MenuItem.Text
-msgid  "Colu~mn"
-msgstr "列(~M)"
+msgid  "~Cell"
+msgstr "单元格(~C)"
 
 #: source/ui/app/popup2_tmpl.src#RID_GRAPHIC_TABLE_POPUP.DUMMY.SID_TABLE_MERGE_CELLS.MenuItem.Text
 msgid  "~Merge"
@@ -1451,6 +1451,10 @@ msgstr "居中(~E)"
 msgid  "~Bottom"
 msgstr "底端(~B)"
 
+#: source/ui/app/popup2_tmpl.src#RID_GRAPHIC_TABLE_POPUP.DUMMY.MenuItem.Text
+msgid  "~Row"
+msgstr "行(~R)"
+
 #: source/ui/app/popup2_tmpl.src#RID_GRAPHIC_TABLE_POPUP.DUMMY.SID_TABLE_DISTRIBUTE_ROWS.MenuItem.Text
 msgid  "Space ~Equally"
 msgstr "间距相等(~E)"
@@ -1467,6 +1471,10 @@ msgstr "插入(~I)..."
 msgid  "~Delete"
 msgstr "删除(~D)"
 
+#: source/ui/app/popup2_tmpl.src#RID_GRAPHIC_TABLE_POPUP.DUMMY.MenuItem.Text
+msgid  "Colu~mn"
+msgstr "列(~M)"
+
 #: source/ui/app/popup2_tmpl.src#RID_GRAPHIC_TABLE_POPUP.DUMMY.SID_TABLE_DISTRIBUTE_COLUMNS.MenuItem.Text
 msgid  "Space ~Equally"
 msgstr "间距相等(~E)"
@@ -1482,14 +1490,6 @@ msgstr "插入(~I)..."
 #: source/ui/app/popup2_tmpl.src#RID_GRAPHIC_TABLE_POPUP.DUMMY.SID_TABLE_DELETE_COL.MenuItem.Text
 msgid  "~Delete"
 msgstr "删除(~D)"
-
-#: source/ui/app/popup2_tmpl.src#RID_GRAPHIC_TABLE_POPUP.DUMMY.MenuItem.Text
-msgid  "~Cell"
-msgstr "单元格(~C)"
-
-#: source/ui/app/popup2_tmpl.src#RID_GRAPHIC_TABLE_POPUP.DUMMY.MenuItem.Text
-msgid  "~Row"
-msgstr "行(~R)"
 
 #: source/ui/app/strings.src#STR_DRAW_TOOLBOX.String.Text
 msgid  "Drawings Toolbar"
@@ -1617,7 +1617,7 @@ msgstr "大纲视图"
 
 #: source/ui/app/strings.src#STR_NOTES_MODE.String.Text
 msgid  "Notes"
-msgstr "备注视图"
+msgstr "备注"
 
 #: source/ui/app/strings.src#STR_HANDOUT_MODE.String.Text
 msgid  "Handout"
@@ -1717,7 +1717,7 @@ msgstr "九张幻灯片"
 
 #: source/ui/app/strings.src#STR_AUTOLAYOUT_NOTES.String.Text
 msgid  "Notes"
-msgstr "备注视图"
+msgstr "备注"
 
 #: source/ui/app/strings.src#STR_TRANSFORM.String.Text
 msgid  "transform"
@@ -1733,7 +1733,7 @@ msgstr "请您为这个新线条箭头输入一个名称："
 
 #: source/ui/app/strings.src#STR_WARN_NAME_DUPLICATE.String.Text
 msgid  "The name chosen already exists. \nPlease enter another name."
-msgstr ""
+msgstr "您输入的名称已经存在。\n请您输入一个不同的名称。"
 
 #: source/ui/app/strings.src#STR_UNDO_ANIMATION.String.Text
 msgid  "Animation parameters"
@@ -1797,15 +1797,15 @@ msgstr "分层"
 
 #: source/ui/app/strings.src#STR_UNDO_DELETEPAGES.String.Text
 msgid  "Delete slides"
-msgstr "删除页面"
+msgstr "删除幻灯片"
 
 #: source/ui/app/strings.src#STR_UNDO_INSERTPAGES.String.Text
 msgid  "Insert slides"
 msgstr "插入幻灯片"
 
 #: source/ui/app/strings.src#STR_ASK_DELETE_LAYER.String.Text
-msgid  "Are you sure you want to delete the level "$"?\nNote: All objects on this level will be deleted!"
-msgstr ""
+msgid  "Are you sure you want to delete the level \"$\"?\nNote: All objects on this level will be deleted!"
+msgstr "您确定要删除分层 \"$\" 吗？\n请注意：在这个分层内的所有对象都将被删除！"
 
 #: source/ui/app/strings.src#STR_ASK_DELETE_ALL_PICTURES.String.Text
 msgid  "Do you really want to delete all images?"
@@ -1853,7 +1853,7 @@ msgstr "插入文本框"
 
 #: source/ui/app/strings.src#STR_ACTION_NOTPOSSIBLE.String.Text
 msgid  "This function cannot be run \nwith the selected objects."
-msgstr ""
+msgstr "这个功能无法用于选中的对象"
 
 #: source/ui/app/strings.src#STR_DLG_INSERT_PAGES_FROM_FILE.String.Text
 msgid  "Insert File"
@@ -1865,7 +1865,7 @@ msgstr "无法装入这个文件！"
 
 #: source/ui/app/strings.src#STR_SCALE_OBJECTS.String.Text
 msgid  "The format of the new pages will be adapted.\nDo you want to adapt the objects, too?"
-msgstr ""
+msgstr "将要相应调整新页面的格式。\n是否也要相应调整这个对象？"
 
 #: source/ui/app/strings.src#STR_CREATE_PAGES.String.Text
 msgid  "Create slides"
@@ -1885,7 +1885,7 @@ msgstr "编辑(~E)"
 
 #: source/ui/app/strings.src#RID_UNDO_DELETE_WARNING.FT_UNDO_DELETE_WARNING.FixedText.Text
 msgid  "This action deletes the list of actions that can\nbe undone. Previous changes made to the document are still valid,\nbut cannot be undone. Do you want to continue and\nthus assign the new slide design?"
-msgstr ""
+msgstr "此操作会删除允许撤消的操作列表\n。先前您对文档所做的修改仍然有效，\n但是您不能再撤消这些修改。是否要继续，并\n使用新的幻灯片设计？"
 
 #: source/ui/app/strings.src#RID_UNDO_DELETE_WARNING.CB_UNDO_DELETE_DISABLE.CheckBox.Text
 msgid  "~Do not show this warning again"
@@ -1905,7 +1905,7 @@ msgstr "这个文档格式不受打印机的支持。"
 
 #: source/ui/app/strings.src#STR_REMOVE_LINK.String.Text
 msgid  "This graphic is linked to a document. \nDo you want to unlink the graphic in order to edit it?"
-msgstr ""
+msgstr "这个图形是和文档链接的。 \n您要取消这个链接，编辑这个图形吗？"
 
 #: source/ui/app/strings.src#STR_IMPORT_GRFILTER_OPENERROR.String.Text
 msgid  "Graphics file cannot be opened"
@@ -2017,7 +2017,7 @@ msgstr "（大纲）"
 
 #: source/ui/app/strings.src#STR_WARN_SCALE_FAIL.String.Text
 msgid  "The specified scale is invalid.\nDo you want to enter a new one?"
-msgstr ""
+msgstr "指定的显示比例是无效的。\n是否要输入一个新的显示比例？"
 
 #: source/ui/app/strings.src#STR_CLICK_ACTION_NONE.String.Text
 msgid  "No action"
@@ -2265,7 +2265,7 @@ msgstr "文件名不含扩展名"
 
 #: source/ui/app/strings.src#STR_RELEASE_GRAPHICLINK.String.Text
 msgid  "This graphic is linked to a document. Do you want to unlink the graphic in order to edit it?"
-msgstr ""
+msgstr "这个图形是和文档链接的。您要取消这个链接，编辑这个图形吗？"
 
 #: source/ui/app/strings.src#STR_NEW_CUSTOMSHOW.String.Text
 msgid  "New Custom Slide Show"
@@ -2301,7 +2301,7 @@ msgstr "无法拆开所有的字符对象！"
 
 #: source/ui/app/strings.src#STR_PUBDLG_SAMENAME.String.Text
 msgid  "A design already exists with this name.\nDo you want to replace it?"
-msgstr ""
+msgstr "已经有一个同名的设计。\n是否要替换它？"
 
 #: source/ui/app/strings.src#STR_HTMLATTR_TEXT.String.Text
 msgid  "Text"
@@ -2417,7 +2417,7 @@ msgstr "图形过滤器"
 
 #: source/ui/app/strings.src#STR_WARNING_NOSOUNDFILE.String.Text
 msgid  "The file %\nis not a valid sound file !"
-msgstr ""
+msgstr "该文件 %\n不是有效的声音文件！"
 
 #: source/ui/app/strings.src#STR_UNDO_CONVERT_TO_METAFILE.String.Text
 msgid  "Convert to metafile"
@@ -2631,6 +2631,14 @@ msgstr "插入图片"
 msgid  "Insert Movie"
 msgstr "插入影片"
 
+#: source/ui/app/res_bmp.src#SfxStyleFamiliesRes1.#define.Text
+msgid  "Graphics Styles"
+msgstr "图形样式"
+
+#: source/ui/app/res_bmp.src#SfxStyleFamiliesRes2.#define.Text
+msgid  "Presentation Styles"
+msgstr "演示文稿样式"
+
 #: source/ui/app/res_bmp.src#STR_STYLE_FILTER_USED.String.Text
 msgid  "Applied Styles"
 msgstr "应用的样式"
@@ -2642,14 +2650,6 @@ msgstr "自定义样式"
 #: source/ui/app/res_bmp.src#STR_STYLE_FILTER_ALL.String.Text
 msgid  "All Styles"
 msgstr "所有样式"
-
-#: source/ui/app/res_bmp.src#SfxStyleFamiliesRes1.#define.Text
-msgid  "Graphics Styles"
-msgstr "图形样式"
-
-#: source/ui/app/res_bmp.src#SfxStyleFamiliesRes2.#define.Text
-msgid  "Presentation Styles"
-msgstr "演示文稿样式"
 
 #: source/ui/app/menuids_tmpl.src#MN_DISTRIBUTE.SID_DISTRIBUTE_DLG.MenuItem.Text
 msgid  "~Distribution..."
@@ -3328,8 +3328,8 @@ msgid  "~Table..."
 msgstr "表格(~T)..."
 
 #: source/ui/app/popup.src#RID_DRAW_TABLEOBJ_INSIDE_POPUP.DUMMY.MenuItem.Text
-msgid  "Colu~mn"
-msgstr "列(~M)"
+msgid  "~Cell"
+msgstr "单元格(~C)"
 
 #: source/ui/app/popup.src#RID_DRAW_TABLEOBJ_INSIDE_POPUP.DUMMY.SID_TABLE_MERGE_CELLS.MenuItem.Text
 msgid  "~Merge"
@@ -3351,6 +3351,10 @@ msgstr "居中(~E)"
 msgid  "~Bottom"
 msgstr "底端(~B)"
 
+#: source/ui/app/popup.src#RID_DRAW_TABLEOBJ_INSIDE_POPUP.DUMMY.MenuItem.Text
+msgid  "~Row"
+msgstr "行(~R)"
+
 #: source/ui/app/popup.src#RID_DRAW_TABLEOBJ_INSIDE_POPUP.DUMMY.SID_TABLE_DISTRIBUTE_ROWS.MenuItem.Text
 msgid  "Space ~Equally"
 msgstr "间距相等(~E)"
@@ -3366,6 +3370,10 @@ msgstr "插入(~I)..."
 #: source/ui/app/popup.src#RID_DRAW_TABLEOBJ_INSIDE_POPUP.DUMMY.SID_TABLE_DELETE_ROW.MenuItem.Text
 msgid  "~Delete"
 msgstr "删除(~D)"
+
+#: source/ui/app/popup.src#RID_DRAW_TABLEOBJ_INSIDE_POPUP.DUMMY.MenuItem.Text
+msgid  "Colu~mn"
+msgstr "列(~M)"
 
 #: source/ui/app/popup.src#RID_DRAW_TABLEOBJ_INSIDE_POPUP.DUMMY.SID_TABLE_DISTRIBUTE_COLUMNS.MenuItem.Text
 msgid  "Space ~Equally"
@@ -3439,33 +3447,25 @@ msgstr "应用于选定幻灯片(~S)"
 msgid  "~Insert Slide"
 msgstr "插入幻灯片(~I)"
 
-#: source/ui/app/popup.src#RID_DRAW_TABLEOBJ_INSIDE_POPUP.DUMMY.MenuItem.Text
-msgid  "~Cell"
-msgstr "单元格(~C)"
-
-#: source/ui/app/popup.src#RID_DRAW_TABLEOBJ_INSIDE_POPUP.DUMMY.MenuItem.Text
-msgid  "~Row"
-msgstr "行(~R)"
-
 #: source/ui/app/sdstring.src#STR_SAR_NOT_FOUND.String.Text
 msgid  "Search key not found."
 msgstr "没有找到要查找的条目。"
 
 #: source/ui/app/sdstring.src#STR_SAR_WRAP_FORWARD.String.Text
 msgid  "%PRODUCTNAME Impress has searched to the end of the presentation. Do you want to continue at the beginning?"
-msgstr ""
+msgstr "%PRODUCTNAME Impress 已经查找至演示文稿的结束位置。是否要从文档的起始位置继续查找？"
 
 #: source/ui/app/sdstring.src#STR_SAR_WRAP_BACKWARD.String.Text
 msgid  "%PRODUCTNAME Impress has searched to the beginning of the presentation. Do you want to continue at the end?"
-msgstr ""
+msgstr "%PRODUCTNAME Impress 已经查找至演示文稿的起始位置。是否要从文档的结束位置继续查找？"
 
 #: source/ui/app/sdstring.src#STR_SAR_WRAP_FORWARD_DRAW.String.Text
 msgid  "%PRODUCTNAME Draw has searched to the end of the document. Do you want to continue at the beginning?"
-msgstr ""
+msgstr "%PRODUCTNAME Draw 已经查找至文档的结束位置。是否要从文档的起始位置继续查找？"
 
 #: source/ui/app/sdstring.src#STR_SAR_WRAP_BACKWARD_DRAW.String.Text
 msgid  "%PRODUCTNAME Draw has searched to the beginning of the document. Do you want to continue at the end?"
-msgstr ""
+msgstr "%PRODUCTNAME Draw 已经查找至文档的起始位置。是否要从文档的结束位置继续查找？"
 
 #: source/ui/app/menuids2_tmpl.src#MN_NEWDOCDIRECT.SID_NEWDOCDIRECT.MenuItem.Text
 msgid  "~New"
@@ -3486,6 +3486,10 @@ msgstr "发送(~D)"
 #: source/ui/app/menuids2_tmpl.src#MN_PAGESETUP.SID_PAGESETUP.MenuItem.Text
 msgid  "~Page..."
 msgstr "页面(~P)..."
+
+#: source/ui/app/menuids2_tmpl.src#20.#define.Text
+msgid  "~Edit"
+msgstr "编辑(~E)"
 
 #: source/ui/app/menuids2_tmpl.src#MN_PASTE2.SID_PASTE2.MenuItem.Text
 msgid  "Paste ~Special..."
@@ -3510,6 +3514,10 @@ msgstr "删除层(~L)..."
 #: source/ui/app/menuids2_tmpl.src#MN_MANAGE_LINKS.SID_MANAGE_LINKS.MenuItem.Text
 msgid  "Lin~ks..."
 msgstr "链接(~K)..."
+
+#: source/ui/app/menuids2_tmpl.src#23.#define.Text
+msgid  "~View"
+msgstr "视图(~V)"
 
 #: source/ui/app/menuids2_tmpl.src#MN_TOGGLETOOLBAR.SID_TOGGLETOOLBAR.MenuItem.Text
 msgid  "Main ~Toolbar"
@@ -3574,6 +3582,10 @@ msgstr "工作区(~K)"
 #: source/ui/app/menuids2_tmpl.src#MNSUB_MASTERPAGE.MN_SUB_MASTERPAGE.MenuItem.Text
 msgid  "~Master"
 msgstr "母版(~M)"
+
+#: source/ui/app/menuids2_tmpl.src#21.#define.Text
+msgid  "~Insert"
+msgstr "插入(~I)"
 
 #: source/ui/app/menuids2_tmpl.src#MN_INSERTPAGE.SID_INSERTPAGE.MenuItem.Text
 msgid  "Slid~e..."
@@ -3659,6 +3671,10 @@ msgstr "文件(~F)..."
 msgid  "Fiel~ds"
 msgstr "域(~D)"
 
+#: source/ui/app/menuids2_tmpl.src#22.#define.Text
+msgid  "F~ormat"
+msgstr "格式(~O)"
+
 #: source/ui/app/menuids2_tmpl.src#MN_TEXTATTR_DLG.SID_TEXTATTR_DLG.MenuItem.Text
 msgid  "Te~xt..."
 msgstr "文本(~X)..."
@@ -3682,6 +3698,14 @@ msgstr "修改版式(~L)..."
 #: source/ui/app/menuids2_tmpl.src#MNSUB_TEMPLATES.MN_SUB_TEMPLATES.MenuItem.Text
 msgid  "Styl~es"
 msgstr "样式(~E)"
+
+#: source/ui/app/menuids2_tmpl.src#ITEM_TOOLS_ID.#define.Text
+msgid  "~Tools"
+msgstr "工具(~T)"
+
+#: source/ui/app/menuids2_tmpl.src#26.#define.Text
+msgid  "~Slide Show"
+msgstr "幻灯片放映(~S)"
 
 #: source/ui/app/menuids2_tmpl.src#MN_SPELLING.SID_SPELL_DIALOG.MenuItem.Text
 msgid  "~Check..."
@@ -3722,6 +3746,10 @@ msgstr "交互式(~I)..."
 #: source/ui/app/menuids2_tmpl.src#MNSUB_SPELLING.MN_SUB_SPELLING.MenuItem.Text
 msgid  "~Spellcheck"
 msgstr "拼写检查(~S)"
+
+#: source/ui/app/menuids2_tmpl.src#24.#define.Text
+msgid  "~Modify"
+msgstr "修改(~M)"
 
 #: source/ui/app/menuids2_tmpl.src#MN_MOREFRONT.SID_MOREFRONT.MenuItem.Text
 msgid  "Bring ~Forward"
@@ -3794,34 +3822,6 @@ msgstr "显示品质(~D)"
 #: source/ui/app/menuids2_tmpl.src#MNSUB_PREVIEW_OUTPUT_QUALITY.MN_SUB_PREVIEW_OUTPUT_QUALITY.ItemList.Text
 msgid  "Pre~view Mode"
 msgstr "预览模式(~V)"
-
-#: source/ui/app/menuids2_tmpl.src#20.#define.Text
-msgid  "~Edit"
-msgstr "编辑(~E)"
-
-#: source/ui/app/menuids2_tmpl.src#23.#define.Text
-msgid  "~View"
-msgstr "视图(~V)"
-
-#: source/ui/app/menuids2_tmpl.src#21.#define.Text
-msgid  "~Insert"
-msgstr "插入(~I)"
-
-#: source/ui/app/menuids2_tmpl.src#22.#define.Text
-msgid  "F~ormat"
-msgstr "格式(~O)"
-
-#: source/ui/app/menuids2_tmpl.src#ITEM_TOOLS_ID.#define.Text
-msgid  "~Tools"
-msgstr "工具(~T)"
-
-#: source/ui/app/menuids2_tmpl.src#26.#define.Text
-msgid  "~Slide Show"
-msgstr "幻灯片放映(~S)"
-
-#: source/ui/app/menuids2_tmpl.src#24.#define.Text
-msgid  "~Modify"
-msgstr "修改(~M)"
 
 #: source/ui/dlg/sdpreslt.src#DLG_PRESLT.FT_LAYOUT.FixedText.Text
 msgid  "~Select a slide design"
@@ -4687,6 +4687,10 @@ msgstr "幻灯片编号"
 msgid  "Master Elements"
 msgstr "母版元素"
 
+#: source/ui/dlg/tpoption.src#SCALE_TEXT.#define.Text
+msgid  "Scale"
+msgstr "显示比例"
+
 #: source/ui/dlg/tpoption.src#TP_OPTIONS_CONTENTS.TabPage.Text
 msgid  "Contents"
 msgstr "内容"
@@ -4802,10 +4806,6 @@ msgstr "页面宽度(~W)"
 #: source/ui/dlg/tpoption.src#TP_OPTIONS_MISC.FT_PAGEHEIGHT.FixedText.Text
 msgid  "Page ~height"
 msgstr "页面高度(~H)"
-
-#: source/ui/dlg/tpoption.src#SCALE_TEXT.#define.Text
-msgid  "Scale"
-msgstr "显示比例"
 
 #: source/ui/dlg/morphdlg.src#DLG_MORPH.GRP_PRESET.FixedLine.Text
 msgid  "Settings"
@@ -5056,22 +5056,6 @@ msgid  "Alignment"
 msgstr "对齐"
 
 #: source/ui/dlg/animobjs.src#FLT_WIN_ANIMATION.LB_ADJUSTMENT.Default.StringList.item
-msgid  "Bottom Right"
-msgstr "向右/向下"
-
-#: source/ui/dlg/animobjs.src#FLT_WIN_ANIMATION.BTN_CREATE_GROUP.PushButton.Text
-msgid  "Create"
-msgstr "创建"
-
-#: source/ui/dlg/animobjs.src#FLT_WIN_ANIMATION.GRP_ANIMATION_GROUP.FixedLine.Text
-msgid  "Animation group"
-msgstr "动画小组"
-
-#: source/ui/dlg/animobjs.src#FLT_WIN_ANIMATION.STR_DISPLAY.String.Text
-msgid  "Preview"
-msgstr "预览"
-
-#: source/ui/dlg/animobjs.src#FLT_WIN_ANIMATION.LB_ADJUSTMENT.Default.StringList.item
 msgid  "Top Left"
 msgstr "向左/向上"
 
@@ -5102,6 +5086,22 @@ msgstr "向右/向上"
 #: source/ui/dlg/animobjs.src#FLT_WIN_ANIMATION.LB_ADJUSTMENT.Default.StringList.item
 msgid  "Right"
 msgstr "向右"
+
+#: source/ui/dlg/animobjs.src#FLT_WIN_ANIMATION.LB_ADJUSTMENT.Default.StringList.item
+msgid  "Bottom Right"
+msgstr "向右/向下"
+
+#: source/ui/dlg/animobjs.src#FLT_WIN_ANIMATION.BTN_CREATE_GROUP.PushButton.Text
+msgid  "Create"
+msgstr "创建"
+
+#: source/ui/dlg/animobjs.src#FLT_WIN_ANIMATION.GRP_ANIMATION_GROUP.FixedLine.Text
+msgid  "Animation group"
+msgstr "动画小组"
+
+#: source/ui/dlg/animobjs.src#FLT_WIN_ANIMATION.STR_DISPLAY.String.Text
+msgid  "Preview"
+msgstr "预览"
 
 #: source/ui/dlg/prntopts.src#TP_PRINT_OPTIONS.TabPage.Text
 msgid  "Options"

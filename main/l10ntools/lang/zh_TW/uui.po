@@ -85,7 +85,7 @@ msgstr "輸入密碼"
 
 #: source/passworddlg.src#DLG_UUI_PASSWORD.STR_PASSWORD_MISMATCH.String.Text
 msgid  "The confirmation password did not match the password. Set the password again by entering the same password in both boxes."
-msgstr ""
+msgstr "兩次輸入的密碼不吻合。請重新輸入密碼。"
 
 #: source/trylater.src#STR_TRYLATER_TITLE.String.Text
 msgid  "Document in Use"
@@ -93,7 +93,7 @@ msgstr "使用中的文件"
 
 #: source/trylater.src#STR_TRYLATER_MSG.String.Text
 msgid  "Document file '$(ARG1)' is locked for editing by:\n\n$(ARG2)\n\nTry again later to save document or save a copy of that document.\n\n"
-msgstr ""
+msgstr "文件檔案「$(ARG1)」已鎖定供下列使用者編輯:\n\n$(ARG2)\n\n請稍後再嘗試儲存文件，或是儲存該文件的副本。\n\n"
 
 #: source/trylater.src#STR_TRYLATER_RETRYSAVING_BTN.String.Text
 msgid  "~Retry Saving"
@@ -137,7 +137,7 @@ msgstr "目標已經存在。"
 
 #: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_IO_MODULESIZEEXCEEDED & ERRCODE_RES_MASK).String.Text
 msgid  "You are about to save/export a password protected basic library containing module(s) \n$(ARG1)\nwhich are too large to store in binary format. If you wish users that don't have access to the library password to be able to run macros in those module(s) you must split those modules into a number of smaller modules. Do you wish to continue to save/export this library?"
-msgstr ""
+msgstr "您即將儲存/匯出受密碼保護的 Basic 程式庫，\n該程式庫包含的模組 $(ARG1) 太大，\n而無法以二進位格式儲存。若希望不具程式庫密碼存取權的使用者，能於這些模組中執行巨集，則必須將這些模組分割成數個較小的模組。您要繼續儲存/匯出此程式庫嗎？"
 
 #: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_IO_BADCRC & ERRCODE_RES_MASK).String.Text
 msgid  "The data from $(ARG1) has an incorrect checksum."
@@ -241,11 +241,11 @@ msgstr "裝置 $(ARG1) 已經沒有可用空間。"
 
 #: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_IO_TOOMANYOPENFILES & ERRCODE_RES_MASK).String.Text
 msgid  "The operation on $(ARG1) cannot be performed because too many files are already open."
-msgstr ""
+msgstr "已經開?了過多的檔案，無法執行 $(ARG1) 上的運算。"
 
 #: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_IO_OUTOFMEMORY & ERRCODE_RES_MASK).String.Text
 msgid  "The operation on $(ARG1) cannot be performed because there is no more memory available."
-msgstr ""
+msgstr "無可用的記憶體，無法執行 $(ARG1) 上的運算。"
 
 #: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_IO_PENDING & ERRCODE_RES_MASK).String.Text
 msgid  "The operation on $(ARG1) cannot continue because more data is pending."
@@ -289,11 +289,11 @@ msgstr "不支援所安裝的 Java 版本 $(ARG1)。"
 
 #: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_WRONGJAVA_MIN & ERRCODE_RES_MASK).String.Text
 msgid  "The installed Java version is not supported, at least version $(ARG1) is required."
-msgstr ""
+msgstr "不支援所安裝的 Java 版本，至少需要版本 $(ARG1)。"
 
 #: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_WRONGJAVA_VERSION_MIN & ERRCODE_RES_MASK).String.Text
 msgid  "The installed Java version $(ARG1) is not supported, at least version $(ARG2) is required."
-msgstr ""
+msgstr "不支援所安裝的 Java 版本 $(ARG1)，至少需要版本 $(ARG2)。"
 
 #: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_BADPARTNERSHIP & ERRCODE_RES_MASK).String.Text
 msgid  "The data associated with the partnership is corrupted."
@@ -325,31 +325,31 @@ msgstr "無法在目錄 $(ARG1) 中建立物件。"
 
 #: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_IO_UNSUPPORTEDOVERWRITE & ERRCODE_RES_MASK).String.Text
 msgid  "%PRODUCTNAME cannot keep files from being overwritten when this transmission protocol is used. Do you want to continue anyway?"
-msgstr ""
+msgstr "在使用這個傳輸協定時，%PRODUCTNAME 無法防止覆寫檔案。您還要繼續？"
 
 #: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_IO_BROKENPACKAGE & ERRCODE_RES_MASK).String.Text
 msgid  "The file '$(ARG1)' is corrupt and therefore cannot be opened. %PRODUCTNAME can try to repair the file.\n\nThe corruption could be the result of document manipulation or of structural document damage due to data transmission.\n\nWe recommend that you do not trust the content of the repaired document.\nExecution of macros is disabled for this document.\n\nShould %PRODUCTNAME repair the file?\n"
-msgstr ""
+msgstr "檔案「$(ARG1)」已毀壞，因此無法開啟。%PRODUCTNAME 可嘗試修復該檔案。\n\n毀壞可能是文件處理的結果，或由於資料傳輸導致結構文件毀壞的結果。\n\n建議您不要信任修復之文件的內容。\n此文件已停用巨集的執行。\n\n%PRODUCTNAME 是否應修復該檔案？\n"
 
 #: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_IO_BROKENPACKAGE_CANTREPAIR & ERRCODE_RES_MASK).String.Text
 msgid  "The file '$(ARG1)' could not be repaired and therefore cannot be opened."
-msgstr ""
+msgstr "無法修復檔案 '$(ARG1)' ，因此無法開啟此檔案。"
 
 #: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_CONFIGURATION_BROKENDATA_NOREMOVE & ERRCODE_RES_MASK).String.Text
 msgid  "Configuration data in '$(ARG1)' is corrupted. Without this data some functions may not operate correctly.\nDo you want to continue startup of %PRODUCTNAME without the corrupted configuration data?"
-msgstr ""
+msgstr "配置資料來源「$(ARG1)」不可用。部分功能缺少這些資料可能無法正常運作。\n是否要在缺少這些已毀壞配置資料的情況下繼續啟動 %PRODUCTNAME ？"
 
 #: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_CONFIGURATION_BROKENDATA_WITHREMOVE & ERRCODE_RES_MASK).String.Text
 msgid  "The personal configuration file '$(ARG1)' is corrupted and must be deleted to continue. Some of your personal settings may be lost.\nDo you want to continue startup of %PRODUCTNAME without the corrupted configuration data?"
-msgstr ""
+msgstr "個人配置檔「$(ARG1)」已毀壞，必須將其刪除才能繼續進行。您的部分個人設定可能會遺失。\n是否要在缺少這些已毀壞配置資料的情況下繼續啟動 %PRODUCTNAME ？"
 
 #: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_CONFIGURATION_BACKENDMISSING & ERRCODE_RES_MASK).String.Text
 msgid  "The configuration data source '$(ARG1)' is unavailable. Without this data some functions may not operate correctly."
-msgstr ""
+msgstr "配置資料來源「$(ARG1)」不可用。部分功能缺少這些資料可能無法正常運作。"
 
 #: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_CONFIGURATION_BACKENDMISSING_WITHRECOVER & ERRCODE_RES_MASK).String.Text
 msgid  "The configuration data source '$(ARG1)' is unavailable. Without this data some functions may not operate correctly.\nDo you want to continue startup of %PRODUCTNAME without the missing configuration data?"
-msgstr ""
+msgstr "配置資料來源「$(ARG1)」不可用。部分功能缺少這些資料可能無法正常運作。\n是否要在缺少這些配置資料的情況下繼續啟動 %PRODUCTNAME ？"
 
 #: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_INVALID_XFORMS_SUBMISSION_DATA & ERRCODE_RES_MASK).STRING.Text
 msgid  "The form contains invalid data. Do you still want to continue?"
@@ -357,11 +357,11 @@ msgstr "表單包含無效的資料。您仍然要繼續執行嗎？"
 
 #: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_LOCKING_LOCKED & ERRCODE_RES_MASK).String.Text
 msgid  "The file $(ARG1) is locked by another user. Currently, another write access to this file cannot be granted."
-msgstr ""
+msgstr "其他使用者已鎖定檔案 $(ARG1)。目前無法授予此檔案的其他寫入權限。"
 
 #: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_LOCKING_LOCKED_SELF & ERRCODE_RES_MASK).String.Text
 msgid  "The file $(ARG1) is locked by yourself. Currently, another write access to this file cannot be granted."
-msgstr ""
+msgstr "您自己已鎖定檔案 $(ARG1)。目前無法授予此檔案的其他寫入權限。"
 
 #: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_LOCKING_NOT_LOCKED & ERRCODE_RES_MASK).String.Text
 msgid  "The file $(ARG1) is currently not locked by yourself."
@@ -369,23 +369,23 @@ msgstr "您自己目前未鎖定檔案 $(ARG1)。"
 
 #: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_LOCKING_LOCK_EXPIRED & ERRCODE_RES_MASK).String.Text
 msgid  "The previously obtained lock for file $(ARG1) has expired.\nThis can happen due to problems on the server managing the file lock. It cannot be guaranteed that write operations on this file will not overwrite changes done by other users!"
-msgstr ""
+msgstr "之前取得的 $(ARG1) 檔案鎖定已到期。\n管理檔案鎖定的伺服器如有問題，即會發生此情況。無法保證此檔案的寫入作業不會覆寫其他使用者所進行的變更！"
 
 #: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_UNKNOWNAUTH_UNTRUSTED).STRING.Text
 msgid  "Unable to verify the identity of $(ARG1) site.\n\nBefore accepting this certificate, you should examine this site's certificate carefully. Are you willing to accept this certificate for the purpose of identifying the Web site $(ARG1)?"
-msgstr ""
+msgstr "無法驗證 $(ARG1) 網站的身份。\n\n在接受此憑證之前，請仔細檢查此網站的憑證。您是否願意接受此憑證，以識別網站 $(ARG1)？"
 
 #: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_SSLWARN_EXPIRED_1).STRING.Text
 msgid  "$(ARG1) is a site that uses a security certificate to encrypt data during transmission, but its certificate expired on $(ARG2).\n\nYou should check to make sure that your computer's time is correct."
-msgstr ""
+msgstr "$(ARG1) 網站會在傳輸期間使用安全性憑證加密資料，但其在 $(ARG2) 上的憑證已過期。\n\n您應檢查並確定電腦時間是否正確。"
 
 #: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_SSLWARN_DOMAINMISMATCH_1).STRING.Text
 msgid  "You have attempted to establish a connection with $(ARG1). However, the security certificate presented belongs to $(ARG2). It is possible, though unlikely, that someone may be trying to intercept your communication with this web site.\n\nIf you suspect the certificate shown does not belong to $(ARG1), please cancel the connection and notify the site administrator.\n\nWould you like to continue anyway?"
-msgstr ""
+msgstr "您已嘗試與 $(ARG1) 建立連線。但是，顯示的安全性憑證屬於 $(ARG2)。雖然可能性很低，但也許是有人嘗試截取您與此網站的通訊。\n\n若您懷疑顯示的憑證不屬於 $(ARG1)，請取消連線並通知網站管理員。\n\n您仍然要繼續嗎？"
 
 #: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_SSLWARN_INVALID_1).STRING.Text
 msgid  "The certificate could not be validated. You should examine this site's certificate carefully.\n\nIf you suspect the certificate shown, please cancel the connection and notify the site administrator."
-msgstr ""
+msgstr "無法驗證憑證。請仔細檢查此網站的憑證。\n\n若您懷疑顯示的憑證，請取消連線並通知網站管理員。"
 
 #: source/ids.src#RID_UUI_ERRHDL.(TITLE_UUI_SSLWARN_DOMAINMISMATCH).STRING.Text
 msgid  "Security Warning: Domain Name Mismatch"
@@ -413,11 +413,11 @@ msgstr "伺服器的訊息："
 
 #: source/logindlg.src#DLG_UUI_LOGIN.FT_INFO_LOGIN_REQUEST.FixedText.Text
 msgid  "Enter user name and password for: \n%1"
-msgstr ""
+msgstr "輸入使用者名稱與密碼：\n%1"
 
 #: source/logindlg.src#DLG_UUI_LOGIN.STR_LOGIN_REALM.String.Text
-msgid  "Enter user name and password for: \n"%2" on %1"
-msgstr ""
+msgid  "Enter user name and password for: \n\"%2\" on %1"
+msgstr "輸入使用者名稱與密碼：\n%1 上的「%2」"
 
 #: source/logindlg.src#DLG_UUI_LOGIN.FT_LOGIN_PATH.FixedText.Text
 msgid  "~Path"
@@ -469,7 +469,7 @@ msgstr "接受(~S)"
 
 #: source/cookiedg.src#STR_COOKIES_RECV_START.String.Text
 msgid  "The '${HOST}' server wishes to set one or more cookies.\nCookies contain information referring to certain URL classes. If %PRODUCTNAME later requests a document with a URL corresponding to the class of a previously set cookie, %PRODUCTNAME will send this information to the server. This allows a server to recognize the status of a WWW application, e.g., when shopping online.\n\nThe following Cookies should be set:\n\n"
-msgstr ""
+msgstr "'${HOST}' 伺服器希望設定一或多個 cookies。\nCookies 會包含參照特定 URL 類別的資訊。如果 %PRODUCTNAME 稍後要求包含 URL 的文件，且此 URL 須與先前設定的 Cookie 類別相對應，則 %PRODUCTNAME 會將此資訊傳送到伺服器。這可以讓伺服器辨識 WWW 應用程式的狀態，例如當您在線上購物時。\n\n應該要設定下列Cookie：\n\n"
 
 #: source/cookiedg.src#STR_COOKIES_RECV_COOKIES.String.Text
 msgid  "Domain: ${DOMAIN}, Path: ${PATH}, Cookie: ${COOKIE}.\n"
@@ -481,7 +481,7 @@ msgstr "接受 Cookie"
 
 #: source/cookiedg.src#STR_COOKIES_SEND_START.String.Text
 msgid  "%PRODUCTNAME has saved cookies for the server '${HOST}' which will be sent when requesting the document ${PATH}.\nCookies contain information which refers to certain URL classes. They are sent by some servers to %PRODUCTNAME where they are saved when certain documents are accessed. If %PRODUCTNAME loads a document that, according to the URL, corresponds to a class of one of the previously received Cookies, %PRODUCTNAME will send this information to that server. This enables a server to keep track of the status of a WWW application, e.g., when shopping online.\n\nThe following Cookies should be set:\n\n"
-msgstr ""
+msgstr "%PRODUCTNAME 已經保存了伺服器${HOST}傳送的 cookie。\n%PRODUCTNAME 在下一次請求裝載相同的文件資料${PATH}時就會按照程式庫檢查 URL 相符的 cookie 并將有關訊息傳送給對方伺服器。這樣，對方伺服器就能夠知道您使用的瀏覽器的有關資料(如線上銷售系統的采購籃含有的物品名稱)。\n\n現在要建立如下的 cookie:\n\n"
 
 #: source/cookiedg.src#STR_COOKIES_SEND_COOKIES.String.Text
 msgid  "Domain: ${DOMAIN}, Path: ${PATH}, Cookie: ${COOKIE}.\n"
@@ -501,7 +501,7 @@ msgstr "密碼不正確。無法修改檔案。"
 
 #: source/passworderrs.src#STR_ERROR_MASTERPASSWORD_WRONG.String.Text
 msgid  "The master password is incorrect."
-msgstr ""
+msgstr "輸入的主密碼錯誤。%PRODUCTNAME 無法存取受主密碼保護的網站登入資訊。\n\n注意: 密碼區分大小寫，且至少為 5 個字元長。"
 
 #: source/passworderrs.src#STR_ERROR_SIMPLE_PASSWORD_WRONG.String.Text
 msgid  "The password is incorrect."
@@ -529,7 +529,7 @@ msgstr "使用中的文件"
 
 #: source/openlocked.src#STR_OPENLOCKED_MSG.String.Text
 msgid  "Document file '$(ARG1)' is locked for editing by:\n\n$(ARG2)\n\nOpen document read-only or open a copy of the document for editing.\n\n"
-msgstr ""
+msgstr "文件檔案「$(ARG1)」已鎖定供下列使用者編輯: \n\n$(ARG2)\n\n以唯讀模式開啟文件，或開啟文件的副本進行編輯。\n\n"
 
 #: source/openlocked.src#STR_OPENLOCKED_OPENREADONLY_BTN.String.Text
 msgid  "Open ~Read-Only"
@@ -549,7 +549,7 @@ msgstr "文件已經被其他人更改"
 
 #: source/filechanged.src#STR_FILECHANGED_MSG.String.Text
 msgid  "The file has been changed since it was opened for editing in %PRODUCTNAME. Saving your version of the document will overwrite changes made by others.\n\nDo you want to save anyway?\n\n"
-msgstr ""
+msgstr "已在 %PRODUCTNAME 中開啟檔案進行編輯，因此該檔案有所變更。儲存您的文件版本會覆寫他人所做的變更。\n\n是否確定要儲存?\n\n"
 
 #: source/filechanged.src#STR_FILECHANGED_SAVEANYWAY_BTN.String.Text
 msgid  "~Save Anyway"
@@ -561,7 +561,7 @@ msgstr "有可使用的 %PRODUCTNAME 更新"
 
 #: source/newerverwarn.src#RID_DLG_NEWER_VERSION_WARNING.FT_INFO.FixedText.Text
 msgid  "This document was created by a newer version of %PRODUCTNAME. It may contain features not supported by your current version.\n\nClick 'Update Now...' to run online update and get the latest version of %PRODUCTNAME."
-msgstr ""
+msgstr "本文件係使用較新版 %PRODUCTNAME 建立。可能包含目前所用版本不支援的功能。\n\n請按一下 [立即更新...] 執行線上更新，以取得最新版的 %PRODUCTNAME。"
 
 #: source/newerverwarn.src#RID_DLG_NEWER_VERSION_WARNING.PB_UPDATE.PushButton.Text
 msgid  "~Update Now..."
@@ -609,7 +609,7 @@ msgstr "檢視簽名..."
 
 #: source/secmacrowarnings.src#RID_XMLSECDLG_MACROWARN.FI_DESCR2.FixedText.Text
 msgid  "Macros may contain viruses. Disabling macros for a document is always safe. If you disable macros you may lose functionality provided by the document macros."
-msgstr ""
+msgstr "巨集可能包含病毒。關閉文件巨集通常比較安全。如果關閉巨集，您可能無法使用文件巨集所提供的功能。"
 
 #: source/secmacrowarnings.src#RID_XMLSECDLG_MACROWARN.CB_ALWAYSTRUST.CheckBox.Text
 msgid  "Always trust macros from this source"
@@ -637,7 +637,7 @@ msgstr "設定主密碼"
 
 #: source/masterpasscrtdlg.src#DLG_UUI_MASTERPASSWORD_CRT.FT_INFOTEXT.FixedText.Text
 msgid  "Passwords for web connections are protected by a master password. You will be asked to enter it once per session, if %PRODUCTNAME retrieves a password from the protected password list."
-msgstr ""
+msgstr "Web 連線的密碼有主密碼保護。只要在階段作業中 %PRODUCTNAME 會從受保護的密碼清單擷取密碼，則此類階段作業都會要求您輸入一次密碼。"
 
 #: source/masterpasscrtdlg.src#DLG_UUI_MASTERPASSWORD_CRT.FT_MASTERPASSWORD_CRT.FixedText.Text
 msgid  "~Enter password"
@@ -649,11 +649,11 @@ msgstr "重新輸入密碼(~R)"
 
 #: source/masterpasscrtdlg.src#DLG_UUI_MASTERPASSWORD_CRT.FT_CAUTIONTEXT.FixedText.Text
 msgid  "Caution: If you forget the master password, you will be unable to access any of the information protected by it. Passwords are case-sensitive."
-msgstr ""
+msgstr "注意: 請務必記住您設定的主密碼。若忘記主密碼，將無法存取任何受其保護的資訊。密碼區分大小寫，且至少為 5 個字元長。"
 
 #: source/alreadyopen.src#STR_ALREADYOPEN_MSG.String.Text
 msgid  "Document file '$(ARG1)' is locked for editing by yourself on a different system since $(ARG2)\n\nOpen document read-only, or ignore own file locking and open the document for editing.\n\n"
-msgstr ""
+msgstr "文件檔案「$(ARG1)」已鎖定，供您在不同的系統中編輯 (自 $(ARG2) 開始)\n\n以唯讀模式開啟文件，或忽略自行鎖定檔案並開啟文件以進行編輯。\n\n"
 
 #: source/alreadyopen.src#STR_ALREADYOPEN_READONLY_BTN.String.Text
 msgid  "Open ~Read-Only"
@@ -665,7 +665,7 @@ msgstr "開啟(~O)"
 
 #: source/alreadyopen.src#STR_ALREADYOPEN_SAVE_MSG.String.Text
 msgid  "Document file '$(ARG1)' is locked for editing by yourself on a different system since $(ARG2)\n\nClose document on other system and retry saving or ignore own file locking and save current document.\n\n"
-msgstr ""
+msgstr "文件檔案「$(ARG1)」已鎖定，供您在不同的系統中編輯 (自 $(ARG2) 開始)\n\n在其他系統上關閉該文件並重試儲存，或忽略自我鎖定檔案並儲存現有的文件。\n\n"
 
 #: source/alreadyopen.src#STR_ALREADYOPEN_RETRY_SAVE_BTN.String.Text
 msgid  "~Retry Saving"
@@ -677,4 +677,4 @@ msgstr "儲存(~S)"
 
 #: source/lockfailed.src#STR_LOCKFAILED_MSG.String.Text
 msgid  "The file could not be locked for exclusive access by %PRODUCTNAME, due to missing permission to create a lock file on that file location."
-msgstr ""
+msgstr "無法鎖定檔案供 %PRODUCTNAME 獨佔存取，因為缺少在該檔案位置建立鎖定檔案的權限。"

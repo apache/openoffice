@@ -45,7 +45,7 @@ msgstr ""
 
 #: source/all/crashrep.ulf#%WELCOME_BODY2%
 msgid  "It's easy - just send the report without any further effort on your part by clicking 'Send' in the next dialog, or you can briefly describe how the error occurred and then click 'Send'. If you want to see the report, click the 'Show Report' button. No data will be sent if you click 'Do Not Send'.\n\n"
-msgstr ""
+msgstr "सरलमेतत् - अतिरिक्त-प्रचेष्टां विना \"प्रेरय\" इत्योपरि क्लीकेन संक्षेपेन वा वदतु कथं त्रूटिः सञ्जाता, तदन्तरं \"प्रेरय\" इत्योपरि क्लीकं करोतु्.यदि भवान् प्रतिवेदन-दर्शने उत्सुकः असि तर्हि \"प्रदर्शय प्रतिवेदनं\" इति पिञ्जोपरि क्लीकं करोतु. किमपि लेखं न प्रेरितं भवति यदि भवान् \"न प्रेरयतु\" इत्योपरि क्लीकं करोति.\n\n"
 
 #: source/all/crashrep.ulf#%WELCOME_BODY3%
 msgid  "Customer Privacy\nThe information gathered is limited to data concerning the state of %PRODUCTNAME% %PRODUCTVERSION% when the error occurred. Other information about passwords or document contents is not collected.\n\nThe information will only be used to improve the quality of %PRODUCTNAME% and will not be shared with third parties.\nFor more information on Apache OpenOffice's privacy policy, visit\n"
@@ -81,7 +81,7 @@ msgstr ""
 
 #: source/all/crashrep.ulf#%ENTER_TITLE%
 msgid  "Which type of document (e.g. presentation) were you using when the error occurred?"
-msgstr ""
+msgstr "किदृशं लेखपत्रं (उदा. प्रस्तुतिकरणम्) भवान् प्रयोगरतः आसीत् यदा त्रूटिः अभवत्?"
 
 #: source/all/crashrep.ulf#%ALLOW_CONTACT%
 msgid  "~I allow Apache OpenOffice to contact me regarding this report."
@@ -93,7 +93,7 @@ msgstr "कृपया स्व-ई-सन्देश-पत्रादे�
 
 #: source/all/crashrep.ulf#%ENTER_DESCRIPTION%
 msgid  "~How were you using %PRODUCTNAME% when the error occurred ?"
-msgstr ""
+msgstr "त्रुटेः आगमनकाले केनोपायेन भवान् %PRODUCTNAME% इत्यस्य प्रयोगं कुर्वन् आसीत् (~H)?"
 
 #: source/all/crashrep.ulf#%BACK_BUTTON%
 msgid  " << ~Back"
@@ -121,23 +121,23 @@ msgstr "इतौ प्रतिवेदनं सञ्चय"
 
 #: source/all/crashrep.ulf#%ERROR_MSG_SIMPLE_MAPI%
 msgid  "The error report could not be sent because the default e-mail program does not support MAPI.\n Please use a MAPI-compatible e-mail program."
-msgstr ""
+msgstr "त्रुटि-प्रतिवेदनं प्रेरणे अक्षमः, मूलभूत- ई-संन्देश-कार्यक्रमस्य MAPI असमर्थितत्वात्.\n MAPI-सुसंगतस्य ई-सन्देशकार्यक्रमस्य प्रयोगं करोतु."
 
 #: source/all/crashrep.ulf#%ERROR_MSG_DISK_FULL%
 msgid  "The error report could not be temporarily saved and could therefore not be sent."
-msgstr ""
+msgstr "त्रुटि-प्रतिवेदनं अस्थायीरूपेण सञ्चये अपारग, प्रेरणे च अक्षमः."
 
 #: source/all/crashrep.ulf#%ERROR_MSG_SENDMAIL%
 msgid  "The error report could not be sent because 'sendmail' could not be started.\nPlease check the 'sendmail' settings."
-msgstr ""
+msgstr "त्रुटि-प्रतिवेदनन प्रेरितं \"सन्देश-प्रेरणम्\" इत्यस्य अनारम्भत्त्वात्. \n सेंडमेल इत्यस्य स्थापना कृपया परीक्षणीय ."
 
 #: source/all/crashrep.ulf#%ERROR_MSG_PROXY%
 msgid  "The error report could not be sent. Please check the proxy settings under 'Options' in the Error Report Tool."
-msgstr ""
+msgstr "त्रुटि-प्रतिवेदन-प्रेरणे असमर्थः.  त्रुटि-प्रतिवेदन-उपकरणस्य अन्तर्गतस्य विकल्पानां अन्यतमस्य प्रक्सि-व्यवस्थायाः परीक्षा कर्तव्या."
 
 #: source/all/crashrep.ulf#%ERROR_MSG_NOCONNECT%
 msgid  "The error report could not be sent because there is no Internet connection. Please check your Internet settings."
-msgstr ""
+msgstr "त्रुटि-प्रतिवेदन-प्रेरणे असमर्थः अन्तर्जालस्य असंयोगत्त्वात्,. स्वकीय-अन्तर्जाल-व्यवस्था परीक्षय."
 
 #: source/all/crashrep.ulf#%OPTIONS_BUTTON%
 msgid  "~Options..."
@@ -173,7 +173,7 @@ msgstr "पोर्ट (~P)"
 
 #: source/all/crashrep.ulf#%PROXY_SETTINGS_DESCRIPTION%
 msgid  "The %PRODUCTNAME% Error Report tool needs to be connected to the Internet to be able to send error reports.\n\nCompanies often use proxy servers in conjunction with a firewall to protect the network.\n\nIf this applies to your situation, you have to specify the address and port for the server."
-msgstr ""
+msgstr "%PRODUCTNAME% त्रुटि-प्रतिवेदन-संप्रेषणाय अन्तर्जाल-संयोगम् अपेक्षितम्\n\nसामान्यतया उद्योग-संस्थाः संजालसंरक्षणनाय अग्निसीमासह प्रॉक्सिसर्वरं उपयोजयन्ति\nयदि इदमपेक्षितं तदा सर्वर-पत्रादेशं पोर्टं च निर्दिष्टं अपेक्षितमपि"
 
 #: source/all/crashrep.ulf#%SENDING_REPORT_HEADER%
 msgid  "Sending Error Report"
@@ -201,8 +201,8 @@ msgstr "-p <प्रक्रिया ID>"
 
 #: source/all/crashrep.ulf#%MSG_PARAM_PROCESSID_DESCRIPTION%
 msgid  "Assigns the %PRODUCTNAME% process ID (PID) to the Error Report Tool"
-msgstr ""
+msgstr "%PRODUCTNAME% प्रक्रिया ID (PID) इत्यस्य त्रुटि-प्रतिवेदन-यन्त्रे निर्यातं कुरु"
 
 #: source/all/crashrep.ulf#%MSG_PARAM_HELP_DESCRIPTION%
 msgid  "Shows this help text.\nDetailed information can be found in the Setup Guide."
-msgstr ""
+msgstr "सहयता-पाठं प्रदर्शयति.\nविस्तृत-विवरणं सेटअप गाइड इतौ उपलब्धम्."

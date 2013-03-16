@@ -136,6 +136,10 @@ msgid  "km"
 msgstr "km"
 
 #: source/src/units.src#SV_FUNIT_STRINGS.FUNIT_TWIP.ItemList.item
+msgid  "twips"
+msgstr "twipi"
+
+#: source/src/units.src#SV_FUNIT_STRINGS.FUNIT_TWIP.ItemList.item
 msgid  "twip"
 msgstr "twipi"
 
@@ -148,32 +152,16 @@ msgid  "pi"
 msgstr "pai"
 
 #: source/src/units.src#SV_FUNIT_STRINGS.FUNIT_INCH.ItemList.item
-msgid  "inch"
-msgstr "inchi"
-
-#: source/src/units.src#SV_FUNIT_STRINGS.FUNIT_FOOT.ItemList.item
-msgid  "feet"
-msgstr "futi"
-
-#: source/src/units.src#SV_FUNIT_STRINGS.FUNIT_MILE.ItemList.item
-msgid  "mile"
-msgstr "maili"
-
-#: source/src/units.src#SV_FUNIT_STRINGS.FUNIT_PERCENT.ItemList.item
-msgid  "%"
-msgstr "%"
-
-#: source/src/units.src#SV_FUNIT_STRINGS.FUNIT_TWIP.ItemList.item
-msgid  "twips"
-msgstr "twipi"
-
-#: source/src/units.src#SV_FUNIT_STRINGS.FUNIT_INCH.ItemList.item
-msgid  """
-msgstr ""
+msgid  "\""
+msgstr "\""
 
 #: source/src/units.src#SV_FUNIT_STRINGS.FUNIT_INCH.ItemList.item
 msgid  "in"
 msgstr "katika"
+
+#: source/src/units.src#SV_FUNIT_STRINGS.FUNIT_INCH.ItemList.item
+msgid  "inch"
+msgstr "inchi"
 
 #: source/src/units.src#SV_FUNIT_STRINGS.FUNIT_FOOT.ItemList.item
 msgid  "'"
@@ -187,13 +175,25 @@ msgstr "ft"
 msgid  "foot"
 msgstr "futi"
 
+#: source/src/units.src#SV_FUNIT_STRINGS.FUNIT_FOOT.ItemList.item
+msgid  "feet"
+msgstr "futi"
+
 #: source/src/units.src#SV_FUNIT_STRINGS.FUNIT_MILE.ItemList.item
 msgid  "miles"
 msgstr "maili"
 
+#: source/src/units.src#SV_FUNIT_STRINGS.FUNIT_MILE.ItemList.item
+msgid  "mile"
+msgstr "maili"
+
+#: source/src/units.src#SV_FUNIT_STRINGS.FUNIT_PERCENT.ItemList.item
+msgid  "%"
+msgstr "%"
+
 #: source/src/stdtext.src#SV_STDTEXT_SERVICENOTAVAILABLE.String.Text
 msgid  "The component (%s) could not be loaded.\nPlease start setup with the repair option."
-msgstr ""
+msgstr "Komponenti () haikuweza kupakiwa.\nTafadhali anza usanidi wenye chaguo la ukarabati."
 
 #: source/src/stdtext.src#SV_STDTEXT_DONTHINTAGAIN.String.Text
 msgid  "Do not show this information again."
@@ -213,11 +213,11 @@ msgstr "Toleo lina makosa"
 
 #: source/src/stdtext.src#SV_ACCESSERROR_BRIDGE_MSG.String.Text
 msgid  "%PRODUCTNAME %PRODUCTVERSION requires a Java Access Bridge 1.0.3 or later version to support accessibility."
-msgstr ""
+msgstr "%PRODUCTNAME %PRODUCTVERSION inahitaji Daraja Fikio la Java 1.0.3 au toleo la baadae kuupa mwega ufikiaji."
 
 #: source/src/stdtext.src#SV_ACCESSERROR_OK_CANCEL_MSG.String.Text
 msgid  "Click '%OK' to start %PRODUCTNAME %PRODUCTVERSION without accessibility support, or click '%CANCEL' to exit %PRODUCTNAME %PRODUCTVERSION."
-msgstr ""
+msgstr "Bofya '0K' kuanza %PRODUCTNAME %PRODUCTVERSION bila ya mwega wa ufikiaji, au bofya '%CANCEL' kutoka %PRODUCTNAME %PRODUCTVERSION."
 
 #: source/src/stdtext.src#SV_ACCESSERROR_MISSING_BRIDGE.String.Text
 msgid  "No Java Access Bridge"
@@ -229,7 +229,7 @@ msgstr "Usanidi Java Tenge"
 
 #: source/src/stdtext.src#SV_ACCESSERROR_JAVA_MSG.String.Text
 msgid  "%PRODUCTNAME %PRODUCTVERSION requires Java 1.4.0_02 or later version to support accessibility."
-msgstr ""
+msgstr "%PRODUCTNAME %PRODUCTVERSION inahitaji java 1.4.0_02 au toleo la baadae kuupa mwega ufikiaji."
 
 #: source/src/stdtext.src#SV_ACCESSERROR_MISSING_JAVA.String.Text
 msgid  "No Java Installation"

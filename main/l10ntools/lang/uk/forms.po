@@ -177,7 +177,7 @@ msgstr "замінено"
 
 #: source/resource/strings.src#RID_STR_CONTROL_SUBSTITUTED_EPXPLAIN.String.Text
 msgid  "An error occurred while this control was being loaded. It was therefore replaced with a placeholder."
-msgstr ""
+msgstr "Помилка при завантаженні елементу керування. Тому його замінено на полем заміни."
 
 #: source/resource/strings.src#RID_STR_READERROR.String.Text
 msgid  "Error reading data from database"
@@ -233,7 +233,7 @@ msgstr "Синтаксична помилка у виразі запиту"
 
 #: source/resource/strings.src#RID_STR_INCOMPATIBLE_TYPES.String.Text
 msgid  "The value types supported by the binding cannot be used for exchanging data with this control."
-msgstr ""
+msgstr "Значення, що підтримується зв'язкою не може бути використане для обміну даних з цим елементом керування."
 
 #: source/resource/strings.src#RID_STR_LABEL_RECORD.String.Text
 msgid  "Record"
@@ -241,7 +241,7 @@ msgstr "Запис"
 
 #: source/resource/strings.src#RID_STR_INVALID_VALIDATOR.String.Text
 msgid  "The control is connected to an external value binding, which at the same time acts as validator. You need to revoke the value binding, before you can set a new validator."
-msgstr ""
+msgstr "Елемент керування, що підключається до вашого зовнішнього зв'язуючого значення, яке в одночасно виступає як перевірочний елемент. Необхідно роз'єднати зв'язуюче значення, перш ніж зможете встановити новий перевірочний елемент."
 
 #: source/resource/strings.src#RID_STR_LABEL_OF.String.Text
 msgid  "of"
@@ -249,7 +249,7 @@ msgstr "розмір:"
 
 #: source/resource/strings.src#RID_STR_QUERY_SAVE_MODIFIED_ROW.String.Text
 msgid  "The content of the current form has been modified.\nDo you want to save your changes?"
-msgstr ""
+msgstr "Зміст цієї форми було змінено.\nЗберегти зміни?"
 
 #: source/resource/strings.src#RID_STR_COULD_NOT_SET_ORDER.String.Text
 msgid  "Error setting the sort criteria"

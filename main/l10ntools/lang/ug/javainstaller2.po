@@ -125,7 +125,7 @@ msgstr "تۆۋەندىكى ئىجازەت كېلىشىمىنى تەپسىلىي 
 
 #: src/Localization/setupstrings.ulf#STRING_ACCEPTLICENSE3
 msgid  "If you have read and accept all the terms of the entire Software License Agreement, click 'Accept License' to continue with the installation."
-msgstr ""
+msgstr "ئەگەر ئىجازەت كېلىشىمىنى ئوقۇپ ھەممە ماددىلىرىغا قوشۇلسىڭىز، «ئىجازەتنامىگە قوشۇل» نى چېكىپ قاچىلاشنى داۋاملاشتۇرۇڭ."
 
 #: src/Localization/setupstrings.ulf#STRING_CHOOSEDIRECTORY1
 msgid  "Select Installation Directory"
@@ -153,11 +153,11 @@ msgstr "يېڭى مۇندەرىجە قۇر"
 
 #: src/Localization/setupstrings.ulf#STRING_CHOOSEDIRECTORY5_QUESTION_MESSAGE
 msgid  "The directory '${DIR}' does not exist.\nDo you want to create it now?"
-msgstr ""
+msgstr "'${DIR}' مۇندەرىجە مەۋجۇد ئەمەس. \nبۇ مۇندەرىجىنى ھازىر قۇرامسىز؟"
 
 #: src/Localization/setupstrings.ulf#STRING_CHOOSEDIRECTORY5_QUESTION_MESSAGE2
 msgid  "The directory '${DIR}' does not exist.\nDo you want to create it now or choose another directory?"
-msgstr ""
+msgstr "'${DIR}' مۇندەرىجە مەۋجۇد ئەمەس. \nبۇ مۇندەرىجىنى ھازىر قۇرامسىز ياكى باشقا مۇندەرىجە تاللامسىز؟"
 
 #: src/Localization/setupstrings.ulf#STRING_CHOOSEDIRECTORY6
 msgid  "Select root directory"
@@ -209,11 +209,11 @@ msgstr "قاچىلاش تىپىنى تاللاڭ"
 
 #: src/Localization/setupstrings.ulf#STRING_CHOOSEINSTALLATIONTYPE4
 msgid  "The main components will be installed. Recommended for most users."
-msgstr ""
+msgstr "ئاساسىي بۆلەكلەرنى قاچىلايدۇ. كۆپ قىسىم ئىشلەتكۈچىلەرگە تەۋسىيە قىلىنىدۇ."
 
 #: src/Localization/setupstrings.ulf#STRING_CHOOSEINSTALLATIONTYPE5
 msgid  "You choose the components you want to install and where they are stored. Recommended for advanced users."
-msgstr ""
+msgstr "قاچىلايدىغان بۆلەكلەرنى ۋە ئۇلارنىڭ ساقلىنىدىغان ئورنىنى تاللاڭ. ئالىي ئىشلەتكۈچىلەرگە تەۋسىيە قىلىنىدۇ."
 
 #: src/Localization/setupstrings.ulf#STRING_CHOOSEINSTALLATIONTYPE6
 msgid  "Typical"
@@ -253,7 +253,7 @@ msgstr "مەرھابا"
 
 #: src/Localization/setupstrings.ulf#STRING_PROLOGUE2
 msgid  "This Installation Wizard will install ${PRODUCT_FULLNAME} on your computer."
-msgstr ""
+msgstr "بۇ قاچىلاش يېتەكچىسى ${PRODUCT_FULLNAME} نى كومپيۇتېرىڭىزغا قاچىلايدۇ."
 
 #: src/Localization/setupstrings.ulf#STRING_PROLOGUE3
 msgid  "To continue, click 'Next'."
@@ -261,7 +261,7 @@ msgstr "داۋاملاشتۇرۇشتا «كەينى»نى چېكىڭ."
 
 #: src/Localization/setupstrings.ulf#STRING_PROLOGUE4
 msgid  "Note: This installation will be done without root privileges. Therefore you will have a reduced functionality (Java Runtime Environment (JRE) not installable, system integration not possible).\nClick 'Cancel' and change your privileges to root privileges, if you want to use the complete functionality."
-msgstr ""
+msgstr "دىققەت: قاچىلاش باشقۇرغۇچى ھوقۇقى بولمىغان ئەھۋالدا ئىجرا قىلىنىدۇ. شۇڭلاشقا چەكلىك ئىقتىدارغا ئېرىشىسىز. (Java ئىجرا قىلىش مۇھىتى (JRE) قاچىلانمىغان، سىستېمىنى توپلىيالمايدۇ ).\nئەگەر ھەممە ئىقتىدارىنى ئىشلەتسىڭىز «ۋاز كەچ»نى چېكىپ ھوقۇقىڭىزنى باشقۇرغۇچى ھوقۇقىغا ئۆزگەرتىڭ."
 
 #: src/Localization/setupstrings.ulf#STRING_INSTALLATIONCOMPLETED1
 msgid  "Installation Completed"
@@ -277,15 +277,15 @@ msgstr "قاچىلاش مەغلۇپ بولدى"
 
 #: src/Localization/setupstrings.ulf#STRING_INSTALLATIONCOMPLETED2
 msgid  "The Installation Wizard has successfully installed ${PRODUCT_FULLNAME} on your computer."
-msgstr ""
+msgstr "قاچىلاش يېتەكچىسى ${PRODUCT_FULLNAME} نى كومپيۇتېرىڭىزغا مۇۋەپپەقىيەتلىك قاچىلىدۇ."
 
 #: src/Localization/setupstrings.ulf#STRING_INSTALLATIONCOMPLETED2_ABORT
 msgid  "The Installation Wizard was aborted. ${PRODUCT_NAME} is not installed on your computer."
-msgstr ""
+msgstr "قاچىلاش يېتەكچىسى توختىتىلدى. ${PRODUCT_NAME} كومپيۇتېرىڭىزغا قاچىلانمىدى."
 
 #: src/Localization/setupstrings.ulf#STRING_INSTALLATIONCOMPLETED2_ERROR
 msgid  "An error has occurred. Thus the Installation Wizard could not install ${PRODUCT_NAME} on your computer successfully. Click 'Details...' for more information."
-msgstr ""
+msgstr "بىر خاتالىق يۈز بەردى. شۇڭلاشقا قاچىلاش يېتەكچىسى ${PRODUCT_NAME} نى كومپيۇتېرىڭىزغا مۇۋەپپەقىيەتلىك قاچىلىيالمىدى. «تەپسىلىي ئۇچۇر…»نى چېكىپ تېخىمۇ كۆپ ئۇچۇرنى كۆرۈڭ."
 
 #: src/Localization/setupstrings.ulf#STRING_INSTALLATIONCOMPLETED3
 msgid  "Click 'Finish' to exit the Wizard."
@@ -297,15 +297,15 @@ msgstr "تەپسىلاتى…"
 
 #: src/Localization/setupstrings.ulf#STRING_UNINSTALLATIONPROLOGUE2
 msgid  "The ${PRODUCT_FULLNAME} Uninstallation Wizard will remove ${PRODUCT_FULLNAME} from your computer."
-msgstr ""
+msgstr "${PRODUCT_FULLNAME} ئۆچۈرۈش يېتەكچىسى ${PRODUCT_FULLNAME} نى كومپيۇتېرىڭىزدىن ئۆچۈرىدۇ."
 
 #: src/Localization/setupstrings.ulf#STRING_UNINSTALLATION_PROLOGUE_WRONG_PRIVILEGES_CURRENT_ROOT
 msgid  "Sorry, wrong privileges. Installation was done with User privilges, but you have Root privileges."
-msgstr ""
+msgstr "كەچۈرۈڭ، ھوقۇق خاتالىقى. قاچىلاش ئادەتتىكى ئىشلەتكۈچى ھوقۇقىدا تاماملاندى ئەمما سىزدە ئالاھىدە باشقۇرغۇچى ھوقۇقى بار ئىكەن."
 
 #: src/Localization/setupstrings.ulf#STRING_UNINSTALLATION_PROLOGUE_WRONG_PRIVILEGES_CURRENT_USER
 msgid  "Sorry, wrong privileges. Installation was done with Root privilges, but you have User privileges."
-msgstr ""
+msgstr "كەچۈرۈڭ، ھوقۇق خاتالىقى. قاچىلاش ئالاھىدە ئىشلەتكۈچى ھوقۇقىدا تاماملاندى ئەمما سىزدە ئادەتتىكى ئىشلەتكۈچى ھوقۇقى بار ئىكەن."
 
 #: src/Localization/setupstrings.ulf#STRING_CHOOSEUNINSTALLATIONTYPE1
 msgid  "Select the Type of Uninstallation"
@@ -321,7 +321,7 @@ msgstr "قىسمەن"
 
 #: src/Localization/setupstrings.ulf#STRING_CHOOSEUNINSTALLATIONTYPE4
 msgid  "Completely removes ${PRODUCT_FULLNAME} and all its components from your system."
-msgstr ""
+msgstr "سىستېڭىزدىن ${PRODUCT_FULLNAME} ۋە ئۇنىڭ ھەممە بۆلەكلىرىنى تولۇق ئۆچۈرىدۇ."
 
 #: src/Localization/setupstrings.ulf#STRING_CHOOSEUNINSTALLATIONTYPE5
 msgid  "You choose the program features you want to remove."
@@ -333,7 +333,7 @@ msgstr "تولۇق"
 
 #: src/Localization/setupstrings.ulf#STRING_CHOOSEUNINSTALLATIONCOMPONENTS2
 msgid  "Components marked with an X will be removed. Mark the components you want to remove."
-msgstr ""
+msgstr "X بىلەن بەلگەسېلىنغان بۆلەكنى ئۆچۈرىدۇ. ئۆچۈرمەكچى بولغان بۆلەككە بەلگە سېلىڭ."
 
 #: src/Localization/setupstrings.ulf#STRING_UNINSTALLATIONIMMINENT1
 msgid  "Ready to Remove"
@@ -361,19 +361,19 @@ msgstr "ئۆچۈرۈش مەغلۇپ بولدى"
 
 #: src/Localization/setupstrings.ulf#STRING_UNINSTALLATIONCOMPLETED2
 msgid  "The Uninstallation Wizard has successfully removed ${PRODUCT_FULLNAME} from your computer."
-msgstr ""
+msgstr "ئۆچۈرۈش يېتەكچىسى ${PRODUCT_FULLNAME} نى كومپيۇتېرىڭىزدىن مۇۋەپپەقىيەتلىك ئۆچۈردى."
 
 #: src/Localization/setupstrings.ulf#STRING_UNINSTALLATIONCOMPLETED2_PARTIAL
 msgid  "The Uninstallation Wizard has successfully removed the selected components of ${PRODUCT_NAME} from your computer."
-msgstr ""
+msgstr "ئۆچۈرۈش يېتەكچىسى تاللانغان ${PRODUCT_FULLNAME} نىڭ بۆلەكلىرىنى كومپيۇتېرىڭىزدىن مۇۋەپپەقىيەتلىك ئۆچۈردى."
 
 #: src/Localization/setupstrings.ulf#STRING_UNINSTALLATIONCOMPLETED2_ABORT
 msgid  "The Uninstallation Wizard was aborted before completely removing ${PRODUCT_NAME} from your computer."
-msgstr ""
+msgstr "ئۆچۈرۈش يېتەكچىسى ${PRODUCT_NAME} نى كومپيۇتېرىڭىزدىن ئۆچۈرۈشتىن ئىلگىرى توختىتىلدى."
 
 #: src/Localization/setupstrings.ulf#STRING_UNINSTALLATIONCOMPLETED2_ERROR
 msgid  "An error has occurred. Thus the Uninstallation Wizard could not remove ${PRODUCT_NAME} from your computer successfully. Click 'Details...' for more information."
-msgstr ""
+msgstr "بىر خاتالىق يۈز بەردى. شۇڭلاشقا ئۆچۈرۈش يېتەكچىسى ${PRODUCT_NAME} نى كومپيۇتېرىڭىزدىن مۇۋەپپەقىيەتلىك ئۆچۈرەلمىدى. «تەپسىلىي ئۇچۇر…»نى چېكىپ تېخىمۇ كۆپ ئۇچۇرنى كۆرۈڭ."
 
 #: src/Localization/setupstrings.ulf#STRING_INSTALLERFACTORY_OS_NOT_SUPPORTED
 msgid  "Sorry, this Operating System is not supported yet."
@@ -385,7 +385,7 @@ msgstr "سىستېمىڭىزدىن ${PRODUCT_NAME} نىڭ كونا نەشرى ب
 
 #: src/Localization/setupstrings.ulf#STRING_OLDER_VERSION_INSTALLED_REMOVE
 msgid  "You have to remove the older version of ${PRODUCT_NAME} before you can install the newer one."
-msgstr ""
+msgstr "كونا نەشرىنى قاچىلاشتىن ئىلگىرى، ${PRODUCT_NAME} يېڭى نەشرىنى ئۆچۈرۈشىڭىز لازىم."
 
 #: src/Localization/setupstrings.ulf#STRING_NEWER_VERSION_INSTALLED_FOUND
 msgid  "A newer version of ${PRODUCT_NAME} was found on your system in:"
@@ -393,7 +393,7 @@ msgstr "سىستېمىڭىزدىن ${PRODUCT_NAME} نىڭ يېڭى نەشرى ب
 
 #: src/Localization/setupstrings.ulf#STRING_NEWER_VERSION_INSTALLED_REMOVE
 msgid  "You have to remove the newer version of ${PRODUCT_NAME} before you can install the older one."
-msgstr ""
+msgstr "كونا نەشرىنى قاچىلاشتىن ئىلگىرى، ${PRODUCT_NAME} يېڭى نەشرىنى ئۆچۈرۈشىڭىز لازىم."
 
 #: src/Localization/setupstrings.ulf#STRING_NEWER_VERSION_DATABASE
 msgid  "Database"
@@ -405,11 +405,11 @@ msgstr "باشقا قاچىلاش مۇندەرىجىسى تاللاڭ."
 
 #: src/Localization/setupstrings.ulf#STRING_ROOT_PRIVILEGES_REQUIRED_1
 msgid  "The user you are logged in as cannot run the Installation Wizard."
-msgstr ""
+msgstr "سىز تىزىمغا كىرگەن ئىشلەتكۈچى سالاھىيىتىدە قاچىلاش يېتەكچىسىنى ئىجرا قىلالمايدۇ."
 
 #: src/Localization/setupstrings.ulf#STRING_ROOT_PRIVILEGES_REQUIRED_2
 msgid  "Please log out and log back in as a user with system administrator rights."
-msgstr ""
+msgstr "تىزىمدىن چىقىپ، سىستېما باشقۇرغۇچى سالاھىيىتىدىكى ئىشلەتكۈچى سۈپىتىدە قايتىدىن تىزىمغا كىرىڭ."
 
 #: src/Localization/setupstrings.ulf#STRING_DISCSPACE_INSUFFICIENT
 msgid  "Not enough discspace available for installation."
@@ -425,7 +425,7 @@ msgstr "ئىشلىتىلىشچان دىسكا بوشلۇقى"
 
 #: src/Localization/setupstrings.ulf#STRING_DISCSPACE_TIP
 msgid  "Please use another directory for installation or change your module selection."
-msgstr ""
+msgstr "قاچىلاشقا باشقا مۇندەرىجە ئىشلىتىڭ ياكى تاللىغان بۆلەكلىرىڭىزنى ئۆزگەرتىڭ."
 
 #: src/Localization/setupstrings.ulf#STRING_ANALYZING_DATABASE1
 msgid  "Analyzing ..."
@@ -433,11 +433,11 @@ msgstr "تەھلىل قىلىۋاتىدۇ…"
 
 #: src/Localization/setupstrings.ulf#STRING_ANALYZING_DATABASE2
 msgid  "Analyzing database\nPlease wait a moment ..."
-msgstr ""
+msgstr "ساندان تەھلىل قىلىۋاتىدۇ\nسەل ساقلاڭ…"
 
 #: src/Localization/setupstrings.ulf#STRING_PROLOGUE_1
 msgid  "Welcome to the Installation Wizard.<p>This wizard asks you to supply configuration settings.<p>At the bottom of each page are navigation buttons that let you move through the Installation Wizard:"
-msgstr ""
+msgstr "قاچىلاش يېتەكچىسى ئىشلىتىشىڭىزنى قارشى ئالىمىز.<p>بۇ يېتەكچى سىزدىن سەپلىمە تەڭشىكىنى تەمىنلەشنى تەلەپ قىلىدۇ.<p>سىز ھەر بىر بەتنىڭ ئاستىدىكى يېتەكچى كۇنۇپكىنى ئىشلىتىپ قاچىلاش يېتەكچىسىدە يۇمشاق دېتال قاچىلىيالايسىز:"
 
 #: src/Localization/setupstrings.ulf#STRING_PROLOGUE_2
 msgid  "'Back' returns you to the previous page."
@@ -453,7 +453,7 @@ msgstr "«ۋاز كەچ» بۇ يۇمشاق دېتالنى قاچىلىماي، 
 
 #: src/Localization/setupstrings.ulf#STRING_PROLOGUE_5
 msgid  "'Help' displays the Help with further information about the page currently displayed."
-msgstr ""
+msgstr "«ياردەم» نۆۋەتتىكى بەتكە مۇناسىۋەتلىك تېخىمۇ كۆپ ياردەم ئۇچۇرىنى كۆرسىتىدۇ."
 
 #: src/Localization/setupstrings.ulf#STRING_PROLOGUE_6
 msgid  "'OK' exits the Help page and returns you to the Installation Wizard."
@@ -461,7 +461,7 @@ msgstr "«جەزملە» ياردەم بېتىدىن چېكىنىپ، قاچىل
 
 #: src/Localization/setupstrings.ulf#STRING_UNINSTALLATIONPROLOGUE_1
 msgid  "Welcome to the Uninstallation Wizard.<p>This wizard asks you to supply configuration settings.<p>At the bottom of each page are navigation buttons that let you move through the Uninstallation Wizard:"
-msgstr ""
+msgstr "ئۆچۈرۈش يېتەكچىسى ئىشلىتىشىڭىزنى قارشى ئالىمىز.<p>بۇ يېتەكچى سىزدىن سەپلىمە تەڭشىكىنى تەمىنلەشنى تەلەپ قىلىدۇ.<p>سىز ھەر بىر بەتنىڭ ئاستىدىكى يېتەكچى كۇنۇپكىنى ئىشلىتىپ ئۆچۈرۈش يېتەكچىسىدە يۇمشاق دېتال ئۆچۈرەلەيسىز:"
 
 #: src/Localization/setupstrings.ulf#STRING_UNINSTALLATIONPROLOGUE_2
 msgid  "'Back' returns you to the previous page."
@@ -477,7 +477,7 @@ msgstr "«ۋاز كەچ» بۇ يۇمشاق دېتالنى ئۆچۈرمەي، ئ
 
 #: src/Localization/setupstrings.ulf#STRING_UNINSTALLATIONPROLOGUE_5
 msgid  "'Help' displays the Help with further information about the page currently displayed."
-msgstr ""
+msgstr "«ياردەم» نۆۋەتتىكى بەتكە مۇناسىۋەتلىك تېخىمۇ كۆپ ياردەم ئۇچۇرىنى كۆرسىتىدۇ."
 
 #: src/Localization/setupstrings.ulf#STRING_UNINSTALLATIONPROLOGUE_6
 msgid  "'OK' exits the Help page and returns you to the Uninstallation Wizard."
@@ -485,55 +485,55 @@ msgstr "«جەزملە» ياردەم بېتىدىن چېكىنىپ، ئۆچۈر
 
 #: src/Localization/setupstrings.ulf#STRING_ACCEPTLICENSE_1
 msgid  "Before you install this product, you must read and accept the entire Software License Agreement under which this software is licensed for your use."
-msgstr ""
+msgstr "بۇ مەھسۇلاتنى قاچىلاشتىن ئىلگىرى، سىز يۇمشاق دېتال ئىجازەتنامە كېلىشىمىنى ئوقۇپ ھەممە ماددىلىرىغا قوشۇلۇشىڭىز لازىم. ئىجازەتنامە كېلىشىمىنىڭ ئىجازىتىدە بۇ مەھسۇلاتنى قانۇنلۇق ئىشلىتەلەيسىز."
 
 #: src/Localization/setupstrings.ulf#STRING_ACCEPTLICENSE_2
 msgid  "If you have read and accept all the terms of the entire Software License Agreement, click 'Accept License' to continue with the installation."
-msgstr ""
+msgstr "ئەگەر ئىجازەت كېلىشىمىنى ئوقۇپ ھەممە ماددىلىرىغا قوشۇلسىڭىز، «ئىجازەتنامىگە قوشۇل» نى چېكىپ قاچىلاشنى داۋاملاشتۇرۇڭ."
 
 #: src/Localization/setupstrings.ulf#STRING_ACCEPTLICENSE_3
 msgid  "If you do not accept all the terms of the Software License Agreement, click 'Decline' to end the Installation Wizard without installing this product."
-msgstr ""
+msgstr "ئەگەر يۇمشاق دېتال كېلىشىمىنىڭ ھەممە ماددىلىرىغا قوشۇلمىسىڭىز، «رەت قىل» نى چېكىپ، بۇ مەھسۇلاتنى قاچىلىماي، قاچىلاش يېتەكچىسىدىن چېكىنىڭ."
 
 #: src/Localization/setupstrings.ulf#STRING_CHOOSEINSTALLATIONTYPE_1
 msgid  "Select the type of product installation to perform from the following choices. This will determine how much information you need to provide for product configuration."
-msgstr ""
+msgstr "تۆۋەندىكى تاللاشتىن مەھسۇلات قاچىلاش تىپىنى تاللاڭ. بۇ مەھسۇلاتنى سەپلەشكە تەمىنلەيدىغان ئۇچۇرىڭىزنى بەلگىلەيدۇ."
 
 #: src/Localization/setupstrings.ulf#STRING_CHOOSEDIRECTORY_1
 msgid  "It is recommended that you install this product in the directory suggested by this Installation Wizard. <p>To choose a different location, click 'Browse...' or specify the full path of the directory to use in the text box below. <p>If this product is already installed, you cannot change the destination directory."
-msgstr ""
+msgstr "بۇ مەھسۇلاتنى قاچىلاش يېتەكچىسى تەۋسىيە قىلغان مۇندەرىجىگە قاچىلىشىڭىز تەۋسىيە قىلىنىدۇ.<p> باشقا ئورۇننى تاللىسىڭىز «كۆز يۈگۈرت…»نى چېكىڭ ياكى تۆۋەندىكى تېكست رامكىسىدا ئىشلىتىدىغان مۇندەرىجىنىڭ تولۇق يولىنى بەلگىلەڭ. <p> ئەگەر بۇ مەھسۇلات قاچىلانغان بولسا، قاچىلاش مۇندەرىجىسىنى ئۆزگەرتەلمەيسىز."
 
 #: src/Localization/setupstrings.ulf#STRING_CHOOSECOMPONENTS_1
 msgid  "Components marked in color will be installed. Click the icon of a component to mark or unmark the component.<p>All already installed components cannot be selected for installation."
-msgstr ""
+msgstr "رەت بىلەن بەلگە سېلىنغان بۆلەك قاچىلىنىدۇ. مەلۇم بۆلەكنىڭ سىنبەلگىسىنى چېكىپ بەلگە سېلىڭ ياكى بەلگىنى ئېلىۋېتىڭ.<p> قاچىلىنىپ بولغان بۆلەكلەرنى تاللاپ قاچىلىغىلى بولمايدۇ."
 
 #: src/Localization/setupstrings.ulf#STRING_INSTALLATIONIMMINENT_1
 msgid  "The listed components are ready for installation based on your configuration settings. <p>If you are satisfied with your selection, click 'Install Now' to begin. <p>To check or modify your settings on the previous pages, click 'Back'."
-msgstr ""
+msgstr "سەپلىمە تەڭشىكىڭىزگە ئاساسەن كۆرسىتىلگىنى قاچىلىماقچى بولغان بۆلەكلەر.<p>ئەگەر سىز قاچىلايدىغان بۆلەكلەرگە رازى بولسىڭىز، «ھازىر قاچىلا»نى چېكىپ قاچىلاشنى باشلاڭ.<p>ئەگەر ئالدىنقى بەتتىكى تەڭشەكنى تەكشۈرمەكچى ياكى ئۆزگەرتمەكچى بولسىڭىز «كەينى»نى چېكىڭ."
 
 #: src/Localization/setupstrings.ulf#STRING_UNINSTALLATIONIMMINENT_1
 msgid  "The listed components are ready for uninstallation based on your configuration settings. <p>If you are satisfied with your selection, click 'Remove Now' to begin. <p>To check or modify your settings on the previous pages, click 'Back'."
-msgstr ""
+msgstr "سەپلىمە تەڭشىكىڭىزگە ئاساسەن كۆرسىتىلگىنى ئۆچۈرۈلمەكچى بولغان بۆلەكلەر.<p>ئەگەر سىز ئۆچۈرىدىغان بۆلەكلەرگە رازى بولسىڭىز، «ھازىر ئۆچۈر»نى چېكىپ ئۆچۈرۈشنى باشلاڭ.<p>ئەگەر ئالدىنقى بەتتىكى تەڭشەكنى تەكشۈرمەكچى ياكى ئۆزگەرتمەكچى بولسىڭىز «كەينى»نى چېكىڭ."
 
 #: src/Localization/setupstrings.ulf#STRING_INSTALLATIONONGOING_1
 msgid  "This page indicates the progress of the installation with the aid of a progress bar. To abort the installation process, click 'Stop'."
-msgstr ""
+msgstr "بۇ بەتتىكى سۈرئەت تالچىسى قاچىلاش سۈرئىتىنى كۆرسىتىدۇ. قاچىلاش جەريانىنى توختاتماقچى بولسىڭىز «توختا»نى چېكىڭ."
 
 #: src/Localization/setupstrings.ulf#STRING_UNINSTALLATIONONGOING_1
 msgid  "This page indicates the progress of the uninstallation with the aid of a progress bar. To abort the uninstallation, click 'Stop'."
-msgstr ""
+msgstr "بۇ بەتتىكى سۈرئەت تالچىسى ئۆچۈرۈش سۈرئىتىنى كۆرسىتىدۇ. ئۆچۈرۈاش جەريانىنى توختاتماقچى بولسىڭىز «توختا»نى چېكىڭ."
 
 #: src/Localization/setupstrings.ulf#STRING_CHOOSEUNINSTALLATIONTYPE_1
 msgid  "Complete: This will remove all installed components of your version.<p>Partial: This removes only the components you will choose out of the components list."
-msgstr ""
+msgstr "تولۇق: سىز ئىشلىتىۋاتقان نەشرىگە قاچىلانغان ھەممە بۆلەكلەرنى ئۆچۈرىدۇ.<p>قىسمەن: بۆلەك تىزىملىكىدە تاللىغان بۆلەكنىلا ئۆچۈرىدۇ."
 
 #: src/Localization/setupstrings.ulf#STRING_CHOOSEUNINSTALLATIONCOMPONENTS_1
 msgid  "Components marked with an X will be removed. Click next to a component to mark or unmark it with an X."
-msgstr ""
+msgstr "X بىلەن بەلگەسېلىنغان بۆلەكنى ئۆچۈرىدۇ. بۆلەك يېنىدا چاشقىنەكنى يەككە چېكىپ X بىلەن ئۆچۈرمەكچى بولغان بۆلەككە بەلگە سېلىڭ ياكى بەلگىنى بىكار قىلىڭ."
 
 #: src/Localization/setupstrings.ulf#STRING_PACKAGEFORMAT_NOT_SUPPORTED
 msgid  "This package format is currently not supported for your operating system!"
-msgstr ""
+msgstr "مەشغۇلات سىستېمىڭىز بۇ خىل يۇمشاق دېتال بوغچىسىنى قوللىمايدۇ!"
 
 #: src/Localization/setupstrings.ulf#STRING_OPERATING_SYSTEM
 msgid  "Operating system"
@@ -553,7 +553,7 @@ msgstr "قاچىلاش ئۈچۈن قوللىنىشچان پروگرامما بۆ
 
 #: src/Localization/setupstrings.ulf#STRING_NO_COMPONENTS_SELECTED_2
 msgid  "Click 'OK' to select one or more components for installation or to exit the Installation Wizard."
-msgstr ""
+msgstr "«جەزملە» نى چېكىپ بىر ياكى بىر قانچە قاچىلايدىغان قوللىنىشچان پروگرامما بۆلىكىنى تاللاڭ ياكى «قاچىلاش يېتەكچىسى»دىن چېكىنىڭ."
 
 #: src/Localization/setupstrings.ulf#STRING_NO_LANGUAGE_SELECTED_1
 msgid  "No languages have been selected for installation."
@@ -561,7 +561,7 @@ msgstr "ھېچقانداق تىل بۆلىكىنى قاچىلاش تاللانم
 
 #: src/Localization/setupstrings.ulf#STRING_NO_LANGUAGE_SELECTED_2
 msgid  "Click 'OK' to select one or more languages for installation or to exit the Installation Wizard."
-msgstr ""
+msgstr "«جەزملە» نى چېكىپ بىر ياكى بىر قانچە قاچىلايدىغان تىل بۆلىكىنى تاللاڭ ياكى «قاچىلاش يېتەكچىسى»دىن چېكىنىڭ."
 
 #: src/Localization/setupstrings.ulf#STRING_NO_APPLICATION_SELECTED_1
 msgid  "No applications have been selected for installation."
@@ -569,7 +569,7 @@ msgstr "قاچىلايدىغان قوللىنىشچان پروگرامما بۆ�
 
 #: src/Localization/setupstrings.ulf#STRING_NO_APPLICATION_SELECTED_2
 msgid  "Click 'OK' to select one or more application for installation or to exit the Installation Wizard."
-msgstr ""
+msgstr "«جەزملە» نى چېكىپ بىر ياكى بىر قانچە قاچىلايدىغان قوللىنىشچان پروگرامما بۆلىكىنى تاللاڭ ياكى «قاچىلاش يېتەكچىسى»دىن چېكىنىڭ."
 
 #: src/Localization/setupstrings.ulf#STRING_NOTHING_TO_UNINSTALL
 msgid  "Nothing to uninstall"
@@ -581,7 +581,7 @@ msgstr "ئۆچۈرۈش ئۈچۈن قوللىنىشچان پروگرامما بۆ
 
 #: src/Localization/setupstrings.ulf#STRING_NO_UNINSTALLCOMPONENTS_SELECTED_2
 msgid  "Click 'OK' to select one or more components for uninstallation or to exit the Uninstallation Wizard."
-msgstr ""
+msgstr "«جەزملە» نى چېكىپ بىر ياكى بىر قانچە ئۆچۈرىدىغان قوللىنىشچان پروگرامما بۆلىكىنى تاللاڭ ياكى «ئۆچۈرۈش يېتەكچىسى»دىن چېكىنىڭ."
 
 #: src/Localization/setupstrings.ulf#STRING_ALL_LANGUAGECOMPONENTS_SELECTED_1
 msgid  "All language components have been selected for uninstallation."
@@ -589,7 +589,7 @@ msgstr "ھەممە تىل بۆلەكلىرىنى ئۆچۈرۈش تاللاندى
 
 #: src/Localization/setupstrings.ulf#STRING_ALL_LANGUAGECOMPONENTS_SELECTED_2
 msgid  "Click 'OK' to select one or more language components not for uninstallation or to exit the Uninstallation Wizard."
-msgstr ""
+msgstr "«جەزملە» نى چېكىپ بىر ياكى بىر قانچە ئۆچۈرمەيدىغان تىل بۆلىكىنى تاللاڭ ياكى «ئۆچۈرۈش يېتەكچىسى»دىن چېكىنىڭ."
 
 #: src/Localization/setupstrings.ulf#STRING_ALL_APPLICATIONCOMPONENTS_SELECTED_1
 msgid  "All application components have been selected for uninstallation."
@@ -597,7 +597,7 @@ msgstr "ئۆچۈرۈش ئۈچۈن ھەممە قوللىنىشچان پروگرا
 
 #: src/Localization/setupstrings.ulf#STRING_ALL_APPLICATIONCOMPONENTS_SELECTED_2
 msgid  "Click 'OK' to select one or more application components not for uninstallation or to exit the Uninstallation Wizard."
-msgstr ""
+msgstr "«جەزملە» نى چېكىپ بىر ياكى بىر قانچە ئۆچۈرمەيدىغان قوللىنىشچان پروگرامما بۆلىكىنى تاللاڭ ياكى «ئۆچۈرۈش يېتەكچىسى»دىن چېكىنىڭ."
 
 #: src/Localization/setupstrings.ulf#STRING_CHANGE_SELECTION
 msgid  "Please change selection"

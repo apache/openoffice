@@ -39,6 +39,10 @@ msgstr "选择标题、图例、以及网格设置"
 msgid  "Display grids"
 msgstr "显示网格"
 
+#: source/controller/dialogs/tp_3D_SceneGeometry.src#CUSTOMUNITTEXT_DEGREE.#define.CustomUnitText
+msgid  " degrees"
+msgstr "度"
+
 #: source/controller/dialogs/tp_3D_SceneGeometry.src#TP_3D_SCENEGEOMETRY.CBX_RIGHT_ANGLED_AXES.CheckBox.Text
 msgid  "~Right-angled axes"
 msgstr "直角坐标轴(~R)"
@@ -58,10 +62,6 @@ msgstr "~Z 轴旋转"
 #: source/controller/dialogs/tp_3D_SceneGeometry.src#TP_3D_SCENEGEOMETRY.CBX_PERSPECTIVE.CheckBox.Text
 msgid  "~Perspective"
 msgstr "透视(~P)"
-
-#: source/controller/dialogs/tp_3D_SceneGeometry.src#CUSTOMUNITTEXT_DEGREE.#define.CustomUnitText
-msgid  " degrees"
-msgstr "度"
 
 #: source/controller/dialogs/Strings_AdditionalControls.src#STR_3DSCHEME_SIMPLE.String.Text
 msgid  "Simple"
@@ -269,11 +269,11 @@ msgstr "最小值必须小于最大值。请检查您的输入。"
 
 #: source/controller/dialogs/Strings_Scale.src#STR_INVALID_INTERVALS.String.Text
 msgid  "The major interval needs to be greater than the minor interval. Check your input."
-msgstr ""
+msgstr "主间隔要大于次间隔。检查输入。"
 
 #: source/controller/dialogs/Strings_Scale.src#STR_INVALID_TIME_UNIT.String.Text
 msgid  "The major and minor interval need to be greater or equal to the resolution. Check your input."
-msgstr ""
+msgstr "主间隔或者次间隔要大于或等于分辨率. 检查输入。"
 
 #: source/controller/dialogs/dlg_DataEditor.src#DLG_DIAGRAM_DATA.ModalDialog.Text
 msgid  "Data Table"
@@ -889,7 +889,7 @@ msgstr "中日韩文字版式"
 
 #: source/controller/dialogs/Strings.src#STR_OBJECT_AVERAGE_LINE_WITH_PARAMETERS.String.Text
 msgid  "Mean value line with value %AVERAGE_VALUE and standard deviation %STD_DEVIATION"
-msgstr ""
+msgstr "值为 %AVERAGE_VALUE 且标准偏差为 %STD_DEVIATION 的平均值线"
 
 #: source/controller/dialogs/Strings.src#STR_OBJECT_AXIS.String.Text
 msgid  "Axis"
@@ -1097,11 +1097,11 @@ msgstr "数值: %POINTVALUES"
 
 #: source/controller/dialogs/Strings.src#STR_TIP_DATAPOINT.String.Text
 msgid  "Data Point %POINTNUMBER, data series %SERIESNUMBER, values: %POINTVALUES"
-msgstr ""
+msgstr "数据点 %POINTNUMBER， 数据序列 %SERIESNUMBER， 数值: %POINTVALUES"
 
 #: source/controller/dialogs/Strings.src#STR_STATUS_DATAPOINT_MARKED.String.Text
 msgid  "Data point %POINTNUMBER in data series %SERIESNUMBER selected, values: %POINTVALUES"
-msgstr ""
+msgstr "选中数据序列 %SERIESNUMBER 中的数据点 %POINTNUMBER，数值：%POINTVALUES"
 
 #: source/controller/dialogs/Strings.src#STR_STATUS_OBJECT_MARKED.String.Text
 msgid  "%OBJECTNAME selected"
@@ -1257,7 +1257,7 @@ msgstr "为负误差线选择区域"
 
 #: source/controller/dialogs/Strings.src#STR_DATA_EDITOR_INCORRECT_INPUT.String.Text
 msgid  "Your last input is incorrect.\nIgnore this change and close the dialog?"
-msgstr ""
+msgstr "您上次输入的内容是错误的。\n要忽略更改并关闭对话框吗？"
 
 #: source/controller/dialogs/Strings.src#STR_TEXT_DIRECTION_LTR.String.Text
 msgid  "Left-to-right"

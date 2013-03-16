@@ -437,7 +437,7 @@ msgstr "FACTDOUBLE"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Workday.1.String.Text
 msgid  "Returns the serial number of the date before or after a specified number of workdays"
-msgstr ""
+msgstr "Vráti číslo reprezentujúce dátum o zadaný počet pracovných dní pred alebo po určenom počte pracovných dní"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Workday.2.String.Text
 msgid  "Start date"
@@ -465,7 +465,7 @@ msgstr "Zoznam dátumov voľných dní (dni pracovného pokoja, sviatky a pod.)"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Yearfrac.1.String.Text
 msgid  "Returns the number of whole days between 'start date' and 'end date' as a year fraction"
-msgstr ""
+msgstr "Vráti počet dní medzi 'počiatočným dátumom' a 'koncovým dátumom' ako časť roku"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Yearfrac.2.String.Text
 msgid  "Start date"
@@ -493,7 +493,7 @@ msgstr "Metóda, podľa ktorej bude určený počet dní"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Edate.1.String.Text
 msgid  "Returns the serial number of the date that is a specified number of months before or after the start date"
-msgstr ""
+msgstr "Vráti číslo reprezentujúce dátum o zadaný počet mesiacov pred alebo po určenom dátume"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Edate.2.String.Text
 msgid  "Start date"
@@ -513,7 +513,7 @@ msgstr "Počet mesiacov pred alebo po počiatočnom dátume"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Weeknum.1.String.Text
 msgid  "Returns the number of the calendar week in which the specified date occurs."
-msgstr ""
+msgstr "Vráti číslo kalendárneho týždňa, v ktorom sa vyskytuje zadaný dátum."
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Weeknum.2.String.Text
 msgid  "Date"
@@ -533,7 +533,7 @@ msgstr "Číslo od 1 do 3, ktoré určuje deň, ktorým začína týždeň"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Eomonth.1.String.Text
 msgid  "Returns the serial number of the last day of the month that comes a certain number of months before or after the start date"
-msgstr ""
+msgstr "Vráti poradové číslo posledného dňa v mesiaci, ktorý bude o zadaný počet mesiacov pred alebo po východzom dátume"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Eomonth.2.String.Text
 msgid  "Start date"
@@ -577,7 +577,7 @@ msgstr "Sviatky"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Networkdays.7.String.Text
 msgid  "List of date values representing days off (vacation, holidays, etc.)"
-msgstr ""
+msgstr "Zoznam dátumov reprezentujúcich voľné dni (dni pracovného pokoja, sviatky a pod.)"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Iseven.1.String.Text
 msgid  "Returns the value 'true' if the number is even"
@@ -613,7 +613,7 @@ msgstr "Číslo(a)"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Multinomial.3.String.Text
 msgid  "Number or list of numbers for which you want the multinomial coefficient"
-msgstr ""
+msgstr "Číslo alebo zoznam čísel, pre ktoré chcete zistiť koeficienty polynómu"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Seriessum.1.String.Text
 msgid  "Returns the sum of a power series"
@@ -649,7 +649,7 @@ msgstr "Koeficienty"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Seriessum.9.String.Text
 msgid  "Set of coefficients by which each successive power of the variable x is multiplied"
-msgstr ""
+msgstr "Množina koeficientov, o ktoré bude každá nasledujúca mocnina hodnoty X vynásobená"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Quotient.1.String.Text
 msgid  "Returns the integer portion of a division"
@@ -1517,7 +1517,7 @@ msgstr "Merná jednotka výsledku"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Amordegrc.1.String.Text
 msgid  "Returns the prorated linear depreciation of an asset for each accounting period"
-msgstr ""
+msgstr "Vráti časť odpisu pre odpisové obdobie"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Amordegrc.2.String.Text
 msgid  "Cost"
@@ -1577,7 +1577,7 @@ msgstr "Použitý ročný základ"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Amorlinc.1.String.Text
 msgid  "Returns the prorated linear depreciation of an asset for each accounting period"
-msgstr ""
+msgstr "Vráti časť odpisu pre odpisové obdobie"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Amorlinc.2.String.Text
 msgid  "Cost"
@@ -1637,7 +1637,7 @@ msgstr "Použitý ročný základ"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Accrint.1.String.Text
 msgid  "Returns the accrued interest for a security that pays periodic interest"
-msgstr ""
+msgstr "Vráti nahromadený úrok z cenného papieru, z ktorého sa úrok platí v pravidelných termínoch"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Accrint.2.String.Text
 msgid  "Issue"
@@ -1697,7 +1697,7 @@ msgstr "Použitý ročný základ"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Accrintm.1.String.Text
 msgid  "Returns the accrued interest for a security that pays interest at maturity"
-msgstr ""
+msgstr "Vráti nahromadený úrok z cenného papiera, u ktorého sa úrok spláca k dátumu splatnosti"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Accrintm.2.String.Text
 msgid  "Issue"
@@ -1741,7 +1741,7 @@ msgstr "Použitý ročný základ"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Received.1.String.Text
 msgid  "Returns the amount paid out at maturity for a fully invested security"
-msgstr ""
+msgstr "Vráti čiastku vyplatenú k dátumu splatnosti plne investovaného cenného papiera"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Received.2.String.Text
 msgid  "Settlement"
@@ -1817,7 +1817,7 @@ msgstr "Výkupná_cena"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Disc.9.String.Text
 msgid  "The redemption value"
-msgstr ""
+msgstr "Výkupná hodnota cenného papiera s nominálnou hodnotou 100 menových jednotiek"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Disc.10.String.Text
 msgid  "Basis"
@@ -1829,7 +1829,7 @@ msgstr "Použitý ročný základ"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Duration.1.String.Text
 msgid  "Returns the annual Macaulay duration of a security with periodic interest payments"
-msgstr ""
+msgstr "Vráti Macaulayovu dobu cenného papiera, u ktorého sa úrok platí v pravidelných termínoch"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Duration.2.String.Text
 msgid  "Settlement"
@@ -1901,7 +1901,7 @@ msgstr "Počet úročných období za rok"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Cumprinc.1.String.Text
 msgid  "Returns the cumulative principal on a loan to be paid between two periods"
-msgstr ""
+msgstr "Vráti kumulatívnu istinu splatnú medzi dvoma obdobiami pôžičky"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Cumprinc.2.String.Text
 msgid  "Rate"
@@ -2005,7 +2005,7 @@ msgstr "Typ splátky"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Price.1.String.Text
 msgid  "Returns the price per 100 currency units face value of a security that pays periodic interest"
-msgstr ""
+msgstr "Vráti cenu cenného papiera s nominálnou hodnotou 100 menových jednotiek, z ktorého je úrok platený v pravidelných termínoch"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Price.2.String.Text
 msgid  "Settlement"
@@ -2045,7 +2045,7 @@ msgstr "Výkupná_cena"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Price.11.String.Text
 msgid  "The redemption value"
-msgstr ""
+msgstr "Výkupná hodnota cenného papiera s nominálnou hodnotou 100 menových jednotiek"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Price.12.String.Text
 msgid  "Frequency"
@@ -2065,7 +2065,7 @@ msgstr "Použitý ročný základ"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Pricedisc.1.String.Text
 msgid  "Returns the price per 100 currency units face value of a discounted security"
-msgstr ""
+msgstr "Vráti cenu diskontného cenného papiera s nominálnou hodnotou 100 menových jednotiek"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Pricedisc.2.String.Text
 msgid  "Settlement"
@@ -2097,7 +2097,7 @@ msgstr "Výkupná_cena"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Pricedisc.9.String.Text
 msgid  "The redemption value"
-msgstr ""
+msgstr "Výkupná hodnota cenného papiera s nominálnou hodnotou 100 menových jednotiek"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Pricedisc.10.String.Text
 msgid  "Basis"
@@ -2109,7 +2109,7 @@ msgstr "Použitý ročný základ"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Pricemat.1.String.Text
 msgid  "Returns the price per 100 currency units face value of a security that pays interest at maturity"
-msgstr ""
+msgstr "Vráti cenu cenného papiera s nominálnou hodnotou 100 menových jednotiek, z ktorého je úrok platený k dátumu splatnosti"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Pricemat.2.String.Text
 msgid  "Settlement"
@@ -2161,7 +2161,7 @@ msgstr "Použitý ročný základ"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Mduration.1.String.Text
 msgid  "Returns the Macaulay modified duration for a security with an assumed par value of 100 currency units"
-msgstr ""
+msgstr "Vráti Macalayovu modifikovanú dobu cenného papiera s predpokladanou nominálnou hodnotou 100 menových jednotiek"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Mduration.2.String.Text
 msgid  "Settlement"
@@ -2233,7 +2233,7 @@ msgstr "Počet úročných období za rok"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Dollarfr.1.String.Text
 msgid  "Converts a price expressed as a decimal into a price expressed as a fraction"
-msgstr ""
+msgstr "Konvertuje cenu vyjadrenú ako desatinné číslo na zlomok"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Dollarfr.2.String.Text
 msgid  "Decimal dollar"
@@ -2253,7 +2253,7 @@ msgstr "Deliteľ"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Dollarde.1.String.Text
 msgid  "Converts a price expressed as a fraction into a price expressed as a decimal"
-msgstr ""
+msgstr "Konvertuje vyjadrenie ceny zo zlomku na desatinné číslo"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Dollarde.2.String.Text
 msgid  "Fractional dollar"
@@ -2273,7 +2273,7 @@ msgstr "Deliteľ"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Yield.1.String.Text
 msgid  "Returns the yield on a security that pays periodic interest"
-msgstr ""
+msgstr "Vráti výnos z cenného papiera, z ktorého je úrok vyplácaný v pravidelných termínoch"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Yield.2.String.Text
 msgid  "Settlement"
@@ -2313,7 +2313,7 @@ msgstr "Výkupná_cena"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Yield.11.String.Text
 msgid  "The redemption value"
-msgstr ""
+msgstr "Výkupná hodnota cenného papiera s nominálnou hodnotou 100 menových jednotiek"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Yield.12.String.Text
 msgid  "Frequency"
@@ -2365,7 +2365,7 @@ msgstr "Výkupná_cena"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Yielddisc.9.String.Text
 msgid  "The redemption value"
-msgstr ""
+msgstr "Výkupná hodnota cenného papiera s nominálnou hodnotou 100 menových jednotiek"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Yielddisc.10.String.Text
 msgid  "Basis"
@@ -2377,7 +2377,7 @@ msgstr "Použitý ročný základ"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Yieldmat.1.String.Text
 msgid  "Returns the annual yield of a security that pays interest at maturity"
-msgstr ""
+msgstr "Vráti ročný výnos cenného papiera, z ktorého je úrok platený k dátumu splatnosti"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Yieldmat.2.String.Text
 msgid  "Settlement"
@@ -2513,7 +2513,7 @@ msgstr "Cena cenného papiera s hodnotou 100 menových jednotiek"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Oddfprice.1.String.Text
 msgid  "Returns the price per $100 face value of a security with an odd first period"
-msgstr ""
+msgstr "Vráti cenu cenného papiera s nominálnou hodnotou $100 menových jednotiek s odlišným prvým obdobím"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Oddfprice.2.String.Text
 msgid  "Settlement"
@@ -2569,7 +2569,7 @@ msgstr "Výkupná_cena"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Oddfprice.15.String.Text
 msgid  "The redemption value"
-msgstr ""
+msgstr "Výkupná hodnota cenného papiera s nominálnou hodnotou 100 menových jednotiek"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Oddfprice.16.String.Text
 msgid  "Frequency"
@@ -2645,7 +2645,7 @@ msgstr "Výkupná_cena"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Oddfyield.15.String.Text
 msgid  "The redemption value"
-msgstr ""
+msgstr "Výkupná hodnota cenného papiera s nominálnou hodnotou 100 menových jednotiek"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Oddfyield.16.String.Text
 msgid  "Frequency"
@@ -2665,7 +2665,7 @@ msgstr "Použitý ročný základ"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Oddlprice.1.String.Text
 msgid  "Returns the price per $100 face value of a security with an odd last period"
-msgstr ""
+msgstr "Vráti cenu cenného papiera s nominálnou hodnotou 100 menových jednotiek s odlišným posledným obdobím"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Oddlprice.2.String.Text
 msgid  "Settlement"
@@ -2713,7 +2713,7 @@ msgstr "Výkupná_cena"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Oddlprice.13.String.Text
 msgid  "The redemption value"
-msgstr ""
+msgstr "Výkupná hodnota cenného papiera s nominálnou hodnotou 100 menových jednotiek"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Oddlprice.14.String.Text
 msgid  "Frequency"
@@ -2781,7 +2781,7 @@ msgstr "Výkupná_cena"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Oddlyield.13.String.Text
 msgid  "The redemption value"
-msgstr ""
+msgstr "Výkupná hodnota cenného papiera s nominálnou hodnotou 100 menových jednotiek"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Oddlyield.14.String.Text
 msgid  "Frequency"
@@ -2801,7 +2801,7 @@ msgstr "Použitý ročný základ"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Xirr.1.String.Text
 msgid  "Returns the internal rate of return for a non-periodic schedule of payments"
-msgstr ""
+msgstr "Vráti vnútornú výnosnosť pre neperiodický harmonogram platieb"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Xirr.2.String.Text
 msgid  "Values"
@@ -2889,7 +2889,7 @@ msgstr "Výkupná_cena"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Intrate.9.String.Text
 msgid  "The redemption value"
-msgstr ""
+msgstr "Výkupná hodnota cenného papiera s nominálnou hodnotou 100 menových jednotiek"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Intrate.10.String.Text
 msgid  "Basis"
@@ -2937,7 +2937,7 @@ msgstr "Použitý ročný základ"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Coupdays.1.String.Text
 msgid  "Returns the number of days in the coupon period containing the settlement date"
-msgstr ""
+msgstr "Vráti počet dní v období platnosti kupónu, ktoré obsahujú deň účtovania"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Coupdays.2.String.Text
 msgid  "Settlement"
@@ -2973,7 +2973,7 @@ msgstr "Použitý ročný základ"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Coupdaysnc.1.String.Text
 msgid  "Returns the number of days from the settlement date to the next coupon date"
-msgstr ""
+msgstr "Vráti počet dní od dátumu účtovania do nasledujúceho dátumu platenia kupónu"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Coupdaysnc.2.String.Text
 msgid  "Settlement"
@@ -3009,7 +3009,7 @@ msgstr "Použitý ročný základ"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Coupdaybs.1.String.Text
 msgid  "Returns the number of days from the beginning of the coupon period to the settlement date"
-msgstr ""
+msgstr "Vráti počet dní od začiatku obdobia platenia kupónu do dátumu splatnosti"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Coupdaybs.2.String.Text
 msgid  "Settlement"
@@ -3081,7 +3081,7 @@ msgstr "Použitý ročný základ"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Coupnum.1.String.Text
 msgid  "Returns the number of coupons payable between the settlement and maturity dates"
-msgstr ""
+msgstr "Vráti počet kupónov splatných medzi dátumom účtovania a dátumom splatnosti"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Coupnum.2.String.Text
 msgid  "Settlement"
@@ -3117,7 +3117,7 @@ msgstr "Použitý ročný základ"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Fvschedule.1.String.Text
 msgid  "Returns the future value of the initial principal after a series of compound interest rates are applied"
-msgstr ""
+msgstr "Vráti budúcu hodnotu počiatočnej istiny po použití série sadzieb zloženého úroku"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Fvschedule.2.String.Text
 msgid  "Principal"
@@ -3161,7 +3161,7 @@ msgstr "Typ"
 
 #: source/datefunc/datefunc.src#RID_DATE_FUNCTION_DESCRIPTIONS.DATE_FUNCDESC_DiffWeeks.7.String.Text
 msgid  "Type of calculation: Type=0 means the time interval, Type=1 means calendar weeks."
-msgstr ""
+msgstr "Typ výpočtu: Typ=0 určuje časový interval, Typ=1 znamená kalendárne týždne."
 
 #: source/datefunc/datefunc.src#RID_DATE_FUNCTION_DESCRIPTIONS.DATE_FUNCDESC_DiffMonths.1.String.Text
 msgid  "Determines the number of months in a specific period."
@@ -3189,7 +3189,7 @@ msgstr "Typ"
 
 #: source/datefunc/datefunc.src#RID_DATE_FUNCTION_DESCRIPTIONS.DATE_FUNCDESC_DiffMonths.7.String.Text
 msgid  "Type of calculation: Type=0 means the time interval, Type=1 means calendar months."
-msgstr ""
+msgstr "Typ výpočtu: Typ=0 určuje časový interval, Typ=1 znamená kalendárne mesiace."
 
 #: source/datefunc/datefunc.src#RID_DATE_FUNCTION_DESCRIPTIONS.DATE_FUNCDESC_DiffYears.1.String.Text
 msgid  "Calculates the number of years in a specific period."
@@ -3217,11 +3217,11 @@ msgstr "Typ"
 
 #: source/datefunc/datefunc.src#RID_DATE_FUNCTION_DESCRIPTIONS.DATE_FUNCDESC_DiffYears.7.String.Text
 msgid  "Type of calculation: Type=0 means the time interval, Type=1 means calendar years."
-msgstr ""
+msgstr "Typ výpočtu: Typ=0 určuje časový interval, Typ=1 znamená kalendárne roky."
 
 #: source/datefunc/datefunc.src#RID_DATE_FUNCTION_DESCRIPTIONS.DATE_FUNCDESC_IsLeapYear.1.String.Text
 msgid  "Returns 1 (TRUE) if the date is a day of a leap year, otherwise 0 (FALSE)."
-msgstr ""
+msgstr "Vráti 1 (TRUE) ak dátum je dňom v prestupnom roku, inak vráti 0 (FALSE)."
 
 #: source/datefunc/datefunc.src#RID_DATE_FUNCTION_DESCRIPTIONS.DATE_FUNCDESC_IsLeapYear.2.String.Text
 msgid  "Date"
@@ -3233,7 +3233,7 @@ msgstr "Akýkoľvek deň v požadovanom roku"
 
 #: source/datefunc/datefunc.src#RID_DATE_FUNCTION_DESCRIPTIONS.DATE_FUNCDESC_DaysInMonth.1.String.Text
 msgid  "Returns the number of days of the month in which the date entered occurs"
-msgstr ""
+msgstr "Vráti počet dní v mesiaci, do ktorého patrí zadaný dátum"
 
 #: source/datefunc/datefunc.src#RID_DATE_FUNCTION_DESCRIPTIONS.DATE_FUNCDESC_DaysInMonth.2.String.Text
 msgid  "Date"
@@ -3245,7 +3245,7 @@ msgstr "Akýkoľvek deň v požadovanom mesiaci"
 
 #: source/datefunc/datefunc.src#RID_DATE_FUNCTION_DESCRIPTIONS.DATE_FUNCDESC_DaysInYear.1.String.Text
 msgid  "Returns the number of days of the year in which the date entered occurs."
-msgstr ""
+msgstr "Vráti počet dní v roku, do ktorého patrí zadaný dátum."
 
 #: source/datefunc/datefunc.src#RID_DATE_FUNCTION_DESCRIPTIONS.DATE_FUNCDESC_DaysInYear.2.String.Text
 msgid  "Date"
@@ -3257,7 +3257,7 @@ msgstr "Akýkoľvek deň v požadovanom roku"
 
 #: source/datefunc/datefunc.src#RID_DATE_FUNCTION_DESCRIPTIONS.DATE_FUNCDESC_WeeksInYear.1.String.Text
 msgid  "Returns the number of weeks of the year in which the date entered occurs"
-msgstr ""
+msgstr "Vráti počet týždňov v roku, do ktorého patrí zadaný dátum"
 
 #: source/datefunc/datefunc.src#RID_DATE_FUNCTION_DESCRIPTIONS.DATE_FUNCDESC_WeeksInYear.2.String.Text
 msgid  "Date"

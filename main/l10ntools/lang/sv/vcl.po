@@ -136,6 +136,10 @@ msgid  "km"
 msgstr "km"
 
 #: source/src/units.src#SV_FUNIT_STRINGS.FUNIT_TWIP.ItemList.item
+msgid  "twips"
+msgstr "twips"
+
+#: source/src/units.src#SV_FUNIT_STRINGS.FUNIT_TWIP.ItemList.item
 msgid  "twip"
 msgstr "twip"
 
@@ -148,32 +152,16 @@ msgid  "pi"
 msgstr "pi"
 
 #: source/src/units.src#SV_FUNIT_STRINGS.FUNIT_INCH.ItemList.item
-msgid  "inch"
-msgstr "inch"
-
-#: source/src/units.src#SV_FUNIT_STRINGS.FUNIT_FOOT.ItemList.item
-msgid  "feet"
-msgstr "feet"
-
-#: source/src/units.src#SV_FUNIT_STRINGS.FUNIT_MILE.ItemList.item
-msgid  "mile"
-msgstr "mile"
-
-#: source/src/units.src#SV_FUNIT_STRINGS.FUNIT_PERCENT.ItemList.item
-msgid  "%"
-msgstr "%"
-
-#: source/src/units.src#SV_FUNIT_STRINGS.FUNIT_TWIP.ItemList.item
-msgid  "twips"
-msgstr "twips"
-
-#: source/src/units.src#SV_FUNIT_STRINGS.FUNIT_INCH.ItemList.item
-msgid  """
-msgstr ""
+msgid  "\""
+msgstr "\""
 
 #: source/src/units.src#SV_FUNIT_STRINGS.FUNIT_INCH.ItemList.item
 msgid  "in"
 msgstr "in"
+
+#: source/src/units.src#SV_FUNIT_STRINGS.FUNIT_INCH.ItemList.item
+msgid  "inch"
+msgstr "inch"
 
 #: source/src/units.src#SV_FUNIT_STRINGS.FUNIT_FOOT.ItemList.item
 msgid  "'"
@@ -187,13 +175,25 @@ msgstr "ft"
 msgid  "foot"
 msgstr "foot"
 
+#: source/src/units.src#SV_FUNIT_STRINGS.FUNIT_FOOT.ItemList.item
+msgid  "feet"
+msgstr "feet"
+
 #: source/src/units.src#SV_FUNIT_STRINGS.FUNIT_MILE.ItemList.item
 msgid  "miles"
 msgstr "miles"
 
+#: source/src/units.src#SV_FUNIT_STRINGS.FUNIT_MILE.ItemList.item
+msgid  "mile"
+msgstr "mile"
+
+#: source/src/units.src#SV_FUNIT_STRINGS.FUNIT_PERCENT.ItemList.item
+msgid  "%"
+msgstr "%"
+
 #: source/src/stdtext.src#SV_STDTEXT_SERVICENOTAVAILABLE.String.Text
 msgid  "The component (%s) could not be loaded.\nPlease start setup with the repair option."
-msgstr ""
+msgstr "Det gick inte att ladda en komponent (%s).\nStarta setupprogrammet och gör en reparation."
 
 #: source/src/stdtext.src#SV_STDTEXT_DONTHINTAGAIN.String.Text
 msgid  "Do not show this information again."
@@ -213,11 +213,11 @@ msgstr "Fel version"
 
 #: source/src/stdtext.src#SV_ACCESSERROR_BRIDGE_MSG.String.Text
 msgid  "%PRODUCTNAME %PRODUCTVERSION requires a Java Access Bridge 1.0.3 or later version to support accessibility."
-msgstr ""
+msgstr "%PRODUCTNAME %PRODUCTVERSION kräver version 1.0.3 eller senare av Java Access Bridge för att stödja tillgänglighet."
 
 #: source/src/stdtext.src#SV_ACCESSERROR_OK_CANCEL_MSG.String.Text
 msgid  "Click '%OK' to start %PRODUCTNAME %PRODUCTVERSION without accessibility support, or click '%CANCEL' to exit %PRODUCTNAME %PRODUCTVERSION."
-msgstr ""
+msgstr "Klicka på '%OK' för att starta %PRODUCTNAME %PRODUCTVERSION utan tillgänglighetsstöd eller klicka på '%CANCEL' för att avsluta %PRODUCTNAME %PRODUCTVERSION."
 
 #: source/src/stdtext.src#SV_ACCESSERROR_MISSING_BRIDGE.String.Text
 msgid  "No Java Access Bridge"
@@ -229,7 +229,7 @@ msgstr "Felaktig Java-installation"
 
 #: source/src/stdtext.src#SV_ACCESSERROR_JAVA_MSG.String.Text
 msgid  "%PRODUCTNAME %PRODUCTVERSION requires Java 1.4.0_02 or later version to support accessibility."
-msgstr ""
+msgstr "%PRODUCTNAME %PRODUCTVERSION kräver version 1.4.0_02 eller senare för att kunna stödja tillgänglighet."
 
 #: source/src/stdtext.src#SV_ACCESSERROR_MISSING_JAVA.String.Text
 msgid  "No Java Installation"
@@ -261,7 +261,7 @@ msgstr "Inställningar..."
 
 #: source/src/stdtext.src#SV_EDIT_WARNING_BOX.WarningBox.Message
 msgid  "The inserted text exceeded the maximum length of this text field. The text was truncated."
-msgstr ""
+msgstr "Den infogade texten översteg den maximalt tillåtna längden för det här textfältet. Texten har trunkerats."
 
 #: source/src/stdtext.src#SV_MAC_SCREENNNAME.String.Text
 msgid  "Screen %d"
@@ -473,11 +473,11 @@ msgstr "Sidan %p av %n"
 
 #: source/src/print.src#SV_PRINT_NOPRINTERWARNING.ErrorBox.Message
 msgid  "No default printer found.\nPlease choose a printer and try again."
-msgstr ""
+msgstr "Ingen standardskrivare hittades.\nVälj en skrivare och försök igen."
 
 #: source/src/print.src#SV_PRINT_NOCONTENT.ErrorBox.Message
 msgid  "There are no pages to be printed. Please check your document for ranges relevant to printing."
-msgstr ""
+msgstr "Det finns inga sidor att skriva ut. Kontrollera att det finns utskrivbart innehåll i dokumentet."
 
 #: source/src/print.src#SV_PRINT_NATIVE_STRINGS.item1.ItemList.item
 msgid  "Preview"

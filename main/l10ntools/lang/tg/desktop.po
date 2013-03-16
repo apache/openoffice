@@ -32,8 +32,8 @@ msgstr ""
 
 
 #: source/app/desktop.src#STR_RECOVER_QUERY.String.Text
-msgid  "Should the file "$1" be restored?"
-msgstr ""
+msgid  "Should the file \"$1\" be restored?"
+msgstr "Дафтари  \"$1\" барқарор карда шавад?"
 
 #: source/app/desktop.src#STR_RECOVER_TITLE.String.Text
 msgid  "File Recovery"
@@ -41,15 +41,15 @@ msgstr "Барқарорсозии дафтар"
 
 #: source/app/desktop.src#STR_RECOVER_PREPARED.WarningBox.Message
 msgid  "An unrecoverable error has occurred.\n\nAll modified files have been saved and can\nprobably be recovered at program restart."
-msgstr ""
+msgstr "Хатои бартарафнашаванда рух дод.\n\nҲама дафтарҳои ислоҳшуда сабт карда шуданд\nва ҳангоми оғоз барқарор карда мешаванд."
 
 #: source/app/desktop.src#STR_BOOTSTRAP_ERR_CANNOT_START.String.Text
 msgid  "The application cannot be started. "
 msgstr "Оғоз кардани барнома имкон надорад."
 
 #: source/app/desktop.src#STR_BOOTSTRAP_ERR_DIR_MISSING.String.Text
-msgid  "The configuration directory "$1" could not be found."
-msgstr ""
+msgid  "The configuration directory \"$1\" could not be found."
+msgstr "Рафи конфигуратсияи \"$1\" пайдо нашуд."
 
 #: source/app/desktop.src#STR_BOOTSTRAP_ERR_PATH_INVALID.String.Text
 msgid  "The installation path is invalid."
@@ -64,16 +64,16 @@ msgid  "An internal error occurred."
 msgstr "Хатогии дохилӣ."
 
 #: source/app/desktop.src#STR_BOOTSTRAP_ERR_FILE_CORRUPT.String.Text
-msgid  "The configuration file "$1" is corrupt."
-msgstr ""
+msgid  "The configuration file \"$1\" is corrupt."
+msgstr "Дафтари конфигуратсияи \"$1\" маҷрӯҳ мебошад."
 
 #: source/app/desktop.src#STR_BOOTSTRAP_ERR_FILE_MISSING.String.Text
-msgid  "The configuration file "$1" was not found."
-msgstr ""
+msgid  "The configuration file \"$1\" was not found."
+msgstr "Дафтари конфигуратсияи \"$1\" пайдо нашуд."
 
 #: source/app/desktop.src#STR_BOOTSTRAP_ERR_NO_SUPPORT.String.Text
-msgid  "The configuration file "$1" does not support the current version."
-msgstr ""
+msgid  "The configuration file \"$1\" does not support the current version."
+msgstr "Дафтари конфигуратсияи \"$1\" версияи мазкурро дастгирӣ намекунад."
 
 #: source/app/desktop.src#STR_BOOTSTRAP_ERR_LANGUAGE_MISSING.String.Text
 msgid  "The user interface language cannot be determined."
@@ -93,11 +93,11 @@ msgstr ""
 
 #: source/app/desktop.src#STR_ASK_START_SETUP_MANUALLY.String.Text
 msgid  "Start the setup application to repair the installation from the CD or the folder containing the installation packages."
-msgstr ""
+msgstr "Барномаи васлкуниро оғоз кунед, барои давом додани васлкуни аз диск ё аз равоқе, ки дар он барномаи васлкунӣ мавҷуд аст. "
 
 #: source/app/desktop.src#STR_CONFIG_ERR_SETTINGS_INCOMPLETE.String.Text
 msgid  "The startup settings for accessing the central configuration are incomplete. "
-msgstr ""
+msgstr "Маълумотҳои ибтидоӣ барои роҳ ёфтан ба конфигуратсияи марказӣ нокомиланд."
 
 #: source/app/desktop.src#STR_CONFIG_ERR_CANNOT_CONNECT.String.Text
 msgid  "A connection to the central configuration could not be established. "
@@ -105,19 +105,19 @@ msgstr "Пайвастшавӣ бо конфигуратсияи марказӣ 
 
 #: source/app/desktop.src#STR_CONFIG_ERR_RIGHTS_MISSING.String.Text
 msgid  "You cannot access the central configuration because of missing access rights. "
-msgstr ""
+msgstr "Шумо наметавонед ба конфигуратсияи марказӣ роҳ пайдо кунед"
 
 #: source/app/desktop.src#STR_CONFIG_ERR_ACCESS_GENERAL.String.Text
 msgid  "A general error occurred while accessing your central configuration. "
-msgstr ""
+msgstr "Хатогии умумӣ рух дод ҳангоми роҳ ёфтан ба конфигуратсияи марказии шумо. "
 
 #: source/app/desktop.src#STR_CONFIG_ERR_NO_WRITE_ACCESS.String.Text
 msgid  "The changes to your personal settings cannot be stored centrally because of missing access rights. "
-msgstr ""
+msgstr "Омодагирии шахсии шумо мутамарказан сабт карда намешаванд: имтиёзҳои шумо кофӣ нестанд."
 
 #: source/app/desktop.src#STR_BOOTSTRAP_ERR_CFG_DATAACCESS.String.Text
 msgid  "%PRODUCTNAME cannot be started due to an error in accessing the %PRODUCTNAME configuration data.\n\nPlease contact your system administrator."
-msgstr ""
+msgstr "%PRODUCTNAME оғоз карда намешавад, аз сабаби ҷӯрсозиҳои %PRODUCTNAME .\n\nБа мудири система муроҷиат кунед."
 
 #: source/app/desktop.src#STR_INTERNAL_ERRMSG.String.Text
 msgid  "The following internal error has occurred: "
@@ -125,7 +125,7 @@ msgstr "The Хатогии дохилии зерин рух дод: "
 
 #: source/app/desktop.src#QBX_USERDATALOCKED.QueryBox.Message
 msgid  "Either another instance of %PRODUCTNAME is accessing your personal settings or your personal settings are locked.\nSimultaneous access can lead to inconsistencies in your personal settings. Before continuing, you should make sure user '$u' closes %PRODUCTNAME on host '$h'.\n\nDo you really want to continue?"
-msgstr ""
+msgstr "Дигар ҷараёни %PRODUCTNAME ҷӯрсозиҳои шахсии шумороистифода карда истодааст ё онҳо қулф карда шудаанд.\nИстифодабарии якҷояи далелҳои шахсӣ боиси номукамалии он мегардад. Пеш аз оғоз муайян созед, ки истифодабарандаи  '$u' %PRODUCTNAME дар '$h' пӯшонад.\n\nДавом додан мехоҳед?"
 
 #: source/app/desktop.src#STR_TITLE_USERDATALOCKED.String.Text
 msgid  "%PRODUCTNAME %PRODUCTVERSION"
@@ -149,11 +149,11 @@ msgstr "Менеҷери роҳ вуҷуд надорад.\n"
 
 #: source/app/desktop.src#STR_BOOSTRAP_ERR_NOTENOUGHDISKSPACE.String.Text
 msgid  "%PRODUCTNAME user installation could not be completed due to insufficient free disk space. Please free more disc space at the following location and restart %PRODUCTNAME:\n\n"
-msgstr ""
+msgstr "Васлкунии %PRODUCTNAME бо сабаби набудани ҷой дар сабтгоҳ ба пуррагӣ анҷом наёфт. Дар сабтгоҳ ҷой холӣ пайдо карда пас %PRODUCTNAME ро васл кунед:\n\n"
 
 #: source/app/desktop.src#STR_BOOSTRAP_ERR_NOACCESSRIGHTS.String.Text
 msgid  "%PRODUCTNAME user installation could not be processed due to missing access rights. Please make sure that you have sufficient access rights for the following location and restart %PRODUCTNAME:\n\n"
-msgstr ""
+msgstr "Васлкунии %PRODUCTNAME барои истифодабар аз сабаби набудани иҷозат имкон надорад. Санҷед, ки шумо иҷозатро барои истифодаи маҳали зер доред ва пас %PRODUCTNAME ро азнав оғоз кунед:\n\n"
 
 #: source/deployment/gui/dp_gui_versionboxes.src#RID_WARNINGBOX_VERSION_LESS.WarningBox.Message
 msgid  "You are about to install version $NEW of the extension \'$NAME\'.\nThe newer version $DEPLOYED is already installed.\nClick \'OK\' to replace the installed extension.\nClick \'Cancel\' to stop the installation."
@@ -185,7 +185,7 @@ msgstr "Санҷиши вобастагиҳои система"
 
 #: source/deployment/gui/dp_gui_dependencydialog.src#RID_DLG_DEPENDENCIES.RID_DLG_DEPENDENCIES_TEXT.FixedText.Text
 msgid  "The extension cannot be installed as the following\nsystem dependencies are not fulfilled:"
-msgstr ""
+msgstr "Дарозкунӣ васл карда нашуд, вобастагиҳои зерини\nсистема қонеъ нашудаанд:"
 
 #: source/deployment/gui/dp_gui_dialog.src#RID_STR_ADD_PACKAGES.String.Text
 msgid  "Add Extension(s)"
@@ -273,7 +273,7 @@ msgstr "Шартномаи литсензионӣ"
 
 #: source/deployment/gui/dp_gui_dialog.src#RID_DLG_LICENSE.FT_LICENSE_HEADER.FixedText.Text
 msgid  "Please follow these steps to proceed with the installation of the extension:"
-msgstr ""
+msgstr "Қадамҳои зеринро барои валкунии дарозкунӣ иҷро намоед:"
 
 #: source/deployment/gui/dp_gui_dialog.src#RID_DLG_LICENSE.FT_LICENSE_BODY_1.FixedText.Text
 msgid  "1."
@@ -437,7 +437,7 @@ msgstr "Ҷадидаҳо вуҷуд надоранд."
 
 #: source/deployment/gui/dp_gui_updatedialog.src#RID_DLG_UPDATE.RID_DLG_UPDATE_NOINSTALLABLE.String.Text
 msgid  "No installable updates are available. To see ignored or disabled updates, mark the check box 'Show all updates'."
-msgstr ""
+msgstr "Ҷадидаҳои васлшаванда вуҷуд надоранд. Барои дидани ҳама ҷадидаҳо 'Намоиши ҳама ҷадидаҳо'ро ливо гузоред."
 
 #: source/deployment/gui/dp_gui_updatedialog.src#RID_DLG_UPDATE.RID_DLG_UPDATE_FAILURE.String.Text
 msgid  "An error occurred:"
@@ -672,16 +672,16 @@ msgid  "Extension Software License Agreement of $NAME:"
 msgstr "Шартномаи литсензионӣ:"
 
 #: source/deployment/unopkg/unopkg.src#RID_STR_UNOPKG_ACCEPT_LIC_2.String.Text
-msgid  "Read the complete License Agreement displayed above. Accept the License Agreement by typing "yes" on the console then press the Return key. Type "no" to decline and to abort the extension setup."
-msgstr ""
+msgid  "Read the complete License Agreement displayed above. Accept the License Agreement by typing \"yes\" on the console then press the Return key. Type \"no\" to decline and to abort the extension setup."
+msgstr "Шартномаи литсензионии дар болобударо ба пуррагӣ хонед. Шартномаи литсензиониро бо навиштани \"yes\" дар консол ва пахшкунии калиди Return қабул кунед. \"no\"-ро нависед ва васлкунӣ хотима меёбад."
 
 #: source/deployment/unopkg/unopkg.src#RID_STR_UNOPKG_ACCEPT_LIC_3.String.Text
-msgid  "[Enter "yes" or "no"]:"
-msgstr ""
+msgid  "[Enter \"yes\" or \"no\"]:"
+msgstr "[\"ҳа\" ё \"не\"-ро дохил кунед]:"
 
 #: source/deployment/unopkg/unopkg.src#RID_STR_UNOPKG_ACCEPT_LIC_4.String.Text
-msgid  "Your input was not correct. Please enter "yes" or "no":"
-msgstr ""
+msgid  "Your input was not correct. Please enter \"yes\" or \"no\":"
+msgstr "Дохилкунии шумо ғалат аст. \"ҳа\" ё \"не\"-ро дохил кунед:"
 
 #: source/deployment/unopkg/unopkg.src#RID_STR_UNOPKG_ACCEPT_LIC_YES.String.Text
 msgid  "YES"
@@ -737,7 +737,7 @@ msgstr "Бақайдгирӣ"
 
 #: source/migration/wizard.src#STR_WELCOME_MIGRATION.String.Text
 msgid  "This wizard will guide you through the license agreement, the transfer of user data from %OLD_VERSION and the registration of %PRODUCTNAME.\n\nClick 'Next' to continue."
-msgstr ""
+msgstr "Ин дастур ба шумо дар Шартномаи литсензионӣ, кӯчонидани далелҳо аз %OLD_VERSION ва бақайдгирӣ дар %PRODUCTNAME кӯмак мекунад.\n\n'Давом'ро пахш кунед."
 
 #: source/migration/wizard.src#STR_WELCOME_WITHOUT_LICENSE.String.Text
 msgid  "This wizard will guide you through the registration of %PRODUCTNAME.\n\nClick 'Next' to continue."
@@ -753,7 +753,7 @@ msgstr ""
 
 #: source/migration/wizard.src#ERRBOX_REG_NOSYSBROWSER.ErrorBox.Message
 msgid  "An error occurred in starting the web browser.\nPlease check the %PRODUCTNAME and web browser settings."
-msgstr ""
+msgstr "Ҳангоми кушодани браузер хато рух дод.\n%PRODUCTNAME ва ҷӯрсозиҳои Webро санҷед."
 
 #: source/migration/wizard.src#QB_ASK_DECLINE.QueryBox.Message
 msgid  "Do you really want to decline?"
@@ -765,7 +765,7 @@ msgstr "Хуш омадед ба барномаи %PRODUCTNAME %PRODUCTVERSION"
 
 #: source/migration/wizard.src#TP_WELCOME.FT_WELCOME_BODY.FixedText.Text
 msgid  "This wizard will guide you through the license agreement and the registration of %PRODUCTNAME.\n\nClick 'Next' to continue."
-msgstr ""
+msgstr "Ин дастур ба шумо дар Шартномаи литсензионӣ ва бақайдгирӣ дар %PRODUCTNAME кӯмак мекунад.\n\n'Давом'ро пахш кунед."
 
 #: source/migration/wizard.src#TP_LICENSE.FT_LICENSE_HEADER.FixedText.Text
 msgid  "Please follow these steps to accept the license"
@@ -777,7 +777,7 @@ msgstr "1."
 
 #: source/migration/wizard.src#TP_LICENSE.FT_LICENSE_BODY_1_TXT.FixedText.Text
 msgid  "View the complete License Agreement. Please use the scrollbar or the '%PAGEDOWN' button in this dialog to view the entire license text."
-msgstr ""
+msgstr "Намоиши пурраи шартномаи литсензионӣ. Барои пурра хондани литсензия хати ҳаракат ё тугмачаи '%PAGEDOWN' ро истифода кунед."
 
 #: source/migration/wizard.src#TP_LICENSE.FT_LICENSE_BODY_2.FixedText.Text
 msgid  "2."
@@ -805,7 +805,7 @@ msgstr "Кӯчонидани далелҳои шахсӣ"
 
 #: source/migration/wizard.src#TP_MIGRATION.FT_MIGRATION_BODY.FixedText.Text
 msgid  "Most personal data from %OLDPRODUCT installation can be reused in %PRODUCTNAME %PRODUCTVERSION.\n\nIf you do not want to reuse any settings in %PRODUCTNAME %PRODUCTVERSION, unmark the check box."
-msgstr ""
+msgstr "Аксари далелҳои шахсӣ аз васлкунии %OLDPRODUCT дар барномаи %PRODUCTNAME %PRODUCTVERSION истифода шуданашон мумкин аст.\n\nАгар хоҳед, ки ягон ҷӯрсозиро дар %PRODUCTNAME %PRODUCTVERSION истифода кардан нахоҳед, ливоро гиред."
 
 #: source/migration/wizard.src#TP_MIGRATION.CB_MIGRATION.CheckBox.Text
 msgid  "Transfer personal data"
@@ -817,7 +817,7 @@ msgstr "Ҷадидгардонӣ тавассути Интернет"
 
 #: source/migration/wizard.src#TP_UPDATE_CHECK.FT_UPDATE_CHECK_BODY.FixedText.Text
 msgid  "%PRODUCTNAME searches automatically at regular intervals for new versions.\nIn doing so online update does not transfer personal data.\nAs soon as a new version is available, you will be notified.\n\nYou can configure this feature at Tools / Options... / %PRODUCTNAME / Online Update."
-msgstr ""
+msgstr "%PRODUCTNAME дар фосилаи муайян автоматӣ ҷадидаҳоро ҷустуҷӯ мекунад.\nДар ин сурат далелҳои шахсӣ истифода намешаванд.\nДаме, ки ҷадида пайдо шуд, шумо хабардор карда мешавед.\n\nШумо ин имкониятро дар Асбобҳо /Параметрҳо... / %PRODUCTNAME / Ҷадидсозии Интернетӣ ҷӯр карда метавонед."
 
 #: source/migration/wizard.src#TP_UPDATE_CHECK.CB_UPDATE_CHECK.CheckBox.Text
 msgid  "~Check for updates automatically"
@@ -829,7 +829,7 @@ msgstr "Ном ва насаби худро дар зер дохил кунед"
 
 #: source/migration/wizard.src#TP_USER.FT_USER_BODY.FixedText.Text
 msgid  "The user name will be used in the document properties, templates and when you record changes made to documents."
-msgstr ""
+msgstr "Номи истифодабар дар хосиятҳои ҳуҷҷат, қолабҳо ва ҳангоми сабткунии тағирот дар ҳуҷҷат истифода мешавад."
 
 #: source/migration/wizard.src#TP_USER.FT_USER_FIRST.FixedText.Text
 msgid  "~First name"
@@ -853,7 +853,7 @@ msgstr "Бақайдгирии %PRODUCTNAME"
 
 #: source/migration/wizard.src#TP_REGISTRATION.FT_REGISTRATION_BODY.FixedText.Text
 msgid  "You now have the opportunity to register as a %PRODUCTNAME user. Registration is voluntary and is without obligation.\n\nIf you register, we can inform you about new developments concerning this product."
-msgstr ""
+msgstr "Шумо ҳоло метавонед ҳамчун истифодабари %PRODUCTNAME ба қайд дароед. Бақайдгирӣ ихтиёрӣ мебошад.\n\nАгар шумо аз қайд гузаред, мо дар бораи маҳсулоти нав хабар медиҳем."
 
 #: source/migration/wizard.src#TP_REGISTRATION.RB_REGISTRATION_NOW.RadioButton.Text
 msgid  "I want to register ~now"
@@ -869,7 +869,7 @@ msgstr "Ман бақайд даромадан на~мехоҳам"
 
 #: source/migration/wizard.src#TP_REGISTRATION.FT_REGISTRATION_END.FixedText.Text
 msgid  "We hope you enjoy working with %PRODUCTNAME.\n\nTo exit the wizard, click 'Finish'."
-msgstr ""
+msgstr "Умедворем аз истифодаи %PRODUCTNAME хушҳол бошед.\n\nБарои баромадан аз Ёвар 'Тайёр'ро пахш кунед."
 
 #: win32/source/rebase/rebasegui.ulf#%APP_TITLE%
 msgid  "Installation Status"
@@ -886,6 +886,10 @@ msgstr ""
 #: win32/source/rebase/rebasegui.ulf#%MSG_NO_INSTALLATION_FOUND%
 msgid  "Cannot find Office installation."
 msgstr ""
+
+#: win32/source/setup/setup.ulf#%APP_TITLE%
+msgid  "Setup"
+msgstr "Васлкунӣ"
 
 #: win32/source/setup/setup.ulf#%APP_PROD_TITLE%
 msgid  "The %PRODUCTNAME Setup"
@@ -905,7 +909,7 @@ msgstr "Васлкуни қатъ карда шуд"
 
 #: win32/source/setup/setup.ulf#%REQUIRES_ADMIN_PRIV%
 msgid  "Administrator privileges are required for upgrading the Windows Installer."
-msgstr ""
+msgstr "Барои ҷадидсозии Windows Installer иҷозати администраторӣ лозим аст."
 
 #: win32/source/setup/setup.ulf#%FILE_NOT_FOUND%
 msgid  "Setup was unable to find the file '%s'."
@@ -913,7 +917,7 @@ msgstr "Барномаи васлкунӣ дафтари '%s'-ро пайдо к
 
 #: win32/source/setup/setup.ulf#%INVALID_PARAM%
 msgid  "Invalid command line option '%s'. Please use '/?' for help."
-msgstr ""
+msgstr "Аргументи ғалатӣ дар сатри фармоиш: '%s'. Барои кӯмак '/?'-ро истифода кунед ."
 
 #: win32/source/setup/setup.ulf#%SETUP_TO_OLD%
 msgid  "This package requires at least the version '%s' of the Windows Installer. \nYou have Windows Installer '%s' on your system!"
@@ -925,7 +929,7 @@ msgstr ""
 
 #: win32/source/setup/setup.ulf#%USAGE%
 msgid  "Usage:\n   /? :  Shows this dialog.\n   /a :  Performs an administrative installation.\n   /j[u|m] :  Performs an advertising installation.\n   /q[n] : Do not show any user interface (silent mode).\n"
-msgstr ""
+msgstr "Истифода:\n   /? :  Ин муколамаро нишон медиҳад.\n   /a :  Васлкунии идоротӣ.\n   /j[u|m] :  Васлкунии Эълондор.\n   /q[n] : Мехоҳед Интерфеси истифодабар нишон дода шавад (silent mode).\n"
 
 #: win32/source/setup/setup.ulf#%ALREADY_RUNNING%
 msgid  "There is already a setup process running."
@@ -1046,7 +1050,3 @@ msgstr "Чинӣ (Содда)"
 #: win32/source/setup/setup.ulf#%LANGUAGE_PT_PT%
 msgid  "Portuguese (Portugal)"
 msgstr "Португалӣ"
-
-#: win32/source/setup/setup.ulf#%APP_TITLE%
-msgid  "Setup"
-msgstr "Васлкунӣ"

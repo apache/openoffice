@@ -33,7 +33,7 @@ msgstr ""
 
 #: source/component/warnbox.src#RID_XMLSECWB_NO_MOZILLA_PROFILE.WarningBox.Message
 msgid  "Digital signatures functionality could not be used, because no Mozilla user profile was found. Please check the Mozilla installation."
-msgstr ""
+msgstr "Nemohla byť použitá funkcionalita digitálnych podpisov, pretože nebol nájdený profil používateľa Mozilly. Prosím skontrolujte inštaláciu Mozilly."
 
 #: source/dialogs/macrosecurity.src#RID_XMLSECTP_MACROSEC.TabDialog.Text
 msgid  "Macro Security"
@@ -53,19 +53,19 @@ msgstr "Obnoviť"
 
 #: source/dialogs/macrosecurity.src#RID_XMLSECTP_SECLEVEL.RB_VERYHIGH.RadioButton.Text
 msgid  "~Very high.\nOnly macros from trusted file locations are allowed to run. All other macros, regardless whether signed or not, are disabled."
-msgstr ""
+msgstr "~Veľmi vysoká.\nLen makrá z overených umiestnení môžu byť spúšťané. Všetky ostatné makrá, nezávisle od toho, či sú podpísané alebo nie, sú vypnuté."
 
 #: source/dialogs/macrosecurity.src#RID_XMLSECTP_SECLEVEL.RB_HIGH.RadioButton.Text
 msgid  "H~igh.\nOnly signed macros from trusted sources are allowed to run. Unsigned macros are disabled."
-msgstr ""
+msgstr "V~ysoká.\nVykonávať sa môžu iba podpísané makrá. Vykonávanie nepodpísaných makier je zablokované."
 
 #: source/dialogs/macrosecurity.src#RID_XMLSECTP_SECLEVEL.RB_MEDIUM.RadioButton.Text
 msgid  "~Medium.\nConfirmation required before executing macros from untrusted sources."
-msgstr ""
+msgstr "Stred~ná.\nPred spustením makier z nedôveryhodných zdrojov je potrebné potvrdenie."
 
 #: source/dialogs/macrosecurity.src#RID_XMLSECTP_SECLEVEL.RB_LOW.RadioButton.Text
 msgid  "~Low (not recommended).\nAll macros will be executed without confirmation. Use this setting only if you are certain that all documents that will be opened are safe."
-msgstr ""
+msgstr "Níz~ka (neodporúčané).\nVšetky makrá sú spúšťané bez potvrdenia. Použite toto nastavenie len ak ste si istí, že všetky dokumenty, ktoré budú otvárané, sú bezpečné."
 
 #: source/dialogs/macrosecurity.src#RID_XMLSECTP_TRUSTSOURCES.FL_TRUSTCERT.FixedLine.Text
 msgid  "Trusted certificates"
@@ -93,7 +93,7 @@ msgstr "Dôveryhodné umiestnenia súborov"
 
 #: source/dialogs/macrosecurity.src#RID_XMLSECTP_TRUSTSOURCES.FI_TRUSTFILELOC.FixedText.Text
 msgid  "Document macros are always executed if they have been opened from one of the following locations."
-msgstr ""
+msgstr "Makrá v dokumentoch sú vždy spustené ak boli otvorené z nasledujúcich umiestnení."
 
 #: source/dialogs/macrosecurity.src#RID_XMLSECTP_TRUSTSOURCES.FL_ADD_TRUSTFILELOC.PushButton.Text
 msgid  "Add..."
@@ -125,7 +125,7 @@ msgstr "Zobraziť podpisy..."
 
 #: source/dialogs/warnings.src#RID_XMLSECTP_MACROWARN.FI_DESCR2.FixedText.Text
 msgid  "Macros may contain viruses. Disabling macros for a document is always save. If you disable macros you may lose functionality provided by the document macros."
-msgstr ""
+msgstr "Makrá môžu obsahovať vírusy. Vypnutie makier pre dokumenty je vždy bezpečné. V prípade, že makrá vypnete môžete prísť o funkcionalitu poskytovanú makrami v dokumente."
 
 #: source/dialogs/warnings.src#RID_XMLSECTP_MACROWARN.CB_ALWAYSTRUST.CheckBox.Text
 msgid  "Always trust macros from this source"
@@ -205,7 +205,7 @@ msgstr ""
 
 #: source/dialogs/digitalsignaturesdialog.src#MSG_XMLSECDLG_QUERY_REMOVEDOCSIGNBEFORESIGN.QueryBox.Message
 msgid  "Adding or removing a macro signature will remove all document signatures.\nDo you really want to continue?"
-msgstr ""
+msgstr "Pridanie alebo odstránenie podpisu makra odstráni všetky podpisy v dokumente.\nUrčite chcete pokračovať?"
 
 #: source/dialogs/certificateviewer.src#RID_XMLSECDLG_CERTVIEWER.TabDialog.Text
 msgid  "View Certificate"

@@ -163,6 +163,22 @@ msgstr "ATANH"
 msgid  "ACOTH"
 msgstr "ACOTH"
 
+#: source/core/resource/core_resource.src#RID_STRLIST_FUNCTION_NAMES.SC_OPCODE_COSECANT.String.Text
+msgid  "CSC"
+msgstr ""
+
+#: source/core/resource/core_resource.src#RID_STRLIST_FUNCTION_NAMES.SC_OPCODE_SECANT.String.Text
+msgid  "SEC"
+msgstr ""
+
+#: source/core/resource/core_resource.src#RID_STRLIST_FUNCTION_NAMES.SC_OPCODE_COSECANT_HYP.String.Text
+msgid  "CSCH"
+msgstr ""
+
+#: source/core/resource/core_resource.src#RID_STRLIST_FUNCTION_NAMES.SC_OPCODE_SECANT_HYP.String.Text
+msgid  "SECH"
+msgstr ""
+
 #: source/core/resource/core_resource.src#RID_STRLIST_FUNCTION_NAMES.SC_OPCODE_EXP.String.Text
 msgid  "EXP"
 msgstr "EXP"
@@ -1227,21 +1243,9 @@ msgstr "#NUM!"
 msgid  "#N/A"
 msgstr "#N/A"
 
-#: source/core/resource/core_resource.src#RID_STRLIST_FUNCTION_NAMES.SC_OPCODE_COSECANT.String.Text
-msgid  "CSC"
-msgstr ""
-
-#: source/core/resource/core_resource.src#RID_STRLIST_FUNCTION_NAMES.SC_OPCODE_SECANT.String.Text
-msgid  "SEC"
-msgstr ""
-
-#: source/core/resource/core_resource.src#RID_STRLIST_FUNCTION_NAMES.SC_OPCODE_COSECANT_HYP.String.Text
-msgid  "CSCH"
-msgstr ""
-
-#: source/core/resource/core_resource.src#RID_STRLIST_FUNCTION_NAMES.SC_OPCODE_SECANT_HYP.String.Text
-msgid  "SECH"
-msgstr ""
+#: source/ui/dlg/formdlgs.src#RID_FORMULATAB_FUNCTION.LB_CATEGORY.Default.StringList.item
+msgid  "Last Used"
+msgstr "இறுதியாக பயன்படுத்தியது"
 
 #: source/ui/dlg/formdlgs.src#RID_FORMULATAB_FUNCTION.LB_CATEGORY.Default.StringList.item
 msgid  "All"
@@ -1281,7 +1285,7 @@ msgstr "சூத்திரம் (~m)"
 
 #: source/ui/dlg/formdlgs.src#RID_FORMULADLG_FORMULA_MODAL.FT_RESULT.FixedText.Text
 msgid  "Function result"
-msgstr "செயல்பாடு விளைவு"
+msgstr "செயல்பாட்டு முடிவு"
 
 #: source/ui/dlg/formdlgs.src#RID_FORMULADLG_FORMULA_MODAL.FT_FORMULA_RESULT.FixedText.Text
 msgid  "Result"
@@ -1301,7 +1305,7 @@ msgstr "<< பின் (~B)"
 
 #: source/ui/dlg/formdlgs.src#RID_FORMULADLG_FORMULA_MODAL.BTN_FORWARD.PushButton.Text
 msgid  "~Next >>"
-msgstr "அடுத்து (~N) >>"
+msgstr "அடுத்து (~N)>> "
 
 #: source/ui/dlg/formdlgs.src#RID_FORMULADLG_FORMULA_MODAL.STR_TITLE1.String.Text
 msgid  "Function Wizard"
@@ -1363,9 +1367,9 @@ msgstr "செயல்பாடு வழிகாட்டி  -"
 msgid  "~End"
 msgstr "முடிவு (~E)"
 
-#: source/ui/dlg/formdlgs.src#RID_FORMULATAB_FUNCTION.LB_CATEGORY.Default.StringList.item
-msgid  "Last Used"
-msgstr "இறுதியாக பயன்படுத்தியது"
+#: source/ui/dlg/parawin.src#RB_ARGBLOCK( y ).#define.QuickHelpText
+msgid  "Select"
+msgstr "தேர்ந்தெடு"
 
 #: source/ui/dlg/parawin.src#RID_FORMULATAB_PARAMETER.FT_EDITDESC.FixedText.Text
 msgid  "Function not known"
@@ -1378,7 +1382,3 @@ msgstr "(விரும்பினால்)"
 #: source/ui/dlg/parawin.src#RID_FORMULATAB_PARAMETER.STR_REQUIRED.String.Text
 msgid  "(required)"
 msgstr "(தேவைப்படுகிறது)"
-
-#: source/ui/dlg/parawin.src#RB_ARGBLOCK( y ).#define.QuickHelpText
-msgid  "Select"
-msgstr "தேர்ந்தெடு"

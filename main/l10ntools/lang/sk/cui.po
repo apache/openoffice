@@ -31,6 +31,10 @@ msgstr ""
 "X-Generator: genLang\n"
 
 
+#: source/customize/selector.src#FIXEDTEXT_DIALOG_DESCRIPTION.#define.Text
+msgid  "Select the library that contains the macro you want. Then select the macro under 'Macro name'."
+msgstr "Vyberte knižnicu obsahujúcu vami požadované makro. Potom pod 'Názov makra' vyberte makro."
+
 #: source/customize/selector.src#STR_SELECTOR_ADD_COMMANDS.String.TEXT
 msgid  "Add Commands"
 msgstr "Pridať príkazy"
@@ -61,7 +65,7 @@ msgstr "Zatvoriť"
 
 #: source/customize/selector.src#STR_SELECTOR_ADD_COMMANDS_DESCRIPTION.String.TEXT
 msgid  "To add a command to a toolbar, select the category and then the command. Then drag the command to the Commands list of the Toolbars tab page in the Customize dialog."
-msgstr ""
+msgstr "Pre pridanie príkazu do menu vyberte kategóriu a potom príkaz. Potom pretiahnite príkaz do zoznamu príkazov na záložkách menu v dialógu Prispôsobiť."
 
 #: source/customize/selector.src#STR_BASICMACROS.String.Text
 msgid  "BASIC Macros"
@@ -91,9 +95,41 @@ msgstr "Názov makra"
 msgid  "Description"
 msgstr "Popis"
 
-#: source/customize/selector.src#FIXEDTEXT_DIALOG_DESCRIPTION.#define.Text
-msgid  "Select the library that contains the macro you want. Then select the macro under 'Macro name'."
-msgstr ""
+#: source/customize/acccfg.src#PUSHBUTTON_TEXT_SAVE.#define.Text
+msgid  "~Save..."
+msgstr "~Uložiť..."
+
+#: source/customize/acccfg.src#PUSHBUTTON_TEXT_RESET.#define.Text
+msgid  "R~eset"
+msgstr "O~bnoviť"
+
+#: source/customize/acccfg.src#PUSHBUTTON_TEXT_LOAD.#define.Text
+msgid  "~Load..."
+msgstr "~Načítať..."
+
+#: source/customize/acccfg.src#PUSHBUTTON_TEXT_REMOVE.#define.Text
+msgid  "~Delete"
+msgstr "~Zmazať"
+
+#: source/customize/acccfg.src#PUSHBUTTON_TEXT_CHANGE.#define.Text
+msgid  "~Modify"
+msgstr "~Upraviť"
+
+#: source/customize/acccfg.src#PUSHBUTTON_TEXT_NEW.#define.Text
+msgid  "~New"
+msgstr "~Nový"
+
+#: source/customize/acccfg.src#FIXEDTEXT_TEXT_GROUP.#define.Text
+msgid  "~Category"
+msgstr "~Kategória"
+
+#: source/customize/acccfg.src#FIXEDTEXT_TEXT_FUNCTION.#define.Text
+msgid  "Function"
+msgstr "Funkcia"
+
+#: source/customize/acccfg.src#GROUPBOX_TEXT_FUNCTIONS.#define.Text
+msgid  "Functions"
+msgstr "Funkcie"
 
 #: source/customize/acccfg.src#RID_SVXPAGE_KEYBOARD.GRP_ACC_KEYBOARD.FixedLine.Text
 msgid  "Shortcut keys"
@@ -134,42 +170,6 @@ msgstr "%PRODUCTNAME Makrá"
 #: source/customize/acccfg.src#RID_SVXPAGE_CONFIGGROUPBOX.STR_GROUP_STYLES.String.Text
 msgid  "Styles"
 msgstr "Štýly"
-
-#: source/customize/acccfg.src#PUSHBUTTON_TEXT_SAVE.#define.Text
-msgid  "~Save..."
-msgstr "~Uložiť..."
-
-#: source/customize/acccfg.src#PUSHBUTTON_TEXT_RESET.#define.Text
-msgid  "R~eset"
-msgstr "O~bnoviť"
-
-#: source/customize/acccfg.src#PUSHBUTTON_TEXT_LOAD.#define.Text
-msgid  "~Load..."
-msgstr "~Načítať..."
-
-#: source/customize/acccfg.src#PUSHBUTTON_TEXT_REMOVE.#define.Text
-msgid  "~Delete"
-msgstr "~Zmazať"
-
-#: source/customize/acccfg.src#PUSHBUTTON_TEXT_CHANGE.#define.Text
-msgid  "~Modify"
-msgstr "~Upraviť"
-
-#: source/customize/acccfg.src#PUSHBUTTON_TEXT_NEW.#define.Text
-msgid  "~New"
-msgstr "~Nový"
-
-#: source/customize/acccfg.src#FIXEDTEXT_TEXT_GROUP.#define.Text
-msgid  "~Category"
-msgstr "~Kategória"
-
-#: source/customize/acccfg.src#FIXEDTEXT_TEXT_FUNCTION.#define.Text
-msgid  "Function"
-msgstr "Funkcia"
-
-#: source/customize/acccfg.src#GROUPBOX_TEXT_FUNCTIONS.#define.Text
-msgid  "Functions"
-msgstr "Funkcie"
 
 #: source/customize/eventdlg.src#RID_SVXPAGE_EVENTS.STR_EVENT.String.Text
 msgid  "Event"
@@ -547,6 +547,50 @@ msgstr "Panely nástrojov"
 msgid  "Events"
 msgstr "Udalosti"
 
+#: source/customize/cfg.src#TEXT_MENU.#define.Text
+msgid  "Menu"
+msgstr "Menu"
+
+#: source/customize/cfg.src#TEXT_BEGIN_GROUP.#define.Text
+msgid  "Begin a Group"
+msgstr "Začať zoskupenie"
+
+#: source/customize/cfg.src#TEXT_RENAME.#define.Text
+msgid  "Rename..."
+msgstr "Premenovať..."
+
+#: source/customize/cfg.src#TEXT_DELETE.#define.Text
+msgid  "Delete..."
+msgstr "Zmazať..."
+
+#: source/customize/cfg.src#TEXT_DELETE_NODOTS.#define.Text
+msgid  "Delete"
+msgstr "Zmazať"
+
+#: source/customize/cfg.src#TEXT_MOVE.#define.Text
+msgid  "Move..."
+msgstr "Presunúť..."
+
+#: source/customize/cfg.src#TEXT_DEFAULT_STYLE.#define.Text
+msgid  "Restore Default Settings"
+msgstr "Obnoviť východzie nastavenia"
+
+#: source/customize/cfg.src#TEXT_DEFAULT_COMMAND.#define.Text
+msgid  "Restore Default Command"
+msgstr "Obnoviť východzí príkaz"
+
+#: source/customize/cfg.src#TEXT_TEXT_ONLY.#define.Text
+msgid  "Text only"
+msgstr "Iba text"
+
+#: source/customize/cfg.src#TEXT_TOOLBAR_NAME.#define.Text
+msgid  "Toolbar Name"
+msgstr "Názov panela nástrojov"
+
+#: source/customize/cfg.src#TEXT_SAVE_IN.#define.Text
+msgid  "Save In"
+msgstr "Uložiť v"
+
 #: source/customize/cfg.src#RID_SVXPAGE_MENUS.GRP_MENUS.FixedLine.Text
 msgid  "%PRODUCTNAME %MODULENAME Menus"
 msgstr "%PRODUCTNAME %MODULENAME Menu"
@@ -617,7 +661,7 @@ msgstr "Názov podmenu"
 
 #: source/customize/cfg.src#RID_SVXSTR_MENU_ADDCOMMANDS_DESCRIPTION.String.Text
 msgid  "To add a command to a menu, select the category and then the command. You can also drag the command to the Commands list of the Menus tab page in the Customize dialog."
-msgstr ""
+msgstr "Pre pridanie príkazu do menu vyberte kategóriu a potom príkaz. Môže taktiež potiahnuť príkaz do zoznamu príkazov na záložkách menu v dialógu Prispôsobiť."
 
 #: source/customize/cfg.src#MD_MENU_ORGANISER.ModalDialog.Text
 msgid  "New Menu"
@@ -653,7 +697,7 @@ msgstr "Zmazať..."
 
 #: source/customize/cfg.src#MD_ICONSELECTOR.FT_NOTE.FixedText.Text
 msgid  "Note:\nThe size of an icon should be 16x16 pixel to achieve best quality. Different sized icons will be scaled automatically."
-msgstr ""
+msgstr "Poznámka:\nPre najlepšiu kvalitu by veľkosť ikony mala byť 16x16 pixelov. Ikony s inou veľkosťou budú automaticky prispôsobené."
 
 #: source/customize/cfg.src#MD_ICONCHANGE.ModalDialog.Text
 msgid  "%PRODUCTNAME %PRODUCTVERSION"
@@ -661,11 +705,11 @@ msgstr "%PRODUCTNAME %PRODUCTVERSION"
 
 #: source/customize/cfg.src#MD_ICONCHANGE.FTCHGE_DESCRIPTION.FixedText.Text
 msgid  "The files listed below could not be imported.\nThe file format could not be interpreted."
-msgstr ""
+msgstr "Súbory umiestnené nižšie nemohli byť importované.\nFormát súborov nemohol byť zistený."
 
 #: source/customize/cfg.src#RID_SVXSTR_IMPORT_ICON_ERROR.String.Text
 msgid  "The files listed below could not be imported. The file format could not be interpreted."
-msgstr ""
+msgstr "Súbory umiestnené nižšie nemohli byť importované. Formát súborov nemohol byť zistený."
 
 #: source/customize/cfg.src#RID_SVXSTR_DELETE_ICON_CONFIRM.String.Text
 msgid  "Are you sure to delete the image?"
@@ -673,7 +717,7 @@ msgstr "Ste si istý že chcete zmazať obrázok?"
 
 #: source/customize/cfg.src#RID_SVXSTR_REPLACE_ICON_WARNING.String.Text
 msgid  "The icon %ICONNAME is already contained in the image list.\nWould you like to replace the existing icon?"
-msgstr ""
+msgstr "Ikona %ICONNAME je už obsiahnutá v zozname obrázkov.\nChcete nahradiť existujúcu ikonu?"
 
 #: source/customize/cfg.src#RID_SVXSTR_REPLACE_ICON_CONFIRM.String.Text
 msgid  "Confirm Icon Replacement"
@@ -709,23 +753,23 @@ msgstr "Ste si istý, že chcete zmazať menu '%MENUNAME'?"
 
 #: source/customize/cfg.src#QBX_CONFIRM_DELETE_TOOLBAR.QueryBox.Message
 msgid  "There are no more commands on the toolbar. Do you want to delete the toolbar?"
-msgstr ""
+msgstr "Na paneli nástrojov nie sú žiadne príkazy. Chcete zmazať tento panel nástrojov?"
 
 #: source/customize/cfg.src#QBX_CONFIRM_RESET.QueryBox.Message
 msgid  "The menu configuration for %SAVE IN SELECTION% will be reset to the factory settings. Do you want to continue?"
-msgstr ""
+msgstr "Nastavenie menu pre %SAVE IN SELECTION% bude obnovené na pôvodné nastavenie. Chcete pokračovať?"
 
 #: source/customize/cfg.src#RID_SVXSTR_CONFIRM_MENU_RESET.String.Text
 msgid  "The menu configuration for %SAVE IN SELECTION% will be reset to the factory settings. Do you want to continue?"
-msgstr ""
+msgstr "Nastavenie menu pre %SAVE IN SELECTION% bude obnovené na pôvodné nastavenie. Chcete pokračovať?"
 
 #: source/customize/cfg.src#RID_SVXSTR_CONFIRM_TOOLBAR_RESET.String.Text
 msgid  "The toolbar configuration for %SAVE IN SELECTION% will be reset to the factory settings. Do you want to continue?"
-msgstr ""
+msgstr "Nastavenie panela nástrojov pre %SAVE IN SELECTION% bude obnovené na východzie nastavenie. Chcete pokračovať?"
 
 #: source/customize/cfg.src#QBX_CONFIRM_RESTORE_DEFAULT.QueryBox.Message
 msgid  "This will delete all changes previously made to this toolbar. Do you really want to reset the toolbar?"
-msgstr ""
+msgstr "Toto zmaže všetky zmeny urobené v paneli nástrojov. Určite chcete obnoviť panel nástrojov?"
 
 #: source/customize/cfg.src#IBX_MNUCFG_ALREADY_INCLUDED.InfoBox.Message
 msgid  "Function is already included in this popup."
@@ -750,50 +794,6 @@ msgstr "Nahor"
 #: source/customize/cfg.src#BUTTON_STR_DOWN.String.Text
 msgid  "Down"
 msgstr "Dolu"
-
-#: source/customize/cfg.src#TEXT_MENU.#define.Text
-msgid  "Menu"
-msgstr "Menu"
-
-#: source/customize/cfg.src#TEXT_BEGIN_GROUP.#define.Text
-msgid  "Begin a Group"
-msgstr "Začať zoskupenie"
-
-#: source/customize/cfg.src#TEXT_RENAME.#define.Text
-msgid  "Rename..."
-msgstr "Premenovať..."
-
-#: source/customize/cfg.src#TEXT_DELETE.#define.Text
-msgid  "Delete..."
-msgstr "Zmazať..."
-
-#: source/customize/cfg.src#TEXT_DELETE_NODOTS.#define.Text
-msgid  "Delete"
-msgstr "Zmazať"
-
-#: source/customize/cfg.src#TEXT_MOVE.#define.Text
-msgid  "Move..."
-msgstr "Presunúť..."
-
-#: source/customize/cfg.src#TEXT_DEFAULT_STYLE.#define.Text
-msgid  "Restore Default Settings"
-msgstr "Obnoviť východzie nastavenia"
-
-#: source/customize/cfg.src#TEXT_DEFAULT_COMMAND.#define.Text
-msgid  "Restore Default Command"
-msgstr "Obnoviť východzí príkaz"
-
-#: source/customize/cfg.src#TEXT_TEXT_ONLY.#define.Text
-msgid  "Text only"
-msgstr "Iba text"
-
-#: source/customize/cfg.src#TEXT_TOOLBAR_NAME.#define.Text
-msgid  "Toolbar Name"
-msgstr "Názov panela nástrojov"
-
-#: source/customize/cfg.src#TEXT_SAVE_IN.#define.Text
-msgid  "Save In"
-msgstr "Uložiť v"
 
 #: source/dialogs/commonlingui.src#RID_SVX_WND_COMMON_LINGU.FT_WORD.FixedText.Text
 msgid  "Origi~nal"
@@ -961,23 +961,23 @@ msgstr "Pri behu %LANGUAGENAME skriptu %SCRIPTNAME sa vyskytla chyba."
 
 #: source/dialogs/scriptdlg.src#RID_SVXSTR_EXCEPTION_RUNNING.String.Text
 msgid  "An exception occurred while running the %LANGUAGENAME script %SCRIPTNAME."
-msgstr ""
+msgstr "Pri behu %LANGUAGENAME skriptu %SCRIPTNAME sa vyskytla výnimka."
 
 #: source/dialogs/scriptdlg.src#RID_SVXSTR_ERROR_AT_LINE.String.Text
 msgid  "An error occurred while running the %LANGUAGENAME script %SCRIPTNAME at line: %LINENUMBER."
-msgstr ""
+msgstr "Pri behu %LANGUAGENAME skriptu %SCRIPTNAME sa vyskytla chyba na riadku: %LINENUMBER."
 
 #: source/dialogs/scriptdlg.src#RID_SVXSTR_EXCEPTION_AT_LINE.String.Text
 msgid  "An exception occurred while running the %LANGUAGENAME script %SCRIPTNAME at line: %LINENUMBER."
-msgstr ""
+msgstr "Pri behu %LANGUAGENAME skriptu %SCRIPTNAME sa vyskytla výnimka na riadku: %LINENUMBER."
 
 #: source/dialogs/scriptdlg.src#RID_SVXSTR_FRAMEWORK_ERROR_RUNNING.String.Text
 msgid  "A Scripting Framework error occurred while running the %LANGUAGENAME script %SCRIPTNAME."
-msgstr ""
+msgstr "Pri behu %LANGUAGENAME skriptu %SCRIPTNAME sa vyskytla chyba skriptového rámca."
 
 #: source/dialogs/scriptdlg.src#RID_SVXSTR_FRAMEWORK_ERROR_AT_LINE.String.Text
 msgid  "A Scripting Framework error occurred while running the %LANGUAGENAME script %SCRIPTNAME at line: %LINENUMBER."
-msgstr ""
+msgstr "Pri behu %LANGUAGENAME skriptu %SCRIPTNAME sa vyskytla chyba skriptového rámca na riadku: %LINENUMBER."
 
 #: source/dialogs/scriptdlg.src#RID_SVXSTR_ERROR_TYPE_LABEL.String.Text
 msgid  "Type:"
@@ -1248,6 +1248,10 @@ msgid  "F~orm"
 msgstr "F~ormulár"
 
 #: source/dialogs/hyperdlg.src#RID_SVXPAGE_HYPERLINK_INTERNET.LB_FORM.Default.StringList.item
+msgid  "Text"
+msgstr "Text"
+
+#: source/dialogs/hyperdlg.src#RID_SVXPAGE_HYPERLINK_INTERNET.LB_FORM.Default.StringList.item
 msgid  "Button"
 msgstr "Tlačidlo"
 
@@ -1310,6 +1314,10 @@ msgstr "~Rámec"
 #: source/dialogs/hyperdlg.src#RID_SVXPAGE_HYPERLINK_MAIL.FT_FORM.FixedText.Text
 msgid  "F~orm"
 msgstr "F~ormulár"
+
+#: source/dialogs/hyperdlg.src#RID_SVXPAGE_HYPERLINK_MAIL.LB_FORM.Default.StringList.item
+msgid  "Text"
+msgstr "Text"
 
 #: source/dialogs/hyperdlg.src#RID_SVXPAGE_HYPERLINK_MAIL.LB_FORM.Default.StringList.item
 msgid  "Button"
@@ -1388,6 +1396,10 @@ msgid  "F~orm"
 msgstr "F~ormulár"
 
 #: source/dialogs/hyperdlg.src#RID_SVXPAGE_HYPERLINK_DOCUMENT.LB_FORM.Default.StringList.item
+msgid  "Text"
+msgstr "Text"
+
+#: source/dialogs/hyperdlg.src#RID_SVXPAGE_HYPERLINK_DOCUMENT.LB_FORM.Default.StringList.item
 msgid  "Button"
 msgstr "Tlačidlo"
 
@@ -1452,6 +1464,10 @@ msgid  "F~orm"
 msgstr "F~ormulár"
 
 #: source/dialogs/hyperdlg.src#RID_SVXPAGE_HYPERLINK_NEWDOCUMENT.LB_FORM.Default.StringList.item
+msgid  "Text"
+msgstr "Text"
+
+#: source/dialogs/hyperdlg.src#RID_SVXPAGE_HYPERLINK_NEWDOCUMENT.LB_FORM.Default.StringList.item
 msgid  "Button"
 msgstr "Tlačidlo"
 
@@ -1505,7 +1521,7 @@ msgstr "Internet"
 
 #: source/dialogs/hyperdlg.src#RID_SVXSTR_HYPERDLG_HLINETTP_HELP.String.Text
 msgid  "This is where you create a hyperlink to a Web page, FTP server or Telnet connection."
-msgstr ""
+msgstr "Tu môžete vytvoriť odkaz na Webovú stránku, FTP server alebo Telnet spojenie."
 
 #: source/dialogs/hyperdlg.src#RID_SVXSTR_HYPERDLG_HLMAILTP.String.Text
 msgid  "Mail & News"
@@ -1521,7 +1537,7 @@ msgstr "Dokument"
 
 #: source/dialogs/hyperdlg.src#RID_SVXSTR_HYPERDLG_HLDOCTP_HELP.String.Text
 msgid  "This is where you create a hyperlink to an existing document or a target within a document."
-msgstr ""
+msgstr "Tu môžete vytvoriť odkaz na existujúci dokument alebo cieľ vo vnútri dokumentu."
 
 #: source/dialogs/hyperdlg.src#RID_SVXSTR_HYPERDLG_HLDOCNTP.String.Text
 msgid  "New Document"
@@ -1542,22 +1558,6 @@ msgstr "Text"
 #: source/dialogs/hyperdlg.src#RID_SVXSTR_HYPERDLG_QUERYOVERWRITE.String.Text
 msgid  "The file already exists. Overwrite?"
 msgstr "Súbor už existuje. Prepísať?"
-
-#: source/dialogs/hyperdlg.src#RID_SVXPAGE_HYPERLINK_INTERNET.LB_FORM.Default.StringList.item
-msgid  "Text"
-msgstr "Text"
-
-#: source/dialogs/hyperdlg.src#RID_SVXPAGE_HYPERLINK_MAIL.LB_FORM.Default.StringList.item
-msgid  "Text"
-msgstr "Text"
-
-#: source/dialogs/hyperdlg.src#RID_SVXPAGE_HYPERLINK_DOCUMENT.LB_FORM.Default.StringList.item
-msgid  "Text"
-msgstr "Text"
-
-#: source/dialogs/hyperdlg.src#RID_SVXPAGE_HYPERLINK_NEWDOCUMENT.LB_FORM.Default.StringList.item
-msgid  "Text"
-msgstr "Text"
 
 #: source/dialogs/passwdomdlg.src#RID_DLG_PASSWORD_TO_OPEN_MODIFY.ModalDialog.Text
 msgid  "Set Password"
@@ -1609,15 +1609,15 @@ msgstr "Menej m~ožností"
 
 #: source/dialogs/passwdomdlg.src#RID_DLG_PASSWORD_TO_OPEN_MODIFY.STR_ONE_PASSWORD_MISMATCH.String.Text
 msgid  "The confirmation password did not match the password. Set the password again by entering the same password in both boxes."
-msgstr ""
+msgstr "Potvdzovacie heslo nesúhlasí so zadaným heslom. Nastavte heslo znovu zadaním rovnakého hesla do obidvoch polí."
 
 #: source/dialogs/passwdomdlg.src#RID_DLG_PASSWORD_TO_OPEN_MODIFY.STR_TWO_PASSWORDS_MISMATCH.String.Text
 msgid  "The confirmation passwords did not match the original passwords. Set the passwords again."
-msgstr ""
+msgstr "Potvdzovacie heslo nesúhlasí so zadaným heslom. Nastavte heslo znovu."
 
 #: source/dialogs/passwdomdlg.src#RID_DLG_PASSWORD_TO_OPEN_MODIFY.STR_INVALID_STATE_FOR_OK_BUTTON.String.Text
 msgid  "Please enter a password to open or to modify, or check the open read-only option to continue."
-msgstr ""
+msgstr "Prosím zadajte heslo pre otvorenie alebo úpravy, alebo zakliknite možnosť len na čítanie pre pokračovanie."
 
 #: source/dialogs/grfflt.src#RID_SVX_GRFFILTER_DLG_MOSAIC.ModalDialog.Text
 msgid  "Mosaic"
@@ -1856,8 +1856,8 @@ msgid  "~Delete"
 msgstr "~Zmazať"
 
 #: source/dialogs/about.src#RID_DEFAULTABOUT.ModalDialog.Text
-msgid  "About %PRODUCTNAME"
-msgstr "O %PRODUCTNAME"
+msgid  "About %FULLPRODUCTNAME"
+msgstr ""
 
 #: source/dialogs/about.src#RID_DEFAULTABOUT.RID_CUI_ABOUT_BTN_README.PushButton.Text
 msgid  "License..."
@@ -1885,7 +1885,7 @@ msgstr ""
 
 #: source/dialogs/hyphen.src#RID_SVXSTR_HMERR_CHECKINSTALL.String.Text
 msgid  "is not available for spellchecking\nPlease check your installation and install the desired language\n"
-msgstr ""
+msgstr "nie je dostupná pre kontrolu pravopisu\nProsím skontrolujte svoju inštaláciu a doplňte požadovaný jazyk\n"
 
 #: source/dialogs/hyphen.src#RID_SVXDLG_HYPHENATE.ModalDialog.Text
 msgid  "Hyphenation"
@@ -2597,7 +2597,7 @@ msgstr "K~nižný mód"
 
 #: source/dialogs/showcols.src#RID_SVX_DLG_SHOWGRIDCOLUMNS.1.FixedText.Text
 msgid  "The following columns are currently hidden. Please mark the fields you want to show and choose OK."
-msgstr ""
+msgstr "Nasledujúce stĺpce sú momentálne skryté. Prosím označte pole, ktoré chcete zobraziť a zvoľte OK."
 
 #: source/dialogs/showcols.src#RID_SVX_DLG_SHOWGRIDCOLUMNS.CancelButton.Text
 msgid  "Show columns"
@@ -2921,11 +2921,11 @@ msgstr "~Ručne"
 
 #: source/options/optinet2.src#RID_SVXPAGE_INET_PROXY.ST_MSG_255_0.String.Text
 msgid  "is not a valid entry for this field. Please specify a value between 0 and 255."
-msgstr ""
+msgstr "nie je platnou položkou pre toto pole. Prosím zadajte hodnotu medzi 0 až 255."
 
 #: source/options/optinet2.src#RID_SVXPAGE_INET_PROXY.ST_MSG_255_1.String.Text
 msgid  "is not a valid entry for this field. Please specify a value between 1 and 255."
-msgstr ""
+msgstr "nie je platnou položkou pre toto pole. Prosím zadajte hodnotu medzi 1 až 255."
 
 #: source/options/optinet2.src#RID_SVXPAGE_INET_SEARCH.TabPage.Text
 msgid  "Search"
@@ -3013,7 +3013,7 @@ msgstr "Bezpečnostné nastavenia a varovania"
 
 #: source/options/optinet2.src#RID_SVXPAGE_INET_SECURITY.FI_SEC_SECURITYOPTIONS.FixedText.Text
 msgid  "Adjust security related options and define warnings for hidden information in documents."
-msgstr ""
+msgstr "Upraviť nastavenia súvisiace s bezpečnosťou a definovať upozornenia pre skryté informácie v súboroch."
 
 #: source/options/optinet2.src#RID_SVXPAGE_INET_SECURITY.PB_SEC_SECURITYOPTIONS.PushButton.Text
 msgid  "Options..."
@@ -3037,7 +3037,7 @@ msgstr "Chránené hlavným heslom (odporúčané)"
 
 #: source/options/optinet2.src#RID_SVXPAGE_INET_SECURITY.FI_SEC_MASTERPASSWORD.FixedText.Text
 msgid  "Passwords are protected by a master password. You will be asked to enter it once per session, if %PRODUCTNAME retrieves a password from the protected password list."
-msgstr ""
+msgstr "Heslá sú chránené hlavným heslom. Budete požiadaný o jeho zadanie jeden raz počas jedného sedenia v prípade ak %PRODUCTNAME požaduje heslo zo zoznamu chránených hesiel."
 
 #: source/options/optinet2.src#RID_SVXPAGE_INET_SECURITY.PB_SEC_MASTERPASSWORD.PushButton.Text
 msgid  "Master Password..."
@@ -3049,7 +3049,7 @@ msgstr "Bezpečnosť makier"
 
 #: source/options/optinet2.src#RID_SVXPAGE_INET_SECURITY.FI_SEC_MACROSEC.FixedText.Text
 msgid  "Adjust the security level for executing macros and specify trusted macro developers."
-msgstr ""
+msgstr "Upravte bezpečnostnú úroveň pre spúšťanie makier a uveďte dôveryhodných vývojárov makier."
 
 #: source/options/optinet2.src#RID_SVXPAGE_INET_SECURITY.PB_SEC_MACROSEC.PushButton.Text
 msgid  "Macro Security..."
@@ -3057,15 +3057,15 @@ msgstr "Bezpečnosť makier..."
 
 #: source/options/optinet2.src#RID_SVXPAGE_INET_SECURITY.STR_SEC_NOPASSWDSAVE.String.Text
 msgid  "Disabling the function to persistently store passwords deletes the list of passwords stored and resets the master password.\n\nDo you want to delete password list and reset master password?"
-msgstr ""
+msgstr "Zakázanie funkcie pre trvalé uloženie hesiel zmaže zoznam uložených hesiel a znovu nastaví hlavné heslo.\n\nChcete zmazať zoznam hesiel a znovu nastaviť hlavné heslo?"
 
 #: source/options/optinet2.src#RID_SVXERR_OPT_PROXYPORTS.ErrorBox.Message
 msgid  "Invalid value!\n\nThe maximum value for a port number is 65535."
-msgstr ""
+msgstr "Neplatná hodnota!\n\nMaximálna hodnota portu je 65535."
 
 #: source/options/optinet2.src#RID_SVXDLG_OPT_JAVASCRIPT_DISABLE.FT_JSCPT_WARNING.FixedText.Text
 msgid  "Please note that with Java\nyou disable Javascript as well.\n\nDo you still want to disable Java?"
-msgstr ""
+msgstr "Prosím uvedomte si, že spolu s Javou\nzakážete aj JavaScript.\n\nUrčite chcete vypnúť Javu?"
 
 #: source/options/optinet2.src#RID_SVXDLG_OPT_JAVASCRIPT_DISABLE.CB_JSCPT_DISABLE.CheckBox.Text
 msgid  "~Don't show warning again"
@@ -3145,11 +3145,11 @@ msgstr "Obec/Štát/PSČ"
 
 #: source/options/optgenrl.src#RID_SFXPAGE_GENERAL.STR_QUERY_REG.String.Text
 msgid  "Note that street, Zip code and city are used to generate the registration key. You will not be able to change the user data again until the registration has been carried out. Do you want to modify the user data now?"
-msgstr ""
+msgstr "Všimnite si, že PSČ a mesto budú použité na vygenerovanie registračného kľúča. Nebudete môcť opäť zmeniť údaje o používateľovi, pokiaľ neprebehne registrácia. Chcete zmeniť údaje o používateľovi teraz?"
 
 #: source/options/optgenrl.src#RID_SVXQB_CHANGEDATA.QueryBox.Message
 msgid  "The User Data have been changed.\nDo you really want to change your User Data?"
-msgstr ""
+msgstr "Údaje o používateľovi boli zmenené.\nNaozaj chcete zmeniť údaje o používateľovi?"
 
 #: source/options/optjsearch.src#RID_SVXPAGE_JSEARCH_OPTIONS.FL_TREAT_AS_EQUAL.FixedLine.Text
 msgid  "Treat as equal"
@@ -3613,15 +3613,15 @@ msgstr "Vytvoriť databázový odkaz"
 
 #: source/options/doclinkdialog.src#STR_LINKEDDOC_DOESNOTEXIST.String.Text
 msgid  "The file\n$file$\ndoes not exist."
-msgstr ""
+msgstr "Súbor\n$file$\nneexistuje."
 
 #: source/options/doclinkdialog.src#STR_LINKEDDOC_NO_SYSTEM_FILE.String.Text
 msgid  "The file\n$file$\ndoes not exist in the local file system."
-msgstr ""
+msgstr "Súbor\n$file$\nneexistuje v lokálnom súborovom systéme."
 
 #: source/options/doclinkdialog.src#STR_NAME_CONFLICT.String.Text
 msgid  "The name '$file$' is already used for another database.\nPlease choose a different name."
-msgstr ""
+msgstr "Názov '$file$' je už použitý pre inú databázu.\nProsím vyberte iný názov."
 
 #: source/options/doclinkdialog.src#QUERY_DELETE_CONFIRM.QueryBox.Message
 msgid  "Do you want to delete the entry?"
@@ -3641,51 +3641,51 @@ msgstr "Vybraný modul sa nedá načítať."
 
 #: source/options/treeopt.src#RID_OFADLG_OPTIONS_TREE.STR_HELPTEXTS.SID_GENERAL_OPTIONS.ItemList.item
 msgid  "This dialog is used to define general settings when working with %PRODUCTNAME. Enter your personal data, the defaults to be used when saving documents, and paths to important files. These settings will be saved automatically and used in later sessions as well."
-msgstr ""
+msgstr "Tento dialóg slúži pre definovanie hlavných nastavení pre prácu s %PRODUCTNAME. Zadajte svoje osobné dáta, východzie pre použitie pri ukladaní dokumentov a umiestnenia dôležitých súborov. Nastavenia budú automaticky uložené a použité v budúcnosti."
 
 #: source/options/treeopt.src#RID_OFADLG_OPTIONS_TREE.STR_HELPTEXTS.SID_LANGUAGE_OPTIONS.ItemList.item
 msgid  "This is where you make settings concerning language and writing aids for your work with %PRODUCTNAME."
-msgstr ""
+msgstr "Tu môžete nastaviť jazyk a nástroje pre prácu s %PRODUCTNAME."
 
 #: source/options/treeopt.src#RID_OFADLG_OPTIONS_TREE.STR_HELPTEXTS.SID_INET_DLG.ItemList.item
 msgid  "This is where you configure %PRODUCTNAME for the Internet. You can define search engines or save your proxy settings."
-msgstr ""
+msgstr "Tu môžete nastaviť %PRODUCTNAME pre prácu s internetom. Môžete definovať vyhľadávače alebo uložiť nastavenia proxy."
 
 #: source/options/treeopt.src#RID_OFADLG_OPTIONS_TREE.STR_HELPTEXTS.SID_SW_EDITOPTIONS.ItemList.item
 msgid  "This is where you specify various settings for text documents. These settings determine how your text documents are handled in %PRODUCTNAME and are valid for all new %PRODUCTNAME Writer documents. You can also define a few settings for the active text document if you save it afterwards."
-msgstr ""
+msgstr "Tu môžete špecifikovať rôzne nastavenia textových dokumentov. Tieto nastavenia určujú ako bude nakladané s textovými dokumentmi v %PRODUCTNAME a budú platné pre všetky nové %PRODUCTNAME writer dokumenty. Môžete tak isto zadefinovať niekoľko nastavení pre aktívny textový dokument v prípade, že ho potom uložíte."
 
 #: source/options/treeopt.src#RID_OFADLG_OPTIONS_TREE.STR_HELPTEXTS.SID_SW_ONLINEOPTIONS.ItemList.item
 msgid  "This is where you define the basic settings for %PRODUCTNAME documents in HTML format. For example, you decide which contents should be displayed on the screen or printed, how the pages are scrolled on the screen, in which color keywords are highlighted in the source text and much more."
-msgstr ""
+msgstr "Tu môžete definovať základné nastavenia pre dokumenty %PRODUCTNAME vo formáte HTML. Napríklad rozhodnúť, ktoré dáta sa majú zobraziť na obrazovke a ktoré vytlačiť, posuv stránok na obrazovke, farebné zvýraznenie zdrojových kódov a iné."
 
 #: source/options/treeopt.src#RID_OFADLG_OPTIONS_TREE.STR_HELPTEXTS.SID_SC_EDITOPTIONS.ItemList.item
 msgid  "This is where you define various global settings for spreadsheets. For example, you can define which contents should be displayed and in which direction the cursor will move after you enter data in a cell. You also define sort lists, the number of the decimal places displayed, etc."
-msgstr ""
+msgstr "Tu môžete zadať rozličné globálne nastavenia pre tabuľky. Napríklad, ktoré dáta sa majú zobrazovať alebo ktorým smerom sa pohne kurzor po zadaní dát. Taktiež môžete definovať zoradené zoznamy, počet zobrazených desatinných miest a iné."
 
 #: source/options/treeopt.src#RID_OFADLG_OPTIONS_TREE.STR_HELPTEXTS.SID_SD_EDITOPTIONS.ItemList.item
 msgid  "This is where you define the settings that apply to all newly saved presentations. Among other things, you decide which contents are displayed on the slides, which default unit of measure is used, if and how grid alignment is used, and if notes and handouts are always printed."
-msgstr ""
+msgstr "Tu môžete definovať nastavenia, ktoré budú platiť pre všetky nové prezentácie. Napríklad, ktoré dáta sa budú zobrazovať na snímkach, ktoré jednotky mier budú použité, či a ako sa použije mriežka alebo či sa poznámky vždy vytlačia."
 
 #: source/options/treeopt.src#RID_OFADLG_OPTIONS_TREE.STR_HELPTEXTS.SID_SD_GRAPHIC_OPTIONS.ItemList.item
 msgid  "This is where you define the settings for drawing documents. Among other things, you determine which contents are displayed on the pages, which scale is used, if and how grid alignment is used, and which contents are printed by default."
-msgstr ""
+msgstr "Tu môžete definovať nastavenia kresieb. Napríklad, ktoré dáta sa zobrazia na stranách, aká mierka sa použije, či a ako sa použije zarovnávacia mriežka a ktoré dáta sa budú tlačiť."
 
 #: source/options/treeopt.src#RID_OFADLG_OPTIONS_TREE.STR_HELPTEXTS.SID_SM_EDITOPTIONS.ItemList.item
 msgid  "This is where you select the print format and print options for all newly saved formula documents. These options take effect when you want to print a formula directly from %PRODUCTNAME Math."
-msgstr ""
+msgstr "Na tomto mieste môžete nastaviť formát a možnosti tlače pre všetky novo uložené dokumenty vzorcov. Tieto nastavenia sa použijú ak budete chcieť tlačiť vzorec priamo z %PRODUCTNAME Vzorce."
 
 #: source/options/treeopt.src#RID_OFADLG_OPTIONS_TREE.STR_HELPTEXTS.SID_SCH_EDITOPTIONS.ItemList.item
 msgid  "This is where you specify general default settings for your %PRODUCTNAME Charts. Set the colors you want for all new charts."
-msgstr ""
+msgstr "Na tomto mieste môžete zadať východzie nastavenia pre %PRODUCTNAME Grafy. Nastavte farbu, ktorú chcete použiť pre nové grafy."
 
 #: source/options/treeopt.src#RID_OFADLG_OPTIONS_TREE.STR_HELPTEXTS.SID_SB_STARBASEOPTIONS.ItemList.item
 msgid  "This is where you define general settings for accessing external data sources."
-msgstr ""
+msgstr "Na tomto mieste môžete zadať všeobecné nastavenia pre prístup k externým dátam."
 
 #: source/options/treeopt.src#RID_OFADLG_OPTIONS_TREE.STR_HELPTEXTS.SID_FILTER_DLG.ItemList.item
 msgid  "This is where you define general settings for opening and saving documents in external formats. You can control the behavior of macros or OLE objects in Microsoft Office documents or define settings for HTML documents."
-msgstr ""
+msgstr "Na tomto mieste môžete zadať všeobecné nastavenia pre otváranie a ukladanie súborov v externých formátoch. Môžete definovať správanie makier a OLE objektov v dokumentoch Microsoft Office alebo definovať nastavenie pre dokumenty HTML."
 
 #: source/options/treeopt.src#RID_OFADLG_OPTIONS_TREE_PAGES.SID_GENERAL_OPTIONS.0.ItemList.item
 msgid  "%PRODUCTNAME"
@@ -4157,19 +4157,19 @@ msgstr "Odst~rániť"
 
 #: source/options/optjava.src#RID_SVXERR_JRE_NOT_RECOGNIZED.ErrorBox.Message
 msgid  "The folder you selected does not contain a Java runtime environment.\nPlease select a different folder."
-msgstr ""
+msgstr "Priečinok, ktorý ste vybrali neobsahuje Java runtime environment.\nProsím vyberte iný priečinok."
 
 #: source/options/optjava.src#RID_SVXERR_JRE_FAILED_VERSION.ErrorBox.Message
 msgid  "The Java runtime environment you selected is not the required version.\nPlease select a different folder."
-msgstr ""
+msgstr "Vybraný Java runtime environment neobsahuje požadovanú verziu.\nProsím vyberte iný priečinok."
 
 #: source/options/optjava.src#RID_SVX_MSGBOX_JAVA_RESTART.WarningBox.Message
 msgid  "For the selected Java runtime environment to work properly, %PRODUCTNAME must be restarted.\nPlease restart %PRODUCTNAME now."
-msgstr ""
+msgstr "Aby mohlo vybrané Java runtime environment správne pracovať, je potrebné reštartovať %PRODUCTNAME.\n Prosím reštartujte %PRODUCTNAME teraz."
 
 #: source/options/optjava.src#RID_SVX_MSGBOX_JAVA_RESTART2.WarningBox.Message
 msgid  "You have to restart %PRODUCTNAME so the new or modified values can take effect.\nPlease restart %PRODUCTNAME now."
-msgstr ""
+msgstr "Aby sa prejavili zmeny v nových hodnotách musíte reštartovať %PRODUCTNAME.\n Prosím reštartujete %PRODUCTNAME teraz."
 
 #: source/options/connpooloptions.src#RID_OFAPAGE_CONNPOOLOPTIONS.FL_POOLING.FixedLine.Text
 msgid  "Connection pool"
@@ -4214,6 +4214,10 @@ msgstr "Áno"
 #: source/options/connpooloptions.src#RID_OFAPAGE_CONNPOOLOPTIONS.STR_NO.String.Text
 msgid  "No"
 msgstr "Nie"
+
+#: source/options/optsave.src#TEXT_SAVEPAGE.#define.Text
+msgid  "Save"
+msgstr "Uložiť"
 
 #: source/options/optsave.src#RID_SFXPAGE_SAVE.LB_LOAD.FixedLine.Text
 msgid  "Load"
@@ -4324,12 +4328,8 @@ msgid  "Not using ODF 1.2 Extended may cause infomation to be lost."
 msgstr "Nepoužívanie formátu ODF 1.2 Rozšírené môže spôsobiť stratu informácií."
 
 #: source/options/optsave.src#RID_SVXDLG_FILTER_WARNING.FT_FILTER_WARNING.FixedText.Text
-msgid  "Using "%1" as default file format may cause information loss.\n"
-msgstr ""
-
-#: source/options/optsave.src#TEXT_SAVEPAGE.#define.Text
-msgid  "Save"
-msgstr "Uložiť"
+msgid  "Using \"%1\" as default file format may cause information loss.\n"
+msgstr "Použitie \"%1\" ako východzieho formátu súborov môže spôsobiť stratu informácií.\n"
 
 #: source/options/optimprove.src#RID_SVXPAGE_IMPROVEMENT.TabPage.Text
 msgid  "%PRODUCTNAME Improvement Program"
@@ -4341,11 +4341,11 @@ msgstr "Program zlepšovania"
 
 #: source/options/optimprove.src#RID_SVXPAGE_IMPROVEMENT.FT_INVITATION.FixedText.Text
 msgid  "We invite you to join our %PRODUCTNAME Improvement Program to help optimize the quality of %PRODUCTNAME.\n\nIf you are willing to participate, we will collect anonymous statistics about how you use %PRODUCTNAME. The data is used to identify usage patterns.\n\nThe %PRODUCTNAME Improvement Program will not collect any personal data, or document content."
-msgstr ""
+msgstr "Pozývame vás pripojiť sa k nášmu programu zlepšovania %PRODUCTNAME, aby ste nám pomohli optimalizovať kvalitu %PRODUCTNAME.\n\nAk súhlasíte s participáciou, budeme zbierať anonymnú štatistiku o tom, ako používate %PRODUCTNAME. Tieto dáta sú používané na identifikáciu používateľských zvyklostí.\n\nProgram zlepšovania %PRODUCTNAME nebude zbierať žiadne osobné dáta alebo obsah dokumentov."
 
 #: source/options/optimprove.src#RID_SVXPAGE_IMPROVEMENT.RB_YES.RadioButton.Text
 msgid  "~Yes, I am willing to participate in the %PRODUCTNAME Improvement Program"
-msgstr ""
+msgstr "Áno, chcem part~icipovať na programe zlepšovania %PRODUCTNAME"
 
 #: source/options/optimprove.src#RID_SVXPAGE_IMPROVEMENT.RB_NO.RadioButton.Text
 msgid  "~No, I do not wish to participate"
@@ -4457,7 +4457,7 @@ msgstr "Upraviť cesty: %1"
 
 #: source/options/optpath.src#RID_SVXERR_OPT_DOUBLEPATHS.ErrorBox.Message
 msgid  "The configuration and mail directories must be specified as separate directories.\nPlease choose a new path."
-msgstr ""
+msgstr "Konfiguračný a poštový adresár musia byť určené ako rozdielne adresáre.\nProsím zadajte novú cestu."
 
 #: source/options/optpath.src#RID_SVXSTR_KEY_CONFIG_DIR.String.Text
 msgid  "Configuration"
@@ -4648,8 +4648,8 @@ msgid  "Document status"
 msgstr "Stav dokumentu"
 
 #: source/options/optgdlg.src#OFA_TP_MISC.CB_DOCSTATUS.CheckBox.Text
-msgid  "~Printing sets "document modified" status"
-msgstr ""
+msgid  "~Printing sets \"document modified\" status"
+msgstr "~Tlač zmení stav dokumentu na \"zmenený\""
 
 #: source/options/optgdlg.src#OFA_TP_MISC.FL_TWOFIGURE.FixedLine.Text
 msgid  "Year (two digits)"
@@ -4885,7 +4885,7 @@ msgstr "Zobraz~iť prvky rozhrania pre obojsmerné písanie"
 
 #: source/options/optgdlg.src#RID_SVX_MSGBOX_LANGUAGE_RESTART.InfoBox.Message
 msgid  "The language setting of the user interface has been updated and will take effect the next time you start %PRODUCTNAME %PRODUCTVERSION"
-msgstr ""
+msgstr "Bolo zmenené nastavenie jazyka pre používateľské rozhranie. Táto zmena sa prejaví pri najbližšom štarte %PRODUCTNAME %PRODUCTVERSION"
 
 #: source/options/optspell.src#RID_SFXPAGE_SPELL.TabPage.Text
 msgid  "Spellcheck"
@@ -5033,7 +5033,7 @@ msgstr "~Zatvoriť"
 
 #: source/options/optdict.src#RID_SVXSTR_OPT_DOUBLE_DICTS.String.Text
 msgid  "The specified name already exists.\nPlease enter a new name."
-msgstr ""
+msgstr "Uvedené meno už existuje.\nProsím zadajte nové meno."
 
 #: source/options/optdict.src#RID_SFXQB_SET_LANGUAGE.QueryBox.Message
 msgid  "Do you want to change the '%1' dictionary language?"
@@ -5365,7 +5365,7 @@ msgstr "Bezpečnostné varovania"
 
 #: source/options/securityoptions.src#RID_SVXDLG_SECURITY_OPTIONS.FI_WARNINGS.FixedText.Text
 msgid  "Warn if document contains recorded changes, versions, hidden information or notes:"
-msgstr ""
+msgstr "Upozorniť v prípade že dokument obsahuje zaznamenané zmeny, verzie, skryté informácie alebo poznámky:"
 
 #: source/options/securityoptions.src#RID_SVXDLG_SECURITY_OPTIONS.CB_SAVESENDDOCS.CheckBox.Text
 msgid  "When saving or sending"
@@ -5612,6 +5612,26 @@ msgid  "Ty~pe"
 msgstr "Ty~p"
 
 #: source/tabpages/tabarea.src#RID_SVXPAGE_TRANSPARENCE.LB_TRGR_GRADIENT_TYPES.Default.StringList.item
+msgid  "Linear"
+msgstr "Lineárny"
+
+#: source/tabpages/tabarea.src#RID_SVXPAGE_TRANSPARENCE.LB_TRGR_GRADIENT_TYPES.Default.StringList.item
+msgid  "Axial"
+msgstr "Osový"
+
+#: source/tabpages/tabarea.src#RID_SVXPAGE_TRANSPARENCE.LB_TRGR_GRADIENT_TYPES.Default.StringList.item
+msgid  "Radial"
+msgstr "Radiálny"
+
+#: source/tabpages/tabarea.src#RID_SVXPAGE_TRANSPARENCE.LB_TRGR_GRADIENT_TYPES.Default.StringList.item
+msgid  "Ellipsoid"
+msgstr "Oválny"
+
+#: source/tabpages/tabarea.src#RID_SVXPAGE_TRANSPARENCE.LB_TRGR_GRADIENT_TYPES.Default.StringList.item
+msgid  "Quadratic"
+msgstr "Kvadratický"
+
+#: source/tabpages/tabarea.src#RID_SVXPAGE_TRANSPARENCE.LB_TRGR_GRADIENT_TYPES.Default.StringList.item
 msgid  "Square"
 msgstr "Štvorec"
 
@@ -5654,6 +5674,22 @@ msgstr "Oblasť"
 #: source/tabpages/tabarea.src#RID_SVXPAGE_AREA.FL_PROP.FixedLine.Text
 msgid  "Fill"
 msgstr "Vyplnenie"
+
+#: source/tabpages/tabarea.src#RID_SVXPAGE_AREA.LB_AREA_TYPE.Default.StringList.item
+msgid  "None"
+msgstr "Žiadne"
+
+#: source/tabpages/tabarea.src#RID_SVXPAGE_AREA.LB_AREA_TYPE.Default.StringList.item
+msgid  "Color"
+msgstr "Farba"
+
+#: source/tabpages/tabarea.src#RID_SVXPAGE_AREA.LB_AREA_TYPE.Default.StringList.item
+msgid  "Gradient"
+msgstr "Prechod"
+
+#: source/tabpages/tabarea.src#RID_SVXPAGE_AREA.LB_AREA_TYPE.Default.StringList.item
+msgid  "Hatching"
+msgstr "Šrafovanie"
 
 #: source/tabpages/tabarea.src#RID_SVXPAGE_AREA.LB_AREA_TYPE.Default.StringList.item
 msgid  "Bitmap"
@@ -5776,6 +5812,14 @@ msgid  "~Line type"
 msgstr "~Typ čiary"
 
 #: source/tabpages/tabarea.src#RID_SVXPAGE_HATCH.LB_LINE_TYPE.Default.StringList.item
+msgid  "Single"
+msgstr "Jednoduché"
+
+#: source/tabpages/tabarea.src#RID_SVXPAGE_HATCH.LB_LINE_TYPE.Default.StringList.item
+msgid  "Crossed"
+msgstr "Skrížené"
+
+#: source/tabpages/tabarea.src#RID_SVXPAGE_HATCH.LB_LINE_TYPE.Default.StringList.item
 msgid  "Triple"
 msgstr "Trojité"
 
@@ -5864,6 +5908,26 @@ msgid  "Ty~pe"
 msgstr "Ty~p"
 
 #: source/tabpages/tabarea.src#RID_SVXPAGE_GRADIENT.LB_GRADIENT_TYPES.Default.StringList.item
+msgid  "Linear"
+msgstr "Lineárny"
+
+#: source/tabpages/tabarea.src#RID_SVXPAGE_GRADIENT.LB_GRADIENT_TYPES.Default.StringList.item
+msgid  "Axial"
+msgstr "Osový"
+
+#: source/tabpages/tabarea.src#RID_SVXPAGE_GRADIENT.LB_GRADIENT_TYPES.Default.StringList.item
+msgid  "Radial"
+msgstr "Radiálny"
+
+#: source/tabpages/tabarea.src#RID_SVXPAGE_GRADIENT.LB_GRADIENT_TYPES.Default.StringList.item
+msgid  "Ellipsoid"
+msgstr "Oválny"
+
+#: source/tabpages/tabarea.src#RID_SVXPAGE_GRADIENT.LB_GRADIENT_TYPES.Default.StringList.item
+msgid  "Square"
+msgstr "Štvorec"
+
+#: source/tabpages/tabarea.src#RID_SVXPAGE_GRADIENT.LB_GRADIENT_TYPES.Default.StringList.item
 msgid  "Rectangular"
 msgstr "Pravouhlé"
 
@@ -5936,6 +6000,10 @@ msgid  "Color table"
 msgstr "Tabuľka farieb"
 
 #: source/tabpages/tabarea.src#RID_SVXPAGE_COLOR.LB_COLORMODEL.Default.StringList.item
+msgid  "RGB"
+msgstr "RGB"
+
+#: source/tabpages/tabarea.src#RID_SVXPAGE_COLOR.LB_COLORMODEL.Default.StringList.item
 msgid  "CMYK"
 msgstr "CMYK"
 
@@ -6002,74 +6070,6 @@ msgstr "Štýl šrafovania"
 #: source/tabpages/tabarea.src#STR_CUI_COLORMODEL.String.Text
 msgid  "Color Mode"
 msgstr "Režim farieb"
-
-#: source/tabpages/tabarea.src#RID_SVXPAGE_TRANSPARENCE.LB_TRGR_GRADIENT_TYPES.Default.StringList.item
-msgid  "Linear"
-msgstr "Lineárny"
-
-#: source/tabpages/tabarea.src#RID_SVXPAGE_TRANSPARENCE.LB_TRGR_GRADIENT_TYPES.Default.StringList.item
-msgid  "Axial"
-msgstr "Osový"
-
-#: source/tabpages/tabarea.src#RID_SVXPAGE_TRANSPARENCE.LB_TRGR_GRADIENT_TYPES.Default.StringList.item
-msgid  "Radial"
-msgstr "Radiálny"
-
-#: source/tabpages/tabarea.src#RID_SVXPAGE_TRANSPARENCE.LB_TRGR_GRADIENT_TYPES.Default.StringList.item
-msgid  "Ellipsoid"
-msgstr "Oválny"
-
-#: source/tabpages/tabarea.src#RID_SVXPAGE_TRANSPARENCE.LB_TRGR_GRADIENT_TYPES.Default.StringList.item
-msgid  "Quadratic"
-msgstr "Kvadratický"
-
-#: source/tabpages/tabarea.src#RID_SVXPAGE_AREA.LB_AREA_TYPE.Default.StringList.item
-msgid  "None"
-msgstr "Žiadne"
-
-#: source/tabpages/tabarea.src#RID_SVXPAGE_AREA.LB_AREA_TYPE.Default.StringList.item
-msgid  "Color"
-msgstr "Farba"
-
-#: source/tabpages/tabarea.src#RID_SVXPAGE_AREA.LB_AREA_TYPE.Default.StringList.item
-msgid  "Gradient"
-msgstr "Prechod"
-
-#: source/tabpages/tabarea.src#RID_SVXPAGE_AREA.LB_AREA_TYPE.Default.StringList.item
-msgid  "Hatching"
-msgstr "Šrafovanie"
-
-#: source/tabpages/tabarea.src#RID_SVXPAGE_HATCH.LB_LINE_TYPE.Default.StringList.item
-msgid  "Single"
-msgstr "Jednoduché"
-
-#: source/tabpages/tabarea.src#RID_SVXPAGE_HATCH.LB_LINE_TYPE.Default.StringList.item
-msgid  "Crossed"
-msgstr "Skrížené"
-
-#: source/tabpages/tabarea.src#RID_SVXPAGE_GRADIENT.LB_GRADIENT_TYPES.Default.StringList.item
-msgid  "Linear"
-msgstr "Lineárny"
-
-#: source/tabpages/tabarea.src#RID_SVXPAGE_GRADIENT.LB_GRADIENT_TYPES.Default.StringList.item
-msgid  "Axial"
-msgstr "Osový"
-
-#: source/tabpages/tabarea.src#RID_SVXPAGE_GRADIENT.LB_GRADIENT_TYPES.Default.StringList.item
-msgid  "Radial"
-msgstr "Radiálny"
-
-#: source/tabpages/tabarea.src#RID_SVXPAGE_GRADIENT.LB_GRADIENT_TYPES.Default.StringList.item
-msgid  "Ellipsoid"
-msgstr "Oválny"
-
-#: source/tabpages/tabarea.src#RID_SVXPAGE_GRADIENT.LB_GRADIENT_TYPES.Default.StringList.item
-msgid  "Square"
-msgstr "Štvorec"
-
-#: source/tabpages/tabarea.src#RID_SVXPAGE_COLOR.LB_COLORMODEL.Default.StringList.item
-msgid  "RGB"
-msgstr "RGB"
 
 #: source/tabpages/frmdirlbox.src#RID_SVXSTR_FRAMEDIR_LTR.String.Text
 msgid  "Left-to-right"
@@ -6164,12 +6164,44 @@ msgid  "Page layout"
 msgstr "Vzhľad strany"
 
 #: source/tabpages/page.src#RID_SVXPAGE_PAGE.LB_LAYOUT.Default.StringList.item
+msgid  "Right and left"
+msgstr "Vpravo a vľavo"
+
+#: source/tabpages/page.src#RID_SVXPAGE_PAGE.LB_LAYOUT.Default.StringList.item
+msgid  "Mirrored"
+msgstr "Zrkadliť"
+
+#: source/tabpages/page.src#RID_SVXPAGE_PAGE.LB_LAYOUT.Default.StringList.item
+msgid  "Only right"
+msgstr "Iba vpravo"
+
+#: source/tabpages/page.src#RID_SVXPAGE_PAGE.LB_LAYOUT.Default.StringList.item
 msgid  "Only left"
 msgstr "Iba vľavo"
 
 #: source/tabpages/page.src#RID_SVXPAGE_PAGE.FT_NUMBER_FORMAT.FixedText.Text
 msgid  "For~mat"
 msgstr "For~mát"
+
+#: source/tabpages/page.src#RID_SVXPAGE_PAGE.LB_NUMBER_FORMAT.Default.StringList.item
+msgid  "A, B, C, ..."
+msgstr "A, B, C, ..."
+
+#: source/tabpages/page.src#RID_SVXPAGE_PAGE.LB_NUMBER_FORMAT.Default.StringList.item
+msgid  "a, b, c, ..."
+msgstr "a, b, c, ..."
+
+#: source/tabpages/page.src#RID_SVXPAGE_PAGE.LB_NUMBER_FORMAT.Default.StringList.item
+msgid  "I, II, III, ..."
+msgstr "I, II, III, ..."
+
+#: source/tabpages/page.src#RID_SVXPAGE_PAGE.LB_NUMBER_FORMAT.Default.StringList.item
+msgid  "i, ii, iii, ..."
+msgstr "i, ii, iii, ..."
+
+#: source/tabpages/page.src#RID_SVXPAGE_PAGE.LB_NUMBER_FORMAT.Default.StringList.item
+msgid  "1, 2, 3, ..."
+msgstr "1, 2, 3, ..."
 
 #: source/tabpages/page.src#RID_SVXPAGE_PAGE.LB_NUMBER_FORMAT.Default.StringList.item
 msgid  "None"
@@ -6209,7 +6241,7 @@ msgstr "V~onkajšie"
 
 #: source/tabpages/page.src#RID_SVXPAGE_PAGE.STR_QUERY_PRINTRANGE.String.Text
 msgid  "The margin settings are out of print range.\n\nDo you still want to apply these settings?"
-msgstr ""
+msgstr "Nastavené okraje sú mimo rozsahu tlače.\n\nUrčite chcete použiť tieto nastavenia?"
 
 #: source/tabpages/page.src#RID_SVXSTRARY_PAPERSIZE_STD.PAPERSIZE_A6.ItemList.item
 msgid  "A6"
@@ -6269,11 +6301,11 @@ msgstr "B4 (JIS)"
 
 #: source/tabpages/page.src#RID_SVXSTRARY_PAPERSIZE_STD.PAPERSIZE_KAI16.ItemList.item
 msgid  "16 Kai"
-msgstr "16 Kai"
+msgstr "16 kai"
 
 #: source/tabpages/page.src#RID_SVXSTRARY_PAPERSIZE_STD.PAPERSIZE_KAI32.ItemList.item
 msgid  "32 Kai"
-msgstr "32 Kai"
+msgstr "16 kai"
 
 #: source/tabpages/page.src#RID_SVXSTRARY_PAPERSIZE_STD.PAPERSIZE_KAI32BIG.ItemList.item
 msgid  "Big 32 Kai"
@@ -6439,38 +6471,6 @@ msgstr "Diapozitív"
 msgid  "Screen"
 msgstr "Obrazovka"
 
-#: source/tabpages/page.src#RID_SVXPAGE_PAGE.LB_LAYOUT.Default.StringList.item
-msgid  "Right and left"
-msgstr "Vpravo a vľavo"
-
-#: source/tabpages/page.src#RID_SVXPAGE_PAGE.LB_LAYOUT.Default.StringList.item
-msgid  "Mirrored"
-msgstr "Zrkadliť"
-
-#: source/tabpages/page.src#RID_SVXPAGE_PAGE.LB_LAYOUT.Default.StringList.item
-msgid  "Only right"
-msgstr "Iba vpravo"
-
-#: source/tabpages/page.src#RID_SVXPAGE_PAGE.LB_NUMBER_FORMAT.Default.StringList.item
-msgid  "A, B, C, ..."
-msgstr "A, B, C, ..."
-
-#: source/tabpages/page.src#RID_SVXPAGE_PAGE.LB_NUMBER_FORMAT.Default.StringList.item
-msgid  "a, b, c, ..."
-msgstr "a, b, c, ..."
-
-#: source/tabpages/page.src#RID_SVXPAGE_PAGE.LB_NUMBER_FORMAT.Default.StringList.item
-msgid  "I, II, III, ..."
-msgstr "I, II, III, ..."
-
-#: source/tabpages/page.src#RID_SVXPAGE_PAGE.LB_NUMBER_FORMAT.Default.StringList.item
-msgid  "i, ii, iii, ..."
-msgstr "i, ii, iii, ..."
-
-#: source/tabpages/page.src#RID_SVXPAGE_PAGE.LB_NUMBER_FORMAT.Default.StringList.item
-msgid  "1, 2, 3, ..."
-msgstr "1, 2, 3, ..."
-
 #: source/tabpages/numfmt.src#RID_SVXPAGE_NUMBERFORMAT.TabPage.Text
 msgid  "Number Format"
 msgstr "Formát čísla"
@@ -6478,6 +6478,46 @@ msgstr "Formát čísla"
 #: source/tabpages/numfmt.src#RID_SVXPAGE_NUMBERFORMAT.FT_CATEGORY.FixedText.Text
 msgid  "~Category"
 msgstr "~Kategória"
+
+#: source/tabpages/numfmt.src#RID_SVXPAGE_NUMBERFORMAT.LB_CATEGORY.Default.StringList.item
+msgid  "All"
+msgstr "Všetko"
+
+#: source/tabpages/numfmt.src#RID_SVXPAGE_NUMBERFORMAT.LB_CATEGORY.Default.StringList.item
+msgid  "User-defined"
+msgstr "Definované používateľom"
+
+#: source/tabpages/numfmt.src#RID_SVXPAGE_NUMBERFORMAT.LB_CATEGORY.Default.StringList.item
+msgid  "Number"
+msgstr "Číslo"
+
+#: source/tabpages/numfmt.src#RID_SVXPAGE_NUMBERFORMAT.LB_CATEGORY.Default.StringList.item
+msgid  "Percent"
+msgstr "Percento"
+
+#: source/tabpages/numfmt.src#RID_SVXPAGE_NUMBERFORMAT.LB_CATEGORY.Default.StringList.item
+msgid  "Currency"
+msgstr "Mena"
+
+#: source/tabpages/numfmt.src#RID_SVXPAGE_NUMBERFORMAT.LB_CATEGORY.Default.StringList.item
+msgid  "Date"
+msgstr "Dátum"
+
+#: source/tabpages/numfmt.src#RID_SVXPAGE_NUMBERFORMAT.LB_CATEGORY.Default.StringList.item
+msgid  "Time"
+msgstr "Čas"
+
+#: source/tabpages/numfmt.src#RID_SVXPAGE_NUMBERFORMAT.LB_CATEGORY.Default.StringList.item
+msgid  "Scientific"
+msgstr "Vedecká"
+
+#: source/tabpages/numfmt.src#RID_SVXPAGE_NUMBERFORMAT.LB_CATEGORY.Default.StringList.item
+msgid  "Fraction"
+msgstr "Zlomok"
+
+#: source/tabpages/numfmt.src#RID_SVXPAGE_NUMBERFORMAT.LB_CATEGORY.Default.StringList.item
+msgid  "Boolean Value"
+msgstr "Booleovská hodnota"
 
 #: source/tabpages/numfmt.src#RID_SVXPAGE_NUMBERFORMAT.LB_CATEGORY.Default.StringList.item
 msgid  "Text"
@@ -6538,46 +6578,6 @@ msgstr "Upraviť poznámku"
 #: source/tabpages/numfmt.src#RID_SVXPAGE_NUMBERFORMAT.STR_AUTO_ENTRY.String.Text
 msgid  "Automatic"
 msgstr "Automaticky"
-
-#: source/tabpages/numfmt.src#RID_SVXPAGE_NUMBERFORMAT.LB_CATEGORY.Default.StringList.item
-msgid  "All"
-msgstr "Všetko"
-
-#: source/tabpages/numfmt.src#RID_SVXPAGE_NUMBERFORMAT.LB_CATEGORY.Default.StringList.item
-msgid  "User-defined"
-msgstr "Definované používateľom"
-
-#: source/tabpages/numfmt.src#RID_SVXPAGE_NUMBERFORMAT.LB_CATEGORY.Default.StringList.item
-msgid  "Number"
-msgstr "Číslo"
-
-#: source/tabpages/numfmt.src#RID_SVXPAGE_NUMBERFORMAT.LB_CATEGORY.Default.StringList.item
-msgid  "Percent"
-msgstr "Percento"
-
-#: source/tabpages/numfmt.src#RID_SVXPAGE_NUMBERFORMAT.LB_CATEGORY.Default.StringList.item
-msgid  "Currency"
-msgstr "Mena"
-
-#: source/tabpages/numfmt.src#RID_SVXPAGE_NUMBERFORMAT.LB_CATEGORY.Default.StringList.item
-msgid  "Date"
-msgstr "Dátum"
-
-#: source/tabpages/numfmt.src#RID_SVXPAGE_NUMBERFORMAT.LB_CATEGORY.Default.StringList.item
-msgid  "Time"
-msgstr "Čas"
-
-#: source/tabpages/numfmt.src#RID_SVXPAGE_NUMBERFORMAT.LB_CATEGORY.Default.StringList.item
-msgid  "Scientific"
-msgstr "Vedecká"
-
-#: source/tabpages/numfmt.src#RID_SVXPAGE_NUMBERFORMAT.LB_CATEGORY.Default.StringList.item
-msgid  "Fraction"
-msgstr "Zlomok"
-
-#: source/tabpages/numfmt.src#RID_SVXPAGE_NUMBERFORMAT.LB_CATEGORY.Default.StringList.item
-msgid  "Boolean Value"
-msgstr "Booleovská hodnota"
 
 #: source/tabpages/numpages.src#RID_SVXPAGE_PICK_BULLET.FL_VALUES.FixedLine.Text
 msgid  "Selection"
@@ -6979,6 +6979,10 @@ msgstr "Rozostu~py"
 msgid  "~Bottom"
 msgstr "~Dole"
 
+#: source/tabpages/backgrnd.src#UNLINKED_IMAGE.#define.Text
+msgid  "Unlinked graphic"
+msgstr "Obrázok bez odkazu"
+
 #: source/tabpages/backgrnd.src#RID_SVXPAGE_BACKGROUND.TabPage.Text
 msgid  "Background"
 msgstr "Pozadie"
@@ -6986,6 +6990,10 @@ msgstr "Pozadie"
 #: source/tabpages/backgrnd.src#RID_SVXPAGE_BACKGROUND.FT_SELECTOR.FixedText.Text
 msgid  "A~s"
 msgstr "A~ko"
+
+#: source/tabpages/backgrnd.src#RID_SVXPAGE_BACKGROUND.LB_SELECTOR.Default.StringList.item
+msgid  "Color"
+msgstr "Farba"
 
 #: source/tabpages/backgrnd.src#RID_SVXPAGE_BACKGROUND.LB_SELECTOR.Default.StringList.item
 msgid  "Graphic"
@@ -7063,14 +7071,6 @@ msgstr "~Náhľad"
 msgid  "Find graphics"
 msgstr "Hľadať obrázok"
 
-#: source/tabpages/backgrnd.src#UNLINKED_IMAGE.#define.Text
-msgid  "Unlinked graphic"
-msgstr "Obrázok bez odkazu"
-
-#: source/tabpages/backgrnd.src#RID_SVXPAGE_BACKGROUND.LB_SELECTOR.Default.StringList.item
-msgid  "Color"
-msgstr "Farba"
-
 #: source/tabpages/macroass.src#RID_SVXPAGE_EVENTASSIGN.TabPage.Text
 msgid  "Assign Macro"
 msgstr "Priradiť makro"
@@ -7129,7 +7129,7 @@ msgstr "Dokončovanie slov"
 
 #: source/tabpages/autocdlg.src#RID_OFA_AUTOCORR_DLG.1.RID_OFAPAGE_SMARTTAG_OPTIONS.PageItem.Text
 msgid  "Smart Tags"
-msgstr "Smart Tags"
+msgstr "Inteligentné značky"
 
 #: source/tabpages/autocdlg.src#RID_OFA_AUTOCORR_DLG.FT_LANG.FixedText.Text
 msgid  "Replacements and exceptions for language:"
@@ -7421,7 +7421,7 @@ msgstr "Zhr~omažďovať návrhy"
 
 #: source/tabpages/autocdlg.src#RID_OFAPAGE_AUTOCOMPLETE_OPTIONS.CB_REMOVE_LIST.CheckBox.Text
 msgid  "~When closing a document, remove the words collected from it from the list"
-msgstr ""
+msgstr "~Pri zatváraní dokumentu, odstrániť slová zo zoznamu, ktoré boli zozbierané z daného dokumentu"
 
 #: source/tabpages/autocdlg.src#RID_OFAPAGE_AUTOCOMPLETE_OPTIONS.FT_EXPAND_KEY.FixedText.Text
 msgid  "Acc~ept with"
@@ -7469,7 +7469,7 @@ msgstr "Určite chcete zmazať farebný prechod?"
 
 #: source/tabpages/strings.src#RID_SVXSTR_ASK_CHANGE_GRADIENT.String.Text
 msgid  "The gradient was modified without saving. \nModify the selected gradient or add a new gradient."
-msgstr ""
+msgstr "Prechod bol zmenený bez uloženia. \nZmente zvolený prechod alebo pridajte nový."
 
 #: source/tabpages/strings.src#RID_SVXSTR_DESC_NEW_BITMAP.String.Text
 msgid  "Please enter a name for the bitmap:"
@@ -7485,7 +7485,7 @@ msgstr "Určite chcete zmazať bitmapu?"
 
 #: source/tabpages/strings.src#RID_SVXSTR_ASK_CHANGE_BITMAP.String.Text
 msgid  "The bitmap was modified without saving. \nModify the selected bitmap or add a new bitmap."
-msgstr ""
+msgstr "Bitmapa bola zmenená bez uloženia. \nZmeňte zvolenú bitmapu alebo pridajte novú."
 
 #: source/tabpages/strings.src#RID_SVXSTR_DESC_LINESTYLE.String.Text
 msgid  "Please enter a name for the line style:"
@@ -7497,7 +7497,7 @@ msgstr "Určite chcete vymazať štýl čiary?"
 
 #: source/tabpages/strings.src#RID_SVXSTR_ASK_CHANGE_LINESTYLE.String.Text
 msgid  "The line style was modified without saving. \nModify the selected line style or add a new line style."
-msgstr ""
+msgstr "Štýl čiary bol zmenený bez uloženia. \nZmeňte zvolený štýl čiary alebo pridajte nový."
 
 #: source/tabpages/strings.src#RID_SVXSTR_DESC_HATCH.String.Text
 msgid  "Please enter a name for the hatching:"
@@ -7509,7 +7509,7 @@ msgstr "Chcete zmazať šrafovanie?"
 
 #: source/tabpages/strings.src#RID_SVXSTR_ASK_CHANGE_HATCH.String.Text
 msgid  "The hatching type was modified but not saved. \nModify the selected hatching type or add a new hatching type."
-msgstr ""
+msgstr "Šrafovanie bolo zmenené bez uloženia. \nZmente zvolené šrafovanie alebo pridajte nové."
 
 #: source/tabpages/strings.src#RID_SVXSTR_CHANGE.String.Text
 msgid  "Modify"
@@ -7529,7 +7529,7 @@ msgstr "Chcete zmazať farbu?"
 
 #: source/tabpages/strings.src#RID_SVXSTR_ASK_CHANGE_COLOR.String.Text
 msgid  "The color was modified without saving.\nModify the selected color or add a new color."
-msgstr ""
+msgstr "Farba bola zmenená bez uloženia.\nZmeňte zvolenú farbu alebo pridajte novú."
 
 #: source/tabpages/strings.src#RID_SVXSTR_TABLE.String.Text
 msgid  "Table"
@@ -7545,11 +7545,11 @@ msgstr "Súbor nemohol byť načítaný!"
 
 #: source/tabpages/strings.src#RID_SVXSTR_WARN_TABLE_OVERWRITE.String.Text
 msgid  "The list was modified without saving. Would you like to save the list now?"
-msgstr ""
+msgstr "Zoznam bol zmenený bez uloženia. Želáte si zoznam teraz uložiť?"
 
 #: source/tabpages/strings.src#RID_SVXSTR_WARN_NAME_DUPLICATE.String.Text
 msgid  "The name you have entered already exists. \nPlease choose another name."
-msgstr ""
+msgstr "Uvedený názov už existuje. \nProsím zvoľte iný."
 
 #: source/tabpages/strings.src#RID_SVXSTR_DESC_LINEEND.String.Text
 msgid  "Please enter a name for the new arrowhead:"
@@ -7561,7 +7561,7 @@ msgstr "Chcete zmazať šípku?"
 
 #: source/tabpages/strings.src#RID_SVXSTR_ASK_CHANGE_LINEEND.String.Text
 msgid  "The arrowhead was modified without saving.\nWould you like to save the arrowhead now?"
-msgstr ""
+msgstr "Šípka bola zmenená bez uloženia.\nChcete uložiť šípku?"
 
 #: source/tabpages/paragrph.src#RID_SVXPAGE_STD_PARAGRAPH.TabPage.Text
 msgid  "Indents and Spacing"
@@ -7598,6 +7598,26 @@ msgstr "Pod odsekom"
 #: source/tabpages/paragrph.src#RID_SVXPAGE_STD_PARAGRAPH.FL_DIST.FixedLine.Text
 msgid  "Spacing"
 msgstr "Rozostupy"
+
+#: source/tabpages/paragrph.src#RID_SVXPAGE_STD_PARAGRAPH.LB_LINEDIST.Default.StringList.item
+msgid  "Single"
+msgstr "Jednoduché"
+
+#: source/tabpages/paragrph.src#RID_SVXPAGE_STD_PARAGRAPH.LB_LINEDIST.Default.StringList.item
+msgid  "1.5 lines"
+msgstr "1,5 riadku"
+
+#: source/tabpages/paragrph.src#RID_SVXPAGE_STD_PARAGRAPH.LB_LINEDIST.Default.StringList.item
+msgid  "Double"
+msgstr "Dvojité"
+
+#: source/tabpages/paragrph.src#RID_SVXPAGE_STD_PARAGRAPH.LB_LINEDIST.Default.StringList.item
+msgid  "Proportional"
+msgstr "Vlastné, medzi polovičným a dvojitým"
+
+#: source/tabpages/paragrph.src#RID_SVXPAGE_STD_PARAGRAPH.LB_LINEDIST.Default.StringList.item
+msgid  "At least"
+msgstr "Vzdialenosť riadkov aspoň"
 
 #: source/tabpages/paragrph.src#RID_SVXPAGE_STD_PARAGRAPH.LB_LINEDIST.Default.StringList.item
 msgid  "Leading"
@@ -7658,6 +7678,18 @@ msgstr "Vp~ravo/Dole"
 #: source/tabpages/paragrph.src#RID_SVXPAGE_ALIGN_PARAGRAPH.FT_LASTLINE.FixedText.Text
 msgid  "~Last line"
 msgstr "Pos~ledný riadok"
+
+#: source/tabpages/paragrph.src#RID_SVXPAGE_ALIGN_PARAGRAPH.LB_LASTLINE.Default.StringList.item
+msgid  "Default"
+msgstr "Východzie"
+
+#: source/tabpages/paragrph.src#RID_SVXPAGE_ALIGN_PARAGRAPH.LB_LASTLINE.Default.StringList.item
+msgid  "Left"
+msgstr "Vľavo"
+
+#: source/tabpages/paragrph.src#RID_SVXPAGE_ALIGN_PARAGRAPH.LB_LASTLINE.Default.StringList.item
+msgid  "Centered"
+msgstr "Na stred"
 
 #: source/tabpages/paragrph.src#RID_SVXPAGE_ALIGN_PARAGRAPH.LB_LASTLINE.Default.StringList.item
 msgid  "Justified"
@@ -7827,38 +7859,6 @@ msgstr "Príklad"
 msgid  "Page Style"
 msgstr "Štýl strany"
 
-#: source/tabpages/paragrph.src#RID_SVXPAGE_STD_PARAGRAPH.LB_LINEDIST.Default.StringList.item
-msgid  "Single"
-msgstr "Jednoduché"
-
-#: source/tabpages/paragrph.src#RID_SVXPAGE_STD_PARAGRAPH.LB_LINEDIST.Default.StringList.item
-msgid  "1.5 lines"
-msgstr "1,5 riadku"
-
-#: source/tabpages/paragrph.src#RID_SVXPAGE_STD_PARAGRAPH.LB_LINEDIST.Default.StringList.item
-msgid  "Double"
-msgstr "Dvojité"
-
-#: source/tabpages/paragrph.src#RID_SVXPAGE_STD_PARAGRAPH.LB_LINEDIST.Default.StringList.item
-msgid  "Proportional"
-msgstr "Vlastné, medzi polovičným a dvojitým"
-
-#: source/tabpages/paragrph.src#RID_SVXPAGE_STD_PARAGRAPH.LB_LINEDIST.Default.StringList.item
-msgid  "At least"
-msgstr "Vzdialenosť riadkov aspoň"
-
-#: source/tabpages/paragrph.src#RID_SVXPAGE_ALIGN_PARAGRAPH.LB_LASTLINE.Default.StringList.item
-msgid  "Default"
-msgstr "Východzie"
-
-#: source/tabpages/paragrph.src#RID_SVXPAGE_ALIGN_PARAGRAPH.LB_LASTLINE.Default.StringList.item
-msgid  "Left"
-msgstr "Vľavo"
-
-#: source/tabpages/paragrph.src#RID_SVXPAGE_ALIGN_PARAGRAPH.LB_LASTLINE.Default.StringList.item
-msgid  "Centered"
-msgstr "Na stred"
-
 #: source/tabpages/textanim.src#RID_SVXPAGE_TEXTANIMATION.TabPage.Text
 msgid  "Animation"
 msgstr "Animácia"
@@ -7870,6 +7870,22 @@ msgstr "Efekty animácie textu"
 #: source/tabpages/textanim.src#RID_SVXPAGE_TEXTANIMATION.FT_EFFECTS.FixedText.Text
 msgid  "E~ffect"
 msgstr "E~fekt"
+
+#: source/tabpages/textanim.src#RID_SVXPAGE_TEXTANIMATION.LB_EFFECT.Default.StringList.item
+msgid  "No Effect"
+msgstr "Bez efektov"
+
+#: source/tabpages/textanim.src#RID_SVXPAGE_TEXTANIMATION.LB_EFFECT.Default.StringList.item
+msgid  "Blink"
+msgstr "Blikať"
+
+#: source/tabpages/textanim.src#RID_SVXPAGE_TEXTANIMATION.LB_EFFECT.Default.StringList.item
+msgid  "Scroll Through"
+msgstr "Rolovať dokola"
+
+#: source/tabpages/textanim.src#RID_SVXPAGE_TEXTANIMATION.LB_EFFECT.Default.StringList.item
+msgid  "Scroll Back and Forth"
+msgstr "Rolovať tam a späť"
 
 #: source/tabpages/textanim.src#RID_SVXPAGE_TEXTANIMATION.LB_EFFECT.Default.StringList.item
 msgid  "Scroll In"
@@ -7942,22 +7958,6 @@ msgstr "Text"
 #: source/tabpages/textanim.src#RID_SVXDLG_TEXT.1.RID_SVXPAGE_TEXTANIMATION.PageItem.Text
 msgid  "Text Animation"
 msgstr "Animácia textu"
-
-#: source/tabpages/textanim.src#RID_SVXPAGE_TEXTANIMATION.LB_EFFECT.Default.StringList.item
-msgid  "No Effect"
-msgstr "Bez efektov"
-
-#: source/tabpages/textanim.src#RID_SVXPAGE_TEXTANIMATION.LB_EFFECT.Default.StringList.item
-msgid  "Blink"
-msgstr "Blikať"
-
-#: source/tabpages/textanim.src#RID_SVXPAGE_TEXTANIMATION.LB_EFFECT.Default.StringList.item
-msgid  "Scroll Through"
-msgstr "Rolovať dokola"
-
-#: source/tabpages/textanim.src#RID_SVXPAGE_TEXTANIMATION.LB_EFFECT.Default.StringList.item
-msgid  "Scroll Back and Forth"
-msgstr "Rolovať tam a späť"
 
 #: source/tabpages/measure.src#RID_SVXPAGE_MEASURE.TabPage.Text
 msgid  "Dimensioning"
@@ -8279,6 +8279,10 @@ msgstr "~Uhol"
 msgid  " degrees"
 msgstr " stupňov"
 
+#: source/tabpages/transfrm.src#_POS_SIZE_TEXT.#define.Text
+msgid  "Position and Size"
+msgstr "Umiestnenie a veľkosť"
+
 #: source/tabpages/transfrm.src#RID_SVXDLG_TRANSFORM.TabDialog.Text
 msgid  "Position and Size"
 msgstr "Umiestnenie a veľkosť"
@@ -8290,10 +8294,6 @@ msgstr "Rotácia"
 #: source/tabpages/transfrm.src#RID_SVXDLG_TRANSFORM.TAB_CONTROL.RID_SVXPAGE_SLANT.PageItem.Text
 msgid  "Slant & Corner Radius"
 msgstr "Skosenie a polomer rohu"
-
-#: source/tabpages/transfrm.src#_POS_SIZE_TEXT.#define.Text
-msgid  "Position and Size"
-msgstr "Umiestnenie a veľkosť"
 
 #: source/tabpages/textattr.src#RID_SVXPAGE_TEXTATTR.TabPage.Text
 msgid  "Text"
@@ -8784,12 +8784,36 @@ msgid  "~Effects"
 msgstr "~Efekty"
 
 #: source/tabpages/chardlg.src#RID_SVXPAGE_CHAR_EFFECTS.LB_EFFECTS2.Default.StringList.item
+msgid  "(Without)"
+msgstr "(Bez)"
+
+#: source/tabpages/chardlg.src#RID_SVXPAGE_CHAR_EFFECTS.LB_EFFECTS2.Default.StringList.item
+msgid  "Capitals"
+msgstr "Veľké písmená"
+
+#: source/tabpages/chardlg.src#RID_SVXPAGE_CHAR_EFFECTS.LB_EFFECTS2.Default.StringList.item
+msgid  "Lowercase"
+msgstr "Malé písmená"
+
+#: source/tabpages/chardlg.src#RID_SVXPAGE_CHAR_EFFECTS.LB_EFFECTS2.Default.StringList.item
+msgid  "Title"
+msgstr "Nadpis"
+
+#: source/tabpages/chardlg.src#RID_SVXPAGE_CHAR_EFFECTS.LB_EFFECTS2.Default.StringList.item
 msgid  "Small capitals"
 msgstr "Malé kapitálky"
 
 #: source/tabpages/chardlg.src#RID_SVXPAGE_CHAR_EFFECTS.FT_RELIEF.FixedText.Text
 msgid  "~Relief"
 msgstr "~Reliéf"
+
+#: source/tabpages/chardlg.src#RID_SVXPAGE_CHAR_EFFECTS.LB_RELIEF.Default.StringList.item
+msgid  "(Without)"
+msgstr "(Bez)"
+
+#: source/tabpages/chardlg.src#RID_SVXPAGE_CHAR_EFFECTS.LB_RELIEF.Default.StringList.item
+msgid  "Embossed"
+msgstr "Reliéf"
 
 #: source/tabpages/chardlg.src#RID_SVXPAGE_CHAR_EFFECTS.LB_RELIEF.Default.StringList.item
 msgid  "Engraved"
@@ -9000,6 +9024,22 @@ msgid  "Emp~hasis mark"
 msgstr "Znak ~zvýraznenia"
 
 #: source/tabpages/chardlg.src#RID_SVXPAGE_CHAR_EFFECTS.LB_EMPHASIS.default.StringList.item
+msgid  "(Without)"
+msgstr "(Bez)"
+
+#: source/tabpages/chardlg.src#RID_SVXPAGE_CHAR_EFFECTS.LB_EMPHASIS.default.StringList.item
+msgid  "Dot"
+msgstr "Bodka"
+
+#: source/tabpages/chardlg.src#RID_SVXPAGE_CHAR_EFFECTS.LB_EMPHASIS.default.StringList.item
+msgid  "Circle"
+msgstr "Kruh"
+
+#: source/tabpages/chardlg.src#RID_SVXPAGE_CHAR_EFFECTS.LB_EMPHASIS.default.StringList.item
+msgid  "Disc"
+msgstr "Disk"
+
+#: source/tabpages/chardlg.src#RID_SVXPAGE_CHAR_EFFECTS.LB_EMPHASIS.default.StringList.item
 msgid  "Accent"
 msgstr "Dôraz"
 
@@ -9112,6 +9152,14 @@ msgid  "Spacing"
 msgstr "Rozostupy"
 
 #: source/tabpages/chardlg.src#RID_SVXPAGE_CHAR_POSITION.LB_KERNING2.Default.StringList.item
+msgid  "Default"
+msgstr "Východzie"
+
+#: source/tabpages/chardlg.src#RID_SVXPAGE_CHAR_POSITION.LB_KERNING2.Default.StringList.item
+msgid  "Expanded"
+msgstr "Rozšírené"
+
+#: source/tabpages/chardlg.src#RID_SVXPAGE_CHAR_POSITION.LB_KERNING2.Default.StringList.item
 msgid  "Condensed"
 msgstr "Zúžené"
 
@@ -9198,54 +9246,6 @@ msgstr "Iné znaky..."
 #: source/tabpages/chardlg.src#RID_SVXPAGE_CHAR_TWOLINES.WIN_TWOLINES_PREVIEW.Window.Text
 msgid  "Example"
 msgstr "Príklad"
-
-#: source/tabpages/chardlg.src#RID_SVXPAGE_CHAR_EFFECTS.LB_EFFECTS2.Default.StringList.item
-msgid  "(Without)"
-msgstr "(Bez)"
-
-#: source/tabpages/chardlg.src#RID_SVXPAGE_CHAR_EFFECTS.LB_EFFECTS2.Default.StringList.item
-msgid  "Capitals"
-msgstr "Veľké písmená"
-
-#: source/tabpages/chardlg.src#RID_SVXPAGE_CHAR_EFFECTS.LB_EFFECTS2.Default.StringList.item
-msgid  "Lowercase"
-msgstr "Malé písmená"
-
-#: source/tabpages/chardlg.src#RID_SVXPAGE_CHAR_EFFECTS.LB_EFFECTS2.Default.StringList.item
-msgid  "Title"
-msgstr "Nadpis"
-
-#: source/tabpages/chardlg.src#RID_SVXPAGE_CHAR_EFFECTS.LB_RELIEF.Default.StringList.item
-msgid  "(Without)"
-msgstr "(Bez)"
-
-#: source/tabpages/chardlg.src#RID_SVXPAGE_CHAR_EFFECTS.LB_RELIEF.Default.StringList.item
-msgid  "Embossed"
-msgstr "Reliéf"
-
-#: source/tabpages/chardlg.src#RID_SVXPAGE_CHAR_EFFECTS.LB_EMPHASIS.default.StringList.item
-msgid  "(Without)"
-msgstr "(Bez)"
-
-#: source/tabpages/chardlg.src#RID_SVXPAGE_CHAR_EFFECTS.LB_EMPHASIS.default.StringList.item
-msgid  "Dot"
-msgstr "Bodka"
-
-#: source/tabpages/chardlg.src#RID_SVXPAGE_CHAR_EFFECTS.LB_EMPHASIS.default.StringList.item
-msgid  "Circle"
-msgstr "Kruh"
-
-#: source/tabpages/chardlg.src#RID_SVXPAGE_CHAR_EFFECTS.LB_EMPHASIS.default.StringList.item
-msgid  "Disc"
-msgstr "Disk"
-
-#: source/tabpages/chardlg.src#RID_SVXPAGE_CHAR_POSITION.LB_KERNING2.Default.StringList.item
-msgid  "Default"
-msgstr "Východzie"
-
-#: source/tabpages/chardlg.src#RID_SVXPAGE_CHAR_POSITION.LB_KERNING2.Default.StringList.item
-msgid  "Expanded"
-msgstr "Rozšírené"
 
 #: source/tabpages/border.src#RID_SVXPAGE_BORDER.TabPage.Text
 msgid  "Borders"
@@ -9436,6 +9436,10 @@ msgid  "Optimal"
 msgstr "Optimálne"
 
 #: source/tabpages/labdlg.src#RID_SVXPAGE_CAPTION.LB_ANSATZ.3.StringList.item
+msgid  "From top"
+msgstr "Zhora"
+
+#: source/tabpages/labdlg.src#RID_SVXPAGE_CAPTION.LB_ANSATZ.3.StringList.item
 msgid  "From left"
 msgstr "Zľava"
 
@@ -9487,6 +9491,10 @@ msgstr "Nahor;Uprostred;Dole"
 msgid  "Left;Middle;Right"
 msgstr "Vľavo;Uprostred;Vpravo"
 
+#: source/tabpages/labdlg.src#_POS_SIZE_TEXT.#define.Text
+msgid  "Position and Size"
+msgstr "Umiestnenie a veľkosť"
+
 #: source/tabpages/labdlg.src#RID_SVXDLG_CAPTION.TabDialog.Text
 msgid  "Callouts"
 msgstr "Bubliny"
@@ -9494,14 +9502,6 @@ msgstr "Bubliny"
 #: source/tabpages/labdlg.src#RID_SVXDLG_CAPTION.TAB_CONTROL.RID_SVXPAGE_CAPTION.PageItem.Text
 msgid  "Callout"
 msgstr "Bublina"
-
-#: source/tabpages/labdlg.src#_POS_SIZE_TEXT.#define.Text
-msgid  "Position and Size"
-msgstr "Umiestnenie a veľkosť"
-
-#: source/tabpages/labdlg.src#RID_SVXPAGE_CAPTION.LB_ANSATZ.3.StringList.item
-msgid  "From top"
-msgstr "Zhora"
 
 #: source/tabpages/tabline.src#RID_SVXPAGE_LINE.TabPage.Text
 msgid  "Lines"
@@ -9672,8 +9672,16 @@ msgid  "~Type"
 msgstr "~Typ"
 
 #: source/tabpages/tabline.src#RID_SVXPAGE_LINE_DEF.LB_TYPE_1.Default.StringList.item
+msgid  "Dot"
+msgstr "Bodka"
+
+#: source/tabpages/tabline.src#RID_SVXPAGE_LINE_DEF.LB_TYPE_1.Default.StringList.item
 msgid  "Dash"
 msgstr "Čiarka"
+
+#: source/tabpages/tabline.src#RID_SVXPAGE_LINE_DEF.LB_TYPE_2.Default.StringList.item
+msgid  "Dot"
+msgstr "Bodka"
 
 #: source/tabpages/tabline.src#RID_SVXPAGE_LINE_DEF.LB_TYPE_2.Default.StringList.item
 msgid  "Dash"
@@ -9802,11 +9810,3 @@ msgstr "Štýly čiar"
 #: source/tabpages/tabline.src#RID_SVXDLG_LINE.TAB_CONTROL.RID_SVXPAGE_LINEEND_DEF.PageItem.Text
 msgid  "Arrow Styles"
 msgstr "Štýly šipiek"
-
-#: source/tabpages/tabline.src#RID_SVXPAGE_LINE_DEF.LB_TYPE_1.Default.StringList.item
-msgid  "Dot"
-msgstr "Bodka"
-
-#: source/tabpages/tabline.src#RID_SVXPAGE_LINE_DEF.LB_TYPE_2.Default.StringList.item
-msgid  "Dot"
-msgstr "Bodka"

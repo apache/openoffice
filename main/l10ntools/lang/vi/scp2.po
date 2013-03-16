@@ -37,11 +37,11 @@ msgstr "Điều khiển ActiveX"
 
 #: source/activex/module_activex.ulf#STR_DESC_MODULE_OPTIONAL_ACTIVEXCONTROL
 msgid  "Component to enable Microsoft Internet Explorer to display %PRODUCTNAME documents."
-msgstr ""
+msgstr "Thành phần hỗ trợ MS Internet Explorer hiển thị tài liệu kiểu %PRODUCTNAME."
 
 #: source/base/folderitem_base.ulf#STR_FI_TOOLTIP_BASE
 msgid  "Manage databases, create queries and reports to track and manage your information by using Base."
-msgstr ""
+msgstr "Quản lý cơ sở dữ liệu, tạo truy vấn và báo cáo để theo dõi và quản lý thông tin bằng Base."
 
 #: source/base/registryitem_base.ulf#STR_REG_VAL_OO_DATABASE
 msgid  "OpenDocument Database"
@@ -121,7 +121,11 @@ msgstr "Bảng tính"
 
 #: source/calc/folderitem_calc.ulf#STR_FI_TOOLTIP_CALC
 msgid  "Perform calculation, analyze information and manage lists in spreadsheets by using Calc."
-msgstr ""
+msgstr "Thực hiện tính toán, phân tích thông tin và quản lý danh sách trong bảng tính bằng Calc."
+
+#: source/calc/registryitem_calc.ulf#STR_REG_VAL_NEW
+msgid  "&New"
+msgstr "&Mới"
 
 #: source/calc/registryitem_calc.ulf#STR_REG_VAL_SO60_SPREADSHEET
 msgid  "%SXWFORMATNAME %SXWFORMATVERSION Spreadsheet"
@@ -155,17 +159,13 @@ msgstr "Mẫu Microsoft Excel 97-2003"
 msgid  "Microsoft Excel Template"
 msgstr "Mẫu Microsoft Excel "
 
-#: source/calc/registryitem_calc.ulf#STR_REG_VAL_NEW
-msgid  "&New"
-msgstr "&Mới"
-
 #: source/calc/module_calc.ulf#STR_NAME_MODULE_PRG_CALC
 msgid  "%PRODUCTNAME Calc"
 msgstr "%PRODUCTNAME Calc"
 
 #: source/calc/module_calc.ulf#STR_DESC_MODULE_PRG_CALC
 msgid  "Perform calculation, analyze information and manage lists in spreadsheets by using %PRODUCTNAME Calc."
-msgstr ""
+msgstr "Thực hiện tính toán, phân tích thông tin và quản lý danh sách trong bảng tính bằng %PRODUCTNAME Calc."
 
 #: source/calc/module_calc.ulf#STR_NAME_MODULE_PRG_CALC_BIN
 msgid  "Program Module"
@@ -189,7 +189,11 @@ msgstr "Phần bổ trợ"
 
 #: source/calc/module_calc.ulf#STR_DESC_MODULE_OPTIONAL_ADDINS
 msgid  "Add-ins are additional programs that make new functions available in %PRODUCTNAME Calc."
-msgstr ""
+msgstr "Phần bổ trợ là các chương trình thêm, cung cấp các chức năng mới cho %PRODUCTNAME Calc."
+
+#: source/draw/registryitem_draw.ulf#STR_REG_VAL_NEW
+msgid  "&New"
+msgstr "&Mới"
 
 #: source/draw/registryitem_draw.ulf#STR_REG_VAL_SO60_DRAWING
 msgid  "%SXWFORMATNAME %SXWFORMATVERSION Drawing"
@@ -207,10 +211,6 @@ msgstr "Bản vẽ OpenDocument"
 msgid  "OpenDocument Drawing Template"
 msgstr "Mẫu bản vẽ OpenDocument"
 
-#: source/draw/registryitem_draw.ulf#STR_REG_VAL_NEW
-msgid  "&New"
-msgstr "&Mới"
-
 #: source/draw/folderitem_draw.ulf#STR_FI_NAME_ZEICHNUNG
 msgid  "Drawing"
 msgstr "Bản vẽ"
@@ -225,7 +225,7 @@ msgstr "%PRODUCTNAME Draw"
 
 #: source/draw/module_draw.ulf#STR_DESC_MODULE_PRG_DRAW
 msgid  "Create and edit drawings, flow charts, and logos by using %PRODUCTNAME Draw."
-msgstr ""
+msgstr "Tạo và chỉnh sửa bản vẽ, lược đồ và biểu hình bằng %PRODUCTNAME Draw."
 
 #: source/draw/module_draw.ulf#STR_NAME_MODULE_PRG_DRAW_BIN
 msgid  "Program Module"
@@ -249,7 +249,7 @@ msgstr "Hợp nhất GNOME"
 
 #: source/gnome/module_gnome.ulf#STR_DESC_MODULE_OPTIONAL_GNOME
 msgid  "System integration of %PRODUCTNAME %PRODUCTVERSION into Gnome Desktop Environment."
-msgstr ""
+msgstr "Hợp nhất %PRODUCTNAME %PRODUCTVERSION vào môi trường làm việc GNOME."
 
 #: source/graphicfilter/module_graphicfilter.ulf#STR_NAME_MODULE_OPTIONAL_GRFFLT
 msgid  "Graphics Filters"
@@ -377,7 +377,11 @@ msgstr "Trình diễn"
 
 #: source/impress/folderitem_impress.ulf#STR_FI_TOOLTIP_IMPRESS
 msgid  "Create and edit presentations for slideshows, meeting and Web pages by using Impress."
-msgstr ""
+msgstr "Tạo và chỉnh sửa các trình diễn chiếu ảnh, hội họp và các trang Web bằng Impress."
+
+#: source/impress/registryitem_impress.ulf#STR_REG_VAL_NEW
+msgid  "&New"
+msgstr "&Mới"
 
 #: source/impress/registryitem_impress.ulf#STR_REG_VAL_SO60_SHOW
 msgid  "Show"
@@ -419,17 +423,13 @@ msgstr "Mẫu MS PowerPoint  97-2003"
 msgid  "Microsoft PowerPoint Template"
 msgstr "Mẫu MS PowerPoint "
 
-#: source/impress/registryitem_impress.ulf#STR_REG_VAL_NEW
-msgid  "&New"
-msgstr "&Mới"
-
 #: source/impress/module_impress.ulf#STR_NAME_MODULE_PRG_IMPRESS
 msgid  "%PRODUCTNAME Impress"
 msgstr "%PRODUCTNAME Impress"
 
 #: source/impress/module_impress.ulf#STR_DESC_MODULE_PRG_IMPRESS
 msgid  "Create and edit presentations for slideshows, meeting and Web pages by using %PRODUCTNAME Impress."
-msgstr ""
+msgstr "Tạo và chỉnh sửa các trình diễn chiếu ảnh, hội họp và các trang Web bằng %PRODUCTNAME Impress."
 
 #: source/impress/module_impress.ulf#STR_NAME_MODULE_PRG_IMPRESS_BIN
 msgid  "Program Module"
@@ -461,7 +461,7 @@ msgstr "Bộ lọc thiết bị di động"
 
 #: source/javafilter/module_javafilter.ulf#STR_DESC_MODULE_OPTIONAL_JAVAFILTER
 msgid  "Text and spreadsheet filters to support import/export for Palm handheld or Pocket PC (Java required)."
-msgstr ""
+msgstr "Bộ lọc văn bản và bảng tính để hỗ trợ việc nhập/xuất cho máy cầm tay Palm hoặc Pocket PC (cần Java)."
 
 #: source/javafilter/module_javafilter.ulf#STR_NAME_MODULE_OPTIONAL_JAVAFILTER_PALM
 msgid  "Palm"
@@ -485,7 +485,7 @@ msgstr "Pocket PC"
 
 #: source/javafilter/module_javafilter.ulf#STR_DESC_MODULE_OPTIONAL_JAVAFILTER_POCKETPC_WNT
 msgid  "Filters and ActiveSync support for Pocket PC compatible handhelds"
-msgstr ""
+msgstr "Bộ lọc và khả năng hỗ trợ ActiveSync cho thiết bị cầm tay tương thích với hệ điều hành Pocket PC"
 
 #: source/javafilter/module_javafilter.ulf#STR_DESC_MODULE_OPTIONAL_JAVAFILTER_POCKETPC_UNIX
 msgid  "Filters for Pocket PC compatible handhelds."
@@ -565,7 +565,7 @@ msgstr "%PRODUCTNAME Math"
 
 #: source/math/module_math.ulf#STR_DESC_MODULE_PRG_MATH
 msgid  "Create and edit scientific formulas and equations by using %PRODUCTNAME Math."
-msgstr ""
+msgstr "Tạo và chỉnh sửa các công thức khoa học và phương trình bằng %PRODUCTNAME Math."
 
 #: source/math/module_math.ulf#STR_NAME_MODULE_PRG_MATH_BIN
 msgid  "Program Module"
@@ -587,6 +587,10 @@ msgstr "Trợ giúp về %PRODUCTNAME Math"
 msgid  "Create and edit scientific formulas and equations by using Math."
 msgstr "Tạo và chỉnh sửa các công thức và phương trình bằng Math."
 
+#: source/math/registryitem_math.ulf#STR_REG_VAL_NEW
+msgid  "&New"
+msgstr "&Mới"
+
 #: source/math/registryitem_math.ulf#STR_REG_VAL_SO60_FORMULA
 msgid  "%SXWFORMATNAME %SXWFORMATVERSION Formula"
 msgstr "Công thức %SXWFORMATNAME %SXWFORMATVERSION"
@@ -595,17 +599,18 @@ msgstr "Công thức %SXWFORMATNAME %SXWFORMATVERSION"
 msgid  "OpenDocument Formula"
 msgstr "Công thức OpenDocument"
 
-#: source/math/registryitem_math.ulf#STR_REG_VAL_NEW
-msgid  "&New"
-msgstr "&Mới"
-
 #: source/onlineupdate/module_onlineupdate.ulf#STR_NAME_MODULE_OPT_ONLINEUPDATE
 msgid  "Online Update"
 msgstr "Cập nhật trực tuyến"
 
 #: source/onlineupdate/module_onlineupdate.ulf#STR_DESC_MODULE_OPT_ONLINEUPDATE
 msgid  "Get automatically notified when a new update of %PRODUCTNAME becomes available."
-msgstr ""
+msgstr "Tự động nhận thông báo khi có sẵn bản cập nhật mới của %PRODUCTNAME."
+
+#: source/ooo/registryitem_ooo.ulf#STR_REG_VAL_NEW
+#, fuzzy
+msgid  "&New"
+msgstr "&Mới"
 
 #: source/ooo/registryitem_ooo.ulf#STR_REG_VAL_INSTALL
 #, fuzzy
@@ -616,19 +621,14 @@ msgstr "Cà&i đặt"
 msgid  "OpenOffice.org 1.1 Configuration File"
 msgstr ""
 
-#: source/ooo/registryitem_ooo.ulf#STR_REG_VAL_APPCAPABILITY_DESCRIPTION_OOO
-msgid  "office productivity suite based on Apache OpenOffice project"
-msgstr ""
-
-#: source/ooo/registryitem_ooo.ulf#STR_REG_VAL_NEW
-#, fuzzy
-msgid  "&New"
-msgstr "&Mới"
-
 #: source/ooo/registryitem_ooo.ulf#STR_REG_VAL_SO50_TEMPLATE_OOO
 #, fuzzy
 msgid  "StarOffice 5.0 Template"
 msgstr "Mẫu StarOffice 5.0"
+
+#: source/ooo/registryitem_ooo.ulf#STR_REG_VAL_APPCAPABILITY_DESCRIPTION_OOO
+msgid  "office productivity suite based on Apache OpenOffice project"
+msgstr ""
 
 #: source/ooo/module_systemint.ulf#STR_NAME_MODULE_OPTIONAL_SYSTEMINTEGRATION
 #, fuzzy
@@ -666,8 +666,9 @@ msgid  "Optional Components"
 msgstr "Thành phần tùy chọn"
 
 #: source/ooo/module_ooo.ulf#STR_DESC_MODULE_OPTIONAL
+#, fuzzy
 msgid  "Common components and additional programs shared by all %PRODUCTNAME programs."
-msgstr ""
+msgstr "Các thành phần chung và các chương trình phụ dùng chung bởi tất cả các chương trình %PRODUCTNAME."
 
 #: source/ooo/module_ooo.ulf#STR_NAME_MODULE_DICTIONARIES
 msgid  "Dictionaries"
@@ -698,58 +699,49 @@ msgid  "Component for enabling use %PRODUCTNAME without a display"
 msgstr "Thành phần để bật khả năng sử dụng %PRODUCTNAME không cần màn hình."
 
 #: source/ooo/directory_ooo.ulf#STR_DIR_INFO
-#, fuzzy
 msgid  "Information"
 msgstr "Thông tin"
 
 #: source/ooo/directory_ooo.ulf#STR_DIR_INTERNET
-#, fuzzy
 msgid  "Internet"
 msgstr "Internet"
 
 #: source/ooo/directory_ooo.ulf#STR_DIR_JAVA
-#, fuzzy
 msgid  "Java"
 msgstr "Java"
 
 #: source/ooo/directory_ooo.ulf#STR_DIR_FREIZEIT
-#, fuzzy
 msgid  "Fun&More"
 msgstr "Vui thú v.v."
 
 #: source/ooo/directory_ooo.ulf#STR_DIR_STARONE
-#, fuzzy
 msgid  "%PRODUCTNAME API"
 msgstr "API của %PRODUCTNAME"
 
 #: source/ooo/directory_ooo.ulf#STR_DIR_TOURISMUS
-#, fuzzy
 msgid  "Travel"
 msgstr "Du lịch"
 
 #: source/ooo/directory_ooo.ulf#STR_DIR_KAPITEL
-#, fuzzy
 msgid  "Chapters"
 msgstr "Chương"
 
 #: source/ooo/directory_ooo.ulf#STR_DIR_DATEIEN
-#, fuzzy
 msgid  "Files"
 msgstr "Tập tin"
 
 #: source/ooo/folderitem_ooo.ulf#STR_FI_NAME_FROMTEMPLATE
-#, fuzzy
 msgid  "From Template"
 msgstr "Từ mẫu"
 
 #: source/ooo/folderitem_ooo.ulf#STR_FI_NAME_OPENDOCUMENT
-#, fuzzy
 msgid  "Open Document"
 msgstr "Mở tài liệu"
 
 #: source/ooo/folderitem_ooo.ulf#STR_FI_TOOLTIP_SOFFICE
+#, fuzzy
 msgid  "The office productivity suite compatible to the open and standardized ODF document format. Supported by The Apache Software Foundation."
-msgstr ""
+msgstr "Bộ ứng dụng năng suất văn phòng tương thích với định dạng tài liệu ODF mở và tiêu chuẩn. Hỗ trợ bởi công ty Oracle."
 
 #: source/ooo/module_langpack.ulf#STR_NAME_MODULE_ROOT_LANGPACK
 #, fuzzy
@@ -807,8 +799,9 @@ msgid  "Spanish"
 msgstr "Tây Ban Nha"
 
 #: source/ooo/module_langpack.ulf#STR_DESC_MODULE_LANGPACK_ES
+#, fuzzy
 msgid  "Installs Spanish support in %PRODUCTNAME %PRODUCTVERSION"
-msgstr ""
+msgstr "Cài đặt khả năng hỗ trợ tiếng Tây Ban Nha trong %PRODUCTNAME %PRODUCTVERSION"
 
 #: source/ooo/module_langpack.ulf#STR_NAME_MODULE_LANGPACK_SV
 #, fuzzy
@@ -816,8 +809,9 @@ msgid  "Swedish"
 msgstr "Thuỵ Điển"
 
 #: source/ooo/module_langpack.ulf#STR_DESC_MODULE_LANGPACK_SV
+#, fuzzy
 msgid  "Installs Swedish support in %PRODUCTNAME %PRODUCTVERSION"
-msgstr ""
+msgstr "Cài đặt khả năng hỗ trợ tiếng Thuỵ Điển trong %PRODUCTNAME %PRODUCTVERSION"
 
 #: source/ooo/module_langpack.ulf#STR_NAME_MODULE_LANGPACK_PT
 #, fuzzy
@@ -825,8 +819,9 @@ msgid  "Portuguese"
 msgstr "Bồ Đào Nha"
 
 #: source/ooo/module_langpack.ulf#STR_DESC_MODULE_LANGPACK_PT
+#, fuzzy
 msgid  "Installs Portuguese support in %PRODUCTNAME %PRODUCTVERSION"
-msgstr ""
+msgstr "Cài đặt khả năng hỗ trợ tiếng Bồ Đào Nha vào %PRODUCTNAME %PRODUCTVERSION"
 
 #: source/ooo/module_langpack.ulf#STR_NAME_MODULE_LANGPACK_PT_BR
 #, fuzzy
@@ -834,8 +829,9 @@ msgid  "Portuguese (Brazil)"
 msgstr "Bồ Đào Nha (Bra-xin)"
 
 #: source/ooo/module_langpack.ulf#STR_DESC_MODULE_LANGPACK_PT_BR
+#, fuzzy
 msgid  "Installs Portuguese support in %PRODUCTNAME %PRODUCTVERSION"
-msgstr ""
+msgstr "Cài đặt khả năng hỗ trợ tiếng Bồ Đào Nha vào %PRODUCTNAME %PRODUCTVERSION"
 
 #: source/ooo/module_langpack.ulf#STR_NAME_MODULE_LANGPACK_JA
 #, fuzzy
@@ -863,8 +859,9 @@ msgid  "Chinese (simplified)"
 msgstr "Trung (phổ thông)"
 
 #: source/ooo/module_langpack.ulf#STR_DESC_MODULE_LANGPACK_ZH_CN
+#, fuzzy
 msgid  "Installs Chinese (simplified) support in %PRODUCTNAME %PRODUCTVERSION"
-msgstr ""
+msgstr "Cài đặt khả năng hỗ trợ tiếng Trung (phổ thông) trong %PRODUCTNAME %PRODUCTVERSION"
 
 #: source/ooo/module_langpack.ulf#STR_NAME_MODULE_LANGPACK_ZH_TW
 #, fuzzy
@@ -872,8 +869,9 @@ msgid  "Chinese (traditional)"
 msgstr "Trung (truyền thống)"
 
 #: source/ooo/module_langpack.ulf#STR_DESC_MODULE_LANGPACK_ZH_TW
+#, fuzzy
 msgid  "Installs Chinese (traditional) support in %PRODUCTNAME %PRODUCTVERSION"
-msgstr ""
+msgstr "Cài đặt khả năng hỗ trợ tiếng Trung (truyền thống) trong %PRODUCTNAME %PRODUCTVERSION"
 
 #: source/ooo/module_langpack.ulf#STR_NAME_MODULE_LANGPACK_NL
 #, fuzzy
@@ -881,8 +879,9 @@ msgid  "Dutch"
 msgstr "Hà Lan"
 
 #: source/ooo/module_langpack.ulf#STR_DESC_MODULE_LANGPACK_NL
+#, fuzzy
 msgid  "Installs Dutch support in %PRODUCTNAME %PRODUCTVERSION"
-msgstr ""
+msgstr "Cài đặt khả năng hỗ trợ tiếng Hoà Lan trong %PRODUCTNAME %PRODUCTVERSION"
 
 #: source/ooo/module_langpack.ulf#STR_NAME_MODULE_LANGPACK_HU
 #, fuzzy
@@ -890,8 +889,9 @@ msgid  "Hungarian"
 msgstr "Hungarian"
 
 #: source/ooo/module_langpack.ulf#STR_DESC_MODULE_LANGPACK_HU
+#, fuzzy
 msgid  "Installs Hungarian support in %PRODUCTNAME %PRODUCTVERSION"
-msgstr ""
+msgstr "Cài đặt khả năng hỗ trợ tiếng Hung-ga-ri trong %PRODUCTNAME %PRODUCTVERSION"
 
 #: source/ooo/module_langpack.ulf#STR_NAME_MODULE_LANGPACK_PL
 #, fuzzy
@@ -919,8 +919,9 @@ msgid  "Turkish"
 msgstr "Thổ Nhĩ Kỳ"
 
 #: source/ooo/module_langpack.ulf#STR_DESC_MODULE_LANGPACK_TR
+#, fuzzy
 msgid  "Installs Turkish support in %PRODUCTNAME %PRODUCTVERSION"
-msgstr ""
+msgstr "Cài đặt khả năng hỗ trợ tiếng Thổ Nhĩ Kỳ trong %PRODUCTNAME %PRODUCTVERSION"
 
 #: source/ooo/module_langpack.ulf#STR_NAME_MODULE_LANGPACK_EL
 #, fuzzy
@@ -958,8 +959,9 @@ msgid  "Slovak"
 msgstr "Xlô-vác"
 
 #: source/ooo/module_langpack.ulf#STR_DESC_MODULE_LANGPACK_SK
+#, fuzzy
 msgid  "Installs Slovak support in %PRODUCTNAME %PRODUCTVERSION"
-msgstr ""
+msgstr "Cài đặt khả năng hỗ trợ tiếng Xlô-vác trong %PRODUCTNAME %PRODUCTVERSION"
 
 #: source/ooo/module_langpack.ulf#STR_NAME_MODULE_LANGPACK_HR
 #, fuzzy
@@ -967,8 +969,9 @@ msgid  "Croatian"
 msgstr "Cợ-rô-a-ti-a"
 
 #: source/ooo/module_langpack.ulf#STR_DESC_MODULE_LANGPACK_HR
+#, fuzzy
 msgid  "Installs Croatian support in %PRODUCTNAME %PRODUCTVERSION"
-msgstr ""
+msgstr "Cài đặt khả năng hỗ trợ tiếng Cợ-rô-a-ti-a trong %PRODUCTNAME %PRODUCTVERSION"
 
 #: source/ooo/module_langpack.ulf#STR_NAME_MODULE_LANGPACK_ET
 #, fuzzy
@@ -976,8 +979,9 @@ msgid  "Estonian"
 msgstr "Estonian"
 
 #: source/ooo/module_langpack.ulf#STR_DESC_MODULE_LANGPACK_ET
+#, fuzzy
 msgid  "Installs Estonian support in %PRODUCTNAME %PRODUCTVERSION"
-msgstr ""
+msgstr "Cài đặt khả năng hỗ trợ tiếng E-x-tô-ni-a trong %PRODUCTNAME %PRODUCTVERSION"
 
 #: source/ooo/module_langpack.ulf#STR_NAME_MODULE_LANGPACK_VI
 #, fuzzy
@@ -995,8 +999,9 @@ msgid  "Bulgarian"
 msgstr "Bun-ga-ri"
 
 #: source/ooo/module_langpack.ulf#STR_DESC_MODULE_LANGPACK_BG
+#, fuzzy
 msgid  "Installs Bulgarian support in %PRODUCTNAME %PRODUCTVERSION"
-msgstr ""
+msgstr "Cài đặt khả năng hỗ trợ tiếng Bun-ga-ri trong %PRODUCTNAME %PRODUCTVERSION"
 
 #: source/ooo/module_langpack.ulf#STR_NAME_MODULE_LANGPACK_KM
 #, fuzzy
@@ -1014,8 +1019,9 @@ msgid  "Punjabi"
 msgstr "Pun-gia-bi"
 
 #: source/ooo/module_langpack.ulf#STR_DESC_MODULE_LANGPACK_PA_IN
+#, fuzzy
 msgid  "Installs Punjabi support in %PRODUCTNAME %PRODUCTVERSION"
-msgstr ""
+msgstr "Cài đặt khả năng hỗ trợ tiếng Pun-gia-bi trong %PRODUCTNAME %PRODUCTVERSION"
 
 #: source/ooo/module_langpack.ulf#STR_NAME_MODULE_LANGPACK_GU_IN
 #, fuzzy
@@ -1023,8 +1029,9 @@ msgid  "Gujarati"
 msgstr "Gu-gia-ra-ti"
 
 #: source/ooo/module_langpack.ulf#STR_DESC_MODULE_LANGPACK_GU_IN
+#, fuzzy
 msgid  "Installs Gujarati support in %PRODUCTNAME %PRODUCTVERSION"
-msgstr ""
+msgstr "Cài đặt khả năng hỗ trợ tiếng Gu-gia-ra-ti trong %PRODUCTNAME %PRODUCTVERSION"
 
 #: source/ooo/module_langpack.ulf#STR_NAME_MODULE_LANGPACK_TA
 #, fuzzy
@@ -1072,8 +1079,9 @@ msgid  "Southern Sotho (Sutu)"
 msgstr "Nam Xô-thô (Xu-thu)"
 
 #: source/ooo/module_langpack.ulf#STR_DESC_MODULE_LANGPACK_ST
+#, fuzzy
 msgid  "Installs Southern Sotho (Sutu) support in %PRODUCTNAME %PRODUCTVERSION"
-msgstr ""
+msgstr "Cài đặt khả năng hỗ trợ tiếng Nam Xô-thô trong %PRODUCTNAME %PRODUCTVERSION"
 
 #: source/ooo/module_langpack.ulf#STR_NAME_MODULE_LANGPACK_TN
 #, fuzzy
@@ -1081,8 +1089,9 @@ msgid  "Tswana"
 msgstr "T-xouă-na"
 
 #: source/ooo/module_langpack.ulf#STR_DESC_MODULE_LANGPACK_TN
+#, fuzzy
 msgid  "Installs Tswana support in %PRODUCTNAME %PRODUCTVERSION"
-msgstr ""
+msgstr "Cài đặt khả năng hỗ trợ tiếng T-xouă-na trong %PRODUCTNAME %PRODUCTVERSION"
 
 #: source/ooo/module_langpack.ulf#STR_NAME_MODULE_LANGPACK_XH
 #, fuzzy
@@ -1110,8 +1119,9 @@ msgid  "Afrikaans"
 msgstr "Afrikaans"
 
 #: source/ooo/module_langpack.ulf#STR_DESC_MODULE_LANGPACK_AF
+#, fuzzy
 msgid  "Installs Afrikaans support in %PRODUCTNAME %PRODUCTVERSION"
-msgstr ""
+msgstr "Cài đặt khả năng hỗ trợ tiếng Hoà Nam Phi trong %PRODUCTNAME %PRODUCTVERSION"
 
 #: source/ooo/module_langpack.ulf#STR_NAME_MODULE_LANGPACK_SW
 #, fuzzy
@@ -1119,8 +1129,9 @@ msgid  "Swahili"
 msgstr "Xouă-hi-li"
 
 #: source/ooo/module_langpack.ulf#STR_DESC_MODULE_LANGPACK_SW
+#, fuzzy
 msgid  "Installs Swahili support in %PRODUCTNAME %PRODUCTVERSION"
-msgstr ""
+msgstr "Cài đặt khả năng hỗ trợ tiếng Xouă-hi-li vào %PRODUCTNAME %PRODUCTVERSION"
 
 #: source/ooo/module_langpack.ulf#STR_NAME_MODULE_LANGPACK_SW_TZ
 #, fuzzy
@@ -1128,8 +1139,9 @@ msgid  "Swahili"
 msgstr "Xouă-hi-li"
 
 #: source/ooo/module_langpack.ulf#STR_DESC_MODULE_LANGPACK_SW_TZ
+#, fuzzy
 msgid  "Installs Swahili support in %PRODUCTNAME %PRODUCTVERSION"
-msgstr ""
+msgstr "Cài đặt khả năng hỗ trợ tiếng Xouă-hi-li vào %PRODUCTNAME %PRODUCTVERSION"
 
 #: source/ooo/module_langpack.ulf#STR_NAME_MODULE_LANGPACK_LO
 #, fuzzy
@@ -1157,8 +1169,9 @@ msgid  "Bengali"
 msgstr "Băng-gan"
 
 #: source/ooo/module_langpack.ulf#STR_DESC_MODULE_LANGPACK_BN
+#, fuzzy
 msgid  "Installs Bengali support in %PRODUCTNAME %PRODUCTVERSION"
-msgstr ""
+msgstr "Cài đặt khả năng hỗ trợ tiếng Băng-gan trong %PRODUCTNAME %PRODUCTVERSION"
 
 #: source/ooo/module_langpack.ulf#STR_NAME_MODULE_LANGPACK_BN_BD
 #, fuzzy
@@ -1166,8 +1179,9 @@ msgid  "Bengali (Bangladesh)"
 msgstr "Băng-gan (Bang-la-đe-sợ)"
 
 #: source/ooo/module_langpack.ulf#STR_DESC_MODULE_LANGPACK_BN_BD
+#, fuzzy
 msgid  "Installs Bengali (Bangladesh) support in %PRODUCTNAME %PRODUCTVERSION"
-msgstr ""
+msgstr "Cài đặt khả năng hỗ trợ tiếng Băng-gan (Băng-la-đe-sợ) trong %PRODUCTNAME %PRODUCTVERSION"
 
 #: source/ooo/module_langpack.ulf#STR_NAME_MODULE_LANGPACK_BN_IN
 #, fuzzy
@@ -1175,8 +1189,9 @@ msgid  "Bengali (India)"
 msgstr "Băng-gan (Ấn Độ)"
 
 #: source/ooo/module_langpack.ulf#STR_DESC_MODULE_LANGPACK_BN_IN
+#, fuzzy
 msgid  "Installs Bengali (India) support in %PRODUCTNAME %PRODUCTVERSION"
-msgstr ""
+msgstr "Cài đặt khả năng hỗ trợ tiếng Băng-gan (Ấn Độ) trong %PRODUCTNAME %PRODUCTVERSION"
 
 #: source/ooo/module_langpack.ulf#STR_NAME_MODULE_LANGPACK_OR
 #, fuzzy
@@ -1204,8 +1219,9 @@ msgid  "Marathi"
 msgstr "Ma-ra-thi"
 
 #: source/ooo/module_langpack.ulf#STR_DESC_MODULE_LANGPACK_MR
+#, fuzzy
 msgid  "Installs Marathi support in %PRODUCTNAME %PRODUCTVERSION"
-msgstr ""
+msgstr "Cài đặt khả năng hỗ trợ tiếng Ma-ra-thi vào %PRODUCTNAME %PRODUCTVERSION"
 
 #: source/ooo/module_langpack.ulf#STR_NAME_MODULE_LANGPACK_MR_IN
 #, fuzzy
@@ -1213,8 +1229,9 @@ msgid  "Marathi"
 msgstr "Ma-ra-thi"
 
 #: source/ooo/module_langpack.ulf#STR_DESC_MODULE_LANGPACK_MR_IN
+#, fuzzy
 msgid  "Installs Marathi support in %PRODUCTNAME %PRODUCTVERSION"
-msgstr ""
+msgstr "Cài đặt khả năng hỗ trợ tiếng Ma-ra-thi vào %PRODUCTNAME %PRODUCTVERSION"
 
 #: source/ooo/module_langpack.ulf#STR_NAME_MODULE_LANGPACK_NE
 #, fuzzy
@@ -1222,8 +1239,9 @@ msgid  "Nepali"
 msgstr "Nepali"
 
 #: source/ooo/module_langpack.ulf#STR_DESC_MODULE_LANGPACK_NE
+#, fuzzy
 msgid  "Installs Nepali support in %PRODUCTNAME %PRODUCTVERSION"
-msgstr ""
+msgstr "Cài đặt khả năng hỗ trợ tiếng Ne-pa-li trong %PRODUCTNAME %PRODUCTVERSION"
 
 #: source/ooo/module_langpack.ulf#STR_NAME_MODULE_LANGPACK_AR
 #, fuzzy
@@ -1251,8 +1269,9 @@ msgid  "Catalan"
 msgstr "Catalan"
 
 #: source/ooo/module_langpack.ulf#STR_DESC_MODULE_LANGPACK_CA
+#, fuzzy
 msgid  "Installs Catalan support in %PRODUCTNAME %PRODUCTVERSION"
-msgstr ""
+msgstr "Cài đặt khả năng hỗ trợ tiếng Ca-ta-lan trong %PRODUCTNAME %PRODUCTVERSION"
 
 #: source/ooo/module_langpack.ulf#STR_NAME_MODULE_LANGPACK_DA
 #, fuzzy
@@ -1260,8 +1279,9 @@ msgid  "Danish"
 msgstr "Đan Mạch"
 
 #: source/ooo/module_langpack.ulf#STR_DESC_MODULE_LANGPACK_DA
+#, fuzzy
 msgid  "Installs Danish support in %PRODUCTNAME %PRODUCTVERSION"
-msgstr ""
+msgstr "Cài đặt khả năng hỗ trợ tiếng Đan Mạch trong %PRODUCTNAME %PRODUCTVERSION"
 
 #: source/ooo/module_langpack.ulf#STR_NAME_MODULE_LANGPACK_FI
 #, fuzzy
@@ -1269,8 +1289,9 @@ msgid  "Finnish"
 msgstr "Phần Lan"
 
 #: source/ooo/module_langpack.ulf#STR_DESC_MODULE_LANGPACK_FI
+#, fuzzy
 msgid  "Installs Finnish support in %PRODUCTNAME %PRODUCTVERSION"
-msgstr ""
+msgstr "Cài đặt khả năng hỗ trợ tiếng Phần Lan trong %PRODUCTNAME %PRODUCTVERSION"
 
 #: source/ooo/module_langpack.ulf#STR_NAME_MODULE_LANGPACK_HE
 #, fuzzy
@@ -1278,8 +1299,9 @@ msgid  "Hebrew"
 msgstr "Do Thái"
 
 #: source/ooo/module_langpack.ulf#STR_DESC_MODULE_LANGPACK_HE
+#, fuzzy
 msgid  "Installs Hebrew support in %PRODUCTNAME %PRODUCTVERSION"
-msgstr ""
+msgstr "Cài đặt khả năng hỗ trợ tiếng Do Thái trong %PRODUCTNAME %PRODUCTVERSION"
 
 #: source/ooo/module_langpack.ulf#STR_NAME_MODULE_LANGPACK_IS
 #, fuzzy
@@ -1287,8 +1309,9 @@ msgid  "Icelandic"
 msgstr "Băng Đảo"
 
 #: source/ooo/module_langpack.ulf#STR_DESC_MODULE_LANGPACK_IS
+#, fuzzy
 msgid  "Installs Icelandic support in %PRODUCTNAME %PRODUCTVERSION"
-msgstr ""
+msgstr "Cài đặt khả năng hỗ trợ tiếng Băng Đảo trong %PRODUCTNAME %PRODUCTVERSION"
 
 #: source/ooo/module_langpack.ulf#STR_NAME_MODULE_LANGPACK_NB
 #, fuzzy
@@ -1296,8 +1319,9 @@ msgid  "Norwegian (Bokmål)"
 msgstr "Na Uy (Bokmål)"
 
 #: source/ooo/module_langpack.ulf#STR_DESC_MODULE_LANGPACK_NB
+#, fuzzy
 msgid  "Installs Norwegian (Bokmål) support in %PRODUCTNAME %PRODUCTVERSION"
-msgstr ""
+msgstr "Cài đặt khả năng hỗ trợ tiếng Na Uy (Bokh-man) trong %PRODUCTNAME %PRODUCTVERSION"
 
 #: source/ooo/module_langpack.ulf#STR_NAME_MODULE_LANGPACK_NN
 #, fuzzy
@@ -1305,8 +1329,9 @@ msgid  "Norwegian (Nynorsk)"
 msgstr "Na Uy (Ni-noa-x-kh)"
 
 #: source/ooo/module_langpack.ulf#STR_DESC_MODULE_LANGPACK_NN
+#, fuzzy
 msgid  "Installs Norwegian (Nynorsk) support in %PRODUCTNAME %PRODUCTVERSION"
-msgstr ""
+msgstr "Cài đặt khả năng hỗ trợ tiếng Na Uy (Ni-noa-x-kh) trong %PRODUCTNAME %PRODUCTVERSION"
 
 #: source/ooo/module_langpack.ulf#STR_NAME_MODULE_LANGPACK_RM
 #, fuzzy
@@ -1314,8 +1339,9 @@ msgid  "Rhaeto-Romance"
 msgstr "Rhaeto-Romance"
 
 #: source/ooo/module_langpack.ulf#STR_DESC_MODULE_LANGPACK_RM
+#, fuzzy
 msgid  "Installs Rhaeto-Romance support in %PRODUCTNAME %PRODUCTVERSION"
-msgstr ""
+msgstr "Cài đặt khả năng hỗ trợ nhóm ngôn ngữ Rhaeto-Romance trong %PRODUCTNAME %PRODUCTVERSION"
 
 #: source/ooo/module_langpack.ulf#STR_NAME_MODULE_LANGPACK_RO
 #, fuzzy
@@ -1323,8 +1349,9 @@ msgid  "Romanian"
 msgstr "Romanian"
 
 #: source/ooo/module_langpack.ulf#STR_DESC_MODULE_LANGPACK_RO
+#, fuzzy
 msgid  "Installs Romanian support in %PRODUCTNAME %PRODUCTVERSION"
-msgstr ""
+msgstr "Cài đặt khả năng hỗ trợ tiếng Ro-ma-ni trong %PRODUCTNAME %PRODUCTVERSION"
 
 #: source/ooo/module_langpack.ulf#STR_NAME_MODULE_LANGPACK_SQ
 #, fuzzy
@@ -1332,8 +1359,9 @@ msgid  "Albanian"
 msgstr "An-ba-ni"
 
 #: source/ooo/module_langpack.ulf#STR_DESC_MODULE_LANGPACK_SQ
+#, fuzzy
 msgid  "Installs Albanian support in %PRODUCTNAME %PRODUCTVERSION"
-msgstr ""
+msgstr "Cài đặt khả năng hỗ trợ tiếng An-ba-ni trong %PRODUCTNAME %PRODUCTVERSION"
 
 #: source/ooo/module_langpack.ulf#STR_NAME_MODULE_LANGPACK_UR
 #, fuzzy
@@ -1351,8 +1379,9 @@ msgid  "Indonesian"
 msgstr "Nam Dương"
 
 #: source/ooo/module_langpack.ulf#STR_DESC_MODULE_LANGPACK_ID
+#, fuzzy
 msgid  "Installs Indonesian support in %PRODUCTNAME %PRODUCTVERSION"
-msgstr ""
+msgstr "Cài đặt khả năng hỗ trợ tiếng Nam Dương trong %PRODUCTNAME %PRODUCTVERSION"
 
 #: source/ooo/module_langpack.ulf#STR_NAME_MODULE_LANGPACK_UK
 #, fuzzy
@@ -1360,8 +1389,9 @@ msgid  "Ukrainian"
 msgstr "U-cợ-rainh"
 
 #: source/ooo/module_langpack.ulf#STR_DESC_MODULE_LANGPACK_UK
+#, fuzzy
 msgid  "Installs Ukrainian support in %PRODUCTNAME %PRODUCTVERSION"
-msgstr ""
+msgstr "Cài đặt khả năng hỗ trợ tiếng U-cợ-rainh trong %PRODUCTNAME %PRODUCTVERSION"
 
 #: source/ooo/module_langpack.ulf#STR_NAME_MODULE_LANGPACK_BE_BY
 #, fuzzy
@@ -1369,8 +1399,9 @@ msgid  "Belarusian"
 msgstr "Belarusian"
 
 #: source/ooo/module_langpack.ulf#STR_DESC_MODULE_LANGPACK_BE_BY
+#, fuzzy
 msgid  "Installs Belarusian support in %PRODUCTNAME %PRODUCTVERSION"
-msgstr ""
+msgstr "Cài đặt khả năng hỗ trợ tiếng Belarusian trong %PRODUCTNAME %PRODUCTVERSION"
 
 #: source/ooo/module_langpack.ulf#STR_NAME_MODULE_LANGPACK_SL
 #, fuzzy
@@ -1378,8 +1409,9 @@ msgid  "Slovenian"
 msgstr "Slovenian"
 
 #: source/ooo/module_langpack.ulf#STR_DESC_MODULE_LANGPACK_SL
+#, fuzzy
 msgid  "Installs Slovenian support in %PRODUCTNAME %PRODUCTVERSION"
-msgstr ""
+msgstr "Cài đặt khả năng hỗ trợ tiếng Xlô-ven trong %PRODUCTNAME %PRODUCTVERSION"
 
 #: source/ooo/module_langpack.ulf#STR_NAME_MODULE_LANGPACK_LV
 #, fuzzy
@@ -1387,8 +1419,9 @@ msgid  "Latvian"
 msgstr "Lát-vi-a"
 
 #: source/ooo/module_langpack.ulf#STR_DESC_MODULE_LANGPACK_LV
+#, fuzzy
 msgid  "Installs Latvian support in %PRODUCTNAME %PRODUCTVERSION"
-msgstr ""
+msgstr "Cài đặt khả năng hỗ trợ tiếng Lát-vi-a trong %PRODUCTNAME %PRODUCTVERSION"
 
 #: source/ooo/module_langpack.ulf#STR_NAME_MODULE_LANGPACK_LT
 #, fuzzy
@@ -1396,8 +1429,9 @@ msgid  "Lithuanian"
 msgstr "Lithuanian"
 
 #: source/ooo/module_langpack.ulf#STR_DESC_MODULE_LANGPACK_LT
+#, fuzzy
 msgid  "Installs Lithuanian support in %PRODUCTNAME %PRODUCTVERSION"
-msgstr ""
+msgstr "Cài đặt khả năng hỗ trợ tiếng Li-tu-a-ni trong %PRODUCTNAME %PRODUCTVERSION"
 
 #: source/ooo/module_langpack.ulf#STR_NAME_MODULE_LANGPACK_HY
 #, fuzzy
@@ -1405,8 +1439,9 @@ msgid  "Armenian"
 msgstr "Ác-mê-ni"
 
 #: source/ooo/module_langpack.ulf#STR_DESC_MODULE_LANGPACK_HY
+#, fuzzy
 msgid  "Installs Armenian support in %PRODUCTNAME %PRODUCTVERSION"
-msgstr ""
+msgstr "Cài đặt khả năng hỗ trợ tiếng Ác-mê-ni trong %PRODUCTNAME %PRODUCTVERSION"
 
 #: source/ooo/module_langpack.ulf#STR_NAME_MODULE_LANGPACK_EU
 #, fuzzy
@@ -1414,8 +1449,9 @@ msgid  "Basque"
 msgstr "Bas-quợ"
 
 #: source/ooo/module_langpack.ulf#STR_DESC_MODULE_LANGPACK_EU
+#, fuzzy
 msgid  "Installs Basque support in %PRODUCTNAME %PRODUCTVERSION"
-msgstr ""
+msgstr "Cài đặt khả năng hỗ trợ tiếng Bas-quợ trong %PRODUCTNAME %PRODUCTVERSION"
 
 #: source/ooo/module_langpack.ulf#STR_NAME_MODULE_LANGPACK_MK
 #, fuzzy
@@ -1423,8 +1459,9 @@ msgid  "Macedonian"
 msgstr "Ma-xê-đô-ni"
 
 #: source/ooo/module_langpack.ulf#STR_DESC_MODULE_LANGPACK_MK
+#, fuzzy
 msgid  "Installs Macedonian support in %PRODUCTNAME %PRODUCTVERSION"
-msgstr ""
+msgstr "Cài đặt khả năng hỗ trợ tiếng Ma-xê-đô-ni trong %PRODUCTNAME %PRODUCTVERSION"
 
 #: source/ooo/module_langpack.ulf#STR_NAME_MODULE_LANGPACK_MT
 #, fuzzy
@@ -1452,8 +1489,9 @@ msgid  "Galician"
 msgstr "Galician"
 
 #: source/ooo/module_langpack.ulf#STR_DESC_MODULE_LANGPACK_GL
+#, fuzzy
 msgid  "Installs Galician support in %PRODUCTNAME %PRODUCTVERSION"
-msgstr ""
+msgstr "Cài đặt khả năng hỗ trợ tiếng Ga-li-xi trong %PRODUCTNAME %PRODUCTVERSION"
 
 #: source/ooo/module_langpack.ulf#STR_NAME_MODULE_LANGPACK_SH_YU
 #, fuzzy
@@ -1461,8 +1499,9 @@ msgid  "Serbian (Latin)"
 msgstr "Xéc-bi (La-tinh)"
 
 #: source/ooo/module_langpack.ulf#STR_DESC_MODULE_LANGPACK_SH_YU
+#, fuzzy
 msgid  "Installs Serbian (Latin) support in %PRODUCTNAME %PRODUCTVERSION"
-msgstr ""
+msgstr "Cài đặt khả năng hỗ trợ tiếng Xéc-bi (ký tự La-tinh) trong %PRODUCTNAME %PRODUCTVERSION"
 
 #: source/ooo/module_langpack.ulf#STR_NAME_MODULE_LANGPACK_SH
 #, fuzzy
@@ -1470,8 +1509,9 @@ msgid  "Serbian (Latin)"
 msgstr "Xéc-bi (La-tinh)"
 
 #: source/ooo/module_langpack.ulf#STR_DESC_MODULE_LANGPACK_SH
+#, fuzzy
 msgid  "Installs Serbian (Latin) support in %PRODUCTNAME %PRODUCTVERSION"
-msgstr ""
+msgstr "Cài đặt khả năng hỗ trợ tiếng Xéc-bi (ký tự La-tinh) trong %PRODUCTNAME %PRODUCTVERSION"
 
 #: source/ooo/module_langpack.ulf#STR_NAME_MODULE_LANGPACK_GA
 #, fuzzy
@@ -1479,8 +1519,9 @@ msgid  "Irish"
 msgstr "Ai-a-len"
 
 #: source/ooo/module_langpack.ulf#STR_DESC_MODULE_LANGPACK_GA
+#, fuzzy
 msgid  "Installs Irish support in %PRODUCTNAME %PRODUCTVERSION"
-msgstr ""
+msgstr "Cài đặt khả năng hỗ trợ tiếng Ai-a-len trong %PRODUCTNAME %PRODUCTVERSION"
 
 #: source/ooo/module_langpack.ulf#STR_NAME_MODULE_LANGPACK_SR_CS
 #, fuzzy
@@ -1488,8 +1529,9 @@ msgid  "Serbian (Cyrillic)"
 msgstr "Xéc-bi (Ki-rin)"
 
 #: source/ooo/module_langpack.ulf#STR_DESC_MODULE_LANGPACK_SR_CS
+#, fuzzy
 msgid  "Installs Serbian (Cyrillic) support in %PRODUCTNAME %PRODUCTVERSION"
-msgstr ""
+msgstr "Cài đặt khả năng hỗ trợ tiếng Xéc-bi (ký tự Ki-rin) trong %PRODUCTNAME %PRODUCTVERSION"
 
 #: source/ooo/module_langpack.ulf#STR_NAME_MODULE_LANGPACK_SR
 #, fuzzy
@@ -1497,8 +1539,9 @@ msgid  "Serbian (Cyrillic)"
 msgstr "Xéc-bi (Ki-rin)"
 
 #: source/ooo/module_langpack.ulf#STR_DESC_MODULE_LANGPACK_SR
+#, fuzzy
 msgid  "Installs Serbian (Cyrillic) support in %PRODUCTNAME %PRODUCTVERSION"
-msgstr ""
+msgstr "Cài đặt khả năng hỗ trợ tiếng Xéc-bi (ký tự Ki-rin) trong %PRODUCTNAME %PRODUCTVERSION"
 
 #: source/ooo/module_langpack.ulf#STR_NAME_MODULE_LANGPACK_BS
 #, fuzzy
@@ -1506,8 +1549,9 @@ msgid  "Bosnian"
 msgstr "Bo-x-ni-a"
 
 #: source/ooo/module_langpack.ulf#STR_DESC_MODULE_LANGPACK_BS
+#, fuzzy
 msgid  "Installs Bosnian support in %PRODUCTNAME %PRODUCTVERSION"
-msgstr ""
+msgstr "Cài đặt khả năng hỗ trợ tiếng Bo-x-ni-a trong %PRODUCTNAME %PRODUCTVERSION"
 
 #: source/ooo/module_langpack.ulf#STR_NAME_MODULE_LANGPACK_AS_IN
 #, fuzzy
@@ -1525,8 +1569,9 @@ msgid  "Kinyarwanda"
 msgstr "Khin-ia-ouan-đa"
 
 #: source/ooo/module_langpack.ulf#STR_DESC_MODULE_LANGPACK_RW
+#, fuzzy
 msgid  "Installs Kinyarwanda support in %PRODUCTNAME %PRODUCTVERSION"
-msgstr ""
+msgstr "Cài đặt khả năng hỗ trợ tiếng Khin-ia-ouan-đa trong %PRODUCTNAME %PRODUCTVERSION"
 
 #: source/ooo/module_langpack.ulf#STR_NAME_MODULE_LANGPACK_SA
 #, fuzzy
@@ -1582,8 +1627,9 @@ msgid  "Tsonga"
 msgstr "T-xôn-ga"
 
 #: source/ooo/module_langpack.ulf#STR_DESC_MODULE_LANGPACK_TS
+#, fuzzy
 msgid  "Installs Tsonga support in %PRODUCTNAME %PRODUCTVERSION"
-msgstr ""
+msgstr "Cài đặt khả năng hỗ trợ tiếng T-xôn-ga trong %PRODUCTNAME %PRODUCTVERSION"
 
 #: source/ooo/module_langpack.ulf#STR_NAME_MODULE_LANGPACK_YI
 #, fuzzy
@@ -1601,8 +1647,9 @@ msgid  "Breton"
 msgstr "Bợ-re-ton"
 
 #: source/ooo/module_langpack.ulf#STR_DESC_MODULE_LANGPACK_BR
+#, fuzzy
 msgid  "Installs Breton support in %PRODUCTNAME %PRODUCTVERSION"
-msgstr ""
+msgstr "Cài đặt khả năng hỗ trợ tiếng Bợ-re-ton trong %PRODUCTNAME %PRODUCTVERSION"
 
 #: source/ooo/module_langpack.ulf#STR_NAME_MODULE_LANGPACK_NR
 #, fuzzy
@@ -1610,8 +1657,9 @@ msgid  "Ndebele South"
 msgstr "Nam N-đe-be-le"
 
 #: source/ooo/module_langpack.ulf#STR_DESC_MODULE_LANGPACK_NR
+#, fuzzy
 msgid  "Installs Ndebele South support in %PRODUCTNAME %PRODUCTVERSION"
-msgstr ""
+msgstr "Cài đặt khả năng hỗ trợ tiếng Nam N-đe-be-le trong %PRODUCTNAME %PRODUCTVERSION"
 
 #: source/ooo/module_langpack.ulf#STR_NAME_MODULE_LANGPACK_SS
 #, fuzzy
@@ -1619,8 +1667,9 @@ msgid  "Swazi"
 msgstr "Xouă-xi"
 
 #: source/ooo/module_langpack.ulf#STR_DESC_MODULE_LANGPACK_SS
+#, fuzzy
 msgid  "Installs Swazi support in %PRODUCTNAME %PRODUCTVERSION"
-msgstr ""
+msgstr "Cài đặt khả năng hỗ trợ tiếng Xouă-xi trong %PRODUCTNAME %PRODUCTVERSION"
 
 #: source/ooo/module_langpack.ulf#STR_NAME_MODULE_LANGPACK_VE
 #, fuzzy
@@ -1638,8 +1687,9 @@ msgid  "Kannada"
 msgstr "Kan-na-đa"
 
 #: source/ooo/module_langpack.ulf#STR_DESC_MODULE_LANGPACK_KN
+#, fuzzy
 msgid  "Installs Kannada support in %PRODUCTNAME %PRODUCTVERSION"
-msgstr ""
+msgstr "Cài đặt khả năng hỗ trợ tiếng Kan-na-đa trong %PRODUCTNAME %PRODUCTVERSION"
 
 #: source/ooo/module_langpack.ulf#STR_NAME_MODULE_LANGPACK_MS
 #, fuzzy
@@ -1657,8 +1707,9 @@ msgid  "Tajik"
 msgstr "Tha-gích"
 
 #: source/ooo/module_langpack.ulf#STR_DESC_MODULE_LANGPACK_TG
+#, fuzzy
 msgid  "Installs Tajik support in %PRODUCTNAME %PRODUCTVERSION"
-msgstr ""
+msgstr "Cài đặt khả năng hỗ trợ tiếng Tha-gích trong %PRODUCTNAME %PRODUCTVERSION"
 
 #: source/ooo/module_langpack.ulf#STR_NAME_MODULE_LANGPACK_KU
 #, fuzzy
@@ -1666,8 +1717,9 @@ msgid  "Kurdish"
 msgstr "Kuổ-đít"
 
 #: source/ooo/module_langpack.ulf#STR_DESC_MODULE_LANGPACK_KU
+#, fuzzy
 msgid  "Installs Kurdish support in %PRODUCTNAME %PRODUCTVERSION"
-msgstr ""
+msgstr "Cài đặt khả năng hỗ trợ tiếng Kuổ-đít trong %PRODUCTNAME %PRODUCTVERSION"
 
 #: source/ooo/module_langpack.ulf#STR_NAME_MODULE_LANGPACK_DZ
 #, fuzzy
@@ -1675,8 +1727,9 @@ msgid  "Dzongkha"
 msgstr "Đ-xông-kha"
 
 #: source/ooo/module_langpack.ulf#STR_DESC_MODULE_LANGPACK_DZ
+#, fuzzy
 msgid  "Installs Dzongkha support in %PRODUCTNAME %PRODUCTVERSION"
-msgstr ""
+msgstr "Cài đặt khả năng hỗ trợ tiếng Đ-xông-kha trong %PRODUCTNAME %PRODUCTVERSION"
 
 #: source/ooo/module_langpack.ulf#STR_NAME_MODULE_LANGPACK_KA
 #, fuzzy
@@ -1684,8 +1737,9 @@ msgid  "Georgian"
 msgstr "Gi-oa-gi-a"
 
 #: source/ooo/module_langpack.ulf#STR_DESC_MODULE_LANGPACK_KA
+#, fuzzy
 msgid  "Installs Georgian support in %PRODUCTNAME %PRODUCTVERSION"
-msgstr ""
+msgstr "Cài đặt khả năng hỗ trợ tiếng Gi-oa-gi-a trong %PRODUCTNAME %PRODUCTVERSION"
 
 #: source/ooo/module_langpack.ulf#STR_NAME_MODULE_LANGPACK_EO
 #, fuzzy
@@ -1693,8 +1747,9 @@ msgid  "Esperanto"
 msgstr "Ét-pe-ran-tô"
 
 #: source/ooo/module_langpack.ulf#STR_DESC_MODULE_LANGPACK_EO
+#, fuzzy
 msgid  "Installs Esperanto support in %PRODUCTNAME %PRODUCTVERSION"
-msgstr ""
+msgstr "Cài đặt khả năng hỗ trợ tiếng Ét-pe-ran-tô vào %PRODUCTNAME %PRODUCTVERSION"
 
 #: source/ooo/module_langpack.ulf#STR_NAME_MODULE_LANGPACK_GU
 #, fuzzy
@@ -1702,8 +1757,9 @@ msgid  "Gujarati"
 msgstr "Gu-gia-ra-ti"
 
 #: source/ooo/module_langpack.ulf#STR_DESC_MODULE_LANGPACK_GU
+#, fuzzy
 msgid  "Installs Gujarati support in %PRODUCTNAME %PRODUCTVERSION"
-msgstr ""
+msgstr "Cài đặt khả năng hỗ trợ tiếng Gu-gia-ra-ti trong %PRODUCTNAME %PRODUCTVERSION"
 
 #: source/ooo/module_langpack.ulf#STR_NAME_MODULE_LANGPACK_EN_ZA
 #, fuzzy
@@ -1711,8 +1767,9 @@ msgid  "English (South Africa)"
 msgstr "Anh (Nam Phi)"
 
 #: source/ooo/module_langpack.ulf#STR_DESC_MODULE_LANGPACK_EN_ZA
+#, fuzzy
 msgid  "Installs English (South Africa) support in %PRODUCTNAME %PRODUCTVERSION"
-msgstr ""
+msgstr "Cài đặt khả năng hỗ trợ tiếng Anh (Nam Phi) trong %PRODUCTNAME %PRODUCTVERSION"
 
 #: source/ooo/module_langpack.ulf#STR_NAME_MODULE_LANGPACK_EN_GB
 #, fuzzy
@@ -1720,8 +1777,9 @@ msgid  "English (United Kingdom)"
 msgstr "Anh (Quốc Anh)"
 
 #: source/ooo/module_langpack.ulf#STR_DESC_MODULE_LANGPACK_EN_GB
+#, fuzzy
 msgid  "Installs English (United Kingdom) support in %PRODUCTNAME %PRODUCTVERSION"
-msgstr ""
+msgstr "Cài đặt khả năng hỗ trợ tiếng Anh (Quốc Anh) trong %PRODUCTNAME %PRODUCTVERSION"
 
 #: source/ooo/module_langpack.ulf#STR_NAME_MODULE_LANGPACK_UR_IN
 #, fuzzy
@@ -1749,8 +1807,9 @@ msgid  "Telugu"
 msgstr "Te-lu-gu"
 
 #: source/ooo/module_langpack.ulf#STR_DESC_MODULE_LANGPACK_TE_IN
+#, fuzzy
 msgid  "Installs Telugu support in %PRODUCTNAME %PRODUCTVERSION"
-msgstr ""
+msgstr "Cài đặt khả năng hỗ trợ tiếng Te-lu-gu trong %PRODUCTNAME %PRODUCTVERSION"
 
 #: source/ooo/module_langpack.ulf#STR_NAME_MODULE_LANGPACK_TI_ER
 #, fuzzy
@@ -1758,8 +1817,9 @@ msgid  "Tigrinya"
 msgstr "Ti-gợ-rinh-ia"
 
 #: source/ooo/module_langpack.ulf#STR_DESC_MODULE_LANGPACK_TI_ER
+#, fuzzy
 msgid  "Installs Tigrinya support in %PRODUCTNAME %PRODUCTVERSION"
-msgstr ""
+msgstr "Cài đặt khả năng hỗ trợ tiếng Ti-gợ-rinh-ia vào %PRODUCTNAME %PRODUCTVERSION"
 
 #: source/ooo/module_langpack.ulf#STR_NAME_MODULE_LANGPACK_UZ
 #, fuzzy
@@ -1777,8 +1837,9 @@ msgid  "Mongolian"
 msgstr "Mông Cổ"
 
 #: source/ooo/module_langpack.ulf#STR_DESC_MODULE_LANGPACK_MN
+#, fuzzy
 msgid  "Installs Mongolian support in %PRODUCTNAME %PRODUCTVERSION"
-msgstr ""
+msgstr "Cài đặt khả năng hỗ trợ tiếng Mông Cổ trong %PRODUCTNAME %PRODUCTVERSION"
 
 #: source/ooo/module_langpack.ulf#STR_NAME_MODULE_LANGPACK_OC
 msgid  "Occitan"
@@ -1803,8 +1864,9 @@ msgid  "Sinhala"
 msgstr ""
 
 #: source/ooo/module_langpack.ulf#STR_DESC_MODULE_LANGPACK_SI
+#, fuzzy
 msgid  "Installs Sinhala support in %PRODUCTNAME %PRODUCTVERSION"
-msgstr ""
+msgstr "Cài đặt khả năng hỗ trợ tiếng Xouă-hi-li vào %PRODUCTNAME %PRODUCTVERSION"
 
 #: source/ooo/module_langpack.ulf#STR_NAME_MODULE_LANGPACK_OM
 msgid  "Oromo"
@@ -1820,8 +1882,9 @@ msgid  "Asturian"
 msgstr ""
 
 #: source/ooo/module_langpack.ulf#STR_DESC_MODULE_LANGPACK_AST
+#, fuzzy
 msgid  "Installs Asturian support in %PRODUCTNAME %PRODUCTVERSION"
-msgstr ""
+msgstr "Cài đặt khả năng hỗ trợ tiếng E-x-tô-ni-a trong %PRODUCTNAME %PRODUCTVERSION"
 
 #: source/ooo/module_langpack.ulf#STR_NAME_MODULE_LANGPACK_GD
 msgid  "Gaelic (Scotland)"
@@ -1832,175 +1895,145 @@ msgid  "Installs Gaelic (Scotland) support in %PRODUCTNAME %PRODUCTVERSION"
 msgstr ""
 
 #: source/python/module_python_mailmerge.ulf#STR_NAME_MODULE_OPTIONAL_PYTHON_MAILMERGE
-#, fuzzy
 msgid  "E-mail Mailmerge"
 msgstr "Trộn thư điện tử"
 
 #: source/python/module_python_mailmerge.ulf#STR_DESC_MODULE_OPTIONAL_PYTHON_MAILMERGE
-#, fuzzy
 msgid  "Module for %PRODUCTNAME E-mail Mailmerge feature"
 msgstr "Mô-đun cho tính năng trộn thư điện tử của %PRODUCTNAME"
 
 #: source/python/module_python.ulf#STR_NAME_MODULE_OPTIONAL_PYTHON
-#, fuzzy
 msgid  "Python-UNO Bridge"
 msgstr "Cầu nối Python-UNO"
 
 #: source/python/module_python.ulf#STR_DESC_MODULE_OPTIONAL_PYTHON
 msgid  "Adds the ability to automate %PRODUCTNAME with the python scripting language. See http://udk.openoffice.org/python/python-bridge.html for a complete documentation."
-msgstr ""
+msgstr "Thêm khả năng tự động hóa %PRODUCTNAME bằng ngôn ngữ viết văn lệnh Python. Xem tài liệu đầy đủ tại http://udk.openoffice.org/python/python-bridge.html."
 
 #: source/quickstart/module_quickstart.ulf#STR_NAME_MODULE_OPTIONAL_QUICKSTART
-#, fuzzy
 msgid  "Quickstarter"
 msgstr "Khởi chạy nhanh"
 
 #: source/quickstart/module_quickstart.ulf#STR_DESC_MODULE_OPTIONAL_QUICKSTART
 msgid  "Loads basic components on system start to accelerate start up time of %PRODUCTNAME %PRODUCTVERSION."
-msgstr ""
+msgstr "Nạp các thành phần cơ bản khi hệ thống khởi động, để tăng tốc độ khởi chạy của %PRODUCTNAME %PRODUCTVERSION."
 
 #: source/sdkoo/module_sdkoo.ulf#STR_NAME_MODULE_OPTIONAL_SDKOO
-#, fuzzy
 msgid  "Software Development Kit (SDK)"
 msgstr "Software Development Kit (SDK)"
 
 #: source/sdkoo/module_sdkoo.ulf#STR_DESC_MODULE_OPTIONAL_SDKOO
 msgid  "The SDK provides all necessary tools, examples and documentation to program with and for the office."
-msgstr ""
+msgstr "SDK này cung cấp mọi công cụ cần thiết cùng các ví dụ và tài liệu để lập trình với Office."
 
 #: source/winexplorerext/module_winexplorerext.ulf#STR_NAME_MODULE_OPTIONAL_WINDOWS_EXPLORER_EXTENSIONS
-#, fuzzy
 msgid  "Windows Explorer Extension"
 msgstr "Phần mở rộng Windows Explorer"
 
 #: source/winexplorerext/module_winexplorerext.ulf#STR_DESC_MODULE_OPTIONAL_WINDOWS_EXPLORER_EXTENSIONS
 msgid  "Enables the Microsoft Windows Explorer to show information about %PRODUCTNAME documents, such as thumbnail previews."
-msgstr ""
+msgstr "Cho phép MS Windows Explorer hiển thị thông tin về các tài liệu %PRODUCTNAME, ví dụ ô xem qua các hình thu nhỏ."
 
 #: source/writer/folderitem_writer.ulf#STR_FI_NAME_HTMLDOKUMENT
-#, fuzzy
 msgid  "HTML Document"
 msgstr "Tài liệu HTML"
 
 #: source/writer/folderitem_writer.ulf#STR_FI_NAME_TEXTDOKUMENT
-#, fuzzy
 msgid  "Text Document"
 msgstr "Tài liệu văn bản"
 
 #: source/writer/folderitem_writer.ulf#STR_FI_TOOLTIP_WRITER
 msgid  "Create and edit text and graphics in letters, reports, documents and Web pages by using Writer."
-msgstr ""
+msgstr "Tạo và chỉnh sửa các văn bản và đồ họa trong thư, báo cáo, tài liệu và trang Web bằng Writer."
+
+#: source/writer/registryitem_writer.ulf#STR_REG_VAL_NEW
+msgid  "&New"
+msgstr "&Mới"
 
 #: source/writer/registryitem_writer.ulf#STR_REG_VAL_SO60_TEXT
-#, fuzzy
 msgid  "%SXWFORMATNAME %SXWFORMATVERSION Text Document"
 msgstr "Tài liệu văn bản %SXWFORMATNAME %SXWFORMATVERSION"
 
 #: source/writer/registryitem_writer.ulf#STR_REG_VAL_SO60_MASTERDOC
-#, fuzzy
 msgid  "%SXWFORMATNAME %SXWFORMATVERSION Master Document"
 msgstr "Tài liệu chính %SXWFORMATNAME %SXWFORMATVERSION"
 
 #: source/writer/registryitem_writer.ulf#STR_REG_VAL_SO60_WRITER_TEMPLATE
-#, fuzzy
 msgid  "%SXWFORMATNAME %SXWFORMATVERSION Text Document Template"
 msgstr "Mẫu tài liệu văn bản %SXWFORMATNAME %SXWFORMATVERSION"
 
 #: source/writer/registryitem_writer.ulf#STR_REG_VAL_OO_WRITER
-#, fuzzy
 msgid  "OpenDocument Text"
 msgstr "Văn bản OpenDocument"
 
 #: source/writer/registryitem_writer.ulf#STR_REG_VAL_OO_WRITER_TEMPLATE
-#, fuzzy
 msgid  "OpenDocument Text Template"
 msgstr "Mẫu văn bản OpenDocument"
 
 #: source/writer/registryitem_writer.ulf#STR_REG_VAL_OO_MASTERDOC
-#, fuzzy
 msgid  "OpenDocument Master Document"
 msgstr "Tài liệu chính OpenDocument"
 
 #: source/writer/registryitem_writer.ulf#STR_REG_VAL_OO_WEBDOC
-#, fuzzy
 msgid  "HTML Document Template"
 msgstr "Mẫu tài liệu HTML"
 
 #: source/writer/registryitem_writer.ulf#STR_REG_VAL_MS_WORD_DOCUMENT_OLD
-#, fuzzy
 msgid  "Microsoft Word 97-2003 Document"
 msgstr "Tài liệu MS Word 97-2003"
 
 #: source/writer/registryitem_writer.ulf#STR_REG_VAL_MS_WORD_DOCUMENT
-#, fuzzy
 msgid  "Microsoft Word Document"
 msgstr "Tài liệu MS Word"
 
 #: source/writer/registryitem_writer.ulf#STR_REG_VAL_MS_WORD_TEMPLATE_OLD
-#, fuzzy
 msgid  "Microsoft Word 97-2003 Template"
 msgstr "Tài liệu MS Word 97-2003"
 
 #: source/writer/registryitem_writer.ulf#STR_REG_VAL_MS_WORD_TEMPLATE
-#, fuzzy
 msgid  "Microsoft Word Template"
 msgstr "Mẫu MS Word"
 
 #: source/writer/registryitem_writer.ulf#STR_REG_VAL_MS_RTF_DOCUMENT
-#, fuzzy
 msgid  "Rich Text Document"
 msgstr "Tài liệu Rich Text"
 
-#: source/writer/registryitem_writer.ulf#STR_REG_VAL_NEW
-#, fuzzy
-msgid  "&New"
-msgstr "&Mới"
-
 #: source/writer/module_writer.ulf#STR_NAME_MODULE_PRG_WRT
-#, fuzzy
 msgid  "%PRODUCTNAME Writer"
 msgstr "%PRODUCTNAME Writer"
 
 #: source/writer/module_writer.ulf#STR_DESC_MODULE_PRG_WRT
 msgid  "Create and edit text and graphics in letters, reports, documents and Web pages by using %PRODUCTNAME Writer."
-msgstr ""
+msgstr "Tạo và chỉnh sửa các văn bản và đồ họa trong thư, báo cáo, tài liệu và trang Web bằng %PRODUCTNAME Writer."
 
 #: source/writer/module_writer.ulf#STR_NAME_MODULE_PRG_WRT_BIN
-#, fuzzy
 msgid  "Program Module"
 msgstr "Mô-đun chương trình"
 
 #: source/writer/module_writer.ulf#STR_DESC_MODULE_PRG_WRT_BIN
-#, fuzzy
 msgid  "The application %PRODUCTNAME Writer"
 msgstr "Ứng dụng %PRODUCTNAME Writer"
 
 #: source/writer/module_writer.ulf#STR_NAME_MODULE_PRG_WRT_HELP
-#, fuzzy
 msgid  "%PRODUCTNAME Writer Help"
 msgstr "Trợ giúp %PRODUCTNAME Writer"
 
 #: source/writer/module_writer.ulf#STR_DESC_MODULE_PRG_WRT_HELP
-#, fuzzy
 msgid  "Help about %PRODUCTNAME Writer"
 msgstr "Trợ giúp về %PRODUCTNAME Writer"
 
 #: source/writer/module_writer.ulf#STR_NAME_MODULE_PRG_WRT_WRITER2LATEX
-#, fuzzy
 msgid  "LaTeX Export"
 msgstr "Xuất LaTeX"
 
 #: source/writer/module_writer.ulf#STR_DESC_MODULE_PRG_WRT_WRITER2LATEX
-#, fuzzy
 msgid  "LaTeX export filter for Writer documents."
 msgstr "Bộ lọc xuất LaTeX cho tàil iệu Writer"
 
 #: source/xsltfilter/module_xsltfilter.ulf#STR_NAME_MODULE_OPTIONAL_XSLTFILTERSAMPLES
-#, fuzzy
 msgid  "XSLT Sample Filters"
 msgstr "Bộ lọc mẫu XSLT"
 
 #: source/xsltfilter/module_xsltfilter.ulf#STR_DESC_MODULE_OPTIONAL_XSLTFILTERSAMPLES
-#, fuzzy
 msgid  "XSLT Sample Filters"
 msgstr "Bộ lọc mẫu XSLT"

@@ -725,7 +725,7 @@ msgstr "這不是 WinWord6 檔案。"
 
 #: source/ui/app/error.src#RID_SW_ERRHDL.ERR_CODE ( ERRCODE_CLASS_READ , ERR_WW6_FASTSAVE_ERR ).String.Text
 msgid  "This file was saved with WinWord in 'Fast Save' mode. Please unmark the WinWord option 'Allow Fast Saves' and save the file again."
-msgstr ""
+msgstr "這個檔案是 WinWord 的 [快速儲存] 模式儲存的。請取消標記 WinWord 選項 [允許快速儲存] 然後重新儲存檔案。"
 
 #: source/ui/app/error.src#RID_SW_ERRHDL.ERR_CODE ( ERRCODE_CLASS_READ , ERR_FORMAT_ROWCOL ).String.Text
 msgid  "File format error found at $(ARG1)(row,col)."
@@ -741,7 +741,7 @@ msgstr "這不是 WinWord97 檔案。"
 
 #: source/ui/app/error.src#RID_SW_ERRHDL.ERR_CODE ( ERRCODE_CLASS_READ , ERR_FORMAT_FILE_ROWCOL ).String.Text
 msgid  "Format error discovered in the file in sub-document $(ARG1) at $(ARG2)(row,col)."
-msgstr ""
+msgstr "發現子文件 $(ARG1) 內檔案的格式錯誤，位置在 $(ARG2)(row,col)。"
 
 #: source/ui/app/error.src#RID_SW_ERRHDL.ERR_CODE ( ERRCODE_CLASS_WRITE , ERR_SWG_WRITE_ERROR ).String.Text
 msgid  "Error writing file."
@@ -789,7 +789,7 @@ msgstr "無法讀取繪圖物件。"
 
 #: source/ui/app/error.src#RID_SW_ERRHDL.WARN_CODE ( ERRCODE_CLASS_READ , WARN_WW6_FASTSAVE_ERR ).String.Text
 msgid  "This file was saved with WinWord in 'Fast Save' mode. Please unmark the WinWord option 'Allow Fast Saves' and save the file again."
-msgstr ""
+msgstr "這個檔案是 WinWord 的 [快速儲存] 模式儲存的。請取消標記 WinWord 選項 [允許快速儲存] 然後重新儲存檔案。"
 
 #: source/ui/app/error.src#RID_SW_ERRHDL.WARN_CODE ( ERRCODE_CLASS_READ , WARN_SWG_FEATURES_LOST ).String.Text
 msgid  "Not all attributes could be read."
@@ -817,7 +817,7 @@ msgstr "無法完全儲存文件。"
 
 #: source/ui/app/error.src#RID_SW_ERRHDL.WARN_CODE ( ERRCODE_CLASS_WRITE , WARN_SWG_HTML_NO_MACROS).String.Text
 msgid  "This HTML document contains %PRODUCTNAME Basic macros.\nThey were not saved with the current export settings."
-msgstr ""
+msgstr "HTML 文件含有 %PRODUCTNAME Basic 巨集。\n無法採用目前的匯出設定來儲存文件。"
 
 #: source/ui/app/error.src#RID_SW_ERRHDL.ERR_CODE ( ERRCODE_CLASS_WRITE , WARN_WRITE_ERROR_FILE ).String.Text
 msgid  "Error in writing sub-document $(ARG1)."
@@ -825,7 +825,7 @@ msgstr "寫入子文件 $(ARG1) 時發生錯誤。"
 
 #: source/ui/app/error.src#RID_SW_ERRHDL.ERR_CODE ( ERRCODE_CLASS_WRITE , WARN_FORMAT_FILE_ROWCOL ).String.Text
 msgid  "Format error discovered in the file in sub-document $(ARG1) at $(ARG2)(row,col)."
-msgstr ""
+msgstr "發現子文件 $(ARG1) 內檔案的格式錯誤，位置在 $(ARG2)(row,col)。"
 
 #: source/ui/app/app.src#STR_PRINT_MERGE_MACRO.String.Text
 msgid  "Print form letters"
@@ -1076,8 +1076,8 @@ msgid  "Adapt Objects..."
 msgstr "調整物件..."
 
 #: source/ui/app/app.src#MSG_COMCORE_ASKSEARCH.QueryBox.Message
-msgid  "To proceed with this action, you must first turn off the "undo" function. Do you want to turn off the "undo" function?"
-msgstr ""
+msgid  "To proceed with this action, you must first turn off the \"undo\" function. Do you want to turn off the \"undo\" function?"
+msgstr "若要繼續此動作，您必須先關閉 [還原] 功能。您是否要關閉 [還原] 功能？"
 
 #: source/ui/app/app.src#STR_TABLE_DEFNAME.String.Text
 msgid  "Table"
@@ -1109,15 +1109,15 @@ msgstr "空白頁面"
 
 #: source/ui/app/app.src#MSG_CLPBRD_CLEAR.QueryBox.Message
 msgid  "You have a large amount of data saved in the clipboard.\nShould the clipboard contents remain available for other applications?"
-msgstr ""
+msgstr "您已經將一個較大的資料複製到剪貼簿。\n您想要讓其他的應用程序也能夠使用這個資料？"
 
 #: source/ui/app/app.src#MSG_SAVE_HTML_QUERY.QueryBox.Message
 msgid  "Conversion into HTML format \nmay cause information loss. \nDo you want to save the document?"
-msgstr ""
+msgstr "檔案轉換成 HTML 格式\n可能會引起資料損失。\n您要儲存這個檔案？"
 
 #: source/ui/app/app.src#MSG_SAVEAS_HTML_QUERY.QueryBox.Message
 msgid  "The source code can only be displayed if the document is saved in HTML format.\nWould you like to save the document as HTML?"
-msgstr ""
+msgstr "只有當檔案儲存HTML格式時，才能檢視HTML原始檔。\n要儲存成HTML格式?"
 
 #: source/ui/app/app.src#STR_ABSTRACT_TITLE.String.Text
 msgid  "Abstract: "
@@ -1161,11 +1161,11 @@ msgstr "不明的作者"
 
 #: source/ui/app/app.src#MSG_DISABLE_UNDO_QUESTION.WarningBox.Message
 msgid  "This action deletes the list of actions that can be undone. Previous changes made to the document are still valid, but cannot be undone. Do you want to continue formatting?"
-msgstr ""
+msgstr "這個動作會刪除復原清單的項目。已經變更的內容將會保留不變，但是不可以再復原所有的變更內容。要繼續執行這個格式化？"
 
 #: source/ui/app/app.src#MSG_PRINT_AS_MERGE.QueryBox.Message
 msgid  "Your document contains address database fields. Do you want to print a form letter?"
-msgstr ""
+msgstr "您的文件包含地址資料庫欄位。要合併列印？"
 
 #: source/ui/app/app.src#DLG_MERGE_SOURCE_UNAVAILABLE.ST_MERGE_SOURCE_UNAVAILABLE.FixedText.Text
 msgid  "The data source \'%1\' was not found. Thus the connection to the data source could not be established.\n\nPlease check the connections settings."
@@ -1177,7 +1177,7 @@ msgstr "檢查連線設定..."
 
 #: source/ui/app/app.src#MSG_DATA_SOURCES_UNAVAILABLE.WarningBox.Message
 msgid  "No data source has been set up yet. You need a data source, such as a database, to supply data (for example, names and addresses) for the fields."
-msgstr ""
+msgstr "還沒有建立資料來源。您需要一個例如含有姓名、地址欄位的資料來源。"
 
 #: source/ui/app/app.src#RID_MODULE_TOOLBOX.String.Text
 msgid  "Function Bar (viewing mode)"
@@ -1193,7 +1193,7 @@ msgstr "大綱編號"
 
 #: source/ui/app/app.src#MSG_DISABLE_READLINE_QUESTION.WarningBox.Message
 msgid  "In the current document, changes are being recorded but not shown as such. In large documents, delays can occur when the document is edited. Do you want to show the changes to avoid delays?"
-msgstr ""
+msgstr "已紀錄目前的文件之内的變更，但是並沒有立刻顯示出來。在編輯一個比較龐大的文件時會發生延遲的現象。您想要讓變更部分顯示出來以避免延遲？"
 
 #: source/ui/app/mn.src#MN_TXT.FN_FORMAT_PAGE_DLG.MenuItem.Text
 msgid  "Pa~ge..."
@@ -1213,7 +1213,7 @@ msgstr "下標"
 
 #: source/ui/app/mn.src#MN_TEXT_ATTR.MN_FORMAT_ALGN.MenuItem.Text
 msgid  "A~lignment"
-msgstr "對齊(~l)"
+msgstr "對齊(~L)"
 
 #: source/ui/app/mn.src#MN_TEXT_ATTR.MN_FORMAT_ALGN.SID_ATTR_PARA_ADJUST_BLOCK.MenuItem.Text
 msgid  "Justified"
@@ -1433,11 +1433,11 @@ msgstr "送回後面(~W)"
 
 #: source/ui/app/mn.src#MN_DRAW5.MN_SUB_ARRANGE.MenuItem.Text
 msgid  "~Arrange"
-msgstr "編排(~A)"
+msgstr "排序(~A)"
 
 #: source/ui/app/mn.src#MN_DRAW6.MN_SUB_ARRANGE.MenuItem.Text
 msgid  "~Arrange"
-msgstr "編排(~A)"
+msgstr "排序(~A)"
 
 #: source/ui/app/mn.src#MN_ANNOTATIONS.FN_REPLY.MenuItem.Text
 msgid  "Reply"
@@ -1505,7 +1505,7 @@ msgstr "置於背景(~B)"
 
 #: source/ui/app/mn.src#MN_MOUSE_FRAME_BEGIN.MN_WRAP.FN_WRAP_ANCHOR_ONLY.MenuItem.Text
 msgid  "~First Paragraph"
-msgstr "第一段(~F)"
+msgstr "第一段落(~1)"
 
 #: source/ui/app/mn.src#MN_DRAW_POPUPMENU.String.Text
 msgid  "Graphic"
@@ -2041,7 +2041,7 @@ msgstr "[無]"
 
 #: source/ui/chrdlg/chrdlg.src#MSG_ILLEGAL_PAGENUM.InfoBox.Message
 msgid  "Page numbers cannot be applied to the current page.  Even numbers can be used on left pages, odd numbers on right pages."
-msgstr ""
+msgstr "無法設定頁碼。在左頁只能夠設定偶數，在右頁只能設定奇數。"
 
 #: source/ui/chrdlg/swbreak.src#DLG_BREAK.ModalDialog.Text
 msgid  "Insert Break"
@@ -2693,7 +2693,7 @@ msgstr "背景顏色"
 
 #: source/ui/config/redlopt.src#TP_REDLINE_OPT.FT_INS_COL.FixedText.Text
 msgid  "Color"
-msgstr "彩色"
+msgstr "顏色"
 
 #: source/ui/config/redlopt.src#TP_REDLINE_OPT.WIN_INS.Window.Text
 msgid  "Insert"
@@ -2797,7 +2797,7 @@ msgstr "[使用者設定]"
 
 #: source/ui/config/optcomp.src#TP_OPTCOMPATIBILITY_PAGE.STR_QRYBOX_USEASDEFAULT.String.Text
 msgid  "Do you want to change the compatibility options of the default template?\nThis will affect all new documents based on the default template."
-msgstr ""
+msgstr "您是否要變更預設範本的相容性選項？\n這樣將會影響以預設範本為基礎的所有新文件。"
 
 #: source/ui/config/optcomp.src#TP_OPTCOMPATIBILITY_PAGE.STR_PRINTER_METRICS.String.Text
 msgid  "Use printer metrics for document formatting"
@@ -2841,7 +2841,7 @@ msgstr "定位物件時考慮環繞樣式"
 
 #: source/ui/config/optcomp.src#TP_OPTCOMPATIBILITY_PAGE.STR_EXPAND_WORDSPACE.String.Text
 msgid  "Expand word space on lines with manual line breaks in justified paragraphs"
-msgstr ""
+msgstr "在左右對齊的段落中手動斷行，以拉長每行的字距"
 
 #: source/ui/config/optload.src#TP_OPTLOAD_PAGE.FL_UPDATE.FixedLine.Text
 msgid  "Update"
@@ -2897,7 +2897,7 @@ msgstr "標籤"
 
 #: source/ui/config/optload.src#TP_OPTCAPTION_PAGE.FT_OBJECTS.FixedText.Text
 msgid  "Add captions automatically\nwhen inserting:"
-msgstr ""
+msgstr "插入下列項目時\n自動增加標籤："
 
 #: source/ui/config/optload.src#TP_OPTCAPTION_PAGE.FT_ORDER.FixedText.Text
 msgid  "Caption order"
@@ -3129,7 +3129,7 @@ msgstr "失敗"
 
 #: source/ui/config/mailconfigpage.src#DLG_MM_TESTACCOUNTSETTINGS.ST_ERROR_SERVER.String.Text
 msgid  "%PRODUCTNAME could not connect to the outgoing mail server. Check your system's settings and the settings in %PRODUCTNAME. Check the server name, the port and the secure connections settings"
-msgstr ""
+msgstr "%PRODUCTNAME 無法連線到傳出郵件伺服器。檢查系統的設定值以及 %PRODUCTNAME 中的設定值。檢查伺服器名稱、連接埠以及安全連線設定"
 
 #: source/ui/config/mailconfigpage.src#DLG_MM_SERVERAUTHENTICATION.ModalDialog.Text
 msgid  "Server Authentication"
@@ -3157,7 +3157,7 @@ msgstr "密碼(~P)"
 
 #: source/ui/config/mailconfigpage.src#DLG_MM_SERVERAUTHENTICATION.RB_SMPTAFTERPOP.RadioButton.Text
 msgid  "The outgoing mail server uses the same authentication as the ~incoming mail server. Enter the settings of the incoming mail server."
-msgstr ""
+msgstr "傳出郵件伺服器使用與內送郵件伺服器相同的認證。輸入內送郵件伺服器的設定(~I)。"
 
 #: source/ui/config/mailconfigpage.src#DLG_MM_SERVERAUTHENTICATION.FT_INCOMINGSERVER.FixedText.Text
 msgid  "Incoming mail server:"
@@ -3197,7 +3197,7 @@ msgstr "選擇地址清單"
 
 #: source/ui/dbui/addresslistdialog.src#DLG_MM_ADDRESSLISTDIALOG.FI_DESCRIPTION.FixedText.Text
 msgid  "Select an address list. Click '%1' to select recipients from a different list. If you do not have an address list you can create one by clicking '%2'."
-msgstr ""
+msgstr "選擇一個地址清單。按一下「%1」以選擇另一個清單中的收件者。如果您沒有地址清單，可以按一下「%2」建立。"
 
 #: source/ui/dbui/addresslistdialog.src#DLG_MM_ADDRESSLISTDIALOG.FT_LIST.FixedText.Text
 msgid  "Your recipients are currently selected from:"
@@ -3249,7 +3249,7 @@ msgstr "1."
 
 #: source/ui/dbui/mmaddressblockpage.src#DLG_MM_ADDRESSBLOCK_PAGE.FI_ADDRESSLIST.FixedText.Text
 msgid  "Select the address list containing the address data you want to use. This data is needed to create the address block."
-msgstr ""
+msgstr "選取包含您要使用之地址資料的地址清單。需要此資料來建立地址區塊。"
 
 #: source/ui/dbui/mmaddressblockpage.src#DLG_MM_ADDRESSBLOCK_PAGE.PB_ADDRESSLIST.PushButton.Text
 msgid  "Select A~ddress List..."
@@ -3285,7 +3285,7 @@ msgstr "3."
 
 #: source/ui/dbui/mmaddressblockpage.src#DLG_MM_ADDRESSBLOCK_PAGE.FI_MATCH_FIELDS.FixedText.Text
 msgid  "Match the field name used in the mail merge to the column headers in your data source."
-msgstr ""
+msgstr "比對合併列印中使用的欄位名稱與您資料來源中的欄標題。"
 
 #: source/ui/dbui/mmaddressblockpage.src#DLG_MM_ADDRESSBLOCK_PAGE.PB_ASSIGN.PushButton.Text
 msgid  "Match ~Fields..."
@@ -3346,6 +3346,10 @@ msgstr "永遠包含國家/地區(~A)"
 #: source/ui/dbui/mmaddressblockpage.src#DLG_MM_SELECTADDRESSBLOCK.RB_DEPENDENT.RadioButton.Text
 msgid  "Only ~include the country/region if it is not:"
 msgstr "僅在下列情況以外才包含國家/地區(~I)："
+
+#: source/ui/dbui/mmaddressblockpage.src#WORKAROUND.#define.Text
+msgid  "New Address Block"
+msgstr "新的地址區塊"
 
 #: source/ui/dbui/mmaddressblockpage.src#DLG_MM_CUSTOMIZEADDRESSBLOCK.ST_TITLE_EDIT.String.Text
 msgid  "Edit Address Block"
@@ -3485,7 +3489,7 @@ msgstr "指定資料來源中的欄位以配合地址元素。"
 
 #: source/ui/dbui/mmaddressblockpage.src#DLG_MM_ASSIGNFIELDS.ST_SALUTATIONMATCHING.String.Text
 msgid  "Assign the fields from your data source to match the salutation elements."
-msgstr ""
+msgstr "指定資料來源中的欄位以配合稱謂元素。"
 
 #: source/ui/dbui/mmaddressblockpage.src#DLG_MM_ASSIGNFIELDS.FI_PREVIEW.FixedText.Text
 msgid  "Address block preview"
@@ -3515,17 +3519,13 @@ msgstr "預覽"
 msgid  "< none >"
 msgstr "<無>"
 
-#: source/ui/dbui/mmaddressblockpage.src#WORKAROUND.#define.Text
-msgid  "New Address Block"
-msgstr "新的地址區塊"
-
 #: source/ui/dbui/selectdbtabledialog.src#DLG_MM_SELECTDBTABLEDDIALOG.ModalDialog.Text
 msgid  "Select Table"
 msgstr "選取表格"
 
 #: source/ui/dbui/selectdbtabledialog.src#DLG_MM_SELECTDBTABLEDDIALOG.FI_SELECT.FixedText.Text
 msgid  "The file you have selected contains more than one table. Please select the table containing the address list you want to use."
-msgstr ""
+msgstr "您選取的檔案包含一個以上的表格。請選擇包含您要使用的地址資料的表格。"
 
 #: source/ui/dbui/selectdbtabledialog.src#DLG_MM_SELECTDBTABLEDDIALOG.PB_PREVIEW.PushButton.Text
 msgid  "~Preview"
@@ -3741,7 +3741,7 @@ msgstr "將合併列印文件個人化"
 
 #: source/ui/dbui/mmmergepage.src#DLG_MM_MERGE_PAGE.FI_EDIT.FixedText.Text
 msgid  "You can personalize particular documents. Clicking '%1' will temporarily reduce the wizard to a small window so you can edit your document. After editing the document, return to the wizard by clicking 'Return to Mail Merge Wizard' in the small window."
-msgstr ""
+msgstr "您可以將特定文件個人化。按一下「%1」可暫時縮小精靈視窗，方便您編輯文件。編輯文件後，按一下小視窗中的 [返回合併列印精靈] 以返回。"
 
 #: source/ui/dbui/mmmergepage.src#DLG_MM_MERGE_PAGE.PB_EDIT.PushButton.Text
 msgid  "~Edit individual document..."
@@ -3909,7 +3909,7 @@ msgstr "無標題"
 
 #: source/ui/dbui/mmoutputpage.src#DLG_MM_OUTPUT_PAGE.ST_SUBJECTQUERY.String.Text
 msgid  "You did not specify a subject for this message. If you would like to provide one, please type it now."
-msgstr ""
+msgstr "您沒有指定此郵件的主旨。如果您要指定主旨，請現在鍵入。"
 
 #: source/ui/dbui/mmoutputpage.src#DLG_MM_OUTPUT_PAGE.ST_NOSUBJECT.String.Text
 msgid  "No subject"
@@ -3917,11 +3917,11 @@ msgstr "無主旨"
 
 #: source/ui/dbui/mmoutputpage.src#DLG_MM_OUTPUT_PAGE.ST_NOATTACHMENTNAME.String.Text
 msgid  "You did not specify a new name for the attachment. If you would like to provide one, please type it now."
-msgstr ""
+msgstr "您未指定附件的新名稱。如果您要指定名稱，請現在鍵入。"
 
 #: source/ui/dbui/mmoutputpage.src#DLG_MM_OUTPUT_PAGE.ST_CONFIGUREMAIL.String.Text
 msgid  "In order to be able to send mail merge documents by e-mail, %PRODUCTNAME requires information about the e-mail account to be used.\n\n Do you want to enter e-mail account information now?"
-msgstr ""
+msgstr "若要以電子郵件傳送合併列印文件，%PRODUCTNAME 需要將使用的電子郵件帳號的資訊。\n\n 您現在要輸入電子郵件帳號的資訊嗎？"
 
 #: source/ui/dbui/mmoutputpage.src#DLG_MM_COPYTO.ModalDialog.Text
 msgid  "Copy To"
@@ -3941,11 +3941,11 @@ msgstr "密件副本(~B)"
 
 #: source/ui/dbui/mmoutputpage.src#DLG_MM_COPYTO.FI_NOTE.FixedText.Text
 msgid  "Note:\nSeparate e-mail addresses with a semicolon (;)."
-msgstr ""
+msgstr "請注意：\n請以分號 (;) 區隔電子郵件地址。"
 
 #: source/ui/dbui/mmoutputpage.src#DLG_MM_SAVEWARNING.FI_WARNING.FixedText.Text
 msgid  "A document with the name '%1' already exists. Please save this document under a different name."
-msgstr ""
+msgstr "具名稱「%1」的檔案已存在。請以另一個名稱儲存文件。"
 
 #: source/ui/dbui/mmoutputpage.src#DLG_MM_SAVEWARNING.FT_FILENAME.FixedText.Text
 msgid  "New document name"
@@ -4131,6 +4131,10 @@ msgstr "尋找(~F)"
 msgid  "~Close"
 msgstr "關閉(~C)"
 
+#: source/ui/dbui/mailmergechildwindow.src#WORKAROUND.#define.Text
+msgid  "Return to Mail Merge Wizard"
+msgstr "返回合併列印精靈"
+
 #: source/ui/dbui/mailmergechildwindow.src#DLG_MAILMERGECHILD.FloatingWindow.Text
 msgid  "Mail Merge Wizard"
 msgstr "合併列印精靈"
@@ -4209,7 +4213,7 @@ msgstr "傳送失敗 (地址無效)"
 
 #: source/ui/dbui/mailmergechildwindow.src#DLG_MM_SENDMAILS.ST_TERMINATEQUERY.String.Text
 msgid  "There are still e-mail messages in your %PRODUCTNAME Outbox.\nWould you like to exit anyway?"
-msgstr ""
+msgstr "%PRODUCTNAME 寄件匣中尚有電子郵件訊息。\n您確定要結束嗎？"
 
 #: source/ui/dbui/mailmergechildwindow.src#DLG_MM_SENDWARNING.ModalDialog.Text
 msgid  "E-Mails could not be sent"
@@ -4222,10 +4226,6 @@ msgstr "發生下列錯誤："
 #: source/ui/dbui/mailmergechildwindow.src#DLG_MM_SENDWARNING.FT_DETAILS.FixedText.Text
 msgid  "Detailed information"
 msgstr "詳細資訊"
-
-#: source/ui/dbui/mailmergechildwindow.src#WORKAROUND.#define.Text
-msgid  "Return to Mail Merge Wizard"
-msgstr "返回合併列印精靈"
 
 #: source/ui/dbui/dbtablepreviewdialog.src#DLG_MM_DBTABLEPREVIEWDIALOG.ModalDialog.Text
 msgid  "Mail Merge Recipients"
@@ -4265,11 +4265,11 @@ msgstr "電子郵件訊息："
 
 #: source/ui/dbui/mmoutputtypepage.src#DLG_MM_OUTPUTTYPE_PAGE.ST_LETTERHINT.String.Text
 msgid  "Send letters to a group of recipients. The letters can contain an address block and a salutation. The letters can be personalized for each recipient."
-msgstr ""
+msgstr "寄信給一組收件者。此書信可以包含一個地址區塊和一個稱謂。此書信可以依每個收件者進行個人化。"
 
 #: source/ui/dbui/mmoutputtypepage.src#DLG_MM_OUTPUTTYPE_PAGE.ST_MAILHINT.String.Text
 msgid  "Send e-mail messages to a group of recipients. The e-mail messages can contain a salutation. The e-mail messages can be personalized for each recipient."
-msgstr ""
+msgstr "傳送電子郵件訊息給一組收件者。此電子郵件訊息可以包含一個稱謂。此電子郵件可以依每個收件者進行個人化。"
 
 #: source/ui/dbui/mmpreparemergepage.src#DLG_MM_PREPAREMERGE_PAGE.FI_HEADER.FixedText.Text
 msgid  "Preview and edit the document"
@@ -4277,7 +4277,7 @@ msgstr "預覽並編輯文件"
 
 #: source/ui/dbui/mmpreparemergepage.src#DLG_MM_PREPAREMERGE_PAGE.FI_PREVIEW.FixedText.Text
 msgid  "The preview of a merged document is visible now. To see the preview of another document click one of the arrows."
-msgstr ""
+msgstr "合併的文件現在已可預覽。若要預覽其他文件，按一下其中一個箭號。"
 
 #: source/ui/dbui/mmpreparemergepage.src#DLG_MM_PREPAREMERGE_PAGE.FT_RECIPIENT.FixedText.Text
 msgid  "~Recipient"
@@ -4309,7 +4309,7 @@ msgstr "編輯文件"
 
 #: source/ui/dbui/mmpreparemergepage.src#DLG_MM_PREPAREMERGE_PAGE.FI_EDIT.FixedText.Text
 msgid  "Write or edit your document now if you have not already done so. The changes will effect all merged documents.\n\nClicking 'Edit Document...' will temporarily reduce the wizard to a small window so you can edit the mail merge document. After editing the document, return to the wizard by clicking 'Return to Mail Merge Wizard' in the small window."
-msgstr ""
+msgstr "如果還沒有，則現在可以撰寫或編輯文件。這些變更將影響所有合併的文件。\n\n按一下 [編輯文件...] 可暫時縮小精靈視窗，方便您編輯合併列印的文件。編輯文件後，按一下小視窗中的 [返回合併列印精靈] 以返回。"
 
 #: source/ui/dbui/mmpreparemergepage.src#DLG_MM_PREPAREMERGE_PAGE.PB_EDIT.PushButton.Text
 msgid  "~Edit Document..."
@@ -4535,6 +4535,66 @@ msgstr "文字："
 msgid  "Characters:"
 msgstr "字元："
 
+#: source/ui/dialog/regionsw.src#FT_SUBREG_TEXT.#define.Text
+msgid  "~Section"
+msgstr "區段(~S)"
+
+#: source/ui/dialog/regionsw.src#CB_HIDE_TEXT.#define.Text
+msgid  "H~ide"
+msgstr "隱入(~I)"
+
+#: source/ui/dialog/regionsw.src#FL_HIDE_TEXT.#define.Text
+msgid  "Hide"
+msgstr "隱入"
+
+#: source/ui/dialog/regionsw.src#CB_CONDITION_TEXT.#define.Text
+msgid  "~With Condition"
+msgstr "包含條件(~W)"
+
+#: source/ui/dialog/regionsw.src#FL_PROPERTIES_TEXT.#define.Text
+msgid  "Properties"
+msgstr "屬性"
+
+#: source/ui/dialog/regionsw.src#CB_EDIT_IN_READONLY_TEXT.#define.Text
+msgid  "E~ditable in read-only document"
+msgstr "可在唯讀文件中編輯(~D)"
+
+#: source/ui/dialog/regionsw.src#FL_FILE_TEXT.#define.Text
+msgid  "Link"
+msgstr "連結"
+
+#: source/ui/dialog/regionsw.src#CB_FILE_TEXT.#define.Text
+msgid  "~Link"
+msgstr "連結(~L)"
+
+#: source/ui/dialog/regionsw.src#CB_DDE_TEXT.#define.Text
+msgid  "DD~E"
+msgstr "DD~E"
+
+#: source/ui/dialog/regionsw.src#FT_DDE_TEXT.#define.Text
+msgid  "DDE ~command"
+msgstr "DDE - 指令(~C)"
+
+#: source/ui/dialog/regionsw.src#FT_FILE_TEXT.#define.Text
+msgid  "~File name"
+msgstr "檔案名稱(~F)"
+
+#: source/ui/dialog/regionsw.src#GB_HIDE_TEXT.#define.Text
+msgid  "Hide"
+msgstr "隱入"
+
+#: source/ui/dialog/regionsw.src#GB_OPTIONS_TEXT.#define.Text
+msgid  "Options"
+msgstr "選項"
+
+#: source/ui/dialog/regionsw.src#FL_PROTECT_TEXT.#define.Text
+msgid  "Write protection"
+msgstr "唯讀"
+
+#: source/ui/dialog/regionsw.src#CB_PASSWD_TEXT.#define.Text
+msgid  "Wit~h password"
+msgstr "採用密碼(~H)"
+
 #: source/ui/dialog/regionsw.src#MD_EDIT_REGION.ModalDialog.Text
 msgid  "Edit Sections"
 msgstr "編輯區段"
@@ -4565,7 +4625,7 @@ msgstr "重複區段名稱"
 
 #: source/ui/dialog/regionsw.src#QB_CONNECT.QueryBox.Message
 msgid  "A file connection will delete the contents of the current section. Connect anyway?"
-msgstr ""
+msgstr "使用檔案連結會刪除區段內目前的內容。您還是要執行連結？"
 
 #: source/ui/dialog/regionsw.src#REG_WRONG_PASSWORD.InfoBox.Message
 msgid  "The password entered is invalid."
@@ -4699,66 +4759,6 @@ msgstr "在區段之前(~B)"
 msgid  "~After section"
 msgstr "在區段之後(~A)"
 
-#: source/ui/dialog/regionsw.src#FT_SUBREG_TEXT.#define.Text
-msgid  "~Section"
-msgstr "區段(~S)"
-
-#: source/ui/dialog/regionsw.src#CB_HIDE_TEXT.#define.Text
-msgid  "H~ide"
-msgstr "隱入(~I)"
-
-#: source/ui/dialog/regionsw.src#FL_HIDE_TEXT.#define.Text
-msgid  "Hide"
-msgstr "隱入"
-
-#: source/ui/dialog/regionsw.src#CB_CONDITION_TEXT.#define.Text
-msgid  "~With Condition"
-msgstr "包含條件(~W)"
-
-#: source/ui/dialog/regionsw.src#FL_PROPERTIES_TEXT.#define.Text
-msgid  "Properties"
-msgstr "屬性"
-
-#: source/ui/dialog/regionsw.src#CB_EDIT_IN_READONLY_TEXT.#define.Text
-msgid  "E~ditable in read-only document"
-msgstr "可在唯讀文件中編輯(~D)"
-
-#: source/ui/dialog/regionsw.src#FL_FILE_TEXT.#define.Text
-msgid  "Link"
-msgstr "連結"
-
-#: source/ui/dialog/regionsw.src#CB_FILE_TEXT.#define.Text
-msgid  "~Link"
-msgstr "連結(~L)"
-
-#: source/ui/dialog/regionsw.src#CB_DDE_TEXT.#define.Text
-msgid  "DD~E"
-msgstr "DD~E"
-
-#: source/ui/dialog/regionsw.src#FT_DDE_TEXT.#define.Text
-msgid  "DDE ~command"
-msgstr "DDE - 指令(~C)"
-
-#: source/ui/dialog/regionsw.src#FT_FILE_TEXT.#define.Text
-msgid  "~File name"
-msgstr "檔案名稱(~F)"
-
-#: source/ui/dialog/regionsw.src#GB_HIDE_TEXT.#define.Text
-msgid  "Hide"
-msgstr "隱入"
-
-#: source/ui/dialog/regionsw.src#GB_OPTIONS_TEXT.#define.Text
-msgid  "Options"
-msgstr "選項"
-
-#: source/ui/dialog/regionsw.src#FL_PROTECT_TEXT.#define.Text
-msgid  "Write protection"
-msgstr "唯讀"
-
-#: source/ui/dialog/regionsw.src#CB_PASSWD_TEXT.#define.Text
-msgid  "Wit~h password"
-msgstr "採用密碼(~H)"
-
 #: source/ui/dialog/abstract.src#DLG_INSERT_ABSTRACT.FL_1.FixedLine.Text
 msgid  "Properties"
 msgstr "屬性"
@@ -4773,7 +4773,7 @@ msgstr "每章節包含的段落"
 
 #: source/ui/dialog/abstract.src#DLG_INSERT_ABSTRACT.FT_DESC.FixedText.Text
 msgid  "The abstract contains the selected number of paragraphs from the included outline levels."
-msgstr ""
+msgstr "摘要模式顯示相關章節中選取的一定數目的段落"
 
 #: source/ui/dialog/abstract.src#DLG_INSERT_ABSTRACT.HelpButton.Text
 msgid  "Create AutoAbstract"
@@ -4853,7 +4853,7 @@ msgstr "找不到縮寫「%1」的自動圖文集。"
 
 #: source/ui/dochdl/dochdl.src#STR_NO_TABLE.String.Text
 msgid  "A table cannot be inserted into another table. However, you can paste the data into the document when the cursor is not in a table."
-msgstr ""
+msgstr "一個表格無法插入另一個表格。但是當游標不位於表格中時，您可以將資料貼至文件中。"
 
 #: source/ui/dochdl/dochdl.src#MSG_ERR_INSERT_GLOS.InfoBox.Message
 msgid  "AutoText could not be created."
@@ -4865,7 +4865,7 @@ msgstr "所需要的裁剪簿格式不存在。"
 
 #: source/ui/dochdl/dochdl.src#MSG_UPDATE_NEW_GLOS_FMT.QueryBox.Message
 msgid  "The section format is outdated.\nIt needs to be converted so that changes\ncan be saved.\nShould it be converted now?"
-msgstr ""
+msgstr "這個區域的格式是舊的。\n要儲存變更就必須轉換它格式。\n您要轉換它的格式？"
 
 #: source/ui/dochdl/dochdl.src#STR_PRIVATETEXT.String.Text
 msgid  "%PRODUCTNAME Writer"
@@ -5039,6 +5039,26 @@ msgstr "這個來源訊框已經是一個連結的來源。"
 msgid  "A closed link is not possible."
 msgstr "一個封閉式的連結是不可能的。"
 
+#: source/ui/docvw/docvw.src#STR_REDLINE_INSERT.String.Text
+msgid  "Inserted"
+msgstr "已經插入"
+
+#: source/ui/docvw/docvw.src#STR_REDLINE_DELETE.String.Text
+msgid  "Deleted"
+msgstr "已經刪除"
+
+#: source/ui/docvw/docvw.src#STR_REDLINE_FORMAT.String.Text
+msgid  "Formatted"
+msgstr "已經格式化"
+
+#: source/ui/docvw/docvw.src#STR_REDLINE_TABLE.String.Text
+msgid  "Table changed"
+msgstr "表格已被變更"
+
+#: source/ui/docvw/docvw.src#STR_REDLINE_FMTCOLL.String.Text
+msgid  "Applied Paragraph Styles"
+msgstr "已经設定了段落樣式"
+
 #: source/ui/docvw/docvw.src#STR_ENDNOTE.String.Text
 msgid  "Endnote: "
 msgstr "尾註: "
@@ -5049,7 +5069,7 @@ msgstr "註腳: "
 
 #: source/ui/docvw/docvw.src#MSG_READONLY_CONTENT.InfoBox.Message
 msgid  "Readonly content cannot be changed.\nNo modifications will be accepted"
-msgstr ""
+msgstr "輸入游標或選取的位置是受保護的。\n無法修改唯讀的內容。"
 
 #: source/ui/docvw/docvw.src#STR_TABLE_COL_ADJUST.String.Text
 msgid  "Adjust table column"
@@ -5074,26 +5094,6 @@ msgstr "選取表格欄"
 #: source/ui/docvw/docvw.src#STR_SMARTTAG_CLICK.String.Text
 msgid  "%s-click to open Smart Tag menu"
 msgstr "%s-按一下以開啟智慧型標籤功能表"
-
-#: source/ui/docvw/docvw.src#STR_REDLINE_INSERT.String.Text
-msgid  "Inserted"
-msgstr "已經插入"
-
-#: source/ui/docvw/docvw.src#STR_REDLINE_DELETE.String.Text
-msgid  "Deleted"
-msgstr "已經刪除"
-
-#: source/ui/docvw/docvw.src#STR_REDLINE_FORMAT.String.Text
-msgid  "Formatted"
-msgstr "已經格式化"
-
-#: source/ui/docvw/docvw.src#STR_REDLINE_TABLE.String.Text
-msgid  "Table changed"
-msgstr "表格已被變更"
-
-#: source/ui/docvw/docvw.src#STR_REDLINE_FMTCOLL.String.Text
-msgid  "Applied Paragraph Styles"
-msgstr "已经設定了段落樣式"
 
 #: source/ui/docvw/access.src#STR_ACCESS_DOC_NAME.String.Text
 msgid  "Document view"
@@ -5165,7 +5165,7 @@ msgstr "動作"
 
 #: source/ui/docvw/access.src#STR_ACCESS_ANNOTATION_BUTTON_DESC.String.Text
 msgid  "Activate this button to open a list of actions which can be performed on this comment and other comments"
-msgstr ""
+msgstr "啟動此按鈕，開啟可對此備註及其他備註執行的動作清單"
 
 #: source/ui/docvw/access.src#STR_ACCESS_PREVIEW_DOC_NAME.String.Text
 msgid  "Document preview"
@@ -5214,6 +5214,10 @@ msgstr "- 沒有安裝印表機 -"
 #: source/ui/envelp/envprt.src#TP_ENV_PRT.BTN_PRTSETUP.PushButton.Text
 msgid  "Setup..."
 msgstr "設置..."
+
+#: source/ui/envelp/mailmrge.src#_MAIL_MERGE_STRING_.#define.Text
+msgid  "Mail Merge"
+msgstr "合併列印"
 
 #: source/ui/envelp/mailmrge.src#DLG_MAILMERGE.RB_ALL.RadioButton.Text
 msgid  "~All"
@@ -5337,11 +5341,7 @@ msgstr "新增連線(~C)"
 
 #: source/ui/envelp/mailmrge.src#DLG_MERGE_FIELD_CONNECTIONS.FT_INFO.FixedText.Text
 msgid  "Fields are used to personalize form letters. The fields are placeholders for data from a data source, such as a database. The fields in the form letter must be connected to the data source."
-msgstr ""
-
-#: source/ui/envelp/mailmrge.src#_MAIL_MERGE_STRING_.#define.Text
-msgid  "Mail Merge"
-msgstr "合併列印"
+msgstr "用來自訂個人化表單信函的欄位。欄位是資料來源 (例如資料庫) 中資料的預留位置。表單信函中的欄位必須連線至資料來源。"
 
 #: source/ui/envelp/labprt.src#TP_LAB_PRT.BTN_PAGE.RadioButton.Text
 msgid  "~Entire page"
@@ -5397,7 +5397,7 @@ msgstr "開啟新檔(~N)"
 
 #: source/ui/envelp/envelp.src#STR_SENDER_TOKENS.String.Text
 msgid  "COMPANY;CR;FIRSTNAME; ;LASTNAME;CR;ADDRESS;CR;CITY; ;STATEPROV; ;POSTALCODE;CR;COUNTRY;CR;"
-msgstr ""
+msgstr "COMPANY;CR;FIRSTNAME;;LASTNAME;CR;ADDRESS;CR;CITY;;STATEPROV; ;POSTALCODE;CR;COUNTRY;CR;"
 
 #: source/ui/envelp/envfmt.src#TP_ENV_FMT.FL_ADDRESSEE.FixedLine.Text
 msgid  "Addressee"
@@ -5470,6 +5470,14 @@ msgstr "字元(~H)..."
 #: source/ui/envelp/envfmt.src#MNU_EDIT.MID_PARA.MenuItem.Text
 msgid  "P~aragraph..."
 msgstr "段落(~A)..."
+
+#: source/ui/envelp/label.src#LABEL_STRING.#define.Text
+msgid  "Labels"
+msgstr "標籤"
+
+#: source/ui/envelp/label.src#BUSINESS_CARD_STRING.#define.Text
+msgid  "Business Cards"
+msgstr "名片"
 
 #: source/ui/envelp/label.src#DLG_LAB.1.TP_PRIVATE_DATA.PageItem.Text
 msgid  "Private"
@@ -5639,14 +5647,6 @@ msgstr "傳真"
 msgid  "Ho~mepage / e-mail"
 msgstr "首頁/電子郵件(~M)"
 
-#: source/ui/envelp/label.src#LABEL_STRING.#define.Text
-msgid  "Labels"
-msgstr "標籤"
-
-#: source/ui/envelp/label.src#BUSINESS_CARD_STRING.#define.Text
-msgid  "Business Cards"
-msgstr "名片"
-
 #: source/ui/envelp/labfmt.src#TP_LAB_FMT.TXT_HDIST.FixedText.Text
 msgid  "Hori~zontal pitch"
 msgstr "水平間隔(~Z)"
@@ -5728,8 +5728,8 @@ msgid  "Options"
 msgstr "選項"
 
 #: source/ui/envelp/labfmt.src#DLG_SAVE_LABEL.MB_QUERY.QueryBox.Message
-msgid  "The label "%1 / %2" already exists.\nDo you want to overwrite it?"
-msgstr ""
+msgid  "The label \"%1 / %2\" already exists.\nDo you want to overwrite it?"
+msgstr "這個標籤「%1 / %2」已經存在。\n要覆寫？"
 
 #: source/ui/envelp/labfmt.src#DLG_SAVE_LABEL.QueryBox.Text
 msgid  "Save Label Format"
@@ -6069,7 +6069,7 @@ msgstr "時間"
 
 #: source/ui/fldui/fldui.src#STR_FILENAMEFLD.String.Text
 msgid  "File name"
-msgstr "檔案名稱"
+msgstr "檔案名"
 
 #: source/ui/fldui/fldui.src#STR_DBNAMEFLD.String.Text
 msgid  "Database Name"
@@ -6089,7 +6089,7 @@ msgstr "統計"
 
 #: source/ui/fldui/fldui.src#STR_AUTHORFLD.String.Text
 msgid  "Author"
-msgstr "作者"
+msgstr "使用者"
 
 #: source/ui/fldui/fldui.src#STR_TEMPLNAMEFLD.String.Text
 msgid  "Templates"
@@ -6185,7 +6185,7 @@ msgstr "任何一個資料條目"
 
 #: source/ui/fldui/fldui.src#STR_DBSETNUMBERFLD.String.Text
 msgid  "Record number"
-msgstr "條目號碼"
+msgstr "資料條目編號"
 
 #: source/ui/fldui/fldui.src#STR_PREVPAGEFLD.String.Text
 msgid  "Previous page"
@@ -6405,7 +6405,7 @@ msgstr "文字"
 
 #: source/ui/fldui/fldui.src#FMT_AUTHOR_NAME.String.Text
 msgid  "Name"
-msgstr "名稱"
+msgstr "姓名"
 
 #: source/ui/fldui/fldui.src#FMT_AUTHOR_SCUT.String.Text
 msgid  "Initials"
@@ -6609,7 +6609,7 @@ msgstr "瀏覽..."
 
 #: source/ui/fldui/changedb.src#DLG_CHANGE_DB.FT_DESC.FixedText.Text
 msgid  "Use this dialog to replace the databases you access in your document via database fields, with other databases. You can only make one change at a time. Multiple selection is possible in the list on the left.\nUse the browse button to select a database file."
-msgstr ""
+msgstr "使用此對話方塊將您透過資料庫欄位在文件中存取的資料庫更換為其他資料庫。您一次只能夠變更一個資料庫。目前在左邊的清單中可以進行多重選取。\n使用瀏覽按鈕以選取資料庫檔案。"
 
 #: source/ui/fldui/changedb.src#DLG_CHANGE_DB.FT_DOCDBTEXT.FixedText.Text
 msgid  "Database applied to document:"
@@ -6853,7 +6853,7 @@ msgstr "類型"
 
 #: source/ui/fmtui/tmpdlg.src#DLG_TEMPLATE_3.1.TP_FRM_ADD.PageItem.Text
 msgid  "Options"
-msgstr "選項"
+msgstr "其它"
 
 #: source/ui/fmtui/tmpdlg.src#DLG_TEMPLATE_3.1.TP_FRM_WRAP.PageItem.Text
 msgid  "Wrap"
@@ -6881,7 +6881,7 @@ msgstr "項目符號"
 
 #: source/ui/fmtui/tmpdlg.src#DLG_TEMPLATE_5.1.RID_SVXPAGE_PICK_SINGLE_NUM.PageItem.Text
 msgid  "Numbering Style"
-msgstr "編號樣式"
+msgstr "編號類型"
 
 #: source/ui/fmtui/tmpdlg.src#DLG_TEMPLATE_5.1.RID_SVXPAGE_PICK_NUM.PageItem.Text
 msgid  "Outline"
@@ -6905,7 +6905,7 @@ msgstr "編號樣式"
 
 #: source/ui/frmdlg/frmpage.src#DLG_FRM_STD.TabDialog.Text
 msgid  "Frame"
-msgstr "訊框"
+msgstr "框架"
 
 #: source/ui/frmdlg/frmpage.src#DLG_FRM_STD.1.TP_FRM_STD.PageItem.Text
 msgid  "Type"
@@ -7388,6 +7388,14 @@ msgid  "~Position"
 msgstr "位置(~P)"
 
 #: source/ui/frmdlg/column.src#TP_COLUMN.LB_POSITION.Default.StringList.item
+msgid  "Top"
+msgstr "上"
+
+#: source/ui/frmdlg/column.src#TP_COLUMN.LB_POSITION.Default.StringList.item
+msgid  "Centered"
+msgstr "置中"
+
+#: source/ui/frmdlg/column.src#TP_COLUMN.LB_POSITION.Default.StringList.item
 msgid  "Bottom"
 msgstr "下"
 
@@ -7450,14 +7458,6 @@ msgstr "%1 與 %2 留空"
 #: source/ui/frmdlg/column.src#STR_ACCESS_COLUMN_WIDTH.String.Text
 msgid  "Column %1 Width"
 msgstr "第 %1 欄寬"
-
-#: source/ui/frmdlg/column.src#TP_COLUMN.LB_POSITION.Default.StringList.item
-msgid  "Top"
-msgstr "上"
-
-#: source/ui/frmdlg/column.src#TP_COLUMN.LB_POSITION.Default.StringList.item
-msgid  "Centered"
-msgstr "置中"
 
 #: source/ui/frmdlg/frmui.src#STR_TOP.String.Text
 msgid  "~Top"
@@ -7589,11 +7589,11 @@ msgstr "位置"
 
 #: source/ui/frmdlg/cption.src#DLG_CAPTION.STR_BEGINNING.String.Text
 msgid  "Above"
-msgstr "之上"
+msgstr "在起始位置"
 
 #: source/ui/frmdlg/cption.src#DLG_CAPTION.STR_END.String.Text
 msgid  "Below"
-msgstr "之下"
+msgstr "在結束位置"
 
 #: source/ui/frmdlg/cption.src#DLG_CAPTION.STR_ABOVE.String.Text
 msgid  "Above"
@@ -7666,6 +7666,10 @@ msgstr "主控文件"
 #: source/ui/globdoc/globdoc.src#STR_WRITER_GLOBALDOC_FULLTYPE.String.Text
 msgid  "%PRODUCTNAME %PRODUCTVERSION Master Document"
 msgstr "%PRODUCTNAME %PRODUCTVERSION 主控文件"
+
+#: source/ui/index/idxmrk.src#IDX_PHONETIC_LISTBOX_DESCRIPTION.#define.Text
+msgid  "Phonetic reading"
+msgstr "語音描述"
 
 #: source/ui/index/idxmrk.src#IDX_DIALOG_WINDOW.WIN_DLG.BT_OK.OKButton.Text
 msgid  "Insert"
@@ -7805,11 +7809,7 @@ msgstr "插入參考文獻目錄項目"
 
 #: source/ui/index/idxmrk.src#DLG_CHANGE_AUTH_ENTRY.QueryBox.Message
 msgid  "The document already contains the bibliography entry but with different data. Do you want to adjust the existing entries?"
-msgstr ""
-
-#: source/ui/index/idxmrk.src#IDX_PHONETIC_LISTBOX_DESCRIPTION.#define.Text
-msgid  "Phonetic reading"
-msgstr "語音描述"
+msgstr "文件內已經含有附帶不同資料的目錄條目。要調整已經存在的條目？"
 
 #: source/ui/index/cnttab.src#STR_TITLE.String.Text
 msgid  "Title"
@@ -7824,8 +7824,8 @@ msgid  "Level "
 msgstr "級 "
 
 #: source/ui/index/cnttab.src#STR_FILE_NOT_FOUND.String.Text
-msgid  "The file, "%1" in the "%2" path could not be found."
-msgstr ""
+msgid  "The file, \"%1\" in the \"%2\" path could not be found."
+msgstr "無法在路徑「%2」內找到檔案「%1」。"
 
 #: source/ui/index/cnttab.src#DLG_MULTI_TOX.1.TP_TOX_SELECT.PageItem.Text
 msgid  "Index/Table"
@@ -8557,7 +8557,7 @@ msgstr "路徑(~P)..."
 
 #: source/ui/misc/glossary.src#DLG_GLOSSARY.ST_READONLY_PATH.String.Text
 msgid  "The 'AutoText' directories are read-only. Do you want to call the path settings dialog?"
-msgstr ""
+msgstr "「AutoText」目錄是唯讀的。要打開一個路徑設置對話方塊？"
 
 #: source/ui/misc/glossary.src#DLG_GLOSSARY.MNU_EDIT.FN_GL_DEFINE.MenuItem.Text
 msgid  "~New"
@@ -8672,6 +8672,14 @@ msgid  "~Position"
 msgstr "位置(~P)"
 
 #: source/ui/misc/pgfnote.src#TP_FOOTNOTE_PAGE.DLB_LINEPOS.Default.StringList.item
+msgid  "Left"
+msgstr "左"
+
+#: source/ui/misc/pgfnote.src#TP_FOOTNOTE_PAGE.DLB_LINEPOS.Default.StringList.item
+msgid  "Centered"
+msgstr "置中"
+
+#: source/ui/misc/pgfnote.src#TP_FOOTNOTE_PAGE.DLB_LINEPOS.Default.StringList.item
 msgid  "Right"
 msgstr "右"
 
@@ -8690,14 +8698,6 @@ msgstr "至註腳文的間隔(~S)"
 #: source/ui/misc/pgfnote.src#TP_FOOTNOTE_PAGE.FL_LINE.FixedLine.Text
 msgid  "Separator line"
 msgstr "分隔線"
-
-#: source/ui/misc/pgfnote.src#TP_FOOTNOTE_PAGE.DLB_LINEPOS.Default.StringList.item
-msgid  "Left"
-msgstr "左"
-
-#: source/ui/misc/pgfnote.src#TP_FOOTNOTE_PAGE.DLB_LINEPOS.Default.StringList.item
-msgid  "Centered"
-msgstr "置中"
 
 #: source/ui/misc/num.src#TP_NUM_POSITION.FL_LEVEL.FixedLine.Text
 msgid  "Level"
@@ -9437,7 +9437,7 @@ msgstr "編號(~B)"
 
 #: source/ui/misc/docfnote.src#TP_FOOTNOTEOPTION.FT_OFFSET.FixedText.Text
 msgid  "~Start at"
-msgstr "開始時間(~S)"
+msgstr "開始從(~S)"
 
 #: source/ui/misc/docfnote.src#TP_FOOTNOTEOPTION.FT_NUMCOUNT.FixedText.Text
 msgid  "~Counting"
@@ -9485,7 +9485,7 @@ msgstr "段落(~R)"
 
 #: source/ui/misc/docfnote.src#TP_FOOTNOTEOPTION.FT_PAGE_TEMPL.FixedText.Text
 msgid  "~Page"
-msgstr "頁面(~P)"
+msgstr "頁(~P)"
 
 #: source/ui/misc/docfnote.src#TP_FOOTNOTEOPTION.FL_CHAR_TEMPL.FixedLine.Text
 msgid  "Character Styles"
@@ -10065,7 +10065,7 @@ msgstr "自動校正"
 
 #: source/ui/shells/shells.src#STR_REDLINE_MSG.String.Text
 msgid  "AutoCorrect completed.\nYou can accept or reject all changes,\nor accept or reject particular changes."
-msgstr ""
+msgstr "自動校正已完成。\n您可以接受或拒絕所有變更，\n或是接受或拒絕特定變更。"
 
 #: source/ui/shells/shells.src#STR_REDLINE_ACCEPT_ALL.String.Text
 msgid  "Accept All"
@@ -10309,7 +10309,7 @@ msgstr "小計"
 
 #: source/ui/table/tautofmt.src#DLG_AUTOFMT_TABLE.STR_INVALID_AFNAME.String.Text
 msgid  "You have entered an invalid name.\nThe desired AutoFormat could not be created. \nTry again using a different name."
-msgstr ""
+msgstr "您輸入了一個無效的名稱。\n無法建立自動格式。\n請輸入一個有效名稱。"
 
 #: source/ui/table/mergetbl.src#DLG_MERGE_TABLE.FL_MERGE.FixedLine.Text
 msgid  "Mode"
@@ -10493,7 +10493,7 @@ msgstr "第一欄當作標題(~C)"
 
 #: source/ui/table/chartins.src#DLG_INSERT_CHART.FT_TEXT.FixedText.Text
 msgid  "If the selected cells do not contain the desired data, select the data range now.\n\nInclude the cells containing column and row labels if you want them to be included in your chart."
-msgstr ""
+msgstr "如果選擇的儲存格並未包含想要的資料，現在請選取資料範圍。\n\n如果您希望他們包含您的圖表當中，請納入含有欄與列標籤的儲存格。"
 
 #: source/ui/table/chartins.src#DLG_INSERT_CHART.BT_PREV.PushButton.Text
 msgid  "<< ~Back"
@@ -10506,6 +10506,10 @@ msgstr "繼續(~N)"
 #: source/ui/table/chartins.src#DLG_INSERT_CHART.BT_FINISH.PushButton.Text
 msgid  "Cre~ate"
 msgstr "完成(~A)"
+
+#: source/ui/table/tabledlg.src#TEXT_TEXTFLOW.#define.Text
+msgid  "Text Flow"
+msgstr "換行和分頁"
 
 #: source/ui/table/tabledlg.src#DLG_FORMAT_TABLE.TabDialog.Text
 msgid  "Table Format"
@@ -10601,7 +10605,7 @@ msgstr "文字方向(~D)"
 
 #: source/ui/table/tabledlg.src#TP_FORMAT_TABLE.LB_TEXTDIRECTION.0.StringList.item
 msgid  "Left-to-right"
-msgstr "由左至右"
+msgstr "從左向右"
 
 #: source/ui/table/tabledlg.src#TP_FORMAT_TABLE.LB_TEXTDIRECTION.1.StringList.item
 msgid  "Right-to-left"
@@ -10609,7 +10613,7 @@ msgstr "從右向左"
 
 #: source/ui/table/tabledlg.src#TP_FORMAT_TABLE.LB_TEXTDIRECTION.4.StringList.item
 msgid  "Use superordinate object settings"
-msgstr "使用上層物件設定"
+msgstr "沿用現有的文字方向的設定"
 
 #: source/ui/table/tabledlg.src#TP_TABLE_COLUMN.CB_MOD_TBL.CheckBox.Text
 msgid  "Adapt table ~width"
@@ -10715,10 +10719,6 @@ msgstr "底部"
 msgid  "The name of the table must not contain spaces."
 msgstr "表格名稱不能含有空格字元。"
 
-#: source/ui/table/tabledlg.src#TEXT_TEXTFLOW.#define.Text
-msgid  "Text Flow"
-msgstr "換行和分頁"
-
 #: source/ui/table/splittbl.src#DLG_SPLIT_TABLE.FL_SPLIT.FixedLine.Text
 msgid  "Mode"
 msgstr "模式"
@@ -10753,7 +10753,7 @@ msgstr "您要檢查內文﹖"
 
 #: source/ui/uiview/view.src#DLG_PRT_FIELDNAME.QueryBox.Message
 msgid  "Show field commands option is checked.\nDo you want to print the document with field names?"
-msgstr ""
+msgstr "欄位名稱選項還處於使用狀態。\n您要連同欄位名稱一起列印這個檔案﹖"
 
 #: source/ui/uiview/view.src#DLG_SPECIAL.QueryBox.Message
 msgid  "Do you want check the special regions?"
@@ -10761,7 +10761,7 @@ msgstr "您要檢查特殊區域﹖"
 
 #: source/ui/uiview/view.src#DLG_THESAURUS.QueryBox.Message
 msgid  "This word appears in the list of words you want to avoid! Start thesaurus?"
-msgstr ""
+msgstr "您應該避免使用這個字﹗您要啟動同義詞詞典嗎﹖"
 
 #: source/ui/uiview/view.src#DLG_SPECIAL_FORCED.QueryBox.Message
 msgid  "Check special regions is deactivated. Check anyway?"
@@ -10769,15 +10769,19 @@ msgstr "已經關閉特殊區域的檢查﹐還是要執行這個指令﹖"
 
 #: source/ui/uiview/view.src#MSG_SEARCH_END.QueryBox.Message
 msgid  "%PRODUCTNAME Writer has searched to the end of the document. Do you want to continue at the beginning?"
-msgstr ""
+msgstr "%PRODUCTNAME Writer 已經搜尋至文件的結束位置。要從文件的起始位置繼續搜尋？"
 
 #: source/ui/uiview/view.src#MSG_SEARCH_START.QueryBox.Message
 msgid  "%PRODUCTNAME Writer has searched to the beginning of the document. Do you want to continue at the end?"
-msgstr ""
+msgstr "%PRODUCTNAME Writer 已經搜尋至文件的起始位置。要從文件的結束位置繼續搜尋﹖"
 
 #: source/ui/uiview/view.src#MSG_NO_MERGE_ENTRY.InfoBox.Message
 msgid  "Could not merge documents."
 msgstr "無法合併文件。"
+
+#: source/ui/uiview/view.src#MSG_ERR_INSERT_GLOS.InfoBox.Message
+msgid  "AutoText could not be created."
+msgstr "無法建立自動圖文集。"
 
 #: source/ui/uiview/view.src#MSG_ERR_SRCSTREAM.InfoBox.Message
 msgid  "The source cannot be loaded."
@@ -10871,10 +10875,6 @@ msgstr "HTML 原始檔"
 msgid  "HTML Source"
 msgstr "HTML 原始檔"
 
-#: source/ui/uiview/view.src#MSG_ERR_INSERT_GLOS.InfoBox.Message
-msgid  "AutoText could not be created."
-msgstr "無法建立自動圖文集。"
-
 #: source/ui/uiview/pview.src#DLG_PAGEPREVIEW_ZOOM.ModalDialog.Text
 msgid  "Multiple Pages"
 msgstr "多頁"
@@ -10908,7 +10908,7 @@ msgid  "Capitalize first letter of sentences"
 msgstr "每個句首採用大寫字母"
 
 #: source/ui/utlui/utlui.src#RID_SHELLRES_AUTOFMTSTRS.STR_AUTOFMTREDL_TYPO+1.String.Text
-msgid  "Replace "standard" quotes with %1 \bcustom%2 quotes"
+msgid  "Replace \"standard\" quotes with %1 \bcustom%2 quotes"
 msgstr ""
 
 #: source/ui/utlui/utlui.src#RID_SHELLRES_AUTOFMTSTRS.STR_AUTOFMTREDL_USER_STYLE+1.String.Text
@@ -10948,28 +10948,28 @@ msgid  "Combine single line paragraphs"
 msgstr "合併單行段落"
 
 #: source/ui/utlui/utlui.src#RID_SHELLRES_AUTOFMTSTRS.STR_AUTOFMTREDL_SET_TMPL_TEXT +1.String.Text
-msgid  "Set "Text body" Style"
-msgstr ""
+msgid  "Set \"Text body\" Style"
+msgstr "設定樣式「內文」"
 
 #: source/ui/utlui/utlui.src#RID_SHELLRES_AUTOFMTSTRS.STR_AUTOFMTREDL_SET_TMPL_INDENT.String.Text
-msgid  "Set "Text body indent" Style"
-msgstr ""
+msgid  "Set \"Text body indent\" Style"
+msgstr "設定樣式「內文縮排」"
 
 #: source/ui/utlui/utlui.src#RID_SHELLRES_AUTOFMTSTRS.STR_AUTOFMTREDL_SET_TMPL_NEG_INDENT.String.Text
-msgid  "Set "Hanging indent" Style"
-msgstr ""
+msgid  "Set \"Hanging indent\" Style"
+msgstr "設定樣式「首行凸排」"
 
 #: source/ui/utlui/utlui.src#RID_SHELLRES_AUTOFMTSTRS.STR_AUTOFMTREDL_SET_TMPL_TEXT_INDENT +1.String.Text
-msgid  "Set "Text body indent" Style"
-msgstr ""
+msgid  "Set \"Text body indent\" Style"
+msgstr "設定樣式「內文縮排」"
 
 #: source/ui/utlui/utlui.src#RID_SHELLRES_AUTOFMTSTRS.STR_AUTOFMTREDL_SET_TMPL_HEADLINE +1.String.Text
-msgid  "Set "Heading $(ARG1)" Style"
-msgstr ""
+msgid  "Set \"Heading $(ARG1)\" Style"
+msgstr "設定樣式「標題 $(ARG1)」"
 
 #: source/ui/utlui/utlui.src#RID_SHELLRES_AUTOFMTSTRS.STR_AUTOFMTREDL_SET_NUMBULET +1.String.Text
-msgid  "Set "Bullet" or "Numbering" Style"
-msgstr ""
+msgid  "Set \"Bullet\" or \"Numbering\" Style"
+msgstr "設定樣式「項目符號」和「編號」"
 
 #: source/ui/utlui/utlui.src#RID_SHELLRES_AUTOFMTSTRS.STR_AUTOFMTREDL_DEL_MORELINES +1.String.Text
 msgid  "Combine paragraphs"
@@ -11137,11 +11137,11 @@ msgstr "[系統]"
 
 #: source/ui/utlui/utlui.src#STR_MULT_INTERACT_SPELL_WARN.String.Text
 msgid  "The interactive spellcheck is already active\nin a different document"
-msgstr ""
+msgstr "已經在其他的文件中\n啟動互動式拼字檢查"
 
 #: source/ui/utlui/utlui.src#STR_MULT_INTERACT_HYPH_WARN.String.Text
 msgid  "The interactive hyphenation is already active\nin a different document"
-msgstr ""
+msgstr "已經在不同的文件中\n啟動互動式斷字"
 
 #: source/ui/utlui/utlui.src#STR_SPELL_TITLE.String.Text
 msgid  "Spellcheck"
@@ -11357,7 +11357,7 @@ msgstr "小手冊"
 
 #: source/ui/utlui/initui.src#STR_AUTH_TYPE_CONFERENCE.String.Text
 msgid  "Conference proceedings"
-msgstr "會議報告"
+msgstr "會談記錄"
 
 #: source/ui/utlui/initui.src#STR_AUTH_TYPE_INBOOK.String.Text
 msgid  "Book excerpt"
@@ -11413,23 +11413,23 @@ msgstr "網頁文件"
 
 #: source/ui/utlui/initui.src#STR_AUTH_TYPE_CUSTOM1.String.Text
 msgid  "User-defined1"
-msgstr "使用者定義1"
+msgstr "自訂類型 1"
 
 #: source/ui/utlui/initui.src#STR_AUTH_TYPE_CUSTOM2.String.Text
 msgid  "User-defined2"
-msgstr "使用者定義2"
+msgstr "自訂類型 2"
 
 #: source/ui/utlui/initui.src#STR_AUTH_TYPE_CUSTOM3.String.Text
 msgid  "User-defined3"
-msgstr "使用者定義3"
+msgstr "自訂類型 3"
 
 #: source/ui/utlui/initui.src#STR_AUTH_TYPE_CUSTOM4.String.Text
 msgid  "User-defined4"
-msgstr "使用者定義4"
+msgstr "自訂類型 4"
 
 #: source/ui/utlui/initui.src#STR_AUTH_TYPE_CUSTOM5.String.Text
 msgid  "User-defined5"
-msgstr "使用者定義5"
+msgstr "自訂類型 5"
 
 #: source/ui/utlui/initui.src#STR_AUTH_FIELD_IDENTIFIER.String.Text
 msgid  "Short name"
@@ -12667,6 +12667,18 @@ msgstr "垂直置中"
 msgid  "at bottom"
 msgstr "下"
 
+#: source/ui/utlui/attrdesc.src#STR_LINE_TOP.String.Text
+msgid  "Top of line"
+msgstr "行上方"
+
+#: source/ui/utlui/attrdesc.src#STR_LINE_CENTER.String.Text
+msgid  "Line centered"
+msgstr "和行垂直置中"
+
+#: source/ui/utlui/attrdesc.src#STR_LINE_BOTTOM.String.Text
+msgid  "Bottom of line"
+msgstr "行下方"
+
 #: source/ui/utlui/attrdesc.src#STR_REGISTER_ON.String.Text
 msgid  "Register-true"
 msgstr "正反頁的行距相等"
@@ -12834,18 +12846,6 @@ msgstr "合併邊線"
 #: source/ui/utlui/attrdesc.src#STR_CONNECT_BORDER_OFF.String.Text
 msgid  "Do not merge borders"
 msgstr "不合併邊線"
-
-#: source/ui/utlui/attrdesc.src#STR_LINE_TOP.String.Text
-msgid  "Top of line"
-msgstr "行上方"
-
-#: source/ui/utlui/attrdesc.src#STR_LINE_CENTER.String.Text
-msgid  "Line centered"
-msgstr "和行垂直置中"
-
-#: source/ui/utlui/attrdesc.src#STR_LINE_BOTTOM.String.Text
-msgid  "Bottom of line"
-msgstr "行下方"
 
 #: source/ui/web/web.src#STR_HUMAN_SWWEBDOC_NAME.String.Text
 msgid  "HTML"

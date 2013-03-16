@@ -136,6 +136,10 @@ msgid  "km"
 msgstr "கி.மீ"
 
 #: source/src/units.src#SV_FUNIT_STRINGS.FUNIT_TWIP.ItemList.item
+msgid  "twips"
+msgstr "twips"
+
+#: source/src/units.src#SV_FUNIT_STRINGS.FUNIT_TWIP.ItemList.item
 msgid  "twip"
 msgstr "twip"
 
@@ -148,32 +152,16 @@ msgid  "pi"
 msgstr "pi"
 
 #: source/src/units.src#SV_FUNIT_STRINGS.FUNIT_INCH.ItemList.item
-msgid  "inch"
-msgstr "அங்குலம்"
-
-#: source/src/units.src#SV_FUNIT_STRINGS.FUNIT_FOOT.ItemList.item
-msgid  "feet"
-msgstr "அடி"
-
-#: source/src/units.src#SV_FUNIT_STRINGS.FUNIT_MILE.ItemList.item
-msgid  "mile"
-msgstr "கல்"
-
-#: source/src/units.src#SV_FUNIT_STRINGS.FUNIT_PERCENT.ItemList.item
-msgid  "%"
-msgstr "%"
-
-#: source/src/units.src#SV_FUNIT_STRINGS.FUNIT_TWIP.ItemList.item
-msgid  "twips"
-msgstr "twips"
-
-#: source/src/units.src#SV_FUNIT_STRINGS.FUNIT_INCH.ItemList.item
-msgid  """
-msgstr ""
+msgid  "\""
+msgstr "\""
 
 #: source/src/units.src#SV_FUNIT_STRINGS.FUNIT_INCH.ItemList.item
 msgid  "in"
 msgstr "அங்."
+
+#: source/src/units.src#SV_FUNIT_STRINGS.FUNIT_INCH.ItemList.item
+msgid  "inch"
+msgstr "அங்குலம்"
 
 #: source/src/units.src#SV_FUNIT_STRINGS.FUNIT_FOOT.ItemList.item
 msgid  "'"
@@ -187,13 +175,25 @@ msgstr "அடி"
 msgid  "foot"
 msgstr "அடி"
 
+#: source/src/units.src#SV_FUNIT_STRINGS.FUNIT_FOOT.ItemList.item
+msgid  "feet"
+msgstr "அடி"
+
 #: source/src/units.src#SV_FUNIT_STRINGS.FUNIT_MILE.ItemList.item
 msgid  "miles"
 msgstr "கல்"
 
+#: source/src/units.src#SV_FUNIT_STRINGS.FUNIT_MILE.ItemList.item
+msgid  "mile"
+msgstr "கல்"
+
+#: source/src/units.src#SV_FUNIT_STRINGS.FUNIT_PERCENT.ItemList.item
+msgid  "%"
+msgstr "%"
+
 #: source/src/stdtext.src#SV_STDTEXT_SERVICENOTAVAILABLE.String.Text
 msgid  "The component (%s) could not be loaded.\nPlease start setup with the repair option."
-msgstr ""
+msgstr "(%s) என்ற பகுதியை ஏற்ற இயலவில்லை.\nபழுதுபார்க்கும் தேர்வுடன் நிறுவலைத் தொடங்கு."
 
 #: source/src/stdtext.src#SV_STDTEXT_DONTHINTAGAIN.String.Text
 msgid  "Do not show this information again."
@@ -213,11 +213,11 @@ msgstr "தவறான பதிப்பு"
 
 #: source/src/stdtext.src#SV_ACCESSERROR_BRIDGE_MSG.String.Text
 msgid  "%PRODUCTNAME %PRODUCTVERSION requires a Java Access Bridge 1.0.3 or later version to support accessibility."
-msgstr ""
+msgstr "%PRODUCTNAME %PRODUCTVERSIONக்கு ஜாவா அனுமதி பாதை 1.0.3 அல்லது அடுத்த பதிப்பு தேவை."
 
 #: source/src/stdtext.src#SV_ACCESSERROR_OK_CANCEL_MSG.String.Text
 msgid  "Click '%OK' to start %PRODUCTNAME %PRODUCTVERSION without accessibility support, or click '%CANCEL' to exit %PRODUCTNAME %PRODUCTVERSION."
-msgstr ""
+msgstr "%PRODUCTNAME %PRODUCTVERSION ஐ அணுகல் ஆதரவில்லாமல் தொடங்க  '%OK' பொத்தானை சொடுக்கு, அல்லது '%CANCEL'ஐச் சொடுக்கி %PRODUCTNAME %PRODUCTVERSION லிருந்து வெளியேறு."
 
 #: source/src/stdtext.src#SV_ACCESSERROR_MISSING_BRIDGE.String.Text
 msgid  "No Java Access Bridge"
@@ -229,7 +229,7 @@ msgstr "தவறான ஜாவா நிறுவல்"
 
 #: source/src/stdtext.src#SV_ACCESSERROR_JAVA_MSG.String.Text
 msgid  "%PRODUCTNAME %PRODUCTVERSION requires Java 1.4.0_02 or later version to support accessibility."
-msgstr ""
+msgstr "%PRODUCTNAME %PRODUCTVERSION அணுகல் ஆத்ரவிற்கு ஜாவா 1.4.0_02 அல்லது அடுத்த பதிப்பு தேவை."
 
 #: source/src/stdtext.src#SV_ACCESSERROR_MISSING_JAVA.String.Text
 msgid  "No Java Installation"
@@ -261,7 +261,7 @@ msgstr "விருப்பங்கள்..."
 
 #: source/src/stdtext.src#SV_EDIT_WARNING_BOX.WarningBox.Message
 msgid  "The inserted text exceeded the maximum length of this text field. The text was truncated."
-msgstr ""
+msgstr "இவ்வுரை புலத்தின் அதிகபட்ச நீலத்தைவிட நுழைக்கப்பட்ட உரை நீலமாக இருந்ததால், உரை துண்டிக்கப்பட்டது."
 
 #: source/src/stdtext.src#SV_MAC_SCREENNNAME.String.Text
 msgid  "Screen %d"

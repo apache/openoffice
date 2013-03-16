@@ -49,7 +49,7 @@ msgstr "~Dönüştür"
 
 #: source/euro/euro.src#STEP_ZERO + 4.String.Text
 msgid  "Note: Currency amounts from external links and currency conversion factors in formulas cannot be converted."
-msgstr ""
+msgstr "Not: Dış referanslardaki para miktarları ve hücre formülleri içindeki para pariteleri dönüştürülemez."
 
 #: source/euro/euro.src#STEP_ZERO + 5.String.Text
 msgid  "First, unprotect all sheets."
@@ -153,7 +153,7 @@ msgstr "Hücre şablonlarının dönüştürme durumu:"
 
 #: source/euro/euro.src#STATUSLINE + 2.String.Text
 msgid  "Registration of the relevant ranges: Sheet %1Number%1 of %2TotPageCount%2"
-msgstr ""
+msgstr "Dönüştürülecek aralıkların kaydı: %2TotPageCount%2 Sayfa %1Numara%1"
 
 #: source/euro/euro.src#STATUSLINE + 3.String.Text
 msgid  "Entry of the ranges to be converted..."
@@ -221,11 +221,11 @@ msgstr "Sayfa koruması kaldırılamıyor"
 
 #: source/euro/euro.src#MESSAGES + 13.String.Text
 msgid  "The Wizard cannot edit this document as cell formats cannot be modified in documents containing protected spreadsheets."
-msgstr ""
+msgstr "Korumalı tablo içeren belgelerde hücre şablonları üzerinde değişiklik yapılamadığı için sihirbaz bu belgeyi düzenleyemiyor."
 
 #: source/euro/euro.src#MESSAGES + 14.String.Text
 msgid  "Please note that the Euro Converter will, otherwise, not be able to edit this document!"
-msgstr ""
+msgstr "Euro Dönüştürücüsü, aksi halde belgeyi düzenleyemez!"
 
 #: source/euro/euro.src#MESSAGES + 15.String.Text
 msgid  "Please choose a currency to be converted first!"
@@ -337,7 +337,7 @@ msgstr "Belge için seçilmiş birim bir Avrupa para birimi değildir.!"
 
 #: source/euro/euro.src#CURRENCIES + 17.String.Text
 msgid  "The language set for your operating system is not a language of the European Monetary Union."
-msgstr ""
+msgstr "İşletim sisteminizin kullandığı dil kümesi, Avrupa Para Birimi dil kümesinden bir tanesi içinde değil."
 
 #: source/euro/euro.src#STEP_LASTPAGE.String.Text
 msgid  "Progress"
@@ -361,35 +361,35 @@ msgstr "Sayfa her zaman korumasız"
 
 #: source/formwizard/dbwizres.src#RID_COMMON_START + 0.String.Text
 msgid  "The directory '%1' could not be created.<BR>There may not be enough space left on your hard disk."
-msgstr ""
+msgstr "'%1' dizini oluşturulamadı. <BR>Sabit diskinizde yeteri kadar boş yer olmayabilir."
 
 #: source/formwizard/dbwizres.src#RID_COMMON_START + 1.String.Text
 msgid  "The text document could not be created.<BR>Please check if the module 'PRODUCTNAME Writer' is installed."
-msgstr ""
+msgstr "Metin belgesi oluşturulamadı.<BR>Lütfen 'PRODUCTNAME Writer' modülünün kurulu olup olmadığını kontrol edin."
 
 #: source/formwizard/dbwizres.src#RID_COMMON_START + 2.String.Text
 msgid  "The spreadsheet could not be created.<BR>Please check if the module 'PRODUCTNAME Calc' is installed."
-msgstr ""
+msgstr "Hesap tablosu oluşturulamadı.<BR>Lütfen 'PRODUCTNAME Calc' modülünün kurulu olup olmadığını kontrol edin."
 
 #: source/formwizard/dbwizres.src#RID_COMMON_START + 3.String.Text
 msgid  "The presentation could not be created.<BR>Please check if the module 'PRODUCTNAME Impress' is installed."
-msgstr ""
+msgstr "Sunu oluşturulamadı.<BR>Lütfen 'PRODUCTNAME Impress' modülünün kurulu olup olmadığını kontrol edin."
 
 #: source/formwizard/dbwizres.src#RID_COMMON_START + 4.String.Text
 msgid  "The drawing could not be created.<BR>Please check if the module 'PRODUCTNAME Draw' is installed."
-msgstr ""
+msgstr "Çizim oluşturulamadı. <BR> Lütfen 'PRODUCTNAME Draw' modülünün kurulu olup olmadığını kontrol edin."
 
 #: source/formwizard/dbwizres.src#RID_COMMON_START + 5.String.Text
 msgid  "The formula could not be created.<BR>Please check if the module 'PRODUCTNAME Math' is installed."
-msgstr ""
+msgstr "Formül oluşturulamadı.<BR>Lütfen 'PRODUCTNAME Math' modülünün kurulu olup olmadığını kontrol edin."
 
 #: source/formwizard/dbwizres.src#RID_COMMON_START + 6.String.Text
 msgid  "The files required could not be found.<BR>Please start the %PRODUCTNAME Setup and choose 'Repair'."
-msgstr ""
+msgstr "Dosya geresinimleri bulunamıyor. <BR>Lütfen %PRODUCTNAME Kur'u başlatın ve 'Tamir' bölümünü seçin."
 
 #: source/formwizard/dbwizres.src#RID_COMMON_START + 7.String.Text
 msgid  "The file '<PATH>' already exists.<BR><BR>Would you like to overwrite the existing file?"
-msgstr ""
+msgstr "'<PATH>' dosyası önceden mevcut. <BR><BR> Mevcut dosyanın üstüne yazmak ister misiniz?"
 
 #: source/formwizard/dbwizres.src#RID_COMMON_START + 8.String.Text
 msgid  "Yes"
@@ -445,7 +445,7 @@ msgstr "<current_date> tarihinde, <wizard_name> ismi ile çablon oluşturuldu."
 
 #: source/formwizard/dbwizres.src#RID_COMMON_START + 21.String.Text
 msgid  "The wizard could not be run, because important files were not found.\nUnder 'Tools - Options - %PRODUCTNAME - Paths' click the 'Default' button to reset the paths to the original default settings.\nThen run the wizard again."
-msgstr ""
+msgstr "Sihirbaz çalışamadı, çünkü önemli dosyalar bulunamadı.\nYolları varsayılan değerlere döndürmek için 'Araçlar - Sçenekler - %PRODUCTNAME - Yollar'  altında 'Varsayılan'ı tıklayın.\nSonra sihirbazı tekrar çalıştırın."
 
 #: source/formwizard/dbwizres.src#RID_DB_COMMON_START + 0.String.Text
 msgid  "C~reate"
@@ -473,7 +473,7 @@ msgstr "~Tablo ismi"
 
 #: source/formwizard/dbwizres.src#RID_DB_COMMON_START + 6.String.Text
 msgid  "An error occurred while running the wizard. The wizard will be terminated."
-msgstr ""
+msgstr "Sihirbaz çalıştırılırken bir hata oluştu. Sihirbaz kapatılacak."
 
 #: source/formwizard/dbwizres.src#RID_DB_COMMON_START + 14.String.Text
 msgid  "No connection to the database could be established."
@@ -553,11 +553,11 @@ msgstr "Formdaki alanlar"
 
 #: source/formwizard/dbwizres.src#RID_DB_FORM_WIZARD_START + 2.String.Text
 msgid  "Binary fields are always listed and selectable from the left list.\nIf possible, they are interpreted as images."
-msgstr ""
+msgstr "Form Oluştur"
 
 #: source/formwizard/dbwizres.src#RID_DB_FORM_WIZARD_START + 3.String.Text
 msgid  "A subform is a form that is inserted in another form.\nUse subforms to show data from tables or queries with a one-to-many relationship."
-msgstr ""
+msgstr "Bir altform başka forma eklenmiş bir form demektir.\nAltformları tablo veya sorgulardan, birden çokluya bir ilişki tipi kullanarak veri göstermek istiyorsanız kullanın. "
 
 #: source/formwizard/dbwizres.src#RID_DB_FORM_WIZARD_START + 4.String.Text
 msgid  "~Add Subform"
@@ -593,7 +593,7 @@ msgstr "Formdaki alanlar"
 
 #: source/formwizard/dbwizres.src#RID_DB_FORM_WIZARD_START + 19.String.Text
 msgid  "The join '<FIELDNAME1>' and '<FIELDNAME2>' has been selected twice.\nBut joins may only be used once."
-msgstr ""
+msgstr "'<FIELDNAME1>' ve '<FIELDNAME2>'alanları arası ilişki iki kere seçildi.\nFakat ilişkiler sadece bir kere kullanılabilirler"
 
 #: source/formwizard/dbwizres.src#RID_DB_FORM_WIZARD_START + 20.String.Text
 msgid  "~First joined subform field"
@@ -805,7 +805,7 @@ msgstr "Form ismini belirle"
 
 #: source/formwizard/dbwizres.src#RID_DB_FORM_WIZARD_START + 98.String.Text
 msgid  "A form with the name '%FORMNAME' already exists.\nChoose another name."
-msgstr ""
+msgstr "'%FORMNAME' adıyla bir form daha önce oluşturmuş.\nBaşka bir isim seçiniz."
 
 #: source/formwizard/dbwizres.src#RID_DB_QUERY_WIZARD_START + 0.String.Text
 msgid  "Query Wizard"
@@ -1097,15 +1097,15 @@ msgstr "Genel bakış"
 
 #: source/formwizard/dbwizres.src#RID_DB_QUERY_WIZARD_START + 88.String.Text
 msgid  "A field that has not been assigned an aggregate function must be used in a group."
-msgstr ""
+msgstr "Küme işlevine atanmamış olan bir alan, gruplamada kullanılmalıdır."
 
 #: source/formwizard/dbwizres.src#RID_DB_QUERY_WIZARD_START + 89.String.Text
 msgid  "The condition '<FIELDNAME> <LOGICOPERATOR> <VALUE>' was chosen twice. Each condition can only be chosen once"
-msgstr ""
+msgstr "'<FIELDNAME> <LOGICOPERATOR> <VALUE>' koşulu iki kere seçildi. Her koşul, sadece bir kere seçilebilir."
 
 #: source/formwizard/dbwizres.src#RID_DB_QUERY_WIZARD_START + 90.String.Text
 msgid  "The aggregate function <FUNCTION> has been assigned twice to the fieldname '<NUMERICFIELD>'."
-msgstr ""
+msgstr "<FUNCTION> küme işlevi, '<NUMERICFIELD>' alan adına iki kere tanımlanmış."
 
 #: source/formwizard/dbwizres.src#RID_DB_QUERY_WIZARD_START + 91.String.Text
 msgid  ", "
@@ -1321,11 +1321,11 @@ msgstr "'<REPORTFORM>' formu bulunamıyor."
 
 #: source/formwizard/dbwizres.src#RID_DB_REPORT_WIZARD_START + 65.String.Text
 msgid  "The query with the statement <BR>'<STATEMENT>' <BR> could not be run. <BR> Check your data source."
-msgstr ""
+msgstr "'<STATEMENT>' <BR> ifadeli sorgu çalıştırılamadı.<BR>Veri kaynağını kontrol edin."
 
 #: source/formwizard/dbwizres.src#RID_DB_REPORT_WIZARD_START + 66.String.Text
 msgid  "The following hidden control in the form '<REPORTFORM>' could not be read: '<CONTROLNAME>'."
-msgstr ""
+msgstr "'<REPORTFORM>' formundaki gizli kontrol okunamıyor: '<CONTROLNAME>'."
 
 #: source/formwizard/dbwizres.src#RID_DB_REPORT_WIZARD_START + 67.String.Text
 msgid  "Importing data..."
@@ -1349,7 +1349,7 @@ msgstr "Alan"
 
 #: source/formwizard/dbwizres.src#RID_DB_REPORT_WIZARD_START + 72.String.Text
 msgid  "An error occurred in the wizard.<BR>The template '%PATH' could be erroneous.<BR>Either the required sections or tables do not exist or exist under the wrong name.<BR>See the Help for more detailed information.<BR>Please select another template."
-msgstr ""
+msgstr "Sihirbazda bir hata oluştu.<BR> '%PATH' şablonu hatalı olabilir. <BR> Ya gerekli tablolar - bölümler yok ya da isimleri yanlış.<BR>Detaylı bilgi için Yardım'a bakınız.<BR>Lütfen başka bir şablon seçiniz."
 
 #: source/formwizard/dbwizres.src#RID_DB_REPORT_WIZARD_START + 73.String.Text
 msgid  "There is an invalid user field in a table."
@@ -1357,15 +1357,15 @@ msgstr "Tabloda geçersiz kullanıcı alanı var."
 
 #: source/formwizard/dbwizres.src#RID_DB_REPORT_WIZARD_START + 74.String.Text
 msgid  "The sort criterium '<FIELDNAME>' was chosen twice. Each criterium can only be chosen once."
-msgstr ""
+msgstr "'<FIELDNAME>' ölçütü iki kere seçilmiş. Her ölçüt sadece bir kere seçilebilir."
 
 #: source/formwizard/dbwizres.src#RID_DB_REPORT_WIZARD_START + 75.String.Text
 msgid  "Note: The dummy text will be replaced by data from the database when the report is created."
-msgstr ""
+msgstr "Not: Rapor oluşturulduğunda taklit için yazılan metin yerine, veritabanından alınan veri yazılacaktır."
 
 #: source/formwizard/dbwizres.src#RID_DB_REPORT_WIZARD_START + 76.String.Text
 msgid  "A report '%REPORTNAME' already exists in the database. Please assign another name."
-msgstr ""
+msgstr "Veritabanında '%REPORTNAME' isimli bir rapor zaten mevcut. Lütfen başka isim tanımlayın."
 
 #: source/formwizard/dbwizres.src#RID_DB_REPORT_WIZARD_START + 78.String.Text
 msgid  "How do you want to proceed after creating the report?"
@@ -1465,7 +1465,7 @@ msgstr "~Tablo oluştur"
 
 #: source/formwizard/dbwizres.src#RID_DB_TABLE_WIZARD_START + 14.String.Text
 msgid  "This wizard helps you to create a table for your database. After selecting a table category and a sample table, choose the fields you want to include in your table. You can include fields from more than one sample table."
-msgstr ""
+msgstr "Bu sihirbaz veritabanınız için tablo oluşturmada size yardımcı olur. Tablo kategorisini ve örnek tabloyu seçtikten sonra, tablonuza eklemek istediğiniz alanları seçiniz. Tablonuza, birden fazla örnek tablodan alan ekleyebilirsiniz."
 
 #: source/formwizard/dbwizres.src#RID_DB_TABLE_WIZARD_START + 15.String.Text
 msgid  "Ca~tegory"
@@ -1509,7 +1509,7 @@ msgstr "~Seçilmiş alanlar"
 
 #: source/formwizard/dbwizres.src#RID_DB_TABLE_WIZARD_START + 26.String.Text
 msgid  "A primary key uniquely identifies each record in a database table. Primary keys ease the linking of information in separate tables, and it is recommended that you have a primary key in every table. Without a primary key, it will not be possible to enter data into this table."
-msgstr ""
+msgstr "Birincil anahtar veritabanındaki bir kaydı tekil olarak ifade eder. Birincil anahtar farklı tablolardaki bilgileri ilişkilendirmeyi kolaylaştırılar ve her tabloda bir birincil anahtar olması önerilir. Birincil anahtar olmadan, bir tabloya veri girmek mümkün olmayacaktır."
 
 #: source/formwizard/dbwizres.src#RID_DB_TABLE_WIZARD_START + 27.String.Text
 msgid  "~Create a primary key"
@@ -1545,7 +1545,7 @@ msgstr "Tablonuza ne isim vermek istiyorsunuz?"
 
 #: source/formwizard/dbwizres.src#RID_DB_TABLE_WIZARD_START + 35.String.Text
 msgid  "Congratulations. You have entered all the information needed to create your table."
-msgstr ""
+msgstr "Tebrikler. Tablonuzu oluşturmak için gerekli tüm bilgileri girdiniz."
 
 #: source/formwizard/dbwizres.src#RID_DB_TABLE_WIZARD_START + 36.String.Text
 msgid  "What do you want to do next?"
@@ -1569,11 +1569,11 @@ msgstr "Oluturduğunuz tablo açılamadı."
 
 #: source/formwizard/dbwizres.src#RID_DB_TABLE_WIZARD_START + 41.String.Text
 msgid  "The table name '%TABLENAME' contains a character ('%SPECIALCHAR') that might not be supported by the database."
-msgstr ""
+msgstr "'%TABLENAME' tablosu ('%SPECIALCHAR') karakteri içeriyor. Bu karakter veritabanı tarafından desteklenmiyor olabilir."
 
 #: source/formwizard/dbwizres.src#RID_DB_TABLE_WIZARD_START + 42.String.Text
 msgid  "The field name '%FIELDNAME' contains a special character ('%SPECIALCHAR') that might not be supported by the database."
-msgstr ""
+msgstr "'%FIELDNAME' alanı ('%SPECIALCHAR') özel karakteri içeriyor. Bu karakter veritabanı tarafından desteklenmiyor olabilir."
 
 #: source/formwizard/dbwizres.src#RID_DB_TABLE_WIZARD_START + 43.String.Text
 msgid  "Field"
@@ -1593,11 +1593,11 @@ msgstr "Seçilmiş alanları kaldır"
 
 #: source/formwizard/dbwizres.src#RID_DB_TABLE_WIZARD_START + 47.String.Text
 msgid  "The field cannot be inserted because this would exceed the maximum number of %COUNT possible fields in the database table"
-msgstr ""
+msgstr "Veritabanı tablosunda olabilecek en yüksek %COUNT üst sınırını sayısını geçtiğinden dolayı alan eklenemedi"
 
 #: source/formwizard/dbwizres.src#RID_DB_TABLE_WIZARD_START + 48.String.Text
 msgid  "The name '%TABLENAME' already exists.\nPlease enter another name."
-msgstr ""
+msgstr "'%TABLENAME' zaten var.\nLütfen başka bir ad giriniz."
 
 #: source/formwizard/dbwizres.src#RID_DB_TABLE_WIZARD_START + 49.String.Text
 msgid  "Catalog of the table"
@@ -1733,7 +1733,7 @@ msgstr "Sayfa tasarımı"
 
 #: source/formwizard/dbwizres.src#RID_LETTERWIZARDDIALOG_START + 31.String.Text
 msgid  "This wizard helps you to create a letter template. You can then use the template as the basis for writing letters as often as desired."
-msgstr ""
+msgstr "Bu sihirbaz size mektup şablonu oluşturmada yardımcı olur. Daha sonra bu şablonu, mektup yazarken temel olarak her gerektiğinde kullanabilirsiniz."
 
 #: source/formwizard/dbwizres.src#RID_LETTERWIZARDDIALOG_START + 32.String.Text
 msgid  "~Height:"
@@ -1801,11 +1801,11 @@ msgstr "Alt bilgi"
 
 #: source/formwizard/dbwizres.src#RID_LETTERWIZARDDIALOG_START + 48.String.Text
 msgid  "This wizard creates a letter template which enables you to create multiple letters with the same layout and settings."
-msgstr ""
+msgstr "Bu sihirbaz size, çok sayıda mektubu aynı sayfa düzeni ve ayarlarla oluşturabilmeniz için, şablon oluşturmada yardımcı olur."
 
 #: source/formwizard/dbwizres.src#RID_LETTERWIZARDDIALOG_START + 49.String.Text
 msgid  "To create another new letter out of the template just navigate to the template location and double-click it."
-msgstr ""
+msgstr "Şablondan yeni mektup oluşturmak için, şablonun olduğu yere gidin ve şablonu çift tıklayın."
 
 #: source/formwizard/dbwizres.src#RID_LETTERWIZARDDIALOG_START + 50.String.Text
 msgid  "Template name:"
@@ -1892,1260 +1892,1026 @@ msgid  "Name and location"
 msgstr "Ad ve konum"
 
 #: source/formwizard/dbwizres.src#RID_FAXWIZARDDIALOG_START + 1.String.Text
-#, fuzzy
 msgid  "Fax Wizard"
 msgstr "Faks Sihirbazı"
 
 #: source/formwizard/dbwizres.src#RID_FAXWIZARDDIALOG_START + 2.String.Text
-#, fuzzy
 msgid  "Label9"
 msgstr "Etiket9"
 
 #: source/formwizard/dbwizres.src#RID_FAXWIZARDDIALOG_START + 3.String.Text
-#, fuzzy
 msgid  "~Business Fax"
 msgstr "~İş Faksı"
 
 #: source/formwizard/dbwizres.src#RID_FAXWIZARDDIALOG_START + 4.String.Text
-#, fuzzy
 msgid  "~Personal Fax"
 msgstr "~Kişisel Faks"
 
 #: source/formwizard/dbwizres.src#RID_FAXWIZARDDIALOG_START + 5.String.Text
-#, fuzzy
 msgid  "~Logo"
 msgstr "~Logo"
 
 #: source/formwizard/dbwizres.src#RID_FAXWIZARDDIALOG_START + 6.String.Text
-#, fuzzy
 msgid  "S~ubject line"
 msgstr "K~onu satırı"
 
 #: source/formwizard/dbwizres.src#RID_FAXWIZARDDIALOG_START + 7.String.Text
-#, fuzzy
 msgid  "S~alutation"
 msgstr "S~elamlama"
 
 #: source/formwizard/dbwizres.src#RID_FAXWIZARDDIALOG_START + 8.String.Text
-#, fuzzy
 msgid  "~Complimentary close"
 msgstr "~Selamlama içeren son paragraf"
 
 #: source/formwizard/dbwizres.src#RID_FAXWIZARDDIALOG_START + 9.String.Text
-#, fuzzy
 msgid  "~Footer"
 msgstr "~Alt bilgi"
 
 #: source/formwizard/dbwizres.src#RID_FAXWIZARDDIALOG_START + 10.String.Text
-#, fuzzy
 msgid  "~Use user data for return address"
 msgstr "İade adresi için kullanıcı verisini k~ullan"
 
 #: source/formwizard/dbwizres.src#RID_FAXWIZARDDIALOG_START + 11.String.Text
-#, fuzzy
 msgid  "~New return address"
 msgstr "~Yeni iade adresi"
 
 #: source/formwizard/dbwizres.src#RID_FAXWIZARDDIALOG_START + 12.String.Text
-#, fuzzy
 msgid  "My Fax Template"
 msgstr "Faks Şablonlarım"
 
 #: source/formwizard/dbwizres.src#RID_FAXWIZARDDIALOG_START + 13.String.Text
-#, fuzzy
 msgid  "Create a ~fax from this template"
 msgstr "Bu şablondan ~faks oluştur"
 
 #: source/formwizard/dbwizres.src#RID_FAXWIZARDDIALOG_START + 14.String.Text
-#, fuzzy
 msgid  "Make ~manual changes to this fax template"
 msgstr "Bu faks şablonunda elle değişikler yap"
 
 #: source/formwizard/dbwizres.src#RID_FAXWIZARDDIALOG_START + 15.String.Text
-#, fuzzy
 msgid  "Page design"
 msgstr "Sayfa tasarımı"
 
 #: source/formwizard/dbwizres.src#RID_FAXWIZARDDIALOG_START + 16.String.Text
-#, fuzzy
 msgid  "Page design"
 msgstr "Sayfa tasarımı"
 
 #: source/formwizard/dbwizres.src#RID_FAXWIZARDDIALOG_START + 17.String.Text
 msgid  "This wizard helps you to create a fax template. The template can then be used to create a fax whenever needed."
-msgstr ""
+msgstr "Bu sihirbaz size bir faks şablonu oluşturmanız için yardım eder. Bir faks oluşturmak istediğinizde şablonu kullanabilirsiniz."
 
 #: source/formwizard/dbwizres.src#RID_FAXWIZARDDIALOG_START + 18.String.Text
-#, fuzzy
 msgid  "Return address"
 msgstr "İade adresi"
 
 #: source/formwizard/dbwizres.src#RID_FAXWIZARDDIALOG_START + 19.String.Text
-#, fuzzy
 msgid  "Name:"
 msgstr "Ad:"
 
 #: source/formwizard/dbwizres.src#RID_FAXWIZARDDIALOG_START + 20.String.Text
-#, fuzzy
 msgid  "Street:"
 msgstr "Cadde"
 
 #: source/formwizard/dbwizres.src#RID_FAXWIZARDDIALOG_START + 21.String.Text
-#, fuzzy
 msgid  "ZIP code/State/City:"
 msgstr "Posta kodu/Eyalet/Şehir:"
 
 #: source/formwizard/dbwizres.src#RID_FAXWIZARDDIALOG_START + 22.String.Text
-#, fuzzy
 msgid  "Footer"
 msgstr "Alt bilgi"
 
 #: source/formwizard/dbwizres.src#RID_FAXWIZARDDIALOG_START + 23.String.Text
 msgid  "This wizard creates a fax template which enables you to create multiple faxes with the same layout and settings."
-msgstr ""
+msgstr "Bu sihirbaz size, çok sayıda faksı aynı sayfa düzeni ve ayarlarla oluşturabilmeniz için, şablon oluşturmada yardımcı olur."
 
 #: source/formwizard/dbwizres.src#RID_FAXWIZARDDIALOG_START + 24.String.Text
 msgid  "To create another new fax out of the template, go to the location where you saved the template and double-click the file."
-msgstr ""
+msgstr "Şablondan yeni faks oluşturmak için, şablonu kaydettiğiniz yere gidin ve şablonu çift tıklayın."
 
 #: source/formwizard/dbwizres.src#RID_FAXWIZARDDIALOG_START + 25.String.Text
-#, fuzzy
 msgid  "Template Name:"
 msgstr "Şablon Adı:"
 
 #: source/formwizard/dbwizres.src#RID_FAXWIZARDDIALOG_START + 26.String.Text
-#, fuzzy
 msgid  "Location and file name:"
 msgstr "Konum ve dosya adı:"
 
 #: source/formwizard/dbwizres.src#RID_FAXWIZARDDIALOG_START + 27.String.Text
-#, fuzzy
 msgid  "What do you want to do next?"
 msgstr "Ne yapmak istiyorsunuz?"
 
 #: source/formwizard/dbwizres.src#RID_FAXWIZARDDIALOG_START + 28.String.Text
-#, fuzzy
 msgid  "Choose the type of fax and a page design"
 msgstr "Faks türünü ve sayfa tasarımını seç"
 
 #: source/formwizard/dbwizres.src#RID_FAXWIZARDDIALOG_START + 29.String.Text
-#, fuzzy
 msgid  "Select items to include in the fax template"
 msgstr "Faks şablonu içinde olacak öğeleri seç"
 
 #: source/formwizard/dbwizres.src#RID_FAXWIZARDDIALOG_START + 30.String.Text
-#, fuzzy
 msgid  "Specify sender and recipient information"
 msgstr "Gönderici ve cevaplayıcı bilgisini belirtir"
 
 #: source/formwizard/dbwizres.src#RID_FAXWIZARDDIALOG_START + 31.String.Text
-#, fuzzy
 msgid  "Enter text for the footer"
 msgstr "Alt bilgi için metin girin"
 
 #: source/formwizard/dbwizres.src#RID_FAXWIZARDDIALOG_START + 32.String.Text
-#, fuzzy
 msgid  "Choose a name and save the template"
 msgstr "Bir ad seç ve şablonu kaydet"
 
 #: source/formwizard/dbwizres.src#RID_FAXWIZARDDIALOG_START + 33.String.Text
-#, fuzzy
 msgid  "Include ~only on second and following pages"
 msgstr "Sadece ikinci ve sonraki sayfalara ekle"
 
 #: source/formwizard/dbwizres.src#RID_FAXWIZARDDIALOG_START + 34.String.Text
-#, fuzzy
 msgid  "~Include page number"
 msgstr "Sayfa numaraları ile birl~ikte"
 
 #: source/formwizard/dbwizres.src#RID_FAXWIZARDDIALOG_START + 35.String.Text
-#, fuzzy
 msgid  "~Date"
 msgstr "~Tarih"
 
 #: source/formwizard/dbwizres.src#RID_FAXWIZARDDIALOG_START + 36.String.Text
-#, fuzzy
 msgid  "~Type of message"
 msgstr "~Mesaj türü"
 
 #: source/formwizard/dbwizres.src#RID_FAXWIZARDDIALOG_START + 37.String.Text
-#, fuzzy
 msgid  "Fax Number:"
 msgstr "Faks Numarası:"
 
 #: source/formwizard/dbwizres.src#RID_FAXWIZARDDIALOG_START + 38.String.Text
-#, fuzzy
 msgid  "Use placeholders for ~recipient's address"
 msgstr "~Alıcı adresi için yer tutucu kullan"
 
 #: source/formwizard/dbwizres.src#RID_FAXWIZARDDIALOG_START + 39.String.Text
-#, fuzzy
 msgid  "Use address database for ~mail merge"
 msgstr "Posta birleştir~me için adres veritabanını kullan"
 
 #: source/formwizard/dbwizres.src#RID_FAXWIZARDDIALOG_START + 40.String.Text
-#, fuzzy
 msgid  "~New return address"
 msgstr "Ye~ni iade adresi"
 
 #: source/formwizard/dbwizres.src#RID_FAXWIZARDCOMMUNICATION_START + 1.String.Text
-#, fuzzy
 msgid  "Important Information!"
 msgstr "Önemli Bilgi!"
 
 #: source/formwizard/dbwizres.src#RID_FAXWIZARDCOMMUNICATION_START + 2.String.Text
-#, fuzzy
 msgid  "For your information"
 msgstr "Bilginize"
 
 #: source/formwizard/dbwizres.src#RID_FAXWIZARDCOMMUNICATION_START + 3.String.Text
-#, fuzzy
 msgid  "News!"
 msgstr "Haberler!"
 
 #: source/formwizard/dbwizres.src#RID_FAXWIZARDSALUTATION_START + 1.String.Text
-#, fuzzy
 msgid  "To whom it may concern,"
 msgstr "İlgili kişiye,"
 
 #: source/formwizard/dbwizres.src#RID_FAXWIZARDSALUTATION_START + 2.String.Text
-#, fuzzy
 msgid  "Dear Sir or Madam,"
 msgstr "Sayın Bay ya da Bayan,"
 
 #: source/formwizard/dbwizres.src#RID_FAXWIZARDSALUTATION_START + 3.String.Text
-#, fuzzy
 msgid  "Hello,"
 msgstr "Merhaba,"
 
 #: source/formwizard/dbwizres.src#RID_FAXWIZARDSALUTATION_START + 4.String.Text
-#, fuzzy
 msgid  "Hi,"
 msgstr "Merhaba,"
 
 #: source/formwizard/dbwizres.src#RID_FAXWIZARDGREETING_START + 1.String.Text
-#, fuzzy
 msgid  "Sincerely"
 msgstr "Saygılarımla"
 
 #: source/formwizard/dbwizres.src#RID_FAXWIZARDGREETING_START + 2.String.Text
-#, fuzzy
 msgid  "Yours faithfully"
 msgstr "Samimiyetle"
 
 #: source/formwizard/dbwizres.src#RID_FAXWIZARDGREETING_START + 3.String.Text
-#, fuzzy
 msgid  "Regards"
 msgstr "İyi dileklerimle"
 
 #: source/formwizard/dbwizres.src#RID_FAXWIZARDGREETING_START + 4.String.Text
-#, fuzzy
 msgid  "Love"
 msgstr "Sevgilerimle"
 
 #: source/formwizard/dbwizres.src#RID_FAXWIZARDROADMAP_START + 1.String.Text
-#, fuzzy
 msgid  "Page design"
 msgstr "Sayfa tasarımı"
 
 #: source/formwizard/dbwizres.src#RID_FAXWIZARDROADMAP_START + 2.String.Text
-#, fuzzy
 msgid  "Items to include"
 msgstr "İçerilecek öğeler"
 
 #: source/formwizard/dbwizres.src#RID_FAXWIZARDROADMAP_START + 3.String.Text
-#, fuzzy
 msgid  "Sender and Recipient"
 msgstr "Gönderici ve Alıcı"
 
 #: source/formwizard/dbwizres.src#RID_FAXWIZARDROADMAP_START + 4.String.Text
-#, fuzzy
 msgid  "Footer"
 msgstr "Alt bilgi"
 
 #: source/formwizard/dbwizres.src#RID_FAXWIZARDROADMAP_START + 5.String.Text
-#, fuzzy
 msgid  "Name and location"
 msgstr "Ad ve konum"
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +1.String.Text
-#, fuzzy
 msgid  "Web Wizard"
 msgstr "Web Sihirbazı"
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +2.String.Text
 msgid  "This Web Wizard is to aid you in publishing documents on the Internet.\n\nIt will convert the documents so that they can be viewed by a web browser. In addition, it will generate a Table of Contents page with links for easy access to the documents. The Web Wizard will also allow you to customize the design and layout of your web site.\n\nYou will be able to keep the documents you have published on the web up-to-date and add or remove documents at any time."
-msgstr ""
+msgstr "Bu sihirbaz, dosyalarınızı internete sunmanıza olanak verir.\n\nYaptığı işlem, belgeleri uygun bir biçime sokarak web tarayıcılarında görüntülenmesine imkan vermektir. Ayrıca, bu belgeler için bir \"İçindekiler Tablosu\" oluşturur ve dosyalara kolayca erişim imkanı sağlar. Sihirbaz, sayfanın grafik tasarımını seçmenizi de sağlar."
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +4.String.Text
-#, fuzzy
 msgid  "~Delete"
 msgstr "~Sil"
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +5.String.Text
-#, fuzzy
 msgid  "Introduction"
 msgstr "Giriş"
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +6.String.Text
-#, fuzzy
 msgid  "Select the documents you want to publish"
 msgstr "Yayınlamak istediğiniz belgeleri seçiniz"
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +8.String.Text
-#, fuzzy
 msgid  "Document information "
 msgstr "Belge Bilgisi"
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +9.String.Text
-#, fuzzy
 msgid  "~Title:"
 msgstr "~Başlık:"
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +10.String.Text
-#, fuzzy
 msgid  "~Summary: "
 msgstr "Ö~zet:"
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +11.String.Text
-#, fuzzy
 msgid  "Au~thor:"
 msgstr "Yaza~n:"
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +12.String.Text
-#, fuzzy
 msgid  "~Export to file format:"
 msgstr "Bu dosya biçimine aktar:"
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +13.String.Text
-#, fuzzy
 msgid  "Enter general information for your web site"
 msgstr "Web siteniz için genel bilgi giriniz"
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +14.String.Text
-#, fuzzy
 msgid  "Title:"
 msgstr "Başlık:"
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +16.String.Text
-#, fuzzy
 msgid  "Description:"
 msgstr "Tanımlama:"
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +18.String.Text
-#, fuzzy
 msgid  "Created:"
 msgstr "Oluşturulma:"
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +20.String.Text
-#, fuzzy
 msgid  "E-mail:"
 msgstr "E-posta:"
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +21.String.Text
-#, fuzzy
 msgid  "Copyright notice:"
 msgstr "Telif hakkı notu:"
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +22.String.Text
-#, fuzzy
 msgid  "Modified:"
 msgstr "Değiştirilme:"
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +24.String.Text
-#, fuzzy
 msgid  "~Preview"
 msgstr "Önizleme"
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +25.String.Text
-#, fuzzy
 msgid  "Where do you want to publish your web site?"
 msgstr "Web sitesinizi nerede yayınlamak istiyorsunuz?"
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +26.String.Text
-#, fuzzy
 msgid  "Publish the new web site:"
 msgstr "Yayınlanacak yeni web sitesi:"
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +27.String.Text
-#, fuzzy
 msgid  "To a ~local folder"
 msgstr "Bir ~yerel klasöre"
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +28.String.Text
-#, fuzzy
 msgid  "..."
 msgstr "..."
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +29.String.Text
-#, fuzzy
 msgid  "To a ~web server via FTP"
 msgstr "Bir FTP web sunucusuna"
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +31.String.Text
-#, fuzzy
 msgid  "~Configure..."
 msgstr "Ya~pılandır..."
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +32.String.Text
-#, fuzzy
 msgid  "To a ZIP ~archive"
 msgstr "ZIP ~arşivine"
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +33.String.Text
-#, fuzzy
 msgid  "..."
 msgstr "..."
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +34.String.Text
-#, fuzzy
 msgid  "~Save settings (recommended)"
 msgstr "~Ayarları kaydet (önerilen)"
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +35.String.Text
-#, fuzzy
 msgid  "Save ~as:"
 msgstr "Farklı k~aydet:"
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +36.String.Text
-#, fuzzy
 msgid  "~Choose settings for the Web Wizard"
 msgstr "Web sihirbazı için ayar~ları seçin"
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +37.String.Text
-#, fuzzy
 msgid  "Web site content "
 msgstr "Web sitesi içeriği"
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +38.String.Text
-#, fuzzy
 msgid  "~Add..."
 msgstr "Ekle..."
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +39.String.Text
-#, fuzzy
 msgid  "Remo~ve"
 msgstr "Kal~dır"
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +40.String.Text
-#, fuzzy
 msgid  "Choose a layout for the table of contents of your web site"
 msgstr "Web sitenizin içerik tablosu için düzen seçin"
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +41.String.Text
-#, fuzzy
 msgid  "Select a style for the table of contents page"
 msgstr "İçerik sayfası tablosu için biçem seçin"
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +42.String.Text
-#, fuzzy
 msgid  "~Style:"
 msgstr "~Biçem:"
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +48.String.Text
-#, fuzzy
 msgid  "~Layouts: "
 msgstr "~Düzenler:"
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +50.String.Text
-#, fuzzy
 msgid  "~Description"
 msgstr "~Tanımlama"
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +51.String.Text
-#, fuzzy
 msgid  "~Author"
 msgstr "Yazan"
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +52.String.Text
-#, fuzzy
 msgid  "Cr~eation date"
 msgstr "Oluşturul~ma tarihi"
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +53.String.Text
-#, fuzzy
 msgid  "~Last change date"
 msgstr "~Son değiştirilme tarihi"
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +54.String.Text
-#, fuzzy
 msgid  "~File name"
 msgstr "~Dosya adı"
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +55.String.Text
-#, fuzzy
 msgid  "File forma~t"
 msgstr "Dosya biçim~i"
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +56.String.Text
-#, fuzzy
 msgid  "File format ~icon"
 msgstr "Dosya biçim ~simgesi"
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +57.String.Text
-#, fuzzy
 msgid  "Number ~of pages"
 msgstr "Sayfa numara~ları"
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +58.String.Text
-#, fuzzy
 msgid  "~Size in KB"
 msgstr "KB ~olarak boyut"
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +59.String.Text
-#, fuzzy
 msgid  "Click 'Preview' to see a preview in your browser:"
 msgstr "Tarayıcınızda önizlemeyi görmek için 'Önizleme' tıklayın:  "
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +60.String.Text
-#, fuzzy
 msgid  "Customize the selected layout"
 msgstr "Seçilmiş düzeni özelleştir"
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +61.String.Text
 msgid  "Include the following information for each document in the table of contents:"
-msgstr ""
+msgstr "Aşağıdaki bilgiyi her belgenin içerik tablosuna ekle:"
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +62.String.Text
-#, fuzzy
 msgid  "Optimize the layout for screen resolution:"
 msgstr "Ekran çözünürlüğünü düzene göre ayarla:"
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +64.String.Text
-#, fuzzy
 msgid  "~640x480"
 msgstr "~640x480"
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +65.String.Text
-#, fuzzy
 msgid  "~800x600"
 msgstr "~800x600"
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +66.String.Text
-#, fuzzy
 msgid  "~1024x768"
 msgstr "~1024x768"
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +70.String.Text
-#, fuzzy
 msgid  "Generating Your Web Site"
 msgstr "Web Siteniz Oluşturuluyor"
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +71.String.Text
-#, fuzzy
 msgid  "%START - %END/%TOTAL"
 msgstr "%START - %END/%TOTAL"
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +72.String.Text
-#, fuzzy
 msgid  "myWebsite"
 msgstr "Web sitem"
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +73.String.Text
-#, fuzzy
 msgid  "FTP target '%FILENAME' is a file."
 msgstr "FTP hedefi '%FILENAME' dosyasıdır."
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +74.String.Text
-#, fuzzy
 msgid  "The local target '%FILENAME' is a file."
 msgstr "Yerel hedef '%FILENAME' dosyasıdır."
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +75.String.Text
 msgid  "The ZIP target '%FILENAME' already exists. Do you want to overwrite the existing target? "
-msgstr ""
+msgstr "ZIP hedefi '%FILENAME' mevcut. Var olan hedef üzerine yazmak istiyor musunuz?"
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +76.String.Text
 msgid  "The FTP target directory '%FILENAME' is not empty. Some files might be overwritten. Do you want to continue?"
-msgstr ""
+msgstr "FTP hedef dizin '%FILENAME' boş değil. Bazı dosyaların üzerine yazılabilir. Devam etmek istiyor musunuz?"
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +77.String.Text
 msgid  "The local target directory '%FILENAME' is not empty. Some files might be overwritten. Do you want to continue?"
-msgstr ""
+msgstr "Yerel hedef dizin '%FILENAME' boş değil. Bazı dosyaların üzerine yazılabilir. Devam etmek istiyor musunuz?"
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +78.String.Text
 msgid  "Settings already exist under the given name. Do you want to overwrite the existing settings? "
-msgstr ""
+msgstr "Bu isimde ayarlar zaten mevcut. Var olan ayarların üzerine yazmak istiyor musunuz?"
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +79.String.Text
-#, fuzzy
 msgid  "Exporting documents..."
 msgstr "Belgeler dışa aktarılıyor..."
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +80.String.Text
-#, fuzzy
 msgid  "Preparing export..."
 msgstr "Dışa aktarma hazırlanıyor..."
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +81.String.Text
-#, fuzzy
 msgid  "Copying layout files..."
 msgstr "Düzen dosyaları kopyalanıyor..."
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +82.String.Text
-#, fuzzy
 msgid  "Preparing table of contents generation..."
 msgstr "İçindekiler tablosu hazırlanıyor"
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +83.String.Text
-#, fuzzy
 msgid  "Generating table of contents..."
 msgstr "İçerik tablosu oluşturuluyor..."
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +84.String.Text
-#, fuzzy
 msgid  "Initializing..."
 msgstr "İlklendiriliyor..."
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +86.String.Text
-#, fuzzy
 msgid  "Preparing to publish..."
 msgstr "Yayınlanmaya hazırlanıyor..."
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +87.String.Text
-#, fuzzy
 msgid  "Publishing to local directory..."
 msgstr "Yerel dizinde yayınla..."
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +88.String.Text
-#, fuzzy
 msgid  "Publishing to FTP destination..."
 msgstr "FTP hedef yerinde yayınla..."
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +89.String.Text
-#, fuzzy
 msgid  "Publishing to a ZIP archive..."
 msgstr "Bir ZIP arşivini yayınla..."
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START + 90.String.Text
-#, fuzzy
 msgid  "Finishing..."
 msgstr "Bitiriliyor..."
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START + 94.String.Text
-#, fuzzy
 msgid  "Graphic files"
 msgstr "Resim dosyaları"
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START + 95.String.Text
-#, fuzzy
 msgid  "All files"
 msgstr "Bütün dosyalar"
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START + 96.String.Text
-#, fuzzy
 msgid  "~ZIP archive files"
 msgstr "~ZIP arşiv dosyaları"
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START + 98.String.Text
-#, fuzzy
 msgid  "Background images"
 msgstr "Arkaplan resimleri"
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START + 99.String.Text
-#, fuzzy
 msgid  "Choose a background image: "
 msgstr "Arkaplan resmi seçin:"
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START + 100.String.Text
-#, fuzzy
 msgid  "Icon sets"
 msgstr "Simge takımı"
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START + 101.String.Text
-#, fuzzy
 msgid  "Choose an icon set:"
 msgstr "Simge takımı seç:"
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +102.String.Text
-#, fuzzy
 msgid  "Other..."
 msgstr "Diğer..."
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +103.String.Text
-#, fuzzy
 msgid  "None"
 msgstr "Hiçbiri"
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +104.String.Text
-#, fuzzy
 msgid  "Your web site was created successfully into: %FILENAME"
 msgstr "Web siteniz başarılı biçimde oluşturuldu: %FILENAME"
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +105.String.Text
-#, fuzzy
 msgid  "One or more errors occurred when generating the web site."
 msgstr "Web sitesi oluşturulurken bir ya da daha çok hata meydana geldi."
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +106.String.Text
-#, fuzzy
 msgid  "An error occurred while generating the table of contents page(s). "
 msgstr "İçerik tablosu oluşturulurken bir hata oluştu."
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +107.String.Text
-#, fuzzy
 msgid  "An error occurred while copying the layout files. "
 msgstr "Yerleşim dosyaları kopyalanırken bir hata oluştu."
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +108.String.Text
 msgid  "An error occurred while gathering document information for '%FILENAME'. "
-msgstr ""
+msgstr "'%FILENAME' dosyasının belge bilgileri alınırken bir hata oluştu."
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +109.String.Text
-#, fuzzy
 msgid  "An error occurred while exporting the document '%FILENAME'."
 msgstr "'%FILENAME' dışa aktarırken bir hata oluştu."
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +110.String.Text
-#, fuzzy
 msgid  "An error occurred while creating a directory for exporting '%FILENAME'."
 msgstr "'%FILENAME' dışa aktarılması için dizin oluştururken bir hata oluştu. "
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +111.String.Text
-#, fuzzy
 msgid  "A security error occurred while exporting the document '%FILENAME'."
 msgstr "'%FILENAME' dosyası dışa aktarılırken güvenlik hatası oluştu."
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +112.String.Text
 msgid  "An input/output error occurred while exporting the document '%FILENAME'."
-msgstr ""
+msgstr "'%FILENAME' dosyası dışa aktarılırken giriş/çıkış hatası oluştu."
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +113.String.Text
-#, fuzzy
 msgid  "An error occurred while copying media files to the temporary directory."
 msgstr "Ortam dosyaları geçici dizine kopyalanırken bir hata oluştu."
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +114.String.Text
-#, fuzzy
 msgid  "The web site could not be copied to the following destination: %URL"
 msgstr "Web sitesi takip eden hedef yere kopyalanamadı: %URL"
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +115.String.Text
-#, fuzzy
 msgid  "An unexpected error occurred: %ERROR"
 msgstr "Beklenmedik bir hata meydana geldi: %ERROR"
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +116.String.Text
 msgid  "An unexpected error occurred while validating the file: '%FILENAME'"
-msgstr ""
+msgstr "Dosyayı geçerli kılarken beklenmedik bir hata meydana geldi: '%FILENAME'"
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +117.String.Text
-#, fuzzy
 msgid  "%FILENAME' is a folder."
 msgstr "%FILENAME bir dosyadır."
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +118.String.Text
-#, fuzzy
 msgid  "Loading Web Wizard Settings..."
 msgstr "Web Sihirbazı Ayarları Yükleniyor..."
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +119.String.Text
-#, fuzzy
 msgid  "An unexpected error occurred."
 msgstr "Beklenmedik bir hata meydana geldi."
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +120.String.Text
-#, fuzzy
 msgid  "Validating documents..."
 msgstr "Belgeler doğrulanıyor..."
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +121.String.Text
-#, fuzzy
 msgid  "My Archive"
 msgstr "Arşivlerim"
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +122.String.Text
-#, fuzzy
 msgid  "Introduction "
 msgstr "Giriş"
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +123.String.Text
-#, fuzzy
 msgid  "Documents "
 msgstr "Belgeler"
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +124.String.Text
-#, fuzzy
 msgid  "Main layout"
 msgstr "Ana düzen"
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +125.String.Text
-#, fuzzy
 msgid  "Layout details"
 msgstr "Düzen ayrıntıları"
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +126.String.Text
-#, fuzzy
 msgid  "Style"
 msgstr "Biçem"
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +127.String.Text
-#, fuzzy
 msgid  "Web site information"
 msgstr "Web sitesi bilgisi"
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +128.String.Text
-#, fuzzy
 msgid  "Preview"
 msgstr "Önizleme"
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +130.String.Text
 msgid  "The selected settings will be deleted.\n\nDo you really want to delete these settings? "
-msgstr ""
+msgstr "Seçilmiş ayarlar silinecek.\n\nBu ayarları gerçekten silmek istiyor musunuz?"
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +131.String.Text
-#, fuzzy
 msgid  "%NUMBER pages"
 msgstr "%NUMBER sayfa"
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +132.String.Text
-#, fuzzy
 msgid  "%NUMBER slides"
 msgstr "%NUMBER slayt"
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +133.String.Text
-#, fuzzy
 msgid  "Created: %DATE"
 msgstr "Oluşturulma: %DATE"
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +134.String.Text
-#, fuzzy
 msgid  "Last modified: %DATE"
 msgstr "Son değiştirilme: %DATE"
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +135.String.Text
-#, fuzzy
 msgid  "Web Wizard Settings"
 msgstr "Web Sihirbazı Ayarları"
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +136.String.Text
-#, fuzzy
 msgid  "Background image:"
 msgstr "Arkaplan resmi:"
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +137.String.Text
-#, fuzzy
 msgid  "Icon set:"
 msgstr "Simge takımı:"
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +138.String.Text
-#, fuzzy
 msgid  "The icon set is used for presentations in HTML format."
 msgstr "Simge takımı, sunumları HTML biçiminde görüntülemek için kullanılır."
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +139.String.Text
-#, fuzzy
 msgid  "HTML Metadata"
 msgstr "Ek HTML Bilgisi"
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +140.String.Text
-#, fuzzy
 msgid  "Choose..."
 msgstr "Seç..."
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +141.String.Text
-#, fuzzy
 msgid  "Choose..."
 msgstr "Seç..."
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +142.String.Text
-#, fuzzy
 msgid  "<default>"
 msgstr "<varsayılan>"
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +143.String.Text
-#, fuzzy
 msgid  "Publishing via FTP Proxy is not supported."
 msgstr "FTP Sunucu Vekili ile yayınlama desteklenmiyor."
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +144.String.Text
-#, fuzzy
 msgid  "<no background image>"
 msgstr "<arkaplan yok>"
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +145.String.Text
-#, fuzzy
 msgid  "<no icon set>"
 msgstr "<simge yok>"
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +146.String.Text
-#, fuzzy
 msgid  "The FTP directory '%FILENAME' could not be created."
 msgstr "FTP dizininde '%FILENAME' oluşturulamadı."
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +147.String.Text
 msgid  "The FTP directory '%FILENAME' does not exist. \nCreate the directory now?"
-msgstr ""
+msgstr "FTP dizininde '%FILENAME' yok. \nDizin şimdi oluşturulsun mu?"
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +148.String.Text
 msgid  "The Zip file '%FILENAME' cannot be created: a directory of the same name already exists."
-msgstr ""
+msgstr "Zip dosyası '%FILENAME' oluşturulamadı: aynı isimde bir dizin zaten var."
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +149.String.Text
 msgid  "The local directory '%FILENAME' cannot be created. \nPlease check your write-access."
-msgstr ""
+msgstr "Yerel dizinde '%FILENAME' oluşturulamadı. \nLütfen yazma-erişimini kontrol edin."
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +150.String.Text
 msgid  "The local directory '%FILENAME' does not exist. \nCreate the directory now?"
-msgstr ""
+msgstr "Yerel dizinde '%FILENAME' yok. \nDizin şimdi oluşturulsun mu?"
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +151.String.Text
-#, fuzzy
 msgid  "Size: %NUMBERKB"
 msgstr "Boyut: %NUMBERKB"
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +152.String.Text
-#, fuzzy
 msgid  "File not found. Would you like to specify a new file location?"
 msgstr "Dosya bulunamadı. Yeni bir dosya konumu belirtmek ister misiniz?"
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_FTP +0.String.Text
-#, fuzzy
 msgid  "FTP Connection"
 msgstr "FTP Bağlantısı"
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_FTP +1.String.Text
-#, fuzzy
 msgid  "~User name:"
 msgstr "~Kullanıcı adı:"
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_FTP +2.String.Text
-#, fuzzy
 msgid  "~Password:"
 msgstr "~Parola:"
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_FTP +3.String.Text
-#, fuzzy
 msgid  "Connect"
 msgstr "Bağlan"
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_FTP +4.String.Text
-#, fuzzy
 msgid  "1. Enter FTP connection information."
 msgstr "1. FTP bağlantı bilgilerini gir."
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_FTP +5.String.Text
-#, fuzzy
 msgid  "~Server name or IP address:"
 msgstr "~Sunucu adı ya da IP adresi:"
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_FTP +6.String.Text
-#, fuzzy
 msgid  "2. Connect to the server."
 msgstr "2. Sunucuya bağlan."
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_FTP +7.String.Text
-#, fuzzy
 msgid  "3. ~Choose a remote directory (optional)."
 msgstr "3. Uzak ~dizini seç (seçimli)."
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_FTP +8.String.Text
-#, fuzzy
 msgid  "..."
 msgstr "..."
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_FTP +9.String.Text
-#, fuzzy
 msgid  "Connection status is unknown"
 msgstr "Bağlantı durumu bilinmiyor"
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_FTP +10.String.Text
-#, fuzzy
 msgid  "Connection was established successfully"
 msgstr "Bağlantı başarılı biçimde kuruldu"
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_FTP +11.String.Text
-#, fuzzy
 msgid  "Username or password is wrong"
 msgstr "Yanlış kullanıcı adı ya da parola"
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_FTP +12.String.Text
-#, fuzzy
 msgid  "Could not resolve server name"
 msgstr "Sunucu adı çözümlenemedi"
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_FTP +13.String.Text
-#, fuzzy
 msgid  "You do not have sufficient user rights"
 msgstr "Yeterli kullanıcı haklarına sahip değilsiniz"
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_FTP +14.String.Text
-#, fuzzy
 msgid  "Cannot connect to server"
 msgstr "Sunucuya bağlanılamadı"
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_FTP +15.String.Text
-#, fuzzy
 msgid  "Unexpected error"
 msgstr "Beklenmedik hata"
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_FTP +16.String.Text
-#, fuzzy
 msgid  "FTP publishing directory"
 msgstr "FTP yayınlama dizini"
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_FTP +17.String.Text
-#, fuzzy
 msgid  "This is not an FTP folder"
 msgstr "Bu FTP klasörü değil"
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_FTP +18.String.Text
-#, fuzzy
 msgid  "Connecting..."
 msgstr "Bağlanıyor..."
 
 #: source/formwizard/dbwizres.src#RID_AGENDAWIZARDDIALOG_START +1.String.Text
-#, fuzzy
 msgid  "Agenda Wizard"
 msgstr "Ajanda Sihirbazı"
 
 #: source/formwizard/dbwizres.src#RID_AGENDAWIZARDDIALOG_START +2.String.Text
-#, fuzzy
 msgid  "Make ~manual changes to this agenda template"
 msgstr "Bu ajanda şablonunda elle değişiklikler yapın"
 
 #: source/formwizard/dbwizres.src#RID_AGENDAWIZARDDIALOG_START +3.String.Text
-#, fuzzy
 msgid  "Template name:"
 msgstr "Şablon adı:"
 
 #: source/formwizard/dbwizres.src#RID_AGENDAWIZARDDIALOG_START + 4.String.Text
-#, fuzzy
 msgid  "Location and file name:"
 msgstr "Konum ve dosya adı:"
 
 #: source/formwizard/dbwizres.src#RID_AGENDAWIZARDDIALOG_START +5.String.Text
-#, fuzzy
 msgid  "What do you want to do next?"
 msgstr "Ne yapmak istiyorsunuz?"
 
 #: source/formwizard/dbwizres.src#RID_AGENDAWIZARDDIALOG_START +6.String.Text
-#, fuzzy
 msgid  "Please choose the page design for the agenda"
 msgstr "Lütfen ajanda için sayfa tasarımı seçin"
 
 #: source/formwizard/dbwizres.src#RID_AGENDAWIZARDDIALOG_START +7.String.Text
-#, fuzzy
 msgid  "Please select the headings you wish to include in your agenda template"
 msgstr "Ajanda şablonunuza eklemek istediğiniz başlıkları seçiniz"
 
 #: source/formwizard/dbwizres.src#RID_AGENDAWIZARDDIALOG_START +8.String.Text
-#, fuzzy
 msgid  "Please enter general information for the event"
 msgstr "Olay için genel bilgi giriniz"
 
 #: source/formwizard/dbwizres.src#RID_AGENDAWIZARDDIALOG_START +9.String.Text
-#, fuzzy
 msgid  "Please specify items for the agenda"
 msgstr "Lütfen ajanda için öğeleri belirtiniz"
 
 #: source/formwizard/dbwizres.src#RID_AGENDAWIZARDDIALOG_START +10.String.Text
-#, fuzzy
 msgid  "Please select the names you wish to include in your agenda template"
 msgstr "Lütfen ajanda şablonunuzun içermesini istediğiniz adları seçiniz"
 
 #: source/formwizard/dbwizres.src#RID_AGENDAWIZARDDIALOG_START +11.String.Text
-#, fuzzy
 msgid  "Choose a name and save the template"
 msgstr "Bir ad seç ve şablonu kaydet"
 
 #: source/formwizard/dbwizres.src#RID_AGENDAWIZARDDIALOG_START +12.String.Text
-#, fuzzy
 msgid  "Include form for recording minutes"
 msgstr "Kayıt süreleri için form ekle"
 
 #: source/formwizard/dbwizres.src#RID_AGENDAWIZARDDIALOG_START +13.String.Text
 msgid  "This wizard helps you to create an agenda template. The template can then be used to create an agenda whenever needed."
-msgstr ""
+msgstr "Bu sihirbaz ajanda şablonu oluşturmada size yardımcı olur. Daha sonra bu şablonu, her ajanda oluşturmak gerektiğinde kullanabilirsiniz."
 
 #: source/formwizard/dbwizres.src#RID_AGENDAWIZARDDIALOG_START +14.String.Text
-#, fuzzy
 msgid  "Time:"
 msgstr "Zaman:"
 
 #: source/formwizard/dbwizres.src#RID_AGENDAWIZARDDIALOG_START +15.String.Text
-#, fuzzy
 msgid  "Name:"
 msgstr "Ad:"
 
 #: source/formwizard/dbwizres.src#RID_AGENDAWIZARDDIALOG_START + 16.String.Text
-#, fuzzy
 msgid  "Location:"
 msgstr "Konum:"
 
 #: source/formwizard/dbwizres.src#RID_AGENDAWIZARDDIALOG_START +17.String.Text
 msgid  "Placeholders will be used in empty fields. You can replace placeholders with text later."
-msgstr ""
+msgstr "Yer tutucular boş alanlarda kullanılacaktır. Bu yer tutucuları daha sonra metin ile değiştirebilirsiniz."
 
 #: source/formwizard/dbwizres.src#RID_AGENDAWIZARDDIALOG_START +18.String.Text
-#, fuzzy
 msgid  "..."
 msgstr "..."
 
 #: source/formwizard/dbwizres.src#RID_AGENDAWIZARDDIALOG_START +19.String.Text
-#, fuzzy
 msgid  "Create an ~agenda from this template"
 msgstr "Bu şablondan ~ajanda oluştur"
 
 #: source/formwizard/dbwizres.src#RID_AGENDAWIZARDDIALOG_START +20.String.Text
 msgid  "To create a new agenda out of the template, go to the location where you saved the template and double-click the file."
-msgstr ""
+msgstr "Şablondan yeni ajanda oluşturmak için, şablonu kaydettiğiniz yere gidin ve şablonu çift tıklayın."
 
 #: source/formwizard/dbwizres.src#RID_AGENDAWIZARDDIALOG_START +21.String.Text
-#, fuzzy
 msgid  "Agenda item"
 msgstr "Ajanda öğesi"
 
 #: source/formwizard/dbwizres.src#RID_AGENDAWIZARDDIALOG_START +22.String.Text
-#, fuzzy
 msgid  "Responsible"
 msgstr "Sorumlu"
 
 #: source/formwizard/dbwizres.src#RID_AGENDAWIZARDDIALOG_START +23.String.Text
-#, fuzzy
 msgid  "Duration"
 msgstr "Süre"
 
 #: source/formwizard/dbwizres.src#RID_AGENDAWIZARDDIALOG_START +24.String.Text
-#, fuzzy
 msgid  "Meeting called by"
 msgstr "Toplantı çağrısını yapan"
 
 #: source/formwizard/dbwizres.src#RID_AGENDAWIZARDDIALOG_START +25.String.Text
-#, fuzzy
 msgid  "Chairperson"
 msgstr "Toplantı başkanı"
 
 #: source/formwizard/dbwizres.src#RID_AGENDAWIZARDDIALOG_START +26.String.Text
-#, fuzzy
 msgid  "Minute keeper"
 msgstr "Tutanak tutucu"
 
 #: source/formwizard/dbwizres.src#RID_AGENDAWIZARDDIALOG_START +27.String.Text
-#, fuzzy
 msgid  "Moderator"
 msgstr "Yönetici"
 
 #: source/formwizard/dbwizres.src#RID_AGENDAWIZARDDIALOG_START +28.String.Text
-#, fuzzy
 msgid  "Attendees"
 msgstr "Katılımcılar"
 
 #: source/formwizard/dbwizres.src#RID_AGENDAWIZARDDIALOG_START +29.String.Text
-#, fuzzy
 msgid  "Observers"
 msgstr "Gözlemci"
 
 #: source/formwizard/dbwizres.src#RID_AGENDAWIZARDDIALOG_START +30.String.Text
-#, fuzzy
 msgid  "Facility personnel"
 msgstr "Tesis/Araç personeli"
 
 #: source/formwizard/dbwizres.src#RID_AGENDAWIZARDDIALOG_START +31.String.Text
 msgid  "The agenda template will include placeholders for the names of the selected people. When creating an agenda from the template, you can replace these placeholder with the appropriate names."
-msgstr ""
+msgstr "Ajanda şablonu, seçilen kişilerin isimleri için, yer tutucular ekleyecektir. Şablonda ajanda oluştururken, bu yer tutucuları uygun isimlerle yer değiştirebilirsiniz."
 
 #: source/formwizard/dbwizres.src#RID_AGENDAWIZARDDIALOG_START +32.String.Text
-#, fuzzy
 msgid  "Type of meeting"
 msgstr "Toplantının türü"
 
 #: source/formwizard/dbwizres.src#RID_AGENDAWIZARDDIALOG_START +33.String.Text
-#, fuzzy
 msgid  "Please read"
 msgstr "Lütfen oku"
 
 #: source/formwizard/dbwizres.src#RID_AGENDAWIZARDDIALOG_START +34.String.Text
-#, fuzzy
 msgid  "Please bring"
 msgstr "Getirilmesi gerekenler"
 
 #: source/formwizard/dbwizres.src#RID_AGENDAWIZARDDIALOG_START +35.String.Text
-#, fuzzy
 msgid  "Notes"
 msgstr "Notlar"
 
 #: source/formwizard/dbwizres.src#RID_AGENDAWIZARDDIALOG_START +36.String.Text
-#, fuzzy
 msgid  "The agenda template will include placeholders for the selected items."
 msgstr "Ajanda şablonu seçilen öğeler için yer tutucular ekleyecektir."
 
 #: source/formwizard/dbwizres.src#RID_AGENDAWIZARDDIALOG_START +38.String.Text
-#, fuzzy
 msgid  "Date:"
 msgstr "Tarih:"
 
 #: source/formwizard/dbwizres.src#RID_AGENDAWIZARDDIALOG_START +39.String.Text
 msgid  "This wizard creates an agenda template which enables you to create multiple agendas with the same layout and settings."
-msgstr ""
+msgstr "Bu sihirbaz size, çok sayıda ajandayı aynı sayfa düzeni ve ayarlarla oluşturabilmeniz için, şablon oluşturmada yardımcı olur."
 
 #: source/formwizard/dbwizres.src#RID_AGENDAWIZARDDIALOG_START +40.String.Text
-#, fuzzy
 msgid  "Page design:"
 msgstr "Sayfa tasarımı:"
 
 #: source/formwizard/dbwizres.src#RID_AGENDAWIZARDDIALOG_START +41.String.Text
-#, fuzzy
 msgid  "myAgendaTemplate.stw"
 msgstr "benimajandasablonum.stw"
 
 #: source/formwizard/dbwizres.src#RID_AGENDAWIZARDDIALOG_START +42.String.Text
-#, fuzzy
 msgid  "My Agenda Template"
 msgstr "Ajanda Şablonlarım"
 
 #: source/formwizard/dbwizres.src#RID_AGENDAWIZARDDIALOG_START +43.String.Text
-#, fuzzy
 msgid  "An unexpected error occurred while saving the agenda template."
 msgstr "Ajanda şablonunu kaydederken beklenmeyen bir hata oluştu."
 
 #: source/formwizard/dbwizres.src#RID_AGENDAWIZARDDIALOG_START +44.String.Text
-#, fuzzy
 msgid  "Name"
 msgstr "Ad"
 
 #: source/formwizard/dbwizres.src#RID_AGENDAWIZARDDIALOG_START +45.String.Text
-#, fuzzy
 msgid  "Date"
 msgstr "Tarih"
 
 #: source/formwizard/dbwizres.src#RID_AGENDAWIZARDDIALOG_START +46.String.Text
-#, fuzzy
 msgid  "Time"
 msgstr "Zaman"
 
 #: source/formwizard/dbwizres.src#RID_AGENDAWIZARDDIALOG_START + 47.String.Text
-#, fuzzy
 msgid  "Location"
 msgstr "Konum"
 
 #: source/formwizard/dbwizres.src#RID_AGENDAWIZARDDIALOG_START +48.String.Text
-#, fuzzy
 msgid  "Click to replace this text"
 msgstr "Bu metni değiştirmek için tıklayın"
 
 #: source/formwizard/dbwizres.src#RID_AGENDAWIZARDDIALOG_START +50.String.Text
-#, fuzzy
 msgid  "Page design"
 msgstr "Sayfa tasarımı"
 
 #: source/formwizard/dbwizres.src#RID_AGENDAWIZARDDIALOG_START +51.String.Text
-#, fuzzy
 msgid  "General information"
 msgstr "Genel bilgi"
 
 #: source/formwizard/dbwizres.src#RID_AGENDAWIZARDDIALOG_START +52.String.Text
-#, fuzzy
 msgid  "Headings to include"
 msgstr "Eklenecek başlıklar"
 
 #: source/formwizard/dbwizres.src#RID_AGENDAWIZARDDIALOG_START +53.String.Text
-#, fuzzy
 msgid  "Names"
 msgstr "Adlar"
 
 #: source/formwizard/dbwizres.src#RID_AGENDAWIZARDDIALOG_START +54.String.Text
-#, fuzzy
 msgid  "Agenda items"
 msgstr "Ajanda öğesi"
 
@@ -3235,893 +3001,729 @@ msgid  "Move down"
 msgstr "Aşağı taşı"
 
 #: source/importwizard/importwi.src#sHelpButton.String.Text
-#, fuzzy
 msgid  "~Help"
 msgstr "~Yardım"
 
 #: source/importwizard/importwi.src#sCancelButton.String.Text
-#, fuzzy
 msgid  "~Cancel"
 msgstr "~İptal"
 
 #: source/importwizard/importwi.src#sBackButton.String.Text
-#, fuzzy
 msgid  "<< ~Back"
 msgstr "<< ~Geri"
 
 #: source/importwizard/importwi.src#sNextButton.String.Text
-#, fuzzy
 msgid  "Ne~xt >>"
 msgstr "İ~leri >>"
 
 #: source/importwizard/importwi.src#sBeginButton.String.Text
-#, fuzzy
 msgid  "~Convert"
 msgstr "~Dönüştür"
 
 #: source/importwizard/importwi.src#sCloseButton.String.Text
-#, fuzzy
 msgid  "~Close"
 msgstr "~Kapat"
 
 #: source/importwizard/importwi.src#sWelcometextLabel1.String.Text
 msgid  "This wizard converts documents in %PRODUCTNAME format and Microsoft Office documents to the new OpenDocument format."
-msgstr ""
+msgstr "Bu sihirbaz yardımı ile belgeler eski %PRODUCTNAME biçiminden ve Microsoft Office belgelerinden yeni OpenDocument biçimine kolayca çevrilir."
 
 #: source/importwizard/importwi.src#sWelcometextLabel2.String.Text
 msgid  "Please note that when converting Microsoft documents any attached VBA macros lose their functionality."
-msgstr ""
+msgstr "Lütfen dikkat ediniz, Microsoft belgelerine iliştirilmiş VBA makroları işlevlerini yitirecektir."
 
 #: source/importwizard/importwi.src#sWelcometextLabel3.String.Text
-#, fuzzy
 msgid  "Select the document type for conversion:"
 msgstr "Dönüşüm için belge tipini seçiniz:"
 
 #: source/importwizard/importwi.src#sMSTemplateCheckbox_1_.String.Text
-#, fuzzy
 msgid  "Word templates"
 msgstr "Word şablonları"
 
 #: source/importwizard/importwi.src#sMSTemplateCheckbox_2_.String.Text
-#, fuzzy
 msgid  "Excel templates"
 msgstr "Excel şablonları"
 
 #: source/importwizard/importwi.src#sMSTemplateCheckbox_3_.String.Text
-#, fuzzy
 msgid  "PowerPoint templates"
 msgstr "PowerPoint şablonları"
 
 #: source/importwizard/importwi.src#sMSDocumentCheckbox_1_.String.Text
-#, fuzzy
 msgid  "Word documents"
 msgstr "Word belgeleri"
 
 #: source/importwizard/importwi.src#sMSDocumentCheckbox_2_.String.Text
-#, fuzzy
 msgid  "Excel documents"
 msgstr "Excel belgeleri"
 
 #: source/importwizard/importwi.src#sMSDocumentCheckbox_3_.String.Text
-#, fuzzy
 msgid  "PowerPoint documents"
 msgstr "PowerPoint belgeleri"
 
 #: source/importwizard/importwi.src#sSearchInSubDir.String.Text
-#, fuzzy
 msgid  "Including subdirectories"
 msgstr "Alt dizinleri içer"
 
 #: source/importwizard/importwi.src#sMSContainerName.String.Text
-#, fuzzy
 msgid  "Microsoft Office"
 msgstr "Microsoft Office"
 
 #: source/importwizard/importwi.src#sSummaryHeader.String.Text
-#, fuzzy
 msgid  "Summary:"
 msgstr "Özet:"
 
 #: source/importwizard/importwi.src#sTextImportLabel.String.Text
-#, fuzzy
 msgid  "Import from:"
 msgstr "Aktarılan yer:"
 
 #: source/importwizard/importwi.src#sTextExportLabel.String.Text
-#, fuzzy
 msgid  "Save to:"
 msgstr "Farklı kaydet:"
 
 #: source/importwizard/importwi.src#sGroupnameDefault.String.Text
-#, fuzzy
 msgid  "Imported_Templates"
 msgstr "Alınan Şablonlar"
 
 #: source/importwizard/importwi.src#sProgressDesc1.String.Text
-#, fuzzy
 msgid  "Progress: "
 msgstr "İlerleme:"
 
 #: source/importwizard/importwi.src#sProgressOneDoc.String.Text
-#, fuzzy
 msgid  "Document"
 msgstr "Belge"
 
 #: source/importwizard/importwi.src#sProgressMoreDocs.String.Text
-#, fuzzy
 msgid  "Documents"
 msgstr "Belgeler"
 
 #: source/importwizard/importwi.src#sProgressMoreTemplates.String.Text
-#, fuzzy
 msgid  "Templates"
 msgstr "Şablonlar"
 
 #: source/importwizard/importwi.src#sNoDirCreation.String.Text
-#, fuzzy
 msgid  "The '%1' directory cannot be created: "
 msgstr "'%1' dizini oluşturulamadı:"
 
 #: source/importwizard/importwi.src#sMsgDirNotThere.String.Text
-#, fuzzy
 msgid  "The '%1' directory does not exist."
 msgstr "'%1' dizini mevcut değil."
 
 #: source/importwizard/importwi.src#sQueryfornewCreation.String.Text
-#, fuzzy
 msgid  "Do you want to create it now?"
 msgstr "Şimdi oluşturmak istiyor musunuz?"
 
 #: source/importwizard/importwi.src#sFileExists.String.Text
-#, fuzzy
 msgid  "The '<1>' file already exists.<CR>Do you want to overwrite it?"
 msgstr "'<1> dosyası zaten var.<CR>Üstüne yazmak ister misiniz?"
 
 #: source/importwizard/importwi.src#sMorePathsError3.String.Text
-#, fuzzy
 msgid  "Directories do not exist"
 msgstr "Dizinler mevcut değil"
 
 #: source/importwizard/importwi.src#sOverwriteallFiles.String.Text
-#, fuzzy
 msgid  "Do you want to overwrite documents without being asked?"
 msgstr "Belgelerin sorulmadan üzerine yazılmasını ister misiniz?"
 
 #: source/importwizard/importwi.src#sreeditMacro.String.Text
-#, fuzzy
 msgid  "Document macro has to be revised."
 msgstr "Belge makrosunun düzeltilmesi gereklidir."
 
 #: source/importwizard/importwi.src#scouldNotsaveDocument.String.Text
-#, fuzzy
 msgid  "Document '<1>' could not be saved."
 msgstr "'<1>' belgesi kaydedilemiyor."
 
 #: source/importwizard/importwi.src#scouldNotopenDocument.String.Text
-#, fuzzy
 msgid  "Document '<1>' could not be opened."
 msgstr "'<1>' belgesi açılamıyor."
 
 #: source/importwizard/importwi.src#sConvertError1.String.Text
-#, fuzzy
 msgid  "Do you really want to terminate conversion at this point?"
 msgstr "Dönüştürmeyi bu noktada bitirmek istiyor musunuz?"
 
 #: source/importwizard/importwi.src#sConvertError2.String.Text
-#, fuzzy
 msgid  "Cancel Wizard"
 msgstr "Sihirbaz İptal"
 
 #: source/importwizard/importwi.src#sRTErrorDesc.String.Text
-#, fuzzy
 msgid  "An unexpected error has occurred in the wizard."
 msgstr "Sihirbaz içinde beklenmedik bir hata oluştu."
 
 #: source/importwizard/importwi.src#sRTErrorHeader.String.Text
-#, fuzzy
 msgid  "Error"
 msgstr "Hata"
 
 #: source/importwizard/importwi.src#sPathDialogMessage.String.Text
-#, fuzzy
 msgid  "Select a directory"
 msgstr "Bir dizin seçiniz"
 
 #: source/importwizard/importwi.src#sDialogTitle.String.Text
-#, fuzzy
 msgid  "Document Converter"
 msgstr "Belge Dönüştürücü"
 
 #: source/importwizard/importwi.src#sProgressPage1.String.Text
-#, fuzzy
 msgid  "Progress"
 msgstr "İlerleme"
 
 #: source/importwizard/importwi.src#sProgressPage2.String.Text
-#, fuzzy
 msgid  "Retrieving the relevant documents:"
 msgstr "Gerekli belgeler alınıyor:"
 
 #: source/importwizard/importwi.src#sProgressPage3.String.Text
-#, fuzzy
 msgid  "Converting the documents"
 msgstr "Belgeleri dönüştür"
 
 #: source/importwizard/importwi.src#sProgressFound.String.Text
-#, fuzzy
 msgid  "Found:"
 msgstr "Bulunan:"
 
 #: source/importwizard/importwi.src#sProgressPage5.String.Text
-#, fuzzy
 msgid  "%1 found"
 msgstr "%1 bulundu"
 
 #: source/importwizard/importwi.src#sReady.String.Text
-#, fuzzy
 msgid  "Finished"
 msgstr "Bitti"
 
 #: source/importwizard/importwi.src#sXMLTemplateCheckbox_1_.String.Text
-#, fuzzy
 msgid  "Text templates"
 msgstr "Metin şablonları"
 
 #: source/importwizard/importwi.src#sXMLTemplateCheckbox_2_.String.Text
-#, fuzzy
 msgid  "Spreadsheet templates"
 msgstr "Hesap tablosu şablonları"
 
 #: source/importwizard/importwi.src#sXMLTemplateCheckbox_3_.String.Text
-#, fuzzy
 msgid  "Drawing/presentation templates"
 msgstr "Çizim/sunum şablonları"
 
 #: source/importwizard/importwi.src#sXMLTemplateCheckbox_4_.String.Text
-#, fuzzy
 msgid  "Master documents"
 msgstr "Ana belgeler"
 
 #: source/importwizard/importwi.src#sXMLDocumentCheckbox_1_.String.Text
-#, fuzzy
 msgid  "Text documents"
 msgstr "Metin Belgeleri"
 
 #: source/importwizard/importwi.src#sXMLDocumentCheckbox_2_.String.Text
-#, fuzzy
 msgid  "Spreadsheets"
 msgstr "Hesap Tabloları"
 
 #: source/importwizard/importwi.src#sXMLDocumentCheckbox_3_.String.Text
-#, fuzzy
 msgid  "Drawing/presentation documents"
 msgstr "Çizim/sunu belgeleri"
 
 #: source/importwizard/importwi.src#sXMLDocumentCheckbox_4_.String.Text
-#, fuzzy
 msgid  "Master documents/formulas"
 msgstr "Ana belgeler/formüller"
 
 #: source/importwizard/importwi.src#sXMLHelperApplications_1.String.Text
-#, fuzzy
 msgid  "Master documents"
 msgstr "Ana belgeler"
 
 #: source/importwizard/importwi.src#sXMLHelperApplications_2.String.Text
-#, fuzzy
 msgid  "Formulas"
 msgstr "Formüller"
 
 #: source/importwizard/importwi.src#sSourceDocuments.String.Text
-#, fuzzy
 msgid  "Source documents"
 msgstr "Kaynak belgeler"
 
 #: source/importwizard/importwi.src#sTargetDocuments.String.Text
-#, fuzzy
 msgid  "Target documents"
 msgstr "Hedef belgeler"
 
 #: source/importwizard/importwi.src#sCreateLogfile.String.Text
-#, fuzzy
 msgid  "Create log file"
 msgstr "Günlük belgesi oluştur"
 
 #: source/importwizard/importwi.src#sLogfileSummary.String.Text
-#, fuzzy
 msgid  "<COUNT> documents converted"
 msgstr "<COUNT> belge çevrildi"
 
 #: source/importwizard/importwi.src#sLogfileHelpText.String.Text
-#, fuzzy
 msgid  "A log file will be created in your work directory"
 msgstr "Günlük dosyası çalışma dizininizde oluşturulacaktır"
 
 #: source/importwizard/importwi.src#sshowLogfile.String.Text
-#, fuzzy
 msgid  "Show log file"
 msgstr "Günlük dosyasını göster"
 
 #: source/importwizard/importwi.src#sSumInclusiveSubDir.String.Text
-#, fuzzy
 msgid  "All subdirectories will be taken into account"
 msgstr "Bütün alt dizinler göz altında tutulacak"
 
 #: source/importwizard/importwi.src#sSumSaveDokumente.String.Text
-#, fuzzy
 msgid  "These will be exported to the following directory:"
 msgstr "Bu dosyaların dışa aktarılacağı hedef dizin:"
 
 #: source/importwizard/importwi.src#sSumSOTextDocuments.String.Text
 msgid  "All %PRODUCTNAME text documents contained in the following directory will be imported:"
-msgstr ""
+msgstr "İçe aktarılacak tüm %PRODUCTNAME metin belgelerini içeren dizin:"
 
 #: source/importwizard/importwi.src#sSumSOTableDocuments.String.Text
 msgid  "All %PRODUCTNAME spreadsheets contained in the following directory will be imported:"
-msgstr ""
+msgstr "İçe aktarılacak tüm %PRODUCTNAME hesap tablolarını içeren dizin:"
 
 #: source/importwizard/importwi.src#sSumSODrawDocuments.String.Text
 msgid  "All %PRODUCTNAME drawing and presentation documents contained in the following directory will be imported:"
-msgstr ""
+msgstr "İçe aktarılacak tüm %PRODUCTNAME çizim ve sunu belgelerini içeren dizin:"
 
 #: source/importwizard/importwi.src#sSumSOMathDocuments.String.Text
 msgid  "All %PRODUCTNAME formula documents contained in the following directory will be imported:"
-msgstr ""
+msgstr "İçe aktarılacak tüm %PRODUCTNAME formül belgelerini içeren dizin:"
 
 #: source/importwizard/importwi.src#sSumSOTextTemplates.String.Text
 msgid  "All %PRODUCTNAME text templates contained in the following directory will be imported:"
-msgstr ""
+msgstr "İçe aktarılacak tüm %PRODUCTNAME metin şablonlarını içeren dizin:"
 
 #: source/importwizard/importwi.src#sSumSOTableTemplates.String.Text
 msgid  "All %PRODUCTNAME table templates contained in the following directory will be imported:"
-msgstr ""
+msgstr "İçe aktarılacak tüm %PRODUCTNAME hesap tablosu şablonlarını içeren dizin:"
 
 #: source/importwizard/importwi.src#sSumSODrawTemplates.String.Text
 msgid  "All %PRODUCTNAME drawing and presentation templates contained in the following directory will be imported:"
-msgstr ""
+msgstr "İçe aktarılacak tüm %PRODUCTNAME çizim ve sunu şablonlarını içeren dizin:"
 
 #: source/importwizard/importwi.src#sSumSOGlobalDocuments.String.Text
 msgid  "All %PRODUCTNAME master documents contained in the following directory will be imported:"
-msgstr ""
+msgstr "İçe aktarılacak tüm %PRODUCTNAME ana belgelerini içeren dizin:"
 
 #: source/importwizard/importwi.src#sSumMSTextDocuments.String.Text
 msgid  "All Word documents contained in the following directory will be imported:"
-msgstr ""
+msgstr "İçe aktarılacak tüm Word belgelerini içeren dizin:"
 
 #: source/importwizard/importwi.src#sSumMSTableDocuments.String.Text
 msgid  "All Excel documents contained in the following directory will be imported:"
-msgstr ""
+msgstr "İçe aktarılacak tüm Excel belgelerini içeren dizin:"
 
 #: source/importwizard/importwi.src#sSumMSDrawDocuments.String.Text
 msgid  "All PowerPoint documents contained in the following directory will be imported:"
-msgstr ""
+msgstr "İçe aktarılacak tüm PowerPoint belgelerini içeren dizin:"
 
 #: source/importwizard/importwi.src#sSumMSTextTemplates.String.Text
 msgid  "All Word templates contained in the following directory will be imported:"
-msgstr ""
+msgstr "Bu dizin altındaki bütün Word şablonları içe aktarılacak."
 
 #: source/importwizard/importwi.src#sSumMSTableTemplates.String.Text
 msgid  "All Excel templates contained in the following directory will be imported:"
-msgstr ""
+msgstr "İçe aktarılacak tüm Excel şablonlarını içeren dizin:"
 
 #: source/importwizard/importwi.src#sSumMSDrawTemplates.String.Text
 msgid  "All PowerPoint templates contained in the following directory will be imported:"
-msgstr ""
+msgstr "İçe aktarılacak tüm Powerpoint şablonlarını içeren dizin:"
 
 #: source/schedule/schedule.src#dlgCalTitle.String.Text
-#, fuzzy
 msgid  "%PRODUCTNAME Calendar"
 msgstr "%PRODUCTNAME Takvimi"
 
 #: source/schedule/schedule.src#dlgCalTitleBack.String.Text
-#, fuzzy
 msgid  "Back"
 msgstr "Geri"
 
 #: source/schedule/schedule.src#dlgCalTitleOwnData.String.Text
-#, fuzzy
 msgid  "Personal Data"
 msgstr "Kişisel Veriler"
 
 #: source/schedule/schedule.src#dlgSchdlTitle.String.Text
-#, fuzzy
 msgid  "Add Holidays to Calendar"
 msgstr "Takvime Tatil Günlerini Ekle"
 
 #: source/schedule/schedule.src#dlgOK.String.Text
-#, fuzzy
 msgid  "Create"
 msgstr "Oluştur"
 
 #: source/schedule/schedule.src#dlgCancel.String.Text
-#, fuzzy
 msgid  "Cancel"
 msgstr "İptal"
 
 #: source/schedule/schedule.src#dlgCalFrameOption.String.Text
-#, fuzzy
 msgid  "Calendar"
 msgstr "Takvim"
 
 #: source/schedule/schedule.src#dlgCalOptionYear.String.Text
-#, fuzzy
 msgid  "~Year Overview"
 msgstr "~Yıla Genel Bakış"
 
 #: source/schedule/schedule.src#dlgCalOptionMonth.String.Text
-#, fuzzy
 msgid  "~Month"
 msgstr "~Ay"
 
 #: source/schedule/schedule.src#dlgSchdlDescription.String.Text
-#, fuzzy
 msgid  "Add holidays for"
 msgstr "Tatil günleri ekle"
 
 #: source/schedule/schedule.src#dlgSchdlCountry.String.Text
-#, fuzzy
 msgid  "USA"
 msgstr "ABD"
 
 #: source/schedule/schedule.src#dlgTime.String.Text
-#, fuzzy
 msgid  "Time Frame"
 msgstr "Zaman Aralığı"
 
 #: source/schedule/schedule.src#dlgYear.String.Text
-#, fuzzy
 msgid  "Year"
 msgstr "Yıl"
 
 #: source/schedule/schedule.src#dlgCalMonth.String.Text
-#, fuzzy
 msgid  "Month"
 msgstr "Ay"
 
 #: source/schedule/schedule.src#dlgCalOwnData.String.Text
-#, fuzzy
 msgid  "Personal Data"
 msgstr "Kişisel Veriler"
 
 #: source/schedule/schedule.src#dlgCalInsert.String.Text
-#, fuzzy
 msgid  "~Insert"
 msgstr "~Ekle"
 
 #: source/schedule/schedule.src#dlgCalDelete.String.Text
-#, fuzzy
 msgid  "~Delete"
 msgstr "~Sil"
 
 #: source/schedule/schedule.src#dlgCalNewEvent.String.Text
-#, fuzzy
 msgid  "New Event"
 msgstr "Yeni Olay"
 
 #: source/schedule/schedule.src#dlgCalEvent.String.Text
-#, fuzzy
 msgid  "Event"
 msgstr "Olay"
 
 #: source/schedule/schedule.src#dlgCalEventOnce.String.Text
-#, fuzzy
 msgid  "One-Time"
 msgstr "Bir kerelik"
 
 #: source/schedule/schedule.src#dlgCalEventDay.String.Text
-#, fuzzy
 msgid  "Day"
 msgstr "Gün"
 
 #: source/schedule/schedule.src#dlgCalEventMonth.String.Text
-#, fuzzy
 msgid  "Month"
 msgstr "Ay"
 
 #: source/schedule/schedule.src#dlgCalEventYear.String.Text
-#, fuzzy
 msgid  "Year"
 msgstr "Yıl"
 
 #: source/schedule/schedule.src#dlgBitmapFile.String.Text
-#, fuzzy
 msgid  "usa.bmp"
 msgstr "usa.bmp"
 
 #: source/schedule/schedule.src#dlgState.String.Text
-#, fuzzy
 msgid  "Public holidays"
 msgstr "Genel tatil günleri"
 
 #: source/schedule/schedule.src#dlgMonth.String.Text
-#, fuzzy
 msgid  "January"
 msgstr "Ocak"
 
 #: source/schedule/schedule.src#dlgMonth+1.String.Text
-#, fuzzy
 msgid  "February"
 msgstr "Şubat"
 
 #: source/schedule/schedule.src#dlgMonth+2.String.Text
-#, fuzzy
 msgid  "March"
 msgstr "Mart"
 
 #: source/schedule/schedule.src#dlgMonth+3.String.Text
-#, fuzzy
 msgid  "April"
 msgstr "Nisan"
 
 #: source/schedule/schedule.src#dlgMonth+4.String.Text
-#, fuzzy
 msgid  "May"
 msgstr "Mayıs"
 
 #: source/schedule/schedule.src#dlgMonth+5.String.Text
-#, fuzzy
 msgid  "June"
 msgstr "Haziran"
 
 #: source/schedule/schedule.src#dlgMonth+6.String.Text
-#, fuzzy
 msgid  "July"
 msgstr "Temmuz"
 
 #: source/schedule/schedule.src#dlgMonth+7.String.Text
-#, fuzzy
 msgid  "August"
 msgstr "Ağustos"
 
 #: source/schedule/schedule.src#dlgMonth+8.String.Text
-#, fuzzy
 msgid  "September"
 msgstr "Eylül"
 
 #: source/schedule/schedule.src#dlgMonth+9.String.Text
-#, fuzzy
 msgid  "October"
 msgstr "Ekim"
 
 #: source/schedule/schedule.src#dlgMonth+10.String.Text
-#, fuzzy
 msgid  "November"
 msgstr "Kasım"
 
 #: source/schedule/schedule.src#dlgMonth+11.String.Text
-#, fuzzy
 msgid  "December"
 msgstr "Aralık"
 
 #: source/schedule/schedule.src#msgCalErrorTitle.String.Text
-#, fuzzy
 msgid  "Yearly / Monthly Calendar"
 msgstr "Yıllık / Aylık takvim"
 
 #: source/schedule/schedule.src#msgCalError.String.Text
-#, fuzzy
 msgid  "An error occurred while creating the calendar."
 msgstr "Takvim hazırlanırken bir hata oluştu."
 
 #: source/schedule/schedule.src#msgCalRemoveTitle.String.Text
-#, fuzzy
 msgid  "Delete event entries"
 msgstr "Olay girdilerini sil"
 
 #: source/schedule/schedule.src#msgCalRemove.String.Text
-#, fuzzy
 msgid  "Delete the selected entries?"
 msgstr "Seçilen girdiler silinsin mi?"
 
 #: source/schedule/schedule.src#stlWorkday.String.Text
-#, fuzzy
 msgid  "Workweek"
 msgstr "Çalışma haftası"
 
 #: source/schedule/schedule.src#stlWeekend.String.Text
-#, fuzzy
 msgid  "Weekend"
 msgstr "Hafta sonu"
 
 #: source/schedule/schedule.src#nameCalYear.String.Text
-#, fuzzy
 msgid  "Calendar"
 msgstr "Takvim"
 
 #: source/schedule/schedule.src#nameCalMonth.String.Text
-#, fuzzy
 msgid  "Month"
 msgstr "Ay"
 
 #: source/schedule/schedule.src#sProgress.String.Text
-#, fuzzy
 msgid  "Progress:"
 msgstr "İlerleme:"
 
 #: source/template/template.src#SAMPLES.String.Text
 msgid  "In order to use the full functionality of this sample, create a document that is based on this template."
-msgstr ""
+msgstr "Bu örneğin tüm işlevlerini kullanabilmek için, bu şablon ile yeni bir belge oluşturun."
 
 #: source/template/template.src#SAMPLES + 1.String.Text
-#, fuzzy
 msgid  "Remarks"
 msgstr "Öneriler"
 
 #: source/template/template.src#STYLES.String.Text
-#, fuzzy
 msgid  "Theme Selection"
 msgstr "Tema Seçimi"
 
 #: source/template/template.src#STYLES + 1.String.Text
 msgid  "Error while saving the document to the clipboard! The following action cannot be undone."
-msgstr ""
+msgstr "Belgeyi panoya kaydederken hata oluştu! Bir sonraki işlem geri alınamaz."
 
 #: source/template/template.src#STYLES + 2.String.Text
-#, fuzzy
 msgid  "~Cancel"
 msgstr "İ~ptal"
 
 #: source/template/template.src#STYLES + 3.String.Text
-#, fuzzy
 msgid  "~OK"
 msgstr "~Tamam"
 
 #: source/template/template.src#AgendaDlgName.String.Text
-#, fuzzy
 msgid  "Minutes Template"
 msgstr "Kayıt Şablonu"
 
 #: source/template/template.src#AgendaDlgNoCancel.String.Text
-#, fuzzy
 msgid  "An option must be confirmed."
 msgstr "Bir seçenek onaylanmalıdır"
 
 #: source/template/template.src#AgendaDlgFrame.String.Text
-#, fuzzy
 msgid  "Minutes Type"
 msgstr "Kayıt Türü"
 
 #: source/template/template.src#AgendaDlgButton1.String.Text
-#, fuzzy
 msgid  "Results Minutes"
 msgstr "Sonuç Kaydı"
 
 #: source/template/template.src#AgendaDlgButton2.String.Text
-#, fuzzy
 msgid  "Evaluation Minutes"
 msgstr "Değerlendirme Kaydı"
 
 #: source/template/template.src#CorrespondenceNoTextmark.String.Text
-#, fuzzy
 msgid  "The bookmark 'Recipient' is missing."
 msgstr "'Alıcı' yer imi mevcut değil."
 
 #: source/template/template.src#CorrespondenceNoTextmark+1.String.Text
-#, fuzzy
 msgid  "Form letter fields can not be included."
 msgstr "Form mektup alanlarına bağlanamıyor."
 
 #: source/template/template.src#CorrespondenceMsgError.String.Text
-#, fuzzy
 msgid  "An error has occurred."
 msgstr "Hata oluştu."
 
 #: source/template/template.src#CorrespondenceDialog.String.Text
-#, fuzzy
 msgid  "Addressee"
 msgstr "Alıcı"
 
 #: source/template/template.src#CorrespondenceDialog+1.String.Text
-#, fuzzy
 msgid  "One recipient"
 msgstr "Tek alıcı"
 
 #: source/template/template.src#CorrespondenceDialog+2.String.Text
-#, fuzzy
 msgid  "Several recipients (address database)"
 msgstr "Birçok alıcı (adres veritabanı)"
 
 #: source/template/template.src#CorrespondenceDialog+3.String.Text
-#, fuzzy
 msgid  "Use of This Template"
 msgstr "Bu Şablonu Kullan"
 
 #: source/template/template.src#CorrespondenceFields.String.Text
-#, fuzzy
 msgid  "Click placeholder and overwrite"
 msgstr "Yerine geçecek olanı tıkla ve üzerine yaz"
 
 #: source/template/template.src#CorrespondenceFields+1.String.Text
-#, fuzzy
 msgid  "Company"
 msgstr "Şirket adı"
 
 #: source/template/template.src#CorrespondenceFields+2.String.Text
-#, fuzzy
 msgid  "Department"
 msgstr "Bölüm"
 
 #: source/template/template.src#CorrespondenceFields+3.String.Text
-#, fuzzy
 msgid  "First Name"
 msgstr "Adı"
 
 #: source/template/template.src#CorrespondenceFields+4.String.Text
-#, fuzzy
 msgid  "Last Name"
 msgstr "Soyadı"
 
 #: source/template/template.src#CorrespondenceFields+5.String.Text
-#, fuzzy
 msgid  "Street"
 msgstr "Cadde"
 
 #: source/template/template.src#CorrespondenceFields+6.String.Text
-#, fuzzy
 msgid  "Country"
 msgstr "Ülke"
 
 #: source/template/template.src#CorrespondenceFields+7.String.Text
-#, fuzzy
 msgid  "ZIP/Postal Code"
 msgstr "Posta Kodu"
 
 #: source/template/template.src#CorrespondenceFields+8.String.Text
-#, fuzzy
 msgid  "City"
 msgstr "Şehir"
 
 #: source/template/template.src#CorrespondenceFields+9.String.Text
-#, fuzzy
 msgid  "Title"
 msgstr "Başlık"
 
 #: source/template/template.src#CorrespondenceFields+10.String.Text
-#, fuzzy
 msgid  "Position"
 msgstr "Konum"
 
 #: source/template/template.src#CorrespondenceFields+11.String.Text
-#, fuzzy
 msgid  "Form of Address"
 msgstr "Adres formu"
 
 #: source/template/template.src#CorrespondenceFields+12.String.Text
-#, fuzzy
 msgid  "Initials"
 msgstr "İlk harfler"
 
 #: source/template/template.src#CorrespondenceFields+13.String.Text
-#, fuzzy
 msgid  "Salutation"
 msgstr "Selamlama"
 
 #: source/template/template.src#CorrespondenceFields+14.String.Text
-#, fuzzy
 msgid  "Home Phone"
 msgstr "Ev Telefonu"
 
 #: source/template/template.src#CorrespondenceFields+15.String.Text
-#, fuzzy
 msgid  "Work Phone"
 msgstr "İş Telefonu"
 
 #: source/template/template.src#CorrespondenceFields+16.String.Text
-#, fuzzy
 msgid  "Fax"
 msgstr "Faks"
 
 #: source/template/template.src#CorrespondenceFields+17.String.Text
-#, fuzzy
 msgid  "E-Mail"
 msgstr "E-posta"
 
 #: source/template/template.src#CorrespondenceFields+18.String.Text
-#, fuzzy
 msgid  "URL"
 msgstr "Adres"
 
 #: source/template/template.src#CorrespondenceFields+19.String.Text
-#, fuzzy
 msgid  "Notes"
 msgstr "Notlar"
 
 #: source/template/template.src#CorrespondenceFields+20.String.Text
-#, fuzzy
 msgid  "Alt. Field 1"
 msgstr "Alt. Alan 1"
 
 #: source/template/template.src#CorrespondenceFields+21.String.Text
-#, fuzzy
 msgid  "Alt. Field 2"
 msgstr "Alt. Alan 2"
 
 #: source/template/template.src#CorrespondenceFields+22.String.Text
-#, fuzzy
 msgid  "Alt. Field 3"
 msgstr "Alt. Alan 3"
 
 #: source/template/template.src#CorrespondenceFields+23.String.Text
-#, fuzzy
 msgid  "Alt. Field 4"
 msgstr "Alt. Alan 4"
 
 #: source/template/template.src#CorrespondenceFields+24.String.Text
-#, fuzzy
 msgid  "ID"
 msgstr "Kimlik"
 
 #: source/template/template.src#CorrespondenceFields+25.String.Text
-#, fuzzy
 msgid  "State"
 msgstr "Eyalet"
 
 #: source/template/template.src#CorrespondenceFields+26.String.Text
-#, fuzzy
 msgid  "Office Phone"
 msgstr "Büro Telefonu"
 
 #: source/template/template.src#CorrespondenceFields+27.String.Text
-#, fuzzy
 msgid  "Pager"
 msgstr "Çağrı"
 
 #: source/template/template.src#CorrespondenceFields+28.String.Text
-#, fuzzy
 msgid  "Mobile Phone"
 msgstr "Cep Telefonu"
 
 #: source/template/template.src#CorrespondenceFields+29.String.Text
-#, fuzzy
 msgid  "Other Phone"
 msgstr "Diğer Telefon"
 
 #: source/template/template.src#CorrespondenceFields+30.String.Text
-#, fuzzy
 msgid  "Calendar URL"
 msgstr "Takvim Adresi"
 
 #: source/template/template.src#CorrespondenceFields+31.String.Text
-#, fuzzy
 msgid  "Invite"
 msgstr "Davet et"
 
 #: source/template/template.src#TextField.String.Text
-#, fuzzy
 msgid  "User data field is not defined!"
 msgstr "Kullanıcı veri alanları tanımlı değil!"
 
 #: source/template/template.src#Newsletter.String.Text
-#, fuzzy
 msgid  "General layout"
 msgstr "Genel düzen"
 
 #: source/template/template.src#Newsletter + 1.String.Text
-#, fuzzy
 msgid  "Default layout"
 msgstr "Varsayılan düzen"
 
 #: source/template/template.src#Newsletter + 2.String.Text
-#, fuzzy
 msgid  "Commemorative publication layout"
 msgstr "Anı yayın düzeni"
 
 #: source/template/template.src#Newsletter + 3.String.Text
-#, fuzzy
 msgid  "Brochure layout"
 msgstr "Broşür düzeni"
 
 #: source/template/template.src#Newsletter + 10.String.Text
-#, fuzzy
 msgid  "Format"
 msgstr "Biçim"
 
 #: source/template/template.src#Newsletter + 11.String.Text
-#, fuzzy
 msgid  "Single-sided"
 msgstr "Tek taraflı"
 
 #: source/template/template.src#Newsletter + 12.String.Text
-#, fuzzy
 msgid  "Double-sided"
 msgstr "Çift taraflı"

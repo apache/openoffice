@@ -65,7 +65,7 @@ msgstr "నామము '#1' యిప్పటికే వుంది మర�
 
 #: source/core/resource/strings.src#RID_STR_ERROR_WRONG_ARGUMENT.String.Text
 msgid  "You tried to set an illegal argument. Please have a look at '#1' for valid arguments."
-msgstr ""
+msgstr "మీరు చెల్లని ఆర్గుమెంటును అమర్చుటకు ప్రయత్నించినారు. చెల్లునటువంటి ఆర్గుమెంట్ల కొరకు '#1' వద్ద చూడండి."
 
 #: source/core/resource/strings.src#RID_STR_ARGUMENT_IS_NULL.String.Text
 msgid  "The element is invalid."
@@ -140,12 +140,20 @@ msgid  "Group Header"
 msgstr "సమూహము పీఠిక"
 
 #: source/ui/dlg/GroupsSorting.src#RID_GROUPS_SORTING.LST_HEADERLST.Default.StringList.item
+msgid  "Present"
+msgstr "ప్రస్తుత"
+
+#: source/ui/dlg/GroupsSorting.src#RID_GROUPS_SORTING.LST_HEADERLST.Default.StringList.item
 msgid  "Not present"
 msgstr "ప్రస్తతము కాదు"
 
 #: source/ui/dlg/GroupsSorting.src#RID_GROUPS_SORTING.FT_FOOTER.FixedText.Text
 msgid  "Group Footer"
 msgstr "సమూహం పీఠిక"
+
+#: source/ui/dlg/GroupsSorting.src#RID_GROUPS_SORTING.LST_FOOTERLST.Default.StringList.item
+msgid  "Present"
+msgstr "ప్రస్తుత"
 
 #: source/ui/dlg/GroupsSorting.src#RID_GROUPS_SORTING.LST_FOOTERLST.Default.StringList.item
 msgid  "Not present"
@@ -229,7 +237,7 @@ msgstr "విరామం"
 
 #: source/ui/dlg/GroupsSorting.src#STR_RPT_HELP_FIELD.String.Text
 msgid  "Select a field or type an expression to sort or group on."
-msgstr ""
+msgstr "వరుసక్రమము చేయుటకు లేదా సమూహంను ఆన్ చేయుటకు క్షేత్రమును యెంపికచేయుము లేదా ఎక్సుప్రెషన్ టైపుచేయుము."
 
 #: source/ui/dlg/GroupsSorting.src#STR_RPT_HELP_HEADER.String.Text
 msgid  "Display a header for this group?"
@@ -253,15 +261,7 @@ msgstr "ఒక పేజీపైన సమూహమును కలిపివ
 
 #: source/ui/dlg/GroupsSorting.src#STR_RPT_HELP_SORT.String.Text
 msgid  "Select ascending or descending sort order. Ascending means from A to Z or 0 to 9"
-msgstr ""
-
-#: source/ui/dlg/GroupsSorting.src#RID_GROUPS_SORTING.LST_HEADERLST.Default.StringList.item
-msgid  "Present"
-msgstr "ప్రస్తుత"
-
-#: source/ui/dlg/GroupsSorting.src#RID_GROUPS_SORTING.LST_FOOTERLST.Default.StringList.item
-msgid  "Present"
-msgstr "ప్రస్తుత"
+msgstr "ఆరోహణ లేదా అవరోహణ వరుసక్రమ పద్దతిని యెంపికచేయుము. ఆరోహణ అంచే A నుండి Z వరకు లేదా 0 నుండి 9 వరకు"
 
 #: source/ui/dlg/PageNumber.src#RID_PAGENUMBERS.ModalDialog.Text
 msgid  "Page Numbers"
@@ -300,6 +300,14 @@ msgid  "Alignment:"
 msgstr "సర్దుబాటు:"
 
 #: source/ui/dlg/PageNumber.src#RID_PAGENUMBERS.LST_ALIGNMENT.Default.StringList.item
+msgid  "Left"
+msgstr "ఎడమ"
+
+#: source/ui/dlg/PageNumber.src#RID_PAGENUMBERS.LST_ALIGNMENT.Default.StringList.item
+msgid  "Center"
+msgstr "మధ్యలో"
+
+#: source/ui/dlg/PageNumber.src#RID_PAGENUMBERS.LST_ALIGNMENT.Default.StringList.item
 msgid  "Right"
 msgstr "కుడి"
 
@@ -312,20 +320,12 @@ msgid  "~Help"
 msgstr "సహాయము (~H)"
 
 #: source/ui/dlg/PageNumber.src#STR_RPT_PN_PAGE.String.Text
-msgid  ""Page " & #PAGENUMBER#"
-msgstr ""
+msgid  "\"Page \" & #PAGENUMBER#"
+msgstr "\"పుట \" & #PAGENUMBER#"
 
 #: source/ui/dlg/PageNumber.src#STR_RPT_PN_PAGE_OF.String.Text
-msgid  " & " of " & #PAGECOUNT#"
-msgstr ""
-
-#: source/ui/dlg/PageNumber.src#RID_PAGENUMBERS.LST_ALIGNMENT.Default.StringList.item
-msgid  "Left"
-msgstr "ఎడమ"
-
-#: source/ui/dlg/PageNumber.src#RID_PAGENUMBERS.LST_ALIGNMENT.Default.StringList.item
-msgid  "Center"
-msgstr "మధ్యలో"
+msgid  " & \" of \" & #PAGECOUNT#"
+msgstr " & \"ది \" & లో #PAGECOUNT#"
 
 #: source/ui/dlg/dlgpage.src#RID_PAGEDIALOG_PAGE.TabDialog.Text
 msgid  "Page Setup"
@@ -456,6 +456,10 @@ msgid  "Properties..."
 msgstr "లక్షణాలు..."
 
 #: source/ui/dlg/CondFormat.src#WIN_CONDITION.LB_COND_TYPE.Default.StringList.item
+msgid  "Field Value Is"
+msgstr "క్షేత్రము విలువ"
+
+#: source/ui/dlg/CondFormat.src#WIN_CONDITION.LB_COND_TYPE.Default.StringList.item
 msgid  "Expression Is"
 msgstr "ఎక్సుప్రెషన్ యిది"
 
@@ -549,11 +553,7 @@ msgstr "సహాయం"
 
 #: source/ui/dlg/CondFormat.src#ADDFIELD_HELP_FIELD.FixedText.Text
 msgid  "Highlight the fields to insert into the selected section of the template, then click Insert or press Enter."
-msgstr ""
-
-#: source/ui/dlg/CondFormat.src#WIN_CONDITION.LB_COND_TYPE.Default.StringList.item
-msgid  "Field Value Is"
-msgstr "క్షేత్రము విలువ"
+msgstr "ఎంపికచేసిన టెంప్లేట్(మాదిరి) యొక్క విభాగములోనికి చేర్చుటకు క్షేత్రములను వుద్దీపనంచేయి, అప్పుడు చేర్చుము నొక్కుము లేదా Enter వత్తుము."
 
 #: source/ui/dlg/DateTime.src#RID_DATETIME_DLG.ModalDialog.Text
 msgid  "Date and Time"
@@ -833,7 +833,7 @@ msgstr " బానిస క్షేత్రంల జోడి "
 
 #: source/ui/inspection/inspection.src#RID_STR_EXPLANATION.String.Text
 msgid  "Charts can be used to display detailed data about the current record of the report. To do this, you can specify which columns in the chart match which columns in the report."
-msgstr ""
+msgstr "నివేదిక యొక్క ప్రస్తుత రికార్డుగురించిన విశదీకృత డాటాను ప్రదర్శించుటకు చార్టులు వుపయోగించబడతాయి. ఇది చేయుటకు, చార్టులోని ఏ నిలువువరుసలు నివేదికలోని ఏ నిలువువరుసలతో సరిపోల్చబడాలో మీరు తెలువలెను."
 
 #: source/ui/inspection/inspection.src#RID_STR_DETAILLABEL.String.Text
 msgid  "Chart"
@@ -1241,15 +1241,11 @@ msgstr "అది సారమునకు బందనము అయివుం
 
 #: source/ui/report/report.src#RID_ERR_NO_OBJECTS.String.Text
 msgid  "The report can not be executed unless at least one object has been inserted."
-msgstr ""
+msgstr "కనీసము వొక్క ఆబ్జక్టు అయినా చేర్చితేతప్ప ఆ నివేదిక నిర్వర్తించబడదు."
 
 #: source/ui/report/report.src#RID_STR_UNDO_SHRINK.String.Text
 msgid  "Shrink Section"
 msgstr "కుదింపు విభాగము"
-
-#: source/ui/report/report.src#RID_STR_INSERT.String.Text
-msgid  "Insert"
-msgstr "ప్రవేశించు"
 
 #: source/ui/report/report.src#RID_STR_DETAIL.String.Text
 msgid  "Detail"
@@ -1270,3 +1266,7 @@ msgstr "నివేదిక పీఠిక"
 #: source/ui/report/report.src#RID_STR_REPORT_FOOTER.String.Text
 msgid  "Report Footer"
 msgstr "నివేదిక భూమిక"
+
+#: source/ui/report/report.src#RID_STR_INSERT.String.Text
+msgid  "Insert"
+msgstr "ప్రవేశించు"

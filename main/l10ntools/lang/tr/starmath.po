@@ -128,69 +128,59 @@ msgid  "F~ixed"
 msgstr "S~abit"
 
 #: source/smres.src#RID_FONTTYPEDIALOG.1.MenuButton.Text
-#, fuzzy
 msgid  "~Modify"
-msgstr "Değiştir"
+msgstr "~Değiştir"
 
 #: source/smres.src#RID_FONTTYPEDIALOG.2.PushButton.Text
-#, fuzzy
 msgid  "~Default"
 msgstr "~Varsayılan"
 
 #: source/smres.src#RID_DISTANCEDIALOG.ModalDialog.Text
-#, fuzzy
 msgid  "Spacing"
-msgstr "Aralıklar"
+msgstr "Aralık"
 
 #: source/smres.src#RID_DISTANCEDIALOG.1.MetricField.CustomUnitText
-#, fuzzy
 msgid  "%"
 msgstr "%"
 
 #: source/smres.src#RID_DISTANCEDIALOG.2.MetricField.CustomUnitText
-#, fuzzy
 msgid  "%"
 msgstr "%"
 
 #: source/smres.src#RID_DISTANCEDIALOG.1.CheckBox.Text
-#, fuzzy
 msgid  "Scale all brackets"
 msgstr "Tüm köşeli parantezleri ölçekle"
 
 #: source/smres.src#RID_DISTANCEDIALOG.3.MetricField.CustomUnitText
-#, fuzzy
 msgid  "%"
 msgstr "%"
 
 #: source/smres.src#RID_DISTANCEDIALOG.1.PushButton.Text
-#, fuzzy
 msgid  "~Default"
 msgstr "~Varsayılan"
 
 #: source/smres.src#RID_DISTANCEDIALOG.1.MenuButton.Text
-#, fuzzy
 msgid  "~Category"
 msgstr "~Kategori"
 
 #: source/smres.src#RID_DISTANCEDIALOG.1.FixedLine.Text
-#, fuzzy
 msgid  "Category"
 msgstr "Kategori"
 
 #: source/smres.src#RID_DISTANCEDIALOG.1.1.String.Text
 #, fuzzy
 msgid  "Spacing"
-msgstr "Aralık"
+msgstr "Aralıklar"
 
 #: source/smres.src#RID_DISTANCEDIALOG.1.2.String.Text
 #, fuzzy
 msgid  "~Spacing"
-msgstr "Aralık"
+msgstr "~Aralık"
 
 #: source/smres.src#RID_DISTANCEDIALOG.1.3.String.Text
 #, fuzzy
 msgid  "~Line spacing"
-msgstr "Satır aralığı"
+msgstr "~Satır aralığı"
 
 #: source/smres.src#RID_DISTANCEDIALOG.1.4.String.Text
 #, fuzzy
@@ -260,7 +250,7 @@ msgstr "Alt sınır"
 #: source/smres.src#RID_DISTANCEDIALOG.6.1.String.Text
 #, fuzzy
 msgid  "Brackets"
-msgstr "Köşeli parantezler"
+msgstr "Köşeli parantez"
 
 #: source/smres.src#RID_DISTANCEDIALOG.6.2.String.Text
 #, fuzzy
@@ -522,12 +512,14 @@ msgid  "~Delete"
 msgstr "Sil"
 
 #: source/smres.src#RID_NOMATHTYPEFACEWARNING.WarningBox.Message
+#, fuzzy
 msgid  "The 'StarMath' font has not been installed.\nWithout this font %PRODUCTNAME Math cannot function correctly.\nPlease install this font and restart %PRODUCTNAME Math."
-msgstr ""
+msgstr "\"StarMath\" yazı tipi yüklenmedi!\nBu yazı tipi olmadan StarMath programı doğru bir biçimde çalışmaz...\nYazı tipini yükleyin ve %PRODUCTNAME Math programını yeniden başlatın."
 
 #: source/smres.src#RID_DEFAULTSAVEQUERY.QueryBox.Message
+#, fuzzy
 msgid  "Should the changes be saved as defaults?\n\nThese changes will apply for all new formulas."
-msgstr ""
+msgstr "Değişiklikler varsayılan değerler olarak kaydedilsin mi?\n\nBu değişiklikler tüm yeni formülleri etkileyecektir."
 
 #: source/smres.src#RID_FONTREGULAR.String.Text
 #, fuzzy
@@ -663,6 +655,11 @@ msgstr "Sans"
 #, fuzzy
 msgid  "Fixed"
 msgstr "Sabit"
+
+#: source/smres.src#CMDBOXWINDOW_TEXT.#define.Text
+#, fuzzy
+msgid  "Commands"
+msgstr "Komutlar"
 
 #: source/smres.src#RID_DOCUMENTSTR.String.Text
 #, fuzzy
@@ -831,68 +828,51 @@ msgstr "~Sayfaya sığdır"
 msgid  "~Scaling"
 msgstr "Ölçekle"
 
-#: source/smres.src#CMDBOXWINDOW_TEXT.#define.Text
-#, fuzzy
-msgid  "Commands"
-msgstr "Komutlar"
-
 #: source/commands.src#RID_COMMANDMENU.RID_UNBINOPS_MENU.MenuItem.Text
-#, fuzzy
 msgid  "~Unary/Binary Operators"
 msgstr "Birli/İkili İşlemler"
 
 #: source/commands.src#RID_COMMANDMENU.RID_RELATIONS_MENU.MenuItem.Text
-#, fuzzy
 msgid  "~Relations"
 msgstr "İlişkiler"
 
 #: source/commands.src#RID_COMMANDMENU.RID_SETOPERATIONS_MENU.MenuItem.Text
-#, fuzzy
 msgid  "~Set Operations"
 msgstr "Küme işlemleri"
 
 #: source/commands.src#RID_COMMANDMENU.RID_FUNCTIONS_MENU.MenuItem.Text
-#, fuzzy
 msgid  "~Functions"
 msgstr "İş~levler"
 
 #: source/commands.src#RID_COMMANDMENU.RID_FUNCTIONS_MENU.RID_FUNCTIONSOTHER1_MENU.MenuItem.Text
-#, fuzzy
 msgid  "More"
 msgstr "Daha Fazla"
 
 #: source/commands.src#RID_COMMANDMENU.RID_OPERATORS_MENU.MenuItem.Text
-#, fuzzy
 msgid  "O~perators"
 msgstr "İşleçler"
 
 #: source/commands.src#RID_COMMANDMENU.RID_ATTRIBUTES_MENU.MenuItem.Text
-#, fuzzy
 msgid  "~Attributes"
 msgstr "Öznitelikler"
 
 #: source/commands.src#RID_COMMANDMENU.RID_BRACKETS_MENU.MenuItem.Text
-#, fuzzy
 msgid  "~Brackets"
 msgstr "~Köşeli Parantez"
 
 #: source/commands.src#RID_COMMANDMENU.RID_FORMAT_MENU.MenuItem.Text
-#, fuzzy
 msgid  "For~mats"
 msgstr "Biçi~mler"
 
 #: source/commands.src#RID_COMMANDMENU.RID_FORMAT_MENU.RID_NEWLINE.MenuItem.Text
-#, fuzzy
 msgid  "New Line"
 msgstr "Yeni Satır"
 
 #: source/commands.src#RID_COMMANDMENU.RID_FORMAT_MENU.RID_SBLANK.MenuItem.Text
-#, fuzzy
 msgid  "Small Gap"
 msgstr "Küçük Boşluk"
 
 #: source/commands.src#RID_COMMANDMENU.RID_FORMAT_MENU.RID_BLANK.MenuItem.Text
-#, fuzzy
 msgid  "Gap"
 msgstr "Boşluk"
 
@@ -901,7 +881,6 @@ msgid  "nospace {...}"
 msgstr ""
 
 #: source/commands.src#RID_COMMANDMENU.RID_MISC_MENU.MenuItem.Text
-#, fuzzy
 msgid  "~Others"
 msgstr "Diğerleri"
 

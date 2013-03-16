@@ -32,8 +32,8 @@ msgstr ""
 
 
 #: source/app/desktop.src#STR_RECOVER_QUERY.String.Text
-msgid  "Should the file "$1" be restored?"
-msgstr ""
+msgid  "Should the file \"$1\" be restored?"
+msgstr "Obnoviť súbor \"$1\" ?"
 
 #: source/app/desktop.src#STR_RECOVER_TITLE.String.Text
 msgid  "File Recovery"
@@ -41,15 +41,15 @@ msgstr "Obnovenie súboru"
 
 #: source/app/desktop.src#STR_RECOVER_PREPARED.WarningBox.Message
 msgid  "An unrecoverable error has occurred.\n\nAll modified files have been saved and can\nprobably be recovered at program restart."
-msgstr ""
+msgstr "Objavila sa neodstrániteľná chyba.\n\nVšetky zmenené súbory boli uložené a môžu\nbyť pravdepodobne obnovené po reštarte programu."
 
 #: source/app/desktop.src#STR_BOOTSTRAP_ERR_CANNOT_START.String.Text
 msgid  "The application cannot be started. "
 msgstr "Aplikácia nemôže byť spustená. "
 
 #: source/app/desktop.src#STR_BOOTSTRAP_ERR_DIR_MISSING.String.Text
-msgid  "The configuration directory "$1" could not be found."
-msgstr ""
+msgid  "The configuration directory \"$1\" could not be found."
+msgstr "Nemôžem nájsť konfiguračný adresár \"$1\" ."
 
 #: source/app/desktop.src#STR_BOOTSTRAP_ERR_PATH_INVALID.String.Text
 msgid  "The installation path is invalid."
@@ -64,16 +64,16 @@ msgid  "An internal error occurred."
 msgstr "Objavila sa interná chyba."
 
 #: source/app/desktop.src#STR_BOOTSTRAP_ERR_FILE_CORRUPT.String.Text
-msgid  "The configuration file "$1" is corrupt."
-msgstr ""
+msgid  "The configuration file \"$1\" is corrupt."
+msgstr "Konfiguračný súbor \"$1\" je poškodený."
 
 #: source/app/desktop.src#STR_BOOTSTRAP_ERR_FILE_MISSING.String.Text
-msgid  "The configuration file "$1" was not found."
-msgstr ""
+msgid  "The configuration file \"$1\" was not found."
+msgstr "Konfiguračný súbor \"$1\" nebol nájdený."
 
 #: source/app/desktop.src#STR_BOOTSTRAP_ERR_NO_SUPPORT.String.Text
-msgid  "The configuration file "$1" does not support the current version."
-msgstr ""
+msgid  "The configuration file \"$1\" does not support the current version."
+msgstr "Konfiguračný súbor \"$1\" nepodporuje súčasnú verziu."
 
 #: source/app/desktop.src#STR_BOOTSTRAP_ERR_LANGUAGE_MISSING.String.Text
 msgid  "The user interface language cannot be determined."
@@ -89,15 +89,15 @@ msgstr "Konfiguračná služba nie je dostupná."
 
 #: source/app/desktop.src#STR_BOOTSTRAP_ERR_MULTISESSION.String.Text
 msgid  "You have another instance running in a different terminal session. Close that instance and then try again."
-msgstr ""
+msgstr "Máte spustenú ďalšiu inštanciu v inom termináli. Zavrite túto inštanciu a skúste to znovu."
 
 #: source/app/desktop.src#STR_ASK_START_SETUP_MANUALLY.String.Text
 msgid  "Start the setup application to repair the installation from the CD or the folder containing the installation packages."
-msgstr ""
+msgstr "Pre opravu inštalácie spustite setup z inštalačného CD alebo z adresára obsahujúceho inštalačné balíčky."
 
 #: source/app/desktop.src#STR_CONFIG_ERR_SETTINGS_INCOMPLETE.String.Text
 msgid  "The startup settings for accessing the central configuration are incomplete. "
-msgstr ""
+msgstr "Počiatočné nastavenia pre prístup k centrálnej konfigurácii sú nekompletné. "
 
 #: source/app/desktop.src#STR_CONFIG_ERR_CANNOT_CONNECT.String.Text
 msgid  "A connection to the central configuration could not be established. "
@@ -105,7 +105,7 @@ msgstr "Nemohlo byť nadviazané spojenie s centrálnou konfiguráciou. "
 
 #: source/app/desktop.src#STR_CONFIG_ERR_RIGHTS_MISSING.String.Text
 msgid  "You cannot access the central configuration because of missing access rights. "
-msgstr ""
+msgstr "Nemôžete pristupovať k centrálnej konfigurácii, pretože nemáte prístupové práva. "
 
 #: source/app/desktop.src#STR_CONFIG_ERR_ACCESS_GENERAL.String.Text
 msgid  "A general error occurred while accessing your central configuration. "
@@ -113,11 +113,11 @@ msgstr "Pri pristupovaní k centrálnej konfigurácii sa vyskytla chyba. "
 
 #: source/app/desktop.src#STR_CONFIG_ERR_NO_WRITE_ACCESS.String.Text
 msgid  "The changes to your personal settings cannot be stored centrally because of missing access rights. "
-msgstr ""
+msgstr "Zmeny vo vašich osobných nastaveniach nie je možné uložiť centrálne z dôvodu chýbajúcich prístupových práv. "
 
 #: source/app/desktop.src#STR_BOOTSTRAP_ERR_CFG_DATAACCESS.String.Text
 msgid  "%PRODUCTNAME cannot be started due to an error in accessing the %PRODUCTNAME configuration data.\n\nPlease contact your system administrator."
-msgstr ""
+msgstr "%PRODUCTNAME nemohol byť spustený kvôli chybe prístupu k nastaveniam %PRODUCTNAME.\n\nProsím kontaktujte vášho systémového administrátora."
 
 #: source/app/desktop.src#STR_INTERNAL_ERRMSG.String.Text
 msgid  "The following internal error has occurred: "
@@ -125,7 +125,7 @@ msgstr "Vyskytla sa nasledujúca vnútorná chyba: "
 
 #: source/app/desktop.src#QBX_USERDATALOCKED.QueryBox.Message
 msgid  "Either another instance of %PRODUCTNAME is accessing your personal settings or your personal settings are locked.\nSimultaneous access can lead to inconsistencies in your personal settings. Before continuing, you should make sure user '$u' closes %PRODUCTNAME on host '$h'.\n\nDo you really want to continue?"
-msgstr ""
+msgstr "Vaše osobné nastavenia sú zamknuté alebo k nim pristupuje iná súčasť %PRODUCTNAME.\nSimultánny prístup môže viesť k nekonzistencii vašich osobných nastavení. Pred pokračovaním sa uistite, že používateľ '$u' zatvorí %PRODUCTNAME na '$h'.\n\nUrčite chcete pokračovať?"
 
 #: source/app/desktop.src#STR_TITLE_USERDATALOCKED.String.Text
 msgid  "%PRODUCTNAME %PRODUCTVERSION"
@@ -149,11 +149,11 @@ msgstr "Správca ciest je nedostupný.\n"
 
 #: source/app/desktop.src#STR_BOOSTRAP_ERR_NOTENOUGHDISKSPACE.String.Text
 msgid  "%PRODUCTNAME user installation could not be completed due to insufficient free disk space. Please free more disc space at the following location and restart %PRODUCTNAME:\n\n"
-msgstr ""
+msgstr "%PRODUCTNAME používateľská inštalácia nemohla byť dokončená z dôvodu nedostatku voľného miesta na disku. Prosím uvoľnite viac miesta v nasledujúcom umiestnení a reštartujte %PRODUCTNAME:\n\n"
 
 #: source/app/desktop.src#STR_BOOSTRAP_ERR_NOACCESSRIGHTS.String.Text
 msgid  "%PRODUCTNAME user installation could not be processed due to missing access rights. Please make sure that you have sufficient access rights for the following location and restart %PRODUCTNAME:\n\n"
-msgstr ""
+msgstr "%PRODUCTNAME používateľská inštalácia nemohla byť dokončená z dôvodu chýbajúcich prístupových práv. Prosím uistite sa, že máte dostatočné práva pre nasledujúce umiestnenie a reštartujte %PRODUCTNAME:\n\n"
 
 #: source/deployment/gui/dp_gui_versionboxes.src#RID_WARNINGBOX_VERSION_LESS.WarningBox.Message
 msgid  "You are about to install version $NEW of the extension \'$NAME\'.\nThe newer version $DEPLOYED is already installed.\nClick \'OK\' to replace the installed extension.\nClick \'Cancel\' to stop the installation."
@@ -185,7 +185,7 @@ msgstr "Kontrola systémových závislostí"
 
 #: source/deployment/gui/dp_gui_dependencydialog.src#RID_DLG_DEPENDENCIES.RID_DLG_DEPENDENCIES_TEXT.FixedText.Text
 msgid  "The extension cannot be installed as the following\nsystem dependencies are not fulfilled:"
-msgstr ""
+msgstr "Rozšírenie nemôže byť nainštalované,\nlebo nie sú splnené následovné závislosti:"
 
 #: source/deployment/gui/dp_gui_dialog.src#RID_STR_ADD_PACKAGES.String.Text
 msgid  "Add Extension(s)"
@@ -253,11 +253,11 @@ msgstr "Ukončiť"
 
 #: source/deployment/gui/dp_gui_dialog.src#RID_STR_NO_ADMIN_PRIVILEGE.String.Text
 msgid  "%PRODUCTNAME has been updated to a new version. Some shared %PRODUCTNAME extensions are not compatible with this version and need to be updated before %PRODUCTNAME can be started.\n\nUpdating of shared extension requires administrator privileges. Contact your system administrator to update the following shared extensions:"
-msgstr ""
+msgstr "%PRODUCTNAME bol aktualizovaný na novú verziu. Niektoré zdieľané rozšírenia %PRODUCTNAME nie sú kompatibilné s touto verziou a potrebujú byť aktualizované pred tým ako bude môcť byť %PRODUCTNAME spustený.\n\nAktualizácia zdieľaných rozšírení vyžaduje práva administrátora. Pre aktualizáciu nasledovných zdieľaných rozšírení kontaktujte vášho systémového administrátora:"
 
 #: source/deployment/gui/dp_gui_dialog.src#RID_STR_ERROR_MISSING_DEPENDENCIES.String.Text
 msgid  "The extension cannot be enabled as the following system dependencies are not fulfilled:"
-msgstr ""
+msgstr "Rozšírenie nemôže byť zapnuté, lebo nie sú splnené následovné systémové závislosti:"
 
 #: source/deployment/gui/dp_gui_dialog.src#RID_STR_ERROR_MISSING_LICENSE.String.Text
 msgid  "This extension is disabled because you haven't accepted the license yet.\n"
@@ -273,7 +273,7 @@ msgstr "Licenčná zmluva softvérového rozšírenia"
 
 #: source/deployment/gui/dp_gui_dialog.src#RID_DLG_LICENSE.FT_LICENSE_HEADER.FixedText.Text
 msgid  "Please follow these steps to proceed with the installation of the extension:"
-msgstr ""
+msgstr "Prosím nasledujte tieto kroky pre pokračovanie v inštalácii rozšírenia:"
 
 #: source/deployment/gui/dp_gui_dialog.src#RID_DLG_LICENSE.FT_LICENSE_BODY_1.FixedText.Text
 msgid  "1."
@@ -437,7 +437,7 @@ msgstr "Nie su dostupné žiadne aktualizácie."
 
 #: source/deployment/gui/dp_gui_updatedialog.src#RID_DLG_UPDATE.RID_DLG_UPDATE_NOINSTALLABLE.String.Text
 msgid  "No installable updates are available. To see ignored or disabled updates, mark the check box 'Show all updates'."
-msgstr ""
+msgstr "Nie sú dostupné žiadne inštalovateľné aktualizácie. Pre zobrazenie všetkých aktualizácií označte 'Zobraziť všetky aktualizácie'."
 
 #: source/deployment/gui/dp_gui_updatedialog.src#RID_DLG_UPDATE.RID_DLG_UPDATE_FAILURE.String.Text
 msgid  "An error occurred:"
@@ -521,7 +521,7 @@ msgstr "Vyžadovaná aktualizácia rozšírenia"
 
 #: source/deployment/gui/dp_gui_dialog2.src#RID_DLG_UPDATE_REQUIRED.RID_EM_FT_MSG.FixedText.Text
 msgid  "%PRODUCTNAME has been updated to a new version. Some installed %PRODUCTNAME extensions are not compatible with this version and need to be updated before they can be used."
-msgstr ""
+msgstr "%PRODUCTNAME bol aktualizovaný na novú verziu. Niektoré nainštalované rozšírenia %PRODUCTNAME nie sú kompatibilné s touto verziou a musia byť aktualizované pred tým ako ich bude možné použiť."
 
 #: source/deployment/gui/dp_gui_dialog2.src#RID_DLG_UPDATE_REQUIRED.RID_EM_FT_PROGRESS.FixedText.Text
 msgid  "Adding %EXTENSION_NAME"
@@ -537,7 +537,7 @@ msgstr "Vypnúť všetko"
 
 #: source/deployment/gui/dp_gui_dialog2.src#RID_QUERYBOX_INSTALL_FOR_ALL.QueryBox.Message
 msgid  "Make sure that no further users are working with the same %PRODUCTNAME, when installing an extension for all users in a multi user environment.\n\nFor whom do you want to install the extension?\n"
-msgstr ""
+msgstr "Uistite sa, že počas inštalácie rozšírenia pre viac používateľov vo viacpoužívateľskom prostredí s rovnakou inštaláciou %PRODUCTNAME nepracujú ďalší používatelia.\n\nPre koho chcete inštalovať rozšírenie?\n"
 
 #: source/deployment/manager/dp_manager.src#RID_STR_COPYING_PACKAGE.String.Text
 msgid  "Copying: "
@@ -641,7 +641,7 @@ msgstr "Rozšírenie nemôže byť inštalované, lebo:\n"
 
 #: source/deployment/registry/help/dp_help.src#RID_STR_HELPPROCESSING_XMLPARSING_ERROR.String.Text
 msgid  "The extension will not be installed because an error occurred in the Help files:\n"
-msgstr ""
+msgstr "Rozšírenie nebude inštalované pretože v súboroch Pomocníka sa objavila chyba:\n"
 
 #: source/deployment/registry/package/dp_package.src#RID_STR_PACKAGE_BUNDLE.String.Text
 msgid  "Extension"
@@ -672,16 +672,16 @@ msgid  "Extension Software License Agreement of $NAME:"
 msgstr "Licenčná zmluva softvérového rozšírenia $NAME:"
 
 #: source/deployment/unopkg/unopkg.src#RID_STR_UNOPKG_ACCEPT_LIC_2.String.Text
-msgid  "Read the complete License Agreement displayed above. Accept the License Agreement by typing "yes" on the console then press the Return key. Type "no" to decline and to abort the extension setup."
-msgstr ""
+msgid  "Read the complete License Agreement displayed above. Accept the License Agreement by typing \"yes\" on the console then press the Return key. Type \"no\" to decline and to abort the extension setup."
+msgstr "Prečítajte si celú hore zobrazenú Licenčnú zmluvu. Prijmite Licenčnú zmluvu napísaním \"yes\" v konzole a stlačením klávesy Return. Pre odmietnutie a prerušenie nastavenia rozšírenia napíšte \"no\"."
 
 #: source/deployment/unopkg/unopkg.src#RID_STR_UNOPKG_ACCEPT_LIC_3.String.Text
-msgid  "[Enter "yes" or "no"]:"
-msgstr ""
+msgid  "[Enter \"yes\" or \"no\"]:"
+msgstr "[Zadajte \"yes\" alebo \"no\"]:"
 
 #: source/deployment/unopkg/unopkg.src#RID_STR_UNOPKG_ACCEPT_LIC_4.String.Text
-msgid  "Your input was not correct. Please enter "yes" or "no":"
-msgstr ""
+msgid  "Your input was not correct. Please enter \"yes\" or \"no\":"
+msgstr "Váš vstup nebol správny. Prosím zadajte \"yes\" alebo \"no\":"
 
 #: source/deployment/unopkg/unopkg.src#RID_STR_UNOPKG_ACCEPT_LIC_YES.String.Text
 msgid  "YES"
@@ -701,7 +701,7 @@ msgstr "N"
 
 #: source/deployment/unopkg/unopkg.src#RID_STR_CONCURRENTINSTANCE.String.Text
 msgid  "unopkg cannot be started. The lock file indicates it as already running. If this does not apply, delete the lock file at:"
-msgstr ""
+msgstr "unopkg nemôže byť spustené. Lock súbor ukazuje, že už spustené je. V prípade, že tomu tak nie je, zmažte lock súbor na:"
 
 #: source/deployment/unopkg/unopkg.src#RID_STR_UNOPKG_ERROR.String.Text
 msgid  "ERROR: "
@@ -737,11 +737,11 @@ msgstr "Registrácia"
 
 #: source/migration/wizard.src#STR_WELCOME_MIGRATION.String.Text
 msgid  "This wizard will guide you through the license agreement, the transfer of user data from %OLD_VERSION and the registration of %PRODUCTNAME.\n\nClick 'Next' to continue."
-msgstr ""
+msgstr "Tento sprievodca vás prevedie Licenčnou zmluvou, presunom dát z %OLD_VERSION a registráciou %PRODUCTNAME.\n\nKliknite na 'Ďalej' pre pokračovanie."
 
 #: source/migration/wizard.src#STR_WELCOME_WITHOUT_LICENSE.String.Text
 msgid  "This wizard will guide you through the registration of %PRODUCTNAME.\n\nClick 'Next' to continue."
-msgstr ""
+msgstr "Tento sprievodca vás prevedie registráciou %PRODUCTNAME.\n\nKliknite na 'Ďalej' pre pokračovanie."
 
 #: source/migration/wizard.src#STR_FINISH.String.Text
 msgid  "~Finish"
@@ -749,11 +749,11 @@ msgstr "Do~končiť"
 
 #: source/migration/wizard.src#STR_REGISTRATION_OOO.String.Text
 msgid  "You now have the opportunity to support and contribute to the fastest growing open source community in the world.\n\nHelp us prove that %PRODUCTNAME has already gained significant market share by registering.\n\nRegistering is voluntary and without obligation."
-msgstr ""
+msgstr "Teraz máte možnosť podporiť a prispieť k najrýchlejšie rastúcej komunite open source vo svete.\n\nPomôžte nám svojou registráciou dokázať, že %PRODUCTNAME už dosiahol výrazný podiel na trhu.\n\nRegistrácia je dobrovoľná a bez záväzkov."
 
 #: source/migration/wizard.src#ERRBOX_REG_NOSYSBROWSER.ErrorBox.Message
 msgid  "An error occurred in starting the web browser.\nPlease check the %PRODUCTNAME and web browser settings."
-msgstr ""
+msgstr "Nastala chyba pri spúšťaní webového prehliadača.\nSkontrolujte prosím nastavenie %PRODUCTNAME a webového prehliadača."
 
 #: source/migration/wizard.src#QB_ASK_DECLINE.QueryBox.Message
 msgid  "Do you really want to decline?"
@@ -765,7 +765,7 @@ msgstr "Vitajte v %PRODUCTNAME %PRODUCTVERSION"
 
 #: source/migration/wizard.src#TP_WELCOME.FT_WELCOME_BODY.FixedText.Text
 msgid  "This wizard will guide you through the license agreement and the registration of %PRODUCTNAME.\n\nClick 'Next' to continue."
-msgstr ""
+msgstr "Tento sprievodca vás prevedie Licenčnou zmluvou a registráciou %PRODUCTNAME.\n\nKliknite na 'Ďalej' pre pokračovanie."
 
 #: source/migration/wizard.src#TP_LICENSE.FT_LICENSE_HEADER.FixedText.Text
 msgid  "Please follow these steps to accept the license"
@@ -777,7 +777,7 @@ msgstr "1."
 
 #: source/migration/wizard.src#TP_LICENSE.FT_LICENSE_BODY_1_TXT.FixedText.Text
 msgid  "View the complete License Agreement. Please use the scrollbar or the '%PAGEDOWN' button in this dialog to view the entire license text."
-msgstr ""
+msgstr "Prezrite si kompletnú Licenčnú zmluvu. Na prezretie celého textu licencie v tomto dialógu, prosím použite posuvný panel alebo tlačidlo '%PAGEDOWN'."
 
 #: source/migration/wizard.src#TP_LICENSE.FT_LICENSE_BODY_2.FixedText.Text
 msgid  "2."
@@ -805,7 +805,7 @@ msgstr "Preniesť osobné údaje"
 
 #: source/migration/wizard.src#TP_MIGRATION.FT_MIGRATION_BODY.FixedText.Text
 msgid  "Most personal data from %OLDPRODUCT installation can be reused in %PRODUCTNAME %PRODUCTVERSION.\n\nIf you do not want to reuse any settings in %PRODUCTNAME %PRODUCTVERSION, unmark the check box."
-msgstr ""
+msgstr "Väčšina osobných dát z inštalácie %OLDPRODUCT môže byť použitá v %PRODUCTNAME %PRODUCTVERSION.\n\nV prípade, že nechcete použiť tieto nastavenia v %PRODUCTNAME %PRODUCTVERSION, odznačte toto zaškrtávacie políčko."
 
 #: source/migration/wizard.src#TP_MIGRATION.CB_MIGRATION.CheckBox.Text
 msgid  "Transfer personal data"
@@ -817,7 +817,7 @@ msgstr "Online aktualizácia"
 
 #: source/migration/wizard.src#TP_UPDATE_CHECK.FT_UPDATE_CHECK_BODY.FixedText.Text
 msgid  "%PRODUCTNAME searches automatically at regular intervals for new versions.\nIn doing so online update does not transfer personal data.\nAs soon as a new version is available, you will be notified.\n\nYou can configure this feature at Tools / Options... / %PRODUCTNAME / Online Update."
-msgstr ""
+msgstr "%PRODUCTNAME automaticky hľadá v pravidelných intervaloch novšie verzie.\nPočas tejto činnosti online aktualizácia neprenáša žiadne osobné údaje.\nHneď, ako bude dostupná nová verzia, budete upozornení.\n\nTúto súčasť môžete nastaviť pomocou Nástroje / Možnosti... / %PRODUCTNAME / Online aktualizácia."
 
 #: source/migration/wizard.src#TP_UPDATE_CHECK.CB_UPDATE_CHECK.CheckBox.Text
 msgid  "~Check for updates automatically"
@@ -829,7 +829,7 @@ msgstr "Uveďte vaše celé meno a iniciály"
 
 #: source/migration/wizard.src#TP_USER.FT_USER_BODY.FixedText.Text
 msgid  "The user name will be used in the document properties, templates and when you record changes made to documents."
-msgstr ""
+msgstr "Používateľské meno bude použité vo vlastnostiach dokumentov, šablónach a keď budete robiť zmeny do dokumentov."
 
 #: source/migration/wizard.src#TP_USER.FT_USER_FIRST.FixedText.Text
 msgid  "~First name"
@@ -853,7 +853,7 @@ msgstr "Registrácia %PRODUCTNAME"
 
 #: source/migration/wizard.src#TP_REGISTRATION.FT_REGISTRATION_BODY.FixedText.Text
 msgid  "You now have the opportunity to register as a %PRODUCTNAME user. Registration is voluntary and is without obligation.\n\nIf you register, we can inform you about new developments concerning this product."
-msgstr ""
+msgstr "Teraz máte možnosť zaregistrovať sa ako používateľ %PRODUCTNAME. Registrácia je dobrovoľná, bez akýchkoľvek záväzkov.\n\nV prípade, že sa zaregistrujete, môžeme vás informovať o novinkách týkajúcich sa tohto produktu."
 
 #: source/migration/wizard.src#TP_REGISTRATION.RB_REGISTRATION_NOW.RadioButton.Text
 msgid  "I want to register ~now"
@@ -869,7 +869,7 @@ msgstr "Nechcem sa ~registrovať"
 
 #: source/migration/wizard.src#TP_REGISTRATION.FT_REGISTRATION_END.FixedText.Text
 msgid  "We hope you enjoy working with %PRODUCTNAME.\n\nTo exit the wizard, click 'Finish'."
-msgstr ""
+msgstr "Dúfame, že budete spokojní s prácou s %PRODUCTNAME. \n\nNa ukončenie sprievodcu kliknite na 'Dokončiť'."
 
 #: win32/source/rebase/rebasegui.ulf#%APP_TITLE%
 msgid  "Installation Status"
@@ -886,6 +886,10 @@ msgstr "Inštalácia je optimalizovaná pre servere."
 #: win32/source/rebase/rebasegui.ulf#%MSG_NO_INSTALLATION_FOUND%
 msgid  "Cannot find Office installation."
 msgstr "Nemôžem nájsť inštaláciu Office."
+
+#: win32/source/setup/setup.ulf#%APP_TITLE%
+msgid  "Setup"
+msgstr "Nastaviť"
 
 #: win32/source/setup/setup.ulf#%APP_PROD_TITLE%
 msgid  "The %PRODUCTNAME Setup"
@@ -905,7 +909,7 @@ msgstr "Inštalátor bol zrušený"
 
 #: win32/source/setup/setup.ulf#%REQUIRES_ADMIN_PRIV%
 msgid  "Administrator privileges are required for upgrading the Windows Installer."
-msgstr ""
+msgstr "Pre aktualizáciu inštalátora pre Windows sú potrebné práva administrátora."
 
 #: win32/source/setup/setup.ulf#%FILE_NOT_FOUND%
 msgid  "Setup was unable to find the file '%s'."
@@ -913,19 +917,19 @@ msgstr "Inštalátor nemohol nájsť súbor '%s'."
 
 #: win32/source/setup/setup.ulf#%INVALID_PARAM%
 msgid  "Invalid command line option '%s'. Please use '/?' for help."
-msgstr ""
+msgstr "Neplatný prepínač '%s' z príkazového riadka. Pomocníka vyvoláte použitím parametra '/?'."
 
 #: win32/source/setup/setup.ulf#%SETUP_TO_OLD%
 msgid  "This package requires at least the version '%s' of the Windows Installer. \nYou have Windows Installer '%s' on your system!"
-msgstr ""
+msgstr "Tento balíček vyžaduje aspoň verziu '%s' inštalátora pre Windows. \nNa vašom systéme máte verziu '%s' inštalátora pre Windows!"
 
 #: win32/source/setup/setup.ulf#%SETUP_NOT_FOUND%
 msgid  "This package requires the Windows Installer. \nYou need at least Windows Installer '%s' on your system!"
-msgstr ""
+msgstr "Tento balíček vyžaduje inštalátor pre Windows. \nNa vašom systéme musíte mať aspoň verziu '%s' inštalátora pre Windows!"
 
 #: win32/source/setup/setup.ulf#%USAGE%
 msgid  "Usage:\n   /? :  Shows this dialog.\n   /a :  Performs an administrative installation.\n   /j[u|m] :  Performs an advertising installation.\n   /q[n] : Do not show any user interface (silent mode).\n"
-msgstr ""
+msgstr "Použitie:\n   /? :  Ukáže toto dialógové okno.\n   /a :  Vykoná administratívnu inštaláciu.\n   /j[u|m] :  Vykoná reklamnú inštaláciu.\n   /q[n] : Neukáže žiadne používateľské rozhranie (tichý režim).\n"
 
 #: win32/source/setup/setup.ulf#%ALREADY_RUNNING%
 msgid  "There is already a setup process running."
@@ -1046,7 +1050,3 @@ msgstr "čínština (zjednodušená)"
 #: win32/source/setup/setup.ulf#%LANGUAGE_PT_PT%
 msgid  "Portuguese (Portugal)"
 msgstr "portugalčina (Portugalsko)"
-
-#: win32/source/setup/setup.ulf#%APP_TITLE%
-msgid  "Setup"
-msgstr "Nastaviť"

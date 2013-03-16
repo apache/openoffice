@@ -177,7 +177,7 @@ msgstr "替代"
 
 #: source/resource/strings.src#RID_STR_CONTROL_SUBSTITUTED_EPXPLAIN.String.Text
 msgid  "An error occurred while this control was being loaded. It was therefore replaced with a placeholder."
-msgstr ""
+msgstr "載入這個控制項時發生一個錯誤。但已經用一個萬用字元替代它。"
 
 #: source/resource/strings.src#RID_STR_READERROR.String.Text
 msgid  "Error reading data from database"
@@ -233,7 +233,7 @@ msgstr "在分解查詢語句時發生一個錯誤。"
 
 #: source/resource/strings.src#RID_STR_INCOMPATIBLE_TYPES.String.Text
 msgid  "The value types supported by the binding cannot be used for exchanging data with this control."
-msgstr ""
+msgstr "連結支援的值類型不可用於與此控制交換資料。"
 
 #: source/resource/strings.src#RID_STR_LABEL_RECORD.String.Text
 msgid  "Record"
@@ -241,7 +241,7 @@ msgstr "記錄"
 
 #: source/resource/strings.src#RID_STR_INVALID_VALIDATOR.String.Text
 msgid  "The control is connected to an external value binding, which at the same time acts as validator. You need to revoke the value binding, before you can set a new validator."
-msgstr ""
+msgstr "控制連線至外部值連線，同時作為驗證程式。您需要先撤銷值連結，然後才能夠設定新的驗證程式。"
 
 #: source/resource/strings.src#RID_STR_LABEL_OF.String.Text
 msgid  "of"
@@ -249,7 +249,7 @@ msgstr "的"
 
 #: source/resource/strings.src#RID_STR_QUERY_SAVE_MODIFIED_ROW.String.Text
 msgid  "The content of the current form has been modified.\nDo you want to save your changes?"
-msgstr ""
+msgstr "表單內容已變更。\n要儲存這些變更？"
 
 #: source/resource/strings.src#RID_STR_COULD_NOT_SET_ORDER.String.Text
 msgid  "Error setting the sort criteria"

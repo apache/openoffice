@@ -57,7 +57,7 @@ msgstr ""
 
 #: source/abpilot/abspilot.src#RID_PAGE_SELECTABTYPE.FT_TYPE_HINTS.FixedText.Text
 msgid  "%PRODUCTNAME lets you access address data already present in your system. To do this, a %PRODUCTNAME data source will be created in which your address data is available in tabular form.\n\nThis wizard helps you create the data source."
-msgstr ""
+msgstr "%PRODUCTNAME lets you access address data already present in your system. To do this, a %PRODUCTNAME data source will be created in which your address data is available in tabular form.\n\nThis wizard helps you create the data source."
 
 #: source/abpilot/abspilot.src#RID_PAGE_SELECTABTYPE.FL_TYPE.FixedLine.Text
 msgid  "Please select the type of your external address book:"
@@ -109,7 +109,7 @@ msgstr "Chanzo data za nje nyinginezo"
 
 #: source/abpilot/abspilot.src#RID_PAGE_ADMININVOKATION.FT_ADMINEXPLANATION.FixedText.Text
 msgid  "To set up the new data source, additional information is required.\n\nClick the following button to open another dialog in which you then enter the necessary information."
-msgstr ""
+msgstr "Kuseti chanzo data kipya, taarifa za nyongeza zinaitajika.\n\nBofya kitufe kifuatacho kufungua dalogi nyingine ambayo utaingiza taarifa za lazima."
 
 #: source/abpilot/abspilot.src#RID_PAGE_ADMININVOKATION.PB_INVOKE_ADMIN_DIALOG.PushButton.Text
 msgid  "Settings"
@@ -117,15 +117,15 @@ msgstr "Vipimo"
 
 #: source/abpilot/abspilot.src#RID_PAGE_ADMININVOKATION.FT_ERROR.FixedText.Text
 msgid  "The connection to the data source could not be established.\nBefore you proceed, please check the settings made, or (on the previous page) choose another address data source type."
-msgstr ""
+msgstr "Unganisho kwa chanzo data halikuwezekana kuanzishwa.\nKabla ujaendelea mbele, tafadhali angalia vipimo ulivyotengeneza, au (katika ukurasa uliotangulia) chagua aina ya chanzo data anwani nyingine."
 
 #: source/abpilot/abspilot.src#RID_PAGE_TABLESELECTION_AB.FL_TOOMUCHTABLES.FixedText.Text
 msgid  "The external data source you have chosen contains more than one address book.\nPlease select the one you mainly want to work with:"
 msgstr ""
 
 #: source/abpilot/abspilot.src#RID_PAGE_FIELDMAPPING.FT_FIELDASSIGMENTEXPL.FixedText.Text
-msgid  "To incorporate the address data in your templates, %PRODUCTNAME has to know which fields contain which data.\n\nFor instance, you could have stored the e-mail addresses in a field named "email", or "E-mail" or "EM" - or something completely different.\n\nClick the button below to open another dialog where you can enter the settings for your data source."
-msgstr ""
+msgid  "To incorporate the address data in your templates, %PRODUCTNAME has to know which fields contain which data.\n\nFor instance, you could have stored the e-mail addresses in a field named \"email\", or \"E-mail\" or \"EM\" - or something completely different.\n\nClick the button below to open another dialog where you can enter the settings for your data source."
+msgstr "To incorporate the address data in your templates, %PRODUCTNAME has to know which fields contain which data.\n\nFor instance, you could have stored the e-mail addresses in a field named \"email\", or \"E-mail\" or \"EM\" - or something completely different.\n\nClick the button below to open another dialog where you can enter the settings for your data source."
 
 #: source/abpilot/abspilot.src#RID_PAGE_FIELDMAPPING.PB_INVOKE_FIELDS_DIALOG.PushButton.Text
 msgid  "Field Assignment"
@@ -133,7 +133,7 @@ msgstr ""
 
 #: source/abpilot/abspilot.src#RID_PAGE_FINAL.FT_FINISH_EXPL.FixedText.Text
 msgid  "That was all the information necessary to integrate your address data into %PRODUCTNAME.\n\nNow, just enter the name under which you want to register the data source in %PRODUCTNAME."
-msgstr ""
+msgstr "Hizo ndizo taarifa za lazima kufungamanisha data za anwani yako katika %PRODUCTNAME.\n\nSasa, unaweza kuingiza jina katika sehemu unayotaka kusajili chanzo data katika %PRODUCTNAME."
 
 #: source/abpilot/abspilot.src#RID_PAGE_FINAL.FT_LOCATION.FixedText.Text
 msgid  "Location"
@@ -153,7 +153,7 @@ msgstr "Address book name"
 
 #: source/abpilot/abspilot.src#RID_PAGE_FINAL.FT_DUPLICATENAME.FixedText.Text
 msgid  "Another data source already has this name. As data sources have to have globally unique names, you need to choose another one."
-msgstr ""
+msgstr "Chanzo data kingine tayari kina jina hili. Kama ilivyo chanzo data kinatakiwa kuwa na jina pekee, unatakiwa kuchagua jina jingine."
 
 #: source/abpilot/abspilot.src#RID_ERR_NEEDTYPESELECTION.ErrorBox.Message
 msgid  "Please select a type of address book."
@@ -161,7 +161,7 @@ msgstr "Tafadhari teua aina ya kitabu cha anwani."
 
 #: source/abpilot/abspilot.src#RID_QRY_NOTABLES.QueryBox.Message
 msgid  "The data source does not contain any tables.\nDo you want to set it up as an address data source, anyway?"
-msgstr ""
+msgstr "Chanzo data hakijachukua majedwali yoyote.\nUnataka kuseti kama chanzo data cha anwani, tu?"
 
 #: source/abpilot/abspilot.src#RID_STR_DEFAULT_NAME.String.Text
 msgid  "Addresses"
@@ -184,8 +184,8 @@ msgid  "Address Data - Field Assignment"
 msgstr "Data Anwani - Usabidi Uga"
 
 #: source/abpilot/abspilot.src#RID_STR_NOFIELDSASSIGNED.String.Text
-msgid  "There are no fields assigned at this time.\nYou can either assign fields now or do so later by first choosing:\n"File - Template - Address Book Source...""
-msgstr ""
+msgid  "There are no fields assigned at this time.\nYou can either assign fields now or do so later by first choosing:\n\"File - Template - Address Book Source...\""
+msgstr "Hakuna nyuga zilizopangiwa kwa muda huu.\nUnaweza kupanga nyuga sasa au ukafanya baadaye kwa kuchagua kwanza:\n\"Faili-Templeti-Chanzo cha Kitabu cha Anwani...\""
 
 #: source/bibliography/toolbar.src#RID_BIB_TOOLBAR.TBC_FT_SOURCE.ToolBoxItem.Text
 msgid  "Table"
@@ -493,7 +493,7 @@ msgstr "Control"
 
 #: source/dbpilots/listcombopages.src#RID_PAGE_LCW_CONTENTSELECTION_TABLE.FT_SELECTTABLE_LABEL.FixedText.Text
 msgid  "On the right side, you see all the tables from the data source of the form.\n\n\nChoose the table from which the data should be used as basis for the list content:"
-msgstr ""
+msgstr "Katika upande kulia, utaona majedwali yote kutoka chanzo data ya fomu.\n\n\nChagua jedwali kutoka data ambazo zitatumika kama msingi kwa ajili ya orodha ya yaliyomo:"
 
 #: source/dbpilots/listcombopages.src#RID_PAGE_LCW_CONTENTSELECTION_FIELD.TabPage.Text
 msgid  "Field Selection"
@@ -513,7 +513,7 @@ msgstr "The contents of the field selected will be shown in the combo box list."
 
 #: source/dbpilots/listcombopages.src#RID_PAGE_LCW_CONTENTSELECTION_FIELD.STR_FIELDINFO_LISTBOX.String.Text
 msgid  "The contents of the selected field will be shown in the list box if the linked fields are identical."
-msgstr ""
+msgstr "The contents of the selected field will be shown in the list box if the linked fields are identical."
 
 #: source/dbpilots/listcombopages.src#RID_PAGE_LCW_FIELDLINK.TabPage.Text
 msgid  "Field Link"
@@ -521,7 +521,7 @@ msgstr "Kiungo cha Uga"
 
 #: source/dbpilots/listcombopages.src#RID_PAGE_LCW_FIELDLINK.FT_FIELDLINK_DESC.FixedText.Text
 msgid  "This is where you select fields with matching contents so that the value from the display field will be shown."
-msgstr ""
+msgstr "Hapa ndipo utateua nyuga zinazooana na yaliyomo kiasi kwamba thamani kutoka uga wa zinzo utaonyeshwa."
 
 #: source/dbpilots/listcombopages.src#RID_PAGE_LCW_FIELDLINK.FT_VALUELISTFIELD.FixedText.Text
 msgid  "Field from the ~Value Table"
@@ -533,7 +533,7 @@ msgstr "Uga kutoka Jedwali Orodha"
 
 #: source/dbpilots/listcombopages.src#RID_STR_COMBOWIZ_DBFIELD.String.Text
 msgid  "You can either save the value of the combo box in a database field or use it for display purposes."
-msgstr ""
+msgstr "You can either save the value of the combo box in a database field or use it for display purposes."
 
 #: source/dbpilots/gridpages.src#RID_PAGE_GW_FIELDSELECTION.TabPage.Text
 msgid  "Field Selection"
@@ -589,7 +589,7 @@ msgstr "Data"
 
 #: source/dbpilots/commonpagesdbp.src#RID_PAGE_TABLESELECTION.FT_EXPLANATION.FixedText.Text
 msgid  "Currently, the form the control belongs to is not (or not completely) bound to a data source.\n\nPlease choose a data source and a table.\n\n\nPlease note that the settings made on this page will take effect immediately upon leaving the page."
-msgstr ""
+msgstr "Currently, the form the control belongs to is not (or not completely) bound to a data source.\n\nPlease choose a data source and a table.\n\n\nPlease note that the settings made on this page will take effect immediately upon leaving the page."
 
 #: source/dbpilots/commonpagesdbp.src#RID_PAGE_TABLESELECTION.FT_DATASOURCE.FixedText.Text
 msgid  "~Data source:"
@@ -705,7 +705,7 @@ msgstr "Hizi ndizo utondoti zote zinazohitajika kuunda kundi chaguo."
 
 #: source/dbpilots/groupboxpages.src#RID_STR_GROUPWIZ_DBFIELD.String.Text
 msgid  "You can either save the value of the option group in a database field or use it for a later action."
-msgstr ""
+msgstr "You can either save the value of the option group in a database field or use it for a later action."
 
 #: source/preload/preload.src#RID_DLG_OEMWIZARD.PB_PREV.PushButton.Text
 msgid  "<< Back"
@@ -737,7 +737,7 @@ msgstr "Karibu"
 
 #: source/preload/preload.src#RID_TP_WELCOME.FT_INFO.FixedText.Text
 msgid  "Welcome to %PRODUCTNAME %PRODUCTVERSION OEM\n\nTo start the %PRODUCTNAME %PRODUCTVERSION OEM, please enter your personal data in the dialog following the license text. Important information is contained in the readme files which are located in the %PRODUCTNAME product directory. Please read these files carefully. You can also find detailed information at the Oracle website \n\nhttp://www.oracle.com/us/products/applications/open-office."
-msgstr ""
+msgstr "Karibu kwa %PRODUCTNAME %PRODUCTVERSIONOEM\n\nKuanza %PRODUCTNAME %PRODUCTVERSIONOEM, tafadhari ingiza data zako binafsi katika dalogi matini ya leseni ufuatao. Taarifa muhimu zimejumuhishwa katika faili readme ambazo zimewekwa katika saraka zao %PRODUCTNAME. Tafadhari soma faili hizi kwa makini. Vilevile unaweza kupata taarifa kamili katika tovuti ya Sun.\n\nhttp://www.sun.com/staroffice.\n\nhttp://www.sun.com/star/service\n\nTunatumaini utafurahia kufanya kazi na %PRODUCTNAME."
 
 #: source/preload/preload.src#RID_TP_LICENSE.TabPage.Text
 msgid  "License Agreement"
@@ -753,7 +753,7 @@ msgstr "1."
 
 #: source/preload/preload.src#RID_TP_LICENSE.FT_INFO2.FixedText.Text
 msgid  "View the complete License Agreement. Please use the scroll bar or the '%PAGEDOWN' button in this dialog to view the entire license text."
-msgstr ""
+msgstr "View the complete License Agreement. Please use the scroll bar or the '%PAGEDOWN' button in this dialog to view the entire license text."
 
 #: source/preload/preload.src#RID_TP_LICENSE.PB_PAGEDOWN.PushButton.Text
 msgid  "Page Down"
@@ -801,7 +801,7 @@ msgstr "Mpango Otomati"
 
 #: source/propctrlr/selectlabeldialog.src#RID_DLG_SELECTLABELCONTROL.1.FixedText.Text
 msgid  "These are control fields that can be used as label fields for the $control_class$ $control_name$."
-msgstr ""
+msgstr "Hizi ndizo nyuga vidhibiti ambavyo vinaweza kutumika kama nyuga za lebo kwa ajili ya $control_class$ $control_name$."
 
 #: source/propctrlr/selectlabeldialog.src#RID_DLG_SELECTLABELCONTROL.1.CheckBox.Text
 msgid  "~No assignment"
@@ -817,7 +817,7 @@ msgstr "Fomu"
 
 #: source/propctrlr/pcrmiscres.src#RID_STR_CONFIRM_DELETE_DATA_TYPE.String.Text
 msgid  "Do you want to delete the data type '#type#' from the model?\nPlease note that this will affect all controls which are bound to this data type."
-msgstr ""
+msgstr "Do you want to delete the data type '#type#' from the model?\nPlease note that this will affect all controls which are bound to this data type."
 
 #: source/propctrlr/pcrmiscres.src#RID_STR_PROPTITLE_PUSHBUTTON.String.Text
 msgid  "Button"
@@ -905,7 +905,7 @@ msgstr "Link fields"
 
 #: source/propctrlr/formlinkdialog.src#RID_DLG_FORMLINKS.FT_EXPLANATION.FixedText.Text
 msgid  "Sub forms can be used to display detailed data about the current record of the master form. To do this, you can specify which columns in the sub form match which columns in the master form."
-msgstr ""
+msgstr "Subforms can be used to display detailed data about the current record of the master form. To do this, you can specify which columns in the subform match which columns in the master form."
 
 #: source/propctrlr/formlinkdialog.src#RID_DLG_FORMLINKS.PB_SUGGEST.PushButton.Text
 msgid  "Suggest"
@@ -1864,8 +1864,8 @@ msgid  "Help"
 msgstr ""
 
 #: source/propctrlr/formres.src#RID_STR_UNABLETOCONNECT.String.Text
-msgid  "The connection to the data source "$name$" could not be established."
-msgstr ""
+msgid  "The connection to the data source \"$name$\" could not be established."
+msgstr "The connection to the data source \"$name$\" could not be established."
 
 #: source/propctrlr/formres.src#RID_STR_TEXT.String.Text
 msgid  "Text"
@@ -2297,11 +2297,11 @@ msgstr "Type a name for the new data type:"
 
 #: source/scanner/sanedlg.src#RID_SANE_DIALOG.RID_DEVICEINFO_BTN.PushButton.Text
 msgid  "About\n Dev~ice"
-msgstr ""
+msgstr "Kuhusu\n Kifaa"
 
 #: source/scanner/sanedlg.src#RID_SANE_DIALOG.RID_PREVIEW_BTN.PushButton.Text
 msgid  "Create\nPreview"
-msgstr ""
+msgstr "Unda\nHakiki"
 
 #: source/scanner/sanedlg.src#RID_SANE_DIALOG.RID_PREVIEW_BOX.FixedLine.Text
 msgid  "Preview"
@@ -2357,7 +2357,7 @@ msgstr "Skana"
 
 #: source/scanner/sanedlg.src#RID_SANE_DEVICEINFO_TXT.String.Text
 msgid  "Device: %s\nVendor: %s\nModel: %s\nType: %s"
-msgstr ""
+msgstr "Kifaa: \nMchuuzi: \nModeli: \nAina: "
 
 #: source/scanner/sanedlg.src#RID_SANE_SCANERROR_TXT.String.Text
 msgid  "An error occurred while scanning."
@@ -2365,7 +2365,7 @@ msgstr "Hitilafu imetokea wakati wa uskanishaji."
 
 #: source/scanner/sanedlg.src#RID_SANE_NORESOLUTIONOPTION_TXT.String.Text
 msgid  "The device does not offer a preview option. Therefore, a normal scan will be used as a preview instead. This may take a considerable amount of time."
-msgstr ""
+msgstr "Kifaa haitoi chagu la hakiki. Kwahiyo, skani ya kawaida itatumika badala yeke kama hakiki. Hii itachukua kiasi fulani cha muda."
 
 #: source/scanner/sanedlg.src#RID_SANE_NOSANELIB_TXT.String.Text
 msgid  "The SANE interface could not be initialized. Scanning is not possible."

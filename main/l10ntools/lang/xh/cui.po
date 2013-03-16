@@ -31,6 +31,10 @@ msgstr ""
 "X-Generator: genLang\n"
 
 
+#: source/customize/selector.src#FIXEDTEXT_DIALOG_DESCRIPTION.#define.Text
+msgid  "Select the library that contains the macro you want. Then select the macro under 'Macro name'."
+msgstr ""
+
 #: source/customize/selector.src#STR_SELECTOR_ADD_COMMANDS.String.TEXT
 msgid  "Add Commands"
 msgstr ""
@@ -91,8 +95,40 @@ msgstr ""
 msgid  "Description"
 msgstr ""
 
-#: source/customize/selector.src#FIXEDTEXT_DIALOG_DESCRIPTION.#define.Text
-msgid  "Select the library that contains the macro you want. Then select the macro under 'Macro name'."
+#: source/customize/acccfg.src#PUSHBUTTON_TEXT_SAVE.#define.Text
+msgid  "~Save..."
+msgstr ""
+
+#: source/customize/acccfg.src#PUSHBUTTON_TEXT_RESET.#define.Text
+msgid  "R~eset"
+msgstr ""
+
+#: source/customize/acccfg.src#PUSHBUTTON_TEXT_LOAD.#define.Text
+msgid  "~Load..."
+msgstr ""
+
+#: source/customize/acccfg.src#PUSHBUTTON_TEXT_REMOVE.#define.Text
+msgid  "~Delete"
+msgstr ""
+
+#: source/customize/acccfg.src#PUSHBUTTON_TEXT_CHANGE.#define.Text
+msgid  "~Modify"
+msgstr ""
+
+#: source/customize/acccfg.src#PUSHBUTTON_TEXT_NEW.#define.Text
+msgid  "~New"
+msgstr ""
+
+#: source/customize/acccfg.src#FIXEDTEXT_TEXT_GROUP.#define.Text
+msgid  "~Category"
+msgstr ""
+
+#: source/customize/acccfg.src#FIXEDTEXT_TEXT_FUNCTION.#define.Text
+msgid  "Function"
+msgstr ""
+
+#: source/customize/acccfg.src#GROUPBOX_TEXT_FUNCTIONS.#define.Text
+msgid  "Functions"
 msgstr ""
 
 #: source/customize/acccfg.src#RID_SVXPAGE_KEYBOARD.GRP_ACC_KEYBOARD.FixedLine.Text
@@ -133,42 +169,6 @@ msgstr ""
 
 #: source/customize/acccfg.src#RID_SVXPAGE_CONFIGGROUPBOX.STR_GROUP_STYLES.String.Text
 msgid  "Styles"
-msgstr ""
-
-#: source/customize/acccfg.src#PUSHBUTTON_TEXT_SAVE.#define.Text
-msgid  "~Save..."
-msgstr ""
-
-#: source/customize/acccfg.src#PUSHBUTTON_TEXT_RESET.#define.Text
-msgid  "R~eset"
-msgstr ""
-
-#: source/customize/acccfg.src#PUSHBUTTON_TEXT_LOAD.#define.Text
-msgid  "~Load..."
-msgstr ""
-
-#: source/customize/acccfg.src#PUSHBUTTON_TEXT_REMOVE.#define.Text
-msgid  "~Delete"
-msgstr ""
-
-#: source/customize/acccfg.src#PUSHBUTTON_TEXT_CHANGE.#define.Text
-msgid  "~Modify"
-msgstr ""
-
-#: source/customize/acccfg.src#PUSHBUTTON_TEXT_NEW.#define.Text
-msgid  "~New"
-msgstr ""
-
-#: source/customize/acccfg.src#FIXEDTEXT_TEXT_GROUP.#define.Text
-msgid  "~Category"
-msgstr ""
-
-#: source/customize/acccfg.src#FIXEDTEXT_TEXT_FUNCTION.#define.Text
-msgid  "Function"
-msgstr ""
-
-#: source/customize/acccfg.src#GROUPBOX_TEXT_FUNCTIONS.#define.Text
-msgid  "Functions"
 msgstr ""
 
 #: source/customize/eventdlg.src#RID_SVXPAGE_EVENTS.STR_EVENT.String.Text
@@ -547,6 +547,50 @@ msgstr ""
 msgid  "Events"
 msgstr ""
 
+#: source/customize/cfg.src#TEXT_MENU.#define.Text
+msgid  "Menu"
+msgstr ""
+
+#: source/customize/cfg.src#TEXT_BEGIN_GROUP.#define.Text
+msgid  "Begin a Group"
+msgstr ""
+
+#: source/customize/cfg.src#TEXT_RENAME.#define.Text
+msgid  "Rename..."
+msgstr ""
+
+#: source/customize/cfg.src#TEXT_DELETE.#define.Text
+msgid  "Delete..."
+msgstr ""
+
+#: source/customize/cfg.src#TEXT_DELETE_NODOTS.#define.Text
+msgid  "Delete"
+msgstr ""
+
+#: source/customize/cfg.src#TEXT_MOVE.#define.Text
+msgid  "Move..."
+msgstr ""
+
+#: source/customize/cfg.src#TEXT_DEFAULT_STYLE.#define.Text
+msgid  "Restore Default Settings"
+msgstr ""
+
+#: source/customize/cfg.src#TEXT_DEFAULT_COMMAND.#define.Text
+msgid  "Restore Default Command"
+msgstr ""
+
+#: source/customize/cfg.src#TEXT_TEXT_ONLY.#define.Text
+msgid  "Text only"
+msgstr ""
+
+#: source/customize/cfg.src#TEXT_TOOLBAR_NAME.#define.Text
+msgid  "Toolbar Name"
+msgstr ""
+
+#: source/customize/cfg.src#TEXT_SAVE_IN.#define.Text
+msgid  "Save In"
+msgstr ""
+
 #: source/customize/cfg.src#RID_SVXPAGE_MENUS.GRP_MENUS.FixedLine.Text
 msgid  "%PRODUCTNAME %MODULENAME Menus"
 msgstr ""
@@ -749,50 +793,6 @@ msgstr ""
 
 #: source/customize/cfg.src#BUTTON_STR_DOWN.String.Text
 msgid  "Down"
-msgstr ""
-
-#: source/customize/cfg.src#TEXT_MENU.#define.Text
-msgid  "Menu"
-msgstr ""
-
-#: source/customize/cfg.src#TEXT_BEGIN_GROUP.#define.Text
-msgid  "Begin a Group"
-msgstr ""
-
-#: source/customize/cfg.src#TEXT_RENAME.#define.Text
-msgid  "Rename..."
-msgstr ""
-
-#: source/customize/cfg.src#TEXT_DELETE.#define.Text
-msgid  "Delete..."
-msgstr ""
-
-#: source/customize/cfg.src#TEXT_DELETE_NODOTS.#define.Text
-msgid  "Delete"
-msgstr ""
-
-#: source/customize/cfg.src#TEXT_MOVE.#define.Text
-msgid  "Move..."
-msgstr ""
-
-#: source/customize/cfg.src#TEXT_DEFAULT_STYLE.#define.Text
-msgid  "Restore Default Settings"
-msgstr ""
-
-#: source/customize/cfg.src#TEXT_DEFAULT_COMMAND.#define.Text
-msgid  "Restore Default Command"
-msgstr ""
-
-#: source/customize/cfg.src#TEXT_TEXT_ONLY.#define.Text
-msgid  "Text only"
-msgstr ""
-
-#: source/customize/cfg.src#TEXT_TOOLBAR_NAME.#define.Text
-msgid  "Toolbar Name"
-msgstr ""
-
-#: source/customize/cfg.src#TEXT_SAVE_IN.#define.Text
-msgid  "Save In"
 msgstr ""
 
 #: source/dialogs/commonlingui.src#RID_SVX_WND_COMMON_LINGU.FT_WORD.FixedText.Text
@@ -1257,6 +1257,10 @@ msgid  "F~orm"
 msgstr ""
 
 #: source/dialogs/hyperdlg.src#RID_SVXPAGE_HYPERLINK_INTERNET.LB_FORM.Default.StringList.item
+msgid  "Text"
+msgstr ""
+
+#: source/dialogs/hyperdlg.src#RID_SVXPAGE_HYPERLINK_INTERNET.LB_FORM.Default.StringList.item
 msgid  "Button"
 msgstr ""
 
@@ -1318,6 +1322,10 @@ msgstr ""
 
 #: source/dialogs/hyperdlg.src#RID_SVXPAGE_HYPERLINK_MAIL.FT_FORM.FixedText.Text
 msgid  "F~orm"
+msgstr ""
+
+#: source/dialogs/hyperdlg.src#RID_SVXPAGE_HYPERLINK_MAIL.LB_FORM.Default.StringList.item
+msgid  "Text"
 msgstr ""
 
 #: source/dialogs/hyperdlg.src#RID_SVXPAGE_HYPERLINK_MAIL.LB_FORM.Default.StringList.item
@@ -1399,6 +1407,10 @@ msgid  "F~orm"
 msgstr ""
 
 #: source/dialogs/hyperdlg.src#RID_SVXPAGE_HYPERLINK_DOCUMENT.LB_FORM.Default.StringList.item
+msgid  "Text"
+msgstr ""
+
+#: source/dialogs/hyperdlg.src#RID_SVXPAGE_HYPERLINK_DOCUMENT.LB_FORM.Default.StringList.item
 msgid  "Button"
 msgstr ""
 
@@ -1462,6 +1474,10 @@ msgstr ""
 
 #: source/dialogs/hyperdlg.src#RID_SVXPAGE_HYPERLINK_NEWDOCUMENT.FT_FORM.FixedText.Text
 msgid  "F~orm"
+msgstr ""
+
+#: source/dialogs/hyperdlg.src#RID_SVXPAGE_HYPERLINK_NEWDOCUMENT.LB_FORM.Default.StringList.item
+msgid  "Text"
 msgstr ""
 
 #: source/dialogs/hyperdlg.src#RID_SVXPAGE_HYPERLINK_NEWDOCUMENT.LB_FORM.Default.StringList.item
@@ -1554,22 +1570,6 @@ msgstr ""
 
 #: source/dialogs/hyperdlg.src#RID_SVXSTR_HYPERDLG_QUERYOVERWRITE.String.Text
 msgid  "The file already exists. Overwrite?"
-msgstr ""
-
-#: source/dialogs/hyperdlg.src#RID_SVXPAGE_HYPERLINK_INTERNET.LB_FORM.Default.StringList.item
-msgid  "Text"
-msgstr ""
-
-#: source/dialogs/hyperdlg.src#RID_SVXPAGE_HYPERLINK_MAIL.LB_FORM.Default.StringList.item
-msgid  "Text"
-msgstr ""
-
-#: source/dialogs/hyperdlg.src#RID_SVXPAGE_HYPERLINK_DOCUMENT.LB_FORM.Default.StringList.item
-msgid  "Text"
-msgstr ""
-
-#: source/dialogs/hyperdlg.src#RID_SVXPAGE_HYPERLINK_NEWDOCUMENT.LB_FORM.Default.StringList.item
-msgid  "Text"
 msgstr ""
 
 #: source/dialogs/passwdomdlg.src#RID_DLG_PASSWORD_TO_OPEN_MODIFY.ModalDialog.Text
@@ -2971,12 +2971,14 @@ msgid  "~Manual"
 msgstr "~Handmatig"
 
 #: source/options/optinet2.src#RID_SVXPAGE_INET_PROXY.ST_MSG_255_0.String.Text
+#, fuzzy
 msgid  "is not a valid entry for this field. Please specify a value between 0 and 255."
-msgstr ""
+msgstr "is nie 'n geldige inskrywing vir hierdie veld nie. Spesifiseer asseblief 'n waarde tussen 0 en 255."
 
 #: source/options/optinet2.src#RID_SVXPAGE_INET_PROXY.ST_MSG_255_1.String.Text
+#, fuzzy
 msgid  "is not a valid entry for this field. Please specify a value between 1 and 255."
-msgstr ""
+msgstr "is nie 'n geldige inskrywing vir hierdie veld nie. Spesifiseer asseblief 'n waarde tussen 1 en 255."
 
 #: source/options/optinet2.src#RID_SVXPAGE_INET_SEARCH.TabPage.Text
 msgid  "Search"
@@ -3080,8 +3082,9 @@ msgid  "Security options and warnings"
 msgstr ""
 
 #: source/options/optinet2.src#RID_SVXPAGE_INET_SECURITY.FI_SEC_SECURITYOPTIONS.FixedText.Text
+#, fuzzy
 msgid  "Adjust security related options and define warnings for hidden information in documents."
-msgstr ""
+msgstr "Pas sekuriteitsverwante opsies aan en definieer waarskuwings vir versteekte inligting in dokumente."
 
 #: source/options/optinet2.src#RID_SVXPAGE_INET_SECURITY.PB_SEC_SECURITYOPTIONS.PushButton.Text
 #, fuzzy
@@ -3109,8 +3112,9 @@ msgid  "Protected by a master password (recommended)"
 msgstr "Beskerm deur 'n meesterwagwoord (aanbeveel)"
 
 #: source/options/optinet2.src#RID_SVXPAGE_INET_SECURITY.FI_SEC_MASTERPASSWORD.FixedText.Text
+#, fuzzy
 msgid  "Passwords are protected by a master password. You will be asked to enter it once per session, if %PRODUCTNAME retrieves a password from the protected password list."
-msgstr ""
+msgstr "Wagwoorde word deur 'n meesterwagwoord beskerm. U sal gevra word om dit een maal per sessie in te tik, indien %PRODUCTNAME 'n wagwoord uit die beskermde wagwoordlys haal."
 
 #: source/options/optinet2.src#RID_SVXPAGE_INET_SECURITY.PB_SEC_MASTERPASSWORD.PushButton.Text
 #, fuzzy
@@ -3123,8 +3127,9 @@ msgid  "Macro security"
 msgstr "Makrosekuriteit"
 
 #: source/options/optinet2.src#RID_SVXPAGE_INET_SECURITY.FI_SEC_MACROSEC.FixedText.Text
+#, fuzzy
 msgid  "Adjust the security level for executing macros and specify trusted macro developers."
-msgstr ""
+msgstr "Pas die sekuriteitsvlak aan vir uitvoer van makro's en spesifiseer vertroude makro-ontwikkelaars."
 
 #: source/options/optinet2.src#RID_SVXPAGE_INET_SECURITY.PB_SEC_MACROSEC.PushButton.Text
 #, fuzzy
@@ -3132,16 +3137,19 @@ msgid  "Macro Security..."
 msgstr "Makrosekuriteit..."
 
 #: source/options/optinet2.src#RID_SVXPAGE_INET_SECURITY.STR_SEC_NOPASSWDSAVE.String.Text
+#, fuzzy
 msgid  "Disabling the function to persistently store passwords deletes the list of passwords stored and resets the master password.\n\nDo you want to delete password list and reset master password?"
-msgstr ""
+msgstr "As u die funksie om wagwoorde te stoor, deaktiveer, skrap dit die lys wagwoorde wat gestoor is, en dit laai die meesterwagwoord terug.\n\nIs u seker u wil die wagwoordlys skrap en die meesterwagwoord teruglaai?"
 
 #: source/options/optinet2.src#RID_SVXERR_OPT_PROXYPORTS.ErrorBox.Message
+#, fuzzy
 msgid  "Invalid value!\n\nThe maximum value for a port number is 65535."
-msgstr ""
+msgstr "Ongeldige waarde!\n\nDie maksimum waarde vir 'n poortnommer is 65535."
 
 #: source/options/optinet2.src#RID_SVXDLG_OPT_JAVASCRIPT_DISABLE.FT_JSCPT_WARNING.FixedText.Text
+#, fuzzy
 msgid  "Please note that with Java\nyou disable Javascript as well.\n\nDo you still want to disable Java?"
-msgstr ""
+msgstr "Let asseblief daarop dat u met Java\n Javascript ook deaktiveer.\n\nWil u nogtans Java deaktiveer?"
 
 #: source/options/optinet2.src#RID_SVXDLG_OPT_JAVASCRIPT_DISABLE.CB_JSCPT_DISABLE.CheckBox.Text
 #, fuzzy
@@ -3238,8 +3246,9 @@ msgid  "City/State/Zip"
 msgstr "Stad/Deelstaat/Poskode"
 
 #: source/options/optgenrl.src#RID_SFXPAGE_GENERAL.STR_QUERY_REG.String.Text
+#, fuzzy
 msgid  "Note that street, Zip code and city are used to generate the registration key. You will not be able to change the user data again until the registration has been carried out. Do you want to modify the user data now?"
-msgstr ""
+msgstr "Let daarop dat die straat, poskode en stad gebruik word om die registrasiesleutel te genereer. U sal nie die gebruikersdata weer kan verander totdat die registrasie gedoen is nie. Wil u die gebruikersdata nou verander?"
 
 #: source/options/optgenrl.src#RID_SVXQB_CHANGEDATA.QueryBox.Message
 msgid  "The User Data have been changed.\nDo you really want to change your User Data?"
@@ -4424,6 +4433,11 @@ msgstr ""
 msgid  "No"
 msgstr ""
 
+#: source/options/optsave.src#TEXT_SAVEPAGE.#define.Text
+#, fuzzy
+msgid  "Save"
+msgstr "Stoor"
+
 #: source/options/optsave.src#RID_SFXPAGE_SAVE.LB_LOAD.FixedLine.Text
 #, fuzzy
 msgid  "Load"
@@ -4560,13 +4574,9 @@ msgid  "Not using ODF 1.2 Extended may cause infomation to be lost."
 msgstr "As u nie ODF 1.2 Extended gebruik nie, kan inligting verlore gaan."
 
 #: source/options/optsave.src#RID_SVXDLG_FILTER_WARNING.FT_FILTER_WARNING.FixedText.Text
-msgid  "Using "%1" as default file format may cause information loss.\n"
-msgstr ""
-
-#: source/options/optsave.src#TEXT_SAVEPAGE.#define.Text
 #, fuzzy
-msgid  "Save"
-msgstr "Stoor"
+msgid  "Using \"%1\" as default file format may cause information loss.\n"
+msgstr "Gebruik van \"%1\" as verstek lêerformaat kan tot verlies van inligting lei.\n"
 
 #: source/options/optimprove.src#RID_SVXPAGE_IMPROVEMENT.TabPage.Text
 #, fuzzy
@@ -4579,12 +4589,14 @@ msgid  "Improvement Program"
 msgstr "Verbeteringsprogram"
 
 #: source/options/optimprove.src#RID_SVXPAGE_IMPROVEMENT.FT_INVITATION.FixedText.Text
+#, fuzzy
 msgid  "We invite you to join our %PRODUCTNAME Improvement Program to help optimize the quality of %PRODUCTNAME.\n\nIf you are willing to participate, we will collect anonymous statistics about how you use %PRODUCTNAME. The data is used to identify usage patterns.\n\nThe %PRODUCTNAME Improvement Program will not collect any personal data, or document content."
-msgstr ""
+msgstr "Ons nooi u uit om by ons %PRODUCTNAME-verbeteringsprogram aan te sluit om die gehalte van %PRODUCTNAME te optimeer.\n\nAs u gewillig is om deel te neem, sal ons anonieme statistiek versamel oor hoe u %PRODUCTNAME gebruik. Die data word gebruik om gebruikspatrone te identifiseer.\n\nDie %PRODUCTNAME-verbeteringsprogram sal nie enige persoonlike data of dokumentinhoud versamel nie."
 
 #: source/options/optimprove.src#RID_SVXPAGE_IMPROVEMENT.RB_YES.RadioButton.Text
+#, fuzzy
 msgid  "~Yes, I am willing to participate in the %PRODUCTNAME Improvement Program"
-msgstr ""
+msgstr "~Ja, ek is gewillig om deel te neem aan die %PRODUCTNAME-verbeteringsprogram"
 
 #: source/options/optimprove.src#RID_SVXPAGE_IMPROVEMENT.RB_NO.RadioButton.Text
 #, fuzzy
@@ -4714,8 +4726,9 @@ msgid  "Edit Paths: %1"
 msgstr "Redigeer paaie: %1"
 
 #: source/options/optpath.src#RID_SVXERR_OPT_DOUBLEPATHS.ErrorBox.Message
+#, fuzzy
 msgid  "The configuration and mail directories must be specified as separate directories.\nPlease choose a new path."
-msgstr ""
+msgstr "Die opstel- en posgidse moet as aparte gidse gespesifiseer word.\nKies asseblief 'n nuwe pad."
 
 #: source/options/optpath.src#RID_SVXSTR_KEY_CONFIG_DIR.String.Text
 #, fuzzy
@@ -4939,7 +4952,7 @@ msgid  "Document status"
 msgstr ""
 
 #: source/options/optgdlg.src#OFA_TP_MISC.CB_DOCSTATUS.CheckBox.Text
-msgid  "~Printing sets "document modified" status"
+msgid  "~Printing sets \"document modified\" status"
 msgstr ""
 
 #: source/options/optgdlg.src#OFA_TP_MISC.FL_TWOFIGURE.FixedLine.Text
@@ -5351,8 +5364,9 @@ msgid  "~Close"
 msgstr "~Sluit"
 
 #: source/options/optdict.src#RID_SVXSTR_OPT_DOUBLE_DICTS.String.Text
+#, fuzzy
 msgid  "The specified name already exists.\nPlease enter a new name."
-msgstr ""
+msgstr "Die gespesifiseerde naam bestaan reeds.\nTik asseblief 'n nuwe naam."
 
 #: source/options/optdict.src#RID_SFXQB_SET_LANGUAGE.QueryBox.Message
 #, fuzzy
@@ -5725,8 +5739,9 @@ msgid  "Security warnings"
 msgstr ""
 
 #: source/options/securityoptions.src#RID_SVXDLG_SECURITY_OPTIONS.FI_WARNINGS.FixedText.Text
+#, fuzzy
 msgid  "Warn if document contains recorded changes, versions, hidden information or notes:"
-msgstr ""
+msgstr "Waarsku indien dokument aangetekende veranderinge, weergawes, versteekde inligting of aantekeninge bevat:"
 
 #: source/options/securityoptions.src#RID_SVXDLG_SECURITY_OPTIONS.CB_SAVESENDDOCS.CheckBox.Text
 #, fuzzy
@@ -5993,6 +6008,26 @@ msgid  "Ty~pe"
 msgstr ""
 
 #: source/tabpages/tabarea.src#RID_SVXPAGE_TRANSPARENCE.LB_TRGR_GRADIENT_TYPES.Default.StringList.item
+msgid  "Linear"
+msgstr ""
+
+#: source/tabpages/tabarea.src#RID_SVXPAGE_TRANSPARENCE.LB_TRGR_GRADIENT_TYPES.Default.StringList.item
+msgid  "Axial"
+msgstr ""
+
+#: source/tabpages/tabarea.src#RID_SVXPAGE_TRANSPARENCE.LB_TRGR_GRADIENT_TYPES.Default.StringList.item
+msgid  "Radial"
+msgstr ""
+
+#: source/tabpages/tabarea.src#RID_SVXPAGE_TRANSPARENCE.LB_TRGR_GRADIENT_TYPES.Default.StringList.item
+msgid  "Ellipsoid"
+msgstr ""
+
+#: source/tabpages/tabarea.src#RID_SVXPAGE_TRANSPARENCE.LB_TRGR_GRADIENT_TYPES.Default.StringList.item
+msgid  "Quadratic"
+msgstr ""
+
+#: source/tabpages/tabarea.src#RID_SVXPAGE_TRANSPARENCE.LB_TRGR_GRADIENT_TYPES.Default.StringList.item
 msgid  "Square"
 msgstr ""
 
@@ -6034,6 +6069,22 @@ msgstr ""
 
 #: source/tabpages/tabarea.src#RID_SVXPAGE_AREA.FL_PROP.FixedLine.Text
 msgid  "Fill"
+msgstr ""
+
+#: source/tabpages/tabarea.src#RID_SVXPAGE_AREA.LB_AREA_TYPE.Default.StringList.item
+msgid  "None"
+msgstr ""
+
+#: source/tabpages/tabarea.src#RID_SVXPAGE_AREA.LB_AREA_TYPE.Default.StringList.item
+msgid  "Color"
+msgstr ""
+
+#: source/tabpages/tabarea.src#RID_SVXPAGE_AREA.LB_AREA_TYPE.Default.StringList.item
+msgid  "Gradient"
+msgstr ""
+
+#: source/tabpages/tabarea.src#RID_SVXPAGE_AREA.LB_AREA_TYPE.Default.StringList.item
+msgid  "Hatching"
 msgstr ""
 
 #: source/tabpages/tabarea.src#RID_SVXPAGE_AREA.LB_AREA_TYPE.Default.StringList.item
@@ -6157,6 +6208,14 @@ msgid  "~Line type"
 msgstr ""
 
 #: source/tabpages/tabarea.src#RID_SVXPAGE_HATCH.LB_LINE_TYPE.Default.StringList.item
+msgid  "Single"
+msgstr ""
+
+#: source/tabpages/tabarea.src#RID_SVXPAGE_HATCH.LB_LINE_TYPE.Default.StringList.item
+msgid  "Crossed"
+msgstr ""
+
+#: source/tabpages/tabarea.src#RID_SVXPAGE_HATCH.LB_LINE_TYPE.Default.StringList.item
 msgid  "Triple"
 msgstr ""
 
@@ -6245,6 +6304,26 @@ msgid  "Ty~pe"
 msgstr ""
 
 #: source/tabpages/tabarea.src#RID_SVXPAGE_GRADIENT.LB_GRADIENT_TYPES.Default.StringList.item
+msgid  "Linear"
+msgstr ""
+
+#: source/tabpages/tabarea.src#RID_SVXPAGE_GRADIENT.LB_GRADIENT_TYPES.Default.StringList.item
+msgid  "Axial"
+msgstr ""
+
+#: source/tabpages/tabarea.src#RID_SVXPAGE_GRADIENT.LB_GRADIENT_TYPES.Default.StringList.item
+msgid  "Radial"
+msgstr ""
+
+#: source/tabpages/tabarea.src#RID_SVXPAGE_GRADIENT.LB_GRADIENT_TYPES.Default.StringList.item
+msgid  "Ellipsoid"
+msgstr ""
+
+#: source/tabpages/tabarea.src#RID_SVXPAGE_GRADIENT.LB_GRADIENT_TYPES.Default.StringList.item
+msgid  "Square"
+msgstr ""
+
+#: source/tabpages/tabarea.src#RID_SVXPAGE_GRADIENT.LB_GRADIENT_TYPES.Default.StringList.item
 msgid  "Rectangular"
 msgstr ""
 
@@ -6317,6 +6396,10 @@ msgid  "Color table"
 msgstr ""
 
 #: source/tabpages/tabarea.src#RID_SVXPAGE_COLOR.LB_COLORMODEL.Default.StringList.item
+msgid  "RGB"
+msgstr ""
+
+#: source/tabpages/tabarea.src#RID_SVXPAGE_COLOR.LB_COLORMODEL.Default.StringList.item
 msgid  "CMYK"
 msgstr ""
 
@@ -6382,74 +6465,6 @@ msgstr ""
 
 #: source/tabpages/tabarea.src#STR_CUI_COLORMODEL.String.Text
 msgid  "Color Mode"
-msgstr ""
-
-#: source/tabpages/tabarea.src#RID_SVXPAGE_TRANSPARENCE.LB_TRGR_GRADIENT_TYPES.Default.StringList.item
-msgid  "Linear"
-msgstr ""
-
-#: source/tabpages/tabarea.src#RID_SVXPAGE_TRANSPARENCE.LB_TRGR_GRADIENT_TYPES.Default.StringList.item
-msgid  "Axial"
-msgstr ""
-
-#: source/tabpages/tabarea.src#RID_SVXPAGE_TRANSPARENCE.LB_TRGR_GRADIENT_TYPES.Default.StringList.item
-msgid  "Radial"
-msgstr ""
-
-#: source/tabpages/tabarea.src#RID_SVXPAGE_TRANSPARENCE.LB_TRGR_GRADIENT_TYPES.Default.StringList.item
-msgid  "Ellipsoid"
-msgstr ""
-
-#: source/tabpages/tabarea.src#RID_SVXPAGE_TRANSPARENCE.LB_TRGR_GRADIENT_TYPES.Default.StringList.item
-msgid  "Quadratic"
-msgstr ""
-
-#: source/tabpages/tabarea.src#RID_SVXPAGE_AREA.LB_AREA_TYPE.Default.StringList.item
-msgid  "None"
-msgstr ""
-
-#: source/tabpages/tabarea.src#RID_SVXPAGE_AREA.LB_AREA_TYPE.Default.StringList.item
-msgid  "Color"
-msgstr ""
-
-#: source/tabpages/tabarea.src#RID_SVXPAGE_AREA.LB_AREA_TYPE.Default.StringList.item
-msgid  "Gradient"
-msgstr ""
-
-#: source/tabpages/tabarea.src#RID_SVXPAGE_AREA.LB_AREA_TYPE.Default.StringList.item
-msgid  "Hatching"
-msgstr ""
-
-#: source/tabpages/tabarea.src#RID_SVXPAGE_HATCH.LB_LINE_TYPE.Default.StringList.item
-msgid  "Single"
-msgstr ""
-
-#: source/tabpages/tabarea.src#RID_SVXPAGE_HATCH.LB_LINE_TYPE.Default.StringList.item
-msgid  "Crossed"
-msgstr ""
-
-#: source/tabpages/tabarea.src#RID_SVXPAGE_GRADIENT.LB_GRADIENT_TYPES.Default.StringList.item
-msgid  "Linear"
-msgstr ""
-
-#: source/tabpages/tabarea.src#RID_SVXPAGE_GRADIENT.LB_GRADIENT_TYPES.Default.StringList.item
-msgid  "Axial"
-msgstr ""
-
-#: source/tabpages/tabarea.src#RID_SVXPAGE_GRADIENT.LB_GRADIENT_TYPES.Default.StringList.item
-msgid  "Radial"
-msgstr ""
-
-#: source/tabpages/tabarea.src#RID_SVXPAGE_GRADIENT.LB_GRADIENT_TYPES.Default.StringList.item
-msgid  "Ellipsoid"
-msgstr ""
-
-#: source/tabpages/tabarea.src#RID_SVXPAGE_GRADIENT.LB_GRADIENT_TYPES.Default.StringList.item
-msgid  "Square"
-msgstr ""
-
-#: source/tabpages/tabarea.src#RID_SVXPAGE_COLOR.LB_COLORMODEL.Default.StringList.item
-msgid  "RGB"
 msgstr ""
 
 #: source/tabpages/frmdirlbox.src#RID_SVXSTR_FRAMEDIR_LTR.String.Text
@@ -6545,11 +6560,43 @@ msgid  "Page layout"
 msgstr ""
 
 #: source/tabpages/page.src#RID_SVXPAGE_PAGE.LB_LAYOUT.Default.StringList.item
+msgid  "Right and left"
+msgstr ""
+
+#: source/tabpages/page.src#RID_SVXPAGE_PAGE.LB_LAYOUT.Default.StringList.item
+msgid  "Mirrored"
+msgstr ""
+
+#: source/tabpages/page.src#RID_SVXPAGE_PAGE.LB_LAYOUT.Default.StringList.item
+msgid  "Only right"
+msgstr ""
+
+#: source/tabpages/page.src#RID_SVXPAGE_PAGE.LB_LAYOUT.Default.StringList.item
 msgid  "Only left"
 msgstr ""
 
 #: source/tabpages/page.src#RID_SVXPAGE_PAGE.FT_NUMBER_FORMAT.FixedText.Text
 msgid  "For~mat"
+msgstr ""
+
+#: source/tabpages/page.src#RID_SVXPAGE_PAGE.LB_NUMBER_FORMAT.Default.StringList.item
+msgid  "A, B, C, ..."
+msgstr ""
+
+#: source/tabpages/page.src#RID_SVXPAGE_PAGE.LB_NUMBER_FORMAT.Default.StringList.item
+msgid  "a, b, c, ..."
+msgstr ""
+
+#: source/tabpages/page.src#RID_SVXPAGE_PAGE.LB_NUMBER_FORMAT.Default.StringList.item
+msgid  "I, II, III, ..."
+msgstr ""
+
+#: source/tabpages/page.src#RID_SVXPAGE_PAGE.LB_NUMBER_FORMAT.Default.StringList.item
+msgid  "i, ii, iii, ..."
+msgstr ""
+
+#: source/tabpages/page.src#RID_SVXPAGE_PAGE.LB_NUMBER_FORMAT.Default.StringList.item
+msgid  "1, 2, 3, ..."
 msgstr ""
 
 #: source/tabpages/page.src#RID_SVXPAGE_PAGE.LB_NUMBER_FORMAT.Default.StringList.item
@@ -6820,44 +6867,52 @@ msgstr ""
 msgid  "Screen"
 msgstr ""
 
-#: source/tabpages/page.src#RID_SVXPAGE_PAGE.LB_LAYOUT.Default.StringList.item
-msgid  "Right and left"
-msgstr ""
-
-#: source/tabpages/page.src#RID_SVXPAGE_PAGE.LB_LAYOUT.Default.StringList.item
-msgid  "Mirrored"
-msgstr ""
-
-#: source/tabpages/page.src#RID_SVXPAGE_PAGE.LB_LAYOUT.Default.StringList.item
-msgid  "Only right"
-msgstr ""
-
-#: source/tabpages/page.src#RID_SVXPAGE_PAGE.LB_NUMBER_FORMAT.Default.StringList.item
-msgid  "A, B, C, ..."
-msgstr ""
-
-#: source/tabpages/page.src#RID_SVXPAGE_PAGE.LB_NUMBER_FORMAT.Default.StringList.item
-msgid  "a, b, c, ..."
-msgstr ""
-
-#: source/tabpages/page.src#RID_SVXPAGE_PAGE.LB_NUMBER_FORMAT.Default.StringList.item
-msgid  "I, II, III, ..."
-msgstr ""
-
-#: source/tabpages/page.src#RID_SVXPAGE_PAGE.LB_NUMBER_FORMAT.Default.StringList.item
-msgid  "i, ii, iii, ..."
-msgstr ""
-
-#: source/tabpages/page.src#RID_SVXPAGE_PAGE.LB_NUMBER_FORMAT.Default.StringList.item
-msgid  "1, 2, 3, ..."
-msgstr ""
-
 #: source/tabpages/numfmt.src#RID_SVXPAGE_NUMBERFORMAT.TabPage.Text
 msgid  "Number Format"
 msgstr ""
 
 #: source/tabpages/numfmt.src#RID_SVXPAGE_NUMBERFORMAT.FT_CATEGORY.FixedText.Text
 msgid  "~Category"
+msgstr ""
+
+#: source/tabpages/numfmt.src#RID_SVXPAGE_NUMBERFORMAT.LB_CATEGORY.Default.StringList.item
+msgid  "All"
+msgstr ""
+
+#: source/tabpages/numfmt.src#RID_SVXPAGE_NUMBERFORMAT.LB_CATEGORY.Default.StringList.item
+msgid  "User-defined"
+msgstr ""
+
+#: source/tabpages/numfmt.src#RID_SVXPAGE_NUMBERFORMAT.LB_CATEGORY.Default.StringList.item
+msgid  "Number"
+msgstr ""
+
+#: source/tabpages/numfmt.src#RID_SVXPAGE_NUMBERFORMAT.LB_CATEGORY.Default.StringList.item
+msgid  "Percent"
+msgstr ""
+
+#: source/tabpages/numfmt.src#RID_SVXPAGE_NUMBERFORMAT.LB_CATEGORY.Default.StringList.item
+msgid  "Currency"
+msgstr ""
+
+#: source/tabpages/numfmt.src#RID_SVXPAGE_NUMBERFORMAT.LB_CATEGORY.Default.StringList.item
+msgid  "Date"
+msgstr ""
+
+#: source/tabpages/numfmt.src#RID_SVXPAGE_NUMBERFORMAT.LB_CATEGORY.Default.StringList.item
+msgid  "Time"
+msgstr ""
+
+#: source/tabpages/numfmt.src#RID_SVXPAGE_NUMBERFORMAT.LB_CATEGORY.Default.StringList.item
+msgid  "Scientific"
+msgstr ""
+
+#: source/tabpages/numfmt.src#RID_SVXPAGE_NUMBERFORMAT.LB_CATEGORY.Default.StringList.item
+msgid  "Fraction"
+msgstr ""
+
+#: source/tabpages/numfmt.src#RID_SVXPAGE_NUMBERFORMAT.LB_CATEGORY.Default.StringList.item
+msgid  "Boolean Value"
 msgstr ""
 
 #: source/tabpages/numfmt.src#RID_SVXPAGE_NUMBERFORMAT.LB_CATEGORY.Default.StringList.item
@@ -6918,46 +6973,6 @@ msgstr ""
 
 #: source/tabpages/numfmt.src#RID_SVXPAGE_NUMBERFORMAT.STR_AUTO_ENTRY.String.Text
 msgid  "Automatic"
-msgstr ""
-
-#: source/tabpages/numfmt.src#RID_SVXPAGE_NUMBERFORMAT.LB_CATEGORY.Default.StringList.item
-msgid  "All"
-msgstr ""
-
-#: source/tabpages/numfmt.src#RID_SVXPAGE_NUMBERFORMAT.LB_CATEGORY.Default.StringList.item
-msgid  "User-defined"
-msgstr ""
-
-#: source/tabpages/numfmt.src#RID_SVXPAGE_NUMBERFORMAT.LB_CATEGORY.Default.StringList.item
-msgid  "Number"
-msgstr ""
-
-#: source/tabpages/numfmt.src#RID_SVXPAGE_NUMBERFORMAT.LB_CATEGORY.Default.StringList.item
-msgid  "Percent"
-msgstr ""
-
-#: source/tabpages/numfmt.src#RID_SVXPAGE_NUMBERFORMAT.LB_CATEGORY.Default.StringList.item
-msgid  "Currency"
-msgstr ""
-
-#: source/tabpages/numfmt.src#RID_SVXPAGE_NUMBERFORMAT.LB_CATEGORY.Default.StringList.item
-msgid  "Date"
-msgstr ""
-
-#: source/tabpages/numfmt.src#RID_SVXPAGE_NUMBERFORMAT.LB_CATEGORY.Default.StringList.item
-msgid  "Time"
-msgstr ""
-
-#: source/tabpages/numfmt.src#RID_SVXPAGE_NUMBERFORMAT.LB_CATEGORY.Default.StringList.item
-msgid  "Scientific"
-msgstr ""
-
-#: source/tabpages/numfmt.src#RID_SVXPAGE_NUMBERFORMAT.LB_CATEGORY.Default.StringList.item
-msgid  "Fraction"
-msgstr ""
-
-#: source/tabpages/numfmt.src#RID_SVXPAGE_NUMBERFORMAT.LB_CATEGORY.Default.StringList.item
-msgid  "Boolean Value"
 msgstr ""
 
 #: source/tabpages/numpages.src#RID_SVXPAGE_PICK_BULLET.FL_VALUES.FixedLine.Text
@@ -7360,12 +7375,20 @@ msgstr ""
 msgid  "~Bottom"
 msgstr ""
 
+#: source/tabpages/backgrnd.src#UNLINKED_IMAGE.#define.Text
+msgid  "Unlinked graphic"
+msgstr ""
+
 #: source/tabpages/backgrnd.src#RID_SVXPAGE_BACKGROUND.TabPage.Text
 msgid  "Background"
 msgstr ""
 
 #: source/tabpages/backgrnd.src#RID_SVXPAGE_BACKGROUND.FT_SELECTOR.FixedText.Text
 msgid  "A~s"
+msgstr ""
+
+#: source/tabpages/backgrnd.src#RID_SVXPAGE_BACKGROUND.LB_SELECTOR.Default.StringList.item
+msgid  "Color"
 msgstr ""
 
 #: source/tabpages/backgrnd.src#RID_SVXPAGE_BACKGROUND.LB_SELECTOR.Default.StringList.item
@@ -7442,14 +7465,6 @@ msgstr ""
 
 #: source/tabpages/backgrnd.src#RID_SVXPAGE_BACKGROUND.STR_BROWSE.String.Text
 msgid  "Find graphics"
-msgstr ""
-
-#: source/tabpages/backgrnd.src#UNLINKED_IMAGE.#define.Text
-msgid  "Unlinked graphic"
-msgstr ""
-
-#: source/tabpages/backgrnd.src#RID_SVXPAGE_BACKGROUND.LB_SELECTOR.Default.StringList.item
-msgid  "Color"
 msgstr ""
 
 #: source/tabpages/macroass.src#RID_SVXPAGE_EVENTASSIGN.TabPage.Text
@@ -7981,6 +7996,26 @@ msgid  "Spacing"
 msgstr ""
 
 #: source/tabpages/paragrph.src#RID_SVXPAGE_STD_PARAGRAPH.LB_LINEDIST.Default.StringList.item
+msgid  "Single"
+msgstr ""
+
+#: source/tabpages/paragrph.src#RID_SVXPAGE_STD_PARAGRAPH.LB_LINEDIST.Default.StringList.item
+msgid  "1.5 lines"
+msgstr ""
+
+#: source/tabpages/paragrph.src#RID_SVXPAGE_STD_PARAGRAPH.LB_LINEDIST.Default.StringList.item
+msgid  "Double"
+msgstr ""
+
+#: source/tabpages/paragrph.src#RID_SVXPAGE_STD_PARAGRAPH.LB_LINEDIST.Default.StringList.item
+msgid  "Proportional"
+msgstr ""
+
+#: source/tabpages/paragrph.src#RID_SVXPAGE_STD_PARAGRAPH.LB_LINEDIST.Default.StringList.item
+msgid  "At least"
+msgstr ""
+
+#: source/tabpages/paragrph.src#RID_SVXPAGE_STD_PARAGRAPH.LB_LINEDIST.Default.StringList.item
 msgid  "Leading"
 msgstr ""
 
@@ -8038,6 +8073,18 @@ msgstr ""
 
 #: source/tabpages/paragrph.src#RID_SVXPAGE_ALIGN_PARAGRAPH.FT_LASTLINE.FixedText.Text
 msgid  "~Last line"
+msgstr ""
+
+#: source/tabpages/paragrph.src#RID_SVXPAGE_ALIGN_PARAGRAPH.LB_LASTLINE.Default.StringList.item
+msgid  "Default"
+msgstr ""
+
+#: source/tabpages/paragrph.src#RID_SVXPAGE_ALIGN_PARAGRAPH.LB_LASTLINE.Default.StringList.item
+msgid  "Left"
+msgstr ""
+
+#: source/tabpages/paragrph.src#RID_SVXPAGE_ALIGN_PARAGRAPH.LB_LASTLINE.Default.StringList.item
+msgid  "Centered"
 msgstr ""
 
 #: source/tabpages/paragrph.src#RID_SVXPAGE_ALIGN_PARAGRAPH.LB_LASTLINE.Default.StringList.item
@@ -8208,38 +8255,6 @@ msgstr ""
 msgid  "Page Style"
 msgstr ""
 
-#: source/tabpages/paragrph.src#RID_SVXPAGE_STD_PARAGRAPH.LB_LINEDIST.Default.StringList.item
-msgid  "Single"
-msgstr ""
-
-#: source/tabpages/paragrph.src#RID_SVXPAGE_STD_PARAGRAPH.LB_LINEDIST.Default.StringList.item
-msgid  "1.5 lines"
-msgstr ""
-
-#: source/tabpages/paragrph.src#RID_SVXPAGE_STD_PARAGRAPH.LB_LINEDIST.Default.StringList.item
-msgid  "Double"
-msgstr ""
-
-#: source/tabpages/paragrph.src#RID_SVXPAGE_STD_PARAGRAPH.LB_LINEDIST.Default.StringList.item
-msgid  "Proportional"
-msgstr ""
-
-#: source/tabpages/paragrph.src#RID_SVXPAGE_STD_PARAGRAPH.LB_LINEDIST.Default.StringList.item
-msgid  "At least"
-msgstr ""
-
-#: source/tabpages/paragrph.src#RID_SVXPAGE_ALIGN_PARAGRAPH.LB_LASTLINE.Default.StringList.item
-msgid  "Default"
-msgstr ""
-
-#: source/tabpages/paragrph.src#RID_SVXPAGE_ALIGN_PARAGRAPH.LB_LASTLINE.Default.StringList.item
-msgid  "Left"
-msgstr ""
-
-#: source/tabpages/paragrph.src#RID_SVXPAGE_ALIGN_PARAGRAPH.LB_LASTLINE.Default.StringList.item
-msgid  "Centered"
-msgstr ""
-
 #: source/tabpages/textanim.src#RID_SVXPAGE_TEXTANIMATION.TabPage.Text
 msgid  "Animation"
 msgstr ""
@@ -8250,6 +8265,22 @@ msgstr ""
 
 #: source/tabpages/textanim.src#RID_SVXPAGE_TEXTANIMATION.FT_EFFECTS.FixedText.Text
 msgid  "E~ffect"
+msgstr ""
+
+#: source/tabpages/textanim.src#RID_SVXPAGE_TEXTANIMATION.LB_EFFECT.Default.StringList.item
+msgid  "No Effect"
+msgstr ""
+
+#: source/tabpages/textanim.src#RID_SVXPAGE_TEXTANIMATION.LB_EFFECT.Default.StringList.item
+msgid  "Blink"
+msgstr ""
+
+#: source/tabpages/textanim.src#RID_SVXPAGE_TEXTANIMATION.LB_EFFECT.Default.StringList.item
+msgid  "Scroll Through"
+msgstr ""
+
+#: source/tabpages/textanim.src#RID_SVXPAGE_TEXTANIMATION.LB_EFFECT.Default.StringList.item
+msgid  "Scroll Back and Forth"
 msgstr ""
 
 #: source/tabpages/textanim.src#RID_SVXPAGE_TEXTANIMATION.LB_EFFECT.Default.StringList.item
@@ -8322,22 +8353,6 @@ msgstr ""
 
 #: source/tabpages/textanim.src#RID_SVXDLG_TEXT.1.RID_SVXPAGE_TEXTANIMATION.PageItem.Text
 msgid  "Text Animation"
-msgstr ""
-
-#: source/tabpages/textanim.src#RID_SVXPAGE_TEXTANIMATION.LB_EFFECT.Default.StringList.item
-msgid  "No Effect"
-msgstr ""
-
-#: source/tabpages/textanim.src#RID_SVXPAGE_TEXTANIMATION.LB_EFFECT.Default.StringList.item
-msgid  "Blink"
-msgstr ""
-
-#: source/tabpages/textanim.src#RID_SVXPAGE_TEXTANIMATION.LB_EFFECT.Default.StringList.item
-msgid  "Scroll Through"
-msgstr ""
-
-#: source/tabpages/textanim.src#RID_SVXPAGE_TEXTANIMATION.LB_EFFECT.Default.StringList.item
-msgid  "Scroll Back and Forth"
 msgstr ""
 
 #: source/tabpages/measure.src#RID_SVXPAGE_MEASURE.TabPage.Text
@@ -8660,6 +8675,10 @@ msgstr ""
 msgid  " degrees"
 msgstr ""
 
+#: source/tabpages/transfrm.src#_POS_SIZE_TEXT.#define.Text
+msgid  "Position and Size"
+msgstr ""
+
 #: source/tabpages/transfrm.src#RID_SVXDLG_TRANSFORM.TabDialog.Text
 msgid  "Position and Size"
 msgstr ""
@@ -8670,10 +8689,6 @@ msgstr ""
 
 #: source/tabpages/transfrm.src#RID_SVXDLG_TRANSFORM.TAB_CONTROL.RID_SVXPAGE_SLANT.PageItem.Text
 msgid  "Slant & Corner Radius"
-msgstr ""
-
-#: source/tabpages/transfrm.src#_POS_SIZE_TEXT.#define.Text
-msgid  "Position and Size"
 msgstr ""
 
 #: source/tabpages/textattr.src#RID_SVXPAGE_TEXTATTR.TabPage.Text
@@ -9165,11 +9180,35 @@ msgid  "~Effects"
 msgstr ""
 
 #: source/tabpages/chardlg.src#RID_SVXPAGE_CHAR_EFFECTS.LB_EFFECTS2.Default.StringList.item
+msgid  "(Without)"
+msgstr ""
+
+#: source/tabpages/chardlg.src#RID_SVXPAGE_CHAR_EFFECTS.LB_EFFECTS2.Default.StringList.item
+msgid  "Capitals"
+msgstr ""
+
+#: source/tabpages/chardlg.src#RID_SVXPAGE_CHAR_EFFECTS.LB_EFFECTS2.Default.StringList.item
+msgid  "Lowercase"
+msgstr ""
+
+#: source/tabpages/chardlg.src#RID_SVXPAGE_CHAR_EFFECTS.LB_EFFECTS2.Default.StringList.item
+msgid  "Title"
+msgstr ""
+
+#: source/tabpages/chardlg.src#RID_SVXPAGE_CHAR_EFFECTS.LB_EFFECTS2.Default.StringList.item
 msgid  "Small capitals"
 msgstr ""
 
 #: source/tabpages/chardlg.src#RID_SVXPAGE_CHAR_EFFECTS.FT_RELIEF.FixedText.Text
 msgid  "~Relief"
+msgstr ""
+
+#: source/tabpages/chardlg.src#RID_SVXPAGE_CHAR_EFFECTS.LB_RELIEF.Default.StringList.item
+msgid  "(Without)"
+msgstr ""
+
+#: source/tabpages/chardlg.src#RID_SVXPAGE_CHAR_EFFECTS.LB_RELIEF.Default.StringList.item
+msgid  "Embossed"
 msgstr ""
 
 #: source/tabpages/chardlg.src#RID_SVXPAGE_CHAR_EFFECTS.LB_RELIEF.Default.StringList.item
@@ -9381,6 +9420,22 @@ msgid  "Emp~hasis mark"
 msgstr ""
 
 #: source/tabpages/chardlg.src#RID_SVXPAGE_CHAR_EFFECTS.LB_EMPHASIS.default.StringList.item
+msgid  "(Without)"
+msgstr ""
+
+#: source/tabpages/chardlg.src#RID_SVXPAGE_CHAR_EFFECTS.LB_EMPHASIS.default.StringList.item
+msgid  "Dot"
+msgstr ""
+
+#: source/tabpages/chardlg.src#RID_SVXPAGE_CHAR_EFFECTS.LB_EMPHASIS.default.StringList.item
+msgid  "Circle"
+msgstr ""
+
+#: source/tabpages/chardlg.src#RID_SVXPAGE_CHAR_EFFECTS.LB_EMPHASIS.default.StringList.item
+msgid  "Disc"
+msgstr ""
+
+#: source/tabpages/chardlg.src#RID_SVXPAGE_CHAR_EFFECTS.LB_EMPHASIS.default.StringList.item
 msgid  "Accent"
 msgstr ""
 
@@ -9493,6 +9548,14 @@ msgid  "Spacing"
 msgstr ""
 
 #: source/tabpages/chardlg.src#RID_SVXPAGE_CHAR_POSITION.LB_KERNING2.Default.StringList.item
+msgid  "Default"
+msgstr ""
+
+#: source/tabpages/chardlg.src#RID_SVXPAGE_CHAR_POSITION.LB_KERNING2.Default.StringList.item
+msgid  "Expanded"
+msgstr ""
+
+#: source/tabpages/chardlg.src#RID_SVXPAGE_CHAR_POSITION.LB_KERNING2.Default.StringList.item
 msgid  "Condensed"
 msgstr ""
 
@@ -9578,54 +9641,6 @@ msgstr ""
 
 #: source/tabpages/chardlg.src#RID_SVXPAGE_CHAR_TWOLINES.WIN_TWOLINES_PREVIEW.Window.Text
 msgid  "Example"
-msgstr ""
-
-#: source/tabpages/chardlg.src#RID_SVXPAGE_CHAR_EFFECTS.LB_EFFECTS2.Default.StringList.item
-msgid  "(Without)"
-msgstr ""
-
-#: source/tabpages/chardlg.src#RID_SVXPAGE_CHAR_EFFECTS.LB_EFFECTS2.Default.StringList.item
-msgid  "Capitals"
-msgstr ""
-
-#: source/tabpages/chardlg.src#RID_SVXPAGE_CHAR_EFFECTS.LB_EFFECTS2.Default.StringList.item
-msgid  "Lowercase"
-msgstr ""
-
-#: source/tabpages/chardlg.src#RID_SVXPAGE_CHAR_EFFECTS.LB_EFFECTS2.Default.StringList.item
-msgid  "Title"
-msgstr ""
-
-#: source/tabpages/chardlg.src#RID_SVXPAGE_CHAR_EFFECTS.LB_RELIEF.Default.StringList.item
-msgid  "(Without)"
-msgstr ""
-
-#: source/tabpages/chardlg.src#RID_SVXPAGE_CHAR_EFFECTS.LB_RELIEF.Default.StringList.item
-msgid  "Embossed"
-msgstr ""
-
-#: source/tabpages/chardlg.src#RID_SVXPAGE_CHAR_EFFECTS.LB_EMPHASIS.default.StringList.item
-msgid  "(Without)"
-msgstr ""
-
-#: source/tabpages/chardlg.src#RID_SVXPAGE_CHAR_EFFECTS.LB_EMPHASIS.default.StringList.item
-msgid  "Dot"
-msgstr ""
-
-#: source/tabpages/chardlg.src#RID_SVXPAGE_CHAR_EFFECTS.LB_EMPHASIS.default.StringList.item
-msgid  "Circle"
-msgstr ""
-
-#: source/tabpages/chardlg.src#RID_SVXPAGE_CHAR_EFFECTS.LB_EMPHASIS.default.StringList.item
-msgid  "Disc"
-msgstr ""
-
-#: source/tabpages/chardlg.src#RID_SVXPAGE_CHAR_POSITION.LB_KERNING2.Default.StringList.item
-msgid  "Default"
-msgstr ""
-
-#: source/tabpages/chardlg.src#RID_SVXPAGE_CHAR_POSITION.LB_KERNING2.Default.StringList.item
-msgid  "Expanded"
 msgstr ""
 
 #: source/tabpages/border.src#RID_SVXPAGE_BORDER.TabPage.Text
@@ -9817,6 +9832,10 @@ msgid  "Optimal"
 msgstr ""
 
 #: source/tabpages/labdlg.src#RID_SVXPAGE_CAPTION.LB_ANSATZ.3.StringList.item
+msgid  "From top"
+msgstr ""
+
+#: source/tabpages/labdlg.src#RID_SVXPAGE_CAPTION.LB_ANSATZ.3.StringList.item
 msgid  "From left"
 msgstr ""
 
@@ -9868,20 +9887,16 @@ msgstr ""
 msgid  "Left;Middle;Right"
 msgstr ""
 
+#: source/tabpages/labdlg.src#_POS_SIZE_TEXT.#define.Text
+msgid  "Position and Size"
+msgstr ""
+
 #: source/tabpages/labdlg.src#RID_SVXDLG_CAPTION.TabDialog.Text
 msgid  "Callouts"
 msgstr ""
 
 #: source/tabpages/labdlg.src#RID_SVXDLG_CAPTION.TAB_CONTROL.RID_SVXPAGE_CAPTION.PageItem.Text
 msgid  "Callout"
-msgstr ""
-
-#: source/tabpages/labdlg.src#_POS_SIZE_TEXT.#define.Text
-msgid  "Position and Size"
-msgstr ""
-
-#: source/tabpages/labdlg.src#RID_SVXPAGE_CAPTION.LB_ANSATZ.3.StringList.item
-msgid  "From top"
 msgstr ""
 
 #: source/tabpages/tabline.src#RID_SVXPAGE_LINE.TabPage.Text
@@ -10053,7 +10068,15 @@ msgid  "~Type"
 msgstr ""
 
 #: source/tabpages/tabline.src#RID_SVXPAGE_LINE_DEF.LB_TYPE_1.Default.StringList.item
+msgid  "Dot"
+msgstr ""
+
+#: source/tabpages/tabline.src#RID_SVXPAGE_LINE_DEF.LB_TYPE_1.Default.StringList.item
 msgid  "Dash"
+msgstr ""
+
+#: source/tabpages/tabline.src#RID_SVXPAGE_LINE_DEF.LB_TYPE_2.Default.StringList.item
+msgid  "Dot"
 msgstr ""
 
 #: source/tabpages/tabline.src#RID_SVXPAGE_LINE_DEF.LB_TYPE_2.Default.StringList.item
@@ -10182,12 +10205,4 @@ msgstr ""
 
 #: source/tabpages/tabline.src#RID_SVXDLG_LINE.TAB_CONTROL.RID_SVXPAGE_LINEEND_DEF.PageItem.Text
 msgid  "Arrow Styles"
-msgstr ""
-
-#: source/tabpages/tabline.src#RID_SVXPAGE_LINE_DEF.LB_TYPE_1.Default.StringList.item
-msgid  "Dot"
-msgstr ""
-
-#: source/tabpages/tabline.src#RID_SVXPAGE_LINE_DEF.LB_TYPE_2.Default.StringList.item
-msgid  "Dot"
 msgstr ""

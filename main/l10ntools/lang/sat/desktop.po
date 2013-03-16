@@ -32,8 +32,8 @@ msgstr ""
 
 
 #: source/app/desktop.src#STR_RECOVER_QUERY.String.Text
-msgid  "Should the file "$1" be restored?"
-msgstr ""
+msgid  "Should the file \"$1\" be restored?"
+msgstr "रेत् \"$1\" माड़ाङ जायगा रे इदी सानाम काना?"
 
 #: source/app/desktop.src#STR_RECOVER_TITLE.String.Text
 msgid  "File Recovery"
@@ -41,15 +41,15 @@ msgstr "रेत दोहड़ा ञाम"
 
 #: source/app/desktop.src#STR_RECOVER_PREPARED.WarningBox.Message
 msgid  "An unrecoverable error has occurred.\n\nAll modified files have been saved and can\nprobably be recovered at program restart."
-msgstr ""
+msgstr "मित् बाङ ञाम दोहड़ा लेका भुल हुयेना .\n\nजोतो सुही वाकान रेत सांचाव केदा आर\nपालेन प्रोग्राम दोहड़ा एहोब जोहोक् आरहों ञाम रुवा़ड़ दाड़ेयाक् आ."
 
 #: source/app/desktop.src#STR_BOOTSTRAP_ERR_CANNOT_START.String.Text
 msgid  "The application cannot be started. "
 msgstr "नेहोर साकाम बाङ एहोप दाड़ेयाक् आ."
 
 #: source/app/desktop.src#STR_BOOTSTRAP_ERR_DIR_MISSING.String.Text
-msgid  "The configuration directory "$1" could not be found."
-msgstr ""
+msgid  "The configuration directory \"$1\" could not be found."
+msgstr "तेयाराक् उलुदुक्\"$1\" बाङ ञाम दाड़ेयाक् आ."
 
 #: source/app/desktop.src#STR_BOOTSTRAP_ERR_PATH_INVALID.String.Text
 msgid  "The installation path is invalid."
@@ -64,16 +64,16 @@ msgid  "An internal error occurred."
 msgstr "भितरी रे भुल हुयेना."
 
 #: source/app/desktop.src#STR_BOOTSTRAP_ERR_FILE_CORRUPT.String.Text
-msgid  "The configuration file "$1" is corrupt."
-msgstr ""
+msgid  "The configuration file \"$1\" is corrupt."
+msgstr "तेयाराकान रेत् \"$1\" रा़पुद आकाना ."
 
 #: source/app/desktop.src#STR_BOOTSTRAP_ERR_FILE_MISSING.String.Text
-msgid  "The configuration file "$1" was not found."
-msgstr ""
+msgid  "The configuration file \"$1\" was not found."
+msgstr "तेयाराकान रेत्\"$1\"बाङ ञाम लेन तांहेना."
 
 #: source/app/desktop.src#STR_BOOTSTRAP_ERR_NO_SUPPORT.String.Text
-msgid  "The configuration file "$1" does not support the current version."
-msgstr ""
+msgid  "The configuration file \"$1\" does not support the current version."
+msgstr "तेयाराकान रेत् \"$1\" नितोक् हा़लियाक् बाय गोड़ोवाक् आ ."
 
 #: source/app/desktop.src#STR_BOOTSTRAP_ERR_LANGUAGE_MISSING.String.Text
 msgid  "The user interface language cannot be determined."
@@ -93,11 +93,11 @@ msgstr ""
 
 #: source/app/desktop.src#STR_ASK_START_SETUP_MANUALLY.String.Text
 msgid  "Start the setup application to repair the installation from the CD or the folder containing the installation packages."
-msgstr ""
+msgstr "CD बाङखान पोटोम रे मेनाक् बोहाल घेंट खोन बोहाल तेयार आ़रु ला़गित नेहोर साकाम सेट अप एहोब मे "
 
 #: source/app/desktop.src#STR_CONFIG_ERR_SETTINGS_INCOMPLETE.String.Text
 msgid  "The startup settings for accessing the central configuration are incomplete. "
-msgstr ""
+msgstr "ताला तेयार आ़तुर आदेर ला़गित् एतोहोब साजाव बाङ पुरा़वा. "
 
 #: source/app/desktop.src#STR_CONFIG_ERR_CANNOT_CONNECT.String.Text
 msgid  "A connection to the central configuration could not be established. "
@@ -105,7 +105,7 @@ msgstr "ताला तेयार रे जोड़ाव बाङ था�
 
 #: source/app/desktop.src#STR_CONFIG_ERR_RIGHTS_MISSING.String.Text
 msgid  "You cannot access the central configuration because of missing access rights. "
-msgstr ""
+msgstr "आम ताला तेयार बाम आ़तुर आदेर दाड़ेयाक् आ चेदाक् जे आ़तुर आदेर होक आत् आकाना. "
 
 #: source/app/desktop.src#STR_CONFIG_ERR_ACCESS_GENERAL.String.Text
 msgid  "A general error occurred while accessing your central configuration. "
@@ -113,11 +113,11 @@ msgstr "आमाक् ताला तेयार आ़तुर आदे�
 
 #: source/app/desktop.src#STR_CONFIG_ERR_NO_WRITE_ACCESS.String.Text
 msgid  "The changes to your personal settings cannot be stored centrally because of missing access rights. "
-msgstr ""
+msgstr "आमाक् निजेराक् साजाव बोदोल ताला रे बाय जोगाव दाड़ेयाक् आ चेदाक् जे आ़तुर आदेर होक आद आकाना. "
 
 #: source/app/desktop.src#STR_BOOTSTRAP_ERR_CFG_DATAACCESS.String.Text
 msgid  "%PRODUCTNAME cannot be started due to an error in accessing the %PRODUCTNAME configuration data.\n\nPlease contact your system administrator."
-msgstr ""
+msgstr "%PRODUCTNAME एहोब बाङ दाड़ेयाक् आ  कारोन %PRODUCTNAME रेयाक् तेयार सा़खिया़त आ़तुर आदेर जोहोक मित भुल हुयेना.\n\nदाया काते आमिच् सेस्टेम सासोनिच् ञापामेम."
 
 #: source/app/desktop.src#STR_INTERNAL_ERRMSG.String.Text
 msgid  "The following internal error has occurred: "
@@ -125,7 +125,7 @@ msgstr "नोवा को भितरी भुल हुय आकाना:
 
 #: source/app/desktop.src#QBX_USERDATALOCKED.QueryBox.Message
 msgid  "Either another instance of %PRODUCTNAME is accessing your personal settings or your personal settings are locked.\nSimultaneous access can lead to inconsistencies in your personal settings. Before continuing, you should make sure user '$u' closes %PRODUCTNAME on host '$h'.\n\nDo you really want to continue?"
-msgstr ""
+msgstr "बाङ मा %PRODUCTNAME रेयाक् एटाक् ओबोसता आमाक् निजेराक् साजाव ए आ़तुर आदेरा आर बाङ आमाक् निजेराक् साजाव कुलुप आकाना.\nइना़ ओकतो रेगे आ़तुर आदेर आमाक् निजेराक् साजाव रे बाङ जोड़ोगाक् ए आ़युर दाड़ेयाक् आ. लेताड़ लाहा, आम निसटा़ ला़कती बेभारिच् '$u' बोंदा  %PRODUCTNAME  '$h' ओड़ाक् रे.\n\nचेत् आम सा़री गे लेताड़ सानाम काना?"
 
 #: source/app/desktop.src#STR_TITLE_USERDATALOCKED.String.Text
 msgid  "%PRODUCTNAME %PRODUCTVERSION"
@@ -149,11 +149,11 @@ msgstr "होर बेबोसतायिच बाय ञामोक् �
 
 #: source/app/desktop.src#STR_BOOSTRAP_ERR_NOTENOUGHDISKSPACE.String.Text
 msgid  "%PRODUCTNAME user installation could not be completed due to insufficient free disk space. Please free more disc space at the following location and restart %PRODUCTNAME:\n\n"
-msgstr ""
+msgstr "%PRODUCTNAME डिस्क रे आ़डी कोम फांका जायगा मेनाक् खातिर बेभारिजाक बोहाल बाङ पुरा़व दाड़ेयाक् आ. दाया काते नोवा सेत् रे ढेर डिस्क जायगा फांकाय मे आर  %PRODUCTNAME: दोहड़ा एहोब मे\n\n"
 
 #: source/app/desktop.src#STR_BOOSTRAP_ERR_NOACCESSRIGHTS.String.Text
 msgid  "%PRODUCTNAME user installation could not be processed due to missing access rights. Please make sure that you have sufficient access rights for the following location and restart %PRODUCTNAME:\n\n"
-msgstr ""
+msgstr "%PRODUCTNAME आ़तुर आदेर होक आद आकान खातिर बेभार बोहाल बाङ का़मी दाड़ेयाक् आ. दाया काते नोवा गोटाय मे जे आम ठेन ढेर ओकोच् आ़तुर आदेर होक नोवा लागित् मेनाक् आ आर %PRODUCTNAME: दोहड़ा एहोब मे\n\n"
 
 #: source/deployment/gui/dp_gui_versionboxes.src#RID_WARNINGBOX_VERSION_LESS.WarningBox.Message
 msgid  "You are about to install version $NEW of the extension \'$NAME\'.\nThe newer version $DEPLOYED is already installed.\nClick \'OK\' to replace the installed extension.\nClick \'Cancel\' to stop the installation."
@@ -661,7 +661,7 @@ msgstr "पुथी ओड़ाक् ञुतुम बाङ गोटा �
 
 #: source/deployment/registry/script/dp_script.src#RID_STR_LIBNAME_ALREADY_EXISTS.String.Text
 msgid  "This library name already exists. Please choose a different name."
-msgstr ""
+msgstr "पुथी ओड़ाक् ञुतुम माड़ाङ खोन मेनाक् आ. दाया काते मित् भेगार ञुतुम बाछाव मे."
 
 #: source/deployment/registry/sfwk/dp_sfwk.src#RID_STR_SFWK_LIB.String.Text
 msgid  "%MACROLANG Library"
@@ -672,15 +672,15 @@ msgid  "Extension Software License Agreement of $NAME:"
 msgstr ""
 
 #: source/deployment/unopkg/unopkg.src#RID_STR_UNOPKG_ACCEPT_LIC_2.String.Text
-msgid  "Read the complete License Agreement displayed above. Accept the License Agreement by typing "yes" on the console then press the Return key. Type "no" to decline and to abort the extension setup."
+msgid  "Read the complete License Agreement displayed above. Accept the License Agreement by typing \"yes\" on the console then press the Return key. Type \"no\" to decline and to abort the extension setup."
 msgstr ""
 
 #: source/deployment/unopkg/unopkg.src#RID_STR_UNOPKG_ACCEPT_LIC_3.String.Text
-msgid  "[Enter "yes" or "no"]:"
+msgid  "[Enter \"yes\" or \"no\"]:"
 msgstr ""
 
 #: source/deployment/unopkg/unopkg.src#RID_STR_UNOPKG_ACCEPT_LIC_4.String.Text
-msgid  "Your input was not correct. Please enter "yes" or "no":"
+msgid  "Your input was not correct. Please enter \"yes\" or \"no\":"
 msgstr ""
 
 #: source/deployment/unopkg/unopkg.src#RID_STR_UNOPKG_ACCEPT_LIC_YES.String.Text
@@ -737,7 +737,7 @@ msgstr "ञुतुम ओल"
 
 #: source/migration/wizard.src#STR_WELCOME_MIGRATION.String.Text
 msgid  "This wizard will guide you through the license agreement, the transfer of user data from %OLD_VERSION and the registration of %PRODUCTNAME.\n\nClick 'Next' to continue."
-msgstr ""
+msgstr "लाइसेंस सिका़र साकाम लेकाते नोवा बिजार्ड आमे उदुक् आमा,  %OLD_VERSION खोन बेभारिजाक् सा़खिया़त रेयाक् उचा़ड़ आर  %PRODUCTNAME रेयाक् ञुतुम ओल.\n\nलेताड़ ला़गित्  'Next' ओताय मे."
 
 #: source/migration/wizard.src#STR_WELCOME_WITHOUT_LICENSE.String.Text
 msgid  "This wizard will guide you through the registration of %PRODUCTNAME.\n\nClick 'Next' to continue."
@@ -753,7 +753,7 @@ msgstr ""
 
 #: source/migration/wizard.src#ERRBOX_REG_NOSYSBROWSER.ErrorBox.Message
 msgid  "An error occurred in starting the web browser.\nPlease check the %PRODUCTNAME and web browser settings."
-msgstr ""
+msgstr "वेब पानतेयाक् एतोहोप जोहोक् रेयाक् भुल.\nदाया काते %PRODUCTNAME आर वेब पानतेयाक् साजाव ञेल बिडाव."
 
 #: source/migration/wizard.src#QB_ASK_DECLINE.QueryBox.Message
 msgid  "Do you really want to decline?"
@@ -765,7 +765,7 @@ msgstr "%PRODUCTNAME %PRODUCTVERSION रे आमाक् सा़गुन �
 
 #: source/migration/wizard.src#TP_WELCOME.FT_WELCOME_BODY.FixedText.Text
 msgid  "This wizard will guide you through the license agreement and the registration of %PRODUCTNAME.\n\nClick 'Next' to continue."
-msgstr ""
+msgstr "लाइसेंस सिका़र साकाम लेकाते नोवा बिजार्ड आमे उदुक् आमा आर  %PRODUCTNAME.रेयाक् ञुतुम ओल होचो.\n\nलेताड़ ला़गित् 'Next' ओताय मे."
 
 #: source/migration/wizard.src#TP_LICENSE.FT_LICENSE_HEADER.FixedText.Text
 msgid  "Please follow these steps to accept the license"
@@ -777,7 +777,7 @@ msgstr "1."
 
 #: source/migration/wizard.src#TP_LICENSE.FT_LICENSE_BODY_1_TXT.FixedText.Text
 msgid  "View the complete License Agreement. Please use the scrollbar or the '%PAGEDOWN' button in this dialog to view the entire license text."
-msgstr ""
+msgstr "लाइसेंस सिका़र साकाम पुरा़ ञेल मे. दाया काते पानतेयाक् हुरका़ड़ बेभार मे बाङखान '%PAGEDOWN' बुता़म लाइसेंस ओनोल रेयाक् सानाम ञेल उदुक् आमा."
 
 #: source/migration/wizard.src#TP_LICENSE.FT_LICENSE_BODY_2.FixedText.Text
 msgid  "2."
@@ -805,7 +805,7 @@ msgstr "निजेराके सा़खियात् उचाड़ म
 
 #: source/migration/wizard.src#TP_MIGRATION.FT_MIGRATION_BODY.FixedText.Text
 msgid  "Most personal data from %OLDPRODUCT installation can be reused in %PRODUCTNAME %PRODUCTVERSION.\n\nIf you do not want to reuse any settings in %PRODUCTNAME %PRODUCTVERSION, unmark the check box."
-msgstr ""
+msgstr "ढेर काय ते %OLDPRODUCT खोन निजेराक् सा़खिया़त बाहाल ला़गित्  %PRODUCTNAME %PRODUCTVERSION रे दोहड़ा बेभार हुय दाड़ेयाक् आ.\n\nजुदी आम %PRODUCTNAME %PRODUCTVERSION रे जाहान साजाव दोहड़ा बाय बेभार सानाम काना, ञेल बिडा़व बाकसा रेयाक् चिनहा़ ओचोग मे."
 
 #: source/migration/wizard.src#TP_MIGRATION.CB_MIGRATION.CheckBox.Text
 msgid  "Transfer personal data"
@@ -829,7 +829,7 @@ msgstr "दाया काते आमाक् पुरा़ ञुतु�
 
 #: source/migration/wizard.src#TP_USER.FT_USER_BODY.FixedText.Text
 msgid  "The user name will be used in the document properties, templates and when you record changes made to documents."
-msgstr ""
+msgstr "दोलिल गुन, चिता़र रे बेभारिजाक् ञुतुम  आर तिन रे आम दोलिल रे रिकोर्ड एम बोदोला बेभार दाड़ेयाक् आ."
 
 #: source/migration/wizard.src#TP_USER.FT_USER_FIRST.FixedText.Text
 msgid  "~First name"
@@ -853,7 +853,7 @@ msgstr "%PRODUCTNAME ञुतुम ओल होचो"
 
 #: source/migration/wizard.src#TP_REGISTRATION.FT_REGISTRATION_BODY.FixedText.Text
 msgid  "You now have the opportunity to register as a %PRODUCTNAME user. Registration is voluntary and is without obligation.\n\nIf you register, we can inform you about new developments concerning this product."
-msgstr ""
+msgstr "नितोक् आम  %PRODUCTNAME रे बेभारिच् लेका ञुतुम ओल होचो रेयाक् दांव एम ञाम आकादा. ञुतुम ओल होचो दो साना आर बेगोर कोरतोब गेया.\n\nजुदी आम ञुतुम एम ओल, आले आम नावा उथना़व बाबोत ते खोबोर ले एम दाड़े यामा."
 
 #: source/migration/wizard.src#TP_REGISTRATION.RB_REGISTRATION_NOW.RadioButton.Text
 msgid  "I want to register ~now"
@@ -869,7 +869,7 @@ msgstr "इञ ञुतुम बाय ओल होचो सानाञ क
 
 #: source/migration/wizard.src#TP_REGISTRATION.FT_REGISTRATION_END.FixedText.Text
 msgid  "We hope you enjoy working with %PRODUCTNAME.\n\nTo exit the wizard, click 'Finish'."
-msgstr ""
+msgstr "आले आंसाले जे आम %PRODUCTNAME सांव का़मी ला़गित् एम कुसी आकाना.\n\nविजार्ड खोन बाहरे ओडोक् ला़गित्  'मुचा़त' रे ओताय मे."
 
 #: win32/source/rebase/rebasegui.ulf#%APP_TITLE%
 msgid  "Installation Status"
@@ -886,6 +886,10 @@ msgstr ""
 #: win32/source/rebase/rebasegui.ulf#%MSG_NO_INSTALLATION_FOUND%
 msgid  "Cannot find Office installation."
 msgstr ""
+
+#: win32/source/setup/setup.ulf#%APP_TITLE%
+msgid  "Setup"
+msgstr " सेटअप"
 
 #: win32/source/setup/setup.ulf#%APP_PROD_TITLE%
 msgid  "The %PRODUCTNAME Setup"
@@ -905,7 +909,7 @@ msgstr "सेटअप बा़डरा लेत् ताहें का�
 
 #: win32/source/setup/setup.ulf#%REQUIRES_ADMIN_PRIV%
 msgid  "Administrator privileges are required for upgrading the Windows Installer."
-msgstr ""
+msgstr "ञेनेलोम बोहालाक् लाहानती ला़गित् सासोनिजाक् होक् लाकती काना."
 
 #: win32/source/setup/setup.ulf#%FILE_NOT_FOUND%
 msgid  "Setup was unable to find the file '%s'."
@@ -913,7 +917,7 @@ msgstr "सेटअप '%s' रेत् बाङ ञाम दाड़ेय
 
 #: win32/source/setup/setup.ulf#%INVALID_PARAM%
 msgid  "Invalid command line option '%s'. Please use '/?' for help."
-msgstr ""
+msgstr "बाङ बाताव हुकुम गार एटागाक् हुदिस '%s'. दाया काते बेभार मे  '/?' गोड़ो ला़गित् ते ."
 
 #: win32/source/setup/setup.ulf#%SETUP_TO_OLD%
 msgid  "This package requires at least the version '%s' of the Windows Installer. \nYou have Windows Installer '%s' on your system!"
@@ -925,7 +929,7 @@ msgstr ""
 
 #: win32/source/setup/setup.ulf#%USAGE%
 msgid  "Usage:\n   /? :  Shows this dialog.\n   /a :  Performs an administrative installation.\n   /j[u|m] :  Performs an advertising installation.\n   /q[n] : Do not show any user interface (silent mode).\n"
-msgstr ""
+msgstr "Usage:\n   /? :  नोवा काथा उदुग मे.\n   /a :  मित् सासोनिजाक् बोहाल हुय ओचोय मे.\n   /j[u|m] :  मित इसतियार बोहाल हुय ओचोय मे.\n   /q[n] : जांहांय बेभारिजाक् भितरी फांक आलोम उदुगा (थिर ओबोसता).\n"
 
 #: win32/source/setup/setup.ulf#%ALREADY_RUNNING%
 msgid  "There is already a setup process running."
@@ -1046,7 +1050,3 @@ msgstr "चीनी (सरलीकृत)"
 #: win32/source/setup/setup.ulf#%LANGUAGE_PT_PT%
 msgid  "Portuguese (Portugal)"
 msgstr "पोर्चुगीस (पोर्चुगल)"
-
-#: win32/source/setup/setup.ulf#%APP_TITLE%
-msgid  "Setup"
-msgstr " सेटअप"

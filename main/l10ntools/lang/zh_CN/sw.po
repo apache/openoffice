@@ -725,7 +725,7 @@ msgstr "这不是 WinWord6 文件。"
 
 #: source/ui/app/error.src#RID_SW_ERRHDL.ERR_CODE ( ERRCODE_CLASS_READ , ERR_WW6_FASTSAVE_ERR ).String.Text
 msgid  "This file was saved with WinWord in 'Fast Save' mode. Please unmark the WinWord option 'Allow Fast Saves' and save the file again."
-msgstr ""
+msgstr "此文件是通过 WinWord “快速保存”方式保存的。请取消 WinWord 选项“允许快速保存”，然后再次保存此文件。"
 
 #: source/ui/app/error.src#RID_SW_ERRHDL.ERR_CODE ( ERRCODE_CLASS_READ , ERR_FORMAT_ROWCOL ).String.Text
 msgid  "File format error found at $(ARG1)(row,col)."
@@ -741,7 +741,7 @@ msgstr "这不是 WinWord97 文件。"
 
 #: source/ui/app/error.src#RID_SW_ERRHDL.ERR_CODE ( ERRCODE_CLASS_READ , ERR_FORMAT_FILE_ROWCOL ).String.Text
 msgid  "Format error discovered in the file in sub-document $(ARG1) at $(ARG2)(row,col)."
-msgstr ""
+msgstr "在文件的子文档 $(ARG1) 中发现格式错误，位置在 $(ARG2)（行，列）。"
 
 #: source/ui/app/error.src#RID_SW_ERRHDL.ERR_CODE ( ERRCODE_CLASS_WRITE , ERR_SWG_WRITE_ERROR ).String.Text
 msgid  "Error writing file."
@@ -789,7 +789,7 @@ msgstr "无法读取绘图。"
 
 #: source/ui/app/error.src#RID_SW_ERRHDL.WARN_CODE ( ERRCODE_CLASS_READ , WARN_WW6_FASTSAVE_ERR ).String.Text
 msgid  "This file was saved with WinWord in 'Fast Save' mode. Please unmark the WinWord option 'Allow Fast Saves' and save the file again."
-msgstr ""
+msgstr "此文件是通过 WinWord “快速保存”方式保存的。请取消 WinWord 选项“允许快速保存”，然后再次保存此文件。"
 
 #: source/ui/app/error.src#RID_SW_ERRHDL.WARN_CODE ( ERRCODE_CLASS_READ , WARN_SWG_FEATURES_LOST ).String.Text
 msgid  "Not all attributes could be read."
@@ -817,7 +817,7 @@ msgstr "无法完全保存文档。"
 
 #: source/ui/app/error.src#RID_SW_ERRHDL.WARN_CODE ( ERRCODE_CLASS_WRITE , WARN_SWG_HTML_NO_MACROS).String.Text
 msgid  "This HTML document contains %PRODUCTNAME Basic macros.\nThey were not saved with the current export settings."
-msgstr ""
+msgstr "这个HTML文档含有 %PRODUCTNAME Basic 宏。\n无法使用当前的导出设置来保存这些宏。"
 
 #: source/ui/app/error.src#RID_SW_ERRHDL.ERR_CODE ( ERRCODE_CLASS_WRITE , WARN_WRITE_ERROR_FILE ).String.Text
 msgid  "Error in writing sub-document $(ARG1)."
@@ -825,7 +825,7 @@ msgstr "写入子文档 $(ARG1) 时出错。"
 
 #: source/ui/app/error.src#RID_SW_ERRHDL.ERR_CODE ( ERRCODE_CLASS_WRITE , WARN_FORMAT_FILE_ROWCOL ).String.Text
 msgid  "Format error discovered in the file in sub-document $(ARG1) at $(ARG2)(row,col)."
-msgstr ""
+msgstr "在文件的子文档 $(ARG1) 中发现格式错误，位置在 $(ARG2)（行，列）。"
 
 #: source/ui/app/app.src#STR_PRINT_MERGE_MACRO.String.Text
 msgid  "Print form letters"
@@ -1076,8 +1076,8 @@ msgid  "Adapt Objects..."
 msgstr "调整对象..."
 
 #: source/ui/app/app.src#MSG_COMCORE_ASKSEARCH.QueryBox.Message
-msgid  "To proceed with this action, you must first turn off the "undo" function. Do you want to turn off the "undo" function?"
-msgstr ""
+msgid  "To proceed with this action, you must first turn off the \"undo\" function. Do you want to turn off the \"undo\" function?"
+msgstr "要继续此操作，必须先关闭“撤消”功能。\n是否要关闭“撤消”功能？"
 
 #: source/ui/app/app.src#STR_TABLE_DEFNAME.String.Text
 msgid  "Table"
@@ -1109,15 +1109,15 @@ msgstr "空白页面"
 
 #: source/ui/app/app.src#MSG_CLPBRD_CLEAR.QueryBox.Message
 msgid  "You have a large amount of data saved in the clipboard.\nShould the clipboard contents remain available for other applications?"
-msgstr ""
+msgstr "您将一个较大的数据复制到剪贴板。\n您想要让其他的应用程序也能够使用这个数据吗？"
 
 #: source/ui/app/app.src#MSG_SAVE_HTML_QUERY.QueryBox.Message
 msgid  "Conversion into HTML format \nmay cause information loss. \nDo you want to save the document?"
-msgstr ""
+msgstr "文件转换成 HTML 格式\n可能会引起信息丢失。\n是否要保存这个文件？"
 
 #: source/ui/app/app.src#MSG_SAVEAS_HTML_QUERY.QueryBox.Message
 msgid  "The source code can only be displayed if the document is saved in HTML format.\nWould you like to save the document as HTML?"
-msgstr ""
+msgstr "只有当文档保存成 HTML 格式时，才能够显示源代码。\n要将文档保存为 HTML 格式吗？"
 
 #: source/ui/app/app.src#STR_ABSTRACT_TITLE.String.Text
 msgid  "Abstract: "
@@ -1161,11 +1161,11 @@ msgstr "未知作者"
 
 #: source/ui/app/app.src#MSG_DISABLE_UNDO_QUESTION.WarningBox.Message
 msgid  "This action deletes the list of actions that can be undone. Previous changes made to the document are still valid, but cannot be undone. Do you want to continue formatting?"
-msgstr ""
+msgstr "该操作会删除撤消操作列表。先前对文档进行的修改仍然有效，但是不能被撤消。是否要继续执行格式化？"
 
 #: source/ui/app/app.src#MSG_PRINT_AS_MERGE.QueryBox.Message
 msgid  "Your document contains address database fields. Do you want to print a form letter?"
-msgstr ""
+msgstr "您的文档含有一个通讯簿数据字段。要采用邮件合并方式打印？"
 
 #: source/ui/app/app.src#DLG_MERGE_SOURCE_UNAVAILABLE.ST_MERGE_SOURCE_UNAVAILABLE.FixedText.Text
 msgid  "The data source \'%1\' was not found. Thus the connection to the data source could not be established.\n\nPlease check the connections settings."
@@ -1177,7 +1177,7 @@ msgstr "检查连接设置..."
 
 #: source/ui/app/app.src#MSG_DATA_SOURCES_UNAVAILABLE.WarningBox.Message
 msgid  "No data source has been set up yet. You need a data source, such as a database, to supply data (for example, names and addresses) for the fields."
-msgstr ""
+msgstr "还没有建立数据库。您需要一个例如含有姓名、地址等字段的数据库。"
 
 #: source/ui/app/app.src#RID_MODULE_TOOLBOX.String.Text
 msgid  "Function Bar (viewing mode)"
@@ -1193,7 +1193,7 @@ msgstr "大纲编号"
 
 #: source/ui/app/app.src#MSG_DISABLE_READLINE_QUESTION.WarningBox.Message
 msgid  "In the current document, changes are being recorded but not shown as such. In large documents, delays can occur when the document is edited. Do you want to show the changes to avoid delays?"
-msgstr ""
+msgstr "当前文档中的修改已经被记录，但是并没有立刻显示出来。在编辑大文档时会发生延迟的现象。是否要显示修改以避免延迟？"
 
 #: source/ui/app/mn.src#MN_TXT.FN_FORMAT_PAGE_DLG.MenuItem.Text
 msgid  "Pa~ge..."
@@ -2041,7 +2041,7 @@ msgstr "[无]"
 
 #: source/ui/chrdlg/chrdlg.src#MSG_ILLEGAL_PAGENUM.InfoBox.Message
 msgid  "Page numbers cannot be applied to the current page.  Even numbers can be used on left pages, odd numbers on right pages."
-msgstr ""
+msgstr "无法应用页码到当前页。偶数页码显示在左页上，奇数页码显示在右页上。"
 
 #: source/ui/chrdlg/swbreak.src#DLG_BREAK.ModalDialog.Text
 msgid  "Insert Break"
@@ -2209,7 +2209,7 @@ msgstr "图片和对象(~P)"
 
 #: source/ui/config/optdlg.src#TP_OPTPRINT_PAGE.CB_CTRLFLD.CheckBox.Text
 msgid  "Form control~s"
-msgstr "窗体控件(~S)"
+msgstr "表单控件(~S)"
 
 #: source/ui/config/optdlg.src#TP_OPTPRINT_PAGE.CB_BACKGROUND.CheckBox.Text
 msgid  "Page ba~ckground"
@@ -2229,7 +2229,7 @@ msgstr "文字占位符(~P)"
 
 #: source/ui/config/optdlg.src#TP_OPTPRINT_PAGE.FL_2.FixedLine.Text
 msgid  "Pages"
-msgstr "页面"
+msgstr "页"
 
 #: source/ui/config/optdlg.src#TP_OPTPRINT_PAGE.CB_LEFTP.CheckBox.Text
 msgid  "~Left pages"
@@ -2797,7 +2797,7 @@ msgstr "<用户设置>"
 
 #: source/ui/config/optcomp.src#TP_OPTCOMPATIBILITY_PAGE.STR_QRYBOX_USEASDEFAULT.String.Text
 msgid  "Do you want to change the compatibility options of the default template?\nThis will affect all new documents based on the default template."
-msgstr ""
+msgstr "是否要修改默认模板的兼容选项？\n这将影响所有基于默认模板的新文档。"
 
 #: source/ui/config/optcomp.src#TP_OPTCOMPATIBILITY_PAGE.STR_PRINTER_METRICS.String.Text
 msgid  "Use printer metrics for document formatting"
@@ -2841,7 +2841,7 @@ msgstr "定位对象时考虑环绕样式"
 
 #: source/ui/config/optcomp.src#TP_OPTCOMPATIBILITY_PAGE.STR_EXPAND_WORDSPACE.String.Text
 msgid  "Expand word space on lines with manual line breaks in justified paragraphs"
-msgstr ""
+msgstr "在两端对齐的段落中用手动换行符来扩展各行的字间距"
 
 #: source/ui/config/optload.src#TP_OPTLOAD_PAGE.FL_UPDATE.FixedLine.Text
 msgid  "Update"
@@ -2893,11 +2893,11 @@ msgstr "为文字网格使用方格纸模式"
 
 #: source/ui/config/optload.src#TP_OPTCAPTION_PAGE.TabPage.Text
 msgid  "Caption"
-msgstr "题注"
+msgstr "标题"
 
 #: source/ui/config/optload.src#TP_OPTCAPTION_PAGE.FT_OBJECTS.FixedText.Text
 msgid  "Add captions automatically\nwhen inserting:"
-msgstr ""
+msgstr "插入时\n自动添加标题："
 
 #: source/ui/config/optload.src#TP_OPTCAPTION_PAGE.FT_ORDER.FixedText.Text
 msgid  "Caption order"
@@ -3129,7 +3129,7 @@ msgstr "失败"
 
 #: source/ui/config/mailconfigpage.src#DLG_MM_TESTACCOUNTSETTINGS.ST_ERROR_SERVER.String.Text
 msgid  "%PRODUCTNAME could not connect to the outgoing mail server. Check your system's settings and the settings in %PRODUCTNAME. Check the server name, the port and the secure connections settings"
-msgstr ""
+msgstr "%PRODUCTNAME 无法连接到发送邮件服务器。请检查您的系统设置及 %PRODUCTNAME 中的设置。请检查服务器名称、端口及安全连接设置"
 
 #: source/ui/config/mailconfigpage.src#DLG_MM_SERVERAUTHENTICATION.ModalDialog.Text
 msgid  "Server Authentication"
@@ -3157,7 +3157,7 @@ msgstr "密码(~P)"
 
 #: source/ui/config/mailconfigpage.src#DLG_MM_SERVERAUTHENTICATION.RB_SMPTAFTERPOP.RadioButton.Text
 msgid  "The outgoing mail server uses the same authentication as the ~incoming mail server. Enter the settings of the incoming mail server."
-msgstr ""
+msgstr "发送邮件服务器使用与接收邮件服务器相同的验证信息。输入接收邮件服务器的设置(~I)。"
 
 #: source/ui/config/mailconfigpage.src#DLG_MM_SERVERAUTHENTICATION.FT_INCOMINGSERVER.FixedText.Text
 msgid  "Incoming mail server:"
@@ -3197,7 +3197,7 @@ msgstr "选择地址列表"
 
 #: source/ui/dbui/addresslistdialog.src#DLG_MM_ADDRESSLISTDIALOG.FI_DESCRIPTION.FixedText.Text
 msgid  "Select an address list. Click '%1' to select recipients from a different list. If you do not have an address list you can create one by clicking '%2'."
-msgstr ""
+msgstr "选择地址列表。单击 %1 以从其他列表中选择收件人。如果您没有地址列表，可通过单击 %2 创建一个地址列表。"
 
 #: source/ui/dbui/addresslistdialog.src#DLG_MM_ADDRESSLISTDIALOG.FT_LIST.FixedText.Text
 msgid  "Your recipients are currently selected from:"
@@ -3249,7 +3249,7 @@ msgstr "1."
 
 #: source/ui/dbui/mmaddressblockpage.src#DLG_MM_ADDRESSBLOCK_PAGE.FI_ADDRESSLIST.FixedText.Text
 msgid  "Select the address list containing the address data you want to use. This data is needed to create the address block."
-msgstr ""
+msgstr "选择包含所要使用的地址数据的地址列表。创建地址块需要此数据。"
 
 #: source/ui/dbui/mmaddressblockpage.src#DLG_MM_ADDRESSBLOCK_PAGE.PB_ADDRESSLIST.PushButton.Text
 msgid  "Select A~ddress List..."
@@ -3285,7 +3285,7 @@ msgstr "3."
 
 #: source/ui/dbui/mmaddressblockpage.src#DLG_MM_ADDRESSBLOCK_PAGE.FI_MATCH_FIELDS.FixedText.Text
 msgid  "Match the field name used in the mail merge to the column headers in your data source."
-msgstr ""
+msgstr "使邮件合并中使用的字段名与数据源中的列标题相匹配。"
 
 #: source/ui/dbui/mmaddressblockpage.src#DLG_MM_ADDRESSBLOCK_PAGE.PB_ASSIGN.PushButton.Text
 msgid  "Match ~Fields..."
@@ -3346,6 +3346,10 @@ msgstr "总是包括国家/地区(~A)"
 #: source/ui/dbui/mmaddressblockpage.src#DLG_MM_SELECTADDRESSBLOCK.RB_DEPENDENT.RadioButton.Text
 msgid  "Only ~include the country/region if it is not:"
 msgstr "仅包括非下列国家/地区(~I):"
+
+#: source/ui/dbui/mmaddressblockpage.src#WORKAROUND.#define.Text
+msgid  "New Address Block"
+msgstr "新建地址块"
 
 #: source/ui/dbui/mmaddressblockpage.src#DLG_MM_CUSTOMIZEADDRESSBLOCK.ST_TITLE_EDIT.String.Text
 msgid  "Edit Address Block"
@@ -3485,7 +3489,7 @@ msgstr "指定数据源中的字段以匹配地址元素。"
 
 #: source/ui/dbui/mmaddressblockpage.src#DLG_MM_ASSIGNFIELDS.ST_SALUTATIONMATCHING.String.Text
 msgid  "Assign the fields from your data source to match the salutation elements."
-msgstr ""
+msgstr "指定数据源中的字段以匹配称呼元素。"
 
 #: source/ui/dbui/mmaddressblockpage.src#DLG_MM_ASSIGNFIELDS.FI_PREVIEW.FixedText.Text
 msgid  "Address block preview"
@@ -3515,17 +3519,13 @@ msgstr "预览"
 msgid  "< none >"
 msgstr "<无>"
 
-#: source/ui/dbui/mmaddressblockpage.src#WORKAROUND.#define.Text
-msgid  "New Address Block"
-msgstr "新建地址块"
-
 #: source/ui/dbui/selectdbtabledialog.src#DLG_MM_SELECTDBTABLEDDIALOG.ModalDialog.Text
 msgid  "Select Table"
 msgstr "选择表格"
 
 #: source/ui/dbui/selectdbtabledialog.src#DLG_MM_SELECTDBTABLEDDIALOG.FI_SELECT.FixedText.Text
 msgid  "The file you have selected contains more than one table. Please select the table containing the address list you want to use."
-msgstr ""
+msgstr "选定的文件中包含多个表格。请选择包含要使用的地址列表的表格。"
 
 #: source/ui/dbui/selectdbtabledialog.src#DLG_MM_SELECTDBTABLEDDIALOG.PB_PREVIEW.PushButton.Text
 msgid  "~Preview"
@@ -3741,7 +3741,7 @@ msgstr "个性化邮件合并文档"
 
 #: source/ui/dbui/mmmergepage.src#DLG_MM_MERGE_PAGE.FI_EDIT.FixedText.Text
 msgid  "You can personalize particular documents. Clicking '%1' will temporarily reduce the wizard to a small window so you can edit your document. After editing the document, return to the wizard by clicking 'Return to Mail Merge Wizard' in the small window."
-msgstr ""
+msgstr "您可将特定文档个性化。单击 %1 可将向导暂时缩小为一个小窗口，以便编辑文档。在编辑完文档之后，单击小窗口中的“返回至邮件合并向导”即可返回向导。"
 
 #: source/ui/dbui/mmmergepage.src#DLG_MM_MERGE_PAGE.PB_EDIT.PushButton.Text
 msgid  "~Edit individual document..."
@@ -3909,7 +3909,7 @@ msgstr "未命名"
 
 #: source/ui/dbui/mmoutputpage.src#DLG_MM_OUTPUT_PAGE.ST_SUBJECTQUERY.String.Text
 msgid  "You did not specify a subject for this message. If you would like to provide one, please type it now."
-msgstr ""
+msgstr "您没有为此邮件指定主题。如果要指定主题，请现在键入。"
 
 #: source/ui/dbui/mmoutputpage.src#DLG_MM_OUTPUT_PAGE.ST_NOSUBJECT.String.Text
 msgid  "No subject"
@@ -3917,11 +3917,11 @@ msgstr "无主题"
 
 #: source/ui/dbui/mmoutputpage.src#DLG_MM_OUTPUT_PAGE.ST_NOATTACHMENTNAME.String.Text
 msgid  "You did not specify a new name for the attachment. If you would like to provide one, please type it now."
-msgstr ""
+msgstr "您没有为附件指定新名称。如果要提供一个名称，请现在键入。"
 
 #: source/ui/dbui/mmoutputpage.src#DLG_MM_OUTPUT_PAGE.ST_CONFIGUREMAIL.String.Text
 msgid  "In order to be able to send mail merge documents by e-mail, %PRODUCTNAME requires information about the e-mail account to be used.\n\n Do you want to enter e-mail account information now?"
-msgstr ""
+msgstr "为了能够通过电子邮件发送邮件合并文档，%PRODUCTNAME 需要您提供有关要使用的电子邮件账户的信息。\n\n是否要现在输入电子邮件账户信息？"
 
 #: source/ui/dbui/mmoutputpage.src#DLG_MM_COPYTO.ModalDialog.Text
 msgid  "Copy To"
@@ -3941,11 +3941,11 @@ msgstr "密件抄送(~B)"
 
 #: source/ui/dbui/mmoutputpage.src#DLG_MM_COPYTO.FI_NOTE.FixedText.Text
 msgid  "Note:\nSeparate e-mail addresses with a semicolon (;)."
-msgstr ""
+msgstr "注意:\n电子邮件地址以分号 (;) 隔开。"
 
 #: source/ui/dbui/mmoutputpage.src#DLG_MM_SAVEWARNING.FI_WARNING.FixedText.Text
 msgid  "A document with the name '%1' already exists. Please save this document under a different name."
-msgstr ""
+msgstr "已存在名为 %1 的文档。请使用其他名称保存此文档。"
 
 #: source/ui/dbui/mmoutputpage.src#DLG_MM_SAVEWARNING.FT_FILENAME.FixedText.Text
 msgid  "New document name"
@@ -4131,6 +4131,10 @@ msgstr "查找(~F)"
 msgid  "~Close"
 msgstr "关闭(~C)"
 
+#: source/ui/dbui/mailmergechildwindow.src#WORKAROUND.#define.Text
+msgid  "Return to Mail Merge Wizard"
+msgstr "返回至邮件合并向导"
+
 #: source/ui/dbui/mailmergechildwindow.src#DLG_MAILMERGECHILD.FloatingWindow.Text
 msgid  "Mail Merge Wizard"
 msgstr "邮件合并向导"
@@ -4209,7 +4213,7 @@ msgstr "发送失败（地址无效）"
 
 #: source/ui/dbui/mailmergechildwindow.src#DLG_MM_SENDMAILS.ST_TERMINATEQUERY.String.Text
 msgid  "There are still e-mail messages in your %PRODUCTNAME Outbox.\nWould you like to exit anyway?"
-msgstr ""
+msgstr "您的 %PRODUCTNAME 发件箱中仍有电子邮件。\n确实要退出吗？"
 
 #: source/ui/dbui/mailmergechildwindow.src#DLG_MM_SENDWARNING.ModalDialog.Text
 msgid  "E-Mails could not be sent"
@@ -4222,10 +4226,6 @@ msgstr "出现以下错误："
 #: source/ui/dbui/mailmergechildwindow.src#DLG_MM_SENDWARNING.FT_DETAILS.FixedText.Text
 msgid  "Detailed information"
 msgstr "详细信息"
-
-#: source/ui/dbui/mailmergechildwindow.src#WORKAROUND.#define.Text
-msgid  "Return to Mail Merge Wizard"
-msgstr "返回至邮件合并向导"
 
 #: source/ui/dbui/dbtablepreviewdialog.src#DLG_MM_DBTABLEPREVIEWDIALOG.ModalDialog.Text
 msgid  "Mail Merge Recipients"
@@ -4265,11 +4265,11 @@ msgstr "电子邮件:"
 
 #: source/ui/dbui/mmoutputtypepage.src#DLG_MM_OUTPUTTYPE_PAGE.ST_LETTERHINT.String.Text
 msgid  "Send letters to a group of recipients. The letters can contain an address block and a salutation. The letters can be personalized for each recipient."
-msgstr ""
+msgstr "将信函发送至一组收件人。这些信函可包含一个地址块和一个称呼。可针对每个收件人将信函个性化。"
 
 #: source/ui/dbui/mmoutputtypepage.src#DLG_MM_OUTPUTTYPE_PAGE.ST_MAILHINT.String.Text
 msgid  "Send e-mail messages to a group of recipients. The e-mail messages can contain a salutation. The e-mail messages can be personalized for each recipient."
-msgstr ""
+msgstr "将电子邮件发送至一组收件人。这些电子邮件可包含一个称呼。可针对每个收件人将电子邮件个性化。"
 
 #: source/ui/dbui/mmpreparemergepage.src#DLG_MM_PREPAREMERGE_PAGE.FI_HEADER.FixedText.Text
 msgid  "Preview and edit the document"
@@ -4277,7 +4277,7 @@ msgstr "预览和编辑文档"
 
 #: source/ui/dbui/mmpreparemergepage.src#DLG_MM_PREPAREMERGE_PAGE.FI_PREVIEW.FixedText.Text
 msgid  "The preview of a merged document is visible now. To see the preview of another document click one of the arrows."
-msgstr ""
+msgstr "现在可以看到合并文档的预览效果。要查看另一个文档的预览效果，请单击其中一个箭头。"
 
 #: source/ui/dbui/mmpreparemergepage.src#DLG_MM_PREPAREMERGE_PAGE.FT_RECIPIENT.FixedText.Text
 msgid  "~Recipient"
@@ -4309,7 +4309,7 @@ msgstr "编辑文档"
 
 #: source/ui/dbui/mmpreparemergepage.src#DLG_MM_PREPAREMERGE_PAGE.FI_EDIT.FixedText.Text
 msgid  "Write or edit your document now if you have not already done so. The changes will effect all merged documents.\n\nClicking 'Edit Document...' will temporarily reduce the wizard to a small window so you can edit the mail merge document. After editing the document, return to the wizard by clicking 'Return to Mail Merge Wizard' in the small window."
-msgstr ""
+msgstr "如果您尚未撰写或编辑文档，请现在进行。所做的修改将影响所有合并的文档。\n\n单击“编辑文档...”会将向导暂时缩小为一个小窗口，以便您编辑邮件合并文档。在编辑完文档后，单击小窗口中的“返回至邮件合并向导”即可返回向导。"
 
 #: source/ui/dbui/mmpreparemergepage.src#DLG_MM_PREPAREMERGE_PAGE.PB_EDIT.PushButton.Text
 msgid  "~Edit Document..."
@@ -4535,6 +4535,66 @@ msgstr "词数:"
 msgid  "Characters:"
 msgstr "字符数:"
 
+#: source/ui/dialog/regionsw.src#FT_SUBREG_TEXT.#define.Text
+msgid  "~Section"
+msgstr "区域(~S)"
+
+#: source/ui/dialog/regionsw.src#CB_HIDE_TEXT.#define.Text
+msgid  "H~ide"
+msgstr "隐藏(~I)"
+
+#: source/ui/dialog/regionsw.src#FL_HIDE_TEXT.#define.Text
+msgid  "Hide"
+msgstr "隐藏"
+
+#: source/ui/dialog/regionsw.src#CB_CONDITION_TEXT.#define.Text
+msgid  "~With Condition"
+msgstr "带条件(~W)"
+
+#: source/ui/dialog/regionsw.src#FL_PROPERTIES_TEXT.#define.Text
+msgid  "Properties"
+msgstr "属性"
+
+#: source/ui/dialog/regionsw.src#CB_EDIT_IN_READONLY_TEXT.#define.Text
+msgid  "E~ditable in read-only document"
+msgstr "在只读文档中可编辑(~D)"
+
+#: source/ui/dialog/regionsw.src#FL_FILE_TEXT.#define.Text
+msgid  "Link"
+msgstr "链接"
+
+#: source/ui/dialog/regionsw.src#CB_FILE_TEXT.#define.Text
+msgid  "~Link"
+msgstr "链接(~L)"
+
+#: source/ui/dialog/regionsw.src#CB_DDE_TEXT.#define.Text
+msgid  "DD~E"
+msgstr "DD~E"
+
+#: source/ui/dialog/regionsw.src#FT_DDE_TEXT.#define.Text
+msgid  "DDE ~command"
+msgstr "DDE 指令(~C)"
+
+#: source/ui/dialog/regionsw.src#FT_FILE_TEXT.#define.Text
+msgid  "~File name"
+msgstr "文件名(~F)"
+
+#: source/ui/dialog/regionsw.src#GB_HIDE_TEXT.#define.Text
+msgid  "Hide"
+msgstr "隐藏"
+
+#: source/ui/dialog/regionsw.src#GB_OPTIONS_TEXT.#define.Text
+msgid  "Options"
+msgstr "选项"
+
+#: source/ui/dialog/regionsw.src#FL_PROTECT_TEXT.#define.Text
+msgid  "Write protection"
+msgstr "写保护"
+
+#: source/ui/dialog/regionsw.src#CB_PASSWD_TEXT.#define.Text
+msgid  "Wit~h password"
+msgstr "使用密码(~H)"
+
 #: source/ui/dialog/regionsw.src#MD_EDIT_REGION.ModalDialog.Text
 msgid  "Edit Sections"
 msgstr "编辑区域"
@@ -4565,7 +4625,7 @@ msgstr "双区域名称"
 
 #: source/ui/dialog/regionsw.src#QB_CONNECT.QueryBox.Message
 msgid  "A file connection will delete the contents of the current section. Connect anyway?"
-msgstr ""
+msgstr "使用文件连接会删除当前区域内的内容。您还是要执行连接命令？"
 
 #: source/ui/dialog/regionsw.src#REG_WRONG_PASSWORD.InfoBox.Message
 msgid  "The password entered is invalid."
@@ -4699,66 +4759,6 @@ msgstr "在段落之前(~B)"
 msgid  "~After section"
 msgstr "在段落之后(~A)"
 
-#: source/ui/dialog/regionsw.src#FT_SUBREG_TEXT.#define.Text
-msgid  "~Section"
-msgstr "区域(~S)"
-
-#: source/ui/dialog/regionsw.src#CB_HIDE_TEXT.#define.Text
-msgid  "H~ide"
-msgstr "隐藏(~I)"
-
-#: source/ui/dialog/regionsw.src#FL_HIDE_TEXT.#define.Text
-msgid  "Hide"
-msgstr "隐藏"
-
-#: source/ui/dialog/regionsw.src#CB_CONDITION_TEXT.#define.Text
-msgid  "~With Condition"
-msgstr "带条件(~W)"
-
-#: source/ui/dialog/regionsw.src#FL_PROPERTIES_TEXT.#define.Text
-msgid  "Properties"
-msgstr "属性"
-
-#: source/ui/dialog/regionsw.src#CB_EDIT_IN_READONLY_TEXT.#define.Text
-msgid  "E~ditable in read-only document"
-msgstr "在只读文档中可编辑(~D)"
-
-#: source/ui/dialog/regionsw.src#FL_FILE_TEXT.#define.Text
-msgid  "Link"
-msgstr "链接"
-
-#: source/ui/dialog/regionsw.src#CB_FILE_TEXT.#define.Text
-msgid  "~Link"
-msgstr "链接(~L)"
-
-#: source/ui/dialog/regionsw.src#CB_DDE_TEXT.#define.Text
-msgid  "DD~E"
-msgstr "DD~E"
-
-#: source/ui/dialog/regionsw.src#FT_DDE_TEXT.#define.Text
-msgid  "DDE ~command"
-msgstr "DDE 指令(~C)"
-
-#: source/ui/dialog/regionsw.src#FT_FILE_TEXT.#define.Text
-msgid  "~File name"
-msgstr "文件名(~F)"
-
-#: source/ui/dialog/regionsw.src#GB_HIDE_TEXT.#define.Text
-msgid  "Hide"
-msgstr "隐藏"
-
-#: source/ui/dialog/regionsw.src#GB_OPTIONS_TEXT.#define.Text
-msgid  "Options"
-msgstr "选项"
-
-#: source/ui/dialog/regionsw.src#FL_PROTECT_TEXT.#define.Text
-msgid  "Write protection"
-msgstr "写保护"
-
-#: source/ui/dialog/regionsw.src#CB_PASSWD_TEXT.#define.Text
-msgid  "Wit~h password"
-msgstr "使用密码(~H)"
-
 #: source/ui/dialog/abstract.src#DLG_INSERT_ABSTRACT.FL_1.FixedLine.Text
 msgid  "Properties"
 msgstr "属性"
@@ -4773,7 +4773,7 @@ msgstr "每章节包含的段落"
 
 #: source/ui/dialog/abstract.src#DLG_INSERT_ABSTRACT.FT_DESC.FixedText.Text
 msgid  "The abstract contains the selected number of paragraphs from the included outline levels."
-msgstr ""
+msgstr "从包括的章节级中选出的一定数目的段落显示在摘要中。"
 
 #: source/ui/dialog/abstract.src#DLG_INSERT_ABSTRACT.HelpButton.Text
 msgid  "Create AutoAbstract"
@@ -4853,7 +4853,7 @@ msgstr "自动图文集快捷方式 '%1' 没有找到。"
 
 #: source/ui/dochdl/dochdl.src#STR_NO_TABLE.String.Text
 msgid  "A table cannot be inserted into another table. However, you can paste the data into the document when the cursor is not in a table."
-msgstr ""
+msgstr "无法将一个表格插入到另一个表格中。但是，光标不在表格中时，您可以将数据粘贴到文档中。"
 
 #: source/ui/dochdl/dochdl.src#MSG_ERR_INSERT_GLOS.InfoBox.Message
 msgid  "AutoText could not be created."
@@ -4865,7 +4865,7 @@ msgstr "所需要的剪贴板格式不存在。"
 
 #: source/ui/dochdl/dochdl.src#MSG_UPDATE_NEW_GLOS_FMT.QueryBox.Message
 msgid  "The section format is outdated.\nIt needs to be converted so that changes\ncan be saved.\nShould it be converted now?"
-msgstr ""
+msgstr "这个区域的格式是旧的。\n要保存修改就必须进行格式转换。\n现在要转换格式吗？"
 
 #: source/ui/dochdl/dochdl.src#STR_PRIVATETEXT.String.Text
 msgid  "%PRODUCTNAME Writer"
@@ -5039,6 +5039,26 @@ msgstr "这个来源框已经是一个链接的来源框。"
 msgid  "A closed link is not possible."
 msgstr "一个封闭式的链接是不可能的。"
 
+#: source/ui/docvw/docvw.src#STR_REDLINE_INSERT.String.Text
+msgid  "Inserted"
+msgstr "已经插入"
+
+#: source/ui/docvw/docvw.src#STR_REDLINE_DELETE.String.Text
+msgid  "Deleted"
+msgstr "已经删除"
+
+#: source/ui/docvw/docvw.src#STR_REDLINE_FORMAT.String.Text
+msgid  "Formatted"
+msgstr "已经格式化"
+
+#: source/ui/docvw/docvw.src#STR_REDLINE_TABLE.String.Text
+msgid  "Table changed"
+msgstr "表格已经被修改"
+
+#: source/ui/docvw/docvw.src#STR_REDLINE_FMTCOLL.String.Text
+msgid  "Applied Paragraph Styles"
+msgstr "应用的段落样式"
+
 #: source/ui/docvw/docvw.src#STR_ENDNOTE.String.Text
 msgid  "Endnote: "
 msgstr "尾注: "
@@ -5049,7 +5069,7 @@ msgstr "脚注： "
 
 #: source/ui/docvw/docvw.src#MSG_READONLY_CONTENT.InfoBox.Message
 msgid  "Readonly content cannot be changed.\nNo modifications will be accepted"
-msgstr ""
+msgstr "只读内容不能被修改。\n修改的内容未被接受。"
 
 #: source/ui/docvw/docvw.src#STR_TABLE_COL_ADJUST.String.Text
 msgid  "Adjust table column"
@@ -5074,26 +5094,6 @@ msgstr "选择表格列"
 #: source/ui/docvw/docvw.src#STR_SMARTTAG_CLICK.String.Text
 msgid  "%s-click to open Smart Tag menu"
 msgstr "按住 %s 键并单击打开“智能标记”菜单"
-
-#: source/ui/docvw/docvw.src#STR_REDLINE_INSERT.String.Text
-msgid  "Inserted"
-msgstr "已经插入"
-
-#: source/ui/docvw/docvw.src#STR_REDLINE_DELETE.String.Text
-msgid  "Deleted"
-msgstr "已经删除"
-
-#: source/ui/docvw/docvw.src#STR_REDLINE_FORMAT.String.Text
-msgid  "Formatted"
-msgstr "已经格式化"
-
-#: source/ui/docvw/docvw.src#STR_REDLINE_TABLE.String.Text
-msgid  "Table changed"
-msgstr "表格已经被修改"
-
-#: source/ui/docvw/docvw.src#STR_REDLINE_FMTCOLL.String.Text
-msgid  "Applied Paragraph Styles"
-msgstr "应用的段落样式"
 
 #: source/ui/docvw/access.src#STR_ACCESS_DOC_NAME.String.Text
 msgid  "Document view"
@@ -5165,7 +5165,7 @@ msgstr "操作"
 
 #: source/ui/docvw/access.src#STR_ACCESS_ANNOTATION_BUTTON_DESC.String.Text
 msgid  "Activate this button to open a list of actions which can be performed on this comment and other comments"
-msgstr ""
+msgstr "激活这个按钮打开一系列可执行于这个和其他批注的操作"
 
 #: source/ui/docvw/access.src#STR_ACCESS_PREVIEW_DOC_NAME.String.Text
 msgid  "Document preview"
@@ -5214,6 +5214,10 @@ msgstr "- 没有安装打印机 -"
 #: source/ui/envelp/envprt.src#TP_ENV_PRT.BTN_PRTSETUP.PushButton.Text
 msgid  "Setup..."
 msgstr "设置..."
+
+#: source/ui/envelp/mailmrge.src#_MAIL_MERGE_STRING_.#define.Text
+msgid  "Mail Merge"
+msgstr "邮件合并"
 
 #: source/ui/envelp/mailmrge.src#DLG_MAILMERGE.RB_ALL.RadioButton.Text
 msgid  "~All"
@@ -5337,11 +5341,7 @@ msgstr "创建新连接(~C)"
 
 #: source/ui/envelp/mailmrge.src#DLG_MERGE_FIELD_CONNECTIONS.FT_INFO.FixedText.Text
 msgid  "Fields are used to personalize form letters. The fields are placeholders for data from a data source, such as a database. The fields in the form letter must be connected to the data source."
-msgstr ""
-
-#: source/ui/envelp/mailmrge.src#_MAIL_MERGE_STRING_.#define.Text
-msgid  "Mail Merge"
-msgstr "邮件合并"
+msgstr "字段用于个性化格式信函。此字段是来自某一数据源（例如数据库）的数据的占位符。格式信函中的字段必须和数据源相连接。"
 
 #: source/ui/envelp/labprt.src#TP_LAB_PRT.BTN_PAGE.RadioButton.Text
 msgid  "~Entire page"
@@ -5397,7 +5397,7 @@ msgstr "新建文档(~N)。"
 
 #: source/ui/envelp/envelp.src#STR_SENDER_TOKENS.String.Text
 msgid  "COMPANY;CR;FIRSTNAME; ;LASTNAME;CR;ADDRESS;CR;CITY; ;STATEPROV; ;POSTALCODE;CR;COUNTRY;CR;"
-msgstr ""
+msgstr "COMPANY;CR;FIRSTNAME; ;LASTNAME;CR;ADDRESS;CR;CITY; ;STATEPROV; ;POSTALCODE;CR;COUNTRY;CR;"
 
 #: source/ui/envelp/envfmt.src#TP_ENV_FMT.FL_ADDRESSEE.FixedLine.Text
 msgid  "Addressee"
@@ -5470,6 +5470,14 @@ msgstr "字符(~H)..."
 #: source/ui/envelp/envfmt.src#MNU_EDIT.MID_PARA.MenuItem.Text
 msgid  "P~aragraph..."
 msgstr "段落(~A)..."
+
+#: source/ui/envelp/label.src#LABEL_STRING.#define.Text
+msgid  "Labels"
+msgstr "标签"
+
+#: source/ui/envelp/label.src#BUSINESS_CARD_STRING.#define.Text
+msgid  "Business Cards"
+msgstr "名片"
 
 #: source/ui/envelp/label.src#DLG_LAB.1.TP_PRIVATE_DATA.PageItem.Text
 msgid  "Private"
@@ -5639,14 +5647,6 @@ msgstr "传真"
 msgid  "Ho~mepage / e-mail"
 msgstr "主页/电子邮件(~M)"
 
-#: source/ui/envelp/label.src#LABEL_STRING.#define.Text
-msgid  "Labels"
-msgstr "标签"
-
-#: source/ui/envelp/label.src#BUSINESS_CARD_STRING.#define.Text
-msgid  "Business Cards"
-msgstr "名片"
-
 #: source/ui/envelp/labfmt.src#TP_LAB_FMT.TXT_HDIST.FixedText.Text
 msgid  "Hori~zontal pitch"
 msgstr "水平间隔(~Z)"
@@ -5728,8 +5728,8 @@ msgid  "Options"
 msgstr "选项"
 
 #: source/ui/envelp/labfmt.src#DLG_SAVE_LABEL.MB_QUERY.QueryBox.Message
-msgid  "The label "%1 / %2" already exists.\nDo you want to overwrite it?"
-msgstr ""
+msgid  "The label \"%1 / %2\" already exists.\nDo you want to overwrite it?"
+msgstr "标签 \"%1 / %2\" 已经存在。\n是否要改写它？"
 
 #: source/ui/envelp/labfmt.src#DLG_SAVE_LABEL.QueryBox.Text
 msgid  "Save Label Format"
@@ -6185,7 +6185,7 @@ msgstr "任何一个数据条目"
 
 #: source/ui/fldui/fldui.src#STR_DBSETNUMBERFLD.String.Text
 msgid  "Record number"
-msgstr "条目编号"
+msgstr "数据条目编号"
 
 #: source/ui/fldui/fldui.src#STR_PREVPAGEFLD.String.Text
 msgid  "Previous page"
@@ -6401,11 +6401,11 @@ msgstr "和页面样式相同"
 
 #: source/ui/fldui/fldui.src#FMT_NUM_PAGESPECIAL.String.Text
 msgid  "Text"
-msgstr "文本"
+msgstr "文字"
 
 #: source/ui/fldui/fldui.src#FMT_AUTHOR_NAME.String.Text
 msgid  "Name"
-msgstr "名称"
+msgstr "姓名"
 
 #: source/ui/fldui/fldui.src#FMT_AUTHOR_SCUT.String.Text
 msgid  "Initials"
@@ -6417,7 +6417,7 @@ msgstr "系统"
 
 #: source/ui/fldui/fldui.src#FMT_SETVAR_TEXT.String.Text
 msgid  "Text"
-msgstr "文本"
+msgstr "文字"
 
 #: source/ui/fldui/fldui.src#FMT_GETVAR_NAME.String.Text
 msgid  "Name"
@@ -6609,7 +6609,7 @@ msgstr "浏览..."
 
 #: source/ui/fldui/changedb.src#DLG_CHANGE_DB.FT_DESC.FixedText.Text
 msgid  "Use this dialog to replace the databases you access in your document via database fields, with other databases. You can only make one change at a time. Multiple selection is possible in the list on the left.\nUse the browse button to select a database file."
-msgstr ""
+msgstr "使用这个对话框以其它数据库替换在文档内通过数据库字段访问的数据库。一次只能修改一处。可在左侧的列表中可进行多重选择。\n使用“浏览”按钮选择一个数据库文件。"
 
 #: source/ui/fldui/changedb.src#DLG_CHANGE_DB.FT_DOCDBTEXT.FixedText.Text
 msgid  "Database applied to document:"
@@ -6881,7 +6881,7 @@ msgstr "项目符号"
 
 #: source/ui/fmtui/tmpdlg.src#DLG_TEMPLATE_5.1.RID_SVXPAGE_PICK_SINGLE_NUM.PageItem.Text
 msgid  "Numbering Style"
-msgstr "编号样式"
+msgstr "编号类型"
 
 #: source/ui/fmtui/tmpdlg.src#DLG_TEMPLATE_5.1.RID_SVXPAGE_PICK_NUM.PageItem.Text
 msgid  "Outline"
@@ -6905,7 +6905,7 @@ msgstr "编号样式"
 
 #: source/ui/frmdlg/frmpage.src#DLG_FRM_STD.TabDialog.Text
 msgid  "Frame"
-msgstr "图文框"
+msgstr "框对象"
 
 #: source/ui/frmdlg/frmpage.src#DLG_FRM_STD.1.TP_FRM_STD.PageItem.Text
 msgid  "Type"
@@ -7388,6 +7388,14 @@ msgid  "~Position"
 msgstr "位置(~P)"
 
 #: source/ui/frmdlg/column.src#TP_COLUMN.LB_POSITION.Default.StringList.item
+msgid  "Top"
+msgstr "上"
+
+#: source/ui/frmdlg/column.src#TP_COLUMN.LB_POSITION.Default.StringList.item
+msgid  "Centered"
+msgstr "居中"
+
+#: source/ui/frmdlg/column.src#TP_COLUMN.LB_POSITION.Default.StringList.item
 msgid  "Bottom"
 msgstr "下"
 
@@ -7450,14 +7458,6 @@ msgstr "1% 与 2% 之间的间距"
 #: source/ui/frmdlg/column.src#STR_ACCESS_COLUMN_WIDTH.String.Text
 msgid  "Column %1 Width"
 msgstr "1% 列宽"
-
-#: source/ui/frmdlg/column.src#TP_COLUMN.LB_POSITION.Default.StringList.item
-msgid  "Top"
-msgstr "上"
-
-#: source/ui/frmdlg/column.src#TP_COLUMN.LB_POSITION.Default.StringList.item
-msgid  "Centered"
-msgstr "居中"
 
 #: source/ui/frmdlg/frmui.src#STR_TOP.String.Text
 msgid  "~Top"
@@ -7545,7 +7545,7 @@ msgstr "列间隔太大，超过列区域。"
 
 #: source/ui/frmdlg/cption.src#DLG_CAPTION.ModalDialog.Text
 msgid  "Caption"
-msgstr "题注"
+msgstr "标题"
 
 #: source/ui/frmdlg/cption.src#DLG_CAPTION.BTN_AUTOCAPTION.PushButton.Text
 msgid  "AutoCaption..."
@@ -7557,7 +7557,7 @@ msgstr "选项..."
 
 #: source/ui/frmdlg/cption.src#DLG_CAPTION.TXT_TEXT.FixedText.Text
 msgid  "Caption"
-msgstr "题注"
+msgstr "标题"
 
 #: source/ui/frmdlg/cption.src#DLG_CAPTION.FL_SETTINGS.FixedLine.Text
 msgid  "Properties"
@@ -7589,11 +7589,11 @@ msgstr "位置"
 
 #: source/ui/frmdlg/cption.src#DLG_CAPTION.STR_BEGINNING.String.Text
 msgid  "Above"
-msgstr "在起始位置"
+msgstr "之上"
 
 #: source/ui/frmdlg/cption.src#DLG_CAPTION.STR_END.String.Text
 msgid  "Below"
-msgstr "在结束位置"
+msgstr "之下"
 
 #: source/ui/frmdlg/cption.src#DLG_CAPTION.STR_ABOVE.String.Text
 msgid  "Above"
@@ -7666,6 +7666,10 @@ msgstr "主控文档"
 #: source/ui/globdoc/globdoc.src#STR_WRITER_GLOBALDOC_FULLTYPE.String.Text
 msgid  "%PRODUCTNAME %PRODUCTVERSION Master Document"
 msgstr "%PRODUCTNAME %PRODUCTVERSION 主控文档"
+
+#: source/ui/index/idxmrk.src#IDX_PHONETIC_LISTBOX_DESCRIPTION.#define.Text
+msgid  "Phonetic reading"
+msgstr "语音描述"
 
 #: source/ui/index/idxmrk.src#IDX_DIALOG_WINDOW.WIN_DLG.BT_OK.OKButton.Text
 msgid  "Insert"
@@ -7805,11 +7809,7 @@ msgstr "插入文献目录条目"
 
 #: source/ui/index/idxmrk.src#DLG_CHANGE_AUTH_ENTRY.QueryBox.Message
 msgid  "The document already contains the bibliography entry but with different data. Do you want to adjust the existing entries?"
-msgstr ""
-
-#: source/ui/index/idxmrk.src#IDX_PHONETIC_LISTBOX_DESCRIPTION.#define.Text
-msgid  "Phonetic reading"
-msgstr "语音描述"
+msgstr "文档内已经含有附带不同数据的文献条目。是否要调整已经存在的条目？"
 
 #: source/ui/index/cnttab.src#STR_TITLE.String.Text
 msgid  "Title"
@@ -7824,8 +7824,8 @@ msgid  "Level "
 msgstr "级 "
 
 #: source/ui/index/cnttab.src#STR_FILE_NOT_FOUND.String.Text
-msgid  "The file, "%1" in the "%2" path could not be found."
-msgstr ""
+msgid  "The file, \"%1\" in the \"%2\" path could not be found."
+msgstr "在路径 \"%2\" 中无法找到文件 \"%1\"。"
 
 #: source/ui/index/cnttab.src#DLG_MULTI_TOX.1.TP_TOX_SELECT.PageItem.Text
 msgid  "Index/Table"
@@ -8557,7 +8557,7 @@ msgstr "路径(~P)..."
 
 #: source/ui/misc/glossary.src#DLG_GLOSSARY.ST_READONLY_PATH.String.Text
 msgid  "The 'AutoText' directories are read-only. Do you want to call the path settings dialog?"
-msgstr ""
+msgstr "“自动图文集”目录是只读的。是否要打开路径设置对话框？"
 
 #: source/ui/misc/glossary.src#DLG_GLOSSARY.MNU_EDIT.FN_GL_DEFINE.MenuItem.Text
 msgid  "~New"
@@ -8672,6 +8672,14 @@ msgid  "~Position"
 msgstr "位置(~P)"
 
 #: source/ui/misc/pgfnote.src#TP_FOOTNOTE_PAGE.DLB_LINEPOS.Default.StringList.item
+msgid  "Left"
+msgstr "左对齐"
+
+#: source/ui/misc/pgfnote.src#TP_FOOTNOTE_PAGE.DLB_LINEPOS.Default.StringList.item
+msgid  "Centered"
+msgstr "居中"
+
+#: source/ui/misc/pgfnote.src#TP_FOOTNOTE_PAGE.DLB_LINEPOS.Default.StringList.item
 msgid  "Right"
 msgstr "右对齐"
 
@@ -8690,14 +8698,6 @@ msgstr "至脚注内容的间隔(~S)"
 #: source/ui/misc/pgfnote.src#TP_FOOTNOTE_PAGE.FL_LINE.FixedLine.Text
 msgid  "Separator line"
 msgstr "分隔线"
-
-#: source/ui/misc/pgfnote.src#TP_FOOTNOTE_PAGE.DLB_LINEPOS.Default.StringList.item
-msgid  "Left"
-msgstr "左对齐"
-
-#: source/ui/misc/pgfnote.src#TP_FOOTNOTE_PAGE.DLB_LINEPOS.Default.StringList.item
-msgid  "Centered"
-msgstr "居中"
 
 #: source/ui/misc/num.src#TP_NUM_POSITION.FL_LEVEL.FixedLine.Text
 msgid  "Level"
@@ -9493,7 +9493,7 @@ msgstr "字符样式"
 
 #: source/ui/misc/docfnote.src#TP_FOOTNOTEOPTION.FT_ANCHR_CHARFMT.FixedText.Text
 msgid  "Te~xt area"
-msgstr "文字区域(~X)"
+msgstr "文本区域(~X)"
 
 #: source/ui/misc/docfnote.src#TP_FOOTNOTEOPTION.FT_TEXT_CHARFMT.FixedText.Text
 msgid  "~Footnote area"
@@ -10065,7 +10065,7 @@ msgstr "自动更正"
 
 #: source/ui/shells/shells.src#STR_REDLINE_MSG.String.Text
 msgid  "AutoCorrect completed.\nYou can accept or reject all changes,\nor accept or reject particular changes."
-msgstr ""
+msgstr "已完成自动更正。\n您可以接受或拒绝所有修改，\n也可以接受或拒绝个别修改。"
 
 #: source/ui/shells/shells.src#STR_REDLINE_ACCEPT_ALL.String.Text
 msgid  "Accept All"
@@ -10309,7 +10309,7 @@ msgstr "总计"
 
 #: source/ui/table/tautofmt.src#DLG_AUTOFMT_TABLE.STR_INVALID_AFNAME.String.Text
 msgid  "You have entered an invalid name.\nThe desired AutoFormat could not be created. \nTry again using a different name."
-msgstr ""
+msgstr "您输入的名称无效。\n因此无法创建自动格式。\n请您输入另一个名称。"
 
 #: source/ui/table/mergetbl.src#DLG_MERGE_TABLE.FL_MERGE.FixedLine.Text
 msgid  "Mode"
@@ -10493,7 +10493,7 @@ msgstr "第一列作为标题(~C)"
 
 #: source/ui/table/chartins.src#DLG_INSERT_CHART.FT_TEXT.FixedText.Text
 msgid  "If the selected cells do not contain the desired data, select the data range now.\n\nInclude the cells containing column and row labels if you want them to be included in your chart."
-msgstr ""
+msgstr "如果选定的单元格未包含所需的数据，请现在选择数据区域。\n\n如果您要在图表中包含列标签和行标签，请在选择单元格时同时选择列标签和行标签。"
 
 #: source/ui/table/chartins.src#DLG_INSERT_CHART.BT_PREV.PushButton.Text
 msgid  "<< ~Back"
@@ -10506,6 +10506,10 @@ msgstr "继续(~N) >>"
 #: source/ui/table/chartins.src#DLG_INSERT_CHART.BT_FINISH.PushButton.Text
 msgid  "Cre~ate"
 msgstr "创建(~A)"
+
+#: source/ui/table/tabledlg.src#TEXT_TEXTFLOW.#define.Text
+msgid  "Text Flow"
+msgstr "换行和分页"
 
 #: source/ui/table/tabledlg.src#DLG_FORMAT_TABLE.TabDialog.Text
 msgid  "Table Format"
@@ -10569,7 +10573,7 @@ msgstr "手动(~M)"
 
 #: source/ui/table/tabledlg.src#TP_FORMAT_TABLE.FL_POS.FixedLine.Text
 msgid  "Alignment"
-msgstr "对齐方式"
+msgstr "对齐"
 
 #: source/ui/table/tabledlg.src#TP_FORMAT_TABLE.FL_DIST.FixedLine.Text
 msgid  "Spacing"
@@ -10601,7 +10605,7 @@ msgstr "文字方向(~D)"
 
 #: source/ui/table/tabledlg.src#TP_FORMAT_TABLE.LB_TEXTDIRECTION.0.StringList.item
 msgid  "Left-to-right"
-msgstr "从左到右"
+msgstr "从左向右"
 
 #: source/ui/table/tabledlg.src#TP_FORMAT_TABLE.LB_TEXTDIRECTION.1.StringList.item
 msgid  "Right-to-left"
@@ -10715,10 +10719,6 @@ msgstr "底端对齐"
 msgid  "The name of the table must not contain spaces."
 msgstr "表格名称不能含有空格字符。"
 
-#: source/ui/table/tabledlg.src#TEXT_TEXTFLOW.#define.Text
-msgid  "Text Flow"
-msgstr "换行和分页"
-
 #: source/ui/table/splittbl.src#DLG_SPLIT_TABLE.FL_SPLIT.FixedLine.Text
 msgid  "Mode"
 msgstr "模式"
@@ -10753,7 +10753,7 @@ msgstr "是否要检查正文？"
 
 #: source/ui/uiview/view.src#DLG_PRT_FIELDNAME.QueryBox.Message
 msgid  "Show field commands option is checked.\nDo you want to print the document with field names?"
-msgstr ""
+msgstr "显示字段命令选项已选中。\n是否要带有字段名称打印这份文档？"
 
 #: source/ui/uiview/view.src#DLG_SPECIAL.QueryBox.Message
 msgid  "Do you want check the special regions?"
@@ -10761,7 +10761,7 @@ msgstr "是否要检查特殊区域？"
 
 #: source/ui/uiview/view.src#DLG_THESAURUS.QueryBox.Message
 msgid  "This word appears in the list of words you want to avoid! Start thesaurus?"
-msgstr ""
+msgstr "您应该避免使用这个字！您要启动同义词词典吗？"
 
 #: source/ui/uiview/view.src#DLG_SPECIAL_FORCED.QueryBox.Message
 msgid  "Check special regions is deactivated. Check anyway?"
@@ -10769,15 +10769,19 @@ msgstr "特殊区域的检查已经关闭，您还是要执行这项检查？"
 
 #: source/ui/uiview/view.src#MSG_SEARCH_END.QueryBox.Message
 msgid  "%PRODUCTNAME Writer has searched to the end of the document. Do you want to continue at the beginning?"
-msgstr ""
+msgstr "%PRODUCTNAME Writer 已经查找至文档的结束位置。是否要继续从文档的起始位置开始查找？"
 
 #: source/ui/uiview/view.src#MSG_SEARCH_START.QueryBox.Message
 msgid  "%PRODUCTNAME Writer has searched to the beginning of the document. Do you want to continue at the end?"
-msgstr ""
+msgstr "%PRODUCTNAME Writer 已经查找至文档的起始位置。是否要继续从文件的结束位置开始查找？"
 
 #: source/ui/uiview/view.src#MSG_NO_MERGE_ENTRY.InfoBox.Message
 msgid  "Could not merge documents."
 msgstr "无法合并文档。"
+
+#: source/ui/uiview/view.src#MSG_ERR_INSERT_GLOS.InfoBox.Message
+msgid  "AutoText could not be created."
+msgstr "无法创建自动图文集。"
 
 #: source/ui/uiview/view.src#MSG_ERR_SRCSTREAM.InfoBox.Message
 msgid  "The source cannot be loaded."
@@ -10871,10 +10875,6 @@ msgstr "HTML 源文本"
 msgid  "HTML Source"
 msgstr "HTML 源文本"
 
-#: source/ui/uiview/view.src#MSG_ERR_INSERT_GLOS.InfoBox.Message
-msgid  "AutoText could not be created."
-msgstr "无法创建自动图文集。"
-
 #: source/ui/uiview/pview.src#DLG_PAGEPREVIEW_ZOOM.ModalDialog.Text
 msgid  "Multiple Pages"
 msgstr "多页"
@@ -10908,7 +10908,7 @@ msgid  "Capitalize first letter of sentences"
 msgstr "每个句首采用大写字母"
 
 #: source/ui/utlui/utlui.src#RID_SHELLRES_AUTOFMTSTRS.STR_AUTOFMTREDL_TYPO+1.String.Text
-msgid  "Replace "standard" quotes with %1 \bcustom%2 quotes"
+msgid  "Replace \"standard\" quotes with %1 \bcustom%2 quotes"
 msgstr ""
 
 #: source/ui/utlui/utlui.src#RID_SHELLRES_AUTOFMTSTRS.STR_AUTOFMTREDL_USER_STYLE+1.String.Text
@@ -10948,28 +10948,28 @@ msgid  "Combine single line paragraphs"
 msgstr "合并单行段落"
 
 #: source/ui/utlui/utlui.src#RID_SHELLRES_AUTOFMTSTRS.STR_AUTOFMTREDL_SET_TMPL_TEXT +1.String.Text
-msgid  "Set "Text body" Style"
-msgstr ""
+msgid  "Set \"Text body\" Style"
+msgstr "设置“正文”样式"
 
 #: source/ui/utlui/utlui.src#RID_SHELLRES_AUTOFMTSTRS.STR_AUTOFMTREDL_SET_TMPL_INDENT.String.Text
-msgid  "Set "Text body indent" Style"
-msgstr ""
+msgid  "Set \"Text body indent\" Style"
+msgstr "设置“正文缩进”样式"
 
 #: source/ui/utlui/utlui.src#RID_SHELLRES_AUTOFMTSTRS.STR_AUTOFMTREDL_SET_TMPL_NEG_INDENT.String.Text
-msgid  "Set "Hanging indent" Style"
-msgstr ""
+msgid  "Set \"Hanging indent\" Style"
+msgstr "设置“悬挂式缩进”样式"
 
 #: source/ui/utlui/utlui.src#RID_SHELLRES_AUTOFMTSTRS.STR_AUTOFMTREDL_SET_TMPL_TEXT_INDENT +1.String.Text
-msgid  "Set "Text body indent" Style"
-msgstr ""
+msgid  "Set \"Text body indent\" Style"
+msgstr "设置“正文缩进”样式"
 
 #: source/ui/utlui/utlui.src#RID_SHELLRES_AUTOFMTSTRS.STR_AUTOFMTREDL_SET_TMPL_HEADLINE +1.String.Text
-msgid  "Set "Heading $(ARG1)" Style"
-msgstr ""
+msgid  "Set \"Heading $(ARG1)\" Style"
+msgstr "设置“标题 $(ARG1)”样式"
 
 #: source/ui/utlui/utlui.src#RID_SHELLRES_AUTOFMTSTRS.STR_AUTOFMTREDL_SET_NUMBULET +1.String.Text
-msgid  "Set "Bullet" or "Numbering" Style"
-msgstr ""
+msgid  "Set \"Bullet\" or \"Numbering\" Style"
+msgstr "设置“项目符号”或“编号”样式"
 
 #: source/ui/utlui/utlui.src#RID_SHELLRES_AUTOFMTSTRS.STR_AUTOFMTREDL_DEL_MORELINES +1.String.Text
 msgid  "Combine paragraphs"
@@ -11045,7 +11045,7 @@ msgstr "图文框"
 
 #: source/ui/utlui/utlui.src#STR_CONTENT_TYPE_GRAPHIC.String.Text
 msgid  "Graphics"
-msgstr "图形"
+msgstr "图片"
 
 #: source/ui/utlui/utlui.src#STR_CONTENT_TYPE_OLE.String.Text
 msgid  "OLE objects"
@@ -11137,11 +11137,11 @@ msgstr "[系统]"
 
 #: source/ui/utlui/utlui.src#STR_MULT_INTERACT_SPELL_WARN.String.Text
 msgid  "The interactive spellcheck is already active\nin a different document"
-msgstr ""
+msgstr "交互式拼写检查功能已在另一文档\n中启用"
 
 #: source/ui/utlui/utlui.src#STR_MULT_INTERACT_HYPH_WARN.String.Text
 msgid  "The interactive hyphenation is already active\nin a different document"
-msgstr ""
+msgstr "交互式断字功能已在另一文档\n中启用"
 
 #: source/ui/utlui/utlui.src#STR_SPELL_TITLE.String.Text
 msgid  "Spellcheck"
@@ -11413,23 +11413,23 @@ msgstr "网页文档"
 
 #: source/ui/utlui/initui.src#STR_AUTH_TYPE_CUSTOM1.String.Text
 msgid  "User-defined1"
-msgstr "自定义类型 1"
+msgstr "自定义 1"
 
 #: source/ui/utlui/initui.src#STR_AUTH_TYPE_CUSTOM2.String.Text
 msgid  "User-defined2"
-msgstr "自定义类型 2"
+msgstr "自定义 2"
 
 #: source/ui/utlui/initui.src#STR_AUTH_TYPE_CUSTOM3.String.Text
 msgid  "User-defined3"
-msgstr "自定义类型 3"
+msgstr "自定义 3"
 
 #: source/ui/utlui/initui.src#STR_AUTH_TYPE_CUSTOM4.String.Text
 msgid  "User-defined4"
-msgstr "自定义类型 4"
+msgstr "自定义 4"
 
 #: source/ui/utlui/initui.src#STR_AUTH_TYPE_CUSTOM5.String.Text
 msgid  "User-defined5"
-msgstr "自定义类型 5"
+msgstr "自定义 5"
 
 #: source/ui/utlui/initui.src#STR_AUTH_FIELD_IDENTIFIER.String.Text
 msgid  "Short name"
@@ -12667,6 +12667,18 @@ msgstr "垂直居中"
 msgid  "at bottom"
 msgstr "下"
 
+#: source/ui/utlui/attrdesc.src#STR_LINE_TOP.String.Text
+msgid  "Top of line"
+msgstr "行上方"
+
+#: source/ui/utlui/attrdesc.src#STR_LINE_CENTER.String.Text
+msgid  "Line centered"
+msgstr "和行垂直居中"
+
+#: source/ui/utlui/attrdesc.src#STR_LINE_BOTTOM.String.Text
+msgid  "Bottom of line"
+msgstr "行下方"
+
 #: source/ui/utlui/attrdesc.src#STR_REGISTER_ON.String.Text
 msgid  "Register-true"
 msgstr "正反页的行距相等"
@@ -12834,18 +12846,6 @@ msgstr "合并边框"
 #: source/ui/utlui/attrdesc.src#STR_CONNECT_BORDER_OFF.String.Text
 msgid  "Do not merge borders"
 msgstr "不合并边框"
-
-#: source/ui/utlui/attrdesc.src#STR_LINE_TOP.String.Text
-msgid  "Top of line"
-msgstr "行上方"
-
-#: source/ui/utlui/attrdesc.src#STR_LINE_CENTER.String.Text
-msgid  "Line centered"
-msgstr "和行垂直居中"
-
-#: source/ui/utlui/attrdesc.src#STR_LINE_BOTTOM.String.Text
-msgid  "Bottom of line"
-msgstr "行下方"
 
 #: source/ui/web/web.src#STR_HUMAN_SWWEBDOC_NAME.String.Text
 msgid  "HTML"

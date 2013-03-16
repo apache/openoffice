@@ -49,7 +49,7 @@ msgstr "~Такмилдиҳӣ"
 
 #: source/euro/euro.src#STEP_ZERO + 4.String.Text
 msgid  "Note: Currency amounts from external links and currency conversion factors in formulas cannot be converted."
-msgstr ""
+msgstr "Эзоҳ: ҷамъи арзҳое, ки ба ҳаволаҳои беруна вобастаанд, ва ҳамчунин коэффитсиентҳои табодули арз дар формулаҳои чашмакҳо табодул намеёбанд."
 
 #: source/euro/euro.src#STEP_ZERO + 5.String.Text
 msgid  "First, unprotect all sheets."
@@ -153,7 +153,7 @@ msgstr "Ҳолати табдилдиҳии қолаби чашмакҳо:"
 
 #: source/euro/euro.src#STATUSLINE + 2.String.Text
 msgid  "Registration of the relevant ranges: Sheet %1Number%1 of %2TotPageCount%2"
-msgstr ""
+msgstr "Навишти қитъаҳои табдилёбанда: варақ %1Number%1 аз %2TotPageCount%2"
 
 #: source/euro/euro.src#STATUSLINE + 3.String.Text
 msgid  "Entry of the ranges to be converted..."
@@ -221,11 +221,11 @@ msgstr "Имкони бекоркунии ҳифзи варақ нест"
 
 #: source/euro/euro.src#MESSAGES + 13.String.Text
 msgid  "The Wizard cannot edit this document as cell formats cannot be modified in documents containing protected spreadsheets."
-msgstr ""
+msgstr "Ёвар ин ҳуҷҷатро дигаргун карда наметавонад, аз сабаби имкон надоштани тағирдиҳии услуби чашмакҳои варақҳои ҳифзшуда."
 
 #: source/euro/euro.src#MESSAGES + 14.String.Text
 msgid  "Please note that the Euro Converter will, otherwise, not be able to edit this document!"
-msgstr ""
+msgstr "Ба хотир доред, ки конвертори Евро ин ҳуҷҷатро иваз карда наметавонад."
 
 #: source/euro/euro.src#MESSAGES + 15.String.Text
 msgid  "Please choose a currency to be converted first!"
@@ -325,7 +325,7 @@ msgstr "Арзи ҷорӣ арзи Аврупоӣ намебошад"
 
 #: source/euro/euro.src#CURRENCIES + 14.String.Text
 msgid  "Maltese Lira"
-msgstr ""
+msgstr "Забони Системаи Оперативии шумо забони Иттиҳоди Молиявии Аврупо намебошад."
 
 #: source/euro/euro.src#CURRENCIES + 15.String.Text
 msgid  "Slovak Koruna"
@@ -361,35 +361,35 @@ msgstr "Варақ ҳамеша ҳифз нашуда аст"
 
 #: source/formwizard/dbwizres.src#RID_COMMON_START + 0.String.Text
 msgid  "The directory '%1' could not be created.<BR>There may not be enough space left on your hard disk."
-msgstr ""
+msgstr "Рафи '%1' сохта нашуд.<BR>Мумкин аст дар сабтгоҳ ҷой намондааст"
 
 #: source/formwizard/dbwizres.src#RID_COMMON_START + 1.String.Text
 msgid  "The text document could not be created.<BR>Please check if the module 'PRODUCTNAME Writer' is installed."
-msgstr ""
+msgstr "Ҳуҷҷати матнӣ сохта нашуд.<BR>Санҷед, ки модули 'PRODUCTNAME Writer' васл карда шудааст."
 
 #: source/formwizard/dbwizres.src#RID_COMMON_START + 2.String.Text
 msgid  "The spreadsheet could not be created.<BR>Please check if the module 'PRODUCTNAME Calc' is installed."
-msgstr ""
+msgstr "Ҷадвали электронӣ сохта нашуд.<BR>Санҷед, ки модули 'PRODUCTNAME Calc' васл карда шудааст."
 
 #: source/formwizard/dbwizres.src#RID_COMMON_START + 3.String.Text
 msgid  "The presentation could not be created.<BR>Please check if the module 'PRODUCTNAME Impress' is installed."
-msgstr ""
+msgstr "Баёния сохта нашуд.<BR>Санҷед, ки модули 'PRODUCTNAME Impress' васл карда шудааст."
 
 #: source/formwizard/dbwizres.src#RID_COMMON_START + 4.String.Text
 msgid  "The drawing could not be created.<BR>Please check if the module 'PRODUCTNAME Draw' is installed."
-msgstr ""
+msgstr "Тасвир сохта нашуд.<BR>Санҷед, ки модули 'PRODUCTNAME Draw' васл карда шудааст."
 
 #: source/formwizard/dbwizres.src#RID_COMMON_START + 5.String.Text
 msgid  "The formula could not be created.<BR>Please check if the module 'PRODUCTNAME Math' is installed."
-msgstr ""
+msgstr "Формула сохта нашуд.<BR>Санҷед, ки модули 'PRODUCTNAME Math' васл карда шудааст."
 
 #: source/formwizard/dbwizres.src#RID_COMMON_START + 6.String.Text
 msgid  "The files required could not be found.<BR>Please start the %PRODUCTNAME Setup and choose 'Repair'."
-msgstr ""
+msgstr "Дафтарҳои лозима пайдо нашуданд. <BR>Васлкунии барномаи %PRODUCTNAME оғоз кунед ва 'Repair' -ро интихоб кунед."
 
 #: source/formwizard/dbwizres.src#RID_COMMON_START + 7.String.Text
 msgid  "The file '<PATH>' already exists.<BR><BR>Would you like to overwrite the existing file?"
-msgstr ""
+msgstr "Дафтари '<PATH>' аллакай мавҷуд аст.<BR><BR>Мехоҳед, ки ин дафтар иваз карда шавад?"
 
 #: source/formwizard/dbwizres.src#RID_COMMON_START + 8.String.Text
 msgid  "Yes"
@@ -445,7 +445,7 @@ msgstr "Қолаб бо ёрии <wizard_name> дар <current_date> сохта 
 
 #: source/formwizard/dbwizres.src#RID_COMMON_START + 21.String.Text
 msgid  "The wizard could not be run, because important files were not found.\nUnder 'Tools - Options - %PRODUCTNAME - Paths' click the 'Default' button to reset the paths to the original default settings.\nThen run the wizard again."
-msgstr ""
+msgstr "Ёвар иҷро карда нашуд, зеро кӣ дафтарҳои зурурӣ пайдо нашуданд.\nДар 'Асбобҳо - Параметрҳо - %PRODUCTNAME - Роҳҳо'  'Аслӣ'ро пахш кунед барои барқарорсозии ҷӯрсозиҳои аслӣ.\nПас Ёварро азнав оғоз кунед."
 
 #: source/formwizard/dbwizres.src#RID_DB_COMMON_START + 0.String.Text
 msgid  "C~reate"
@@ -473,7 +473,7 @@ msgstr "~Номи ҷадвал"
 
 #: source/formwizard/dbwizres.src#RID_DB_COMMON_START + 6.String.Text
 msgid  "An error occurred while running the wizard. The wizard will be terminated."
-msgstr ""
+msgstr "Ҳангоми иҷроиши Ёвар хатогӣ рух дод. Иҷроиши Ёвар қатъ мегардад."
 
 #: source/formwizard/dbwizres.src#RID_DB_COMMON_START + 14.String.Text
 msgid  "No connection to the database could be established."
@@ -553,11 +553,11 @@ msgstr "Майдонҳо дар~ форма"
 
 #: source/formwizard/dbwizres.src#RID_DB_FORM_WIZARD_START + 2.String.Text
 msgid  "Binary fields are always listed and selectable from the left list.\nIf possible, they are interpreted as images."
-msgstr ""
+msgstr "Дафтарҳои дуӣ (бинарӣ) аз рӯйхати чап интихоб карда мешаванд.\nАгар имкон бошад онҳо ҳамчун тасвир интерпритатсия мешаванд."
 
 #: source/formwizard/dbwizres.src#RID_DB_FORM_WIZARD_START + 3.String.Text
 msgid  "A subform is a form that is inserted in another form.\nUse subforms to show data from tables or queries with a one-to-many relationship."
-msgstr ""
+msgstr "Зерформа формаест, ки дар формаи дигар дохил карда мешавад.\nЗерформаро барои намоиши ҷузъҳои ҷадвал ё дархости муносибати як ба бисёрдошта истифода кунед."
 
 #: source/formwizard/dbwizres.src#RID_DB_FORM_WIZARD_START + 4.String.Text
 msgid  "~Add Subform"
@@ -593,7 +593,7 @@ msgstr "Майдонҳо дар ~форма"
 
 #: source/formwizard/dbwizres.src#RID_DB_FORM_WIZARD_START + 19.String.Text
 msgid  "The join '<FIELDNAME1>' and '<FIELDNAME2>' has been selected twice.\nBut joins may only be used once."
-msgstr ""
+msgstr "Васлшудаи '<FIELDNAME1>' ва '<FIELDNAME2>' ду маротиба интихоб шудааст.\nВале васлшудаҳо як маротиба интихоб мешаванд."
 
 #: source/formwizard/dbwizres.src#RID_DB_FORM_WIZARD_START + 20.String.Text
 msgid  "~First joined subform field"
@@ -805,7 +805,7 @@ msgstr "Муқарраркунии номи форма"
 
 #: source/formwizard/dbwizres.src#RID_DB_FORM_WIZARD_START + 98.String.Text
 msgid  "A form with the name '%FORMNAME' already exists.\nChoose another name."
-msgstr ""
+msgstr "Форма бо номи '%FORMNAME' аллакай мавҷуд аст.\nНоми навро интихоб кунед."
 
 #: source/formwizard/dbwizres.src#RID_DB_QUERY_WIZARD_START + 0.String.Text
 msgid  "Query Wizard"
@@ -1097,15 +1097,15 @@ msgstr "Азназаргузаронӣ"
 
 #: source/formwizard/dbwizres.src#RID_DB_QUERY_WIZARD_START + 88.String.Text
 msgid  "A field that has not been assigned an aggregate function must be used in a group."
-msgstr ""
+msgstr "Майдоне, ки дар он функтсияи агрегатӣ истифода нашудааст барои гурӯҳ истифода мешавад."
 
 #: source/formwizard/dbwizres.src#RID_DB_QUERY_WIZARD_START + 89.String.Text
 msgid  "The condition '<FIELDNAME> <LOGICOPERATOR> <VALUE>' was chosen twice. Each condition can only be chosen once"
-msgstr ""
+msgstr "Шарти '<FIELDNAME> <LOGICOPERATOR> <VALUE>' ду маротиба интихоб шудааст. Ҳар як шарт танҳо як маротиба бояд истифода шавад"
 
 #: source/formwizard/dbwizres.src#RID_DB_QUERY_WIZARD_START + 90.String.Text
 msgid  "The aggregate function <FUNCTION> has been assigned twice to the fieldname '<NUMERICFIELD>'."
-msgstr ""
+msgstr "Функтсияи агрегатии <FUNCTION> ду маротиба ба майдони '<NUMERICFIELD>' муқаррар шудааст."
 
 #: source/formwizard/dbwizres.src#RID_DB_QUERY_WIZARD_START + 91.String.Text
 msgid  ", "
@@ -1321,11 +1321,11 @@ msgstr "Формаи '<REPORTFORM>' вуҷуд надорад"
 
 #: source/formwizard/dbwizres.src#RID_DB_REPORT_WIZARD_START + 65.String.Text
 msgid  "The query with the statement <BR>'<STATEMENT>' <BR> could not be run. <BR> Check your data source."
-msgstr ""
+msgstr "Дархост бо инструктсияи <BR>'<STATEMENT>' <BR> иҷро карда намешавад.<BR> Манбаи далелҳоро хабар гиред."
 
 #: source/formwizard/dbwizres.src#RID_DB_REPORT_WIZARD_START + 66.String.Text
 msgid  "The following hidden control in the form '<REPORTFORM>' could not be read: '<CONTROLNAME>'."
-msgstr ""
+msgstr "Имкнои хондани мурвати зерини ниҳонии дар формаи '<REPORTFORM>' буда нест: '<CONTROLNAME>'."
 
 #: source/formwizard/dbwizres.src#RID_DB_REPORT_WIZARD_START + 67.String.Text
 msgid  "Importing data..."
@@ -1349,7 +1349,7 @@ msgstr "Майдон"
 
 #: source/formwizard/dbwizres.src#RID_DB_REPORT_WIZARD_START + 72.String.Text
 msgid  "An error occurred in the wizard.<BR>The template '%PATH' could be erroneous.<BR>Either the required sections or tables do not exist or exist under the wrong name.<BR>See the Help for more detailed information.<BR>Please select another template."
-msgstr ""
+msgstr "Дар кори Ёвар хатогӣ рух дод.<BR>Қолаби '%PATH' мумкин ғалатӣ бошад.<BR>Қисм ё ҷадвал вуҷуд надоранд ё худ бо номи дигар омадаанд.<BR>Барои маълумот ба Кӯмак нигаред.<BR>Ҳоло қолаби дигарро интихоб кунед."
 
 #: source/formwizard/dbwizres.src#RID_DB_REPORT_WIZARD_START + 73.String.Text
 msgid  "There is an invalid user field in a table."
@@ -1357,15 +1357,15 @@ msgstr "Майдони ғалатии истифодабар дар ҷадвал
 
 #: source/formwizard/dbwizres.src#RID_DB_REPORT_WIZARD_START + 74.String.Text
 msgid  "The sort criterium '<FIELDNAME>' was chosen twice. Each criterium can only be chosen once."
-msgstr ""
+msgstr "Критерияи низомноккунии  '<FIELDNAME>' ду маротиба интихоб шудааст. Ҳар як критерия метавонад як бор истифода шавад."
 
 #: source/formwizard/dbwizres.src#RID_DB_REPORT_WIZARD_START + 75.String.Text
 msgid  "Note: The dummy text will be replaced by data from the database when the report is created."
-msgstr ""
+msgstr "Диққат: Матни дурӯғӣ бо далелҳо аз махзани далелҳо иваз карда мешаванд."
 
 #: source/formwizard/dbwizres.src#RID_DB_REPORT_WIZARD_START + 76.String.Text
 msgid  "A report '%REPORTNAME' already exists in the database. Please assign another name."
-msgstr ""
+msgstr "Ҳисоботи '%REPORTNAME' аллакай дар махзани далелҳо мавҷуд аст. Дигар номро интихоб кунед."
 
 #: source/formwizard/dbwizres.src#RID_DB_REPORT_WIZARD_START + 78.String.Text
 msgid  "How do you want to proceed after creating the report?"
@@ -1465,7 +1465,7 @@ msgstr "Сохтани ҷадвал"
 
 #: source/formwizard/dbwizres.src#RID_DB_TABLE_WIZARD_START + 14.String.Text
 msgid  "This wizard helps you to create a table for your database. After selecting a table category and a sample table, choose the fields you want to include in your table. You can include fields from more than one sample table."
-msgstr ""
+msgstr "Ин Ёвар ба шумо барои сохтани ҷадвал кӯмак мерасонад. Пас аз интихоби гурӯҳи ҷадвалҳо ва ҷадвали намунавӣ, майдонҳоро барои дохил кардан дар ҷадвали нав интихоб кунед. Шумо метавонед майдонҳоро аз якчанд ҷадвали намунавӣ интихоб кунед."
 
 #: source/formwizard/dbwizres.src#RID_DB_TABLE_WIZARD_START + 15.String.Text
 msgid  "Ca~tegory"
@@ -1509,7 +1509,7 @@ msgstr "~Майдонҳои интихобшуда"
 
 #: source/formwizard/dbwizres.src#RID_DB_TABLE_WIZARD_START + 26.String.Text
 msgid  "A primary key uniquely identifies each record in a database table. Primary keys ease the linking of information in separate tables, and it is recommended that you have a primary key in every table. Without a primary key, it will not be possible to enter data into this table."
-msgstr ""
+msgstr "Калиди асосӣ ҳар чк навишти дар ҷадвали МД бударо мушаххас медорад. Калидҳои асосӣ барои васлкунии ҷадвалҳои ҷудогона кӯмак мерасонанд ва аз ин лиҳоз бояд дар ҳар як ҷадвал сохта шаванд. Бе сохтани калиди асосӣ, дохилкунии далелҳо дар ин ҷадвал номумкин аст."
 
 #: source/formwizard/dbwizres.src#RID_DB_TABLE_WIZARD_START + 27.String.Text
 msgid  "~Create a primary key"
@@ -1545,7 +1545,7 @@ msgstr "Ба ҷадвал чӣ ном мегузоред?"
 
 #: source/formwizard/dbwizres.src#RID_DB_TABLE_WIZARD_START + 35.String.Text
 msgid  "Congratulations. You have entered all the information needed to create your table."
-msgstr ""
+msgstr "Табрик. Шумо ҳама маълумоти барои сохтани ҷадвал лозимбударо дохил кардед."
 
 #: source/formwizard/dbwizres.src#RID_DB_TABLE_WIZARD_START + 36.String.Text
 msgid  "What do you want to do next?"
@@ -1569,11 +1569,11 @@ msgstr "Ҷадвали сохтаатон кушода нашуд."
 
 #: source/formwizard/dbwizres.src#RID_DB_TABLE_WIZARD_START + 41.String.Text
 msgid  "The table name '%TABLENAME' contains a character ('%SPECIALCHAR') that might not be supported by the database."
-msgstr ""
+msgstr "Номи ҷадвал '%TABLENAME' рамзи ('%SPECIALCHAR') дорад, ки бо МД дастгирӣ карда намешавад."
 
 #: source/formwizard/dbwizres.src#RID_DB_TABLE_WIZARD_START + 42.String.Text
 msgid  "The field name '%FIELDNAME' contains a special character ('%SPECIALCHAR') that might not be supported by the database."
-msgstr ""
+msgstr "Номи ҷадвал '%FIELDNAME' рамзи махсуси ('%SPECIALCHAR') дорад, ки бо МД дастгирӣ карда намешавад."
 
 #: source/formwizard/dbwizres.src#RID_DB_TABLE_WIZARD_START + 43.String.Text
 msgid  "Field"
@@ -1593,11 +1593,11 @@ msgstr "Кӯркунии майдони интихобшуда"
 
 #: source/formwizard/dbwizres.src#RID_DB_TABLE_WIZARD_START + 47.String.Text
 msgid  "The field cannot be inserted because this would exceed the maximum number of %COUNT possible fields in the database table"
-msgstr ""
+msgstr "Иловакунии майдон имкон надорад, аз он сабаб кӣ шумораи максималии %COUNT майдонҳо дар ҷадвали МД истифода шудааст"
 
 #: source/formwizard/dbwizres.src#RID_DB_TABLE_WIZARD_START + 48.String.Text
 msgid  "The name '%TABLENAME' already exists.\nPlease enter another name."
-msgstr ""
+msgstr "Номи '%TABLENAME' аллакай мавҷуд аст.\nНоми дигарро интихоб кунед."
 
 #: source/formwizard/dbwizres.src#RID_DB_TABLE_WIZARD_START + 49.String.Text
 msgid  "Catalog of the table"
@@ -1733,7 +1733,7 @@ msgstr "Нақшагирии саҳифа"
 
 #: source/formwizard/dbwizres.src#RID_LETTERWIZARDDIALOG_START + 31.String.Text
 msgid  "This wizard helps you to create a letter template. You can then use the template as the basis for writing letters as often as desired."
-msgstr ""
+msgstr "Ин Ёвар ба шумо барои сохтани қолаби мактуб кӯмак мекунад. Шумо метавонед ин қолабро баъдан барои сохтани мактуб истифода баред."
 
 #: source/formwizard/dbwizres.src#RID_LETTERWIZARDDIALOG_START + 32.String.Text
 msgid  "~Height:"
@@ -1801,11 +1801,11 @@ msgstr "Зерлавҳа"
 
 #: source/formwizard/dbwizres.src#RID_LETTERWIZARDDIALOG_START + 48.String.Text
 msgid  "This wizard creates a letter template which enables you to create multiple letters with the same layout and settings."
-msgstr ""
+msgstr "Ин Ёвар ба шумо барои сохтани қолаб кӯмак мекунад, ки он барои навиштани мактубҳои гуногун бо ҳамон тарҳ ва ҷӯрсозиҳо хизмат мекунад."
 
 #: source/formwizard/dbwizres.src#RID_LETTERWIZARDDIALOG_START + 49.String.Text
 msgid  "To create another new letter out of the template just navigate to the template location and double-click it."
-msgstr ""
+msgstr "Барои сохтани мактуби нав аз рӯи қолаб, ба равоқи қолаббуда гузашта ду бор бо муш онро пахш кунед."
 
 #: source/formwizard/dbwizres.src#RID_LETTERWIZARDDIALOG_START + 50.String.Text
 msgid  "Template name:"
@@ -1957,7 +1957,7 @@ msgstr "Нақшагирии саҳифа"
 
 #: source/formwizard/dbwizres.src#RID_FAXWIZARDDIALOG_START + 17.String.Text
 msgid  "This wizard helps you to create a fax template. The template can then be used to create a fax whenever needed."
-msgstr ""
+msgstr "Ин Ёвар ба шумо барои сохтани қолаби факс кӯмак мекунад. Пасон ин қолаб барои сохтани факс хизмат мекунад."
 
 #: source/formwizard/dbwizres.src#RID_FAXWIZARDDIALOG_START + 18.String.Text
 msgid  "Return address"
@@ -1981,11 +1981,11 @@ msgstr "Зерлавҳа"
 
 #: source/formwizard/dbwizres.src#RID_FAXWIZARDDIALOG_START + 23.String.Text
 msgid  "This wizard creates a fax template which enables you to create multiple faxes with the same layout and settings."
-msgstr ""
+msgstr "Ин Ёвар ба шумо барои сохтани қолаб кӯмак мекунад, ки он барои навиштани факсҳои гуногун бо ҳамон тарҳ ва ҷӯрсозиҳо хизмат мекунад."
 
 #: source/formwizard/dbwizres.src#RID_FAXWIZARDDIALOG_START + 24.String.Text
 msgid  "To create another new fax out of the template, go to the location where you saved the template and double-click the file."
-msgstr ""
+msgstr "Барои сохтани факси нав аз рӯи қолаб, ба равоқи қолаббуда гузашта ду бор бо муш онро пахш кунед."
 
 #: source/formwizard/dbwizres.src#RID_FAXWIZARDDIALOG_START + 25.String.Text
 msgid  "Template Name:"
@@ -2121,7 +2121,7 @@ msgstr "Ёвари Веб"
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +2.String.Text
 msgid  "This Web Wizard is to aid you in publishing documents on the Internet.\n\nIt will convert the documents so that they can be viewed by a web browser. In addition, it will generate a Table of Contents page with links for easy access to the documents. The Web Wizard will also allow you to customize the design and layout of your web site.\n\nYou will be able to keep the documents you have published on the web up-to-date and add or remove documents at any time."
-msgstr ""
+msgstr "Ёвари Веб барои нашрсозии ҳуҷҷати шумо дар Интернет хизмат мекунад.\n\nВай ҳуҷҷатро такмил медиҳад, ки дар браузери Веб намоиш дода мешавад. Илова бар ин вай мундариҷаро месозад, ки ҳаракат дар ҳуҷҷат осон мегардад. Ёвари Веб ҳамчунин имкон медиҳад, ки тарҳ ва намуди ҳуҷҷатро иваз намоед.\n\nШумо метавонед ин ҳуҷҷатро дар Веб ҷадид нигоҳ дошта, ҳуҷҷати навро дохил ё хориҷ карда метавонед."
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +4.String.Text
 msgid  "~Delete"
@@ -2305,7 +2305,7 @@ msgstr "Тағирдиҳии тарҳи интихобшуда"
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +61.String.Text
 msgid  "Include the following information for each document in the table of contents:"
-msgstr ""
+msgstr "Ин маълумотро барои ҳар як ҳуҷҷати дар мундариҷабуда дохил намо:"
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +62.String.Text
 msgid  "Optimize the layout for screen resolution:"
@@ -2345,19 +2345,19 @@ msgstr "Таъиноти худӣ '%FILENAME' дафтар мебошад."
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +75.String.Text
 msgid  "The ZIP target '%FILENAME' already exists. Do you want to overwrite the existing target? "
-msgstr ""
+msgstr "Таъиноти ZIP '%FILENAME' аллакай мавҷуд аст. Таъиноти додашуда рӯйнавис карда шавад? "
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +76.String.Text
 msgid  "The FTP target directory '%FILENAME' is not empty. Some files might be overwritten. Do you want to continue?"
-msgstr ""
+msgstr "Рафи таъиноти FTP '%FILENAME' холӣ нест. Мумкин аст баъзе дафтарҳо рӯйнавис шаванд. Давом диҳам?"
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +77.String.Text
 msgid  "The local target directory '%FILENAME' is not empty. Some files might be overwritten. Do you want to continue?"
-msgstr ""
+msgstr "Рафи таъиноти худӣ '%FILENAME' холӣ нест. Мумкин аст баъзе дафтарҳо рӯйнавис шаванд. Давом диҳам?"
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +78.String.Text
 msgid  "Settings already exist under the given name. Do you want to overwrite the existing settings? "
-msgstr ""
+msgstr "Ҷӯрсозиҳо бо ин ном аллакай мавҷуданд. Шумо мехоҳед ин ҷӯрсозиҳо рӯйнавис карда шаванд? "
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +79.String.Text
 msgid  "Exporting documents..."
@@ -2457,7 +2457,7 @@ msgstr "Ҳангоми нусхагузории дафтарҳори тарҳ х
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +108.String.Text
 msgid  "An error occurred while gathering document information for '%FILENAME'. "
-msgstr ""
+msgstr "Ҳангоми ҷамъории маълумот оиди '%FILENAME' хатогӣ рух дод. . "
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +109.String.Text
 msgid  "An error occurred while exporting the document '%FILENAME'."
@@ -2473,7 +2473,7 @@ msgstr "Ҳангоми экспорти ҳуҷҷати '%FILENAME' хатоги�
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +112.String.Text
 msgid  "An input/output error occurred while exporting the document '%FILENAME'."
-msgstr ""
+msgstr "Ҳангоми экспорти ҳуҷҷати '%FILENAME' хатогии воридкунӣ/хориҷкунӣ рух дод. ."
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +113.String.Text
 msgid  "An error occurred while copying media files to the temporary directory."
@@ -2541,7 +2541,7 @@ msgstr "Намоиши пешакӣ"
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +130.String.Text
 msgid  "The selected settings will be deleted.\n\nDo you really want to delete these settings? "
-msgstr ""
+msgstr "Ҷӯрсозиҳои интихобшуда кӯр карда мешаванд.\n\nШумо ҳаққонӣ мехоҳед, ки онҳоро кӯр кунед? "
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +131.String.Text
 msgid  "%NUMBER pages"
@@ -2609,19 +2609,19 @@ msgstr "Рафи FTP '%FILENAME' сохта нашуд."
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +147.String.Text
 msgid  "The FTP directory '%FILENAME' does not exist. \nCreate the directory now?"
-msgstr ""
+msgstr "Рафи FTP-и '%FILENAME' вуҷуд надорад. \nҲоло сохта шавад?"
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +148.String.Text
 msgid  "The Zip file '%FILENAME' cannot be created: a directory of the same name already exists."
-msgstr ""
+msgstr "Дафтари Zip '%FILENAME' сохта нашуд: равоқ бо ин ном мавҷуд аст."
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +149.String.Text
 msgid  "The local directory '%FILENAME' cannot be created. \nPlease check your write-access."
-msgstr ""
+msgstr "Рафи '%FILENAME' сохта нашуд. \nИҷозати навиштатонро санҷед."
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +150.String.Text
 msgid  "The local directory '%FILENAME' does not exist. \nCreate the directory now?"
-msgstr ""
+msgstr "Рафи '%FILENAME' вуҷуд надорад. \nҲоло сохта шавад?"
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +151.String.Text
 msgid  "Size: %NUMBERKB"
@@ -2757,7 +2757,7 @@ msgstr "Формаро барои навиштани дақиқаҳои рӯзн
 
 #: source/formwizard/dbwizres.src#RID_AGENDAWIZARDDIALOG_START +13.String.Text
 msgid  "This wizard helps you to create an agenda template. The template can then be used to create an agenda whenever needed."
-msgstr ""
+msgstr "Ин Ёвар барои сохтани қолаби рӯзнома кӯмак мекунад.Қолаб барои сохтани рӯзнома хизмат мекунад."
 
 #: source/formwizard/dbwizres.src#RID_AGENDAWIZARDDIALOG_START +14.String.Text
 msgid  "Time:"
@@ -2773,7 +2773,7 @@ msgstr "Суроға:"
 
 #: source/formwizard/dbwizres.src#RID_AGENDAWIZARDDIALOG_START +17.String.Text
 msgid  "Placeholders will be used in empty fields. You can replace placeholders with text later."
-msgstr ""
+msgstr "Дар ҷои холӣ ҷойнишин гузошта мешавадs. Шумо метавонед онҳоро баъдан иваз кунед."
 
 #: source/formwizard/dbwizres.src#RID_AGENDAWIZARDDIALOG_START +18.String.Text
 msgid  "..."
@@ -2785,7 +2785,7 @@ msgstr "Сохтани рӯзнома аз ~ин қолаб"
 
 #: source/formwizard/dbwizres.src#RID_AGENDAWIZARDDIALOG_START +20.String.Text
 msgid  "To create a new agenda out of the template, go to the location where you saved the template and double-click the file."
-msgstr ""
+msgstr "Барои сохтани рӯзномаи нав аз рӯи қолаб, ба равоқи қолаббуда гузашта ду бор бо муш онро пахш кунед."
 
 #: source/formwizard/dbwizres.src#RID_AGENDAWIZARDDIALOG_START +21.String.Text
 msgid  "Agenda item"
@@ -2829,7 +2829,7 @@ msgstr "Коргарони хидматӣ"
 
 #: source/formwizard/dbwizres.src#RID_AGENDAWIZARDDIALOG_START +31.String.Text
 msgid  "The agenda template will include placeholders for the names of the selected people. When creating an agenda from the template, you can replace these placeholder with the appropriate names."
-msgstr ""
+msgstr "Дар ҷои холӣ ҷойнишин гузошта мешавадs. Шумо метавонед онҳоро баъдан иваз кунед."
 
 #: source/formwizard/dbwizres.src#RID_AGENDAWIZARDDIALOG_START +32.String.Text
 msgid  "Type of meeting"
@@ -2849,7 +2849,7 @@ msgstr "Эзоҳ"
 
 #: source/formwizard/dbwizres.src#RID_AGENDAWIZARDDIALOG_START +36.String.Text
 msgid  "The agenda template will include placeholders for the selected items."
-msgstr ""
+msgstr "Дар ҷои холӣ ҷойнишин гузошта мешавадs. Шумо метавонед онҳоро баъдан иваз кунед."
 
 #: source/formwizard/dbwizres.src#RID_AGENDAWIZARDDIALOG_START +38.String.Text
 msgid  "Date:"
@@ -2857,7 +2857,7 @@ msgstr ""
 
 #: source/formwizard/dbwizres.src#RID_AGENDAWIZARDDIALOG_START +39.String.Text
 msgid  "This wizard creates an agenda template which enables you to create multiple agendas with the same layout and settings."
-msgstr ""
+msgstr "Ин Ёвар барои сохтани қолаби рӯзнома кӯмак мекунад.Қолаб барои сохтани рӯзнома хизмат мекунад."
 
 #: source/formwizard/dbwizres.src#RID_AGENDAWIZARDDIALOG_START +40.String.Text
 msgid  "Page design:"
@@ -3009,11 +3009,11 @@ msgstr "~Пӯшонидан"
 
 #: source/importwizard/importwi.src#sWelcometextLabel1.String.Text
 msgid  "This wizard converts documents in %PRODUCTNAME format and Microsoft Office documents to the new OpenDocument format."
-msgstr ""
+msgstr "Ин Ёвар ҳуҷҷатҳои формати кӯҳнаи %PRODUCTNAME ва Microsoft Office-ро ба формати нави OpenDocument табдил медиҳад."
 
 #: source/importwizard/importwi.src#sWelcometextLabel2.String.Text
 msgid  "Please note that when converting Microsoft documents any attached VBA macros lose their functionality."
-msgstr ""
+msgstr "Ҳангоми табдилдиҳии ҳуҷҷатҳои Microsoft макросҳои VBA-и дар онҳо буда фаъолияти худро гум мекунанд."
 
 #: source/importwizard/importwi.src#sWelcometextLabel3.String.Text
 msgid  "Select the document type for conversion:"
@@ -3241,59 +3241,59 @@ msgstr "Экспорт ба рафи зерин:"
 
 #: source/importwizard/importwi.src#sSumSOTextDocuments.String.Text
 msgid  "All %PRODUCTNAME text documents contained in the following directory will be imported:"
-msgstr ""
+msgstr "Ҳама ҳуҷҷатҳои матнии %PRODUCTNAME аз рафи зерин импорт карда мешаванд:"
 
 #: source/importwizard/importwi.src#sSumSOTableDocuments.String.Text
 msgid  "All %PRODUCTNAME spreadsheets contained in the following directory will be imported:"
-msgstr ""
+msgstr "Ҳамаи ҷадвалҳои электронии %PRODUCTNAME дар ин раф буда импорт карда мешаванд:"
 
 #: source/importwizard/importwi.src#sSumSODrawDocuments.String.Text
 msgid  "All %PRODUCTNAME drawing and presentation documents contained in the following directory will be imported:"
-msgstr ""
+msgstr "Ҳамаи тасвирҳо ва баёнияҳои %PRODUCTNAME дар ин раф буда импорт карда мешаванд:"
 
 #: source/importwizard/importwi.src#sSumSOMathDocuments.String.Text
 msgid  "All %PRODUCTNAME formula documents contained in the following directory will be imported:"
-msgstr ""
+msgstr "Ҳамаи формулаҳои %PRODUCTNAME дар ин раф буда импорт карда мешаванд:"
 
 #: source/importwizard/importwi.src#sSumSOTextTemplates.String.Text
 msgid  "All %PRODUCTNAME text templates contained in the following directory will be imported:"
-msgstr ""
+msgstr "Тамоми қолабҳои матнии %PRODUCTNAME аз рафи зерин импорт карда мешаванд:"
 
 #: source/importwizard/importwi.src#sSumSOTableTemplates.String.Text
 msgid  "All %PRODUCTNAME table templates contained in the following directory will be imported:"
-msgstr ""
+msgstr "Тамоми қолабҳои ҷадвалҳои электронии %PRODUCTNAME аз рафи зерин импорт карда мешаванд:"
 
 #: source/importwizard/importwi.src#sSumSODrawTemplates.String.Text
 msgid  "All %PRODUCTNAME drawing and presentation templates contained in the following directory will be imported:"
-msgstr ""
+msgstr "Тамоми қолабҳои расм ва баёнияҳои %PRODUCTNAME аз рафи зерин импорт карда мешаванд:"
 
 #: source/importwizard/importwi.src#sSumSOGlobalDocuments.String.Text
 msgid  "All %PRODUCTNAME master documents contained in the following directory will be imported:"
-msgstr ""
+msgstr "Тамоми ҳуҷҷатҳои асосии %PRODUCTNAME аз рафи зерин импорт карда мешаванд:"
 
 #: source/importwizard/importwi.src#sSumMSTextDocuments.String.Text
 msgid  "All Word documents contained in the following directory will be imported:"
-msgstr ""
+msgstr "Тамоми ҳуҷҷатҳои Word аз рафи зерин импорт карда мешаванд:"
 
 #: source/importwizard/importwi.src#sSumMSTableDocuments.String.Text
 msgid  "All Excel documents contained in the following directory will be imported:"
-msgstr ""
+msgstr "Тамоми ҳуҷҷатҳои Excel аз рафи зерин импорт карда мешаванд:"
 
 #: source/importwizard/importwi.src#sSumMSDrawDocuments.String.Text
 msgid  "All PowerPoint documents contained in the following directory will be imported:"
-msgstr ""
+msgstr "Тамоми ҳуҷҷатҳои PowerPoint аз рафи зерин импорт карда мешаванд:"
 
 #: source/importwizard/importwi.src#sSumMSTextTemplates.String.Text
 msgid  "All Word templates contained in the following directory will be imported:"
-msgstr ""
+msgstr "Тамоми қолабҳои Word аз рафи зерин импорт карда мешаванд:"
 
 #: source/importwizard/importwi.src#sSumMSTableTemplates.String.Text
 msgid  "All Excel templates contained in the following directory will be imported:"
-msgstr ""
+msgstr "Тамоми қолабҳои Excel аз рафи зерин импорт карда мешаванд:"
 
 #: source/importwizard/importwi.src#sSumMSDrawTemplates.String.Text
 msgid  "All PowerPoint templates contained in the following directory will be imported:"
-msgstr ""
+msgstr "Тамоми қолабҳои PowerPoint аз рафи зерин импорт карда мешаванд:"
 
 #: source/schedule/schedule.src#dlgCalTitle.String.Text
 msgid  "%PRODUCTNAME Calendar"
@@ -3481,7 +3481,7 @@ msgstr "Иҷроиш:"
 
 #: source/template/template.src#SAMPLES.String.Text
 msgid  "In order to use the full functionality of this sample, create a document that is based on this template."
-msgstr ""
+msgstr "Барои пурра истифода кардани ин намуна бояд ҳуҷҷати нав аз рӯи ин қолаб сохт."
 
 #: source/template/template.src#SAMPLES + 1.String.Text
 msgid  "Remarks"
@@ -3493,7 +3493,7 @@ msgstr "Интихоби мавзӯъ"
 
 #: source/template/template.src#STYLES + 1.String.Text
 msgid  "Error while saving the document to the clipboard! The following action cannot be undone."
-msgstr ""
+msgstr "Хатогии сабт дар ганҷӣ! Имкони радкунии ин амал нест."
 
 #: source/template/template.src#STYLES + 2.String.Text
 msgid  "~Cancel"

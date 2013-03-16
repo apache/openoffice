@@ -32,8 +32,8 @@ msgstr ""
 
 
 #: source/app/desktop.src#STR_RECOVER_QUERY.String.Text
-msgid  "Should the file "$1" be restored?"
-msgstr ""
+msgid  "Should the file \"$1\" be restored?"
+msgstr "Ali želite obnoviti datoteko \"$1\"?"
 
 #: source/app/desktop.src#STR_RECOVER_TITLE.String.Text
 msgid  "File Recovery"
@@ -41,15 +41,15 @@ msgstr "Obnovitev datoteke"
 
 #: source/app/desktop.src#STR_RECOVER_PREPARED.WarningBox.Message
 msgid  "An unrecoverable error has occurred.\n\nAll modified files have been saved and can\nprobably be recovered at program restart."
-msgstr ""
+msgstr "Pojavila se je nepopravljiva napaka.\n\nVse spremenjene datoteke so bile shranjene in\njih boste verjetno lahko obnovili ob ponovnem zagonu programa."
 
 #: source/app/desktop.src#STR_BOOTSTRAP_ERR_CANNOT_START.String.Text
 msgid  "The application cannot be started. "
 msgstr "Programa ni mogoče zagnati. "
 
 #: source/app/desktop.src#STR_BOOTSTRAP_ERR_DIR_MISSING.String.Text
-msgid  "The configuration directory "$1" could not be found."
-msgstr ""
+msgid  "The configuration directory \"$1\" could not be found."
+msgstr "Konfiguracijske mape \"$1\" ni mogoče najti."
 
 #: source/app/desktop.src#STR_BOOTSTRAP_ERR_PATH_INVALID.String.Text
 msgid  "The installation path is invalid."
@@ -64,16 +64,16 @@ msgid  "An internal error occurred."
 msgstr "Pojavila se je notranja napaka."
 
 #: source/app/desktop.src#STR_BOOTSTRAP_ERR_FILE_CORRUPT.String.Text
-msgid  "The configuration file "$1" is corrupt."
-msgstr ""
+msgid  "The configuration file \"$1\" is corrupt."
+msgstr "Konfiguracijska datoteka \"$1\" je okvarjena."
 
 #: source/app/desktop.src#STR_BOOTSTRAP_ERR_FILE_MISSING.String.Text
-msgid  "The configuration file "$1" was not found."
-msgstr ""
+msgid  "The configuration file \"$1\" was not found."
+msgstr "Konfiguracijske datoteke \"$1\" ni mogoče najti."
 
 #: source/app/desktop.src#STR_BOOTSTRAP_ERR_NO_SUPPORT.String.Text
-msgid  "The configuration file "$1" does not support the current version."
-msgstr ""
+msgid  "The configuration file \"$1\" does not support the current version."
+msgstr "Konfiguracijska datoteka \"$1\" ne podpira trenutne različice."
 
 #: source/app/desktop.src#STR_BOOTSTRAP_ERR_LANGUAGE_MISSING.String.Text
 msgid  "The user interface language cannot be determined."
@@ -89,15 +89,15 @@ msgstr "Konfiguracijska storitev ni na voljo."
 
 #: source/app/desktop.src#STR_BOOTSTRAP_ERR_MULTISESSION.String.Text
 msgid  "You have another instance running in a different terminal session. Close that instance and then try again."
-msgstr ""
+msgstr "Program je zagnan še v drugi seji terminala. Zaprite tisti program in poskusite znova."
 
 #: source/app/desktop.src#STR_ASK_START_SETUP_MANUALLY.String.Text
 msgid  "Start the setup application to repair the installation from the CD or the folder containing the installation packages."
-msgstr ""
+msgstr "Zaženite namestitveni program, da popravite namestitev, s CD-ja ali iz mape, ki vsebuje namestitveni paket."
 
 #: source/app/desktop.src#STR_CONFIG_ERR_SETTINGS_INCOMPLETE.String.Text
 msgid  "The startup settings for accessing the central configuration are incomplete. "
-msgstr ""
+msgstr "Zagonske nastavitve za dostop do osrednje konfiguracije so nepopolne. "
 
 #: source/app/desktop.src#STR_CONFIG_ERR_CANNOT_CONNECT.String.Text
 msgid  "A connection to the central configuration could not be established. "
@@ -105,7 +105,7 @@ msgstr "Ni mogoče vzpostaviti povezave z osrednjimi nastavitvami. "
 
 #: source/app/desktop.src#STR_CONFIG_ERR_RIGHTS_MISSING.String.Text
 msgid  "You cannot access the central configuration because of missing access rights. "
-msgstr ""
+msgstr "Zaradi neustreznih pravic nimate dostopa do osrednjih nastavitev. "
 
 #: source/app/desktop.src#STR_CONFIG_ERR_ACCESS_GENERAL.String.Text
 msgid  "A general error occurred while accessing your central configuration. "
@@ -113,11 +113,11 @@ msgstr "Pri dostopu do osrednje konfiguracije je prišlo do splošne napake. "
 
 #: source/app/desktop.src#STR_CONFIG_ERR_NO_WRITE_ACCESS.String.Text
 msgid  "The changes to your personal settings cannot be stored centrally because of missing access rights. "
-msgstr ""
+msgstr "Zaradi neustreznih dostopnih pravic ni mogoče shraniti vaših osebnih nastavitev v osrednjo konfiguracijo. "
 
 #: source/app/desktop.src#STR_BOOTSTRAP_ERR_CFG_DATAACCESS.String.Text
 msgid  "%PRODUCTNAME cannot be started due to an error in accessing the %PRODUCTNAME configuration data.\n\nPlease contact your system administrator."
-msgstr ""
+msgstr "%PRODUCTNAME ni mogoče zagnati zaradi napake pri dostopu do konfiguracijskih podatkov %PRODUCTNAME.\n\nStopite v stik s svojim sistemskim skrbnikom."
 
 #: source/app/desktop.src#STR_INTERNAL_ERRMSG.String.Text
 msgid  "The following internal error has occurred: "
@@ -125,7 +125,7 @@ msgstr "Prišlo je do naslednje notranje napake: "
 
 #: source/app/desktop.src#QBX_USERDATALOCKED.QueryBox.Message
 msgid  "Either another instance of %PRODUCTNAME is accessing your personal settings or your personal settings are locked.\nSimultaneous access can lead to inconsistencies in your personal settings. Before continuing, you should make sure user '$u' closes %PRODUCTNAME on host '$h'.\n\nDo you really want to continue?"
-msgstr ""
+msgstr "Do vaših osebnih nastavitev dostopa druga kopija %PRODUCTNAME ali pa so vaše osebne nastavitve zaklenjene.\nVečkratni dostop lahko pripelje do nekonsistentih osebnih nastavitev. Preden nadaljujete, se prepričajte, da je uporabnik '$u' zaprl %PRODUCTNAME na računalniku '$h'.\n\nResnično želite nadaljevati?"
 
 #: source/app/desktop.src#STR_TITLE_USERDATALOCKED.String.Text
 msgid  "%PRODUCTNAME %PRODUCTVERSION"
@@ -149,11 +149,11 @@ msgstr "Upravljalec poti ni na voljo.\n"
 
 #: source/app/desktop.src#STR_BOOSTRAP_ERR_NOTENOUGHDISKSPACE.String.Text
 msgid  "%PRODUCTNAME user installation could not be completed due to insufficient free disk space. Please free more disc space at the following location and restart %PRODUCTNAME:\n\n"
-msgstr ""
+msgstr "Uporabniške namestitve %PRODUCTNAME ni mogoče zaključiti zaradi pomanjkanja prostora na disku. Sprostite več prostora na navedenem pogonu in ponovno zaženite %PRODUCTNAME:\n\n"
 
 #: source/app/desktop.src#STR_BOOSTRAP_ERR_NOACCESSRIGHTS.String.Text
 msgid  "%PRODUCTNAME user installation could not be processed due to missing access rights. Please make sure that you have sufficient access rights for the following location and restart %PRODUCTNAME:\n\n"
-msgstr ""
+msgstr "Uporabniške namestitve %PRODUCTNAME ni mogoče zaključiti zaradi neustreznih pravic dostopa. Preverite, da imate zadostne pravice za dostop do navedenega mesta in ponovno zaženite %PRODUCTNAME:\n\n"
 
 #: source/deployment/gui/dp_gui_versionboxes.src#RID_WARNINGBOX_VERSION_LESS.WarningBox.Message
 msgid  "You are about to install version $NEW of the extension \'$NAME\'.\nThe newer version $DEPLOYED is already installed.\nClick \'OK\' to replace the installed extension.\nClick \'Cancel\' to stop the installation."
@@ -185,7 +185,7 @@ msgstr "Preverjanje sistemskih odvisnosti"
 
 #: source/deployment/gui/dp_gui_dependencydialog.src#RID_DLG_DEPENDENCIES.RID_DLG_DEPENDENCIES_TEXT.FixedText.Text
 msgid  "The extension cannot be installed as the following\nsystem dependencies are not fulfilled:"
-msgstr ""
+msgstr "Razširitve ni mogoče namestiti, ker niso izpolnjene\nsledeče sistemske odvisnosti:"
 
 #: source/deployment/gui/dp_gui_dialog.src#RID_STR_ADD_PACKAGES.String.Text
 msgid  "Add Extension(s)"
@@ -253,11 +253,11 @@ msgstr "Izhod"
 
 #: source/deployment/gui/dp_gui_dialog.src#RID_STR_NO_ADMIN_PRIVILEGE.String.Text
 msgid  "%PRODUCTNAME has been updated to a new version. Some shared %PRODUCTNAME extensions are not compatible with this version and need to be updated before %PRODUCTNAME can be started.\n\nUpdating of shared extension requires administrator privileges. Contact your system administrator to update the following shared extensions:"
-msgstr ""
+msgstr "%PRODUCTNAME je bil posodobljen na novejšo različico. Nekatere skupne razširitve za %PRODUCTNAME niso združljive s to različico, zato jih je potrebno posodobiti, preden lahko poženete %PRODUCTNAME.\n\nPosodabljanje skupne razširitve zahteva skrbiške pravice. Prosite skrbnika svojega sistema, da posodobi naslednje skupne razširitve:"
 
 #: source/deployment/gui/dp_gui_dialog.src#RID_STR_ERROR_MISSING_DEPENDENCIES.String.Text
 msgid  "The extension cannot be enabled as the following system dependencies are not fulfilled:"
-msgstr ""
+msgstr "Razširitve ni mogoče omogočiti, ker niso izpolnjene sledeče sistemske odvisnosti:"
 
 #: source/deployment/gui/dp_gui_dialog.src#RID_STR_ERROR_MISSING_LICENSE.String.Text
 msgid  "This extension is disabled because you haven't accepted the license yet.\n"
@@ -273,7 +273,7 @@ msgstr "Licenčna pogodba programske razširitve"
 
 #: source/deployment/gui/dp_gui_dialog.src#RID_DLG_LICENSE.FT_LICENSE_HEADER.FixedText.Text
 msgid  "Please follow these steps to proceed with the installation of the extension:"
-msgstr ""
+msgstr "Sledite naslednjim korakom za nadaljevanje namestitve razširitve:"
 
 #: source/deployment/gui/dp_gui_dialog.src#RID_DLG_LICENSE.FT_LICENSE_BODY_1.FixedText.Text
 msgid  "1."
@@ -437,7 +437,7 @@ msgstr "Na voljo ni novih posodobitev."
 
 #: source/deployment/gui/dp_gui_updatedialog.src#RID_DLG_UPDATE.RID_DLG_UPDATE_NOINSTALLABLE.String.Text
 msgid  "No installable updates are available. To see ignored or disabled updates, mark the check box 'Show all updates'."
-msgstr ""
+msgstr "Na voljo ni posodobitev, ki bi jih lahko namestili. Za izpis vseh prezrtih ali onemogočenih posodobitev označite potrditveno polje 'Pokaži vse posodobitve'."
 
 #: source/deployment/gui/dp_gui_updatedialog.src#RID_DLG_UPDATE.RID_DLG_UPDATE_FAILURE.String.Text
 msgid  "An error occurred:"
@@ -521,7 +521,7 @@ msgstr "Potrebna je posodobitev razširitve"
 
 #: source/deployment/gui/dp_gui_dialog2.src#RID_DLG_UPDATE_REQUIRED.RID_EM_FT_MSG.FixedText.Text
 msgid  "%PRODUCTNAME has been updated to a new version. Some installed %PRODUCTNAME extensions are not compatible with this version and need to be updated before they can be used."
-msgstr ""
+msgstr "%PRODUCTNAME je bil posodobljen na novejšo različico. Nekatere nameščene razširitve za %PRODUCTNAME niso združljive s to različico, zato jih je potrebno posodobiti, preden jih lahko uporabite."
 
 #: source/deployment/gui/dp_gui_dialog2.src#RID_DLG_UPDATE_REQUIRED.RID_EM_FT_PROGRESS.FixedText.Text
 msgid  "Adding %EXTENSION_NAME"
@@ -537,7 +537,7 @@ msgstr "Onemogoči vse"
 
 #: source/deployment/gui/dp_gui_dialog2.src#RID_QUERYBOX_INSTALL_FOR_ALL.QueryBox.Message
 msgid  "Make sure that no further users are working with the same %PRODUCTNAME, when installing an extension for all users in a multi user environment.\n\nFor whom do you want to install the extension?\n"
-msgstr ""
+msgstr "Prepričajte se, da noben drug uporabnik ne uporablja istega paketa %PRODUCTNAME, če nameščate razširitev za vse uporabnike v večuporabniškem okolju.\n\nZa koga želite namestiti razširitev?\n"
 
 #: source/deployment/manager/dp_manager.src#RID_STR_COPYING_PACKAGE.String.Text
 msgid  "Copying: "
@@ -641,7 +641,7 @@ msgstr "Razširitve ni mogoče namestiti iz naslednjega razloga:\n"
 
 #: source/deployment/registry/help/dp_help.src#RID_STR_HELPPROCESSING_XMLPARSING_ERROR.String.Text
 msgid  "The extension will not be installed because an error occurred in the Help files:\n"
-msgstr ""
+msgstr "Razširitev ni nameščena, ker je prišlo do napake v datotekah pomoči:\n"
 
 #: source/deployment/registry/package/dp_package.src#RID_STR_PACKAGE_BUNDLE.String.Text
 msgid  "Extension"
@@ -672,16 +672,16 @@ msgid  "Extension Software License Agreement of $NAME:"
 msgstr "Licenčna pogodba razširitve $NAME:"
 
 #: source/deployment/unopkg/unopkg.src#RID_STR_UNOPKG_ACCEPT_LIC_2.String.Text
-msgid  "Read the complete License Agreement displayed above. Accept the License Agreement by typing "yes" on the console then press the Return key. Type "no" to decline and to abort the extension setup."
-msgstr ""
+msgid  "Read the complete License Agreement displayed above. Accept the License Agreement by typing \"yes\" on the console then press the Return key. Type \"no\" to decline and to abort the extension setup."
+msgstr "Preberite celotno licenčno pogodbo, prikazano zgoraj. Sprejmite pogoje licenčne pogodbe z vnosom \"yes\" in pritiskom na tipko Enter. Vnesite \"no\", da zavrnete pogoje licenčne pogodbe in prekinete namestitev razširitve."
 
 #: source/deployment/unopkg/unopkg.src#RID_STR_UNOPKG_ACCEPT_LIC_3.String.Text
-msgid  "[Enter "yes" or "no"]:"
-msgstr ""
+msgid  "[Enter \"yes\" or \"no\"]:"
+msgstr "[Vnesite \"yes\" ali \"no\"]:"
 
 #: source/deployment/unopkg/unopkg.src#RID_STR_UNOPKG_ACCEPT_LIC_4.String.Text
-msgid  "Your input was not correct. Please enter "yes" or "no":"
-msgstr ""
+msgid  "Your input was not correct. Please enter \"yes\" or \"no\":"
+msgstr "Vnos ni pravilen. Vnesite \"yes\" ali \"no\":"
 
 #: source/deployment/unopkg/unopkg.src#RID_STR_UNOPKG_ACCEPT_LIC_YES.String.Text
 msgid  "YES"
@@ -701,7 +701,7 @@ msgstr "N"
 
 #: source/deployment/unopkg/unopkg.src#RID_STR_CONCURRENTINSTANCE.String.Text
 msgid  "unopkg cannot be started. The lock file indicates it as already running. If this does not apply, delete the lock file at:"
-msgstr ""
+msgstr "unopkg ni mogoče zagnati. Datoteka zaklepa nakazuje, da je že v teku. Če to ne velja, izbrišite datoteko zaklepa s tega mesta:"
 
 #: source/deployment/unopkg/unopkg.src#RID_STR_UNOPKG_ERROR.String.Text
 msgid  "ERROR: "
@@ -737,11 +737,11 @@ msgstr "Registracija"
 
 #: source/migration/wizard.src#STR_WELCOME_MIGRATION.String.Text
 msgid  "This wizard will guide you through the license agreement, the transfer of user data from %OLD_VERSION and the registration of %PRODUCTNAME.\n\nClick 'Next' to continue."
-msgstr ""
+msgstr "Ta čarovnik vas bo vodil skozi licenčno pogodbo, prenos uporabniških podatkov iz %OLD_VERSION in registracijo %PRODUCTNAME.\n\nKliknite 'Naprej' za nadaljevanje."
 
 #: source/migration/wizard.src#STR_WELCOME_WITHOUT_LICENSE.String.Text
 msgid  "This wizard will guide you through the registration of %PRODUCTNAME.\n\nClick 'Next' to continue."
-msgstr ""
+msgstr "Čarovnik vas bo vodil skozi registracijo programa %PRODUCTNAME.\n\nKliknite 'Naprej' za nadaljevanje."
 
 #: source/migration/wizard.src#STR_FINISH.String.Text
 msgid  "~Finish"
@@ -749,11 +749,11 @@ msgstr "~Dokončaj"
 
 #: source/migration/wizard.src#STR_REGISTRATION_OOO.String.Text
 msgid  "You now have the opportunity to support and contribute to the fastest growing open source community in the world.\n\nHelp us prove that %PRODUCTNAME has already gained significant market share by registering.\n\nRegistering is voluntary and without obligation."
-msgstr ""
+msgstr "Zdaj imate priložnost, da podprete in prispevate najhitreje rastoči skupnosti odprte kode na svetu.\n\nPomagajte nam dokazati, da ima pisarniški paket %PRODUCTNAME pomemben tržni delež - registrirajte %PRODUCTNAME.\n\nRegistracija je prostovoljna in je brez obvez."
 
 #: source/migration/wizard.src#ERRBOX_REG_NOSYSBROWSER.ErrorBox.Message
 msgid  "An error occurred in starting the web browser.\nPlease check the %PRODUCTNAME and web browser settings."
-msgstr ""
+msgstr "Prišlo je do napake pri zagonu spletnega brskalnika.\nProsimo, preverite nastavitve %PRODUCTNAME in spletnega brskalnika."
 
 #: source/migration/wizard.src#QB_ASK_DECLINE.QueryBox.Message
 msgid  "Do you really want to decline?"
@@ -765,7 +765,7 @@ msgstr "Dobrodošli v %PRODUCTNAME %PRODUCTVERSION"
 
 #: source/migration/wizard.src#TP_WELCOME.FT_WELCOME_BODY.FixedText.Text
 msgid  "This wizard will guide you through the license agreement and the registration of %PRODUCTNAME.\n\nClick 'Next' to continue."
-msgstr ""
+msgstr "Ta čarovnik vas bo vodil skozi licenčno pogodbo in registracijo %PRODUCTNAME.\n\nKliknite 'Naprej' za nadaljevanje."
 
 #: source/migration/wizard.src#TP_LICENSE.FT_LICENSE_HEADER.FixedText.Text
 msgid  "Please follow these steps to accept the license"
@@ -777,7 +777,7 @@ msgstr "1."
 
 #: source/migration/wizard.src#TP_LICENSE.FT_LICENSE_BODY_1_TXT.FixedText.Text
 msgid  "View the complete License Agreement. Please use the scrollbar or the '%PAGEDOWN' button in this dialog to view the entire license text."
-msgstr ""
+msgstr "Preberite Licenčno pogodbo. Uporabite drsnik ali gumb '%PAGEDOWN', da boste videli celotno besedilo pogodbe."
 
 #: source/migration/wizard.src#TP_LICENSE.FT_LICENSE_BODY_2.FixedText.Text
 msgid  "2."
@@ -805,7 +805,7 @@ msgstr "Prenos osebnih podatkov"
 
 #: source/migration/wizard.src#TP_MIGRATION.FT_MIGRATION_BODY.FixedText.Text
 msgid  "Most personal data from %OLDPRODUCT installation can be reused in %PRODUCTNAME %PRODUCTVERSION.\n\nIf you do not want to reuse any settings in %PRODUCTNAME %PRODUCTVERSION, unmark the check box."
-msgstr ""
+msgstr "Večino osebnih podatkov iz namestitve %OLDPRODUCT lahko prenesete v %PRODUCTNAME %PRODUCTVERSION.\n\nČe ne želite uporabiti teh nastavitev v %PRODUCTNAME %PRODUCTVERSION, odznačite označevalno polje."
 
 #: source/migration/wizard.src#TP_MIGRATION.CB_MIGRATION.CheckBox.Text
 msgid  "Transfer personal data"
@@ -817,7 +817,7 @@ msgstr "Spletna posodobitev"
 
 #: source/migration/wizard.src#TP_UPDATE_CHECK.FT_UPDATE_CHECK_BODY.FixedText.Text
 msgid  "%PRODUCTNAME searches automatically at regular intervals for new versions.\nIn doing so online update does not transfer personal data.\nAs soon as a new version is available, you will be notified.\n\nYou can configure this feature at Tools / Options... / %PRODUCTNAME / Online Update."
-msgstr ""
+msgstr "%PRODUCTNAME samodejno v enakih intervalih preverja, če obstajajo nove različice.\nPri tem se pri spletnem posodabljanju ne prenašajo osebni podatki.\nTakoj, ko bo na voljo novejša različica, boste o tem obveščeni.\n\nTo možnost lahko prilagodite svojim željam v Orodja / Možnosti ... / %PRODUCTNAME / Spletna posodobitev."
 
 #: source/migration/wizard.src#TP_UPDATE_CHECK.CB_UPDATE_CHECK.CheckBox.Text
 msgid  "~Check for updates automatically"
@@ -829,7 +829,7 @@ msgstr "Spodaj vnesite ime, priimek in začetnice"
 
 #: source/migration/wizard.src#TP_USER.FT_USER_BODY.FixedText.Text
 msgid  "The user name will be used in the document properties, templates and when you record changes made to documents."
-msgstr ""
+msgstr "Uporabniško ime bo uporabljeno v lastnostih dokumenta, predlogah in pri primerjavi zapisanih sprememb v dokumentih."
 
 #: source/migration/wizard.src#TP_USER.FT_USER_FIRST.FixedText.Text
 msgid  "~First name"
@@ -853,7 +853,7 @@ msgstr "Registracija %PRODUCTNAME"
 
 #: source/migration/wizard.src#TP_REGISTRATION.FT_REGISTRATION_BODY.FixedText.Text
 msgid  "You now have the opportunity to register as a %PRODUCTNAME user. Registration is voluntary and is without obligation.\n\nIf you register, we can inform you about new developments concerning this product."
-msgstr ""
+msgstr "Zdaj imate priložnost, da se registrirate kot uporabnik %PRODUCTNAME. Registracija je prostovoljna in neobvezna.\n\nČe se registrirate, vas bomo lahko obveščali o razvoju tega izdelka."
 
 #: source/migration/wizard.src#TP_REGISTRATION.RB_REGISTRATION_NOW.RadioButton.Text
 msgid  "I want to register ~now"
@@ -869,7 +869,7 @@ msgstr "~Ne želim se registrirati"
 
 #: source/migration/wizard.src#TP_REGISTRATION.FT_REGISTRATION_END.FixedText.Text
 msgid  "We hope you enjoy working with %PRODUCTNAME.\n\nTo exit the wizard, click 'Finish'."
-msgstr ""
+msgstr "Upamo, da vam je delo z %PRODUCTNAME v užitek.\n\nZa izhod iz čarovnika kliknite 'Dokončaj'."
 
 #: win32/source/rebase/rebasegui.ulf#%APP_TITLE%
 msgid  "Installation Status"
@@ -886,6 +886,10 @@ msgstr "Namestitev je optimizirana za strežnike."
 #: win32/source/rebase/rebasegui.ulf#%MSG_NO_INSTALLATION_FOUND%
 msgid  "Cannot find Office installation."
 msgstr "Namestitve paketa Office ni mogoče najti."
+
+#: win32/source/setup/setup.ulf#%APP_TITLE%
+msgid  "Setup"
+msgstr "Namestitveni program"
 
 #: win32/source/setup/setup.ulf#%APP_PROD_TITLE%
 msgid  "The %PRODUCTNAME Setup"
@@ -905,7 +909,7 @@ msgstr "Namestitveni program je bil preklican"
 
 #: win32/source/setup/setup.ulf#%REQUIRES_ADMIN_PRIV%
 msgid  "Administrator privileges are required for upgrading the Windows Installer."
-msgstr ""
+msgstr "Za posodobitev programa Windows Installer morate imeti pravice skrbnika sistema."
 
 #: win32/source/setup/setup.ulf#%FILE_NOT_FOUND%
 msgid  "Setup was unable to find the file '%s'."
@@ -917,15 +921,15 @@ msgstr "Neveljavna možnost '%s' v ukazni vrstici. Za pomoč vnesite '/?'"
 
 #: win32/source/setup/setup.ulf#%SETUP_TO_OLD%
 msgid  "This package requires at least the version '%s' of the Windows Installer. \nYou have Windows Installer '%s' on your system!"
-msgstr ""
+msgstr "Ta paket zahteva različico programa Windows Installer '%s' ali novejšo. \nVaš sistem uporablja Windows Installer '%s'!"
 
 #: win32/source/setup/setup.ulf#%SETUP_NOT_FOUND%
 msgid  "This package requires the Windows Installer. \nYou need at least Windows Installer '%s' on your system!"
-msgstr ""
+msgstr "Ta paket potrebuje program Windows Installer. \nNa svojem sistemu bi potrebovali vsaj Windows Installer različice '%s'!"
 
 #: win32/source/setup/setup.ulf#%USAGE%
 msgid  "Usage:\n   /? :  Shows this dialog.\n   /a :  Performs an administrative installation.\n   /j[u|m] :  Performs an advertising installation.\n   /q[n] : Do not show any user interface (silent mode).\n"
-msgstr ""
+msgstr "Uporaba:\n   /? :  Prikaže to pogovorno okno.\n   /a :  Izvede skrbniško namestitev.\n   /j[u|m] :  Izvede oglaševalno namestitev.\n   /q[n] : Ne prikaže uporabniškega vmesnika (tihi način).\n"
 
 #: win32/source/setup/setup.ulf#%ALREADY_RUNNING%
 msgid  "There is already a setup process running."
@@ -1046,7 +1050,3 @@ msgstr "kitajski (poenostavljeni)"
 #: win32/source/setup/setup.ulf#%LANGUAGE_PT_PT%
 msgid  "Portuguese (Portugal)"
 msgstr "portugalski (Portugalska)"
-
-#: win32/source/setup/setup.ulf#%APP_TITLE%
-msgid  "Setup"
-msgstr "Namestitveni program"

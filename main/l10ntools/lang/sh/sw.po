@@ -725,7 +725,7 @@ msgstr "Datoteka nije u formatu WinWord6."
 
 #: source/ui/app/error.src#RID_SW_ERRHDL.ERR_CODE ( ERRCODE_CLASS_READ , ERR_WW6_FASTSAVE_ERR ).String.Text
 msgid  "This file was saved with WinWord in 'Fast Save' mode. Please unmark the WinWord option 'Allow Fast Saves' and save the file again."
-msgstr ""
+msgstr "Datoteka je sačuvana WinWord-om u režimu „brzog čuvanja“. Isključite opciju „dozvoli brza čuvanja“ u WinWord-u i ponovo sačuvajte datoteku."
 
 #: source/ui/app/error.src#RID_SW_ERRHDL.ERR_CODE ( ERRCODE_CLASS_READ , ERR_FORMAT_ROWCOL ).String.Text
 msgid  "File format error found at $(ARG1)(row,col)."
@@ -741,7 +741,7 @@ msgstr "Datoteka nije u formatu WinWord97."
 
 #: source/ui/app/error.src#RID_SW_ERRHDL.ERR_CODE ( ERRCODE_CLASS_READ , ERR_FORMAT_FILE_ROWCOL ).String.Text
 msgid  "Format error discovered in the file in sub-document $(ARG1) at $(ARG2)(row,col)."
-msgstr ""
+msgstr "Otkrivena je greška u formatu datoteke u poddokumentu $(ARG1) na $(ARG2)(red,kol)."
 
 #: source/ui/app/error.src#RID_SW_ERRHDL.ERR_CODE ( ERRCODE_CLASS_WRITE , ERR_SWG_WRITE_ERROR ).String.Text
 msgid  "Error writing file."
@@ -789,7 +789,7 @@ msgstr "Ne možete pročitati nijedan crtež."
 
 #: source/ui/app/error.src#RID_SW_ERRHDL.WARN_CODE ( ERRCODE_CLASS_READ , WARN_WW6_FASTSAVE_ERR ).String.Text
 msgid  "This file was saved with WinWord in 'Fast Save' mode. Please unmark the WinWord option 'Allow Fast Saves' and save the file again."
-msgstr ""
+msgstr "Datoteka je sačuvana WinWord-om u režimu „brzog čuvanja“. Isključite opciju „dozvoli brza čuvanja“ u WinWord-u i ponovo sačuvajte datoteku."
 
 #: source/ui/app/error.src#RID_SW_ERRHDL.WARN_CODE ( ERRCODE_CLASS_READ , WARN_SWG_FEATURES_LOST ).String.Text
 msgid  "Not all attributes could be read."
@@ -817,7 +817,7 @@ msgstr "Ne mogu da sačuvam dokument u potpunosti."
 
 #: source/ui/app/error.src#RID_SW_ERRHDL.WARN_CODE ( ERRCODE_CLASS_WRITE , WARN_SWG_HTML_NO_MACROS).String.Text
 msgid  "This HTML document contains %PRODUCTNAME Basic macros.\nThey were not saved with the current export settings."
-msgstr ""
+msgstr "Ovaj HTML dokument sadrži %PRODUCTNAME bejzik makroe.\nOni nisu sačuvani sa trenutnim podešavanjima izvoza."
 
 #: source/ui/app/error.src#RID_SW_ERRHDL.ERR_CODE ( ERRCODE_CLASS_WRITE , WARN_WRITE_ERROR_FILE ).String.Text
 msgid  "Error in writing sub-document $(ARG1)."
@@ -825,7 +825,7 @@ msgstr "Greška pri pisanju poddokumenta $(ARG1)."
 
 #: source/ui/app/error.src#RID_SW_ERRHDL.ERR_CODE ( ERRCODE_CLASS_WRITE , WARN_FORMAT_FILE_ROWCOL ).String.Text
 msgid  "Format error discovered in the file in sub-document $(ARG1) at $(ARG2)(row,col)."
-msgstr ""
+msgstr "Otkrivena je greška u formatu datoteke u poddokumentu $(ARG1) na $(ARG2)(red,kol)."
 
 #: source/ui/app/app.src#STR_PRINT_MERGE_MACRO.String.Text
 msgid  "Print form letters"
@@ -1076,8 +1076,8 @@ msgid  "Adapt Objects..."
 msgstr "Prilagodi objekte..."
 
 #: source/ui/app/app.src#MSG_COMCORE_ASKSEARCH.QueryBox.Message
-msgid  "To proceed with this action, you must first turn off the "undo" function. Do you want to turn off the "undo" function?"
-msgstr ""
+msgid  "To proceed with this action, you must first turn off the \"undo\" function. Do you want to turn off the \"undo\" function?"
+msgstr "Za nastavak morate isključiti funkciju „Opozovi“. Želite li da isključite funkciju „Opozovi“?"
 
 #: source/ui/app/app.src#STR_TABLE_DEFNAME.String.Text
 msgid  "Table"
@@ -1109,15 +1109,15 @@ msgstr "prazna"
 
 #: source/ui/app/app.src#MSG_CLPBRD_CLEAR.QueryBox.Message
 msgid  "You have a large amount of data saved in the clipboard.\nShould the clipboard contents remain available for other applications?"
-msgstr ""
+msgstr "U spisku isečaka je velika količina podataka.\nTreba li sadržaj da ostane dostupan i za druge programe?"
 
 #: source/ui/app/app.src#MSG_SAVE_HTML_QUERY.QueryBox.Message
 msgid  "Conversion into HTML format \nmay cause information loss. \nDo you want to save the document?"
-msgstr ""
+msgstr "Pretvaranje u HTML format \nmože izazvati gubitak nekih podataka. \nŽelite li da sačuvate dokument?"
 
 #: source/ui/app/app.src#MSG_SAVEAS_HTML_QUERY.QueryBox.Message
 msgid  "The source code can only be displayed if the document is saved in HTML format.\nWould you like to save the document as HTML?"
-msgstr ""
+msgstr "Izvorni kod se može prikazati jedino ako dokument sačuvate u HTML formatu.\nŽelite li da sačuvate dokument kao HTML?"
 
 #: source/ui/app/app.src#STR_ABSTRACT_TITLE.String.Text
 msgid  "Abstract: "
@@ -1161,11 +1161,11 @@ msgstr "Nepoznati autor"
 
 #: source/ui/app/app.src#MSG_DISABLE_UNDO_QUESTION.WarningBox.Message
 msgid  "This action deletes the list of actions that can be undone. Previous changes made to the document are still valid, but cannot be undone. Do you want to continue formatting?"
-msgstr ""
+msgstr "Ova akcija briše listu akcija i ne može se opozvati. Prethodne izmene u dokumentu i dalje važe, ali se ne mogu opozvati. Želite li da nastavite formatiranje?"
 
 #: source/ui/app/app.src#MSG_PRINT_AS_MERGE.QueryBox.Message
 msgid  "Your document contains address database fields. Do you want to print a form letter?"
-msgstr ""
+msgstr "Vaš dokument sadrži polja za adrese iz baze podataka. Želite li da štampate obrazac pisma?"
 
 #: source/ui/app/app.src#DLG_MERGE_SOURCE_UNAVAILABLE.ST_MERGE_SOURCE_UNAVAILABLE.FixedText.Text
 msgid  "The data source \'%1\' was not found. Thus the connection to the data source could not be established.\n\nPlease check the connections settings."
@@ -1177,7 +1177,7 @@ msgstr "Proveri postavke veze..."
 
 #: source/ui/app/app.src#MSG_DATA_SOURCES_UNAVAILABLE.WarningBox.Message
 msgid  "No data source has been set up yet. You need a data source, such as a database, to supply data (for example, names and addresses) for the fields."
-msgstr ""
+msgstr "Još uvek nije postavljen nijedan izvor podataka. Neophodan je izvor podataka, kao što je baza podataka, radi obezbeđivanje podataka za polja (npr. imena i adrese)."
 
 #: source/ui/app/app.src#RID_MODULE_TOOLBOX.String.Text
 msgid  "Function Bar (viewing mode)"
@@ -1193,7 +1193,7 @@ msgstr "Kontura numerisanja"
 
 #: source/ui/app/app.src#MSG_DISABLE_READLINE_QUESTION.WarningBox.Message
 msgid  "In the current document, changes are being recorded but not shown as such. In large documents, delays can occur when the document is edited. Do you want to show the changes to avoid delays?"
-msgstr ""
+msgstr "U trenutnom dokumentu izmene se beleže, ali ne prikazuju. U velikim dokumentima se mogu javiti kašnjenja pri uređivanju. Želite li da prikažete izmene da biste izbegli kašnjenja?"
 
 #: source/ui/app/mn.src#MN_TXT.FN_FORMAT_PAGE_DLG.MenuItem.Text
 msgid  "Pa~ge..."
@@ -1433,7 +1433,7 @@ msgstr "~Zakloni"
 
 #: source/ui/app/mn.src#MN_DRAW5.MN_SUB_ARRANGE.MenuItem.Text
 msgid  "~Arrange"
-msgstr "~Redosled"
+msgstr "~Raspored"
 
 #: source/ui/app/mn.src#MN_DRAW6.MN_SUB_ARRANGE.MenuItem.Text
 msgid  "~Arrange"
@@ -2041,7 +2041,7 @@ msgstr "[Ništa]"
 
 #: source/ui/chrdlg/chrdlg.src#MSG_ILLEGAL_PAGENUM.InfoBox.Message
 msgid  "Page numbers cannot be applied to the current page.  Even numbers can be used on left pages, odd numbers on right pages."
-msgstr ""
+msgstr "Ne mogu da primenim brojeve na trenutnoj stranici. Parni brojevi se mogu koristiti na levim stranicama, a neparni na desnim."
 
 #: source/ui/chrdlg/swbreak.src#DLG_BREAK.ModalDialog.Text
 msgid  "Insert Break"
@@ -2209,19 +2209,19 @@ msgstr "~Slike i objekti"
 
 #: source/ui/config/optdlg.src#TP_OPTPRINT_PAGE.CB_CTRLFLD.CheckBox.Text
 msgid  "Form control~s"
-msgstr "~Skriven tekst"
+msgstr "Kontrole obra~sca"
 
 #: source/ui/config/optdlg.src#TP_OPTPRINT_PAGE.CB_BACKGROUND.CheckBox.Text
 msgid  "Page ba~ckground"
-msgstr "Pozadina ~stranice"
+msgstr "Pozadina stranice"
 
 #: source/ui/config/optdlg.src#TP_OPTPRINT_PAGE.CB_BLACK_FONT.CheckBox.Text
 msgid  "Print text in blac~k"
-msgstr "~Mestodržači i polja za tekst"
+msgstr "Štampaj tekst ~crno"
 
 #: source/ui/config/optdlg.src#TP_OPTPRINT_PAGE.CB_HIDDEN_TEXT.CheckBox.Text
 msgid  "Hidden te~xt"
-msgstr "Sl~ike i druga grafika"
+msgstr "~Skriven tekst"
 
 #: source/ui/config/optdlg.src#TP_OPTPRINT_PAGE.CB_TEXT_PLACEHOLDER.CheckBox.Text
 msgid  "Text ~placeholder"
@@ -2241,7 +2241,7 @@ msgstr "~Desne stranice"
 
 #: source/ui/config/optdlg.src#TP_OPTPRINT_PAGE.CB_PROSPECT.CheckBox.Text
 msgid  "Broch~ure"
-msgstr "Na kraju dokumenta"
+msgstr "~Brošura"
 
 #: source/ui/config/optdlg.src#TP_OPTPRINT_PAGE.CB_PROSPECT_RTL.CheckBox.Text
 msgid  "Right to Left"
@@ -2273,7 +2273,7 @@ msgstr "Ostalo"
 
 #: source/ui/config/optdlg.src#TP_OPTPRINT_PAGE.CB_PRINTEMPTYPAGES.CheckBox.Text
 msgid  "Print ~automatically inserted blank pages"
-msgstr "Kontrole obra~sca"
+msgstr "Štampaj ~automatski ubačene prazne stranice"
 
 #: source/ui/config/optdlg.src#TP_OPTPRINT_PAGE.CB_PAPERFROMSETUP.CheckBox.Text
 msgid  "~Paper tray from printer settings"
@@ -2529,7 +2529,7 @@ msgstr "Pozadina ~stranice"
 
 #: source/ui/config/optdlg.src#STR_PRINTOPTUI.item4.ItemList.item
 msgid  "P~ictures and other graphic objects"
-msgstr ""
+msgstr "Ako je uključeno biće štampana boja pozadine i objekti koji su umetnuti u pozadinu stranice (Format - Stranica - Pozadina)."
 
 #: source/ui/config/optdlg.src#STR_PRINTOPTUI.item5.ItemList.item
 msgid  "Hidden te~xt"
@@ -2537,7 +2537,7 @@ msgstr "Sl~ike i druga grafika"
 
 #: source/ui/config/optdlg.src#STR_PRINTOPTUI.item6.ItemList.item
 msgid  "~Text placeholders"
-msgstr ""
+msgstr "Ako je uključeno biće štampane slike, crteži i OLE objekti umetnuti u dokument."
 
 #: source/ui/config/optdlg.src#STR_PRINTOPTUI.item7.ItemList.item
 msgid  "Form control~s"
@@ -2553,7 +2553,7 @@ msgstr "~Mestodržači i polja za tekst"
 
 #: source/ui/config/optdlg.src#STR_PRINTOPTUI.item10.ItemList.item
 msgid  "Pages"
-msgstr ""
+msgstr "Ako je uključeno biće štampani nazivi polja i drugih mestodržača za tekst. Isključite opciju za praznu štampu mestodržača."
 
 #: source/ui/config/optdlg.src#STR_PRINTOPTUI.item11.ItemList.item
 msgid  "Print ~automatically inserted blank pages"
@@ -2585,7 +2585,7 @@ msgstr "Štampaj ~automatski ubačene prazne stranice"
 
 #: source/ui/config/optdlg.src#STR_PRINTOPTUI.item18.ItemList.item
 msgid  "~Comments"
-msgstr ""
+msgstr "Ako je uključeno biće štampane automatski ubačene prazne stranice. Opcija je preporučena za dvostranu štampu. Na primer, u knjizi stil prvog pasusa poglavlja je postavljen da uvek započne na neparnoj stranici. Ako se prethodno poglavlje završava na neparnoj stranici, %PRODUCTNAME će između njih da ubaci praznu parnu parnu stranicu. Ova opcija određuje da li ta ubačena stranica da bude odštampana ili ne."
 
 #: source/ui/config/optdlg.src#STR_PRINTOPTUI.item19.ItemList.item
 msgid  "Page sides"
@@ -2593,7 +2593,7 @@ msgstr "~Koristi kasetu za papir iz podešavanja štampača"
 
 #: source/ui/config/optdlg.src#STR_PRINTOPTUI.item20.ItemList.item
 msgid  "All pages"
-msgstr ""
+msgstr "Ako je uključeno pri štampi na štampaču sa više kaseta biće korišćena kaseta za papir koja je podešena u sistemskim postavkama štampača."
 
 #: source/ui/config/optdlg.src#STR_PRINTOPTUI.item21.ItemList.item
 msgid  "Back sides / left pages"
@@ -2797,7 +2797,7 @@ msgstr "<Korisnička podešavanja>"
 
 #: source/ui/config/optcomp.src#TP_OPTCOMPATIBILITY_PAGE.STR_QRYBOX_USEASDEFAULT.String.Text
 msgid  "Do you want to change the compatibility options of the default template?\nThis will affect all new documents based on the default template."
-msgstr ""
+msgstr "Želite li da promenite opcije usaglašenosti za podrazumevani šablon?\nTo će uticati na sve nove dokumente čija je osnova podrazumevani šablon."
 
 #: source/ui/config/optcomp.src#TP_OPTCOMPATIBILITY_PAGE.STR_PRINTER_METRICS.String.Text
 msgid  "Use printer metrics for document formatting"
@@ -2809,7 +2809,7 @@ msgstr "Dodaj razmak između pasusa i tabela (u trenutnom dokumentu)"
 
 #: source/ui/config/optcomp.src#TP_OPTCOMPATIBILITY_PAGE.STR_MERGE_PARA_DIST_PAGESTART.String.Text
 msgid  "Add paragraph and table spacing at tops of pages (in current document)"
-msgstr ""
+msgstr "Dodaj razmake pasusa i tabela na vrhovima stranica (u trenutnom dokumentu)"
 
 #: source/ui/config/optcomp.src#TP_OPTCOMPATIBILITY_PAGE.STR_TAB_ALIGNMENT.String.Text
 msgid  "Use %WRITERCOMPATIBILITYVERSIONOOO11 tabstop formatting"
@@ -2841,7 +2841,7 @@ msgstr "Uzmi u obzir stil prelamanja teksta pri razmeštaju objekata"
 
 #: source/ui/config/optcomp.src#TP_OPTCOMPATIBILITY_PAGE.STR_EXPAND_WORDSPACE.String.Text
 msgid  "Expand word space on lines with manual line breaks in justified paragraphs"
-msgstr ""
+msgstr "Proširi rastojanje između reči u redovima sa ručnim prelomom unutar obostrano poravnatih pasusa"
 
 #: source/ui/config/optload.src#TP_OPTLOAD_PAGE.FL_UPDATE.FixedLine.Text
 msgid  "Update"
@@ -2897,7 +2897,7 @@ msgstr "Naslov"
 
 #: source/ui/config/optload.src#TP_OPTCAPTION_PAGE.FT_OBJECTS.FixedText.Text
 msgid  "Add captions automatically\nwhen inserting:"
-msgstr ""
+msgstr "Dodaj naslove automatski\nprilikom umetanja:"
 
 #: source/ui/config/optload.src#TP_OPTCAPTION_PAGE.FT_ORDER.FixedText.Text
 msgid  "Caption order"
@@ -3129,7 +3129,7 @@ msgstr "Neuspešno"
 
 #: source/ui/config/mailconfigpage.src#DLG_MM_TESTACCOUNTSETTINGS.ST_ERROR_SERVER.String.Text
 msgid  "%PRODUCTNAME could not connect to the outgoing mail server. Check your system's settings and the settings in %PRODUCTNAME. Check the server name, the port and the secure connections settings"
-msgstr ""
+msgstr "%PRODUCTNAME ne može da se poveže na odlazni server pošte. Proverite svoja sistemska podešavanja i podešavanja u %PRODUCTNAME. Proverite ime servera, port i podešavanja obezbeđene veze"
 
 #: source/ui/config/mailconfigpage.src#DLG_MM_SERVERAUTHENTICATION.ModalDialog.Text
 msgid  "Server Authentication"
@@ -3157,7 +3157,7 @@ msgstr "~Lozinka"
 
 #: source/ui/config/mailconfigpage.src#DLG_MM_SERVERAUTHENTICATION.RB_SMPTAFTERPOP.RadioButton.Text
 msgid  "The outgoing mail server uses the same authentication as the ~incoming mail server. Enter the settings of the incoming mail server."
-msgstr ""
+msgstr "Server odlazne pošte koristi istu prijavu kao i server ~dolazne pošte. Unesite podešavanja servera dolazne pošte."
 
 #: source/ui/config/mailconfigpage.src#DLG_MM_SERVERAUTHENTICATION.FT_INCOMINGSERVER.FixedText.Text
 msgid  "Incoming mail server:"
@@ -3197,7 +3197,7 @@ msgstr "Izaberi listu adresa"
 
 #: source/ui/dbui/addresslistdialog.src#DLG_MM_ADDRESSLISTDIALOG.FI_DESCRIPTION.FixedText.Text
 msgid  "Select an address list. Click '%1' to select recipients from a different list. If you do not have an address list you can create one by clicking '%2'."
-msgstr ""
+msgstr "Izaberite listu adresa. Kliknite na „%1“ za izbor primaoca iz druge liste. Ako nemate listu adresa, možete je napraviti klikom na „%2“."
 
 #: source/ui/dbui/addresslistdialog.src#DLG_MM_ADDRESSLISTDIALOG.FT_LIST.FixedText.Text
 msgid  "Your recipients are currently selected from:"
@@ -3249,7 +3249,7 @@ msgstr "1."
 
 #: source/ui/dbui/mmaddressblockpage.src#DLG_MM_ADDRESSBLOCK_PAGE.FI_ADDRESSLIST.FixedText.Text
 msgid  "Select the address list containing the address data you want to use. This data is needed to create the address block."
-msgstr ""
+msgstr "Izaberite listu adresa koja sadrži željene podatke. Podaci su neophodni za izradu adresnog bloka."
 
 #: source/ui/dbui/mmaddressblockpage.src#DLG_MM_ADDRESSBLOCK_PAGE.PB_ADDRESSLIST.PushButton.Text
 msgid  "Select A~ddress List..."
@@ -3285,7 +3285,7 @@ msgstr "3."
 
 #: source/ui/dbui/mmaddressblockpage.src#DLG_MM_ADDRESSBLOCK_PAGE.FI_MATCH_FIELDS.FixedText.Text
 msgid  "Match the field name used in the mail merge to the column headers in your data source."
-msgstr ""
+msgstr "Upari ime polja u cirkularnom e-pismu sa zaglavljem kolone u izvoru podataka."
 
 #: source/ui/dbui/mmaddressblockpage.src#DLG_MM_ADDRESSBLOCK_PAGE.PB_ASSIGN.PushButton.Text
 msgid  "Match ~Fields..."
@@ -3346,6 +3346,10 @@ msgstr "~Uvek uključuj zemlju-region"
 #: source/ui/dbui/mmaddressblockpage.src#DLG_MM_SELECTADDRESSBLOCK.RB_DEPENDENT.RadioButton.Text
 msgid  "Only ~include the country/region if it is not:"
 msgstr "Uključ~i zemlju-region samo ako nije:"
+
+#: source/ui/dbui/mmaddressblockpage.src#WORKAROUND.#define.Text
+msgid  "New Address Block"
+msgstr "Novi adresni blok"
 
 #: source/ui/dbui/mmaddressblockpage.src#DLG_MM_CUSTOMIZEADDRESSBLOCK.ST_TITLE_EDIT.String.Text
 msgid  "Edit Address Block"
@@ -3481,11 +3485,11 @@ msgstr "Poklopi polja"
 
 #: source/ui/dbui/mmaddressblockpage.src#DLG_MM_ASSIGNFIELDS.FI_MATCHING.FixedText.Text
 msgid  "Assign the fields from your data source to match the address elements."
-msgstr ""
+msgstr "Pridružite polja iz izvora podataka tako da budu upareni sa elementima adrese."
 
 #: source/ui/dbui/mmaddressblockpage.src#DLG_MM_ASSIGNFIELDS.ST_SALUTATIONMATCHING.String.Text
 msgid  "Assign the fields from your data source to match the salutation elements."
-msgstr ""
+msgstr "Pridružite polja iz izvora podataka tako da budu upareni sa elementima pozdrava."
 
 #: source/ui/dbui/mmaddressblockpage.src#DLG_MM_ASSIGNFIELDS.FI_PREVIEW.FixedText.Text
 msgid  "Address block preview"
@@ -3515,17 +3519,13 @@ msgstr "Pregled"
 msgid  "< none >"
 msgstr "< nijedno >"
 
-#: source/ui/dbui/mmaddressblockpage.src#WORKAROUND.#define.Text
-msgid  "New Address Block"
-msgstr "Novi adresni blok"
-
 #: source/ui/dbui/selectdbtabledialog.src#DLG_MM_SELECTDBTABLEDDIALOG.ModalDialog.Text
 msgid  "Select Table"
 msgstr "Izaberi tabelu"
 
 #: source/ui/dbui/selectdbtabledialog.src#DLG_MM_SELECTDBTABLEDDIALOG.FI_SELECT.FixedText.Text
 msgid  "The file you have selected contains more than one table. Please select the table containing the address list you want to use."
-msgstr ""
+msgstr "Datoteka koju ste izaberali sadrži više od jedne tabele. Izaberite tabelu koja sadrži listu adresa koju želite da koristite."
 
 #: source/ui/dbui/selectdbtabledialog.src#DLG_MM_SELECTDBTABLEDDIALOG.PB_PREVIEW.PushButton.Text
 msgid  "~Preview"
@@ -3741,7 +3741,7 @@ msgstr "Prilagodi pojedinačna pisma"
 
 #: source/ui/dbui/mmmergepage.src#DLG_MM_MERGE_PAGE.FI_EDIT.FixedText.Text
 msgid  "You can personalize particular documents. Clicking '%1' will temporarily reduce the wizard to a small window so you can edit your document. After editing the document, return to the wizard by clicking 'Return to Mail Merge Wizard' in the small window."
-msgstr ""
+msgstr "Možete prilagoditi određene dokumente. Pritiskom na „%1“ privremeno ćete umanjiti pomoćnika na mali prozor tako da možete uređivati dokument. Po uređivanju dokumenta vratite se na pomoćnika klikom na „Povratak na pomoćnika za cirkularnu poštu“ u malom prozoru."
 
 #: source/ui/dbui/mmmergepage.src#DLG_MM_MERGE_PAGE.PB_EDIT.PushButton.Text
 msgid  "~Edit individual document..."
@@ -3909,7 +3909,7 @@ msgstr "Nesačuvan dokument"
 
 #: source/ui/dbui/mmoutputpage.src#DLG_MM_OUTPUT_PAGE.ST_SUBJECTQUERY.String.Text
 msgid  "You did not specify a subject for this message. If you would like to provide one, please type it now."
-msgstr ""
+msgstr "Niste naveli naslov poruke. Ako želite da naznačite naslov, upišite ga."
 
 #: source/ui/dbui/mmoutputpage.src#DLG_MM_OUTPUT_PAGE.ST_NOSUBJECT.String.Text
 msgid  "No subject"
@@ -3917,11 +3917,11 @@ msgstr "Bez teme"
 
 #: source/ui/dbui/mmoutputpage.src#DLG_MM_OUTPUT_PAGE.ST_NOATTACHMENTNAME.String.Text
 msgid  "You did not specify a new name for the attachment. If you would like to provide one, please type it now."
-msgstr ""
+msgstr "Niste naveli novo ime za prilog. Ukoliko želite da navedete ime, unesite ga."
 
 #: source/ui/dbui/mmoutputpage.src#DLG_MM_OUTPUT_PAGE.ST_CONFIGUREMAIL.String.Text
 msgid  "In order to be able to send mail merge documents by e-mail, %PRODUCTNAME requires information about the e-mail account to be used.\n\n Do you want to enter e-mail account information now?"
-msgstr ""
+msgstr "Da bi mogao da šalje dokumente cirkualrne pošte putem e-pošte, %PRODUCTNAME zahteva korišćenje podataka o nalogu e-pošte.\n\nŽelite li sada da unesete podatke o nalogu e-pošte?"
 
 #: source/ui/dbui/mmoutputpage.src#DLG_MM_COPYTO.ModalDialog.Text
 msgid  "Copy To"
@@ -3941,11 +3941,11 @@ msgstr "~Bcc"
 
 #: source/ui/dbui/mmoutputpage.src#DLG_MM_COPYTO.FI_NOTE.FixedText.Text
 msgid  "Note:\nSeparate e-mail addresses with a semicolon (;)."
-msgstr ""
+msgstr "Napomena:\nodvojite e-adrese tačkom sa zapetom (;)."
 
 #: source/ui/dbui/mmoutputpage.src#DLG_MM_SAVEWARNING.FI_WARNING.FixedText.Text
 msgid  "A document with the name '%1' already exists. Please save this document under a different name."
-msgstr ""
+msgstr "Dokument sa imenom „%1“ već postoji. Sačuvajte dokument pod drugim imenom."
 
 #: source/ui/dbui/mmoutputpage.src#DLG_MM_SAVEWARNING.FT_FILENAME.FixedText.Text
 msgid  "New document name"
@@ -4131,6 +4131,10 @@ msgstr "~Pronađi"
 msgid  "~Close"
 msgstr "~Zatvori"
 
+#: source/ui/dbui/mailmergechildwindow.src#WORKAROUND.#define.Text
+msgid  "Return to Mail Merge Wizard"
+msgstr "Povratak na pomoćnika za cirkularnu poštu"
+
 #: source/ui/dbui/mailmergechildwindow.src#DLG_MAILMERGECHILD.FloatingWindow.Text
 msgid  "Mail Merge Wizard"
 msgstr "Pomoćnik za cirkularnu poštu"
@@ -4209,7 +4213,7 @@ msgstr "Slanje nije uspelo (neispravna adresa)"
 
 #: source/ui/dbui/mailmergechildwindow.src#DLG_MM_SENDMAILS.ST_TERMINATEQUERY.String.Text
 msgid  "There are still e-mail messages in your %PRODUCTNAME Outbox.\nWould you like to exit anyway?"
-msgstr ""
+msgstr "U %PRODUCTNAME odlaznom sandučetu još uvek ima poruka.\nIpak želite da napustite program?"
 
 #: source/ui/dbui/mailmergechildwindow.src#DLG_MM_SENDWARNING.ModalDialog.Text
 msgid  "E-Mails could not be sent"
@@ -4222,10 +4226,6 @@ msgstr "Dogodila se greška:"
 #: source/ui/dbui/mailmergechildwindow.src#DLG_MM_SENDWARNING.FT_DETAILS.FixedText.Text
 msgid  "Detailed information"
 msgstr "Detaljni podaci"
-
-#: source/ui/dbui/mailmergechildwindow.src#WORKAROUND.#define.Text
-msgid  "Return to Mail Merge Wizard"
-msgstr "Povratak na pomoćnika za cirkularnu poštu"
 
 #: source/ui/dbui/dbtablepreviewdialog.src#DLG_MM_DBTABLEPREVIEWDIALOG.ModalDialog.Text
 msgid  "Mail Merge Recipients"
@@ -4265,11 +4265,11 @@ msgstr "E-pismo:"
 
 #: source/ui/dbui/mmoutputtypepage.src#DLG_MM_OUTPUTTYPE_PAGE.ST_LETTERHINT.String.Text
 msgid  "Send letters to a group of recipients. The letters can contain an address block and a salutation. The letters can be personalized for each recipient."
-msgstr ""
+msgstr "Šalje pisma grupi primalaca. Pisma mogu sadržati adresni blok i pozdrav. Pisma se mogu prilagoditi za svakog primaoca."
 
 #: source/ui/dbui/mmoutputtypepage.src#DLG_MM_OUTPUTTYPE_PAGE.ST_MAILHINT.String.Text
 msgid  "Send e-mail messages to a group of recipients. The e-mail messages can contain a salutation. The e-mail messages can be personalized for each recipient."
-msgstr ""
+msgstr "Šalje e-pisma grupi primalaca. E-pisma mogu sadržati pozdrav. E-pisma se mogu prilagoditi za svakog primaoca."
 
 #: source/ui/dbui/mmpreparemergepage.src#DLG_MM_PREPAREMERGE_PAGE.FI_HEADER.FixedText.Text
 msgid  "Preview and edit the document"
@@ -4277,7 +4277,7 @@ msgstr "Pregledaj i uredi dokument"
 
 #: source/ui/dbui/mmpreparemergepage.src#DLG_MM_PREPAREMERGE_PAGE.FI_PREVIEW.FixedText.Text
 msgid  "The preview of a merged document is visible now. To see the preview of another document click one of the arrows."
-msgstr ""
+msgstr "Pregled spojenog dokumenta je sada vidljiv. Da biste videli pregled nekog drugog dokumenta kliknite na jednu od strelica."
 
 #: source/ui/dbui/mmpreparemergepage.src#DLG_MM_PREPAREMERGE_PAGE.FT_RECIPIENT.FixedText.Text
 msgid  "~Recipient"
@@ -4309,7 +4309,7 @@ msgstr "Uredi dokument"
 
 #: source/ui/dbui/mmpreparemergepage.src#DLG_MM_PREPAREMERGE_PAGE.FI_EDIT.FixedText.Text
 msgid  "Write or edit your document now if you have not already done so. The changes will effect all merged documents.\n\nClicking 'Edit Document...' will temporarily reduce the wizard to a small window so you can edit the mail merge document. After editing the document, return to the wizard by clicking 'Return to Mail Merge Wizard' in the small window."
-msgstr ""
+msgstr "Napišite ili uredite dokument ako to već niste uradili. Promene će uticati na sva pisma.\n\nPritiskom na „Uredi dokument...“ privremeno ćete umanjiti pomoćnika u mali prozor tako da možete urediti dokument za cirkularnu poštu. Po uređivanju dokumenta vratite se na pomoćnika pritiskom na „Povratak na pomoćnika za cirkularnu poštu“ u malom prozoru."
 
 #: source/ui/dbui/mmpreparemergepage.src#DLG_MM_PREPAREMERGE_PAGE.PB_EDIT.PushButton.Text
 msgid  "~Edit Document..."
@@ -4535,6 +4535,66 @@ msgstr "Reči:"
 msgid  "Characters:"
 msgstr "Znakova:"
 
+#: source/ui/dialog/regionsw.src#FT_SUBREG_TEXT.#define.Text
+msgid  "~Section"
+msgstr "~Odeljak"
+
+#: source/ui/dialog/regionsw.src#CB_HIDE_TEXT.#define.Text
+msgid  "H~ide"
+msgstr "~Sakrij"
+
+#: source/ui/dialog/regionsw.src#FL_HIDE_TEXT.#define.Text
+msgid  "Hide"
+msgstr "Sakrij"
+
+#: source/ui/dialog/regionsw.src#CB_CONDITION_TEXT.#define.Text
+msgid  "~With Condition"
+msgstr "~Pod uslovom"
+
+#: source/ui/dialog/regionsw.src#FL_PROPERTIES_TEXT.#define.Text
+msgid  "Properties"
+msgstr "Svojstva"
+
+#: source/ui/dialog/regionsw.src#CB_EDIT_IN_READONLY_TEXT.#define.Text
+msgid  "E~ditable in read-only document"
+msgstr "Može se u~ređivati i u dokumentu koji je samo za čitanje"
+
+#: source/ui/dialog/regionsw.src#FL_FILE_TEXT.#define.Text
+msgid  "Link"
+msgstr "Veza"
+
+#: source/ui/dialog/regionsw.src#CB_FILE_TEXT.#define.Text
+msgid  "~Link"
+msgstr "~Veza"
+
+#: source/ui/dialog/regionsw.src#CB_DDE_TEXT.#define.Text
+msgid  "DD~E"
+msgstr "DD~E"
+
+#: source/ui/dialog/regionsw.src#FT_DDE_TEXT.#define.Text
+msgid  "DDE ~command"
+msgstr "DDE ~naredba"
+
+#: source/ui/dialog/regionsw.src#FT_FILE_TEXT.#define.Text
+msgid  "~File name"
+msgstr "~Ime datoteke"
+
+#: source/ui/dialog/regionsw.src#GB_HIDE_TEXT.#define.Text
+msgid  "Hide"
+msgstr "Sakrij"
+
+#: source/ui/dialog/regionsw.src#GB_OPTIONS_TEXT.#define.Text
+msgid  "Options"
+msgstr "Opcije"
+
+#: source/ui/dialog/regionsw.src#FL_PROTECT_TEXT.#define.Text
+msgid  "Write protection"
+msgstr "Zaštita od pisanja"
+
+#: source/ui/dialog/regionsw.src#CB_PASSWD_TEXT.#define.Text
+msgid  "Wit~h password"
+msgstr "~Sa lozinkom"
+
 #: source/ui/dialog/regionsw.src#MD_EDIT_REGION.ModalDialog.Text
 msgid  "Edit Sections"
 msgstr "Uredi odeljke"
@@ -4565,7 +4625,7 @@ msgstr "Duplirano ime odeljka"
 
 #: source/ui/dialog/regionsw.src#QB_CONNECT.QueryBox.Message
 msgid  "A file connection will delete the contents of the current section. Connect anyway?"
-msgstr ""
+msgstr "Veza ka datoteci će obrisati sadržaj trenutnog odeljka. Da se povežem?"
 
 #: source/ui/dialog/regionsw.src#REG_WRONG_PASSWORD.InfoBox.Message
 msgid  "The password entered is invalid."
@@ -4699,66 +4759,6 @@ msgstr "~Pre odeljka"
 msgid  "~After section"
 msgstr "P~osle odeljka"
 
-#: source/ui/dialog/regionsw.src#FT_SUBREG_TEXT.#define.Text
-msgid  "~Section"
-msgstr "~Odeljak"
-
-#: source/ui/dialog/regionsw.src#CB_HIDE_TEXT.#define.Text
-msgid  "H~ide"
-msgstr "~Sakrij"
-
-#: source/ui/dialog/regionsw.src#FL_HIDE_TEXT.#define.Text
-msgid  "Hide"
-msgstr "Sakrij"
-
-#: source/ui/dialog/regionsw.src#CB_CONDITION_TEXT.#define.Text
-msgid  "~With Condition"
-msgstr "~Pod uslovom"
-
-#: source/ui/dialog/regionsw.src#FL_PROPERTIES_TEXT.#define.Text
-msgid  "Properties"
-msgstr "Svojstva"
-
-#: source/ui/dialog/regionsw.src#CB_EDIT_IN_READONLY_TEXT.#define.Text
-msgid  "E~ditable in read-only document"
-msgstr "Može se u~ređivati i u dokumentu koji je samo za čitanje"
-
-#: source/ui/dialog/regionsw.src#FL_FILE_TEXT.#define.Text
-msgid  "Link"
-msgstr "Veza"
-
-#: source/ui/dialog/regionsw.src#CB_FILE_TEXT.#define.Text
-msgid  "~Link"
-msgstr "~Veza"
-
-#: source/ui/dialog/regionsw.src#CB_DDE_TEXT.#define.Text
-msgid  "DD~E"
-msgstr "DD~E"
-
-#: source/ui/dialog/regionsw.src#FT_DDE_TEXT.#define.Text
-msgid  "DDE ~command"
-msgstr "DDE ~naredba"
-
-#: source/ui/dialog/regionsw.src#FT_FILE_TEXT.#define.Text
-msgid  "~File name"
-msgstr "~Ime datoteke"
-
-#: source/ui/dialog/regionsw.src#GB_HIDE_TEXT.#define.Text
-msgid  "Hide"
-msgstr "Sakrij"
-
-#: source/ui/dialog/regionsw.src#GB_OPTIONS_TEXT.#define.Text
-msgid  "Options"
-msgstr "Opcije"
-
-#: source/ui/dialog/regionsw.src#FL_PROTECT_TEXT.#define.Text
-msgid  "Write protection"
-msgstr "Zaštita od pisanja"
-
-#: source/ui/dialog/regionsw.src#CB_PASSWD_TEXT.#define.Text
-msgid  "Wit~h password"
-msgstr "~Sa lozinkom"
-
 #: source/ui/dialog/abstract.src#DLG_INSERT_ABSTRACT.FL_1.FixedLine.Text
 msgid  "Properties"
 msgstr "Svojstva"
@@ -4773,7 +4773,7 @@ msgstr "Podtačaka po nivou"
 
 #: source/ui/dialog/abstract.src#DLG_INSERT_ABSTRACT.FT_DESC.FixedText.Text
 msgid  "The abstract contains the selected number of paragraphs from the included outline levels."
-msgstr ""
+msgstr "Apstrakt sadrži određen broj pasusa iz uključenih nivoa konture."
 
 #: source/ui/dialog/abstract.src#DLG_INSERT_ABSTRACT.HelpButton.Text
 msgid  "Create AutoAbstract"
@@ -4853,7 +4853,7 @@ msgstr "Ne mogu da pronađem autotekst za prečicu „%1“."
 
 #: source/ui/dochdl/dochdl.src#STR_NO_TABLE.String.Text
 msgid  "A table cannot be inserted into another table. However, you can paste the data into the document when the cursor is not in a table."
-msgstr ""
+msgstr "Ne možete umetnuti tabelu unutar tabele, ali možete ubaciti te podatke u dokument dok kursor nije u tabeli."
 
 #: source/ui/dochdl/dochdl.src#MSG_ERR_INSERT_GLOS.InfoBox.Message
 msgid  "AutoText could not be created."
@@ -4865,7 +4865,7 @@ msgstr "Zahtevani format isečka iz spiska nije dostupan."
 
 #: source/ui/dochdl/dochdl.src#MSG_UPDATE_NEW_GLOS_FMT.QueryBox.Message
 msgid  "The section format is outdated.\nIt needs to be converted so that changes\ncan be saved.\nShould it be converted now?"
-msgstr ""
+msgstr "Formatiranje odeljka je zastarelo.\nMora se prevesti radi čuvanja izmena.\nDa prevedem odmah?"
 
 #: source/ui/dochdl/dochdl.src#STR_PRIVATETEXT.String.Text
 msgid  "%PRODUCTNAME Writer"
@@ -5039,6 +5039,26 @@ msgstr "Izvorni okvir je već izvor veze."
 msgid  "A closed link is not possible."
 msgstr "Zatorena veza nije moguća."
 
+#: source/ui/docvw/docvw.src#STR_REDLINE_INSERT.String.Text
+msgid  "Inserted"
+msgstr "Umetnut"
+
+#: source/ui/docvw/docvw.src#STR_REDLINE_DELETE.String.Text
+msgid  "Deleted"
+msgstr "Obrisan"
+
+#: source/ui/docvw/docvw.src#STR_REDLINE_FORMAT.String.Text
+msgid  "Formatted"
+msgstr "Formatiran"
+
+#: source/ui/docvw/docvw.src#STR_REDLINE_TABLE.String.Text
+msgid  "Table changed"
+msgstr "Tabela je promenjena"
+
+#: source/ui/docvw/docvw.src#STR_REDLINE_FMTCOLL.String.Text
+msgid  "Applied Paragraph Styles"
+msgstr "Primenjeni stilovi pasusa"
+
 #: source/ui/docvw/docvw.src#STR_ENDNOTE.String.Text
 msgid  "Endnote: "
 msgstr "Endnota: "
@@ -5049,7 +5069,7 @@ msgstr "Fusnota: "
 
 #: source/ui/docvw/docvw.src#MSG_READONLY_CONTENT.InfoBox.Message
 msgid  "Readonly content cannot be changed.\nNo modifications will be accepted"
-msgstr ""
+msgstr "Sadržaj koji je samo za čitanje ne može da se menja.\nNikakve izmene neće biti prihvaćene."
 
 #: source/ui/docvw/docvw.src#STR_TABLE_COL_ADJUST.String.Text
 msgid  "Adjust table column"
@@ -5074,26 +5094,6 @@ msgstr "Izaberi kolonu tabele"
 #: source/ui/docvw/docvw.src#STR_SMARTTAG_CLICK.String.Text
 msgid  "%s-click to open Smart Tag menu"
 msgstr "%s i klik da otvorite meni za pametne oznake"
-
-#: source/ui/docvw/docvw.src#STR_REDLINE_INSERT.String.Text
-msgid  "Inserted"
-msgstr "Umetnut"
-
-#: source/ui/docvw/docvw.src#STR_REDLINE_DELETE.String.Text
-msgid  "Deleted"
-msgstr "Obrisan"
-
-#: source/ui/docvw/docvw.src#STR_REDLINE_FORMAT.String.Text
-msgid  "Formatted"
-msgstr "Formatiran"
-
-#: source/ui/docvw/docvw.src#STR_REDLINE_TABLE.String.Text
-msgid  "Table changed"
-msgstr "Tabela je promenjena"
-
-#: source/ui/docvw/docvw.src#STR_REDLINE_FMTCOLL.String.Text
-msgid  "Applied Paragraph Styles"
-msgstr "Primenjeni stilovi pasusa"
 
 #: source/ui/docvw/access.src#STR_ACCESS_DOC_NAME.String.Text
 msgid  "Document view"
@@ -5165,7 +5165,7 @@ msgstr "Radnje"
 
 #: source/ui/docvw/access.src#STR_ACCESS_ANNOTATION_BUTTON_DESC.String.Text
 msgid  "Activate this button to open a list of actions which can be performed on this comment and other comments"
-msgstr ""
+msgstr "Kliknite dugme da otvorite listu radnji nad ovim i ostalim komentarima"
 
 #: source/ui/docvw/access.src#STR_ACCESS_PREVIEW_DOC_NAME.String.Text
 msgid  "Document preview"
@@ -5214,6 +5214,10 @@ msgstr "- Nijedan štampač nije instaliran -"
 #: source/ui/envelp/envprt.src#TP_ENV_PRT.BTN_PRTSETUP.PushButton.Text
 msgid  "Setup..."
 msgstr "Podešavanja..."
+
+#: source/ui/envelp/mailmrge.src#_MAIL_MERGE_STRING_.#define.Text
+msgid  "Mail Merge"
+msgstr "Cirkularna pošta"
 
 #: source/ui/envelp/mailmrge.src#DLG_MAILMERGE.RB_ALL.RadioButton.Text
 msgid  "~All"
@@ -5337,11 +5341,7 @@ msgstr "~Napravi novu vezu"
 
 #: source/ui/envelp/mailmrge.src#DLG_MERGE_FIELD_CONNECTIONS.FT_INFO.FixedText.Text
 msgid  "Fields are used to personalize form letters. The fields are placeholders for data from a data source, such as a database. The fields in the form letter must be connected to the data source."
-msgstr ""
-
-#: source/ui/envelp/mailmrge.src#_MAIL_MERGE_STRING_.#define.Text
-msgid  "Mail Merge"
-msgstr "Cirkularna pošta"
+msgstr "Polja se koriste za prilagođavanje obrazaca pisama. Polja su mestodržači za podatke iz izvora podataka kao što je baza podataka. Polja u obrascu pisma moraju biti povezana na izvor podataka."
 
 #: source/ui/envelp/labprt.src#TP_LAB_PRT.BTN_PAGE.RadioButton.Text
 msgid  "~Entire page"
@@ -5397,7 +5397,7 @@ msgstr "~Novi dok."
 
 #: source/ui/envelp/envelp.src#STR_SENDER_TOKENS.String.Text
 msgid  "COMPANY;CR;FIRSTNAME; ;LASTNAME;CR;ADDRESS;CR;CITY; ;STATEPROV; ;POSTALCODE;CR;COUNTRY;CR;"
-msgstr ""
+msgstr "KOMPANIJA;CR;IME; ;PREZIME;CR;ADRESA;CR;GRAD; ;DRŽAVAPROVINCIJA; ;POŠTANSKIBROJ;CR;ZEMLJA;CR;"
 
 #: source/ui/envelp/envfmt.src#TP_ENV_FMT.FL_ADDRESSEE.FixedLine.Text
 msgid  "Addressee"
@@ -5470,6 +5470,14 @@ msgstr "~Znak..."
 #: source/ui/envelp/envfmt.src#MNU_EDIT.MID_PARA.MenuItem.Text
 msgid  "P~aragraph..."
 msgstr "~Pasus..."
+
+#: source/ui/envelp/label.src#LABEL_STRING.#define.Text
+msgid  "Labels"
+msgstr "Oznake"
+
+#: source/ui/envelp/label.src#BUSINESS_CARD_STRING.#define.Text
+msgid  "Business Cards"
+msgstr "Vizitkarte"
 
 #: source/ui/envelp/label.src#DLG_LAB.1.TP_PRIVATE_DATA.PageItem.Text
 msgid  "Private"
@@ -5639,14 +5647,6 @@ msgstr "Faks"
 msgid  "Ho~mepage / e-mail"
 msgstr "Veb str~anica i e-pošta"
 
-#: source/ui/envelp/label.src#LABEL_STRING.#define.Text
-msgid  "Labels"
-msgstr "Oznake"
-
-#: source/ui/envelp/label.src#BUSINESS_CARD_STRING.#define.Text
-msgid  "Business Cards"
-msgstr "Vizitkarte"
-
 #: source/ui/envelp/labfmt.src#TP_LAB_FMT.TXT_HDIST.FixedText.Text
 msgid  "Hori~zontal pitch"
 msgstr "~Vodoravno rastojanje"
@@ -5728,8 +5728,8 @@ msgid  "Options"
 msgstr "Opcije"
 
 #: source/ui/envelp/labfmt.src#DLG_SAVE_LABEL.MB_QUERY.QueryBox.Message
-msgid  "The label "%1 / %2" already exists.\nDo you want to overwrite it?"
-msgstr ""
+msgid  "The label \"%1 / %2\" already exists.\nDo you want to overwrite it?"
+msgstr "Oznaka „%1 / %2“ već postoji.\nŽelite li da je zamenite?"
 
 #: source/ui/envelp/labfmt.src#DLG_SAVE_LABEL.QueryBox.Text
 msgid  "Save Label Format"
@@ -6609,7 +6609,7 @@ msgstr "Izbor..."
 
 #: source/ui/fldui/changedb.src#DLG_CHANGE_DB.FT_DESC.FixedText.Text
 msgid  "Use this dialog to replace the databases you access in your document via database fields, with other databases. You can only make one change at a time. Multiple selection is possible in the list on the left.\nUse the browse button to select a database file."
-msgstr ""
+msgstr "Zamenite trenutno korišćene baze podataka drugim bazama podataka koristeći ovo prozorče. Dozvoljena je samo jedna po jedna izmena. U listi sa leve strane moguć je višestruki izbor.\nKliknite na „Izbor“ da dodate datoteku baze podataka."
 
 #: source/ui/fldui/changedb.src#DLG_CHANGE_DB.FT_DOCDBTEXT.FixedText.Text
 msgid  "Database applied to document:"
@@ -6917,11 +6917,11 @@ msgstr "Opcije"
 
 #: source/ui/frmdlg/frmpage.src#DLG_FRM_STD.1.TP_FRM_WRAP.PageItem.Text
 msgid  "Wrap"
-msgstr "Prelamanje"
+msgstr "Prebacivanje"
 
 #: source/ui/frmdlg/frmpage.src#DLG_FRM_STD.1.TP_FRM_URL.PageItem.Text
 msgid  "Hyperlink"
-msgstr "Veza"
+msgstr "Hiperveza"
 
 #: source/ui/frmdlg/frmpage.src#DLG_FRM_STD.1.TP_BORDER.PageItem.Text
 msgid  "Borders"
@@ -6953,11 +6953,11 @@ msgstr "Opcije"
 
 #: source/ui/frmdlg/frmpage.src#DLG_FRM_GRF.1.TP_FRM_WRAP.PageItem.Text
 msgid  "Wrap"
-msgstr "Prelamanje"
+msgstr "Prebacivanje"
 
 #: source/ui/frmdlg/frmpage.src#DLG_FRM_GRF.1.TP_FRM_URL.PageItem.Text
 msgid  "Hyperlink"
-msgstr "Veza"
+msgstr "Hiperveza"
 
 #: source/ui/frmdlg/frmpage.src#DLG_FRM_GRF.1.TP_GRF_EXT.PageItem.Text
 msgid  "Picture"
@@ -7388,6 +7388,14 @@ msgid  "~Position"
 msgstr "~Mesto"
 
 #: source/ui/frmdlg/column.src#TP_COLUMN.LB_POSITION.Default.StringList.item
+msgid  "Top"
+msgstr "Vrh"
+
+#: source/ui/frmdlg/column.src#TP_COLUMN.LB_POSITION.Default.StringList.item
+msgid  "Centered"
+msgstr "Centrirano"
+
+#: source/ui/frmdlg/column.src#TP_COLUMN.LB_POSITION.Default.StringList.item
 msgid  "Bottom"
 msgstr "Dno"
 
@@ -7450,14 +7458,6 @@ msgstr ""
 #: source/ui/frmdlg/column.src#STR_ACCESS_COLUMN_WIDTH.String.Text
 msgid  "Column %1 Width"
 msgstr ""
-
-#: source/ui/frmdlg/column.src#TP_COLUMN.LB_POSITION.Default.StringList.item
-msgid  "Top"
-msgstr "Vrh"
-
-#: source/ui/frmdlg/column.src#TP_COLUMN.LB_POSITION.Default.StringList.item
-msgid  "Centered"
-msgstr "Centrirano"
 
 #: source/ui/frmdlg/frmui.src#STR_TOP.String.Text
 msgid  "~Top"
@@ -7605,7 +7605,7 @@ msgstr "Ispod"
 
 #: source/ui/frmdlg/cption.src#DLG_CAPTION.STR_CATEGORY_NONE.String.Text
 msgid  "<None>"
-msgstr "<Nema>"
+msgstr "<Nijedna>"
 
 #: source/ui/frmdlg/cption.src#DLG_SEQUENCE_OPTION.ModalDialog.Text
 msgid  "Options"
@@ -7621,7 +7621,7 @@ msgstr "~Nivo"
 
 #: source/ui/frmdlg/cption.src#DLG_SEQUENCE_OPTION.LB_LEVEL.item1.StringList.item
 msgid  "<None>"
-msgstr "<Nema>"
+msgstr "<Nijedna>"
 
 #: source/ui/frmdlg/cption.src#DLG_SEQUENCE_OPTION.FT_SEPARATOR.FixedText.Text
 msgid  "~Separator"
@@ -7666,6 +7666,10 @@ msgstr "Glavni dokument"
 #: source/ui/globdoc/globdoc.src#STR_WRITER_GLOBALDOC_FULLTYPE.String.Text
 msgid  "%PRODUCTNAME %PRODUCTVERSION Master Document"
 msgstr "%PRODUCTNAME %PRODUCTVERSION glavni dokument"
+
+#: source/ui/index/idxmrk.src#IDX_PHONETIC_LISTBOX_DESCRIPTION.#define.Text
+msgid  "Phonetic reading"
+msgstr "Fonetsko čitanje"
 
 #: source/ui/index/idxmrk.src#IDX_DIALOG_WINDOW.WIN_DLG.BT_OK.OKButton.Text
 msgid  "Insert"
@@ -7805,11 +7809,7 @@ msgstr "Umetni bibliografski unos"
 
 #: source/ui/index/idxmrk.src#DLG_CHANGE_AUTH_ENTRY.QueryBox.Message
 msgid  "The document already contains the bibliography entry but with different data. Do you want to adjust the existing entries?"
-msgstr ""
-
-#: source/ui/index/idxmrk.src#IDX_PHONETIC_LISTBOX_DESCRIPTION.#define.Text
-msgid  "Phonetic reading"
-msgstr "Fonetsko čitanje"
+msgstr "Dokument već sadrži bibliografsku stavku, ali sa drugačijim podacima. Da li želite da izmenite postojeće stavke?"
 
 #: source/ui/index/cnttab.src#STR_TITLE.String.Text
 msgid  "Title"
@@ -7824,8 +7824,8 @@ msgid  "Level "
 msgstr "Nivo "
 
 #: source/ui/index/cnttab.src#STR_FILE_NOT_FOUND.String.Text
-msgid  "The file, "%1" in the "%2" path could not be found."
-msgstr ""
+msgid  "The file, \"%1\" in the \"%2\" path could not be found."
+msgstr "Datoteka, „%1“ u putanji „%2“ nije pronađena."
 
 #: source/ui/index/cnttab.src#DLG_MULTI_TOX.1.TP_TOX_SELECT.PageItem.Text
 msgid  "Index/Table"
@@ -8009,7 +8009,7 @@ msgstr "~Novo..."
 
 #: source/ui/index/cnttab.src#TP_TOX_SELECT.MB_AUTOMARK.MN_AUTOMARK_EDIT.MenuItem.Text
 msgid  "~Edit..."
-msgstr "~Uređivanje..."
+msgstr "~Uredi..."
 
 #: source/ui/index/cnttab.src#TP_TOX_SELECT.MB_AUTOMARK.MenuItem.Text
 msgid  "~File"
@@ -8557,11 +8557,11 @@ msgstr "~Putanja..."
 
 #: source/ui/misc/glossary.src#DLG_GLOSSARY.ST_READONLY_PATH.String.Text
 msgid  "The 'AutoText' directories are read-only. Do you want to call the path settings dialog?"
-msgstr ""
+msgstr "Fascikle „autoteksta“ su samo za čitanje. Želite li da pozovete prozorče za podešavanje putanje?"
 
 #: source/ui/misc/glossary.src#DLG_GLOSSARY.MNU_EDIT.FN_GL_DEFINE.MenuItem.Text
 msgid  "~New"
-msgstr "~Novi"
+msgstr "~Nova"
 
 #: source/ui/misc/glossary.src#DLG_GLOSSARY.MNU_EDIT.FN_GL_DEFINE_TEXT.MenuItem.Text
 msgid  "New (text only)"
@@ -8672,6 +8672,14 @@ msgid  "~Position"
 msgstr "~Mesto"
 
 #: source/ui/misc/pgfnote.src#TP_FOOTNOTE_PAGE.DLB_LINEPOS.Default.StringList.item
+msgid  "Left"
+msgstr "Levo"
+
+#: source/ui/misc/pgfnote.src#TP_FOOTNOTE_PAGE.DLB_LINEPOS.Default.StringList.item
+msgid  "Centered"
+msgstr "Centrirano"
+
+#: source/ui/misc/pgfnote.src#TP_FOOTNOTE_PAGE.DLB_LINEPOS.Default.StringList.item
 msgid  "Right"
 msgstr "Desno"
 
@@ -8690,14 +8698,6 @@ msgstr "~Razmak do sadržaja fusnote"
 #: source/ui/misc/pgfnote.src#TP_FOOTNOTE_PAGE.FL_LINE.FixedLine.Text
 msgid  "Separator line"
 msgstr "Linija razdvajanja"
-
-#: source/ui/misc/pgfnote.src#TP_FOOTNOTE_PAGE.DLB_LINEPOS.Default.StringList.item
-msgid  "Left"
-msgstr "Levo"
-
-#: source/ui/misc/pgfnote.src#TP_FOOTNOTE_PAGE.DLB_LINEPOS.Default.StringList.item
-msgid  "Centered"
-msgstr "Centrirano"
 
 #: source/ui/misc/num.src#TP_NUM_POSITION.FL_LEVEL.FixedLine.Text
 msgid  "Level"
@@ -10065,7 +10065,7 @@ msgstr "Automatsko ispravljanje"
 
 #: source/ui/shells/shells.src#STR_REDLINE_MSG.String.Text
 msgid  "AutoCorrect completed.\nYou can accept or reject all changes,\nor accept or reject particular changes."
-msgstr ""
+msgstr "Autoformatiranje je završeno.\nMožete prihvatiti ili odbaciti sve izmene\nili prihvatiti ili odbaciti neke od njih."
 
 #: source/ui/shells/shells.src#STR_REDLINE_ACCEPT_ALL.String.Text
 msgid  "Accept All"
@@ -10309,7 +10309,7 @@ msgstr "Zbir"
 
 #: source/ui/table/tautofmt.src#DLG_AUTOFMT_TABLE.STR_INVALID_AFNAME.String.Text
 msgid  "You have entered an invalid name.\nThe desired AutoFormat could not be created. \nTry again using a different name."
-msgstr ""
+msgstr "Uneli ste neispravno ime.\nNe mogu da napravim željeno autoformatiranje. \nPokušajte ponovo koristeći drugo ime."
 
 #: source/ui/table/mergetbl.src#DLG_MERGE_TABLE.FL_MERGE.FixedLine.Text
 msgid  "Mode"
@@ -10493,7 +10493,7 @@ msgstr "~Prva kolona kao naslov"
 
 #: source/ui/table/chartins.src#DLG_INSERT_CHART.FT_TEXT.FixedText.Text
 msgid  "If the selected cells do not contain the desired data, select the data range now.\n\nInclude the cells containing column and row labels if you want them to be included in your chart."
-msgstr ""
+msgstr "Ako izabrane ćelije ne sadrže željene podatke, izaberite opseg podataka sada.\n\nIzaberite i ćelije koje sadrže oznake redova i kolona ako želite da ih uključite u grafik."
 
 #: source/ui/table/chartins.src#DLG_INSERT_CHART.BT_PREV.PushButton.Text
 msgid  "<< ~Back"
@@ -10506,6 +10506,10 @@ msgstr "~Napred >>"
 #: source/ui/table/chartins.src#DLG_INSERT_CHART.BT_FINISH.PushButton.Text
 msgid  "Cre~ate"
 msgstr "~Napravi"
+
+#: source/ui/table/tabledlg.src#TEXT_TEXTFLOW.#define.Text
+msgid  "Text Flow"
+msgstr "Tok teksta"
 
 #: source/ui/table/tabledlg.src#DLG_FORMAT_TABLE.TabDialog.Text
 msgid  "Table Format"
@@ -10609,7 +10613,7 @@ msgstr "Zdesna ulevo"
 
 #: source/ui/table/tabledlg.src#TP_FORMAT_TABLE.LB_TEXTDIRECTION.4.StringList.item
 msgid  "Use superordinate object settings"
-msgstr "Koristi podešavanja nadređenog objekta"
+msgstr "Koristi podešavanja podređenog objekta"
 
 #: source/ui/table/tabledlg.src#TP_TABLE_COLUMN.CB_MOD_TBL.CheckBox.Text
 msgid  "Adapt table ~width"
@@ -10715,10 +10719,6 @@ msgstr "Dno"
 msgid  "The name of the table must not contain spaces."
 msgstr "Ime tabele ne sme da sadrži razmake."
 
-#: source/ui/table/tabledlg.src#TEXT_TEXTFLOW.#define.Text
-msgid  "Text Flow"
-msgstr "Tok teksta"
-
 #: source/ui/table/splittbl.src#DLG_SPLIT_TABLE.FL_SPLIT.FixedLine.Text
 msgid  "Mode"
 msgstr "Režim"
@@ -10753,7 +10753,7 @@ msgstr "Da li želite da proverite glavni tekst?"
 
 #: source/ui/uiview/view.src#DLG_PRT_FIELDNAME.QueryBox.Message
 msgid  "Show field commands option is checked.\nDo you want to print the document with field names?"
-msgstr ""
+msgstr "Uključena je opcija za prikaz imena polja.\nŽelite li da štampate dokument sa imenima polja?"
 
 #: source/ui/uiview/view.src#DLG_SPECIAL.QueryBox.Message
 msgid  "Do you want check the special regions?"
@@ -10761,7 +10761,7 @@ msgstr "Da li želite da proverite posebne oblasti?"
 
 #: source/ui/uiview/view.src#DLG_THESAURUS.QueryBox.Message
 msgid  "This word appears in the list of words you want to avoid! Start thesaurus?"
-msgstr ""
+msgstr "Ova reč je u listi reči koje želite da izbegavate. Da otvorim rečnik sinonima?"
 
 #: source/ui/uiview/view.src#DLG_SPECIAL_FORCED.QueryBox.Message
 msgid  "Check special regions is deactivated. Check anyway?"
@@ -10769,15 +10769,19 @@ msgstr "Isključena je mogućnost „proveri posebne oblasti“. Ipak proveriti?
 
 #: source/ui/uiview/view.src#MSG_SEARCH_END.QueryBox.Message
 msgid  "%PRODUCTNAME Writer has searched to the end of the document. Do you want to continue at the beginning?"
-msgstr ""
+msgstr "%PRODUCTNAME Pisac je tražio do kraja dokumenta. Da li želite da nastavite od početka?"
 
 #: source/ui/uiview/view.src#MSG_SEARCH_START.QueryBox.Message
 msgid  "%PRODUCTNAME Writer has searched to the beginning of the document. Do you want to continue at the end?"
-msgstr ""
+msgstr "%PRODUCTNAME Pisac je tražio do početka teksta. Da li želite da nastavite od kraja?"
 
 #: source/ui/uiview/view.src#MSG_NO_MERGE_ENTRY.InfoBox.Message
 msgid  "Could not merge documents."
 msgstr "Spajanje dokumenata nije moguće."
+
+#: source/ui/uiview/view.src#MSG_ERR_INSERT_GLOS.InfoBox.Message
+msgid  "AutoText could not be created."
+msgstr "Ne mogu da napravim autotekst."
 
 #: source/ui/uiview/view.src#MSG_ERR_SRCSTREAM.InfoBox.Message
 msgid  "The source cannot be loaded."
@@ -10785,7 +10789,7 @@ msgstr "Ne mogu da učitam izvor."
 
 #: source/ui/uiview/view.src#MSG_ERR_NO_FAX.InfoBox.Message
 msgid  "No fax printer has been set under Tools/Options/%1/Print."
-msgstr ""
+msgstr "Nijedan faks štampač nije podešen u „Alatke - Podešavanja - %1 - Štampanje“."
 
 #: source/ui/uiview/view.src#STR_WEBOPTIONS.String.Text
 msgid  "HTML document"
@@ -10871,10 +10875,6 @@ msgstr "HTML izvorni kod"
 msgid  "HTML Source"
 msgstr "HTML izvorni kod"
 
-#: source/ui/uiview/view.src#MSG_ERR_INSERT_GLOS.InfoBox.Message
-msgid  "AutoText could not be created."
-msgstr "Ne mogu da napravim autotekst."
-
 #: source/ui/uiview/pview.src#DLG_PAGEPREVIEW_ZOOM.ModalDialog.Text
 msgid  "Multiple Pages"
 msgstr "Višestruke stranice"
@@ -10908,7 +10908,7 @@ msgid  "Capitalize first letter of sentences"
 msgstr "Počni svaku rečenicu velikim slovom"
 
 #: source/ui/utlui/utlui.src#RID_SHELLRES_AUTOFMTSTRS.STR_AUTOFMTREDL_TYPO+1.String.Text
-msgid  "Replace "standard" quotes with %1 \bcustom%2 quotes"
+msgid  "Replace \"standard\" quotes with %1 \bcustom%2 quotes"
 msgstr ""
 
 #: source/ui/utlui/utlui.src#RID_SHELLRES_AUTOFMTSTRS.STR_AUTOFMTREDL_USER_STYLE+1.String.Text
@@ -10948,28 +10948,28 @@ msgid  "Combine single line paragraphs"
 msgstr "Sastavi pasuse od jednog reda"
 
 #: source/ui/utlui/utlui.src#RID_SHELLRES_AUTOFMTSTRS.STR_AUTOFMTREDL_SET_TMPL_TEXT +1.String.Text
-msgid  "Set "Text body" Style"
-msgstr ""
+msgid  "Set \"Text body\" Style"
+msgstr "Postavi stil „Telo teksta“"
 
 #: source/ui/utlui/utlui.src#RID_SHELLRES_AUTOFMTSTRS.STR_AUTOFMTREDL_SET_TMPL_INDENT.String.Text
-msgid  "Set "Text body indent" Style"
-msgstr ""
+msgid  "Set \"Text body indent\" Style"
+msgstr "Postavi stil „Uvlačenje tela teksta“"
 
 #: source/ui/utlui/utlui.src#RID_SHELLRES_AUTOFMTSTRS.STR_AUTOFMTREDL_SET_TMPL_NEG_INDENT.String.Text
-msgid  "Set "Hanging indent" Style"
-msgstr ""
+msgid  "Set \"Hanging indent\" Style"
+msgstr "Postavi stil „Viseće uvlačenje“"
 
 #: source/ui/utlui/utlui.src#RID_SHELLRES_AUTOFMTSTRS.STR_AUTOFMTREDL_SET_TMPL_TEXT_INDENT +1.String.Text
-msgid  "Set "Text body indent" Style"
-msgstr ""
+msgid  "Set \"Text body indent\" Style"
+msgstr "Postavi stil „Uvlačenje tela teksta“"
 
 #: source/ui/utlui/utlui.src#RID_SHELLRES_AUTOFMTSTRS.STR_AUTOFMTREDL_SET_TMPL_HEADLINE +1.String.Text
-msgid  "Set "Heading $(ARG1)" Style"
-msgstr ""
+msgid  "Set \"Heading $(ARG1)\" Style"
+msgstr "Postavi stil „Naslov $(ARG1)“"
 
 #: source/ui/utlui/utlui.src#RID_SHELLRES_AUTOFMTSTRS.STR_AUTOFMTREDL_SET_NUMBULET +1.String.Text
-msgid  "Set "Bullet" or "Numbering" Style"
-msgstr ""
+msgid  "Set \"Bullet\" or \"Numbering\" Style"
+msgstr "Postavi stil „Oznake za nabrajanje“ ili „Numerisanje“"
 
 #: source/ui/utlui/utlui.src#RID_SHELLRES_AUTOFMTSTRS.STR_AUTOFMTREDL_DEL_MORELINES +1.String.Text
 msgid  "Combine paragraphs"
@@ -11137,11 +11137,11 @@ msgstr "[Sistem]"
 
 #: source/ui/utlui/utlui.src#STR_MULT_INTERACT_SPELL_WARN.String.Text
 msgid  "The interactive spellcheck is already active\nin a different document"
-msgstr ""
+msgstr "Interaktivna provera pisanja je već uključena\nu drugom dokumentu"
 
 #: source/ui/utlui/utlui.src#STR_MULT_INTERACT_HYPH_WARN.String.Text
 msgid  "The interactive hyphenation is already active\nin a different document"
-msgstr ""
+msgstr "Interaktivni prelom reči je već uključen\nu drugom dokumentu"
 
 #: source/ui/utlui/utlui.src#STR_SPELL_TITLE.String.Text
 msgid  "Spellcheck"
@@ -11413,23 +11413,23 @@ msgstr "WWW dokument"
 
 #: source/ui/utlui/initui.src#STR_AUTH_TYPE_CUSTOM1.String.Text
 msgid  "User-defined1"
-msgstr "Korisnički-definisano1"
+msgstr "Posebno1"
 
 #: source/ui/utlui/initui.src#STR_AUTH_TYPE_CUSTOM2.String.Text
 msgid  "User-defined2"
-msgstr "Korisnički-definisano2"
+msgstr "Posebno2"
 
 #: source/ui/utlui/initui.src#STR_AUTH_TYPE_CUSTOM3.String.Text
 msgid  "User-defined3"
-msgstr "Korisnički-definisano3"
+msgstr "Posebno3"
 
 #: source/ui/utlui/initui.src#STR_AUTH_TYPE_CUSTOM4.String.Text
 msgid  "User-defined4"
-msgstr "Korisnički-definisano4"
+msgstr "Posebno4"
 
 #: source/ui/utlui/initui.src#STR_AUTH_TYPE_CUSTOM5.String.Text
 msgid  "User-defined5"
-msgstr "Korisnički-definisano5"
+msgstr "Posebno5"
 
 #: source/ui/utlui/initui.src#STR_AUTH_FIELD_IDENTIFIER.String.Text
 msgid  "Short name"
@@ -11933,7 +11933,7 @@ msgstr "Oznake"
 
 #: source/ui/utlui/poolfmt.src#STR_POOLCOLL_STANDARD.String.Text
 msgid  "Default"
-msgstr "Podrazumevano"
+msgstr "Podrazumevani"
 
 #: source/ui/utlui/poolfmt.src#STR_POOLCOLL_TEXT.String.Text
 msgid  "Text body"
@@ -11969,7 +11969,7 @@ msgstr "Lista"
 
 #: source/ui/utlui/poolfmt.src#STR_POOLCOLL_REGISTER_BASE.String.Text
 msgid  "Index"
-msgstr "Popis"
+msgstr "Indeks"
 
 #: source/ui/utlui/poolfmt.src#STR_POOLCOLL_CONFRONTATION.String.Text
 msgid  "List Indent"
@@ -12667,6 +12667,18 @@ msgstr "Uspravno na sredini"
 msgid  "at bottom"
 msgstr "na dnu"
 
+#: source/ui/utlui/attrdesc.src#STR_LINE_TOP.String.Text
+msgid  "Top of line"
+msgstr "Vrh linije"
+
+#: source/ui/utlui/attrdesc.src#STR_LINE_CENTER.String.Text
+msgid  "Line centered"
+msgstr "Centrirana linija"
+
+#: source/ui/utlui/attrdesc.src#STR_LINE_BOTTOM.String.Text
+msgid  "Bottom of line"
+msgstr "Dno linije"
+
 #: source/ui/utlui/attrdesc.src#STR_REGISTER_ON.String.Text
 msgid  "Register-true"
 msgstr "Registarski tačno"
@@ -12834,18 +12846,6 @@ msgstr "Spoji ivice"
 #: source/ui/utlui/attrdesc.src#STR_CONNECT_BORDER_OFF.String.Text
 msgid  "Do not merge borders"
 msgstr "Ne spajaj ivice"
-
-#: source/ui/utlui/attrdesc.src#STR_LINE_TOP.String.Text
-msgid  "Top of line"
-msgstr "Vrh linije"
-
-#: source/ui/utlui/attrdesc.src#STR_LINE_CENTER.String.Text
-msgid  "Line centered"
-msgstr "Centrirana linija"
-
-#: source/ui/utlui/attrdesc.src#STR_LINE_BOTTOM.String.Text
-msgid  "Bottom of line"
-msgstr "Dno linije"
 
 #: source/ui/web/web.src#STR_HUMAN_SWWEBDOC_NAME.String.Text
 msgid  "HTML"

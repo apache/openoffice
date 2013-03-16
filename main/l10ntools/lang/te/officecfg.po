@@ -81,7 +81,7 @@ msgstr "ప్రియమైన మిస్టర్ <2>, "
 
 #: registry/data/org/openoffice/Office/Writer.xcu#..Writer.MailMergeWizard.NeutralGreetingLines
 msgid  "To whom it may concern,;Dear Friends,;Dear Sir or Madam,;Hello,"
-msgstr ""
+msgstr "ఇది యెవరికి చెందాలి,;ప్రియమైన స్నేహితులు,; ప్రియమైన సార్ లేదా మేడమ్,;హెల్లో,"
 
 #: registry/data/org/openoffice/Office/Writer.xcu#..Writer.Insert.Caption.CaptionOrderNumberingFirst
 msgid  "true"
@@ -8082,8 +8082,9 @@ msgid  "Unprotect sheet"
 msgstr "కాపాడబడని పుట"
 
 #: registry/data/org/openoffice/Office/UI/WriterCommands.xcu#..WriterCommands.UserInterface.Commands..uno:RowSplit.Label
+#, fuzzy
 msgid  "Allow Row to Break Across Pages and Columns"
-msgstr ""
+msgstr "పుటలకు మరియు నిలువు వరుసలకు అడ్డముగా నిలుపుటకు నిలువు వరుసను అనుమతించుము"
 
 #: registry/data/org/openoffice/Office/UI/WriterCommands.xcu#..WriterCommands.UserInterface.Commands..uno:Ruler.Label
 msgid  "Ruler"
@@ -11356,27 +11357,22 @@ msgid  "Controls"
 msgstr "నియంత్రణలు"
 
 #: registry/data/org/openoffice/Office/UI/BaseWindowState.xcu#..BaseWindowState.UIElements.States.private:resource/toolbar/tableobjectbar.UIName
-#, fuzzy
 msgid  "Table"
 msgstr "పట్టిక"
 
 #: registry/data/org/openoffice/Office/UI/BaseWindowState.xcu#..BaseWindowState.UIElements.States.private:resource/toolbar/queryobjectbar.UIName
-#, fuzzy
 msgid  "Query"
 msgstr "ప్రశ్న"
 
 #: registry/data/org/openoffice/Office/UI/BaseWindowState.xcu#..BaseWindowState.UIElements.States.private:resource/toolbar/reportobjectbar.UIName
-#, fuzzy
 msgid  "Report"
 msgstr "నివేదన"
 
 #: registry/data/org/openoffice/Office/UI/BaseWindowState.xcu#..BaseWindowState.UIElements.States.private:resource/toolbar/formobjectbar.UIName
-#, fuzzy
 msgid  "Form"
 msgstr "ఫారమ్"
 
 #: registry/data/org/openoffice/Office/UI/BaseWindowState.xcu#..BaseWindowState.UIElements.States.private:resource/toolbar/toolbar.UIName
-#, fuzzy
 msgid  "Standard"
 msgstr "నాన్యత"
 
@@ -11578,17 +11574,14 @@ msgid  "Column Arrangement..."
 msgstr ""
 
 #: registry/data/org/openoffice/Office/UI/BibliographyCommands.xcu#..BibliographyCommands.UserInterface.Commands..uno:Bib/autoFilter.Label
-#, fuzzy
 msgid  "AutoFilter"
 msgstr " స్వయంవడపోత"
 
 #: registry/data/org/openoffice/Office/UI/BibliographyCommands.xcu#..BibliographyCommands.UserInterface.Commands..uno:Bib/query.Label
-#, fuzzy
 msgid  "Search Key"
 msgstr "మీటాను వెతుకు"
 
 #: registry/data/org/openoffice/Office/UI/BibliographyCommands.xcu#..BibliographyCommands.UserInterface.Commands..uno:Bib/removeFilter.Label
-#, fuzzy
 msgid  "Remove Filter"
 msgstr "వడపోతను తీసివేయి"
 
@@ -11597,7 +11590,6 @@ msgid  "Choose Data Source..."
 msgstr ""
 
 #: registry/data/org/openoffice/Office/UI/BibliographyCommands.xcu#..BibliographyCommands.UserInterface.Commands..uno:Bib/source.Label
-#, fuzzy
 msgid  "Table"
 msgstr "పట్టిక"
 
@@ -12226,7 +12218,6 @@ msgid  "Cancel"
 msgstr "రద్దు"
 
 #: registry/data/org/openoffice/Office/UI/CalcCommands.xcu#..CalcCommands.UserInterface.Commands..uno:ChooseDesign.Label
-#, fuzzy
 msgid  "Choose Themes"
 msgstr "వైవిద్యాంశంను ఎన్నుకొనుము"
 
@@ -12418,7 +12409,6 @@ msgid  "Undo Selection"
 msgstr "ఎంపిక చేసింది రద్దుచేయు"
 
 #: registry/data/org/openoffice/Office/UI/CalcCommands.xcu#..CalcCommands.UserInterface.Commands..uno:DrawChart.Label
-#, fuzzy
 msgid  "Insert Chart"
 msgstr "పటమును ప్రవేశపెట్టు"
 
@@ -12443,7 +12433,6 @@ msgid  "Edit..."
 msgstr ""
 
 #: registry/data/org/openoffice/Office/UI/CalcCommands.xcu#..CalcCommands.UserInterface.Commands..uno:EuroConverter.Label
-#, fuzzy
 msgid  "Euro Converter"
 msgstr "యూనరో కన్వర్టర్"
 
@@ -12496,7 +12485,6 @@ msgid  "Up"
 msgstr ""
 
 #: registry/data/org/openoffice/Office/UI/CalcCommands.xcu#..CalcCommands.UserInterface.Commands..uno:FirstPage.Label
-#, fuzzy
 msgid  "First Page"
 msgstr "మొదటి పుట"
 
@@ -12506,7 +12494,6 @@ msgid  "Sheet Area Input Field"
 msgstr "పత్ర స్థల దిగుబడి క్షేత్రం"
 
 #: registry/data/org/openoffice/Office/UI/CalcCommands.xcu#..CalcCommands.UserInterface.Commands..uno:FocusInputLine.Label
-#, fuzzy
 msgid  "Input Line"
 msgstr "ఎగుబడి వరుస"
 
@@ -12535,17 +12522,14 @@ msgid  "Function..."
 msgstr ""
 
 #: registry/data/org/openoffice/Office/UI/CalcCommands.xcu#..CalcCommands.UserInterface.Commands..uno:GoDownToEndOfData.Label
-#, fuzzy
 msgid  "To Lower Block Margin"
 msgstr "క్రింది భాగపు అంచుకు"
 
 #: registry/data/org/openoffice/Office/UI/CalcCommands.xcu#..CalcCommands.UserInterface.Commands..uno:GoDownToEndOfDataSel.Label
-#, fuzzy
 msgid  "Select to Lower Block Margin"
 msgstr "క్రింది భాగపు అంచుకు ఎంచుకొనుము"
 
 #: registry/data/org/openoffice/Office/UI/CalcCommands.xcu#..CalcCommands.UserInterface.Commands..uno:GoLeftToStartOfData.Label
-#, fuzzy
 msgid  "To Left Block Margin"
 msgstr "ఎడమ భాగపు అంచుకు"
 
@@ -12555,17 +12539,14 @@ msgid  "Select to Left Block Margin"
 msgstr "ఎడమ భాగపు అంచుకు ఎంచుకొనుము"
 
 #: registry/data/org/openoffice/Office/UI/CalcCommands.xcu#..CalcCommands.UserInterface.Commands..uno:GoRightBlock.Label
-#, fuzzy
 msgid  "Page Right"
 msgstr "కుడివైపుకు పుట"
 
 #: registry/data/org/openoffice/Office/UI/CalcCommands.xcu#..CalcCommands.UserInterface.Commands..uno:GoRightBlockSel.Label
-#, fuzzy
 msgid  "Select to Page Right"
 msgstr "కుడివైపుకు పుటను ఎంచుకొనుము"
 
 #: registry/data/org/openoffice/Office/UI/CalcCommands.xcu#..CalcCommands.UserInterface.Commands..uno:GoRightToEndOfData.Label
-#, fuzzy
 msgid  "To Right Block Margin"
 msgstr "కుడి భాగపు అంచుకు"
 
@@ -12580,12 +12561,10 @@ msgid  "To Current Cell"
 msgstr "ప్రస్తుత అరకు"
 
 #: registry/data/org/openoffice/Office/UI/CalcCommands.xcu#..CalcCommands.UserInterface.Commands..uno:GoUpToStartOfData.Label
-#, fuzzy
 msgid  "To Upper Block Margin"
 msgstr "పై భాగపు అంచుకు"
 
 #: registry/data/org/openoffice/Office/UI/CalcCommands.xcu#..CalcCommands.UserInterface.Commands..uno:GoUpToStartOfDataSel.Label
-#, fuzzy
 msgid  "Select to Upper Block Margin"
 msgstr "పై భాగపు అంచుకు ఎంచుకొనుము"
 
@@ -12726,12 +12705,10 @@ msgid  "To Previous Unprotected Cell"
 msgstr "పూర్వపు సురక్షితం కాని అరకు"
 
 #: registry/data/org/openoffice/Office/UI/CalcCommands.xcu#..CalcCommands.UserInterface.Commands..uno:LastPage.Label
-#, fuzzy
 msgid  "Last Page"
 msgstr "ఆఖరు పుట "
 
 #: registry/data/org/openoffice/Office/UI/CalcCommands.xcu#..CalcCommands.UserInterface.Commands..uno:Margins.Label
-#, fuzzy
 msgid  "Margins"
 msgstr "అంచులు"
 
@@ -12749,7 +12726,6 @@ msgid  "Rename Sheet"
 msgstr "పుటను పునర్నామకరణం"
 
 #: registry/data/org/openoffice/Office/UI/CalcCommands.xcu#..CalcCommands.UserInterface.Commands..uno:NextPage.Label
-#, fuzzy
 msgid  "Next Page"
 msgstr "తర్వాతి పుట"
 
@@ -12777,12 +12753,10 @@ msgid  "Number Format: Add Decimal Place"
 msgstr "సంఖ్య రూపలావణ్యము: దశాంశ చోటును కలుపుము"
 
 #: registry/data/org/openoffice/Office/UI/CalcCommands.xcu#..CalcCommands.UserInterface.Commands..uno:ObjectMirrorHorizontal.Label
-#, fuzzy
 msgid  "Flip Object Horizontally"
 msgstr " ఫ్లిప్ తాత్పర్యము అడ్డంగా విస్తరించిన"
 
 #: registry/data/org/openoffice/Office/UI/CalcCommands.xcu#..CalcCommands.UserInterface.Commands..uno:ObjectMirrorVertical.Label
-#, fuzzy
 msgid  "Flip Vertically"
 msgstr "ఫ్లిప్ నిలువుగావిస్తరించిన"
 
@@ -12799,7 +12773,6 @@ msgid  "Page Break Preview"
 msgstr ""
 
 #: registry/data/org/openoffice/Office/UI/CalcCommands.xcu#..CalcCommands.UserInterface.Commands..uno:PreviousPage.Label
-#, fuzzy
 msgid  "Previous Page"
 msgstr "పూర్వపు పుట"
 
@@ -12854,7 +12827,6 @@ msgid  "Scale Screen Display"
 msgstr " తెర ప్రదర్శనను కొలబద్దముచేయు"
 
 #: registry/data/org/openoffice/Office/UI/CalcCommands.xcu#..CalcCommands.UserInterface.Commands..uno:ScalingFactor.Label
-#, fuzzy
 msgid  "Scaling Factor"
 msgstr "స్కేలింగు గుణకము"
 
@@ -13014,7 +12986,6 @@ msgid  "Show"
 msgstr ""
 
 #: registry/data/org/openoffice/Office/UI/CalcCommands.xcu#..CalcCommands.UserInterface.Commands..uno:SimpleReferenz.Label
-#, fuzzy
 msgid  "Enter References"
 msgstr "నివేదనలను ప్రవేశపెట్టుము"
 
@@ -13055,27 +13026,22 @@ msgid  "Chart..."
 msgstr ""
 
 #: registry/data/org/openoffice/Office/UI/CalcCommands.xcu#..CalcCommands.UserInterface.Commands..uno:StatusDocPos.Label
-#, fuzzy
 msgid  "Position in Document"
 msgstr "పత్రంలో స్థానం"
 
 #: registry/data/org/openoffice/Office/UI/CalcCommands.xcu#..CalcCommands.UserInterface.Commands..uno:StatusPageStyle.Label
-#, fuzzy
 msgid  "Page Format"
 msgstr "పుట రూపలావణ్యం"
 
 #: registry/data/org/openoffice/Office/UI/CalcCommands.xcu#..CalcCommands.UserInterface.Commands..uno:StatusSelectionMode.Label
-#, fuzzy
 msgid  "Selection Mode"
 msgstr "విధానమును ఎంపికచేయు"
 
 #: registry/data/org/openoffice/Office/UI/CalcCommands.xcu#..CalcCommands.UserInterface.Commands..uno:StatusSelectionModeExp.Label
-#, fuzzy
 msgid  "Status Expanded Selection"
 msgstr "సుస్థితి విస్తరించబడ్డ ఎంపిక"
 
 #: registry/data/org/openoffice/Office/UI/CalcCommands.xcu#..CalcCommands.UserInterface.Commands..uno:StatusSelectionModeExt.Label
-#, fuzzy
 msgid  "Status Extended Selection"
 msgstr "సుస్థితి విస్తరించబడ్డ ఎంపిక"
 
@@ -16707,8 +16673,9 @@ msgid  "Flower"
 msgstr "పుష్పం"
 
 #: registry/data/org/openoffice/Office/UI/GenericCommands.xcu#..GenericCommands.UserInterface.Commands..uno:SymbolShapes.forbidden.Label
-msgid  ""Prohibited" Symbol"
-msgstr ""
+#, fuzzy
+msgid  "\"Prohibited\" Symbol"
+msgstr "\"\"చిహ్నము"
 
 #: registry/data/org/openoffice/Office/UI/GenericCommands.xcu#..GenericCommands.UserInterface.Commands..uno:SymbolShapes.heart.Label
 #, fuzzy

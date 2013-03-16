@@ -119,6 +119,18 @@ msgstr ""
 msgid  "LDAP Address Book"
 msgstr ""
 
+#: source/drivers/mozab/mozab2.xcu#.Drivers.Installed.sdbc:address:mozilla:.DriverTypeDisplayName
+msgid  "SeaMonkey Address Book"
+msgstr ""
+
+#: source/drivers/mozab/mozab2.xcu#.Drivers.Installed.sdbc:address:thunderbird:.DriverTypeDisplayName
+msgid  "Thunderbird Address Book"
+msgstr ""
+
+#: source/drivers/mozab/mozab2.xcu#.Drivers.Installed.sdbc:address:ldap:*.DriverTypeDisplayName
+msgid  "LDAP Address Book"
+msgstr ""
+
 #: source/drivers/mysql/mysql.xcu#.Drivers.Installed.sdbc:mysql:jdbc:*.DriverTypeDisplayName
 msgid  "MySQL (JDBC)"
 msgstr ""
@@ -161,11 +173,11 @@ msgstr "Mozilla ishlayotgan paytda yangi manzillar daftari yaratib boʻlmaydi."
 
 #: source/resource/conn_shared_res.src#STR_COULD_NOT_RETRIEVE_AB_ENTRY.String.Text
 msgid  "An address book entry could not be retrieved, an unknown error occurred."
-msgstr ""
+msgstr "Manzillar daftarini olib boʻlmadi, noma'lum xatolik roʻy berdi."
 
 #: source/resource/conn_shared_res.src#STR_COULD_NOT_GET_DIRECTORY_NAME.String.Text
 msgid  "An address book directory name could not be retrieved, an unknown error occurred."
-msgstr ""
+msgstr "Manzillar daftari direktoriyasi nomini olib boʻlmadi, noma'lum xatolik roʻy berdi."
 
 #: source/resource/conn_shared_res.src#STR_TIMEOUT_WAITING.String.Text
 msgid  "Timed out while waiting for the result."
@@ -177,11 +189,11 @@ msgstr "Soʻrovni  bajarishda noma'lumxatolik roʻy berdi."
 
 #: source/resource/conn_shared_res.src#STR_MOZILLA_IS_RUNNIG_NO_CHANGES.String.Text
 msgid  "You can't make any changes to mozilla address book when mozilla is running."
-msgstr ""
+msgstr "Mozilla ishlayotganda, manzillar daftariga oʻzgartirish kirita olmaysiz."
 
 #: source/resource/conn_shared_res.src#STR_FOREIGN_PROCESS_CHANGED_AB.String.Text
 msgid  "Mozilla Address Book has been changed out of this process, we can't modify it in this condition."
-msgstr ""
+msgstr "Ushbu jarayon mobaynida Mozilla manzillar daftari oʻzgardi. Bunday holatda unga oʻzgartirish kirita olmaymiz."
 
 #: source/resource/conn_shared_res.src#STR_CANT_FIND_ROW.String.Text
 msgid  "Can't find the requested row."
@@ -233,7 +245,7 @@ msgstr "Yangi satr yaratib boʻlmaydi."
 
 #: source/resource/conn_shared_res.src#STR_QUERY_INVALID_IS_NULL_COLUMN.String.Text
 msgid  "The query can not be executed. The 'IS NULL' can only be used with a column name."
-msgstr ""
+msgstr "Soʻrobni bajarib boʻlmaydi. 'IS NULL' faqat ustun nomi bilan birga foydalanishi mumkin."
 
 #: source/resource/conn_shared_res.src#STR_ILLEGAL_MOVEMENT.String.Text
 msgid  "Illegal cursor movement occured."
@@ -241,7 +253,7 @@ msgstr "Xato kursor koʻchishi roʻy berdi."
 
 #: source/resource/conn_shared_res.src#STR_COMMIT_ROW.String.Text
 msgid  "Please commit row '$position$' before update rows or insert new rows."
-msgstr ""
+msgstr "Ustunlarni yangilashdan oldin yoki yangi ustun qoʻyishdan oldin '$position$' yozuvini saqlang."
 
 #: source/resource/conn_shared_res.src#STR_INVALID_ROW_UPDATE.String.Text
 msgid  "The update call can not be executed. The row is invalid."
@@ -268,7 +280,7 @@ msgid  "It doesn't exist a connection to the database."
 msgstr "Ma'lumot bazasi bilan aloqa mavjud emas."
 
 #: source/resource/conn_shared_res.src#STR_WRONG_PARAM_INDEX.String.Text
-msgid  "You tried to set a parameter at position '$pos$' but there is/are only '$count$' parameter(s) allowed. One reason may be that the property "ParameterNameSubstitution" is not set to TRUE in the data source."
+msgid  "You tried to set a parameter at position '$pos$' but there is/are only '$count$' parameter(s) allowed. One reason may be that the property \"ParameterNameSubstitution\" is not set to TRUE in the data source."
 msgstr ""
 
 #: source/resource/conn_shared_res.src#STR_INPUTSTREAM_WRONG_LEN.String.Text
@@ -321,11 +333,11 @@ msgstr "TypeInfoSettings uchun xato formula!"
 
 #: source/resource/conn_shared_res.src#STR_STRING_LENGTH_EXCEEDED.String.Text
 msgid  "The string '$string$' exceeds the maximum length of $maxlen$ characters when converted to the target character set '$charset$'."
-msgstr ""
+msgstr "\"$string$\" qatori \"$charset$\" kodlash usuliga aylantirilgandan keyin belgilarning maksimal sonidan $maxlen$ oshib ketdi."
 
 #: source/resource/conn_shared_res.src#STR_CANNOT_CONVERT_STRING.String.Text
 msgid  "The string '$string$' cannot be converted using the encoding '$charset$'."
-msgstr ""
+msgstr "'$string$' ni '$charset' kodlash usulini qoʻllagan holda boshqa formatga oʻtkazib boʻlmaydi."
 
 #: source/resource/conn_shared_res.src#STR_URI_SYNTAX_ERROR.String.Text
 msgid  "The connection URL is invalid."
@@ -345,7 +357,7 @@ msgstr ""
 
 #: source/resource/conn_shared_res.src#STR_QUERY_INVALID_LIKE_STRING.String.Text
 msgid  "The query can not be executed. 'LIKE' can be used with a string argument only."
-msgstr ""
+msgstr "Soʻrovni bajarib boʻlmadi. 'LIKE' operatori faqat qator argumenti bilan qoʻllanilish mumkin."
 
 #: source/resource/conn_shared_res.src#STR_QUERY_NOT_LIKE_TOO_COMPLEX.String.Text
 msgid  "The query can not be executed. The 'NOT LIKE' condition is too complex."
@@ -377,7 +389,7 @@ msgstr "$filename$ faylini yuklab boʻlmadi."
 
 #: source/resource/conn_shared_res.src#STR_LOAD_FILE_ERROR_MESSAGE.String.Text
 msgid  "The attempt to load the file resulted in the following error message ($exception_type$):\n\n$error_message$"
-msgstr ""
+msgstr "Faylni yuklash quyidagi xatolik xabarini berdi($exception_type$):\n\n$error_message$"
 
 #: source/resource/conn_shared_res.src#STR_TYPE_NOT_CONVERT.String.Text
 msgid  "The type could not be converted."
@@ -417,15 +429,15 @@ msgstr "Koʻrinish yaratib boʻlmadi: command obyekti topilmadi."
 
 #: source/resource/conn_shared_res.src#STR_NO_CONNECTION.String.Text
 msgid  "The connection could not be created. May be the necessary data provider is not installed."
-msgstr ""
+msgstr "Ulsnib boʻlmadi. Kerakli ma'lumotni uzatuvchi oʻrnatilmagan koʻrinadi."
 
 #: source/resource/conn_shared_res.src#STR_COULD_NOT_DELETE_INDEX.String.Text
 msgid  "The index could not be deleted. An unknown error while accessing the file system occured."
-msgstr ""
+msgstr "Indeksni olib tashlab boʻlmadi. Fayl tizimiga murojjat qilishda noma'lum xatolik yuz berdi."
 
 #: source/resource/conn_shared_res.src#STR_ONL_ONE_COLUMN_PER_INDEX.String.Text
 msgid  "The index could not be created. Only one column per index is allowed."
-msgstr ""
+msgstr "Indeksni yaratib boʻlmadi. Bitta indeks uchun faqat bitta ustunga ruxsat beriladi."
 
 #: source/resource/conn_shared_res.src#STR_COULD_NOT_CREATE_INDEX_NOT_UNIQUE.String.Text
 msgid  "The index could not be created. The values are not unique."
@@ -437,7 +449,7 @@ msgstr "Indeksni yaratib boʻlmadi. Noma'lum xatolik yuz berdi."
 
 #: source/resource/conn_shared_res.src#STR_COULD_NOT_CREATE_INDEX_NAME.String.Text
 msgid  "The index could not be created. The file '$filename$' is used by an other index."
-msgstr ""
+msgstr "Indeksni yaratib boʻlmadi. '$filename$' fayl nomi boshqa indeks tomonidan foydalanilmoqda."
 
 #: source/resource/conn_shared_res.src#STR_COULD_NOT_CREATE_INDEX_KEYSIZE.String.Text
 msgid  "The index could not be created. The size of the chosen column is to big."
@@ -472,28 +484,28 @@ msgid  "Duplicate value found in column '$columnname$'."
 msgstr "'$columnname$' ustunida ikkita bir xil qiymat topildi."
 
 #: source/resource/conn_shared_res.src#STR_INVALID_COLUMN_DECIMAL_VALUE.String.Text
-msgid  "The '$columnname$' column has been defined as a "Decimal" type, the max. length is $precision$ characters (with $scale$ decimal places).\n\nThe specified value "$value$ is longer than the number of digits allowed."
+msgid  "The '$columnname$' column has been defined as a \"Decimal\" type, the max. length is $precision$ characters (with $scale$ decimal places).\n\nThe specified value \"$value$ is longer than the number of digits allowed."
 msgstr ""
 
 #: source/resource/conn_shared_res.src#STR_COLUMN_NOT_ALTERABLE.String.Text
 msgid  "The column '$columnname$' could not be altered. May be the file system is write protected."
-msgstr ""
+msgstr "'$columnname$' ustunini oʻzgartirib  boʻlmadi. Fayl tizimi himoyalangan boʻlishi mumkin."
 
 #: source/resource/conn_shared_res.src#STR_INVALID_COLUMN_VALUE.String.Text
 msgid  "The column '$columnname$' could not be updated. The value is invalid for that column."
-msgstr ""
+msgstr "'$columnname$' ustunini yangilab boʻlmadi. Ushbu ustun uchun qiymat xato."
 
 #: source/resource/conn_shared_res.src#STR_COLUMN_NOT_ADDABLE.String.Text
 msgid  "The column '$columnname$' could not be added. May be the file system is write protected."
-msgstr ""
+msgstr "'$columnname$' ustunini qoʻshib boʻlmadi. Fayl tizimi yozishdan himoyalangan boʻlishi mumkin."
 
 #: source/resource/conn_shared_res.src#STR_COLUMN_NOT_DROP.String.Text
 msgid  "The column at position '$position$' could not be dropped. May be the file system is write protected."
-msgstr ""
+msgstr "Ustunni '$position$' holatidan olib tashlab boʻlmadi. Fayl tizimi himoyalangan boʻlishi mumkin."
 
 #: source/resource/conn_shared_res.src#STR_TABLE_NOT_DROP.String.Text
 msgid  "The table '$tablename$' could not be dropped. May be the file system is write protected."
-msgstr ""
+msgstr "'$tablename$' jadvalini olib tashlab boʻlmadi. Fayl tizimi himoyalangan boʻlishi mumkin."
 
 #: source/resource/conn_shared_res.src#STR_COULD_NOT_ALTER_TABLE.String.Text
 msgid  "The table could not be altered."
@@ -512,8 +524,8 @@ msgid  "Can only sort by table columns."
 msgstr ""
 
 #: source/resource/conn_shared_res.src#STR_QUERY_COMPLEX_COUNT.String.Text
-msgid  "The query can not be executed. It is too complex. Only "COUNT(*)" is supported."
-msgstr ""
+msgid  "The query can not be executed. It is too complex. Only \"COUNT(*)\" is supported."
+msgstr "Soʻrovni bajarib boʻlmadi. U juda murakkab. Faqat \"COUNT(*)\" qoʻllaniladi."
 
 #: source/resource/conn_shared_res.src#STR_QUERY_INVALID_BETWEEN.String.Text
 msgid  "The query can not be executed. The 'BETWEEN' arguments are not correct."
@@ -528,8 +540,8 @@ msgid  "The table can not be changed. It is read only."
 msgstr "Jadvalni oʻzgartirib boʻlmadi. U faqat oʻqishi uchun."
 
 #: source/resource/conn_shared_res.src#STR_DELETE_ROW.String.Text
-msgid  "The row could not be deleted. The option "Display inactive records" is set."
-msgstr ""
+msgid  "The row could not be deleted. The option \"Display inactive records\" is set."
+msgstr "Satrni olib tashlab boʻlmadi. \"Noaktiv yozuvlarni koʻrsatish\" parametri oʻrnatilgan."
 
 #: source/resource/conn_shared_res.src#STR_ROW_ALREADY_DELETED.String.Text
 msgid  "The row could not be deleted. It is already deleted."
@@ -561,7 +573,7 @@ msgstr "'$classname$' drayver klasi topilmadi."
 
 #: source/resource/conn_shared_res.src#STR_NO_JAVA.String.Text
 msgid  "No Java installation could be found. Please check your installation."
-msgstr ""
+msgstr "Oʻrnatilgan Java topilmadi. Iltimos oʻrnatilganligini tekshirib koʻring."
 
 #: source/resource/conn_shared_res.src#STR_NO_RESULTSET.String.Text
 msgid  "The execution of the query doesn't return a valid result set."
@@ -589,15 +601,15 @@ msgstr "Mos keladigan KDE oʻrnatilganligi topilmadi."
 
 #: source/resource/conn_shared_res.src#STR_KDE_VERSION_TOO_OLD.String.Text
 msgid  "KDE version $major$.$minor$ or higher is required to access the KDE Address Book."
-msgstr ""
+msgstr "KDE manzillar daftariga murojaat qilish uchun KDE $major$.$minor$ versiyasi yoki undan yuqori versiyalar talab qilinadi."
 
 #: source/resource/conn_shared_res.src#STR_KDE_VERSION_TOO_NEW.String.Text
 msgid  "The found KDE version is too new. Only KDE up to version $major$.$minor$ is known to work with this product.\n"
-msgstr ""
+msgstr "Topilgan KDE versiyasi juda yangi. Faqat $major$.$minor$ versiyalar ushbu mahsulot bilan ishlay oladi.\n"
 
 #: source/resource/conn_shared_res.src#STR_KDE_VERSION_TOO_NEW_WORK_AROUND.String.Text
 msgid  "If you are sure that your KDE version works, you might execute the following Basic macro to disable this version check:\n\n"
-msgstr ""
+msgstr "Agar KDE ishlayotganiga ishonchingiz komil boʻlsa, versiyani tekshirishni quyidagi Basic makrosini bajarish bilan toʻxtatishingiz mumkin:\n\n"
 
 #: source/resource/conn_shared_res.src#STR_PARA_ONLY_PREPARED.String.Text
 msgid  "Parameters can appear only in prepared statements."
@@ -613,19 +625,19 @@ msgstr "Mos keladigan Mac OS oʻrnatilishi topilmadi."
 
 #: source/resource/conn_shared_res.src#STR_NO_DISK_SPACE.String.Text
 msgid  "The database file '$filename$' could not be created. Please check your disk space."
-msgstr ""
+msgstr "'$filename$' ma'lumot bazasi faylini yaratib boʻlmadi. Iltimos diskda yetarli joy mavjudligini tekshirib koʻring."
 
 #: source/resource/conn_shared_res.src#STR_COMMAND_NOT_FOUND.String.Text
 msgid  "The database '$databasename$' could not be started because the command '$progname$' could not be executed."
-msgstr ""
+msgstr "'$databasename$' ma'lumot bazasini ishga tushirib boʻlmadi, chunki '$progname$' buyrugʻini bajarib boʻlmadi."
 
 #: source/resource/conn_shared_res.src#STR_DATABASE_NEEDS_CONVERTING.String.Text
 msgid  "The current database need to be converted. Please insert control user  and password."
-msgstr ""
+msgstr "Ma'lumot bazasini konvertirlab boʻlmadi. Iltimos boshqarish uchun foydalanuvchi va maxfiy soʻzni kiriting."
 
 #: source/resource/conn_shared_res.src#STR_USER_NO_DELETE.String.Text
 msgid  "This user couldn't be deleted. Otherwise the database stays in a inconsistent state."
-msgstr ""
+msgstr "Foydalanuvchini olib tashlab boʻlmaydi. Aks holda ma'lumot bazasida nomutanosiblik yuzaga keladi."
 
 #: source/resource/conn_shared_res.src#STR_NO_STROAGE.String.Text
 msgid  "The connection can not be established. No storage or URL was given."
@@ -633,7 +645,7 @@ msgstr "Ulanib boʻlmaydi. Saqlash joyi yoki URL koʻrsatilmagan."
 
 #: source/resource/conn_shared_res.src#STR_INVALID_FILE_URL.String.Text
 msgid  "The given URL contains no valid local file system path. Please check the location of your database file."
-msgstr ""
+msgstr "Keltirilgan URL da yaroqli lokal fayl tizimi yoʻli mavjud emas. Iltimos ma'lumot bazasi fayli yoʻlini tekshirib koʻring."
 
 #: source/resource/conn_shared_res.src#STR_NO_TABLE_CONTAINER.String.Text
 msgid  "An error occured while obtaining the connection's table container."
@@ -685,16 +697,4 @@ msgstr ""
 
 #: source/resource/conn_error_message.src#256 + 2*550 + 0.String.Text
 msgid  "Unable to display the complete table content. Please apply a filter."
-msgstr ""
-
-#: source/drivers/mozab/mozab2.xcu#.Drivers.Installed.sdbc:address:mozilla:.DriverTypeDisplayName
-msgid  "SeaMonkey Address Book"
-msgstr ""
-
-#: source/drivers/mozab/mozab2.xcu#.Drivers.Installed.sdbc:address:thunderbird:.DriverTypeDisplayName
-msgid  "Thunderbird Address Book"
-msgstr ""
-
-#: source/drivers/mozab/mozab2.xcu#.Drivers.Installed.sdbc:address:ldap:*.DriverTypeDisplayName
-msgid  "LDAP Address Book"
 msgstr ""

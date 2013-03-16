@@ -445,11 +445,11 @@ msgstr "Futa"
 
 #: source/smres.src#RID_NOMATHTYPEFACEWARNING.WarningBox.Message
 msgid  "The 'StarMath' font has not been installed.\nWithout this font %PRODUCTNAME Math cannot function correctly.\nPlease install this font and restart %PRODUCTNAME Math."
-msgstr ""
+msgstr "Fonti za \"StarMath\" hazijasakinishwa.\nBila fonti hizi %PRODUCTNAME Math haiwezi kufanya kazi kiusahihi.\nTafadhali sakinisha fonti hizi na anza upya %PRODUCTNAME Math."
 
 #: source/smres.src#RID_DEFAULTSAVEQUERY.QueryBox.Message
 msgid  "Should the changes be saved as defaults?\n\nThese changes will apply for all new formulas."
-msgstr ""
+msgstr "Je mabadiliko yahifadhiwe kama chaguo-msingi?\n\nMabadiliko haya yatatekelezwa kwa fomula mpya zote."
 
 #: source/smres.src#RID_FONTREGULAR.String.Text
 msgid  "Standard"
@@ -558,6 +558,10 @@ msgstr "Sans"
 #: source/smres.src#RID_FONTMENU.7.MenuItem.Text
 msgid  "Fixed"
 msgstr "Fixed"
+
+#: source/smres.src#CMDBOXWINDOW_TEXT.#define.Text
+msgid  "Commands"
+msgstr "Amri"
 
 #: source/smres.src#RID_DOCUMENTSTR.String.Text
 msgid  "Formula"
@@ -694,10 +698,6 @@ msgstr ""
 #: source/smres.src#RID_PRINTUIOPTIONS.item9.ItemList.item
 msgid  "~Scaling"
 msgstr ""
-
-#: source/smres.src#CMDBOXWINDOW_TEXT.#define.Text
-msgid  "Commands"
-msgstr "Amri"
 
 #: source/commands.src#RID_COMMANDMENU.RID_UNBINOPS_MENU.MenuItem.Text
 msgid  "~Unary/Binary Operators"

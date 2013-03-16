@@ -41,23 +41,23 @@ msgstr "Không thể thiết lập kết nối."
 
 #: source/core/resource/strings.src#RID_STR_TABLE_IS_FILTERED.String.Text
 msgid  "The table $name$ already exists. It is not visible because it has been filtered out."
-msgstr ""
+msgstr "Bảng $name$ đã có. Bảng này không hiện ra vì nó đã được lọc ra."
 
 #: source/core/resource/strings.src#RID_STR_NEED_CONFIG_WRITE_ACCESS.String.Text
 msgid  "You have no write access to the configuration data the object is based on."
-msgstr ""
+msgstr "Bạn không có quyền ghi vào dữ liệu cấu hình vào đó dựa đối tượng."
 
 #: source/core/resource/strings.src#RID_STR_COULDNOTCONNECT_UNSPECIFIED.String.Text
 msgid  "The connection to the external data source could not be established. An unknown error occurred. The driver is probably defective."
-msgstr ""
+msgstr "Không thể thiết lập kết nối với nguồn dự liệu bên ngoài. Gặp lỗi không rõ. Có thể trình điều khiển bị hư."
 
 #: source/core/resource/strings.src#RID_STR_COULDNOTCONNECT_NODRIVER.String.Text
 msgid  "The connection to the external data source could not be established. No SDBC driver was found for the given URL."
-msgstr ""
+msgstr "Không thể thiết lập kết nối với nguồn dự liệu bên ngoài. Không tìm thấy trình điều khiển SDBC cho địa chỉ URL chỉ định."
 
 #: source/core/resource/strings.src#RID_STR_COULDNOTLOAD_MANAGER.String.Text
 msgid  "The connection to the external data source could not be established. The SDBC driver manager could not be loaded."
-msgstr ""
+msgstr "Không thể thiết lập kết nối với nguồn dự liệu bên ngoài. Không thể nạp bộ quản lý trình điều khiển SDBC."
 
 #: source/core/resource/strings.src#RID_STR_FORM.String.Text
 msgid  "Form"
@@ -69,11 +69,11 @@ msgstr "Báo cáo"
 
 #: source/core/resource/strings.src#RID_STR_DATASOURCE_NOT_STORED.String.Text
 msgid  "The data source was not saved. Please use the interface XStorable to save the data source."
-msgstr ""
+msgstr "Nguồn dữ liệu chưa được lưu. Hãy sử dụng giao diện XStorable để lưu nguồn dữ liệu này."
 
 #: source/core/resource/strings.src#RID_STR_ONLY_QUERY.String.Text
 msgid  "The given command is not a SELECT statement.\nOnly queries are allowed."
-msgstr ""
+msgstr "Lệnh đã cho không phải là câu lệnh SELECT.\n Cho phép chỉ truy vấn thôi."
 
 #: source/core/resource/strings.src#RID_STR_NO_VALUE_CHANGED.String.Text
 msgid  "No values were modified."
@@ -81,11 +81,11 @@ msgstr "Không có giá trị nào bị sửa đổi."
 
 #: source/core/resource/strings.src#RID_STR_NO_XROWUPDATE.String.Text
 msgid  "Values could not be inserted. The XRowUpdate interface is not supported by ResultSet."
-msgstr ""
+msgstr "Không thể chèn các giá trị. Giao diện XRowUpdate không được ResultSet hỗ trợ."
 
 #: source/core/resource/strings.src#RID_STR_NO_XRESULTSETUPDATE.String.Text
 msgid  "Values could not be inserted. The XResultSetUpdate interface is not supported by ResultSet."
-msgstr ""
+msgstr "Không thể chèn các giá trị. Giao diện XResultSetUpdate không được ResultSet hỗ trợ."
 
 #: source/core/resource/strings.src#RID_STR_NO_UPDATE_MISSING_CONDITION.String.Text
 msgid  "Values could not be modified, due to a missing condition statement."
@@ -141,11 +141,11 @@ msgstr "Không cho phép việc đặt vị trí tương đối ở tình trạn
 
 #: source/core/resource/strings.src#RID_STR_NO_REFESH_AFTERLAST.String.Text
 msgid  "A row cannot be refreshed when the ResultSet is positioned after the last row."
-msgstr ""
+msgstr "Không thể làm tươi hàng khi ResultSet nằm sau hàng cuối cùng."
 
 #: source/core/resource/strings.src#RID_STR_NO_MOVETOINSERTROW_CALLED.String.Text
 msgid  "A new row cannot be inserted when the ResultSet is not first moved to the insert row."
-msgstr ""
+msgstr "Không thể chèn hàng mới khi ResultSet chưa được di chuyển vào hàng chèn."
 
 #: source/core/resource/strings.src#RID_STR_NO_UPDATEROW.String.Text
 msgid  "A row cannot be modified in this state"
@@ -165,31 +165,31 @@ msgstr "Trình điều khiển không hỗ trợ khả năng sửa đổi mô t�
 
 #: source/core/resource/strings.src#RID_STR_COLUMN_ALTER_BY_NAME.String.Text
 msgid  "The driver does not support the modification of column descriptions by changing the name."
-msgstr ""
+msgstr "Trình điều khiển không hỗ trợ khả năng sửa đổi mô tả cột bằng cách thay đổi tên."
 
 #: source/core/resource/strings.src#RID_STR_COLUMN_ALTER_BY_INDEX.String.Text
 msgid  "The driver does not support the modification of column descriptions by changing the index."
-msgstr ""
+msgstr "Trình điều khiển không hỗ trợ khả năng sửa đổi mô tả cột bằng cách thay đổi chỉ mục."
 
 #: source/core/resource/strings.src#RID_STR_FILE_DOES_NOT_EXIST.String.Text
-msgid  "The file "$file$" does not exist."
-msgstr ""
+msgid  "The file \"$file$\" does not exist."
+msgstr "Tập tin « $file$ » không tồn tại."
 
 #: source/core/resource/strings.src#RID_STR_TABLE_DOES_NOT_EXIST.String.Text
-msgid  "There exists no table named "$table$"."
-msgstr ""
+msgid  "There exists no table named \"$table$\"."
+msgstr "Không có bảng tên « $table$ »."
 
 #: source/core/resource/strings.src#RID_STR_QUERY_DOES_NOT_EXIST.String.Text
-msgid  "There exists no query named "$table$"."
-msgstr ""
+msgid  "There exists no query named \"$table$\"."
+msgstr "Không có truy vấn với tên « $table$ »."
 
 #: source/core/resource/strings.src#RID_STR_CONFLICTING_NAMES.String.Text
 msgid  "There are tables in the database whose names conflict with the names of existing queries. To make full use of all queries and tables, make sure they have distinct names."
-msgstr ""
+msgstr "Cơ sở dữ liệu chứa các bảng có tên xung đột với tên của truy vấn đã có. Để sử dụng đầy đủ mọi truy vấn và bảng, hãy đảm bảo mỗi điều có tên riêng."
 
 #: source/core/resource/strings.src#RID_STR_COMMAND_LEADING_TO_ERROR.String.Text
 msgid  "The SQL command leading to this error is:\n\n$command$"
-msgstr ""
+msgstr "Câu lệnh SQL gây ra lỗi này là:\n\n$command$"
 
 #: source/core/resource/strings.src#RID_STR_STATEMENT_WITHOUT_RESULT_SET.String.Text
 msgid  "The SQL command does not describe a result set."
@@ -221,15 +221,15 @@ msgstr "Không tìm thấy tài liệu có tên '$name$'."
 
 #: source/core/resource/strings.src#RID_STR_ERROR_WHILE_SAVING.String.Text
 msgid  "Could not save the document to $location$:\n$message$"
-msgstr ""
+msgstr "Không lưu được tài liệu vào $location$:\n$message$"
 
 #: source/core/resource/strings.src#RID_NO_SUCH_DATA_SOURCE.String.Text
 msgid  "Error accessing data source '$name$':\n$error$"
-msgstr ""
+msgstr "Lỗi truy cập nguồn dữ liệu '$name$':\n$error$"
 
 #: source/core/resource/strings.src#RID_STR_NO_SUB_FOLDER.String.Text
-msgid  "There exists no folder named "$folder$"."
-msgstr ""
+msgid  "There exists no folder named \"$folder$\"."
+msgstr "Không có bảng tên  \"$folder$\"."
 
 #: source/core/resource/strings.src#RID_STR_NO_DELETE_BEFORE_AFTER.String.Text
 msgid  "Cannot delete the before-first or after-last row."
@@ -307,8 +307,9 @@ msgid  "Embedding of database documents is not supported."
 msgstr "Không hỗ trợ nhúng cơ sở dữ liệu vào tài liệu."
 
 #: source/core/resource/strings.src#RID_STR_CONNECTION_REQUEST.String.Text
-msgid  "A connection for the following URL was requested "$name$"."
-msgstr ""
+#, fuzzy
+msgid  "A connection for the following URL was requested \"$name$\"."
+msgstr "Kết nối tới địa chỉ URL dưới đây được yêu cầu bởi  \"$name$\"."
 
 #: source/core/resource/strings.src#RID_STR_MISSING_EXTENSION.String.Text
 #, fuzzy
@@ -316,132 +317,106 @@ msgid  "The extension is not installed."
 msgstr "Chưa cài đặt phần mở rộng."
 
 #: source/ext/adabas/AdabasNewDb.src#DLG_ADABAS_NEWDB.FT_DATABASENAME.FixedText.Text
-#, fuzzy
 msgid  "Database ~name"
 msgstr "Tê~n cơ sở dữ liệu"
 
 #: source/ext/adabas/AdabasNewDb.src#DLG_ADABAS_NEWDB.FL_USER.FixedLine.Text
-#, fuzzy
 msgid  "User settings"
 msgstr "Thiết lập người dùng"
 
 #: source/ext/adabas/AdabasNewDb.src#DLG_ADABAS_NEWDB.FT_CONUSR.FixedText.Text
-#, fuzzy
 msgid  "~Control user"
 msgstr "Người dùng điều ~khiển"
 
 #: source/ext/adabas/AdabasNewDb.src#DLG_ADABAS_NEWDB.FT_SYSUSR.FixedText.Text
-#, fuzzy
 msgid  "~Administrator"
 msgstr "~Quản trị"
 
 #: source/ext/adabas/AdabasNewDb.src#DLG_ADABAS_NEWDB.FT_DOMAIN_USR.FixedText.Text
-#, fuzzy
 msgid  "~Domain user"
 msgstr "Người dùng ~miền"
 
 #: source/ext/adabas/AdabasNewDb.src#DLG_ADABAS_NEWDB.PB_SYSPWD.PushButton.Text
-#, fuzzy
 msgid  "P~assword..."
 msgstr "Mật ~khẩu..."
 
 #: source/ext/adabas/AdabasNewDb.src#DLG_ADABAS_NEWDB.PB_CONPWD.PushButton.Text
-#, fuzzy
 msgid  "~Password..."
 msgstr "~Mật khẩu..."
 
 #: source/ext/adabas/AdabasNewDb.src#DLG_ADABAS_NEWDB.PB_DOMAINPWD.PushButton.Text
-#, fuzzy
 msgid  "Passwo~rd..."
 msgstr "Mật khẩ~u..."
 
 #: source/ext/adabas/AdabasNewDb.src#DLG_ADABAS_NEWDB.FT_RESTORE.FixedText.Text
-#, fuzzy
 msgid  "~Backup file"
 msgstr "Tập tin ~sao lưu"
 
 #: source/ext/adabas/AdabasNewDb.src#DLG_ADABAS_NEWDB.PB_RESTORE.PushButton.Text
-#, fuzzy
 msgid  "..."
 msgstr "..."
 
 #: source/ext/adabas/AdabasNewDb.src#DLG_ADABAS_NEWDB.FL_DBSETTINGS.FixedLine.Text
-#, fuzzy
 msgid  "Database settings"
 msgstr "Thiết lập cơ sở dữ liệu"
 
 #: source/ext/adabas/AdabasNewDb.src#DLG_ADABAS_NEWDB.FT_SYSDEVSPACE.FixedText.Text
-#, fuzzy
 msgid  "S~YSDEVSPACE"
 msgstr "S~YSDEVSPACE"
 
 #: source/ext/adabas/AdabasNewDb.src#DLG_ADABAS_NEWDB.FT_TRANSACTIONLOG.FixedText.Text
-#, fuzzy
 msgid  "TRANSACTI~ONLOG"
 msgstr "TRANSACTI~ONLOG"
 
 #: source/ext/adabas/AdabasNewDb.src#DLG_ADABAS_NEWDB.FT_DATADEVSPACE.FixedText.Text
-#, fuzzy
 msgid  "DATAD~EVSPACE"
 msgstr "DATAD~EVSPACE"
 
 #: source/ext/adabas/AdabasNewDb.src#DLG_ADABAS_NEWDB.PB_SYSDEVSPACE.PushButton.Text
-#, fuzzy
 msgid  "..."
 msgstr "..."
 
 #: source/ext/adabas/AdabasNewDb.src#DLG_ADABAS_NEWDB.PB_TRANSACTIONLOG.PushButton.Text
-#, fuzzy
 msgid  "..."
 msgstr "..."
 
 #: source/ext/adabas/AdabasNewDb.src#DLG_ADABAS_NEWDB.PB_DATADEVSPACE.PushButton.Text
-#, fuzzy
 msgid  "..."
 msgstr "..."
 
 #: source/ext/adabas/AdabasNewDb.src#DLG_ADABAS_NEWDB.FT_TRANSACTIONLOG_SIZE.FixedText.Text
-#, fuzzy
 msgid  "Transaction ~file (MB)"
 msgstr "Tập tin ~giao dịch (MB)"
 
 #: source/ext/adabas/AdabasNewDb.src#DLG_ADABAS_NEWDB.FT_DATADEVSPACE_SIZE.FixedText.Text
-#, fuzzy
 msgid  "Data~base size (MB)"
 msgstr "Kích ~cỡ cơ sở dữ liệu (MB)"
 
 #: source/ext/adabas/AdabasNewDb.src#DLG_ADABAS_NEWDB.FT_CACHE_SIZE.FixedText.Text
-#, fuzzy
 msgid  "Data ~buffer size (MB)"
 msgstr "Kích cỡ ~bộ đệm dữ liệu (MB)"
 
 #: source/ext/adabas/AdabasNewDb.src#DLG_ADABAS_NEWDB.STR_BACKUPFILE_LOAD.String.Text
-#, fuzzy
 msgid  "Backup file information"
 msgstr "Thông tin tập tin sao lưu"
 
 #: source/ext/adabas/AdabasNewDb.src#DLG_ADABAS_NEWDB.String.Text
-#, fuzzy
 msgid  "Create New Adabas D Database"
 msgstr "Tạo cơ sở dữ liệu Adabas D mới"
 
 #: source/ext/adabas/AdabasNewDb.src#STR_ADABAS_NO_PARAM_SET.String.Text
-#, fuzzy
 msgid  "No entry could be written in the configuration file."
 msgstr "Không thể ghi gì vào tập tin cấu hình."
 
 #: source/ext/adabas/AdabasNewDb.src#STR_ADABAS_NO_DB_CREATED.String.Text
-#, fuzzy
 msgid  "An error occurred as the DB files were being created."
 msgstr "Gặp lỗi trong khi tạo các tập tin cơ sở dữ liệu."
 
 #: source/ext/adabas/AdabasNewDb.src#STR_ADABAS_NO_SYSTEM_TABLES.String.Text
-#, fuzzy
 msgid  "An error occurred as the system tables were being created."
 msgstr "Gặp lỗi trong khi tạo các bảng hệ thống."
 
 #: source/ext/adabas/AdabasNewDb.src#STR_ADABAS_NO_BACKUP_FILE.String.Text
-#, fuzzy
 msgid  "The backup file entered does not exist."
 msgstr "Bạn đã nhập một tập tin sao lưu không tồn tại."
 
@@ -450,269 +425,226 @@ msgid  "The fully qualified file cannot be longer than \'#\' characters."
 msgstr ""
 
 #: source/ext/adabas/AdabasNewDb.src#STR_NO_SAME_USER.String.Text
-#, fuzzy
 msgid  "The administrator and the control user cannot have the same name!"
 msgstr "Không cho phép quản trị và người dùng điều khiển có cùng một tên."
 
 #: source/ext/adabas/AdabasNewDb.src#STR_DEVSPACE_NO_FILE.String.Text
-#, fuzzy
 msgid  "No name has been entered for the $name$ file!"
 msgstr "Chưa nhập tên cho tập tin $name$."
 
 #: source/ext/adabas/AdabasNewDb.src#STR_NO_PERMISSION.String.Text
-#, fuzzy
 msgid  "You have to have administrator rights to create a new database!"
 msgstr "Phải có quyền quản trị để tạo một cơ sở dữ liệu mới."
 
 #: source/ext/adabas/AdabasNewDb.src#STR_FILE_OR_DIR_UNKNOWN.String.Text
-#, fuzzy
 msgid  "The specified file name or directory does not exist."
 msgstr "Bạn đã ghi rõ một tên tập tin hoặc thư mục không tồn tại."
 
 #: source/ext/adabas/AdabasNewDb.src#STR_ERROR_IN_ADABAS_INSTALLATION.String.Text
-msgid  "No new database can be created.\nPlease check your Adabas D installation, especially the variables "DBROOT" and "DBWORK"."
-msgstr ""
+msgid  "No new database can be created.\nPlease check your Adabas D installation, especially the variables \"DBROOT\" and \"DBWORK\"."
+msgstr "Không thể tạo cơ sở dữ liệu mới.\nHãy kiểm tra lại bản cài đặt Adabas D, đặc biệt hai biến « DBROOT » và « DBWORK »."
 
 #: source/ext/adabas/AdabasNewDb.src#STR_STAT_WARNING.String.Text
-#, fuzzy
 msgid  "Warning!"
 msgstr "Cảnh báo !"
 
 #: source/ext/adabas/AdabasNewDb.src#STR_ADABAS_CREATEFILES.String.Text
-#, fuzzy
 msgid  "Creating database files."
 msgstr "Đang tạo các tập tin cơ sở dữ liệu."
 
 #: source/ext/adabas/AdabasNewDb.src#STR_ADABAS_CREATEPARAM_FILE.String.Text
-#, fuzzy
 msgid  "Creating database configuration file."
 msgstr "Đang tạo tập tin cấu hình cơ sở dữ liệu."
 
 #: source/ext/adabas/AdabasNewDb.src#STR_ADABAS_START_DATABASE.String.Text
-#, fuzzy
 msgid  "Starting database for the first time."
 msgstr "Đang khởi chạy cơ sở dữ liệu lần đầu tiên."
 
 #: source/ext/adabas/AdabasNewDb.src#STR_ADABAS_DB_EXISTS.String.Text
-#, fuzzy
 msgid  "The name entered already exists."
 msgstr "Bạn đã nhập một tên đã có."
 
 #: source/ext/adabas/AdabasNewDb.src#STR_ADABAS_NO_DEFAULTNAME.String.Text
 msgid  "No default names could be set for the database files. The total length is more than 40 characters."
-msgstr ""
+msgstr "Không thể đặt tên mặc định cho tập tin cơ sở dữ liệu, vì chiều dài hoàn toàn vượt quá 40 ký tự."
 
 #: source/ext/adabas/AdabasNewDb.src#STR_ADABAS_NO_ACCESSRIGHTS.String.Text
 msgid  "No default names could be set for the database files. There is no write access."
-msgstr ""
+msgstr "Không thể đặt tên mặc định cho tập tin cơ sở dữ liệu, vì không có quyền ghi."
 
 #: source/ext/adabas/AdabasNewDb.src#STR_ADABAS_CANNOT_CONVERT.String.Text
 msgid  "The current database need to be converted. Please insert control user  and password."
-msgstr ""
+msgstr "Cơ sở dữ liệu hiện thời cần phải được chuyển đổi. Hãy nhập tên người dùng điều khiển và mật khẩu tương ứng."
 
 #: source/ext/adabas/AdabasNewDb.src#STR_ADABAS_PASSWORD_ILLEGAL.String.Text
-#, fuzzy
 msgid  "Spaces are not permitted in the password. Please enter a new password."
 msgstr "Không cho phép mật khẩu chứa dấu cách. Hãy nhập một mật khẩu mới."
 
 #: source/ext/macromigration/macromigration.src#DLG_MACRO_MIGRATION.ModalDialog.Text
-#, fuzzy
 msgid  "Database Document Macro Migration"
 msgstr "Nâng cấp Vĩ lệnh Tài liệu Cơ sở Dữ liệu"
 
 #: source/ext/macromigration/macromigration.src#DLG_MACRO_MIGRATION.STR_STATE_CLOSE_SUB_DOCS.String.Text
-#, fuzzy
 msgid  "Prepare"
 msgstr "Chuẩn bị"
 
 #: source/ext/macromigration/macromigration.src#DLG_MACRO_MIGRATION.STR_STATE_BACKUP_DBDOC.String.Text
-#, fuzzy
 msgid  "Backup Document"
 msgstr "Sao lưu tài liệu"
 
 #: source/ext/macromigration/macromigration.src#DLG_MACRO_MIGRATION.STR_STATE_MIGRATE.String.Text
-#, fuzzy
 msgid  "Migrate"
 msgstr "Nâng cấp"
 
 #: source/ext/macromigration/macromigration.src#DLG_MACRO_MIGRATION.STR_STATE_SUMMARY.String.Text
-#, fuzzy
 msgid  "Summary"
 msgstr "Tóm tắt"
 
 #: source/ext/macromigration/macromigration.src#TP_PREPARE.FT_HEADER.FixedText.Text
-#, fuzzy
 msgid  "Welcome to the Database Macro Migration Wizard"
 msgstr "Chào mừng đến với Trợ lý Nâng cấp Vĩ lệnh Cơ sở Dữ liệu"
 
 #: source/ext/macromigration/macromigration.src#TP_PREPARE.FT_INTRODUCTION.FixedText.Text
 msgid  "This wizard will guide you through the task of migrating your macros.\n\nAfter you finished it, all macros which were formerly embedded into the forms and reports of the current database document will have been moved to the document itself. In this course, libraries will be renamed as needed.\n\nIf your forms and reports contain references to those macros, they will be adjusted, where possible.\n\nBefore the migration can start, all forms, reports, queries and tables belonging to the document must be closed. Press 'Next' to do so."
-msgstr ""
+msgstr "Trợ lý này sẽ hướng dẫn bạn qua công việc nâng cấp các vĩ lệnh và văn lệnh.\n\nKhi hoàn thành, tất cả các vĩ lệnh được nhúng trong các biểu mẫu và báo cáo của cơ sở dữ liệu hiện tại của tài liệu sẽ được chuyển vào trong tài liệu. Trong tiến trình này, các tên thư viện sẽ cũng được thay đổi cho phù hợp.\n\nNếu biểu mẫu hoặc báo cáo của bạn chứa tham chiếu đến vĩ lệnh hoặc văn lệnh, nó sẽ được điều chỉnh nếu có thể.\n\nTrước khi bắt đầu nâng cấp, tất cả các biểu mẫu, báo cáo, truy vấn và bảng đều phải đóng. Bấm nút \"Tiếp\" để làm như vậy."
 
 #: source/ext/macromigration/macromigration.src#TP_PREPARE.FT_CLOSE_DOC_ERROR.FixedText.Text
 msgid  "Not all objects could be closed. Please close them manually, and re-start the wizard."
-msgstr ""
+msgstr "Không phải tất cả các đối tượng đều có thể đóng được. Hãy đóng bằng tay, sau đó khởi chạy lại trợ lý."
 
 #: source/ext/macromigration/macromigration.src#TP_SAVE_DBDOC_AS.FT_HEADER.FixedText.Text
-#, fuzzy
 msgid  "Backup your Document"
 msgstr "Sao lưu tài liệu"
 
 #: source/ext/macromigration/macromigration.src#TP_SAVE_DBDOC_AS.FT_EXPLANATION.FixedText.Text
 msgid  "To allow you to go back to the state before the migration, the database document will be backed up to a location of your choice. Every change done by the wizard will be made to the original document, the backup will stay untouched."
-msgstr ""
+msgstr "Để cho phép bạn trở về tình trạng trước khi nâng cấp, tài liệu cơ sở dữ liệu sẽ được sao lưu vào vị trí bạn chọn. Mỗi thay đổi được trợ lý làm sẽ cũng được làm trong tài liệu gốc, còn bản sao lưu không thay đổi."
 
 #: source/ext/macromigration/macromigration.src#TP_SAVE_DBDOC_AS.FT_SAVE_AS_LABEL.FixedText.Text
-#, fuzzy
 msgid  "Save To:"
 msgstr "Lưu vào :"
 
 #: source/ext/macromigration/macromigration.src#TP_SAVE_DBDOC_AS.PB_BROWSE_SAVE_AS_LOCATION.PushButton.Text
-#, fuzzy
 msgid  "Browse ..."
 msgstr "Duyệt ..."
 
 #: source/ext/macromigration/macromigration.src#TP_SAVE_DBDOC_AS.FT_START_MIGRATION.FixedText.Text
 msgid  "Press 'Next' to save a copy of your document, and to begin the migration."
-msgstr ""
+msgstr "Bấm nút « Tiếp » để lưu một bản sao của tài liệu này, và để khởi chạy tiến trình nâng cấp."
 
 #: source/ext/macromigration/macromigration.src#TP_MIGRATE.FT_HEADER.FixedText.Text
-#, fuzzy
 msgid  "Migration Progress"
 msgstr "Tiến hành nâng cấp"
 
 #: source/ext/macromigration/macromigration.src#TP_MIGRATE.FT_OBJECT_COUNT.FixedText.Text
 msgid  "The database document contains $forms$ form(s) and $reports$ report(s), which are currently being processed:"
-msgstr ""
+msgstr "Tài liệu cơ sở dữ liệu chứa $forms$ đơn và $reports$ báo cáo đang được xử lý:"
 
 #: source/ext/macromigration/macromigration.src#TP_MIGRATE.FT_CURRENT_OBJECT_LABEL.FixedText.Text
-#, fuzzy
 msgid  "Current object:"
 msgstr "Đối tượng hiện tại:"
 
 #: source/ext/macromigration/macromigration.src#TP_MIGRATE.FT_CURRENT_PROGRESS_LABEL.FixedText.Text
-#, fuzzy
 msgid  "Current progress:"
 msgstr "Tiến hành hiện thời:"
 
 #: source/ext/macromigration/macromigration.src#TP_MIGRATE.FT_ALL_PROGRESS_LABEL.FixedText.Text
-#, fuzzy
 msgid  "Overall progress:"
 msgstr "Tiến hành toàn thể:"
 
 #: source/ext/macromigration/macromigration.src#TP_MIGRATE.FT_OBJECT_COUNT_PROGRESS.FixedText.Text
-#, fuzzy
 msgid  "document $current$ of $overall$"
 msgstr "tài liệu $current$ trên $overall$"
 
 #: source/ext/macromigration/macromigration.src#TP_MIGRATE.FT_MIGRATION_DONE.FixedText.Text
 msgid  "All forms and reports have been successfully processed. Press 'Next' to show a detailed summary."
-msgstr ""
+msgstr "Tất cả các tài liệu đều đã được xử lý thành công. Bấm nút « Tiếp » để hiển thị bản tóm tắt chi tiết."
 
 #: source/ext/macromigration/macromigration.src#TP_SUMMARY.FT_HEADER.FixedText.Text
-#, fuzzy
 msgid  "Summary"
 msgstr "Tóm tắt"
 
 #: source/ext/macromigration/macromigration.src#TP_SUMMARY.STR_SUCCESSFUL.String.Text
 msgid  "The migration was successful. Below is a log of the actions which have been taken to your document."
-msgstr ""
+msgstr "Việc chuyển đổi đã thành công. Phía dưới là thông tin về các thay đổi trong tài liệu của bạn."
 
 #: source/ext/macromigration/macromigration.src#TP_SUMMARY.STR_UNSUCCESSFUL.String.Text
 msgid  "The migration was not successful. Examine the migration log below for details."
-msgstr ""
+msgstr "Việc chuyển đổi đã không được thực hiện thành công. Xin kiểm tra các thông tin dưới đây để biết thêm chi tiết."
 
 #: source/ext/macromigration/macromigration.src#STR_FORM.String.Text
-#, fuzzy
 msgid  "Form '$name$'"
 msgstr "Đơn « $name$ »"
 
 #: source/ext/macromigration/macromigration.src#STR_REPORT.String.Text
-#, fuzzy
 msgid  "Report '$name$'"
 msgstr "Báo cáo « $name$ »"
 
 #: source/ext/macromigration/macromigration.src#STR_OVERALL_PROGRESS.String.Text
-#, fuzzy
 msgid  "document $current$ of $overall$"
 msgstr "tài liệu $current$ trên $overall$"
 
 #: source/ext/macromigration/macromigration.src#STR_DATABASE_DOCUMENT.String.Text
-#, fuzzy
 msgid  "Database Document"
 msgstr "Tài liệu cơ sở dữ liệu"
 
 #: source/ext/macromigration/macromigration.src#STR_SAVED_COPY_TO.String.Text
-#, fuzzy
 msgid  "saved copy to $location$"
 msgstr "đã lưu bản sao vào $location$"
 
 #: source/ext/macromigration/macromigration.src#STR_MOVED_LIBRARY.String.Text
-#, fuzzy
 msgid  "migrated $type$ library '$old$' to '$new$'"
 msgstr "đã chuyển đổi thư viện $type$ từ $old$ sang $new$"
 
 #: source/ext/macromigration/macromigration.src#STR_LIBRARY_TYPE_AND_NAME.String.Text
-#, fuzzy
 msgid  "$type$ library '$library$'"
 msgstr "thư viện $type$ '$library$'"
 
 #: source/ext/macromigration/macromigration.src#STR_MIGRATING_LIBS.String.Text
-#, fuzzy
 msgid  "migrating libraries ..."
 msgstr "đang chuyển đổi các thư viện ..."
 
 #: source/ext/macromigration/macromigration.src#STR_OOO_BASIC.String.Text
-#, fuzzy
 msgid  "%PRODUCTNAME Basic"
 msgstr "%PRODUCTNAME Basic"
 
 #: source/ext/macromigration/macromigration.src#STR_JAVA_SCRIPT.String.Text
-#, fuzzy
 msgid  "JavaScript"
 msgstr "JavaScript"
 
 #: source/ext/macromigration/macromigration.src#STR_BEAN_SHELL.String.Text
-#, fuzzy
 msgid  "BeanShell"
 msgstr "BeanShell"
 
 #: source/ext/macromigration/macromigration.src#STR_JAVA.String.Text
-#, fuzzy
 msgid  "Java"
 msgstr "Java"
 
 #: source/ext/macromigration/macromigration.src#STR_PYTHON.String.Text
-#, fuzzy
 msgid  "Python"
 msgstr "Python"
 
 #: source/ext/macromigration/macromigration.src#STR_DIALOG.String.Text
-#, fuzzy
 msgid  "dialog"
 msgstr "hộp thoại"
 
 #: source/ext/macromigration/macromigration.src#STR_ERRORS.String.Text
-#, fuzzy
 msgid  "Error(s)"
 msgstr "Lỗi"
 
 #: source/ext/macromigration/macromigration.src#STR_WARNINGS.String.Text
-#, fuzzy
 msgid  "Warnings"
 msgstr "Cảnh báo"
 
 #: source/ext/macromigration/macromigration.src#STR_EXCEPTION.String.Text
-#, fuzzy
 msgid  "caught exception: "
 msgstr "các ngoại lệ gặp phải:"
 
 #: source/ext/macromigration/macromigration.src#ERR_INVALID_BACKUP_LOCATION.ErrorBox.Message
 msgid  "You need to choose a backup location other than the document location itself."
-msgstr ""
+msgstr "Thư mục sao lưu phải khác với thư mục hiện có của tài liệu."
 
 #: source/ext/macromigration/macromigration.src#STR_INVALID_NUMBER_ARGS.String.Text
-#, fuzzy
 msgid  "Invalid number of initialization arguments. Expected 1."
 msgstr "Số các tham số khởi tạo không hợp lệ. Giả định 1."
 
@@ -728,163 +660,133 @@ msgstr "Không áp dụng được với tài liệu chỉ-đọc."
 
 #: source/sdbtools/resource/sdbt_strings.src#STR_QUERY_AND_TABLE_DISTINCT_NAMES.String.Text
 msgid  "You cannot give a table and a query the same name. Please use a name which is not yet used by a query or table."
-msgstr ""
+msgstr "Bạn không thể đặt cả bảng lẫn truy vấn đều có cùng một tên. Hãy dùng tên chưa được dùng bởi truy vấn hoặc bảng."
 
 #: source/sdbtools/resource/sdbt_strings.src#STR_BASENAME_TABLE.String.Text
-#, fuzzy
 msgid  "Table"
 msgstr "Bảng"
 
 #: source/sdbtools/resource/sdbt_strings.src#STR_BASENAME_QUERY.String.Text
-#, fuzzy
 msgid  "Query"
 msgstr "Truy vấn"
 
 #: source/sdbtools/resource/sdbt_strings.src#STR_CONN_WITHOUT_QUERIES_OR_TABLES.String.Text
-#, fuzzy
 msgid  "The given connection is no valid query and/or tables supplier."
 msgstr "Kết nối đã cho không phải là truy vấn hay bộ cung cấp bảng kiểu hợp lệ."
 
 #: source/sdbtools/resource/sdbt_strings.src#STR_NO_TABLE_OBJECT.String.Text
-#, fuzzy
 msgid  "The given object is no table object."
 msgstr "Đối tượng đã cho không phải là đối tượng bảng."
 
 #: source/sdbtools/resource/sdbt_strings.src#STR_INVALID_COMPOSITION_TYPE.String.Text
 msgid  "Invalid composition type - need a value from com.sun.star.sdb.tools.CompositionType."
-msgstr ""
+msgstr "Kiểu cấu thành không hợp lệ — cần một giá trị từ « com.sun.star.sdb.tools.CompositionType »."
 
 #: source/sdbtools/resource/sdbt_strings.src#STR_INVALID_COMMAND_TYPE.String.Text
 msgid  "Invalid command type - only TABLE and QUERY from com.sun.star.sdb.CommandType are allowed."
-msgstr ""
+msgstr "Kiểu lệnh không hợp lệ - chỉ cho phép TABLE (bảng) và QUERY (và truy vấn) từ com.sun.star.sdb.CommandType. Được phép dùng CommandType."
 
 #: source/ui/app/app.src#RID_STR_NEW_FORM.String.Text
-#, fuzzy
 msgid  "Create Form in Design View..."
 msgstr "Tạo biểu mẫu trong khung nhìn thiết kế..."
 
 #: source/ui/app/app.src#RID_STR_NEW_FORM_AUTO.String.Text
-#, fuzzy
 msgid  "Use Wizard to Create Form..."
 msgstr "Dùng Trợ lý để tạo biểu mẫu..."
 
 #: source/ui/app/app.src#RID_STR_NEW_REPORT_AUTO.String.Text
-#, fuzzy
 msgid  "Use Wizard to Create Report..."
 msgstr "Dùng Trợ lý để tạo báo cáo..."
 
 #: source/ui/app/app.src#RID_STR_NEW_REPORT.String.Text
-#, fuzzy
 msgid  "Create Report in Design View..."
 msgstr "Tạo báo cáo trong khung nhìn thiết kế..."
 
 #: source/ui/app/app.src#RID_STR_NEW_QUERY.String.Text
-#, fuzzy
 msgid  "Create Query in Design View..."
 msgstr "Tạo truy vấn trong khung nhìn thiết kế..."
 
 #: source/ui/app/app.src#RID_STR_NEW_QUERY_SQL.String.Text
-#, fuzzy
 msgid  "Create Query in SQL View..."
 msgstr "Tạo truy vấn trong ô xem SQL..."
 
 #: source/ui/app/app.src#RID_STR_NEW_QUERY_AUTO.String.Text
-#, fuzzy
 msgid  "Use Wizard to Create Query..."
 msgstr "Dùng Trợ lý để tạo truy vấn..."
 
 #: source/ui/app/app.src#RID_STR_NEW_TABLE.String.Text
-#, fuzzy
 msgid  "Create Table in Design View..."
 msgstr "Tạo bảng trong khung nhìn thiết kế..."
 
 #: source/ui/app/app.src#RID_STR_NEW_TABLE_AUTO.String.Text
-#, fuzzy
 msgid  "Use Wizard to Create Table..."
 msgstr "Dùng Trợ lý để tạo bảng..."
 
 #: source/ui/app/app.src#RID_STR_NEW_VIEW.String.Text
-#, fuzzy
 msgid  "Create View..."
 msgstr "Tạo khung nhìn..."
 
 #: source/ui/app/app.src#RID_STR_FORMS_CONTAINER.String.Text
-#, fuzzy
 msgid  "Forms"
 msgstr "Biểu mẫu"
 
 #: source/ui/app/app.src#RID_STR_REPORTS_CONTAINER.String.Text
-#, fuzzy
 msgid  "Reports"
 msgstr "Báo cáo"
 
 #: source/ui/app/app.src#RID_MENU_APP_NEW.SID_APP_NEW_FORM.MenuItem.Text
-#, fuzzy
 msgid  "Form..."
 msgstr "Biểu mẫu..."
 
 #: source/ui/app/app.src#RID_MENU_APP_NEW.SID_APP_NEW_REPORT.MenuItem.Text
-#, fuzzy
 msgid  "Report..."
 msgstr "Báo cáo..."
 
 #: source/ui/app/app.src#RID_MENU_APP_NEW.SID_DB_NEW_VIEW_SQL.MenuItem.Text
-#, fuzzy
 msgid  "View (Simple)..."
 msgstr "Xem (đơn giản)..."
 
 #: source/ui/app/app.src#RID_MENU_APP_EDIT.SID_DB_APP_PASTE_SPECIAL.MenuItem.Text
-#, fuzzy
 msgid  "Paste Special..."
 msgstr "Dán đặc biệt..."
 
 #: source/ui/app/app.src#RID_MENU_APP_EDIT.SID_DB_APP_DELETE.MenuItem.Text
-#, fuzzy
 msgid  "Delete"
 msgstr "Xoá"
 
 #: source/ui/app/app.src#RID_MENU_APP_EDIT.SID_DB_APP_RENAME.MenuItem.Text
-#, fuzzy
 msgid  "Rename"
 msgstr "Thay tên"
 
 #: source/ui/app/app.src#RID_MENU_APP_EDIT.SID_DB_APP_EDIT.MenuItem.Text
-#, fuzzy
 msgid  "Edit"
 msgstr "Sửa"
 
 #: source/ui/app/app.src#RID_MENU_APP_EDIT.SID_DB_APP_EDIT_SQL_VIEW.MenuItem.Text
-#, fuzzy
 msgid  "Edit in SQL View..."
 msgstr "Sửa trong ô xem SQL..."
 
 #: source/ui/app/app.src#RID_MENU_APP_EDIT.SID_DB_APP_OPEN.MenuItem.Text
-#, fuzzy
 msgid  "Open"
 msgstr "Mở"
 
 #: source/ui/app/app.src#RID_MENU_APP_EDIT.SID_DB_APP_CONVERTTOVIEW.MenuItem.Text
-#, fuzzy
 msgid  "Create as View"
 msgstr "Tạo dạng ô xem"
 
 #: source/ui/app/app.src#RID_MENU_APP_EDIT.SID_FORM_CREATE_REPWIZ_PRE_SEL.MenuItem.Text
-#, fuzzy
 msgid  "Form Wizard..."
 msgstr "Trợ lý biểu mẫu..."
 
 #: source/ui/app/app.src#RID_MENU_APP_EDIT.SID_APP_NEW_REPORT_PRE_SEL.MenuItem.Text
-#, fuzzy
 msgid  "Report..."
 msgstr "Báo cáo..."
 
 #: source/ui/app/app.src#RID_MENU_APP_EDIT.SID_REPORT_CREATE_REPWIZ_PRE_SEL.MenuItem.Text
-#, fuzzy
 msgid  "Report Wizard..."
 msgstr "Trợ lý báo cáo..."
 
 #: source/ui/app/app.src#RID_MENU_APP_EDIT.SID_SELECTALL.MenuItem.Text
-#, fuzzy
 msgid  "Select All"
 msgstr "Chọn tất cả"
 
@@ -919,16 +821,19 @@ msgid  " - %PRODUCTNAME Base"
 msgstr " - %PRODUCTNAME Base"
 
 #: source/ui/app/app.src#RID_STR_REPORTS_HELP_TEXT_WIZARD.String.Text
+#, fuzzy
 msgid  "The wizard will guide you through the steps necessary to create a report."
-msgstr ""
+msgstr "Trợ lý sẽ hướng dẫn bạn qua các bước cần thiết để tạo báo cáo."
 
 #: source/ui/app/app.src#RID_STR_FORMS_HELP_TEXT.String.Text
+#, fuzzy
 msgid  "Create a form by specifying the record source, controls, and control properties."
-msgstr ""
+msgstr "Tạo một biểu mẫu bằng cách xác định nguồn bản ghi, các điều khiển và các thuộc tính điều khiển."
 
 #: source/ui/app/app.src#RID_STR_REPORT_HELP_TEXT.String.Text
+#, fuzzy
 msgid  "Create a report by specifying the record source, controls, and control properties."
-msgstr ""
+msgstr "Tạo một báo cáo bằng cách xác định nguồn bản ghi, các điều khiển và các thuộc tính điều khiển."
 
 #: source/ui/app/app.src#RID_STR_FORMS_HELP_TEXT_WIZARD.String.Text
 #, fuzzy
@@ -936,8 +841,9 @@ msgid  "The wizard will guide you through the steps necessary to create a form."
 msgstr "Trợ lý sẽ hướng dẫn bạn qua các bước cần thiết để tạo một biểu mẫu."
 
 #: source/ui/app/app.src#RID_STR_QUERIES_HELP_TEXT.String.Text
+#, fuzzy
 msgid  "Create a query by specifying the filters, input tables, field names,  and  properties for sorting or grouping."
-msgstr ""
+msgstr "Tạo truy vấn bằng cách xác định các bộ lọc, bảng nhập, tên trường và các thuộc tính để sắp xếp hoặc nhóm lại."
 
 #: source/ui/app/app.src#RID_STR_QUERIES_HELP_TEXT_SQL.String.Text
 #, fuzzy
@@ -945,20 +851,24 @@ msgid  "Create a query  entering an SQL statement directly."
 msgstr "Tạo truy vấn bằng cách nhập trực tiếp một câu lệnh SQL."
 
 #: source/ui/app/app.src#RID_STR_QUERIES_HELP_TEXT_WIZARD.String.Text
+#, fuzzy
 msgid  "The wizard will guide you through the steps necessary to create a query."
-msgstr ""
+msgstr "Trợ lý sẽ hướng dẫn bạn qua các bước cần thiết để tạo truy vấn."
 
 #: source/ui/app/app.src#RID_STR_TABLES_HELP_TEXT_DESIGN.String.Text
+#, fuzzy
 msgid  "Create a table by specifying the field names and properties, as well as the data types."
-msgstr ""
+msgstr "Tạo bảng bằng cách xác định các tên trường và thuộc tính, cũng như kiểu dữ liệu."
 
 #: source/ui/app/app.src#RID_STR_TABLES_HELP_TEXT_WIZARD.String.Text
+#, fuzzy
 msgid  "Choose from a selection of business and personal table samples, which you customize to create a table."
-msgstr ""
+msgstr "Chọn trong nhóm các mẫu bảng cá nhân hay thương mại, mà bạn có khả năng tùy chỉnh để tạo bảng."
 
 #: source/ui/app/app.src#RID_STR_VIEWS_HELP_TEXT_DESIGN.String.Text
+#, fuzzy
 msgid  "Create a view by specifying the tables and field names you would like to have visible."
-msgstr ""
+msgstr "Tạo ô xem bằng cách xác định các bảng và tên trường bạn muốn hiển thị."
 
 #: source/ui/app/app.src#RID_STR_VIEWS_HELP_TEXT_WIZARD.String.Text
 #, fuzzy
@@ -991,12 +901,14 @@ msgid  "Disable Preview"
 msgstr "Tắt xem thử"
 
 #: source/ui/app/app.src#APP_SAVEMODIFIED.QueryBox.Message
+#, fuzzy
 msgid  "The database has been modified.\nDo you want to save the changes?"
-msgstr ""
+msgstr "Cơ sở dữ liệu đã bị sửa đổi.\nBạn có muốn lưu các thay đổi không?"
 
 #: source/ui/app/app.src#APP_CLOSEDOCUMENTS.QueryBox.Message
+#, fuzzy
 msgid  "The connection type has been altered.\nFor the changes to take effect, all forms, reports, queries and tables must be closed.\n\nDo you want to close all documents now?"
-msgstr ""
+msgstr "Kiểu kết nối đã được thay đổi.\nĐể các thay đổi có tác dụng, mọi biểu mẫu, báo cáo, truy vấn và bảng phải được đóng.\n\nBạn có muốn đóng mọi tài liệu ngay bây giờ không?"
 
 #: source/ui/app/app.src#RID_MENU_APP_PREVIEW.SID_DB_APP_DISABLE_PREVIEW.MenuItem.Text
 #, fuzzy
@@ -1012,6 +924,16 @@ msgstr "Thông tin tài liệu"
 #, fuzzy
 msgid  "Document"
 msgstr "Tài liệu"
+
+#: source/ui/app/app.src#RID_STR_FORM.String.Text
+#, fuzzy
+msgid  "Form"
+msgstr "Biểu mẫu"
+
+#: source/ui/app/app.src#RID_STR_REPORT.String.Text
+#, fuzzy
+msgid  "Report"
+msgstr "Báo cáo"
 
 #: source/ui/app/app.src#STR_FRM_LABEL.String.Text
 #, fuzzy
@@ -1034,8 +956,9 @@ msgid  "The document contains forms or reports with embedded macros."
 msgstr "Tài liệu này có các biểu mẫu hoặc báo cáo chứa vĩ lệnh nhúng."
 
 #: source/ui/app/app.src#STR_SUB_DOCS_WITH_SCRIPTS_DETAIL.String.Text
+#, fuzzy
 msgid  "Macros should be embedded into the database document itself.\n\nYou can continue to use your document as before, however, you are encouraged to migrate your macros. The menu item 'Tools / Migrate Macros ...' will assist you with this.\n\nNote that you won't be able to embed macros into the database document itself until this migration is done. "
-msgstr ""
+msgstr "Cần nhúng các vĩ lệnh vào chính bản thân tài liệu cơ sở dữ liệu.\n\nBạn có thể tiếp tục sử dụng tài liệu như trước, tuy nhiên, bạn nên chuyển các vĩ lệnh đi. Trình đơn 'Công cụ > Nâng cấp Văn lệnh và Vĩ lệnh ...' sẽ giúp bạn thực hiện.\n\nGhi chú rằng bạn sẽ không thể nhúng vĩ lệnh hay văn lệnh trong tài liệu cơ sở dữ liệu đến khi tiến trình nâng cấp này hoàn thành. "
 
 #: source/ui/app/app.src#RID_STR_EMBEDDED_DATABASE.String.Text
 #, fuzzy
@@ -1050,292 +973,231 @@ msgstr ""
 msgid  "Unsupported object type found ($type$)."
 msgstr ""
 
-#: source/ui/app/app.src#RID_STR_FORM.String.Text
-#, fuzzy
-msgid  "Form"
-msgstr "Biểu mẫu"
-
-#: source/ui/app/app.src#RID_STR_REPORT.String.Text
-#, fuzzy
-msgid  "Report"
-msgstr "Báo cáo"
-
 #: source/ui/browser/sbabrw.src#QUERY_BRW_SAVEMODIFIED.QueryBox.Message
 msgid  "The current record has been changed.\nDo you want to save the changes?"
-msgstr ""
+msgstr "Bản ghi hiện thời đã bị thay đổi.\nBạn có muốn lưu các thay đổi này không?"
 
 #: source/ui/browser/sbabrw.src#QUERY_BRW_DELETE_ROWS.QueryBox.Message
-#, fuzzy
 msgid  "Do you want to delete the selected data?"
 msgstr "Bạn có muốn xoá dữ liệu đã chọn không?"
 
 #: source/ui/browser/sbabrw.src#RID_STR_DATABROWSER_FILTERED.String.Text
-#, fuzzy
 msgid  "(filtered)"
 msgstr "(đã lọc)"
 
 #: source/ui/browser/sbabrw.src#SBA_BROWSER_SETTING_ORDER.String.Text
-#, fuzzy
 msgid  "Error setting the sort criteria"
 msgstr "Gặp lỗi khi đặt các tiêu chuẩn sắp xếp"
 
 #: source/ui/browser/sbabrw.src#SBA_BROWSER_SETTING_FILTER.String.Text
-#, fuzzy
 msgid  "Error setting the filter criteria"
 msgstr "Gặp lỗi khi đặt các tiêu chuẩn lọc"
 
 #: source/ui/browser/sbabrw.src#RID_STR_CONNECTION_LOST.String.Text
-#, fuzzy
 msgid  "Connection lost"
 msgstr "Mất kết nối"
 
 #: source/ui/browser/sbabrw.src#RID_STR_QUERIES_CONTAINER.String.Text
-#, fuzzy
 msgid  "Queries"
 msgstr "Truy vấn"
 
 #: source/ui/browser/sbabrw.src#RID_STR_TABLES_CONTAINER.String.Text
-#, fuzzy
 msgid  "Tables"
 msgstr "Bảng"
 
+#: source/ui/browser/sbabrw.src#ID_TREE_EDIT_DATABASE.#define.Text
+msgid  "Edit ~Database File..."
+msgstr "Sửa tập tin cơ sở ~dữ liệu..."
+
+#: source/ui/browser/sbabrw.src#ID_TREE_ADMINISTRATE.#define.Text
+msgid  "Registered databases ..."
+msgstr "Cơ sở dữ liệu đã đăng ký ..."
+
+#: source/ui/browser/sbabrw.src#ID_TREE_CLOSE_CONN.#define.Text
+msgid  "Disco~nnect"
+msgstr "~Ngưng kết nối"
+
 #: source/ui/browser/sbabrw.src#STR_TITLE_CONFIRM_DELETION.String.Text
-#, fuzzy
 msgid  "Confirm Deletion"
 msgstr "Xác nhận xoá"
 
 #: source/ui/browser/sbabrw.src#STR_QUERY_DELETE_TABLE.String.Text
-#, fuzzy
 msgid  "Do you want to delete the table '%1'?"
 msgstr "Bạn có muốn xoá bảng « %1 » không?"
 
 #: source/ui/browser/sbabrw.src#QUERY_BRW_DELETE_QUERY_CONFIRM.QueryBox.Message
-#, fuzzy
 msgid  "The query already exists. Do you want to delete it?"
 msgstr "Truy vấn đã có. Bạn có muốn xoá nó không?"
 
 #: source/ui/browser/sbabrw.src#QUERY_CONNECTION_LOST.QueryBox.Message
-#, fuzzy
 msgid  "The connection to the database has been lost. Do you want to reconnect?"
 msgstr "Kết nối đến cơ sở dữ liệu bị mất. Bạn có muốn tái kết nối không?"
 
 #: source/ui/browser/sbabrw.src#STR_OPENTABLES_WARNINGS.String.Text
-#, fuzzy
 msgid  "Warnings encountered"
 msgstr "Gặp cảnh báo"
 
 #: source/ui/browser/sbabrw.src#STR_OPENTABLES_WARNINGS_DETAILS.String.Text
 msgid  "While retrieving the tables, warnings were reported by the database connection."
-msgstr ""
+msgstr "Trong khi lấy các bảng, sự kết nối cơ sở dữ liệu đã thông báo cảnh giác."
 
 #: source/ui/browser/sbabrw.src#STR_CONNECTING_DATASOURCE.String.Text
-msgid  "Connecting to "$name$" ..."
-msgstr ""
+msgid  "Connecting to \"$name$\" ..."
+msgstr "Đang kết nối tới « $name$ » ..."
 
 #: source/ui/browser/sbabrw.src#STR_LOADING_QUERY.String.Text
-#, fuzzy
 msgid  "Loading query $name$ ..."
 msgstr "Đang nạp truy vấn $name$ ..."
 
 #: source/ui/browser/sbabrw.src#STR_LOADING_TABLE.String.Text
-#, fuzzy
 msgid  "Loading table $name$ ..."
 msgstr "Đang nạp bảng $name$ ..."
 
 #: source/ui/browser/sbabrw.src#STR_NO_TABLE_FORMAT_INSIDE.String.Text
-#, fuzzy
 msgid  "No table format could be found."
 msgstr "Không tìm thấy định dạng bảng."
 
 #: source/ui/browser/sbabrw.src#STR_COULDNOTCONNECT_DATASOURCE.String.Text
-msgid  "The connection to the data source "$name$" could not be established."
-msgstr ""
+msgid  "The connection to the data source \"$name$\" could not be established."
+msgstr "Không thể thiết lập két nối tới nguồn dữ liệu « $name$ »."
 
 #: source/ui/browser/sbabrw.src#RID_MENU_REFRESH_DATA.ID_BROWSER_REFRESH_REBUILD.MenuItem.Text
-#, fuzzy
 msgid  "Rebuild"
 msgstr "Xây dựng lại"
 
-#: source/ui/browser/sbabrw.src#ID_TREE_EDIT_DATABASE.#define.Text
-#, fuzzy
-msgid  "Edit ~Database File..."
-msgstr "Sửa tập tin cơ sở ~dữ liệu..."
-
-#: source/ui/browser/sbabrw.src#ID_TREE_ADMINISTRATE.#define.Text
-#, fuzzy
-msgid  "Registered databases ..."
-msgstr "Cơ sở dữ liệu đã đăng ký ..."
-
-#: source/ui/browser/sbabrw.src#ID_TREE_CLOSE_CONN.#define.Text
-#, fuzzy
-msgid  "Disco~nnect"
-msgstr "~Ngưng kết nối"
-
 #: source/ui/browser/sbagrid.src#RID_SBA_GRID_COLCTXMENU.ID_BROWSER_COLATTRSET.MenuItem.Text
-#, fuzzy
 msgid  "Column ~Format..."
 msgstr "Định ~dạng cột..."
 
 #: source/ui/browser/sbagrid.src#RID_SBA_GRID_COLCTXMENU.ID_BROWSER_COLUMNINFO.MenuItem.Text
-#, fuzzy
 msgid  "Copy Column D~escription"
 msgstr "Chép ~mô tả cột"
 
 #: source/ui/browser/sbagrid.src#RID_SBA_GRID_ROWCTXMENU.ID_BROWSER_TABLEATTR.MenuItem.Text
-#, fuzzy
 msgid  "Table Format..."
 msgstr "Định dạng bảng..."
 
 #: source/ui/browser/sbagrid.src#RID_SBA_GRID_ROWCTXMENU.ID_BROWSER_ROWHEIGHT.MenuItem.Text
-#, fuzzy
 msgid  "Row Height..."
 msgstr "Bề cao hàng..."
 
 #: source/ui/browser/sbagrid.src#RID_STR_UNDO_MODIFY_RECORD.String.Text
-#, fuzzy
 msgid  "Undo: Data Input"
 msgstr "Hủy bước: nhập dữ liệu"
 
 #: source/ui/browser/sbagrid.src#RID_STR_SAVE_CURRENT_RECORD.String.Text
-#, fuzzy
 msgid  "Save current record"
 msgstr "Lưu bản ghi hiện có"
 
 #: source/ui/browser/sbagrid.src#STR_QRY_TITLE.String.Text
-#, fuzzy
 msgid  "Query #"
 msgstr "Số thứ tự truy vấn "
 
 #: source/ui/browser/sbagrid.src#STR_TBL_TITLE.String.Text
-#, fuzzy
 msgid  "Table #"
 msgstr "Số thứ tự bảng "
 
 #: source/ui/browser/sbagrid.src#STR_VIEW_TITLE.String.Text
-#, fuzzy
 msgid  "View #"
 msgstr "Số thứ tự ô xem "
 
 #: source/ui/browser/sbagrid.src#STR_NAME_ALREADY_EXISTS.String.Text
-msgid  "The name "#" already exists."
-msgstr ""
+msgid  "The name \"#\" already exists."
+msgstr "Tên « # » đã có."
 
 #: source/ui/browser/sbagrid.src#STR_NO_COLUMNNAME_MATCHING.String.Text
-#, fuzzy
 msgid  "No matching column names were found."
 msgstr "Không tìm thấy tên cột khớp."
 
 #: source/ui/browser/sbagrid.src#STR_ERROR_OCCURED_WHILE_COPYING.String.Text
-#, fuzzy
 msgid  "An error occurred. Do you want to continue copying?"
 msgstr "Lỗi xảy ra. Bạn có muốn tiếp tục sao chép không?"
 
 #: source/ui/browser/sbagrid.src#STR_DATASOURCE_GRIDCONTROL_NAME.String.Text
-#, fuzzy
 msgid  "Data source table view"
 msgstr "Xem bảng nguồn dữ liệu"
 
 #: source/ui/browser/sbagrid.src#STR_DATASOURCE_GRIDCONTROL_DESC.String.Text
-#, fuzzy
 msgid  "Shows the selected table or query."
 msgstr "Hiện bảng hoặc truy vấn đã chọn."
 
 #: source/ui/browser/bcommon.src#RID_STR_TBL_TITLE.String.Text
-#, fuzzy
 msgid  "Table #"
 msgstr "Số thứ tự bảng "
 
 #: source/ui/control/undosqledit.src#STR_QUERY_UNDO_MODIFYSQLEDIT.String.Text
-#, fuzzy
 msgid  "Modify SQL statement(s)"
 msgstr "Sửa câu lệnh SQL"
 
 #: source/ui/control/TableGrantCtrl.src#STR_TABLE_PRIV_NAME.String.Text
-#, fuzzy
 msgid  "Table name"
 msgstr "Tên bảng"
 
 #: source/ui/control/TableGrantCtrl.src#STR_TABLE_PRIV_INSERT.String.Text
-#, fuzzy
 msgid  "Insert data"
 msgstr "Chèn dữ liệu"
 
 #: source/ui/control/TableGrantCtrl.src#STR_TABLE_PRIV_DELETE.String.Text
-#, fuzzy
 msgid  "Delete data"
 msgstr "Xoá dữ liệu"
 
 #: source/ui/control/TableGrantCtrl.src#STR_TABLE_PRIV_UPDATE.String.Text
-#, fuzzy
 msgid  "Modify data"
 msgstr "Sửa dữ liệu"
 
 #: source/ui/control/TableGrantCtrl.src#STR_TABLE_PRIV_ALTER.String.Text
-#, fuzzy
 msgid  "Alter structure"
 msgstr "Thay đổi cấu trúc"
 
 #: source/ui/control/TableGrantCtrl.src#STR_TABLE_PRIV_SELECT.String.Text
-#, fuzzy
 msgid  "Read data"
 msgstr "Đọc dữ liệu"
 
 #: source/ui/control/TableGrantCtrl.src#STR_TABLE_PRIV_REFERENCE.String.Text
-#, fuzzy
 msgid  "Modify references"
 msgstr "Sửa tham chiếu"
 
 #: source/ui/control/TableGrantCtrl.src#STR_TABLE_PRIV_DROP.String.Text
-#, fuzzy
 msgid  "Drop structure"
 msgstr "Bỏ cấu trúc"
 
 #: source/ui/control/tabletree.src#MENU_TABLETREE_POPUP.MID_SORT_ASCENDING.MenuItem.Text
-#, fuzzy
 msgid  "Sort Ascending"
 msgstr "Sắp xếp tăng dần"
 
 #: source/ui/control/tabletree.src#MENU_TABLETREE_POPUP.MID_SORT_DECENDING.MenuItem.Text
-#, fuzzy
 msgid  "Sort Descending"
 msgstr "Sắp xếp giảm dần"
 
 #: source/ui/control/tabletree.src#STR_COULDNOTCREATE_DRIVERMANAGER.String.Text
-#, fuzzy
 msgid  "Cannot connect to the SDBC driver manager (#servicename#)."
 msgstr "Không thể kết nối tới bộ quản lý trình điều khiển SDBC (#servicename#)."
 
 #: source/ui/control/tabletree.src#STR_NOREGISTEREDDRIVER.String.Text
-#, fuzzy
 msgid  "A driver is not registered for the URL #connurl#."
 msgstr "Chưa đăng ký trình điều khiển cho địa chỉ URL #connurl#."
 
 #: source/ui/control/tabletree.src#STR_COULDNOTCONNECT.String.Text
-#, fuzzy
 msgid  "No connection could be established for the URL #connurl#."
 msgstr "Không thể thiết lập kết nối cho địa chỉ URL #connurl#."
 
 #: source/ui/control/tabletree.src#STR_COULDNOTCONNECT_PLEASECHECK.String.Text
-#, fuzzy
 msgid  "Please check the current settings, for example user name and password."
 msgstr "Hãy kiểm tra lại thiết lập hiện thời, ví dụ tên người dùng và mật khẩu."
 
 #: source/ui/control/tabletree.src#STR_NOTABLEINFO.String.Text
 msgid  "Successfully connected, but information about database tables is not available."
-msgstr ""
+msgstr "Đã kết nối thành công, nhưng không có sẵn thông tin về bảng cơ sở dữ liệu."
 
 #: source/ui/control/tabletree.src#STR_ALL_TABLES.String.Text
-#, fuzzy
 msgid  "All tables"
 msgstr "Mọi bảng"
 
 #: source/ui/control/tabletree.src#STR_ALL_VIEWS.String.Text
-#, fuzzy
 msgid  "All views"
 msgstr "Mọi ô xem"
 
 #: source/ui/control/tabletree.src#STR_ALL_TABLES_AND_VIEWS.String.Text
-#, fuzzy
 msgid  "All tables and views"
 msgstr "Mọi bảng và ô xem"
 
@@ -1445,12 +1307,14 @@ msgid  "Do you want to save the changes made to the current index?"
 msgstr "Bạn có muốn lưu lại những thay đổi của chỉ mục hiện thời không?"
 
 #: source/ui/dlg/indexdialog.src#STR_INDEX_NAME_ALREADY_USED.String.Text
-msgid  "There is already another index named "$name$"."
-msgstr ""
+#, fuzzy
+msgid  "There is already another index named \"$name$\"."
+msgstr "Một chỉ mục tên « $name$ » đã có."
 
 #: source/ui/dlg/indexdialog.src#STR_INDEXDESIGN_DOUBLE_COLUMN_NAME.String.Text
-msgid  "In an index definition, no table column may occur more than once. However, you have entered column "$name$" twice."
-msgstr ""
+#, fuzzy
+msgid  "In an index definition, no table column may occur more than once. However, you have entered column \"$name$\" twice."
+msgstr "Trong lời định nghĩa chỉ mục, không có cột nào trong bảng xuất hiện nhiều hơn một lần. Tuy nhiên, bạn đã nhập hai lần cột tên « $name$ »."
 
 #: source/ui/dlg/paramdialog.src#DLG_PARAMETERS.FL_PARAMS.FixedLine.Text
 #, fuzzy
@@ -1473,8 +1337,9 @@ msgid  "Parameter Input"
 msgstr "Nhập tham số"
 
 #: source/ui/dlg/paramdialog.src#DLG_PARAMETERS.STR_COULD_NOT_CONVERT_PARAM.String.Text
-msgid  "The entry could not be converted to a valid value for the "$name$"column"
-msgstr ""
+#, fuzzy
+msgid  "The entry could not be converted to a valid value for the \"$name$\"column"
+msgstr "Mục nhập này không thể được chuyển đổi sang giá trị hợp lệ cho cột « $name$ »"
 
 #: source/ui/dlg/sqlmessage.src#DLG_SQLEXCEPTIONCHAIN.ModalDialog.Text
 #, fuzzy
@@ -1507,8 +1372,9 @@ msgid  "Error code"
 msgstr "Mã lỗi"
 
 #: source/ui/dlg/sqlmessage.src#STR_EXPLAN_STRINGCONVERSION_ERROR.String.Text
+#, fuzzy
 msgid  "A frequent reason for this error is an inappropriate character set setting for the language of your database. Check the setting by choosing Edit - Database - Properties."
-msgstr ""
+msgstr "Lý do xảy ra lỗi thường là đặt bộ ký tự không thích hợp với ngôn ngữ của cơ sở dữ liệu. Kiểm tra thiết lập bằng cách chọn Sửa > Cơ sở dữ liệu > Thuộc tính."
 
 #: source/ui/dlg/sqlmessage.src#STR_EXCEPTION_ERROR.String.Text
 #, fuzzy
@@ -1537,8 +1403,18 @@ msgstr "Bộ lọc chuẩn"
 
 #: source/ui/dlg/queryfilter.src#DLG_FILTERCRIT.LB_WHERECOND2.Default.StringList.item
 #, fuzzy
+msgid  "AND"
+msgstr "AND"
+
+#: source/ui/dlg/queryfilter.src#DLG_FILTERCRIT.LB_WHERECOND2.Default.StringList.item
+#, fuzzy
 msgid  "OR"
 msgstr "OR"
+
+#: source/ui/dlg/queryfilter.src#DLG_FILTERCRIT.LB_WHERECOND3.Default.StringList.item
+#, fuzzy
+msgid  "AND"
+msgstr "AND"
 
 #: source/ui/dlg/queryfilter.src#DLG_FILTERCRIT.LB_WHERECOND3.Default.StringList.item
 #, fuzzy
@@ -1579,16 +1455,6 @@ msgstr "- không có -"
 #, fuzzy
 msgid  "=;<>;<;<=;>;>=;like;not like;null;not null"
 msgstr "=;<>;<;<=;>;>=;like;not like;null;not null"
-
-#: source/ui/dlg/queryfilter.src#DLG_FILTERCRIT.LB_WHERECOND2.Default.StringList.item
-#, fuzzy
-msgid  "AND"
-msgstr "AND"
-
-#: source/ui/dlg/queryfilter.src#DLG_FILTERCRIT.LB_WHERECOND3.Default.StringList.item
-#, fuzzy
-msgid  "AND"
-msgstr "AND"
 
 #: source/ui/dlg/RelationDlg.src#DLG_REL_PROPERTIES.ModalDialog.Text
 #, fuzzy
@@ -1662,13 +1528,28 @@ msgstr "Thứ tự sắp xếp"
 
 #: source/ui/dlg/queryorder.src#DLG_ORDERCRIT.LB_ORDERVALUE1.Default.StringList.item
 #, fuzzy
+msgid  "ascending"
+msgstr "tăng dần"
+
+#: source/ui/dlg/queryorder.src#DLG_ORDERCRIT.LB_ORDERVALUE1.Default.StringList.item
+#, fuzzy
 msgid  "descending"
 msgstr "giảm dần"
 
 #: source/ui/dlg/queryorder.src#DLG_ORDERCRIT.LB_ORDERVALUE2.Default.StringList.item
 #, fuzzy
+msgid  "ascending"
+msgstr "tăng dần"
+
+#: source/ui/dlg/queryorder.src#DLG_ORDERCRIT.LB_ORDERVALUE2.Default.StringList.item
+#, fuzzy
 msgid  "descending"
 msgstr "giảm dần"
+
+#: source/ui/dlg/queryorder.src#DLG_ORDERCRIT.LB_ORDERVALUE3.Default.StringList.item
+#, fuzzy
+msgid  "ascending"
+msgstr "tăng dần"
 
 #: source/ui/dlg/queryorder.src#DLG_ORDERCRIT.LB_ORDERVALUE3.Default.StringList.item
 #, fuzzy
@@ -1710,98 +1591,67 @@ msgstr "Thứ tự sắp xếp"
 msgid  "<none>"
 msgstr "<không có>"
 
-#: source/ui/dlg/queryorder.src#DLG_ORDERCRIT.LB_ORDERVALUE1.Default.StringList.item
-#, fuzzy
-msgid  "ascending"
-msgstr "tăng dần"
-
-#: source/ui/dlg/queryorder.src#DLG_ORDERCRIT.LB_ORDERVALUE2.Default.StringList.item
-#, fuzzy
-msgid  "ascending"
-msgstr "tăng dần"
-
-#: source/ui/dlg/queryorder.src#DLG_ORDERCRIT.LB_ORDERVALUE3.Default.StringList.item
-#, fuzzy
-msgid  "ascending"
-msgstr "tăng dần"
-
 #: source/ui/dlg/advancedsettings.src#AUTO_DATAHANDLING(AUTO_Y).FL_DATAHANDLING.FixedLine.Text
-#, fuzzy
 msgid  "Options"
 msgstr "Tùy chọn"
 
 #: source/ui/dlg/advancedsettings.src#AUTO_SQL92CHECK(AUTO_Y).CB_SQL92CHECK.CheckBox.Text
-#, fuzzy
 msgid  "Use SQL92 naming constraints"
 msgstr "Dùng ràng buộc đặt tên kiểu SQL92"
 
 #: source/ui/dlg/advancedsettings.src#AUTO_APPENDTABLEALIAS(AUTO_Y).CB_APPENDTABLEALIAS.CheckBox.Text
-#, fuzzy
 msgid  "Append the table alias name on SELECT statements"
 msgstr "Phụ thêm tên bí danh bảng vào câu lệnh SELECT"
 
 #: source/ui/dlg/advancedsettings.src#AUTO_AS_BEFORE_CORR_NAME(AUTO_Y).CB_AS_BEFORE_CORR_NAME.CheckBox.Text
-#, fuzzy
 msgid  "Use keyword AS before table alias names"
 msgstr "Để tên khoá « AS » trước các tên biệt hiệu"
 
 #: source/ui/dlg/advancedsettings.src#AUTO_ENABLEOUTERJOIN(AUTO_Y).CB_ENABLEOUTERJOIN.CheckBox.Text
-#, fuzzy
 msgid  "Use Outer Join syntax '{OJ }'"
 msgstr "Dùng cú pháp Outer Join « {OJ } »"
 
 #: source/ui/dlg/advancedsettings.src#AUTO_IGNOREDRIVER_PRIV(AUTO_Y).CB_IGNOREDRIVER_PRIV.CheckBox.Text
-#, fuzzy
 msgid  "Ignore the privileges from the database driver"
 msgstr "Bỏ qua các quyền truy cập từ trình điều khiển cơ sở dữ liệu"
 
 #: source/ui/dlg/advancedsettings.src#AUTO_PARAMETERNAMESUBST(AUTO_Y).CB_PARAMETERNAMESUBST.CheckBox.Text
-#, fuzzy
 msgid  "Replace named parameters with '?'"
 msgstr "Thay thế tham số có tên bằng « ? »"
 
 #: source/ui/dlg/advancedsettings.src#AUTO_SUPPRESVERSIONCOLUMN(AUTO_Y).CB_SUPPRESVERSIONCL.CheckBox.Text
-#, fuzzy
 msgid  "Display version columns (when available)"
 msgstr "Hiện cột phiên bản (khi có)"
 
 #: source/ui/dlg/advancedsettings.src#AUTO_CATALOG(AUTO_Y).CB_CATALOG.CheckBox.Text
-#, fuzzy
 msgid  "Use catalog name in SELECT statements"
 msgstr "Dùng tên phân loại trong câu lệnh SELECT"
 
 #: source/ui/dlg/advancedsettings.src#AUTO_SCHEMA(AUTO_Y).CB_SCHEMA.CheckBox.Text
-#, fuzzy
 msgid  "Use schema name in SELECT statements"
 msgstr "Dùng tên giản đồ trong câu lệnh SELECT"
 
 #: source/ui/dlg/advancedsettings.src#AUTO_IGNOREINDEXAPPENDIX(AUTO_Y).CB_IGNOREINDEXAPPENDIX.CheckBox.Text
-#, fuzzy
 msgid  "Create index with ASC or DESC statement"
 msgstr "Tạo chỉ mục bằng câu lệnh ASC hay DESC"
 
 #: source/ui/dlg/advancedsettings.src#AUTO_DOSLINEENDS(AUTO_Y).CB_DOSLINEENDS.CheckBox.Text
-#, fuzzy
 msgid  "End text lines with CR+LF"
 msgstr "Kết thúc dòng văn bản với ký tự ngắt dòng CR+LF"
 
 #: source/ui/dlg/advancedsettings.src#AUTO_IGNORECURRENCY(AUTO_Y).CB_IGNORECURRENCY.CheckBox.Text
-#, fuzzy
 msgid  "Ignore currency field information"
 msgstr "Bỏ qua thông tin trường tiền tệ"
 
 #: source/ui/dlg/advancedsettings.src#AUTO_CHECKREQUIRED(AUTO_Y).CB_CHECK_REQUIRED.CheckBox.Text
-#, fuzzy
 msgid  "Form data input checks for required fields"
 msgstr "Kiểm tra nhập dữ liệu vào biểu mẫu cho các trường cần thiết"
 
 #: source/ui/dlg/advancedsettings.src#AUTO_ESCAPE_DATETIME(AUTO_Y).CB_ESCAPE_DATETIME.CheckBox.Text
-#, fuzzy
 msgid  "Use ODBC conformant date/time literals"
 msgstr "Dùng ngày/giờ thích hợp của ODBC"
 
 #: source/ui/dlg/advancedsettings.src#AUTO_PRIMARY_KEY_SUPPORT(AUTO_Y).CB_PRIMARY_KEY_SUPPORT.CheckBox.Text
-#, fuzzy
 msgid  "Supports primary keys"
 msgstr "Hỗ trợ khóa chính"
 
@@ -1810,12 +1660,22 @@ msgid  "Respect the result set type from the database driver"
 msgstr ""
 
 #: source/ui/dlg/advancedsettings.src#WORKAROUND.Default.StringList.item
-#, fuzzy
+msgid  "Default"
+msgstr "Mặc định"
+
+#: source/ui/dlg/advancedsettings.src#WORKAROUND.Default.StringList.item
+msgid  "SQL"
+msgstr "SQL"
+
+#: source/ui/dlg/advancedsettings.src#WORKAROUND.Default.StringList.item
+msgid  "Mixed"
+msgstr "Hỗn hợp"
+
+#: source/ui/dlg/advancedsettings.src#WORKAROUND.Default.StringList.item
 msgid  "MS Access"
 msgstr "MS Access"
 
 #: source/ui/dlg/advancedsettings.src#AUTO_BOOLEANCOMPARISON(AUTO_Y).FT_BOOLEANCOMPARISON.FixedText.Text
-#, fuzzy
 msgid  "Comparison of Boolean values"
 msgstr "So sánh các giá trị Bun"
 
@@ -1824,32 +1684,26 @@ msgid  "Rows to scan column types"
 msgstr ""
 
 #: source/ui/dlg/advancedsettings.src#PAGE_GENERATED_VALUES.FL_SEPARATORAUTO.FixedLine.Text
-#, fuzzy
 msgid  "Settings"
 msgstr "Thiết lập"
 
 #: source/ui/dlg/advancedsettings.src#PAGE_GENERATED_VALUES.CB_RETRIEVE_AUTO.CheckBox.Text
-#, fuzzy
 msgid  "Re~trieve generated values"
 msgstr "Lấy những giá ~trị được tạo ra"
 
 #: source/ui/dlg/advancedsettings.src#PAGE_GENERATED_VALUES.FT_AUTOINCREMENTVALUE.FixedText.Text
-#, fuzzy
 msgid  "~Auto-increment statement"
 msgstr "~Tự động tăng dần câu lệnh"
 
 #: source/ui/dlg/advancedsettings.src#PAGE_GENERATED_VALUES.FT_RETRIEVE_AUTO.FixedText.Text
-#, fuzzy
 msgid  "~Query of generated values"
 msgstr "Truy ~vấn của giá trị được tạo ra"
 
 #: source/ui/dlg/advancedsettings.src#DLG_DATABASE_ADVANCED.STR_GENERATED_VALUE.String.Text
-#, fuzzy
 msgid  "Generated Values"
 msgstr "Giá trị đã tạo ra"
 
 #: source/ui/dlg/advancedsettings.src#DLG_DATABASE_ADVANCED.STR_DS_BEHAVIOUR.String.Text
-#, fuzzy
 msgid  "Special Settings"
 msgstr "Thiết lập đặc biệt"
 
@@ -1857,68 +1711,47 @@ msgstr "Thiết lập đặc biệt"
 msgid  "Advanced Settings"
 msgstr ""
 
-#: source/ui/dlg/advancedsettings.src#WORKAROUND.Default.StringList.item
-#, fuzzy
-msgid  "Default"
-msgstr "Mặc định"
-
-#: source/ui/dlg/advancedsettings.src#WORKAROUND.Default.StringList.item
-#, fuzzy
-msgid  "SQL"
-msgstr "SQL"
-
-#: source/ui/dlg/advancedsettings.src#WORKAROUND.Default.StringList.item
-#, fuzzy
-msgid  "Mixed"
-msgstr "Hỗn hợp"
-
 #: source/ui/dlg/CollectionView.src#DLG_COLLECTION_VIEW.ModalDialog.Text
-#, fuzzy
 msgid  "Save"
 msgstr "Lưu"
 
 #: source/ui/dlg/CollectionView.src#DLG_COLLECTION_VIEW.BTN_EXPLORERFILE_NEWFOLDER.ImageButton.QuickHelpText
-#, fuzzy
 msgid  "Create New Directory"
 msgstr "Tạo thư mục mới"
 
 #: source/ui/dlg/CollectionView.src#DLG_COLLECTION_VIEW.BTN_EXPLORERFILE_UP.ImageButton.QuickHelpText
-#, fuzzy
 msgid  "Up One Level"
 msgstr "Lên một bậc"
 
 #: source/ui/dlg/CollectionView.src#DLG_COLLECTION_VIEW.FT_EXPLORERFILE_FILENAME.FixedText.Text
-#, fuzzy
 msgid  "File ~name:"
 msgstr "Tê~n tập tin:"
 
 #: source/ui/dlg/CollectionView.src#DLG_COLLECTION_VIEW.BTN_EXPLORERFILE_SAVE.PushButton.Text
-#, fuzzy
 msgid  "Save"
 msgstr "Lưu"
 
 #: source/ui/dlg/CollectionView.src#DLG_COLLECTION_VIEW.STR_PATHNAME.String.Text
-#, fuzzy
 msgid  "~Path:"
 msgstr "Đường ~dẫn:"
 
 #: source/ui/dlg/CollectionView.src#STR_NEW_FOLDER.String.Text
-#, fuzzy
 msgid  "Folder"
 msgstr "Thư mục"
 
 #: source/ui/dlg/CollectionView.src#STR_ALREADYEXISTOVERWRITE.String.Text
-#, fuzzy
 msgid  "The file already exists. Overwrite?"
 msgstr "Tập tin đã có. Ghi đè không?"
 
 #: source/ui/dlg/dbadmin2.src#STR_ENTER_CONNECTION_PASSWORD.String.Text
-msgid  "A password is needed to connect to the data source "$name$"."
-msgstr ""
+#, fuzzy
+msgid  "A password is needed to connect to the data source \"$name$\"."
+msgstr "Mật khẩu cần thiết để kết nối đến dữ liệu nguồn « $name$ »."
 
 #: source/ui/dlg/dbadmin2.src#STR_ASK_FOR_DIRECTORY_CREATION.String.Text
+#, fuzzy
 msgid  "The directory\n\n$path$\n\ndoes not exist. Should it be created?"
-msgstr ""
+msgstr "Thư mục\n\n$path$\n\nkhông tồn tại. Có nên tạo nó không?"
 
 #: source/ui/dlg/dbadmin2.src#STR_COULD_NOT_CREATE_DIRECTORY.String.Text
 #, fuzzy
@@ -1951,37 +1784,30 @@ msgid  "Mark the tables that should be visible for the applications."
 msgstr "Đánh dấu các bảng nên được hiện ra trong các ứng dụng."
 
 #: source/ui/dlg/admincontrols.src#RID_MYSQL_NATIVE_SETTINGS.FT_MYSQL_DATABASE_NAME.FixedText.Text
-#, fuzzy
 msgid  "~Database name"
 msgstr "Tên ~cơ sở dữ liệu"
 
 #: source/ui/dlg/admincontrols.src#RID_MYSQL_NATIVE_SETTINGS.RB_MYSQL_HOST_PORT.RadioButton.Text
-#, fuzzy
 msgid  "Se~rver / Port"
 msgstr "Máy ~chủ / Cổng"
 
 #: source/ui/dlg/admincontrols.src#RID_MYSQL_NATIVE_SETTINGS.FT_COMMON_HOST_NAME.FixedText.Text
-#, fuzzy
 msgid  "~Server"
 msgstr "~Máy chủ"
 
 #: source/ui/dlg/admincontrols.src#RID_MYSQL_NATIVE_SETTINGS.FT_COMMON_PORT.FixedText.Text
-#, fuzzy
 msgid  "~Port"
 msgstr "~Cổng"
 
 #: source/ui/dlg/admincontrols.src#RID_MYSQL_NATIVE_SETTINGS.FT_COMMON_PORT_DEFAULT.FixedText.Text
-#, fuzzy
 msgid  "Default: 3306"
 msgstr "Mặc định: 3306"
 
 #: source/ui/dlg/admincontrols.src#RID_MYSQL_NATIVE_SETTINGS.RB_MYSQL_SOCKET.RadioButton.Text
-#, fuzzy
 msgid  "So~cket"
 msgstr "So~cket"
 
 #: source/ui/dlg/admincontrols.src#RID_MYSQL_NATIVE_SETTINGS.RB_MYSQL_NAMED_PIPE.RadioButton.Text
-#, fuzzy
 msgid  "Named p~ipe"
 msgstr "Pipe có tên"
 
@@ -1996,32 +1822,26 @@ msgid  "User administration"
 msgstr "Quản lý người dùng"
 
 #: source/ui/dlg/adtabdlg.src#DLG_JOIN_TABADD.RB_CASE_TABLES.RadioButton.Text
-#, fuzzy
 msgid  "Tables"
 msgstr "Bảng"
 
 #: source/ui/dlg/adtabdlg.src#DLG_JOIN_TABADD.RB_CASE_QUERIES.RadioButton.Text
-#, fuzzy
 msgid  "Queries"
 msgstr "Truy vấn"
 
 #: source/ui/dlg/adtabdlg.src#DLG_JOIN_TABADD.PB_ADDTABLE.PushButton.Text
-#, fuzzy
 msgid  "~Add"
 msgstr "Thê~m"
 
 #: source/ui/dlg/adtabdlg.src#DLG_JOIN_TABADD.PB_CLOSE.CancelButton.Text
-#, fuzzy
 msgid  "~Close"
 msgstr "Đón~g"
 
 #: source/ui/dlg/adtabdlg.src#DLG_JOIN_TABADD.STR_ADD_TABLES.String.Text
-#, fuzzy
 msgid  "Add Tables"
 msgstr "Thêm bảng"
 
 #: source/ui/dlg/adtabdlg.src#DLG_JOIN_TABADD.STR_ADD_TABLE_OR_QUERY.String.Text
-#, fuzzy
 msgid  "Add Table or Query"
 msgstr "Thêm bảng hoặc truy vấn"
 
@@ -2056,22 +1876,18 @@ msgid  "Table Format"
 msgstr "Định dạng bảng"
 
 #: source/ui/dlg/dbadmin.src#AUTO_USECATALOG(AUTO_Y).CB_USECATALOG.CheckBox.Text
-#, fuzzy
 msgid  "Use catalog for file-based databases"
 msgstr "Dùng phân loại cho các cơ sở dữ liệu dựa vào tập tin"
 
 #: source/ui/dlg/dbadmin.src#AUTO_FIXEDLINE_CONNSETTINGS(AUTO_Y).FL_SEPARATOR1.FixedLine.Text
-#, fuzzy
 msgid  "Connection Settings"
 msgstr "Thiết lập kết nối"
 
 #: source/ui/dlg/dbadmin.src#AUTO_HOST_AND_PORT(AUTO_Y).FT_HOSTNAME.FixedText.Text
-#, fuzzy
 msgid  "~Host name"
 msgstr "Tên ~máy"
 
 #: source/ui/dlg/dbadmin.src#AUTO_HOST_AND_PORT(AUTO_Y).FT_PORTNUMBER.FixedText.Text
-#, fuzzy
 msgid  "~Port number"
 msgstr "Số thứ tự ~cổng"
 
@@ -2106,8 +1922,9 @@ msgid  "Welcome to the %PRODUCTNAME Database Wizard"
 msgstr "Chào mừng đến với Trợ Lý cơ sở dữ liệu %PRODUCTNAME"
 
 #: source/ui/dlg/dbadmin.src#PAGE_GENERAL.FT_GENERALHELPTEXT.FixedText.Text
+#, fuzzy
 msgid  "Use the Database Wizard to create a new database, open an existing database file, or connect to a database stored on a server."
-msgstr ""
+msgstr "Hãy dùng Trợ Lý cơ sở dữ liệu để tạo một cơ sở dữ liệu mới, mở tập tin cơ sở dữ liệu đã có, hoặc kết nối đến cơ sở dữ liệu nằm trên máy phục vụ."
 
 #: source/ui/dlg/dbadmin.src#PAGE_GENERAL.FT_DATASOURCEHEADER.FixedText.Text
 #, fuzzy
@@ -2135,8 +1952,9 @@ msgid  "Connect to an e~xisting database"
 msgstr "Kết nối tới cơ ~sở dữ liệu đã có"
 
 #: source/ui/dlg/dbadmin.src#PAGE_GENERAL.FT_DATASOURCETYPE_PRE.FixedText.Text
+#, fuzzy
 msgid  "Select the type of database to which you want to establish a connection."
-msgstr ""
+msgstr "Chọn kiểu cơ sở dữ liệu bạn muốn kết nối."
 
 #: source/ui/dlg/dbadmin.src#PAGE_GENERAL.FT_DATATYPE.FixedText.Text
 #, fuzzy
@@ -2149,8 +1967,9 @@ msgid  "Database"
 msgstr "Cơ sở dữ liệu"
 
 #: source/ui/dlg/dbadmin.src#PAGE_GENERAL.FT_DATASOURCETYPE_POST.FixedText.Text
+#, fuzzy
 msgid  "On the following pages, you can make detailed settings for the connection.\n\nThe new settings you make will overwrite your existing settings."
-msgstr ""
+msgstr "Trên những trang sau, bạn có khả năng thiết lập kết nối một cách chi tiết.\n\nThiết lập mới này sẽ ghi đè lên thiết lập đã tồn tại."
 
 #: source/ui/dlg/dbadmin.src#PAGE_GENERAL.STR_MYSQLENTRY.String.Text
 #, fuzzy
@@ -2163,12 +1982,14 @@ msgid  "Data Source Properties: #"
 msgstr "Thuộc tính Nguồn Dữ liệu : #"
 
 #: source/ui/dlg/dbadmin.src#PAGE_GENERAL.STR_COULDNOTLOAD_ODBCLIB.String.Text
+#, fuzzy
 msgid  "Could not load the program library #lib# or it is corrupted. The ODBC data source selection is not available."
-msgstr ""
+msgstr "Không thể nạp thư viện « #lib# » hoặc nó bị hỏng. Không thể chọn nguồn dữ liệu ODBC."
 
 #: source/ui/dlg/dbadmin.src#PAGE_GENERAL.STR_UNSUPPORTED_DATASOURCE_TYPE.String.Text
+#, fuzzy
 msgid  "This kind of data source is not supported on this platform.\nYou are allowed to change the settings, but you probably will not be able to connect to the database."
-msgstr ""
+msgstr "Kiểu nguồn dữ liệu này không được hỗ trợ trên nền tảng này.\nBạn có quyền thay đổi thiết lập, nhưng rất có thể là bạn sẽ không thể kết nối đến cơ sở dữ liệu."
 
 #: source/ui/dlg/dbadmin.src#PAGE_GENERAL.String.Text
 #, fuzzy
@@ -2186,8 +2007,9 @@ msgid  "Display deleted records as well"
 msgstr "Hiển thị cả các bản ghi đã xoá"
 
 #: source/ui/dlg/dbadmin.src#PAGE_DBASE.FT_SPECIAL_MESSAGE.FixedText.Text
+#, fuzzy
 msgid  "Note: When deleted, and thus inactive, records are  displayed, you will not be able to delete records from the data source."
-msgstr ""
+msgstr "Lưu ý: khi các bản ghi đã xoá được hiện ra, chúng không hoạt động nên bạn không thể xoá bản ghi khỏi nguồn dữ liệu."
 
 #: source/ui/dlg/dbadmin.src#PAGE_DBASE.PB_INDICIES.PushButton.Text
 #, fuzzy
@@ -2302,7 +2124,7 @@ msgstr "Dùng kết nối bảo mật (SSL)"
 #: source/ui/dlg/dbadmin.src#PAGE_LDAP.FT_PORTNUMBER.FixedText.Text
 #, fuzzy
 msgid  "~Port number"
-msgstr "Số  ~cổng"
+msgstr "Số thứ tự ~cổng"
 
 #: source/ui/dlg/dbadmin.src#PAGE_LDAP.FT_LDAPROWCOUNT.FixedText.Text
 #, fuzzy
@@ -2325,8 +2147,9 @@ msgid  "~Driver settings"
 msgstr "Thiết ~lập trình điều khiển"
 
 #: source/ui/dlg/dbadmin.src#STR_ERR_USE_CONNECT_TO.String.Text
+#, fuzzy
 msgid  "Please choose 'Connect to an existing database' to connect to an existing database instead."
-msgstr ""
+msgstr "Xin hãy chọn 'Kết nối tới cơ sở dữ liệu có sẵn' để kết nối tới cơ sở dữ liệu khác."
 
 #: source/ui/dlg/dlgsave.src#DLG_SAVE_AS.ModalDialog.Text
 #, fuzzy
@@ -2374,66 +2197,54 @@ msgid  "Insert as"
 msgstr "Chèn dạng"
 
 #: source/ui/dlg/AutoControls.src#STR_DBASE_PATH_OR_FILE.String.Text
-#, fuzzy
 msgid  "Path to the dBASE files"
 msgstr "Đường dẫn tới tập tin dBASE"
 
 #: source/ui/dlg/AutoControls.src#STR_FLAT_PATH_OR_FILE.String.Text
-#, fuzzy
 msgid  "Path to the text files"
 msgstr "Đường dẫn tới các tập tin văn bản"
 
 #: source/ui/dlg/AutoControls.src#STR_CALC_PATH_OR_FILE.String.Text
-#, fuzzy
 msgid  "Path to the spreadsheet document"
 msgstr "Đường dẫn tới tài liệu bảng tính"
 
 #: source/ui/dlg/AutoControls.src#STR_NAME_OF_ODBC_DATASOURCE.String.Text
-#, fuzzy
 msgid  "Name of the ODBC data source on your system"
 msgstr "Tên nguồn dữ liệu ODBC trên hệ thống của bạn"
 
 #: source/ui/dlg/AutoControls.src#STR_MYSQL_DATABASE_NAME.String.Text
-#, fuzzy
 msgid  "Name of the MySQL database"
 msgstr "Tên cơ sở dữ liệu MySQL"
 
 #: source/ui/dlg/AutoControls.src#STR_ORACLE_DATABASE_NAME.String.Text
-#, fuzzy
 msgid  "Name of the Oracle database"
 msgstr "Tên cơ sở dữ liệu Oracle"
 
 #: source/ui/dlg/AutoControls.src#STR_ADABAS_DATABASE_NAME.String.Text
-#, fuzzy
 msgid  "Name of the Adabas D database"
 msgstr "Tên cơ sở dữ liệu Adabas D"
 
 #: source/ui/dlg/AutoControls.src#STR_MSACCESS_MDB_FILE.String.Text
-#, fuzzy
 msgid  "Microsoft Access database file"
 msgstr "Tập tin cơ sở dữ liệu Access"
 
 #: source/ui/dlg/AutoControls.src#STR_NO_ADDITIONAL_SETTINGS.String.Text
 msgid  "No more settings are necessary. To verify that the connection is working, click the '%test' button."
-msgstr ""
+msgstr "Không cần thiết lập nào nữa. Để kiểm tra kết nối là hoạt động, nhắp vào nút « %test »."
 
 #: source/ui/dlg/AutoControls.src#STR_COMMONURL.String.Text
-#, fuzzy
 msgid  "Datasource URL"
 msgstr "URL nguồn dữ liệu"
 
 #: source/ui/dlg/AutoControls.src#STR_HOSTNAME.String.Text
-#, fuzzy
 msgid  "~Host name"
 msgstr "Tên ~máy"
 
 #: source/ui/dlg/AutoControls.src#STR_MOZILLA_PROFILE_NAME.String.Text
-#, fuzzy
 msgid  "~Mozilla profile name"
 msgstr "Tên hồ sơ ~Mozilla"
 
 #: source/ui/dlg/AutoControls.src#STR_THUNDERBIRD_PROFILE_NAME.String.Text
-#, fuzzy
 msgid  "~Thunderbird profile name"
 msgstr "Tên hồ sơ ~Thunderbird"
 
@@ -2468,168 +2279,136 @@ msgid  "Choose a database"
 msgstr "Chọn cơ sở dữ liệu"
 
 #: source/ui/dlg/ConnectionPage.src#PAGE_CONNECTION.FL_SEPARATOR1.FixedLine.Text
-#, fuzzy
 msgid  "General"
 msgstr "Chung"
 
 #: source/ui/dlg/ConnectionPage.src#PAGE_CONNECTION.FT_HOSTNAME.FixedText.Text
-#, fuzzy
 msgid  "~Host name"
 msgstr "Tên ~máy"
 
 #: source/ui/dlg/ConnectionPage.src#PAGE_CONNECTION.FL_SEPARATOR2.FixedLine.Text
-#, fuzzy
 msgid  "User authentication"
 msgstr "Xác thực người dùng"
 
 #: source/ui/dlg/ConnectionPage.src#PAGE_CONNECTION.FT_USERNAME.FixedText.Text
-#, fuzzy
 msgid  "~User name"
 msgstr "Tê~n người dùng"
 
 #: source/ui/dlg/ConnectionPage.src#PAGE_CONNECTION.CB_PASSWORD_REQUIRED.CheckBox.Text
-#, fuzzy
 msgid  "Password required"
 msgstr "Cần mật khẩu"
 
 #: source/ui/dlg/ConnectionPage.src#PAGE_CONNECTION.FL_SEPARATOR3.FixedLine.Text
-#, fuzzy
 msgid  "JDBC properties"
 msgstr "Thuộc tính JDBC"
 
 #: source/ui/dlg/ConnectionPage.src#PAGE_CONNECTION.FT_JDBCDRIVERCLASS.FixedText.Text
-#, fuzzy
 msgid  "~JDBC driver class"
 msgstr "Hạng trình điều khiển ~JDBC"
 
 #: source/ui/dlg/ConnectionPage.src#PAGE_CONNECTION.PB_TESTDRIVERCLASS.PushButton.Text
-#, fuzzy
 msgid  "Test Class"
 msgstr "Hạng thử"
 
 #: source/ui/dlg/ConnectionPage.src#PAGE_CONNECTION.PB_TESTCONNECTION.PushButton.Text
-#, fuzzy
 msgid  "Test Connection"
 msgstr "Thử kết nối"
 
 #: source/ui/dlg/ConnectionPage.src#STR_NO_ADABASE_DATASOURCES.String.Text
-#, fuzzy
 msgid  "No Adabas D data sources were found on your system."
 msgstr "Không tìm thấy nguồn dữ liệu Adabas D trên hệ thống của bạn."
 
 #: source/ui/dlg/ConnectionPage.src#STR_CONNECTION_TEST.String.Text
-#, fuzzy
 msgid  "Connection Test"
 msgstr "Thử kết nối"
 
 #: source/ui/dlg/ConnectionPage.src#STR_CONNECTION_SUCCESS.String.Text
-#, fuzzy
 msgid  "The connection was established successfully."
 msgstr "Kết nối đã được thiết lập."
 
 #: source/ui/dlg/ConnectionPage.src#STR_CONNECTION_NO_SUCCESS.String.Text
-#, fuzzy
 msgid  "The connection could not be established."
 msgstr "Không thể thiết lập kết nối."
 
 #: source/ui/dlg/ConnectionPage.src#STR_JDBCDRIVER_SUCCESS.String.Text
-#, fuzzy
 msgid  "The JDBC driver was loaded successfully."
 msgstr "Trình điều khiển JDBC đã được nạp."
 
 #: source/ui/dlg/ConnectionPage.src#STR_JDBCDRIVER_NO_SUCCESS.String.Text
-#, fuzzy
 msgid  "The JDBC driver could not be loaded."
 msgstr "Không thể nạp trình điều khiển JDBC."
 
 #: source/ui/dlg/ConnectionPage.src#STR_MSACCESS_FILTERNAME.String.Text
-#, fuzzy
 msgid  "MS Access file"
 msgstr "Tập tin MS Access"
 
 #: source/ui/dlg/ConnectionPage.src#STR_MSACCESS_2007_FILTERNAME.String.Text
-#, fuzzy
 msgid  "MS Access 2007 file"
 msgstr "Tập tin MS Access 2007"
 
 #: source/ui/dlg/AdabasStat.src#DLG_ADABASSTAT.FL_FILES.FixedLine.Text
-#, fuzzy
 msgid  "Database files"
 msgstr "Tập tin cơ sở dữ liệu"
 
 #: source/ui/dlg/AdabasStat.src#DLG_ADABASSTAT.FT_SYSDEVSPACE.FixedText.Text
-#, fuzzy
 msgid  "S~YSDEVSPACE:"
 msgstr "S~YSDEVSPACE:"
 
 #: source/ui/dlg/AdabasStat.src#DLG_ADABASSTAT.FT_TRANSACTIONLOG.FixedText.Text
-#, fuzzy
 msgid  "~TRANSACTIONLOG:"
 msgstr "~TRANSACTIONLOG:"
 
 #: source/ui/dlg/AdabasStat.src#DLG_ADABASSTAT.FT_DATADEVSPACE.FixedText.Text
-#, fuzzy
 msgid  "DATAD~EVSPACE:"
 msgstr "DATAD~EVSPACE:"
 
 #: source/ui/dlg/AdabasStat.src#DLG_ADABASSTAT.FL_SIZES.FixedLine.Text
-#, fuzzy
 msgid  "Database sizes"
 msgstr "Kích cỡ cơ sở dữ liệu"
 
 #: source/ui/dlg/AdabasStat.src#DLG_ADABASSTAT.FT_SIZE.FixedText.Text
-#, fuzzy
 msgid  "S~ize (MB):"
 msgstr "~Kích cỡ (MB):"
 
 #: source/ui/dlg/AdabasStat.src#DLG_ADABASSTAT.FT_FREESIZE.FixedText.Text
-#, fuzzy
 msgid  "~Free memory space (MB):"
 msgstr "Bộ nhớ ~rảnh (MB):"
 
 #: source/ui/dlg/AdabasStat.src#DLG_ADABASSTAT.FT_MEMORYUSING.FixedText.Text
-#, fuzzy
 msgid  "~Memory utilization (in %):"
 msgstr "~Bộ nhớ đã dùng (theo %):"
 
 #: source/ui/dlg/AdabasStat.src#DLG_ADABASSTAT.OKButton.Text
-#, fuzzy
 msgid  "Database Statistics"
 msgstr "Thống kê cơ sở dữ liệu"
 
 #: source/ui/dlg/AdabasStat.src#STR_ADABAS_HELP_SYSDEVSPACE.String.Text
-#, fuzzy
 msgid  "Contains the system tables"
 msgstr "Chứa các bảng hệ thống"
 
 #: source/ui/dlg/AdabasStat.src#STR_ADABAS_HELP_TRANSACT.String.Text
-#, fuzzy
 msgid  "Contains information about transaction"
 msgstr "Chứa thông tin về giao dịch"
 
 #: source/ui/dlg/AdabasStat.src#STR_ADABAS_HELP_DATADEVSPACES.String.Text
-#, fuzzy
 msgid  "Contains all data files"
 msgstr "Chứa mọi tập tin dữ liệu"
 
 #: source/ui/dlg/AdabasStat.src#STR_ADABAS_HELP_SIZE.String.Text
-#, fuzzy
 msgid  "Total size of the database files"
 msgstr "Kích thước tổng cộng của các tập tin cơ sở dữ liệu"
 
 #: source/ui/dlg/AdabasStat.src#STR_ADABAS_HELP_FREESIZE.String.Text
-#, fuzzy
 msgid  "Currently available space before a new datadev file is created."
 msgstr "Chỗ sẵn sàng hiện thời trước khi tạo một tập tin datadev mới."
 
 #: source/ui/dlg/AdabasStat.src#STR_ADABAS_HELP_MEMORYUSING.String.Text
-#, fuzzy
 msgid  "Currently used memory"
 msgstr "Bộ nhớ đang sử dụng"
 
 #: source/ui/dlg/AdabasStat.src#STR_ADABAS_ERROR_SYSTEMTABLES.String.Text
 msgid  "No information could be displayed because no access rights exist for the required system tables."
-msgstr ""
+msgstr "Không thể hiển thị thông tin vì không có quyền truy cập những bảng hệ thống đã yêu cầu."
 
 #: source/ui/dlg/directsql.src#DLG_DIRECTSQL.FL_SQL.FixedLine.Text
 #, fuzzy
@@ -2672,8 +2451,9 @@ msgid  "Command successfully executed."
 msgstr "Lệnh đã được thực thi."
 
 #: source/ui/dlg/directsql.src#STR_DIRECTSQL_CONNECTIONLOST.String.Text
+#, fuzzy
 msgid  "The connection to the database has been lost. This dialog will be closed."
-msgstr ""
+msgstr "Kết nối đến cơ sở dữ liệu bị đứt. Hộp thoại này sẽ đóng lại."
 
 #: source/ui/dlg/dbfindex.src#DLG_DBASE_INDEXES.ModalDialog.Text
 #, fuzzy
@@ -2741,8 +2521,9 @@ msgid  "The database does not support user administration."
 msgstr "Cơ sở dữ liệu không hỗ trợ khả năng quản lý người dùng."
 
 #: source/ui/dlg/UserAdmin.src#DLG_PASSWORD.FL_USER.FixedLine.Text
-msgid  "User "$name$:  $""
-msgstr ""
+#, fuzzy
+msgid  "User \"$name$:  $\""
+msgstr "Người dùng « $name$:  $ »"
 
 #: source/ui/dlg/UserAdmin.src#DLG_PASSWORD.FT_OLDPASSWORD.FixedText.Text
 #, fuzzy
@@ -2865,8 +2646,9 @@ msgid  "Set up a connection to a MySQL database"
 msgstr "Thiết lập kết nối tới cơ sở dữ liệu MySQL"
 
 #: source/ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_MYSQL_INTRO.FT_MYSQL_HELPTEXT.FixedText.Text
+#, fuzzy
 msgid  "You can connect to a MySQL database using either ODBC or JDBC.\nPlease contact your system administrator if you are unsure about the following settings."
-msgstr ""
+msgstr "Bạn có khả năng kết nối tới cơ sở dữ liệu kiểu MySQL bằng hoặc ODBC hoặc JDBC.\nHãy liên lạc với quản trị hệ thống nếu bạn chưa chắc về thiết lập sau."
 
 #: source/ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_MYSQL_INTRO.FT_MYSQLCONNECTIONMODE.FixedText.Text
 #, fuzzy
@@ -2959,8 +2741,9 @@ msgid  "Set up connection to a MySQL database using JDBC"
 msgstr "Thiết lập kết nối tới cơ sở dữ liệu MySQL bằng JDBC"
 
 #: source/ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_MYSQL_JDBC.STR_MYSQLJDBC_HELPTEXT.String.Text
+#, fuzzy
 msgid  "Please enter the required information to connect to a MySQL database using JDBC. Note that a JDBC driver class must be installed on your system and registered with %PRODUCTNAME.\nPlease contact your system administrator if you are unsure about the following settings."
-msgstr ""
+msgstr "Hãy nhập thông tin cần thiết kết nối tới cơ sở dữ liệu kiểu MySQL bằng JDBC. Lưu ý rằng một hạng trình điều khiển JDBC phải được cài đặt vào hệ thống của bạn, cũng được đăng ký với %PRODUCTNAME.\nLiên lạc với quản trị hệ thống nếu bạn không hiểu những thiết lập sau."
 
 #: source/ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_MYSQL_JDBC.STR_MYSQL_DRIVERCLASSTEXT.String.Text
 #, fuzzy
@@ -2998,8 +2781,9 @@ msgid  "Set up a connection to text files"
 msgstr "Thiết lập kết nối đến tập tin văn bản"
 
 #: source/ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_TEXT.STR_TEXT_HELPTEXT.String.Text
+#, fuzzy
 msgid  "Select the folder where the CSV (Comma Separated Values) text files are stored. %PRODUCTNAME Base will open these files in read-only mode."
-msgstr ""
+msgstr "Chọn thư mục chứa tập tin kiểu CSV (các giá trị định giới bằng dấu phẩy). %PRODUCTNAME Base sẽ mở các tập tin này ở chế độ chỉ đọc."
 
 #: source/ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_TEXT.STR_TEXT_PATH_OR_FILE.String.Text
 #, fuzzy
@@ -3022,8 +2806,9 @@ msgid  "Set up a connection to an LDAP directory"
 msgstr "Thiết lập kết nối tới thư mục LDAP"
 
 #: source/ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_LDAP.FT_LDAP_HELPTEXT.FixedText.Text
+#, fuzzy
 msgid  "Please enter the required information to connect to an LDAP directory.\nPlease contact your system administrator if you are unsure about the following settings."
-msgstr ""
+msgstr "Hãy nhập thông tin cần thiết để kết nối tới thư mục LDAP.\nHãy liên lạc với quản trị hệ thống nếu bạn chưa chắc về thiết lập sau."
 
 #: source/ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_LDAP.STR_LDAP_DEFAULT.String.Text
 #, fuzzy
@@ -3041,8 +2826,9 @@ msgid  "Set up a connection to an Adabas D database"
 msgstr "Thiết lập kết nối tới cơ sở dữ liệu kiểu Adabas D"
 
 #: source/ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_ADABAS.STR_ADABAS_HELPTEXT.String.Text
+#, fuzzy
 msgid  "Enter the name of the Adabas D database you want to connect to.\nClick 'Browse...' to select an Adabas D database that is already registered in %PRODUCTNAME."
-msgstr ""
+msgstr "Hãy nhập tên của cơ sở dữ liệu Adabas D tới đó bạn muốn kết nối.\nNhắp vào « Duyệt... » để chọn cơ sở dữ liệu Adabas D đã được đăng ký trong %PRODUCTNAME."
 
 #: source/ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_ADO.STR_ADO_HEADERTEXT.String.Text
 #, fuzzy
@@ -3050,8 +2836,9 @@ msgid  "Set up a connection to an ADO database"
 msgstr "Thiêt lập kết nối tới cơ sở dữ liệu kiểu ADO"
 
 #: source/ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_ADO.STR_ADO_HELPTEXT.String.Text
+#, fuzzy
 msgid  "Please enter the URL of the ADO data source you want to connect to.\nClick 'Browse' to configure provider-specific settings.\nPlease contact your system administrator if you are unsure about the following settings."
-msgstr ""
+msgstr "Hãy nhập địa chỉ URL của nguồn dữ liệu ADO tới đó bạn muốn kết nối.\nNhắp nút « Duyệt » để cấu hình thiết lập đặc trưng cho nhà cung cấp.\nHãy liên lạc với quản trị hệ thống nếu bạn không chắc về các thiết lập dưới đây."
 
 #: source/ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_ODBC.STR_ODBC_HEADERTEXT.String.Text
 #, fuzzy
@@ -3059,8 +2846,9 @@ msgid  "Set up a connection to an ODBC database"
 msgstr "Thiết lập kết nối tới cơ sở dữ liệu kiểu ODBC"
 
 #: source/ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_ODBC.STR_ODBC_HELPTEXT.String.Text
+#, fuzzy
 msgid  "Enter the name of the ODBC database you want to connect to.\nClick 'Browse...' to select an ODBC database that is already registered in %PRODUCTNAME.\nPlease contact your system administrator if you are unsure about the following settings."
-msgstr ""
+msgstr "Hãy nhập tên của cơ sở dữ liệu ODBC tới đó bạn muốn kết nối.\nNhắp vào « Duyệt... » để chọn cơ sở dữ liệu ODBC đã được đăng ký trong %PRODUCTNAME.\nHãy liên lạc với quản trị hệ thống nếu bạn không chắc về các thiết lập dưới đây."
 
 #: source/ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_JDBC.STR_JDBC_HEADERTEXT.String.Text
 #, fuzzy
@@ -3068,8 +2856,9 @@ msgid  "Set up a connection to a JDBC database"
 msgstr "Thiết lập kết nối tới cơ sở dữ liệu kiểu JDBC"
 
 #: source/ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_JDBC.STR_JDBC_HELPTEXT.String.Text
+#, fuzzy
 msgid  "Please enter the required information to connect to a JDBC database.\nPlease contact your system administrator if you are unsure about the following settings."
-msgstr ""
+msgstr "Hãy nhập thông tin cần thiết để kết nối tới cơ sở dữ liệu JDBC.\nHãy liên lạc với quản trị hệ thống nếu bạn chưa chắc về thiết lập sau."
 
 #: source/ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_ORACLE.STR_ORACLE_HEADERTEXT.String.Text
 #, fuzzy
@@ -3087,8 +2876,9 @@ msgid  "Oracle JDBC ~driver class"
 msgstr "Hạng t~rình điều khiển JDBC Oracle"
 
 #: source/ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_ORACLE.STR_ORACLE_HELPTEXT.String.Text
+#, fuzzy
 msgid  "Please enter the required information to connect to an Oracle database.Note that a JDBC Driver Class must be installed on your system and registered with %PRODUCTNAME.\nPlease contact your system administrator if you are unsure about the following settings."
-msgstr ""
+msgstr "Hãy nhập thông tin cần thiết để kết nối tới cơ sở dữ liệu Oracle. Lưu ý rằng một hạng trình điều khiển JDBC phải được cài đặt vào hệ thống của bạn, cũng được đăng ký với %PRODUCTNAME.\nHãy liên lạc với quản trị hệ thống nếu bạn chưa chắc về thiết lập sau."
 
 #: source/ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_SPREADSHEET.STR_SPREADSHEET_HEADERTEXT.String.Text
 #, fuzzy
@@ -3096,8 +2886,9 @@ msgid  "Set up a connection to spreadsheets"
 msgstr "Thiết lập một kết nối tới bảng tính"
 
 #: source/ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_SPREADSHEET.STR_SPREADSHEET_HELPTEXT.String.Text
+#, fuzzy
 msgid  "Click 'Browse...' to select a %PRODUCTNAME spreadsheet or Microsoft Excel workbook.\n%PRODUCTNAME will open this file in read-only mode."
-msgstr ""
+msgstr "Nhắp vào nút 'Duyệt...' để chọn một trang bảng tính %PRODUCTNAME hay tập tin bảng tính MS Excel.\n%PRODUCTNAME sẽ mở tập tin này trong chế độ chỉ đọc."
 
 #: source/ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_SPREADSHEET.STR_SPREADSHEETPATH.String.Text
 #, fuzzy
@@ -3274,64 +3065,102 @@ msgstr "Hạng thử"
 msgid  "Socket"
 msgstr "Socket"
 
+#: source/ui/inc/toolbox_tmpl.hrc#ID_BROWSER_REFRESH.#define.Text
+msgid  "Refresh"
+msgstr "Cập nhật"
+
+#: source/ui/inc/toolbox_tmpl.hrc#ID_NEW_VIEW_DESIGN.#define.Text
+msgid  "New ~View Design"
+msgstr "Khung nhìn ~thiết kế mới"
+
+#: source/ui/inc/toolbox_tmpl.hrc#ID_NEW_TABLE_DESIGN.#define.Text
+msgid  "New ~Table Design"
+msgstr "Thiết kế ~bảng mới"
+
+#: source/ui/inc/toolbox_tmpl.hrc#ID_NEW_QUERY_WIZARD.#define.Text
+msgid  "Query AutoPilot..."
+msgstr "Trợ lý truy vấn..."
+
+#: source/ui/inc/toolbox_tmpl.hrc#ID_NEW_QUERY_DESIGN.#define.Text
+msgid  "New ~Query (Design View)"
+msgstr "Truy ~vấn mới (ô xem Thiết kế)"
+
+#: source/ui/inc/toolbox_tmpl.hrc#ID_EDIT_QUERY_DESIGN.#define.Text
+msgid  "~Edit Query"
+msgstr "~Sửa truy vấn"
+
+#: source/ui/inc/toolbox_tmpl.hrc#ID_NEW_QUERY_SQL.#define.Text
+msgid  "New Query (~SQL View)"
+msgstr "Truy vấn mới (ô xem ~SQL)"
+
+#: source/ui/inc/toolbox_tmpl.hrc#ID_QUERY_EDIT_JOINCONNECTION.#define.Text
+msgid  "Edit..."
+msgstr "Sửa..."
+
+#: source/ui/inc/toolbox_tmpl.hrc#ID_BROWSER_COLWIDTH.#define.Text
+msgid  "Column ~Width..."
+msgstr "Độ ~rộng cột..."
+
+#: source/ui/inc/toolbox_tmpl.hrc#ID_DOCUMENT_CREATE_REPWIZ.#define.Text
+msgid  "Report Wizard..."
+msgstr "Trợ lý báo cáo..."
+
+#: source/ui/inc/toolbox_tmpl.hrc#SID_DB_FORM_NEW_PILOT.#define.Text
+msgid  "Form AutoPilot..."
+msgstr "Trợ lý biểu mẫu..."
+
 #: source/ui/misc/dbumiscres.src#RSC_CHARSETS.1.String.Text
-#, fuzzy
 msgid  "System"
 msgstr "Hệ thống"
 
 #: source/ui/misc/dbumiscres.src#STR_ERROR_DURING_CREATION.String.Text
-#, fuzzy
 msgid  "Error during creation"
 msgstr "Gặp lỗi trong khi tạo"
 
 #: source/ui/misc/dbumiscres.src#STR_UNEXPECTED_ERROR.String.Text
-#, fuzzy
 msgid  "An unexpected error occurred. The operation could not be performed."
 msgstr "Gặp lỗi bất thường nên không thể thực hiện thao tác."
 
 #: source/ui/misc/dbumiscres.src#STR_COULDNOTOPEN_LINKEDDOC.String.Text
-msgid  "The document "$file$" could not be opened."
-msgstr ""
+msgid  "The document \"$file$\" could not be opened."
+msgstr "Tài liệu « $file$ » không thể mở được."
 
 #: source/ui/misc/dbumiscres.src#STR_MISSING_TABLES_XDROP.String.Text
 msgid  "The table cannot be deleted because the database connection does not support this."
-msgstr ""
+msgstr "Bảng không thể xoá được vì kết nối cơ sở dữ liệu không hỗ trợ thao tác này."
 
 #: source/ui/misc/dbumiscres.src#STR_BUTTON_TEXT_ALL.String.Text
-#, fuzzy
 msgid  "~All"
 msgstr "~Mọi"
 
 #: source/ui/misc/dbumiscres.src#STR_UNDO_COLON.String.Text
-#, fuzzy
 msgid  "Undo:"
 msgstr "Hủy bước:"
 
 #: source/ui/misc/dbumiscres.src#STR_REDO_COLON.String.Text
-#, fuzzy
 msgid  "Redo:"
 msgstr "Lặp lại:"
 
 #: source/ui/misc/dbumiscres.src#STR_UNKNOWN_TYPE_FOUND.String.Text
-#, fuzzy
 msgid  "No corresponding column type could be found for column '#1'."
 msgstr "Không tìm thấy kiểu cột tương ứng cho cột « #1 »."
 
 #: source/ui/misc/dbumiscres.src#STR_FILE_DOES_NOT_EXIST.String.Text
-msgid  "The file "$file$" does not exist."
-msgstr ""
+msgid  "The file \"$file$\" does not exist."
+msgstr "Tập tin « $file$ » không tồn tại."
 
 #: source/ui/misc/dbumiscres.src#STR_WARNINGS_DURING_CONNECT.String.Text
-msgid  "Warnings were encountered while connecting to the data source. Press "$buttontext$" to view them."
-msgstr ""
+msgid  "Warnings were encountered while connecting to the data source. Press \"$buttontext$\" to view them."
+msgstr "Gặp cảnh báo trong khi kết nối đến nguồn dữ liệu. Hãy bấm nút « $buttontext$ » để xem."
 
 #: source/ui/misc/dbumiscres.src#STR_NAMED_OBJECT_ALREADY_EXISTS.String.Text
 msgid  "The name '$#$' already exists.\nPlease enter another name."
-msgstr ""
+msgstr "Tên « $#$ » đã có.\nHãy nhập tên khác."
 
 #: source/ui/misc/dbumiscres.src#RID_STR_EXTENSION_NOT_PRESENT.String.Text
-msgid  "The report, "$file$", requires the extension Oracle Report Builder."
-msgstr ""
+#, fuzzy
+msgid  "The report, \"$file$\", requires the extension Oracle Report Builder."
+msgstr "Báo cáo \"$file$\" cần phần mở rộng Sun Report Builder."
 
 #: source/ui/misc/WizardPages.src#STR_WIZ_COLUMN_SELECT_TITEL.String.Text
 #, fuzzy
@@ -3489,8 +3318,9 @@ msgid  "This table name is not valid in the current database."
 msgstr "Tên bảng này không phải là hợp lệ trong cơ sở dữ liệu hiện có."
 
 #: source/ui/misc/WizardPages.src#STR_SUGGEST_APPEND_TABLE_DATA.String.Text
+#, fuzzy
 msgid  "Choose the option 'Append data' on the first page to append data to an existing table."
-msgstr ""
+msgstr "Hãy bật tùy chọn « Phụ thêm dữ liệu » trên trang thứ nhất để phụ thêm dữ liệu vào một bảng đã có."
 
 #: source/ui/misc/WizardPages.src#STR_INVALID_TABLE_NAME_LENGTH.String.Text
 #, fuzzy
@@ -3498,850 +3328,665 @@ msgid  "Please change the table name. It is too long."
 msgstr "Hay thay đổi tên bảng vì nó quá dài."
 
 #: source/ui/querydesign/querydlg.src#DLG_QRY_JOIN.WND_JOIN_CONTROL.FL_JOIN.FixedLine.Text
-#, fuzzy
 msgid  "Options"
 msgstr "Tùy chọn"
 
 #: source/ui/querydesign/querydlg.src#DLG_QRY_JOIN.WND_JOIN_CONTROL.FT_LISTBOXTITLE.FixedText.Text
-#, fuzzy
 msgid  "~Type"
 msgstr "~Kiểu"
 
 #: source/ui/querydesign/querydlg.src#DLG_QRY_JOIN.WND_JOIN_CONTROL.LB_JOINTYPE.ID_INNER_JOIN.StringList.item
-#, fuzzy
 msgid  "Inner join"
 msgstr "Nối trong"
 
 #: source/ui/querydesign/querydlg.src#DLG_QRY_JOIN.WND_JOIN_CONTROL.LB_JOINTYPE.ID_LEFT_JOIN.StringList.item
-#, fuzzy
 msgid  "Left join"
 msgstr "Nối trái"
 
 #: source/ui/querydesign/querydlg.src#DLG_QRY_JOIN.WND_JOIN_CONTROL.LB_JOINTYPE.ID_RIGHT_JOIN.StringList.item
-#, fuzzy
 msgid  "Right join"
 msgstr "Nối phải"
 
 #: source/ui/querydesign/querydlg.src#DLG_QRY_JOIN.WND_JOIN_CONTROL.LB_JOINTYPE.ID_FULL_JOIN.StringList.item
-#, fuzzy
 msgid  "Full (outer) join"
 msgstr "Nối (ngoại) đầy đủ"
 
 #: source/ui/querydesign/querydlg.src#DLG_QRY_JOIN.WND_JOIN_CONTROL.LB_JOINTYPE.ID_CROSS_JOIN.StringList.item
-#, fuzzy
 msgid  "Cross join"
 msgstr "Nối chéo"
 
 #: source/ui/querydesign/querydlg.src#DLG_QRY_JOIN.WND_JOIN_CONTROL.CB_NATURAL.CheckBox.Text
-#, fuzzy
 msgid  "Natural"
 msgstr "Tự nhiên"
 
 #: source/ui/querydesign/querydlg.src#DLG_QRY_JOIN.WND_CONTROL.FL_INVOLVED_TABLES.FixedLine.Text
-#, fuzzy
 msgid  "Tables involved"
 msgstr "Bảng liên quan"
 
 #: source/ui/querydesign/querydlg.src#DLG_QRY_JOIN.WND_CONTROL.FL_INVOLVED_FIELDS.FixedLine.Text
-#, fuzzy
 msgid  "Fields involved"
 msgstr "Trường liên quan"
 
 #: source/ui/querydesign/querydlg.src#DLG_QRY_JOIN.HelpButton.Text
-#, fuzzy
 msgid  "Join Properties"
 msgstr "Thuộc tính Nối"
 
 #: source/ui/querydesign/querydlg.src#STR_JOIN_TYPE_HINT.String.Text
-#, fuzzy
 msgid  "Please note that some databases may not support this join type."
 msgstr "Lưu ý rằng một số cơ sở dữ liệu có thể không hỗ trợ kiểu JOIN này."
 
 #: source/ui/querydesign/querydlg.src#STR_QUERY_INNER_JOIN.String.Text
 msgid  "Includes only records for which the contents of the related fields of both tables are identical."
-msgstr ""
+msgstr "Gồm chỉ những bản ghi mà trường liên kết của cả hai bảng có nội dung trùng khớp."
 
 #: source/ui/querydesign/querydlg.src#STR_QUERY_LEFTRIGHT_JOIN.String.Text
 msgid  "Contains ALL records from table '%1' but only records from table '%2' where the values in the related fields are matching."
-msgstr ""
+msgstr "Chứa TẤT CẢ các bản ghi từ bảng « %1 » nhưng chỉ những bản ghi từ bảng « %2 » có giá trị ở các trường liên quan xứng với nhau."
 
 #: source/ui/querydesign/querydlg.src#STR_QUERY_FULL_JOIN.String.Text
-#, fuzzy
 msgid  "Contains ALL records from '%1' and from '%2'."
 msgstr "Chứa TẤT CẢ các bản ghi từ cả hai bảng « %1 » và « %2 »."
 
 #: source/ui/querydesign/querydlg.src#STR_QUERY_CROSS_JOIN.String.Text
-#, fuzzy
 msgid  "Contains the cartesian product of ALL records from '%1' and from '%2'."
 msgstr "Chứa tích của TẤT CẢ các bản ghi từ cả hai bảng « %1 » và « %2 »."
 
 #: source/ui/querydesign/querydlg.src#STR_QUERY_NATURAL_JOIN.String.Text
 msgid  "Contains only one column for each pair of equally-named columns from '%1' and from '%2'."
-msgstr ""
+msgstr "Chứa chỉ một cột cho mỗi cặp cột cùng tên từ cả hai bảng « %1 » và « %2 »."
 
 #: source/ui/querydesign/query.src#STR_QUERY_UNDO_TABWINSHOW.String.Text
-#, fuzzy
 msgid  "Add Table Window"
 msgstr "Thêm cửa sổ bảng"
 
 #: source/ui/querydesign/query.src#STR_QUERY_UNDO_MOVETABWIN.String.Text
-#, fuzzy
 msgid  "Move table window"
 msgstr "Chuyển cửa sổ bảng"
 
 #: source/ui/querydesign/query.src#STR_QUERY_UNDO_INSERTCONNECTION.String.Text
-#, fuzzy
 msgid  "Insert Join"
 msgstr "Chèn chỗ nối"
 
 #: source/ui/querydesign/query.src#STR_QUERY_UNDO_REMOVECONNECTION.String.Text
-#, fuzzy
 msgid  "Delete Join"
 msgstr "Xoá chỗ nối"
 
 #: source/ui/querydesign/query.src#STR_QUERY_UNDO_SIZETABWIN.String.Text
-#, fuzzy
 msgid  "Resize table window"
 msgstr "Đổi kích cỡ cửa sổ bảng"
 
 #: source/ui/querydesign/query.src#STR_QUERY_UNDO_TABFIELDDELETE.String.Text
-#, fuzzy
 msgid  "Delete Column"
 msgstr "Xóa cột"
 
 #: source/ui/querydesign/query.src#STR_QUERY_UNDO_TABFIELDMOVED.String.Text
-#, fuzzy
 msgid  "Move column"
 msgstr "Chuyển cột"
 
 #: source/ui/querydesign/query.src#STR_QUERY_UNDO_TABFIELDCREATE.String.Text
-#, fuzzy
 msgid  "Add Column"
 msgstr "Thêm cột"
 
 #: source/ui/querydesign/query.src#RID_STR_TABLE_DOESNT_EXIST.String.Text
-#, fuzzy
 msgid  "Invalid expression, table '$name$' does not exist."
 msgstr "Biểu thức sai, bảng « $name$ » không tồn tại."
 
 #: source/ui/querydesign/query.src#RID_STR_FIELD_DOESNT_EXIST.String.Text
-#, fuzzy
 msgid  "Invalid expression, field name '$name$' does not exist."
 msgstr "Biểu thức sai, tên trường « $name$ » không tồn tại."
 
 #: source/ui/querydesign/query.src#RID_STR_TOMUCHTABLES.String.Text
 msgid  "The query covers #num# tables. The selected database type, however, can only process a maximum of #maxnum# table(s) per statement."
-msgstr ""
+msgstr "Truy vấn bao quát #num# bảng. Tuy nhiên, kiểu cơ sở dữ liệu được chọn chỉ có khả năng xử lý tối đa #maxnum# bảng cho mỗi câu lệnh."
 
 #: source/ui/querydesign/query.src#STR_QUERY_UNDO_TABWINDELETE.String.Text
-#, fuzzy
 msgid  "Delete Table Window"
 msgstr "Xóa cửa sổ bảng"
 
 #: source/ui/querydesign/query.src#STR_QUERY_UNDO_MODIFY_CELL.String.Text
-#, fuzzy
 msgid  "Edit Column Description"
 msgstr "Sửa mô tả cột"
 
 #: source/ui/querydesign/query.src#STR_QUERY_UNDO_SIZE_COLUMN.String.Text
-#, fuzzy
 msgid  "Adjust column width"
 msgstr "Chỉnh bề rộng cột"
 
 #: source/ui/querydesign/query.src#STR_QUERY_SORTTEXT.String.Text
-#, fuzzy
 msgid  "(not sorted);ascending;descending"
 msgstr "(chưa sắp xếp);tăng dần;giảm dần"
 
 #: source/ui/querydesign/query.src#STR_QUERY_FUNCTIONS.String.Text
-#, fuzzy
 msgid  "(no function);Group"
 msgstr "(không hàm);Nhóm"
 
 #: source/ui/querydesign/query.src#STR_QUERY_NOTABLE.String.Text
-#, fuzzy
 msgid  "(no table)"
 msgstr "(không bảng)"
 
 #: source/ui/querydesign/query.src#STR_QRY_ORDERBY_UNRELATED.String.Text
-#, fuzzy
 msgid  "The database only supports sorting for visible fields."
 msgstr "Cơ sở dữ liệu chỉ hỗ trợ chức năng sắp xếp cho trường hiện rõ."
 
 #: source/ui/querydesign/query.src#RID_QUERYFUNCTION_POPUPMENU.ID_QUERY_FUNCTION.MenuItem.Text
-#, fuzzy
 msgid  "Functions"
 msgstr "Hàm"
 
 #: source/ui/querydesign/query.src#RID_QUERYFUNCTION_POPUPMENU.ID_QUERY_TABLENAME.MenuItem.Text
-#, fuzzy
 msgid  "Table Name"
 msgstr "Tên bảng"
 
 #: source/ui/querydesign/query.src#RID_QUERYFUNCTION_POPUPMENU.ID_QUERY_ALIASNAME.MenuItem.Text
-#, fuzzy
 msgid  "Alias"
 msgstr "Bí danh"
 
 #: source/ui/querydesign/query.src#RID_QUERYFUNCTION_POPUPMENU.ID_QUERY_DISTINCT.MenuItem.Text
-#, fuzzy
 msgid  "Distinct Values"
 msgstr "Giá trị riêng biệt"
 
 #: source/ui/querydesign/query.src#STR_QUERY_HANDLETEXT.String.Text
-#, fuzzy
 msgid  "Field;Alias;Table;Sort;Visible;Function;Criterion;Or;Or"
 msgstr "Trường;Bí danh;Bảng;Sắp xếp;Hiện rõ;Hàm;Tiêu chuẩn;Hoặc;Hoặc"
 
 #: source/ui/querydesign/query.src#STR_QRY_TOO_MANY_COLUMNS.String.Text
-#, fuzzy
 msgid  "There are too many columns."
 msgstr "Quá nhiều cột."
 
 #: source/ui/querydesign/query.src#ERR_QRY_CRITERIA_ON_ASTERISK.ErrorBox.Message
-#, fuzzy
 msgid  "A condition cannot be applied to field [*]"
 msgstr "Một điều kiện không thể áp dụng cho trường [*]"
 
 #: source/ui/querydesign/query.src#STR_QRY_TOO_LONG_STATEMENT.String.Text
-#, fuzzy
 msgid  "The SQL statement created is too long."
 msgstr "Câu lệnh SQL được tạo quá dài."
 
 #: source/ui/querydesign/query.src#STR_QRY_TOOCOMPLEX.String.Text
-#, fuzzy
 msgid  "Query is too complex"
 msgstr "Truy vấn quá phức tạp"
 
 #: source/ui/querydesign/query.src#STR_QRY_NOSELECT.String.Text
-#, fuzzy
 msgid  "Nothing has been selected."
 msgstr "Chưa chọn gì."
 
 #: source/ui/querydesign/query.src#STR_QRY_TOOMANYCOND.String.Text
-#, fuzzy
 msgid  "Too many search criteria"
 msgstr "Quá nhiều tiểu chuẩn tìm kiếm"
 
 #: source/ui/querydesign/query.src#STR_QRY_SYNTAX.String.Text
-#, fuzzy
 msgid  "SQL syntax error"
 msgstr "Lỗi cú pháp SQL"
 
 #: source/ui/querydesign/query.src#ERR_QRY_ORDERBY_ON_ASTERISK.ErrorBox.Message
-#, fuzzy
 msgid  "[*] cannot be used as a sort criterion."
 msgstr "[*] không thể dùng làm tiêu chuẩn sắp xếp."
 
 #: source/ui/querydesign/query.src#STR_QRY_TOO_MANY_TABLES.String.Text
-#, fuzzy
 msgid  "There are too many tables."
 msgstr "Quá nhiều bảng."
 
 #: source/ui/querydesign/query.src#STR_QRY_NATIVE.String.Text
 msgid  "The statement will not be applied when querying in the SQL dialect of the database."
-msgstr ""
+msgstr "Câu lệnh sẽ không được áp dụng khi truy vấn bằng tiếng SQL địa phương của cơ sở dữ liệu."
 
 #: source/ui/querydesign/query.src#ERR_QRY_AMB_FIELD.ErrorBox.Message
-#, fuzzy
 msgid  "Field name not found or not unique"
 msgstr "Tên trường không kiếm thấy hoặc không duy nhất"
 
 #: source/ui/querydesign/query.src#STR_QRY_ILLEGAL_JOIN.String.Text
-#, fuzzy
 msgid  "Join could not be processed"
 msgstr "Không thể xử lý chỗ nối"
 
 #: source/ui/querydesign/query.src#STR_SVT_SQL_SYNTAX_ERROR.String.Text
-#, fuzzy
 msgid  "Syntax error in SQL statement"
 msgstr "Cú pháp sai trong câu lệnh SQL"
 
 #: source/ui/querydesign/query.src#STR_QUERYDESIGN_NO_VIEW_SUPPORT.String.Text
-#, fuzzy
 msgid  "This database does not support table views."
 msgstr "Cơ sở dữ liệu này không hỗ trợ ô xem bảng."
 
 #: source/ui/querydesign/query.src#STR_NO_ALTER_VIEW_SUPPORT.String.Text
-#, fuzzy
 msgid  "This database does not support altering of existing table views."
 msgstr "Cơ sở dữ liệu này không hỗ trợ chức năng sửa đổi ô xem bảng đã có."
 
 #: source/ui/querydesign/query.src#STR_QUERYDESIGN_NO_VIEW_ASK.String.Text
-#, fuzzy
 msgid  "Do you want to create a query instead?"
 msgstr "Thay vào đó, bạn có muốn tạo một truy vấn không?"
 
 #: source/ui/querydesign/query.src#ERR_QRY_NOSTATEMENT.ErrorBox.Message
-#, fuzzy
 msgid  "No query could be created."
 msgstr "Không thể tạo truy vấn."
 
 #: source/ui/querydesign/query.src#ERR_QRY_NOCRITERIA.ErrorBox.Message
-#, fuzzy
 msgid  "No query could be created because no fields were selected."
 msgstr "Không thể tạo truy vấn vì chưa chọn trường."
 
 #: source/ui/querydesign/query.src#STR_DATASOURCE_DELETED.String.Text
 msgid  "The corresponding data source has been deleted. Therefore, data relevant to that data source cannot be saved."
-msgstr ""
+msgstr "Nguồn dữ liệu tương ứng đã bị xoá. Do đó không thể lưu lại dữ liệu liên quan đến nguồn dữ liệu này."
 
 #: source/ui/querydesign/query.src#STR_QRY_COLUMN_NOT_FOUND.String.Text
-#, fuzzy
 msgid  "The column '$name$' is unknown."
 msgstr "Không nhận ra cột « $name$ »."
 
 #: source/ui/querydesign/query.src#STR_QRY_JOIN_COLUMN_COMPARE.String.Text
-#, fuzzy
 msgid  "Columns can only be compared using '='."
 msgstr "Chỉ có thể so sánh các cột khi dùng dấu bằng « = »."
 
 #: source/ui/querydesign/query.src#STR_QRY_LIKE_LEFT_NO_COLUMN.String.Text
-#, fuzzy
 msgid  "You must use a column name before 'LIKE'."
 msgstr "Phải đặt tên cột phía trước « LIKE »."
 
 #: source/ui/querydesign/query.src#STR_QRY_CHECK_CASESENSITIVE.String.Text
 msgid  "The column could not be found. Please note that the database is case-sensitive."
-msgstr ""
+msgstr "Không tìm thấy cột này. Lưu ý rằng cơ sở dữ liệu này phân biệt chữ hoa, chữ thường."
 
 #: source/ui/querydesign/query.src#STR_QUERYDESIGN.String.Text
-#, fuzzy
 msgid  " - %PRODUCTNAME Base: Query Design"
 msgstr " — %PRODUCTNAME Base: Thiết kế Truy vấn"
 
 #: source/ui/querydesign/query.src#STR_VIEWDESIGN.String.Text
-#, fuzzy
 msgid  " - %PRODUCTNAME Base: View Design"
 msgstr " — %PRODUCTNAME Base: Thiết kế khung nhìn"
 
 #: source/ui/querydesign/query.src#STR_QUERY_SAVEMODIFIED.String.Text
 msgid  "$object$ has been changed.\nDo you want to save the changes?"
-msgstr ""
+msgstr "Đối tượng $object$ đã bị thay đổi.\n Bạn có muốn lưu các thay đổi này không?"
 
 #: source/ui/querydesign/query.src#STR_ERROR_PARSING_STATEMENT.String.Text
-msgid  "$object$ is based on an SQL command which could not be parsed.(except "SQL command", which doesn't make sense here) will be inserted."
+msgid  "$object$ is based on an SQL command which could not be parsed.(except \"SQL command\", which doesn't make sense here) will be inserted."
 msgstr ""
 
 #: source/ui/querydesign/query.src#STR_INFO_OPENING_IN_SQL_VIEW.String.Text
-msgid  "$object$ will be opened in SQL view.(except "SQL command", which doesn't make sense here) will be inserted."
+msgid  "$object$ will be opened in SQL view.(except \"SQL command\", which doesn't make sense here) will be inserted."
 msgstr ""
 
 #: source/ui/querydesign/query.src#RSC_QUERY_OBJECT_TYPE.1.String.Text
-#, fuzzy
 msgid  "The table view"
 msgstr "View bảng"
 
 #: source/ui/querydesign/query.src#RSC_QUERY_OBJECT_TYPE.2.String.Text
-#, fuzzy
 msgid  "The query"
 msgstr "Truy vấn"
 
 #: source/ui/querydesign/query.src#RSC_QUERY_OBJECT_TYPE.3.String.Text
-#, fuzzy
 msgid  "The SQL statement"
 msgstr "Câu lệnh SQL"
 
 #: source/ui/querydesign/query.src#STR_STATEMENT_WITHOUT_RESULT_SET.String.Text
 msgid  "The query does not create a result set, and thus cannot be part of another query."
-msgstr ""
+msgstr "Truy vấn này không tạo tập kết quả nên không thể thuộc về truy vấn khác."
 
 #: source/ui/querydesign/query.src#STR_NO_DATASOURCE_OR_CONNECTION.String.Text
 msgid  "Both the ActiveConnection and the DataSourceName parameter are missing or wrong - cannot initialize the query designer."
-msgstr ""
+msgstr "Cả hai tham số ActiveConnection (kết nối hoạt động) và DataSourceName (tên nguồn dữ liệu) còn thiếu hay sai nên không thể khởi tạo chức năng thiết kế truy vấn."
 
 #: source/ui/relationdesign/relation.src#STR_QUERY_REL_EDIT_RELATION.String.Text
 msgid  "This relation already exists. Do you want to edit it or create a new one?"
-msgstr ""
+msgstr "Quan hệ này đã có. Bạn có muốn chỉnh sửa nó, hoặc tạo một quan hệ mới?"
 
 #: source/ui/relationdesign/relation.src#STR_QUERY_REL_EDIT.String.Text
-#, fuzzy
 msgid  "Edit..."
 msgstr "Sửa..."
 
 #: source/ui/relationdesign/relation.src#STR_QUERY_REL_CREATE.String.Text
-#, fuzzy
 msgid  "Create..."
 msgstr "Tạo..."
 
 #: source/ui/relationdesign/relation.src#STR_RELATIONDESIGN.String.Text
-#, fuzzy
 msgid  " - %PRODUCTNAME Base: Relation design"
 msgstr " — %PRODUCTNAME Base: Thiết kế Quan hệ"
 
 #: source/ui/relationdesign/relation.src#STR_RELATIONDESIGN_NOT_AVAILABLE.String.Text
-#, fuzzy
 msgid  "The database does not support relations."
 msgstr "Cơ sở dữ liệu này không hỗ trợ quan hệ."
 
 #: source/ui/relationdesign/relation.src#RELATION_DESIGN_SAVEMODIFIED.QueryBox.Message
 msgid  "The relation design has been changed.\nDo you want to save the changes?"
-msgstr ""
+msgstr "Thiết kế quan hệ đã bị thay đổi.\nBạn có muốn lưu các thay đổi này không?"
 
 #: source/ui/relationdesign/relation.src#STR_QUERY_REL_DELETE_WINDOW.String.Text
 msgid  "When you delete this table all corresponding relations will be deleted as well. Continue?"
-msgstr ""
+msgstr "Khi bạn xoá bảng này, tất cả quan hệ tương ứng cũng sẽ bị xoá. Bạn có muốn tiếp tục không?"
 
 #: source/ui/relationdesign/relation.src#STR_QUERY_REL_COULD_NOT_CREATE.String.Text
 msgid  "The database could not create the relation. May be foreign keys for this kind of table aren't supported.\nPlease check your documentation of the database."
-msgstr ""
+msgstr "Cơ sở dữ liệu không tạo được quan hệ. Có thể loại bảng này không hỗ trợ khóa ngoài.\nKiểm tra lại tài liệu của cơ sở dữ liệu."
 
 #: source/ui/tabledesign/table.src#STR_TABLEDESIGN_DBFIELDTYPES.String.Text
 msgid  "Unknown;Text;Number;Date/Time;Date;Time;Yes/No;Currency;Memo;Counter;Image;Text (fix);Decimal;Binary (fix);Binary;BigInt;Double;Float;Real;Integer;Small Integer;Tiny Integer;SQL Null;Object;Distinct;Structure;Field;BLOB;CLOB;REF;OTHER;Bit (fix)"
-msgstr ""
+msgstr "Không rõ;Văn bản;Số;Ngày/Giờ;Ngày;Giờ;Có/Không;Tiền tệ;Ghi nhớ;Bộ đếm;Ảnh;Văn bản (sửa);Thập phân;Nhị phân (sửa);Nhị phân;Số nguyên lớn;Đôi;Động;Thật;Số nguyên;Số nguyên nhỏ;Số nguyên nhỏ xíu;SQL vô giá trị;Đối tượng;Riêng biệt;Cấu trúc;Trường;BLOB;CLOB;THAM CHIẾU;KHÁC; Bit (cố định)"
 
 #: source/ui/tabledesign/table.src#STR_TABLEDESIGN_UNDO_PRIMKEY.String.Text
-#, fuzzy
 msgid  "Insert/remove primary key"
 msgstr "Chèn/bỏ khoá chính"
 
 #: source/ui/tabledesign/table.src#STR_VALUE_YES.String.Text
-#, fuzzy
 msgid  "Yes"
 msgstr "Có"
 
 #: source/ui/tabledesign/table.src#STR_VALUE_NO.String.Text
-#, fuzzy
 msgid  "No"
 msgstr "Không"
 
 #: source/ui/tabledesign/table.src#STR_VALUE_ASC.String.Text
-#, fuzzy
 msgid  "Ascending"
 msgstr "Tăng dần"
 
 #: source/ui/tabledesign/table.src#STR_VALUE_DESC.String.Text
-#, fuzzy
 msgid  "Descending"
 msgstr "Giảm dần"
 
 #: source/ui/tabledesign/table.src#STR_VALUE_NONE.String.Text
-#, fuzzy
 msgid  "<none>"
 msgstr "<không có>"
 
 #: source/ui/tabledesign/table.src#STR_TAB_FIELD_NAME.String.Text
-#, fuzzy
 msgid  "Field name"
 msgstr "Tên trường"
 
 #: source/ui/tabledesign/table.src#STR_TAB_FIELD_COLUMN_NAME.String.Text
-#, fuzzy
 msgid  "Field Name"
 msgstr "Tên trường"
 
 #: source/ui/tabledesign/table.src#STR_TAB_FIELD_DATATYPE.String.Text
-#, fuzzy
 msgid  "Field ~type"
 msgstr "Kiểu trường "
 
 #: source/ui/tabledesign/table.src#STR_TAB_FIELD_COLUMN_DATATYPE.String.Text
-#, fuzzy
 msgid  "Field Type"
 msgstr "Kiểu trường"
 
 #: source/ui/tabledesign/table.src#STR_TAB_FIELD_LENGTH.String.Text
-#, fuzzy
 msgid  "Field length"
 msgstr "Độ dài trường"
 
 #: source/ui/tabledesign/table.src#STR_TAB_HELP_TEXT.String.Text
-#, fuzzy
 msgid  "Description"
 msgstr "Mô tả"
 
 #: source/ui/tabledesign/table.src#STR_COLUMN_DESCRIPTION.String.Text
-#, fuzzy
 msgid  "Column Description"
 msgstr "Mô tả cột"
 
 #: source/ui/tabledesign/table.src#STR_TAB_FIELD_NULLABLE.String.Text
-#, fuzzy
 msgid  "Input required"
 msgstr "Yêu cầu nhập liệu"
 
 #: source/ui/tabledesign/table.src#STR_FIELD_AUTOINCREMENT.String.Text
-#, fuzzy
 msgid  "~AutoValue"
 msgstr "Giá trị ~tự động"
 
 #: source/ui/tabledesign/table.src#STR_TAB_PROPERTIES.String.Text
-#, fuzzy
 msgid  "Field Properties"
 msgstr "Thuộc tính Trường"
 
 #: source/ui/tabledesign/table.src#STR_TABPAGE_GENERAL.String.Text
-#, fuzzy
 msgid  "General"
 msgstr "Chung"
 
 #: source/ui/tabledesign/table.src#STR_TAB_TABLE_DESCRIPTION.String.Text
-#, fuzzy
 msgid  "Description:"
 msgstr "Mô tả:"
 
 #: source/ui/tabledesign/table.src#STR_TAB_TABLE_PROPERTIES.String.Text
-#, fuzzy
 msgid  "Table properties"
 msgstr "Thuộc tính bảng"
 
 #: source/ui/tabledesign/table.src#ERR_INVALID_LISTBOX_ENTRY.ErrorBox.Message
-#, fuzzy
 msgid  "The text you entered is not a list element. "
 msgstr "Bạn đã nhập một văn bản không phải là phần tử danh sách. "
 
 #: source/ui/tabledesign/table.src#RID_TABLEDESIGNROWPOPUPMENU.SID_TABLEDESIGN_INSERTROWS.MenuItem.Text
-#, fuzzy
 msgid  "Insert Rows"
 msgstr "Chèn dòng"
 
 #: source/ui/tabledesign/table.src#RID_TABLEDESIGNROWPOPUPMENU.SID_TABLEDESIGN_TABED_PRIMARYKEY.MenuItem.Text
-#, fuzzy
 msgid  "Primary Key"
 msgstr "Khoá chính"
 
 #: source/ui/tabledesign/table.src#STR_TABED_UNDO_CELLMODIFIED.String.Text
-#, fuzzy
 msgid  "Modify cell"
 msgstr "Sửa ô"
 
 #: source/ui/tabledesign/table.src#STR_TABED_UNDO_ROWDELETED.String.Text
-#, fuzzy
 msgid  "Delete row"
 msgstr "Xóa dòng"
 
 #: source/ui/tabledesign/table.src#STR_TABED_UNDO_TYPE_CHANGED.String.Text
-#, fuzzy
 msgid  "Modify field type"
 msgstr "Sửa kiểu trường"
 
 #: source/ui/tabledesign/table.src#STR_TABED_UNDO_ROWINSERTED.String.Text
-#, fuzzy
 msgid  "Insert row"
 msgstr "Chèn dòng"
 
 #: source/ui/tabledesign/table.src#STR_TABED_UNDO_NEWROWINSERTED.String.Text
-#, fuzzy
 msgid  "Insert new row"
 msgstr "Chèn dòng mới"
 
 #: source/ui/tabledesign/table.src#STR_TABED_UNDO_PRIMKEY.String.Text
-#, fuzzy
 msgid  "Insert/remove primary key"
 msgstr "Chèn/bỏ khoá chính"
 
 #: source/ui/tabledesign/table.src#STR_DEFAULT_VALUE.String.Text
-#, fuzzy
 msgid  "~Default value"
 msgstr "Giá trị ~mặc định"
 
 #: source/ui/tabledesign/table.src#STR_FIELD_REQUIRED.String.Text
-#, fuzzy
 msgid  "~Entry required"
 msgstr "~Yêu cầu nhập liệu"
 
 #: source/ui/tabledesign/table.src#STR_TEXT_LENGTH.String.Text
-#, fuzzy
 msgid  "~Length"
 msgstr "Chiều ~dài"
 
 #: source/ui/tabledesign/table.src#STR_NUMERIC_TYPE.String.Text
-#, fuzzy
 msgid  "~Type"
 msgstr "~Kiểu"
 
 #: source/ui/tabledesign/table.src#STR_LENGTH.String.Text
-#, fuzzy
 msgid  "~Length"
 msgstr "Chiều ~dài"
 
 #: source/ui/tabledesign/table.src#STR_SCALE.String.Text
-#, fuzzy
 msgid  "Decimal ~places"
 msgstr "Chữ số thập ~phân"
 
 #: source/ui/tabledesign/table.src#STR_FORMAT.String.Text
-#, fuzzy
 msgid  "Format example"
 msgstr "Mẫu định dạng"
 
 #: source/ui/tabledesign/table.src#STR_HELP_BOOL_DEFAULT.String.Text
 msgid  "Select a value that is to appear in all new records as default.\nIf the field is not to have a default value, select the empty string."
-msgstr ""
+msgstr "Hãy chọn một giá trị sẽ xuất hiện trong mọi bản ghi mới là mặc định.\nNếu trường này không nên có giá trị mặc định, chọn chuỗi trống."
 
 #: source/ui/tabledesign/table.src#STR_HELP_DEFAULT_VALUE.String.Text
 msgid  "Enter a default value for this field.\n\nWhen you later enter data in the table, this string will be used in each new record for the field selected. It should, therefore, correspond to the cell format that needs to be entered below."
-msgstr ""
+msgstr "Hãy nhập giá trị mặc định cho trường này.\n\nKhi bạn nhập dữ liệu vào bảng lần sau, chuỗi này sẽ được dùng trong mỗi bản ghi mới cho trường được chọn. Vì vậy nó nên tương ứng với định dạng ô cần nhập bên dưới."
 
 #: source/ui/tabledesign/table.src#STR_HELP_FIELD_REQUIRED.String.Text
 msgid  "Activate this option if this field cannot contain NULL values, i.e. the user must always enter data."
-msgstr ""
+msgstr "Kích hoạt tùy chọn này nếu trường không thể chứa giá trị RỖNG, nghía là người dùng phải luôn nhập dữ liêu vào nó."
 
 #: source/ui/tabledesign/table.src#STR_HELP_TEXT_LENGTH.String.Text
-#, fuzzy
 msgid  "Enter the maximum text length permitted."
 msgstr "Nhập độ dài văn bản tối đa được phép."
 
 #: source/ui/tabledesign/table.src#STR_HELP_NUMERIC_TYPE.String.Text
-#, fuzzy
 msgid  "Enter the number format."
 msgstr "Nhập định dạng số."
 
 #: source/ui/tabledesign/table.src#STR_HELP_LENGTH.String.Text
 msgid  "Determine the length data can have in this field.\n\nIf decimal fields, then the maximum length of the number to be entered, if binary fields, then the length of the data block.\nThe value will be corrected accordingly when it exceeds the maximum for this database."
-msgstr ""
+msgstr "Quyết định độ dài thích hợp với dữ liệu nằm trong trường này.\n\nNếu trường là thập phân, chọn độ dài tối đa của số cần nhập; còn nếu trường là nhị phân, chọn độ dài của khối dữ liệu.\nGiá trị này sẽ được sửa chữa thích hợp khi nó vượt trội số tối đa cho cơ sở dữ liệu này."
 
 #: source/ui/tabledesign/table.src#STR_HELP_SCALE.String.Text
-#, fuzzy
 msgid  "Specify the number of decimal places permitted in this field."
 msgstr "Xác dịnh số các chữ số thập phân được phép trong trường này."
 
 #: source/ui/tabledesign/table.src#STR_HELP_FORMAT_CODE.String.Text
 msgid  "This is where you see how the data would be displayed in the current format (use the button on the right to modify the format)."
-msgstr ""
+msgstr "Ở đây hiển thị dữ liệu bằng định dạng hiện có (dùng nút bên phải để sửa đổi định dạng)."
 
 #: source/ui/tabledesign/table.src#STR_HELP_FORMAT_BUTTON.String.Text
-#, fuzzy
 msgid  "This is where you determine the output format of the data."
 msgstr "Ở đây bạn chọn định dạng xuất dữ liệu."
 
 #: source/ui/tabledesign/table.src#STR_HELP_AUTOINCREMENT.String.Text
 msgid  "Choose if this field should contain AutoIncrement values.\n\nYou can not enter data in fields of this type. An intrinsic value will be assigned to each new record automatically (resulting from the increment of the previous record)."
-msgstr ""
+msgstr "Chọn nếu trường này nên chứa giá trị kiểu tăng dần tự động.\n\nBạn không thể nhập dữ liệu vào trường kiểu này. Một giá trị bên trong sẽ được gán tự động cho mỗi bản ghi mới (kết quả của bản ghi trước)."
 
 #: source/ui/tabledesign/table.src#PB_FORMAT.PushButton.Text
-#, fuzzy
 msgid  "~..."
 msgstr "~..."
 
 #: source/ui/tabledesign/table.src#STR_TABLEDESIGN_DUPLICATE_NAME.String.Text
-msgid  "The table cannot be saved because column name "$column$" was assigned twice."
-msgstr ""
+msgid  "The table cannot be saved because column name \"$column$\" was assigned twice."
+msgstr "Không thể lưu bảng này vì tên cột « $column$ » đã được gán hai lần."
 
 #: source/ui/tabledesign/table.src#STR_TBL_COLUMN_IS_KEYCOLUMN.String.Text
-msgid  "The column "$column$" belongs to the primary key. If the column is deleted, the primary key will also be deleted. Do you really want to continue?"
-msgstr ""
+msgid  "The column \"$column$\" belongs to the primary key. If the column is deleted, the primary key will also be deleted. Do you really want to continue?"
+msgstr "Cột « $column$ » thuộc về khoá chính. Nếu cột này bị xoá, khoá chính cũng sẽ bị xoá. Bạn có thực sự muốn tiếp tục không?"
 
 #: source/ui/tabledesign/table.src#STR_TBL_COLUMN_IS_KEYCOLUMN_TITLE.String.Text
-#, fuzzy
 msgid  "Primary Key Affected"
 msgstr "Khoá chính bị ảnh hưởng"
 
 #: source/ui/tabledesign/table.src#STR_COLUMN_NAME.String.Text
-#, fuzzy
 msgid  "Column"
 msgstr "Cột"
 
 #: source/ui/tabledesign/table.src#STR_QRY_CONTINUE.String.Text
-#, fuzzy
 msgid  "Continue anyway?"
 msgstr "Vẫn tiếp tục không?"
 
+#: source/ui/tabledesign/table.src#STR_STAT_WARNING.String.Text
+msgid  "Warning!"
+msgstr "Cảnh báo !"
+
 #: source/ui/tabledesign/table.src#TABLE_DESIGN_SAVEMODIFIED.QueryBox.Message
 msgid  "The table has been changed.\nDo you want to save the changes?"
-msgstr ""
+msgstr "Bảng này đã bị thay đổi.\nBạn có muốn lưu các thay đổi này không?"
 
 #: source/ui/tabledesign/table.src#TABLE_QUERY_CONNECTION_LOST.QueryBox.Message
 msgid  "The connection to the database was lost! The table design can only be used with limited functionality without a connection.\nReconnect?"
-msgstr ""
+msgstr "Kết nối tới cơ sở dữ liệu đã bị đứt. Khi không có kết nối, thiết kế bảng bị hạn chế chức năng.\nKết nối lại không?"
 
 #: source/ui/tabledesign/table.src#STR_TABLEDESIGN_CONNECTION_MISSING.String.Text
 msgid  "The table could not be saved due to problems connecting to the database."
-msgstr ""
+msgstr "Không thể lưu bảng này do vấn đề khi kết nối tới cơ sở dữ liệu."
 
 #: source/ui/tabledesign/table.src#STR_TABLEDESIGN_DATASOURCE_DELETED.String.Text
 msgid  "The table filter could not be adjusted because the data source has been deleted."
-msgstr ""
+msgstr "Không thể điều chỉnh bộ lọc bảng này vì nguồn dữ liệu đã bị xoá."
 
 #: source/ui/tabledesign/table.src#QUERY_SAVE_TABLE_EDIT_INDEXES.QueryBox.Message
 msgid  "Before you can edit the indexes of a table, you have to save it.\nDo you want to save the changes now?"
-msgstr ""
+msgstr "Để có khả năng chỉnh sửa các chỉ mục của bảng, bạn cần phải lưu nó trước đó.\nBạn có muốn lưu các thay đổi này ngay bây giờ không?"
 
 #: source/ui/tabledesign/table.src#STR_TABLEDESIGN_NO_PRIM_KEY_HEAD.String.Text
-#, fuzzy
 msgid  "No primary key"
 msgstr "Không có khoá chính"
 
 #: source/ui/tabledesign/table.src#STR_TABLEDESIGN_NO_PRIM_KEY.String.Text
 msgid  "A unique index or primary key is required for data record identification in this database.\nYou can only enter data into this table when one of these two structural conditions has been met.\n\nShould a primary key be created now?"
-msgstr ""
+msgstr "Một chỉ mục duy nhất hay khoá chính cần thiết để nhận diện bản ghi dữ liệu trong cơ sở dữ liệu này.\nBạn có khả năng nhập dữ liệu vào bảng này chỉ sau khi một của hai điều kiện cấu trúc này được thỏa.\n\nCó nên tạo một khoá chính ngay bây giờ không?"
 
 #: source/ui/tabledesign/table.src#STR_TABLEDESIGN_TITLE.String.Text
-#, fuzzy
 msgid  " - %PRODUCTNAME Base: Table Design"
 msgstr " — %PRODUCTNAME Base: Thiết kế bảng"
 
 #: source/ui/tabledesign/table.src#STR_TABLEDESIGN_ALTER_ERROR.String.Text
-msgid  "The column "$column$" could not be changed. Should the column instead be deleted and the new format appended?"
-msgstr ""
+msgid  "The column \"$column$\" could not be changed. Should the column instead be deleted and the new format appended?"
+msgstr "Không thể thay đổi cột « $column$ ». Thay vào đó, bạn có muốn xoá cột này và phụ thêm định dạng mới không?"
 
 #: source/ui/tabledesign/table.src#STR_TABLEDESIGN_SAVE_ERROR.String.Text
-#, fuzzy
 msgid  "Error while saving the table design"
 msgstr "Gặp lỗi khi lưu thiết kế bảng"
 
 #: source/ui/tabledesign/table.src#STR_TABLEDESIGN_COULD_NOT_DROP_COL.String.Text
-#, fuzzy
 msgid  "The column $column$ could not be deleted."
 msgstr "Không thể xoá cột $column$."
 
 #: source/ui/tabledesign/table.src#TABLE_DESIGN_ALL_ROWS_DELETED.QueryBox.Message
 msgid  "You are trying to delete all the columns in the table. A table cannot exist without columns. Should the table be deleted from the database? If not, the table will remain unchanged."
-msgstr ""
+msgstr "Bạn đang cố xoá tất cả các cột trong bảng. Một bảng không thể tồn tại mà không có cột. Bạn có muốn xoá bảng này khỏi cơ sở dữ liệu không? Nếu không, bảng sẽ vẫn ở tình trạng không thay đổi."
 
 #: source/ui/tabledesign/table.src#STR_AUTOINCREMENT_VALUE.String.Text
-#, fuzzy
 msgid  "A~uto-increment statement"
 msgstr "Câ~u lệnh tăng dần tự động"
 
 #: source/ui/tabledesign/table.src#STR_HELP_AUTOINCREMENT_VALUE.String.Text
 msgid  "Enter an SQL statement for the auto-increment field.\n\nThis statement will be directly transferred to the database when the table is created."
-msgstr ""
+msgstr "Hãy nhập một câu lệnh SQL cho trường tăng dần tự động.\n\nCâu lệnh này sẽ được truyền trực tiếp tới cơ sở dữ liệu khi bảng được tạo."
 
 #: source/ui/tabledesign/table.src#STR_NO_TYPE_INFO_AVAILABLE.String.Text
 msgid  "No type information could be retrieved from the database.\nThe table design mode is not available for this data source."
-msgstr ""
+msgstr "Không thể đọc thông tin kiểu từ cơ sở dữ liệu.\nChế độ thiết kế bảng không dùng được với nguồn dữ liệu này."
 
 #: source/ui/tabledesign/table.src#STR_CHANGE_COLUMN_NAME.String.Text
-#, fuzzy
 msgid  "change field name"
 msgstr "đổi tên trường"
 
 #: source/ui/tabledesign/table.src#STR_CHANGE_COLUMN_TYPE.String.Text
-#, fuzzy
 msgid  "change field type"
 msgstr "đổi kiểu trường"
 
 #: source/ui/tabledesign/table.src#STR_CHANGE_COLUMN_DESCRIPTION.String.Text
-#, fuzzy
 msgid  "change field description"
 msgstr "đổi mô tả trường"
 
 #: source/ui/tabledesign/table.src#STR_CHANGE_COLUMN_ATTRIBUTE.String.Text
-#, fuzzy
 msgid  "change field attribute"
 msgstr "đổi thuộc tính trường"
 
-#: source/ui/tabledesign/table.src#STR_STAT_WARNING.String.Text
-#, fuzzy
-msgid  "Warning!"
-msgstr "Cảnh báo !"
-
 #: source/ui/uno/dbinteraction.src#STR_REMEMBERPASSWORD_SESSION.String.Text
-#, fuzzy
 msgid  "~Remember password until end of session"
 msgstr "~Nhớ mật khẩu đến khi kết thúc phiên chạy"
 
 #: source/ui/uno/dbinteraction.src#STR_REMEMBERPASSWORD_PERSISTENT.String.Text
-#, fuzzy
 msgid  "~Remember password"
 msgstr "~Nhớ mật khẩu"
 
 #: source/ui/uno/copytablewizard.src#STR_CTW_NO_VIEWS_SUPPORT.String.Text
-#, fuzzy
 msgid  "The destination database does not support views."
 msgstr "Cơ sở dữ liệu đích không hỗ trợ ô xem."
 
 #: source/ui/uno/copytablewizard.src#STR_CTW_NO_PRIMARY_KEY_SUPPORT.String.Text
-#, fuzzy
 msgid  "The destination database does not support primary keys."
 msgstr "Cơ sở dữ liệu đích không hỗ trợ khoá chính."
 
 #: source/ui/uno/copytablewizard.src#STR_CTW_INVALID_DATA_ACCESS_DESCRIPTOR.String.Text
 msgid  "no data access descriptor found, or no data access descriptor able to provide all necessary information"
-msgstr ""
+msgstr "không tìm thấy bộ mô tả truy cập dữ liệu, hoặc không có bộ mô tả truy cập dữ liệu có khả năng cung cấp mọi thông tin cần thiết"
 
 #: source/ui/uno/copytablewizard.src#STR_CTW_ONLY_TABLES_AND_QUERIES_SUPPORT.String.Text
-#, fuzzy
 msgid  "Only tables and queries are supported at the moment."
 msgstr "Hiện thời chỉ hỗ trợ bảng và truy vấn."
 
 #: source/ui/uno/copytablewizard.src#STR_CTW_COPY_SOURCE_NEEDS_BOOKMARKS.String.Text
-#, fuzzy
 msgid  "The copy source's result set must support bookmarks."
 msgstr "Tập hợp kết quả của nguồn sao chép phải hỗ trợ Liên kết lưu."
 
 #: source/ui/uno/copytablewizard.src#STR_CTW_UNSUPPORTED_COLUMN_TYPE.String.Text
-#, fuzzy
 msgid  "Unsupported source column type ($type$) at column position $pos$."
 msgstr "Gặp kiểu cột nguồn không được hỗ trợ ($type$) ở vị trí cột $pos$."
 
 #: source/ui/uno/copytablewizard.src#STR_CTW_ILLEGAL_PARAMETER_COUNT.String.Text
-#, fuzzy
 msgid  "Illegal number of initialization parameters."
 msgstr "Số tham số khởi tạo cấm."
 
 #: source/ui/uno/copytablewizard.src#STR_CTW_ERROR_DURING_INITIALIZATION.String.Text
-#, fuzzy
 msgid  "An error occurred during initialization."
 msgstr "Gặp lỗi trong khi sơ khởi."
 
 #: source/ui/uno/copytablewizard.src#STR_CTW_ERROR_UNSUPPORTED_SETTING.String.Text
-#, fuzzy
 msgid  "Unsupported setting in the copy source descriptor: $name$."
 msgstr "Thiết lập không được hỗ trợ trong mô tả nguồn sao chép. $name$."
 
 #: source/ui/uno/copytablewizard.src#STR_CTW_ERROR_NO_QUERY.String.Text
-#, fuzzy
 msgid  "To copy a query, your connection must be able to provide queries."
 msgstr "Để có thể sao chép truy vấn, đường truyền cần cung cấp truy vấn."
 
 #: source/ui/uno/copytablewizard.src#STR_CTW_ERROR_INVALID_INTERACTIONHANDLER.String.Text
-#, fuzzy
 msgid  "The given interaction handler is invalid."
 msgstr "Handler cho giao tiếp đã cho không hợp lệ."
-
-#: source/ui/inc/toolbox_tmpl.hrc#ID_BROWSER_REFRESH.#define.Text
-#, fuzzy
-msgid  "Refresh"
-msgstr "Cập nhật"
-
-#: source/ui/inc/toolbox_tmpl.hrc#ID_NEW_VIEW_DESIGN.#define.Text
-#, fuzzy
-msgid  "New ~View Design"
-msgstr "Khung nhìn ~thiết kế mới"
-
-#: source/ui/inc/toolbox_tmpl.hrc#ID_NEW_TABLE_DESIGN.#define.Text
-#, fuzzy
-msgid  "New ~Table Design"
-msgstr "Thiết kế ~bảng mới"
-
-#: source/ui/inc/toolbox_tmpl.hrc#ID_NEW_QUERY_WIZARD.#define.Text
-#, fuzzy
-msgid  "Query AutoPilot..."
-msgstr "Trợ lý truy vấn..."
-
-#: source/ui/inc/toolbox_tmpl.hrc#ID_NEW_QUERY_DESIGN.#define.Text
-#, fuzzy
-msgid  "New ~Query (Design View)"
-msgstr "Truy ~vấn mới (ô xem Thiết kế)"
-
-#: source/ui/inc/toolbox_tmpl.hrc#ID_EDIT_QUERY_DESIGN.#define.Text
-#, fuzzy
-msgid  "~Edit Query"
-msgstr "~Sửa truy vấn"
-
-#: source/ui/inc/toolbox_tmpl.hrc#ID_NEW_QUERY_SQL.#define.Text
-#, fuzzy
-msgid  "New Query (~SQL View)"
-msgstr "Truy vấn mới (ô xem ~SQL)"
-
-#: source/ui/inc/toolbox_tmpl.hrc#ID_QUERY_EDIT_JOINCONNECTION.#define.Text
-#, fuzzy
-msgid  "Edit..."
-msgstr "Sửa..."
-
-#: source/ui/inc/toolbox_tmpl.hrc#ID_BROWSER_COLWIDTH.#define.Text
-#, fuzzy
-msgid  "Column ~Width..."
-msgstr "Độ ~rộng cột..."
-
-#: source/ui/inc/toolbox_tmpl.hrc#ID_DOCUMENT_CREATE_REPWIZ.#define.Text
-#, fuzzy
-msgid  "Report Wizard..."
-msgstr "Trợ lý báo cáo..."
-
-#: source/ui/inc/toolbox_tmpl.hrc#SID_DB_FORM_NEW_PILOT.#define.Text
-#, fuzzy
-msgid  "Form AutoPilot..."
-msgstr "Trợ lý biểu mẫu..."

@@ -125,7 +125,7 @@ msgstr "කරුණාකර පහත බලපත් ගිවිසුම �
 
 #: src/Localization/setupstrings.ulf#STRING_ACCEPTLICENSE3
 msgid  "If you have read and accept all the terms of the entire Software License Agreement, click 'Accept License' to continue with the installation."
-msgstr ""
+msgstr "ඔබ බලපත් ගිවිසුමේ ඇති සියලු කරුණු කියවා හා එකග වී නම්, ස්ථාපනය ඉදිරියට කරගෙනයාම සඳහා \"බලපත්‍රය අනුමත කරන්න\" ක්ලික් කරන්න."
 
 #: src/Localization/setupstrings.ulf#STRING_CHOOSEDIRECTORY1
 msgid  "Select Installation Directory"
@@ -153,11 +153,11 @@ msgstr "නව ඩිරෙක්ටරියක් පිහිටුවන්�
 
 #: src/Localization/setupstrings.ulf#STRING_CHOOSEDIRECTORY5_QUESTION_MESSAGE
 msgid  "The directory '${DIR}' does not exist.\nDo you want to create it now?"
-msgstr ""
+msgstr "'${DIR}' ඩිරෙක්ටරිය නොපවතී.\nඔබට එය නිර්මාණය කිරීමට අවශ්‍යද?"
 
 #: src/Localization/setupstrings.ulf#STRING_CHOOSEDIRECTORY5_QUESTION_MESSAGE2
 msgid  "The directory '${DIR}' does not exist.\nDo you want to create it now or choose another directory?"
-msgstr ""
+msgstr "'${DIR}' ඩිරෙක්ටරිය නොපවතී.\nඔබට එය නිර්මාණය කිරීමට හෝ වෙනත් ඩිරෙක්ටරියක් තේරීමට අවශ්‍යද?"
 
 #: src/Localization/setupstrings.ulf#STRING_CHOOSEDIRECTORY6
 msgid  "Select root directory"
@@ -213,7 +213,7 @@ msgstr "ප්‍රධාන සංරචක ස්ථාපනය වනු �
 
 #: src/Localization/setupstrings.ulf#STRING_CHOOSEINSTALLATIONTYPE5
 msgid  "You choose the components you want to install and where they are stored. Recommended for advanced users."
-msgstr ""
+msgstr "ඔබ ඔබට ඇවැසි සංරචක හා ඒවා ස්ථාපනය කරන ස්ථානය තෝරයි. උසස් පරිශීලකයන්ට නිර්දේශිතයි"
 
 #: src/Localization/setupstrings.ulf#STRING_CHOOSEINSTALLATIONTYPE6
 msgid  "Typical"
@@ -253,7 +253,7 @@ msgstr "ආයුබෝවන්"
 
 #: src/Localization/setupstrings.ulf#STRING_PROLOGUE2
 msgid  "This Installation Wizard will install ${PRODUCT_FULLNAME} on your computer."
-msgstr ""
+msgstr "ස්ථාපන විශාරදය විසින් ${PRODUCT_FULLNAME} ඔබේ පරිගණකයේ ස්ථාපනය කරනු ඇත."
 
 #: src/Localization/setupstrings.ulf#STRING_PROLOGUE3
 msgid  "To continue, click 'Next'."
@@ -261,7 +261,7 @@ msgstr "ඉදිරියට යාමට, 'මීලඟ' ක්ලික් �
 
 #: src/Localization/setupstrings.ulf#STRING_PROLOGUE4
 msgid  "Note: This installation will be done without root privileges. Therefore you will have a reduced functionality (Java Runtime Environment (JRE) not installable, system integration not possible).\nClick 'Cancel' and change your privileges to root privileges, if you want to use the complete functionality."
-msgstr ""
+msgstr "වැදගත්: මෙම ස්ථාපනය පාලක බලතල නොමැතිව සිදිකෙරෙනු ඇත. එමනිසා ඔබට ක්‍රියාකාරකම් අඩු කිරීමට සිදුවේ (Java Runtime Environment (JRE) ස්ථාපනය නොවේ, පද්ධති එකාබද්ධවීම කල නොහැක).\nසම්පූර්ණ ක්‍රියාකාරීත්වය සඳහා 'වසන්න' ක්ලික් කිරීමෙන් ඔබේ බලතල පාලක බලතල කරා මාරු විය හැක. "
 
 #: src/Localization/setupstrings.ulf#STRING_INSTALLATIONCOMPLETED1
 msgid  "Installation Completed"
@@ -277,15 +277,15 @@ msgstr "ස්ථාපනය අසාර්ථකයි"
 
 #: src/Localization/setupstrings.ulf#STRING_INSTALLATIONCOMPLETED2
 msgid  "The Installation Wizard has successfully installed ${PRODUCT_FULLNAME} on your computer."
-msgstr ""
+msgstr "ස්ථාපන විශාරද විසින් ${PRODUCT_FULLNAME} ඔබේ පරිගණකයේ සාර්ථකව පිහිටුවා ඇත."
 
 #: src/Localization/setupstrings.ulf#STRING_INSTALLATIONCOMPLETED2_ABORT
 msgid  "The Installation Wizard was aborted. ${PRODUCT_NAME} is not installed on your computer."
-msgstr ""
+msgstr "ස්ථාපන විශාරද අවලංගු කෙරිනි. ${PRODUCT_NAME} ඔබේ පරිගණකයේ පිහිටුවා නොමැත."
 
 #: src/Localization/setupstrings.ulf#STRING_INSTALLATIONCOMPLETED2_ERROR
 msgid  "An error has occurred. Thus the Installation Wizard could not install ${PRODUCT_NAME} on your computer successfully. Click 'Details...' for more information."
-msgstr ""
+msgstr "වරදක් පැනනැගිනි. ස්ථාපන විශාරදයට ${PRODUCT_NAME} ඔබේ පරිගණකයේ සාර්ථකව පිහිටුවීමට නොහැකි විය. වැඩිවිස්තර සඳහා 'තොරතුරු...' ක්ලික් කරන්න."
 
 #: src/Localization/setupstrings.ulf#STRING_INSTALLATIONCOMPLETED3
 msgid  "Click 'Finish' to exit the Wizard."
@@ -297,15 +297,15 @@ msgstr "තොරතුරු..."
 
 #: src/Localization/setupstrings.ulf#STRING_UNINSTALLATIONPROLOGUE2
 msgid  "The ${PRODUCT_FULLNAME} Uninstallation Wizard will remove ${PRODUCT_FULLNAME} from your computer."
-msgstr ""
+msgstr "${PRODUCT_FULLNAME} හි අස්ථාපන විශාරදය විසින් ${PRODUCT_FULLNAME} ඔබේ පරිගණකයෙන් ඉවත් කරනු ඇත."
 
 #: src/Localization/setupstrings.ulf#STRING_UNINSTALLATION_PROLOGUE_WRONG_PRIVILEGES_CURRENT_ROOT
 msgid  "Sorry, wrong privileges. Installation was done with User privilges, but you have Root privileges."
-msgstr ""
+msgstr "සමාවන්න, වැරදි බලතල. ස්ථාපනය පරිශීලක බලතල යටතේ සිදුකල මුත්, ඔබට පාලක බලතල ඇත."
 
 #: src/Localization/setupstrings.ulf#STRING_UNINSTALLATION_PROLOGUE_WRONG_PRIVILEGES_CURRENT_USER
 msgid  "Sorry, wrong privileges. Installation was done with Root privilges, but you have User privileges."
-msgstr ""
+msgstr "සමාවන්න, වැරදි බලතල. ස්ථාපනය පාලක බලතල යටතේ සිදුකල මුත්, ඔබට ඇත්තේ පරිශීලක බලතලයි."
 
 #: src/Localization/setupstrings.ulf#STRING_CHOOSEUNINSTALLATIONTYPE1
 msgid  "Select the Type of Uninstallation"
@@ -321,7 +321,7 @@ msgstr "කොටස් වශයෙන්"
 
 #: src/Localization/setupstrings.ulf#STRING_CHOOSEUNINSTALLATIONTYPE4
 msgid  "Completely removes ${PRODUCT_FULLNAME} and all its components from your system."
-msgstr ""
+msgstr " ${PRODUCT_FULLNAME} හා එයට අදාල සියලු සංරචක සම්පූර්ණයෙන් ඉවත්වනු ඇත."
 
 #: src/Localization/setupstrings.ulf#STRING_CHOOSEUNINSTALLATIONTYPE5
 msgid  "You choose the program features you want to remove."
@@ -333,7 +333,7 @@ msgstr "සම්පූර්ණ"
 
 #: src/Localization/setupstrings.ulf#STRING_CHOOSEUNINSTALLATIONCOMPONENTS2
 msgid  "Components marked with an X will be removed. Mark the components you want to remove."
-msgstr ""
+msgstr "X සලකුණු කර ඇති සංරචක ඉවත්වනු ඇත, ඔබට ඉවත්කිරීමට අවශ්‍ය සංරචක ලකුණු කරන්න"
 
 #: src/Localization/setupstrings.ulf#STRING_UNINSTALLATIONIMMINENT1
 msgid  "Ready to Remove"
@@ -361,19 +361,19 @@ msgstr "අස්ථාපනය අසාර්ථකයි"
 
 #: src/Localization/setupstrings.ulf#STRING_UNINSTALLATIONCOMPLETED2
 msgid  "The Uninstallation Wizard has successfully removed ${PRODUCT_FULLNAME} from your computer."
-msgstr ""
+msgstr "අස්ථාපන විශාරද විසින් ${PRODUCT_FULLNAME} ඔබේ පරිගණකයෙන් සාර්ථකව ඉවත් කර .ඇත."
 
 #: src/Localization/setupstrings.ulf#STRING_UNINSTALLATIONCOMPLETED2_PARTIAL
 msgid  "The Uninstallation Wizard has successfully removed the selected components of ${PRODUCT_NAME} from your computer."
-msgstr ""
+msgstr "අස්ථාපන විශාරද විසින් ${PRODUCT_FULLNAME} හි තෝරාගත් සංරචක ඔබේ පරිගණකයෙන් සාර්ථකව ඉවත් කර .ඇත."
 
 #: src/Localization/setupstrings.ulf#STRING_UNINSTALLATIONCOMPLETED2_ABORT
 msgid  "The Uninstallation Wizard was aborted before completely removing ${PRODUCT_NAME} from your computer."
-msgstr ""
+msgstr "${PRODUCT_FULLNAME} ඔබේ පරිගණකයෙන් සම්පූර්ණයෙන් ඉවත් කිරීමට පෙර අස්ථාපන විශාරද අත්හිටුවිනි "
 
 #: src/Localization/setupstrings.ulf#STRING_UNINSTALLATIONCOMPLETED2_ERROR
 msgid  "An error has occurred. Thus the Uninstallation Wizard could not remove ${PRODUCT_NAME} from your computer successfully. Click 'Details...' for more information."
-msgstr ""
+msgstr "වරදක් පැනණැගිනි:  අස්ථාපන විශාරදයට ${PRODUCT_NAME} ඔබේ පරිගණකයෙන් සාර්ථකව ඉවත් කිරීමට නොහැකිවිය. වැඩි විස්තර සඳහා 'තොරතුරු...' ක්ලික් කරන්න."
 
 #: src/Localization/setupstrings.ulf#STRING_INSTALLERFACTORY_OS_NOT_SUPPORTED
 msgid  "Sorry, this Operating System is not supported yet."
@@ -385,7 +385,7 @@ msgstr "${PRODUCT_NAME} හි පැරණී සංස්කරණයක් �
 
 #: src/Localization/setupstrings.ulf#STRING_OLDER_VERSION_INSTALLED_REMOVE
 msgid  "You have to remove the older version of ${PRODUCT_NAME} before you can install the newer one."
-msgstr ""
+msgstr "නව සංස්කරණය ස්ථාපනයට ප්‍රථමයෙන් ${PRODUCT_NAME} හි පැරණි සංස්කරණය ඉවත් කිරීමට සිදුවේ"
 
 #: src/Localization/setupstrings.ulf#STRING_NEWER_VERSION_INSTALLED_FOUND
 msgid  "A newer version of ${PRODUCT_NAME} was found on your system in:"
@@ -393,7 +393,7 @@ msgstr "${PRODUCT_NAME} හි අලුත් සංස්කරණයක් �
 
 #: src/Localization/setupstrings.ulf#STRING_NEWER_VERSION_INSTALLED_REMOVE
 msgid  "You have to remove the newer version of ${PRODUCT_NAME} before you can install the older one."
-msgstr ""
+msgstr "පැරණි සංස්කරණය ස්ථාපනයට ප්‍රථමයෙන් ${PRODUCT_NAME} හි නව සංස්කරණය ඉවත් කිරීමට සිදුවේ"
 
 #: src/Localization/setupstrings.ulf#STRING_NEWER_VERSION_DATABASE
 msgid  "Database"
@@ -409,7 +409,7 @@ msgstr "ඔබ ඇතුලත් වී ඇති පරිශිලකයා�
 
 #: src/Localization/setupstrings.ulf#STRING_ROOT_PRIVILEGES_REQUIRED_2
 msgid  "Please log out and log back in as a user with system administrator rights."
-msgstr ""
+msgstr "කරුණාකර ගිණුමෙන් පිටවී නැවත පාලක බලතල සහිත පරිශිලකයකුගෙන් පිවිසෙන්න"
 
 #: src/Localization/setupstrings.ulf#STRING_DISCSPACE_INSUFFICIENT
 msgid  "Not enough discspace available for installation."
@@ -425,7 +425,7 @@ msgstr "දැනට තැටියේ ඇති ඉඩ"
 
 #: src/Localization/setupstrings.ulf#STRING_DISCSPACE_TIP
 msgid  "Please use another directory for installation or change your module selection."
-msgstr ""
+msgstr "කරුණාකර වෙනස් ඩිරෙක්ටරියක් තෝරන්න, නැතහොත් මොඩියුල තේරීම වෙනස් කරන්න."
 
 #: src/Localization/setupstrings.ulf#STRING_ANALYZING_DATABASE1
 msgid  "Analyzing ..."
@@ -433,11 +433,11 @@ msgstr "විශ්ලේෂණය කරමින් ..."
 
 #: src/Localization/setupstrings.ulf#STRING_ANALYZING_DATABASE2
 msgid  "Analyzing database\nPlease wait a moment ..."
-msgstr ""
+msgstr "දත්ත මූලය විශ්ලේෂණය කරමින්\nකරුණාකර මඳක් රැදීසිටින්න ..."
 
 #: src/Localization/setupstrings.ulf#STRING_PROLOGUE_1
 msgid  "Welcome to the Installation Wizard.<p>This wizard asks you to supply configuration settings.<p>At the bottom of each page are navigation buttons that let you move through the Installation Wizard:"
-msgstr ""
+msgstr "ස්ථාපන විශාරදය වෙත ආයුබෝවන්!.<p>මෙම විශාරදය ඔබෙන් සැකසුම් නිවේශනයට අසනු ඇත.<p>සෑම පිටුවක්ම අවසානයේ ඇති ගවේශන බොත්තම් මගින් ස්ථාපන විශාරදය තුල ගමන් කිරීමට ඉඩ ලැබේ:"
 
 #: src/Localization/setupstrings.ulf#STRING_PROLOGUE_2
 msgid  "'Back' returns you to the previous page."
@@ -453,7 +453,7 @@ msgstr "'වසන්න' ස්ථාපනයෙන් තොරව ස්ථ�
 
 #: src/Localization/setupstrings.ulf#STRING_PROLOGUE_5
 msgid  "'Help' displays the Help with further information about the page currently displayed."
-msgstr ""
+msgstr "'උදව්' දැනට පෙනෙන පිටුව පිළිබඳ වැඩිදුර තොරතුරු සමග සහාය පෙන්වයි."
 
 #: src/Localization/setupstrings.ulf#STRING_PROLOGUE_6
 msgid  "'OK' exits the Help page and returns you to the Installation Wizard."
@@ -461,7 +461,7 @@ msgstr "'හරි' ඔබව උදව් පිටුවෙන් ඉවත්
 
 #: src/Localization/setupstrings.ulf#STRING_UNINSTALLATIONPROLOGUE_1
 msgid  "Welcome to the Uninstallation Wizard.<p>This wizard asks you to supply configuration settings.<p>At the bottom of each page are navigation buttons that let you move through the Uninstallation Wizard:"
-msgstr ""
+msgstr "අස්ථාපන විශාරදය වෙත ආයුබෝවන්!.<p>මෙම විශාරදය ඔබෙන් සැකසුම් නිවේශනයට අසනු ඇත.<p>සෑම පිටුවක්ම අවසානයේ ඇති ගවේශන බොත්තම් මගින් අස්ථාපන විශාරදය තුල ගමන් කිරීමට ඉඩ ලැබේ:"
 
 #: src/Localization/setupstrings.ulf#STRING_UNINSTALLATIONPROLOGUE_2
 msgid  "'Back' returns you to the previous page."
@@ -477,7 +477,7 @@ msgstr "'වසන්න' අස්ථාපන විශාරදය මෙම 
 
 #: src/Localization/setupstrings.ulf#STRING_UNINSTALLATIONPROLOGUE_5
 msgid  "'Help' displays the Help with further information about the page currently displayed."
-msgstr ""
+msgstr "'උදව්' දැනට පෙනෙන පිටුව පිළිබඳ වැඩිදුර තොරතුරු සමග සහාය පෙන්වයි."
 
 #: src/Localization/setupstrings.ulf#STRING_UNINSTALLATIONPROLOGUE_6
 msgid  "'OK' exits the Help page and returns you to the Uninstallation Wizard."
@@ -485,55 +485,55 @@ msgstr "'හරි' උදව් පිටුවෙන් පිටවෙන අ
 
 #: src/Localization/setupstrings.ulf#STRING_ACCEPTLICENSE_1
 msgid  "Before you install this product, you must read and accept the entire Software License Agreement under which this software is licensed for your use."
-msgstr ""
+msgstr "මෙය ස්ථාපනයට පෙර, ඔබේ භාවිතය සඳහා මෙම මෘදුකාංගය ලියාපදිංචි කිරීමට බලපත් ගිවිසුමේ ඇති සියලු කරුණු කියවා එකග විය යුතුයි. "
 
 #: src/Localization/setupstrings.ulf#STRING_ACCEPTLICENSE_2
 msgid  "If you have read and accept all the terms of the entire Software License Agreement, click 'Accept License' to continue with the installation."
-msgstr ""
+msgstr "ඔබ බලපත් ගිවිසුමේ ඇති සියලු කරුණු කියවා හා එකග වී නම්, ස්ථාපනය ඉදිරියට කරගෙනයාම සඳහා \"බලපත්‍රය අනුමත කරන්න\" ක්ලික් කරන්න."
 
 #: src/Localization/setupstrings.ulf#STRING_ACCEPTLICENSE_3
 msgid  "If you do not accept all the terms of the Software License Agreement, click 'Decline' to end the Installation Wizard without installing this product."
-msgstr ""
+msgstr "ඔබ මෘදුකාංග බලපත් ගිවිසුමේ ඇති කරුණු සමග එකග නොවේනම් \"එපා\" ක්ලික් කිරීමෙන් මෘදුකාංගය ස්ථාපනය කිරීමෙන් තොරව ඉවත්විය හැකියි."
 
 #: src/Localization/setupstrings.ulf#STRING_CHOOSEINSTALLATIONTYPE_1
 msgid  "Select the type of product installation to perform from the following choices. This will determine how much information you need to provide for product configuration."
-msgstr ""
+msgstr "පහත විකල්ප තුලින් මෘදුකාංගය ස්ථාපනය වන ආකාරය තෝරන්න, එමගින් මෘදුකාංගයේ සැකසුම් සඳහා ඔබට කොතරම් තොරතුරු ප්‍රමාණයක් ලබාදෙන්නේ දැයි නිගමනය කෙරෙනු ඇත"
 
 #: src/Localization/setupstrings.ulf#STRING_CHOOSEDIRECTORY_1
 msgid  "It is recommended that you install this product in the directory suggested by this Installation Wizard. <p>To choose a different location, click 'Browse...' or specify the full path of the directory to use in the text box below. <p>If this product is already installed, you cannot change the destination directory."
-msgstr ""
+msgstr "මෙම මෘදුකාංගය ස්ථාපන විශාරදය විසින් යෝජිත ඩිරෙක්ටරියේ ස්ථාපනය කිරීම නිර්දේශිතයි. <p>වෙනත් ස්ථානයක් තේරීමට, 'ගවේෂණය...' ක්ලික් කරන්න හෝ ඩිරෙක්ටරියේ සම්පූර්ණ මග පහත කොටුවෙහි නිවේශනය කරන්න . <p>මෙම මෘදුකාංගය දැනටමත් ස්ථාපිත නම්, ඔබට ඩිරෙක්ටරිය වෙනස් කල නොහැක."
 
 #: src/Localization/setupstrings.ulf#STRING_CHOOSECOMPONENTS_1
 msgid  "Components marked in color will be installed. Click the icon of a component to mark or unmark the component.<p>All already installed components cannot be selected for installation."
-msgstr ""
+msgstr "වර්ණයෙන් සලකුණූ වූ සංරචක ස්ථාපනය වනු ඇත. සංරචකය සලකුණු කිරීමට හෝ නොකිරීමට එහි අයිකනය ක්ලික් කරන්න.<p>දැනට ස්ථාපිත සංරචක ස්ථාපනය සඳහා තේරීමට නොහැක."
 
 #: src/Localization/setupstrings.ulf#STRING_INSTALLATIONIMMINENT_1
 msgid  "The listed components are ready for installation based on your configuration settings. <p>If you are satisfied with your selection, click 'Install Now' to begin. <p>To check or modify your settings on the previous pages, click 'Back'."
-msgstr ""
+msgstr "ඔබේ සැකසුම් මත ලැයිස්තුගත සංරචක ස්ථාපනය සඳහා සූදානම්ව ඇත <p>ඔබ සැකසුම් පිලිබඳ සෑහීමකට පත්වේ නම්, 'දැන්ම ස්ථාපනය කරන්න' ක්ලික් කරන්න. <p>කලින් පිටුවල සැකසුම් නැවත පරීක්ශා කිරීමට හෝ වෙනස් කිරීමට 'ආපසු' ක්ලික් කරන්න "
 
 #: src/Localization/setupstrings.ulf#STRING_UNINSTALLATIONIMMINENT_1
 msgid  "The listed components are ready for uninstallation based on your configuration settings. <p>If you are satisfied with your selection, click 'Remove Now' to begin. <p>To check or modify your settings on the previous pages, click 'Back'."
-msgstr ""
+msgstr "ලැයිස්තුගත සංරචකයන් ඔබගේ තෝරාගැනීම මත පදනම් වී ඇත .<p>ඔබගේ තෝරාගැනීම පිළිඹඳව සෑහීමකට පත්වේනම් , ඉදිරියට යෑම සඳහා \"දැන් ඉවත් කරන්න\" හෝ <p>ඔබගේ පෙර තෝරා ගැනීම් වෙනස් කිරීමට \"ආපසු\" ක්ලික් කරන්න."
 
 #: src/Localization/setupstrings.ulf#STRING_INSTALLATIONONGOING_1
 msgid  "This page indicates the progress of the installation with the aid of a progress bar. To abort the installation process, click 'Stop'."
-msgstr ""
+msgstr "මෙම පිටුව ප්‍රගති තීරුව ආධාරයෙන් ප්‍රගතිය පෙන්වයි. ස්ථාපන ක්‍රියාවලියෙන් ඉවත් වීමට 'නවතන්න' ක්ලික් කරන්න."
 
 #: src/Localization/setupstrings.ulf#STRING_UNINSTALLATIONONGOING_1
 msgid  "This page indicates the progress of the uninstallation with the aid of a progress bar. To abort the uninstallation, click 'Stop'."
-msgstr ""
+msgstr "මෙම පිටුව ප්‍රගති සටහනක් ආධාරයෙන් අස්ථාපනයේ ප්‍රගතිය පෙන්වයි. අස්ථාපන ක්‍රියාවලියෙන් ඉවත්වීමට, 'නවතන්න' ක්ලික් කරන්න "
 
 #: src/Localization/setupstrings.ulf#STRING_CHOOSEUNINSTALLATIONTYPE_1
 msgid  "Complete: This will remove all installed components of your version.<p>Partial: This removes only the components you will choose out of the components list."
-msgstr ""
+msgstr "සම්පූර්ණ: මෙය ඔබේ වත්මන් ස්ථාපිත සංස්කරණයේ සියලු සංරචක ඉවත් කරනු ඇත.<p>කොටස් වශයෙන්: මෙය සංරචක ලැයිස්තුවෙන් ඔබට ඇවැසි සංරචක පමණක් තෝරා ඉවත් කිරීමට ඉඩ දෙයි."
 
 #: src/Localization/setupstrings.ulf#STRING_CHOOSEUNINSTALLATIONCOMPONENTS_1
 msgid  "Components marked with an X will be removed. Click next to a component to mark or unmark it with an X."
-msgstr ""
+msgstr "X සලකුණු කර ඇති සංරචක ඉවත්වනු ඇත. සංරචක X ලකුණු කිරීම්ට හෝ සලකුණ ඉවත් කිරීමට 'ඉදිරියට' ක්ලික් කරන්න. "
 
 #: src/Localization/setupstrings.ulf#STRING_PACKAGEFORMAT_NOT_SUPPORTED
 msgid  "This package format is currently not supported for your operating system!"
-msgstr ""
+msgstr "මෙම පැකේජ ආකෘතිය දැනට ඔබේ මෙහෙයුම් පද්ධතියෙන් සහාය නොදක්වයි!"
 
 #: src/Localization/setupstrings.ulf#STRING_OPERATING_SYSTEM
 msgid  "Operating system"
@@ -553,7 +553,7 @@ msgstr "කිසිඳු යෙදවුමක් ස්ථාපනය සඳ
 
 #: src/Localization/setupstrings.ulf#STRING_NO_COMPONENTS_SELECTED_2
 msgid  "Click 'OK' to select one or more components for installation or to exit the Installation Wizard."
-msgstr ""
+msgstr "යෙදවුම් එකක් හෝ කිහිපයක් තේරීමට හෝ ස්ථාපන විශාරදයෙන් ඉවත්වීමට 'හරි' ක්ලික් කරන්න."
 
 #: src/Localization/setupstrings.ulf#STRING_NO_LANGUAGE_SELECTED_1
 msgid  "No languages have been selected for installation."
@@ -561,7 +561,7 @@ msgstr "කිසිඳූ භාෂාවක් ස්ථාපනය සඳහ
 
 #: src/Localization/setupstrings.ulf#STRING_NO_LANGUAGE_SELECTED_2
 msgid  "Click 'OK' to select one or more languages for installation or to exit the Installation Wizard."
-msgstr ""
+msgstr "භෂාවන් එකක් හෝ කිහිපයක් ස්ථාපනය සඳහා තේරීමට හෝ ස්ථාපන විශාරදයෙන් ඉවත්වීමට 'හරි' ක්ලික් කරන්න."
 
 #: src/Localization/setupstrings.ulf#STRING_NO_APPLICATION_SELECTED_1
 msgid  "No applications have been selected for installation."
@@ -569,7 +569,7 @@ msgstr "කිසිඳු යෙදවුමක් ස්ථාපනය සඳ
 
 #: src/Localization/setupstrings.ulf#STRING_NO_APPLICATION_SELECTED_2
 msgid  "Click 'OK' to select one or more application for installation or to exit the Installation Wizard."
-msgstr ""
+msgstr "යෙදවුම් එකක් හෝ කිහිපයක් තේරීමට හෝ ස්ථාපන විශාරදයෙන් ඉවත්වීමට 'හරි' ක්ලික් කරන්න."
 
 #: src/Localization/setupstrings.ulf#STRING_NOTHING_TO_UNINSTALL
 msgid  "Nothing to uninstall"
@@ -581,7 +581,7 @@ msgstr "කිසිඳු යෙදවුමක් අස්ථාපනය ස
 
 #: src/Localization/setupstrings.ulf#STRING_NO_UNINSTALLCOMPONENTS_SELECTED_2
 msgid  "Click 'OK' to select one or more components for uninstallation or to exit the Uninstallation Wizard."
-msgstr ""
+msgstr "සංරචක එකක් හෝ කිහිපයක් අස්ථාපනය සඳහා තේරීමට හෝ අස්ථාපන විශාරදයෙන් ඉවත්වීමට 'හරි' ක්ලික් කරන්න"
 
 #: src/Localization/setupstrings.ulf#STRING_ALL_LANGUAGECOMPONENTS_SELECTED_1
 msgid  "All language components have been selected for uninstallation."
@@ -589,7 +589,7 @@ msgstr "සියලුම භාශා යෙදවුම් සංරචක �
 
 #: src/Localization/setupstrings.ulf#STRING_ALL_LANGUAGECOMPONENTS_SELECTED_2
 msgid  "Click 'OK' to select one or more language components not for uninstallation or to exit the Uninstallation Wizard."
-msgstr ""
+msgstr "භාශා යෙදවුම් සංරචක එකක් හෝ කිහිපයක් අස්ථාපනය නොකිරීමට හෝ අස්ථාපන විශාරදයෙන පිටනොවීම සඳහා තේරීම්ට \"හරි\" ක්ලික් කරන්න."
 
 #: src/Localization/setupstrings.ulf#STRING_ALL_APPLICATIONCOMPONENTS_SELECTED_1
 msgid  "All application components have been selected for uninstallation."
@@ -597,7 +597,7 @@ msgstr "සියලුම යෙදවුම් සංරචක අස්ථා
 
 #: src/Localization/setupstrings.ulf#STRING_ALL_APPLICATIONCOMPONENTS_SELECTED_2
 msgid  "Click 'OK' to select one or more application components not for uninstallation or to exit the Uninstallation Wizard."
-msgstr ""
+msgstr "යෙදවුම් සංරචක එකක් හෝ කිහිපයක් අස්ථාපනය නොකිරීමට හෝ අස්ථාපන විශාරදයෙන පිටනොවීම සඳහා තේරීම්ට \"හරි\" ක්ලික් කරන්න."
 
 #: src/Localization/setupstrings.ulf#STRING_CHANGE_SELECTION
 msgid  "Please change selection"

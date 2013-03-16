@@ -32,7 +32,7 @@ msgstr ""
 
 
 #: source/app/desktop.src#STR_RECOVER_QUERY.String.Text
-msgid  "Should the file "$1" be restored?"
+msgid  "Should the file \"$1\" be restored?"
 msgstr ""
 
 #: source/app/desktop.src#STR_RECOVER_TITLE.String.Text
@@ -48,7 +48,7 @@ msgid  "The application cannot be started. "
 msgstr ""
 
 #: source/app/desktop.src#STR_BOOTSTRAP_ERR_DIR_MISSING.String.Text
-msgid  "The configuration directory "$1" could not be found."
+msgid  "The configuration directory \"$1\" could not be found."
 msgstr ""
 
 #: source/app/desktop.src#STR_BOOTSTRAP_ERR_PATH_INVALID.String.Text
@@ -64,15 +64,15 @@ msgid  "An internal error occurred."
 msgstr " Kunahere firka tee."
 
 #: source/app/desktop.src#STR_BOOTSTRAP_ERR_FILE_CORRUPT.String.Text
-msgid  "The configuration file "$1" is corrupt."
+msgid  "The configuration file \"$1\" is corrupt."
 msgstr ""
 
 #: source/app/desktop.src#STR_BOOTSTRAP_ERR_FILE_MISSING.String.Text
-msgid  "The configuration file "$1" was not found."
+msgid  "The configuration file \"$1\" was not found."
 msgstr ""
 
 #: source/app/desktop.src#STR_BOOTSTRAP_ERR_NO_SUPPORT.String.Text
-msgid  "The configuration file "$1" does not support the current version."
+msgid  "The configuration file \"$1\" does not support the current version."
 msgstr ""
 
 #: source/app/desktop.src#STR_BOOTSTRAP_ERR_LANGUAGE_MISSING.String.Text
@@ -640,7 +640,6 @@ msgid  "Configuration Data"
 msgstr ""
 
 #: source/deployment/registry/help/dp_help.src#RID_STR_HELP.String.Text
-#, fuzzy
 msgid  "Help"
 msgstr "Faaba"
 
@@ -653,7 +652,6 @@ msgid  "The extension will not be installed because an error occurred in the Hel
 msgstr ""
 
 #: source/deployment/registry/package/dp_package.src#RID_STR_PACKAGE_BUNDLE.String.Text
-#, fuzzy
 msgid  "Extension"
 msgstr "Dobuyan tammaasa"
 
@@ -682,15 +680,15 @@ msgid  "Extension Software License Agreement of $NAME:"
 msgstr ""
 
 #: source/deployment/unopkg/unopkg.src#RID_STR_UNOPKG_ACCEPT_LIC_2.String.Text
-msgid  "Read the complete License Agreement displayed above. Accept the License Agreement by typing "yes" on the console then press the Return key. Type "no" to decline and to abort the extension setup."
+msgid  "Read the complete License Agreement displayed above. Accept the License Agreement by typing \"yes\" on the console then press the Return key. Type \"no\" to decline and to abort the extension setup."
 msgstr ""
 
 #: source/deployment/unopkg/unopkg.src#RID_STR_UNOPKG_ACCEPT_LIC_3.String.Text
-msgid  "[Enter "yes" or "no"]:"
+msgid  "[Enter \"yes\" or \"no\"]:"
 msgstr ""
 
 #: source/deployment/unopkg/unopkg.src#RID_STR_UNOPKG_ACCEPT_LIC_4.String.Text
-msgid  "Your input was not correct. Please enter "yes" or "no":"
+msgid  "Your input was not correct. Please enter \"yes\" or \"no\":"
 msgstr ""
 
 #: source/deployment/unopkg/unopkg.src#RID_STR_UNOPKG_ACCEPT_LIC_YES.String.Text
@@ -897,6 +895,10 @@ msgstr ""
 msgid  "Cannot find Office installation."
 msgstr ""
 
+#: win32/source/setup/setup.ulf#%APP_TITLE%
+msgid  "Setup"
+msgstr ""
+
 #: win32/source/setup/setup.ulf#%APP_PROD_TITLE%
 msgid  "The %PRODUCTNAME Setup"
 msgstr ""
@@ -970,7 +972,6 @@ msgid  "German (Germany)"
 msgstr ""
 
 #: win32/source/setup/setup.ulf#%LANGUAGE_EL%
-#, fuzzy
 msgid  "Greek"
 msgstr " Grek"
 
@@ -991,7 +992,6 @@ msgid  "French (France)"
 msgstr ""
 
 #: win32/source/setup/setup.ulf#%LANGUAGE_HE%
-#, fuzzy
 msgid  "Hebrew"
 msgstr " Ebere"
 
@@ -1004,12 +1004,10 @@ msgid  "Italian (Italy)"
 msgstr ""
 
 #: win32/source/setup/setup.ulf#%LANGUAGE_JA%
-#, fuzzy
 msgid  "Japanese"
 msgstr " Japonee"
 
 #: win32/source/setup/setup.ulf#%LANGUAGE_KO%
-#, fuzzy
 msgid  "Korean"
 msgstr " Koree senni"
 
@@ -1042,12 +1040,10 @@ msgid  "Swedish (Sweden)"
 msgstr ""
 
 #: win32/source/setup/setup.ulf#%LANGUAGE_TH%
-#, fuzzy
 msgid  "Thai"
 msgstr "Tay"
 
 #: win32/source/setup/setup.ulf#%LANGUAGE_TR%
-#, fuzzy
 msgid  "Turkish"
 msgstr " Turk senni"
 
@@ -1061,8 +1057,4 @@ msgstr ""
 
 #: win32/source/setup/setup.ulf#%LANGUAGE_PT_PT%
 msgid  "Portuguese (Portugal)"
-msgstr ""
-
-#: win32/source/setup/setup.ulf#%APP_TITLE%
-msgid  "Setup"
 msgstr ""

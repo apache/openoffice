@@ -317,19 +317,19 @@ msgstr "To je pisava tiskalnika. Njen videz na zaslonu je lahko drugačen."
 
 #: source/control/ctrltool.src#STR_SVT_FONTMAP_SCREENONLY.String.Text
 msgid  "This is a screen font. The printer image may differ."
-msgstr ""
+msgstr "To je zaslonska pisava. Njen videz na izpisu tiskalnika je lahko drugačen."
 
 #: source/control/ctrltool.src#STR_SVT_FONTMAP_SIZENOTAVAILABLE.String.Text
 msgid  "This font size has not been installed. The closest available size will be used."
-msgstr ""
+msgstr "Ta velikost pisave ni nameščena. Uporabljena bo najbližja velikost, ki je na voljo."
 
 #: source/control/ctrltool.src#STR_SVT_FONTMAP_STYLENOTAVAILABLE.String.Text
 msgid  "This font style will be simulated or the closest matching style will be used."
-msgstr ""
+msgstr "Ta slog pisave bo simuliran ali pa bo uporabljen najbolj soroden slog."
 
 #: source/control/ctrltool.src#STR_SVT_FONTMAP_NOTAVAILABLE.String.Text
 msgid  "This font has not been installed. The closest available font will be used."
-msgstr ""
+msgstr "Ta pisava ni nameščena. Uporabljena bo najbolj podobna pisava, ki je na voljo."
 
 #: source/control/ctrlbox.src#STR_SVT_AUTOMATIC_COLOR.String.Text
 msgid  "Automatic"
@@ -601,7 +601,7 @@ msgstr "Mape ni mogoče odpreti"
 
 #: source/dialogs/filedlg2.src#STR_FILEDLG_OVERWRITE.String.Text
 msgid  "This file already exists. \nOverwrite ?"
-msgstr ""
+msgstr "Datoteka že obstaja.\nJo želite prepisati?"
 
 #: source/dialogs/filedlg2.src#STR_FILEDLG_GOUP.String.Text
 msgid  "Up One Level"
@@ -985,35 +985,35 @@ msgstr "Grafični predmet"
 
 #: source/dialogs/formats.src#STR_FORMAT_ID_STARWRITER_60.String.Text
 msgid  "%PRODUCTXMLFILEFORMATNAME %PRODUCTXMLFILEFORMATVERSION Writer object"
-msgstr ""
+msgstr "Predmet programa %PRODUCTXMLFILEFORMATNAME %PRODUCTXMLFILEFORMATVERSION Writer"
 
 #: source/dialogs/formats.src#STR_FORMAT_ID_STARWRITERWEB_60.String.Text
 msgid  "%PRODUCTXMLFILEFORMATNAME %PRODUCTXMLFILEFORMATVERSION Writer/Web object"
-msgstr ""
+msgstr "Predmet programa %PRODUCTXMLFILEFORMATNAME %PRODUCTXMLFILEFORMATVERSION Writer/Web"
 
 #: source/dialogs/formats.src#STR_FORMAT_ID_STARWRITERGLOB_60.String.Text
 msgid  "%PRODUCTXMLFILEFORMATNAME %PRODUCTXMLFILEFORMATVERSION Writer/Master object"
-msgstr ""
+msgstr "Predmet programa %PRODUCTXMLFILEFORMATNAME %PRODUCTXMLFILEFORMATVERSION Writer/Master"
 
 #: source/dialogs/formats.src#STR_FORMAT_ID_STARDRAW_60.String.Text
 msgid  "%PRODUCTXMLFILEFORMATNAME %PRODUCTXMLFILEFORMATVERSION Draw object"
-msgstr ""
+msgstr "Predmet programa %PRODUCTXMLFILEFORMATNAME %PRODUCTXMLFILEFORMATVERSION Draw"
 
 #: source/dialogs/formats.src#STR_FORMAT_ID_STARIMPRESS_60.String.Text
 msgid  "%PRODUCTXMLFILEFORMATNAME %PRODUCTXMLFILEFORMATVERSION Impress object"
-msgstr ""
+msgstr "Predmet programa %PRODUCTXMLFILEFORMATNAME %PRODUCTXMLFILEFORMATVERSION Impress"
 
 #: source/dialogs/formats.src#STR_FORMAT_ID_STARCALC_60.String.Text
 msgid  "%PRODUCTXMLFILEFORMATNAME %PRODUCTXMLFILEFORMATVERSION Calc object"
-msgstr ""
+msgstr "Predmet programa %PRODUCTXMLFILEFORMATNAME %PRODUCTXMLFILEFORMATVERSION Calc"
 
 #: source/dialogs/formats.src#STR_FORMAT_ID_STARCHART_60.String.Text
 msgid  "%PRODUCTXMLFILEFORMATNAME %PRODUCTXMLFILEFORMATVERSION Chart object"
-msgstr ""
+msgstr "Predmet programa %PRODUCTXMLFILEFORMATNAME %PRODUCTXMLFILEFORMATVERSION Chart"
 
 #: source/dialogs/formats.src#STR_FORMAT_ID_STARMATH_60.String.Text
 msgid  "%PRODUCTXMLFILEFORMATNAME %PRODUCTXMLFILEFORMATVERSION Math object"
-msgstr ""
+msgstr "Predmet programa %PRODUCTXMLFILEFORMATNAME %PRODUCTXMLFILEFORMATVERSION Math"
 
 #: source/dialogs/formats.src#STR_FORMAT_ID_WMF.String.Text
 msgid  "Windows metafile"
@@ -1033,7 +1033,7 @@ msgstr "Poizvedba SQL"
 
 #: source/dialogs/formats.src#STR_FORMAT_ID_DIALOG_60.String.Text
 msgid  "%PRODUCTXMLFILEFORMATNAME %PRODUCTXMLFILEFORMATVERSION dialog"
-msgstr ""
+msgstr "Pogovorno okno programa %PRODUCTXMLFILEFORMATNAME %PRODUCTXMLFILEFORMATVERSION"
 
 #: source/dialogs/formats.src#STR_FORMAT_ID_FILEGRPDESCRIPTOR.String.Text
 msgid  "Link"
@@ -1097,7 +1097,7 @@ msgstr "Povezave OLE z omrežno napravo (strežnikom) ni mogoče vzpostaviti."
 
 #: source/dialogs/so3res.src#RID_SO_ERROR_HANDLER.ERRCODE_SO_MK_INTERMEDIATE_INTERFACE_NOT_SUPPORTED&S_MAX.String.Text
 msgid  "The object found does not support the interface required for the desired operation."
-msgstr ""
+msgstr "Najdeni predmet ne podpira vmesnika, ki je potreben za želeno operacijo."
 
 #: source/dialogs/so3res.src#RID_SO_ERROR_HANDLER.ERRCODE_SO_NO_INTERFACE&S_MAX.String.Text
 msgid  "Interface not supported."
@@ -1129,7 +1129,7 @@ msgstr "Ime povezave je vsebovano v drugem imenu."
 
 #: source/dialogs/so3res.src#RID_SO_ERROR_HANDLER.ERRCODE_SO_MK_US&S_MAX.String.Text
 msgid  "The connection names (the receiver and the other moniker) are identical."
-msgstr ""
+msgstr "Imeni povezav (prejemnik in drugi vzdevek) sta identični."
 
 #: source/dialogs/so3res.src#RID_SO_ERROR_HANDLER.ERRCODE_SO_MK_ME&S_MAX.String.Text
 msgid  "The connection name is contained in the other one."
@@ -1209,15 +1209,15 @@ msgstr "Vstavi nov %1-predmet v dokument kot simbol."
 
 #: source/dialogs/so3res.src#STR_INS_FILE.String.Text
 msgid  "Inserts the contents of the file into your document to enable later editing in the original application."
-msgstr ""
+msgstr "Vstavi v dokument vsebino datoteke in s tem omogoči kasnejše urejanje v izvirni aplikaciji."
 
 #: source/dialogs/so3res.src#STR_INS_PLUGIN.String.Text
 msgid  "Inserts a plug-in object into your document with a reference to the plug-in data. When the object is activated, the plug-in is automatically executed."
-msgstr ""
+msgstr "Vstavi predmet vtičnika v dokument s sklicevanjem na podatke o vtičniku. Ko se predmet aktivira, se vtičnik samodejno izvrši."
 
 #: source/dialogs/so3res.src#STR_INS_APPLET.String.Text
 msgid  "Inserts an applet object into your document. When the object is activated, the applet is automatically executed."
-msgstr ""
+msgstr "Vstavi predmet programčka v dokument. Ko se predmet aktivira, se programček samodejno izvrši."
 
 #: source/dialogs/so3res.src#STR_INS_FILE_ICON.String.Text
 msgid  "Inserts the contents of the file as an icon into your document."
@@ -1225,11 +1225,11 @@ msgstr "Vstavi v dokument vsebino datoteke kot ikono."
 
 #: source/dialogs/so3res.src#STR_INS_FILE_LINK.String.Text
 msgid  "Inserts the contents of the file into your document and creates a link to the source file. Changes made to the source file will be reflected in your document."
-msgstr ""
+msgstr "V dokument vstavi vsebino datoteke in ustvari povezavo z izvorno datoteko. Spremembe v izvorni datoteki se bodo odražale v dokumentu."
 
 #: source/dialogs/so3res.src#STR_INS_FILE_ICON_LINK.String.Text
 msgid  "Inserts an icon into your document representing the file. Changes made to the source file will be reflected in your document."
-msgstr ""
+msgstr "V dokument vstavi ikono, ki predstavlja datoteko. Spremembe v izvorni datoteki se bodo odražale v tem dokumentu."
 
 #: source/dialogs/so3res.src#STR_PASTE.String.Text
 msgid  "Pastes the contents of the clipboard as %1 in your document."
@@ -1505,7 +1505,7 @@ msgstr "Slika zahteva približno %1 kB pomnilnika."
 
 #: source/filter/exportdialog.src#DLG_EXPORT.STR_ESTIMATED_SIZE_PIX_2.String.Text
 msgid  "The picture needs about %1 KB of memory,\n the file size is %2 KB."
-msgstr ""
+msgstr "Slika zahteva približno %1 kB pomnilnika,\n velikost datoteke je %2 kB."
 
 #: source/filter/exportdialog.src#DLG_EXPORT.STR_ESTIMATED_SIZE_VEC.String.Text
 msgid  "The file size is %1 KB."
@@ -1513,23 +1513,23 @@ msgstr "Velikost datoteke je %1 kB."
 
 #: source/java/javaerror.src#WARNINGBOX_JAVANOTFOUND.WarningBox.Message
 msgid  "%PRODUCTNAME requires a Java runtime environment (JRE) to perform this task. Please install a JRE and restart %PRODUCTNAME."
-msgstr ""
+msgstr "Za to opravilo potrebuje %PRODUCTNAME javansko zaganjalno okolje (JRE). Prosimo, namestite JRE in ponovno zaženite %PRODUCTNAME."
 
 #: source/java/javaerror.src#WARNINGBOX_INVALIDJAVASETTINGS.WarningBox.Message
 msgid  "The %PRODUCTNAME configuration has been changed. Under Tools - Options - %PRODUCTNAME - Java, select the Java runtime environment you want to have used by %PRODUCTNAME."
-msgstr ""
+msgstr "Nastavitev %PRODUCTNAME je bila spremenjena. Pod Orodja - Možnosti - %PRODUCTNAME - Java izberite javansko zaganjalno okolje, ki ga želite uporabljati z %PRODUCTNAME."
 
 #: source/java/javaerror.src#QBX_JAVADISABLED.QueryBox.Message
 msgid  "%PRODUCTNAME requires a Java runtime environment (JRE) to perform this task. However, use of a JRE has been disabled. Do you want to enable the use of a JRE now?"
-msgstr ""
+msgstr "Za to opravilo potrebuje %PRODUCTNAME javansko zaganjalno okolje (JRE). Uporaba JRE pa je bila onemogočena. Želite omogočiti uporabo JRE zdaj?"
 
 #: source/java/javaerror.src#ERRORBOX_JVMCREATIONFAILED.ErrorBox.Message
 msgid  "%PRODUCTNAME requires a Java runtime environment (JRE) to perform this task. The selected JRE is defective. Please select another version or install a new JRE and select  it under Tools - Options - %PRODUCTNAME - Java."
-msgstr ""
+msgstr "Za to opravilo potrebuje %PRODUCTNAME javansko zaganjalno okolje (JRE). Izbrani JRE ni uporaben. Prosimo, izberite drugo različico ali namestite nov JRE in ga izberite pod Orodja - Možnosti - %PRODUCTNAME - Java."
 
 #: source/java/javaerror.src#ERRORBOX_RESTARTREQUIRED.ErrorBox.Message
 msgid  "For the selected Java runtime environment to work properly, %PRODUCTNAME must be restarted. Please restart %PRODUCTNAME now."
-msgstr ""
+msgstr "Izbrano javansko okolje JRE bo delovalo pravilno, če ponovno zaženete %PRODUCTNAME. Prosimo, ponovno zaženite %PRODUCTNAME zdaj."
 
 #: source/java/javaerror.src#STR_WARNING_JAVANOTFOUND.String.Text
 msgid  "JRE Required"
@@ -1688,19 +1688,19 @@ msgid  "Database"
 msgstr "Zbirka podatkov"
 
 #: source/misc/imagemgr.src#STR_DESCRIPTION_CALC_TEMPLATE.String.Text
-msgid  "%PRODUCTNAME %PRODUCTXMLFILEFORMATVERSION Spreadsheet Template"
-msgstr "Predloga preglednice %PRODUCTNAME %PRODUCTXMLFILEFORMATVERSION"
+msgid  "%PRODUCTXMLFILEFORMATNAME %PRODUCTXMLFILEFORMATVERSION Spreadsheet Template"
+msgstr ""
 
 #: source/misc/imagemgr.src#STR_DESCRIPTION_DRAW_TEMPLATE.String.Text
-msgid  "%PRODUCTNAME %PRODUCTXMLFILEFORMATVERSION Drawing Template"
-msgstr "Predloga risbe %PRODUCTNAME %PRODUCTXMLFILEFORMATVERSION"
+msgid  "%PRODUCTXMLFILEFORMATNAME %PRODUCTXMLFILEFORMATVERSION Drawing Template"
+msgstr ""
 
 #: source/misc/imagemgr.src#STR_DESCRIPTION_IMPRESS_TEMPLATE.String.Text
-msgid  "%PRODUCTNAME %PRODUCTXMLFILEFORMATVERSION Presentation Template"
-msgstr "Predloga predstavitve %PRODUCTNAME %PRODUCTXMLFILEFORMATVERSION"
+msgid  "%PRODUCTXMLFILEFORMATNAME %PRODUCTXMLFILEFORMATVERSION Presentation Template"
+msgstr ""
 
 #: source/misc/imagemgr.src#STR_DESCRIPTION_WRITER_TEMPLATE.String.Text
-msgid  "%PRODUCTNAME %PRODUCTXMLFILEFORMATVERSION Text Document Template"
+msgid  "%PRODUCTXMLFILEFORMATNAME %PRODUCTXMLFILEFORMATVERSION Text Document Template"
 msgstr ""
 
 #: source/misc/imagemgr.src#STR_DESCRIPTION_LOCALE_VOLUME.String.Text
@@ -1732,32 +1732,32 @@ msgid  "MS PowerPoint Show"
 msgstr "Predstavitev programa MS PowerPoint"
 
 #: source/misc/imagemgr.src#STR_DESCRIPTION_SXMATH_DOC.String.Text
-msgid  "%PRODUCTNAME %PRODUCTXMLFILEFORMATVERSION Formula"
-msgstr "Formula programa %PRODUCTNAME %PRODUCTXMLFILEFORMATVERSION"
+msgid  "%PRODUCTXMLFILEFORMATNAME %PRODUCTXMLFILEFORMATVERSION Formula"
+msgstr ""
 
 #: source/misc/imagemgr.src#STR_DESCRIPTION_SXCHART_DOC.String.Text
-msgid  "%PRODUCTNAME %PRODUCTXMLFILEFORMATVERSION Chart"
-msgstr "Grafikon programa %PRODUCTNAME %PRODUCTXMLFILEFORMATVERSION"
+msgid  "%PRODUCTXMLFILEFORMATNAME %PRODUCTXMLFILEFORMATVERSION Chart"
+msgstr ""
 
 #: source/misc/imagemgr.src#STR_DESCRIPTION_SXDRAW_DOC.String.Text
-msgid  "%PRODUCTNAME %PRODUCTXMLFILEFORMATVERSION Drawing"
-msgstr "Risba programa %PRODUCTNAME %PRODUCTXMLFILEFORMATVERSION"
+msgid  "%PRODUCTXMLFILEFORMATNAME %PRODUCTXMLFILEFORMATVERSION Drawing"
+msgstr ""
 
 #: source/misc/imagemgr.src#STR_DESCRIPTION_SXCALC_DOC.String.Text
-msgid  "%PRODUCTNAME %PRODUCTXMLFILEFORMATVERSION Spreadsheet"
-msgstr "Preglednica programa %PRODUCTNAME %PRODUCTXMLFILEFORMATVERSION"
+msgid  "%PRODUCTXMLFILEFORMATNAME %PRODUCTXMLFILEFORMATVERSION Spreadsheet"
+msgstr ""
 
 #: source/misc/imagemgr.src#STR_DESCRIPTION_SXIMPRESS_DOC.String.Text
-msgid  "%PRODUCTNAME %PRODUCTXMLFILEFORMATVERSION Presentation"
-msgstr "Predstavitev programa %PRODUCTNAME %PRODUCTXMLFILEFORMATVERSION"
+msgid  "%PRODUCTXMLFILEFORMATNAME %PRODUCTXMLFILEFORMATVERSION Presentation"
+msgstr ""
 
 #: source/misc/imagemgr.src#STR_DESCRIPTION_SXWRITER_DOC.String.Text
-msgid  "%PRODUCTNAME %PRODUCTXMLFILEFORMATVERSION Text Document"
-msgstr "Dokument z besedilom %PRODUCTNAME %PRODUCTXMLFILEFORMATVERSION"
+msgid  "%PRODUCTXMLFILEFORMATNAME %PRODUCTXMLFILEFORMATVERSION Text Document"
+msgstr ""
 
 #: source/misc/imagemgr.src#STR_DESCRIPTION_SXGLOBAL_DOC.String.Text
-msgid  "%PRODUCTNAME %PRODUCTXMLFILEFORMATVERSION Master Document"
-msgstr "Glavni dokument %PRODUCTNAME %PRODUCTXMLFILEFORMATVERSION"
+msgid  "%PRODUCTXMLFILEFORMATNAME %PRODUCTXMLFILEFORMATVERSION Master Document"
+msgstr ""
 
 #: source/misc/imagemgr.src#STR_DESCRIPTION_MATHML_DOC.String.Text
 msgid  "MathML Document"

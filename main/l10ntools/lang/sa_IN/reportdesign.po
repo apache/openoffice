@@ -65,7 +65,7 @@ msgstr " '#1' नाम पूर्वमेव विद्यते तथा
 
 #: source/core/resource/strings.src#RID_STR_ERROR_WRONG_ARGUMENT.String.Text
 msgid  "You tried to set an illegal argument. Please have a look at '#1' for valid arguments."
-msgstr ""
+msgstr "त्वं वैधवादं स्थापितुं प्रयत्नसे।सिद्धवादेभ्यः कृपया '#1' मध्ये पश्य।"
 
 #: source/core/resource/strings.src#RID_STR_ARGUMENT_IS_NULL.String.Text
 msgid  "The element is invalid."
@@ -140,12 +140,20 @@ msgid  "Group Header"
 msgstr "समूहशीर्षकः "
 
 #: source/ui/dlg/GroupsSorting.src#RID_GROUPS_SORTING.LST_HEADERLST.Default.StringList.item
+msgid  "Present"
+msgstr "विद्यते"
+
+#: source/ui/dlg/GroupsSorting.src#RID_GROUPS_SORTING.LST_HEADERLST.Default.StringList.item
 msgid  "Not present"
 msgstr "न विद्यते"
 
 #: source/ui/dlg/GroupsSorting.src#RID_GROUPS_SORTING.FT_FOOTER.FixedText.Text
 msgid  "Group Footer"
 msgstr "समूहफुट्टर् "
+
+#: source/ui/dlg/GroupsSorting.src#RID_GROUPS_SORTING.LST_FOOTERLST.Default.StringList.item
+msgid  "Present"
+msgstr "विद्यते"
 
 #: source/ui/dlg/GroupsSorting.src#RID_GROUPS_SORTING.LST_FOOTERLST.Default.StringList.item
 msgid  "Not present"
@@ -229,7 +237,7 @@ msgstr "अन्तरालम् "
 
 #: source/ui/dlg/GroupsSorting.src#STR_RPT_HELP_FIELD.String.Text
 msgid  "Select a field or type an expression to sort or group on."
-msgstr ""
+msgstr "क्षएत्रं वृणु अथवा पृथक्कर्तुम् अथवा समीहे कर्तुम् उक्तिं टङ्कनं कुरु।  "
 
 #: source/ui/dlg/GroupsSorting.src#STR_RPT_HELP_HEADER.String.Text
 msgid  "Display a header for this group?"
@@ -253,15 +261,7 @@ msgstr "एकपृष्ठे समूहम् एकस्मिन् स
 
 #: source/ui/dlg/GroupsSorting.src#STR_RPT_HELP_SORT.String.Text
 msgid  "Select ascending or descending sort order. Ascending means from A to Z or 0 to 9"
-msgstr ""
-
-#: source/ui/dlg/GroupsSorting.src#RID_GROUPS_SORTING.LST_HEADERLST.Default.StringList.item
-msgid  "Present"
-msgstr "विद्यते"
-
-#: source/ui/dlg/GroupsSorting.src#RID_GROUPS_SORTING.LST_FOOTERLST.Default.StringList.item
-msgid  "Present"
-msgstr "विद्यते"
+msgstr "आरोहणम् अथवा अवरोहणपथक्क्रमं वृणु।आरोहणं नाम A तः Z अथवा 0 तः 9"
 
 #: source/ui/dlg/PageNumber.src#RID_PAGENUMBERS.ModalDialog.Text
 msgid  "Page Numbers"
@@ -300,6 +300,14 @@ msgid  "Alignment:"
 msgstr "पङ्क्तीकरणम् "
 
 #: source/ui/dlg/PageNumber.src#RID_PAGENUMBERS.LST_ALIGNMENT.Default.StringList.item
+msgid  "Left"
+msgstr "वामे"
+
+#: source/ui/dlg/PageNumber.src#RID_PAGENUMBERS.LST_ALIGNMENT.Default.StringList.item
+msgid  "Center"
+msgstr "मध्ये "
+
+#: source/ui/dlg/PageNumber.src#RID_PAGENUMBERS.LST_ALIGNMENT.Default.StringList.item
 msgid  "Right"
 msgstr "दक्षिणम् "
 
@@ -312,20 +320,12 @@ msgid  "~Help"
 msgstr "~सहायम् "
 
 #: source/ui/dlg/PageNumber.src#STR_RPT_PN_PAGE.String.Text
-msgid  ""Page " & #PAGENUMBER#"
-msgstr ""
+msgid  "\"Page \" & #PAGENUMBER#"
+msgstr "\"पृष्ठम् \" & #PAGENUMBER#"
 
 #: source/ui/dlg/PageNumber.src#STR_RPT_PN_PAGE_OF.String.Text
-msgid  " & " of " & #PAGECOUNT#"
-msgstr ""
-
-#: source/ui/dlg/PageNumber.src#RID_PAGENUMBERS.LST_ALIGNMENT.Default.StringList.item
-msgid  "Left"
-msgstr "वामे"
-
-#: source/ui/dlg/PageNumber.src#RID_PAGENUMBERS.LST_ALIGNMENT.Default.StringList.item
-msgid  "Center"
-msgstr "मध्ये "
+msgid  " & \" of \" & #PAGECOUNT#"
+msgstr " & \" of \" & #PAGECOUNT#"
 
 #: source/ui/dlg/dlgpage.src#RID_PAGEDIALOG_PAGE.TabDialog.Text
 msgid  "Page Setup"
@@ -337,7 +337,7 @@ msgstr "पृष्ठम् "
 
 #: source/ui/dlg/dlgpage.src#RID_PAGEDIALOG_PAGE.1.RID_SVXPAGE_BACKGROUND.PageItem.Text
 msgid  "Background"
-msgstr "पृष्ठपटलः "
+msgstr "पृष्पटलः "
 
 #: source/ui/dlg/dlgpage.src#RID_PAGEDIALOG_PAGE.1.PushButton.Text
 msgid  "Return"
@@ -349,7 +349,7 @@ msgstr "पृष्ठम् "
 
 #: source/ui/dlg/dlgpage.src#RID_PAGEDIALOG_PAGE.2.String.Text
 msgid  "Background"
-msgstr "पृष्ठपटलः "
+msgstr "पृष्पटलः "
 
 #: source/ui/dlg/dlgpage.src#RID_PAGEDIALOG_BACKGROUND.TabDialog.Text
 msgid  "Section Setup"
@@ -456,6 +456,10 @@ msgid  "Properties..."
 msgstr "विशेषाः..."
 
 #: source/ui/dlg/CondFormat.src#WIN_CONDITION.LB_COND_TYPE.Default.StringList.item
+msgid  "Field Value Is"
+msgstr "क्षेत्रमूल्यमस्ति "
+
+#: source/ui/dlg/CondFormat.src#WIN_CONDITION.LB_COND_TYPE.Default.StringList.item
 msgid  "Expression Is"
 msgstr "उक्तिः अस्ति "
 
@@ -550,10 +554,6 @@ msgstr ""
 #: source/ui/dlg/CondFormat.src#ADDFIELD_HELP_FIELD.FixedText.Text
 msgid  "Highlight the fields to insert into the selected section of the template, then click Insert or press Enter."
 msgstr ""
-
-#: source/ui/dlg/CondFormat.src#WIN_CONDITION.LB_COND_TYPE.Default.StringList.item
-msgid  "Field Value Is"
-msgstr "क्षेत्रमूल्यमस्ति "
 
 #: source/ui/dlg/DateTime.src#RID_DATETIME_DLG.ModalDialog.Text
 msgid  "Date and Time"
@@ -833,7 +833,7 @@ msgstr "लिङ्क् स्लैव् क्षेत्राणि "
 
 #: source/ui/inspection/inspection.src#RID_STR_EXPLANATION.String.Text
 msgid  "Charts can be used to display detailed data about the current record of the report. To do this, you can specify which columns in the chart match which columns in the report."
-msgstr ""
+msgstr "रिपोर्ट् अस्य वर्तमानलेखविषये निर्दिष्टडाटा प्रदर्शितुं तालिकाः उपयोजितुं शक्यते।इदं कर्तुं,रिपोर्टमध्ये ये स्तम्भाः तालिकायां येन स्तम्भेन सह मेलयति इति त्वं निर्देष्टुं शक्नोषि।"
 
 #: source/ui/inspection/inspection.src#RID_STR_DETAILLABEL.String.Text
 msgid  "Chart"
@@ -1037,7 +1037,7 @@ msgstr "~रिपोर्ट्नाम "
 
 #: source/ui/report/report.src#RID_STR_UNDO_REMOVE_GROUP.String.Text
 msgid  "Delete Group"
-msgstr "समूहं लोपय   "
+msgstr "समूहं लोपय"
 
 #: source/ui/report/report.src#RID_STR_UNDO_APPEND_GROUP.String.Text
 msgid  "Add Group"
@@ -1241,14 +1241,10 @@ msgstr "रिपोर्ट चालितुं शक्यते याव
 
 #: source/ui/report/report.src#RID_ERR_NO_OBJECTS.String.Text
 msgid  "The report can not be executed unless at least one object has been inserted."
-msgstr ""
+msgstr "रिपोर्ट चालितुं शक्यते यावत् अतिन्यूनतया एकं वस्तु समावेशितम्। "
 
 #: source/ui/report/report.src#RID_STR_UNDO_SHRINK.String.Text
 msgid  "Shrink Section"
-msgstr ""
-
-#: source/ui/report/report.src#RID_STR_INSERT.String.Text
-msgid  "Insert"
 msgstr ""
 
 #: source/ui/report/report.src#RID_STR_DETAIL.String.Text
@@ -1269,4 +1265,8 @@ msgstr ""
 
 #: source/ui/report/report.src#RID_STR_REPORT_FOOTER.String.Text
 msgid  "Report Footer"
+msgstr ""
+
+#: source/ui/report/report.src#RID_STR_INSERT.String.Text
+msgid  "Insert"
 msgstr ""

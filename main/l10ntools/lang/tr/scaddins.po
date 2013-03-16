@@ -530,78 +530,65 @@ msgstr "ÇİFTFAKTÖR"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Workday.1.String.Text
 msgid  "Returns the serial number of the date before or after a specified number of workdays"
-msgstr ""
+msgstr "Betirtilen çalışma günlerinin öncesine veya sonrasına tarihin seri numarasını döndür"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Workday.2.String.Text
-#, fuzzy
 msgid  "Start date"
 msgstr "Başlangıç tarihi"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Workday.3.String.Text
-#, fuzzy
 msgid  "The start date"
-msgstr "Bu başlangıç tarihi"
+msgstr "Başlangıç tarihi"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Workday.4.String.Text
-#, fuzzy
 msgid  "Days"
 msgstr "Günler"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Workday.5.String.Text
-#, fuzzy
 msgid  "The number of workdays before or after the start date"
 msgstr "Başlangıç tarihinin öncesindeki veya sonrasındaki çalışma günleri "
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Workday.6.String.Text
-#, fuzzy
 msgid  "Holidays"
-msgstr "Tatil günleri"
+msgstr "Tatil Günleri"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Workday.7.String.Text
-#, fuzzy
 msgid  "List of date values of days off (vacation, holidays, etc.)"
 msgstr "Tatil günlerinin tarih değerleri listesi"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Yearfrac.1.String.Text
 msgid  "Returns the number of whole days between 'start date' and 'end date' as a year fraction"
-msgstr ""
+msgstr "'Başlangıc tarihi' ve 'Bitiş tarihi' arasındaki tüm günlerinin sayısını, artık yıl olarak döndür"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Yearfrac.2.String.Text
-#, fuzzy
 msgid  "Start date"
 msgstr "Başlangıç tarihi"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Yearfrac.3.String.Text
-#, fuzzy
 msgid  "The start date"
 msgstr "Başlangıç tarihi"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Yearfrac.4.String.Text
-#, fuzzy
 msgid  "End date"
 msgstr "Bitiş tarihi"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Yearfrac.5.String.Text
-#, fuzzy
 msgid  "The end date"
 msgstr "Bitiş tarihi"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Yearfrac.6.String.Text
-#, fuzzy
 msgid  "Basis"
-msgstr "Kural"
+msgstr "Temel"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Yearfrac.7.String.Text
-#, fuzzy
 msgid  "Basis for determining the interest days"
 msgstr "Faiz günlerinin hesaplanması için tabanlar"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Edate.1.String.Text
 msgid  "Returns the serial number of the date that is a specified number of months before or after the start date"
-msgstr ""
+msgstr "Başlangıç tarihinin öncesindeki ve sonrasındaki belirtilen ayların sayısını, seri numarası olarak döndürür"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Edate.2.String.Text
-#, fuzzy
 msgid  "Start date"
 msgstr "Başlangıç tarihi"
 
@@ -618,11 +605,12 @@ msgstr "Aylar"
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Edate.5.String.Text
 #, fuzzy
 msgid  "Number of months before or after the start date"
-msgstr "Başlangıç tarihinden önceki veya sonraki ay sayısı"
+msgstr "Başlangıç tarihinin öncesindeki veya sonrasındaki ayların sayısı"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Weeknum.1.String.Text
+#, fuzzy
 msgid  "Returns the number of the calendar week in which the specified date occurs."
-msgstr ""
+msgstr "Yıl içerisindeki hafta sayısını döndür"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Weeknum.2.String.Text
 #, fuzzy
@@ -645,8 +633,9 @@ msgid  "A number from 1 to 3 that specifies the day with which a week begins"
 msgstr "Bir hafta başlangıcında ki günleri belirten, 1'den 3'e kadar bir sayı"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Eomonth.1.String.Text
+#, fuzzy
 msgid  "Returns the serial number of the last day of the month that comes a certain number of months before or after the start date"
-msgstr ""
+msgstr "Başlangıç tarihinin oncesi yada sonrasında, ayların belirli bir sayısına gelen ayın son gününün seri numarasını getirir"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Eomonth.2.String.Text
 #, fuzzy
@@ -699,8 +688,9 @@ msgid  "Holidays"
 msgstr "Tatil günleri"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Networkdays.7.String.Text
+#, fuzzy
 msgid  "List of date values representing days off (vacation, holidays, etc.)"
-msgstr ""
+msgstr "Tatil günleri tarih değerleri listesi (izinler, tatiller, bayramlar vb...)"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Iseven.1.String.Text
 #, fuzzy
@@ -710,7 +700,7 @@ msgstr "Çift sayı için 'true' döndürür"
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Iseven.2.String.Text
 #, fuzzy
 msgid  "Number"
-msgstr "Numara"
+msgstr "Sayı"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Iseven.3.String.Text
 #, fuzzy
@@ -725,7 +715,7 @@ msgstr "Eğer sayı tek ise 'true' değeri döner"
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Isodd.2.String.Text
 #, fuzzy
 msgid  "Number"
-msgstr "Numara"
+msgstr "Sayı"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Isodd.3.String.Text
 #, fuzzy
@@ -743,8 +733,9 @@ msgid  "Number(s)"
 msgstr "Sayı(lar)"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Multinomial.3.String.Text
+#, fuzzy
 msgid  "Number or list of numbers for which you want the multinomial coefficient"
-msgstr ""
+msgstr "İstediğiniz çok terimli katsayı için sayı ya da sayıların listesi"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Seriessum.1.String.Text
 #, fuzzy
@@ -787,8 +778,9 @@ msgid  "Coefficients"
 msgstr "Katsayılar"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Seriessum.9.String.Text
+#, fuzzy
 msgid  "Set of coefficients by which each successive power of the variable x is multiplied"
-msgstr ""
+msgstr "X değişkeninin çarpıldığı herbir ardışık kuvvet katsayıları"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Quotient.1.String.Text
 #, fuzzy
@@ -823,7 +815,7 @@ msgstr "İstenen çarpana yuvarlanmış sayıyı döndürür"
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Mround.2.String.Text
 #, fuzzy
 msgid  "Number"
-msgstr "Numara"
+msgstr "Sayı"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Mround.3.String.Text
 #, fuzzy
@@ -848,7 +840,7 @@ msgstr "Pi ile çarpılan sayının kare kökünü verir."
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Sqrtpi.2.String.Text
 #, fuzzy
 msgid  "Number"
-msgstr "Sayı"
+msgstr "Numara"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Sqrtpi.3.String.Text
 #, fuzzy
@@ -923,7 +915,7 @@ msgstr "X"
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Besseli.3.String.Text
 #, fuzzy
 msgid  "The value at which the function is to be evaluated"
-msgstr "İşlevin hesaplanacağı değer"
+msgstr "İşlevde değerlendirilecek olan değer"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Besseli.4.String.Text
 #, fuzzy
@@ -933,7 +925,7 @@ msgstr "N"
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Besseli.5.String.Text
 #, fuzzy
 msgid  "The order of the Bessel function"
-msgstr "Bessel işlevinin düzeni"
+msgstr "Bessel işlevinin derecesi"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Besselj.1.String.Text
 #, fuzzy
@@ -948,7 +940,7 @@ msgstr "X"
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Besselj.3.String.Text
 #, fuzzy
 msgid  "The value at which the function is to be evaluated"
-msgstr "İşlevde değerlendirilecek değer"
+msgstr "İşlevin hesaplanacağı değer"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Besselj.4.String.Text
 #, fuzzy
@@ -958,7 +950,7 @@ msgstr "N"
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Besselj.5.String.Text
 #, fuzzy
 msgid  "The order of the Bessel function"
-msgstr "Bessel işlevinin derecesi"
+msgstr "Bessel işlevinin düzeni"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Besselk.1.String.Text
 #, fuzzy
@@ -1023,7 +1015,7 @@ msgstr "Sayı"
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Bin2Oct.3.String.Text
 #, fuzzy
 msgid  "The binary number to be converted (as text)"
-msgstr "Değiştirilecek ikilik sayı (metin olarak)"
+msgstr "Dönüştürülecek ikilik sayı (metin olarak)"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Bin2Oct.4.String.Text
 #, fuzzy
@@ -1043,12 +1035,12 @@ msgstr "İkili sayıyı ondalık sayıya çevirir"
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Bin2Dec.2.String.Text
 #, fuzzy
 msgid  "Number"
-msgstr "Sayı"
+msgstr "Numara"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Bin2Dec.3.String.Text
 #, fuzzy
 msgid  "The binary number to be converted (as text)"
-msgstr "Çevrilecek ikili düzendeki sayı (metin olarak)"
+msgstr "Değiştirilecek ikilik sayı (metin olarak)"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Bin2Hex.1.String.Text
 #, fuzzy
@@ -1058,7 +1050,7 @@ msgstr "İkilik düzendeki bir sayıyı onaltılık düzene çevirir"
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Bin2Hex.2.String.Text
 #, fuzzy
 msgid  "Number"
-msgstr "Sayı"
+msgstr "Numara"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Bin2Hex.3.String.Text
 #, fuzzy
@@ -1083,12 +1075,12 @@ msgstr "Sekizlik bir sayıyı ikilik düzene dönüştürür"
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Oct2Bin.2.String.Text
 #, fuzzy
 msgid  "Number"
-msgstr "Sayı"
+msgstr "Numara"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Oct2Bin.3.String.Text
 #, fuzzy
 msgid  "The octal number to be converted (as text)"
-msgstr "Dönüştürülecek sekizlik sayı (metin olarak)"
+msgstr "Çevrilecek sekizlik düzendeki sayı (metin olarak)"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Oct2Bin.4.String.Text
 #, fuzzy
@@ -1113,7 +1105,7 @@ msgstr "Sayı"
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Oct2Dec.3.String.Text
 #, fuzzy
 msgid  "The octal number to be converted (as text)"
-msgstr "Dönüştürülecek sekizlik numarayı giriniz (metin olarak)"
+msgstr "Dönüştürülecek sekizlik sayı (metin olarak)"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Oct2Hex.1.String.Text
 #, fuzzy
@@ -1153,7 +1145,7 @@ msgstr "Sayı"
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Dec2Bin.3.String.Text
 #, fuzzy
 msgid  "The decimal integer to be converted"
-msgstr "Dönüştürülecek onluk tamsayı"
+msgstr "Dönüştürülecek onluk sayı"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Dec2Bin.4.String.Text
 #, fuzzy
@@ -1228,7 +1220,7 @@ msgstr "Sayı"
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Hex2Bin.3.String.Text
 #, fuzzy
 msgid  "The hexadecimal number to be converted (as text)"
-msgstr "Çevrilecek onaltılık düzendeki sayı (metin olarak)"
+msgstr "Dönüştürülecek onaltılık sayı (metin olarak)"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Hex2Bin.4.String.Text
 #, fuzzy
@@ -1313,7 +1305,7 @@ msgstr "Hata işlevine döndürür"
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Erf.2.String.Text
 #, fuzzy
 msgid  "Lower limit"
-msgstr "Alt sınır"
+msgstr "Alt limit"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Erf.3.String.Text
 #, fuzzy
@@ -1393,12 +1385,12 @@ msgstr "Bir kompleks sayının mutlak değerini (modül) döner"
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Imabs.2.String.Text
 #, fuzzy
 msgid  "Complex number"
-msgstr "Karmaşık sayılar"
+msgstr "Karmaşık sayı"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Imabs.3.String.Text
 #, fuzzy
 msgid  "The complex number"
-msgstr "Karmaşık sayının gerçek katsayısına dön"
+msgstr "Karmaşık sayı"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Imaginary.1.String.Text
 #, fuzzy
@@ -1408,7 +1400,7 @@ msgstr "Bir karmaşık sayının sanal sabitini döner"
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Imaginary.2.String.Text
 #, fuzzy
 msgid  "Complex number"
-msgstr "Karmaşık Sayı"
+msgstr "Karmaşık sayı"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Imaginary.3.String.Text
 #, fuzzy
@@ -1633,7 +1625,7 @@ msgstr "İki karmaşık sayının farkını döndürür"
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Imsub.2.String.Text
 #, fuzzy
 msgid  "Complex number 1"
-msgstr "Karmaşık sayı 1"
+msgstr "Karmaşık sayı 1 "
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Imsub.3.String.Text
 #, fuzzy
@@ -1847,13 +1839,14 @@ msgid  "Unit of measure for the result"
 msgstr "Sonuç için ölçme birimi"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Amordegrc.1.String.Text
+#, fuzzy
 msgid  "Returns the prorated linear depreciation of an asset for each accounting period"
-msgstr ""
+msgstr "Her hesap dönemi için varlığın bölüştürülmüş çizgisel amortismanını getirir"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Amordegrc.2.String.Text
 #, fuzzy
 msgid  "Cost"
-msgstr "Maliyet"
+msgstr "Tutar "
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Amordegrc.3.String.Text
 #, fuzzy
@@ -1868,7 +1861,7 @@ msgstr "Alım tarihi"
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Amordegrc.5.String.Text
 #, fuzzy
 msgid  "Purchase date of the asset"
-msgstr "Malın satın alınma tarihi"
+msgstr "Malın alım tarihi"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Amordegrc.6.String.Text
 #, fuzzy
@@ -1918,11 +1911,12 @@ msgstr "Temel"
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Amordegrc.15.String.Text
 #, fuzzy
 msgid  "The year basis to be used"
-msgstr "Kullanılan temel yıl"
+msgstr "Kullanılacak yıl temeli"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Amorlinc.1.String.Text
+#, fuzzy
 msgid  "Returns the prorated linear depreciation of an asset for each accounting period"
-msgstr ""
+msgstr "Her hesap dönemi için varlığın bölüştürülmüş çizgisel amortismanını getirir"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Amorlinc.2.String.Text
 #, fuzzy
@@ -2002,7 +1996,7 @@ msgstr "Dönemsel faiz ödemesi yapan kağıdın tahakkuk etmiş faizini getirir
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Accrint.2.String.Text
 #, fuzzy
 msgid  "Issue"
-msgstr "Düzen"
+msgstr "Düzenleme"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Accrint.3.String.Text
 #, fuzzy
@@ -2067,11 +2061,12 @@ msgstr "Kural"
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Accrint.15.String.Text
 #, fuzzy
 msgid  "The basis"
-msgstr "Temel"
+msgstr "Kural"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Accrintm.1.String.Text
+#, fuzzy
 msgid  "Returns the accrued interest for a security that pays interest at maturity"
-msgstr ""
+msgstr "Vadesinde faiz ödemesi yapan kağıdın tahakkuk etmiş faizini getirir"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Accrintm.2.String.Text
 #, fuzzy
@@ -2081,7 +2076,7 @@ msgstr "Düzenleme"
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Accrintm.3.String.Text
 #, fuzzy
 msgid  "The issue date"
-msgstr "Düzen"
+msgstr "Düzenleme tarihi"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Accrintm.4.String.Text
 #, fuzzy
@@ -2211,12 +2206,12 @@ msgstr "Fiyat"
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Disc.7.String.Text
 #, fuzzy
 msgid  "The price"
-msgstr "Bu fiyat"
+msgstr "Fiyat"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Disc.8.String.Text
 #, fuzzy
 msgid  "Redemption"
-msgstr "Paraya dönüştürme "
+msgstr "Paraya dönüştürme"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Disc.9.String.Text
 #, fuzzy
@@ -2234,8 +2229,9 @@ msgid  "The basis"
 msgstr "Temel"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Duration.1.String.Text
+#, fuzzy
 msgid  "Returns the annual Macaulay duration of a security with periodic interest payments"
-msgstr ""
+msgstr "Dönemsel olarak faiz ödemesi yapılan kağıdın, yıllık Macaulay süresini getirir."
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Duration.2.String.Text
 #, fuzzy
@@ -2323,8 +2319,9 @@ msgid  "The periods"
 msgstr "Dönemler"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Cumprinc.1.String.Text
+#, fuzzy
 msgid  "Returns the cumulative principal on a loan to be paid between two periods"
-msgstr ""
+msgstr "İki dönem arasındaki ödenmesi gereken kredinin anapara toplamini getirir"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Cumprinc.2.String.Text
 #, fuzzy
@@ -2379,12 +2376,12 @@ msgstr "Dönem sonu"
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Cumprinc.12.String.Text
 #, fuzzy
 msgid  "Type"
-msgstr "Tip"
+msgstr "Tür"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Cumprinc.13.String.Text
 #, fuzzy
 msgid  "The type of maturity"
-msgstr "Vade tipi"
+msgstr "Vade türü"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Cumipmt.1.String.Text
 #, fuzzy
@@ -2452,8 +2449,9 @@ msgid  "The type of maturity"
 msgstr "Vade tipi"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Price.1.String.Text
+#, fuzzy
 msgid  "Returns the price per 100 currency units face value of a security that pays periodic interest"
-msgstr ""
+msgstr "Dönemsel faiz ödemeli kağıdın üzerinde yazılı değeri üzerinden her bir 100 birim fiyatını getirir"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Price.2.String.Text
 #, fuzzy
@@ -2498,7 +2496,7 @@ msgstr "Ödeme"
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Price.10.String.Text
 #, fuzzy
 msgid  "Redemption"
-msgstr "Paraya dönüştürme"
+msgstr "Paraya dönüştürme "
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Price.11.String.Text
 #, fuzzy
@@ -2526,8 +2524,9 @@ msgid  "The basis"
 msgstr "Temel"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Pricedisc.1.String.Text
+#, fuzzy
 msgid  "Returns the price per 100 currency units face value of a discounted security"
-msgstr ""
+msgstr "Kağıdın üzerinde yazılı değerinden iskonto edilmiş her bir 100 birim fiyatını getirir"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Pricedisc.2.String.Text
 #, fuzzy
@@ -2562,7 +2561,7 @@ msgstr "İndirim"
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Pricedisc.8.String.Text
 #, fuzzy
 msgid  "Redemption"
-msgstr "Paraya dönüştürme "
+msgstr "Paraya dönüştürme"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Pricedisc.9.String.Text
 #, fuzzy
@@ -2580,8 +2579,9 @@ msgid  "The basis"
 msgstr "Temel"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Pricemat.1.String.Text
+#, fuzzy
 msgid  "Returns the price per 100 currency units face value of a security that pays interest at maturity"
-msgstr ""
+msgstr "Vadesinde faiz ödemesi yapan kağıdın her bir 100 birim fiyatini getirir"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Pricemat.2.String.Text
 #, fuzzy
@@ -2644,8 +2644,9 @@ msgid  "The basis"
 msgstr "Temel"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Mduration.1.String.Text
+#, fuzzy
 msgid  "Returns the Macaulay modified duration for a security with an assumed par value of 100 currency units"
-msgstr ""
+msgstr "Nominal değeri 100 birim olduğu varsayılan kağıdın Macaulay yenilenme süresini getirir"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Mduration.2.String.Text
 #, fuzzy
@@ -2733,8 +2734,9 @@ msgid  "The periods"
 msgstr "Dönemler"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Dollarfr.1.String.Text
+#, fuzzy
 msgid  "Converts a price expressed as a decimal into a price expressed as a fraction"
-msgstr ""
+msgstr "Onluk verilen bir fiyatı kesirlik fiyata çevirir"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Dollarfr.2.String.Text
 #, fuzzy
@@ -2757,8 +2759,9 @@ msgid  "The divisor"
 msgstr "Bölen"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Dollarde.1.String.Text
+#, fuzzy
 msgid  "Converts a price expressed as a fraction into a price expressed as a decimal"
-msgstr ""
+msgstr "Onlu olarak ifade edilen bir fiyatı kesir olarak ifade edilen bir fiyata dönüştür"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Dollarde.2.String.Text
 #, fuzzy
@@ -2823,12 +2826,12 @@ msgstr "Fiyat"
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Yield.9.String.Text
 #, fuzzy
 msgid  "The price"
-msgstr "Fiyat"
+msgstr "Bu fiyat"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Yield.10.String.Text
 #, fuzzy
 msgid  "Redemption"
-msgstr "Paraya dönüştürme"
+msgstr "Paraya dönüştürme "
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Yield.11.String.Text
 #, fuzzy
@@ -2943,7 +2946,7 @@ msgstr "Düzen"
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Yieldmat.7.String.Text
 #, fuzzy
 msgid  "The issue date"
-msgstr "Düzenleme tarihi"
+msgstr "Düzen"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Yieldmat.8.String.Text
 #, fuzzy
@@ -3011,8 +3014,9 @@ msgid  "The discount rate"
 msgstr "İndirim oranı"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Tbillprice.1.String.Text
+#, fuzzy
 msgid  "Returns the price of 100 currency units face value for a treasury bill"
-msgstr ""
+msgstr "Bir hazine bonosunun üzerinde yazılı değeri üzerinden, 100 birimlik fiyatini getirir"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Tbillprice.2.String.Text
 #, fuzzy
@@ -3080,8 +3084,9 @@ msgid  "The price"
 msgstr "Fiyat"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Oddfprice.1.String.Text
+#, fuzzy
 msgid  "Returns the price per $100 face value of a security with an odd first period"
-msgstr ""
+msgstr "Üzerinde $100 yazılı herbir kıymetli kağıdın ilk donem için fiyatını getirir"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Oddfprice.2.String.Text
 #, fuzzy
@@ -3116,7 +3121,7 @@ msgstr "Düzenleme tarihi"
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Oddfprice.8.String.Text
 #, fuzzy
 msgid  "First coupon"
-msgstr "İlk Kupon"
+msgstr "İlk kupon"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Oddfprice.9.String.Text
 #, fuzzy
@@ -3146,7 +3151,7 @@ msgstr "Ödeme"
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Oddfprice.14.String.Text
 #, fuzzy
 msgid  "Redemption"
-msgstr "Paraya dönüştürme"
+msgstr "Paraya dönüştürme "
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Oddfprice.15.String.Text
 #, fuzzy
@@ -3269,8 +3274,9 @@ msgid  "The basis"
 msgstr "Temel"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Oddlprice.1.String.Text
+#, fuzzy
 msgid  "Returns the price per $100 face value of a security with an odd last period"
-msgstr ""
+msgstr "Üzerinde $100 yazılı herbir kıymetli kağıdın son donem için tek fiyatını getiri"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Oddlprice.2.String.Text
 #, fuzzy
@@ -3300,7 +3306,7 @@ msgstr "Son faiz"
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Oddlprice.7.String.Text
 #, fuzzy
 msgid  "The last interest date"
-msgstr "Son faiz tarihi"
+msgstr "En son faiz oranı"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Oddlprice.8.String.Text
 #, fuzzy
@@ -3438,8 +3444,9 @@ msgid  "The basis"
 msgstr "Temel"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Xirr.1.String.Text
+#, fuzzy
 msgid  "Returns the internal rate of return for a non-periodic schedule of payments"
-msgstr ""
+msgstr "Periyodik olmayan dönemler için ödemelerin içsel getiri oranını getirir"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Xirr.2.String.Text
 #, fuzzy
@@ -3454,7 +3461,7 @@ msgstr "Değerler"
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Xirr.4.String.Text
 #, fuzzy
 msgid  "Dates"
-msgstr "Günler"
+msgstr "Tarihler"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Xirr.5.String.Text
 #, fuzzy
@@ -3472,8 +3479,9 @@ msgid  "The guess"
 msgstr "Tahmin"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Xnpv.1.String.Text
+#, fuzzy
 msgid  "Returns the net present value for a non-periodic schedule of payments"
-msgstr ""
+msgstr "Periyodik olmayan dönemler için, ödemelerin bugünkü net değerini getirir"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Xnpv.2.String.Text
 #, fuzzy
@@ -3606,8 +3614,9 @@ msgid  "The basis"
 msgstr "Temel"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Coupdays.1.String.Text
+#, fuzzy
 msgid  "Returns the number of days in the coupon period containing the settlement date"
-msgstr ""
+msgstr "Kupon dönemi başından hesap günü de dahil gün sayısını getirir."
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Coupdays.2.String.Text
 #, fuzzy
@@ -3650,8 +3659,9 @@ msgid  "The basis"
 msgstr "Temel"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Coupdaysnc.1.String.Text
+#, fuzzy
 msgid  "Returns the number of days from the settlement date to the next coupon date"
-msgstr ""
+msgstr "Hesap gününden bir sonraki kupon tarihine kadarki gün sayısını getirir."
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Coupdaysnc.2.String.Text
 #, fuzzy
@@ -3694,8 +3704,9 @@ msgid  "The basis"
 msgstr "Temel"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Coupdaybs.1.String.Text
+#, fuzzy
 msgid  "Returns the number of days from the beginning of the coupon period to the settlement date"
-msgstr ""
+msgstr "Kupon dönemi başından hesap gününe kadarki gün sayısını getirir."
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Coupdaybs.2.String.Text
 #, fuzzy
@@ -3783,8 +3794,9 @@ msgid  "The basis"
 msgstr "Temel"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Coupnum.1.String.Text
+#, fuzzy
 msgid  "Returns the number of coupons payable between the settlement and maturity dates"
-msgstr ""
+msgstr "Hesap günü ile vade tarihi arasindaki ödenecek kupon sayısını getirir."
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Coupnum.2.String.Text
 #, fuzzy
@@ -3827,8 +3839,9 @@ msgid  "The basis"
 msgstr "Temel"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Fvschedule.1.String.Text
+#, fuzzy
 msgid  "Returns the future value of the initial principal after a series of compound interest rates are applied"
-msgstr ""
+msgstr "Anaparanin seriler halinde bilesik faiz uygulandiktan sonraki gelecekteki degerini getirir"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Fvschedule.2.String.Text
 #, fuzzy
@@ -3851,214 +3864,177 @@ msgid  "The schedule"
 msgstr "Çizelge"
 
 #: source/datefunc/datefunc.src#RID_DATE_FUNCTION_DESCRIPTIONS.DATE_FUNCDESC_DiffWeeks.1.String.Text
-#, fuzzy
 msgid  "Calculates the number of weeks in a specific period"
 msgstr "Belirli bir dönemdeki haftaların sayısını hesaplar"
 
 #: source/datefunc/datefunc.src#RID_DATE_FUNCTION_DESCRIPTIONS.DATE_FUNCDESC_DiffWeeks.2.String.Text
-#, fuzzy
 msgid  "Start date"
 msgstr "Başlangıç tarihi"
 
 #: source/datefunc/datefunc.src#RID_DATE_FUNCTION_DESCRIPTIONS.DATE_FUNCDESC_DiffWeeks.3.String.Text
-#, fuzzy
 msgid  "First day of the period"
 msgstr "Dönemin birinci günü."
 
 #: source/datefunc/datefunc.src#RID_DATE_FUNCTION_DESCRIPTIONS.DATE_FUNCDESC_DiffWeeks.4.String.Text
-#, fuzzy
 msgid  "End date"
 msgstr "Bitiş tarihi"
 
 #: source/datefunc/datefunc.src#RID_DATE_FUNCTION_DESCRIPTIONS.DATE_FUNCDESC_DiffWeeks.5.String.Text
-#, fuzzy
 msgid  "Last day of the period"
 msgstr "Dönemin son günü."
 
 #: source/datefunc/datefunc.src#RID_DATE_FUNCTION_DESCRIPTIONS.DATE_FUNCDESC_DiffWeeks.6.String.Text
-#, fuzzy
 msgid  "Type"
 msgstr "Tür"
 
 #: source/datefunc/datefunc.src#RID_DATE_FUNCTION_DESCRIPTIONS.DATE_FUNCDESC_DiffWeeks.7.String.Text
 msgid  "Type of calculation: Type=0 means the time interval, Type=1 means calendar weeks."
-msgstr ""
+msgstr "Hesaplama türü: Tür=0 zaman aralığı, Tür=1 takvim haftası anlamına gelir."
 
 #: source/datefunc/datefunc.src#RID_DATE_FUNCTION_DESCRIPTIONS.DATE_FUNCDESC_DiffMonths.1.String.Text
-#, fuzzy
 msgid  "Determines the number of months in a specific period."
 msgstr "Verilen zaman aralığındaki ay sayısını hesaplar."
 
 #: source/datefunc/datefunc.src#RID_DATE_FUNCTION_DESCRIPTIONS.DATE_FUNCDESC_DiffMonths.2.String.Text
-#, fuzzy
 msgid  "Start date"
 msgstr "Başlangıç tarihi"
 
 #: source/datefunc/datefunc.src#RID_DATE_FUNCTION_DESCRIPTIONS.DATE_FUNCDESC_DiffMonths.3.String.Text
-#, fuzzy
 msgid  "First day of the period."
 msgstr "Dönemin birinci günü."
 
 #: source/datefunc/datefunc.src#RID_DATE_FUNCTION_DESCRIPTIONS.DATE_FUNCDESC_DiffMonths.4.String.Text
-#, fuzzy
 msgid  "End date"
 msgstr "Bitiş tarihi"
 
 #: source/datefunc/datefunc.src#RID_DATE_FUNCTION_DESCRIPTIONS.DATE_FUNCDESC_DiffMonths.5.String.Text
-#, fuzzy
 msgid  "Last day of the period."
 msgstr "Dönemin son günü."
 
 #: source/datefunc/datefunc.src#RID_DATE_FUNCTION_DESCRIPTIONS.DATE_FUNCDESC_DiffMonths.6.String.Text
-#, fuzzy
 msgid  "Type"
 msgstr "Tür"
 
 #: source/datefunc/datefunc.src#RID_DATE_FUNCTION_DESCRIPTIONS.DATE_FUNCDESC_DiffMonths.7.String.Text
 msgid  "Type of calculation: Type=0 means the time interval, Type=1 means calendar months."
-msgstr ""
+msgstr "Hesaplama tipi: Tip=0 iki tarih arasını ifade eder, Tip=1 takvim ayını ifade eder"
 
 #: source/datefunc/datefunc.src#RID_DATE_FUNCTION_DESCRIPTIONS.DATE_FUNCDESC_DiffYears.1.String.Text
-#, fuzzy
 msgid  "Calculates the number of years in a specific period."
 msgstr "Belirlenen bir zaman aralığındaki yılları hesaplar."
 
 #: source/datefunc/datefunc.src#RID_DATE_FUNCTION_DESCRIPTIONS.DATE_FUNCDESC_DiffYears.2.String.Text
-#, fuzzy
 msgid  "Start date"
 msgstr "Başlangıç tarihi"
 
 #: source/datefunc/datefunc.src#RID_DATE_FUNCTION_DESCRIPTIONS.DATE_FUNCDESC_DiffYears.3.String.Text
-#, fuzzy
 msgid  "First day of the period"
 msgstr "Dönemin birinci günü."
 
 #: source/datefunc/datefunc.src#RID_DATE_FUNCTION_DESCRIPTIONS.DATE_FUNCDESC_DiffYears.4.String.Text
-#, fuzzy
 msgid  "End date"
 msgstr "Bitiş tarihi"
 
 #: source/datefunc/datefunc.src#RID_DATE_FUNCTION_DESCRIPTIONS.DATE_FUNCDESC_DiffYears.5.String.Text
-#, fuzzy
 msgid  "Last day of the period"
 msgstr "Dönemin son günü."
 
 #: source/datefunc/datefunc.src#RID_DATE_FUNCTION_DESCRIPTIONS.DATE_FUNCDESC_DiffYears.6.String.Text
-#, fuzzy
 msgid  "Type"
 msgstr "Tür"
 
 #: source/datefunc/datefunc.src#RID_DATE_FUNCTION_DESCRIPTIONS.DATE_FUNCDESC_DiffYears.7.String.Text
 msgid  "Type of calculation: Type=0 means the time interval, Type=1 means calendar years."
-msgstr ""
+msgstr "Hesaplamanın türü: Tür=0 zaman aralığı, Tür=1 takvim yılları anlamına gelir."
 
 #: source/datefunc/datefunc.src#RID_DATE_FUNCTION_DESCRIPTIONS.DATE_FUNCDESC_IsLeapYear.1.String.Text
 msgid  "Returns 1 (TRUE) if the date is a day of a leap year, otherwise 0 (FALSE)."
-msgstr ""
+msgstr "Eğer gün artık yıla aitse 1 (DOĞRU), aksi takdirde 0 (YANLIŞ) verir."
 
 #: source/datefunc/datefunc.src#RID_DATE_FUNCTION_DESCRIPTIONS.DATE_FUNCDESC_IsLeapYear.2.String.Text
-#, fuzzy
 msgid  "Date"
 msgstr "Tarih"
 
 #: source/datefunc/datefunc.src#RID_DATE_FUNCTION_DESCRIPTIONS.DATE_FUNCDESC_IsLeapYear.3.String.Text
-#, fuzzy
 msgid  "Any day in the desired year"
 msgstr "İstenen yılda herhangi bir gün"
 
 #: source/datefunc/datefunc.src#RID_DATE_FUNCTION_DESCRIPTIONS.DATE_FUNCDESC_DaysInMonth.1.String.Text
 msgid  "Returns the number of days of the month in which the date entered occurs"
-msgstr ""
+msgstr "Girilen günün içinde bulunduğu ayda kaç gün olduğu döner"
 
 #: source/datefunc/datefunc.src#RID_DATE_FUNCTION_DESCRIPTIONS.DATE_FUNCDESC_DaysInMonth.2.String.Text
-#, fuzzy
 msgid  "Date"
 msgstr "Tarih"
 
 #: source/datefunc/datefunc.src#RID_DATE_FUNCTION_DESCRIPTIONS.DATE_FUNCDESC_DaysInMonth.3.String.Text
-#, fuzzy
 msgid  "Any day in the desired month"
 msgstr "İstenen ayda herhangi bir gün"
 
 #: source/datefunc/datefunc.src#RID_DATE_FUNCTION_DESCRIPTIONS.DATE_FUNCDESC_DaysInYear.1.String.Text
 msgid  "Returns the number of days of the year in which the date entered occurs."
-msgstr ""
+msgstr "Verilen günün içinde bulunduğu yılda kaç gün olduğunu verir."
 
 #: source/datefunc/datefunc.src#RID_DATE_FUNCTION_DESCRIPTIONS.DATE_FUNCDESC_DaysInYear.2.String.Text
-#, fuzzy
 msgid  "Date"
 msgstr "Tarih"
 
 #: source/datefunc/datefunc.src#RID_DATE_FUNCTION_DESCRIPTIONS.DATE_FUNCDESC_DaysInYear.3.String.Text
-#, fuzzy
 msgid  "Any day in the desired year"
 msgstr "İstenen yılda herhangi bir gün"
 
 #: source/datefunc/datefunc.src#RID_DATE_FUNCTION_DESCRIPTIONS.DATE_FUNCDESC_WeeksInYear.1.String.Text
 msgid  "Returns the number of weeks of the year in which the date entered occurs"
-msgstr ""
+msgstr "Belirtilen günün içinde bulunduğu yıldaki hafta sayısını verir"
 
 #: source/datefunc/datefunc.src#RID_DATE_FUNCTION_DESCRIPTIONS.DATE_FUNCDESC_WeeksInYear.2.String.Text
-#, fuzzy
 msgid  "Date"
 msgstr "Tarih"
 
 #: source/datefunc/datefunc.src#RID_DATE_FUNCTION_DESCRIPTIONS.DATE_FUNCDESC_WeeksInYear.3.String.Text
-#, fuzzy
 msgid  "Any day in the desired year"
 msgstr "İstenen yılda herhangi bir gün"
 
 #: source/datefunc/datefunc.src#RID_DATE_FUNCTION_DESCRIPTIONS.DATE_FUNCDESC_Rot13.1.String.Text
-#, fuzzy
 msgid  "Encrypts or decrypts a text using the ROT13 algorithm"
 msgstr "ROT13 algoritmasını kullanarak bir metni şifreler veya şifresini çözer"
 
 #: source/datefunc/datefunc.src#RID_DATE_FUNCTION_DESCRIPTIONS.DATE_FUNCDESC_Rot13.2.String.Text
-#, fuzzy
 msgid  "Text"
 msgstr "Metin"
 
 #: source/datefunc/datefunc.src#RID_DATE_FUNCTION_DESCRIPTIONS.DATE_FUNCDESC_Rot13.3.String.Text
-#, fuzzy
 msgid  "Text to be encrypted or text already encrypted"
 msgstr "Şifrelenecek veya şifrelenmiş metin"
 
 #: source/datefunc/datefunc.src#RID_DATE_FUNCTION_NAMES.DATE_FUNCNAME_DiffWeeks.String.Text
-#, fuzzy
 msgid  "WEEKS"
 msgstr "HAFTALAR"
 
 #: source/datefunc/datefunc.src#RID_DATE_FUNCTION_NAMES.DATE_FUNCNAME_DiffMonths.String.Text
-#, fuzzy
 msgid  "MONTHS"
 msgstr "AYLAR"
 
 #: source/datefunc/datefunc.src#RID_DATE_FUNCTION_NAMES.DATE_FUNCNAME_DiffYears.String.Text
-#, fuzzy
 msgid  "YEARS"
 msgstr "YILLAR"
 
 #: source/datefunc/datefunc.src#RID_DATE_FUNCTION_NAMES.DATE_FUNCNAME_IsLeapYear.String.Text
-#, fuzzy
 msgid  "ISLEAPYEAR"
 msgstr "ARTIKYILMI"
 
 #: source/datefunc/datefunc.src#RID_DATE_FUNCTION_NAMES.DATE_FUNCNAME_DaysInMonth.String.Text
-#, fuzzy
 msgid  "DAYSINMONTH"
 msgstr "AYDAKİGÜNLER"
 
 #: source/datefunc/datefunc.src#RID_DATE_FUNCTION_NAMES.DATE_FUNCNAME_DaysInYear.String.Text
-#, fuzzy
 msgid  "DAYSINYEAR"
 msgstr "YILDAKİGÜNLER"
 
 #: source/datefunc/datefunc.src#RID_DATE_FUNCTION_NAMES.DATE_FUNCNAME_WeeksInYear.String.Text
-#, fuzzy
 msgid  "WEEKSINYEAR"
 msgstr "YILDAKİHAFTALAR"
 
 #: source/datefunc/datefunc.src#RID_DATE_FUNCTION_NAMES.DATE_FUNCNAME_Rot13.String.Text
-#, fuzzy
 msgid  "ROT13"
 msgstr "ROT13"

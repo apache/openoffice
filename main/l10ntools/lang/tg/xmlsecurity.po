@@ -33,7 +33,7 @@ msgstr ""
 
 #: source/component/warnbox.src#RID_XMLSECWB_NO_MOZILLA_PROFILE.WarningBox.Message
 msgid  "Digital signatures functionality could not be used, because no Mozilla user profile was found. Please check the Mozilla installation."
-msgstr ""
+msgstr "Истифодаи имзои рақамӣ имкон надорад, зеро кӣ профили истифодабари Mozilla пайдо нашуд. Васлкунии Mozilla-ро санҷед."
 
 #: source/dialogs/macrosecurity.src#RID_XMLSECTP_MACROSEC.TabDialog.Text
 msgid  "Macro Security"
@@ -53,19 +53,19 @@ msgstr "Барқароркунӣ"
 
 #: source/dialogs/macrosecurity.src#RID_XMLSECTP_SECLEVEL.RB_VERYHIGH.RadioButton.Text
 msgid  "~Very high.\nOnly macros from trusted file locations are allowed to run. All other macros, regardless whether signed or not, are disabled."
-msgstr ""
+msgstr "~Хеле баланд.\nТанҳо макросҳои маҳалҳои боварибахш иҷро карда мешаванд. Дигар макросҳо новобаста аз имзо шудан ё нашудан манъ шудаанд."
 
 #: source/dialogs/macrosecurity.src#RID_XMLSECTP_SECLEVEL.RB_HIGH.RadioButton.Text
 msgid  "H~igh.\nOnly signed macros from trusted sources are allowed to run. Unsigned macros are disabled."
-msgstr ""
+msgstr "Б~аланд.\nТанҳо макросҳои имзошуда аз маҳалҳои боварибахш иҷро мешаванд. Макросҳои имзонашуда иҷро намешаванд."
 
 #: source/dialogs/macrosecurity.src#RID_XMLSECTP_SECLEVEL.RB_MEDIUM.RadioButton.Text
 msgid  "~Medium.\nConfirmation required before executing macros from untrusted sources."
-msgstr ""
+msgstr "~Миёна.\nТасдиқ барои иҷроиши макросҳои маҳалҳои шубҳанок лозим аст."
 
 #: source/dialogs/macrosecurity.src#RID_XMLSECTP_SECLEVEL.RB_LOW.RadioButton.Text
 msgid  "~Low (not recommended).\nAll macros will be executed without confirmation. Use this setting only if you are certain that all documents that will be opened are safe."
-msgstr ""
+msgstr "~Паст (маслиҳат дода намешавад).\nҲама макросҳо бе тасдиқ иҷро карда мешаванд. Ин параметрро танҳо дар сурати боварибахш будани ҳуҷҷатҳои истифода кардаистодаатон интихоб кунед."
 
 #: source/dialogs/macrosecurity.src#RID_XMLSECTP_TRUSTSOURCES.FL_TRUSTCERT.FixedLine.Text
 msgid  "Trusted certificates"
@@ -93,7 +93,7 @@ msgstr "Ҷойгиршавии дафтарҳои боварибахш"
 
 #: source/dialogs/macrosecurity.src#RID_XMLSECTP_TRUSTSOURCES.FI_TRUSTFILELOC.FixedText.Text
 msgid  "Document macros are always executed if they have been opened from one of the following locations."
-msgstr ""
+msgstr "Мacro-ҳои ҳуҷҷат доим иҷро мегарданд, агар аз яке аз ин ҷойҳо кушода шуда бошанд."
 
 #: source/dialogs/macrosecurity.src#RID_XMLSECTP_TRUSTSOURCES.FL_ADD_TRUSTFILELOC.PushButton.Text
 msgid  "Add..."

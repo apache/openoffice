@@ -37,7 +37,7 @@ msgstr "%PRODUCTNAME% %PRODUCTVERSION% දෝෂ වාර්තාව"
 
 #: source/all/crashrep.ulf#%WELCOME_HEADER%
 msgid  "Welcome to the %PRODUCTNAME% %PRODUCTVERSION% Error Report"
-msgstr ""
+msgstr "Welcome to the %PRODUCTNAME% %PRODUCTVERSION% දෝෂ වාර්තාවට සාදරයෙන් පිළිගනිමු"
 
 #: source/all/crashrep.ulf#%WELCOME_BODY1%
 msgid  "This error report tool gathers information about how %PRODUCTNAME% is working and sends it to Apache OpenOffice to help improve future versions.\n\n"
@@ -45,7 +45,7 @@ msgstr ""
 
 #: source/all/crashrep.ulf#%WELCOME_BODY2%
 msgid  "It's easy - just send the report without any further effort on your part by clicking 'Send' in the next dialog, or you can briefly describe how the error occurred and then click 'Send'. If you want to see the report, click the 'Show Report' button. No data will be sent if you click 'Do Not Send'.\n\n"
-msgstr ""
+msgstr "එය පහසුයි - ඊළඟ සංවාදයේ 'යවන්න' ක්ලික් කිරීමෙන් ඔබට කිසිදු ආයාසයකින් තොරව වාර්තාව යැවිය හැක. එසේ නොමැති නම් දෝෂය මතු වූයේ කෙසේදැයි කෙටියෙන් විස්තර කර 'යවන්න' ක්ලික් කරීමට ඔබට හැක. ඔබට වාර්තාව බැලීමට අවශ්‍ය නම් 'වාර්තාව පෙන්නන්න' බොත්තම ක්ලික් කරන්න. ඔබ 'යවන්න එපා' ක්ලික් කළොත් කිසිදු දත්තයක් නොයැවෙනු ඇත.\n\n"
 
 #: source/all/crashrep.ulf#%WELCOME_BODY3%
 msgid  "Customer Privacy\nThe information gathered is limited to data concerning the state of %PRODUCTNAME% %PRODUCTVERSION% when the error occurred. Other information about passwords or document contents is not collected.\n\nThe information will only be used to improve the quality of %PRODUCTNAME% and will not be shared with third parties.\nFor more information on Apache OpenOffice's privacy policy, visit\n"
@@ -81,7 +81,7 @@ msgstr ""
 
 #: source/all/crashrep.ulf#%ENTER_TITLE%
 msgid  "Which type of document (e.g. presentation) were you using when the error occurred?"
-msgstr ""
+msgstr "දෝෂය මතු වූ විට ඔබ භාවිතා කරමින් සිටියේ කුමන වර්ගයේ ලිපියක්ද (උදා. ඉදිරිපත් කිරීමක්)?"
 
 #: source/all/crashrep.ulf#%ALLOW_CONTACT%
 msgid  "~I allow Apache OpenOffice to contact me regarding this report."
@@ -121,23 +121,23 @@ msgstr "වාර්තාව සුරකින තැන"
 
 #: source/all/crashrep.ulf#%ERROR_MSG_SIMPLE_MAPI%
 msgid  "The error report could not be sent because the default e-mail program does not support MAPI.\n Please use a MAPI-compatible e-mail program."
-msgstr ""
+msgstr "පෙරනිමි විද්‍යුත් තැපැල් වැඩසටහන MAPI සහය නොදක්වන නිසා දෝෂ වාර්තාව යැවීමට නොහැකි විය.\nකරුණාකර MAPI අනුකූල විද්‍යුත් තැපැල් වැඩසටහනක් භාවිතා කරන්න."
 
 #: source/all/crashrep.ulf#%ERROR_MSG_DISK_FULL%
 msgid  "The error report could not be temporarily saved and could therefore not be sent."
-msgstr ""
+msgstr "දෝෂ වාර්තාව තාවකාලිකව සුරැකීමට නොහැකි විය, එබැවින් යැවීමට නොහැක."
 
 #: source/all/crashrep.ulf#%ERROR_MSG_SENDMAIL%
 msgid  "The error report could not be sent because 'sendmail' could not be started.\nPlease check the 'sendmail' settings."
-msgstr ""
+msgstr "'sendmail' ආරම්භ කිරීමට නොහැකි වූ නිසා දෝෂ වාර්තාව යැවීමට නොහැකි විය.\nකරුණාකර 'sendmail' සැකසුම් පරික්ෂා කරන්න."
 
 #: source/all/crashrep.ulf#%ERROR_MSG_PROXY%
 msgid  "The error report could not be sent. Please check the proxy settings under 'Options' in the Error Report Tool."
-msgstr ""
+msgstr "දෝෂ වාර්තාව යැවීමට නොහැකි විය. කරුණාකර දෝෂ වාර්තා මෙවලමෙහි 'විකල්ප' යටතේ ඇති ප්‍රොක්සි සැකසුම් පරීක්ෂා කරන්න."
 
 #: source/all/crashrep.ulf#%ERROR_MSG_NOCONNECT%
 msgid  "The error report could not be sent because there is no Internet connection. Please check your Internet settings."
-msgstr ""
+msgstr "අන්තර්ජාල සම්බන්ධතාවයක් නැති නිසා දෝෂ වාර්තාව යැවීමට නොහැකි විය. කරුණාකර ඔබගේ අන්තර්ජාල සැකසුම් පරීක්ෂා කරන්න."
 
 #: source/all/crashrep.ulf#%OPTIONS_BUTTON%
 msgid  "~Options..."
@@ -173,7 +173,7 @@ msgstr "දොරටුව (~P)"
 
 #: source/all/crashrep.ulf#%PROXY_SETTINGS_DESCRIPTION%
 msgid  "The %PRODUCTNAME% Error Report tool needs to be connected to the Internet to be able to send error reports.\n\nCompanies often use proxy servers in conjunction with a firewall to protect the network.\n\nIf this applies to your situation, you have to specify the address and port for the server."
-msgstr ""
+msgstr "දෝෂ වාර්තා යැවීමට හැකි වීමට %PRODUCTNAME% දෝෂ වාර්තා මෙවලම අන්තර්ජාලයට සම්බන්ධව තිබීමට අවශ්‍ය වේ.\n\nසමාගම් නොයෙක් විට ජාලය ආරක්ෂා කිරීමට ප්‍රොක්සි සේවකයන් සීමාවැට සමඟ සම්ප්‍රයෝගයෙන් භාවිතා කරයි.\n\nමෙය ඔබගේ ස්ථානයට අදාළ වේ නම් ඔබට ලිපිනය හා සේවකයා සඳහා දොරටුව විශේෂණය කිරීමට සිදුවේ."
 
 #: source/all/crashrep.ulf#%SENDING_REPORT_HEADER%
 msgid  "Sending Error Report"
@@ -205,4 +205,4 @@ msgstr "%PRODUCTNAME% ක්‍රියා ID (PID) එක දෝෂ වාර�
 
 #: source/all/crashrep.ulf#%MSG_PARAM_HELP_DESCRIPTION%
 msgid  "Shows this help text.\nDetailed information can be found in the Setup Guide."
-msgstr ""
+msgstr "මෙම උදව් පෙළ පෙන්නයි.\nසවිස්තර තොරතුරු සැකසුම් මඟ පෙන්වනයෙන් සොයා ගත හැක."

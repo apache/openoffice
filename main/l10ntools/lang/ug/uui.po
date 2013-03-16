@@ -85,7 +85,7 @@ msgstr "ئىم كىرگۈزۈش"
 
 #: source/passworddlg.src#DLG_UUI_PASSWORD.STR_PASSWORD_MISMATCH.String.Text
 msgid  "The confirmation password did not match the password. Set the password again by entering the same password in both boxes."
-msgstr ""
+msgstr "جەزملەنگەن ئىم بىلەن ئىم ئوخشاش ئەمەس. ئىم بېكىتىش ئۈچۈن، ئىككى كۆزنەكچىگە ئوخشاش ئىم كىرگۈزۈڭ."
 
 #: source/trylater.src#STR_TRYLATER_TITLE.String.Text
 msgid  "Document in Use"
@@ -93,7 +93,7 @@ msgstr "ھۆججەت ئىشلىتىلىۋاتىدۇ"
 
 #: source/trylater.src#STR_TRYLATER_MSG.String.Text
 msgid  "Document file '$(ARG1)' is locked for editing by:\n\n$(ARG2)\n\nTry again later to save document or save a copy of that document.\n\n"
-msgstr ""
+msgstr "'$(ARG1)' پۈتۈك ھۆججىتى تەھرىرلەشتىن ساقلىنىش ئۈچۈن \n \n$(ARG2)\n\nتەرىپىدىن قۇلۇپلاندى، سەل تۇرۇپ ھۆججەت ساقلاشنى سىناپ بېقىڭ ياكى بۇ ھۆججەتنىڭ كۆپەيتىلمىسىدىن بىرنى ساقلاڭ.\n\n"
 
 #: source/trylater.src#STR_TRYLATER_RETRYSAVING_BTN.String.Text
 msgid  "~Retry Saving"
@@ -137,7 +137,7 @@ msgstr "نىشان مەۋجۇد."
 
 #: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_IO_MODULESIZEEXCEEDED & ERRCODE_RES_MASK).String.Text
 msgid  "You are about to save/export a password protected basic library containing module(s) \n$(ARG1)\nwhich are too large to store in binary format. If you wish users that don't have access to the library password to be able to run macros in those module(s) you must split those modules into a number of smaller modules. Do you wish to continue to save/export this library?"
-msgstr ""
+msgstr "سىز ئىم بىلەن قوغدالغان basic ئامبىرىغا ساقلاش/چىقىرىش مەشغۇلاتى ئېلىپ بارماقچى. بۇ ئامبار ئۆز ئىچىگە ئالغان \n$(ARG1)\nبۆلەك بەك چوڭ، ئىككىلىك سىستېمىدا ساقلىيالمايدۇ. ئەگەر سىز ئامبارنى ئىم بىلمەيدىغان زىيارەت قىلىش ھوقۇقى يوق ئىشلەتكۈچلەرمۇ بۇ بۆلەكلەردىكى ماكرونى ئىجرا قىلىشنى ئۈمىد قىلسىڭىز ئۇ ھالدا بۇ بۆلەكلەرنى كۆپلىگەن كىچىك بۆلەكلەرگە پارچىلاڭ. بۇ ئامبارنى يەنىلا ساقلاپ/چىقىرامسىز؟"
 
 #: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_IO_BADCRC & ERRCODE_RES_MASK).String.Text
 msgid  "The data from $(ARG1) has an incorrect checksum."
@@ -173,7 +173,7 @@ msgstr "$(ARG1) تېخى تەييارلانمىدى."
 
 #: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_IO_NOTSAMEDEVICE & ERRCODE_RES_MASK).String.Text
 msgid  "Action impossible: $(ARG1) and $(ARG2) are different devices (drives)."
-msgstr ""
+msgstr "مەشغۇلاتنى ئىجرا قىلالمىدى: $(ARG1) بىلەن $(ARG2) ئوخشىمىغان ئۈسكۈنە (قوزغاتقۇچ)"
 
 #: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_IO_GENERAL & ERRCODE_RES_MASK).String.Text
 msgid  "General input/output error while accessing $(ARG1)."
@@ -241,15 +241,15 @@ msgstr "$(ARG1) ئۈسكۈنىدە يېتەرلىك بوشلۇق يوق."
 
 #: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_IO_TOOMANYOPENFILES & ERRCODE_RES_MASK).String.Text
 msgid  "The operation on $(ARG1) cannot be performed because too many files are already open."
-msgstr ""
+msgstr "بەك كۆپ ھۆججەت ئېچىلغانلىقتىن $(ARG1) دىكى مەشغۇلاتنى ئىجرا قىلالمايدۇ."
 
 #: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_IO_OUTOFMEMORY & ERRCODE_RES_MASK).String.Text
 msgid  "The operation on $(ARG1) cannot be performed because there is no more memory available."
-msgstr ""
+msgstr "ئەسلەك يېتىشمىگەنلىكتىن $(ARG1) دىكى مەشغۇلاتنى ئىجرا قىلالمايدۇ."
 
 #: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_IO_PENDING & ERRCODE_RES_MASK).String.Text
 msgid  "The operation on $(ARG1) cannot continue because more data is pending."
-msgstr ""
+msgstr "نۇرغۇن سانلىق مەلۇمات بېكىتىلمىگەن ھالەتتە بولغانلىقتىن $(ARG1) دىكى مەشغۇلاتنى داۋاملىق ئىجار قىلالمايدۇ."
 
 #: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_IO_RECURSIVE & ERRCODE_RES_MASK).String.Text
 msgid  "$(ARG1) cannot be copied into itself."
@@ -289,11 +289,11 @@ msgstr "قاچىلانغان Java نەشرى$(ARG1) نى قوللىمايدۇ."
 
 #: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_WRONGJAVA_MIN & ERRCODE_RES_MASK).String.Text
 msgid  "The installed Java version is not supported, at least version $(ARG1) is required."
-msgstr ""
+msgstr "قاچىلانغان Java نەشرىنى قوللىمايدۇ، ئەڭ تۆۋەن بولغاندىمۇ $(ARG1) نەشرىنى قاچىلاش لازىم."
 
 #: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_WRONGJAVA_VERSION_MIN & ERRCODE_RES_MASK).String.Text
 msgid  "The installed Java version $(ARG1) is not supported, at least version $(ARG2) is required."
-msgstr ""
+msgstr "قاچىلانغان Java نەشرى$(ARG1) نى قوللىمايدۇ، ئەڭ تۆۋەن بولغاندىمۇ $(ARG2) نەشرىنى قاچىلاش لازىم."
 
 #: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_BADPARTNERSHIP & ERRCODE_RES_MASK).String.Text
 msgid  "The data associated with the partnership is corrupted."
@@ -325,43 +325,43 @@ msgstr "$(ARG2) مۇندەرىجىدە ئوبيېكت قۇرالمىدى."
 
 #: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_IO_UNSUPPORTEDOVERWRITE & ERRCODE_RES_MASK).String.Text
 msgid  "%PRODUCTNAME cannot keep files from being overwritten when this transmission protocol is used. Do you want to continue anyway?"
-msgstr ""
+msgstr "بۇ يوللاش كېلىشىمىنى ئىشلەتكەندە %PRODUCTNAME ھۆججەت قاپلىنىشىنىڭ ئالدىنى ئالالمايدۇ. داۋاملاشتۇرۇۋېرەمسىز؟"
 
 #: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_IO_BROKENPACKAGE & ERRCODE_RES_MASK).String.Text
 msgid  "The file '$(ARG1)' is corrupt and therefore cannot be opened. %PRODUCTNAME can try to repair the file.\n\nThe corruption could be the result of document manipulation or of structural document damage due to data transmission.\n\nWe recommend that you do not trust the content of the repaired document.\nExecution of macros is disabled for this document.\n\nShould %PRODUCTNAME repair the file?\n"
-msgstr ""
+msgstr "'$(ARG1)' ھۆججەت بۇزۇلغان، شۇڭلاشقا ئاچالمايدۇ. %PRODUCTNAME بۇ ھۆججەتنى ئوڭشاشنى سىنىيالايدۇ .\n\nبۇزۇلۇش سەۋەبى پۈتۈككە نىسبەتەن ئېلىپ بېرىلغان مەشغۇلات نامۇۋاپىق ياكى سانلىق مەلۇمات يوللاشتىكى ھۆججەت قۇرۇلمىسى بۇزۇلغان بولۇشى مۇمكىن.\n\nنۆۋەتتىكى پۈتۈكنىڭ مەزمۇنىغا ئىشەنمەسلىكىڭىزنى تەۋسىيە قىلىمىز.\n بۇ پۈتۈكنىڭ ماكروسى ئىجرا قىلىشتىن چەكلەندى.\n \n\n%PRODUCTNAME ھۆججەتنى ئوڭشىسۇنمۇ؟\n"
 
 #: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_IO_BROKENPACKAGE_CANTREPAIR & ERRCODE_RES_MASK).String.Text
 msgid  "The file '$(ARG1)' could not be repaired and therefore cannot be opened."
-msgstr ""
+msgstr "'$(ARG1)' ھۆججەتنى ئوڭشىيالمىدى، شۇڭلاشقا بۇ ھۆجقەتنى ئاچالمايدۇ."
 
 #: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_CONFIGURATION_BROKENDATA_NOREMOVE & ERRCODE_RES_MASK).String.Text
 msgid  "Configuration data in '$(ARG1)' is corrupted. Without this data some functions may not operate correctly.\nDo you want to continue startup of %PRODUCTNAME without the corrupted configuration data?"
-msgstr ""
+msgstr "'$(ARG1)' دىكى سەپلىمە سانلىق مەلۇماتى بۇزۇلغان. بۇ سانلىق مەلۇمات يوق، بەزى ئىقتىدارلار نورمال ئىجرا بولماسلىقى مۇمكىن.\nبۇزۇلغان سەپلىمە سانلىق مەلۇماتى يوق ئەھۋالدا %PRODUCTNAME نى قوزغىتىۋېرەمسىز؟"
 
 #: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_CONFIGURATION_BROKENDATA_WITHREMOVE & ERRCODE_RES_MASK).String.Text
 msgid  "The personal configuration file '$(ARG1)' is corrupted and must be deleted to continue. Some of your personal settings may be lost.\nDo you want to continue startup of %PRODUCTNAME without the corrupted configuration data?"
-msgstr ""
+msgstr "'$(ARG1)' شەخسىي سەپلىمە سانلىق مەلۇماتى بۇزۇلغان. ئۇنى ئۆچۈرگەندىلا ئاندىن داۋاملاشتۇرغىلى بولىدۇ. بەزى شەخسىي تەڭشەك يوقالغان بولۇشى مۇمكىن.\nبۇزۇلغان سەپلىمە سانلىق مەلۇماتى يوق ئەھۋالدا %PRODUCTNAME نى قوزغىتىۋېرەمسىز؟"
 
 #: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_CONFIGURATION_BACKENDMISSING & ERRCODE_RES_MASK).String.Text
 msgid  "The configuration data source '$(ARG1)' is unavailable. Without this data some functions may not operate correctly."
-msgstr ""
+msgstr "'$(ARG1)' سانلىق مەلۇمات مەنبەسى سەپلەشنى ئىشلەتكىلى بولمايدۇ. بۇ سانلىق مەلۇمات يوق، بەزى ئىقتىدارلار نورمال ئىجرا بولماسلىقى مۇمكىن."
 
 #: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_CONFIGURATION_BACKENDMISSING_WITHRECOVER & ERRCODE_RES_MASK).String.Text
 msgid  "The configuration data source '$(ARG1)' is unavailable. Without this data some functions may not operate correctly.\nDo you want to continue startup of %PRODUCTNAME without the missing configuration data?"
-msgstr ""
+msgstr "'$(ARG1)' سانلىق مەلۇمات مەنبەسى سەپلەشنى ئىشلەتكىلى بولمايدۇ. بۇ سانلىق مەلۇمات يوق، بەزى ئىقتىدارلار نورمال ئىجرا بولماسلىقى مۇمكىن.\nسەپلىمە سانلىق مەلۇماتى يوق ئەھۋالدا %PRODUCTNAME نى قوزغىتىۋېرەمسىز؟"
 
 #: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_INVALID_XFORMS_SUBMISSION_DATA & ERRCODE_RES_MASK).STRING.Text
 msgid  "The form contains invalid data. Do you still want to continue?"
-msgstr ""
+msgstr "بۇ جەدۋەل ئىناۋەتسىز سانلىق مەلۇماتنى ئۆز ئىچىگە ئالغان. داۋاملاشتۇرىۋېرەمسىز؟"
 
 #: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_LOCKING_LOCKED & ERRCODE_RES_MASK).String.Text
 msgid  "The file $(ARG1) is locked by another user. Currently, another write access to this file cannot be granted."
-msgstr ""
+msgstr "بۇ $(ARG1) ھۆججەتنى باشقا ئىشلەتكۈچى قۇلۇپلىغان. نۆۋەتتە، بۇ ھۆججەتكە يەنە بىر يېزىش زىيارەت ھوقۇقىغا يول قويۇلمايدۇ."
 
 #: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_LOCKING_LOCKED_SELF & ERRCODE_RES_MASK).String.Text
 msgid  "The file $(ARG1) is locked by yourself. Currently, another write access to this file cannot be granted."
-msgstr ""
+msgstr "بۇ $(ARG1) ھۆججەتنى ئۆزىڭىز قۇلۇپلىغان. نۆۋەتتە، بۇ ھۆججەتكە يەنە بىر يېزىش زىيارەت ھوقۇقىغا يول قويۇلمايدۇ."
 
 #: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_LOCKING_NOT_LOCKED & ERRCODE_RES_MASK).String.Text
 msgid  "The file $(ARG1) is currently not locked by yourself."
@@ -369,23 +369,23 @@ msgstr "بۇ $(ARG1) ھۆججەتنى نۆۋەتتە ئۆزىڭىز قۇلۇپل
 
 #: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_LOCKING_LOCK_EXPIRED & ERRCODE_RES_MASK).String.Text
 msgid  "The previously obtained lock for file $(ARG1) has expired.\nThis can happen due to problems on the server managing the file lock. It cannot be guaranteed that write operations on this file will not overwrite changes done by other users!"
-msgstr ""
+msgstr "ئىلگىرى ئېرىشكەن $(ARG1) ھۆججەت قۇلۇپىنىڭ ۋاقتى ئۆتتى.\nبۇ خىل ئەھۋال باشقۇرۇش سەۋەبىدىن مۇلازىمىتىردىكى ھۆججەت قۇلۇپلانغان بولۇشى مۇمكىن. بۇ ھۆججەتنىڭ يېزىش مەشغۇلاتى باشقا ئىشلەتكۈچىنىڭ ئۆزگەرتىشىنى قاپلىۋېتىشكە كاپالەتلىك قىلالمايدۇ."
 
 #: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_UNKNOWNAUTH_UNTRUSTED).STRING.Text
 msgid  "Unable to verify the identity of $(ARG1) site.\n\nBefore accepting this certificate, you should examine this site's certificate carefully. Are you willing to accept this certificate for the purpose of identifying the Web site $(ARG1)?"
-msgstr ""
+msgstr "$(ARG1) بېكەتنىڭ سالاھىيىتىنى دەلىللىيەلمىدى. \n\nبۇ گۇۋاھنامىنى قوبۇل قىلىشتىن ئىلگىرى، بۇ بېكەتنىڭ گۇۋاھنامىسىنى تەپسىلىي تەكشۈرۈڭ. سىز بۇ گۇۋاھنامىنى قوبۇل قىلىپ $(ARG1) تور بېكەتنى تونۇماقچىمۇ؟"
 
 #: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_SSLWARN_EXPIRED_1).STRING.Text
 msgid  "$(ARG1) is a site that uses a security certificate to encrypt data during transmission, but its certificate expired on $(ARG2).\n\nYou should check to make sure that your computer's time is correct."
-msgstr ""
+msgstr "$(ARG1) بېكەت يوللاش جەريانىدا بىخەتەرلىك دەلىللەپ شىفىرلىق سانلىق مەلۇمات ئىشلىتىدىغان تور بېكەت، ئەمما بۇ بېكەتنىڭ گۇۋاھنامىسى $(ARG2) ۋاقتى ئۆتىدۇ. \n\nكومپيۇتېر ۋاقتىڭىزنىڭ توغرىلىقىنى جەزملەڭ."
 
 #: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_SSLWARN_DOMAINMISMATCH_1).STRING.Text
 msgid  "You have attempted to establish a connection with $(ARG1). However, the security certificate presented belongs to $(ARG2). It is possible, though unlikely, that someone may be trying to intercept your communication with this web site.\n\nIf you suspect the certificate shown does not belong to $(ARG1), please cancel the connection and notify the site administrator.\n\nWould you like to continue anyway?"
-msgstr ""
+msgstr "سىز$(ARG1) غا ئۇلىنىشنى سىناۋاتىسىز. ئەمما بىخەتەرلىك گۇۋاھنامىسى $(ARG2) غا تەۋە. مۇمكىنچىلىكى ئانچە چوڭ بولمىسىمۇ ئەمما باشقىلار سىزنىڭ تور بېكەت بىلەن بولغان ئالاقىڭىزنى ئۈزۈشكە ئۇرۇنۇۋاتىدۇ. \n\nئەگەر كۆرسىتىلگەن گۇۋاھنامىنىڭ $(ARG1) غا تەۋە ئىكەنلىكىدىن گۇمانلانسىڭىز بۇ ئۇلىنىشتىن ۋاز كېچىپ تور بېكەت باشقۇرغۇچىغا مەلۇم قىلىڭ.\n\nداۋاملاشتۇرۇۋېرەمسىز؟"
 
 #: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_SSLWARN_INVALID_1).STRING.Text
 msgid  "The certificate could not be validated. You should examine this site's certificate carefully.\n\nIf you suspect the certificate shown, please cancel the connection and notify the site administrator."
-msgstr ""
+msgstr "بۇ گۇۋاھنامىنى دەلىللىيەلمىدى. بۇ تور بېكەتنىڭ گۇۋاھنامىسىنى تەپسىلىي تەڭشۈرۈڭ.\n\nئەگەر كۆرۈنگەن گۇۋاھنامىدىن گۇمانلانسىڭىز، ئۇلىنىشتىن ۋاز كېچىپ بۇ بېكەتنىڭ باشقۇرغۇچىسىغا مەلۇم قىلىڭ."
 
 #: source/ids.src#RID_UUI_ERRHDL.(TITLE_UUI_SSLWARN_DOMAINMISMATCH).STRING.Text
 msgid  "Security Warning: Domain Name Mismatch"
@@ -413,11 +413,11 @@ msgstr "مۇلازىمىتىر ئۇچۇرى:"
 
 #: source/logindlg.src#DLG_UUI_LOGIN.FT_INFO_LOGIN_REQUEST.FixedText.Text
 msgid  "Enter user name and password for: \n%1"
-msgstr ""
+msgstr "ئىشلەتكۈچى ئاتى ۋە ئىم كىرگۈزۈڭ: %1"
 
 #: source/logindlg.src#DLG_UUI_LOGIN.STR_LOGIN_REALM.String.Text
-msgid  "Enter user name and password for: \n"%2" on %1"
-msgstr ""
+msgid  "Enter user name and password for: \n\"%2\" on %1"
+msgstr "ئىشلەتكۈچى ئاتى ۋە ئىم كىرگۈزۈڭ: %1 دىكى \"%2\" غا زۆرۈر بولغان"
 
 #: source/logindlg.src#DLG_UUI_LOGIN.FT_LOGIN_PATH.FixedText.Text
 msgid  "~Path"
@@ -469,7 +469,7 @@ msgstr "يوللا(~S)"
 
 #: source/cookiedg.src#STR_COOKIES_RECV_START.String.Text
 msgid  "The '${HOST}' server wishes to set one or more cookies.\nCookies contain information referring to certain URL classes. If %PRODUCTNAME later requests a document with a URL corresponding to the class of a previously set cookie, %PRODUCTNAME will send this information to the server. This allows a server to recognize the status of a WWW application, e.g., when shopping online.\n\nThe following Cookies should be set:\n\n"
-msgstr ""
+msgstr "'${HOST}' مۇلازىمىتىر بىر ياكى بىر قانچە cookie تەڭشىمەكچى. \nCookie بەلگىلەنگەن URL تۈرىگە مۇناسىۋەتلىك ئۇچۇرلارنى ئۆز ئىچىگە ئالىدۇ. ئەگەر %PRODUCTNAME كېيىن پۈتۈكتىن بىرنى تەلەپ قىلسا شۇ پۈتۈكنىڭ URL بۇرۇن تەڭشەلگەن مەلۇم cookie تۈرى بىلەن ماس كەلسە %PRODUCTNAME مۇلازىمىتىرغا بۇ ئۇچۇرنى يوللايدۇ. بۇنداق بولغاندا مۇلازىمىتىر WWW قوللىنىشچان پروگراممىسىنىڭ ھالىتى (ئەگەر توردا مال سېتىۋالغاندا) نى تونۇيالايدۇ. \n\nتۆۋەندىكى Cookie تەڭشەش لازىم:\n\n"
 
 #: source/cookiedg.src#STR_COOKIES_RECV_COOKIES.String.Text
 msgid  "Domain: ${DOMAIN}, Path: ${PATH}, Cookie: ${COOKIE}.\n"
@@ -481,7 +481,7 @@ msgstr "Cookie قوبۇل قىل"
 
 #: source/cookiedg.src#STR_COOKIES_SEND_START.String.Text
 msgid  "%PRODUCTNAME has saved cookies for the server '${HOST}' which will be sent when requesting the document ${PATH}.\nCookies contain information which refers to certain URL classes. They are sent by some servers to %PRODUCTNAME where they are saved when certain documents are accessed. If %PRODUCTNAME loads a document that, according to the URL, corresponds to a class of one of the previously received Cookies, %PRODUCTNAME will send this information to that server. This enables a server to keep track of the status of a WWW application, e.g., when shopping online.\n\nThe following Cookies should be set:\n\n"
-msgstr ""
+msgstr "%PRODUCTNAME مۇلازىمېتىر '${HOST}' نىڭ بىر ياكى بىر قانچە cookie تەڭشىمەكچى. Cookie بەلگىلەنگەن URL تۈرىگە مۇناسىۋەتلىك ئۇچۇرلارنى ئۆز ئىچىگە ئالىدۇ. بۇ ئۇچۇرلار بەزى پۈتۈكلەر زىيارەت قىلىنغاندا مۇلازىمېتىرلار %PRODUCTNAME ئەۋەتىپ ساقلىغان. ئەگەر %PRODUCTNAME كېيىن پۈتۈك ${PATH} نى تەلەپ قىلسا شۇ پۈتۈكنىڭ URL بۇرۇن تەڭشەلگەن مەلۇم cookie تۈرى بىلەن ماس كەلسە %PRODUCTNAME مۇلازىمېتىرغا بۇ ئۇچۇرنى يوللايدۇ. بۇنداق بولغاندا مۇلازىمېتىر WWW قوللىنىشچان پروگراممىسىنىڭ ھالىتى (ئەگەر توردا مال سېتىۋالغاندا) نى تونۇيالايدۇ. \n\nتۆۋەندىكى Cookie تەڭشەش لازىم:\n\n"
 
 #: source/cookiedg.src#STR_COOKIES_SEND_COOKIES.String.Text
 msgid  "Domain: ${DOMAIN}, Path: ${PATH}, Cookie: ${COOKIE}.\n"
@@ -501,7 +501,7 @@ msgstr "ئىم خاتا، ھۆججەتنى تۈزىتەلمىدى."
 
 #: source/passworderrs.src#STR_ERROR_MASTERPASSWORD_WRONG.String.Text
 msgid  "The master password is incorrect."
-msgstr ""
+msgstr "كىرگۈزگەن ئاساىي ئىم خاتا. %PRODUCTNAME ئاساسىي ئىم بىلەن قوغدالغان web تىزىمغا كىرىش ئۇچۇرلىرىنى زىيارەت قىلالمايدۇ.\n\nدىققەت: ئىم چوڭ كىچىك يېزىلىشنى پەرقلەندۈرىدۇ، ئۇزۇنلۇقى ئاز دېگەندە 5 ھەرپ."
 
 #: source/passworderrs.src#STR_ERROR_SIMPLE_PASSWORD_WRONG.String.Text
 msgid  "The password is incorrect."
@@ -529,7 +529,7 @@ msgstr "ھۆججەت ئىشلىتىلىۋاتىدۇ"
 
 #: source/openlocked.src#STR_OPENLOCKED_MSG.String.Text
 msgid  "Document file '$(ARG1)' is locked for editing by:\n\n$(ARG2)\n\nOpen document read-only or open a copy of the document for editing.\n\n"
-msgstr ""
+msgstr "'$(ARG1)' پۈتۈك ھۆججىتىنىڭ تەھرىرلەش ئىقتىدارىنى قۇلۇپلىغۇچى:\n\n$(ARG2)\n\nپۈتۈكنى ئوقۇشقىلا بولىدىغان ھالەتتە ئېچىڭ ياكى كۆچۈرمە نۇسخىسىدىن بىرنى ئېچىپ تەھرىرلەڭ.\n\n"
 
 #: source/openlocked.src#STR_OPENLOCKED_OPENREADONLY_BTN.String.Text
 msgid  "Open ~Read-Only"
@@ -549,7 +549,7 @@ msgstr "پۈتۈكنى باشقىلار ئۆزگەرتىپتۇ"
 
 #: source/filechanged.src#STR_FILECHANGED_MSG.String.Text
 msgid  "The file has been changed since it was opened for editing in %PRODUCTNAME. Saving your version of the document will overwrite changes made by others.\n\nDo you want to save anyway?\n\n"
-msgstr ""
+msgstr "%PRODUCTNAME دا ھۆججەت ئېچىلىپ تەھرىرلەندى، شۇڭلاشقا ئۇ ھۆججەت ئۆزگەرتىلدى. سىز ئۆزگەرتكەندىن كېيىنكى پۈتۈك باشقىلارنىڭ ئۆزگەرتىشىنى قاپلىۋېتىدۇ..\n\nساقلاۋېرەمسىز؟\n\n"
 
 #: source/filechanged.src#STR_FILECHANGED_SAVEANYWAY_BTN.String.Text
 msgid  "~Save Anyway"
@@ -561,7 +561,7 @@ msgstr "%PRODUCTNAME يېڭىلاشنى ئىشلەتكىلى بولىدۇ"
 
 #: source/newerverwarn.src#RID_DLG_NEWER_VERSION_WARNING.FT_INFO.FixedText.Text
 msgid  "This document was created by a newer version of %PRODUCTNAME. It may contain features not supported by your current version.\n\nClick 'Update Now...' to run online update and get the latest version of %PRODUCTNAME."
-msgstr ""
+msgstr "بۇ پۈتۈكنى %PRODUCTNAME نىڭ يېڭى نەشرىدە قۇرغان. ئۇنىڭدا سىز ھازىر ئىشلىتىۋاتقان نەشرى قوللىمايدىغان ئىقتىدار بولۇشى مۇمكىن.\n\n«دەرھال يېڭىلا…»نى چېكىپ توردا يېڭىلاشنى ئىجرا قىلىپ %PRODUCTNAME نىڭ ئەڭ يېڭى نەشرىگە ئېرىشىڭ."
 
 #: source/newerverwarn.src#RID_DLG_NEWER_VERSION_WARNING.PB_UPDATE.PushButton.Text
 msgid  "~Update Now..."
@@ -609,7 +609,7 @@ msgstr "ئىمزا كۆرسەت…"
 
 #: source/secmacrowarnings.src#RID_XMLSECDLG_MACROWARN.FI_DESCR2.FixedText.Text
 msgid  "Macros may contain viruses. Disabling macros for a document is always safe. If you disable macros you may lose functionality provided by the document macros."
-msgstr ""
+msgstr "ماكرودا ۋىرۇس بولۇشى مۇمكىن. پۈتۈكتىكى ماكرو چەكلەنسە ئادەتتە بىخەتەر بولىدۇ. ئەگەر ماكرو چەكلىسىڭىز، ئۇنداقتا پۈتۈك تەمىنلىگەن ئىقتىدارنى ئىشلىتەلمەسلىكىڭىز مۇمكىن."
 
 #: source/secmacrowarnings.src#RID_XMLSECDLG_MACROWARN.CB_ALWAYSTRUST.CheckBox.Text
 msgid  "Always trust macros from this source"
@@ -637,7 +637,7 @@ msgstr "ئاساسىي ئىم تەڭشەك"
 
 #: source/masterpasscrtdlg.src#DLG_UUI_MASTERPASSWORD_CRT.FT_INFOTEXT.FixedText.Text
 msgid  "Passwords for web connections are protected by a master password. You will be asked to enter it once per session, if %PRODUCTNAME retrieves a password from the protected password list."
-msgstr ""
+msgstr "web ئۇلىنىش ئىم ئاساسىي ئىم بىلەن قوغدالغان. ئەگەر %PRODUCTNAME قوغدالغان ئىم تىزىملىكىدىن ئىمدىن بىرنى ئىزدەپ تاپسا، ھەر قېتىملىق سۆزلىشىشتە سىزدىن ئىم كىرگۈزۈشنى تەلەپ قىلىدۇ."
 
 #: source/masterpasscrtdlg.src#DLG_UUI_MASTERPASSWORD_CRT.FT_MASTERPASSWORD_CRT.FixedText.Text
 msgid  "~Enter password"
@@ -649,11 +649,11 @@ msgstr "ئىمنى قايتا كىرگۈزۈڭ(~R)"
 
 #: source/masterpasscrtdlg.src#DLG_UUI_MASTERPASSWORD_CRT.FT_CAUTIONTEXT.FixedText.Text
 msgid  "Caution: If you forget the master password, you will be unable to access any of the information protected by it. Passwords are case-sensitive."
-msgstr ""
+msgstr "دىققەت: ئاساسىي ئىمنى ئەستە تۇتقانلىقىڭىزنى جەزملەڭ. ئەگەر ئاساسىي ئىمنى ئۇنتۇپ قالسىڭىز، شۇ ئىمدا قوغدالغان ھەر قانداق ئۇچۇرنى زىيارەت قىلالمايسىز. ئىم چوڭ كىچىك يېزىلىشنى پەرقلەندۈرىدۇ، ئۇزۇنلۇقى ئەڭ ئاز دېگەندىمۇ 5 ھەرپ."
 
 #: source/alreadyopen.src#STR_ALREADYOPEN_MSG.String.Text
 msgid  "Document file '$(ARG1)' is locked for editing by yourself on a different system since $(ARG2)\n\nOpen document read-only, or ignore own file locking and open the document for editing.\n\n"
-msgstr ""
+msgstr "'$(ARG1)' پۈتۈك ھۆججىتى $(ARG2) دا ئوخشاش بولمىغان سىستېمىدا ئۆزىڭىز تەھرىرلەشنى قۇلۇپلىدىڭىز.\n\nپۈتۈكنى ئوقۇشقىلا بولىدىغان ھالەتتە ئاچالايسىز ياكى ئۆزىڭىزنىڭ قۇلۇپىغا پەرۋا قىلماي، پۈتۈكنى ئېچىپ تەھرىرىلىسىڭىز بولىدۇ.\n\n"
 
 #: source/alreadyopen.src#STR_ALREADYOPEN_READONLY_BTN.String.Text
 msgid  "Open ~Read-Only"
@@ -665,7 +665,7 @@ msgstr "ئاچ(~O)"
 
 #: source/alreadyopen.src#STR_ALREADYOPEN_SAVE_MSG.String.Text
 msgid  "Document file '$(ARG1)' is locked for editing by yourself on a different system since $(ARG2)\n\nClose document on other system and retry saving or ignore own file locking and save current document.\n\n"
-msgstr ""
+msgstr "'$(ARG1)' پۈتۈك ھۆججىتى $(ARG2) دا ئوخشاش بولمىغان سىستېمىدا ئۆزىڭىز تەھرىرلەشنى قۇلۇپلىدىڭىز.\n\nباشقا سىستېمىدا پۈتۈكنى يېپىپ، قايتا ساقلاڭ ياكى ئۆزىڭىزسالغان قۇلۇپقا پەرۋا قىلماي، نۆۋەتتىكى پۈتۈكنى ساقلاڭ.\n\n"
 
 #: source/alreadyopen.src#STR_ALREADYOPEN_RETRY_SAVE_BTN.String.Text
 msgid  "~Retry Saving"
@@ -677,4 +677,4 @@ msgstr "ساقلا(~S)"
 
 #: source/lockfailed.src#STR_LOCKFAILED_MSG.String.Text
 msgid  "The file could not be locked for exclusive access by %PRODUCTNAME, due to missing permission to create a lock file on that file location."
-msgstr ""
+msgstr "%PRODUCTNAME ئۆز ئالدىغا يالغۇر زىيارەت قىلىشقا ئىشلىتىش ئۈچۈن بۇ ھۆججەتنى قۇلۇپلىيالمىدى، بۇ ھۆججەت تۇرۇشلۇق ئورۇندا ھۆججەت قۇلۇپلاش ھوقۇقىنىڭ كەم بولۇشىدىن بولۇشى مۇمكىن."

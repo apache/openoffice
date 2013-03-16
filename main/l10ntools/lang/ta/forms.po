@@ -157,7 +157,7 @@ msgstr "மதிப்பிடும் போது பிழை"
 
 #: source/resource/xforms.src#RID_STR_XFORMS_PATTERN_DOESNT_MATCH.String.Text
 msgid  "The string '$1' does not match the required regular expression '$2'."
-msgstr ""
+msgstr "சரம் '$1' த்திற்கு சரியாக பொருந்தி எதிர்பார்ப்பு '$2'க்கு தேவைப்படுகிறது."
 
 #: source/resource/xforms.src#RID_STR_XFORMS_BINDING_UI_NAME.String.Text
 msgid  "Binding"
@@ -177,7 +177,7 @@ msgstr "மாற்றப்பட்டது"
 
 #: source/resource/strings.src#RID_STR_CONTROL_SUBSTITUTED_EPXPLAIN.String.Text
 msgid  "An error occurred while this control was being loaded. It was therefore replaced with a placeholder."
-msgstr ""
+msgstr "கட்டுப்பாட்டை ஏற்றும் போது பிழை ஏற்பட்டது. ஆகையால் வெற்றிட நிரப்பியால் நிரப்பப்பட்டது."
 
 #: source/resource/strings.src#RID_STR_READERROR.String.Text
 msgid  "Error reading data from database"
@@ -233,7 +233,7 @@ msgstr "கேள்வியில் இலக்கணப்பிழை உ�
 
 #: source/resource/strings.src#RID_STR_INCOMPATIBLE_TYPES.String.Text
 msgid  "The value types supported by the binding cannot be used for exchanging data with this control."
-msgstr ""
+msgstr "மதிப்பு வகைகள் பிணைக்கும் துணைபுரிதலின் படி மாற்று தரவு இந்த கட்டுப்படுத்தியுடன் பயன்படுத்த முடியவில்லை."
 
 #: source/resource/strings.src#RID_STR_LABEL_RECORD.String.Text
 msgid  "Record"
@@ -241,7 +241,7 @@ msgstr "பதிவேடு"
 
 #: source/resource/strings.src#RID_STR_INVALID_VALIDATOR.String.Text
 msgid  "The control is connected to an external value binding, which at the same time acts as validator. You need to revoke the value binding, before you can set a new validator."
-msgstr ""
+msgstr "ஒரு வெளிப்புற மதிப்பு பிணைப்பிற்கு கட்டுபடுத்தி இணைக்கப்பட்டது, மதிப்பாளராக அதே நேரத்தில் செயல்படுகிறது. மதப்பு பிணைப்பிற்கு ரத்து செய்ய வேண்டும், ஒரு புதிய மதிப்பாளரை முன் அமைக்கவும்."
 
 #: source/resource/strings.src#RID_STR_LABEL_OF.String.Text
 msgid  "of"
@@ -249,7 +249,7 @@ msgstr "ஆல்"
 
 #: source/resource/strings.src#RID_STR_QUERY_SAVE_MODIFIED_ROW.String.Text
 msgid  "The content of the current form has been modified.\nDo you want to save your changes?"
-msgstr ""
+msgstr "நடப்பு படிவத்தின் உள்ளடக்கம் மாற்றியமைக்கப்படும்.\nஉங்கள் மாற்றங்களை நீங்கள் சேமிக்க விரும்புகிறீர்களா?"
 
 #: source/resource/strings.src#RID_STR_COULD_NOT_SET_ORDER.String.Text
 msgid  "Error setting the sort criteria"

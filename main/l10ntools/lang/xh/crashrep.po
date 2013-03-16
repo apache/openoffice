@@ -45,7 +45,7 @@ msgstr ""
 
 #: source/all/crashrep.ulf#%WELCOME_BODY2%
 msgid  "It's easy - just send the report without any further effort on your part by clicking 'Send' in the next dialog, or you can briefly describe how the error occurred and then click 'Send'. If you want to see the report, click the 'Show Report' button. No data will be sent if you click 'Do Not Send'.\n\n"
-msgstr ""
+msgstr "Dis maklik - stuur net die verslag, sonder enige verdere moeite, deur op 'Stuur' in die volgende dialoog te kliek, of u kan kortliks beskryf hoe die fout ontstaan het en dan op 'Stuur' kliek. As u die verslag wil sien, kliek die 'Wys verslag' -knoppie. Geen data sal versend word as u op 'Moenie stuur' kliek.\n\n"
 
 #: source/all/crashrep.ulf#%WELCOME_BODY3%
 msgid  "Customer Privacy\nThe information gathered is limited to data concerning the state of %PRODUCTNAME% %PRODUCTVERSION% when the error occurred. Other information about passwords or document contents is not collected.\n\nThe information will only be used to improve the quality of %PRODUCTNAME% and will not be shared with third parties.\nFor more information on Apache OpenOffice's privacy policy, visit\n"
@@ -81,7 +81,7 @@ msgstr ""
 
 #: source/all/crashrep.ulf#%ENTER_TITLE%
 msgid  "Which type of document (e.g. presentation) were you using when the error occurred?"
-msgstr ""
+msgstr "~Watter soort dokument (bv. voorlegging) het u gebruik toe die fout plaasgevind het?"
 
 #: source/all/crashrep.ulf#%ALLOW_CONTACT%
 msgid  "~I allow Apache OpenOffice to contact me regarding this report."
@@ -121,23 +121,23 @@ msgstr "Stoor verslag in"
 
 #: source/all/crashrep.ulf#%ERROR_MSG_SIMPLE_MAPI%
 msgid  "The error report could not be sent because the default e-mail program does not support MAPI.\n Please use a MAPI-compatible e-mail program."
-msgstr ""
+msgstr "Die foutverslag kon nie gestuur word nie want die verstek e-posprogram werk nie met MAPI nie.\n Gebruik asseblief 'n MAPI-versoenbare e-posprogram."
 
 #: source/all/crashrep.ulf#%ERROR_MSG_DISK_FULL%
 msgid  "The error report could not be temporarily saved and could therefore not be sent."
-msgstr ""
+msgstr "Die foutverslag kon nie tydelik gestoor word nie en kon daarom nie gestuur word nie."
 
 #: source/all/crashrep.ulf#%ERROR_MSG_SENDMAIL%
 msgid  "The error report could not be sent because 'sendmail' could not be started.\nPlease check the 'sendmail' settings."
-msgstr ""
+msgstr "Die foutverslag kon nie gestuur word nie want 'sendmail' kon nie begin word nie.\nGaan asseblief die 'sendmail'-instelling na."
 
 #: source/all/crashrep.ulf#%ERROR_MSG_PROXY%
 msgid  "The error report could not be sent. Please check the proxy settings under 'Options' in the Error Report Tool."
-msgstr ""
+msgstr "Die foutverslag kon nie gestuur word nie. Gaan asseblief die instaan-instellings onder 'Opsies' na in die foutverslag nutsitem."
 
 #: source/all/crashrep.ulf#%ERROR_MSG_NOCONNECT%
 msgid  "The error report could not be sent because there is no Internet connection. Please check your Internet settings."
-msgstr ""
+msgstr "Die foutverslag kon nie gestuur word nie want daar is geen internetverbinding nie. Gaan asseblief u internet-instellings na."
 
 #: source/all/crashrep.ulf#%OPTIONS_BUTTON%
 msgid  "~Options..."
@@ -173,7 +173,7 @@ msgstr "~Poort"
 
 #: source/all/crashrep.ulf#%PROXY_SETTINGS_DESCRIPTION%
 msgid  "The %PRODUCTNAME% Error Report tool needs to be connected to the Internet to be able to send error reports.\n\nCompanies often use proxy servers in conjunction with a firewall to protect the network.\n\nIf this applies to your situation, you have to specify the address and port for the server."
-msgstr ""
+msgstr "Die %PRODUCTNAME%-foutverslagnutsitem moet aan die internet gekoppel wees om foutverslae te kan stuur.\n\nBesighede gebruik dikwels instaanbedieners saam met 'n brandmuur om die netwerk te beskerm.\n\nAs dit op u situasie van toepassing is, moet u die adres en poort vir die bediener spesifiseer."
 
 #: source/all/crashrep.ulf#%SENDING_REPORT_HEADER%
 msgid  "Sending Error Report"
@@ -205,4 +205,4 @@ msgstr "Ken die %PRODUCTNAME%-proses-ID (PID) toe aan die foutverslagnutsitem"
 
 #: source/all/crashrep.ulf#%MSG_PARAM_HELP_DESCRIPTION%
 msgid  "Shows this help text.\nDetailed information can be found in the Setup Guide."
-msgstr ""
+msgstr "Vertoon hierdie hulpteks.\nGedetailleerde inligting kan in die opstellingsgids gevind word."

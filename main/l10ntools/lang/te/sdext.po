@@ -73,7 +73,7 @@ msgstr "ఉపోద్ఘాతము"
 
 #: source/minimizer/registry/data/org/openoffice/Office/extension/SunPresentationMinimizer.xcu#.SunPresentationMinimizer.Strings.STR_INTRODUCTION_T
 msgid  "The @MINIMIZEREXTENSIONPRODUCTNAME@ is used to reduce the file size of the current presentation. Images will be compressed and data, that is no longer needed, will be removed. At the last step of the wizard you can choose to apply the changes to the current presentation or to create an optimized new version of the presentation."
-msgstr ""
+msgstr "ప్రస్తుత సమర్పణ యొక్క ఫైలు పరిమాణమును తగ్గించుటకు Oracle సమర్పణ చిన్నదిచేయునది వుపయోగించబడును. చిత్రములు కుదించబడును మరియు డాటా, వుపయోగించకుండా వున్నది, తీసివేయబడును. విజార్డు యొక్క ఆఖరి అంచెనందు మీరు మార్పులను ప్రస్తుత సమర్పణకు ఆపాదించవచ్చును లేదా సమర్పణకు అనుకూలమైన కొత్త వర్షన్‌ను సృష్టించవచ్చును."
 
 #: source/minimizer/registry/data/org/openoffice/Office/extension/SunPresentationMinimizer.xcu#.SunPresentationMinimizer.Strings.STR_CHOSE_SETTINGS
 msgid  "~Choose settings for @MINIMIZEREXTENSIONPRODUCTNAME@"
@@ -153,11 +153,11 @@ msgstr "OpenDocument ఫార్మాటుపైన ఆధారపడని 
 
 #: source/minimizer/registry/data/org/openoffice/Office/extension/SunPresentationMinimizer.xcu#.SunPresentationMinimizer.Strings.STR_OLE_OBJECTS_DESC
 msgid  "Object Linking and Embedding (OLE) is a technology that allows embedding and linking to documents and other objects. The current presentation contains OLE objects."
-msgstr ""
+msgstr "ఆబ్జక్టు లింకింగ్ మరియు యెంబెడింగ్ (OLE) అనునది వొక సాంకేతికత అది పత్రములకు మరియు యితర ఆబ్జక్టులకు ఎంబెడింగ్‌ను మరియు లింకింగ్‌ను అనుమతించును. ప్రస్తుత సమర్పణ అనునది OLE ఆబ్జక్టులను కలిగివుంది."
 
 #: source/minimizer/registry/data/org/openoffice/Office/extension/SunPresentationMinimizer.xcu#.SunPresentationMinimizer.Strings.STR_NO_OLE_OBJECTS_DESC
 msgid  "Object Linking and Embedding (OLE) is a technology that allows embedding and linking to documents and other objects. The current presentation contains no OLE objects."
-msgstr ""
+msgstr "ప్రతిమ మరియు ఓ ఎల్ ఇ మరియు మరియు ఓ ఎల్ ఇ."
 
 #: source/minimizer/registry/data/org/openoffice/Office/extension/SunPresentationMinimizer.xcu#.SunPresentationMinimizer.Strings.STR_SLIDES
 msgid  "Slides"
@@ -225,7 +225,7 @@ msgstr "%SLIDES స్లైడులను తొలగించుము."
 
 #: source/minimizer/registry/data/org/openoffice/Office/extension/SunPresentationMinimizer.xcu#.SunPresentationMinimizer.Strings.STR_OPTIMIZE_IMAGES
 msgid  "Optimize %IMAGES graphics to %QUALITY% JPEG quality at %RESOLUTION DPI."
-msgstr ""
+msgstr "%IMAGES గ్రాఫిక్సును %QUALITY% JPEG నాణ్యతకు %RESOLUTION DPI వద్ద నాణ్యీకరించుము."
 
 #: source/minimizer/registry/data/org/openoffice/Office/extension/SunPresentationMinimizer.xcu#.SunPresentationMinimizer.Strings.STR_CREATE_REPLACEMENT
 msgid  "Create replacement graphics for %OLE objects."
@@ -253,7 +253,7 @@ msgstr "అప్రమేయ సెషన్"
 
 #: source/minimizer/registry/data/org/openoffice/Office/extension/SunPresentationMinimizer.xcu#.SunPresentationMinimizer.Strings.STR_MODIFY_WARNING
 msgid  "The optimization will modify the current document. Do you want to continue?"
-msgstr ""
+msgstr "నాణ్యీకరణ ప్రస్తుత పత్రమును సవరించుతుంది. మీరు కొనసాగించుదామని అనుకొనుచున్నారా?"
 
 #: source/minimizer/registry/data/org/openoffice/Office/extension/SunPresentationMinimizer.xcu#.SunPresentationMinimizer.Strings.STR_YES
 msgid  "~Yes"
@@ -265,19 +265,19 @@ msgstr "సరే"
 
 #: source/minimizer/registry/data/org/openoffice/Office/extension/SunPresentationMinimizer.xcu#.SunPresentationMinimizer.Strings.STR_INFO_1
 msgid  "The @MINIMIZEREXTENSIONPRODUCTNAME@ has successfully updated the presentation '%TITLE'. The file size has changed from %OLDFILESIZE MB to %NEWFILESIZE MB."
-msgstr ""
+msgstr "%EXTENSIONNAME సమర్ధవంతంగా '%TITLE' సమర్పణను నవీకరించినది. ఫైలు పరిమాణము  %OLDFILESIZE MB నుండిo %NEWFILESIZE Mకు ఫైలు పరిమాణము మార్చబడినది.."
 
 #: source/minimizer/registry/data/org/openoffice/Office/extension/SunPresentationMinimizer.xcu#.SunPresentationMinimizer.Strings.STR_INFO_2
 msgid  "The @MINIMIZEREXTENSIONPRODUCTNAME@ has successfully updated the presentation '%TITLE'. The file size has changed from %OLDFILESIZE MB to approximated %NEWFILESIZE MB."
-msgstr ""
+msgstr "%EXTENSIONNAME సమర్ధవంతంగా సమర్పణ '%TITLE'ను నవీకరించినది. ఫైలు పరిమాణము %OLDFILESIZE MB నుండి దాదాపుగా %NEWFILESIZE MBకు మార్చబడినది."
 
 #: source/minimizer/registry/data/org/openoffice/Office/extension/SunPresentationMinimizer.xcu#.SunPresentationMinimizer.Strings.STR_INFO_3
 msgid  "The @MINIMIZEREXTENSIONPRODUCTNAME@ has successfully updated the presentation '%TITLE'. The file size has changed to %NEWFILESIZE MB."
-msgstr ""
+msgstr "%EXTENSIONNAME సమర్ధవంతంగా సమర్పణ '%TITLE'ను నవీకరించినది. ఫైలు పరిమాణము %NEWFILESIZE MBకు మార్చబడినది."
 
 #: source/minimizer/registry/data/org/openoffice/Office/extension/SunPresentationMinimizer.xcu#.SunPresentationMinimizer.Strings.STR_INFO_4
 msgid  "The @MINIMIZEREXTENSIONPRODUCTNAME@ has successfully updated the presentation '%TITLE'. The file size has changed to approximated %NEWFILESIZE MB."
-msgstr ""
+msgstr "%EXTENSIONNAME సమర్ధవంతంగా సమర్పణన '%TITLE'ను నవీకరించినది. ఫైలు పరిమాణము దాదాపు %NEWFILESIZE MB పరిమాణముకు మార్చబడినది."
 
 #: source/minimizer/registry/data/org/openoffice/Office/extension/SunPresentationMinimizer.xcu#.SunPresentationMinimizer.Strings.STR_DUPLICATING_PRESENTATION
 msgid  "Duplicating presentation..."
@@ -329,7 +329,7 @@ msgstr "Oracle సమర్పణి కన్సోల్ కీబోర్డ
 
 #: source/presenter/help/en-US/com.sun.PresenterScreen/presenter.xhp#par_id0921201912165656
 msgid  "When running a slide show using the @PRESENTEREXTENSIONPRODUCTNAME@, you can use the following keys:"
-msgstr ""
+msgstr "Oracle సమర్పణి కన్సోల్ వుపయోగించి స్లైడ్ షోను నడుపుచున్నప్పుడు, మీరు కింది కీలను వుపయోగించవచ్చును:"
 
 #: source/presenter/help/en-US/com.sun.PresenterScreen/presenter.xhp#par_id0921200901104028
 msgid  "Action"
@@ -345,7 +345,7 @@ msgstr "తరువాతి స్లైడు, లేదా తరువా�
 
 #: source/presenter/help/en-US/com.sun.PresenterScreen/presenter.xhp#par_id0921200901104120
 msgid  "Left click, right arrow, down arrow, spacebar, page down, enter, return, 'N'"
-msgstr ""
+msgstr "Left click, right arrow, down arrow, spacebar, page down, enter, return, 'N'"
 
 #: source/presenter/help/en-US/com.sun.PresenterScreen/presenter.xhp#par_id0921200901104165
 msgid  "Previous slide, or previous effect"
@@ -505,7 +505,7 @@ msgstr "మూయుము"
 
 #: source/presenter/registry/data/org/openoffice/Office/extension/PresenterScreen.xcu#..PresenterScreen.PresenterScreenSettings.HelpView.HelpStrings.a.Left
 msgid  "Left click, right or down arrow, spacebar, page down, enter, return, 'N'"
-msgstr ""
+msgstr "ఎడమ నొక్కు, కుడి లేదా క్రింది బాణము, స్పేస్‌బార్, పుట క్రిందకు, ప్రవేశము, తిప్పియివ్వు, 'N'"
 
 #: source/presenter/registry/data/org/openoffice/Office/extension/PresenterScreen.xcu#..PresenterScreen.PresenterScreenSettings.HelpView.HelpStrings.a.Right
 msgid  "Next slide, or next effect"
@@ -693,7 +693,7 @@ msgstr "ప్రస్తుత స్లైడు (%SLIDE_COUNT% యొక్�
 
 #: source/presenter/registry/data/org/openoffice/Office/extension/PresenterScreen.xcu#..PresenterScreen.Presenter.Views.CurrentSlidePreview.AccessibleTitle
 msgid  "Current Slide, %CURRENT_SLIDE_NAME%, %CURRENT_SLIDE_NUMBER% of %SLIDE_COUNT%"
-msgstr ""
+msgstr "ప్రస్తుత స్లైడు, %CURRENT_SLIDE_NAME%, %CURRENT_SLIDE_NUMBER% of %SLIDE_COUNT%"
 
 #: source/presenter/registry/data/org/openoffice/Office/extension/PresenterScreen.xcu#..PresenterScreen.Presenter.Views.CurrentSlidePreview.Strings.ClickToExitPresentationText.String
 msgid  "Click to exit presentation..."
@@ -713,7 +713,7 @@ msgstr "గమనికలు"
 
 #: source/presenter/registry/data/org/openoffice/Office/extension/PresenterScreen.xcu#..PresenterScreen.Presenter.Views.SlideSorter.AccessibleTitle
 msgid  "Slide Overview, %CURRENT_SLIDE_NAME%, %CURRENT_SLIDE_NUMBER% of %SLIDE_COUNT%"
-msgstr ""
+msgstr "స్లైడు ఉపరితలదర్శనం, %CURRENT_SLIDE_NAME%, %CURRENT_SLIDE_NUMBER% of %SLIDE_COUNT%"
 
 #: source/presenter/registry/data/org/openoffice/Office/extension/PresenterScreen.xcu#..PresenterScreen.Presenter.Views.HelpView.Title
 msgid  "Help"

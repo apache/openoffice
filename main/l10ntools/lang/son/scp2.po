@@ -123,6 +123,10 @@ msgstr "Kabuwalha"
 msgid  "Perform calculation, analyze information and manage lists in spreadsheets by using Calc."
 msgstr ""
 
+#: source/calc/registryitem_calc.ulf#STR_REG_VAL_NEW
+msgid  "&New"
+msgstr ""
+
 #: source/calc/registryitem_calc.ulf#STR_REG_VAL_SO60_SPREADSHEET
 msgid  "%SXWFORMATNAME %SXWFORMATVERSION Spreadsheet"
 msgstr ""
@@ -153,10 +157,6 @@ msgstr ""
 
 #: source/calc/registryitem_calc.ulf#STR_REG_VAL_MS_EXCEL_TEMPLATE
 msgid  "Microsoft Excel Template"
-msgstr ""
-
-#: source/calc/registryitem_calc.ulf#STR_REG_VAL_NEW
-msgid  "&New"
 msgstr ""
 
 #: source/calc/module_calc.ulf#STR_NAME_MODULE_PRG_CALC
@@ -191,6 +191,10 @@ msgstr ""
 msgid  "Add-ins are additional programs that make new functions available in %PRODUCTNAME Calc."
 msgstr ""
 
+#: source/draw/registryitem_draw.ulf#STR_REG_VAL_NEW
+msgid  "&New"
+msgstr ""
+
 #: source/draw/registryitem_draw.ulf#STR_REG_VAL_SO60_DRAWING
 msgid  "%SXWFORMATNAME %SXWFORMATVERSION Drawing"
 msgstr ""
@@ -205,10 +209,6 @@ msgstr ""
 
 #: source/draw/registryitem_draw.ulf#STR_REG_VAL_OO_DRAW_TEMPLATE
 msgid  "OpenDocument Drawing Template"
-msgstr ""
-
-#: source/draw/registryitem_draw.ulf#STR_REG_VAL_NEW
-msgid  "&New"
 msgstr ""
 
 #: source/draw/folderitem_draw.ulf#STR_FI_NAME_ZEICHNUNG
@@ -379,6 +379,10 @@ msgstr ""
 msgid  "Create and edit presentations for slideshows, meeting and Web pages by using Impress."
 msgstr ""
 
+#: source/impress/registryitem_impress.ulf#STR_REG_VAL_NEW
+msgid  "&New"
+msgstr ""
+
 #: source/impress/registryitem_impress.ulf#STR_REG_VAL_SO60_SHOW
 msgid  "Show"
 msgstr " Cebe"
@@ -417,10 +421,6 @@ msgstr ""
 
 #: source/impress/registryitem_impress.ulf#STR_REG_VAL_MS_POWERPOINT_TEMPLATE
 msgid  "Microsoft PowerPoint Template"
-msgstr ""
-
-#: source/impress/registryitem_impress.ulf#STR_REG_VAL_NEW
-msgid  "&New"
 msgstr ""
 
 #: source/impress/module_impress.ulf#STR_NAME_MODULE_PRG_IMPRESS
@@ -587,16 +587,16 @@ msgstr ""
 msgid  "Create and edit scientific formulas and equations by using Math."
 msgstr ""
 
+#: source/math/registryitem_math.ulf#STR_REG_VAL_NEW
+msgid  "&New"
+msgstr ""
+
 #: source/math/registryitem_math.ulf#STR_REG_VAL_SO60_FORMULA
 msgid  "%SXWFORMATNAME %SXWFORMATVERSION Formula"
 msgstr ""
 
 #: source/math/registryitem_math.ulf#STR_REG_VAL_OO_FORMULA
 msgid  "OpenDocument Formula"
-msgstr ""
-
-#: source/math/registryitem_math.ulf#STR_REG_VAL_NEW
-msgid  "&New"
 msgstr ""
 
 #: source/onlineupdate/module_onlineupdate.ulf#STR_NAME_MODULE_OPT_ONLINEUPDATE
@@ -607,6 +607,10 @@ msgstr ""
 msgid  "Get automatically notified when a new update of %PRODUCTNAME becomes available."
 msgstr ""
 
+#: source/ooo/registryitem_ooo.ulf#STR_REG_VAL_NEW
+msgid  "&New"
+msgstr ""
+
 #: source/ooo/registryitem_ooo.ulf#STR_REG_VAL_INSTALL
 msgid  "&Install"
 msgstr ""
@@ -615,16 +619,12 @@ msgstr ""
 msgid  "OpenOffice.org 1.1 Configuration File"
 msgstr ""
 
-#: source/ooo/registryitem_ooo.ulf#STR_REG_VAL_APPCAPABILITY_DESCRIPTION_OOO
-msgid  "office productivity suite based on Apache OpenOffice project"
-msgstr ""
-
-#: source/ooo/registryitem_ooo.ulf#STR_REG_VAL_NEW
-msgid  "&New"
-msgstr ""
-
 #: source/ooo/registryitem_ooo.ulf#STR_REG_VAL_SO50_TEMPLATE_OOO
 msgid  "StarOffice 5.0 Template"
+msgstr ""
+
+#: source/ooo/registryitem_ooo.ulf#STR_REG_VAL_APPCAPABILITY_DESCRIPTION_OOO
+msgid  "office productivity suite based on Apache OpenOffice project"
 msgstr ""
 
 #: source/ooo/module_systemint.ulf#STR_NAME_MODULE_OPTIONAL_SYSTEMINTEGRATION
@@ -1707,6 +1707,10 @@ msgstr ""
 msgid  "Create and edit text and graphics in letters, reports, documents and Web pages by using Writer."
 msgstr ""
 
+#: source/writer/registryitem_writer.ulf#STR_REG_VAL_NEW
+msgid  "&New"
+msgstr ""
+
 #: source/writer/registryitem_writer.ulf#STR_REG_VAL_SO60_TEXT
 msgid  "%SXWFORMATNAME %SXWFORMATVERSION Text Document"
 msgstr ""
@@ -1753,10 +1757,6 @@ msgstr ""
 
 #: source/writer/registryitem_writer.ulf#STR_REG_VAL_MS_RTF_DOCUMENT
 msgid  "Rich Text Document"
-msgstr ""
-
-#: source/writer/registryitem_writer.ulf#STR_REG_VAL_NEW
-msgid  "&New"
 msgstr ""
 
 #: source/writer/module_writer.ulf#STR_NAME_MODULE_PRG_WRT

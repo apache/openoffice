@@ -437,7 +437,7 @@ msgstr "OK"
 
 #: source/formwizard/dbwizres.src#RID_COMMON_START + 19.String.Text
 msgid  "The file already exists. Do you want to overwrite it?"
-msgstr ""
+msgstr "Emërtimi \"%1 / %2\" tanimë ekziston.\nDëshironi t'a mbishkruani?"
 
 #: source/formwizard/dbwizres.src#RID_COMMON_START + 20.String.Text
 msgid  "Template created via <wizard_name> on <current_date>."
@@ -505,7 +505,7 @@ msgstr "Lidhja e tabelës për burimin e të dhënave nuk mund të ngritet."
 
 #: source/formwizard/dbwizres.src#RID_DB_COMMON_START + 36.String.Text
 msgid  "The file path entered is not valid."
-msgstr ""
+msgstr "Shtegu [2] nuk është i vlefshëm. Ju lutemi specifikoninjë shteg të vlefshëm."
 
 #: source/formwizard/dbwizres.src#RID_DB_COMMON_START + 37.String.Text
 msgid  "Please select a data source"
@@ -1517,7 +1517,7 @@ msgstr "Çelësi: [1], Emri: [2], Vlera [3]"
 
 #: source/formwizard/dbwizres.src#RID_DB_TABLE_WIZARD_START + 28.String.Text
 msgid  "~Automatically add a primary key"
-msgstr ""
+msgstr "Shto titujt automatikisht\n gjatë shtimit:"
 
 #: source/formwizard/dbwizres.src#RID_DB_TABLE_WIZARD_START + 29.String.Text
 msgid  "~Use an existing field as a primary key"
@@ -1597,7 +1597,7 @@ msgstr ""
 
 #: source/formwizard/dbwizres.src#RID_DB_TABLE_WIZARD_START + 48.String.Text
 msgid  "The name '%TABLENAME' already exists.\nPlease enter another name."
-msgstr ""
+msgstr "Emri i zgjedhur tashmë ekziston.\nJu lutem jepni emër tjetër."
 
 #: source/formwizard/dbwizres.src#RID_DB_TABLE_WIZARD_START + 49.String.Text
 msgid  "Catalog of the table"
@@ -1841,7 +1841,7 @@ msgstr ""
 
 #: source/formwizard/dbwizres.src#RID_LETTERWIZARDDIALOG_START + 58.String.Text
 msgid  "Please specify last settings"
-msgstr ""
+msgstr "Shtegu [2] nuk është i vlefshëm. Ju lutemi specifikoninjë shteg të vlefshëm."
 
 #: source/formwizard/dbwizres.src#RID_LETTERWIZARDSALUTATION_START + 1.String.Text
 msgid  "To Whom it May Concern"

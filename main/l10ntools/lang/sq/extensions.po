@@ -57,7 +57,7 @@ msgstr "Lidhja me burimin e të dhënave"
 
 #: source/abpilot/abspilot.src#RID_PAGE_SELECTABTYPE.FT_TYPE_HINTS.FixedText.Text
 msgid  "%PRODUCTNAME lets you access address data already present in your system. To do this, a %PRODUCTNAME data source will be created in which your address data is available in tabular form.\n\nThis wizard helps you create the data source."
-msgstr ""
+msgstr "%PRODUCTNAME ju lejojnë qasjen në të dhënat e adresës prezente në sistemin tuaj. Për ta bërë këtë, burimet e të dhënave %PRODUCTNAME do të  krijohen në të cilen të dhënat e adresës tuaj janë të gatshme në formulimin tabelar.\n\nKy AutoPilot iu ndihmon të krijoni burimin e të dhënave."
 
 #: source/abpilot/abspilot.src#RID_PAGE_SELECTABTYPE.FL_TYPE.FixedLine.Text
 msgid  "Please select the type of your external address book:"
@@ -109,7 +109,7 @@ msgstr "Burime tjera të jashtme të të dhënave"
 
 #: source/abpilot/abspilot.src#RID_PAGE_ADMININVOKATION.FT_ADMINEXPLANATION.FixedText.Text
 msgid  "To set up the new data source, additional information is required.\n\nClick the following button to open another dialog in which you then enter the necessary information."
-msgstr ""
+msgstr "Të vendosen burime të reja të të dhënave, kërkohen informacione shtesë.\n\nKlikoni butonin e mëposhtëm për të hapur dialogun tjetër në të cilen ju pastaj regjistroni informacionet e nevojshme."
 
 #: source/abpilot/abspilot.src#RID_PAGE_ADMININVOKATION.PB_INVOKE_ADMIN_DIALOG.PushButton.Text
 msgid  "Settings"
@@ -117,15 +117,15 @@ msgstr "Parametrat"
 
 #: source/abpilot/abspilot.src#RID_PAGE_ADMININVOKATION.FT_ERROR.FixedText.Text
 msgid  "The connection to the data source could not be established.\nBefore you proceed, please check the settings made, or (on the previous page) choose another address data source type."
-msgstr ""
+msgstr "Lidhja me burimet e të dhënave nuk mund të vendoset.\nPëpara se të procesoni, ju lutem kontrolloni aranzhimet e bëra,ose (në faqen paraprake) zgjedh lloj tjetër të burimeve të të dhënave të adresës."
 
 #: source/abpilot/abspilot.src#RID_PAGE_TABLESELECTION_AB.FL_TOOMUCHTABLES.FixedText.Text
 msgid  "The external data source you have chosen contains more than one address book.\nPlease select the one you mainly want to work with:"
-msgstr ""
+msgstr "Burimet e jashtme të të dhënave që ju keni zgjedhur përmbajnë më shumë se një libër adrese.\nJu lutem përzgjedhni njërin që ju kryesisht dëshironi të punoni me: "
 
 #: source/abpilot/abspilot.src#RID_PAGE_FIELDMAPPING.FT_FIELDASSIGMENTEXPL.FixedText.Text
-msgid  "To incorporate the address data in your templates, %PRODUCTNAME has to know which fields contain which data.\n\nFor instance, you could have stored the e-mail addresses in a field named "email", or "E-mail" or "EM" - or something completely different.\n\nClick the button below to open another dialog where you can enter the settings for your data source."
-msgstr ""
+msgid  "To incorporate the address data in your templates, %PRODUCTNAME has to know which fields contain which data.\n\nFor instance, you could have stored the e-mail addresses in a field named \"email\", or \"E-mail\" or \"EM\" - or something completely different.\n\nClick the button below to open another dialog where you can enter the settings for your data source."
+msgstr "Të inkorporohen të dhënat e adresave në shabllonin tuaj, %PRODUCTNAME duhet te dij cilat fusha përmbajnë cilat të dhëna.\n\nPër shembull, ju mund të keni ruajtur e-mail adresat në fushat e emëruara\"email\",ose\"E-mail\" ose\"EM\"- ose diçka komplet ndryshe.\n\nKliko butonin poshtë të hap një dialog tjetër ku ju mund të regjistroni aranzhimet për burimet tuaja të të dhënave."
 
 #: source/abpilot/abspilot.src#RID_PAGE_FIELDMAPPING.PB_INVOKE_FIELDS_DIALOG.PushButton.Text
 msgid  "Field Assignment"
@@ -133,7 +133,7 @@ msgstr "Fusha e Caktuar"
 
 #: source/abpilot/abspilot.src#RID_PAGE_FINAL.FT_FINISH_EXPL.FixedText.Text
 msgid  "That was all the information necessary to integrate your address data into %PRODUCTNAME.\n\nNow, just enter the name under which you want to register the data source in %PRODUCTNAME."
-msgstr ""
+msgstr "Këto ishin të gjitha informacionet e nevojshme për të integruar të dhënat e adresës suaj në %PRODUCTNAME.\n\nTani,ju vetëm regjistroni emrin nën të cilin ju dëshironi të regjistroni burimet e të dhënave në %PRODUCTNAME."
 
 #: source/abpilot/abspilot.src#RID_PAGE_FINAL.FT_LOCATION.FixedText.Text
 msgid  "Location"
@@ -153,7 +153,7 @@ msgstr "Burimi i Regjistrit të adresave..."
 
 #: source/abpilot/abspilot.src#RID_PAGE_FINAL.FT_DUPLICATENAME.FixedText.Text
 msgid  "Another data source already has this name. As data sources have to have globally unique names, you need to choose another one."
-msgstr ""
+msgstr "Burimet tjera të të dhënave tanimë kanë këtë emër. Sikurse burimet e të dhënave kanë për të pasur emra global unik, ju duhet të zgjedhni një tjetër."
 
 #: source/abpilot/abspilot.src#RID_ERR_NEEDTYPESELECTION.ErrorBox.Message
 msgid  "Please select a type of address book."
@@ -161,7 +161,7 @@ msgstr "Ju lutem përzgjedhni llojin e librit të adresave."
 
 #: source/abpilot/abspilot.src#RID_QRY_NOTABLES.QueryBox.Message
 msgid  "The data source does not contain any tables.\nDo you want to set it up as an address data source, anyway?"
-msgstr ""
+msgstr "Burmiet e të dhënave nuk përmbajnë ndonjë tabelë.\nSidoqoftë a dëshironi  të ndërtoni atë si një burim i të dhënave të adresave?"
 
 #: source/abpilot/abspilot.src#RID_STR_DEFAULT_NAME.String.Text
 msgid  "Addresses"
@@ -184,8 +184,8 @@ msgid  "Address Data - Field Assignment"
 msgstr "Të dhëna të Adresës - Fusha e Caktuar"
 
 #: source/abpilot/abspilot.src#RID_STR_NOFIELDSASSIGNED.String.Text
-msgid  "There are no fields assigned at this time.\nYou can either assign fields now or do so later by first choosing:\n"File - Template - Address Book Source...""
-msgstr ""
+msgid  "There are no fields assigned at this time.\nYou can either assign fields now or do so later by first choosing:\n\"File - Template - Address Book Source...\""
+msgstr "Në këtë kohë nuk ka fusha të caktuara.\nJu për më tepër caktoni fushat ose bëje më vonë me zgjedhjen e parë:\n\"Dosje - Shabllon - Burim i të Dhënave të Adresës...\""
 
 #: source/bibliography/toolbar.src#RID_BIB_TOOLBAR.TBC_FT_SOURCE.ToolBoxItem.Text
 msgid  "Table"
@@ -493,7 +493,7 @@ msgstr "Kontrolli"
 
 #: source/dbpilots/listcombopages.src#RID_PAGE_LCW_CONTENTSELECTION_TABLE.FT_SELECTTABLE_LABEL.FixedText.Text
 msgid  "On the right side, you see all the tables from the data source of the form.\n\n\nChoose the table from which the data should be used as basis for the list content:"
-msgstr ""
+msgstr "Në anën e djathtë, ju shihni të gjitha tabelat nga burimet e të dhënave në formulim.\n\n\nZgjidh tabeln nga e cila të dhënat duhet të përdoren si bazë për përmbatjen e listes: "
 
 #: source/dbpilots/listcombopages.src#RID_PAGE_LCW_CONTENTSELECTION_FIELD.TabPage.Text
 msgid  "Field Selection"
@@ -509,11 +509,11 @@ msgstr "Paraqit fushën"
 
 #: source/dbpilots/listcombopages.src#RID_PAGE_LCW_CONTENTSELECTION_FIELD.STR_FIELDINFO_COMBOBOX.String.Text
 msgid  "The contents of the field selected will be shown in the combo box list."
-msgstr ""
+msgstr "Përmbatjet nga fusha e përzgjedhur do të tregohen në listen e kutisë krehëse."
 
 #: source/dbpilots/listcombopages.src#RID_PAGE_LCW_CONTENTSELECTION_FIELD.STR_FIELDINFO_LISTBOX.String.Text
 msgid  "The contents of the selected field will be shown in the list box if the linked fields are identical."
-msgstr ""
+msgstr "Përmbatjet nga fusha e përzgjedhur do të tregohen në listen e kutisë nëse fushat  e lidhura janë identike."
 
 #: source/dbpilots/listcombopages.src#RID_PAGE_LCW_FIELDLINK.TabPage.Text
 msgid  "Field Link"
@@ -521,7 +521,7 @@ msgstr "Lidhje Fushe"
 
 #: source/dbpilots/listcombopages.src#RID_PAGE_LCW_FIELDLINK.FT_FIELDLINK_DESC.FixedText.Text
 msgid  "This is where you select fields with matching contents so that the value from the display field will be shown."
-msgstr ""
+msgstr "Kjo është ku ju përzgjedhni fushat me bashkërendim të përmabjtjeve kështu që do të tregohen vlerat nga fusha e paraqitur."
 
 #: source/dbpilots/listcombopages.src#RID_PAGE_LCW_FIELDLINK.FT_VALUELISTFIELD.FixedText.Text
 msgid  "Field from the ~Value Table"
@@ -533,7 +533,7 @@ msgstr "Fushë nga~Tabelë Liste"
 
 #: source/dbpilots/listcombopages.src#RID_STR_COMBOWIZ_DBFIELD.String.Text
 msgid  "You can either save the value of the combo box in a database field or use it for display purposes."
-msgstr ""
+msgstr "Për më tepër ju do të ruani vlerat e kutisë krehëse në një fushë të të dhënave ose përdor atë për propozime të paraqitjes."
 
 #: source/dbpilots/gridpages.src#RID_PAGE_GW_FIELDSELECTION.TabPage.Text
 msgid  "Field Selection"
@@ -589,7 +589,7 @@ msgstr "Të dhëna"
 
 #: source/dbpilots/commonpagesdbp.src#RID_PAGE_TABLESELECTION.FT_EXPLANATION.FixedText.Text
 msgid  "Currently, the form the control belongs to is not (or not completely) bound to a data source.\n\nPlease choose a data source and a table.\n\n\nPlease note that the settings made on this page will take effect immediately upon leaving the page."
-msgstr ""
+msgstr "Aktualisht, formulimi që i takon kontrollës nuk është ( ose jo komplet) e lidhur në burimin e të dhënave.\n\nJu lutem zgjedhni një burim të të dhënave dhe një tabelë.\n\n\nJu lutem mbani shënim që aranzhimet e bëra në këtë faqe do të kenë efekt menjëherë në mbarim të kësaj faqe."
 
 #: source/dbpilots/commonpagesdbp.src#RID_PAGE_TABLESELECTION.FT_DATASOURCE.FixedText.Text
 msgid  "~Data source:"
@@ -681,7 +681,7 @@ msgstr "Vlerat e Fushës"
 
 #: source/dbpilots/groupboxpages.src#RID_PAGE_OPTIONVALUES.FT_OPTIONVALUES_EXPL.FixedText.Text
 msgid  "When you select an option, the option group is given a specific value."
-msgstr ""
+msgstr "Kur ju të përzgjedhni një mundësi, grupit të zgjedhjes i është dhënë një vlerë specifike. "
 
 #: source/dbpilots/groupboxpages.src#RID_PAGE_OPTIONVALUES.FT_OPTIONVALUES.FixedText.Text
 msgid  "Which ~value do you want to assign to each option?"
@@ -701,11 +701,11 @@ msgstr "Cili ~titull është për tu dhënë tek grupi juaj i zgjedhjeve?"
 
 #: source/dbpilots/groupboxpages.src#RID_PAGE_OPTIONS_FINAL.FT_THATSALL.FixedText.Text
 msgid  "These were all details needed to create the option group."
-msgstr ""
+msgstr "Këto ishin të gjitha detalet e nevojshme për të krijuar grupin e zgjedhjeve."
 
 #: source/dbpilots/groupboxpages.src#RID_STR_GROUPWIZ_DBFIELD.String.Text
 msgid  "You can either save the value of the option group in a database field or use it for a later action."
-msgstr ""
+msgstr "Ju për më tepër mund ti ruani vlerat e grupit të zgjedhjeve në një fushë të bazës së të dhënave ose përdor ato për një veprim të mëvonshëm."
 
 #: source/preload/preload.src#RID_DLG_OEMWIZARD.PB_PREV.PushButton.Text
 msgid  "<< Back"
@@ -753,7 +753,7 @@ msgstr "1."
 
 #: source/preload/preload.src#RID_TP_LICENSE.FT_INFO2.FixedText.Text
 msgid  "View the complete License Agreement. Please use the scroll bar or the '%PAGEDOWN' button in this dialog to view the entire license text."
-msgstr ""
+msgstr "Shikoni Marraveshjen License komplete. Ju  lutem përdor shiritin rrotullues ose butonin '%PAGEDOWN' në këtë dialog të paraqet pamjen e mbrendshme të tekstit licensë."
 
 #: source/preload/preload.src#RID_TP_LICENSE.PB_PAGEDOWN.PushButton.Text
 msgid  "Page Down"
@@ -801,7 +801,7 @@ msgstr "Klasifiko sipas"
 
 #: source/propctrlr/selectlabeldialog.src#RID_DLG_SELECTLABELCONTROL.1.FixedText.Text
 msgid  "These are control fields that can be used as label fields for the $control_class$ $control_name$."
-msgstr ""
+msgstr "Këto janë fushat e kontrollit që mund të përdoren si fusha të emërtuara për $kontroll_klasë$ $kontroll_emra$."
 
 #: source/propctrlr/selectlabeldialog.src#RID_DLG_SELECTLABELCONTROL.1.CheckBox.Text
 msgid  "~No assignment"
@@ -1864,8 +1864,8 @@ msgid  "Help"
 msgstr "Ndihma"
 
 #: source/propctrlr/formres.src#RID_STR_UNABLETOCONNECT.String.Text
-msgid  "The connection to the data source "$name$" could not be established."
-msgstr ""
+msgid  "The connection to the data source \"$name$\" could not be established."
+msgstr "Lidhja për në bazën e të dhënave \"$emri$\" nuk mund të ngritet."
 
 #: source/propctrlr/formres.src#RID_STR_TEXT.String.Text
 msgid  "Text"
@@ -2297,11 +2297,11 @@ msgstr "~Emri i i ri pwr %s (%d1 of %d2)"
 
 #: source/scanner/sanedlg.src#RID_SANE_DIALOG.RID_DEVICEINFO_BTN.PushButton.Text
 msgid  "About\n Dev~ice"
-msgstr ""
+msgstr "Për\nPaj~isje"
 
 #: source/scanner/sanedlg.src#RID_SANE_DIALOG.RID_PREVIEW_BTN.PushButton.Text
 msgid  "Create\nPreview"
-msgstr ""
+msgstr "Krijo\nShikim paraprak"
 
 #: source/scanner/sanedlg.src#RID_SANE_DIALOG.RID_PREVIEW_BOX.FixedLine.Text
 msgid  "Preview"
@@ -2357,7 +2357,7 @@ msgstr "Skener"
 
 #: source/scanner/sanedlg.src#RID_SANE_DEVICEINFO_TXT.String.Text
 msgid  "Device: %s\nVendor: %s\nModel: %s\nType: %s"
-msgstr ""
+msgstr "Pajisja: %s\nShitës: %s\nModel: %s\nLloj: %s"
 
 #: source/scanner/sanedlg.src#RID_SANE_SCANERROR_TXT.String.Text
 msgid  "An error occurred while scanning."
@@ -2365,7 +2365,7 @@ msgstr "Një gabim është ndeshur gjatë skanografisë"
 
 #: source/scanner/sanedlg.src#RID_SANE_NORESOLUTIONOPTION_TXT.String.Text
 msgid  "The device does not offer a preview option. Therefore, a normal scan will be used as a preview instead. This may take a considerable amount of time."
-msgstr ""
+msgstr "Pajisja nuk ofron zgjedhjen nga shikimi paraprak. Si pasojë, do të përdoret një skan normal si në vend të shikimit paraprak. Kjo mund të merr një pjesë të konsiderueshme të kohës."
 
 #: source/scanner/sanedlg.src#RID_SANE_NOSANELIB_TXT.String.Text
 msgid  "The SANE interface could not be initialized. Scanning is not possible."

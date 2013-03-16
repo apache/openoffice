@@ -177,7 +177,7 @@ msgstr "प्रतिस्थनिकं कृतम्"
 
 #: source/resource/strings.src#RID_STR_CONTROL_SUBSTITUTED_EPXPLAIN.String.Text
 msgid  "An error occurred while this control was being loaded. It was therefore replaced with a placeholder."
-msgstr ""
+msgstr "नियंत्रणारोहनकाले त्रुटिः घटिता । अतः स्थानधारकेन प्रतिस्थापितं ।"
 
 #: source/resource/strings.src#RID_STR_READERROR.String.Text
 msgid  "Error reading data from database"
@@ -233,7 +233,7 @@ msgstr "पृच्छाभिव्यक्त्याः वाक्य�
 
 #: source/resource/strings.src#RID_STR_INCOMPATIBLE_TYPES.String.Text
 msgid  "The value types supported by the binding cannot be used for exchanging data with this control."
-msgstr ""
+msgstr "बन्धनद्वारा समर्थितं मानप्रकारम् अस्मिन् नियंत्रणेन सह लेखां विनिमेतुं उपयोक्तुं न शक्नोति ।"
 
 #: source/resource/strings.src#RID_STR_LABEL_RECORD.String.Text
 msgid  "Record"
@@ -241,7 +241,7 @@ msgstr "लेखा"
 
 #: source/resource/strings.src#RID_STR_INVALID_VALIDATOR.String.Text
 msgid  "The control is connected to an external value binding, which at the same time acts as validator. You need to revoke the value binding, before you can set a new validator."
-msgstr ""
+msgstr "नियंत्रणम् एकेन बाह्येन मानबन्धनेन संबंधितमस्ति, यत् समाने समये वैधीकारकरूपेण व्यवहरति । भवान् मानबन्धनं पुनः आनेतुमपेक्ष्यते, अतः पूर्वं यत् भवान् एकं नव-वैधीकारकं स्थापयतु ।"
 
 #: source/resource/strings.src#RID_STR_LABEL_OF.String.Text
 msgid  "of"
@@ -249,7 +249,7 @@ msgstr "अस्य"
 
 #: source/resource/strings.src#RID_STR_QUERY_SAVE_MODIFIED_ROW.String.Text
 msgid  "The content of the current form has been modified.\nDo you want to save your changes?"
-msgstr ""
+msgstr "वर्तमानफोर्म् अस्य विषयः विकारितः।\nतव परिणामानि सञ्चयितुम् इच्छसि किम्?"
 
 #: source/resource/strings.src#RID_STR_COULD_NOT_SET_ORDER.String.Text
 msgid  "Error setting the sort criteria"

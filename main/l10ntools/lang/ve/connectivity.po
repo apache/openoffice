@@ -119,6 +119,18 @@ msgstr "Thunderbird-adresboek"
 msgid  "LDAP Address Book"
 msgstr "LDAP-adresboek"
 
+#: source/drivers/mozab/mozab2.xcu#.Drivers.Installed.sdbc:address:mozilla:.DriverTypeDisplayName
+msgid  "SeaMonkey Address Book"
+msgstr ""
+
+#: source/drivers/mozab/mozab2.xcu#.Drivers.Installed.sdbc:address:thunderbird:.DriverTypeDisplayName
+msgid  "Thunderbird Address Book"
+msgstr "Thunderbird-adresboek"
+
+#: source/drivers/mozab/mozab2.xcu#.Drivers.Installed.sdbc:address:ldap:*.DriverTypeDisplayName
+msgid  "LDAP Address Book"
+msgstr "LDAP-adresboek"
+
 #: source/drivers/mysql/mysql.xcu#.Drivers.Installed.sdbc:mysql:jdbc:*.DriverTypeDisplayName
 msgid  "MySQL (JDBC)"
 msgstr "MySQL (JDBC)"
@@ -161,11 +173,11 @@ msgstr "Kan nie nuwe adresboeke skep terwyl Mozilla loop nie."
 
 #: source/resource/conn_shared_res.src#STR_COULD_NOT_RETRIEVE_AB_ENTRY.String.Text
 msgid  "An address book entry could not be retrieved, an unknown error occurred."
-msgstr ""
+msgstr "'n Adresboekinskrywing kon nie opgehaal word nie; 'n onbekende fout het voorgekom."
 
 #: source/resource/conn_shared_res.src#STR_COULD_NOT_GET_DIRECTORY_NAME.String.Text
 msgid  "An address book directory name could not be retrieved, an unknown error occurred."
-msgstr ""
+msgstr "'n Adresboekgidsnaam kon nie opgehaal word nie, 'n onbekende fout het voorgekom."
 
 #: source/resource/conn_shared_res.src#STR_TIMEOUT_WAITING.String.Text
 msgid  "Timed out while waiting for the result."
@@ -177,11 +189,11 @@ msgstr "'n Fout het voorgekom terwyl die navraag uitgevoer is."
 
 #: source/resource/conn_shared_res.src#STR_MOZILLA_IS_RUNNIG_NO_CHANGES.String.Text
 msgid  "You can't make any changes to mozilla address book when mozilla is running."
-msgstr ""
+msgstr "Jy kan nie enige veranderinge aan mozilla-adresboek maak terwyl mozilla loop nie."
 
 #: source/resource/conn_shared_res.src#STR_FOREIGN_PROCESS_CHANGED_AB.String.Text
 msgid  "Mozilla Address Book has been changed out of this process, we can't modify it in this condition."
-msgstr ""
+msgstr "Mozilla-adresboek is buite hierdie proses verander, ons kan dit nie in hierdie toestand wysig nie."
 
 #: source/resource/conn_shared_res.src#STR_CANT_FIND_ROW.String.Text
 msgid  "Can't find the requested row."
@@ -233,7 +245,7 @@ msgstr "'n Nuwe ry kan nie geskep word nie."
 
 #: source/resource/conn_shared_res.src#STR_QUERY_INVALID_IS_NULL_COLUMN.String.Text
 msgid  "The query can not be executed. The 'IS NULL' can only be used with a column name."
-msgstr ""
+msgstr "Die navraag kon nie uitgevoer word nie. Die 'IS NULL' kan net met 'n kolomnaam gebruik word."
 
 #: source/resource/conn_shared_res.src#STR_ILLEGAL_MOVEMENT.String.Text
 msgid  "Illegal cursor movement occured."
@@ -241,7 +253,7 @@ msgstr "Onwettige porbeweging voorgekom."
 
 #: source/resource/conn_shared_res.src#STR_COMMIT_ROW.String.Text
 msgid  "Please commit row '$position$' before update rows or insert new rows."
-msgstr ""
+msgstr "Dien asseblief ry '$position$' in voor rye bygewerk word of nuwe rye ingevoeg word."
 
 #: source/resource/conn_shared_res.src#STR_INVALID_ROW_UPDATE.String.Text
 msgid  "The update call can not be executed. The row is invalid."
@@ -268,12 +280,12 @@ msgid  "It doesn't exist a connection to the database."
 msgstr "Daar bestaan nie 'n verbinding aan die databasis nie."
 
 #: source/resource/conn_shared_res.src#STR_WRONG_PARAM_INDEX.String.Text
-msgid  "You tried to set a parameter at position '$pos$' but there is/are only '$count$' parameter(s) allowed. One reason may be that the property "ParameterNameSubstitution" is not set to TRUE in the data source."
-msgstr ""
+msgid  "You tried to set a parameter at position '$pos$' but there is/are only '$count$' parameter(s) allowed. One reason may be that the property \"ParameterNameSubstitution\" is not set to TRUE in the data source."
+msgstr "U het probeer om 'n parameter by posisie '$pos$' te stel, maar net '$count$' parameter(s)  word toegelaat. Een rede kan wees dat die eienskap \"ParameterNameSubstitution\" nie was WAAR gestel is in die databron nie."
 
 #: source/resource/conn_shared_res.src#STR_INPUTSTREAM_WRONG_LEN.String.Text
 msgid  "End of InputStream reached before satisfying length specified when InputStream was set."
-msgstr ""
+msgstr "Einde van InputStream bereik voor aan lengte voldoen is wat gespesifiseer is toe InputStream gestel is."
 
 #: source/resource/conn_shared_res.src#STR_NO_INPUTSTREAM.String.Text
 msgid  "The input stream was not set."
@@ -313,7 +325,7 @@ msgstr "Die drywer werk nie met die funksie '$functionname$' nie."
 
 #: source/resource/conn_shared_res.src#STR_UNSUPPORTED_FEATURE.String.Text
 msgid  "The driver does not support the functionality for '$featurename$'. It is not implemented."
-msgstr ""
+msgstr "Die drywer werk nie met die funksie '$featurename$' nie. Dit is nie geïmplementeer nie."
 
 #: source/resource/conn_shared_res.src#STR_FORMULA_WRONG.String.Text
 msgid  "The formula for TypeInfoSettings is wrong!"
@@ -321,11 +333,11 @@ msgstr "Die formule vir TypeInfoSettings is verkeerd!"
 
 #: source/resource/conn_shared_res.src#STR_STRING_LENGTH_EXCEEDED.String.Text
 msgid  "The string '$string$' exceeds the maximum length of $maxlen$ characters when converted to the target character set '$charset$'."
-msgstr ""
+msgstr "Die string '$string$' is langer as die maksimum lengte van $maxlen$ karakters wanneer dit omgeskep word na die doelkarakterstel '$charset$'."
 
 #: source/resource/conn_shared_res.src#STR_CANNOT_CONVERT_STRING.String.Text
 msgid  "The string '$string$' cannot be converted using the encoding '$charset$'."
-msgstr ""
+msgstr "Die string '$string$' kan nie omskep word met die enkodering '$charset$' nie."
 
 #: source/resource/conn_shared_res.src#STR_URI_SYNTAX_ERROR.String.Text
 msgid  "The connection URL is invalid."
@@ -341,23 +353,23 @@ msgstr "Die navraag kon nie uitgevoer word nie. Die bewerking is te kompleks."
 
 #: source/resource/conn_shared_res.src#STR_QUERY_INVALID_LIKE_COLUMN.String.Text
 msgid  "The query can not be executed. You cannot use 'LIKE' with columns of this type."
-msgstr ""
+msgstr "Die navraag kon nie uitgevoer word nie. Jy kan nie 'LIKE' met kolomme van hierdie soort gebruik nie."
 
 #: source/resource/conn_shared_res.src#STR_QUERY_INVALID_LIKE_STRING.String.Text
 msgid  "The query can not be executed. 'LIKE' can be used with a string argument only."
-msgstr ""
+msgstr "Die navraag kon nie uitgevoer word nie. 'LIKE' kan net met 'n stringargument gebruik word."
 
 #: source/resource/conn_shared_res.src#STR_QUERY_NOT_LIKE_TOO_COMPLEX.String.Text
 msgid  "The query can not be executed. The 'NOT LIKE' condition is too complex."
-msgstr ""
+msgstr "Die navraag kon nie uitgevoer word nie. Die 'NOT LIKE'-voorwaarde is te kompleks."
 
 #: source/resource/conn_shared_res.src#STR_QUERY_LIKE_WILDCARD.String.Text
 msgid  "The query can not be executed. The 'LIKE' condition contains wildcard in the middle."
-msgstr ""
+msgstr "Die navraag kon nie uitgevoer word nie. Die 'LIKE'-voorwaarde bevat 'n instaankarakter in die middel."
 
 #: source/resource/conn_shared_res.src#STR_QUERY_LIKE_WILDCARD_MANY.String.Text
 msgid  "The query can not be executed. The 'LIKE' condition contains too many wildcards."
-msgstr ""
+msgstr "Die navraag kon nie uitgevoer word nie. Die 'LIKE'-voorwaarde bevat te veel instaankarakters."
 
 #: source/resource/conn_shared_res.src#STR_INVALID_COLUMNNAME.String.Text
 msgid  "The column name '$columnname$' is not valid."
@@ -377,7 +389,7 @@ msgstr "Die lêer $filename$ kon nie gelaai word nie."
 
 #: source/resource/conn_shared_res.src#STR_LOAD_FILE_ERROR_MESSAGE.String.Text
 msgid  "The attempt to load the file resulted in the following error message ($exception_type$):\n\n$error_message$"
-msgstr ""
+msgstr "Die poging om die lêer te laai, het die volgende foutboodskap-($exception_type$) tot gevolg gehad:\n\n$error_message$"
 
 #: source/resource/conn_shared_res.src#STR_TYPE_NOT_CONVERT.String.Text
 msgid  "The type could not be converted."
@@ -417,15 +429,15 @@ msgstr "Kon nie aansig skep nie: geen bevelobjek nie."
 
 #: source/resource/conn_shared_res.src#STR_NO_CONNECTION.String.Text
 msgid  "The connection could not be created. May be the necessary data provider is not installed."
-msgstr ""
+msgstr "Die verbinding kon nie bewerkstellig word nie. Miskien is die nodige dataverskaffer nie geïnstalleer nie."
 
 #: source/resource/conn_shared_res.src#STR_COULD_NOT_DELETE_INDEX.String.Text
 msgid  "The index could not be deleted. An unknown error while accessing the file system occured."
-msgstr ""
+msgstr "Die indeks kon nie geskrap word nie. 'n Onbekende fout het plaasgevind terwyl toegang tot die lêerstelsel verkry is."
 
 #: source/resource/conn_shared_res.src#STR_ONL_ONE_COLUMN_PER_INDEX.String.Text
 msgid  "The index could not be created. Only one column per index is allowed."
-msgstr ""
+msgstr "Die indeks kon nie geskep word nie. Net een per kolom per indeks word toegelaat."
 
 #: source/resource/conn_shared_res.src#STR_COULD_NOT_CREATE_INDEX_NOT_UNIQUE.String.Text
 msgid  "The index could not be created. The values are not unique."
@@ -437,11 +449,11 @@ msgstr "Die indeks kon nie geskep word nie. 'n Onbekende fout het voorgekom."
 
 #: source/resource/conn_shared_res.src#STR_COULD_NOT_CREATE_INDEX_NAME.String.Text
 msgid  "The index could not be created. The file '$filename$' is used by an other index."
-msgstr ""
+msgstr "Die indeks kon nie geskep word nie. Die lêer '$filename$' word deur 'n ander indeks gebruik."
 
 #: source/resource/conn_shared_res.src#STR_COULD_NOT_CREATE_INDEX_KEYSIZE.String.Text
 msgid  "The index could not be created. The size of the chosen column is to big."
-msgstr ""
+msgstr "Die indeks kon nie geskep word nie. Die grootte van die gekose kolom is te groot."
 
 #: source/resource/conn_shared_res.src#STR_SQL_NAME_ERROR.String.Text
 msgid  "The name '$name$' doesn't match SQL naming constraints."
@@ -472,28 +484,28 @@ msgid  "Duplicate value found in column '$columnname$'."
 msgstr "Duplikaatwaarde in die kolom '$columnname$' gevind."
 
 #: source/resource/conn_shared_res.src#STR_INVALID_COLUMN_DECIMAL_VALUE.String.Text
-msgid  "The '$columnname$' column has been defined as a "Decimal" type, the max. length is $precision$ characters (with $scale$ decimal places).\n\nThe specified value "$value$ is longer than the number of digits allowed."
-msgstr ""
+msgid  "The '$columnname$' column has been defined as a \"Decimal\" type, the max. length is $precision$ characters (with $scale$ decimal places).\n\nThe specified value \"$value$ is longer than the number of digits allowed."
+msgstr "Die '$columnname$'-kolom is gedefinieer as 'n \"Desimale\" soort, die maksimum lengte is $precision$ karakters (met $scale$ desimale plekke).\n\nDie gespesifiseerde waarde \"$value $ is langer as die aantal syfers toegelaat."
 
 #: source/resource/conn_shared_res.src#STR_COLUMN_NOT_ALTERABLE.String.Text
 msgid  "The column '$columnname$' could not be altered. May be the file system is write protected."
-msgstr ""
+msgstr "Die kolom '$columnname$' kon nie gewysig word nie. Dalk is die lêerstelsel skryfbeskerm."
 
 #: source/resource/conn_shared_res.src#STR_INVALID_COLUMN_VALUE.String.Text
 msgid  "The column '$columnname$' could not be updated. The value is invalid for that column."
-msgstr ""
+msgstr "Die kolom '$columnname$' kon nie bygewerk word nie. Die waarde is ongeldig vir daardie kolom."
 
 #: source/resource/conn_shared_res.src#STR_COLUMN_NOT_ADDABLE.String.Text
 msgid  "The column '$columnname$' could not be added. May be the file system is write protected."
-msgstr ""
+msgstr "Die kolom '$columnname$' kon nie bygevoeg word nie. Dalk is die lêerstelsel skryfbeskerm."
 
 #: source/resource/conn_shared_res.src#STR_COLUMN_NOT_DROP.String.Text
 msgid  "The column at position '$position$' could not be dropped. May be the file system is write protected."
-msgstr ""
+msgstr "Die kolom by posisie '$position$' kon nie verwyder word nie. Dalk is die lêerstelsel skryfbeskerm."
 
 #: source/resource/conn_shared_res.src#STR_TABLE_NOT_DROP.String.Text
 msgid  "The table '$tablename$' could not be dropped. May be the file system is write protected."
-msgstr ""
+msgstr "Die tabel '$tablename$' kon nie laat sak word nie. Dalk is die lêerstelsel skryfbeskerm."
 
 #: source/resource/conn_shared_res.src#STR_COULD_NOT_ALTER_TABLE.String.Text
 msgid  "The table could not be altered."
@@ -512,24 +524,24 @@ msgid  "Can only sort by table columns."
 msgstr "Kan net volgens tabelkolomme sorteer."
 
 #: source/resource/conn_shared_res.src#STR_QUERY_COMPLEX_COUNT.String.Text
-msgid  "The query can not be executed. It is too complex. Only "COUNT(*)" is supported."
-msgstr ""
+msgid  "The query can not be executed. It is too complex. Only \"COUNT(*)\" is supported."
+msgstr "Die navraag kon nie uitgevoer word nie. Dit is te kompleks. Net \"COUNT(*)\" sal werk."
 
 #: source/resource/conn_shared_res.src#STR_QUERY_INVALID_BETWEEN.String.Text
 msgid  "The query can not be executed. The 'BETWEEN' arguments are not correct."
-msgstr ""
+msgstr "Die navraag kon nie uitgevoer word nie. Die 'BETWEEN'-argumente is nie korrek nie."
 
 #: source/resource/conn_shared_res.src#STR_QUERY_FUNCTION_NOT_SUPPORTED.String.Text
 msgid  "The query can not be executed. The function is not supported."
-msgstr ""
+msgstr "Die navraag kon nie uitgevoer word nie. Die funksie word nie ondersteun nie."
 
 #: source/resource/conn_shared_res.src#STR_TABLE_READONLY.String.Text
 msgid  "The table can not be changed. It is read only."
 msgstr "Die tabel kan nie verander word nie. Dit is leesalleen."
 
 #: source/resource/conn_shared_res.src#STR_DELETE_ROW.String.Text
-msgid  "The row could not be deleted. The option "Display inactive records" is set."
-msgstr ""
+msgid  "The row could not be deleted. The option \"Display inactive records\" is set."
+msgstr "Die ry kon nie geskrap word nie. Die opsie \"Wys onaktiewe rekords\" is gestel."
 
 #: source/resource/conn_shared_res.src#STR_ROW_ALREADY_DELETED.String.Text
 msgid  "The row could not be deleted. It is already deleted."
@@ -537,23 +549,23 @@ msgstr "Die ry kon nie geskrap word nie. Dit is reeds geskrap."
 
 #: source/resource/conn_shared_res.src#STR_QUERY_MORE_TABLES.String.Text
 msgid  "The query can not be executed. It contains more than one table."
-msgstr ""
+msgstr "Die navraag kon nie uitgevoer word nie. Dit bevat meer as een tabel nie."
 
 #: source/resource/conn_shared_res.src#STR_QUERY_NO_TABLE.String.Text
 msgid  "The query can not be executed. It contains no valid table."
-msgstr ""
+msgstr "Die navraag kon nie uitgevoer word nie. Dit bevat nie 'n geldige tabel nie."
 
 #: source/resource/conn_shared_res.src#STR_QUERY_NO_COLUMN.String.Text
 msgid  "The query can not be executed. It contains no valid columns."
-msgstr ""
+msgstr "Die navraag kon nie uitgevoer word nie. Die bevat geen geldige kolomme nie."
 
 #: source/resource/conn_shared_res.src#STR_INVALID_PARA_COUNT.String.Text
 msgid  "The count of the given parameter values doesn't match the parameters."
-msgstr ""
+msgstr "Die telling van die gegewe parameterwaardes pas nie by die parameters nie."
 
 #: source/resource/conn_shared_res.src#STR_NO_VALID_FILE_URL.String.Text
 msgid  "The URL '$URL$' is not valid. A connection can not be created."
-msgstr ""
+msgstr "Die URL '$URL$' is nie geldig nie. 'n Verbinding kon nie bewerkstellig word nie."
 
 #: source/resource/conn_shared_res.src#STR_NO_CLASSNAME.String.Text
 msgid  "The driver class '$classname$' could not be loaded."
@@ -565,7 +577,7 @@ msgstr "Geen Java-installasie gevind nie. Kontroleer asseblief u installasie."
 
 #: source/resource/conn_shared_res.src#STR_NO_RESULTSET.String.Text
 msgid  "The execution of the query doesn't return a valid result set."
-msgstr ""
+msgstr "Die uitvoering van die navraag lewer nie 'n geldige resultaatstel op nie."
 
 #: source/resource/conn_shared_res.src#STR_NO_ROWCOUNT.String.Text
 msgid  "The execution of the update statement doesn't effect any rows."
@@ -589,15 +601,15 @@ msgstr "Geen geskikte KDE-installasie is gevind nie."
 
 #: source/resource/conn_shared_res.src#STR_KDE_VERSION_TOO_OLD.String.Text
 msgid  "KDE version $major$.$minor$ or higher is required to access the KDE Address Book."
-msgstr ""
+msgstr "KDE-weergawe $major$.$minor$ of jonger is nodig vir toegang tot die KDE-adresboek."
 
 #: source/resource/conn_shared_res.src#STR_KDE_VERSION_TOO_NEW.String.Text
 msgid  "The found KDE version is too new. Only KDE up to version $major$.$minor$ is known to work with this product.\n"
-msgstr ""
+msgstr "Die KDE-weergawe wat gevind is, is te nuut. Net KDE tot weergawe $major$.$minor$ werk met hierdie produk. \n"
 
 #: source/resource/conn_shared_res.src#STR_KDE_VERSION_TOO_NEW_WORK_AROUND.String.Text
 msgid  "If you are sure that your KDE version works, you might execute the following Basic macro to disable this version check:\n\n"
-msgstr ""
+msgstr "As jy seker is dat jou KDE-weergawe werk, kan jy die volgende Basic-makro uitvoer om hierdie weergawekontrolering te deaktiveer: \n\n"
 
 #: source/resource/conn_shared_res.src#STR_PARA_ONLY_PREPARED.String.Text
 msgid  "Parameters can appear only in prepared statements."
@@ -613,27 +625,27 @@ msgstr "Geen geskikte Mac OS-installasie is  gevind nie."
 
 #: source/resource/conn_shared_res.src#STR_NO_DISK_SPACE.String.Text
 msgid  "The database file '$filename$' could not be created. Please check your disk space."
-msgstr ""
+msgstr "Die databasislêer '$filename$' kon nie geskep word. Kontroleer asseblief u skyfspasie."
 
 #: source/resource/conn_shared_res.src#STR_COMMAND_NOT_FOUND.String.Text
 msgid  "The database '$databasename$' could not be started because the command '$progname$' could not be executed."
-msgstr ""
+msgstr "Die databasis '$databasename$' kon nie begin word nie omdat die bevel '$progname$' nie uitgevoer kon word nie."
 
 #: source/resource/conn_shared_res.src#STR_DATABASE_NEEDS_CONVERTING.String.Text
 msgid  "The current database need to be converted. Please insert control user  and password."
-msgstr ""
+msgstr "Die huidige databasis moet omskep word. Tik asseblief kontrole-gebruiker en -wagwoord in."
 
 #: source/resource/conn_shared_res.src#STR_USER_NO_DELETE.String.Text
 msgid  "This user couldn't be deleted. Otherwise the database stays in a inconsistent state."
-msgstr ""
+msgstr "Kon hierdie gebruiker nie skrap nie. Anders bly die databasis in 'n inkonsekwente staat."
 
 #: source/resource/conn_shared_res.src#STR_NO_STROAGE.String.Text
 msgid  "The connection can not be established. No storage or URL was given."
-msgstr ""
+msgstr "Die verbinding kon nie bewerkstellig word nie. Geen stoorplek of URL is gegee nie."
 
 #: source/resource/conn_shared_res.src#STR_INVALID_FILE_URL.String.Text
 msgid  "The given URL contains no valid local file system path. Please check the location of your database file."
-msgstr ""
+msgstr "Die gegewe URL bevat geen geldige plaaslike lêerstelselpad nie. Kontroleer asseblief die ligging van u databasislêer."
 
 #: source/resource/conn_shared_res.src#STR_NO_TABLE_CONTAINER.String.Text
 msgid  "An error occured while obtaining the connection's table container."
@@ -686,15 +698,3 @@ msgstr "Geen $1$ bestaan nie."
 #: source/resource/conn_error_message.src#256 + 2*550 + 0.String.Text
 msgid  "Unable to display the complete table content. Please apply a filter."
 msgstr "Kon nie die volledige tabelinhoud wys nie. Pas asseblief 'n filter toe."
-
-#: source/drivers/mozab/mozab2.xcu#.Drivers.Installed.sdbc:address:mozilla:.DriverTypeDisplayName
-msgid  "SeaMonkey Address Book"
-msgstr ""
-
-#: source/drivers/mozab/mozab2.xcu#.Drivers.Installed.sdbc:address:thunderbird:.DriverTypeDisplayName
-msgid  "Thunderbird Address Book"
-msgstr "Thunderbird-adresboek"
-
-#: source/drivers/mozab/mozab2.xcu#.Drivers.Installed.sdbc:address:ldap:*.DriverTypeDisplayName
-msgid  "LDAP Address Book"
-msgstr "LDAP-adresboek"

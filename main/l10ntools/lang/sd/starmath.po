@@ -445,11 +445,11 @@ msgstr "ڪڍي ڇڏيو"
 
 #: source/smres.src#RID_NOMATHTYPEFACEWARNING.WarningBox.Message
 msgid  "The 'StarMath' font has not been installed.\nWithout this font %PRODUCTNAME Math cannot function correctly.\nPlease install this font and restart %PRODUCTNAME Math."
-msgstr ""
+msgstr "\"اِسٽارميٿ \" فانٽ اِسٿاپت ڪونہ ڪيو ويو آهي۔ \n ان کان سواءِ %PRODUCTNAME ميٿ صحيح نموني ڪم نٿو ڪري سگهي۔ مهرباني ڪري اهو فانٽ اِسٿاپت ڪريو ۽ ميڪ وري شروع ڪريو%PRODUCTNAME"
 
 #: source/smres.src#RID_DEFAULTSAVEQUERY.QueryBox.Message
 msgid  "Should the changes be saved as defaults?\n\nThese changes will apply for all new formulas."
-msgstr ""
+msgstr "ڇا اهي تبديليون وڪلپ جي غيرمؤجودگيءَ سبب اَڳہ ۾ ئي اپنايل روپن ۾ سانڍيو وڃن؟ اهي تبديليون سڀني نو نسخن تي لاڳو ٿينديون "
 
 #: source/smres.src#RID_FONTREGULAR.String.Text
 msgid  "Standard"
@@ -558,6 +558,10 @@ msgstr "سينس"
 #: source/smres.src#RID_FONTMENU.7.MenuItem.Text
 msgid  "Fixed"
 msgstr "مقرر ڪيل"
+
+#: source/smres.src#CMDBOXWINDOW_TEXT.#define.Text
+msgid  "Commands"
+msgstr "آديش"
 
 #: source/smres.src#RID_DOCUMENTSTR.String.Text
 msgid  "Formula"
@@ -694,10 +698,6 @@ msgstr ""
 #: source/smres.src#RID_PRINTUIOPTIONS.item9.ItemList.item
 msgid  "~Scaling"
 msgstr ""
-
-#: source/smres.src#CMDBOXWINDOW_TEXT.#define.Text
-msgid  "Commands"
-msgstr "آديش"
 
 #: source/commands.src#RID_COMMANDMENU.RID_UNBINOPS_MENU.MenuItem.Text
 msgid  "~Unary/Binary Operators"

@@ -49,7 +49,7 @@ msgstr "పరివర్తించు (~C)"
 
 #: source/euro/euro.src#STEP_ZERO + 4.String.Text
 msgid  "Note: Currency amounts from external links and currency conversion factors in formulas cannot be converted."
-msgstr ""
+msgstr "గమనిక: దాహ్య జోడింపుల నుండి ద్రవ్యం మొత్తములు మరియు సూత్రములలోని ద్రవ్య పరివర్తన కారకములు పరివర్తించబడవు. "
 
 #: source/euro/euro.src#STEP_ZERO + 5.String.Text
 msgid  "First, unprotect all sheets."
@@ -153,7 +153,7 @@ msgstr "అరల మాదిరుల యొక్క పరివర్తన
 
 #: source/euro/euro.src#STATUSLINE + 2.String.Text
 msgid  "Registration of the relevant ranges: Sheet %1Number%1 of %2TotPageCount%2"
-msgstr ""
+msgstr "తగినటువంటి శ్రేణుల యొక్క నమోదు: %2మొత్తముపుటలసంఖ్య%2 యొక్క %1సంఖ్య%1 పుట "
 
 #: source/euro/euro.src#STATUSLINE + 3.String.Text
 msgid  "Entry of the ranges to be converted..."
@@ -193,11 +193,11 @@ msgstr "యూనరో కన్వర్టర్"
 
 #: source/euro/euro.src#MESSAGES + 6.String.Text
 msgid  "Should protected spreadsheets be temporarily unprotected?"
-msgstr ""
+msgstr "కాపాడబడినటువంటి స్ర్పెడ్ షీట్స్ ను తాత్కాలికముగా కాపాడబడనట్లుగా చేయవలెనా?"
 
 #: source/euro/euro.src#MESSAGES + 7.String.Text
 msgid  "Enter the password to unprotect the table %1TableName%1"
-msgstr ""
+msgstr "%1పట్టికనామము%1 అను పట్టికను కాపాడబడనట్లుగా చేయుటకు రహస్య పదం ను ప్రవేశపెట్టుము"
 
 #: source/euro/euro.src#MESSAGES + 8.String.Text
 msgid  "Wrong Password!"
@@ -221,11 +221,11 @@ msgstr "పుట రక్షణా రాహిత్యముగా చేయ
 
 #: source/euro/euro.src#MESSAGES + 13.String.Text
 msgid  "The Wizard cannot edit this document as cell formats cannot be modified in documents containing protected spreadsheets."
-msgstr ""
+msgstr "రక్షిత స్ప్రెడ్‌షీటులను కలిగివున్న పత్రములనందు అర ఫార్మాటులు సవరించలేని కారణంగా ఈ విజార్డు పత్రమును సరికూర్చలేదు."
 
 #: source/euro/euro.src#MESSAGES + 14.String.Text
 msgid  "Please note that the Euro Converter will, otherwise, not be able to edit this document!"
-msgstr ""
+msgstr "యూనరో కన్వర్టర్ వలన సాధ్యము, లేనిచో, ఈ పత్రమును సవరించుట సాధ్యపడదు! అని దయచేసి గమనించగలరు"
 
 #: source/euro/euro.src#MESSAGES + 15.String.Text
 msgid  "Please choose a currency to be converted first!"
@@ -257,7 +257,7 @@ msgstr "పత్రము చదువుటకు మాత్రమే!"
 
 #: source/euro/euro.src#MESSAGES + 22.String.Text
 msgid  "The '<1>' file already exists.<CR>Do you want to overwrite it?"
-msgstr ""
+msgstr "'<1>' అను దస్త్రము మునుపే కలదు.<సిఆర్>దీనిని మీరు చెరిపిరాయవలెనని అనుకుంటున్నారా?"
 
 #: source/euro/euro.src#MESSAGES + 23.String.Text
 msgid  "Do you really want to terminate conversion at this point?"
@@ -337,7 +337,7 @@ msgstr "ఈ పత్రపు  ద్రవ్యం సమితి యూర�
 
 #: source/euro/euro.src#CURRENCIES + 17.String.Text
 msgid  "The language set for your operating system is not a language of the European Monetary Union."
-msgstr ""
+msgstr "మీ కార్యవ్యవస్థ యొక్క భాష యూరోపియన్ మానిటరి సంఘం భాష కాదు."
 
 #: source/euro/euro.src#STEP_LASTPAGE.String.Text
 msgid  "Progress"
@@ -361,35 +361,35 @@ msgstr "పుట ఎల్లపుడు కాపాడబడదు"
 
 #: source/formwizard/dbwizres.src#RID_COMMON_START + 0.String.Text
 msgid  "The directory '%1' could not be created.<BR>There may not be enough space left on your hard disk."
-msgstr ""
+msgstr "'%1'అను వివరణ నిర్మించబడలేదు.<BR>మీ హార్డ్డిస్క్ నందు సరిపడు స్థలము లేదు."
 
 #: source/formwizard/dbwizres.src#RID_COMMON_START + 1.String.Text
 msgid  "The text document could not be created.<BR>Please check if the module 'PRODUCTNAME Writer' is installed."
-msgstr ""
+msgstr "పాఠపత్రము నిర్మించబడదు.<‌BR> 'ఉత్పత్తినామము రచయిత'అను అధిభాగం ప్రతిష్టించబడినదో లేదో దయచేసి తనిఖీ చేయుము."
 
 #: source/formwizard/dbwizres.src#RID_COMMON_START + 2.String.Text
 msgid  "The spreadsheet could not be created.<BR>Please check if the module 'PRODUCTNAME Calc' is installed."
-msgstr ""
+msgstr "స్రెడ్ శీట్ నిర్మించబడదు.<BR>'ఉత్పత్తినామము గణణయంత్రము'అను అధిభాగం ప్రతిష్టించబడినదో లేదో దయచేసి తనిఖీ చేయుము."
 
 #: source/formwizard/dbwizres.src#RID_COMMON_START + 3.String.Text
 msgid  "The presentation could not be created.<BR>Please check if the module 'PRODUCTNAME Impress' is installed."
-msgstr ""
+msgstr "సమర్పణము నిర్మించబడదు.<BR>'ఉత్పత్తినామము ముద్రించు'అను అధిభాగం ప్రతిష్టించబడినదో లేదో దయచేసి తనిఖీ చేయుము."
 
 #: source/formwizard/dbwizres.src#RID_COMMON_START + 4.String.Text
 msgid  "The drawing could not be created.<BR>Please check if the module 'PRODUCTNAME Draw' is installed."
-msgstr ""
+msgstr "చిత్రలేఖనము నిర్మించబడదు.<BR>'ఉత్పత్తినామము చిత్రలేఖనము'అను అధిభాగం ప్రతిష్టించబడినదో లేదో దయచేసి తనిఖీ చేయుము."
 
 #: source/formwizard/dbwizres.src#RID_COMMON_START + 5.String.Text
 msgid  "The formula could not be created.<BR>Please check if the module 'PRODUCTNAME Math' is installed."
-msgstr ""
+msgstr "సూత్రము నిర్మించబడదు.<‌BR>'ఉత్పత్తినామము గణితము'అను అధిభాగం ప్రతిష్టించబడినదో లేదో దయచేసి తనిఖీ చేయుము."
 
 #: source/formwizard/dbwizres.src#RID_COMMON_START + 6.String.Text
 msgid  "The files required could not be found.<BR>Please start the %PRODUCTNAME Setup and choose 'Repair'."
-msgstr ""
+msgstr "కావలసిన దస్త్రములు దొరకలేదు.<‌BR>%PRODUCTNAME అమర్చిపెట్టును మొదలుపెట్టుము మరియు 'బాగుచేయు'ను ఎంచు."
 
 #: source/formwizard/dbwizres.src#RID_COMMON_START + 7.String.Text
 msgid  "The file '<PATH>' already exists.<BR><BR>Would you like to overwrite the existing file?"
-msgstr ""
+msgstr "'<PATH>'అను దస్త్రము మునుపే కలదు.<‌BR><‌BR> ఉన్నటువంటి దస్త్రమును చెరిపి రాయవలెనా?"
 
 #: source/formwizard/dbwizres.src#RID_COMMON_START + 8.String.Text
 msgid  "Yes"
@@ -445,7 +445,7 @@ msgstr "<wizard_name> ద్వారా <current_date> పై మాదిర�
 
 #: source/formwizard/dbwizres.src#RID_COMMON_START + 21.String.Text
 msgid  "The wizard could not be run, because important files were not found.\nUnder 'Tools - Options - %PRODUCTNAME - Paths' click the 'Default' button to reset the paths to the original default settings.\nThen run the wizard again."
-msgstr ""
+msgstr "విజార్డ్ నడుపబడదు,ఎందుకనగా ముఖ్య దస్త్రము దొరకలేదు.\n'పనిముట్లు - ఇచ్ఛాపూర్వకాలు - %PRODUCTNAME - మార్గములు' నందు 'అప్రమేయము' బొత్తమును క్లిక్ చేసి మార్గములను అసలైన అప్రమేయము అమరికలుగా పునః ప్రారంభంచేయు.\nతరువాత విజార్డ్ ను మరల నడుపుము."
 
 #: source/formwizard/dbwizres.src#RID_DB_COMMON_START + 0.String.Text
 msgid  "C~reate"
@@ -473,7 +473,7 @@ msgstr "పట్టిక నామము (~T)"
 
 #: source/formwizard/dbwizres.src#RID_DB_COMMON_START + 6.String.Text
 msgid  "An error occurred while running the wizard. The wizard will be terminated."
-msgstr ""
+msgstr "విజార్డ్ నడుపునపుడు దోషము ఎదురైనది. విజార్డ్ ఆపబడినది."
 
 #: source/formwizard/dbwizres.src#RID_DB_COMMON_START + 14.String.Text
 msgid  "No connection to the database could be established."
@@ -553,11 +553,11 @@ msgstr "ఫారములోని క్షేత్రములు (~t)"
 
 #: source/formwizard/dbwizres.src#RID_DB_FORM_WIZARD_START + 2.String.Text
 msgid  "Binary fields are always listed and selectable from the left list.\nIf possible, they are interpreted as images."
-msgstr ""
+msgstr "బైనరీ క్షేత్రములు ఎల్లప్పటికి జాబితలోఉంచబడినవి మరియు ఎడమ జాబితా నుండి ఎంచుకోబడును.\n చిత్రములుగా మార్చబడినవి. "
 
 #: source/formwizard/dbwizres.src#RID_DB_FORM_WIZARD_START + 3.String.Text
 msgid  "A subform is a form that is inserted in another form.\nUse subforms to show data from tables or queries with a one-to-many relationship."
-msgstr ""
+msgstr "ఉపఫారము అనేది ఒక ఫారము దానిని మరో ఫారములో ప్రవేశపెట్టబడినది.\nపట్టిక లేదా ప్రశ్న లోని దత్తంశమును  ఏకానేక సంబంధమును ఉపయోగించి చూపించుట."
 
 #: source/formwizard/dbwizres.src#RID_DB_FORM_WIZARD_START + 4.String.Text
 msgid  "~Add Subform"
@@ -593,7 +593,7 @@ msgstr "ఫారములలోని క్షేత్రములు"
 
 #: source/formwizard/dbwizres.src#RID_DB_FORM_WIZARD_START + 19.String.Text
 msgid  "The join '<FIELDNAME1>' and '<FIELDNAME2>' has been selected twice.\nBut joins may only be used once."
-msgstr ""
+msgstr "'<FIELDNAME1>' మరియు '<FIELDNAME2>' అను జొడి రెండుమార్లు ఎంచబడినవి.\nకానీ జొడీలు ఒక్కసారి మాత్రమే ఉపయోగపడును."
 
 #: source/formwizard/dbwizres.src#RID_DB_FORM_WIZARD_START + 20.String.Text
 msgid  "~First joined subform field"
@@ -805,7 +805,7 @@ msgstr "ఫారము యొక్క నామమును అమర్చు
 
 #: source/formwizard/dbwizres.src#RID_DB_FORM_WIZARD_START + 98.String.Text
 msgid  "A form with the name '%FORMNAME' already exists.\nChoose another name."
-msgstr ""
+msgstr "'%FORMNAME' నామముతో యిప్పటికే ఒక ఫారము వుంది.\nవేరొక నామమును యెంచుకొనుము."
 
 #: source/formwizard/dbwizres.src#RID_DB_QUERY_WIZARD_START + 0.String.Text
 msgid  "Query Wizard"
@@ -841,7 +841,7 @@ msgstr "ప్రశ్నను మార్చుము (~M)"
 
 #: source/formwizard/dbwizres.src#RID_DB_QUERY_WIZARD_START + 8.String.Text
 msgid  "~How do you want to proceed after creating the query?"
-msgstr ""
+msgstr "ప్రశ్నను నిర్మించిన తరువాత ఏవిధంగా మీరు ముందుకు కొనసాగాలనుకుంటున్నారు? (~H)"
 
 #: source/formwizard/dbwizres.src#RID_DB_QUERY_WIZARD_START + 9.String.Text
 msgid  "Match ~all of the following"
@@ -1097,15 +1097,15 @@ msgstr "పూర్తి సమాచారం"
 
 #: source/formwizard/dbwizres.src#RID_DB_QUERY_WIZARD_START + 88.String.Text
 msgid  "A field that has not been assigned an aggregate function must be used in a group."
-msgstr ""
+msgstr "సరాసరి కార్యక్రమమునకు నియమించబడలేని ఒక క్షేత్రము సమూహములో ఉపయోగపడును."
 
 #: source/formwizard/dbwizres.src#RID_DB_QUERY_WIZARD_START + 89.String.Text
 msgid  "The condition '<FIELDNAME> <LOGICOPERATOR> <VALUE>' was chosen twice. Each condition can only be chosen once"
-msgstr ""
+msgstr "'<FIELDNAME> <LOGICOPERATOR> <VALUE>'  అను నిబంధన రెండుమార్లు ఎంచుకొనబడినది.ప్రతి నిబంధన ఒక్కసారిమాత్రమే ఎంచుకొనవలె."
 
 #: source/formwizard/dbwizres.src#RID_DB_QUERY_WIZARD_START + 90.String.Text
 msgid  "The aggregate function <FUNCTION> has been assigned twice to the fieldname '<NUMERICFIELD>'."
-msgstr ""
+msgstr "<FUNCTION> అను సరాసరి కార్యక్రమము '<NUMERICFIELD>'అను క్షేత్రనామమునకు రెండుమార్లు నియమించబడినది."
 
 #: source/formwizard/dbwizres.src#RID_DB_QUERY_WIZARD_START + 91.String.Text
 msgid  ", "
@@ -1321,11 +1321,11 @@ msgstr "'<REPORTFORM>' అను ఫారము లేదు."
 
 #: source/formwizard/dbwizres.src#RID_DB_REPORT_WIZARD_START + 65.String.Text
 msgid  "The query with the statement <BR>'<STATEMENT>' <BR> could not be run. <BR> Check your data source."
-msgstr ""
+msgstr "<‌BR>'<STATEMENT>'<‌BR>అను ప్రకటన గల ప్రశ్న నడవబడదు.<‌BR>మీయొక్క దత్తాంశ వనరును తనిఖీ చేయుము."
 
 #: source/formwizard/dbwizres.src#RID_DB_REPORT_WIZARD_START + 66.String.Text
 msgid  "The following hidden control in the form '<REPORTFORM>' could not be read: '<CONTROLNAME>'."
-msgstr ""
+msgstr "'<REPORTFORM>' అను నివేదనలో క్రింద దాచిఉన నియంత్రణ చదవబడదు:'<CONTROLNAME>'"
 
 #: source/formwizard/dbwizres.src#RID_DB_REPORT_WIZARD_START + 67.String.Text
 msgid  "Importing data..."
@@ -1349,7 +1349,7 @@ msgstr "క్షేత్రము"
 
 #: source/formwizard/dbwizres.src#RID_DB_REPORT_WIZARD_START + 72.String.Text
 msgid  "An error occurred in the wizard.<BR>The template '%PATH' could be erroneous.<BR>Either the required sections or tables do not exist or exist under the wrong name.<BR>See the Help for more detailed information.<BR>Please select another template."
-msgstr ""
+msgstr "విజార్డ్ లో దోషము ఎదురైనది.<‌BR>మాదిరి %మార్గం దోషంతోకూడినది.<‌BR>కావలసిన వర్గం లేదా పట్టిక లేదు లేదా తప్పుడు నామముతో కలిగియున్నది.<‌BR>ఎక్కువ సమాచారముకై సహాయమును చూడుము.<‌BR>దయచేసి వేరొక మాదిరిని ఎంచుకొనుము."
 
 #: source/formwizard/dbwizres.src#RID_DB_REPORT_WIZARD_START + 73.String.Text
 msgid  "There is an invalid user field in a table."
@@ -1357,15 +1357,15 @@ msgstr "పనికిరాని వినియోగదారుడిన�
 
 #: source/formwizard/dbwizres.src#RID_DB_REPORT_WIZARD_START + 74.String.Text
 msgid  "The sort criterium '<FIELDNAME>' was chosen twice. Each criterium can only be chosen once."
-msgstr ""
+msgstr "'<FIELDNAME>' అను క్రమ ప్రమాణము రెండుమార్లు ఎంచుకోనబడినది.ప్రతీ ప్రమాణము ఒక్కసారి మాత్రమే ఎంచుకోవలెను."
 
 #: source/formwizard/dbwizres.src#RID_DB_REPORT_WIZARD_START + 75.String.Text
 msgid  "Note: The dummy text will be replaced by data from the database when the report is created."
-msgstr ""
+msgstr "గమనిక: నివేదన సృష్టించబడినపుడు, నకలు పాఠం దత్తాంశస్థానం నందు గల దత్తాంశంతో మార్చబడును."
 
 #: source/formwizard/dbwizres.src#RID_DB_REPORT_WIZARD_START + 76.String.Text
 msgid  "A report '%REPORTNAME' already exists in the database. Please assign another name."
-msgstr ""
+msgstr "'%REPORTNAME' అను నివేదన దత్తాంశస్థానం లో కలదు. దయచేసి వేరే నామము ను నియమించుము."
 
 #: source/formwizard/dbwizres.src#RID_DB_REPORT_WIZARD_START + 78.String.Text
 msgid  "How do you want to proceed after creating the report?"
@@ -1465,7 +1465,7 @@ msgstr "పట్టికను నిర్మించు"
 
 #: source/formwizard/dbwizres.src#RID_DB_TABLE_WIZARD_START + 14.String.Text
 msgid  "This wizard helps you to create a table for your database. After selecting a table category and a sample table, choose the fields you want to include in your table. You can include fields from more than one sample table."
-msgstr ""
+msgstr "ఈ విజార్డ్ మీ దత్తాంశస్థానం కొరకు పట్టిక నిర్మాణములో సహాయపడును.పట్టిక వర్గమును మరియు మచ్చుక పట్టికను ఎంచుకున్న తరువాత, మీ పట్టికలో చేర్చుకొనుటకై క్షేత్రములను ఎంచుకొనుము.ఒకటికన్నా ఎక్కువ మచ్చుక పట్టికల నుండి మీరు క్షేత్రములను చేర్చుకొనవచ్చును."
 
 #: source/formwizard/dbwizres.src#RID_DB_TABLE_WIZARD_START + 15.String.Text
 msgid  "Ca~tegory"
@@ -1509,7 +1509,7 @@ msgstr "ఎంచుకున్నటువంటి క్షేత్రమ�
 
 #: source/formwizard/dbwizres.src#RID_DB_TABLE_WIZARD_START + 26.String.Text
 msgid  "A primary key uniquely identifies each record in a database table. Primary keys ease the linking of information in separate tables, and it is recommended that you have a primary key in every table. Without a primary key, it will not be possible to enter data into this table."
-msgstr ""
+msgstr "దత్తాంశస్థానం పట్టిక లోని ప్రతి రికార్డు ప్రాథమిక మీట అసమానముగా గుర్తించబడినది.ప్రాథమిక మీట వేర్వేరు పట్టికల సమాచారమును జోడించుటను సులువు చేయును, మరియు ప్రతీ పట్టికలో ప్రాథమిక మీట ఉండాలి.ఈ పట్టిక లో దత్తాంశమును  ప్రాథమిక మీట లేనిచో ప్రవేశపెట్టుట సాధ్యపడదు."
 
 #: source/formwizard/dbwizres.src#RID_DB_TABLE_WIZARD_START + 27.String.Text
 msgid  "~Create a primary key"
@@ -1545,7 +1545,7 @@ msgstr "మీ పట్టికకు ఏనామమును ఇవ్వా
 
 #: source/formwizard/dbwizres.src#RID_DB_TABLE_WIZARD_START + 35.String.Text
 msgid  "Congratulations. You have entered all the information needed to create your table."
-msgstr ""
+msgstr "శుభాకాంక్షలు.మీ పట్టికను నిర్మించుటకు కావలసిన సమాచారముఅంతా ప్రవేశపెట్టబడినది."
 
 #: source/formwizard/dbwizres.src#RID_DB_TABLE_WIZARD_START + 36.String.Text
 msgid  "What do you want to do next?"
@@ -1569,11 +1569,11 @@ msgstr "మీరు సృష్టించన పట్టిక తెరవ
 
 #: source/formwizard/dbwizres.src#RID_DB_TABLE_WIZARD_START + 41.String.Text
 msgid  "The table name '%TABLENAME' contains a character ('%SPECIALCHAR') that might not be supported by the database."
-msgstr ""
+msgstr "'%TABLENAME' అను పట్టిక నామము ప్రత్యేకమైన అక్షరము('%SPECIALCHAR')ను కలిగి ఉన్నాది దత్తాంశస్థానం దీనికి సహకరించక పోవును."
 
 #: source/formwizard/dbwizres.src#RID_DB_TABLE_WIZARD_START + 42.String.Text
 msgid  "The field name '%FIELDNAME' contains a special character ('%SPECIALCHAR') that might not be supported by the database."
-msgstr ""
+msgstr "'%FIELDNAME' అను క్షేత్ర నామము ప్రత్యేకమైన అక్షరము('%SPECIALCHAR')ను కలిగి ఉన్నాది దత్తాంశస్థానం దీనికి సహకరించక పోవును."
 
 #: source/formwizard/dbwizres.src#RID_DB_TABLE_WIZARD_START + 43.String.Text
 msgid  "Field"
@@ -1593,11 +1593,11 @@ msgstr "ఎంచుకున్న క్షేత్రమును తీస�
 
 #: source/formwizard/dbwizres.src#RID_DB_TABLE_WIZARD_START + 47.String.Text
 msgid  "The field cannot be inserted because this would exceed the maximum number of %COUNT possible fields in the database table"
-msgstr ""
+msgstr "క్షేత్రము ప్రవేశపెట్టబడదు,ఎందుకనగా ఇది దత్తాంశస్థానం పట్టిక లోని %COUNT క్షేత్రములు గరిష్ట సంఖ్యను దాటిపోవును."
 
 #: source/formwizard/dbwizres.src#RID_DB_TABLE_WIZARD_START + 48.String.Text
 msgid  "The name '%TABLENAME' already exists.\nPlease enter another name."
-msgstr ""
+msgstr "'%TABLENAME' అను నామము కలదు.\nదయచేసి వేరొక నామమును ప్రవేశపెట్టుము."
 
 #: source/formwizard/dbwizres.src#RID_DB_TABLE_WIZARD_START + 49.String.Text
 msgid  "Catalog of the table"
@@ -1733,7 +1733,7 @@ msgstr "పుట డిజైన్"
 
 #: source/formwizard/dbwizres.src#RID_LETTERWIZARDDIALOG_START + 31.String.Text
 msgid  "This wizard helps you to create a letter template. You can then use the template as the basis for writing letters as often as desired."
-msgstr ""
+msgstr "ఈ విజార్డ్  లేఖ మాదిరిని నిర్మించుటకు సహాయపడును. తరువాత మీరు మాదిరిలను మీ ఇష్టానుసారముగా లేఖలను వ్రాసుకునుటకు ఉపయోగించవచ్చును."
 
 #: source/formwizard/dbwizres.src#RID_LETTERWIZARDDIALOG_START + 32.String.Text
 msgid  "~Height:"
@@ -1801,11 +1801,11 @@ msgstr "భూమిక"
 
 #: source/formwizard/dbwizres.src#RID_LETTERWIZARDDIALOG_START + 48.String.Text
 msgid  "This wizard creates a letter template which enables you to create multiple letters with the same layout and settings."
-msgstr ""
+msgstr "ఈ విజార్డ్ ఒక లేఖ మాదిరిని నిర్మించును అది అదే నమూనాను మరియు అమరికల తో గల వివిధ లేఖలను నిర్మించుటకు ఉపయోగించ వచ్చును."
 
 #: source/formwizard/dbwizres.src#RID_LETTERWIZARDDIALOG_START + 49.String.Text
 msgid  "To create another new letter out of the template just navigate to the template location and double-click it."
-msgstr ""
+msgstr "వేరొక కొత్త లేఖను మాదిరి బయటి నుండి నిర్మించుటకు మాదిరి స్థానమునకు వ్యతిరేఖముగా చేసి దానిని రెండింతలు క్లిక్ చేయుము."
 
 #: source/formwizard/dbwizres.src#RID_LETTERWIZARDDIALOG_START + 50.String.Text
 msgid  "Template name:"
@@ -1957,7 +1957,7 @@ msgstr "పుట డిజైన్"
 
 #: source/formwizard/dbwizres.src#RID_FAXWIZARDDIALOG_START + 17.String.Text
 msgid  "This wizard helps you to create a fax template. The template can then be used to create a fax whenever needed."
-msgstr ""
+msgstr "ఈ విజార్డ్ ఫ్యాక్స్ మాదిరిను నిర్మించుటకు మీకు సహాయపడును.ఫ్యాక్స్ అవసరమైనప్పుడు నిర్మించుటకు మాదిరి ఉపయోగపడును."
 
 #: source/formwizard/dbwizres.src#RID_FAXWIZARDDIALOG_START + 18.String.Text
 msgid  "Return address"
@@ -1981,11 +1981,11 @@ msgstr "భూమిక"
 
 #: source/formwizard/dbwizres.src#RID_FAXWIZARDDIALOG_START + 23.String.Text
 msgid  "This wizard creates a fax template which enables you to create multiple faxes with the same layout and settings."
-msgstr ""
+msgstr "ఈ విజార్డ్ ఫ్యాక్స్ మాదిరిను నిర్మించును అది అదే నమూనాను మరియు అమరికల తో గల ఫ్యాక్స్ లను నిర్మించుటకు ఉపయోగించ వచ్చును."
 
 #: source/formwizard/dbwizres.src#RID_FAXWIZARDDIALOG_START + 24.String.Text
 msgid  "To create another new fax out of the template, go to the location where you saved the template and double-click the file."
-msgstr ""
+msgstr "మాదిరినుండి కాకుండా కొత్త ఫ్యాక్స్ను నిర్మించుటకు, మీరు బద్రపరిచిన స్థానముకు వెల్లుము మరియు దస్త్రమును రెండింతలు క్లిక్ చేయుము."
 
 #: source/formwizard/dbwizres.src#RID_FAXWIZARDDIALOG_START + 25.String.Text
 msgid  "Template Name:"
@@ -2121,7 +2121,7 @@ msgstr "వెబ్ విజార్డ్"
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +2.String.Text
 msgid  "This Web Wizard is to aid you in publishing documents on the Internet.\n\nIt will convert the documents so that they can be viewed by a web browser. In addition, it will generate a Table of Contents page with links for easy access to the documents. The Web Wizard will also allow you to customize the design and layout of your web site.\n\nYou will be able to keep the documents you have published on the web up-to-date and add or remove documents at any time."
-msgstr ""
+msgstr "ఈ వల విజార్డ్ ఇంటర్నెట్ నందు పత్రములను ప్రచురించుటకు మీకు సహాయపడును.\n\nఇది పత్రములను పరివర్తించును కావున ఇవి వల అన్వేషిణి ద్వారా చూడబడతాయి.ఇంకా, సారముల పట్టిక పుటమును జోడింపులతో సులువుగా పత్రములను ప్రవేశించునట్లు ఇది విడుదలచేయును.వల విజార్డ్ కూడా మీ వెబ్ సైట్ యొక్క నమూనాను మరియు కూర్పును మలుచుకొనుటకు అనుమతించును.\n\nఏ సమయములో అయిననూ మీ పత్రములను ఎప్పటికప్పుడు వెబ్ లో ప్రచురించుటకు మరియు పత్రములను కూడుటకు లేదా తొలగించుటకు సహకరించును."
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +4.String.Text
 msgid  "~Delete"
@@ -2305,7 +2305,7 @@ msgstr "ఎంచుకున్న కూర్పును మలుచుక�
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +61.String.Text
 msgid  "Include the following information for each document in the table of contents:"
-msgstr ""
+msgstr "సారముల పట్టికలోని ప్రతీ పత్రములో క్రింది సమాచారము కలిగియుండును:"
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +62.String.Text
 msgid  "Optimize the layout for screen resolution:"
@@ -2345,19 +2345,19 @@ msgstr "స్థానిక లక్ష్యము'%FILENAME' అనేద�
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +75.String.Text
 msgid  "The ZIP target '%FILENAME' already exists. Do you want to overwrite the existing target? "
-msgstr ""
+msgstr "జిప్ లక్ష్యము'%FILENAME' మునుపే కలదు.ఉన్నటువంటి లక్ష్యమును చెరిపిరాయాలనుకుంటున్నారా?"
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +76.String.Text
 msgid  "The FTP target directory '%FILENAME' is not empty. Some files might be overwritten. Do you want to continue?"
-msgstr ""
+msgstr "ఎఫ్ టి పి లక్ష్యము'%FILENAME' ఖళీగా లేదు.కొన్ని దస్త్రములు చెరిపిరాయాబడినవి.మీరు కొనసాగాలనుకుంటున్నారా?"
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +77.String.Text
 msgid  "The local target directory '%FILENAME' is not empty. Some files might be overwritten. Do you want to continue?"
-msgstr ""
+msgstr "స్థానిక లక్ష్యము'%FILENAME' ఖళీగా లేదు.కొన్ని దస్త్రములు చెరిపిరాయాబడినవి.మీరు కొనసాగాలనుకుంటున్నారా?"
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +78.String.Text
 msgid  "Settings already exist under the given name. Do you want to overwrite the existing settings? "
-msgstr ""
+msgstr "ఇచ్చినటువంటి నామమునందు అమరికలు కలవు. ఉన్నటువంటి అమరికలు మీరు చెరిపిరాయాలనుకుంటున్నారా?"
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +79.String.Text
 msgid  "Exporting documents..."
@@ -2457,7 +2457,7 @@ msgstr "కూర్పు దస్త్రములను నకలు చే
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +108.String.Text
 msgid  "An error occurred while gathering document information for '%FILENAME'. "
-msgstr ""
+msgstr "'%FILENAME'కొరకు పత్ర సమాచారమును సేకరించునపుడు దోషము ఎదురైనది."
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +109.String.Text
 msgid  "An error occurred while exporting the document '%FILENAME'."
@@ -2473,7 +2473,7 @@ msgstr "'%FILENAME'అను పత్రమును ఎగుమతిచే�
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +112.String.Text
 msgid  "An input/output error occurred while exporting the document '%FILENAME'."
-msgstr ""
+msgstr "'%FILENAME'అను పత్రమును ఎగుమతిచేయునపుడు ఎగుమతి/దిగుమతి దోషము ఎదురైనది."
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +113.String.Text
 msgid  "An error occurred while copying media files to the temporary directory."
@@ -2541,7 +2541,7 @@ msgstr "ఉపదర్శనం"
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +130.String.Text
 msgid  "The selected settings will be deleted.\n\nDo you really want to delete these settings? "
-msgstr ""
+msgstr "ఎంచుకున్న అమరికలు తొలగించడమైనది.\n\nఈ అమరికలను నిజంగానే తొలగించాలనుకుంటున్నారా?"
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +131.String.Text
 msgid  "%NUMBER pages"
@@ -2609,19 +2609,19 @@ msgstr "'%FILENAME' అను ఎఫ్ టి పి దస్త్రము �
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +147.String.Text
 msgid  "The FTP directory '%FILENAME' does not exist. \nCreate the directory now?"
-msgstr ""
+msgstr "'%FILENAME' అను ఎఫ్ టి పి దస్త్రము లేదు.\nవివరణను సృష్టించాలా?"
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +148.String.Text
 msgid  "The Zip file '%FILENAME' cannot be created: a directory of the same name already exists."
-msgstr ""
+msgstr "'%FILENAME' అను జిప్ దస్త్రము సృష్టించబడదు: అదే నామముతోగల వివరణ కలదు."
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +149.String.Text
 msgid  "The local directory '%FILENAME' cannot be created. \nPlease check your write-access."
-msgstr ""
+msgstr "'%FILENAME' అను స్థానిక వివరణ సృష్టించబడదు.\nవ్రాత-అర్హతను తనిఖీ చేసుకో"
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +150.String.Text
 msgid  "The local directory '%FILENAME' does not exist. \nCreate the directory now?"
-msgstr ""
+msgstr "'%FILENAME' అను స్థానిక వివరణ లేదు.\nవివరణను సృష్టించాలా?"
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +151.String.Text
 msgid  "Size: %NUMBERKB"
@@ -2757,7 +2757,7 @@ msgstr "నిముషములను దాచుటకు ఫారమున�
 
 #: source/formwizard/dbwizres.src#RID_AGENDAWIZARDDIALOG_START +13.String.Text
 msgid  "This wizard helps you to create an agenda template. The template can then be used to create an agenda whenever needed."
-msgstr ""
+msgstr "ఈ విజార్డ్ కార్యక్రమాల పట్టీ మాదిరిను సృష్టించుటకు సహాయపడును. అవసరమైనప్పుడు అంతా కార్యక్రమాల పట్టీను సృష్టించుటకు ఉపయోగపడును."
 
 #: source/formwizard/dbwizres.src#RID_AGENDAWIZARDDIALOG_START +14.String.Text
 msgid  "Time:"
@@ -2773,7 +2773,7 @@ msgstr "స్థానము:"
 
 #: source/formwizard/dbwizres.src#RID_AGENDAWIZARDDIALOG_START +17.String.Text
 msgid  "Placeholders will be used in empty fields. You can replace placeholders with text later."
-msgstr ""
+msgstr "స్థల అధినేతలు ఖళీ క్షేత్రములలో ఉపయోగపడును.తరువాత మీరు స్థల అధినేతలను పాఠం తో పునఃస్థాపించ్చును"
 
 #: source/formwizard/dbwizres.src#RID_AGENDAWIZARDDIALOG_START +18.String.Text
 msgid  "..."
@@ -2785,7 +2785,7 @@ msgstr "ఈ మాదిరి నుండి కార్యక్రమాల
 
 #: source/formwizard/dbwizres.src#RID_AGENDAWIZARDDIALOG_START +20.String.Text
 msgid  "To create a new agenda out of the template, go to the location where you saved the template and double-click the file."
-msgstr ""
+msgstr "మాదిరినుండి కాకుండా కొత్త కార్యక్రమాల పట్టీను నిర్మించుటకు, మీరు మాదిరిను బద్రపరిచిన స్థానముకు వెల్లుము మరియు దస్త్రమును రెండింతలు క్లిక్ చేయుము."
 
 #: source/formwizard/dbwizres.src#RID_AGENDAWIZARDDIALOG_START +21.String.Text
 msgid  "Agenda item"
@@ -2829,7 +2829,7 @@ msgstr "సదుపాయాలు చూచువారు"
 
 #: source/formwizard/dbwizres.src#RID_AGENDAWIZARDDIALOG_START +31.String.Text
 msgid  "The agenda template will include placeholders for the names of the selected people. When creating an agenda from the template, you can replace these placeholder with the appropriate names."
-msgstr ""
+msgstr "ఎంచుకున్న ప్రజలకై స్థల అధినేతలు కలిగియున్న కార్యక్రమాల పట్టీ మాదిరి.ఎప్పుడయితే మాదిరి నుండి కార్యక్రమాల పటీను సృష్టించారు, సరిపోవు నామములతో స్థల అధినేతలను మార్చవచ్చు."
 
 #: source/formwizard/dbwizres.src#RID_AGENDAWIZARDDIALOG_START +32.String.Text
 msgid  "Type of meeting"
@@ -2849,7 +2849,7 @@ msgstr "గమనికలు"
 
 #: source/formwizard/dbwizres.src#RID_AGENDAWIZARDDIALOG_START +36.String.Text
 msgid  "The agenda template will include placeholders for the selected items."
-msgstr ""
+msgstr "కార్యక్రమాల పట్టీ మాదిరి ఎంచుకున్నటువంటి అంశములకు స్థల అధినేతలను కలుపుకొనును."
 
 #: source/formwizard/dbwizres.src#RID_AGENDAWIZARDDIALOG_START +38.String.Text
 msgid  "Date:"
@@ -2857,7 +2857,7 @@ msgstr "తేది:"
 
 #: source/formwizard/dbwizres.src#RID_AGENDAWIZARDDIALOG_START +39.String.Text
 msgid  "This wizard creates an agenda template which enables you to create multiple agendas with the same layout and settings."
-msgstr ""
+msgstr "ఈ విజార్డ్ కార్యక్రమాల పట్టీ నిర్మించును అది అదేవిధంగా ఉన్నటువంటి కూర్పు మరియు అమరికలు కల్గిన కార్యక్రమాల పట్టీ నిర్మించును."
 
 #: source/formwizard/dbwizres.src#RID_AGENDAWIZARDDIALOG_START +40.String.Text
 msgid  "Page design:"
@@ -3009,11 +3009,11 @@ msgstr "మూయుము"
 
 #: source/importwizard/importwi.src#sWelcometextLabel1.String.Text
 msgid  "This wizard converts documents in %PRODUCTNAME format and Microsoft Office documents to the new OpenDocument format."
-msgstr ""
+msgstr "విజార్డు పత్రములను %PRODUCTNAME ఫార్మాట్‌లోనికి మార్చుతుంది మరియు Microsoft Office పత్రములను కొత్త OpenDocument ఫార్మాట్‌లోనికి మార్చుతుంది."
 
 #: source/importwizard/importwi.src#sWelcometextLabel2.String.Text
 msgid  "Please note that when converting Microsoft documents any attached VBA macros lose their functionality."
-msgstr ""
+msgstr "ఎప్పుడయితే  పరివర్తించు మైక్రోసాఫ్ట్  పత్రములు అతికించబడిన విబిఏ స్థూలములు వాటి కార్యక్రములను పోగొట్టుకొనునని గమనించగలరు."
 
 #: source/importwizard/importwi.src#sWelcometextLabel3.String.Text
 msgid  "Select the document type for conversion:"
@@ -3097,7 +3097,7 @@ msgstr "ఇప్పుడే దీనిని నిర్మించ వల
 
 #: source/importwizard/importwi.src#sFileExists.String.Text
 msgid  "The '<1>' file already exists.<CR>Do you want to overwrite it?"
-msgstr ""
+msgstr "'<1>' అను దస్త్రము మునుపే కలదు.<సిఆర్>దీనిని మీరు చెరిపిరాయవలెనని అనుకుంటున్నారా?"
 
 #: source/importwizard/importwi.src#sMorePathsError3.String.Text
 msgid  "Directories do not exist"
@@ -3241,59 +3241,59 @@ msgstr "ఈ క్రింది వివరణలకు ఇవి ఎగు�
 
 #: source/importwizard/importwi.src#sSumSOTextDocuments.String.Text
 msgid  "All %PRODUCTNAME text documents contained in the following directory will be imported:"
-msgstr ""
+msgstr "ఈ క్రింది వివరణలో కలిగియున్న అన్ని %PRODUCTNAME పాఠం పత్రములు ఎగుమతిచేయబడును:"
 
 #: source/importwizard/importwi.src#sSumSOTableDocuments.String.Text
 msgid  "All %PRODUCTNAME spreadsheets contained in the following directory will be imported:"
-msgstr ""
+msgstr "ఈ క్రింది వివరణలో కలిగియున్న అన్ని %PRODUCTNAME స్రెడ్ షీట్ లు ఎగుమతిచేయబడును:"
 
 #: source/importwizard/importwi.src#sSumSODrawDocuments.String.Text
 msgid  "All %PRODUCTNAME drawing and presentation documents contained in the following directory will be imported:"
-msgstr ""
+msgstr "ఈ క్రింది వివరణలో కలిగియున్న అన్ని %PRODUCTNAME చిత్రలేఖనము మరియు సమర్పణము పత్రములు ఎగుమతిచేయబడును:"
 
 #: source/importwizard/importwi.src#sSumSOMathDocuments.String.Text
 msgid  "All %PRODUCTNAME formula documents contained in the following directory will be imported:"
-msgstr ""
+msgstr "ఈ క్రింది వివరణలో కలిగియున్న అన్ని %PRODUCTNAME సూత్రముల పత్రములు ఎగుమతిచేయబడును:"
 
 #: source/importwizard/importwi.src#sSumSOTextTemplates.String.Text
 msgid  "All %PRODUCTNAME text templates contained in the following directory will be imported:"
-msgstr ""
+msgstr "ఈ క్రింది వివరణలో కలిగియున్న అన్ని %PRODUCTNAME పాఠం మాదిరిలు ఎగుమతిచేయబడును:"
 
 #: source/importwizard/importwi.src#sSumSOTableTemplates.String.Text
 msgid  "All %PRODUCTNAME table templates contained in the following directory will be imported:"
-msgstr ""
+msgstr "ఈ క్రింది వివరణలో కలిగియున్న అన్ని %PRODUCTNAME పట్టిక మాదిరిలు ఎగుమతిచేయబడును:"
 
 #: source/importwizard/importwi.src#sSumSODrawTemplates.String.Text
 msgid  "All %PRODUCTNAME drawing and presentation templates contained in the following directory will be imported:"
-msgstr ""
+msgstr "ఈ క్రింది వివరణలో కలిగియున్న అన్ని %PRODUCTNAME చిత్రలేఖనము మరియు సమర్పణము మాదిరిలు ఎగుమతిచేయబడును:"
 
 #: source/importwizard/importwi.src#sSumSOGlobalDocuments.String.Text
 msgid  "All %PRODUCTNAME master documents contained in the following directory will be imported:"
-msgstr ""
+msgstr "ఈ క్రింది వివరణలో కలిగియున్న అన్ని %PRODUCTNAME ముఖ్య పత్రములు ఎగుమతిచేయబడును:"
 
 #: source/importwizard/importwi.src#sSumMSTextDocuments.String.Text
 msgid  "All Word documents contained in the following directory will be imported:"
-msgstr ""
+msgstr "ఈ క్రింది వివరణలో కలిగియున్న అన్ని పద పత్రములు ఎగుమతిచేయబడును:"
 
 #: source/importwizard/importwi.src#sSumMSTableDocuments.String.Text
 msgid  "All Excel documents contained in the following directory will be imported:"
-msgstr ""
+msgstr "ఈ క్రింది వివరణలో కలిగియున్న అన్ని ఎక్సెల్ పత్రములు ఎగుమతిచేయబడును:"
 
 #: source/importwizard/importwi.src#sSumMSDrawDocuments.String.Text
 msgid  "All PowerPoint documents contained in the following directory will be imported:"
-msgstr ""
+msgstr "ఈ క్రింది వివరణలో కలిగియున్న అన్ని పవర్ పాయాంట్ పత్రములు ఎగుమతిచేయబడును:"
 
 #: source/importwizard/importwi.src#sSumMSTextTemplates.String.Text
 msgid  "All Word templates contained in the following directory will be imported:"
-msgstr ""
+msgstr "ఈ క్రింది వివరణలో కలిగియున్న అన్ని పద మాదిరిలు ఎగుమతిచేయబడును:"
 
 #: source/importwizard/importwi.src#sSumMSTableTemplates.String.Text
 msgid  "All Excel templates contained in the following directory will be imported:"
-msgstr ""
+msgstr "ఈ క్రింది వివరణలో కలిగియున్న అన్ని ఎక్సెల్ మాదిరిలు ఎగుమతిచేయబడును:"
 
 #: source/importwizard/importwi.src#sSumMSDrawTemplates.String.Text
 msgid  "All PowerPoint templates contained in the following directory will be imported:"
-msgstr ""
+msgstr "ఈ క్రింది వివరణలో కలిగియున్న అన్ని పవర్ పాయాంట్ మాదిరిలు ఎగుమతిచేయబడును:"
 
 #: source/schedule/schedule.src#dlgCalTitle.String.Text
 msgid  "%PRODUCTNAME Calendar"
@@ -3481,7 +3481,7 @@ msgstr "పురోగమనము:"
 
 #: source/template/template.src#SAMPLES.String.Text
 msgid  "In order to use the full functionality of this sample, create a document that is based on this template."
-msgstr ""
+msgstr "ఈ మచ్చుక యొక్క మొత్తము కార్యక్రమములను క్రమబద్దముగా ఉపయోగించుకొనుటకు, ఈ మాదిరిని అనుసరించి ఒక పత్రమును నిర్మించుము."
 
 #: source/template/template.src#SAMPLES + 1.String.Text
 msgid  "Remarks"
@@ -3493,7 +3493,7 @@ msgstr "ఇతివృత్త ఎంపిక"
 
 #: source/template/template.src#STYLES + 1.String.Text
 msgid  "Error while saving the document to the clipboard! The following action cannot be undone."
-msgstr ""
+msgstr "పత్రమును క్లిప్ బోర్డుకు బద్రపరచునపుడు దోషము! ఈ క్రింది క్రియ చేయబడలేదు."
 
 #: source/template/template.src#STYLES + 2.String.Text
 msgid  "~Cancel"

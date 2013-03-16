@@ -725,7 +725,7 @@ msgstr "Hili si faili la WinWord6"
 
 #: source/ui/app/error.src#RID_SW_ERRHDL.ERR_CODE ( ERRCODE_CLASS_READ , ERR_WW6_FASTSAVE_ERR ).String.Text
 msgid  "This file was saved with WinWord in 'Fast Save' mode. Please unmark the WinWord option 'Allow Fast Saves' and save the file again."
-msgstr ""
+msgstr "Faili hili lilihifadhiwa na WinWord katika modi 'Hifadhi Haraka'. Tafadhali toa alama kwenye chaguo 'Ruhusu Kuhifadhi Haraka' la WinWord na hifadhi faili tena."
 
 #: source/ui/app/error.src#RID_SW_ERRHDL.ERR_CODE ( ERRCODE_CLASS_READ , ERR_FORMAT_ROWCOL ).String.Text
 msgid  "File format error found at $(ARG1)(row,col)."
@@ -741,7 +741,7 @@ msgstr "Hili si faili la WinWord97"
 
 #: source/ui/app/error.src#RID_SW_ERRHDL.ERR_CODE ( ERRCODE_CLASS_READ , ERR_FORMAT_FILE_ROWCOL ).String.Text
 msgid  "Format error discovered in the file in sub-document $(ARG1) at $(ARG2)(row,col)."
-msgstr ""
+msgstr "Format error discovered in the file in sub-document $(ARG1) at $(ARG2)(row,col)"
 
 #: source/ui/app/error.src#RID_SW_ERRHDL.ERR_CODE ( ERRCODE_CLASS_WRITE , ERR_SWG_WRITE_ERROR ).String.Text
 msgid  "Error writing file."
@@ -789,7 +789,7 @@ msgstr "Hakuna michoro iliyowezwa kusomwa"
 
 #: source/ui/app/error.src#RID_SW_ERRHDL.WARN_CODE ( ERRCODE_CLASS_READ , WARN_WW6_FASTSAVE_ERR ).String.Text
 msgid  "This file was saved with WinWord in 'Fast Save' mode. Please unmark the WinWord option 'Allow Fast Saves' and save the file again."
-msgstr ""
+msgstr "Faili hili lilihifadhiwa na WinWord katika modi 'Hifadhi Haraka'. Tafadhali toa alama kwenye chaguo 'Ruhusu Kuhifadhi Haraka' la WinWord na hifadhi faili tena."
 
 #: source/ui/app/error.src#RID_SW_ERRHDL.WARN_CODE ( ERRCODE_CLASS_READ , WARN_SWG_FEATURES_LOST ).String.Text
 msgid  "Not all attributes could be read."
@@ -817,7 +817,7 @@ msgstr "Andiko halikuweza kuhifadhiwa kikamilifu"
 
 #: source/ui/app/error.src#RID_SW_ERRHDL.WARN_CODE ( ERRCODE_CLASS_WRITE , WARN_SWG_HTML_NO_MACROS).String.Text
 msgid  "This HTML document contains %PRODUCTNAME Basic macros.\nThey were not saved with the current export settings."
-msgstr ""
+msgstr "Andiko hili la HTML lina %PRODUCTNAME mokro msingi.\nHazikuhifadhiwa na vipimo uhamishaji vya sasa."
 
 #: source/ui/app/error.src#RID_SW_ERRHDL.ERR_CODE ( ERRCODE_CLASS_WRITE , WARN_WRITE_ERROR_FILE ).String.Text
 msgid  "Error in writing sub-document $(ARG1)."
@@ -825,7 +825,7 @@ msgstr "Hitilafu katika undikaji andiko dogo $(ARG1)"
 
 #: source/ui/app/error.src#RID_SW_ERRHDL.ERR_CODE ( ERRCODE_CLASS_WRITE , WARN_FORMAT_FILE_ROWCOL ).String.Text
 msgid  "Format error discovered in the file in sub-document $(ARG1) at $(ARG2)(row,col)."
-msgstr ""
+msgstr "Format error discovered in the file in sub-document $(ARG1) at $(ARG2)(row,col)"
 
 #: source/ui/app/app.src#STR_PRINT_MERGE_MACRO.String.Text
 msgid  "Print form letters"
@@ -1076,8 +1076,8 @@ msgid  "Adapt Objects..."
 msgstr "Shabihisha Viumbile..."
 
 #: source/ui/app/app.src#MSG_COMCORE_ASKSEARCH.QueryBox.Message
-msgid  "To proceed with this action, you must first turn off the "undo" function. Do you want to turn off the "undo" function?"
-msgstr ""
+msgid  "To proceed with this action, you must first turn off the \"undo\" function. Do you want to turn off the \"undo\" function?"
+msgstr "Kuendelea na tendo hili, lazima kwanza uzime amali \"tengua\". Unataka kuzima amali \"tengua\"?"
 
 #: source/ui/app/app.src#STR_TABLE_DEFNAME.String.Text
 msgid  "Table"
@@ -1109,15 +1109,15 @@ msgstr "ukurasa wazi"
 
 #: source/ui/app/app.src#MSG_CLPBRD_CLEAR.QueryBox.Message
 msgid  "You have a large amount of data saved in the clipboard.\nShould the clipboard contents remain available for other applications?"
-msgstr ""
+msgstr "Una kiasi kikubwa cha data kilichohifadhiwa kwenye ubao pogoa.\nJe yaliyomo ndani ya ubao pogoa yaendelee kupatikana na programu tumizi nyingine?"
 
 #: source/ui/app/app.src#MSG_SAVE_HTML_QUERY.QueryBox.Message
 msgid  "Conversion into HTML format \nmay cause information loss. \nDo you want to save the document?"
-msgstr ""
+msgstr "Uguezi kwenda fomati ya HTML \nunaweza ukasababisha upotevu wa taarifa. \nUnataka kuhifadhi andiko?"
 
 #: source/ui/app/app.src#MSG_SAVEAS_HTML_QUERY.QueryBox.Message
 msgid  "The source code can only be displayed if the document is saved in HTML format.\nWould you like to save the document as HTML?"
-msgstr ""
+msgstr "Msimbo chanzo unaweza kuzinzwa kama andiko limehifadhiwa kwa fomati ya HTML.\nJe ungependa kuhifadhi andiko kama HTML?"
 
 #: source/ui/app/app.src#STR_ABSTRACT_TITLE.String.Text
 msgid  "Abstract: "
@@ -1161,11 +1161,11 @@ msgstr "unknown"
 
 #: source/ui/app/app.src#MSG_DISABLE_UNDO_QUESTION.WarningBox.Message
 msgid  "This action deletes the list of actions that can be undone. Previous changes made to the document are still valid, but cannot be undone. Do you want to continue formatting?"
-msgstr ""
+msgstr "Tendo hili linafuta orodha ya matendo yanayoweza kutenguliwa. Mabadiliko yaliyopita ambayo yamefanywa kwenye andiko bado ni halali, ila hayawezi kutenguliwa. Je unataka kuendelea kufomati?"
 
 #: source/ui/app/app.src#MSG_PRINT_AS_MERGE.QueryBox.Message
 msgid  "Your document contains address database fields. Do you want to print a form letter?"
-msgstr ""
+msgstr "Andiko lako lina anwani ya nyuga za hifadhidata. Unataka kuchapisha barua fomu?"
 
 #: source/ui/app/app.src#DLG_MERGE_SOURCE_UNAVAILABLE.ST_MERGE_SOURCE_UNAVAILABLE.FixedText.Text
 msgid  "The data source \'%1\' was not found. Thus the connection to the data source could not be established.\n\nPlease check the connections settings."
@@ -1177,7 +1177,7 @@ msgstr ""
 
 #: source/ui/app/app.src#MSG_DATA_SOURCES_UNAVAILABLE.WarningBox.Message
 msgid  "No data source has been set up yet. You need a data source, such as a database, to supply data (for example, names and addresses) for the fields."
-msgstr ""
+msgstr "Hakuna chanzo cha data ambacho kimeshasetiwa. Unahitaji chanzo cha data, kama vile hifadhidata, ili kusambaza data (kwa mfano, majina na anwani) kwa uga."
 
 #: source/ui/app/app.src#RID_MODULE_TOOLBOX.String.Text
 msgid  "Function Bar (viewing mode)"
@@ -1193,7 +1193,7 @@ msgstr ""
 
 #: source/ui/app/app.src#MSG_DISABLE_READLINE_QUESTION.WarningBox.Message
 msgid  "In the current document, changes are being recorded but not shown as such. In large documents, delays can occur when the document is edited. Do you want to show the changes to avoid delays?"
-msgstr ""
+msgstr "Kwenye andiko la sasa, mabadiliko yamenakilikiwa lakini hayakuonyeswa kama yalivyonakiliwa. Kwenye maandiko makubwa, ucheleweshaji unaweza kutokea wakati andiko linahaririwa. Je unataka ukuonyesha mabadiliko kuepuka ucheleweshaji?"
 
 #: source/ui/app/mn.src#MN_TXT.FN_FORMAT_PAGE_DLG.MenuItem.Text
 msgid  "Pa~ge..."
@@ -2041,7 +2041,7 @@ msgstr "[Bila]"
 
 #: source/ui/chrdlg/chrdlg.src#MSG_ILLEGAL_PAGENUM.InfoBox.Message
 msgid  "Page numbers cannot be applied to the current page.  Even numbers can be used on left pages, odd numbers on right pages."
-msgstr ""
+msgstr "Namba za ukurasa haziwezi kutekelezwa kwenye ukurasa wa sasa.  Namba shufwa zinaweza kutumiwa kwenye kurasa za kushoto, namba witiri kwenye kurasa za kulia."
 
 #: source/ui/chrdlg/swbreak.src#DLG_BREAK.ModalDialog.Text
 msgid  "Insert Break"
@@ -2797,7 +2797,7 @@ msgstr "<User settings>"
 
 #: source/ui/config/optcomp.src#TP_OPTCOMPATIBILITY_PAGE.STR_QRYBOX_USEASDEFAULT.String.Text
 msgid  "Do you want to change the compatibility options of the default template?\nThis will affect all new documents based on the default template."
-msgstr ""
+msgstr "Do you want to change the compatibility options of the default template?\nThis will affect all new documents based on the default template."
 
 #: source/ui/config/optcomp.src#TP_OPTCOMPATIBILITY_PAGE.STR_PRINTER_METRICS.String.Text
 msgid  "Use printer metrics for document formatting"
@@ -2897,7 +2897,7 @@ msgstr "Maelezo mafupi"
 
 #: source/ui/config/optload.src#TP_OPTCAPTION_PAGE.FT_OBJECTS.FixedText.Text
 msgid  "Add captions automatically\nwhen inserting:"
-msgstr ""
+msgstr "Add captions automatically\nwhen inserting:"
 
 #: source/ui/config/optload.src#TP_OPTCAPTION_PAGE.FT_ORDER.FixedText.Text
 msgid  "Caption order"
@@ -3129,7 +3129,7 @@ msgstr "Failed"
 
 #: source/ui/config/mailconfigpage.src#DLG_MM_TESTACCOUNTSETTINGS.ST_ERROR_SERVER.String.Text
 msgid  "%PRODUCTNAME could not connect to the outgoing mail server. Check your system's settings and the settings in %PRODUCTNAME. Check the server name, the port and the secure connections settings"
-msgstr ""
+msgstr "%PRODUCTNAME could not connect to the outgoing mail server. Check your system's settings and the settings in %PRODUCTNAME. Check the server name, the port and the secure connections settings"
 
 #: source/ui/config/mailconfigpage.src#DLG_MM_SERVERAUTHENTICATION.ModalDialog.Text
 msgid  "Server Authentication"
@@ -3157,7 +3157,7 @@ msgstr "Nywila"
 
 #: source/ui/config/mailconfigpage.src#DLG_MM_SERVERAUTHENTICATION.RB_SMPTAFTERPOP.RadioButton.Text
 msgid  "The outgoing mail server uses the same authentication as the ~incoming mail server. Enter the settings of the incoming mail server."
-msgstr ""
+msgstr "The outgoing mail server uses the same authentication as the ~incoming mail server. Enter the settings of the incoming mail server."
 
 #: source/ui/config/mailconfigpage.src#DLG_MM_SERVERAUTHENTICATION.FT_INCOMINGSERVER.FixedText.Text
 msgid  "Incoming mail server:"
@@ -3197,7 +3197,7 @@ msgstr "Select Address List"
 
 #: source/ui/dbui/addresslistdialog.src#DLG_MM_ADDRESSLISTDIALOG.FI_DESCRIPTION.FixedText.Text
 msgid  "Select an address list. Click '%1' to select recipients from a different list. If you do not have an address list you can create one by clicking '%2'."
-msgstr ""
+msgstr "Select an address list. Click '%1' to select recipients from a different list. If you do not have an address list you can create one by clicking '%2'."
 
 #: source/ui/dbui/addresslistdialog.src#DLG_MM_ADDRESSLISTDIALOG.FT_LIST.FixedText.Text
 msgid  "Your recipients are currently selected from:"
@@ -3249,7 +3249,7 @@ msgstr ""
 
 #: source/ui/dbui/mmaddressblockpage.src#DLG_MM_ADDRESSBLOCK_PAGE.FI_ADDRESSLIST.FixedText.Text
 msgid  "Select the address list containing the address data you want to use. This data is needed to create the address block."
-msgstr ""
+msgstr "1. Select the address list containing the address data you want to use. This data is needed to create the address block."
 
 #: source/ui/dbui/mmaddressblockpage.src#DLG_MM_ADDRESSBLOCK_PAGE.PB_ADDRESSLIST.PushButton.Text
 msgid  "Select A~ddress List..."
@@ -3346,6 +3346,10 @@ msgstr "~Always include the country/region"
 #: source/ui/dbui/mmaddressblockpage.src#DLG_MM_SELECTADDRESSBLOCK.RB_DEPENDENT.RadioButton.Text
 msgid  "Only ~include the country/region if it is not:"
 msgstr "Only ~include the country/region if it is not:"
+
+#: source/ui/dbui/mmaddressblockpage.src#WORKAROUND.#define.Text
+msgid  "New Address Block"
+msgstr "New Address Block"
 
 #: source/ui/dbui/mmaddressblockpage.src#DLG_MM_CUSTOMIZEADDRESSBLOCK.ST_TITLE_EDIT.String.Text
 msgid  "Edit Address Block"
@@ -3485,7 +3489,7 @@ msgstr "Assign the fields from your data source to match the address elements."
 
 #: source/ui/dbui/mmaddressblockpage.src#DLG_MM_ASSIGNFIELDS.ST_SALUTATIONMATCHING.String.Text
 msgid  "Assign the fields from your data source to match the salutation elements."
-msgstr ""
+msgstr "Assign the fields from your data source to match the salutation elements."
 
 #: source/ui/dbui/mmaddressblockpage.src#DLG_MM_ASSIGNFIELDS.FI_PREVIEW.FixedText.Text
 msgid  "Address block preview"
@@ -3515,17 +3519,13 @@ msgstr "Hakiki"
 msgid  "< none >"
 msgstr ""
 
-#: source/ui/dbui/mmaddressblockpage.src#WORKAROUND.#define.Text
-msgid  "New Address Block"
-msgstr "New Address Block"
-
 #: source/ui/dbui/selectdbtabledialog.src#DLG_MM_SELECTDBTABLEDDIALOG.ModalDialog.Text
 msgid  "Select Table"
 msgstr "Teua Jedwali"
 
 #: source/ui/dbui/selectdbtabledialog.src#DLG_MM_SELECTDBTABLEDDIALOG.FI_SELECT.FixedText.Text
 msgid  "The file you have selected contains more than one table. Please select the table containing the address list you want to use."
-msgstr ""
+msgstr "The file you have selected contains more than one table. Please select the table containing the address list you want to use."
 
 #: source/ui/dbui/selectdbtabledialog.src#DLG_MM_SELECTDBTABLEDDIALOG.PB_PREVIEW.PushButton.Text
 msgid  "~Preview"
@@ -3741,7 +3741,7 @@ msgstr "Personalize the mail merge documents"
 
 #: source/ui/dbui/mmmergepage.src#DLG_MM_MERGE_PAGE.FI_EDIT.FixedText.Text
 msgid  "You can personalize particular documents. Clicking '%1' will temporarily reduce the wizard to a small window so you can edit your document. After editing the document, return to the wizard by clicking 'Return to Mail Merge Wizard' in the small window."
-msgstr ""
+msgstr "You can personalize particular documents. Clicking '%1' will temporarily reduce the wizard to a small window so you can edit your document. After editing the document, return to the wizard by clicking 'Return to Mail Merge Wizard' in the small window."
 
 #: source/ui/dbui/mmmergepage.src#DLG_MM_MERGE_PAGE.PB_EDIT.PushButton.Text
 msgid  "~Edit individual document..."
@@ -3909,7 +3909,7 @@ msgstr "Isiyojina"
 
 #: source/ui/dbui/mmoutputpage.src#DLG_MM_OUTPUT_PAGE.ST_SUBJECTQUERY.String.Text
 msgid  "You did not specify a subject for this message. If you would like to provide one, please type it now."
-msgstr ""
+msgstr "You did not specify a subject for this message. If you would like to provide one, please type it now."
 
 #: source/ui/dbui/mmoutputpage.src#DLG_MM_OUTPUT_PAGE.ST_NOSUBJECT.String.Text
 msgid  "No subject"
@@ -3917,11 +3917,11 @@ msgstr "No subject"
 
 #: source/ui/dbui/mmoutputpage.src#DLG_MM_OUTPUT_PAGE.ST_NOATTACHMENTNAME.String.Text
 msgid  "You did not specify a new name for the attachment. If you would like to provide one, please type it now."
-msgstr ""
+msgstr "You did not specify a new name for the attachment. If you would like to provide one, please type it now."
 
 #: source/ui/dbui/mmoutputpage.src#DLG_MM_OUTPUT_PAGE.ST_CONFIGUREMAIL.String.Text
 msgid  "In order to be able to send mail merge documents by e-mail, %PRODUCTNAME requires information about the e-mail account to be used.\n\n Do you want to enter e-mail account information now?"
-msgstr ""
+msgstr "In order to be able to send mail merge documents by e-mail, %PRODUCTNAME requires information about the e-mail account to be used.\n\n Do you want to enter e-mail account information now?"
 
 #: source/ui/dbui/mmoutputpage.src#DLG_MM_COPYTO.ModalDialog.Text
 msgid  "Copy To"
@@ -3941,11 +3941,11 @@ msgstr "~Bcc"
 
 #: source/ui/dbui/mmoutputpage.src#DLG_MM_COPYTO.FI_NOTE.FixedText.Text
 msgid  "Note:\nSeparate e-mail addresses with a semicolon (;)."
-msgstr ""
+msgstr "Note:\nSeparate e-mail addresses with a semicolon (;)."
 
 #: source/ui/dbui/mmoutputpage.src#DLG_MM_SAVEWARNING.FI_WARNING.FixedText.Text
 msgid  "A document with the name '%1' already exists. Please save this document under a different name."
-msgstr ""
+msgstr "A document with the name '%1' already exists. Please save this document under a different name."
 
 #: source/ui/dbui/mmoutputpage.src#DLG_MM_SAVEWARNING.FT_FILENAME.FixedText.Text
 msgid  "New document name"
@@ -4131,6 +4131,10 @@ msgstr "Tafuta"
 msgid  "~Close"
 msgstr "Funga"
 
+#: source/ui/dbui/mailmergechildwindow.src#WORKAROUND.#define.Text
+msgid  "Return to Mail Merge Wizard"
+msgstr "Return to Mail Merge Wizard"
+
 #: source/ui/dbui/mailmergechildwindow.src#DLG_MAILMERGECHILD.FloatingWindow.Text
 msgid  "Mail Merge Wizard"
 msgstr "Mail Merge Wizard"
@@ -4209,7 +4213,7 @@ msgstr "Sending failed (invalid address)"
 
 #: source/ui/dbui/mailmergechildwindow.src#DLG_MM_SENDMAILS.ST_TERMINATEQUERY.String.Text
 msgid  "There are still e-mail messages in your %PRODUCTNAME Outbox.\nWould you like to exit anyway?"
-msgstr ""
+msgstr "There are still e-mail messages in your %PRODUCTNAME Outbox.\nWould you like to exit anyway?"
 
 #: source/ui/dbui/mailmergechildwindow.src#DLG_MM_SENDWARNING.ModalDialog.Text
 msgid  "E-Mails could not be sent"
@@ -4222,10 +4226,6 @@ msgstr "The following error occured:"
 #: source/ui/dbui/mailmergechildwindow.src#DLG_MM_SENDWARNING.FT_DETAILS.FixedText.Text
 msgid  "Detailed information"
 msgstr "Detailed information"
-
-#: source/ui/dbui/mailmergechildwindow.src#WORKAROUND.#define.Text
-msgid  "Return to Mail Merge Wizard"
-msgstr "Return to Mail Merge Wizard"
 
 #: source/ui/dbui/dbtablepreviewdialog.src#DLG_MM_DBTABLEPREVIEWDIALOG.ModalDialog.Text
 msgid  "Mail Merge Recipients"
@@ -4265,11 +4265,11 @@ msgstr "E-Mail Message:"
 
 #: source/ui/dbui/mmoutputtypepage.src#DLG_MM_OUTPUTTYPE_PAGE.ST_LETTERHINT.String.Text
 msgid  "Send letters to a group of recipients. The letters can contain an address block and a salutation. The letters can be personalized for each recipient."
-msgstr ""
+msgstr "Send letters to a group of recipients. The letters can contain an address block and a salutation. The letters can be personalized for each recipient."
 
 #: source/ui/dbui/mmoutputtypepage.src#DLG_MM_OUTPUTTYPE_PAGE.ST_MAILHINT.String.Text
 msgid  "Send e-mail messages to a group of recipients. The e-mail messages can contain a salutation. The e-mail messages can be personalized for each recipient."
-msgstr ""
+msgstr "Send e-mail messages to a group of recipients. The e-mail messages can contain a salutation. The e-mail messages can be personalized for each recipient."
 
 #: source/ui/dbui/mmpreparemergepage.src#DLG_MM_PREPAREMERGE_PAGE.FI_HEADER.FixedText.Text
 msgid  "Preview and edit the document"
@@ -4277,7 +4277,7 @@ msgstr "Preview and edit the document"
 
 #: source/ui/dbui/mmpreparemergepage.src#DLG_MM_PREPAREMERGE_PAGE.FI_PREVIEW.FixedText.Text
 msgid  "The preview of a merged document is visible now. To see the preview of another document click one of the arrows."
-msgstr ""
+msgstr "The preview of a merged document is visible now. To see the preview of another document click one of the arrows."
 
 #: source/ui/dbui/mmpreparemergepage.src#DLG_MM_PREPAREMERGE_PAGE.FT_RECIPIENT.FixedText.Text
 msgid  "~Recipient"
@@ -4309,7 +4309,7 @@ msgstr "Hariri Andiko"
 
 #: source/ui/dbui/mmpreparemergepage.src#DLG_MM_PREPAREMERGE_PAGE.FI_EDIT.FixedText.Text
 msgid  "Write or edit your document now if you have not already done so. The changes will effect all merged documents.\n\nClicking 'Edit Document...' will temporarily reduce the wizard to a small window so you can edit the mail merge document. After editing the document, return to the wizard by clicking 'Return to Mail Merge Wizard' in the small window."
-msgstr ""
+msgstr "Write or edit your document now if you have not already done so. The changes will effect all merged documents.\n\nClicking 'Edit Document...' will temporarily reduce the wizard to a small window so you can edit the mail merge document. After editing the document, return to the wizard by clicking 'Return to Mail Merge Wizard' in the small window."
 
 #: source/ui/dbui/mmpreparemergepage.src#DLG_MM_PREPAREMERGE_PAGE.PB_EDIT.PushButton.Text
 msgid  "~Edit Document..."
@@ -4535,6 +4535,66 @@ msgstr "Words:"
 msgid  "Characters:"
 msgstr "Viwambo:"
 
+#: source/ui/dialog/regionsw.src#FT_SUBREG_TEXT.#define.Text
+msgid  "~Section"
+msgstr "Kipengele"
+
+#: source/ui/dialog/regionsw.src#CB_HIDE_TEXT.#define.Text
+msgid  "H~ide"
+msgstr "Ficha"
+
+#: source/ui/dialog/regionsw.src#FL_HIDE_TEXT.#define.Text
+msgid  "Hide"
+msgstr "Ficha"
+
+#: source/ui/dialog/regionsw.src#CB_CONDITION_TEXT.#define.Text
+msgid  "~With Condition"
+msgstr "Na masharti"
+
+#: source/ui/dialog/regionsw.src#FL_PROPERTIES_TEXT.#define.Text
+msgid  "Properties"
+msgstr "Sifa"
+
+#: source/ui/dialog/regionsw.src#CB_EDIT_IN_READONLY_TEXT.#define.Text
+msgid  "E~ditable in read-only document"
+msgstr "E~ditable in read-only document"
+
+#: source/ui/dialog/regionsw.src#FL_FILE_TEXT.#define.Text
+msgid  "Link"
+msgstr "Link"
+
+#: source/ui/dialog/regionsw.src#CB_FILE_TEXT.#define.Text
+msgid  "~Link"
+msgstr "~Link"
+
+#: source/ui/dialog/regionsw.src#CB_DDE_TEXT.#define.Text
+msgid  "DD~E"
+msgstr "DDE"
+
+#: source/ui/dialog/regionsw.src#FT_DDE_TEXT.#define.Text
+msgid  "DDE ~command"
+msgstr "Amri DDE"
+
+#: source/ui/dialog/regionsw.src#FT_FILE_TEXT.#define.Text
+msgid  "~File name"
+msgstr "Jina la faili"
+
+#: source/ui/dialog/regionsw.src#GB_HIDE_TEXT.#define.Text
+msgid  "Hide"
+msgstr "Ficha"
+
+#: source/ui/dialog/regionsw.src#GB_OPTIONS_TEXT.#define.Text
+msgid  "Options"
+msgstr "Options"
+
+#: source/ui/dialog/regionsw.src#FL_PROTECT_TEXT.#define.Text
+msgid  "Write protection"
+msgstr "Ukingaji kuandika"
+
+#: source/ui/dialog/regionsw.src#CB_PASSWD_TEXT.#define.Text
+msgid  "Wit~h password"
+msgstr "Kwa nywila"
+
 #: source/ui/dialog/regionsw.src#MD_EDIT_REGION.ModalDialog.Text
 msgid  "Edit Sections"
 msgstr "Hariri Vipengele"
@@ -4565,7 +4625,7 @@ msgstr "Jina la kipengele rudufu"
 
 #: source/ui/dialog/regionsw.src#QB_CONNECT.QueryBox.Message
 msgid  "A file connection will delete the contents of the current section. Connect anyway?"
-msgstr ""
+msgstr "Unganisho la faili litafuta yaliyomo kwenye kipengele cha sasa. Je, unganisha tu?"
 
 #: source/ui/dialog/regionsw.src#REG_WRONG_PASSWORD.InfoBox.Message
 msgid  "The password entered is invalid."
@@ -4699,66 +4759,6 @@ msgstr "Kabla ya kipengele"
 msgid  "~After section"
 msgstr "Baada ya kipengele"
 
-#: source/ui/dialog/regionsw.src#FT_SUBREG_TEXT.#define.Text
-msgid  "~Section"
-msgstr "Kipengele"
-
-#: source/ui/dialog/regionsw.src#CB_HIDE_TEXT.#define.Text
-msgid  "H~ide"
-msgstr "Ficha"
-
-#: source/ui/dialog/regionsw.src#FL_HIDE_TEXT.#define.Text
-msgid  "Hide"
-msgstr "Ficha"
-
-#: source/ui/dialog/regionsw.src#CB_CONDITION_TEXT.#define.Text
-msgid  "~With Condition"
-msgstr "Na masharti"
-
-#: source/ui/dialog/regionsw.src#FL_PROPERTIES_TEXT.#define.Text
-msgid  "Properties"
-msgstr "Sifa"
-
-#: source/ui/dialog/regionsw.src#CB_EDIT_IN_READONLY_TEXT.#define.Text
-msgid  "E~ditable in read-only document"
-msgstr "E~ditable in read-only document"
-
-#: source/ui/dialog/regionsw.src#FL_FILE_TEXT.#define.Text
-msgid  "Link"
-msgstr "Link"
-
-#: source/ui/dialog/regionsw.src#CB_FILE_TEXT.#define.Text
-msgid  "~Link"
-msgstr "~Link"
-
-#: source/ui/dialog/regionsw.src#CB_DDE_TEXT.#define.Text
-msgid  "DD~E"
-msgstr "DDE"
-
-#: source/ui/dialog/regionsw.src#FT_DDE_TEXT.#define.Text
-msgid  "DDE ~command"
-msgstr "Amri DDE"
-
-#: source/ui/dialog/regionsw.src#FT_FILE_TEXT.#define.Text
-msgid  "~File name"
-msgstr "Jina la faili"
-
-#: source/ui/dialog/regionsw.src#GB_HIDE_TEXT.#define.Text
-msgid  "Hide"
-msgstr "Ficha"
-
-#: source/ui/dialog/regionsw.src#GB_OPTIONS_TEXT.#define.Text
-msgid  "Options"
-msgstr "Options"
-
-#: source/ui/dialog/regionsw.src#FL_PROTECT_TEXT.#define.Text
-msgid  "Write protection"
-msgstr "Ukingaji kuandika"
-
-#: source/ui/dialog/regionsw.src#CB_PASSWD_TEXT.#define.Text
-msgid  "Wit~h password"
-msgstr "Kwa nywila"
-
 #: source/ui/dialog/abstract.src#DLG_INSERT_ABSTRACT.FL_1.FixedLine.Text
 msgid  "Properties"
 msgstr "Sifa"
@@ -4773,7 +4773,7 @@ msgstr "Pointi ndogo kwa kila ngazi"
 
 #: source/ui/dialog/abstract.src#DLG_INSERT_ABSTRACT.FT_DESC.FixedText.Text
 msgid  "The abstract contains the selected number of paragraphs from the included outline levels."
-msgstr ""
+msgstr "Kisiri kina idadi ya aya zilizoteuliwa kutoka katika ngazi za orodha iliyojumuishwa."
 
 #: source/ui/dialog/abstract.src#DLG_INSERT_ABSTRACT.HelpButton.Text
 msgid  "Create AutoAbstract"
@@ -4853,7 +4853,7 @@ msgstr ""
 
 #: source/ui/dochdl/dochdl.src#STR_NO_TABLE.String.Text
 msgid  "A table cannot be inserted into another table. However, you can paste the data into the document when the cursor is not in a table."
-msgstr ""
+msgstr "Jedwali haliwezi kuchomekwa kwenye jedwali jingine. Ingawa unaweza kubandika data kwenye andiko wakati kasa haipo ndani ya jedwali."
 
 #: source/ui/dochdl/dochdl.src#MSG_ERR_INSERT_GLOS.InfoBox.Message
 msgid  "AutoText could not be created."
@@ -4865,7 +4865,7 @@ msgstr "Fomati iliyoombwa ya ubao pogoa haipo."
 
 #: source/ui/dochdl/dochdl.src#MSG_UPDATE_NEW_GLOS_FMT.QueryBox.Message
 msgid  "The section format is outdated.\nIt needs to be converted so that changes\ncan be saved.\nShould it be converted now?"
-msgstr ""
+msgstr "Fomati ya kipengele imepitwa na wakati.\nInahitaji kugeuzwa ili mabadiliko\nyaweze kuhifadhiwa.\nJe igeuzwe sasa?"
 
 #: source/ui/dochdl/dochdl.src#STR_PRIVATETEXT.String.Text
 msgid  "%PRODUCTNAME Writer"
@@ -5039,6 +5039,26 @@ msgstr "Fremu chanzo tayari ni chanzo cha kiungo."
 msgid  "A closed link is not possible."
 msgstr "Kiungo kilichofungwa hakiwezekani."
 
+#: source/ui/docvw/docvw.src#STR_REDLINE_INSERT.String.Text
+msgid  "Inserted"
+msgstr "Imechomekwa"
+
+#: source/ui/docvw/docvw.src#STR_REDLINE_DELETE.String.Text
+msgid  "Deleted"
+msgstr "Imefutwa"
+
+#: source/ui/docvw/docvw.src#STR_REDLINE_FORMAT.String.Text
+msgid  "Formatted"
+msgstr "Imefomatiwa"
+
+#: source/ui/docvw/docvw.src#STR_REDLINE_TABLE.String.Text
+msgid  "Table changed"
+msgstr "Jedwali limebadilishwa"
+
+#: source/ui/docvw/docvw.src#STR_REDLINE_FMTCOLL.String.Text
+msgid  "Applied Paragraph Styles"
+msgstr "Applied Paragraph Styles"
+
 #: source/ui/docvw/docvw.src#STR_ENDNOTE.String.Text
 msgid  "Endnote: "
 msgstr "Tinimwisho: "
@@ -5049,7 +5069,7 @@ msgstr "Tiniwayo: "
 
 #: source/ui/docvw/docvw.src#MSG_READONLY_CONTENT.InfoBox.Message
 msgid  "Readonly content cannot be changed.\nNo modifications will be accepted"
-msgstr ""
+msgstr "Yaliyomo someka tu hayawezi kubadilishwa.\nHakuna marekebisho ambayo yatakubaliwa"
 
 #: source/ui/docvw/docvw.src#STR_TABLE_COL_ADJUST.String.Text
 msgid  "Adjust table column"
@@ -5074,26 +5094,6 @@ msgstr "Select table column"
 #: source/ui/docvw/docvw.src#STR_SMARTTAG_CLICK.String.Text
 msgid  "%s-click to open Smart Tag menu"
 msgstr ""
-
-#: source/ui/docvw/docvw.src#STR_REDLINE_INSERT.String.Text
-msgid  "Inserted"
-msgstr "Imechomekwa"
-
-#: source/ui/docvw/docvw.src#STR_REDLINE_DELETE.String.Text
-msgid  "Deleted"
-msgstr "Imefutwa"
-
-#: source/ui/docvw/docvw.src#STR_REDLINE_FORMAT.String.Text
-msgid  "Formatted"
-msgstr "Imefomatiwa"
-
-#: source/ui/docvw/docvw.src#STR_REDLINE_TABLE.String.Text
-msgid  "Table changed"
-msgstr "Jedwali limebadilishwa"
-
-#: source/ui/docvw/docvw.src#STR_REDLINE_FMTCOLL.String.Text
-msgid  "Applied Paragraph Styles"
-msgstr "Applied Paragraph Styles"
 
 #: source/ui/docvw/access.src#STR_ACCESS_DOC_NAME.String.Text
 msgid  "Document view"
@@ -5214,6 +5214,10 @@ msgstr "- Hakuna printa iliyosakinishwa -"
 #: source/ui/envelp/envprt.src#TP_ENV_PRT.BTN_PRTSETUP.PushButton.Text
 msgid  "Setup..."
 msgstr "Usanidi..."
+
+#: source/ui/envelp/mailmrge.src#_MAIL_MERGE_STRING_.#define.Text
+msgid  "Mail Merge"
+msgstr "Unga Barua"
 
 #: source/ui/envelp/mailmrge.src#DLG_MAILMERGE.RB_ALL.RadioButton.Text
 msgid  "~All"
@@ -5337,11 +5341,7 @@ msgstr "Unda unganisho jipya"
 
 #: source/ui/envelp/mailmrge.src#DLG_MERGE_FIELD_CONNECTIONS.FT_INFO.FixedText.Text
 msgid  "Fields are used to personalize form letters. The fields are placeholders for data from a data source, such as a database. The fields in the form letter must be connected to the data source."
-msgstr ""
-
-#: source/ui/envelp/mailmrge.src#_MAIL_MERGE_STRING_.#define.Text
-msgid  "Mail Merge"
-msgstr "Unga Barua"
+msgstr "Nyuga hutumika kunafsisha barua za fomu. Nyuga ni vikaimu kwa ajili ya data kutoka chanzo cha data, kama vile hifadhidata. Nyuga katika barua ya fomu lazima ziunganishwe kwenye chanzo cha data."
 
 #: source/ui/envelp/labprt.src#TP_LAB_PRT.BTN_PAGE.RadioButton.Text
 msgid  "~Entire page"
@@ -5397,7 +5397,7 @@ msgstr "And jipya."
 
 #: source/ui/envelp/envelp.src#STR_SENDER_TOKENS.String.Text
 msgid  "COMPANY;CR;FIRSTNAME; ;LASTNAME;CR;ADDRESS;CR;CITY; ;STATEPROV; ;POSTALCODE;CR;COUNTRY;CR;"
-msgstr ""
+msgstr "KAMPUNI;CR;JINA LA KWANZA; ;JINA LA MWISHO;CR;ANWANI;CR;MJI; ;MKOAJIMBO; MSIMBO POSTA;CR;NCHI;CR;"
 
 #: source/ui/envelp/envfmt.src#TP_ENV_FMT.FL_ADDRESSEE.FixedLine.Text
 msgid  "Addressee"
@@ -5470,6 +5470,14 @@ msgstr "Kiwambo..."
 #: source/ui/envelp/envfmt.src#MNU_EDIT.MID_PARA.MenuItem.Text
 msgid  "P~aragraph..."
 msgstr "Aya..."
+
+#: source/ui/envelp/label.src#LABEL_STRING.#define.Text
+msgid  "Labels"
+msgstr "Lebo"
+
+#: source/ui/envelp/label.src#BUSINESS_CARD_STRING.#define.Text
+msgid  "Business Cards"
+msgstr "Kadi za Biashara"
 
 #: source/ui/envelp/label.src#DLG_LAB.1.TP_PRIVATE_DATA.PageItem.Text
 msgid  "Private"
@@ -5639,14 +5647,6 @@ msgstr "Faksi"
 msgid  "Ho~mepage / e-mail"
 msgstr "Ukurasa kaya / barua e-"
 
-#: source/ui/envelp/label.src#LABEL_STRING.#define.Text
-msgid  "Labels"
-msgstr "Lebo"
-
-#: source/ui/envelp/label.src#BUSINESS_CARD_STRING.#define.Text
-msgid  "Business Cards"
-msgstr "Kadi za Biashara"
-
 #: source/ui/envelp/labfmt.src#TP_LAB_FMT.TXT_HDIST.FixedText.Text
 msgid  "Hori~zontal pitch"
 msgstr "Kidatu mlalo"
@@ -5728,8 +5728,8 @@ msgid  "Options"
 msgstr "Options"
 
 #: source/ui/envelp/labfmt.src#DLG_SAVE_LABEL.MB_QUERY.QueryBox.Message
-msgid  "The label "%1 / %2" already exists.\nDo you want to overwrite it?"
-msgstr ""
+msgid  "The label \"%1 / %2\" already exists.\nDo you want to overwrite it?"
+msgstr "Lebo \"%1 / %2\" tayari ipo.\nJe unataka kuiandikiza?"
 
 #: source/ui/envelp/labfmt.src#DLG_SAVE_LABEL.QueryBox.Text
 msgid  "Save Label Format"
@@ -6609,7 +6609,7 @@ msgstr "Vinjari..."
 
 #: source/ui/fldui/changedb.src#DLG_CHANGE_DB.FT_DESC.FixedText.Text
 msgid  "Use this dialog to replace the databases you access in your document via database fields, with other databases. You can only make one change at a time. Multiple selection is possible in the list on the left.\nUse the browse button to select a database file."
-msgstr ""
+msgstr "Use this dialog to replace the databases you access in your document via database fields, with other databases. You can only make one change at a time. Multiple selection is possible in the list on the left.\nUse the browse button to select a database file."
 
 #: source/ui/fldui/changedb.src#DLG_CHANGE_DB.FT_DOCDBTEXT.FixedText.Text
 msgid  "Database applied to document:"
@@ -7388,6 +7388,14 @@ msgid  "~Position"
 msgstr "Pahala"
 
 #: source/ui/frmdlg/column.src#TP_COLUMN.LB_POSITION.Default.StringList.item
+msgid  "Top"
+msgstr "Juu"
+
+#: source/ui/frmdlg/column.src#TP_COLUMN.LB_POSITION.Default.StringList.item
+msgid  "Centered"
+msgstr "Centered"
+
+#: source/ui/frmdlg/column.src#TP_COLUMN.LB_POSITION.Default.StringList.item
 msgid  "Bottom"
 msgstr "Chini"
 
@@ -7450,14 +7458,6 @@ msgstr ""
 #: source/ui/frmdlg/column.src#STR_ACCESS_COLUMN_WIDTH.String.Text
 msgid  "Column %1 Width"
 msgstr ""
-
-#: source/ui/frmdlg/column.src#TP_COLUMN.LB_POSITION.Default.StringList.item
-msgid  "Top"
-msgstr "Juu"
-
-#: source/ui/frmdlg/column.src#TP_COLUMN.LB_POSITION.Default.StringList.item
-msgid  "Centered"
-msgstr "Centered"
 
 #: source/ui/frmdlg/frmui.src#STR_TOP.String.Text
 msgid  "~Top"
@@ -7667,6 +7667,10 @@ msgstr "Andiko Kuu"
 msgid  "%PRODUCTNAME %PRODUCTVERSION Master Document"
 msgstr "%PRODUCTNAME %PRODUCTVERSION Andiko Kuu"
 
+#: source/ui/index/idxmrk.src#IDX_PHONETIC_LISTBOX_DESCRIPTION.#define.Text
+msgid  "Phonetic reading"
+msgstr "Usomaji fonetiki"
+
 #: source/ui/index/idxmrk.src#IDX_DIALOG_WINDOW.WIN_DLG.BT_OK.OKButton.Text
 msgid  "Insert"
 msgstr "Chomeka"
@@ -7805,11 +7809,7 @@ msgstr "Chomeka Ingizo la Bibliografia"
 
 #: source/ui/index/idxmrk.src#DLG_CHANGE_AUTH_ENTRY.QueryBox.Message
 msgid  "The document already contains the bibliography entry but with different data. Do you want to adjust the existing entries?"
-msgstr ""
-
-#: source/ui/index/idxmrk.src#IDX_PHONETIC_LISTBOX_DESCRIPTION.#define.Text
-msgid  "Phonetic reading"
-msgstr "Usomaji fonetiki"
+msgstr "Andiko tayari lina ingizo la bibliografia lakini kwa data tofauti. Je, unataka kurekebisha maingizo yaliyomo?"
 
 #: source/ui/index/cnttab.src#STR_TITLE.String.Text
 msgid  "Title"
@@ -7824,8 +7824,8 @@ msgid  "Level "
 msgstr "Level "
 
 #: source/ui/index/cnttab.src#STR_FILE_NOT_FOUND.String.Text
-msgid  "The file, "%1" in the "%2" path could not be found."
-msgstr ""
+msgid  "The file, \"%1\" in the \"%2\" path could not be found."
+msgstr "Faili hili, \"%1\" kwenye njia hii \"%2\" halikuweza kupatikana."
 
 #: source/ui/index/cnttab.src#DLG_MULTI_TOX.1.TP_TOX_SELECT.PageItem.Text
 msgid  "Index/Table"
@@ -8557,7 +8557,7 @@ msgstr "Njia..."
 
 #: source/ui/misc/glossary.src#DLG_GLOSSARY.ST_READONLY_PATH.String.Text
 msgid  "The 'AutoText' directories are read-only. Do you want to call the path settings dialog?"
-msgstr ""
+msgstr "Saraka 'MatiniOtomati' zinasomeka-tu. Unataka kuita dialogi ya vipimo vya njia?"
 
 #: source/ui/misc/glossary.src#DLG_GLOSSARY.MNU_EDIT.FN_GL_DEFINE.MenuItem.Text
 msgid  "~New"
@@ -8672,6 +8672,14 @@ msgid  "~Position"
 msgstr "Pahala"
 
 #: source/ui/misc/pgfnote.src#TP_FOOTNOTE_PAGE.DLB_LINEPOS.Default.StringList.item
+msgid  "Left"
+msgstr "Kushoto"
+
+#: source/ui/misc/pgfnote.src#TP_FOOTNOTE_PAGE.DLB_LINEPOS.Default.StringList.item
+msgid  "Centered"
+msgstr "Centered"
+
+#: source/ui/misc/pgfnote.src#TP_FOOTNOTE_PAGE.DLB_LINEPOS.Default.StringList.item
 msgid  "Right"
 msgstr "Kulia"
 
@@ -8690,14 +8698,6 @@ msgstr "Unafasishaji wa yaliyomo katika tiniwayo"
 #: source/ui/misc/pgfnote.src#TP_FOOTNOTE_PAGE.FL_LINE.FixedLine.Text
 msgid  "Separator line"
 msgstr "Mstari tenganishi"
-
-#: source/ui/misc/pgfnote.src#TP_FOOTNOTE_PAGE.DLB_LINEPOS.Default.StringList.item
-msgid  "Left"
-msgstr "Kushoto"
-
-#: source/ui/misc/pgfnote.src#TP_FOOTNOTE_PAGE.DLB_LINEPOS.Default.StringList.item
-msgid  "Centered"
-msgstr "Centered"
 
 #: source/ui/misc/num.src#TP_NUM_POSITION.FL_LEVEL.FixedLine.Text
 msgid  "Level"
@@ -10065,7 +10065,7 @@ msgstr "AutoFormat"
 
 #: source/ui/shells/shells.src#STR_REDLINE_MSG.String.Text
 msgid  "AutoCorrect completed.\nYou can accept or reject all changes,\nor accept or reject particular changes."
-msgstr ""
+msgstr "FomatiOtomati imekamilika.\nUnaweza kukubali au kukataa mabadiliko yote,\nau kubali au kataa mabadiliko mahsusi."
 
 #: source/ui/shells/shells.src#STR_REDLINE_ACCEPT_ALL.String.Text
 msgid  "Accept All"
@@ -10309,7 +10309,7 @@ msgstr "Sum"
 
 #: source/ui/table/tautofmt.src#DLG_AUTOFMT_TABLE.STR_INVALID_AFNAME.String.Text
 msgid  "You have entered an invalid name.\nThe desired AutoFormat could not be created. \nTry again using a different name."
-msgstr ""
+msgstr "Umeingiza jina batili.\nFomatiOtomati mahsusi haikuweza kuundwa. \nJaribu tena kwa kutumia jina tofauti."
 
 #: source/ui/table/mergetbl.src#DLG_MERGE_TABLE.FL_MERGE.FixedLine.Text
 msgid  "Mode"
@@ -10493,7 +10493,7 @@ msgstr "Safu-wima ya kwanza kama maelezo mafupi"
 
 #: source/ui/table/chartins.src#DLG_INSERT_CHART.FT_TEXT.FixedText.Text
 msgid  "If the selected cells do not contain the desired data, select the data range now.\n\nInclude the cells containing column and row labels if you want them to be included in your chart."
-msgstr ""
+msgstr "If the selected cells do not contain the desired data, select the data range now.\n\nInclude the cells containing column and row labels if you want them to be included in your chart."
 
 #: source/ui/table/chartins.src#DLG_INSERT_CHART.BT_PREV.PushButton.Text
 msgid  "<< ~Back"
@@ -10506,6 +10506,10 @@ msgstr "Ifuatayo >>"
 #: source/ui/table/chartins.src#DLG_INSERT_CHART.BT_FINISH.PushButton.Text
 msgid  "Cre~ate"
 msgstr "Unda"
+
+#: source/ui/table/tabledlg.src#TEXT_TEXTFLOW.#define.Text
+msgid  "Text Flow"
+msgstr "Text Flow"
 
 #: source/ui/table/tabledlg.src#DLG_FORMAT_TABLE.TabDialog.Text
 msgid  "Table Format"
@@ -10597,7 +10601,7 @@ msgstr "Sifa"
 
 #: source/ui/table/tabledlg.src#TP_FORMAT_TABLE.FT_TEXTDIRECTION.FixedText.Text
 msgid  "Text ~direction"
-msgstr "~Text direction"
+msgstr "Text ~direction"
 
 #: source/ui/table/tabledlg.src#TP_FORMAT_TABLE.LB_TEXTDIRECTION.0.StringList.item
 msgid  "Left-to-right"
@@ -10715,10 +10719,6 @@ msgstr "Chini"
 msgid  "The name of the table must not contain spaces."
 msgstr "Jina la jedwali lazima lisiwe na nafasi."
 
-#: source/ui/table/tabledlg.src#TEXT_TEXTFLOW.#define.Text
-msgid  "Text Flow"
-msgstr "Text Flow"
-
 #: source/ui/table/splittbl.src#DLG_SPLIT_TABLE.FL_SPLIT.FixedLine.Text
 msgid  "Mode"
 msgstr "Modi"
@@ -10753,7 +10753,7 @@ msgstr "Unataka kukagua matini kuu?"
 
 #: source/ui/uiview/view.src#DLG_PRT_FIELDNAME.QueryBox.Message
 msgid  "Show field commands option is checked.\nDo you want to print the document with field names?"
-msgstr ""
+msgstr "Inaonesha chaguo la uga amri limekaguliwa.\nUnataka kuchapisha andiko pamoja na majina ya uga?"
 
 #: source/ui/uiview/view.src#DLG_SPECIAL.QueryBox.Message
 msgid  "Do you want check the special regions?"
@@ -10761,7 +10761,7 @@ msgstr "Do you want check the special regions?"
 
 #: source/ui/uiview/view.src#DLG_THESAURUS.QueryBox.Message
 msgid  "This word appears in the list of words you want to avoid! Start thesaurus?"
-msgstr ""
+msgstr "Neno hili limejitokeza katika orodha ya maneno ambayo unataka kuyaepuka! Anza thesaurasi?"
 
 #: source/ui/uiview/view.src#DLG_SPECIAL_FORCED.QueryBox.Message
 msgid  "Check special regions is deactivated. Check anyway?"
@@ -10769,15 +10769,19 @@ msgstr "Check special regions is deactivated. Check anyway?"
 
 #: source/ui/uiview/view.src#MSG_SEARCH_END.QueryBox.Message
 msgid  "%PRODUCTNAME Writer has searched to the end of the document. Do you want to continue at the beginning?"
-msgstr ""
+msgstr "%PRODUCTNAME Kiandishi kimetafuta kwenda mwisho wa andiko. Unataka kuendelea mwanzoni?"
 
 #: source/ui/uiview/view.src#MSG_SEARCH_START.QueryBox.Message
 msgid  "%PRODUCTNAME Writer has searched to the beginning of the document. Do you want to continue at the end?"
-msgstr ""
+msgstr "%PRODUCTNAME Kiandishi kimetafuta kwenda mwanzo wa andiko. Unataka kuendelea mwishoni?"
 
 #: source/ui/uiview/view.src#MSG_NO_MERGE_ENTRY.InfoBox.Message
 msgid  "Could not merge documents."
 msgstr "Haikuweza kuumanisha maandiko."
+
+#: source/ui/uiview/view.src#MSG_ERR_INSERT_GLOS.InfoBox.Message
+msgid  "AutoText could not be created."
+msgstr "AutoText could not be created."
 
 #: source/ui/uiview/view.src#MSG_ERR_SRCSTREAM.InfoBox.Message
 msgid  "The source cannot be loaded."
@@ -10871,10 +10875,6 @@ msgstr "Chanzo cha LKMH"
 msgid  "HTML Source"
 msgstr "Chanzo cha LKMH"
 
-#: source/ui/uiview/view.src#MSG_ERR_INSERT_GLOS.InfoBox.Message
-msgid  "AutoText could not be created."
-msgstr "AutoText could not be created."
-
 #: source/ui/uiview/pview.src#DLG_PAGEPREVIEW_ZOOM.ModalDialog.Text
 msgid  "Multiple Pages"
 msgstr "Kurasa Nyingi"
@@ -10908,7 +10908,7 @@ msgid  "Capitalize first letter of sentences"
 msgstr "Kuweka herufi kubwa mwanzo wa sentensi"
 
 #: source/ui/utlui/utlui.src#RID_SHELLRES_AUTOFMTSTRS.STR_AUTOFMTREDL_TYPO+1.String.Text
-msgid  "Replace "standard" quotes with %1 \bcustom%2 quotes"
+msgid  "Replace \"standard\" quotes with %1 \bcustom%2 quotes"
 msgstr ""
 
 #: source/ui/utlui/utlui.src#RID_SHELLRES_AUTOFMTSTRS.STR_AUTOFMTREDL_USER_STYLE+1.String.Text
@@ -10948,28 +10948,28 @@ msgid  "Combine single line paragraphs"
 msgstr "Unganisha aya zenye mstari mmoja"
 
 #: source/ui/utlui/utlui.src#RID_SHELLRES_AUTOFMTSTRS.STR_AUTOFMTREDL_SET_TMPL_TEXT +1.String.Text
-msgid  "Set "Text body" Style"
-msgstr ""
+msgid  "Set \"Text body\" Style"
+msgstr "Seti \"Matini gimba\" Mtindo"
 
 #: source/ui/utlui/utlui.src#RID_SHELLRES_AUTOFMTSTRS.STR_AUTOFMTREDL_SET_TMPL_INDENT.String.Text
-msgid  "Set "Text body indent" Style"
-msgstr ""
+msgid  "Set \"Text body indent\" Style"
+msgstr "Seti \"Jongeza ndani matini gimba\" Mtindo"
 
 #: source/ui/utlui/utlui.src#RID_SHELLRES_AUTOFMTSTRS.STR_AUTOFMTREDL_SET_TMPL_NEG_INDENT.String.Text
-msgid  "Set "Hanging indent" Style"
-msgstr ""
+msgid  "Set \"Hanging indent\" Style"
+msgstr "Seti \"Jongeza ndani\" Aina"
 
 #: source/ui/utlui/utlui.src#RID_SHELLRES_AUTOFMTSTRS.STR_AUTOFMTREDL_SET_TMPL_TEXT_INDENT +1.String.Text
-msgid  "Set "Text body indent" Style"
-msgstr ""
+msgid  "Set \"Text body indent\" Style"
+msgstr "Seti \"Jongeza ndani matini gimba\" Mtindo"
 
 #: source/ui/utlui/utlui.src#RID_SHELLRES_AUTOFMTSTRS.STR_AUTOFMTREDL_SET_TMPL_HEADLINE +1.String.Text
-msgid  "Set "Heading $(ARG1)" Style"
-msgstr ""
+msgid  "Set \"Heading $(ARG1)\" Style"
+msgstr "Seti \"Kichwa cha habari $(ARG1)\" Mtindo"
 
 #: source/ui/utlui/utlui.src#RID_SHELLRES_AUTOFMTSTRS.STR_AUTOFMTREDL_SET_NUMBULET +1.String.Text
-msgid  "Set "Bullet" or "Numbering" Style"
-msgstr ""
+msgid  "Set \"Bullet\" or \"Numbering\" Style"
+msgstr "Seti \"Tobo\" au \"Uingizaji Namba\" Mtindo"
 
 #: source/ui/utlui/utlui.src#RID_SHELLRES_AUTOFMTSTRS.STR_AUTOFMTREDL_DEL_MORELINES +1.String.Text
 msgid  "Combine paragraphs"
@@ -11137,11 +11137,11 @@ msgstr "[Mfumo]"
 
 #: source/ui/utlui/utlui.src#STR_MULT_INTERACT_SPELL_WARN.String.Text
 msgid  "The interactive spellcheck is already active\nin a different document"
-msgstr ""
+msgstr "The interactive spellcheck is already active\nin a different document"
 
 #: source/ui/utlui/utlui.src#STR_MULT_INTERACT_HYPH_WARN.String.Text
 msgid  "The interactive hyphenation is already active\nin a different document"
-msgstr ""
+msgstr "The interactive hyphenation is already active\nin a different document"
 
 #: source/ui/utlui/utlui.src#STR_SPELL_TITLE.String.Text
 msgid  "Spellcheck"
@@ -12667,6 +12667,18 @@ msgstr "Centered vertically"
 msgid  "at bottom"
 msgstr "chini"
 
+#: source/ui/utlui/attrdesc.src#STR_LINE_TOP.String.Text
+msgid  "Top of line"
+msgstr "Juu ya mstari"
+
+#: source/ui/utlui/attrdesc.src#STR_LINE_CENTER.String.Text
+msgid  "Line centered"
+msgstr "Weka kati mstari"
+
+#: source/ui/utlui/attrdesc.src#STR_LINE_BOTTOM.String.Text
+msgid  "Bottom of line"
+msgstr "Chini ya mstari"
+
 #: source/ui/utlui/attrdesc.src#STR_REGISTER_ON.String.Text
 msgid  "Register-true"
 msgstr "Sajili-kweli"
@@ -12834,18 +12846,6 @@ msgstr "Merge borders"
 #: source/ui/utlui/attrdesc.src#STR_CONNECT_BORDER_OFF.String.Text
 msgid  "Do not merge borders"
 msgstr "Do not merge borders"
-
-#: source/ui/utlui/attrdesc.src#STR_LINE_TOP.String.Text
-msgid  "Top of line"
-msgstr "Juu ya mstari"
-
-#: source/ui/utlui/attrdesc.src#STR_LINE_CENTER.String.Text
-msgid  "Line centered"
-msgstr "Weka kati mstari"
-
-#: source/ui/utlui/attrdesc.src#STR_LINE_BOTTOM.String.Text
-msgid  "Bottom of line"
-msgstr "Chini ya mstari"
 
 #: source/ui/web/web.src#STR_HUMAN_SWWEBDOC_NAME.String.Text
 msgid  "HTML"

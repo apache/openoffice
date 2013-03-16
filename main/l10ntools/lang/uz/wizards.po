@@ -361,27 +361,27 @@ msgstr "Varaq doim himoyasiz"
 
 #: source/formwizard/dbwizres.src#RID_COMMON_START + 0.String.Text
 msgid  "The directory '%1' could not be created.<BR>There may not be enough space left on your hard disk."
-msgstr ""
+msgstr "'%1' jildini yaratib boʻlmaydi.<BR>Diskda yetarli boʻsh joy qolmagan boʻlishi mumkin."
 
 #: source/formwizard/dbwizres.src#RID_COMMON_START + 1.String.Text
 msgid  "The text document could not be created.<BR>Please check if the module 'PRODUCTNAME Writer' is installed."
-msgstr ""
+msgstr "Matn hujjatini yaratib boʻlmaydi.<BR>Iltimos 'PRODUCTNAME Writer' moduli oʻrnatilganligini tekshirib koʻring."
 
 #: source/formwizard/dbwizres.src#RID_COMMON_START + 2.String.Text
 msgid  "The spreadsheet could not be created.<BR>Please check if the module 'PRODUCTNAME Calc' is installed."
-msgstr ""
+msgstr "Elektron jadval hujjatini yaratib boʻlmaydi.<BR>Iltimos 'PRODUCTNAME Calc' moduli oʻrnatilganligini tekshirib koʻring."
 
 #: source/formwizard/dbwizres.src#RID_COMMON_START + 3.String.Text
 msgid  "The presentation could not be created.<BR>Please check if the module 'PRODUCTNAME Impress' is installed."
-msgstr ""
+msgstr "Namoyish hujjatini yaratib boʻlmaydi.<BR>Iltimos 'PRODUCTNAME Impress' moduli oʻrnatilganligini tekshirib koʻring."
 
 #: source/formwizard/dbwizres.src#RID_COMMON_START + 4.String.Text
 msgid  "The drawing could not be created.<BR>Please check if the module 'PRODUCTNAME Draw' is installed."
-msgstr ""
+msgstr "Chizmani yaratib boʻlmaydi.<BR>Iltimos 'PRODUCTNAME Draw' moduli oʻrnatilganligini tekshirib koʻring."
 
 #: source/formwizard/dbwizres.src#RID_COMMON_START + 5.String.Text
 msgid  "The formula could not be created.<BR>Please check if the module 'PRODUCTNAME Math' is installed."
-msgstr ""
+msgstr "Formulani yaratib boʻlmaydi.<BR>Iltimos 'PRODUCTNAME Math' moduli oʻrnatilganligini tekshirib koʻring."
 
 #: source/formwizard/dbwizres.src#RID_COMMON_START + 6.String.Text
 msgid  "The files required could not be found.<BR>Please start the %PRODUCTNAME Setup and choose 'Repair'."
@@ -389,7 +389,7 @@ msgstr ""
 
 #: source/formwizard/dbwizres.src#RID_COMMON_START + 7.String.Text
 msgid  "The file '<PATH>' already exists.<BR><BR>Would you like to overwrite the existing file?"
-msgstr ""
+msgstr "'<PATH>' fayli allaqachon mavjud.<BR><BR>Mavjud faylni almashtirishni istaysizmi?"
 
 #: source/formwizard/dbwizres.src#RID_COMMON_START + 8.String.Text
 msgid  "Yes"
@@ -473,7 +473,7 @@ msgstr "Jadvalning ~nomi"
 
 #: source/formwizard/dbwizres.src#RID_DB_COMMON_START + 6.String.Text
 msgid  "An error occurred while running the wizard. The wizard will be terminated."
-msgstr ""
+msgstr "Ustani ishga tushirish davrida xatolik yuz berdi. Usta toʻxtatiladi."
 
 #: source/formwizard/dbwizres.src#RID_DB_COMMON_START + 14.String.Text
 msgid  "No connection to the database could be established."
@@ -553,7 +553,7 @@ msgstr "Formadagi ~maydonlar"
 
 #: source/formwizard/dbwizres.src#RID_DB_FORM_WIZARD_START + 2.String.Text
 msgid  "Binary fields are always listed and selectable from the left list.\nIf possible, they are interpreted as images."
-msgstr ""
+msgstr "Binar maydonlarni chap tomondagi roʻyxatdan tanlash mumkin.\nUlar rasm sifatida koʻrsatiladi (agar iloji boʻlsa)."
 
 #: source/formwizard/dbwizres.src#RID_DB_FORM_WIZARD_START + 3.String.Text
 msgid  "A subform is a form that is inserted in another form.\nUse subforms to show data from tables or queries with a one-to-many relationship."
@@ -1545,7 +1545,7 @@ msgstr "Jadvalga qanday nom bermoqchisiz?"
 
 #: source/formwizard/dbwizres.src#RID_DB_TABLE_WIZARD_START + 35.String.Text
 msgid  "Congratulations. You have entered all the information needed to create your table."
-msgstr ""
+msgstr "Tabriklaymiz. Siz jadval yaratish uchun kerakli barcha maʼlumotlarni kiritdingiz."
 
 #: source/formwizard/dbwizres.src#RID_DB_TABLE_WIZARD_START + 36.String.Text
 msgid  "What do you want to do next?"
@@ -1597,7 +1597,7 @@ msgstr ""
 
 #: source/formwizard/dbwizres.src#RID_DB_TABLE_WIZARD_START + 48.String.Text
 msgid  "The name '%TABLENAME' already exists.\nPlease enter another name."
-msgstr ""
+msgstr "'%TABLENAME' nom allaqachon mavjud.\nIltimos boshqa nom kiriting."
 
 #: source/formwizard/dbwizres.src#RID_DB_TABLE_WIZARD_START + 49.String.Text
 msgid  "Catalog of the table"
@@ -2477,7 +2477,7 @@ msgstr ""
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +113.String.Text
 msgid  "An error occurred while copying media files to the temporary directory."
-msgstr ""
+msgstr "Media fayllarni vaqtinchalik jildga koʻchirish mobaynida xatolik yuz berdi."
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +114.String.Text
 msgid  "The web site could not be copied to the following destination: %URL"
@@ -2609,7 +2609,7 @@ msgstr "'%FILENAME' FTP jildini yaratib boʻlmadi."
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +147.String.Text
 msgid  "The FTP directory '%FILENAME' does not exist. \nCreate the directory now?"
-msgstr ""
+msgstr "'%FILENAME' lokal direktoriyasi mavjud emas. \nDirektoriya yaratilsinmi?"
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +148.String.Text
 msgid  "The Zip file '%FILENAME' cannot be created: a directory of the same name already exists."
@@ -2617,11 +2617,11 @@ msgstr ""
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +149.String.Text
 msgid  "The local directory '%FILENAME' cannot be created. \nPlease check your write-access."
-msgstr ""
+msgstr "'%FILENAME' lokal direktoriyasini yaratib boʻlmadi. \nIltimos yozish huquqi borligini tekshiring."
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +150.String.Text
 msgid  "The local directory '%FILENAME' does not exist. \nCreate the directory now?"
-msgstr ""
+msgstr "'%FILENAME' lokal direktoriyasi mavjud emas. \nDirektoriya yaratilsinmi?"
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +151.String.Text
 msgid  "Size: %NUMBERKB"
@@ -3009,11 +3009,11 @@ msgstr "Yop~ish"
 
 #: source/importwizard/importwi.src#sWelcometextLabel1.String.Text
 msgid  "This wizard converts documents in %PRODUCTNAME format and Microsoft Office documents to the new OpenDocument format."
-msgstr ""
+msgstr "Ushbu usta hujjatlarni eski Micfosoft Office va eski %PRODUCTNAME formatidan yangi OpenDocument formatiga aylantiradi."
 
 #: source/importwizard/importwi.src#sWelcometextLabel2.String.Text
 msgid  "Please note that when converting Microsoft documents any attached VBA macros lose their functionality."
-msgstr ""
+msgstr "Microsoft hujjatlari aylantirilganda undagi VBA makroslari funksiyasini yoʻqotadi."
 
 #: source/importwizard/importwi.src#sWelcometextLabel3.String.Text
 msgid  "Select the document type for conversion:"
@@ -3241,59 +3241,59 @@ msgstr "Bular quyidagi jildlarga eksport qilinadi:"
 
 #: source/importwizard/importwi.src#sSumSOTextDocuments.String.Text
 msgid  "All %PRODUCTNAME text documents contained in the following directory will be imported:"
-msgstr ""
+msgstr "Quyidagi jilddagi hamma %PRODUCTNAME matn hujjatlari import qilinadi:"
 
 #: source/importwizard/importwi.src#sSumSOTableDocuments.String.Text
 msgid  "All %PRODUCTNAME spreadsheets contained in the following directory will be imported:"
-msgstr ""
+msgstr "Quyidagi jilddagi hamma %PRODUCTNAME elektron jadvallar import qilinadi:"
 
 #: source/importwizard/importwi.src#sSumSODrawDocuments.String.Text
 msgid  "All %PRODUCTNAME drawing and presentation documents contained in the following directory will be imported:"
-msgstr ""
+msgstr "Quyidagi jilddagi hamma %PRODUCTNAME chizma va namoyish hujjatlari import qilinadi:"
 
 #: source/importwizard/importwi.src#sSumSOMathDocuments.String.Text
 msgid  "All %PRODUCTNAME formula documents contained in the following directory will be imported:"
-msgstr ""
+msgstr "Quyidagi jilddagi hamma %PRODUCTNAME formula hujjatlari import qilinadi:"
 
 #: source/importwizard/importwi.src#sSumSOTextTemplates.String.Text
 msgid  "All %PRODUCTNAME text templates contained in the following directory will be imported:"
-msgstr ""
+msgstr "Quyidagi jilddagi hamma %PRODUCTNAME matn shablonlari import qilinadi:"
 
 #: source/importwizard/importwi.src#sSumSOTableTemplates.String.Text
 msgid  "All %PRODUCTNAME table templates contained in the following directory will be imported:"
-msgstr ""
+msgstr "Quyidagi jilddagi hamma %PRODUCTNAME jadval shablonlari import qilinadi:"
 
 #: source/importwizard/importwi.src#sSumSODrawTemplates.String.Text
 msgid  "All %PRODUCTNAME drawing and presentation templates contained in the following directory will be imported:"
-msgstr ""
+msgstr "Quyidagi jilddagi hamma %PRODUCTNAME chizma va namoyish shablonlari import qilinadi:"
 
 #: source/importwizard/importwi.src#sSumSOGlobalDocuments.String.Text
 msgid  "All %PRODUCTNAME master documents contained in the following directory will be imported:"
-msgstr ""
+msgstr "Quyidagi jilddagi hamma %PRODUCTNAME asosiy hujjatlar import qilinadi:"
 
 #: source/importwizard/importwi.src#sSumMSTextDocuments.String.Text
 msgid  "All Word documents contained in the following directory will be imported:"
-msgstr ""
+msgstr "Quyidagi jilddagi hamma Word hujjatlari import qilinadi:"
 
 #: source/importwizard/importwi.src#sSumMSTableDocuments.String.Text
 msgid  "All Excel documents contained in the following directory will be imported:"
-msgstr ""
+msgstr "Quyidagi jilddagi hamma Excel hujjatlari import qilinadi:"
 
 #: source/importwizard/importwi.src#sSumMSDrawDocuments.String.Text
 msgid  "All PowerPoint documents contained in the following directory will be imported:"
-msgstr ""
+msgstr "Quyidagi jilddagi hamma PowerPoint hujjatlari import qilinadi:"
 
 #: source/importwizard/importwi.src#sSumMSTextTemplates.String.Text
 msgid  "All Word templates contained in the following directory will be imported:"
-msgstr ""
+msgstr "Quyidagi jilddagi hamma Word shablonlari import qilinadi:"
 
 #: source/importwizard/importwi.src#sSumMSTableTemplates.String.Text
 msgid  "All Excel templates contained in the following directory will be imported:"
-msgstr ""
+msgstr "Quyidagi jilddagi hamma Excel shablonlari import qilinadi:"
 
 #: source/importwizard/importwi.src#sSumMSDrawTemplates.String.Text
 msgid  "All PowerPoint templates contained in the following directory will be imported:"
-msgstr ""
+msgstr "Quyidagi jilddagi hamma PowerPoint shablonlari import qilinadi:"
 
 #: source/schedule/schedule.src#dlgCalTitle.String.Text
 msgid  "%PRODUCTNAME Calendar"
@@ -3481,7 +3481,7 @@ msgstr "Jarayon:"
 
 #: source/template/template.src#SAMPLES.String.Text
 msgid  "In order to use the full functionality of this sample, create a document that is based on this template."
-msgstr ""
+msgstr "Ushbu shablonning funksiyalaridan toʻliq foydalanish uchun, shu namuna asosida hujjat yarating."
 
 #: source/template/template.src#SAMPLES + 1.String.Text
 msgid  "Remarks"
@@ -3493,7 +3493,7 @@ msgstr "Mavzu tanlash"
 
 #: source/template/template.src#STYLES + 1.String.Text
 msgid  "Error while saving the document to the clipboard! The following action cannot be undone."
-msgstr ""
+msgstr "Hujjatni klipbordga saqlab boʻlmadi. Quyidagi amalni bekor qilib boʻlmaydi."
 
 #: source/template/template.src#STYLES + 2.String.Text
 msgid  "~Cancel"

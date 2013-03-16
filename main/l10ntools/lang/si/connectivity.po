@@ -119,6 +119,18 @@ msgstr "තන්ඩ(ර්)බර්ඩ් ලිපින පොත"
 msgid  "LDAP Address Book"
 msgstr "LDAP ලිපින පොත"
 
+#: source/drivers/mozab/mozab2.xcu#.Drivers.Installed.sdbc:address:mozilla:.DriverTypeDisplayName
+msgid  "SeaMonkey Address Book"
+msgstr ""
+
+#: source/drivers/mozab/mozab2.xcu#.Drivers.Installed.sdbc:address:thunderbird:.DriverTypeDisplayName
+msgid  "Thunderbird Address Book"
+msgstr "තන්ඩ(ර්)බර්ඩ් ලිපින පොත"
+
+#: source/drivers/mozab/mozab2.xcu#.Drivers.Installed.sdbc:address:ldap:*.DriverTypeDisplayName
+msgid  "LDAP Address Book"
+msgstr "LDAP ලිපින පොත"
+
 #: source/drivers/mysql/mysql.xcu#.Drivers.Installed.sdbc:mysql:jdbc:*.DriverTypeDisplayName
 msgid  "MySQL (JDBC)"
 msgstr "MySQL (JDBC)"
@@ -161,11 +173,11 @@ msgstr "Mozilla ධාවනය වන විට නව ලිපිනපොත
 
 #: source/resource/conn_shared_res.src#STR_COULD_NOT_RETRIEVE_AB_ENTRY.String.Text
 msgid  "An address book entry could not be retrieved, an unknown error occurred."
-msgstr ""
+msgstr "ලිපිනපොත් ඇතුලත් කිරීම නැවත ලබාගත නොහැක. නොදන්නා වරදක් හටගැණිනි."
 
 #: source/resource/conn_shared_res.src#STR_COULD_NOT_GET_DIRECTORY_NAME.String.Text
 msgid  "An address book directory name could not be retrieved, an unknown error occurred."
-msgstr ""
+msgstr "ලිපින පොත් බහාලුම් නාමය නැවත ලබාගත නොහැක. නොදන්නා වරදක් හට ගැණිනි."
 
 #: source/resource/conn_shared_res.src#STR_TIMEOUT_WAITING.String.Text
 msgid  "Timed out while waiting for the result."
@@ -177,11 +189,11 @@ msgstr "විමසුම ක්‍රියාත්මක කිරීමේ�
 
 #: source/resource/conn_shared_res.src#STR_MOZILLA_IS_RUNNIG_NO_CHANGES.String.Text
 msgid  "You can't make any changes to mozilla address book when mozilla is running."
-msgstr ""
+msgstr "mozilla ධාවනය වන අවස්ථාවේදී ඔබට mozilla ලිපිනපොතෙහි වෙනස්කම් සිදුකල නොහැක."
 
 #: source/resource/conn_shared_res.src#STR_FOREIGN_PROCESS_CHANGED_AB.String.Text
 msgid  "Mozilla Address Book has been changed out of this process, we can't modify it in this condition."
-msgstr ""
+msgstr "මෙම ක්‍රියාවලියෙන් පිටත Mozilla ලිපින පොත වෙනස් වී ඇත. අපට මෙම නීතිය යටතේ එය වෙනස් කළ නොහැක. "
 
 #: source/resource/conn_shared_res.src#STR_CANT_FIND_ROW.String.Text
 msgid  "Can't find the requested row."
@@ -233,7 +245,7 @@ msgstr "නව පෙළක් සෑදිය නොහැක"
 
 #: source/resource/conn_shared_res.src#STR_QUERY_INVALID_IS_NULL_COLUMN.String.Text
 msgid  "The query can not be executed. The 'IS NULL' can only be used with a column name."
-msgstr ""
+msgstr "විමසුම ක්‍රියාත්මක කළ නොඟැක.'IS NULL' භාවිත කළ හැක්කේ තීරු නාමය සමග පමණි."
 
 #: source/resource/conn_shared_res.src#STR_ILLEGAL_MOVEMENT.String.Text
 msgid  "Illegal cursor movement occured."
@@ -241,7 +253,7 @@ msgstr "නීත්‍යානුකූල නොවන කර්සර ගම
 
 #: source/resource/conn_shared_res.src#STR_COMMIT_ROW.String.Text
 msgid  "Please commit row '$position$' before update rows or insert new rows."
-msgstr ""
+msgstr "කරුණාකර පේළි යාවත් කිරීමට හෝ නව පේළි ඇතුළත්කිරීමට පෙර  '$position$ පේළිය පවරාගන්න."
 
 #: source/resource/conn_shared_res.src#STR_INVALID_ROW_UPDATE.String.Text
 msgid  "The update call can not be executed. The row is invalid."
@@ -268,12 +280,12 @@ msgid  "It doesn't exist a connection to the database."
 msgstr "එය දත්තමූලය සඳහා සම්බන්ධතාවක් නොපවත්වයි."
 
 #: source/resource/conn_shared_res.src#STR_WRONG_PARAM_INDEX.String.Text
-msgid  "You tried to set a parameter at position '$pos$' but there is/are only '$count$' parameter(s) allowed. One reason may be that the property "ParameterNameSubstitution" is not set to TRUE in the data source."
+msgid  "You tried to set a parameter at position '$pos$' but there is/are only '$count$' parameter(s) allowed. One reason may be that the property \"ParameterNameSubstitution\" is not set to TRUE in the data source."
 msgstr ""
 
 #: source/resource/conn_shared_res.src#STR_INPUTSTREAM_WRONG_LEN.String.Text
 msgid  "End of InputStream reached before satisfying length specified when InputStream was set."
-msgstr ""
+msgstr "InputStream සැකසීමේදී  දෙනලද උපරිම ප්‍රමාණයට ලගාවීමට පෙර  InputStream අවසන් විය"
 
 #: source/resource/conn_shared_res.src#STR_NO_INPUTSTREAM.String.Text
 msgid  "The input stream was not set."
@@ -313,7 +325,7 @@ msgstr "'$functionname$' ක්‍රියාව සඳහා ධාවකය �
 
 #: source/resource/conn_shared_res.src#STR_UNSUPPORTED_FEATURE.String.Text
 msgid  "The driver does not support the functionality for '$featurename$'. It is not implemented."
-msgstr ""
+msgstr "'$featurename$' හි ක්‍රියාවන් සඳහා  සඳහා ධාවකය සහය දක්වන්නේ නැත. එය සංවර්ධනය කර නොමැත."
 
 #: source/resource/conn_shared_res.src#STR_FORMULA_WRONG.String.Text
 msgid  "The formula for TypeInfoSettings is wrong!"
@@ -321,11 +333,11 @@ msgstr "TypeInfoSettings සදහා වූ සූත්‍රය වැරද�
 
 #: source/resource/conn_shared_res.src#STR_STRING_LENGTH_EXCEEDED.String.Text
 msgid  "The string '$string$' exceeds the maximum length of $maxlen$ characters when converted to the target character set '$charset$'."
-msgstr ""
+msgstr "ඉලක්කගත '$charset$' අකුරු කට්ටලය  පරිවර්ථනයේදී  '$string$' පදය අකුරුවල $maxlen$ වම උපරිම පරාසය ඉක්මවිය"
 
 #: source/resource/conn_shared_res.src#STR_CANNOT_CONVERT_STRING.String.Text
 msgid  "The string '$string$' cannot be converted using the encoding '$charset$'."
-msgstr ""
+msgstr " '$charset$' කේතීකරණය ම‍ගි‍න්‍ '$string$' පදය ප‍රි‍ව‍ර්ථනය කළ නොහැක."
 
 #: source/resource/conn_shared_res.src#STR_URI_SYNTAX_ERROR.String.Text
 msgid  "The connection URL is invalid."
@@ -341,11 +353,11 @@ msgstr "විමසුම ක්‍රියාත්මක කළ නොහැ
 
 #: source/resource/conn_shared_res.src#STR_QUERY_INVALID_LIKE_COLUMN.String.Text
 msgid  "The query can not be executed. You cannot use 'LIKE' with columns of this type."
-msgstr ""
+msgstr "විමසුම ක්‍රියාත්මක කළ නොඟැක. මෙම වර්ගයේ තීරු සමග ඔබට 'LIKE' භාවිත කළ නොහැක."
 
 #: source/resource/conn_shared_res.src#STR_QUERY_INVALID_LIKE_STRING.String.Text
 msgid  "The query can not be executed. 'LIKE' can be used with a string argument only."
-msgstr ""
+msgstr "විමසුම ක්‍රියාත්මක කළ නොඟැක. 'LIKE' භාවිත කළ හැක්කේ පද තර්කයක් සමග පමණි."
 
 #: source/resource/conn_shared_res.src#STR_QUERY_NOT_LIKE_TOO_COMPLEX.String.Text
 msgid  "The query can not be executed. The 'NOT LIKE' condition is too complex."
@@ -353,11 +365,11 @@ msgstr "විමසුම ක්‍රියාත්මක කළ නොඟැ
 
 #: source/resource/conn_shared_res.src#STR_QUERY_LIKE_WILDCARD.String.Text
 msgid  "The query can not be executed. The 'LIKE' condition contains wildcard in the middle."
-msgstr ""
+msgstr "විමසුම ක්‍රියාත්මක කළ නොඟැක. 'LIKE' නීතිය මධ්‍යයේ අහඹුවක් ඇත. "
 
 #: source/resource/conn_shared_res.src#STR_QUERY_LIKE_WILDCARD_MANY.String.Text
 msgid  "The query can not be executed. The 'LIKE' condition contains too many wildcards."
-msgstr ""
+msgstr "විමසුම ක්‍රියාත්මක කළ නොඟැක. 'LIKE' නීතිය සතුව බොහෝ අහඹු පවතී"
 
 #: source/resource/conn_shared_res.src#STR_INVALID_COLUMNNAME.String.Text
 msgid  "The column name '$columnname$' is not valid."
@@ -377,7 +389,7 @@ msgstr "$filename$ ගොනුව පූර්ණය කළ නොහැක."
 
 #: source/resource/conn_shared_res.src#STR_LOAD_FILE_ERROR_MESSAGE.String.Text
 msgid  "The attempt to load the file resulted in the following error message ($exception_type$):\n\n$error_message$"
-msgstr ""
+msgstr "ගොනුව පූරණය කිරීමට ගත් උත්සාහය පහත වැරදි පණිවුඩයට හේතු විය ($exception_type$):\n\n$error_message$"
 
 #: source/resource/conn_shared_res.src#STR_TYPE_NOT_CONVERT.String.Text
 msgid  "The type could not be converted."
@@ -417,11 +429,11 @@ msgstr "දර්ශණයක් නිර්මාණය කළ නොහැක
 
 #: source/resource/conn_shared_res.src#STR_NO_CONNECTION.String.Text
 msgid  "The connection could not be created. May be the necessary data provider is not installed."
-msgstr ""
+msgstr "සම්බන්ධතාව සැකසිය නොහැක. ඇතැම්විට අවශ්‍ය දත්ත සම්පාදකය ස්ථාපනය කර නොමැති විය හැක"
 
 #: source/resource/conn_shared_res.src#STR_COULD_NOT_DELETE_INDEX.String.Text
 msgid  "The index could not be deleted. An unknown error while accessing the file system occured."
-msgstr ""
+msgstr "සූචිය මකාදැමිය නොහැක. ගොනු පද්ධතියට ඇතුළු වීමේදී නොදන්නා වරදක් හට ගැණිනි."
 
 #: source/resource/conn_shared_res.src#STR_ONL_ONE_COLUMN_PER_INDEX.String.Text
 msgid  "The index could not be created. Only one column per index is allowed."
@@ -437,11 +449,11 @@ msgstr "සූචිය සැකසිය නොහැකි විය. නො�
 
 #: source/resource/conn_shared_res.src#STR_COULD_NOT_CREATE_INDEX_NAME.String.Text
 msgid  "The index could not be created. The file '$filename$' is used by an other index."
-msgstr ""
+msgstr "සූචිය නිර්මාණය කළ නොහැක. '$filename$' ගොනු නාමය වෙනත් සූචියක් මගින් ප්‍රයෝජනයට ගැනෙයි."
 
 #: source/resource/conn_shared_res.src#STR_COULD_NOT_CREATE_INDEX_KEYSIZE.String.Text
 msgid  "The index could not be created. The size of the chosen column is to big."
-msgstr ""
+msgstr "සූචිය නිර්මාණය කළ නොහැක. තෝරාගත් තීරුවේ ප්‍රමාණය ඉතා විශාලයි."
 
 #: source/resource/conn_shared_res.src#STR_SQL_NAME_ERROR.String.Text
 msgid  "The name '$name$' doesn't match SQL naming constraints."
@@ -472,28 +484,28 @@ msgid  "Duplicate value found in column '$columnname$'."
 msgstr " '$columnname$' තීරුවේදී අනුපිටපත් අගයක් හමුවිය."
 
 #: source/resource/conn_shared_res.src#STR_INVALID_COLUMN_DECIMAL_VALUE.String.Text
-msgid  "The '$columnname$' column has been defined as a "Decimal" type, the max. length is $precision$ characters (with $scale$ decimal places).\n\nThe specified value "$value$ is longer than the number of digits allowed."
+msgid  "The '$columnname$' column has been defined as a \"Decimal\" type, the max. length is $precision$ characters (with $scale$ decimal places).\n\nThe specified value \"$value$ is longer than the number of digits allowed."
 msgstr ""
 
 #: source/resource/conn_shared_res.src#STR_COLUMN_NOT_ALTERABLE.String.Text
 msgid  "The column '$columnname$' could not be altered. May be the file system is write protected."
-msgstr ""
+msgstr " '$columnname$' තීරුව වෙනස් කළ නොහැක. සමහර විට පද්ධතිය ලිවීම තහනම්කර තිබිය හැක."
 
 #: source/resource/conn_shared_res.src#STR_INVALID_COLUMN_VALUE.String.Text
 msgid  "The column '$columnname$' could not be updated. The value is invalid for that column."
-msgstr ""
+msgstr "'$columnname$' තීරුව යාවත් කාලීන කළ නොහැක. අගය එම තීරුව සඳහා වලංගු නොවේ"
 
 #: source/resource/conn_shared_res.src#STR_COLUMN_NOT_ADDABLE.String.Text
 msgid  "The column '$columnname$' could not be added. May be the file system is write protected."
-msgstr ""
+msgstr " '$columnname$' තීරුව එක් කළ නොහැක. සමහර විට පද්ධතිය ලිවීම තහනම් කර තිබිය හැක."
 
 #: source/resource/conn_shared_res.src#STR_COLUMN_NOT_DROP.String.Text
 msgid  "The column at position '$position$' could not be dropped. May be the file system is write protected."
-msgstr ""
+msgstr " '$position$' හී පවතින තීරුව හෙළිය නොහැක. බොහෝවිට පද්ධතිය ලිවීම තහනම් කර ඇත."
 
 #: source/resource/conn_shared_res.src#STR_TABLE_NOT_DROP.String.Text
 msgid  "The table '$tablename$' could not be dropped. May be the file system is write protected."
-msgstr ""
+msgstr " '$tablename$' වගුව හෙළිය නොහැක. බොහෝවිට පද්ධතිය ලිවීම තහනම්කර ඇත."
 
 #: source/resource/conn_shared_res.src#STR_COULD_NOT_ALTER_TABLE.String.Text
 msgid  "The table could not be altered."
@@ -512,8 +524,8 @@ msgid  "Can only sort by table columns."
 msgstr "වගු තීරු වලින් පමණක් වර්ග කළ හැක."
 
 #: source/resource/conn_shared_res.src#STR_QUERY_COMPLEX_COUNT.String.Text
-msgid  "The query can not be executed. It is too complex. Only "COUNT(*)" is supported."
-msgstr ""
+msgid  "The query can not be executed. It is too complex. Only \"COUNT(*)\" is supported."
+msgstr "විමසුම ක්‍රියාත්මක කළ නොඟැක. එය ඉතා සංකීර්ණයි.  \"COUNT(*)\" පමණක් සහාය දක්වයි."
 
 #: source/resource/conn_shared_res.src#STR_QUERY_INVALID_BETWEEN.String.Text
 msgid  "The query can not be executed. The 'BETWEEN' arguments are not correct."
@@ -528,8 +540,8 @@ msgid  "The table can not be changed. It is read only."
 msgstr "වගුව වෙනස් කළ නොහැක. එය කියවීමට පමණයි"
 
 #: source/resource/conn_shared_res.src#STR_DELETE_ROW.String.Text
-msgid  "The row could not be deleted. The option "Display inactive records" is set."
-msgstr ""
+msgid  "The row could not be deleted. The option \"Display inactive records\" is set."
+msgstr "පේළිය මකාදැමිය නොහැක. \"අක්‍රීය වාර්ථා පෙන්වන්න\" විකල්පය සකසා ඇත."
 
 #: source/resource/conn_shared_res.src#STR_ROW_ALREADY_DELETED.String.Text
 msgid  "The row could not be deleted. It is already deleted."
@@ -561,7 +573,7 @@ msgstr "'$classname$' ධාවක පන්තිය පූර්ණය කළ 
 
 #: source/resource/conn_shared_res.src#STR_NO_JAVA.String.Text
 msgid  "No Java installation could be found. Please check your installation."
-msgstr ""
+msgstr "කිසිඳු java ස්ථාපනයක් සොයාගත නොහැකි විය. කරුණාකර ඔබගේ ස්ථාපනය පිරික්සා බලන්න."
 
 #: source/resource/conn_shared_res.src#STR_NO_RESULTSET.String.Text
 msgid  "The execution of the query doesn't return a valid result set."
@@ -589,15 +601,15 @@ msgstr "සුදුසු KDE ස්ථාපනයක් හමු නොව�
 
 #: source/resource/conn_shared_res.src#STR_KDE_VERSION_TOO_OLD.String.Text
 msgid  "KDE version $major$.$minor$ or higher is required to access the KDE Address Book."
-msgstr ""
+msgstr "KDE ලි‍පි‍න‍ පො‍ත‍ට‍ ඇ‍තු‍ළු‍ වී‍ම‍ට‍ KDE ස‍ං‍ස්‍ක‍ර‍ණ‍ $major$.$minor$ හෝ‍ ඉ‍හ‍ළ‍ අ‍ව‍ශ‍්‍ය‍යි‍. "
 
 #: source/resource/conn_shared_res.src#STR_KDE_VERSION_TOO_NEW.String.Text
 msgid  "The found KDE version is too new. Only KDE up to version $major$.$minor$ is known to work with this product.\n"
-msgstr ""
+msgstr "හමුවූ KDE සංස්කරණය ඉතා අ‍ළු‍ත් වේ‍. මෙ‍ම‍ නි‍ද්‍පා‍ද‍න‍ය‍ ස‍ම‍ග‍ ක්‍රි‍යා‍ක‍ර‍න බවට හඳුනාගෙන ඇත්තේ KDE  $major$.$minor$ සංස්කරණ පමණි.\n"
 
 #: source/resource/conn_shared_res.src#STR_KDE_VERSION_TOO_NEW_WORK_AROUND.String.Text
 msgid  "If you are sure that your KDE version works, you might execute the following Basic macro to disable this version check:\n\n"
-msgstr ""
+msgstr "ඔබට ඔබේ KDE සංස්කරණය ක්‍රියාකරන බවට විශ්වාස නම්,සංස්කරණ පිරික්සුම නැවතීමට ඔබ විසින් පහත සඳහන් මැක්‍රෝවන් ක්‍රියාත්මක කළ යුතුයි.:\n\n"
 
 #: source/resource/conn_shared_res.src#STR_PARA_ONLY_PREPARED.String.Text
 msgid  "Parameters can appear only in prepared statements."
@@ -613,19 +625,19 @@ msgstr "සුදුසු Mac OS ස්ථාපනයක් හමු නො�
 
 #: source/resource/conn_shared_res.src#STR_NO_DISK_SPACE.String.Text
 msgid  "The database file '$filename$' could not be created. Please check your disk space."
-msgstr ""
+msgstr "'$filename$' දත්ත මූල ගොනුව නිර්මානය කළ නොහැක. කරුණාකර ඔබේ තැටි ධාරිතාව පිරික්සා බලන්න."
 
 #: source/resource/conn_shared_res.src#STR_COMMAND_NOT_FOUND.String.Text
 msgid  "The database '$databasename$' could not be started because the command '$progname$' could not be executed."
-msgstr ""
+msgstr " '$progname$' විධානය ක්‍රියාත්මක කළ නොහැකිවීම නිසා '$databasename$' දත්තමූලය ආරම්ඹිය නොහැකිවිය."
 
 #: source/resource/conn_shared_res.src#STR_DATABASE_NEEDS_CONVERTING.String.Text
 msgid  "The current database need to be converted. Please insert control user  and password."
-msgstr ""
+msgstr "වත්මන් දත්ත මූලය පරිවර්තනය විය යුතුයි. කරුණාකර පාලක පරිශීලක හා මුරපදය ඇතුලත් කරන්න"
 
 #: source/resource/conn_shared_res.src#STR_USER_NO_DELETE.String.Text
 msgid  "This user couldn't be deleted. Otherwise the database stays in a inconsistent state."
-msgstr ""
+msgstr "මෙම පරිශීලකයා මකාදැමිය නොහැක. නොඑසේනම් දත්තමූලය අස්ථිර තත්වයේ පවතිනු ඇත."
 
 #: source/resource/conn_shared_res.src#STR_NO_STROAGE.String.Text
 msgid  "The connection can not be established. No storage or URL was given."
@@ -633,7 +645,7 @@ msgstr "සම්බන්ධතාවය ගොඩ නැගීමට නොහ
 
 #: source/resource/conn_shared_res.src#STR_INVALID_FILE_URL.String.Text
 msgid  "The given URL contains no valid local file system path. Please check the location of your database file."
-msgstr ""
+msgstr "දෙනලද URL හී කිසිඳු වලංගු පද්ධති  ගොනු මාර්ගයක් නොපවතී, කරුණාකර ඔබේ දත්ත මූල ගොනුව පවතින ස්ථානය පිරික්සා බලන්න."
 
 #: source/resource/conn_shared_res.src#STR_NO_TABLE_CONTAINER.String.Text
 msgid  "An error occured while obtaining the connection's table container."
@@ -657,7 +669,7 @@ msgstr "වාර්ථා ක්‍රියාව තහනම් කර ඇ�
 
 #: source/resource/conn_error_message.src#256 + 2*200 + 0.String.Text
 msgid  "The statement contains a cyclic reference to one or more sub queries."
-msgstr ""
+msgstr "මෙ‍ම‍ ප්‍ර‍කා‍ෂණය ස‍තු‍ව‍ අ‍නු‍ වි‍ම‍සු‍ම්‍ එ‍ක‍ක්‍ හෝ‍ කි‍හි‍ප‍ය‍ක්‍ ස‍ඳ‍හා‍ ච‍ක්‍රී‍ය‍ යො‍මු‍ ඇ‍ත‍."
 
 #: source/resource/conn_error_message.src#256 + 2*300 + 0.String.Text
 msgid  "The name must not contain any slashes ('/')."
@@ -686,15 +698,3 @@ msgstr "$1$ නොපවතී."
 #: source/resource/conn_error_message.src#256 + 2*550 + 0.String.Text
 msgid  "Unable to display the complete table content. Please apply a filter."
 msgstr "මුළු වගු අන්තර්ගතයම දර්ශණය කළ නොහැක. කරුණාකර පෙරහන් භාවිතා කරන්න."
-
-#: source/drivers/mozab/mozab2.xcu#.Drivers.Installed.sdbc:address:mozilla:.DriverTypeDisplayName
-msgid  "SeaMonkey Address Book"
-msgstr ""
-
-#: source/drivers/mozab/mozab2.xcu#.Drivers.Installed.sdbc:address:thunderbird:.DriverTypeDisplayName
-msgid  "Thunderbird Address Book"
-msgstr "තන්ඩ(ර්)බර්ඩ් ලිපින පොත"
-
-#: source/drivers/mozab/mozab2.xcu#.Drivers.Installed.sdbc:address:ldap:*.DriverTypeDisplayName
-msgid  "LDAP Address Book"
-msgstr "LDAP ලිපින පොත"

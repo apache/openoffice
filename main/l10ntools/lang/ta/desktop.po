@@ -32,8 +32,8 @@ msgstr ""
 
 
 #: source/app/desktop.src#STR_RECOVER_QUERY.String.Text
-msgid  "Should the file "$1" be restored?"
-msgstr ""
+msgid  "Should the file \"$1\" be restored?"
+msgstr "\"$1\" கோப்பினை திரும்ப கொண்டு வர வேண்டுமா?"
 
 #: source/app/desktop.src#STR_RECOVER_TITLE.String.Text
 msgid  "File Recovery"
@@ -41,15 +41,15 @@ msgstr "கோப்பு மீட்பு"
 
 #: source/app/desktop.src#STR_RECOVER_PREPARED.WarningBox.Message
 msgid  "An unrecoverable error has occurred.\n\nAll modified files have been saved and can\nprobably be recovered at program restart."
-msgstr ""
+msgstr "ஒரு மீட்க முடியாத பிழை ஏற்பட்டது.\n\nஅனைத்து மாற்றியமைக்கப்பட்ட கோப்புகளும் சேமிக்கப்பட்டது\nநிரலைத் மீண்டும் துவக்கும் போது மீட்கப்படும்."
 
 #: source/app/desktop.src#STR_BOOTSTRAP_ERR_CANNOT_START.String.Text
 msgid  "The application cannot be started. "
 msgstr "பயன்பாட்டை துவக்க முடியாது. "
 
 #: source/app/desktop.src#STR_BOOTSTRAP_ERR_DIR_MISSING.String.Text
-msgid  "The configuration directory "$1" could not be found."
-msgstr ""
+msgid  "The configuration directory \"$1\" could not be found."
+msgstr "கட்டமைப்பு அடைவு \"$1\" காணப்படவில்லை."
 
 #: source/app/desktop.src#STR_BOOTSTRAP_ERR_PATH_INVALID.String.Text
 msgid  "The installation path is invalid."
@@ -64,16 +64,16 @@ msgid  "An internal error occurred."
 msgstr "உள்ளகப்பிழை ஏற்பட்டது."
 
 #: source/app/desktop.src#STR_BOOTSTRAP_ERR_FILE_CORRUPT.String.Text
-msgid  "The configuration file "$1" is corrupt."
-msgstr ""
+msgid  "The configuration file \"$1\" is corrupt."
+msgstr "கட்டமைப்பு கோப்பு \"$1\" பழுதுபட்டுள்ளது."
 
 #: source/app/desktop.src#STR_BOOTSTRAP_ERR_FILE_MISSING.String.Text
-msgid  "The configuration file "$1" was not found."
-msgstr ""
+msgid  "The configuration file \"$1\" was not found."
+msgstr "கட்டமைப்பு கோப்பு \"$1\" காணப்படவில்லை."
 
 #: source/app/desktop.src#STR_BOOTSTRAP_ERR_NO_SUPPORT.String.Text
-msgid  "The configuration file "$1" does not support the current version."
-msgstr ""
+msgid  "The configuration file \"$1\" does not support the current version."
+msgstr "கட்டமைப்பு கோப்பு \"$1\" நடப்பு பதிப்பிற்கு துணைபுரியவில்லை."
 
 #: source/app/desktop.src#STR_BOOTSTRAP_ERR_LANGUAGE_MISSING.String.Text
 msgid  "The user interface language cannot be determined."
@@ -93,11 +93,11 @@ msgstr ""
 
 #: source/app/desktop.src#STR_ASK_START_SETUP_MANUALLY.String.Text
 msgid  "Start the setup application to repair the installation from the CD or the folder containing the installation packages."
-msgstr ""
+msgstr "நிறுவல் தொகுப்புகளை கொண்டிருக்கும்கோப்புறை அல்லது குறுவட்டிலிருந்து நிறுவலை சரிபார்ப்பதற்கு பயன்பாட்டை அமைக்க துவங்கவும்."
 
 #: source/app/desktop.src#STR_CONFIG_ERR_SETTINGS_INCOMPLETE.String.Text
 msgid  "The startup settings for accessing the central configuration are incomplete. "
-msgstr ""
+msgstr "மைய கட்டமைவை அணுகுவதற்காண தொடக்க அமைவுகள் முடிவுபெறாமல் உள்ளன. "
 
 #: source/app/desktop.src#STR_CONFIG_ERR_CANNOT_CONNECT.String.Text
 msgid  "A connection to the central configuration could not be established. "
@@ -105,7 +105,7 @@ msgstr "மைய கட்டமைவுடன் ஒரு இணைப்ப
 
 #: source/app/desktop.src#STR_CONFIG_ERR_RIGHTS_MISSING.String.Text
 msgid  "You cannot access the central configuration because of missing access rights. "
-msgstr ""
+msgstr "அணுகும் உரிமை இல்லததால் மைய கட்டமைவை உங்களால் அணுகமுடியாது. "
 
 #: source/app/desktop.src#STR_CONFIG_ERR_ACCESS_GENERAL.String.Text
 msgid  "A general error occurred while accessing your central configuration. "
@@ -113,11 +113,11 @@ msgstr "உங்கள் மைய கட்டமைப்பை அணுக
 
 #: source/app/desktop.src#STR_CONFIG_ERR_NO_WRITE_ACCESS.String.Text
 msgid  "The changes to your personal settings cannot be stored centrally because of missing access rights. "
-msgstr ""
+msgstr "அணுகும் உரிமை இல்லாததால் மாற்றப்படும் உங்கள் சொந்த அமைவுகளை நடுவில் சேமிக்க முடியாது. "
 
 #: source/app/desktop.src#STR_BOOTSTRAP_ERR_CFG_DATAACCESS.String.Text
 msgid  "%PRODUCTNAME cannot be started due to an error in accessing the %PRODUCTNAME configuration data.\n\nPlease contact your system administrator."
-msgstr ""
+msgstr "%PRODUCTNAME கட்டமைப்பு தரவை அணுகுவதில் பிழையிருப்பதால் %PRODUCTNAMEஐ தொடக்க முடியவில்லை.\n\nஉங்கள் முறைமை நிர்வாகியைத் தெடர்புகொள்ளவும்."
 
 #: source/app/desktop.src#STR_INTERNAL_ERRMSG.String.Text
 msgid  "The following internal error has occurred: "
@@ -125,7 +125,7 @@ msgstr "பின்வரும் உள்ளகப் பிழை நேர
 
 #: source/app/desktop.src#QBX_USERDATALOCKED.QueryBox.Message
 msgid  "Either another instance of %PRODUCTNAME is accessing your personal settings or your personal settings are locked.\nSimultaneous access can lead to inconsistencies in your personal settings. Before continuing, you should make sure user '$u' closes %PRODUCTNAME on host '$h'.\n\nDo you really want to continue?"
-msgstr ""
+msgstr "%PRODUCTNAME இன் மற்றொரு நிகழ்வு உங்கள் சொந்த அமைவுகளை அணுகிக்கொண்டிருக்கிறது அல்லது உங்கள் சொந்த அமைவுகள் பூட்டபட்டிருக்கலாம்.\nஓரே நேர அணுகலால் உங்கள் சொந்த அமைவுகளில் முரண்பாடுகளை ஏற்படலாம். நீங்கள் தொடரும் முன், '$u' பயனர் வழங்கி '$h' இல் %PRODUCTNAME ஐ மூடுவதை உறுதிசெய்தல் அவசியம்.\n\nஉதியாக நீங்கள் தொடர விரும்புகிறீர்களா?"
 
 #: source/app/desktop.src#STR_TITLE_USERDATALOCKED.String.Text
 msgid  "%PRODUCTNAME %PRODUCTVERSION"
@@ -149,11 +149,11 @@ msgstr "பாதை மேலாளர் கிடைக்கவில்ல�
 
 #: source/app/desktop.src#STR_BOOSTRAP_ERR_NOTENOUGHDISKSPACE.String.Text
 msgid  "%PRODUCTNAME user installation could not be completed due to insufficient free disk space. Please free more disc space at the following location and restart %PRODUCTNAME:\n\n"
-msgstr ""
+msgstr "போதுமான காலி வட்டு இடம் இல்லாததால் %PRODUCTNAME பயனர் நிறுவலை முடிக்க இயலவில்லை. பின்வரும் இடத்தில் வட்டைக் காலி செய்து, %PRODUCTNAME ஐ மீண்டும் துவக்கவும்:\n\n"
 
 #: source/app/desktop.src#STR_BOOSTRAP_ERR_NOACCESSRIGHTS.String.Text
 msgid  "%PRODUCTNAME user installation could not be processed due to missing access rights. Please make sure that you have sufficient access rights for the following location and restart %PRODUCTNAME:\n\n"
-msgstr ""
+msgstr "அனுகல் உரிமைகள் காணப்படாததால் %PRODUCTNAME பயனர் நிறுவலை செயல்முறைப்படுத்த முடியவில்லை. பின்வரும் இடத்திற்குத் தேவையான அனுகல் உரிமைகள் இருப்பதை உறுதிசெய்துவிட்டு %PRODUCTNAME ஐத் மீண்டும் துவக்கவும்:\n\n"
 
 #: source/deployment/gui/dp_gui_versionboxes.src#RID_WARNINGBOX_VERSION_LESS.WarningBox.Message
 msgid  "You are about to install version $NEW of the extension \'$NAME\'.\nThe newer version $DEPLOYED is already installed.\nClick \'OK\' to replace the installed extension.\nClick \'Cancel\' to stop the installation."
@@ -185,7 +185,7 @@ msgstr "கணினி சார்புகள் சோதனை"
 
 #: source/deployment/gui/dp_gui_dependencydialog.src#RID_DLG_DEPENDENCIES.RID_DLG_DEPENDENCIES_TEXT.FixedText.Text
 msgid  "The extension cannot be installed as the following\nsystem dependencies are not fulfilled:"
-msgstr ""
+msgstr "பின்வரும் முறைமை சார்புகள் நிறைவு செய்யப்படாததால்\nகணினி சார்புகள் முடிவடையவில்லை:"
 
 #: source/deployment/gui/dp_gui_dialog.src#RID_STR_ADD_PACKAGES.String.Text
 msgid  "Add Extension(s)"
@@ -261,12 +261,14 @@ msgid  "Quit"
 msgstr "நிறுத்து"
 
 #: source/deployment/gui/dp_gui_dialog.src#RID_STR_NO_ADMIN_PRIVILEGE.String.Text
+#, fuzzy
 msgid  "%PRODUCTNAME has been updated to a new version. Some shared %PRODUCTNAME extensions are not compatible with this version and need to be updated before %PRODUCTNAME can be started.\n\nUpdating of shared extension requires administrator privileges. Contact your system administrator to update the following shared extensions:"
-msgstr ""
+msgstr "%PRODUCTNAME has been updated to a new version. Some shared %PRODUCTNAME extensions are not compatible with this version and need to be updated before %PRODUCTNAME can be started.\n\nUpdating of shared extension requires administrator privileges. Contact your system administrator to update the following shared extensions:"
 
 #: source/deployment/gui/dp_gui_dialog.src#RID_STR_ERROR_MISSING_DEPENDENCIES.String.Text
+#, fuzzy
 msgid  "The extension cannot be enabled as the following system dependencies are not fulfilled:"
-msgstr ""
+msgstr "பின்வரும் முறைமை சார்புகள் நிறைவு செய்யப்படாததால் விரிவாக்கத்தை நிறுவ முடியவில்லை:"
 
 #: source/deployment/gui/dp_gui_dialog.src#RID_STR_ERROR_MISSING_LICENSE.String.Text
 msgid  "This extension is disabled because you haven't accepted the license yet.\n"
@@ -282,8 +284,9 @@ msgid  "Extension Software License Agreement"
 msgstr "விரிவாக்க மென்பொருள் உரிம ஒப்பந்தம்"
 
 #: source/deployment/gui/dp_gui_dialog.src#RID_DLG_LICENSE.FT_LICENSE_HEADER.FixedText.Text
+#, fuzzy
 msgid  "Please follow these steps to proceed with the installation of the extension:"
-msgstr ""
+msgstr "விரிவாக்கத்தின் நிறுவலைத் தொடர இப்படிகளை பின்பற்றிச் செல்லவும்:"
 
 #: source/deployment/gui/dp_gui_dialog.src#RID_DLG_LICENSE.FT_LICENSE_BODY_1.FixedText.Text
 #, fuzzy
@@ -478,8 +481,9 @@ msgid  "No new updates are available."
 msgstr "புதிய புதுப்பித்தல்கள் கிடைக்கf பெறவில்லை."
 
 #: source/deployment/gui/dp_gui_updatedialog.src#RID_DLG_UPDATE.RID_DLG_UPDATE_NOINSTALLABLE.String.Text
+#, fuzzy
 msgid  "No installable updates are available. To see ignored or disabled updates, mark the check box 'Show all updates'."
-msgstr ""
+msgstr "நிறுவக்கூடிய எந்த ஒரு புதுப்பித்தலுமில்லை. எல்லா புதுப்பித்தல்களையும் பார்க்க, 'அனைத்து புதுப்பித்தல்களையும் காட்டு' சலிபார்க்கும் பெட்டியில் குறிப்பிடவும்."
 
 #: source/deployment/gui/dp_gui_updatedialog.src#RID_DLG_UPDATE.RID_DLG_UPDATE_FAILURE.String.Text
 #, fuzzy
@@ -574,8 +578,9 @@ msgid  "Extension Update Required"
 msgstr "விரிவாக்க புதுப்பித்தல் தேவைப்படுகிறது"
 
 #: source/deployment/gui/dp_gui_dialog2.src#RID_DLG_UPDATE_REQUIRED.RID_EM_FT_MSG.FixedText.Text
+#, fuzzy
 msgid  "%PRODUCTNAME has been updated to a new version. Some installed %PRODUCTNAME extensions are not compatible with this version and need to be updated before they can be used."
-msgstr ""
+msgstr "%PRODUCTNAME ஒரு புதிய பதிப்பில் புதுப்பிக்கப்படும். சில நிறுவப்பட்ட %PRODUCTNAME விரிவாக்கங்கள் இந்த பதிப்புடன் தகுந்து புதுப்பித்தலை பயன்படுத்துவதற்கு முன்பே தேவைப்படும்"
 
 #: source/deployment/gui/dp_gui_dialog2.src#RID_DLG_UPDATE_REQUIRED.RID_EM_FT_PROGRESS.FixedText.Text
 #, fuzzy
@@ -593,31 +598,27 @@ msgid  "Disable all"
 msgstr "அனைத்தையும் செயல்நீக்கு"
 
 #: source/deployment/gui/dp_gui_dialog2.src#RID_QUERYBOX_INSTALL_FOR_ALL.QueryBox.Message
+#, fuzzy
 msgid  "Make sure that no further users are working with the same %PRODUCTNAME, when installing an extension for all users in a multi user environment.\n\nFor whom do you want to install the extension?\n"
-msgstr ""
+msgstr "பல பயனர் சூழலில் பகிர்ந்த விரிவாக்கத்தை மாற்றும் போது, இதர பயனர்கள் அதே %PRODUCTNAME ஐ அவ்வேளையில் பயன்படுத்திக் கொண்டிருக்கவில்லை என உறுதிசெய்யவும்.\n\nயாருக்காக நீங்கள் விரிவாக்கத்தை  நிறுவ விரும்புகிறீர்கள்?\n"
 
 #: source/deployment/manager/dp_manager.src#RID_STR_COPYING_PACKAGE.String.Text
-#, fuzzy
 msgid  "Copying: "
 msgstr "நகலெடுக்கிறது: "
 
 #: source/deployment/manager/dp_manager.src#RID_STR_ERROR_WHILE_ADDING.String.Text
-#, fuzzy
 msgid  "Error while adding: "
 msgstr "சேர்க்கும் போது பிழை: "
 
 #: source/deployment/manager/dp_manager.src#RID_STR_ERROR_WHILE_REMOVING.String.Text
-#, fuzzy
 msgid  "Error while removing: "
 msgstr "நீக்கும் போது பிழை: "
 
 #: source/deployment/manager/dp_manager.src#RID_STR_PACKAGE_ALREADY_ADDED.String.Text
-#, fuzzy
 msgid  "Extension has already been added: "
 msgstr "விரிவாக்கம் ஏற்கனவே சேர்க்கப்பட்டுள்ளது: "
 
 #: source/deployment/manager/dp_manager.src#RID_STR_NO_SUCH_PACKAGE.String.Text
-#, fuzzy
 msgid  "There is no such extension deployed: "
 msgstr "அத்தகைய விரிவாக்கம் ஏதும் நிறுவப்பட்டிருக்கவில்லை: "
 
@@ -626,7 +627,6 @@ msgid  "Synchronizing repository for %NAME extensions"
 msgstr ""
 
 #: source/deployment/misc/dp_misc.src#RID_DEPLYOMENT_DEPENDENCIES_UNKNOWN.String.Text
-#, fuzzy
 msgid  "Unknown"
 msgstr "தெரியாதது"
 
@@ -639,47 +639,38 @@ msgid  "Extension doesn't support versions greater than: Apache OpenOffice %VERS
 msgstr ""
 
 #: source/deployment/registry/dp_registry.src#RID_STR_REGISTERING_PACKAGE.String.Text
-#, fuzzy
 msgid  "Enabling: "
 msgstr "செயல்படுகிறது: "
 
 #: source/deployment/registry/dp_registry.src#RID_STR_REVOKING_PACKAGE.String.Text
-#, fuzzy
 msgid  "Disabling: "
 msgstr "செயல்நீக்குகிறது: "
 
 #: source/deployment/registry/dp_registry.src#RID_STR_CANNOT_DETECT_MEDIA_TYPE.String.Text
-#, fuzzy
 msgid  "Cannot detect media-type: "
 msgstr "ஊடக - வகையைக் கண்டுகொள்ள முடியவில்லை: "
 
 #: source/deployment/registry/dp_registry.src#RID_STR_UNSUPPORTED_MEDIA_TYPE.String.Text
-#, fuzzy
 msgid  "This media-type is not supported: "
 msgstr "இந்த ஊடக- வகைக்கு துணைபுரியவில்லை: "
 
 #: source/deployment/registry/dp_registry.src#RID_STR_ERROR_WHILE_REGISTERING.String.Text
-#, fuzzy
 msgid  "An error occurred while enabling: "
 msgstr "செயல்படுத்தும் போது பிழை ஏற்பட்டது:"
 
 #: source/deployment/registry/dp_registry.src#RID_STR_ERROR_WHILE_REVOKING.String.Text
-#, fuzzy
 msgid  "An error occurred while disabling: "
 msgstr "செயல்நீக்கும் போது பிழை ஏற்பட்டது: "
 
 #: source/deployment/registry/component/dp_component.src#RID_STR_DYN_COMPONENT.String.Text
-#, fuzzy
 msgid  "UNO Dynamic Library Component"
 msgstr "UNO இயக்கவாற்றல் நூலகப் பொருள்"
 
 #: source/deployment/registry/component/dp_component.src#RID_STR_JAVA_COMPONENT.String.Text
-#, fuzzy
 msgid  "UNO Java Component"
 msgstr "UNO Java பொருள்"
 
 #: source/deployment/registry/component/dp_component.src#RID_STR_PYTHON_COMPONENT.String.Text
-#, fuzzy
 msgid  "UNO Python Component"
 msgstr "UNO பல்கோணப் பொருள்"
 
@@ -688,66 +679,54 @@ msgid  "UNO Components"
 msgstr ""
 
 #: source/deployment/registry/component/dp_component.src#RID_STR_RDB_TYPELIB.String.Text
-#, fuzzy
 msgid  "UNO RDB Type Library"
 msgstr "UNO RDB வகை நூலகம்"
 
 #: source/deployment/registry/component/dp_component.src#RID_STR_JAVA_TYPELIB.String.Text
-#, fuzzy
 msgid  "UNO Java Type Library"
 msgstr "UNO Java வகை நூலகம்"
 
 #: source/deployment/registry/configuration/dp_configuration.src#RID_STR_CONF_SCHEMA.String.Text
-#, fuzzy
 msgid  "Configuration Schema"
 msgstr "கட்டமைப்பு திட்டம்"
 
 #: source/deployment/registry/configuration/dp_configuration.src#RID_STR_CONF_DATA.String.Text
-#, fuzzy
 msgid  "Configuration Data"
 msgstr "கட்டமைப்பு தரவு"
 
 #: source/deployment/registry/help/dp_help.src#RID_STR_HELP.String.Text
-#, fuzzy
 msgid  "Help"
 msgstr "உதவி"
 
 #: source/deployment/registry/help/dp_help.src#RID_STR_HELPPROCESSING_GENERAL_ERROR.String.Text
-#, fuzzy
 msgid  "The extension cannot be installed because:\n"
 msgstr "விரிவாக்கத்தை  நிறுவ முடியவில்லை ஏனெனில்:\n"
 
 #: source/deployment/registry/help/dp_help.src#RID_STR_HELPPROCESSING_XMLPARSING_ERROR.String.Text
 msgid  "The extension will not be installed because an error occurred in the Help files:\n"
-msgstr ""
+msgstr "உதவிக் கோப்புகளில் ஒரு பிழை ஏற்பட்டதால் இந்த விரிவாக்கதை நிறுவ முடியாது:\n"
 
 #: source/deployment/registry/package/dp_package.src#RID_STR_PACKAGE_BUNDLE.String.Text
-#, fuzzy
 msgid  "Extension"
 msgstr "விரிவாக்கம்"
 
 #: source/deployment/registry/script/dp_script.src#RID_STR_BASIC_LIB.String.Text
-#, fuzzy
 msgid  "%PRODUCTNAME Basic Library"
 msgstr "%PRODUCTNAME அடிப்படை நூலகம்"
 
 #: source/deployment/registry/script/dp_script.src#RID_STR_DIALOG_LIB.String.Text
-#, fuzzy
 msgid  "Dialog Library"
 msgstr "உரையாடல் நூலகம்"
 
 #: source/deployment/registry/script/dp_script.src#RID_STR_CANNOT_DETERMINE_LIBNAME.String.Text
-#, fuzzy
 msgid  "The library name could not be determined."
 msgstr "நூலகப் பெயரை நிர்ணயிக்க முடியவில்லை."
 
 #: source/deployment/registry/script/dp_script.src#RID_STR_LIBNAME_ALREADY_EXISTS.String.Text
-#, fuzzy
 msgid  "This library name already exists. Please choose a different name."
 msgstr "இந்நூலகப் பெயர் ஏற்கனவே உள்ளது. வேறொரு பெயரைத் தேர்ந்தெடு."
 
 #: source/deployment/registry/sfwk/dp_sfwk.src#RID_STR_SFWK_LIB.String.Text
-#, fuzzy
 msgid  "%MACROLANG Library"
 msgstr "%MACROLANG நூலகம்"
 
@@ -756,418 +735,354 @@ msgid  "Extension Software License Agreement of $NAME:"
 msgstr ""
 
 #: source/deployment/unopkg/unopkg.src#RID_STR_UNOPKG_ACCEPT_LIC_2.String.Text
-msgid  "Read the complete License Agreement displayed above. Accept the License Agreement by typing "yes" on the console then press the Return key. Type "no" to decline and to abort the extension setup."
-msgstr ""
+msgid  "Read the complete License Agreement displayed above. Accept the License Agreement by typing \"yes\" on the console then press the Return key. Type \"no\" to decline and to abort the extension setup."
+msgstr "மேலே காட்டப்படும் முழு உரிம ஒப்பந்தத்தையும் படி. உரிம ஒப்பந்தத்தை ஏற்றுக்கொள்ள \"சரி\" என்று தட்டி திரும்பும் விசையை அழுத்தவும். மறுத்து விரிவாக்க அமைப்பிலிருந்து வெளியேர \"வேண்டாம்\" எனத் தட்டு."
 
 #: source/deployment/unopkg/unopkg.src#RID_STR_UNOPKG_ACCEPT_LIC_3.String.Text
-msgid  "[Enter "yes" or "no"]:"
-msgstr ""
+msgid  "[Enter \"yes\" or \"no\"]:"
+msgstr "[\"ஆம்\" அல்லது \"இல்லை\" என உள்ளிடு]:"
 
 #: source/deployment/unopkg/unopkg.src#RID_STR_UNOPKG_ACCEPT_LIC_4.String.Text
-msgid  "Your input was not correct. Please enter "yes" or "no":"
-msgstr ""
+msgid  "Your input was not correct. Please enter \"yes\" or \"no\":"
+msgstr "உங்கள் உள்ளீடு சரியில்லை. \"ஆம்\" அல்லது \"இல்லை\" என உள்ளிடு:"
 
 #: source/deployment/unopkg/unopkg.src#RID_STR_UNOPKG_ACCEPT_LIC_YES.String.Text
-#, fuzzy
 msgid  "YES"
 msgstr "ஆம்"
 
 #: source/deployment/unopkg/unopkg.src#RID_STR_UNOPKG_ACCEPT_LIC_Y.String.Text
-#, fuzzy
 msgid  "Y"
 msgstr "Y"
 
 #: source/deployment/unopkg/unopkg.src#RID_STR_UNOPKG_ACCEPT_LIC_NO.String.Text
-#, fuzzy
 msgid  "NO"
 msgstr "இல்லை"
 
 #: source/deployment/unopkg/unopkg.src#RID_STR_UNOPKG_ACCEPT_LIC_N.String.Text
-#, fuzzy
 msgid  "N"
 msgstr "N"
 
 #: source/deployment/unopkg/unopkg.src#RID_STR_CONCURRENTINSTANCE.String.Text
 msgid  "unopkg cannot be started. The lock file indicates it as already running. If this does not apply, delete the lock file at:"
-msgstr ""
+msgstr "unopkg துவக்கப்படவில்லை. இந்த பூட்டு கோப்பானது அது ஏற்கனவே இயங்குவதை அறிவிக்கிறது. அவ்வாறு செயல்படவில்லை எனில், பூட்டுக் கோப்பை இதில் அழிக்கவும்:"
 
 #: source/deployment/unopkg/unopkg.src#RID_STR_UNOPKG_ERROR.String.Text
-#, fuzzy
 msgid  "ERROR: "
 msgstr "ERROR: "
 
 #: source/migration/wizard.src#DLG_FIRSTSTART_WIZARD.ModalDialog.Text
-#, fuzzy
 msgid  "Welcome to %PRODUCTNAME %PRODUCTVERSION"
 msgstr "%PRODUCTNAME %PRODUCTVERSION க்கு நல்வரவு"
 
 #: source/migration/wizard.src#STR_STATE_WELCOME.String.Text
-#, fuzzy
 msgid  "Welcome"
 msgstr "நல்வரவு"
 
 #: source/migration/wizard.src#STR_STATE_LICENSE.String.Text
-#, fuzzy
 msgid  "License Agreement"
 msgstr "உரிம ஒப்பந்தம்"
 
 #: source/migration/wizard.src#STR_STATE_MIGRATION.String.Text
-#, fuzzy
 msgid  "Personal Data"
 msgstr "சொந்தத் தரவு"
 
 #: source/migration/wizard.src#STR_STATE_USER.String.Text
-#, fuzzy
 msgid  "User name"
 msgstr "பயனர் பெயர்"
 
 #: source/migration/wizard.src#STR_STATE_UPDATE_CHECK.String.Text
-#, fuzzy
 msgid  "Online Update"
 msgstr "இணைய புதுப்பித்தல்"
 
 #: source/migration/wizard.src#STR_STATE_REGISTRATION.String.Text
-#, fuzzy
 msgid  "Registration"
 msgstr "பதிவு"
 
 #: source/migration/wizard.src#STR_WELCOME_MIGRATION.String.Text
 msgid  "This wizard will guide you through the license agreement, the transfer of user data from %OLD_VERSION and the registration of %PRODUCTNAME.\n\nClick 'Next' to continue."
-msgstr ""
+msgstr "இவ்வழிகாட்டி உரிம ஒப்பத்தம், %OLD_VERSION இலிருந்து பயனர் தரவை இடமாற்றுவதல், %PRODUCTNAME பதிவு ஆகியன ஊடாக வழிநடத்திச் செல்லும்.\n\n'அடுத்து' சொடுக்கி தொடரவும்."
 
 #: source/migration/wizard.src#STR_WELCOME_WITHOUT_LICENSE.String.Text
 msgid  "This wizard will guide you through the registration of %PRODUCTNAME.\n\nClick 'Next' to continue."
-msgstr ""
+msgstr "இவ்வழிகாட்டி %PRODUCTNAME பதிவின் ஊடாக வழிநடத்திச் செல்லும்.\n\n'அடுத்து' சொடுக்கி தொடரவும்."
 
 #: source/migration/wizard.src#STR_FINISH.String.Text
-#, fuzzy
 msgid  "~Finish"
 msgstr "முந்தது (~F)"
 
 #: source/migration/wizard.src#STR_REGISTRATION_OOO.String.Text
 msgid  "You now have the opportunity to support and contribute to the fastest growing open source community in the world.\n\nHelp us prove that %PRODUCTNAME has already gained significant market share by registering.\n\nRegistering is voluntary and without obligation."
-msgstr ""
+msgstr "உலகில் மிகத் துரிதமாக வளர்ந்து வரும் பண்பு சமூகத்தை ஆதரித்து அதற்குப் பங்களிக்கும் வாய்ப்பு உங்களுக்கு இப்போது வாய்த்துள்ளது.\n\nமக்கற் சந்தையில் %PRODUCTNAME குறிப்பிடத்தக்க ஆதவைப் பெற்றுள்ளதென நாங்கள் நிருபிப்பதற்கு நீங்கள் பதிவு செய்வதன்வழி உதலாம்.\n\nபதிவுசெய்தல் தன்னார்வ அடிப்படையிலானது; கண்டிப்பில்லாதது."
 
 #: source/migration/wizard.src#ERRBOX_REG_NOSYSBROWSER.ErrorBox.Message
 msgid  "An error occurred in starting the web browser.\nPlease check the %PRODUCTNAME and web browser settings."
-msgstr ""
+msgstr "உலாவியைத் தொடக்குவதில் பிழை.\n%PRODUCTNAME ஐயும் உலாவியின் அமைவுகளையும் சரிபாருங்கள்."
 
 #: source/migration/wizard.src#QB_ASK_DECLINE.QueryBox.Message
-#, fuzzy
 msgid  "Do you really want to decline?"
 msgstr "உறுதியாக மறுக்கிறீர்களா?"
 
 #: source/migration/wizard.src#TP_WELCOME.FT_WELCOME_HEADER.FixedText.Text
-#, fuzzy
 msgid  "Welcome to %PRODUCTNAME %PRODUCTVERSION"
 msgstr "%PRODUCTNAME %PRODUCTVERSION க்கு நல்வரவு"
 
 #: source/migration/wizard.src#TP_WELCOME.FT_WELCOME_BODY.FixedText.Text
 msgid  "This wizard will guide you through the license agreement and the registration of %PRODUCTNAME.\n\nClick 'Next' to continue."
-msgstr ""
+msgstr "இவ்வழிகாட்டி உரிம ஒப்பத்தத்தின் ஊடாகவும், %PRODUCTNAME பதிவின் ஊடாகவும் வழிநடத்திச் செல்லும்.\n\n'அடுத்து' சொடுக்கி தொடரவும்."
 
 #: source/migration/wizard.src#TP_LICENSE.FT_LICENSE_HEADER.FixedText.Text
-#, fuzzy
 msgid  "Please follow these steps to accept the license"
 msgstr "உரிமத்தை ஏற்றுக்கொள்ள இப்படிகளைப் பின்பற்றிச் செல்லவும்"
 
 #: source/migration/wizard.src#TP_LICENSE.FT_LICENSE_BODY_1.FixedText.Text
-#, fuzzy
 msgid  "1."
 msgstr "1."
 
 #: source/migration/wizard.src#TP_LICENSE.FT_LICENSE_BODY_1_TXT.FixedText.Text
 msgid  "View the complete License Agreement. Please use the scrollbar or the '%PAGEDOWN' button in this dialog to view the entire license text."
-msgstr ""
+msgstr "முழு உரிம ஒப்பந்தத்தையும் பார். இவ்வுரையாடல் பெட்டியிலுள்ள உருள்பட்டையையோ '%PAGEDOWN' பொத்தானையோ பயன்படுத்தி முழு உரிம உரையையும் பார்க்கவும்."
 
 #: source/migration/wizard.src#TP_LICENSE.FT_LICENSE_BODY_2.FixedText.Text
-#, fuzzy
 msgid  "2."
 msgstr "2."
 
 #: source/migration/wizard.src#TP_LICENSE.FT_LICENSE_BODY_2_TXT.FixedText.Text
-#, fuzzy
 msgid  "Click 'Accept' to accept the terms of the Agreement."
 msgstr "'ஏற்றுக்கொள்' ஐச் சொடுக்கி ஒப்பந்த விதிகளை ஏற்றுக்கொள்."
 
 #: source/migration/wizard.src#TP_LICENSE.PB_LICENSE_DOWN.PushButton.Text
-#, fuzzy
 msgid  "Scroll Do~wn"
 msgstr "கீழே உருட்டு (~w)"
 
 #: source/migration/wizard.src#STR_LICENSE_ACCEPT.String.Text
-#, fuzzy
 msgid  "~Accept"
 msgstr "ஏற்றுக்கொள் (~A)"
 
 #: source/migration/wizard.src#STR_LICENSE_DECLINE.String.Text
-#, fuzzy
 msgid  "~Decline"
 msgstr "மறுத்துவிடு (~D)"
 
 #: source/migration/wizard.src#TP_MIGRATION.FT_MIGRATION_HEADER.FixedText.Text
-#, fuzzy
 msgid  "Transfer personal data"
 msgstr "சொந்தத் தரவை இடமாற்று"
 
 #: source/migration/wizard.src#TP_MIGRATION.FT_MIGRATION_BODY.FixedText.Text
 msgid  "Most personal data from %OLDPRODUCT installation can be reused in %PRODUCTNAME %PRODUCTVERSION.\n\nIf you do not want to reuse any settings in %PRODUCTNAME %PRODUCTVERSION, unmark the check box."
-msgstr ""
+msgstr "%OLDPRODUCT நிறுவலிலுள்ள பெரும்பகுதியான சொந்தத் தரவை %PRODUCTNAME %PRODUCTVERSION இல் பயன்படுத்தலாம்.\n\n%PRODUCTNAME %PRODUCTVERSION உள்ள எந்த அமைவையும் பயன்படுத்த நீங்கள் விரும்பவில்லையானால், சரிபார்க்கும் பெட்டிக் குறிப்பை நீக்கவும்."
 
 #: source/migration/wizard.src#TP_MIGRATION.CB_MIGRATION.CheckBox.Text
-#, fuzzy
 msgid  "Transfer personal data"
 msgstr "சொந்தத் தரவை இடமாற்று"
 
 #: source/migration/wizard.src#TP_UPDATE_CHECK.FT_UPDATE_CHECK_HEADER.FixedText.Text
-#, fuzzy
 msgid  "Online Update"
 msgstr "இணைய புதுப்பித்தல்"
 
 #: source/migration/wizard.src#TP_UPDATE_CHECK.FT_UPDATE_CHECK_BODY.FixedText.Text
 msgid  "%PRODUCTNAME searches automatically at regular intervals for new versions.\nIn doing so online update does not transfer personal data.\nAs soon as a new version is available, you will be notified.\n\nYou can configure this feature at Tools / Options... / %PRODUCTNAME / Online Update."
-msgstr ""
+msgstr "%PRODUCTNAME புதிய பதிப்புகளை வழக்கமான ஒரு இடைவேளையில் தானாகவே தேடும்.\nஅத்தகைய இணைய புதுப்பித்தலின்போது சொந்தத் தரவு இடமாற்றப்படாது.\nபுதிய பதிப்பு கிடைத்தவுடன் உங்களுக்குத் தெரிவிக்கப்படும்.\n\nஇந்த அம்சத்தைப் பின்வருமிடத்தில் நீங்கள் கட்டமைக்கலாம் - கருவிகள் / விருப்பங்கள்... / %PRODUCTNAME / இணைய புதுப்பித்தல்."
 
 #: source/migration/wizard.src#TP_UPDATE_CHECK.CB_UPDATE_CHECK.CheckBox.Text
-#, fuzzy
 msgid  "~Check for updates automatically"
 msgstr "தானாகவே புதுப்பித்தலை சரிப்பார் (~C)"
 
 #: source/migration/wizard.src#TP_USER.FT_USER_HEADER.FixedText.Text
-#, fuzzy
 msgid  "Provide your full name and initials below"
 msgstr "உங்கள் முழுப்பெயரையும் தலைப்புகளையும் கீழே வழங்கவும்"
 
 #: source/migration/wizard.src#TP_USER.FT_USER_BODY.FixedText.Text
 msgid  "The user name will be used in the document properties, templates and when you record changes made to documents."
-msgstr ""
+msgstr "பயனர் பெயர் ஆவண பண்புகளிலும், வார்ப்புருகளிலும், ஆவணங்களில் மாற்றங்களை நீங்கள் பதிவுசெய்யும்போதும் பயன்படுத்தப்படும்."
 
 #: source/migration/wizard.src#TP_USER.FT_USER_FIRST.FixedText.Text
-#, fuzzy
 msgid  "~First name"
 msgstr "முதற்பெயர் (~F)"
 
 #: source/migration/wizard.src#TP_USER.FT_USER_LAST.FixedText.Text
-#, fuzzy
 msgid  "~Last name"
 msgstr "கடைசிப்பெயர் (~L)"
 
 #: source/migration/wizard.src#TP_USER.FT_USER_INITIALS.FixedText.Text
-#, fuzzy
 msgid  "~Initials"
 msgstr "சுருக்கொப்பம் (~I)"
 
 #: source/migration/wizard.src#TP_USER.FT_USER_FATHER.FixedText.Text
-#, fuzzy
 msgid  "~Father's name"
 msgstr "தந்தையின் பெயர் (~F)"
 
 #: source/migration/wizard.src#TP_REGISTRATION.FT_REGISTRATION_HEADER.FixedText.Text
-#, fuzzy
 msgid  "%PRODUCTNAME Registration"
 msgstr "%PRODUCTNAME பதிவு"
 
 #: source/migration/wizard.src#TP_REGISTRATION.FT_REGISTRATION_BODY.FixedText.Text
 msgid  "You now have the opportunity to register as a %PRODUCTNAME user. Registration is voluntary and is without obligation.\n\nIf you register, we can inform you about new developments concerning this product."
-msgstr ""
+msgstr "உங்களுக்கு இப்போது %PRODUCTNAME இன் பயனராக பதிவுசெய்து கொள்ள வாய்ப்பு உள்ளது. பதிவுசெய்தல் தன்னார்வ அடிப்படை கொண்டதும் கண்டிப்பில்லதாகும்.\n\nநீங்கள் பதிவுசெய்து கொண்டால், இப்பொருள் தொடர்பான மேம்பாடுகளை நாங்கள் உங்களுக்குத் தெரிவிக்கலாம்."
 
 #: source/migration/wizard.src#TP_REGISTRATION.RB_REGISTRATION_NOW.RadioButton.Text
-#, fuzzy
 msgid  "I want to register ~now"
 msgstr "நான் இப்போது பதிவுசெய்ய விரும்புகிறேன் (~n)"
 
 #: source/migration/wizard.src#TP_REGISTRATION.RB_REGISTRATION_LATER.RadioButton.Text
-#, fuzzy
 msgid  "I want to register ~later"
 msgstr "நான் பின்னர் பதிவுசெய்ய விரும்புகிறேன் (~n)"
 
 #: source/migration/wizard.src#TP_REGISTRATION.RB_REGISTRATION_NEVER.RadioButton.Text
-#, fuzzy
 msgid  "I do not want to ~register"
 msgstr "எனக்குப் பதிவுசெய்ய விருப்பமில்லை (~r)"
 
 #: source/migration/wizard.src#TP_REGISTRATION.FT_REGISTRATION_END.FixedText.Text
 msgid  "We hope you enjoy working with %PRODUCTNAME.\n\nTo exit the wizard, click 'Finish'."
-msgstr ""
+msgstr "%PRODUCTNAME உங்களுக்குப் பயனுள்ளதாக இருக்கும் என எதிர்பார்க்கிறோம்.\n\nவழிகாட்டியிலிருந்து வெளியேற, 'முடிந்தது' சொடுக்கவும்."
 
 #: win32/source/rebase/rebasegui.ulf#%APP_TITLE%
-#, fuzzy
 msgid  "Installation Status"
 msgstr "நிறுவல் நிலை"
 
 #: win32/source/rebase/rebasegui.ulf#%MSG_OPTIMIZED_FOR_CLIENT%
-#, fuzzy
 msgid  "Installation is optimized for clients."
 msgstr "கிளையன்ட்டுக்கு நிறுவல் ஒத்திசைக்கப்படுகிறது."
 
 #: win32/source/rebase/rebasegui.ulf#%MSG_OPTIMIZED_FOR_SERVER%
-#, fuzzy
 msgid  "Installation is optimized for servers."
 msgstr "சேவையகங்களுக்கு நிறுவல் ஒத்திசைக்கப்படுகிறது."
 
 #: win32/source/rebase/rebasegui.ulf#%MSG_NO_INSTALLATION_FOUND%
-#, fuzzy
 msgid  "Cannot find Office installation."
 msgstr "அலுவலக நிறுவலை காண முடியவில்லை."
 
+#: win32/source/setup/setup.ulf#%APP_TITLE%
+msgid  "Setup"
+msgstr "அமைப்பு"
+
 #: win32/source/setup/setup.ulf#%APP_PROD_TITLE%
-#, fuzzy
 msgid  "The %PRODUCTNAME Setup"
 msgstr "%PRODUCTNAME அமைப்பு"
 
 #: win32/source/setup/setup.ulf#%OUTOFMEM%
-#, fuzzy
 msgid  "Out of Memory"
 msgstr "நிறைவகத்திற்கு வெளியே"
 
 #: win32/source/setup/setup.ulf#%NOMSI%
-#, fuzzy
 msgid  "Setup was unable to find the msi package."
 msgstr "msi தொகுப்பை அமைப்பால் கண்டுபிடிக்க முடியவில்லை."
 
 #: win32/source/setup/setup.ulf#%USER_CANCELLED%
-#, fuzzy
 msgid  "Setup was cancelled"
 msgstr "அமைப்பு ரத்து செய்யப்பட்டது"
 
 #: win32/source/setup/setup.ulf#%REQUIRES_ADMIN_PRIV%
 msgid  "Administrator privileges are required for upgrading the Windows Installer."
-msgstr ""
+msgstr "விண்டோஸ் நிறுலரை மேம்படுத்த நிர்வாகி சலுகைகள் தேவை."
 
 #: win32/source/setup/setup.ulf#%FILE_NOT_FOUND%
-#, fuzzy
 msgid  "Setup was unable to find the file '%s'."
 msgstr "அமைப்பால் '%s' கோப்பைக் கண்டுபிடிக்க முடியவில்லை."
 
 #: win32/source/setup/setup.ulf#%INVALID_PARAM%
-#, fuzzy
 msgid  "Invalid command line option '%s'. Please use '/?' for help."
 msgstr "தவறான கட்டளை வரி விருப்பம்'%s'. உதவிக்கு '/?' ஐப் பயன்படுத்தவும்."
 
 #: win32/source/setup/setup.ulf#%SETUP_TO_OLD%
 msgid  "This package requires at least the version '%s' of the Windows Installer. \nYou have Windows Installer '%s' on your system!"
-msgstr ""
+msgstr "இந்த தொகுப்பு குறைந்தது பதிப்பு '%s' விண்டோஸ் நிறுவலர் தேவைப்படுகிறது. \nஉங்கள் கணினியில் விண்டோஸ் நிறுவலர் '%s' ஐ கொண்டிருக்கிறீர்கள்!"
 
 #: win32/source/setup/setup.ulf#%SETUP_NOT_FOUND%
 msgid  "This package requires the Windows Installer. \nYou need at least Windows Installer '%s' on your system!"
-msgstr ""
+msgstr "இந்த தொகுப்புக்கு விண்டோஸ் நிறுவலர்  தேவைப்படுகிறது. \nகுறைந்தது விண்டோஸ் நிறுவலர் '%s' உங்கள் கணினியில் இருக்க வேண்டும்!"
 
 #: win32/source/setup/setup.ulf#%USAGE%
 msgid  "Usage:\n   /? :  Shows this dialog.\n   /a :  Performs an administrative installation.\n   /j[u|m] :  Performs an advertising installation.\n   /q[n] : Do not show any user interface (silent mode).\n"
-msgstr ""
+msgstr "பயன்பாடு:\n   /? :  இவ்வுரையாடல் காட்டும்.\n   /a :  நிர்வாக நிறுவலை செயல்படுத்தும்.\n   /j[u|m] :  விளம்பரபடுத்தும் நிறுவலை செயல்படுத்தும்.\n   /q[n] : எந்த பயனர் இடைமுகத்தையும் காட்ட வேண்டாம் (அமைதி முறைமை).\n"
 
 #: win32/source/setup/setup.ulf#%ALREADY_RUNNING%
-#, fuzzy
 msgid  "There is already a setup process running."
 msgstr "அமைப்பு செய்முறை ஏற்கனவே இநங்கிக் கொண்டிருக்கிறது."
 
 #: win32/source/setup/setup.ulf#%UNKNOWN_ERROR%
-#, fuzzy
 msgid  "An Unknown Error occured!"
 msgstr "தெரியாத ஒரு பிழை ஏற்பட்டது!"
 
 #: win32/source/setup/setup.ulf#%INVALID_PROFILE%
-#, fuzzy
 msgid  "Invalid or incomplete profile."
 msgstr "தவறான அல்லது முழுமைபெறாத விவரக்குறிப்பு."
 
 #: win32/source/setup/setup.ulf#%UNKNOWN_LANG%
-#, fuzzy
 msgid  "Unknown Language: %d"
 msgstr "தெரியாத மொழி: %d"
 
 #: win32/source/setup/setup.ulf#%LANGUAGE_ZH_TW%
-#, fuzzy
 msgid  "Chinese (traditional)"
 msgstr "சீனம் (பாரம்பரியம்)"
 
 #: win32/source/setup/setup.ulf#%LANGUAGE_CS%
-#, fuzzy
 msgid  "Czech"
 msgstr "செக்"
 
 #: win32/source/setup/setup.ulf#%LANGUAGE_DA%
-#, fuzzy
 msgid  "Danish"
 msgstr "டேனிஷ்"
 
 #: win32/source/setup/setup.ulf#%LANGUAGE_DE_DE%
-#, fuzzy
 msgid  "German (Germany)"
 msgstr "ஜெர்மன்(ஜெர்மனி)"
 
 #: win32/source/setup/setup.ulf#%LANGUAGE_EL%
-#, fuzzy
 msgid  "Greek"
 msgstr "கிரேக்கம்"
 
 #: win32/source/setup/setup.ulf#%LANGUAGE_EN_US%
-#, fuzzy
 msgid  "English (USA)"
 msgstr "ஆங்கிலம் (அமெரிக்கா)"
 
 #: win32/source/setup/setup.ulf#%LANGUAGE_ES%
-#, fuzzy
 msgid  "Spanish (Spain)"
 msgstr "ஸ்பானிஷ் (ஸ்பெயின்)"
 
 #: win32/source/setup/setup.ulf#%LANGUAGE_FI%
-#, fuzzy
 msgid  "Finnish"
 msgstr "ஃபினிஷ்"
 
 #: win32/source/setup/setup.ulf#%LANGUAGE_FR_FR%
-#, fuzzy
 msgid  "French (France)"
 msgstr "பிரென்சு (ஃபிரான்சு)"
 
 #: win32/source/setup/setup.ulf#%LANGUAGE_HE%
-#, fuzzy
 msgid  "Hebrew"
 msgstr "ஹிப்ரூ"
 
 #: win32/source/setup/setup.ulf#%LANGUAGE_HU%
-#, fuzzy
 msgid  "Hungarian"
 msgstr "ஹங்கேரியா"
 
 #: win32/source/setup/setup.ulf#%LANGUAGE_IT_IT%
-#, fuzzy
 msgid  "Italian (Italy)"
 msgstr "இத்தாலியன் (இத்தாலி)"
 
 #: win32/source/setup/setup.ulf#%LANGUAGE_JA%
-#, fuzzy
 msgid  "Japanese"
 msgstr "ஜப்பானிஸ்"
 
 #: win32/source/setup/setup.ulf#%LANGUAGE_KO%
-#, fuzzy
 msgid  "Korean"
 msgstr "கொரியன்"
 
 #: win32/source/setup/setup.ulf#%LANGUAGE_NL_NL%
-#, fuzzy
 msgid  "Dutch (Netherlands)"
 msgstr "டச்சு (நெதர்லாந்து)"
 
 #: win32/source/setup/setup.ulf#%LANGUAGE_NO_NO%
-#, fuzzy
 msgid  "Norwegian (Bokmål)"
 msgstr "நார்விஜியன் (பொக்மல்)"
 
 #: win32/source/setup/setup.ulf#%LANGUAGE_PL%
-#, fuzzy
 msgid  "Polish"
 msgstr "பாலிஷ்"
 
 #: win32/source/setup/setup.ulf#%LANGUAGE_PT_BR%
-#, fuzzy
 msgid  "Portuguese (Brazil)"
 msgstr "போர்த்துகீசியஸ் (பிரேசில்)"
 
 #: win32/source/setup/setup.ulf#%LANGUAGE_RU%
-#, fuzzy
 msgid  "Russian"
 msgstr "ரஷ்யன்"
 
@@ -1176,36 +1091,25 @@ msgid  "Slovak"
 msgstr ""
 
 #: win32/source/setup/setup.ulf#%LANGUAGE_SV_SE%
-#, fuzzy
 msgid  "Swedish (Sweden)"
 msgstr "சுவிடிஷ் (சுவீடன்)"
 
 #: win32/source/setup/setup.ulf#%LANGUAGE_TH%
-#, fuzzy
 msgid  "Thai"
 msgstr "தாய்"
 
 #: win32/source/setup/setup.ulf#%LANGUAGE_TR%
-#, fuzzy
 msgid  "Turkish"
 msgstr "துருக்கிஷ்"
 
 #: win32/source/setup/setup.ulf#%LANGUAGE_ET%
-#, fuzzy
 msgid  "Estonian"
 msgstr "எஸ்தோனியன்"
 
 #: win32/source/setup/setup.ulf#%LANGUAGE_ZH_CN%
-#, fuzzy
 msgid  "Chinese (Simplified)"
 msgstr "சீனம் (எளிமையான)"
 
 #: win32/source/setup/setup.ulf#%LANGUAGE_PT_PT%
-#, fuzzy
 msgid  "Portuguese (Portugal)"
 msgstr "போர்த்துகீசிஸ் (போர்துகல்)"
-
-#: win32/source/setup/setup.ulf#%APP_TITLE%
-#, fuzzy
-msgid  "Setup"
-msgstr "அமைப்பு"

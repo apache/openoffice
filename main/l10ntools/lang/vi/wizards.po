@@ -49,7 +49,7 @@ msgstr "~Chuyển đổi"
 
 #: source/euro/euro.src#STEP_ZERO + 4.String.Text
 msgid  "Note: Currency amounts from external links and currency conversion factors in formulas cannot be converted."
-msgstr ""
+msgstr "Chú ý: không thể chuyển đổi số tiền từ liên kết bên ngoài, hay hệ số chuyển đổi tiền tệ trong công thức."
 
 #: source/euro/euro.src#STEP_ZERO + 5.String.Text
 msgid  "First, unprotect all sheets."
@@ -153,7 +153,7 @@ msgstr "Trạng thái chuyển đổi của những mẫu ô :"
 
 #: source/euro/euro.src#STATUSLINE + 2.String.Text
 msgid  "Registration of the relevant ranges: Sheet %1Number%1 of %2TotPageCount%2"
-msgstr ""
+msgstr "Đăng ký của những phạm vi liên quan: Bảng %1Number%1 trên %2TotPageCount%2"
 
 #: source/euro/euro.src#STATUSLINE + 3.String.Text
 msgid  "Entry of the ranges to be converted..."
@@ -221,11 +221,11 @@ msgstr "Bảng không thể không được bảo vệ"
 
 #: source/euro/euro.src#MESSAGES + 13.String.Text
 msgid  "The Wizard cannot edit this document as cell formats cannot be modified in documents containing protected spreadsheets."
-msgstr ""
+msgstr "Trợ lý không thể chỉnh sửa tài liệu này vì định dạng ô không thể được sửa đổi trong tài liệu chứa bảng tính bảo vệ."
 
 #: source/euro/euro.src#MESSAGES + 14.String.Text
 msgid  "Please note that the Euro Converter will, otherwise, not be able to edit this document!"
-msgstr ""
+msgstr "Tuy nhiên, lưu ý rằng bộ chuyển đổi đồng Euro không thể sửa được tài liệu này!"
 
 #: source/euro/euro.src#MESSAGES + 15.String.Text
 msgid  "Please choose a currency to be converted first!"
@@ -337,7 +337,7 @@ msgstr "Tiền tệ được đặt cho tài liệu này không phải tiền t�
 
 #: source/euro/euro.src#CURRENCIES + 17.String.Text
 msgid  "The language set for your operating system is not a language of the European Monetary Union."
-msgstr ""
+msgstr "Ngôn ngữ được đặt cho hệ điều hành này không phải là ngôn ngữ của quốc gia trong Liên Bang Tiền Tài Châu Âu."
 
 #: source/euro/euro.src#STEP_LASTPAGE.String.Text
 msgid  "Progress"
@@ -361,35 +361,35 @@ msgstr "Bảng luôn luôn không được bảo vệ"
 
 #: source/formwizard/dbwizres.src#RID_COMMON_START + 0.String.Text
 msgid  "The directory '%1' could not be created.<BR>There may not be enough space left on your hard disk."
-msgstr ""
+msgstr "Không thể tạo thư mục « %1 ».<BR>Có thể không còn đủ chỗ trống trên dĩa cứng của bạn."
 
 #: source/formwizard/dbwizres.src#RID_COMMON_START + 1.String.Text
 msgid  "The text document could not be created.<BR>Please check if the module 'PRODUCTNAME Writer' is installed."
-msgstr ""
+msgstr "Tài liệu văn bản không thể được tạo.<BR>Hãy kiểm tra xem mô-đun « PRODUCTNAME Writer » đã được cài đặt chưa."
 
 #: source/formwizard/dbwizres.src#RID_COMMON_START + 2.String.Text
 msgid  "The spreadsheet could not be created.<BR>Please check if the module 'PRODUCTNAME Calc' is installed."
-msgstr ""
+msgstr "Bảng tính không thể được tạo.<BR>Hãy kiểm tra xem mô-đun « PRODUCTNAME Calc » đã được cài đặt chưa."
 
 #: source/formwizard/dbwizres.src#RID_COMMON_START + 3.String.Text
 msgid  "The presentation could not be created.<BR>Please check if the module 'PRODUCTNAME Impress' is installed."
-msgstr ""
+msgstr "Trình diễn không thể được tạo.<BR>Hãy kiểm tra xem mô-đun « PRODUCTNAME Impress » đã được cài đặt chưa."
 
 #: source/formwizard/dbwizres.src#RID_COMMON_START + 4.String.Text
 msgid  "The drawing could not be created.<BR>Please check if the module 'PRODUCTNAME Draw' is installed."
-msgstr ""
+msgstr "Bản vẽ không thể được tạo.<BR>Hãy kiểm tra xem mô-đun « PRODUCTNAME Draw » đã được cài đặt chưa."
 
 #: source/formwizard/dbwizres.src#RID_COMMON_START + 5.String.Text
 msgid  "The formula could not be created.<BR>Please check if the module 'PRODUCTNAME Math' is installed."
-msgstr ""
+msgstr "Công thức không thể được tạo.<BR>Hãy kiểm tra xem mô-đun « PRODUCTNAME Math » đã được cài đặt chưa."
 
 #: source/formwizard/dbwizres.src#RID_COMMON_START + 6.String.Text
 msgid  "The files required could not be found.<BR>Please start the %PRODUCTNAME Setup and choose 'Repair'."
-msgstr ""
+msgstr "Không thể tìm thấy các tập tin cần thiết.<BR>Hãy chạy trình thiết lập %PRODUCTNAME rồi chọn 'Sửa chữa'."
 
 #: source/formwizard/dbwizres.src#RID_COMMON_START + 7.String.Text
 msgid  "The file '<PATH>' already exists.<BR><BR>Would you like to overwrite the existing file?"
-msgstr ""
+msgstr "Tập tin '<PATH>' đã tồn tại.<BR><BR>Có ghi đè không?"
 
 #: source/formwizard/dbwizres.src#RID_COMMON_START + 8.String.Text
 msgid  "Yes"
@@ -445,7 +445,7 @@ msgstr "Mẫu được tạo bằng <wizard_name> vào <current_date>."
 
 #: source/formwizard/dbwizres.src#RID_COMMON_START + 21.String.Text
 msgid  "The wizard could not be run, because important files were not found.\nUnder 'Tools - Options - %PRODUCTNAME - Paths' click the 'Default' button to reset the paths to the original default settings.\nThen run the wizard again."
-msgstr ""
+msgstr "Không thể chạy trợ lý vì không tìm thấy một số tập tin quan trọng.\nTrong 'Công cụ - Tùy chọn - %PRODUCTNAME - Đường dẫn', hãy nhắp vào nút 'Mặc định' để đặt lại các đường dẫn về thiết lập mặc định gốc.\nSau đó, hãy chạy lại trợ lý."
 
 #: source/formwizard/dbwizres.src#RID_DB_COMMON_START + 0.String.Text
 msgid  "C~reate"
@@ -473,7 +473,7 @@ msgstr "~Tên bảng"
 
 #: source/formwizard/dbwizres.src#RID_DB_COMMON_START + 6.String.Text
 msgid  "An error occurred while running the wizard. The wizard will be terminated."
-msgstr ""
+msgstr "Gặp lỗi khi chạy trợ lý. Trợ lý sẽ kết thúc."
 
 #: source/formwizard/dbwizres.src#RID_DB_COMMON_START + 14.String.Text
 msgid  "No connection to the database could be established."
@@ -553,11 +553,11 @@ msgstr "~Trường trong biểu mẫu"
 
 #: source/formwizard/dbwizres.src#RID_DB_FORM_WIZARD_START + 2.String.Text
 msgid  "Binary fields are always listed and selectable from the left list.\nIf possible, they are interpreted as images."
-msgstr ""
+msgstr "Các trường kiểu nhị phân luôn luôn được liệt kê và có thể được chọn trong danh sách bên trái.\nNếu có thể, chúng được thể hiện như là ảnh."
 
 #: source/formwizard/dbwizres.src#RID_DB_FORM_WIZARD_START + 3.String.Text
 msgid  "A subform is a form that is inserted in another form.\nUse subforms to show data from tables or queries with a one-to-many relationship."
-msgstr ""
+msgstr "Biểu mẫu phụ là một biểu mẫu được chèn vào biểu mẫu khác.\nHãy dùng biểu mẫu phụ để hiển thị dữ liệu từ bảng hay truy vấn có quan hệ một-với-nhiều."
 
 #: source/formwizard/dbwizres.src#RID_DB_FORM_WIZARD_START + 4.String.Text
 msgid  "~Add Subform"
@@ -593,7 +593,7 @@ msgstr "Trường trong biểu mẫu"
 
 #: source/formwizard/dbwizres.src#RID_DB_FORM_WIZARD_START + 19.String.Text
 msgid  "The join '<FIELDNAME1>' and '<FIELDNAME2>' has been selected twice.\nBut joins may only be used once."
-msgstr ""
+msgstr "Bộ nối '<FIELDNAME1>' với '<FIELDNAME2>' đã được chọn hai lần.\nCác bộ nối chỉ có khả năng chọn một lần."
 
 #: source/formwizard/dbwizres.src#RID_DB_FORM_WIZARD_START + 20.String.Text
 msgid  "~First joined subform field"
@@ -805,7 +805,7 @@ msgstr "Đặt tên biểu mẫu"
 
 #: source/formwizard/dbwizres.src#RID_DB_FORM_WIZARD_START + 98.String.Text
 msgid  "A form with the name '%FORMNAME' already exists.\nChoose another name."
-msgstr ""
+msgstr "Một biểu mẫu tên '%FORMNAME' đã có.\nHãy chọn tên khác."
 
 #: source/formwizard/dbwizres.src#RID_DB_QUERY_WIZARD_START + 0.String.Text
 msgid  "Query Wizard"
@@ -1097,15 +1097,15 @@ msgstr "Tóm tắt"
 
 #: source/formwizard/dbwizres.src#RID_DB_QUERY_WIZARD_START + 88.String.Text
 msgid  "A field that has not been assigned an aggregate function must be used in a group."
-msgstr ""
+msgstr "Trường chưa được gán hàm tập hợp phải được dùng trong một nhóm."
 
 #: source/formwizard/dbwizres.src#RID_DB_QUERY_WIZARD_START + 89.String.Text
 msgid  "The condition '<FIELDNAME> <LOGICOPERATOR> <VALUE>' was chosen twice. Each condition can only be chosen once"
-msgstr ""
+msgstr "Điều kiện '<FIELDNAME> <LOGICOPERATOR> <VALUE>' được chọn hai lần. Mỗi điều kiện chỉ có thể được chọn một lần"
 
 #: source/formwizard/dbwizres.src#RID_DB_QUERY_WIZARD_START + 90.String.Text
 msgid  "The aggregate function <FUNCTION> has been assigned twice to the fieldname '<NUMERICFIELD>'."
-msgstr ""
+msgstr "Hàm tập hợp <FUNCTION> đã được gán hai lần cho trường '<NUMERICFIELD>'."
 
 #: source/formwizard/dbwizres.src#RID_DB_QUERY_WIZARD_START + 91.String.Text
 msgid  ", "
@@ -1321,11 +1321,11 @@ msgstr "Biểu mẫu « <REPORTFORM> » không tồn tại."
 
 #: source/formwizard/dbwizres.src#RID_DB_REPORT_WIZARD_START + 65.String.Text
 msgid  "The query with the statement <BR>'<STATEMENT>' <BR> could not be run. <BR> Check your data source."
-msgstr ""
+msgstr "Truy vấn với lệnh <BR>' <STATEMENT>'<BR> không thể chạy. <BR> Hãy kiểm tra lại nguồn dữ liệu."
 
 #: source/formwizard/dbwizres.src#RID_DB_REPORT_WIZARD_START + 66.String.Text
 msgid  "The following hidden control in the form '<REPORTFORM>' could not be read: '<CONTROLNAME>'."
-msgstr ""
+msgstr "Điều khiển ẩn sau ở trong biểu mẫu « <REPORTFORM> » không đọc được: « <CONTROLNAME> »."
 
 #: source/formwizard/dbwizres.src#RID_DB_REPORT_WIZARD_START + 67.String.Text
 msgid  "Importing data..."
@@ -1349,7 +1349,7 @@ msgstr "Trường"
 
 #: source/formwizard/dbwizres.src#RID_DB_REPORT_WIZARD_START + 72.String.Text
 msgid  "An error occurred in the wizard.<BR>The template '%PATH' could be erroneous.<BR>Either the required sections or tables do not exist or exist under the wrong name.<BR>See the Help for more detailed information.<BR>Please select another template."
-msgstr ""
+msgstr "Gặp lỗi trong trợ lý.<BR>Mẫu « %PATH » có thể bị lỗi.<BR>Có thể các phần cần thiết hoặc các bảng không tồn tại hoặc có tên sai.<BR>Xem trợ giúp để biết thêm chi tiết.<BR>Hãy chọn mẫu khác."
 
 #: source/formwizard/dbwizres.src#RID_DB_REPORT_WIZARD_START + 73.String.Text
 msgid  "There is an invalid user field in a table."
@@ -1357,15 +1357,15 @@ msgstr "Có một trường người dùng sai trong bảng."
 
 #: source/formwizard/dbwizres.src#RID_DB_REPORT_WIZARD_START + 74.String.Text
 msgid  "The sort criterium '<FIELDNAME>' was chosen twice. Each criterium can only be chosen once."
-msgstr ""
+msgstr "Tiêu chuẩn sắp xếp « <FIELDNAME> » được chọn hai lần. Mỗi tiêu chí có thể được chọn chỉ một lần."
 
 #: source/formwizard/dbwizres.src#RID_DB_REPORT_WIZARD_START + 75.String.Text
 msgid  "Note: The dummy text will be replaced by data from the database when the report is created."
-msgstr ""
+msgstr "Chú ý: tạo báo cáo thì văn bản giả được thay thế bởi dữ liệu từ cơ sở dữ liệu."
 
 #: source/formwizard/dbwizres.src#RID_DB_REPORT_WIZARD_START + 76.String.Text
 msgid  "A report '%REPORTNAME' already exists in the database. Please assign another name."
-msgstr ""
+msgstr "Báo cáo « %REPORTNAME » đã tồn tại trong cơ sở dữ liệu. Hãy gán tên khác."
 
 #: source/formwizard/dbwizres.src#RID_DB_REPORT_WIZARD_START + 78.String.Text
 msgid  "How do you want to proceed after creating the report?"
@@ -1465,7 +1465,7 @@ msgstr "Tạo bảng"
 
 #: source/formwizard/dbwizres.src#RID_DB_TABLE_WIZARD_START + 14.String.Text
 msgid  "This wizard helps you to create a table for your database. After selecting a table category and a sample table, choose the fields you want to include in your table. You can include fields from more than one sample table."
-msgstr ""
+msgstr "Trợ lý này giúp đỡ bạn tạo bảng cho cơ sở dữ liệu. Sau khi chọn một phân loại bảng và một bảng mẫu, hãy chọn các trường bạn muốn có trong bảng. Bạn có khả năng thêm các trường từ nhiều bảng mẫu."
 
 #: source/formwizard/dbwizres.src#RID_DB_TABLE_WIZARD_START + 15.String.Text
 msgid  "Ca~tegory"
@@ -1509,7 +1509,7 @@ msgstr "T~rường đã chọn"
 
 #: source/formwizard/dbwizres.src#RID_DB_TABLE_WIZARD_START + 26.String.Text
 msgid  "A primary key uniquely identifies each record in a database table. Primary keys ease the linking of information in separate tables, and it is recommended that you have a primary key in every table. Without a primary key, it will not be possible to enter data into this table."
-msgstr ""
+msgstr "Một khoá chính xác định chính xác mỗi bản ghi trong bảng cơ sở dữ liệu. Khoá chính giúp cho việc liên kết thông tin ở các bảng rời rạc, và bạn nên có một khoá chính trong mỗi bảng. Khi không có khoá chính, không thể nhập dữ liệu vào bảng này."
 
 #: source/formwizard/dbwizres.src#RID_DB_TABLE_WIZARD_START + 27.String.Text
 msgid  "~Create a primary key"
@@ -1545,7 +1545,7 @@ msgstr "Bạn muốn đặt tên bảng ra sao?"
 
 #: source/formwizard/dbwizres.src#RID_DB_TABLE_WIZARD_START + 35.String.Text
 msgid  "Congratulations. You have entered all the information needed to create your table."
-msgstr ""
+msgstr "Chúc mừng. Bạn đã nhập tất cả thông tin cần thiết để tạo bảng."
 
 #: source/formwizard/dbwizres.src#RID_DB_TABLE_WIZARD_START + 36.String.Text
 msgid  "What do you want to do next?"
@@ -1569,11 +1569,11 @@ msgstr "Không thể mở bảng bạn đã tạo."
 
 #: source/formwizard/dbwizres.src#RID_DB_TABLE_WIZARD_START + 41.String.Text
 msgid  "The table name '%TABLENAME' contains a character ('%SPECIALCHAR') that might not be supported by the database."
-msgstr ""
+msgstr "Bảng « %TABLENAME » chứa ký tự đặc biệt ('%SPECIALCHAR') có thể không được hỗ trợ bởi cơ sở dữ liệu."
 
 #: source/formwizard/dbwizres.src#RID_DB_TABLE_WIZARD_START + 42.String.Text
 msgid  "The field name '%FIELDNAME' contains a special character ('%SPECIALCHAR') that might not be supported by the database."
-msgstr ""
+msgstr "Trường « %FIELDNAME » chứa ký tự đặc biệt ('%SPECIALCHAR') có thể không được hỗ trợ bởi cơ sở dữ liệu."
 
 #: source/formwizard/dbwizres.src#RID_DB_TABLE_WIZARD_START + 43.String.Text
 msgid  "Field"
@@ -1593,11 +1593,11 @@ msgstr "Bỏ trường đã chọn"
 
 #: source/formwizard/dbwizres.src#RID_DB_TABLE_WIZARD_START + 47.String.Text
 msgid  "The field cannot be inserted because this would exceed the maximum number of %COUNT possible fields in the database table"
-msgstr ""
+msgstr "Không thể chèn trường vì điều này vượt quá số %COUNT trường tối đa có thể trong bảng cơ sở dữ liệu"
 
 #: source/formwizard/dbwizres.src#RID_DB_TABLE_WIZARD_START + 48.String.Text
 msgid  "The name '%TABLENAME' already exists.\nPlease enter another name."
-msgstr ""
+msgstr "Tên '%TABLENAME' đã có.\nHãy nhập tên khác."
 
 #: source/formwizard/dbwizres.src#RID_DB_TABLE_WIZARD_START + 49.String.Text
 msgid  "Catalog of the table"
@@ -1733,7 +1733,7 @@ msgstr "Thiết kế trang"
 
 #: source/formwizard/dbwizres.src#RID_LETTERWIZARDDIALOG_START + 31.String.Text
 msgid  "This wizard helps you to create a letter template. You can then use the template as the basis for writing letters as often as desired."
-msgstr ""
+msgstr "Trợ lý này giúp đỡ bạn tạo mẫu thư. Sau đó bạn có thể dùng mẫu để làm nền cho việc viết thư sau này."
 
 #: source/formwizard/dbwizres.src#RID_LETTERWIZARDDIALOG_START + 32.String.Text
 msgid  "~Height:"
@@ -1801,11 +1801,11 @@ msgstr "Chân trang"
 
 #: source/formwizard/dbwizres.src#RID_LETTERWIZARDDIALOG_START + 48.String.Text
 msgid  "This wizard creates a letter template which enables you to create multiple letters with the same layout and settings."
-msgstr ""
+msgstr "Trợ lý này tạo mẫu thư để cho bạn có khả năng tạo các bức thư có cùng kiểu dáng và thiết lập."
 
 #: source/formwizard/dbwizres.src#RID_LETTERWIZARDDIALOG_START + 49.String.Text
 msgid  "To create another new letter out of the template just navigate to the template location and double-click it."
-msgstr ""
+msgstr "Để tạo một bức thư mới từ mẫu, đơn giản hãy duyệt tới vị trí mẫu đó và nhắp đôi vào nó."
 
 #: source/formwizard/dbwizres.src#RID_LETTERWIZARDDIALOG_START + 50.String.Text
 msgid  "Template name:"
@@ -1957,7 +1957,7 @@ msgstr "Thiết kế trang"
 
 #: source/formwizard/dbwizres.src#RID_FAXWIZARDDIALOG_START + 17.String.Text
 msgid  "This wizard helps you to create a fax template. The template can then be used to create a fax whenever needed."
-msgstr ""
+msgstr "Trợ lý này giúp đỡ bạn tạo mẫu điện thư. Sao đó bạn có thể tạo điện thư từ mẫu khi cần."
 
 #: source/formwizard/dbwizres.src#RID_FAXWIZARDDIALOG_START + 18.String.Text
 msgid  "Return address"
@@ -1981,11 +1981,11 @@ msgstr "Chân trang"
 
 #: source/formwizard/dbwizres.src#RID_FAXWIZARDDIALOG_START + 23.String.Text
 msgid  "This wizard creates a fax template which enables you to create multiple faxes with the same layout and settings."
-msgstr ""
+msgstr "Trợ lý này tạo mẫu điện thư để giúp đỡ bạn soạn các điện thư có cùng kiểu dáng và thiết lập."
 
 #: source/formwizard/dbwizres.src#RID_FAXWIZARDDIALOG_START + 24.String.Text
 msgid  "To create another new fax out of the template, go to the location where you saved the template and double-click the file."
-msgstr ""
+msgstr "Để tạo một điện thư mới từ một mẫu, di chuyển tới mẫu đã lưu và nhắp đôi vào tập tin đó."
 
 #: source/formwizard/dbwizres.src#RID_FAXWIZARDDIALOG_START + 25.String.Text
 msgid  "Template Name:"
@@ -2121,7 +2121,7 @@ msgstr "Trợ lý Web"
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +2.String.Text
 msgid  "This Web Wizard is to aid you in publishing documents on the Internet.\n\nIt will convert the documents so that they can be viewed by a web browser. In addition, it will generate a Table of Contents page with links for easy access to the documents. The Web Wizard will also allow you to customize the design and layout of your web site.\n\nYou will be able to keep the documents you have published on the web up-to-date and add or remove documents at any time."
-msgstr ""
+msgstr "Trợ lý Web này giúp bạn xuất bản tài liệu lên Internet.\n\nNó sẽ chuyển đổi các tài liệu để hiển thị trong trình duyệt Web. Hơn nữa, nó sẽ tạo ra Mục lục có liên kết để truy cập dễ dàng các tài liệu đó. Trợ lý Web cũng sẽ cho bạn khả năng tùy biến thiết kế và bố trí của riêng của website.\n\nBạn sẽ có khả năng cập nhật các tập tin bạn đã xuất bản lên Internet, thêm hoặc gỡ bỏ tài liệu vào bất cứ lúc nào."
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +4.String.Text
 msgid  "~Delete"
@@ -2305,7 +2305,7 @@ msgstr "Tùy biến bố trí được chọn"
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +61.String.Text
 msgid  "Include the following information for each document in the table of contents:"
-msgstr ""
+msgstr "Thêm các thông tin sau vào mỗi tài liệu ở mục lục:"
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +62.String.Text
 msgid  "Optimize the layout for screen resolution:"
@@ -2345,19 +2345,19 @@ msgstr "Đích cục bộ « %FILENAME » là một tập tin."
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +75.String.Text
 msgid  "The ZIP target '%FILENAME' already exists. Do you want to overwrite the existing target? "
-msgstr ""
+msgstr "Đích ZIP '%FILENAME' đã tồn tại. Ghi đè tập tin đích? "
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +76.String.Text
 msgid  "The FTP target directory '%FILENAME' is not empty. Some files might be overwritten. Do you want to continue?"
-msgstr ""
+msgstr "Thư mục đích FTP « %FILENAME » không rỗng. Một vài tập tin có thể bị ghi đè. Bạn có muốn tiếp tục không?"
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +77.String.Text
 msgid  "The local target directory '%FILENAME' is not empty. Some files might be overwritten. Do you want to continue?"
-msgstr ""
+msgstr "Thư mục cục bộ « %FILENAME » không rỗng. Một vài tập tin có thể bị ghi đè. Bạn có muốn tiếp tục không?"
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +78.String.Text
 msgid  "Settings already exist under the given name. Do you want to overwrite the existing settings? "
-msgstr ""
+msgstr "Thiết lập đã tồn tại với cùng tên. Ghi đè thiết lập hiện tại?"
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +79.String.Text
 msgid  "Exporting documents..."
@@ -2457,7 +2457,7 @@ msgstr "Gặp lỗi khi sao chép các tập tin bố trí. "
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +108.String.Text
 msgid  "An error occurred while gathering document information for '%FILENAME'. "
-msgstr ""
+msgstr "Gặp lỗi khi thu góp thông tin tài liệu cho « %FILENAME ». "
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +109.String.Text
 msgid  "An error occurred while exporting the document '%FILENAME'."
@@ -2473,7 +2473,7 @@ msgstr "Gặp lỗi bảo mật khi xuất tài liệu '%FILENAME'."
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +112.String.Text
 msgid  "An input/output error occurred while exporting the document '%FILENAME'."
-msgstr ""
+msgstr "Gặp lỗi nhập/xuất khi xuất tài liệu \"%FILENAME\"."
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +113.String.Text
 msgid  "An error occurred while copying media files to the temporary directory."
@@ -2541,7 +2541,7 @@ msgstr "Xem thử"
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +130.String.Text
 msgid  "The selected settings will be deleted.\n\nDo you really want to delete these settings? "
-msgstr ""
+msgstr "Thiết lập đã chọn sẽ bị xóa.\n\nBạn có muốn xóa thiết lập này không? "
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +131.String.Text
 msgid  "%NUMBER pages"
@@ -2609,19 +2609,19 @@ msgstr "Không thể tạo thư mục FTP « %FILENAME »."
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +147.String.Text
 msgid  "The FTP directory '%FILENAME' does not exist. \nCreate the directory now?"
-msgstr ""
+msgstr "Thư mục FTP « %FILENAME » không tồn tại.\nTao thư mục này ngay bây giờ không?"
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +148.String.Text
 msgid  "The Zip file '%FILENAME' cannot be created: a directory of the same name already exists."
-msgstr ""
+msgstr "Không thể tạo tập tin ZIP '%FILENAME' vì một thư mục cùng tên đã tồn tại."
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +149.String.Text
 msgid  "The local directory '%FILENAME' cannot be created. \nPlease check your write-access."
-msgstr ""
+msgstr "Không thể tạo thư mục cục bộ « %FILENAME ».\nHãy kiểm tra lại quyền ghi của bạn."
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +150.String.Text
 msgid  "The local directory '%FILENAME' does not exist. \nCreate the directory now?"
-msgstr ""
+msgstr "Thư mục cục bộ « %FILENAME » không tồn tại.\nTạo thư mục này ngay bây giờ không?"
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +151.String.Text
 msgid  "Size: %NUMBERKB"
@@ -2629,7 +2629,7 @@ msgstr "Kích cỡ: %NUMBERKB"
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_START +152.String.Text
 msgid  "File not found. Would you like to specify a new file location?"
-msgstr ""
+msgstr "Không tìm thấy tập tin. Bạn có muốn xác định một vị trí tập tin mới không?"
 
 #: source/formwizard/dbwizres.src#RID_WEBWIZARDDIALOG_FTP +0.String.Text
 msgid  "FTP Connection"
@@ -2757,7 +2757,7 @@ msgstr "Thêm biểu mẫu để lưu biên bản"
 
 #: source/formwizard/dbwizres.src#RID_AGENDAWIZARDDIALOG_START +13.String.Text
 msgid  "This wizard helps you to create an agenda template. The template can then be used to create an agenda whenever needed."
-msgstr ""
+msgstr "Trợ lý này giúp bạn tạo mẫu nghị sự. Mẫu đó có thể được dùng sau này để tạo bản nghị sự khi cần."
 
 #: source/formwizard/dbwizres.src#RID_AGENDAWIZARDDIALOG_START +14.String.Text
 msgid  "Time:"
@@ -2773,7 +2773,7 @@ msgstr "Địa điểm:"
 
 #: source/formwizard/dbwizres.src#RID_AGENDAWIZARDDIALOG_START +17.String.Text
 msgid  "Placeholders will be used in empty fields. You can replace placeholders with text later."
-msgstr ""
+msgstr "Bộ giữ chỗ sẽ được dùng cho các trường trống. Bạn có thể thay thế các bộ giữ chỗ bằng văn bản sau này."
 
 #: source/formwizard/dbwizres.src#RID_AGENDAWIZARDDIALOG_START +18.String.Text
 msgid  "..."
@@ -2785,7 +2785,7 @@ msgstr "Tạo bản nghị ~sự từ mẫu này"
 
 #: source/formwizard/dbwizres.src#RID_AGENDAWIZARDDIALOG_START +20.String.Text
 msgid  "To create a new agenda out of the template, go to the location where you saved the template and double-click the file."
-msgstr ""
+msgstr "Để tạo bản nghị sự từ mẫu, di chuyển tới mẫu đã được lưu và nhắp đôi vào tập tin đó."
 
 #: source/formwizard/dbwizres.src#RID_AGENDAWIZARDDIALOG_START +21.String.Text
 msgid  "Agenda item"
@@ -2829,7 +2829,7 @@ msgstr "Biên chế ở tổ chức"
 
 #: source/formwizard/dbwizres.src#RID_AGENDAWIZARDDIALOG_START +31.String.Text
 msgid  "The agenda template will include placeholders for the names of the selected people. When creating an agenda from the template, you can replace these placeholder with the appropriate names."
-msgstr ""
+msgstr "Mẫu nghị sự sẽ thêm các bộ giữ chỗ cho tên của những người được chọn. Khi tạo nghị sự từ mẫu này, bạn có thể thay thế những bộ giữ chỗ đó bằng các tên thật."
 
 #: source/formwizard/dbwizres.src#RID_AGENDAWIZARDDIALOG_START +32.String.Text
 msgid  "Type of meeting"
@@ -2857,7 +2857,7 @@ msgstr "Ngày:"
 
 #: source/formwizard/dbwizres.src#RID_AGENDAWIZARDDIALOG_START +39.String.Text
 msgid  "This wizard creates an agenda template which enables you to create multiple agendas with the same layout and settings."
-msgstr ""
+msgstr "Trợ lý này tạo một mẫu nghị sự để giúp bạn tạo nhiều bản nghị sự với cùng thiết kế trang và các thiết lập."
 
 #: source/formwizard/dbwizres.src#RID_AGENDAWIZARDDIALOG_START +40.String.Text
 msgid  "Page design:"
@@ -3009,11 +3009,11 @@ msgstr "Đón~g"
 
 #: source/importwizard/importwi.src#sWelcometextLabel1.String.Text
 msgid  "This wizard converts documents in %PRODUCTNAME format and Microsoft Office documents to the new OpenDocument format."
-msgstr ""
+msgstr "Trợ lý này chuyển đổi tài liệu ở định dạng %PRODUCTNAME và Microsoft Office sang định dạng tài liệu mở OpenDocument mới."
 
 #: source/importwizard/importwi.src#sWelcometextLabel2.String.Text
 msgid  "Please note that when converting Microsoft documents any attached VBA macros lose their functionality."
-msgstr ""
+msgstr "Lưu ý rằng khi chuyển đổi các tài liệu Microsoft, vĩ lệnh VBA đính kèm sẽ không còn hoạt động lại."
 
 #: source/importwizard/importwi.src#sWelcometextLabel3.String.Text
 msgid  "Select the document type for conversion:"
@@ -3241,59 +3241,59 @@ msgstr "Các tài liệu này sẽ được xuất khẩu vào thư mục sau :"
 
 #: source/importwizard/importwi.src#sSumSOTextDocuments.String.Text
 msgid  "All %PRODUCTNAME text documents contained in the following directory will be imported:"
-msgstr ""
+msgstr "Mọi tài liệu dạng văn bản %PRODUCTNAME nằm trong thư mục sau sẽ được nhập khẩu :"
 
 #: source/importwizard/importwi.src#sSumSOTableDocuments.String.Text
 msgid  "All %PRODUCTNAME spreadsheets contained in the following directory will be imported:"
-msgstr ""
+msgstr "Mọi bảng tính %PRODUCTNAME nằm trong thư mục sau sẽ được nhập:"
 
 #: source/importwizard/importwi.src#sSumSODrawDocuments.String.Text
 msgid  "All %PRODUCTNAME drawing and presentation documents contained in the following directory will be imported:"
-msgstr ""
+msgstr "Mọi tài liệu bản vẽ và trình diễn %PRODUCTNAME nằm trong thư mục sau sẽ được nhập:"
 
 #: source/importwizard/importwi.src#sSumSOMathDocuments.String.Text
 msgid  "All %PRODUCTNAME formula documents contained in the following directory will be imported:"
-msgstr ""
+msgstr "Mọi tài liệu công thức %PRODUCTNAME nằm trong thư mục sau sẽ được nhập:"
 
 #: source/importwizard/importwi.src#sSumSOTextTemplates.String.Text
 msgid  "All %PRODUCTNAME text templates contained in the following directory will be imported:"
-msgstr ""
+msgstr "Mọi mẫu văn bản %PRODUCTNAME nằm trong thư mục sau sẽ được nhập:"
 
 #: source/importwizard/importwi.src#sSumSOTableTemplates.String.Text
 msgid  "All %PRODUCTNAME table templates contained in the following directory will be imported:"
-msgstr ""
+msgstr "Mọi mẫu bảng %PRODUCTNAME nằm trong thư mục sau sẽ được nhập:"
 
 #: source/importwizard/importwi.src#sSumSODrawTemplates.String.Text
 msgid  "All %PRODUCTNAME drawing and presentation templates contained in the following directory will be imported:"
-msgstr ""
+msgstr "Mọi mẫu vẽ và trình diễn %PRODUCTNAME nằm trong thư mục sau sẽ được nhập:"
 
 #: source/importwizard/importwi.src#sSumSOGlobalDocuments.String.Text
 msgid  "All %PRODUCTNAME master documents contained in the following directory will be imported:"
-msgstr ""
+msgstr "Mọi phôi tài liệu %PRODUCTNAME nằm trong thư mục sau sẽ được nhập:"
 
 #: source/importwizard/importwi.src#sSumMSTextDocuments.String.Text
 msgid  "All Word documents contained in the following directory will be imported:"
-msgstr ""
+msgstr "Mọi tài liệu MS Word nằm trong thư mục sau sẽ được nhập:"
 
 #: source/importwizard/importwi.src#sSumMSTableDocuments.String.Text
 msgid  "All Excel documents contained in the following directory will be imported:"
-msgstr ""
+msgstr "Mọi tài liệu MS Excel nằm trong thư mục sau sẽ được nhập:"
 
 #: source/importwizard/importwi.src#sSumMSDrawDocuments.String.Text
 msgid  "All PowerPoint documents contained in the following directory will be imported:"
-msgstr ""
+msgstr "Mọi tài liệu MS PowerPoint nằm trong thư mục sau sẽ được nhập:"
 
 #: source/importwizard/importwi.src#sSumMSTextTemplates.String.Text
 msgid  "All Word templates contained in the following directory will be imported:"
-msgstr ""
+msgstr "Mọi mẫu MS Word nằm trong thư mục sau sẽ được nhập:"
 
 #: source/importwizard/importwi.src#sSumMSTableTemplates.String.Text
 msgid  "All Excel templates contained in the following directory will be imported:"
-msgstr ""
+msgstr "Mọi mẫu MS Excel nằm trong thư mục sau sẽ được nhập:"
 
 #: source/importwizard/importwi.src#sSumMSDrawTemplates.String.Text
 msgid  "All PowerPoint templates contained in the following directory will be imported:"
-msgstr ""
+msgstr "Mọi mẫu MS PowerPoint nằm trong thư mục sau sẽ được nhập:"
 
 #: source/schedule/schedule.src#dlgCalTitle.String.Text
 msgid  "%PRODUCTNAME Calendar"
@@ -3481,7 +3481,7 @@ msgstr "Tiến triển:"
 
 #: source/template/template.src#SAMPLES.String.Text
 msgid  "In order to use the full functionality of this sample, create a document that is based on this template."
-msgstr ""
+msgstr "Để sử dụng chức năng đầy đủ của ví dụ mẫu này, hãy tạo một tài liệu dựa trên mẫu này."
 
 #: source/template/template.src#SAMPLES + 1.String.Text
 msgid  "Remarks"
@@ -3493,7 +3493,7 @@ msgstr "Chọn sắc thái"
 
 #: source/template/template.src#STYLES + 1.String.Text
 msgid  "Error while saving the document to the clipboard! The following action cannot be undone."
-msgstr ""
+msgstr "Gặp lỗi khi lưu tài liệu vào bảng nháp. Thao tác sau không thể khôi phục được."
 
 #: source/template/template.src#STYLES + 2.String.Text
 msgid  "~Cancel"

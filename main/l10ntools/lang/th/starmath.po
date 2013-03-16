@@ -33,11 +33,11 @@ msgstr ""
 
 #: source/smres.src#RID_FONTDIALOG.ModalDialog.Text
 msgid  "Fonts"
-msgstr "ตัวอักษร"
+msgstr "แบบอักษร"
 
 #: source/smres.src#RID_FONTDIALOG.1.FixedText.Text
 msgid  "~Font"
-msgstr "~ตัวอักษร"
+msgstr "แ~บบอักษร"
 
 #: source/smres.src#RID_FONTDIALOG.1.CheckBox.Text
 msgid  "~Bold"
@@ -445,11 +445,11 @@ msgstr "~ลบ"
 
 #: source/smres.src#RID_NOMATHTYPEFACEWARNING.WarningBox.Message
 msgid  "The 'StarMath' font has not been installed.\nWithout this font %PRODUCTNAME Math cannot function correctly.\nPlease install this font and restart %PRODUCTNAME Math."
-msgstr ""
+msgstr "ยังไม่ได้ติดตั้งตัวอักษร \"StarMath\" \nหากไม่มีแบบอักษร %PRODUCTNAME Math นี้ ไม่สามารถทำหน้าที่ได้ถูกต้อง\nกรุณาติดตั้งแบบอักษรนี้และเริ่ม %PRODUCTNAME Math อีกครั้ง"
 
 #: source/smres.src#RID_DEFAULTSAVEQUERY.QueryBox.Message
 msgid  "Should the changes be saved as defaults?\n\nThese changes will apply for all new formulas."
-msgstr ""
+msgstr "ต้องการบันทึกการเปลี่ยนแปลงเป็นค่าปริยายหรือไม่ ?\n\nการเปลี่ยนแปลงเหล่านี้จะใช้สำหรับสูตรใหม่ทั้งหมด"
 
 #: source/smres.src#RID_FONTREGULAR.String.Text
 msgid  "Standard"
@@ -558,6 +558,10 @@ msgstr "Sans"
 #: source/smres.src#RID_FONTMENU.7.MenuItem.Text
 msgid  "Fixed"
 msgstr "คงที่"
+
+#: source/smres.src#CMDBOXWINDOW_TEXT.#define.Text
+msgid  "Commands"
+msgstr "คำสั่ง"
 
 #: source/smres.src#RID_DOCUMENTSTR.String.Text
 msgid  "Formula"
@@ -701,68 +705,51 @@ msgstr "จัดพอดี~หน้า"
 msgid  "~Scaling"
 msgstr "~สัดส่วน"
 
-#: source/smres.src#CMDBOXWINDOW_TEXT.#define.Text
-#, fuzzy
-msgid  "Commands"
-msgstr "คำสั่ง"
-
 #: source/commands.src#RID_COMMANDMENU.RID_UNBINOPS_MENU.MenuItem.Text
-#, fuzzy
 msgid  "~Unary/Binary Operators"
 msgstr "~ตัวปฏิบัติการ Unary/Binary "
 
 #: source/commands.src#RID_COMMANDMENU.RID_RELATIONS_MENU.MenuItem.Text
-#, fuzzy
 msgid  "~Relations"
 msgstr "~ความสัมพันธ์"
 
 #: source/commands.src#RID_COMMANDMENU.RID_SETOPERATIONS_MENU.MenuItem.Text
-#, fuzzy
 msgid  "~Set Operations"
 msgstr "~ตั้งค่าการปฏิบัติการ"
 
 #: source/commands.src#RID_COMMANDMENU.RID_FUNCTIONS_MENU.MenuItem.Text
-#, fuzzy
 msgid  "~Functions"
 msgstr "~ฟังก์ชัน"
 
 #: source/commands.src#RID_COMMANDMENU.RID_FUNCTIONS_MENU.RID_FUNCTIONSOTHER1_MENU.MenuItem.Text
-#, fuzzy
 msgid  "More"
 msgstr "เพิ่มเติม"
 
 #: source/commands.src#RID_COMMANDMENU.RID_OPERATORS_MENU.MenuItem.Text
-#, fuzzy
 msgid  "O~perators"
 msgstr "ตั~วปฏิบัติการ"
 
 #: source/commands.src#RID_COMMANDMENU.RID_ATTRIBUTES_MENU.MenuItem.Text
-#, fuzzy
 msgid  "~Attributes"
 msgstr "~คุณลักษณะ"
 
 #: source/commands.src#RID_COMMANDMENU.RID_BRACKETS_MENU.MenuItem.Text
-#, fuzzy
 msgid  "~Brackets"
 msgstr "~วงเล็บก้ามปู"
 
 #: source/commands.src#RID_COMMANDMENU.RID_FORMAT_MENU.MenuItem.Text
-#, fuzzy
 msgid  "For~mats"
 msgstr "รูปแ~บบ"
 
 #: source/commands.src#RID_COMMANDMENU.RID_FORMAT_MENU.RID_NEWLINE.MenuItem.Text
-#, fuzzy
 msgid  "New Line"
 msgstr "บรรทัดใหม่"
 
 #: source/commands.src#RID_COMMANDMENU.RID_FORMAT_MENU.RID_SBLANK.MenuItem.Text
-#, fuzzy
 msgid  "Small Gap"
 msgstr "Small Gap"
 
 #: source/commands.src#RID_COMMANDMENU.RID_FORMAT_MENU.RID_BLANK.MenuItem.Text
-#, fuzzy
 msgid  "Gap"
 msgstr "Gap"
 
@@ -771,7 +758,6 @@ msgid  "nospace {...}"
 msgstr ""
 
 #: source/commands.src#RID_COMMANDMENU.RID_MISC_MENU.MenuItem.Text
-#, fuzzy
 msgid  "~Others"
 msgstr "~อื่นๆ"
 

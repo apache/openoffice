@@ -57,7 +57,7 @@ msgstr "数据源标题"
 
 #: source/abpilot/abspilot.src#RID_PAGE_SELECTABTYPE.FT_TYPE_HINTS.FixedText.Text
 msgid  "%PRODUCTNAME lets you access address data already present in your system. To do this, a %PRODUCTNAME data source will be created in which your address data is available in tabular form.\n\nThis wizard helps you create the data source."
-msgstr ""
+msgstr "利用 %PRODUCTNAME 可以访问系统中现有的地址数据。为此，将创建一个 %PRODUCTNAME 数据源，其中包含表格式的可用地址数据。\n\n本向导会帮助您建立此数据源。"
 
 #: source/abpilot/abspilot.src#RID_PAGE_SELECTABTYPE.FL_TYPE.FixedLine.Text
 msgid  "Please select the type of your external address book:"
@@ -109,7 +109,7 @@ msgstr "其它的外部数据源"
 
 #: source/abpilot/abspilot.src#RID_PAGE_ADMININVOKATION.FT_ADMINEXPLANATION.FixedText.Text
 msgid  "To set up the new data source, additional information is required.\n\nClick the following button to open another dialog in which you then enter the necessary information."
-msgstr ""
+msgstr "新建数据源时还必须做其它设置。\n\n单击下方的按钮后便会打开一个对话框，在此对话框内您可以继续未完成的设置。"
 
 #: source/abpilot/abspilot.src#RID_PAGE_ADMININVOKATION.PB_INVOKE_ADMIN_DIALOG.PushButton.Text
 msgid  "Settings"
@@ -117,15 +117,15 @@ msgstr "设置"
 
 #: source/abpilot/abspilot.src#RID_PAGE_ADMININVOKATION.FT_ERROR.FixedText.Text
 msgid  "The connection to the data source could not be established.\nBefore you proceed, please check the settings made, or (on the previous page) choose another address data source type."
-msgstr ""
+msgstr "无法与数据源建立连接。\n在继续执行命令之前，请检查一下所有已经完成的设置，或者返回到上一页，选择其它的通讯簿数据源类型。"
 
 #: source/abpilot/abspilot.src#RID_PAGE_TABLESELECTION_AB.FL_TOOMUCHTABLES.FixedText.Text
 msgid  "The external data source you have chosen contains more than one address book.\nPlease select the one you mainly want to work with:"
-msgstr ""
+msgstr "所选的外部数据源包含多个通迅簿。\n请选择一个常用的通讯簿："
 
 #: source/abpilot/abspilot.src#RID_PAGE_FIELDMAPPING.FT_FIELDASSIGMENTEXPL.FixedText.Text
-msgid  "To incorporate the address data in your templates, %PRODUCTNAME has to know which fields contain which data.\n\nFor instance, you could have stored the e-mail addresses in a field named "email", or "E-mail" or "EM" - or something completely different.\n\nClick the button below to open another dialog where you can enter the settings for your data source."
-msgstr ""
+msgid  "To incorporate the address data in your templates, %PRODUCTNAME has to know which fields contain which data.\n\nFor instance, you could have stored the e-mail addresses in a field named \"email\", or \"E-mail\" or \"EM\" - or something completely different.\n\nClick the button below to open another dialog where you can enter the settings for your data source."
+msgstr "要在文档模板内正确使用通讯簿数据，就必须让 %PRODUCTNAME 知道哪些字段含有何种数据。\n\n例如，您可以在一个名称为\"email\"，\"E-mail\"，\"EM\"或其它名称的字段内保存电子邮件地址。\n\n单击下方的按钮后，就会打开一个提供进行数据源设置的对话框。"
 
 #: source/abpilot/abspilot.src#RID_PAGE_FIELDMAPPING.PB_INVOKE_FIELDS_DIALOG.PushButton.Text
 msgid  "Field Assignment"
@@ -133,7 +133,7 @@ msgstr "指定字段"
 
 #: source/abpilot/abspilot.src#RID_PAGE_FINAL.FT_FINISH_EXPL.FixedText.Text
 msgid  "That was all the information necessary to integrate your address data into %PRODUCTNAME.\n\nNow, just enter the name under which you want to register the data source in %PRODUCTNAME."
-msgstr ""
+msgstr "您已经完成整合 %PRODUCTNAME 通讯簿数据所需的所有设置。\n\n现在请输入一个名称，用于在 %PRODUCTNAME 中登记该数据源。"
 
 #: source/abpilot/abspilot.src#RID_PAGE_FINAL.FT_LOCATION.FixedText.Text
 msgid  "Location"
@@ -153,7 +153,7 @@ msgstr "通讯簿名称"
 
 #: source/abpilot/abspilot.src#RID_PAGE_FINAL.FT_DUPLICATENAME.FixedText.Text
 msgid  "Another data source already has this name. As data sources have to have globally unique names, you need to choose another one."
-msgstr ""
+msgstr "已经存在一个同名的数据源。因为在数据库范围内数据源名称必须是单一明确的。请使用另一个名称。"
 
 #: source/abpilot/abspilot.src#RID_ERR_NEEDTYPESELECTION.ErrorBox.Message
 msgid  "Please select a type of address book."
@@ -161,7 +161,7 @@ msgstr "请选择一个通讯簿类型"
 
 #: source/abpilot/abspilot.src#RID_QRY_NOTABLES.QueryBox.Message
 msgid  "The data source does not contain any tables.\nDo you want to set it up as an address data source, anyway?"
-msgstr ""
+msgstr "这个数据源没有包含任何表格。\n您还是要将该数据源设置为通讯簿数据源吗？"
 
 #: source/abpilot/abspilot.src#RID_STR_DEFAULT_NAME.String.Text
 msgid  "Addresses"
@@ -184,8 +184,8 @@ msgid  "Address Data - Field Assignment"
 msgstr "地址数据 - 指定字段"
 
 #: source/abpilot/abspilot.src#RID_STR_NOFIELDSASSIGNED.String.Text
-msgid  "There are no fields assigned at this time.\nYou can either assign fields now or do so later by first choosing:\n"File - Template - Address Book Source...""
-msgstr ""
+msgid  "There are no fields assigned at this time.\nYou can either assign fields now or do so later by first choosing:\n\"File - Template - Address Book Source...\""
+msgstr "至今还未指定任何的字段。\n您可以现在就指定字段，也可以以后再做这个设置：\n点击菜单\"文件 - 文档模板 - 通讯簿数据源...\""
 
 #: source/bibliography/toolbar.src#RID_BIB_TOOLBAR.TBC_FT_SOURCE.ToolBoxItem.Text
 msgid  "Table"
@@ -493,7 +493,7 @@ msgstr "控制"
 
 #: source/dbpilots/listcombopages.src#RID_PAGE_LCW_CONTENTSELECTION_TABLE.FT_SELECTTABLE_LABEL.FixedText.Text
 msgid  "On the right side, you see all the tables from the data source of the form.\n\n\nChoose the table from which the data should be used as basis for the list content:"
-msgstr ""
+msgstr "在右边您能够看到表单数据源的所有数据表格。\n\n\n请选择一些用于组成列单内容的基本数据的表格："
 
 #: source/dbpilots/listcombopages.src#RID_PAGE_LCW_CONTENTSELECTION_FIELD.TabPage.Text
 msgid  "Field Selection"
@@ -513,7 +513,7 @@ msgstr "已经选择的字段会显示在组合栏的列单内。"
 
 #: source/dbpilots/listcombopages.src#RID_PAGE_LCW_CONTENTSELECTION_FIELD.STR_FIELDINFO_LISTBOX.String.Text
 msgid  "The contents of the selected field will be shown in the list box if the linked fields are identical."
-msgstr ""
+msgstr "如果相连接的字段一致，列表框内将会显示出所选定字段的内容。"
 
 #: source/dbpilots/listcombopages.src#RID_PAGE_LCW_FIELDLINK.TabPage.Text
 msgid  "Field Link"
@@ -521,7 +521,7 @@ msgstr "字段链结"
 
 #: source/dbpilots/listcombopages.src#RID_PAGE_LCW_FIELDLINK.FT_FIELDLINK_DESC.FixedText.Text
 msgid  "This is where you select fields with matching contents so that the value from the display field will be shown."
-msgstr ""
+msgstr "在这里选择的是内容必须相同的字段，以便在显示框内显示相关的数值。"
 
 #: source/dbpilots/listcombopages.src#RID_PAGE_LCW_FIELDLINK.FT_VALUELISTFIELD.FixedText.Text
 msgid  "Field from the ~Value Table"
@@ -533,7 +533,7 @@ msgstr "从列单表格生成字段(~L)"
 
 #: source/dbpilots/listcombopages.src#RID_STR_COMBOWIZ_DBFIELD.String.Text
 msgid  "You can either save the value of the combo box in a database field or use it for display purposes."
-msgstr ""
+msgstr "您能够将组合栏中的数值存入数据库字段内或用于显示。"
 
 #: source/dbpilots/gridpages.src#RID_PAGE_GW_FIELDSELECTION.TabPage.Text
 msgid  "Field Selection"
@@ -589,7 +589,7 @@ msgstr "数据"
 
 #: source/dbpilots/commonpagesdbp.src#RID_PAGE_TABLESELECTION.FT_EXPLANATION.FixedText.Text
 msgid  "Currently, the form the control belongs to is not (or not completely) bound to a data source.\n\nPlease choose a data source and a table.\n\n\nPlease note that the settings made on this page will take effect immediately upon leaving the page."
-msgstr ""
+msgstr "当前从属于这个表单的控件尚未（或没有完全）和一个数据源连接。\n\n请选择一个数据源和一个数据表格。\n\n\n请注意：离开这个表单页面时所有的新设置就会立刻生效。"
 
 #: source/dbpilots/commonpagesdbp.src#RID_PAGE_TABLESELECTION.FT_DATASOURCE.FixedText.Text
 msgid  "~Data source:"
@@ -705,7 +705,7 @@ msgstr "这些是制作选项小组所需的全部资料。"
 
 #: source/dbpilots/groupboxpages.src#RID_STR_GROUPWIZ_DBFIELD.String.Text
 msgid  "You can either save the value of the option group in a database field or use it for a later action."
-msgstr ""
+msgstr "您能够将选项小组的数值存入一个数据库或以后调用它。"
 
 #: source/preload/preload.src#RID_DLG_OEMWIZARD.PB_PREV.PushButton.Text
 msgid  "<< Back"
@@ -737,7 +737,7 @@ msgstr "欢迎"
 
 #: source/preload/preload.src#RID_TP_WELCOME.FT_INFO.FixedText.Text
 msgid  "Welcome to %PRODUCTNAME %PRODUCTVERSION OEM\n\nTo start the %PRODUCTNAME %PRODUCTVERSION OEM, please enter your personal data in the dialog following the license text. Important information is contained in the readme files which are located in the %PRODUCTNAME product directory. Please read these files carefully. You can also find detailed information at the Oracle website \n\nhttp://www.oracle.com/us/products/applications/open-office."
-msgstr ""
+msgstr "欢迎使用 %PRODUCTNAME %PRODUCTVERSION OEM\n\n要启动 %PRODUCTNAME %PRODUCTVERSION OEM，请在许可证之后的对话框内输入您的个人资料。%PRODUCTNAME 产品内的 readme 自述文件含有重要信息，请仔细阅读这些文件。您也可以在下面 Oracle 网站里找到详细信息：\n\nhttp://www.oracle.com/us/products/applications/open-office."
 
 #: source/preload/preload.src#RID_TP_LICENSE.TabPage.Text
 msgid  "License Agreement"
@@ -753,7 +753,7 @@ msgstr "1."
 
 #: source/preload/preload.src#RID_TP_LICENSE.FT_INFO2.FixedText.Text
 msgid  "View the complete License Agreement. Please use the scroll bar or the '%PAGEDOWN' button in this dialog to view the entire license text."
-msgstr ""
+msgstr "请完整地阅读许可协议。请使用此对话框中的滚动条或 %PAGEDOWN 按钮来阅读全部许可文字。"
 
 #: source/preload/preload.src#RID_TP_LICENSE.PB_PAGEDOWN.PushButton.Text
 msgid  "Page Down"
@@ -801,7 +801,7 @@ msgstr "自动排序"
 
 #: source/propctrlr/selectlabeldialog.src#RID_DLG_SELECTLABELCONTROL.1.FixedText.Text
 msgid  "These are control fields that can be used as label fields for the $control_class$ $control_name$."
-msgstr ""
+msgstr "这些是可指定当作标签字段 $control_class$ $control_name$ 的所有控制。"
 
 #: source/propctrlr/selectlabeldialog.src#RID_DLG_SELECTLABELCONTROL.1.CheckBox.Text
 msgid  "~No assignment"
@@ -817,7 +817,7 @@ msgstr "表单"
 
 #: source/propctrlr/pcrmiscres.src#RID_STR_CONFIRM_DELETE_DATA_TYPE.String.Text
 msgid  "Do you want to delete the data type '#type#' from the model?\nPlease note that this will affect all controls which are bound to this data type."
-msgstr ""
+msgstr "是否要将数据类型 #type# 从模型中删除？\n请注意，这将影响绑定到此数据类型的所有控件。"
 
 #: source/propctrlr/pcrmiscres.src#RID_STR_PROPTITLE_PUSHBUTTON.String.Text
 msgid  "Button"
@@ -905,7 +905,7 @@ msgstr "链接字段"
 
 #: source/propctrlr/formlinkdialog.src#RID_DLG_FORMLINKS.FT_EXPLANATION.FixedText.Text
 msgid  "Sub forms can be used to display detailed data about the current record of the master form. To do this, you can specify which columns in the sub form match which columns in the master form."
-msgstr ""
+msgstr "子窗体可用于显示关于主窗体当前记录的详细数据。为此，您可以指定子窗体中的哪些列与主窗体中的哪些列相匹配。"
 
 #: source/propctrlr/formlinkdialog.src#RID_DLG_FORMLINKS.PB_SUGGEST.PushButton.Text
 msgid  "Suggest"
@@ -1493,7 +1493,7 @@ msgstr "Multipart"
 
 #: source/propctrlr/formres.src#RID_RSC_ENUM_SUBMIT_ENCODING.3.String.Text
 msgid  "Text"
-msgstr "文字"
+msgstr "文本"
 
 #: source/propctrlr/formres.src#RID_RSC_ENUM_DATEFORMAT_LIST.1.String.Text
 msgid  "Standard (short)"
@@ -1864,8 +1864,8 @@ msgid  "Help"
 msgstr "帮助"
 
 #: source/propctrlr/formres.src#RID_STR_UNABLETOCONNECT.String.Text
-msgid  "The connection to the data source "$name$" could not be established."
-msgstr ""
+msgid  "The connection to the data source \"$name$\" could not be established."
+msgstr "无法和数据源 \"$name$\" 建立连接。"
 
 #: source/propctrlr/formres.src#RID_STR_TEXT.String.Text
 msgid  "Text"
@@ -2297,11 +2297,11 @@ msgstr "为新数据类型键入一个名称:"
 
 #: source/scanner/sanedlg.src#RID_SANE_DIALOG.RID_DEVICEINFO_BTN.PushButton.Text
 msgid  "About\n Dev~ice"
-msgstr ""
+msgstr "设备\n信息(~I)"
 
 #: source/scanner/sanedlg.src#RID_SANE_DIALOG.RID_PREVIEW_BTN.PushButton.Text
 msgid  "Create\nPreview"
-msgstr ""
+msgstr "建立预览"
 
 #: source/scanner/sanedlg.src#RID_SANE_DIALOG.RID_PREVIEW_BOX.FixedLine.Text
 msgid  "Preview"
@@ -2357,7 +2357,7 @@ msgstr "扫描机"
 
 #: source/scanner/sanedlg.src#RID_SANE_DEVICEINFO_TXT.String.Text
 msgid  "Device: %s\nVendor: %s\nModel: %s\nType: %s"
-msgstr ""
+msgstr "设备: %s\n制造商: %s\n型号: %s\n类型: %s"
 
 #: source/scanner/sanedlg.src#RID_SANE_SCANERROR_TXT.String.Text
 msgid  "An error occurred while scanning."
@@ -2365,7 +2365,7 @@ msgstr "在扫描时发生错误。"
 
 #: source/scanner/sanedlg.src#RID_SANE_NORESOLUTIONOPTION_TXT.String.Text
 msgid  "The device does not offer a preview option. Therefore, a normal scan will be used as a preview instead. This may take a considerable amount of time."
-msgstr ""
+msgstr "这个设备没有预览功能。因此，采用了普通扫描方式进行预览，这可能需要较长的时间。"
 
 #: source/scanner/sanedlg.src#RID_SANE_NOSANELIB_TXT.String.Text
 msgid  "The SANE interface could not be initialized. Scanning is not possible."
@@ -2405,7 +2405,7 @@ msgstr "%PRODUCTNAME %PRODUCTVERSION 更新到最新版本。"
 
 #: source/update/check/updatehdl.src#RID_UPDATE_STR_UPD_FOUND.String.Text
 msgid  "%PRODUCTNAME %NEXTVERSION is available.\n\nThe installed version is %PRODUCTNAME %PRODUCTVERSION.\n\nNote: Before downloading  an update, please ensure that you have sufficient access rights to install it.\nA password, usually the administrator's or root password, may be required."
-msgstr ""
+msgstr "%PRODUCTNAME %NEXTVERSION 可用。\n\n已安装的版本为 %PRODUCTNAME %PRODUCTVERSION。\n\n注意：在下载更新软件包之前，请确定您具有安装该软件的足够权限。\n可能要求您输入密码，通常是管理员或者超级用户密码。"
 
 #: source/update/check/updatehdl.src#RID_UPDATE_STR_DLG_TITLE.String.Text
 msgid  "Check for Updates"
@@ -2421,7 +2421,7 @@ msgstr "%PRODUCTNAME %NEXTVERSION 下载停顿在"
 
 #: source/update/check/updatehdl.src#RID_UPDATE_STR_DOWNLOAD_WARN.String.Text
 msgid  "The download location is: %DOWNLOAD_PATH.\n\nUnder Tools – Options... - %PRODUCTNAME – Online Update you can change the download location."
-msgstr ""
+msgstr "下载位置为：%DOWNLOAD_PATH。\n\n在“工具 - 选项... - %PRODUCTNAME - 联机更新”中，您可以修改下载位置。"
 
 #: source/update/check/updatehdl.src#RID_UPDATE_STR_DOWNLOAD_DESCR.String.Text
 msgid  "%FILE_NAME has been downloaded to %DOWNLOAD_PATH."
@@ -2429,7 +2429,7 @@ msgstr "已经将 %FILE_NAME 下载到 %DOWNLOAD_PATH。"
 
 #: source/update/check/updatehdl.src#RID_UPDATE_STR_DOWNLOAD_UNAVAIL.String.Text
 msgid  "The automatic download of the update is currently not available.\n\nClick 'Download...' to download %PRODUCTNAME %NEXTVERSION manually from the web site."
-msgstr ""
+msgstr "目前更新软件包自动下载功能还不可用。\n\n请单击“下载...”手动从网站下载 %PRODUCTNAME %NEXTVERSION。"
 
 #: source/update/check/updatehdl.src#RID_UPDATE_STR_DOWNLOADING.String.Text
 msgid  "Downloading %PRODUCTNAME %NEXTVERSION..."
@@ -2437,7 +2437,7 @@ msgstr "正在下载 %PRODUCTNAME %NEXTVERSION..."
 
 #: source/update/check/updatehdl.src#RID_UPDATE_STR_READY_INSTALL.String.Text
 msgid  "Download of %PRODUCTNAME %NEXTVERSION completed. Ready for installation."
-msgstr ""
+msgstr "%PRODUCTNAME %NEXTVERSION 下载完毕。准备安装。"
 
 #: source/update/check/updatehdl.src#RID_UPDATE_STR_CANCEL_TITLE.String.Text
 msgid  "%PRODUCTNAME %PRODUCTVERSION"
@@ -2449,7 +2449,7 @@ msgstr "您确实想取消下载吗？"
 
 #: source/update/check/updatehdl.src#RID_UPDATE_STR_BEGIN_INSTALL.String.Text
 msgid  "To install the update, %PRODUCTNAME %PRODUCTVERSION needs to be closed. Do you want to install the update now?"
-msgstr ""
+msgstr "要安装更新软件包，需关闭 %PRODUCTNAME %PRODUCTVERSION。您想现在就安装更新软件包吗？"
 
 #: source/update/check/updatehdl.src#RID_UPDATE_STR_INSTALL_NOW.String.Text
 msgid  "Install ~now"
@@ -2461,15 +2461,15 @@ msgstr "稍后安装(~L)"
 
 #: source/update/check/updatehdl.src#RID_UPDATE_STR_INSTALL_ERROR.String.Text
 msgid  "Could not run the installer application, please run %FILE_NAME in %DOWNLOAD_PATH manually."
-msgstr ""
+msgstr "如果无法运行安装程序，请手动运行 %DOWNLOAD_PATH 目录中的 %FILE_NAME。"
 
 #: source/update/check/updatehdl.src#RID_UPDATE_STR_OVERWRITE_WARNING.String.Text
 msgid  "A file with that name already exists! Do you want to overwrite the existing file?"
-msgstr ""
+msgstr "该文件已经存在！您想要覆盖现有的文件吗？"
 
 #: source/update/check/updatehdl.src#RID_UPDATE_STR_RELOAD_WARNING.String.Text
 msgid  "A file with the name '%FILENAME' already exists in '%DOWNLOAD_PATH'! Do you want to continue with the download or delete and reload the file?"
-msgstr ""
+msgstr "'%FILENAME' 文件已经存在于 '%DOWNLOAD_PATH'！您想继续下载或者删除并重新装入该文件吗？"
 
 #: source/update/check/updatehdl.src#RID_UPDATE_STR_RELOAD_RELOAD.String.Text
 msgid  "Reload File"
@@ -2529,7 +2529,7 @@ msgstr "%PRODUCTNAME 更新可用"
 
 #: source/update/check/updatehdl.src#RID_UPDATE_BUBBLE_UPDATE_NO_DOWN.String.Text
 msgid  "Click here for more information."
-msgstr "单击此处获取更多信息。"
+msgstr "点击这里获取更多信息。"
 
 #: source/update/check/updatehdl.src#RID_UPDATE_BUBBLE_T_AUTO_START.String.Text
 msgid  "%PRODUCTNAME update available"
@@ -2557,7 +2557,7 @@ msgstr "更新软件包下载停顿"
 
 #: source/update/check/updatehdl.src#RID_UPDATE_BUBBLE_ERROR_DOWNLOADING.String.Text
 msgid  "Click here for more information."
-msgstr "单击这里获得更多信息。"
+msgstr "单击此处获取更多信息。"
 
 #: source/update/check/updatehdl.src#RID_UPDATE_BUBBLE_T_DOWNLOAD_AVAIL.String.Text
 msgid  "Download of update completed"

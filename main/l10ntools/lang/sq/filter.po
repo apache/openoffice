@@ -539,9 +539,41 @@ msgstr "Audio Interchange Fajll Format"
 msgid  "PNG - Portable Network Graphic"
 msgstr "Portable Bitmap Import/Eksport"
 
+#: source/config/fragments/types/writerglobal8.xcu#writerglobal8.UIName
+msgid  "Writer 8 Master Document"
+msgstr "StarOffice 5.0 Master Dokument"
+
+#: source/config/fragments/types/impress8.xcu#impress8.UIName
+msgid  "Impress 8"
+msgstr "%PRODUCTNAME Impress"
+
+#: source/config/fragments/types/calc8_template.xcu#calc8_template.UIName
+msgid  "Calc 8 Template"
+msgstr "StarImpress 4.0 Shabllon"
+
 #: source/config/fragments/types/writer_MS_Word_2003_XML.xcu#writer_MS_Word_2003_XML.UIName
 msgid  "Microsoft Word 2003 XML"
 msgstr "Biff5 (Microsoft Excel 5.0/95)"
+
+#: source/config/fragments/types/writer8.xcu#writer8.UIName
+msgid  "Writer 8"
+msgstr "%PRODUCTNAME Writer"
+
+#: source/config/fragments/types/impress8_template.xcu#impress8_template.UIName
+msgid  "Impress 8 Template"
+msgstr "StarImpress 4.0 Shabllon"
+
+#: source/config/fragments/types/draw8_template.xcu#draw8_template.UIName
+msgid  "Draw 8 Template"
+msgstr "StarImpress 4.0 Shabllon"
+
+#: source/config/fragments/types/writerweb8_writer_template.xcu#writerweb8_writer_template.UIName
+msgid  "Writer/Web 8 Template"
+msgstr "%PRODUCTNAME Writer/Web"
+
+#: source/config/fragments/types/draw8.xcu#draw8.UIName
+msgid  "Draw 8"
+msgstr "Vizato tekstin "
 
 #: source/config/fragments/types/calc_NSO_UOF2.xcu#calc_NSO_UOF2.UIName
 msgid  "Uniform Office Format 2 spreadsheet"
@@ -555,6 +587,18 @@ msgstr "Biff5 (Microsoft Excel 5.0/95)"
 msgid  "OpenDocument Database"
 msgstr "OpenDocument Bazë e shënimeve"
 
+#: source/config/fragments/types/calc8.xcu#calc8.UIName
+msgid  "Calc 8"
+msgstr "%PRODUCTNAME Calc"
+
+#: source/config/fragments/types/math8.xcu#math8.UIName
+msgid  "Math 8"
+msgstr "Matematikë"
+
+#: source/config/fragments/types/writer8_template.xcu#writer8_template.UIName
+msgid  "Writer 8 Template"
+msgstr "StarImpress 4.0 Shabllon"
+
 #: source/config/fragments/types/writer_NSO_UOF2.xcu#writer_NSO_UOF2.UIName
 msgid  "Uniform Office Format 2 text"
 msgstr ""
@@ -563,13 +607,17 @@ msgstr ""
 msgid  "Uniform Office Format 2 presentation"
 msgstr ""
 
+#: source/config/fragments/types/chart8.xcu#chart8.UIName
+msgid  "Chart 8"
+msgstr "Diagram"
+
 #: source/flash/impswfdialog.src#DLG_OPTIONS.ModalDialog.Text
 msgid  "Macromedia Flash (SWF) Options"
 msgstr "Macromedia Flash (SWF) Eksport Filteri"
 
 #: source/flash/impswfdialog.src#DLG_OPTIONS.FI_DESCR.FixedText.Text
 msgid  "1: min. quality\n100: max. quality"
-msgstr ""
+msgstr "1: kualiteti min.\n100: kualiteti max."
 
 #: source/graphicfilter/eps/epsstr.src#KEY_VERSION_CHECK.String.Text
 msgid  "Warning: Not all of the imported EPS graphics could be saved at level1\nas some are at a higher level!"
@@ -1094,17 +1142,14 @@ msgid  "Transparencies removed"
 msgstr "Printeri %s nuk mund tw hiqet."
 
 #: source/t602/t602filter.src#T602FILTER_STR_IMPORT_DIALOG_TITLE.String.Text
-#, fuzzy
 msgid  "Settings for T602 import"
 msgstr "Parametrat e sfondit për të gjitha faqet?"
 
 #: source/t602/t602filter.src#T602FILTER_STR_ENCODING_LABEL.String.Text
-#, fuzzy
 msgid  "Encoding"
 msgstr "Kodifikimi i paraqitjes"
 
 #: source/t602/t602filter.src#T602FILTER_STR_ENCODING_AUTO.String.Text
-#, fuzzy
 msgid  "Automatic"
 msgstr "Automatike"
 
@@ -1125,97 +1170,78 @@ msgid  "Mode for Russian language (Cyrillic)"
 msgstr ""
 
 #: source/t602/t602filter.src#T602FILTER_STR_REFORMAT_TEXT.String.Text
-#, fuzzy
 msgid  "Reformat the text"
 msgstr "Vizato tekstin "
 
 #: source/t602/t602filter.src#T602FILTER_STR_DOT_COMMANDS.String.Text
-#, fuzzy
 msgid  "Display dot commands"
 msgstr "Linjë vizë/pikë"
 
 #: source/t602/t602filter.src#T602FILTER_STR_CANCEL_BUTTON.String.Text
-#, fuzzy
 msgid  "Cancel"
 msgstr "Anulo"
 
 #: source/t602/t602filter.src#T602FILTER_STR_OK_BUTTON.String.Text
-#, fuzzy
 msgid  "OK"
 msgstr "OK"
 
 #: source/xsltdialog/xmlfiltertestdialog.src#DLG_XML_FILTER_TEST_DIALOG.ModalDialog.Text
-#, fuzzy
 msgid  "Test XML Filter: %s"
 msgstr "Parametrat e XLM Filtrit"
 
 #: source/xsltdialog/xmlfiltertestdialog.src#DLG_XML_FILTER_TEST_DIALOG.FL_EXPORT.FixedLine.Text
-#, fuzzy
 msgid  "Export"
 msgstr "Eksporto"
 
 #: source/xsltdialog/xmlfiltertestdialog.src#DLG_XML_FILTER_TEST_DIALOG.FT_EXPORT_XSLT.FixedText.Text
-#, fuzzy
 msgid  "XSLT for export"
 msgstr "Eksporto si PDF..."
 
 #: source/xsltdialog/xmlfiltertestdialog.src#DLG_XML_FILTER_TEST_DIALOG.FT_TRANSFORM_DOCUMENT.FixedText.Text
-#, fuzzy
 msgid  "Transform document"
 msgstr "Ngarko dokumentin"
 
 #: source/xsltdialog/xmlfiltertestdialog.src#DLG_XML_FILTER_TEST_DIALOG.PB_EXPORT_BROWSE.PushButton.Text
-#, fuzzy
 msgid  "~Browse..."
 msgstr "Shfleto..."
 
 #: source/xsltdialog/xmlfiltertestdialog.src#DLG_XML_FILTER_TEST_DIALOG.PB_CURRENT_DOCUMENT.PushButton.Text
-#, fuzzy
 msgid  "~Current Document"
 msgstr "Përdor dokumentin aktual"
 
 #: source/xsltdialog/xmlfiltertestdialog.src#DLG_XML_FILTER_TEST_DIALOG.FL_IMPORT.FixedLine.Text
-#, fuzzy
 msgid  "Import"
 msgstr "Importo"
 
 #: source/xsltdialog/xmlfiltertestdialog.src#DLG_XML_FILTER_TEST_DIALOG.FT_IMPORT_XSLT.FixedText.Text
-#, fuzzy
 msgid  "XSLT for import"
 msgstr "AutoCAD Import Filter"
 
 #: source/xsltdialog/xmlfiltertestdialog.src#DLG_XML_FILTER_TEST_DIALOG.FT_IMPORT_TEMPLATE.FixedText.Text
-#, fuzzy
 msgid  "Template for import"
 msgstr "AutoCAD Import Filter"
 
 #: source/xsltdialog/xmlfiltertestdialog.src#DLG_XML_FILTER_TEST_DIALOG.FT_TRANSFORM_FILE.FixedText.Text
-#, fuzzy
 msgid  "Transform file"
 msgstr "Emri i fajllit"
 
 #: source/xsltdialog/xmlfiltertestdialog.src#DLG_XML_FILTER_TEST_DIALOG.CBX_DISPLAY_SOURCE.CheckBox.Text
-#, fuzzy
 msgid  "~Display source"
 msgstr "Selekto kodin..."
 
 #: source/xsltdialog/xmlfiltertestdialog.src#DLG_XML_FILTER_TEST_DIALOG.PB_IMPORT_BROWSE.PushButton.Text
-#, fuzzy
 msgid  "B~rowse..."
 msgstr "Shfleto..."
 
 #: source/xsltdialog/xmlfiltertestdialog.src#DLG_XML_FILTER_TEST_DIALOG.PB_RECENT_DOCUMENT.PushButton.Text
-#, fuzzy
 msgid  "~Recent File"
 msgstr "Emri i fajllit"
 
 #: source/xsltdialog/xmlfiltertestdialog.src#DLG_XML_FILTER_TEST_DIALOG.PB_CLOSE.PushButton.Text
-#, fuzzy
 msgid  "~Close"
 msgstr "Mbylle"
 
 #: source/xsltdialog/xmlfiltertabpagexslt.src#RID_XML_FILTER_TABPAGE_XSLT.TabPage.Text
-#, fuzzy
 msgid  "Transformation"
 msgstr "Kthen transformimin e Fisherit."
 
@@ -1228,77 +1254,62 @@ msgid  "DTD"
 msgstr ""
 
 #: source/xsltdialog/xmlfiltertabpagexslt.src#RID_XML_FILTER_TABPAGE_XSLT.ED_XML_DTD_SCHEMA_BROWSE.PushButton.Text
-#, fuzzy
 msgid  "Browse..."
 msgstr "Shfleto..."
 
 #: source/xsltdialog/xmlfiltertabpagexslt.src#RID_XML_FILTER_TABPAGE_XSLT.FT_XML_EXPORT_XSLT.FixedText.Text
-#, fuzzy
 msgid  "XSLT for export"
 msgstr "Eksporto si PDF..."
 
 #: source/xsltdialog/xmlfiltertabpagexslt.src#RID_XML_FILTER_TABPAGE_XSLT.PB_XML_EXPORT_XSLT_BROWSE.PushButton.Text
-#, fuzzy
 msgid  "Browse..."
 msgstr "Shfleto..."
 
 #: source/xsltdialog/xmlfiltertabpagexslt.src#RID_XML_FILTER_TABPAGE_XSLT.FT_XML_IMPORT_XSLT.FixedText.Text
-#, fuzzy
 msgid  "XSLT for import"
 msgstr "AutoCAD Import Filter"
 
 #: source/xsltdialog/xmlfiltertabpagexslt.src#RID_XML_FILTER_TABPAGE_XSLT.PB_XML_IMPORT_XSLT_BROWSE.PushButton.Text
-#, fuzzy
 msgid  "Browse..."
 msgstr "Shfleto..."
 
 #: source/xsltdialog/xmlfiltertabpagexslt.src#RID_XML_FILTER_TABPAGE_XSLT.FT_XML_IMPORT_TEMPLATE.FixedText.Text
-#, fuzzy
 msgid  "Template for import"
 msgstr "AutoCAD Import Filter"
 
 #: source/xsltdialog/xmlfiltertabpagexslt.src#RID_XML_FILTER_TABPAGE_XSLT.PB_XML_IMPORT_TEMPLATE_BROWSE.PushButton.Text
-#, fuzzy
 msgid  "Browse..."
 msgstr "Shfleto..."
 
 #: source/xsltdialog/xmlfiltersettingsdialog.src#DLG_XML_FILTER_SETTINGS_DIALOG.WorkWindow.Text
-#, fuzzy
 msgid  "XML Filter Settings"
 msgstr "Parametrat e XLM Filtrit"
 
 #: source/xsltdialog/xmlfiltersettingsdialog.src#DLG_XML_FILTER_SETTINGS_DIALOG.PB_XML_FILTER_NEW.PushButton.Text
-#, fuzzy
 msgid  "~New..."
 msgstr "E re..."
 
 #: source/xsltdialog/xmlfiltersettingsdialog.src#DLG_XML_FILTER_SETTINGS_DIALOG.PB_XML_FILTER_EDIT.PushButton.Text
-#, fuzzy
 msgid  "~Edit..."
 msgstr "Edito..."
 
 #: source/xsltdialog/xmlfiltersettingsdialog.src#DLG_XML_FILTER_SETTINGS_DIALOG.PB_XML_FILTER_TEST.PushButton.Text
-#, fuzzy
 msgid  "~Test XSLTs..."
 msgstr "Parametrat testues"
 
 #: source/xsltdialog/xmlfiltersettingsdialog.src#DLG_XML_FILTER_SETTINGS_DIALOG.PB_XML_FILTER_DELETE.PushButton.Text
-#, fuzzy
 msgid  "~Delete..."
 msgstr "Fshij..."
 
 #: source/xsltdialog/xmlfiltersettingsdialog.src#DLG_XML_FILTER_SETTINGS_DIALOG.PB_XML_FILTER_SAVE.PushButton.Text
-#, fuzzy
 msgid  "~Save as Package..."
 msgstr "Paketo -Ruaej si"
 
 #: source/xsltdialog/xmlfiltersettingsdialog.src#DLG_XML_FILTER_SETTINGS_DIALOG.PB_XML_FILTER_OPEN.PushButton.Text
-#, fuzzy
 msgid  "~Open Package..."
 msgstr "~Menagjer i paketave"
 
 #: source/xsltdialog/xmlfiltersettingsdialog.src#DLG_XML_FILTER_SETTINGS_DIALOG.PB_XML_FILTER_CLOSE.PushButton.Text
-#, fuzzy
 msgid  "~Close"
 msgstr "Mbylle"
 
@@ -1307,47 +1318,38 @@ msgid  "XML Filter List"
 msgstr ""
 
 #: source/xsltdialog/xmlfiltertabdialog.src#DLG_XML_FILTER_TABDIALOG.TabDialog.Text
-#, fuzzy
 msgid  "XML Filter: %s"
 msgstr "Parametrat e XLM Filtrit"
 
 #: source/xsltdialog/xmlfiltertabdialog.src#DLG_XML_FILTER_TABDIALOG.1.RID_XML_FILTER_TABPAGE_BASIC.PageItem.Text
-#, fuzzy
 msgid  "General"
 msgstr "Të përgjithshme"
 
 #: source/xsltdialog/xmlfiltertabdialog.src#DLG_XML_FILTER_TABDIALOG.1.RID_XML_FILTER_TABPAGE_XSLT.PageItem.Text
-#, fuzzy
 msgid  "Transformation"
 msgstr "Kthen transformimin e Fisherit."
 
 #: source/xsltdialog/xmlfilterdialogstrings.src#STR_COLUMN_HEADER_NAME.String.Text
-#, fuzzy
 msgid  "Name"
 msgstr "Emri"
 
 #: source/xsltdialog/xmlfilterdialogstrings.src#STR_COLUMN_HEADER_TYPE.String.Text
-#, fuzzy
 msgid  "Type"
 msgstr "Tipi"
 
 #: source/xsltdialog/xmlfilterdialogstrings.src#STR_UNKNOWN_APPLICATION.String.Text
-#, fuzzy
 msgid  "Unknown"
 msgstr "I panjohur"
 
 #: source/xsltdialog/xmlfilterdialogstrings.src#STR_IMPORT_ONLY.String.Text
-#, fuzzy
 msgid  "import filter"
 msgstr "AutoCAD Import Filter"
 
 #: source/xsltdialog/xmlfilterdialogstrings.src#STR_IMPORT_EXPORT.String.Text
-#, fuzzy
 msgid  "import/export filter"
 msgstr "EPS Import/Eksport Filteri"
 
 #: source/xsltdialog/xmlfilterdialogstrings.src#STR_EXPORT_ONLY.String.Text
-#, fuzzy
 msgid  "export filter"
 msgstr "XPM Eksport Filteri"
 
@@ -1380,22 +1382,18 @@ msgid  "The given import template cannot be found. Please enter a valid path."
 msgstr ""
 
 #: source/xsltdialog/xmlfilterdialogstrings.src#STR_NOT_SPECIFIED.String.Text
-#, fuzzy
 msgid  "Not specified"
 msgstr "Burimi nuk është caktuar."
 
 #: source/xsltdialog/xmlfilterdialogstrings.src#STR_DEFAULT_FILTER_NAME.String.Text
-#, fuzzy
 msgid  "New Filter"
 msgstr "Filtër i grafikave"
 
 #: source/xsltdialog/xmlfilterdialogstrings.src#STR_DEFAULT_UI_NAME.String.Text
-#, fuzzy
 msgid  "Untitled"
 msgstr "Pa titull"
 
 #: source/xsltdialog/xmlfilterdialogstrings.src#STR_UNDEFINED_FILTER.String.Text
-#, fuzzy
 msgid  "undefined filter"
 msgstr "Filtër i grafikave"
 
@@ -1408,7 +1406,6 @@ msgid  "%s XML filters have been saved in the package '%s'."
 msgstr ""
 
 #: source/xsltdialog/xmlfilterdialogstrings.src#STR_FILTER_PACKAGE.String.Text
-#, fuzzy
 msgid  "XSLT filter package"
 msgstr "Duke instaluar paketën 'aboot'..."
 
@@ -1425,99 +1422,33 @@ msgid  "No XML filter could be installed because the package '%s' does not conta
 msgstr ""
 
 #: source/xsltdialog/xmlfiltertabpagebasic.src#RID_XML_FILTER_TABPAGE_BASIC.TabPage.Text
-#, fuzzy
 msgid  "General"
 msgstr "Të përgjithshme"
 
 #: source/xsltdialog/xmlfiltertabpagebasic.src#RID_XML_FILTER_TABPAGE_BASIC.FT_XML_FILTER_NAME.FixedText.Text
-#, fuzzy
 msgid  "Filter name"
 msgstr "Emri i grupit"
 
 #: source/xsltdialog/xmlfiltertabpagebasic.src#RID_XML_FILTER_TABPAGE_BASIC.FT_XML_APPLICATION.FixedText.Text
-#, fuzzy
 msgid  "Application"
 msgstr "Aplikacioni"
 
 #: source/xsltdialog/xmlfiltertabpagebasic.src#RID_XML_FILTER_TABPAGE_BASIC.FT_XML_INTERFACE_NAME.FixedText.Text
 msgid  "Name of\nfile type"
-msgstr ""
+msgstr "Zgjedh tipin e dokumentit"
 
 #: source/xsltdialog/xmlfiltertabpagebasic.src#RID_XML_FILTER_TABPAGE_BASIC.FT_XML_EXTENSION.FixedText.Text
-#, fuzzy
 msgid  "File extension"
 msgstr "Emri i fajllit pa zgjerim"
 
 #: source/xsltdialog/xmlfiltertabpagebasic.src#RID_XML_FILTER_TABPAGE_BASIC.FT_XML_DESCRIPTION.FixedText.Text
-#, fuzzy
 msgid  "Comments"
 msgstr "Komentet"
 
 #: source/xsltdialog/xmlfileview.src#DLG_XML_SOURCE_FILE_DIALOG.WorkWindow.Text
-#, fuzzy
 msgid  "XML Filter output"
 msgstr "Parametrat e XLM Filtrit"
 
 #: source/xsltdialog/xmlfileview.src#DLG_XML_SOURCE_FILE_DIALOG.PB_VALIDATE.PushButton.Text
 msgid  "~Validate"
 msgstr ""
-
-#: source/config/fragments/types/writerglobal8.xcu#writerglobal8.UIName
-#, fuzzy
-msgid  "Writer 8 Master Document"
-msgstr "StarOffice 5.0 Master Dokument"
-
-#: source/config/fragments/types/impress8.xcu#impress8.UIName
-#, fuzzy
-msgid  "Impress 8"
-msgstr "%PRODUCTNAME Impress"
-
-#: source/config/fragments/types/calc8_template.xcu#calc8_template.UIName
-#, fuzzy
-msgid  "Calc 8 Template"
-msgstr "StarImpress 4.0 Shabllon"
-
-#: source/config/fragments/types/writer8.xcu#writer8.UIName
-#, fuzzy
-msgid  "Writer 8"
-msgstr "%PRODUCTNAME Writer"
-
-#: source/config/fragments/types/impress8_template.xcu#impress8_template.UIName
-#, fuzzy
-msgid  "Impress 8 Template"
-msgstr "StarImpress 4.0 Shabllon"
-
-#: source/config/fragments/types/draw8_template.xcu#draw8_template.UIName
-#, fuzzy
-msgid  "Draw 8 Template"
-msgstr "StarImpress 4.0 Shabllon"
-
-#: source/config/fragments/types/writerweb8_writer_template.xcu#writerweb8_writer_template.UIName
-#, fuzzy
-msgid  "Writer/Web 8 Template"
-msgstr "%PRODUCTNAME Writer/Web"
-
-#: source/config/fragments/types/draw8.xcu#draw8.UIName
-#, fuzzy
-msgid  "Draw 8"
-msgstr "Vizato tekstin "
-
-#: source/config/fragments/types/calc8.xcu#calc8.UIName
-#, fuzzy
-msgid  "Calc 8"
-msgstr "%PRODUCTNAME Calc"
-
-#: source/config/fragments/types/math8.xcu#math8.UIName
-#, fuzzy
-msgid  "Math 8"
-msgstr "Matematikë"
-
-#: source/config/fragments/types/writer8_template.xcu#writer8_template.UIName
-#, fuzzy
-msgid  "Writer 8 Template"
-msgstr "StarImpress 4.0 Shabllon"
-
-#: source/config/fragments/types/chart8.xcu#chart8.UIName
-#, fuzzy
-msgid  "Chart 8"
-msgstr "Diagram"

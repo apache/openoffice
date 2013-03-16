@@ -41,6 +41,11 @@ msgstr "Виберіть заголовки, легенди та парамет�
 msgid  "Display grids"
 msgstr "Відображати сітку"
 
+#: source/controller/dialogs/tp_3D_SceneGeometry.src#CUSTOMUNITTEXT_DEGREE.#define.CustomUnitText
+#, fuzzy
+msgid  " degrees"
+msgstr " градусів"
+
 #: source/controller/dialogs/tp_3D_SceneGeometry.src#TP_3D_SCENEGEOMETRY.CBX_RIGHT_ANGLED_AXES.CheckBox.Text
 #, fuzzy
 msgid  "~Right-angled axes"
@@ -65,11 +70,6 @@ msgstr "Поворот вздовж осі ~Z"
 #, fuzzy
 msgid  "~Perspective"
 msgstr "~Перспектива"
-
-#: source/controller/dialogs/tp_3D_SceneGeometry.src#CUSTOMUNITTEXT_DEGREE.#define.CustomUnitText
-#, fuzzy
-msgid  " degrees"
-msgstr " градусів"
 
 #: source/controller/dialogs/Strings_AdditionalControls.src#STR_3DSCHEME_SIMPLE.String.Text
 #, fuzzy
@@ -112,27 +112,22 @@ msgid  "~Insert in sheet"
 msgstr "Вст~авити у аркуш"
 
 #: source/controller/dialogs/res_BarGeometry.src#LB_BAR_GEOMETRY.item1.StringList.item
-#, fuzzy
 msgid  "Box"
 msgstr "Блок"
 
 #: source/controller/dialogs/res_BarGeometry.src#LB_BAR_GEOMETRY.item2.StringList.item
-#, fuzzy
 msgid  "Cylinder"
 msgstr "Циліндр"
 
 #: source/controller/dialogs/res_BarGeometry.src#LB_BAR_GEOMETRY.item3.StringList.item
-#, fuzzy
 msgid  "Cone"
 msgstr "Конус"
 
 #: source/controller/dialogs/res_BarGeometry.src#LB_BAR_GEOMETRY.item4.StringList.item
-#, fuzzy
 msgid  "Pyramid"
 msgstr "Піраміда"
 
 #: source/controller/dialogs/dlg_DataSource.src#DLG_DATA_SOURCE.TabDialog.Text
-#, fuzzy
 msgid  "Data Ranges"
 msgstr "Діапазон даних"
 
@@ -279,7 +274,6 @@ msgid  "Bubble Chart"
 msgstr ""
 
 #: source/controller/dialogs/dlg_ShapeFont.src#DLG_SHAPE_FONT.TabDialog.Text
-#, fuzzy
 msgid  "Character"
 msgstr "Шрифт"
 
@@ -288,7 +282,6 @@ msgid  "Font"
 msgstr ""
 
 #: source/controller/dialogs/dlg_ShapeFont.src#DLG_SHAPE_FONT.1.RID_SVXPAGE_CHAR_EFFECTS.PageItem.Text
-#, fuzzy
 msgid  "Font Effects"
 msgstr "Ефекти шрифту"
 
@@ -297,7 +290,6 @@ msgid  "Font Position"
 msgstr ""
 
 #: source/controller/dialogs/dlg_View3D.src#DLG_3D_VIEW.TabDialog.Text
-#, fuzzy
 msgid  "3D View"
 msgstr "Тривимірний вигляд"
 
@@ -330,17 +322,14 @@ msgid  "The major and minor interval need to be greater or equal to the resoluti
 msgstr ""
 
 #: source/controller/dialogs/dlg_DataEditor.src#DLG_DIAGRAM_DATA.ModalDialog.Text
-#, fuzzy
 msgid  "Data Table"
 msgstr "Таблиця даних"
 
 #: source/controller/dialogs/dlg_DataEditor.src#DLG_DIAGRAM_DATA.TBX_DATA.TBI_DATA_INSERT_ROW.ToolBoxItem.Text
-#, fuzzy
 msgid  "Insert Row"
 msgstr "Вставити рядок"
 
 #: source/controller/dialogs/dlg_DataEditor.src#DLG_DIAGRAM_DATA.TBX_DATA.TBI_DATA_INSERT_COL.ToolBoxItem.Text
-#, fuzzy
 msgid  "Insert Series"
 msgstr "Вставити ряд"
 
@@ -349,22 +338,18 @@ msgid  "Insert Text Column"
 msgstr ""
 
 #: source/controller/dialogs/dlg_DataEditor.src#DLG_DIAGRAM_DATA.TBX_DATA.TBI_DATA_DELETE_ROW.ToolBoxItem.Text
-#, fuzzy
 msgid  "Delete Row"
 msgstr "Видалити рядок"
 
 #: source/controller/dialogs/dlg_DataEditor.src#DLG_DIAGRAM_DATA.TBX_DATA.TBI_DATA_DELETE_COL.ToolBoxItem.Text
-#, fuzzy
 msgid  "Delete Series"
 msgstr "Видалити ряд"
 
 #: source/controller/dialogs/dlg_DataEditor.src#DLG_DIAGRAM_DATA.TBX_DATA.TBI_DATA_SWAP_COL.ToolBoxItem.Text
-#, fuzzy
 msgid  "Move Series Right"
 msgstr "Перемістити ряд праворуч"
 
 #: source/controller/dialogs/dlg_DataEditor.src#DLG_DIAGRAM_DATA.TBX_DATA.TBI_DATA_SWAP_ROW.ToolBoxItem.Text
-#, fuzzy
 msgid  "Move Row Down"
 msgstr "Перемістити рядок вниз"
 
@@ -798,22 +783,18 @@ msgid  "Te~xt direction"
 msgstr "Напрямок тексту"
 
 #: source/controller/dialogs/res_TextSeparator.src#LB_TEXT_SEPARATOR.item1.StringList.item
-#, fuzzy
 msgid  "Space"
 msgstr "Пробіл"
 
 #: source/controller/dialogs/res_TextSeparator.src#LB_TEXT_SEPARATOR.item2.StringList.item
-#, fuzzy
 msgid  "Comma"
 msgstr "Кома"
 
 #: source/controller/dialogs/res_TextSeparator.src#LB_TEXT_SEPARATOR.item3.StringList.item
-#, fuzzy
 msgid  "Semicolon"
 msgstr "Крапка з комою"
 
 #: source/controller/dialogs/res_TextSeparator.src#LB_TEXT_SEPARATOR.item4.StringList.item
-#, fuzzy
 msgid  "New line"
 msgstr "Кінець рядка"
 
@@ -838,37 +819,30 @@ msgid  "~Rounded edges"
 msgstr "Закр~углені межі"
 
 #: source/controller/dialogs/dlg_InsertAxis_Grid.src#DLG_AXIS_OR_GRID.FL_PRIMARY_AXIS.FixedLine.Text
-#, fuzzy
 msgid  "Axes"
 msgstr "Осі"
 
 #: source/controller/dialogs/dlg_InsertAxis_Grid.src#DLG_AXIS_OR_GRID.FL_PRIMARY_GRID.FixedLine.Text
-#, fuzzy
 msgid  "Major grids"
 msgstr "Основні сітки"
 
 #: source/controller/dialogs/dlg_InsertAxis_Grid.src#DLG_AXIS_OR_GRID.CB_X_PRIMARY.CheckBox.Text
-#, fuzzy
 msgid  "~X axis"
 msgstr "Вісь ~X"
 
 #: source/controller/dialogs/dlg_InsertAxis_Grid.src#DLG_AXIS_OR_GRID.CB_Y_PRIMARY.CheckBox.Text
-#, fuzzy
 msgid  "~Y axis"
 msgstr "Вісь ~Y"
 
 #: source/controller/dialogs/dlg_InsertAxis_Grid.src#DLG_AXIS_OR_GRID.CB_Z_PRIMARY.CheckBox.Text
-#, fuzzy
 msgid  "~Z axis"
 msgstr "Вісь ~Z"
 
 #: source/controller/dialogs/dlg_InsertAxis_Grid.src#DLG_AXIS_OR_GRID.FL_SECONDARY_AXIS.FixedLine.Text
-#, fuzzy
 msgid  "Secondary axes"
 msgstr "Додаткові осі"
 
 #: source/controller/dialogs/dlg_InsertAxis_Grid.src#DLG_AXIS_OR_GRID.FL_SECONDARY_GRID.FixedLine.Text
-#, fuzzy
 msgid  "Minor grids"
 msgstr "Додаткові сітки"
 
@@ -914,7 +888,6 @@ msgid  "Indents & Spacing"
 msgstr ""
 
 #: source/controller/dialogs/dlg_ShapeParagraph.src#DLG_SHAPE_PARAGRAPH.1.RID_SVXPAGE_ALIGN_PARAGRAPH.PageItem.Text
-#, fuzzy
 msgid  "Alignment"
 msgstr "Вирівнювання"
 
@@ -927,57 +900,46 @@ msgid  "Tab"
 msgstr ""
 
 #: source/controller/dialogs/Strings.src#STR_DLG_CHART_WIZARD.String.Text
-#, fuzzy
 msgid  "Chart Wizard"
 msgstr "Майстер діаграм"
 
 #: source/controller/dialogs/Strings.src#STR_DLG_SMOOTH_LINE_PROPERTIES.String.Text
-#, fuzzy
 msgid  "Smooth Lines"
 msgstr "Згладжування ліній"
 
 #: source/controller/dialogs/Strings.src#STR_DLG_NUMBERFORMAT_FOR_PERCENTAGE_VALUE.String.Text
-#, fuzzy
 msgid  "Number Format for Percentage Value"
 msgstr "Формат чисел для значень у відсотках"
 
 #: source/controller/dialogs/Strings.src#STR_PAGE_CHARTTYPE.String.Text
-#, fuzzy
 msgid  "Chart Type"
 msgstr "Тип діаграми"
 
 #: source/controller/dialogs/Strings.src#STR_PAGE_DATA_RANGE.String.Text
-#, fuzzy
 msgid  "Data Range"
 msgstr "Діапазон даних"
 
 #: source/controller/dialogs/Strings.src#STR_PAGE_CHART_ELEMENTS.String.Text
-#, fuzzy
 msgid  "Chart Elements"
 msgstr "Елементи діаграм"
 
 #: source/controller/dialogs/Strings.src#STR_PAGE_CHART_LOCATION.String.Text
-#, fuzzy
 msgid  "Chart Location"
 msgstr "Розташування діаграм"
 
 #: source/controller/dialogs/Strings.src#STR_PAGE_LINE.String.Text
-#, fuzzy
 msgid  "Line"
 msgstr "Лінія"
 
 #: source/controller/dialogs/Strings.src#STR_PAGE_BORDER.String.Text
-#, fuzzy
 msgid  "Borders"
 msgstr "Обрамлення"
 
 #: source/controller/dialogs/Strings.src#STR_PAGE_AREA.String.Text
-#, fuzzy
 msgid  "Area"
 msgstr "Область"
 
 #: source/controller/dialogs/Strings.src#STR_PAGE_TRANSPARENCY.String.Text
-#, fuzzy
 msgid  "Transparency"
 msgstr "Прозорість"
 
@@ -986,17 +948,14 @@ msgid  "Font"
 msgstr ""
 
 #: source/controller/dialogs/Strings.src#STR_PAGE_FONT_EFFECTS.String.Text
-#, fuzzy
 msgid  "Font Effects"
 msgstr "Ефекти шрифту"
 
 #: source/controller/dialogs/Strings.src#STR_PAGE_NUMBERS.String.Text
-#, fuzzy
 msgid  "Numbers"
 msgstr "Числа"
 
 #: source/controller/dialogs/Strings.src#STR_PAGE_POSITION.String.Text
-#, fuzzy
 msgid  "Position"
 msgstr "Позиція"
 
@@ -1009,17 +968,14 @@ msgid  "Down"
 msgstr ""
 
 #: source/controller/dialogs/Strings.src#STR_PAGE_LAYOUT.String.Text
-#, fuzzy
 msgid  "Layout"
 msgstr "Розмітка"
 
 #: source/controller/dialogs/Strings.src#STR_PAGE_OPTIONS.String.Text
-#, fuzzy
 msgid  "Options"
 msgstr "Параметри"
 
 #: source/controller/dialogs/Strings.src#STR_PAGE_SCALE.String.Text
-#, fuzzy
 msgid  "Scale"
 msgstr "Масштаб"
 
@@ -1028,32 +984,26 @@ msgid  "Positioning"
 msgstr ""
 
 #: source/controller/dialogs/Strings.src#STR_PAGE_TRENDLINE_TYPE.String.Text
-#, fuzzy
 msgid  "Type"
 msgstr "Тип"
 
 #: source/controller/dialogs/Strings.src#STR_PAGE_YERROR_BARS.String.Text
-#, fuzzy
 msgid  "Y Error Bars"
 msgstr "Штрихи помилок Y"
 
 #: source/controller/dialogs/Strings.src#STR_PAGE_ALIGNMENT.String.Text
-#, fuzzy
 msgid  "Alignment"
 msgstr "Вирівнювання"
 
 #: source/controller/dialogs/Strings.src#STR_PAGE_PERSPECTIVE.String.Text
-#, fuzzy
 msgid  "Perspective"
 msgstr "Перспектива"
 
 #: source/controller/dialogs/Strings.src#STR_PAGE_APPEARANCE.String.Text
-#, fuzzy
 msgid  "Appearance"
 msgstr "Зовнішній вигляд"
 
 #: source/controller/dialogs/Strings.src#STR_PAGE_ILLUMINATION.String.Text
-#, fuzzy
 msgid  "Illumination"
 msgstr "Освітлення"
 
@@ -1063,35 +1013,29 @@ msgstr ""
 
 #: source/controller/dialogs/Strings.src#STR_OBJECT_AVERAGE_LINE_WITH_PARAMETERS.String.Text
 msgid  "Mean value line with value %AVERAGE_VALUE and standard deviation %STD_DEVIATION"
-msgstr ""
+msgstr "Лінія арифметичного середнього зі значенням %AVERAGE_VALUE та стандартним відхиленням %STD_DEVIATION"
 
 #: source/controller/dialogs/Strings.src#STR_OBJECT_AXIS.String.Text
-#, fuzzy
 msgid  "Axis"
 msgstr "Вісь"
 
 #: source/controller/dialogs/Strings.src#STR_OBJECT_AXIS_X.String.Text
-#, fuzzy
 msgid  "X Axis"
 msgstr "Вісь X"
 
 #: source/controller/dialogs/Strings.src#STR_OBJECT_AXIS_Y.String.Text
-#, fuzzy
 msgid  "Y Axis"
 msgstr "Вісь Y"
 
 #: source/controller/dialogs/Strings.src#STR_OBJECT_AXIS_Z.String.Text
-#, fuzzy
 msgid  "Z Axis"
 msgstr "Вісь Z"
 
 #: source/controller/dialogs/Strings.src#STR_OBJECT_SECONDARY_X_AXIS.String.Text
-#, fuzzy
 msgid  "Secondary X Axis"
 msgstr "Додаткові осі Y"
 
 #: source/controller/dialogs/Strings.src#STR_OBJECT_SECONDARY_Y_AXIS.String.Text
-#, fuzzy
 msgid  "Secondary Y Axis"
 msgstr "Додаткові осі Y"
 
@@ -1318,12 +1262,14 @@ msgid  "Values: %POINTVALUES"
 msgstr "Значення: %POINTVALUES"
 
 #: source/controller/dialogs/Strings.src#STR_TIP_DATAPOINT.String.Text
+#, fuzzy
 msgid  "Data Point %POINTNUMBER, data series %SERIESNUMBER, values: %POINTVALUES"
-msgstr ""
+msgstr "Точка даних %POINTNUMBER, ряд даних %SERIESNUMBER, значення: %POINTVALUES"
 
 #: source/controller/dialogs/Strings.src#STR_STATUS_DATAPOINT_MARKED.String.Text
+#, fuzzy
 msgid  "Data point %POINTNUMBER in data series %SERIESNUMBER selected, values: %POINTVALUES"
-msgstr ""
+msgstr "Виділено точку даних %POINTNUMBER у ряду даних %SERIESNUMBER, значення: %POINTVALUES"
 
 #: source/controller/dialogs/Strings.src#STR_STATUS_OBJECT_MARKED.String.Text
 #, fuzzy
@@ -1512,8 +1458,9 @@ msgid  "Select Range for Negative Error Bars"
 msgstr "Виділіть діапазон від'ємних штрихів помилок"
 
 #: source/controller/dialogs/Strings.src#STR_DATA_EDITOR_INCORRECT_INPUT.String.Text
+#, fuzzy
 msgid  "Your last input is incorrect.\nIgnore this change and close the dialog?"
-msgstr ""
+msgstr "Останні введені дані - некоректні.\nІгнорувати зміни та закрити діалогове вікно?"
 
 #: source/controller/dialogs/Strings.src#STR_TEXT_DIRECTION_LTR.String.Text
 msgid  "Left-to-right"

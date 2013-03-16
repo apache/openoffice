@@ -137,7 +137,7 @@ msgstr "Sačuvaj"
 
 #: source/basicide/basidesh.src#RID_STR_SOURCETOBIG.String.Text
 msgid  "The source text is too large and can be neither compiled nor saved.\nDelete some of the comments or transfer some methods into another module."
-msgstr ""
+msgstr "Izvorni kod je prevelik i ne može biti preveden niti sačuvan.\nObrišite deo komentara ili prebacite neke metode u drugi modul."
 
 #: source/basicide/basidesh.src#RID_STR_ERROROPENSTORAGE.String.Text
 msgid  "Error opening file"
@@ -201,7 +201,7 @@ msgstr "Datoteka „XX“ već postoji"
 
 #: source/basicide/basidesh.src#RID_STR_CANNOTRUNMACRO.String.Text
 msgid  "For security reasons, you cannot run this macro.\n\nFor more information, check the security settings."
-msgstr ""
+msgstr "Ne možete pokrenuti ovaj makro iz bezbednosnih razloga.\n\nZa više informacija proverite podešavanja bezbednosti."
 
 #: source/basicide/basidesh.src#RID_STR_COMPILEERROR.String.Text
 msgid  "Compile Error: "
@@ -217,7 +217,7 @@ msgstr "Traženi pojam nije pronađen"
 
 #: source/basicide/basidesh.src#RID_STR_SEARCHFROMSTART.String.Text
 msgid  "Search to last module complete. Continue at first module?"
-msgstr ""
+msgstr "Pretraživanje do poslednjeg modula je završeno. Da nastavim od prvog modula?"
 
 #: source/basicide/basidesh.src#RID_STR_SEARCHREPLACES.String.Text
 msgid  "Search key replaced XX times"
@@ -373,7 +373,7 @@ msgstr "Morate uneti naziv."
 
 #: source/basicide/basidesh.src#RID_STR_WILLSTOPPRG.String.Text
 msgid  "You will have to restart the program after this edit.\nContinue?"
-msgstr ""
+msgstr "Posle ovog uređivanja program se mora ponovo pokrenuti.\nDa nastavim?"
 
 #: source/basicide/basidesh.src#RID_STR_SEARCHALLMODULES.String.Text
 msgid  "Do you want to replace the text in all active modules?"
@@ -509,7 +509,7 @@ msgstr "Uvoz prozorčeta - Naziv već postoji"
 
 #: source/basicide/basidesh.src#RID_STR_DLGIMP_CLASH_TEXT.String.Text
 msgid  "The library already contains a dialog with the name:\n\n$(ARG1)\n\nRename dialog to keep current dialog or replace existing dialog.\n "
-msgstr ""
+msgstr "Biblioteka već sadrži prozorče sa istim imenom:\n\n$(ARG1)\n\nPreimenujte prozorče da sačuvate postojeće ili ga zamenite novim.\n "
 
 #: source/basicide/basidesh.src#RID_STR_DLGIMP_MISMATCH_ADD.String.Text
 msgid  "Add"
@@ -525,7 +525,7 @@ msgstr "Uvoz prozorčeta - Nepoklapanje jezika"
 
 #: source/basicide/basidesh.src#RID_STR_DLGIMP_MISMATCH_TEXT.String.Text
 msgid  "The dialog to be imported supports other languages than the target library.\n\nAdd these languages to the library to keep additional language resources provided by the dialog or omit them to stay with the current library languages.\n\nNote: For languages not supported by the dialog the resources of the dialog's default language will be used.\n "
-msgstr ""
+msgstr "Prozorče podržava jezike koji nisu u ciljnoj biblioteci\n\nDodajte jezike u biblioteku da sačuvate poruke iz prozorčeta ili iz izostavite kako biste zadržali samo jezike iz biblioteke.\n\nNapomena: Za jezike iz biblioteke koji nisu u prozorčetu biće korišćene podrazumevane poruke.\n "
 
 #: source/basicide/basicprint.src#RID_PRINTDLG_STRLIST.item1.ItemList.item
 msgid  "Print range"
@@ -757,7 +757,7 @@ msgstr "Podrazumevani"
 
 #: source/dlged/managelang.src#RID_DLG_MANAGE_LANGUAGE.FT_INFO.FixedText.Text
 msgid  "The default language is used if no localization for a user interface locale is present. Furthermore all strings from the default language are copied to resources of newly added languages."
-msgstr ""
+msgstr "Podrazumevani jezik se koristi ukoliko ne postoji lokalizacija za korisničko okruženje. Uz to će se sva lokalizacija iz podrazumevanog jezika kopirati u resurse kasnije dodatih jezika."
 
 #: source/dlged/managelang.src#RID_DLG_MANAGE_LANGUAGE.PB_CLOSE.OKButton.Text
 msgid  "~Close"
@@ -781,7 +781,7 @@ msgstr "Obriši jezičke resurse"
 
 #: source/dlged/managelang.src#RID_QRYBOX_LANGUAGE.QueryBox.Message
 msgid  "You are about to delete the resources for the selected language(s). All user interface strings for this language(s) will be deleted.\n\nDo you want to delete the resources of the selected language(s)?"
-msgstr ""
+msgstr "Ovim brišete resurse izabranih jezika. Sve poruke iz korisničkog okruženja na ovom jeziku će biti uklonjene.\n\nDa li želite da obrišete resurse izabranih jezika?"
 
 #: source/dlged/managelang.src#RID_DLG_SETDEF_LANGUAGE.ModalDialog.Text
 msgid  "Set Default User Interface Language"
@@ -793,7 +793,7 @@ msgstr "Podrazumevani jezik"
 
 #: source/dlged/managelang.src#RID_DLG_SETDEF_LANGUAGE.FT_DEF_INFO.FixedText.Text
 msgid  "Select a language to define the default user interface language. All currently present strings will be assigned to the resources created for the selected language."
-msgstr ""
+msgstr "Izaberite jezik podrazumevanog korisničkog okruženja. Sve prisutne poruke će biti pridružene resursima napravljenim za izabrani jezik."
 
 #: source/dlged/managelang.src#RID_DLG_SETDEF_LANGUAGE.STR_ADDLANG_TITLE.String.Text
 msgid  "Add User Interface Languages"
@@ -805,7 +805,7 @@ msgstr "Dostupni jezici"
 
 #: source/dlged/managelang.src#RID_DLG_SETDEF_LANGUAGE.STR_ADDLANG_INFO.String.Text
 msgid  "Select languages to be added. Resources for these languages will be created in the library. Strings of the current default user interface language will be copied to these new resources by default."
-msgstr ""
+msgstr "Izaberite jezike koje želite da dodate. Resursi za ove jezike će biti formirani u biblioteci. Lokalizovane poruke podrazumevanog jezika biće ubačene u ovaj novi resurs."
 
 #: source/dlged/dlgresid.src#RID_STR_BRWTITLE_PROPERTIES.String.Text
 msgid  "Properties: "

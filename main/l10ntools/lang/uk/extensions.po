@@ -57,7 +57,7 @@ msgstr "Заголовок джерела даних"
 
 #: source/abpilot/abspilot.src#RID_PAGE_SELECTABTYPE.FT_TYPE_HINTS.FixedText.Text
 msgid  "%PRODUCTNAME lets you access address data already present in your system. To do this, a %PRODUCTNAME data source will be created in which your address data is available in tabular form.\n\nThis wizard helps you create the data source."
-msgstr ""
+msgstr "%PRODUCTNAME надає доступ до адресних даних вже існуючих у вашій системі. Для цього будуть створені джерела даних %PRODUCTNAME, в яких ваші адресні будуть доступні у вигляді таблиць.\n\nЦей помічник допоможе створити джерело даних."
 
 #: source/abpilot/abspilot.src#RID_PAGE_SELECTABTYPE.FL_TYPE.FixedLine.Text
 msgid  "Please select the type of your external address book:"
@@ -109,7 +109,7 @@ msgstr "Інше зовнішнє джерело даних"
 
 #: source/abpilot/abspilot.src#RID_PAGE_ADMININVOKATION.FT_ADMINEXPLANATION.FixedText.Text
 msgid  "To set up the new data source, additional information is required.\n\nClick the following button to open another dialog in which you then enter the necessary information."
-msgstr ""
+msgstr "Для створення нових джерел даних потрібні додаткові параметри.\n\nНатисніть розташовану нижче кнопку, щоб відкрити діалогове вікно, у якому можна ввести необхідну інформацію."
 
 #: source/abpilot/abspilot.src#RID_PAGE_ADMININVOKATION.PB_INVOKE_ADMIN_DIALOG.PushButton.Text
 msgid  "Settings"
@@ -117,15 +117,15 @@ msgstr "Параметри"
 
 #: source/abpilot/abspilot.src#RID_PAGE_ADMININVOKATION.FT_ERROR.FixedText.Text
 msgid  "The connection to the data source could not be established.\nBefore you proceed, please check the settings made, or (on the previous page) choose another address data source type."
-msgstr ""
+msgstr "Неможливо з'єднатись з джерелом даних.\nПерш ніж продовжити процес, перевірте параметри або виберіть (на попередній сторінці) інший тип джерела."
 
 #: source/abpilot/abspilot.src#RID_PAGE_TABLESELECTION_AB.FL_TOOMUCHTABLES.FixedText.Text
 msgid  "The external data source you have chosen contains more than one address book.\nPlease select the one you mainly want to work with:"
-msgstr ""
+msgstr "Вибрані зовнішні джерела даних містять декілька адресних книг.\nВиберіть вручну ті, з якими ви будете працювати далі."
 
 #: source/abpilot/abspilot.src#RID_PAGE_FIELDMAPPING.FT_FIELDASSIGMENTEXPL.FixedText.Text
-msgid  "To incorporate the address data in your templates, %PRODUCTNAME has to know which fields contain which data.\n\nFor instance, you could have stored the e-mail addresses in a field named "email", or "E-mail" or "EM" - or something completely different.\n\nClick the button below to open another dialog where you can enter the settings for your data source."
-msgstr ""
+msgid  "To incorporate the address data in your templates, %PRODUCTNAME has to know which fields contain which data.\n\nFor instance, you could have stored the e-mail addresses in a field named \"email\", or \"E-mail\" or \"EM\" - or something completely different.\n\nClick the button below to open another dialog where you can enter the settings for your data source."
+msgstr "Для використання адрес у шаблонах, %PRODUCTNAME повинен знати поля та конкретні дані, які містяться у цих полях.\n\nНаприклад, адреси електронної пошти можуть зберігатись у полі з назвою \"E-Mail\" або \"Електронна пошта\" або з якоюсь іншою назвою.\n\nНатискаючи на розташовану нижче кнопку, можна ввести ці параметри."
 
 #: source/abpilot/abspilot.src#RID_PAGE_FIELDMAPPING.PB_INVOKE_FIELDS_DIALOG.PushButton.Text
 msgid  "Field Assignment"
@@ -133,7 +133,7 @@ msgstr "Призначення поля"
 
 #: source/abpilot/abspilot.src#RID_PAGE_FINAL.FT_FINISH_EXPL.FixedText.Text
 msgid  "That was all the information necessary to integrate your address data into %PRODUCTNAME.\n\nNow, just enter the name under which you want to register the data source in %PRODUCTNAME."
-msgstr ""
+msgstr "Інформацію, яка необхідна для інтеграції даних у %PRODUCTNAME зібрано.\n\nЗалишилось ввести назву, з якою джерело даних буде зареєстроване у %PRODUCTNAME."
 
 #: source/abpilot/abspilot.src#RID_PAGE_FINAL.FT_LOCATION.FixedText.Text
 msgid  "Location"
@@ -153,7 +153,7 @@ msgstr "Назва адресної книги"
 
 #: source/abpilot/abspilot.src#RID_PAGE_FINAL.FT_DUPLICATENAME.FixedText.Text
 msgid  "Another data source already has this name. As data sources have to have globally unique names, you need to choose another one."
-msgstr ""
+msgstr "Джерело даних з такою назвою вже існує. Назви первинних даних мають бути унікальними. Потрібно обрати іншу назву."
 
 #: source/abpilot/abspilot.src#RID_ERR_NEEDTYPESELECTION.ErrorBox.Message
 msgid  "Please select a type of address book."
@@ -161,7 +161,7 @@ msgstr "Виберіть тип адресної книги."
 
 #: source/abpilot/abspilot.src#RID_QRY_NOTABLES.QueryBox.Message
 msgid  "The data source does not contain any tables.\nDo you want to set it up as an address data source, anyway?"
-msgstr ""
+msgstr "Ці дані не містять жодної таблиці.\nВстановити їх у якості джерел даних адрес?"
 
 #: source/abpilot/abspilot.src#RID_STR_DEFAULT_NAME.String.Text
 msgid  "Addresses"
@@ -184,8 +184,8 @@ msgid  "Address Data - Field Assignment"
 msgstr "Адресні дані - призначення полів"
 
 #: source/abpilot/abspilot.src#RID_STR_NOFIELDSASSIGNED.String.Text
-msgid  "There are no fields assigned at this time.\nYou can either assign fields now or do so later by first choosing:\n"File - Template - Address Book Source...""
-msgstr ""
+msgid  "There are no fields assigned at this time.\nYou can either assign fields now or do so later by first choosing:\n\"File - Template - Address Book Source...\""
+msgstr "Наразі поля не призначені.\n Можна призначити їх зараз, а можна зробити це пізніше,\nв меню «Файл - Шаблони - Джерело адресної книги...»"
 
 #: source/bibliography/toolbar.src#RID_BIB_TOOLBAR.TBC_FT_SOURCE.ToolBoxItem.Text
 msgid  "Table"
@@ -493,7 +493,7 @@ msgstr "Елемент керування"
 
 #: source/dbpilots/listcombopages.src#RID_PAGE_LCW_CONTENTSELECTION_TABLE.FT_SELECTTABLE_LABEL.FixedText.Text
 msgid  "On the right side, you see all the tables from the data source of the form.\n\n\nChoose the table from which the data should be used as basis for the list content:"
-msgstr ""
+msgstr "Праворуч показані всі таблиці джерел даних форми.\n\n\nВиберіть таблицю, яка має слугувати основою для змісту списку:"
 
 #: source/dbpilots/listcombopages.src#RID_PAGE_LCW_CONTENTSELECTION_FIELD.TabPage.Text
 msgid  "Field Selection"
@@ -513,7 +513,7 @@ msgstr "Вміст вибраного поля буде показаний у п
 
 #: source/dbpilots/listcombopages.src#RID_PAGE_LCW_CONTENTSELECTION_FIELD.STR_FIELDINFO_LISTBOX.String.Text
 msgid  "The contents of the selected field will be shown in the list box if the linked fields are identical."
-msgstr ""
+msgstr "Вміст вибраного поля буде показаний у списку, якщо зв'язані поля збігаються."
 
 #: source/dbpilots/listcombopages.src#RID_PAGE_LCW_FIELDLINK.TabPage.Text
 msgid  "Field Link"
@@ -521,7 +521,7 @@ msgstr "Зв'язок полів"
 
 #: source/dbpilots/listcombopages.src#RID_PAGE_LCW_FIELDLINK.FT_FIELDLINK_DESC.FixedText.Text
 msgid  "This is where you select fields with matching contents so that the value from the display field will be shown."
-msgstr ""
+msgstr "Для відображення значення поля, виберіть поля, із узгодженим змістом."
 
 #: source/dbpilots/listcombopages.src#RID_PAGE_LCW_FIELDLINK.FT_VALUELISTFIELD.FixedText.Text
 msgid  "Field from the ~Value Table"
@@ -533,7 +533,7 @@ msgstr "Поле з таблиці ~списку"
 
 #: source/dbpilots/listcombopages.src#RID_STR_COMBOWIZ_DBFIELD.String.Text
 msgid  "You can either save the value of the combo box in a database field or use it for display purposes."
-msgstr ""
+msgstr "Значення поля зі списком можна зберігати у полі бази даних або використовувати його лише для відображення."
 
 #: source/dbpilots/gridpages.src#RID_PAGE_GW_FIELDSELECTION.TabPage.Text
 msgid  "Field Selection"
@@ -589,7 +589,7 @@ msgstr "Дані"
 
 #: source/dbpilots/commonpagesdbp.src#RID_PAGE_TABLESELECTION.FT_EXPLANATION.FixedText.Text
 msgid  "Currently, the form the control belongs to is not (or not completely) bound to a data source.\n\nPlease choose a data source and a table.\n\n\nPlease note that the settings made on this page will take effect immediately upon leaving the page."
-msgstr ""
+msgstr "Форма, до якої відноситься елемент керування, наразі не зв'язана (або не повністю зв'язана) з даними бази. \n\nВиберіть джерело даних або таблицю.\n\n\nЗауважте, щ зміни на цій сторінці набирають сили одразу після того, як ви залишаєте цю сторінку."
 
 #: source/dbpilots/commonpagesdbp.src#RID_PAGE_TABLESELECTION.FT_DATASOURCE.FixedText.Text
 msgid  "~Data source:"
@@ -681,7 +681,7 @@ msgstr "Значення поля"
 
 #: source/dbpilots/groupboxpages.src#RID_PAGE_OPTIONVALUES.FT_OPTIONVALUES_EXPL.FixedText.Text
 msgid  "When you select an option, the option group is given a specific value."
-msgstr ""
+msgstr "Коли ви виберете принаймні один параметр, то групі параметрів буде призначено певне значення."
 
 #: source/dbpilots/groupboxpages.src#RID_PAGE_OPTIONVALUES.FT_OPTIONVALUES.FixedText.Text
 msgid  "Which ~value do you want to assign to each option?"
@@ -705,7 +705,7 @@ msgstr "Це була вся інформація, необхідна для с�
 
 #: source/dbpilots/groupboxpages.src#RID_STR_GROUPWIZ_DBFIELD.String.Text
 msgid  "You can either save the value of the option group in a database field or use it for a later action."
-msgstr ""
+msgstr "Значення групи параметрів можна зберегти у полі бази даних або використати його пізніше."
 
 #: source/preload/preload.src#RID_DLG_OEMWIZARD.PB_PREV.PushButton.Text
 msgid  "<< Back"
@@ -745,7 +745,7 @@ msgstr "Ліцензійна угода"
 
 #: source/preload/preload.src#RID_TP_LICENSE.FT_INFO1.FixedText.Text
 msgid  "Please follow these steps to proceed with the installation:"
-msgstr ""
+msgstr "Прочитайте наступну ліцензійну угоду. Щоб побачити решту тексту скористайтесь смугою прокрутки."
 
 #: source/preload/preload.src#RID_TP_LICENSE.FT_INFO2_1.FixedText.Text
 msgid  "1."
@@ -753,7 +753,7 @@ msgstr "1."
 
 #: source/preload/preload.src#RID_TP_LICENSE.FT_INFO2.FixedText.Text
 msgid  "View the complete License Agreement. Please use the scroll bar or the '%PAGEDOWN' button in this dialog to view the entire license text."
-msgstr ""
+msgstr "Перегляньте всі умови ліцензійної угоди. Для перегляду тексту угоди повністю скористайтесь кнопкою «%PAGEDOWN» ."
 
 #: source/preload/preload.src#RID_TP_LICENSE.PB_PAGEDOWN.PushButton.Text
 msgid  "Page Down"
@@ -805,8 +805,9 @@ msgid  "Automatic Sort"
 msgstr "Автоматичне сортування"
 
 #: source/propctrlr/selectlabeldialog.src#RID_DLG_SELECTLABELCONTROL.1.FixedText.Text
+#, fuzzy
 msgid  "These are control fields that can be used as label fields for the $control_class$ $control_name$."
-msgstr ""
+msgstr "Елементи керування, які можуть бути використані у якості позначок для $control_class$ $control_name$."
 
 #: source/propctrlr/selectlabeldialog.src#RID_DLG_SELECTLABELCONTROL.1.CheckBox.Text
 #, fuzzy
@@ -824,8 +825,9 @@ msgid  "Forms"
 msgstr "Форми"
 
 #: source/propctrlr/pcrmiscres.src#RID_STR_CONFIRM_DELETE_DATA_TYPE.String.Text
+#, fuzzy
 msgid  "Do you want to delete the data type '#type#' from the model?\nPlease note that this will affect all controls which are bound to this data type."
-msgstr ""
+msgstr "Ви справді хочете видалити з моделі тип даних '#type#' ?\nЗауважте, що це вплине на всі органи керування (controls) з якими пов'язаний цей тип даних."
 
 #: source/propctrlr/pcrmiscres.src#RID_STR_PROPTITLE_PUSHBUTTON.String.Text
 #, fuzzy
@@ -928,31 +930,26 @@ msgid  "Table Control "
 msgstr "Елемент керування Таблиця"
 
 #: source/propctrlr/formlinkdialog.src#RID_DLG_FORMLINKS.ModalDialog.Text
-#, fuzzy
 msgid  "Link fields"
 msgstr "Зв'язок полів"
 
 #: source/propctrlr/formlinkdialog.src#RID_DLG_FORMLINKS.FT_EXPLANATION.FixedText.Text
 msgid  "Sub forms can be used to display detailed data about the current record of the master form. To do this, you can specify which columns in the sub form match which columns in the master form."
-msgstr ""
+msgstr "Підпорядковані форми можна використовувати для відображення докладних даних про поточний запис у основній формі. Для цього можна вказати, які стовпчики у підпорядкованій формі відповідають стовпчикам у основній формі."
 
 #: source/propctrlr/formlinkdialog.src#RID_DLG_FORMLINKS.PB_SUGGEST.PushButton.Text
-#, fuzzy
 msgid  "Suggest"
 msgstr "Побажання"
 
 #: source/propctrlr/formlinkdialog.src#RID_DLG_FORMLINKS.STR_DETAIL_FORM.String.Text
-#, fuzzy
 msgid  "Sub Form"
 msgstr "Підформа"
 
 #: source/propctrlr/formlinkdialog.src#RID_DLG_FORMLINKS.STR_MASTER_FORM.String.Text
-#, fuzzy
 msgid  "Master Form"
 msgstr "Основна форма"
 
 #: source/propctrlr/formlinkdialog.src#RID_DLG_FORMLINKS.STR_ERROR_RETRIEVING_COLUMNS.String.Text
-#, fuzzy
 msgid  "The columns of '#' could not be retrieved."
 msgstr "Неможливо отримати стовпчики підформи."
 
@@ -996,22 +993,18 @@ msgid  "Text"
 msgstr "Текст"
 
 #: source/propctrlr/formres.src#RID_STR_EDITMASK.String.Text
-#, fuzzy
 msgid  "Edit mask"
 msgstr "Маска вводу"
 
 #: source/propctrlr/formres.src#RID_STR_LITERALMASK.String.Text
-#, fuzzy
 msgid  "Literal mask"
 msgstr "Маска знаків"
 
 #: source/propctrlr/formres.src#RID_STR_READONLY.String.Text
-#, fuzzy
 msgid  "Read-only"
 msgstr "Лише для читання"
 
 #: source/propctrlr/formres.src#RID_STR_ENABLED.String.Text
-#, fuzzy
 msgid  "Enabled"
 msgstr "Доступно"
 
@@ -1020,32 +1013,26 @@ msgid  "Visible"
 msgstr ""
 
 #: source/propctrlr/formres.src#RID_STR_AUTOCOMPLETE.String.Text
-#, fuzzy
 msgid  "AutoFill"
 msgstr "Автозаповнення"
 
 #: source/propctrlr/formres.src#RID_STR_LINECOUNT.String.Text
-#, fuzzy
 msgid  "Line count"
 msgstr "Кількість рядків"
 
 #: source/propctrlr/formres.src#RID_STR_MAXTEXTLEN.String.Text
-#, fuzzy
 msgid  "Max. text length"
 msgstr "Максимальна довжина тексту"
 
 #: source/propctrlr/formres.src#RID_STR_SPIN.String.Text
-#, fuzzy
 msgid  "Spin Button"
 msgstr "Лічильник"
 
 #: source/propctrlr/formres.src#RID_STR_STRICTFORMAT.String.Text
-#, fuzzy
 msgid  "Strict format"
 msgstr "Перевірка формату"
 
 #: source/propctrlr/formres.src#RID_STR_SHOWTHOUSANDSEP.String.Text
-#, fuzzy
 msgid  "Thousands separator"
 msgstr "Розділювач розрядів"
 
@@ -1054,187 +1041,150 @@ msgid  "Printable"
 msgstr ""
 
 #: source/propctrlr/formres.src#RID_STR_TARGET_URL.String.Text
-#, fuzzy
 msgid  "URL"
 msgstr "URL"
 
 #: source/propctrlr/formres.src#RID_STR_TARGET_FRAME.String.Text
-#, fuzzy
 msgid  "Frame"
 msgstr "Кадр"
 
 #: source/propctrlr/formres.src#RID_STR_HELPTEXT.String.Text
-#, fuzzy
 msgid  "Help text"
 msgstr "Текст контекстної довідки"
 
 #: source/propctrlr/formres.src#RID_STR_HELPURL.String.Text
-#, fuzzy
 msgid  "Help URL"
 msgstr "URL довідки"
 
 #: source/propctrlr/formres.src#RID_STR_TAG.String.Text
-#, fuzzy
 msgid  "Additional information"
 msgstr "Додаткова інформація"
 
 #: source/propctrlr/formres.src#RID_STR_ECHO_CHAR.String.Text
-#, fuzzy
 msgid  "Password character"
 msgstr "Символи паролю"
 
 #: source/propctrlr/formres.src#RID_STR_TRISTATE.String.Text
-#, fuzzy
 msgid  "Tristate"
 msgstr "Потрійний стан"
 
 #: source/propctrlr/formres.src#RID_STR_EMPTY_IS_NULL.String.Text
-#, fuzzy
 msgid  "Empty string is NULL"
 msgstr "Порожній рядок - NULL"
 
 #: source/propctrlr/formres.src#RID_STR_DECIMAL_ACCURACY.String.Text
-#, fuzzy
 msgid  "Decimal accuracy"
 msgstr "Точність"
 
 #: source/propctrlr/formres.src#RID_STR_IMAGE_URL.String.Text
-#, fuzzy
 msgid  "Graphics"
 msgstr "Зображення"
 
 #: source/propctrlr/formres.src#RID_STR_DEFAULT_SELECT_SEQ.String.Text
-#, fuzzy
 msgid  "Default selection"
 msgstr "Типовий вибір"
 
 #: source/propctrlr/formres.src#RID_STR_DEFAULT_BUTTON.String.Text
-#, fuzzy
 msgid  "Default button"
 msgstr "Типова кнопка"
 
 #: source/propctrlr/formres.src#RID_STR_LABELCONTROL.String.Text
-#, fuzzy
 msgid  "Label Field"
 msgstr "Позначка"
 
 #: source/propctrlr/formres.src#RID_STR_LABEL.String.Text
-#, fuzzy
 msgid  "Label"
 msgstr "Текст"
 
 #: source/propctrlr/formres.src#RID_STR_ALIGN.String.Text
-#, fuzzy
 msgid  "Alignment"
 msgstr "Вирівнювання"
 
 #: source/propctrlr/formres.src#RID_STR_VERTICAL_ALIGN.String.Text
-#, fuzzy
 msgid  "Vert. Alignment"
 msgstr "Верт. вирівнювання"
 
 #: source/propctrlr/formres.src#RID_RSC_ENUM_VERTICAL_ALIGN.1.String.Text
-#, fuzzy
 msgid  "Top"
 msgstr "Згори"
 
 #: source/propctrlr/formres.src#RID_RSC_ENUM_VERTICAL_ALIGN.2.String.Text
-#, fuzzy
 msgid  "Middle"
 msgstr "У центрі"
 
 #: source/propctrlr/formres.src#RID_RSC_ENUM_VERTICAL_ALIGN.3.String.Text
-#, fuzzy
 msgid  "Bottom"
 msgstr "Знизу"
 
 #: source/propctrlr/formres.src#RID_STR_IMAGEPOSITION.String.Text
-#, fuzzy
 msgid  "Graphics alignment"
 msgstr "Вирівнювання графіки"
 
 #: source/propctrlr/formres.src#RID_STR_FONT.String.Text
-#, fuzzy
 msgid  "Font"
 msgstr "Шрифт"
 
 #: source/propctrlr/formres.src#RID_STR_BACKGROUNDCOLOR.String.Text
-#, fuzzy
 msgid  "Background color"
 msgstr "Колір тла"
 
 #: source/propctrlr/formres.src#RID_STR_BORDER.String.Text
-#, fuzzy
 msgid  "Border"
 msgstr "Рамка"
 
 #: source/propctrlr/formres.src#RID_STR_ICONSIZE.String.Text
-#, fuzzy
 msgid  "Icon size"
 msgstr "Розмір значків"
 
 #: source/propctrlr/formres.src#RID_RSC_ENUM_ICONSIZE_TYPE.1.String.Text
-#, fuzzy
 msgid  "Small"
 msgstr "Маленькі"
 
 #: source/propctrlr/formres.src#RID_RSC_ENUM_ICONSIZE_TYPE.2.String.Text
-#, fuzzy
 msgid  "Large"
 msgstr "Великі"
 
 #: source/propctrlr/formres.src#RID_STR_SHOW_POSITION.String.Text
-#, fuzzy
 msgid  "Positioning"
 msgstr "Позиціювання"
 
 #: source/propctrlr/formres.src#RID_STR_SHOW_NAVIGATION.String.Text
-#, fuzzy
 msgid  "Navigation"
 msgstr "Навігація"
 
 #: source/propctrlr/formres.src#RID_STR_SHOW_RECORDACTIONS.String.Text
-#, fuzzy
 msgid  "Acting on a record"
 msgstr "Дії над записом"
 
 #: source/propctrlr/formres.src#RID_STR_SHOW_FILTERSORT.String.Text
-#, fuzzy
 msgid  "Filtering / Sorting"
 msgstr "Фільтрація / сортування"
 
 #: source/propctrlr/formres.src#RID_STR_HSCROLL.String.Text
-#, fuzzy
 msgid  "Horizontal scroll bar"
 msgstr "Горизонтальна смуга прокрутки"
 
 #: source/propctrlr/formres.src#RID_STR_VSCROLL.String.Text
-#, fuzzy
 msgid  "Vertical scroll bar"
 msgstr "Вертикальна суга прокрутки"
 
 #: source/propctrlr/formres.src#RID_STR_WORDBREAK.String.Text
-#, fuzzy
 msgid  "Word break"
 msgstr "Розрив слова"
 
 #: source/propctrlr/formres.src#RID_STR_MULTILINE.String.Text
-#, fuzzy
 msgid  "Multiline input"
 msgstr "Багаторядковий ввід"
 
 #: source/propctrlr/formres.src#RID_STR_MULTISELECTION.String.Text
-#, fuzzy
 msgid  "Multiselection"
 msgstr "Групове виділення"
 
 #: source/propctrlr/formres.src#RID_STR_NAME.String.Text
-#, fuzzy
 msgid  "Name"
 msgstr "Назва"
 
 #: source/propctrlr/formres.src#RID_STR_TABINDEX.String.Text
-#, fuzzy
 msgid  "Tab order"
 msgstr "Порядок"
 
@@ -1243,344 +1193,277 @@ msgid  "Mouse wheel scroll"
 msgstr ""
 
 #: source/propctrlr/formres.src#RID_STR_FILTER.String.Text
-#, fuzzy
 msgid  "Filter"
 msgstr "Фільтр"
 
 #: source/propctrlr/formres.src#RID_STR_SORT_CRITERIA.String.Text
-#, fuzzy
 msgid  "Sort"
 msgstr "Сортування"
 
 #: source/propctrlr/formres.src#RID_STR_RECORDMARKER.String.Text
-#, fuzzy
 msgid  "Record marker"
 msgstr "Маркер запису"
 
 #: source/propctrlr/formres.src#RID_STR_FILTERPROPOSAL.String.Text
-#, fuzzy
 msgid  "Filter proposal"
 msgstr "Сумарний фільтр"
 
 #: source/propctrlr/formres.src#RID_STR_NAVIGATION.String.Text
-#, fuzzy
 msgid  "Navigation bar"
 msgstr "Пенал навігації"
 
 #: source/propctrlr/formres.src#RID_STR_CYCLE.String.Text
-#, fuzzy
 msgid  "Cycle"
 msgstr "Цикл"
 
 #: source/propctrlr/formres.src#RID_STR_TABSTOP.String.Text
-#, fuzzy
 msgid  "Tabstop"
 msgstr "Зупинка табуляції"
 
 #: source/propctrlr/formres.src#RID_STR_CONTROLSOURCE.String.Text
-#, fuzzy
 msgid  "Data field"
 msgstr "Поле даних"
 
 #: source/propctrlr/formres.src#RID_STR_DROPDOWN.String.Text
-#, fuzzy
 msgid  "Dropdown"
 msgstr "Розкривний"
 
 #: source/propctrlr/formres.src#RID_STR_BOUNDCOLUMN.String.Text
-#, fuzzy
 msgid  "Bound field"
 msgstr "Прив'язане поле"
 
 #: source/propctrlr/formres.src#RID_STR_LISTSOURCE.String.Text
-#, fuzzy
 msgid  "List content"
 msgstr "Зміст списку"
 
 #: source/propctrlr/formres.src#RID_STR_LISTSOURCETYPE.String.Text
-#, fuzzy
 msgid  "Type of list contents"
 msgstr "Тип вмісту списку"
 
 #: source/propctrlr/formres.src#RID_STR_CURSORSOURCE.String.Text
-#, fuzzy
 msgid  "Content"
 msgstr "Зміст"
 
 #: source/propctrlr/formres.src#RID_STR_CURSORSOURCETYPE.String.Text
-#, fuzzy
 msgid  "Content type"
 msgstr "Тип вмісту"
 
 #: source/propctrlr/formres.src#RID_STR_ALLOW_ADDITIONS.String.Text
-#, fuzzy
 msgid  "Allow additions"
 msgstr "Дозволити додавання"
 
 #: source/propctrlr/formres.src#RID_STR_ALLOW_DELETIONS.String.Text
-#, fuzzy
 msgid  "Allow deletions"
 msgstr "Дозволити видалення"
 
 #: source/propctrlr/formres.src#RID_STR_ALLOW_EDITS.String.Text
-#, fuzzy
 msgid  "Allow modifications"
 msgstr "Дозволити зміни"
 
 #: source/propctrlr/formres.src#RID_STR_DATAENTRY.String.Text
-#, fuzzy
 msgid  "Add data only"
 msgstr "Дозволити лише додавання"
 
 #: source/propctrlr/formres.src#RID_STR_DATASOURCE.String.Text
-#, fuzzy
 msgid  "Data source"
 msgstr "Джерело даних"
 
 #: source/propctrlr/formres.src#RID_STR_MASTERFIELDS.String.Text
-#, fuzzy
 msgid  "Link master fields"
 msgstr "Зв'язок з головним полем"
 
 #: source/propctrlr/formres.src#RID_STR_SLAVEFIELDS.String.Text
-#, fuzzy
 msgid  "Link slave fields"
 msgstr "Зв'язок з підлеглим полем"
 
 #: source/propctrlr/formres.src#RID_STR_VALUEMIN.String.Text
-#, fuzzy
 msgid  "Value min."
 msgstr "Мінімальне значення"
 
 #: source/propctrlr/formres.src#RID_STR_VALUEMAX.String.Text
-#, fuzzy
 msgid  "Value max."
 msgstr "Максимальне значення"
 
 #: source/propctrlr/formres.src#RID_STR_VALUESTEP.String.Text
-#, fuzzy
 msgid  "Incr./decrement value"
 msgstr "Крок значення"
 
 #: source/propctrlr/formres.src#RID_STR_CURRENCYSYMBOL.String.Text
-#, fuzzy
 msgid  "Currency symbol"
 msgstr "Символ грошової одиниці"
 
 #: source/propctrlr/formres.src#RID_STR_DATEMIN.String.Text
-#, fuzzy
 msgid  "Date min."
 msgstr "Мінімальна дата"
 
 #: source/propctrlr/formres.src#RID_STR_DATEMAX.String.Text
-#, fuzzy
 msgid  "Date max."
 msgstr "Максимальна дата"
 
 #: source/propctrlr/formres.src#RID_STR_DATEFORMAT.String.Text
-#, fuzzy
 msgid  "Date format"
 msgstr "Формат даних"
 
 #: source/propctrlr/formres.src#RID_STR_SELECTEDITEMS.String.Text
-#, fuzzy
 msgid  "Selection"
 msgstr "Виділення"
 
 #: source/propctrlr/formres.src#RID_STR_TIMEMIN.String.Text
-#, fuzzy
 msgid  "Time min."
 msgstr "Мінімальний час"
 
 #: source/propctrlr/formres.src#RID_STR_TIMEMAX.String.Text
-#, fuzzy
 msgid  "Time max."
 msgstr "Максимальний час"
 
 #: source/propctrlr/formres.src#RID_STR_TIMEFORMAT.String.Text
-#, fuzzy
 msgid  "Time format"
 msgstr "Формат часу"
 
 #: source/propctrlr/formres.src#RID_STR_CURRSYM_POSITION.String.Text
-#, fuzzy
 msgid  "Prefix symbol"
 msgstr "Символ перед цифрами"
 
 #: source/propctrlr/formres.src#RID_STR_VALUE.String.Text
-#, fuzzy
 msgid  "Value"
 msgstr "Значення"
 
 #: source/propctrlr/formres.src#RID_STR_FORMATKEY.String.Text
-#, fuzzy
 msgid  "Formatting"
 msgstr "Форматування"
 
 #: source/propctrlr/formres.src#RID_STR_CLASSID.String.Text
-#, fuzzy
 msgid  "Class ID"
 msgstr "ID класу"
 
 #: source/propctrlr/formres.src#RID_STR_HEIGHT.String.Text
-#, fuzzy
 msgid  "Height"
 msgstr "Висота"
 
 #: source/propctrlr/formres.src#RID_STR_WIDTH.String.Text
-#, fuzzy
 msgid  "Width"
 msgstr "Ширина"
 
 #: source/propctrlr/formres.src#RID_STR_LISTINDEX.String.Text
-#, fuzzy
 msgid  "List index"
 msgstr "Індекс списку"
 
 #: source/propctrlr/formres.src#RID_STR_ROWHEIGHT.String.Text
-#, fuzzy
 msgid  "Row height"
 msgstr "Висота рядків"
 
 #: source/propctrlr/formres.src#RID_STR_FILLCOLOR.String.Text
-#, fuzzy
 msgid  "Fill color"
 msgstr "Колір заповнення"
 
 #: source/propctrlr/formres.src#RID_STR_LINECOLOR.String.Text
-#, fuzzy
 msgid  "Line color"
 msgstr "Колір лінії"
 
 #: source/propctrlr/formres.src#RID_STR_REFVALUE.String.Text
-#, fuzzy
 msgid  "Reference value (on)"
 msgstr "Значення покажчика (увімк)"
 
 #: source/propctrlr/formres.src#RID_STR_UNCHECKEDREFVALUE.String.Text
-#, fuzzy
 msgid  "Reference value (off)"
 msgstr "Значення покажчика (вимк.)"
 
 #: source/propctrlr/formres.src#RID_STR_STRINGITEMLIST.String.Text
-#, fuzzy
 msgid  "List entries"
 msgstr "Елементи списку"
 
 #: source/propctrlr/formres.src#RID_STR_BUTTONTYPE.String.Text
-#, fuzzy
 msgid  "Action"
 msgstr "Тип кнопки"
 
 #: source/propctrlr/formres.src#RID_STR_SUBMIT_ACTION.String.Text
-#, fuzzy
 msgid  "URL"
 msgstr "URL"
 
 #: source/propctrlr/formres.src#RID_STR_SUBMIT_METHOD.String.Text
-#, fuzzy
 msgid  "Type of submission"
 msgstr "Тип представлення"
 
 #: source/propctrlr/formres.src#RID_STR_DEFAULT_STATE.String.Text
-#, fuzzy
 msgid  "Default status"
 msgstr "Типовий стан"
 
 #: source/propctrlr/formres.src#RID_STR_SUBMIT_ENCODING.String.Text
-#, fuzzy
 msgid  "Submission encoding"
 msgstr "Кодування представлення"
 
 #: source/propctrlr/formres.src#RID_STR_DEFAULTVALUE.String.Text
-#, fuzzy
 msgid  "Default value"
 msgstr "Типове значення"
 
 #: source/propctrlr/formres.src#RID_STR_DEFAULTTEXT.String.Text
-#, fuzzy
 msgid  "Default text"
 msgstr "Типовий текст"
 
 #: source/propctrlr/formres.src#RID_STR_DEFAULTDATE.String.Text
-#, fuzzy
 msgid  "Default date"
 msgstr "Типова дата"
 
 #: source/propctrlr/formres.src#RID_STR_DEFAULTTIME.String.Text
-#, fuzzy
 msgid  "Default time"
 msgstr "Типовий час"
 
 #: source/propctrlr/formres.src#RID_STR_SUBMIT_TARGET.String.Text
-#, fuzzy
 msgid  "Frame"
 msgstr "Кадр"
 
 #: source/propctrlr/formres.src#RID_RSC_ENUM_BORDER_TYPE.1.String.Text
-#, fuzzy
 msgid  "Without frame"
 msgstr "Без рамки"
 
 #: source/propctrlr/formres.src#RID_RSC_ENUM_BORDER_TYPE.2.String.Text
-#, fuzzy
 msgid  "3D look"
 msgstr "Тривимірний вигляд"
 
 #: source/propctrlr/formres.src#RID_RSC_ENUM_BORDER_TYPE.3.String.Text
-#, fuzzy
 msgid  "Flat"
 msgstr "Плаский"
 
 #: source/propctrlr/formres.src#RID_RSC_ENUM_LISTSOURCE_TYPE.1.String.Text
-#, fuzzy
 msgid  "Valuelist"
 msgstr "Список значень"
 
 #: source/propctrlr/formres.src#RID_RSC_ENUM_LISTSOURCE_TYPE.2.String.Text
-#, fuzzy
 msgid  "Table"
 msgstr "Таблиця"
 
 #: source/propctrlr/formres.src#RID_RSC_ENUM_LISTSOURCE_TYPE.3.String.Text
-#, fuzzy
 msgid  "Query"
 msgstr "Запит"
 
 #: source/propctrlr/formres.src#RID_RSC_ENUM_LISTSOURCE_TYPE.4.String.Text
-#, fuzzy
 msgid  "Sql"
 msgstr "Sql"
 
 #: source/propctrlr/formres.src#RID_RSC_ENUM_LISTSOURCE_TYPE.5.String.Text
-#, fuzzy
 msgid  "Sql [Native]"
 msgstr "Sql [Native]"
 
 #: source/propctrlr/formres.src#RID_RSC_ENUM_LISTSOURCE_TYPE.6.String.Text
-#, fuzzy
 msgid  "Tablefields"
 msgstr "Поля таблиці"
 
 #: source/propctrlr/formres.src#RID_RSC_ENUM_ALIGNMENT.1.String.Text
-#, fuzzy
 msgid  "Left"
 msgstr "Ліворуч"
 
 #: source/propctrlr/formres.src#RID_RSC_ENUM_ALIGNMENT.2.String.Text
-#, fuzzy
 msgid  "Center"
 msgstr "У центрі"
 
 #: source/propctrlr/formres.src#RID_RSC_ENUM_ALIGNMENT.3.String.Text
-#, fuzzy
 msgid  "Right"
 msgstr "Праворуч"
 
 #: source/propctrlr/formres.src#RID_RSC_ENUM_BUTTONTYPE.1.String.Text
 #, fuzzy
 msgid  "None"
-msgstr "Немає"
+msgstr "Нічого"
 
 #: source/propctrlr/formres.src#RID_RSC_ENUM_BUTTONTYPE.2.String.Text
 #, fuzzy
@@ -1795,7 +1678,7 @@ msgstr "Батьківська форма"
 #: source/propctrlr/formres.src#RID_RSC_ENUM_SELECTION_TYPE.1.String.Text
 #, fuzzy
 msgid  "None"
-msgstr "Нмеає"
+msgstr "Немає"
 
 #: source/propctrlr/formres.src#RID_RSC_ENUM_SELECTION_TYPE.2.String.Text
 #, fuzzy
@@ -2126,8 +2009,9 @@ msgid  "Help"
 msgstr "Довідка"
 
 #: source/propctrlr/formres.src#RID_STR_UNABLETOCONNECT.String.Text
-msgid  "The connection to the data source "$name$" could not be established."
-msgstr ""
+#, fuzzy
+msgid  "The connection to the data source \"$name$\" could not be established."
+msgstr "Неможливо встановити з'єднання з джерелом даних \"$name$\"."
 
 #: source/propctrlr/formres.src#RID_STR_TEXT.String.Text
 #, fuzzy
@@ -2618,17 +2502,14 @@ msgid  "(Default)"
 msgstr "Типово"
 
 #: source/propctrlr/fontdialog.src#RID_TABDLG_FONTDIALOG.TabDialog.Text
-#, fuzzy
 msgid  "Character"
 msgstr "Символ"
 
 #: source/propctrlr/fontdialog.src#RID_TABDLG_FONTDIALOG.1.TABPAGE_CHARACTERS.PageItem.Text
-#, fuzzy
 msgid  "Font"
 msgstr "Шрифт"
 
 #: source/propctrlr/fontdialog.src#RID_TABDLG_FONTDIALOG.1.TABPAGE_CHARACTERS_EXT.PageItem.Text
-#, fuzzy
 msgid  "Font Effects"
 msgstr "Ефекти шрифту"
 
@@ -2644,207 +2525,175 @@ msgstr "Введіть назву для нового типа даних:"
 
 #: source/scanner/sanedlg.src#RID_SANE_DIALOG.RID_DEVICEINFO_BTN.PushButton.Text
 msgid  "About\n Dev~ice"
-msgstr ""
+msgstr "~Пристрій"
 
 #: source/scanner/sanedlg.src#RID_SANE_DIALOG.RID_PREVIEW_BTN.PushButton.Text
 msgid  "Create\nPreview"
-msgstr ""
+msgstr "Створити\nпопер.перегляд"
 
 #: source/scanner/sanedlg.src#RID_SANE_DIALOG.RID_PREVIEW_BOX.FixedLine.Text
-#, fuzzy
 msgid  "Preview"
 msgstr "Попередній перегляд"
 
 #: source/scanner/sanedlg.src#RID_SANE_DIALOG.RID_SCANAREA_BOX.FixedLine.Text
-#, fuzzy
 msgid  "Scan area"
 msgstr "Область сканування"
 
 #: source/scanner/sanedlg.src#RID_SANE_DIALOG.RID_SCAN_LEFT_TXT.FixedText.Text
-#, fuzzy
 msgid  "Left:"
 msgstr "Ліворуч:"
 
 #: source/scanner/sanedlg.src#RID_SANE_DIALOG.RID_SCAN_TOP_TXT.FixedText.Text
-#, fuzzy
 msgid  "Top:"
 msgstr "Згори:"
 
 #: source/scanner/sanedlg.src#RID_SANE_DIALOG.RID_SCAN_RIGHT_TXT.FixedText.Text
-#, fuzzy
 msgid  "Right:"
 msgstr "Праворуч:"
 
 #: source/scanner/sanedlg.src#RID_SANE_DIALOG.RID_SCAN_BOTTOM_TXT.FixedText.Text
-#, fuzzy
 msgid  "Bottom:"
 msgstr "Знизу:"
 
 #: source/scanner/sanedlg.src#RID_SANE_DIALOG.RID_DEVICE_BOX_TXT.FixedText.Text
-#, fuzzy
 msgid  "Device used:"
 msgstr "Використовується пристрій:"
 
 #: source/scanner/sanedlg.src#RID_SANE_DIALOG.RID_SCAN_RESOLUTION_TXT.FixedText.Text
-#, fuzzy
 msgid  "Resolution [~DPI]"
 msgstr "Роздільна здатність [~DPI]"
 
 #: source/scanner/sanedlg.src#RID_SANE_DIALOG.RID_SCAN_ADVANCED_TXT.FixedText.Text
-#, fuzzy
 msgid  "Show advanced options"
 msgstr "Показати розширені параметри"
 
 #: source/scanner/sanedlg.src#RID_SANE_DIALOG.RID_SCAN_OPTION_TXT.FixedText.Text
-#, fuzzy
 msgid  "Options:"
 msgstr "Параметри:"
 
 #: source/scanner/sanedlg.src#RID_SANE_DIALOG.RID_SCAN_NUMERIC_VECTOR_TXT.FixedText.Text
-#, fuzzy
 msgid  "Vector element"
 msgstr "Векторний елемент"
 
 #: source/scanner/sanedlg.src#RID_SANE_DIALOG.RID_SCAN_BUTTON_OPTION_BTN.PushButton.Text
-#, fuzzy
 msgid  "Set"
 msgstr "Встановити"
 
 #: source/scanner/sanedlg.src#RID_SANE_DIALOG.Bitmap.Text
-#, fuzzy
 msgid  "Scanner"
 msgstr "Сканер"
 
 #: source/scanner/sanedlg.src#RID_SANE_DEVICEINFO_TXT.String.Text
 msgid  "Device: %s\nVendor: %s\nModel: %s\nType: %s"
-msgstr ""
+msgstr "Пристрій: %s\nВиробник: %s\nМодель: %s\nТип: %s"
 
 #: source/scanner/sanedlg.src#RID_SANE_SCANERROR_TXT.String.Text
-#, fuzzy
 msgid  "An error occurred while scanning."
 msgstr "Помилка при скануванні."
 
 #: source/scanner/sanedlg.src#RID_SANE_NORESOLUTIONOPTION_TXT.String.Text
 msgid  "The device does not offer a preview option. Therefore, a normal scan will be used as a preview instead. This may take a considerable amount of time."
-msgstr ""
+msgstr "Пристрій не надає можливості попереднього перегляду. Натомість для попереднього перегляду використовується звичайне сканування, що займає значно більше часу."
 
 #: source/scanner/sanedlg.src#RID_SANE_NOSANELIB_TXT.String.Text
-#, fuzzy
 msgid  "The SANE interface could not be initialized. Scanning is not possible."
 msgstr "Не вдається ініціалізувати інтерфейс SANE. Сканування неможливе."
 
 #: source/scanner/grid.src#GRID_DIALOG.GRID_DIALOG_RESET_BTN.PushButton.Text
-#, fuzzy
 msgid  "Set"
 msgstr "Встановити"
 
 #: source/scanner/grid.src#GRID_DIALOG.RESET_TYPE_LINEAR_ASCENDING.String.Text
-#, fuzzy
 msgid  "Linear ascending"
 msgstr "Лінійне збільшення"
 
 #: source/scanner/grid.src#GRID_DIALOG.RESET_TYPE_LINEAR_DESCENDING.String.Text
-#, fuzzy
 msgid  "Linear descending"
 msgstr "Лінійне зменшення"
 
 #: source/scanner/grid.src#GRID_DIALOG.RESET_TYPE_RESET.String.Text
-#, fuzzy
 msgid  "Original values"
 msgstr "Оригінальні значення"
 
 #: source/scanner/grid.src#GRID_DIALOG.RESET_TYPE_EXPONENTIAL.String.Text
-#, fuzzy
 msgid  "Exponential increasing"
 msgstr "Експонентне збільшення"
 
 #: source/update/check/updatehdl.src#RID_UPDATE_STR_CHECKING.String.Text
-#, fuzzy
 msgid  "Checking..."
 msgstr "Перевірка..."
 
 #: source/update/check/updatehdl.src#RID_UPDATE_STR_CHECKING_ERR.String.Text
-#, fuzzy
 msgid  "Checking for an update failed."
 msgstr "Невдала перевірка оновлень."
 
 #: source/update/check/updatehdl.src#RID_UPDATE_STR_NO_UPD_FOUND.String.Text
-#, fuzzy
 msgid  "%PRODUCTNAME %PRODUCTVERSION is up to date."
 msgstr "%PRODUCTNAME %PRODUCTVERSION останньої версії."
 
 #: source/update/check/updatehdl.src#RID_UPDATE_STR_UPD_FOUND.String.Text
 msgid  "%PRODUCTNAME %NEXTVERSION is available.\n\nThe installed version is %PRODUCTNAME %PRODUCTVERSION.\n\nNote: Before downloading  an update, please ensure that you have sufficient access rights to install it.\nA password, usually the administrator's or root password, may be required."
-msgstr ""
+msgstr "%PRODUCTNAME %NEXTVERSION доступно для завантаження.\n\nВстановлена версія %PRODUCTNAME %PRODUCTVERSION.\n\nПримітка: Перш ніж завантажувати оновлення перевірте, що у вас є права для встановлення.\nМожливо знадобиться адміністраторський пароль."
 
 #: source/update/check/updatehdl.src#RID_UPDATE_STR_DLG_TITLE.String.Text
-#, fuzzy
 msgid  "Check for Updates"
 msgstr "Перевірити наявність оновлень"
 
 #: source/update/check/updatehdl.src#RID_UPDATE_STR_DOWNLOAD_PAUSE.String.Text
-#, fuzzy
 msgid  "Downloading %PRODUCTNAME %NEXTVERSION paused at..."
 msgstr "Завантаження %PRODUCTNAME %NEXTVERSION призупинено на..."
 
 #: source/update/check/updatehdl.src#RID_UPDATE_STR_DOWNLOAD_ERR.String.Text
-#, fuzzy
 msgid  "Downloading %PRODUCTNAME %NEXTVERSION stalled at"
 msgstr "Завантаження %PRODUCTNAME %NEXTVERSION призупинено на"
 
 #: source/update/check/updatehdl.src#RID_UPDATE_STR_DOWNLOAD_WARN.String.Text
 msgid  "The download location is: %DOWNLOAD_PATH.\n\nUnder Tools – Options... - %PRODUCTNAME – Online Update you can change the download location."
-msgstr ""
+msgstr "Адреса завантаження: %DOWNLOAD_PATH.\n\nВи можете змінити адресу завантаження у Сервіс – Параметри... - %PRODUCTNAME – Перевірка оновлень."
 
 #: source/update/check/updatehdl.src#RID_UPDATE_STR_DOWNLOAD_DESCR.String.Text
-#, fuzzy
 msgid  "%FILE_NAME has been downloaded to %DOWNLOAD_PATH."
 msgstr "%FILE_NAME було завантажено до %DOWNLOAD_PATH."
 
 #: source/update/check/updatehdl.src#RID_UPDATE_STR_DOWNLOAD_UNAVAIL.String.Text
 msgid  "The automatic download of the update is currently not available.\n\nClick 'Download...' to download %PRODUCTNAME %NEXTVERSION manually from the web site."
-msgstr ""
+msgstr "Автоматичне завантаження оновлень поки недоступне.\n\nНатисніть «Завантажити...» для завантаження %PRODUCTNAME %NEXTVERSION вручну з веб-сайту."
 
 #: source/update/check/updatehdl.src#RID_UPDATE_STR_DOWNLOADING.String.Text
-#, fuzzy
 msgid  "Downloading %PRODUCTNAME %NEXTVERSION..."
 msgstr "Завантаження %PRODUCTNAME %NEXTVERSION..."
 
 #: source/update/check/updatehdl.src#RID_UPDATE_STR_READY_INSTALL.String.Text
 msgid  "Download of %PRODUCTNAME %NEXTVERSION completed. Ready for installation."
-msgstr ""
+msgstr "Завантаження %PRODUCTNAME %NEXTVERSION завершено та готове до встановлення."
 
 #: source/update/check/updatehdl.src#RID_UPDATE_STR_CANCEL_TITLE.String.Text
-#, fuzzy
 msgid  "%PRODUCTNAME %PRODUCTVERSION"
 msgstr "%PRODUCTNAME %PRODUCTVERSION"
 
 #: source/update/check/updatehdl.src#RID_UPDATE_STR_CANCEL_DOWNLOAD.String.Text
-#, fuzzy
 msgid  "Do you really want to cancel the download?"
 msgstr "Ви справді хочете скасувати завантаження?"
 
 #: source/update/check/updatehdl.src#RID_UPDATE_STR_BEGIN_INSTALL.String.Text
 msgid  "To install the update, %PRODUCTNAME %PRODUCTVERSION needs to be closed. Do you want to install the update now?"
-msgstr ""
+msgstr "Для встановлення оновлень потрібно закрити %PRODUCTNAME %PRODUCTVERSION. Встановити розширення зараз?"
 
 #: source/update/check/updatehdl.src#RID_UPDATE_STR_INSTALL_NOW.String.Text
-#, fuzzy
 msgid  "Install ~now"
 msgstr "Встановити ~зараз"
 
 #: source/update/check/updatehdl.src#RID_UPDATE_STR_INSTALL_LATER.String.Text
-#, fuzzy
 msgid  "Install ~later"
 msgstr "Встановити п~ізніше"
 
 #: source/update/check/updatehdl.src#RID_UPDATE_STR_INSTALL_ERROR.String.Text
 msgid  "Could not run the installer application, please run %FILE_NAME in %DOWNLOAD_PATH manually."
-msgstr ""
+msgstr "Неможливо запустити програму встановлення, запустіть %FILE_NAME у каталозі %DOWNLOAD_PATH вручну."
 
 #: source/update/check/updatehdl.src#RID_UPDATE_STR_OVERWRITE_WARNING.String.Text
 msgid  "A file with that name already exists! Do you want to overwrite the existing file?"
-msgstr ""
+msgstr "Файл з такою назвою вже існує. Перезаписати існуючий файл?"
 
 #: source/update/check/updatehdl.src#RID_UPDATE_STR_RELOAD_WARNING.String.Text
 msgid  "A file with the name '%FILENAME' already exists in '%DOWNLOAD_PATH'! Do you want to continue with the download or delete and reload the file?"
@@ -2859,126 +2708,101 @@ msgid  "Continue"
 msgstr ""
 
 #: source/update/check/updatehdl.src#RID_UPDATE_STR_PERCENT.String.Text
-#, fuzzy
 msgid  "%PERCENT%"
 msgstr "%PERCENT%"
 
 #: source/update/check/updatehdl.src#RID_UPDATE_FT_STATUS.String.Text
-#, fuzzy
 msgid  "Status"
 msgstr "Статус"
 
 #: source/update/check/updatehdl.src#RID_UPDATE_FT_DESCRIPTION.String.Text
-#, fuzzy
 msgid  "Description"
 msgstr "Опис"
 
 #: source/update/check/updatehdl.src#RID_UPDATE_BTN_CLOSE.String.Text
-#, fuzzy
 msgid  "Close"
 msgstr "Закрити"
 
 #: source/update/check/updatehdl.src#RID_UPDATE_BTN_DOWNLOAD.String.Text
-#, fuzzy
 msgid  "~Download"
 msgstr "~Завантажити"
 
 #: source/update/check/updatehdl.src#RID_UPDATE_BTN_INSTALL.String.Text
-#, fuzzy
 msgid  "~Install"
 msgstr "~Встановити"
 
 #: source/update/check/updatehdl.src#RID_UPDATE_BTN_PAUSE.String.Text
-#, fuzzy
 msgid  "~Pause"
 msgstr "Приз~упинити"
 
 #: source/update/check/updatehdl.src#RID_UPDATE_BTN_RESUME.String.Text
-#, fuzzy
 msgid  "~Resume"
 msgstr "Пр~одовжити"
 
 #: source/update/check/updatehdl.src#RID_UPDATE_BTN_CANCEL.String.Text
-#, fuzzy
 msgid  "Cancel"
 msgstr "Скасувати"
 
 #: source/update/check/updatehdl.src#RID_UPDATE_BUBBLE_T_UPDATE_AVAIL.String.Text
-#, fuzzy
 msgid  "%PRODUCTNAME update available"
 msgstr "Доступні оновлення %PRODUCTNAME"
 
 #: source/update/check/updatehdl.src#RID_UPDATE_BUBBLE_UPDATE_AVAIL.String.Text
-#, fuzzy
 msgid  "Click here to start the download."
 msgstr "Клацніть тут для початку завантаження."
 
 #: source/update/check/updatehdl.src#RID_UPDATE_BUBBLE_T_UPDATE_NO_DOWN.String.Text
-#, fuzzy
 msgid  "%PRODUCTNAME update available"
 msgstr "Доступні оновлення %PRODUCTNAME"
 
 #: source/update/check/updatehdl.src#RID_UPDATE_BUBBLE_UPDATE_NO_DOWN.String.Text
-#, fuzzy
 msgid  "Click here for more information."
-msgstr "Клацніть тут подробиць."
+msgstr "Клацніть тут для подробиць."
 
 #: source/update/check/updatehdl.src#RID_UPDATE_BUBBLE_T_AUTO_START.String.Text
-#, fuzzy
 msgid  "%PRODUCTNAME update available"
 msgstr "Доступні оновлення %PRODUCTNAME"
 
 #: source/update/check/updatehdl.src#RID_UPDATE_BUBBLE_AUTO_START.String.Text
-#, fuzzy
 msgid  "Download of update begins."
 msgstr "Початок завантаження оновлень"
 
 #: source/update/check/updatehdl.src#RID_UPDATE_BUBBLE_T_DOWNLOADING.String.Text
-#, fuzzy
 msgid  "Download of update in progress"
 msgstr "Завантаження оновлень"
 
 #: source/update/check/updatehdl.src#RID_UPDATE_BUBBLE_T_DOWNLOAD_PAUSED.String.Text
-#, fuzzy
 msgid  "Download of update paused"
 msgstr "Завантаження оновлень призупинено"
 
 #: source/update/check/updatehdl.src#RID_UPDATE_BUBBLE_DOWNLOAD_PAUSED.String.Text
-#, fuzzy
 msgid  "Click here to resume."
 msgstr "Клацніть тут для продовження."
 
 #: source/update/check/updatehdl.src#RID_UPDATE_BUBBLE_T_ERROR_DOWNLOADING.String.Text
-#, fuzzy
 msgid  "Download of update stalled"
 msgstr "Завантаження оновлень зупинено"
 
 #: source/update/check/updatehdl.src#RID_UPDATE_BUBBLE_ERROR_DOWNLOADING.String.Text
-#, fuzzy
 msgid  "Click here for more information."
 msgstr "Клацніть тут подробиць."
 
 #: source/update/check/updatehdl.src#RID_UPDATE_BUBBLE_T_DOWNLOAD_AVAIL.String.Text
-#, fuzzy
 msgid  "Download of update completed"
 msgstr "Завантаження оновлень завершено"
 
 #: source/update/check/updatehdl.src#RID_UPDATE_BUBBLE_DOWNLOAD_AVAIL.String.Text
-#, fuzzy
 msgid  "Click here to start the installation."
 msgstr "Клацніть тут для запуску встановлення."
 
 #: source/update/check/updatehdl.src#RID_UPDATE_BUBBLE_T_EXT_UPD_AVAIL.String.Text
-#, fuzzy
 msgid  "Updates for extensions available"
 msgstr "Доступні оновлення розширень"
 
 #: source/update/check/updatehdl.src#RID_UPDATE_BUBBLE_EXT_UPD_AVAIL.String.Text
-#, fuzzy
 msgid  "Click here for more information."
 msgstr "Клацніть тут подробиць."
 
 #: source/update/check/Addons.xcu#.Addons.AddonUI.OfficeHelp.UpdateCheckJob.Title
-#, fuzzy
 msgid  "Check for ~Updates..."
 msgstr "Перевірити наявність ~оновлень..."

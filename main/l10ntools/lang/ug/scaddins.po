@@ -437,7 +437,7 @@ msgstr "FACTDOUBLE"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Workday.1.String.Text
 msgid  "Returns the serial number of the date before or after a specified number of workdays"
-msgstr ""
+msgstr "بەلگىلەنگەن مەلۇم خىزمەت كۈنى چېسلاسىدىن ئىلگىرى ياكى كېيىن ئايرىلىپ تۇرىدىغان چېسلا قىممىتى"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Workday.2.String.Text
 msgid  "Start date"
@@ -461,11 +461,11 @@ msgstr "Holidays"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Workday.7.String.Text
 msgid  "List of date values of days off (vacation, holidays, etc.)"
-msgstr ""
+msgstr "دەم ئېلىش ۋە قانۇندا بەلگىلەنگەن ھيېت-بايرام كۈنلىرى قاتارلىق چېسلا سانلىق مەلۇماتىنىڭ تىزىملىكى"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Yearfrac.1.String.Text
 msgid  "Returns the number of whole days between 'start date' and 'end date' as a year fraction"
-msgstr ""
+msgstr "مەلۇم بىر باشلىنىش ۋاقتى بىلەن ئاخىرلىشىش ۋاقتى ئارىسىدىكى كۈن سانى ۋە پۈتۈن بىر يىلدىكى كۈن سانىنىڭ پىرسەنتى"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Yearfrac.2.String.Text
 msgid  "Start date"
@@ -493,7 +493,7 @@ msgstr "ئۆسۈم كۈن سانىنى بەلگىلەيدىغان ئاساسىي
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Edate.1.String.Text
 msgid  "Returns the serial number of the date that is a specified number of months before or after the start date"
-msgstr ""
+msgstr "بەلگىلەنگەن مەلۇم چېسلادىن ئىلگىرى ياكى كېيىن بەلگىلەنگەن ئاي سانىنىڭ چېسلاسىنى قايتۇرىدۇ"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Edate.2.String.Text
 msgid  "Start date"
@@ -513,7 +513,7 @@ msgstr "مەلۇم بىر بەلگىلەنگەن چېسلادىن ئىلگىرى
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Weeknum.1.String.Text
 msgid  "Returns the number of the calendar week in which the specified date occurs."
-msgstr ""
+msgstr "مەلۇم كۈننىڭ بىر يىل ئىچىدىكى ھەپتە تەرتىپ نومۇرىنى ھېسابلايدۇ."
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Weeknum.2.String.Text
 msgid  "Date"
@@ -529,11 +529,11 @@ msgstr "Return type"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Weeknum.5.String.Text
 msgid  "A number from 1 to 3 that specifies the day with which a week begins"
-msgstr ""
+msgstr "1 دىن 3 كىچە بولغان ساندىن بىرنى قايسى كۈننىڭ ھەپتىنىڭ باشلىنىش كۈنى بولىدىغانلىقىنى بەلگىلەيدۇ."
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Eomonth.1.String.Text
 msgid  "Returns the serial number of the last day of the month that comes a certain number of months before or after the start date"
-msgstr ""
+msgstr "بەلگىلەنگەن مەلۇم باشلانغان چېسلادىن ئىلگىرى ياكى كېيىن بەلگىلەنگەن ئايدىكى ئاخىرقى كۈننىڭ تەرتىپ سانىنى ھېسابلا"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Eomonth.2.String.Text
 msgid  "Start date"
@@ -577,7 +577,7 @@ msgstr "Holidays"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Networkdays.7.String.Text
 msgid  "List of date values representing days off (vacation, holidays, etc.)"
-msgstr ""
+msgstr "دەم ئېلىش ۋە قانۇندا بەلگىلەنگەن ھيېت-بايرام دەم ئېلىش كۈنلىرى قاتارلىق چېسلا سانلىق مەلۇماتىنىڭ تىزىملىكى"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Iseven.1.String.Text
 msgid  "Returns the value 'true' if the number is even"
@@ -605,7 +605,7 @@ msgstr "سان"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Multinomial.1.String.Text
 msgid  "Returns the multinomial coefficient of a set of numbers"
-msgstr ""
+msgstr "سانلار قاتارىنىڭ فاكتورىئالى ۋە ھەر قايسى سانلار قاتارى فاكتورىئال  كۆپەيتمىسىنىڭ سېلىشتۇرمىسىنى قايتۇرىدۇ"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Multinomial.2.String.Text
 msgid  "Number(s)"
@@ -613,7 +613,7 @@ msgstr "Number(s)"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Multinomial.3.String.Text
 msgid  "Number or list of numbers for which you want the multinomial coefficient"
-msgstr ""
+msgstr "فاكتورىئال سېلىشتۇرما قىممىتى سانى ياكى سانلار تىزىملىكىنى ھېسابلايدۇ"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Seriessum.1.String.Text
 msgid  "Returns the sum of a power series"
@@ -649,11 +649,11 @@ msgstr "Coefficients"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Seriessum.9.String.Text
 msgid  "Set of coefficients by which each successive power of the variable x is multiplied"
-msgstr ""
+msgstr "بىر يۈرۈش x نىڭ ھەر قايسى دەرىجىسىنىڭ كوئېففىتسېنتى"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Quotient.1.String.Text
 msgid  "Returns the integer portion of a division"
-msgstr ""
+msgstr "مەلۇم بىر بۆلۈنمىنىڭ كەسىر چېكىتىنى تاشلىۋېتىپ ئېرىشكەن بۆلۈنمىنىڭ پۈتۈن سان قىسمى"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Quotient.2.String.Text
 msgid  "Numerator"
@@ -1097,7 +1097,7 @@ msgstr "بىر ئىنتېگرال قىممىتىنىڭ تۆۋەن چېكى"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Gestep.1.String.Text
 msgid  "Tests whether a number is greater than a threshold value"
-msgstr ""
+msgstr "بىر ساننىڭ كىچىكرەك سانغا پۈتۈنلەنگەن قىممەتتىن چوڭ ياكى ئەمەسلىكىنى تەكشۈرىدۇ."
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Gestep.2.String.Text
 msgid  "Number"
@@ -1517,7 +1517,7 @@ msgstr "نەتىجىنىڭ ئۆلچەم بىرلىكى"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Amordegrc.1.String.Text
 msgid  "Returns the prorated linear depreciation of an asset for each accounting period"
-msgstr ""
+msgstr "بىر بوغالتىرلىق مەزگىلى ئىچىدە نىسبەت بويىچە تەقسىملەنگەن سىزىقلىق ئامورتىزاتسىيە سوممىسىنى ھېسابلايدۇ."
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Amordegrc.2.String.Text
 msgid  "Cost"
@@ -1577,7 +1577,7 @@ msgstr "ئىشلىتىدىغان يىلنىڭ كۈن سانىنىڭ ئاساسى
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Amorlinc.1.String.Text
 msgid  "Returns the prorated linear depreciation of an asset for each accounting period"
-msgstr ""
+msgstr "بىر بوغالتىرلىق مەزگىلى ئىچىدە نىسبەت بويىچە تەقسىملەنگەن سىزىقلىق ئامورتىزاتسىيە سوممىسىنى ھېسابلايدۇ."
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Amorlinc.2.String.Text
 msgid  "Cost"
@@ -1637,7 +1637,7 @@ msgstr "ئىشلىتىدىغان يىلنىڭ كۈن سانىنىڭ ئاساسى
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Accrint.1.String.Text
 msgid  "Returns the accrued interest for a security that pays periodic interest"
-msgstr ""
+msgstr "مەلۇم مۇددەتتە چىقىم قىلىدىغان ئاكسىيە (يەككە پاي ئۆسۈمى) نىڭ ئۆسۈمىنى ھېسابلايدۇ"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Accrint.2.String.Text
 msgid  "Issue"
@@ -1697,7 +1697,7 @@ msgstr "ئۆسۈم ھېسابلاش ئاساسى"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Accrintm.1.String.Text
 msgid  "Returns the accrued interest for a security that pays interest at maturity"
-msgstr ""
+msgstr "مۇددىتى توشقان مەلۇم ئاكسىيىنىڭ ئۆسۈمىنى ھېسابلايدۇ (يەككە پاي ئۆسۈمى)"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Accrintm.2.String.Text
 msgid  "Issue"
@@ -1741,7 +1741,7 @@ msgstr "ئۆسۈم ھېسابلاش ئاساسى"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Received.1.String.Text
 msgid  "Returns the amount paid out at maturity for a fully invested security"
-msgstr ""
+msgstr "بىر قېتىمدا ئۆسۈمىنى تاپشۇرىدىغان ئاكسىيەنىڭ قەرەلى توشقاندىكى ئومۇمىي سوممىسىنى ھېسابلايدۇ"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Received.2.String.Text
 msgid  "Settlement"
@@ -1829,7 +1829,7 @@ msgstr "ئۆسۈم ھېسابلاش ئاساسى"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Duration.1.String.Text
 msgid  "Returns the annual Macaulay duration of a security with periodic interest payments"
-msgstr ""
+msgstr "مەلۇم بىر قەرەللىك مۇددەتتە ئۆسۈم چىقىم قىلىدىغان ئاكسىيەنىڭ Macaulay قەرەلىنى ھېسابلايدۇ"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Duration.2.String.Text
 msgid  "Settlement"
@@ -1901,7 +1901,7 @@ msgstr "مەزگىل"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Cumprinc.1.String.Text
 msgid  "Returns the cumulative principal on a loan to be paid between two periods"
-msgstr ""
+msgstr "مەلۇم بىر قەرزنىڭ ئىككى مەزگىل ئارىسىدا جەمئى قايتۇرىدىغان دىر سوممىسىنى ھېسابلايدۇ"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Cumprinc.2.String.Text
 msgid  "Rate"
@@ -2005,7 +2005,7 @@ msgstr "قەرەلى توشىدىغان چېسلا تىپى"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Price.1.String.Text
 msgid  "Returns the price per 100 currency units face value of a security that pays periodic interest"
-msgstr ""
+msgstr "مەلۇم بىر مەزگىلدە ئۆسۈم قايتۇرىدىغان قىممىتى 100 پۇل بىرلىكى بولغان ئاكسىيەنىڭ باھاسىنى ھېسابلايدۇ"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Price.2.String.Text
 msgid  "Settlement"
@@ -2065,7 +2065,7 @@ msgstr "ئۆسۈم ھېسابلاش ئاساسى"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Pricedisc.1.String.Text
 msgid  "Returns the price per 100 currency units face value of a discounted security"
-msgstr ""
+msgstr "مەلۇم بىر ئۆسۈم ھېسابلىمايدىغان قىممىتى 100 پۇل بىرلىكى بولغان ئاكسىيەنىڭ باھاسىنى ھېسابلايدۇ"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Pricedisc.2.String.Text
 msgid  "Settlement"
@@ -2109,7 +2109,7 @@ msgstr "ئۆسۈم ھېسابلاش ئاساسى"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Pricemat.1.String.Text
 msgid  "Returns the price per 100 currency units face value of a security that pays interest at maturity"
-msgstr ""
+msgstr "مەلۇم بىر مەزگىل توشقاندا قايتۇرىدىغان قىممىتى 100 پۇل بىرلىكى بولغان ئاكسىيەنىڭ باھاسىنى ھېسابلايدۇ"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Pricemat.2.String.Text
 msgid  "Settlement"
@@ -2161,7 +2161,7 @@ msgstr "ئۆسۈم ھېسابلاش ئاساسى"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Mduration.1.String.Text
 msgid  "Returns the Macaulay modified duration for a security with an assumed par value of 100 currency units"
-msgstr ""
+msgstr "قىممىتى 100 پۇل بىرلىكى بولغان ئاكسىيىنىڭ Macaulay ئۆزگىرىش مەزگىلىنى ھېسابلايدۇ"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Mduration.2.String.Text
 msgid  "Settlement"
@@ -2233,7 +2233,7 @@ msgstr "مەزگىل"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Dollarfr.1.String.Text
 msgid  "Converts a price expressed as a decimal into a price expressed as a fraction"
-msgstr ""
+msgstr "مەلۇم بىر كەسىر سان بىلەن ئىپادىلىنىدىغان باھانى ئارىلاش كەسىر بىلەن ئىپادىلەيدىغان باھاغا ئايلاندۇر"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Dollarfr.2.String.Text
 msgid  "Decimal dollar"
@@ -2253,7 +2253,7 @@ msgstr "پۈتۈن سان مەخرىجى"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Dollarde.1.String.Text
 msgid  "Converts a price expressed as a fraction into a price expressed as a decimal"
-msgstr ""
+msgstr "مەلۇم بىر كەسىر سان بىلەن ئىپادىلىنىدىغان باھانى ئونلۇق كەسىر بىلەن ئىپادىلەيدىغان باھاغا ئايلاندۇر"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Dollarde.2.String.Text
 msgid  "Fractional dollar"
@@ -2377,7 +2377,7 @@ msgstr "ئۆسۈم ھېسابلاش ئاساسى"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Yieldmat.1.String.Text
 msgid  "Returns the annual yield of a security that pays interest at maturity"
-msgstr ""
+msgstr "مۇددىتى توشقاندا ئۆسۈمىنى تۆلەيدىغان ئاكسىيىنىڭ يىللىق پايدا نىسبىتىنى  ھېسابلايدۇ"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Yieldmat.2.String.Text
 msgid  "Settlement"
@@ -2429,7 +2429,7 @@ msgstr "ئۆسۈم ھېسابلاش ئاساسى"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Tbilleq.1.String.Text
 msgid  "Returns the bond-equivalent yield for a treasury bill"
-msgstr ""
+msgstr "مەلۇم بىر دۆلەت مالىيە مىنىستىرلىكى ئاكسىيەسىنىڭ تەڭ قىممەتلىك پايدا نىسبىتىنى ھېسابلايدۇ"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Tbilleq.2.String.Text
 msgid  "Settlement"
@@ -2513,7 +2513,7 @@ msgstr "ئەمەلىي باھا"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Oddfprice.1.String.Text
 msgid  "Returns the price per $100 face value of a security with an odd first period"
-msgstr ""
+msgstr "قىممىتى $100 دەسلەپكى ئۆسۈم چىقىم قىلىش ۋاقتى مۇقىم بولمىغان ئاكسىيىنىڭ ئەمەلىي باھاسى."
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Oddfprice.2.String.Text
 msgid  "Settlement"
@@ -2589,7 +2589,7 @@ msgstr "ئۆسۈم ھېسابلاش ئاساسى"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Oddfyield.1.String.Text
 msgid  "Returns the yield of a security with an odd first period"
-msgstr ""
+msgstr "مەلۇم بىر دەسلەپكى ئۆسۈم چىقىم قىلىش ۋاقتى مۇقىم بولمىغان ئاكسىيىنىڭ ئەمەلىي پايدا نىسبىتى."
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Oddfyield.2.String.Text
 msgid  "Settlement"
@@ -2665,7 +2665,7 @@ msgstr "ئۆسۈم ھېسابلاش ئاساسى"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Oddlprice.1.String.Text
 msgid  "Returns the price per $100 face value of a security with an odd last period"
-msgstr ""
+msgstr "قىممىتى $100 دەسلەپكى ئۆسۈم چىقىم قىلىش ۋاقتى مۇقىم بولمىغان ئاكسىيىنىڭ ئەمەلىي باھاسى."
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Oddlprice.2.String.Text
 msgid  "Settlement"
@@ -2733,7 +2733,7 @@ msgstr "ئۆسۈم ھېسابلاش ئاساسى"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Oddlyield.1.String.Text
 msgid  "Returns the yield of a security with an odd last period"
-msgstr ""
+msgstr "مەلۇم بىر ئاخىرقى مەزگىلدە ئۆسۈم چىقىم قىلىش ۋاقتى مۇقىم بولمىغان ئاكسىيىنىڭ ئەمەلىي پايدا نىسبىتى."
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Oddlyield.2.String.Text
 msgid  "Settlement"
@@ -2801,7 +2801,7 @@ msgstr "ئۆسۈم ھېسابلاش ئاساسى"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Xirr.1.String.Text
 msgid  "Returns the internal rate of return for a non-periodic schedule of payments"
-msgstr ""
+msgstr "مەلۇم قەرەلسىز نەق پۇل ئېقىمىنىڭ ئىچكى پايدا نىسبىتىنى ھېسابلايدۇ"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Xirr.2.String.Text
 msgid  "Values"
@@ -2825,7 +2825,7 @@ msgstr "Guess"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Xirr.7.String.Text
 msgid  "The guess"
-msgstr ""
+msgstr "XIRR فونكسىيىسىنىڭ ھېسابلاش نەتىجىسى بىلەن ئەڭ يېقىن كېلىدىغان مۆلچەر قىممەت"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Xnpv.1.String.Text
 msgid  "Returns the net present value for a non-periodic schedule of payments"
@@ -2901,7 +2901,7 @@ msgstr "ئۆسۈم ھېسابلاش ئاساسى"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Coupncd.1.String.Text
 msgid  "Returns the first coupon date after the settlement date"
-msgstr ""
+msgstr "مەلۇم بىر ئاكسىيە پۈتۈشۈلگەن كۈندىن كېيىنكى يەنە بىر ئۆسۈم چىقىم قىلىدىغان چېسلانى ھېسابلايدۇ"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Coupncd.2.String.Text
 msgid  "Settlement"
@@ -2937,7 +2937,7 @@ msgstr "ئۆسۈم ھېسابلاش ئاساسى"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Coupdays.1.String.Text
 msgid  "Returns the number of days in the coupon period containing the settlement date"
-msgstr ""
+msgstr "مەلۇم بىر ئاكسىيەنىڭ سودا باشلانغان كۈنىن ئۆز ئىچىگە ئالغان ئۆسۈم چىقىم قىلىش مەزگىلىنىڭ كۈن سانىنى ھېسابلايدۇ."
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Coupdays.2.String.Text
 msgid  "Settlement"
@@ -2973,7 +2973,7 @@ msgstr "ئۆسۈم ھېسابلاش ئاساسى"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Coupdaysnc.1.String.Text
 msgid  "Returns the number of days from the settlement date to the next coupon date"
-msgstr ""
+msgstr "مەلۇم بىر ئاكسىيەنىڭ پۈتۈشكەن  كۈندىن كېيىنكى ئۆسۈم چىقىم قىلغان ۋاقىتقىچە بولغان كۈن سانىنى ھېسابلايدۇ."
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Coupdaysnc.2.String.Text
 msgid  "Settlement"
@@ -3009,7 +3009,7 @@ msgstr "ئۆسۈم ھېسابلاش ئاساسى"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Coupdaybs.1.String.Text
 msgid  "Returns the number of days from the beginning of the coupon period to the settlement date"
-msgstr ""
+msgstr "مەلۇم بىر ئاكسىيەنىڭ سودا باشلانغان كۈندىن باشلاپ ئۆسۈم چىقىم قىلغان ۋاقىتقىچە بولغان كۈن سانىنى ھېسابلايدۇ."
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Coupdaybs.2.String.Text
 msgid  "Settlement"
@@ -3045,7 +3045,7 @@ msgstr "ئۆسۈم ھېسابلاش ئاساسى"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Couppcd.1.String.Text
 msgid  "Returns the last coupon date preceding the settlement date"
-msgstr ""
+msgstr "مەلۇم بىر ئاكسىيە پۈتۈشكەن كۈندىن بۇرۇنقى ئەڭ ئاخىرقى ئۆسۈم چىقىم قىلىدىغان چېسلا ھېسابلايدۇ"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Couppcd.2.String.Text
 msgid  "Settlement"
@@ -3081,7 +3081,7 @@ msgstr "ئۆسۈم ھېسابلاش ئاساسى"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Coupnum.1.String.Text
 msgid  "Returns the number of coupons payable between the settlement and maturity dates"
-msgstr ""
+msgstr "مەلۇم بىر ئاكسىيە پۈتۈشۈلگەن كۈندىن باشلاپ قەرەلى توشقان ۋاقىتقىچە ئۆسۈم چىقىم قىلىش قېتىم سانىنى ھېسابلايدۇ"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Coupnum.2.String.Text
 msgid  "Settlement"
@@ -3117,7 +3117,7 @@ msgstr "ئۆسۈم ھېسابلاش ئاساسى"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Fvschedule.1.String.Text
 msgid  "Returns the future value of the initial principal after a series of compound interest rates are applied"
-msgstr ""
+msgstr "تەكرار ئۆسۈمى ئوخشاش بولمىغان بىر تۈركۈم دەسمايىنىڭ كەلگۈسىدىكى قىممىتىنى ھېسابلايدۇ."
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Fvschedule.2.String.Text
 msgid  "Principal"
@@ -3161,7 +3161,7 @@ msgstr "تىپى"
 
 #: source/datefunc/datefunc.src#RID_DATE_FUNCTION_DESCRIPTIONS.DATE_FUNCDESC_DiffWeeks.7.String.Text
 msgid  "Type of calculation: Type=0 means the time interval, Type=1 means calendar weeks."
-msgstr ""
+msgstr "ھېسابلاش تىپى: Type=0 شۇ ۋاقىت ئۆز ئىچىگە ئالغان ھەپتە سانىنى ئىپادىلەيدۇ، Type=1 يىلنامىدىكى ھەپتىنى بىلدۈرىدۇ."
 
 #: source/datefunc/datefunc.src#RID_DATE_FUNCTION_DESCRIPTIONS.DATE_FUNCDESC_DiffMonths.1.String.Text
 msgid  "Determines the number of months in a specific period."
@@ -3189,7 +3189,7 @@ msgstr "تىپى"
 
 #: source/datefunc/datefunc.src#RID_DATE_FUNCTION_DESCRIPTIONS.DATE_FUNCDESC_DiffMonths.7.String.Text
 msgid  "Type of calculation: Type=0 means the time interval, Type=1 means calendar months."
-msgstr ""
+msgstr "ھېسابلاش تىپى: Type=0 شۇ ۋاقىت ئۆز ئىچىگە ئالغان ئاي سانىنى ئىپادىلەيدۇ، Type=1 يىلنامىدىكى ئاينى بىلدۈرىدۇ."
 
 #: source/datefunc/datefunc.src#RID_DATE_FUNCTION_DESCRIPTIONS.DATE_FUNCDESC_DiffYears.1.String.Text
 msgid  "Calculates the number of years in a specific period."
@@ -3217,11 +3217,11 @@ msgstr "تىپى"
 
 #: source/datefunc/datefunc.src#RID_DATE_FUNCTION_DESCRIPTIONS.DATE_FUNCDESC_DiffYears.7.String.Text
 msgid  "Type of calculation: Type=0 means the time interval, Type=1 means calendar years."
-msgstr ""
+msgstr "ھېسابلاش تىپى: Type=0 ۋاقىت ئارىلىقىنى ئىپادىلەيدۇ، Type=1 يىلنامىدىكى يىلنى بىلدۈرىدۇ."
 
 #: source/datefunc/datefunc.src#RID_DATE_FUNCTION_DESCRIPTIONS.DATE_FUNCDESC_IsLeapYear.1.String.Text
 msgid  "Returns 1 (TRUE) if the date is a day of a leap year, otherwise 0 (FALSE)."
-msgstr ""
+msgstr "ئەگەر بۇ چېسلا كەبىسە يىلىدىكى كۈن بولسا 1 (TRUE) قايتۇرىدۇ، بولمىسا 0 (FALSE) قايتۇرىدۇ."
 
 #: source/datefunc/datefunc.src#RID_DATE_FUNCTION_DESCRIPTIONS.DATE_FUNCDESC_IsLeapYear.2.String.Text
 msgid  "Date"
@@ -3233,7 +3233,7 @@ msgstr "بەلگىلەنگەن يىلدىكى خالىغان بىر كۈن"
 
 #: source/datefunc/datefunc.src#RID_DATE_FUNCTION_DESCRIPTIONS.DATE_FUNCDESC_DaysInMonth.1.String.Text
 msgid  "Returns the number of days of the month in which the date entered occurs"
-msgstr ""
+msgstr "بەلگىلەنگەن چېسلا تۇرۇشلۇق ئاينىڭ كۈنىنى قايتۇرىدۇ"
 
 #: source/datefunc/datefunc.src#RID_DATE_FUNCTION_DESCRIPTIONS.DATE_FUNCDESC_DaysInMonth.2.String.Text
 msgid  "Date"
@@ -3245,7 +3245,7 @@ msgstr "بەلگىلەنگەن ئايدىكى خالىغان بىر كۈن"
 
 #: source/datefunc/datefunc.src#RID_DATE_FUNCTION_DESCRIPTIONS.DATE_FUNCDESC_DaysInYear.1.String.Text
 msgid  "Returns the number of days of the year in which the date entered occurs."
-msgstr ""
+msgstr "بەلگىلەنگەن چېسلا تۇرۇشلۇق يىلنىڭ كۈن سانىنى قايتۇرىدۇ."
 
 #: source/datefunc/datefunc.src#RID_DATE_FUNCTION_DESCRIPTIONS.DATE_FUNCDESC_DaysInYear.2.String.Text
 msgid  "Date"
@@ -3257,7 +3257,7 @@ msgstr "بەلگىلەنگەن يىلدىكى خالىغان بىر كۈن"
 
 #: source/datefunc/datefunc.src#RID_DATE_FUNCTION_DESCRIPTIONS.DATE_FUNCDESC_WeeksInYear.1.String.Text
 msgid  "Returns the number of weeks of the year in which the date entered occurs"
-msgstr ""
+msgstr "بەلگىلەنگەن چېسلا تۇرۇشلۇق يىلنىڭ ھەپتە سانىنى قايتۇرىدۇ."
 
 #: source/datefunc/datefunc.src#RID_DATE_FUNCTION_DESCRIPTIONS.DATE_FUNCDESC_WeeksInYear.2.String.Text
 msgid  "Date"
@@ -3269,7 +3269,7 @@ msgstr "بەلگىلەنگەن يىلدىكى خالىغان بىر كۈن"
 
 #: source/datefunc/datefunc.src#RID_DATE_FUNCTION_DESCRIPTIONS.DATE_FUNCDESC_Rot13.1.String.Text
 msgid  "Encrypts or decrypts a text using the ROT13 algorithm"
-msgstr ""
+msgstr "ROT13 ھېسابلاش ئۇسۇلىنىڭ ياردىمىدە تېكسىتنى شىفىرلايدۇ ياكى شىفىر يېشىدۇ."
 
 #: source/datefunc/datefunc.src#RID_DATE_FUNCTION_DESCRIPTIONS.DATE_FUNCDESC_Rot13.2.String.Text
 msgid  "Text"

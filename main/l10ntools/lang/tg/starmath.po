@@ -445,11 +445,11 @@ msgstr "Кӯркунӣ"
 
 #: source/smres.src#RID_NOMATHTYPEFACEWARNING.WarningBox.Message
 msgid  "The 'StarMath' font has not been installed.\nWithout this font %PRODUCTNAME Math cannot function correctly.\nPlease install this font and restart %PRODUCTNAME Math."
-msgstr ""
+msgstr "Ҳуруфоти \"StarMath\" васл карда нашудааст.\nБе ин ҳуруфот %PRODUCTNAME Math ба тарзи лозима амал намекунад.\nИн ҳуруфотро вал карда %PRODUCTNAME Math-ро аз нав оғоз намоед."
 
 #: source/smres.src#RID_DEFAULTSAVEQUERY.QueryBox.Message
 msgid  "Should the changes be saved as defaults?\n\nThese changes will apply for all new formulas."
-msgstr ""
+msgstr "Тағирот дар намуди асл сабт карда шавад?\n\nИн тағирот ба ҳама форматҳои нав дахолат мекунад."
 
 #: source/smres.src#RID_FONTREGULAR.String.Text
 msgid  "Standard"
@@ -558,6 +558,10 @@ msgstr "Санс"
 #: source/smres.src#RID_FONTMENU.7.MenuItem.Text
 msgid  "Fixed"
 msgstr "Муқаррар"
+
+#: source/smres.src#CMDBOXWINDOW_TEXT.#define.Text
+msgid  "Commands"
+msgstr "Командаҳо"
 
 #: source/smres.src#RID_DOCUMENTSTR.String.Text
 msgid  "Formula"
@@ -694,10 +698,6 @@ msgstr ""
 #: source/smres.src#RID_PRINTUIOPTIONS.item9.ItemList.item
 msgid  "~Scaling"
 msgstr ""
-
-#: source/smres.src#CMDBOXWINDOW_TEXT.#define.Text
-msgid  "Commands"
-msgstr "Командаҳо"
 
 #: source/commands.src#RID_COMMANDMENU.RID_UNBINOPS_MENU.MenuItem.Text
 msgid  "~Unary/Binary Operators"

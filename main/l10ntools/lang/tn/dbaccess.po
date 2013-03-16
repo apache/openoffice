@@ -41,23 +41,23 @@ msgstr "Geen verbinding kon gemaak word nie."
 
 #: source/core/resource/strings.src#RID_STR_TABLE_IS_FILTERED.String.Text
 msgid  "The table $name$ already exists. It is not visible because it has been filtered out."
-msgstr ""
+msgstr "Die tabel $name$ bestaan reeds. Dit is nie sigbaar nie omdat dit uitgefilter is."
 
 #: source/core/resource/strings.src#RID_STR_NEED_CONFIG_WRITE_ACCESS.String.Text
 msgid  "You have no write access to the configuration data the object is based on."
-msgstr ""
+msgstr "U het nie skryftoegang tot die opstellingdata waarop die objek gebaseer is nie."
 
 #: source/core/resource/strings.src#RID_STR_COULDNOTCONNECT_UNSPECIFIED.String.Text
 msgid  "The connection to the external data source could not be established. An unknown error occurred. The driver is probably defective."
-msgstr ""
+msgstr "Die verbinding met die eksterne databron kon nie gemaak word nie. 'n Onbekende fout het plaasgevind. Die drywer is waarskynlik defektief."
 
 #: source/core/resource/strings.src#RID_STR_COULDNOTCONNECT_NODRIVER.String.Text
 msgid  "The connection to the external data source could not be established. No SDBC driver was found for the given URL."
-msgstr ""
+msgstr "Die verbinding met die eksterne databron kon nie gemaak word nie. Geen SDBC-drywer is vir die gegewe URL gevind nie."
 
 #: source/core/resource/strings.src#RID_STR_COULDNOTLOAD_MANAGER.String.Text
 msgid  "The connection to the external data source could not be established. The SDBC driver manager could not be loaded."
-msgstr ""
+msgstr "Die verbinding met die eksterne databron kon nie gemaak word nie. Die SDBC-drywerbestuurder kon nie gelaai word nie."
 
 #: source/core/resource/strings.src#RID_STR_FORM.String.Text
 msgid  "Form"
@@ -69,11 +69,11 @@ msgstr "Verslag"
 
 #: source/core/resource/strings.src#RID_STR_DATASOURCE_NOT_STORED.String.Text
 msgid  "The data source was not saved. Please use the interface XStorable to save the data source."
-msgstr ""
+msgstr "Die databron is nie gestoor nie. Gebruik asseblief die koppelvlak XStoorbaar om die databron te stoor."
 
 #: source/core/resource/strings.src#RID_STR_ONLY_QUERY.String.Text
 msgid  "The given command is not a SELECT statement.\nOnly queries are allowed."
-msgstr ""
+msgstr "Die gegewe bevel is nie 'n SELECT-stelling nie.\n Net navrae word toegelaat."
 
 #: source/core/resource/strings.src#RID_STR_NO_VALUE_CHANGED.String.Text
 msgid  "No values were modified."
@@ -81,11 +81,11 @@ msgstr "Geen waardes is gewysig nie."
 
 #: source/core/resource/strings.src#RID_STR_NO_XROWUPDATE.String.Text
 msgid  "Values could not be inserted. The XRowUpdate interface is not supported by ResultSet."
-msgstr ""
+msgstr "Waardes kon nie ingevoeg word nie. Die XRyBywerk-koppelvlak word nie deur ResultaatStel ondersteun nie."
 
 #: source/core/resource/strings.src#RID_STR_NO_XRESULTSETUPDATE.String.Text
 msgid  "Values could not be inserted. The XResultSetUpdate interface is not supported by ResultSet."
-msgstr ""
+msgstr "Waardes kon nie ingevoeg word nie. Die XResultaatStelBywerk-koppelvlak word nie deur ResultaatStel ondersteun nie."
 
 #: source/core/resource/strings.src#RID_STR_NO_UPDATE_MISSING_CONDITION.String.Text
 msgid  "Values could not be modified, due to a missing condition statement."
@@ -141,11 +141,11 @@ msgstr "Relatiewe posisionering word nie in hierdie staat toegelaat nie."
 
 #: source/core/resource/strings.src#RID_STR_NO_REFESH_AFTERLAST.String.Text
 msgid  "A row cannot be refreshed when the ResultSet is positioned after the last row."
-msgstr ""
+msgstr "'n Ry kan nie verfris word wanneer die ResultaatStel ná die laaste ry geposisioneer is nie."
 
 #: source/core/resource/strings.src#RID_STR_NO_MOVETOINSERTROW_CALLED.String.Text
 msgid  "A new row cannot be inserted when the ResultSet is not first moved to the insert row."
-msgstr ""
+msgstr "'n Nuwe ry kan nie ingevoeg word wanneer die ResultaatStel nie eers na die invoegry geskuif word nie."
 
 #: source/core/resource/strings.src#RID_STR_NO_UPDATEROW.String.Text
 msgid  "A row cannot be modified in this state"
@@ -165,31 +165,31 @@ msgstr "Die drywer ondersteun nie die wysiging van kolombeskrywings nie."
 
 #: source/core/resource/strings.src#RID_STR_COLUMN_ALTER_BY_NAME.String.Text
 msgid  "The driver does not support the modification of column descriptions by changing the name."
-msgstr ""
+msgstr "Die drywer ondersteun nie die wysiging van kolombeskrywings deur die naam te verander nie."
 
 #: source/core/resource/strings.src#RID_STR_COLUMN_ALTER_BY_INDEX.String.Text
 msgid  "The driver does not support the modification of column descriptions by changing the index."
-msgstr ""
+msgstr "Die drywer ondersteun nie die wysiging van kolombeskrywings deur die indeks te verander nie."
 
 #: source/core/resource/strings.src#RID_STR_FILE_DOES_NOT_EXIST.String.Text
-msgid  "The file "$file$" does not exist."
-msgstr ""
+msgid  "The file \"$file$\" does not exist."
+msgstr "Die lêer \"$file$\" bestaan nie."
 
 #: source/core/resource/strings.src#RID_STR_TABLE_DOES_NOT_EXIST.String.Text
-msgid  "There exists no table named "$table$"."
-msgstr ""
+msgid  "There exists no table named \"$table$\"."
+msgstr "Daar is geen tabel genaamd \"$table$\" nie."
 
 #: source/core/resource/strings.src#RID_STR_QUERY_DOES_NOT_EXIST.String.Text
-msgid  "There exists no query named "$table$"."
-msgstr ""
+msgid  "There exists no query named \"$table$\"."
+msgstr "Daar is geen navraag genaamd \"$table$\" nie."
 
 #: source/core/resource/strings.src#RID_STR_CONFLICTING_NAMES.String.Text
 msgid  "There are tables in the database whose names conflict with the names of existing queries. To make full use of all queries and tables, make sure they have distinct names."
-msgstr ""
+msgstr "Daar is tabelle in die databasis waarvan die name met die name van bestaande navrae bots. Om volledige gebruik van al die navrae en tabelle te maak, maak seker dat hulle unieke name het."
 
 #: source/core/resource/strings.src#RID_STR_COMMAND_LEADING_TO_ERROR.String.Text
 msgid  "The SQL command leading to this error is:\n\n$command$"
-msgstr ""
+msgstr "Die SQL-bevel wat tot hierdie fout gelei het, is:\n\n$command$"
 
 #: source/core/resource/strings.src#RID_STR_STATEMENT_WITHOUT_RESULT_SET.String.Text
 msgid  "The SQL command does not describe a result set."
@@ -228,8 +228,9 @@ msgid  "Error accessing data source '$name$':\n$error$"
 msgstr ""
 
 #: source/core/resource/strings.src#RID_STR_NO_SUB_FOLDER.String.Text
-msgid  "There exists no folder named "$folder$"."
-msgstr ""
+#, fuzzy
+msgid  "There exists no folder named \"$folder$\"."
+msgstr "Daar is geen tabel genaamd \"$table$\" nie."
 
 #: source/core/resource/strings.src#RID_STR_NO_DELETE_BEFORE_AFTER.String.Text
 msgid  "Cannot delete the before-first or after-last row."
@@ -296,7 +297,7 @@ msgid  "Embedding of database documents is not supported."
 msgstr ""
 
 #: source/core/resource/strings.src#RID_STR_CONNECTION_REQUEST.String.Text
-msgid  "A connection for the following URL was requested "$name$"."
+msgid  "A connection for the following URL was requested \"$name$\"."
 msgstr ""
 
 #: source/core/resource/strings.src#RID_STR_MISSING_EXTENSION.String.Text
@@ -413,7 +414,7 @@ msgstr ""
 
 #: source/ext/adabas/AdabasNewDb.src#STR_NO_SAME_USER.String.Text
 msgid  "The administrator and the control user cannot have the same name!"
-msgstr ""
+msgstr "Die administrateur en die kontrolegebruiker kan nie dieselfde naam hê nie!"
 
 #: source/ext/adabas/AdabasNewDb.src#STR_DEVSPACE_NO_FILE.String.Text
 msgid  "No name has been entered for the $name$ file!"
@@ -428,8 +429,8 @@ msgid  "The specified file name or directory does not exist."
 msgstr "Die gespesifiseerde lêernaam of gids bestaan nie."
 
 #: source/ext/adabas/AdabasNewDb.src#STR_ERROR_IN_ADABAS_INSTALLATION.String.Text
-msgid  "No new database can be created.\nPlease check your Adabas D installation, especially the variables "DBROOT" and "DBWORK"."
-msgstr ""
+msgid  "No new database can be created.\nPlease check your Adabas D installation, especially the variables \"DBROOT\" and \"DBWORK\"."
+msgstr "Geen nuwe databasis kan geskep word nie.\nKontroleer asseblief u Adabas D-installasie, veral die veranderlikes \"DBROOT\" en \"DBWORK\"."
 
 #: source/ext/adabas/AdabasNewDb.src#STR_STAT_WARNING.String.Text
 msgid  "Warning!"
@@ -453,19 +454,19 @@ msgstr "Die naam wat ingetik is, bestaan reeds."
 
 #: source/ext/adabas/AdabasNewDb.src#STR_ADABAS_NO_DEFAULTNAME.String.Text
 msgid  "No default names could be set for the database files. The total length is more than 40 characters."
-msgstr ""
+msgstr "Geen verstek name kon vir die databasislêers gestel word nie. Die totale lengte is meer as 40 karakters."
 
 #: source/ext/adabas/AdabasNewDb.src#STR_ADABAS_NO_ACCESSRIGHTS.String.Text
 msgid  "No default names could be set for the database files. There is no write access."
-msgstr ""
+msgstr "Geen verstek name kon vir die databasislêers gestel word nie. Daar is geen skryftoegang nie."
 
 #: source/ext/adabas/AdabasNewDb.src#STR_ADABAS_CANNOT_CONVERT.String.Text
 msgid  "The current database need to be converted. Please insert control user  and password."
-msgstr ""
+msgstr "Die huidige databasis moet omskep word. Tik asseblief kontrole-gebruiker en -wagwoord in."
 
 #: source/ext/adabas/AdabasNewDb.src#STR_ADABAS_PASSWORD_ILLEGAL.String.Text
 msgid  "Spaces are not permitted in the password. Please enter a new password."
-msgstr ""
+msgstr "Daar mag nie spasies in die wagwoord wees nie. Tik asseblief 'n nuwe wagwoord in."
 
 #: source/ext/macromigration/macromigration.src#DLG_MACRO_MIGRATION.ModalDialog.Text
 msgid  "Database Document Macro Migration"
@@ -493,11 +494,11 @@ msgstr "Welkom by die databasismakromigrasie-slimmerd"
 
 #: source/ext/macromigration/macromigration.src#TP_PREPARE.FT_INTRODUCTION.FixedText.Text
 msgid  "This wizard will guide you through the task of migrating your macros.\n\nAfter you finished it, all macros which were formerly embedded into the forms and reports of the current database document will have been moved to the document itself. In this course, libraries will be renamed as needed.\n\nIf your forms and reports contain references to those macros, they will be adjusted, where possible.\n\nBefore the migration can start, all forms, reports, queries and tables belonging to the document must be closed. Press 'Next' to do so."
-msgstr ""
+msgstr "Hierdie slimmerd lei u deur die taak om u makro's te migreer.\n\nNadat u dit afgehandel het, sal alle makro's wat voorheen in die vorms en verslae van die huidige databasisdokument ingebed was, na die dokument sélf verskuif wees. Biblioteke sal dus hernoem word indien nodig.\n\nIndien u vorms en verslae verwysings na hierdie makro's bevat, sal hulle aangepas word waar moontlik.\n\nVoor die migrasie kan plaasvind, moet alle vorms, verslae, navrae en tabelle wat aan die dokument behoort, afgesluit word. Druk 'Volgende' om dit te doen."
 
 #: source/ext/macromigration/macromigration.src#TP_PREPARE.FT_CLOSE_DOC_ERROR.FixedText.Text
 msgid  "Not all objects could be closed. Please close them manually, and re-start the wizard."
-msgstr ""
+msgstr "Nie alle objekte kon gebruik word nie. Sluit hulle asseblief handmatig, en herbegin die slimmerd."
 
 #: source/ext/macromigration/macromigration.src#TP_SAVE_DBDOC_AS.FT_HEADER.FixedText.Text
 msgid  "Backup your Document"
@@ -505,7 +506,7 @@ msgstr "Rugsteun u dokument"
 
 #: source/ext/macromigration/macromigration.src#TP_SAVE_DBDOC_AS.FT_EXPLANATION.FixedText.Text
 msgid  "To allow you to go back to the state before the migration, the database document will be backed up to a location of your choice. Every change done by the wizard will be made to the original document, the backup will stay untouched."
-msgstr ""
+msgstr "Om jou in staat te stel om na die staat te gaan van voor die migrasie, sal die databasisdokument gerugsteun word na 'n ligging van jou keuse. Elke verandering wat deur die slimmerd gemaak word, sal aan die oorspronklike dokument gemaak word, en die rugsteun sal onaangeraak bly."
 
 #: source/ext/macromigration/macromigration.src#TP_SAVE_DBDOC_AS.FT_SAVE_AS_LABEL.FixedText.Text
 msgid  "Save To:"
@@ -517,7 +518,7 @@ msgstr "Blaai..."
 
 #: source/ext/macromigration/macromigration.src#TP_SAVE_DBDOC_AS.FT_START_MIGRATION.FixedText.Text
 msgid  "Press 'Next' to save a copy of your document, and to begin the migration."
-msgstr ""
+msgstr "Druk 'Volgende' om 'n kopie van u dokument te stoor, en om te begin migreer."
 
 #: source/ext/macromigration/macromigration.src#TP_MIGRATE.FT_HEADER.FixedText.Text
 msgid  "Migration Progress"
@@ -525,7 +526,7 @@ msgstr "Migrasievordering"
 
 #: source/ext/macromigration/macromigration.src#TP_MIGRATE.FT_OBJECT_COUNT.FixedText.Text
 msgid  "The database document contains $forms$ form(s) and $reports$ report(s), which are currently being processed:"
-msgstr ""
+msgstr "Die databasisdokument bevat $forms$ vorm(s) en $reports$ verslag(e), wat tans verwerk word:"
 
 #: source/ext/macromigration/macromigration.src#TP_MIGRATE.FT_CURRENT_OBJECT_LABEL.FixedText.Text
 msgid  "Current object:"
@@ -545,7 +546,7 @@ msgstr "dokument $current$ van $overall$"
 
 #: source/ext/macromigration/macromigration.src#TP_MIGRATE.FT_MIGRATION_DONE.FixedText.Text
 msgid  "All forms and reports have been successfully processed. Press 'Next' to show a detailed summary."
-msgstr ""
+msgstr "Alle vorms en verslae is suksesvol verwerk. Druk 'Volgende' vir 'n gedetailleerde opsomming."
 
 #: source/ext/macromigration/macromigration.src#TP_SUMMARY.FT_HEADER.FixedText.Text
 msgid  "Summary"
@@ -553,11 +554,11 @@ msgstr "Opsomming"
 
 #: source/ext/macromigration/macromigration.src#TP_SUMMARY.STR_SUCCESSFUL.String.Text
 msgid  "The migration was successful. Below is a log of the actions which have been taken to your document."
-msgstr ""
+msgstr "Die migrasie was suksesvol. Hier onder is 'n staaflêer van dit wat met u dokument gedoen is."
 
 #: source/ext/macromigration/macromigration.src#TP_SUMMARY.STR_UNSUCCESSFUL.String.Text
 msgid  "The migration was not successful. Examine the migration log below for details."
-msgstr ""
+msgstr "Die migrasie was nie suksesvol nie. Ondersoek die migrasiestaaflêer hier onder vir details."
 
 #: source/ext/macromigration/macromigration.src#STR_FORM.String.Text
 msgid  "Form '$name$'"
@@ -629,7 +630,7 @@ msgstr "uitsondering gevang: "
 
 #: source/ext/macromigration/macromigration.src#ERR_INVALID_BACKUP_LOCATION.ErrorBox.Message
 msgid  "You need to choose a backup location other than the document location itself."
-msgstr ""
+msgstr "U moet 'n rugsteunligging kies wat nie die dokument se eie ligging is nie."
 
 #: source/ext/macromigration/macromigration.src#STR_INVALID_NUMBER_ARGS.String.Text
 msgid  "Invalid number of initialization arguments. Expected 1."
@@ -645,7 +646,7 @@ msgstr ""
 
 #: source/sdbtools/resource/sdbt_strings.src#STR_QUERY_AND_TABLE_DISTINCT_NAMES.String.Text
 msgid  "You cannot give a table and a query the same name. Please use a name which is not yet used by a query or table."
-msgstr ""
+msgstr "Jy kan nie 'n tabel en 'n navraag selfde naam gee nie. Gebruik asseblief 'n naam wat nog nie deur 'n navraag of tabel gebruik word nie."
 
 #: source/sdbtools/resource/sdbt_strings.src#STR_BASENAME_TABLE.String.Text
 msgid  "Table"
@@ -657,7 +658,7 @@ msgstr "Navraag"
 
 #: source/sdbtools/resource/sdbt_strings.src#STR_CONN_WITHOUT_QUERIES_OR_TABLES.String.Text
 msgid  "The given connection is no valid query and/or tables supplier."
-msgstr ""
+msgstr "Die gegewe verbinding is nie 'n geldige navraag- en/of tabelverskaffer nie."
 
 #: source/sdbtools/resource/sdbt_strings.src#STR_NO_TABLE_OBJECT.String.Text
 msgid  "The given object is no table object."
@@ -665,11 +666,11 @@ msgstr "Die gegewe objek is nie 'n tabelobjek nie."
 
 #: source/sdbtools/resource/sdbt_strings.src#STR_INVALID_COMPOSITION_TYPE.String.Text
 msgid  "Invalid composition type - need a value from com.sun.star.sdb.tools.CompositionType."
-msgstr ""
+msgstr "Ongeldige saamsteltipe - benodig 'n waarde van com.sun.star.sdb.tools.CompositionType."
 
 #: source/sdbtools/resource/sdbt_strings.src#STR_INVALID_COMMAND_TYPE.String.Text
 msgid  "Invalid command type - only TABLE and QUERY from com.sun.star.sdb.CommandType are allowed."
-msgstr ""
+msgstr "Ongeldige beveltipe - net TABLE en QUERY uit com.sun.star.sdb.CommandType word toegelaat."
 
 #: source/ui/app/app.src#RID_STR_NEW_FORM.String.Text
 msgid  "Create Form in Design View..."
@@ -806,16 +807,19 @@ msgid  " - %PRODUCTNAME Base"
 msgstr " - %PRODUCTNAME-basis"
 
 #: source/ui/app/app.src#RID_STR_REPORTS_HELP_TEXT_WIZARD.String.Text
+#, fuzzy
 msgid  "The wizard will guide you through the steps necessary to create a report."
-msgstr ""
+msgstr "Die slimmerd sal u deur die stappe neem om 'n verslag te skep."
 
 #: source/ui/app/app.src#RID_STR_FORMS_HELP_TEXT.String.Text
+#, fuzzy
 msgid  "Create a form by specifying the record source, controls, and control properties."
-msgstr ""
+msgstr "Skep 'n vorm deur die rekordbron, kontroles en kontrole-eienskappe te spesifiseer."
 
 #: source/ui/app/app.src#RID_STR_REPORT_HELP_TEXT.String.Text
+#, fuzzy
 msgid  "Create a report by specifying the record source, controls, and control properties."
-msgstr ""
+msgstr "Skep 'n verslag deur die rekordbron, kontroles en kontrole-eienskappe te spesifiseer."
 
 #: source/ui/app/app.src#RID_STR_FORMS_HELP_TEXT_WIZARD.String.Text
 #, fuzzy
@@ -823,8 +827,9 @@ msgid  "The wizard will guide you through the steps necessary to create a form."
 msgstr "Die slimmerd sal u deur die stappe neem om 'n vorm te skep."
 
 #: source/ui/app/app.src#RID_STR_QUERIES_HELP_TEXT.String.Text
+#, fuzzy
 msgid  "Create a query by specifying the filters, input tables, field names,  and  properties for sorting or grouping."
-msgstr ""
+msgstr "Skep 'n navraag deur die filters, toevoertabelle, veldname en eienskappe vir sorteer en groepeer te spesifiseer."
 
 #: source/ui/app/app.src#RID_STR_QUERIES_HELP_TEXT_SQL.String.Text
 #, fuzzy
@@ -832,20 +837,24 @@ msgid  "Create a query  entering an SQL statement directly."
 msgstr "Skep 'n navraag deur 'n SQL-stelling direk in te voer."
 
 #: source/ui/app/app.src#RID_STR_QUERIES_HELP_TEXT_WIZARD.String.Text
+#, fuzzy
 msgid  "The wizard will guide you through the steps necessary to create a query."
-msgstr ""
+msgstr "Die slimmerd sal u deur die stappe neem om 'n navraag te skep."
 
 #: source/ui/app/app.src#RID_STR_TABLES_HELP_TEXT_DESIGN.String.Text
+#, fuzzy
 msgid  "Create a table by specifying the field names and properties, as well as the data types."
-msgstr ""
+msgstr "Skep 'n tabel deur die veldname en -eienskappe asook die datatipes te spesifiseer."
 
 #: source/ui/app/app.src#RID_STR_TABLES_HELP_TEXT_WIZARD.String.Text
+#, fuzzy
 msgid  "Choose from a selection of business and personal table samples, which you customize to create a table."
-msgstr ""
+msgstr "Kies uit 'n verskeidenheid voorbeelde besigheids- en persoonlike tabelle, wat u doelmaak om 'n tabel te skep."
 
 #: source/ui/app/app.src#RID_STR_VIEWS_HELP_TEXT_DESIGN.String.Text
+#, fuzzy
 msgid  "Create a view by specifying the tables and field names you would like to have visible."
-msgstr ""
+msgstr "Skep 'n aansig deur die tabelle en veldname te spesifiseer wat u sigbaar wil h."
 
 #: source/ui/app/app.src#RID_STR_VIEWS_HELP_TEXT_WIZARD.String.Text
 #, fuzzy
@@ -878,12 +887,14 @@ msgid  "Disable Preview"
 msgstr "Deaktiveer voorskou"
 
 #: source/ui/app/app.src#APP_SAVEMODIFIED.QueryBox.Message
+#, fuzzy
 msgid  "The database has been modified.\nDo you want to save the changes?"
-msgstr ""
+msgstr "Die databasis is gewysig.\nWil u die wysigings stoor?"
 
 #: source/ui/app/app.src#APP_CLOSEDOCUMENTS.QueryBox.Message
+#, fuzzy
 msgid  "The connection type has been altered.\nFor the changes to take effect, all forms, reports, queries and tables must be closed.\n\nDo you want to close all documents now?"
-msgstr ""
+msgstr "Die verbinding-soort is gewysig.\nAlle vorms, verslae, navrae en tabelle moet afgesluit word voor die veranderinge geaktiveer word.\n\nWil u alle dokumente nou sluit?"
 
 #: source/ui/app/app.src#RID_MENU_APP_PREVIEW.SID_DB_APP_DISABLE_PREVIEW.MenuItem.Text
 #, fuzzy
@@ -899,6 +910,16 @@ msgstr "Dokumentinligting"
 #, fuzzy
 msgid  "Document"
 msgstr "Dokument"
+
+#: source/ui/app/app.src#RID_STR_FORM.String.Text
+#, fuzzy
+msgid  "Form"
+msgstr "Vorm"
+
+#: source/ui/app/app.src#RID_STR_REPORT.String.Text
+#, fuzzy
+msgid  "Report"
+msgstr "Verslag"
 
 #: source/ui/app/app.src#STR_FRM_LABEL.String.Text
 #, fuzzy
@@ -921,8 +942,9 @@ msgid  "The document contains forms or reports with embedded macros."
 msgstr "Die dokument bevat vorms of verslae met ingebedde makro's."
 
 #: source/ui/app/app.src#STR_SUB_DOCS_WITH_SCRIPTS_DETAIL.String.Text
+#, fuzzy
 msgid  "Macros should be embedded into the database document itself.\n\nYou can continue to use your document as before, however, you are encouraged to migrate your macros. The menu item 'Tools / Migrate Macros ...' will assist you with this.\n\nNote that you won't be able to embed macros into the database document itself until this migration is done. "
-msgstr ""
+msgstr "Makro's behoort in die databasisdokument sélf ingebed word.\n\nU kan voortgaan om u dokument soos tevore te gebruik, maar u word aangemoedig om u makro's te migreer. Die kieslysitem 'Nuts / Migreer makro's...' sal u hiermee help.\n\nLet op dat u nie makro's sal kan inbed in die databasisdokument sélf voor die migrasie afgehandel is nie. "
 
 #: source/ui/app/app.src#RID_STR_EMBEDDED_DATABASE.String.Text
 #, fuzzy
@@ -937,291 +959,231 @@ msgstr ""
 msgid  "Unsupported object type found ($type$)."
 msgstr ""
 
-#: source/ui/app/app.src#RID_STR_FORM.String.Text
-#, fuzzy
-msgid  "Form"
-msgstr "Vorm"
-
-#: source/ui/app/app.src#RID_STR_REPORT.String.Text
-#, fuzzy
-msgid  "Report"
-msgstr "Verslag"
-
 #: source/ui/browser/sbabrw.src#QUERY_BRW_SAVEMODIFIED.QueryBox.Message
 msgid  "The current record has been changed.\nDo you want to save the changes?"
-msgstr ""
+msgstr "Die huidige rekord is gewysig.\nWil u die veranderinge stoor?"
 
 #: source/ui/browser/sbabrw.src#QUERY_BRW_DELETE_ROWS.QueryBox.Message
-#, fuzzy
 msgid  "Do you want to delete the selected data?"
 msgstr "Wil u die gemerkte data skrap?"
 
 #: source/ui/browser/sbabrw.src#RID_STR_DATABROWSER_FILTERED.String.Text
-#, fuzzy
 msgid  "(filtered)"
 msgstr "(gefilter)"
 
 #: source/ui/browser/sbabrw.src#SBA_BROWSER_SETTING_ORDER.String.Text
-#, fuzzy
 msgid  "Error setting the sort criteria"
 msgstr "Kon nie die sorteerkriteria stel nie"
 
 #: source/ui/browser/sbabrw.src#SBA_BROWSER_SETTING_FILTER.String.Text
-#, fuzzy
 msgid  "Error setting the filter criteria"
 msgstr "Kon nie die filterkriteria stel nie"
 
 #: source/ui/browser/sbabrw.src#RID_STR_CONNECTION_LOST.String.Text
-#, fuzzy
 msgid  "Connection lost"
 msgstr "Verbinding gebreek"
 
 #: source/ui/browser/sbabrw.src#RID_STR_QUERIES_CONTAINER.String.Text
-#, fuzzy
 msgid  "Queries"
 msgstr "Navrae"
 
 #: source/ui/browser/sbabrw.src#RID_STR_TABLES_CONTAINER.String.Text
-#, fuzzy
 msgid  "Tables"
 msgstr "Tabelle"
 
+#: source/ui/browser/sbabrw.src#ID_TREE_EDIT_DATABASE.#define.Text
+msgid  "Edit ~Database File..."
+msgstr "Redigeer ~databasislêer..."
+
+#: source/ui/browser/sbabrw.src#ID_TREE_ADMINISTRATE.#define.Text
+msgid  "Registered databases ..."
+msgstr "Geregistreerde databasis..."
+
+#: source/ui/browser/sbabrw.src#ID_TREE_CLOSE_CONN.#define.Text
+msgid  "Disco~nnect"
+msgstr "Ontko~ppel"
+
 #: source/ui/browser/sbabrw.src#STR_TITLE_CONFIRM_DELETION.String.Text
-#, fuzzy
 msgid  "Confirm Deletion"
 msgstr "Bevestig skrapping"
 
 #: source/ui/browser/sbabrw.src#STR_QUERY_DELETE_TABLE.String.Text
-#, fuzzy
 msgid  "Do you want to delete the table '%1'?"
 msgstr "Wil u die tabel '%1' skrap?"
 
 #: source/ui/browser/sbabrw.src#QUERY_BRW_DELETE_QUERY_CONFIRM.QueryBox.Message
-#, fuzzy
 msgid  "The query already exists. Do you want to delete it?"
 msgstr "Die navraag bestaan reeds. Wil u dit skrap?"
 
 #: source/ui/browser/sbabrw.src#QUERY_CONNECTION_LOST.QueryBox.Message
-#, fuzzy
 msgid  "The connection to the database has been lost. Do you want to reconnect?"
 msgstr "Die verbinding met die databasis het gebreek. Wil u weer verbind?"
 
 #: source/ui/browser/sbabrw.src#STR_OPENTABLES_WARNINGS.String.Text
-#, fuzzy
 msgid  "Warnings encountered"
 msgstr "Daar was waarskuwings"
 
 #: source/ui/browser/sbabrw.src#STR_OPENTABLES_WARNINGS_DETAILS.String.Text
 msgid  "While retrieving the tables, warnings were reported by the database connection."
-msgstr ""
+msgstr "Waarskuwings is deur die databasisverbinding gerapporteer terwyl die tabelle herwin is."
 
 #: source/ui/browser/sbabrw.src#STR_CONNECTING_DATASOURCE.String.Text
-msgid  "Connecting to "$name$" ..."
-msgstr ""
+msgid  "Connecting to \"$name$\" ..."
+msgstr "Verbind tans aan \"$name$\" ..."
 
 #: source/ui/browser/sbabrw.src#STR_LOADING_QUERY.String.Text
-#, fuzzy
 msgid  "Loading query $name$ ..."
 msgstr "Laai tans navraag $name$ ..."
 
 #: source/ui/browser/sbabrw.src#STR_LOADING_TABLE.String.Text
-#, fuzzy
 msgid  "Loading table $name$ ..."
 msgstr "Laai tans tabel $name$ ..."
 
 #: source/ui/browser/sbabrw.src#STR_NO_TABLE_FORMAT_INSIDE.String.Text
-#, fuzzy
 msgid  "No table format could be found."
 msgstr "Geen tabelformaat kon gevind word nie."
 
 #: source/ui/browser/sbabrw.src#STR_COULDNOTCONNECT_DATASOURCE.String.Text
-msgid  "The connection to the data source "$name$" could not be established."
-msgstr ""
+msgid  "The connection to the data source \"$name$\" could not be established."
+msgstr "Die verbinding met die databron \"$name$\" kon nie bewerkstellig word nie."
 
 #: source/ui/browser/sbabrw.src#RID_MENU_REFRESH_DATA.ID_BROWSER_REFRESH_REBUILD.MenuItem.Text
-#, fuzzy
 msgid  "Rebuild"
 msgstr "Herbou"
 
-#: source/ui/browser/sbabrw.src#ID_TREE_EDIT_DATABASE.#define.Text
-#, fuzzy
-msgid  "Edit ~Database File..."
-msgstr "Redigeer ~databasislêer..."
-
-#: source/ui/browser/sbabrw.src#ID_TREE_ADMINISTRATE.#define.Text
-#, fuzzy
-msgid  "Registered databases ..."
-msgstr "Geregistreerde databasis..."
-
-#: source/ui/browser/sbabrw.src#ID_TREE_CLOSE_CONN.#define.Text
-#, fuzzy
-msgid  "Disco~nnect"
-msgstr "Ontko~ppel"
-
 #: source/ui/browser/sbagrid.src#RID_SBA_GRID_COLCTXMENU.ID_BROWSER_COLATTRSET.MenuItem.Text
-#, fuzzy
 msgid  "Column ~Format..."
 msgstr "Kolom~formaat..."
 
 #: source/ui/browser/sbagrid.src#RID_SBA_GRID_COLCTXMENU.ID_BROWSER_COLUMNINFO.MenuItem.Text
-#, fuzzy
 msgid  "Copy Column D~escription"
 msgstr "Kopieer kolomb~eskrywing"
 
 #: source/ui/browser/sbagrid.src#RID_SBA_GRID_ROWCTXMENU.ID_BROWSER_TABLEATTR.MenuItem.Text
-#, fuzzy
 msgid  "Table Format..."
 msgstr "Tabelformaat..."
 
 #: source/ui/browser/sbagrid.src#RID_SBA_GRID_ROWCTXMENU.ID_BROWSER_ROWHEIGHT.MenuItem.Text
-#, fuzzy
 msgid  "Row Height..."
 msgstr "Ryhoogte..."
 
 #: source/ui/browser/sbagrid.src#RID_STR_UNDO_MODIFY_RECORD.String.Text
-#, fuzzy
 msgid  "Undo: Data Input"
 msgstr "Ontdoen: data toevoer"
 
 #: source/ui/browser/sbagrid.src#RID_STR_SAVE_CURRENT_RECORD.String.Text
-#, fuzzy
 msgid  "Save current record"
 msgstr "Stoor huidige rekord"
 
 #: source/ui/browser/sbagrid.src#STR_QRY_TITLE.String.Text
-#, fuzzy
 msgid  "Query #"
 msgstr "Navraag #"
 
 #: source/ui/browser/sbagrid.src#STR_TBL_TITLE.String.Text
-#, fuzzy
 msgid  "Table #"
 msgstr "Tabel #"
 
 #: source/ui/browser/sbagrid.src#STR_VIEW_TITLE.String.Text
-#, fuzzy
 msgid  "View #"
 msgstr "Bekyk #"
 
 #: source/ui/browser/sbagrid.src#STR_NAME_ALREADY_EXISTS.String.Text
-msgid  "The name "#" already exists."
-msgstr ""
+msgid  "The name \"#\" already exists."
+msgstr "Die naam \"#\" bestaan reeds."
 
 #: source/ui/browser/sbagrid.src#STR_NO_COLUMNNAME_MATCHING.String.Text
-#, fuzzy
 msgid  "No matching column names were found."
 msgstr "Geen passende kolomname is gevind nie."
 
 #: source/ui/browser/sbagrid.src#STR_ERROR_OCCURED_WHILE_COPYING.String.Text
-#, fuzzy
 msgid  "An error occurred. Do you want to continue copying?"
 msgstr "'n Fout het plaasgevind. Wil u voortgaan om te kopieer?"
 
 #: source/ui/browser/sbagrid.src#STR_DATASOURCE_GRIDCONTROL_NAME.String.Text
-#, fuzzy
 msgid  "Data source table view"
 msgstr "Databrontabel-aansig"
 
 #: source/ui/browser/sbagrid.src#STR_DATASOURCE_GRIDCONTROL_DESC.String.Text
-#, fuzzy
 msgid  "Shows the selected table or query."
 msgstr "Vertoon die geselekteerde tabel of navraag."
 
 #: source/ui/browser/bcommon.src#RID_STR_TBL_TITLE.String.Text
-#, fuzzy
 msgid  "Table #"
 msgstr "Tabel #"
 
 #: source/ui/control/undosqledit.src#STR_QUERY_UNDO_MODIFYSQLEDIT.String.Text
-#, fuzzy
 msgid  "Modify SQL statement(s)"
 msgstr "Wysig SQL-stelling(s)"
 
 #: source/ui/control/TableGrantCtrl.src#STR_TABLE_PRIV_NAME.String.Text
-#, fuzzy
 msgid  "Table name"
 msgstr "Tabelnaam"
 
 #: source/ui/control/TableGrantCtrl.src#STR_TABLE_PRIV_INSERT.String.Text
-#, fuzzy
 msgid  "Insert data"
 msgstr "Voeg data in"
 
 #: source/ui/control/TableGrantCtrl.src#STR_TABLE_PRIV_DELETE.String.Text
-#, fuzzy
 msgid  "Delete data"
 msgstr "Skrap data"
 
 #: source/ui/control/TableGrantCtrl.src#STR_TABLE_PRIV_UPDATE.String.Text
-#, fuzzy
 msgid  "Modify data"
 msgstr "Wysig data"
 
 #: source/ui/control/TableGrantCtrl.src#STR_TABLE_PRIV_ALTER.String.Text
-#, fuzzy
 msgid  "Alter structure"
 msgstr "Verander struktuur"
 
 #: source/ui/control/TableGrantCtrl.src#STR_TABLE_PRIV_SELECT.String.Text
-#, fuzzy
 msgid  "Read data"
 msgstr "Lees data"
 
 #: source/ui/control/TableGrantCtrl.src#STR_TABLE_PRIV_REFERENCE.String.Text
-#, fuzzy
 msgid  "Modify references"
 msgstr "Wysig verwysings"
 
 #: source/ui/control/TableGrantCtrl.src#STR_TABLE_PRIV_DROP.String.Text
-#, fuzzy
 msgid  "Drop structure"
 msgstr "Sak struktuur"
 
 #: source/ui/control/tabletree.src#MENU_TABLETREE_POPUP.MID_SORT_ASCENDING.MenuItem.Text
-#, fuzzy
 msgid  "Sort Ascending"
 msgstr "Sorteer oplopend"
 
 #: source/ui/control/tabletree.src#MENU_TABLETREE_POPUP.MID_SORT_DECENDING.MenuItem.Text
-#, fuzzy
 msgid  "Sort Descending"
 msgstr "Sorteer aflopend"
 
 #: source/ui/control/tabletree.src#STR_COULDNOTCREATE_DRIVERMANAGER.String.Text
-#, fuzzy
 msgid  "Cannot connect to the SDBC driver manager (#servicename#)."
 msgstr "Kan nie aan die SDBC-drywerbestuurder verbind nie ( #servicename#)."
 
 #: source/ui/control/tabletree.src#STR_NOREGISTEREDDRIVER.String.Text
-#, fuzzy
 msgid  "A driver is not registered for the URL #connurl#."
 msgstr "'n Drywer is nie geregistreer vir die URL #connurl# nie."
 
 #: source/ui/control/tabletree.src#STR_COULDNOTCONNECT.String.Text
-#, fuzzy
 msgid  "No connection could be established for the URL #connurl#."
 msgstr "Geen verbinding kon vir die URL #connurl# gemaak word nie."
 
 #: source/ui/control/tabletree.src#STR_COULDNOTCONNECT_PLEASECHECK.String.Text
 msgid  "Please check the current settings, for example user name and password."
-msgstr ""
+msgstr "Gaan asseblief die huidige instellings na, bv. gebruikernaam en wagwoord."
 
 #: source/ui/control/tabletree.src#STR_NOTABLEINFO.String.Text
 msgid  "Successfully connected, but information about database tables is not available."
-msgstr ""
+msgstr "Suksesvol verbind, maar inligting oor databasistabelle is nie beskikbaar nie."
 
 #: source/ui/control/tabletree.src#STR_ALL_TABLES.String.Text
-#, fuzzy
 msgid  "All tables"
 msgstr "Alle tabelle"
 
 #: source/ui/control/tabletree.src#STR_ALL_VIEWS.String.Text
-#, fuzzy
 msgid  "All views"
 msgstr "Alle aanskoue"
 
 #: source/ui/control/tabletree.src#STR_ALL_TABLES_AND_VIEWS.String.Text
-#, fuzzy
 msgid  "All tables and views"
 msgstr "Alle tabelle en aanskoue"
 
@@ -1331,12 +1293,14 @@ msgid  "Do you want to save the changes made to the current index?"
 msgstr "Wil u die wysigings wat aan die huidige indeks gemaak is, stoor?"
 
 #: source/ui/dlg/indexdialog.src#STR_INDEX_NAME_ALREADY_USED.String.Text
-msgid  "There is already another index named "$name$"."
-msgstr ""
+#, fuzzy
+msgid  "There is already another index named \"$name$\"."
+msgstr "Daar is reeds 'n ander indeks genaamd \"$name$\"."
 
 #: source/ui/dlg/indexdialog.src#STR_INDEXDESIGN_DOUBLE_COLUMN_NAME.String.Text
-msgid  "In an index definition, no table column may occur more than once. However, you have entered column "$name$" twice."
-msgstr ""
+#, fuzzy
+msgid  "In an index definition, no table column may occur more than once. However, you have entered column \"$name$\" twice."
+msgstr "Geen tabelkolom mag meer as een keer in 'n indeksdefinisie verskyn nie. U het egter kolom \"$name$\" twee keer ingevoer."
 
 #: source/ui/dlg/paramdialog.src#DLG_PARAMETERS.FL_PARAMS.FixedLine.Text
 #, fuzzy
@@ -1359,8 +1323,9 @@ msgid  "Parameter Input"
 msgstr "Parametertoevoer"
 
 #: source/ui/dlg/paramdialog.src#DLG_PARAMETERS.STR_COULD_NOT_CONVERT_PARAM.String.Text
-msgid  "The entry could not be converted to a valid value for the "$name$"column"
-msgstr ""
+#, fuzzy
+msgid  "The entry could not be converted to a valid value for the \"$name$\"column"
+msgstr "Die inskrywing kon nie na 'n geldige waarde vir die \"$name$\"-kolom omskep word nie"
 
 #: source/ui/dlg/sqlmessage.src#DLG_SQLEXCEPTIONCHAIN.ModalDialog.Text
 #, fuzzy
@@ -1393,8 +1358,9 @@ msgid  "Error code"
 msgstr "Foutkode"
 
 #: source/ui/dlg/sqlmessage.src#STR_EXPLAN_STRINGCONVERSION_ERROR.String.Text
+#, fuzzy
 msgid  "A frequent reason for this error is an inappropriate character set setting for the language of your database. Check the setting by choosing Edit - Database - Properties."
-msgstr ""
+msgstr "'n Algemene oorsaak van dié fout is dat 'n ontoepaslike karakterstelinstelling vir die taal van u databasis gebruik word. Kontroleer die instelling met Redigeer - Databasis - Eienskappe."
 
 #: source/ui/dlg/sqlmessage.src#STR_EXCEPTION_ERROR.String.Text
 #, fuzzy
@@ -1423,8 +1389,18 @@ msgstr "Standaardfilter"
 
 #: source/ui/dlg/queryfilter.src#DLG_FILTERCRIT.LB_WHERECOND2.Default.StringList.item
 #, fuzzy
+msgid  "AND"
+msgstr "EN"
+
+#: source/ui/dlg/queryfilter.src#DLG_FILTERCRIT.LB_WHERECOND2.Default.StringList.item
+#, fuzzy
 msgid  "OR"
 msgstr "OR"
+
+#: source/ui/dlg/queryfilter.src#DLG_FILTERCRIT.LB_WHERECOND3.Default.StringList.item
+#, fuzzy
+msgid  "AND"
+msgstr "EN"
 
 #: source/ui/dlg/queryfilter.src#DLG_FILTERCRIT.LB_WHERECOND3.Default.StringList.item
 #, fuzzy
@@ -1465,16 +1441,6 @@ msgstr "- geen -"
 #, fuzzy
 msgid  "=;<>;<;<=;>;>=;like;not like;null;not null"
 msgstr "=;<>;<;<=;>;>=;soos;nie soos;nul;nie nul"
-
-#: source/ui/dlg/queryfilter.src#DLG_FILTERCRIT.LB_WHERECOND2.Default.StringList.item
-#, fuzzy
-msgid  "AND"
-msgstr "EN"
-
-#: source/ui/dlg/queryfilter.src#DLG_FILTERCRIT.LB_WHERECOND3.Default.StringList.item
-#, fuzzy
-msgid  "AND"
-msgstr "EN"
 
 #: source/ui/dlg/RelationDlg.src#DLG_REL_PROPERTIES.ModalDialog.Text
 #, fuzzy
@@ -1548,13 +1514,28 @@ msgstr "Sorteervolgorde"
 
 #: source/ui/dlg/queryorder.src#DLG_ORDERCRIT.LB_ORDERVALUE1.Default.StringList.item
 #, fuzzy
+msgid  "ascending"
+msgstr "oplopend"
+
+#: source/ui/dlg/queryorder.src#DLG_ORDERCRIT.LB_ORDERVALUE1.Default.StringList.item
+#, fuzzy
 msgid  "descending"
 msgstr "aflopend"
 
 #: source/ui/dlg/queryorder.src#DLG_ORDERCRIT.LB_ORDERVALUE2.Default.StringList.item
 #, fuzzy
+msgid  "ascending"
+msgstr "oplopend"
+
+#: source/ui/dlg/queryorder.src#DLG_ORDERCRIT.LB_ORDERVALUE2.Default.StringList.item
+#, fuzzy
 msgid  "descending"
 msgstr "aflopend"
+
+#: source/ui/dlg/queryorder.src#DLG_ORDERCRIT.LB_ORDERVALUE3.Default.StringList.item
+#, fuzzy
+msgid  "ascending"
+msgstr "oplopend"
 
 #: source/ui/dlg/queryorder.src#DLG_ORDERCRIT.LB_ORDERVALUE3.Default.StringList.item
 #, fuzzy
@@ -1596,93 +1577,63 @@ msgstr "Sorteervolgorde"
 msgid  "<none>"
 msgstr "<geen>"
 
-#: source/ui/dlg/queryorder.src#DLG_ORDERCRIT.LB_ORDERVALUE1.Default.StringList.item
-#, fuzzy
-msgid  "ascending"
-msgstr "oplopend"
-
-#: source/ui/dlg/queryorder.src#DLG_ORDERCRIT.LB_ORDERVALUE2.Default.StringList.item
-#, fuzzy
-msgid  "ascending"
-msgstr "oplopend"
-
-#: source/ui/dlg/queryorder.src#DLG_ORDERCRIT.LB_ORDERVALUE3.Default.StringList.item
-#, fuzzy
-msgid  "ascending"
-msgstr "oplopend"
-
 #: source/ui/dlg/advancedsettings.src#AUTO_DATAHANDLING(AUTO_Y).FL_DATAHANDLING.FixedLine.Text
-#, fuzzy
 msgid  "Options"
 msgstr "Opsies"
 
 #: source/ui/dlg/advancedsettings.src#AUTO_SQL92CHECK(AUTO_Y).CB_SQL92CHECK.CheckBox.Text
-#, fuzzy
 msgid  "Use SQL92 naming constraints"
 msgstr "Gebruik SQL92-benoemingsbeperkings"
 
 #: source/ui/dlg/advancedsettings.src#AUTO_APPENDTABLEALIAS(AUTO_Y).CB_APPENDTABLEALIAS.CheckBox.Text
-#, fuzzy
 msgid  "Append the table alias name on SELECT statements"
 msgstr "Heg die tabelaliasnaam by SELECT-stellings"
 
 #: source/ui/dlg/advancedsettings.src#AUTO_AS_BEFORE_CORR_NAME(AUTO_Y).CB_AS_BEFORE_CORR_NAME.CheckBox.Text
-#, fuzzy
 msgid  "Use keyword AS before table alias names"
 msgstr "Gebruik sleutelwoord AS voor tabelaliasname"
 
 #: source/ui/dlg/advancedsettings.src#AUTO_ENABLEOUTERJOIN(AUTO_Y).CB_ENABLEOUTERJOIN.CheckBox.Text
-#, fuzzy
 msgid  "Use Outer Join syntax '{OJ }'"
 msgstr "Gebruik Outer Join-sintaks '{OJ }'"
 
 #: source/ui/dlg/advancedsettings.src#AUTO_IGNOREDRIVER_PRIV(AUTO_Y).CB_IGNOREDRIVER_PRIV.CheckBox.Text
-#, fuzzy
 msgid  "Ignore the privileges from the database driver"
 msgstr "Ignoreer die regte uit die databasisdrywer"
 
 #: source/ui/dlg/advancedsettings.src#AUTO_PARAMETERNAMESUBST(AUTO_Y).CB_PARAMETERNAMESUBST.CheckBox.Text
-#, fuzzy
 msgid  "Replace named parameters with '?'"
 msgstr "Vervang genoemde parameters met '?'"
 
 #: source/ui/dlg/advancedsettings.src#AUTO_SUPPRESVERSIONCOLUMN(AUTO_Y).CB_SUPPRESVERSIONCL.CheckBox.Text
-#, fuzzy
 msgid  "Display version columns (when available)"
 msgstr "Vertoon weergawekolomme (wanneer beskikbaar)"
 
 #: source/ui/dlg/advancedsettings.src#AUTO_CATALOG(AUTO_Y).CB_CATALOG.CheckBox.Text
-#, fuzzy
 msgid  "Use catalog name in SELECT statements"
 msgstr "Gebruik katalogusnaam in SELECT-stellings"
 
 #: source/ui/dlg/advancedsettings.src#AUTO_SCHEMA(AUTO_Y).CB_SCHEMA.CheckBox.Text
-#, fuzzy
 msgid  "Use schema name in SELECT statements"
 msgstr "Gebruik skemanaam in SELECT-stellings"
 
 #: source/ui/dlg/advancedsettings.src#AUTO_IGNOREINDEXAPPENDIX(AUTO_Y).CB_IGNOREINDEXAPPENDIX.CheckBox.Text
-#, fuzzy
 msgid  "Create index with ASC or DESC statement"
 msgstr "Skep indeks met ASC- of DESC-stelling"
 
 #: source/ui/dlg/advancedsettings.src#AUTO_DOSLINEENDS(AUTO_Y).CB_DOSLINEENDS.CheckBox.Text
-#, fuzzy
 msgid  "End text lines with CR+LF"
 msgstr "Eindig teksreëls met CR+LF"
 
 #: source/ui/dlg/advancedsettings.src#AUTO_IGNORECURRENCY(AUTO_Y).CB_IGNORECURRENCY.CheckBox.Text
-#, fuzzy
 msgid  "Ignore currency field information"
 msgstr "Ignoreer huidige veldinligting"
 
 #: source/ui/dlg/advancedsettings.src#AUTO_CHECKREQUIRED(AUTO_Y).CB_CHECK_REQUIRED.CheckBox.Text
-#, fuzzy
 msgid  "Form data input checks for required fields"
 msgstr "Vormdatatoevoerkontroles vir vereiste velde"
 
 #: source/ui/dlg/advancedsettings.src#AUTO_ESCAPE_DATETIME(AUTO_Y).CB_ESCAPE_DATETIME.CheckBox.Text
-#, fuzzy
 msgid  "Use ODBC conformant date/time literals"
 msgstr "Gebruik ODBC-konformerende datum/tyd-skryffoute"
 
@@ -1695,12 +1646,22 @@ msgid  "Respect the result set type from the database driver"
 msgstr ""
 
 #: source/ui/dlg/advancedsettings.src#WORKAROUND.Default.StringList.item
-#, fuzzy
+msgid  "Default"
+msgstr "Verstek"
+
+#: source/ui/dlg/advancedsettings.src#WORKAROUND.Default.StringList.item
+msgid  "SQL"
+msgstr "SQL"
+
+#: source/ui/dlg/advancedsettings.src#WORKAROUND.Default.StringList.item
+msgid  "Mixed"
+msgstr "Gemeng"
+
+#: source/ui/dlg/advancedsettings.src#WORKAROUND.Default.StringList.item
 msgid  "MS Access"
 msgstr "MS Access"
 
 #: source/ui/dlg/advancedsettings.src#AUTO_BOOLEANCOMPARISON(AUTO_Y).FT_BOOLEANCOMPARISON.FixedText.Text
-#, fuzzy
 msgid  "Comparison of Boolean values"
 msgstr "Vergelyking van Boolese waardes"
 
@@ -1709,32 +1670,26 @@ msgid  "Rows to scan column types"
 msgstr ""
 
 #: source/ui/dlg/advancedsettings.src#PAGE_GENERATED_VALUES.FL_SEPARATORAUTO.FixedLine.Text
-#, fuzzy
 msgid  "Settings"
 msgstr "Instellings"
 
 #: source/ui/dlg/advancedsettings.src#PAGE_GENERATED_VALUES.CB_RETRIEVE_AUTO.CheckBox.Text
-#, fuzzy
 msgid  "Re~trieve generated values"
 msgstr "Her~win gegenereerde waardes"
 
 #: source/ui/dlg/advancedsettings.src#PAGE_GENERATED_VALUES.FT_AUTOINCREMENTVALUE.FixedText.Text
-#, fuzzy
 msgid  "~Auto-increment statement"
 msgstr "~Outo-inkrementeerstelling"
 
 #: source/ui/dlg/advancedsettings.src#PAGE_GENERATED_VALUES.FT_RETRIEVE_AUTO.FixedText.Text
-#, fuzzy
 msgid  "~Query of generated values"
 msgstr "~Navraag van gegenereerde waardes"
 
 #: source/ui/dlg/advancedsettings.src#DLG_DATABASE_ADVANCED.STR_GENERATED_VALUE.String.Text
-#, fuzzy
 msgid  "Generated Values"
 msgstr "Gegenereerde waardes"
 
 #: source/ui/dlg/advancedsettings.src#DLG_DATABASE_ADVANCED.STR_DS_BEHAVIOUR.String.Text
-#, fuzzy
 msgid  "Special Settings"
 msgstr "Spesiale instellings"
 
@@ -1742,68 +1697,47 @@ msgstr "Spesiale instellings"
 msgid  "Advanced Settings"
 msgstr ""
 
-#: source/ui/dlg/advancedsettings.src#WORKAROUND.Default.StringList.item
-#, fuzzy
-msgid  "Default"
-msgstr "Verstek"
-
-#: source/ui/dlg/advancedsettings.src#WORKAROUND.Default.StringList.item
-#, fuzzy
-msgid  "SQL"
-msgstr "SQL"
-
-#: source/ui/dlg/advancedsettings.src#WORKAROUND.Default.StringList.item
-#, fuzzy
-msgid  "Mixed"
-msgstr "Gemeng"
-
 #: source/ui/dlg/CollectionView.src#DLG_COLLECTION_VIEW.ModalDialog.Text
-#, fuzzy
 msgid  "Save"
 msgstr "Stoor"
 
 #: source/ui/dlg/CollectionView.src#DLG_COLLECTION_VIEW.BTN_EXPLORERFILE_NEWFOLDER.ImageButton.QuickHelpText
-#, fuzzy
 msgid  "Create New Directory"
 msgstr "Skep nuwe gids"
 
 #: source/ui/dlg/CollectionView.src#DLG_COLLECTION_VIEW.BTN_EXPLORERFILE_UP.ImageButton.QuickHelpText
-#, fuzzy
 msgid  "Up One Level"
 msgstr "Een vlak op"
 
 #: source/ui/dlg/CollectionView.src#DLG_COLLECTION_VIEW.FT_EXPLORERFILE_FILENAME.FixedText.Text
-#, fuzzy
 msgid  "File ~name:"
 msgstr "Lêer~naam:"
 
 #: source/ui/dlg/CollectionView.src#DLG_COLLECTION_VIEW.BTN_EXPLORERFILE_SAVE.PushButton.Text
-#, fuzzy
 msgid  "Save"
 msgstr "Stoor"
 
 #: source/ui/dlg/CollectionView.src#DLG_COLLECTION_VIEW.STR_PATHNAME.String.Text
-#, fuzzy
 msgid  "~Path:"
 msgstr "~Pad:"
 
 #: source/ui/dlg/CollectionView.src#STR_NEW_FOLDER.String.Text
-#, fuzzy
 msgid  "Folder"
 msgstr "Vouer"
 
 #: source/ui/dlg/CollectionView.src#STR_ALREADYEXISTOVERWRITE.String.Text
-#, fuzzy
 msgid  "The file already exists. Overwrite?"
 msgstr "Die lêer bestaan reeds. Oorheenskryf?"
 
 #: source/ui/dlg/dbadmin2.src#STR_ENTER_CONNECTION_PASSWORD.String.Text
-msgid  "A password is needed to connect to the data source "$name$"."
-msgstr ""
+#, fuzzy
+msgid  "A password is needed to connect to the data source \"$name$\"."
+msgstr "'n Wagwoord is nodig om aan die databron \"$name$\" te verbind."
 
 #: source/ui/dlg/dbadmin2.src#STR_ASK_FOR_DIRECTORY_CREATION.String.Text
+#, fuzzy
 msgid  "The directory\n\n$path$\n\ndoes not exist. Should it be created?"
-msgstr ""
+msgstr "Die gids\n\n$path$\n\nbestaan nie. Moet dit geskep word?"
 
 #: source/ui/dlg/dbadmin2.src#STR_COULD_NOT_CREATE_DIRECTORY.String.Text
 #, fuzzy
@@ -1836,37 +1770,30 @@ msgid  "Mark the tables that should be visible for the applications."
 msgstr "Merk die tabelle wat sigbaar vir programme moet wees."
 
 #: source/ui/dlg/admincontrols.src#RID_MYSQL_NATIVE_SETTINGS.FT_MYSQL_DATABASE_NAME.FixedText.Text
-#, fuzzy
 msgid  "~Database name"
 msgstr "~Databasis-naam"
 
 #: source/ui/dlg/admincontrols.src#RID_MYSQL_NATIVE_SETTINGS.RB_MYSQL_HOST_PORT.RadioButton.Text
-#, fuzzy
 msgid  "Se~rver / Port"
 msgstr "Bedien~er/poort"
 
 #: source/ui/dlg/admincontrols.src#RID_MYSQL_NATIVE_SETTINGS.FT_COMMON_HOST_NAME.FixedText.Text
-#, fuzzy
 msgid  "~Server"
 msgstr "~Bediener"
 
 #: source/ui/dlg/admincontrols.src#RID_MYSQL_NATIVE_SETTINGS.FT_COMMON_PORT.FixedText.Text
-#, fuzzy
 msgid  "~Port"
 msgstr "~Poort"
 
 #: source/ui/dlg/admincontrols.src#RID_MYSQL_NATIVE_SETTINGS.FT_COMMON_PORT_DEFAULT.FixedText.Text
-#, fuzzy
 msgid  "Default: 3306"
 msgstr "Verstek: 3306"
 
 #: source/ui/dlg/admincontrols.src#RID_MYSQL_NATIVE_SETTINGS.RB_MYSQL_SOCKET.RadioButton.Text
-#, fuzzy
 msgid  "So~cket"
 msgstr "So~k"
 
 #: source/ui/dlg/admincontrols.src#RID_MYSQL_NATIVE_SETTINGS.RB_MYSQL_NAMED_PIPE.RadioButton.Text
-#, fuzzy
 msgid  "Named p~ipe"
 msgstr "Benoemde p~yp"
 
@@ -1881,32 +1808,26 @@ msgid  "User administration"
 msgstr "Gebruikeradministrasie"
 
 #: source/ui/dlg/adtabdlg.src#DLG_JOIN_TABADD.RB_CASE_TABLES.RadioButton.Text
-#, fuzzy
 msgid  "Tables"
 msgstr "Tabelle"
 
 #: source/ui/dlg/adtabdlg.src#DLG_JOIN_TABADD.RB_CASE_QUERIES.RadioButton.Text
-#, fuzzy
 msgid  "Queries"
 msgstr "Navrae"
 
 #: source/ui/dlg/adtabdlg.src#DLG_JOIN_TABADD.PB_ADDTABLE.PushButton.Text
-#, fuzzy
 msgid  "~Add"
 msgstr "~Voeg by"
 
 #: source/ui/dlg/adtabdlg.src#DLG_JOIN_TABADD.PB_CLOSE.CancelButton.Text
-#, fuzzy
 msgid  "~Close"
 msgstr "~Sluit"
 
 #: source/ui/dlg/adtabdlg.src#DLG_JOIN_TABADD.STR_ADD_TABLES.String.Text
-#, fuzzy
 msgid  "Add Tables"
 msgstr "Voeg tabelle by"
 
 #: source/ui/dlg/adtabdlg.src#DLG_JOIN_TABADD.STR_ADD_TABLE_OR_QUERY.String.Text
-#, fuzzy
 msgid  "Add Table or Query"
 msgstr "Voeg tabel of navraag by"
 
@@ -1941,22 +1862,18 @@ msgid  "Table Format"
 msgstr "Tabelformaat"
 
 #: source/ui/dlg/dbadmin.src#AUTO_USECATALOG(AUTO_Y).CB_USECATALOG.CheckBox.Text
-#, fuzzy
 msgid  "Use catalog for file-based databases"
 msgstr "Gebruik katalogus vir lêergebaseerde databasisse"
 
 #: source/ui/dlg/dbadmin.src#AUTO_FIXEDLINE_CONNSETTINGS(AUTO_Y).FL_SEPARATOR1.FixedLine.Text
-#, fuzzy
 msgid  "Connection Settings"
 msgstr "Verbindinginstellings"
 
 #: source/ui/dlg/dbadmin.src#AUTO_HOST_AND_PORT(AUTO_Y).FT_HOSTNAME.FixedText.Text
-#, fuzzy
 msgid  "~Host name"
 msgstr "~Gasheernaam"
 
 #: source/ui/dlg/dbadmin.src#AUTO_HOST_AND_PORT(AUTO_Y).FT_PORTNUMBER.FixedText.Text
-#, fuzzy
 msgid  "~Port number"
 msgstr "~Poortnommer"
 
@@ -1991,8 +1908,9 @@ msgid  "Welcome to the %PRODUCTNAME Database Wizard"
 msgstr "Welkom by die %PRODUCTNAME-databasis-slimmerd"
 
 #: source/ui/dlg/dbadmin.src#PAGE_GENERAL.FT_GENERALHELPTEXT.FixedText.Text
+#, fuzzy
 msgid  "Use the Database Wizard to create a new database, open an existing database file, or connect to a database stored on a server."
-msgstr ""
+msgstr "Gebruik die databasis-slimmerd om 'n nuwe databasis te skep, 'n bestaande databasis te open of aan 'n databasis op 'n bediener te koppel."
 
 #: source/ui/dlg/dbadmin.src#PAGE_GENERAL.FT_DATASOURCEHEADER.FixedText.Text
 #, fuzzy
@@ -2020,8 +1938,9 @@ msgid  "Connect to an e~xisting database"
 msgstr "Verbind aan 'n b~estaande databasis"
 
 #: source/ui/dlg/dbadmin.src#PAGE_GENERAL.FT_DATASOURCETYPE_PRE.FixedText.Text
+#, fuzzy
 msgid  "Select the type of database to which you want to establish a connection."
-msgstr ""
+msgstr "Selekteer die soort databasis waaraan u wil verbind."
 
 #: source/ui/dlg/dbadmin.src#PAGE_GENERAL.FT_DATATYPE.FixedText.Text
 #, fuzzy
@@ -2034,8 +1953,9 @@ msgid  "Database"
 msgstr "Databasis"
 
 #: source/ui/dlg/dbadmin.src#PAGE_GENERAL.FT_DATASOURCETYPE_POST.FixedText.Text
+#, fuzzy
 msgid  "On the following pages, you can make detailed settings for the connection.\n\nThe new settings you make will overwrite your existing settings."
-msgstr ""
+msgstr "U kan op die volgende bladsye uitgebreide instellings vir die verbinding doen.\n\nDie nuwe instellings sal u bestaande instellings oorskryf."
 
 #: source/ui/dlg/dbadmin.src#PAGE_GENERAL.STR_MYSQLENTRY.String.Text
 #, fuzzy
@@ -2048,12 +1968,14 @@ msgid  "Data Source Properties: #"
 msgstr "Databron-eienskappe: #"
 
 #: source/ui/dlg/dbadmin.src#PAGE_GENERAL.STR_COULDNOTLOAD_ODBCLIB.String.Text
+#, fuzzy
 msgid  "Could not load the program library #lib# or it is corrupted. The ODBC data source selection is not available."
-msgstr ""
+msgstr "Kon nie die programmateek #lib# laai nie, of dit is korrup. Die ODBC-databronseleksie is nie beskikbaar nie."
 
 #: source/ui/dlg/dbadmin.src#PAGE_GENERAL.STR_UNSUPPORTED_DATASOURCE_TYPE.String.Text
+#, fuzzy
 msgid  "This kind of data source is not supported on this platform.\nYou are allowed to change the settings, but you probably will not be able to connect to the database."
-msgstr ""
+msgstr "Hierdie soort databron word nie op hierdie platform ondersteun nie.\nU mag die instellings wysig, maar u sal waarskynlik nie aan die databasis kan verbind nie."
 
 #: source/ui/dlg/dbadmin.src#PAGE_GENERAL.String.Text
 #, fuzzy
@@ -2071,8 +1993,9 @@ msgid  "Display deleted records as well"
 msgstr "Vertoon geskrapte rekords ook"
 
 #: source/ui/dlg/dbadmin.src#PAGE_DBASE.FT_SPECIAL_MESSAGE.FixedText.Text
+#, fuzzy
 msgid  "Note: When deleted, and thus inactive, records are  displayed, you will not be able to delete records from the data source."
-msgstr ""
+msgstr "Let wel: Wanneer geskrapte, en dus onaktiewe, rekords vertoon word, sal u nie rekords uit die databasis kan skrap nie."
 
 #: source/ui/dlg/dbadmin.src#PAGE_DBASE.PB_INDICIES.PushButton.Text
 #, fuzzy
@@ -2210,8 +2133,9 @@ msgid  "~Driver settings"
 msgstr "~Drywerinstellings"
 
 #: source/ui/dlg/dbadmin.src#STR_ERR_USE_CONNECT_TO.String.Text
+#, fuzzy
 msgid  "Please choose 'Connect to an existing database' to connect to an existing database instead."
-msgstr ""
+msgstr "Kies asseblief 'Verbind aan 'n bestaande databasis' om aan 'n bestaande databasis te verbind."
 
 #: source/ui/dlg/dlgsave.src#DLG_SAVE_AS.ModalDialog.Text
 #, fuzzy
@@ -2259,66 +2183,54 @@ msgid  "Insert as"
 msgstr "Voeg in as"
 
 #: source/ui/dlg/AutoControls.src#STR_DBASE_PATH_OR_FILE.String.Text
-#, fuzzy
 msgid  "Path to the dBASE files"
 msgstr "Pad na die dBASE-lêers"
 
 #: source/ui/dlg/AutoControls.src#STR_FLAT_PATH_OR_FILE.String.Text
-#, fuzzy
 msgid  "Path to the text files"
 msgstr "Pad na die teks-lêers"
 
 #: source/ui/dlg/AutoControls.src#STR_CALC_PATH_OR_FILE.String.Text
-#, fuzzy
 msgid  "Path to the spreadsheet document"
 msgstr "Pad na die sigblad-dokument"
 
 #: source/ui/dlg/AutoControls.src#STR_NAME_OF_ODBC_DATASOURCE.String.Text
-#, fuzzy
 msgid  "Name of the ODBC data source on your system"
 msgstr "Naam van die ODBC-databron op u stelsel"
 
 #: source/ui/dlg/AutoControls.src#STR_MYSQL_DATABASE_NAME.String.Text
-#, fuzzy
 msgid  "Name of the MySQL database"
 msgstr "Naam van die MySQL-databasis"
 
 #: source/ui/dlg/AutoControls.src#STR_ORACLE_DATABASE_NAME.String.Text
-#, fuzzy
 msgid  "Name of the Oracle database"
 msgstr "Naam van die Oracle-databasis"
 
 #: source/ui/dlg/AutoControls.src#STR_ADABAS_DATABASE_NAME.String.Text
-#, fuzzy
 msgid  "Name of the Adabas D database"
 msgstr "Naam van die Adabas D-databasis"
 
 #: source/ui/dlg/AutoControls.src#STR_MSACCESS_MDB_FILE.String.Text
-#, fuzzy
 msgid  "Microsoft Access database file"
 msgstr "Microsoft Access-databasislêer"
 
 #: source/ui/dlg/AutoControls.src#STR_NO_ADDITIONAL_SETTINGS.String.Text
 msgid  "No more settings are necessary. To verify that the connection is working, click the '%test' button."
-msgstr ""
+msgstr "Geen verdere instellings nodig nie. Om te toets of die verbinding werk, kliek die '%test'-knoppie."
 
 #: source/ui/dlg/AutoControls.src#STR_COMMONURL.String.Text
-#, fuzzy
 msgid  "Datasource URL"
 msgstr "Databron-URL"
 
 #: source/ui/dlg/AutoControls.src#STR_HOSTNAME.String.Text
-#, fuzzy
 msgid  "~Host name"
 msgstr "~Gasheernaam"
 
 #: source/ui/dlg/AutoControls.src#STR_MOZILLA_PROFILE_NAME.String.Text
-#, fuzzy
 msgid  "~Mozilla profile name"
 msgstr "~Mozilla-profielnaam"
 
 #: source/ui/dlg/AutoControls.src#STR_THUNDERBIRD_PROFILE_NAME.String.Text
-#, fuzzy
 msgid  "~Thunderbird profile name"
 msgstr "~Thunderbird-profielnaam"
 
@@ -2353,168 +2265,136 @@ msgid  "Choose a database"
 msgstr "Kies 'n databasis"
 
 #: source/ui/dlg/ConnectionPage.src#PAGE_CONNECTION.FL_SEPARATOR1.FixedLine.Text
-#, fuzzy
 msgid  "General"
 msgstr "Algemeen"
 
 #: source/ui/dlg/ConnectionPage.src#PAGE_CONNECTION.FT_HOSTNAME.FixedText.Text
-#, fuzzy
 msgid  "~Host name"
 msgstr "~Gasheernaam"
 
 #: source/ui/dlg/ConnectionPage.src#PAGE_CONNECTION.FL_SEPARATOR2.FixedLine.Text
-#, fuzzy
 msgid  "User authentication"
 msgstr "Gebruikerstawing"
 
 #: source/ui/dlg/ConnectionPage.src#PAGE_CONNECTION.FT_USERNAME.FixedText.Text
-#, fuzzy
 msgid  "~User name"
 msgstr "~Gebruikernaam"
 
 #: source/ui/dlg/ConnectionPage.src#PAGE_CONNECTION.CB_PASSWORD_REQUIRED.CheckBox.Text
-#, fuzzy
 msgid  "Password required"
 msgstr "Wagwoord vereis"
 
 #: source/ui/dlg/ConnectionPage.src#PAGE_CONNECTION.FL_SEPARATOR3.FixedLine.Text
-#, fuzzy
 msgid  "JDBC properties"
 msgstr "JDBC-eienskappe"
 
 #: source/ui/dlg/ConnectionPage.src#PAGE_CONNECTION.FT_JDBCDRIVERCLASS.FixedText.Text
-#, fuzzy
 msgid  "~JDBC driver class"
 msgstr "~JDBC-drywerklas"
 
 #: source/ui/dlg/ConnectionPage.src#PAGE_CONNECTION.PB_TESTDRIVERCLASS.PushButton.Text
-#, fuzzy
 msgid  "Test Class"
 msgstr "Toetsklas"
 
 #: source/ui/dlg/ConnectionPage.src#PAGE_CONNECTION.PB_TESTCONNECTION.PushButton.Text
-#, fuzzy
 msgid  "Test Connection"
 msgstr "Toetsverbinding"
 
 #: source/ui/dlg/ConnectionPage.src#STR_NO_ADABASE_DATASOURCES.String.Text
-#, fuzzy
 msgid  "No Adabas D data sources were found on your system."
 msgstr "Geen Adabas D-databronne is op u stelsel gevind nie."
 
 #: source/ui/dlg/ConnectionPage.src#STR_CONNECTION_TEST.String.Text
-#, fuzzy
 msgid  "Connection Test"
 msgstr "Verbindingtoets"
 
 #: source/ui/dlg/ConnectionPage.src#STR_CONNECTION_SUCCESS.String.Text
-#, fuzzy
 msgid  "The connection was established successfully."
 msgstr "Daar is suksesvol verbind."
 
 #: source/ui/dlg/ConnectionPage.src#STR_CONNECTION_NO_SUCCESS.String.Text
-#, fuzzy
 msgid  "The connection could not be established."
 msgstr "Geen koppeling moontlik nie."
 
 #: source/ui/dlg/ConnectionPage.src#STR_JDBCDRIVER_SUCCESS.String.Text
-#, fuzzy
 msgid  "The JDBC driver was loaded successfully."
 msgstr "Die JDBC-drywer is suksesvol gelaai."
 
 #: source/ui/dlg/ConnectionPage.src#STR_JDBCDRIVER_NO_SUCCESS.String.Text
-#, fuzzy
 msgid  "The JDBC driver could not be loaded."
 msgstr "Die JDBC-drywer kon nie gelaai word nie."
 
 #: source/ui/dlg/ConnectionPage.src#STR_MSACCESS_FILTERNAME.String.Text
-#, fuzzy
 msgid  "MS Access file"
 msgstr "MS Access-lêer"
 
 #: source/ui/dlg/ConnectionPage.src#STR_MSACCESS_2007_FILTERNAME.String.Text
-#, fuzzy
 msgid  "MS Access 2007 file"
 msgstr "MS Access 2007-lêer"
 
 #: source/ui/dlg/AdabasStat.src#DLG_ADABASSTAT.FL_FILES.FixedLine.Text
-#, fuzzy
 msgid  "Database files"
 msgstr "Databasislêers"
 
 #: source/ui/dlg/AdabasStat.src#DLG_ADABASSTAT.FT_SYSDEVSPACE.FixedText.Text
-#, fuzzy
 msgid  "S~YSDEVSPACE:"
 msgstr "S~YSDEVSPACE:"
 
 #: source/ui/dlg/AdabasStat.src#DLG_ADABASSTAT.FT_TRANSACTIONLOG.FixedText.Text
-#, fuzzy
 msgid  "~TRANSACTIONLOG:"
 msgstr "~TRANSACTIONLOG:"
 
 #: source/ui/dlg/AdabasStat.src#DLG_ADABASSTAT.FT_DATADEVSPACE.FixedText.Text
-#, fuzzy
 msgid  "DATAD~EVSPACE:"
 msgstr "DATAD~EVSPACE:"
 
 #: source/ui/dlg/AdabasStat.src#DLG_ADABASSTAT.FL_SIZES.FixedLine.Text
-#, fuzzy
 msgid  "Database sizes"
 msgstr "Databasisgroottes"
 
 #: source/ui/dlg/AdabasStat.src#DLG_ADABASSTAT.FT_SIZE.FixedText.Text
-#, fuzzy
 msgid  "S~ize (MB):"
 msgstr "G~rootte (megagreep):"
 
 #: source/ui/dlg/AdabasStat.src#DLG_ADABASSTAT.FT_FREESIZE.FixedText.Text
-#, fuzzy
 msgid  "~Free memory space (MB):"
 msgstr "~Beskikbare geheuespasie (megagreep):"
 
 #: source/ui/dlg/AdabasStat.src#DLG_ADABASSTAT.FT_MEMORYUSING.FixedText.Text
-#, fuzzy
 msgid  "~Memory utilization (in %):"
 msgstr "~Geheuegebruik (in %):"
 
 #: source/ui/dlg/AdabasStat.src#DLG_ADABASSTAT.OKButton.Text
-#, fuzzy
 msgid  "Database Statistics"
 msgstr "Databasisstatistiek"
 
 #: source/ui/dlg/AdabasStat.src#STR_ADABAS_HELP_SYSDEVSPACE.String.Text
-#, fuzzy
 msgid  "Contains the system tables"
 msgstr "Bevat die stelseltabelle"
 
 #: source/ui/dlg/AdabasStat.src#STR_ADABAS_HELP_TRANSACT.String.Text
-#, fuzzy
 msgid  "Contains information about transaction"
 msgstr "Bevat inligting oor transaksie"
 
 #: source/ui/dlg/AdabasStat.src#STR_ADABAS_HELP_DATADEVSPACES.String.Text
-#, fuzzy
 msgid  "Contains all data files"
 msgstr "Bevat alle datalêers"
 
 #: source/ui/dlg/AdabasStat.src#STR_ADABAS_HELP_SIZE.String.Text
-#, fuzzy
 msgid  "Total size of the database files"
 msgstr "Totale grootte van die databasislêers"
 
 #: source/ui/dlg/AdabasStat.src#STR_ADABAS_HELP_FREESIZE.String.Text
-#, fuzzy
 msgid  "Currently available space before a new datadev file is created."
 msgstr "Huidige beskikbare spasie voordat 'n nuwe datadev-lêer geskep word."
 
 #: source/ui/dlg/AdabasStat.src#STR_ADABAS_HELP_MEMORYUSING.String.Text
-#, fuzzy
 msgid  "Currently used memory"
 msgstr "Huidige gebruikte geheue"
 
 #: source/ui/dlg/AdabasStat.src#STR_ADABAS_ERROR_SYSTEMTABLES.String.Text
 msgid  "No information could be displayed because no access rights exist for the required system tables."
-msgstr ""
+msgstr "Geen inligting kon vertoon word nie aangesien geen toegangsregte vir die vereiste stelseltabelle bestaan nie."
 
 #: source/ui/dlg/directsql.src#DLG_DIRECTSQL.FL_SQL.FixedLine.Text
 #, fuzzy
@@ -2557,8 +2437,9 @@ msgid  "Command successfully executed."
 msgstr "Bevel suksesvol uitgevoer."
 
 #: source/ui/dlg/directsql.src#STR_DIRECTSQL_CONNECTIONLOST.String.Text
+#, fuzzy
 msgid  "The connection to the database has been lost. This dialog will be closed."
-msgstr ""
+msgstr "Die verbinding met die databasis is verbreek. Hierdie dialoog sal gesluit word."
 
 #: source/ui/dlg/dbfindex.src#DLG_DBASE_INDEXES.ModalDialog.Text
 #, fuzzy
@@ -2626,8 +2507,9 @@ msgid  "The database does not support user administration."
 msgstr "Die databasis ondersteun nie gebruikeradministrasie nie."
 
 #: source/ui/dlg/UserAdmin.src#DLG_PASSWORD.FL_USER.FixedLine.Text
-msgid  "User "$name$:  $""
-msgstr ""
+#, fuzzy
+msgid  "User \"$name$:  $\""
+msgstr "Gebruiker \"$name$:  $\""
 
 #: source/ui/dlg/UserAdmin.src#DLG_PASSWORD.FT_OLDPASSWORD.FixedText.Text
 #, fuzzy
@@ -2750,8 +2632,9 @@ msgid  "Set up a connection to a MySQL database"
 msgstr "Stel 'n verbinding aan 'n MySQL-databasis op"
 
 #: source/ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_MYSQL_INTRO.FT_MYSQL_HELPTEXT.FixedText.Text
+#, fuzzy
 msgid  "You can connect to a MySQL database using either ODBC or JDBC.\nPlease contact your system administrator if you are unsure about the following settings."
-msgstr ""
+msgstr "U kan aan 'n MySQL-databasis verbind met óf ODBC óf JDBC.\nKontak asseblief u stelseladministrateur indien u onseker is oor die volgende instellings."
 
 #: source/ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_MYSQL_INTRO.FT_MYSQLCONNECTIONMODE.FixedText.Text
 #, fuzzy
@@ -2843,8 +2726,9 @@ msgid  "Set up connection to a MySQL database using JDBC"
 msgstr "Stel 'n verbinding aan 'n MySQL-databasis op met JDBC"
 
 #: source/ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_MYSQL_JDBC.STR_MYSQLJDBC_HELPTEXT.String.Text
+#, fuzzy
 msgid  "Please enter the required information to connect to a MySQL database using JDBC. Note that a JDBC driver class must be installed on your system and registered with %PRODUCTNAME.\nPlease contact your system administrator if you are unsure about the following settings."
-msgstr ""
+msgstr "Tik asseblief die nodige inligting in om aan 'n MySQL-databasis te verbind met JDBC. Let op dat 'n JDBC-drywerklas op u stelsel geïnstalleer moet wees en met %PRODUCTNAME geregistreer moet wees.\nKontak asseblief u stelseladministrateur indien u onseker is oor die volgende instellings."
 
 #: source/ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_MYSQL_JDBC.STR_MYSQL_DRIVERCLASSTEXT.String.Text
 #, fuzzy
@@ -2862,8 +2746,9 @@ msgid  "Set up connection to a MySQL database"
 msgstr "Stel verbinding aan 'n MySQL-databasis op"
 
 #: source/ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_MYSQL_NATIVE.FT_SETUP_WIZARD_HELP.FixedText.Text
+#, fuzzy
 msgid  "Please enter the required information to connect to a MySQL database."
-msgstr ""
+msgstr "Tik asseblief die vereis inligting in om aan 'n MySQL-databasis te koppel."
 
 #: source/ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_DBASE.STR_DBASE_HEADERTEXT.String.Text
 #, fuzzy
@@ -2881,8 +2766,9 @@ msgid  "Set up a connection to text files"
 msgstr "Stel 'n verbinding aan tekslêers op"
 
 #: source/ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_TEXT.STR_TEXT_HELPTEXT.String.Text
+#, fuzzy
 msgid  "Select the folder where the CSV (Comma Separated Values) text files are stored. %PRODUCTNAME Base will open these files in read-only mode."
-msgstr ""
+msgstr "Selekteer die vouer waar die CSV-lêers (Comma Separated Values) gestoor is. %PRODUCTNAME Base sal daardie lêers in leesalleenmodus open."
 
 #: source/ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_TEXT.STR_TEXT_PATH_OR_FILE.String.Text
 #, fuzzy
@@ -2895,8 +2781,9 @@ msgid  "Set up a connection to a Microsoft Access database"
 msgstr "Stel 'n verbinding aan 'n Microsoft Access-databasis op"
 
 #: source/ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_MSACCESS.STR_MSACCESS_HELPTEXT.String.Text
+#, fuzzy
 msgid  "Please select the Microsoft Access file you want to access."
-msgstr ""
+msgstr "Selekteer asseblief die Microsoft Access-lêer waarvoor u toegang wil hê."
 
 #: source/ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_LDAP.FT_LDAP_HEADERTEXT.FixedText.Text
 #, fuzzy
@@ -2904,8 +2791,9 @@ msgid  "Set up a connection to an LDAP directory"
 msgstr "Stel 'n verbinding aan 'n LDAP-gids op"
 
 #: source/ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_LDAP.FT_LDAP_HELPTEXT.FixedText.Text
+#, fuzzy
 msgid  "Please enter the required information to connect to an LDAP directory.\nPlease contact your system administrator if you are unsure about the following settings."
-msgstr ""
+msgstr "Tik asseblief die nodige inligting in om aan 'n LDAP-databasis te verbind.\nKontak asseblief u stelseladministrateur indien u onseker is oor die volgende instellings."
 
 #: source/ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_LDAP.STR_LDAP_DEFAULT.String.Text
 #, fuzzy
@@ -2923,8 +2811,9 @@ msgid  "Set up a connection to an Adabas D database"
 msgstr "Stel 'n verbinding aan 'n Adabas D-databasis op"
 
 #: source/ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_ADABAS.STR_ADABAS_HELPTEXT.String.Text
+#, fuzzy
 msgid  "Enter the name of the Adabas D database you want to connect to.\nClick 'Browse...' to select an Adabas D database that is already registered in %PRODUCTNAME."
-msgstr ""
+msgstr "Tik die naam van die Adabas D-databasis in waaraan u wil verbind.\nKliek 'Blaai...' om aan 'n Adabas D-databasis te verbind wat reeds in %PRODUCTNAME geregistreer is."
 
 #: source/ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_ADO.STR_ADO_HEADERTEXT.String.Text
 #, fuzzy
@@ -2932,8 +2821,9 @@ msgid  "Set up a connection to an ADO database"
 msgstr "Stel 'n verbinding aan 'n ADO-databasis op"
 
 #: source/ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_ADO.STR_ADO_HELPTEXT.String.Text
+#, fuzzy
 msgid  "Please enter the URL of the ADO data source you want to connect to.\nClick 'Browse' to configure provider-specific settings.\nPlease contact your system administrator if you are unsure about the following settings."
-msgstr ""
+msgstr "Tik asseblief die URL van die ADO-databasisbron in waaraan u wil verbind.\nKliek 'Blaai' om die verskafferspesifieke opstelling op te stel.\nKontak asseblief u stelseladministrateur indien u onseker is oor die volgende instellings."
 
 #: source/ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_ODBC.STR_ODBC_HEADERTEXT.String.Text
 #, fuzzy
@@ -2941,8 +2831,9 @@ msgid  "Set up a connection to an ODBC database"
 msgstr "Stel 'n verbinding aan 'n ODBC-databasis op"
 
 #: source/ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_ODBC.STR_ODBC_HELPTEXT.String.Text
+#, fuzzy
 msgid  "Enter the name of the ODBC database you want to connect to.\nClick 'Browse...' to select an ODBC database that is already registered in %PRODUCTNAME.\nPlease contact your system administrator if you are unsure about the following settings."
-msgstr ""
+msgstr "Tik die naam van die ODBC -databasis in waaraan u wil verbind.\nKliek 'Blaai...' om aan 'n ODBC-databasis te verbind wat reeds in %PRODUCTNAME geregistreer is.\nKontak asseblief u stelseladministrateur indien u onseker is oor die volgende instellings."
 
 #: source/ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_JDBC.STR_JDBC_HEADERTEXT.String.Text
 #, fuzzy
@@ -2950,8 +2841,9 @@ msgid  "Set up a connection to a JDBC database"
 msgstr "Stel 'n verbinding aan 'n JDBC-databasis op"
 
 #: source/ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_JDBC.STR_JDBC_HELPTEXT.String.Text
+#, fuzzy
 msgid  "Please enter the required information to connect to a JDBC database.\nPlease contact your system administrator if you are unsure about the following settings."
-msgstr ""
+msgstr "Tik asseblief die nodige inligting in om aan 'n JDBC-databasis te verbind.\nKontak asseblief u stelseladministrateur indien u onseker is oor die volgende instellings."
 
 #: source/ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_ORACLE.STR_ORACLE_HEADERTEXT.String.Text
 #, fuzzy
@@ -2969,8 +2861,9 @@ msgid  "Oracle JDBC ~driver class"
 msgstr "Oracle-JDBC-~drywerklas"
 
 #: source/ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_ORACLE.STR_ORACLE_HELPTEXT.String.Text
+#, fuzzy
 msgid  "Please enter the required information to connect to an Oracle database.Note that a JDBC Driver Class must be installed on your system and registered with %PRODUCTNAME.\nPlease contact your system administrator if you are unsure about the following settings."
-msgstr ""
+msgstr "Tik asseblief die nodige inligting in om aan 'n Oracle-databasis te verbind. Let op dat 'n JDBC-drywerklas op u stelsel geïnstalleer moet wees en met %PRODUCTNAME geregistreer moet wees.\nKontak asseblief u stelseladministrateur indien u onseker is oor die volgende instellings."
 
 #: source/ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_SPREADSHEET.STR_SPREADSHEET_HEADERTEXT.String.Text
 #, fuzzy
@@ -2978,8 +2871,9 @@ msgid  "Set up a connection to spreadsheets"
 msgstr "Stel 'n verbinding aan sigblaaie op"
 
 #: source/ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_SPREADSHEET.STR_SPREADSHEET_HELPTEXT.String.Text
+#, fuzzy
 msgid  "Click 'Browse...' to select a %PRODUCTNAME spreadsheet or Microsoft Excel workbook.\n%PRODUCTNAME will open this file in read-only mode."
-msgstr ""
+msgstr "Kliek 'Blaai...' om 'n %PRODUCTNAME-sigblad of Microsoft Excel-werkboek te selekteer.\n%PRODUCTNAME sal daardie lêer in leesalleenmodus open."
 
 #: source/ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_SPREADSHEET.STR_SPREADSHEETPATH.String.Text
 #, fuzzy
@@ -3156,63 +3050,102 @@ msgstr "Toetsklas"
 msgid  "Socket"
 msgstr "Sok"
 
+#: source/ui/inc/toolbox_tmpl.hrc#ID_BROWSER_REFRESH.#define.Text
+msgid  "Refresh"
+msgstr "Verfris"
+
+#: source/ui/inc/toolbox_tmpl.hrc#ID_NEW_VIEW_DESIGN.#define.Text
+msgid  "New ~View Design"
+msgstr "Nuwe ~aansigontwerp"
+
+#: source/ui/inc/toolbox_tmpl.hrc#ID_NEW_TABLE_DESIGN.#define.Text
+msgid  "New ~Table Design"
+msgstr "Nuwe ~tabelontwerp"
+
+#: source/ui/inc/toolbox_tmpl.hrc#ID_NEW_QUERY_WIZARD.#define.Text
+msgid  "Query AutoPilot..."
+msgstr "Doen navraag by OutoLoods..."
+
+#: source/ui/inc/toolbox_tmpl.hrc#ID_NEW_QUERY_DESIGN.#define.Text
+msgid  "New ~Query (Design View)"
+msgstr "Nuwe ~navraag (ontwerpaansig)"
+
+#: source/ui/inc/toolbox_tmpl.hrc#ID_EDIT_QUERY_DESIGN.#define.Text
+msgid  "~Edit Query"
+msgstr "~Redigeer navraag"
+
+#: source/ui/inc/toolbox_tmpl.hrc#ID_NEW_QUERY_SQL.#define.Text
+msgid  "New Query (~SQL View)"
+msgstr "Nuwe navraag (~SQL-aansig)"
+
+#: source/ui/inc/toolbox_tmpl.hrc#ID_QUERY_EDIT_JOINCONNECTION.#define.Text
+msgid  "Edit..."
+msgstr "Redigeer..."
+
+#: source/ui/inc/toolbox_tmpl.hrc#ID_BROWSER_COLWIDTH.#define.Text
+msgid  "Column ~Width..."
+msgstr "Kolom~wydte..."
+
+#: source/ui/inc/toolbox_tmpl.hrc#ID_DOCUMENT_CREATE_REPWIZ.#define.Text
+msgid  "Report Wizard..."
+msgstr "Verslagslimmerd..."
+
+#: source/ui/inc/toolbox_tmpl.hrc#SID_DB_FORM_NEW_PILOT.#define.Text
+msgid  "Form AutoPilot..."
+msgstr "Vorm-OutoLoods..."
+
 #: source/ui/misc/dbumiscres.src#RSC_CHARSETS.1.String.Text
-#, fuzzy
 msgid  "System"
 msgstr "Stelsel"
 
 #: source/ui/misc/dbumiscres.src#STR_ERROR_DURING_CREATION.String.Text
-#, fuzzy
 msgid  "Error during creation"
 msgstr "Fout tydens skepping"
 
 #: source/ui/misc/dbumiscres.src#STR_UNEXPECTED_ERROR.String.Text
 msgid  "An unexpected error occurred. The operation could not be performed."
-msgstr ""
+msgstr "'n Onverwagte fout het plaasgevind. Die operasie kon nie uitgevoer word nie."
 
 #: source/ui/misc/dbumiscres.src#STR_COULDNOTOPEN_LINKEDDOC.String.Text
-msgid  "The document "$file$" could not be opened."
-msgstr ""
+msgid  "The document \"$file$\" could not be opened."
+msgstr "Die dokument \"$file$\" kon nie geopen word nie."
 
 #: source/ui/misc/dbumiscres.src#STR_MISSING_TABLES_XDROP.String.Text
 msgid  "The table cannot be deleted because the database connection does not support this."
-msgstr ""
+msgstr "Die tabel kan nie geskrap word nie aangesien die databasisverbinding dit nie toelaat nie."
 
 #: source/ui/misc/dbumiscres.src#STR_BUTTON_TEXT_ALL.String.Text
-#, fuzzy
 msgid  "~All"
 msgstr "~Alles"
 
 #: source/ui/misc/dbumiscres.src#STR_UNDO_COLON.String.Text
-#, fuzzy
 msgid  "Undo:"
 msgstr "Ontdoen:"
 
 #: source/ui/misc/dbumiscres.src#STR_REDO_COLON.String.Text
-#, fuzzy
 msgid  "Redo:"
 msgstr "Herdoen:"
 
 #: source/ui/misc/dbumiscres.src#STR_UNKNOWN_TYPE_FOUND.String.Text
-#, fuzzy
 msgid  "No corresponding column type could be found for column '#1'."
 msgstr "Geen ooreenstemmende kolomsoort kon vir kolom '#1' gekry word nie."
 
 #: source/ui/misc/dbumiscres.src#STR_FILE_DOES_NOT_EXIST.String.Text
-msgid  "The file "$file$" does not exist."
-msgstr ""
+msgid  "The file \"$file$\" does not exist."
+msgstr "Die lêer \"$file$\" bestaan nie."
 
 #: source/ui/misc/dbumiscres.src#STR_WARNINGS_DURING_CONNECT.String.Text
-msgid  "Warnings were encountered while connecting to the data source. Press "$buttontext$" to view them."
-msgstr ""
+msgid  "Warnings were encountered while connecting to the data source. Press \"$buttontext$\" to view them."
+msgstr "Waarskuwings tydens verbinding aan die databron. Druk \"$buttontext$\" om dit te bekyk."
 
 #: source/ui/misc/dbumiscres.src#STR_NAMED_OBJECT_ALREADY_EXISTS.String.Text
 msgid  "The name '$#$' already exists.\nPlease enter another name."
-msgstr ""
+msgstr "Die naam '$#$' bestaan reeds.\nTik asseblief 'n ander naam in."
 
 #: source/ui/misc/dbumiscres.src#RID_STR_EXTENSION_NOT_PRESENT.String.Text
-msgid  "The report, "$file$", requires the extension Oracle Report Builder."
-msgstr ""
+#, fuzzy
+msgid  "The report, \"$file$\", requires the extension Oracle Report Builder."
+msgstr "Die verslag \"$file$\" vereis die uitbreiding Sun Report Builder."
 
 #: source/ui/misc/WizardPages.src#STR_WIZ_COLUMN_SELECT_TITEL.String.Text
 #, fuzzy
@@ -3370,8 +3303,9 @@ msgid  "This table name is not valid in the current database."
 msgstr "Hierdie tabelnaam is nie geldig in die huidige databasis nie."
 
 #: source/ui/misc/WizardPages.src#STR_SUGGEST_APPEND_TABLE_DATA.String.Text
+#, fuzzy
 msgid  "Choose the option 'Append data' on the first page to append data to an existing table."
-msgstr ""
+msgstr "Kies die opsie 'Heg data aan' op die eerste bladsy om data by 'n bestaande tabel aan te heg."
 
 #: source/ui/misc/WizardPages.src#STR_INVALID_TABLE_NAME_LENGTH.String.Text
 #, fuzzy
@@ -3379,453 +3313,378 @@ msgid  "Please change the table name. It is too long."
 msgstr "Wysig asseblief die tabelnaam. Dit is te lank."
 
 #: source/ui/querydesign/querydlg.src#DLG_QRY_JOIN.WND_JOIN_CONTROL.FL_JOIN.FixedLine.Text
-#, fuzzy
 msgid  "Options"
 msgstr "Opsies"
 
 #: source/ui/querydesign/querydlg.src#DLG_QRY_JOIN.WND_JOIN_CONTROL.FT_LISTBOXTITLE.FixedText.Text
-#, fuzzy
 msgid  "~Type"
 msgstr "~Soort"
 
 #: source/ui/querydesign/querydlg.src#DLG_QRY_JOIN.WND_JOIN_CONTROL.LB_JOINTYPE.ID_INNER_JOIN.StringList.item
-#, fuzzy
 msgid  "Inner join"
 msgstr "Binnesamesmelting"
 
 #: source/ui/querydesign/querydlg.src#DLG_QRY_JOIN.WND_JOIN_CONTROL.LB_JOINTYPE.ID_LEFT_JOIN.StringList.item
-#, fuzzy
 msgid  "Left join"
 msgstr "Linkersamesmelting"
 
 #: source/ui/querydesign/querydlg.src#DLG_QRY_JOIN.WND_JOIN_CONTROL.LB_JOINTYPE.ID_RIGHT_JOIN.StringList.item
-#, fuzzy
 msgid  "Right join"
 msgstr "Regtersamesmelting"
 
 #: source/ui/querydesign/querydlg.src#DLG_QRY_JOIN.WND_JOIN_CONTROL.LB_JOINTYPE.ID_FULL_JOIN.StringList.item
-#, fuzzy
 msgid  "Full (outer) join"
 msgstr "Volledige (buitenste) samesmelting"
 
 #: source/ui/querydesign/querydlg.src#DLG_QRY_JOIN.WND_JOIN_CONTROL.LB_JOINTYPE.ID_CROSS_JOIN.StringList.item
-#, fuzzy
 msgid  "Cross join"
 msgstr "Kruissaamvoeg"
 
 #: source/ui/querydesign/querydlg.src#DLG_QRY_JOIN.WND_JOIN_CONTROL.CB_NATURAL.CheckBox.Text
-#, fuzzy
 msgid  "Natural"
 msgstr "Natuurlik"
 
 #: source/ui/querydesign/querydlg.src#DLG_QRY_JOIN.WND_CONTROL.FL_INVOLVED_TABLES.FixedLine.Text
-#, fuzzy
 msgid  "Tables involved"
 msgstr "Tabelle betrokke"
 
 #: source/ui/querydesign/querydlg.src#DLG_QRY_JOIN.WND_CONTROL.FL_INVOLVED_FIELDS.FixedLine.Text
-#, fuzzy
 msgid  "Fields involved"
 msgstr "Velde betrokke"
 
 #: source/ui/querydesign/querydlg.src#DLG_QRY_JOIN.HelpButton.Text
-#, fuzzy
 msgid  "Join Properties"
 msgstr "Samesmeltingseienskappe"
 
 #: source/ui/querydesign/querydlg.src#STR_JOIN_TYPE_HINT.String.Text
 msgid  "Please note that some databases may not support this join type."
-msgstr ""
+msgstr "Let op dat sommige databasisse nie hierdie soort aaneenskakeling ondersteun nie."
 
 #: source/ui/querydesign/querydlg.src#STR_QUERY_INNER_JOIN.String.Text
 msgid  "Includes only records for which the contents of the related fields of both tables are identical."
-msgstr ""
+msgstr "Sluit net rekords in waarvan die inhoud van die verwante velde in beide tabelle identies is."
 
 #: source/ui/querydesign/querydlg.src#STR_QUERY_LEFTRIGHT_JOIN.String.Text
 msgid  "Contains ALL records from table '%1' but only records from table '%2' where the values in the related fields are matching."
-msgstr ""
+msgstr "Bevat ALLE rekords uit tabel '%1' maar net rekords uit tabel '%2' waarvan die waardes in die verwante velde ooreenstem."
 
 #: source/ui/querydesign/querydlg.src#STR_QUERY_FULL_JOIN.String.Text
-#, fuzzy
 msgid  "Contains ALL records from '%1' and from '%2'."
 msgstr "Bevat ALLE rekords van '%1' en van '%2'."
 
 #: source/ui/querydesign/querydlg.src#STR_QUERY_CROSS_JOIN.String.Text
-#, fuzzy
 msgid  "Contains the cartesian product of ALL records from '%1' and from '%2'."
 msgstr "Bevat die Cartesiese produk van ALLE rekords van '%1' en van '%2'."
 
 #: source/ui/querydesign/querydlg.src#STR_QUERY_NATURAL_JOIN.String.Text
 msgid  "Contains only one column for each pair of equally-named columns from '%1' and from '%2'."
-msgstr ""
+msgstr "Bevat net een kolom vir elke paar kolomme met dieselfde naam van '%1' en van '%2'."
 
 #: source/ui/querydesign/query.src#STR_QUERY_UNDO_TABWINSHOW.String.Text
-#, fuzzy
 msgid  "Add Table Window"
 msgstr "Voeg tabelvenster by"
 
 #: source/ui/querydesign/query.src#STR_QUERY_UNDO_MOVETABWIN.String.Text
-#, fuzzy
 msgid  "Move table window"
 msgstr "Skuif tabelvenster"
 
 #: source/ui/querydesign/query.src#STR_QUERY_UNDO_INSERTCONNECTION.String.Text
-#, fuzzy
 msgid  "Insert Join"
 msgstr "Voeg samesmelting in"
 
 #: source/ui/querydesign/query.src#STR_QUERY_UNDO_REMOVECONNECTION.String.Text
-#, fuzzy
 msgid  "Delete Join"
 msgstr "Skrap samesmelting"
 
 #: source/ui/querydesign/query.src#STR_QUERY_UNDO_SIZETABWIN.String.Text
-#, fuzzy
 msgid  "Resize table window"
 msgstr "Verstel tabelvenster grootte"
 
 #: source/ui/querydesign/query.src#STR_QUERY_UNDO_TABFIELDDELETE.String.Text
-#, fuzzy
 msgid  "Delete Column"
 msgstr "Skrap kolom"
 
 #: source/ui/querydesign/query.src#STR_QUERY_UNDO_TABFIELDMOVED.String.Text
-#, fuzzy
 msgid  "Move column"
 msgstr "Skuif kolom"
 
 #: source/ui/querydesign/query.src#STR_QUERY_UNDO_TABFIELDCREATE.String.Text
-#, fuzzy
 msgid  "Add Column"
 msgstr "Voeg kolom by"
 
 #: source/ui/querydesign/query.src#RID_STR_TABLE_DOESNT_EXIST.String.Text
-#, fuzzy
 msgid  "Invalid expression, table '$name$' does not exist."
 msgstr "Ongeldige uitdrukking, tabel '$name$' bestaan nie."
 
 #: source/ui/querydesign/query.src#RID_STR_FIELD_DOESNT_EXIST.String.Text
-#, fuzzy
 msgid  "Invalid expression, field name '$name$' does not exist."
 msgstr "Ongeldige uitdrukking, veldnaam '$name$' bestaan nie."
 
 #: source/ui/querydesign/query.src#RID_STR_TOMUCHTABLES.String.Text
 msgid  "The query covers #num# tables. The selected database type, however, can only process a maximum of #maxnum# table(s) per statement."
-msgstr ""
+msgstr "Die navraag dek #num# tabelle. Die gemerkte databasissoort kan egter net 'n maksimum van #maxnum# tabel(le) per stelling verwerk."
 
 #: source/ui/querydesign/query.src#STR_QUERY_UNDO_TABWINDELETE.String.Text
-#, fuzzy
 msgid  "Delete Table Window"
 msgstr "Skrap tabelvenster"
 
 #: source/ui/querydesign/query.src#STR_QUERY_UNDO_MODIFY_CELL.String.Text
-#, fuzzy
 msgid  "Edit Column Description"
 msgstr "Redigeer kolombeskrywing"
 
 #: source/ui/querydesign/query.src#STR_QUERY_UNDO_SIZE_COLUMN.String.Text
-#, fuzzy
 msgid  "Adjust column width"
 msgstr "Pas kolomwydte aan"
 
 #: source/ui/querydesign/query.src#STR_QUERY_SORTTEXT.String.Text
-#, fuzzy
 msgid  "(not sorted);ascending;descending"
 msgstr "(ongesorteer);oplopend;aflopend"
 
 #: source/ui/querydesign/query.src#STR_QUERY_FUNCTIONS.String.Text
-#, fuzzy
 msgid  "(no function);Group"
 msgstr "(geen funksie);Groep"
 
 #: source/ui/querydesign/query.src#STR_QUERY_NOTABLE.String.Text
-#, fuzzy
 msgid  "(no table)"
 msgstr "(geen tabel)"
 
 #: source/ui/querydesign/query.src#STR_QRY_ORDERBY_UNRELATED.String.Text
-#, fuzzy
 msgid  "The database only supports sorting for visible fields."
 msgstr "Die databasis ondersteun net sortering vir sigbare velde."
 
 #: source/ui/querydesign/query.src#RID_QUERYFUNCTION_POPUPMENU.ID_QUERY_FUNCTION.MenuItem.Text
-#, fuzzy
 msgid  "Functions"
 msgstr "Funksies"
 
 #: source/ui/querydesign/query.src#RID_QUERYFUNCTION_POPUPMENU.ID_QUERY_TABLENAME.MenuItem.Text
-#, fuzzy
 msgid  "Table Name"
 msgstr "Tabelnaam"
 
 #: source/ui/querydesign/query.src#RID_QUERYFUNCTION_POPUPMENU.ID_QUERY_ALIASNAME.MenuItem.Text
-#, fuzzy
 msgid  "Alias"
 msgstr "Alias"
 
 #: source/ui/querydesign/query.src#RID_QUERYFUNCTION_POPUPMENU.ID_QUERY_DISTINCT.MenuItem.Text
-#, fuzzy
 msgid  "Distinct Values"
 msgstr "Duidelike waardes"
 
 #: source/ui/querydesign/query.src#STR_QUERY_HANDLETEXT.String.Text
-#, fuzzy
 msgid  "Field;Alias;Table;Sort;Visible;Function;Criterion;Or;Or"
 msgstr "Veld;alias;tabel;Sorteer;Sigbaar;Funksie;Kriteria;Of;Of"
 
 #: source/ui/querydesign/query.src#STR_QRY_TOO_MANY_COLUMNS.String.Text
-#, fuzzy
 msgid  "There are too many columns."
 msgstr "Daar is te veel kolomme."
 
 #: source/ui/querydesign/query.src#ERR_QRY_CRITERIA_ON_ASTERISK.ErrorBox.Message
-#, fuzzy
 msgid  "A condition cannot be applied to field [*]"
 msgstr "'n Voorwaarde kan nie op veld [*] toegepas word nie"
 
 #: source/ui/querydesign/query.src#STR_QRY_TOO_LONG_STATEMENT.String.Text
-#, fuzzy
 msgid  "The SQL statement created is too long."
 msgstr "Die SQL-stelling wat geskep is, is te lank."
 
 #: source/ui/querydesign/query.src#STR_QRY_TOOCOMPLEX.String.Text
-#, fuzzy
 msgid  "Query is too complex"
 msgstr "Navraag is te kompleks"
 
 #: source/ui/querydesign/query.src#STR_QRY_NOSELECT.String.Text
-#, fuzzy
 msgid  "Nothing has been selected."
 msgstr "Niks is geselekteer nie."
 
 #: source/ui/querydesign/query.src#STR_QRY_TOOMANYCOND.String.Text
-#, fuzzy
 msgid  "Too many search criteria"
 msgstr "Te veel soekkriteria"
 
 #: source/ui/querydesign/query.src#STR_QRY_SYNTAX.String.Text
-#, fuzzy
 msgid  "SQL syntax error"
 msgstr "SQL-sintaksfout"
 
 #: source/ui/querydesign/query.src#ERR_QRY_ORDERBY_ON_ASTERISK.ErrorBox.Message
-#, fuzzy
 msgid  "[*] cannot be used as a sort criterion."
 msgstr "[*] kan nie as sorteerkriteria gebruik word nie."
 
 #: source/ui/querydesign/query.src#STR_QRY_TOO_MANY_TABLES.String.Text
-#, fuzzy
 msgid  "There are too many tables."
 msgstr "Daar is te veel tabelle."
 
 #: source/ui/querydesign/query.src#STR_QRY_NATIVE.String.Text
 msgid  "The statement will not be applied when querying in the SQL dialect of the database."
-msgstr ""
+msgstr "Die stelling sal nie toegepas word wanneer daar in die SQL-dialek van die databasis navraag gedoen word nie."
 
 #: source/ui/querydesign/query.src#ERR_QRY_AMB_FIELD.ErrorBox.Message
-#, fuzzy
 msgid  "Field name not found or not unique"
 msgstr "Veldnaam nie gevind of nie uniek nie"
 
 #: source/ui/querydesign/query.src#STR_QRY_ILLEGAL_JOIN.String.Text
-#, fuzzy
 msgid  "Join could not be processed"
 msgstr "Samesmelting kon nie verwerk word nie"
 
 #: source/ui/querydesign/query.src#STR_SVT_SQL_SYNTAX_ERROR.String.Text
-#, fuzzy
 msgid  "Syntax error in SQL statement"
 msgstr "Sintaksfout in SQL-stelling"
 
 #: source/ui/querydesign/query.src#STR_QUERYDESIGN_NO_VIEW_SUPPORT.String.Text
-#, fuzzy
 msgid  "This database does not support table views."
 msgstr "Hierdie databasis ondersteun nie tabelaansig nie."
 
 #: source/ui/querydesign/query.src#STR_NO_ALTER_VIEW_SUPPORT.String.Text
 msgid  "This database does not support altering of existing table views."
-msgstr ""
+msgstr "Hierdie databasis werk nie met die wysiging van bestaande tabelaansigte nie."
 
 #: source/ui/querydesign/query.src#STR_QUERYDESIGN_NO_VIEW_ASK.String.Text
-#, fuzzy
 msgid  "Do you want to create a query instead?"
 msgstr "Wil u eerder 'n navraag skep?"
 
 #: source/ui/querydesign/query.src#ERR_QRY_NOSTATEMENT.ErrorBox.Message
-#, fuzzy
 msgid  "No query could be created."
 msgstr "Geen navraag kon geskep word nie."
 
 #: source/ui/querydesign/query.src#ERR_QRY_NOCRITERIA.ErrorBox.Message
-#, fuzzy
 msgid  "No query could be created because no fields were selected."
 msgstr "Geen navraag kon geskep word nie omdat geen velde gekies is nie."
 
 #: source/ui/querydesign/query.src#STR_DATASOURCE_DELETED.String.Text
 msgid  "The corresponding data source has been deleted. Therefore, data relevant to that data source cannot be saved."
-msgstr ""
+msgstr "Die ooreenstemmende databron is geskrap. Data wat vir daardie databron relevant is kon dus nie gestoor word nie."
 
 #: source/ui/querydesign/query.src#STR_QRY_COLUMN_NOT_FOUND.String.Text
-#, fuzzy
 msgid  "The column '$name$' is unknown."
 msgstr "Die kolom '$name$' is onbekend."
 
 #: source/ui/querydesign/query.src#STR_QRY_JOIN_COLUMN_COMPARE.String.Text
-#, fuzzy
 msgid  "Columns can only be compared using '='."
 msgstr "Kolomme kan net vergelyk word deur '=' te gebruik."
 
 #: source/ui/querydesign/query.src#STR_QRY_LIKE_LEFT_NO_COLUMN.String.Text
-#, fuzzy
 msgid  "You must use a column name before 'LIKE'."
 msgstr "U moet 'n kolomnaam gebruik voor 'LIKE'."
 
 #: source/ui/querydesign/query.src#STR_QRY_CHECK_CASESENSITIVE.String.Text
 msgid  "The column could not be found. Please note that the database is case-sensitive."
-msgstr ""
+msgstr "Die kolom kon nie gevind word nie. Let op dat die databasis kassensitief is."
 
 #: source/ui/querydesign/query.src#STR_QUERYDESIGN.String.Text
-#, fuzzy
 msgid  " - %PRODUCTNAME Base: Query Design"
 msgstr " - %PRODUCTNAME Base: Navraagontwerp"
 
 #: source/ui/querydesign/query.src#STR_VIEWDESIGN.String.Text
-#, fuzzy
 msgid  " - %PRODUCTNAME Base: View Design"
 msgstr " - %PRODUCTNAME Base: Aansigontwerp"
 
 #: source/ui/querydesign/query.src#STR_QUERY_SAVEMODIFIED.String.Text
 msgid  "$object$ has been changed.\nDo you want to save the changes?"
-msgstr ""
+msgstr "$object$ is gewysig.\nWil u die veranderinge stoor?"
 
 #: source/ui/querydesign/query.src#STR_ERROR_PARSING_STATEMENT.String.Text
-msgid  "$object$ is based on an SQL command which could not be parsed.(except "SQL command", which doesn't make sense here) will be inserted."
+msgid  "$object$ is based on an SQL command which could not be parsed.(except \"SQL command\", which doesn't make sense here) will be inserted."
 msgstr ""
 
 #: source/ui/querydesign/query.src#STR_INFO_OPENING_IN_SQL_VIEW.String.Text
-msgid  "$object$ will be opened in SQL view.(except "SQL command", which doesn't make sense here) will be inserted."
+msgid  "$object$ will be opened in SQL view.(except \"SQL command\", which doesn't make sense here) will be inserted."
 msgstr ""
 
 #: source/ui/querydesign/query.src#RSC_QUERY_OBJECT_TYPE.1.String.Text
-#, fuzzy
 msgid  "The table view"
 msgstr "Die tabelaansig"
 
 #: source/ui/querydesign/query.src#RSC_QUERY_OBJECT_TYPE.2.String.Text
-#, fuzzy
 msgid  "The query"
 msgstr "Die navraag"
 
 #: source/ui/querydesign/query.src#RSC_QUERY_OBJECT_TYPE.3.String.Text
-#, fuzzy
 msgid  "The SQL statement"
 msgstr "Die SQL-stelling"
 
 #: source/ui/querydesign/query.src#STR_STATEMENT_WITHOUT_RESULT_SET.String.Text
 msgid  "The query does not create a result set, and thus cannot be part of another query."
-msgstr ""
+msgstr "Die navraag skep nie 'n resultaatstel nie, en kan dus nie deel van nóg 'n navraag wees nie."
 
 #: source/ui/querydesign/query.src#STR_NO_DATASOURCE_OR_CONNECTION.String.Text
 msgid  "Both the ActiveConnection and the DataSourceName parameter are missing or wrong - cannot initialize the query designer."
-msgstr ""
+msgstr "Beide die ActiveConnection- en die DataSourceName-parameter word vermis of is verkeerd - kan  nie die navraagontwerper inisialiseer nie."
 
 #: source/ui/relationdesign/relation.src#STR_QUERY_REL_EDIT_RELATION.String.Text
 msgid  "This relation already exists. Do you want to edit it or create a new one?"
-msgstr ""
+msgstr "Hierdie verwantskap bestaan reeds. Wil u dit redigeer of 'n nuwe een skep?"
 
 #: source/ui/relationdesign/relation.src#STR_QUERY_REL_EDIT.String.Text
-#, fuzzy
 msgid  "Edit..."
 msgstr "Redigeer..."
 
 #: source/ui/relationdesign/relation.src#STR_QUERY_REL_CREATE.String.Text
-#, fuzzy
 msgid  "Create..."
 msgstr "Skep..."
 
 #: source/ui/relationdesign/relation.src#STR_RELATIONDESIGN.String.Text
-#, fuzzy
 msgid  " - %PRODUCTNAME Base: Relation design"
 msgstr " - %PRODUCTNAME Base: Verwantskapsontwerp"
 
 #: source/ui/relationdesign/relation.src#STR_RELATIONDESIGN_NOT_AVAILABLE.String.Text
-#, fuzzy
 msgid  "The database does not support relations."
 msgstr "Die databasis ondersteun nie verwantskappe nie."
 
 #: source/ui/relationdesign/relation.src#RELATION_DESIGN_SAVEMODIFIED.QueryBox.Message
 msgid  "The relation design has been changed.\nDo you want to save the changes?"
-msgstr ""
+msgstr "Die verwantskapsontwerp is gewysig.\nWil u die veranderinge stoor?"
 
 #: source/ui/relationdesign/relation.src#STR_QUERY_REL_DELETE_WINDOW.String.Text
 msgid  "When you delete this table all corresponding relations will be deleted as well. Continue?"
-msgstr ""
+msgstr "Wanneer u hierdie tabel skrap, sal alle ooreenstemmende verwantskappe ook geskrap word. Gaan voort?"
 
 #: source/ui/relationdesign/relation.src#STR_QUERY_REL_COULD_NOT_CREATE.String.Text
 msgid  "The database could not create the relation. May be foreign keys for this kind of table aren't supported.\nPlease check your documentation of the database."
-msgstr ""
+msgstr "Die databasis kon nie die verwantskap skep nie. Dalk werk buitelandse sleutels nie met dié soort tabel nie.\nKontroleer asseblief u dokumentasie van die databasis."
 
 #: source/ui/tabledesign/table.src#STR_TABLEDESIGN_DBFIELDTYPES.String.Text
 msgid  "Unknown;Text;Number;Date/Time;Date;Time;Yes/No;Currency;Memo;Counter;Image;Text (fix);Decimal;Binary (fix);Binary;BigInt;Double;Float;Real;Integer;Small Integer;Tiny Integer;SQL Null;Object;Distinct;Structure;Field;BLOB;CLOB;REF;OTHER;Bit (fix)"
 msgstr ""
 
 #: source/ui/tabledesign/table.src#STR_TABLEDESIGN_UNDO_PRIMKEY.String.Text
-#, fuzzy
 msgid  "Insert/remove primary key"
 msgstr "Voeg in/verwyder primêre sleutel"
 
 #: source/ui/tabledesign/table.src#STR_VALUE_YES.String.Text
-#, fuzzy
 msgid  "Yes"
 msgstr "Ja"
 
 #: source/ui/tabledesign/table.src#STR_VALUE_NO.String.Text
-#, fuzzy
 msgid  "No"
 msgstr "Nee"
 
 #: source/ui/tabledesign/table.src#STR_VALUE_ASC.String.Text
-#, fuzzy
 msgid  "Ascending"
 msgstr "Oplopend"
 
 #: source/ui/tabledesign/table.src#STR_VALUE_DESC.String.Text
-#, fuzzy
 msgid  "Descending"
 msgstr "Aflopend"
 
 #: source/ui/tabledesign/table.src#STR_VALUE_NONE.String.Text
-#, fuzzy
 msgid  "<none>"
 msgstr "<geen>"
 
 #: source/ui/tabledesign/table.src#STR_TAB_FIELD_NAME.String.Text
-#, fuzzy
 msgid  "Field name"
 msgstr "Veldnaam"
 
 #: source/ui/tabledesign/table.src#STR_TAB_FIELD_COLUMN_NAME.String.Text
-#, fuzzy
 msgid  "Field Name"
 msgstr "Veldnaam"
 
 #: source/ui/tabledesign/table.src#STR_TAB_FIELD_DATATYPE.String.Text
-#, fuzzy
 msgid  "Field ~type"
 msgstr "Veld~tipe"
 
 #: source/ui/tabledesign/table.src#STR_TAB_FIELD_COLUMN_DATATYPE.String.Text
-#, fuzzy
 msgid  "Field Type"
 msgstr "Veldtipe"
 
 #: source/ui/tabledesign/table.src#STR_TAB_FIELD_LENGTH.String.Text
-#, fuzzy
 msgid  "Field length"
 msgstr "Veldlengte"
 
 #: source/ui/tabledesign/table.src#STR_TAB_HELP_TEXT.String.Text
-#, fuzzy
 msgid  "Description"
 msgstr "Beskrywing"
 
@@ -3834,322 +3693,274 @@ msgid  "Column Description"
 msgstr ""
 
 #: source/ui/tabledesign/table.src#STR_TAB_FIELD_NULLABLE.String.Text
-#, fuzzy
 msgid  "Input required"
 msgstr "Toevoer vereis"
 
 #: source/ui/tabledesign/table.src#STR_FIELD_AUTOINCREMENT.String.Text
-#, fuzzy
 msgid  "~AutoValue"
 msgstr "~OutoWaarde"
 
 #: source/ui/tabledesign/table.src#STR_TAB_PROPERTIES.String.Text
-#, fuzzy
 msgid  "Field Properties"
 msgstr "Veldeienskappe"
 
 #: source/ui/tabledesign/table.src#STR_TABPAGE_GENERAL.String.Text
-#, fuzzy
 msgid  "General"
 msgstr "Algemeen"
 
 #: source/ui/tabledesign/table.src#STR_TAB_TABLE_DESCRIPTION.String.Text
-#, fuzzy
 msgid  "Description:"
 msgstr "Beskrywing:"
 
 #: source/ui/tabledesign/table.src#STR_TAB_TABLE_PROPERTIES.String.Text
-#, fuzzy
 msgid  "Table properties"
 msgstr "Tabeleienskappe"
 
 #: source/ui/tabledesign/table.src#ERR_INVALID_LISTBOX_ENTRY.ErrorBox.Message
-#, fuzzy
 msgid  "The text you entered is not a list element. "
 msgstr "Die teks wat u ingetik het is nie 'n lyselement nie. "
 
 #: source/ui/tabledesign/table.src#RID_TABLEDESIGNROWPOPUPMENU.SID_TABLEDESIGN_INSERTROWS.MenuItem.Text
-#, fuzzy
 msgid  "Insert Rows"
 msgstr "Voeg rye in"
 
 #: source/ui/tabledesign/table.src#RID_TABLEDESIGNROWPOPUPMENU.SID_TABLEDESIGN_TABED_PRIMARYKEY.MenuItem.Text
-#, fuzzy
 msgid  "Primary Key"
 msgstr "Primêre sleutel"
 
 #: source/ui/tabledesign/table.src#STR_TABED_UNDO_CELLMODIFIED.String.Text
-#, fuzzy
 msgid  "Modify cell"
 msgstr "Wysig sel"
 
 #: source/ui/tabledesign/table.src#STR_TABED_UNDO_ROWDELETED.String.Text
-#, fuzzy
 msgid  "Delete row"
 msgstr "Skrap ry"
 
 #: source/ui/tabledesign/table.src#STR_TABED_UNDO_TYPE_CHANGED.String.Text
-#, fuzzy
 msgid  "Modify field type"
 msgstr "Wysig veldsoort"
 
 #: source/ui/tabledesign/table.src#STR_TABED_UNDO_ROWINSERTED.String.Text
-#, fuzzy
 msgid  "Insert row"
 msgstr "Voeg ry in"
 
 #: source/ui/tabledesign/table.src#STR_TABED_UNDO_NEWROWINSERTED.String.Text
-#, fuzzy
 msgid  "Insert new row"
 msgstr "Voeg nuwe ry in"
 
 #: source/ui/tabledesign/table.src#STR_TABED_UNDO_PRIMKEY.String.Text
-#, fuzzy
 msgid  "Insert/remove primary key"
 msgstr "Voeg in/verwyder primêre sleutel"
 
 #: source/ui/tabledesign/table.src#STR_DEFAULT_VALUE.String.Text
-#, fuzzy
 msgid  "~Default value"
 msgstr "~Verstek waarde"
 
 #: source/ui/tabledesign/table.src#STR_FIELD_REQUIRED.String.Text
-#, fuzzy
 msgid  "~Entry required"
 msgstr "~Inskrywing vereis"
 
 #: source/ui/tabledesign/table.src#STR_TEXT_LENGTH.String.Text
-#, fuzzy
 msgid  "~Length"
 msgstr "~Lengte"
 
 #: source/ui/tabledesign/table.src#STR_NUMERIC_TYPE.String.Text
-#, fuzzy
 msgid  "~Type"
 msgstr "~Soort"
 
 #: source/ui/tabledesign/table.src#STR_LENGTH.String.Text
-#, fuzzy
 msgid  "~Length"
 msgstr "~Lengte"
 
 #: source/ui/tabledesign/table.src#STR_SCALE.String.Text
-#, fuzzy
 msgid  "Decimal ~places"
 msgstr "Desimale ~plekke"
 
 #: source/ui/tabledesign/table.src#STR_FORMAT.String.Text
-#, fuzzy
 msgid  "Format example"
 msgstr "Formaatvoorbeeld"
 
 #: source/ui/tabledesign/table.src#STR_HELP_BOOL_DEFAULT.String.Text
 msgid  "Select a value that is to appear in all new records as default.\nIf the field is not to have a default value, select the empty string."
-msgstr ""
+msgstr "Kies 'n waarde wat in alle nuwe rekords sal voorkom as die verstek.\nIndien die veld nie die verstek waarde moet hê nie, kies die leë string."
 
 #: source/ui/tabledesign/table.src#STR_HELP_DEFAULT_VALUE.String.Text
 msgid  "Enter a default value for this field.\n\nWhen you later enter data in the table, this string will be used in each new record for the field selected. It should, therefore, correspond to the cell format that needs to be entered below."
-msgstr ""
+msgstr "Tik 'n verstek waarde vir hierdie veld in.\n\nWanneer u later data in die tabel intik, sal hierdie string gebruik word in elke nuwe rekord vir die gekose veld. Dit moet dus ooreenstem met die selformaat wat hier onder ingevul moet word."
 
 #: source/ui/tabledesign/table.src#STR_HELP_FIELD_REQUIRED.String.Text
 msgid  "Activate this option if this field cannot contain NULL values, i.e. the user must always enter data."
-msgstr ""
+msgstr "Aktiveer hierdie opsie indien hierdie veld nie NUL-waardes kan bevat nie, d.w.s. die gebruiker moet altyd data intik."
 
 #: source/ui/tabledesign/table.src#STR_HELP_TEXT_LENGTH.String.Text
-#, fuzzy
 msgid  "Enter the maximum text length permitted."
 msgstr "Tik die maksimum toegelate tekslengte in."
 
 #: source/ui/tabledesign/table.src#STR_HELP_NUMERIC_TYPE.String.Text
-#, fuzzy
 msgid  "Enter the number format."
 msgstr "Tik die nommerformaat in."
 
 #: source/ui/tabledesign/table.src#STR_HELP_LENGTH.String.Text
 msgid  "Determine the length data can have in this field.\n\nIf decimal fields, then the maximum length of the number to be entered, if binary fields, then the length of the data block.\nThe value will be corrected accordingly when it exceeds the maximum for this database."
-msgstr ""
+msgstr "Bepaal die lengte wat data in hierdie veld mag hê.\n\nIndien dit desimale velde is, tik dan die maksimum lengte van die getal wat toegevoer moet word, en indien binêre velde, tik dan die lengte van die datablok in.\nDie waarde sal dienooreenkomstig gekorrigeer word indien dit die maksimum vir hierdie databasis oorskry."
 
 #: source/ui/tabledesign/table.src#STR_HELP_SCALE.String.Text
 msgid  "Specify the number of decimal places permitted in this field."
-msgstr ""
+msgstr "Spesifiseer die getal desimale plekke wat in hierdie veld toegelaat word."
 
 #: source/ui/tabledesign/table.src#STR_HELP_FORMAT_CODE.String.Text
 msgid  "This is where you see how the data would be displayed in the current format (use the button on the right to modify the format)."
-msgstr ""
+msgstr "Dit is waar u sien hoe die data vertoon sal word in die huidige formaat (gebruik die knoppie regs om die formaat te wysig)."
 
 #: source/ui/tabledesign/table.src#STR_HELP_FORMAT_BUTTON.String.Text
-#, fuzzy
 msgid  "This is where you determine the output format of the data."
 msgstr "Dit is waar u die afvoerformaat van die data bepaal."
 
 #: source/ui/tabledesign/table.src#STR_HELP_AUTOINCREMENT.String.Text
 msgid  "Choose if this field should contain AutoIncrement values.\n\nYou can not enter data in fields of this type. An intrinsic value will be assigned to each new record automatically (resulting from the increment of the previous record)."
-msgstr ""
+msgstr "Kies indien hierdie veld OutoInkrement-waardes moet bevat.\n\nU kan nie data in velde van dié soort tik nie. 'n Intrinsieke waarde sal outomaties aan elke nuwe rekord toegewys word (wat verband hou met die inkrement van die vorige rekord)."
 
 #: source/ui/tabledesign/table.src#PB_FORMAT.PushButton.Text
-#, fuzzy
 msgid  "~..."
 msgstr "~..."
 
 #: source/ui/tabledesign/table.src#STR_TABLEDESIGN_DUPLICATE_NAME.String.Text
-msgid  "The table cannot be saved because column name "$column$" was assigned twice."
-msgstr ""
+msgid  "The table cannot be saved because column name \"$column$\" was assigned twice."
+msgstr "Die tabel kan nie gestoor word nie omdat kolomnaam \"$column$\" twee keer toegewys is."
 
 #: source/ui/tabledesign/table.src#STR_TBL_COLUMN_IS_KEYCOLUMN.String.Text
-msgid  "The column "$column$" belongs to the primary key. If the column is deleted, the primary key will also be deleted. Do you really want to continue?"
-msgstr ""
+msgid  "The column \"$column$\" belongs to the primary key. If the column is deleted, the primary key will also be deleted. Do you really want to continue?"
+msgstr "Die kolom \"$column$\" behoort aan die primêre sleutel. Indien die kolom geskrap word, sal die primêre sleutel ook geskrap word. Wil u werklik voortgaan?"
 
 #: source/ui/tabledesign/table.src#STR_TBL_COLUMN_IS_KEYCOLUMN_TITLE.String.Text
-#, fuzzy
 msgid  "Primary Key Affected"
 msgstr "Primêre sleutel geaffekteer"
 
 #: source/ui/tabledesign/table.src#STR_COLUMN_NAME.String.Text
-#, fuzzy
 msgid  "Column"
 msgstr "Kolom"
 
 #: source/ui/tabledesign/table.src#STR_QRY_CONTINUE.String.Text
-#, fuzzy
 msgid  "Continue anyway?"
 msgstr "Gaan in elk geval voort?"
 
+#: source/ui/tabledesign/table.src#STR_STAT_WARNING.String.Text
+msgid  "Warning!"
+msgstr "Waarskuwing!"
+
 #: source/ui/tabledesign/table.src#TABLE_DESIGN_SAVEMODIFIED.QueryBox.Message
 msgid  "The table has been changed.\nDo you want to save the changes?"
-msgstr ""
+msgstr "Die tabel is gewysig.\nWil u die veranderinge stoor?"
 
 #: source/ui/tabledesign/table.src#TABLE_QUERY_CONNECTION_LOST.QueryBox.Message
 msgid  "The connection to the database was lost! The table design can only be used with limited functionality without a connection.\nReconnect?"
-msgstr ""
+msgstr "Die verbinding met die databasis is afgebreek. Die tabelontwerp kan net met beperkte funksionaliteit gebruik word sonder 'n verbinding.\nVerbind weer?"
 
 #: source/ui/tabledesign/table.src#STR_TABLEDESIGN_CONNECTION_MISSING.String.Text
 msgid  "The table could not be saved due to problems connecting to the database."
-msgstr ""
+msgstr "Die tabel kon nie gestoor word nie vanweë probleme om met die databasis te verbind."
 
 #: source/ui/tabledesign/table.src#STR_TABLEDESIGN_DATASOURCE_DELETED.String.Text
 msgid  "The table filter could not be adjusted because the data source has been deleted."
-msgstr ""
+msgstr "Die tabelfilter kon nie aangepas word nie omdat die databron geskrap is."
 
 #: source/ui/tabledesign/table.src#QUERY_SAVE_TABLE_EDIT_INDEXES.QueryBox.Message
 msgid  "Before you can edit the indexes of a table, you have to save it.\nDo you want to save the changes now?"
-msgstr ""
+msgstr "Voor u die indekse van 'n tabel kan redigeer, moet u dit stoor.\nWil u die veranderinge nou stoor?"
 
 #: source/ui/tabledesign/table.src#STR_TABLEDESIGN_NO_PRIM_KEY_HEAD.String.Text
-#, fuzzy
 msgid  "No primary key"
 msgstr "Geen primêre sleutel nie"
 
 #: source/ui/tabledesign/table.src#STR_TABLEDESIGN_NO_PRIM_KEY.String.Text
 msgid  "A unique index or primary key is required for data record identification in this database.\nYou can only enter data into this table when one of these two structural conditions has been met.\n\nShould a primary key be created now?"
-msgstr ""
+msgstr "'n Unieke indeks- of primêre sleutel word benodig vir datarekordidentifikasie in hierdie databasis.\nU kan net data in hierdie tabel intik wanneer een van hierdie twee strukturele voorwaardes nagekom word.\n\nMoet 'n primêre sleutel nou geskep word?"
 
 #: source/ui/tabledesign/table.src#STR_TABLEDESIGN_TITLE.String.Text
-#, fuzzy
 msgid  " - %PRODUCTNAME Base: Table Design"
 msgstr " - %PRODUCTNAME Base: Tabelontwerp"
 
 #: source/ui/tabledesign/table.src#STR_TABLEDESIGN_ALTER_ERROR.String.Text
-msgid  "The column "$column$" could not be changed. Should the column instead be deleted and the new format appended?"
-msgstr ""
+msgid  "The column \"$column$\" could not be changed. Should the column instead be deleted and the new format appended?"
+msgstr "Die kolom \"$column$\" kon nie gewysig word nie. Moet die kolom eerder geskrap word en 'n nuwe formaat aangeheg word?"
 
 #: source/ui/tabledesign/table.src#STR_TABLEDESIGN_SAVE_ERROR.String.Text
-#, fuzzy
 msgid  "Error while saving the table design"
 msgstr "Kon nie tabelontwerp stoor nie"
 
 #: source/ui/tabledesign/table.src#STR_TABLEDESIGN_COULD_NOT_DROP_COL.String.Text
-#, fuzzy
 msgid  "The column $column$ could not be deleted."
 msgstr "Die kolom $column$ kon nie geskrap word nie."
 
 #: source/ui/tabledesign/table.src#TABLE_DESIGN_ALL_ROWS_DELETED.QueryBox.Message
 msgid  "You are trying to delete all the columns in the table. A table cannot exist without columns. Should the table be deleted from the database? If not, the table will remain unchanged."
-msgstr ""
+msgstr "U probeer tans om alle kolomme in die tabel te skrap. 'n Tabel kan nie bestaan sonder kolomme nie. Moet die tabel uit die databasis geskrap word? Indien nie, sal die tabel onveranderd bly."
 
 #: source/ui/tabledesign/table.src#STR_AUTOINCREMENT_VALUE.String.Text
-#, fuzzy
 msgid  "A~uto-increment statement"
 msgstr "O~uto-inkrementeerstelling"
 
 #: source/ui/tabledesign/table.src#STR_HELP_AUTOINCREMENT_VALUE.String.Text
 msgid  "Enter an SQL statement for the auto-increment field.\n\nThis statement will be directly transferred to the database when the table is created."
-msgstr ""
+msgstr "Voer 'n SQL-stelling vir die outo-inkrementveld in.\n\nHierdie stelling sal direk na die databasis oorgedra word wanneer die tabel geskep word."
 
 #: source/ui/tabledesign/table.src#STR_NO_TYPE_INFO_AVAILABLE.String.Text
 msgid  "No type information could be retrieved from the database.\nThe table design mode is not available for this data source."
-msgstr ""
+msgstr "Geen soortinligting kon uit die databasis herwin word nie.\nDie tabelontwerp-modus is nie vir hierdie databron beskikbaar nie."
 
 #: source/ui/tabledesign/table.src#STR_CHANGE_COLUMN_NAME.String.Text
-#, fuzzy
 msgid  "change field name"
 msgstr "verander veldname"
 
 #: source/ui/tabledesign/table.src#STR_CHANGE_COLUMN_TYPE.String.Text
-#, fuzzy
 msgid  "change field type"
 msgstr "verander veldsoort"
 
 #: source/ui/tabledesign/table.src#STR_CHANGE_COLUMN_DESCRIPTION.String.Text
-#, fuzzy
 msgid  "change field description"
 msgstr "verander veldbeskrywing"
 
 #: source/ui/tabledesign/table.src#STR_CHANGE_COLUMN_ATTRIBUTE.String.Text
-#, fuzzy
 msgid  "change field attribute"
 msgstr "verander veldattribuut"
 
-#: source/ui/tabledesign/table.src#STR_STAT_WARNING.String.Text
-#, fuzzy
-msgid  "Warning!"
-msgstr "Waarskuwing!"
-
 #: source/ui/uno/dbinteraction.src#STR_REMEMBERPASSWORD_SESSION.String.Text
-#, fuzzy
 msgid  "~Remember password until end of session"
 msgstr "~Onthou wagwoord tot aan einde van sessie"
 
 #: source/ui/uno/dbinteraction.src#STR_REMEMBERPASSWORD_PERSISTENT.String.Text
-#, fuzzy
 msgid  "~Remember password"
 msgstr "~Onthou wagwoord"
 
 #: source/ui/uno/copytablewizard.src#STR_CTW_NO_VIEWS_SUPPORT.String.Text
-#, fuzzy
 msgid  "The destination database does not support views."
 msgstr "Die bestemmingdatabasis werk nie met aansigte nie."
 
 #: source/ui/uno/copytablewizard.src#STR_CTW_NO_PRIMARY_KEY_SUPPORT.String.Text
-#, fuzzy
 msgid  "The destination database does not support primary keys."
 msgstr "Die bestemmingdatabasis werk nie met primêre sleutels nie."
 
 #: source/ui/uno/copytablewizard.src#STR_CTW_INVALID_DATA_ACCESS_DESCRIPTOR.String.Text
 msgid  "no data access descriptor found, or no data access descriptor able to provide all necessary information"
-msgstr ""
+msgstr "geen datatoegangbeskrywer gevind nie, of geen datatoegangbeskrywer in staat om al die nodige inligting te gee nie"
 
 #: source/ui/uno/copytablewizard.src#STR_CTW_ONLY_TABLES_AND_QUERIES_SUPPORT.String.Text
-#, fuzzy
 msgid  "Only tables and queries are supported at the moment."
 msgstr "Net tabelle en navrae werk op die oomblik."
 
 #: source/ui/uno/copytablewizard.src#STR_CTW_COPY_SOURCE_NEEDS_BOOKMARKS.String.Text
-#, fuzzy
 msgid  "The copy source's result set must support bookmarks."
 msgstr "Die kopiebron se resultaatstel moet met boekmerke werk."
 
 #: source/ui/uno/copytablewizard.src#STR_CTW_UNSUPPORTED_COLUMN_TYPE.String.Text
-#, fuzzy
 msgid  "Unsupported source column type ($type$) at column position $pos$."
 msgstr "Nieondersteunde bronkolomtipe ($type$) by kolomposisie $pos$."
 
 #: source/ui/uno/copytablewizard.src#STR_CTW_ILLEGAL_PARAMETER_COUNT.String.Text
-#, fuzzy
 msgid  "Illegal number of initialization parameters."
 msgstr "Onwettige aantal inisialiseringsparameters."
 
 #: source/ui/uno/copytablewizard.src#STR_CTW_ERROR_DURING_INITIALIZATION.String.Text
-#, fuzzy
 msgid  "An error occurred during initialization."
 msgstr "Kon nie inisialiseer nie."
 
@@ -4164,58 +3975,3 @@ msgstr ""
 #: source/ui/uno/copytablewizard.src#STR_CTW_ERROR_INVALID_INTERACTIONHANDLER.String.Text
 msgid  "The given interaction handler is invalid."
 msgstr ""
-
-#: source/ui/inc/toolbox_tmpl.hrc#ID_BROWSER_REFRESH.#define.Text
-#, fuzzy
-msgid  "Refresh"
-msgstr "Verfris"
-
-#: source/ui/inc/toolbox_tmpl.hrc#ID_NEW_VIEW_DESIGN.#define.Text
-#, fuzzy
-msgid  "New ~View Design"
-msgstr "Nuwe ~aansigontwerp"
-
-#: source/ui/inc/toolbox_tmpl.hrc#ID_NEW_TABLE_DESIGN.#define.Text
-#, fuzzy
-msgid  "New ~Table Design"
-msgstr "Nuwe ~tabelontwerp"
-
-#: source/ui/inc/toolbox_tmpl.hrc#ID_NEW_QUERY_WIZARD.#define.Text
-#, fuzzy
-msgid  "Query AutoPilot..."
-msgstr "Doen navraag by OutoLoods..."
-
-#: source/ui/inc/toolbox_tmpl.hrc#ID_NEW_QUERY_DESIGN.#define.Text
-#, fuzzy
-msgid  "New ~Query (Design View)"
-msgstr "Nuwe ~navraag (ontwerpaansig)"
-
-#: source/ui/inc/toolbox_tmpl.hrc#ID_EDIT_QUERY_DESIGN.#define.Text
-#, fuzzy
-msgid  "~Edit Query"
-msgstr "~Redigeer navraag"
-
-#: source/ui/inc/toolbox_tmpl.hrc#ID_NEW_QUERY_SQL.#define.Text
-#, fuzzy
-msgid  "New Query (~SQL View)"
-msgstr "Nuwe navraag (~SQL-aansig)"
-
-#: source/ui/inc/toolbox_tmpl.hrc#ID_QUERY_EDIT_JOINCONNECTION.#define.Text
-#, fuzzy
-msgid  "Edit..."
-msgstr "Redigeer..."
-
-#: source/ui/inc/toolbox_tmpl.hrc#ID_BROWSER_COLWIDTH.#define.Text
-#, fuzzy
-msgid  "Column ~Width..."
-msgstr "Kolom~wydte..."
-
-#: source/ui/inc/toolbox_tmpl.hrc#ID_DOCUMENT_CREATE_REPWIZ.#define.Text
-#, fuzzy
-msgid  "Report Wizard..."
-msgstr "Verslagslimmerd..."
-
-#: source/ui/inc/toolbox_tmpl.hrc#SID_DB_FORM_NEW_PILOT.#define.Text
-#, fuzzy
-msgid  "Form AutoPilot..."
-msgstr "Vorm-OutoLoods..."

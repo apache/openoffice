@@ -73,7 +73,7 @@ msgstr "Giới thiệu"
 
 #: source/minimizer/registry/data/org/openoffice/Office/extension/SunPresentationMinimizer.xcu#.SunPresentationMinimizer.Strings.STR_INTRODUCTION_T
 msgid  "The @MINIMIZEREXTENSIONPRODUCTNAME@ is used to reduce the file size of the current presentation. Images will be compressed and data, that is no longer needed, will be removed. At the last step of the wizard you can choose to apply the changes to the current presentation or to create an optimized new version of the presentation."
-msgstr ""
+msgstr "Bộ thu nhỏ trình chiếu của Oracle được dùng để giảm kích cỡ tập tin của trình chiếu hiện thời. Tiến trình này sẽ nén các ảnh và gỡ bỏ dữ liệu không cần thiết. Ở bước cuối cùng của trợ thủ, bạn có thể chọn áp dụng các thay đổi cho trình chiếu hiện thời, hoặc tạo một phiên bản mới (đã tối ưu hoá) của trình chiếu."
 
 #: source/minimizer/registry/data/org/openoffice/Office/extension/SunPresentationMinimizer.xcu#.SunPresentationMinimizer.Strings.STR_CHOSE_SETTINGS
 msgid  "~Choose settings for @MINIMIZEREXTENSIONPRODUCTNAME@"
@@ -153,11 +153,11 @@ msgstr "Ch~o đối tượng OLE không dựa vào định dạng OpenDocument"
 
 #: source/minimizer/registry/data/org/openoffice/Office/extension/SunPresentationMinimizer.xcu#.SunPresentationMinimizer.Strings.STR_OLE_OBJECTS_DESC
 msgid  "Object Linking and Embedding (OLE) is a technology that allows embedding and linking to documents and other objects. The current presentation contains OLE objects."
-msgstr ""
+msgstr "OLE (liên kết và nhúng đối tượng) là một kỹ thuật cho phép nhúng và liên kết đến các tài liệu và đối tượng khác. Trình chiếu hiện thời có chứa đối tượng OLE."
 
 #: source/minimizer/registry/data/org/openoffice/Office/extension/SunPresentationMinimizer.xcu#.SunPresentationMinimizer.Strings.STR_NO_OLE_OBJECTS_DESC
 msgid  "Object Linking and Embedding (OLE) is a technology that allows embedding and linking to documents and other objects. The current presentation contains no OLE objects."
-msgstr ""
+msgstr "OLE (liên kết và nhúng đối tượng) là một kỹ thuật cho phép nhúng và liên kết đến các tài liệu và đối tượng khác. Trình diễn hiện thời không chứa đối tượng OLE."
 
 #: source/minimizer/registry/data/org/openoffice/Office/extension/SunPresentationMinimizer.xcu#.SunPresentationMinimizer.Strings.STR_SLIDES
 msgid  "Slides"
@@ -225,7 +225,7 @@ msgstr "Xoá %SLIDES ảnh chiếu."
 
 #: source/minimizer/registry/data/org/openoffice/Office/extension/SunPresentationMinimizer.xcu#.SunPresentationMinimizer.Strings.STR_OPTIMIZE_IMAGES
 msgid  "Optimize %IMAGES graphics to %QUALITY% JPEG quality at %RESOLUTION DPI."
-msgstr ""
+msgstr "Tối ưu hoá %IMAGES đồ họa thành mức chất lượng JPEG %QUALITY% theo %RESOLUTION DPI."
 
 #: source/minimizer/registry/data/org/openoffice/Office/extension/SunPresentationMinimizer.xcu#.SunPresentationMinimizer.Strings.STR_CREATE_REPLACEMENT
 msgid  "Create replacement graphics for %OLE objects."
@@ -253,7 +253,7 @@ msgstr "phiên chạy mặc định"
 
 #: source/minimizer/registry/data/org/openoffice/Office/extension/SunPresentationMinimizer.xcu#.SunPresentationMinimizer.Strings.STR_MODIFY_WARNING
 msgid  "The optimization will modify the current document. Do you want to continue?"
-msgstr ""
+msgstr "Tiến trình tối ưu hoá sẽ sửa đổi tài liệu hiện tại. Bạn vẫn còn muốn tiếp tục không?"
 
 #: source/minimizer/registry/data/org/openoffice/Office/extension/SunPresentationMinimizer.xcu#.SunPresentationMinimizer.Strings.STR_YES
 msgid  "~Yes"
@@ -265,19 +265,19 @@ msgstr "OK"
 
 #: source/minimizer/registry/data/org/openoffice/Office/extension/SunPresentationMinimizer.xcu#.SunPresentationMinimizer.Strings.STR_INFO_1
 msgid  "The @MINIMIZEREXTENSIONPRODUCTNAME@ has successfully updated the presentation '%TITLE'. The file size has changed from %OLDFILESIZE MB to %NEWFILESIZE MB."
-msgstr ""
+msgstr "%EXTENSIONNAME đã cập nhật trình chiếu « %TITLE » thành công. Kích cỡ tập tin đã đổi từ %OLDFILESIZE MB thành %NEWFILESIZE MB."
 
 #: source/minimizer/registry/data/org/openoffice/Office/extension/SunPresentationMinimizer.xcu#.SunPresentationMinimizer.Strings.STR_INFO_2
 msgid  "The @MINIMIZEREXTENSIONPRODUCTNAME@ has successfully updated the presentation '%TITLE'. The file size has changed from %OLDFILESIZE MB to approximated %NEWFILESIZE MB."
-msgstr ""
+msgstr "%EXTENSIONNAME đã cập nhật trình chiếu « %TITLE » thành công. Kích thước tập tin đã đổi từ %OLDFILESIZE MB thành (ước tính) %NEWFILESIZE MB."
 
 #: source/minimizer/registry/data/org/openoffice/Office/extension/SunPresentationMinimizer.xcu#.SunPresentationMinimizer.Strings.STR_INFO_3
 msgid  "The @MINIMIZEREXTENSIONPRODUCTNAME@ has successfully updated the presentation '%TITLE'. The file size has changed to %NEWFILESIZE MB."
-msgstr ""
+msgstr "%EXTENSIONNAME đã cập nhật trình chiếu « %TITLE » thành công. Kích thước tập tin đã thành %NEWFILESIZE MB."
 
 #: source/minimizer/registry/data/org/openoffice/Office/extension/SunPresentationMinimizer.xcu#.SunPresentationMinimizer.Strings.STR_INFO_4
 msgid  "The @MINIMIZEREXTENSIONPRODUCTNAME@ has successfully updated the presentation '%TITLE'. The file size has changed to approximated %NEWFILESIZE MB."
-msgstr ""
+msgstr "%EXTENSIONNAME đã cập nhật trình chiếu « %TITLE » thành công. Kích thước tập tin đã đổi thành (ước tính) %NEWFILESIZE MB."
 
 #: source/minimizer/registry/data/org/openoffice/Office/extension/SunPresentationMinimizer.xcu#.SunPresentationMinimizer.Strings.STR_DUPLICATING_PRESENTATION
 msgid  "Duplicating presentation..."
@@ -505,7 +505,7 @@ msgstr "Đóng"
 
 #: source/presenter/registry/data/org/openoffice/Office/extension/PresenterScreen.xcu#..PresenterScreen.PresenterScreenSettings.HelpView.HelpStrings.a.Left
 msgid  "Left click, right or down arrow, spacebar, page down, enter, return, 'N'"
-msgstr ""
+msgstr "Nhắp nút trái chuột; bấm phím: mũi tên phải, mũi tên  xuống, phím cách, Page Down, Enter, Return hoặc 'N'"
 
 #: source/presenter/registry/data/org/openoffice/Office/extension/PresenterScreen.xcu#..PresenterScreen.PresenterScreenSettings.HelpView.HelpStrings.a.Right
 msgid  "Next slide, or next effect"
@@ -513,7 +513,7 @@ msgstr "Ảnh chiếu kế tiếp, hay hiệu ứng kế tiếp"
 
 #: source/presenter/registry/data/org/openoffice/Office/extension/PresenterScreen.xcu#..PresenterScreen.PresenterScreenSettings.HelpView.HelpStrings.b.Left
 msgid  "Right click, left or up arrow, page up, backspace, 'P'"
-msgstr ""
+msgstr "Nhắp nút phải chuột; bấm phím: mũi tên trái, mũi tên lên, Page Up, Backspace hoặc 'P'"
 
 #: source/presenter/registry/data/org/openoffice/Office/extension/PresenterScreen.xcu#..PresenterScreen.PresenterScreenSettings.HelpView.HelpStrings.b.Right
 msgid  "Previous slide, or previous effect"

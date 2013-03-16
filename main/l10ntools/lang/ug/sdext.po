@@ -73,7 +73,7 @@ msgstr "كىرىش سوز"
 
 #: source/minimizer/registry/data/org/openoffice/Office/extension/SunPresentationMinimizer.xcu#.SunPresentationMinimizer.Strings.STR_INTRODUCTION_T
 msgid  "The @MINIMIZEREXTENSIONPRODUCTNAME@ is used to reduce the file size of the current presentation. Images will be compressed and data, that is no longer needed, will be removed. At the last step of the wizard you can choose to apply the changes to the current presentation or to create an optimized new version of the presentation."
-msgstr ""
+msgstr "Oracle Presentation Minimizer نۆۋەتتىكى كۆرسەتمە ھۆججىتىنىڭ چوڭلۇقىنى كىچىكلىتىشكە ئىشلىتىلىدۇ. سۈرەت پرىسلىنىپ ئىشلىتىلمەيدىغان سانلىق مەلۇماتلار ئۆچۈرۈلىدۇ. يېتەكچىنىڭ ئەڭ ئاخىرىقى قەدەمدە بۇ ئۆزگەرتىشلەرنى نۆۋەتتىكى كۆرسەتمىگە قوللىنىشنى تاللىسىڭىز بولىدۇ ياكى كۆرسەتمىنىڭ ئەڭ ئەلالاشتۇرۇلغان يېڭى نەشرىدىن بىرنى قۇرسىڭىز بولىدۇ."
 
 #: source/minimizer/registry/data/org/openoffice/Office/extension/SunPresentationMinimizer.xcu#.SunPresentationMinimizer.Strings.STR_CHOSE_SETTINGS
 msgid  "~Choose settings for @MINIMIZEREXTENSIONPRODUCTNAME@"
@@ -153,11 +153,11 @@ msgstr "OpenDocument فورماتى ئاساسىدا بولمىغان OLE ئوب
 
 #: source/minimizer/registry/data/org/openoffice/Office/extension/SunPresentationMinimizer.xcu#.SunPresentationMinimizer.Strings.STR_OLE_OBJECTS_DESC
 msgid  "Object Linking and Embedding (OLE) is a technology that allows embedding and linking to documents and other objects. The current presentation contains OLE objects."
-msgstr ""
+msgstr "ئوبيېكت ئۇلانمىسى ۋە سىڭدۈرمە (OLE) بىر خىل ئوبيېكت سىڭدۈرۈش ۋە پۈتۈككە ئۇلاش ۋە باشقا ئوبيېكتقا ئۇلاش تېخنىكىسىدۇر. نۆۋەتتكى كۆرسەتمە  OLE ئوبيېكتنى ئۆز ئىچىگە ئالىدۇ."
 
 #: source/minimizer/registry/data/org/openoffice/Office/extension/SunPresentationMinimizer.xcu#.SunPresentationMinimizer.Strings.STR_NO_OLE_OBJECTS_DESC
 msgid  "Object Linking and Embedding (OLE) is a technology that allows embedding and linking to documents and other objects. The current presentation contains no OLE objects."
-msgstr ""
+msgstr "ئوبيېكت ئۇلانمىسى ۋە سىڭدۈرمە (OLE) بىر خىل ئوبيېكت سىڭدۈرۈش ۋە پۈتۈككە ئۇلاش ۋە باشقا ئوبيېكتقا ئۇلاش تېخنىكىسىدۇر. نۆۋەتتكى كۆرسەتمە  OLE ئوبيېكتنى ئۆز ئىچىگە ئالمايدۇ."
 
 #: source/minimizer/registry/data/org/openoffice/Office/extension/SunPresentationMinimizer.xcu#.SunPresentationMinimizer.Strings.STR_SLIDES
 msgid  "Slides"
@@ -253,7 +253,7 @@ msgstr "كۆڭۈلدىكى سۆزلىشىش"
 
 #: source/minimizer/registry/data/org/openoffice/Office/extension/SunPresentationMinimizer.xcu#.SunPresentationMinimizer.Strings.STR_MODIFY_WARNING
 msgid  "The optimization will modify the current document. Do you want to continue?"
-msgstr ""
+msgstr "بۇ ئەلالاشتۇرۇش نۆۋەتتىكى پۈتۈكنى ئۆزگەرتىدۇ. داۋاملاشتۇرامسىز؟"
 
 #: source/minimizer/registry/data/org/openoffice/Office/extension/SunPresentationMinimizer.xcu#.SunPresentationMinimizer.Strings.STR_YES
 msgid  "~Yes"
@@ -265,19 +265,19 @@ msgstr "جەزملە"
 
 #: source/minimizer/registry/data/org/openoffice/Office/extension/SunPresentationMinimizer.xcu#.SunPresentationMinimizer.Strings.STR_INFO_1
 msgid  "The @MINIMIZEREXTENSIONPRODUCTNAME@ has successfully updated the presentation '%TITLE'. The file size has changed from %OLDFILESIZE MB to %NEWFILESIZE MB."
-msgstr ""
+msgstr "%EXTENSIONNAME مۇۋەپپەقىيەتلىك ھالدا '%TITLE' كۆرسەتمىنى يېڭىلىدى. بۇ ھۆججەتنىڭ چوڭلۇقى  %OLDFILESIZE MB دىن  %NEWFILESIZE MB غا ئۆزگەردى."
 
 #: source/minimizer/registry/data/org/openoffice/Office/extension/SunPresentationMinimizer.xcu#.SunPresentationMinimizer.Strings.STR_INFO_2
 msgid  "The @MINIMIZEREXTENSIONPRODUCTNAME@ has successfully updated the presentation '%TITLE'. The file size has changed from %OLDFILESIZE MB to approximated %NEWFILESIZE MB."
-msgstr ""
+msgstr "%EXTENSIONNAME مۇۋەپپەقىيەتلىك ھالدا '%TITLE' كۆرسەتمىنى يېڭىلىدى. بۇ ھۆججەتنىڭ چوڭلۇقى  %OLDFILESIZE MB دىن  %NEWFILESIZE MB غا ئۆزگەردى."
 
 #: source/minimizer/registry/data/org/openoffice/Office/extension/SunPresentationMinimizer.xcu#.SunPresentationMinimizer.Strings.STR_INFO_3
 msgid  "The @MINIMIZEREXTENSIONPRODUCTNAME@ has successfully updated the presentation '%TITLE'. The file size has changed to %NEWFILESIZE MB."
-msgstr ""
+msgstr "%EXTENSIONNAME مۇۋەپپەقىيەتلىك ھالدا '%TITLE' كۆرسەتمىنى يېڭىلىدى. بۇ ھۆججەتنىڭ چوڭلۇقى  %NEWFILESIZE MB غا ئۆزگەردى."
 
 #: source/minimizer/registry/data/org/openoffice/Office/extension/SunPresentationMinimizer.xcu#.SunPresentationMinimizer.Strings.STR_INFO_4
 msgid  "The @MINIMIZEREXTENSIONPRODUCTNAME@ has successfully updated the presentation '%TITLE'. The file size has changed to approximated %NEWFILESIZE MB."
-msgstr ""
+msgstr "%EXTENSIONNAME مۇۋەپپەقىيەتلىك ھالدا '%TITLE' كۆرسەتمىنى يېڭىلىدى. بۇ ھۆججەتنىڭ چوڭلۇقى تەخمىنەن  %NEWFILESIZE MB غا ئۆزگەردى."
 
 #: source/minimizer/registry/data/org/openoffice/Office/extension/SunPresentationMinimizer.xcu#.SunPresentationMinimizer.Strings.STR_DUPLICATING_PRESENTATION
 msgid  "Duplicating presentation..."
@@ -329,7 +329,7 @@ msgstr "Oracle رىياسەتچى كونترول سۇپىسى تېز كۇنۇپ�
 
 #: source/presenter/help/en-US/com.sun.PresenterScreen/presenter.xhp#par_id0921201912165656
 msgid  "When running a slide show using the @PRESENTEREXTENSIONPRODUCTNAME@, you can use the following keys:"
-msgstr ""
+msgstr "Oracle رىياسەتچى كونترول سۇپىسىدا تام تەسۋىر كۆرسىتىشتە تۆۋەندىكى تېز كۇنۇپكىلارنى ئىشلىتىشكە بولىدۇ:"
 
 #: source/presenter/help/en-US/com.sun.PresenterScreen/presenter.xhp#par_id0921200901104028
 msgid  "Action"
@@ -345,7 +345,7 @@ msgstr "كېيىنكى تام تەسۋىر ياكى كېيىنكى ئۈنۈم"
 
 #: source/presenter/help/en-US/com.sun.PresenterScreen/presenter.xhp#par_id0921200901104120
 msgid  "Left click, right arrow, down arrow, spacebar, page down, enter, return, 'N'"
-msgstr ""
+msgstr "چاشقىنەك سول كۇنۇپكىسى، ئوڭ ياكى تۆۋەن يا ئوق، بوشلۇق، page down، enter، return، 'N' كۇنۇپكىسى"
 
 #: source/presenter/help/en-US/com.sun.PresenterScreen/presenter.xhp#par_id0921200901104165
 msgid  "Previous slide, or previous effect"
@@ -505,7 +505,7 @@ msgstr "ياپ"
 
 #: source/presenter/registry/data/org/openoffice/Office/extension/PresenterScreen.xcu#..PresenterScreen.PresenterScreenSettings.HelpView.HelpStrings.a.Left
 msgid  "Left click, right or down arrow, spacebar, page down, enter, return, 'N'"
-msgstr ""
+msgstr "چاشقىنەك سول كۇنۇپكىسى، ئوڭ ياكى تۆۋەن ئىسترېلكا، بوشلۇق، page down، enter، return، 'N' كۇنۇپكىسى"
 
 #: source/presenter/registry/data/org/openoffice/Office/extension/PresenterScreen.xcu#..PresenterScreen.PresenterScreenSettings.HelpView.HelpStrings.a.Right
 msgid  "Next slide, or next effect"
@@ -513,7 +513,7 @@ msgstr "كېيىنكى تام تەسۋىر ياكى كېيىنكى ئۈنۈم"
 
 #: source/presenter/registry/data/org/openoffice/Office/extension/PresenterScreen.xcu#..PresenterScreen.PresenterScreenSettings.HelpView.HelpStrings.b.Left
 msgid  "Right click, left or up arrow, page up, backspace, 'P'"
-msgstr ""
+msgstr "چاشقىنەك ئوڭ كۇنۇپكىسى، سول ياكى ئۈستى ئىسترېلكا، page up، backspace، 'P'"
 
 #: source/presenter/registry/data/org/openoffice/Office/extension/PresenterScreen.xcu#..PresenterScreen.PresenterScreenSettings.HelpView.HelpStrings.b.Right
 msgid  "Previous slide, or previous effect"
@@ -689,11 +689,11 @@ msgstr "تام تەسۋىر ئۈزۈندىسىنى كۆرسەت"
 
 #: source/presenter/registry/data/org/openoffice/Office/extension/PresenterScreen.xcu#..PresenterScreen.Presenter.Views.CurrentSlidePreview.Title
 msgid  "Current Slide (%CURRENT_SLIDE_NUMBER% of %SLIDE_COUNT%)"
-msgstr ""
+msgstr "نۆۋەتتىكى تام تەسۋىر (%CURRENT_SLIDE_NUMBER% - بەت، جەمئى %SLIDE_COUNT% بەت)"
 
 #: source/presenter/registry/data/org/openoffice/Office/extension/PresenterScreen.xcu#..PresenterScreen.Presenter.Views.CurrentSlidePreview.AccessibleTitle
 msgid  "Current Slide, %CURRENT_SLIDE_NAME%, %CURRENT_SLIDE_NUMBER% of %SLIDE_COUNT%"
-msgstr ""
+msgstr "نۆۋەتتىكى تام تەسۋىر %CURRENT_SLIDE_NAME% ، %CURRENT_SLIDE_NUMBER%- بەت، جەمئى %SLIDE_COUNT% بەت"
 
 #: source/presenter/registry/data/org/openoffice/Office/extension/PresenterScreen.xcu#..PresenterScreen.Presenter.Views.CurrentSlidePreview.Strings.ClickToExitPresentationText.String
 msgid  "Click to exit presentation..."
@@ -713,7 +713,7 @@ msgstr "ئىزاھ"
 
 #: source/presenter/registry/data/org/openoffice/Office/extension/PresenterScreen.xcu#..PresenterScreen.Presenter.Views.SlideSorter.AccessibleTitle
 msgid  "Slide Overview, %CURRENT_SLIDE_NAME%, %CURRENT_SLIDE_NUMBER% of %SLIDE_COUNT%"
-msgstr ""
+msgstr "تام تەسۋىر ئۈزۈندىسى %CURRENT_SLIDE_NUMBER% ، %CURRENT_SLIDE_NAME%- بەت، جەمئى %SLIDE_COUNT% بەت"
 
 #: source/presenter/registry/data/org/openoffice/Office/extension/PresenterScreen.xcu#..PresenterScreen.Presenter.Views.HelpView.Title
 msgid  "Help"

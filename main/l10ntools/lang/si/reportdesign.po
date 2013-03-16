@@ -65,7 +65,7 @@ msgstr "'#1' නාමය දැනටමත් ඇත එමනිසා යළ
 
 #: source/core/resource/strings.src#RID_STR_ERROR_WRONG_ARGUMENT.String.Text
 msgid  "You tried to set an illegal argument. Please have a look at '#1' for valid arguments."
-msgstr ""
+msgstr "ඔබ අයුතු විතර්කයක් සකස් කිරීමට උත්සහ කරයි. කරුණාකර වලංගු විතර්කයන් සඳහා '#1' බලන්න"
 
 #: source/core/resource/strings.src#RID_STR_ARGUMENT_IS_NULL.String.Text
 msgid  "The element is invalid."
@@ -140,12 +140,20 @@ msgid  "Group Header"
 msgstr "සමූහ ශීර්ෂකය"
 
 #: source/ui/dlg/GroupsSorting.src#RID_GROUPS_SORTING.LST_HEADERLST.Default.StringList.item
+msgid  "Present"
+msgstr "පවත්නා"
+
+#: source/ui/dlg/GroupsSorting.src#RID_GROUPS_SORTING.LST_HEADERLST.Default.StringList.item
 msgid  "Not present"
 msgstr "නොපවත්නා"
 
 #: source/ui/dlg/GroupsSorting.src#RID_GROUPS_SORTING.FT_FOOTER.FixedText.Text
 msgid  "Group Footer"
 msgstr "සමූහ පාදකය"
+
+#: source/ui/dlg/GroupsSorting.src#RID_GROUPS_SORTING.LST_FOOTERLST.Default.StringList.item
+msgid  "Present"
+msgstr "පවත්නා"
 
 #: source/ui/dlg/GroupsSorting.src#RID_GROUPS_SORTING.LST_FOOTERLST.Default.StringList.item
 msgid  "Not present"
@@ -253,15 +261,7 @@ msgstr "එක්පිටුවක සමුහ එකට තබන්නද?"
 
 #: source/ui/dlg/GroupsSorting.src#STR_RPT_HELP_SORT.String.Text
 msgid  "Select ascending or descending sort order. Ascending means from A to Z or 0 to 9"
-msgstr ""
-
-#: source/ui/dlg/GroupsSorting.src#RID_GROUPS_SORTING.LST_HEADERLST.Default.StringList.item
-msgid  "Present"
-msgstr "පවත්නා"
-
-#: source/ui/dlg/GroupsSorting.src#RID_GROUPS_SORTING.LST_FOOTERLST.Default.StringList.item
-msgid  "Present"
-msgstr "පවත්නා"
+msgstr "ආරෝහණ හෝ අවරෝහණ සුබෙදීම තෝරා ගන්න. ආරෝහණය යනු A සිට Z හෝ 0 සිට 9 දක්වා"
 
 #: source/ui/dlg/PageNumber.src#RID_PAGENUMBERS.ModalDialog.Text
 msgid  "Page Numbers"
@@ -300,6 +300,14 @@ msgid  "Alignment:"
 msgstr "පෙළගැස්ම"
 
 #: source/ui/dlg/PageNumber.src#RID_PAGENUMBERS.LST_ALIGNMENT.Default.StringList.item
+msgid  "Left"
+msgstr "වම"
+
+#: source/ui/dlg/PageNumber.src#RID_PAGENUMBERS.LST_ALIGNMENT.Default.StringList.item
+msgid  "Center"
+msgstr "මැද"
+
+#: source/ui/dlg/PageNumber.src#RID_PAGENUMBERS.LST_ALIGNMENT.Default.StringList.item
 msgid  "Right"
 msgstr "දකුණ"
 
@@ -312,20 +320,12 @@ msgid  "~Help"
 msgstr "උදව් (~H)"
 
 #: source/ui/dlg/PageNumber.src#STR_RPT_PN_PAGE.String.Text
-msgid  ""Page " & #PAGENUMBER#"
-msgstr ""
+msgid  "\"Page \" & #PAGENUMBER#"
+msgstr "\"පිටුව \" & #PAGENUMBER#"
 
 #: source/ui/dlg/PageNumber.src#STR_RPT_PN_PAGE_OF.String.Text
-msgid  " & " of " & #PAGECOUNT#"
-msgstr ""
-
-#: source/ui/dlg/PageNumber.src#RID_PAGENUMBERS.LST_ALIGNMENT.Default.StringList.item
-msgid  "Left"
-msgstr "වම"
-
-#: source/ui/dlg/PageNumber.src#RID_PAGENUMBERS.LST_ALIGNMENT.Default.StringList.item
-msgid  "Center"
-msgstr "මැද"
+msgid  " & \" of \" & #PAGECOUNT#"
+msgstr " & \" of \" & #PAGECOUNT#"
 
 #: source/ui/dlg/dlgpage.src#RID_PAGEDIALOG_PAGE.TabDialog.Text
 msgid  "Page Setup"
@@ -405,7 +405,7 @@ msgstr "රේඛා"
 
 #: source/ui/dlg/dlgpage.src#RID_PAGEDIALOG_LINE.1.RID_SVXPAGE_LINE.PageItem.Text
 msgid  "Line"
-msgstr "රේඛාව"
+msgstr "රේඛා"
 
 #: source/ui/dlg/dlgpage.src#RID_PAGEDIALOG_LINE.1.RID_SVXPAGE_LINE_DEF.PageItem.Text
 msgid  "Line Styles"
@@ -454,6 +454,10 @@ msgstr "නව ශ්‍රිතය"
 #: source/ui/dlg/Navigator.src#RID_MENU_NAVIGATOR.SID_SHOW_PROPERTYBROWSER.MenuItem.Text
 msgid  "Properties..."
 msgstr "ගුණාංග..."
+
+#: source/ui/dlg/CondFormat.src#WIN_CONDITION.LB_COND_TYPE.Default.StringList.item
+msgid  "Field Value Is"
+msgstr "පිරවූ අගය"
 
 #: source/ui/dlg/CondFormat.src#WIN_CONDITION.LB_COND_TYPE.Default.StringList.item
 msgid  "Expression Is"
@@ -550,10 +554,6 @@ msgstr "උදව්"
 #: source/ui/dlg/CondFormat.src#ADDFIELD_HELP_FIELD.FixedText.Text
 msgid  "Highlight the fields to insert into the selected section of the template, then click Insert or press Enter."
 msgstr ""
-
-#: source/ui/dlg/CondFormat.src#WIN_CONDITION.LB_COND_TYPE.Default.StringList.item
-msgid  "Field Value Is"
-msgstr "පිරවූ අගය"
 
 #: source/ui/dlg/DateTime.src#RID_DATETIME_DLG.ModalDialog.Text
 msgid  "Date and Time"
@@ -833,7 +833,7 @@ msgstr "දාස ක්ෂේත්‍ර අමුණන්න"
 
 #: source/ui/inspection/inspection.src#RID_STR_EXPLANATION.String.Text
 msgid  "Charts can be used to display detailed data about the current record of the report. To do this, you can specify which columns in the chart match which columns in the report."
-msgstr ""
+msgstr "වාර්තාවේ වර්තමාන සටහන විස්තර දත්ත සහිතව ප්‍රදර්ශනයට චාට් භාවිතා කල හැක. මෙය කිරීමට, ඔබට වාර්තාවේ තීරු චාට් එකෙහි කුමන තීරු ලෙස අඩංගු විය යුතුද සඳහන් කල හැක."
 
 #: source/ui/inspection/inspection.src#RID_STR_DETAILLABEL.String.Text
 msgid  "Chart"
@@ -1241,15 +1241,11 @@ msgstr "වාර්තාව අන්තර්ගතයට බැඳී නැ
 
 #: source/ui/report/report.src#RID_ERR_NO_OBJECTS.String.Text
 msgid  "The report can not be executed unless at least one object has been inserted."
-msgstr ""
+msgstr "අවම වශයෙන් එක් වස්තුවක් වත් ඇතුලත් නොකර මෙම වාර්තාව ක්‍රියාත්මක කල නොහැක."
 
 #: source/ui/report/report.src#RID_STR_UNDO_SHRINK.String.Text
 msgid  "Shrink Section"
 msgstr "තේරීම හකුලන්න"
-
-#: source/ui/report/report.src#RID_STR_INSERT.String.Text
-msgid  "Insert"
-msgstr "ඇතුළු කරන්න"
 
 #: source/ui/report/report.src#RID_STR_DETAIL.String.Text
 msgid  "Detail"
@@ -1270,3 +1266,7 @@ msgstr "වාර්තා ශීර්ෂකය"
 #: source/ui/report/report.src#RID_STR_REPORT_FOOTER.String.Text
 msgid  "Report Footer"
 msgstr "වාර්තා පාදකය"
+
+#: source/ui/report/report.src#RID_STR_INSERT.String.Text
+msgid  "Insert"
+msgstr "ඇතුළු කරන්න"

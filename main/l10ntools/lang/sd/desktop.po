@@ -32,8 +32,8 @@ msgstr ""
 
 
 #: source/app/desktop.src#STR_RECOVER_QUERY.String.Text
-msgid  "Should the file "$1" be restored?"
-msgstr ""
+msgid  "Should the file \"$1\" be restored?"
+msgstr "ڇا \"$1\" فائل نئين سِرِ قائم ڪئي وڃي؟ "
 
 #: source/app/desktop.src#STR_RECOVER_TITLE.String.Text
 msgid  "File Recovery"
@@ -41,15 +41,15 @@ msgstr "فائل وري حاصل ڪرڻ "
 
 #: source/app/desktop.src#STR_RECOVER_PREPARED.WarningBox.Message
 msgid  "An unrecoverable error has occurred.\n\nAll modified files have been saved and can\nprobably be recovered at program restart."
-msgstr ""
+msgstr "نہ سڌارڻ جوڳي چوڪ ٿي ويئي آهي۔ \n \n سڀ ڦيرڦار ڪيل فائلون سانڍيون وييون آهن۔ ۽ \n ممڪن آهي تہ پروگرام وري شروع ڪرڻ وقت ملي وڃن۔ "
 
 #: source/app/desktop.src#STR_BOOTSTRAP_ERR_CANNOT_START.String.Text
 msgid  "The application cannot be started. "
 msgstr "ڪارروائي نٿي شروع ڪري سگهجي۔ "
 
 #: source/app/desktop.src#STR_BOOTSTRAP_ERR_DIR_MISSING.String.Text
-msgid  "The configuration directory "$1" could not be found."
-msgstr ""
+msgid  "The configuration directory \"$1\" could not be found."
+msgstr "\"$1\" رچنا جو هدايت نامي جو پتو نہ لڳي سگهيو۔ "
 
 #: source/app/desktop.src#STR_BOOTSTRAP_ERR_PATH_INVALID.String.Text
 msgid  "The installation path is invalid."
@@ -64,16 +64,16 @@ msgid  "An internal error occurred."
 msgstr "اندروني چوڪ ٿي ويئي "
 
 #: source/app/desktop.src#STR_BOOTSTRAP_ERR_FILE_CORRUPT.String.Text
-msgid  "The configuration file "$1" is corrupt."
-msgstr ""
+msgid  "The configuration file \"$1\" is corrupt."
+msgstr "\"$1\" رچنا جي فائل عيبدار آهي۔ "
 
 #: source/app/desktop.src#STR_BOOTSTRAP_ERR_FILE_MISSING.String.Text
-msgid  "The configuration file "$1" was not found."
-msgstr ""
+msgid  "The configuration file \"$1\" was not found."
+msgstr "\"$1\" رچنا جي فائل جو پتو نہ لڳو "
 
 #: source/app/desktop.src#STR_BOOTSTRAP_ERR_NO_SUPPORT.String.Text
-msgid  "The configuration file "$1" does not support the current version."
-msgstr ""
+msgid  "The configuration file \"$1\" does not support the current version."
+msgstr " \"$1\" رچنا جي فائل مؤجودهہ سنسڪرڻ جو سمرٿن نٿي ڪري۔ "
 
 #: source/app/desktop.src#STR_BOOTSTRAP_ERR_LANGUAGE_MISSING.String.Text
 msgid  "The user interface language cannot be determined."
@@ -93,11 +93,11 @@ msgstr ""
 
 #: source/app/desktop.src#STR_ASK_START_SETUP_MANUALLY.String.Text
 msgid  "Start the setup application to repair the installation from the CD or the folder containing the installation packages."
-msgstr ""
+msgstr "اِسٿاپن پئڪيجن جي مؤجود سي ڊيءَ يا فولڊر مان اِسٿاپن ۾ سڌارو ڪرڻ جي ڪارروائي سيٽ اَپ شروع ڪريو "
 
 #: source/app/desktop.src#STR_CONFIG_ERR_SETTINGS_INCOMPLETE.String.Text
 msgid  "The startup settings for accessing the central configuration are incomplete. "
-msgstr ""
+msgstr "مرڪزي رچنا جو لنگهہ قائل ڪرڻ لاءِ اِسٽارٽ اَپ جو طئہ ڪيل ترتيبون اَڻپوريون آهن۔ "
 
 #: source/app/desktop.src#STR_CONFIG_ERR_CANNOT_CONNECT.String.Text
 msgid  "A connection to the central configuration could not be established. "
@@ -105,7 +105,7 @@ msgstr "مرڪزي رچنا سان سنٻنڌ قائم نہ ٿي سگهيو۔  "
 
 #: source/app/desktop.src#STR_CONFIG_ERR_RIGHTS_MISSING.String.Text
 msgid  "You cannot access the central configuration because of missing access rights. "
-msgstr ""
+msgstr "لنگهہ قائم ڪرڻ جي حقن جي غيرمؤجودگيءَ سبب توهين مرڪزي رچنا جو لنگهہ قائم نٿا ڪري سگهو۔ "
 
 #: source/app/desktop.src#STR_CONFIG_ERR_ACCESS_GENERAL.String.Text
 msgid  "A general error occurred while accessing your central configuration. "
@@ -113,11 +113,11 @@ msgstr "توهانجي مرڪزي رچنا جو لنگهہ قائم ڪرڻ وق�
 
 #: source/app/desktop.src#STR_CONFIG_ERR_NO_WRITE_ACCESS.String.Text
 msgid  "The changes to your personal settings cannot be stored centrally because of missing access rights. "
-msgstr ""
+msgstr "لنگهہ قائم ڪرڻ جي حقن جي غيرمؤجودگيءَ سبب توهانجي شخصي طئہ ڪيل ترتيبن ۾ اهي تبديليون قائم نہ ٿيون ڪري سگهجن۔ "
 
 #: source/app/desktop.src#STR_BOOTSTRAP_ERR_CFG_DATAACCESS.String.Text
 msgid  "%PRODUCTNAME cannot be started due to an error in accessing the %PRODUCTNAME configuration data.\n\nPlease contact your system administrator."
-msgstr ""
+msgstr "لنگهہ قائم ڪرڻ ۾ چوڪ سبب %PRODUCTNAME شروع نٿو ڪري سگهجي۔ \n\n مهرباني ڪري پنهنجي سرشتي جي منتظم سان سمرڪ ڪريو۔ "
 
 #: source/app/desktop.src#STR_INTERNAL_ERRMSG.String.Text
 msgid  "The following internal error has occurred: "
@@ -125,7 +125,7 @@ msgstr "هينين چوڪ ٿي ويئي  آهي۔ "
 
 #: source/app/desktop.src#QBX_USERDATALOCKED.QueryBox.Message
 msgid  "Either another instance of %PRODUCTNAME is accessing your personal settings or your personal settings are locked.\nSimultaneous access can lead to inconsistencies in your personal settings. Before continuing, you should make sure user '$u' closes %PRODUCTNAME on host '$h'.\n\nDo you really want to continue?"
-msgstr ""
+msgstr "يا تہ %PRODUCTNAME جو ٻيو ڪو واقعو توهانجي شخصي طئہ ڪيل ترتيبن ۾ لنگهہ قائم ڪري رهيو آهي يا وري توهانجي شخصي طئہ ڪيل ترتيبن کي ڪلف ڏنو ويو آهي۔ \n ساڳئي وقت گڏو گڏ لنگهہ قائم ڪرڻ سان توهانجي شخصي طئه ڪيل ترتيبن ۾ ناموافقت پيدا ٿي سگهي ٿي۔ جاري رکڻ کان اڳ توهين ان ڳالهہ جي پڪ ڪريو تہ '$h' ميزبان تي %PRODUCTNAME بند ڪري ٿو۔ \n\n ڇا سچ پچ توهين جاري رکڻ چاهيو ٿا؟ "
 
 #: source/app/desktop.src#STR_TITLE_USERDATALOCKED.String.Text
 msgid  "%PRODUCTNAME %PRODUCTVERSION"
@@ -149,11 +149,11 @@ msgstr "تہ، راهہ جو انتظام ڪندڙ مؤجود ناهي۔ \n"
 
 #: source/app/desktop.src#STR_BOOSTRAP_ERR_NOTENOUGHDISKSPACE.String.Text
 msgid  "%PRODUCTNAME user installation could not be completed due to insufficient free disk space. Please free more disc space at the following location and restart %PRODUCTNAME:\n\n"
-msgstr ""
+msgstr "ناڪافي خالي ڊسڪ جي جاءِ سبب اِستعمال ڪندڙ جو اِسٿاپن پورو نہ ٿي سگهيو۔ هيٺ ڏنل ٺڪاڻي تي مهرباني ڪري ڊسڪ جي وڌيڪ جاءِ خالي ڪريو ۽ %PRODUCTNAME وري شروع ڪريو۔"
 
 #: source/app/desktop.src#STR_BOOSTRAP_ERR_NOACCESSRIGHTS.String.Text
 msgid  "%PRODUCTNAME user installation could not be processed due to missing access rights. Please make sure that you have sufficient access rights for the following location and restart %PRODUCTNAME:\n\n"
-msgstr ""
+msgstr "لنگهہ قائم ڪرڻ جي حقن جي غيرمؤجودگيءَ سبب %PRODUCTNAME اِستعمال ڪندڙ اِسٿاپت ڪرڻ جي پرڪريا پوري نہ ٿي سگهي۔ مهرباني ڪري اِن ڳالهہ جي پڪ ڪريو تہ توهان وٽ هن ٺڪاڻي تي لنگهہ قائم ڪرڻ جا پورا حق مؤجود آهن۔ ۽ %PRODUCTNAME وري شروع ڪريو: \n\n"
 
 #: source/deployment/gui/dp_gui_versionboxes.src#RID_WARNINGBOX_VERSION_LESS.WarningBox.Message
 msgid  "You are about to install version $NEW of the extension \'$NAME\'.\nThe newer version $DEPLOYED is already installed.\nClick \'OK\' to replace the installed extension.\nClick \'Cancel\' to stop the installation."
@@ -661,7 +661,7 @@ msgstr "لائبرريءَ جو نالو مقرر نہ ٿي سگهيو هو۔"
 
 #: source/deployment/registry/script/dp_script.src#RID_STR_LIBNAME_ALREADY_EXISTS.String.Text
 msgid  "This library name already exists. Please choose a different name."
-msgstr ""
+msgstr "لائبرريءَ جو نالو اَڳہ ۾ ئي مؤجود آهي۔ مهرباني ڪري ٻيو ڪو نالو چونڊيو۔ ؟؟؟"
 
 #: source/deployment/registry/sfwk/dp_sfwk.src#RID_STR_SFWK_LIB.String.Text
 msgid  "%MACROLANG Library"
@@ -672,15 +672,15 @@ msgid  "Extension Software License Agreement of $NAME:"
 msgstr ""
 
 #: source/deployment/unopkg/unopkg.src#RID_STR_UNOPKG_ACCEPT_LIC_2.String.Text
-msgid  "Read the complete License Agreement displayed above. Accept the License Agreement by typing "yes" on the console then press the Return key. Type "no" to decline and to abort the extension setup."
+msgid  "Read the complete License Agreement displayed above. Accept the License Agreement by typing \"yes\" on the console then press the Return key. Type \"no\" to decline and to abort the extension setup."
 msgstr ""
 
 #: source/deployment/unopkg/unopkg.src#RID_STR_UNOPKG_ACCEPT_LIC_3.String.Text
-msgid  "[Enter "yes" or "no"]:"
+msgid  "[Enter \"yes\" or \"no\"]:"
 msgstr ""
 
 #: source/deployment/unopkg/unopkg.src#RID_STR_UNOPKG_ACCEPT_LIC_4.String.Text
-msgid  "Your input was not correct. Please enter "yes" or "no":"
+msgid  "Your input was not correct. Please enter \"yes\" or \"no\":"
 msgstr ""
 
 #: source/deployment/unopkg/unopkg.src#RID_STR_UNOPKG_ACCEPT_LIC_YES.String.Text
@@ -737,7 +737,7 @@ msgstr "رجسريشن"
 
 #: source/migration/wizard.src#STR_WELCOME_MIGRATION.String.Text
 msgid  "This wizard will guide you through the license agreement, the transfer of user data from %OLD_VERSION and the registration of %PRODUCTNAME.\n\nClick 'Next' to continue."
-msgstr ""
+msgstr "هي وزارڊ ليسن جي قرارنامي مان اِستعمال ڪندڙ جي سامگريءَ جي تبديليءَ ءٔ جي رجسٽريشن ذريعي توهان جي رهنمائي ڪندڙ جاري رکڻ لاءِ ايندڙ تي ڪلڪ ڪريو۔"
 
 #: source/migration/wizard.src#STR_WELCOME_WITHOUT_LICENSE.String.Text
 msgid  "This wizard will guide you through the registration of %PRODUCTNAME.\n\nClick 'Next' to continue."
@@ -753,7 +753,7 @@ msgstr ""
 
 #: source/migration/wizard.src#ERRBOX_REG_NOSYSBROWSER.ErrorBox.Message
 msgid  "An error occurred in starting the web browser.\nPlease check the %PRODUCTNAME and web browser settings."
-msgstr ""
+msgstr "ويب برائوزر شروع ڪرڻ ۾ چوڪ ٿي ويئي۔ \n مهرباني ڪري %PRODUCTNAME ۽ ويب برائوزر جي طئہ ڪيل ترتيبن جي جاچ ڪريو۔"
 
 #: source/migration/wizard.src#QB_ASK_DECLINE.QueryBox.Message
 msgid  "Do you really want to decline?"
@@ -765,7 +765,7 @@ msgstr "۾ توهان جو سواگت آهي %PRODUCTNAME %"
 
 #: source/migration/wizard.src#TP_WELCOME.FT_WELCOME_BODY.FixedText.Text
 msgid  "This wizard will guide you through the license agreement and the registration of %PRODUCTNAME.\n\nClick 'Next' to continue."
-msgstr ""
+msgstr "هي ورازڊ ليسن جي قرارنامي ۽ %PRODUCTNAME.\n\nجي رجسٽريشن ذريعي توهان جي رهنمائي ڪن جاري رکڻ لاءِ اڳتي ڪلڪ ڪريو."
 
 #: source/migration/wizard.src#TP_LICENSE.FT_LICENSE_HEADER.FixedText.Text
 msgid  "Please follow these steps to accept the license"
@@ -777,7 +777,7 @@ msgstr "1."
 
 #: source/migration/wizard.src#TP_LICENSE.FT_LICENSE_BODY_1_TXT.FixedText.Text
 msgid  "View the complete License Agreement. Please use the scrollbar or the '%PAGEDOWN' button in this dialog to view the entire license text."
-msgstr ""
+msgstr "سڄو ليسن جو قرارنامو پيش ڪريو۔ مهرباني ڪري اِسڪرول پٽيءَ جو اِستعمال ڪريو يا هن گفتي ۾ ليسن جو سمورو متن ڏيکارڻ لاءِ '%PAGEDOWN'بٽڻ جو اِستعمال ڪريو۔"
 
 #: source/migration/wizard.src#TP_LICENSE.FT_LICENSE_BODY_2.FixedText.Text
 msgid  "2."
@@ -805,7 +805,7 @@ msgstr "شخصي سامگري ڦيرايو"
 
 #: source/migration/wizard.src#TP_MIGRATION.FT_MIGRATION_BODY.FixedText.Text
 msgid  "Most personal data from %OLDPRODUCT installation can be reused in %PRODUCTNAME %PRODUCTVERSION.\n\nIf you do not want to reuse any settings in %PRODUCTNAME %PRODUCTVERSION, unmark the check box."
-msgstr ""
+msgstr "اِسٿاپن مان لڳ ڀث سموري شخصي سامگري ۾ وري اِستعمال ڪري سگهجي ٿي۔ اگر توهين کي طئہ کيل ترتيبون ۾ اِستعمال نٿا ڪرڻ چاهيو تہ جاچ باڪس اِن مارڪ ڪريو۔"
 
 #: source/migration/wizard.src#TP_MIGRATION.CB_MIGRATION.CheckBox.Text
 msgid  "Transfer personal data"
@@ -829,7 +829,7 @@ msgstr "توهين پنهنجو شروعاتي ۽ پورو نالو ڄاڻايو
 
 #: source/migration/wizard.src#TP_USER.FT_USER_BODY.FixedText.Text
 msgid  "The user name will be used in the document properties, templates and when you record changes made to documents."
-msgstr ""
+msgstr "دستاويز جي خاصيتن، خاڪن ۽ توهان دواران رڪارڊ ۾ تبديل ڪرڻ وقت اِستعمال ڪندڙ جو نالو اِستعمال ڪيو ويندو۔"
 
 #: source/migration/wizard.src#TP_USER.FT_USER_FIRST.FixedText.Text
 msgid  "~First name"
@@ -853,7 +853,7 @@ msgstr "رجسٽريشن %PRODUCTNAME "
 
 #: source/migration/wizard.src#TP_REGISTRATION.FT_REGISTRATION_BODY.FixedText.Text
 msgid  "You now have the opportunity to register as a %PRODUCTNAME user. Registration is voluntary and is without obligation.\n\nIf you register, we can inform you about new developments concerning this product."
-msgstr ""
+msgstr "هاڻي توهان کي اِستعمال ڪندڙ جي روپ ۾ رجسٽر ڪرائڻ جو موقعو مليو آهي۔ رجسٽريشن پنہنجي مرضيءَ تي ۽ بنا  ڪنهن ٻنڌن جي آهي۔ اَگر توهين رجسٽريشن ڪرائيندا تہ اسين هڪ پروجيڪٽ جي وڪاس بابت نئين ڄاڻ توهان ڏانهن موڪلي سگهنداسين۔\nIf you register, we can inform you about new developments concerning this product."
 
 #: source/migration/wizard.src#TP_REGISTRATION.RB_REGISTRATION_NOW.RadioButton.Text
 msgid  "I want to register ~now"
@@ -869,7 +869,7 @@ msgstr " (~r) مان رجسٽر نٿو ڪرڻ چاهيان"
 
 #: source/migration/wizard.src#TP_REGISTRATION.FT_REGISTRATION_END.FixedText.Text
 msgid  "We hope you enjoy working with %PRODUCTNAME.\n\nTo exit the wizard, click 'Finish'."
-msgstr ""
+msgstr "اُميد تہ توهان سان ڪم ڪرڻ جو لظف ماڻيو هوندو۔ وزارڊ کان ٻاهر نڪرڻ لاءِ  ختم تي ڪلڪ ڪريو۔"
 
 #: win32/source/rebase/rebasegui.ulf#%APP_TITLE%
 msgid  "Installation Status"
@@ -886,6 +886,10 @@ msgstr ""
 #: win32/source/rebase/rebasegui.ulf#%MSG_NO_INSTALLATION_FOUND%
 msgid  "Cannot find Office installation."
 msgstr ""
+
+#: win32/source/setup/setup.ulf#%APP_TITLE%
+msgid  "Setup"
+msgstr " سيٽ اپ"
 
 #: win32/source/setup/setup.ulf#%APP_PROD_TITLE%
 msgid  "The %PRODUCTNAME Setup"
@@ -905,7 +909,7 @@ msgstr "سيٽ اپ رد ڪيو ويو هو"
 
 #: win32/source/setup/setup.ulf#%REQUIRES_ADMIN_PRIV%
 msgid  "Administrator privileges are required for upgrading the Windows Installer."
-msgstr ""
+msgstr " ونڊوز اسٿاپن ڪندڙ جي اُنتيءَ لاءِ منتظر خاص حقن جي ضرورت آهي"
 
 #: win32/source/setup/setup.ulf#%FILE_NOT_FOUND%
 msgid  "Setup was unable to find the file '%s'."
@@ -925,7 +929,7 @@ msgstr ""
 
 #: win32/source/setup/setup.ulf#%USAGE%
 msgid  "Usage:\n   /? :  Shows this dialog.\n   /a :  Performs an administrative installation.\n   /j[u|m] :  Performs an advertising installation.\n   /q[n] : Do not show any user interface (silent mode).\n"
-msgstr ""
+msgstr ":\n اِستعمال   /? :  هي گفتو ڏيکاري ٿو۔ g.\nاِنتظامي اِسٿاپن جو ڪم ڪري ٿواِشتهار ڪڍڻ جو اِسٿاپن ڪري ٿو۔ڪوبہ اِستعمال ڪندڙ جو اِنٽر فيس نٿو ڏيکاري۔سانت ڍنگ"
 
 #: win32/source/setup/setup.ulf#%ALREADY_RUNNING%
 msgid  "There is already a setup process running."
@@ -1046,7 +1050,3 @@ msgstr "(چيني (سؤکي ڪيل"
 #: win32/source/setup/setup.ulf#%LANGUAGE_PT_PT%
 msgid  "Portuguese (Portugal)"
 msgstr "(پرتگيز  (پرتگال"
-
-#: win32/source/setup/setup.ulf#%APP_TITLE%
-msgid  "Setup"
-msgstr " سيٽ اپ"

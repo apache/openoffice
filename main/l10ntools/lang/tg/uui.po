@@ -137,7 +137,7 @@ msgstr "Таъинот аллакай мавҷуд аст."
 
 #: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_IO_MODULESIZEEXCEEDED & ERRCODE_RES_MASK).String.Text
 msgid  "You are about to save/export a password protected basic library containing module(s) \n$(ARG1)\nwhich are too large to store in binary format. If you wish users that don't have access to the library password to be able to run macros in those module(s) you must split those modules into a number of smaller modules. Do you wish to continue to save/export this library?"
-msgstr ""
+msgstr "Шумо мехоҳед китобхонаи бо парол ҳифзшудаи basic-ро сабт/экспорт кунед, ки модул(ҳо)и \n$(ARG1) дорад,\nки барои сабт кардан дар формати бинарӣ хеле калон мебошанд. Агар хоҳед, ки истифодабарҳо ба китобхона даст надошта бошанд вале баъзе модулҳоро истифода карда тавонанд, онгоҳ онро ба модулҳои ҷудогона тақсим кунед. Сабткунӣ/экспорти ин китобхона давом дода шавад?"
 
 #: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_IO_BADCRC & ERRCODE_RES_MASK).String.Text
 msgid  "The data from $(ARG1) has an incorrect checksum."
@@ -173,7 +173,7 @@ msgstr "Таҷҳизоти $(ARG1) тайёр нест"
 
 #: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_IO_NOTSAMEDEVICE & ERRCODE_RES_MASK).String.Text
 msgid  "Action impossible: $(ARG1) and $(ARG2) are different devices (drives)."
-msgstr ""
+msgstr "Оператсияи мазкур иҷронашаванда аст: $(ARG1) ва $(ARG2) таҷҳизоти гуногун мебошанд"
 
 #: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_IO_GENERAL & ERRCODE_RES_MASK).String.Text
 msgid  "General input/output error while accessing $(ARG1)."
@@ -201,7 +201,7 @@ msgstr "Оператсия ба $(ARG1) бо параметри ғалати о�
 
 #: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_IO_ISWILDCARD & ERRCODE_RES_MASK).String.Text
 msgid  "The operation cannot be performed because $(ARG1) contains wildcards."
-msgstr ""
+msgstr "Иҷроиши оператсию аз сабаби дар $(ARG1) будани рамзои ғалати имкон надорад"
 
 #: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_IO_LOCKVIOLATION & ERRCODE_RES_MASK).String.Text
 msgid  "Error during shared access to $(ARG1)."
@@ -241,15 +241,15 @@ msgstr "Таҷҳизоти $(ARG1) ҷои холӣ надорад"
 
 #: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_IO_TOOMANYOPENFILES & ERRCODE_RES_MASK).String.Text
 msgid  "The operation on $(ARG1) cannot be performed because too many files are already open."
-msgstr ""
+msgstr "Иҷроиши оператсия дар $(ARG1) имкон надоард, зеро ки дафтарои зиёде кушодаанд"
 
 #: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_IO_OUTOFMEMORY & ERRCODE_RES_MASK).String.Text
 msgid  "The operation on $(ARG1) cannot be performed because there is no more memory available."
-msgstr ""
+msgstr "Хотира хеле маҳдуд аст барои иҷроиши оператсия дар $(ARG1)"
 
 #: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_IO_PENDING & ERRCODE_RES_MASK).String.Text
 msgid  "The operation on $(ARG1) cannot continue because more data is pending."
-msgstr ""
+msgstr "Давомдиҳии оператсия дар $(ARG1) имкон надорад, зеро ки далелҳои дигарро интизор аст"
 
 #: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_IO_RECURSIVE & ERRCODE_RES_MASK).String.Text
 msgid  "$(ARG1) cannot be copied into itself."
@@ -289,11 +289,11 @@ msgstr "Версияи васлкардашудаи Java дастгири нам
 
 #: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_WRONGJAVA_MIN & ERRCODE_RES_MASK).String.Text
 msgid  "The installed Java version is not supported, at least version $(ARG1) is required."
-msgstr ""
+msgstr "Версияи васлкардашудаи Java дастгири намешавад. Версияи ҷадидтар аз $(ARG1) сар карда лозим аст."
 
 #: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_WRONGJAVA_VERSION_MIN & ERRCODE_RES_MASK).String.Text
 msgid  "The installed Java version $(ARG1) is not supported, at least version $(ARG2) is required."
-msgstr ""
+msgstr "Версияи $(ARG1) васлкардашудаи Java дастгири намешавад. Версияи ҷадидтар аз $(ARG2) лозим аст."
 
 #: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_BADPARTNERSHIP & ERRCODE_RES_MASK).String.Text
 msgid  "The data associated with the partnership is corrupted."
@@ -325,31 +325,31 @@ msgstr "Объект дар равоқӣ $(ARG1) сохта намешавад"
 
 #: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_IO_UNSUPPORTEDOVERWRITE & ERRCODE_RES_MASK).String.Text
 msgid  "%PRODUCTNAME cannot keep files from being overwritten when this transmission protocol is used. Do you want to continue anyway?"
-msgstr ""
+msgstr "%PRODUCTNAME дафтарҳоро аз хавфи рӯйнависшавӣ эмин дошта наметавонад агар протоколи нақлкунӣ истифода шавад. Ба ин нигоҳ накарда давом диҳам"
 
 #: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_IO_BROKENPACKAGE & ERRCODE_RES_MASK).String.Text
 msgid  "The file '$(ARG1)' is corrupt and therefore cannot be opened. %PRODUCTNAME can try to repair the file.\n\nThe corruption could be the result of document manipulation or of structural document damage due to data transmission.\n\nWe recommend that you do not trust the content of the repaired document.\nExecution of macros is disabled for this document.\n\nShould %PRODUCTNAME repair the file?\n"
-msgstr ""
+msgstr "Дафтари «$(ARG1)» маҷрӯҳ аст ва кушода намешавад. Ба %PRODUCTNAME иҷозат дода шавад барои барқароркунии дафтар?"
 
 #: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_IO_BROKENPACKAGE_CANTREPAIR & ERRCODE_RES_MASK).String.Text
 msgid  "The file '$(ARG1)' could not be repaired and therefore cannot be opened."
-msgstr ""
+msgstr "Дафтари «$(ARG1)» барқарор ва кушода намешавад."
 
 #: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_CONFIGURATION_BROKENDATA_NOREMOVE & ERRCODE_RES_MASK).String.Text
 msgid  "Configuration data in '$(ARG1)' is corrupted. Without this data some functions may not operate correctly.\nDo you want to continue startup of %PRODUCTNAME without the corrupted configuration data?"
-msgstr ""
+msgstr "Далелҳои конфигуратсионӣ дар '$(ARG1)' маҷрӯҳ мебошад. Бе ин далелҳо баъзе функтсияҳо пурра кор намекунанд.\nОғозкунии %PRODUCTNAME бе далелҳои маҷрӯҳшуда давом додан мехоҳед?"
 
 #: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_CONFIGURATION_BROKENDATA_WITHREMOVE & ERRCODE_RES_MASK).String.Text
 msgid  "The personal configuration file '$(ARG1)' is corrupted and must be deleted to continue. Some of your personal settings may be lost.\nDo you want to continue startup of %PRODUCTNAME without the corrupted configuration data?"
-msgstr ""
+msgstr "Далелҳои конфигуратсионии шахсӣ дар '$(ARG1)' маҷрӯҳ мебошад ва барои давом додан кӯр карда мешаванд. Баъзе аз ҷӯрсозиҳои шумо гум шуданашон мумкин аст.\nОғозкунии %PRODUCTNAME бе далелҳои маҷрӯҳшуда давом додан мехоҳед?"
 
 #: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_CONFIGURATION_BACKENDMISSING & ERRCODE_RES_MASK).String.Text
 msgid  "The configuration data source '$(ARG1)' is unavailable. Without this data some functions may not operate correctly."
-msgstr ""
+msgstr "Манбаи далелҳои ҷӯрсозии '$(ARG1)' дастнорас аст. Бе ин далелҳо баъзе функтсияҳо нодуруст амал мекунанд."
 
 #: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_CONFIGURATION_BACKENDMISSING_WITHRECOVER & ERRCODE_RES_MASK).String.Text
 msgid  "The configuration data source '$(ARG1)' is unavailable. Without this data some functions may not operate correctly.\nDo you want to continue startup of %PRODUCTNAME without the missing configuration data?"
-msgstr ""
+msgstr "Манбаи далелҳои ҷӯрсозии '$(ARG1)' дастнорас аст. Бе ин далелҳо баъзе функтсияҳо пурра кор намекунанд.\nОғозкунии %PRODUCTNAME бе далелҳои маҷрӯҳшуда давом додан мехоҳед?"
 
 #: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_INVALID_XFORMS_SUBMISSION_DATA & ERRCODE_RES_MASK).STRING.Text
 msgid  "The form contains invalid data. Do you still want to continue?"
@@ -416,8 +416,8 @@ msgid  "Enter user name and password for: \n%1"
 msgstr ""
 
 #: source/logindlg.src#DLG_UUI_LOGIN.STR_LOGIN_REALM.String.Text
-msgid  "Enter user name and password for: \n"%2" on %1"
-msgstr ""
+msgid  "Enter user name and password for: \n\"%2\" on %1"
+msgstr "Номи истифодабар ва паролро барои \"%2\" дохил кунед ба %1."
 
 #: source/logindlg.src#DLG_UUI_LOGIN.FT_LOGIN_PATH.FixedText.Text
 msgid  "~Path"
@@ -469,7 +469,7 @@ msgstr "Фиристодан"
 
 #: source/cookiedg.src#STR_COOKIES_RECV_START.String.Text
 msgid  "The '${HOST}' server wishes to set one or more cookies.\nCookies contain information referring to certain URL classes. If %PRODUCTNAME later requests a document with a URL corresponding to the class of a previously set cookie, %PRODUCTNAME will send this information to the server. This allows a server to recognize the status of a WWW application, e.g., when shopping online.\n\nThe following Cookies should be set:\n\n"
-msgstr ""
+msgstr "Сервери '${HOST}' мехоҳад як ё якчанд кукӣ гузорад.\nКукӣ доро маълумот оиди классси URL мебошад. Агар %PRODUCTNAME баъдтар ҳуҷҷатро аз URL-и мазкур дархост кунад, %PRODUCTNAME ин маълумотро ба сервер мефиристад. Ин ба сервер имкон медиҳад, ки ҳолати барномаи WWWро донад, мисол ҳангоми харид тавассути Интернет.\n\nКукии зер бояд гузошта шаванд:\n\n"
 
 #: source/cookiedg.src#STR_COOKIES_RECV_COOKIES.String.Text
 msgid  "Domain: ${DOMAIN}, Path: ${PATH}, Cookie: ${COOKIE}.\n"
@@ -481,7 +481,7 @@ msgstr "Қабулкунии дафтарҳои Cookie"
 
 #: source/cookiedg.src#STR_COOKIES_SEND_START.String.Text
 msgid  "%PRODUCTNAME has saved cookies for the server '${HOST}' which will be sent when requesting the document ${PATH}.\nCookies contain information which refers to certain URL classes. They are sent by some servers to %PRODUCTNAME where they are saved when certain documents are accessed. If %PRODUCTNAME loads a document that, according to the URL, corresponds to a class of one of the previously received Cookies, %PRODUCTNAME will send this information to that server. This enables a server to keep track of the status of a WWW application, e.g., when shopping online.\n\nThe following Cookies should be set:\n\n"
-msgstr ""
+msgstr "%PRODUCTNAME кукиро барои сервери '${HOST}' сабт кард, ки ҳангоми дархост аз ${PATH} фиристода мешавад.\nКукӣ доро маълумот оиди классси URL мебошад. Агар %PRODUCTNAME баъдтар ҳуҷҷатро аз URL-и мазкур дархост кунад, %PRODUCTNAME ин маълумотро ба сервер мефиристад. Ин ба сервер имкон медиҳад, ки ҳолати барномаи WWWро донад, мисол ҳангоми харид тавассути Интернет.\n\nКукии зер бояд гузошта шаванд:\n\n"
 
 #: source/cookiedg.src#STR_COOKIES_SEND_COOKIES.String.Text
 msgid  "Domain: ${DOMAIN}, Path: ${PATH}, Cookie: ${COOKIE}.\n"
@@ -609,7 +609,7 @@ msgstr "Намоиши имзоҳо..."
 
 #: source/secmacrowarnings.src#RID_XMLSECDLG_MACROWARN.FI_DESCR2.FixedText.Text
 msgid  "Macros may contain viruses. Disabling macros for a document is always safe. If you disable macros you may lose functionality provided by the document macros."
-msgstr ""
+msgstr "Макрос вирус доштанаш мумкин. Аз фаъолият доштани макрос дар ҳуҷҷат доим бехатар мебошад. Агар шумо макросро боздоред, онгоҳ баъзе имкониятҳо дастнорас мегарданд."
 
 #: source/secmacrowarnings.src#RID_XMLSECDLG_MACROWARN.CB_ALWAYSTRUST.CheckBox.Text
 msgid  "Always trust macros from this source"

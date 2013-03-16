@@ -37,11 +37,11 @@ msgstr "ActiveX கட்டுப்பாடு"
 
 #: source/activex/module_activex.ulf#STR_DESC_MODULE_OPTIONAL_ACTIVEXCONTROL
 msgid  "Component to enable Microsoft Internet Explorer to display %PRODUCTNAME documents."
-msgstr ""
+msgstr "மைக்ரோசாஃப்ட் இண்டர்நெட் எக்ஸ்ப்ளோரரில் %PRODUCTNAME ஆவணங்களை காட்ட செய்ய செயல்படுத்தும் கூறுகள்."
 
 #: source/base/folderitem_base.ulf#STR_FI_TOOLTIP_BASE
 msgid  "Manage databases, create queries and reports to track and manage your information by using Base."
-msgstr ""
+msgstr "பேஸினை பயன்படுத்தி தரவுத்தளங்கள் மேலாண்மை செய்யலாம், வினாக்கள் உருவாக்கி அறிக்கைகளை பெறலாம் மற்றும் உங்கள் விவரங்களை மேலாண்மை செய்யலாம்."
 
 #: source/base/registryitem_base.ulf#STR_REG_VAL_OO_DATABASE
 msgid  "OpenDocument Database"
@@ -121,7 +121,11 @@ msgstr "விரிதாள்"
 
 #: source/calc/folderitem_calc.ulf#STR_FI_TOOLTIP_CALC
 msgid  "Perform calculation, analyze information and manage lists in spreadsheets by using Calc."
-msgstr ""
+msgstr "கால்க்கினை பயன்படுத்தி கணக்கீடுகள் செய்யலாம், தகவல்களை ஆராயலாம் மற்றும் விரிதாளிலுள்ள பட்டியல்களை மேலாண்மை செய்யலாம்."
+
+#: source/calc/registryitem_calc.ulf#STR_REG_VAL_NEW
+msgid  "&New"
+msgstr "புதிய"
 
 #: source/calc/registryitem_calc.ulf#STR_REG_VAL_SO60_SPREADSHEET
 msgid  "%SXWFORMATNAME %SXWFORMATVERSION Spreadsheet"
@@ -155,17 +159,13 @@ msgstr "Microsoft Excel 97-2003 Template"
 msgid  "Microsoft Excel Template"
 msgstr "Microsoft Excel Template"
 
-#: source/calc/registryitem_calc.ulf#STR_REG_VAL_NEW
-msgid  "&New"
-msgstr "புதிய"
-
 #: source/calc/module_calc.ulf#STR_NAME_MODULE_PRG_CALC
 msgid  "%PRODUCTNAME Calc"
 msgstr "%PRODUCTNAME கால்க்"
 
 #: source/calc/module_calc.ulf#STR_DESC_MODULE_PRG_CALC
 msgid  "Perform calculation, analyze information and manage lists in spreadsheets by using %PRODUCTNAME Calc."
-msgstr ""
+msgstr "%PRODUCTNAME கால்க்கினை பயன்படுத்தி கணக்கீடுகள் செய்யலாம், தகவல்களை ஆராயலாம் மற்றும் விரிதாளிலுள்ள பட்டியல்களை மேலாண்மை செய்யலாம்."
 
 #: source/calc/module_calc.ulf#STR_NAME_MODULE_PRG_CALC_BIN
 msgid  "Program Module"
@@ -189,7 +189,11 @@ msgstr "கூடுதல் இணைப்பு"
 
 #: source/calc/module_calc.ulf#STR_DESC_MODULE_OPTIONAL_ADDINS
 msgid  "Add-ins are additional programs that make new functions available in %PRODUCTNAME Calc."
-msgstr ""
+msgstr "கூடுதல் இணைப்புகள் என்பது %PRODUCTNAME கால்க்கி லுள்ள புதிய செயல்பாடுகளை உருவாக்கும் கூடுதல் நிரல்கள் ஆகும்."
+
+#: source/draw/registryitem_draw.ulf#STR_REG_VAL_NEW
+msgid  "&New"
+msgstr "புதிய"
 
 #: source/draw/registryitem_draw.ulf#STR_REG_VAL_SO60_DRAWING
 msgid  "%SXWFORMATNAME %SXWFORMATVERSION Drawing"
@@ -207,17 +211,13 @@ msgstr "திறந்த ஆவணம் வரைதல்"
 msgid  "OpenDocument Drawing Template"
 msgstr "திறந்த ஆவணம் வரைதல் மாதிரிஉரு"
 
-#: source/draw/registryitem_draw.ulf#STR_REG_VAL_NEW
-msgid  "&New"
-msgstr "புதிய"
-
 #: source/draw/folderitem_draw.ulf#STR_FI_NAME_ZEICHNUNG
 msgid  "Drawing"
 msgstr "வரைதல்"
 
 #: source/draw/folderitem_draw.ulf#STR_FI_TOOLTIP_DRAW
 msgid  "Create and edit drawings, flow charts, and logos by using Draw."
-msgstr ""
+msgstr "ட்ராவினை பயன்படுத்தி ஓவியங்கள், வரைபடங்கள் மற்றும் சின்னங்களை உருவாக்கி தொகுக்கலாம்."
 
 #: source/draw/module_draw.ulf#STR_NAME_MODULE_PRG_DRAW
 msgid  "%PRODUCTNAME Draw"
@@ -225,7 +225,7 @@ msgstr "%PRODUCTNAME ட்ரா"
 
 #: source/draw/module_draw.ulf#STR_DESC_MODULE_PRG_DRAW
 msgid  "Create and edit drawings, flow charts, and logos by using %PRODUCTNAME Draw."
-msgstr ""
+msgstr "%PRODUCTNAME ட்ராவினை பயன்படுத்தி ஓவியங்கள், வரைபடங்கள் மற்றும் சின்னங்களை உருவாக்கி தொகுக்கலாம்."
 
 #: source/draw/module_draw.ulf#STR_NAME_MODULE_PRG_DRAW_BIN
 msgid  "Program Module"
@@ -249,7 +249,7 @@ msgstr "GNOME ஒருங்கிணைப்பு"
 
 #: source/gnome/module_gnome.ulf#STR_DESC_MODULE_OPTIONAL_GNOME
 msgid  "System integration of %PRODUCTNAME %PRODUCTVERSION into Gnome Desktop Environment."
-msgstr ""
+msgstr "System integration of %PRODUCTNAME %PRODUCTVERSION into Gnome Desktop Environment."
 
 #: source/graphicfilter/module_graphicfilter.ulf#STR_NAME_MODULE_OPTIONAL_GRFFLT
 msgid  "Graphics Filters"
@@ -377,7 +377,11 @@ msgstr "விளக்க காட்சி"
 
 #: source/impress/folderitem_impress.ulf#STR_FI_TOOLTIP_IMPRESS
 msgid  "Create and edit presentations for slideshows, meeting and Web pages by using Impress."
-msgstr ""
+msgstr "இம்ப்ரஸை பயன்படுத்தி வில்லை காட்சிகள், கூட்டங்கள் மற்றும் இணைய பக்கங்களுக்கு விளக்ககாட்சிகளை உருவாக்கி தொகுக்கலாம்."
+
+#: source/impress/registryitem_impress.ulf#STR_REG_VAL_NEW
+msgid  "&New"
+msgstr "புதிய"
 
 #: source/impress/registryitem_impress.ulf#STR_REG_VAL_SO60_SHOW
 msgid  "Show"
@@ -419,17 +423,13 @@ msgstr "Microsoft PowerPoint 97-2003 Template"
 msgid  "Microsoft PowerPoint Template"
 msgstr "Microsoft PowerPoint Template"
 
-#: source/impress/registryitem_impress.ulf#STR_REG_VAL_NEW
-msgid  "&New"
-msgstr "புதிய"
-
 #: source/impress/module_impress.ulf#STR_NAME_MODULE_PRG_IMPRESS
 msgid  "%PRODUCTNAME Impress"
 msgstr "%PRODUCTNAME இம்ப்ரஸ்"
 
 #: source/impress/module_impress.ulf#STR_DESC_MODULE_PRG_IMPRESS
 msgid  "Create and edit presentations for slideshows, meeting and Web pages by using %PRODUCTNAME Impress."
-msgstr ""
+msgstr "%PRODUCTNAME இம்ப்ரஸை பயன்படுத்தி வில்லை காட்சிகள், கூட்டங்கள் மற்றும் இணைய பக்கங்களுக்கு விளக்ககாட்சிகளை உருவாக்கி தொகுக்கலாம்."
 
 #: source/impress/module_impress.ulf#STR_NAME_MODULE_PRG_IMPRESS_BIN
 msgid  "Program Module"
@@ -461,7 +461,7 @@ msgstr "நடமாடும் சாதன வடிப்பிகள்"
 
 #: source/javafilter/module_javafilter.ulf#STR_DESC_MODULE_OPTIONAL_JAVAFILTER
 msgid  "Text and spreadsheet filters to support import/export for Palm handheld or Pocket PC (Java required)."
-msgstr ""
+msgstr "பாம் அல்லது பாக்கெட் கணினிக்கு இறக்குமதி/ஏற்றுமதி துணை செய்யும் உரை மற்றும் விரிதாள் வடிப்பிகள் (ஜாவா தேவைப்படுகிறது)"
 
 #: source/javafilter/module_javafilter.ulf#STR_NAME_MODULE_OPTIONAL_JAVAFILTER_PALM
 msgid  "Palm"
@@ -565,7 +565,7 @@ msgstr "%PRODUCTNAME மேத்"
 
 #: source/math/module_math.ulf#STR_DESC_MODULE_PRG_MATH
 msgid  "Create and edit scientific formulas and equations by using %PRODUCTNAME Math."
-msgstr ""
+msgstr "%PRODUCTNAME மேத்தினை பயன்படுத்தி அறிவியல் சூத்திரங்கள் மற்றும் சமன்பாடுகளை உருவாக்கி தொகுக்கலாம்."
 
 #: source/math/module_math.ulf#STR_NAME_MODULE_PRG_MATH_BIN
 msgid  "Program Module"
@@ -585,7 +585,11 @@ msgstr "%PRODUCTNAME மேத் பற்றிய உதவி"
 
 #: source/math/folderitem_math.ulf#STR_FI_TOOLTIP_MATH
 msgid  "Create and edit scientific formulas and equations by using Math."
-msgstr ""
+msgstr "மேத்தினை பயன்படுத்தி அறிவியல் சூத்திரங்கள் மற்றும் சமன்பாடுகளை உருவாக்கி தொகுக்கலாம்."
+
+#: source/math/registryitem_math.ulf#STR_REG_VAL_NEW
+msgid  "&New"
+msgstr "புதிய"
 
 #: source/math/registryitem_math.ulf#STR_REG_VAL_SO60_FORMULA
 msgid  "%SXWFORMATNAME %SXWFORMATVERSION Formula"
@@ -595,17 +599,18 @@ msgstr "%PRODUCTNAME %SXWFORMATVERSION சூத்திரம்"
 msgid  "OpenDocument Formula"
 msgstr "திறந்த ஆவண சூத்திரம்"
 
-#: source/math/registryitem_math.ulf#STR_REG_VAL_NEW
-msgid  "&New"
-msgstr "புதிய"
-
 #: source/onlineupdate/module_onlineupdate.ulf#STR_NAME_MODULE_OPT_ONLINEUPDATE
 msgid  "Online Update"
 msgstr "ஆன்லைன் மேம்படுத்தல்"
 
 #: source/onlineupdate/module_onlineupdate.ulf#STR_DESC_MODULE_OPT_ONLINEUPDATE
 msgid  "Get automatically notified when a new update of %PRODUCTNAME becomes available."
-msgstr ""
+msgstr "Get automatically notified when a new update of %PRODUCTNAME becomes available."
+
+#: source/ooo/registryitem_ooo.ulf#STR_REG_VAL_NEW
+#, fuzzy
+msgid  "&New"
+msgstr "&புதிய"
 
 #: source/ooo/registryitem_ooo.ulf#STR_REG_VAL_INSTALL
 #, fuzzy
@@ -616,19 +621,14 @@ msgstr "&நிறுவு"
 msgid  "OpenOffice.org 1.1 Configuration File"
 msgstr ""
 
-#: source/ooo/registryitem_ooo.ulf#STR_REG_VAL_APPCAPABILITY_DESCRIPTION_OOO
-msgid  "office productivity suite based on Apache OpenOffice project"
-msgstr ""
-
-#: source/ooo/registryitem_ooo.ulf#STR_REG_VAL_NEW
-#, fuzzy
-msgid  "&New"
-msgstr "&புதிய"
-
 #: source/ooo/registryitem_ooo.ulf#STR_REG_VAL_SO50_TEMPLATE_OOO
 #, fuzzy
 msgid  "StarOffice 5.0 Template"
 msgstr "ஸ்டார்ஆபிஸ் 5.0 வார்ப்புரு"
+
+#: source/ooo/registryitem_ooo.ulf#STR_REG_VAL_APPCAPABILITY_DESCRIPTION_OOO
+msgid  "office productivity suite based on Apache OpenOffice project"
+msgstr ""
 
 #: source/ooo/module_systemint.ulf#STR_NAME_MODULE_OPTIONAL_SYSTEMINTEGRATION
 #, fuzzy
@@ -666,8 +666,9 @@ msgid  "Optional Components"
 msgstr "விருப்ப கூறுகள்"
 
 #: source/ooo/module_ooo.ulf#STR_DESC_MODULE_OPTIONAL
+#, fuzzy
 msgid  "Common components and additional programs shared by all %PRODUCTNAME programs."
-msgstr ""
+msgstr "பொதுவான கூறுகள் மற்றும் கூடுதல் நிரல்கள் அனைத்து %PRODUCTNAME நிரல்களாலும் பகிரப்படுகிறது."
 
 #: source/ooo/module_ooo.ulf#STR_NAME_MODULE_DICTIONARIES
 msgid  "Dictionaries"
@@ -698,58 +699,49 @@ msgid  "Component for enabling use %PRODUCTNAME without a display"
 msgstr "Component for enabling use %PRODUCTNAME without a display"
 
 #: source/ooo/directory_ooo.ulf#STR_DIR_INFO
-#, fuzzy
 msgid  "Information"
 msgstr "தகவல்"
 
 #: source/ooo/directory_ooo.ulf#STR_DIR_INTERNET
-#, fuzzy
 msgid  "Internet"
 msgstr "இணையம்"
 
 #: source/ooo/directory_ooo.ulf#STR_DIR_JAVA
-#, fuzzy
 msgid  "Java"
 msgstr "ஜாவா"
 
 #: source/ooo/directory_ooo.ulf#STR_DIR_FREIZEIT
-#, fuzzy
 msgid  "Fun&More"
 msgstr "வேடிக்கையும் இதரவும்"
 
 #: source/ooo/directory_ooo.ulf#STR_DIR_STARONE
-#, fuzzy
 msgid  "%PRODUCTNAME API"
 msgstr "%PRODUCTNAME API"
 
 #: source/ooo/directory_ooo.ulf#STR_DIR_TOURISMUS
-#, fuzzy
 msgid  "Travel"
 msgstr "பயணம்"
 
 #: source/ooo/directory_ooo.ulf#STR_DIR_KAPITEL
-#, fuzzy
 msgid  "Chapters"
 msgstr "அத்தியாயங்கள்"
 
 #: source/ooo/directory_ooo.ulf#STR_DIR_DATEIEN
-#, fuzzy
 msgid  "Files"
 msgstr "கோப்புகள்"
 
 #: source/ooo/folderitem_ooo.ulf#STR_FI_NAME_FROMTEMPLATE
-#, fuzzy
 msgid  "From Template"
 msgstr "வார்ப்புருவிலிருந்து"
 
 #: source/ooo/folderitem_ooo.ulf#STR_FI_NAME_OPENDOCUMENT
-#, fuzzy
 msgid  "Open Document"
 msgstr "திறந்த ஆவணம்"
 
 #: source/ooo/folderitem_ooo.ulf#STR_FI_TOOLTIP_SOFFICE
+#, fuzzy
 msgid  "The office productivity suite compatible to the open and standardized ODF document format. Supported by The Apache Software Foundation."
-msgstr ""
+msgstr "The office productivity suite compatible to the open and standardized ODF document format. Supported by Sun Microsystems."
 
 #: source/ooo/module_langpack.ulf#STR_NAME_MODULE_ROOT_LANGPACK
 #, fuzzy
@@ -1187,8 +1179,9 @@ msgid  "Bengali (Bangladesh)"
 msgstr "வங்காளி (வங்காளதேசம்)"
 
 #: source/ooo/module_langpack.ulf#STR_DESC_MODULE_LANGPACK_BN_BD
+#, fuzzy
 msgid  "Installs Bengali (Bangladesh) support in %PRODUCTNAME %PRODUCTVERSION"
-msgstr ""
+msgstr "வங்காள (வங்காளதேசம்) மொழி ஆதரவை %PRODUCTNAME %PRODUCTVERSION ல் நிறுவும்"
 
 #: source/ooo/module_langpack.ulf#STR_NAME_MODULE_LANGPACK_BN_IN
 #, fuzzy
@@ -1326,8 +1319,9 @@ msgid  "Norwegian (Bokmål)"
 msgstr "நார்வீஜியன் (பொக்மால்)"
 
 #: source/ooo/module_langpack.ulf#STR_DESC_MODULE_LANGPACK_NB
+#, fuzzy
 msgid  "Installs Norwegian (Bokmål) support in %PRODUCTNAME %PRODUCTVERSION"
-msgstr ""
+msgstr "நார்வீஜிய (பொக்மால்) மொழி ஆதரவை %PRODUCTNAME %PRODUCTVERSION ல் நிறுவும்"
 
 #: source/ooo/module_langpack.ulf#STR_NAME_MODULE_LANGPACK_NN
 #, fuzzy
@@ -1335,8 +1329,9 @@ msgid  "Norwegian (Nynorsk)"
 msgstr "நார்விஜியன் (நைநார்ஸ்க்)"
 
 #: source/ooo/module_langpack.ulf#STR_DESC_MODULE_LANGPACK_NN
+#, fuzzy
 msgid  "Installs Norwegian (Nynorsk) support in %PRODUCTNAME %PRODUCTVERSION"
-msgstr ""
+msgstr "நார்வீஜிய (நோர்ஸ்க்) மொழி ஆதரவை %PRODUCTNAME %PRODUCTVERSION ல் நிறுவும்"
 
 #: source/ooo/module_langpack.ulf#STR_NAME_MODULE_LANGPACK_RM
 #, fuzzy
@@ -1772,8 +1767,9 @@ msgid  "English (South Africa)"
 msgstr "ஆங்கிலம் (தென்னாப்பிகா)"
 
 #: source/ooo/module_langpack.ulf#STR_DESC_MODULE_LANGPACK_EN_ZA
+#, fuzzy
 msgid  "Installs English (South Africa) support in %PRODUCTNAME %PRODUCTVERSION"
-msgstr ""
+msgstr "ஆங்கிய (தென்னாப்ரிகா) மொழி ஆதரவை %PRODUCTNAME %PRODUCTVERSION ல் நிறுவும்"
 
 #: source/ooo/module_langpack.ulf#STR_NAME_MODULE_LANGPACK_EN_GB
 #, fuzzy
@@ -1781,8 +1777,9 @@ msgid  "English (United Kingdom)"
 msgstr "ஆங்கிலம் (இங்கிலாந்து)"
 
 #: source/ooo/module_langpack.ulf#STR_DESC_MODULE_LANGPACK_EN_GB
+#, fuzzy
 msgid  "Installs English (United Kingdom) support in %PRODUCTNAME %PRODUCTVERSION"
-msgstr ""
+msgstr "ஆங்கிலம் (இங்கிலாந்து) மொழி ஆதரவை %PRODUCTNAME %PRODUCTVERSION ல் நிறுவும்"
 
 #: source/ooo/module_langpack.ulf#STR_NAME_MODULE_LANGPACK_UR_IN
 #, fuzzy
@@ -1898,175 +1895,145 @@ msgid  "Installs Gaelic (Scotland) support in %PRODUCTNAME %PRODUCTVERSION"
 msgstr ""
 
 #: source/python/module_python_mailmerge.ulf#STR_NAME_MODULE_OPTIONAL_PYTHON_MAILMERGE
-#, fuzzy
 msgid  "E-mail Mailmerge"
 msgstr "மின்னஞ்சல் அஞ்சலிணை"
 
 #: source/python/module_python_mailmerge.ulf#STR_DESC_MODULE_OPTIONAL_PYTHON_MAILMERGE
-#, fuzzy
 msgid  "Module for %PRODUCTNAME E-mail Mailmerge feature"
 msgstr "%PRODUCTNAME மின்னஞ்சல் அஞ்சலிணை அம்சத்திற்கான தொகுதி"
 
 #: source/python/module_python.ulf#STR_NAME_MODULE_OPTIONAL_PYTHON
-#, fuzzy
 msgid  "Python-UNO Bridge"
 msgstr "பைத்தான்-UNO Bridge"
 
 #: source/python/module_python.ulf#STR_DESC_MODULE_OPTIONAL_PYTHON
 msgid  "Adds the ability to automate %PRODUCTNAME with the python scripting language. See http://udk.openoffice.org/python/python-bridge.html for a complete documentation."
-msgstr ""
+msgstr "பைத்தான் குறிப்பு மொழியால் %PRODUCTNAME ஐ தானியங்கு செயல்திறனை சேர்க்கிறது. முழு ஆவணத்திற்கு http://udk.openoffice.org/python/python-bridge.html ல் பார்க்கவும்."
 
 #: source/quickstart/module_quickstart.ulf#STR_NAME_MODULE_OPTIONAL_QUICKSTART
-#, fuzzy
 msgid  "Quickstarter"
 msgstr "Quickstarter"
 
 #: source/quickstart/module_quickstart.ulf#STR_DESC_MODULE_OPTIONAL_QUICKSTART
 msgid  "Loads basic components on system start to accelerate start up time of %PRODUCTNAME %PRODUCTVERSION."
-msgstr ""
+msgstr "%PRODUCTNAME %PRODUCTVERSIONன் துவக்கு நேரத்தை வேகப்படுத்த கணினியின் ஆரம்பத்தில் அடிப்படை கூறுகளை ஏற்றுகிறது."
 
 #: source/sdkoo/module_sdkoo.ulf#STR_NAME_MODULE_OPTIONAL_SDKOO
-#, fuzzy
 msgid  "Software Development Kit (SDK)"
 msgstr "Software Development Kit (SDK)"
 
 #: source/sdkoo/module_sdkoo.ulf#STR_DESC_MODULE_OPTIONAL_SDKOO
 msgid  "The SDK provides all necessary tools, examples and documentation to program with and for the office."
-msgstr ""
+msgstr "The SDK provides all necessary tools, examples and documentation to program with and for the office."
 
 #: source/winexplorerext/module_winexplorerext.ulf#STR_NAME_MODULE_OPTIONAL_WINDOWS_EXPLORER_EXTENSIONS
-#, fuzzy
 msgid  "Windows Explorer Extension"
 msgstr "விண்டோஸ் எக்ஸ்ப்ளோரர் விரிவாக்கம்"
 
 #: source/winexplorerext/module_winexplorerext.ulf#STR_DESC_MODULE_OPTIONAL_WINDOWS_EXPLORER_EXTENSIONS
 msgid  "Enables the Microsoft Windows Explorer to show information about %PRODUCTNAME documents, such as thumbnail previews."
-msgstr ""
+msgstr "%PRODUCTNAME ஆவணங்களான குறும்பட முன்பார்வைகள் போன்றவற்றை பற்றிய விவரங்களை காட்ட மைக்ரோசாஃப்ட் விண்டோஸ் எக்ஸ்ப்ளோரரை செயல்படுத்துகிறது. "
 
 #: source/writer/folderitem_writer.ulf#STR_FI_NAME_HTMLDOKUMENT
-#, fuzzy
 msgid  "HTML Document"
 msgstr "HTML ஆவணம்"
 
 #: source/writer/folderitem_writer.ulf#STR_FI_NAME_TEXTDOKUMENT
-#, fuzzy
 msgid  "Text Document"
 msgstr "உரை ஆவணம்"
 
 #: source/writer/folderitem_writer.ulf#STR_FI_TOOLTIP_WRITER
 msgid  "Create and edit text and graphics in letters, reports, documents and Web pages by using Writer."
-msgstr ""
+msgstr "ரைட்டரை பயன்படுத்தி கடிதங்கள், அறிக்கை, ஆவணங்கள் மற்றும் இணைய பக்கங்களில் உரை மற்றும் வரைகலைகளை உருவாக்கி மற்றும் தொகுக்கிறது."
+
+#: source/writer/registryitem_writer.ulf#STR_REG_VAL_NEW
+msgid  "&New"
+msgstr "&புதிய"
 
 #: source/writer/registryitem_writer.ulf#STR_REG_VAL_SO60_TEXT
-#, fuzzy
 msgid  "%SXWFORMATNAME %SXWFORMATVERSION Text Document"
 msgstr "%PRODUCTNAME %SXWFORMATVERSION உரை ஆவணம்"
 
 #: source/writer/registryitem_writer.ulf#STR_REG_VAL_SO60_MASTERDOC
-#, fuzzy
 msgid  "%SXWFORMATNAME %SXWFORMATVERSION Master Document"
 msgstr "%PRODUCTNAME %SXWFORMATVERSION முதன்மை ஆவணம்"
 
 #: source/writer/registryitem_writer.ulf#STR_REG_VAL_SO60_WRITER_TEMPLATE
-#, fuzzy
 msgid  "%SXWFORMATNAME %SXWFORMATVERSION Text Document Template"
 msgstr "%PRODUCTNAME %SXWFORMATVERSION உரை ஆவண வார்ப்புரு"
 
 #: source/writer/registryitem_writer.ulf#STR_REG_VAL_OO_WRITER
-#, fuzzy
 msgid  "OpenDocument Text"
 msgstr "திறந்த ஆவண உரை"
 
 #: source/writer/registryitem_writer.ulf#STR_REG_VAL_OO_WRITER_TEMPLATE
-#, fuzzy
 msgid  "OpenDocument Text Template"
 msgstr "திறந்த ஆவண உரை வார்ப்புரு"
 
 #: source/writer/registryitem_writer.ulf#STR_REG_VAL_OO_MASTERDOC
-#, fuzzy
 msgid  "OpenDocument Master Document"
 msgstr "திறந்த ஆவண முதன்மை ஆவணம்"
 
 #: source/writer/registryitem_writer.ulf#STR_REG_VAL_OO_WEBDOC
-#, fuzzy
 msgid  "HTML Document Template"
 msgstr "HTML ஆவண வார்ப்புரு"
 
 #: source/writer/registryitem_writer.ulf#STR_REG_VAL_MS_WORD_DOCUMENT_OLD
-#, fuzzy
 msgid  "Microsoft Word 97-2003 Document"
 msgstr "மைக்ரோசாப்ட் வேர்ட் 97-2003 ஆவணம்"
 
 #: source/writer/registryitem_writer.ulf#STR_REG_VAL_MS_WORD_DOCUMENT
-#, fuzzy
 msgid  "Microsoft Word Document"
 msgstr "மைரோசாப்ட் வேர்ட் ஆவணம்"
 
 #: source/writer/registryitem_writer.ulf#STR_REG_VAL_MS_WORD_TEMPLATE_OLD
-#, fuzzy
 msgid  "Microsoft Word 97-2003 Template"
 msgstr "மைக்ரோசாப்ட் வேர்ட் 97-2003 வார்ப்புரு"
 
 #: source/writer/registryitem_writer.ulf#STR_REG_VAL_MS_WORD_TEMPLATE
-#, fuzzy
 msgid  "Microsoft Word Template"
 msgstr "மைக்ரோசாப்ட் வேர்ட் வார்ப்புரு"
 
 #: source/writer/registryitem_writer.ulf#STR_REG_VAL_MS_RTF_DOCUMENT
-#, fuzzy
 msgid  "Rich Text Document"
 msgstr "மேம்பட்ட உரை ஆவணம்"
 
-#: source/writer/registryitem_writer.ulf#STR_REG_VAL_NEW
-#, fuzzy
-msgid  "&New"
-msgstr "&புதிய"
-
 #: source/writer/module_writer.ulf#STR_NAME_MODULE_PRG_WRT
-#, fuzzy
 msgid  "%PRODUCTNAME Writer"
 msgstr "%PRODUCTNAME ரைட்டர்"
 
 #: source/writer/module_writer.ulf#STR_DESC_MODULE_PRG_WRT
 msgid  "Create and edit text and graphics in letters, reports, documents and Web pages by using %PRODUCTNAME Writer."
-msgstr ""
+msgstr "%PRODUCTNAME ரைட்டரை பயன்படுத்தி கடிதங்கள், அறிக்கை, ஆவணங்கள் மற்றும் இணைய பக்கங்களில் உரை மற்றும் வரைகலைகளை உருவாக்கி மற்றும் தொகுக்கிறது."
 
 #: source/writer/module_writer.ulf#STR_NAME_MODULE_PRG_WRT_BIN
-#, fuzzy
 msgid  "Program Module"
 msgstr "நிரல் தொகுதி"
 
 #: source/writer/module_writer.ulf#STR_DESC_MODULE_PRG_WRT_BIN
-#, fuzzy
 msgid  "The application %PRODUCTNAME Writer"
 msgstr "பயன்பாடு %PRODUCTNAME ரைட்டர்"
 
 #: source/writer/module_writer.ulf#STR_NAME_MODULE_PRG_WRT_HELP
-#, fuzzy
 msgid  "%PRODUCTNAME Writer Help"
 msgstr "%PRODUCTNAME ரைட்டர் உதவி"
 
 #: source/writer/module_writer.ulf#STR_DESC_MODULE_PRG_WRT_HELP
-#, fuzzy
 msgid  "Help about %PRODUCTNAME Writer"
 msgstr "%PRODUCTNAME ரைட்டர் பற்றிய உதவி"
 
 #: source/writer/module_writer.ulf#STR_NAME_MODULE_PRG_WRT_WRITER2LATEX
-#, fuzzy
 msgid  "LaTeX Export"
 msgstr "LaTeX ஏற்றுமதி"
 
 #: source/writer/module_writer.ulf#STR_DESC_MODULE_PRG_WRT_WRITER2LATEX
-#, fuzzy
 msgid  "LaTeX export filter for Writer documents."
 msgstr "ரைட்டர் ஆவணங்களுக்கான LaTeX ஏற்றுமதி வடிகட்டி."
 
 #: source/xsltfilter/module_xsltfilter.ulf#STR_NAME_MODULE_OPTIONAL_XSLTFILTERSAMPLES
-#, fuzzy
 msgid  "XSLT Sample Filters"
 msgstr "XSLT மாதிரி வடிகட்டிகள்"
 
 #: source/xsltfilter/module_xsltfilter.ulf#STR_DESC_MODULE_OPTIONAL_XSLTFILTERSAMPLES
-#, fuzzy
 msgid  "XSLT Sample Filters"
 msgstr "XSLT மாதிரி வடிகட்டிகள்"

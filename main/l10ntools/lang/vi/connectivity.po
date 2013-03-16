@@ -119,6 +119,18 @@ msgstr "Sổ địa chỉ Thunderbird"
 msgid  "LDAP Address Book"
 msgstr "Sổ địa chỉ LDAP"
 
+#: source/drivers/mozab/mozab2.xcu#.Drivers.Installed.sdbc:address:mozilla:.DriverTypeDisplayName
+msgid  "SeaMonkey Address Book"
+msgstr ""
+
+#: source/drivers/mozab/mozab2.xcu#.Drivers.Installed.sdbc:address:thunderbird:.DriverTypeDisplayName
+msgid  "Thunderbird Address Book"
+msgstr "Sổ địa chỉ Thunderbird"
+
+#: source/drivers/mozab/mozab2.xcu#.Drivers.Installed.sdbc:address:ldap:*.DriverTypeDisplayName
+msgid  "LDAP Address Book"
+msgstr "Sổ địa chỉ LDAP"
+
 #: source/drivers/mysql/mysql.xcu#.Drivers.Installed.sdbc:mysql:jdbc:*.DriverTypeDisplayName
 msgid  "MySQL (JDBC)"
 msgstr "MySQL (JDBC)"
@@ -161,11 +173,11 @@ msgstr "Không thể tạo sổ địa chỉ mới khi Mozilla đang chạy."
 
 #: source/resource/conn_shared_res.src#STR_COULD_NOT_RETRIEVE_AB_ENTRY.String.Text
 msgid  "An address book entry could not be retrieved, an unknown error occurred."
-msgstr ""
+msgstr "Gặp lỗi chưa định nghĩa, không thể lấy về hạng mục sổ địa chỉ."
 
 #: source/resource/conn_shared_res.src#STR_COULD_NOT_GET_DIRECTORY_NAME.String.Text
 msgid  "An address book directory name could not be retrieved, an unknown error occurred."
-msgstr ""
+msgstr "Gặp lỗi chưa định nghĩa, không thể lấy một tên thư mục."
 
 #: source/resource/conn_shared_res.src#STR_TIMEOUT_WAITING.String.Text
 msgid  "Timed out while waiting for the result."
@@ -177,11 +189,11 @@ msgstr "Gặp lỗi trong khi thực hiện truy vấn."
 
 #: source/resource/conn_shared_res.src#STR_MOZILLA_IS_RUNNIG_NO_CHANGES.String.Text
 msgid  "You can't make any changes to mozilla address book when mozilla is running."
-msgstr ""
+msgstr "Bạn không thể chỉnh sửa sổ địa chỉ Mozilla trong khi trình Mozilla đang chạy."
 
 #: source/resource/conn_shared_res.src#STR_FOREIGN_PROCESS_CHANGED_AB.String.Text
 msgid  "Mozilla Address Book has been changed out of this process, we can't modify it in this condition."
-msgstr ""
+msgstr "Sổ Địa Chỉ của Mozilla đã được sửa đổi trong tiến trình này, nhưng nó không thể được chỉnh sửa trong tình trạng này."
 
 #: source/resource/conn_shared_res.src#STR_CANT_FIND_ROW.String.Text
 msgid  "Can't find the requested row."
@@ -233,7 +245,7 @@ msgstr "Không tạo được hàng mới."
 
 #: source/resource/conn_shared_res.src#STR_QUERY_INVALID_IS_NULL_COLUMN.String.Text
 msgid  "The query can not be executed. The 'IS NULL' can only be used with a column name."
-msgstr ""
+msgstr "Không thể thực thi truy vấn. 'IS NULL' chỉ có thể dùng với tên cột."
 
 #: source/resource/conn_shared_res.src#STR_ILLEGAL_MOVEMENT.String.Text
 msgid  "Illegal cursor movement occured."
@@ -268,12 +280,12 @@ msgid  "It doesn't exist a connection to the database."
 msgstr "Không tồn tại kết nối tới cơ sở dữ liệu"
 
 #: source/resource/conn_shared_res.src#STR_WRONG_PARAM_INDEX.String.Text
-msgid  "You tried to set a parameter at position '$pos$' but there is/are only '$count$' parameter(s) allowed. One reason may be that the property "ParameterNameSubstitution" is not set to TRUE in the data source."
-msgstr ""
+msgid  "You tried to set a parameter at position '$pos$' but there is/are only '$count$' parameter(s) allowed. One reason may be that the property \"ParameterNameSubstitution\" is not set to TRUE in the data source."
+msgstr "Bạn thử đặt tham số ở vị trí '$pos$' nhưng chỉ được phép có '$count$' tham số. Lý do có thể là thuộc tính \"ParameterNameSubstitution\" chưa được đặt bằng TRUE trong nguồn dữ liệu"
 
 #: source/resource/conn_shared_res.src#STR_INPUTSTREAM_WRONG_LEN.String.Text
 msgid  "End of InputStream reached before satisfying length specified when InputStream was set."
-msgstr ""
+msgstr "Luồng nhập kết thúc trước khi đạt đến độ dài đã định khi nó được thiết lập."
 
 #: source/resource/conn_shared_res.src#STR_NO_INPUTSTREAM.String.Text
 msgid  "The input stream was not set."
@@ -313,7 +325,7 @@ msgstr "Driver không hỗ trợ hàm '$functionname$'."
 
 #: source/resource/conn_shared_res.src#STR_UNSUPPORTED_FEATURE.String.Text
 msgid  "The driver does not support the functionality for '$featurename$'. It is not implemented."
-msgstr ""
+msgstr "Driver không hỗ trọ chức năng '$featurename$'. Chức năng này chưa được thực thi."
 
 #: source/resource/conn_shared_res.src#STR_FORMULA_WRONG.String.Text
 msgid  "The formula for TypeInfoSettings is wrong!"
@@ -321,11 +333,11 @@ msgstr "Công thức cho TypeInfoSettings là sai!"
 
 #: source/resource/conn_shared_res.src#STR_STRING_LENGTH_EXCEEDED.String.Text
 msgid  "The string '$string$' exceeds the maximum length of $maxlen$ characters when converted to the target character set '$charset$'."
-msgstr ""
+msgstr "Chuỗi « $string$ » vượt quá chiều dài tối đa $maxlen$ ký tự khi được chuyển đổi sang bộ ký tự đích « $charset$ »."
 
 #: source/resource/conn_shared_res.src#STR_CANNOT_CONVERT_STRING.String.Text
 msgid  "The string '$string$' cannot be converted using the encoding '$charset$'."
-msgstr ""
+msgstr "Chuỗi « $string$ » không thể được chuyển đổi bằng bảng mã « $charset$ »."
 
 #: source/resource/conn_shared_res.src#STR_URI_SYNTAX_ERROR.String.Text
 msgid  "The connection URL is invalid."
@@ -341,11 +353,11 @@ msgstr "Truy vấn không thể thực hiện. Toán tử quá phức tạp."
 
 #: source/resource/conn_shared_res.src#STR_QUERY_INVALID_LIKE_COLUMN.String.Text
 msgid  "The query can not be executed. You cannot use 'LIKE' with columns of this type."
-msgstr ""
+msgstr "Không chạy được truy vấn vì không thể dùng 'LIKE' với cột loại này."
 
 #: source/resource/conn_shared_res.src#STR_QUERY_INVALID_LIKE_STRING.String.Text
 msgid  "The query can not be executed. 'LIKE' can be used with a string argument only."
-msgstr ""
+msgstr "Truy vấn không thể thực hiện. 'LIKE' chỉ có thể dùng với đối số chuỗi."
 
 #: source/resource/conn_shared_res.src#STR_QUERY_NOT_LIKE_TOO_COMPLEX.String.Text
 msgid  "The query can not be executed. The 'NOT LIKE' condition is too complex."
@@ -353,11 +365,11 @@ msgstr "Truy vấn không thể thực hiện. Biểu thức 'NOT LIKE' quá ph�
 
 #: source/resource/conn_shared_res.src#STR_QUERY_LIKE_WILDCARD.String.Text
 msgid  "The query can not be executed. The 'LIKE' condition contains wildcard in the middle."
-msgstr ""
+msgstr "Không thể thực hiện truy vấn. Biểu thức 'LIKE' chứa kí tự đại diện ở giữa."
 
 #: source/resource/conn_shared_res.src#STR_QUERY_LIKE_WILDCARD_MANY.String.Text
 msgid  "The query can not be executed. The 'LIKE' condition contains too many wildcards."
-msgstr ""
+msgstr "Không thể thực hiện truy vấn. Biểu thức 'LIKE' chứa quá nhiều kí tự đại diện."
 
 #: source/resource/conn_shared_res.src#STR_INVALID_COLUMNNAME.String.Text
 msgid  "The column name '$columnname$' is not valid."
@@ -377,7 +389,7 @@ msgstr "Không thể nạp tập tin $filename$."
 
 #: source/resource/conn_shared_res.src#STR_LOAD_FILE_ERROR_MESSAGE.String.Text
 msgid  "The attempt to load the file resulted in the following error message ($exception_type$):\n\n$error_message$"
-msgstr ""
+msgstr "Việc thử nạp tập tin trả về thông điệp lỗi sau ($exception_type$):\n\n$error_message$"
 
 #: source/resource/conn_shared_res.src#STR_TYPE_NOT_CONVERT.String.Text
 msgid  "The type could not be converted."
@@ -417,11 +429,11 @@ msgstr "Không thể tạo khung nhìn: Không có đối tượng lệnh"
 
 #: source/resource/conn_shared_res.src#STR_NO_CONNECTION.String.Text
 msgid  "The connection could not be created. May be the necessary data provider is not installed."
-msgstr ""
+msgstr "Không thể tạo kết nối. Dịch vụ cung cấp dữ liệu cần thiết có thể chưa được cài đặt."
 
 #: source/resource/conn_shared_res.src#STR_COULD_NOT_DELETE_INDEX.String.Text
 msgid  "The index could not be deleted. An unknown error while accessing the file system occured."
-msgstr ""
+msgstr "Không thể xóa chỉ mục. Lỗi chưa định nghĩa xảy khi khi truy cập file hệ thống."
 
 #: source/resource/conn_shared_res.src#STR_ONL_ONE_COLUMN_PER_INDEX.String.Text
 msgid  "The index could not be created. Only one column per index is allowed."
@@ -437,11 +449,11 @@ msgstr "Không thể tạo chỉ mục. Lỗi chưa định nghĩa xảy ra."
 
 #: source/resource/conn_shared_res.src#STR_COULD_NOT_CREATE_INDEX_NAME.String.Text
 msgid  "The index could not be created. The file '$filename$' is used by an other index."
-msgstr ""
+msgstr "Không thể tạo chỉ mục. Tập tin '$filename$' đã bị dùng bởi chỉ mục khác."
 
 #: source/resource/conn_shared_res.src#STR_COULD_NOT_CREATE_INDEX_KEYSIZE.String.Text
 msgid  "The index could not be created. The size of the chosen column is to big."
-msgstr ""
+msgstr "Không tạo được chỉ mục vì cỡ của cột đã chọn quá lớn."
 
 #: source/resource/conn_shared_res.src#STR_SQL_NAME_ERROR.String.Text
 msgid  "The name '$name$' doesn't match SQL naming constraints."
@@ -472,28 +484,28 @@ msgid  "Duplicate value found in column '$columnname$'."
 msgstr "Trùng lặp giá trị trong cột '$columnname$'."
 
 #: source/resource/conn_shared_res.src#STR_INVALID_COLUMN_DECIMAL_VALUE.String.Text
-msgid  "The '$columnname$' column has been defined as a "Decimal" type, the max. length is $precision$ characters (with $scale$ decimal places).\n\nThe specified value "$value$ is longer than the number of digits allowed."
-msgstr ""
+msgid  "The '$columnname$' column has been defined as a \"Decimal\" type, the max. length is $precision$ characters (with $scale$ decimal places).\n\nThe specified value \"$value$ is longer than the number of digits allowed."
+msgstr "Cột '$columnname$' đã được định nghĩa kiểu \"Thập phân\", độ dài lớn nhất là $precision$ ký tự (với $scale$ chữ số thập phân).\n\nGiá trị đã nhập \"$value$ dài hơn số các chữ số cho phép."
 
 #: source/resource/conn_shared_res.src#STR_COLUMN_NOT_ALTERABLE.String.Text
 msgid  "The column '$columnname$' could not be altered. May be the file system is write protected."
-msgstr ""
+msgstr "Không thể thay đổi cột '$columnname$'. Có thể tập tin hệ thống đang bị khoá chống ghi."
 
 #: source/resource/conn_shared_res.src#STR_INVALID_COLUMN_VALUE.String.Text
 msgid  "The column '$columnname$' could not be updated. The value is invalid for that column."
-msgstr ""
+msgstr "Không thể cập nhật cột '$columnname$'. Giá trị hiện tại không hợp lệ với cột này."
 
 #: source/resource/conn_shared_res.src#STR_COLUMN_NOT_ADDABLE.String.Text
 msgid  "The column '$columnname$' could not be added. May be the file system is write protected."
-msgstr ""
+msgstr "Không thể thêm cột '$columnname$'. Có thể tập tin hệ thống đang bị khoá chống ghi."
 
 #: source/resource/conn_shared_res.src#STR_COLUMN_NOT_DROP.String.Text
 msgid  "The column at position '$position$' could not be dropped. May be the file system is write protected."
-msgstr ""
+msgstr "Không thể xoá cột ở vị trí '$position$'. Có thể tập tin hệ thống đang bị khoá chống ghi."
 
 #: source/resource/conn_shared_res.src#STR_TABLE_NOT_DROP.String.Text
 msgid  "The table '$tablename$' could not be dropped. May be the file system is write protected."
-msgstr ""
+msgstr "Không thể xoá bảng '$tablename$'. Có thể tập tin hệ thống đang bị khoá chống ghi."
 
 #: source/resource/conn_shared_res.src#STR_COULD_NOT_ALTER_TABLE.String.Text
 msgid  "The table could not be altered."
@@ -501,7 +513,7 @@ msgstr "Không thể thay đổi bảng."
 
 #: source/resource/conn_shared_res.src#STR_INVALID_DBASE_FILE.String.Text
 msgid  "The file '$filename$' is an invalid (or unrecognized) dBase file."
-msgstr ""
+msgstr "'$filename$' không phải tập tin dBase hợp lệ (hoặc không thể nhận dạng)."
 
 #: source/resource/conn_shared_res.src#STR_CANNOT_OPEN_BOOK.String.Text
 msgid  "Cannot open Evolution address book."
@@ -512,8 +524,8 @@ msgid  "Can only sort by table columns."
 msgstr "Chỉ có thể sắp xếp theo cột của bảng."
 
 #: source/resource/conn_shared_res.src#STR_QUERY_COMPLEX_COUNT.String.Text
-msgid  "The query can not be executed. It is too complex. Only "COUNT(*)" is supported."
-msgstr ""
+msgid  "The query can not be executed. It is too complex. Only \"COUNT(*)\" is supported."
+msgstr "Không thể thực thi truy vấn vì nó quá phức tạp. Chỉ hỗ trợ \"COUNT(*)\"."
 
 #: source/resource/conn_shared_res.src#STR_QUERY_INVALID_BETWEEN.String.Text
 msgid  "The query can not be executed. The 'BETWEEN' arguments are not correct."
@@ -528,8 +540,8 @@ msgid  "The table can not be changed. It is read only."
 msgstr "Không thể thay đổi bảng chỉ đọc."
 
 #: source/resource/conn_shared_res.src#STR_DELETE_ROW.String.Text
-msgid  "The row could not be deleted. The option "Display inactive records" is set."
-msgstr ""
+msgid  "The row could not be deleted. The option \"Display inactive records\" is set."
+msgstr "Không thể xóa hàng này. Đang bật tùy chọn \"Hiển thị  bản ghi không hiệu lực\"."
 
 #: source/resource/conn_shared_res.src#STR_ROW_ALREADY_DELETED.String.Text
 msgid  "The row could not be deleted. It is already deleted."
@@ -589,15 +601,15 @@ msgstr "Không tìm thấy cài đặt KDE thích hợp."
 
 #: source/resource/conn_shared_res.src#STR_KDE_VERSION_TOO_OLD.String.Text
 msgid  "KDE version $major$.$minor$ or higher is required to access the KDE Address Book."
-msgstr ""
+msgstr "Cần KDE phiên bản tối thiểu $major$.$minor$ để truy cập Sổ Địa chỉ KDE."
 
 #: source/resource/conn_shared_res.src#STR_KDE_VERSION_TOO_NEW.String.Text
 msgid  "The found KDE version is too new. Only KDE up to version $major$.$minor$ is known to work with this product.\n"
-msgstr ""
+msgstr "Phiên bản KDE tìm thấy quá mới. Chỉ hỗ trợ KDE phiên bản nhỏ hơn $major$.$minor$.\n"
 
 #: source/resource/conn_shared_res.src#STR_KDE_VERSION_TOO_NEW_WORK_AROUND.String.Text
 msgid  "If you are sure that your KDE version works, you might execute the following Basic macro to disable this version check:\n\n"
-msgstr ""
+msgstr "Nếu bạn chắc chắn phiên bản KDE của mình họat động. Xin hãy thực thi vĩ lệnh Basic dưới đây để vô hiệu hóa sự kiểm tra phiên bản:\n\n"
 
 #: source/resource/conn_shared_res.src#STR_PARA_ONLY_PREPARED.String.Text
 msgid  "Parameters can appear only in prepared statements."
@@ -613,19 +625,19 @@ msgstr "Không tìm thấy Mac OS thích hợp."
 
 #: source/resource/conn_shared_res.src#STR_NO_DISK_SPACE.String.Text
 msgid  "The database file '$filename$' could not be created. Please check your disk space."
-msgstr ""
+msgstr "Không thể tạo tập tin cơ sở dữ liệu '$filename$'. Xin kiểm tra dung lượng trống của ổ đĩa."
 
 #: source/resource/conn_shared_res.src#STR_COMMAND_NOT_FOUND.String.Text
 msgid  "The database '$databasename$' could not be started because the command '$progname$' could not be executed."
-msgstr ""
+msgstr "Không thể tạo cơ sở dữ liệu '$databasename$' vì không thể thực thi lệnh '$progname$'."
 
 #: source/resource/conn_shared_res.src#STR_DATABASE_NEEDS_CONVERTING.String.Text
 msgid  "The current database need to be converted. Please insert control user  and password."
-msgstr ""
+msgstr "Cần chuyển đổi cơ sở dữ liệu hiện tại. Xin nhập tên người dùng và mật khẩu."
 
 #: source/resource/conn_shared_res.src#STR_USER_NO_DELETE.String.Text
 msgid  "This user couldn't be deleted. Otherwise the database stays in a inconsistent state."
-msgstr ""
+msgstr "Không thể xóa người dùng vì nó gây ra sự mâu thuẫn cơ sở dữ liệu."
 
 #: source/resource/conn_shared_res.src#STR_NO_STROAGE.String.Text
 msgid  "The connection can not be established. No storage or URL was given."
@@ -633,7 +645,7 @@ msgstr "Không thể thiết lập kết nối. Chưa cung cấp kho chứa hay 
 
 #: source/resource/conn_shared_res.src#STR_INVALID_FILE_URL.String.Text
 msgid  "The given URL contains no valid local file system path. Please check the location of your database file."
-msgstr ""
+msgstr "URL đã cho không chứa đường dẫn tệp tin hệ thống nào hợp lệ. Xin kiểm tra lại vị trí của tệp tin cơ sở dữ liệu."
 
 #: source/resource/conn_shared_res.src#STR_NO_TABLE_CONTAINER.String.Text
 msgid  "An error occured while obtaining the connection's table container."
@@ -686,15 +698,3 @@ msgstr "Không tồn tại $1$."
 #: source/resource/conn_error_message.src#256 + 2*550 + 0.String.Text
 msgid  "Unable to display the complete table content. Please apply a filter."
 msgstr "Không hiển thị được toàn bộ nội dung bảng. Hãy dùng bộ lọc khác."
-
-#: source/drivers/mozab/mozab2.xcu#.Drivers.Installed.sdbc:address:mozilla:.DriverTypeDisplayName
-msgid  "SeaMonkey Address Book"
-msgstr ""
-
-#: source/drivers/mozab/mozab2.xcu#.Drivers.Installed.sdbc:address:thunderbird:.DriverTypeDisplayName
-msgid  "Thunderbird Address Book"
-msgstr "Sổ địa chỉ Thunderbird"
-
-#: source/drivers/mozab/mozab2.xcu#.Drivers.Installed.sdbc:address:ldap:*.DriverTypeDisplayName
-msgid  "LDAP Address Book"
-msgstr "Sổ địa chỉ LDAP"

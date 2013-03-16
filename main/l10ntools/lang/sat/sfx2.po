@@ -97,7 +97,7 @@ msgstr "दोलिल माड़ाङ खोन झिज आ काना"
 
 #: source/appl/app.src#MSG_ERR_NO_WEBBROWSER_FOUND.ErrorBox.Message
 msgid  "%PRODUCTNAME could not find a web browser on your system. Please check your Desktop Preferences or install a web browser (for example, Mozilla) in the default  location requested during the browser installation."
-msgstr ""
+msgstr "%PRODUCTNAME could not find a web browser on your system. Please check your Desktop Preferences or install a web browser (for example, Mozilla) in the default  location requested during the browser installation."
 
 #: source/appl/app.src#GID_INTERN.String.Text
 msgid  "Internal"
@@ -205,7 +205,7 @@ msgstr "सांबड़ाव"
 
 #: source/appl/app.src#MSG_CANT_QUIT.InfoBox.Message
 msgid  "The application cannot be terminated at the moment.\nPlease wait until all print jobs and/or\nOLE actions have finished and close all dialogs."
-msgstr ""
+msgstr "The application cannot be terminated at the moment.\nPlease wait until all print jobs and/or\nOLE actions have finished and close all dialogs."
 
 #: source/appl/app.src#STR_ISMODIFIED.String.Text
 msgid  "Do you want to save the changes to %1?"
@@ -237,7 +237,7 @@ msgstr "कामी हुरका़ड़"
 
 #: source/appl/app.src#RID_SPECIALCONFIG_ERROR.String.Text
 msgid  "An error has occurred in the special configuration.\nPlease contact your administrator."
-msgstr ""
+msgstr "An error has occurred in the special configuration.\nPlease contact your administrator."
 
 #: source/appl/app.src#STR_QUICKSTART_EXIT.String.Text
 msgid  "Exit Quickstarter"
@@ -288,12 +288,12 @@ msgid  "DDE link to % for % area % are not available."
 msgstr "% खोंजाक् % लागित् % जायगा DDE  बाङ ञामोक्आ "
 
 #: source/appl/app.src#RID_SECURITY_WARNING_HYPERLINK.WarningBox.Message
-msgid  "This hyperlink is going to open "%s". Do you want to proceed?"
-msgstr ""
+msgid  "This hyperlink is going to open \"%s\". Do you want to proceed?"
+msgstr "This hyperlink is going to open \"%s\". Do you want to proceed?"
 
 #: source/appl/app.src#RID_SECURITY_WARNING_NO_HYPERLINKS.WarningBox.Message
 msgid  "For security reasons, the hyperlink cannot be executed.\nThe stated address will not be opened."
-msgstr ""
+msgstr "For security reasons, the hyperlink cannot be executed.\nThe stated address will not be opened."
 
 #: source/appl/app.src#RID_SECURITY_WARNING_TITLE.String.Text
 msgid  "Security Warning"
@@ -572,6 +572,26 @@ msgid  "Reso~lution"
 msgstr ""
 
 #: source/dialog/printopt.src#TP_COMMONPRINTOPTIONS.LB_REDUCEBITMAPS_RESOLUTION.0.StringList.item
+msgid  "72 DPI"
+msgstr ""
+
+#: source/dialog/printopt.src#TP_COMMONPRINTOPTIONS.LB_REDUCEBITMAPS_RESOLUTION.0.StringList.item
+msgid  "96 DPI"
+msgstr ""
+
+#: source/dialog/printopt.src#TP_COMMONPRINTOPTIONS.LB_REDUCEBITMAPS_RESOLUTION.0.StringList.item
+msgid  "150 DPI (Fax)"
+msgstr ""
+
+#: source/dialog/printopt.src#TP_COMMONPRINTOPTIONS.LB_REDUCEBITMAPS_RESOLUTION.0.StringList.item
+msgid  "200 DPI (default)"
+msgstr ""
+
+#: source/dialog/printopt.src#TP_COMMONPRINTOPTIONS.LB_REDUCEBITMAPS_RESOLUTION.0.StringList.item
+msgid  "300 DPI"
+msgstr ""
+
+#: source/dialog/printopt.src#TP_COMMONPRINTOPTIONS.LB_REDUCEBITMAPS_RESOLUTION.0.StringList.item
 msgid  "600 DPI"
 msgstr ""
 
@@ -621,26 +641,6 @@ msgstr ""
 
 #: source/dialog/printopt.src#RID_WARN_PRINTTRANSPARENCY.CBX_NOPRINTTRANSWARN.CheckBox.Text
 msgid  "~Do not show warning again"
-msgstr ""
-
-#: source/dialog/printopt.src#TP_COMMONPRINTOPTIONS.LB_REDUCEBITMAPS_RESOLUTION.0.StringList.item
-msgid  "72 DPI"
-msgstr ""
-
-#: source/dialog/printopt.src#TP_COMMONPRINTOPTIONS.LB_REDUCEBITMAPS_RESOLUTION.0.StringList.item
-msgid  "96 DPI"
-msgstr ""
-
-#: source/dialog/printopt.src#TP_COMMONPRINTOPTIONS.LB_REDUCEBITMAPS_RESOLUTION.0.StringList.item
-msgid  "150 DPI (Fax)"
-msgstr ""
-
-#: source/dialog/printopt.src#TP_COMMONPRINTOPTIONS.LB_REDUCEBITMAPS_RESOLUTION.0.StringList.item
-msgid  "200 DPI (default)"
-msgstr ""
-
-#: source/dialog/printopt.src#TP_COMMONPRINTOPTIONS.LB_REDUCEBITMAPS_RESOLUTION.0.StringList.item
-msgid  "300 DPI"
 msgstr ""
 
 #: source/dialog/templdlg.src#RID_STYLECATALOG.ModalDialog.Text
@@ -1116,7 +1116,7 @@ msgid  "to frame"
 msgstr ""
 
 #: source/dialog/dinfdlg.src#TP_DOCINFORELOAD.STR_FORWARD_ERRMSSG.String.Text
-msgid  "If you select the option "%PLACEHOLDER%", you must enter a URL."
+msgid  "If you select the option \"%PLACEHOLDER%\", you must enter a URL."
 msgstr ""
 
 #: source/dialog/dinfdlg.src#TP_CUSTOMPROPERTIES.FT_PROPERTIES.FixedText.Text
@@ -1549,7 +1549,7 @@ msgstr "à¤®à¤¿à¤²à¤¾ à¤à¥à¤²à¤¾"
 
 #: source/doc/doctempl.src#RID_CNT_STR_WAITING.String.Text
 msgid  "The templates are being initialized for first-time usage."
-msgstr ""
+msgstr "à¤¨à¤®à¥à¤¨à¥à¤ à¤à¥ à¤ªà¤¹à¤¿à¤²à¥ à¤¬à¤¾à¤° à¤à¤ªà¤¯à¥à¤ à¤à¤°à¤¨à¥ à¤à¥à¤²à¤¿à¤ à¤à¤¨à¤¿à¤¶à¥à¤¯à¤²à¥à¤à¤¼ à¤à¤¿à¤¯à¤¾ à¤¹à¥ à¥¤"
 
 #: source/doc/doctdlg.src#DLG_DOC_TEMPLATE.ModalDialog.Text
 msgid  "Templates"
@@ -1588,20 +1588,20 @@ msgid  "Name already in use.\nDo you want to overwrite document template?"
 msgstr ""
 
 #: source/doc/doc.src#STR_DELETE_REGION.String.Text
-msgid  "Are you sure you want to delete the region "$1"?"
+msgid  "Are you sure you want to delete the region \"$1\"?"
 msgstr ""
 
 #: source/doc/doc.src#STR_DELETE_TEMPLATE.String.Text
-msgid  "Are you sure you want to delete the entry "$1"?"
+msgid  "Are you sure you want to delete the entry \"$1\"?"
 msgstr ""
 
 #: source/doc/doc.src#MSG_REGION_NOTEMPTY.QueryBox.Message
 msgid  "The category is not empty.\nDelete anyway?"
-msgstr ""
+msgstr "The category is not empty.\nDelete anyway?"
 
 #: source/doc/doc.src#STR_QUERY_SAVE_DOCUMENT.String.Text
-msgid  "The document "$(DOC)" has been modified.\nDo you want to save your changes?"
-msgstr ""
+msgid  "The document \"$(DOC)\" has been modified.\nDo you want to save your changes?"
+msgstr "The document \"$(DOC)\" has been modified.\nDo you want to save your changes?"
 
 #: source/doc/doc.src#STR_STYLES.String.Text
 msgid  "Styles"
@@ -1625,7 +1625,7 @@ msgstr "à¤à¤¾à¤ªà¤¾  à¤¹à¥à¤¨à¤¾à¤¼à¤°"
 
 #: source/doc/doc.src#MSG_PRINT_ERROR.ErrorBox.Message
 msgid  "The print job could not be started."
-msgstr ""
+msgstr "à¤à¤ªà¤¾à¤ à¤à¤¾à¤°à¥à¤¯ à¤ªà¥à¤°à¤¾à¤°à¤à¤­ à¤¨à¤¹à¥à¤ à¤à¤° à¤¸à¤à¤¤à¥ à¤¹à¥ à¥¤"
 
 #: source/doc/doc.src#STR_BACKUP_COPY.String.Text
 msgid  "Copy"
@@ -1637,26 +1637,26 @@ msgstr "à¤¨à¤®à¥à¤¨à¥ à¤à¥ à¤à¥à¤² à¤¨à�
 
 #: source/doc/doc.src#MSG_VIEW_OPEN_CANT_SAVE.InfoBox.Message
 msgid  "Document already open for editing."
-msgstr ""
+msgstr "à¤¸à¤à¤ªà¤¾à¤¦à¤¨ à¤à¤°à¤¨à¥ à¤à¥à¤²à¤¿à¤ à¤¦à¤¸à¥à¤¤à¤¾à¤µà¥à¤ à¤ªà¤¹à¤¿à¤²à¥ à¤¸à¥ à¤¹à¥ à¤à¥à¤²à¤¾ à¤¹à¥ à¥¤"
 
 #: source/doc/doc.src#STR_ERROR_SAVE.String.Text
 msgid  "Error recording document "
-msgstr ""
+msgstr "à¤¦à¤¸à¥à¤¤à¤¾à¤µà¥à¤ à¤°à¥à¤à¥à¤°à¥à¤¡à¤¿à¤¨à¥à¤ à¤à¤°à¤¨à¥ à¤à¤¾ à¤¸à¤®à¤¯ à¤à¤²à¤¤à¥"
 
 #: source/doc/doc.src#STR_TEMPLATE_FILTER.String.Text
 msgid  "Templates"
 msgstr ""
 
 #: source/doc/doc.src#STR_ERROR_COPY_TEMPLATE.String.Text
-msgid  "Error copying template "$1". \nA template with this name may already exist."
+msgid  "Error copying template \"$1\". \nA template with this name may already exist."
 msgstr ""
 
 #: source/doc/doc.src#STR_ERROR_DELETE_TEMPLATE.String.Text
-msgid  "The template "$1" can not be deleted."
+msgid  "The template \"$1\" can not be deleted."
 msgstr ""
 
 #: source/doc/doc.src#STR_ERROR_MOVE_TEMPLATE.String.Text
-msgid  "Error moving template "$1"."
+msgid  "Error moving template \"$1\"."
 msgstr ""
 
 #: source/doc/doc.src#MSG_ERROR_RESCAN.ErrorBox.Message
@@ -1684,28 +1684,28 @@ msgid  "Please specify a unique name.\nEntries must not be case specific."
 msgstr ""
 
 #: source/doc/doc.src#STR_QUERY_DEFAULT_TEMPLATE.String.Text
-msgid  "Should the template "$(TEXT)" become the default template?"
+msgid  "Should the template \"$(TEXT)\" become the default template?"
 msgstr ""
 
 #: source/doc/doc.src#MSG_QUERY_RESET_DEFAULT_TEMPLATE.QueryBox.Message
 msgid  "Do you want to reset the default template?"
-msgstr ""
+msgstr "à¤®à¥à¤²à¤­à¥à¤¤ à¤¨à¤®à¥à¤¨à¥ à¤à¥ à¤°à¤¿à¤¸à¥à¤à¥à¤ à¤à¤°à¤¨à¤¾ à¤à¤¾à¤¹à¤¤à¥ à¤¹à¥?"
 
 #: source/doc/doc.src#MSG_TEMPLATE_DIR_NOT_EXIST.InfoBox.Message
 msgid  "Template directory\n$(DIR)\ndoes not exist."
-msgstr ""
+msgstr "Template directory\n$(DIR)\ndoes not exist."
 
 #: source/doc/doc.src#MSG_DOCINFO_CANTREAD.InfoBox.Message
 msgid  "Document info cannot be read."
-msgstr ""
+msgstr "à¤¦à¥à¤²à¤¿à¤² à¤°à¥à¤¦ à¤¬à¤¾à¤ à¤ªà¤¾à¤¡à¤¼à¤¾à¤¹à¤µà¤¾à¤à¥ à¤¦à¤¾à¤¡à¤¼à¥à¤¯à¤¾à¤à¥"
 
 #: source/doc/doc.src#STR_ERROR_NOSTORAGE.String.Text
 msgid  "The selected file has an incorrect format."
-msgstr ""
+msgstr "à¤¬à¤¾à¤à¤¾à¤µà¤¯à¤¾à¤à¥ à¤°à¥à¤¤à¥ à¤à¥ à¤¤à¥à¤¯à¤¾à¤° à¤­à¥à¤² à¤à¥à¤¯à¤¾."
 
 #: source/doc/doc.src#STR_QUERY_MUSTOWNFORMAT.String.Text
 msgid  "Documents cannot be saved in $(FORMAT) format. Do you\nwant to save your changes using the $(OWNFORMAT) format?"
-msgstr ""
+msgstr "Documents cannot be saved in $(FORMAT) format. Do you\nwant to save your changes using the $(OWNFORMAT) format?"
 
 #: source/doc/doc.src#STR_SAVEDOC.String.Text
 msgid  "~Save"
@@ -1744,7 +1744,7 @@ msgid  "%PRODUCTNAME Basic libraries"
 msgstr ""
 
 #: source/doc/doc.src#RID_STR_WARNSTYLEOVERWRITE.String.Text
-msgid  "Should the "$(ARG1)" Style be replaced?"
+msgid  "Should the \"$(ARG1)\" Style be replaced?"
 msgstr ""
 
 #: source/doc/doc.src#STR_DOC_LOADING.String.Text
@@ -1792,16 +1792,16 @@ msgid  "%PRODUCTNAME Frame Document"
 msgstr "%PRODUCTNAME à¤¸à¤¾à¤ à¤¸à¤¾à¤à¤¾à¤µ à¤¦à¥à¤²à¤¿à¤²"
 
 #: source/doc/doc.src#STR_TEMPL_MOVED.String.Text
-msgid  "The template "$(TEMPLATE)" was not found at the original location. A template with the same name exists at "$(FOUND)". Should this template be used in the future when comparing?"
-msgstr ""
+msgid  "The template \"$(TEMPLATE)\" was not found at the original location. A template with the same name exists at \"$(FOUND)\". Should this template be used in the future when comparing?"
+msgstr "$(TEMPLATE) à¤¨à¤®à¥à¤¨à¤¾ à¤¯à¤¥à¤¾à¤°à¥à¤¥ à¤¸à¥à¤¥à¤¾à¤¨ à¤®à¥à¤ à¤¨à¤¹à¥à¤ à¤¹à¥ à¥¤ à¤¸à¤®à¤¾à¤¨ à¤¨à¤¾à¤® à¤à¤¾ à¤¨à¤®à¥à¤¨à¤¾ \"$(FOUND)\" à¤®à¥à¤ à¤à¤¸à¥à¤¤à¤¿à¤¤à¥à¤µ à¤®à¥à¤ à¤¹à¥ à¥¤ à¤­à¤µà¤¿à¤·à¥à¤¯ à¤®à¥à¤ à¤¤à¥à¤²à¤¨à¤¾ à¤à¤°à¤¨à¥ à¤à¥à¤²à¤¿à¤ à¤à¤¸ à¤¨à¤®à¥à¤¨à¥ à¤à¥ à¤à¤ªà¤¯à¥à¤ à¤à¤°à¤¨à¤¾ à¤à¤¾à¤¹à¤¤à¥ à¤¹à¥ ?"
 
 #: source/doc/doc.src#STR_TEMPL_RESET.String.Text
-msgid  "The template "$(TEMPLATE)" has not been found. Should the template be looked for the next time the document is opened ?"
-msgstr ""
+msgid  "The template \"$(TEMPLATE)\" has not been found. Should the template be looked for the next time the document is opened ?"
+msgstr "$(TEMPLATE) à¤¨à¤®à¥à¤¨à¤¾ à¤ªà¥à¤°à¤¾à¤ªà¥à¤¤ à¤¨à¤¹à¥à¤ à¤¹à¥à¤ à¥¤ à¤à¤à¤²à¥ à¤¬à¤¾à¤° à¤¦à¤¸à¥à¤¤à¤¾à¤µà¥à¤ à¤à¥ à¤à¥à¤²à¤¨à¥ à¤à¥ à¤¸à¤®à¤¯ à¤¨à¤®à¥à¤¨à¥ à¤à¥ à¤à¥à¤à¤¨à¤¾ à¤à¤¾à¤¹à¤¤à¥ à¤¹à¥ ?"
 
 #: source/doc/doc.src#STR_AUTOMATICVERSION.String.Text
 msgid  "Automatically saved version"
-msgstr ""
+msgstr "à¤¸à¥à¤µà¤à¤¾à¤²à¤¿à¤¤ à¤ªà¥à¤°à¤à¤¾à¤° à¤¸à¥ à¤¸à¤à¤à¤¿à¤¤ à¤à¤¿à¤¯à¤¾ à¤¹à¥à¤ à¤à¤µà¥à¤¤à¥à¤¤à¤¿"
 
 #: source/doc/doc.src#STR_DOCTYPENAME_SW.String.Text
 msgid  "Text Document"
@@ -1893,7 +1893,7 @@ msgstr " à¤°à¥à¤¤à¥ à¤¤à¥à¤¯à¤¾à¤°"
 
 #: source/doc/doc.src#STR_HIDDENINFO_CONTAINS.String.Text
 msgid  "This document contains:\n\n"
-msgstr ""
+msgstr "à¤¦à¥à¤²à¤¿à¤² à¤à¥à¤¡à¤¼à¤¾à¤µà¥  $(TEXT)"
 
 #: source/doc/doc.src#STR_HIDDENINFO_RECORDCHANGES.String.Text
 msgid  "Recorded changes"
@@ -1984,8 +1984,16 @@ msgid  "~Address Book..."
 msgstr " à¤ à¤¿à¤à¤¾à¤¨à¤¾ à¤ªà¥à¤¥à¥ (~A)"
 
 #: source/doc/docvor.src#DLG_ORGANIZE.LB_LEFT_TYP.Default.StringList.item
+msgid  "Templates"
+msgstr ""
+
+#: source/doc/docvor.src#DLG_ORGANIZE.LB_LEFT_TYP.Default.StringList.item
 msgid  "Documents"
 msgstr "à¤¦à¥à¤²à¤¿à¤²"
+
+#: source/doc/docvor.src#DLG_ORGANIZE.LB_RIGHT_TYP.Default.StringList.item
+msgid  "Templates"
+msgstr ""
 
 #: source/doc/docvor.src#DLG_ORGANIZE.LB_RIGHT_TYP.Default.StringList.item
 msgid  "Documents"
@@ -2009,7 +2017,7 @@ msgstr ""
 
 #: source/doc/docvor.src#DLG_ORGANIZE.BTN_EDIT.ID_COPY_FROM.MenuItem.Text
 msgid  "Import Template..."
-msgstr ""
+msgstr "à¤¬à¤¾à¤¹à¤°à¥ à¤à¥à¤¨ à¤à¤¼à¤à¥ à¤²à¤¾à¤¼à¤à¤¿à¤¤à¥ à¤à¤¿à¤¤à¤¾à¤¼à¤°"
 
 #: source/doc/docvor.src#DLG_ORGANIZE.BTN_EDIT.ID_COPY_TO.MenuItem.Text
 msgid  "Export Template..."
@@ -2033,14 +2041,6 @@ msgstr ""
 
 #: source/doc/docvor.src#DLG_ORGANIZE.BTN_EDIT.ID_RESET_DEFAULT_TEMPLATE.MenuItem.Text
 msgid  "Reset Default Template"
-msgstr ""
-
-#: source/doc/docvor.src#DLG_ORGANIZE.LB_LEFT_TYP.Default.StringList.item
-msgid  "Templates"
-msgstr ""
-
-#: source/doc/docvor.src#DLG_ORGANIZE.LB_RIGHT_TYP.Default.StringList.item
-msgid  "Templates"
 msgstr ""
 
 #: source/doc/new.src#DLG_NEW_FILE.ModalDialog.Text
@@ -2187,6 +2187,10 @@ msgstr ""
 msgid  "Page "
 msgstr ""
 
+#: source/view/view.src#STR_ERROR_SAVE_TEMPLATE.String.Text
+msgid  "Error saving template "
+msgstr ""
+
 #: source/view/view.src#STR_READONLY.String.Text
 msgid  " (read-only)"
 msgstr ""
@@ -2204,15 +2208,19 @@ msgid  "The page size and orientation have been modified.\nWould you like to sav
 msgstr ""
 
 #: source/view/view.src#STR_PREVIEW_DOCINFO.String.Text
-msgid  "<html><body BGCOLOR="#c0c0c0"><font FACE="Arial"><dl><dt><b>Title:</b><dd>$(TITEL)<dt><b>Subject:</b><dd>$(THEME)<dt><b>Keywords:</b><dd>$(KEYWORDS)<dt><b>Description:</b><dd>$(TEXT)</dl></font></body></html>"
+msgid  "<html><body BGCOLOR=\"#c0c0c0\"><font FACE=\"Arial\"><dl><dt><b>Title:</b><dd>$(TITEL)<dt><b>Subject:</b><dd>$(THEME)<dt><b>Keywords:</b><dd>$(KEYWORDS)<dt><b>Description:</b><dd>$(TEXT)</dl></font></body></html>"
 msgstr ""
 
 #: source/view/view.src#STR_PREVIEW_NODOCINFO.String.Text
-msgid  "<HTML><BODY BGCOLOR="#c0c0c0"><BR><BR><P><FONT FACE="Arial"><B>No document properties found.</B></FONT></P></BODY></HTML>"
+msgid  "<HTML><BODY BGCOLOR=\"#c0c0c0\"><BR><BR><P><FONT FACE=\"Arial\"><B>No document properties found.</B></FONT></P></BODY></HTML>"
 msgstr ""
 
 #: source/view/view.src#MSG_CANT_CLOSE.InfoBox.Message
 msgid  "The document cannot be closed because a\n print job is being carried out."
+msgstr ""
+
+#: source/view/view.src#DLG_PRINTMONITOR_TEXT.#define.Text
+msgid  "Print Monitor"
 msgstr ""
 
 #: source/view/view.src#DLG_PRINTMONITOR.FT_PRINTING.FixedText.Text
@@ -2237,12 +2245,4 @@ msgstr ""
 
 #: source/view/view.src#MSG_ERROR_NO_WEBBROWSER_FOUND.ErrorBox.Message
 msgid  "%PRODUCTNAME could not find a web browser on your system. Please check your Desktop Preferences or install a web browser (for example, Mozilla) in the default  location requested during the browser installation."
-msgstr ""
-
-#: source/view/view.src#DLG_PRINTMONITOR_TEXT.#define.Text
-msgid  "Print Monitor"
-msgstr ""
-
-#: source/view/view.src#STR_ERROR_SAVE_TEMPLATE.String.Text
-msgid  "Error saving template "
 msgstr ""
