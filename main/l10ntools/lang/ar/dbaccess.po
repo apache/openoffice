@@ -41,23 +41,23 @@ msgstr "تعذر إجراء أي اتصال."
 
 #: source/core/resource/strings.src#RID_STR_TABLE_IS_FILTERED.String.Text
 msgid  "The table $name$ already exists. It is not visible because it has been filtered out."
-msgstr ""
+msgstr "الجدول $name$ موجود بالفعل. وهو غير مرئي بسبب إجراء تصفية له."
 
 #: source/core/resource/strings.src#RID_STR_NEED_CONFIG_WRITE_ACCESS.String.Text
 msgid  "You have no write access to the configuration data the object is based on."
-msgstr ""
+msgstr "لا تتوفر لديك صلاحية الكتابة إلى بيانات التكوين التي يستند إليها الكائن."
 
 #: source/core/resource/strings.src#RID_STR_COULDNOTCONNECT_UNSPECIFIED.String.Text
 msgid  "The connection to the external data source could not be established. An unknown error occurred. The driver is probably defective."
-msgstr ""
+msgstr "تعذر إجراء اتصال بمصدر البيانات الخارجي. حدث خطأ غير معروف. قد يكون برنامج التشغيل معيبًا."
 
 #: source/core/resource/strings.src#RID_STR_COULDNOTCONNECT_NODRIVER.String.Text
 msgid  "The connection to the external data source could not be established. No SDBC driver was found for the given URL."
-msgstr ""
+msgstr "تعذر إجراء اتصال بمصدر البيانات الخارجي. لم يتم العثور على برنامج تشغيل SDBC لعنوان URL المقدم."
 
 #: source/core/resource/strings.src#RID_STR_COULDNOTLOAD_MANAGER.String.Text
 msgid  "The connection to the external data source could not be established. The SDBC driver manager could not be loaded."
-msgstr ""
+msgstr "تعذر إجراء اتصال بمصدر البيانات الخارجي. تعذر تحميل إدارة برنامج تشغيل SDBC."
 
 #: source/core/resource/strings.src#RID_STR_FORM.String.Text
 msgid  "Form"
@@ -69,11 +69,11 @@ msgstr "التقرير"
 
 #: source/core/resource/strings.src#RID_STR_DATASOURCE_NOT_STORED.String.Text
 msgid  "The data source was not saved. Please use the interface XStorable to save the data source."
-msgstr ""
+msgstr "لم يتم حفظ مصدر البيانات. الرجاء استخدام الواجهة XStorable لحفظ مصدر البيانات."
 
 #: source/core/resource/strings.src#RID_STR_ONLY_QUERY.String.Text
 msgid  "The given command is not a SELECT statement.\nOnly queries are allowed."
-msgstr ""
+msgstr "اﻷمر المقدم ليس عبارة SELECT.\nيُسمح بالاستعلامات فقط."
 
 #: source/core/resource/strings.src#RID_STR_NO_VALUE_CHANGED.String.Text
 msgid  "No values were modified."
@@ -81,11 +81,11 @@ msgstr "لم يتم تعديل أية قيم."
 
 #: source/core/resource/strings.src#RID_STR_NO_XROWUPDATE.String.Text
 msgid  "Values could not be inserted. The XRowUpdate interface is not supported by ResultSet."
-msgstr ""
+msgstr "تعذر إدراج القيم. إن ResultSet لا يدعم واجهة XRowUpdate."
 
 #: source/core/resource/strings.src#RID_STR_NO_XRESULTSETUPDATE.String.Text
 msgid  "Values could not be inserted. The XResultSetUpdate interface is not supported by ResultSet."
-msgstr ""
+msgstr "تعذر إدراج القيم. إن ResultSet لا يدعم واجهة XResultSetUpdate."
 
 #: source/core/resource/strings.src#RID_STR_NO_UPDATE_MISSING_CONDITION.String.Text
 msgid  "Values could not be modified, due to a missing condition statement."
@@ -141,11 +141,11 @@ msgstr "لا يُسمح بالوضع النسبي في هذه الحالة."
 
 #: source/core/resource/strings.src#RID_STR_NO_REFESH_AFTERLAST.String.Text
 msgid  "A row cannot be refreshed when the ResultSet is positioned after the last row."
-msgstr ""
+msgstr "لا يمكن تحديث صف عند وضع ResultSet بعد الصف الأخير."
 
 #: source/core/resource/strings.src#RID_STR_NO_MOVETOINSERTROW_CALLED.String.Text
 msgid  "A new row cannot be inserted when the ResultSet is not first moved to the insert row."
-msgstr ""
+msgstr "لا يمكن إدراج صف جديد إذا لم يتم نقل ResultSet أولاً إلى صف الإدراج."
 
 #: source/core/resource/strings.src#RID_STR_NO_UPDATEROW.String.Text
 msgid  "A row cannot be modified in this state"
@@ -165,31 +165,31 @@ msgstr "لا يدعم برنامج التشغيل تعديل وصف العمود
 
 #: source/core/resource/strings.src#RID_STR_COLUMN_ALTER_BY_NAME.String.Text
 msgid  "The driver does not support the modification of column descriptions by changing the name."
-msgstr ""
+msgstr "لا يدعم برنامج التشغيل تعديل وصف العمود عن طريق تغيير الاسم."
 
 #: source/core/resource/strings.src#RID_STR_COLUMN_ALTER_BY_INDEX.String.Text
 msgid  "The driver does not support the modification of column descriptions by changing the index."
-msgstr ""
+msgstr "لا يدعم برنامج التشغيل تعديل وصف العمود عن طريق تغيير الفهرس."
 
 #: source/core/resource/strings.src#RID_STR_FILE_DOES_NOT_EXIST.String.Text
-msgid  "The file "$file$" does not exist."
-msgstr ""
+msgid  "The file \"$file$\" does not exist."
+msgstr "الملف \"$file$\" غير موجود."
 
 #: source/core/resource/strings.src#RID_STR_TABLE_DOES_NOT_EXIST.String.Text
-msgid  "There exists no table named "$table$"."
-msgstr ""
+msgid  "There exists no table named \"$table$\"."
+msgstr "لا يوجد جدول بالاسم \"$table$\"."
 
 #: source/core/resource/strings.src#RID_STR_QUERY_DOES_NOT_EXIST.String.Text
-msgid  "There exists no query named "$table$"."
-msgstr ""
+msgid  "There exists no query named \"$table$\"."
+msgstr "لا يوجد استعلام بالاسم \"$table$\"."
 
 #: source/core/resource/strings.src#RID_STR_CONFLICTING_NAMES.String.Text
 msgid  "There are tables in the database whose names conflict with the names of existing queries. To make full use of all queries and tables, make sure they have distinct names."
-msgstr ""
+msgstr "توجد جداول في قاعدة البيانات تتعارض أسماؤها مع أسماء استعلامات موجودة بالفعل. لتحقيق أقصى استفادة من الاستعلامات والجداول، تأكد من توفر أسماء مميزة لها."
 
 #: source/core/resource/strings.src#RID_STR_COMMAND_LEADING_TO_ERROR.String.Text
 msgid  "The SQL command leading to this error is:\n\n$command$"
-msgstr ""
+msgstr "أمر SQL الذي أدى الى حدوث هذا الخطأ:\n\n$command$"
 
 #: source/core/resource/strings.src#RID_STR_STATEMENT_WITHOUT_RESULT_SET.String.Text
 msgid  "The SQL command does not describe a result set."
@@ -221,15 +221,15 @@ msgstr "تعذر الحصول على المستند '$name$'."
 
 #: source/core/resource/strings.src#RID_STR_ERROR_WHILE_SAVING.String.Text
 msgid  "Could not save the document to $location$:\n$message$"
-msgstr ""
+msgstr "تعذر حفظ المستند إلى $location$:\n$message$"
 
 #: source/core/resource/strings.src#RID_NO_SUCH_DATA_SOURCE.String.Text
 msgid  "Error accessing data source '$name$':\n$error$"
-msgstr ""
+msgstr "حدث خطأ أثناء الوصول إلى مصدر البيانات '$name$':\n$error$"
 
 #: source/core/resource/strings.src#RID_STR_NO_SUB_FOLDER.String.Text
-msgid  "There exists no folder named "$folder$"."
-msgstr ""
+msgid  "There exists no folder named \"$folder$\"."
+msgstr "لا يوجد مجلد بالاسم \"$folder$\"."
 
 #: source/core/resource/strings.src#RID_STR_NO_DELETE_BEFORE_AFTER.String.Text
 msgid  "Cannot delete the before-first or after-last row."
@@ -296,8 +296,8 @@ msgid  "Embedding of database documents is not supported."
 msgstr "تضمين مستندات قاعدة البيانات غير مدعوم."
 
 #: source/core/resource/strings.src#RID_STR_CONNECTION_REQUEST.String.Text
-msgid  "A connection for the following URL was requested "$name$"."
-msgstr ""
+msgid  "A connection for the following URL was requested \"$name$\"."
+msgstr "تم طلب اتصال لعنوان URL التالي \"$name$\"."
 
 #: source/core/resource/strings.src#RID_STR_MISSING_EXTENSION.String.Text
 msgid  "The extension is not installed."
@@ -428,8 +428,8 @@ msgid  "The specified file name or directory does not exist."
 msgstr "اسم الملف أو الدليل المحدد غير موجود."
 
 #: source/ext/adabas/AdabasNewDb.src#STR_ERROR_IN_ADABAS_INSTALLATION.String.Text
-msgid  "No new database can be created.\nPlease check your Adabas D installation, especially the variables "DBROOT" and "DBWORK"."
-msgstr ""
+msgid  "No new database can be created.\nPlease check your Adabas D installation, especially the variables \"DBROOT\" and \"DBWORK\"."
+msgstr "لا يمكن إنشاء قاعدة بيانات جديدة.\nالرجاء التحقق من تثبيت Adabas D، ولاسيما المتغيران \"DBROOT\" و\"DBWORK\"."
 
 #: source/ext/adabas/AdabasNewDb.src#STR_STAT_WARNING.String.Text
 msgid  "Warning!"
@@ -453,15 +453,15 @@ msgstr "الاسم الذي تم إدخاله موجود بالفعل."
 
 #: source/ext/adabas/AdabasNewDb.src#STR_ADABAS_NO_DEFAULTNAME.String.Text
 msgid  "No default names could be set for the database files. The total length is more than 40 characters."
-msgstr ""
+msgstr "تعذر تعيين أية أسماء افتراضية لملفات قاعدة البيانات. حيث يزيد الطول الكلي عن 40 حرفًا."
 
 #: source/ext/adabas/AdabasNewDb.src#STR_ADABAS_NO_ACCESSRIGHTS.String.Text
 msgid  "No default names could be set for the database files. There is no write access."
-msgstr ""
+msgstr "تعذر تعيين أية أسماء افتراضية لملفات قاعدة البيانات. لا يوجد حق للوصول بالكتابة."
 
 #: source/ext/adabas/AdabasNewDb.src#STR_ADABAS_CANNOT_CONVERT.String.Text
 msgid  "The current database need to be converted. Please insert control user  and password."
-msgstr ""
+msgstr "يجب تحويل قاعدة البيانات الحالية. الرجاء إدخال اسم المستخدم وكلمة المرور الخاصين بالتحكم."
 
 #: source/ext/adabas/AdabasNewDb.src#STR_ADABAS_PASSWORD_ILLEGAL.String.Text
 msgid  "Spaces are not permitted in the password. Please enter a new password."
@@ -493,11 +493,11 @@ msgstr "مرحبًا بك في معالج ترحيل وحدات الماكرو �
 
 #: source/ext/macromigration/macromigration.src#TP_PREPARE.FT_INTRODUCTION.FixedText.Text
 msgid  "This wizard will guide you through the task of migrating your macros.\n\nAfter you finished it, all macros which were formerly embedded into the forms and reports of the current database document will have been moved to the document itself. In this course, libraries will be renamed as needed.\n\nIf your forms and reports contain references to those macros, they will be adjusted, where possible.\n\nBefore the migration can start, all forms, reports, queries and tables belonging to the document must be closed. Press 'Next' to do so."
-msgstr ""
+msgstr "سيرشدك هذا المعالج خلال مهمة ترحيل وحدات الماكرو.\n\nوبعد الانتهاء من ذلك، سيتم نقل كافة وحدات الماكرو التي تم تضمينها في السابق في النماذج والتقارير الخاصة بمستند قاعدة البيانات الحالي إلى المستند نفسه. في هذا السياق، ستتم إعادة تسمية المكتبات حسب الحاجة.\n\nفإذا كانت النماذج والتقارير تحتوي على مراجع لوحدات الماكرو هذه، فسيتم تعديلها، كلما أمكن.\n\nوقبل بدء الترحيل، يجب إغلاق كافة النماذج والتقارير والاستعلامات والجداول التي تتعلق بالمستند. اضغط على \"التالي\" للقيام بذلك."
 
 #: source/ext/macromigration/macromigration.src#TP_PREPARE.FT_CLOSE_DOC_ERROR.FixedText.Text
 msgid  "Not all objects could be closed. Please close them manually, and re-start the wizard."
-msgstr ""
+msgstr "تعذر إغلاق كافة الكائنات. الرجاء إغلاقها يدويًا، وإعادة تشغيل المعالج."
 
 #: source/ext/macromigration/macromigration.src#TP_SAVE_DBDOC_AS.FT_HEADER.FixedText.Text
 msgid  "Backup your Document"
@@ -505,7 +505,7 @@ msgstr "نسخ المستند احتياطيًا"
 
 #: source/ext/macromigration/macromigration.src#TP_SAVE_DBDOC_AS.FT_EXPLANATION.FixedText.Text
 msgid  "To allow you to go back to the state before the migration, the database document will be backed up to a location of your choice. Every change done by the wizard will be made to the original document, the backup will stay untouched."
-msgstr ""
+msgstr "وللسماح لك بالرجوع إلى الحالة التي كانت قبل الترحيل، سيتم نسخ مستند قاعدة البيانات احتياطيًا إلى موقع تقوم باختياره. وسيتم إجراء كل تغيير يقوم به المعالج على المستند الأصلي، وتظل النسخة الاحتياطية كما هي."
 
 #: source/ext/macromigration/macromigration.src#TP_SAVE_DBDOC_AS.FT_SAVE_AS_LABEL.FixedText.Text
 msgid  "Save To:"
@@ -517,7 +517,7 @@ msgstr "استعراض..."
 
 #: source/ext/macromigration/macromigration.src#TP_SAVE_DBDOC_AS.FT_START_MIGRATION.FixedText.Text
 msgid  "Press 'Next' to save a copy of your document, and to begin the migration."
-msgstr ""
+msgstr "اضغط على \"التالي\" لحفظ نسخة من المستند، وبدء الترحيل."
 
 #: source/ext/macromigration/macromigration.src#TP_MIGRATE.FT_HEADER.FixedText.Text
 msgid  "Migration Progress"
@@ -525,7 +525,7 @@ msgstr "تقدم الترحيل"
 
 #: source/ext/macromigration/macromigration.src#TP_MIGRATE.FT_OBJECT_COUNT.FixedText.Text
 msgid  "The database document contains $forms$ form(s) and $reports$ report(s), which are currently being processed:"
-msgstr ""
+msgstr "يحتوي مستند قاعدة البيانات على $forms$ نموذج (نماذج) و$reports$ تقرير (تقارير) تتم معالجتها في الوقت الحالي:"
 
 #: source/ext/macromigration/macromigration.src#TP_MIGRATE.FT_CURRENT_OBJECT_LABEL.FixedText.Text
 msgid  "Current object:"
@@ -545,7 +545,7 @@ msgstr "المستند $current$ من $overall$"
 
 #: source/ext/macromigration/macromigration.src#TP_MIGRATE.FT_MIGRATION_DONE.FixedText.Text
 msgid  "All forms and reports have been successfully processed. Press 'Next' to show a detailed summary."
-msgstr ""
+msgstr "تمت معالجة كافة النماذج والتقارير بنجاح. اضغط على \"التالي\" لعرض ملخص تفصيلي."
 
 #: source/ext/macromigration/macromigration.src#TP_SUMMARY.FT_HEADER.FixedText.Text
 msgid  "Summary"
@@ -553,11 +553,11 @@ msgstr "الملخص"
 
 #: source/ext/macromigration/macromigration.src#TP_SUMMARY.STR_SUCCESSFUL.String.Text
 msgid  "The migration was successful. Below is a log of the actions which have been taken to your document."
-msgstr ""
+msgstr "تمت عملية الترحيل بنجاح. فيما يلي سجل بالإجراءات التي تم اتخاذها بشأن المستند."
 
 #: source/ext/macromigration/macromigration.src#TP_SUMMARY.STR_UNSUCCESSFUL.String.Text
 msgid  "The migration was not successful. Examine the migration log below for details."
-msgstr ""
+msgstr "لم تتم عملية الترحيل بنجاح. راجع سجل الترحيل التالي للحصول على التفاصيل."
 
 #: source/ext/macromigration/macromigration.src#STR_FORM.String.Text
 msgid  "Form '$name$'"
@@ -629,7 +629,7 @@ msgstr "ظهر استثناء: "
 
 #: source/ext/macromigration/macromigration.src#ERR_INVALID_BACKUP_LOCATION.ErrorBox.Message
 msgid  "You need to choose a backup location other than the document location itself."
-msgstr ""
+msgstr "يجب اختيار موقع نسخ احتياطي بخلاف موقع المستند نفسه."
 
 #: source/ext/macromigration/macromigration.src#STR_INVALID_NUMBER_ARGS.String.Text
 msgid  "Invalid number of initialization arguments. Expected 1."
@@ -645,7 +645,7 @@ msgstr "لا ينطبق على المستندات للقراءة فقط."
 
 #: source/sdbtools/resource/sdbt_strings.src#STR_QUERY_AND_TABLE_DISTINCT_NAMES.String.Text
 msgid  "You cannot give a table and a query the same name. Please use a name which is not yet used by a query or table."
-msgstr ""
+msgstr "لا يمكنك أن تعطي لجدول واستعلام نفس الاسم. الرجاء استخدام اسم لم يُستخدم بعد في جدول أو استعلام."
 
 #: source/sdbtools/resource/sdbt_strings.src#STR_BASENAME_TABLE.String.Text
 msgid  "Table"
@@ -665,11 +665,11 @@ msgstr "الكائن المقدم ليس كائن جدول."
 
 #: source/sdbtools/resource/sdbt_strings.src#STR_INVALID_COMPOSITION_TYPE.String.Text
 msgid  "Invalid composition type - need a value from com.sun.star.sdb.tools.CompositionType."
-msgstr ""
+msgstr "نوع التركيب غير صالح - يلزم وجود قيمة من com.sun.star.sdb.tools.CompositionType."
 
 #: source/sdbtools/resource/sdbt_strings.src#STR_INVALID_COMMAND_TYPE.String.Text
 msgid  "Invalid command type - only TABLE and QUERY from com.sun.star.sdb.CommandType are allowed."
-msgstr ""
+msgstr "نوع أمر غير صالح - الأمر TABLE وQUERY هما المسموح بهما فقط من com.sun.star.sdb.CommandType."
 
 #: source/ui/app/app.src#RID_STR_NEW_FORM.String.Text
 msgid  "Create Form in Design View..."
@@ -801,15 +801,15 @@ msgstr " - قاعدة %PRODUCTNAME"
 
 #: source/ui/app/app.src#RID_STR_REPORTS_HELP_TEXT_WIZARD.String.Text
 msgid  "The wizard will guide you through the steps necessary to create a report."
-msgstr ""
+msgstr "سيرشدك المعالج عبر الخطوات اللازمة لإنشاء تقرير."
 
 #: source/ui/app/app.src#RID_STR_FORMS_HELP_TEXT.String.Text
 msgid  "Create a form by specifying the record source, controls, and control properties."
-msgstr ""
+msgstr "إنشاء نموذج عن طريق تحديد مصدر السجل وعناصر التحكم وخصائص عناصر التحكم."
 
 #: source/ui/app/app.src#RID_STR_REPORT_HELP_TEXT.String.Text
 msgid  "Create a report by specifying the record source, controls, and control properties."
-msgstr ""
+msgstr "إنشاء تقرير عن طريق تحديد مصدر السجل وعناصر التحكم وخصائص عناصر التحكم."
 
 #: source/ui/app/app.src#RID_STR_FORMS_HELP_TEXT_WIZARD.String.Text
 msgid  "The wizard will guide you through the steps necessary to create a form."
@@ -817,7 +817,7 @@ msgstr "سيرشدك المعالج عبر الخطوات اللازمة لإن�
 
 #: source/ui/app/app.src#RID_STR_QUERIES_HELP_TEXT.String.Text
 msgid  "Create a query by specifying the filters, input tables, field names,  and  properties for sorting or grouping."
-msgstr ""
+msgstr "إنشاء استعلام عن طريق تحديد عوامل التصفية وجداول الإدخال وأسماء الحقول وخصائص الفرز والتجميع."
 
 #: source/ui/app/app.src#RID_STR_QUERIES_HELP_TEXT_SQL.String.Text
 msgid  "Create a query  entering an SQL statement directly."
@@ -825,19 +825,19 @@ msgstr "إنشاء استعلام عن طريق إدخال عبارة SQL مبا
 
 #: source/ui/app/app.src#RID_STR_QUERIES_HELP_TEXT_WIZARD.String.Text
 msgid  "The wizard will guide you through the steps necessary to create a query."
-msgstr ""
+msgstr "سيرشدك المعالج عبر الخطوات اللازمة لإنشاء استعلام."
 
 #: source/ui/app/app.src#RID_STR_TABLES_HELP_TEXT_DESIGN.String.Text
 msgid  "Create a table by specifying the field names and properties, as well as the data types."
-msgstr ""
+msgstr "إنشاء جدول عن طريق تحديد أسماء الحقول والخصائص، بالإضافة إلى أنواع البيانات."
 
 #: source/ui/app/app.src#RID_STR_TABLES_HELP_TEXT_WIZARD.String.Text
 msgid  "Choose from a selection of business and personal table samples, which you customize to create a table."
-msgstr ""
+msgstr "الاختيار من بين مجموعة عينات جداول الأعمال والجداول الشخصية التي تقوم بتخصيصها لإنشاء جدول."
 
 #: source/ui/app/app.src#RID_STR_VIEWS_HELP_TEXT_DESIGN.String.Text
 msgid  "Create a view by specifying the tables and field names you would like to have visible."
-msgstr ""
+msgstr "إنشاء عرض عن طريق تحديد الجداول وأسماء الحقول التي تريد جعلها مرئية."
 
 #: source/ui/app/app.src#RID_STR_VIEWS_HELP_TEXT_WIZARD.String.Text
 msgid  "Opens the view wizard"
@@ -865,11 +865,11 @@ msgstr "تعطيل المعاينة"
 
 #: source/ui/app/app.src#APP_SAVEMODIFIED.QueryBox.Message
 msgid  "The database has been modified.\nDo you want to save the changes?"
-msgstr ""
+msgstr "تم تعديل قاعدة البيانات.\nهل تريد حفظ التغييرات؟"
 
 #: source/ui/app/app.src#APP_CLOSEDOCUMENTS.QueryBox.Message
 msgid  "The connection type has been altered.\nFor the changes to take effect, all forms, reports, queries and tables must be closed.\n\nDo you want to close all documents now?"
-msgstr ""
+msgstr "تم تغيير نوع الاتصال.\nلكي تصبح التغييرات نافذة المفعول، يجب إغلاق كافة النماذج والتقارير والاستعلامات والجداول.\n\nهل تريد إغلاق جميع المستندات الآن؟"
 
 #: source/ui/app/app.src#RID_MENU_APP_PREVIEW.SID_DB_APP_DISABLE_PREVIEW.MenuItem.Text
 msgid  "None"
@@ -882,6 +882,14 @@ msgstr "معلومات المستند"
 #: source/ui/app/app.src#RID_MENU_APP_PREVIEW.SID_DB_APP_VIEW_DOC_PREVIEW.MenuItem.Text
 msgid  "Document"
 msgstr "المستند"
+
+#: source/ui/app/app.src#RID_STR_FORM.String.Text
+msgid  "Form"
+msgstr "النموذج"
+
+#: source/ui/app/app.src#RID_STR_REPORT.String.Text
+msgid  "Report"
+msgstr "التقرير"
 
 #: source/ui/app/app.src#STR_FRM_LABEL.String.Text
 msgid  "F~orm name"
@@ -901,7 +909,7 @@ msgstr "يحتوي المستند على نماذج وتقارير ذات وحد
 
 #: source/ui/app/app.src#STR_SUB_DOCS_WITH_SCRIPTS_DETAIL.String.Text
 msgid  "Macros should be embedded into the database document itself.\n\nYou can continue to use your document as before, however, you are encouraged to migrate your macros. The menu item 'Tools / Migrate Macros ...' will assist you with this.\n\nNote that you won't be able to embed macros into the database document itself until this migration is done. "
-msgstr ""
+msgstr "ينبغي تضمين وحدات الماكرو في نفس مستند قاعدة البيانات.\n\nيمكنك متابعة استخدام المستند كما في السابق، ولكننا ننصح بترحيل وحدات الماكرو. وسيساعدك عنصر القائمة \"أدوات / ترحيل وحدات الماكرو ...\" في هذا الأمر.\n\nلاحظ أنك لن تتمكن من تضمين وحدات ماكرو في مستند قاعدة البيانات ذاته حتى ينتهي هذا الترحيل. "
 
 #: source/ui/app/app.src#RID_STR_EMBEDDED_DATABASE.String.Text
 msgid  "Embedded database"
@@ -915,17 +923,9 @@ msgstr "لا يمكن تحديد فئات مختلفة."
 msgid  "Unsupported object type found ($type$)."
 msgstr "تم العثور على نوع كائن غير مدعوم ($type$)."
 
-#: source/ui/app/app.src#RID_STR_FORM.String.Text
-msgid  "Form"
-msgstr "النموذج"
-
-#: source/ui/app/app.src#RID_STR_REPORT.String.Text
-msgid  "Report"
-msgstr "التقرير"
-
 #: source/ui/browser/sbabrw.src#QUERY_BRW_SAVEMODIFIED.QueryBox.Message
 msgid  "The current record has been changed.\nDo you want to save the changes?"
-msgstr ""
+msgstr "تم تغيير السجل الحالي.\nهل تريد حفظ التغييرات؟"
 
 #: source/ui/browser/sbabrw.src#QUERY_BRW_DELETE_ROWS.QueryBox.Message
 msgid  "Do you want to delete the selected data?"
@@ -955,6 +955,18 @@ msgstr "الاستعلامات"
 msgid  "Tables"
 msgstr "الجداول"
 
+#: source/ui/browser/sbabrw.src#ID_TREE_EDIT_DATABASE.#define.Text
+msgid  "Edit ~Database File..."
+msgstr "تحرير ملف ~قاعدة البيانات..."
+
+#: source/ui/browser/sbabrw.src#ID_TREE_ADMINISTRATE.#define.Text
+msgid  "Registered databases ..."
+msgstr "قواعد البيانات المسجلة ..."
+
+#: source/ui/browser/sbabrw.src#ID_TREE_CLOSE_CONN.#define.Text
+msgid  "Disco~nnect"
+msgstr "قطع الات~صال"
+
 #: source/ui/browser/sbabrw.src#STR_TITLE_CONFIRM_DELETION.String.Text
 msgid  "Confirm Deletion"
 msgstr "تأكيد الحذف"
@@ -977,11 +989,11 @@ msgstr "ظهرت تحذيرات"
 
 #: source/ui/browser/sbabrw.src#STR_OPENTABLES_WARNINGS_DETAILS.String.Text
 msgid  "While retrieving the tables, warnings were reported by the database connection."
-msgstr ""
+msgstr "أثناء استرداد الجداول، أبلغ اتصال قاعدة البيانات عن ظهور تحذيرات."
 
 #: source/ui/browser/sbabrw.src#STR_CONNECTING_DATASOURCE.String.Text
-msgid  "Connecting to "$name$" ..."
-msgstr ""
+msgid  "Connecting to \"$name$\" ..."
+msgstr "جارٍ الاتصال بـ \"$name$\" ..."
 
 #: source/ui/browser/sbabrw.src#STR_LOADING_QUERY.String.Text
 msgid  "Loading query $name$ ..."
@@ -996,24 +1008,12 @@ msgid  "No table format could be found."
 msgstr "تعذر العثور على أي تنسيق جدول."
 
 #: source/ui/browser/sbabrw.src#STR_COULDNOTCONNECT_DATASOURCE.String.Text
-msgid  "The connection to the data source "$name$" could not be established."
-msgstr ""
+msgid  "The connection to the data source \"$name$\" could not be established."
+msgstr "تعذر إجراء اتصال بمصدر البيانات \"$name$\"."
 
 #: source/ui/browser/sbabrw.src#RID_MENU_REFRESH_DATA.ID_BROWSER_REFRESH_REBUILD.MenuItem.Text
 msgid  "Rebuild"
 msgstr "إعادة إنشاء"
-
-#: source/ui/browser/sbabrw.src#ID_TREE_EDIT_DATABASE.#define.Text
-msgid  "Edit ~Database File..."
-msgstr "تحرير ملف ~قاعدة البيانات..."
-
-#: source/ui/browser/sbabrw.src#ID_TREE_ADMINISTRATE.#define.Text
-msgid  "Registered databases ..."
-msgstr "قواعد البيانات المسجلة ..."
-
-#: source/ui/browser/sbabrw.src#ID_TREE_CLOSE_CONN.#define.Text
-msgid  "Disco~nnect"
-msgstr "قطع الات~صال"
 
 #: source/ui/browser/sbagrid.src#RID_SBA_GRID_COLCTXMENU.ID_BROWSER_COLATTRSET.MenuItem.Text
 msgid  "Column ~Format..."
@@ -1052,8 +1052,8 @@ msgid  "View #"
 msgstr "العرض #"
 
 #: source/ui/browser/sbagrid.src#STR_NAME_ALREADY_EXISTS.String.Text
-msgid  "The name "#" already exists."
-msgstr ""
+msgid  "The name \"#\" already exists."
+msgstr "الاسم \"#\" موجود بالفعل."
 
 #: source/ui/browser/sbagrid.src#STR_NO_COLUMNNAME_MATCHING.String.Text
 msgid  "No matching column names were found."
@@ -1137,7 +1137,7 @@ msgstr "الرجاء التحقق من الإعدادات الحالية، مث�
 
 #: source/ui/control/tabletree.src#STR_NOTABLEINFO.String.Text
 msgid  "Successfully connected, but information about database tables is not available."
-msgstr ""
+msgstr "تم الاتصال بنجاح؛ إلا أن معلومات جداول قاعدة البيانات غير متوفرة."
 
 #: source/ui/control/tabletree.src#STR_ALL_TABLES.String.Text
 msgid  "All tables"
@@ -1236,12 +1236,12 @@ msgid  "Do you want to save the changes made to the current index?"
 msgstr "هل تريد حفظ التغييرات التي تمت على الفهرس الحالي؟"
 
 #: source/ui/dlg/indexdialog.src#STR_INDEX_NAME_ALREADY_USED.String.Text
-msgid  "There is already another index named "$name$"."
-msgstr ""
+msgid  "There is already another index named \"$name$\"."
+msgstr "يوجد فهرس آخر بالفعل يحمل الاسم \"$name$\"."
 
 #: source/ui/dlg/indexdialog.src#STR_INDEXDESIGN_DOUBLE_COLUMN_NAME.String.Text
-msgid  "In an index definition, no table column may occur more than once. However, you have entered column "$name$" twice."
-msgstr ""
+msgid  "In an index definition, no table column may occur more than once. However, you have entered column \"$name$\" twice."
+msgstr "لا يُسمح باستخدام عمود جدول أكثر من مرة في تعريف الفهرس. إلا أنك أدخلت العمود \"$name$\" مرتين."
 
 #: source/ui/dlg/paramdialog.src#DLG_PARAMETERS.FL_PARAMS.FixedLine.Text
 msgid  "~Parameters"
@@ -1260,8 +1260,8 @@ msgid  "Parameter Input"
 msgstr "إدخال المعلمة"
 
 #: source/ui/dlg/paramdialog.src#DLG_PARAMETERS.STR_COULD_NOT_CONVERT_PARAM.String.Text
-msgid  "The entry could not be converted to a valid value for the "$name$"column"
-msgstr ""
+msgid  "The entry could not be converted to a valid value for the \"$name$\"column"
+msgstr "تعذر تحويل الإدخال إلى قيمة صالحة للعمود \"$name$\"."
 
 #: source/ui/dlg/sqlmessage.src#DLG_SQLEXCEPTIONCHAIN.ModalDialog.Text
 msgid  "%PRODUCTNAME Base"
@@ -1289,7 +1289,7 @@ msgstr "رمز الخطأ"
 
 #: source/ui/dlg/sqlmessage.src#STR_EXPLAN_STRINGCONVERSION_ERROR.String.Text
 msgid  "A frequent reason for this error is an inappropriate character set setting for the language of your database. Check the setting by choosing Edit - Database - Properties."
-msgstr ""
+msgstr "من الأسباب الشائعة لهذا الخطأ تعيين مجموعة الأحرف غير الملائمة للغة قاعدة البيانات. تحقق من الإعداد عن طريق اختيار تحرير - قاعدة البيانات - خصائص."
 
 #: source/ui/dlg/sqlmessage.src#STR_EXCEPTION_ERROR.String.Text
 msgid  "Error"
@@ -1312,8 +1312,16 @@ msgid  "Standard Filter"
 msgstr "تصفية قياسية"
 
 #: source/ui/dlg/queryfilter.src#DLG_FILTERCRIT.LB_WHERECOND2.Default.StringList.item
+msgid  "AND"
+msgstr "AND"
+
+#: source/ui/dlg/queryfilter.src#DLG_FILTERCRIT.LB_WHERECOND2.Default.StringList.item
 msgid  "OR"
 msgstr "OR"
+
+#: source/ui/dlg/queryfilter.src#DLG_FILTERCRIT.LB_WHERECOND3.Default.StringList.item
+msgid  "AND"
+msgstr "AND"
 
 #: source/ui/dlg/queryfilter.src#DLG_FILTERCRIT.LB_WHERECOND3.Default.StringList.item
 msgid  "OR"
@@ -1346,14 +1354,6 @@ msgstr "- بلا -"
 #: source/ui/dlg/queryfilter.src#DLG_FILTERCRIT.STR_COMPARE_OPERATORS.String.Text
 msgid  "=;<>;<;<=;>;>=;like;not like;null;not null"
 msgstr "=;<>;<;<=;>;>=;like;not like;null;not null"
-
-#: source/ui/dlg/queryfilter.src#DLG_FILTERCRIT.LB_WHERECOND2.Default.StringList.item
-msgid  "AND"
-msgstr "AND"
-
-#: source/ui/dlg/queryfilter.src#DLG_FILTERCRIT.LB_WHERECOND3.Default.StringList.item
-msgid  "AND"
-msgstr "AND"
 
 #: source/ui/dlg/RelationDlg.src#DLG_REL_PROPERTIES.ModalDialog.Text
 msgid  "Relations"
@@ -1412,12 +1412,24 @@ msgid  "Sort Order"
 msgstr "ترتيب الفرز"
 
 #: source/ui/dlg/queryorder.src#DLG_ORDERCRIT.LB_ORDERVALUE1.Default.StringList.item
+msgid  "ascending"
+msgstr "تصاعدي"
+
+#: source/ui/dlg/queryorder.src#DLG_ORDERCRIT.LB_ORDERVALUE1.Default.StringList.item
 msgid  "descending"
 msgstr "تنازلي"
 
 #: source/ui/dlg/queryorder.src#DLG_ORDERCRIT.LB_ORDERVALUE2.Default.StringList.item
+msgid  "ascending"
+msgstr "تصاعدي"
+
+#: source/ui/dlg/queryorder.src#DLG_ORDERCRIT.LB_ORDERVALUE2.Default.StringList.item
 msgid  "descending"
 msgstr "تنازلي"
+
+#: source/ui/dlg/queryorder.src#DLG_ORDERCRIT.LB_ORDERVALUE3.Default.StringList.item
+msgid  "ascending"
+msgstr "تصاعدي"
 
 #: source/ui/dlg/queryorder.src#DLG_ORDERCRIT.LB_ORDERVALUE3.Default.StringList.item
 msgid  "descending"
@@ -1450,18 +1462,6 @@ msgstr "ترتيب الفرز"
 #: source/ui/dlg/queryorder.src#DLG_ORDERCRIT.STR_NOENTRY.String.Text
 msgid  "<none>"
 msgstr "<بلا>"
-
-#: source/ui/dlg/queryorder.src#DLG_ORDERCRIT.LB_ORDERVALUE1.Default.StringList.item
-msgid  "ascending"
-msgstr "تصاعدي"
-
-#: source/ui/dlg/queryorder.src#DLG_ORDERCRIT.LB_ORDERVALUE2.Default.StringList.item
-msgid  "ascending"
-msgstr "تصاعدي"
-
-#: source/ui/dlg/queryorder.src#DLG_ORDERCRIT.LB_ORDERVALUE3.Default.StringList.item
-msgid  "ascending"
-msgstr "تصاعدي"
 
 #: source/ui/dlg/advancedsettings.src#AUTO_DATAHANDLING(AUTO_Y).FL_DATAHANDLING.FixedLine.Text
 msgid  "Options"
@@ -1532,6 +1532,18 @@ msgid  "Respect the result set type from the database driver"
 msgstr ""
 
 #: source/ui/dlg/advancedsettings.src#WORKAROUND.Default.StringList.item
+msgid  "Default"
+msgstr "الافتراضي"
+
+#: source/ui/dlg/advancedsettings.src#WORKAROUND.Default.StringList.item
+msgid  "SQL"
+msgstr "SQL"
+
+#: source/ui/dlg/advancedsettings.src#WORKAROUND.Default.StringList.item
+msgid  "Mixed"
+msgstr "مختلط"
+
+#: source/ui/dlg/advancedsettings.src#WORKAROUND.Default.StringList.item
 msgid  "MS Access"
 msgstr "MS Access"
 
@@ -1571,18 +1583,6 @@ msgstr "إعدادات خاصة"
 msgid  "Advanced Settings"
 msgstr "خصائص متقدمة"
 
-#: source/ui/dlg/advancedsettings.src#WORKAROUND.Default.StringList.item
-msgid  "Default"
-msgstr "الافتراضي"
-
-#: source/ui/dlg/advancedsettings.src#WORKAROUND.Default.StringList.item
-msgid  "SQL"
-msgstr "SQL"
-
-#: source/ui/dlg/advancedsettings.src#WORKAROUND.Default.StringList.item
-msgid  "Mixed"
-msgstr "مختلط"
-
 #: source/ui/dlg/CollectionView.src#DLG_COLLECTION_VIEW.ModalDialog.Text
 msgid  "Save"
 msgstr "حفظ"
@@ -1616,12 +1616,12 @@ msgid  "The file already exists. Overwrite?"
 msgstr "الملف موجود بالفعل. هل تريد استبداله؟"
 
 #: source/ui/dlg/dbadmin2.src#STR_ENTER_CONNECTION_PASSWORD.String.Text
-msgid  "A password is needed to connect to the data source "$name$"."
-msgstr ""
+msgid  "A password is needed to connect to the data source \"$name$\"."
+msgstr "يلزم إدخال كلمة المرور للاتصال بمصدر البيانات \"$name$\"."
 
 #: source/ui/dlg/dbadmin2.src#STR_ASK_FOR_DIRECTORY_CREATION.String.Text
 msgid  "The directory\n\n$path$\n\ndoes not exist. Should it be created?"
-msgstr ""
+msgstr "الدليل\n\n$path$\n\nغير موجود. هل تريد إنشاءه؟"
 
 #: source/ui/dlg/dbadmin2.src#STR_COULD_NOT_CREATE_DIRECTORY.String.Text
 msgid  "The directory $name$ could not be created."
@@ -1773,7 +1773,7 @@ msgstr "مرحبًا بك في معالج قاعدة بيانات %PRODUCTNAME"
 
 #: source/ui/dlg/dbadmin.src#PAGE_GENERAL.FT_GENERALHELPTEXT.FixedText.Text
 msgid  "Use the Database Wizard to create a new database, open an existing database file, or connect to a database stored on a server."
-msgstr ""
+msgstr "استخدم معالج قاعدة البيانات لإنشاء قاعدة بيانات جديدة، أو فتح ملف قاعدة بيانات موجود، أو الاتصال بقاعدة بيانات مخزنة على الخادم."
 
 #: source/ui/dlg/dbadmin.src#PAGE_GENERAL.FT_DATASOURCEHEADER.FixedText.Text
 msgid  "What do you want to do?"
@@ -1797,7 +1797,7 @@ msgstr "الاتصال بقاعدة بيانا~ت موجودة"
 
 #: source/ui/dlg/dbadmin.src#PAGE_GENERAL.FT_DATASOURCETYPE_PRE.FixedText.Text
 msgid  "Select the type of database to which you want to establish a connection."
-msgstr ""
+msgstr "حدد نوع قاعدة البيانات التي تريد إجراء اتصال بها."
 
 #: source/ui/dlg/dbadmin.src#PAGE_GENERAL.FT_DATATYPE.FixedText.Text
 msgid  "Database ~type "
@@ -1809,7 +1809,7 @@ msgstr "قاعدة بيانات"
 
 #: source/ui/dlg/dbadmin.src#PAGE_GENERAL.FT_DATASOURCETYPE_POST.FixedText.Text
 msgid  "On the following pages, you can make detailed settings for the connection.\n\nThe new settings you make will overwrite your existing settings."
-msgstr ""
+msgstr "في الصفحات التالية، يمكن تعيين الإعدادات التفصيليّة للاتصال.\n\nسوف تحل الإعدادات الجديدة محل الإعدادات الموجودة."
 
 #: source/ui/dlg/dbadmin.src#PAGE_GENERAL.STR_MYSQLENTRY.String.Text
 msgid  "MySQL"
@@ -1821,11 +1821,11 @@ msgstr "خصائص مصدر البيانات: #"
 
 #: source/ui/dlg/dbadmin.src#PAGE_GENERAL.STR_COULDNOTLOAD_ODBCLIB.String.Text
 msgid  "Could not load the program library #lib# or it is corrupted. The ODBC data source selection is not available."
-msgstr ""
+msgstr "إما أنه تعذر تحميل مكتبة البرنامج #lib#، أو أنها تالفة. تحديد مصادر بيانات ODBC غير متوفر."
 
 #: source/ui/dlg/dbadmin.src#PAGE_GENERAL.STR_UNSUPPORTED_DATASOURCE_TYPE.String.Text
 msgid  "This kind of data source is not supported on this platform.\nYou are allowed to change the settings, but you probably will not be able to connect to the database."
-msgstr ""
+msgstr "نوع مصدر البيانات هذا غير مدعوم على هذا النظام الأساسي.\nيُسمح لك بتغيير الإعدادات؛ ولكن لن تستطيع على الأرجح الاتصال بقاعدة البيانات."
 
 #: source/ui/dlg/dbadmin.src#PAGE_GENERAL.String.Text
 msgid  "General"
@@ -1841,7 +1841,7 @@ msgstr "عرض السجلات المحذوفة أيضًا"
 
 #: source/ui/dlg/dbadmin.src#PAGE_DBASE.FT_SPECIAL_MESSAGE.FixedText.Text
 msgid  "Note: When deleted, and thus inactive, records are  displayed, you will not be able to delete records from the data source."
-msgstr ""
+msgstr "ملاحظة: عند عرض السجلات المحذوفة والتي تظهر بحالة غير نشطة وفقًا لذلك، لن تكون قادرًا على حذف السجلات من مصدر البيانات."
 
 #: source/ui/dlg/dbadmin.src#PAGE_DBASE.PB_INDICIES.PushButton.Text
 msgid  "Indexes..."
@@ -1953,7 +1953,7 @@ msgstr "إ~عدادات برنامج التشغيل"
 
 #: source/ui/dlg/dbadmin.src#STR_ERR_USE_CONNECT_TO.String.Text
 msgid  "Please choose 'Connect to an existing database' to connect to an existing database instead."
-msgstr ""
+msgstr "يُرجى اختيار \"الاتصال بقاعدة بيانات موجودة\" للاتصال بقاعدة بيانات موجودة بدلاً من ذلك."
 
 #: source/ui/dlg/dlgsave.src#DLG_SAVE_AS.ModalDialog.Text
 msgid  "Save As"
@@ -2025,7 +2025,7 @@ msgstr "ملف قاعدة بيانات Microsoft Access"
 
 #: source/ui/dlg/AutoControls.src#STR_NO_ADDITIONAL_SETTINGS.String.Text
 msgid  "No more settings are necessary. To verify that the connection is working, click the '%test' button."
-msgstr ""
+msgstr "ليست هناك حاجة لمزيد من الإعدادات. للتحقق من عمل الاتصال، انقر فوق الزر '%test'."
 
 #: source/ui/dlg/AutoControls.src#STR_COMMONURL.String.Text
 msgid  "Datasource URL"
@@ -2197,7 +2197,7 @@ msgstr "الذاكرة المستخدمة حاليًا"
 
 #: source/ui/dlg/AdabasStat.src#STR_ADABAS_ERROR_SYSTEMTABLES.String.Text
 msgid  "No information could be displayed because no access rights exist for the required system tables."
-msgstr ""
+msgstr "لا يمكن عرض أية معلومات نظرًا لعدم وجود حقوق وصول لجداول النظام المطلوبة."
 
 #: source/ui/dlg/directsql.src#DLG_DIRECTSQL.FL_SQL.FixedLine.Text
 msgid  "SQL command"
@@ -2233,7 +2233,7 @@ msgstr "تم تنفيذ الأمر بنجاح."
 
 #: source/ui/dlg/directsql.src#STR_DIRECTSQL_CONNECTIONLOST.String.Text
 msgid  "The connection to the database has been lost. This dialog will be closed."
-msgstr ""
+msgstr "تم فقد الاتصال بقاعدة البيانات. سيتم إغلاق مربع الحوار هذا."
 
 #: source/ui/dlg/dbfindex.src#DLG_DBASE_INDEXES.ModalDialog.Text
 msgid  "Indexes"
@@ -2288,8 +2288,8 @@ msgid  "The database does not support user administration."
 msgstr "قاعدة البيانات لا تدعم إدارة المستخدمين."
 
 #: source/ui/dlg/UserAdmin.src#DLG_PASSWORD.FL_USER.FixedLine.Text
-msgid  "User "$name$:  $""
-msgstr ""
+msgid  "User \"$name$:  $\""
+msgstr "المستخدم \"$name$: $\""
 
 #: source/ui/dlg/UserAdmin.src#DLG_PASSWORD.FT_OLDPASSWORD.FixedText.Text
 msgid  "Old p~assword"
@@ -2389,7 +2389,7 @@ msgstr "إعداد اتصال بقاعدة بيانات MySQL"
 
 #: source/ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_MYSQL_INTRO.FT_MYSQL_HELPTEXT.FixedText.Text
 msgid  "You can connect to a MySQL database using either ODBC or JDBC.\nPlease contact your system administrator if you are unsure about the following settings."
-msgstr ""
+msgstr "يمكن الاتصال بقاعدة بيانات MySQL إما باستخدام ODBC أو JDBC.\nالرجاء مراجعة إدارة النظام إذا لم تكن متأكدًا من الإعدادات التالية."
 
 #: source/ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_MYSQL_INTRO.FT_MYSQLCONNECTIONMODE.FixedText.Text
 msgid  "How do you want to connect to your MySQL database?"
@@ -2465,7 +2465,7 @@ msgstr "إعداد الاتصال بقاعدة بيانات MySQL باستخدا
 
 #: source/ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_MYSQL_JDBC.STR_MYSQLJDBC_HELPTEXT.String.Text
 msgid  "Please enter the required information to connect to a MySQL database using JDBC. Note that a JDBC driver class must be installed on your system and registered with %PRODUCTNAME.\nPlease contact your system administrator if you are unsure about the following settings."
-msgstr ""
+msgstr "الرجاء إدخال المعلومات المطلوبة للاتصال بقاعدة بيانات MySQL باستخدام JDBC. لاحظ أنه يجب تثبيت فئة برنامج تشغيل JDBC على النظام لديك وتسجيلها مع %PRODUCTNAME.\nالرجاء الاتصال بمسؤول النظام إذا لم تكن متأكدًا من الإعدادات التالية."
 
 #: source/ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_MYSQL_JDBC.STR_MYSQL_DRIVERCLASSTEXT.String.Text
 msgid  "MySQL JDBC d~river class:"
@@ -2497,7 +2497,7 @@ msgstr "اعداد الاتصال بالملفات النصية"
 
 #: source/ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_TEXT.STR_TEXT_HELPTEXT.String.Text
 msgid  "Select the folder where the CSV (Comma Separated Values) text files are stored. %PRODUCTNAME Base will open these files in read-only mode."
-msgstr ""
+msgstr "حدد المجلد الذي تخزن فيه ملفات CSV (القيم المفصولة بفواصل) النصية. ستقوم قاعدة %PRODUCTNAME بفتح هذه الملفات في وضع القراءة فقط."
 
 #: source/ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_TEXT.STR_TEXT_PATH_OR_FILE.String.Text
 msgid  "Path to text files"
@@ -2517,7 +2517,7 @@ msgstr "إعداد الاتصال بدليل LDAP"
 
 #: source/ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_LDAP.FT_LDAP_HELPTEXT.FixedText.Text
 msgid  "Please enter the required information to connect to an LDAP directory.\nPlease contact your system administrator if you are unsure about the following settings."
-msgstr ""
+msgstr "الرجاء إدخال المعلومات المطلوبة للاتصال بدليل LDAP.\nالرجاء طلب الاتصال بمسؤول النظام إذا لم تكن متأكدًا من الإعدادات التالية."
 
 #: source/ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_LDAP.STR_LDAP_DEFAULT.String.Text
 msgid  "Default: 389"
@@ -2533,7 +2533,7 @@ msgstr "إعداد الاتصال بقاعدة بيانات Adabas D"
 
 #: source/ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_ADABAS.STR_ADABAS_HELPTEXT.String.Text
 msgid  "Enter the name of the Adabas D database you want to connect to.\nClick 'Browse...' to select an Adabas D database that is already registered in %PRODUCTNAME."
-msgstr ""
+msgstr "أدخل اسم قاعدة بيانات Adabas D التي تريد الاتصال بها.\nانقر فوق \"استعراض...\" لتحديد قاعدة بيانات Adabas D المسجلة مسبقًا في %PRODUCTNAME."
 
 #: source/ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_ADO.STR_ADO_HEADERTEXT.String.Text
 msgid  "Set up a connection to an ADO database"
@@ -2541,7 +2541,7 @@ msgstr "إعداد الاتصال بقاعدة بيانات ADO"
 
 #: source/ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_ADO.STR_ADO_HELPTEXT.String.Text
 msgid  "Please enter the URL of the ADO data source you want to connect to.\nClick 'Browse' to configure provider-specific settings.\nPlease contact your system administrator if you are unsure about the following settings."
-msgstr ""
+msgstr "الرجاء إدخال عنوان URL لمصدر بيانات ADO الذي تريد الاتصال به.\nانقر فوق \"استعراض\" لتكوين الإعدادات الخاصة بالموفر.\nالرجاء الاتصال بمسؤول النظام إذا لم تكن متأكدًا من الإعدادات التالية."
 
 #: source/ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_ODBC.STR_ODBC_HEADERTEXT.String.Text
 msgid  "Set up a connection to an ODBC database"
@@ -2549,7 +2549,7 @@ msgstr "إعداد الاتصال بقاعدة بيانات ODBC"
 
 #: source/ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_ODBC.STR_ODBC_HELPTEXT.String.Text
 msgid  "Enter the name of the ODBC database you want to connect to.\nClick 'Browse...' to select an ODBC database that is already registered in %PRODUCTNAME.\nPlease contact your system administrator if you are unsure about the following settings."
-msgstr ""
+msgstr "أدخل اسم قاعدة بيانات ODBC التي تريد الاتصال بها.\nانقر فوق \"استعراض...\" لتحديد قاعدة بيانات ODBC المسجلة مسبقًا في %PRODUCTNAME.\nالرجاء الاتصال بمسؤول النظام إذا لم تكن متأكدًا من الإعدادات التالية."
 
 #: source/ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_JDBC.STR_JDBC_HEADERTEXT.String.Text
 msgid  "Set up a connection to a JDBC database"
@@ -2557,7 +2557,7 @@ msgstr "إعداد الاتصال بقاعدة بيانات JDBC"
 
 #: source/ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_JDBC.STR_JDBC_HELPTEXT.String.Text
 msgid  "Please enter the required information to connect to a JDBC database.\nPlease contact your system administrator if you are unsure about the following settings."
-msgstr ""
+msgstr "الرجاء إدخال المعلومات المطلوبة للاتصال بقاعدة بيانات JDBC.\nالرجاء الاتصال بمسؤول النظام إذا لم تكن متأكدًا من الإعدادات التالية."
 
 #: source/ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_ORACLE.STR_ORACLE_HEADERTEXT.String.Text
 msgid  "Set up a connection to an Oracle database"
@@ -2573,7 +2573,7 @@ msgstr "فئة برنامج تش~غيل Oracle JDBC"
 
 #: source/ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_ORACLE.STR_ORACLE_HELPTEXT.String.Text
 msgid  "Please enter the required information to connect to an Oracle database.Note that a JDBC Driver Class must be installed on your system and registered with %PRODUCTNAME.\nPlease contact your system administrator if you are unsure about the following settings."
-msgstr ""
+msgstr "الرجاء إدخال المعلومات المطلوبة للاتصال بقاعدة بيانات Oracle. لاحظ أن فئة برنامج تشغيل JDBC يجب أن يكون مثبتًا على نظامك ومسجلاً مع %PRODUCTNAME.\nالرجاء الاتصال بمسؤول النظام إذا لم تكن متأكدًا من الإعدادات التالية."
 
 #: source/ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_SPREADSHEET.STR_SPREADSHEET_HEADERTEXT.String.Text
 msgid  "Set up a connection to spreadsheets"
@@ -2581,7 +2581,7 @@ msgstr "إعداد الاتصال بجداول البيانات"
 
 #: source/ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_SPREADSHEET.STR_SPREADSHEET_HELPTEXT.String.Text
 msgid  "Click 'Browse...' to select a %PRODUCTNAME spreadsheet or Microsoft Excel workbook.\n%PRODUCTNAME will open this file in read-only mode."
-msgstr ""
+msgstr "انقر فوق \"استعراض...\" لتحديد جدول بيانات %PRODUCTNAME أو ورقة عمل Microsoft Excel.\nسيقوم %PRODUCTNAME بفتح هذا الملف في وضع القراءة فقط."
 
 #: source/ui/dlg/dbadminsetup.src#PAGE_DBWIZARD_SPREADSHEET.STR_SPREADSHEETPATH.String.Text
 msgid  "~Location and file name"
@@ -2723,6 +2723,50 @@ msgstr "فئة الاختبار"
 msgid  "Socket"
 msgstr "مأخذ"
 
+#: source/ui/inc/toolbox_tmpl.hrc#ID_BROWSER_REFRESH.#define.Text
+msgid  "Refresh"
+msgstr "تحديث"
+
+#: source/ui/inc/toolbox_tmpl.hrc#ID_NEW_VIEW_DESIGN.#define.Text
+msgid  "New ~View Design"
+msgstr "تصميم ~عرض جديد"
+
+#: source/ui/inc/toolbox_tmpl.hrc#ID_NEW_TABLE_DESIGN.#define.Text
+msgid  "New ~Table Design"
+msgstr "تصمي~م جدول جديد"
+
+#: source/ui/inc/toolbox_tmpl.hrc#ID_NEW_QUERY_WIZARD.#define.Text
+msgid  "Query AutoPilot..."
+msgstr "معالج الاستعلامات التلقائي..."
+
+#: source/ui/inc/toolbox_tmpl.hrc#ID_NEW_QUERY_DESIGN.#define.Text
+msgid  "New ~Query (Design View)"
+msgstr "اس~تعلام جديد (عرض التصميم)"
+
+#: source/ui/inc/toolbox_tmpl.hrc#ID_EDIT_QUERY_DESIGN.#define.Text
+msgid  "~Edit Query"
+msgstr "~تعديل الاستعلام"
+
+#: source/ui/inc/toolbox_tmpl.hrc#ID_NEW_QUERY_SQL.#define.Text
+msgid  "New Query (~SQL View)"
+msgstr "استعلام جديد (~عرض SQL)"
+
+#: source/ui/inc/toolbox_tmpl.hrc#ID_QUERY_EDIT_JOINCONNECTION.#define.Text
+msgid  "Edit..."
+msgstr "تحرير..."
+
+#: source/ui/inc/toolbox_tmpl.hrc#ID_BROWSER_COLWIDTH.#define.Text
+msgid  "Column ~Width..."
+msgstr "عرض الع~مود..."
+
+#: source/ui/inc/toolbox_tmpl.hrc#ID_DOCUMENT_CREATE_REPWIZ.#define.Text
+msgid  "Report Wizard..."
+msgstr "معالج التقرير..."
+
+#: source/ui/inc/toolbox_tmpl.hrc#SID_DB_FORM_NEW_PILOT.#define.Text
+msgid  "Form AutoPilot..."
+msgstr "المعالج التلقائي للنموذج..."
+
 #: source/ui/misc/dbumiscres.src#RSC_CHARSETS.1.String.Text
 msgid  "System"
 msgstr "النظام"
@@ -2736,12 +2780,12 @@ msgid  "An unexpected error occurred. The operation could not be performed."
 msgstr "حدث خطأ غير متوقع. تعذر تنفيذ العملية."
 
 #: source/ui/misc/dbumiscres.src#STR_COULDNOTOPEN_LINKEDDOC.String.Text
-msgid  "The document "$file$" could not be opened."
-msgstr ""
+msgid  "The document \"$file$\" could not be opened."
+msgstr "تعذر فتح المستند \"$file$\"."
 
 #: source/ui/misc/dbumiscres.src#STR_MISSING_TABLES_XDROP.String.Text
 msgid  "The table cannot be deleted because the database connection does not support this."
-msgstr ""
+msgstr "لا يمكن حذف الجدول لأن اتصال قاعدة البيانات لا يدعم ذلك."
 
 #: source/ui/misc/dbumiscres.src#STR_BUTTON_TEXT_ALL.String.Text
 msgid  "~All"
@@ -2760,19 +2804,19 @@ msgid  "No corresponding column type could be found for column '#1'."
 msgstr "تعذر العثور على نوع عمود مطابق للعمود '#1'."
 
 #: source/ui/misc/dbumiscres.src#STR_FILE_DOES_NOT_EXIST.String.Text
-msgid  "The file "$file$" does not exist."
-msgstr ""
+msgid  "The file \"$file$\" does not exist."
+msgstr "الملف \"$file$\" غير موجود."
 
 #: source/ui/misc/dbumiscres.src#STR_WARNINGS_DURING_CONNECT.String.Text
-msgid  "Warnings were encountered while connecting to the data source. Press "$buttontext$" to view them."
-msgstr ""
+msgid  "Warnings were encountered while connecting to the data source. Press \"$buttontext$\" to view them."
+msgstr "ظهرت تحذيرات أثناء الاتصال بمصدر البيانات. اضغط على \"$buttontext$\" لعرض هذه التحذيرات."
 
 #: source/ui/misc/dbumiscres.src#STR_NAMED_OBJECT_ALREADY_EXISTS.String.Text
 msgid  "The name '$#$' already exists.\nPlease enter another name."
-msgstr ""
+msgstr "الاسم '$#$' موجود بالفعل.\nالرجاء إدخال اسم آخر."
 
 #: source/ui/misc/dbumiscres.src#RID_STR_EXTENSION_NOT_PRESENT.String.Text
-msgid  "The report, "$file$", requires the extension Oracle Report Builder."
+msgid  "The report, \"$file$\", requires the extension Oracle Report Builder."
 msgstr ""
 
 #: source/ui/misc/WizardPages.src#STR_WIZ_COLUMN_SELECT_TITEL.String.Text
@@ -2901,7 +2945,7 @@ msgstr "اسم الجدول هذا غير صالح في قاعدة البيان�
 
 #: source/ui/misc/WizardPages.src#STR_SUGGEST_APPEND_TABLE_DATA.String.Text
 msgid  "Choose the option 'Append data' on the first page to append data to an existing table."
-msgstr ""
+msgstr "حدد الخيار \"إلحاق بيانات\" في الصفحة الأولى لإلحاق بيانات بجدول موجود."
 
 #: source/ui/misc/WizardPages.src#STR_INVALID_TABLE_NAME_LENGTH.String.Text
 msgid  "Please change the table name. It is too long."
@@ -2957,11 +3001,11 @@ msgstr "الرجاء ملاحظة أن بعض قواعد البيانات قد �
 
 #: source/ui/querydesign/querydlg.src#STR_QUERY_INNER_JOIN.String.Text
 msgid  "Includes only records for which the contents of the related fields of both tables are identical."
-msgstr ""
+msgstr "تضمين السجلات التي تتطابق فيها محتويات الحقول المرتبطة لكلا الجدولين فقط."
 
 #: source/ui/querydesign/querydlg.src#STR_QUERY_LEFTRIGHT_JOIN.String.Text
 msgid  "Contains ALL records from table '%1' but only records from table '%2' where the values in the related fields are matching."
-msgstr ""
+msgstr "احتواء كل السجلات من الجدول '%1'، وفقط السجلات من '%2' التي تتطابق فيها محتويات الحقول المرتبطة."
 
 #: source/ui/querydesign/querydlg.src#STR_QUERY_FULL_JOIN.String.Text
 msgid  "Contains ALL records from '%1' and from '%2'."
@@ -2973,7 +3017,7 @@ msgstr "احتواء المنتج الديكارتي لكل السجلات من 
 
 #: source/ui/querydesign/querydlg.src#STR_QUERY_NATURAL_JOIN.String.Text
 msgid  "Contains only one column for each pair of equally-named columns from '%1' and from '%2'."
-msgstr ""
+msgstr "احتواء عمود واحد فقط لكل زوج من الأعمدة المتساوية في الاسم من '%1' و'%2'."
 
 #: source/ui/querydesign/query.src#STR_QUERY_UNDO_TABWINSHOW.String.Text
 msgid  "Add Table Window"
@@ -3017,7 +3061,7 @@ msgstr "التعبير غير صالح، اسم الحقل '$name$' غير مو�
 
 #: source/ui/querydesign/query.src#RID_STR_TOMUCHTABLES.String.Text
 msgid  "The query covers #num# tables. The selected database type, however, can only process a maximum of #maxnum# table(s) per statement."
-msgstr ""
+msgstr "يشمل الاستعلام #num# جدول (جداول). ومع ذلك؛ فإن نوع قاعدة البيانات المحدد يتعامل فقط مع #maxnum# من الجداول كحد أقصى لكل عبارة."
 
 #: source/ui/querydesign/query.src#STR_QUERY_UNDO_TABWINDELETE.String.Text
 msgid  "Delete Table Window"
@@ -3105,7 +3149,7 @@ msgstr "توجد جداول كثيرة جدًا."
 
 #: source/ui/querydesign/query.src#STR_QRY_NATIVE.String.Text
 msgid  "The statement will not be applied when querying in the SQL dialect of the database."
-msgstr ""
+msgstr "لن يتم تطبيق العبارة عند الاستعلام بلهجة SQL الخاصة بقاعدة البيانات."
 
 #: source/ui/querydesign/query.src#ERR_QRY_AMB_FIELD.ErrorBox.Message
 msgid  "Field name not found or not unique"
@@ -3141,7 +3185,7 @@ msgstr "تعذر إنشاء أي استعلام لأنه لم يتم تحديد 
 
 #: source/ui/querydesign/query.src#STR_DATASOURCE_DELETED.String.Text
 msgid  "The corresponding data source has been deleted. Therefore, data relevant to that data source cannot be saved."
-msgstr ""
+msgstr "تم حذف مصادر البيانات المطابقة. لذلك، لا يمكن حفظ البيانات ذات الصلة بمصدر البيانات."
 
 #: source/ui/querydesign/query.src#STR_QRY_COLUMN_NOT_FOUND.String.Text
 msgid  "The column '$name$' is unknown."
@@ -3157,7 +3201,7 @@ msgstr "يجب أن تستخدم اسم عمود قبل 'LIKE'."
 
 #: source/ui/querydesign/query.src#STR_QRY_CHECK_CASESENSITIVE.String.Text
 msgid  "The column could not be found. Please note that the database is case-sensitive."
-msgstr ""
+msgstr "تعذر العثور على العمود. الرجاء ملاحظة أن قاعدة البيانات حساسة لحالة الأحرف."
 
 #: source/ui/querydesign/query.src#STR_QUERYDESIGN.String.Text
 msgid  " - %PRODUCTNAME Base: Query Design"
@@ -3169,14 +3213,14 @@ msgstr " - قاعدة %PRODUCTNAME: تصميم العرض"
 
 #: source/ui/querydesign/query.src#STR_QUERY_SAVEMODIFIED.String.Text
 msgid  "$object$ has been changed.\nDo you want to save the changes?"
-msgstr ""
+msgstr "$object$ تم تغييره.\nهل ترغب في حفظ التغييرات؟"
 
 #: source/ui/querydesign/query.src#STR_ERROR_PARSING_STATEMENT.String.Text
-msgid  "$object$ is based on an SQL command which could not be parsed.(except "SQL command", which doesn't make sense here) will be inserted."
+msgid  "$object$ is based on an SQL command which could not be parsed.(except \"SQL command\", which doesn't make sense here) will be inserted."
 msgstr ""
 
 #: source/ui/querydesign/query.src#STR_INFO_OPENING_IN_SQL_VIEW.String.Text
-msgid  "$object$ will be opened in SQL view.(except "SQL command", which doesn't make sense here) will be inserted."
+msgid  "$object$ will be opened in SQL view.(except \"SQL command\", which doesn't make sense here) will be inserted."
 msgstr ""
 
 #: source/ui/querydesign/query.src#RSC_QUERY_OBJECT_TYPE.1.String.Text
@@ -3193,15 +3237,15 @@ msgstr "بيان SQL"
 
 #: source/ui/querydesign/query.src#STR_STATEMENT_WITHOUT_RESULT_SET.String.Text
 msgid  "The query does not create a result set, and thus cannot be part of another query."
-msgstr ""
+msgstr "لا يقوم الاستعلام بإنشاء مجموعة نتائج، وبالتالي لا يمكن أن يكون جزءًا من استعلام آخر."
 
 #: source/ui/querydesign/query.src#STR_NO_DATASOURCE_OR_CONNECTION.String.Text
 msgid  "Both the ActiveConnection and the DataSourceName parameter are missing or wrong - cannot initialize the query designer."
-msgstr ""
+msgstr "كل من معلمتي ActiveConnectio وDataSourceName مفقودة أو خاطئة - لا يمكن تهيئة مصمم الاستعلامات."
 
 #: source/ui/relationdesign/relation.src#STR_QUERY_REL_EDIT_RELATION.String.Text
 msgid  "This relation already exists. Do you want to edit it or create a new one?"
-msgstr ""
+msgstr "هذه العلاقة موجودة بالفعل. هل تريد تحريرها أو إنشاء أخرى جديدة؟"
 
 #: source/ui/relationdesign/relation.src#STR_QUERY_REL_EDIT.String.Text
 msgid  "Edit..."
@@ -3221,19 +3265,19 @@ msgstr "قاعدة البيانات لا تدعم العلاقات."
 
 #: source/ui/relationdesign/relation.src#RELATION_DESIGN_SAVEMODIFIED.QueryBox.Message
 msgid  "The relation design has been changed.\nDo you want to save the changes?"
-msgstr ""
+msgstr "تم تغيير تصميم العلاقة.\nهل تريد حفظ التغييرات؟"
 
 #: source/ui/relationdesign/relation.src#STR_QUERY_REL_DELETE_WINDOW.String.Text
 msgid  "When you delete this table all corresponding relations will be deleted as well. Continue?"
-msgstr ""
+msgstr "عندما تحذف هذا الجدول، سيتم أيضًا حذف جميع العلاقات المطابقة. هل تريد المتابعة؟"
 
 #: source/ui/relationdesign/relation.src#STR_QUERY_REL_COULD_NOT_CREATE.String.Text
 msgid  "The database could not create the relation. May be foreign keys for this kind of table aren't supported.\nPlease check your documentation of the database."
-msgstr ""
+msgstr "تعذر على قاعدة البيانات إنشاء العلاقة. قد تكون المفاتيح الخارجية لهذا النوع من الجدول غير مدعومة.\nيرجى التحقق من الوثائق الخاصة بقاعدة البيانات."
 
 #: source/ui/tabledesign/table.src#STR_TABLEDESIGN_DBFIELDTYPES.String.Text
 msgid  "Unknown;Text;Number;Date/Time;Date;Time;Yes/No;Currency;Memo;Counter;Image;Text (fix);Decimal;Binary (fix);Binary;BigInt;Double;Float;Real;Integer;Small Integer;Tiny Integer;SQL Null;Object;Distinct;Structure;Field;BLOB;CLOB;REF;OTHER;Bit (fix)"
-msgstr ""
+msgstr "غير معروف؛نص؛رقم؛التاريخ/الوقت؛التاريخ؛الوقت؛نعم/لا؛العملة؛مذكرة؛عداد؛صورة؛نص (إصلاح)؛عشري؛ثنائي (إصلاح)؛ثنائي؛عدد صحيح كبير؛مزدوج؛حر؛حقيقي؛عدد صحيح؛عدد صحيح كبير؛عدد صحيح صغير جدًا؛SQL خالية؛كائن؛مميز؛بنية؛حقل؛BLOB؛CLOB؛مرجع؛خلاف ذلك؛بت (إصلاح)"
 
 #: source/ui/tabledesign/table.src#STR_TABLEDESIGN_UNDO_PRIMKEY.String.Text
 msgid  "Insert/remove primary key"
@@ -3377,15 +3421,15 @@ msgstr "مثال التنسيق"
 
 #: source/ui/tabledesign/table.src#STR_HELP_BOOL_DEFAULT.String.Text
 msgid  "Select a value that is to appear in all new records as default.\nIf the field is not to have a default value, select the empty string."
-msgstr ""
+msgstr "حدد القيمة التي ستظهر في كل السجلات الجديدة بشكل افتراضي.\nإذا لم يكن الحقل يحتوي على قيمة افتراضيّة، فحدد التسلسل الفارغ."
 
 #: source/ui/tabledesign/table.src#STR_HELP_DEFAULT_VALUE.String.Text
 msgid  "Enter a default value for this field.\n\nWhen you later enter data in the table, this string will be used in each new record for the field selected. It should, therefore, correspond to the cell format that needs to be entered below."
-msgstr ""
+msgstr "أدخل قيمة افتراضيِة لهذا الحقل.\n\nعندما تدخل بيانات لاحقاً في هذا الجدول، فسيتم استخدام هذه السلسلة في كل سجل جديد للحقل المحدد. لذلك يجب أن تكون السلسلة مطابقة لتنسيق الخلية الذي يجب إدخاله أدناه."
 
 #: source/ui/tabledesign/table.src#STR_HELP_FIELD_REQUIRED.String.Text
 msgid  "Activate this option if this field cannot contain NULL values, i.e. the user must always enter data."
-msgstr ""
+msgstr "قم بتنشيط هذا الخيار إذا كان لا يُسمح بإدخال قيم خالية NULL في هذا الحقل؛ أي إذا كان على المستخدم إدخال بيانات دائمًا."
 
 #: source/ui/tabledesign/table.src#STR_HELP_TEXT_LENGTH.String.Text
 msgid  "Enter the maximum text length permitted."
@@ -3397,7 +3441,7 @@ msgstr "أدخل تنسيق الرقم."
 
 #: source/ui/tabledesign/table.src#STR_HELP_LENGTH.String.Text
 msgid  "Determine the length data can have in this field.\n\nIf decimal fields, then the maximum length of the number to be entered, if binary fields, then the length of the data block.\nThe value will be corrected accordingly when it exceeds the maximum for this database."
-msgstr ""
+msgstr "حدد حجم البيانات الذي يمكن إدخاله في هذا الحقل.\n\nإذا كان حقلاً عشريًا، فيجب إدخال أقصى طول للرقم؛ وإذا كان حقلاً ثنائيًا، فيجب إدخال حجم كتلة البيانات.\nسيتم تصحيح القيمة وفقًا لذلك عندما تتجاوز الحد الأقصى لقاعدة البيانات هذه."
 
 #: source/ui/tabledesign/table.src#STR_HELP_SCALE.String.Text
 msgid  "Specify the number of decimal places permitted in this field."
@@ -3405,7 +3449,7 @@ msgstr "حدد عدد المنازل العشرية المسموح بها في �
 
 #: source/ui/tabledesign/table.src#STR_HELP_FORMAT_CODE.String.Text
 msgid  "This is where you see how the data would be displayed in the current format (use the button on the right to modify the format)."
-msgstr ""
+msgstr "يمكن هنا رؤية كيفية ظهور البيانات بالتنسيق الحالي (استخدم الزر الموجود على اليسار لتعديل التنسيق)."
 
 #: source/ui/tabledesign/table.src#STR_HELP_FORMAT_BUTTON.String.Text
 msgid  "This is where you determine the output format of the data."
@@ -3413,19 +3457,19 @@ msgstr "يمكن هنا تحديد تنسيق إخراج البيانات."
 
 #: source/ui/tabledesign/table.src#STR_HELP_AUTOINCREMENT.String.Text
 msgid  "Choose if this field should contain AutoIncrement values.\n\nYou can not enter data in fields of this type. An intrinsic value will be assigned to each new record automatically (resulting from the increment of the previous record)."
-msgstr ""
+msgstr "اختر ما إذا كان يجب أن يحتوي هذا الحقل على قيم AutoIncrement.\n\nلا يمكنك إدخال البيانات في حقول بهذا النوع. سيتم تعيين قيمة فعليّة لكل سجل جديد تلقائيًا (نتيجة لزيادة قيمة السجل السابق)."
 
 #: source/ui/tabledesign/table.src#PB_FORMAT.PushButton.Text
 msgid  "~..."
 msgstr "~..."
 
 #: source/ui/tabledesign/table.src#STR_TABLEDESIGN_DUPLICATE_NAME.String.Text
-msgid  "The table cannot be saved because column name "$column$" was assigned twice."
-msgstr ""
+msgid  "The table cannot be saved because column name \"$column$\" was assigned twice."
+msgstr "لا يمكن حفظ الجدول نظرًا لتعيين اسم العمود \"$column$\" مرتين."
 
 #: source/ui/tabledesign/table.src#STR_TBL_COLUMN_IS_KEYCOLUMN.String.Text
-msgid  "The column "$column$" belongs to the primary key. If the column is deleted, the primary key will also be deleted. Do you really want to continue?"
-msgstr ""
+msgid  "The column \"$column$\" belongs to the primary key. If the column is deleted, the primary key will also be deleted. Do you really want to continue?"
+msgstr "ينتمي العمود \"$column$\" إلى المفتاح الأساسي. وإذا تم حذفه، فسيتم أيضًا حذف المفتاح الأساسي. هل تريد المتابعة بالفعل؟"
 
 #: source/ui/tabledesign/table.src#STR_TBL_COLUMN_IS_KEYCOLUMN_TITLE.String.Text
 msgid  "Primary Key Affected"
@@ -3439,25 +3483,29 @@ msgstr "العمود"
 msgid  "Continue anyway?"
 msgstr "هل تريد المتابعة على أية حال؟"
 
+#: source/ui/tabledesign/table.src#STR_STAT_WARNING.String.Text
+msgid  "Warning!"
+msgstr "تحذير!"
+
 #: source/ui/tabledesign/table.src#TABLE_DESIGN_SAVEMODIFIED.QueryBox.Message
 msgid  "The table has been changed.\nDo you want to save the changes?"
-msgstr ""
+msgstr "تم تغيير الجدول.\nهل تريد حفظ التغييرات؟"
 
 #: source/ui/tabledesign/table.src#TABLE_QUERY_CONNECTION_LOST.QueryBox.Message
 msgid  "The connection to the database was lost! The table design can only be used with limited functionality without a connection.\nReconnect?"
-msgstr ""
+msgstr "تم فقد الاتصال بقاعدة البيانات! يمكن استخدام تصميم الجدول فقط بوظائف محدودة دون وجود اتصال.\nهل تريد إعادة الاتصال؟"
 
 #: source/ui/tabledesign/table.src#STR_TABLEDESIGN_CONNECTION_MISSING.String.Text
 msgid  "The table could not be saved due to problems connecting to the database."
-msgstr ""
+msgstr "تعذر حفظ الجدول نظرًا لحدوث مشكلات في الاتصال بقاعدة البيانات."
 
 #: source/ui/tabledesign/table.src#STR_TABLEDESIGN_DATASOURCE_DELETED.String.Text
 msgid  "The table filter could not be adjusted because the data source has been deleted."
-msgstr ""
+msgstr "تعذر ضبط تصفية الجدول بسبب حذف مصدر البيانات."
 
 #: source/ui/tabledesign/table.src#QUERY_SAVE_TABLE_EDIT_INDEXES.QueryBox.Message
 msgid  "Before you can edit the indexes of a table, you have to save it.\nDo you want to save the changes now?"
-msgstr ""
+msgstr "قبل التمكن من تحرير فهارس الجدول، يجب حفظه أولاً.\nهل تريد حفظ التغييرات الآن؟"
 
 #: source/ui/tabledesign/table.src#STR_TABLEDESIGN_NO_PRIM_KEY_HEAD.String.Text
 msgid  "No primary key"
@@ -3465,15 +3513,15 @@ msgstr "بدون مفتاح أساسي"
 
 #: source/ui/tabledesign/table.src#STR_TABLEDESIGN_NO_PRIM_KEY.String.Text
 msgid  "A unique index or primary key is required for data record identification in this database.\nYou can only enter data into this table when one of these two structural conditions has been met.\n\nShould a primary key be created now?"
-msgstr ""
+msgstr "مطلوب وجود فهرس فريد أو مفتاح أساسي لتعريف سجل البيانات في قاعدة البيانات هذه.\nيمكنك إدخال البيانات في هذا الجدول فقط عند استيفاء أحد هذين الشرطين المتعلقين بالبنية.\n\nهل يلزم إنشاء مفتاح أساسي الآن؟"
 
 #: source/ui/tabledesign/table.src#STR_TABLEDESIGN_TITLE.String.Text
 msgid  " - %PRODUCTNAME Base: Table Design"
 msgstr " - قاعدة %PRODUCTNAME: تصميم الجدول"
 
 #: source/ui/tabledesign/table.src#STR_TABLEDESIGN_ALTER_ERROR.String.Text
-msgid  "The column "$column$" could not be changed. Should the column instead be deleted and the new format appended?"
-msgstr ""
+msgid  "The column \"$column$\" could not be changed. Should the column instead be deleted and the new format appended?"
+msgstr "تعذر تغيير العمود \"$column$\". هل يلزم حذفه ثم إلحاق التنسيق الجديد به؟ "
 
 #: source/ui/tabledesign/table.src#STR_TABLEDESIGN_SAVE_ERROR.String.Text
 msgid  "Error while saving the table design"
@@ -3485,7 +3533,7 @@ msgstr "تعذر حذف العمود $column$."
 
 #: source/ui/tabledesign/table.src#TABLE_DESIGN_ALL_ROWS_DELETED.QueryBox.Message
 msgid  "You are trying to delete all the columns in the table. A table cannot exist without columns. Should the table be deleted from the database? If not, the table will remain unchanged."
-msgstr ""
+msgstr "أنت تحاول حذف كل الأعمدة الموجودة في الجدول. لا يمكن إنشاء جدول بدون أعمدة. هل يلزم حذف الجدول من قاعدة البيانات؟ إذا لم يكن الأمر كذلك، فسيظل الجدول بدون تغيير."
 
 #: source/ui/tabledesign/table.src#STR_AUTOINCREMENT_VALUE.String.Text
 msgid  "A~uto-increment statement"
@@ -3493,11 +3541,11 @@ msgstr "عبارة A~uto-increment"
 
 #: source/ui/tabledesign/table.src#STR_HELP_AUTOINCREMENT_VALUE.String.Text
 msgid  "Enter an SQL statement for the auto-increment field.\n\nThis statement will be directly transferred to the database when the table is created."
-msgstr ""
+msgstr "أدخل عبارة SQL لحقل التزايد التلقائي auto-increment.\n\nسيتم نقل هذه العبارة مباشرة إلى قاعدة البيانات عند إنشاء الجدول."
 
 #: source/ui/tabledesign/table.src#STR_NO_TYPE_INFO_AVAILABLE.String.Text
 msgid  "No type information could be retrieved from the database.\nThe table design mode is not available for this data source."
-msgstr ""
+msgstr "تعذر استرداد معلومات النوع من قاعدة البيانات.\nوضع تصميم الجدول غير متوفر لمصدر البيانات هذا."
 
 #: source/ui/tabledesign/table.src#STR_CHANGE_COLUMN_NAME.String.Text
 msgid  "change field name"
@@ -3514,10 +3562,6 @@ msgstr "تغيير وصف الحقل"
 #: source/ui/tabledesign/table.src#STR_CHANGE_COLUMN_ATTRIBUTE.String.Text
 msgid  "change field attribute"
 msgstr "تغيير خاصية الحقل"
-
-#: source/ui/tabledesign/table.src#STR_STAT_WARNING.String.Text
-msgid  "Warning!"
-msgstr "تحذير!"
 
 #: source/ui/uno/dbinteraction.src#STR_REMEMBERPASSWORD_SESSION.String.Text
 msgid  "~Remember password until end of session"
@@ -3537,7 +3581,7 @@ msgstr "قاعدة البيانات الوجهة لا تدعم المفاتيح 
 
 #: source/ui/uno/copytablewizard.src#STR_CTW_INVALID_DATA_ACCESS_DESCRIPTOR.String.Text
 msgid  "no data access descriptor found, or no data access descriptor able to provide all necessary information"
-msgstr ""
+msgstr "لم يتم العثور على واصف الوصول إلى البيانات، أو لا يوجد واصف وصول إلى البيانات قادر على تقديم كافة البيانات الضرورية"
 
 #: source/ui/uno/copytablewizard.src#STR_CTW_ONLY_TABLES_AND_QUERIES_SUPPORT.String.Text
 msgid  "Only tables and queries are supported at the moment."
@@ -3570,47 +3614,3 @@ msgstr "لنسخ استعلام، يجب أن يكون الاتصال قادرً
 #: source/ui/uno/copytablewizard.src#STR_CTW_ERROR_INVALID_INTERACTIONHANDLER.String.Text
 msgid  "The given interaction handler is invalid."
 msgstr "معالج التداخل المقدم غير صالح."
-
-#: source/ui/inc/toolbox_tmpl.hrc#ID_BROWSER_REFRESH.#define.Text
-msgid  "Refresh"
-msgstr "تحديث"
-
-#: source/ui/inc/toolbox_tmpl.hrc#ID_NEW_VIEW_DESIGN.#define.Text
-msgid  "New ~View Design"
-msgstr "تصميم ~عرض جديد"
-
-#: source/ui/inc/toolbox_tmpl.hrc#ID_NEW_TABLE_DESIGN.#define.Text
-msgid  "New ~Table Design"
-msgstr "تصمي~م جدول جديد"
-
-#: source/ui/inc/toolbox_tmpl.hrc#ID_NEW_QUERY_WIZARD.#define.Text
-msgid  "Query AutoPilot..."
-msgstr "معالج الاستعلامات التلقائي..."
-
-#: source/ui/inc/toolbox_tmpl.hrc#ID_NEW_QUERY_DESIGN.#define.Text
-msgid  "New ~Query (Design View)"
-msgstr "اس~تعلام جديد (عرض التصميم)"
-
-#: source/ui/inc/toolbox_tmpl.hrc#ID_EDIT_QUERY_DESIGN.#define.Text
-msgid  "~Edit Query"
-msgstr "~تعديل الاستعلام"
-
-#: source/ui/inc/toolbox_tmpl.hrc#ID_NEW_QUERY_SQL.#define.Text
-msgid  "New Query (~SQL View)"
-msgstr "استعلام جديد (~عرض SQL)"
-
-#: source/ui/inc/toolbox_tmpl.hrc#ID_QUERY_EDIT_JOINCONNECTION.#define.Text
-msgid  "Edit..."
-msgstr "تحرير..."
-
-#: source/ui/inc/toolbox_tmpl.hrc#ID_BROWSER_COLWIDTH.#define.Text
-msgid  "Column ~Width..."
-msgstr "عرض الع~مود..."
-
-#: source/ui/inc/toolbox_tmpl.hrc#ID_DOCUMENT_CREATE_REPWIZ.#define.Text
-msgid  "Report Wizard..."
-msgstr "معالج التقرير..."
-
-#: source/ui/inc/toolbox_tmpl.hrc#SID_DB_FORM_NEW_PILOT.#define.Text
-msgid  "Form AutoPilot..."
-msgstr "المعالج التلقائي للنموذج..."

@@ -136,6 +136,10 @@ msgid  "km"
 msgstr "কি.মি."
 
 #: source/src/units.src#SV_FUNIT_STRINGS.FUNIT_TWIP.ItemList.item
+msgid  "twips"
+msgstr "টুইপবোৰ"
+
+#: source/src/units.src#SV_FUNIT_STRINGS.FUNIT_TWIP.ItemList.item
 msgid  "twip"
 msgstr "টুইপ"
 
@@ -148,32 +152,16 @@ msgid  "pi"
 msgstr "পাই"
 
 #: source/src/units.src#SV_FUNIT_STRINGS.FUNIT_INCH.ItemList.item
-msgid  "inch"
-msgstr "ইঞ্চি"
-
-#: source/src/units.src#SV_FUNIT_STRINGS.FUNIT_FOOT.ItemList.item
-msgid  "feet"
-msgstr "ফিট"
-
-#: source/src/units.src#SV_FUNIT_STRINGS.FUNIT_MILE.ItemList.item
-msgid  "mile"
-msgstr "মাইল"
-
-#: source/src/units.src#SV_FUNIT_STRINGS.FUNIT_PERCENT.ItemList.item
-msgid  "%"
-msgstr "%"
-
-#: source/src/units.src#SV_FUNIT_STRINGS.FUNIT_TWIP.ItemList.item
-msgid  "twips"
-msgstr "টুইপবোৰ"
-
-#: source/src/units.src#SV_FUNIT_STRINGS.FUNIT_INCH.ItemList.item
-msgid  """
-msgstr ""
+msgid  "\""
+msgstr "\""
 
 #: source/src/units.src#SV_FUNIT_STRINGS.FUNIT_INCH.ItemList.item
 msgid  "in"
 msgstr "ইন"
+
+#: source/src/units.src#SV_FUNIT_STRINGS.FUNIT_INCH.ItemList.item
+msgid  "inch"
+msgstr "ইঞ্চি"
 
 #: source/src/units.src#SV_FUNIT_STRINGS.FUNIT_FOOT.ItemList.item
 msgid  "'"
@@ -187,13 +175,25 @@ msgstr "ft"
 msgid  "foot"
 msgstr "ফুট"
 
+#: source/src/units.src#SV_FUNIT_STRINGS.FUNIT_FOOT.ItemList.item
+msgid  "feet"
+msgstr "ফিট"
+
 #: source/src/units.src#SV_FUNIT_STRINGS.FUNIT_MILE.ItemList.item
 msgid  "miles"
 msgstr "মাইলবোৰ"
 
+#: source/src/units.src#SV_FUNIT_STRINGS.FUNIT_MILE.ItemList.item
+msgid  "mile"
+msgstr "মাইল"
+
+#: source/src/units.src#SV_FUNIT_STRINGS.FUNIT_PERCENT.ItemList.item
+msgid  "%"
+msgstr "%"
+
 #: source/src/stdtext.src#SV_STDTEXT_SERVICENOTAVAILABLE.String.Text
 msgid  "The component (%s) could not be loaded.\nPlease start setup with the repair option."
-msgstr ""
+msgstr " (%s) উপাদানটো ল'ড কৰিব পৰা নগ'ল.\nমেৰামতি বিকল্পটোৰ সৈতে ছেটআপ আৰম্ভ কৰক"
 
 #: source/src/stdtext.src#SV_STDTEXT_DONTHINTAGAIN.String.Text
 msgid  "Do not show this information again."
@@ -213,11 +213,11 @@ msgstr "ভুল সংস্কৰণ"
 
 #: source/src/stdtext.src#SV_ACCESSERROR_BRIDGE_MSG.String.Text
 msgid  "%PRODUCTNAME %PRODUCTVERSION requires a Java Access Bridge 1.0.3 or later version to support accessibility."
-msgstr ""
+msgstr "%PRODUCTNAME %PRODUCTVERSIONক একচেচিবিলিটি সমৰ্থন কৰিবলৈ জাভা1.0.3 বা তাৰ পাছৰ সংস্কৰণৰ প্ৰয়োজন."
 
 #: source/src/stdtext.src#SV_ACCESSERROR_OK_CANCEL_MSG.String.Text
 msgid  "Click '%OK' to start %PRODUCTNAME %PRODUCTVERSION without accessibility support, or click '%CANCEL' to exit %PRODUCTNAME %PRODUCTVERSION."
-msgstr ""
+msgstr "প্ৰবেশযোগ্যতা সমৰ্থন নোহোৱাকৈ %PRODUCTNAME %PRODUCTVERSION আৰম্ভ কৰিবলৈ '%OK' ক্লিক কৰক  , নাইবা  %PRODUCTNAME %PRODUCTVERSION প্ৰস্থান কৰিবলৈ '%CANCEL' ক্লিক কৰক."
 
 #: source/src/stdtext.src#SV_ACCESSERROR_MISSING_BRIDGE.String.Text
 msgid  "No Java Access Bridge"
@@ -229,7 +229,7 @@ msgstr "ত্ৰুটীপূৰ্ণ জাভা ইনষ্টলেছ�
 
 #: source/src/stdtext.src#SV_ACCESSERROR_JAVA_MSG.String.Text
 msgid  "%PRODUCTNAME %PRODUCTVERSION requires Java 1.4.0_02 or later version to support accessibility."
-msgstr ""
+msgstr "%PRODUCTNAME %PRODUCTVERSIONক প্ৰবেশযোগ্যতা সমৰ্থন কৰিবলৈ জাভা1.4.0_02 বা  তাৰ পিছৰ সংস্কৰণৰ প্ৰয়োজন."
 
 #: source/src/stdtext.src#SV_ACCESSERROR_MISSING_JAVA.String.Text
 msgid  "No Java Installation"
@@ -261,7 +261,7 @@ msgstr "পছন্দবোৰ..."
 
 #: source/src/stdtext.src#SV_EDIT_WARNING_BOX.WarningBox.Message
 msgid  "The inserted text exceeded the maximum length of this text field. The text was truncated."
-msgstr ""
+msgstr "দিয়া লিপি ক্ষেত্ৰ দৈৰ্ঘ্যতকে ডাঙৰ । লিপি সৰু কৰা হ'ল ।"
 
 #: source/src/stdtext.src#SV_MAC_SCREENNNAME.String.Text
 msgid  "Screen %d"

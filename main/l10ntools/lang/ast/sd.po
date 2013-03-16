@@ -217,7 +217,7 @@ msgstr "Mover diapositives"
 
 #: source/core/glob.src#STR_NOT_ENOUGH_MEMORY.String.Text
 msgid  "Not enough memory!\nThe action will be aborted."
-msgstr ""
+msgstr "¡Memorica escosada!\nEncaboxaráse la sesión."
 
 #: source/core/glob.src#STR_POOLSHEET_MEASURE.String.Text
 msgid  "Dimension Line"
@@ -341,11 +341,11 @@ msgstr "Fallu de formatu de ficheru atopáu en $(ARG1)(row, col)."
 
 #: source/core/glob.src#RID_SD_ERRHDL.ERR_CODE ( ERRCODE_CLASS_READ , ERR_FORMAT_FILE_ROWCOL ).String.Text
 msgid  "Format error discovered in the file in sub-document $(ARG1) at position $(ARG2)(row,col)."
-msgstr ""
+msgstr "Fallu de formatu descubiertu nel ficheru nel sodocumentu $(ARG1) na posición $(ARG2)(filera,colum)."
 
 #: source/core/glob.src#RID_SD_ERRHDL.ERR_CODE ( ERRCODE_CLASS_READ , WARN_FORMAT_FILE_ROWCOL ).String.Text
 msgid  "Format error discovered in the file in sub-document $(ARG1) at position $(ARG2)(row,col)."
-msgstr ""
+msgstr "Fallu de formatu descubiertu nel ficheru nel sodocumentu $(ARG1) na posición $(ARG2)(filera,colum)."
 
 #: source/core/glob.src#STR_3DOBJECTBARSHELL.String.Text
 msgid  "3-D Settings"
@@ -625,7 +625,7 @@ msgstr "Nomar diseñu HTML"
 
 #: source/ui/accessibility/accessibility.src#SID_SD_A11Y_D_DRAWVIEW_N.String.Text
 msgid  "Drawing View"
-msgstr "Vista del dibuxu"
+msgstr "Mou Dibuxu"
 
 #: source/ui/accessibility/accessibility.src#SID_SD_A11Y_D_DRAWVIEW_D.String.Text
 msgid  "This is where you create and edit drawings."
@@ -1225,7 +1225,7 @@ msgstr "Activar"
 
 #: source/ui/animations/CustomAnimation.src#STR_CUSTOMANIMATION_LIST_HELPTEXT.String.Text
 msgid  "First select the slide element and then click 'Add...' to add an animation effect."
-msgstr ""
+msgstr "Esbilla l'elementu de diapositiva y fai clic en 'Amestar...' pa incorporar un efeutu d'animación."
 
 #: source/ui/animations/SlideTransitionPane.src#DLG_SLIDE_TRANSITION_PANE.Control.Text
 msgid  "Slide Transition"
@@ -1381,19 +1381,19 @@ msgstr "(ensin autor)"
 
 #: source/ui/annotations/annotations.src#STR_ANNOTATION_WRAP_FORWARD.String.Text
 msgid  "%PRODUCTNAME Impress reached the end of the presentation. Do you want to continue at the beginning?"
-msgstr ""
+msgstr "%PRODUCTNAME Impress aportó al final de la presentación. Quies continuar fasta l'entamu?"
 
 #: source/ui/annotations/annotations.src#STR_ANNOTATION_WRAP_BACKWARD.String.Text
 msgid  "%PRODUCTNAME Impress reached the beginning of the presentation. Do you want to continue at the end?"
-msgstr ""
+msgstr "%PRODUCTNAME Impress aportó al entamu de la presentación. Quies continuar fasta'l final?"
 
 #: source/ui/annotations/annotations.src#STR_ANNOTATION_WRAP_FORWARD_DRAW.String.Text
 msgid  "%PRODUCTNAME Draw reached the end of the document. Do you want to continue at the beginning?"
-msgstr ""
+msgstr "%PRODUCTNAME Draw aportó al final del documentu. Quies continuar fasta l'entamu?"
 
 #: source/ui/annotations/annotations.src#STR_ANNOTATION_WRAP_BACKWARD_DRAW.String.Text
 msgid  "%PRODUCTNAME Draw reached the beginning of the document. Do you want to continue at the end?"
-msgstr ""
+msgstr "%PRODUCTNAME Draw aportó al entamu del documentu. Quies continuar fasta'l final?"
 
 #: source/ui/annotations/annotations.src#STR_ANNOTATION_UNDO_INSERT.String.Text
 msgid  "Insert Comment"
@@ -1428,8 +1428,8 @@ msgid  "~Table..."
 msgstr "~Tabla..."
 
 #: source/ui/app/popup2_tmpl.src#RID_GRAPHIC_TABLE_POPUP.DUMMY.MenuItem.Text
-msgid  "Colu~mn"
-msgstr "Colu~mna"
+msgid  "~Cell"
+msgstr "~Caxella"
 
 #: source/ui/app/popup2_tmpl.src#RID_GRAPHIC_TABLE_POPUP.DUMMY.SID_TABLE_MERGE_CELLS.MenuItem.Text
 msgid  "~Merge"
@@ -1451,6 +1451,10 @@ msgstr "C~entru"
 msgid  "~Bottom"
 msgstr "~Baxero"
 
+#: source/ui/app/popup2_tmpl.src#RID_GRAPHIC_TABLE_POPUP.DUMMY.MenuItem.Text
+msgid  "~Row"
+msgstr "~Filera"
+
 #: source/ui/app/popup2_tmpl.src#RID_GRAPHIC_TABLE_POPUP.DUMMY.SID_TABLE_DISTRIBUTE_ROWS.MenuItem.Text
 msgid  "Space ~Equally"
 msgstr "Axustar ~Uniformemente"
@@ -1467,6 +1471,10 @@ msgstr "~Inxertar..."
 msgid  "~Delete"
 msgstr "~Desaniciar"
 
+#: source/ui/app/popup2_tmpl.src#RID_GRAPHIC_TABLE_POPUP.DUMMY.MenuItem.Text
+msgid  "Colu~mn"
+msgstr "Colu~mna"
+
 #: source/ui/app/popup2_tmpl.src#RID_GRAPHIC_TABLE_POPUP.DUMMY.SID_TABLE_DISTRIBUTE_COLUMNS.MenuItem.Text
 msgid  "Space ~Equally"
 msgstr "Axustar ~Uniformemente"
@@ -1482,14 +1490,6 @@ msgstr "~Inxertar..."
 #: source/ui/app/popup2_tmpl.src#RID_GRAPHIC_TABLE_POPUP.DUMMY.SID_TABLE_DELETE_COL.MenuItem.Text
 msgid  "~Delete"
 msgstr "~Desaniciar"
-
-#: source/ui/app/popup2_tmpl.src#RID_GRAPHIC_TABLE_POPUP.DUMMY.MenuItem.Text
-msgid  "~Cell"
-msgstr "~Caxella"
-
-#: source/ui/app/popup2_tmpl.src#RID_GRAPHIC_TABLE_POPUP.DUMMY.MenuItem.Text
-msgid  "~Row"
-msgstr "~Filera"
 
 #: source/ui/app/strings.src#STR_DRAW_TOOLBOX.String.Text
 msgid  "Drawings Toolbar"
@@ -1733,7 +1733,7 @@ msgstr "Pon equí un nome pal nuevu final de llinia:"
 
 #: source/ui/app/strings.src#STR_WARN_NAME_DUPLICATE.String.Text
 msgid  "The name chosen already exists. \nPlease enter another name."
-msgstr ""
+msgstr "El nome escoyíu yá esiste. \nInxerta otru nome."
 
 #: source/ui/app/strings.src#STR_UNDO_ANIMATION.String.Text
 msgid  "Animation parameters"
@@ -1804,8 +1804,8 @@ msgid  "Insert slides"
 msgstr "Inxertar diapositives"
 
 #: source/ui/app/strings.src#STR_ASK_DELETE_LAYER.String.Text
-msgid  "Are you sure you want to delete the level "$"?\nNote: All objects on this level will be deleted!"
-msgstr ""
+msgid  "Are you sure you want to delete the level \"$\"?\nNote: All objects on this level will be deleted!"
+msgstr "Daveres que quies desaniciar el nivel \"$\"?\nNota: Van desaniciase tolos oxetos d'esti nivel!"
 
 #: source/ui/app/strings.src#STR_ASK_DELETE_ALL_PICTURES.String.Text
 msgid  "Do you really want to delete all images?"
@@ -1853,7 +1853,7 @@ msgstr "Inxertar marcu de testu"
 
 #: source/ui/app/strings.src#STR_ACTION_NOTPOSSIBLE.String.Text
 msgid  "This function cannot be run \nwith the selected objects."
-msgstr ""
+msgstr "Esta función nun puede executase \ncolos oxetos esbillaos."
 
 #: source/ui/app/strings.src#STR_DLG_INSERT_PAGES_FROM_FILE.String.Text
 msgid  "Insert File"
@@ -1865,7 +1865,7 @@ msgstr "¡Nun se pudo cargar el ficheru!"
 
 #: source/ui/app/strings.src#STR_SCALE_OBJECTS.String.Text
 msgid  "The format of the new pages will be adapted.\nDo you want to adapt the objects, too?"
-msgstr ""
+msgstr "El formatu de les páxines nueves va axustase.\n¿Quies axustar tamién los oxetos?"
 
 #: source/ui/app/strings.src#STR_CREATE_PAGES.String.Text
 msgid  "Create slides"
@@ -1885,7 +1885,7 @@ msgstr "I~guar"
 
 #: source/ui/app/strings.src#RID_UNDO_DELETE_WARNING.FT_UNDO_DELETE_WARNING.FixedText.Text
 msgid  "This action deletes the list of actions that can\nbe undone. Previous changes made to the document are still valid,\nbut cannot be undone. Do you want to continue and\nthus assign the new slide design?"
-msgstr ""
+msgstr "Esta aición desanicia la llista d'aiciones que pueden\ndesfacese. Los cambeos previos fechos al documentu entá son válidos,\npero nun puede desfacese. Quies siguir y d'esti mou\nasignar el nuevu diseñu de la diapositiva?"
 
 #: source/ui/app/strings.src#RID_UNDO_DELETE_WARNING.CB_UNDO_DELETE_DISABLE.CheckBox.Text
 msgid  "~Do not show this warning again"
@@ -1905,7 +1905,7 @@ msgstr "Nun se pudo establecer el formatu de documentu na imprentadora."
 
 #: source/ui/app/strings.src#STR_REMOVE_LINK.String.Text
 msgid  "This graphic is linked to a document. \nDo you want to unlink the graphic in order to edit it?"
-msgstr ""
+msgstr "Esta imaxe ta vinculada al documentu. \n¿Quies desaniciar el vínculu pa editar la imaxe?"
 
 #: source/ui/app/strings.src#STR_IMPORT_GRFILTER_OPENERROR.String.Text
 msgid  "Graphics file cannot be opened"
@@ -2017,7 +2017,7 @@ msgstr " (Esquema)"
 
 #: source/ui/app/strings.src#STR_WARN_SCALE_FAIL.String.Text
 msgid  "The specified scale is invalid.\nDo you want to enter a new one?"
-msgstr ""
+msgstr "La escala especificada nun ye válida.\nQuies especificar una nueva?"
 
 #: source/ui/app/strings.src#STR_CLICK_ACTION_NONE.String.Text
 msgid  "No action"
@@ -2265,7 +2265,7 @@ msgstr "Nome ficheru ensin extensión"
 
 #: source/ui/app/strings.src#STR_RELEASE_GRAPHICLINK.String.Text
 msgid  "This graphic is linked to a document. Do you want to unlink the graphic in order to edit it?"
-msgstr ""
+msgstr "La imaxe ta vinculada al documentu. ¿Quies desfacer el vínculu pa editar la imaxe?"
 
 #: source/ui/app/strings.src#STR_NEW_CUSTOMSHOW.String.Text
 msgid  "New Custom Slide Show"
@@ -2301,7 +2301,7 @@ msgstr "Nun se pudo desagrupar tolos oxetos de dibuxu."
 
 #: source/ui/app/strings.src#STR_PUBDLG_SAMENAME.String.Text
 msgid  "A design already exists with this name.\nDo you want to replace it?"
-msgstr ""
+msgstr "Yá esiste un diseñu con esti nome.\n¿Quies sobrescribilu?"
 
 #: source/ui/app/strings.src#STR_HTMLATTR_TEXT.String.Text
 msgid  "Text"
@@ -2417,7 +2417,7 @@ msgstr "Peñera d'imaxe"
 
 #: source/ui/app/strings.src#STR_WARNING_NOSOUNDFILE.String.Text
 msgid  "The file %\nis not a valid sound file !"
-msgstr ""
+msgstr "¡ El ficheru %\nnun ye un ficheru d'audio válidu !"
 
 #: source/ui/app/strings.src#STR_UNDO_CONVERT_TO_METAFILE.String.Text
 msgid  "Convert to metafile"
@@ -2605,7 +2605,7 @@ msgstr "Definir imáxenes de fondu pa diapositives..."
 
 #: source/ui/app/strings.src#STR_ACC_DIALOG_DESC.String.Text
 msgid  "Select a template from which to import page designs."
-msgstr ""
+msgstr "Seleicionar la plantía dende la que van importase los diseños de páxina."
 
 #: source/ui/app/strings.src#RID_ANNOTATIONS_START.String.Text
 msgid  "Comments"
@@ -2631,6 +2631,14 @@ msgstr "Inxertar imaxe"
 msgid  "Insert Movie"
 msgstr "Inxertar película"
 
+#: source/ui/app/res_bmp.src#SfxStyleFamiliesRes1.#define.Text
+msgid  "Graphics Styles"
+msgstr "Estilos de gráficos"
+
+#: source/ui/app/res_bmp.src#SfxStyleFamiliesRes2.#define.Text
+msgid  "Presentation Styles"
+msgstr "Estilos de presentación"
+
 #: source/ui/app/res_bmp.src#STR_STYLE_FILTER_USED.String.Text
 msgid  "Applied Styles"
 msgstr "Estilos aplicaos"
@@ -2642,14 +2650,6 @@ msgstr "Estilos personalizaos"
 #: source/ui/app/res_bmp.src#STR_STYLE_FILTER_ALL.String.Text
 msgid  "All Styles"
 msgstr "Tolos estilos"
-
-#: source/ui/app/res_bmp.src#SfxStyleFamiliesRes1.#define.Text
-msgid  "Graphics Styles"
-msgstr "Estilos de gráficos"
-
-#: source/ui/app/res_bmp.src#SfxStyleFamiliesRes2.#define.Text
-msgid  "Presentation Styles"
-msgstr "Estilos de presentación"
 
 #: source/ui/app/menuids_tmpl.src#MN_DISTRIBUTE.SID_DISTRIBUTE_DLG.MenuItem.Text
 msgid  "~Distribution..."
@@ -2889,7 +2889,7 @@ msgstr "A~lliniamientu"
 
 #: source/ui/app/menuids_tmpl.src#MN_TEXT_ALIGN.DUMMY.SID_ATTR_PARA_ADJUST_LEFT.MenuItem.Text
 msgid  "~Left"
-msgstr "~Izquierda"
+msgstr "~Esquierda"
 
 #: source/ui/app/menuids_tmpl.src#MN_TEXT_ALIGN.DUMMY.SID_ATTR_PARA_ADJUST_RIGHT.MenuItem.Text
 msgid  "~Right"
@@ -3285,7 +3285,7 @@ msgstr "~Tapecer diapositiva"
 
 #: source/ui/app/menuids3_tmpl.src#MN_GROUP_IMPRESS.SID_GROUP.MenuItem.Text
 msgid  "~Group"
-msgstr "~Grupu"
+msgstr "~Agrupar"
 
 #: source/ui/app/menuids3_tmpl.src#MN_UNGROUP_IMPRESS.SID_UNGROUP.MenuItem.Text
 msgid  "~Ungroup"
@@ -3328,8 +3328,8 @@ msgid  "~Table..."
 msgstr "~Tabla..."
 
 #: source/ui/app/popup.src#RID_DRAW_TABLEOBJ_INSIDE_POPUP.DUMMY.MenuItem.Text
-msgid  "Colu~mn"
-msgstr "Colu~mna"
+msgid  "~Cell"
+msgstr "~Caxella"
 
 #: source/ui/app/popup.src#RID_DRAW_TABLEOBJ_INSIDE_POPUP.DUMMY.SID_TABLE_MERGE_CELLS.MenuItem.Text
 msgid  "~Merge"
@@ -3351,9 +3351,13 @@ msgstr "C~entru"
 msgid  "~Bottom"
 msgstr "~Baxero"
 
+#: source/ui/app/popup.src#RID_DRAW_TABLEOBJ_INSIDE_POPUP.DUMMY.MenuItem.Text
+msgid  "~Row"
+msgstr "~Filera"
+
 #: source/ui/app/popup.src#RID_DRAW_TABLEOBJ_INSIDE_POPUP.DUMMY.SID_TABLE_DISTRIBUTE_ROWS.MenuItem.Text
 msgid  "Space ~Equally"
-msgstr "Axustar ~Uniformemente"
+msgstr "~Axustar uniformemente"
 
 #: source/ui/app/popup.src#RID_DRAW_TABLEOBJ_INSIDE_POPUP.DUMMY.SID_TABLE_SELECT_ROW.MenuItem.Text
 msgid  "~Select"
@@ -3366,6 +3370,10 @@ msgstr "~Inxertar..."
 #: source/ui/app/popup.src#RID_DRAW_TABLEOBJ_INSIDE_POPUP.DUMMY.SID_TABLE_DELETE_ROW.MenuItem.Text
 msgid  "~Delete"
 msgstr "~Desaniciar"
+
+#: source/ui/app/popup.src#RID_DRAW_TABLEOBJ_INSIDE_POPUP.DUMMY.MenuItem.Text
+msgid  "Colu~mn"
+msgstr "Colu~mna"
 
 #: source/ui/app/popup.src#RID_DRAW_TABLEOBJ_INSIDE_POPUP.DUMMY.SID_TABLE_DISTRIBUTE_COLUMNS.MenuItem.Text
 msgid  "Space ~Equally"
@@ -3439,33 +3447,25 @@ msgstr "Aplicar a les ~diapositives esbillaes"
 msgid  "~Insert Slide"
 msgstr "~Inxertar diapositiva"
 
-#: source/ui/app/popup.src#RID_DRAW_TABLEOBJ_INSIDE_POPUP.DUMMY.MenuItem.Text
-msgid  "~Cell"
-msgstr "~Caxella"
-
-#: source/ui/app/popup.src#RID_DRAW_TABLEOBJ_INSIDE_POPUP.DUMMY.MenuItem.Text
-msgid  "~Row"
-msgstr "~Filera"
-
 #: source/ui/app/sdstring.src#STR_SAR_NOT_FOUND.String.Text
 msgid  "Search key not found."
 msgstr "¡Clave de busca non atopada!"
 
 #: source/ui/app/sdstring.src#STR_SAR_WRAP_FORWARD.String.Text
 msgid  "%PRODUCTNAME Impress has searched to the end of the presentation. Do you want to continue at the beginning?"
-msgstr ""
+msgstr "%PRODUCTNAME Impress guetó al final de la presentación. Quies siguir fasta l'entamu?"
 
 #: source/ui/app/sdstring.src#STR_SAR_WRAP_BACKWARD.String.Text
 msgid  "%PRODUCTNAME Impress has searched to the beginning of the presentation. Do you want to continue at the end?"
-msgstr ""
+msgstr "%PRODUCTNAME Impress guetó al entamu de la presentación. Quies siguir fasta'l final?"
 
 #: source/ui/app/sdstring.src#STR_SAR_WRAP_FORWARD_DRAW.String.Text
 msgid  "%PRODUCTNAME Draw has searched to the end of the document. Do you want to continue at the beginning?"
-msgstr ""
+msgstr "%PRODUCTNAME Draw guetó al final de la presentación. Quies siguir fasta l'entamu?"
 
 #: source/ui/app/sdstring.src#STR_SAR_WRAP_BACKWARD_DRAW.String.Text
 msgid  "%PRODUCTNAME Draw has searched to the beginning of the document. Do you want to continue at the end?"
-msgstr ""
+msgstr "%PRODUCTNAME Draw guetó al entamu de la presentación. Quies siguir fasta'l final?"
 
 #: source/ui/app/menuids2_tmpl.src#MN_NEWDOCDIRECT.SID_NEWDOCDIRECT.MenuItem.Text
 msgid  "~New"
@@ -3486,6 +3486,10 @@ msgstr "~Unviar"
 #: source/ui/app/menuids2_tmpl.src#MN_PAGESETUP.SID_PAGESETUP.MenuItem.Text
 msgid  "~Page..."
 msgstr "~Páxina..."
+
+#: source/ui/app/menuids2_tmpl.src#20.#define.Text
+msgid  "~Edit"
+msgstr "E~ditar"
 
 #: source/ui/app/menuids2_tmpl.src#MN_PASTE2.SID_PASTE2.MenuItem.Text
 msgid  "Paste ~Special..."
@@ -3510,6 +3514,10 @@ msgstr "Desaniciar ~capa..."
 #: source/ui/app/menuids2_tmpl.src#MN_MANAGE_LINKS.SID_MANAGE_LINKS.MenuItem.Text
 msgid  "Lin~ks..."
 msgstr "~Enllaces..."
+
+#: source/ui/app/menuids2_tmpl.src#23.#define.Text
+msgid  "~View"
+msgstr "~Ver"
 
 #: source/ui/app/menuids2_tmpl.src#MN_TOGGLETOOLBAR.SID_TOGGLETOOLBAR.MenuItem.Text
 msgid  "Main ~Toolbar"
@@ -3574,6 +3582,10 @@ msgstr "Espaciu de ~trabayu"
 #: source/ui/app/menuids2_tmpl.src#MNSUB_MASTERPAGE.MN_SUB_MASTERPAGE.MenuItem.Text
 msgid  "~Master"
 msgstr "~Principal"
+
+#: source/ui/app/menuids2_tmpl.src#21.#define.Text
+msgid  "~Insert"
+msgstr "~Inxertar"
 
 #: source/ui/app/menuids2_tmpl.src#MN_INSERTPAGE.SID_INSERTPAGE.MenuItem.Text
 msgid  "Slid~e..."
@@ -3659,6 +3671,10 @@ msgstr "~Ficheru..."
 msgid  "Fiel~ds"
 msgstr "Ca~mpos"
 
+#: source/ui/app/menuids2_tmpl.src#22.#define.Text
+msgid  "F~ormat"
+msgstr "F~ormatu"
+
 #: source/ui/app/menuids2_tmpl.src#MN_TEXTATTR_DLG.SID_TEXTATTR_DLG.MenuItem.Text
 msgid  "Te~xt..."
 msgstr "Testu... (Alt+~x)"
@@ -3682,6 +3698,14 @@ msgstr "Camudar ~diseñu de páxina..."
 #: source/ui/app/menuids2_tmpl.src#MNSUB_TEMPLATES.MN_SUB_TEMPLATES.MenuItem.Text
 msgid  "Styl~es"
 msgstr "~Estilos"
+
+#: source/ui/app/menuids2_tmpl.src#ITEM_TOOLS_ID.#define.Text
+msgid  "~Tools"
+msgstr "~Ferramientes"
+
+#: source/ui/app/menuids2_tmpl.src#26.#define.Text
+msgid  "~Slide Show"
+msgstr "~Presentación"
 
 #: source/ui/app/menuids2_tmpl.src#MN_SPELLING.SID_SPELL_DIALOG.MenuItem.Text
 msgid  "~Check..."
@@ -3722,6 +3746,10 @@ msgstr "~Interaición..."
 #: source/ui/app/menuids2_tmpl.src#MNSUB_SPELLING.MN_SUB_SPELLING.MenuItem.Text
 msgid  "~Spellcheck"
 msgstr "~Ortografía"
+
+#: source/ui/app/menuids2_tmpl.src#24.#define.Text
+msgid  "~Modify"
+msgstr "Ca~mudar"
 
 #: source/ui/app/menuids2_tmpl.src#MN_MOREFRONT.SID_MOREFRONT.MenuItem.Text
 msgid  "Bring ~Forward"
@@ -3794,34 +3822,6 @@ msgstr "Calidá de ~visualización"
 #: source/ui/app/menuids2_tmpl.src#MNSUB_PREVIEW_OUTPUT_QUALITY.MN_SUB_PREVIEW_OUTPUT_QUALITY.ItemList.Text
 msgid  "Pre~view Mode"
 msgstr "Calidá de ~previsualización"
-
-#: source/ui/app/menuids2_tmpl.src#20.#define.Text
-msgid  "~Edit"
-msgstr "E~ditar"
-
-#: source/ui/app/menuids2_tmpl.src#23.#define.Text
-msgid  "~View"
-msgstr "~Ver"
-
-#: source/ui/app/menuids2_tmpl.src#21.#define.Text
-msgid  "~Insert"
-msgstr "~Inxertar"
-
-#: source/ui/app/menuids2_tmpl.src#22.#define.Text
-msgid  "F~ormat"
-msgstr "F~ormatu"
-
-#: source/ui/app/menuids2_tmpl.src#ITEM_TOOLS_ID.#define.Text
-msgid  "~Tools"
-msgstr "~Ferramientes"
-
-#: source/ui/app/menuids2_tmpl.src#26.#define.Text
-msgid  "~Slide Show"
-msgstr "~Presentación"
-
-#: source/ui/app/menuids2_tmpl.src#24.#define.Text
-msgid  "~Modify"
-msgstr "Ca~mudar"
 
 #: source/ui/dlg/sdpreslt.src#DLG_PRESLT.FT_LAYOUT.FixedText.Text
 msgid  "~Select a slide design"
@@ -4445,7 +4445,7 @@ msgstr "Llinia"
 
 #: source/ui/dlg/prltempl.src#TAB_PRES_LAYOUT_TEMPLATE.1.RID_SVXPAGE_AREA.PageItem.Text
 msgid  "Area"
-msgstr "Área"
+msgstr "Estaya"
 
 #: source/ui/dlg/prltempl.src#TAB_PRES_LAYOUT_TEMPLATE.1.RID_SVXPAGE_SHADOW.PageItem.Text
 msgid  "Shadow"
@@ -4687,6 +4687,10 @@ msgstr "Númberu de diapositiva"
 msgid  "Master Elements"
 msgstr "Elements principals"
 
+#: source/ui/dlg/tpoption.src#SCALE_TEXT.#define.Text
+msgid  "Scale"
+msgstr "Escalar"
+
 #: source/ui/dlg/tpoption.src#TP_OPTIONS_CONTENTS.TabPage.Text
 msgid  "Contents"
 msgstr "Conteníu"
@@ -4802,10 +4806,6 @@ msgstr "Anc~hor de páxina"
 #: source/ui/dlg/tpoption.src#TP_OPTIONS_MISC.FT_PAGEHEIGHT.FixedText.Text
 msgid  "Page ~height"
 msgstr "Al~tor de páxina"
-
-#: source/ui/dlg/tpoption.src#SCALE_TEXT.#define.Text
-msgid  "Scale"
-msgstr "Escalar"
 
 #: source/ui/dlg/morphdlg.src#DLG_MORPH.GRP_PRESET.FixedLine.Text
 msgid  "Settings"
@@ -5056,22 +5056,6 @@ msgid  "Alignment"
 msgstr "Alliniamientu"
 
 #: source/ui/dlg/animobjs.src#FLT_WIN_ANIMATION.LB_ADJUSTMENT.Default.StringList.item
-msgid  "Bottom Right"
-msgstr "Abaxo drecha"
-
-#: source/ui/dlg/animobjs.src#FLT_WIN_ANIMATION.BTN_CREATE_GROUP.PushButton.Text
-msgid  "Create"
-msgstr "Crear"
-
-#: source/ui/dlg/animobjs.src#FLT_WIN_ANIMATION.GRP_ANIMATION_GROUP.FixedLine.Text
-msgid  "Animation group"
-msgstr "Grupu d'animación"
-
-#: source/ui/dlg/animobjs.src#FLT_WIN_ANIMATION.STR_DISPLAY.String.Text
-msgid  "Preview"
-msgstr "Previsualización"
-
-#: source/ui/dlg/animobjs.src#FLT_WIN_ANIMATION.LB_ADJUSTMENT.Default.StringList.item
 msgid  "Top Left"
 msgstr "Arriba esquierda"
 
@@ -5102,6 +5086,22 @@ msgstr "Arriba drecha"
 #: source/ui/dlg/animobjs.src#FLT_WIN_ANIMATION.LB_ADJUSTMENT.Default.StringList.item
 msgid  "Right"
 msgstr "Drecha"
+
+#: source/ui/dlg/animobjs.src#FLT_WIN_ANIMATION.LB_ADJUSTMENT.Default.StringList.item
+msgid  "Bottom Right"
+msgstr "Abaxo drecha"
+
+#: source/ui/dlg/animobjs.src#FLT_WIN_ANIMATION.BTN_CREATE_GROUP.PushButton.Text
+msgid  "Create"
+msgstr "Crear"
+
+#: source/ui/dlg/animobjs.src#FLT_WIN_ANIMATION.GRP_ANIMATION_GROUP.FixedLine.Text
+msgid  "Animation group"
+msgstr "Grupu d'animación"
+
+#: source/ui/dlg/animobjs.src#FLT_WIN_ANIMATION.STR_DISPLAY.String.Text
+msgid  "Preview"
+msgstr "Previsualización"
 
 #: source/ui/dlg/prntopts.src#TP_PRINT_OPTIONS.TabPage.Text
 msgid  "Options"
@@ -5461,7 +5461,7 @@ msgstr "Tamañu orixinal"
 
 #: source/ui/view/DocumentRenderer.src#_STR_IMPRESS_PRINT_UI_OPTIONS._STR_IMPRESS_PRINT_UI_PAGE_OPTIONS_CHOICES.item2.ItemList.item
 msgid  "Fit to printable page"
-msgstr "Axustar al tamañu de la páxina"
+msgstr "Axustar a la zona d'imprentación"
 
 #: source/ui/view/DocumentRenderer.src#_STR_IMPRESS_PRINT_UI_OPTIONS._STR_IMPRESS_PRINT_UI_PAGE_OPTIONS_CHOICES.item3.ItemList.item
 msgid  "Distribute on multiple sheets of paper"

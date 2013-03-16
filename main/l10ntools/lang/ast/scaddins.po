@@ -437,7 +437,7 @@ msgstr "FACT.DOBLE"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Workday.1.String.Text
 msgid  "Returns the serial number of the date before or after a specified number of workdays"
-msgstr ""
+msgstr "Devuelve'l númberu de serie de la data anterior o postrera a un númberu determináu de díes llaborales."
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Workday.2.String.Text
 msgid  "Start date"
@@ -465,7 +465,7 @@ msgstr "Llista con valores de díes festivos (vacaciones, festivos, etc.)"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Yearfrac.1.String.Text
 msgid  "Returns the number of whole days between 'start date' and 'end date' as a year fraction"
-msgstr ""
+msgstr "Calcula la diferencia entre la data d'entamu y final como fracción d'años."
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Yearfrac.2.String.Text
 msgid  "Start date"
@@ -493,7 +493,7 @@ msgstr "Base pa determinar los díes d'intereses"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Edate.1.String.Text
 msgid  "Returns the serial number of the date that is a specified number of months before or after the start date"
-msgstr ""
+msgstr "Devuelve'l númberu de serie de la data anterior o posterior, n'un númberu determináu de meses, a la data d'entamu."
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Edate.2.String.Text
 msgid  "Start date"
@@ -513,7 +513,7 @@ msgstr "Cantidá de meses anterioreso posteriores a la data d'entamu."
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Weeknum.1.String.Text
 msgid  "Returns the number of the calendar week in which the specified date occurs."
-msgstr ""
+msgstr "Devuelve un númberu qu'amuesa la selmana del añu que correspuende cola data indicada."
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Weeknum.2.String.Text
 msgid  "Date"
@@ -533,7 +533,7 @@ msgstr "Un númberu del 1 al 3 qu'indica'l día col qu'entama una selmana."
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Eomonth.1.String.Text
 msgid  "Returns the serial number of the last day of the month that comes a certain number of months before or after the start date"
-msgstr ""
+msgstr "Devuelve'l númberu de serie de la data que representa'l caberu día del mes anterior o posterior a un númberu determináu de meses."
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Eomonth.2.String.Text
 msgid  "Start date"
@@ -577,7 +577,7 @@ msgstr "Díes llibres"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Networkdays.7.String.Text
 msgid  "List of date values representing days off (vacation, holidays, etc.)"
-msgstr ""
+msgstr "Llista colos valores de data que representen los díes festivos (vacaciones, festivos, etc.)"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Iseven.1.String.Text
 msgid  "Returns the value 'true' if the number is even"
@@ -589,7 +589,7 @@ msgstr "Númberu"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Iseven.3.String.Text
 msgid  "The number"
-msgstr "El númberu"
+msgstr "Númberu"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Isodd.1.String.Text
 msgid  "Returns the value 'true' if the number is odd"
@@ -601,7 +601,7 @@ msgstr "Númberu"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Isodd.3.String.Text
 msgid  "The number"
-msgstr "El númberu"
+msgstr "Númberu"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Multinomial.1.String.Text
 msgid  "Returns the multinomial coefficient of a set of numbers"
@@ -613,7 +613,7 @@ msgstr "Númbero(s)"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Multinomial.3.String.Text
 msgid  "Number or list of numbers for which you want the multinomial coefficient"
-msgstr ""
+msgstr "Númberu o llista de númberos de los qu'hai que determinar el so coeficiente multinomial."
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Seriessum.1.String.Text
 msgid  "Returns the sum of a power series"
@@ -649,7 +649,7 @@ msgstr "Coeficientes"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Seriessum.9.String.Text
 msgid  "Set of coefficients by which each successive power of the variable x is multiplied"
-msgstr ""
+msgstr "Grupu de coeficientes colos que se multiplicarán potencies sucesives de la variable x."
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Quotient.1.String.Text
 msgid  "Returns the integer portion of a division"
@@ -657,11 +657,11 @@ msgstr "Devuelve la parte entera d'una división."
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Quotient.2.String.Text
 msgid  "Numerator"
-msgstr "Numberador"
+msgstr "Numerador"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Quotient.3.String.Text
 msgid  "The dividend"
-msgstr "Numberador (dividendu)"
+msgstr "Numerador (dividendo)"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Quotient.4.String.Text
 msgid  "Denominator"
@@ -669,7 +669,7 @@ msgstr "Denominador"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Quotient.5.String.Text
 msgid  "The divisor"
-msgstr "El denominador (divisor)"
+msgstr "Denominador (divisor)"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Mround.1.String.Text
 msgid  "Returns a number rounded to a specified multiple"
@@ -981,7 +981,7 @@ msgstr "Númberu"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Dec2Oct.3.String.Text
 msgid  "The decimal number"
-msgstr "El númberu decimal"
+msgstr "Númberu decimal"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Dec2Oct.4.String.Text
 msgid  "Places"
@@ -1173,7 +1173,7 @@ msgstr "Exponente col que se potenciará el númberu complexu."
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Imargument.1.String.Text
 msgid  "Returns the argument theta, an angle expressed in radians"
-msgstr ""
+msgstr "Devuelve l'ángulu en radianes pa la representación trigonométrica d'un númberu complexu."
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Imargument.2.String.Text
 msgid  "Complex number"
@@ -1213,11 +1213,11 @@ msgstr "Denominador"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Imdiv.5.String.Text
 msgid  "The divisor"
-msgstr "El denominador (divisor)"
+msgstr "Denominador (divisor)"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Imexp.1.String.Text
 msgid  "Returns the algebraic form of the exponential of a complex number"
-msgstr ""
+msgstr "Devuelve la forma alxebraica d'un númberu complexu representáu exponencialmente."
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Imexp.2.String.Text
 msgid  "Complex number"
@@ -1517,7 +1517,7 @@ msgstr "Unidá de midida del resultáu."
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Amordegrc.1.String.Text
 msgid  "Returns the prorated linear depreciation of an asset for each accounting period"
-msgstr ""
+msgstr "Devuelve la depreciación d'una cantidá nun periodu en base al métodu francés d'amortización progresiva completa."
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Amordegrc.2.String.Text
 msgid  "Cost"
@@ -1577,7 +1577,7 @@ msgstr "Base añal a usar"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Amorlinc.1.String.Text
 msgid  "Returns the prorated linear depreciation of an asset for each accounting period"
-msgstr ""
+msgstr "Devuelve la depreciación d'una cantidá nun periodu en base al métodu francés d'amortización progresiva completa."
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Amorlinc.2.String.Text
 msgid  "Cost"
@@ -1637,7 +1637,7 @@ msgstr "Base añal a usar"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Accrint.1.String.Text
 msgid  "Returns the accrued interest for a security that pays periodic interest"
-msgstr ""
+msgstr "Devuelve'l interés acumuláu pa un valor con pagos periódicos d'intereses."
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Accrint.2.String.Text
 msgid  "Issue"
@@ -1669,11 +1669,11 @@ msgstr "Tasa"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Accrint.9.String.Text
 msgid  "The rate"
-msgstr "Tasa"
+msgstr "La tasa"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Accrint.10.String.Text
 msgid  "Par"
-msgstr "Par"
+msgstr "Valor nominal"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Accrint.11.String.Text
 msgid  "The par value"
@@ -1697,7 +1697,7 @@ msgstr "Base"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Accrintm.1.String.Text
 msgid  "Returns the accrued interest for a security that pays interest at maturity"
-msgstr ""
+msgstr "Devuelve l'interés acumuláu d'un valor que se pagará al vencimientu."
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Accrintm.2.String.Text
 msgid  "Issue"
@@ -1741,7 +1741,7 @@ msgstr "Base"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Received.1.String.Text
 msgid  "Returns the amount paid out at maturity for a fully invested security"
-msgstr ""
+msgstr "Devuelve la cantidá recibida al vencimientu d'un valor dafechamente invertíu."
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Received.2.String.Text
 msgid  "Settlement"
@@ -1817,7 +1817,7 @@ msgstr "Devolución"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Disc.9.String.Text
 msgid  "The redemption value"
-msgstr "El valor de devolución del títulu bursátil."
+msgstr "El valor de rescate"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Disc.10.String.Text
 msgid  "Basis"
@@ -1829,7 +1829,7 @@ msgstr "Base"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Duration.1.String.Text
 msgid  "Returns the annual Macaulay duration of a security with periodic interest payments"
-msgstr ""
+msgstr "Devuelve la duración añal Macaulay d'un valor con pagos periódicos d'intereses."
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Duration.2.String.Text
 msgid  "Settlement"
@@ -1901,7 +1901,7 @@ msgstr "Periodos"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Cumprinc.1.String.Text
 msgid  "Returns the cumulative principal on a loan to be paid between two periods"
-msgstr ""
+msgstr "Devuelve l'amortización acumulada d'un préstamu que tien de ser pagada ente dos periodos."
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Cumprinc.2.String.Text
 msgid  "Rate"
@@ -1925,7 +1925,7 @@ msgstr "Pv"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Cumprinc.7.String.Text
 msgid  "The present value"
-msgstr "Valor actual"
+msgstr "Valor del oxetu"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Cumprinc.8.String.Text
 msgid  "Start period"
@@ -2005,7 +2005,7 @@ msgstr "Tipu de vencimientu"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Price.1.String.Text
 msgid  "Returns the price per 100 currency units face value of a security that pays periodic interest"
-msgstr ""
+msgstr "Devuelve'l precio, por un valor nominal de 100 unidaes monetaries, d'un títulu que paga intereses periódicos."
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Price.2.String.Text
 msgid  "Settlement"
@@ -2045,7 +2045,7 @@ msgstr "Devolución"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Price.11.String.Text
 msgid  "The redemption value"
-msgstr "El rendimientu del valor."
+msgstr "El valor de devolución del títulu bursátil."
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Price.12.String.Text
 msgid  "Frequency"
@@ -2065,7 +2065,7 @@ msgstr "Base"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Pricedisc.1.String.Text
 msgid  "Returns the price per 100 currency units face value of a discounted security"
-msgstr ""
+msgstr "Devuelve la cotización d'un títulu ensin intereses d'un valor nominal de 100 unidaes monetaries."
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Pricedisc.2.String.Text
 msgid  "Settlement"
@@ -2097,7 +2097,7 @@ msgstr "Devolución"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Pricedisc.9.String.Text
 msgid  "The redemption value"
-msgstr "El rendimientu del valor."
+msgstr "El valor de devolución del títulu bursátil."
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Pricedisc.10.String.Text
 msgid  "Basis"
@@ -2109,7 +2109,7 @@ msgstr "Base"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Pricemat.1.String.Text
 msgid  "Returns the price per 100 currency units face value of a security that pays interest at maturity"
-msgstr ""
+msgstr "Devuelve la cotización, por un valor nominal de 100 unidaes monetaris, d'un títulu que paga intereses al vencer."
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Pricemat.2.String.Text
 msgid  "Settlement"
@@ -2161,7 +2161,7 @@ msgstr "Base"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Mduration.1.String.Text
 msgid  "Returns the Macaulay modified duration for a security with an assumed par value of 100 currency units"
-msgstr ""
+msgstr "Devuelve la duración modificada de Macaulay d'un títulu d'un valor de 100 unidaes monetaries."
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Mduration.2.String.Text
 msgid  "Settlement"
@@ -2233,7 +2233,7 @@ msgstr "Periodos"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Dollarfr.1.String.Text
 msgid  "Converts a price expressed as a decimal into a price expressed as a fraction"
-msgstr ""
+msgstr "Convierte la cotización decimal d'un valor nuna fraicionaria."
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Dollarfr.2.String.Text
 msgid  "Decimal dollar"
@@ -2253,7 +2253,7 @@ msgstr "El denominador (divisor)"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Dollarde.1.String.Text
 msgid  "Converts a price expressed as a fraction into a price expressed as a decimal"
-msgstr ""
+msgstr "Convierte la cotización fraicionaria d'un valor en decimal."
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Dollarde.2.String.Text
 msgid  "Fractional dollar"
@@ -2457,7 +2457,7 @@ msgstr "La tasa de descuentu de la lletra."
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Tbillprice.1.String.Text
 msgid  "Returns the price of 100 currency units face value for a treasury bill"
-msgstr ""
+msgstr "Devuelve la cotización d'una lletra del tesoru del valor nominal de 100 unidaes monetaries."
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Tbillprice.2.String.Text
 msgid  "Settlement"
@@ -2513,7 +2513,7 @@ msgstr "El preciu"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Oddfprice.1.String.Text
 msgid  "Returns the price per $100 face value of a security with an odd first period"
-msgstr ""
+msgstr "Devuelve'l preciu de 100 (unidá monetaria) de valor nominal d'un títulu con un primer períodu impar"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Oddfprice.2.String.Text
 msgid  "Settlement"
@@ -2665,7 +2665,7 @@ msgstr "Base"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Oddlprice.1.String.Text
 msgid  "Returns the price per $100 face value of a security with an odd last period"
-msgstr ""
+msgstr "Devuelve la cotización por 100 (unidá monetaria) de valor nominal d'un valor con caberu períodu impar"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Oddlprice.2.String.Text
 msgid  "Settlement"
@@ -2801,7 +2801,7 @@ msgstr "Base"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Xirr.1.String.Text
 msgid  "Returns the internal rate of return for a non-periodic schedule of payments"
-msgstr ""
+msgstr "Devuelve l'interés internu d'una riestra de pagos non periódicos."
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Xirr.2.String.Text
 msgid  "Values"
@@ -2829,7 +2829,7 @@ msgstr "Valor estimáu"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Xnpv.1.String.Text
 msgid  "Returns the net present value for a non-periodic schedule of payments"
-msgstr ""
+msgstr "Devuelve'l valor efeutivu netu (valor del capital) d'una riestra de pagos non acumulables periódicamente."
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Xnpv.2.String.Text
 msgid  "Rate"
@@ -2937,7 +2937,7 @@ msgstr "Base"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Coupdays.1.String.Text
 msgid  "Returns the number of days in the coupon period containing the settlement date"
-msgstr ""
+msgstr "Devuelve la cantidá de díes del períodu d'interés qu'inclúi la data de lliquidación."
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Coupdays.2.String.Text
 msgid  "Settlement"
@@ -2973,7 +2973,7 @@ msgstr "Base"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Coupdaysnc.1.String.Text
 msgid  "Returns the number of days from the settlement date to the next coupon date"
-msgstr ""
+msgstr "Devuelve la cantidá de díes dende la data de lliquidación hasta la data del próximu vale."
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Coupdaysnc.2.String.Text
 msgid  "Settlement"
@@ -3009,7 +3009,7 @@ msgstr "Base"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Coupdaybs.1.String.Text
 msgid  "Returns the number of days from the beginning of the coupon period to the settlement date"
-msgstr ""
+msgstr "Devuelve la cantidá de díes dende l'entamu d'un vale hata la data de lliquidación."
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Coupdaybs.2.String.Text
 msgid  "Settlement"
@@ -3081,7 +3081,7 @@ msgstr "Base"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Coupnum.1.String.Text
 msgid  "Returns the number of coupons payable between the settlement and maturity dates"
-msgstr ""
+msgstr "Devuelve los plazos de los intereses ente la data de lliquidación y vencimientu."
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Coupnum.2.String.Text
 msgid  "Settlement"
@@ -3117,7 +3117,7 @@ msgstr "Base"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Fvschedule.1.String.Text
 msgid  "Returns the future value of the initial principal after a series of compound interest rates are applied"
-msgstr ""
+msgstr "Devuelve'l valor del capital anicial tres l'aplicación d'una riestra de dellos tipos d'intereses periódicos."
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Fvschedule.2.String.Text
 msgid  "Principal"
@@ -3161,7 +3161,7 @@ msgstr "Triba"
 
 #: source/datefunc/datefunc.src#RID_DATE_FUNCTION_DESCRIPTIONS.DATE_FUNCDESC_DiffWeeks.7.String.Text
 msgid  "Type of calculation: Type=0 means the time interval, Type=1 means calendar weeks."
-msgstr ""
+msgstr "Triba de cálculu: 0 ye l'intervalu de tiempu; 1 son les selmanes del repertoriu."
 
 #: source/datefunc/datefunc.src#RID_DATE_FUNCTION_DESCRIPTIONS.DATE_FUNCDESC_DiffMonths.1.String.Text
 msgid  "Determines the number of months in a specific period."
@@ -3189,7 +3189,7 @@ msgstr "Triba"
 
 #: source/datefunc/datefunc.src#RID_DATE_FUNCTION_DESCRIPTIONS.DATE_FUNCDESC_DiffMonths.7.String.Text
 msgid  "Type of calculation: Type=0 means the time interval, Type=1 means calendar months."
-msgstr ""
+msgstr "Triba de cálculu: 0 ye l'intervalu de tiempu; 1 son los meses del repertoriu."
 
 #: source/datefunc/datefunc.src#RID_DATE_FUNCTION_DESCRIPTIONS.DATE_FUNCDESC_DiffYears.1.String.Text
 msgid  "Calculates the number of years in a specific period."
@@ -3217,11 +3217,11 @@ msgstr "Triba"
 
 #: source/datefunc/datefunc.src#RID_DATE_FUNCTION_DESCRIPTIONS.DATE_FUNCDESC_DiffYears.7.String.Text
 msgid  "Type of calculation: Type=0 means the time interval, Type=1 means calendar years."
-msgstr ""
+msgstr "Triba de cálculu: 0 ye l'intervalu de tiempu; 1 son los años del repertoriu."
 
 #: source/datefunc/datefunc.src#RID_DATE_FUNCTION_DESCRIPTIONS.DATE_FUNCDESC_IsLeapYear.1.String.Text
 msgid  "Returns 1 (TRUE) if the date is a day of a leap year, otherwise 0 (FALSE)."
-msgstr ""
+msgstr "Retorna 1 (TRUE) si la data ye un día d'un añu bisiestu, sinón retorna 0 (FALSE)."
 
 #: source/datefunc/datefunc.src#RID_DATE_FUNCTION_DESCRIPTIONS.DATE_FUNCDESC_IsLeapYear.2.String.Text
 msgid  "Date"
@@ -3233,7 +3233,7 @@ msgstr "Cualquier día del añu deseáu"
 
 #: source/datefunc/datefunc.src#RID_DATE_FUNCTION_DESCRIPTIONS.DATE_FUNCDESC_DaysInMonth.1.String.Text
 msgid  "Returns the number of days of the month in which the date entered occurs"
-msgstr ""
+msgstr "Retorna'l númberu de díes del mes nos que concuaya la data introducida"
 
 #: source/datefunc/datefunc.src#RID_DATE_FUNCTION_DESCRIPTIONS.DATE_FUNCDESC_DaysInMonth.2.String.Text
 msgid  "Date"
@@ -3245,7 +3245,7 @@ msgstr "Cualquier día del mes deseáu"
 
 #: source/datefunc/datefunc.src#RID_DATE_FUNCTION_DESCRIPTIONS.DATE_FUNCDESC_DaysInYear.1.String.Text
 msgid  "Returns the number of days of the year in which the date entered occurs."
-msgstr ""
+msgstr "Retorna'l númberu de díes del añu nos que concuaya la data introducida."
 
 #: source/datefunc/datefunc.src#RID_DATE_FUNCTION_DESCRIPTIONS.DATE_FUNCDESC_DaysInYear.2.String.Text
 msgid  "Date"
@@ -3257,7 +3257,7 @@ msgstr "Cualquier día del añu deseáu"
 
 #: source/datefunc/datefunc.src#RID_DATE_FUNCTION_DESCRIPTIONS.DATE_FUNCDESC_WeeksInYear.1.String.Text
 msgid  "Returns the number of weeks of the year in which the date entered occurs"
-msgstr ""
+msgstr "Retorna'l númberu de selmanes del añu nes que concuaya la data introducida"
 
 #: source/datefunc/datefunc.src#RID_DATE_FUNCTION_DESCRIPTIONS.DATE_FUNCDESC_WeeksInYear.2.String.Text
 msgid  "Date"

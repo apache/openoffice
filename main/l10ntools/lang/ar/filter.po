@@ -539,9 +539,41 @@ msgstr "GIF - Graphics Interchange Format"
 msgid  "PNG - Portable Network Graphic"
 msgstr "PNG - Portable Network Graphic"
 
+#: source/config/fragments/types/writerglobal8.xcu#writerglobal8.UIName
+msgid  "Writer 8 Master Document"
+msgstr "مستند Writer 8 رئيسي"
+
+#: source/config/fragments/types/impress8.xcu#impress8.UIName
+msgid  "Impress 8"
+msgstr "Impress 8"
+
+#: source/config/fragments/types/calc8_template.xcu#calc8_template.UIName
+msgid  "Calc 8 Template"
+msgstr "قالب Calc 8"
+
 #: source/config/fragments/types/writer_MS_Word_2003_XML.xcu#writer_MS_Word_2003_XML.UIName
 msgid  "Microsoft Word 2003 XML"
 msgstr "Microsoft Word 2003 XML"
+
+#: source/config/fragments/types/writer8.xcu#writer8.UIName
+msgid  "Writer 8"
+msgstr "Writer 8"
+
+#: source/config/fragments/types/impress8_template.xcu#impress8_template.UIName
+msgid  "Impress 8 Template"
+msgstr "قالب Impress 8"
+
+#: source/config/fragments/types/draw8_template.xcu#draw8_template.UIName
+msgid  "Draw 8 Template"
+msgstr "قالب Draw 8"
+
+#: source/config/fragments/types/writerweb8_writer_template.xcu#writerweb8_writer_template.UIName
+msgid  "Writer/Web 8 Template"
+msgstr "قالب Writer/Web 8"
+
+#: source/config/fragments/types/draw8.xcu#draw8.UIName
+msgid  "Draw 8"
+msgstr "Draw 8"
 
 #: source/config/fragments/types/calc_NSO_UOF2.xcu#calc_NSO_UOF2.UIName
 msgid  "Uniform Office Format 2 spreadsheet"
@@ -555,6 +587,18 @@ msgstr "Microsoft Excel 2003 XML"
 msgid  "OpenDocument Database"
 msgstr "قاعدة بيانات OpenDocument"
 
+#: source/config/fragments/types/calc8.xcu#calc8.UIName
+msgid  "Calc 8"
+msgstr "Calc 8"
+
+#: source/config/fragments/types/math8.xcu#math8.UIName
+msgid  "Math 8"
+msgstr "Math 8"
+
+#: source/config/fragments/types/writer8_template.xcu#writer8_template.UIName
+msgid  "Writer 8 Template"
+msgstr "قالب Writer 8"
+
 #: source/config/fragments/types/writer_NSO_UOF2.xcu#writer_NSO_UOF2.UIName
 msgid  "Uniform Office Format 2 text"
 msgstr ""
@@ -563,17 +607,21 @@ msgstr ""
 msgid  "Uniform Office Format 2 presentation"
 msgstr ""
 
+#: source/config/fragments/types/chart8.xcu#chart8.UIName
+msgid  "Chart 8"
+msgstr "Chart 8"
+
 #: source/flash/impswfdialog.src#DLG_OPTIONS.ModalDialog.Text
 msgid  "Macromedia Flash (SWF) Options"
 msgstr "خيارات (Macromedia Flash (SWF"
 
 #: source/flash/impswfdialog.src#DLG_OPTIONS.FI_DESCR.FixedText.Text
 msgid  "1: min. quality\n100: max. quality"
-msgstr ""
+msgstr "1: أقل جودة\n100: أعلى جودة"
 
 #: source/graphicfilter/eps/epsstr.src#KEY_VERSION_CHECK.String.Text
 msgid  "Warning: Not all of the imported EPS graphics could be saved at level1\nas some are at a higher level!"
-msgstr ""
+msgstr "تحذير: لا يمكن حفظ جميع رسومات EPS المستوردة في المستوى 1\nنظرًا لأن بعضها ينتمي إلى مستوى أعلى!"
 
 #: source/pdf/pdf.src#PDF_PROGRESS_BAR.String.Text
 msgid  "Export as PDF"
@@ -993,7 +1041,7 @@ msgstr "شفافية PDF/A"
 
 #: source/pdf/impdialog.src#RID_PDF_ERROR_DLG.STR_WARN_TRANSP_PDFA.String.Text
 msgid  "PDF/A forbids transparency. A transparent object was painted opaque instead."
-msgstr ""
+msgstr "يحظر PDF/A الشفافية. تم طلاء كائن شفاف بلون شفاف بدلاً من ذلك."
 
 #: source/pdf/impdialog.src#RID_PDF_ERROR_DLG.STR_WARN_TRANSP_VERSION_SHORT.String.Text
 msgid  "PDF version conflict"
@@ -1001,7 +1049,7 @@ msgstr "تعارض إصدارات PDF"
 
 #: source/pdf/impdialog.src#RID_PDF_ERROR_DLG.STR_WARN_TRANSP_VERSION.String.Text
 msgid  "Transparency is not supported in PDF versions earlier than PDF 1.4. A transparent object was painted opaque instead"
-msgstr ""
+msgstr "الشفافية غير مدعومة في إصدارات PDF السابقة للإصدار PDF 1.4. لذلك تمت طباعة كائن شفاف كغير شفاف بدلاً من طباعته ككائن شفاف"
 
 #: source/pdf/impdialog.src#RID_PDF_ERROR_DLG.STR_WARN_FORMACTION_PDFA_SHORT.String.Text
 msgid  "PDF/A form action"
@@ -1009,11 +1057,11 @@ msgstr "إجراء نموذج PDF/A"
 
 #: source/pdf/impdialog.src#RID_PDF_ERROR_DLG.STR_WARN_FORMACTION_PDFA.String.Text
 msgid  "A form control contained an action not supported by the PDF/A standard. The action was skipped"
-msgstr ""
+msgstr "يحتوى عنصر تحكم النموذج على إجراء غير مدعوم من قبل معيار PDF/A. وبالتالي تم تجاوز الإجراء"
 
 #: source/pdf/impdialog.src#RID_PDF_ERROR_DLG.STR_WARN_TRANSP_CONVERTED.String.Text
 msgid  "Some objects were converted to an image in order to remove transparencies, because the target PDF format does not support transparencies. Possibly better results can be achieved if you remove the transparent objects before exporting."
-msgstr ""
+msgstr "تم تحويل بعض الكائنات إلى صورة لإزالة الشفافيات، لأن تنسيق PDF المستهدف لا يدعم الشفافيات. قد يُمكنك الحصول على نتائج أفضل إذا قمت بإزالة الكائنات الشفافة قبل التصدير."
 
 #: source/pdf/impdialog.src#RID_PDF_ERROR_DLG.STR_WARN_TRANSP_CONVERTED_SHORT.String.Text
 msgid  "Transparencies removed"
@@ -1233,15 +1281,15 @@ msgstr "عامل تصفية التصدير"
 
 #: source/xsltdialog/xmlfilterdialogstrings.src#STR_WARN_DELETE.String.Text
 msgid  "Do you really want to delete the XML Filter '%s'? This action cannot be undone."
-msgstr ""
+msgstr "هل تريد بالفعل حذف عامل تصفية XML '%s'؟ لا يمكن التراجع عن هذا الإجراء."
 
 #: source/xsltdialog/xmlfilterdialogstrings.src#STR_ERROR_FILTER_NAME_EXISTS.String.Text
 msgid  "An XML filter with the name '%s' already exists. Please enter a different name."
-msgstr ""
+msgstr "يوجد بالفعل عامل تصفية XML بالاسم '%s'. الرجاء إدخال اسم مختلف."
 
 #: source/xsltdialog/xmlfilterdialogstrings.src#STR_ERROR_TYPE_NAME_EXISTS.String.Text
 msgid  "The name for  the user interface '%s1' is already used by the XML filter '%s2'. Please enter a different name."
-msgstr ""
+msgstr "اسم واجهة المستخدم '%s1' مستخدم بالفعل من قِبل عامل تصفية XML '%s2'. الرجاء إدخال اسم مختلف."
 
 #: source/xsltdialog/xmlfilterdialogstrings.src#STR_ERROR_DTD_NOT_FOUND.String.Text
 msgid  "The DTD could not be found. Please enter a valid path."
@@ -1297,7 +1345,7 @@ msgstr "تم تثبيت عوامل تصفية XML %s بنجاح."
 
 #: source/xsltdialog/xmlfilterdialogstrings.src#STR_NO_FILTERS_FOUND.String.Text
 msgid  "No XML filter could be installed because the package '%s' does not contain any XML filters."
-msgstr ""
+msgstr "تعذر تثبيت عامل تصفية XML لأن الحزمة '%s' لا تتضمن أية عوامل تصفية XML."
 
 #: source/xsltdialog/xmlfiltertabpagebasic.src#RID_XML_FILTER_TABPAGE_BASIC.TabPage.Text
 msgid  "General"
@@ -1313,7 +1361,7 @@ msgstr "التطبيق"
 
 #: source/xsltdialog/xmlfiltertabpagebasic.src#RID_XML_FILTER_TABPAGE_BASIC.FT_XML_INTERFACE_NAME.FixedText.Text
 msgid  "Name of\nfile type"
-msgstr ""
+msgstr "اسم\nنوع الملف"
 
 #: source/xsltdialog/xmlfiltertabpagebasic.src#RID_XML_FILTER_TABPAGE_BASIC.FT_XML_EXTENSION.FixedText.Text
 msgid  "File extension"
@@ -1330,51 +1378,3 @@ msgstr "إخراج عامل تصفية XML"
 #: source/xsltdialog/xmlfileview.src#DLG_XML_SOURCE_FILE_DIALOG.PB_VALIDATE.PushButton.Text
 msgid  "~Validate"
 msgstr "مصاد~قة"
-
-#: source/config/fragments/types/writerglobal8.xcu#writerglobal8.UIName
-msgid  "Writer 8 Master Document"
-msgstr "مستند Writer 8 رئيسي"
-
-#: source/config/fragments/types/impress8.xcu#impress8.UIName
-msgid  "Impress 8"
-msgstr "Impress 8"
-
-#: source/config/fragments/types/calc8_template.xcu#calc8_template.UIName
-msgid  "Calc 8 Template"
-msgstr "قالب Calc 8"
-
-#: source/config/fragments/types/writer8.xcu#writer8.UIName
-msgid  "Writer 8"
-msgstr "Writer 8"
-
-#: source/config/fragments/types/impress8_template.xcu#impress8_template.UIName
-msgid  "Impress 8 Template"
-msgstr "قالب Impress 8"
-
-#: source/config/fragments/types/draw8_template.xcu#draw8_template.UIName
-msgid  "Draw 8 Template"
-msgstr "قالب Draw 8"
-
-#: source/config/fragments/types/writerweb8_writer_template.xcu#writerweb8_writer_template.UIName
-msgid  "Writer/Web 8 Template"
-msgstr "قالب Writer/Web 8"
-
-#: source/config/fragments/types/draw8.xcu#draw8.UIName
-msgid  "Draw 8"
-msgstr "Draw 8"
-
-#: source/config/fragments/types/calc8.xcu#calc8.UIName
-msgid  "Calc 8"
-msgstr "Calc 8"
-
-#: source/config/fragments/types/math8.xcu#math8.UIName
-msgid  "Math 8"
-msgstr "Math 8"
-
-#: source/config/fragments/types/writer8_template.xcu#writer8_template.UIName
-msgid  "Writer 8 Template"
-msgstr "قالب Writer 8"
-
-#: source/config/fragments/types/chart8.xcu#chart8.UIName
-msgid  "Chart 8"
-msgstr "Chart 8"

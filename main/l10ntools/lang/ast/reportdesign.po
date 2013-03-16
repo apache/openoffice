@@ -65,7 +65,7 @@ msgstr "El nome '#1' ya esiste y nun pue conseñase otra vegada."
 
 #: source/core/resource/strings.src#RID_STR_ERROR_WRONG_ARGUMENT.String.Text
 msgid  "You tried to set an illegal argument. Please have a look at '#1' for valid arguments."
-msgstr ""
+msgstr "Tentasti d'afitar un argumentu ilegal. Echa-y una güeyada a '#1' pa ver los argumentos válidos."
 
 #: source/core/resource/strings.src#RID_STR_ARGUMENT_IS_NULL.String.Text
 msgid  "The element is invalid."
@@ -140,12 +140,20 @@ msgid  "Group Header"
 msgstr "Testera de grupu"
 
 #: source/ui/dlg/GroupsSorting.src#RID_GROUPS_SORTING.LST_HEADERLST.Default.StringList.item
+msgid  "Present"
+msgstr "Presente"
+
+#: source/ui/dlg/GroupsSorting.src#RID_GROUPS_SORTING.LST_HEADERLST.Default.StringList.item
 msgid  "Not present"
 msgstr "Non presente"
 
 #: source/ui/dlg/GroupsSorting.src#RID_GROUPS_SORTING.FT_FOOTER.FixedText.Text
 msgid  "Group Footer"
 msgstr "Pie de grupu"
+
+#: source/ui/dlg/GroupsSorting.src#RID_GROUPS_SORTING.LST_FOOTERLST.Default.StringList.item
+msgid  "Present"
+msgstr "Presente"
 
 #: source/ui/dlg/GroupsSorting.src#RID_GROUPS_SORTING.LST_FOOTERLST.Default.StringList.item
 msgid  "Not present"
@@ -253,15 +261,7 @@ msgstr "¿Caltener el grupu xuntu nuna páxina?"
 
 #: source/ui/dlg/GroupsSorting.src#STR_RPT_HELP_SORT.String.Text
 msgid  "Select ascending or descending sort order. Ascending means from A to Z or 0 to 9"
-msgstr ""
-
-#: source/ui/dlg/GroupsSorting.src#RID_GROUPS_SORTING.LST_HEADERLST.Default.StringList.item
-msgid  "Present"
-msgstr "Presente"
-
-#: source/ui/dlg/GroupsSorting.src#RID_GROUPS_SORTING.LST_FOOTERLST.Default.StringList.item
-msgid  "Present"
-msgstr "Presente"
+msgstr "Seleiciona l'orde ascendente o descendente. Ascendente significa de la A a la Z o del 0 al 9"
 
 #: source/ui/dlg/PageNumber.src#RID_PAGENUMBERS.ModalDialog.Text
 msgid  "Page Numbers"
@@ -300,6 +300,14 @@ msgid  "Alignment:"
 msgstr "Alliniación:"
 
 #: source/ui/dlg/PageNumber.src#RID_PAGENUMBERS.LST_ALIGNMENT.Default.StringList.item
+msgid  "Left"
+msgstr "Izquierda"
+
+#: source/ui/dlg/PageNumber.src#RID_PAGENUMBERS.LST_ALIGNMENT.Default.StringList.item
+msgid  "Center"
+msgstr "Centru"
+
+#: source/ui/dlg/PageNumber.src#RID_PAGENUMBERS.LST_ALIGNMENT.Default.StringList.item
 msgid  "Right"
 msgstr "Drecha"
 
@@ -312,20 +320,12 @@ msgid  "~Help"
 msgstr "~Ayuda"
 
 #: source/ui/dlg/PageNumber.src#STR_RPT_PN_PAGE.String.Text
-msgid  ""Page " & #PAGENUMBER#"
-msgstr ""
+msgid  "\"Page \" & #PAGENUMBER#"
+msgstr "\"Páxina \" & #PAGENUMBER#"
 
 #: source/ui/dlg/PageNumber.src#STR_RPT_PN_PAGE_OF.String.Text
-msgid  " & " of " & #PAGECOUNT#"
-msgstr ""
-
-#: source/ui/dlg/PageNumber.src#RID_PAGENUMBERS.LST_ALIGNMENT.Default.StringList.item
-msgid  "Left"
-msgstr "Izquierda"
-
-#: source/ui/dlg/PageNumber.src#RID_PAGENUMBERS.LST_ALIGNMENT.Default.StringList.item
-msgid  "Center"
-msgstr "Centru"
+msgid  " & \" of \" & #PAGECOUNT#"
+msgstr " & \" de \" & #PAGECOUNT#"
 
 #: source/ui/dlg/dlgpage.src#RID_PAGEDIALOG_PAGE.TabDialog.Text
 msgid  "Page Setup"
@@ -456,6 +456,10 @@ msgid  "Properties..."
 msgstr "Propiedaes..."
 
 #: source/ui/dlg/CondFormat.src#WIN_CONDITION.LB_COND_TYPE.Default.StringList.item
+msgid  "Field Value Is"
+msgstr "El valor del campu ye"
+
+#: source/ui/dlg/CondFormat.src#WIN_CONDITION.LB_COND_TYPE.Default.StringList.item
 msgid  "Expression Is"
 msgstr "La espresión ye"
 
@@ -549,11 +553,7 @@ msgstr "Ayuda"
 
 #: source/ui/dlg/CondFormat.src#ADDFIELD_HELP_FIELD.FixedText.Text
 msgid  "Highlight the fields to insert into the selected section of the template, then click Insert or press Enter."
-msgstr ""
-
-#: source/ui/dlg/CondFormat.src#WIN_CONDITION.LB_COND_TYPE.Default.StringList.item
-msgid  "Field Value Is"
-msgstr "El valor del campu ye"
+msgstr "Resaltar los campos a inxertar na seición esbillada de la plantía, llueu calcar en Inxertar o calcar Intro"
 
 #: source/ui/dlg/DateTime.src#RID_DATETIME_DLG.ModalDialog.Text
 msgid  "Date and Time"
@@ -833,7 +833,7 @@ msgstr "Enllazar campos esclavos"
 
 #: source/ui/inspection/inspection.src#RID_STR_EXPLANATION.String.Text
 msgid  "Charts can be used to display detailed data about the current record of the report. To do this, you can specify which columns in the chart match which columns in the report."
-msgstr ""
+msgstr "Los gráficos puen usase p'amosar datos detallaos sobre'l rexistru reciente del informe. Pa facer esto, pues especificar qué columnes nel gráficu concasen coles columnes nel informe."
 
 #: source/ui/inspection/inspection.src#RID_STR_DETAILLABEL.String.Text
 msgid  "Chart"
@@ -1241,15 +1241,11 @@ msgstr "L'informe pue nun ser executáu a menos que se deba al conteníu."
 
 #: source/ui/report/report.src#RID_ERR_NO_OBJECTS.String.Text
 msgid  "The report can not be executed unless at least one object has been inserted."
-msgstr ""
+msgstr "L'informe nun pue executase, sacantes que, a lo menos, s'inxerte un oxetu."
 
 #: source/ui/report/report.src#RID_STR_UNDO_SHRINK.String.Text
 msgid  "Shrink Section"
 msgstr "Encoyer seición"
-
-#: source/ui/report/report.src#RID_STR_INSERT.String.Text
-msgid  "Insert"
-msgstr "Inxertar"
 
 #: source/ui/report/report.src#RID_STR_DETAIL.String.Text
 msgid  "Detail"
@@ -1270,3 +1266,7 @@ msgstr "Encabezáu d'informe"
 #: source/ui/report/report.src#RID_STR_REPORT_FOOTER.String.Text
 msgid  "Report Footer"
 msgstr "Pie d'informe"
+
+#: source/ui/report/report.src#RID_STR_INSERT.String.Text
+msgid  "Insert"
+msgstr "Inxertar"

@@ -37,11 +37,11 @@ msgstr "ActiveX-beheerder"
 
 #: source/activex/module_activex.ulf#STR_DESC_MODULE_OPTIONAL_ACTIVEXCONTROL
 msgid  "Component to enable Microsoft Internet Explorer to display %PRODUCTNAME documents."
-msgstr ""
+msgstr "Komponent om Microsoft Internet Explorer in staat te stel om %PRODUCTNAME-dokumente te vertoon."
 
 #: source/base/folderitem_base.ulf#STR_FI_TOOLTIP_BASE
 msgid  "Manage databases, create queries and reports to track and manage your information by using Base."
-msgstr ""
+msgstr "Bestuur databasisse, skep navrae en verslae om u inligting na te speur en te bestuur, met Base."
 
 #: source/base/registryitem_base.ulf#STR_REG_VAL_OO_DATABASE
 msgid  "OpenDocument Database"
@@ -121,7 +121,11 @@ msgstr "Sigblad"
 
 #: source/calc/folderitem_calc.ulf#STR_FI_TOOLTIP_CALC
 msgid  "Perform calculation, analyze information and manage lists in spreadsheets by using Calc."
-msgstr ""
+msgstr "Doen berekening, analiseer inligting en bestuur lyste in sigblaaie met Calc."
+
+#: source/calc/registryitem_calc.ulf#STR_REG_VAL_NEW
+msgid  "&New"
+msgstr "&Nuwe"
 
 #: source/calc/registryitem_calc.ulf#STR_REG_VAL_SO60_SPREADSHEET
 msgid  "%SXWFORMATNAME %SXWFORMATVERSION Spreadsheet"
@@ -155,17 +159,13 @@ msgstr "Microsoft Excel 97-2003-sjabloon"
 msgid  "Microsoft Excel Template"
 msgstr "Microsoft Excel-sjabloon"
 
-#: source/calc/registryitem_calc.ulf#STR_REG_VAL_NEW
-msgid  "&New"
-msgstr "&Nuwe"
-
 #: source/calc/module_calc.ulf#STR_NAME_MODULE_PRG_CALC
 msgid  "%PRODUCTNAME Calc"
 msgstr "%PRODUCTNAME Calc"
 
 #: source/calc/module_calc.ulf#STR_DESC_MODULE_PRG_CALC
 msgid  "Perform calculation, analyze information and manage lists in spreadsheets by using %PRODUCTNAME Calc."
-msgstr ""
+msgstr "Doen berekening, analiseer inligting en bestuur lyste in sigblaaie met %PRODUCTNAME Calc."
 
 #: source/calc/module_calc.ulf#STR_NAME_MODULE_PRG_CALC_BIN
 msgid  "Program Module"
@@ -189,7 +189,11 @@ msgstr "Invoeg"
 
 #: source/calc/module_calc.ulf#STR_DESC_MODULE_OPTIONAL_ADDINS
 msgid  "Add-ins are additional programs that make new functions available in %PRODUCTNAME Calc."
-msgstr ""
+msgstr "Invoegings is bykomende programme wat nuwe funksies in %PRODUCTNAME Calc beskikbaar stel."
+
+#: source/draw/registryitem_draw.ulf#STR_REG_VAL_NEW
+msgid  "&New"
+msgstr "&Nuwe"
 
 #: source/draw/registryitem_draw.ulf#STR_REG_VAL_SO60_DRAWING
 msgid  "%SXWFORMATNAME %SXWFORMATVERSION Drawing"
@@ -207,10 +211,6 @@ msgstr "OpenDocument-tekening"
 msgid  "OpenDocument Drawing Template"
 msgstr "OpenDocument-tekeningsjabloon"
 
-#: source/draw/registryitem_draw.ulf#STR_REG_VAL_NEW
-msgid  "&New"
-msgstr "&Nuwe"
-
 #: source/draw/folderitem_draw.ulf#STR_FI_NAME_ZEICHNUNG
 msgid  "Drawing"
 msgstr "Tekening"
@@ -225,7 +225,7 @@ msgstr "%PRODUCTNAME Draw"
 
 #: source/draw/module_draw.ulf#STR_DESC_MODULE_PRG_DRAW
 msgid  "Create and edit drawings, flow charts, and logos by using %PRODUCTNAME Draw."
-msgstr ""
+msgstr "Skep en redigeer tekeninge, vloeigrafieke en logo's met %PRODUCTNAME Draw."
 
 #: source/draw/module_draw.ulf#STR_NAME_MODULE_PRG_DRAW_BIN
 msgid  "Program Module"
@@ -249,7 +249,7 @@ msgstr "GNOME-integrasie"
 
 #: source/gnome/module_gnome.ulf#STR_DESC_MODULE_OPTIONAL_GNOME
 msgid  "System integration of %PRODUCTNAME %PRODUCTVERSION into Gnome Desktop Environment."
-msgstr ""
+msgstr "Stelselintegrasie van %PRODUCTNAME %PRODUCTVERSION in Gnome-werkskermomgewing."
 
 #: source/graphicfilter/module_graphicfilter.ulf#STR_NAME_MODULE_OPTIONAL_GRFFLT
 msgid  "Graphics Filters"
@@ -377,7 +377,11 @@ msgstr "Voorlegging"
 
 #: source/impress/folderitem_impress.ulf#STR_FI_TOOLTIP_IMPRESS
 msgid  "Create and edit presentations for slideshows, meeting and Web pages by using Impress."
-msgstr ""
+msgstr "Skep en redigeer voorleggings vir skyfievertonings, vergaderings en webbladsye met Impress."
+
+#: source/impress/registryitem_impress.ulf#STR_REG_VAL_NEW
+msgid  "&New"
+msgstr "&Nuwe"
 
 #: source/impress/registryitem_impress.ulf#STR_REG_VAL_SO60_SHOW
 msgid  "Show"
@@ -419,17 +423,13 @@ msgstr "Microsoft PowerPoint 97-2003-sjabloon"
 msgid  "Microsoft PowerPoint Template"
 msgstr "Microsoft PowerPoint-sjabloon"
 
-#: source/impress/registryitem_impress.ulf#STR_REG_VAL_NEW
-msgid  "&New"
-msgstr "&Nuwe"
-
 #: source/impress/module_impress.ulf#STR_NAME_MODULE_PRG_IMPRESS
 msgid  "%PRODUCTNAME Impress"
 msgstr "%PRODUCTNAME Impress"
 
 #: source/impress/module_impress.ulf#STR_DESC_MODULE_PRG_IMPRESS
 msgid  "Create and edit presentations for slideshows, meeting and Web pages by using %PRODUCTNAME Impress."
-msgstr ""
+msgstr "Skep en redigeer voorleggings vir skyfievertonings, vergaderings en webbladsye met %PRODUCTNAME Impress."
 
 #: source/impress/module_impress.ulf#STR_NAME_MODULE_PRG_IMPRESS_BIN
 msgid  "Program Module"
@@ -461,7 +461,7 @@ msgstr "Filters vir mobiele toestelle"
 
 #: source/javafilter/module_javafilter.ulf#STR_DESC_MODULE_OPTIONAL_JAVAFILTER
 msgid  "Text and spreadsheet filters to support import/export for Palm handheld or Pocket PC (Java required)."
-msgstr ""
+msgstr "Teks- en sigbladfilters om invoer/uitvoer vir Palm-handrekenaars of Pocket PC te ondersteun (Java vereis)."
 
 #: source/javafilter/module_javafilter.ulf#STR_NAME_MODULE_OPTIONAL_JAVAFILTER_PALM
 msgid  "Palm"
@@ -485,7 +485,7 @@ msgstr "Pocket PC"
 
 #: source/javafilter/module_javafilter.ulf#STR_DESC_MODULE_OPTIONAL_JAVAFILTER_POCKETPC_WNT
 msgid  "Filters and ActiveSync support for Pocket PC compatible handhelds"
-msgstr ""
+msgstr "Filters en ActiveSync-ondersteuning vir Pocket PC-versoenbare handtoestelle"
 
 #: source/javafilter/module_javafilter.ulf#STR_DESC_MODULE_OPTIONAL_JAVAFILTER_POCKETPC_UNIX
 msgid  "Filters for Pocket PC compatible handhelds."
@@ -549,7 +549,7 @@ msgstr "'n Java 1.4-installasie kon nie gevind word nie."
 
 #: source/javafilter/registryitem_javafilter.ulf#STR_VALUE_HKLM_SOFT_SUN_STAROFFICE_XMERGESYNC_MSGS_ERROR_JAVAINIT
 msgid  "There was an error while initializing the Java Runtime Environment."
-msgstr ""
+msgstr "'n Fout is ervaar tydens die inisialisering van die Java Intydse Omgewing."
 
 #: source/kde/module_kde.ulf#STR_NAME_MODULE_OPTIONAL_KDE
 msgid  "KDE Integration"
@@ -565,7 +565,7 @@ msgstr "%PRODUCTNAME Math"
 
 #: source/math/module_math.ulf#STR_DESC_MODULE_PRG_MATH
 msgid  "Create and edit scientific formulas and equations by using %PRODUCTNAME Math."
-msgstr ""
+msgstr "Skep en redigeer wetenskaplike formules en vergelykings met %PRODUCTNAME Math."
 
 #: source/math/module_math.ulf#STR_NAME_MODULE_PRG_MATH_BIN
 msgid  "Program Module"
@@ -587,6 +587,10 @@ msgstr "Hulp met %PRODUCTNAME Math"
 msgid  "Create and edit scientific formulas and equations by using Math."
 msgstr "Skep en redigeer wetenskaplike formules en vergelykings met Math."
 
+#: source/math/registryitem_math.ulf#STR_REG_VAL_NEW
+msgid  "&New"
+msgstr "&Nuwe"
+
 #: source/math/registryitem_math.ulf#STR_REG_VAL_SO60_FORMULA
 msgid  "%SXWFORMATNAME %SXWFORMATVERSION Formula"
 msgstr ""
@@ -595,17 +599,18 @@ msgstr ""
 msgid  "OpenDocument Formula"
 msgstr "OpenDocument-formule"
 
-#: source/math/registryitem_math.ulf#STR_REG_VAL_NEW
-msgid  "&New"
-msgstr "&Nuwe"
-
 #: source/onlineupdate/module_onlineupdate.ulf#STR_NAME_MODULE_OPT_ONLINEUPDATE
 msgid  "Online Update"
 msgstr "Aanlyn bywerking"
 
 #: source/onlineupdate/module_onlineupdate.ulf#STR_DESC_MODULE_OPT_ONLINEUPDATE
 msgid  "Get automatically notified when a new update of %PRODUCTNAME becomes available."
-msgstr ""
+msgstr "Word outomaties in kennis gestel wanneer 'n nuwe bywerking van %PRODUCTNAME beskikbaar word."
+
+#: source/ooo/registryitem_ooo.ulf#STR_REG_VAL_NEW
+#, fuzzy
+msgid  "&New"
+msgstr "&Nuwe"
 
 #: source/ooo/registryitem_ooo.ulf#STR_REG_VAL_INSTALL
 #, fuzzy
@@ -616,19 +621,14 @@ msgstr "&Installeer"
 msgid  "OpenOffice.org 1.1 Configuration File"
 msgstr ""
 
-#: source/ooo/registryitem_ooo.ulf#STR_REG_VAL_APPCAPABILITY_DESCRIPTION_OOO
-msgid  "office productivity suite based on Apache OpenOffice project"
-msgstr ""
-
-#: source/ooo/registryitem_ooo.ulf#STR_REG_VAL_NEW
-#, fuzzy
-msgid  "&New"
-msgstr "&Nuwe"
-
 #: source/ooo/registryitem_ooo.ulf#STR_REG_VAL_SO50_TEMPLATE_OOO
 #, fuzzy
 msgid  "StarOffice 5.0 Template"
 msgstr "StarOffice 5.0-sjabloon"
+
+#: source/ooo/registryitem_ooo.ulf#STR_REG_VAL_APPCAPABILITY_DESCRIPTION_OOO
+msgid  "office productivity suite based on Apache OpenOffice project"
+msgstr ""
 
 #: source/ooo/module_systemint.ulf#STR_NAME_MODULE_OPTIONAL_SYSTEMINTEGRATION
 #, fuzzy
@@ -666,8 +666,9 @@ msgid  "Optional Components"
 msgstr "Opsionele komponente"
 
 #: source/ooo/module_ooo.ulf#STR_DESC_MODULE_OPTIONAL
+#, fuzzy
 msgid  "Common components and additional programs shared by all %PRODUCTNAME programs."
-msgstr ""
+msgstr "Gemeenskaplike komponente en addisionele programme wat deur alle %PRODUCTNAME-programme gedeel word."
 
 #: source/ooo/module_ooo.ulf#STR_NAME_MODULE_DICTIONARIES
 msgid  "Dictionaries"
@@ -678,72 +679,58 @@ msgid  "Spelling and hyphenation dictionaries and thesauri."
 msgstr ""
 
 #: source/ooo/module_java.ulf#STR_NAME_MODULE_OPTIONAL_JAVA
-#, fuzzy
 msgid  "Java Runtime Environment (%JAVAVERSION)"
 msgstr "Java-looptydomgewing (%JAVAVERSION)"
 
 #: source/ooo/module_java.ulf#STR_DESC_MODULE_OPTIONAL_JAVA
-#, fuzzy
 msgid  "Component for setting up the Java Environment"
 msgstr "Komponent vir die opstel van die Java-omgewing"
 
 #: source/ooo/module_headless.ulf#STR_NAME_MODULE_OPTIONAL_HEADLESS
-#, fuzzy
 msgid  "Headless application support"
 msgstr "Koplose toepassingsteun"
 
 #: source/ooo/module_headless.ulf#STR_DESC_MODULE_OPTIONAL_HEADLESS
-#, fuzzy
 msgid  "Component for enabling use %PRODUCTNAME without a display"
 msgstr "Komponent om %PRODUCTNAME sonder skerm te gebruik"
 
 #: source/ooo/directory_ooo.ulf#STR_DIR_INFO
-#, fuzzy
 msgid  "Information"
 msgstr "Inligting"
 
 #: source/ooo/directory_ooo.ulf#STR_DIR_INTERNET
-#, fuzzy
 msgid  "Internet"
 msgstr "Internet"
 
 #: source/ooo/directory_ooo.ulf#STR_DIR_JAVA
-#, fuzzy
 msgid  "Java"
 msgstr "Java"
 
 #: source/ooo/directory_ooo.ulf#STR_DIR_FREIZEIT
-#, fuzzy
 msgid  "Fun&More"
 msgstr "Pret&Meer"
 
 #: source/ooo/directory_ooo.ulf#STR_DIR_STARONE
-#, fuzzy
 msgid  "%PRODUCTNAME API"
 msgstr "%PRODUCTNAME-programkoppelvlak"
 
 #: source/ooo/directory_ooo.ulf#STR_DIR_TOURISMUS
-#, fuzzy
 msgid  "Travel"
 msgstr "Reis"
 
 #: source/ooo/directory_ooo.ulf#STR_DIR_KAPITEL
-#, fuzzy
 msgid  "Chapters"
 msgstr "Hoofstukke"
 
 #: source/ooo/directory_ooo.ulf#STR_DIR_DATEIEN
-#, fuzzy
 msgid  "Files"
 msgstr "Lêers"
 
 #: source/ooo/folderitem_ooo.ulf#STR_FI_NAME_FROMTEMPLATE
-#, fuzzy
 msgid  "From Template"
 msgstr "Vanaf sjabloon"
 
 #: source/ooo/folderitem_ooo.ulf#STR_FI_NAME_OPENDOCUMENT
-#, fuzzy
 msgid  "Open Document"
 msgstr "Open dokument"
 
@@ -752,12 +739,10 @@ msgid  "The office productivity suite compatible to the open and standardized OD
 msgstr ""
 
 #: source/ooo/module_langpack.ulf#STR_NAME_MODULE_ROOT_LANGPACK
-#, fuzzy
 msgid  "Additional language packs"
 msgstr "Bykomende taalpakke"
 
 #: source/ooo/module_langpack.ulf#STR_DESC_MODULE_ROOT_LANGPACK
-#, fuzzy
 msgid  "Additional language packs"
 msgstr "Bykomende taalpakke"
 
@@ -766,17 +751,14 @@ msgid  "English"
 msgstr ""
 
 #: source/ooo/module_langpack.ulf#STR_DESC_MODULE_LANGPACK_EN_US
-#, fuzzy
 msgid  "Installs English support in %PRODUCTNAME %PRODUCTVERSION"
 msgstr "Installeer Engelse steun vir %PRODUCTNAME %PRODUCTVERSION"
 
 #: source/ooo/module_langpack.ulf#STR_NAME_MODULE_LANGPACK_DE
-#, fuzzy
 msgid  "German"
 msgstr "Duits"
 
 #: source/ooo/module_langpack.ulf#STR_DESC_MODULE_LANGPACK_DE
-#, fuzzy
 msgid  "Installs German support in %PRODUCTNAME %PRODUCTVERSION"
 msgstr "Installeer Duitse steun vir %PRODUCTNAME %PRODUCTVERSION"
 
@@ -785,7 +767,6 @@ msgid  "French"
 msgstr ""
 
 #: source/ooo/module_langpack.ulf#STR_DESC_MODULE_LANGPACK_FR
-#, fuzzy
 msgid  "Installs French support in %PRODUCTNAME %PRODUCTVERSION"
 msgstr "Installeer Franse steun vir %PRODUCTNAME %PRODUCTVERSION"
 
@@ -794,7 +775,6 @@ msgid  "Italian"
 msgstr ""
 
 #: source/ooo/module_langpack.ulf#STR_DESC_MODULE_LANGPACK_IT
-#, fuzzy
 msgid  "Installs Italian support in %PRODUCTNAME %PRODUCTVERSION"
 msgstr "Installeer Italiaanse steun vir %PRODUCTNAME %PRODUCTVERSION"
 
@@ -803,7 +783,6 @@ msgid  "Spanish"
 msgstr ""
 
 #: source/ooo/module_langpack.ulf#STR_DESC_MODULE_LANGPACK_ES
-#, fuzzy
 msgid  "Installs Spanish support in %PRODUCTNAME %PRODUCTVERSION"
 msgstr "Installeer Spaanse steun vir %PRODUCTNAME %PRODUCTVERSION"
 
@@ -812,74 +791,62 @@ msgid  "Swedish"
 msgstr ""
 
 #: source/ooo/module_langpack.ulf#STR_DESC_MODULE_LANGPACK_SV
-#, fuzzy
 msgid  "Installs Swedish support in %PRODUCTNAME %PRODUCTVERSION"
 msgstr "Installeer Sweedse steun vir %PRODUCTNAME %PRODUCTVERSION"
 
 #: source/ooo/module_langpack.ulf#STR_NAME_MODULE_LANGPACK_PT
-#, fuzzy
 msgid  "Portuguese"
 msgstr "Portugees"
 
 #: source/ooo/module_langpack.ulf#STR_DESC_MODULE_LANGPACK_PT
-#, fuzzy
 msgid  "Installs Portuguese support in %PRODUCTNAME %PRODUCTVERSION"
 msgstr "Installeer Portugese steun vir %PRODUCTNAME %PRODUCTVERSION"
 
 #: source/ooo/module_langpack.ulf#STR_NAME_MODULE_LANGPACK_PT_BR
-#, fuzzy
 msgid  "Portuguese (Brazil)"
 msgstr "Portugees (Brasilië)"
 
 #: source/ooo/module_langpack.ulf#STR_DESC_MODULE_LANGPACK_PT_BR
-#, fuzzy
 msgid  "Installs Portuguese support in %PRODUCTNAME %PRODUCTVERSION"
 msgstr "Installeer Portugese steun vir %PRODUCTNAME %PRODUCTVERSION"
 
 #: source/ooo/module_langpack.ulf#STR_NAME_MODULE_LANGPACK_JA
-#, fuzzy
 msgid  "Japanese"
 msgstr "Japannees"
 
 #: source/ooo/module_langpack.ulf#STR_DESC_MODULE_LANGPACK_JA
-#, fuzzy
 msgid  "Installs Japanese support in %PRODUCTNAME %PRODUCTVERSION"
 msgstr "Installeer Japannese steun vir %PRODUCTNAME %PRODUCTVERSION"
 
 #: source/ooo/module_langpack.ulf#STR_NAME_MODULE_LANGPACK_KO
-#, fuzzy
 msgid  "Korean"
 msgstr "Koreaans"
 
 #: source/ooo/module_langpack.ulf#STR_DESC_MODULE_LANGPACK_KO
-#, fuzzy
 msgid  "Installs Korean support in %PRODUCTNAME %PRODUCTVERSION"
 msgstr "Installeer Koreaanse steun vir %PRODUCTNAME %PRODUCTVERSION"
 
 #: source/ooo/module_langpack.ulf#STR_NAME_MODULE_LANGPACK_ZH_CN
-#, fuzzy
 msgid  "Chinese (simplified)"
 msgstr "Sjinees (vereenvoudig)"
 
 #: source/ooo/module_langpack.ulf#STR_DESC_MODULE_LANGPACK_ZH_CN
 msgid  "Installs Chinese (simplified) support in %PRODUCTNAME %PRODUCTVERSION"
-msgstr ""
+msgstr "Installeer Sjinese (vereenvoudig) steun vir %PRODUCTNAME %PRODUCTVERSION"
 
 #: source/ooo/module_langpack.ulf#STR_NAME_MODULE_LANGPACK_ZH_TW
-#, fuzzy
 msgid  "Chinese (traditional)"
 msgstr "Sjinees (tradisioneel)"
 
 #: source/ooo/module_langpack.ulf#STR_DESC_MODULE_LANGPACK_ZH_TW
 msgid  "Installs Chinese (traditional) support in %PRODUCTNAME %PRODUCTVERSION"
-msgstr ""
+msgstr "Installeer Sjinese (tradisioneel) steun vir %PRODUCTNAME %PRODUCTVERSION"
 
 #: source/ooo/module_langpack.ulf#STR_NAME_MODULE_LANGPACK_NL
 msgid  "Dutch"
 msgstr ""
 
 #: source/ooo/module_langpack.ulf#STR_DESC_MODULE_LANGPACK_NL
-#, fuzzy
 msgid  "Installs Dutch support in %PRODUCTNAME %PRODUCTVERSION"
 msgstr "Installeer Nederlandse steun vir %PRODUCTNAME %PRODUCTVERSION"
 
@@ -1306,8 +1273,9 @@ msgid  "Norwegian (Bokmål)"
 msgstr "Noors (Bokmål)"
 
 #: source/ooo/module_langpack.ulf#STR_DESC_MODULE_LANGPACK_NB
+#, fuzzy
 msgid  "Installs Norwegian (Bokmål) support in %PRODUCTNAME %PRODUCTVERSION"
-msgstr ""
+msgstr "Installeer Noorse (Bokmål) ondersteuning in %PRODUCTNAME %PRODUCTVERSION"
 
 #: source/ooo/module_langpack.ulf#STR_NAME_MODULE_LANGPACK_NN
 #, fuzzy
@@ -1481,8 +1449,9 @@ msgid  "Serbian (Latin)"
 msgstr "Serwies (Latyn)"
 
 #: source/ooo/module_langpack.ulf#STR_DESC_MODULE_LANGPACK_SH_YU
+#, fuzzy
 msgid  "Installs Serbian (Latin) support in %PRODUCTNAME %PRODUCTVERSION"
-msgstr ""
+msgstr "Installeer Serwiese (Latyn) ondersteuning in %PRODUCTNAME %PRODUCTVERSION"
 
 #: source/ooo/module_langpack.ulf#STR_NAME_MODULE_LANGPACK_SH
 #, fuzzy
@@ -1490,8 +1459,9 @@ msgid  "Serbian (Latin)"
 msgstr "Serwies (Latyn)"
 
 #: source/ooo/module_langpack.ulf#STR_DESC_MODULE_LANGPACK_SH
+#, fuzzy
 msgid  "Installs Serbian (Latin) support in %PRODUCTNAME %PRODUCTVERSION"
-msgstr ""
+msgstr "Installeer Serwiese (Latyn) ondersteuning in %PRODUCTNAME %PRODUCTVERSION"
 
 #: source/ooo/module_langpack.ulf#STR_NAME_MODULE_LANGPACK_GA
 #, fuzzy
@@ -1509,8 +1479,9 @@ msgid  "Serbian (Cyrillic)"
 msgstr "Serwies (Cyrillies)"
 
 #: source/ooo/module_langpack.ulf#STR_DESC_MODULE_LANGPACK_SR_CS
+#, fuzzy
 msgid  "Installs Serbian (Cyrillic) support in %PRODUCTNAME %PRODUCTVERSION"
-msgstr ""
+msgstr "Installeer Serwiese(Cyrillies) ondersteuning in %PRODUCTNAME %PRODUCTVERSION"
 
 #: source/ooo/module_langpack.ulf#STR_NAME_MODULE_LANGPACK_SR
 #, fuzzy
@@ -1518,8 +1489,9 @@ msgid  "Serbian (Cyrillic)"
 msgstr "Serwies (Cyrillies)"
 
 #: source/ooo/module_langpack.ulf#STR_DESC_MODULE_LANGPACK_SR
+#, fuzzy
 msgid  "Installs Serbian (Cyrillic) support in %PRODUCTNAME %PRODUCTVERSION"
-msgstr ""
+msgstr "Installeer Serwiese(Cyrillies) ondersteuning in %PRODUCTNAME %PRODUCTVERSION"
 
 #: source/ooo/module_langpack.ulf#STR_NAME_MODULE_LANGPACK_BS
 #, fuzzy
@@ -1755,8 +1727,9 @@ msgid  "English (United Kingdom)"
 msgstr "Engels (Verenigde Koninkryk)"
 
 #: source/ooo/module_langpack.ulf#STR_DESC_MODULE_LANGPACK_EN_GB
+#, fuzzy
 msgid  "Installs English (United Kingdom) support in %PRODUCTNAME %PRODUCTVERSION"
-msgstr ""
+msgstr "Installeer Engelse (Verenigde Koninkryk) steun vir %PRODUCTNAME %PRODUCTVERSION"
 
 #: source/ooo/module_langpack.ulf#STR_NAME_MODULE_LANGPACK_UR_IN
 #, fuzzy
@@ -1872,64 +1845,60 @@ msgid  "Installs Gaelic (Scotland) support in %PRODUCTNAME %PRODUCTVERSION"
 msgstr ""
 
 #: source/python/module_python_mailmerge.ulf#STR_NAME_MODULE_OPTIONAL_PYTHON_MAILMERGE
-#, fuzzy
 msgid  "E-mail Mailmerge"
 msgstr "E-possamevoeging"
 
 #: source/python/module_python_mailmerge.ulf#STR_DESC_MODULE_OPTIONAL_PYTHON_MAILMERGE
-#, fuzzy
 msgid  "Module for %PRODUCTNAME E-mail Mailmerge feature"
 msgstr "Module vir %PRODUCTNAME-e-possamevoeging-kenmerk"
 
 #: source/python/module_python.ulf#STR_NAME_MODULE_OPTIONAL_PYTHON
-#, fuzzy
 msgid  "Python-UNO Bridge"
 msgstr "Python-UNO-brug"
 
 #: source/python/module_python.ulf#STR_DESC_MODULE_OPTIONAL_PYTHON
 msgid  "Adds the ability to automate %PRODUCTNAME with the python scripting language. See http://udk.openoffice.org/python/python-bridge.html for a complete documentation."
-msgstr ""
+msgstr "Voeg die vermoë by om %PRODUCTNAME te outomatiseer met die Python-skriptaal. Kyk http://udk.openoffice.org/python/python-bridge.html vir volledige dokumentasie."
 
 #: source/quickstart/module_quickstart.ulf#STR_NAME_MODULE_OPTIONAL_QUICKSTART
-#, fuzzy
 msgid  "Quickstarter"
 msgstr "Snelbeginner"
 
 #: source/quickstart/module_quickstart.ulf#STR_DESC_MODULE_OPTIONAL_QUICKSTART
 msgid  "Loads basic components on system start to accelerate start up time of %PRODUCTNAME %PRODUCTVERSION."
-msgstr ""
+msgstr "Laai basiese komponente wanneer die stelsel begin, om die begintyd van %PRODUCTNAME %PRODUCTVERSION te versnel."
 
 #: source/sdkoo/module_sdkoo.ulf#STR_NAME_MODULE_OPTIONAL_SDKOO
-#, fuzzy
 msgid  "Software Development Kit (SDK)"
 msgstr "Sagtewareontwikkelingstel (SDK)"
 
 #: source/sdkoo/module_sdkoo.ulf#STR_DESC_MODULE_OPTIONAL_SDKOO
 msgid  "The SDK provides all necessary tools, examples and documentation to program with and for the office."
-msgstr ""
+msgstr "Die SDK bied al die nodige nutsmiddels, voorbeelde en dokumentasie om met en vir die kantoor te programmeer."
 
 #: source/winexplorerext/module_winexplorerext.ulf#STR_NAME_MODULE_OPTIONAL_WINDOWS_EXPLORER_EXTENSIONS
-#, fuzzy
 msgid  "Windows Explorer Extension"
 msgstr "Windows Explorer-uitbreiding"
 
 #: source/winexplorerext/module_winexplorerext.ulf#STR_DESC_MODULE_OPTIONAL_WINDOWS_EXPLORER_EXTENSIONS
 msgid  "Enables the Microsoft Windows Explorer to show information about %PRODUCTNAME documents, such as thumbnail previews."
-msgstr ""
+msgstr "Stel die Microsoft Windows Explorer in staat om inligting oor %PRODUCTNAME-dokumente te vertoon, byvoorbeeld duimnaelprentjies."
 
 #: source/writer/folderitem_writer.ulf#STR_FI_NAME_HTMLDOKUMENT
-#, fuzzy
 msgid  "HTML Document"
 msgstr "HTML-dokument"
 
 #: source/writer/folderitem_writer.ulf#STR_FI_NAME_TEXTDOKUMENT
-#, fuzzy
 msgid  "Text Document"
 msgstr "Teksdokument"
 
 #: source/writer/folderitem_writer.ulf#STR_FI_TOOLTIP_WRITER
 msgid  "Create and edit text and graphics in letters, reports, documents and Web pages by using Writer."
-msgstr ""
+msgstr "Skep en redigeer teks en grafika in briewe, verslae, dokumente en webbladsye met Writer."
+
+#: source/writer/registryitem_writer.ulf#STR_REG_VAL_NEW
+msgid  "&New"
+msgstr "&Nuwe"
 
 #: source/writer/registryitem_writer.ulf#STR_REG_VAL_SO60_TEXT
 msgid  "%SXWFORMATNAME %SXWFORMATVERSION Text Document"
@@ -1944,100 +1913,77 @@ msgid  "%SXWFORMATNAME %SXWFORMATVERSION Text Document Template"
 msgstr ""
 
 #: source/writer/registryitem_writer.ulf#STR_REG_VAL_OO_WRITER
-#, fuzzy
 msgid  "OpenDocument Text"
 msgstr "OpenDocument-teks"
 
 #: source/writer/registryitem_writer.ulf#STR_REG_VAL_OO_WRITER_TEMPLATE
-#, fuzzy
 msgid  "OpenDocument Text Template"
 msgstr "OpenDocument-tekssjabloon"
 
 #: source/writer/registryitem_writer.ulf#STR_REG_VAL_OO_MASTERDOC
-#, fuzzy
 msgid  "OpenDocument Master Document"
 msgstr "OpenDocument-meesterdokument"
 
 #: source/writer/registryitem_writer.ulf#STR_REG_VAL_OO_WEBDOC
-#, fuzzy
 msgid  "HTML Document Template"
 msgstr "HTML-dokumentsjabloon"
 
 #: source/writer/registryitem_writer.ulf#STR_REG_VAL_MS_WORD_DOCUMENT_OLD
-#, fuzzy
 msgid  "Microsoft Word 97-2003 Document"
 msgstr "Microsoft Word 97-2003-dokument"
 
 #: source/writer/registryitem_writer.ulf#STR_REG_VAL_MS_WORD_DOCUMENT
-#, fuzzy
 msgid  "Microsoft Word Document"
 msgstr "Microsoft Word-dokument"
 
 #: source/writer/registryitem_writer.ulf#STR_REG_VAL_MS_WORD_TEMPLATE_OLD
-#, fuzzy
 msgid  "Microsoft Word 97-2003 Template"
 msgstr "Microsoft Word 97-2003-sjabloon"
 
 #: source/writer/registryitem_writer.ulf#STR_REG_VAL_MS_WORD_TEMPLATE
-#, fuzzy
 msgid  "Microsoft Word Template"
 msgstr "Microsoft Word-sjabloon"
 
 #: source/writer/registryitem_writer.ulf#STR_REG_VAL_MS_RTF_DOCUMENT
-#, fuzzy
 msgid  "Rich Text Document"
 msgstr "Rykteksdokument"
 
-#: source/writer/registryitem_writer.ulf#STR_REG_VAL_NEW
-#, fuzzy
-msgid  "&New"
-msgstr "&Nuwe"
-
 #: source/writer/module_writer.ulf#STR_NAME_MODULE_PRG_WRT
-#, fuzzy
 msgid  "%PRODUCTNAME Writer"
 msgstr "%PRODUCTNAME Writer"
 
 #: source/writer/module_writer.ulf#STR_DESC_MODULE_PRG_WRT
 msgid  "Create and edit text and graphics in letters, reports, documents and Web pages by using %PRODUCTNAME Writer."
-msgstr ""
+msgstr "Skep en redigeer teks en grafika in briewe, verslae, dokumente en webbladsye met %PRODUCTNAME Writer."
 
 #: source/writer/module_writer.ulf#STR_NAME_MODULE_PRG_WRT_BIN
-#, fuzzy
 msgid  "Program Module"
 msgstr "Programmodule"
 
 #: source/writer/module_writer.ulf#STR_DESC_MODULE_PRG_WRT_BIN
-#, fuzzy
 msgid  "The application %PRODUCTNAME Writer"
 msgstr "Die %PRODUCTNAME Writer-toepassings"
 
 #: source/writer/module_writer.ulf#STR_NAME_MODULE_PRG_WRT_HELP
-#, fuzzy
 msgid  "%PRODUCTNAME Writer Help"
 msgstr "%PRODUCTNAME Writer-hulp"
 
 #: source/writer/module_writer.ulf#STR_DESC_MODULE_PRG_WRT_HELP
-#, fuzzy
 msgid  "Help about %PRODUCTNAME Writer"
 msgstr "Hulp met %PRODUCTNAME Writer"
 
 #: source/writer/module_writer.ulf#STR_NAME_MODULE_PRG_WRT_WRITER2LATEX
-#, fuzzy
 msgid  "LaTeX Export"
 msgstr "LaTeX-uitvoer"
 
 #: source/writer/module_writer.ulf#STR_DESC_MODULE_PRG_WRT_WRITER2LATEX
-#, fuzzy
 msgid  "LaTeX export filter for Writer documents."
 msgstr "LaTeX-uitvoerfilter vir Writer-dokumente."
 
 #: source/xsltfilter/module_xsltfilter.ulf#STR_NAME_MODULE_OPTIONAL_XSLTFILTERSAMPLES
-#, fuzzy
 msgid  "XSLT Sample Filters"
 msgstr "XSLT-filtervoorbeelde"
 
 #: source/xsltfilter/module_xsltfilter.ulf#STR_DESC_MODULE_OPTIONAL_XSLTFILTERSAMPLES
-#, fuzzy
 msgid  "XSLT Sample Filters"
 msgstr "XSLT-filtervoorbeelde"

@@ -45,7 +45,7 @@ msgstr ""
 
 #: source/all/crashrep.ulf#%WELCOME_BODY2%
 msgid  "It's easy - just send the report without any further effort on your part by clicking 'Send' in the next dialog, or you can briefly describe how the error occurred and then click 'Send'. If you want to see the report, click the 'Show Report' button. No data will be sent if you click 'Do Not Send'.\n\n"
-msgstr ""
+msgstr "Ye fácil - namái unvía l'informe ensin más esfuerzu pola to parte calcando 'Unviar' na siguiente caxa de diálogu, o puedes describir brevemente como asocedió l'error y calcar 'Unviar' darréu. Si quies ver l'informe, calca nel botón 'Amosar informe'. Si calques en 'Nun unviar', nun s'unviará dengún datu.\n\n"
 
 #: source/all/crashrep.ulf#%WELCOME_BODY3%
 msgid  "Customer Privacy\nThe information gathered is limited to data concerning the state of %PRODUCTNAME% %PRODUCTVERSION% when the error occurred. Other information about passwords or document contents is not collected.\n\nThe information will only be used to improve the quality of %PRODUCTNAME% and will not be shared with third parties.\nFor more information on Apache OpenOffice's privacy policy, visit\n"
@@ -81,7 +81,7 @@ msgstr ""
 
 #: source/all/crashrep.ulf#%ENTER_TITLE%
 msgid  "Which type of document (e.g. presentation) were you using when the error occurred?"
-msgstr ""
+msgstr "¿Qué triba de documentu (testu, presentación, etc.) tabes remanando cuando hebo'l fallu?"
 
 #: source/all/crashrep.ulf#%ALLOW_CONTACT%
 msgid  "~I allow Apache OpenOffice to contact me regarding this report."
@@ -93,7 +93,7 @@ msgstr "Pon la to direición de corréu-e"
 
 #: source/all/crashrep.ulf#%ENTER_DESCRIPTION%
 msgid  "~How were you using %PRODUCTNAME% when the error occurred ?"
-msgstr ""
+msgstr "~Describi la xera que tabes faciendo en %PRODUCTNAME% cuando hebo'l fallu."
 
 #: source/all/crashrep.ulf#%BACK_BUTTON%
 msgid  " << ~Back"
@@ -121,23 +121,23 @@ msgstr "Grabar informe como"
 
 #: source/all/crashrep.ulf#%ERROR_MSG_SIMPLE_MAPI%
 msgid  "The error report could not be sent because the default e-mail program does not support MAPI.\n Please use a MAPI-compatible e-mail program."
-msgstr ""
+msgstr "El programa d'informes nun se pudo mandar, porque'l programa de mensaxería predetermináu nun almite MAPI. Usa un programa de mensaxería compatible con MAPI."
 
 #: source/all/crashrep.ulf#%ERROR_MSG_DISK_FULL%
 msgid  "The error report could not be temporarily saved and could therefore not be sent."
-msgstr ""
+msgstr "L'informe de fallos nun se pudo grabar temporalmente y, poro, nun s'unvió."
 
 #: source/all/crashrep.ulf#%ERROR_MSG_SENDMAIL%
 msgid  "The error report could not be sent because 'sendmail' could not be started.\nPlease check the 'sendmail' settings."
-msgstr ""
+msgstr "L'informe de fallos nun se pudo unviar porque 'sendmail' nun arrancó.\nMira a ver la configuración de 'sendmail'."
 
 #: source/all/crashrep.ulf#%ERROR_MSG_PROXY%
 msgid  "The error report could not be sent. Please check the proxy settings under 'Options' in the Error Report Tool."
-msgstr ""
+msgstr "L'informe de fallos nun se pudo unviar. Mira a ver la configuración del proxy en 'Opciones', nel programa d'informe de fallos."
 
 #: source/all/crashrep.ulf#%ERROR_MSG_NOCONNECT%
 msgid  "The error report could not be sent because there is no Internet connection. Please check your Internet settings."
-msgstr ""
+msgstr "L'informe de fallos nun se pudo unviar porque nun hai conexón con Internet. Mira a ver la configuración d'Internet."
 
 #: source/all/crashrep.ulf#%OPTIONS_BUTTON%
 msgid  "~Options..."
@@ -173,7 +173,7 @@ msgstr "~Puertu"
 
 #: source/all/crashrep.ulf#%PROXY_SETTINGS_DESCRIPTION%
 msgid  "The %PRODUCTNAME% Error Report tool needs to be connected to the Internet to be able to send error reports.\n\nCompanies often use proxy servers in conjunction with a firewall to protect the network.\n\nIf this applies to your situation, you have to specify the address and port for the server."
-msgstr ""
+msgstr "El programa d'informe de fallos de %PRODUCTNAME% tien que tar coneutáu a Internet pa poder mandar los informes.\n\nMunches empreses usen davezu sirvidores de proxy pa con un torgafueos pa protexer la rede.\n\nSi ye'l to casu, tienes qu'indicar la direición y el puertu del sirvidor."
 
 #: source/all/crashrep.ulf#%SENDING_REPORT_HEADER%
 msgid  "Sending Error Report"
@@ -201,8 +201,8 @@ msgstr "-p <identificador de procesu>"
 
 #: source/all/crashrep.ulf#%MSG_PARAM_PROCESSID_DESCRIPTION%
 msgid  "Assigns the %PRODUCTNAME% process ID (PID) to the Error Report Tool"
-msgstr ""
+msgstr "Asigna l'dentificador de procesu (PID) de %PRODUCTNAME% al programa d'informe de fallos."
 
 #: source/all/crashrep.ulf#%MSG_PARAM_HELP_DESCRIPTION%
 msgid  "Shows this help text.\nDetailed information can be found in the Setup Guide."
-msgstr ""
+msgstr "Amuesa esti testu d'ayuda.\nAtoparás información más detallao nel manual d'instalación."

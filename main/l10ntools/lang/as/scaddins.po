@@ -530,1149 +530,929 @@ msgstr "FACTDOUBLE"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Workday.1.String.Text
 msgid  "Returns the serial number of the date before or after a specified number of workdays"
-msgstr ""
+msgstr "এটা নিৰ্দিষ্ট সংখ্যাৰ কৰ্মদিনবোৰৰ আগৰ বা পাছৰ তাৰিখৰ ক্ৰমিক সংখ্যাটো ঘূৰাই পথায়"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Workday.2.String.Text
-#, fuzzy
 msgid  "Start date"
 msgstr "আৰম্ভণি তাৰিখটো"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Workday.3.String.Text
-#, fuzzy
 msgid  "The start date"
 msgstr "আৰম্ভণি তাৰিখটো"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Workday.4.String.Text
-#, fuzzy
 msgid  "Days"
 msgstr "দিনবোৰ"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Workday.5.String.Text
-#, fuzzy
 msgid  "The number of workdays before or after the start date"
 msgstr "আৰম্ভণি তাৰিখৰ আগৰ বা পাছৰ কৰ্মদিনৰ সংখ্যা"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Workday.6.String.Text
-#, fuzzy
 msgid  "Holidays"
 msgstr "বন্ধ দিনবোৰ"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Workday.7.String.Text
-#, fuzzy
 msgid  "List of date values of days off (vacation, holidays, etc.)"
 msgstr "বন্ধ দিনবোৰৰ তাৰিখৰ মূল্যবোৰৰ তালিকা (বন্ধ, ছুটীৰ দিনবোৰ, ইত্যাদি)"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Yearfrac.1.String.Text
 msgid  "Returns the number of whole days between 'start date' and 'end date' as a year fraction"
-msgstr ""
+msgstr "আৰম্ভণি তাৰিখ আৰু শেষ তাৰিখৰ মাজৰ গোটেই দিনবোৰৰ সংখ্যাটোক বছৰৰ অংশ হিচাপে ঘূৰাই পথায় "
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Yearfrac.2.String.Text
-#, fuzzy
 msgid  "Start date"
 msgstr "আৰম্ভণি তাৰিখটো"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Yearfrac.3.String.Text
-#, fuzzy
 msgid  "The start date"
 msgstr "আৰম্ভণি তাৰিখটো"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Yearfrac.4.String.Text
-#, fuzzy
 msgid  "End date"
 msgstr "শেষ তাৰিখ"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Yearfrac.5.String.Text
-#, fuzzy
 msgid  "The end date"
 msgstr "শেষ তাৰিখটো"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Yearfrac.6.String.Text
-#, fuzzy
 msgid  "Basis"
-msgstr "আধাৰ e ৰ কাৰণে ঘাতটো গণনা কৰে । "
+msgstr "Basis"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Yearfrac.7.String.Text
-#, fuzzy
 msgid  "Basis for determining the interest days"
 msgstr "সুতৰ দিনবোৰ নিৰ্ণয় কৰাৰ কাৰণে আধাৰ"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Edate.1.String.Text
 msgid  "Returns the serial number of the date that is a specified number of months before or after the start date"
-msgstr ""
+msgstr "তাৰিখটোৰ ক্ৰমিক সংখ্যাটো ঘূৰাই পথায়, যিটো হৈছে আৰম্ভণি তাৰিখৰ আগৰ বা পাছৰ মাহবোৰৰ নিৰ্দিষ্ট সংখ্যা"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Edate.2.String.Text
-#, fuzzy
 msgid  "Start date"
 msgstr "আৰম্ভণি তাৰিখটো"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Edate.3.String.Text
-#, fuzzy
 msgid  "The start date"
 msgstr "আৰম্ভণি তাৰিখটো"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Edate.4.String.Text
-#, fuzzy
 msgid  "Months"
 msgstr "মাহবোৰ"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Edate.5.String.Text
-#, fuzzy
 msgid  "Number of months before or after the start date"
 msgstr "আৰম্ভণি তাৰিখৰ আগৰ বা পাছৰ মাহৰ সংখ্যা"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Weeknum.1.String.Text
 msgid  "Returns the number of the calendar week in which the specified date occurs."
-msgstr ""
+msgstr "নিৰ্দিষ্ট তাৰিখ ওলোৱা কেলেণ্ডাৰ সপ্তাহৰ সংখ্যাবোৰ ঘূৰাই পথায়."
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Weeknum.2.String.Text
-#, fuzzy
 msgid  "Date"
 msgstr "তাৰিখ"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Weeknum.3.String.Text
-#, fuzzy
 msgid  "The date"
 msgstr "তাৰিখটো"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Weeknum.4.String.Text
-#, fuzzy
 msgid  "Return type"
 msgstr "প্ৰত্যাৱৰ্তনৰ প্ৰকাৰ"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Weeknum.5.String.Text
 msgid  "A number from 1 to 3 that specifies the day with which a week begins"
-msgstr ""
+msgstr " 1 ৰ পৰা 3 ৰ মাজৰ এটা সংখ্যা, যিটোৱে সপ্তাহৰ আৰম্ভণিৰ প্ৰথম দিনটো নিৰ্দিষ্ট কৰে"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Eomonth.1.String.Text
 msgid  "Returns the serial number of the last day of the month that comes a certain number of months before or after the start date"
-msgstr ""
+msgstr "মাহৰ শেষ দিনটোৰ ক্ৰমিক নম্বৰটো ঘূৰাই পথায়, যিটো এটা নিৰ্দিষ্ট সংখ্যাৰ মাহৰ  আৰম্ভণি তাৰিখটোৰ আগত বা পাছত আহে   "
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Eomonth.2.String.Text
-#, fuzzy
 msgid  "Start date"
 msgstr "আৰম্ভণি তাৰিখটো"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Eomonth.3.String.Text
-#, fuzzy
 msgid  "The start date"
 msgstr "আৰম্ভণি তাৰিখটো"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Eomonth.4.String.Text
-#, fuzzy
 msgid  "Months"
 msgstr "মাহবোৰ"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Eomonth.5.String.Text
-#, fuzzy
 msgid  "Number of months before or after the start date"
 msgstr "আৰম্ভণি তাৰিখৰ আগৰ বা পাছৰ মাহৰ সংখ্যা"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Networkdays.1.String.Text
-#, fuzzy
 msgid  "Returns the number of workdays between two dates"
 msgstr "দুটা তাৰিখৰ মাজৰ কৰ্মদিনবোৰৰ সংখ্যাটো ঘূৰাই পথায়"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Networkdays.2.String.Text
-#, fuzzy
 msgid  "Start date"
 msgstr "আৰম্ভণি তাৰিখটো"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Networkdays.3.String.Text
-#, fuzzy
 msgid  "The start date"
 msgstr "আৰম্ভণি তাৰিখটো"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Networkdays.4.String.Text
-#, fuzzy
 msgid  "End date"
 msgstr "শেষ তাৰিখ"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Networkdays.5.String.Text
-#, fuzzy
 msgid  "The end date"
 msgstr "শেষ তাৰিখটো"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Networkdays.6.String.Text
-#, fuzzy
 msgid  "Holidays"
 msgstr "বন্ধ দিনবোৰ"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Networkdays.7.String.Text
-#, fuzzy
 msgid  "List of date values representing days off (vacation, holidays, etc.)"
 msgstr "বন্ধ দিনবোৰ দেখুওৱা তাৰিখৰ মূল্যৰ তালিকা (বন্ধ, ছুটিৰ দিনবোৰ, ইত্যাদি.)"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Iseven.1.String.Text
-#, fuzzy
 msgid  "Returns the value 'true' if the number is even"
 msgstr "যদি সংখ্যাটো যুগ্ম হয় তেন্তে 'সঁচা' মূল্যটো ঘূৰাই পথায়"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Iseven.2.String.Text
-#, fuzzy
 msgid  "Number"
 msgstr "সংখ্যা"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Iseven.3.String.Text
-#, fuzzy
 msgid  "The number"
 msgstr "সংখ্যাটো"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Isodd.1.String.Text
-#, fuzzy
 msgid  "Returns the value 'true' if the number is odd"
 msgstr "যদি সংখ্যাটো অযুগ্ম হয় তেন্তে 'সঁচা' মূল্যটো ঘূৰাই পথায়"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Isodd.2.String.Text
-#, fuzzy
 msgid  "Number"
 msgstr "সংখ্যা"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Isodd.3.String.Text
-#, fuzzy
 msgid  "The number"
 msgstr "সংখ্যাটো"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Multinomial.1.String.Text
-#, fuzzy
 msgid  "Returns the multinomial coefficient of a set of numbers"
 msgstr "সংখ্যাবোৰৰ সংহতি এটাৰ বহুপদ সহসংঘটকটো ঘূৰাই পথায়"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Multinomial.2.String.Text
-#, fuzzy
 msgid  "Number(s)"
 msgstr "সংখ্যা(বোৰ)"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Multinomial.3.String.Text
 msgid  "Number or list of numbers for which you want the multinomial coefficient"
-msgstr ""
+msgstr "যাৰ কাৰণে আপুনি  বহুপদ সহসংঘটকটো বিচাৰে,সেই সংখ্যা বা সংখ্যাবোৰৰ তালিকা "
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Seriessum.1.String.Text
-#, fuzzy
 msgid  "Returns the sum of a power series"
 msgstr "এটা ঘাত শৃংখলাৰ সমূহৰাশিটো ঘূৰাই পথায়"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Seriessum.2.String.Text
-#, fuzzy
 msgid  "X"
 msgstr "X"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Seriessum.3.String.Text
-#, fuzzy
 msgid  "The independent variable of the power series"
 msgstr "ঘাত শৃংখলাটোৰ স্বতন্ত্ৰ চলকটো"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Seriessum.4.String.Text
-#, fuzzy
 msgid  "N"
 msgstr "N"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Seriessum.5.String.Text
-#, fuzzy
 msgid  "The initial power to which x is to be raised"
 msgstr "x ৰ বাবে স্থিৰ কৰিবলগীয়া প্ৰথম ঘাত"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Seriessum.6.String.Text
-#, fuzzy
 msgid  "M"
 msgstr "M"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Seriessum.7.String.Text
-#, fuzzy
 msgid  "The increment by which to increase n for each term in the series"
 msgstr "শৃংখলাটোৰ প্ৰতিটো পদৰ কাৰণে  n বেচি কৰিবলৈ (বেতন) বৃদ্ধিটো "
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Seriessum.8.String.Text
-#, fuzzy
 msgid  "Coefficients"
 msgstr "সহসংঘটকবোৰ"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Seriessum.9.String.Text
 msgid  "Set of coefficients by which each successive power of the variable x is multiplied"
-msgstr ""
+msgstr "যিটোৰে চলক  x ৰ প্ৰতিটো ঘাত একাদিক্ৰমে পূৰণ কৰা হ'ল, গুণকবোৰৰ সংহতি"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Quotient.1.String.Text
-#, fuzzy
 msgid  "Returns the integer portion of a division"
 msgstr "এটা হৰণৰ অখণ্ড সংখ্যাৰ অংশটো ঘূৰাই পথায়"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Quotient.2.String.Text
-#, fuzzy
 msgid  "Numerator"
 msgstr "লব"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Quotient.3.String.Text
-#, fuzzy
 msgid  "The dividend"
 msgstr "ভাজ্য"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Quotient.4.String.Text
-#, fuzzy
 msgid  "Denominator"
 msgstr "হৰ"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Quotient.5.String.Text
-#, fuzzy
 msgid  "The divisor"
 msgstr "ভাজক"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Mround.1.String.Text
-#, fuzzy
 msgid  "Returns a number rounded to a specified multiple"
 msgstr "এটা সংখ্যা শূন্যান্ত কৰি এটা নিৰ্দিষ্ট গুণিতকলৈ ঘূৰাই পথায়"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Mround.2.String.Text
-#, fuzzy
 msgid  "Number"
 msgstr "সংখ্যা"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Mround.3.String.Text
-#, fuzzy
 msgid  "The number to round off"
 msgstr "সংখ্যাটো শেষ কৰিবলৈ"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Mround.4.String.Text
-#, fuzzy
 msgid  "Multiple"
 msgstr "বহুত"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Mround.5.String.Text
-#, fuzzy
 msgid  "The multiple to which you want to round number"
 msgstr "আপুনি আসন্ন সংখ্যা হিচাবে বিচৰা গুণিতকটো"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Sqrtpi.1.String.Text
-#, fuzzy
 msgid  "Returns the square root of a number which has been multiplied by pi"
 msgstr "পাইৰে পূৰণ কৰা এটা সংখ্যাৰ বৰ্গমূল ঘূৰাই পথায়"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Sqrtpi.2.String.Text
-#, fuzzy
 msgid  "Number"
 msgstr "সংখ্যা"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Sqrtpi.3.String.Text
-#, fuzzy
 msgid  "The number by which pi is multiplied"
 msgstr "সেই সংখ্যাটো যিটোৰে পাইটোক পূৰণ কৰা হৈছে"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Randbetween.1.String.Text
-#, fuzzy
 msgid  "Returns a random integer between the numbers you specify"
 msgstr "আপুনি নিৰ্দিষ্ট কৰা সংখ্যাবোৰৰ মাজৰ যিকোনো এটা অখণ্ড সংখ্যা ঘূৰাই পথায়"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Randbetween.2.String.Text
-#, fuzzy
 msgid  "Bottom"
 msgstr "তলত"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Randbetween.3.String.Text
-#, fuzzy
 msgid  "The smallest integer returned"
 msgstr "ক্ষুদ্ৰতম অখণ্ড সংখ্যাটো ঘূৰি আহিল"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Randbetween.4.String.Text
-#, fuzzy
 msgid  "Top"
 msgstr "ওপৰ"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Randbetween.5.String.Text
-#, fuzzy
 msgid  "The largest integer returned"
 msgstr "আটাইতকৈ ডাঙৰ অখণ্ড সংখ্যাটো ঘূৰি আহিল "
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Gcd.1.String.Text
-#, fuzzy
 msgid  "Returns the greatest common divisor"
 msgstr "আটাইতকৈ ডাঙৰ সাধাৰণ ভাজকটো ঘূৰাই পথায় "
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Gcd.2.String.Text
-#, fuzzy
 msgid  "Number(s)"
 msgstr "সংখ্যা(বোৰ)"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Gcd.3.String.Text
-#, fuzzy
 msgid  "Number or list of numbers"
 msgstr "সংখ্যা বা সংখ্যাৰ তালিকা"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Lcm.1.String.Text
-#, fuzzy
 msgid  "Returns the least common multiple"
 msgstr "আটাইতকৈ কম সাধাৰণ গুণিতকটো ঘূৰাই পথায়"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Lcm.2.String.Text
-#, fuzzy
 msgid  "Number(s)"
 msgstr "সংখ্যা(বোৰ)"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Lcm.3.String.Text
-#, fuzzy
 msgid  "Number or list of numbers"
 msgstr "সংখ্যা বা সংখ্যাৰ তালিকা"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Besseli.1.String.Text
-#, fuzzy
 msgid  "Returns the modified Bessel function In(x)"
 msgstr "পৰিৱৰ্তিত বেছেল ফাংকশ্বন In(x)টো ঘূৰাই পথায়"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Besseli.2.String.Text
-#, fuzzy
 msgid  "X"
 msgstr "X"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Besseli.3.String.Text
 msgid  "The value at which the function is to be evaluated"
-msgstr ""
+msgstr "যাৰ কাৰণে গামা ফাংকশ্বনটোৰ স্বাভাৱিক ঘাতাংকটো গণনা কৰিবলগীয়া হয়, সেই মূল্যটো ।"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Besseli.4.String.Text
-#, fuzzy
 msgid  "N"
 msgstr "N"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Besseli.5.String.Text
-#, fuzzy
 msgid  "The order of the Bessel function"
 msgstr "বেছেল ফাংকশ্বন Kn(x)টো ঘূৰাই পথায়"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Besselj.1.String.Text
-#, fuzzy
 msgid  "Returns the Bessel function Jn(x)"
 msgstr "বেছেল ফাংকশ্বনৰ Jn(x)টো ঘূৰাই পথায়"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Besselj.2.String.Text
-#, fuzzy
 msgid  "X"
 msgstr "X"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Besselj.3.String.Text
 msgid  "The value at which the function is to be evaluated"
-msgstr ""
+msgstr "যাৰ কাৰণে গামা ফাংকশ্বনটোৰ স্বাভাৱিক ঘাতাংকটো গণনা কৰিবলগীয়া হয়, সেই মূল্যটো ।"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Besselj.4.String.Text
-#, fuzzy
 msgid  "N"
 msgstr "N"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Besselj.5.String.Text
-#, fuzzy
 msgid  "The order of the Bessel function"
 msgstr "বেছেল ফাংকশ্বন Kn(x)টো ঘূৰাই পথায়"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Besselk.1.String.Text
-#, fuzzy
 msgid  "Returns the Bessel function Kn(x)"
 msgstr "বেছেল ফাংকশ্বন Kn(x)টো ঘূৰাই পথায়"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Besselk.2.String.Text
-#, fuzzy
 msgid  "X"
 msgstr "X"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Besselk.3.String.Text
 msgid  "The value at which the function is to be evaluated"
-msgstr ""
+msgstr "যাৰ কাৰণে গামা ফাংকশ্বনটোৰ স্বাভাৱিক ঘাতাংকটো গণনা কৰিবলগীয়া হয়, সেই মূল্যটো ।"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Besselk.4.String.Text
-#, fuzzy
 msgid  "N"
 msgstr "N"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Besselk.5.String.Text
-#, fuzzy
 msgid  "The order of the Bessel function"
 msgstr "বেছেল ফাংকশ্বন Kn(x)টো ঘূৰাই পথায়"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Bessely.1.String.Text
-#, fuzzy
 msgid  "Returns the Bessel function Yn(x)"
 msgstr "বেছেল ফাংকশ্বন Yn(x)টো ঘূৰাই পথায়"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Bessely.2.String.Text
-#, fuzzy
 msgid  "X"
 msgstr "X"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Bessely.3.String.Text
 msgid  "The value at which the function is to be evaluated"
-msgstr ""
+msgstr "যাৰ কাৰণে গামা ফাংকশ্বনটোৰ স্বাভাৱিক ঘাতাংকটো গণনা কৰিবলগীয়া হয়, সেই মূল্যটো ।"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Bessely.4.String.Text
-#, fuzzy
 msgid  "N"
 msgstr "N"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Bessely.5.String.Text
-#, fuzzy
 msgid  "The order of the Bessel function"
 msgstr "বেছেল ফাংকশ্বন Kn(x)টো ঘূৰাই পথায়"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Bin2Oct.1.String.Text
-#, fuzzy
 msgid  "Converts a binary number to an octal number"
 msgstr "বাইনেৰী সংখ্যাক এটা অক্টেল সংখ্যালৈ সলনি কৰে"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Bin2Oct.2.String.Text
-#, fuzzy
 msgid  "Number"
 msgstr "সংখ্যা"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Bin2Oct.3.String.Text
-#, fuzzy
 msgid  "The binary number to be converted (as text)"
 msgstr "বাইনেৰী সংখ্যাটো সলনি কৰিবলগীয়া হ'ব (টেক্সট্ হিচাপে)"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Bin2Oct.4.String.Text
-#, fuzzy
 msgid  "Places"
-msgstr "এটা সংখ্যাৰ দশমিক সংখ্যাবোৰ হ্ৰস্ব কৰে ।"
+msgstr "ঠাইবোৰ"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Bin2Oct.5.String.Text
-#, fuzzy
 msgid  "Number of places used"
 msgstr "ব্যৱহৃত ঠাইবোৰৰ সংখ্যা"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Bin2Dec.1.String.Text
-#, fuzzy
 msgid  "Converts a binary number to a decimal number"
 msgstr "এটা বাইনেৰী সংখ্যাক  দশমিক সংখ্যালৈ সলনি কৰে"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Bin2Dec.2.String.Text
-#, fuzzy
 msgid  "Number"
 msgstr "সংখ্যা"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Bin2Dec.3.String.Text
-#, fuzzy
 msgid  "The binary number to be converted (as text)"
 msgstr "বাইনেৰী সংখ্যাটো সলনি কৰিবলগীয়া হ'ব (টেক্সট্ হিচাপে)"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Bin2Hex.1.String.Text
-#, fuzzy
 msgid  "Converts a binary number to a hexadecimal number"
 msgstr "এটা বাইনেৰী সংখ্যাক হেক্সাডেছিমেল সংখ্যালৈ সলনি কৰে"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Bin2Hex.2.String.Text
-#, fuzzy
 msgid  "Number"
 msgstr "সংখ্যা"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Bin2Hex.3.String.Text
-#, fuzzy
 msgid  "The binary number to be converted (as text)"
 msgstr "বাইনেৰী সংখ্যাটো সলনি কৰিবলগীয়া হ'ব (টেক্সট্ হিচাপে)"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Bin2Hex.4.String.Text
-#, fuzzy
 msgid  "Places"
 msgstr "ঠাইবোৰ"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Bin2Hex.5.String.Text
-#, fuzzy
 msgid  "Number of places used."
 msgstr "ব্যৱহৃত ঠাইবোৰৰ সংখ্যা."
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Oct2Bin.1.String.Text
-#, fuzzy
 msgid  "Converts an octal number to a binary number"
 msgstr "এটা অক্টেল সংখ্যাক এটা বাইনেৰী সংখ্যালৈ সলনি কৰে"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Oct2Bin.2.String.Text
-#, fuzzy
 msgid  "Number"
 msgstr "সংখ্যা"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Oct2Bin.3.String.Text
-#, fuzzy
 msgid  "The octal number to be converted (as text)"
 msgstr "বাইনেৰী সংখ্যাটো সলনি কৰিবলগীয়া হ'ব (টেক্সট্ হিচাপে)"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Oct2Bin.4.String.Text
-#, fuzzy
 msgid  "Places"
 msgstr "ঠাইবোৰ"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Oct2Bin.5.String.Text
-#, fuzzy
 msgid  "Number of places used"
 msgstr "ব্যৱহৃত ঠাইবোৰৰ সংখ্যা"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Oct2Dec.1.String.Text
-#, fuzzy
 msgid  "Converts an octal number to a decimal number"
 msgstr "এটা অক্টেল সংখ্যাক দশমিক সংখ্যালৈ সলনি কৰে"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Oct2Dec.2.String.Text
-#, fuzzy
 msgid  "Number"
 msgstr "সংখ্যা"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Oct2Dec.3.String.Text
-#, fuzzy
 msgid  "The octal number to be converted (as text)"
 msgstr "বাইনেৰী সংখ্যাটো সলনি কৰিবলগীয়া হ'ব (টেক্সট্ হিচাপে)"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Oct2Hex.1.String.Text
-#, fuzzy
 msgid  "Converts an octal number to a hexadecimal number"
 msgstr "এটা অক্টেল সংখ্যাক এটা হেক্সাডেছিমেল সংখ্যালৈ সলনি কৰে"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Oct2Hex.2.String.Text
-#, fuzzy
 msgid  "Number"
 msgstr "সংখ্যা"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Oct2Hex.3.String.Text
-#, fuzzy
 msgid  "The octal number to be converted (as text)"
 msgstr "বাইনেৰী সংখ্যাটো সলনি কৰিবলগীয়া হ'ব (টেক্সট্ হিচাপে)"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Oct2Hex.4.String.Text
-#, fuzzy
 msgid  "Places"
 msgstr "ঠাইবোৰ"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Oct2Hex.5.String.Text
-#, fuzzy
 msgid  "Number of places used"
 msgstr "ব্যৱহৃত ঠাইবোৰৰ সংখ্যা"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Dec2Bin.1.String.Text
-#, fuzzy
 msgid  "Converts a decimal number to a binary number"
 msgstr "এটা ডেছিমেল সংখ্যাক  বাইনেৰী সংখ্যালৈ সলনি কৰে"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Dec2Bin.2.String.Text
-#, fuzzy
 msgid  "Number"
 msgstr "সংখ্যা"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Dec2Bin.3.String.Text
-#, fuzzy
 msgid  "The decimal integer to be converted"
 msgstr "ৰূপান্তৰ কৰিবলগীয়া টেক্সটখন ।"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Dec2Bin.4.String.Text
-#, fuzzy
 msgid  "Places"
 msgstr "ঠাইবোৰ"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Dec2Bin.5.String.Text
-#, fuzzy
 msgid  "Number of places used"
 msgstr "ব্যৱহৃত ঠাইবোৰৰ সংখ্যা"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Dec2Hex.1.String.Text
-#, fuzzy
 msgid  "Converts a decimal number to a hexadecimal number"
 msgstr "এটা ডেছিমেল সংখ্যাক  হেক্সাডেছিমেল সংখ্যালৈ সলনি কৰে"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Dec2Hex.2.String.Text
-#, fuzzy
 msgid  "Number"
 msgstr "সংখ্যা"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Dec2Hex.3.String.Text
-#, fuzzy
 msgid  "The decimal integer to be converted"
 msgstr "ৰূপান্তৰ কৰিবলগীয়া টেক্সটখন ।"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Dec2Hex.4.String.Text
-#, fuzzy
 msgid  "Places"
 msgstr "ঠাইবোৰ"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Dec2Hex.5.String.Text
-#, fuzzy
 msgid  "Number of places used"
 msgstr "ব্যৱহৃত ঠাইবোৰৰ সংখ্যা"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Dec2Oct.1.String.Text
-#, fuzzy
 msgid  "Converts a decimal number into an octal number"
 msgstr "এটা ডেছিমেল সংখ্যাক  অক্টেল সংখ্যালৈ সলনি কৰে"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Dec2Oct.2.String.Text
-#, fuzzy
 msgid  "Number"
 msgstr "সংখ্যা"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Dec2Oct.3.String.Text
-#, fuzzy
 msgid  "The decimal number"
 msgstr "এটা সংখ্যাৰ দশমিক সংখ্যাবোৰ হ্ৰস্ব কৰে ।"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Dec2Oct.4.String.Text
-#, fuzzy
 msgid  "Places"
 msgstr "এটা সংখ্যাৰ দশমিক সংখ্যাবোৰ হ্ৰস্ব কৰে ।"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Dec2Oct.5.String.Text
-#, fuzzy
 msgid  "Number of places used"
 msgstr "ব্যৱহৃত ঠাইবোৰৰ সংখ্যা"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Hex2Bin.1.String.Text
-#, fuzzy
 msgid  "Converts a hexadecimal number to a binary number"
 msgstr "এটা হেক্সাডেছিমেল সংখ্যাক বাইনেৰী সংখ্যালৈ সলনি কৰে"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Hex2Bin.2.String.Text
-#, fuzzy
 msgid  "Number"
 msgstr "সংখ্যা"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Hex2Bin.3.String.Text
-#, fuzzy
 msgid  "The hexadecimal number to be converted (as text)"
 msgstr "বাইনেৰী সংখ্যাটো সলনি কৰিবলগীয়া হ'ব (টেক্সট্ হিচাপে)"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Hex2Bin.4.String.Text
-#, fuzzy
 msgid  "Places"
 msgstr "ঠাইবোৰ"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Hex2Bin.5.String.Text
-#, fuzzy
 msgid  "Number of places used"
 msgstr "ব্যৱহৃত ঠাইবোৰৰ সংখ্যা"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Hex2Dec.1.String.Text
-#, fuzzy
 msgid  "Converts a hexadecimal number to a decimal number"
 msgstr "এটা হেক্সাডেছিমেল সংখ্যাক দশমিক সংখ্যালৈ সলনি কৰে"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Hex2Dec.2.String.Text
-#, fuzzy
 msgid  "Number"
 msgstr "সংখ্যা"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Hex2Dec.3.String.Text
-#, fuzzy
 msgid  "The hexadecimal number to be converted (as text)"
 msgstr "বাইনেৰী সংখ্যাটো সলনি কৰিবলগীয়া হ'ব (টেক্সট্ হিচাপে)"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Hex2Oct.1.String.Text
-#, fuzzy
 msgid  "Converts a hexadecimal number to an octal number"
 msgstr "এটা হেক্সাডেছিমেল সংখ্যাক এটা অক্টেল সংখ্যালৈ সলনি কৰে"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Hex2Oct.2.String.Text
-#, fuzzy
 msgid  "Number"
 msgstr "সংখ্যা"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Hex2Oct.3.String.Text
-#, fuzzy
 msgid  "The hexadecimal number to be converted (as text)"
 msgstr "বাইনেৰী সংখ্যাটো সলনি কৰিবলগীয়া হ'ব (টেক্সট্ হিচাপে)"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Hex2Oct.4.String.Text
-#, fuzzy
 msgid  "Places"
 msgstr "ঠাইবোৰ"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Hex2Oct.5.String.Text
-#, fuzzy
 msgid  "Number of places used"
 msgstr "ব্যৱহৃত ঠাইবোৰৰ সংখ্যা"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Delta.1.String.Text
-#, fuzzy
 msgid  "Tests whether two values are equal"
 msgstr "দুটা মূল্য সমান হয়নে নহয়, তাক বাছনী কৰক"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Delta.2.String.Text
-#, fuzzy
 msgid  "Number 1"
 msgstr "সংখ্যা 1"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Delta.3.String.Text
-#, fuzzy
 msgid  "The first number"
 msgstr "প্রথম সংখ্যাটো"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Delta.4.String.Text
-#, fuzzy
 msgid  "Number 2"
 msgstr "সংখ্যা 2"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Delta.5.String.Text
-#, fuzzy
 msgid  "The second number"
 msgstr "দ্বিতীয় সংখ্যাটো"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Erf.1.String.Text
-#, fuzzy
 msgid  "Returns the error function"
 msgstr "ভুল ফাংকশ্বনটো ঘূৰাই পথায়"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Erf.2.String.Text
-#, fuzzy
 msgid  "Lower limit"
 msgstr "তলৰ সীমা"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Erf.3.String.Text
-#, fuzzy
 msgid  "The lower limit for integration"
 msgstr "ঐক্যবদ্ধকৰণৰ কাৰণে উৰ্দ্ধ সীমা"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Erf.4.String.Text
-#, fuzzy
 msgid  "Upper limit"
 msgstr "উৰ্দ্ধ সীমা"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Erf.5.String.Text
-#, fuzzy
 msgid  "The upper limit for integration"
 msgstr "ঐক্যবদ্ধকৰণৰ কাৰণে উৰ্দ্ধ সীমা"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Erfc.1.String.Text
-#, fuzzy
 msgid  "Returns the complementary error function"
 msgstr "পৰিপূৰক ভূল ফাংকশ্বনটোক ঘূৰাই পথায়"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Erfc.2.String.Text
-#, fuzzy
 msgid  "Lower limit"
 msgstr "তলৰ সীমা"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Erfc.3.String.Text
-#, fuzzy
 msgid  "The lower limit for integration"
 msgstr "ঐক্যবদ্ধকৰণৰ কাৰণে উৰ্দ্ধ সীমা"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Gestep.1.String.Text
-#, fuzzy
 msgid  "Tests whether a number is greater than a threshold value"
 msgstr "সংখ্যা এটা প্ৰাৰম্ভিক মূল্যতকৈ ডাঙৰ হয়নে নহয়, তাক বাছনী কৰে"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Gestep.2.String.Text
-#, fuzzy
 msgid  "Number"
 msgstr "সংখ্যা"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Gestep.3.String.Text
-#, fuzzy
 msgid  "The value to test against step"
 msgstr "পদক্ষেপৰ বিপৰীতে বাছনী কৰিবলৈ মূল্যটো"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Gestep.4.String.Text
-#, fuzzy
 msgid  "Step"
 msgstr "পদক্ষেপ"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Gestep.5.String.Text
-#, fuzzy
 msgid  "The threshhold value"
 msgstr "প্ৰাৰম্ভিক মূল্যটো"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Factdouble.1.String.Text
-#, fuzzy
 msgid  "Returns the double factorial of Number"
 msgstr "সংখ্যাৰ দ্বিগুণ ক্ৰমগুণিতকটো ঘূৰাই পথায়"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Factdouble.2.String.Text
-#, fuzzy
 msgid  "Number"
 msgstr "সংখ্যা"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Factdouble.3.String.Text
-#, fuzzy
 msgid  "The number"
 msgstr "সংখ্যাটো"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Imabs.1.String.Text
-#, fuzzy
 msgid  "Returns the absolute value (modulus) of a complex number"
 msgstr "এটা জটিল সংখ্যাৰ সম্পূ্ৰ্ণ মূল্যটো (গুণাংক) ঘূৰাই পথায়"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Imabs.2.String.Text
-#, fuzzy
 msgid  "Complex number"
 msgstr "জটিল সংখ্যা"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Imabs.3.String.Text
-#, fuzzy
 msgid  "The complex number"
 msgstr "জটিল সংখ্যাটো"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Imaginary.1.String.Text
-#, fuzzy
 msgid  "Returns the imaginary coefficient of a complex number"
 msgstr "এটা জটিল সংখ্যাৰ কাল্পনিক সহসংঘটকটো ঘূৰাই পথায়"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Imaginary.2.String.Text
-#, fuzzy
 msgid  "Complex number"
 msgstr "জটিল সংখ্যা"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Imaginary.3.String.Text
-#, fuzzy
 msgid  "The complex number"
 msgstr "জটিল সংখ্যাটো"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Impower.1.String.Text
-#, fuzzy
 msgid  "Returns a complex number raised to an integer power"
 msgstr "এটা জটিল সংখ্যা এটা অখণ্ড সংখ্যাৰ ঘাতলৈ বৃদ্ধি কৰি  ঘূৰাই পথায়"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Impower.2.String.Text
-#, fuzzy
 msgid  "Complex number"
 msgstr "জটিল সংখ্যা"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Impower.3.String.Text
-#, fuzzy
 msgid  "The complex number"
 msgstr "জটিল সংখ্যাটো"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Impower.4.String.Text
-#, fuzzy
 msgid  "Number"
 msgstr "সংখ্যা"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Impower.5.String.Text
-#, fuzzy
 msgid  "Power to which the complex number is raised"
 msgstr "জটিল সংখ্যাটো বৃদ্ধি কৰা ঘাতাংক"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Imargument.1.String.Text
-#, fuzzy
 msgid  "Returns the argument theta, an angle expressed in radians"
 msgstr "কোণাঙ্ক থিটাটো ঘূৰাই পথায়, এটা কোণ ৰেডিয়ানত প্ৰকাশ কৰা হ'ল"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Imargument.2.String.Text
-#, fuzzy
 msgid  "Complex number"
 msgstr "জটিল সংখ্যা"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Imargument.3.String.Text
-#, fuzzy
 msgid  "A complex number"
 msgstr "এটা জটিল সংখ্যা"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Imcos.1.String.Text
-#, fuzzy
 msgid  "Returns the cosine of a complex number"
 msgstr "এটা জটিল সংখ্যাৰ সূক্ষ্মকোণৰ পূৰক ৰেখা ঘূৰাই পথায়"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Imcos.2.String.Text
-#, fuzzy
 msgid  "Complex number"
 msgstr "জটিল সংখ্যা"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Imcos.3.String.Text
-#, fuzzy
 msgid  "A complex number"
 msgstr "এটা জটিল সংখ্যা"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Imdiv.1.String.Text
-#, fuzzy
 msgid  "Returns the quotient of two complex numbers"
 msgstr "দুটা জটিল সংখ্যাৰ ভাগফলটো ঘূৰাই পথায়"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Imdiv.2.String.Text
-#, fuzzy
 msgid  "Numerator"
 msgstr "লব"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Imdiv.3.String.Text
-#, fuzzy
 msgid  "The dividend"
 msgstr "ভাজ্য"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Imdiv.4.String.Text
-#, fuzzy
 msgid  "Denominator"
 msgstr "হৰ"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Imdiv.5.String.Text
-#, fuzzy
 msgid  "The divisor"
 msgstr "ভাজক"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Imexp.1.String.Text
-#, fuzzy
 msgid  "Returns the algebraic form of the exponential of a complex number"
 msgstr "এটা জটিল সংখ্যাৰ সূচকীয়টোৰ বীজগাণিতিক ৰূপটোক ঘূৰাই পথায়"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Imexp.2.String.Text
-#, fuzzy
 msgid  "Complex number"
 msgstr "জটিল সংখ্যা"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Imexp.3.String.Text
-#, fuzzy
 msgid  "The complex number"
 msgstr "জটিল সংখ্যাটো"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Imconjugate.1.String.Text
-#, fuzzy
 msgid  "Returns the complex conjugate of a complex number"
 msgstr "এটা জটিল সংখ্যাৰ জটিল যুগ্মটোক ঘূৰাই পথায়"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Imconjugate.2.String.Text
-#, fuzzy
 msgid  "Complex number"
 msgstr "জটিল সংখ্যা"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Imconjugate.3.String.Text
-#, fuzzy
 msgid  "The complex number"
 msgstr "জটিল সংখ্যাটো"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Imln.1.String.Text
-#, fuzzy
 msgid  "Returns the natural logarithm of a complex number"
 msgstr "এটা জটিল সংখ্যাৰ স্বাভাৱিক ঘাতাংকটো ঘূৰাই পথায়"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Imln.2.String.Text
-#, fuzzy
 msgid  "Complex number"
 msgstr "জটিল সংখ্যা"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Imln.3.String.Text
-#, fuzzy
 msgid  "The complex number"
 msgstr "জটিল সংখ্যাটো"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Imlog10.1.String.Text
-#, fuzzy
 msgid  "Returns the base-10 logarithm of a complex number"
 msgstr "এটা জটিল সংখ্যাৰ আধাৰ-10 ঘাতাংকটো ঘূৰাই পথায়"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Imlog10.2.String.Text
-#, fuzzy
 msgid  "Complex number"
 msgstr "জটিল সংখ্যা"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Imlog10.3.String.Text
-#, fuzzy
 msgid  "The complex number"
 msgstr "জটিল সংখ্যাটো"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Imlog2.1.String.Text
-#, fuzzy
 msgid  "Returns the base-2 logarithm of a complex number"
 msgstr "এটা জটিল সংখ্যাৰ আধাৰ-2 ঘাতাংকটো ঘূৰাই পথায়"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Imlog2.2.String.Text
-#, fuzzy
 msgid  "Complex number"
 msgstr "জটিল সংখ্যা"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Imlog2.3.String.Text
-#, fuzzy
 msgid  "The complex number"
 msgstr "জটিল সংখ্যাটো"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Improduct.1.String.Text
-#, fuzzy
 msgid  "Returns the product of several complex numbers"
 msgstr "বিভিন্ন জটিল সংখ্যাৰ প্ৰডাক্টটো ঘূৰাই পথায়"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Improduct.2.String.Text
-#, fuzzy
 msgid  "Complex number"
 msgstr "জটিল সংখ্যা"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Improduct.3.String.Text
-#, fuzzy
 msgid  "The first complex number"
 msgstr "প্ৰথম জটিল সংখ্যাটো"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Improduct.4.String.Text
-#, fuzzy
 msgid  "Complex number"
 msgstr "জটিল সংখ্যা"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Improduct.5.String.Text
-#, fuzzy
 msgid  "Another complex number"
 msgstr "অন্য জটিল সংখ্যা"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Imreal.1.String.Text
-#, fuzzy
 msgid  "Returns the real coefficient of a complex number"
 msgstr "এটা জটিল সংখ্যাৰ প্ৰকৃত সহসংঘটকটো ঘূৰাই পথায়"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Imreal.2.String.Text
-#, fuzzy
 msgid  "Complex number"
 msgstr "জটিল সংখ্যা"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Imreal.3.String.Text
-#, fuzzy
 msgid  "The complex number"
 msgstr "জটিল সংখ্যাটো"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Imsin.1.String.Text
-#, fuzzy
 msgid  "Returns the sine of a complex number"
 msgstr "এটা জটিল সংখ্যাৰ ছাইন ঘূৰাই পথায়"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Imsin.2.String.Text
-#, fuzzy
 msgid  "Complex number"
 msgstr "জটিল সংখ্যা"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Imsin.3.String.Text
-#, fuzzy
 msgid  "The complex number"
 msgstr "জটিল সংখ্যাটো"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Imsub.1.String.Text
-#, fuzzy
 msgid  "Returns the difference of two complex numbers"
 msgstr "দুটা জটিল সংখ্যাৰ পাৰ্থক্যটো ঘূৰাই পথায়"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Imsub.2.String.Text
-#, fuzzy
 msgid  "Complex number 1"
 msgstr "জটিল সংখ্যা 1"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Imsub.3.String.Text
-#, fuzzy
 msgid  "Complex number 1"
 msgstr "জটিল সংখ্যা 1"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Imsub.4.String.Text
-#, fuzzy
 msgid  "Complex number 2"
 msgstr "জটিল সংখ্যা 2"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Imsub.5.String.Text
-#, fuzzy
 msgid  "Complex number 2"
 msgstr "জটিল সংখ্যা 2"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Imsqrt.1.String.Text
-#, fuzzy
 msgid  "Returns the square root of a complex number"
 msgstr "এটা জটিল সংখ্যাৰ বৰ্গমূল ঘূৰাই পথায়"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Imsqrt.2.String.Text
-#, fuzzy
 msgid  "Complex number"
 msgstr "জটিল সংখ্যা"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Imsqrt.3.String.Text
-#, fuzzy
 msgid  "The complex number"
 msgstr "জটিল সংখ্যাটো"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Imsum.1.String.Text
-#, fuzzy
 msgid  "Returns the sum of complex numbers"
 msgstr "জটিল সংখ্যাবোৰৰ যোগফলটো ঘূৰাই পথায়"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Imsum.2.String.Text
-#, fuzzy
 msgid  "Complex number"
 msgstr "জটিল সংখ্যা"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Imsum.3.String.Text
-#, fuzzy
 msgid  "The complex number"
 msgstr "জটিল সংখ্যাটো"
 
@@ -1773,301 +1553,247 @@ msgid  "A complex number"
 msgstr ""
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Complex.1.String.Text
-#, fuzzy
 msgid  "Converts real and imaginary coefficients into a complex number"
 msgstr "প্ৰকৃত আৰু কাল্পনিক সহসংঘটকবোৰ এটা জটিল সংখ্যালৈ সলনি কৰে"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Complex.2.String.Text
-#, fuzzy
 msgid  "Real num"
 msgstr "বাস্তৱ সংখ্যা"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Complex.3.String.Text
-#, fuzzy
 msgid  "The real coefficient"
 msgstr " বাস্তৱ সহসংঘটকটো"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Complex.4.String.Text
-#, fuzzy
 msgid  "I num"
 msgstr "I num"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Complex.5.String.Text
-#, fuzzy
 msgid  "The imaginary coefficient"
 msgstr "কাল্পনিক সহসংঘটকটো"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Complex.6.String.Text
-#, fuzzy
 msgid  "Suffix"
 msgstr "অনুবদ্ধ"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Complex.7.String.Text
-#, fuzzy
 msgid  "The suffix"
 msgstr "অনুবদ্ধটো"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Convert.1.String.Text
-#, fuzzy
 msgid  "Converts a number from one measurement system to another"
 msgstr "এটা সংখ্যা এটা পৰিমাপক পদ্ধতিৰ পৰা অন্য এটালৈ সলনি কৰে"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Convert.2.String.Text
-#, fuzzy
 msgid  "Number"
 msgstr "সংখ্যা"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Convert.3.String.Text
-#, fuzzy
 msgid  "The number"
 msgstr "সংখ্যাটো"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Convert.4.String.Text
-#, fuzzy
 msgid  "From unit"
 msgstr "এককৰ পৰা  "
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Convert.5.String.Text
-#, fuzzy
 msgid  "Unit of measure for number"
 msgstr "সংখ্যাৰ কাৰণে জোখৰ একক"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Convert.6.String.Text
-#, fuzzy
 msgid  "To unit"
 msgstr "এককলৈ"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Convert.7.String.Text
-#, fuzzy
 msgid  "Unit of measure for the result"
 msgstr "ফলাফলটোৰ কাৰণে জোখৰ একক"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Amordegrc.1.String.Text
 msgid  "Returns the prorated linear depreciation of an asset for each accounting period"
-msgstr ""
+msgstr "এটা এছেটৰ prorated linear depreciation দিয়ে প্ৰত্যেক হিচাপৰ সময়কালৰ কাৰণে"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Amordegrc.2.String.Text
-#, fuzzy
 msgid  "Cost"
 msgstr "মূল্য"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Amordegrc.3.String.Text
-#, fuzzy
 msgid  "Cost of the asset"
 msgstr "এছেটটোৰ মূল্য"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Amordegrc.4.String.Text
-#, fuzzy
 msgid  "Date purchased"
 msgstr "তাৰিখ"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Amordegrc.5.String.Text
-#, fuzzy
 msgid  "Purchase date of the asset"
 msgstr "এছেটটোৰ মূল্য"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Amordegrc.6.String.Text
-#, fuzzy
 msgid  "First period"
 msgstr "প্ৰথম কাল"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Amordegrc.7.String.Text
-#, fuzzy
 msgid  "Date the first period ends"
 msgstr "প্ৰথম কালটো শেষ হোৱা তাৰিখ"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Amordegrc.8.String.Text
-#, fuzzy
 msgid  "Salvage"
 msgstr "অৱশিষ্ট"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Amordegrc.9.String.Text
-#, fuzzy
 msgid  "Salvage value of an asset at the end of its life"
 msgstr "এছেটটোৰ জীৱনৰ শেষত ইয়াৰ অৱশিষ্ট মূল্য"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Amordegrc.10.String.Text
-#, fuzzy
 msgid  "Period"
 msgstr "কাল"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Amordegrc.11.String.Text
-#, fuzzy
 msgid  "The period"
 msgstr "কালটো"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Amordegrc.12.String.Text
-#, fuzzy
 msgid  "Rate"
-msgstr "দিয়া তাৰিখটো"
+msgstr "হাৰ"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Amordegrc.13.String.Text
-#, fuzzy
 msgid  "The rate of depreciation"
 msgstr "অৱমূল্যনৰ হাৰটো"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Amordegrc.14.String.Text
-#, fuzzy
 msgid  "Basis"
-msgstr "আধাৰ"
+msgstr "আধাৰ e ৰ কাৰণে ঘাতটো গণনা কৰে । "
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Amordegrc.15.String.Text
-#, fuzzy
 msgid  "The year basis to be used"
 msgstr "ৰূপান্তৰ কৰিবলগীয়া মূল্যটো ।"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Amorlinc.1.String.Text
 msgid  "Returns the prorated linear depreciation of an asset for each accounting period"
-msgstr ""
+msgstr "এটা এছেটৰ prorated linear depreciation দিয়ে প্ৰত্যেক হিচাপৰ সময়কালৰ কাৰণে"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Amorlinc.2.String.Text
-#, fuzzy
 msgid  "Cost"
 msgstr "মূল্য"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Amorlinc.3.String.Text
-#, fuzzy
 msgid  "Cost of the asset"
 msgstr "এছেটটোৰ মূল্য"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Amorlinc.4.String.Text
-#, fuzzy
 msgid  "Date purchased"
 msgstr "তাৰিখ"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Amorlinc.5.String.Text
-#, fuzzy
 msgid  "Purchase date of the asset"
 msgstr "এছেটটোৰ মূল্য"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Amorlinc.6.String.Text
-#, fuzzy
 msgid  "First period"
 msgstr "প্ৰথম কাল"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Amorlinc.7.String.Text
-#, fuzzy
 msgid  "The date the first period ends"
 msgstr "প্ৰথম কালটো শেষ হোৱা তাৰিখটো"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Amorlinc.8.String.Text
-#, fuzzy
 msgid  "Salvage"
 msgstr "অৱশিষ্ট"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Amorlinc.9.String.Text
-#, fuzzy
 msgid  "The salvage value of an asset at the end of its life"
 msgstr "এছেটটোৰ জীৱনৰ শেষত ইয়াৰ অৱশিষ্ট মূল্য"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Amorlinc.10.String.Text
-#, fuzzy
 msgid  "Period"
 msgstr "কাল"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Amorlinc.11.String.Text
-#, fuzzy
 msgid  "The period"
 msgstr "কালটো"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Amorlinc.12.String.Text
-#, fuzzy
 msgid  "Rate"
 msgstr "হাৰ"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Amorlinc.13.String.Text
-#, fuzzy
 msgid  "The rate of depreciation"
 msgstr "অৱমূল্যনৰ হাৰটো"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Amorlinc.14.String.Text
-#, fuzzy
 msgid  "Basis"
-msgstr "আধাৰ"
+msgstr "আধাৰ e ৰ কাৰণে ঘাতটো গণনা কৰে । "
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Amorlinc.15.String.Text
-#, fuzzy
 msgid  "The year basis to be used"
 msgstr "ৰূপান্তৰ কৰিবলগীয়া মূল্যটো ।"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Accrint.1.String.Text
-#, fuzzy
 msgid  "Returns the accrued interest for a security that pays periodic interest"
 msgstr "সাময়িক সুত পৰিশোধ কৰা বৰ্দ্ধিত সুতটো সুৰক্ষাৰ কাৰণে ঘূৰাই পথায়"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Accrint.2.String.Text
-#, fuzzy
 msgid  "Issue"
 msgstr "সুৰক্ষাৰ ইশ্ব্যু তাৰিখ"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Accrint.3.String.Text
-#, fuzzy
 msgid  "Issue date of the security"
 msgstr "সুৰক্ষাৰ ইশ্ব্যু তাৰিখ"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Accrint.4.String.Text
-#, fuzzy
 msgid  "First interest"
 msgstr "প্ৰথম সুত"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Accrint.5.String.Text
-#, fuzzy
 msgid  "First interest date of the security"
 msgstr "সুৰক্ষাটোৰ প্ৰথম সুতৰ তাৰিখ"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Accrint.6.String.Text
-#, fuzzy
 msgid  "Settlement"
 msgstr "নিষ্পত্তি কৰা তাৰিখটোৰ পাছত প্ৰথম কুপনৰ তাৰিখটো ঘূৰাই পথায়"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Accrint.7.String.Text
-#, fuzzy
 msgid  "The settlement"
 msgstr "নিষ্পত্তি কৰা তাৰিখটোৰ পাছত প্ৰথম কুপনৰ তাৰিখটো ঘূৰাই পথায়"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Accrint.8.String.Text
-#, fuzzy
 msgid  "Rate"
 msgstr "হাৰ"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Accrint.9.String.Text
-#, fuzzy
 msgid  "The rate"
 msgstr "হাৰটো"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Accrint.10.String.Text
-#, fuzzy
 msgid  "Par"
 msgstr "সমমান"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Accrint.11.String.Text
-#, fuzzy
 msgid  "The par value"
 msgstr "বৰ্তমান মূল্যটো"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Accrint.12.String.Text
-#, fuzzy
 msgid  "Frequency"
 msgstr "বাৰংবাৰতা"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Accrint.13.String.Text
-#, fuzzy
 msgid  "The frequency"
 msgstr "বাৰংবাৰতাটো"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Accrint.14.String.Text
 #, fuzzy
 msgid  "Basis"
-msgstr "আধাৰ"
+msgstr "আধাৰ e ৰ কাৰণে ঘাতটো গণনা কৰে । "
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Accrint.15.String.Text
 #, fuzzy
 msgid  "The basis"
-msgstr "আধাৰ"
+msgstr "ৰূপান্তৰ কৰিবলগীয়া মূল্যটো ।"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Accrintm.1.String.Text
+#, fuzzy
 msgid  "Returns the accrued interest for a security that pays interest at maturity"
-msgstr ""
+msgstr "সুত পৰিশোধ কৰা বৰ্দ্ধিত সুতটো সুৰক্ষাৰ কাৰণে ঘূৰাই পথায়"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Accrintm.2.String.Text
 #, fuzzy
@@ -2112,16 +1838,17 @@ msgstr "বৰ্তমান মূল্যটো"
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Accrintm.10.String.Text
 #, fuzzy
 msgid  "Basis"
-msgstr "আধাৰ e ৰ কাৰণে ঘাতটো গণনা কৰে । "
+msgstr "আধাৰ"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Accrintm.11.String.Text
 #, fuzzy
 msgid  "The basis"
-msgstr "আধাৰ"
+msgstr "ৰূপান্তৰ কৰিবলগীয়া মূল্যটো ।"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Received.1.String.Text
+#, fuzzy
 msgid  "Returns the amount paid out at maturity for a fully invested security"
-msgstr ""
+msgstr "এটা সম্পূৰ্ণৰূপে বিনিয়োগ কৰা বন্ধকীৰ কাৰণে ম্যাদপূৰ্ণতাত পৰিশোধ কৰা ৰাশি ঘূৰাই পথায়"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Received.2.String.Text
 #, fuzzy
@@ -2136,7 +1863,7 @@ msgstr "নিষ্পত্তি কৰা তাৰিখটোৰ পাছ
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Received.4.String.Text
 #, fuzzy
 msgid  "Maturity"
-msgstr "ম্যাদপূৰ্ণতাৰ প্ৰকাৰটো"
+msgstr "ম্যাদপূৰ্ণতা"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Received.5.String.Text
 #, fuzzy
@@ -2166,12 +1893,12 @@ msgstr "ৰেহাই মূল্য"
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Received.10.String.Text
 #, fuzzy
 msgid  "Basis"
-msgstr "আধাৰ e ৰ কাৰণে ঘাতটো গণনা কৰে । "
+msgstr "আধাৰ"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Received.11.String.Text
 #, fuzzy
 msgid  "The basis"
-msgstr "আধাৰ"
+msgstr "ৰূপান্তৰ কৰিবলগীয়া মূল্যটো ।"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Disc.1.String.Text
 #, fuzzy
@@ -2191,7 +1918,7 @@ msgstr "নিষ্পত্তি কৰা তাৰিখটোৰ পাছ
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Disc.4.String.Text
 #, fuzzy
 msgid  "Maturity"
-msgstr "ম্যাদপূৰ্ণতাৰ প্ৰকাৰটো"
+msgstr "ম্যাদপূৰ্ণতা"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Disc.5.String.Text
 #, fuzzy
@@ -2221,16 +1948,17 @@ msgstr "বৰ্তমান মূল্যটো"
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Disc.10.String.Text
 #, fuzzy
 msgid  "Basis"
-msgstr "আধাৰ e ৰ কাৰণে ঘাতটো গণনা কৰে । "
+msgstr "আধাৰ"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Disc.11.String.Text
 #, fuzzy
 msgid  "The basis"
-msgstr "আধাৰ"
+msgstr "ৰূপান্তৰ কৰিবলগীয়া মূল্যটো ।"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Duration.1.String.Text
+#, fuzzy
 msgid  "Returns the annual Macaulay duration of a security with periodic interest payments"
-msgstr ""
+msgstr "এটা বন্ধকীৰ মেক্যুলেৰ (Macaulay) বছৰেকীয়া কাৰ্য্যকালটোৰ সৈতে চক্ৰীয় সূত পৰিশোধবোৰ ঘূৰাই পথায়"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Duration.2.String.Text
 #, fuzzy
@@ -2285,12 +2013,12 @@ msgstr "বাৰংবাৰতাটো"
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Duration.12.String.Text
 #, fuzzy
 msgid  "Basis"
-msgstr "আধাৰ e ৰ কাৰণে ঘাতটো গণনা কৰে । "
+msgstr "আধাৰ"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Duration.13.String.Text
 #, fuzzy
 msgid  "The basis"
-msgstr "আধাৰ"
+msgstr "ৰূপান্তৰ কৰিবলগীয়া মূল্যটো ।"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Effect.1.String.Text
 #, fuzzy
@@ -2318,8 +2046,9 @@ msgid  "The periods"
 msgstr "কালবোৰ"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Cumprinc.1.String.Text
+#, fuzzy
 msgid  "Returns the cumulative principal on a loan to be paid between two periods"
-msgstr ""
+msgstr "দুটা কালৰ মাজত মু্খ্য সঞ্চয়ীৰ ওপৰত  পৰিশোধ কৰিবলগীয়া ঋণ ঘূৰাই পথায়"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Cumprinc.2.String.Text
 #, fuzzy
@@ -2447,8 +2176,9 @@ msgid  "The type of maturity"
 msgstr "ম্যাদপূৰ্ণতাৰ প্ৰকাৰটো"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Price.1.String.Text
+#, fuzzy
 msgid  "Returns the price per 100 currency units face value of a security that pays periodic interest"
-msgstr ""
+msgstr "চক্ৰীয় সুত পৰিশোধ কৰা এটা বন্ধকীৰ প্ৰতি 100 মুদ্ৰা এককৰ সাধাৰণ মূল্যৰ দাম ঘূৰাই পথায়  "
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Price.2.String.Text
 #, fuzzy
@@ -2521,8 +2251,9 @@ msgid  "The basis"
 msgstr "আধাৰ"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Pricedisc.1.String.Text
+#, fuzzy
 msgid  "Returns the price per 100 currency units face value of a discounted security"
-msgstr ""
+msgstr "এটা ৰেহাই দিয়া বন্ধকীৰ প্ৰতি 100 মুদ্ৰা এককৰ সাধাৰণ মূল্যৰ দাম ঘূৰাই পথায়  "
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Pricedisc.2.String.Text
 #, fuzzy
@@ -2572,11 +2303,12 @@ msgstr "আধাৰ"
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Pricedisc.11.String.Text
 #, fuzzy
 msgid  "The basis"
-msgstr "আধাৰ"
+msgstr "ৰূপান্তৰ কৰিবলগীয়া মূল্যটো ।"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Pricemat.1.String.Text
+#, fuzzy
 msgid  "Returns the price per 100 currency units face value of a security that pays interest at maturity"
-msgstr ""
+msgstr "ম্যাদপূৰ্ণতাত সুত পৰিশোধ কৰা এটা বন্ধকীৰ প্ৰতি 100 মুদ্ৰা এককৰ সাধাৰণ মূল্যৰ দাম ঘূৰাই পথায়  "
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Pricemat.2.String.Text
 #, fuzzy
@@ -2639,8 +2371,9 @@ msgid  "The basis"
 msgstr "ৰূপান্তৰ কৰিবলগীয়া মূল্যটো ।"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Mduration.1.String.Text
+#, fuzzy
 msgid  "Returns the Macaulay modified duration for a security with an assumed par value of 100 currency units"
-msgstr ""
+msgstr "মেক্যুলেৰ (Macaulay) ৰূপান্তৰিত কাৰ্যকালৰ বন্ধকীৰ কাৰণে প্ৰতি আনুমানিক  মূল্যৰ 100 মুদ্ৰা এককৰ সৈতে ঘূৰাই পথায়"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Mduration.2.String.Text
 #, fuzzy
@@ -2728,8 +2461,9 @@ msgid  "The periods"
 msgstr "কালবোৰ"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Dollarfr.1.String.Text
+#, fuzzy
 msgid  "Converts a price expressed as a decimal into a price expressed as a fraction"
-msgstr ""
+msgstr "দশমিক হিচাপে প্ৰকাশিত এটা দামক ভগ্নাংশ হিচাপে প্ৰকাশিত দামলৈ সলনি কৰে "
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Dollarfr.2.String.Text
 #, fuzzy
@@ -2752,8 +2486,9 @@ msgid  "The divisor"
 msgstr "ভাজক"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Dollarde.1.String.Text
+#, fuzzy
 msgid  "Converts a price expressed as a fraction into a price expressed as a decimal"
-msgstr ""
+msgstr "ভগ্নাংশ হিচাপে প্ৰকাশিত এটা দামক দশমিক হিচাপে প্ৰকাশিত দামলৈ সলনি কৰে "
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Dollarde.2.String.Text
 #, fuzzy
@@ -2843,12 +2578,12 @@ msgstr "বাৰংবাৰতাটো"
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Yield.14.String.Text
 #, fuzzy
 msgid  "Basis"
-msgstr "আধাৰ"
+msgstr "আধাৰ e ৰ কাৰণে ঘাতটো গণনা কৰে । "
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Yield.15.String.Text
 #, fuzzy
 msgid  "The basis"
-msgstr "ৰূপান্তৰ কৰিবলগীয়া মূল্যটো ।"
+msgstr "আধাৰ"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Yielddisc.1.String.Text
 #, fuzzy
@@ -2898,12 +2633,12 @@ msgstr "বৰ্তমান মূল্যটো"
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Yielddisc.10.String.Text
 #, fuzzy
 msgid  "Basis"
-msgstr "আধাৰ"
+msgstr "আধাৰ e ৰ কাৰণে ঘাতটো গণনা কৰে । "
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Yielddisc.11.String.Text
 #, fuzzy
 msgid  "The basis"
-msgstr "ৰূপান্তৰ কৰিবলগীয়া মূল্যটো ।"
+msgstr "আধাৰ"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Yieldmat.1.String.Text
 #, fuzzy
@@ -2963,12 +2698,12 @@ msgstr "দামটো"
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Yieldmat.12.String.Text
 #, fuzzy
 msgid  "Basis"
-msgstr "আধাৰ"
+msgstr "আধাৰ e ৰ কাৰণে ঘাতটো গণনা কৰে । "
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Yieldmat.13.String.Text
 #, fuzzy
 msgid  "The basis"
-msgstr "আধাৰ"
+msgstr "ৰূপান্তৰ কৰিবলগীয়া মূল্যটো ।"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Tbilleq.1.String.Text
 #, fuzzy
@@ -3076,8 +2811,9 @@ msgid  "The price"
 msgstr "দামটো"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Oddfprice.1.String.Text
+#, fuzzy
 msgid  "Returns the price per $100 face value of a security with an odd first period"
-msgstr ""
+msgstr "অনিৰ্দিষ্ট প্ৰথম কালৰ সৈতে প্ৰতি $100 বন্ধকীৰ সাধাৰণ মূল্যৰ দাম ঘূৰাই পথায় "
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Oddfprice.2.String.Text
 #, fuzzy
@@ -3167,7 +2903,7 @@ msgstr "আধাৰ"
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Oddfprice.19.String.Text
 #, fuzzy
 msgid  "The basis"
-msgstr "আধাৰ"
+msgstr "ৰূপান্তৰ কৰিবলগীয়া মূল্যটো ।"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Oddfyield.1.String.Text
 #, fuzzy
@@ -3262,11 +2998,12 @@ msgstr "আধাৰ e ৰ কাৰণে ঘাতটো গণনা কৰ�
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Oddfyield.19.String.Text
 #, fuzzy
 msgid  "The basis"
-msgstr "আধাৰ"
+msgstr "ৰূপান্তৰ কৰিবলগীয়া মূল্যটো ।"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Oddlprice.1.String.Text
+#, fuzzy
 msgid  "Returns the price per $100 face value of a security with an odd last period"
-msgstr ""
+msgstr "অনিৰ্দিষ্ট অন্তিম কালৰ সৈতে প্ৰতি $100 বন্ধকীৰ সাধাৰণ মূল্যৰ দাম ঘূৰাই পথায় "
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Oddlprice.2.String.Text
 #, fuzzy
@@ -3346,7 +3083,7 @@ msgstr "আধাৰ"
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Oddlprice.17.String.Text
 #, fuzzy
 msgid  "The basis"
-msgstr "আধাৰ"
+msgstr "ৰূপান্তৰ কৰিবলগীয়া মূল্যটো ।"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Oddlyield.1.String.Text
 #, fuzzy
@@ -3434,8 +3171,9 @@ msgid  "The basis"
 msgstr "ৰূপান্তৰ কৰিবলগীয়া মূল্যটো ।"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Xirr.1.String.Text
+#, fuzzy
 msgid  "Returns the internal rate of return for a non-periodic schedule of payments"
-msgstr ""
+msgstr "পৰিশোধৰ অসাময়িক অনুসূচীৰ কাৰণে প্ৰত্যাৱৰ্তন কৰা আভ্যন্তৰীণ দৰটো ঘূৰাই পথায়"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Xirr.2.String.Text
 #, fuzzy
@@ -3603,8 +3341,9 @@ msgid  "The basis"
 msgstr "ৰূপান্তৰ কৰিবলগীয়া মূল্যটো ।"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Coupdays.1.String.Text
+#, fuzzy
 msgid  "Returns the number of days in the coupon period containing the settlement date"
-msgstr ""
+msgstr "নিষ্পত্তি কৰা তাৰিখটোৰ অন্তৰ্ভূক্ত কুপন কালৰ দিনবোৰৰ সংখ্যা  ঘূৰাই পথায়"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Coupdays.2.String.Text
 #, fuzzy
@@ -3647,8 +3386,9 @@ msgid  "The basis"
 msgstr "ৰূপান্তৰ কৰিবলগীয়া মূল্যটো ।"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Coupdaysnc.1.String.Text
+#, fuzzy
 msgid  "Returns the number of days from the settlement date to the next coupon date"
-msgstr ""
+msgstr "নিষ্পত্তিটো কৰা তাৰিখটোৰ পৰা পৰৱৰ্তী কুপন তাৰিখলৈকে দিনবোৰৰ সংখ্যাটো ঘূৰাই পথায়"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Coupdaysnc.2.String.Text
 #, fuzzy
@@ -3691,8 +3431,9 @@ msgid  "The basis"
 msgstr "আধাৰ"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Coupdaybs.1.String.Text
+#, fuzzy
 msgid  "Returns the number of days from the beginning of the coupon period to the settlement date"
-msgstr ""
+msgstr "কুপন কালৰ আৰম্ভণিৰ পৰা নিষ্পত্তি তাৰিখটোলৈ দিনবোৰৰ সংখ্যা ঘূৰাই পথায়"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Coupdaybs.2.String.Text
 #, fuzzy
@@ -3780,8 +3521,9 @@ msgid  "The basis"
 msgstr "আধাৰ"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Coupnum.1.String.Text
+#, fuzzy
 msgid  "Returns the number of coupons payable between the settlement and maturity dates"
-msgstr ""
+msgstr "নিষ্পত্তিকৰণ আৰু ম্যাদপূৰ্ণতাৰ মাজত দিবলগীয়া কুপনৰ সংখ্যাটো ঘূৰাই পথায়"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Coupnum.2.String.Text
 #, fuzzy
@@ -3824,8 +3566,9 @@ msgid  "The basis"
 msgstr "আধাৰ"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Fvschedule.1.String.Text
+#, fuzzy
 msgid  "Returns the future value of the initial principal after a series of compound interest rates are applied"
-msgstr ""
+msgstr "প্ৰথম চক্ৰবৃদ্ধি সুতৰ দৰৰ শৃংখলা এটা প্ৰয়োগ কৰাৰ পাছত প্ৰথম মুখ্যৰ ভৱিষ্যত মূল্য ঘূৰাই পথায়"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Fvschedule.2.String.Text
 #, fuzzy
@@ -3848,214 +3591,177 @@ msgid  "The schedule"
 msgstr "অনুসূচীখন"
 
 #: source/datefunc/datefunc.src#RID_DATE_FUNCTION_DESCRIPTIONS.DATE_FUNCDESC_DiffWeeks.1.String.Text
-#, fuzzy
 msgid  "Calculates the number of weeks in a specific period"
 msgstr "এটা নিৰ্দিষ্ট কালত সপ্তাহবোৰৰ সংখ্যাটো গণনা কৰে"
 
 #: source/datefunc/datefunc.src#RID_DATE_FUNCTION_DESCRIPTIONS.DATE_FUNCDESC_DiffWeeks.2.String.Text
-#, fuzzy
 msgid  "Start date"
 msgstr "আৰম্ভণি তাৰিখ"
 
 #: source/datefunc/datefunc.src#RID_DATE_FUNCTION_DESCRIPTIONS.DATE_FUNCDESC_DiffWeeks.3.String.Text
-#, fuzzy
 msgid  "First day of the period"
 msgstr "কালটোৰ প্ৰথম দিন"
 
 #: source/datefunc/datefunc.src#RID_DATE_FUNCTION_DESCRIPTIONS.DATE_FUNCDESC_DiffWeeks.4.String.Text
-#, fuzzy
 msgid  "End date"
 msgstr "শেষ তাৰিখ"
 
 #: source/datefunc/datefunc.src#RID_DATE_FUNCTION_DESCRIPTIONS.DATE_FUNCDESC_DiffWeeks.5.String.Text
-#, fuzzy
 msgid  "Last day of the period"
 msgstr "কালটোৰ শেষ দিন"
 
 #: source/datefunc/datefunc.src#RID_DATE_FUNCTION_DESCRIPTIONS.DATE_FUNCDESC_DiffWeeks.6.String.Text
-#, fuzzy
 msgid  "Type"
 msgstr "প্ৰকাৰ"
 
 #: source/datefunc/datefunc.src#RID_DATE_FUNCTION_DESCRIPTIONS.DATE_FUNCDESC_DiffWeeks.7.String.Text
 msgid  "Type of calculation: Type=0 means the time interval, Type=1 means calendar weeks."
-msgstr ""
+msgstr "গণনাৰ প্ৰকাৰ: প্ৰকাৰ=0 মানে সময় অন্তৰাল, প্ৰকাৰ=1 মানে কেলেণ্ডাৰ সপ্তাহ."
 
 #: source/datefunc/datefunc.src#RID_DATE_FUNCTION_DESCRIPTIONS.DATE_FUNCDESC_DiffMonths.1.String.Text
-#, fuzzy
 msgid  "Determines the number of months in a specific period."
 msgstr "এটা নিৰ্দিষ্ট কালত মাহবোৰৰ সংখ্যাটো নিৰ্ণয় কৰে."
 
 #: source/datefunc/datefunc.src#RID_DATE_FUNCTION_DESCRIPTIONS.DATE_FUNCDESC_DiffMonths.2.String.Text
-#, fuzzy
 msgid  "Start date"
 msgstr "আৰম্ভণি তাৰিখ"
 
 #: source/datefunc/datefunc.src#RID_DATE_FUNCTION_DESCRIPTIONS.DATE_FUNCDESC_DiffMonths.3.String.Text
-#, fuzzy
 msgid  "First day of the period."
 msgstr "কালটোৰ প্ৰথম দিনটো"
 
 #: source/datefunc/datefunc.src#RID_DATE_FUNCTION_DESCRIPTIONS.DATE_FUNCDESC_DiffMonths.4.String.Text
-#, fuzzy
 msgid  "End date"
 msgstr "শেষ তাৰিখ"
 
 #: source/datefunc/datefunc.src#RID_DATE_FUNCTION_DESCRIPTIONS.DATE_FUNCDESC_DiffMonths.5.String.Text
-#, fuzzy
 msgid  "Last day of the period."
 msgstr "কালটোৰ শেষ দিন"
 
 #: source/datefunc/datefunc.src#RID_DATE_FUNCTION_DESCRIPTIONS.DATE_FUNCDESC_DiffMonths.6.String.Text
-#, fuzzy
 msgid  "Type"
 msgstr "প্ৰকাৰ"
 
 #: source/datefunc/datefunc.src#RID_DATE_FUNCTION_DESCRIPTIONS.DATE_FUNCDESC_DiffMonths.7.String.Text
 msgid  "Type of calculation: Type=0 means the time interval, Type=1 means calendar months."
-msgstr ""
+msgstr "গণনাৰ প্ৰকাৰ: প্ৰকাৰ=0 মানে সময় অন্তৰাল, প্ৰকাৰ=1 মানে কেলেণ্ডাৰ মাহবোৰ."
 
 #: source/datefunc/datefunc.src#RID_DATE_FUNCTION_DESCRIPTIONS.DATE_FUNCDESC_DiffYears.1.String.Text
-#, fuzzy
 msgid  "Calculates the number of years in a specific period."
 msgstr "এটা নিৰ্দিষ্ট কালত বছৰবোৰৰ সংখ্যাটো গণনা কৰে."
 
 #: source/datefunc/datefunc.src#RID_DATE_FUNCTION_DESCRIPTIONS.DATE_FUNCDESC_DiffYears.2.String.Text
-#, fuzzy
 msgid  "Start date"
 msgstr "আৰম্ভণি তাৰিখ"
 
 #: source/datefunc/datefunc.src#RID_DATE_FUNCTION_DESCRIPTIONS.DATE_FUNCDESC_DiffYears.3.String.Text
-#, fuzzy
 msgid  "First day of the period"
 msgstr "কালটোৰ প্ৰথম দিন"
 
 #: source/datefunc/datefunc.src#RID_DATE_FUNCTION_DESCRIPTIONS.DATE_FUNCDESC_DiffYears.4.String.Text
-#, fuzzy
 msgid  "End date"
 msgstr "শেষ তাৰিখ"
 
 #: source/datefunc/datefunc.src#RID_DATE_FUNCTION_DESCRIPTIONS.DATE_FUNCDESC_DiffYears.5.String.Text
-#, fuzzy
 msgid  "Last day of the period"
 msgstr "কালটোৰ শেষ দিন"
 
 #: source/datefunc/datefunc.src#RID_DATE_FUNCTION_DESCRIPTIONS.DATE_FUNCDESC_DiffYears.6.String.Text
-#, fuzzy
 msgid  "Type"
 msgstr "প্ৰকাৰ"
 
 #: source/datefunc/datefunc.src#RID_DATE_FUNCTION_DESCRIPTIONS.DATE_FUNCDESC_DiffYears.7.String.Text
 msgid  "Type of calculation: Type=0 means the time interval, Type=1 means calendar years."
-msgstr ""
+msgstr "গণনাৰ প্ৰকাৰ: প্ৰকাৰ=0 মানে সময় অন্তৰাল, প্ৰকাৰ=1 মানে কেলেণ্ডাৰ সপ্তাহ."
 
 #: source/datefunc/datefunc.src#RID_DATE_FUNCTION_DESCRIPTIONS.DATE_FUNCDESC_IsLeapYear.1.String.Text
 msgid  "Returns 1 (TRUE) if the date is a day of a leap year, otherwise 0 (FALSE)."
-msgstr ""
+msgstr "যদি তাৰিখটো এটা লিপ্ ইয়েৰৰ দিন হয়, তেন্তে 1 (TRUE)টো ঘূৰাই পথায়, অন্যথা 0 (FALSE)টো ঘূৰাই পথায়."
 
 #: source/datefunc/datefunc.src#RID_DATE_FUNCTION_DESCRIPTIONS.DATE_FUNCDESC_IsLeapYear.2.String.Text
-#, fuzzy
 msgid  "Date"
 msgstr "তাৰিখ"
 
 #: source/datefunc/datefunc.src#RID_DATE_FUNCTION_DESCRIPTIONS.DATE_FUNCDESC_IsLeapYear.3.String.Text
-#, fuzzy
 msgid  "Any day in the desired year"
 msgstr "আশা কৰা মাহটোত যিকোনো দিন"
 
 #: source/datefunc/datefunc.src#RID_DATE_FUNCTION_DESCRIPTIONS.DATE_FUNCDESC_DaysInMonth.1.String.Text
 msgid  "Returns the number of days of the month in which the date entered occurs"
-msgstr ""
+msgstr "লিখিত তাৰিখবোৰ ওলোৱা মাহটোৰ দিনবোৰৰ সংখ্যাটো ঘূৰাই পথায় "
 
 #: source/datefunc/datefunc.src#RID_DATE_FUNCTION_DESCRIPTIONS.DATE_FUNCDESC_DaysInMonth.2.String.Text
-#, fuzzy
 msgid  "Date"
 msgstr "তাৰিখ"
 
 #: source/datefunc/datefunc.src#RID_DATE_FUNCTION_DESCRIPTIONS.DATE_FUNCDESC_DaysInMonth.3.String.Text
-#, fuzzy
 msgid  "Any day in the desired month"
 msgstr "আশা কৰা মাহটোত যিকোনো দিন"
 
 #: source/datefunc/datefunc.src#RID_DATE_FUNCTION_DESCRIPTIONS.DATE_FUNCDESC_DaysInYear.1.String.Text
 msgid  "Returns the number of days of the year in which the date entered occurs."
-msgstr ""
+msgstr "লিখিত তাৰিখবোৰ ওলোৱা বছৰটোৰ দিনবোৰৰ সংখ্যাটো ঘূৰাই পথায়. "
 
 #: source/datefunc/datefunc.src#RID_DATE_FUNCTION_DESCRIPTIONS.DATE_FUNCDESC_DaysInYear.2.String.Text
-#, fuzzy
 msgid  "Date"
 msgstr "তাৰিখ"
 
 #: source/datefunc/datefunc.src#RID_DATE_FUNCTION_DESCRIPTIONS.DATE_FUNCDESC_DaysInYear.3.String.Text
-#, fuzzy
 msgid  "Any day in the desired year"
 msgstr "আশা কৰা মাহটোত যিকোনো দিন"
 
 #: source/datefunc/datefunc.src#RID_DATE_FUNCTION_DESCRIPTIONS.DATE_FUNCDESC_WeeksInYear.1.String.Text
 msgid  "Returns the number of weeks of the year in which the date entered occurs"
-msgstr ""
+msgstr "লিখিত তাৰিখবোৰ ওলোৱা বছৰটোৰ সপ্তাহবোৰৰ সংখ্যাটো ঘূৰাই পথায় "
 
 #: source/datefunc/datefunc.src#RID_DATE_FUNCTION_DESCRIPTIONS.DATE_FUNCDESC_WeeksInYear.2.String.Text
-#, fuzzy
 msgid  "Date"
 msgstr "তাৰিখ"
 
 #: source/datefunc/datefunc.src#RID_DATE_FUNCTION_DESCRIPTIONS.DATE_FUNCDESC_WeeksInYear.3.String.Text
-#, fuzzy
 msgid  "Any day in the desired year"
 msgstr "আশা কৰা মাহটোত যিকোনো দিন"
 
 #: source/datefunc/datefunc.src#RID_DATE_FUNCTION_DESCRIPTIONS.DATE_FUNCDESC_Rot13.1.String.Text
-#, fuzzy
 msgid  "Encrypts or decrypts a text using the ROT13 algorithm"
 msgstr "এখন টেক্সট ROT13 এলগ'ৰিথম ব্যৱহাৰ কৰি এনক্ৰিপ্ট বা ডিক্ৰিপ্ট কৰে"
 
 #: source/datefunc/datefunc.src#RID_DATE_FUNCTION_DESCRIPTIONS.DATE_FUNCDESC_Rot13.2.String.Text
-#, fuzzy
 msgid  "Text"
 msgstr "টেক্সট"
 
 #: source/datefunc/datefunc.src#RID_DATE_FUNCTION_DESCRIPTIONS.DATE_FUNCDESC_Rot13.3.String.Text
-#, fuzzy
 msgid  "Text to be encrypted or text already encrypted"
 msgstr "এনক্ৰিপ্ট কৰিবলগীয়া টেক্সট বা ইতিমধ্যে এনক্ৰিপ্ট কৰা টেক্সট "
 
 #: source/datefunc/datefunc.src#RID_DATE_FUNCTION_NAMES.DATE_FUNCNAME_DiffWeeks.String.Text
-#, fuzzy
 msgid  "WEEKS"
 msgstr "WEEKS"
 
 #: source/datefunc/datefunc.src#RID_DATE_FUNCTION_NAMES.DATE_FUNCNAME_DiffMonths.String.Text
-#, fuzzy
 msgid  "MONTHS"
 msgstr "MONTHS"
 
 #: source/datefunc/datefunc.src#RID_DATE_FUNCTION_NAMES.DATE_FUNCNAME_DiffYears.String.Text
-#, fuzzy
 msgid  "YEARS"
 msgstr "YEARS"
 
 #: source/datefunc/datefunc.src#RID_DATE_FUNCTION_NAMES.DATE_FUNCNAME_IsLeapYear.String.Text
-#, fuzzy
 msgid  "ISLEAPYEAR"
 msgstr "ISLEAPYEAR"
 
 #: source/datefunc/datefunc.src#RID_DATE_FUNCTION_NAMES.DATE_FUNCNAME_DaysInMonth.String.Text
-#, fuzzy
 msgid  "DAYSINMONTH"
 msgstr "DAYSINMONTH"
 
 #: source/datefunc/datefunc.src#RID_DATE_FUNCTION_NAMES.DATE_FUNCNAME_DaysInYear.String.Text
-#, fuzzy
 msgid  "DAYSINYEAR"
 msgstr "DAYSINYEAR"
 
 #: source/datefunc/datefunc.src#RID_DATE_FUNCTION_NAMES.DATE_FUNCNAME_WeeksInYear.String.Text
-#, fuzzy
 msgid  "WEEKSINYEAR"
 msgstr "WEEKSINYEAR"
 
 #: source/datefunc/datefunc.src#RID_DATE_FUNCTION_NAMES.DATE_FUNCNAME_Rot13.String.Text
-#, fuzzy
 msgid  "ROT13"
 msgstr "ROT13"

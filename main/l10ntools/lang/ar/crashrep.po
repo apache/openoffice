@@ -45,7 +45,7 @@ msgstr ""
 
 #: source/all/crashrep.ulf#%WELCOME_BODY2%
 msgid  "It's easy - just send the report without any further effort on your part by clicking 'Send' in the next dialog, or you can briefly describe how the error occurred and then click 'Send'. If you want to see the report, click the 'Show Report' button. No data will be sent if you click 'Do Not Send'.\n\n"
-msgstr ""
+msgstr "لقد أصبح الأمر سهلاً؛ فما عليك سوى إرسال التقرير دون عناء بالنقر فوق الزر \"إرسال\" في مربع الحوار التالي، أو يمكنك باختصار وصف كيفية حدوث الخطأ، ثم النقر فوق \"إرسال\". وإذا أردت مراجعة التقرير، فانقر فوق الزر \"إظهار التقرير\". لن يتم إرسال أية بيانات إذا قمت بالنقر فوق \"عدم الإرسال\".\n\n"
 
 #: source/all/crashrep.ulf#%WELCOME_BODY3%
 msgid  "Customer Privacy\nThe information gathered is limited to data concerning the state of %PRODUCTNAME% %PRODUCTVERSION% when the error occurred. Other information about passwords or document contents is not collected.\n\nThe information will only be used to improve the quality of %PRODUCTNAME% and will not be shared with third parties.\nFor more information on Apache OpenOffice's privacy policy, visit\n"
@@ -81,7 +81,7 @@ msgstr ""
 
 #: source/all/crashrep.ulf#%ENTER_TITLE%
 msgid  "Which type of document (e.g. presentation) were you using when the error occurred?"
-msgstr ""
+msgstr "أي نوع من المستندات (على سبيل المثال العروض التقديمية) كنت تستخدمها عندما حدث الخطأ؟"
 
 #: source/all/crashrep.ulf#%ALLOW_CONTACT%
 msgid  "~I allow Apache OpenOffice to contact me regarding this report."
@@ -121,23 +121,23 @@ msgstr "حفظ التقرير إلى"
 
 #: source/all/crashrep.ulf#%ERROR_MSG_SIMPLE_MAPI%
 msgid  "The error report could not be sent because the default e-mail program does not support MAPI.\n Please use a MAPI-compatible e-mail program."
-msgstr ""
+msgstr "تعذر إرسال تقرير الأخطاء لأن برنامج البريد الإلكتروني الافتراضي لا يدعم MAPI.\nالرجاء استخدام برنامج بريد إلكتروني متوافق مع MAPI."
 
 #: source/all/crashrep.ulf#%ERROR_MSG_DISK_FULL%
 msgid  "The error report could not be temporarily saved and could therefore not be sent."
-msgstr ""
+msgstr "تعذر حفظ تقرير الأخطاء مؤقتًا وبالتالي يتعذر إرساله."
 
 #: source/all/crashrep.ulf#%ERROR_MSG_SENDMAIL%
 msgid  "The error report could not be sent because 'sendmail' could not be started.\nPlease check the 'sendmail' settings."
-msgstr ""
+msgstr "تعذر إرسال تقرير الأخطاء بسبب تعذر بدء تشغيل 'sendmail'.\nالرجاء التحقق من إعدادات 'sendmail'."
 
 #: source/all/crashrep.ulf#%ERROR_MSG_PROXY%
 msgid  "The error report could not be sent. Please check the proxy settings under 'Options' in the Error Report Tool."
-msgstr ""
+msgstr "تعذر إرسال تقرير الأخطاء. الرجاء التأكد من إعدادات الوكيل ضمن \"خيارات\" في أداة تقرير الأخطاء."
 
 #: source/all/crashrep.ulf#%ERROR_MSG_NOCONNECT%
 msgid  "The error report could not be sent because there is no Internet connection. Please check your Internet settings."
-msgstr ""
+msgstr "تعذر إرسال تقرير الأخطاء نظرًا لعدم وجود اتصال بالإنترنت. الرجاء التحقق من إعدادات الإنترنت."
 
 #: source/all/crashrep.ulf#%OPTIONS_BUTTON%
 msgid  "~Options..."
@@ -173,7 +173,7 @@ msgstr "ال~منفذ"
 
 #: source/all/crashrep.ulf#%PROXY_SETTINGS_DESCRIPTION%
 msgid  "The %PRODUCTNAME% Error Report tool needs to be connected to the Internet to be able to send error reports.\n\nCompanies often use proxy servers in conjunction with a firewall to protect the network.\n\nIf this applies to your situation, you have to specify the address and port for the server."
-msgstr ""
+msgstr "يجب اتصال أداة تقرير أخطاء %PRODUCTNAME% بالإنترنت حتى تتمكن من إرسال تقارير الأخطاء.\n\nتستخدم الشركات عادة خوادم الوكيل بالإضافة إلى جدار حماية لحماية الشبكة.\n\nإذا كان هذا هو الوضع الحالي بالنسبة لك، فيلزم تحديد عنوان ومنفذ الخادم."
 
 #: source/all/crashrep.ulf#%SENDING_REPORT_HEADER%
 msgid  "Sending Error Report"
@@ -205,4 +205,4 @@ msgstr "تعيين معرف عملية %PRODUCTNAME% (PID) إلى أداة تق�
 
 #: source/all/crashrep.ulf#%MSG_PARAM_HELP_DESCRIPTION%
 msgid  "Shows this help text.\nDetailed information can be found in the Setup Guide."
-msgstr ""
+msgstr "إظهار نص التعليمات هذا.\nيمكن الحصول على المعلومات التفصيلية في دليل الإعداد."

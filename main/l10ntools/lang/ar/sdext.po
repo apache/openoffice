@@ -153,11 +153,11 @@ msgstr "~لكائنات OLE التي لم تبنى على هيئة OpenDocument"
 
 #: source/minimizer/registry/data/org/openoffice/Office/extension/SunPresentationMinimizer.xcu#.SunPresentationMinimizer.Strings.STR_OLE_OBJECTS_DESC
 msgid  "Object Linking and Embedding (OLE) is a technology that allows embedding and linking to documents and other objects. The current presentation contains OLE objects."
-msgstr ""
+msgstr "ربط الكائنات وتضمينها (OLE) هي تقنية تسمح بتضمين وربط المستندات وكائنات أخرى. المستند الحالي يحوي كائنات OLE"
 
 #: source/minimizer/registry/data/org/openoffice/Office/extension/SunPresentationMinimizer.xcu#.SunPresentationMinimizer.Strings.STR_NO_OLE_OBJECTS_DESC
 msgid  "Object Linking and Embedding (OLE) is a technology that allows embedding and linking to documents and other objects. The current presentation contains no OLE objects."
-msgstr ""
+msgstr "ربط الكائنات وتضمينها (OLE) هي تقنية تسمح بتضمين وربط المستندات وكائنات أخرى. المستند الحالي لا يحوي كائنات OLE"
 
 #: source/minimizer/registry/data/org/openoffice/Office/extension/SunPresentationMinimizer.xcu#.SunPresentationMinimizer.Strings.STR_SLIDES
 msgid  "Slides"
@@ -225,7 +225,7 @@ msgstr "حذف %SLIDES شريحة "
 
 #: source/minimizer/registry/data/org/openoffice/Office/extension/SunPresentationMinimizer.xcu#.SunPresentationMinimizer.Strings.STR_OPTIMIZE_IMAGES
 msgid  "Optimize %IMAGES graphics to %QUALITY% JPEG quality at %RESOLUTION DPI."
-msgstr ""
+msgstr "حسن %IMAGES رسومية إلى %QUALITY% جودة JPEG لدقة %RESOLUTION نقطة لكل بوصة "
 
 #: source/minimizer/registry/data/org/openoffice/Office/extension/SunPresentationMinimizer.xcu#.SunPresentationMinimizer.Strings.STR_CREATE_REPLACEMENT
 msgid  "Create replacement graphics for %OLE objects."
@@ -253,7 +253,7 @@ msgstr "الجلسة الافتراضية"
 
 #: source/minimizer/registry/data/org/openoffice/Office/extension/SunPresentationMinimizer.xcu#.SunPresentationMinimizer.Strings.STR_MODIFY_WARNING
 msgid  "The optimization will modify the current document. Do you want to continue?"
-msgstr ""
+msgstr "التحسين سيحرر المستند الحالي. هل ترغب في الاستمرار؟"
 
 #: source/minimizer/registry/data/org/openoffice/Office/extension/SunPresentationMinimizer.xcu#.SunPresentationMinimizer.Strings.STR_YES
 msgid  "~Yes"
@@ -345,7 +345,7 @@ msgstr "الشريحة التالية أو التأثير التالي"
 
 #: source/presenter/help/en-US/com.sun.PresenterScreen/presenter.xhp#par_id0921200901104120
 msgid  "Left click, right arrow, down arrow, spacebar, page down, enter, return, 'N'"
-msgstr ""
+msgstr "النقر بزر الماوس الأيسر، سهم لليمين، سهم لأسفل، مفتاح المسافة، مفتاح Page Down، مفتاح Enter، الرجوع، 'N'"
 
 #: source/presenter/help/en-US/com.sun.PresenterScreen/presenter.xhp#par_id0921200901104165
 msgid  "Previous slide, or previous effect"
@@ -353,7 +353,7 @@ msgstr "الشريحة السابقة أو التأثير السابق"
 
 #: source/presenter/help/en-US/com.sun.PresenterScreen/presenter.xhp#par_id0921200901104115
 msgid  "Right click, left arrow, up arrow, page up, backspace, 'P'"
-msgstr ""
+msgstr "النقر بزر الماوس الأيمن، سهم لليسار، سهم لأعلى، المفتاح Page Up، المفتاح Backspace، 'P'"
 
 #: source/presenter/help/en-US/com.sun.PresenterScreen/presenter.xhp#par_id0921200901104164
 msgid  "First slide"
@@ -505,7 +505,7 @@ msgstr "إغلاق"
 
 #: source/presenter/registry/data/org/openoffice/Office/extension/PresenterScreen.xcu#..PresenterScreen.PresenterScreenSettings.HelpView.HelpStrings.a.Left
 msgid  "Left click, right or down arrow, spacebar, page down, enter, return, 'N'"
-msgstr ""
+msgstr "النقر بزر الماوس الأيسر، سهم لليمين أو لأسفل، مفتاح المسافة، page down، enter، الإدخال، \"N\""
 
 #: source/presenter/registry/data/org/openoffice/Office/extension/PresenterScreen.xcu#..PresenterScreen.PresenterScreenSettings.HelpView.HelpStrings.a.Right
 msgid  "Next slide, or next effect"
@@ -693,7 +693,7 @@ msgstr "الشريحة الحالية (%CURRENT_SLIDE_NUMBER% of %SLIDE_COUNT%)"
 
 #: source/presenter/registry/data/org/openoffice/Office/extension/PresenterScreen.xcu#..PresenterScreen.Presenter.Views.CurrentSlidePreview.AccessibleTitle
 msgid  "Current Slide, %CURRENT_SLIDE_NAME%, %CURRENT_SLIDE_NUMBER% of %SLIDE_COUNT%"
-msgstr ""
+msgstr "الشريحة الحالية, %CURRENT_SLIDE_NAME%, %CURRENT_SLIDE_NUMBER% من %SLIDE_COUNT%"
 
 #: source/presenter/registry/data/org/openoffice/Office/extension/PresenterScreen.xcu#..PresenterScreen.Presenter.Views.CurrentSlidePreview.Strings.ClickToExitPresentationText.String
 msgid  "Click to exit presentation..."
@@ -713,7 +713,7 @@ msgstr "ملاحظات"
 
 #: source/presenter/registry/data/org/openoffice/Office/extension/PresenterScreen.xcu#..PresenterScreen.Presenter.Views.SlideSorter.AccessibleTitle
 msgid  "Slide Overview, %CURRENT_SLIDE_NAME%, %CURRENT_SLIDE_NUMBER% of %SLIDE_COUNT%"
-msgstr ""
+msgstr "نظرة عامة على الشريحة, %CURRENT_SLIDE_NAME%, %CURRENT_SLIDE_NUMBER% من %SLIDE_COUNT%"
 
 #: source/presenter/registry/data/org/openoffice/Office/extension/PresenterScreen.xcu#..PresenterScreen.Presenter.Views.HelpView.Title
 msgid  "Help"

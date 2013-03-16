@@ -97,7 +97,7 @@ msgstr "Documentu yá abiertu."
 
 #: source/appl/app.src#MSG_ERR_NO_WEBBROWSER_FOUND.ErrorBox.Message
 msgid  "%PRODUCTNAME could not find a web browser on your system. Please check your Desktop Preferences or install a web browser (for example, Mozilla) in the default  location requested during the browser installation."
-msgstr ""
+msgstr "%PRODUCTNAME nun pudo atopar dengún restolador web nel sistema. Por favor comprueba les tos preferencies d'escritoriu o instala un restolador web (por exemplu Mozilla) nel allugamientu predetermináu solicitáu na instalación del restolador."
 
 #: source/appl/app.src#GID_INTERN.String.Text
 msgid  "Internal"
@@ -205,7 +205,7 @@ msgstr "Controles"
 
 #: source/appl/app.src#MSG_CANT_QUIT.InfoBox.Message
 msgid  "The application cannot be terminated at the moment.\nPlease wait until all print jobs and/or\nOLE actions have finished and close all dialogs."
-msgstr ""
+msgstr "L'aplicación nun pue zarrase nesti momentu.\nPor favor espera a qu'acaben toles\nimpresiones y/o aiciones OLE, y zarra tolos diálogos."
 
 #: source/appl/app.src#STR_ISMODIFIED.String.Text
 msgid  "Do you want to save the changes to %1?"
@@ -237,7 +237,7 @@ msgstr "Barra de funciones"
 
 #: source/appl/app.src#RID_SPECIALCONFIG_ERROR.String.Text
 msgid  "An error has occurred in the special configuration.\nPlease contact your administrator."
-msgstr ""
+msgstr "Asocedió un fallu na configuración especial.\nPor favor contauta col to alministrador."
 
 #: source/appl/app.src#STR_QUICKSTART_EXIT.String.Text
 msgid  "Exit Quickstarter"
@@ -288,12 +288,12 @@ msgid  "DDE link to % for % area % are not available."
 msgstr "El vínculu DDE a % pa l'área % % nun ta disponible."
 
 #: source/appl/app.src#RID_SECURITY_WARNING_HYPERLINK.WarningBox.Message
-msgid  "This hyperlink is going to open "%s". Do you want to proceed?"
-msgstr ""
+msgid  "This hyperlink is going to open \"%s\". Do you want to proceed?"
+msgstr "Va abrise l'hipernellaz \"%s\". ¿Quies continuar?"
 
 #: source/appl/app.src#RID_SECURITY_WARNING_NO_HYPERLINKS.WarningBox.Message
 msgid  "For security reasons, the hyperlink cannot be executed.\nThe stated address will not be opened."
-msgstr ""
+msgstr "Por razones de seguridá l'hiperenllaz nun se pue executar.\nLa direición indicada nun va abrise."
 
 #: source/appl/app.src#RID_SECURITY_WARNING_TITLE.String.Text
 msgid  "Security Warning"
@@ -301,15 +301,15 @@ msgstr "Avisu de seguridá"
 
 #: source/appl/app.src#RID_XMLSEC_QUERY_LOSINGSIGNATURE.QueryBox.Message
 msgid  "Saving will remove all existing signatures.\nDo you want to continue saving the document?"
-msgstr ""
+msgstr "Al guardar van eliminase toles robles esistentes.\n¿Quies continuar y guardar el documentu?"
 
 #: source/appl/app.src#RID_XMLSEC_QUERY_SAVEBEFORESIGN.QueryBox.Message
 msgid  "The document has to be saved before it can be signed.\nDo you want to save the document?"
-msgstr ""
+msgstr "El documentu ha guardase enantes de poder roblase.\n¿Quies guardar el documentu?"
 
 #: source/appl/app.src#RID_XMLSEC_INFO_WRONGDOCFORMAT.InfoBox.Message
 msgid  "This document must be saved in OpenDocument file format before it can be digitally signed."
-msgstr ""
+msgstr "Esti documentu ha guardase col formatu de ficheru OpenDocument enantes de poder roblase dixitalmente."
 
 #: source/appl/app.src#RID_XMLSEC_DOCUMENTSIGNED.String.Text
 msgid  " (Signed)"
@@ -341,7 +341,7 @@ msgstr "Enllaz a gráfica"
 
 #: source/appl/app.src#STR_ERRUNOEVENTBINDUNG.String.Text
 msgid  "An appropriate component method %1\ncould not be found.\n\nCheck spelling of method name."
-msgstr ""
+msgstr "Nun se pudo atopar un métodu de\ncomponente %1 apropiáu.\n\nComprueba la ortografía del nome del métodu."
 
 #: source/appl/app.src#RID_SVXSTR_GRFILTER_OPENERROR.String.Text
 msgid  "Graphics file cannot be opened"
@@ -509,11 +509,11 @@ msgstr "~Amosar l'ayuda de %PRODUCTNAME %MODULENAME al entamu"
 
 #: source/bastyp/fltfnc.src#STR_FILTER_NOT_INSTALLED.String.Text
 msgid  "The selected filter $(FILTER) has not been installed.\nWould you like to do this now?"
-msgstr ""
+msgstr "Nun s'instaló el filtru seleicionáu $(FILTER).\n¿Quies instalalu?"
 
 #: source/bastyp/fltfnc.src#STR_FILTER_CONSULT_SERVICE.String.Text
 msgid  "The selected filter $(FILTER) is not included in your edition.\nYou can find information about orders on our homepage."
-msgstr ""
+msgstr "El filtru esbilláu $(FILTER) nun ta incluyíu na to edición.\nNa nuesa páxina d'Internet alcontrarás les informaciones pa poder pidilos."
 
 #: source/dialog/printopt.src#TP_COMMONPRINTOPTIONS.GB_REDUCE.FixedLine.Text
 msgid  "Reduce print data"
@@ -572,6 +572,26 @@ msgid  "Reso~lution"
 msgstr "R~esolución"
 
 #: source/dialog/printopt.src#TP_COMMONPRINTOPTIONS.LB_REDUCEBITMAPS_RESOLUTION.0.StringList.item
+msgid  "72 DPI"
+msgstr "72 PPP"
+
+#: source/dialog/printopt.src#TP_COMMONPRINTOPTIONS.LB_REDUCEBITMAPS_RESOLUTION.0.StringList.item
+msgid  "96 DPI"
+msgstr "96 PPP"
+
+#: source/dialog/printopt.src#TP_COMMONPRINTOPTIONS.LB_REDUCEBITMAPS_RESOLUTION.0.StringList.item
+msgid  "150 DPI (Fax)"
+msgstr "150 PPP (Fax)"
+
+#: source/dialog/printopt.src#TP_COMMONPRINTOPTIONS.LB_REDUCEBITMAPS_RESOLUTION.0.StringList.item
+msgid  "200 DPI (default)"
+msgstr "200 PPP (predetermináu)"
+
+#: source/dialog/printopt.src#TP_COMMONPRINTOPTIONS.LB_REDUCEBITMAPS_RESOLUTION.0.StringList.item
+msgid  "300 DPI"
+msgstr "300 PPP"
+
+#: source/dialog/printopt.src#TP_COMMONPRINTOPTIONS.LB_REDUCEBITMAPS_RESOLUTION.0.StringList.item
 msgid  "600 DPI"
 msgstr "600 PPP"
 
@@ -605,7 +625,7 @@ msgstr "Avisu"
 
 #: source/dialog/printopt.src#RID_WARN_PRINTTRANSPARENCY.FT_PRINTTRANSWARN.FixedText.Text
 msgid  "Your document contains transparent objects.\nThis may lead to longer printing time on certain\nprinters. Should the aspect of transparency\nbe reduced?"
-msgstr ""
+msgstr "El documentu contién oxetos tresparentes.\nEsto puede causar allancios en munches imprentadores.\n¿Quies que s'inoren les informaciones\nde tresparencia pa la impresión?"
 
 #: source/dialog/printopt.src#RID_WARN_PRINTTRANSPARENCY.BTN_PRINTTRANS_YES.OKButton.Text
 msgid  "~Yes"
@@ -622,26 +642,6 @@ msgstr "~Encaboxar"
 #: source/dialog/printopt.src#RID_WARN_PRINTTRANSPARENCY.CBX_NOPRINTTRANSWARN.CheckBox.Text
 msgid  "~Do not show warning again"
 msgstr "~Nun volver a amosar esti avisu"
-
-#: source/dialog/printopt.src#TP_COMMONPRINTOPTIONS.LB_REDUCEBITMAPS_RESOLUTION.0.StringList.item
-msgid  "72 DPI"
-msgstr "72 PPP"
-
-#: source/dialog/printopt.src#TP_COMMONPRINTOPTIONS.LB_REDUCEBITMAPS_RESOLUTION.0.StringList.item
-msgid  "96 DPI"
-msgstr "96 PPP"
-
-#: source/dialog/printopt.src#TP_COMMONPRINTOPTIONS.LB_REDUCEBITMAPS_RESOLUTION.0.StringList.item
-msgid  "150 DPI (Fax)"
-msgstr "150 PPP (Fax)"
-
-#: source/dialog/printopt.src#TP_COMMONPRINTOPTIONS.LB_REDUCEBITMAPS_RESOLUTION.0.StringList.item
-msgid  "200 DPI (default)"
-msgstr "200 PPP (predetermináu)"
-
-#: source/dialog/printopt.src#TP_COMMONPRINTOPTIONS.LB_REDUCEBITMAPS_RESOLUTION.0.StringList.item
-msgid  "300 DPI"
-msgstr "300 PPP"
 
 #: source/dialog/templdlg.src#RID_STYLECATALOG.ModalDialog.Text
 msgid  "Style Catalog"
@@ -733,7 +733,7 @@ msgstr "~Desprotexer..."
 
 #: source/dialog/securitypage.src#TP_DOCINFOSECURITY.STR_END_REDLINING_WARNING.String.Text
 msgid  "This action will exit the change recording mode.\nAny information about changes will be lost.\n\nExit change recording mode?\n\n"
-msgstr ""
+msgstr "Esta aición abandonará'l mou de rexistru de cambeos.\nVa perdese tola información sobre los cambeos.\n\n¿Colar del mou de rexistru de cambeos?\n\n"
 
 #: source/dialog/securitypage.src#RID_SFX_PROTECT_RECORDS.String.Text
 msgid  "Protect Records"
@@ -1116,8 +1116,8 @@ msgid  "to frame"
 msgstr "al marcu"
 
 #: source/dialog/dinfdlg.src#TP_DOCINFORELOAD.STR_FORWARD_ERRMSSG.String.Text
-msgid  "If you select the option "%PLACEHOLDER%", you must enter a URL."
-msgstr ""
+msgid  "If you select the option \"%PLACEHOLDER%\", you must enter a URL."
+msgstr "Si seleiciona la opción \"%PLACEHOLDER%\", tien d'introducir un URL."
 
 #: source/dialog/dinfdlg.src#TP_CUSTOMPROPERTIES.FT_PROPERTIES.FixedText.Text
 msgid  "~Properties"
@@ -1305,7 +1305,7 @@ msgstr "Quitar propiedaes"
 
 #: source/dialog/dinfdlg.src#SFX_QB_WRONG_TYPE.QueryBox.Message
 msgid  "The value entered does not match the specified type.\nThe value will be stored as text."
-msgstr ""
+msgstr "El valor ingresáu nun concasa cola triba especificada.\nEl valor atroxaráse como testu."
 
 #: source/dialog/dinfdlg.src#SID_DOCINFO.TabDialog.Text
 msgid  "Properties of "
@@ -1397,7 +1397,7 @@ msgstr "Grabar macro"
 
 #: source/dialog/recfloat.src#STR_MACRO_LOSS.String.Text
 msgid  "Do you really want to cancel the recording? Any steps recorded up to this point will be lost."
-msgstr ""
+msgstr "¿Deseya daveres encaboxar la grabación? Tolos pasos grabaos hasta esti intre perderánse."
 
 #: source/dialog/recfloat.src#STR_CANCEL_RECORDING.String.Text
 msgid  "Cancel Recording"
@@ -1405,7 +1405,7 @@ msgstr "Encaboxar grabación"
 
 #: source/dialog/mailwindow.src#RID_ERRBOX_MAIL_CONFIG.ErrorBox.MESSAGE
 msgid  "%PRODUCTNAME was unable to find a working e-mail configuration. Please save this document locally instead and attach it from within your e-mail client."
-msgstr ""
+msgstr "%PRODUCTNAME nun pudo alcontrase una configuración de corréu electrónicu que furrule. Guarde llocalmente esti documentu y axúntelu nel corréu electrónicu."
 
 #: source/dialog/dialog.src#STR_RESET.String.Text
 msgid  "~Reset"
@@ -1429,11 +1429,11 @@ msgstr "Esti estilu nun esiste."
 
 #: source/dialog/dialog.src#MSG_TABPAGE_INVALIDPARENT.InfoBox.Message
 msgid  "This Style cannot be used as a base Style,\nbecause it would result in a recursive reference."
-msgstr ""
+msgstr "Esti estilu nun pue usase como estilu base,\nporque crearíase una referencia recursiva"
 
 #: source/dialog/dialog.src#MSG_POOL_STYLE_NAME.InfoBox.Message
 msgid  "Name already exists as a default Style.\nPlease choose another name."
-msgstr ""
+msgstr "El nome yá s'usa por un estilu\npredetermináu. Escueyi otru nome."
 
 #: source/dialog/dialog.src#STR_DELETE_STYLE.String.Text
 msgid  "Do you really want to delete Style $1?"
@@ -1489,7 +1489,7 @@ msgstr "Xeres"
 
 #: source/dialog/alienwarn.src#RID_DLG_ALIEN_WARNING.FT_INFOTEXT.FixedText.Text
 msgid  "This document may contain formatting or content that cannot be saved in the %FORMATNAME file format. Do you want to save the document in this format anyway?\n\nUse the latest ODF file format and be sure all formatting and content is saved correctly."
-msgstr ""
+msgstr "Esti documentu pue tener formatu o conteníu incompatible col formatu de ficheru %FORMATNAME. Sicasí, ¿quies guardar el documentu nesi formatu?\n\nUsa'l formatu de ficheru ODF y asegúrate de que tol formatu y el conteníu s'atroxe correcho."
 
 #: source/dialog/alienwarn.src#RID_DLG_ALIEN_WARNING.PB_NO.OKButton.Text
 msgid  "~Keep Current Format"
@@ -1581,27 +1581,27 @@ msgstr "~Organizador..."
 
 #: source/doc/doc.src#MSG_CONFIRM_FILTER.QueryBox.Message
 msgid  "Saving in external formats may have caused\n information loss. Do you still want to close?"
-msgstr ""
+msgstr "Guardar en formatos esternos pue tener ocasionao\n perda d'información. ¿Quies zarrar de toes formes?"
 
 #: source/doc/doc.src#MSG_CONFIRM_OVERWRITE_TEMPLATE.QueryBox.Message
 msgid  "Name already in use.\nDo you want to overwrite document template?"
-msgstr ""
+msgstr "El nome yá ta n'usu.\n¿Quies sobreescribir la plantía del documentu?"
 
 #: source/doc/doc.src#STR_DELETE_REGION.String.Text
-msgid  "Are you sure you want to delete the region "$1"?"
-msgstr ""
+msgid  "Are you sure you want to delete the region \"$1\"?"
+msgstr "¿Tas seguru de querer eliminar la rexón \"$1\"?"
 
 #: source/doc/doc.src#STR_DELETE_TEMPLATE.String.Text
-msgid  "Are you sure you want to delete the entry "$1"?"
-msgstr ""
+msgid  "Are you sure you want to delete the entry \"$1\"?"
+msgstr "¿Tas seguru de querer eliminar la entrada \"$1\"?"
 
 #: source/doc/doc.src#MSG_REGION_NOTEMPTY.QueryBox.Message
 msgid  "The category is not empty.\nDelete anyway?"
-msgstr ""
+msgstr "La categoría nun ta erma.\n¿Quies desaniciala de toes formes?"
 
 #: source/doc/doc.src#STR_QUERY_SAVE_DOCUMENT.String.Text
-msgid  "The document "$(DOC)" has been modified.\nDo you want to save your changes?"
-msgstr ""
+msgid  "The document \"$(DOC)\" has been modified.\nDo you want to save your changes?"
+msgstr "Camudóse'l documentu \"$(DOC)\".\n¿Quies guardar los cambeos?"
 
 #: source/doc/doc.src#STR_STYLES.String.Text
 msgid  "Styles"
@@ -1648,16 +1648,16 @@ msgid  "Templates"
 msgstr "Plantíes"
 
 #: source/doc/doc.src#STR_ERROR_COPY_TEMPLATE.String.Text
-msgid  "Error copying template "$1". \nA template with this name may already exist."
-msgstr ""
+msgid  "Error copying template \"$1\". \nA template with this name may already exist."
+msgstr "Fallu al copiar la plantía \"$1\". \nYá esiste una plantía con esti nome."
 
 #: source/doc/doc.src#STR_ERROR_DELETE_TEMPLATE.String.Text
-msgid  "The template "$1" can not be deleted."
-msgstr ""
+msgid  "The template \"$1\" can not be deleted."
+msgstr "La plantía \"$1\" nun se pue desaniciar."
 
 #: source/doc/doc.src#STR_ERROR_MOVE_TEMPLATE.String.Text
-msgid  "Error moving template "$1"."
-msgstr ""
+msgid  "Error moving template \"$1\"."
+msgstr "Fallu al mover la plantía \"$1\"."
 
 #: source/doc/doc.src#MSG_ERROR_RESCAN.ErrorBox.Message
 msgid  "The update could not be saved."
@@ -1681,11 +1681,11 @@ msgstr "Por favor escribi un nome."
 
 #: source/doc/doc.src#MSG_ERROR_UNIQ_NAME.ErrorBox.Message
 msgid  "Please specify a unique name.\nEntries must not be case specific."
-msgstr ""
+msgstr "Por favor escribi un nome únicu.\nNun se distinguirár ente mayúscules y minúscules."
 
 #: source/doc/doc.src#STR_QUERY_DEFAULT_TEMPLATE.String.Text
-msgid  "Should the template "$(TEXT)" become the default template?"
-msgstr ""
+msgid  "Should the template \"$(TEXT)\" become the default template?"
+msgstr "¿Quies que la plantía \"$(TEXT)\" seya la plantía predeterminada?"
 
 #: source/doc/doc.src#MSG_QUERY_RESET_DEFAULT_TEMPLATE.QueryBox.Message
 msgid  "Do you want to reset the default template?"
@@ -1693,7 +1693,7 @@ msgstr "¿Quies reaniciar la plantía predeterminada?"
 
 #: source/doc/doc.src#MSG_TEMPLATE_DIR_NOT_EXIST.InfoBox.Message
 msgid  "Template directory\n$(DIR)\ndoes not exist."
-msgstr ""
+msgstr "El direutoriu de plantíes\n$(DIR)\nnun esiste."
 
 #: source/doc/doc.src#MSG_DOCINFO_CANTREAD.InfoBox.Message
 msgid  "Document info cannot be read."
@@ -1705,7 +1705,7 @@ msgstr "El ficheru seleicionáu tien un formatu incorreutu."
 
 #: source/doc/doc.src#STR_QUERY_MUSTOWNFORMAT.String.Text
 msgid  "Documents cannot be saved in $(FORMAT) format. Do you\nwant to save your changes using the $(OWNFORMAT) format?"
-msgstr ""
+msgstr "Los documentos nun se puen guardar col formatu $(FORMAT). ¿Quies\nguardar los tos cambeos usando'l formatu $(OWNFORMAT)?"
 
 #: source/doc/doc.src#STR_SAVEDOC.String.Text
 msgid  "~Save"
@@ -1744,8 +1744,8 @@ msgid  "%PRODUCTNAME Basic libraries"
 msgstr "Biblioteques básiques de %PRODUCTNAME"
 
 #: source/doc/doc.src#RID_STR_WARNSTYLEOVERWRITE.String.Text
-msgid  "Should the "$(ARG1)" Style be replaced?"
-msgstr ""
+msgid  "Should the \"$(ARG1)\" Style be replaced?"
+msgstr "¿Quies trocar l'estilu \"$(ARG1)\"?"
 
 #: source/doc/doc.src#STR_DOC_LOADING.String.Text
 msgid  "Loading Document"
@@ -1769,7 +1769,7 @@ msgstr "Desconeutáu"
 
 #: source/doc/doc.src#MSG_OPEN_READONLY.QueryBox.Message
 msgid  "Document cannot be opened for editing.\nDo you want to open it as read-only?"
-msgstr ""
+msgstr "El documentu nun se pue abrir pa editar.\n¿Quies abrilu como namái llectura?"
 
 #: source/doc/doc.src#STR_EDIT.String.Text
 msgid  "Edit"
@@ -1792,12 +1792,12 @@ msgid  "%PRODUCTNAME Frame Document"
 msgstr "Documentu de marcu de %PRODUCTNAME"
 
 #: source/doc/doc.src#STR_TEMPL_MOVED.String.Text
-msgid  "The template "$(TEMPLATE)" was not found at the original location. A template with the same name exists at "$(FOUND)". Should this template be used in the future when comparing?"
-msgstr ""
+msgid  "The template \"$(TEMPLATE)\" was not found at the original location. A template with the same name exists at \"$(FOUND)\". Should this template be used in the future when comparing?"
+msgstr "La plantía \"$(TEMPLATE)\" nun s'atopó nel allugamientu orixinal. Hai una plantía col mesmu nome en \"$(FOUND)\". ¿Quies usar esta plantía nel futuru al comparar?"
 
 #: source/doc/doc.src#STR_TEMPL_RESET.String.Text
-msgid  "The template "$(TEMPLATE)" has not been found. Should the template be looked for the next time the document is opened ?"
-msgstr ""
+msgid  "The template \"$(TEMPLATE)\" has not been found. Should the template be looked for the next time the document is opened ?"
+msgstr "Nun s'atopó la plantía \"$(TEMPLATE)\". ¿Quies que se busce la prósima vegada que s'abra'l documentu?"
 
 #: source/doc/doc.src#STR_AUTOMATICVERSION.String.Text
 msgid  "Automatically saved version"
@@ -1865,7 +1865,7 @@ msgstr "Nun executar"
 
 #: source/doc/doc.src#FT_CANCEL.String.Text
 msgid  "According to the security settings, the macros in this document should not be run. Do you want to run them anyway?"
-msgstr ""
+msgstr "Acordies cola configuración de seguridá, les macros d'esti documentu nun habríer executase. ¿Quies executales de toes maneres?"
 
 #: source/doc/doc.src#FT_OK.String.Text
 msgid  "Do you want to allow these macros to be run?"
@@ -1893,7 +1893,7 @@ msgstr "Formatu del ficheru:"
 
 #: source/doc/doc.src#STR_HIDDENINFO_CONTAINS.String.Text
 msgid  "This document contains:\n\n"
-msgstr ""
+msgstr "Esti documentu contién:\n\n"
 
 #: source/doc/doc.src#STR_HIDDENINFO_RECORDCHANGES.String.Text
 msgid  "Recorded changes"
@@ -1933,7 +1933,7 @@ msgstr "¿Quies crear un ficheru PDF?"
 
 #: source/doc/doc.src#STR_NEW_FILENAME_SAVE.String.Text
 msgid  "If you do not want to overwrite the original document, you should save your work under a new filename."
-msgstr ""
+msgstr "Si nun quies sobreescribir el documentu orixinal, habríes guardar el to trabayu con un nome de ficheru nuevu."
 
 #: source/doc/doc.src#STR_ERROR_DELETE_TEMPLATE_DIR.String.Text
 msgid  "Some template files are protected and can not be deleted."
@@ -1949,15 +1949,15 @@ msgstr " (compartío)"
 
 #: source/doc/doc.src#STR_XMLSEC_ODF12_EXPECTED.String.Text
 msgid  "The document format version is set to ODF 1.1 (OpenOffice.org 2.x) in Tools-Options-Load/Save-General. Signing documents requires ODF 1.2 (OpenOffice.org 3.x)."
-msgstr ""
+msgstr "El formatu del documentu ye versión ODF 1.1 (OpenOffice.org 2.x) en Ferramientes-Opciones-Cargar/Guardar-Xeneral. La Robla de documentos requier ODF 1.2 (OpenOffice.org 3.x)"
 
 #: source/doc/doc.src#MSG_XMLSEC_QUERY_SAVESIGNEDBEFORESIGN.QueryBox.Message
 msgid  "The document has to be saved before it can be signed. Saving the document removes all present signatures.\nDo you want to save the document?"
-msgstr ""
+msgstr "El documentu tien d'atroxase enantes que pueda roblase. Atroxando'l documentu desaniciaránse toles robles actuales.\nQuies atroxar el documentu?"
 
 #: source/doc/doc.src#STR_QRYTEMPL_MESSAGE.String.Text
 msgid  "The template '$(ARG1)' on which this document is based, has been modified. Do you want to update style based formattings according to the modified template?"
-msgstr ""
+msgstr "La plantía '$(ARG1)' na que se sofita esti documentu, camudó. Quies anovar l'estilu de formatéu básicu d'acordies a la plantía modificada?"
 
 #: source/doc/doc.src#STR_QRYTEMPL_UPDATE_BTN.String.Text
 msgid  "~Update Styles"
@@ -1984,8 +1984,16 @@ msgid  "~Address Book..."
 msgstr "~Llibreta de señes..."
 
 #: source/doc/docvor.src#DLG_ORGANIZE.LB_LEFT_TYP.Default.StringList.item
+msgid  "Templates"
+msgstr "Plantíes"
+
+#: source/doc/docvor.src#DLG_ORGANIZE.LB_LEFT_TYP.Default.StringList.item
 msgid  "Documents"
 msgstr "Documentos"
+
+#: source/doc/docvor.src#DLG_ORGANIZE.LB_RIGHT_TYP.Default.StringList.item
+msgid  "Templates"
+msgstr "Plantíes"
 
 #: source/doc/docvor.src#DLG_ORGANIZE.LB_RIGHT_TYP.Default.StringList.item
 msgid  "Documents"
@@ -2034,14 +2042,6 @@ msgstr "Afitar como plantía predeterminada"
 #: source/doc/docvor.src#DLG_ORGANIZE.BTN_EDIT.ID_RESET_DEFAULT_TEMPLATE.MenuItem.Text
 msgid  "Reset Default Template"
 msgstr "Restaurar la plantía predeterminada"
-
-#: source/doc/docvor.src#DLG_ORGANIZE.LB_LEFT_TYP.Default.StringList.item
-msgid  "Templates"
-msgstr "Plantíes"
-
-#: source/doc/docvor.src#DLG_ORGANIZE.LB_RIGHT_TYP.Default.StringList.item
-msgid  "Templates"
-msgstr "Plantíes"
 
 #: source/doc/new.src#DLG_NEW_FILE.ModalDialog.Text
 msgid  "New"
@@ -2153,15 +2153,15 @@ msgstr "~Sinónimos..."
 
 #: source/view/view.src#STR_NODEFPRINTER.String.Text
 msgid  "No default printer found.\nPlease choose a printer and try again."
-msgstr ""
+msgstr "Nun s'atopó denguna imprentadora predefinida.\nEscueyi una imprentadora y vuelvi a intentalo."
 
 #: source/view/view.src#STR_NOSTARTPRINTER.String.Text
 msgid  "Could not start printer.\nPlease check your printer configuration."
-msgstr ""
+msgstr "Nun se pue aniciar la imprentadora.\nPor favor verifique la configuración de la so imprentadora."
 
 #: source/view/view.src#STR_PRINTER_NOTAVAIL.String.Text
 msgid  "This document has been formatted for the printer $1. The specified printer is not available. \nDo you want to use the standard printer $2 ?"
-msgstr ""
+msgstr "Esti documentu ta formateáu pa la imprentadora $1, que nun ta disponible. \n¿Quies usar la imprentadora estándar $2 ?"
 
 #: source/view/view.src#STR_PRINT_OPTIONS.String.Text
 msgid  "Options..."
@@ -2187,33 +2187,41 @@ msgstr "Imprentando"
 msgid  "Page "
 msgstr "Páxina "
 
+#: source/view/view.src#STR_ERROR_SAVE_TEMPLATE.String.Text
+msgid  "Error saving template "
+msgstr "Fallu al guardar la plantía "
+
 #: source/view/view.src#STR_READONLY.String.Text
 msgid  " (read-only)"
 msgstr " (sólo llectura)"
 
 #: source/view/view.src#STR_PRINT_NEWORI.String.Text
 msgid  "The page size and orientation have been modified.\nWould you like to save the new settings in the\nactive document?"
-msgstr ""
+msgstr "Camudáronse el tamañu y la orientación de la páxina.\n¿Quies guardar los axustes nuevos\nnel documentu activu?"
 
 #: source/view/view.src#STR_PRINT_NEWSIZE.String.Text
 msgid  "The page size has been modified.\nShould the new settings be saved\nin the active document?"
-msgstr ""
+msgstr "Camudóse'l tamañu de la páxina.\n¿Quies guardar los axustes nuevos\nnel documentu activu?"
 
 #: source/view/view.src#STR_PRINT_NEWORISIZE.String.Text
 msgid  "The page size and orientation have been modified.\nWould you like to save the new settings in the\nactive document?"
-msgstr ""
+msgstr "Camudáronse'l tamañu y la orientación de la páxina.\n¿Quies guardar los axustes nuevos\nnel documentu activu?"
 
 #: source/view/view.src#STR_PREVIEW_DOCINFO.String.Text
-msgid  "<html><body BGCOLOR="#c0c0c0"><font FACE="Arial"><dl><dt><b>Title:</b><dd>$(TITEL)<dt><b>Subject:</b><dd>$(THEME)<dt><b>Keywords:</b><dd>$(KEYWORDS)<dt><b>Description:</b><dd>$(TEXT)</dl></font></body></html>"
-msgstr ""
+msgid  "<html><body BGCOLOR=\"#c0c0c0\"><font FACE=\"Arial\"><dl><dt><b>Title:</b><dd>$(TITEL)<dt><b>Subject:</b><dd>$(THEME)<dt><b>Keywords:</b><dd>$(KEYWORDS)<dt><b>Description:</b><dd>$(TEXT)</dl></font></body></html>"
+msgstr "<html><body BGCOLOR=\"#c0c0c0\"><font FACE=\"Arial\"><dl><dt><b>Títulu:</b><dd>$(TITEL)<dt><b>Asuntu:</b><dd>$(THEME)<dt><b>Pallabres clave:</b><dd>$(KEYWORDS)<dt><b>Descripción:</b><dd>$(TEXT)</dl></font></body></html>"
 
 #: source/view/view.src#STR_PREVIEW_NODOCINFO.String.Text
-msgid  "<HTML><BODY BGCOLOR="#c0c0c0"><BR><BR><P><FONT FACE="Arial"><B>No document properties found.</B></FONT></P></BODY></HTML>"
-msgstr ""
+msgid  "<HTML><BODY BGCOLOR=\"#c0c0c0\"><BR><BR><P><FONT FACE=\"Arial\"><B>No document properties found.</B></FONT></P></BODY></HTML>"
+msgstr "<HTML><BODY BGCOLOR=\"#c0c0c0\"><BR><BR><P><FONT FACE=\"Arial\"><B>Nun s'atopó denguna propiedá nel documentu.</B></FONT></P></BODY></HTML>"
 
 #: source/view/view.src#MSG_CANT_CLOSE.InfoBox.Message
 msgid  "The document cannot be closed because a\n print job is being carried out."
-msgstr ""
+msgstr "El documentu nun se pue pesllar agora\ndarréu qu'entá se ta imprentando."
+
+#: source/view/view.src#DLG_PRINTMONITOR_TEXT.#define.Text
+msgid  "Print Monitor"
+msgstr "Monitor d'impresión"
 
 #: source/view/view.src#DLG_PRINTMONITOR.FT_PRINTING.FixedText.Text
 msgid  "is being printed on"
@@ -2225,11 +2233,11 @@ msgstr "ta tresnándose pa imprentar"
 
 #: source/view/view.src#MSG_ERROR_SEND_MAIL.InfoBox.Message
 msgid  "An error occurred in sending the message. Possible errors could be a missing user account or a defective setup.\nPlease check the %PRODUCTNAME settings or your e-mail program settings."
-msgstr ""
+msgstr "Fallu al unviar el mensax. La xida pue ser una cuenta d'usuariu o una instalación defeutuosa.\nComprueba la configuración de %PRODUCTNAME o la del programa de corréu electrónicu."
 
 #: source/view/view.src#MSG_QUERY_OPENASTEMPLATE.QueryBox.Message
 msgid  "This document cannot be edited, possibly due to missing access rights. Do you want to edit a copy of the document?"
-msgstr ""
+msgstr "Esti documento nun se pue editar, dablemente porque falten permisos d'accesu. ¿Quies editar una copia del documentu?"
 
 #: source/view/view.src#STR_REPAIREDDOCUMENT.String.Text
 msgid  " (repaired document)"
@@ -2237,12 +2245,4 @@ msgstr " (documentu reparáu)"
 
 #: source/view/view.src#MSG_ERROR_NO_WEBBROWSER_FOUND.ErrorBox.Message
 msgid  "%PRODUCTNAME could not find a web browser on your system. Please check your Desktop Preferences or install a web browser (for example, Mozilla) in the default  location requested during the browser installation."
-msgstr ""
-
-#: source/view/view.src#DLG_PRINTMONITOR_TEXT.#define.Text
-msgid  "Print Monitor"
-msgstr "Monitor d'impresión"
-
-#: source/view/view.src#STR_ERROR_SAVE_TEMPLATE.String.Text
-msgid  "Error saving template "
-msgstr "Fallu al guardar la plantía "
+msgstr "%PRODUCTNAME nun pudo alcontrar nengún esplorador web nel sistema. Comprebe les preferencies del escritoriu o instale un esplorador web (por exemplu, Mozilla) na llocalización predeterminao durante la instalación del esplorador."

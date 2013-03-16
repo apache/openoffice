@@ -437,7 +437,7 @@ msgstr "FACTDOUBLE"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Workday.1.String.Text
 msgid  "Returns the serial number of the date before or after a specified number of workdays"
-msgstr ""
+msgstr "إرجاع العدد التسلسلي لتاريخ بعد أو قبل العدد المحدد لأيام العمل"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Workday.2.String.Text
 msgid  "Start date"
@@ -465,7 +465,7 @@ msgstr "قائمة قيم التاريخ لأيام العطلة (إجازات،
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Yearfrac.1.String.Text
 msgid  "Returns the number of whole days between 'start date' and 'end date' as a year fraction"
-msgstr ""
+msgstr "إرجاع عدد الأيام ما بين \"تاريخ البدء\" و\"تاريخ الانتهاء\" في شكل كسر سنوي"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Yearfrac.2.String.Text
 msgid  "Start date"
@@ -493,7 +493,7 @@ msgstr "أساس لتحديد الأيام المطلوبة"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Edate.1.String.Text
 msgid  "Returns the serial number of the date that is a specified number of months before or after the start date"
-msgstr ""
+msgstr "إرجاع العدد التسلسلي للتاريخ الذي يقوم بتحديد عدد الأشهر قبل أو بعد تاريخ البدء"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Edate.2.String.Text
 msgid  "Start date"
@@ -513,7 +513,7 @@ msgstr "عدد الشهور قبل أو بعد تاريخ البدء"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Weeknum.1.String.Text
 msgid  "Returns the number of the calendar week in which the specified date occurs."
-msgstr ""
+msgstr "إرجاع عدد أسابيع التقويم التي يقع فيها التاريخ."
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Weeknum.2.String.Text
 msgid  "Date"
@@ -533,7 +533,7 @@ msgstr "عدد من 1 إلى 3 يقوم بتحديد اليوم الذي يبد�
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Eomonth.1.String.Text
 msgid  "Returns the serial number of the last day of the month that comes a certain number of months before or after the start date"
-msgstr ""
+msgstr "إرجاع العدد التسلسلي لآخر يوم في الشهر الذي يصبح عددًا معينًا من الأشهر قبل أو بعد تاريخ البدء"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Eomonth.2.String.Text
 msgid  "Start date"
@@ -613,7 +613,7 @@ msgstr "عدد (أعداد)"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Multinomial.3.String.Text
 msgid  "Number or list of numbers for which you want the multinomial coefficient"
-msgstr ""
+msgstr "العدد أو قائمة الأعداد التي تريد معرفة المعامل المشترك لها"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Seriessum.1.String.Text
 msgid  "Returns the sum of a power series"
@@ -649,7 +649,7 @@ msgstr "المعامل"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Seriessum.9.String.Text
 msgid  "Set of coefficients by which each successive power of the variable x is multiplied"
-msgstr ""
+msgstr "مجموعة المعاملات التي سيتم ضرب الأس المتتالي للمتغير س فيها "
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Quotient.1.String.Text
 msgid  "Returns the integer portion of a division"
@@ -1517,7 +1517,7 @@ msgstr "وحدة القياس للنتيجة"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Amordegrc.1.String.Text
 msgid  "Returns the prorated linear depreciation of an asset for each accounting period"
-msgstr ""
+msgstr "إرجاع الإهلاك الخطي الموزع للأصل لكل فترة محاسبة"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Amordegrc.2.String.Text
 msgid  "Cost"
@@ -1577,7 +1577,7 @@ msgstr "أساس السنة المستخدم"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Amorlinc.1.String.Text
 msgid  "Returns the prorated linear depreciation of an asset for each accounting period"
-msgstr ""
+msgstr "إرجاع الإهلاك الخطي الموزع للأصل لكل فترة محاسبة"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Amorlinc.2.String.Text
 msgid  "Cost"
@@ -1697,7 +1697,7 @@ msgstr "اﻷساس"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Accrintm.1.String.Text
 msgid  "Returns the accrued interest for a security that pays interest at maturity"
-msgstr ""
+msgstr "إرجاع الفوائد التي أصبحت مستحقة لسند يدفع فوائد عند الاستحقاق"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Accrintm.2.String.Text
 msgid  "Issue"
@@ -1829,7 +1829,7 @@ msgstr "اﻷساس"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Duration.1.String.Text
 msgid  "Returns the annual Macaulay duration of a security with periodic interest payments"
-msgstr ""
+msgstr "إرجاع فترة Macaulay السنوية للسند المالي مع دفعات الفوائد الدورية"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Duration.2.String.Text
 msgid  "Settlement"
@@ -1901,7 +1901,7 @@ msgstr "الفترات"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Cumprinc.1.String.Text
 msgid  "Returns the cumulative principal on a loan to be paid between two periods"
-msgstr ""
+msgstr "إرجاع رأس المال المتراكم على القرض الذي سيدفع بين فترتين"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Cumprinc.2.String.Text
 msgid  "Rate"
@@ -2005,7 +2005,7 @@ msgstr "نوع الاستحقاق"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Price.1.String.Text
 msgid  "Returns the price per 100 currency units face value of a security that pays periodic interest"
-msgstr ""
+msgstr "إرجاع السعر لكل 100 قيمة وجه وحدة عملة لتأمين يدفع فوائد دورية"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Price.2.String.Text
 msgid  "Settlement"
@@ -2065,7 +2065,7 @@ msgstr "اﻷساس"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Pricedisc.1.String.Text
 msgid  "Returns the price per 100 currency units face value of a discounted security"
-msgstr ""
+msgstr "إرجاع السعر لكل 100 قيمة وجه وحدة عملة لتأمين عليه خصم"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Pricedisc.2.String.Text
 msgid  "Settlement"
@@ -2109,7 +2109,7 @@ msgstr "اﻷساس"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Pricemat.1.String.Text
 msgid  "Returns the price per 100 currency units face value of a security that pays interest at maturity"
-msgstr ""
+msgstr "إرجاع السعر لكل 100 قيمة وجه وحدة عملة لتأمين يدفع فوائد عند الاستحقاق"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Pricemat.2.String.Text
 msgid  "Settlement"
@@ -2161,7 +2161,7 @@ msgstr "اﻷساس"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Mduration.1.String.Text
 msgid  "Returns the Macaulay modified duration for a security with an assumed par value of 100 currency units"
-msgstr ""
+msgstr "إرجاع فترة ماكولي المعدلة لتأمين مع القيمة الاسمية المفترضة ل 100 وحدة من العملة."
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Mduration.2.String.Text
 msgid  "Settlement"
@@ -2233,7 +2233,7 @@ msgstr "الفترات"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Dollarfr.1.String.Text
 msgid  "Converts a price expressed as a decimal into a price expressed as a fraction"
-msgstr ""
+msgstr "تحويل مظهر السعر كرقم عشري داخل مظهر السعر ككسر."
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Dollarfr.2.String.Text
 msgid  "Decimal dollar"
@@ -2253,7 +2253,7 @@ msgstr "القاسم"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Dollarde.1.String.Text
 msgid  "Converts a price expressed as a fraction into a price expressed as a decimal"
-msgstr ""
+msgstr "تحويل مظهر السعر ككسر داخل مظهر سعر كرقم عشري."
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Dollarde.2.String.Text
 msgid  "Fractional dollar"
@@ -2513,7 +2513,7 @@ msgstr "السعر"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Oddfprice.1.String.Text
 msgid  "Returns the price per $100 face value of a security with an odd first period"
-msgstr ""
+msgstr "إرجاع السعر لكل قيمة اسمية قدرها 100$ للتأمين بالفترة اﻷولى المفردة"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Oddfprice.2.String.Text
 msgid  "Settlement"
@@ -2665,7 +2665,7 @@ msgstr "اﻷساس"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Oddlprice.1.String.Text
 msgid  "Returns the price per $100 face value of a security with an odd last period"
-msgstr ""
+msgstr "إرجاع السعر لكل قيمة اسمية قدرها 100$ للتأمين بالفترة اﻷخيرة المفردة"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Oddlprice.2.String.Text
 msgid  "Settlement"
@@ -2801,7 +2801,7 @@ msgstr "اﻷساس"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Xirr.1.String.Text
 msgid  "Returns the internal rate of return for a non-periodic schedule of payments"
-msgstr ""
+msgstr "إرجاع المعدل الداخلي للعائد لدفعات غير دورية"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Xirr.2.String.Text
 msgid  "Values"
@@ -2937,7 +2937,7 @@ msgstr "اﻷساس"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Coupdays.1.String.Text
 msgid  "Returns the number of days in the coupon period containing the settlement date"
-msgstr ""
+msgstr "إرجاع عدد اﻷيام في فترة القسيمة التي تتضمن تاريخ التسوية"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Coupdays.2.String.Text
 msgid  "Settlement"
@@ -2973,7 +2973,7 @@ msgstr "اﻷساس"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Coupdaysnc.1.String.Text
 msgid  "Returns the number of days from the settlement date to the next coupon date"
-msgstr ""
+msgstr "إرجاع عدد اﻷيام من تاريخ التسوية إلى تاريخ القسيمة القادم"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Coupdaysnc.2.String.Text
 msgid  "Settlement"
@@ -3009,7 +3009,7 @@ msgstr "اﻷساس"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Coupdaybs.1.String.Text
 msgid  "Returns the number of days from the beginning of the coupon period to the settlement date"
-msgstr ""
+msgstr "إرجاع عدد اﻷيام من بداية فترة القسيمة إلى تاريخ التسوية"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Coupdaybs.2.String.Text
 msgid  "Settlement"
@@ -3081,7 +3081,7 @@ msgstr "اﻷساس"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Coupnum.1.String.Text
 msgid  "Returns the number of coupons payable between the settlement and maturity dates"
-msgstr ""
+msgstr "إرجاع عدد القسائم القابلة للدفع بين تاريخي التسوية والاستحقاق"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Coupnum.2.String.Text
 msgid  "Settlement"
@@ -3117,7 +3117,7 @@ msgstr "اﻷساس"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Fvschedule.1.String.Text
 msgid  "Returns the future value of the initial principal after a series of compound interest rates are applied"
-msgstr ""
+msgstr "إرجاع القيمة المستقبلية لرأس المال الابتدائي بعد تطبيق سلسلة معدلات استثمارات مركبة"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Fvschedule.2.String.Text
 msgid  "Principal"
@@ -3161,7 +3161,7 @@ msgstr "النوع"
 
 #: source/datefunc/datefunc.src#RID_DATE_FUNCTION_DESCRIPTIONS.DATE_FUNCDESC_DiffWeeks.7.String.Text
 msgid  "Type of calculation: Type=0 means the time interval, Type=1 means calendar weeks."
-msgstr ""
+msgstr "نوع الحساب: النوع = 0 يعني الفاصل الزمني، النوع = 1 يعني أسابيع التقويم."
 
 #: source/datefunc/datefunc.src#RID_DATE_FUNCTION_DESCRIPTIONS.DATE_FUNCDESC_DiffMonths.1.String.Text
 msgid  "Determines the number of months in a specific period."
@@ -3189,7 +3189,7 @@ msgstr "النوع"
 
 #: source/datefunc/datefunc.src#RID_DATE_FUNCTION_DESCRIPTIONS.DATE_FUNCDESC_DiffMonths.7.String.Text
 msgid  "Type of calculation: Type=0 means the time interval, Type=1 means calendar months."
-msgstr ""
+msgstr "نوع الحساب: النوع=  0 تعني الفاصل الزمني، النوع = 1 تعني أشهر التقويم."
 
 #: source/datefunc/datefunc.src#RID_DATE_FUNCTION_DESCRIPTIONS.DATE_FUNCDESC_DiffYears.1.String.Text
 msgid  "Calculates the number of years in a specific period."
@@ -3217,11 +3217,11 @@ msgstr "النوع"
 
 #: source/datefunc/datefunc.src#RID_DATE_FUNCTION_DESCRIPTIONS.DATE_FUNCDESC_DiffYears.7.String.Text
 msgid  "Type of calculation: Type=0 means the time interval, Type=1 means calendar years."
-msgstr ""
+msgstr "نوع الحساب: النوع=0 يعني الفاصل الزمني، النوع=1 يعني سنوات التقويم."
 
 #: source/datefunc/datefunc.src#RID_DATE_FUNCTION_DESCRIPTIONS.DATE_FUNCDESC_IsLeapYear.1.String.Text
 msgid  "Returns 1 (TRUE) if the date is a day of a leap year, otherwise 0 (FALSE)."
-msgstr ""
+msgstr "إرجاع 1 (صحيح) إذا كان التاريخ هو تاريخ يوم في السنة الكبيسة، وإلا فسيتم إرجاع 0 (خطأ)."
 
 #: source/datefunc/datefunc.src#RID_DATE_FUNCTION_DESCRIPTIONS.DATE_FUNCDESC_IsLeapYear.2.String.Text
 msgid  "Date"
@@ -3233,7 +3233,7 @@ msgstr "أي يوم من أيام السنة المطلوبة"
 
 #: source/datefunc/datefunc.src#RID_DATE_FUNCTION_DESCRIPTIONS.DATE_FUNCDESC_DaysInMonth.1.String.Text
 msgid  "Returns the number of days of the month in which the date entered occurs"
-msgstr ""
+msgstr "إرجاع عدد الأيام للشهر الموجود في التاريخ المدخل"
 
 #: source/datefunc/datefunc.src#RID_DATE_FUNCTION_DESCRIPTIONS.DATE_FUNCDESC_DaysInMonth.2.String.Text
 msgid  "Date"
@@ -3245,7 +3245,7 @@ msgstr "أي يوم من أيام الشهر المطلوب"
 
 #: source/datefunc/datefunc.src#RID_DATE_FUNCTION_DESCRIPTIONS.DATE_FUNCDESC_DaysInYear.1.String.Text
 msgid  "Returns the number of days of the year in which the date entered occurs."
-msgstr ""
+msgstr "إرجاع عدد الأيام للسنة التي يمر فيها التاريخ المدخل."
 
 #: source/datefunc/datefunc.src#RID_DATE_FUNCTION_DESCRIPTIONS.DATE_FUNCDESC_DaysInYear.2.String.Text
 msgid  "Date"
@@ -3257,7 +3257,7 @@ msgstr "أي يوم من أيام السنة المطلوبة"
 
 #: source/datefunc/datefunc.src#RID_DATE_FUNCTION_DESCRIPTIONS.DATE_FUNCDESC_WeeksInYear.1.String.Text
 msgid  "Returns the number of weeks of the year in which the date entered occurs"
-msgstr ""
+msgstr "إرجاع عدد الأسابيع للسنة التي يمر فيها التاريخ المدخل."
 
 #: source/datefunc/datefunc.src#RID_DATE_FUNCTION_DESCRIPTIONS.DATE_FUNCDESC_WeeksInYear.2.String.Text
 msgid  "Date"

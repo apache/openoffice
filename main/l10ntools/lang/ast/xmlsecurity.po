@@ -33,7 +33,7 @@ msgstr ""
 
 #: source/component/warnbox.src#RID_XMLSECWB_NO_MOZILLA_PROFILE.WarningBox.Message
 msgid  "Digital signatures functionality could not be used, because no Mozilla user profile was found. Please check the Mozilla installation."
-msgstr ""
+msgstr "Nun pudo usase la función Robles dixitales darréu que nun se proporcionó un perfil d'usuariu de Mozilla. Compruebe la instalación de Mozilla."
 
 #: source/dialogs/macrosecurity.src#RID_XMLSECTP_MACROSEC.TabDialog.Text
 msgid  "Macro Security"
@@ -53,19 +53,19 @@ msgstr "Reaniciar"
 
 #: source/dialogs/macrosecurity.src#RID_XMLSECTP_SECLEVEL.RB_VERYHIGH.RadioButton.Text
 msgid  "~Very high.\nOnly macros from trusted file locations are allowed to run. All other macros, regardless whether signed or not, are disabled."
-msgstr ""
+msgstr "Ni~vel de seguridá peraltu.\nSólo los macros qu'apurren sitios de ficheros de confianza pueden executase. Tolos otros macros, que tengan robla o non, desactívense."
 
 #: source/dialogs/macrosecurity.src#RID_XMLSECTP_SECLEVEL.RB_HIGH.RadioButton.Text
 msgid  "H~igh.\nOnly signed macros from trusted sources are allowed to run. Unsigned macros are disabled."
-msgstr ""
+msgstr "N~ivel de seguridá altu\nSólo los macros roblaos qu'apurren fontes de confianza pueden executase. Los macros non roblaos desactívense."
 
 #: source/dialogs/macrosecurity.src#RID_XMLSECTP_SECLEVEL.RB_MEDIUM.RadioButton.Text
 msgid  "~Medium.\nConfirmation required before executing macros from untrusted sources."
-msgstr ""
+msgstr "Nivel de seguridá ~mediu.\nEncamiéntase una confirmación enantes d'executar los macros qu'apurren fontes non aseguraes."
 
 #: source/dialogs/macrosecurity.src#RID_XMLSECTP_SECLEVEL.RB_LOW.RadioButton.Text
 msgid  "~Low (not recommended).\nAll macros will be executed without confirmation. Use this setting only if you are certain that all documents that will be opened are safe."
-msgstr ""
+msgstr "Nivel de seguridá dé~bil (nun te lo aconseyamos).\nTolos macros execútense ensin confirmación. Nun uses esti parámetru si nun tas seguru de que tolos documentos que van abrise son de total seguridá."
 
 #: source/dialogs/macrosecurity.src#RID_XMLSECTP_TRUSTSOURCES.FL_TRUSTCERT.FixedLine.Text
 msgid  "Trusted certificates"
@@ -93,7 +93,7 @@ msgstr "Allugamientu de ficheros de confianza"
 
 #: source/dialogs/macrosecurity.src#RID_XMLSECTP_TRUSTSOURCES.FI_TRUSTFILELOC.FixedText.Text
 msgid  "Document macros are always executed if they have been opened from one of the following locations."
-msgstr ""
+msgstr "Los macros de documentos execútense siempre si nun s'abren dende ún de los allugamientos que vienen darréu."
 
 #: source/dialogs/macrosecurity.src#RID_XMLSECTP_TRUSTSOURCES.FL_ADD_TRUSTFILELOC.PushButton.Text
 msgid  "Add..."
@@ -125,7 +125,7 @@ msgstr "Amosar les robles..."
 
 #: source/dialogs/warnings.src#RID_XMLSECTP_MACROWARN.FI_DESCR2.FixedText.Text
 msgid  "Macros may contain viruses. Disabling macros for a document is always save. If you disable macros you may lose functionality provided by the document macros."
-msgstr ""
+msgstr "Los macros pueden tener virus. Desactivar los macros d'un documentu ye seguru. Si desactives los macros, puede ser que pierdas delles funionalidaes qu'apurren al documentu."
 
 #: source/dialogs/warnings.src#RID_XMLSECTP_MACROWARN.CB_ALWAYSTRUST.CheckBox.Text
 msgid  "Always trust macros from this source"
@@ -205,7 +205,7 @@ msgstr ""
 
 #: source/dialogs/digitalsignaturesdialog.src#MSG_XMLSECDLG_QUERY_REMOVEDOCSIGNBEFORESIGN.QueryBox.Message
 msgid  "Adding or removing a macro signature will remove all document signatures.\nDo you really want to continue?"
-msgstr ""
+msgstr "Amestando o desaniciando una robla de macro, desaniciará toles robles del documentu.\nDaveres que quies siguir?"
 
 #: source/dialogs/certificateviewer.src#RID_XMLSECDLG_CERTVIEWER.TabDialog.Text
 msgid  "View Certificate"

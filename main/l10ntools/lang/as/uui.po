@@ -67,12 +67,10 @@ msgid  "No Text"
 msgstr "টেক্সট নাই"
 
 #: source/passworddlg.src#DLG_UUI_PASSWORD.STR_ENTER_PASSWORD_TO_OPEN.String.Text
-#, fuzzy
 msgid  "Enter password to open file: \n"
 msgstr "ফাইল খুলিবলৈ পাছৱর্ড ভৰাওক: \n"
 
 #: source/passworddlg.src#DLG_UUI_PASSWORD.STR_ENTER_PASSWORD_TO_MODIFY.String.Text
-#, fuzzy
 msgid  "Enter password to modify file: \n"
 msgstr "ফাইল খুলিবলৈ পাছৱর্ড ভৰাওক: \n"
 
@@ -104,8 +102,9 @@ msgid  "Document in Use"
 msgstr "ডকুমেন্ট ব্যৱহৃত"
 
 #: source/trylater.src#STR_TRYLATER_MSG.String.Text
+#, fuzzy
 msgid  "Document file '$(ARG1)' is locked for editing by:\n\n$(ARG2)\n\nTry again later to save document or save a copy of that document.\n\n"
-msgstr ""
+msgstr "নথিপত্ৰ '$(ARG1)' ক সম্পাদন কৰিব নোৱাৰি:\n\n$(ARG2)\n\nৰক্ষা কৰিবলৈ পাছত চেষ্টা কৰক, বা তাৰ প্ৰতিলিপি ৰক্ষা কৰক ।\n\n"
 
 #: source/trylater.src#STR_TRYLATER_RETRYSAVING_BTN.String.Text
 #, fuzzy
@@ -118,17 +117,14 @@ msgid  "~Save As..."
 msgstr "হিচাপে ছেভ কৰক..."
 
 #: source/ids.src#RID_KEEP_PASSWORD.String.Text
-#, fuzzy
 msgid  "~Remember password until end of session"
 msgstr "অধিবেশনৰ অন্তলৈকে গুপ্তশব্দ মনত ৰাখিব (~R)"
 
 #: source/ids.src#RID_SAVE_PASSWORD.String.Text
-#, fuzzy
 msgid  "~Remember password"
 msgstr "পাছৱৰ্ড মনত পেলাওক"
 
 #: source/ids.src#STR_WARNING_BROKENSIGNATURE_TITLE.String.Text
-#, fuzzy
 msgid  "Invalid Document Signature"
 msgstr "অবৈধ ডকুমেন্ট চহি"
 
@@ -137,258 +133,212 @@ msgid  "Non-Encrypted Streams"
 msgstr ""
 
 #: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_IO_ABORT & ERRCODE_RES_MASK).String.Text
-#, fuzzy
 msgid  "The operation executed on $(ARG1) was aborted."
 msgstr "$(ARG1) ত চলোৱা কাৰ্য্য বন্ধ হ'ল ।"
 
 #: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_IO_ACCESSDENIED & ERRCODE_RES_MASK).String.Text
-#, fuzzy
 msgid  "Access to $(ARG1) was denied."
 msgstr "$(ARG1) লৈ অভিগম নাই ।"
 
 #: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_IO_ALREADYEXISTS & ERRCODE_RES_MASK).String.Text
-#, fuzzy
 msgid  "$(ARG1) already exists."
 msgstr "$(ARG1) ইতিমধ্যে আছে ।"
 
 #: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_IO_TARGETALREADYEXISTS & ERRCODE_RES_MASK).String.Text
-#, fuzzy
 msgid  "Target already exists."
 msgstr "বস্তু ইতিমধ্যে বৰ্তি আছে"
 
 #: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_IO_MODULESIZEEXCEEDED & ERRCODE_RES_MASK).String.Text
 msgid  "You are about to save/export a password protected basic library containing module(s) \n$(ARG1)\nwhich are too large to store in binary format. If you wish users that don't have access to the library password to be able to run macros in those module(s) you must split those modules into a number of smaller modules. Do you wish to continue to save/export this library?"
-msgstr ""
+msgstr "আপুনি পাছৱৰ্ডেৰে সংৰক্ষিত এটা অংশ থকা basic library ৰক্ষা/ৰপ্তানি কৰিব লৈছে । \n$(ARG1)\nযি এই আকৃতিৰ কাৰণে বৰ ডাঙৰ । যদি আপুনি বিচাৰে যে ব্যৱহাৰকৰোঁতাই যাৰ লাইব্ৰেৰী পাছৱৰ্ড নাই সেই অংশত macros চলাব লাগে আপুনি ইয়াক সৰু সৰু টুকুৰা কৰিব লাগিব । আপুনি এই লাইব্ৰেৰী ৰক্ষা/ৰপ্তানি কৰিব বিচাৰে নে ?"
 
 #: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_IO_BADCRC & ERRCODE_RES_MASK).String.Text
-#, fuzzy
 msgid  "The data from $(ARG1) has an incorrect checksum."
 msgstr "$(ARG1) ৰ তথ্য অশুদ্ধ checksum আছে ।"
 
 #: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_IO_CANTCREATE & ERRCODE_RES_MASK).String.Text
-#, fuzzy
 msgid  "The object $(ARG1) cannot be created in directory $(ARG2)."
 msgstr "$(ARG1) ক $(ARG2) সৃষ্টি কৰিব নোৱাৰি ।"
 
 #: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_IO_CANTREAD & ERRCODE_RES_MASK).String.Text
-#, fuzzy
 msgid  "Data of $(ARG1) could not be read."
 msgstr "$(ARG1) ৰ তথ্য পঢ়িব পা ন'গ'ল ।"
 
 #: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_IO_CANTSEEK & ERRCODE_RES_MASK).String.Text
-#, fuzzy
 msgid  "The seek operation on $(ARG1) could not be performed."
 msgstr "$(ARG1) ত বিচাৰিব পৰা ন'গ'ল ।"
 
 #: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_IO_CANTTELL & ERRCODE_RES_MASK).String.Text
-#, fuzzy
 msgid  "The tell operation on $(ARG1) could not be performed."
 msgstr "$(ARG1)  ত tell operation কৰিব পৰা ন'গ'ল ।"
 
 #: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_IO_CANTWRITE & ERRCODE_RES_MASK).String.Text
-#, fuzzy
 msgid  "Data for $(ARG1) could not be written."
 msgstr "$(ARG1) ৰ তথ্য লিখিব পৰা ন'গ'ল ।"
 
 #: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_IO_CURRENTDIR & ERRCODE_RES_MASK).String.Text
-#, fuzzy
 msgid  "Action impossible: $(ARG1) is the current directory."
 msgstr "অসম্ভৱ কাৰ্য্য: $(ARG1) বৰ্ত্তমানৰ পঞ্জিকা ।"
 
 #: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_IO_NOTREADY & ERRCODE_RES_MASK).String.Text
-#, fuzzy
 msgid  "$(ARG1) is not ready."
 msgstr "$(ARG1) সাজু নহয় ।"
 
 #: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_IO_NOTSAMEDEVICE & ERRCODE_RES_MASK).String.Text
-#, fuzzy
 msgid  "Action impossible: $(ARG1) and $(ARG2) are different devices (drives)."
 msgstr "অসম্ভৱ কাৰ্য্য: $(ARG1) আৰু $(ARG2) বেলেগ যন্ত্ৰ (drives) ।"
 
 #: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_IO_GENERAL & ERRCODE_RES_MASK).String.Text
-#, fuzzy
 msgid  "General input/output error while accessing $(ARG1)."
 msgstr "$(ARG1) অভিগম কৰোঁতে সাধাৰণ input/output ভুল ।"
 
 #: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_IO_INVALIDACCESS & ERRCODE_RES_MASK).String.Text
-#, fuzzy
 msgid  "An attempt was made to access $(ARG1) in an invalid way."
 msgstr "অবৈধ ধৰণে $(ARG1) অভিগম কৰা হৈছিল ।"
 
 #: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_IO_INVALIDCHAR & ERRCODE_RES_MASK).String.Text
-#, fuzzy
 msgid  "$(ARG1) contains invalid characters."
 msgstr "$(ARG1) ত অবৈধ আখৰ ।"
 
 #: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_IO_INVALIDDEVICE & ERRCODE_RES_MASK).String.Text
-#, fuzzy
 msgid  "The device (drive) $(ARG1) is invalid."
 msgstr "যন্ত্ৰ (drive) $(ARG1) অবৈধ ।"
 
 #: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_IO_INVALIDLENGTH & ERRCODE_RES_MASK).String.Text
-#, fuzzy
 msgid  "The data from $(ARG1) has an invalid length."
 msgstr "$(ARG1) ৰ তথ্যত অবৈধ দৈৰ্ঘ্য ।"
 
 #: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_IO_INVALIDPARAMETER & ERRCODE_RES_MASK).String.Text
-#, fuzzy
 msgid  "The operation on $(ARG1) was started with an invalid parameter."
 msgstr "অবৈধ স্থিতিমাপেৰে $(ARG1) ত কাৰ্য্য আৰম্ভ কৰা হৈছিল ।"
 
 #: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_IO_ISWILDCARD & ERRCODE_RES_MASK).String.Text
-#, fuzzy
 msgid  "The operation cannot be performed because $(ARG1) contains wildcards."
 msgstr "$(ARG1) wildcards থকা কাৰণে কাৰ্য্য কৰিব নোৱাৰি ।"
 
 #: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_IO_LOCKVIOLATION & ERRCODE_RES_MASK).String.Text
-#, fuzzy
 msgid  "Error during shared access to $(ARG1)."
 msgstr " $(ARG1) লৈ শ্বেয়াৰ্ড প্ৰৱেশ কৰোতে ভুল"
 
 #: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_IO_MISPLACEDCHAR & ERRCODE_RES_MASK).String.Text
-#, fuzzy
 msgid  "$(ARG1) contains misplaced characters."
 msgstr "$(ARG1) ত misplaced আখৰ আছে ।"
 
 #: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_IO_NAMETOOLONG & ERRCODE_RES_MASK).String.Text
-#, fuzzy
 msgid  "The name $(ARG1) contains too many characters."
 msgstr "$(ARG1) নামত বহুত আখৰ ।"
 
 #: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_IO_NOTEXISTS & ERRCODE_RES_MASK).String.Text
-#, fuzzy
 msgid  "$(ARG1) does not exist."
 msgstr "$(ARG1) নাই ।"
 
 #: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_IO_NOTEXISTSPATH & ERRCODE_RES_MASK).String.Text
-#, fuzzy
 msgid  "The path $(ARG1) does not exist."
 msgstr "$(ARG1) পথ নাই ।"
 
 #: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_IO_NOTSUPPORTED & ERRCODE_RES_MASK).String.Text
-#, fuzzy
 msgid  "The operation on $(ARG1) is not supported on this operating system."
 msgstr "ইয়াত $(ARG1) ত কৰা কাৰ্য্য সমৰ্থন নাই ।"
 
 #: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_IO_NOTADIRECTORY & ERRCODE_RES_MASK).String.Text
-#, fuzzy
 msgid  "$(ARG1) is not a directory."
 msgstr "$(ARG1) পঞ্জিকা নহয় ।"
 
 #: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_IO_NOTAFILE & ERRCODE_RES_MASK).String.Text
-#, fuzzy
 msgid  "$(ARG1) is not a file."
 msgstr "$(ARG1) ফাইল নহয় ।"
 
 #: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_IO_OUTOFSPACE & ERRCODE_RES_MASK).String.Text
-#, fuzzy
 msgid  "There is no space left on device $(ARG1)."
 msgstr "$(ARG1) যন্ত্ৰত স্থান নাই ।"
 
 #: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_IO_TOOMANYOPENFILES & ERRCODE_RES_MASK).String.Text
 msgid  "The operation on $(ARG1) cannot be performed because too many files are already open."
-msgstr ""
+msgstr "বহুতো ফাইল খোলাৰ কাৰণে $(ARG1) ত কাৰ্য্য কৰিব নোৱাৰি ।"
 
 #: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_IO_OUTOFMEMORY & ERRCODE_RES_MASK).String.Text
 msgid  "The operation on $(ARG1) cannot be performed because there is no more memory available."
-msgstr ""
+msgstr "স্মৃতিশক্তি নথকাৰ কাৰণে $(ARG1) ত কাৰ্য্য কৰিব নোৱাৰি ।"
 
 #: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_IO_PENDING & ERRCODE_RES_MASK).String.Text
-#, fuzzy
 msgid  "The operation on $(ARG1) cannot continue because more data is pending."
 msgstr "তথ্য ৰৈ থকাৰ কাৰণে $(ARG1) ত কাৰ্য্য কৰিব নোৱাৰি ।"
 
 #: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_IO_RECURSIVE & ERRCODE_RES_MASK).String.Text
-#, fuzzy
 msgid  "$(ARG1) cannot be copied into itself."
 msgstr "$(ARG1)লৈ প্ৰতিলিপি কৰিব নোৱাৰি."
 
 #: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_IO_UNKNOWN & ERRCODE_RES_MASK).String.Text
-#, fuzzy
 msgid  "Unknown input/output error while accessing $(ARG1)."
 msgstr "$(ARG1) অভিগম কৰোঁতে অজ্ঞাত input/output ভুল ।"
 
 #: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_IO_WRITEPROTECTED & ERRCODE_RES_MASK).String.Text
-#, fuzzy
 msgid  "$(ARG1) is write protected."
 msgstr "$(ARG1) সুৰক্ষিত ।"
 
 #: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_IO_WRONGFORMAT & ERRCODE_RES_MASK).String.Text
-#, fuzzy
 msgid  "$(ARG1) is not in the correct format."
 msgstr "$(ARG1) ভুল আকৃতিত ।"
 
 #: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_IO_WRONGVERSION & ERRCODE_RES_MASK).String.Text
-#, fuzzy
 msgid  "The version of $(ARG1) is not correct."
 msgstr "$(ARG1) ৰ সংস্কৰণ ভুল ।"
 
 #: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_IO_NOTEXISTS_VOLUME & ERRCODE_RES_MASK).String.Text
-#, fuzzy
 msgid  "Drive $(ARG1) does not exist."
 msgstr "$(ARG1) চালক নাই ।"
 
 #: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_IO_NOTEXISTS_FOLDER & ERRCODE_RES_MASK).String.Text
-#, fuzzy
 msgid  "Folder $(ARG1) does not exist."
 msgstr "$(ARG1) ফোল্ডাৰ নাই ।"
 
 #: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_WRONGJAVA & ERRCODE_RES_MASK).String.Text
-#, fuzzy
 msgid  "The installed Java version is not supported."
 msgstr "সংস্থাপিত Java সংস্কৰণ সমৰ্থিত নহয় ।"
 
 #: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_WRONGJAVA_VERSION & ERRCODE_RES_MASK).String.Text
-#, fuzzy
 msgid  "The installed Java version $(ARG1) is not supported."
 msgstr "সংস্থাপিত Java সংস্কৰণ $(ARG1) ৰ সমৰ্থন নাই ।"
 
 #: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_WRONGJAVA_MIN & ERRCODE_RES_MASK).String.Text
 msgid  "The installed Java version is not supported, at least version $(ARG1) is required."
-msgstr ""
+msgstr "সংস্থাপিত Java সংস্কৰণ অসমৰ্থিত, অতি কমেও $(ARG1) প্ৰয়োজনীয় ।"
 
 #: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_WRONGJAVA_VERSION_MIN & ERRCODE_RES_MASK).String.Text
 msgid  "The installed Java version $(ARG1) is not supported, at least version $(ARG2) is required."
-msgstr ""
+msgstr "সংস্থাপিত Java সংস্কৰণ $(ARG1) ৰ সমৰ্থন নাই, অতি কমেও $(ARG2) প্ৰয়োজনীয় ।"
 
 #: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_BADPARTNERSHIP & ERRCODE_RES_MASK).String.Text
-#, fuzzy
 msgid  "The data associated with the partnership is corrupted."
 msgstr "অংশীদাৰৰ সৈতে সন্মিলিত ডাটাটো বেয়া হৈছে."
 
 #: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_BADPARTNERSHIP_NAME & ERRCODE_RES_MASK).String.Text
-#, fuzzy
 msgid  "The data associated with the partnership $(ARG1) is corrupted."
 msgstr "অংশীদাৰ $(ARG1)ৰ সৈতে সন্মিলিত ডাটাটো বেয়া হৈছে."
 
 #: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_IO_NOTREADY_VOLUME & ERRCODE_RES_MASK).String.Text
-#, fuzzy
 msgid  "Volume $(ARG1) is not ready."
 msgstr "ভলিওম $(ARG1) সাজু নহয় ।"
 
 #: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_IO_NOTREADY_REMOVABLE & ERRCODE_RES_MASK).String.Text
-#, fuzzy
 msgid  "$(ARG1) is not ready; please insert a storage medium."
 msgstr "$(ARG1) সাজু নহয়; এটা ভঁৰাল দিয়ক ।"
 
 #: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_IO_NOTREADY_VOLUME_REMOVABLE & ERRCODE_RES_MASK).String.Text
-#, fuzzy
 msgid  "Volume $(ARG1) is not ready; please insert a storage medium."
 msgstr "ভলিওম $(ARG1) সাজু নহয়; এটা ভঁৰাল দিয়ক ।"
 
 #: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_WRONGMEDIUM & ERRCODE_RES_MASK).String.Text
-#, fuzzy
 msgid  "Please insert disk $(ARG1)."
 msgstr "অনুগ্ৰহ কৰি ডিস্ক$(ARG1) ভৰাওক"
 
 #: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_IO_CANTCREATE_NONAME & ERRCODE_RES_MASK).String.Text
-#, fuzzy
 msgid  "The object cannot be created in directory $(ARG1)."
 msgstr "$(ARG1) ত বস্তু সৃষ্টি কৰিব নোৱাৰি ।"
 
 #: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_IO_UNSUPPORTEDOVERWRITE & ERRCODE_RES_MASK).String.Text
 msgid  "%PRODUCTNAME cannot keep files from being overwritten when this transmission protocol is used. Do you want to continue anyway?"
-msgstr ""
+msgstr "ট্ৰেনছমিশ্বন প্ৰট'কল ব্যৱহাৰ কৰোতে%PRODUCTNAME এ ফাইলবোৰ অভাৰৰাইট নহোৱাকৈ ৰাখিব নোৱাৰে. আপুনি তথাপি অব্যাহত ৰাখিবলৈ বিচাৰেনেকি?"
 
 #: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_IO_BROKENPACKAGE & ERRCODE_RES_MASK).String.Text
 msgid  "The file '$(ARG1)' is corrupt and therefore cannot be opened. %PRODUCTNAME can try to repair the file.\n\nThe corruption could be the result of document manipulation or of structural document damage due to data transmission.\n\nWe recommend that you do not trust the content of the repaired document.\nExecution of macros is disabled for this document.\n\nShould %PRODUCTNAME repair the file?\n"
@@ -396,26 +346,25 @@ msgstr ""
 
 #: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_IO_BROKENPACKAGE_CANTREPAIR & ERRCODE_RES_MASK).String.Text
 msgid  "The file '$(ARG1)' could not be repaired and therefore cannot be opened."
-msgstr ""
+msgstr " '$(ARG1)' ফাইলটো মেৰামতি কৰিব পৰা নগ'ল আৰু সেইবাবে খুলিব পৰা নাযাব."
 
 #: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_CONFIGURATION_BROKENDATA_NOREMOVE & ERRCODE_RES_MASK).String.Text
 msgid  "Configuration data in '$(ARG1)' is corrupted. Without this data some functions may not operate correctly.\nDo you want to continue startup of %PRODUCTNAME without the corrupted configuration data?"
-msgstr ""
+msgstr " '$(ARG1)'ত ব্যক্তিগত ৰূপৰেখা ডাটা বেয়া হৈছে. এই ডাটাৰ অবিহনে কিছুমান ফাংশ্বনে শুদ্ধকৈ অপাৰেট নকৰিব পাৰে..\nবেয়া হোৱা  ৰূপৰেখা ডাটাৰ অবিহনে %PRODUCTNAMEৰ ষ্টাৰ্টআপ অব্যাহত ৰাখিবলৈ বিচাৰেনেকি?"
 
 #: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_CONFIGURATION_BROKENDATA_WITHREMOVE & ERRCODE_RES_MASK).String.Text
 msgid  "The personal configuration file '$(ARG1)' is corrupted and must be deleted to continue. Some of your personal settings may be lost.\nDo you want to continue startup of %PRODUCTNAME without the corrupted configuration data?"
-msgstr ""
+msgstr " '$(ARG1)' ব্যক্তিগত ৰূপৰেখা ফাইলটো বেয়া হৈছে আৰু অব্যাহত ৰখাৰ বাবে ডিলিট কৰিব লাগিব. আপোনাৰ কিছুমান ব্যক্তিগত ছেটিং হেৰাব পাৰে.\nবেয়া হোৱা  ৰূপৰেখা ডাটাৰ অবিহনে %PRODUCTNAMEৰ ষ্টাৰ্টআপ অব্যাহত ৰাখিবলৈ বিচাৰেনেকি?"
 
 #: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_CONFIGURATION_BACKENDMISSING & ERRCODE_RES_MASK).String.Text
 msgid  "The configuration data source '$(ARG1)' is unavailable. Without this data some functions may not operate correctly."
-msgstr ""
+msgstr " '$(ARG1)' ৰূপৰেখা ডাটা উত্সটো মজুত নাই. এই ডাটাৰ অবিহনে কিছুমান ফাংশ্বনে শুদ্ধকৈ অপাৰেট নকৰিব পাৰে."
 
 #: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_CONFIGURATION_BACKENDMISSING_WITHRECOVER & ERRCODE_RES_MASK).String.Text
 msgid  "The configuration data source '$(ARG1)' is unavailable. Without this data some functions may not operate correctly.\nDo you want to continue startup of %PRODUCTNAME without the missing configuration data?"
-msgstr ""
+msgstr " '$(ARG1)' ৰূপৰেখা ডাটা উত্সটো মজুত নাই. এই ডাটাৰ অবিহনে কিছুমান ফাংশ্বনে শুদ্ধকৈ অপাৰেট নকৰিব পাৰে.\nৰূপৰেখা ডাটা নেহেৰুৱাকৈ %PRODUCTNAMEৰ ষ্টাৰ্টআপ অব্যাহত ৰাখিবলৈ বিচাৰেনেকি?"
 
 #: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_INVALID_XFORMS_SUBMISSION_DATA & ERRCODE_RES_MASK).STRING.Text
-#, fuzzy
 msgid  "The form contains invalid data. Do you still want to continue?"
 msgstr "ফৰ্মখনত অবৈধ ডাটা আছে. আপুনি তথাপি অব্যাহত ৰাখিবলৈ বিচাৰেনেকি?"
 
@@ -437,37 +386,33 @@ msgstr ""
 
 #: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_UNKNOWNAUTH_UNTRUSTED).STRING.Text
 msgid  "Unable to verify the identity of $(ARG1) site.\n\nBefore accepting this certificate, you should examine this site's certificate carefully. Are you willing to accept this certificate for the purpose of identifying the Web site $(ARG1)?"
-msgstr ""
+msgstr "$(ARG1) ছাইট চিহ্নিত নহয় ।\n\nইয়াক গ্ৰহণ কৰাৰ আগতে, আপুনি ইয়াক পৰীক্ষা কৰিব লাগে । $(ARG1) চিনাকি কৰিবলৈ আপুনি এই প্ৰমাণপত্ৰ গ্ৰহণ কৰিব নে?"
 
 #: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_SSLWARN_EXPIRED_1).STRING.Text
 msgid  "$(ARG1) is a site that uses a security certificate to encrypt data during transmission, but its certificate expired on $(ARG2).\n\nYou should check to make sure that your computer's time is correct."
-msgstr ""
+msgstr "$(ARG1) এ এটা সুৰক্ষা প্ৰমাণপত্ৰ ব্যৱহাৰ কৰে তথ্য লেনদেনৰ কাৰণে, কিন্ত $(ARG2) ত ই শেষ হ'ল ।\n\nআপোনাৰ ঘড়ী শুদ্ধ হোৱা আপুনি পৰীক্ষা কৰিব লাগে ।"
 
 #: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_SSLWARN_DOMAINMISMATCH_1).STRING.Text
 msgid  "You have attempted to establish a connection with $(ARG1). However, the security certificate presented belongs to $(ARG2). It is possible, though unlikely, that someone may be trying to intercept your communication with this web site.\n\nIf you suspect the certificate shown does not belong to $(ARG1), please cancel the connection and notify the site administrator.\n\nWould you like to continue anyway?"
-msgstr ""
+msgstr "আপুনি $(ARG1) ৰ লগত সংযুক্ত হ'ব লৈছে । কিন্তু, সুৰক্ষাৰ প্ৰমাণপত্ৰ $(ARG2) ৰ । এইটো সম্ভৱ, কিন্তু, যে কোনোবাই আপোনাৰ যোগাযোগ জানিব বিচাৰিছে ।\n\nযদি আপুনি ভাবে যে প্ৰমাণপত্ৰ $(ARG1) ৰ নহয়, সংযোগ বাতিল কৰক আৰু ছাইটৰ প্ৰশাসকক কওক ।\n\nআপুনি আগবাঢ়িব নে?"
 
 #: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_SSLWARN_INVALID_1).STRING.Text
 msgid  "The certificate could not be validated. You should examine this site's certificate carefully.\n\nIf you suspect the certificate shown, please cancel the connection and notify the site administrator."
-msgstr ""
+msgstr "প্ৰমাণপত্ৰ পৰীক্ষা কৰা হোৱা নাই । আপুনি ভালকৈ পৰীক্ষা কৰিব লাগে ।\n\nদেখুৱা প্ৰমাণপত্ৰ সন্দেহ কৰিলে, সংযোগ বাতিল কৰক আৰু ছাইটৰ প্ৰশাসকক কওক ।"
 
 #: source/ids.src#RID_UUI_ERRHDL.(TITLE_UUI_SSLWARN_DOMAINMISMATCH).STRING.Text
-#, fuzzy
 msgid  "Security Warning: Domain Name Mismatch"
 msgstr "সুৰক্ষাৰ সকীয়নি :ডোমেইন নাম ভুল"
 
 #: source/ids.src#RID_UUI_ERRHDL.(TITLE_UUI_SSLWARN_EXPIRED).STRING.Text
-#, fuzzy
 msgid  "Security Warning: Server Certificate Expired"
 msgstr "সুৰক্ষাৰ সকীয়নি :ছাৰ্ভাৰৰ প্ৰমাণপত্ৰ শেষ হ'ল"
 
 #: source/ids.src#RID_UUI_ERRHDL.(TITLE_UUI_SSLWARN_INVALID).STRING.Text
-#, fuzzy
 msgid  "Security Warning: Server Certificate Invalid"
 msgstr "সুৰক্ষাৰ সকীয়নি :ছাৰ্ভাৰৰ প্ৰমাণপত্ৰ অবৈধ"
 
 #: source/fltdlg.src#DLG_FILTER_SELECT.ModalDialog.Text
-#, fuzzy
 msgid  "Filter Selection"
 msgstr "ফিল্টাৰ নির্বাচন"
 
@@ -476,7 +421,6 @@ msgid  "Authentication Required"
 msgstr ""
 
 #: source/logindlg.src#DLG_UUI_LOGIN.FT_LOGIN_ERROR.FixedText.Text
-#, fuzzy
 msgid  "Message from server:"
 msgstr " ছাৰ্ভাৰৰ পৰা খবৰ  "
 
@@ -485,31 +429,26 @@ msgid  "Enter user name and password for: \n%1"
 msgstr ""
 
 #: source/logindlg.src#DLG_UUI_LOGIN.STR_LOGIN_REALM.String.Text
-msgid  "Enter user name and password for: \n"%2" on %1"
+msgid  "Enter user name and password for: \n\"%2\" on %1"
 msgstr ""
 
 #: source/logindlg.src#DLG_UUI_LOGIN.FT_LOGIN_PATH.FixedText.Text
-#, fuzzy
 msgid  "~Path"
 msgstr "পথ"
 
 #: source/logindlg.src#DLG_UUI_LOGIN.FT_LOGIN_USERNAME.FixedText.Text
-#, fuzzy
 msgid  "~User name"
 msgstr "ব্যৱহাৰকৰ্তাৰ নাম"
 
 #: source/logindlg.src#DLG_UUI_LOGIN.FT_LOGIN_PASSWORD.FixedText.Text
-#, fuzzy
 msgid  "Pass~word"
 msgstr "পাছৱৰ্ড"
 
 #: source/logindlg.src#DLG_UUI_LOGIN.FT_LOGIN_ACCOUNT.FixedText.Text
-#, fuzzy
 msgid  "A~ccount"
 msgstr "একাউন্ট"
 
 #: source/logindlg.src#DLG_UUI_LOGIN.CB_LOGIN_SAVEPASSWORD.CheckBox.Text
-#, fuzzy
 msgid  "~Remember password"
 msgstr "পাছৱৰ্ড মনত পেলাওক"
 
@@ -518,60 +457,50 @@ msgid  "~Use system credentials"
 msgstr ""
 
 #: source/cookiedg.src#DLG_COOKIES.RB_INFUTURE_SEND.RadioButton.Text
-#, fuzzy
 msgid  "~Send"
 msgstr "পথাওক"
 
 #: source/cookiedg.src#DLG_COOKIES.RB_INFUTURE_IGNORE.RadioButton.Text
-#, fuzzy
 msgid  "I~gnore"
 msgstr "উপেক্ষা কৰক"
 
 #: source/cookiedg.src#DLG_COOKIES.RB_INFUTURE_INTERACTIVE.RadioButton.Text
-#, fuzzy
 msgid  "I~nteractive"
 msgstr "ইন্টাৰেক্টিভ"
 
 #: source/cookiedg.src#DLG_COOKIES.GB_INFUTURE.GroupBox.Text
-#, fuzzy
 msgid  "Future Cookie Handling"
 msgstr "ভবিষ্যতৰ কুকী হেণ্ডলিং"
 
 #: source/cookiedg.src#DLG_COOKIES.BTN_COOKIES_CANCEL.PushButton.Text
-#, fuzzy
 msgid  "~Ignore"
 msgstr "উপেক্ষা কৰক"
 
 #: source/cookiedg.src#DLG_COOKIES.BTN_COOKIES_OK.PushButton.Text
-#, fuzzy
 msgid  "~Send"
 msgstr "পথাওক"
 
 #: source/cookiedg.src#STR_COOKIES_RECV_START.String.Text
 msgid  "The '${HOST}' server wishes to set one or more cookies.\nCookies contain information referring to certain URL classes. If %PRODUCTNAME later requests a document with a URL corresponding to the class of a previously set cookie, %PRODUCTNAME will send this information to the server. This allows a server to recognize the status of a WWW application, e.g., when shopping online.\n\nThe following Cookies should be set:\n\n"
-msgstr ""
+msgstr "'${HOST}' ছাৰ্ভাৰটোৱে এটা বা বেছি কুকী ছেট কৰিবলৈ ইচ্ছা কৰে.\nকুকীজত  নিৰ্দিষ্ট URL শ্ৰেণীবোৰ প্ৰসংগ কৰা তথ্য আছে. যদি %PRODUCTNAMEএ পিছত আগতে ছেট কৰা কুকীৰ লগত সামঞ্জস্য থকা URLৰ সৈতে  ডকুমেন্ট অনুৰোধ কৰে,%PRODUCTNAMEএ এই তথ্যটো ছাৰ্ভাৰলৈ পথাই দিব. ই ছাৰ্ভাৰ এটাক %PRODUCTNAMEএ এই তথ্যটো সেই ছাৰ্ভাৰটোলৈ পথাব. ই ছাৰ্ভাৰ এটাক WWW প্ৰয়োগ এটাৰ স্থিতি চিনাক্ত কৰিবলৈ অনুমতি দিয়ে, উদাহৰণ স্বৰূপে, শ্বপিং অনলাইনৰ সময়ত.\n\nতলত দিয়া কুকীজ ছেট কৰিব লাগিব:\n\n"
 
 #: source/cookiedg.src#STR_COOKIES_RECV_COOKIES.String.Text
-#, fuzzy
 msgid  "Domain: ${DOMAIN}, Path: ${PATH}, Cookie: ${COOKIE}.\n"
 msgstr "Domain: ${DOMAIN}, Path: ${PATH}, Cookie: ${COOKIE}.\n"
 
 #: source/cookiedg.src#STR_COOKIES_RECV_TITLE.String.Text
-#, fuzzy
 msgid  "Cookie Reception"
 msgstr "কুকী অভ্যৰ্থনা"
 
 #: source/cookiedg.src#STR_COOKIES_SEND_START.String.Text
 msgid  "%PRODUCTNAME has saved cookies for the server '${HOST}' which will be sent when requesting the document ${PATH}.\nCookies contain information which refers to certain URL classes. They are sent by some servers to %PRODUCTNAME where they are saved when certain documents are accessed. If %PRODUCTNAME loads a document that, according to the URL, corresponds to a class of one of the previously received Cookies, %PRODUCTNAME will send this information to that server. This enables a server to keep track of the status of a WWW application, e.g., when shopping online.\n\nThe following Cookies should be set:\n\n"
-msgstr ""
+msgstr "'${HOST}' ছাৰ্ভাৰৰ বাবে %PRODUCTNAMEএ কুকীজ ছেভ কৰিছে যিটোক  ${PATH}ডকুমেন্টটো অনুৰোধ কৰোঁতে পথাই দিয়া হ'ব.\nকুকীজত তথ্য আছে যিবোৰে নিৰ্দিষ্ট URL শ্ৰেণীবোৰ প্ৰসংগ কৰে. সেইবোৰক কিছুমান ছাৰ্ভাৰৰ দ্বাৰা %PRODUCTNAMEলৈ পথোৱা হ'ল য'ত সেইবোৰক নিৰ্দিষ্ট ডকুমেন্ট প্ৰবেশ কঁৰোতে ছেভ কৰা হ'ল. যদি  %PRODUCTNAMEএ এটা ডকুমেন্ট ল'ড কৰে যিটো, URLটোৰ মতে, আগতে গ্ৰহণ কৰা কুকীজৰ এটা শ্ৰেণীৰ লগত সামঞ্জস্য আছে, %PRODUCTNAMEএ এই তথ্যটো সেই ছাৰ্ভাৰটোলৈ পথাব. ই ছাৰ্ভাৰ এটাক WWW প্ৰয়োগ এটাৰ স্থিতিৰ ট্ৰেক ৰাখিবলৈ সক্ষম কৰে, উদাহৰণ স্বৰূপে, শ্বপিং অনলাইনৰ সময়ত.\n\nতলত দিয়া কুকীজ ছেট কৰিব লাগিব:\n\n"
 
 #: source/cookiedg.src#STR_COOKIES_SEND_COOKIES.String.Text
-#, fuzzy
 msgid  "Domain: ${DOMAIN}, Path: ${PATH}, Cookie: ${COOKIE}.\n"
 msgstr "Domain: ${DOMAIN}, Path: ${PATH}, Cookie: ${COOKIE}.\n"
 
 #: source/cookiedg.src#STR_COOKIES_SEND_TITLE.String.Text
-#, fuzzy
 msgid  "Send Cookies"
 msgstr "কুকীজ পথাওক"
 
@@ -586,12 +515,14 @@ msgid  "The password is incorrect. The file cannot be modified."
 msgstr "পাছৱৰ্ড ভুল । আলেখ্যন খুলিব নোৱাৰি ।"
 
 #: source/passworderrs.src#STR_ERROR_MASTERPASSWORD_WRONG.String.Text
+#, fuzzy
 msgid  "The master password is incorrect."
-msgstr ""
+msgstr "ভুল মূখ্য পাছৱৰ্ড দিয়া হৈছে । %PRODUCTNAME এ ৱেব প্ৰৱেশৰ তথ্য নাপালে যাক মূখ্য পাছৱৰ্ডেৰে সংৰক্ষিত কৰা হৈছে ।\n\nমন কৰিব: পাছৱৰ্ড কেছ চেঞ্চিটিভ আৰু কমেও ৫ টা আখৰ দীঘল ।"
 
 #: source/passworderrs.src#STR_ERROR_SIMPLE_PASSWORD_WRONG.String.Text
+#, fuzzy
 msgid  "The password is incorrect."
-msgstr ""
+msgstr "ভুল মূখ্য পাছৱৰ্ড দিয়া হৈছে । %PRODUCTNAME এ ৱেব প্ৰৱেশৰ তথ্য নাপালে যাক মূখ্য পাছৱৰ্ডেৰে সংৰক্ষিত কৰা হৈছে ।\n\nমন কৰিব: পাছৱৰ্ড কেছ চেঞ্চিটিভ আৰু কমেও ৫ টা আখৰ দীঘল ।"
 
 #: source/passworderrs.src#STR_ERROR_PASSWORDS_NOT_IDENTICAL.String.Text
 #, fuzzy
@@ -611,26 +542,22 @@ msgid  "Rename"
 msgstr ""
 
 #: source/openlocked.src#STR_OPENLOCKED_TITLE.String.Text
-#, fuzzy
 msgid  "Document in Use"
 msgstr "ডকুমেন্ট ব্যৱহৃত"
 
 #: source/openlocked.src#STR_OPENLOCKED_MSG.String.Text
 msgid  "Document file '$(ARG1)' is locked for editing by:\n\n$(ARG2)\n\nOpen document read-only or open a copy of the document for editing.\n\n"
-msgstr ""
+msgstr "নথিপত্ৰ '$(ARG1)' ক সম্পাদন কৰিব নোৱাৰি:\n\n$(ARG2)\n\nঅকল পঢ়িবৰ কাৰণে খোলক, বা এই বাণি আওকাণ কৰি সম্পাদন কৰক ।\n\n"
 
 #: source/openlocked.src#STR_OPENLOCKED_OPENREADONLY_BTN.String.Text
-#, fuzzy
 msgid  "Open ~Read-Only"
 msgstr "অকল পঢ়িবলৈ খোলক (~R)"
 
 #: source/openlocked.src#STR_OPENLOCKED_OPENCOPY_BTN.String.Text
-#, fuzzy
 msgid  "Open ~Copy"
 msgstr "খোলক ~Copy"
 
 #: source/openlocked.src#STR_UNKNOWNUSER.String.Text
-#, fuzzy
 msgid  "Unknown User"
 msgstr "অজ্ঞাত ব্যৱহাৰকৰ্তা"
 
@@ -640,29 +567,25 @@ msgstr ""
 
 #: source/filechanged.src#STR_FILECHANGED_MSG.String.Text
 msgid  "The file has been changed since it was opened for editing in %PRODUCTNAME. Saving your version of the document will overwrite changes made by others.\n\nDo you want to save anyway?\n\n"
-msgstr ""
+msgstr "%PRODUCTNAME ত সম্পাদনৰ কাৰণে খোলাৰ পৰা নথিপত্ৰ সলনি হ'ল । আপোনাৰ সংস্কৰণে অন্যই কৰা সলনিত অভাৰৰাইট কৰিব ।\n\nআপুনি ৰক্ষা কৰিব বিচাৰে নেকি?\n\n"
 
 #: source/filechanged.src#STR_FILECHANGED_SAVEANYWAY_BTN.String.Text
-#, fuzzy
 msgid  "~Save Anyway"
 msgstr "যিকোনো উপায়ে ৰক্ষা কৰক"
 
 #: source/newerverwarn.src#RID_DLG_NEWER_VERSION_WARNING.ModalDialog.Text
-#, fuzzy
 msgid  "%PRODUCTNAME Update Available"
 msgstr "%PRODUCTNAME উন্নয়ন আছে"
 
 #: source/newerverwarn.src#RID_DLG_NEWER_VERSION_WARNING.FT_INFO.FixedText.Text
 msgid  "This document was created by a newer version of %PRODUCTNAME. It may contain features not supported by your current version.\n\nClick 'Update Now...' to run online update and get the latest version of %PRODUCTNAME."
-msgstr ""
+msgstr "এই আলেখ্য %PRODUCTNAME ৰ নতুন সংস্কৰণেৰে বনোৱা হৈছে । ইয়াত আপোনাৰ বৰ্ত্তমানৰ সংস্কৰণৰ গুণ নাথাকিবও পাৰে ।\n\n'এতিয়া উন্নয়ন কৰক...' টিপক অনলাইন উন্নয়ন চলাবলৈ আৰু  %PRODUCTNAME ৰ শেহতীয়া সংস্কৰণ পাওক ।"
 
 #: source/newerverwarn.src#RID_DLG_NEWER_VERSION_WARNING.PB_UPDATE.PushButton.Text
-#, fuzzy
 msgid  "~Update Now..."
 msgstr "আপডেট কৰক"
 
 #: source/newerverwarn.src#RID_DLG_NEWER_VERSION_WARNING.PB_LATER.CancelButton.Text
-#, fuzzy
 msgid  "~Later"
 msgstr "পাছত"
 
@@ -712,8 +635,9 @@ msgid  "View Signatures..."
 msgstr "চহি চাওক..."
 
 #: source/secmacrowarnings.src#RID_XMLSECDLG_MACROWARN.FI_DESCR2.FixedText.Text
+#, fuzzy
 msgid  "Macros may contain viruses. Disabling macros for a document is always safe. If you disable macros you may lose functionality provided by the document macros."
-msgstr ""
+msgstr "Macros ত ভাইৰাছ থাকিব পাৰে । তাক নিষ্ক্ৰিয় কৰা সুৰক্ষিত । macros নিষ্ক্ৰিয় কৰিলে কাৰ্যক্ষমতা কমিব পাৰে ।"
 
 #: source/secmacrowarnings.src#RID_XMLSECDLG_MACROWARN.CB_ALWAYSTRUST.CheckBox.Text
 #, fuzzy
@@ -731,66 +655,57 @@ msgid  "~Disable Macros"
 msgstr "Macros নিষ্ক্ৰিয় কৰক (~D)"
 
 #: source/masterpassworddlg.src#DLG_UUI_MASTERPASSWORD.FT_MASTERPASSWORD.FixedText.Text
-#, fuzzy
 msgid  "Enter password"
 msgstr "পাছৱর্ড ভৰাওক"
 
 #: source/masterpassworddlg.src#DLG_UUI_MASTERPASSWORD.HelpButton.Text
-#, fuzzy
 msgid  "Enter Master Password"
 msgstr "মূখ্য পাছৱর্ড ভৰাওক"
 
 #: source/masterpasscrtdlg.src#DLG_UUI_MASTERPASSWORD_CRT.ModalDialog.Text
-#, fuzzy
 msgid  "Set Master Password"
 msgstr "মূখ্য পাছৱৰ্ড নিৰ্ধাৰণ কৰক"
 
 #: source/masterpasscrtdlg.src#DLG_UUI_MASTERPASSWORD_CRT.FT_INFOTEXT.FixedText.Text
 msgid  "Passwords for web connections are protected by a master password. You will be asked to enter it once per session, if %PRODUCTNAME retrieves a password from the protected password list."
-msgstr ""
+msgstr "ৱেব সংযোগৰ বাবে পাছৱৰ্ডক সুৰক্ষিত কৰা হয় । পৰতি অধিবেশনে আপুনি তাক দিব লাগিব, যদি %PRODUCTNAME এ সেই তালিকাৰ পৰা কোনো পাছৱৰ্ড উদ্ধাৰ কৰে ।"
 
 #: source/masterpasscrtdlg.src#DLG_UUI_MASTERPASSWORD_CRT.FT_MASTERPASSWORD_CRT.FixedText.Text
-#, fuzzy
 msgid  "~Enter password"
 msgstr "পাছৱর্ড ভৰাওক"
 
 #: source/masterpasscrtdlg.src#DLG_UUI_MASTERPASSWORD_CRT.FT_MASTERPASSWORD_REPEAT.FixedText.Text
-#, fuzzy
 msgid  "~Reenter password"
 msgstr "পাছৱৰ্ড পুনঃ লিখক"
 
 #: source/masterpasscrtdlg.src#DLG_UUI_MASTERPASSWORD_CRT.FT_CAUTIONTEXT.FixedText.Text
 msgid  "Caution: If you forget the master password, you will be unable to access any of the information protected by it. Passwords are case-sensitive."
-msgstr ""
+msgstr "মনত ৰাখিব: আপুনি নিৰ্ধাৰণ কৰা মূখ্য পাছৱৰ্ড সদায়ে মনত ৰাখিব । ইয়াক পাহৰিলে, ইয়াৰ দ্বাৰা সংৰক্ষিত তথ্য নাপাব । পাছৱৰ্ড কেছ চেঞ্চিটিভ আৰু কমেও ৫ টা আখৰ দীঘল ।"
 
 #: source/alreadyopen.src#STR_ALREADYOPEN_MSG.String.Text
 msgid  "Document file '$(ARG1)' is locked for editing by yourself on a different system since $(ARG2)\n\nOpen document read-only, or ignore own file locking and open the document for editing.\n\n"
-msgstr ""
+msgstr "নথিপত্ৰ '$(ARG1)' ক সম্পাদন কৰিব নোৱাৰি কাৰণ আপুনি নিজেই তাক $(ARG2) ৰ পৰা অন্য এটা স্থানত লক কৰিছে ।\n\nঅকল পঢ়িবৰ কাৰণে খোলক, বা এই বাণি আওকাণ কৰি সম্পাদন কৰক ।\n\n"
 
 #: source/alreadyopen.src#STR_ALREADYOPEN_READONLY_BTN.String.Text
-#, fuzzy
 msgid  "Open ~Read-Only"
 msgstr "অকল পঢ়িবলৈ খোলক (~R)"
 
 #: source/alreadyopen.src#STR_ALREADYOPEN_OPEN_BTN.String.Text
-#, fuzzy
 msgid  "~Open"
 msgstr "খোলক"
 
 #: source/alreadyopen.src#STR_ALREADYOPEN_SAVE_MSG.String.Text
 msgid  "Document file '$(ARG1)' is locked for editing by yourself on a different system since $(ARG2)\n\nClose document on other system and retry saving or ignore own file locking and save current document.\n\n"
-msgstr ""
+msgstr "নথিপত্ৰ '$(ARG1)' ক সম্পাদন কৰিব নোৱাৰি কাৰণ আপুনি নিজেই তাক $(ARG2) ৰ পৰা অন্য এটা স্থানত লক কৰিছে ।\n\nইটো প্ৰণালীত তাক বন্ধ কৰক আৰু পুনঃ ৰক্ষা কৰক বা এই বাণি আওকাণ কৰি সম্পাদন কৰক ।\n\n"
 
 #: source/alreadyopen.src#STR_ALREADYOPEN_RETRY_SAVE_BTN.String.Text
-#, fuzzy
 msgid  "~Retry Saving"
 msgstr "ৰক্ষাৰ পুনৰ চেষ্টা কৰক"
 
 #: source/alreadyopen.src#STR_ALREADYOPEN_SAVE_BTN.String.Text
-#, fuzzy
 msgid  "~Save"
 msgstr "ছেভ কৰক"
 
 #: source/lockfailed.src#STR_LOCKFAILED_MSG.String.Text
 msgid  "The file could not be locked for exclusive access by %PRODUCTNAME, due to missing permission to create a lock file on that file location."
-msgstr ""
+msgstr "%PRODUCTNAMEৰ দ্বাৰা নথিপত্ৰ লক কৰিব পৰা ন'গ'ল, সেই স্থানত লক ফাইল সৃষ্টি কৰা অনুমতি নথকাৰ কাৰণে ।"

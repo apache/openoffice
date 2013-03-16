@@ -57,24 +57,21 @@ msgid  "Font Sizes"
 msgstr "أحجام الخط"
 
 #: source/smres.src#RID_FONTSIZEDIALOG.1.FixedText.Text
-#, fuzzy
 msgid  "Base ~size"
 msgstr "حج~م القاعدة"
 
 #: source/smres.src#RID_FONTSIZEDIALOG.4.FixedText.Text
-#, fuzzy
 msgid  "~Text"
 msgstr "ال~نص"
 
 #: source/smres.src#RID_FONTSIZEDIALOG.5.FixedText.Text
-#, fuzzy
 msgid  "~Indexes"
 msgstr "~فهارس"
 
 #: source/smres.src#RID_FONTSIZEDIALOG.6.FixedText.Text
 #, fuzzy
 msgid  "~Functions"
-msgstr "ال~دالات"
+msgstr "~دوال"
 
 #: source/smres.src#RID_FONTSIZEDIALOG.7.FixedText.Text
 #, fuzzy
@@ -94,7 +91,7 @@ msgstr "أحجام نسبية"
 #: source/smres.src#RID_FONTSIZEDIALOG.1.PushButton.Text
 #, fuzzy
 msgid  "~Default"
-msgstr "ا~فتراضي"
+msgstr "الا~فتراضي"
 
 #: source/smres.src#RID_FONTTYPEDIALOG.ModalDialog.Text
 #, fuzzy
@@ -154,12 +151,12 @@ msgstr "ت~عديل"
 #: source/smres.src#RID_FONTTYPEDIALOG.2.PushButton.Text
 #, fuzzy
 msgid  "~Default"
-msgstr "الا~فتراضي"
+msgstr "ا~فتراضي"
 
 #: source/smres.src#RID_DISTANCEDIALOG.ModalDialog.Text
 #, fuzzy
 msgid  "Spacing"
-msgstr "تباعد"
+msgstr "التباعد"
 
 #: source/smres.src#RID_DISTANCEDIALOG.1.MetricField.CustomUnitText
 #, fuzzy
@@ -184,7 +181,7 @@ msgstr "%"
 #: source/smres.src#RID_DISTANCEDIALOG.1.PushButton.Text
 #, fuzzy
 msgid  "~Default"
-msgstr "ا~فتراضي"
+msgstr "الا~فتراضي"
 
 #: source/smres.src#RID_DISTANCEDIALOG.1.MenuButton.Text
 #, fuzzy
@@ -199,12 +196,12 @@ msgstr "فئة"
 #: source/smres.src#RID_DISTANCEDIALOG.1.1.String.Text
 #, fuzzy
 msgid  "Spacing"
-msgstr "التباعد"
+msgstr "تباعد"
 
 #: source/smres.src#RID_DISTANCEDIALOG.1.2.String.Text
 #, fuzzy
 msgid  "~Spacing"
-msgstr "تبا~عد"
+msgstr "الت~باعد"
 
 #: source/smres.src#RID_DISTANCEDIALOG.1.3.String.Text
 #, fuzzy
@@ -279,7 +276,7 @@ msgstr "الحد الأ~دنى"
 #: source/smres.src#RID_DISTANCEDIALOG.6.1.String.Text
 #, fuzzy
 msgid  "Brackets"
-msgstr "الأقواس"
+msgstr "أقواس"
 
 #: source/smres.src#RID_DISTANCEDIALOG.6.2.String.Text
 #, fuzzy
@@ -289,7 +286,7 @@ msgstr "~حجم زائد (يمين/يسار)"
 #: source/smres.src#RID_DISTANCEDIALOG.6.3.String.Text
 #, fuzzy
 msgid  "~Spacing"
-msgstr "الت~باعد"
+msgstr "تبا~عد"
 
 #: source/smres.src#RID_DISTANCEDIALOG.6.5.String.Text
 #, fuzzy
@@ -314,7 +311,7 @@ msgstr "ت~باعد الأعمدة"
 #: source/smres.src#RID_DISTANCEDIALOG.8.1.String.Text
 #, fuzzy
 msgid  "Symbols"
-msgstr "الرموز"
+msgstr "رموز"
 
 #: source/smres.src#RID_DISTANCEDIALOG.8.2.String.Text
 #, fuzzy
@@ -329,7 +326,7 @@ msgstr "أ~قل تباعد"
 #: source/smres.src#RID_DISTANCEDIALOG.9.1.String.Text
 #, fuzzy
 msgid  "Operators"
-msgstr "عوامل التشغيل"
+msgstr "مُعاملات"
 
 #: source/smres.src#RID_DISTANCEDIALOG.9.2.String.Text
 #, fuzzy
@@ -456,7 +453,7 @@ msgstr ""
 #: source/smres.src#RID_SYMBOLDIALOG.ModalDialog.Text
 #, fuzzy
 msgid  "Symbols"
-msgstr "الرموز"
+msgstr "رموز"
 
 #: source/smres.src#RID_SYMBOLDIALOG.1.FixedText.Text
 #, fuzzy
@@ -539,12 +536,14 @@ msgid  "~Delete"
 msgstr "ح~ذف"
 
 #: source/smres.src#RID_NOMATHTYPEFACEWARNING.WarningBox.Message
+#, fuzzy
 msgid  "The 'StarMath' font has not been installed.\nWithout this font %PRODUCTNAME Math cannot function correctly.\nPlease install this font and restart %PRODUCTNAME Math."
-msgstr ""
+msgstr "تم تثبيت الخط 'StarMath'.\nلا يمكن لـ %PRODUCTNAME Math العمل على نحوٍ صحيح بدون هذا الخط.\nالرجاء تثبيت هذا الخط وأعد تشغيل %PRODUCTNAME Math."
 
 #: source/smres.src#RID_DEFAULTSAVEQUERY.QueryBox.Message
+#, fuzzy
 msgid  "Should the changes be saved as defaults?\n\nThese changes will apply for all new formulas."
-msgstr ""
+msgstr "هل تريد حفظ التغييرات كتغييرات افتراضية؟\n\nستنطبق هذه التغييرات على جميع الصيغ الجديدة."
 
 #: source/smres.src#RID_FONTREGULAR.String.Text
 #, fuzzy
@@ -680,6 +679,11 @@ msgstr "Sans"
 #, fuzzy
 msgid  "Fixed"
 msgstr "ثابت"
+
+#: source/smres.src#CMDBOXWINDOW_TEXT.#define.Text
+#, fuzzy
+msgid  "Commands"
+msgstr "تعليقات"
 
 #: source/smres.src#RID_DOCUMENTSTR.String.Text
 #, fuzzy
@@ -851,78 +855,59 @@ msgstr "احتواء ~ضمن الصفحة"
 msgid  "~Scaling"
 msgstr "تحجي~م"
 
-#: source/smres.src#CMDBOXWINDOW_TEXT.#define.Text
-#, fuzzy
-msgid  "Commands"
-msgstr "تعليقات"
-
 #: source/commands.src#RID_COMMANDMENU.RID_UNBINOPS_MENU.MenuItem.Text
-#, fuzzy
 msgid  "~Unary/Binary Operators"
 msgstr "~معاملات أحادية/ثنائية"
 
 #: source/commands.src#RID_COMMANDMENU.RID_RELATIONS_MENU.MenuItem.Text
-#, fuzzy
 msgid  "~Relations"
 msgstr "~علاقات"
 
 #: source/commands.src#RID_COMMANDMENU.RID_SETOPERATIONS_MENU.MenuItem.Text
-#, fuzzy
 msgid  "~Set Operations"
 msgstr "~تعيين العوامل"
 
 #: source/commands.src#RID_COMMANDMENU.RID_FUNCTIONS_MENU.MenuItem.Text
-#, fuzzy
 msgid  "~Functions"
 msgstr "ال~دالات"
 
 #: source/commands.src#RID_COMMANDMENU.RID_FUNCTIONS_MENU.RID_FUNCTIONSOTHER1_MENU.MenuItem.Text
-#, fuzzy
 msgid  "More"
 msgstr "المزيد"
 
 #: source/commands.src#RID_COMMANDMENU.RID_OPERATORS_MENU.MenuItem.Text
-#, fuzzy
 msgid  "O~perators"
 msgstr "م~عاملات"
 
 #: source/commands.src#RID_COMMANDMENU.RID_ATTRIBUTES_MENU.MenuItem.Text
-#, fuzzy
 msgid  "~Attributes"
 msgstr "~صفات"
 
 #: source/commands.src#RID_COMMANDMENU.RID_BRACKETS_MENU.MenuItem.Text
-#, fuzzy
 msgid  "~Brackets"
 msgstr "أ~قواس"
 
 #: source/commands.src#RID_COMMANDMENU.RID_FORMAT_MENU.MenuItem.Text
-#, fuzzy
 msgid  "For~mats"
 msgstr "التن~سيقات"
 
 #: source/commands.src#RID_COMMANDMENU.RID_FORMAT_MENU.RID_NEWLINE.MenuItem.Text
-#, fuzzy
 msgid  "New Line"
 msgstr "سطر جديد"
 
 #: source/commands.src#RID_COMMANDMENU.RID_FORMAT_MENU.RID_SBLANK.MenuItem.Text
-#, fuzzy
 msgid  "Small Gap"
 msgstr "تباعد صغير"
 
 #: source/commands.src#RID_COMMANDMENU.RID_FORMAT_MENU.RID_BLANK.MenuItem.Text
-#, fuzzy
 msgid  "Gap"
 msgstr "تباعد"
 
 #: source/commands.src#RID_COMMANDMENU.RID_FORMAT_MENU.RID_NOSPACE.MenuItem.Text
-#, fuzzy
 msgid  "nospace {...}"
 msgstr "بلا مساحة {...}"
 
 #: source/commands.src#RID_COMMANDMENU.RID_MISC_MENU.MenuItem.Text
-#, fuzzy
 msgid  "~Others"
 msgstr "~غيرها"
 

@@ -261,7 +261,7 @@ msgstr "Parar atributu"
 
 #: source/core/undo/undo.src#STR_AUTOCORRECT.String.Text
 msgid  "AutoCorrect"
-msgstr "Autoigua"
+msgstr "AutoCorreición"
 
 #: source/core/undo/undo.src#STR_MERGE_TABLE.String.Text
 msgid  "Merge table"
@@ -725,7 +725,7 @@ msgstr "Nun ye un ficheru de WinWord6."
 
 #: source/ui/app/error.src#RID_SW_ERRHDL.ERR_CODE ( ERRCODE_CLASS_READ , ERR_WW6_FASTSAVE_ERR ).String.Text
 msgid  "This file was saved with WinWord in 'Fast Save' mode. Please unmark the WinWord option 'Allow Fast Saves' and save the file again."
-msgstr ""
+msgstr "Esti ficheru grabóse en WinWord cola función de 'grabáu rápidu'. Desactiva la opción 'Permitir grabar rápidamente' de WinWord y vuelvi a grabar el ficheru."
 
 #: source/ui/app/error.src#RID_SW_ERRHDL.ERR_CODE ( ERRCODE_CLASS_READ , ERR_FORMAT_ROWCOL ).String.Text
 msgid  "File format error found at $(ARG1)(row,col)."
@@ -741,7 +741,7 @@ msgstr "Nun ye un ficheru de WinWord97."
 
 #: source/ui/app/error.src#RID_SW_ERRHDL.ERR_CODE ( ERRCODE_CLASS_READ , ERR_FORMAT_FILE_ROWCOL ).String.Text
 msgid  "Format error discovered in the file in sub-document $(ARG1) at $(ARG2)(row,col)."
-msgstr ""
+msgstr "Fallu de formatu descubiertu nel ficheru nel subdocumentu $(ARG1) en $(ARG2)(filera,col)."
 
 #: source/ui/app/error.src#RID_SW_ERRHDL.ERR_CODE ( ERRCODE_CLASS_WRITE , ERR_SWG_WRITE_ERROR ).String.Text
 msgid  "Error writing file."
@@ -789,7 +789,7 @@ msgstr "Nun se puede lleer los dibuxos."
 
 #: source/ui/app/error.src#RID_SW_ERRHDL.WARN_CODE ( ERRCODE_CLASS_READ , WARN_WW6_FASTSAVE_ERR ).String.Text
 msgid  "This file was saved with WinWord in 'Fast Save' mode. Please unmark the WinWord option 'Allow Fast Saves' and save the file again."
-msgstr ""
+msgstr "Esti ficheru grabóse en WinWord cola función de 'grabáu rápidu'. Desactiva la opción 'Permitir grabar rápidamente' de WinWord y vuelvi a grabar el ficheru."
 
 #: source/ui/app/error.src#RID_SW_ERRHDL.WARN_CODE ( ERRCODE_CLASS_READ , WARN_SWG_FEATURES_LOST ).String.Text
 msgid  "Not all attributes could be read."
@@ -817,7 +817,7 @@ msgstr "Nun se pudo grabar el documentu dafechu."
 
 #: source/ui/app/error.src#RID_SW_ERRHDL.WARN_CODE ( ERRCODE_CLASS_WRITE , WARN_SWG_HTML_NO_MACROS).String.Text
 msgid  "This HTML document contains %PRODUCTNAME Basic macros.\nThey were not saved with the current export settings."
-msgstr ""
+msgstr "El documentu HTML contién macros %PRODUCTNAME Basic.\nNun se grabaron cola configuración actual d'esportación."
 
 #: source/ui/app/error.src#RID_SW_ERRHDL.ERR_CODE ( ERRCODE_CLASS_WRITE , WARN_WRITE_ERROR_FILE ).String.Text
 msgid  "Error in writing sub-document $(ARG1)."
@@ -825,7 +825,7 @@ msgstr "Fallu al escribir el subdocumentu $(ARG1)."
 
 #: source/ui/app/error.src#RID_SW_ERRHDL.ERR_CODE ( ERRCODE_CLASS_WRITE , WARN_FORMAT_FILE_ROWCOL ).String.Text
 msgid  "Format error discovered in the file in sub-document $(ARG1) at $(ARG2)(row,col)."
-msgstr ""
+msgstr "Fallu de formatu descubiertu nel ficheru nel subdocumentu $(ARG1) en $(ARG2)(filera,col)."
 
 #: source/ui/app/app.src#STR_PRINT_MERGE_MACRO.String.Text
 msgid  "Print form letters"
@@ -1076,8 +1076,8 @@ msgid  "Adapt Objects..."
 msgstr "Axustar oxetos..."
 
 #: source/ui/app/app.src#MSG_COMCORE_ASKSEARCH.QueryBox.Message
-msgid  "To proceed with this action, you must first turn off the "undo" function. Do you want to turn off the "undo" function?"
-msgstr ""
+msgid  "To proceed with this action, you must first turn off the \"undo\" function. Do you want to turn off the \"undo\" function?"
+msgstr "Pa facer esta aición necesítase desactivar la función \"desfacer\". ¿Quies desactivar la función \"desfacer\"?"
 
 #: source/ui/app/app.src#STR_TABLE_DEFNAME.String.Text
 msgid  "Table"
@@ -1109,15 +1109,15 @@ msgstr "Páxina vacia"
 
 #: source/ui/app/app.src#MSG_CLPBRD_CLEAR.QueryBox.Message
 msgid  "You have a large amount of data saved in the clipboard.\nShould the clipboard contents remain available for other applications?"
-msgstr ""
+msgstr "Tienes abondos datos nel portapapeles.\n¿Quies tener a mano el conteníu del portapapeles pa otres aplicaciones?"
 
 #: source/ui/app/app.src#MSG_SAVE_HTML_QUERY.QueryBox.Message
 msgid  "Conversion into HTML format \nmay cause information loss. \nDo you want to save the document?"
-msgstr ""
+msgstr "La tresformación nel formatu HTML \npuede facer que se pierda la información. \n¿Quies grabar el documentu?"
 
 #: source/ui/app/app.src#MSG_SAVEAS_HTML_QUERY.QueryBox.Message
 msgid  "The source code can only be displayed if the document is saved in HTML format.\nWould you like to save the document as HTML?"
-msgstr ""
+msgstr "Sólo se puede amosar el testu fonte si'l documentu ta grabáu en formatu HTML.\n¿Quies grabar agora'l documentu en formatu HTML?"
 
 #: source/ui/app/app.src#STR_ABSTRACT_TITLE.String.Text
 msgid  "Abstract: "
@@ -1161,11 +1161,11 @@ msgstr "Autor desconocíu"
 
 #: source/ui/app/app.src#MSG_DISABLE_UNDO_QUESTION.WarningBox.Message
 msgid  "This action deletes the list of actions that can be undone. Previous changes made to the document are still valid, but cannot be undone. Do you want to continue formatting?"
-msgstr ""
+msgstr "Esta aición desanicia la llista d'aiciones que se puen desfacer. Les modificaciones feches hasta agora nel documentu siguirán valiendo, por embargu nun se podrán desfacer. ¿Quies siguir col formatiáu?"
 
 #: source/ui/app/app.src#MSG_PRINT_AS_MERGE.QueryBox.Message
 msgid  "Your document contains address database fields. Do you want to print a form letter?"
-msgstr ""
+msgstr "El documentu contién campos de bases de datos con direiciones. ¿Quies imprentar una carta en serie?"
 
 #: source/ui/app/app.src#DLG_MERGE_SOURCE_UNAVAILABLE.ST_MERGE_SOURCE_UNAVAILABLE.FixedText.Text
 msgid  "The data source \'%1\' was not found. Thus the connection to the data source could not be established.\n\nPlease check the connections settings."
@@ -1177,7 +1177,7 @@ msgstr "Comprobar configuración de conexón..."
 
 #: source/ui/app/app.src#MSG_DATA_SOURCES_UNAVAILABLE.WarningBox.Message
 msgid  "No data source has been set up yet. You need a data source, such as a database, to supply data (for example, names and addresses) for the fields."
-msgstr ""
+msgstr "Entá nun definiste denguna fonte de datos. Necesítase una fonte de datos pa suministrar datos (Nomes, direiciones, etc.) a los campos."
 
 #: source/ui/app/app.src#RID_MODULE_TOOLBOX.String.Text
 msgid  "Function Bar (viewing mode)"
@@ -1193,7 +1193,7 @@ msgstr "Outline Numbering"
 
 #: source/ui/app/app.src#MSG_DISABLE_READLINE_QUESTION.WarningBox.Message
 msgid  "In the current document, changes are being recorded but not shown as such. In large documents, delays can occur when the document is edited. Do you want to show the changes to avoid delays?"
-msgstr ""
+msgstr "Nel documentu actual grábense les modificaciones, pero nun s'amuesen asina. En documentos llargos pueden producise retrasos na edición ¿Quies amosar les modificaciones pa evitar retrasos?"
 
 #: source/ui/app/mn.src#MN_TXT.FN_FORMAT_PAGE_DLG.MenuItem.Text
 msgid  "Pa~ge..."
@@ -2041,7 +2041,7 @@ msgstr "[Dengún]"
 
 #: source/ui/chrdlg/chrdlg.src#MSG_ILLEGAL_PAGENUM.InfoBox.Message
 msgid  "Page numbers cannot be applied to the current page.  Even numbers can be used on left pages, odd numbers on right pages."
-msgstr ""
+msgstr "El númberu de páxina nun se puede llantar nella. Nes páxines d'izquierda sólo se pueden poner númberos pares, nes de dreches sólo impares."
 
 #: source/ui/chrdlg/swbreak.src#DLG_BREAK.ModalDialog.Text
 msgid  "Insert Break"
@@ -2209,7 +2209,7 @@ msgstr "~Imáxenes y oxetos"
 
 #: source/ui/config/optdlg.src#TP_OPTPRINT_PAGE.CB_CTRLFLD.CheckBox.Text
 msgid  "Form control~s"
-msgstr "Contr. del f~ormulariu"
+msgstr "Contr. del formulariu"
 
 #: source/ui/config/optdlg.src#TP_OPTPRINT_PAGE.CB_BACKGROUND.CheckBox.Text
 msgid  "Page ba~ckground"
@@ -2217,11 +2217,11 @@ msgstr "Fondu de la páxina"
 
 #: source/ui/config/optdlg.src#TP_OPTPRINT_PAGE.CB_BLACK_FONT.CheckBox.Text
 msgid  "Print text in blac~k"
-msgstr "Imprentar el testu en priet~o"
+msgstr "El testu en priet~o"
 
 #: source/ui/config/optdlg.src#TP_OPTPRINT_PAGE.CB_HIDDEN_TEXT.CheckBox.Text
 msgid  "Hidden te~xt"
-msgstr "Te~stu ocultu"
+msgstr "Anubrir te~stu"
 
 #: source/ui/config/optdlg.src#TP_OPTPRINT_PAGE.CB_TEXT_PLACEHOLDER.CheckBox.Text
 msgid  "Text ~placeholder"
@@ -2797,7 +2797,7 @@ msgstr "<Configuración d'usuariu>"
 
 #: source/ui/config/optcomp.src#TP_OPTCOMPATIBILITY_PAGE.STR_QRYBOX_USEASDEFAULT.String.Text
 msgid  "Do you want to change the compatibility options of the default template?\nThis will affect all new documents based on the default template."
-msgstr ""
+msgstr "¿Quies camudar les opciones de compatibilidá de la pantilla predeterminada?\nEsto afeutará a tolos documentos nuevos basaos na plantilla predeterminada."
 
 #: source/ui/config/optcomp.src#TP_OPTCOMPATIBILITY_PAGE.STR_PRINTER_METRICS.String.Text
 msgid  "Use printer metrics for document formatting"
@@ -2809,7 +2809,7 @@ msgstr "Amestar espaciu ente párrafos y tables (nel documentu actual)"
 
 #: source/ui/config/optcomp.src#TP_OPTCOMPATIBILITY_PAGE.STR_MERGE_PARA_DIST_PAGESTART.String.Text
 msgid  "Add paragraph and table spacing at tops of pages (in current document)"
-msgstr ""
+msgstr "Amestar párrafu y espaciáu de tabla no cimero de les páxines (nel documentu actual)"
 
 #: source/ui/config/optcomp.src#TP_OPTCOMPATIBILITY_PAGE.STR_TAB_ALIGNMENT.String.Text
 msgid  "Use %WRITERCOMPATIBILITYVERSIONOOO11 tabstop formatting"
@@ -2825,7 +2825,7 @@ msgstr "Usar espaciáu llinia %WRITERCOMPATIBILITYVERSIONOOO11"
 
 #: source/ui/config/optcomp.src#TP_OPTCOMPATIBILITY_PAGE.STR_ADD_TABLESPACING.String.Text
 msgid  "Add paragraph and table spacing at bottom of table cells"
-msgstr ""
+msgstr "Amestar págrafu y espaciáu tabla a lo cabero de les caxelles de la tabla"
 
 #: source/ui/config/optcomp.src#TP_OPTCOMPATIBILITY_PAGE.STR_USE_OBJPOSITIONING.String.Text
 msgid  "Use %WRITERCOMPATIBILITYVERSIONOOO11 object positioning"
@@ -2833,7 +2833,7 @@ msgstr "Usar posicionamientu oxetos %WRITERCOMPATIBILITYVERSIONOOO11"
 
 #: source/ui/config/optcomp.src#TP_OPTCOMPATIBILITY_PAGE.STR_USE_OURTEXTWRAPPING.String.Text
 msgid  "Use %WRITERCOMPATIBILITYVERSIONOOO11 text wrapping around objects"
-msgstr ""
+msgstr "usar endolcamientu de llinia al rodiu d'oxetos %WRITERCOMPATIBILITYVERSIONOOO11"
 
 #: source/ui/config/optcomp.src#TP_OPTCOMPATIBILITY_PAGE.STR_CONSIDER_WRAPPINGSTYLE.String.Text
 msgid  "Consider wrapping style when positioning objects"
@@ -2841,7 +2841,7 @@ msgstr "Considerar estilu d'endolcamientu de llinia cuando se posicionen oxetos"
 
 #: source/ui/config/optcomp.src#TP_OPTCOMPATIBILITY_PAGE.STR_EXPAND_WORDSPACE.String.Text
 msgid  "Expand word space on lines with manual line breaks in justified paragraphs"
-msgstr ""
+msgstr "Expandir espaciu pallabra en llinies con rotures de llinia manual en págrafos xustificaos"
 
 #: source/ui/config/optload.src#TP_OPTLOAD_PAGE.FL_UPDATE.FixedLine.Text
 msgid  "Update"
@@ -2893,11 +2893,11 @@ msgstr "Usar mou de páxina cuadrada pa cuadrícula de testu"
 
 #: source/ui/config/optload.src#TP_OPTCAPTION_PAGE.TabPage.Text
 msgid  "Caption"
-msgstr "Anotación"
+msgstr "Títulu"
 
 #: source/ui/config/optload.src#TP_OPTCAPTION_PAGE.FT_OBJECTS.FixedText.Text
 msgid  "Add captions automatically\nwhen inserting:"
-msgstr ""
+msgstr "Amestar anotaciones automáticamente\ncuando inserte:"
 
 #: source/ui/config/optload.src#TP_OPTCAPTION_PAGE.FT_ORDER.FixedText.Text
 msgid  "Caption order"
@@ -2961,7 +2961,7 @@ msgstr "Nivel"
 
 #: source/ui/config/optload.src#TP_OPTCAPTION_PAGE.LB_LEVEL.item1.StringList.item
 msgid  "None"
-msgstr "Nengún"
+msgstr "Dengún"
 
 #: source/ui/config/optload.src#TP_OPTCAPTION_PAGE.FT_SEPARATOR.FixedText.Text
 msgid  "Separator"
@@ -3093,7 +3093,7 @@ msgstr "Prebar Configuración de la Cuenta"
 
 #: source/ui/config/mailconfigpage.src#DLG_MM_TESTACCOUNTSETTINGS.FI_INFO.FixedText.Text
 msgid  "%PRODUCTNAME is testing the e-mail account settings..."
-msgstr ""
+msgstr "%PRODUCTNAME ta prebando los axustes de la cuenta de corréu electrónicu..."
 
 #: source/ui/config/mailconfigpage.src#DLG_MM_TESTACCOUNTSETTINGS.FI_ERROR.FixedText.Text
 msgid  "Errors"
@@ -3129,7 +3129,7 @@ msgstr "Falló"
 
 #: source/ui/config/mailconfigpage.src#DLG_MM_TESTACCOUNTSETTINGS.ST_ERROR_SERVER.String.Text
 msgid  "%PRODUCTNAME could not connect to the outgoing mail server. Check your system's settings and the settings in %PRODUCTNAME. Check the server name, the port and the secure connections settings"
-msgstr ""
+msgstr "%PRODUCTNAME nun coneutó al sirvidor de corréu saliente. Comprueba los tos axustes del sistema y los afitamientos en %PRODUCTNAME. Comprueba'l nome de sirvidor, el puertu y los afitamientos de conexones segures"
 
 #: source/ui/config/mailconfigpage.src#DLG_MM_SERVERAUTHENTICATION.ModalDialog.Text
 msgid  "Server Authentication"
@@ -3141,7 +3141,7 @@ msgstr "El sirvidor de corréu saliente (SMTP) requirer au~tentificación"
 
 #: source/ui/config/mailconfigpage.src#DLG_MM_SERVERAUTHENTICATION.RB_SEP_AUTHENTICATION.RadioButton.Text
 msgid  "The outgoing mail server (SMTP) requires ~separate authentication"
-msgstr ""
+msgstr "El sirvidor de corréu saliente (SMTP) requier autentificación ~dixebrada"
 
 #: source/ui/config/mailconfigpage.src#DLG_MM_SERVERAUTHENTICATION.FT_OUTGOINGSERVER.FixedText.Text
 msgid  "Outgoing mail server:"
@@ -3157,7 +3157,7 @@ msgstr "~Contraseña"
 
 #: source/ui/config/mailconfigpage.src#DLG_MM_SERVERAUTHENTICATION.RB_SMPTAFTERPOP.RadioButton.Text
 msgid  "The outgoing mail server uses the same authentication as the ~incoming mail server. Enter the settings of the incoming mail server."
-msgstr ""
+msgstr "El sirvidor de corréu saliente usa la mesma autentificación que'l s~irvidor de corréu entrante. Afita'l sirvidor de corréu entrante."
 
 #: source/ui/config/mailconfigpage.src#DLG_MM_SERVERAUTHENTICATION.FT_INCOMINGSERVER.FixedText.Text
 msgid  "Incoming mail server:"
@@ -3197,7 +3197,7 @@ msgstr "Escoyer llista de direiciones"
 
 #: source/ui/dbui/addresslistdialog.src#DLG_MM_ADDRESSLISTDIALOG.FI_DESCRIPTION.FixedText.Text
 msgid  "Select an address list. Click '%1' to select recipients from a different list. If you do not have an address list you can create one by clicking '%2'."
-msgstr ""
+msgstr "Escueyi una llista de direiciones. Calca en '%1' pa escoyer los destinatarios d'una llista diferente. Si nun tienes denguna llista de direiciones, puedes crear una calcando en '%2'."
 
 #: source/ui/dbui/addresslistdialog.src#DLG_MM_ADDRESSLISTDIALOG.FT_LIST.FixedText.Text
 msgid  "Your recipients are currently selected from:"
@@ -3249,7 +3249,7 @@ msgstr "1."
 
 #: source/ui/dbui/mmaddressblockpage.src#DLG_MM_ADDRESSBLOCK_PAGE.FI_ADDRESSLIST.FixedText.Text
 msgid  "Select the address list containing the address data you want to use. This data is needed to create the address block."
-msgstr ""
+msgstr "Escoyer la llista de direiciones colos datos de direiciones que quies usar. Necesítense estos datos pa crear el bloque de direiciones."
 
 #: source/ui/dbui/mmaddressblockpage.src#DLG_MM_ADDRESSBLOCK_PAGE.PB_ADDRESSLIST.PushButton.Text
 msgid  "Select A~ddress List..."
@@ -3285,7 +3285,7 @@ msgstr "3."
 
 #: source/ui/dbui/mmaddressblockpage.src#DLG_MM_ADDRESSBLOCK_PAGE.FI_MATCH_FIELDS.FixedText.Text
 msgid  "Match the field name used in the mail merge to the column headers in your data source."
-msgstr ""
+msgstr "Facer coincidir el nome de campu usáu na combinación de corréu coles testeres de columnes del orixe de datos."
 
 #: source/ui/dbui/mmaddressblockpage.src#DLG_MM_ADDRESSBLOCK_PAGE.PB_ASSIGN.PushButton.Text
 msgid  "Match ~Fields..."
@@ -3346,6 +3346,10 @@ msgstr "Incluyir ~siempre'l país/región"
 #: source/ui/dbui/mmaddressblockpage.src#DLG_MM_SELECTADDRESSBLOCK.RB_DEPENDENT.RadioButton.Text
 msgid  "Only ~include the country/region if it is not:"
 msgstr "Incluyir ~sólo'l país/rexón si nun ye:"
+
+#: source/ui/dbui/mmaddressblockpage.src#WORKAROUND.#define.Text
+msgid  "New Address Block"
+msgstr "Nuevu bloque de direiciones"
 
 #: source/ui/dbui/mmaddressblockpage.src#DLG_MM_CUSTOMIZEADDRESSBLOCK.ST_TITLE_EDIT.String.Text
 msgid  "Edit Address Block"
@@ -3481,11 +3485,11 @@ msgstr "Asignar campos"
 
 #: source/ui/dbui/mmaddressblockpage.src#DLG_MM_ASSIGNFIELDS.FI_MATCHING.FixedText.Text
 msgid  "Assign the fields from your data source to match the address elements."
-msgstr ""
+msgstr "Asigna los campos del orixe de datos pa que coincidan colos elementos de direición."
 
 #: source/ui/dbui/mmaddressblockpage.src#DLG_MM_ASSIGNFIELDS.ST_SALUTATIONMATCHING.String.Text
 msgid  "Assign the fields from your data source to match the salutation elements."
-msgstr ""
+msgstr "Asigna los campos del orixe de datos pa que coincidan colos elementos de saludu."
 
 #: source/ui/dbui/mmaddressblockpage.src#DLG_MM_ASSIGNFIELDS.FI_PREVIEW.FixedText.Text
 msgid  "Address block preview"
@@ -3515,17 +3519,13 @@ msgstr "Vista Previa"
 msgid  "< none >"
 msgstr "< nengún >"
 
-#: source/ui/dbui/mmaddressblockpage.src#WORKAROUND.#define.Text
-msgid  "New Address Block"
-msgstr "Nuevu bloque de direiciones"
-
 #: source/ui/dbui/selectdbtabledialog.src#DLG_MM_SELECTDBTABLEDDIALOG.ModalDialog.Text
 msgid  "Select Table"
 msgstr "Escoyer tabla"
 
 #: source/ui/dbui/selectdbtabledialog.src#DLG_MM_SELECTDBTABLEDDIALOG.FI_SELECT.FixedText.Text
 msgid  "The file you have selected contains more than one table. Please select the table containing the address list you want to use."
-msgstr ""
+msgstr "El ficheru escoyíu tién más d'una tabla. Escueyi la tabla que tenga la llista de direiciones que quieras usar."
 
 #: source/ui/dbui/selectdbtabledialog.src#DLG_MM_SELECTDBTABLEDDIALOG.PB_PREVIEW.PushButton.Text
 msgid  "~Preview"
@@ -3741,7 +3741,7 @@ msgstr "Personalizar los documentos de combinación de correspodencia"
 
 #: source/ui/dbui/mmmergepage.src#DLG_MM_MERGE_PAGE.FI_EDIT.FixedText.Text
 msgid  "You can personalize particular documents. Clicking '%1' will temporarily reduce the wizard to a small window so you can edit your document. After editing the document, return to the wizard by clicking 'Return to Mail Merge Wizard' in the small window."
-msgstr ""
+msgstr "Puedes personalizar documentos concretos. Al calcar en '%1' l'asistente convertiráse temporalmente nuna ventanina pa poder editar el documentu. Cuando tea editáu, torna al asistente calcando en 'Tornar al Asistente pa combinar correspondencia' de la ventana pequeña."
 
 #: source/ui/dbui/mmmergepage.src#DLG_MM_MERGE_PAGE.PB_EDIT.PushButton.Text
 msgid  "~Edit individual document..."
@@ -3909,7 +3909,7 @@ msgstr "Ensin títulu"
 
 #: source/ui/dbui/mmoutputpage.src#DLG_MM_OUTPUT_PAGE.ST_SUBJECTQUERY.String.Text
 msgid  "You did not specify a subject for this message. If you would like to provide one, please type it now."
-msgstr ""
+msgstr "Nun especifiqueste dengún asuntu pa esti mensaxe. Si quies poner ún, escríbilu agora."
 
 #: source/ui/dbui/mmoutputpage.src#DLG_MM_OUTPUT_PAGE.ST_NOSUBJECT.String.Text
 msgid  "No subject"
@@ -3917,11 +3917,11 @@ msgstr "Ensin asuntu"
 
 #: source/ui/dbui/mmoutputpage.src#DLG_MM_OUTPUT_PAGE.ST_NOATTACHMENTNAME.String.Text
 msgid  "You did not specify a new name for the attachment. If you would like to provide one, please type it now."
-msgstr ""
+msgstr "Nun especifiqueste dengún nome pal documentu axuntáu. Si quies poner ún, escríbilu agora."
 
 #: source/ui/dbui/mmoutputpage.src#DLG_MM_OUTPUT_PAGE.ST_CONFIGUREMAIL.String.Text
 msgid  "In order to be able to send mail merge documents by e-mail, %PRODUCTNAME requires information about the e-mail account to be used.\n\n Do you want to enter e-mail account information now?"
-msgstr ""
+msgstr "Pa poder unviar documentos de combinación de correspondencia per corréu-e, %PRODUCTNAME requier información sobre la cuenta de corréu que se tien qu'usar.\n\n¿Quies especificar agora la información sobre la cuenta de corréu-e?"
 
 #: source/ui/dbui/mmoutputpage.src#DLG_MM_COPYTO.ModalDialog.Text
 msgid  "Copy To"
@@ -3941,11 +3941,11 @@ msgstr "Cc~O"
 
 #: source/ui/dbui/mmoutputpage.src#DLG_MM_COPYTO.FI_NOTE.FixedText.Text
 msgid  "Note:\nSeparate e-mail addresses with a semicolon (;)."
-msgstr ""
+msgstr "Nota:\nSeparta les direiciones de corréu-e con un puntu y coma (;)."
 
 #: source/ui/dbui/mmoutputpage.src#DLG_MM_SAVEWARNING.FI_WARNING.FixedText.Text
 msgid  "A document with the name '%1' already exists. Please save this document under a different name."
-msgstr ""
+msgstr "Yá existe un documentu col nome '%1'. Graba'l documentu con otru nome."
 
 #: source/ui/dbui/mmoutputpage.src#DLG_MM_SAVEWARNING.FT_FILENAME.FixedText.Text
 msgid  "New document name"
@@ -4001,7 +4001,7 @@ msgstr "Escoyer documentu d'entamu pa combinar correspondencia"
 
 #: source/ui/dbui/mmdocselectpage.src#DLG_MM_DOCSELECT_PAGE.FT_HOWTO.FixedText.Text
 msgid  "Select the document upon which to base the mail merge document"
-msgstr ""
+msgstr "Escoyer el documentu nel que se tien que sofitar el documentu de combinación de correspondencia"
 
 #: source/ui/dbui/mmdocselectpage.src#DLG_MM_DOCSELECT_PAGE.RB_CURRENTDOC.RadioButton.Text
 msgid  "Use the current ~document"
@@ -4131,6 +4131,10 @@ msgstr "~Atopar"
 msgid  "~Close"
 msgstr "~Zarrar"
 
+#: source/ui/dbui/mailmergechildwindow.src#WORKAROUND.#define.Text
+msgid  "Return to Mail Merge Wizard"
+msgstr "Volver al Asistente pa combinar correspondencia"
+
 #: source/ui/dbui/mailmergechildwindow.src#DLG_MAILMERGECHILD.FloatingWindow.Text
 msgid  "Mail Merge Wizard"
 msgstr "Asistente pa combinar correspondencia"
@@ -4209,7 +4213,7 @@ msgstr "Fallu nel unvíu (direición inválida)"
 
 #: source/ui/dbui/mailmergechildwindow.src#DLG_MM_SENDMAILS.ST_TERMINATEQUERY.String.Text
 msgid  "There are still e-mail messages in your %PRODUCTNAME Outbox.\nWould you like to exit anyway?"
-msgstr ""
+msgstr "Entá queden mensaxes de corréu-e na Bandexa de salida de %PRODUCTNAME.\n¿Desea salir de todas formas?"
 
 #: source/ui/dbui/mailmergechildwindow.src#DLG_MM_SENDWARNING.ModalDialog.Text
 msgid  "E-Mails could not be sent"
@@ -4222,10 +4226,6 @@ msgstr "Hebo'l siguiente fallu:"
 #: source/ui/dbui/mailmergechildwindow.src#DLG_MM_SENDWARNING.FT_DETAILS.FixedText.Text
 msgid  "Detailed information"
 msgstr "Información detallada"
-
-#: source/ui/dbui/mailmergechildwindow.src#WORKAROUND.#define.Text
-msgid  "Return to Mail Merge Wizard"
-msgstr "Volver al Asistente pa combinar correspondencia"
 
 #: source/ui/dbui/dbtablepreviewdialog.src#DLG_MM_DBTABLEPREVIEWDIALOG.ModalDialog.Text
 msgid  "Mail Merge Recipients"
@@ -4265,11 +4265,11 @@ msgstr "Mensaxe de corréu-e:"
 
 #: source/ui/dbui/mmoutputtypepage.src#DLG_MM_OUTPUTTYPE_PAGE.ST_LETTERHINT.String.Text
 msgid  "Send letters to a group of recipients. The letters can contain an address block and a salutation. The letters can be personalized for each recipient."
-msgstr ""
+msgstr "Unviar cartes a un grupu de destinatarios. Les cartes pueden contener un bloque de direiciones y un saludu. Les cartes pueden personalizase pa cada destinatariu."
 
 #: source/ui/dbui/mmoutputtypepage.src#DLG_MM_OUTPUTTYPE_PAGE.ST_MAILHINT.String.Text
 msgid  "Send e-mail messages to a group of recipients. The e-mail messages can contain a salutation. The e-mail messages can be personalized for each recipient."
-msgstr ""
+msgstr "Unviar mensaxes de corréu-e a un grupu de destinatarios. Los mensaxes de corréu-e pueden contener un bloque de direiciones y un saludu. Les cartes pueden personalizase pa cada destinatariu."
 
 #: source/ui/dbui/mmpreparemergepage.src#DLG_MM_PREPAREMERGE_PAGE.FI_HEADER.FixedText.Text
 msgid  "Preview and edit the document"
@@ -4277,7 +4277,7 @@ msgstr "Obtién una vista previa y edita'l documentu"
 
 #: source/ui/dbui/mmpreparemergepage.src#DLG_MM_PREPAREMERGE_PAGE.FI_PREVIEW.FixedText.Text
 msgid  "The preview of a merged document is visible now. To see the preview of another document click one of the arrows."
-msgstr ""
+msgstr "La vista previa del documentu combináu agora puede vese. Pa tener la vista previa d'otru documentu, calca nuna de les fleches."
 
 #: source/ui/dbui/mmpreparemergepage.src#DLG_MM_PREPAREMERGE_PAGE.FT_RECIPIENT.FixedText.Text
 msgid  "~Recipient"
@@ -4309,7 +4309,7 @@ msgstr "Editar Documentu"
 
 #: source/ui/dbui/mmpreparemergepage.src#DLG_MM_PREPAREMERGE_PAGE.FI_EDIT.FixedText.Text
 msgid  "Write or edit your document now if you have not already done so. The changes will effect all merged documents.\n\nClicking 'Edit Document...' will temporarily reduce the wizard to a small window so you can edit the mail merge document. After editing the document, return to the wizard by clicking 'Return to Mail Merge Wizard' in the small window."
-msgstr ""
+msgstr "Escribi y edita'l documentu agora si entá nun lo ficiste. Los cambios van afeutar a tolos documentos combinaos.\n\nAl calcar en 'Editar documentu...' l'asistente convertiráse temporalmente nuna ventanina pa poder editar el documentu de combinación de correspondencia. Cuando tea editáu, vuelvi al asistente calcando en 'Tornar al Asistente pa combinar la correspondencia' de la ventanina."
 
 #: source/ui/dbui/mmpreparemergepage.src#DLG_MM_PREPAREMERGE_PAGE.PB_EDIT.PushButton.Text
 msgid  "~Edit Document..."
@@ -4521,7 +4521,7 @@ msgstr "Pallabres:"
 
 #: source/ui/dialog/wordcountdialog.src#DLG_WORDCOUNT.FT_CURRENTCHARACTER.FixedText.Text
 msgid  "Characters:"
-msgstr "Carauteres:"
+msgstr "Caráuteres:"
 
 #: source/ui/dialog/wordcountdialog.src#DLG_WORDCOUNT.FL_DOC.FixedLine.Text
 msgid  "Whole document"
@@ -4534,170 +4534,6 @@ msgstr "Pallabres:"
 #: source/ui/dialog/wordcountdialog.src#DLG_WORDCOUNT.FT_DOCCHARACTER.FixedText.Text
 msgid  "Characters:"
 msgstr "Carauteres:"
-
-#: source/ui/dialog/regionsw.src#MD_EDIT_REGION.ModalDialog.Text
-msgid  "Edit Sections"
-msgstr "Editar seiciones"
-
-#: source/ui/dialog/regionsw.src#MD_EDIT_REGION.FL_NAME.FixedLine.Text
-msgid  "Section"
-msgstr "Seición"
-
-#: source/ui/dialog/regionsw.src#MD_EDIT_REGION.CB_PROTECT.TriStateBox.Text
-msgid  "~Protected"
-msgstr "~Protexíu"
-
-#: source/ui/dialog/regionsw.src#MD_EDIT_REGION.PB_OPTIONS.PushButton.Text
-msgid  "~Options..."
-msgstr "~Opciones..."
-
-#: source/ui/dialog/regionsw.src#MD_EDIT_REGION.CB_DISMISS.PushButton.Text
-msgid  "Remove"
-msgstr "Desaniciar"
-
-#: source/ui/dialog/regionsw.src#STR_REG_DUPLICATE.String.Text
-msgid  "Section name changed:"
-msgstr "Nome de seición camudáu:"
-
-#: source/ui/dialog/regionsw.src#STR_INFO_DUPLICATE.String.Text
-msgid  "Duplicate section name"
-msgstr "Nome de seición duplicáu"
-
-#: source/ui/dialog/regionsw.src#QB_CONNECT.QueryBox.Message
-msgid  "A file connection will delete the contents of the current section. Connect anyway?"
-msgstr ""
-
-#: source/ui/dialog/regionsw.src#REG_WRONG_PASSWORD.InfoBox.Message
-msgid  "The password entered is invalid."
-msgstr "La contraseña escrita nun ye válida."
-
-#: source/ui/dialog/regionsw.src#REG_WRONG_PASSWD_REPEAT.InfoBox.Message
-msgid  "The password has not been set."
-msgstr "Nun se definió contraseña."
-
-#: source/ui/dialog/regionsw.src#DLG_INSERT_SECTION.TabDialog.Text
-msgid  "Insert Section"
-msgstr "Inxertar una seición"
-
-#: source/ui/dialog/regionsw.src#DLG_INSERT_SECTION.1.TP_INSERT_SECTION.PageItem.Text
-msgid  "Section"
-msgstr "Seición"
-
-#: source/ui/dialog/regionsw.src#DLG_INSERT_SECTION.1.TP_COLUMN.PageItem.Text
-msgid  "Columns"
-msgstr "Columnes"
-
-#: source/ui/dialog/regionsw.src#DLG_INSERT_SECTION.1.TP_SECTION_INDENTS.PageItem.Text
-msgid  "Indents"
-msgstr "Indentaciones"
-
-#: source/ui/dialog/regionsw.src#DLG_INSERT_SECTION.1.TP_BACKGROUND.PageItem.Text
-msgid  "Background"
-msgstr "Fondu"
-
-#: source/ui/dialog/regionsw.src#DLG_INSERT_SECTION.1.TP_SECTION_FTNENDNOTES.PageItem.Text
-msgid  "Footnotes/Endnotes"
-msgstr "Notes al pie/Notes a lo cabero"
-
-#: source/ui/dialog/regionsw.src#DLG_INSERT_SECTION.ST_INSERT.String.Text
-msgid  "Insert"
-msgstr "Inxertar"
-
-#: source/ui/dialog/regionsw.src#TP_INSERT_SECTION.FL_NAME.FixedLine.Text
-msgid  "New section"
-msgstr "Seición nueva"
-
-#: source/ui/dialog/regionsw.src#TP_INSERT_SECTION.CB_PROTECT.CheckBox.Text
-msgid  "~Protect"
-msgstr "~Protexer"
-
-#: source/ui/dialog/regionsw.src#DLG_SECTION_PROPERTIES.1.TP_COLUMN.PageItem.Text
-msgid  "Columns"
-msgstr "Columnes"
-
-#: source/ui/dialog/regionsw.src#DLG_SECTION_PROPERTIES.1.TP_SECTION_INDENTS.PageItem.Text
-msgid  "Indents"
-msgstr "Indentaciones"
-
-#: source/ui/dialog/regionsw.src#DLG_SECTION_PROPERTIES.1.TP_BACKGROUND.PageItem.Text
-msgid  "Background"
-msgstr "Fondu"
-
-#: source/ui/dialog/regionsw.src#DLG_SECTION_PROPERTIES.1.TP_SECTION_FTNENDNOTES.PageItem.Text
-msgid  "Footnotes/Endnotes"
-msgstr "Notes al pie/Notes a lo cabero"
-
-#: source/ui/dialog/regionsw.src#DLG_SECTION_PROPERTIES.PageItem.Text
-msgid  "Options"
-msgstr "Opciones"
-
-#: source/ui/dialog/regionsw.src#TP_SECTION_FTNENDNOTES.FL_FTN.FixedLine.Text
-msgid  "Footnotes"
-msgstr "Notes al pie"
-
-#: source/ui/dialog/regionsw.src#TP_SECTION_FTNENDNOTES.CB_FTN_AT_TXTEND.CheckBox.Text
-msgid  "Collec~t at end of text"
-msgstr "Reco~yer a lo cabero'l testu"
-
-#: source/ui/dialog/regionsw.src#TP_SECTION_FTNENDNOTES.CB_FTN_NUM.CheckBox.Text
-msgid  "~Restart numbering"
-msgstr "~Reaniciar numberación"
-
-#: source/ui/dialog/regionsw.src#TP_SECTION_FTNENDNOTES.FT_FTN_OFFSET.FixedText.Text
-msgid  "~Start at"
-msgstr "~Aniciar en"
-
-#: source/ui/dialog/regionsw.src#TP_SECTION_FTNENDNOTES.CB_FTN_NUM_FMT.CheckBox.Text
-msgid  "Custom ~format"
-msgstr "~Formatu personalizáu"
-
-#: source/ui/dialog/regionsw.src#TP_SECTION_FTNENDNOTES.FT_FTN_PREFIX.FixedText.Text
-msgid  "Be~fore"
-msgstr "Ena~ntes"
-
-#: source/ui/dialog/regionsw.src#TP_SECTION_FTNENDNOTES.FT_FTN_SUFFIX.FixedText.Text
-msgid  "Aft~er"
-msgstr "D~epués"
-
-#: source/ui/dialog/regionsw.src#TP_SECTION_FTNENDNOTES.FL_END.FixedLine.Text
-msgid  "Endnotes"
-msgstr "Notes a lo cabero"
-
-#: source/ui/dialog/regionsw.src#TP_SECTION_FTNENDNOTES.CB_END_AT_TXTEND.CheckBox.Text
-msgid  "C~ollect at end of section"
-msgstr "Re~coyer a lo cabero la seición"
-
-#: source/ui/dialog/regionsw.src#TP_SECTION_FTNENDNOTES.CB_END_NUM.CheckBox.Text
-msgid  "~Restart numbering"
-msgstr "~Reaniciar numberación"
-
-#: source/ui/dialog/regionsw.src#TP_SECTION_FTNENDNOTES.FT_END_OFFSET.FixedText.Text
-msgid  "~Start at"
-msgstr "~Aniciar en"
-
-#: source/ui/dialog/regionsw.src#TP_SECTION_FTNENDNOTES.CB_END_NUM_FMT.CheckBox.Text
-msgid  "Custom format"
-msgstr "Formatu personalizáu"
-
-#: source/ui/dialog/regionsw.src#TP_SECTION_FTNENDNOTES.FT_END_PREFIX.FixedText.Text
-msgid  "Be~fore"
-msgstr "Ena~ntes"
-
-#: source/ui/dialog/regionsw.src#TP_SECTION_FTNENDNOTES.FT_END_SUFFIX.FixedText.Text
-msgid  "Aft~er"
-msgstr "D~epués"
-
-#: source/ui/dialog/regionsw.src#TP_SECTION_INDENTS.FL_INDENT.FixedLine.Text
-msgid  "Indent"
-msgstr "Indentar"
-
-#: source/ui/dialog/regionsw.src#TP_SECTION_INDENTS.FT_BEFORE.FixedText.Text
-msgid  "~Before section"
-msgstr "~Enantes de la seición"
-
-#: source/ui/dialog/regionsw.src#TP_SECTION_INDENTS.FT_AFTER.FixedText.Text
-msgid  "~After section"
-msgstr "~Depués de la seición"
 
 #: source/ui/dialog/regionsw.src#FT_SUBREG_TEXT.#define.Text
 msgid  "~Section"
@@ -4759,6 +4595,170 @@ msgstr "Proteición escontra escritura"
 msgid  "Wit~h password"
 msgstr "Con ~contraseña"
 
+#: source/ui/dialog/regionsw.src#MD_EDIT_REGION.ModalDialog.Text
+msgid  "Edit Sections"
+msgstr "Editar seiciones"
+
+#: source/ui/dialog/regionsw.src#MD_EDIT_REGION.FL_NAME.FixedLine.Text
+msgid  "Section"
+msgstr "Seición"
+
+#: source/ui/dialog/regionsw.src#MD_EDIT_REGION.CB_PROTECT.TriStateBox.Text
+msgid  "~Protected"
+msgstr "~Protexíu"
+
+#: source/ui/dialog/regionsw.src#MD_EDIT_REGION.PB_OPTIONS.PushButton.Text
+msgid  "~Options..."
+msgstr "~Opciones..."
+
+#: source/ui/dialog/regionsw.src#MD_EDIT_REGION.CB_DISMISS.PushButton.Text
+msgid  "Remove"
+msgstr "Desaniciar"
+
+#: source/ui/dialog/regionsw.src#STR_REG_DUPLICATE.String.Text
+msgid  "Section name changed:"
+msgstr "Nome de seición camudáu:"
+
+#: source/ui/dialog/regionsw.src#STR_INFO_DUPLICATE.String.Text
+msgid  "Duplicate section name"
+msgstr "Nome de seición duplicáu"
+
+#: source/ui/dialog/regionsw.src#QB_CONNECT.QueryBox.Message
+msgid  "A file connection will delete the contents of the current section. Connect anyway?"
+msgstr "Una conexión de ficheros eliminará'l conteníu de la seición actual. ¿Coneutar de toes maneres?"
+
+#: source/ui/dialog/regionsw.src#REG_WRONG_PASSWORD.InfoBox.Message
+msgid  "The password entered is invalid."
+msgstr "La contraseña escrita nun ye válida."
+
+#: source/ui/dialog/regionsw.src#REG_WRONG_PASSWD_REPEAT.InfoBox.Message
+msgid  "The password has not been set."
+msgstr "Nun se definió contraseña."
+
+#: source/ui/dialog/regionsw.src#DLG_INSERT_SECTION.TabDialog.Text
+msgid  "Insert Section"
+msgstr "Inxertar una seición"
+
+#: source/ui/dialog/regionsw.src#DLG_INSERT_SECTION.1.TP_INSERT_SECTION.PageItem.Text
+msgid  "Section"
+msgstr "Seición"
+
+#: source/ui/dialog/regionsw.src#DLG_INSERT_SECTION.1.TP_COLUMN.PageItem.Text
+msgid  "Columns"
+msgstr "Columnes"
+
+#: source/ui/dialog/regionsw.src#DLG_INSERT_SECTION.1.TP_SECTION_INDENTS.PageItem.Text
+msgid  "Indents"
+msgstr "Sangríes"
+
+#: source/ui/dialog/regionsw.src#DLG_INSERT_SECTION.1.TP_BACKGROUND.PageItem.Text
+msgid  "Background"
+msgstr "Fondu"
+
+#: source/ui/dialog/regionsw.src#DLG_INSERT_SECTION.1.TP_SECTION_FTNENDNOTES.PageItem.Text
+msgid  "Footnotes/Endnotes"
+msgstr "Notes al pie/finales"
+
+#: source/ui/dialog/regionsw.src#DLG_INSERT_SECTION.ST_INSERT.String.Text
+msgid  "Insert"
+msgstr "Inxertar"
+
+#: source/ui/dialog/regionsw.src#TP_INSERT_SECTION.FL_NAME.FixedLine.Text
+msgid  "New section"
+msgstr "Seición nueva"
+
+#: source/ui/dialog/regionsw.src#TP_INSERT_SECTION.CB_PROTECT.CheckBox.Text
+msgid  "~Protect"
+msgstr "~Protexer"
+
+#: source/ui/dialog/regionsw.src#DLG_SECTION_PROPERTIES.1.TP_COLUMN.PageItem.Text
+msgid  "Columns"
+msgstr "Columnes"
+
+#: source/ui/dialog/regionsw.src#DLG_SECTION_PROPERTIES.1.TP_SECTION_INDENTS.PageItem.Text
+msgid  "Indents"
+msgstr "Indentaciones"
+
+#: source/ui/dialog/regionsw.src#DLG_SECTION_PROPERTIES.1.TP_BACKGROUND.PageItem.Text
+msgid  "Background"
+msgstr "Fondu"
+
+#: source/ui/dialog/regionsw.src#DLG_SECTION_PROPERTIES.1.TP_SECTION_FTNENDNOTES.PageItem.Text
+msgid  "Footnotes/Endnotes"
+msgstr "Notes al pie/Notes a lo cabero"
+
+#: source/ui/dialog/regionsw.src#DLG_SECTION_PROPERTIES.PageItem.Text
+msgid  "Options"
+msgstr "Opciones"
+
+#: source/ui/dialog/regionsw.src#TP_SECTION_FTNENDNOTES.FL_FTN.FixedLine.Text
+msgid  "Footnotes"
+msgstr "Notes al pie"
+
+#: source/ui/dialog/regionsw.src#TP_SECTION_FTNENDNOTES.CB_FTN_AT_TXTEND.CheckBox.Text
+msgid  "Collec~t at end of text"
+msgstr "Reco~yer a lo cabero'l testu"
+
+#: source/ui/dialog/regionsw.src#TP_SECTION_FTNENDNOTES.CB_FTN_NUM.CheckBox.Text
+msgid  "~Restart numbering"
+msgstr "rea~niciar numberación"
+
+#: source/ui/dialog/regionsw.src#TP_SECTION_FTNENDNOTES.FT_FTN_OFFSET.FixedText.Text
+msgid  "~Start at"
+msgstr "Entamar en"
+
+#: source/ui/dialog/regionsw.src#TP_SECTION_FTNENDNOTES.CB_FTN_NUM_FMT.CheckBox.Text
+msgid  "Custom ~format"
+msgstr "~Formatu personalizáu"
+
+#: source/ui/dialog/regionsw.src#TP_SECTION_FTNENDNOTES.FT_FTN_PREFIX.FixedText.Text
+msgid  "Be~fore"
+msgstr "Delan~tre"
+
+#: source/ui/dialog/regionsw.src#TP_SECTION_FTNENDNOTES.FT_FTN_SUFFIX.FixedText.Text
+msgid  "Aft~er"
+msgstr "De~trás"
+
+#: source/ui/dialog/regionsw.src#TP_SECTION_FTNENDNOTES.FL_END.FixedLine.Text
+msgid  "Endnotes"
+msgstr "Notes a lo cabero"
+
+#: source/ui/dialog/regionsw.src#TP_SECTION_FTNENDNOTES.CB_END_AT_TXTEND.CheckBox.Text
+msgid  "C~ollect at end of section"
+msgstr "Re~coyer a lo cabero la seición"
+
+#: source/ui/dialog/regionsw.src#TP_SECTION_FTNENDNOTES.CB_END_NUM.CheckBox.Text
+msgid  "~Restart numbering"
+msgstr "~Reaniciar numberación"
+
+#: source/ui/dialog/regionsw.src#TP_SECTION_FTNENDNOTES.FT_END_OFFSET.FixedText.Text
+msgid  "~Start at"
+msgstr "~Aniciar en"
+
+#: source/ui/dialog/regionsw.src#TP_SECTION_FTNENDNOTES.CB_END_NUM_FMT.CheckBox.Text
+msgid  "Custom format"
+msgstr "Formatu personalizáu"
+
+#: source/ui/dialog/regionsw.src#TP_SECTION_FTNENDNOTES.FT_END_PREFIX.FixedText.Text
+msgid  "Be~fore"
+msgstr "Ena~ntes"
+
+#: source/ui/dialog/regionsw.src#TP_SECTION_FTNENDNOTES.FT_END_SUFFIX.FixedText.Text
+msgid  "Aft~er"
+msgstr "D~epués"
+
+#: source/ui/dialog/regionsw.src#TP_SECTION_INDENTS.FL_INDENT.FixedLine.Text
+msgid  "Indent"
+msgstr "Indentar"
+
+#: source/ui/dialog/regionsw.src#TP_SECTION_INDENTS.FT_BEFORE.FixedText.Text
+msgid  "~Before section"
+msgstr "~Enantes de la seición"
+
+#: source/ui/dialog/regionsw.src#TP_SECTION_INDENTS.FT_AFTER.FixedText.Text
+msgid  "~After section"
+msgstr "~Depués de la seición"
+
 #: source/ui/dialog/abstract.src#DLG_INSERT_ABSTRACT.FL_1.FixedLine.Text
 msgid  "Properties"
 msgstr "Propiedaes"
@@ -4773,7 +4773,7 @@ msgstr "Subpuntos per nivel"
 
 #: source/ui/dialog/abstract.src#DLG_INSERT_ABSTRACT.FT_DESC.FixedText.Text
 msgid  "The abstract contains the selected number of paragraphs from the included outline levels."
-msgstr ""
+msgstr "L'estrautu contién el númberu deseáu de párrafos de los niveles de capítulu incluyíos."
 
 #: source/ui/dialog/abstract.src#DLG_INSERT_ABSTRACT.HelpButton.Text
 msgid  "Create AutoAbstract"
@@ -4853,7 +4853,7 @@ msgstr "Autotestu p'accesu rápidu '%1' non alcontráu."
 
 #: source/ui/dochdl/dochdl.src#STR_NO_TABLE.String.Text
 msgid  "A table cannot be inserted into another table. However, you can paste the data into the document when the cursor is not in a table."
-msgstr ""
+msgstr "Nun se puede inxertar una tabla n'otra tabla. Por embargu, pueden pegase los datos nel documentu cuando'l cursor nun tea nuna tabla."
 
 #: source/ui/dochdl/dochdl.src#MSG_ERR_INSERT_GLOS.InfoBox.Message
 msgid  "AutoText could not be created."
@@ -4865,7 +4865,7 @@ msgstr "El formatu que quies del cartafueyu nun ta disponible."
 
 #: source/ui/dochdl/dochdl.src#MSG_UPDATE_NEW_GLOS_FMT.QueryBox.Message
 msgid  "The section format is outdated.\nIt needs to be converted so that changes\ncan be saved.\nShould it be converted now?"
-msgstr ""
+msgstr "El formatu de la seición nun ta al día.\nHai que lu convertir\npa poder grabar les modificaciones.\n¿Quies convertilu?"
 
 #: source/ui/dochdl/dochdl.src#STR_PRIVATETEXT.String.Text
 msgid  "%PRODUCTNAME Writer"
@@ -5039,6 +5039,26 @@ msgstr "El marcu d'orixe yá ye la fonte d'un enllaz."
 msgid  "A closed link is not possible."
 msgstr "Nun ye dable un enllaz zarráu."
 
+#: source/ui/docvw/docvw.src#STR_REDLINE_INSERT.String.Text
+msgid  "Inserted"
+msgstr "Enxertu"
+
+#: source/ui/docvw/docvw.src#STR_REDLINE_DELETE.String.Text
+msgid  "Deleted"
+msgstr "Elimináu"
+
+#: source/ui/docvw/docvw.src#STR_REDLINE_FORMAT.String.Text
+msgid  "Formatted"
+msgstr "Formatiáu"
+
+#: source/ui/docvw/docvw.src#STR_REDLINE_TABLE.String.Text
+msgid  "Table changed"
+msgstr "Camudóse la tabla"
+
+#: source/ui/docvw/docvw.src#STR_REDLINE_FMTCOLL.String.Text
+msgid  "Applied Paragraph Styles"
+msgstr "Estilos de párrafu aplicaos"
+
 #: source/ui/docvw/docvw.src#STR_ENDNOTE.String.Text
 msgid  "Endnote: "
 msgstr "Nota a lo cabero: "
@@ -5049,7 +5069,7 @@ msgstr "Nota al pie: "
 
 #: source/ui/docvw/docvw.src#MSG_READONLY_CONTENT.InfoBox.Message
 msgid  "Readonly content cannot be changed.\nNo modifications will be accepted"
-msgstr ""
+msgstr "Nun se pue camudar el conteníu de namái llectura.\nNun se van aceutar modificaciones"
 
 #: source/ui/docvw/docvw.src#STR_TABLE_COL_ADJUST.String.Text
 msgid  "Adjust table column"
@@ -5075,29 +5095,9 @@ msgstr "Seleicionar columna de la tabla"
 msgid  "%s-click to open Smart Tag menu"
 msgstr "%s-clic p'abrir el menú Smart Tag"
 
-#: source/ui/docvw/docvw.src#STR_REDLINE_INSERT.String.Text
-msgid  "Inserted"
-msgstr "Enxertu"
-
-#: source/ui/docvw/docvw.src#STR_REDLINE_DELETE.String.Text
-msgid  "Deleted"
-msgstr "Elimináu"
-
-#: source/ui/docvw/docvw.src#STR_REDLINE_FORMAT.String.Text
-msgid  "Formatted"
-msgstr "Formatiáu"
-
-#: source/ui/docvw/docvw.src#STR_REDLINE_TABLE.String.Text
-msgid  "Table changed"
-msgstr "Camudóse la tabla"
-
-#: source/ui/docvw/docvw.src#STR_REDLINE_FMTCOLL.String.Text
-msgid  "Applied Paragraph Styles"
-msgstr "Estilos de párrafu aplicaos"
-
 #: source/ui/docvw/access.src#STR_ACCESS_DOC_NAME.String.Text
 msgid  "Document view"
-msgstr "Vista de documentu"
+msgstr "Visualización del documentu"
 
 #: source/ui/docvw/access.src#STR_ACCESS_DOC_DESC.String.Text
 msgid  "Document view"
@@ -5133,7 +5133,7 @@ msgstr "Nota al pie $(ARG1)"
 
 #: source/ui/docvw/access.src#STR_ACCESS_ENDNOTE_NAME.String.Text
 msgid  "Endnote $(ARG1)"
-msgstr "Nota a lo cabero $(ARG1)"
+msgstr "Nota final $(ARG1)"
 
 #: source/ui/docvw/access.src#STR_ACCESS_ENDNOTE_DESC.String.Text
 msgid  "Endnote $(ARG1)"
@@ -5165,7 +5165,7 @@ msgstr "Aiciones"
 
 #: source/ui/docvw/access.src#STR_ACCESS_ANNOTATION_BUTTON_DESC.String.Text
 msgid  "Activate this button to open a list of actions which can be performed on this comment and other comments"
-msgstr ""
+msgstr "Activa esti botón p'abrir una llista d'aiciones que pueden llevase a cau sobre ésti u otros comentarios"
 
 #: source/ui/docvw/access.src#STR_ACCESS_PREVIEW_DOC_NAME.String.Text
 msgid  "Document preview"
@@ -5214,6 +5214,10 @@ msgstr "- Nun hai denguna imprentadora instalada -"
 #: source/ui/envelp/envprt.src#TP_ENV_PRT.BTN_PRTSETUP.PushButton.Text
 msgid  "Setup..."
 msgstr "Configuración..."
+
+#: source/ui/envelp/mailmrge.src#_MAIL_MERGE_STRING_.#define.Text
+msgid  "Mail Merge"
+msgstr "Combinar corréu"
 
 #: source/ui/envelp/mailmrge.src#DLG_MAILMERGE.RB_ALL.RadioButton.Text
 msgid  "~All"
@@ -5337,11 +5341,7 @@ msgstr "~Crear una conexión nueva"
 
 #: source/ui/envelp/mailmrge.src#DLG_MERGE_FIELD_CONNECTIONS.FT_INFO.FixedText.Text
 msgid  "Fields are used to personalize form letters. The fields are placeholders for data from a data source, such as a database. The fields in the form letter must be connected to the data source."
-msgstr ""
-
-#: source/ui/envelp/mailmrge.src#_MAIL_MERGE_STRING_.#define.Text
-msgid  "Mail Merge"
-msgstr "Combinar corréu"
+msgstr "Los campus úsense pa personalizar les cartes de formulariu. Los campos son sustituyíos polos datos de la fonte de datos, como una base de datos. Los campos de la carta del formulariu han tar coneutaos a la fonte de datos."
 
 #: source/ui/envelp/labprt.src#TP_LAB_PRT.BTN_PAGE.RadioButton.Text
 msgid  "~Entire page"
@@ -5397,7 +5397,7 @@ msgstr "Doc. ~nuevu"
 
 #: source/ui/envelp/envelp.src#STR_SENDER_TOKENS.String.Text
 msgid  "COMPANY;CR;FIRSTNAME; ;LASTNAME;CR;ADDRESS;CR;CITY; ;STATEPROV; ;POSTALCODE;CR;COUNTRY;CR;"
-msgstr ""
+msgstr "COMPANY;CR;FIRSTNAME; ;LASTNAME;CR;ADDRESS;CR;CITY; ;STATEPROV; ;POSTALCODE;CR;COUNTRY;CR;"
 
 #: source/ui/envelp/envfmt.src#TP_ENV_FMT.FL_ADDRESSEE.FixedLine.Text
 msgid  "Addressee"
@@ -5470,6 +5470,14 @@ msgstr "~Caráuter..."
 #: source/ui/envelp/envfmt.src#MNU_EDIT.MID_PARA.MenuItem.Text
 msgid  "P~aragraph..."
 msgstr "Pá~rrafu..."
+
+#: source/ui/envelp/label.src#LABEL_STRING.#define.Text
+msgid  "Labels"
+msgstr "Etiquetes"
+
+#: source/ui/envelp/label.src#BUSINESS_CARD_STRING.#define.Text
+msgid  "Business Cards"
+msgstr "Tarxetes de visita"
 
 #: source/ui/envelp/label.src#DLG_LAB.1.TP_PRIVATE_DATA.PageItem.Text
 msgid  "Private"
@@ -5639,14 +5647,6 @@ msgstr "Fax"
 msgid  "Ho~mepage / e-mail"
 msgstr "Páxi~na principal / corréu electrónicu"
 
-#: source/ui/envelp/label.src#LABEL_STRING.#define.Text
-msgid  "Labels"
-msgstr "Etiquetes"
-
-#: source/ui/envelp/label.src#BUSINESS_CARD_STRING.#define.Text
-msgid  "Business Cards"
-msgstr "Tarxetes de visita"
-
 #: source/ui/envelp/labfmt.src#TP_LAB_FMT.TXT_HDIST.FixedText.Text
 msgid  "Hori~zontal pitch"
 msgstr "Distancia hori~zontal"
@@ -5728,8 +5728,8 @@ msgid  "Options"
 msgstr "Opciones"
 
 #: source/ui/envelp/labfmt.src#DLG_SAVE_LABEL.MB_QUERY.QueryBox.Message
-msgid  "The label "%1 / %2" already exists.\nDo you want to overwrite it?"
-msgstr ""
+msgid  "The label \"%1 / %2\" already exists.\nDo you want to overwrite it?"
+msgstr "Yá esiste la etiqueta \"%1 / %2\".\n¿Quies sobreescribila?"
 
 #: source/ui/envelp/labfmt.src#DLG_SAVE_LABEL.QueryBox.Text
 msgid  "Save Label Format"
@@ -6609,7 +6609,7 @@ msgstr "Restolar..."
 
 #: source/ui/fldui/changedb.src#DLG_CHANGE_DB.FT_DESC.FixedText.Text
 msgid  "Use this dialog to replace the databases you access in your document via database fields, with other databases. You can only make one change at a time. Multiple selection is possible in the list on the left.\nUse the browse button to select a database file."
-msgstr ""
+msgstr "Usa esti diálogu pa trocar la base de datos a la qu'accedes nel to documentu vía campos de base de datos, con otra base de datos. Pues facer sólo un cambéu cada vegada. Seleición múltiple ye posible na llista de la manzorga.\nUsar el botón restolar pa seleicionar un ficheru de base de datos."
 
 #: source/ui/fldui/changedb.src#DLG_CHANGE_DB.FT_DOCDBTEXT.FixedText.Text
 msgid  "Database applied to document:"
@@ -7388,6 +7388,14 @@ msgid  "~Position"
 msgstr "~Posición"
 
 #: source/ui/frmdlg/column.src#TP_COLUMN.LB_POSITION.Default.StringList.item
+msgid  "Top"
+msgstr "Cimero"
+
+#: source/ui/frmdlg/column.src#TP_COLUMN.LB_POSITION.Default.StringList.item
+msgid  "Centered"
+msgstr "Centráu"
+
+#: source/ui/frmdlg/column.src#TP_COLUMN.LB_POSITION.Default.StringList.item
 msgid  "Bottom"
 msgstr "Cabero"
 
@@ -7450,14 +7458,6 @@ msgstr "Espaciu ente %1 y %2"
 #: source/ui/frmdlg/column.src#STR_ACCESS_COLUMN_WIDTH.String.Text
 msgid  "Column %1 Width"
 msgstr "Anchor de la columna %1"
-
-#: source/ui/frmdlg/column.src#TP_COLUMN.LB_POSITION.Default.StringList.item
-msgid  "Top"
-msgstr "Cimero"
-
-#: source/ui/frmdlg/column.src#TP_COLUMN.LB_POSITION.Default.StringList.item
-msgid  "Centered"
-msgstr "Centráu"
 
 #: source/ui/frmdlg/frmui.src#STR_TOP.String.Text
 msgid  "~Top"
@@ -7667,6 +7667,10 @@ msgstr "Documentu maestru"
 msgid  "%PRODUCTNAME %PRODUCTVERSION Master Document"
 msgstr "Documentu maestru de %PRODUCTNAME %PRODUCTVERSION"
 
+#: source/ui/index/idxmrk.src#IDX_PHONETIC_LISTBOX_DESCRIPTION.#define.Text
+msgid  "Phonetic reading"
+msgstr "Llectura fonética"
+
 #: source/ui/index/idxmrk.src#IDX_DIALOG_WINDOW.WIN_DLG.BT_OK.OKButton.Text
 msgid  "Insert"
 msgstr "Inxertar"
@@ -7805,11 +7809,7 @@ msgstr "Inxertar Entrada Bibliográfica"
 
 #: source/ui/index/idxmrk.src#DLG_CHANGE_AUTH_ENTRY.QueryBox.Message
 msgid  "The document already contains the bibliography entry but with different data. Do you want to adjust the existing entries?"
-msgstr ""
-
-#: source/ui/index/idxmrk.src#IDX_PHONETIC_LISTBOX_DESCRIPTION.#define.Text
-msgid  "Phonetic reading"
-msgstr "Llectura fonética"
+msgstr "El documentu ya caltien la entrada bibliográfica, pero con datos distintos. ¿Quies axustar les entraes existentes?"
 
 #: source/ui/index/cnttab.src#STR_TITLE.String.Text
 msgid  "Title"
@@ -7824,8 +7824,8 @@ msgid  "Level "
 msgstr "Nivel "
 
 #: source/ui/index/cnttab.src#STR_FILE_NOT_FOUND.String.Text
-msgid  "The file, "%1" in the "%2" path could not be found."
-msgstr ""
+msgid  "The file, \"%1\" in the \"%2\" path could not be found."
+msgstr "Nun pudo atopase'l ficheru \"%1\" nel camín \"%2\"."
 
 #: source/ui/index/cnttab.src#DLG_MULTI_TOX.1.TP_TOX_SELECT.PageItem.Text
 msgid  "Index/Table"
@@ -8557,7 +8557,7 @@ msgstr "~Camín..."
 
 #: source/ui/misc/glossary.src#DLG_GLOSSARY.ST_READONLY_PATH.String.Text
 msgid  "The 'AutoText' directories are read-only. Do you want to call the path settings dialog?"
-msgstr ""
+msgstr "Los direutorios 'AutoText' son de sólo llectura. ¿Quies llamar al diálogu d'axustes del camín?"
 
 #: source/ui/misc/glossary.src#DLG_GLOSSARY.MNU_EDIT.FN_GL_DEFINE.MenuItem.Text
 msgid  "~New"
@@ -8672,6 +8672,14 @@ msgid  "~Position"
 msgstr "~Posición"
 
 #: source/ui/misc/pgfnote.src#TP_FOOTNOTE_PAGE.DLB_LINEPOS.Default.StringList.item
+msgid  "Left"
+msgstr "Esquierda"
+
+#: source/ui/misc/pgfnote.src#TP_FOOTNOTE_PAGE.DLB_LINEPOS.Default.StringList.item
+msgid  "Centered"
+msgstr "Centráu"
+
+#: source/ui/misc/pgfnote.src#TP_FOOTNOTE_PAGE.DLB_LINEPOS.Default.StringList.item
 msgid  "Right"
 msgstr "Drecha"
 
@@ -8690,14 +8698,6 @@ msgstr "~Espaciáu a los conteníos de nota al pie"
 #: source/ui/misc/pgfnote.src#TP_FOOTNOTE_PAGE.FL_LINE.FixedLine.Text
 msgid  "Separator line"
 msgstr "Llinia separtadora"
-
-#: source/ui/misc/pgfnote.src#TP_FOOTNOTE_PAGE.DLB_LINEPOS.Default.StringList.item
-msgid  "Left"
-msgstr "Esquierda"
-
-#: source/ui/misc/pgfnote.src#TP_FOOTNOTE_PAGE.DLB_LINEPOS.Default.StringList.item
-msgid  "Centered"
-msgstr "Centráu"
 
 #: source/ui/misc/num.src#TP_NUM_POSITION.FL_LEVEL.FixedLine.Text
 msgid  "Level"
@@ -10065,7 +10065,7 @@ msgstr "AutoCorreición"
 
 #: source/ui/shells/shells.src#STR_REDLINE_MSG.String.Text
 msgid  "AutoCorrect completed.\nYou can accept or reject all changes,\nor accept or reject particular changes."
-msgstr ""
+msgstr "L'Autoformateáu acabó.\nAgora puedes aceutar o refugar tolos cambeos,\ntoos xuntos o unu a unu."
 
 #: source/ui/shells/shells.src#STR_REDLINE_ACCEPT_ALL.String.Text
 msgid  "Accept All"
@@ -10081,7 +10081,7 @@ msgstr "Remanar Cambios"
 
 #: source/ui/shells/shells.src#DLG_IMPORT_DBNAME.QueryBox.Message
 msgid  "Use database name as default database for the document?"
-msgstr ""
+msgstr "¿Quies quedate col nome de la base datos como base datos predeteerminada pal documentu?"
 
 #: source/ui/shells/shells.src#STR_PAGE.String.Text
 msgid  "Page "
@@ -10309,7 +10309,7 @@ msgstr "Suma"
 
 #: source/ui/table/tautofmt.src#DLG_AUTOFMT_TABLE.STR_INVALID_AFNAME.String.Text
 msgid  "You have entered an invalid name.\nThe desired AutoFormat could not be created. \nTry again using a different name."
-msgstr ""
+msgstr "Inxertóse un nome non válidu.\nL'Autoformatu deseáu nun pudo crease. \nInténtalo otra vegada con un nome distintu."
 
 #: source/ui/table/mergetbl.src#DLG_MERGE_TABLE.FL_MERGE.FixedLine.Text
 msgid  "Mode"
@@ -10493,7 +10493,7 @@ msgstr "Primera c~olumna como etiqueta"
 
 #: source/ui/table/chartins.src#DLG_INSERT_CHART.FT_TEXT.FixedText.Text
 msgid  "If the selected cells do not contain the desired data, select the data range now.\n\nInclude the cells containing column and row labels if you want them to be included in your chart."
-msgstr ""
+msgstr "Si les caxelles seleicionaes nun contienen los datos deseados, seleicionar el rangu de datos agora.\n\nIncluyendo les caxelles que contienen etiquetes de columna y filera que quies incluyir nel to diagrama."
 
 #: source/ui/table/chartins.src#DLG_INSERT_CHART.BT_PREV.PushButton.Text
 msgid  "<< ~Back"
@@ -10506,6 +10506,10 @@ msgstr "~Siguiente >>"
 #: source/ui/table/chartins.src#DLG_INSERT_CHART.BT_FINISH.PushButton.Text
 msgid  "Cre~ate"
 msgstr "Cri~ar"
+
+#: source/ui/table/tabledlg.src#TEXT_TEXTFLOW.#define.Text
+msgid  "Text Flow"
+msgstr "Fluxu de testu"
 
 #: source/ui/table/tabledlg.src#DLG_FORMAT_TABLE.TabDialog.Text
 msgid  "Table Format"
@@ -10715,10 +10719,6 @@ msgstr "Cabero"
 msgid  "The name of the table must not contain spaces."
 msgstr "El nome de la tabla nun puede contener espacios."
 
-#: source/ui/table/tabledlg.src#TEXT_TEXTFLOW.#define.Text
-msgid  "Text Flow"
-msgstr "Fluxu de testu"
-
 #: source/ui/table/splittbl.src#DLG_SPLIT_TABLE.FL_SPLIT.FixedLine.Text
 msgid  "Mode"
 msgstr "Mou"
@@ -10753,7 +10753,7 @@ msgstr "¿Quies comprobar el testu principal?"
 
 #: source/ui/uiview/view.src#DLG_PRT_FIELDNAME.QueryBox.Message
 msgid  "Show field commands option is checked.\nDo you want to print the document with field names?"
-msgstr ""
+msgstr "La opción Amosar comandos de campu ta activada.\n¿Quies imprentar el documentu colos nomes de campu?"
 
 #: source/ui/uiview/view.src#DLG_SPECIAL.QueryBox.Message
 msgid  "Do you want check the special regions?"
@@ -10761,23 +10761,27 @@ msgstr "¿Quies comprobar les rexones especiales?"
 
 #: source/ui/uiview/view.src#DLG_THESAURUS.QueryBox.Message
 msgid  "This word appears in the list of words you want to avoid! Start thesaurus?"
-msgstr ""
+msgstr "¡Esta pallabra apaez na llista de pallabres que quies evitar! ¿Emprimar el diccionariu de sinónimos?"
 
 #: source/ui/uiview/view.src#DLG_SPECIAL_FORCED.QueryBox.Message
 msgid  "Check special regions is deactivated. Check anyway?"
-msgstr ""
+msgstr "La comprobación de rexones especiales ta desactivada. ¿Comprobar de toes maneres?"
 
 #: source/ui/uiview/view.src#MSG_SEARCH_END.QueryBox.Message
 msgid  "%PRODUCTNAME Writer has searched to the end of the document. Do you want to continue at the beginning?"
-msgstr ""
+msgstr "%PRODUCTNAME Write guetó hasta lo cabero'l documentu. ¿Quies siguier dende l'aniciu?"
 
 #: source/ui/uiview/view.src#MSG_SEARCH_START.QueryBox.Message
 msgid  "%PRODUCTNAME Writer has searched to the beginning of the document. Do you want to continue at the end?"
-msgstr ""
+msgstr "%PRODUCTNAME Writer guetó hasta lo cabero'l documentu. ¿Quies siguier dende'l final?"
 
 #: source/ui/uiview/view.src#MSG_NO_MERGE_ENTRY.InfoBox.Message
 msgid  "Could not merge documents."
 msgstr "Nun se pudieron entemecer los documentos."
+
+#: source/ui/uiview/view.src#MSG_ERR_INSERT_GLOS.InfoBox.Message
+msgid  "AutoText could not be created."
+msgstr "Nun se pudo crear l'autotestu."
 
 #: source/ui/uiview/view.src#MSG_ERR_SRCSTREAM.InfoBox.Message
 msgid  "The source cannot be loaded."
@@ -10785,7 +10789,7 @@ msgstr "La fonte nun pue cargase."
 
 #: source/ui/uiview/view.src#MSG_ERR_NO_FAX.InfoBox.Message
 msgid  "No fax printer has been set under Tools/Options/%1/Print."
-msgstr ""
+msgstr "Nun se definió denguna imprentadora fax en Ferramientes/Opciones/%1/Imprentar."
 
 #: source/ui/uiview/view.src#STR_WEBOPTIONS.String.Text
 msgid  "HTML document"
@@ -10871,10 +10875,6 @@ msgstr "Códigu fonte HTML"
 msgid  "HTML Source"
 msgstr "Códigu fonte HTML"
 
-#: source/ui/uiview/view.src#MSG_ERR_INSERT_GLOS.InfoBox.Message
-msgid  "AutoText could not be created."
-msgstr "Nun se pudo crear l'autotestu."
-
 #: source/ui/uiview/pview.src#DLG_PAGEPREVIEW_ZOOM.ModalDialog.Text
 msgid  "Multiple Pages"
 msgstr "Páxines múltiples"
@@ -10908,7 +10908,7 @@ msgid  "Capitalize first letter of sentences"
 msgstr "Primer lletra en mayúscules de sentencies"
 
 #: source/ui/utlui/utlui.src#RID_SHELLRES_AUTOFMTSTRS.STR_AUTOFMTREDL_TYPO+1.String.Text
-msgid  "Replace "standard" quotes with %1 \bcustom%2 quotes"
+msgid  "Replace \"standard\" quotes with %1 \bcustom%2 quotes"
 msgstr ""
 
 #: source/ui/utlui/utlui.src#RID_SHELLRES_AUTOFMTSTRS.STR_AUTOFMTREDL_USER_STYLE+1.String.Text
@@ -10948,28 +10948,28 @@ msgid  "Combine single line paragraphs"
 msgstr "Combinar párrafos d'una sólo llinia"
 
 #: source/ui/utlui/utlui.src#RID_SHELLRES_AUTOFMTSTRS.STR_AUTOFMTREDL_SET_TMPL_TEXT +1.String.Text
-msgid  "Set "Text body" Style"
-msgstr ""
+msgid  "Set \"Text body\" Style"
+msgstr "Afitar Estilu \"Cuerpu testu\""
 
 #: source/ui/utlui/utlui.src#RID_SHELLRES_AUTOFMTSTRS.STR_AUTOFMTREDL_SET_TMPL_INDENT.String.Text
-msgid  "Set "Text body indent" Style"
-msgstr ""
+msgid  "Set \"Text body indent\" Style"
+msgstr "Afitar Estilu \"Indentación cuerpu testu\""
 
 #: source/ui/utlui/utlui.src#RID_SHELLRES_AUTOFMTSTRS.STR_AUTOFMTREDL_SET_TMPL_NEG_INDENT.String.Text
-msgid  "Set "Hanging indent" Style"
-msgstr ""
+msgid  "Set \"Hanging indent\" Style"
+msgstr "Aplicar estilu \"Sangría negativa de primera llinia\""
 
 #: source/ui/utlui/utlui.src#RID_SHELLRES_AUTOFMTSTRS.STR_AUTOFMTREDL_SET_TMPL_TEXT_INDENT +1.String.Text
-msgid  "Set "Text body indent" Style"
-msgstr ""
+msgid  "Set \"Text body indent\" Style"
+msgstr "Afitar Estilu \"Indentación cuerpu testu\""
 
 #: source/ui/utlui/utlui.src#RID_SHELLRES_AUTOFMTSTRS.STR_AUTOFMTREDL_SET_TMPL_HEADLINE +1.String.Text
-msgid  "Set "Heading $(ARG1)" Style"
-msgstr ""
+msgid  "Set \"Heading $(ARG1)\" Style"
+msgstr "Afitar Estilu \"Encabezáu $(ARG1)\""
 
 #: source/ui/utlui/utlui.src#RID_SHELLRES_AUTOFMTSTRS.STR_AUTOFMTREDL_SET_NUMBULET +1.String.Text
-msgid  "Set "Bullet" or "Numbering" Style"
-msgstr ""
+msgid  "Set \"Bullet\" or \"Numbering\" Style"
+msgstr "Aplicar estilu \"Viñetes\" o \"Numberación\""
 
 #: source/ui/utlui/utlui.src#RID_SHELLRES_AUTOFMTSTRS.STR_AUTOFMTREDL_DEL_MORELINES +1.String.Text
 msgid  "Combine paragraphs"
@@ -11137,11 +11137,11 @@ msgstr "[Sistema]"
 
 #: source/ui/utlui/utlui.src#STR_MULT_INTERACT_SPELL_WARN.String.Text
 msgid  "The interactive spellcheck is already active\nin a different document"
-msgstr ""
+msgstr "El interautivu spellcheck ya ta activu\nnun documentu distintu"
 
 #: source/ui/utlui/utlui.src#STR_MULT_INTERACT_HYPH_WARN.String.Text
 msgid  "The interactive hyphenation is already active\nin a different document"
-msgstr ""
+msgstr "La división de pallabres interactiva yá ta activa\nn'otru documentu"
 
 #: source/ui/utlui/utlui.src#STR_SPELL_TITLE.String.Text
 msgid  "Spellcheck"
@@ -12667,6 +12667,18 @@ msgstr "Centráu vertical"
 msgid  "at bottom"
 msgstr "abaxo"
 
+#: source/ui/utlui/attrdesc.src#STR_LINE_TOP.String.Text
+msgid  "Top of line"
+msgstr "Cimero de llinia"
+
+#: source/ui/utlui/attrdesc.src#STR_LINE_CENTER.String.Text
+msgid  "Line centered"
+msgstr "Centráu llinia"
+
+#: source/ui/utlui/attrdesc.src#STR_LINE_BOTTOM.String.Text
+msgid  "Bottom of line"
+msgstr "Cabero de llinia"
+
 #: source/ui/utlui/attrdesc.src#STR_REGISTER_ON.String.Text
 msgid  "Register-true"
 msgstr "Conformidá de rexistru"
@@ -12834,18 +12846,6 @@ msgstr "Amestar bordes"
 #: source/ui/utlui/attrdesc.src#STR_CONNECT_BORDER_OFF.String.Text
 msgid  "Do not merge borders"
 msgstr "Non amestar bordes"
-
-#: source/ui/utlui/attrdesc.src#STR_LINE_TOP.String.Text
-msgid  "Top of line"
-msgstr "Cimero de llinia"
-
-#: source/ui/utlui/attrdesc.src#STR_LINE_CENTER.String.Text
-msgid  "Line centered"
-msgstr "Centráu llinia"
-
-#: source/ui/utlui/attrdesc.src#STR_LINE_BOTTOM.String.Text
-msgid  "Bottom of line"
-msgstr "Cabero de llinia"
 
 #: source/ui/web/web.src#STR_HUMAN_SWWEBDOC_NAME.String.Text
 msgid  "HTML"

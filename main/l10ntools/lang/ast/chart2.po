@@ -39,6 +39,10 @@ msgstr "Escoyer títulos, lleendes y configuracion de cuadrícula"
 msgid  "Display grids"
 msgstr "Amosar cuadrícules"
 
+#: source/controller/dialogs/tp_3D_SceneGeometry.src#CUSTOMUNITTEXT_DEGREE.#define.CustomUnitText
+msgid  " degrees"
+msgstr " graos"
+
 #: source/controller/dialogs/tp_3D_SceneGeometry.src#TP_3D_SCENEGEOMETRY.CBX_RIGHT_ANGLED_AXES.CheckBox.Text
 msgid  "~Right-angled axes"
 msgstr "Exes n'ángulu ~rectu"
@@ -58,10 +62,6 @@ msgstr "Rotación en ~Z"
 #: source/controller/dialogs/tp_3D_SceneGeometry.src#TP_3D_SCENEGEOMETRY.CBX_PERSPECTIVE.CheckBox.Text
 msgid  "~Perspective"
 msgstr "~Perspeutiva"
-
-#: source/controller/dialogs/tp_3D_SceneGeometry.src#CUSTOMUNITTEXT_DEGREE.#define.CustomUnitText
-msgid  " degrees"
-msgstr " graos"
 
 #: source/controller/dialogs/Strings_AdditionalControls.src#STR_3DSCHEME_SIMPLE.String.Text
 msgid  "Simple"
@@ -261,7 +261,7 @@ msgstr "L'intervalu mayor necesita un númberu positivu. Revisa los tos datos."
 
 #: source/controller/dialogs/Strings_Scale.src#STR_BAD_LOGARITHM.String.Text
 msgid  "The logarithmic scale requires positive numbers. Check your input."
-msgstr ""
+msgstr "La escala logarítmica necesita númberos positivos. Revisa los tos datos."
 
 #: source/controller/dialogs/Strings_Scale.src#STR_MIN_GREATER_MAX.String.Text
 msgid  "The minimum must be lower than the maximum. Check your input."
@@ -269,11 +269,11 @@ msgstr "El mínimu tien que ser menor que'l máximu. Revisa los tos datos."
 
 #: source/controller/dialogs/Strings_Scale.src#STR_INVALID_INTERVALS.String.Text
 msgid  "The major interval needs to be greater than the minor interval. Check your input."
-msgstr ""
+msgstr "L'intervalu mayor tien de ser mayor que'l intervalu menor. Revisa la to entrada."
 
 #: source/controller/dialogs/Strings_Scale.src#STR_INVALID_TIME_UNIT.String.Text
 msgid  "The major and minor interval need to be greater or equal to the resolution. Check your input."
-msgstr ""
+msgstr "Los intervalos mayor y menor tienen de ser mayores o iguales que la resolución. Revisa la to entrada."
 
 #: source/controller/dialogs/dlg_DataEditor.src#DLG_DIAGRAM_DATA.ModalDialog.Text
 msgid  "Data Table"
@@ -889,7 +889,7 @@ msgstr "Tipografía Asiática"
 
 #: source/controller/dialogs/Strings.src#STR_OBJECT_AVERAGE_LINE_WITH_PARAMETERS.String.Text
 msgid  "Mean value line with value %AVERAGE_VALUE and standard deviation %STD_DEVIATION"
-msgstr ""
+msgstr "La llinia del valor mediu con un valor de %AVERAGE_VALUE y una esviación estándar del %STD_DEVIATION"
 
 #: source/controller/dialogs/Strings.src#STR_OBJECT_AXIS.String.Text
 msgid  "Axis"
@@ -1097,11 +1097,11 @@ msgstr "Valores: %POINTVALUES"
 
 #: source/controller/dialogs/Strings.src#STR_TIP_DATAPOINT.String.Text
 msgid  "Data Point %POINTNUMBER, data series %SERIESNUMBER, values: %POINTVALUES"
-msgstr ""
+msgstr "Puntu de datos %POINTNUMBER, serie de datos %SERIESNUMBER, valores: %POINTVALUES"
 
 #: source/controller/dialogs/Strings.src#STR_STATUS_DATAPOINT_MARKED.String.Text
 msgid  "Data point %POINTNUMBER in data series %SERIESNUMBER selected, values: %POINTVALUES"
-msgstr ""
+msgstr "Puntu de datos %POINTNUMBER de la serie de datos %SERIESNUMBER seleicionada, valores: %POINTVALUES"
 
 #: source/controller/dialogs/Strings.src#STR_STATUS_OBJECT_MARKED.String.Text
 msgid  "%OBJECTNAME selected"
@@ -1257,7 +1257,7 @@ msgstr "Esbillar rangu pa barres d'error negatives"
 
 #: source/controller/dialogs/Strings.src#STR_DATA_EDITOR_INCORRECT_INPUT.String.Text
 msgid  "Your last input is incorrect.\nIgnore this change and close the dialog?"
-msgstr ""
+msgstr "La to cabera entrada ye incorreuta.\n¿Inorar esti cambéu y zarrar el diálogu?"
 
 #: source/controller/dialogs/Strings.src#STR_TEXT_DIRECTION_LTR.String.Text
 msgid  "Left-to-right"

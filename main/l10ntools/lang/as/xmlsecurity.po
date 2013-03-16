@@ -33,7 +33,7 @@ msgstr ""
 
 #: source/component/warnbox.src#RID_XMLSECWB_NO_MOZILLA_PROFILE.WarningBox.Message
 msgid  "Digital signatures functionality could not be used, because no Mozilla user profile was found. Please check the Mozilla installation."
-msgstr ""
+msgstr "ডিজিটেল স্বাক্ষৰ ফাংশ্বনেলিটি ব্যৱহাৰ কৰিব পৰা নগ'ল, কাৰণ কোনো মোজিলা ইউজাৰ প্ৰ'ফাইল পোৱা নগ'ল. অনুগ্ৰহ কৰি মোজিলা ইনষ্টলেশ্বন পৰীক্ষা কৰক."
 
 #: source/dialogs/macrosecurity.src#RID_XMLSECTP_MACROSEC.TabDialog.Text
 msgid  "Macro Security"
@@ -53,19 +53,19 @@ msgstr "পুনৰ স্থাপন কৰক"
 
 #: source/dialogs/macrosecurity.src#RID_XMLSECTP_SECLEVEL.RB_VERYHIGH.RadioButton.Text
 msgid  "~Very high.\nOnly macros from trusted file locations are allowed to run. All other macros, regardless whether signed or not, are disabled."
-msgstr ""
+msgstr "উচ্চ (~V) ।\nবিশ্বাসী ফাইলৰ স্থানৰ পৰাহে macros চলাব দিয়া হয় । অন্য সকলোmacros, চহি হওক বা নহওক, নিষ্ক্ৰিয় কৰা হয় ।"
 
 #: source/dialogs/macrosecurity.src#RID_XMLSECTP_SECLEVEL.RB_HIGH.RadioButton.Text
 msgid  "H~igh.\nOnly signed macros from trusted sources are allowed to run. Unsigned macros are disabled."
-msgstr ""
+msgstr "উচ্চ.\nকেৱল ট্ৰাষ্টেড উত্সবোৰৰ পৰা স্বাক্ষৰিত মেক্ৰ'জ চলাবলৈ অনুমতি দিয়া হৈছে. অস্বাক্ষৰিত মেক্ৰ'জ অক্ষম হ'ল."
 
 #: source/dialogs/macrosecurity.src#RID_XMLSECTP_SECLEVEL.RB_MEDIUM.RadioButton.Text
 msgid  "~Medium.\nConfirmation required before executing macros from untrusted sources."
-msgstr ""
+msgstr "মধ্যম (~M) ।\nঅবিশ্বাসী উৎসৰ পৰা macros চলোৱাৰ আগতে নিশ্চিতকৰনৰ প্ৰয়োজন ।"
 
 #: source/dialogs/macrosecurity.src#RID_XMLSECTP_SECLEVEL.RB_LOW.RadioButton.Text
 msgid  "~Low (not recommended).\nAll macros will be executed without confirmation. Use this setting only if you are certain that all documents that will be opened are safe."
-msgstr ""
+msgstr "নিম্ন (~L) (উপদেশিত নহয়)।\nনিশ্চিত নকৰাকৈ সকলো macros চলোৱা হ'ব । খোলা সকলো ডকুমেন্ট সুৰক্ষিত বুলি নিশ্চিত হ'লেহে এইটো খুলিব ।"
 
 #: source/dialogs/macrosecurity.src#RID_XMLSECTP_TRUSTSOURCES.FL_TRUSTCERT.FixedLine.Text
 msgid  "Trusted certificates"
@@ -93,7 +93,7 @@ msgstr "ট্ৰাষ্টেড ফাইলৰ স্থানবোৰ"
 
 #: source/dialogs/macrosecurity.src#RID_XMLSECTP_TRUSTSOURCES.FI_TRUSTFILELOC.FixedText.Text
 msgid  "Document macros are always executed if they have been opened from one of the following locations."
-msgstr ""
+msgstr "ডকুমেন্ট macros সদায়ে চলোৱা হয় যদি তলৰ যি কোনো এটা স্থানৰ পৰা সিহঁতক খোলা হৈছে ।"
 
 #: source/dialogs/macrosecurity.src#RID_XMLSECTP_TRUSTSOURCES.FL_ADD_TRUSTFILELOC.PushButton.Text
 msgid  "Add..."
@@ -125,7 +125,7 @@ msgstr "স্বাক্ষৰবোৰ প্ৰদৰ্শন কৰক..."
 
 #: source/dialogs/warnings.src#RID_XMLSECTP_MACROWARN.FI_DESCR2.FixedText.Text
 msgid  "Macros may contain viruses. Disabling macros for a document is always save. If you disable macros you may lose functionality provided by the document macros."
-msgstr ""
+msgstr "Macros ত ভাইৰাছ থাকিব পাৰে । তাক নিষ্ক্ৰিয় কৰা সুৰক্ষিত । macros নিষ্ক্ৰিয় কৰিলে কাৰ্যক্ষমতা কমিব পাৰে ।"
 
 #: source/dialogs/warnings.src#RID_XMLSECTP_MACROWARN.CB_ALWAYSTRUST.CheckBox.Text
 msgid  "Always trust macros from this source"

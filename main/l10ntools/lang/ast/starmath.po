@@ -361,7 +361,7 @@ msgstr "Axustar a la ~páxina"
 
 #: source/smres.src#RID_PRINTOPTIONPAGE.RB_ZOOM.RadioButton.Text
 msgid  "~Scaling"
-msgstr "~Escala"
+msgstr "~Escaláu"
 
 #: source/smres.src#RID_PRINTOPTIONPAGE.FL_MISC_OPTIONS.FixedLine.Text
 msgid  "Miscellaneous options"
@@ -445,11 +445,11 @@ msgstr "~Eliminar"
 
 #: source/smres.src#RID_NOMATHTYPEFACEWARNING.WarningBox.Message
 msgid  "The 'StarMath' font has not been installed.\nWithout this font %PRODUCTNAME Math cannot function correctly.\nPlease install this font and restart %PRODUCTNAME Math."
-msgstr ""
+msgstr "¡La fonte \"StarMath\" nun ta instalada!\nEnsin esta fonte %PRODUCTNAME Math nun furrula bien.\nInstala la fonte y reanicia %PRODUCTNAME Math."
 
 #: source/smres.src#RID_DEFAULTSAVEQUERY.QueryBox.Message
 msgid  "Should the changes be saved as defaults?\n\nThese changes will apply for all new formulas."
-msgstr ""
+msgstr "¿Quies grabar los cambeos como predeterminaos?\n\nEstos cambeos afeutarán a toles fórmules nueves."
 
 #: source/smres.src#RID_FONTREGULAR.String.Text
 msgid  "Standard"
@@ -558,6 +558,10 @@ msgstr "Sans"
 #: source/smres.src#RID_FONTMENU.7.MenuItem.Text
 msgid  "Fixed"
 msgstr "FIXU"
+
+#: source/smres.src#CMDBOXWINDOW_TEXT.#define.Text
+msgid  "Commands"
+msgstr "Comandos"
 
 #: source/smres.src#RID_DOCUMENTSTR.String.Text
 msgid  "Formula"
@@ -694,10 +698,6 @@ msgstr "Axustar a la ~páxina"
 #: source/smres.src#RID_PRINTUIOPTIONS.item9.ItemList.item
 msgid  "~Scaling"
 msgstr "~Escala"
-
-#: source/smres.src#CMDBOXWINDOW_TEXT.#define.Text
-msgid  "Commands"
-msgstr "Comandos"
 
 #: source/commands.src#RID_COMMANDMENU.RID_UNBINOPS_MENU.MenuItem.Text
 msgid  "~Unary/Binary Operators"
@@ -901,11 +901,11 @@ msgstr "Ye ortogonal a"
 
 #: source/toolbox.src#RID_TOOLBOXWINDOW.TOOLBOX_CAT_B.RID_XLESLANTY.ToolBoxItem.Text
 msgid  "Is Less Than Or Equal To"
-msgstr "Ye menor que o igual a"
+msgstr "Ye menor que o igual que"
 
 #: source/toolbox.src#RID_TOOLBOXWINDOW.TOOLBOX_CAT_B.RID_XGESLANTY.ToolBoxItem.Text
 msgid  "Is Greater Than Or Equal To"
-msgstr "Ye mayor que o igual a"
+msgstr "Ye mayor que o igual que"
 
 #: source/toolbox.src#RID_TOOLBOXWINDOW.TOOLBOX_CAT_B.RID_XSIMY.ToolBoxItem.Text
 msgid  "Is Similar To"

@@ -65,7 +65,7 @@ msgstr "'#1' নামটো ইতিমধ্যে আছেই."
 
 #: source/core/resource/strings.src#RID_STR_ERROR_WRONG_ARGUMENT.String.Text
 msgid  "You tried to set an illegal argument. Please have a look at '#1' for valid arguments."
-msgstr ""
+msgstr "আপুনি অবৈধ তৰ্ক দিছে । '#1' চাওক বৈধ তৰ্কৰ কাৰণে ।"
 
 #: source/core/resource/strings.src#RID_STR_ARGUMENT_IS_NULL.String.Text
 msgid  "The element is invalid."
@@ -140,12 +140,20 @@ msgid  "Group Header"
 msgstr "দলৰ হেডাৰ"
 
 #: source/ui/dlg/GroupsSorting.src#RID_GROUPS_SORTING.LST_HEADERLST.Default.StringList.item
+msgid  "Present"
+msgstr "বৰ্তমান মূল্যটো"
+
+#: source/ui/dlg/GroupsSorting.src#RID_GROUPS_SORTING.LST_HEADERLST.Default.StringList.item
 msgid  "Not present"
-msgstr "নাই"
+msgstr "বৰ্তমান মূল্যটো"
 
 #: source/ui/dlg/GroupsSorting.src#RID_GROUPS_SORTING.FT_FOOTER.FixedText.Text
 msgid  "Group Footer"
 msgstr "ফুটাৰ"
+
+#: source/ui/dlg/GroupsSorting.src#RID_GROUPS_SORTING.LST_FOOTERLST.Default.StringList.item
+msgid  "Present"
+msgstr "বৰ্তমানৰ মূল্য. এটা বিনিয়োগৰ বৰ্তমানৰ মূল্যটো গণনা কৰে."
 
 #: source/ui/dlg/GroupsSorting.src#RID_GROUPS_SORTING.LST_FOOTERLST.Default.StringList.item
 msgid  "Not present"
@@ -253,15 +261,7 @@ msgstr "একে পৃষ্ঠাত একে অনুপাত ৰাখ�
 
 #: source/ui/dlg/GroupsSorting.src#STR_RPT_HELP_SORT.String.Text
 msgid  "Select ascending or descending sort order. Ascending means from A to Z or 0 to 9"
-msgstr ""
-
-#: source/ui/dlg/GroupsSorting.src#RID_GROUPS_SORTING.LST_HEADERLST.Default.StringList.item
-msgid  "Present"
-msgstr "বৰ্তমানৰ মূল্য. এটা বিনিয়োগৰ বৰ্তমানৰ মূল্যটো গণনা কৰে."
-
-#: source/ui/dlg/GroupsSorting.src#RID_GROUPS_SORTING.LST_FOOTERLST.Default.StringList.item
-msgid  "Present"
-msgstr "বৰ্তমানৰ মূল্য. এটা বিনিয়োগৰ বৰ্তমানৰ মূল্যটো গণনা কৰে."
+msgstr "বৃদ্ধি কৰা বা কম কৰাৰ ক্ৰম নিৰ্ধাৰণ কৰক । Ascending মানে A to Z বা 0 to 9"
 
 #: source/ui/dlg/PageNumber.src#RID_PAGENUMBERS.ModalDialog.Text
 msgid  "Page Numbers"
@@ -300,6 +300,14 @@ msgid  "Alignment:"
 msgstr "শাৰীকৰণ"
 
 #: source/ui/dlg/PageNumber.src#RID_PAGENUMBERS.LST_ALIGNMENT.Default.StringList.item
+msgid  "Left"
+msgstr "বাওঁফাল"
+
+#: source/ui/dlg/PageNumber.src#RID_PAGENUMBERS.LST_ALIGNMENT.Default.StringList.item
+msgid  "Center"
+msgstr "কেন্দ্ৰ"
+
+#: source/ui/dlg/PageNumber.src#RID_PAGENUMBERS.LST_ALIGNMENT.Default.StringList.item
 msgid  "Right"
 msgstr "সোঁফাল"
 
@@ -312,20 +320,12 @@ msgid  "~Help"
 msgstr "সহায়"
 
 #: source/ui/dlg/PageNumber.src#STR_RPT_PN_PAGE.String.Text
-msgid  ""Page " & #PAGENUMBER#"
-msgstr ""
+msgid  "\"Page \" & #PAGENUMBER#"
+msgstr "\"Page \" & #PAGENUMBER#"
 
 #: source/ui/dlg/PageNumber.src#STR_RPT_PN_PAGE_OF.String.Text
-msgid  " & " of " & #PAGECOUNT#"
-msgstr ""
-
-#: source/ui/dlg/PageNumber.src#RID_PAGENUMBERS.LST_ALIGNMENT.Default.StringList.item
-msgid  "Left"
-msgstr "বাওঁফাল"
-
-#: source/ui/dlg/PageNumber.src#RID_PAGENUMBERS.LST_ALIGNMENT.Default.StringList.item
-msgid  "Center"
-msgstr "কেন্দ্ৰ"
+msgid  " & \" of \" & #PAGECOUNT#"
+msgstr " & \" of \" & #PAGECOUNT#"
 
 #: source/ui/dlg/dlgpage.src#RID_PAGEDIALOG_PAGE.TabDialog.Text
 msgid  "Page Setup"
@@ -456,6 +456,10 @@ msgid  "Properties..."
 msgstr "বৈশিষ্ট্যবোৰ..."
 
 #: source/ui/dlg/CondFormat.src#WIN_CONDITION.LB_COND_TYPE.Default.StringList.item
+msgid  "Field Value Is"
+msgstr "ক্ষেত্ৰৰ মান হ'ল"
+
+#: source/ui/dlg/CondFormat.src#WIN_CONDITION.LB_COND_TYPE.Default.StringList.item
 msgid  "Expression Is"
 msgstr "নিয়মিত অভিব্যক্তি"
 
@@ -550,10 +554,6 @@ msgstr "সহায়"
 #: source/ui/dlg/CondFormat.src#ADDFIELD_HELP_FIELD.FixedText.Text
 msgid  "Highlight the fields to insert into the selected section of the template, then click Insert or press Enter."
 msgstr ""
-
-#: source/ui/dlg/CondFormat.src#WIN_CONDITION.LB_COND_TYPE.Default.StringList.item
-msgid  "Field Value Is"
-msgstr "ক্ষেত্ৰৰ মান হ'ল"
 
 #: source/ui/dlg/DateTime.src#RID_DATETIME_DLG.ModalDialog.Text
 msgid  "Date and Time"
@@ -833,7 +833,7 @@ msgstr "লিংক স্লেভ ফিল্ডবোৰ"
 
 #: source/ui/inspection/inspection.src#RID_STR_EXPLANATION.String.Text
 msgid  "Charts can be used to display detailed data about the current record of the report. To do this, you can specify which columns in the chart match which columns in the report."
-msgstr ""
+msgstr "প্ৰতিবেদনৰ বৰ্ত্তমানৰ ৰেক্ৰডৰ বিস্তৃত তথ্য দেখুৱাবলৈ ছাৰ্ট ব্যৱহাৰ কৰা হয় । এইটো কৰিবলৈ, ছাৰ্টৰ কোনবোৰ স্তম্ভ ৰিপৰ্টৰ সৈতে মিলে আপুনি ক'ব পাৰে ।"
 
 #: source/ui/inspection/inspection.src#RID_STR_DETAILLABEL.String.Text
 msgid  "Chart"
@@ -1241,15 +1241,11 @@ msgstr "অনুসন্ধান চলাব নোৱাৰি । এই�
 
 #: source/ui/report/report.src#RID_ERR_NO_OBJECTS.String.Text
 msgid  "The report can not be executed unless at least one object has been inserted."
-msgstr ""
+msgstr "অনুসন্ধান চলাব নোৱাৰি । ইয়াক অতি কমেও এটা টেবুলৰ প্ৰয়োজন ।"
 
 #: source/ui/report/report.src#RID_STR_UNDO_SHRINK.String.Text
 msgid  "Shrink Section"
 msgstr ""
-
-#: source/ui/report/report.src#RID_STR_INSERT.String.Text
-msgid  "Insert"
-msgstr "ভৰাওক"
 
 #: source/ui/report/report.src#RID_STR_DETAIL.String.Text
 msgid  "Detail"
@@ -1270,3 +1266,7 @@ msgstr "হেডাৰ আৰু ফুটাৰ... "
 #: source/ui/report/report.src#RID_STR_REPORT_FOOTER.String.Text
 msgid  "Report Footer"
 msgstr "হেডাৰ আৰু ফুটাৰ... "
+
+#: source/ui/report/report.src#RID_STR_INSERT.String.Text
+msgid  "Insert"
+msgstr "ভৰাওক"

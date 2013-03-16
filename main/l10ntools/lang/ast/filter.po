@@ -539,9 +539,41 @@ msgstr "GIF - Graphics Interchange Format"
 msgid  "PNG - Portable Network Graphic"
 msgstr "PNG - Portable Network Graphic"
 
+#: source/config/fragments/types/writerglobal8.xcu#writerglobal8.UIName
+msgid  "Writer 8 Master Document"
+msgstr "Documentu principal de Writer 8"
+
+#: source/config/fragments/types/impress8.xcu#impress8.UIName
+msgid  "Impress 8"
+msgstr "Impress 8"
+
+#: source/config/fragments/types/calc8_template.xcu#calc8_template.UIName
+msgid  "Calc 8 Template"
+msgstr "Modelu de Calc 8"
+
 #: source/config/fragments/types/writer_MS_Word_2003_XML.xcu#writer_MS_Word_2003_XML.UIName
 msgid  "Microsoft Word 2003 XML"
 msgstr "XML de Microsoft Word 2003"
+
+#: source/config/fragments/types/writer8.xcu#writer8.UIName
+msgid  "Writer 8"
+msgstr "Writer 8"
+
+#: source/config/fragments/types/impress8_template.xcu#impress8_template.UIName
+msgid  "Impress 8 Template"
+msgstr "Modelu d'Impress 8"
+
+#: source/config/fragments/types/draw8_template.xcu#draw8_template.UIName
+msgid  "Draw 8 Template"
+msgstr "Modelu de Draw 8"
+
+#: source/config/fragments/types/writerweb8_writer_template.xcu#writerweb8_writer_template.UIName
+msgid  "Writer/Web 8 Template"
+msgstr "Modelu de Writer/Web 8"
+
+#: source/config/fragments/types/draw8.xcu#draw8.UIName
+msgid  "Draw 8"
+msgstr "Draw 8"
 
 #: source/config/fragments/types/calc_NSO_UOF2.xcu#calc_NSO_UOF2.UIName
 msgid  "Uniform Office Format 2 spreadsheet"
@@ -555,6 +587,18 @@ msgstr "XML de Microsoft Excel 2003"
 msgid  "OpenDocument Database"
 msgstr "Base datos OpenDocument"
 
+#: source/config/fragments/types/calc8.xcu#calc8.UIName
+msgid  "Calc 8"
+msgstr "Calc 8"
+
+#: source/config/fragments/types/math8.xcu#math8.UIName
+msgid  "Math 8"
+msgstr "Math 8"
+
+#: source/config/fragments/types/writer8_template.xcu#writer8_template.UIName
+msgid  "Writer 8 Template"
+msgstr "Modelu de Writer 8"
+
 #: source/config/fragments/types/writer_NSO_UOF2.xcu#writer_NSO_UOF2.UIName
 msgid  "Uniform Office Format 2 text"
 msgstr ""
@@ -563,17 +607,21 @@ msgstr ""
 msgid  "Uniform Office Format 2 presentation"
 msgstr ""
 
+#: source/config/fragments/types/chart8.xcu#chart8.UIName
+msgid  "Chart 8"
+msgstr "Gráfica 8"
+
 #: source/flash/impswfdialog.src#DLG_OPTIONS.ModalDialog.Text
 msgid  "Macromedia Flash (SWF) Options"
 msgstr "Opciones Macromedia Flash (SWF)"
 
 #: source/flash/impswfdialog.src#DLG_OPTIONS.FI_DESCR.FixedText.Text
 msgid  "1: min. quality\n100: max. quality"
-msgstr ""
+msgstr "1: calidá mín.\n100: calidá máx."
 
 #: source/graphicfilter/eps/epsstr.src#KEY_VERSION_CHECK.String.Text
 msgid  "Warning: Not all of the imported EPS graphics could be saved at level1\nas some are at a higher level!"
-msgstr ""
+msgstr "¡Avisu: Nun pudieron atroxase en Level1 tolos gráficos EPS importaos\nporque esisten dalgunos nun nivel más altu!"
 
 #: source/pdf/pdf.src#PDF_PROGRESS_BAR.String.Text
 msgid  "Export as PDF"
@@ -685,11 +733,11 @@ msgstr "Esportar a PDF/A"
 
 #: source/pdf/impdialog.src#RID_PDF_WARNPDFAPASSWORD.WarningBox.Message
 msgid  "PDF/A does not allow encryption. The exported PDF file will not be password protected."
-msgstr ""
+msgstr "El formatu PDF/A nun admite cifráu. El ficheru PDF esportáu nun va tar protexíu por denguna contraseña."
 
 #: source/pdf/impdialog.src#RID_PDF_TAB_OPNFTR.TabPage.Text
 msgid  "Initial View"
-msgstr "Vista d'entamu"
+msgstr "Vista d'aniciu"
 
 #: source/pdf/impdialog.src#RID_PDF_TAB_OPNFTR.FL_INITVIEW.FixedLine.Text
 msgid  "Panes"
@@ -873,7 +921,7 @@ msgstr "El documentu PDF tará ensin restricciones"
 
 #: source/pdf/impdialog.src#RID_PDF_TAB_SECURITY.STR_OWNER_PWD_PDFA.String.Text
 msgid  "PDF document will not be restricted due to PDF/A export."
-msgstr ""
+msgstr "El documentu PDF nun va tener restricciones darréu de la esportación a PDF/A."
 
 #: source/pdf/impdialog.src#RID_PDF_TAB_SECURITY.FL_PRINT_PERMISSIONS.FixedLine.Text
 msgid  "Printing"
@@ -985,7 +1033,7 @@ msgstr "Problemes al esportar a PDF"
 
 #: source/pdf/impdialog.src#RID_PDF_ERROR_DLG.FT_PROCESS.FixedText.Text
 msgid  "During PDF export the following problems occurred:"
-msgstr ""
+msgstr "Mientres se facía la esportación a PDF asocedieron los siguientes problemes:"
 
 #: source/pdf/impdialog.src#RID_PDF_ERROR_DLG.STR_WARN_TRANSP_PDFA_SHORT.String.Text
 msgid  "PDF/A transparency"
@@ -993,7 +1041,7 @@ msgstr "Tresparencia PDF/A"
 
 #: source/pdf/impdialog.src#RID_PDF_ERROR_DLG.STR_WARN_TRANSP_PDFA.String.Text
 msgid  "PDF/A forbids transparency. A transparent object was painted opaque instead."
-msgstr ""
+msgstr "Prohibe la tresparencia PDF/A. Un oxetu tresparente pintóse nun llugar opacu."
 
 #: source/pdf/impdialog.src#RID_PDF_ERROR_DLG.STR_WARN_TRANSP_VERSION_SHORT.String.Text
 msgid  "PDF version conflict"
@@ -1001,7 +1049,7 @@ msgstr "Conflictu de versiones PDF"
 
 #: source/pdf/impdialog.src#RID_PDF_ERROR_DLG.STR_WARN_TRANSP_VERSION.String.Text
 msgid  "Transparency is not supported in PDF versions earlier than PDF 1.4. A transparent object was painted opaque instead"
-msgstr ""
+msgstr "La tresparencia nun ta sofitada téunicamente por versiones PDF anteriores a la 1.4. Un oxetu tresparente pintóse en llugar opacu"
 
 #: source/pdf/impdialog.src#RID_PDF_ERROR_DLG.STR_WARN_FORMACTION_PDFA_SHORT.String.Text
 msgid  "PDF/A form action"
@@ -1009,11 +1057,11 @@ msgstr "Aición del formatu PDF/A"
 
 #: source/pdf/impdialog.src#RID_PDF_ERROR_DLG.STR_WARN_FORMACTION_PDFA.String.Text
 msgid  "A form control contained an action not supported by the PDF/A standard. The action was skipped"
-msgstr ""
+msgstr "Un formatu de control contién una aición non sofitada pol estándar PDF/A. L'aición saltóse."
 
 #: source/pdf/impdialog.src#RID_PDF_ERROR_DLG.STR_WARN_TRANSP_CONVERTED.String.Text
 msgid  "Some objects were converted to an image in order to remove transparencies, because the target PDF format does not support transparencies. Possibly better results can be achieved if you remove the transparent objects before exporting."
-msgstr ""
+msgstr "Dalgunos oxetos convirtiéronse a una imaxe pa mover les tresparencies, porque'l formatu PDF de destín nun sofita tresparencies. Pueden tenese meyores resultaos si quites los oxetos de tresparencia enantes de la esportación."
 
 #: source/pdf/impdialog.src#RID_PDF_ERROR_DLG.STR_WARN_TRANSP_CONVERTED_SHORT.String.Text
 msgid  "Transparencies removed"
@@ -1133,7 +1181,7 @@ msgstr "DTD"
 
 #: source/xsltdialog/xmlfiltertabpagexslt.src#RID_XML_FILTER_TABPAGE_XSLT.ED_XML_DTD_SCHEMA_BROWSE.PushButton.Text
 msgid  "Browse..."
-msgstr "Ñavegar..."
+msgstr "Agüeyar..."
 
 #: source/xsltdialog/xmlfiltertabpagexslt.src#RID_XML_FILTER_TABPAGE_XSLT.FT_XML_EXPORT_XSLT.FixedText.Text
 msgid  "XSLT for export"
@@ -1141,7 +1189,7 @@ msgstr "XSLT pa esportación"
 
 #: source/xsltdialog/xmlfiltertabpagexslt.src#RID_XML_FILTER_TABPAGE_XSLT.PB_XML_EXPORT_XSLT_BROWSE.PushButton.Text
 msgid  "Browse..."
-msgstr "Ñavegar..."
+msgstr "Agüeyar..."
 
 #: source/xsltdialog/xmlfiltertabpagexslt.src#RID_XML_FILTER_TABPAGE_XSLT.FT_XML_IMPORT_XSLT.FixedText.Text
 msgid  "XSLT for import"
@@ -1233,19 +1281,19 @@ msgstr "Esportar peñera"
 
 #: source/xsltdialog/xmlfilterdialogstrings.src#STR_WARN_DELETE.String.Text
 msgid  "Do you really want to delete the XML Filter '%s'? This action cannot be undone."
-msgstr ""
+msgstr "¿Quies de verdá desaniciar la peñera XML '%s'? Esta aición nun vas poder desfacela."
 
 #: source/xsltdialog/xmlfilterdialogstrings.src#STR_ERROR_FILTER_NAME_EXISTS.String.Text
 msgid  "An XML filter with the name '%s' already exists. Please enter a different name."
-msgstr ""
+msgstr "Yá existe una peñera XML de nome '%s'. Meti otru nome."
 
 #: source/xsltdialog/xmlfilterdialogstrings.src#STR_ERROR_TYPE_NAME_EXISTS.String.Text
 msgid  "The name for  the user interface '%s1' is already used by the XML filter '%s2'. Please enter a different name."
-msgstr ""
+msgstr "El nome del interfaz d'usuariu '%s1' yá lu ta usando la peñera XML '%s2'. Pon otru nome."
 
 #: source/xsltdialog/xmlfilterdialogstrings.src#STR_ERROR_DTD_NOT_FOUND.String.Text
 msgid  "The DTD could not be found. Please enter a valid path."
-msgstr ""
+msgstr "Nun s'atopa la DTD (definición de triba de documentu. Pon un camín válidu."
 
 #: source/xsltdialog/xmlfilterdialogstrings.src#STR_ERROR_EXPORT_XSLT_NOT_FOUND.String.Text
 msgid  "The XSLT for export cannot be found. Please enter a valid path."
@@ -1297,7 +1345,7 @@ msgstr "La instalación de %s peñeres XML acabó."
 
 #: source/xsltdialog/xmlfilterdialogstrings.src#STR_NO_FILTERS_FOUND.String.Text
 msgid  "No XML filter could be installed because the package '%s' does not contain any XML filters."
-msgstr ""
+msgstr "Nun se pudo instalar denguna peñera XML porque'l paquete '%s' nun tien denguna peñera XML."
 
 #: source/xsltdialog/xmlfiltertabpagebasic.src#RID_XML_FILTER_TABPAGE_BASIC.TabPage.Text
 msgid  "General"
@@ -1313,7 +1361,7 @@ msgstr "Aplicación"
 
 #: source/xsltdialog/xmlfiltertabpagebasic.src#RID_XML_FILTER_TABPAGE_BASIC.FT_XML_INTERFACE_NAME.FixedText.Text
 msgid  "Name of\nfile type"
-msgstr ""
+msgstr "Nome de la\ntriba d'archivu"
 
 #: source/xsltdialog/xmlfiltertabpagebasic.src#RID_XML_FILTER_TABPAGE_BASIC.FT_XML_EXTENSION.FixedText.Text
 msgid  "File extension"
@@ -1330,51 +1378,3 @@ msgstr "Salida peñera XML"
 #: source/xsltdialog/xmlfileview.src#DLG_XML_SOURCE_FILE_DIALOG.PB_VALIDATE.PushButton.Text
 msgid  "~Validate"
 msgstr "~Validar"
-
-#: source/config/fragments/types/writerglobal8.xcu#writerglobal8.UIName
-msgid  "Writer 8 Master Document"
-msgstr "Documentu principal de Writer 8"
-
-#: source/config/fragments/types/impress8.xcu#impress8.UIName
-msgid  "Impress 8"
-msgstr "Impress 8"
-
-#: source/config/fragments/types/calc8_template.xcu#calc8_template.UIName
-msgid  "Calc 8 Template"
-msgstr "Modelu de Calc 8"
-
-#: source/config/fragments/types/writer8.xcu#writer8.UIName
-msgid  "Writer 8"
-msgstr "Writer 8"
-
-#: source/config/fragments/types/impress8_template.xcu#impress8_template.UIName
-msgid  "Impress 8 Template"
-msgstr "Modelu d'Impress 8"
-
-#: source/config/fragments/types/draw8_template.xcu#draw8_template.UIName
-msgid  "Draw 8 Template"
-msgstr "Modelu de Draw 8"
-
-#: source/config/fragments/types/writerweb8_writer_template.xcu#writerweb8_writer_template.UIName
-msgid  "Writer/Web 8 Template"
-msgstr "Modelu de Writer/Web 8"
-
-#: source/config/fragments/types/draw8.xcu#draw8.UIName
-msgid  "Draw 8"
-msgstr "Draw 8"
-
-#: source/config/fragments/types/calc8.xcu#calc8.UIName
-msgid  "Calc 8"
-msgstr "Calc 8"
-
-#: source/config/fragments/types/math8.xcu#math8.UIName
-msgid  "Math 8"
-msgstr "Math 8"
-
-#: source/config/fragments/types/writer8_template.xcu#writer8_template.UIName
-msgid  "Writer 8 Template"
-msgstr "Modelu de Writer 8"
-
-#: source/config/fragments/types/chart8.xcu#chart8.UIName
-msgid  "Chart 8"
-msgstr "Gráfica 8"

@@ -137,373 +137,302 @@ msgid  "~Save"
 msgstr "حف~ظ"
 
 #: source/basicide/basidesh.src#RID_STR_FILTER_ALLFILES.String.Text
-#, fuzzy
 msgid  "<All>"
 msgstr "<الكل>"
 
 #: source/basicide/basidesh.src#RID_STR_NOMODULE.String.Text
-#, fuzzy
 msgid  "< No Module >"
 msgstr "< بدون وحدة نمطية >"
 
 #: source/basicide/basidesh.src#RID_STR_WRONGPASSWORD.String.Text
-#, fuzzy
 msgid  "Incorrect Password"
 msgstr "كلمة المرور غير صحيحة"
 
 #: source/basicide/basidesh.src#RID_STR_OPEN.String.Text
-#, fuzzy
 msgid  "Load"
 msgstr "تحميل"
 
 #: source/basicide/basidesh.src#RID_STR_SAVE.String.Text
-#, fuzzy
 msgid  "Save"
 msgstr "حفظ"
 
 #: source/basicide/basidesh.src#RID_STR_SOURCETOBIG.String.Text
 msgid  "The source text is too large and can be neither compiled nor saved.\nDelete some of the comments or transfer some methods into another module."
-msgstr ""
+msgstr "النص الأصلي كبير جدًا ولا يمكن تحويله برمجيًا، أو حفظه.\nاحذف بعض التعليقات، أو انقل بعض الأساليب إلى وحدة نمطية أخرى."
 
 #: source/basicide/basidesh.src#RID_STR_ERROROPENSTORAGE.String.Text
-#, fuzzy
 msgid  "Error opening file"
 msgstr "حدث خطأ أثناء فتح الملف"
 
 #: source/basicide/basidesh.src#RID_STR_ERROROPENLIB.String.Text
-#, fuzzy
 msgid  "Error loading library"
 msgstr "حدث خطأ أثناء تحميل المكتبة"
 
 #: source/basicide/basidesh.src#RID_STR_NOLIBINSTORAGE.String.Text
-#, fuzzy
 msgid  "The file does not contain any BASIC libraries"
 msgstr "لا يحتوي الملف على أية مكتبات من النوع BASIC"
 
 #: source/basicide/basidesh.src#RID_STR_BADSBXNAME.String.Text
-#, fuzzy
 msgid  "Invalid Name"
 msgstr "الاسم غير صالح"
 
 #: source/basicide/basidesh.src#RID_STR_LIBNAMETOLONG.String.Text
-#, fuzzy
 msgid  "A library name can have up to 30 characters."
 msgstr "يجب ألا يزيد اسم المكتبة عن 30 حرفًا."
 
 #: source/basicide/basidesh.src#RID_STR_ERRORCHOOSEMACRO.String.Text
-#, fuzzy
 msgid  "Macros from other documents are not accessible."
 msgstr "يتعذر الوصول إلى وحدات ماكرو من مستندات أخرى."
 
 #: source/basicide/basidesh.src#RID_STR_LIBISREADONLY.String.Text
-#, fuzzy
 msgid  "This library is read-only."
 msgstr "هذه المكتبة للقراءة فقط."
 
 #: source/basicide/basidesh.src#RID_STR_REPLACELIB.String.Text
-#, fuzzy
 msgid  "'XX' cannot be replaced."
 msgstr "لا يمكن استبدال 'XX'."
 
 #: source/basicide/basidesh.src#RID_STR_IMPORTNOTPOSSIBLE.String.Text
-#, fuzzy
 msgid  "'XX' cannot be added."
 msgstr "لا يمكن إضافة 'XX'."
 
 #: source/basicide/basidesh.src#RID_STR_NOIMPORT.String.Text
-#, fuzzy
 msgid  "'XX' was not added."
 msgstr "لم تتم إضافة 'XX'."
 
 #: source/basicide/basidesh.src#RID_STR_ENTERPASSWORD.String.Text
-#, fuzzy
 msgid  "Enter password for 'XX'"
 msgstr "أدخل كلمة المرور الخاصة بـ 'XX'"
 
 #: source/basicide/basidesh.src#RID_STR_SBXNAMEALLREADYUSED.String.Text
-#, fuzzy
 msgid  "Name already exists"
 msgstr "هذا الاسم موجود بالفعل"
 
 #: source/basicide/basidesh.src#RID_STR_SIGNED.String.Text
-#, fuzzy
 msgid  "(Signed)"
 msgstr "(مُوقّع)"
 
 #: source/basicide/basidesh.src#RID_STR_SBXNAMEALLREADYUSED2.String.Text
-#, fuzzy
 msgid  "Object with same name already exists"
 msgstr "يوجد بالفعل كائن يحمل نفس الاسم"
 
 #: source/basicide/basidesh.src#RID_STR_FILEEXISTS.String.Text
-#, fuzzy
 msgid  "The 'XX' file already exists"
 msgstr "الملف 'XX' موجود بالفعل"
 
 #: source/basicide/basidesh.src#RID_STR_CANNOTRUNMACRO.String.Text
 msgid  "For security reasons, you cannot run this macro.\n\nFor more information, check the security settings."
-msgstr ""
+msgstr "لأسباب تتعلق بالأمان، لا يمكنك تشغيل وحدة ماكرو هذه.\n\nلمزيد من المعلومات، تحقق من إعدادات الأمان."
 
 #: source/basicide/basidesh.src#RID_STR_COMPILEERROR.String.Text
-#, fuzzy
 msgid  "Compile Error: "
 msgstr "خطأ في التحويل البرمجي: "
 
 #: source/basicide/basidesh.src#RID_STR_RUNTIMEERROR.String.Text
-#, fuzzy
 msgid  "Runtime Error: #"
 msgstr "خطأ في وقت التشغيل: #"
 
 #: source/basicide/basidesh.src#RID_STR_SEARCHNOTFOUND.String.Text
-#, fuzzy
 msgid  "Search key not found"
 msgstr "لم يتم العثور على مفتاح البحث"
 
 #: source/basicide/basidesh.src#RID_STR_SEARCHFROMSTART.String.Text
 msgid  "Search to last module complete. Continue at first module?"
-msgstr ""
+msgstr "اكتمل البحث حتى الوحدة النمطية الأخيرة. هل تريد متابعة البحث من الوحدة النمطية الأولى؟"
 
 #: source/basicide/basidesh.src#RID_STR_SEARCHREPLACES.String.Text
-#, fuzzy
 msgid  "Search key replaced XX times"
 msgstr "تم استبدال مفتاح البحث XX مرة (مرات)"
 
 #: source/basicide/basidesh.src#RID_STR_COULDNTREAD.String.Text
-#, fuzzy
 msgid  "The file could not be read"
 msgstr "تعذرت قراءة الملف"
 
 #: source/basicide/basidesh.src#RID_STR_COULDNTWRITE.String.Text
-#, fuzzy
 msgid  "The file could not be saved"
 msgstr "تعذر حفظ الملف"
 
 #: source/basicide/basidesh.src#RID_STR_CANNOTCHANGENAMESTDLIB.String.Text
-#, fuzzy
 msgid  "The name of the default library cannot be changed."
 msgstr "لا يمكن تغيير اسم المكتبة الافتراضية."
 
 #: source/basicide/basidesh.src#RID_STR_CANNOTCHANGENAMEREFLIB.String.Text
-#, fuzzy
 msgid  "The name of a referenced library cannot be changed."
 msgstr "لا يمكن تغيير اسم المكتبة المرجعية."
 
 #: source/basicide/basidesh.src#RID_STR_CANNOTUNLOADSTDLIB.String.Text
-#, fuzzy
 msgid  "The default library cannot be deactivated"
 msgstr "لا يمكن إلغاء تنشيط المكتبة الافتراضية"
 
 #: source/basicide/basidesh.src#RID_STR_GENERATESOURCE.String.Text
-#, fuzzy
 msgid  "Generating source"
 msgstr "إنشاء مصدر"
 
 #: source/basicide/basidesh.src#RID_STR_FILENAME.String.Text
-#, fuzzy
 msgid  "File name:"
 msgstr "اسم الملف:"
 
 #: source/basicide/basidesh.src#RID_STR_APPENDLIBS.String.Text
-#, fuzzy
 msgid  "Import Libraries"
 msgstr "استيراد مكتبات"
 
 #: source/basicide/basidesh.src#RID_STR_QUERYDELMACRO.String.Text
-#, fuzzy
 msgid  "Do you want to delete the macro XX?"
 msgstr "هل تريد حذف وحدة الماكرو XX؟"
 
 #: source/basicide/basidesh.src#RID_STR_QUERYDELDIALOG.String.Text
-#, fuzzy
 msgid  "Do you want to delete the XX dialog?"
 msgstr "هل تريد حذف مربع الحوار XX؟"
 
 #: source/basicide/basidesh.src#RID_STR_QUERYDELLIB.String.Text
-#, fuzzy
 msgid  "Do you want to delete the XX library?"
 msgstr "هل تريد حذف المكتبة XX؟"
 
 #: source/basicide/basidesh.src#RID_STR_QUERYDELLIBREF.String.Text
-#, fuzzy
 msgid  "Do you want to delete the reference to the XX library?"
 msgstr "هل تريد حذف المرجع إلى المكتبة XX؟"
 
 #: source/basicide/basidesh.src#RID_STR_QUERYDELMODULE.String.Text
-#, fuzzy
 msgid  "Do you want to delete the XX module?"
 msgstr "هل تريد حذف الوحدة النمطية XX؟"
 
 #: source/basicide/basidesh.src#RID_STR_OBJNOTFOUND.String.Text
-#, fuzzy
 msgid  "Object or method not found"
 msgstr "لم يتم العثور على الكائن أو الأسلوب"
 
 #: source/basicide/basidesh.src#RID_STR_BASIC.String.Text
-#, fuzzy
 msgid  "BASIC"
 msgstr "BASIC"
 
 #: source/basicide/basidesh.src#RID_STR_LINE.String.Text
-#, fuzzy
 msgid  "Ln"
 msgstr "السطر"
 
 #: source/basicide/basidesh.src#RID_STR_COLUMN.String.Text
-#, fuzzy
 msgid  "Col"
 msgstr "العمود"
 
 #: source/basicide/basidesh.src#RID_STR_DOC.String.Text
-#, fuzzy
 msgid  "Document"
 msgstr "المستند"
 
 #: source/basicide/basidesh.src#RID_BASICIDE_OBJECTBAR.String.Text
-#, fuzzy
 msgid  "Macro Bar"
 msgstr "شريط ماكرو"
 
 #: source/basicide/basidesh.src#RID_STR_CANNOTCLOSE.String.Text
-#, fuzzy
 msgid  "The window cannot be closed while BASIC is running."
 msgstr "لا يمكن إغلاق الإطار أثناء تشغيل BASIC."
 
 #: source/basicide/basidesh.src#RID_STR_REPLACESTDLIB.String.Text
-#, fuzzy
 msgid  "The default library cannot be replaced."
 msgstr "لا يمكن استبدال المكتبة الافتراضية."
 
 #: source/basicide/basidesh.src#RID_STR_REFNOTPOSSIBLE.String.Text
-#, fuzzy
 msgid  "Reference to 'XX' not possible."
 msgstr "تتعذر الإشارة إلى 'XX'."
 
 #: source/basicide/basidesh.src#RID_STR_WATCHNAME.String.Text
-#, fuzzy
 msgid  "Watch"
 msgstr "مراقبة"
 
 #: source/basicide/basidesh.src#RID_STR_WATCHVARIABLE.String.Text
-#, fuzzy
 msgid  "Variable"
 msgstr "المتغير"
 
 #: source/basicide/basidesh.src#RID_STR_WATCHVALUE.String.Text
-#, fuzzy
 msgid  "Value"
 msgstr "القيمة"
 
 #: source/basicide/basidesh.src#RID_STR_WATCHTYPE.String.Text
-#, fuzzy
 msgid  "Type"
 msgstr "النوع"
 
 #: source/basicide/basidesh.src#RID_STR_STACKNAME.String.Text
-#, fuzzy
 msgid  "Call Stack"
 msgstr "تكدس الاستدعاءات"
 
 #: source/basicide/basidesh.src#RID_STR_INITIDE.String.Text
-#, fuzzy
 msgid  "BASIC Initialization"
 msgstr "تهيئة BASIC"
 
 #: source/basicide/basidesh.src#RID_STR_STDMODULENAME.String.Text
-#, fuzzy
 msgid  "Module"
 msgstr "وحدة نمطية"
 
 #: source/basicide/basidesh.src#RID_STR_STDDIALOGNAME.String.Text
-#, fuzzy
 msgid  "Dialog"
 msgstr "مربع حوار"
 
 #: source/basicide/basidesh.src#RID_STR_STDLIBNAME.String.Text
-#, fuzzy
 msgid  "Library"
 msgstr "المكتبة"
 
 #: source/basicide/basidesh.src#RID_STR_NEWLIB.String.Text
-#, fuzzy
 msgid  "New Library"
 msgstr "مكتبة جديدة"
 
 #: source/basicide/basidesh.src#RID_STR_NEWMOD.String.Text
-#, fuzzy
 msgid  "New Module"
 msgstr "وحدة نمطية جديدة"
 
 #: source/basicide/basidesh.src#RID_STR_NEWDLG.String.Text
-#, fuzzy
 msgid  "New Dialog"
 msgstr "مربع حوار جديد"
 
 #: source/basicide/basidesh.src#RID_STR_ALL.String.Text
-#, fuzzy
 msgid  "All"
 msgstr "الكل"
 
 #: source/basicide/basidesh.src#RID_STR_PAGE.String.Text
-#, fuzzy
 msgid  "Page"
 msgstr "الصفحة"
 
 #: source/basicide/basidesh.src#RID_STR_MACRONAMEREQ.String.Text
-#, fuzzy
 msgid  "A name must be entered."
 msgstr "يجب إدخال اسم."
 
 #: source/basicide/basidesh.src#RID_STR_WILLSTOPPRG.String.Text
 msgid  "You will have to restart the program after this edit.\nContinue?"
-msgstr ""
+msgstr "ستحتاج إلى إعادة تشغيل البرنامج بعد هذا التعديل.\nهل تريد المتابعة؟"
 
 #: source/basicide/basidesh.src#RID_STR_SEARCHALLMODULES.String.Text
-#, fuzzy
 msgid  "Do you want to replace the text in all active modules?"
 msgstr "هل تريد استبدال النص في جميع الوحدات النمطية النشطة؟"
 
 #: source/basicide/basidesh.src#RID_IMGBTN_REMOVEWATCH.ButtonImage.QuickHelpText
-#, fuzzy
 msgid  "Remove Watch"
 msgstr "إزالة المراقبة:ب"
 
 #: source/basicide/basidesh.src#RID_STR_REMOVEWATCH.String.Text
-#, fuzzy
 msgid  "Watch:"
 msgstr "المراقبة:"
 
 #: source/basicide/basidesh.src#RID_STR_STACK.String.Text
-#, fuzzy
 msgid  "Calls: "
 msgstr "الاستدعاءات: "
 
 #: source/basicide/basidesh.src#RID_STR_USERMACROS.String.Text
-#, fuzzy
 msgid  "My Macros"
 msgstr "وحدات الماكرو"
 
 #: source/basicide/basidesh.src#RID_STR_USERDIALOGS.String.Text
-#, fuzzy
 msgid  "My Dialogs"
 msgstr "مربعات الحوار"
 
 #: source/basicide/basidesh.src#RID_STR_USERMACROSDIALOGS.String.Text
-#, fuzzy
 msgid  "My Macros & Dialogs"
 msgstr "وحدات الماكرو ومربعات الحوار"
 
 #: source/basicide/basidesh.src#RID_STR_SHAREMACROS.String.Text
-#, fuzzy
 msgid  "%PRODUCTNAME Macros"
 msgstr "وحدات ماكرو %PRODUCTNAME"
 
 #: source/basicide/basidesh.src#RID_STR_SHAREDIALOGS.String.Text
-#, fuzzy
 msgid  "%PRODUCTNAME Dialogs"
 msgstr "مربعات حوار %PRODUCTNAME"
 
 #: source/basicide/basidesh.src#RID_STR_SHAREMACROSDIALOGS.String.Text
-#, fuzzy
 msgid  "%PRODUCTNAME Macros & Dialogs"
 msgstr "وحدات ماكرو ومربعات حوار %PRODUCTNAME"
 
@@ -513,12 +442,10 @@ msgid  "Properties"
 msgstr "خصائص..."
 
 #: source/basicide/basidesh.src#RID_POPUP_BRKPROPS.RID_ACTIV.MenuItem.Text
-#, fuzzy
 msgid  "Active"
 msgstr "نشط"
 
 #: source/basicide/basidesh.src#RID_POPUP_BRKPROPS.RID_BRKPROPS.MenuItem.Text
-#, fuzzy
 msgid  "Properties..."
 msgstr "خصائص..."
 
@@ -623,8 +550,9 @@ msgid  "Dialog Import - Name already used"
 msgstr "استيراد مربع الحوار - الاسم مستخدم بالفعل"
 
 #: source/basicide/basidesh.src#RID_STR_DLGIMP_CLASH_TEXT.String.Text
+#, fuzzy
 msgid  "The library already contains a dialog with the name:\n\n$(ARG1)\n\nRename dialog to keep current dialog or replace existing dialog.\n "
-msgstr ""
+msgstr "تتضمن المكتبة بالفعل مربع حوار يحمل الاسم:\n\n$(ARG1)\n\nقم بإعادة التسمية للاحتفاظ بمربع الحوار الحالي أو استبداله.\n "
 
 #: source/basicide/basidesh.src#RID_STR_DLGIMP_MISMATCH_ADD.String.Text
 #, fuzzy
@@ -642,21 +570,19 @@ msgid  "Dialog Import - Language Mismatch"
 msgstr "استيراد مربع الحوار - عدم تطابق اللغة"
 
 #: source/basicide/basidesh.src#RID_STR_DLGIMP_MISMATCH_TEXT.String.Text
+#, fuzzy
 msgid  "The dialog to be imported supports other languages than the target library.\n\nAdd these languages to the library to keep additional language resources provided by the dialog or omit them to stay with the current library languages.\n\nNote: For languages not supported by the dialog the resources of the dialog's default language will be used.\n "
-msgstr ""
+msgstr "يدعم مربع الحوار المطلوب استيراده لغات أخرى بخلاف تلك الخاصة بالمكتبة المستهدفة.\n\nقم بإضافة هذه اللغات إلى المكتبة للاحتفاظ بموارد اللغات الإضافية المتاحة من خلال مربع الحوار أو حذفها للإبقاء على لغات المكتبة الحالية.\n\nملاحظة: بالنسبة للغات التي لا يدعمها مربع الحوار، سيتم استخدام موارد اللغة الافتراضية لمربع الحوار.\n "
 
 #: source/basicide/basicprint.src#RID_PRINTDLG_STRLIST.item1.ItemList.item
-#, fuzzy
 msgid  "Print range"
 msgstr "نطاق الطباعة"
 
 #: source/basicide/basicprint.src#RID_PRINTDLG_STRLIST.item2.ItemList.item
-#, fuzzy
 msgid  "All ~Pages"
 msgstr "جميع ~الصفحات"
 
 #: source/basicide/basicprint.src#RID_PRINTDLG_STRLIST.item3.ItemList.item
-#, fuzzy
 msgid  "Pa~ges"
 msgstr "الص~فحات"
 
@@ -905,102 +831,85 @@ msgid  "Extension"
 msgstr "الامتداد"
 
 #: source/dlged/managelang.src#RID_DLG_MANAGE_LANGUAGE.ModalDialog.Text
-#, fuzzy
 msgid  "Manage User Interface Languages [$1]"
 msgstr "إدارة لغات واجهة المستخدم [$1]"
 
 #: source/dlged/managelang.src#RID_DLG_MANAGE_LANGUAGE.FT_LANGUAGE.FixedText.Text
-#, fuzzy
 msgid  "Present Languages"
 msgstr "اللغات الحالية"
 
 #: source/dlged/managelang.src#RID_DLG_MANAGE_LANGUAGE.PB_ADD_LANG.PushButton.Text
-#, fuzzy
 msgid  "Add..."
 msgstr "إضافة..."
 
 #: source/dlged/managelang.src#RID_DLG_MANAGE_LANGUAGE.PB_DEL_LANG.PushButton.Text
-#, fuzzy
 msgid  "Delete"
 msgstr "حذف"
 
 #: source/dlged/managelang.src#RID_DLG_MANAGE_LANGUAGE.PB_MAKE_DEFAULT.PushButton.Text
-#, fuzzy
 msgid  "Default"
 msgstr "الافتراضي"
 
 #: source/dlged/managelang.src#RID_DLG_MANAGE_LANGUAGE.FT_INFO.FixedText.Text
 msgid  "The default language is used if no localization for a user interface locale is present. Furthermore all strings from the default language are copied to resources of newly added languages."
-msgstr ""
+msgstr "تستخدم اللغة الافتراضية في حالة عدم وجود ترجمة للإعدادات اللغوية الخاصة بواجهة المستخدم. إضافة إلى ذلك، يتم نسخ كافة السلاسل من اللغة الافتراضية إلى موارد اللغات المضافة حديثًا."
 
 #: source/dlged/managelang.src#RID_DLG_MANAGE_LANGUAGE.PB_CLOSE.OKButton.Text
-#, fuzzy
 msgid  "~Close"
 msgstr "إ~غلاق"
 
 #: source/dlged/managelang.src#RID_DLG_MANAGE_LANGUAGE.STR_DEF_LANG.String.Text
-#, fuzzy
 msgid  "[Default Language]"
 msgstr "[اللغة الافتراضية]"
 
 #: source/dlged/managelang.src#RID_DLG_MANAGE_LANGUAGE.STR_DELETE.String.Text
-#, fuzzy
 msgid  "~Delete"
 msgstr "ح~ذف"
 
 #: source/dlged/managelang.src#RID_DLG_MANAGE_LANGUAGE.STR_CREATE_LANG.String.Text
-#, fuzzy
 msgid  "<Press 'Add' to create language resources>"
 msgstr "<اضغط على \"إضافة\" لإنشاء موارد اللغة>"
 
 #: source/dlged/managelang.src#RID_QRYBOX_LANGUAGE.QueryBox.Title
-#, fuzzy
 msgid  "Delete Language Resources"
 msgstr "حذف مورد اللغةs"
 
 #: source/dlged/managelang.src#RID_QRYBOX_LANGUAGE.QueryBox.Message
 msgid  "You are about to delete the resources for the selected language(s). All user interface strings for this language(s) will be deleted.\n\nDo you want to delete the resources of the selected language(s)?"
-msgstr ""
+msgstr "أنت على وشك حذف موارد اللغة (اللغات) المحددة. سيتم حذف جميع سلاسل واجهة المستخدم لهذه اللغة (اللغات).\n\nهل تريد حذف موارد اللغة (اللغات) المحددة؟"
 
 #: source/dlged/managelang.src#RID_DLG_SETDEF_LANGUAGE.ModalDialog.Text
-#, fuzzy
 msgid  "Set Default User Interface Language"
 msgstr "تعيين لغة واجهة المستخدم الافتراضية"
 
 #: source/dlged/managelang.src#RID_DLG_SETDEF_LANGUAGE.FT_DEF_LANGUAGE.FixedText.Text
-#, fuzzy
 msgid  "Default language"
 msgstr "اللغة الافتراضية"
 
 #: source/dlged/managelang.src#RID_DLG_SETDEF_LANGUAGE.FT_DEF_INFO.FixedText.Text
 msgid  "Select a language to define the default user interface language. All currently present strings will be assigned to the resources created for the selected language."
-msgstr ""
+msgstr "حدد لغة لتعريف لغة واجهة المستخدم الافتراضية. حيث سيتم تعيين جميع السلاسل الموجودة حاليًا للموارد التي تم إنشاؤها للغة المحددة."
 
 #: source/dlged/managelang.src#RID_DLG_SETDEF_LANGUAGE.STR_ADDLANG_TITLE.String.Text
-#, fuzzy
 msgid  "Add User Interface Languages"
 msgstr "إضافة لغات واجهة المستخدم"
 
 #: source/dlged/managelang.src#RID_DLG_SETDEF_LANGUAGE.STR_ADDLANG_LABEL.String.Text
-#, fuzzy
 msgid  "Available Languages"
 msgstr "اللغات المتاحة"
 
 #: source/dlged/managelang.src#RID_DLG_SETDEF_LANGUAGE.STR_ADDLANG_INFO.String.Text
 msgid  "Select languages to be added. Resources for these languages will be created in the library. Strings of the current default user interface language will be copied to these new resources by default."
-msgstr ""
+msgstr "حدد لغات لإضافتها. سيتم إنشاء موارد لتلك اللغات في المكتبة. وافتراضيًا، سيتم نسخ سلاسل لغة واجهة المستخدم الافتراضية الحالية لهذه الموارد الجديدة."
 
 #: source/dlged/dlgresid.src#RID_STR_BRWTITLE_PROPERTIES.String.Text
-#, fuzzy
 msgid  "Properties: "
 msgstr "الخصائص: "
 
 #: source/dlged/dlgresid.src#RID_STR_BRWTITLE_NO_PROPERTIES.String.Text
-#, fuzzy
 msgid  "No Control marked"
 msgstr "لم يتم وضع علامة على عنصر تحكم"
 
 #: source/dlged/dlgresid.src#RID_STR_BRWTITLE_MULTISELECT.String.Text
-#, fuzzy
 msgid  "Multiselection"
 msgstr "تحديد متعدد"

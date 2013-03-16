@@ -65,7 +65,7 @@ msgstr "Die naam '#1' bestaan reeds en kan nie weer toegewys word nie."
 
 #: source/core/resource/strings.src#RID_STR_ERROR_WRONG_ARGUMENT.String.Text
 msgid  "You tried to set an illegal argument. Please have a look at '#1' for valid arguments."
-msgstr ""
+msgstr "Jy het 'n onwettige argument probeer opstel. Kyk asseblief na '#1' vir geldige argumente."
 
 #: source/core/resource/strings.src#RID_STR_ARGUMENT_IS_NULL.String.Text
 msgid  "The element is invalid."
@@ -140,12 +140,20 @@ msgid  "Group Header"
 msgstr "Groepkop"
 
 #: source/ui/dlg/GroupsSorting.src#RID_GROUPS_SORTING.LST_HEADERLST.Default.StringList.item
+msgid  "Present"
+msgstr "Teenwoordig"
+
+#: source/ui/dlg/GroupsSorting.src#RID_GROUPS_SORTING.LST_HEADERLST.Default.StringList.item
 msgid  "Not present"
 msgstr "Afwesig"
 
 #: source/ui/dlg/GroupsSorting.src#RID_GROUPS_SORTING.FT_FOOTER.FixedText.Text
 msgid  "Group Footer"
 msgstr "Groepvoet"
+
+#: source/ui/dlg/GroupsSorting.src#RID_GROUPS_SORTING.LST_FOOTERLST.Default.StringList.item
+msgid  "Present"
+msgstr "Teenwoordig"
 
 #: source/ui/dlg/GroupsSorting.src#RID_GROUPS_SORTING.LST_FOOTERLST.Default.StringList.item
 msgid  "Not present"
@@ -229,7 +237,7 @@ msgstr "Interval"
 
 #: source/ui/dlg/GroupsSorting.src#STR_RPT_HELP_FIELD.String.Text
 msgid  "Select a field or type an expression to sort or group on."
-msgstr ""
+msgstr "Kies 'n veld of tik 'n uitdrukking in om volgens te rangskik of groepeer."
 
 #: source/ui/dlg/GroupsSorting.src#STR_RPT_HELP_HEADER.String.Text
 msgid  "Display a header for this group?"
@@ -253,15 +261,7 @@ msgstr "Hou groep saam op één bladsy?"
 
 #: source/ui/dlg/GroupsSorting.src#STR_RPT_HELP_SORT.String.Text
 msgid  "Select ascending or descending sort order. Ascending means from A to Z or 0 to 9"
-msgstr ""
-
-#: source/ui/dlg/GroupsSorting.src#RID_GROUPS_SORTING.LST_HEADERLST.Default.StringList.item
-msgid  "Present"
-msgstr "Teenwoordig"
-
-#: source/ui/dlg/GroupsSorting.src#RID_GROUPS_SORTING.LST_FOOTERLST.Default.StringList.item
-msgid  "Present"
-msgstr "Teenwoordig"
+msgstr "Kies stygende of dalende rangskikvolgorde. Stygend beteken van A tot Z of 0 tot 9"
 
 #: source/ui/dlg/PageNumber.src#RID_PAGENUMBERS.ModalDialog.Text
 msgid  "Page Numbers"
@@ -300,6 +300,14 @@ msgid  "Alignment:"
 msgstr "Belyning:"
 
 #: source/ui/dlg/PageNumber.src#RID_PAGENUMBERS.LST_ALIGNMENT.Default.StringList.item
+msgid  "Left"
+msgstr "Links"
+
+#: source/ui/dlg/PageNumber.src#RID_PAGENUMBERS.LST_ALIGNMENT.Default.StringList.item
+msgid  "Center"
+msgstr "Middel"
+
+#: source/ui/dlg/PageNumber.src#RID_PAGENUMBERS.LST_ALIGNMENT.Default.StringList.item
 msgid  "Right"
 msgstr "Regs"
 
@@ -312,20 +320,12 @@ msgid  "~Help"
 msgstr "~Hulp"
 
 #: source/ui/dlg/PageNumber.src#STR_RPT_PN_PAGE.String.Text
-msgid  ""Page " & #PAGENUMBER#"
-msgstr ""
+msgid  "\"Page \" & #PAGENUMBER#"
+msgstr "\"Bladsy \" & #PAGENUMBER#"
 
 #: source/ui/dlg/PageNumber.src#STR_RPT_PN_PAGE_OF.String.Text
-msgid  " & " of " & #PAGECOUNT#"
-msgstr ""
-
-#: source/ui/dlg/PageNumber.src#RID_PAGENUMBERS.LST_ALIGNMENT.Default.StringList.item
-msgid  "Left"
-msgstr "Links"
-
-#: source/ui/dlg/PageNumber.src#RID_PAGENUMBERS.LST_ALIGNMENT.Default.StringList.item
-msgid  "Center"
-msgstr "Middel"
+msgid  " & \" of \" & #PAGECOUNT#"
+msgstr " & \" van \" & #PAGECOUNT#"
 
 #: source/ui/dlg/dlgpage.src#RID_PAGEDIALOG_PAGE.TabDialog.Text
 msgid  "Page Setup"
@@ -456,6 +456,10 @@ msgid  "Properties..."
 msgstr "Eienskappe..."
 
 #: source/ui/dlg/CondFormat.src#WIN_CONDITION.LB_COND_TYPE.Default.StringList.item
+msgid  "Field Value Is"
+msgstr "Veldwaarde is"
+
+#: source/ui/dlg/CondFormat.src#WIN_CONDITION.LB_COND_TYPE.Default.StringList.item
 msgid  "Expression Is"
 msgstr "Uitdrukking is"
 
@@ -549,11 +553,7 @@ msgstr "Hulp"
 
 #: source/ui/dlg/CondFormat.src#ADDFIELD_HELP_FIELD.FixedText.Text
 msgid  "Highlight the fields to insert into the selected section of the template, then click Insert or press Enter."
-msgstr ""
-
-#: source/ui/dlg/CondFormat.src#WIN_CONDITION.LB_COND_TYPE.Default.StringList.item
-msgid  "Field Value Is"
-msgstr "Veldwaarde is"
+msgstr "Merk die velde wat by die gemerkte deel van die sjabloon ingevoeg moet word, en kliek dan Insert of druk Enter."
 
 #: source/ui/dlg/DateTime.src#RID_DATETIME_DLG.ModalDialog.Text
 msgid  "Date and Time"
@@ -785,7 +785,7 @@ msgstr "Agtergrond deursigtig"
 
 #: source/ui/inspection/inspection.src#RID_STR_OVERLAP_OTHER_CONTROL.String.Text
 msgid  "This operation is not allowed. The control overlaps with another one."
-msgstr ""
+msgstr "Hierdie bewerking word nie toegelaat nie. Die kontrole oorvleuel met 'n ander."
 
 #: source/ui/inspection/inspection.src#RID_STR_ILLEGAL_POSITION.String.Text
 msgid  "This position can not be set. It is invalid."
@@ -833,7 +833,7 @@ msgstr "Koppel slaafvelde"
 
 #: source/ui/inspection/inspection.src#RID_STR_EXPLANATION.String.Text
 msgid  "Charts can be used to display detailed data about the current record of the report. To do this, you can specify which columns in the chart match which columns in the report."
-msgstr ""
+msgstr "Grafieke kan gebruik word om gedetailleerde data oor die huidige rekord van die verslag te wys. Om dit te doen, kan u spesifiseer watter kolomme in die grafiek met watter kolomme in die verslag ooreenkom."
 
 #: source/ui/inspection/inspection.src#RID_STR_DETAILLABEL.String.Text
 msgid  "Chart"
@@ -1237,19 +1237,15 @@ msgstr "Skrap verslagkop/voet"
 
 #: source/ui/report/report.src#RID_ERR_NO_COMMAND.String.Text
 msgid  "The report can not be executed unless it is bound to content."
-msgstr ""
+msgstr "Die verslag kan nie uitgevoer word nie, tensy dit gekoppel word aan inhoud."
 
 #: source/ui/report/report.src#RID_ERR_NO_OBJECTS.String.Text
 msgid  "The report can not be executed unless at least one object has been inserted."
-msgstr ""
+msgstr "Die verslag kan nie uitgevoer word nie tensy minstens een objek ingevoeg word."
 
 #: source/ui/report/report.src#RID_STR_UNDO_SHRINK.String.Text
 msgid  "Shrink Section"
 msgstr "Krimp afdeling"
-
-#: source/ui/report/report.src#RID_STR_INSERT.String.Text
-msgid  "Insert"
-msgstr "Voeg in"
 
 #: source/ui/report/report.src#RID_STR_DETAIL.String.Text
 msgid  "Detail"
@@ -1270,3 +1266,7 @@ msgstr "Verslagkop"
 #: source/ui/report/report.src#RID_STR_REPORT_FOOTER.String.Text
 msgid  "Report Footer"
 msgstr "Verslagvoet"
+
+#: source/ui/report/report.src#RID_STR_INSERT.String.Text
+msgid  "Insert"
+msgstr "Voeg in"

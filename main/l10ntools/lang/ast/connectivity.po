@@ -119,6 +119,18 @@ msgstr "Llibreta de Direiciones de Thunderbird"
 msgid  "LDAP Address Book"
 msgstr "Llibreta de Direiciones de LDAP"
 
+#: source/drivers/mozab/mozab2.xcu#.Drivers.Installed.sdbc:address:mozilla:.DriverTypeDisplayName
+msgid  "SeaMonkey Address Book"
+msgstr "Llibreta de direcciones de SeaMonkey"
+
+#: source/drivers/mozab/mozab2.xcu#.Drivers.Installed.sdbc:address:thunderbird:.DriverTypeDisplayName
+msgid  "Thunderbird Address Book"
+msgstr "Llibreta de Direiciones de Thunderbird"
+
+#: source/drivers/mozab/mozab2.xcu#.Drivers.Installed.sdbc:address:ldap:*.DriverTypeDisplayName
+msgid  "LDAP Address Book"
+msgstr "Llibreta de Direiciones de LDAP"
+
 #: source/drivers/mysql/mysql.xcu#.Drivers.Installed.sdbc:mysql:jdbc:*.DriverTypeDisplayName
 msgid  "MySQL (JDBC)"
 msgstr "MySQL (JDBC)"
@@ -153,19 +165,19 @@ msgstr "Llibreta de Direiciones Outlook (MAPI)"
 
 #: source/resource/conn_shared_res.src#STR_NO_TABLE_CREATION_SUPPORT.String.Text
 msgid  "Creating tables is not supported for this kind of address books."
-msgstr ""
+msgstr "La creación de tables nun se caltién nesti tipu d'axenda de direiciones."
 
 #: source/resource/conn_shared_res.src#STR_MOZILLA_IS_RUNNING.String.Text
 msgid  "Cannot create new address books while Mozilla is running."
-msgstr ""
+msgstr "Nun se puen crear llibretes de direiciones nueves mientres se ta executando Mozilla."
 
 #: source/resource/conn_shared_res.src#STR_COULD_NOT_RETRIEVE_AB_ENTRY.String.Text
 msgid  "An address book entry could not be retrieved, an unknown error occurred."
-msgstr ""
+msgstr "Nun se pue recuperar una entrada de la llibreta de direiciones, hebo un fallu desconocíu."
 
 #: source/resource/conn_shared_res.src#STR_COULD_NOT_GET_DIRECTORY_NAME.String.Text
 msgid  "An address book directory name could not be retrieved, an unknown error occurred."
-msgstr ""
+msgstr "Nun se pudo recuperar un nome de direutoriu de llibreta de direiciones, hebo un fallu desconocíu."
 
 #: source/resource/conn_shared_res.src#STR_TIMEOUT_WAITING.String.Text
 msgid  "Timed out while waiting for the result."
@@ -177,11 +189,11 @@ msgstr "Hebo un fallu al executar la consulta."
 
 #: source/resource/conn_shared_res.src#STR_MOZILLA_IS_RUNNIG_NO_CHANGES.String.Text
 msgid  "You can't make any changes to mozilla address book when mozilla is running."
-msgstr ""
+msgstr "Nun se pueden facer cambeos na axenda de direiciones de Mozilla mientres se ta executando Mozilla."
 
 #: source/resource/conn_shared_res.src#STR_FOREIGN_PROCESS_CHANGED_AB.String.Text
 msgid  "Mozilla Address Book has been changed out of this process, we can't modify it in this condition."
-msgstr ""
+msgstr "L'axenda de direiciones de Mozilla camudóse fuera d'esti procesu, y, nestes condiciones, nun se pue modificar."
 
 #: source/resource/conn_shared_res.src#STR_CANT_FIND_ROW.String.Text
 msgid  "Can't find the requested row."
@@ -201,7 +213,7 @@ msgstr "El controlador nun sofita la función  'COUNT'."
 
 #: source/resource/conn_shared_res.src#STR_STMT_TYPE_NOT_SUPPORTED.String.Text
 msgid  "This statement type not supported by this database driver."
-msgstr ""
+msgstr "El tipu de declaración nun tien sofitu d'esti controlador de base de datos."
 
 #: source/resource/conn_shared_res.src#STR_UNSPECIFIED_ERROR.String.Text
 msgid  "An unknown error occured."
@@ -209,7 +221,7 @@ msgstr "Hebo un fallu desconocíu."
 
 #: source/resource/conn_shared_res.src#STR_COULD_NOT_CREATE_ADDRESSBOOK.String.Text
 msgid  "Could not create a new address book. Mozilla error code is $1$."
-msgstr ""
+msgstr "Nun ye dable crear una nueva llibreta de señes. El códigu d'error de Mozilla ye $1$."
 
 #: source/resource/conn_shared_res.src#STR_COULD_NOT_LOAD_LIB.String.Text
 msgid  "The library '$libname$' could not be loaded."
@@ -233,7 +245,7 @@ msgstr "Nun se pue crear una filera nueva."
 
 #: source/resource/conn_shared_res.src#STR_QUERY_INVALID_IS_NULL_COLUMN.String.Text
 msgid  "The query can not be executed. The 'IS NULL' can only be used with a column name."
-msgstr ""
+msgstr "Nun se pue executar la consulta. 'IS NULL' namái se pue usar con un nome de columna."
 
 #: source/resource/conn_shared_res.src#STR_ILLEGAL_MOVEMENT.String.Text
 msgid  "Illegal cursor movement occured."
@@ -241,7 +253,7 @@ msgstr "Hebo un movimientu illegal del cursor."
 
 #: source/resource/conn_shared_res.src#STR_COMMIT_ROW.String.Text
 msgid  "Please commit row '$position$' before update rows or insert new rows."
-msgstr ""
+msgstr "Por favor, confirma la '$position$' de la filera, enantes d'anovar fileres o inxertar nueves."
 
 #: source/resource/conn_shared_res.src#STR_INVALID_ROW_UPDATE.String.Text
 msgid  "The update call can not be executed. The row is invalid."
@@ -268,12 +280,12 @@ msgid  "It doesn't exist a connection to the database."
 msgstr "Nun esiste una conexón a la base de datos."
 
 #: source/resource/conn_shared_res.src#STR_WRONG_PARAM_INDEX.String.Text
-msgid  "You tried to set a parameter at position '$pos$' but there is/are only '$count$' parameter(s) allowed. One reason may be that the property "ParameterNameSubstitution" is not set to TRUE in the data source."
-msgstr ""
+msgid  "You tried to set a parameter at position '$pos$' but there is/are only '$count$' parameter(s) allowed. One reason may be that the property \"ParameterNameSubstitution\" is not set to TRUE in the data source."
+msgstr "Tentasti de configurar un parámetru na posición '$pos$' pero namái se permite '$count$' parámetru(os). Una de les razones pue que seya que la propiedá \"ParameterNameSubstitution\" nun tea configurada como TRUE na fonte de datos."
 
 #: source/resource/conn_shared_res.src#STR_INPUTSTREAM_WRONG_LEN.String.Text
 msgid  "End of InputStream reached before satisfying length specified when InputStream was set."
-msgstr ""
+msgstr "El final de InputStream s'algamó enantes de satisfacer la llonxitú especificada nel intre de la so configuración."
 
 #: source/resource/conn_shared_res.src#STR_NO_INPUTSTREAM.String.Text
 msgid  "The input stream was not set."
@@ -313,7 +325,7 @@ msgstr "El driver nun sofita la función '$functionname$'."
 
 #: source/resource/conn_shared_res.src#STR_UNSUPPORTED_FEATURE.String.Text
 msgid  "The driver does not support the functionality for '$featurename$'. It is not implemented."
-msgstr ""
+msgstr "El controlador nun sofita la función de '$featurename$'. Nun ta implementada."
 
 #: source/resource/conn_shared_res.src#STR_FORMULA_WRONG.String.Text
 msgid  "The formula for TypeInfoSettings is wrong!"
@@ -321,11 +333,11 @@ msgstr "¡La formula pa TypeInfoSetting ta equivocada!"
 
 #: source/resource/conn_shared_res.src#STR_STRING_LENGTH_EXCEEDED.String.Text
 msgid  "The string '$string$' exceeds the maximum length of $maxlen$ characters when converted to the target character set '$charset$'."
-msgstr ""
+msgstr "La cadena '$string$' perpasa del tamañu máximu de $maxlen$ caráuteres cuando se convierte al conxuntu de caráuteres de destín '$charset$'."
 
 #: source/resource/conn_shared_res.src#STR_CANNOT_CONVERT_STRING.String.Text
 msgid  "The string '$string$' cannot be converted using the encoding '$charset$'."
-msgstr ""
+msgstr "Nun se pue convertir la cadena '$string$' emplegando la codificación '$charset$'."
 
 #: source/resource/conn_shared_res.src#STR_URI_SYNTAX_ERROR.String.Text
 msgid  "The connection URL is invalid."
@@ -341,23 +353,23 @@ msgstr "La consulta nun se pue executar. L'operador ye enforma complexu."
 
 #: source/resource/conn_shared_res.src#STR_QUERY_INVALID_LIKE_COLUMN.String.Text
 msgid  "The query can not be executed. You cannot use 'LIKE' with columns of this type."
-msgstr ""
+msgstr "Nun se pue executar la consulta. Nun pues usar 'LIKE' con columnes d'esta triba."
 
 #: source/resource/conn_shared_res.src#STR_QUERY_INVALID_LIKE_STRING.String.Text
 msgid  "The query can not be executed. 'LIKE' can be used with a string argument only."
-msgstr ""
+msgstr "Nun se pue executar la consulta. 'LIKE' namái se pue usar con un argumentu de cadena."
 
 #: source/resource/conn_shared_res.src#STR_QUERY_NOT_LIKE_TOO_COMPLEX.String.Text
 msgid  "The query can not be executed. The 'NOT LIKE' condition is too complex."
-msgstr ""
+msgstr "Nun se pue executar la consulta. La condición 'NOT LIKE' ye enforma complexa."
 
 #: source/resource/conn_shared_res.src#STR_QUERY_LIKE_WILDCARD.String.Text
 msgid  "The query can not be executed. The 'LIKE' condition contains wildcard in the middle."
-msgstr ""
+msgstr "Nun se pue executar la consulta. La condición 'LIKE' contién un caráuter comodín nel mediu."
 
 #: source/resource/conn_shared_res.src#STR_QUERY_LIKE_WILDCARD_MANY.String.Text
 msgid  "The query can not be executed. The 'LIKE' condition contains too many wildcards."
-msgstr ""
+msgstr "Nun se pue executar la consulta. La condición 'LIKE' contién demasiaos comodinos."
 
 #: source/resource/conn_shared_res.src#STR_INVALID_COLUMNNAME.String.Text
 msgid  "The column name '$columnname$' is not valid."
@@ -377,7 +389,7 @@ msgstr "Nun se pudo cargar el ficheru $filename$."
 
 #: source/resource/conn_shared_res.src#STR_LOAD_FILE_ERROR_MESSAGE.String.Text
 msgid  "The attempt to load the file resulted in the following error message ($exception_type$):\n\n$error_message$"
-msgstr ""
+msgstr "L'intentu de cargar el ficheru devolvió el mensaxe de fallu que vien darréu ($exception_type$):\n\n$error_message$"
 
 #: source/resource/conn_shared_res.src#STR_TYPE_NOT_CONVERT.String.Text
 msgid  "The type could not be converted."
@@ -417,11 +429,11 @@ msgstr "Nun se pue crear la vista: nun hai un oxetu comandu."
 
 #: source/resource/conn_shared_res.src#STR_NO_CONNECTION.String.Text
 msgid  "The connection could not be created. May be the necessary data provider is not installed."
-msgstr ""
+msgstr "La conexón nun se pudo crear. Seique'l fornidor de datos necesariu nun tea instaláu."
 
 #: source/resource/conn_shared_res.src#STR_COULD_NOT_DELETE_INDEX.String.Text
 msgid  "The index could not be deleted. An unknown error while accessing the file system occured."
-msgstr ""
+msgstr "Nun se pue desaniciar l'índiz. Hebo un fallu desconocíu al acceder al sistema de ficheros."
 
 #: source/resource/conn_shared_res.src#STR_ONL_ONE_COLUMN_PER_INDEX.String.Text
 msgid  "The index could not be created. Only one column per index is allowed."
@@ -437,11 +449,11 @@ msgstr "L'índiz nun se pudo crear. Apaeció un fallu inesperáu."
 
 #: source/resource/conn_shared_res.src#STR_COULD_NOT_CREATE_INDEX_NAME.String.Text
 msgid  "The index could not be created. The file '$filename$' is used by an other index."
-msgstr ""
+msgstr "Nun se pudo crear l'índiz. El ficheru '$filename$' ta usándolu otru índiz."
 
 #: source/resource/conn_shared_res.src#STR_COULD_NOT_CREATE_INDEX_KEYSIZE.String.Text
 msgid  "The index could not be created. The size of the chosen column is to big."
-msgstr ""
+msgstr "L'índiz nun se pudo crear. El tamañu de la columna escoyía ye demasiao grande."
 
 #: source/resource/conn_shared_res.src#STR_SQL_NAME_ERROR.String.Text
 msgid  "The name '$name$' doesn't match SQL naming constraints."
@@ -465,35 +477,35 @@ msgstr "La precisión ye inferior a la escala de la columna '$columnname$'."
 
 #: source/resource/conn_shared_res.src#STR_INVALID_COLUMN_NAME_LENGTH.String.Text
 msgid  "Invalid column name length for column '$columnname$'."
-msgstr ""
+msgstr "La llonxitú del nome de columna ye inválida pola columna '$columnname$'."
 
 #: source/resource/conn_shared_res.src#STR_DUPLICATE_VALUE_IN_COLUMN.String.Text
 msgid  "Duplicate value found in column '$columnname$'."
 msgstr "Alcontróse valor duplicáu na columna '$columnname$'."
 
 #: source/resource/conn_shared_res.src#STR_INVALID_COLUMN_DECIMAL_VALUE.String.Text
-msgid  "The '$columnname$' column has been defined as a "Decimal" type, the max. length is $precision$ characters (with $scale$ decimal places).\n\nThe specified value "$value$ is longer than the number of digits allowed."
-msgstr ""
+msgid  "The '$columnname$' column has been defined as a \"Decimal\" type, the max. length is $precision$ characters (with $scale$ decimal places).\n\nThe specified value \"$value$ is longer than the number of digits allowed."
+msgstr "La columna '$columnname$' definióse como un tipu \"Decimal\", el máximu. La llonxitú ye de $precision$ caráuteres. (con $scale$ decimales).\n\nEl valor especificáu \"$value$ ye mayor que'l númberu de díxitos permitíu."
 
 #: source/resource/conn_shared_res.src#STR_COLUMN_NOT_ALTERABLE.String.Text
 msgid  "The column '$columnname$' could not be altered. May be the file system is write protected."
-msgstr ""
+msgstr "La columna '$columnname$' nun puede alterase. Puede ser que'l sistema de fichero tea protexíu escontra escritura."
 
 #: source/resource/conn_shared_res.src#STR_INVALID_COLUMN_VALUE.String.Text
 msgid  "The column '$columnname$' could not be updated. The value is invalid for that column."
-msgstr ""
+msgstr "La columna '$columnname$' nun puede anovase. El valor ye inválidu pa esta columna."
 
 #: source/resource/conn_shared_res.src#STR_COLUMN_NOT_ADDABLE.String.Text
 msgid  "The column '$columnname$' could not be added. May be the file system is write protected."
-msgstr ""
+msgstr "La columna '$columnname$' nun puede amestase. Pue ser que'l sistema de fichero tea protexíu escontra escritura."
 
 #: source/resource/conn_shared_res.src#STR_COLUMN_NOT_DROP.String.Text
 msgid  "The column at position '$position$' could not be dropped. May be the file system is write protected."
-msgstr ""
+msgstr "La columna na posición '$position$' nun puede reducise. Puede ser que'l sistema de fichero tea protexíu escontra escritura."
 
 #: source/resource/conn_shared_res.src#STR_TABLE_NOT_DROP.String.Text
 msgid  "The table '$tablename$' could not be dropped. May be the file system is write protected."
-msgstr ""
+msgstr "La tabla '$tablename$'  nun puede amenorgase. Puede ser que'l sistema de ficheros tea protexíu escontra escritura."
 
 #: source/resource/conn_shared_res.src#STR_COULD_NOT_ALTER_TABLE.String.Text
 msgid  "The table could not be altered."
@@ -501,7 +513,7 @@ msgstr "La tabla nun puede alterase."
 
 #: source/resource/conn_shared_res.src#STR_INVALID_DBASE_FILE.String.Text
 msgid  "The file '$filename$' is an invalid (or unrecognized) dBase file."
-msgstr ""
+msgstr "El ficheru '$filename$'  ye un ficheru dBase inválidu (o non reconocíu)."
 
 #: source/resource/conn_shared_res.src#STR_CANNOT_OPEN_BOOK.String.Text
 msgid  "Cannot open Evolution address book."
@@ -512,12 +524,12 @@ msgid  "Can only sort by table columns."
 msgstr "Namái puede axeitase por columnes de tabla."
 
 #: source/resource/conn_shared_res.src#STR_QUERY_COMPLEX_COUNT.String.Text
-msgid  "The query can not be executed. It is too complex. Only "COUNT(*)" is supported."
-msgstr ""
+msgid  "The query can not be executed. It is too complex. Only \"COUNT(*)\" is supported."
+msgstr "Nun puede executase la consulta. Ye enforma complexa. Namái \"COUNT(*)\" ta sofitáu."
 
 #: source/resource/conn_shared_res.src#STR_QUERY_INVALID_BETWEEN.String.Text
 msgid  "The query can not be executed. The 'BETWEEN' arguments are not correct."
-msgstr ""
+msgstr "Nun puede executase la consulta. Los argumentos 'BETWEEN' nun son correutos."
 
 #: source/resource/conn_shared_res.src#STR_QUERY_FUNCTION_NOT_SUPPORTED.String.Text
 msgid  "The query can not be executed. The function is not supported."
@@ -528,8 +540,8 @@ msgid  "The table can not be changed. It is read only."
 msgstr "Nun puede camudase la tabla. Namái ye de llectura."
 
 #: source/resource/conn_shared_res.src#STR_DELETE_ROW.String.Text
-msgid  "The row could not be deleted. The option "Display inactive records" is set."
-msgstr ""
+msgid  "The row could not be deleted. The option \"Display inactive records\" is set."
+msgstr "Nun puede desaniciase la filera. La opción \"Amosar ficheros inactivos\" ta configurada."
 
 #: source/resource/conn_shared_res.src#STR_ROW_ALREADY_DELETED.String.Text
 msgid  "The row could not be deleted. It is already deleted."
@@ -549,7 +561,7 @@ msgstr "Nun puede executase la consulta.  Nun contién columnes válides."
 
 #: source/resource/conn_shared_res.src#STR_INVALID_PARA_COUNT.String.Text
 msgid  "The count of the given parameter values doesn't match the parameters."
-msgstr ""
+msgstr "La cuenta de los valores de los parámetros daos nun concasen colos parámetros."
 
 #: source/resource/conn_shared_res.src#STR_NO_VALID_FILE_URL.String.Text
 msgid  "The URL '$URL$' is not valid. A connection can not be created."
@@ -561,7 +573,7 @@ msgstr "El conductor de la clas '$classname$' nun puede cargase."
 
 #: source/resource/conn_shared_res.src#STR_NO_JAVA.String.Text
 msgid  "No Java installation could be found. Please check your installation."
-msgstr ""
+msgstr "Nun puede alcontrase la instalación de Java. Por favor, verifique la so instalación."
 
 #: source/resource/conn_shared_res.src#STR_NO_RESULTSET.String.Text
 msgid  "The execution of the query doesn't return a valid result set."
@@ -589,15 +601,15 @@ msgstr "Nun s'alcontró una instalación afayaíza de KDE."
 
 #: source/resource/conn_shared_res.src#STR_KDE_VERSION_TOO_OLD.String.Text
 msgid  "KDE version $major$.$minor$ or higher is required to access the KDE Address Book."
-msgstr ""
+msgstr "Requierse la versión $major$.$minor$ de KDE o superior p'acceder a la llibreta de señes de KDE."
 
 #: source/resource/conn_shared_res.src#STR_KDE_VERSION_TOO_NEW.String.Text
 msgid  "The found KDE version is too new. Only KDE up to version $major$.$minor$ is known to work with this product.\n"
-msgstr ""
+msgstr "La versión de KDE alcontrada ye mui nueva. Namái se sabe de poder trabayar fasta la versión $major$.$minor$ con esti productu.\n"
 
 #: source/resource/conn_shared_res.src#STR_KDE_VERSION_TOO_NEW_WORK_AROUND.String.Text
 msgid  "If you are sure that your KDE version works, you might execute the following Basic macro to disable this version check:\n\n"
-msgstr ""
+msgstr "Si tas seguru de que la to versión de KDE funciona, has executar la siguiente macro de Basic pa deshabilitar la revisión d'esta versión:\n\n"
 
 #: source/resource/conn_shared_res.src#STR_PARA_ONLY_PREPARED.String.Text
 msgid  "Parameters can appear only in prepared statements."
@@ -613,19 +625,19 @@ msgstr "Nun s'alcontró una instalación afayaíza de Mac OS."
 
 #: source/resource/conn_shared_res.src#STR_NO_DISK_SPACE.String.Text
 msgid  "The database file '$filename$' could not be created. Please check your disk space."
-msgstr ""
+msgstr "El ficheru de base de datos '$filename$' nun pudo crease. Por favor revisa l'espaciu en discu."
 
 #: source/resource/conn_shared_res.src#STR_COMMAND_NOT_FOUND.String.Text
 msgid  "The database '$databasename$' could not be started because the command '$progname$' could not be executed."
-msgstr ""
+msgstr "La base de datos '$databasename$' nun pudo aniciase darréu que'l comandu '$progname$' nun pudo executase."
 
 #: source/resource/conn_shared_res.src#STR_DATABASE_NEEDS_CONVERTING.String.Text
 msgid  "The current database need to be converted. Please insert control user  and password."
-msgstr ""
+msgstr "La base de datos actual necesita convertise. Por favor ingresa l'usuario de control y contraseña."
 
 #: source/resource/conn_shared_res.src#STR_USER_NO_DELETE.String.Text
 msgid  "This user couldn't be deleted. Otherwise the database stays in a inconsistent state."
-msgstr ""
+msgstr "Nun puede desaniciase l'usuariu. De lo contrario la base de datos quedará nun estáu inconsistente."
 
 #: source/resource/conn_shared_res.src#STR_NO_STROAGE.String.Text
 msgid  "The connection can not be established. No storage or URL was given."
@@ -633,7 +645,7 @@ msgstr "Nun pudo afitase la conexón. Nun se proporcionó dengún atroxu URL."
 
 #: source/resource/conn_shared_res.src#STR_INVALID_FILE_URL.String.Text
 msgid  "The given URL contains no valid local file system path. Please check the location of your database file."
-msgstr ""
+msgstr "La URL proporcionada contién un camín de ficheru llocal non válidu. Por favor revisa l'allugamientu del ficheru de la base de datos."
 
 #: source/resource/conn_shared_res.src#STR_NO_TABLE_CONTAINER.String.Text
 msgid  "An error occured while obtaining the connection's table container."
@@ -685,16 +697,4 @@ msgstr "Nun esiste $1$ ."
 
 #: source/resource/conn_error_message.src#256 + 2*550 + 0.String.Text
 msgid  "Unable to display the complete table content. Please apply a filter."
-msgstr ""
-
-#: source/drivers/mozab/mozab2.xcu#.Drivers.Installed.sdbc:address:mozilla:.DriverTypeDisplayName
-msgid  "SeaMonkey Address Book"
-msgstr "Llibreta de direcciones de SeaMonkey"
-
-#: source/drivers/mozab/mozab2.xcu#.Drivers.Installed.sdbc:address:thunderbird:.DriverTypeDisplayName
-msgid  "Thunderbird Address Book"
-msgstr "Llibreta de Direiciones de Thunderbird"
-
-#: source/drivers/mozab/mozab2.xcu#.Drivers.Installed.sdbc:address:ldap:*.DriverTypeDisplayName
-msgid  "LDAP Address Book"
-msgstr "Llibreta de Direiciones de LDAP"
+msgstr "Nun puede amosase'l conteníu completu de la tabla. Por favor aplique una peñera."
