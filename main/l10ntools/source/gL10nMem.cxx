@@ -185,15 +185,27 @@ void l10nMem_impl::setSourceKey(int                iLineNo,
                                 const std::string& sKey,
                                 const std::string& sText)
 {
+  std::string newText(sText);
+  int         i;
+
+
+  // time to escape " if contained in text or key
+  for (i = 0; (i = newText.find("\"", i)) != (int)std::string::npos;)
+  {
+    if (!i || newText[i-1] != '\\' || (newText[i-1] == '\\' &&  newText[i-2] == '\\'))
+      newText.insert(i++, "\\");
+    i++;
+  }
+
   // if key exist update state
-  if (mcDb.locateKey(iLineNo, sSourceFile, sKey, sText, false))
+  if (mcDb.locateKey(iLineNo, sSourceFile, sKey, newText, false))
   {
     mcDb.mcENUSlist[mcDb.miCurENUSinx].meState = l10nMem::ENTRY_NORMAL;
   }
   else
   {
     // add key, if changed text, this is wrong but handled in reorganize
-    mcDb.addKey(iLineNo, sSourceFile, sKey, sText, l10nMem::ENTRY_ADDED);
+    mcDb.addKey(iLineNo, sSourceFile, sKey, newText, l10nMem::ENTRY_ADDED);
   }
 }
 
@@ -244,7 +256,7 @@ void l10nMem_impl::save(l10nMem& cMem, const std::string& sTargetDir, bool bKid,
     {
       l10nMem_enus_entry& cE     = mcDb.mcENUSlist[iE];
       l10nMem_lang_entry& cL     = cE.mcLangList[iL];
-      bool                bF     = cL.mbFuzzy || (cE.meState == l10nMem::ENTRY_CHANGED);
+      bool                bF     = cL.mbFuzzy;
 
       // remove deleted entries
       if (cE.meState == l10nMem::ENTRY_DELETED)

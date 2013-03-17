@@ -223,25 +223,12 @@ void convert_po::save(const std::string& sFileName,
                       bool               bFuzzy)
 {
   std::ostream outFile(&outBuffer);
-  std::string  newText(sText), newENUStext(sENUStext);
-  int          i;
   
-  for (i = 0; (i = newText.find("\"", i)) != (int)std::string::npos;)
-  {
-    newText.insert(i, "\\");
-    i += 2;
-  }
-  for (i = 0; (i = newENUStext.find("\"", i)) != (int)std::string::npos;)
-  {
-    newENUStext.insert(i, "\\");
-    i += 2;
-  }
-
   outFile << std::endl << "#: " << sFileName << "#" << sKey << std::endl;
   if (bFuzzy)
     outFile << "#, fuzzy" << std::endl;
-  outFile << "msgid  \"" << newENUStext << "\"" << std::endl
-          << "msgstr \"" << newText     << "\"" << std::endl;
+  outFile << "msgid  \"" << sENUStext << "\"" << std::endl
+          << "msgstr \"" << sText     << "\"" << std::endl;
 }
 
 

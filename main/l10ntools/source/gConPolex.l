@@ -85,11 +85,7 @@ SPACE [ \t]*
     // build current "..."
     for (; (buildValue[++j] = yytext[++i] = yyinput()) != '\"';)
       if (yytext[i] == '\\')
-      {
-        if ( (yytext[++i] = yyinput()) != '\"')
-          ++j;
-        buildValue[j] = yytext[i];
-      }
+        buildValue[++j] = yytext[++i] = yyinput();
     --j;
 
     if (!LOCptr->mbExpectId && !LOCptr->mbExpectStr)
