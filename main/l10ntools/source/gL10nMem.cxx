@@ -189,12 +189,22 @@ void l10nMem_impl::setSourceKey(int                iLineNo,
   int         i;
 
 
-  // time to escape " if contained in text or key
+  // time to escape " and \ if contained in text or key
+  for (i = 0; (i = newText.find("\\", i)) != (int)std::string::npos;)
+  {
+    ++i;
+    if (i < (int)newText.size() && (newText[i] == '<' || newText[i] == '>'))
+      ++i;
+    else
+    {
+      newText.insert(i-1, "\\");
+      ++i;
+    }
+  }
   for (i = 0; (i = newText.find("\"", i)) != (int)std::string::npos;)
   {
-    if (!i || newText[i-1] != '\\' || (newText[i-1] == '\\' &&  newText[i-2] == '\\'))
-      newText.insert(i++, "\\");
-    i++;
+    newText.insert(i, "\\");
+    i += 2;
   }
 
   // if key exist update state
@@ -230,9 +240,9 @@ void l10nMem_impl::save(l10nMem& cMem, const std::string& sTargetDir, bool bKid,
 
   // Save en_US
   {
-    convert_gen savePo(cMem, sTargetDir, sFileName);
+    convert_gen savePo(cMem, sTargetDir, sTargetDir, sFileName);
 
-    savePo.startSave(sTargetDir, "en_US", sFileName);
+    savePo.startSave("en_US", sFileName);
     for (iE = 1; iE < iEsize; ++iE)
     {
       l10nMem_enus_entry& cE     = mcDb.mcENUSlist[iE];
@@ -249,9 +259,9 @@ void l10nMem_impl::save(l10nMem& cMem, const std::string& sTargetDir, bool bKid,
   // save all languages
   for (iL = 1; iL < iLsize; ++iL)
   {
-    convert_gen savePo(cMem, sTargetDir, sFileName);
+    convert_gen savePo(cMem, sTargetDir, sTargetDir, sFileName);
 
-    savePo.startSave(sTargetDir, mcDb.mcLangList[iL], sFileName);
+    savePo.startSave(mcDb.mcLangList[iL], sFileName);
     for (iE = 1; iE < iEsize; ++iE)
     {
       l10nMem_enus_entry& cE     = mcDb.mcENUSlist[iE];

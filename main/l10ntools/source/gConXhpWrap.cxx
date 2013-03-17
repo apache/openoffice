@@ -73,9 +73,6 @@ void convert_xhp::execute()
 /**********************   I M P L E M E N T A T I O N   **********************/
 void convert_xhp::setString(char *yytext)
 {
-  if (meExpectValue == VALUE_IS_VALUE_TAG)
-    msCollector += "\\";
-
   copySourceWithCollector(yytext);
 }
 
@@ -142,10 +139,6 @@ void convert_xhp::setId(char *yytext)
          break;
 
     case VALUE_IS_VALUE_TAG:
-         msCollector.insert(nX + nE, "\\");
-         msCollector.insert(nX + nL, "\\");
-         break;
-
     case VALUE_NOT_USED:
     case VALUE_IS_VALUE:
          break;
@@ -210,10 +203,6 @@ void convert_xhp::setRef(char *yytext)
          break;
 
     case VALUE_IS_VALUE_TAG:
-         msCollector.insert(nX + nE, "\\");
-         msCollector.insert(nX + nL, "\\");
-         break;
-
     case VALUE_NOT_USED:
     case VALUE_IS_VALUE:
          break;

@@ -22,6 +22,9 @@
 #define GCON_HXX
 #include "gLang.hxx"
 
+#include <iostream>
+#include <fstream>
+
 
 
 /*****************************************************************************
@@ -51,8 +54,7 @@ class convert_gen_impl
     virtual void execute() = 0;
 
     // ONLY po should implement these functions
-    virtual void startSave(const std::string& sTargetDir,
-                           const std::string& sLanguage,
+    virtual void startSave(const std::string& sLanguage,
                            const std::string& sFile);
     virtual void save(const std::string& sFileName,
                       const std::string& sKey,
@@ -64,6 +66,7 @@ class convert_gen_impl
     // generic variables
     bool         mbMergeMode;
     std::string  msSourcePath;
+    std::string  msTargetPath;
     std::string  msSourceFile;
     l10nMem&     mcMemory;
     std::string  msCollector;
@@ -79,8 +82,10 @@ class convert_gen_impl
     std::string  msSourceBuffer, msCopyText;
     int          miSourceReadIndex;
 
-    bool prepareFile(bool bAllowNoFile);
+    bool prepareFile(bool bLoadMode, bool bAllowNoFile);
 
+  private:
+    std::ofstream outputFile;
 
     friend class convert_gen;
 };

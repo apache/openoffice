@@ -371,6 +371,7 @@ void l10nMem_db::addKey(int                  iLineNo,
 
     // file is registred, so we need to add the entry at the end of the file range
     curF.miEnd++;
+    miCurENUSinx = curF.miEnd;
     mcENUSlist.insert(it + curF.miEnd,
                       l10nMem_enus_entry(sKey, sText, iLineNo, miCurFileInx,
                                          mcLangList.size(), eStat));

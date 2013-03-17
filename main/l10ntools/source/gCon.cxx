@@ -30,9 +30,6 @@
 #include "gConXhp.hxx"
 #include "gConXrm.hxx"
 
-#include <iostream>
-#include <fstream>
-
 
 
 /*****************************************************************************
@@ -50,7 +47,10 @@ convert_gen_impl * convert_gen_impl::mcImpl = NULL;
 
 
 /**********************   I M P L E M E N T A T I O N   **********************/
-convert_gen::convert_gen(l10nMem& cMemory, const std::string& sSourceDir,  const std::string& sSourceFile) 
+convert_gen::convert_gen(l10nMem&           cMemory,
+                         const std::string& sSourceDir,
+                         const std::string& sTargetDir,
+                         const std::string& sSourceFile) 
 {
   // do we have an old object
   if (convert_gen_impl::mcImpl)
@@ -77,6 +77,7 @@ convert_gen::convert_gen(l10nMem& cMemory, const std::string& sSourceDir,  const
 
   // and set environment
   convert_gen_impl::mcImpl->msSourceFile = sSourceFile;
+  convert_gen_impl::mcImpl->msTargetPath = sTargetDir;
   convert_gen_impl::mcImpl->msSourcePath = sSourceDir + sSourceFile;
 }
 
@@ -91,12 +92,12 @@ convert_gen::~convert_gen()
 
 
 /**********************   I M P L E M E N T A T I O N   **********************/
-bool convert_gen::execute(const bool bMerge, const bool bAllowNoFile)
+bool convert_gen::execute(const bool bMerge, const bool bLoadMode, const bool bAllowNoFile)
 {
   convert_gen_impl::mcImpl->mbMergeMode  = bMerge;
 
   // and load file
-  if (!convert_gen_impl::mcImpl->prepareFile(bAllowNoFile))
+  if (!convert_gen_impl::mcImpl->prepareFile(bLoadMode, bAllowNoFile))
     return false;
 
   // and execute conversion
@@ -108,19 +109,16 @@ bool convert_gen::execute(const bool bMerge, const bool bAllowNoFile)
 
 
 /**********************   I M P L E M E N T A T I O N   **********************/
-void convert_gen::startSave(const std::string& sTargetDir,
-                            const std::string& sLanguage,
+void convert_gen::startSave(const std::string& sLanguage,
                             const std::string& sFile)
 {
-  convert_gen_impl::mcImpl->startSave(sTargetDir, sLanguage, sFile);
+  convert_gen_impl::mcImpl->startSave(sLanguage, sFile);
 }
-void convert_gen_impl::startSave(const std::string& sTargetDir,
-                                 const std::string& sLanguage,
+void convert_gen_impl::startSave(const std::string& sLanguage,
                                  const std::string& sFile)
 {
   std::string x;
 
-  x = sTargetDir;
   x = sLanguage;
   x = sFile;
   throw l10nMem::showError("startSave called with non .po file");
@@ -184,7 +182,7 @@ convert_gen_impl::~convert_gen_impl()
 
 
 /**********************   I M P L E M E N T A T I O N   **********************/
-bool convert_gen_impl::prepareFile(bool bAllowNoFile)
+bool convert_gen_impl::prepareFile(bool bLoadMode, bool bAllowNoFile)
 {
   std::ifstream inputFile(msSourcePath.c_str(), std::ios::binary);
 
@@ -197,7 +195,7 @@ bool convert_gen_impl::prepareFile(bool bAllowNoFile)
       return false;
     }
     else
-      throw l10nMem::showError("Cannot open file (" + msSourcePath + ")");
+      throw l10nMem::showError("Cannot open file (" + msSourcePath + ") for reading");
   }
 
   // get length of file:
@@ -211,6 +209,19 @@ bool convert_gen_impl::prepareFile(bool bAllowNoFile)
   if ((unsigned int)inputFile.gcount() != msSourceBuffer.size())
     throw l10nMem::showError("cannot read whole file");
   inputFile.close();
+
+  if (mbMergeMode && !bLoadMode)
+  {
+    // close previous file
+    if (outputFile.is_open())
+      outputFile.close();
+
+    // open output file
+    outputFile.open((msTargetPath+msSourceFile).c_str(), std::ios::binary); 
+    if (!outputFile.is_open())
+      throw l10nMem::showError("Cannot open file (" + msTargetPath+msSourceFile + ") for writing");
+  }
+
   return true;
 }
 
@@ -252,7 +263,7 @@ void convert_gen_impl::writeSourceFile(const std::string& line)
   if (!line.size())
     return;
 
-  throw l10nMem::showError("writeSourceFile not implemented");
+  outputFile.write(line.c_str(), line.size());
 }
 
 

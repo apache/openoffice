@@ -62,8 +62,7 @@ class convert_po : public convert_gen_impl
 
     void execute();
 
-    void startSave(const std::string& sTargetDir,
-                   const std::string& sLanguage,
+    void startSave(const std::string& sLanguage,
                    const std::string& sFile);
     void save(const std::string& sFileName,
               const std::string& sKey,

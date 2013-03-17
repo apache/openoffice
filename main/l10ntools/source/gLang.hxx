@@ -95,15 +95,19 @@ class l10nMem
 class convert_gen
 {
   public:
-    convert_gen(l10nMem& cMemory, const std::string& sSourceDir, const std::string& sSourceFile);
+    convert_gen(l10nMem&           cMemory,
+                const std::string& sSourceDir,
+                const std::string& sTargetDir,
+                const std::string& sSourceFile);
     ~convert_gen();
 
     // do extract/merge
-    bool execute(const bool bMerge, const bool bAllowNoFile);
+    bool execute(const bool         bMerge,
+                 const bool         bLoadMode,
+                 const bool         bAllowNoFile);
 
     // ONLY po should implement these functions
-    void startSave(const std::string& sTargetDir,
-                   const std::string& sLanguage,
+    void startSave(const std::string& sLanguage,
                    const std::string& sFile);
     void save(const std::string& sFileName,
               const std::string& sKey,
