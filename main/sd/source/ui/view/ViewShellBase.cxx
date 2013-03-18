@@ -41,7 +41,6 @@
 #include "glob.hrc"
 #include "unokywds.hxx"
 #include <svx/svxids.hrc>
-#include <svx/sidebar/ContextChangeEventMultiplexer.hxx>
 #include "DrawDocShell.hxx"
 #include <sfx2/app.hxx>
 #include "PaneChildWindows.hxx"
@@ -85,7 +84,6 @@
 #include <sfx2/msg.hxx>
 #include <sfx2/objface.hxx>
 #include <sfx2/viewfrm.hxx>
-#include <sfx2/sidebar/EnumContext.hxx>
 #include <svl/whiter.hxx>
 #include <comphelper/processfactory.hxx>
 #include <vcl/msgbox.hxx>
@@ -856,10 +854,6 @@ void ViewShellBase::Activate (sal_Bool bIsMDIActivate)
             xConfigurationController->update();
     }
     GetToolBarManager()->RequestUpdate();
-
-    ContextChangeEventMultiplexer::NotifyContextChange(
-        GetController(),
-        ::sfx2::sidebar::EnumContext::Context_Default);
 }
 
 

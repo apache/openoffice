@@ -31,6 +31,10 @@
 #include <svx/sidebar/ValueSetWithTextControl.hxx>
 
 #include <tools/inetmime.hxx>
+#include <editeng/paperinf.hxx>
+#include <sfx2/bindings.hxx>
+#include <sfx2/dispatch.hxx>
+
 
 namespace sw { namespace sidebar {
 

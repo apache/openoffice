@@ -91,6 +91,11 @@ Deck::~Deck (void)
 {
     OSL_TRACE("destroying Deck at %x", this);
     Dispose();
+
+    // We have to explicitly trigger the destruction of panels.
+    // Otherwise that is done by one of our base class destructors
+    // without updating maPanels.  
+    maPanels.clear();
 }
 
 
@@ -98,16 +103,21 @@ Deck::~Deck (void)
 
 void Deck::Dispose (void)
 {
-    PanelContainer aPanels;
+    SharedPanelContainer aPanels;
     aPanels.swap(maPanels);
-    for (PanelContainer::const_iterator
+    for (SharedPanelContainer::iterator
              iPanel(aPanels.begin()),
              iEnd(aPanels.end());
          iPanel!=iEnd;
          ++iPanel)
     {
-		if (*iPanel != NULL)
+		if (*iPanel)
+        {
 			(*iPanel)->Dispose();
+            OSL_ASSERT(iPanel->unique());
+            OSL_TRACE("panel has %d references", iPanel->use_count());
+            iPanel->reset();
+        }
     }
 
     mpTitleBar.reset();
@@ -211,18 +221,19 @@ void Deck::DataChanged (const DataChangedEvent& rEvent)
 
 
 
-void Deck::SetPanels (const ::std::vector<Panel*>& rPanels)
+void Deck::SetPanels (const SharedPanelContainer& rPanels)
 {
-    maPanels.clear();
-    maPanels.reserve(rPanels.size());
-    for (::std::vector<Panel*>::const_iterator iPanel(rPanels.begin()),iEnd(rPanels.end());
-         iPanel!=iEnd;
-         ++iPanel)
-    {
-        maPanels.push_back(*iPanel);
-    }
+    maPanels = rPanels;
 
     RequestLayout();
+}
+
+
+
+
+const SharedPanelContainer& Deck::GetPanels (void) const
+{
+    return maPanels;
 }
 
 

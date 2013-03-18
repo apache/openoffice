@@ -35,6 +35,8 @@
 #include <tools/urlobj.hxx>
 #include <sfx2/docfile.hxx>
 #include <sfx2/printer.hxx>
+#include <sfx2/bindings.hxx>
+#include <sfx2/dispatch.hxx>
 #include <unotools/localedatawrapper.hxx>
 #include <com/sun/star/document/PrinterIndependentLayout.hpp>
 #include <fmtfsize.hxx>

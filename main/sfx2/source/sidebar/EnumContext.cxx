@@ -48,7 +48,7 @@ const sal_Int32 EnumContext::OptimalMatch = 0;  // Neither application nor conte
 
 
 EnumContext::EnumContext (void)
-    : meApplication(Application_Unknown),
+    : meApplication(Application_None),
       meContext(Context_Unknown)
 {
 }
@@ -78,9 +78,25 @@ EnumContext::EnumContext (
 
 
 
-sal_Int32 EnumContext::GetCombinedContext(void) const
+sal_Int32 EnumContext::GetCombinedContext (void) const
 {
     return CombinedEnumContext(meApplication, meContext);
+}
+
+
+
+
+sal_Int32 EnumContext::GetCombinedContext_DI (void) const
+{
+    switch (meApplication)
+    {
+        case Application_Draw:
+        case Application_Impress:
+            return CombinedEnumContext(Application_DrawImpress, meContext);
+            
+        default:
+            return CombinedEnumContext(meApplication, meContext);
+    }
 }
 
 
@@ -141,8 +157,9 @@ void EnumContext::ProvideApplicationContainers (void)
         AddEntry(A2S("com.sun.star.sheet.SpreadsheetDocument"), EnumContext::Application_Calc);
         AddEntry(A2S("com.sun.star.drawing.DrawingDocument"), EnumContext::Application_Draw);
         AddEntry(A2S("com.sun.star.presentation.PresentationDocument"), EnumContext::Application_Impress);
+
         AddEntry(A2S("any"), EnumContext::Application_Any);
-        AddEntry(A2S("unknown"), EnumContext::Application_Unknown);
+        AddEntry(A2S("none"), EnumContext::Application_None);
     }
 }
 
@@ -158,7 +175,7 @@ EnumContext::Application EnumContext::GetApplicationEnum (const ::rtl::OUString&
     if (iApplication != maApplicationMap.end())
         return iApplication->second;
     else
-        return EnumContext::Application_Unknown;
+        return EnumContext::Application_None;
 }
 
 
@@ -170,7 +187,7 @@ const ::rtl::OUString& EnumContext::GetApplicationName (const Application eAppli
 
     const sal_Int32 nIndex (eApplication);
     if (nIndex<0 || nIndex>= __LastApplicationEnum)
-        return maApplicationVector[Application_Unknown];
+        return maApplicationVector[Application_None];
     else
         return maApplicationVector[nIndex];
 }
@@ -184,7 +201,7 @@ void EnumContext::AddEntry (const ::rtl::OUString& rsName, const Context eApplic
     OSL_ASSERT(eApplication<=__LastContextEnum);
     if (maContextVector.size() <= size_t(eApplication))
         maContextVector.resize(eApplication+1);
-    maContextVector[eApplication]=rsName;
+    maContextVector[eApplication] = rsName;
 }
 
 
@@ -195,9 +212,35 @@ void EnumContext::ProvideContextContainers (void)
     if (maContextMap.empty())
     {
         maContextVector.resize(static_cast<size_t>(__LastContextEnum)+1);
-        AddEntry(A2S("text"), Context_Text);
         AddEntry(A2S("any"), Context_Any);
         AddEntry(A2S("default"), Context_Default);
+#define AddContext(context) AddEntry(A2S(#context), Context_##context);
+        AddContext(3DObject);
+        AddContext(Annotation);
+        AddContext(Auditing);
+        AddContext(Cell);
+        AddContext(Chart);
+        AddContext(Chart);
+        AddContext(Draw);
+        AddContext(DrawPage);
+        AddContext(DrawText);
+        AddContext(EditCell);
+        AddContext(Form);
+        AddContext(Frame);
+        AddContext(Graphic);
+        AddContext(HandoutPage);
+        AddContext(MasterPage);
+        AddContext(Media);
+        AddContext(MultiObject);
+        AddContext(NotesPage);
+        AddContext(OLE);
+        AddContext(OutlineText);
+        AddContext(Pivot);
+        AddContext(SlidesorterPage);
+        AddContext(Table);
+        AddContext(Text);
+        AddContext(TextObject);
+#undef AddContext
     }
 }
 

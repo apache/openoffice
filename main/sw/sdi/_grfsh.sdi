@@ -58,6 +58,12 @@ interface BaseTextGraphic
 		StateMethod = GetAttrState ;
 		DisableFlags="SW_DISABLE_ON_PROTECTED_CURSOR";
 	]
+	FN_PROPERTY_SIDEBAR_GRAFIC_DLG // status(final|play)
+	[
+		ExecMethod = Execute ;
+		StateMethod = GetAttrState ;
+		DisableFlags="SW_DISABLE_ON_PROTECTED_CURSOR";
+	]
 
 
     FN_SAVE_GRAPHIC // status(final|play)

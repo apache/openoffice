@@ -24,7 +24,7 @@
 
 #include <svx/sidebar/Popup.hxx>
 
-#include <sfx2/sidebar/SidebarPanelBase.hxx>
+#include <sfx2/sidebar/IContextChangeReceiver.hxx>
 #include <sfx2/sidebar/ControllerItem.hxx>
 
 namespace svx { namespace sidebar {
@@ -34,6 +34,7 @@ namespace svx { namespace sidebar {
 #include <i18npool/paper.hxx>
 
 #include <svx/pageitem.hxx>
+#include <svx/rulritem.hxx>
 #include <editeng/sizeitem.hxx>
 
 #include <vcl/ctrl.hxx>
@@ -42,15 +43,20 @@ namespace svx { namespace sidebar {
 #include <vcl/toolbox.hxx>
 #include <vcl/lstbox.hxx>
 #include <vcl/field.hxx>
+#include <svl/intitem.hxx>
 
+#include <com/sun/star/frame/XFrame.hpp>
 #include <boost/scoped_ptr.hpp>
 
+
+namespace css = ::com::sun::star;
+namespace cssu = ::com::sun::star::uno;
 
 namespace sw { namespace sidebar {
 
     class PagePropertyPanel 
         : public Control,
-          public ::sfx2::sidebar::SidebarPanelBase::ContextChangeReceiverInterface,
+          public ::sfx2::sidebar::IContextChangeReceiver,
           public ::sfx2::sidebar::ControllerItem::ItemUpdateReceiverInterface
     {
     public:
@@ -62,7 +68,7 @@ namespace sw { namespace sidebar {
         // override Window::DataChanged(..) inherited via Control to react on certain changes
         virtual void DataChanged( const DataChangedEvent& rEvent );
 
-        // interface of ::sfx2::sidebar::SidebarPanelBase::ContextChangeReceiverInterface
+        // interface of ::sfx2::sidebar::IContextChangeReceiver
         virtual void HandleContextChange(
             const ::sfx2::sidebar::EnumContext aContext);
 

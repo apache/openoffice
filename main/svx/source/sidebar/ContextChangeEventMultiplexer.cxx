@@ -29,13 +29,12 @@
 #include <com/sun/star/frame/XModuleManager.hpp>
 #include <comphelper/processfactory.hxx>
 #include <comphelper/componentcontext.hxx>
-
+#include <sfx2/viewsh.hxx>
 #include <tools/diagnose_ex.h>
 
 using namespace css;
 using namespace cssu;
 
-#define A2S(pString) (::rtl::OUString(RTL_CONSTASCII_USTRINGPARAM(pString)))
 
 void ContextChangeEventMultiplexer::NotifyContextChange (
     const cssu::Reference<css::frame::XController>& rxController,
@@ -59,6 +58,17 @@ void ContextChangeEventMultiplexer::NotifyContextChange (
 
 
 
+void ContextChangeEventMultiplexer::NotifyContextChange (
+    SfxViewShell* pViewShell,
+    const ::sfx2::sidebar::EnumContext::Context eContext)
+{
+    if (pViewShell != NULL)
+        NotifyContextChange(pViewShell->GetController(), eContext);    
+}
+
+
+
+
 ::rtl::OUString ContextChangeEventMultiplexer::GetModuleName (
     const cssu::Reference<css::frame::XFrame>& rxFrame)
 {
@@ -77,5 +87,5 @@ void ContextChangeEventMultiplexer::NotifyContextChange (
         // Ignore it.
     }
     return ::sfx2::sidebar::EnumContext::GetApplicationName(
-        ::sfx2::sidebar::EnumContext::Application_Unknown);
+        ::sfx2::sidebar::EnumContext::Application_None);
 }

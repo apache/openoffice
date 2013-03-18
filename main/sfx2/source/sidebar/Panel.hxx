@@ -29,6 +29,8 @@
 
 #include <boost/function.hpp>
 #include <boost/scoped_ptr.hpp>
+#include <boost/shared_ptr.hpp>
+#include <vector>
 
 namespace css = ::com::sun::star;
 namespace cssu = ::com::sun::star::uno;
@@ -46,7 +48,8 @@ public:
     Panel (
         const PanelDescriptor& rPanelDescriptor,
         Window* pParentWindow,
-        const ::boost::function<void(void)>& rDeckLayoutTrigger);
+        const ::boost::function<void(void)>& rDeckLayoutTrigger,
+        const ::boost::function<void(void)>& rShowMenuFunctor);
     virtual ~Panel (void);
 
     void Dispose (void);
@@ -80,7 +83,8 @@ private:
     void ShowMenu (void);
     cssu::Reference<css::awt::XWindow> GetElementWindow (void);
 };
-
+typedef ::boost::shared_ptr<Panel> SharedPanel;
+typedef ::std::vector<SharedPanel> SharedPanelContainer;
     
 
 } } // end of namespace sfx2::sidebar

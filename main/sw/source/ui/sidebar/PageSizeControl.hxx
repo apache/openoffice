@@ -27,6 +27,8 @@
 #include <i18npool/paper.hxx>
 
 #include <vcl/button.hxx>
+#include <vcl/field.hxx>
+#include <svtools/unitconv.hxx>
 
 #include <vector>
 

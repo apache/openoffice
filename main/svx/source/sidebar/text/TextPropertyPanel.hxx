@@ -25,6 +25,7 @@
 #include <vcl/ctrl.hxx>
 #include <sfx2/sidebar/SidebarPanelBase.hxx>
 #include <sfx2/sidebar/ControllerItem.hxx>
+#include <sfx2/sidebar/IContextChangeReceiver.hxx>
 
 #include <svtools/ctrlbox.hxx>
 #include <svx/tbxcolorupdate.hxx>
@@ -45,7 +46,7 @@ class SvxSBFontNameBox;
 
 class TextPropertyPanel
     : public Control,
-      public ::sfx2::sidebar::SidebarPanelBase::ContextChangeReceiverInterface,
+      public ::sfx2::sidebar::IContextChangeReceiver,
       public ::sfx2::sidebar::ControllerItem::ItemUpdateReceiverInterface
 {
 public:

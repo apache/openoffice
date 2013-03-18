@@ -41,6 +41,8 @@
 #include <svx/svdouno.hxx>
 #include <svx/extrusionbar.hxx>
 #include <svx/fontworkbar.hxx>
+#include <svx/sidebar/SelectionChangeHandler.hxx>
+#include <svx/sidebar/SelectionAnalyzer.hxx>
 
 #include "drawsh.hxx"
 #include "drawview.hxx"
@@ -53,15 +55,23 @@
 #include <svx/svdoole2.hxx>
 #include <svx/svdocapt.hxx>
 
+#include <boost/bind.hpp>
+
+
 sal_uInt16 ScGetFontWorkId();		// in drtxtob
 
 using namespace com::sun::star;
+
 
 //------------------------------------------------------------------
 
 ScDrawShell::ScDrawShell( ScViewData* pData ) :
 	SfxShell(pData->GetViewShell()),
-	pViewData( pData )
+	pViewData( pData ),
+    mpSelectionChangeHandler(new svx::sidebar::SelectionChangeHandler(
+            ::boost::bind(&ScDrawShell::GetContextForSelection, this),
+            GetFrame()->GetFrame().GetController(),
+            sfx2::sidebar::EnumContext::Context_Cell))
 {
 	SetPool( &pViewData->GetScDrawView()->GetModel()->GetItemPool() );
     ::svl::IUndoManager* pMgr = pViewData->GetSfxDocShell()->GetUndoManager();
@@ -72,10 +82,13 @@ ScDrawShell::ScDrawShell( ScViewData* pData ) :
     }
 	SetHelpId( HID_SCSHELL_DRAWSH );
 	SetName(String::CreateFromAscii(RTL_CONSTASCII_STRINGPARAM("Drawing")));
+
+    mpSelectionChangeHandler->Connect();
 }
 
 ScDrawShell::~ScDrawShell()
 {
+    mpSelectionChangeHandler->Disconnect();
 }
 
 void ScDrawShell::GetState( SfxItemSet& rSet )			// Zustaende / Toggles
@@ -404,4 +417,10 @@ void ScDrawShell::GetDrawAttrStateForIFBX( SfxItemSet& rSet )
   		SfxItemSet aNewAttr(pView->GetGeoAttrFromMarked());
   		rSet.Put(aNewAttr, sal_False);
   	}
+}
+
+sfx2::sidebar::EnumContext::Context ScDrawShell::GetContextForSelection (void)
+{
+    return ::svx::sidebar::SelectionAnalyzer::GetContextForSelection_SC(
+        GetDrawView()->GetMarkedObjectList());
 }

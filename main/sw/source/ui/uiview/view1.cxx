@@ -134,10 +134,6 @@ void SwView::Activate(sal_Bool bMDIActivate)
 		AttrChangedNotify(pWrtShell);
 
 	SfxViewShell::Activate(bMDIActivate);
-
-    ContextChangeEventMultiplexer::NotifyContextChange(
-        GetController(),
-        ::sfx2::sidebar::EnumContext::Context_Default);
 }
 
 /*--------------------------------------------------------------------

@@ -25,24 +25,21 @@
 #include <vcl/ctrl.hxx>
 #include <sfx2/sidebar/SidebarPanelBase.hxx>
 #include <sfx2/sidebar/ControllerItem.hxx>
+#include <sfx2/sidebar/IContextChangeReceiver.hxx>
 #include <vcl/fixed.hxx>
 #include <boost/scoped_ptr.hpp>
 
-//////////////////////////////////////////////////////////////////////////////
-// pedefines
 class FixedText;
 class MetricField;
 class ListBox;
 class FloatingWindow;
 
-//////////////////////////////////////////////////////////////////////////////
-// namespace open
 
 namespace svx { namespace sidebar {
 
 class GraphicPropertyPanel
 :   public Control,
-    public ::sfx2::sidebar::SidebarPanelBase::ContextChangeReceiverInterface,
+    public ::sfx2::sidebar::IContextChangeReceiver,
     public ::sfx2::sidebar::ControllerItem::ItemUpdateReceiverInterface
 {
 public:
@@ -128,14 +125,7 @@ private:
     void Initialize();
 };
 
-//////////////////////////////////////////////////////////////////////////////
-// namespace close
 
-}} // end of namespace ::svx::sidebar
+} } // end of namespace ::svx::sidebar
 
-//////////////////////////////////////////////////////////////////////////////
-
-#endif // SVX_PROPERTYPANEL_GRAPHICPAGE_HXX
-
-//////////////////////////////////////////////////////////////////////////////
-// eof
+#endif

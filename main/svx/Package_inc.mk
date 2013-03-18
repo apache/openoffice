@@ -560,5 +560,7 @@ $(eval $(call gb_Package_add_file,svx_inc,inc/svx/sidebar/ContextChangeEventMult
 $(eval $(call gb_Package_add_file,svx_inc,inc/svx/sidebar/Popup.hxx,svx/sidebar/Popup.hxx))
 $(eval $(call gb_Package_add_file,svx_inc,inc/svx/sidebar/PopupContainer.hxx,svx/sidebar/PopupContainer.hxx))
 $(eval $(call gb_Package_add_file,svx_inc,inc/svx/sidebar/PopupControl.hxx,svx/sidebar/PopupControl.hxx))
+$(eval $(call gb_Package_add_file,svx_inc,inc/svx/sidebar/SelectionAnalyzer.hxx,svx/sidebar/SelectionAnalyzer.hxx))
+$(eval $(call gb_Package_add_file,svx_inc,inc/svx/sidebar/SelectionChangeHandler.hxx,svx/sidebar/SelectionChangeHandler.hxx))
 $(eval $(call gb_Package_add_file,svx_inc,inc/svx/sidebar/ValueSetWithTextControl.hxx,svx/sidebar/ValueSetWithTextControl.hxx))
 

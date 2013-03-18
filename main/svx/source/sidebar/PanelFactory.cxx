@@ -27,7 +27,10 @@
 #include "line/LinePropertyPanel.hxx"
 #include "possize/PosSizePropertyPanel.hxx"
 #include "gallery/GalleryControl.hxx"
-#include "ColorPanel.hxx"
+#include "debug/ColorPanel.hxx"
+#include "debug/ContextPanel.hxx"
+#include "debug/NotYetImplementedPanel.hxx"
+#include "EmptyPanel.hxx"
 #include <sfx2/sidebar/SidebarPanelBase.hxx>
 #include <sfx2/sfxbasecontroller.hxx>
 #include <toolkit/helper/vclunohelper.hxx>
@@ -193,14 +196,43 @@ Reference<ui::XUIElement> SAL_CALL PanelFactory::createUIElement (
     }
     else if (DoesResourceEndWith("/Debug_ColorPanel"))
     {
-        ColorPanel* pColorPanel = new ColorPanel(
-            pParentWindow);
+        ColorPanel* pPanel = new ColorPanel(pParentWindow);
         xElement = sfx2::sidebar::SidebarPanelBase::Create(
             rsResourceURL,
             xFrame,
-            pColorPanel,
+            pPanel,
             ::boost::function<void(void)>(),
             ui::LayoutSize(300,-1,400));
+    }
+    else if (DoesResourceEndWith("/Debug_ContextPanel"))
+    {
+        ContextPanel* pPanel = new ContextPanel(pParentWindow);
+        xElement = sfx2::sidebar::SidebarPanelBase::Create(
+            rsResourceURL,
+            xFrame,
+            pPanel,
+            ::boost::function<void(void)>(),
+            ui::LayoutSize(45,45,45));
+    }
+    else if (DoesResourceEndWith("/Debug_NotYetImplementedPanel"))
+    {
+        NotYetImplementedPanel* pPanel = new NotYetImplementedPanel(pParentWindow);
+        xElement = sfx2::sidebar::SidebarPanelBase::Create(
+            rsResourceURL,
+            xFrame,
+            pPanel,
+            ::boost::function<void(void)>(),
+            ui::LayoutSize(20,25,25));
+    }
+    else if (DoesResourceEndWith("/EmptyPanel"))
+    {
+        EmptyPanel* pPanel = new EmptyPanel(pParentWindow);
+        xElement = sfx2::sidebar::SidebarPanelBase::Create(
+            rsResourceURL,
+            xFrame,
+            pPanel,
+            ::boost::function<void(void)>(),
+            ui::LayoutSize(20,25,25));
     }
 #undef DoesResourceEndWith
 

@@ -281,9 +281,45 @@ void PosSizePropertyPanel::HandleContextChange(
 
     maContext = aContext;
 
-    switch (maContext.GetCombinedContext())
+    sal_Int32 nLayoutMode (0);
+    switch (maContext.GetCombinedContext_DI())
     {
-        case CombinedEnumContext(Application_Writer, Context_Draw): //case PROPERTY_CONTEXT_SW_DRAW:		
+        case CombinedEnumContext(Application_Writer, Context_Draw):
+            nLayoutMode = 0;
+            break;
+
+        case CombinedEnumContext(Application_Writer, Context_Graphic):
+		case CombinedEnumContext(Application_Writer, Context_Media):
+		case CombinedEnumContext(Application_Writer, Context_Frame):
+		case CombinedEnumContext(Application_Writer, Context_OLE):
+		case CombinedEnumContext(Application_Writer, Context_Form):
+            nLayoutMode = 1;
+            break;
+
+        case CombinedEnumContext(Application_Calc, Context_Draw):
+		case CombinedEnumContext(Application_Calc, Context_Graphic):
+        case CombinedEnumContext(Application_DrawImpress, Context_Draw):
+        case CombinedEnumContext(Application_DrawImpress, Context_TextObject):
+        case CombinedEnumContext(Application_DrawImpress, Context_Graphic):
+            nLayoutMode = 2;
+		    break;
+
+        case CombinedEnumContext(Application_Calc, Context_Chart):
+		case CombinedEnumContext(Application_Calc, Context_Form):
+		case CombinedEnumContext(Application_Calc, Context_Media):
+		case CombinedEnumContext(Application_Calc, Context_OLE):
+		case CombinedEnumContext(Application_Calc, Context_MultiObject):
+		case CombinedEnumContext(Application_DrawImpress, Context_Media):
+		case CombinedEnumContext(Application_DrawImpress, Context_Form):
+		case CombinedEnumContext(Application_DrawImpress, Context_OLE):
+		case CombinedEnumContext(Application_DrawImpress, Context_3DObject):
+		case CombinedEnumContext(Application_DrawImpress, Context_MultiObject):
+            nLayoutMode = 3;
+            break;
+    }    
+    switch (nLayoutMode)
+    {
+        case 0:
 		{
 			mpMtrWidth->SetMin( 2 );
 			mpMtrHeight->SetMin( 2 );
@@ -322,11 +358,7 @@ void PosSizePropertyPanel::HandleContextChange(
 		}
 		break;
 
-        case CombinedEnumContext(Application_Writer, Context_Graphic): //case PROPERTY_CONTEXT_SW_GRAPHIC:	
-		case CombinedEnumContext(Application_Writer, Context_Media): //case PROPERTY_CONTEXT_SW_MEDIA:		
-		case CombinedEnumContext(Application_Writer, Context_Frame): //case PROPERTY_CONTEXT_SW_FRAME:		
-		case CombinedEnumContext(Application_Writer, Context_OLE): //case PROPERTY_CONTEXT_SW_OLE:			
-		case CombinedEnumContext(Application_Writer, Context_Form): //case PROPERTY_CONTEXT_SW_FORM:		
+        case 1:		
 		{
 			mpMtrWidth->SetMin( 2 );
 			mpMtrHeight->SetMin( 2 );
@@ -356,11 +388,8 @@ void PosSizePropertyPanel::HandleContextChange(
 			SetSizePixel(aSize);
 		}
 		break;
-        case CombinedEnumContext(Application_Calc, Context_Draw): //case PROPERTY_CONTEXT_SC_DRAW:
-        case CombinedEnumContext(Application_Draw, Context_Draw): //case PROPERTY_CONTEXT_SD_DRAW:
-		case CombinedEnumContext(Application_Calc, Context_Graphic): //case PROPERTY_CONTEXT_SC_GRAPHIC:
-        case CombinedEnumContext(Application_Draw, Context_TextObject): //case PROPERTY_CONTEXT_SD_TEXTOBJ:
-        case CombinedEnumContext(Application_Draw, Context_Graphic): //case PROPERTY_CONTEXT_SD_GRAPHIC:
+
+        case 2:
 		{
 			mpMtrWidth->SetMin( 1 );
 			mpMtrHeight->SetMin( 1 );
@@ -386,16 +415,8 @@ void PosSizePropertyPanel::HandleContextChange(
 			SetSizePixel(aSize);
 		}
 		break;
-		case CombinedEnumContext(Application_Calc, Context_Chart): //case PROPERTY_CONTEXT_SC_CHART:
-		case CombinedEnumContext(Application_Calc, Context_Form): //case PROPERTY_CONTEXT_SC_FORM:			
-		case CombinedEnumContext(Application_Calc, Context_Media): //case PROPERTY_CONTEXT_SC_MEDIA:		
-		case CombinedEnumContext(Application_Calc, Context_OLE): //case PROPERTY_CONTEXT_SC_OLE:
-		case CombinedEnumContext(Application_Calc, Context_Multiobj): //case PROPERTY_CONTEXT_SC_MULTIOBJ:	
-		case CombinedEnumContext(Application_Draw, Context_Media): //case PROPERTY_CONTEXT_SD_MEDIA:		
-		case CombinedEnumContext(Application_Draw, Context_Form): //case PROPERTY_CONTEXT_SD_FORM:			
-		case CombinedEnumContext(Application_Draw, Context_OLE): //case PROPERTY_CONTEXT_SD_OLE:
-		case CombinedEnumContext(Application_Draw, Context_3DObj): //case PROPERTY_CONTEXT_SD_3DOBJ:
-		case CombinedEnumContext(Application_Draw, Context_Multiobj): //case PROPERTY_CONTEXT_SD_MULTIOBJ:
+        
+		case 3:
 		{
 			mpMtrWidth->SetMin( 1 );
 			mpMtrHeight->SetMin( 1 );
@@ -815,58 +836,64 @@ void PosSizePropertyPanel::NotifyItemUpdate(
             break;
     }
 
-    const sal_Int32 nCombinedContext(maContext.GetCombinedContext());
+    const sal_Int32 nCombinedContext(maContext.GetCombinedContext_DI());
 
-	if(1 == rMarkList.GetMarkCount())
-	{
-		const SdrObject* pObj = rMarkList.GetMark(0)->GetMarkedSdrObj();
-		const SdrObjKind eKind((SdrObjKind)pObj->GetObjIdentifier());
+    switch (rMarkList.GetMarkCount())
+    {
+        case 0:
+            break;
 
-        if(((nCombinedContext == CombinedEnumContext(Application_Draw, Context_Draw) // mnContextId == PROPERTY_CONTEXT_SD_DRAW
-            || nCombinedContext == CombinedEnumContext(Application_Draw, Context_TextObject) // mnContextId == PROPERTY_CONTEXT_SD_TEXTOBJ
-            ) && OBJ_EDGE == eKind)
-            || OBJ_CAPTION == eKind)
-		// if((((mnContextId == PROPERTY_CONTEXT_SD_DRAW) || (mnContextId == PROPERTY_CONTEXT_SD_TEXTOBJ)) && OBJ_EDGE == eKind) || OBJ_CAPTION == eKind)
-		{
-			mpFtAngle->Disable();
-			mpMtrAngle->Disable();
-			mpDial->Disable();
-			mpFlipTbx->Disable();
-			mpFtFlip->Disable();
-		}
-	}
-	else
-	{
-		sal_uInt16 nMarkObj = 0;
-		bool isNoEdge = true;
-		while(rMarkList.GetMark(nMarkObj))
-		{
-			const SdrObject* pObj = rMarkList.GetMark(nMarkObj)->GetMarkedSdrObj();
-			const SdrObjKind eKind((SdrObjKind)pObj->GetObjIdentifier());
+        case 1:
+        {
+            const SdrObject* pObj = rMarkList.GetMark(0)->GetMarkedSdrObj();
+            const SdrObjKind eKind((SdrObjKind)pObj->GetObjIdentifier());
 
-            if(((nCombinedContext == CombinedEnumContext(Application_Draw, Context_Draw) // mnContextId == PROPERTY_CONTEXT_SD_DRAW
-                || nCombinedContext == CombinedEnumContext(Application_Draw, Context_TextObject) // mnContextId == PROPERTY_CONTEXT_SD_TEXTOBJ
-                ) && OBJ_EDGE == eKind) 
+            if(((nCombinedContext == CombinedEnumContext(Application_DrawImpress, Context_Draw) 
+                        || nCombinedContext == CombinedEnumContext(Application_DrawImpress, Context_TextObject)
+                        ) && OBJ_EDGE == eKind)
                 || OBJ_CAPTION == eKind)
-            // if((((mnContextId == PROPERTY_CONTEXT_SD_DRAW) || (mnContextId == PROPERTY_CONTEXT_SD_TEXTOBJ)) && OBJ_EDGE == eKind) ||OBJ_CAPTION == eKind)
-			{
-				isNoEdge = false;
-				break;
-			}
-			nMarkObj++;
-		}
-		if(!isNoEdge)
-		{
-			mpFtAngle->Disable();
-			mpMtrAngle->Disable();
-			mpDial->Disable();
-			mpFlipTbx->Disable();
-			mpFtFlip->Disable();
-		}
-	}
+            {
+                mpFtAngle->Disable();
+                mpMtrAngle->Disable();
+                mpDial->Disable();
+                mpFlipTbx->Disable();
+                mpFtFlip->Disable();
+            }
+            break;
+        }
+        
+        default:
+        {
+            sal_uInt16 nMarkObj = 0;
+            bool isNoEdge = true;
+            while(rMarkList.GetMark(nMarkObj))
+            {
+                const SdrObject* pObj = rMarkList.GetMark(nMarkObj)->GetMarkedSdrObj();
+                const SdrObjKind eKind((SdrObjKind)pObj->GetObjIdentifier());
 
-    if(nCombinedContext == CombinedEnumContext(Application_Draw, Context_TextObject)) // mnContextId == PROPERTY_CONTEXT_SD_TEXTOBJ
-    //if(mnContextId == PROPERTY_CONTEXT_SD_TEXTOBJ)
+                if(((nCombinedContext == CombinedEnumContext(Application_DrawImpress, Context_Draw)
+                            || nCombinedContext == CombinedEnumContext(Application_DrawImpress, Context_TextObject)
+                            ) && OBJ_EDGE == eKind) 
+                    || OBJ_CAPTION == eKind)
+                {
+                    isNoEdge = false;
+                    break;
+                }
+                nMarkObj++;
+            }
+            if(!isNoEdge)
+            {
+                mpFtAngle->Disable();
+                mpMtrAngle->Disable();
+                mpDial->Disable();
+                mpFlipTbx->Disable();
+                mpFtFlip->Disable();
+            }
+            break;
+        }
+    }
+
+    if(nCombinedContext == CombinedEnumContext(Application_DrawImpress, Context_TextObject))
 	{
 		mpFlipTbx->Disable();
 		mpFtFlip->Disable();

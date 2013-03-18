@@ -45,9 +45,6 @@
 using namespace css;
 using namespace cssu;
 
-namespace {
-    static const char* VerticalStackLayouterName("vertical-stack");
-}
 
 
 namespace sfx2 { namespace sidebar {
@@ -55,16 +52,15 @@ namespace sfx2 { namespace sidebar {
 Panel::Panel (
     const PanelDescriptor& rPanelDescriptor,
     Window* pParentWindow,
-    const ::boost::function<void(void)>& rDeckLayoutTrigger)
+    const ::boost::function<void(void)>& rDeckLayoutTrigger,
+    const ::boost::function<void(void)>& rShowMenuFunctor)
     : Window(pParentWindow),
       msPanelId(rPanelDescriptor.msId),
       mpTitleBar(new PanelTitleBar(
               rPanelDescriptor.msTitle,
               pParentWindow,
               this,
-              rPanelDescriptor.mbHasMenu
-                  ? ::boost::bind(&Panel::ShowMenu, this)
-                  : ::boost::function<void(void)>())),
+              rShowMenuFunctor)),
       mbIsTitleBarOptional(rPanelDescriptor.mbIsTitleBarOptional),
       mxElement(),
       mxPanelComponent(),
@@ -248,6 +244,7 @@ void Panel::ShowMenu (void)
     if (mxPanelComponent.is())
         mxPanelComponent->showMenu();
 }
+
 
 
 

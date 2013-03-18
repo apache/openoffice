@@ -105,6 +105,8 @@ Color Theme::GetColor (const ThemeItem eItem)
         return rTheme.maColors[nIndex];
     else if (eType == PT_Paint)
         return rTheme.maPaints[nIndex].GetColor();
+    else
+        return COL_WHITE;
 }
 
 

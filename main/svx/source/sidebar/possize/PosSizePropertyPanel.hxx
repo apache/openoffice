@@ -25,6 +25,7 @@
 #include <vcl/ctrl.hxx>
 #include <sfx2/sidebar/SidebarPanelBase.hxx>
 #include <sfx2/sidebar/ControllerItem.hxx>
+#include <sfx2/sidebar/IContextChangeReceiver.hxx>
 #include <boost/scoped_ptr.hpp>
 #include <svx/rectenum.hxx>
 #include <svl/poolitem.hxx>
@@ -45,7 +46,7 @@ class SidebarDialControl;
 
 class PosSizePropertyPanel
 :   public Control,
-    public ::sfx2::sidebar::SidebarPanelBase::ContextChangeReceiverInterface,
+    public ::sfx2::sidebar::IContextChangeReceiver,
     public ::sfx2::sidebar::ControllerItem::ItemUpdateReceiverInterface
 {
 public:

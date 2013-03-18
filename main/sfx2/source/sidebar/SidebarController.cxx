@@ -23,7 +23,6 @@
 
 #include "SidebarController.hxx"
 #include "Deck.hxx"
-#include "DeckConfiguration.hxx"
 #include "DeckTitleBar.hxx"
 #include "Panel.hxx"
 #include "SidebarPanel.hxx"
@@ -46,12 +45,16 @@
 #include <comphelper/componentcontext.hxx>
 #include <comphelper/namedvaluecollection.hxx>
 
+#include <com/sun/star/frame/XDispatchProvider.hpp>
+#include <com/sun/star/lang/XInitialization.hpp>
 #include <com/sun/star/ui/ContextChangeEventMultiplexer.hpp>
 #include <com/sun/star/ui/ContextChangeEventObject.hpp>
 #include <com/sun/star/ui/XUIElementFactory.hpp>
-#include <com/sun/star/lang/XInitialization.hpp>
+#include <com/sun/star/util/XURLTransformer.hpp>
+#include <com/sun/star/util/URL.hpp>
 
 #include <boost/bind.hpp>
+#include <boost/function.hpp>
 #include <boost/scoped_array.hpp>
 
 
@@ -82,7 +85,7 @@ SidebarController::SidebarController (
     SidebarDockingWindow* pParentWindow,
     const cssu::Reference<css::frame::XFrame>& rxFrame)
     : SidebarControllerInterfaceBase(m_aMutex),
-      mpCurrentConfiguration(),
+      mpCurrentDeck(),
       mpParentWindow(pParentWindow),
       mpTabBar(new TabBar(
               mpParentWindow,
@@ -118,6 +121,8 @@ SidebarController::SidebarController (
     Theme::GetPropertySet()->addPropertyChangeListener(
         A2S(""),
         static_cast<css::beans::XPropertyChangeListener*>(this));
+
+    SwitchToDeck(A2S("default"));
 }
 
 
@@ -145,10 +150,12 @@ void SAL_CALL SidebarController::disposing (void)
         mpParentWindow = NULL;
     }
 
-    if (mpCurrentConfiguration)
+    if (mpCurrentDeck)
     {
-        mpCurrentConfiguration->Dispose();
-        mpCurrentConfiguration.reset();
+        mpCurrentDeck->Dispose();
+        OSL_TRACE("deleting deck window subtree");
+        mpCurrentDeck->PrintWindowTree();
+        mpCurrentDeck.reset();
     }
 
     mpTabBar.reset();
@@ -177,13 +184,8 @@ void SAL_CALL SidebarController::disposing (const css::lang::EventObject& rEvent
     throw(cssu::RuntimeException)
 {
     (void)rEventObject;
-    
-    if (mpCurrentConfiguration)
-    {
-        mpCurrentConfiguration->Dispose();
-        mpCurrentConfiguration.reset();
-    }
-    mpTabBar.reset();
+
+    dispose();
 }
 
 
@@ -203,8 +205,8 @@ void SAL_CALL SidebarController::propertyChange (const css::beans::PropertyChang
 void SAL_CALL SidebarController::requestLayout (void)
     throw(cssu::RuntimeException)
 {
-    if (mpCurrentConfiguration && mpCurrentConfiguration->mpDeck!=NULL)
-        mpCurrentConfiguration->mpDeck->RequestLayout();
+    if (mpCurrentDeck)
+        mpCurrentDeck->RequestLayout();
     RestrictWidth();
 }
 
@@ -235,20 +237,15 @@ void SidebarController::NotifyResize (void)
     const sal_Int32 nHeight (pParentWindow->GetSizePixel().Height());
 
     // Place the deck.
-    Deck* pDeck = NULL;
-    if (mpCurrentConfiguration != NULL && ! mbIsDeckClosed)
+    if ( ! mbIsDeckClosed)
     {
-        pDeck = mpCurrentConfiguration->mpDeck;
-        if (pDeck == NULL)
-        {
-            OSL_ASSERT(mpCurrentConfiguration->mpDeck!=NULL);
-        }
+        OSL_ASSERT(mpCurrentDeck!=NULL);
     }
-    if (pDeck != NULL)
+    if (mpCurrentDeck)
     {
-        pDeck->SetPosSizePixel(0,0, nWidth-TabBar::GetDefaultWidth(), nHeight);
-        pDeck->Show();
-        pDeck->RequestLayout();
+        mpCurrentDeck->SetPosSizePixel(0,0, nWidth-TabBar::GetDefaultWidth(), nHeight);
+        mpCurrentDeck->Show();
+        mpCurrentDeck->RequestLayout();
     }
 
     // Place the tab bar.
@@ -256,9 +253,9 @@ void SidebarController::NotifyResize (void)
     mpTabBar->Show();
 
     // Determine if the closer of the deck can be shown.
-    if (pDeck!=NULL)
+    if (mpCurrentDeck)
     {
-        DeckTitleBar* pTitleBar = pDeck->GetTitleBar();
+        DeckTitleBar* pTitleBar = mpCurrentDeck->GetTitleBar();
         if (pTitleBar != NULL && pTitleBar->IsVisible())
             pTitleBar->SetCloserVisible(CanModifyChildWindowWidth());
     }
@@ -268,13 +265,13 @@ void SidebarController::NotifyResize (void)
     
     RestrictWidth();
 #ifdef DEBUG
-    if (mpCurrentConfiguration != NULL)
+    if (mpCurrentDeck)
     {
-        mpCurrentConfiguration->mpDeck->PrintWindowTree();
+        mpCurrentDeck->PrintWindowTree();
         sal_Int32 nPanelIndex (0);
-        for (::std::vector<Panel*>::const_iterator
-                 iPanel(mpCurrentConfiguration->maPanels.begin()),
-                 iEnd(mpCurrentConfiguration->maPanels.end());
+        for (SharedPanelContainer::const_iterator
+                 iPanel(mpCurrentDeck->GetPanels().begin()),
+                 iEnd(mpCurrentDeck->GetPanels().end());
              iPanel!=iEnd;
              ++iPanel,++nPanelIndex)
         {
@@ -319,10 +316,7 @@ void SidebarController::UpdateConfigurations (const Context& rContext)
 
         DeckDescriptor const* pDeckDescriptor = NULL;
         if ( ! bCurrentDeckMatches)
-        {
             pDeckDescriptor = ResourceManager::Instance().GetBestMatchingDeck(rContext, mxFrame);
-            msCurrentDeckId = pDeckDescriptor->msId;
-        }
         else
             pDeckDescriptor = ResourceManager::Instance().GetDeckDescriptor(msCurrentDeckId);
         if (pDeckDescriptor != NULL)
@@ -358,10 +352,10 @@ void SidebarController::SwitchToDeck (
     {
         // When the deck changes then destroy the deck and all panels
         // and create everything new.
-        if (mpCurrentConfiguration)
+        if (mpCurrentDeck)
         {
-            mpCurrentConfiguration->Dispose();
-            mpCurrentConfiguration.reset();
+            mpCurrentDeck->Dispose();
+            mpCurrentDeck.reset();
         }
 
         msCurrentDeckId = rDeckDescriptor.msId;
@@ -371,15 +365,15 @@ void SidebarController::SwitchToDeck (
     OpenDeck();
 
     // Determine the panels to display in the deck.
-    ResourceManager::IdContainer aPanelIds;
+    ResourceManager::PanelContextDescriptorContainer aPanelContextDescriptors;
     ResourceManager::Instance().GetMatchingPanels(
-        aPanelIds,
+        aPanelContextDescriptors,
         rContext,
         rDeckDescriptor.msId,
         mxFrame);
 
-    if (mpCurrentConfiguration
-        && ArePanelSetsEqual(mpCurrentConfiguration->maPanels, aPanelIds))
+    if (mpCurrentDeck
+        && ArePanelSetsEqual(mpCurrentDeck->GetPanels(), aPanelContextDescriptors))
     {
         // Requested set of panels is identical to the current set of
         // panels => Nothing to do.
@@ -387,78 +381,70 @@ void SidebarController::SwitchToDeck (
     }
     
     // Provide a configuration and Deck object.
-    if ( ! mpCurrentConfiguration)
+    if ( ! mpCurrentDeck)
     {
-        mpCurrentConfiguration.reset(new DeckConfiguration);
-        mpCurrentConfiguration->mpDeck = new Deck(
-            rDeckDescriptor,
-            mpParentWindow,
-            ::boost::bind(&SidebarController::CloseDeck, this));
+        mpCurrentDeck.reset(
+            new Deck(
+                rDeckDescriptor,
+                mpParentWindow,
+                ::boost::bind(&SidebarController::CloseDeck, this)));
     }
-
+    if ( ! mpCurrentDeck)
+        return;
+        
     // Update the panel list.
-    const sal_Int32 nNewPanelCount (aPanelIds.size());
-    ::std::vector<Panel*> aNewPanels;
-    ::std::vector<Panel*> aCurrentPanels;
-    if (mpCurrentConfiguration)
-        aCurrentPanels.swap(mpCurrentConfiguration->maPanels);
+    const sal_Int32 nNewPanelCount (aPanelContextDescriptors.size());
+    SharedPanelContainer aNewPanels;
+    const SharedPanelContainer& rCurrentPanels (mpCurrentDeck->GetPanels());
     aNewPanels.resize(nNewPanelCount);
     sal_Int32 nWriteIndex (0);
     bool bHasPanelSetChanged (false);
     for (sal_Int32 nReadIndex=0; nReadIndex<nNewPanelCount; ++nReadIndex)
     {
-        const OUString& rsPanelId (aPanelIds[nReadIndex]);
+        const ResourceManager::PanelContextDescriptor& rPanelContexDescriptor (
+            aPanelContextDescriptors[nReadIndex]);
 
         // Find the corresponding panel among the currently active
         // panels.
-        ::std::vector<Panel*>::iterator iPanel (::std::find_if(
-                aCurrentPanels.begin(),
-                aCurrentPanels.end(),
-                ::boost::bind(&Panel::HasIdPredicate, _1, ::boost::cref(rsPanelId))));
-        if (iPanel != aCurrentPanels.end())
+        SharedPanelContainer::const_iterator iPanel (::std::find_if(
+                rCurrentPanels.begin(),
+                rCurrentPanels.end(),
+                ::boost::bind(&Panel::HasIdPredicate, _1, ::boost::cref(rPanelContexDescriptor.msId))));
+        if (iPanel != rCurrentPanels.end())
         {
-            // Panel already exists in current configuration.  Move it
-            // to new configuration.
+            // Panel already exists in current deck.  Reuse it.
             aNewPanels[nWriteIndex] = *iPanel;
-            aCurrentPanels[::std::distance(aCurrentPanels.begin(), iPanel)] = NULL;
-            OSL_TRACE("    reusing panel %s", S2A(rsPanelId));
+            OSL_TRACE("    reusing panel %s", S2A(rPanelContexDescriptor.msId));
         }
         else
         {
             // Panel does not yet exist.  Create it.
             aNewPanels[nWriteIndex] = CreatePanel(
-                rsPanelId,
-                mpCurrentConfiguration->mpDeck->GetPanelParentWindow());
-            OSL_TRACE("    creating panel %s", S2A(rsPanelId));
+                rPanelContexDescriptor.msId,
+                mpCurrentDeck->GetPanelParentWindow(),
+                rPanelContexDescriptor.msMenuCommand);
+            OSL_TRACE("    creating panel %s", S2A(rPanelContexDescriptor.msId));
             bHasPanelSetChanged = true;
         }
         if (aNewPanels[nWriteIndex] != NULL)
+        {
+            // Depending on the context we have to collapse the panel.
+            aNewPanels[nWriteIndex]->SetExpanded(rPanelContexDescriptor.mbIsInitiallyVisible);
+
             ++nWriteIndex;
+        }
+
     }
     aNewPanels.resize(nWriteIndex);
 
-    // Destroy all panels that are not used in the new configuration.
-    for (::std::vector<Panel*>::const_iterator iPanel(aCurrentPanels.begin()),iEnd(aCurrentPanels.end());
-         iPanel!=iEnd;
-         ++iPanel)
-    {
-        if (*iPanel != NULL)
-        {
-            (*iPanel)->Dispose();
-            OSL_TRACE("    releasing panel %s", S2A((*iPanel)->GetId()));
-            bHasPanelSetChanged = true;
-        }
-    }
-
     // Activate the deck and the new set of panels.
-    mpCurrentConfiguration->maPanels.swap(aNewPanels);
-    mpCurrentConfiguration->mpDeck->SetPosSizePixel(
+    mpCurrentDeck->SetPosSizePixel(
         0,
         0,
         mpParentWindow->GetSizePixel().Width()-TabBar::GetDefaultWidth(),
         mpParentWindow->GetSizePixel().Height());
-    mpCurrentConfiguration->mpDeck->SetPanels(mpCurrentConfiguration->maPanels);
-    mpCurrentConfiguration->mpDeck->Show();
+    mpCurrentDeck->SetPanels(aNewPanels);
+    mpCurrentDeck->Show();
 
     // Tell the tab bar to highlight the button associated with the
     // deck.
@@ -474,11 +460,11 @@ void SidebarController::SwitchToDeck (
 
 
 bool SidebarController::ArePanelSetsEqual (
-    const ::std::vector<Panel*>& rCurrentPanels,
-    const ResourceManager::IdContainer& rRequestedPanelIds)
+    const SharedPanelContainer& rCurrentPanels,
+    const ResourceManager::PanelContextDescriptorContainer& rRequestedPanels)
 {
     OSL_TRACE("current panel list:");
-    for (std::vector<Panel*>::const_iterator
+    for (SharedPanelContainer::const_iterator
              iPanel(rCurrentPanels.begin()),
              iEnd(rCurrentPanels.end());
          iPanel!=iEnd;
@@ -488,22 +474,22 @@ bool SidebarController::ArePanelSetsEqual (
     }
 
     OSL_TRACE("requested panels: ");
-    for (ResourceManager::IdContainer::const_iterator
-             iId(rRequestedPanelIds.begin()),
-             iEnd(rRequestedPanelIds.end());
+    for (ResourceManager::PanelContextDescriptorContainer::const_iterator
+             iId(rRequestedPanels.begin()),
+             iEnd(rRequestedPanels.end());
          iId!=iEnd;
          ++iId)
     {
-        OSL_TRACE("    panel %s", S2A(*iId));
+        OSL_TRACE("    panel %s", S2A(iId->msId));
     }
 
-    if (rCurrentPanels.size() != rRequestedPanelIds.size())
+    if (rCurrentPanels.size() != rRequestedPanels.size())
         return false;
     for (sal_Int32 nIndex=0,nCount=rCurrentPanels.size(); nIndex<nCount; ++nIndex)
     {
         if (rCurrentPanels[nIndex] == NULL)
             return false;
-        if ( ! rCurrentPanels[nIndex]->GetId().equals(rRequestedPanelIds[nIndex]))
+        if ( ! rCurrentPanels[nIndex]->GetId().equals(rRequestedPanels[nIndex].msId))
             return false;
     }
     return true;
@@ -512,13 +498,14 @@ bool SidebarController::ArePanelSetsEqual (
 
 
 
-Panel* SidebarController::CreatePanel (
+SharedPanel SidebarController::CreatePanel (
     const OUString& rsPanelId,
-    ::Window* pParentWindow)
+    ::Window* pParentWindow,
+    const OUString& rsMenuCommand)
 {
     const PanelDescriptor* pPanelDescriptor = ResourceManager::Instance().GetPanelDescriptor(rsPanelId);
     if (pPanelDescriptor == NULL)
-        return NULL;
+        return SharedPanel();
 
 #ifdef DEBUG
     // Prevent the panel not being created in the same memory of an old panel.
@@ -527,16 +514,18 @@ Panel* SidebarController::CreatePanel (
 #endif
     
     // Create the panel which is the parent window of the UIElement.
-    Panel* pPanel = new Panel(
+    SharedPanel pPanel (new Panel(
         *pPanelDescriptor,
         pParentWindow,
-        ::boost::bind(&Deck::RequestLayout,mpCurrentConfiguration->mpDeck));
+        ::boost::bind(&Deck::RequestLayout, mpCurrentDeck.get()),
+        rsMenuCommand.getLength()>0
+            ? ::boost::bind(&SidebarController::ShowDetailMenu,this,rsMenuCommand)
+            : ::boost::function<void(void)>()));
 
     // Create the XUIElement.
     Reference<ui::XUIElement> xUIElement (CreateUIElement(
             pPanel->GetComponentInterface(),
-            pPanelDescriptor->msImplementationURL,
-            pPanel));
+            pPanelDescriptor->msImplementationURL));
     if (xUIElement.is())
     {
         // Initialize the panel and add it to the active deck.
@@ -544,8 +533,7 @@ Panel* SidebarController::CreatePanel (
     }
     else
     {
-        delete pPanel;
-        pPanel = NULL;
+        pPanel.reset();
     }
 
     return pPanel;
@@ -556,11 +544,8 @@ Panel* SidebarController::CreatePanel (
 
 Reference<ui::XUIElement> SidebarController::CreateUIElement (
     const Reference<awt::XWindowPeer>& rxWindow,
-    const ::rtl::OUString& rsImplementationURL,
-    Panel* pPanel)
+    const ::rtl::OUString& rsImplementationURL)
 {
-    (void)pPanel;
-    
     try
     {
         const ::comphelper::ComponentContext aComponentContext (::comphelper::getProcessServiceFactory());
@@ -651,6 +636,33 @@ void SidebarController::ShowPopupMenu (
     Rectangle aBox (rButtonBox);
     aBox.Move(mpTabBar->GetPosPixel().X(), 0);
     pMenu->Execute(mpParentWindow, aBox, POPUPMENU_EXECUTE_DOWN);
+}
+
+
+
+
+void SidebarController::ShowDetailMenu (const ::rtl::OUString& rsMenuCommand) const
+{
+    try
+    {
+        util::URL aURL;
+        aURL.Complete = rsMenuCommand;
+
+        const ::comphelper::ComponentContext aComponentContext (::comphelper::getProcessServiceFactory());
+        const Reference<util::XURLTransformer> xParser (
+            aComponentContext.createComponent("com.sun.star.util.URLTransformer"),
+            UNO_QUERY_THROW);
+        xParser->parseStrict(aURL);
+        Reference<frame::XDispatchProvider> xProvider (mxFrame, UNO_QUERY_THROW);
+        Reference<frame::XDispatch> xDispatch (xProvider->queryDispatch(aURL, OUString(), 0));
+        if (xDispatch.is())
+            xDispatch->dispatch(aURL, Sequence<beans::PropertyValue>());
+    }
+    catch(Exception& rException)
+    {
+        OSL_TRACE("caught exception: %s",
+            OUStringToOString(rException.Message, RTL_TEXTENCODING_ASCII_US).getStr());
+    }
 }
 
 
@@ -778,8 +790,8 @@ void SidebarController::CloseDeck (void)
             mnSavedSidebarWidth = SetChildWindowWidth(TabBar::GetDefaultWidth());
         mpParentWindow->SetStyle(mpParentWindow->GetStyle() & ~WB_SIZEABLE);
         
-        if (mpCurrentConfiguration && mpCurrentConfiguration->mpDeck!=NULL)
-            mpCurrentConfiguration->mpDeck->Hide();
+        if (mpCurrentDeck)
+            mpCurrentDeck->Hide();
             
         NotifyResize();
     }
@@ -795,8 +807,8 @@ void SidebarController::OpenDeck (void)
         mbIsDeckClosed = false;
         SetChildWindowWidth(mnSavedSidebarWidth);
 
-        if (mpCurrentConfiguration && mpCurrentConfiguration->mpDeck!=NULL)
-            mpCurrentConfiguration->mpDeck->Show();
+        if (mpCurrentDeck)
+            mpCurrentDeck->Show();
 
         NotifyResize();
     }

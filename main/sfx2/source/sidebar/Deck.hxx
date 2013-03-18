@@ -22,8 +22,10 @@
 #ifndef SFX_SIDEBAR_DECK_HXX
 #define SFX_SIDEBAR_DECK_HXX
 
-#include "vcl/window.hxx"
-#include "vcl/image.hxx"
+#include "Panel.hxx"
+
+#include <vcl/window.hxx>
+#include <vcl/image.hxx>
 #include <com/sun/star/ui/LayoutSize.hpp>
 
 #include <boost/function.hpp>
@@ -36,7 +38,6 @@ namespace css = ::com::sun::star;
 namespace sfx2 { namespace sidebar {
 
 class DeckDescriptor;
-class Panel;
 class DeckTitleBar;
 
 
@@ -59,7 +60,8 @@ public:
     DeckTitleBar* GetTitleBar (void) const;
     Rectangle GetContentArea (void) const;
     ::rtl::OUString GetIconURL (const bool bIsHighContrastModeActive) const;
-    void SetPanels (const ::std::vector<Panel*>& rPanels);
+    void SetPanels (const SharedPanelContainer& rPanels);
+    const SharedPanelContainer& GetPanels (void) const;
     void RequestLayout (void);
     ::Window* GetPanelParentWindow (void);
     
@@ -87,8 +89,7 @@ private:
     Image maIcon;
     const ::rtl::OUString msIconURL;
     const ::rtl::OUString msHighContrastIconURL;
-    typedef ::std::vector<Panel*> PanelContainer;
-    PanelContainer maPanels;
+    SharedPanelContainer maPanels;
     ::boost::scoped_ptr<DeckTitleBar> mpTitleBar;
     ::boost::scoped_ptr<Window> mpScrollClipWindow;
     ::boost::scoped_ptr<ScrollContainerWindow> mpScrollContainer;

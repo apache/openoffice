@@ -32,10 +32,9 @@ PanelDescriptor::PanelDescriptor (void)
       msId(),
       msDeckId(),
       msHelpURL(),
-      maContextMatcher(),
+      maContextList(),
       msImplementationURL(),
       mnOrderIndex(10000), // Default value as defined in Sidebar.xcs
-      mbHasMenu(false),
       mbWantsCanvas(false)
 {
 }
@@ -49,10 +48,9 @@ PanelDescriptor::PanelDescriptor (const PanelDescriptor& rOther)
       msId(rOther.msId),
       msDeckId(rOther.msDeckId),
       msHelpURL(rOther.msHelpURL),
-      maContextMatcher(rOther.maContextMatcher),
+      maContextList(rOther.maContextList),
       msImplementationURL(rOther.msImplementationURL),
       mnOrderIndex(rOther.mnOrderIndex),
-      mbHasMenu(rOther.mbHasMenu),
       mbWantsCanvas(rOther.mbWantsCanvas)
 {
 }

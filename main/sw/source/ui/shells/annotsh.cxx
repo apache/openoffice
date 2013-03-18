@@ -105,6 +105,7 @@
 #include <svx/dialogs.hrc>
 
 #include <svx/svxids.hrc>
+#include <sfx2/sidebar/EnumContext.hxx>
 #include <svl/itempool.hxx>
 #include <editeng/outliner.hxx>
 #include <editeng/editeng.hxx>
@@ -151,6 +152,7 @@ SwAnnotationShell::SwAnnotationShell( SwView& r )
 {
 	SwWrtShell &rSh = rView.GetWrtShell();
 	SetPool(rSh.GetAttrPool().GetSecondaryPool());
+    SfxShell::SetContextName(sfx2::sidebar::EnumContext::GetContextName(sfx2::sidebar::EnumContext::Context_Annotation));
 }
 
 SwAnnotationShell::~SwAnnotationShell()

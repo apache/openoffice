@@ -51,6 +51,7 @@
 
 #include <svx/dialogs.hrc>
 #include <sfx2/viewfrm.hxx>
+#include <sfx2/sidebar/EnumContext.hxx>
 #include <svx/svdopage.hxx>
 #include <toolkit/helper/vclunohelper.hxx>
 #include <svx/xlndsit.hxx>
@@ -777,8 +778,8 @@ sal_Bool View::SdrBeginTextEdit(
 		bOnlyOneView, bGrabFocus);
 
     ContextChangeEventMultiplexer::NotifyContextChange(
-        GetViewShell()->GetViewShellBase().GetController(),
-        ::sfx2::sidebar::EnumContext::Context_Text);
+        &GetViewShell()->GetViewShellBase(),
+        ::sfx2::sidebar::EnumContext::Context_DrawText);
 
 	if (bReturn)
 	{
@@ -843,13 +844,14 @@ SdrEndTextEditKind View::SdrEndTextEdit(sal_Bool bDontDeleteReally )
 	GetViewShell()->GetViewShellBase().GetEventMultiplexer()->MultiplexEvent(
         sd::tools::EventMultiplexerEvent::EID_END_TEXT_EDIT,
         (void*)xObj.get() );
-    ContextChangeEventMultiplexer::NotifyContextChange(
-        GetViewShell()->GetViewShellBase().GetController(),
-        ::sfx2::sidebar::EnumContext::Context_Default);
 
 	if( xObj.is() )
 	{
-		SdPage* pPage = dynamic_cast< SdPage* >( xObj->GetPage() );
+        ContextChangeEventMultiplexer::NotifyContextChange(
+            &GetViewShell()->GetViewShellBase(),
+            ::sfx2::sidebar::EnumContext::Context_Default);
+
+        SdPage* pPage = dynamic_cast< SdPage* >( xObj->GetPage() );
 		if( pPage )
 			pPage->onEndTextEdit( xObj.get() );
 	}

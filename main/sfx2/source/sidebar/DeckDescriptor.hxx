@@ -23,7 +23,7 @@
 #define SFX_SIDEBAR_DECK_DESCRIPTOR_HXX
 
 #include "sfx2/sidebar/EnumContext.hxx"
-#include "ContextMatcher.hxx"
+#include "ContextList.hxx"
 #include <boost/shared_ptr.hpp>
 
 
@@ -38,7 +38,7 @@ public:
     ::rtl::OUString msHighContrastIconURL;
     ::rtl::OUString msHelpURL;
     ::rtl::OUString msHelpText;
-    ContextMatcher maContextMatcher;
+    ContextList maContextList;
     bool mbIsEnabled;
     sal_Int32 mnOrderIndex;
     

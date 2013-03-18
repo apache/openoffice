@@ -30,13 +30,34 @@
 namespace css = ::com::sun::star;
 namespace cssu = ::com::sun::star::uno;
 
+class SfxViewShell;
+
 /** Convenience frontend for com::sun::star::ui::ContextChangeEventMultiplexer
 */
 class SVX_DLLPUBLIC ContextChangeEventMultiplexer
 {
 public:
+    /** Notify the activation of a context.
+        @param rxController
+            This controller is used to determine the module (ie
+            application like Writer or Calc).
+        @param eContext
+            The activated context.
+    */
     static void NotifyContextChange (
         const cssu::Reference<css::frame::XController>& rxController,
+        const ::sfx2::sidebar::EnumContext::Context eContext);
+
+    /** Notify the activation of a context.
+        @param pViewShell
+            This view shell is used to determine the module (ie
+            application like Writer or Calc).  When <NULL/> then no
+            notification is made.
+        @param eContext
+            The activated context.
+    */
+    static void NotifyContextChange (
+        SfxViewShell* pViewShell,
         const ::sfx2::sidebar::EnumContext::Context eContext);
 
 private:

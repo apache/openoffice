@@ -95,31 +95,14 @@ const DeckDescriptor* ResourceManager::GetBestMatchingDeck (
 {
     ReadLegacyAddons(rxFrame);
     
-    sal_Int32 nBestMatch (EnumContext::NoMatch);
-    const DeckContainer::const_iterator iEnd (maDecks.end());
-    DeckContainer::const_iterator iBestDeck (iEnd);
-    
-    for (DeckContainer::const_iterator iDeck(maDecks.begin());
+    for (DeckContainer::const_iterator iDeck(maDecks.begin()), iEnd(maDecks.end());
          iDeck!=iEnd;
          ++iDeck)
     {
-        const sal_Int32 nMatch (iDeck->maContextMatcher.EvaluateMatch(rContext));
-        if (nMatch < nBestMatch)
-        {
-            // Found a better matching deck.
-            nBestMatch = nMatch;
-            iBestDeck = iDeck;
-            if (nBestMatch == EnumContext::OptimalMatch)
-            {
-                // We will not find a better match.
-                break;
-            }
-        }
+        if (iDeck->maContextList.GetMatch(rContext) != NULL)
+            return &*iDeck;
     }
-    if (iBestDeck != iEnd)
-        return &*iBestDeck;
-    else
-        return NULL;
+    return NULL;
 }
 
 
@@ -197,7 +180,7 @@ const ResourceManager::IdContainer& ResourceManager::GetMatchingDecks (
          ++iDeck)
     {
         const DeckDescriptor& rDeckDescriptor (*iDeck);
-        if (rDeckDescriptor.maContextMatcher.EvaluateMatch(rContext) != EnumContext::NoMatch)
+        if (rDeckDescriptor.maContextList.GetMatch(rContext) != NULL)
             aOrderedIds.insert(::std::multimap<sal_Int32,OUString>::value_type(
                     rDeckDescriptor.mnOrderIndex,
                     rDeckDescriptor.msId));
@@ -218,15 +201,15 @@ const ResourceManager::IdContainer& ResourceManager::GetMatchingDecks (
 
 
 
-const ResourceManager::IdContainer& ResourceManager::GetMatchingPanels (
-    IdContainer& rPanelIds,
+const ResourceManager::PanelContextDescriptorContainer& ResourceManager::GetMatchingPanels (
+    PanelContextDescriptorContainer& rPanelIds,
     const Context& rContext,
     const ::rtl::OUString& rsDeckId,
     const Reference<frame::XFrame>& rxFrame)
 {
     ReadLegacyAddons(rxFrame);
 
-    ::std::multimap<sal_Int32,OUString> aOrderedIds;
+    ::std::multimap<sal_Int32,PanelContextDescriptor> aOrderedIds;
     for (PanelContainer::const_iterator
              iPanel(maPanels.begin()),
              iEnd(maPanels.end());
@@ -235,13 +218,22 @@ const ResourceManager::IdContainer& ResourceManager::GetMatchingPanels (
     {
         const PanelDescriptor& rPanelDescriptor (*iPanel);
         if (rPanelDescriptor.msDeckId.equals(rsDeckId))
-            if (rPanelDescriptor.maContextMatcher.EvaluateMatch(rContext) != EnumContext::NoMatch)
-                aOrderedIds.insert(::std::multimap<sal_Int32,OUString>::value_type(
+        {
+            const ContextList::Entry* pEntry = rPanelDescriptor.maContextList.GetMatch(rContext);
+            if (pEntry != NULL)
+            {
+                PanelContextDescriptor aPanelContextDescriptor;
+                aPanelContextDescriptor.msId = rPanelDescriptor.msId;
+                aPanelContextDescriptor.msMenuCommand = pEntry->msMenuCommand;
+                aPanelContextDescriptor.mbIsInitiallyVisible = pEntry->mbIsInitiallyVisible;
+                aOrderedIds.insert(::std::multimap<sal_Int32,PanelContextDescriptor>::value_type(
                         rPanelDescriptor.mnOrderIndex,
-                        rPanelDescriptor.msId));
+                        aPanelContextDescriptor));
+            }
+        }
     }
 
-    for (::std::multimap<sal_Int32,OUString>::const_iterator
+    for (::std::multimap<sal_Int32,PanelContextDescriptor>::const_iterator
              iId(aOrderedIds.begin()),
              iEnd(aOrderedIds.end());
          iId!=iEnd;
@@ -293,7 +285,10 @@ void ResourceManager::ReadDeckList (void)
         rDeckDescriptor.mnOrderIndex = ::comphelper::getINT32(
             aDeckNode.getNodeValue("OrderIndex"));
 
-        ReadContextMatcher(aDeckNode.openNode("ContextMatchers"), rDeckDescriptor.maContextMatcher);
+        ReadContextList(
+            aDeckNode,
+            rDeckDescriptor.maContextList,
+            OUString());
     }
 
     // When there where invalid nodes then we have to adapt the size
@@ -341,11 +336,15 @@ void ResourceManager::ReadPanelList (void)
             aPanelNode.getNodeValue("ImplementationURL"));
         rPanelDescriptor.mnOrderIndex = ::comphelper::getINT32(
             aPanelNode.getNodeValue("OrderIndex"));
-        rPanelDescriptor.mbHasMenu = ::comphelper::getBOOL(
-            aPanelNode.getNodeValue("HasMenu"));
         rPanelDescriptor.mbWantsCanvas = ::comphelper::getBOOL(
             aPanelNode.getNodeValue("WantsCanvas"));
-        ReadContextMatcher(aPanelNode.openNode("ContextMatchers"), rPanelDescriptor.maContextMatcher);
+        const OUString sDefaultMenuCommand (::comphelper::getString(
+                aPanelNode.getNodeValue("DefaultMenuCommand")));
+        
+        ReadContextList(
+            aPanelNode,
+            rPanelDescriptor.maContextList,
+            sDefaultMenuCommand);
     }
 
     // When there where invalid nodes then we have to adapt the size
@@ -357,41 +356,132 @@ void ResourceManager::ReadPanelList (void)
 
 
 
-void ResourceManager::ReadContextMatcher (
-    const ::utl::OConfigurationNode& rNode,
-    ContextMatcher& rContextMatcher) const
+void ResourceManager::ReadContextList (
+    const ::utl::OConfigurationNode& rParentNode,
+    ContextList& rContextList,
+    const OUString& rsDefaultMenuCommand) const
 {
-    const Sequence<OUString> aMatcherNodeNames (rNode.getNodeNames());
-    const sal_Int32 nMatcherCount (aMatcherNodeNames.getLength());
-    for (sal_Int32 nMatcherIndex(0); nMatcherIndex<nMatcherCount; ++nMatcherIndex)
-    {
-        const ::utl::OConfigurationNode aMatcherNode (rNode.openNode(aMatcherNodeNames[nMatcherIndex]));
-        
-        const OUString sApplicationName (
-            ::comphelper::getString(aMatcherNode.getNodeValue("Application")));
-        const bool bIsContextListNegated (
-            ::comphelper::getBOOL(aMatcherNode.getNodeValue("IsContextListNegated")));
+    const Any aValue = rParentNode.getNodeValue("ContextList");
+    Sequence<OUString> aValues;
+    sal_Int32 nCount;
+    if (aValue >>= aValues)
+        nCount = aValues.getLength();
+    else
+        nCount = 0;
 
-        // Read the context names.
-        Any aContextListValue (aMatcherNode.getNodeValue("ContextList"));
-        Sequence<OUString> aContextList;
-        ::std::vector<OUString> aContextVector;
-        if (aContextListValue >>= aContextList)
+    for (sal_Int32 nIndex=0; nIndex<nCount; ++nIndex)
+    {
+        const OUString sValue (aValues[nIndex]);
+        sal_Int32 nCharacterIndex (0);
+        const OUString sApplicationName (sValue.getToken(0, ',', nCharacterIndex).trim());
+        if (nCharacterIndex < 0)
         {
-            aContextVector.reserve(aContextList.getLength());
-            ::std::copy(
-                ::comphelper::stl_begin(aContextList),
-                ::comphelper::stl_end(aContextList),
-                ::std::back_inserter(aContextVector));
+            if (sApplicationName.getLength() == 0)
+            {
+                // This is a valid case: in the XML file the separator
+                // was used as terminator.  Using it in the last line
+                // creates an additional but empty entry.
+                break;
+            }
+            else
+            {
+                OSL_ASSERT("expecting three or four values per ContextList entry, separated by comma");
+                continue;
+            }
         }
-        // Empty list defaults to "any".
-        if (aContextVector.empty())
-            aContextVector.push_back(A2S("any"));
         
-        rContextMatcher.AddMatcher(
-                sApplicationName,
-                aContextVector,
-                bIsContextListNegated);
+        const OUString sContextName (sValue.getToken(0, ',', nCharacterIndex).trim());
+        if (nCharacterIndex < 0)
+        {
+            OSL_ASSERT("expecting three or four values per ContextList entry, separated by comma");
+            continue;
+        }
+
+        const OUString sInitialState (sValue.getToken(0, ',', nCharacterIndex).trim());
+
+        // The fourth argument is optional.
+        const OUString sMenuCommandOverride (
+            nCharacterIndex<0
+                ? OUString()
+                : sValue.getToken(0, ',', nCharacterIndex).trim());
+        const OUString sMenuCommand (
+            sMenuCommandOverride.getLength()>0
+                ? (sMenuCommandOverride.equalsAscii("none")
+                    ? OUString()
+                    : sMenuCommandOverride)
+                : rsDefaultMenuCommand);
+
+        EnumContext::Application eApplication (EnumContext::GetApplicationEnum(sApplicationName));
+        bool bApplicationIsDrawAndImpress = false;
+        if (eApplication == EnumContext::Application_None
+            && !sApplicationName.equals(EnumContext::GetApplicationName(EnumContext::Application_None)))
+        {
+            // Handle some special names: abbreviations that make
+            // context descriptions more readable.
+            if (sApplicationName.equalsAscii("Writer"))
+                eApplication = EnumContext::Application_Writer;
+            else if (sApplicationName.equalsAscii("Calc"))
+                eApplication = EnumContext::Application_Calc;
+            else if (sApplicationName.equalsAscii("Draw"))
+                eApplication = EnumContext::Application_Draw;
+            else if (sApplicationName.equalsAscii("Impress"))
+                eApplication = EnumContext::Application_Impress;
+            else if (sApplicationName.equalsAscii("DrawImpress"))
+            {
+                // A special case among the special names:  it is
+                // common to use the same context descriptions for
+                // both Draw and Impress.  This special case helps to
+                // avoid duplication in the .xcu file.
+                bApplicationIsDrawAndImpress = true;
+            }
+            else
+            {
+                OSL_ASSERT("application name not recognized");
+                continue;
+            }
+        }
+        
+        const EnumContext::Context eContext (EnumContext::GetContextEnum(sContextName));
+        if (eContext == EnumContext::Context_Unknown)
+        {
+            OSL_ASSERT("context name not recognized");
+            continue;
+        }
+
+        bool bIsInitiallyVisible;
+        if (sInitialState.equalsAscii("visible"))
+            bIsInitiallyVisible = true;
+        else if (sInitialState.equalsAscii("hidden"))
+            bIsInitiallyVisible = false;
+        else
+        {
+            OSL_ASSERT("unrecognized state");
+            continue;
+        }
+
+        if (bApplicationIsDrawAndImpress)
+        {
+            // Add the context description for both Draw and Impress. 
+            rContextList.AddContextDescription(
+                Context(
+                    EnumContext::GetApplicationName(EnumContext::Application_Draw),
+                    EnumContext::GetContextName(eContext)),
+                bIsInitiallyVisible,
+                sMenuCommand);
+            rContextList.AddContextDescription(
+                Context(
+                    EnumContext::GetApplicationName(EnumContext::Application_Impress),
+                    EnumContext::GetContextName(eContext)),
+                bIsInitiallyVisible,
+                sMenuCommand);
+        }
+        else
+            rContextList.AddContextDescription(
+                Context(
+                    EnumContext::GetApplicationName(eApplication),
+                    EnumContext::GetContextName(eContext)),
+                bIsInitiallyVisible,
+                sMenuCommand);
     }
 }
 
@@ -443,7 +533,7 @@ void ResourceManager::ReadLegacyAddons (const Reference<frame::XFrame>& rxFrame)
         rDeckDescriptor.msHighContrastIconURL = rDeckDescriptor.msIconURL;
         rDeckDescriptor.msHelpURL = ::comphelper::getString(aChildNode.getNodeValue("HelpURL"));
         rDeckDescriptor.msHelpText = rDeckDescriptor.msTitle;
-        rDeckDescriptor.maContextMatcher.AddMatcher(sModuleName, A2S("any"));
+        rDeckDescriptor.maContextList.AddContextDescription(Context(sModuleName, A2S("any")), true, OUString());
         rDeckDescriptor.mbIsEnabled = true;
 
         PanelDescriptor& rPanelDescriptor (maPanels[nPanelWriteIndex++]);
@@ -452,7 +542,7 @@ void ResourceManager::ReadLegacyAddons (const Reference<frame::XFrame>& rxFrame)
         rPanelDescriptor.msId = rsNodeName;
         rPanelDescriptor.msDeckId = rsNodeName;
         rPanelDescriptor.msHelpURL = ::comphelper::getString(aChildNode.getNodeValue("HelpURL"));
-        rPanelDescriptor.maContextMatcher.AddMatcher(sModuleName, A2S("any"));
+        rPanelDescriptor.maContextList.AddContextDescription(Context(sModuleName, A2S("any")), true, OUString());
         rPanelDescriptor.msImplementationURL = rsNodeName;            
     }
 

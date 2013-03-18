@@ -50,6 +50,7 @@
 #include <com/sun/star/ui/dialogs/XExecutableDialog.hpp>
 
 #include <svx/xtable.hxx>
+#include <sfx2/sidebar/EnumContext.hxx>
 
 #include "swundo.hxx"
 #include "wrtsh.hxx"
@@ -388,6 +389,8 @@ SwDrawShell::SwDrawShell(SwView &_rView) :
 {
 	SetHelpId(SW_DRAWSHELL);
 	SetName(String::CreateFromAscii("Draw"));
+
+    SfxShell::SetContextName(sfx2::sidebar::EnumContext::GetContextName(sfx2::sidebar::EnumContext::Context_Draw));
 }
 
 /*************************************************************************
@@ -491,7 +494,3 @@ void SwDrawShell::GetFormTextState(SfxItemSet& rSet)
 		pDrView->GetAttributes( rSet );
 	}
 }
-
-
-
-

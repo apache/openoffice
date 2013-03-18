@@ -64,7 +64,7 @@ Achtung: Ab sofort sind in diesem File keine C++-Kommentare (//) mehr
 #define FN_EXTRA2		        (SID_SW_START + 2200)
 #define FN_PARAM2				(SID_SW_START + 2400)
 #define FN_NOTES				(SID_SW_START + 2500)
-#define FN_SIDEBAR				(SID_SW_START + 2550)
+#define FN_SIDEBAR              (SID_SW_START + 2550)
 
  /* More accurately, this range should be from FN_EXTRA2 to FN_PARAM2-1, but
  * FN_NUMBER_NEWSTART comes from FN_FORMAT2, and FN_PARAM_LINK_DISPLAY_NAME
@@ -1264,6 +1264,9 @@ Achtung: Ab sofort sind in diesem File keine C++-Kommentare (//) mehr
 
 #define FN_SIDEBAR_PROPERTY             (FN_SIDEBAR)
 #define SID_ATTR_SWPAGE_COLUMN          (FN_SIDEBAR_PROPERTY + 0)
+
+#define FN_PROPERTY_SIDEBAR_GRAFIC_DLG  (FN_SIDEBAR + 0)
+
 
 //Member-Ids fuer Fill/SetVariable an Items
 #define 		MID_STYLE	    0xe0

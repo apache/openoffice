@@ -28,8 +28,10 @@
 #include "tools/AsynchronousCall.hxx"
 #include <sfx2/viewfac.hxx>
 #include <sfx2/viewsh.hxx>
+#include <sfx2/sidebar/EnumContext.hxx>
 #include "TabControl.hxx"
 #include "pres.hxx"
+#include <svx/sidebar/SelectionChangeHandler.hxx>
 #include <com/sun/star/lang/XEventListener.hpp>
 #include <com/sun/star/scanner/XScannerManager.hpp>
 
@@ -431,6 +433,10 @@ private:
     */
     bool mbIsInSwitchPage;
 
+    /** Listen for selection changes and broadcast context changes for the sidebar.
+    */
+    ::rtl::Reference<svx::sidebar::SelectionChangeHandler> mpSelectionChangeHandler;
+    
 	void Construct (DrawDocShell* pDocSh, PageKind ePageKind);
 
     /** Depending on the given request create a new page or duplicate an
@@ -484,6 +490,8 @@ private:
         const sal_uInt16 nSnapLineIndex,
         const Point& rMouseLocation);
 
+    ::sfx2::sidebar::EnumContext::Context GetContextForSelection (void) const;
+    
 	using ViewShell::Notify;
 	
 	::std::auto_ptr< AnnotationManager > mpAnnotationManager;

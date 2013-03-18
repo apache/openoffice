@@ -22,6 +22,8 @@
 #ifndef SFX_SIDEBAR_DECK_LAYOUTER_HXX
 #define SFX_SIDEBAR_DECK_LAYOUTER_HXX
 
+#include "Panel.hxx"
+
 #include <tools/gen.hxx>
 
 #include <com/sun/star/ui/LayoutSize.hpp>
@@ -46,7 +48,7 @@ class DeckLayouter
 public:
     static void LayoutDeck (
         const Rectangle aContentArea,
-        ::std::vector<Panel*>& rPanels,
+        SharedPanelContainer& rPanels,
         Window& pDeckTitleBar,
         Window& pScrollClipWindow,
         Window& pScrollContainer,
@@ -67,13 +69,13 @@ private:
     class LayoutItem
     {
     public:
-        Panel* mpPanel;
+        SharedPanel mpPanel;
         css::ui::LayoutSize maLayoutSize;
         sal_Int32 mnDistributedHeight;
         sal_Int32 mnWeight;
         sal_Int32 mnPanelIndex;
         
-        LayoutItem (void) : mpPanel(NULL),maLayoutSize(0,0,0),mnDistributedHeight(0),mnWeight(0),mnPanelIndex(0) {}
+        LayoutItem (void) : mpPanel(),maLayoutSize(0,0,0),mnDistributedHeight(0),mnWeight(0),mnPanelIndex(0) {}
     };
     static Rectangle LayoutPanels (
         const Rectangle aContentArea,

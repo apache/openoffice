@@ -170,8 +170,13 @@ $(eval $(call gb_Library_add_exception_objects,svx,\
     svx/source/mnuctrls/fntszctl \
     svx/source/mnuctrls/SmartTagCtl \
     svx/source/sidebar/ContextChangeEventMultiplexer \
+    svx/source/sidebar/EmptyPanel \
     svx/source/sidebar/PanelFactory \
-    svx/source/sidebar/ColorPanel \
+    svx/source/sidebar/SelectionAnalyzer \
+    svx/source/sidebar/SelectionChangeHandler \
+    svx/source/sidebar/debug/ColorPanel \
+    svx/source/sidebar/debug/ContextPanel \
+    svx/source/sidebar/debug/NotYetImplementedPanel \
     svx/source/sidebar/text/SvxSBFontNameBox \
     svx/source/sidebar/text/TextPropertyPanel \
     svx/source/sidebar/area/AreaPropertyPanel \

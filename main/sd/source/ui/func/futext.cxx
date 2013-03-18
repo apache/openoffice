@@ -37,7 +37,6 @@
 #include <svl/intitem.hxx>
 #include <svx/svdotext.hxx>
 #include <svx/svdogrp.hxx>
-#include <svx/sidebar/ContextChangeEventMultiplexer.hxx>
 #include <editeng/flditem.hxx>
 #include <svl/style.hxx>
 #include <svx/svdpagv.hxx>
@@ -49,7 +48,6 @@
 #include <svx/svdoutl.hxx>
 #include <svx/svxids.hrc>
 #include <sfx2/docfile.hxx>
-#include <sfx2/sidebar/EnumContext.hxx>
 #include <comphelper/processfactory.hxx>
 #include <editeng/outlobj.hxx>
 #include <svtools/langtab.hxx>

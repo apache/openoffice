@@ -139,4 +139,5 @@ $(eval $(call gb_Package_add_file,sfx2_inc,inc/sfx2/sidebar/EnumContext.hxx,sfx2
 $(eval $(call gb_Package_add_file,sfx2_inc,inc/sfx2/sidebar/ControlFactory.hxx,sfx2/sidebar/ControlFactory.hxx))
 $(eval $(call gb_Package_add_file,sfx2_inc,inc/sfx2/sidebar/Theme.hxx,sfx2/sidebar/Theme.hxx))
 $(eval $(call gb_Package_add_file,sfx2_inc,inc/sfx2/sidebar/ILayoutableWindow.hxx,sfx2/sidebar/ILayoutableWindow.hxx))
+$(eval $(call gb_Package_add_file,sfx2_inc,inc/sfx2/sidebar/IContextChangeReceiver.hxx,sfx2/sidebar/IContextChangeReceiver.hxx))
 
