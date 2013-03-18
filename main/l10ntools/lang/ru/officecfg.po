@@ -417,7 +417,7 @@ msgstr "Прекращ"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.business.Tables.products.Fields.leadtime.Name
 msgid  "LeadTime"
-msgstr "СрокВыпол"
+msgstr "СрокВыполнения"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.business.Tables.products.Fields.leadtime.ShortName
 msgid  "LeadTime"
@@ -477,11 +477,11 @@ msgstr "Город"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.business.Tables.suppliers.Fields.postalcode.Name
 msgid  "PostalCode"
-msgstr "Индекс"
+msgstr "ПочтовыйИндекс"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.business.Tables.suppliers.Fields.postalcode.ShortName
 msgid  "PostalCode"
-msgstr "Индекс"
+msgstr "ПочтовыйИндекс"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.business.Tables.suppliers.Fields.stateorprovince.Name
 msgid  "StateOrProvince"
@@ -525,7 +525,7 @@ msgstr "УсловОпл"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.business.Tables.suppliers.Fields.emailaddress.Name
 msgid  "EmailAddress"
-msgstr "АдресЭлПочты"
+msgstr "АдресЭлектроннойПочты"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.business.Tables.suppliers.Fields.emailaddress.ShortName
 msgid  "EmailAddr"
@@ -593,11 +593,11 @@ msgstr "Суффикс"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.business.Tables.mailinglist.Fields.title.Name
 msgid  "Title"
-msgstr "Заголовок"
+msgstr "Должность"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.business.Tables.mailinglist.Fields.title.ShortName
 msgid  "Title"
-msgstr "Заголовок"
+msgstr "Должность"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.business.Tables.mailinglist.Fields.organizationname.Name
 msgid  "OrganizationName"
@@ -665,7 +665,7 @@ msgstr "НомФакса"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.business.Tables.mailinglist.Fields.mobilenumber.Name
 msgid  "MobileNumber"
-msgstr "НомерМобТелефона"
+msgstr "НомерМобильногоТелефона"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.business.Tables.mailinglist.Fields.mobilenumber.ShortName
 msgid  "MobileNo"
@@ -673,7 +673,7 @@ msgstr "НомМоб"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.business.Tables.mailinglist.Fields.emailaddress.Name
 msgid  "EmailAddress"
-msgstr "АдресЭлПочты"
+msgstr "АдресЭлектроннойПочты"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.business.Tables.mailinglist.Fields.emailaddress.ShortName
 msgid  "EmailAddr"
@@ -681,19 +681,19 @@ msgstr "АдрЭлПочт"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.business.Tables.mailinglist.Fields.birthdate.Name
 msgid  "Birthdate"
-msgstr "ДатаРождения"
+msgstr "Дата рождения"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.business.Tables.mailinglist.Fields.birthdate.ShortName
 msgid  "Birthdate"
-msgstr "Дата рождения"
+msgstr "ДатаРождения"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.business.Tables.mailinglist.Fields.nationality.Name
 msgid  "Nationality"
-msgstr "Национал"
+msgstr "Национальность"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.business.Tables.mailinglist.Fields.nationality.ShortName
 msgid  "Nationality"
-msgstr "Национальность"
+msgstr "Национал"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.business.Tables.mailinglist.Fields.dateupdated.Name
 msgid  "DateUpdated"
@@ -705,7 +705,7 @@ msgstr "ДатаОбновл"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.business.Tables.mailinglist.Fields.datejoined.Name
 msgid  "DateJoined"
-msgstr "ДатаПодпис"
+msgstr "ДатаПодписки"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.business.Tables.mailinglist.Fields.datejoined.ShortName
 msgid  "DateJoined"
@@ -737,7 +737,7 @@ msgstr "ДатаОплЗал"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.business.Tables.mailinglist.Fields.duesamount.Name
 msgid  "DuesAmount"
-msgstr "СуммЧленВзн"
+msgstr "СуммаЧленскогоВзноса"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.business.Tables.mailinglist.Fields.duesamount.ShortName
 msgid  "DuesAmount"
@@ -861,7 +861,7 @@ msgstr "НомФакса"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.business.Tables.contacts.Fields.mobilenumber.Name
 msgid  "MobileNumber"
-msgstr "НомерМобильногоТелефона"
+msgstr "НомерМобТелефона"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.business.Tables.contacts.Fields.mobilenumber.ShortName
 msgid  "MobileNo"
@@ -869,7 +869,7 @@ msgstr "НомМоб"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.business.Tables.contacts.Fields.emailaddress.Name
 msgid  "EmailAddress"
-msgstr "АдресЭлектроннойПочты"
+msgstr "АдресЭлПочты"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.business.Tables.contacts.Fields.emailaddress.ShortName
 msgid  "EmailAddr"
@@ -885,7 +885,7 @@ msgstr "Приветствие"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.business.Tables.contacts.Fields.birthdate.Name
 msgid  "Birthdate"
-msgstr "ДатаРождения"
+msgstr "Дата рождения"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.business.Tables.contacts.Fields.birthdate.ShortName
 msgid  "Birthdate"
@@ -933,7 +933,7 @@ msgstr "ИнтКонт"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.business.Tables.contacts.Fields.childrennames.Name
 msgid  "ChildrenNames"
-msgstr "Имена детей"
+msgstr "ИменаДетей"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.business.Tables.contacts.Fields.childrennames.ShortName
 msgid  "ChildName"
@@ -1057,7 +1057,7 @@ msgstr "НомФакса"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.business.Tables.customers.Fields.mobilenumber.Name
 msgid  "MobileNumber"
-msgstr "НомерМобТелефона"
+msgstr "НомерМобильногоТелефона"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.business.Tables.customers.Fields.mobilenumber.ShortName
 msgid  "MobileNo"
@@ -1093,11 +1093,11 @@ msgstr "Работники"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.business.Tables.employees.Fields.employeeID.Name
 msgid  "EmployeeID"
-msgstr "КодСотр"
+msgstr "КодСотрудника"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.business.Tables.employees.Fields.employeeID.ShortName
 msgid  "EmployeeID"
-msgstr "КодСотрудника"
+msgstr "КодСотр"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.business.Tables.employees.Fields.firstname.Name
 msgid  "FirstName"
@@ -1165,7 +1165,7 @@ msgstr "АдрЭлПочт"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.business.Tables.employees.Fields.extension.Name
 msgid  "Extension"
-msgstr "ВнутрНомер"
+msgstr "ВнутреннийНомер"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.business.Tables.employees.Fields.extension.ShortName
 msgid  "Extension"
@@ -1229,7 +1229,7 @@ msgstr "НомФакса"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.business.Tables.employees.Fields.mobilenumber.Name
 msgid  "MobileNumber"
-msgstr "НомерМобильногоТелефона"
+msgstr "НомерМобТелефона"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.business.Tables.employees.Fields.mobilenumber.ShortName
 msgid  "MobileNo"
@@ -1245,7 +1245,7 @@ msgstr "ДатаРождения"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.business.Tables.employees.Fields.datehired.Name
 msgid  "DateHired"
-msgstr "ДатаПринРаб"
+msgstr "ДатаПринятияНаРаботу"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.business.Tables.employees.Fields.datehired.ShortName
 msgid  "DateHired"
@@ -1277,7 +1277,7 @@ msgstr "Расценки"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.business.Tables.employees.Fields.deductions.Name
 msgid  "Deductions"
-msgstr "НалогИз"
+msgstr "НалоговоеИзъятие"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.business.Tables.employees.Fields.deductions.ShortName
 msgid  "Deductions"
@@ -1345,11 +1345,11 @@ msgstr "КодКлиента"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.business.Tables.orders.Fields.employeeID.Name
 msgid  "EmployeeID"
-msgstr "КодСотр"
+msgstr "КодСотрудника"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.business.Tables.orders.Fields.employeeID.ShortName
 msgid  "EmployeeID"
-msgstr "КодСотрудника"
+msgstr "КодСотр"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.business.Tables.orders.Fields.orderdate.Name
 msgid  "OrderDate"
@@ -1385,7 +1385,7 @@ msgstr "ДогДата"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.business.Tables.orders.Fields.shipname.Name
 msgid  "ShipName"
-msgstr "ОбДост"
+msgstr "ОбъектДоставки"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.business.Tables.orders.Fields.shipname.ShortName
 msgid  "ShipName"
@@ -1401,7 +1401,7 @@ msgstr "АдресДост"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.business.Tables.orders.Fields.shipcity.Name
 msgid  "ShipCity"
-msgstr "ГорДост"
+msgstr "ГородДоставки"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.business.Tables.orders.Fields.shipcity.ShortName
 msgid  "ShipCity"
@@ -1441,11 +1441,11 @@ msgstr "ТелДост"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.business.Tables.orders.Fields.shipdate.Name
 msgid  "ShipDate"
-msgstr "ДатаДост"
+msgstr "ДатаДоставки"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.business.Tables.orders.Fields.shipdate.ShortName
 msgid  "ShipDate"
-msgstr "ДатаДоставки"
+msgstr "ДатаДост"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.business.Tables.orders.Fields.shippingmethodID.Name
 msgid  "ShippingMethodID"
@@ -1457,11 +1457,11 @@ msgstr "КодМетДост"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.business.Tables.orders.Fields.freightcharge.Name
 msgid  "FreightCharge"
-msgstr "СтоимПерев"
+msgstr "СтоимостьПеревозки"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.business.Tables.orders.Fields.freightcharge.ShortName
 msgid  "FreightCharge"
-msgstr "СтоимостьПеревозки"
+msgstr "СтоимПерев"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.business.Tables.orders.Fields.salestaxrate.Name
 msgid  "SalesTaxRate"
@@ -1501,11 +1501,11 @@ msgstr "КодПродукта"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.business.Tables.orderdetails.Fields.datesold.Name
 msgid  "DateSold"
-msgstr "ДатаПрод"
+msgstr "ДатаПродажи"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.business.Tables.orderdetails.Fields.datesold.ShortName
 msgid  "DateSold"
-msgstr "ДатаПродажи"
+msgstr "ДатаПрод"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.business.Tables.orderdetails.Fields.quantity.Name
 msgid  "Quantity"
@@ -1541,7 +1541,7 @@ msgstr "Цена"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.business.Tables.orderdetails.Fields.salestax.Name
 msgid  "SalesTax"
-msgstr "НалогПрод"
+msgstr "НалогСПродаж"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.business.Tables.orderdetails.Fields.salestax.ShortName
 msgid  "SalesTax"
@@ -1781,11 +1781,11 @@ msgstr "Продавец"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.business.Tables.invoices.Fields.shipdate.Name
 msgid  "ShipDate"
-msgstr "ДатаДост"
+msgstr "ДатаДоставки"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.business.Tables.invoices.Fields.shipdate.ShortName
 msgid  "ShipDate"
-msgstr "ДатаДоставки"
+msgstr "ДатаДост"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.business.Tables.invoices.Fields.shippedto.Name
 msgid  "ShippedTo"
@@ -1797,11 +1797,11 @@ msgstr "ДоставленоВ"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.business.Tables.invoices.Fields.shippedvia.Name
 msgid  "ShippedVia"
-msgstr "ДостЧерез"
+msgstr "ДоставленоЧерез"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.business.Tables.invoices.Fields.shippedvia.ShortName
 msgid  "ShippedVia"
-msgstr "ДоставленоЧерез"
+msgstr "ДостЧерез"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.business.Tables.invoices.Fields.shippingcost.Name
 msgid  "ShippingCost"
@@ -1977,7 +1977,7 @@ msgstr "КодСобытия"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.business.Tables.events.Fields.eventname.Name
 msgid  "EventName"
-msgstr "НазвСоб"
+msgstr "НазваниеСобытия"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.business.Tables.events.Fields.eventname.ShortName
 msgid  "EventName"
@@ -2157,7 +2157,7 @@ msgstr "ВремяБрони"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.business.Tables.reservations.Fields.depositdue.Name
 msgid  "DepositDue"
-msgstr "СрокДепоз"
+msgstr "СрокДепозита"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.business.Tables.reservations.Fields.depositdue.ShortName
 msgid  "DepositDue"
@@ -2173,7 +2173,7 @@ msgstr "ОбщийСрок"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.business.Tables.reservations.Fields.amountpaid.Name
 msgid  "AmountPaid"
-msgstr "ОплСумма"
+msgstr "ОплаченнаяСумма"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.business.Tables.reservations.Fields.amountpaid.ShortName
 msgid  "AmountPaid"
@@ -2269,7 +2269,7 @@ msgstr "Расходы"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.business.Tables.expenses.Fields.expenseID.Name
 msgid  "ExpenseID"
-msgstr "КодРасх"
+msgstr "КодРасходов"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.business.Tables.expenses.Fields.expenseID.ShortName
 msgid  "ExpenseID"
@@ -2393,7 +2393,7 @@ msgstr "ДоставИз"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.business.Tables.deliveries.Fields.shippedvia.Name
 msgid  "ShippedVia"
-msgstr "ДостЧерез"
+msgstr "ДоставленоЧерез"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.business.Tables.deliveries.Fields.shippedvia.ShortName
 msgid  "ShippedVia"
@@ -2409,7 +2409,7 @@ msgstr "КодОтслеж"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.business.Tables.deliveries.Fields.shipdate.Name
 msgid  "ShipDate"
-msgstr "ДатаДост"
+msgstr "ДатаДоставки"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.business.Tables.deliveries.Fields.shipdate.ShortName
 msgid  "ShipDate"
@@ -2513,7 +2513,7 @@ msgstr "МестоПриемки"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.business.Tables.deliveries.Fields.pickupdate.Name
 msgid  "PickUpDate"
-msgstr "ДатаПрием"
+msgstr "ДатаПриемки"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.business.Tables.deliveries.Fields.pickupdate.ShortName
 msgid  "PickUpDate"
@@ -2605,7 +2605,7 @@ msgstr "КодОтд"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.business.Tables.assets.Fields.vendorID.Name
 msgid  "VendorID"
-msgstr "КодПоставщ"
+msgstr "КодПоставщика"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.business.Tables.assets.Fields.vendorID.ShortName
 msgid  "VendorID"
@@ -2661,7 +2661,7 @@ msgstr "ДатаПокуп"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.business.Tables.assets.Fields.datesold.Name
 msgid  "DateSold"
-msgstr "ДатаПрод"
+msgstr "ДатаПродажи"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.business.Tables.assets.Fields.datesold.ShortName
 msgid  "DateSold"
@@ -2669,11 +2669,11 @@ msgstr "ДатаПрод"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.business.Tables.assets.Fields.purchaseprice.Name
 msgid  "PurchasePrice"
-msgstr "Цена"
+msgstr "ПокупнаяЦена"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.business.Tables.assets.Fields.purchaseprice.ShortName
 msgid  "PurchPrice"
-msgstr "Цена"
+msgstr "ПокупЦена"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.business.Tables.assets.Fields.depreciationmethod.Name
 msgid  "DepreciationMethod"
@@ -2849,7 +2849,7 @@ msgstr "ОплатаУсл"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.business.Tables.transactions.Fields.taxable.Name
 msgid  "Taxable"
-msgstr "ОблагНал"
+msgstr "ОблагаемыйНалогом"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.business.Tables.transactions.Fields.taxable.ShortName
 msgid  "Taxable"
@@ -3085,7 +3085,7 @@ msgstr "ДатаРождения"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.private.Tables.addresses.Fields.sendcard.Name
 msgid  "SendCard"
-msgstr "ПослОткр"
+msgstr "ПослатьОткрытку"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.private.Tables.addresses.Fields.sendcard.ShortName
 msgid  "SendCard"
@@ -3257,11 +3257,11 @@ msgstr "МестоЗак"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.private.Tables.householdinventory.Fields.purchaseprice.Name
 msgid  "PurchasePrice"
-msgstr "Цена"
+msgstr "ПокупнаяЦена"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.private.Tables.householdinventory.Fields.purchaseprice.ShortName
 msgid  "PurchPrice"
-msgstr "Цена"
+msgstr "ПокупЦена"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.private.Tables.householdinventory.Fields.appraisedvalue.Name
 msgid  "AppraisedValue"
@@ -3273,7 +3273,7 @@ msgstr "ОценСтоим"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.private.Tables.householdinventory.Fields.insured.Name
 msgid  "Insured"
-msgstr "Застрах"
+msgstr "Застраховано"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.private.Tables.householdinventory.Fields.insured.ShortName
 msgid  "Insured"
@@ -3325,11 +3325,11 @@ msgstr "Источник"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.private.Tables.recipes.Fields.whichmeal.Name
 msgid  "WhichMeal"
-msgstr "ПринПищи"
+msgstr "ПринятиеПищи"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.private.Tables.recipes.Fields.whichmeal.ShortName
 msgid  "WhichMeal"
-msgstr "ПринятиеПищи"
+msgstr "ПринПищи"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.private.Tables.recipes.Fields.vegetarian.Name
 msgid  "Vegetarian"
@@ -3417,7 +3417,7 @@ msgstr "КодРастения"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.private.Tables.plants.Fields.commonname.Name
 msgid  "CommonName"
-msgstr "ОбщепрНазв"
+msgstr "ОбщепринятоеНазвание"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.private.Tables.plants.Fields.commonname.ShortName
 msgid  "CommonName"
@@ -3513,7 +3513,7 @@ msgstr "ДатаПерес"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.private.Tables.plants.Fields.datepruned.Name
 msgid  "DatePruned"
-msgstr "ДатаПодстр"
+msgstr "ДатаПодстрижки"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.private.Tables.plants.Fields.datepruned.ShortName
 msgid  "DatePruned"
@@ -3549,7 +3549,7 @@ msgstr "Фотографии"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.private.Tables.photographs.Fields.photoID.Name
 msgid  "PhotoID"
-msgstr "КодФото"
+msgstr "КодФотографии"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.private.Tables.photographs.Fields.photoID.ShortName
 msgid  "PhotoID"
@@ -3573,7 +3573,7 @@ msgstr "ДатаСъемки"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.private.Tables.photographs.Fields.timetaken.Name
 msgid  "TimeTaken"
-msgstr "ВремСъем"
+msgstr "ВремяСъемки"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.private.Tables.photographs.Fields.timetaken.ShortName
 msgid  "TimeTaken"
@@ -3581,7 +3581,7 @@ msgstr "ВремСъем"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.private.Tables.photographs.Fields.placetaken.Name
 msgid  "PlaceTaken"
-msgstr "МестСъемки"
+msgstr "МестоСъемки"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.private.Tables.photographs.Fields.placetaken.ShortName
 msgid  "PlaceTaken"
@@ -3629,7 +3629,7 @@ msgstr "Вспышка"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.private.Tables.photographs.Fields.printsize.Name
 msgid  "PrintSize"
-msgstr "РазмПечати"
+msgstr "РазмерПечати"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.private.Tables.photographs.Fields.printsize.ShortName
 msgid  "PrintSize"
@@ -3681,7 +3681,7 @@ msgstr "КолФото"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.private.Tables.miniaturefilms.Fields.colorfilm.Name
 msgid  "ColorFilm"
-msgstr "ЦвПленка"
+msgstr "ЦветнаяПленка"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.private.Tables.miniaturefilms.Fields.colorfilm.ShortName
 msgid  "ColorFilm"
@@ -3741,7 +3741,7 @@ msgstr "КодКоллек"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.private.Tables.dvdcollection.Fields.movietitle.Name
 msgid  "MovieTitle"
-msgstr "НазвФильма"
+msgstr "НазваниеФильма"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.private.Tables.dvdcollection.Fields.movietitle.ShortName
 msgid  "MovieTitle"
@@ -3805,7 +3805,7 @@ msgstr "Тема"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.private.Tables.dvdcollection.Fields.length.Name
 msgid  "Length"
-msgstr "Продолж"
+msgstr "Продолжительность"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.private.Tables.dvdcollection.Fields.length.ShortName
 msgid  "Length"
@@ -3865,7 +3865,7 @@ msgstr "КодКоллек"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.private.Tables.cdcollection.Fields.albumtitle.Name
 msgid  "AlbumTitle"
-msgstr "НазвАльб"
+msgstr "НазваниеАльбома"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.private.Tables.cdcollection.Fields.albumtitle.ShortName
 msgid  "AlbumTitle"
@@ -4085,7 +4085,7 @@ msgstr "Цена"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.private.Tables.library.Fields.covertype.Name
 msgid  "CoverType"
-msgstr "ТипПерепл"
+msgstr "ТипПереплета"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.private.Tables.library.Fields.covertype.ShortName
 msgid  "CoverType"
@@ -4153,7 +4153,7 @@ msgstr "ДатаРождения"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.private.Tables.authors.Fields.birthplace.Name
 msgid  "Birthplace"
-msgstr "МестоРожд"
+msgstr "МестоРождения"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.private.Tables.authors.Fields.birthplace.ShortName
 msgid  "Birthplace"
@@ -4457,7 +4457,7 @@ msgstr "ДатаПокуп"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.private.Tables.dietlog.Fields.whichmeal.Name
 msgid  "WhichMeal"
-msgstr "ПринПищи"
+msgstr "ПринятиеПищи"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.private.Tables.dietlog.Fields.whichmeal.ShortName
 msgid  "WhichMeal"
@@ -4481,7 +4481,7 @@ msgstr "ГрПрот"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.private.Tables.dietlog.Fields.gramsfat.Name
 msgid  "GramsFat"
-msgstr "ГраммЖир"
+msgstr "ГраммЖиров"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.private.Tables.dietlog.Fields.gramsfat.ShortName
 msgid  "GramsFat"
@@ -5357,7 +5357,7 @@ msgstr "Однозначные значения"
 
 #: registry/data/org/openoffice/Office/UI/DbuCommands.xcu#DbuCommands.UserInterface.Commands..uno:DBEdit.Label
 msgid  "Edit..."
-msgstr "Правка..."
+msgstr "Изменить..."
 
 #: registry/data/org/openoffice/Office/UI/DbuCommands.xcu#DbuCommands.UserInterface.Commands..uno:DBEditSqlView.Label
 msgid  "Edit in SQL View..."
@@ -5461,7 +5461,7 @@ msgstr "Открыть объект базы данных..."
 
 #: registry/data/org/openoffice/Office/UI/DbuCommands.xcu#DbuCommands.UserInterface.Commands..uno:DBQueryPreview.Label
 msgid  "Preview"
-msgstr "Просмотр"
+msgstr "Вид"
 
 #: registry/data/org/openoffice/Office/UI/DbuCommands.xcu#DbuCommands.UserInterface.Commands..uno:DBQueryRename.Label
 msgid  "Rename..."
@@ -6693,7 +6693,7 @@ msgstr ""
 
 #: registry/data/org/openoffice/Office/UI/DrawImpressCommands.xcu#DrawImpressCommands.UserInterface.Popups..uno:SlideShowMenu.Label
 msgid  "~Slide Show"
-msgstr "Демонстрация"
+msgstr "~Демонстрация"
 
 #: registry/data/org/openoffice/Office/UI/DrawImpressCommands.xcu#DrawImpressCommands.UserInterface.Popups..uno:SnapLinesMenu.Label
 msgid  "Guides"
@@ -9145,7 +9145,7 @@ msgstr "Исчезновение"
 
 #: registry/data/org/openoffice/Office/UI/Effects.xcu#Effects.UserInterface.Effects.ooo-exit-dissolve.Label
 msgid  "Dissolve"
-msgstr "Появление"
+msgstr "Плавное появление"
 
 #: registry/data/org/openoffice/Office/UI/Effects.xcu#Effects.UserInterface.Effects.ooo-exit-flash-once.Label
 msgid  "Flash Once"
@@ -9473,7 +9473,7 @@ msgstr "Вправо-вверх"
 
 #: registry/data/org/openoffice/Office/UI/Effects.xcu#Effects.UserInterface.Effects.ooo-motionpath-down.Label
 msgid  "Down"
-msgstr "Вниз"
+msgstr "вниз"
 
 #: registry/data/org/openoffice/Office/UI/Effects.xcu#Effects.UserInterface.Effects.ooo-motionpath-funnel.Label
 msgid  "Funnel"
@@ -9505,7 +9505,7 @@ msgstr "Вверх и вправо"
 
 #: registry/data/org/openoffice/Office/UI/Effects.xcu#Effects.UserInterface.Effects.ooo-motionpath-up.Label
 msgid  "Up"
-msgstr "Вверх"
+msgstr "вверх"
 
 #: registry/data/org/openoffice/Office/UI/Effects.xcu#Effects.UserInterface.Effects.ooo-motionpath-wave.Label
 msgid  "Wave"
@@ -12021,7 +12021,7 @@ msgstr ""
 
 #: registry/data/org/openoffice/Office/UI/GenericCommands.xcu#GenericCommands.UserInterface.Commands..uno:AlignCenter.Label
 msgid  "Centered"
-msgstr "По ~центру"
+msgstr "По центру"
 
 #: registry/data/org/openoffice/Office/UI/GenericCommands.xcu#GenericCommands.UserInterface.Commands..uno:AlignHorizontalCenter.Label
 msgid  "Align Center Horizontally"
@@ -12301,7 +12301,7 @@ msgstr "Правильный пятиугольник"
 
 #: registry/data/org/openoffice/Office/UI/GenericCommands.xcu#GenericCommands.UserInterface.Commands..uno:BasicShapes.quadrat.Label
 msgid  "Square"
-msgstr "Прямоугольная"
+msgstr "Квадрат"
 
 #: registry/data/org/openoffice/Office/UI/GenericCommands.xcu#GenericCommands.UserInterface.Commands..uno:BasicShapes.rectangle.Label
 msgid  "Rectangle"
@@ -12601,11 +12601,11 @@ msgstr ""
 
 #: registry/data/org/openoffice/Office/UI/GenericCommands.xcu#GenericCommands.UserInterface.Commands..uno:CommonAlignHorizontalDefault.Label
 msgid  "Default"
-msgstr "По у~молчанию"
+msgstr "По ~умолчанию"
 
 #: registry/data/org/openoffice/Office/UI/GenericCommands.xcu#GenericCommands.UserInterface.Commands..uno:CommonAlignJustified.Label
 msgid  "Justified"
-msgstr "По ~ширине"
+msgstr "По ширине"
 
 #: registry/data/org/openoffice/Office/UI/GenericCommands.xcu#GenericCommands.UserInterface.Commands..uno:CommonAlignLeft.Label
 msgid  "Left"

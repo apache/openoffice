@@ -361,7 +361,7 @@ msgstr "カテゴリ ID"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.business.Tables.products.Fields.supplierID.Name
 msgid  "SupplierID"
-msgstr "ベンダーID"
+msgstr "供給会社の ID"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.business.Tables.products.Fields.supplierID.ShortName
 msgid  "SupplierID"
@@ -485,7 +485,7 @@ msgstr "郵便番号"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.business.Tables.suppliers.Fields.stateorprovince.Name
 msgid  "StateOrProvince"
-msgstr "都道府県"
+msgstr "州または県"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.business.Tables.suppliers.Fields.stateorprovince.ShortName
 msgid  "StateProvi"
@@ -561,7 +561,7 @@ msgstr "局番"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.business.Tables.mailinglist.Fields.firstname.Name
 msgid  "FirstName"
-msgstr "名前"
+msgstr "ファーストネーム (名)"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.business.Tables.mailinglist.Fields.firstname.ShortName
 msgid  "FirstName"
@@ -577,7 +577,7 @@ msgstr "ミドルネーム"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.business.Tables.mailinglist.Fields.lastlame.Name
 msgid  "LastName"
-msgstr "苗字"
+msgstr "ラストネーム (姓)"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.business.Tables.mailinglist.Fields.lastlame.ShortName
 msgid  "LastName"
@@ -593,11 +593,11 @@ msgstr "接尾文字"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.business.Tables.mailinglist.Fields.title.Name
 msgid  "Title"
-msgstr "タイトル"
+msgstr "肩書き"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.business.Tables.mailinglist.Fields.title.ShortName
 msgid  "Title"
-msgstr "タイトル"
+msgstr "肩書き"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.business.Tables.mailinglist.Fields.organizationname.Name
 msgid  "OrganizationName"
@@ -901,7 +901,7 @@ msgstr "連絡先タイプ ID"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.business.Tables.contacts.Fields.maritalstatus.Name
 msgid  "MaritalStatus"
-msgstr "既婚未婚"
+msgstr "婚姻状態"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.business.Tables.contacts.Fields.maritalstatus.ShortName
 msgid  "MaritlStat"
@@ -1437,7 +1437,7 @@ msgstr "出荷先、電話番号"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.business.Tables.orders.Fields.shipphonenumber.ShortName
 msgid  "ShipPhonNo"
-msgstr "荷送人の電話番号"
+msgstr "出荷先、電話番号"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.business.Tables.orders.Fields.shipdate.Name
 msgid  "ShipDate"
@@ -2669,7 +2669,7 @@ msgstr "販売日"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.business.Tables.assets.Fields.purchaseprice.Name
 msgid  "PurchasePrice"
-msgstr "購入価格"
+msgstr "取得価額"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.business.Tables.assets.Fields.purchaseprice.ShortName
 msgid  "PurchPrice"
@@ -2777,7 +2777,7 @@ msgstr "金額"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.business.Tables.transactions.Fields.accountID.Name
 msgid  "AccountID"
-msgstr "口座ID"
+msgstr "アカウント ID"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.business.Tables.transactions.Fields.accountID.ShortName
 msgid  "AccountID"
@@ -2965,7 +2965,7 @@ msgstr "住所"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.private.Tables.addresses.Fields.addressID.Name
 msgid  "AddressID"
-msgstr "住所 ID"
+msgstr "住所ID"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.private.Tables.addresses.Fields.addressID.ShortName
 msgid  "AddressID"
@@ -12269,7 +12269,7 @@ msgstr "ひし形"
 
 #: registry/data/org/openoffice/Office/UI/GenericCommands.xcu#GenericCommands.UserInterface.Commands..uno:BasicShapes.ellipse.Label
 msgid  "Ellipse"
-msgstr "楕円形"
+msgstr "楕円"
 
 #: registry/data/org/openoffice/Office/UI/GenericCommands.xcu#GenericCommands.UserInterface.Commands..uno:BasicShapes.frame.Label
 msgid  "Frame"
@@ -13397,7 +13397,7 @@ msgstr "カラーパレット"
 
 #: registry/data/org/openoffice/Office/UI/GenericCommands.xcu#GenericCommands.UserInterface.Commands..uno:GoDown.Label
 msgid  "Move Down"
-msgstr "下へ"
+msgstr "下へ移動"
 
 #: registry/data/org/openoffice/Office/UI/GenericCommands.xcu#GenericCommands.UserInterface.Commands..uno:GoDownBlock.Label
 msgid  "Page Down"
@@ -13469,7 +13469,7 @@ msgstr "ファイルの始めまで選択"
 
 #: registry/data/org/openoffice/Office/UI/GenericCommands.xcu#GenericCommands.UserInterface.Commands..uno:GoUp.Label
 msgid  "Move Up"
-msgstr "上へ"
+msgstr "上へ移動"
 
 #: registry/data/org/openoffice/Office/UI/GenericCommands.xcu#GenericCommands.UserInterface.Commands..uno:GoUpBlock.Label
 msgid  "Page Up"

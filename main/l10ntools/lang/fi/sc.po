@@ -7005,7 +7005,7 @@ msgstr "Palauttaa a^b, kantaluvun a korotettuna potenssiin b."
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_POWER.2.String.Text
 msgid  "Base"
-msgstr "Kanta"
+msgstr "Kantaluku"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_POWER.3.String.Text
 msgid  "The base a of the power a^b."
@@ -8881,7 +8881,7 @@ msgstr "Kumulatiivinen"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_POISSON_DIST.7.String.Text
 msgid  "0 or FALSE calculates the probability density function. Any other value or TRUE or omitted calculates the cumulative distribution function."
-msgstr "0 tai EPÄTOSI laskee todennäköisyysjakauman tiheysfunktion. Mikä tahansa muu arvo, TOSI tai puuttuva arvo laskee kumulatiivisen jakaumafunktion."
+msgstr "0 tai EPÄTOSI laskee todennäköisyysjakauman tiheysfunktion. Mikä tahansa muu arvo, TOSI tai puuttuva arvo laskee kumulatiivisen todennäköisyyden."
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_NORM_DIST.1.String.Text
 msgid  "Values of the normal distribution."
@@ -8917,7 +8917,7 @@ msgstr "C"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_NORM_DIST.9.String.Text
 msgid  "0 or FALSE calculates the probability density function. Any other value or TRUE or omitted calculates the cumulative distribution function."
-msgstr "0 tai EPÄTOSI laskee todennäköisyysjakauman tiheysfunktion. Mikä tahansa muu arvo, TOSI tai puuttuva arvo laskee kumulatiivisen todennäköisyyden."
+msgstr "0 tai EPÄTOSI laskee todennäköisyysjakauman tiheysfunktion. Mikä tahansa muu arvo, TOSI tai puuttuva arvo laskee kumulatiivisen jakaumafunktion."
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_NORM_INV.1.String.Text
 msgid  "Values of the inverse normal distribution."
@@ -9005,7 +9005,7 @@ msgstr "Kumulatiivinen"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_LOG_NORM_DIST.9.String.Text
 msgid  "0 or FALSE calculates the probability density function. Any other value or TRUE or omitted calculates the cumulative distribution function."
-msgstr "0 tai EPÄTOSI laskee todennäköisyysjakauman tiheysfunktion. Mikä tahansa muu arvo, TOSI tai puuttuva arvo laskee kumulatiivisen todennäköisyyden."
+msgstr "0 tai EPÄTOSI laskee todennäköisyysjakauman tiheysfunktion. Mikä tahansa muu arvo, TOSI tai puuttuva arvo laskee kumulatiivisen jakaumafunktion."
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_LOG_INV.1.String.Text
 msgid  "Values of the inverse of the lognormal distribution."
@@ -12549,7 +12549,7 @@ msgstr "Huomautukset"
 
 #: source/ui/src/miscdlgs.src#RID_SCDLG_DELCONT.BTN_DELOBJECTS.CheckBox.Text
 msgid  "~Objects"
-msgstr "~Objektit"
+msgstr "Objektit"
 
 #: source/ui/src/miscdlgs.src#RID_SCDLG_DELCONT.FL_FRAME.FixedLine.Text
 msgid  "Selection"
@@ -13253,7 +13253,7 @@ msgstr "Tässä tiedostossa on tietoja rivin 8192 jälkeen, joten tiedostoa ei v
 
 #: source/ui/src/scerrors.src#RID_ERRHDLSC.SCERR_IMPORT_FILE_ROWCOL & ERRCODE_RES_MASK.String.Text
 msgid  "Format error discovered in the file in sub-document $(ARG1) at $(ARG2)(row,col)."
-msgstr "Tiedoston aliasiakirjan $(ARG1) kohdassa $(ARG2)(rivi,sarake) havaittiin muotovirhe."
+msgstr "Tiedoston aliasiakirjan $(ARG1) kohdassa $(ARG2)(rivi,sarake) havaittiin muotoiluvirhe."
 
 #: source/ui/src/scerrors.src#RID_ERRHDLSC.SCERR_IMPORT_FORMAT_ROWCOL & ERRCODE_RES_MASK.String.Text
 msgid  "File format error found at $(ARG1)(row,col)."

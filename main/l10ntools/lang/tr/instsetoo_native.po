@@ -874,7 +874,7 @@ msgstr "Bu özellik ve tüm alt özellikler yerel alan ağından çalışacak ş
 #: inc_openoffice/windows/msi_languages/UIText.ulf#OOO_UITEXT_10
 #, fuzzy
 msgid  "This feature will be installed to run from CD."
-msgstr "Bu özellik, CD'den çalışacak şekilde kurulacak."
+msgstr "Bu özellik CD'den çalışacak şekilde ayarlanacak."
 
 #: inc_openoffice/windows/msi_languages/UIText.ulf#OOO_UITEXT_11
 #, fuzzy
@@ -1104,7 +1104,7 @@ msgstr "Çalıştırılabilir programlar bağlanıyor"
 #: inc_openoffice/windows/msi_languages/ActionTe.ulf#OOO_ACTIONTEXT_7
 #, fuzzy
 msgid  "File: [1]"
-msgstr "Dosya: [1]"
+msgstr "Dosya:[1]"
 
 #: inc_openoffice/windows/msi_languages/ActionTe.ulf#OOO_ACTIONTEXT_8
 #, fuzzy
@@ -1124,7 +1124,7 @@ msgstr "Nitelenen ürünler aranıyor"
 #: inc_openoffice/windows/msi_languages/ActionTe.ulf#OOO_ACTIONTEXT_11
 #, fuzzy
 msgid  "Computing space requirements"
-msgstr "Disk boşluğu gereksinimi hesaplanıyor"
+msgstr "Boşluk gereksinimleri hesaplanıyor"
 
 #: inc_openoffice/windows/msi_languages/ActionTe.ulf#OOO_ACTIONTEXT_12
 #, fuzzy
@@ -1169,7 +1169,7 @@ msgstr "Çift dosyalar oluşturuluyor"
 #: inc_openoffice/windows/msi_languages/ActionTe.ulf#OOO_ACTIONTEXT_20
 #, fuzzy
 msgid  "File: [1],  Directory: [9],  Size: [6]"
-msgstr "Dosya:[1], Dizin:[9], Boyut: [6]"
+msgstr "Dosya: [1], Dizin: [9], Boyut: [6]"
 
 #: inc_openoffice/windows/msi_languages/ActionTe.ulf#OOO_ACTIONTEXT_21
 #, fuzzy
@@ -1319,7 +1319,7 @@ msgstr "Sınıf sunucuları kaydediliyor"
 #: inc_openoffice/windows/msi_languages/ActionTe.ulf#OOO_ACTIONTEXT_50
 #, fuzzy
 msgid  "Class ID: [1]"
-msgstr "Sınıf ID: [1]"
+msgstr "Sınıf Kimliği: [1]"
 
 #: inc_openoffice/windows/msi_languages/ActionTe.ulf#OOO_ACTIONTEXT_51
 #, fuzzy
@@ -1359,7 +1359,7 @@ msgstr "MIME bilgisi kaydediliyor"
 #: inc_openoffice/windows/msi_languages/ActionTe.ulf#OOO_ACTIONTEXT_58
 #, fuzzy
 msgid  "MIME Content Type: [1], Extension: [2]"
-msgstr "MIME İçerik Tip: [1], Uzantı: [2]"
+msgstr "MIME İçerik Tür: [1], Uzantı: [2]"
 
 #: inc_openoffice/windows/msi_languages/ActionTe.ulf#OOO_ACTIONTEXT_59
 #, fuzzy
@@ -1409,12 +1409,12 @@ msgstr "Çift olan dosyaları kaldırıyor"
 #: inc_openoffice/windows/msi_languages/ActionTe.ulf#OOO_ACTIONTEXT_68
 #, fuzzy
 msgid  "File: [1], Directory: [9]"
-msgstr "Dosya: [1], Dizin: [9]"
+msgstr "Dosya: [1[, Dizin: [9]"
 
 #: inc_openoffice/windows/msi_languages/ActionTe.ulf#OOO_ACTIONTEXT_69
 #, fuzzy
 msgid  "Updating environment strings"
-msgstr "Ortam dizileri güncelleniyor"
+msgstr "Çevresel dizgeler güncelleniyor"
 
 #: inc_openoffice/windows/msi_languages/ActionTe.ulf#OOO_ACTIONTEXT_70
 #, fuzzy
@@ -1459,7 +1459,7 @@ msgstr "INI dosyası girdileri kaldırılıyor"
 #: inc_openoffice/windows/msi_languages/ActionTe.ulf#OOO_ACTIONTEXT_78
 #, fuzzy
 msgid  "File: [1],  Section: [2],  Key: [3], Value: [4]"
-msgstr "Dosya: [1], Bölüm: [2], Anahtar: [3], Değer: [4]"
+msgstr "Dosya: [1[ Bölüm: [2], Anahtar: [3], Değer: [4]"
 
 #: inc_openoffice/windows/msi_languages/ActionTe.ulf#OOO_ACTIONTEXT_79
 #, fuzzy
@@ -1893,7 +1893,7 @@ msgstr "İptal"
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_26
 #, fuzzy
 msgid  "&Next >"
-msgstr "& İleri >"
+msgstr "&İleri >"
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_27
 #, fuzzy
@@ -1968,7 +1968,7 @@ msgstr "&Kullanıcı Adı:"
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_43
 #, fuzzy
 msgid  "&Next >"
-msgstr "& İleri >"
+msgstr "&İleri >"
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_45
 #, fuzzy
@@ -2038,7 +2038,7 @@ msgstr "<seçilen özellik yolu>"
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_60
 #, fuzzy
 msgid  "&Next >"
-msgstr "& İleri >"
+msgstr "&İleri >"
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_61
 #, fuzzy
@@ -2168,7 +2168,7 @@ msgstr "[INSTALLDIR]"
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_92
 #, fuzzy
 msgid  "Install [ProductName] to:"
-msgstr "[ProductName] kurulum dizini:"
+msgstr "[ProductName] ürününü buraya kur:"
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_93
 #, fuzzy
@@ -2537,7 +2537,7 @@ msgstr "Sisteminiz değiştirilmedi. Kurulumu başka zaman tamamlamak için kuru
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_187
 #, fuzzy
 msgid  "Click Finish to exit the wizard."
-msgstr "Sihirbazdan çıkmak için Bitir düğmesine tıklayın."
+msgstr "Sihirbazdan çıkmak için Bitir'e tıklayın"
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_188
 #, fuzzy
@@ -2557,7 +2557,7 @@ msgstr "{&TahomaBold10}Kurulum Sihirbazı Tamamlandı"
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_191
 #, fuzzy
 msgid  "The wizard was interrupted before [ProductName] could be completely installed."
-msgstr "[ProductName] tam olarak kurulmadan kurulum sihirbazı durduruldu."
+msgstr "Sihirbaz [ProductName]'i tam olarak kuramadan kesildi."
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_192
 #, fuzzy

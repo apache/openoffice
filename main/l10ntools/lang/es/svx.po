@@ -873,7 +873,7 @@ msgstr "Restaurar  "
 
 #: source/dialog/imapdlg.src#RID_SVXDLG_IMAP.TBX_IMAPDLG1.TBI_ACTIVE.ToolBoxItem.Text
 msgid  "Active"
-msgstr "Activo"
+msgstr "~Activo"
 
 #: source/dialog/imapdlg.src#RID_SVXDLG_IMAP.TBX_IMAPDLG1.TBI_MACRO.ToolBoxItem.Text
 msgid  "Macro..."
@@ -969,7 +969,7 @@ msgstr "~Contenido a la izquierda/derecha igual"
 
 #: source/dialog/hdft.src#RID_SVXPAGE_HEADER.FT_DIST.FixedText.Text
 msgid  "~Spacing"
-msgstr "Espacio"
+msgstr "Es~pacio"
 
 #: source/dialog/hdft.src#RID_SVXPAGE_HEADER.CB_DYNSPACING.CheckBox.Text
 msgid  "Use d~ynamic spacing"
@@ -981,7 +981,7 @@ msgstr "A~ltura"
 
 #: source/dialog/hdft.src#RID_SVXPAGE_HEADER.CB_HEIGHT_DYN.CheckBox.Text
 msgid  "~AutoFit height"
-msgstr "Ajus~te dinámico de la altura"
+msgstr "Ajuste dinámico de la altura"
 
 #: source/dialog/hdft.src#RID_SVXPAGE_HEADER.FL_FRAME.FixedLine.Text
 msgid  "Header"
@@ -1521,7 +1521,7 @@ msgstr "..."
 
 #: source/dialog/ctredlin.src#SID_REDLIN_FILTER_PAGE.CB_COMMENT.CheckBox.Text
 msgid  "Comment"
-msgstr "Descripción"
+msgstr "~Descripción"
 
 #: source/dialog/ctredlin.src#SID_REDLIN_FILTER_PAGE.STR_DATE_COMBOX.String.Text
 msgid  "Date Condition"
@@ -4097,7 +4097,7 @@ msgstr "Fuente de luz 8"
 
 #: source/engine3d/float3d.src#RID_SVXFLOAT_3D.BTN_LIGHT_COLOR.ButtonImage.QuickHelpText
 msgid  "Colors Dialog"
-msgstr "Seleccionar colores en diálogo de colores"
+msgstr "Seleccionar color en diálogo de colores"
 
 #: source/engine3d/float3d.src#RID_SVXFLOAT_3D.FT_AMBIENTLIGHT.FixedText.Text
 msgid  "~Ambient light"
@@ -4105,7 +4105,7 @@ msgstr "Luz ~ambiente"
 
 #: source/engine3d/float3d.src#RID_SVXFLOAT_3D.BTN_AMBIENT_COLOR.ButtonImage.QuickHelpText
 msgid  "Colors Dialog"
-msgstr "Seleccionar colores en diálogo de colores"
+msgstr "Seleccionar color en diálogo de colores"
 
 #: source/engine3d/float3d.src#RID_SVXFLOAT_3D.FL_LIGHT.FixedLine.Text
 msgid  "Illumination"
@@ -5453,7 +5453,7 @@ msgstr "Galería"
 
 #: source/gallery2/gallery.src#RID_SVXSTR_GALLERY_ACTUALIZE_PROGRESS.String.Text
 msgid  "Update"
-msgstr "Actualizar"
+msgstr "Actuali~zar"
 
 #: source/gallery2/gallery.src#RID_SVXSTR_GALLERY_FOPENERROR.String.Text
 msgid  "This file cannot be opened"
@@ -5565,11 +5565,11 @@ msgstr "Prop~iedades..."
 
 #: source/gallery2/gallery.src#RID_SVXMN_GALLERY2.MN_ADDMENU.MenuItem.Text
 msgid  "~Insert"
-msgstr "~Insertar"
+msgstr "~Añadir"
 
 #: source/gallery2/gallery.src#RID_SVXMN_GALLERY2.MN_ADDMENU.MN_ADD.MenuItem.Text
 msgid  "~Copy"
-msgstr "~Copia"
+msgstr "~Copiar"
 
 #: source/gallery2/gallery.src#RID_SVXMN_GALLERY2.MN_ADDMENU.MN_ADD_LINK.MenuItem.Text
 msgid  "Link"
@@ -5913,7 +5913,7 @@ msgstr "Tamaño relativo de fuente"
 
 #: source/items/svxitems.src#RID_ATTR_NAMES.SID_ATTR_CHAR_COLOR.ItemList.item
 msgid  "Font color"
-msgstr "Color de la fuente"
+msgstr "Color de fuente"
 
 #: source/items/svxitems.src#RID_ATTR_NAMES.SID_ATTR_CHAR_KERNING.ItemList.item
 msgid  "Kerning"
@@ -6013,7 +6013,7 @@ msgstr "Conformidad registro"
 
 #: source/items/svxitems.src#RID_ATTR_NAMES.SID_ATTR_BRUSH_CHAR.ItemList.item
 msgid  "Character background"
-msgstr "Fondo del carácter"
+msgstr "Fondo de carácter"
 
 #: source/items/svxitems.src#RID_ATTR_NAMES.SID_ATTR_CHAR_CJK_FONT.ItemList.item
 msgid  "Asian font"
@@ -7521,7 +7521,7 @@ msgstr "Modificar el tamaño de %1"
 
 #: source/svdraw/svdstr.src#STR_EditRotate.String.Text
 msgid  "Rotate %1"
-msgstr "Rodar %1"
+msgstr "Girar %1"
 
 #: source/svdraw/svdstr.src#STR_EditMirrorHori.String.Text
 msgid  "Flip %1 horizontal"
@@ -8277,15 +8277,15 @@ msgstr "Ancho máximo del marco"
 
 #: source/svdraw/svdstr.src#STR_ItemNam_TEXT_VERTADJUST.String.Text
 msgid  "Vertical text anchor"
-msgstr "Anclaje vertical del texto"
+msgstr "Anclaje de texto, vertical"
 
 #: source/svdraw/svdstr.src#STR_ItemNam_TEXT_HORZADJUST.String.Text
 msgid  "Horizontal text anchor"
-msgstr "Anclaje horizontal del texto"
+msgstr "Anclaje horizontal de texto"
 
 #: source/svdraw/svdstr.src#STR_ItemNam_TEXT_FITTOSIZE.String.Text
 msgid  "Fit text to frame"
-msgstr "Texto en marco"
+msgstr "Ajustar texto al marco"
 
 #: source/svdraw/svdstr.src#STR_ItemNam_GRAFRED.String.Text
 msgid  "Red"
@@ -8349,7 +8349,7 @@ msgstr "Nivel"
 
 #: source/svdraw/svdstr.src#STR_ItemNam_OBJECTNAME.String.Text
 msgid  "Object name"
-msgstr "Nombre del objeto"
+msgstr "Nombre de objeto"
 
 #: source/svdraw/svdstr.src#STR_ItemNam_STARTANGLE.String.Text
 msgid  "Start angle"

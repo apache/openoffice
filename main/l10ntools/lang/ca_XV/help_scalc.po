@@ -2545,7 +2545,7 @@ msgstr ""
 
 #: source/text/scalc/01/04060101.xhp#tit
 msgid  "Database Functions"
-msgstr "Funcions de bases de dades"
+msgstr "Funcions de base de dades"
 
 #: source/text/scalc/01/04060101.xhp#bm_id3148946
 msgid  "\<bookmark_value\>Function Wizard; databases\</bookmark_value\>      \<bookmark_value\>functions; database functions\</bookmark_value\>      \<bookmark_value\>databases; functions in $[officename] Calc\</bookmark_value\>"
@@ -5705,7 +5705,7 @@ msgstr ""
 
 #: source/text/scalc/01/04060105.xhp#par_id3146100.66
 msgid  "The arguments are either logical expressions themselves (TRUE, 1<5, 2+3=7, B8<10) that return logical values, or arrays (A1:C3) containing logical values."
-msgstr "Els arguments són expressions lògiques per si mateixes (CERT, 1<5, 2+3=7, B8<10) que retornen valors lògics o matrius (A1:C3) que contenen valors lògics."
+msgstr "Els arguments són expressions lògiques per si mateixes (CERT, 1<5, 2+3=7, B8<10) que retornen valors lògics, o bé matrius (A1:C3) que contenen valors lògics."
 
 #: source/text/scalc/01/04060105.xhp#par_id3150538.67
 msgid  "When a function expects a single value, but you entered a cell range, then the value from the cell range is taken that is in the same column or row as the formula."
@@ -12985,7 +12985,7 @@ msgstr ""
 
 #: source/text/scalc/01/04060112.xhp#tit
 msgid  "Add-in for Programming in $[officename] Calc"
-msgstr "Complement per programar a l'$[officename] Calc"
+msgstr "Complement de programació de l'$[officename] Calc"
 
 #: source/text/scalc/01/04060112.xhp#bm_id3151076
 msgid  "\<bookmark_value\>programming; add-ins\</bookmark_value\>\<bookmark_value\>shared libraries; programming\</bookmark_value\>\<bookmark_value\>external DLL functions\</bookmark_value\>\<bookmark_value\>functions; $[officename] Calc add-in DLL\</bookmark_value\>\<bookmark_value\>add-ins; for programming\</bookmark_value\>"
@@ -15581,7 +15581,7 @@ msgstr ""
 
 #: source/text/scalc/01/04060118.xhp#tit
 msgid  "Financial Functions Part Three"
-msgstr "Funcions financeres: tercera part"
+msgstr "Funcions financeres, tercera part"
 
 #: source/text/scalc/01/04060118.xhp#hd_id3146780.1
 msgid  "Financial Functions Part Three"
@@ -18001,7 +18001,7 @@ msgstr "Exemple"
 
 #: source/text/scalc/01/04060181.xhp#par_id3149953.19
 msgid  "The entries 2, 4, 6 and eight in the Value 1-4 fields are to be counted."
-msgstr "Les entrades 2, 4, 6 i vuit als camps de valor 1-4 s'han de comptar."
+msgstr "Les entrades 2, 4, 6 i vuit en el valor 1-4 s'han de comptar."
 
 #: source/text/scalc/01/04060181.xhp#par_id3154558.20
 msgid  "            \<item type=\"input\"\>=COUNT(2;4;6;\"eight\")\</item\> = 3. The count of numbers is therefore 3."
@@ -19517,7 +19517,7 @@ msgstr ""
 
 #: source/text/scalc/01/04060184.xhp#par_id9282509
 msgid  "Returns 0 if no numeric value and no error was encountered in the cell range(s) passed as cell reference(s). Text cells are ignored by MIN() and MAX(). The functions MINA() and MAXA() return 0 if no value (numeric or text) and no error was encountered. Passing a literal string argument to MIN() or MAX(), e.g. MIN(\"string\"), still results in an error."
-msgstr "Retorna 0 si no es troba cap valor numèric o cap error a l'interval o als intervals de cel·les que s'han aprovat com a referència o referències de cel·les. MIN() i MAX() ignoren les cel·les de text. Les funcions MINA() i MAXA() retornen 0 si no s'ha trobat cap valor (numèric o de text) o cap error. Si s'aprova un argument d'una cadena literal a MIN() o MAX(), per exemple, MIN(\"cadena\"), se segueix obtenint un error."
+msgstr "Retorna 0 si no es troba cap valor numèric ni cap error a l'interval o als intervals de cel·les que s'han aprovat com a referència o referències de cel·les. MIN() i MAX() ignoren les cel·les de text. Les funcions MINA() i MAXA() retornen 0 si no s'ha trobat cap valor (numèric o de text) ni cap error. Si s'aprova un argument d'una cadena literal a MIN() o MAX(), per exemple, MIN(\"cadena\"), se segueix obtenint un error."
 
 #: source/text/scalc/01/04060184.xhp#hd_id3154256.4
 msgid  "Syntax"
@@ -21985,7 +21985,7 @@ msgstr ""
 
 #: source/text/scalc/01/05040200.xhp#tit
 msgid  "Optimal Column Width"
-msgstr "Amplada òptima de columna"
+msgstr "Amplada òptima de columna "
 
 #: source/text/scalc/01/05040200.xhp#bm_id3155628
 msgid  "\<bookmark_value\>spreadsheets; optimal column widths\</bookmark_value\>\<bookmark_value\>columns; optimal widths\</bookmark_value\>\<bookmark_value\>optimal column widths\</bookmark_value\>"
@@ -23577,7 +23577,7 @@ msgstr "Amaga les opcions addicionals."
 
 #: source/text/scalc/01/12020000.xhp#tit
 msgid  "Select Database Range"
-msgstr "Selecció de l'interval de la base de dades"
+msgstr "Selecciona l'interval de la base de dades"
 
 #: source/text/scalc/01/12020000.xhp#bm_id3145068
 msgid  "\<bookmark_value\>databases; selecting (Calc)\</bookmark_value\>"
@@ -33609,7 +33609,7 @@ msgstr ""
 
 #: source/text/scalc/guide/scenario.xhp#tit
 msgid  "Using Scenarios"
-msgstr "Utilització d'escenaris "
+msgstr "Utilització d'escenaris"
 
 #: source/text/scalc/guide/scenario.xhp#bm_id3149664
 msgid  "\<bookmark_value\>scenarios; creating/editing/deleting\</bookmark_value\>\<bookmark_value\>opening;scenarios\</bookmark_value\>\<bookmark_value\>selecting;scenarios in Navigator\</bookmark_value\>"

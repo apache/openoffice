@@ -1229,11 +1229,11 @@ msgstr "WWW ブラウザ"
 
 #: source/dialogs/hyperdlg.src#RID_SVXPAGE_HYPERLINK_INTERNET.BTN_TARGET.ImageButton.Text
 msgid  "Target in Document"
-msgstr "ドキュメントにあるターゲット"
+msgstr "ドキュメントのターゲット"
 
 #: source/dialogs/hyperdlg.src#RID_SVXPAGE_HYPERLINK_INTERNET.BTN_TARGET.ImageButton.QuickHelpText
 msgid  "Target in Document"
-msgstr "ドキュメントのターゲット"
+msgstr "ドキュメントにあるターゲット"
 
 #: source/dialogs/hyperdlg.src#RID_SVXPAGE_HYPERLINK_INTERNET.GRP_MORE.FixedLine.Text
 msgid  "Further settings"
@@ -1249,7 +1249,7 @@ msgstr "フォーム(~O)"
 
 #: source/dialogs/hyperdlg.src#RID_SVXPAGE_HYPERLINK_INTERNET.LB_FORM.Default.StringList.item
 msgid  "Text"
-msgstr "文字列"
+msgstr "テキスト"
 
 #: source/dialogs/hyperdlg.src#RID_SVXPAGE_HYPERLINK_INTERNET.LB_FORM.Default.StringList.item
 msgid  "Button"
@@ -1353,7 +1353,7 @@ msgstr "パス(~P)"
 
 #: source/dialogs/hyperdlg.src#RID_SVXPAGE_HYPERLINK_DOCUMENT.BTN_FILEOPEN.ImageButton.QuickHelpText
 msgid  "Open File"
-msgstr "ファイルを開ける"
+msgstr "ファイルを開く"
 
 #: source/dialogs/hyperdlg.src#RID_SVXPAGE_HYPERLINK_DOCUMENT.BTN_FILEOPEN.ButtonImage.Text
 msgid  "Open File"
@@ -3409,7 +3409,7 @@ msgstr "文書ドキュメント"
 
 #: source/options/optcolor.src#RID_SVXPAGE_COLORCONFIG.CT_COLORCONFIG.WN_SCROLL.FT_WRITERTEXTGRID.FixedText.Text
 msgid  "Grid"
-msgstr "グリッド線"
+msgstr "罫線"
 
 #: source/options/optcolor.src#RID_SVXPAGE_COLORCONFIG.CT_COLORCONFIG.WN_SCROLL.CB_WRITERFIELDSHADINGS.CheckBox.Text
 msgid  "Field shadings"
@@ -3805,7 +3805,7 @@ msgstr "書式サポート"
 
 #: source/options/treeopt.src#RID_OFADLG_OPTIONS_TREE_PAGES.SID_SW_EDITOPTIONS.RID_SVXPAGE_GRID.ItemList.item
 msgid  "Grid"
-msgstr "罫線"
+msgstr "グリッド線"
 
 #: source/options/treeopt.src#RID_OFADLG_OPTIONS_TREE_PAGES.SID_SW_EDITOPTIONS.RID_SW_TP_STD_FONT.ItemList.item
 msgid  "Basic Fonts (Western)"
@@ -5601,7 +5601,7 @@ msgstr "非透明化(~N)"
 
 #: source/tabpages/tabarea.src#RID_SVXPAGE_TRANSPARENCE.RBT_TRANS_LINEAR.RadioButton.Text
 msgid  "~Transparency"
-msgstr "透明化"
+msgstr "透明化(~T)"
 
 #: source/tabpages/tabarea.src#RID_SVXPAGE_TRANSPARENCE.RBT_TRANS_GRADIENT.RadioButton.Text
 msgid  "Gradient"
@@ -5665,7 +5665,7 @@ msgstr "終わりの値(~E)"
 
 #: source/tabpages/tabarea.src#RID_SVXPAGE_TRANSPARENCE.Control.Text
 msgid  "Transparency"
-msgstr "透過性"
+msgstr "透明化"
 
 #: source/tabpages/tabarea.src#RID_SVXPAGE_AREA.TabPage.Text
 msgid  "Area"
@@ -5765,7 +5765,7 @@ msgstr "影"
 
 #: source/tabpages/tabarea.src#RID_SVXPAGE_SHADOW.FL_PROP.FixedLine.Text
 msgid  "Properties"
-msgstr "属性"
+msgstr "プロパティー"
 
 #: source/tabpages/tabarea.src#RID_SVXPAGE_SHADOW.TSB_SHOW_SHADOW.TriStateBox.Text
 msgid  "~Use shadow"
@@ -5829,7 +5829,7 @@ msgstr "線の色(~C)"
 
 #: source/tabpages/tabarea.src#RID_SVXPAGE_HATCH.BTN_ADD.PushButton.Text
 msgid  "~Add..."
-msgstr "追加(~A)"
+msgstr "追加(~A)..."
 
 #: source/tabpages/tabarea.src#RID_SVXPAGE_HATCH.BTN_MODIFY.PushButton.Text
 msgid  "~Modify..."
@@ -5873,7 +5873,7 @@ msgstr "ビットマップ"
 
 #: source/tabpages/tabarea.src#RID_SVXPAGE_BITMAP.BTN_ADD.PushButton.Text
 msgid  "~Add..."
-msgstr "追加(~A)..."
+msgstr "追加(~A)"
 
 #: source/tabpages/tabarea.src#RID_SVXPAGE_BITMAP.BTN_MODIFY.PushButton.Text
 msgid  "~Modify..."
@@ -6753,7 +6753,7 @@ msgstr "中央"
 
 #: source/tabpages/numpages.src#RID_SVXPAGE_NUM_OPTIONS.LB_ALIGN.item3.StringList.item
 msgid  "Right"
-msgstr "右"
+msgstr "右揃え"
 
 #: source/tabpages/numpages.src#RID_SVXPAGE_NUM_OPTIONS.STR_BULLET.String.Text
 msgid  "Character"
@@ -8073,7 +8073,7 @@ msgstr "プレビュー"
 
 #: source/tabpages/transfrm.src#RID_SVXPAGE_POSITION_SIZE.TabPage.Text
 msgid  "Position and Size"
-msgstr "位置およびサイズ"
+msgstr "位置とサイズ"
 
 #: source/tabpages/transfrm.src#RID_SVXPAGE_POSITION_SIZE.FL_POSITION.FixedLine.Text
 msgid  "Position"
@@ -8081,11 +8081,11 @@ msgstr "位置"
 
 #: source/tabpages/transfrm.src#RID_SVXPAGE_POSITION_SIZE.FT_POS_X.FixedText.Text
 msgid  "Position ~X"
-msgstr "位置 X(~X)"
+msgstr "位置 ~X"
 
 #: source/tabpages/transfrm.src#RID_SVXPAGE_POSITION_SIZE.FT_POS_Y.FixedText.Text
 msgid  "Position ~Y"
-msgstr "位置 Y(~Y)"
+msgstr "位置 ~Y"
 
 #: source/tabpages/transfrm.src#RID_SVXPAGE_POSITION_SIZE.FT_POSREFERENCE.FixedText.Text
 msgid  "Base point"
@@ -8245,7 +8245,7 @@ msgstr "角度(~A)"
 
 #: source/tabpages/transfrm.src#RID_SVXPAGE_ANGLE.MTR_FLD_ANGLE.MetricField.CustomUnitText
 msgid  " degrees"
-msgstr " 度"
+msgstr "度"
 
 #: source/tabpages/transfrm.src#RID_SVXPAGE_ANGLE.FT_ANGLEPRESETS.FixedText.Text
 msgid  "Default settings"
@@ -8645,7 +8645,7 @@ msgstr "斜体"
 
 #: source/tabpages/chardlg.src#RID_SVXPAGE_CHAR_NAME.LB_WEST_STYLE.item3.StringList.item
 msgid  "Bold"
-msgstr "太い"
+msgstr "太字"
 
 #: source/tabpages/chardlg.src#RID_SVXPAGE_CHAR_NAME.LB_WEST_STYLE.item4.StringList.item
 msgid  "Bold italic"
@@ -8845,11 +8845,11 @@ msgstr "(なし)"
 
 #: source/tabpages/chardlg.src#RID_SVXPAGE_CHAR_EFFECTS.LB_OVERLINE.CHRDLG_UNDERLINE_SINGLE.StringList.item
 msgid  "Single"
-msgstr "一重"
+msgstr "一重線"
 
 #: source/tabpages/chardlg.src#RID_SVXPAGE_CHAR_EFFECTS.LB_OVERLINE.CHRDLG_UNDERLINE_DOUBLE.StringList.item
 msgid  "Double"
-msgstr "二重"
+msgstr "二重線"
 
 #: source/tabpages/chardlg.src#RID_SVXPAGE_CHAR_EFFECTS.LB_OVERLINE.CHRDLG_UNDERLINE_BOLD.StringList.item
 msgid  "Bold"
@@ -8925,7 +8925,7 @@ msgstr "一重"
 
 #: source/tabpages/chardlg.src#RID_SVXPAGE_CHAR_EFFECTS.LB_STRIKEOUT.CHRDLG_STRIKEOUT_DOUBLE.StringList.item
 msgid  "Double"
-msgstr "二重線"
+msgstr "二重"
 
 #: source/tabpages/chardlg.src#RID_SVXPAGE_CHAR_EFFECTS.LB_STRIKEOUT.CHRDLG_STRIKEOUT_BOLD.StringList.item
 msgid  "Bold"

@@ -6260,7 +6260,7 @@ msgstr "ଏହି ଅଭିଧାନକୁ ତୁମେ ବିଲୋପକରି
 #: source/options/dbregister.src#RID_SFXPAGE_DBREGISTER.TabPage.Text
 #, fuzzy
 msgid  "Registered databases"
-msgstr "ରେଜିଷ୍ଟରହୋଇଥିବା ତଥ୍ଯସଞ୍ଚଯଗୁଡିକ"
+msgstr "ରେଜିଷ୍ଟରହୋଇଥିବା ତଥ୍ଯସଞ୍ଚୟଗୁଡିକ"
 
 #: source/options/dbregister.src#RID_SFXPAGE_DBREGISTER.FT_TYPE.FixedText.Text
 #, fuzzy
@@ -8647,8 +8647,9 @@ msgid  "Localized Options"
 msgstr "ଅନୁବାଦିତ ବିକଳ୍ପଗୁଡ଼ିକ"
 
 #: source/tabpages/autocdlg.src#RID_OFA_AUTOCORR_DLG.1.RID_OFAPAGE_AUTOCOMPLETE_OPTIONS.PageItem.Text
+#, fuzzy
 msgid  "Word Completion"
-msgstr "ଶବ୍ଦ ସମ୍ପୂର୍ଣ୍ଣ"
+msgstr "ଶବ୍ଦ ସମାପ୍ତି"
 
 #: source/tabpages/autocdlg.src#RID_OFA_AUTOCORR_DLG.1.RID_OFAPAGE_SMARTTAG_OPTIONS.PageItem.Text
 #, fuzzy
@@ -9815,7 +9816,7 @@ msgstr "ପୂର୍ବଦୃଶ୍ଯ"
 #: source/tabpages/transfrm.src#RID_SVXPAGE_POSITION_SIZE.TabPage.Text
 #, fuzzy
 msgid  "Position and Size"
-msgstr "ସ୍ଥାନ ଏବଂ ଆକାର"
+msgstr "ଅବସ୍ଥାନ ଏବଂ ଆକାର"
 
 #: source/tabpages/transfrm.src#RID_SVXPAGE_POSITION_SIZE.FL_POSITION.FixedLine.Text
 #, fuzzy
@@ -9825,12 +9826,12 @@ msgstr "ସ୍ଥାନ "
 #: source/tabpages/transfrm.src#RID_SVXPAGE_POSITION_SIZE.FT_POS_X.FixedText.Text
 #, fuzzy
 msgid  "Position ~X"
-msgstr "ଅବସ୍ଥାନ ~X"
+msgstr "ସ୍ଥାନ X (~X)"
 
 #: source/tabpages/transfrm.src#RID_SVXPAGE_POSITION_SIZE.FT_POS_Y.FixedText.Text
 #, fuzzy
 msgid  "Position ~Y"
-msgstr "ଅବସ୍ଥାନ ~Y"
+msgstr "ସ୍ଥାନ Y (~Y)"
 
 #: source/tabpages/transfrm.src#RID_SVXPAGE_POSITION_SIZE.FT_POSREFERENCE.FixedText.Text
 #, fuzzy
@@ -10030,7 +10031,7 @@ msgstr "କୋଣ (~A)"
 #: source/tabpages/transfrm.src#RID_SVXPAGE_ANGLE.MTR_FLD_ANGLE.MetricField.CustomUnitText
 #, fuzzy
 msgid  " degrees"
-msgstr "ଡିଗ୍ରୀ (~d)"
+msgstr "ଡିଗ୍ରୀଗୁଡିକ (~d)"
 
 #: source/tabpages/transfrm.src#RID_SVXPAGE_ANGLE.FT_ANGLEPRESETS.FixedText.Text
 #, fuzzy
@@ -10095,7 +10096,7 @@ msgstr "ତେର୍ଚ୍ଛା ଏବଂ କୋଣ ବ୍ଯାସାର୍ଦ
 #: source/tabpages/textattr.src#RID_SVXPAGE_TEXTATTR.TabPage.Text
 #, fuzzy
 msgid  "Text"
-msgstr "ଟେକ୍ସଟ"
+msgstr "ପାଠ୍ୟ"
 
 #: source/tabpages/textattr.src#RID_SVXPAGE_TEXTATTR.FL_TEXT.FixedLine.Text
 #, fuzzy
@@ -10530,7 +10531,7 @@ msgstr "ତେର୍ଚ୍ଛା"
 #: source/tabpages/chardlg.src#RID_SVXPAGE_CHAR_NAME.LB_WEST_STYLE.item3.StringList.item
 #, fuzzy
 msgid  "Bold"
-msgstr "ଗାଢ଼"
+msgstr "ମୋଟା"
 
 #: source/tabpages/chardlg.src#RID_SVXPAGE_CHAR_NAME.LB_WEST_STYLE.item4.StringList.item
 #, fuzzy
@@ -10805,7 +10806,7 @@ msgstr "ବିନ୍ଦୁମୟ (ଗାଢ଼)"
 #: source/tabpages/chardlg.src#RID_SVXPAGE_CHAR_EFFECTS.LB_OVERLINE.CHRDLG_UNDERLINE_DASH.StringList.item
 #, fuzzy
 msgid  "Dash"
-msgstr "ଡାସ"
+msgstr "ଡ୍ୟାସ"
 
 #: source/tabpages/chardlg.src#RID_SVXPAGE_CHAR_EFFECTS.LB_OVERLINE.CHRDLG_UNDERLINE_BOLDDASH.StringList.item
 #, fuzzy
@@ -10825,12 +10826,12 @@ msgstr "ଲମ୍ବା ଡ୍ୟାସ (ଗାଢ଼)"
 #: source/tabpages/chardlg.src#RID_SVXPAGE_CHAR_EFFECTS.LB_OVERLINE.CHRDLG_UNDERLINE_DASHDOT.StringList.item
 #, fuzzy
 msgid  "Dot Dash"
-msgstr "ବିନ୍ଦୁ ଡାସ"
+msgstr "ବିନ୍ଦୁମୟ ଡାସ"
 
 #: source/tabpages/chardlg.src#RID_SVXPAGE_CHAR_EFFECTS.LB_OVERLINE.CHRDLG_UNDERLINE_BOLDDASHDOT.StringList.item
 #, fuzzy
 msgid  "Dot Dash (Bold)"
-msgstr "ବିନ୍ଦୁ ଡ୍ୟାସ (ଗାଢ଼)"
+msgstr "ବିନ୍ଦୁମୟ ଡ୍ୟାସ (ଗାଢ଼)"
 
 #: source/tabpages/chardlg.src#RID_SVXPAGE_CHAR_EFFECTS.LB_OVERLINE.CHRDLG_UNDERLINE_DASHDOTDOT.StringList.item
 #, fuzzy
@@ -10840,7 +10841,7 @@ msgstr "ବିନ୍ଦୁ ବିନ୍ଦୁ ଡ୍ୟାସ"
 #: source/tabpages/chardlg.src#RID_SVXPAGE_CHAR_EFFECTS.LB_OVERLINE.CHRDLG_UNDERLINE_BOLDDASHDOTDOT.StringList.item
 #, fuzzy
 msgid  "Dot Dot Dash (Bold)"
-msgstr "ବିନ୍ଦୁ ବିନ୍ଦୁ ଡାସ (ଗାଢ଼)"
+msgstr "ବିନ୍ଦୁ ବିନ୍ଦୁ ଡ୍ୟାସ (ଗାଢ଼)"
 
 #: source/tabpages/chardlg.src#RID_SVXPAGE_CHAR_EFFECTS.LB_OVERLINE.CHRDLG_UNDERLINE_WAVE.StringList.item
 #, fuzzy

@@ -363,12 +363,14 @@ msgid  "Categories"
 msgstr "વર્ગો"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.business.Tables.categories.Fields.categoryID.Name
+#, fuzzy
 msgid  "CategoryID"
-msgstr "વર્ગID"
+msgstr "વર્ગ ID"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.business.Tables.categories.Fields.categoryID.ShortName
+#, fuzzy
 msgid  "CategoryID"
-msgstr "વર્ગID"
+msgstr "વર્ગ ID"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.business.Tables.categories.Fields.categoryname.Name
 #, fuzzy
@@ -443,7 +445,7 @@ msgstr "અનુક્રમ નંબર"
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.business.Tables.products.Fields.serialnumber.ShortName
 #, fuzzy
 msgid  "SerialNo"
-msgstr "સીરીયલનંબર"
+msgstr "અનુક્રમનંબર"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.business.Tables.products.Fields.unitsinstock.Name
 #, fuzzy
@@ -626,8 +628,9 @@ msgid  "PaymentTerms"
 msgstr "ચૂકવણીશરતો"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.business.Tables.suppliers.Fields.paymentterms.ShortName
+#, fuzzy
 msgid  "PaymntTerm"
-msgstr "ચૂકવણીશરતો"
+msgstr "ચૂકવણીશરત"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.business.Tables.suppliers.Fields.emailaddress.Name
 #, fuzzy
@@ -1142,7 +1145,7 @@ msgstr "સંપર્કનું મનગમતું"
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.business.Tables.contacts.Fields.childrennames.Name
 #, fuzzy
 msgid  "ChildrenNames"
-msgstr "બાળકનામો"
+msgstr "બાળકોનાનામો"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.business.Tables.contacts.Fields.childrennames.ShortName
 #, fuzzy
@@ -1635,12 +1638,14 @@ msgid  "Orders"
 msgstr "ઓર્ડરો"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.business.Tables.orders.Fields.orderID.Name
+#, fuzzy
 msgid  "OrderID"
-msgstr "ઓર્ડID"
+msgstr "ઓર્ડરID"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.business.Tables.orders.Fields.orderID.ShortName
+#, fuzzy
 msgid  "OrderID"
-msgstr "ઓર્ડID"
+msgstr "ઓર્ડરID"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.business.Tables.orders.Fields.customerID.Name
 #, fuzzy
@@ -3310,12 +3315,12 @@ msgstr "તારીખેવેચાયેલ"
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.business.Tables.assets.Fields.purchaseprice.Name
 #, fuzzy
 msgid  "PurchasePrice"
-msgstr "ખરીદમૂલ્ય"
+msgstr "ખરીદકિંમત"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.business.Tables.assets.Fields.purchaseprice.ShortName
 #, fuzzy
 msgid  "PurchPrice"
-msgstr "ખરીદમૂલ્ય"
+msgstr "ખરીદકિંમત"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.business.Tables.assets.Fields.depreciationmethod.Name
 #, fuzzy
@@ -4045,12 +4050,12 @@ msgstr "જગ્યાએખરીદાયેલ"
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.private.Tables.householdinventory.Fields.purchaseprice.Name
 #, fuzzy
 msgid  "PurchasePrice"
-msgstr "ખરીદકિંમત"
+msgstr "ખરીદમૂલ્ય"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.private.Tables.householdinventory.Fields.purchaseprice.ShortName
 #, fuzzy
 msgid  "PurchPrice"
-msgstr "ખરીદકિંમત"
+msgstr "ખરીદમૂલ્ય"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.private.Tables.householdinventory.Fields.appraisedvalue.Name
 #, fuzzy
@@ -4100,7 +4105,7 @@ msgstr "મેળવનારID"
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.private.Tables.recipes.Fields.name.Name
 #, fuzzy
 msgid  "Name"
-msgstr "ન"
+msgstr "નામ"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.private.Tables.recipes.Fields.name.ShortName
 #, fuzzy
@@ -4130,12 +4135,12 @@ msgstr "સ્રોત"
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.private.Tables.recipes.Fields.whichmeal.Name
 #, fuzzy
 msgid  "WhichMeal"
-msgstr "કયોખોરાક"
+msgstr "કયુંજમવાનું"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.private.Tables.recipes.Fields.whichmeal.ShortName
 #, fuzzy
 msgid  "WhichMeal"
-msgstr "કયોખોરાક"
+msgstr "કયુંજમવાનું"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.private.Tables.recipes.Fields.vegetarian.Name
 #, fuzzy
@@ -4710,12 +4715,12 @@ msgstr "પ્રકાશનવર્ષ"
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.private.Tables.dvdcollection.Fields.rating.Name
 #, fuzzy
 msgid  "Rating"
-msgstr "ક્રમ"
+msgstr "ક્રમાંકન"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.private.Tables.dvdcollection.Fields.rating.ShortName
 #, fuzzy
 msgid  "Rating"
-msgstr "ક્રમ"
+msgstr "ક્રમાંકન"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.private.Tables.dvdcollection.Fields.subject.Name
 #, fuzzy
@@ -9218,7 +9223,7 @@ msgstr "પછીના પાના સુધી પસંદ કરો"
 #: registry/data/org/openoffice/Office/UI/WriterCommands.xcu#WriterCommands.UserInterface.Commands..uno:PageOffsetDialog.Label
 #, fuzzy
 msgid  "Page Number"
-msgstr "પાનાં નંબર"
+msgstr "પાના નંબર"
 
 #: registry/data/org/openoffice/Office/UI/WriterCommands.xcu#WriterCommands.UserInterface.Commands..uno:PageStyleApply.Label
 #, fuzzy
@@ -10712,7 +10717,7 @@ msgstr "અંદર આવવું"
 #: registry/data/org/openoffice/Office/UI/Effects.xcu#Effects.UserInterface.Effects.ooo-entrance-venetian-blinds.Label
 #, fuzzy
 msgid  "Venetian Blinds"
-msgstr "વેનેટીયન અંધ"
+msgstr "વેનેટિયન અંધો"
 
 #: registry/data/org/openoffice/Office/UI/Effects.xcu#Effects.UserInterface.Effects.ooo-entrance-box.Label
 #, fuzzy
@@ -10792,7 +10797,7 @@ msgstr "કોણીય ચોરસો"
 #: registry/data/org/openoffice/Office/UI/Effects.xcu#Effects.UserInterface.Effects.ooo-entrance-swivel.Label
 #, fuzzy
 msgid  "Swivel"
-msgstr "સ્વાવલ"
+msgstr "વલયાકાર"
 
 #: registry/data/org/openoffice/Office/UI/Effects.xcu#Effects.UserInterface.Effects.ooo-entrance-wedge.Label
 #, fuzzy
@@ -10832,7 +10837,7 @@ msgstr "બાઉન્સ"
 #: registry/data/org/openoffice/Office/UI/Effects.xcu#Effects.UserInterface.Effects.ooo-entrance-colored-lettering.Label
 #, fuzzy
 msgid  "Colored Lettering"
-msgstr "રંગીન પત્ર"
+msgstr "રંગાયેલ પત્રો"
 
 #: registry/data/org/openoffice/Office/UI/Effects.xcu#Effects.UserInterface.Effects.ooo-entrance-movie-credits.Label
 #, fuzzy
@@ -10862,7 +10867,7 @@ msgstr "અટકણો પર મૂકો"
 #: registry/data/org/openoffice/Office/UI/Effects.xcu#Effects.UserInterface.Effects.ooo-entrance-pinwheel.Label
 #, fuzzy
 msgid  "Pinwheel"
-msgstr "પીનપૈડું"
+msgstr "પીનવ્હીલ"
 
 #: registry/data/org/openoffice/Office/UI/Effects.xcu#Effects.UserInterface.Effects.ooo-entrance-rise-up.Label
 #, fuzzy
@@ -11562,7 +11567,7 @@ msgstr "વિકર્ણ ઉપર જમણે"
 #: registry/data/org/openoffice/Office/UI/Effects.xcu#Effects.UserInterface.Effects.ooo-motionpath-down.Label
 #, fuzzy
 msgid  "Down"
-msgstr "નીચે"
+msgstr "નીચો"
 
 #: registry/data/org/openoffice/Office/UI/Effects.xcu#Effects.UserInterface.Effects.ooo-motionpath-funnel.Label
 #, fuzzy
@@ -14519,7 +14524,7 @@ msgstr ""
 #: registry/data/org/openoffice/Office/UI/GenericCommands.xcu#GenericCommands.UserInterface.Commands..uno:AddDateField.Label
 #, fuzzy
 msgid  "Date Field"
-msgstr "તારીક ક્ષેત્ર"
+msgstr "તારીખ ક્ષેત્ર"
 
 #: registry/data/org/openoffice/Office/UI/GenericCommands.xcu#GenericCommands.UserInterface.Commands..uno:AddDirect.Label
 msgid  "New"
@@ -16334,7 +16339,7 @@ msgstr "લીલો"
 #: registry/data/org/openoffice/Office/UI/GenericCommands.xcu#GenericCommands.UserInterface.Commands..uno:GrafInvert.Label
 #, fuzzy
 msgid  "Invert"
-msgstr "ઉલટાવો"
+msgstr "પલટાવો"
 
 #: registry/data/org/openoffice/Office/UI/GenericCommands.xcu#GenericCommands.UserInterface.Commands..uno:GrafLuminance.Label
 #, fuzzy

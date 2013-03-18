@@ -1011,7 +1011,7 @@ msgstr "~დაშორება"
 #: source/dialog/hdft.src#RID_SVXPAGE_HEADER.CB_DYNSPACING.CheckBox.Text
 #, fuzzy
 msgid  "Use d~ynamic spacing"
-msgstr "დ~ინამიური დაშორების გამოყენება"
+msgstr "დ~ინამიური დაშორებების გამოყენება"
 
 #: source/dialog/hdft.src#RID_SVXPAGE_HEADER.FT_HEIGHT.FixedText.Text
 #, fuzzy
@@ -2141,7 +2141,7 @@ msgstr "ჰორიზონტალური საზღვრის ხა�
 #: source/dialog/frmsel.src#RID_SVXSTR_BORDER_CONTROL.ARR_TEXTS.6.ItemList.item
 #, fuzzy
 msgid  "Vertical border line"
-msgstr "ვერტიკალური საზღვრის ხაზი"
+msgstr "ვერტიკალური საზღვრის საზი"
 
 #: source/dialog/frmsel.src#RID_SVXSTR_BORDER_CONTROL.ARR_TEXTS.7.ItemList.item
 #, fuzzy
@@ -2151,7 +2151,7 @@ msgstr "დიაგონალური საზღვრის ხაზი 
 #: source/dialog/frmsel.src#RID_SVXSTR_BORDER_CONTROL.ARR_TEXTS.8.ItemList.item
 #, fuzzy
 msgid  "Diagonal border line from bottom left to top right"
-msgstr "დიაგონალური საზღვრის ხაზი ქვედა მარცხენა კუთხიდან ზედა მარჯვენა კუთხემდე"
+msgstr "კუთხემდე"
 
 #: source/dialog/frmsel.src#RID_SVXSTR_BORDER_CONTROL.ARR_DESCRIPTIONS.0.ItemList.item
 #, fuzzy
@@ -3241,7 +3241,7 @@ msgstr "- არცერთი -"
 #: source/dialog/sdstring.src#RID_SVXSTR_TRANSPARENCE.String.Text
 #, fuzzy
 msgid  "Transparency"
-msgstr "გამჭირვალობა"
+msgstr "გამჭვირვალობა"
 
 #: source/dialog/sdstring.src#RID_SVXSTR_CENTERED.String.Text
 #, fuzzy
@@ -4672,8 +4672,9 @@ msgid  "~Rotation angle"
 msgstr "~ბრუნვის კუთხე"
 
 #: source/engine3d/float3d.src#RID_SVXFLOAT_3D.MTR_END_ANGLE.MetricField.CustomUnitText
+#, fuzzy
 msgid  " degree(s)"
-msgstr " გრადუსი"
+msgstr "გრადუსი"
 
 #: source/engine3d/float3d.src#RID_SVXFLOAT_3D.FT_DEPTH.FixedText.Text
 #, fuzzy
@@ -5933,8 +5934,9 @@ msgid  "Add Element"
 msgstr "ელემენტის დამატება"
 
 #: source/form/datanavi.src#RID_SVX_XFORMS_TABPAGES.TB_ITEMS.TBI_ITEM_ADD_ATTRIBUTE.ToolBoxItem.Text
+#, fuzzy
 msgid  "Add Attribute"
-msgstr "ატრიბუტების დამატება"
+msgstr "ატრიბუტის დამატება"
 
 #: source/form/datanavi.src#RID_SVX_XFORMS_TABPAGES.TB_ITEMS.TBI_ITEM_EDIT.ToolBoxItem.Text
 #, fuzzy
@@ -7170,8 +7172,9 @@ msgid  "Register-true"
 msgstr "რეგისტრაცია ჭეშმარიტი"
 
 #: source/items/svxitems.src#RID_ATTR_NAMES.SID_ATTR_BRUSH_CHAR.ItemList.item
+#, fuzzy
 msgid  "Character background"
-msgstr "სიმბოლოს ფონი"
+msgstr "სიმბოლოთა ფონი"
 
 #: source/items/svxitems.src#RID_ATTR_NAMES.SID_ATTR_CHAR_CJK_FONT.ItemList.item
 #, fuzzy
@@ -8747,8 +8750,9 @@ msgid  "Frame"
 msgstr "ჩარჩო"
 
 #: source/svdraw/svdstr.src#STR_ObjNameSingulEDGE.String.Text
+#, fuzzy
 msgid  "Object Connectors"
-msgstr "ობიექტთა დამკავშირებლები"
+msgstr "ობიექტთა დამკავშირებელი"
 
 #: source/svdraw/svdstr.src#STR_ObjNamePluralEDGE.String.Text
 #, fuzzy
@@ -9874,16 +9878,19 @@ msgid  "Max. frame width"
 msgstr "ჩარჩოს მაქსიმალური სიგანე"
 
 #: source/svdraw/svdstr.src#STR_ItemNam_TEXT_VERTADJUST.String.Text
+#, fuzzy
 msgid  "Vertical text anchor"
-msgstr "ტექსტის ვერტიკალური ღუზა"
+msgstr "ვერტიკალური ტექსტის ღუზა"
 
 #: source/svdraw/svdstr.src#STR_ItemNam_TEXT_HORZADJUST.String.Text
+#, fuzzy
 msgid  "Horizontal text anchor"
-msgstr "ჰორიზონტალური ვერტიკალური ღუზა"
+msgstr "ჰორიზონტალური ტექსტის ღუზა"
 
 #: source/svdraw/svdstr.src#STR_ItemNam_TEXT_FITTOSIZE.String.Text
+#, fuzzy
 msgid  "Fit text to frame"
-msgstr "ტექსტის ჩარჩოში მორგება"
+msgstr "ტექსტის ჩარჩოზე დამატება"
 
 #: source/svdraw/svdstr.src#STR_ItemNam_GRAFRED.String.Text
 #, fuzzy
@@ -9921,8 +9928,9 @@ msgid  "Transparency"
 msgstr "გამჭირვალობა"
 
 #: source/svdraw/svdstr.src#STR_ItemNam_GRAFINVERT.String.Text
+#, fuzzy
 msgid  "Invert"
-msgstr "ინვერტირება"
+msgstr "შებრუნება"
 
 #: source/svdraw/svdstr.src#STR_ItemNam_GRAFMODE.String.Text
 #, fuzzy
@@ -9960,8 +9968,9 @@ msgid  "Le~vel"
 msgstr "ფე~ნა"
 
 #: source/svdraw/svdstr.src#STR_ItemNam_OBJECTNAME.String.Text
+#, fuzzy
 msgid  "Object name"
-msgstr "ობიქტის სახელი"
+msgstr "ობიექტის სახელი"
 
 #: source/svdraw/svdstr.src#STR_ItemNam_STARTANGLE.String.Text
 #, fuzzy
@@ -11631,8 +11640,9 @@ msgid  "Color Palette"
 msgstr ""
 
 #: source/tbxctrls/lboxctrl.src#RID_SVXSTR_NUM_UNDO_ACTIONS.String.Text
+#, fuzzy
 msgid  "Actions to undo: $(ARG1)"
-msgstr "გასაუქმებელი მნიშვნელობები: $(ARG1)"
+msgstr "გასაუქმებელი მოქმედებები: $(ARG1)"
 
 #: source/tbxctrls/lboxctrl.src#RID_SVXSTR_NUM_UNDO_ACTION.String.Text
 #, fuzzy

@@ -6365,7 +6365,7 @@ msgstr "$(ERR) llwytho templed $(ARG1)"
 
 #: source/src/errtxt.src#RID_ERRCTX.ERRCTX_SFX_SAVEDOC.String.Text
 msgid  "$(ERR) saving the document $(ARG1)"
-msgstr "$(ERR) cadw templed $(ARG1)"
+msgstr "$(ERR) cadw templed$(ARG1)"
 
 #: source/src/errtxt.src#RID_ERRCTX.ERRCTX_SFX_SAVEASDOC.String.Text
 msgid  "$(ERR) saving the document $(ARG1)"
@@ -7525,7 +7525,7 @@ msgstr "Troi %1"
 
 #: source/svdraw/svdstr.src#STR_EditMirrorHori.String.Text
 msgid  "Flip %1 horizontal"
-msgstr "Troi %1 yn llorweddol"
+msgstr "Tro %1 yn llorweddol"
 
 #: source/svdraw/svdstr.src#STR_EditMirrorVert.String.Text
 msgid  "Flip %1 vertical"
@@ -7537,11 +7537,11 @@ msgstr "Troi %1 yn groeslin"
 
 #: source/svdraw/svdstr.src#STR_EditMirrorFree.String.Text
 msgid  "Flip %1 freehand"
-msgstr "Tro %1 llawrydd"
+msgstr "Tro %1 llaw rydd"
 
 #: source/svdraw/svdstr.src#STR_EditShear.String.Text
 msgid  "Distort %1 (slant)"
-msgstr "Aflunio %1 (goleddf)"
+msgstr "Aflunio %1(goleddfu)"
 
 #: source/svdraw/svdstr.src#STR_EditCrook.String.Text
 msgid  "Arrange %1 in circle"
@@ -7549,7 +7549,7 @@ msgstr "Trefnu %1 mewn cylch"
 
 #: source/svdraw/svdstr.src#STR_EditCrookContortion.String.Text
 msgid  "Curve %1 in circle"
-msgstr "Cromlin % mewn cylch"
+msgstr "Cromlin %1 mewn cylch"
 
 #: source/svdraw/svdstr.src#STR_EditDistort.String.Text
 msgid  "Distort %1"

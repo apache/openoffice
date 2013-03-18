@@ -204,7 +204,7 @@ msgstr "Filannoo kana irraa"
 #: source/ui/dbgui/pivot.src#RID_SCDLG_PIVOT_LAYOUT.RB_INAREA.ImageButton.QuickHelpText
 #, fuzzy
 msgid  "Shrink"
-msgstr "Xinneessi"
+msgstr "Qooqsi"
 
 #: source/ui/dbgui/pivot.src#RID_SCDLG_PIVOT_LAYOUT.FT_OUTAREA.FixedText.Text
 #, fuzzy
@@ -658,7 +658,7 @@ msgstr "Gargaarsa Naqaa"
 #: source/ui/dbgui/validate.src#TAB_DLG_VALIDATION.1.TP_VALIDATION_ERROR.PageItem.Text
 #, fuzzy
 msgid  "Error Alert"
-msgstr "Ofeeggannoo Dogoggoraa"
+msgstr "Dogoggora"
 
 #: source/ui/dbgui/validate.src#TAB_DLG_VALIDATION.PageItem.Text
 #, fuzzy
@@ -2357,8 +2357,9 @@ msgid  "Print range"
 msgstr "Hangii maxxansaa"
 
 #: source/ui/pagedlg/pagedlg.src#RID_SCDLG_AREAS.LB_PRINTAREA.Default.StringList.item
+#, fuzzy
 msgid  "- none -"
-msgstr "- yaadannoo -"
+msgstr "- homaa -"
 
 #: source/ui/pagedlg/pagedlg.src#RID_SCDLG_AREAS.LB_PRINTAREA.Default.StringList.item
 #, fuzzy
@@ -2901,7 +2902,7 @@ msgstr "Wantoota/Saxaatoo"
 #: source/ui/src/optdlg.src#RID_SCPAGE_CONTENT.LB_OBJGRF.Default.StringList.item
 #, fuzzy
 msgid  "Show"
-msgstr "Agarsiisi"
+msgstr "Mul'isi"
 
 #: source/ui/src/optdlg.src#RID_SCPAGE_CONTENT.LB_OBJGRF.Default.StringList.item
 #, fuzzy
@@ -3730,7 +3731,7 @@ msgstr "Fooyi"
 #: source/ui/src/globstr.src#RID_GLOBSTR.STR_UNDO_QUERY.String.Text
 #, fuzzy
 msgid  "Filter"
-msgstr "Gingilchaa"
+msgstr "Gingilchi"
 
 #: source/ui/src/globstr.src#RID_GLOBSTR.STR_UNDO_DBDATA.String.Text
 #, fuzzy
@@ -4746,7 +4747,7 @@ msgstr "Fankishinii Gulaali"
 #: source/ui/src/globstr.src#RID_GLOBSTR.STR_NOTES.String.Text
 #, fuzzy
 msgid  "Comments"
-msgstr "Yaada"
+msgstr "Yaadota"
 
 #: source/ui/src/globstr.src#RID_GLOBSTR.STR_QUERY_DELTAB.String.Text
 #, fuzzy
@@ -7004,7 +7005,7 @@ msgstr "Adu'u_1"
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_GET_DIFF_DATE_360.3.String.Text
 #, fuzzy
 msgid  "The start date for calculating the difference in days."
-msgstr "Garaagarummaa guyyaalee herreguuf adu'u jalqabaa."
+msgstr "Adu'u jalqabaa garaagarummaa guyyaalee herreguuf."
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_GET_DIFF_DATE_360.4.String.Text
 #, fuzzy
@@ -7304,7 +7305,7 @@ msgstr "Akaakuu"
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_BW.11.String.Text
 #, fuzzy
 msgid  "Type = 1 denotes due at the beginning of the period, = 0 at the end."
-msgstr "Akaakuu = 1 kanfaltii yeroo jalqabaa bakka bu'a, = 0 kan dhumaa."
+msgstr "Akaakuu = 1 kanfaltii yeroo jalqabaa bakka bu'a, = 0 kan yeroo dhumaa."
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_ZW.1.String.Text
 #, fuzzy
@@ -7319,7 +7320,7 @@ msgstr "Maakkii"
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_ZW.3.String.Text
 #, fuzzy
 msgid  "The rate of interest per period."
-msgstr "Maakkii dhalaa yeroo tokkoo."
+msgstr "Maakkii dhalaa yeroo tokkoon."
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_ZW.4.String.Text
 #, fuzzy
@@ -7329,7 +7330,7 @@ msgstr "NPER"
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_ZW.5.String.Text
 #, fuzzy
 msgid  "Payment period. The total number of periods in which the annuity (pension) is paid."
-msgstr "Yeroo kanfaltii. Lakkoofsa dimshaashaa yeroo kanfaltiin (yuboomaa) itti kanfalamu."
+msgstr "Yeroo kanfaltii. Lakkoofsa dimshaashaa yeroo kanfaltiin(yubooma) itti kanfalamu."
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_ZW.6.String.Text
 #, fuzzy
@@ -7339,7 +7340,7 @@ msgstr "PMT"
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_ZW.7.String.Text
 #, fuzzy
 msgid  "Regular payments. The constant annuity to be paid in each period."
-msgstr "Kanfaltiiwwan idilee. Kanfaltii dhaabbataa yeroo yeroon kanfalame."
+msgstr "Kanfaltiiwwan idilee. Kanfaltii dhaabbataa yeroo yeroon kanfalamuu qabu."
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_ZW.8.String.Text
 #, fuzzy
@@ -7359,7 +7360,7 @@ msgstr "Akaakuu"
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_ZW.11.String.Text
 #, fuzzy
 msgid  "Type = 1 denotes due at the beginning of the period, = 0 at the end."
-msgstr "Akaakuu = 1 kanfaltii yeroo jalqabaa bakka bu'a, = 0 kan dhumaa."
+msgstr "Akaakuu = 1 kanfaltii yeroo jalqabaa bakka bu'a, = 0 kan yeroo dhumaa."
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_ZZR.1.String.Text
 #, fuzzy
@@ -7414,7 +7415,7 @@ msgstr "Akaakuu"
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_ZZR.11.String.Text
 #, fuzzy
 msgid  "Type = 1 denotes due at the beginning of the period, = 0 at the end."
-msgstr "Akaakuu = 1 yeroo jalqabaa bakka bu'a, = 0 kan dhumaa."
+msgstr "Akaakuu = 1 kanfaltii yeroo jalqabaa bakka bu'a, = 0 kan dhumaa."
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_RMZ.1.String.Text
 #, fuzzy
@@ -7439,7 +7440,7 @@ msgstr "NPER"
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_RMZ.5.String.Text
 #, fuzzy
 msgid  "Payment period. The total number of periods in which the annuity (pension) is paid."
-msgstr "Yeroo kanfaltii. Lakkoofsa dimshaashaa yeroo kanfaltiin(pension) itti kanfalamu."
+msgstr "Yeroo kanfaltii. Lakkoofsa dimshaashaa yeroo kanfaltiin(yubooma) itti kanfalamu."
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_RMZ.6.String.Text
 #, fuzzy
@@ -7469,7 +7470,7 @@ msgstr "Akaakuu"
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_RMZ.11.String.Text
 #, fuzzy
 msgid  "Type = 1 denotes due at the beginning of the period, = 0 at the end."
-msgstr "Akaakuu = 1 jalqaba yeroo bakka bu'a, = 0 kan dhumaa."
+msgstr "Akaakuu = 1 kanfaltii yeroo jalqabaa bakka bu'a, = 0 kan dhumaa."
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_ZINS.1.String.Text
 #, fuzzy
@@ -7484,7 +7485,7 @@ msgstr "NPER"
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_ZINS.3.String.Text
 #, fuzzy
 msgid  "Payment period. The total number of periods in which the annuity (pension) is paid."
-msgstr "Yeroo kanfaltii. Lakkoofsa dimshaashaa yeroo kanfaltiin (yubooma) itti kanfalamu."
+msgstr "Yeroo kanfaltii. Lakkoofsa dimshaashaa yeroo kanfaltiin (yuboomaa) itti kanfalamu."
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_ZINS.4.String.Text
 #, fuzzy
@@ -7569,7 +7570,7 @@ msgstr "NPER"
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_ZINS_Z.7.String.Text
 #, fuzzy
 msgid  "Payment period. The total number of periods in which the annuity (pension) is paid."
-msgstr "Yeroo kanfaltii. Lakkoofsa dimshaashaa yeroowwanii kanfaltiin(yuboomaa) itti kanfalamu."
+msgstr "Yeroo kanfaltii. Lakkoofsa dimshaashaa yeroo kanfaltiin(pension) itti kanfalamu."
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_ZINS_Z.8.String.Text
 #, fuzzy
@@ -7709,7 +7710,7 @@ msgstr "S"
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_KUM_KAP_Z.9.String.Text
 #, fuzzy
 msgid  "The start period. The first period to be taken into account. A = 1 denotes the very first period."
-msgstr "Yeroo jalqabaa. Yeroo jalqabaa ilaalamuu qabu. A = 1 yeroo bakka bu'a."
+msgstr "Yeroo jalqabaa. Yeroon jalqabaa ilaalamuu qaba. A = 1 yeroo jalqabaa bakka bu'a."
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_KUM_KAP_Z.10.String.Text
 #, fuzzy
@@ -7808,7 +7809,7 @@ msgstr "Baasii"
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_DIA.3.String.Text
 #, fuzzy
 msgid  "Acquisition costs. The initial cost of the asset."
-msgstr "Baasii argannaa. Baasii jalqabaa qabeenya dhaabbataa."
+msgstr "Baasiiwwan argamaa. Baasii jalqabaa qabeenya dhaabbataa."
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_DIA.4.String.Text
 #, fuzzy
@@ -7818,7 +7819,7 @@ msgstr "Haftee"
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_DIA.5.String.Text
 #, fuzzy
 msgid  "Salvage: The remaining value of the asset at the end of its life."
-msgstr "Haftee: Gatii haftee qabeenya dhaabbataa yeroo dhuma jireenya isaatti."
+msgstr "Haftee: Gatii haftee qabeenya dhaabbataa kan yeroo dhumaa jireenya isaa."
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_DIA.6.String.Text
 #, fuzzy
@@ -7828,7 +7829,7 @@ msgstr "Jireenya"
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_DIA.7.String.Text
 #, fuzzy
 msgid  "Useful life. The number of periods in the useful life of the asset."
-msgstr "Jireenya faayidaa qabu. Lakkoofsa yeroowwanii qabeenya dhaabbataa kan yero jireenya faayidaa qabuu."
+msgstr "Jireenya faayidaa qabu. Lakkoofsa yeroowwanii jireenya faayidaa qabuu qabeenya dhaabbataa keessaa."
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_DIA.8.String.Text
 #, fuzzy
@@ -7863,7 +7864,7 @@ msgstr "Haftee"
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_LIA.5.String.Text
 #, fuzzy
 msgid  "Salvage: The remaining value of the asset at the end of its life."
-msgstr "Haftee: Gatii haftee qabeenya dhaabbataa kan yeroo dhuma jireenya isaa."
+msgstr "Haftee: Gatii haftee qabeenya dhaabbataa kan yeroo dhumaa jireenya isaa."
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_LIA.6.String.Text
 #, fuzzy
@@ -7873,7 +7874,7 @@ msgstr "Jireenya"
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_LIA.7.String.Text
 #, fuzzy
 msgid  "Useful life. The number of periods in the useful life of the asset."
-msgstr "Jireenya faayidaa qabu. Lakkoofsa yeroowwanii jireenya faayidaa qabuu keessatti."
+msgstr "Jireenya faayidaa qabu. Lakkoofsa yeroowwanii jireenya faayidaa qabuu qabeenya dhaabbataa keessaa."
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_GDA.1.String.Text
 #, fuzzy
@@ -7908,7 +7909,7 @@ msgstr "Jireenya"
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_GDA.7.String.Text
 #, fuzzy
 msgid  "Useful life. The number of periods in the useful life of the asset."
-msgstr "Jireenya faayidaa qabu. Lakkoofsa Yeroowwanii kan jireenya faayidaa qabuu qabeenya dhaabbataa keessatti."
+msgstr "Jireenya faayidaa qabu. Lakkoofsa yeroowwanii qabeenya dhaabbataa kan yero jireenya faayidaa qabuu."
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_GDA.8.String.Text
 #, fuzzy
@@ -7923,7 +7924,7 @@ msgstr "Yeroo. Yeroo dullatoomaa safartuu yeroo fi galfata jireenya faayidaa qab
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_GDA.10.String.Text
 #, fuzzy
 msgid  "Factor"
-msgstr "Hirmaayaa"
+msgstr "Akkumsa"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_GDA.11.String.Text
 #, fuzzy
@@ -9583,7 +9584,7 @@ msgstr "lakkoofsa"
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_ROUND_UP.3.String.Text
 #, fuzzy
 msgid  "The number to be rounded up."
-msgstr "Lakkoofsa ol siiqsamu."
+msgstr "Lakkoofsa ol siiqfamu."
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_ROUND_UP.4.String.Text
 #, fuzzy
@@ -9633,7 +9634,7 @@ msgstr "Lakkoofsa"
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_EVEN.3.String.Text
 #, fuzzy
 msgid  "The number to be rounded up."
-msgstr "Lakkoofsa ol siiqsamu."
+msgstr "Lakkoofsa ol siiqfamu."
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_ODD.1.String.Text
 #, fuzzy
@@ -9967,7 +9968,7 @@ msgstr "Waraantoo deetaa Y."
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_RGP.4.String.Text
 #, fuzzy
 msgid  "data_X"
-msgstr "deeta_X"
+msgstr "deetaa_X"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_RGP.5.String.Text
 #, fuzzy
@@ -10062,7 +10063,7 @@ msgstr "deetaa_X"
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_TREND.5.String.Text
 #, fuzzy
 msgid  "The X data array as the basis for the regression."
-msgstr "Waraantoo deetaa X bu'uura riigreeshiniitti."
+msgstr "Waraantoo deetaa X akka bu'uura riigreeshiniitti."
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_TREND.6.String.Text
 #, fuzzy
@@ -10774,7 +10775,7 @@ msgstr "lakkoofsa"
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_PHI.3.String.Text
 #, fuzzy
 msgid  "The value for which the standard normal distribution is to be calculated."
-msgstr "Gatii raabsi baratamoo istaandaardii isaa herreegamu."
+msgstr "Gatii raabsa baratamoo istaandaardii isaa herreegamuu qabuu."
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_GAUSS.1.String.Text
 #, fuzzy
@@ -10844,7 +10845,7 @@ msgstr "yaaliiwwan"
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_BINOM_DIST.5.String.Text
 #, fuzzy
 msgid  "The total number of trials."
-msgstr "Lakkoofsa ida'ammii yaaliiwwanii."
+msgstr "Lakkoofsa yaaliiwwanii."
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_BINOM_DIST.6.String.Text
 #, fuzzy
@@ -11194,7 +11195,7 @@ msgstr "C"
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_EXP_DIST.7.String.Text
 #, fuzzy
 msgid  "Cumulated. C=0 calculates the density function, C=1 the distribution."
-msgstr "Sassaabame. C=0 fankishinii rukkinaa, C=1 raabsa."
+msgstr "Sassaabame. C=0 fankishinii rukkinaa herreega, C=1 raabsa."
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_GAMMA_DIST.1.String.Text
 #, fuzzy
@@ -11534,12 +11535,12 @@ msgstr "Gatii raabsi T isaa herreegamu."
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_T_DIST.4.String.Text
 #, fuzzy
 msgid  "degrees_freedom"
-msgstr "birmadummaa_diigrii"
+msgstr "birmadummaa_diigriiwwan"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_T_DIST.5.String.Text
 #, fuzzy
 msgid  "The degrees of freedom of the T distribution."
-msgstr "Diigrii birmadummaa raabsa T."
+msgstr "Birmadummaa diigrii raabsa T."
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_T_DIST.6.String.Text
 #, fuzzy
@@ -11568,7 +11569,7 @@ msgstr "Gatii proobaabilitii garagaltoon raabsa T isaa herreegamu."
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_T_INV.4.String.Text
 #, fuzzy
 msgid  "degrees_freedom"
-msgstr "birmadummaa_diigrii"
+msgstr "birmadummaa_diigriiwwan"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_T_INV.5.String.Text
 #, fuzzy
@@ -11668,7 +11669,7 @@ msgstr "birmadummaa_diigrii"
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_CHI_DIST.5.String.Text
 #, fuzzy
 msgid  "The degrees of freedom of the chi square distribution."
-msgstr "Diigrii bilisummaa raabsa chii-iskuweerii."
+msgstr "Birmadummaa diigrii raabsa iskuweerii chii."
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_CHISQ_DIST.1.String.Text
 #, fuzzy
@@ -11943,7 +11944,7 @@ msgstr "Yaalii F herreega."
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_F_TEST.2.String.Text
 #, fuzzy
 msgid  "data_1"
-msgstr "deetaa_1"
+msgstr "deeta_1"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_F_TEST.3.String.Text
 #, fuzzy
@@ -11953,7 +11954,7 @@ msgstr "Waraantoo kuusaa jalqabaa."
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_F_TEST.4.String.Text
 #, fuzzy
 msgid  "data_2"
-msgstr "deetaa_2"
+msgstr "deeta_2"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_F_TEST.5.String.Text
 #, fuzzy
@@ -12258,7 +12259,7 @@ msgstr "A1"
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_ADDRESS.9.String.Text
 #, fuzzy
 msgid  "The reference style: 0 or FALSE means R1C1 style, any other value or omitted means A1 style."
-msgstr "Akkaataa wabii: 0 ykn FALSE jechuun akkaataa R1C1, gatii biroo kamiyyuu ykn hin jirree jechuun akkaataa A1."
+msgstr "Akaakuu wabii: 0 ykn FALSE jechuun akkaataa R1C1, gatii biroo kamiyyuu ykn kan hin jirre jechuun akkaataa A1."
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_ADDRESS.10.String.Text
 #, fuzzy
@@ -15627,7 +15628,7 @@ msgstr "Gadi"
 #: source/ui/src/miscdlgs.src#RID_SCDLG_INSCONT.BTN_MV_RIGHT.RadioButton.Text
 #, fuzzy
 msgid  "~Right"
-msgstr "Mirga"
+msgstr "Mirgaatti"
 
 #: source/ui/src/miscdlgs.src#RID_SCDLG_INSCONT.FL_MOVE.FixedLine.Text
 #, fuzzy
@@ -16385,7 +16386,7 @@ msgstr "Faayiliin tarree 8192 boodaa deetaa ofkeessaa qaba, kanaaf dubbifamuu hi
 #: source/ui/src/scerrors.src#RID_ERRHDLSC.SCERR_IMPORT_FILE_ROWCOL & ERRCODE_RES_MASK.String.Text
 #, fuzzy
 msgid  "Format error discovered in the file in sub-document $(ARG1) at $(ARG2)(row,col)."
-msgstr "Faayilii galmee-xiqqaa $(ARG1) keessa bakka $(ARG2)(tarr,tarj) jiru keessatti dogoggorri dhangii argame."
+msgstr "Faayilii galmee-xiqqaa $(ARG1) keessaa bakka $(ARG2)(tarr,tarj) keessatti dogoggorri dhangii argame."
 
 #: source/ui/src/scerrors.src#RID_ERRHDLSC.SCERR_IMPORT_FORMAT_ROWCOL & ERRCODE_RES_MASK.String.Text
 #, fuzzy

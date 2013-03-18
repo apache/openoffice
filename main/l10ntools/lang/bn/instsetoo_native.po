@@ -872,7 +872,7 @@ msgstr "এই বৈশিষ্ট্যটি এবং সকল উপব�
 #: inc_openoffice/windows/msi_languages/UIText.ulf#OOO_UITEXT_10
 #, fuzzy
 msgid  "This feature will be installed to run from CD."
-msgstr "সিডি থেকে চালাতে এই বৈশিষ্ট্যটি সংস্থাপন করা হবে।"
+msgstr "এই বৈশিষ্ট্যটি সিডি থেকে চালাতে সংস্থাপন করা হবে।"
 
 #: inc_openoffice/windows/msi_languages/UIText.ulf#OOO_UITEXT_11
 #, fuzzy
@@ -1115,12 +1115,14 @@ msgid  "Removing IIS Virtual Roots..."
 msgstr "IIS Virtual Roots সরিয়ে ফেলছে..."
 
 #: inc_openoffice/windows/msi_languages/ActionTe.ulf#OOO_ACTIONTEXT_10
+#, fuzzy
 msgid  "Searching for qualifying products"
-msgstr "মানসম্মত পন্যের জন্য খোজ"
+msgstr "মানসম্মত পন্যের জন্য খোজঁ করা হচ্ছে"
 
 #: inc_openoffice/windows/msi_languages/ActionTe.ulf#OOO_ACTIONTEXT_11
+#, fuzzy
 msgid  "Computing space requirements"
-msgstr "জায়গার প্রয়োজনসমূহ গণনা করা হচ্ছে"
+msgstr "জায়গা পরিমাপ করা হচ্ছে"
 
 #: inc_openoffice/windows/msi_languages/ActionTe.ulf#OOO_ACTIONTEXT_12
 #, fuzzy
@@ -1133,8 +1135,9 @@ msgid  "Creating folders"
 msgstr "ফোল্ডারসমূহ তৈরি করা হচ্ছে"
 
 #: inc_openoffice/windows/msi_languages/ActionTe.ulf#OOO_ACTIONTEXT_14
+#, fuzzy
 msgid  "Folder: [1]"
-msgstr "ফোল্ডার:[1]"
+msgstr "ফোল্ডার: [1]"
 
 #: inc_openoffice/windows/msi_languages/ActionTe.ulf#OOO_ACTIONTEXT_15
 #, fuzzy
@@ -1142,8 +1145,9 @@ msgid  "Creating shortcuts"
 msgstr "শর্টকাটসমূহ তৈরি করা হচ্ছে"
 
 #: inc_openoffice/windows/msi_languages/ActionTe.ulf#OOO_ACTIONTEXT_16
+#, fuzzy
 msgid  "Shortcut: [1]"
-msgstr "শর্টকাট;[1]"
+msgstr "শর্টকাট:[1]"
 
 #: inc_openoffice/windows/msi_languages/ActionTe.ulf#OOO_ACTIONTEXT_17
 #, fuzzy
@@ -1151,8 +1155,9 @@ msgid  "Deleting services"
 msgstr "সেবাসমূহ মুছে ফেলা হচ্ছে"
 
 #: inc_openoffice/windows/msi_languages/ActionTe.ulf#OOO_ACTIONTEXT_18
+#, fuzzy
 msgid  "Service: [1]"
-msgstr "সেবা:[1]"
+msgstr "সেবা [1]"
 
 #: inc_openoffice/windows/msi_languages/ActionTe.ulf#OOO_ACTIONTEXT_19
 #, fuzzy
@@ -1160,8 +1165,9 @@ msgid  "Creating duplicate files"
 msgstr "অনুলিপি ফাইল তৈরি করা হচ্ছে"
 
 #: inc_openoffice/windows/msi_languages/ActionTe.ulf#OOO_ACTIONTEXT_20
+#, fuzzy
 msgid  "File: [1],  Directory: [9],  Size: [6]"
-msgstr "ফাইল:[1],ডিরেক্টরী:[9],আকার:[6]"
+msgstr "ফাইল:[1],নির্দেশিকা:[9],আকার:[6]"
 
 #: inc_openoffice/windows/msi_languages/ActionTe.ulf#OOO_ACTIONTEXT_21
 #, fuzzy
@@ -1204,8 +1210,9 @@ msgid  "Copying new files"
 msgstr "নতুন ফাইলসমূহ কপি করা হচ্ছে"
 
 #: inc_openoffice/windows/msi_languages/ActionTe.ulf#OOO_ACTIONTEXT_29
+#, fuzzy
 msgid  "File: [1],  Directory: [9],  Size: [6]"
-msgstr "ফাইল:[1],নির্দেশিকা:[9],আকার:[6]"
+msgstr "ফাইল:[1],ডিরেক্টরী:[9],আকার:[6]"
 
 #: inc_openoffice/windows/msi_languages/ActionTe.ulf#OOO_ACTIONTEXT_30
 #, fuzzy
@@ -1283,8 +1290,9 @@ msgid  "Publishing qualified components"
 msgstr "গুনগত উপাদান সমূহ প্রকাশ করা হচ্ছে"
 
 #: inc_openoffice/windows/msi_languages/ActionTe.ulf#OOO_ACTIONTEXT_45
+#, fuzzy
 msgid  "Component ID: [1], Qualifier: [2]"
-msgstr "উপাদানের আইডি:[1], কোয়ালিফায়ার: [2]"
+msgstr "উপাদান আইডি:[1],মান নির্ণায়ক:[2]"
 
 #: inc_openoffice/windows/msi_languages/ActionTe.ulf#OOO_ACTIONTEXT_46
 #, fuzzy
@@ -1292,8 +1300,9 @@ msgid  "Publishing product features"
 msgstr "প্রোডাক্টের বৈশিষ্ট্যসমূহ করা হচ্ছে"
 
 #: inc_openoffice/windows/msi_languages/ActionTe.ulf#OOO_ACTIONTEXT_47
+#, fuzzy
 msgid  "Feature: [1]"
-msgstr "বৈশিষ্ট্য:[1]"
+msgstr "বৈশিষ্ট্য:[1] "
 
 #: inc_openoffice/windows/msi_languages/ActionTe.ulf#OOO_ACTIONTEXT_48
 #, fuzzy
@@ -1306,8 +1315,9 @@ msgid  "Registering class servers"
 msgstr "শ্রেনী সার্ভার নিবন্ধন করছে"
 
 #: inc_openoffice/windows/msi_languages/ActionTe.ulf#OOO_ACTIONTEXT_50
+#, fuzzy
 msgid  "Class ID: [1]"
-msgstr "শ্রেনী ID: [1]"
+msgstr "শ্রেণীরID:[1]"
 
 #: inc_openoffice/windows/msi_languages/ActionTe.ulf#OOO_ACTIONTEXT_51
 #, fuzzy
@@ -1395,16 +1405,19 @@ msgid  "Removing duplicated files"
 msgstr "নকলকৃত ফাইল সরানো হচ্ছে"
 
 #: inc_openoffice/windows/msi_languages/ActionTe.ulf#OOO_ACTIONTEXT_68
+#, fuzzy
 msgid  "File: [1], Directory: [9]"
-msgstr "ফাইল;[1],নির্দেশিকা:[9]"
+msgstr "নথি:[1], নির্দেশিকা;[9]"
 
 #: inc_openoffice/windows/msi_languages/ActionTe.ulf#OOO_ACTIONTEXT_69
+#, fuzzy
 msgid  "Updating environment strings"
-msgstr "পারিপার্শ্বিক পংক্তিগুলো আপডেট করছে "
+msgstr "পারিপার্শ্বিক পংক্তিগুলো আপডেট করছে"
 
 #: inc_openoffice/windows/msi_languages/ActionTe.ulf#OOO_ACTIONTEXT_70
+#, fuzzy
 msgid  "Name: [1], Value: [2], Action [3]"
-msgstr "নাম:[1],মান:[2],কাজ;[3]"
+msgstr "নাম:[1],মান:[2],কাজ:[3]"
 
 #: inc_openoffice/windows/msi_languages/ActionTe.ulf#OOO_ACTIONTEXT_71
 #, fuzzy
@@ -1422,8 +1435,9 @@ msgid  "Removing files"
 msgstr "ফাইলসমূহ সরানো হচ্ছে"
 
 #: inc_openoffice/windows/msi_languages/ActionTe.ulf#OOO_ACTIONTEXT_74
+#, fuzzy
 msgid  "File: [1], Directory: [9]"
-msgstr "নথি:[1],নির্দেশিকা:[9]"
+msgstr "ফাইল;[1],নির্দেশিকা:[9]"
 
 #: inc_openoffice/windows/msi_languages/ActionTe.ulf#OOO_ACTIONTEXT_75
 #, fuzzy
@@ -1501,8 +1515,9 @@ msgid  "Registering modules"
 msgstr "মডিউল নিবন্ধন করা হচ্ছে"
 
 #: inc_openoffice/windows/msi_languages/ActionTe.ulf#OOO_ACTIONTEXT_90
+#, fuzzy
 msgid  "File: [1], Folder: [2]"
-msgstr "ফাইল:[1],ফোল্ডার;[2]"
+msgstr "ফাইল:[1],ফোল্ডার:[2]"
 
 #: inc_openoffice/windows/msi_languages/ActionTe.ulf#OOO_ACTIONTEXT_91
 #, fuzzy
@@ -1525,8 +1540,9 @@ msgid  "Starting services"
 msgstr "সেবা চালু করা হচ্ছে"
 
 #: inc_openoffice/windows/msi_languages/ActionTe.ulf#OOO_ACTIONTEXT_95
+#, fuzzy
 msgid  "Service: [1]"
-msgstr "সেবা;[1]"
+msgstr "সেবা:[1]"
 
 #: inc_openoffice/windows/msi_languages/ActionTe.ulf#OOO_ACTIONTEXT_96
 #, fuzzy
@@ -1812,8 +1828,9 @@ msgid  "OK"
 msgstr "ঠিক আছে"
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_12
+#, fuzzy
 msgid  "&Folder name:"
-msgstr "&ফোল্ডারের নাম:"
+msgstr "&ফোল্ডারের নাম"
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_13
 #, fuzzy
@@ -1826,8 +1843,9 @@ msgid  "< &Back"
 msgstr "< &পেছনে"
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_17
+#, fuzzy
 msgid  "&Change..."
-msgstr "&পরিবর্তন..."
+msgstr "&পরিবর্তন"
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_18
 #, fuzzy
@@ -1850,8 +1868,9 @@ msgid  "{&MSSansBold8}Network Location"
 msgstr "{&MSSansBold8}নেটওয়ার্ক অবস্থান"
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_22
+#, fuzzy
 msgid  "&Install"
-msgstr "&সংস্থাপন করুন"
+msgstr "&সংস্থাপন কুরুন"
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_23
 #, fuzzy
@@ -1869,12 +1888,14 @@ msgid  "Cancel"
 msgstr "বাতিল"
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_26
+#, fuzzy
 msgid  "&Next >"
-msgstr "&পরবর্তী"
+msgstr "&পরবর্তী>"
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_27
+#, fuzzy
 msgid  "{&TahomaBold10}Welcome to the Installation Wizard for [ProductName]"
-msgstr "{&TahomaBold10}[ProductName]সংস্থাপন উইজার্ডে স্বাগতম"
+msgstr "{&TahomaBold10}[ProductName] সংস্থাপন উইজার্ডে স্বাগতম"
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_28
 #, fuzzy
@@ -1882,8 +1903,9 @@ msgid  "The Installation Wizard will create a server image of [ProductName] at a
 msgstr "সংস্থাপন উইজার্ড একটি উল্লেখিত নেটওয়ার্ক অবস্থানে [ProductName] এর একটি সার্ভার চিত্র তৈরি করবে । চালিয়ে যেতে, পরবর্তী তে ক্লিক করুন।"
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_29
+#, fuzzy
 msgid  "&No"
-msgstr "&না"
+msgstr "&নম্বর"
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_30
 #, fuzzy
@@ -1941,8 +1963,9 @@ msgid  "&User Name:"
 msgstr "&ব্যবহারকারীর নাম"
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_43
+#, fuzzy
 msgid  "&Next >"
-msgstr "&পরবর্তী>"
+msgstr "&পরবর্তী"
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_45
 #, fuzzy
@@ -1960,8 +1983,9 @@ msgid  "Cancel"
 msgstr "বাতিল"
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_50
+#, fuzzy
 msgid  "&Change..."
-msgstr "&পরিবর্তন..."
+msgstr "&পরিবর্তন"
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_51
 #, fuzzy
@@ -2009,8 +2033,9 @@ msgid  "<selected feature path>"
 msgstr "<নির্বাচিত বৈশিষ্ট্য পথ>"
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_60
+#, fuzzy
 msgid  "&Next >"
-msgstr "&পরবর্তী >"
+msgstr "&পরবর্তী>"
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_61
 #, fuzzy
@@ -2083,8 +2108,9 @@ msgid  "&Change..."
 msgstr "&পরিবর্তন..."
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_79
+#, fuzzy
 msgid  "Click Next to install to this folder, or click Change to install to a different folder."
-msgstr "এই ফোল্ডারটিতে সংস্থাপন করতে পরবর্তী তে ক্লিক করুন, অথবা একটি আলাদা ফোল্ডারে সংস্থাপনকরতে পরিবর্তন তে ক্লিক করুন।"
+msgstr "এই ফোল্ডারটিতে সংস্থাপন করতে পরবর্তী তে ক্লিক করুন, অথবা একটি আলাদা ফোল্ডারে সংস্থাপন করতে পরিবর্তন তে ক্লিক করুন।"
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_80
 #, fuzzy
@@ -2152,8 +2178,9 @@ msgid  "The disk space required for the installation of the selected features."
 msgstr "নির্বাচিত বৈশিষ্ট্যের সংস্থাপনের জন্য ডিস্ক স্থান প্রয়োজন।"
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_97
+#, fuzzy
 msgid  "The highlighted volumes do not have enough disk space available for the currently selected features. You can remove files from the highlighted volumes, choose to install less features onto local drives, or select different destination drives."
-msgstr "বর্তমানে নির্বাচিত বৈশিষ্ট্যের জন্য চিহ্নিত ভলিউমে যথেষ্ট ডিস্ক স্থান বিদ্যমান নেই। আপনি চিহ্নিত ভলিউম থেকে ফাইল সরিয়ে দিতে পারেন, স্থানীয় ড্রাইভের ওপর কম বৈশিষ্ট্য সংস্থাপন করতে পছন্দ করুন, অথবা আলাদা গন্তব্য ড্রাইভ নির্বাচন করুন।"
+msgstr "নির্বাচিত বৈশিষ্ট্যের জন্য চিহ্নিত ভলিউমের বর্তমানে যথেষ্ট ডিস্ক স্থান প্রাপ্তিসাধ্য নেই। আপনি চিহ্নিত ভলিউম থেকে ফাইল সরিয়ে দিতে পারেন, স্থানীয় ড্রাইভে স্বল্প বৈশিষ্ট্য সংস্থাপন করতে পছন্দ করতে পারেন, অথবা আলাদা গন্তব্য ড্রাইভ নির্বাচন করুন।"
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_98
 #, fuzzy
@@ -2186,12 +2213,14 @@ msgid  "&Exit"
 msgstr "&প্রস্থান করুন"
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_107
+#, fuzzy
 msgid  "&Ignore"
-msgstr "&উপেক্ষা করুন"
+msgstr "&উপেক্ষা কর"
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_108
+#, fuzzy
 msgid  "&Retry"
-msgstr "&আবার চেষ্টা কর"
+msgstr "&আবার চেষ্টা করুন"
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_111
 #, fuzzy
@@ -2253,8 +2282,9 @@ msgid  "&Next >"
 msgstr "&পরবর্তী >"
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_126
+#, fuzzy
 msgid  "{&TahomaBold10}Welcome to the Installation Wizard for [ProductName]"
-msgstr "{&TahomaBold10} [ProductName] সংস্থাপন উইজার্ডে স্বাগতম"
+msgstr "{&TahomaBold10}[ProductName] সংস্থাপন উইজার্ডে স্বাগতম"
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_127
 #, fuzzy
@@ -2507,20 +2537,24 @@ msgid  "Click Finish to exit the wizard."
 msgstr "উইজার্ড শেষ করতে ক্লিক করুন।"
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_188
+#, fuzzy
 msgid  "You can either keep any existing installed elements on your system to continue this installation at a later time or you can restore your system to its original state prior to the installation."
-msgstr "আপনি পরবর্তী সময়ে এই সংস্থাপনটি চালিয়ে যেতে আপনার সিস্টেমে যেকোন বিদ্যমান ইনস্টল উপাদান রাখতে পারেন অথবা আপনি এর মূল অবস্থার পূর্ব ইনস্টলেশনে আপনার সিস্টেমে পুনরুদ্ধার করতে পারেন।"
+msgstr "পরবর্তী সময়ে এই সংস্থাপনটি চালিয়ে যেতে আপনি  আপনার সিস্টেমে যেকোন বিদ্যমান সংস্থাপিত উপাদান রাখতে পারেন অথবা আপনি আপনার সিস্টেমকে  সংস্থাপনের পূর্বে এর প্রকৃত অবস্থায় ফিরিয়ে নিতে পারেন।"
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_189
+#, fuzzy
 msgid  "Click Restore or Continue Later to exit the wizard."
-msgstr "ফিরিয়ে আনতে ক্লিক করুন অথবা পরবর্তীতে চালানোর জন্য উইজার্ড ত্যাগ করুন।"
+msgstr "উইজার্ড ত্যাগ করতে পুন:স্থাপন অথবা পরবর্তীতে ক্লিক করুন।"
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_190
+#, fuzzy
 msgid  "{&TahomaBold10}Installation Wizard Completed"
-msgstr "{&TahomaBold10} সংস্থাপন উইজার্ড সম্পন্ন"
+msgstr "{&TahomaBold10}সংস্থাপন উইজার্ড সম্পন্ন"
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_191
+#, fuzzy
 msgid  "The wizard was interrupted before [ProductName] could be completely installed."
-msgstr "[ProductName] সম্পূর্ণভাবে সংস্থাপন করার পূর্বে উইজার্ডের ধারাবাহিকতা ভঙ্গ করা হয়েছিল।"
+msgstr " [ProductName] সম্পূর্ণভাবে সংস্থাপনের পূর্বে উইজার্ডের ধারাবাহিকতা ভঙ্গ করা হয়েছিল।"
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_192
 #, fuzzy

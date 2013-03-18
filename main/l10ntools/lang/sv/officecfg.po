@@ -521,7 +521,7 @@ msgstr "Betalningsvillkor"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.business.Tables.suppliers.Fields.paymentterms.ShortName
 msgid  "PaymntTerm"
-msgstr "Betalvillkor"
+msgstr "BetVillkor"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.business.Tables.suppliers.Fields.emailaddress.Name
 msgid  "EmailAddress"
@@ -1437,7 +1437,7 @@ msgstr "Leveranstel"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.business.Tables.orders.Fields.shipphonenumber.ShortName
 msgid  "ShipPhonNo"
-msgstr "LevTelNr"
+msgstr "LevTelnr"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.business.Tables.orders.Fields.shipdate.Name
 msgid  "ShipDate"
@@ -5357,7 +5357,7 @@ msgstr "Distinkta värden"
 
 #: registry/data/org/openoffice/Office/UI/DbuCommands.xcu#DbuCommands.UserInterface.Commands..uno:DBEdit.Label
 msgid  "Edit..."
-msgstr "Redigera..."
+msgstr "Redigera…"
 
 #: registry/data/org/openoffice/Office/UI/DbuCommands.xcu#DbuCommands.UserInterface.Commands..uno:DBEditSqlView.Label
 msgid  "Edit in SQL View..."
@@ -5377,7 +5377,7 @@ msgstr "Öppna databasobjekt..."
 
 #: registry/data/org/openoffice/Office/UI/DbuCommands.xcu#DbuCommands.UserInterface.Commands..uno:DBFormRename.Label
 msgid  "Rename..."
-msgstr "Byt namn…"
+msgstr "Byt namn..."
 
 #: registry/data/org/openoffice/Office/UI/DbuCommands.xcu#DbuCommands.UserInterface.Commands..uno:DBIndexDesign.Label
 msgid  "Index Design..."
@@ -5461,11 +5461,11 @@ msgstr "Öppna databasobjekt..."
 
 #: registry/data/org/openoffice/Office/UI/DbuCommands.xcu#DbuCommands.UserInterface.Commands..uno:DBQueryPreview.Label
 msgid  "Preview"
-msgstr "Förhandsvisning"
+msgstr "Förhandsgranskning"
 
 #: registry/data/org/openoffice/Office/UI/DbuCommands.xcu#DbuCommands.UserInterface.Commands..uno:DBQueryRename.Label
 msgid  "Rename..."
-msgstr "Byt namn..."
+msgstr "Byt namn…"
 
 #: registry/data/org/openoffice/Office/UI/DbuCommands.xcu#DbuCommands.UserInterface.Commands..uno:DBRefreshTables.Label
 msgid  "Refresh Tables"
@@ -8805,7 +8805,7 @@ msgstr "Schackbräde"
 
 #: registry/data/org/openoffice/Office/UI/Effects.xcu#Effects.UserInterface.Effects.ooo-entrance-circle.Label
 msgid  "Circle"
-msgstr "Cirkel"
+msgstr "Cirkel "
 
 #: registry/data/org/openoffice/Office/UI/Effects.xcu#Effects.UserInterface.Effects.ooo-entrance-fly-in-slow.Label
 msgid  "Fly in Slow"
@@ -8813,7 +8813,7 @@ msgstr "Flyga in långsamt"
 
 #: registry/data/org/openoffice/Office/UI/Effects.xcu#Effects.UserInterface.Effects.ooo-entrance-diamond.Label
 msgid  "Diamond"
-msgstr "Romb"
+msgstr "Rutor diagonalt"
 
 #: registry/data/org/openoffice/Office/UI/Effects.xcu#Effects.UserInterface.Effects.ooo-entrance-dissolve-in.Label
 msgid  "Dissolve In"
@@ -8849,7 +8849,7 @@ msgstr "Dela"
 
 #: registry/data/org/openoffice/Office/UI/Effects.xcu#Effects.UserInterface.Effects.ooo-entrance-stretchy.Label
 msgid  "Stretchy"
-msgstr "Stretchig"
+msgstr "Tänjbar"
 
 #: registry/data/org/openoffice/Office/UI/Effects.xcu#Effects.UserInterface.Effects.ooo-entrance-diagonal-squares.Label
 msgid  "Diagonal Squares"
@@ -12249,7 +12249,7 @@ msgstr "Cylinder"
 
 #: registry/data/org/openoffice/Office/UI/GenericCommands.xcu#GenericCommands.UserInterface.Commands..uno:BasicShapes.circle.Label
 msgid  "Circle"
-msgstr "Cirkel "
+msgstr "Cirkel"
 
 #: registry/data/org/openoffice/Office/UI/GenericCommands.xcu#GenericCommands.UserInterface.Commands..uno:BasicShapes.circle-pie.Label
 msgid  "Circle Pie"
@@ -12413,7 +12413,7 @@ msgstr ""
 
 #: registry/data/org/openoffice/Office/UI/GenericCommands.xcu#GenericCommands.UserInterface.Commands..uno:CalloutShapes.Label
 msgid  "Callouts"
-msgstr "Förklaring"
+msgstr "Förklaringar"
 
 #: registry/data/org/openoffice/Office/UI/GenericCommands.xcu#GenericCommands.UserInterface.Commands..uno:CalloutShapes.cloud-callout.Label
 msgid  "Cloud"
@@ -12605,7 +12605,7 @@ msgstr "Standard"
 
 #: registry/data/org/openoffice/Office/UI/GenericCommands.xcu#GenericCommands.UserInterface.Commands..uno:CommonAlignJustified.Label
 msgid  "Justified"
-msgstr "Marginaljusterat"
+msgstr "Marginaljustering"
 
 #: registry/data/org/openoffice/Office/UI/GenericCommands.xcu#GenericCommands.UserInterface.Commands..uno:CommonAlignLeft.Label
 msgid  "Left"
@@ -13397,7 +13397,7 @@ msgstr "Färgpalett"
 
 #: registry/data/org/openoffice/Office/UI/GenericCommands.xcu#GenericCommands.UserInterface.Commands..uno:GoDown.Label
 msgid  "Move Down"
-msgstr "Flytta ned"
+msgstr "Nedåt"
 
 #: registry/data/org/openoffice/Office/UI/GenericCommands.xcu#GenericCommands.UserInterface.Commands..uno:GoDownBlock.Label
 msgid  "Page Down"
@@ -13469,7 +13469,7 @@ msgstr "Markera till början av filen"
 
 #: registry/data/org/openoffice/Office/UI/GenericCommands.xcu#GenericCommands.UserInterface.Commands..uno:GoUp.Label
 msgid  "Move Up"
-msgstr "Flytta upp"
+msgstr "Uppåt"
 
 #: registry/data/org/openoffice/Office/UI/GenericCommands.xcu#GenericCommands.UserInterface.Commands..uno:GoUpBlock.Label
 msgid  "Page Up"
@@ -15137,7 +15137,7 @@ msgstr "Större"
 
 #: registry/data/org/openoffice/Office/UI/GenericCommands.xcu#GenericCommands.UserInterface.Commands..uno:ZoomMinus.Label
 msgid  "Zoom Out"
-msgstr "Mindre"
+msgstr "Förminska"
 
 #: registry/data/org/openoffice/Office/UI/GenericCommands.xcu#GenericCommands.UserInterface.Commands..uno:ZoomNext.Label
 msgid  "Zoom Next"

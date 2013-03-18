@@ -991,7 +991,7 @@ msgstr "उजवे समास (~i)"
 #: source/dialog/hdft.src#RID_SVXPAGE_HEADER.TabPage.Text
 #, fuzzy
 msgid  "Header"
-msgstr "माथासमास पाठ्य"
+msgstr "शीर्षलेख"
 
 #: source/dialog/hdft.src#RID_SVXPAGE_HEADER.CB_TURNON.CheckBox.Text
 #, fuzzy
@@ -1001,17 +1001,17 @@ msgstr "शिर्षओळ सुरू (~d)"
 #: source/dialog/hdft.src#RID_SVXPAGE_HEADER.CB_SHARED.CheckBox.Text
 #, fuzzy
 msgid  "Same ~content left/right"
-msgstr "समान अंतर्भूत माहिती डावा/उजवा (~c)"
+msgstr "समान विषय डावा/उजवा (~c)"
 
 #: source/dialog/hdft.src#RID_SVXPAGE_HEADER.FT_DIST.FixedText.Text
 #, fuzzy
 msgid  "~Spacing"
-msgstr "अंतर (~S)"
+msgstr "अंतर द्या (~S)"
 
 #: source/dialog/hdft.src#RID_SVXPAGE_HEADER.CB_DYNSPACING.CheckBox.Text
 #, fuzzy
 msgid  "Use d~ynamic spacing"
-msgstr "प्रभावी अंतरचा वापर करा (~y)"
+msgstr "प्रभावी अंतरण वापरा (~y)"
 
 #: source/dialog/hdft.src#RID_SVXPAGE_HEADER.FT_HEIGHT.FixedText.Text
 #, fuzzy
@@ -2047,7 +2047,7 @@ msgstr "शैलींचा शोध करा (~y)"
 #: source/dialog/srchdlg.src#RID_SVXDLG_SEARCH.CB_NOTES.CheckBox.Text
 #, fuzzy
 msgid  "Notes"
-msgstr "टिपा"
+msgstr "टीपा"
 
 #: source/dialog/srchdlg.src#RID_SVXDLG_SEARCH.CB_JAP_MATCH_FULL_HALF_WIDTH.CheckBox.Text
 #, fuzzy
@@ -2132,7 +2132,7 @@ msgstr "कमी पर्याय (~O)"
 #: source/dialog/frmsel.src#RID_SVXSTR_BORDER_CONTROL.ARR_TEXTS.0.ItemList.item
 #, fuzzy
 msgid  "Border setting"
-msgstr "सीमारेखा नियंत्रणे"
+msgstr "सीमारेखा नियंत्रण"
 
 #: source/dialog/frmsel.src#RID_SVXSTR_BORDER_CONTROL.ARR_TEXTS.1.ItemList.item
 #, fuzzy
@@ -7130,8 +7130,9 @@ msgid  "Rel. Font size"
 msgstr "रिल. फॉन्ट आकारमान"
 
 #: source/items/svxitems.src#RID_ATTR_NAMES.SID_ATTR_CHAR_COLOR.ItemList.item
+#, fuzzy
 msgid  "Font color"
-msgstr "फॉन्ट रंग"
+msgstr "फोन्ट रंग"
 
 #: source/items/svxitems.src#RID_ATTR_NAMES.SID_ATTR_CHAR_KERNING.ItemList.item
 #, fuzzy
@@ -8266,8 +8267,9 @@ msgid  "draw object"
 msgstr "वस्तू रेखाटा"
 
 #: source/svdraw/svdstr.src#STR_ObjNamePluralNONE.String.Text
+#, fuzzy
 msgid  "draw objects"
-msgstr "वस्तूंना आरेखित करा"
+msgstr "वस्तू आरेखित करा"
 
 #: source/svdraw/svdstr.src#STR_ObjNameSingulGRUP.String.Text
 #, fuzzy
@@ -9008,13 +9010,14 @@ msgid  "Reverse order of %1"
 msgstr "%1 चा क्रम उलटवा"
 
 #: source/svdraw/svdstr.src#STR_EditMove.String.Text
+#, fuzzy
 msgid  "Move %1"
-msgstr "%1हलवा"
+msgstr "%1 हलवा"
 
 #: source/svdraw/svdstr.src#STR_EditResize.String.Text
 #, fuzzy
 msgid  "Resize %1"
-msgstr " %1 ला पुनः आकारित करा"
+msgstr "%1 ला पुनःआकारित करा"
 
 #: source/svdraw/svdstr.src#STR_EditRotate.String.Text
 #, fuzzy
@@ -9024,7 +9027,7 @@ msgstr "%1 ला फिरवा"
 #: source/svdraw/svdstr.src#STR_EditMirrorHori.String.Text
 #, fuzzy
 msgid  "Flip %1 horizontal"
-msgstr "%1 आडव्या स्वरूपात दुमडा"
+msgstr "%1 आडव्या रूपात दुमडा"
 
 #: source/svdraw/svdstr.src#STR_EditMirrorVert.String.Text
 #, fuzzy
@@ -9044,22 +9047,22 @@ msgstr "%1 मुक्तहस्ते दुमडा"
 #: source/svdraw/svdstr.src#STR_EditShear.String.Text
 #, fuzzy
 msgid  "Distort %1 (slant)"
-msgstr "%1 अनियत बदल करा (उतार)"
+msgstr "%1अनियत बदल करा (उतार)"
 
 #: source/svdraw/svdstr.src#STR_EditCrook.String.Text
 #, fuzzy
 msgid  "Arrange %1 in circle"
-msgstr "%1 वर्तुळात मांडणी करा"
+msgstr "%1वर्तुळात मांडणी करा"
 
 #: source/svdraw/svdstr.src#STR_EditCrookContortion.String.Text
 #, fuzzy
 msgid  "Curve %1 in circle"
-msgstr "वर्तुळात%1 वक्र"
+msgstr "वर्तुळात %1वक्र"
 
 #: source/svdraw/svdstr.src#STR_EditDistort.String.Text
 #, fuzzy
 msgid  "Distort %1"
-msgstr "%1  अनियत बदल करा"
+msgstr "%1अनियत बदल करा"
 
 #: source/svdraw/svdstr.src#STR_EditRipUp.String.Text
 #, fuzzy
@@ -9289,7 +9292,7 @@ msgstr "भौमितीय बदल %1"
 #: source/svdraw/svdstr.src#STR_DragMethMove.String.Text
 #, fuzzy
 msgid  "Move %1"
-msgstr " %1 हलवा"
+msgstr "%1हलवा"
 
 #: source/svdraw/svdstr.src#STR_DragMethResize.String.Text
 #, fuzzy
@@ -9964,7 +9967,7 @@ msgstr "अधिकतम चौकट रुंदी"
 #: source/svdraw/svdstr.src#STR_ItemNam_TEXT_VERTADJUST.String.Text
 #, fuzzy
 msgid  "Vertical text anchor"
-msgstr "लंबरूप मजकूर स्थानधारक"
+msgstr "उभ्या स्वरूपात मजकूर स्थानधारक"
 
 #: source/svdraw/svdstr.src#STR_ItemNam_TEXT_HORZADJUST.String.Text
 #, fuzzy
@@ -10054,7 +10057,7 @@ msgstr "स्तर (~v)"
 #: source/svdraw/svdstr.src#STR_ItemNam_OBJECTNAME.String.Text
 #, fuzzy
 msgid  "Object name"
-msgstr "वस्तुचे नाव"
+msgstr "वस्तूचे नाव"
 
 #: source/svdraw/svdstr.src#STR_ItemNam_STARTANGLE.String.Text
 #, fuzzy
@@ -11459,8 +11462,9 @@ msgid  "Extrusion South-East"
 msgstr "निष्कासन उत्तर-पूर्व"
 
 #: source/tbxctrls/extrusioncontrols.src#RID_SVXFLOAT_EXTRUSION_DEPTH.DockingWindow.Text
+#, fuzzy
 msgid  "Extrusion Depth"
-msgstr "निष्कासन खोली"
+msgstr "निष्कासन खोलता"
 
 #: source/tbxctrls/extrusioncontrols.src#RID_SVXFLOAT_EXTRUSION_DEPTH.STR_CUSTOM.String.Text
 #, fuzzy
@@ -11628,8 +11632,9 @@ msgid  "S~tretch Justify"
 msgstr "ताण समर्थित करा (~t)"
 
 #: source/tbxctrls/fontworkgallery.src#RID_SVXFLOAT_FONTWORK_CHARSPACING.DockingWindow.Text
+#, fuzzy
 msgid  "Fontwork Character Spacing"
-msgstr "फॉन्टवर्क अक्षर अंतर देणे"
+msgstr "फॉन्टवर्क अक्षर अंतर"
 
 #: source/tbxctrls/fontworkgallery.src#RID_SVXFLOAT_FONTWORK_CHARSPACING.STR_CHARS_SPACING_VERY_TIGHT.String.Text
 #, fuzzy

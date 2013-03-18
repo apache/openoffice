@@ -133,7 +133,7 @@ msgstr "~Δεξιά"
 
 #: inc/globlmn_tmpl.hrc#SID_ATTR_PARA_ADJUST_CENTER.#define.Text
 msgid  "~Centered"
-msgstr "Στο κέ~ντρο"
+msgstr "Κέ~ντρο"
 
 #: inc/globlmn_tmpl.hrc#SID_ATTR_PARA_ADJUST_BLOCK.#define.Text
 msgid  "Justified"
@@ -2213,7 +2213,7 @@ msgstr "Γραμμή πλαισίου -πάνω"
 #: source/dialog/frmsel.src#RID_SVXSTR_BORDER_CONTROL.ARR_TEXTS.4.ItemList.item
 #, fuzzy
 msgid  "Bottom border line"
-msgstr "Γραμμή πλαισίου -κάτω"
+msgstr "Κάτω περίγραμμα σελίδας"
 
 #: source/dialog/frmsel.src#RID_SVXSTR_BORDER_CONTROL.ARR_TEXTS.5.ItemList.item
 #, fuzzy
@@ -6103,7 +6103,7 @@ msgstr "~Προσθήκη..."
 #: source/form/datanavi.src#RID_SVXWIN_DATANAVIGATOR.MB_MODELS.MID_MODELS_EDIT.MenuItem.Text
 #, fuzzy
 msgid  "~Edit..."
-msgstr "~Επεξεργασία..."
+msgstr "~Επεξεργασία"
 
 #: source/form/datanavi.src#RID_SVXWIN_DATANAVIGATOR.MB_MODELS.MID_MODELS_REMOVE.MenuItem.Text
 #, fuzzy
@@ -8433,8 +8433,9 @@ msgid  "Arcs"
 msgstr "Κυκλικά τόξα"
 
 #: source/svdraw/svdstr.src#STR_ObjNameSingulCCUT.String.Text
+#, fuzzy
 msgid  "Circle segment"
-msgstr "Τμήματα κύκλου"
+msgstr "Τμήμα κύκλου"
 
 #: source/svdraw/svdstr.src#STR_ObjNamePluralCCUT.String.Text
 #, fuzzy
@@ -8552,8 +8553,9 @@ msgid  "Freeform Lines"
 msgstr "Γραμμές ελεύθερης σχεδίασης"
 
 #: source/svdraw/svdstr.src#STR_ObjNameSingulCOMBLINE.String.Text
+#, fuzzy
 msgid  "Curve"
-msgstr "Καμπύλες Bézier"
+msgstr "Καμπύλη"
 
 #: source/svdraw/svdstr.src#STR_ObjNamePluralCOMBLINE.String.Text
 #, fuzzy
@@ -9029,8 +9031,9 @@ msgid  "Rotate %1"
 msgstr "Περιστροφή %1"
 
 #: source/svdraw/svdstr.src#STR_EditMirrorHori.String.Text
+#, fuzzy
 msgid  "Flip %1 horizontal"
-msgstr "Οριζόντια αναστροφή %1"
+msgstr "Οριζόντια ανατροφή %1"
 
 #: source/svdraw/svdstr.src#STR_EditMirrorVert.String.Text
 #, fuzzy
@@ -9558,8 +9561,9 @@ msgid  "Change object description of %1"
 msgstr "Αλλαγή περιγραφής αντικειμένου από %1"
 
 #: source/svdraw/svdstr.src#STR_StandardLayerName.String.Text
+#, fuzzy
 msgid  "Standard"
-msgstr "Τυπική"
+msgstr "Προεπιλογή"
 
 #: source/svdraw/svdstr.src#STR_ItemValON.String.Text
 #, fuzzy

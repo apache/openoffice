@@ -193,7 +193,7 @@ msgstr "Atlikušais laiks: {[1] minūtes }{[2] sekundes}"
 
 #: inc_openoffice/windows/msi_languages/Error.ulf#OOO_ERROR_16
 msgid  "Out of memory. Shut down other applications before retrying."
-msgstr "Nepietiek atmiņas. Aizveriet citas lietotnes pirms atkārtošanas."
+msgstr "Nepietiek atmiņas. Aizveriet citas lietotnes un atkārtojiet."
 
 #: inc_openoffice/windows/msi_languages/Error.ulf#OOO_ERROR_17
 msgid  "Installer is no longer responding."
@@ -705,7 +705,7 @@ msgstr "Šī iespēja un visas apakšiespējas, tiks instalētas, lai palaistu n
 
 #: inc_openoffice/windows/msi_languages/UIText.ulf#OOO_UITEXT_10
 msgid  "This feature will be installed to run from CD."
-msgstr "Šī iespēja tiks instalēta, lai palaistu no CD."
+msgstr "Šī iespēja tiks instalēt, lai palaistu no CD."
 
 #: inc_openoffice/windows/msi_languages/UIText.ulf#OOO_UITEXT_11
 msgid  "This feature will be installed on local hard drive."
@@ -901,7 +901,7 @@ msgstr "Izņem IIS virtuālās saknes..."
 
 #: inc_openoffice/windows/msi_languages/ActionTe.ulf#OOO_ACTIONTEXT_10
 msgid  "Searching for qualifying products"
-msgstr "Meklē atbilstošos produktus"
+msgstr "Meklē vajadzīgos produktus"
 
 #: inc_openoffice/windows/msi_languages/ActionTe.ulf#OOO_ACTIONTEXT_11
 msgid  "Computing space requirements"
@@ -1741,7 +1741,7 @@ msgstr "[INSTALLDIR]"
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_92
 msgid  "Install [ProductName] to:"
-msgstr "Instalēt [ProductName] uz:"
+msgstr "Instalētu [ProductName] uz:"
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_93
 msgid  "&Next >"
@@ -1753,7 +1753,7 @@ msgstr "Izvēlēto iespēju instalēšanai nepieciešamā vieta uz diska."
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_97
 msgid  "The highlighted volumes do not have enough disk space available for the currently selected features. You can remove files from the highlighted volumes, choose to install less features onto local drives, or select different destination drives."
-msgstr "Izceltajos sējumos pašreiz izvēlētajām iespējām nepietiek brīvas vietas. Jūs varat izdzēst failus no izceltiem sējumiem, izvēlēties uz cietā diska instalēt mazāk iespēju, vai izvēlēties citus mērķa diskus."
+msgstr "Izceltajos sējumos pašlaik izvēlētajām iespējām nepietiek brīvas vietas. Jūs varat izdzēst failus no izceltiem sējumiem, izvēlēties uz cietā diska instalēt mazāk iespēju, vai izvēlēties citus mērķa diskus."
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_98
 msgid  "{&MSSansBold8}Disk Space Requirements"
@@ -2041,7 +2041,7 @@ msgstr "Spiediet 'Beigt', lai izietu no vedņa."
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_188
 msgid  "You can either keep any existing installed elements on your system to continue this installation at a later time or you can restore your system to its original state prior to the installation."
-msgstr "Jūs varat atstāt pašreiz jūsu sistēmā instalētos elementus, lai turpinātu instalēšanu vēlāk, vai arī varat atjaunot jūsu sistēmu stāvoklī, kādā tā bija pirms instalēšanas."
+msgstr "Jūs varat atstāt pašlaik sistēmā instalētos elementus, lai turpinātu instalēšanu vēlāk, vai arī varat atjaunot jūsu sistēmu stāvoklī, kādā tā bija pirms instalēšanas."
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_189
 msgid  "Click Restore or Continue Later to exit the wizard."

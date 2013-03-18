@@ -341,7 +341,7 @@ msgstr "Fant feil med filformat ved $(ARG1)(row,col)"
 
 #: source/core/glob.src#RID_SD_ERRHDL.ERR_CODE ( ERRCODE_CLASS_READ , ERR_FORMAT_FILE_ROWCOL ).String.Text
 msgid  "Format error discovered in the file in sub-document $(ARG1) at position $(ARG2)(row,col)."
-msgstr "Formatfeil oppdaget i fila i underdokumentet $(ARG1) ved $(ARG2)(row,col)"
+msgstr "Format-feil funnet i underdokument $(ARG1) ved posisjon $(ARG2)(row,col)."
 
 #: source/core/glob.src#RID_SD_ERRHDL.ERR_CODE ( ERRCODE_CLASS_READ , WARN_FORMAT_FILE_ROWCOL ).String.Text
 msgid  "Format error discovered in the file in sub-document $(ARG1) at position $(ARG2)(row,col)."
@@ -1757,7 +1757,7 @@ msgstr "Gi navn til objekt"
 
 #: source/ui/app/strings.src#STR_DESC_NAMEGROUP.String.Text
 msgid  "Name"
-msgstr "Skriv inn et navn for objektet"
+msgstr "Navn"
 
 #: source/ui/app/strings.src#STR_WARN_PAGE_EXISTS.String.Text
 msgid  "The slide name already exists or is invalid. Please enter another name."
@@ -2781,7 +2781,7 @@ msgstr "Posisjon og ~størrelse …"
 
 #: source/ui/app/menuids_tmpl.src#MN_EDIT_POINTS.SID_BEZIER_EDIT.MenuItem.Text
 msgid  "Edit ~Points"
-msgstr "Rediger ~festepunkter"
+msgstr "Rediger ~punkter"
 
 #: source/ui/app/menuids_tmpl.src#MN_POSITION.SID_POSITION.MenuItem.Text
 msgid  "Arra~nge"

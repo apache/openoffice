@@ -741,7 +741,7 @@ msgstr "འ་ནི་འདི་ ཝིན་མིང་ཚིག་༩༧�
 
 #: source/ui/app/error.src#RID_SW_ERRHDL.ERR_CODE ( ERRCODE_CLASS_READ , ERR_FORMAT_FILE_ROWCOL ).String.Text
 msgid  "Format error discovered in the file in sub-document $(ARG1) at $(ARG2)(row,col)."
-msgstr "རྩ་སྒྲིག་འཛོལ་བ་འདི་  $(ARG2)(གྲལ་ཐིག་  ཀེར་ཐིག་) གི་ ཡན་ལག་ཡིག་ཆ་ $(ARG1) ནང་གི་ ཡིག་སྣོད་འདི་ནང་གསར་རྙེད་འབད་ཡོད།"
+msgstr "རྩ་སྒྲིག་འཛོལ་བ་འདི་ $(ARG2)(གྲལ་ཐིག་  ཀེར་ཐིག་)གི་ ཡན་ལག་ཡིག་ཆ་ $(ARG1) ནང་གི་ཡིག་སྣོད་ ནང་ལུ་ གསར་རྙེད་འབད་ཡོད།"
 
 #: source/ui/app/error.src#RID_SW_ERRHDL.ERR_CODE ( ERRCODE_CLASS_WRITE , ERR_SWG_WRITE_ERROR ).String.Text
 msgid  "Error writing file."
@@ -753,7 +753,7 @@ msgstr "རང་བཞིན་ཚིག་ཡིག་ ཡིག་ཆའི�
 
 #: source/ui/app/error.src#RID_SW_ERRHDL.ERR_CODE ( ERRCODE_CLASS_WRITE , ERR_WRITE_ERROR_FILE ).String.Text
 msgid  "Error in writing sub-document $(ARG1)."
-msgstr "ཡན་ལག་ཡིག་ཆ་ $(ARG1) འབྲིཝ་ད་འཛོལ་བ།"
+msgstr "ཡན་ལག་ཡིག་ཆ་ $(ARG1) འབྲི་བའི་འཛོལ་བ།"
 
 #: source/ui/app/error.src#RID_SW_ERRHDL.ERR_CODE ( ERRCODE_CLASS_READ , ERR_SWG_INTERNAL_ERROR ).String.Text
 msgid  "Internal error in %PRODUCTNAME Writer file format."
@@ -1390,12 +1390,12 @@ msgstr "བར་སྟོང་ (~E) འདྲ་མཉམ།"
 #: source/ui/app/mn.src#MN_TAB2.MN_SUB_TBLROW.FN_TABLE_SELECT_ROW.MenuItem.Text
 #, fuzzy
 msgid  "~Select"
-msgstr "སེལ་འཐུ།(~S)"
+msgstr "སེལ་འཐུ། (~S)"
 
 #: source/ui/app/mn.src#MN_TAB2.MN_SUB_TBLROW.FN_TABLE_INSERT_ROW_DLG.MenuItem.Text
 #, fuzzy
 msgid  "~Insert..."
-msgstr "བཙུགས། (~I)"
+msgstr "བཙུགས་ (~I)"
 
 #: source/ui/app/mn.src#MN_TAB2.MN_SUB_TBLROW.FN_TABLE_DELETE_ROW.MenuItem.Text
 #, fuzzy
@@ -1536,7 +1536,7 @@ msgstr "ལོག་མཚམས་མེད།(~N)"
 #: source/ui/app/mn.src#MN_MOUSE_FRAME_BEGIN.MN_WRAP.FN_FRAME_WRAP.MenuItem.Text
 #, fuzzy
 msgid  "~Page Wrap"
-msgstr "ཤོག་ལེབ་ལོག་མཚམས།"
+msgstr "ལོག་ལེབ་ལོག་མཚམས། (~P)"
 
 #: source/ui/app/mn.src#MN_MOUSE_FRAME_BEGIN.MN_WRAP.FN_FRAME_WRAP_IDEAL.MenuItem.Text
 #, fuzzy
@@ -2935,7 +2935,7 @@ msgstr "བཙུགས་པ།"
 #: source/ui/config/redlopt.src#TP_REDLINE_OPT.FT_INS_ATTR.FixedText.Text
 #, fuzzy
 msgid  "Attributes"
-msgstr "ཁྱད་ཆོས་ཚུ།"
+msgstr "ཁྱད་ཆོས།"
 
 #: source/ui/config/redlopt.src#TP_REDLINE_OPT.LB_INS_ATTR.item1.StringList.item
 #, fuzzy
@@ -3010,7 +3010,7 @@ msgstr "བཏོན་གཏང་བ།"
 #: source/ui/config/redlopt.src#TP_REDLINE_OPT.FT_DEL_ATTR.FixedText.Text
 #, fuzzy
 msgid  "Attributes"
-msgstr "ཁྱོད་ཆོས་ཚུ།"
+msgstr "ཁྱད་ཆོས་ཚུ།"
 
 #: source/ui/config/redlopt.src#TP_REDLINE_OPT.FT_DEL_COL.FixedText.Text
 #, fuzzy
@@ -5988,8 +5988,9 @@ msgid  "Footer page $(ARG1)"
 msgstr "མཇུག་ཡིག་ཤོག་ལེབ་ $(ARG1)"
 
 #: source/ui/docvw/access.src#STR_ACCESS_FOOTNOTE_NAME.String.Text
+#, fuzzy
 msgid  "Footnote $(ARG1)"
-msgstr "མཇུག་ཡིག་དྲན་ཐོ་ $(ARG1)"
+msgstr "མཇུག་གི་དྲན་ཐོ་ $(ARG1)"
 
 #: source/ui/docvw/access.src#STR_ACCESS_FOOTNOTE_DESC.String.Text
 #, fuzzy
@@ -5997,8 +5998,9 @@ msgid  "Footnote $(ARG1)"
 msgstr "མཇུག་ཡིག་དྲན་ཐོ་ $(ARG1)"
 
 #: source/ui/docvw/access.src#STR_ACCESS_ENDNOTE_NAME.String.Text
+#, fuzzy
 msgid  "Endnote $(ARG1)"
-msgstr "མཇུག་གི་དྲན་ཐོ་ $(ARG1)"
+msgstr "མཐའི་དྲན་འཛིན་ $(ARG1)"
 
 #: source/ui/docvw/access.src#STR_ACCESS_ENDNOTE_DESC.String.Text
 #, fuzzy
@@ -6558,8 +6560,9 @@ msgid  "Title/~Profession"
 msgstr "མགོ་མིང་། / ཁྱད་ལས།(~P)"
 
 #: source/ui/envelp/label.src#TP_PRIVATE_DATA.FT_PHONE_MOBILE.FixedText.Text
+#, fuzzy
 msgid  "Phone/Mobile"
-msgstr "བརྒྱུད་འཕྲིན།/འགྲུལ་འཕྲིན།"
+msgstr "བརྒྱུད་འཕྲིན། / འགྲུལ་འཕྲིན།"
 
 #: source/ui/envelp/label.src#TP_PRIVATE_DATA.FT_FAX.FixedText.Text
 #, fuzzy
@@ -7294,7 +7297,7 @@ msgstr "དྲན་ཐོ་གང་རུང་།"
 #: source/ui/fldui/fldui.src#STR_DBSETNUMBERFLD.String.Text
 #, fuzzy
 msgid  "Record number"
-msgstr "དྲན་ཐོ་ཨང་།"
+msgstr "དྲན་ཨང་།"
 
 #: source/ui/fldui/fldui.src#STR_PREVPAGEFLD.String.Text
 #, fuzzy
@@ -7559,7 +7562,7 @@ msgstr "ཨ་ར་བིཀ།(༡ ༢ ༣)"
 #: source/ui/fldui/fldui.src#FMT_NUM_PAGEDESC.String.Text
 #, fuzzy
 msgid  "As Page Style"
-msgstr "ཤོག་ལེབ་བཟོ་རྣམ་སྦེ།"
+msgstr "ཤོག་ལེབ་བཟོ་རྣམ་བཟུམ་སྦེ།"
 
 #: source/ui/fldui/fldui.src#FMT_NUM_PAGESPECIAL.String.Text
 #, fuzzy
@@ -7982,8 +7985,9 @@ msgid  "Position"
 msgstr "གནས་ས།"
 
 #: source/ui/fmtui/tmpdlg.src#DLG_TEMPLATE_1.1.TP_CHAR_TWOLN.PageItem.Text
+#, fuzzy
 msgid  "Asian Layout"
-msgstr "ཨེ་ཤི་ཡེན་ སྒྲིག་བཀོད།"
+msgstr "ཨེ་ཤི་ཡེན་སྒྲིག་བཀོད།"
 
 #: source/ui/fmtui/tmpdlg.src#DLG_TEMPLATE_1.1.TP_BACKGROUND.PageItem.Text
 #, fuzzy
@@ -9559,8 +9563,9 @@ msgid  "~New..."
 msgstr "གསརཔ་་་་(~N)"
 
 #: source/ui/index/cnttab.src#TP_TOX_SELECT.MB_AUTOMARK.MN_AUTOMARK_EDIT.MenuItem.Text
+#, fuzzy
 msgid  "~Edit..."
-msgstr "ཞུན་དག་་་་་(~E)"
+msgstr "ཞུན་དག་འབད་་་་(~E)"
 
 #: source/ui/index/cnttab.src#TP_TOX_SELECT.MB_AUTOMARK.MenuItem.Text
 #, fuzzy
@@ -12772,8 +12777,9 @@ msgid  "Text ~direction"
 msgstr "ཚིག་ཡིག་བཀོད་རྒྱ།(~d)"
 
 #: source/ui/table/tabledlg.src#TP_FORMAT_TABLE.LB_TEXTDIRECTION.0.StringList.item
+#, fuzzy
 msgid  "Left-to-right"
-msgstr "གཡོན-་ལས་-གཡས།"
+msgstr "གཡོན་-ལས་-གཡས།"
 
 #: source/ui/table/tabledlg.src#TP_FORMAT_TABLE.LB_TEXTDIRECTION.1.StringList.item
 #, fuzzy
@@ -13205,7 +13211,7 @@ msgstr "\"Text body\"གི་བཟོ་རྣམ་ གཞི་སྒྲི�
 #: source/ui/utlui/utlui.src#RID_SHELLRES_AUTOFMTSTRS.STR_AUTOFMTREDL_SET_TMPL_INDENT.String.Text
 #, fuzzy
 msgid  "Set \"Text body indent\" Style"
-msgstr "\"Text body indent\" གི་བཟོ་རྣམ་ གཞི་སྒྲིག་འབད།"
+msgstr " \"Text body indent\" གི་བཟོ་རྣམ་ གཞི་སྒྲིག་འབད།"
 
 #: source/ui/utlui/utlui.src#RID_SHELLRES_AUTOFMTSTRS.STR_AUTOFMTREDL_SET_TMPL_NEG_INDENT.String.Text
 #, fuzzy
@@ -14634,7 +14640,7 @@ msgstr "ཐོ་ཡིག་ ༡ འགོ་བཙུགས།"
 #: source/ui/utlui/poolfmt.src#STR_POOLCOLL_BUL_LEVEL1.String.Text
 #, fuzzy
 msgid  "List 1"
-msgstr "ཐོ་ཡིག་ ༡།"
+msgstr "ཡིག་ ༡།"
 
 #: source/ui/utlui/poolfmt.src#STR_POOLCOLL_BUL_LEVEL1E.String.Text
 #, fuzzy

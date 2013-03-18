@@ -4805,11 +4805,11 @@ msgstr "Txikiena"
 
 #: source/ui/src/filter.src#RID_SCDLG_FILTER.LB_COND1.Default.stringlist.item
 msgid  "Largest %"
-msgstr "% handiena"
+msgstr "% handienak"
 
 #: source/ui/src/filter.src#RID_SCDLG_FILTER.LB_COND1.Default.stringlist.item
 msgid  "Smallest %"
-msgstr "% txikiena"
+msgstr "% txikienak"
 
 #: source/ui/src/filter.src#RID_SCDLG_FILTER.LB_COND1.Default.stringlist.item
 msgid  "Contains"
@@ -8881,7 +8881,7 @@ msgstr "Metatua"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_POISSON_DIST.7.String.Text
 msgid  "0 or FALSE calculates the probability density function. Any other value or TRUE or omitted calculates the cumulative distribution function."
-msgstr "0 edo FALSE (faltsua) probabilitate metatuaren dentsitate-funtzioa kalkulatzen du. Beste edozein balio edo TRUE (egia) banaketa metatuaren funtzioa kalkulatzen du."
+msgstr "0 edo FALSE (faltsua) probabilitate dentsitate-funtzioa kalkulatzen du. Beste edozein balio edo TRUE (egia) banaketa metatuaren funtzioa kalkulatzen du."
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_NORM_DIST.1.String.Text
 msgid  "Values of the normal distribution."
@@ -8917,7 +8917,7 @@ msgstr "C"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_NORM_DIST.9.String.Text
 msgid  "0 or FALSE calculates the probability density function. Any other value or TRUE or omitted calculates the cumulative distribution function."
-msgstr "0 edo FALSE (faltsua) probabilitate dentsitate-funtzioa kalkulatzen du. Beste edozein balio edo TRUE (egia) edo aipatu gabe uzten bada, banaketa metatuaren funtzioa kalkulatzen du."
+msgstr "0 edo FALSE (faltsua) probabilitate metatuaren dentsitate-funtzioa kalkulatzen du. Beste edozein balio edo TRUE (egia) banaketa metatuaren funtzioa kalkulatzen du."
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_NORM_INV.1.String.Text
 msgid  "Values of the inverse normal distribution."
@@ -9005,7 +9005,7 @@ msgstr "Metatua"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_LOG_NORM_DIST.9.String.Text
 msgid  "0 or FALSE calculates the probability density function. Any other value or TRUE or omitted calculates the cumulative distribution function."
-msgstr "0 edo FALSE (faltsua) probabilitate dentsitate-funtzioa kalkulatzen du. Beste edozein balio edo TRUE (egia) banaketa metatuaren funtzioa kalkulatzen du."
+msgstr "0 edo FALSE (faltsua) probabilitate dentsitate-funtzioa kalkulatzen du. Beste edozein balio edo TRUE (egia) edo aipatu gabe uzten bada, banaketa metatuaren funtzioa kalkulatzen du."
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_LOG_INV.1.String.Text
 msgid  "Values of the inverse of the lognormal distribution."
@@ -9441,7 +9441,7 @@ msgstr "askatasun_graduak"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_CHI_DIST.5.String.Text
 msgid  "The degrees of freedom of the chi square distribution."
-msgstr "Ji-karratuaren banaketaren askatasun-graduak."
+msgstr "Ji-karratuaren banaketaren askatasun graduak."
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_CHISQ_DIST.1.String.Text
 msgid  "Returns left-tail probability of the cumulative distribution function or values of the probability density function of the chi-square distribution."
@@ -11601,7 +11601,7 @@ msgstr "Hautatu orriak"
 
 #: source/ui/src/scstring.src#STR_DLG_SELECTTABLES_LBNAME.String.Text
 msgid  "~Selected sheets"
-msgstr "~Hautatutako orriak"
+msgstr "~Hautatutako orriak bakarrik inprimatu"
 
 #: source/ui/src/scstring.src#STR_REPLCELLSWARN.String.Text
 msgid  "You are pasting data into cells that already contain data.\\nDo you really want to overwrite the existing data?"

@@ -981,7 +981,7 @@ msgstr "सामग्री"
 
 #: source/text/scalc/01/02110000.xhp#hd_id3147244.23
 msgid  "Scenarios"
-msgstr "परिदृश्यहरू"
+msgstr "परिदृश्य"
 
 #: source/text/scalc/01/02110000.xhp#par_id3153955.25
 msgid  "\<ahelp hid=\"HID_SC_NAVIPI_SCEN\"\>Displays all available scenarios. Double-click a name to apply that scenario.\</ahelp\> The result is shown in the sheet. For more information, choose \<link href=\"text/scalc/01/06050000.xhp\" name=\"Tools - Scenarios\"\>\<emph\>Tools - Scenarios\</emph\>\</link\>."
@@ -2473,7 +2473,7 @@ msgstr "हरियो थोप्लाहरू प्रविष्टि�
 
 #: source/text/scalc/01/04060100.xhp#tit
 msgid  "Functions by Category"
-msgstr "कोटिहरू र प्रकार्यहरू"
+msgstr "कोटिहरू र प्रकार्ञहरू"
 
 #: source/text/scalc/01/04060100.xhp#bm_id3148575
 msgid  "\<bookmark_value\>functions;listed by category\</bookmark_value\>      \<bookmark_value\>categories of functions\</bookmark_value\>      \<bookmark_value\>list of functions\</bookmark_value\>"
@@ -5705,7 +5705,7 @@ msgstr ""
 
 #: source/text/scalc/01/04060105.xhp#par_id3146100.66
 msgid  "The arguments are either logical expressions themselves (TRUE, 1<5, 2+3=7, B8<10) that return logical values, or arrays (A1:C3) containing logical values."
-msgstr "या त तर्कहरू आफैमा युक्तिसङ्गत अभिव्यक्तिहरू हुन्(TRUE, 1<5, 2+3=7, B8<10) जसले युक्तिसङ्गत मानहरू, वा युक्तिसङ्गत मानहरू समाविष्ट गरेको (A1:C3) एरेहरू फर्काउँदछ ।"
+msgstr "तर्कहरू आफैमा या त युक्तिसङ्गत अभिव्यक्तिहरू हुन् (TRUE, 1<5, 2+3=7, B8<10) जसले युक्तिसङ्गत मानहरू, वा युक्तिसङ्गत मानहरू समाविष्ट गरेको (A1:C3) एरेहरू फर्काउँछ ।"
 
 #: source/text/scalc/01/04060105.xhp#par_id3150538.67
 msgid  "When a function expects a single value, but you entered a cell range, then the value from the cell range is taken that is in the same column or row as the formula."
@@ -5713,7 +5713,7 @@ msgstr "जब एउटा प्रकार्यले एकल मान �
 
 #: source/text/scalc/01/04060105.xhp#par_id3149128.68
 msgid  "If the entered range is outside of the current column or row of the formula, the function returns the error value #VALUE!"
-msgstr "यदि प्रविष्टि गरिएको दायरा सूत्रको हालको स्तम्भ वा पङ्क्तिको बाहिर छ भने, प्रकार्यले त्रुटि मान #VALUE! फर्काउँदछ"
+msgstr "यदि प्रविष्टि गरिएको दायरा सूत्रको हालको स्तम्भ वा पङ्क्ति बाहिर छ भने, प्रकार्यले त्रुटि मान #VALUE! फर्काउँदछ"
 
 #: source/text/scalc/01/04060105.xhp#hd_id3150374.31
 msgid  "Syntax"
@@ -5973,7 +5973,7 @@ msgstr ""
 
 #: source/text/scalc/01/04060106.xhp#hd_id3154843.35
 msgid  "Syntax"
-msgstr "वाक्य संरचना"
+msgstr "वाक्य संरचना:"
 
 #: source/text/scalc/01/04060106.xhp#par_id3147475.36
 msgid  "ABS(Number)"
@@ -5985,7 +5985,7 @@ msgstr ""
 
 #: source/text/scalc/01/04060106.xhp#hd_id3155823.38
 msgid  "Example"
-msgstr "उदाहरण"
+msgstr "उदाहरण:"
 
 #: source/text/scalc/01/04060106.xhp#par_id3152787.39
 msgid  "\<item type=\"input\"\>=ABS(-56)\</item\> returns 56."
@@ -6013,7 +6013,7 @@ msgstr ""
 
 #: source/text/scalc/01/04060106.xhp#hd_id3145144.44
 msgid  "Syntax"
-msgstr "वाक्य संरचना:"
+msgstr "वाक्य संरचना"
 
 #: source/text/scalc/01/04060106.xhp#par_id3153931.45
 msgid  "COUNTBLANK(Range)"
@@ -6025,7 +6025,7 @@ msgstr ""
 
 #: source/text/scalc/01/04060106.xhp#hd_id3146139.47
 msgid  "Example"
-msgstr "उदाहरण"
+msgstr "उदाहरण:"
 
 #: source/text/scalc/01/04060106.xhp#par_id3148586.48
 msgid  "\<item type=\"input\"\>=COUNTBLANK(A1:B2)\</item\> returns 4 if cells A1, A2, B1, and B2 are all empty."
@@ -6045,7 +6045,7 @@ msgstr ""
 
 #: source/text/scalc/01/04060106.xhp#hd_id3153565.52
 msgid  "Syntax"
-msgstr "वाक्य संरचना"
+msgstr "वाक्य संरचना:"
 
 #: source/text/scalc/01/04060106.xhp#par_id3150020.53
 msgid  "ACOS(Number)"
@@ -6061,7 +6061,7 @@ msgstr ""
 
 #: source/text/scalc/01/04060106.xhp#hd_id3149882.55
 msgid  "Example"
-msgstr "उदाहरण"
+msgstr "उदाहरण:"
 
 #: source/text/scalc/01/04060106.xhp#par_id3150128.56
 msgid  "\<item type=\"input\"\>=ACOS(-1)\</item\> returns 3.14159265358979 (PI radians)"
@@ -6085,7 +6085,7 @@ msgstr ""
 
 #: source/text/scalc/01/04060106.xhp#hd_id3145295.62
 msgid  "Syntax"
-msgstr "वाक्य संरचना"
+msgstr "वाक्य संरचना:"
 
 #: source/text/scalc/01/04060106.xhp#par_id3151017.63
 msgid  "ACOSH(Number)"
@@ -6101,7 +6101,7 @@ msgstr ""
 
 #: source/text/scalc/01/04060106.xhp#hd_id3150566.65
 msgid  "Example"
-msgstr "उदाहरण:"
+msgstr "उदाहरण"
 
 #: source/text/scalc/01/04060106.xhp#par_id3145629.66
 msgid  "\<item type=\"input\"\>=ACOSH(1)\</item\> returns 0."
@@ -6125,7 +6125,7 @@ msgstr ""
 
 #: source/text/scalc/01/04060106.xhp#hd_id3153225.72
 msgid  "Syntax"
-msgstr "वाक्य संरचना"
+msgstr "वाक्य संरचना:"
 
 #: source/text/scalc/01/04060106.xhp#par_id3158419.73
 msgid  "ACOT(Number)"
@@ -6141,7 +6141,7 @@ msgstr ""
 
 #: source/text/scalc/01/04060106.xhp#hd_id3147538.75
 msgid  "Example"
-msgstr "उदाहरण"
+msgstr "उदाहरण:"
 
 #: source/text/scalc/01/04060106.xhp#par_id3155375.76
 msgid  "\<item type=\"input\"\>=ACOT(1)\</item\> returns 0.785398163397448 (PI/4 radians)."
@@ -6165,7 +6165,7 @@ msgstr ""
 
 #: source/text/scalc/01/04060106.xhp#hd_id3152585.82
 msgid  "Syntax"
-msgstr "वाक्य संरचना"
+msgstr "वाक्य संरचना:"
 
 #: source/text/scalc/01/04060106.xhp#par_id3147172.83
 msgid  "ACOTH(Number)"
@@ -6181,7 +6181,7 @@ msgstr ""
 
 #: source/text/scalc/01/04060106.xhp#hd_id3083452.85
 msgid  "Example"
-msgstr "उदाहरण:"
+msgstr "उदाहरण"
 
 #: source/text/scalc/01/04060106.xhp#par_id3150608.86
 msgid  "\<item type=\"input\"\>=ACOTH(1.1)\</item\> returns inverse hyperbolic cotangent of 1.1, approximately 1.52226."
@@ -6201,7 +6201,7 @@ msgstr ""
 
 #: source/text/scalc/01/04060106.xhp#hd_id3149716.92
 msgid  "Syntax"
-msgstr "वाक्य संरचना :"
+msgstr "वाक्य संरचना:"
 
 #: source/text/scalc/01/04060106.xhp#par_id3156305.93
 msgid  "ASIN(Number)"
@@ -6217,7 +6217,7 @@ msgstr ""
 
 #: source/text/scalc/01/04060106.xhp#hd_id3149448.95
 msgid  "Example"
-msgstr "उदाहरण"
+msgstr "उदाहरण:"
 
 #: source/text/scalc/01/04060106.xhp#par_id3156100.96
 msgid  "\<item type=\"input\"\>=ASIN(0)\</item\> returns 0."
@@ -6245,7 +6245,7 @@ msgstr ""
 
 #: source/text/scalc/01/04060106.xhp#hd_id3150763.102
 msgid  "Syntax"
-msgstr "वाक्य संरचना"
+msgstr "वाक्य संरचना:"
 
 #: source/text/scalc/01/04060106.xhp#par_id3150882.103
 msgid  "ASINH(Number)"
@@ -6257,7 +6257,7 @@ msgstr ""
 
 #: source/text/scalc/01/04060106.xhp#hd_id3153212.105
 msgid  "Example"
-msgstr "उदाहरण"
+msgstr "उदाहरण:"
 
 #: source/text/scalc/01/04060106.xhp#par_id3156120.106
 msgid  "\<item type=\"input\"\>=ASINH(-90)\</item\> returns approximately -5.1929877."
@@ -6281,7 +6281,7 @@ msgstr ""
 
 #: source/text/scalc/01/04060106.xhp#hd_id3151294.112
 msgid  "Syntax"
-msgstr "वाक्य संरचना"
+msgstr "वाक्य संरचना:"
 
 #: source/text/scalc/01/04060106.xhp#par_id3150261.113
 msgid  "ATAN(Number)"
@@ -6297,7 +6297,7 @@ msgstr ""
 
 #: source/text/scalc/01/04060106.xhp#hd_id3154054.115
 msgid  "Example"
-msgstr "उदाहरण"
+msgstr "उदाहरण:"
 
 #: source/text/scalc/01/04060106.xhp#par_id3143229.116
 msgid  "\<item type=\"input\"\>=ATAN(1)\</item\> returns 0.785398163397448 (PI/4 radians)."
@@ -6321,7 +6321,7 @@ msgstr ""
 
 #: source/text/scalc/01/04060106.xhp#hd_id3149758.122
 msgid  "Syntax"
-msgstr "वाक्य संरचना"
+msgstr "वाक्य संरचना:"
 
 #: source/text/scalc/01/04060106.xhp#par_id3156013.123
 msgid  "ATAN2(NumberX; NumberY)"
@@ -6369,7 +6369,7 @@ msgstr ""
 
 #: source/text/scalc/01/04060106.xhp#hd_id3146997.132
 msgid  "Syntax"
-msgstr "वाक्य संरचना"
+msgstr "वाक्य संरचना:"
 
 #: source/text/scalc/01/04060106.xhp#par_id3149912.133
 msgid  "ATANH(Number)"
@@ -9061,7 +9061,7 @@ msgstr ""
 
 #: source/text/scalc/01/04060107.xhp#par_idN10C9B
 msgid  "You can find a general introduction to Array functions at the top of this page."
-msgstr "तपाईँ यो पृष्ठको सिरानमा एरे प्रकार्यको सामन्य परिचय फेला पार्न सक्नुहुन्छ ।"
+msgstr "तपाईँ यो पृष्ठको सिरानमा एरे प्रकार्यमा सामन्य परिचय फेला पार्नु सक्नुहुन्छ ।"
 
 #: source/text/scalc/01/04060107.xhp#hd_id3156162.17
 msgid  "Example"
@@ -13333,11 +13333,11 @@ msgstr "२"
 
 #: source/text/scalc/01/04060112.xhp#par_id3155986.87
 msgid  "Row1"
-msgstr "पङ्क्ति १"
+msgstr "पङ्क्ति१"
 
 #: source/text/scalc/01/04060112.xhp#par_id3147483.88
 msgid  "Row number in the upper-left corner of the cell area; numbering starts at 0."
-msgstr "कक्ष क्षेत्रको माथि-बायाँ कुनोमा पङ्क्ति सङ्ख्या; क्रमाङ्कन ० बाट सुरु हुन्छ ।"
+msgstr "कक्ष क्षेत्रको माथि-बायाँ कुनामा पङ्क्ति सङ्ख्या; क्रमाङ्कन ० बाट सुरु हुन्छ ।"
 
 #: source/text/scalc/01/04060112.xhp#par_id3153721.89
 msgid  "4"
@@ -13345,7 +13345,7 @@ msgstr "४"
 
 #: source/text/scalc/01/04060112.xhp#par_id3154317.90
 msgid  "Tab1"
-msgstr "तालिका १"
+msgstr "तालिका१"
 
 #: source/text/scalc/01/04060112.xhp#par_id3149820.91
 msgid  "Table number in the upper-left corner of the cell area; numbering starts at 0."
@@ -13361,7 +13361,7 @@ msgstr "स्तम्भ२"
 
 #: source/text/scalc/01/04060112.xhp#par_id3154819.94
 msgid  "Column number in the lower-right corner of the cell area. Numbering starts at 0."
-msgstr "कक्ष क्षेत्रको तल-दायाँ कुनामा स्तम्भ सङ्ख्या । क्रमाङ्कन ० बाट सुरु हुन्छ ।"
+msgstr "कक्ष क्षेत्रको तल-दायाँ कुनाम स्तम्भ सङ्ख्या । क्रमाङ्कन ० बाट सुरु हुन्छ ।"
 
 #: source/text/scalc/01/04060112.xhp#par_id3145083.95
 msgid  "8"
@@ -13381,7 +13381,7 @@ msgstr "१०"
 
 #: source/text/scalc/01/04060112.xhp#par_id3153218.99
 msgid  "Tab2"
-msgstr "तालिका २"
+msgstr "तालिका२"
 
 #: source/text/scalc/01/04060112.xhp#par_id3147086.100
 msgid  "Table number in the lower-right corner of the cell area; numbering starts at 0."
@@ -13397,7 +13397,7 @@ msgstr "गणना"
 
 #: source/text/scalc/01/04060112.xhp#par_id3145202.103
 msgid  "Number of the following elements. Empty cells are not counted or passed."
-msgstr "निम्न तत्वहरूको सङ्ख्या । खाली कक्षहरू गणना गरिएको छैन र पास गरिएको छैन ।"
+msgstr "निम्न तत्वहरूको सङ्ख्या । खाली कक्षहरू गणना गरिएको छैन वा पास गरिएको छैन ।"
 
 #: source/text/scalc/01/04060112.xhp#par_id3150879.104
 msgid  "14"
@@ -13405,7 +13405,7 @@ msgstr "१४"
 
 #: source/text/scalc/01/04060112.xhp#par_id3156002.105
 msgid  "Col"
-msgstr "स्तम्भ"
+msgstr "स्तन्भ"
 
 #: source/text/scalc/01/04060112.xhp#par_id3147276.106
 msgid  "Column number of the element. Numbering starts at 0."
@@ -13445,7 +13445,7 @@ msgstr "त्रुटि"
 
 #: source/text/scalc/01/04060112.xhp#par_id3159181.115
 msgid  "Error number, where the value 0 is defined as \"no error.\" If the element comes from a formula cell the error value is determined by the formula."
-msgstr "त्रुटि सङ्ख्या, जहाँ मान ० \"no error.\" को रुपमा परिभाषित गरिएको छ । यदि तत्व सूत्र कक्षबाट आएको छ भने त्रुटि मान सूत्र द्वारा निर्धारण गरिएको हुन्छ ।"
+msgstr "त्रुटि सङ्ख्या, जहाँ मान ० \"no error.\" को रुपमा परिभाषित हुन्छ । यदि तत्व सूत्र कक्षबाट आउँछ भने त्रुटि मान सूत्र द्वारा निर्धारण गरिएको हुन्छ ।"
 
 #: source/text/scalc/01/04060112.xhp#par_id3147493.116
 msgid  "22"
@@ -13513,7 +13513,7 @@ msgstr "पङ्क्ति१"
 
 #: source/text/scalc/01/04060112.xhp#par_id3147235.132
 msgid  "Row number in the upper-left corner of the cell area; numbering starts at 0."
-msgstr "कक्ष क्षेत्रको माथि-बायाँ कुनामा पङ्क्ति सङ्ख्या; क्रमाङ्कन ० बाट सुरु हुन्छ ।"
+msgstr "कक्ष क्षेत्रको माथि-बायाँ कुनोमा पङ्क्ति सङ्ख्या; क्रमाङ्कन ० बाट सुरु हुन्छ ।"
 
 #: source/text/scalc/01/04060112.xhp#par_id3155362.133
 msgid  "4"
@@ -13557,7 +13557,7 @@ msgstr "१०"
 
 #: source/text/scalc/01/04060112.xhp#par_id3154107.143
 msgid  "Tab2"
-msgstr "तालिका२"
+msgstr "तालिका २"
 
 #: source/text/scalc/01/04060112.xhp#par_id3153747.144
 msgid  "Table number in the lower-right corner of the cell area; numbering starts at 0."
@@ -13573,7 +13573,7 @@ msgstr "गणना"
 
 #: source/text/scalc/01/04060112.xhp#par_id3148621.147
 msgid  "Number of the following elements. Empty cells are not counted or passed."
-msgstr "निम्न तत्वहरूको सङ्ख्या । खाली सङ्ख्याहरू गणना गरिएको छैन वा पास गरिएको छैन ।"
+msgstr "निम्न तत्वहरूको सङ्ख्या । खाली कक्षहरू गणना गरिएको छैन र पास गरिएको छैन ।"
 
 #: source/text/scalc/01/04060112.xhp#par_id3148467.148
 msgid  "14"
@@ -13621,7 +13621,7 @@ msgstr "त्रुटि"
 
 #: source/text/scalc/01/04060112.xhp#par_id3153534.159
 msgid  "Error number, where the value 0 is defined as \"no error.\" If the element comes from a formula cell the error value is determined by the formula."
-msgstr "त्रुटि सङ्ख्या, जहाँ मान ० \"no error.\" को रुपमा परिभाषित गरिएको छ । यदि तत्व सूत्र कक्षबाट आएको छ भने त्रुटि मान सूत्र द्वारा निर्धारण गरिएको छ ।"
+msgstr "त्रुटि सङ्ख्या, जहाँ मान ० \"no error.\" को रुपमा परिभाषित गरिएको छ । यदि तत्व सूत्र कक्षबाट आएको छ भने त्रुटि मान सूत्र द्वारा निर्धारण गरिएको हुन्छ ।"
 
 #: source/text/scalc/01/04060112.xhp#par_id3153311.160
 msgid  "22"
@@ -15601,7 +15601,7 @@ msgstr ""
 
 #: source/text/scalc/01/04060118.xhp#hd_id3153074.73
 msgid  "Syntax"
-msgstr "वाक्य संरचना:"
+msgstr "वाक्य संरचना"
 
 #: source/text/scalc/01/04060118.xhp#par_id3146098.74
 msgid  "ODDFPRICE(Settlement; Maturity; Issue; FirstCoupon; Rate; Yield; Redemption; Frequency; Basis)"
@@ -16869,7 +16869,7 @@ msgstr "उदाहरण"
 
 #: source/text/scalc/01/04060119.xhp#par_id3148774.193
 msgid  "The following mortgage loan is taken out on a house:"
-msgstr "निम्न धितो ऋण घरमा लिइएको हो:"
+msgstr "निम्न धितो ऋण घरमा लिएको हो:"
 
 #: source/text/scalc/01/04060119.xhp#par_id3150661.194
 msgid  "Rate: 9.00 per cent per annum (9% / 12 = 0.0075), Duration: 30 years (payment periods = 30 * 12 = 360), NPV: 125000 currency units."
@@ -21077,7 +21077,7 @@ msgstr ""
 
 #: source/text/scalc/01/04060199.xhp#tit
 msgid  "Operators in $[officename] Calc"
-msgstr "$[officename] क्याल्कमा सञ्चालकहरू"
+msgstr "$[officename] क्याल्कमा सञचालकहरू"
 
 #: source/text/scalc/01/04060199.xhp#bm_id3156445
 msgid  "\<bookmark_value\>formulas; operators\</bookmark_value\>\<bookmark_value\>operators; formula functions\</bookmark_value\>\<bookmark_value\>division sign, see also operators\</bookmark_value\>\<bookmark_value\>multiplication sign, see also operators\</bookmark_value\>\<bookmark_value\>minus sign, see also operators\</bookmark_value\>\<bookmark_value\>plus sign, see also operators\</bookmark_value\>\<bookmark_value\>text operators\</bookmark_value\>\<bookmark_value\>comparisons;operators in Calc\</bookmark_value\>\<bookmark_value\>arithmetical operators\</bookmark_value\>\<bookmark_value\>reference operators\</bookmark_value\>"
@@ -24677,7 +24677,7 @@ msgstr ""
 
 #: source/text/scalc/01/12090101.xhp#tit
 msgid  "Select Data Source"
-msgstr "डेटा स्रोत चयन गर्नुहोस्"
+msgstr "डेटास्रोत चयन गर्नुहोस्"
 
 #: source/text/scalc/01/12090101.xhp#hd_id3143268.1
 msgid  "Select Data Source"
@@ -25477,7 +25477,7 @@ msgstr "समूह गर्दाको सुरु निर्दिष्
 
 #: source/text/scalc/01/12090400.xhp#par_idN1056F
 msgid  "Automatically"
-msgstr "स्वाचालित रुपले"
+msgstr "स्वचालित रुपले"
 
 #: source/text/scalc/01/12090400.xhp#par_idN10573
 msgid  "Specifies whether to start grouping at the smallest value."
@@ -25485,7 +25485,7 @@ msgstr "यात सबभन्दा सानो मानमा समू�
 
 #: source/text/scalc/01/12090400.xhp#par_idN10576
 msgid  "Manually at"
-msgstr "यसमा म्यानुअल तरीकाले गर्नुहोस्"
+msgstr "यसमा म्यानुअल तरीकाले गर्दा"
 
 #: source/text/scalc/01/12090400.xhp#par_idN1057A
 msgid  "Specifies whether to enter the start value for grouping yourself."
@@ -28517,7 +28517,7 @@ msgstr "५१०"
 
 #: source/text/scalc/05/02140000.xhp#par_id3153483.34
 msgid  "Missing variable"
-msgstr "हराइरहेको चलहरू"
+msgstr "हराइरहेको चल"
 
 #: source/text/scalc/05/02140000.xhp#par_id3154710.35
 msgid  "Variable is missing, for example when two operators are together \"=1+*2\"."
@@ -28577,7 +28577,7 @@ msgstr "५१६"
 
 #: source/text/scalc/05/02140000.xhp#par_id3147423.52
 msgid  "Internal syntax error"
-msgstr "आन्तरिक वाक्य संरचना त्रुटि"
+msgstr "आन्तरिक वाक्यसंरचना त्रुटि"
 
 #: source/text/scalc/05/02140000.xhp#par_id3148437.53
 msgid  "Matrix is expected on the calculation stack, but is not available."
@@ -33609,7 +33609,7 @@ msgstr ""
 
 #: source/text/scalc/guide/scenario.xhp#tit
 msgid  "Using Scenarios"
-msgstr "परिदृश्यहरू प्रयोग गर्दा"
+msgstr "तयार-गरिएका परिदृश्यहरू प्रयोग गर्दा"
 
 #: source/text/scalc/guide/scenario.xhp#bm_id3149664
 msgid  "\<bookmark_value\>scenarios; creating/editing/deleting\</bookmark_value\>\<bookmark_value\>opening;scenarios\</bookmark_value\>\<bookmark_value\>selecting;scenarios in Navigator\</bookmark_value\>"
@@ -33785,7 +33785,7 @@ msgstr "मानक"
 
 #: source/text/scalc/guide/specialfilter.xhp#par_id3150202.32
 msgid  "Business"
-msgstr "व्यवसाय"
+msgstr "व्यावसाय"
 
 #: source/text/scalc/guide/specialfilter.xhp#par_id3150883.33
 msgid  "Luxury"

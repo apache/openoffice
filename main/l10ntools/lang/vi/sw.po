@@ -725,7 +725,7 @@ msgstr "Đây không phải là tập tin dạng WinWord6."
 
 #: source/ui/app/error.src#RID_SW_ERRHDL.ERR_CODE ( ERRCODE_CLASS_READ , ERR_WW6_FASTSAVE_ERR ).String.Text
 msgid  "This file was saved with WinWord in 'Fast Save' mode. Please unmark the WinWord option 'Allow Fast Saves' and save the file again."
-msgstr "Tập tin này đã được lưu bằng WinWord ở chế độ 'Fast Save' (Lưu nhanh). Hãy tắt tùy chọn WinWord 'Allow Fast Saves' (Cho phép lưu nhanh) rồi lưu tập tin lần nữa."
+msgstr "Tập tin này đã được lưu bằng WinWord ở chế độ 'Fast Save' (Lưu nhanh). Hãy tắt tùy chọn WinWord 'Allow Fast Saves' (Cho phép lưu nhanh) rồi lưu tập tin này lần nữa."
 
 #: source/ui/app/error.src#RID_SW_ERRHDL.ERR_CODE ( ERRCODE_CLASS_READ , ERR_FORMAT_ROWCOL ).String.Text
 msgid  "File format error found at $(ARG1)(row,col)."
@@ -2048,8 +2048,9 @@ msgid  "Paragraph"
 msgstr "Đoạn văn"
 
 #: source/ui/chrdlg/paradlg.src#DLG_PARA.1.TP_PARA_STD.PageItem.Text
+#, fuzzy
 msgid  "Indents & Spacing"
-msgstr "Thụt lề và Giãn cách"
+msgstr "Thụt lề và GIãn cách"
 
 #: source/ui/chrdlg/paradlg.src#DLG_PARA.1.TP_PARA_ALIGN.PageItem.Text
 #, fuzzy
@@ -11462,12 +11463,12 @@ msgstr "Từng tài liệu"
 #: source/ui/misc/docfnote.src#TP_FOOTNOTEOPTION.FT_PREFIX.FixedText.Text
 #, fuzzy
 msgid  "~Before"
-msgstr "T~rước"
+msgstr "Phía t~rước"
 
 #: source/ui/misc/docfnote.src#TP_FOOTNOTEOPTION.FT_SUFFIX.FixedText.Text
 #, fuzzy
 msgid  "~After"
-msgstr "~Sau"
+msgstr "Phía ~sau"
 
 #: source/ui/misc/docfnote.src#TP_FOOTNOTEOPTION.FT_POS.FixedText.Text
 #, fuzzy

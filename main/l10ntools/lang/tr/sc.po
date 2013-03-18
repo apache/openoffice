@@ -585,7 +585,7 @@ msgstr "Otomatik olarak"
 #: source/ui/dbgui/dpgroupdlg.src#RID_SCDLG_DPNUMGROUP.RB_MANEND.RadioButton.Text
 #, fuzzy
 msgid  "Ma~nually at"
-msgstr "~El ile"
+msgstr "El ile"
 
 #: source/ui/dbgui/dpgroupdlg.src#RID_SCDLG_DPNUMGROUP.FL_BY.FixedLine.Text
 #, fuzzy
@@ -2179,8 +2179,9 @@ msgid  "Navigator"
 msgstr "Gezgin"
 
 #: source/ui/navipi/navipi.src#RID_SCDLG_NAVIGATOR.FT_ROW.FixedText.Text
+#, fuzzy
 msgid  "Row"
-msgstr "Zeile"
+msgstr "Satır"
 
 #: source/ui/navipi/navipi.src#RID_SCDLG_NAVIGATOR.ED_ROW.NumericField.QuickHelpText
 #, fuzzy
@@ -2188,8 +2189,9 @@ msgid  "Row"
 msgstr "Zeile"
 
 #: source/ui/navipi/navipi.src#RID_SCDLG_NAVIGATOR.FT_COL.FixedText.Text
+#, fuzzy
 msgid  "Column"
-msgstr "Spalte"
+msgstr "Sütun"
 
 #: source/ui/navipi/navipi.src#RID_SCDLG_NAVIGATOR.ED_COL.SpinField.QuickHelpText
 #, fuzzy
@@ -2607,8 +2609,9 @@ msgid  "Text Attributes"
 msgstr "Textattribute"
 
 #: source/ui/pagedlg/hfedtdlg.src#RID_HFBASE.BTN_FILE.ImageButton.QuickHelpText
+#, fuzzy
 msgid  "Title"
-msgstr "Başlık"
+msgstr "Dateiname"
 
 #: source/ui/pagedlg/hfedtdlg.src#RID_HFBASE.RID_POPUP_FCOMMAND.FILE_COMMAND_TITEL.MenuItem.Text
 #, fuzzy
@@ -5885,7 +5888,7 @@ msgstr "="
 #: source/ui/src/filter.src#RID_SCDLG_FILTER.LB_COND1.Default.stringlist.item
 #, fuzzy
 msgid  "<"
-msgstr ">"
+msgstr "<"
 
 #: source/ui/src/filter.src#RID_SCDLG_FILTER.LB_COND1.Default.stringlist.item
 #, fuzzy
@@ -5940,22 +5943,22 @@ msgstr "İçermez"
 #: source/ui/src/filter.src#RID_SCDLG_FILTER.LB_COND1.Default.stringlist.item
 #, fuzzy
 msgid  "Begins with"
-msgstr "İle başlar"
+msgstr "İle başlayan"
 
 #: source/ui/src/filter.src#RID_SCDLG_FILTER.LB_COND1.Default.stringlist.item
 #, fuzzy
 msgid  "Does not begin with"
-msgstr "İle başlamaz"
+msgstr "İle başlamayan"
 
 #: source/ui/src/filter.src#RID_SCDLG_FILTER.LB_COND1.Default.stringlist.item
 #, fuzzy
 msgid  "Ends with"
-msgstr "İle biter"
+msgstr "İle biten"
 
 #: source/ui/src/filter.src#RID_SCDLG_FILTER.LB_COND1.Default.stringlist.item
 #, fuzzy
 msgid  "Does not end with"
-msgstr "İle bitmez"
+msgstr "İle bitmeyen"
 
 #: source/ui/src/filter.src#RID_SCDLG_FILTER.LB_COND2.Default.stringlist.item
 #, fuzzy
@@ -6025,7 +6028,7 @@ msgstr "İle başlar"
 #: source/ui/src/filter.src#RID_SCDLG_FILTER.LB_COND2.Default.stringlist.item
 #, fuzzy
 msgid  "Does not begin with"
-msgstr "ile başlamaz"
+msgstr "İle başlamaz"
 
 #: source/ui/src/filter.src#RID_SCDLG_FILTER.LB_COND2.Default.stringlist.item
 #, fuzzy
@@ -6240,7 +6243,7 @@ msgstr "Küçült"
 #: source/ui/src/filter.src#RID_SCDLG_FILTER.FT_DBAREA.FixedText.Text
 #, fuzzy
 msgid  "dummy"
-msgstr "Taklit"
+msgstr "taklit"
 
 #: source/ui/src/filter.src#RID_SCDLG_FILTER.FT_DBAREA_LABEL.FixedText.Text
 #, fuzzy
@@ -6530,7 +6533,7 @@ msgstr "Veritabanı alanı"
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_DB_COUNT.5.String.Text
 #, fuzzy
 msgid  "Indicates which database field (column) is to be used for the search criteria."
-msgstr "Arama ölçütleri için kulanılacak veritabanı alanını (sütun) belirler."
+msgstr "Arama ölçütleri için veritabanı alanını (sütun) belirler."
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_DB_COUNT.6.String.Text
 #, fuzzy
@@ -6935,7 +6938,7 @@ msgstr "Belirtilen tarih için bir iç sayı üretir."
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_GET_DATE.2.String.Text
 #, fuzzy
 msgid  "year"
-msgstr "Yıl"
+msgstr "yıl"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_GET_DATE.3.String.Text
 #, fuzzy
@@ -6970,7 +6973,7 @@ msgstr "Muhtemel bir tarih biçimindeki bir metinden iç sayı üretir."
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_GET_DATE_VALUE.2.String.Text
 #, fuzzy
 msgid  "text"
-msgstr "Metin"
+msgstr "metin"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_GET_DATE_VALUE.3.String.Text
 #, fuzzy
@@ -6985,7 +6988,7 @@ msgstr "Tarih değerine göre, ayın sürekli tarihini tam sayı (1 - 31) olarak
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_GET_DAY.2.String.Text
 #, fuzzy
 msgid  "Number"
-msgstr "Numara"
+msgstr "Sayı"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_GET_DAY.3.String.Text
 #, fuzzy
@@ -7070,7 +7073,7 @@ msgstr "Sayı"
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_GET_MONTH.3.String.Text
 #, fuzzy
 msgid  "The internal number of the date."
-msgstr "Dahili tarih sayısı."
+msgstr "İç tarih sayısı."
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_GET_ACT_TIME.1.String.Text
 #, fuzzy
@@ -7230,7 +7233,7 @@ msgstr "Dahili tarih sayısı."
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_WEEK.4.String.Text
 #, fuzzy
 msgid  "mode"
-msgstr "mod"
+msgstr "Kip"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_WEEK.5.String.Text
 #, fuzzy
@@ -7280,7 +7283,7 @@ msgstr "Taksit sayısı. Yılda ödeme yapılan toplam dönem sayısı."
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_BW.6.String.Text
 #, fuzzy
 msgid  "PMT"
-msgstr "Düzenli ödeme"
+msgstr "DEVRESEL_ÖDEME"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_BW.7.String.Text
 #, fuzzy
@@ -7290,7 +7293,7 @@ msgstr "Düzenli ödemeler. Her dönem ödenen sabit annüiteler."
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_BW.8.String.Text
 #, fuzzy
 msgid  "FV"
-msgstr "Gelecek değer"
+msgstr "GELECEKDEĞER"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_BW.9.String.Text
 #, fuzzy
@@ -7305,7 +7308,7 @@ msgstr "Tür"
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_BW.11.String.Text
 #, fuzzy
 msgid  "Type = 1 denotes due at the beginning of the period, = 0 at the end."
-msgstr "Tür = 1, vade dönem başında, Tür = 0 ise vade dönem sonunda anlamına gelir."
+msgstr "Tip = 1, vade dönem başında, F = 0 ise vade dönem sonunda anlamına gelir."
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_ZW.1.String.Text
 #, fuzzy
@@ -7330,7 +7333,7 @@ msgstr "TAKSİT_SAYISI"
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_ZW.5.String.Text
 #, fuzzy
 msgid  "Payment period. The total number of periods in which the annuity (pension) is paid."
-msgstr "Taksit sayısı. Ödeme yapılan toplam dönem sayısı."
+msgstr "Taksit sayısı. Toplam ödeme yapılan dönem sayısı."
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_ZW.6.String.Text
 #, fuzzy
@@ -7340,7 +7343,7 @@ msgstr "DEVRESEL_ÖDEME"
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_ZW.7.String.Text
 #, fuzzy
 msgid  "Regular payments. The constant annuity to be paid in each period."
-msgstr "Düzenli ödemeler. Her dönem ödenen sabit annüiteler."
+msgstr "Düzenli ödemeler. Her dönem ödenen sabit taksit"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_ZW.8.String.Text
 #, fuzzy
@@ -7350,7 +7353,7 @@ msgstr "Bugünkü değer"
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_ZW.9.String.Text
 #, fuzzy
 msgid  "Present value. The current value of a series of payments"
-msgstr "Bugünkü değer. Ödeme dizisinin bugünkü değeri."
+msgstr "Bugünkü değer. Ödeme dizisinin bugünkü değerini verir."
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_ZW.10.String.Text
 #, fuzzy
@@ -7360,7 +7363,7 @@ msgstr "Tür"
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_ZW.11.String.Text
 #, fuzzy
 msgid  "Type = 1 denotes due at the beginning of the period, = 0 at the end."
-msgstr "Tip = 1, vade dönem başında,  Tip= 0 ise vade dönem sonunda anlamına gelir."
+msgstr "Tür = 1, vade dönem başında, Tür = 0 ise vade dönem sonunda anlamına gelir."
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_ZZR.1.String.Text
 #, fuzzy
@@ -7385,7 +7388,7 @@ msgstr "DEVRESEL_ÖDEME"
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_ZZR.5.String.Text
 #, fuzzy
 msgid  "Regular payments. The constant annuity to be paid in each period."
-msgstr "Düzenli ödemeler. HEr dönem ödenecek sabit taksitler."
+msgstr "Düzenli ödemeler. Her dönem ödenen sabit annüiteler."
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_ZZR.6.String.Text
 #, fuzzy
@@ -7395,7 +7398,7 @@ msgstr "Bugünkü değer"
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_ZZR.7.String.Text
 #, fuzzy
 msgid  "Present value. The current value of a series of payments"
-msgstr "Bugünkü değer. Ödeme dizisinin bugünkü değerini verir."
+msgstr "Bugünkü değer. Ödeme dizisinin bugünkü değeri."
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_ZZR.8.String.Text
 #, fuzzy
@@ -7415,7 +7418,7 @@ msgstr "Tür"
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_ZZR.11.String.Text
 #, fuzzy
 msgid  "Type = 1 denotes due at the beginning of the period, = 0 at the end."
-msgstr "Tip = 1, vade dönem başında,  Tip = 0 ise vade dönem sonunda anlamına gelir."
+msgstr "Tür = 1, vade dönem başında, Tür = 0 ise vade dönem sonunda anlamına gelir."
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_RMZ.1.String.Text
 #, fuzzy
@@ -7450,7 +7453,7 @@ msgstr "Bugünkü değer"
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_RMZ.7.String.Text
 #, fuzzy
 msgid  "Present value. The current value of a series of payments"
-msgstr "Bugünkü değer. Ödeme dizisinin bugünkü değerini verir."
+msgstr "Bugünkü değer. Ödeme dizisinin bugünkü değeri."
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_RMZ.8.String.Text
 #, fuzzy
@@ -7470,7 +7473,7 @@ msgstr "Tür"
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_RMZ.11.String.Text
 #, fuzzy
 msgid  "Type = 1 denotes due at the beginning of the period, = 0 at the end."
-msgstr "Tip = 1, vade dönem başında,  Tip = 0 ise vade dönem sonunda anlamına gelir."
+msgstr "Tip = 1, vade dönem başında,  Tip= 0 ise vade dönem sonunda anlamına gelir."
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_ZINS.1.String.Text
 #, fuzzy
@@ -7645,7 +7648,7 @@ msgstr "Bugünkü değer"
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_KAPZ.9.String.Text
 #, fuzzy
 msgid  "The present value. The present value or the amount the annuity is currently worth."
-msgstr "Bugünkü değer. Ödeme dizisinin bugünkü değerini verir."
+msgstr "Bugünkü değer. Ödeme dizisinin bugünkü değerini verir.Barwert."
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_KAPZ.10.String.Text
 #, fuzzy
@@ -8080,7 +8083,7 @@ msgstr "Nominal faiz "
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_EFFEKTIV.4.String.Text
 #, fuzzy
 msgid  "P"
-msgstr "D"
+msgstr "Dönem"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_EFFEKTIV.5.String.Text
 #, fuzzy
@@ -8130,7 +8133,7 @@ msgstr "Bir dönemlik indirim oranı."
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_NBW.4.String.Text
 #, fuzzy
 msgid  "value "
-msgstr "Değer "
+msgstr "değer "
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_NBW.5.String.Text
 #, fuzzy
@@ -8320,7 +8323,7 @@ msgstr "Değer bir referans ise sonuç DOĞRU olur."
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_IS_REF.2.String.Text
 #, fuzzy
 msgid  "value"
-msgstr "Değer"
+msgstr "değer"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_IS_REF.3.String.Text
 #, fuzzy
@@ -8712,7 +8715,7 @@ msgstr "Değişkenlerin toplamını verir."
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_SUM.2.String.Text
 #, fuzzy
 msgid  "number "
-msgstr "sayı"
+msgstr "sayı "
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_SUM.3.String.Text
 #, fuzzy
@@ -8727,7 +8730,7 @@ msgstr "Değişkenlerin karelerini toplar."
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_SUM_SQ.2.String.Text
 #, fuzzy
 msgid  "number "
-msgstr "sayı"
+msgstr "sayı "
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_SUM_SQ.3.String.Text
 #, fuzzy
@@ -8973,7 +8976,7 @@ msgstr "Yinelenmeyen öğe kombinasyonlarının sayısını hesaplar."
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_KOMBIN.2.String.Text
 #, fuzzy
 msgid  "number_1"
-msgstr "Sayısı_1"
+msgstr "sayı_1"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_KOMBIN.3.String.Text
 #, fuzzy
@@ -8983,7 +8986,7 @@ msgstr "Toplam öğe sayısı."
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_KOMBIN.4.String.Text
 #, fuzzy
 msgid  "number_2"
-msgstr "Sayı_2"
+msgstr "sayı_2"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_KOMBIN.5.String.Text
 #, fuzzy
@@ -9520,7 +9523,7 @@ msgstr "Sayı"
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_INT.3.String.Text
 #, fuzzy
 msgid  "The number to be rounded down."
-msgstr "Aşağı yuvarlanan sayı."
+msgstr "Aşağı yuvarlanacak sayı."
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_TRUNC.1.String.Text
 #, fuzzy
@@ -9570,7 +9573,7 @@ msgstr "sayım"
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_ROUND.5.String.Text
 #, fuzzy
 msgid  "The number of places to which a number is to be rounded."
-msgstr "Yukarı yuvarlanacak rakam sayısı."
+msgstr "Yuvarlanacak rakam sayısı."
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_ROUND_UP.1.String.Text
 #, fuzzy
@@ -9585,7 +9588,7 @@ msgstr "sayı"
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_ROUND_UP.3.String.Text
 #, fuzzy
 msgid  "The number to be rounded up."
-msgstr "Yuvarlanacak sayı."
+msgstr "Yukarı yuvarlanacak sayı."
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_ROUND_UP.4.String.Text
 #, fuzzy
@@ -9635,7 +9638,7 @@ msgstr "Sayı"
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_EVEN.3.String.Text
 #, fuzzy
 msgid  "The number to be rounded up."
-msgstr "Bir üst sayıya yuvarlanan sayı."
+msgstr "Yuvarlanacak sayı."
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_ODD.1.String.Text
 #, fuzzy
@@ -9650,7 +9653,7 @@ msgstr "Sayı"
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_ODD.3.String.Text
 #, fuzzy
 msgid  "The number to be rounded up."
-msgstr "Yukarı yuvarlanacak sayı."
+msgstr "Bir üst sayıya yuvarlanan sayı."
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_CEIL.1.String.Text
 #, fuzzy
@@ -9680,7 +9683,7 @@ msgstr "Değerin, katlarından birine yuvarlandığı sayı."
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_CEIL.6.String.Text
 #, fuzzy
 msgid  "Mode"
-msgstr "Kip"
+msgstr "Mod"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_CEIL.7.String.Text
 #, fuzzy
@@ -9760,7 +9763,7 @@ msgstr "Matris transpozisyonu. Bir matrisin satır ve sütunlarını birbirleri 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_MAT_TRANS.2.String.Text
 #, fuzzy
 msgid  "array"
-msgstr "dizi"
+msgstr "Matris"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_MAT_TRANS.3.String.Text
 #, fuzzy
@@ -9775,7 +9778,7 @@ msgstr "Matris çarpımı. İki matrisin çarpım sonucunu verir."
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_MAT_MULT.2.String.Text
 #, fuzzy
 msgid  "array"
-msgstr "dizi"
+msgstr "Matris"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_MAT_MULT.3.String.Text
 #, fuzzy
@@ -9785,7 +9788,7 @@ msgstr "Matris çarpımı için birinci matris."
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_MAT_MULT.4.String.Text
 #, fuzzy
 msgid  "array"
-msgstr "dizi"
+msgstr "Matris"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_MAT_MULT.5.String.Text
 #, fuzzy
@@ -9800,7 +9803,7 @@ msgstr "Matris determinantını belirler."
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_MAT_DET.2.String.Text
 #, fuzzy
 msgid  "array"
-msgstr "dizi"
+msgstr "Matris"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_MAT_DET.3.String.Text
 #, fuzzy
@@ -9995,7 +9998,7 @@ msgstr "parametreler"
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_RGP.9.String.Text
 #, fuzzy
 msgid  "If parameter = 0 then only the regression coefficient will be calculated, otherwise other values as well."
-msgstr "Parametreler=0 olursa, yalnızca regresyon katsayıları hesaplanır. Diğer durumlarda diğer değerler de hesaplanır."
+msgstr "Parametreler=0 olursa yalnızca regresyon katsayıları hesaplanır. Diğer durumlarda diğer değerler de hesaplanır."
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_RKP.1.String.Text
 #, fuzzy
@@ -10030,7 +10033,7 @@ msgstr "İşlev_türü"
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_RKP.7.String.Text
 #, fuzzy
 msgid  "If type = 0 then the functions will be calculated in the form of y=m^x, or also functions y=b*m^x."
-msgstr "Tür=0 ise y=m^x biçimindeki işlevler hesaplanır, diğer hallerde y=b*m^x işlevleri de hesaplanır."
+msgstr "Tür=0 olursa y=m^x biçiminde işlevler hesaplanır. Diğer durumlarda y=b*m^x şeklinde işlevler da hesaplanır."
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_RKP.8.String.Text
 #, fuzzy
@@ -10065,7 +10068,7 @@ msgstr "veri_X"
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_TREND.5.String.Text
 #, fuzzy
 msgid  "The X data array as the basis for the regression."
-msgstr "Regresyon baz olarak X veri dizisi."
+msgstr "Regresyon temeli olarak X veri dizisi."
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_TREND.6.String.Text
 #, fuzzy
@@ -10075,7 +10078,7 @@ msgstr "yeni veri_X"
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_TREND.7.String.Text
 #, fuzzy
 msgid  "The array of X data for recalculating the values."
-msgstr "Değerlerin yeniden hesaplanması için X veri matrisi."
+msgstr "Değerlerin yeniden hesaplanması için X veri dizisi."
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_TREND.8.String.Text
 #, fuzzy
@@ -10140,7 +10143,7 @@ msgstr "Değişken listesinin içerdiği sayı miktarını belirler."
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_COUNT.2.String.Text
 #, fuzzy
 msgid  "value "
-msgstr "değer"
+msgstr "Değer "
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_COUNT.3.String.Text
 #, fuzzy
@@ -10155,7 +10158,7 @@ msgstr "Değişken listesinin içerdiği değer sayısını belirler."
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_COUNT_2.2.String.Text
 #, fuzzy
 msgid  "value "
-msgstr "değer"
+msgstr "Değer "
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_COUNT_2.3.String.Text
 #, fuzzy
@@ -10170,7 +10173,7 @@ msgstr "Değişken listesinin en büyük sayısını verir."
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_MAX.2.String.Text
 #, fuzzy
 msgid  "number "
-msgstr "sayı "
+msgstr "sayı"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_MAX.3.String.Text
 #, fuzzy
@@ -10185,7 +10188,7 @@ msgstr "Değişken listesinin en büyük değerini verir. Metin sıfır olarak d
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_MAX_A.2.String.Text
 #, fuzzy
 msgid  "value "
-msgstr "değer "
+msgstr "değer"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_MAX_A.3.String.Text
 #, fuzzy
@@ -10200,7 +10203,7 @@ msgstr "Değişken listesinin en küçük sayısını verir."
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_MIN.2.String.Text
 #, fuzzy
 msgid  "number "
-msgstr "sayı "
+msgstr "sayı"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_MIN.3.String.Text
 #, fuzzy
@@ -10215,7 +10218,7 @@ msgstr "Değişken listesinin en küçük değerini verir. Metin sıfır olarak 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_MIN_A.2.String.Text
 #, fuzzy
 msgid  "value "
-msgstr "değer "
+msgstr "değer"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_MIN_A.3.String.Text
 #, fuzzy
@@ -10230,12 +10233,12 @@ msgstr "Bir örneğe dayanarak varyansı hesaplar."
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_VAR.2.String.Text
 #, fuzzy
 msgid  "number "
-msgstr "sayı"
+msgstr "sayı "
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_VAR.3.String.Text
 #, fuzzy
 msgid  "Number 1, number 2, ... are 1 to 30 numerical arguments which portray a sample of a population."
-msgstr "Sayı 1; sayı 2;... Popülasyonu temsil eden 1 - 30 arası nümerik değişkendir."
+msgstr "Sayı 1; sayı 2;... Popülasyondan alınmış bir örneği temsil eden 1 - 30 arası nümerik değişkendir."
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_VAR_A.1.String.Text
 #, fuzzy
@@ -10245,7 +10248,7 @@ msgstr "Bir örnekten yola çıkarak varyansı hesaplar. Metin sıfır olarak de
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_VAR_A.2.String.Text
 #, fuzzy
 msgid  "value "
-msgstr "değer"
+msgstr "değer "
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_VAR_A.3.String.Text
 #, fuzzy
@@ -10260,7 +10263,7 @@ msgstr "Tüm popülasyona dayanarak varyansı hesaplar."
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_VAR_P.2.String.Text
 #, fuzzy
 msgid  "number "
-msgstr "sayı"
+msgstr "sayı "
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_VAR_P.3.String.Text
 #, fuzzy
@@ -10275,7 +10278,7 @@ msgstr "Tüm popülasyondan yola çıkarak varyansı hesaplar. Metin sıfır ola
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_VAR_P_A.2.String.Text
 #, fuzzy
 msgid  "value "
-msgstr "değer"
+msgstr "değer "
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_VAR_P_A.3.String.Text
 #, fuzzy
@@ -10290,7 +10293,7 @@ msgstr "Bir örneğe dayanarak standart sapmayı hesaplar."
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_ST_DEV.2.String.Text
 #, fuzzy
 msgid  "number "
-msgstr "sayı "
+msgstr "sayı"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_ST_DEV.3.String.Text
 #, fuzzy
@@ -10305,7 +10308,7 @@ msgstr "Bir örnekten yola çıkarak standart sapmayı hesaplar. metin sıfır o
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_ST_DEV_A.2.String.Text
 #, fuzzy
 msgid  "value "
-msgstr "değer "
+msgstr "değer"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_ST_DEV_A.3.String.Text
 #, fuzzy
@@ -10320,7 +10323,7 @@ msgstr "Tüm popülasyona dayanarak standart sapmayı hesaplar."
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_ST_DEV_P.2.String.Text
 #, fuzzy
 msgid  "number "
-msgstr "sayı "
+msgstr "sayı"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_ST_DEV_P.3.String.Text
 #, fuzzy
@@ -10350,7 +10353,7 @@ msgstr "Bir örneğin ortalamasını hesaplar."
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_AVERAGE.2.String.Text
 #, fuzzy
 msgid  "number "
-msgstr "sayı"
+msgstr "sayı "
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_AVERAGE.3.String.Text
 #, fuzzy
@@ -10380,12 +10383,12 @@ msgstr "Örneğin, ortalamadan sapma değeri karesinin toplamını hesaplar."
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_DEV_SQ.2.String.Text
 #, fuzzy
 msgid  "number "
-msgstr "sayı"
+msgstr "sayı "
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_DEV_SQ.3.String.Text
 #, fuzzy
 msgid  "Number 1, number 2, ... are 1 to 30 numerical arguments which portray a sample."
-msgstr "Sayı 1; sayı 2;... Bir örneği temsil eden 1 - 30 arası nümerik değişkendir."
+msgstr "Sayı 1; sayı 2;... Bir örneği temsil eden 1- 30 arası nümerik değişkendir."
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_AVE_DEV.1.String.Text
 #, fuzzy
@@ -10395,7 +10398,7 @@ msgstr "Örneğin, ortalama değerden mutlak sapmasının ortalamasını hesapla
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_AVE_DEV.2.String.Text
 #, fuzzy
 msgid  "number "
-msgstr "sayı"
+msgstr "sayı "
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_AVE_DEV.3.String.Text
 #, fuzzy
@@ -10445,7 +10448,7 @@ msgstr "sayı"
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_GEO_MEAN.3.String.Text
 #, fuzzy
 msgid  "Number 1, number 2, ... are 1 to 30 numerical arguments which portray a sample."
-msgstr "Sayı 1; sayı 2;... bir örneği temsil eden 1 - 30 arası nümerik değişkendir."
+msgstr "Sayı 1; sayı 2;... Bir örneği temsil eden 1 - 30 arası nümerik değişkendir."
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_HAR_MEAN.1.String.Text
 #, fuzzy
@@ -10505,7 +10508,7 @@ msgstr "veri"
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_PERCENTILE.3.String.Text
 #, fuzzy
 msgid  "The array of the data in the sample."
-msgstr "Örnekteki verilerin dizisi."
+msgstr "Örnekteki verinin dizisi."
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_PERCENTILE.4.String.Text
 #, fuzzy
@@ -10530,7 +10533,7 @@ msgstr "veri"
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_QUARTILE.3.String.Text
 #, fuzzy
 msgid  "The array of the data in the sample."
-msgstr "Örnekteki verilerin dizisi."
+msgstr "Örnekteki verinin dizisi."
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_QUARTILE.4.String.Text
 #, fuzzy
@@ -10555,7 +10558,7 @@ msgstr "veri"
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_LARGE.3.String.Text
 #, fuzzy
 msgid  "The array of the data in the sample."
-msgstr "Örnekteki verilerin matrisi."
+msgstr "Örnekteki verilerin dizisi."
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_LARGE.4.String.Text
 #, fuzzy
@@ -10705,7 +10708,7 @@ msgstr "İlgili olasılıkların dizisi."
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_PROB.6.String.Text
 #, fuzzy
 msgid  "Start"
-msgstr "Başlangıç"
+msgstr "Başlat"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_PROB.7.String.Text
 #, fuzzy
@@ -10740,7 +10743,7 @@ msgstr "Deneylerin sayısı"
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_B.4.String.Text
 #, fuzzy
 msgid  "SP"
-msgstr "SP"
+msgstr "Olasılık"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_B.5.String.Text
 #, fuzzy
@@ -10780,7 +10783,7 @@ msgstr "sayı"
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_PHI.3.String.Text
 #, fuzzy
 msgid  "The value for which the standard normal distribution is to be calculated."
-msgstr "Standart normal dağılımı hesaplanacak değer."
+msgstr "Standart normal dağıtımı hesaplanacak değer."
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_GAUSS.1.String.Text
 #, fuzzy
@@ -10860,7 +10863,7 @@ msgstr "Olasılık"
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_BINOM_DIST.7.String.Text
 #, fuzzy
 msgid  "The success probability of a trial."
-msgstr "Deneyin başarılı olma olasılığı."
+msgstr "Deneyin başarı olasılığı."
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_BINOM_DIST.8.String.Text
 #, fuzzy
@@ -10960,7 +10963,7 @@ msgstr "Poisson dağılımı hesaplanacak değer."
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_POISSON_DIST.4.String.Text
 #, fuzzy
 msgid  "mean"
-msgstr "ortalama"
+msgstr "Ortalama"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_POISSON_DIST.5.String.Text
 #, fuzzy
@@ -10975,7 +10978,7 @@ msgstr "Birikimli"
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_POISSON_DIST.7.String.Text
 #, fuzzy
 msgid  "0 or FALSE calculates the probability density function. Any other value or TRUE or omitted calculates the cumulative distribution function."
-msgstr "Olasılık yoğunluk işlevi 0 ya da YANLIŞ olarak hesaplanır. Diğer değer, DOĞRU olarak hesaplanmış ya da ihmal edilmişse birikimli dağılım işlevi olarak hesaplanır."
+msgstr "Olasılık yoğunluk işlevi 0 ya da YANLIŞ olarak hesaplanır. Diğer değer ya da DOĞRU olarak hesaplanmışsa birikimli dağılım işlevidir."
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_NORM_DIST.1.String.Text
 #, fuzzy
@@ -11005,7 +11008,7 @@ msgstr "Ortalama değer. Normal dağılımın ortalama değeri."
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_NORM_DIST.6.String.Text
 #, fuzzy
 msgid  "STDEV"
-msgstr "STDSAPMA"
+msgstr "STSAP"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_NORM_DIST.7.String.Text
 #, fuzzy
@@ -11020,7 +11023,7 @@ msgstr "C"
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_NORM_DIST.9.String.Text
 #, fuzzy
 msgid  "0 or FALSE calculates the probability density function. Any other value or TRUE or omitted calculates the cumulative distribution function."
-msgstr "Olasılık yoğunluk işlevi 0 ya da YANLIŞ olarak hesaplanır. Diğer değer ya da DOĞRU olarak hesaplanmışsa birikimli dağılım işlevidir."
+msgstr "Olasılık yoğunluk işlevi 0 ya da YANLIŞ olarak hesaplanır. Diğer değer, DOĞRU olarak hesaplanmış ya da ihmal edilmişse birikimli dağılım işlevi olarak hesaplanır."
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_NORM_INV.1.String.Text
 #, fuzzy
@@ -11040,7 +11043,7 @@ msgstr "Ters normal dağılımı hesaplanacak olasılık değeri."
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_NORM_INV.4.String.Text
 #, fuzzy
 msgid  "mean"
-msgstr "Ortalama"
+msgstr "ortalama"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_NORM_INV.5.String.Text
 #, fuzzy
@@ -11050,7 +11053,7 @@ msgstr "Ortalama değer. Normal dağılımın ortalama değeri."
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_NORM_INV.6.String.Text
 #, fuzzy
 msgid  "STDEV"
-msgstr "STDSAPMA"
+msgstr "STSAP"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_NORM_INV.7.String.Text
 #, fuzzy
@@ -11105,7 +11108,7 @@ msgstr "Log normal dağılımı hesaplanacak değer."
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_LOG_NORM_DIST.4.String.Text
 #, fuzzy
 msgid  "mean"
-msgstr "ortalama"
+msgstr "Ortalama"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_LOG_NORM_DIST.5.String.Text
 #, fuzzy
@@ -11130,7 +11133,7 @@ msgstr "Birikimli"
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_LOG_NORM_DIST.9.String.Text
 #, fuzzy
 msgid  "0 or FALSE calculates the probability density function. Any other value or TRUE or omitted calculates the cumulative distribution function."
-msgstr "Olasılık yoğunluk işlevi 0 ya da YANLIŞ olarak hesaplanır. Diğer değer ya da DOĞRU olarak hesaplanmışsa birikimli dağılım işlevidir."
+msgstr "Olasılık yoğunluk işlevi 0 ya da YANLIŞ olarak hesaplanır. Diğer değer, DOĞRU olarak hesaplanmış ya da ihmal edilmişse birikimli dağılım işlevi olarak hesaplanır."
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_LOG_INV.1.String.Text
 #, fuzzy
@@ -11200,7 +11203,7 @@ msgstr "C"
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_EXP_DIST.7.String.Text
 #, fuzzy
 msgid  "Cumulated. C=0 calculates the density function, C=1 the distribution."
-msgstr "Toplandı. C = 0 yoğunluk işlevini, C = 1 ise dağılımı hesaplar."
+msgstr "Kümülasyon. K = 0 yoğunluk işlevini, K = 1 ise dağılımı hesaplar."
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_GAMMA_DIST.1.String.Text
 #, fuzzy
@@ -11335,7 +11338,7 @@ msgstr "alfa"
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_BETA_DIST.5.String.Text
 #, fuzzy
 msgid  "The Alpha parameter of the Beta distribution."
-msgstr "Beta dağılımın alfa parametresi."
+msgstr "Beta dağılımının alfa parametresi."
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_BETA_DIST.6.String.Text
 #, fuzzy
@@ -11345,7 +11348,7 @@ msgstr "beta"
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_BETA_DIST.7.String.Text
 #, fuzzy
 msgid  "The Beta parameter of the Beta distribution."
-msgstr "Beta dağılımın beta parametresi."
+msgstr "Beta dağılımının beta parametresi."
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_BETA_DIST.8.String.Text
 #, fuzzy
@@ -11545,12 +11548,12 @@ msgstr "özgürlük_dereceleri"
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_T_DIST.5.String.Text
 #, fuzzy
 msgid  "The degrees of freedom of the T distribution."
-msgstr "T dağılımı özgürlük dereceleri."
+msgstr "T dağılımının özgürlük dereceleri."
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_T_DIST.6.String.Text
 #, fuzzy
 msgid  "mode"
-msgstr "Kip"
+msgstr "mod"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_T_DIST.7.String.Text
 #, fuzzy
@@ -11675,7 +11678,7 @@ msgstr "özgürlük_dereceleri"
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_CHI_DIST.5.String.Text
 #, fuzzy
 msgid  "The degrees of freedom of the chi square distribution."
-msgstr "ki-kare dağılımının özgürlük dereceleri."
+msgstr "Ki-kare dağılımının özgürlük dereceleri."
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_CHISQ_DIST.1.String.Text
 #, fuzzy
@@ -11965,7 +11968,7 @@ msgstr "veri_2"
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_F_TEST.5.String.Text
 #, fuzzy
 msgid  "The second record array."
-msgstr "İkinci kayıt dizisi"
+msgstr "İkinci kayıt dizisi."
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_T_TEST.1.String.Text
 #, fuzzy
@@ -12290,7 +12293,7 @@ msgstr "başvuru"
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_AREAS.3.String.Text
 #, fuzzy
 msgid  "The reference to a (multiple) range."
-msgstr "(Çoklu) aralığa alınan başvuru."
+msgstr "(Çoklu) aralığa referans."
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_CHOSE.1.String.Text
 #, fuzzy
@@ -12300,7 +12303,7 @@ msgstr "En fazla 30 değer değişkeni arasından bir değer seçer."
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_CHOSE.2.String.Text
 #, fuzzy
 msgid  "Index"
-msgstr "İndis"
+msgstr "Dizin"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_CHOSE.3.String.Text
 #, fuzzy
@@ -12330,7 +12333,7 @@ msgstr "başvuru"
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_COLUMN.3.String.Text
 #, fuzzy
 msgid  "The reference to a cell or a range."
-msgstr "Hücre ya da aralığa başvuru."
+msgstr "Hücre ya da aralık başvurusu."
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_ROW.1.String.Text
 #, fuzzy
@@ -12580,7 +12583,7 @@ msgstr "Arama ölçütü"
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_LOOKUP.3.String.Text
 #, fuzzy
 msgid  "The value to be used for comparison."
-msgstr "Karşılaştırma yapılan değer."
+msgstr "Karşılaştırma için kullanılacak değer."
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_LOOKUP.4.String.Text
 #, fuzzy
@@ -12873,7 +12876,7 @@ msgstr "metin"
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_JIS.3.String.Text
 #, fuzzy
 msgid  "The text to convert."
-msgstr "Metne dönüştür"
+msgstr "Metne dönüştür."
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_ASC.1.String.Text
 #, fuzzy
@@ -13008,7 +13011,7 @@ msgstr "Metin içinde sözcük parçaları arar (büyük/küçük harf duyarlı)
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_FIND.2.String.Text
 #, fuzzy
 msgid  "find_text"
-msgstr "metin_bul"
+msgstr "Aranan metin"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_FIND.3.String.Text
 #, fuzzy
@@ -13023,7 +13026,7 @@ msgstr "metin"
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_FIND.5.String.Text
 #, fuzzy
 msgid  "The text in which a search is to be made."
-msgstr "Arama yapılan metin."
+msgstr "Arama yapılacak metin."
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_FIND.6.String.Text
 #, fuzzy
@@ -13456,7 +13459,7 @@ msgstr "kök"
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_BASE.5.String.Text
 #, fuzzy
 msgid  "The base number for conversion must be in the range 2 - 36."
-msgstr "Dönüşüm kaynağı kök sayısı 2 - 36 aralığında bulunmalıdır."
+msgstr "Dönüşüm hedefi taban sayısı  2 - 36 aralığında bulunmalıdır."
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_BASE.6.String.Text
 #, fuzzy
@@ -14885,7 +14888,7 @@ msgstr ">="
 #: source/ui/src/optsolver.src#RID_SCDLG_OPTSOLVER.LB_OP1.Default.StringList.item
 #, fuzzy
 msgid  "Integer"
-msgstr "Tam sayı "
+msgstr "Tam sayı"
 
 #: source/ui/src/optsolver.src#RID_SCDLG_OPTSOLVER.LB_OP1.Default.StringList.item
 #, fuzzy
@@ -15496,7 +15499,7 @@ msgstr "~Sayılar"
 #: source/ui/src/miscdlgs.src#RID_SCDLG_DELCONT.BTN_DELDATETIME.CheckBox.Text
 #, fuzzy
 msgid  "~Date & time"
-msgstr "~Tarih & Zaman"
+msgstr "~Tarih & Saat"
 
 #: source/ui/src/miscdlgs.src#RID_SCDLG_DELCONT.BTN_DELFORMULAS.CheckBox.Text
 #, fuzzy
@@ -15506,7 +15509,7 @@ msgstr "~Formüller"
 #: source/ui/src/miscdlgs.src#RID_SCDLG_DELCONT.BTN_DELATTRS.CheckBox.Text
 #, fuzzy
 msgid  "For~mats"
-msgstr "Biçimler"
+msgstr "Biçi~mler"
 
 #: source/ui/src/miscdlgs.src#RID_SCDLG_DELCONT.BTN_DELNOTES.CheckBox.Text
 #, fuzzy
@@ -15636,7 +15639,7 @@ msgstr "~Aşağı"
 #: source/ui/src/miscdlgs.src#RID_SCDLG_INSCONT.BTN_MV_RIGHT.RadioButton.Text
 #, fuzzy
 msgid  "~Right"
-msgstr "S~ağ"
+msgstr "S~ağa"
 
 #: source/ui/src/miscdlgs.src#RID_SCDLG_INSCONT.FL_MOVE.FixedLine.Text
 #, fuzzy

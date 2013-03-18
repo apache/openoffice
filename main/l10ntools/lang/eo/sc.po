@@ -5933,7 +5933,7 @@ msgstr "NPER"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_ZW.5.String.Text
 msgid  "Payment period. The total number of periods in which the annuity (pension) is paid."
-msgstr "Paga periodo. La totala nombro de periodoj dum kiuj la rento (pensio) estas pagata."
+msgstr "Payment period. The total number of periods in which the annuity (pension) is paid.Paga periodo. La totala nombro de periodoj dum kiuj la rento (pensio) estas pagata."
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_ZW.6.String.Text
 msgid  "PMT"
@@ -6185,7 +6185,7 @@ msgstr "VA"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_KAPZ.9.String.Text
 msgid  "The present value. The present value or the amount the annuity is currently worth."
-msgstr "La nuna valoro. La nuna valoro aŭ la sumo kiun la rento aktuale valoras."
+msgstr "The present value. The present value or the amount the annuity is currently worth.La nuna valoro. La nuna valoro aŭ la sumo kiun la rento aktuale valoras."
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_KAPZ.10.String.Text
 msgid  "FV"
@@ -7229,7 +7229,7 @@ msgstr "Liveras la kvadratan radikon de nombro."
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_SQRT.2.String.Text
 msgid  "number"
-msgstr "numero"
+msgstr "Numero"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_SQRT.3.String.Text
 msgid  "A positive value for which the square root is to be calculated."
@@ -8089,7 +8089,7 @@ msgstr "Linia_tipo"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_RGP.7.String.Text
 msgid  "If type = 0 the linears will be calculated through the zero point, or else moved linears."
-msgstr "Se tipo = 0 la linioj estos kalkulataj tra la nulpunkto, aŭ alie kiel movitaj linioj."
+msgstr "If type = 0 the linears will be calculated through the zero point, or else moved linears.Se tipo = 0 la linioj estos kalkulataj tra la nulpunkto, aŭ alie kiel movitaj linioj."
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_RGP.8.String.Text
 msgid  "stats"
@@ -8097,7 +8097,7 @@ msgstr "parametroj"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_RGP.9.String.Text
 msgid  "If parameter = 0 then only the regression coefficient will be calculated, otherwise other values as well."
-msgstr "Se parametro = 0 tiam nur la regresia koeficiento estos kalkulata, alimaniere ankaŭ aliaj valoroj."
+msgstr "If parameter = 0 then only the regression coefficient will be calculated, otherwise other values as well.Se parametro = 0 tiam nur la regresia koeficiento estos kalkulata, alimaniere ankaŭ aliaj valoroj."
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_RKP.1.String.Text
 msgid  "Calculates the parameters of the exponential regression curve as an array."
@@ -8125,7 +8125,7 @@ msgstr "Funkcia_tipo"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_RKP.7.String.Text
 msgid  "If type = 0 then the functions will be calculated in the form of y=m^x, or also functions y=b*m^x."
-msgstr "Se tipo = 0 tiam la funkcioj estos kalkulataj en la formo de y=m^x, aŭ ankaŭ funkcioj y=b*m^x."
+msgstr "If type = 0 then the functions will be calculated in the form of y=m^x, or also functions y=b*m^x.Se tipo = 0 tiam la funkcioj estos kalkulataj en la formo de y=m^x, aŭ ankaŭ funkcioj y=b*m^x."
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_RKP.8.String.Text
 msgid  "stats"
@@ -8289,7 +8289,7 @@ msgstr "Numero"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_VAR.3.String.Text
 msgid  "Number 1, number 2, ... are 1 to 30 numerical arguments which portray a sample of a population."
-msgstr "Nombro 1, nombro 2, ... estas 1 ĝis 30 numeraj argumentoj kiuj montras samplon el populacio."
+msgstr "Number 1, number 2, ... are 1 to 30 numerical arguments which portray a sample of a population.Nombro 1, nombro 2, ... estas 1 ĝis 30 numeraj argumentoj kiuj montras samplon el populacio."
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_VAR_A.1.String.Text
 msgid  "Returns the variance based on a sample. Text is evaluated as zero."
@@ -8301,7 +8301,7 @@ msgstr "Valoro"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_VAR_A.3.String.Text
 msgid  "Value 1; value 2; ... are 1 to 30 arguments representing a sample taken from a basic total population."
-msgstr "Valoro 1; valoro 2;... estas 1 ĝis 30 argumentoj reprezentantaj samplon prenitan el baza totala populacio."
+msgstr "Value 1; value 2;.. .are 1 to 30 arguments representing a sample taken from a basic total population.Valoro 1; valoro 2;... estas 1 ĝis 30 argumentoj reprezentantaj samplon prenitan el baza totala populacio."
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_VAR_P.1.String.Text
 msgid  "Calculates variance based on the entire population."
@@ -8881,7 +8881,7 @@ msgstr "Akumula"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_POISSON_DIST.7.String.Text
 msgid  "0 or FALSE calculates the probability density function. Any other value or TRUE or omitted calculates the cumulative distribution function."
-msgstr "0 aŭ FALSA, kalkulas la probablan densecan funkcion. Iu alia valoro aŭ VERA aŭ ellasita, kalkulas la akumulan distribuan funkcion."
+msgstr "0 aŭ FALSA kalkulas la probablan densan funkcion. Iu alia valoro aŭ VERA aŭ neniu valoro kalkulas la akumulan distribuan funkcion."
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_NORM_DIST.1.String.Text
 msgid  "Values of the normal distribution."
@@ -8917,7 +8917,7 @@ msgstr "C"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_NORM_DIST.9.String.Text
 msgid  "0 or FALSE calculates the probability density function. Any other value or TRUE or omitted calculates the cumulative distribution function."
-msgstr "0 aŭ FALSA kalkulas la probablan densan funkcion. Iu alia valoro aŭ VERA aŭ neniu valoro kalkulas la akumulan distribuan funkcion."
+msgstr "0 aŭ FALSA, kalkulas la probablan densecan funkcion. Iu alia valoro aŭ VERA aŭ ellasita, kalkulas la akumulan distribuan funkcion."
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_NORM_INV.1.String.Text
 msgid  "Values of the inverse normal distribution."
@@ -9061,7 +9061,7 @@ msgstr "C"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_EXP_DIST.7.String.Text
 msgid  "Cumulated. C=0 calculates the density function, C=1 the distribution."
-msgstr "Akumulita. C=0, kalkulas la densecan funkcion, C=1 la distribuon."
+msgstr "Akumulita. C=0 kalkulas la densecan funkcion, C=1 la distribuon."
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_GAMMA_DIST.1.String.Text
 msgid  "Returns the value of the probability density function or the cumulative distribution function for the Gamma distribution."
@@ -9169,7 +9169,7 @@ msgstr "alfa"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_BETA_DIST.5.String.Text
 msgid  "The Alpha parameter of the Beta distribution."
-msgstr "La Alfa-parametro de la Beta-distribuo."
+msgstr "La Alfa parametro de la Beta-distribuo."
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_BETA_DIST.6.String.Text
 msgid  "beta"
@@ -9177,7 +9177,7 @@ msgstr "beta"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_BETA_DIST.7.String.Text
 msgid  "The Beta parameter of the Beta distribution."
-msgstr "La Beta-parametro de la Beta-distribuo."
+msgstr "La Beta parametro de la Beta-distribuo."
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_BETA_DIST.8.String.Text
 msgid  "Start"
@@ -9913,7 +9913,7 @@ msgstr "A1"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_ADDRESS.9.String.Text
 msgid  "The reference style: 0 or FALSE means R1C1 style, any other value or omitted means A1 style."
-msgstr "La referenca stilo: 0 aŭ FALSA signifas R1C1-stilon; iu alia valoro aŭ ellasita signifas A1-0-stilon."
+msgstr "La referenca stilo: 0 aŭ FALSA signifas R1C1-stilon; alia valoro aŭ neniu valoro signifas A1-stilon."
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_ADDRESS.10.String.Text
 msgid  "sheet"

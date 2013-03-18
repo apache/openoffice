@@ -1773,7 +1773,7 @@ msgstr "Роҳбалад"
 
 #: source/ui/navipi/navipi.src#RID_SCDLG_NAVIGATOR.FT_ROW.FixedText.Text
 msgid  "Row"
-msgstr "Row"
+msgstr "Сатр"
 
 #: source/ui/navipi/navipi.src#RID_SCDLG_NAVIGATOR.ED_ROW.NumericField.QuickHelpText
 msgid  "Row"
@@ -1781,7 +1781,7 @@ msgstr "Row"
 
 #: source/ui/navipi/navipi.src#RID_SCDLG_NAVIGATOR.FT_COL.FixedText.Text
 msgid  "Column"
-msgstr "Column"
+msgstr "Сутун"
 
 #: source/ui/navipi/navipi.src#RID_SCDLG_NAVIGATOR.ED_COL.SpinField.QuickHelpText
 msgid  "Column"
@@ -2117,7 +2117,7 @@ msgstr "Text Attributes"
 
 #: source/ui/pagedlg/hfedtdlg.src#RID_HFBASE.BTN_FILE.ImageButton.QuickHelpText
 msgid  "Title"
-msgstr "Ном"
+msgstr "File Name"
 
 #: source/ui/pagedlg/hfedtdlg.src#RID_HFBASE.RID_POPUP_FCOMMAND.FILE_COMMAND_TITEL.MenuItem.Text
 msgid  "Title"
@@ -3837,7 +3837,7 @@ msgstr "Ислоҳкунии функтсия"
 
 #: source/ui/src/globstr.src#RID_GLOBSTR.STR_NOTES.String.Text
 msgid  "Comments"
-msgstr "Эзоҳ"
+msgstr "Шарҳ"
 
 #: source/ui/src/globstr.src#RID_GLOBSTR.STR_QUERY_DELTAB.String.Text
 msgid  "Are you sure you want to delete the selected sheet(s)?"
@@ -8685,7 +8685,7 @@ msgstr "Returns the probabilityof a trial result using binomial distribution."
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_B.2.String.Text
 msgid  "trials"
-msgstr "trials"
+msgstr "кӯшишҳо"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_B.3.String.Text
 msgid  "The number of trials."
@@ -8777,11 +8777,11 @@ msgstr "Шумораи муввафақиятҳо дар силсилаи кӯш
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_BINOM_DIST.4.String.Text
 msgid  "trials"
-msgstr "кӯшишҳо"
+msgstr "trials"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_BINOM_DIST.5.String.Text
 msgid  "The total number of trials."
-msgstr "Шумораи умумии кӯшишҳо."
+msgstr "The total number of trials."
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_BINOM_DIST.6.String.Text
 msgid  "SP"
@@ -8789,7 +8789,7 @@ msgstr "SP"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_BINOM_DIST.7.String.Text
 msgid  "The success probability of a trial."
-msgstr "Эҳтимолияти муваффақияти кӯшиш."
+msgstr "The success probability of a trial."
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_BINOM_DIST.8.String.Text
 msgid  "C"
@@ -8825,7 +8825,7 @@ msgstr "SP"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_NEG_BINOM_VERT.7.String.Text
 msgid  "The success probability of a trial."
-msgstr "The success probability of a trial."
+msgstr "Эҳтимолияти муваффақияти кӯшиш."
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_KRIT_BINOM.1.String.Text
 msgid  "Border arguments of the binomial distribution."
@@ -8869,7 +8869,7 @@ msgstr "The value for which the Poisson distribution is to be calculated."
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_POISSON_DIST.4.String.Text
 msgid  "mean"
-msgstr "миёна"
+msgstr "mean"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_POISSON_DIST.5.String.Text
 msgid  "Mean. The mean value of the Poisson distribution."
@@ -9385,7 +9385,7 @@ msgstr "degrees_freedom_1"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_F_DIST.5.String.Text
 msgid  "The degrees of freedom in the numerator of the F distribution."
-msgstr "Дараҷаи озодии тақсимшавандаи тақсимоти F."
+msgstr "Дараҷаи озодии тақсимкунандаи тақсимоти F."
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_F_DIST.6.String.Text
 msgid  "degrees_freedom_2"
@@ -9393,7 +9393,7 @@ msgstr "degrees_freedom_2"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_F_DIST.7.String.Text
 msgid  "The degrees of freedom in the denominator of the F distribution."
-msgstr "Дараҷаи озодии тақсимкунандаи тақсимоти F."
+msgstr "Дараҷаи озодии тақсимшавандаи тақсимоти F."
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_F_INV.1.String.Text
 msgid  "Values of the inverse F distribution."
@@ -12545,11 +12545,11 @@ msgstr "Форматҳо"
 
 #: source/ui/src/miscdlgs.src#RID_SCDLG_DELCONT.BTN_DELNOTES.CheckBox.Text
 msgid  "~Comments"
-msgstr "Эззоҳ"
+msgstr "~Эззоҳ"
 
 #: source/ui/src/miscdlgs.src#RID_SCDLG_DELCONT.BTN_DELOBJECTS.CheckBox.Text
 msgid  "~Objects"
-msgstr "Об~ъектҳо"
+msgstr "Объектҳо"
 
 #: source/ui/src/miscdlgs.src#RID_SCDLG_DELCONT.FL_FRAME.FixedLine.Text
 msgid  "Selection"

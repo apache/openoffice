@@ -563,12 +563,14 @@ msgid  "City"
 msgstr "Linn"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.business.Tables.suppliers.Fields.postalcode.Name
-msgid  "PostalCode"
-msgstr "SihtNr"
-
-#: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.business.Tables.suppliers.Fields.postalcode.ShortName
+#, fuzzy
 msgid  "PostalCode"
 msgstr "Sihtnumber"
+
+#: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.business.Tables.suppliers.Fields.postalcode.ShortName
+#, fuzzy
+msgid  "PostalCode"
+msgstr "SihtNr"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.business.Tables.suppliers.Fields.stateorprovince.Name
 #, fuzzy
@@ -591,8 +593,9 @@ msgid  "CountryReg"
 msgstr "MaaReg"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.business.Tables.suppliers.Fields.phonenumber.Name
+#, fuzzy
 msgid  "PhoneNumber"
-msgstr "Telefoninumber"
+msgstr "TelefoniNumber"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.business.Tables.suppliers.Fields.phonenumber.ShortName
 #, fuzzy
@@ -600,8 +603,9 @@ msgid  "PhoneNo"
 msgstr "TelefNr"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.business.Tables.suppliers.Fields.faxnumber.Name
+#, fuzzy
 msgid  "FaxNumber"
-msgstr "Faksinumber"
+msgstr "FaksiNumber"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.business.Tables.suppliers.Fields.faxnumber.ShortName
 #, fuzzy
@@ -684,13 +688,14 @@ msgid  "MiddleName"
 msgstr "Isanimi"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.business.Tables.mailinglist.Fields.lastlame.Name
+#, fuzzy
 msgid  "LastName"
-msgstr "PerekNimi"
+msgstr "Perekonnanimi"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.business.Tables.mailinglist.Fields.lastlame.ShortName
 #, fuzzy
 msgid  "LastName"
-msgstr "Perekonnanimi"
+msgstr "PerekNimi"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.business.Tables.mailinglist.Fields.suffix.Name
 #, fuzzy
@@ -743,13 +748,14 @@ msgid  "City"
 msgstr "Linn"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.business.Tables.mailinglist.Fields.postalcode.Name
+#, fuzzy
 msgid  "PostalCode"
-msgstr "SihtNr"
+msgstr "Sihtnumber"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.business.Tables.mailinglist.Fields.postalcode.ShortName
 #, fuzzy
 msgid  "PostalCode"
-msgstr "Sihtnumber"
+msgstr "SihtNr"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.business.Tables.mailinglist.Fields.stateorprovince.Name
 #, fuzzy
@@ -774,7 +780,7 @@ msgstr "MaaReg"
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.business.Tables.mailinglist.Fields.phonenumber.Name
 #, fuzzy
 msgid  "PhoneNumber"
-msgstr "TelefoniNumber"
+msgstr "Telefoninumber"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.business.Tables.mailinglist.Fields.phonenumber.ShortName
 #, fuzzy
@@ -784,7 +790,7 @@ msgstr "TelefNr"
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.business.Tables.mailinglist.Fields.faxnumber.Name
 #, fuzzy
 msgid  "FaxNumber"
-msgstr "FaksiNumber"
+msgstr "Faksinumber"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.business.Tables.mailinglist.Fields.faxnumber.ShortName
 #, fuzzy
@@ -794,7 +800,7 @@ msgstr "FaksNr"
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.business.Tables.mailinglist.Fields.mobilenumber.Name
 #, fuzzy
 msgid  "MobileNumber"
-msgstr "MobiiliNumber"
+msgstr "Mobiilinumber"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.business.Tables.mailinglist.Fields.mobilenumber.ShortName
 #, fuzzy
@@ -842,8 +848,9 @@ msgid  "DateUpdate"
 msgstr "UuendKuup"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.business.Tables.mailinglist.Fields.datejoined.Name
+#, fuzzy
 msgid  "DateJoined"
-msgstr "LiitKuup"
+msgstr "LiitumisKuupaev"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.business.Tables.mailinglist.Fields.datejoined.ShortName
 #, fuzzy
@@ -948,12 +955,12 @@ msgstr "Eesnimi"
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.business.Tables.contacts.Fields.lastname.Name
 #, fuzzy
 msgid  "LastName"
-msgstr "PerekNimi"
+msgstr "Perekonnanimi"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.business.Tables.contacts.Fields.lastname.ShortName
 #, fuzzy
 msgid  "LastName"
-msgstr "Perekonnanimi"
+msgstr "PerekNimi"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.business.Tables.contacts.Fields.title.Name
 #, fuzzy
@@ -988,12 +995,12 @@ msgstr "Linn"
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.business.Tables.contacts.Fields.postalcode.Name
 #, fuzzy
 msgid  "PostalCode"
-msgstr "SihtNr"
+msgstr "Sihtnumber"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.business.Tables.contacts.Fields.postalcode.ShortName
 #, fuzzy
 msgid  "PostalCode"
-msgstr "Sihtnumber"
+msgstr "SihtNr"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.business.Tables.contacts.Fields.stateorprovince.Name
 #, fuzzy
@@ -1018,7 +1025,7 @@ msgstr "MaaReg"
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.business.Tables.contacts.Fields.phonenumber.Name
 #, fuzzy
 msgid  "PhoneNumber"
-msgstr "TelefoniNumber"
+msgstr "Telefoninumber"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.business.Tables.contacts.Fields.phonenumber.ShortName
 #, fuzzy
@@ -1028,7 +1035,7 @@ msgstr "TelefNr"
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.business.Tables.contacts.Fields.faxnumber.Name
 #, fuzzy
 msgid  "FaxNumber"
-msgstr "FaksiNumber"
+msgstr "Faksinumber"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.business.Tables.contacts.Fields.faxnumber.ShortName
 #, fuzzy
@@ -1038,7 +1045,7 @@ msgstr "FaksNr"
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.business.Tables.contacts.Fields.mobilenumber.Name
 #, fuzzy
 msgid  "MobileNumber"
-msgstr "MobiiliNumber"
+msgstr "Mobiilinumber"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.business.Tables.contacts.Fields.mobilenumber.ShortName
 #, fuzzy
@@ -1098,12 +1105,12 @@ msgstr "PerekSeis"
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.business.Tables.contacts.Fields.spousename.Name
 #, fuzzy
 msgid  "SpouseName"
-msgstr "AbikNimi"
+msgstr "AbikaasaNimi"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.business.Tables.contacts.Fields.spousename.ShortName
 #, fuzzy
 msgid  "SpouseName"
-msgstr "AbikaasaNimi"
+msgstr "AbikNimi"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.business.Tables.contacts.Fields.spousesinterests.Name
 #, fuzzy
@@ -1193,12 +1200,12 @@ msgstr "Eesnimi"
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.business.Tables.customers.Fields.lastname.Name
 #, fuzzy
 msgid  "LastName"
-msgstr "PerekNimi"
+msgstr "Perekonnanimi"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.business.Tables.customers.Fields.lastname.ShortName
 #, fuzzy
 msgid  "LastName"
-msgstr "Perekonnanimi"
+msgstr "PerekNimi"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.business.Tables.customers.Fields.department.Name
 #, fuzzy
@@ -1233,12 +1240,12 @@ msgstr "Linn"
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.business.Tables.customers.Fields.postalcode.Name
 #, fuzzy
 msgid  "PostalCode"
-msgstr "SihtNr"
+msgstr "Sihtnumber"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.business.Tables.customers.Fields.postalcode.ShortName
 #, fuzzy
 msgid  "PostalCode"
-msgstr "Sihtnumber"
+msgstr "SihtNr"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.business.Tables.customers.Fields.stateorprovince.Name
 #, fuzzy
@@ -1328,12 +1335,12 @@ msgstr "Tootajad"
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.business.Tables.employees.Fields.employeeID.Name
 #, fuzzy
 msgid  "EmployeeID"
-msgstr "TootajID"
+msgstr "TootajaID"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.business.Tables.employees.Fields.employeeID.ShortName
 #, fuzzy
 msgid  "EmployeeID"
-msgstr "TootajaID"
+msgstr "TootajID"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.business.Tables.employees.Fields.firstname.Name
 #, fuzzy
@@ -1358,12 +1365,12 @@ msgstr "Isanimi"
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.business.Tables.employees.Fields.lastname.Name
 #, fuzzy
 msgid  "LastName"
-msgstr "PerekNimi"
+msgstr "Perekonnanimi"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.business.Tables.employees.Fields.lastname.ShortName
 #, fuzzy
 msgid  "LastName"
-msgstr "Perekonnanimi"
+msgstr "PerekNimi"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.business.Tables.employees.Fields.title.Name
 #, fuzzy
@@ -1448,12 +1455,12 @@ msgstr "Linn"
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.business.Tables.employees.Fields.postalcode.Name
 #, fuzzy
 msgid  "PostalCode"
-msgstr "SihtNr"
+msgstr "Sihtnumber"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.business.Tables.employees.Fields.postalcode.ShortName
 #, fuzzy
 msgid  "PostalCode"
-msgstr "Sihtnumber"
+msgstr "SihtNr"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.business.Tables.employees.Fields.stateorprovince.Name
 #, fuzzy
@@ -1518,7 +1525,7 @@ msgstr "Synnipaev"
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.business.Tables.employees.Fields.datehired.Name
 #, fuzzy
 msgid  "DateHired"
-msgstr "PalkamAeg"
+msgstr "PalkamiseAeg"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.business.Tables.employees.Fields.datehired.ShortName
 #, fuzzy
@@ -1558,7 +1565,7 @@ msgstr "TasuMaar"
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.business.Tables.employees.Fields.deductions.Name
 #, fuzzy
 msgid  "Deductions"
-msgstr "MahaArvest"
+msgstr "MahaArvestus"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.business.Tables.employees.Fields.deductions.ShortName
 #, fuzzy
@@ -1578,12 +1585,12 @@ msgstr "JuhatajaID"
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.business.Tables.employees.Fields.spousename.Name
 #, fuzzy
 msgid  "SpouseName"
-msgstr "AbikNimi"
+msgstr "AbikaasaNimi"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.business.Tables.employees.Fields.spousename.ShortName
 #, fuzzy
 msgid  "SpouseName"
-msgstr "AbikaasaNimi"
+msgstr "AbikNimi"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.business.Tables.employees.Fields.officelocation.Name
 #, fuzzy
@@ -1623,12 +1630,12 @@ msgstr "Tellimused"
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.business.Tables.orders.Fields.orderID.Name
 #, fuzzy
 msgid  "OrderID"
-msgstr "TellimID"
+msgstr "TellimuseID"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.business.Tables.orders.Fields.orderID.ShortName
 #, fuzzy
 msgid  "OrderID"
-msgstr "TellimuseID"
+msgstr "TellimID"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.business.Tables.orders.Fields.customerID.Name
 #, fuzzy
@@ -1643,17 +1650,17 @@ msgstr "TellijaID"
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.business.Tables.orders.Fields.employeeID.Name
 #, fuzzy
 msgid  "EmployeeID"
-msgstr "TootajID"
+msgstr "TootajaID"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.business.Tables.orders.Fields.employeeID.ShortName
 #, fuzzy
 msgid  "EmployeeID"
-msgstr "TootajaID"
+msgstr "TootajID"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.business.Tables.orders.Fields.orderdate.Name
 #, fuzzy
 msgid  "OrderDate"
-msgstr "TellKuup"
+msgstr "TellimuseKuupaev"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.business.Tables.orders.Fields.orderdate.ShortName
 #, fuzzy
@@ -1783,12 +1790,12 @@ msgstr "TarMeetID"
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.business.Tables.orders.Fields.freightcharge.Name
 #, fuzzy
 msgid  "FreightCharge"
-msgstr "TranspTasu"
+msgstr "TranspordiTasu"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.business.Tables.orders.Fields.freightcharge.ShortName
 #, fuzzy
 msgid  "FreightCharge"
-msgstr "TranspordiTasu"
+msgstr "TranspTasu"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.business.Tables.orders.Fields.salestaxrate.Name
 #, fuzzy
@@ -1818,12 +1825,12 @@ msgstr "TellDetID"
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.business.Tables.orderdetails.Fields.orderID.Name
 #, fuzzy
 msgid  "OrderID"
-msgstr "TellimID"
+msgstr "TellimuseID"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.business.Tables.orderdetails.Fields.orderID.ShortName
 #, fuzzy
 msgid  "OrderID"
-msgstr "TellimuseID"
+msgstr "TellimID"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.business.Tables.orderdetails.Fields.productID.Name
 #, fuzzy
@@ -1838,12 +1845,12 @@ msgstr "TooteID"
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.business.Tables.orderdetails.Fields.datesold.Name
 #, fuzzy
 msgid  "DateSold"
-msgstr "MyygiKuup"
+msgstr "MyygiKuupaev"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.business.Tables.orderdetails.Fields.datesold.ShortName
 #, fuzzy
 msgid  "DateSold"
-msgstr "MyygiKuupaev"
+msgstr "MyygiKuup"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.business.Tables.orderdetails.Fields.quantity.Name
 #, fuzzy
@@ -1943,12 +1950,12 @@ msgstr "TooKasuID"
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.business.Tables.payments.Fields.orderID.Name
 #, fuzzy
 msgid  "OrderID"
-msgstr "TellimID"
+msgstr "TellimuseID"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.business.Tables.payments.Fields.orderID.ShortName
 #, fuzzy
 msgid  "OrderID"
-msgstr "TellimuseID"
+msgstr "TellimID"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.business.Tables.payments.Fields.reservationID.Name
 #, fuzzy
@@ -2053,7 +2060,7 @@ msgstr "KredKrdNr"
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.business.Tables.payments.Fields.cardholder.Name
 #, fuzzy
 msgid  "Cardholder"
-msgstr "KrdOmanik"
+msgstr "KaardiOmanik"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.business.Tables.payments.Fields.cardholder.ShortName
 #, fuzzy
@@ -2138,22 +2145,22 @@ msgstr "TellijaID"
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.business.Tables.invoices.Fields.employeeID.Name
 #, fuzzy
 msgid  "EmployeeID"
-msgstr "TootajID"
+msgstr "TootajaID"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.business.Tables.invoices.Fields.employeeID.ShortName
 #, fuzzy
 msgid  "EmployeeID"
-msgstr "TootajaID"
+msgstr "TootajID"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.business.Tables.invoices.Fields.deliveryID.Name
 #, fuzzy
 msgid  "DeliveryID"
-msgstr "KohToimID"
+msgstr "KohaleToimetamiseID"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.business.Tables.invoices.Fields.deliveryID.ShortName
 #, fuzzy
 msgid  "DeliveryID"
-msgstr "KohaleToimetamiseID"
+msgstr "KohToimID"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.business.Tables.invoices.Fields.status.Name
 #, fuzzy
@@ -2208,12 +2215,12 @@ msgstr "TarneSiht"
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.business.Tables.invoices.Fields.shippedvia.Name
 #, fuzzy
 msgid  "ShippedVia"
-msgstr "TarneMeet"
+msgstr "TarneMeetod"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.business.Tables.invoices.Fields.shippedvia.ShortName
 #, fuzzy
 msgid  "ShippedVia"
-msgstr "TarneMeetod"
+msgstr "TarneMeet"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.business.Tables.invoices.Fields.shippingcost.Name
 #, fuzzy
@@ -2263,12 +2270,12 @@ msgstr "ArveID"
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.business.Tables.invoicedetails.Fields.orderID.Name
 #, fuzzy
 msgid  "OrderID"
-msgstr "TellimID"
+msgstr "TellimuseID"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.business.Tables.invoicedetails.Fields.orderID.ShortName
 #, fuzzy
 msgid  "OrderID"
-msgstr "TellimuseID"
+msgstr "TellimID"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.business.Tables.invoicedetails.Fields.productID.Name
 #, fuzzy
@@ -2388,32 +2395,32 @@ msgstr "KoguEArve"
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.business.Tables.projects.Fields.employeeID.Name
 #, fuzzy
 msgid  "EmployeeID"
-msgstr "TootajID"
+msgstr "TootajaID"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.business.Tables.projects.Fields.employeeID.ShortName
 #, fuzzy
 msgid  "EmployeeID"
-msgstr "TootajaID"
+msgstr "TootajID"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.business.Tables.projects.Fields.begindate.Name
 #, fuzzy
 msgid  "BeginDate"
-msgstr "AlgusKuup"
+msgstr "AlgusKuupaev"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.business.Tables.projects.Fields.begindate.ShortName
 #, fuzzy
 msgid  "BeginDate"
-msgstr "AlgusKuupaev"
+msgstr "AlgusKuup"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.business.Tables.projects.Fields.enddate.Name
 #, fuzzy
 msgid  "EndDate"
-msgstr "LoppKuup"
+msgstr "LoppKuupaev"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.business.Tables.projects.Fields.enddate.ShortName
 #, fuzzy
 msgid  "EndDate"
-msgstr "LoppKuupaev"
+msgstr "LoppKuup"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.business.Tables.events.Name
 #, fuzzy
@@ -2423,17 +2430,17 @@ msgstr "Syndmused"
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.business.Tables.events.Fields.eventID.Name
 #, fuzzy
 msgid  "EventID"
-msgstr "SyndmusID"
+msgstr "SyndmuseID"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.business.Tables.events.Fields.eventID.ShortName
 #, fuzzy
 msgid  "EventID"
-msgstr "SyndmuseID"
+msgstr "SyndmusID"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.business.Tables.events.Fields.eventname.Name
 #, fuzzy
 msgid  "EventName"
-msgstr "SyndNimi"
+msgstr "SyndmuseNimi"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.business.Tables.events.Fields.eventname.ShortName
 #, fuzzy
@@ -2463,12 +2470,12 @@ msgstr "SyndTyypID"
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.business.Tables.events.Fields.employeeID.Name
 #, fuzzy
 msgid  "EmployeeID"
-msgstr "TootajID"
+msgstr "TootajaID"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.business.Tables.events.Fields.employeeID.ShortName
 #, fuzzy
 msgid  "EmployeeID"
-msgstr "TootajaID"
+msgstr "TootajID"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.business.Tables.events.Fields.status.Name
 #, fuzzy
@@ -2493,7 +2500,7 @@ msgstr "Asukoht"
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.business.Tables.events.Fields.begindate.Name
 #, fuzzy
 msgid  "BeginDate"
-msgstr "AlgusKuup"
+msgstr "AlgusKuupaev"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.business.Tables.events.Fields.begindate.ShortName
 #, fuzzy
@@ -2513,12 +2520,12 @@ msgstr "AlgusAeg"
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.business.Tables.events.Fields.enddate.Name
 #, fuzzy
 msgid  "EndDate"
-msgstr "LoppKuup"
+msgstr "LoppKuupaev"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.business.Tables.events.Fields.enddate.ShortName
 #, fuzzy
 msgid  "EndDate"
-msgstr "LoppKuupaev"
+msgstr "LoppKuup"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.business.Tables.events.Fields.endtime.Name
 #, fuzzy
@@ -2608,7 +2615,7 @@ msgstr "TellijaID"
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.business.Tables.reservations.Fields.eventID.Name
 #, fuzzy
 msgid  "EventID"
-msgstr "SyndmusID"
+msgstr "SyndmuseID"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.business.Tables.reservations.Fields.eventID.ShortName
 #, fuzzy
@@ -2618,12 +2625,12 @@ msgstr "SyndmusID"
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.business.Tables.reservations.Fields.employeeID.Name
 #, fuzzy
 msgid  "EmployeeID"
-msgstr "TootajID"
+msgstr "TootajaID"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.business.Tables.reservations.Fields.employeeID.ShortName
 #, fuzzy
 msgid  "EmployeeID"
-msgstr "TootajaID"
+msgstr "TootajID"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.business.Tables.reservations.Fields.quantityreserved.Name
 #, fuzzy
@@ -2743,17 +2750,17 @@ msgstr "ProjektiID"
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.business.Tables.timebilled.Fields.employeeID.Name
 #, fuzzy
 msgid  "EmployeeID"
-msgstr "TootajID"
+msgstr "TootajaID"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.business.Tables.timebilled.Fields.employeeID.ShortName
 #, fuzzy
 msgid  "EmployeeID"
-msgstr "TootajaID"
+msgstr "TootajID"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.business.Tables.timebilled.Fields.billingdate.Name
 #, fuzzy
 msgid  "BillingDate"
-msgstr "ArvestKuup"
+msgstr "ArvestusKuupaev"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.business.Tables.timebilled.Fields.billingdate.ShortName
 #, fuzzy
@@ -2828,12 +2835,12 @@ msgstr "Otstarve"
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.business.Tables.expenses.Fields.employeeID.Name
 #, fuzzy
 msgid  "EmployeeID"
-msgstr "TootajID"
+msgstr "TootajaID"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.business.Tables.expenses.Fields.employeeID.ShortName
 #, fuzzy
 msgid  "EmployeeID"
-msgstr "TootajaID"
+msgstr "TootajID"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.business.Tables.expenses.Fields.datepurchased.Name
 #, fuzzy
@@ -2903,7 +2910,7 @@ msgstr "Saadetised"
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.business.Tables.deliveries.Fields.deliveryID.Name
 #, fuzzy
 msgid  "DeliveryID"
-msgstr "KohToimID"
+msgstr "KohaleToimetamiseID"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.business.Tables.deliveries.Fields.deliveryID.ShortName
 #, fuzzy
@@ -2923,7 +2930,7 @@ msgstr "TellijaID"
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.business.Tables.deliveries.Fields.orderID.Name
 #, fuzzy
 msgid  "OrderID"
-msgstr "TellimID"
+msgstr "TellimuseID"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.business.Tables.deliveries.Fields.orderID.ShortName
 #, fuzzy
@@ -2933,12 +2940,12 @@ msgstr "TellimID"
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.business.Tables.deliveries.Fields.employeeID.Name
 #, fuzzy
 msgid  "EmployeeID"
-msgstr "TootajID"
+msgstr "TootajaID"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.business.Tables.deliveries.Fields.employeeID.ShortName
 #, fuzzy
 msgid  "EmployeeID"
-msgstr "TootajaID"
+msgstr "TootajID"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.business.Tables.deliveries.Fields.shippedfrom.Name
 #, fuzzy
@@ -2953,7 +2960,7 @@ msgstr "TeelePand"
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.business.Tables.deliveries.Fields.shippedvia.Name
 #, fuzzy
 msgid  "ShippedVia"
-msgstr "TarneMeet"
+msgstr "TarneMeetod"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.business.Tables.deliveries.Fields.shippedvia.ShortName
 #, fuzzy
@@ -3103,7 +3110,7 @@ msgstr "KToimKoht"
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.business.Tables.deliveries.Fields.pickupdate.Name
 #, fuzzy
 msgid  "PickUpDate"
-msgstr "KToimKuup"
+msgstr "KatteToimetusKuupaev"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.business.Tables.deliveries.Fields.pickupdate.ShortName
 #, fuzzy
@@ -3113,7 +3120,7 @@ msgstr "KToimKuup"
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.business.Tables.deliveries.Fields.pickuptime.Name
 #, fuzzy
 msgid  "PickUpTime"
-msgstr "KToimKell"
+msgstr "KatteToimetusKellaaeg"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.business.Tables.deliveries.Fields.pickuptime.ShortName
 #, fuzzy
@@ -3178,12 +3185,12 @@ msgstr "Kirjeld"
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.business.Tables.assets.Fields.employeeID.Name
 #, fuzzy
 msgid  "EmployeeID"
-msgstr "TootajID"
+msgstr "TootajaID"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.business.Tables.assets.Fields.employeeID.ShortName
 #, fuzzy
 msgid  "EmployeeID"
-msgstr "TootajaID"
+msgstr "TootajID"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.business.Tables.assets.Fields.assetcategoryID.Name
 #, fuzzy
@@ -3288,7 +3295,7 @@ msgstr "SoetKuup"
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.business.Tables.assets.Fields.datesold.Name
 #, fuzzy
 msgid  "DateSold"
-msgstr "MyygiKuup"
+msgstr "MyygiKuupaev"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.business.Tables.assets.Fields.datesold.ShortName
 #, fuzzy
@@ -3548,12 +3555,12 @@ msgstr "Ülesanded"
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.business.Tables.tasks.Fields.taskID.Name
 #, fuzzy
 msgid  "TaskID"
-msgstr "YlesandID"
+msgstr "YlesandeID"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.business.Tables.tasks.Fields.taskID.ShortName
 #, fuzzy
 msgid  "TaskID"
-msgstr "YlesandeID"
+msgstr "YlesandID"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.business.Tables.tasks.Fields.description.Name
 #, fuzzy
@@ -3568,7 +3575,7 @@ msgstr "Kirjeld"
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.business.Tables.tasks.Fields.startdate.Name
 #, fuzzy
 msgid  "StartDate"
-msgstr "AlgusKuup"
+msgstr "AlgusKuupaev"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.business.Tables.tasks.Fields.startdate.ShortName
 #, fuzzy
@@ -3578,7 +3585,7 @@ msgstr "AlgusKuup"
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.business.Tables.tasks.Fields.enddate.Name
 #, fuzzy
 msgid  "EndDate"
-msgstr "LoppKuup"
+msgstr "LoppKuupaev"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.business.Tables.tasks.Fields.enddate.ShortName
 #, fuzzy
@@ -3613,7 +3620,7 @@ msgstr "TootYlesID"
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.business.Tables.employeestasks.Fields.employeeID.Name
 #, fuzzy
 msgid  "EmployeeID"
-msgstr "TootajID"
+msgstr "TootajaID"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.business.Tables.employeestasks.Fields.employeeID.ShortName
 #, fuzzy
@@ -3623,7 +3630,7 @@ msgstr "TootajID"
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.business.Tables.employeestasks.Fields.taskID.Name
 #, fuzzy
 msgid  "TaskID"
-msgstr "YlesandID"
+msgstr "YlesandeID"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.business.Tables.employeestasks.Fields.taskID.ShortName
 #, fuzzy
@@ -3668,7 +3675,7 @@ msgstr "Aadressid"
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.private.Tables.addresses.Fields.addressID.Name
 #, fuzzy
 msgid  "AddressID"
-msgstr "AadressID"
+msgstr "AadressiID"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.private.Tables.addresses.Fields.addressID.ShortName
 #, fuzzy
@@ -3688,12 +3695,12 @@ msgstr "Eesnimi"
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.private.Tables.addresses.Fields.lastname.Name
 #, fuzzy
 msgid  "LastName"
-msgstr "PerekNimi"
+msgstr "Perekonnanimi"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.private.Tables.addresses.Fields.lastname.ShortName
 #, fuzzy
 msgid  "LastName"
-msgstr "Perekonnanimi"
+msgstr "PerekNimi"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.private.Tables.addresses.Fields.title.Name
 #, fuzzy
@@ -3728,7 +3735,7 @@ msgstr "Linn"
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.private.Tables.addresses.Fields.postalcode.Name
 #, fuzzy
 msgid  "PostalCode"
-msgstr "SihtNr"
+msgstr "Sihtnumber"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.private.Tables.addresses.Fields.postalcode.ShortName
 #, fuzzy
@@ -3838,7 +3845,7 @@ msgstr "PerekSeis"
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.private.Tables.addresses.Fields.spousename.Name
 #, fuzzy
 msgid  "SpouseName"
-msgstr "AbikNimi"
+msgstr "AbikaasaNimi"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.private.Tables.addresses.Fields.spousename.ShortName
 #, fuzzy
@@ -3953,7 +3960,7 @@ msgstr "Ese"
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.private.Tables.householdinventory.Fields.itemtype.Name
 #, fuzzy
 msgid  "ItemType"
-msgstr "EseTyyp"
+msgstr "EsemeTyyp"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.private.Tables.householdinventory.Fields.itemtype.ShortName
 #, fuzzy
@@ -4053,7 +4060,7 @@ msgstr "MaarVaart"
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.private.Tables.householdinventory.Fields.insured.Name
 #, fuzzy
 msgid  "Insured"
-msgstr "Kindlust"
+msgstr "Kindlustus"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.private.Tables.householdinventory.Fields.insured.ShortName
 #, fuzzy
@@ -4078,7 +4085,7 @@ msgstr "Retseptid"
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.private.Tables.recipes.Fields.recipeID.Name
 #, fuzzy
 msgid  "RecipeID"
-msgstr "RetseptID"
+msgstr "RetseptiID"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.private.Tables.recipes.Fields.recipeID.ShortName
 #, fuzzy
@@ -4353,7 +4360,7 @@ msgstr "YmbIstKp"
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.private.Tables.plants.Fields.datepruned.Name
 #, fuzzy
 msgid  "DatePruned"
-msgstr "PygamisKp"
+msgstr "PygamisKuupaev"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.private.Tables.plants.Fields.datepruned.ShortName
 #, fuzzy
@@ -4418,7 +4425,7 @@ msgstr "FilmiID"
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.private.Tables.photographs.Fields.datetaken.Name
 #, fuzzy
 msgid  "DateTaken"
-msgstr "TehtudKp"
+msgstr "TehtudKuupaev"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.private.Tables.photographs.Fields.datetaken.ShortName
 #, fuzzy
@@ -4428,7 +4435,7 @@ msgstr "TehtudKp"
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.private.Tables.photographs.Fields.timetaken.Name
 #, fuzzy
 msgid  "TimeTaken"
-msgstr "TehtudKl"
+msgstr "TehtudKellaaeg"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.private.Tables.photographs.Fields.timetaken.ShortName
 #, fuzzy
@@ -4438,7 +4445,7 @@ msgstr "TehtudKl"
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.private.Tables.photographs.Fields.placetaken.Name
 #, fuzzy
 msgid  "PlaceTaken"
-msgstr "TehtudKht"
+msgstr "TehtudKoht"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.private.Tables.photographs.Fields.placetaken.ShortName
 #, fuzzy
@@ -4498,7 +4505,7 @@ msgstr "Valklamp"
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.private.Tables.photographs.Fields.printsize.Name
 #, fuzzy
 msgid  "PrintSize"
-msgstr "PrintMoot"
+msgstr "PrintimisMoot"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.private.Tables.photographs.Fields.printsize.ShortName
 #, fuzzy
@@ -4678,12 +4685,12 @@ msgstr "Rezissoor"
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.private.Tables.dvdcollection.Fields.producer.Name
 #, fuzzy
 msgid  "Producer"
-msgstr "Produts"
+msgstr "Produtsent"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.private.Tables.dvdcollection.Fields.producer.ShortName
 #, fuzzy
 msgid  "Producer"
-msgstr "Produtsent"
+msgstr "Produts"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.private.Tables.dvdcollection.Fields.releaseyear.Name
 #, fuzzy
@@ -4793,7 +4800,7 @@ msgstr "KollID"
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.private.Tables.cdcollection.Fields.albumtitle.Name
 #, fuzzy
 msgid  "AlbumTitle"
-msgstr "AlbumNimi"
+msgstr "AlbumiNimi"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.private.Tables.cdcollection.Fields.albumtitle.ShortName
 #, fuzzy
@@ -4833,7 +4840,7 @@ msgstr "PlaatNimi"
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.private.Tables.cdcollection.Fields.producer.Name
 #, fuzzy
 msgid  "Producer"
-msgstr "Produts"
+msgstr "Produtsent"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.private.Tables.cdcollection.Fields.producer.ShortName
 #, fuzzy
@@ -4998,7 +5005,7 @@ msgstr "ISBNNumber"
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.private.Tables.library.Fields.publisher.Name
 #, fuzzy
 msgid  "Publisher"
-msgstr "ValjaAndj"
+msgstr "ValjaAndja"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.private.Tables.library.Fields.publisher.ShortName
 #, fuzzy
@@ -5123,7 +5130,7 @@ msgstr "Eesnimi"
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.private.Tables.authors.Fields.lastname.Name
 #, fuzzy
 msgid  "LastName"
-msgstr "PerekNimi"
+msgstr "Perekonnanimi"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.private.Tables.authors.Fields.lastname.ShortName
 #, fuzzy
@@ -5368,12 +5375,12 @@ msgstr "TreeninguLogi"
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.private.Tables.exerciselog.Fields.exerciselogID.Name
 #, fuzzy
 msgid  "LogID"
-msgstr "LogID"
+msgstr "LogiID"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.private.Tables.exerciselog.Fields.exerciselogID.ShortName
 #, fuzzy
 msgid  "LogID"
-msgstr "LogiID"
+msgstr "LogID"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.private.Tables.exerciselog.Fields.personID.Name
 #, fuzzy
@@ -5493,7 +5500,7 @@ msgstr "DieetLogi"
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.private.Tables.dietlog.Fields.dietlogID.Name
 #, fuzzy
 msgid  "LogID"
-msgstr "LogID"
+msgstr "LogiID"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.private.Tables.dietlog.Fields.dietlogID.ShortName
 #, fuzzy
@@ -5563,7 +5570,7 @@ msgstr "GrProtein"
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.private.Tables.dietlog.Fields.gramsfat.Name
 #, fuzzy
 msgid  "GramsFat"
-msgstr "GrammRasv"
+msgstr "GrammiRasva"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.private.Tables.dietlog.Fields.gramsfat.ShortName
 #, fuzzy
@@ -8223,7 +8230,7 @@ msgstr ""
 #: registry/data/org/openoffice/Office/UI/DrawImpressCommands.xcu#DrawImpressCommands.UserInterface.Popups..uno:SlideShowMenu.Label
 #, fuzzy
 msgid  "~Slide Show"
-msgstr "~Slaidiseanss"
+msgstr "Slaidiseanss"
 
 #: registry/data/org/openoffice/Office/UI/DrawImpressCommands.xcu#DrawImpressCommands.UserInterface.Popups..uno:SnapLinesMenu.Label
 msgid  "Guides"
@@ -9326,7 +9333,7 @@ msgstr "Vali sõna"
 #: registry/data/org/openoffice/Office/UI/WriterCommands.xcu#WriterCommands.UserInterface.Commands..uno:SelectionMode.Label
 #, fuzzy
 msgid  "Selection Mode"
-msgstr "Valimise režiim"
+msgstr "Valikurežiim"
 
 #: registry/data/org/openoffice/Office/UI/WriterCommands.xcu#WriterCommands.UserInterface.Commands..uno:SelectionModeBlock.Label
 msgid  "Block Area"

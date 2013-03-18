@@ -741,7 +741,7 @@ msgstr "Ev pel pela WinWord97 nîne"
 
 #: source/ui/app/error.src#RID_SW_ERRHDL.ERR_CODE ( ERRCODE_CLASS_READ , ERR_FORMAT_FILE_ROWCOL ).String.Text
 msgid  "Format error discovered in the file in sub-document $(ARG1) at $(ARG2)(row,col)."
-msgstr "Di hundirê belgeya binî $(ARG1) de di $(ARG2)(rêzik,sitûn) de xeletiya teşeyî hat dîtin."
+msgstr "Di hundirê belgeya binî $(ARG1) de di $(ARG2) (rêzik,sitûn) de xeletiya teşeyî hat dîtin."
 
 #: source/ui/app/error.src#RID_SW_ERRHDL.ERR_CODE ( ERRCODE_CLASS_WRITE , ERR_SWG_WRITE_ERROR ).String.Text
 msgid  "Error writing file."
@@ -753,7 +753,7 @@ msgstr "Guhertoya şaş a belgeya AutoText."
 
 #: source/ui/app/error.src#RID_SW_ERRHDL.ERR_CODE ( ERRCODE_CLASS_WRITE , ERR_WRITE_ERROR_FILE ).String.Text
 msgid  "Error in writing sub-document $(ARG1)."
-msgstr "Di nivîsandina belgeya binî de çewtî $(ARG1)."
+msgstr "Dema di hundirê nivîsa binî $(ARG1) da hat nivisandin xeletî çêbû."
 
 #: source/ui/app/error.src#RID_SW_ERRHDL.ERR_CODE ( ERRCODE_CLASS_READ , ERR_SWG_INTERNAL_ERROR ).String.Text
 msgid  "Internal error in %PRODUCTNAME Writer file format."
@@ -5428,8 +5428,9 @@ msgid  "Be~fore"
 msgstr "Be~rê"
 
 #: source/ui/dialog/regionsw.src#TP_SECTION_FTNENDNOTES.FT_FTN_SUFFIX.FixedText.Text
+#, fuzzy
 msgid  "Aft~er"
-msgstr "~Piştre"
+msgstr "~Piştî"
 
 #: source/ui/dialog/regionsw.src#TP_SECTION_FTNENDNOTES.FL_END.FixedLine.Text
 #, fuzzy
@@ -7930,7 +7931,7 @@ msgstr "Teşeya Tîpan"
 #: source/ui/fmtui/tmpdlg.src#DLG_TEMPLATE_1.1.TP_CHAR_STD.PageItem.Text
 #, fuzzy
 msgid  "Font"
-msgstr "Curetîp"
+msgstr "Cureyê nivîsê"
 
 #: source/ui/fmtui/tmpdlg.src#DLG_TEMPLATE_1.1.TP_CHAR_EXT.PageItem.Text
 #, fuzzy
@@ -7940,7 +7941,7 @@ msgstr "Bandorên Cureyên nivîsê"
 #: source/ui/fmtui/tmpdlg.src#DLG_TEMPLATE_1.1.TP_CHAR_POS.PageItem.Text
 #, fuzzy
 msgid  "Position"
-msgstr "Pozîsiyon"
+msgstr "Cih"
 
 #: source/ui/fmtui/tmpdlg.src#DLG_TEMPLATE_1.1.TP_CHAR_TWOLN.PageItem.Text
 #, fuzzy
@@ -7990,7 +7991,7 @@ msgstr "Bandorên Cureyên nivîsê"
 #: source/ui/fmtui/tmpdlg.src#DLG_TEMPLATE_2.1.TP_CHAR_POS.PageItem.Text
 #, fuzzy
 msgid  "Position"
-msgstr "Cih"
+msgstr "Pozîsiyon"
 
 #: source/ui/fmtui/tmpdlg.src#DLG_TEMPLATE_2.1.TP_CHAR_TWOLN.PageItem.Text
 #, fuzzy
@@ -9021,8 +9022,9 @@ msgid  "Below"
 msgstr "Bin"
 
 #: source/ui/frmdlg/cption.src#DLG_CAPTION.STR_CATEGORY_NONE.String.Text
+#, fuzzy
 msgid  "<None>"
-msgstr "<Tu yek>"
+msgstr "<Ne yek jî>"
 
 #: source/ui/frmdlg/cption.src#DLG_SEQUENCE_OPTION.ModalDialog.Text
 #, fuzzy
@@ -9040,8 +9042,9 @@ msgid  "~Level"
 msgstr "~Ast"
 
 #: source/ui/frmdlg/cption.src#DLG_SEQUENCE_OPTION.LB_LEVEL.item1.StringList.item
+#, fuzzy
 msgid  "<None>"
-msgstr "<Ne yek jî>"
+msgstr "<Tu yek>"
 
 #: source/ui/frmdlg/cption.src#DLG_SEQUENCE_OPTION.FT_SEPARATOR.FixedText.Text
 #, fuzzy
@@ -9106,7 +9109,7 @@ msgstr "Xwendina fonetîk"
 #: source/ui/index/idxmrk.src#IDX_DIALOG_WINDOW.WIN_DLG.BT_OK.OKButton.Text
 #, fuzzy
 msgid  "Insert"
-msgstr "Pêveke"
+msgstr "Çalik"
 
 #: source/ui/index/idxmrk.src#IDX_DIALOG_WINDOW.WIN_DLG.BT_CANCEL.CancelButton.Text
 #, fuzzy
@@ -9436,7 +9439,7 @@ msgstr "Şêwazên Pêvek"
 #: source/ui/index/cnttab.src#TP_TOX_SELECT.ST_USER_ADDSTYLE.String.Text
 #, fuzzy
 msgid  "Styl~es"
-msgstr "~Şêwaz"
+msgstr "~Teşe"
 
 #: source/ui/index/cnttab.src#TP_TOX_SELECT.CB_TOXMARKS.CheckBox.Text
 #, fuzzy
@@ -11363,7 +11366,7 @@ msgstr "Teşe"
 #: source/ui/misc/docfnote.src#TP_FOOTNOTEOPTION.FT_PARA_TEMPL.FixedText.Text
 #, fuzzy
 msgid  "Pa~ragraph"
-msgstr "Pa~ragraf"
+msgstr "Para~graf"
 
 #: source/ui/misc/docfnote.src#TP_FOOTNOTEOPTION.FT_PAGE_TEMPL.FixedText.Text
 #, fuzzy
@@ -12066,8 +12069,9 @@ msgid  "Deletion"
 msgstr "Jêbirin"
 
 #: source/ui/shells/shells.src#STR_REDLINE_AUTOFMT.String.Text
+#, fuzzy
 msgid  "AutoCorrect"
-msgstr "SererastkirinaJixweber"
+msgstr "SererastkirinaJixweser"
 
 #: source/ui/shells/shells.src#STR_REDLINE_FORMATED.String.Text
 #, fuzzy
@@ -12761,8 +12765,9 @@ msgid  "Text ~direction"
 msgstr "Beralîkarina Nivîsê"
 
 #: source/ui/table/tabledlg.src#TP_FORMAT_TABLE.LB_TEXTDIRECTION.0.StringList.item
+#, fuzzy
 msgid  "Left-to-right"
-msgstr "Çep-ber-bi-Rast"
+msgstr "Çep-bo-rast"
 
 #: source/ui/table/tabledlg.src#TP_FORMAT_TABLE.LB_TEXTDIRECTION.1.StringList.item
 #, fuzzy

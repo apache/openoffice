@@ -441,11 +441,11 @@ msgstr "একটি নির্ধারিত কর্মদিবসসম�
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Workday.2.String.Text
 msgid  "Start date"
-msgstr "আরম্ভ দিন"
+msgstr "আরম্ভের তারিখ"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Workday.3.String.Text
 msgid  "The start date"
-msgstr "আরম্ভের তারিখটি"
+msgstr "আরম্ভের দিন"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Workday.4.String.Text
 msgid  "Days"
@@ -457,7 +457,7 @@ msgstr "আরম্ভের তারিখের আগে অথবা প�
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Workday.6.String.Text
 msgid  "Holidays"
-msgstr "ছুটির দিন"
+msgstr "ছুটির দিনসমূহ"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Workday.7.String.Text
 msgid  "List of date values of days off (vacation, holidays, etc.)"
@@ -469,11 +469,11 @@ msgstr "'আরম্ভের দিন' এবং 'শেষের দিন' 
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Yearfrac.2.String.Text
 msgid  "Start date"
-msgstr "আরম্ভ তারিখ"
+msgstr "আরম্ভ দিন"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Yearfrac.3.String.Text
 msgid  "The start date"
-msgstr "আরম্ভের তারিখ"
+msgstr "আরম্ভের দিন"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Yearfrac.4.String.Text
 msgid  "End date"
@@ -485,7 +485,7 @@ msgstr "শেষ তারিখটি"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Yearfrac.6.String.Text
 msgid  "Basis"
-msgstr "ভিত্তি"
+msgstr " ভিত্তি"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Yearfrac.7.String.Text
 msgid  "Basis for determining the interest days"
@@ -501,15 +501,15 @@ msgstr "আরম্ভ তারিখ"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Edate.3.String.Text
 msgid  "The start date"
-msgstr "আরম্ভের তারিখ"
+msgstr "আরম্ভের তারিখটি"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Edate.4.String.Text
 msgid  "Months"
-msgstr "মাস"
+msgstr "মাসসমূহ"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Edate.5.String.Text
 msgid  "Number of months before or after the start date"
-msgstr "তারিখের আগের অথবা পরের মাসগুলি"
+msgstr "আরম্ভের তারিখের আগের অথবা পরের মাসগুলি"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Weeknum.1.String.Text
 msgid  "Returns the number of the calendar week in which the specified date occurs."
@@ -585,11 +585,11 @@ msgstr "সংখ্যাটি জোড় হলে  'সত্য' মা�
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Iseven.2.String.Text
 msgid  "Number"
-msgstr "সংখ্যা "
+msgstr "সংখ্যা"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Iseven.3.String.Text
 msgid  "The number"
-msgstr " সংখ্যাটি"
+msgstr "সংখ্যাটি"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Isodd.1.String.Text
 msgid  "Returns the value 'true' if the number is odd"
@@ -597,11 +597,11 @@ msgstr "সংখ্যাটি বিজোড় হলে 'সত্য' ম
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Isodd.2.String.Text
 msgid  "Number"
-msgstr "সংখ্যা "
+msgstr "সংখ্যা"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Isodd.3.String.Text
 msgid  "The number"
-msgstr "সংখ্যাটি"
+msgstr " সংখ্যাটি"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Multinomial.1.String.Text
 msgid  "Returns the multinomial coefficient of a set of numbers"
@@ -609,7 +609,7 @@ msgstr "একটি সংখ্যাসমুহের সেটের মা
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Multinomial.2.String.Text
 msgid  "Number(s)"
-msgstr "সংখ্যা(সমূহ)"
+msgstr "সংখ্যা(গুলো)"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Multinomial.3.String.Text
 msgid  "Number or list of numbers for which you want the multinomial coefficient"
@@ -657,19 +657,19 @@ msgstr "একটি বিভাগের পূর্ণসংখ্যার 
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Quotient.2.String.Text
 msgid  "Numerator"
-msgstr "হর"
+msgstr "লব"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Quotient.3.String.Text
 msgid  "The dividend"
-msgstr "ভাজ্য"
+msgstr "ভাজক"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Quotient.4.String.Text
 msgid  "Denominator"
-msgstr "লব"
+msgstr "হর"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Quotient.5.String.Text
 msgid  "The divisor"
-msgstr "ভাজক"
+msgstr "ভাজ্য"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Mround.1.String.Text
 msgid  "Returns a number rounded to a specified multiple"
@@ -677,7 +677,7 @@ msgstr "একটি নির্ধারিত বহুধা দ্বার
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Mround.2.String.Text
 msgid  "Number"
-msgstr "সংখ্যা"
+msgstr "সংখ্যা "
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Mround.3.String.Text
 msgid  "The number to round off"
@@ -697,7 +697,7 @@ msgstr "একটি সংখ্যার স্কয়ার রুট ফ�
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Sqrtpi.2.String.Text
 msgid  "Number"
-msgstr "সংখ্যা"
+msgstr "সংখ্যা "
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Sqrtpi.3.String.Text
 msgid  "The number by which pi is multiplied"
@@ -729,7 +729,7 @@ msgstr "সর্ববৃহৎ সাধারণ ভাজক দেখায
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Gcd.2.String.Text
 msgid  "Number(s)"
-msgstr " সংখ্যা(সমূহ)"
+msgstr "সংখ্যা(সমূহ)"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Gcd.3.String.Text
 msgid  "Number or list of numbers"
@@ -837,15 +837,15 @@ msgstr "সংখ্যা"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Bin2Oct.3.String.Text
 msgid  "The binary number to be converted (as text)"
-msgstr "যে বাইনারি নম্বর কে রূপান্তর করতে হবে( লেখা হিসেবে)"
+msgstr "যে বাইনারি নম্বর কে রূপান্তর করতে হবে"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Bin2Oct.4.String.Text
 msgid  "Places"
-msgstr "স্থানসমুহ"
+msgstr "স্থানসমূহ"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Bin2Oct.5.String.Text
 msgid  "Number of places used"
-msgstr "ব্যবহৃত স্থানসমূহের সংখ্যা"
+msgstr "যে  সংখ্যক স্থান ব্যবহৃত"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Bin2Dec.1.String.Text
 msgid  "Converts a binary number to a decimal number"
@@ -857,7 +857,7 @@ msgstr "সংখ্যা"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Bin2Dec.3.String.Text
 msgid  "The binary number to be converted (as text)"
-msgstr "যে বাইনারী নম্বর কে রূপান্তর করতে হবে( লেখা হিসেবে)"
+msgstr "যে বাইনারি নম্বর কে রূপান্তর করতে হবে( লেখা হিসেবে)"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Bin2Hex.1.String.Text
 msgid  "Converts a binary number to a hexadecimal number"
@@ -873,7 +873,7 @@ msgstr "যে বাইনারী নম্বর কে রূপান্�
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Bin2Hex.4.String.Text
 msgid  "Places"
-msgstr "স্থানসমুহ"
+msgstr "স্থানসমূহ"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Bin2Hex.5.String.Text
 msgid  "Number of places used."
@@ -889,15 +889,15 @@ msgstr "সংখ্যা"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Oct2Bin.3.String.Text
 msgid  "The octal number to be converted (as text)"
-msgstr "যে অক্টাল নম্বর কে রূপান্তর করতে হবে (লেখা হিসেবে)"
+msgstr "একটি অক্টাল নম্বর কে রূপান্তর করতে হবে(লেখা হিসেবে)"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Oct2Bin.4.String.Text
 msgid  "Places"
-msgstr "স্থানসমুহ"
+msgstr "স্থানসমূহ"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Oct2Bin.5.String.Text
 msgid  "Number of places used"
-msgstr "ব্যবহৃত স্থানসমুহের সংখ্যা"
+msgstr "ব্যবহৃত স্থানসমূহের সংখ্যা"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Oct2Dec.1.String.Text
 msgid  "Converts an octal number to a decimal number"
@@ -925,11 +925,11 @@ msgstr "যে অক্টাল নম্বর কে রূপান্ত�
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Oct2Hex.4.String.Text
 msgid  "Places"
-msgstr "স্থান"
+msgstr "স্থানসমূহ"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Oct2Hex.5.String.Text
 msgid  "Number of places used"
-msgstr "ব্যবহৃত স্থানসমুহের সংখ্যা"
+msgstr "ব্যবহৃত স্থানসমূহের সংখ্যা"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Dec2Bin.1.String.Text
 msgid  "Converts a decimal number to a binary number"
@@ -941,7 +941,7 @@ msgstr "সংখ্যা"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Dec2Bin.3.String.Text
 msgid  "The decimal integer to be converted"
-msgstr "যে দশমিক নম্বরকে  রূপান্তর করতে হবে"
+msgstr "যে দশমিক নম্বরকে রূপান্তর করতে হবে"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Dec2Bin.4.String.Text
 msgid  "Places"
@@ -949,7 +949,7 @@ msgstr "স্থানসমুহ"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Dec2Bin.5.String.Text
 msgid  "Number of places used"
-msgstr "যে  সংখ্যক স্থান ব্যবহৃত"
+msgstr "ব্যবহৃত স্থানসমুহের সংখ্যা"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Dec2Hex.1.String.Text
 msgid  "Converts a decimal number to a hexadecimal number"
@@ -969,7 +969,7 @@ msgstr "স্থানসমূহ"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Dec2Hex.5.String.Text
 msgid  "Number of places used"
-msgstr "যে  সংখ্যক স্থান ব্যবহৃত"
+msgstr "ব্যবহৃত স্থানসমূহের সংখ্যা"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Dec2Oct.1.String.Text
 msgid  "Converts a decimal number into an octal number"
@@ -1213,7 +1213,7 @@ msgstr "লব"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Imdiv.5.String.Text
 msgid  "The divisor"
-msgstr "ভাজ্য"
+msgstr "ভাজক"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Imexp.1.String.Text
 msgid  "Returns the algebraic form of the exponential of a complex number"
@@ -1529,15 +1529,15 @@ msgstr "সম্পদের খরচ"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Amordegrc.4.String.Text
 msgid  "Date purchased"
-msgstr "ক্রয়ের তারিখ"
+msgstr "কেনার তারিখ"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Amordegrc.5.String.Text
 msgid  "Purchase date of the asset"
-msgstr "সম্পত্তি ক্রয়ের তারিখ"
+msgstr "সম্পত্তি কেনার তারিখ"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Amordegrc.6.String.Text
 msgid  "First period"
-msgstr "প্রথম পর্যায়কাল"
+msgstr "প্রথম পর্যায়কাল "
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Amordegrc.7.String.Text
 msgid  "Date the first period ends"
@@ -1545,7 +1545,7 @@ msgstr "প্রথম পর্যায়কাল শেষ হবার �
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Amordegrc.8.String.Text
 msgid  "Salvage"
-msgstr "পরিত্যক্ত"
+msgstr "পরিক্ত্যক্ত"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Amordegrc.9.String.Text
 msgid  "Salvage value of an asset at the end of its life"
@@ -1557,7 +1557,7 @@ msgstr "পর্যায়কাল"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Amordegrc.11.String.Text
 msgid  "The period"
-msgstr "নির্দিষ্ট পর্যায়কাল"
+msgstr "নিরদিষ্ট পর্যায়কাল"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Amordegrc.12.String.Text
 msgid  "Rate"
@@ -1569,7 +1569,7 @@ msgstr "ডেপরেসিয়েশনের হার"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Amordegrc.14.String.Text
 msgid  "Basis"
-msgstr " ভিত্তি"
+msgstr "ভিত্তি"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Amordegrc.15.String.Text
 msgid  "The year basis to be used"
@@ -1629,7 +1629,7 @@ msgstr "ডেপরেসিয়েশনের হার"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Amorlinc.14.String.Text
 msgid  "Basis"
-msgstr " ভিত্তি"
+msgstr "ভিত্তি"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Amorlinc.15.String.Text
 msgid  "The year basis to be used"
@@ -1641,7 +1641,7 @@ msgstr "একটি নিরাপত্তা যা পর্যাবৃত
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Accrint.2.String.Text
 msgid  "Issue"
-msgstr "বিষয়"
+msgstr " বিষয় "
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Accrint.3.String.Text
 msgid  "Issue date of the security"
@@ -1657,11 +1657,11 @@ msgstr "নিরাপত্তার প্রথম সূদের তার
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Accrint.6.String.Text
 msgid  "Settlement"
-msgstr "উপনিবেশ"
+msgstr "সমঝোতা"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Accrint.7.String.Text
 msgid  "The settlement"
-msgstr "নির্দিষ্ট কোন সমঝোতা"
+msgstr "সমঝোতা"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Accrint.8.String.Text
 msgid  "Rate"
@@ -1669,7 +1669,7 @@ msgstr "হার"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Accrint.9.String.Text
 msgid  "The rate"
-msgstr "নির্দিষ্ট হার"
+msgstr "হার"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Accrint.10.String.Text
 msgid  "Par"
@@ -1677,23 +1677,23 @@ msgstr "প্রতি"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Accrint.11.String.Text
 msgid  "The par value"
-msgstr "যে নির্দিষ্ট হারে"
+msgstr "যে নির্দিষ্ট মূল্য"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Accrint.12.String.Text
 msgid  "Frequency"
-msgstr "কম্পাংক"
+msgstr "কম্পাংক "
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Accrint.13.String.Text
 msgid  "The frequency"
-msgstr "নির্দিষ্ট কম্পাংক"
+msgstr "নির্দিষ্ট কম্পাংক "
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Accrint.14.String.Text
 msgid  "Basis"
-msgstr " ভিত্তি"
+msgstr "ভিত্তি"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Accrint.15.String.Text
 msgid  "The basis"
-msgstr "ভিত্তি"
+msgstr "যে ভিত্তিতে"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Accrintm.1.String.Text
 msgid  "Returns the accrued interest for a security that pays interest at maturity"
@@ -1701,7 +1701,7 @@ msgstr "একটি নিরাপত্তার যা পূর্ণতা
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Accrintm.2.String.Text
 msgid  "Issue"
-msgstr "বিষয় "
+msgstr "বিষয়"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Accrintm.3.String.Text
 msgid  "The issue date"
@@ -1709,11 +1709,11 @@ msgstr "বিষয় প্রচারের তারিখ"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Accrintm.4.String.Text
 msgid  "Settlement"
-msgstr "উপনিবেশ"
+msgstr "সমঝোতা"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Accrintm.5.String.Text
 msgid  "The settlement"
-msgstr "সন্ধি"
+msgstr "নির্দিষ্ট কোন সমঝোতা"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Accrintm.6.String.Text
 msgid  "Rate"
@@ -1721,7 +1721,7 @@ msgstr "হার"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Accrintm.7.String.Text
 msgid  "The rate"
-msgstr "হার"
+msgstr "নির্দিষ্ট হার"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Accrintm.8.String.Text
 msgid  "Par"
@@ -1733,11 +1733,11 @@ msgstr "যে নির্দিষ্ট হারে"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Accrintm.10.String.Text
 msgid  "Basis"
-msgstr " ভিত্তি"
+msgstr "ভিত্তি"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Accrintm.11.String.Text
 msgid  "The basis"
-msgstr "ভিত্তি"
+msgstr "যে ভিত্তিতে"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Received.1.String.Text
 msgid  "Returns the amount paid out at maturity for a fully invested security"
@@ -1749,15 +1749,15 @@ msgstr "সমঝোতা"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Received.3.String.Text
 msgid  "The settlement"
-msgstr "ঔপনিবেশিক"
+msgstr "সন্ধি"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Received.4.String.Text
 msgid  "Maturity"
-msgstr "পূর্ণবয়স্কতা"
+msgstr "পূর্ণতা"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Received.5.String.Text
 msgid  "The maturity"
-msgstr "পূর্ণবয়স্কতা"
+msgstr "পূর্ণতা"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Received.6.String.Text
 msgid  "Investment"
@@ -1777,11 +1777,11 @@ msgstr "মূল্যহ্রাস"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Received.10.String.Text
 msgid  "Basis"
-msgstr " ভিত্তি"
+msgstr "ভিত্তি"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Received.11.String.Text
 msgid  "The basis"
-msgstr "ভিত্তিতে"
+msgstr "ভিত্তি"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Disc.1.String.Text
 msgid  "Returns the discount rate for a security"
@@ -1793,15 +1793,15 @@ msgstr "সমঝোতা"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Disc.3.String.Text
 msgid  "The settlement"
-msgstr "সমঝোতা"
+msgstr "সন্ধি"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Disc.4.String.Text
 msgid  "Maturity"
-msgstr "পূর্ণতা,পূর্ণবয়ষ্কতা"
+msgstr "পূর্ণতা"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Disc.5.String.Text
 msgid  "The maturity"
-msgstr "পূর্ণতা,পূর্ণবয়ষ্কতা"
+msgstr "পূর্ণতা"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Disc.6.String.Text
 msgid  "Price"
@@ -1821,11 +1821,11 @@ msgstr "মুক্তির মান"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Disc.10.String.Text
 msgid  "Basis"
-msgstr " ভিত্তি"
+msgstr "ভিত্তি"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Disc.11.String.Text
 msgid  "The basis"
-msgstr "যে ভিত্তিতে"
+msgstr "ভিত্তি"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Duration.1.String.Text
 msgid  "Returns the annual Macaulay duration of a security with periodic interest payments"
@@ -1837,15 +1837,15 @@ msgstr "সমঝোতা"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Duration.3.String.Text
 msgid  "The settlement"
-msgstr "সমঝোতা"
+msgstr "সন্ধি"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Duration.4.String.Text
 msgid  "Maturity"
-msgstr "পূর্ণতা"
+msgstr "পূর্ণবয়স্কতা"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Duration.5.String.Text
 msgid  "The maturity"
-msgstr "পূর্ণতা"
+msgstr "পূর্ণবয়স্কতা"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Duration.6.String.Text
 msgid  "Coupon"
@@ -1865,19 +1865,19 @@ msgstr "প্রাকৃতিক"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Duration.10.String.Text
 msgid  "Frequency"
-msgstr "কম্পাংক "
+msgstr "কম্পাংক"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Duration.11.String.Text
 msgid  "The frequency"
-msgstr "নির্দিষ্ট কোন কম্পাংক"
+msgstr "নির্দিষ্ট কম্পাংক"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Duration.12.String.Text
 msgid  "Basis"
-msgstr " ভিত্তি"
+msgstr "ভিত্তি"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Duration.13.String.Text
 msgid  "The basis"
-msgstr "যে ভিত্তিতে"
+msgstr "ভিত্তি"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Effect.1.String.Text
 msgid  "Returns the effective annual interest rate"
@@ -1893,7 +1893,7 @@ msgstr "যে নামমাত্র দাম"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Effect.4.String.Text
 msgid  "Npery"
-msgstr "পেরি"
+msgstr "এনপেরি"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Effect.5.String.Text
 msgid  "The periods"
@@ -1909,7 +1909,7 @@ msgstr "হার"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Cumprinc.3.String.Text
 msgid  "The rate"
-msgstr "যে হারে"
+msgstr "হার"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Cumprinc.4.String.Text
 msgid  "Nper"
@@ -1917,7 +1917,7 @@ msgstr "পার"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Cumprinc.5.String.Text
 msgid  "Number of payment periods"
-msgstr "মূল্য পরিশোধের সময়সমূহ"
+msgstr "মূল্য পরিশোধের পর্যায়কালগুলো"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Cumprinc.6.String.Text
 msgid  "Pv"
@@ -1929,27 +1929,27 @@ msgstr "বর্তমান মূল্য"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Cumprinc.8.String.Text
 msgid  "Start period"
-msgstr "শুরুর সময়"
+msgstr "প্রারম্ভিক সময়ে"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Cumprinc.9.String.Text
 msgid  "The start period"
-msgstr "শুরুর সময়ে"
+msgstr "যে প্রারম্ভিক সময়ে"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Cumprinc.10.String.Text
 msgid  "End period"
-msgstr "শেষ সময়"
+msgstr "শেষ সময়ে"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Cumprinc.11.String.Text
 msgid  "The end period"
-msgstr "শেষ সময়ে"
+msgstr "যে অন্তিম সময়ে"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Cumprinc.12.String.Text
 msgid  "Type"
-msgstr "রকম"
+msgstr "ধরণ"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Cumprinc.13.String.Text
 msgid  "The type of maturity"
-msgstr "পূর্ণবয়ষ্কতার রকম"
+msgstr "পূর্ণতার ধরণ"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Cumipmt.1.String.Text
 msgid  "Returns the cumulative interest to be paid between two periods"
@@ -1961,7 +1961,7 @@ msgstr "হার"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Cumipmt.3.String.Text
 msgid  "The rate"
-msgstr "হারে"
+msgstr "যে হারে"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Cumipmt.4.String.Text
 msgid  "Nper"
@@ -2013,15 +2013,15 @@ msgstr "উপনিবেশ"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Price.3.String.Text
 msgid  "The settlement"
-msgstr "সমঝোতা"
+msgstr "ঔপনিবেশিক"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Price.4.String.Text
 msgid  "Maturity"
-msgstr "পূর্ণতা"
+msgstr "পূর্ণতা,পূর্ণবয়ষ্কতা"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Price.5.String.Text
 msgid  "The maturity"
-msgstr "পূর্ণতা"
+msgstr "পূর্ণতা,পূর্ণবয়ষ্কতা"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Price.6.String.Text
 msgid  "Rate"
@@ -2029,7 +2029,7 @@ msgstr "হার"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Price.7.String.Text
 msgid  "The rate"
-msgstr "হার"
+msgstr "হারে"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Price.8.String.Text
 msgid  "Yield"
@@ -2049,19 +2049,19 @@ msgstr "মুক্তির মান"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Price.12.String.Text
 msgid  "Frequency"
-msgstr "কম্পাংক "
+msgstr "কম্পাংক"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Price.13.String.Text
 msgid  "The frequency"
-msgstr "নির্দিষ্ট কম্পাংক "
+msgstr "নির্দিষ্ট কোন কম্পাংক"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Price.14.String.Text
 msgid  "Basis"
-msgstr " ভিত্তি"
+msgstr "ভিত্তি"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Price.15.String.Text
 msgid  "The basis"
-msgstr "যে ভিত্তিতে"
+msgstr "ভিত্তিতে"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Pricedisc.1.String.Text
 msgid  "Returns the price per 100 currency units face value of a discounted security"
@@ -3141,7 +3141,7 @@ msgstr "একটি নির্দিষ্ট সময়ের সপ্ত
 
 #: source/datefunc/datefunc.src#RID_DATE_FUNCTION_DESCRIPTIONS.DATE_FUNCDESC_DiffWeeks.2.String.Text
 msgid  "Start date"
-msgstr "আরম্ভ তারিখ"
+msgstr "শুরুর তারিখ"
 
 #: source/datefunc/datefunc.src#RID_DATE_FUNCTION_DESCRIPTIONS.DATE_FUNCDESC_DiffWeeks.3.String.Text
 msgid  "First day of the period"
@@ -3157,7 +3157,7 @@ msgstr "পর্যায়কালের শেষ দিন"
 
 #: source/datefunc/datefunc.src#RID_DATE_FUNCTION_DESCRIPTIONS.DATE_FUNCDESC_DiffWeeks.6.String.Text
 msgid  "Type"
-msgstr "ধরন"
+msgstr "ধরণ"
 
 #: source/datefunc/datefunc.src#RID_DATE_FUNCTION_DESCRIPTIONS.DATE_FUNCDESC_DiffWeeks.7.String.Text
 msgid  "Type of calculation: Type=0 means the time interval, Type=1 means calendar weeks."
@@ -3169,7 +3169,7 @@ msgstr "একটি সুনির্দিষ্ট পর্যায়ক�
 
 #: source/datefunc/datefunc.src#RID_DATE_FUNCTION_DESCRIPTIONS.DATE_FUNCDESC_DiffMonths.2.String.Text
 msgid  "Start date"
-msgstr "শুরুর তারিখ"
+msgstr "আরম্ভ তারিখ"
 
 #: source/datefunc/datefunc.src#RID_DATE_FUNCTION_DESCRIPTIONS.DATE_FUNCDESC_DiffMonths.3.String.Text
 msgid  "First day of the period."
@@ -3185,7 +3185,7 @@ msgstr "পর্যায়কালের শেষ দিন "
 
 #: source/datefunc/datefunc.src#RID_DATE_FUNCTION_DESCRIPTIONS.DATE_FUNCDESC_DiffMonths.6.String.Text
 msgid  "Type"
-msgstr "ধরণ"
+msgstr "ধরন"
 
 #: source/datefunc/datefunc.src#RID_DATE_FUNCTION_DESCRIPTIONS.DATE_FUNCDESC_DiffMonths.7.String.Text
 msgid  "Type of calculation: Type=0 means the time interval, Type=1 means calendar months."

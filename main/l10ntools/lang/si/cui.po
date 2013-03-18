@@ -1169,7 +1169,7 @@ msgstr "ඇතුල් කරන්න"
 #: source/dialogs/gallery.src#RID_SVXDLG_GALLERY_TAKE_PROGRESS.FL_TAKE_PROGRESS.FixedLine.Text
 #, fuzzy
 msgid  "File"
-msgstr "ගොණුව"
+msgstr "ගොනුව"
 
 #: source/dialogs/gallery.src#RID_SVXDLG_GALLERY_ACTUALIZE_PROGRESS.ModalDialog.Text
 #, fuzzy
@@ -2470,7 +2470,7 @@ msgstr "ගොණුව / URL"
 #: source/dialogs/svuidlg.src#MD_INSERT_OBJECT_PLUGIN.GB_PLUGINS_OPTIONS.FixedLine.Text
 #, fuzzy
 msgid  "Options"
-msgstr "අභිරුචි"
+msgstr "විකල්ප"
 
 #: source/dialogs/svuidlg.src#MD_INSERT_OBJECT_PLUGIN.HelpButton.Text
 #, fuzzy
@@ -4516,7 +4516,7 @@ msgstr "හැඩතල ගැන්වීමේ ආධාර"
 #: source/options/treeopt.src#RID_OFADLG_OPTIONS_TREE_PAGES.SID_SW_EDITOPTIONS.RID_SVXPAGE_GRID.ItemList.item
 #, fuzzy
 msgid  "Grid"
-msgstr "ජාලය"
+msgstr "කොටු"
 
 #: source/options/treeopt.src#RID_OFADLG_OPTIONS_TREE_PAGES.SID_SW_EDITOPTIONS.RID_SW_TP_STD_FONT.ItemList.item
 #, fuzzy
@@ -6950,12 +6950,12 @@ msgstr "තීරු  (~m)"
 #: source/tabpages/tabarea.src#RID_SVXPAGE_SHADOW.TabPage.Text
 #, fuzzy
 msgid  "Shadow"
-msgstr "සෙවණැල්ල"
+msgstr "සෙවනැල්ල"
 
 #: source/tabpages/tabarea.src#RID_SVXPAGE_SHADOW.FL_PROP.FixedLine.Text
 #, fuzzy
 msgid  "Properties"
-msgstr "ගුණාංග"
+msgstr "වත්කම්"
 
 #: source/tabpages/tabarea.src#RID_SVXPAGE_SHADOW.TSB_SHOW_SHADOW.TriStateBox.Text
 #, fuzzy
@@ -7035,12 +7035,12 @@ msgstr "පේළි වර්ණය (~c)"
 #: source/tabpages/tabarea.src#RID_SVXPAGE_HATCH.BTN_ADD.PushButton.Text
 #, fuzzy
 msgid  "~Add..."
-msgstr "එක් කරන්න... (~A)"
+msgstr "එක් කරන්න (~A)"
 
 #: source/tabpages/tabarea.src#RID_SVXPAGE_HATCH.BTN_MODIFY.PushButton.Text
 #, fuzzy
 msgid  "~Modify..."
-msgstr "වෙනස් කරන්න (~M)"
+msgstr "වෙනස් කරන්න... (~M)"
 
 #: source/tabpages/tabarea.src#RID_SVXPAGE_HATCH.BTN_DELETE.PushButton.Text
 #, fuzzy
@@ -7095,7 +7095,7 @@ msgstr "එක් කරන්න (~A)"
 #: source/tabpages/tabarea.src#RID_SVXPAGE_BITMAP.BTN_MODIFY.PushButton.Text
 #, fuzzy
 msgid  "~Modify..."
-msgstr "වෙනස් කරන්න... (~M)"
+msgstr "වෙනස් කරන්න (~M)"
 
 #: source/tabpages/tabarea.src#RID_SVXPAGE_BITMAP.BTN_IMPORT.PushButton.Text
 #, fuzzy
@@ -9816,12 +9816,12 @@ msgstr "පෙරදැක්ම"
 #: source/tabpages/transfrm.src#RID_SVXPAGE_POSITION_SIZE.TabPage.Text
 #, fuzzy
 msgid  "Position and Size"
-msgstr "ප්‍රමාණය හා පිහිටීම"
+msgstr "පිහිටීම සහ ප්‍රමාණය"
 
 #: source/tabpages/transfrm.src#RID_SVXPAGE_POSITION_SIZE.FL_POSITION.FixedLine.Text
 #, fuzzy
 msgid  "Position"
-msgstr "පිහිටීම"
+msgstr "ස්ථානය"
 
 #: source/tabpages/transfrm.src#RID_SVXPAGE_POSITION_SIZE.FT_POS_X.FixedText.Text
 #, fuzzy
@@ -10499,8 +10499,9 @@ msgid  "Western text font"
 msgstr "බටහිර පෙළ ෆොන්ට"
 
 #: source/tabpages/chardlg.src#RID_SVXPAGE_CHAR_NAME.FT_WEST_NAME.FixedText.Text
+#, fuzzy
 msgid  "Font"
-msgstr "ෆොන්ටය"
+msgstr "ෆොන්ට"
 
 #: source/tabpages/chardlg.src#RID_SVXPAGE_CHAR_NAME.FT_WEST_NAME_NOCJK.FixedText.Text
 #, fuzzy
@@ -10530,7 +10531,7 @@ msgstr "ඇල අකුරු"
 #: source/tabpages/chardlg.src#RID_SVXPAGE_CHAR_NAME.LB_WEST_STYLE.item3.StringList.item
 #, fuzzy
 msgid  "Bold"
-msgstr "තද "
+msgstr "තද පැහැ"
 
 #: source/tabpages/chardlg.src#RID_SVXPAGE_CHAR_NAME.LB_WEST_STYLE.item4.StringList.item
 #, fuzzy
@@ -10550,7 +10551,7 @@ msgstr "ඇල අකුරු"
 #: source/tabpages/chardlg.src#RID_SVXPAGE_CHAR_NAME.LB_WEST_STYLE_NOCJK.item3.StringList.item
 #, fuzzy
 msgid  "Bold"
-msgstr "තද "
+msgstr "තද පැහැ"
 
 #: source/tabpages/chardlg.src#RID_SVXPAGE_CHAR_NAME.LB_WEST_STYLE_NOCJK.item4.StringList.item
 #, fuzzy
@@ -10585,7 +10586,7 @@ msgstr "ආසියානු පෙළ ෆොන්ට"
 #: source/tabpages/chardlg.src#RID_SVXPAGE_CHAR_NAME.FT_EAST_NAME.FixedText.Text
 #, fuzzy
 msgid  "Font"
-msgstr "ෆොන්ට"
+msgstr "ෆොන්ටය"
 
 #: source/tabpages/chardlg.src#RID_SVXPAGE_CHAR_NAME.FT_EAST_STYLE.FixedText.Text
 #, fuzzy
@@ -10785,7 +10786,7 @@ msgstr "තනි"
 #: source/tabpages/chardlg.src#RID_SVXPAGE_CHAR_EFFECTS.LB_OVERLINE.CHRDLG_UNDERLINE_DOUBLE.StringList.item
 #, fuzzy
 msgid  "Double"
-msgstr "ද්විත්ව"
+msgstr "ද්වී"
 
 #: source/tabpages/chardlg.src#RID_SVXPAGE_CHAR_EFFECTS.LB_OVERLINE.CHRDLG_UNDERLINE_BOLD.StringList.item
 #, fuzzy
@@ -10880,7 +10881,7 @@ msgstr "තනි"
 #: source/tabpages/chardlg.src#RID_SVXPAGE_CHAR_EFFECTS.LB_STRIKEOUT.CHRDLG_STRIKEOUT_DOUBLE.StringList.item
 #, fuzzy
 msgid  "Double"
-msgstr "ද්වී"
+msgstr "ද්විත්ව"
 
 #: source/tabpages/chardlg.src#RID_SVXPAGE_CHAR_EFFECTS.LB_STRIKEOUT.CHRDLG_STRIKEOUT_BOLD.StringList.item
 #, fuzzy
@@ -11805,7 +11806,7 @@ msgstr "වර්ගය (~T)"
 #: source/tabpages/tabline.src#RID_SVXPAGE_LINE_DEF.LB_TYPE_1.Default.StringList.item
 #, fuzzy
 msgid  "Dot"
-msgstr "තිත"
+msgstr "තිත්"
 
 #: source/tabpages/tabline.src#RID_SVXPAGE_LINE_DEF.LB_TYPE_1.Default.StringList.item
 #, fuzzy
@@ -11949,7 +11950,7 @@ msgstr "ඊතල රටා සුරකින්න"
 #: source/tabpages/tabline.src#RID_SVXDLG_LINE.TabDialog.Text
 #, fuzzy
 msgid  "Line"
-msgstr "රේඛාව"
+msgstr "පේළිය"
 
 #: source/tabpages/tabline.src#RID_SVXDLG_LINE.TAB_CONTROL.RID_SVXPAGE_LINE.PageItem.Text
 #, fuzzy

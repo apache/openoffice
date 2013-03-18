@@ -541,7 +541,7 @@ msgstr "Нийт явц:"
 
 #: source/ext/macromigration/macromigration.src#TP_MIGRATE.FT_OBJECT_COUNT_PROGRESS.FixedText.Text
 msgid  "document $current$ of $overall$"
-msgstr "$overall$-н $current$ баримт"
+msgstr " $overall$ -н $current$ баримт"
 
 #: source/ext/macromigration/macromigration.src#TP_MIGRATE.FT_MIGRATION_DONE.FixedText.Text
 msgid  "All forms and reports have been successfully processed. Press 'Next' to show a detailed summary."
@@ -1385,7 +1385,7 @@ msgstr "~Тэг олгох"
 
 #: source/ui/dlg/RelationDlg.src#DLG_REL_PROPERTIES.RB_CASC_UPD_DEFAULT.RadioButton.Text
 msgid  "Set ~default"
-msgstr "~Өгөгдмөл тогтоох"
+msgstr "~Стандарт тогтоох"
 
 #: source/ui/dlg/RelationDlg.src#DLG_REL_PROPERTIES.FL_CASC_DEL.FixedLine.Text
 msgid  "Delete options"
@@ -1737,7 +1737,7 @@ msgstr "Файлд суурилсан өгөгдлийн сангуудын ху
 
 #: source/ui/dlg/dbadmin.src#AUTO_FIXEDLINE_CONNSETTINGS(AUTO_Y).FL_SEPARATOR1.FixedLine.Text
 msgid  "Connection Settings"
-msgstr "Холболтын тохиргоонууд"
+msgstr "Холболтын тохиргоо"
 
 #: source/ui/dlg/dbadmin.src#AUTO_HOST_AND_PORT(AUTO_Y).FT_HOSTNAME.FixedText.Text
 msgid  "~Host name"
@@ -2313,7 +2313,7 @@ msgstr "Нууц үг таарахгүй байна. Та дахин оруул�
 
 #: source/ui/dlg/dbadminsetup.src#DLG_DATABASE_WIZARD.ModalDialog.Text
 msgid  "Database Wizard"
-msgstr "Өгөгдлийн сангийн туслах"
+msgstr "Өгөгдлийн сангийн залуурч"
 
 #: source/ui/dlg/dbadminsetup.src#DLG_DATABASE_WIZARD.STR_DBWIZARDTITLE.String.Text
 msgid  "Database Wizard"
@@ -2329,7 +2329,7 @@ msgstr "dBASE холболт үүсгэх"
 
 #: source/ui/dlg/dbadminsetup.src#DLG_DATABASE_WIZARD.STR_PAGETITLE_TEXT.String.Text
 msgid  "Set up a connection to text files"
-msgstr "Бичвэр файлууд руу холболт үүсгэх"
+msgstr "Бичвэр файлуудад холбох суулгац"
 
 #: source/ui/dlg/dbadminsetup.src#DLG_DATABASE_WIZARD.STR_PAGETITLE_MSACCESS.String.Text
 msgid  "Set up Microsoft Access connection"

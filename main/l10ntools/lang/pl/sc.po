@@ -2117,7 +2117,7 @@ msgstr "Atrybuty tekstu"
 
 #: source/ui/pagedlg/hfedtdlg.src#RID_HFBASE.BTN_FILE.ImageButton.QuickHelpText
 msgid  "Title"
-msgstr "Tytuł"
+msgstr "Nazwa pliku"
 
 #: source/ui/pagedlg/hfedtdlg.src#RID_HFBASE.RID_POPUP_FCOMMAND.FILE_COMMAND_TITEL.MenuItem.Text
 msgid  "Title"
@@ -5645,7 +5645,7 @@ msgstr "Zwraca wewnętrzną liczbę odpowiadającą tekstowi podanemu w postaci 
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_GET_DATE_VALUE.2.String.Text
 msgid  "text"
-msgstr "Tekst"
+msgstr "tekst"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_GET_DATE_VALUE.3.String.Text
 msgid  "A text enclosed in quotation marks which returns a date in a %PRODUCTNAME date format."
@@ -5777,7 +5777,7 @@ msgstr "Zwraca sekwencyjną liczbę odpowiadającą tekstowi podanemu w postaci 
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_GET_TIME_VALUE.2.String.Text
 msgid  "text"
-msgstr "Tekst"
+msgstr "tekst"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_GET_TIME_VALUE.3.String.Text
 msgid  "A text enclosed in quotation marks which returns a time in a %PRODUCTNAME time format."
@@ -6725,7 +6725,7 @@ msgstr "Zwraca wartość PRAWDA, jeśli wartość jest odwołaniem."
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_IS_REF.2.String.Text
 msgid  "value"
-msgstr "wartość"
+msgstr "Wartość"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_IS_REF.3.String.Text
 msgid  "The value to be tested."
@@ -7229,7 +7229,7 @@ msgstr "Zwraca wartość pierwiastka kwadratowego z liczby."
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_SQRT.2.String.Text
 msgid  "number"
-msgstr "numer"
+msgstr "liczba"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_SQRT.3.String.Text
 msgid  "A positive value for which the square root is to be calculated."
@@ -9893,7 +9893,7 @@ msgstr "Numer wiersza komórki."
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_ADDRESS.4.String.Text
 msgid  "column"
-msgstr "Kolumna"
+msgstr "nr_kolumny"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_ADDRESS.5.String.Text
 msgid  "The column number of the cell."
@@ -9913,7 +9913,7 @@ msgstr "A1"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_ADDRESS.9.String.Text
 msgid  "The reference style: 0 or FALSE means R1C1 style, any other value or omitted means A1 style."
-msgstr "Styl odwołań: 0 lub FAŁSZ oznacza styl R1C1. Każda inna wartość lub jej brak oznacza styl A1."
+msgstr "Styl odwołań: 0 lub FAŁSZ oznacza styl R1C1, każda inna wartość lub jej brak oznacza styl A1."
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_ADDRESS.10.String.Text
 msgid  "sheet"
@@ -10397,7 +10397,7 @@ msgstr "Konwertuje znaki ASCII i katakana o połowie szerokości do znaków o pe
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_JIS.2.String.Text
 msgid  "text"
-msgstr "Tekst"
+msgstr "tekst"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_JIS.3.String.Text
 msgid  "The text to convert."
@@ -10409,7 +10409,7 @@ msgstr "Konwertuje znaki ASCII i katakana o pełnej szerokości do znaków o po�
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_ASC.2.String.Text
 msgid  "text"
-msgstr "Tekst"
+msgstr "tekst"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_ASC.3.String.Text
 msgid  "The text to convert."
@@ -10421,11 +10421,11 @@ msgstr "Zwraca kod liczbowy pierwszego znaku w tekście."
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_CODE.2.String.Text
 msgid  "text"
-msgstr "tekst"
+msgstr "Tekst"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_CODE.3.String.Text
 msgid  "This is the text for which the code of the first character is to be found."
-msgstr "To tekst, dla którego ma zostać znaleziony kod pierwszego znaku."
+msgstr "To jest tekst, dla którego ma zostać wyznaczony kod pierwszego znaku."
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_CURRENCY.1.String.Text
 msgid  "Converts a number to text in currency format."
@@ -10457,7 +10457,7 @@ msgstr "liczba"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_CHAR.3.String.Text
 msgid  "The code value for the character."
-msgstr "Wartość kodowa znaku."
+msgstr "Wartość kodu dla znaku."
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_CLEAN.1.String.Text
 msgid  "Removes all nonprintable characters from text."
@@ -10465,7 +10465,7 @@ msgstr "Usuwa z tekstu wszystkie niedrukowalne znaki."
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_CLEAN.2.String.Text
 msgid  "text"
-msgstr "tekst"
+msgstr "Tekst"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_CLEAN.3.String.Text
 msgid  "The text from which nonprintable characters are to be removed."
@@ -10517,7 +10517,7 @@ msgstr "Szukany tekst."
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_FIND.4.String.Text
 msgid  "text"
-msgstr "tekst"
+msgstr "Tekst"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_FIND.5.String.Text
 msgid  "The text in which a search is to be made."
@@ -10545,7 +10545,7 @@ msgstr "Szukany tekst."
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_SEARCH.4.String.Text
 msgid  "text"
-msgstr "tekst"
+msgstr "Tekst"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_SEARCH.5.String.Text
 msgid  "The text in which a search is to be made."
@@ -10617,7 +10617,7 @@ msgstr "Tekst"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_VALUE.3.String.Text
 msgid  "The text to be converted to a number."
-msgstr "Tekst, który ma zostać przekształcony na liczbę."
+msgstr "Tekst, który ma zostać przekonwertowany w liczbę."
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_TEXT.1.String.Text
 msgid  "Converts a number to text according to a given format."
@@ -10909,7 +10909,7 @@ msgstr "Wartość"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_CONVERT.3.String.Text
 msgid  "The value to be converted."
-msgstr "Wartość, która ma zostać przeliczona."
+msgstr "Wartość do konwersji."
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_CONVERT.4.String.Text
 msgid  "text"
@@ -13253,7 +13253,7 @@ msgstr "Plik zawiera dane po wierszu 8192 i z tego powodu nie może zostać odcz
 
 #: source/ui/src/scerrors.src#RID_ERRHDLSC.SCERR_IMPORT_FILE_ROWCOL & ERRCODE_RES_MASK.String.Text
 msgid  "Format error discovered in the file in sub-document $(ARG1) at $(ARG2)(row,col)."
-msgstr "Wykryto błąd formatowania w pliku dokumentu podrzędnego $(ARG1) na pozycji $(ARG2) (wiersz, kolumna)"
+msgstr "Wykryto błąd formatowania w pliku dokumentu podrzędnego $(ARG1) na pozycji $(ARG2) (wiersz, kolumna)."
 
 #: source/ui/src/scerrors.src#RID_ERRHDLSC.SCERR_IMPORT_FORMAT_ROWCOL & ERRCODE_RES_MASK.String.Text
 msgid  "File format error found at $(ARG1)(row,col)."

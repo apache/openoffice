@@ -161,7 +161,7 @@ msgstr ""
 
 #: source/text/scalc/00/00000404.xhp#tit
 msgid  "Insert Menu"
-msgstr "「插入」功能表"
+msgstr "插入功能表"
 
 #: source/text/scalc/00/00000404.xhp#hd_id3149346.1
 msgid  "Insert Menu"
@@ -345,7 +345,7 @@ msgstr ""
 
 #: source/text/scalc/00/00000405.xhp#tit
 msgid  "Format Menu"
-msgstr "「格式」功能表"
+msgstr "格式功能表"
 
 #: source/text/scalc/00/00000405.xhp#hd_id3150769.1
 msgid  "Format Menu"
@@ -465,7 +465,7 @@ msgstr ""
 
 #: source/text/scalc/00/00000406.xhp#tit
 msgid  "Tools Menu"
-msgstr "「工具」功能表"
+msgstr "工具功能表"
 
 #: source/text/scalc/00/00000406.xhp#hd_id3147264.1
 msgid  "Tools Menu"
@@ -577,7 +577,7 @@ msgstr ""
 
 #: source/text/scalc/00/00000407.xhp#tit
 msgid  "Window Menu"
-msgstr "「視窗」功能表"
+msgstr "視窗功能表"
 
 #: source/text/scalc/00/00000407.xhp#hd_id3155628.1
 msgid  "Window Menu"
@@ -593,7 +593,7 @@ msgstr ""
 
 #: source/text/scalc/00/00000412.xhp#tit
 msgid  "Data Menu"
-msgstr "「資料」功能表"
+msgstr "資料功能表"
 
 #: source/text/scalc/00/00000412.xhp#hd_id3145136.1
 msgid  "Data Menu"
@@ -1427,7 +1427,7 @@ msgstr "如果選取的範圍只有一列，則最右側儲存格的內容被複
 #: source/text/scalc/01/02140500.xhp#tit
 #, fuzzy
 msgid  "Fill Sheet"
-msgstr "填充試算表"
+msgstr "充填試算表"
 
 #: source/text/scalc/01/02140500.xhp#hd_id3153897.1
 #, fuzzy
@@ -1471,7 +1471,7 @@ msgstr ""
 #: source/text/scalc/01/02140600.xhp#tit
 #, fuzzy
 msgid  "Fill Series"
-msgstr "填充欄"
+msgstr "充填排列"
 
 #: source/text/scalc/01/02140600.xhp#hd_id3148664.1
 #, fuzzy
@@ -3648,7 +3648,7 @@ msgstr ""
 #: source/text/scalc/01/04060102.xhp#tit
 #, fuzzy
 msgid  "Date & Time Functions"
-msgstr "分類日期和時間"
+msgstr "日期和時間函數"
 
 #: source/text/scalc/01/04060102.xhp#bm_id3154536
 msgid  "\<bookmark_value\>date and time functions\</bookmark_value\>\<bookmark_value\>functions; date & time\</bookmark_value\>\<bookmark_value\>Function Wizard; date & time\</bookmark_value\>"
@@ -3845,7 +3845,7 @@ msgstr ""
 #: source/text/scalc/01/04060103.xhp#tit
 #, fuzzy
 msgid  "Financial Functions Part One"
-msgstr "分類「財務」部分1"
+msgstr "財務函數第一部分"
 
 #: source/text/scalc/01/04060103.xhp#bm_id3143284
 msgid  "\<bookmark_value\>financial functions\</bookmark_value\>      \<bookmark_value\>functions; financial functions\</bookmark_value\>      \<bookmark_value\>Function Wizard; financial\</bookmark_value\>      \<bookmark_value\>amortizations, see also depreciations\</bookmark_value\>"
@@ -6275,12 +6275,12 @@ msgstr "這些引數可能是本身傳回邏輯值的邏輯表示式 (TRUE, 1<5,
 #: source/text/scalc/01/04060105.xhp#par_id3150538.67
 #, fuzzy
 msgid  "When a function expects a single value, but you entered a cell range, then the value from the cell range is taken that is in the same column or row as the formula."
-msgstr "當函數預期單一值，但是您輸入了儲存格範圍，則該儲存格範圍的值會與公式相同當作是位於相同的欄或列。"
+msgstr "當函數預期單個數值，但您輸入的是儲存格範圍時，會採用儲存格範圍中與公式同一欄或列的值。"
 
 #: source/text/scalc/01/04060105.xhp#par_id3149128.68
 #, fuzzy
 msgid  "If the entered range is outside of the current column or row of the formula, the function returns the error value #VALUE!"
-msgstr "如果輸入的區域是在目前公式的欄或列以外，函數會傳回錯誤值 #VALUE"
+msgstr "如果輸入的範圍是在目前公式的欄或列以外，函數會傳回錯誤值 #VALUE"
 
 #: source/text/scalc/01/04060105.xhp#hd_id3150374.31
 #, fuzzy
@@ -11536,7 +11536,7 @@ msgstr "儲存 INDIRECT 函數並不會轉換為 ODF 1.0/1.1 格式。若第二�
 #: source/text/scalc/01/04060109.xhp#hd_id3151196.5
 #, fuzzy
 msgid  "Syntax"
-msgstr "語法："
+msgstr "語法"
 
 #: source/text/scalc/01/04060109.xhp#par_id3154707.6
 #, fuzzy
@@ -14427,7 +14427,7 @@ msgstr ""
 #: source/text/scalc/01/04060112.xhp#tit
 #, fuzzy
 msgid  "Add-in for Programming in $[officename] Calc"
-msgstr "用於在 $[officename] Calc 中進行程式設計的 Add-in"
+msgstr "$[officename] Calc 中程式設計的 Add-In"
 
 #: source/text/scalc/01/04060112.xhp#bm_id3151076
 msgid  "\<bookmark_value\>programming; add-ins\</bookmark_value\>\<bookmark_value\>shared libraries; programming\</bookmark_value\>\<bookmark_value\>external DLL functions\</bookmark_value\>\<bookmark_value\>functions; $[officename] Calc add-in DLL\</bookmark_value\>\<bookmark_value\>add-ins; for programming\</bookmark_value\>"
@@ -14826,7 +14826,7 @@ msgstr "Col1"
 #: source/text/scalc/01/04060112.xhp#par_id3147541.85
 #, fuzzy
 msgid  "Column number in the upper-left corner of the cell area. Numbering starts at 0."
-msgstr "儲存格區域左上角的欄編號。自 0 開始計算。"
+msgstr "儲存格區域左上角的欄編號。計數自 0 開始。"
 
 #: source/text/scalc/01/04060112.xhp#par_id3149783.86
 #, fuzzy
@@ -14841,7 +14841,7 @@ msgstr "Row1"
 #: source/text/scalc/01/04060112.xhp#par_id3147483.88
 #, fuzzy
 msgid  "Row number in the upper-left corner of the cell area; numbering starts at 0."
-msgstr "儲存格區域左上角的欄編號，自 0 開始計算。"
+msgstr "儲存格區域左上角的列編號，自 0 開始計算。"
 
 #: source/text/scalc/01/04060112.xhp#par_id3153721.89
 #, fuzzy
@@ -14871,7 +14871,7 @@ msgstr "Col2"
 #: source/text/scalc/01/04060112.xhp#par_id3154819.94
 #, fuzzy
 msgid  "Column number in the lower-right corner of the cell area. Numbering starts at 0."
-msgstr "儲存格區域右下角的欄編號。計數自 0 開始。"
+msgstr "儲存格區域右下角的欄編號。自 0 開始計算。"
 
 #: source/text/scalc/01/04060112.xhp#par_id3145083.95
 #, fuzzy
@@ -14916,7 +14916,7 @@ msgstr "Count"
 #: source/text/scalc/01/04060112.xhp#par_id3145202.103
 #, fuzzy
 msgid  "Number of the following elements. Empty cells are not counted or passed."
-msgstr "下列元素的數目。將不會一併計算並移轉空白儲存格。"
+msgstr "下列元素的數目。將不會一併計算並轉移空白儲存格。"
 
 #: source/text/scalc/01/04060112.xhp#par_id3150879.104
 #, fuzzy
@@ -14931,7 +14931,7 @@ msgstr "Col"
 #: source/text/scalc/01/04060112.xhp#par_id3147276.106
 #, fuzzy
 msgid  "Column number of the element. Numbering starts at 0."
-msgstr "元素的欄編號。自 0 開始計算。"
+msgstr "項目的欄編號。自 0 開始計算。"
 
 #: source/text/scalc/01/04060112.xhp#par_id3151295.107
 #, fuzzy
@@ -14946,7 +14946,7 @@ msgstr "Row"
 #: source/text/scalc/01/04060112.xhp#par_id3155851.109
 #, fuzzy
 msgid  "Row number of the element; numbering starts at 0."
-msgstr "元素的列編號，自 0 開始計算。"
+msgstr "項目的列編號，自 0 開始計算。"
 
 #: source/text/scalc/01/04060112.xhp#par_id3153150.110
 #, fuzzy
@@ -14961,7 +14961,7 @@ msgstr "Tab"
 #: source/text/scalc/01/04060112.xhp#par_id3150154.112
 #, fuzzy
 msgid  "Table number of the element; numbering starts at 0."
-msgstr "元素的欄編號，自 0 開始計算。"
+msgstr "項目的表格編號，自 0 開始計算。"
 
 #: source/text/scalc/01/04060112.xhp#par_id3149289.113
 #, fuzzy
@@ -15006,7 +15006,7 @@ msgstr "..."
 #: source/text/scalc/01/04060112.xhp#par_id3155388.121
 #, fuzzy
 msgid  "Next element"
-msgstr "下一個元素"
+msgstr "下一個項目"
 
 #: source/text/scalc/01/04060112.xhp#hd_id3154935.122
 #, fuzzy
@@ -15043,7 +15043,7 @@ msgstr "Col1"
 #: source/text/scalc/01/04060112.xhp#par_id3148447.129
 #, fuzzy
 msgid  "Column number in the upper-left corner of the cell area. Numbering starts at 0."
-msgstr "儲存格區域左上角的欄編號。計數自 0 開始。"
+msgstr "儲存格區域左上角的欄編號。自 0 開始計算。"
 
 #: source/text/scalc/01/04060112.xhp#par_id3145418.130
 #, fuzzy
@@ -15058,7 +15058,7 @@ msgstr "Row1"
 #: source/text/scalc/01/04060112.xhp#par_id3147235.132
 #, fuzzy
 msgid  "Row number in the upper-left corner of the cell area; numbering starts at 0."
-msgstr "儲存格區域左上角的列編號，自 0 開始計算。"
+msgstr "儲存格區域左上角的欄編號，自 0 開始計算。"
 
 #: source/text/scalc/01/04060112.xhp#par_id3155362.133
 #, fuzzy
@@ -15133,7 +15133,7 @@ msgstr "Count"
 #: source/text/scalc/01/04060112.xhp#par_id3148621.147
 #, fuzzy
 msgid  "Number of the following elements. Empty cells are not counted or passed."
-msgstr "下列元素的數目。將不會一併計算並轉移空白儲存格。"
+msgstr "下列元素的數目。將不會一併計算並移轉空白儲存格。"
 
 #: source/text/scalc/01/04060112.xhp#par_id3148467.148
 #, fuzzy
@@ -15148,7 +15148,7 @@ msgstr "Col"
 #: source/text/scalc/01/04060112.xhp#par_id3154334.150
 #, fuzzy
 msgid  "Column number of the element. Numbering starts at 0."
-msgstr "元素的欄編號。計數自 0 開始。"
+msgstr "元素的欄編號。自 0 開始計算。"
 
 #: source/text/scalc/01/04060112.xhp#par_id3149416.151
 #, fuzzy
@@ -15178,7 +15178,7 @@ msgstr "Tab"
 #: source/text/scalc/01/04060112.xhp#par_id3149513.156
 #, fuzzy
 msgid  "Table number of the element; numbering starts at 0."
-msgstr "元素的表格編號，自 0 開始計算。"
+msgstr "元素的欄編號，自 0 開始計算。"
 
 #: source/text/scalc/01/04060112.xhp#par_id3145306.157
 #, fuzzy
@@ -15495,7 +15495,7 @@ msgstr "下一個元素"
 #: source/text/scalc/01/04060115.xhp#tit
 #, fuzzy
 msgid  "Add-in Functions, List of Analysis Functions Part One"
-msgstr "Add-In 函數, 分析函數清單第一部份"
+msgstr "Add-In 函數，分析函數清單第一部分"
 
 #: source/text/scalc/01/04060115.xhp#bm_id3152871
 msgid  "\<bookmark_value\>add-ins; analysis functions\</bookmark_value\>\<bookmark_value\>analysis functions\</bookmark_value\>"
@@ -16126,7 +16126,7 @@ msgstr ""
 #: source/text/scalc/01/04060116.xhp#tit
 #, fuzzy
 msgid  "Add-in Functions, List of Analysis Functions Part Two"
-msgstr "分類 Add-In，分析函數清單 第2部份"
+msgstr "Add-In 函數，分析函數清單第二部分"
 
 #: source/text/scalc/01/04060116.xhp#bm_id3145074
 msgid  "\<bookmark_value\>imaginary numbers in analysis functions\</bookmark_value\>      \<bookmark_value\>complex numbers in analysis functions\</bookmark_value\>"
@@ -17418,7 +17418,7 @@ msgstr ""
 #: source/text/scalc/01/04060118.xhp#tit
 #, fuzzy
 msgid  "Financial Functions Part Three"
-msgstr "財務分類 第3部分"
+msgstr "財務函數第三部分"
 
 #: source/text/scalc/01/04060118.xhp#hd_id3146780.1
 #, fuzzy
@@ -18655,7 +18655,7 @@ msgstr ""
 #: source/text/scalc/01/04060119.xhp#tit
 #, fuzzy
 msgid  "Financial Functions Part Two"
-msgstr "財務分類 第2部分"
+msgstr "財務函數第二部分"
 
 #: source/text/scalc/01/04060119.xhp#hd_id3149052.1
 #, fuzzy
@@ -23573,7 +23573,7 @@ msgstr "<emph>名稱</emph>"
 #: source/text/scalc/01/04060199.xhp#par_id3159096.7
 #, fuzzy
 msgid  "Example"
-msgstr "<emph>範例</emph>"
+msgstr "範例"
 
 #: source/text/scalc/01/04060199.xhp#par_id3149126.8
 #, fuzzy
@@ -25193,7 +25193,7 @@ msgstr "頁面樣式"
 #: source/text/scalc/01/05100000.xhp#hd_id3150202.10
 #, fuzzy
 msgid  "Fill Format Mode"
-msgstr "充填模式"
+msgstr "充填格式模式"
 
 #: source/text/scalc/01/05100000.xhp#par_id3155531.12
 msgid  "\<ahelp hid=\"HID_TEMPLDLG_WATERCAN\"\>Turns the Fill Format mode on and off. Use the paint can to assign the Style selected in the Styles and Formatting window.\</ahelp\>"
@@ -25327,7 +25327,7 @@ msgstr ""
 #: source/text/scalc/01/05110000.xhp#hd_id3150044.7
 #, fuzzy
 msgid  "More"
-msgstr "其他<<"
+msgstr "其他"
 
 #: source/text/scalc/01/05110000.xhp#par_id3146920.8
 msgid  "\<ahelp hid=\"SC:MOREBUTTON:RID_SCDLG_AUTOFORMAT:BTN_MORE\"\>Opens the \<emph\>Formatting\</emph\> section, which displays the formatting overrides that can be applied to the spreadsheet. Deselecting an option keeps the format of the current spreadsheet for that format type.\</ahelp\>"
@@ -26242,7 +26242,7 @@ msgstr ""
 #: source/text/scalc/01/12010000.xhp#tit
 #, fuzzy
 msgid  "Define Database Range"
-msgstr "定義區域"
+msgstr "定義資料庫範圍"
 
 #: source/text/scalc/01/12010000.xhp#hd_id3157909.1
 #, fuzzy
@@ -26868,7 +26868,7 @@ msgstr ""
 #: source/text/scalc/01/12050000.xhp#tit
 #, fuzzy
 msgid  "Subtotals"
-msgstr "單項計算結果"
+msgstr "小計"
 
 #: source/text/scalc/01/12050000.xhp#hd_id3153822.1
 #, fuzzy
@@ -27175,7 +27175,7 @@ msgstr ""
 #: source/text/scalc/01/12070100.xhp#tit
 #, fuzzy
 msgid  "Consolidate by"
-msgstr "合併按照"
+msgstr "合併依據"
 
 #: source/text/scalc/01/12070100.xhp#hd_id3151210.1
 #, fuzzy
@@ -27544,7 +27544,7 @@ msgstr ""
 #: source/text/scalc/01/12090100.xhp#tit
 #, fuzzy
 msgid  "Select Source"
-msgstr "選擇資料源"
+msgstr "選取來源"
 
 #: source/text/scalc/01/12090100.xhp#hd_id3153663.1
 #, fuzzy
@@ -27604,7 +27604,7 @@ msgstr ""
 #: source/text/scalc/01/12090101.xhp#tit
 #, fuzzy
 msgid  "Select Data Source"
-msgstr "選取資料源"
+msgstr "選取資料來源"
 
 #: source/text/scalc/01/12090101.xhp#hd_id3143268.1
 #, fuzzy
@@ -30564,8 +30564,9 @@ msgid  "\<link href=\"text/shared/01/05020300.xhp\" name=\"Format - Cell - Numbe
 msgstr ""
 
 #: source/text/scalc/02/02160000.xhp#tit
+#, fuzzy
 msgid  "Number Format: Add Decimal Place"
-msgstr "數字格式：加入小數位"
+msgstr "數字格式：增加小數點位數"
 
 #: source/text/scalc/02/02160000.xhp#hd_id3150275.1
 msgid  "\<link href=\"text/scalc/02/02160000.xhp\" name=\"Number Format: Add Decimal Place\"\>Number Format: Add Decimal Place\</link\>"
@@ -30585,8 +30586,9 @@ msgid  "Number Format: Add Decimal Place"
 msgstr "數字格式：加入小數位"
 
 #: source/text/scalc/02/02170000.xhp#tit
+#, fuzzy
 msgid  "Number Format: Delete Decimal Place"
-msgstr "數字格式：刪除小數位"
+msgstr "數字格式：刪除小數點位數"
 
 #: source/text/scalc/02/02170000.xhp#hd_id3149164.1
 msgid  "\<link href=\"text/scalc/02/02170000.xhp\" name=\"Number Format: Delete Decimal Place\"\>Number Format: Delete Decimal Place\</link\>"
@@ -30741,8 +30743,9 @@ msgid  "Cancel"
 msgstr "取消"
 
 #: source/text/scalc/02/06070000.xhp#tit
+#, fuzzy
 msgid  "Accept"
-msgstr "套用"
+msgstr "接受"
 
 #: source/text/scalc/02/06070000.xhp#bm_id3143267
 msgid  "\<bookmark_value\>formula bar; accepting inputs\</bookmark_value\>\<bookmark_value\>functions; accepting input icon\</bookmark_value\>"
@@ -30831,8 +30834,9 @@ msgid  "\<link href=\"text/scalc/05/02140000.xhp\" name=\"Error codes\"\>Error c
 msgstr ""
 
 #: source/text/scalc/02/10050000.xhp#tit
+#, fuzzy
 msgid  "Zoom In"
-msgstr "放大顯示比例"
+msgstr "放大"
 
 #: source/text/scalc/02/10050000.xhp#bm_id3148491
 msgid  "\<bookmark_value\>page views; increasing scales\</bookmark_value\>\<bookmark_value\>increasing scales in page view\</bookmark_value\>\<bookmark_value\>zooming;enlarging page views\</bookmark_value\>"
@@ -31037,8 +31041,9 @@ msgid  "Navigating in Spreadsheets"
 msgstr "在工作表文件中瀏覽"
 
 #: source/text/scalc/04/01020000.xhp#hd_id3149407.86
+#, fuzzy
 msgid  "Shortcut Keys"
-msgstr "組合鍵"
+msgstr "<emph>鍵盤組合</emph>"
 
 #: source/text/scalc/04/01020000.xhp#par_id3153815.87
 msgid  "\<emph\>Effect\</emph\>"
@@ -31065,7 +31070,7 @@ msgstr "將游標移至工作表中最後一個包含資料的儲存格。"
 #: source/text/scalc/04/01020000.xhp#hd_id3149127.92
 #, fuzzy
 msgid  "Home"
-msgstr "(Home)"
+msgstr "(home)"
 
 #: source/text/scalc/04/01020000.xhp#par_id3159205.93
 #, fuzzy
@@ -31268,7 +31273,7 @@ msgstr "用功能鍵來控制工作表文件功能"
 #: source/text/scalc/04/01020000.xhp#hd_id3148581.6
 #, fuzzy
 msgid  "Shortcut Keys"
-msgstr "<emph>組合鍵</emph>"
+msgstr "組合鍵"
 
 #: source/text/scalc/04/01020000.xhp#par_id3152790.8
 msgid  "\<emph\>Effect\</emph\>"
@@ -33343,7 +33348,7 @@ msgstr "透過自動篩選、標準篩選或進階篩選篩選出儲存格。"
 #: source/text/scalc/guide/cellcopy.xhp#par_id3150044.7
 #, fuzzy
 msgid  "Copy, delete, move, or format a selection of currently visible cells."
-msgstr "您<emph>複製</emph>或<emph>移動</emph>可見的儲存格。"
+msgstr "<emph>複製</emph>可見儲存格的方法有：複製並經由剪貼簿貼上；使用滑鼠的中間按鈕；按住 CTRL 鍵，同時使用滑鼠進行拖放。"
 
 #: source/text/scalc/guide/cellcopy.xhp#par_id3146918.8
 #, fuzzy
@@ -36283,7 +36288,7 @@ msgstr "標記單個儲存格"
 #: source/text/scalc/guide/mark_cells.xhp#par_id3146975.19
 #, fuzzy
 msgid  "Do one of the following:"
-msgstr "執行下列動作之一："
+msgstr "執行下列動作："
 
 #: source/text/scalc/guide/mark_cells.xhp#par_id3163710.20
 #, fuzzy

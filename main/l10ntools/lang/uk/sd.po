@@ -53,7 +53,7 @@ msgstr "Розмірні лінії"
 
 #: source/core/glob.src#STR_PAGE.String.Text
 msgid  "Slide"
-msgstr "Сторінка"
+msgstr "Слайд"
 
 #: source/core/glob.src#STR_PAGE_NAME.String.Text
 msgid  "Page"
@@ -1009,7 +1009,7 @@ msgstr "Маленький"
 
 #: source/ui/animations/CustomAnimation.src#RID_CUSTOMANIMATION_FONTSIZE_POPUP.CM_SIZE_150.MenuItem.Text
 msgid  "Larger"
-msgstr "Великий"
+msgstr "Більший"
 
 #: source/ui/animations/CustomAnimation.src#RID_CUSTOMANIMATION_FONTSIZE_POPUP.CM_SIZE_400.MenuItem.Text
 msgid  "Extra large"
@@ -3092,7 +3092,7 @@ msgstr "Позиція і ~розмір..."
 #: source/ui/app/menuids_tmpl.src#MN_EDIT_POINTS.SID_BEZIER_EDIT.MenuItem.Text
 #, fuzzy
 msgid  "Edit ~Points"
-msgstr "Редагування ~точок"
+msgstr "~Редагування точок"
 
 #: source/ui/app/menuids_tmpl.src#MN_POSITION.SID_POSITION.MenuItem.Text
 #, fuzzy
@@ -3281,7 +3281,7 @@ msgstr "З~низу"
 #: source/ui/app/menuids_tmpl.src#MN_CLOSE_OBJECT.SID_OBJECT_CLOSE.MenuItem.Text
 #, fuzzy
 msgid  "Close ~Object"
-msgstr "Замкнути ~об'єкт"
+msgstr "Закрити ~об'єкт"
 
 #: source/ui/app/menuids_tmpl.src#MN_BEZIER.SID_BEZIER_EDIT.MenuItem.Text
 #, fuzzy
@@ -3721,7 +3721,7 @@ msgstr "С~ховати слайд"
 #: source/ui/app/menuids3_tmpl.src#MN_GROUP_IMPRESS.SID_GROUP.MenuItem.Text
 #, fuzzy
 msgid  "~Group"
-msgstr "~Згрупувати"
+msgstr "~Групувати"
 
 #: source/ui/app/menuids3_tmpl.src#MN_UNGROUP_IMPRESS.SID_UNGROUP.MenuItem.Text
 #, fuzzy
@@ -4336,8 +4336,9 @@ msgid  "~Gallery"
 msgstr "~Галерея"
 
 #: source/ui/app/menuids2_tmpl.src#MN_OUTPUT_QUALITY_COLOR.SID_OUTPUT_QUALITY_COLOR.MenuItem.Text
+#, fuzzy
 msgid  "~Color"
-msgstr "~Колір"
+msgstr "~Кольоровий"
 
 #: source/ui/app/menuids2_tmpl.src#MN_OUTPUT_QUALITY_GRAYSCALE.SID_OUTPUT_QUALITY_GRAYSCALE.MenuItem.Text
 #, fuzzy

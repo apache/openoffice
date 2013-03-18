@@ -233,7 +233,7 @@ msgstr "ඉතිරිව ඇති කාළය: {මිනිත්තු [1]
 #: inc_openoffice/windows/msi_languages/Error.ulf#OOO_ERROR_16
 #, fuzzy
 msgid  "Out of memory. Shut down other applications before retrying."
-msgstr "පරිගණක මතකය අවම මට්ටමක පවතී. කරුණාකර  අනෙකුත් යෙදවුම් වසා දමා, නැවත උත්සාහ කරන්න."
+msgstr "මතකය ඉක්මවා ඇත. නැවත උත්සාහ කිරීමට පෙර අනෙකුත් යෙදුම් වසා දමන්න."
 
 #: inc_openoffice/windows/msi_languages/Error.ulf#OOO_ERROR_17
 #, fuzzy
@@ -1118,12 +1118,12 @@ msgstr "IIS Virtual Roots ඉවත් කරමින්..."
 #: inc_openoffice/windows/msi_languages/ActionTe.ulf#OOO_ACTIONTEXT_10
 #, fuzzy
 msgid  "Searching for qualifying products"
-msgstr "නිශ්පාදන සොයමින් හා යෝග්‍ය කරමින්"
+msgstr "සුදුසු නිශ්පාදන සඳහා සොයන්න"
 
 #: inc_openoffice/windows/msi_languages/ActionTe.ulf#OOO_ACTIONTEXT_11
 #, fuzzy
 msgid  "Computing space requirements"
-msgstr "ඉඩ අවශ්‍යතා ගණනය කරමින්"
+msgstr "අවශ්‍ය ඉඩ ගණනය කරමින්"
 
 #: inc_openoffice/windows/msi_languages/ActionTe.ulf#OOO_ACTIONTEXT_12
 #, fuzzy
@@ -1138,7 +1138,7 @@ msgstr "බහාලුම් නිර්මානය කරමින්"
 #: inc_openoffice/windows/msi_languages/ActionTe.ulf#OOO_ACTIONTEXT_14
 #, fuzzy
 msgid  "Folder: [1]"
-msgstr "බහලුම: [1]"
+msgstr "බහාලුම: [1]"
 
 #: inc_openoffice/windows/msi_languages/ActionTe.ulf#OOO_ACTIONTEXT_15
 #, fuzzy
@@ -1148,7 +1148,7 @@ msgstr "කෙටිමං තනමින්"
 #: inc_openoffice/windows/msi_languages/ActionTe.ulf#OOO_ACTIONTEXT_16
 #, fuzzy
 msgid  "Shortcut: [1]"
-msgstr "කෙටිමං: [1]"
+msgstr "කෙටිමග: [1]"
 
 #: inc_openoffice/windows/msi_languages/ActionTe.ulf#OOO_ACTIONTEXT_17
 #, fuzzy
@@ -1293,7 +1293,7 @@ msgstr "යෝග්‍ය සංරචක පළකරන්න"
 #: inc_openoffice/windows/msi_languages/ActionTe.ulf#OOO_ACTIONTEXT_45
 #, fuzzy
 msgid  "Component ID: [1], Qualifier: [2]"
-msgstr "සංරචක ID: [1], සුදුසු: [2]"
+msgstr "සංරචක  ID: [1], යෝග්‍යකරනය: [2]"
 
 #: inc_openoffice/windows/msi_languages/ActionTe.ulf#OOO_ACTIONTEXT_46
 #, fuzzy
@@ -1318,7 +1318,7 @@ msgstr "පන්ති ධාරක ලියාපදිංචි කරමි
 #: inc_openoffice/windows/msi_languages/ActionTe.ulf#OOO_ACTIONTEXT_50
 #, fuzzy
 msgid  "Class ID: [1]"
-msgstr "පන්ති ID: [1]"
+msgstr "පන්ති අංකය: [1]"
 
 #: inc_openoffice/windows/msi_languages/ActionTe.ulf#OOO_ACTIONTEXT_51
 #, fuzzy
@@ -1348,7 +1348,7 @@ msgstr "ෆොන්ට ලියාපදිංචි කරමින්"
 #: inc_openoffice/windows/msi_languages/ActionTe.ulf#OOO_ACTIONTEXT_56
 #, fuzzy
 msgid  "Font: [1]"
-msgstr "ෆොන්ටය: [1]"
+msgstr "Font: [1]"
 
 #: inc_openoffice/windows/msi_languages/ActionTe.ulf#OOO_ACTIONTEXT_57
 #, fuzzy
@@ -1408,12 +1408,12 @@ msgstr "ගොනු අනුපිටපත් ඉවත් කරමින්
 #: inc_openoffice/windows/msi_languages/ActionTe.ulf#OOO_ACTIONTEXT_68
 #, fuzzy
 msgid  "File: [1], Directory: [9]"
-msgstr "ගොනුව: [1], ඩිරෙක්ටරිය: [9]"
+msgstr "ගොනුව: [1], බහලුම: [9]"
 
 #: inc_openoffice/windows/msi_languages/ActionTe.ulf#OOO_ACTIONTEXT_69
 #, fuzzy
 msgid  "Updating environment strings"
-msgstr "පරිසර සාධක යාවත්කාලීන කරමින්"
+msgstr "පරිසර සාධක යාවත්කාල කරමින්"
 
 #: inc_openoffice/windows/msi_languages/ActionTe.ulf#OOO_ACTIONTEXT_70
 #, fuzzy
@@ -1458,7 +1458,7 @@ msgstr "INI ගොනු ඇතුළත් කිරීම් ඉවත් ක�
 #: inc_openoffice/windows/msi_languages/ActionTe.ulf#OOO_ACTIONTEXT_78
 #, fuzzy
 msgid  "File: [1],  Section: [2],  Key: [3], Value: [4]"
-msgstr "ගොනුව: [1],  අංශය: [2],  යතුර: [3], අගය: [4]"
+msgstr "ගොනුව: [1], අංශය: [2],  යතුර: [3], අගය: [4]"
 
 #: inc_openoffice/windows/msi_languages/ActionTe.ulf#OOO_ACTIONTEXT_79
 #, fuzzy
@@ -1806,7 +1806,7 @@ msgstr "වසන්න"
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_5
 #, fuzzy
 msgid  "&Look in:"
-msgstr "බලන්න (&L)"
+msgstr "තුළ බලන්න (&L):"
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_6
 #, fuzzy
@@ -1816,7 +1816,7 @@ msgstr "ගමනාන්ත බහාලුම ගවේෂණය කරන්
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_7
 #, fuzzy
 msgid  "{&MSSansBold8}Change Current Destination Folder"
-msgstr "{&MSSansBold8} පවතින ගමනාන්ත බහාලුම වෙනස් කරන්න"
+msgstr "{&MSSansBold8} වත්මන් ගමනාන්ත බහාලුම වෙනස් කරන්න"
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_9
 #, fuzzy
@@ -1841,12 +1841,12 @@ msgstr "එක් මට්ටමක් ඉහලට|"
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_14
 #, fuzzy
 msgid  "< &Back"
-msgstr "< පසුපසට (&B)"
+msgstr "< ආපසු (&B)"
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_17
 #, fuzzy
 msgid  "&Change..."
-msgstr "වෙනස් කරන්න... (&C)"
+msgstr "මාරු කරන්න... (&C)"
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_18
 #, fuzzy
@@ -1896,7 +1896,7 @@ msgstr "මීලඟ > (&N)"
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_27
 #, fuzzy
 msgid  "{&TahomaBold10}Welcome to the Installation Wizard for [ProductName]"
-msgstr "{&TahomaBold10} [ProductName] හී ස්ථාපන විශෘරදය‌ට ආයුබෝවන්."
+msgstr "{&TahomaBold10} [ProductName] ස්ථාපන විශාරදය‌ වෙත සාදරයෙන් පිළිගනිමු."
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_28
 #, fuzzy
@@ -1986,7 +1986,7 @@ msgstr "වසන්න"
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_50
 #, fuzzy
 msgid  "&Change..."
-msgstr "වෙනස් කරන්න... (&C)"
+msgstr "මාරු කරන්න... (&C)"
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_51
 #, fuzzy
@@ -2111,7 +2111,7 @@ msgstr "වෙනස් කරන්න... (&C)"
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_79
 #, fuzzy
 msgid  "Click Next to install to this folder, or click Change to install to a different folder."
-msgstr "මෙම බහාලුමට ස්ථාපනය කිරීමට \"ඊළඟ\" හෝ වෙනත් ස්ථානයකට ස්ථාපනය සඳහා \"වෙනස්\" ක්ලික් කරන්න"
+msgstr "මෙම බහාළුමේ ස්ථාපනය කිරීමට මීලඟ ක්ලික් කරන්න, නැතහොත් වෙනස් කරන්න ක්ලික් කර වෙනත් බහාළුමක් තෝරන්න."
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_80
 #, fuzzy
@@ -2166,7 +2166,7 @@ msgstr "[INSTALLDIR]"
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_92
 #, fuzzy
 msgid  "Install [ProductName] to:"
-msgstr "[ProductName] යෙදුම ,වෙත ස්ථාපනය කරන්න: "
+msgstr "[ProductName] , වෙත ස්ථාපනය කරන්න:"
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_93
 #, fuzzy
@@ -2285,7 +2285,7 @@ msgstr "මීලඟ > (&N)"
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_126
 #, fuzzy
 msgid  "{&TahomaBold10}Welcome to the Installation Wizard for [ProductName]"
-msgstr "{&TahomaBold10} [ProductName] හී ස්ථාපන විශෘරදය‌ වෙත සාදරයෙන් පිළිගනිමු"
+msgstr "{&TahomaBold10} [ProductName] හී ස්ථාපන විශෘරදය‌ට ආයුබෝවන්."
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_127
 #, fuzzy
@@ -2525,7 +2525,7 @@ msgstr "වසන්න"
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_185
 #, fuzzy
 msgid  "&Finish"
-msgstr "අවසන් (&F)"
+msgstr "අවසන් කරන්න (&F)"
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_186
 #, fuzzy
@@ -2535,27 +2535,27 @@ msgstr "ඔබේ පද්ධතිය වෙනස වී නොමැත. ව
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_187
 #, fuzzy
 msgid  "Click Finish to exit the wizard."
-msgstr "විශාරදයෙන් පිටවීමට අවසන් ක්ලික් කරන්න"
+msgstr "විශාරදයෙන් පිටවීමට අවසන් කරන්න ක්ලික් කරන්න"
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_188
 #, fuzzy
 msgid  "You can either keep any existing installed elements on your system to continue this installation at a later time or you can restore your system to its original state prior to the installation."
-msgstr "ඔබට පසුව ස්ථාපනය නැවත ආරම්භ කිරීම සඳහා පවතින මූලාංග තබා ගැනීමට හෝ ඔබේ පද්ධතිය ස්ථාපනයට පෙර පැවති තත්වයට  ප්‍රතිස්ථාපනය කිරීමට  හැක"
+msgstr "ඔබට පසුව ස්ථාපනය නැවත ආරම්භ කිරීම සඳහා පවතින මූල තබා ගැනීමට හෝ බේ පද්ධතිය ස්ථාපනයට පෙර පැවති තත්වයට ප්‍රතිස්ථාපනය කිරීමට  හැක"
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_189
 #, fuzzy
 msgid  "Click Restore or Continue Later to exit the wizard."
-msgstr "විශාරදයෙන් ඉවත් වීමට \"ප්‍රතිස්ථාපනය කිරීම\" හෝ \"පසුව\" ක්ලික් කරන්න."
+msgstr "විශාරදයෙන් ඉවත් වීමට \"ප්‍රතිෂ්ඨාපනය කිරීම\" හෝ \"පසු අවස්ථාවක\" ක්ලික් කරන්න."
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_190
 #, fuzzy
 msgid  "{&TahomaBold10}Installation Wizard Completed"
-msgstr "{&TahomaBold10}ස්ථාපන විශාරදයසම්පූර්ණයි."
+msgstr "{&TahomaBold10}ස්ථාපන විශාරද සම්පූර්ණයි."
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_191
 #, fuzzy
 msgid  "The wizard was interrupted before [ProductName] could be completely installed."
-msgstr "[ProductName] සම්පූර්ණයෙන් ස්ථාපනය වීමට පෙර විශාරදයට බාධා විය."
+msgstr "[ProductName] සම්පූර්ණයෙන් ස්ථාපනය වීමට පෙර විශාරදයට බාදා පැමිණුනි."
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_192
 #, fuzzy

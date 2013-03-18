@@ -581,7 +581,7 @@ msgstr "Параграфын загварыг засах..."
 
 #: inc/globlmn_tmpl.hrc#SID_GROUP.#define.Text
 msgid  "~Group"
-msgstr "~Бүлэг"
+msgstr "~Бүлэглэх"
 
 #: inc/globlmn_tmpl.hrc#SID_UNGROUP.#define.Text
 msgid  "~Ungroup"
@@ -1905,7 +1905,7 @@ msgstr "Доод хил"
 
 #: source/dialog/frmsel.src#RID_SVXSTR_BORDER_CONTROL.ARR_TEXTS.5.ItemList.item
 msgid  "Horizontal border line"
-msgstr "Хэвтээ хилийн шулуун"
+msgstr "Хэвтээ шулуун"
 
 #: source/dialog/frmsel.src#RID_SVXSTR_BORDER_CONTROL.ARR_TEXTS.6.ItemList.item
 msgid  "Vertical border line"
@@ -2733,7 +2733,7 @@ msgstr "Ногоон"
 
 #: source/dialog/sdstring.src#RID_SVXSTR_CYAN.String.Text
 msgid  "Turquoise"
-msgstr "Оюу ногоон"
+msgstr "Оюу"
 
 #: source/dialog/sdstring.src#RID_SVXSTR_RED.String.Text
 msgid  "Red"
@@ -2797,7 +2797,7 @@ msgstr "Сум"
 
 #: source/dialog/sdstring.src#RID_SVXSTR_SQUARE.String.Text
 msgid  "Square"
-msgstr "Дөрвөлжин"
+msgstr "Квадрат"
 
 #: source/dialog/sdstring.src#RID_SVXSTR_CIRCLE.String.Text
 msgid  "Circle"
@@ -3909,23 +3909,23 @@ msgstr "3Х эффектүүд"
 
 #: source/engine3d/float3d.src#RID_SVXFLOAT_3D.BTN_GEO.ButtonImage.QuickHelpText
 msgid  "Geometry"
-msgstr "Geometry"
+msgstr "Геометр"
 
 #: source/engine3d/float3d.src#RID_SVXFLOAT_3D.BTN_REPRESENTATION.ButtonImage.QuickHelpText
 msgid  "Shading"
-msgstr "Shading"
+msgstr "Сүүдэрлэлт"
 
 #: source/engine3d/float3d.src#RID_SVXFLOAT_3D.BTN_LIGHT.ButtonImage.QuickHelpText
 msgid  "Illumination"
-msgstr "Illumination"
+msgstr "Гэрэлтүүлэг"
 
 #: source/engine3d/float3d.src#RID_SVXFLOAT_3D.BTN_TEXTURE.ButtonImage.QuickHelpText
 msgid  "Textures"
-msgstr "Textures"
+msgstr "Даавуулаг"
 
 #: source/engine3d/float3d.src#RID_SVXFLOAT_3D.BTN_MATERIAL.ButtonImage.QuickHelpText
 msgid  "Material"
-msgstr "Material"
+msgstr "Материал"
 
 #: source/engine3d/float3d.src#RID_SVXFLOAT_3D.BTN_UPDATE.ButtonImage.QuickHelpText
 msgid  "Update"
@@ -3993,7 +3993,7 @@ msgstr "Object-Specific"
 
 #: source/engine3d/float3d.src#RID_SVXFLOAT_3D.BTN_NORMALS_FLAT.ButtonImage.QuickHelpText
 msgid  "Flat"
-msgstr "Хавтгай"
+msgstr "Flat"
 
 #: source/engine3d/float3d.src#RID_SVXFLOAT_3D.BTN_NORMALS_SPHERE.ButtonImage.QuickHelpText
 msgid  "Spherical"
@@ -4997,7 +4997,7 @@ msgstr "Тэг ~биш"
 
 #: source/form/datanavi.src#RID_SVX_XFORMS_TABPAGES.TB_ITEMS.TBI_ITEM_ADD.ToolBoxItem.Text
 msgid  "Add Item"
-msgstr "Элемент нэмэх"
+msgstr "Зүйл нэмэх"
 
 #: source/form/datanavi.src#RID_SVX_XFORMS_TABPAGES.TB_ITEMS.TBI_ITEM_ADD_ELEMENT.ToolBoxItem.Text
 msgid  "Add Element"
@@ -5453,7 +5453,7 @@ msgstr "Галерей"
 
 #: source/gallery2/gallery.src#RID_SVXSTR_GALLERY_ACTUALIZE_PROGRESS.String.Text
 msgid  "Update"
-msgstr "Шинэчлэх"
+msgstr "Шинэчлэл"
 
 #: source/gallery2/gallery.src#RID_SVXSTR_GALLERY_FOPENERROR.String.Text
 msgid  "This file cannot be opened"
@@ -5997,7 +5997,7 @@ msgstr "Хуудас"
 
 #: source/items/svxitems.src#RID_ATTR_NAMES.SID_ATTR_PARA_MODEL.ItemList.item
 msgid  "Page Style"
-msgstr "Хуудасны хэлбэр"
+msgstr "Хуудасны загвар"
 
 #: source/items/svxitems.src#RID_ATTR_NAMES.SID_ATTR_PARA_KEEP.ItemList.item
 msgid  "Keep with next paragraph"
@@ -6917,7 +6917,7 @@ msgstr "дүрслэл объект"
 
 #: source/svdraw/svdstr.src#STR_ObjNamePluralNONE.String.Text
 msgid  "draw objects"
-msgstr "- дүрслэл объект -"
+msgstr "дүрслэл объект"
 
 #: source/svdraw/svdstr.src#STR_ObjNameSingulGRUP.String.Text
 msgid  "group object"
@@ -7513,7 +7513,7 @@ msgstr "%1-н дарааллыг тонгоруулах"
 
 #: source/svdraw/svdstr.src#STR_EditMove.String.Text
 msgid  "Move %1"
-msgstr "%1-г шилжүүлэх"
+msgstr "%1-г зөөх"
 
 #: source/svdraw/svdstr.src#STR_EditResize.String.Text
 msgid  "Resize %1"
@@ -7525,23 +7525,23 @@ msgstr "%1-г эргүүлэх"
 
 #: source/svdraw/svdstr.src#STR_EditMirrorHori.String.Text
 msgid  "Flip %1 horizontal"
-msgstr "%1-г хэвтээгээр эргүүлэх"
+msgstr "%1-г хэвтээгээр урвуулах"
 
 #: source/svdraw/svdstr.src#STR_EditMirrorVert.String.Text
 msgid  "Flip %1 vertical"
-msgstr "%1-г босоогоор эргүүлэх"
+msgstr "%1-г босоогоор урвуулах"
 
 #: source/svdraw/svdstr.src#STR_EditMirrorDiag.String.Text
 msgid  "Flip %1 diagonal"
-msgstr "%1-г диагоналиар эргүүлэх"
+msgstr "%1-г диагоналиар урвуулах"
 
 #: source/svdraw/svdstr.src#STR_EditMirrorFree.String.Text
 msgid  "Flip %1 freehand"
-msgstr "%1-г чөлөөтэйгээр эргүүлэх"
+msgstr "%1 -г чөлөөтэйгээр урвуулах"
 
 #: source/svdraw/svdstr.src#STR_EditShear.String.Text
 msgid  "Distort %1 (slant)"
-msgstr "%1-г хазайлгах (ташуу болгох)"
+msgstr "%1-г хазайлгах (ташуу)"
 
 #: source/svdraw/svdstr.src#STR_EditCrook.String.Text
 msgid  "Arrange %1 in circle"
@@ -7957,7 +7957,7 @@ msgstr "Залгаатай"
 
 #: source/svdraw/svdstr.src#STR_ItemValOFF.String.Text
 msgid  "off"
-msgstr "идэвхгүй"
+msgstr "Салгаатай"
 
 #: source/svdraw/svdstr.src#STR_ItemValYES.String.Text
 msgid  "yes"
@@ -8313,7 +8313,7 @@ msgstr "Гамма"
 
 #: source/svdraw/svdstr.src#STR_ItemNam_GRAFTRANSPARENCE.String.Text
 msgid  "Transparency"
-msgstr "Тунгалаг"
+msgstr "Тунгалагжилт"
 
 #: source/svdraw/svdstr.src#STR_ItemNam_GRAFINVERT.String.Text
 msgid  "Invert"
@@ -8481,7 +8481,7 @@ msgstr "Битмап дүүргэлт"
 
 #: source/svdraw/svdstr.src#SIP_XA_FILLTRANSPARENCE.String.Text
 msgid  "Transparency"
-msgstr "Тунгалагжилт"
+msgstr "Тунгалаг"
 
 #: source/svdraw/svdstr.src#SIP_XA_GRADIENTSTEPCOUNT.String.Text
 msgid  "Number of gradient steps"
@@ -10033,8 +10033,8 @@ msgstr ""
 
 #: source/unodialogs/textconversiondlgs/chinese_direction_tmpl.hrc#DIRECTION_RADIOBUTTONS( D_XPOS, D_YPOS, D_FULLWIDTH ).RB_TO_SIMPLIFIED.RadioButton.Text
 msgid  "~Traditional Chinese to simplified Chinese"
-msgstr "~Уламжлалт хятад хэлнээс хялбаршуулсан хятад хэл рүү"
+msgstr ""
 
 #: source/unodialogs/textconversiondlgs/chinese_direction_tmpl.hrc#DIRECTION_RADIOBUTTONS( D_XPOS, D_YPOS, D_FULLWIDTH ).RB_TO_TRADITIONAL.RadioButton.Text
 msgid  "~Simplified Chinese to traditional Chinese"
-msgstr "~Хялбаршуулсан хятад хэлнээс уламжлалт хятад хэл рүү"
+msgstr ""

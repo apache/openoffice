@@ -225,7 +225,7 @@ msgstr "Sumă - "
 
 #: source/ui/dbgui/pivot.src#RID_SCDLG_PIVOT_LAYOUT.PIVOTSTR_COUNT.String.Text
 msgid  "Count - "
-msgstr "Numără"
+msgstr "Numără -"
 
 #: source/ui/dbgui/pivot.src#RID_SCDLG_PIVOT_LAYOUT.PIVOTSTR_AVG.String.Text
 msgid  "Mean - "
@@ -1773,7 +1773,7 @@ msgstr "Navigator"
 
 #: source/ui/navipi/navipi.src#RID_SCDLG_NAVIGATOR.FT_ROW.FixedText.Text
 msgid  "Row"
-msgstr "Row"
+msgstr "Rând"
 
 #: source/ui/navipi/navipi.src#RID_SCDLG_NAVIGATOR.ED_ROW.NumericField.QuickHelpText
 msgid  "Row"
@@ -1781,7 +1781,7 @@ msgstr "Row"
 
 #: source/ui/navipi/navipi.src#RID_SCDLG_NAVIGATOR.FT_COL.FixedText.Text
 msgid  "Column"
-msgstr "Column"
+msgstr "Coloană"
 
 #: source/ui/navipi/navipi.src#RID_SCDLG_NAVIGATOR.ED_COL.SpinField.QuickHelpText
 msgid  "Column"
@@ -1817,7 +1817,7 @@ msgstr "Scenarii"
 
 #: source/ui/navipi/navipi.src#RID_SCDLG_NAVIGATOR.TBX_CMD.IID_DROPMODE.ToolBoxItem.Text
 msgid  "Drag Mode"
-msgstr "Mod tragere"
+msgstr "Mod Tragere"
 
 #: source/ui/navipi/navipi.src#RID_SCDLG_NAVIGATOR.STR_DRAGMODE.String.Text
 msgid  "Drag Mode"
@@ -1917,7 +1917,7 @@ msgstr "Interval de tipărit"
 
 #: source/ui/pagedlg/pagedlg.src#RID_SCDLG_AREAS.LB_PRINTAREA.Default.StringList.item
 msgid  "- none -"
-msgstr "Nimic"
+msgstr "- nimic -"
 
 #: source/ui/pagedlg/pagedlg.src#RID_SCDLG_AREAS.LB_PRINTAREA.Default.StringList.item
 msgid  "- entire sheet -"
@@ -1925,7 +1925,7 @@ msgstr "-toată foaia-"
 
 #: source/ui/pagedlg/pagedlg.src#RID_SCDLG_AREAS.LB_PRINTAREA.Default.StringList.item
 msgid  "- user defined -"
-msgstr " - definit de utilizator -"
+msgstr "- definit de utilizator -"
 
 #: source/ui/pagedlg/pagedlg.src#RID_SCDLG_AREAS.LB_PRINTAREA.Default.StringList.item
 msgid  "- selection -"
@@ -1945,7 +1945,7 @@ msgstr "- nimic -"
 
 #: source/ui/pagedlg/pagedlg.src#RID_SCDLG_AREAS.LB_REPEATROW.Default.StringList.item
 msgid  "- user defined -"
-msgstr "Definit de utilizator"
+msgstr " - definit de utilizator -"
 
 #: source/ui/pagedlg/pagedlg.src#RID_SCDLG_AREAS.RB_REPEATROW.ImageButton.QuickHelpText
 msgid  "Shrink"
@@ -2117,7 +2117,7 @@ msgstr "Text Attributes"
 
 #: source/ui/pagedlg/hfedtdlg.src#RID_HFBASE.BTN_FILE.ImageButton.QuickHelpText
 msgid  "Title"
-msgstr "Titlu"
+msgstr "Title"
 
 #: source/ui/pagedlg/hfedtdlg.src#RID_HFBASE.RID_POPUP_FCOMMAND.FILE_COMMAND_TITEL.MenuItem.Text
 msgid  "Title"
@@ -3269,7 +3269,7 @@ msgstr "Inserarea în selecții multiple imposibilă"
 
 #: source/ui/src/globstr.src#RID_GLOBSTR.STR_MSSG_PASTEFROMCLIP_1.String.Text
 msgid  "Cell merge not possible if cells already merged!"
-msgstr "Fuziunea celulelor nu este posibilă dacă acestea sunt deja unite!"
+msgstr "Fuzionarea celulelor nu este posibilă dacă celulele au fost deja unite! "
 
 #: source/ui/src/globstr.src#RID_GLOBSTR.STR_MSSG_MOVEBLOCKTO_0.String.Text
 msgid  "Cell merge not possible if cells already merged!"
@@ -3837,7 +3837,7 @@ msgstr "Editare funcție"
 
 #: source/ui/src/globstr.src#RID_GLOBSTR.STR_NOTES.String.Text
 msgid  "Comments"
-msgstr "Note"
+msgstr "Comentarii"
 
 #: source/ui/src/globstr.src#RID_GLOBSTR.STR_QUERY_DELTAB.String.Text
 msgid  "Are you sure you want to delete the selected sheet(s)?"
@@ -4741,35 +4741,35 @@ msgstr "Valoare"
 
 #: source/ui/src/filter.src#RID_SCDLG_FILTER.LB_OP1.Default.StringList.item
 msgid  "AND"
-msgstr "ȘI"
+msgstr "AND"
 
 #: source/ui/src/filter.src#RID_SCDLG_FILTER.LB_OP1.Default.StringList.item
 msgid  "OR"
-msgstr "SAU"
+msgstr "OR"
 
 #: source/ui/src/filter.src#RID_SCDLG_FILTER.LB_OP2.Default.StringList.item
+msgid  "AND"
+msgstr "AND"
+
+#: source/ui/src/filter.src#RID_SCDLG_FILTER.LB_OP2.Default.StringList.item
+msgid  "OR"
+msgstr "OR"
+
+#: source/ui/src/filter.src#RID_SCDLG_FILTER.LB_OP3.Default.StringList.item
 msgid  "AND"
 msgstr "ȘI"
 
-#: source/ui/src/filter.src#RID_SCDLG_FILTER.LB_OP2.Default.StringList.item
+#: source/ui/src/filter.src#RID_SCDLG_FILTER.LB_OP3.Default.StringList.item
 msgid  "OR"
 msgstr "SAU"
 
-#: source/ui/src/filter.src#RID_SCDLG_FILTER.LB_OP3.Default.StringList.item
-msgid  "AND"
-msgstr "AND"
-
-#: source/ui/src/filter.src#RID_SCDLG_FILTER.LB_OP3.Default.StringList.item
-msgid  "OR"
-msgstr "OR"
-
 #: source/ui/src/filter.src#RID_SCDLG_FILTER.LB_OP4.Default.StringList.item
 msgid  "AND"
-msgstr "AND"
+msgstr "ȘI"
 
 #: source/ui/src/filter.src#RID_SCDLG_FILTER.LB_OP4.Default.StringList.item
 msgid  "OR"
-msgstr "OR"
+msgstr "SAU"
 
 #: source/ui/src/filter.src#RID_SCDLG_FILTER.LB_COND1.Default.stringlist.item
 msgid  "="
@@ -4805,11 +4805,11 @@ msgstr "Cel mai mic"
 
 #: source/ui/src/filter.src#RID_SCDLG_FILTER.LB_COND1.Default.stringlist.item
 msgid  "Largest %"
-msgstr "Cel mai mare"
+msgstr "Cel mai mare %"
 
 #: source/ui/src/filter.src#RID_SCDLG_FILTER.LB_COND1.Default.stringlist.item
 msgid  "Smallest %"
-msgstr "Cel mai mic"
+msgstr "Cel mai mic %"
 
 #: source/ui/src/filter.src#RID_SCDLG_FILTER.LB_COND1.Default.stringlist.item
 msgid  "Contains"
@@ -4869,11 +4869,11 @@ msgstr "Cel mai mic"
 
 #: source/ui/src/filter.src#RID_SCDLG_FILTER.LB_COND2.Default.stringlist.item
 msgid  "Largest %"
-msgstr "Cel mai mare %"
+msgstr "Cel mai mare"
 
 #: source/ui/src/filter.src#RID_SCDLG_FILTER.LB_COND2.Default.stringlist.item
 msgid  "Smallest %"
-msgstr "Cel mai mic %"
+msgstr "Cel mai mic"
 
 #: source/ui/src/filter.src#RID_SCDLG_FILTER.LB_COND2.Default.stringlist.item
 msgid  "Contains"
@@ -5029,7 +5029,7 @@ msgstr "Nu se termină cu"
 
 #: source/ui/src/filter.src#RID_SCDLG_FILTER.FL_CRITERIA.FixedLine.Text
 msgid  "Filter criteria"
-msgstr "Păstrează criteriile de filtrare"
+msgstr "Criterii de filtrare"
 
 #: source/ui/src/filter.src#RID_SCDLG_FILTER.BTN_CASE.CheckBox.Text
 msgid  "Case ~sensitive"
@@ -5285,7 +5285,7 @@ msgstr "Bază de date"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_DB_COUNT.3.String.Text
 msgid  "The range of cells containing data."
-msgstr "Intervalul de celule ce conțin datele  "
+msgstr "Intervalul de celule ce conțin datele"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_DB_COUNT.4.String.Text
 msgid  "Database field"
@@ -5313,7 +5313,7 @@ msgstr "Bază de date"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_DB_COUNT_2.3.String.Text
 msgid  "The range of cells containing data."
-msgstr "Intervalul de celule ce conțin datele"
+msgstr "Intervalul de celule ce conțin datele  "
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_DB_COUNT_2.4.String.Text
 msgid  "Database field"
@@ -5625,7 +5625,7 @@ msgstr "Un întreg cuprin între 1583 și 9956 sau între 0 și 99 (19xx sau 20x
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_GET_DATE.4.String.Text
 msgid  "month"
-msgstr "luna"
+msgstr "lună"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_GET_DATE.5.String.Text
 msgid  "An integer between 1 and 12 representing the month."
@@ -5645,7 +5645,7 @@ msgstr "Întoarce un număr intern pentru un text cu un format posibil da dată.
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_GET_DATE_VALUE.2.String.Text
 msgid  "text"
-msgstr "text"
+msgstr "date_text"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_GET_DATE_VALUE.3.String.Text
 msgid  "A text enclosed in quotation marks which returns a date in a %PRODUCTNAME date format."
@@ -5657,11 +5657,11 @@ msgstr "Întoarce data secvențială a lunii ca întreg (1-31) în relația cu v
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_GET_DAY.2.String.Text
 msgid  "Number"
-msgstr "număr"
+msgstr "Număr"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_GET_DAY.3.String.Text
 msgid  "The internal number for the date."
-msgstr "Numărul intern al datei"
+msgstr "Numărul intern al datei."
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_GET_DIFF_DATE_360.1.String.Text
 msgid  "Calculates the number of days between two dates based on a 360-day year."
@@ -5673,7 +5673,7 @@ msgstr ""
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_GET_DIFF_DATE_360.3.String.Text
 msgid  "The start date for calculating the difference in days."
-msgstr "Data de început pentru calculul diferenței în zile."
+msgstr "Data de început pentu calculul diferenței în zile."
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_GET_DIFF_DATE_360.4.String.Text
 msgid  "Date_2"
@@ -5681,7 +5681,7 @@ msgstr ""
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_GET_DIFF_DATE_360.5.String.Text
 msgid  "The end date for calculating the difference in days."
-msgstr "Data de sfârșit pentru calcularea diferenței în zile."
+msgstr "Data de final pentru calculul diferenței în zile"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_GET_DIFF_DATE_360.6.String.Text
 msgid  "Type"
@@ -5725,7 +5725,7 @@ msgstr "Număr"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_GET_MONTH.3.String.Text
 msgid  "The internal number of the date."
-msgstr "Numărul intern al datei"
+msgstr "Numărul intern al datei."
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_GET_ACT_TIME.1.String.Text
 msgid  "Determines the current time of the computer."
@@ -5913,7 +5913,7 @@ msgstr "Tip"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_BW.11.String.Text
 msgid  "Type = 1 denotes due at the beginning of the period, = 0 at the end."
-msgstr "Tip = 1 indică cuvenit la începutul perioadei, 0 loa sfârșit."
+msgstr "Type = 1 semnifică începutul intervalului, = 0 semnifică sfârșitul acestuia."
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_ZW.1.String.Text
 msgid  "Future value. Returns the future value of an investment based on regular payments and a constant interest rate."
@@ -5925,7 +5925,7 @@ msgstr "Rată"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_ZW.3.String.Text
 msgid  "The rate of interest per period."
-msgstr "Rata dobânzii pe perioadă"
+msgstr "Rata dobânzii pe perioadă."
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_ZW.4.String.Text
 msgid  "NPER"
@@ -5933,7 +5933,7 @@ msgstr ""
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_ZW.5.String.Text
 msgid  "Payment period. The total number of periods in which the annuity (pension) is paid."
-msgstr "Perioada de plată. Numărul total de perioade în care este plătită anuitatea"
+msgstr "Perioada de plată. Numărul total de perioade în care este plătită anuitatea."
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_ZW.6.String.Text
 msgid  "PMT"
@@ -5941,7 +5941,7 @@ msgstr ""
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_ZW.7.String.Text
 msgid  "Regular payments. The constant annuity to be paid in each period."
-msgstr "Plăți regulate. Anuitatea constantă de plătă pentru fiecare perioadă."
+msgstr "Plăți regulate. Anuitatea constantă care trebui plătită în fiecare perioadă."
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_ZW.8.String.Text
 msgid  "PV"
@@ -5949,7 +5949,7 @@ msgstr ""
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_ZW.9.String.Text
 msgid  "Present value. The current value of a series of payments"
-msgstr "Valoare prezentă. Valoarea curentă a unei serii de plăți."
+msgstr "Valoare prezentă. Valoarea curentă a unei serii de plăți"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_ZW.10.String.Text
 msgid  "Type"
@@ -5957,7 +5957,7 @@ msgstr "Tip"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_ZW.11.String.Text
 msgid  "Type = 1 denotes due at the beginning of the period, = 0 at the end."
-msgstr "Tip = 1 indică cuvenit la începutul perioadei, 0 la sfârșit."
+msgstr "Tip = 1 indică cuvenit la începutul perioadei, 0 loa sfârșit."
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_ZZR.1.String.Text
 msgid  "Payment period. Calculates the number of payment periods for an investment based on regular payments and a constant interest rate."
@@ -5969,7 +5969,7 @@ msgstr "Rată"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_ZZR.3.String.Text
 msgid  "The rate of interest per period."
-msgstr "Rata dobânzii pe perioadă."
+msgstr "Rata dobânzii pe perioadă"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_ZZR.4.String.Text
 msgid  "PMT"
@@ -5977,7 +5977,7 @@ msgstr ""
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_ZZR.5.String.Text
 msgid  "Regular payments. The constant annuity to be paid in each period."
-msgstr "Plăți regulate. Anuitatea constantă care trebuie plătită în fiecare perioadă."
+msgstr "Plăți regulate. Anuitatea constantă de plătă pentru fiecare perioadă."
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_ZZR.6.String.Text
 msgid  "PV"
@@ -5985,7 +5985,7 @@ msgstr ""
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_ZZR.7.String.Text
 msgid  "Present value. The current value of a series of payments"
-msgstr "Valorea prezentă. Valoarea curentă a unei serii de plăți."
+msgstr "Valoare prezentă. Valoarea curentă a unei serii de plăți."
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_ZZR.8.String.Text
 msgid  "FV"
@@ -5993,7 +5993,7 @@ msgstr ""
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_ZZR.9.String.Text
 msgid  "Future value. The value (end value) to be attained after the final payment."
-msgstr "Valoare viitoare. Valoarea (finală) care va fi atinsă după ultima plată."
+msgstr "Valoare viitoare. Valoarea (finală) care va fi obținută după plata finală."
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_ZZR.10.String.Text
 msgid  "Type"
@@ -6001,7 +6001,7 @@ msgstr "Tip"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_ZZR.11.String.Text
 msgid  "Type = 1 denotes due at the beginning of the period, = 0 at the end."
-msgstr "Tip = 1 indică cuvenit la începutul perioadei, 0 la sfârțit."
+msgstr "Tip = 1 indică cuvenit la începutul perioadei, 0 la sfârșit."
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_RMZ.1.String.Text
 msgid  "Regular payments. Returns the periodic payment of an annuity, based on regular payments and a fixed periodic interest rate."
@@ -6013,7 +6013,7 @@ msgstr "Rată"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_RMZ.3.String.Text
 msgid  "The rate of interest per period."
-msgstr "Rata dobânzii per perioadă"
+msgstr "Rata dobânzii pe perioadă"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_RMZ.4.String.Text
 msgid  "NPER"
@@ -6021,7 +6021,7 @@ msgstr ""
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_RMZ.5.String.Text
 msgid  "Payment period. The total number of periods in which the annuity (pension) is paid."
-msgstr "Perioada de plată. Numărul total de perioade în care este plătită anuitatea."
+msgstr "Perioada de plată. Numărul total de perioade în care este plătită anuitatea"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_RMZ.6.String.Text
 msgid  "PV"
@@ -6029,7 +6029,7 @@ msgstr ""
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_RMZ.7.String.Text
 msgid  "Present value. The current value of a series of payments"
-msgstr "Valoarea curentă. Valoarea curentă dintr-o serie de plăți"
+msgstr "Valorea prezentă. Valoarea curentă a unei serii de plăți."
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_RMZ.8.String.Text
 msgid  "FV"
@@ -6037,7 +6037,7 @@ msgstr ""
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_RMZ.9.String.Text
 msgid  "Future value. The value (end value) to be attained after the final payment."
-msgstr "Valoare viitoare. Valoarea finală de obținut după ultima plată."
+msgstr "Valoare viitoare. Valoarea (finală) care va fi atinsă după ultima plată."
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_RMZ.10.String.Text
 msgid  "Type"
@@ -6045,7 +6045,7 @@ msgstr "Tip"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_RMZ.11.String.Text
 msgid  "Type = 1 denotes due at the beginning of the period, = 0 at the end."
-msgstr "Tip = 1 indică cuvenit la începutul perioadei, 0 la sfârșit."
+msgstr "Tip = 1 indică cuvenit la începutul perioadei, 0 la sfârțit."
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_ZINS.1.String.Text
 msgid  "Calculates the constant interest rate of an investment with regular payments."
@@ -6073,7 +6073,7 @@ msgstr ""
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_ZINS.7.String.Text
 msgid  "Present value. The current value of a series of payments"
-msgstr "Valoarea prezentă. Valorea curentă a unei serii de plăți."
+msgstr "Valoarea curentă. Valoarea curentă dintr-o serie de plăți"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_ZINS.8.String.Text
 msgid  "FV"
@@ -6089,7 +6089,7 @@ msgstr "Tip"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_ZINS.11.String.Text
 msgid  "Type = 1 denotes due at the beginning of the period, = 0 at the end."
-msgstr "Tip = 1 indică cuvenit la îmnceputul perioadei, 0 - la sfârșit."
+msgstr "Tip = 1 indică cuvenit la începutul perioadei, 0 la sfârțit."
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_ZINS.12.String.Text
 msgid  "Guess"
@@ -6109,7 +6109,7 @@ msgstr "Rată"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_ZINS_Z.3.String.Text
 msgid  "The rate of interest per period."
-msgstr "Rata dobânzii pe perioadă"
+msgstr "Rata dobânzii pe perioadă."
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_ZINS_Z.4.String.Text
 msgid  "Period"
@@ -6149,7 +6149,7 @@ msgstr "Tip"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_ZINS_Z.13.String.Text
 msgid  "Type = 1 denotes due at the beginning of the period, = 0 at the end."
-msgstr "Tip = 1 indică cuvenit la începtutul perioadei, 0 - la sfârșit."
+msgstr "Tip = 1 indică cuvenit la începutul perioadei, 0 la sfârțit."
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_KAPZ.1.String.Text
 msgid  "Repayment. Calculates the repayment amount for a period for an investment whereby the payments are at regular intervals and the interest rate constant."
@@ -6185,7 +6185,7 @@ msgstr ""
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_KAPZ.9.String.Text
 msgid  "The present value. The present value or the amount the annuity is currently worth."
-msgstr "Valoarea prezentă. Valoarea prezentă sau valoarea curentă a anuității. "
+msgstr "Valoarea actuală. Valoarea actuală sau suma pe care valoareză anuitatea în prezent"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_KAPZ.10.String.Text
 msgid  "FV"
@@ -6229,7 +6229,7 @@ msgstr ""
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_KUM_KAP_Z.7.String.Text
 msgid  "The present value. The present value or the amount the annuity is currently worth."
-msgstr "Valoarea prezentă. Valoarea prezentă sau suma curentă a anuității."
+msgstr "Valoarea prezentă. Valoarea prezentă sau valoarea curentă a anuității. "
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_KUM_KAP_Z.8.String.Text
 msgid  "S"
@@ -6237,7 +6237,7 @@ msgstr "S"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_KUM_KAP_Z.9.String.Text
 msgid  "The start period. The first period to be taken into account. A = 1 denotes the very first period."
-msgstr "Perioada de start. Prima perioadă luată în considerare. A = 1 indică prima paerioadă. "
+msgstr "Perioada de început. Prima perioadă de luat în calcul. A = 1 denotă prima perioadă."
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_KUM_KAP_Z.10.String.Text
 msgid  "E"
@@ -6317,7 +6317,7 @@ msgstr "Cost"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_DIA.3.String.Text
 msgid  "Acquisition costs. The initial cost of the asset."
-msgstr "Cost de achiziție. Cosul inițial al activului."
+msgstr "Costuri de achizitie. Costul inițial al activului"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_DIA.4.String.Text
 msgid  "Salvage"
@@ -6325,7 +6325,7 @@ msgstr "Valoare reziduală"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_DIA.5.String.Text
 msgid  "Salvage: The remaining value of the asset at the end of its life."
-msgstr "Valoare reziduală. Valoarea rămasă a activului la sfârșitul vieții sale."
+msgstr "Valoare reziduală: Valoarea care rămâne la sfârșitul perioadei de amortizare a activului."
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_DIA.6.String.Text
 msgid  "Life"
@@ -6333,7 +6333,7 @@ msgstr "Viață"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_DIA.7.String.Text
 msgid  "Useful life. The number of periods in the useful life of the asset."
-msgstr "Perioada de amortizare. Numărul de perioade de amortizare ale activului."
+msgstr "Perioada de amortizare. Numărul de perioade în care se amortizează activul."
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_DIA.8.String.Text
 msgid  "Period"
@@ -6361,7 +6361,7 @@ msgstr "Valoare reziduală"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_LIA.5.String.Text
 msgid  "Salvage: The remaining value of the asset at the end of its life."
-msgstr "Valoare reziduală: Valoarea rămasă a activului la sfârșitul vieții sale."
+msgstr "Valoare reziduală. Valoarea rămasă a activului la sfârșitul vieții sale."
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_LIA.6.String.Text
 msgid  "Life"
@@ -6369,7 +6369,7 @@ msgstr "Viață"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_LIA.7.String.Text
 msgid  "Useful life. The number of periods in the useful life of the asset."
-msgstr "Durata de amortizare. Numărul de perioade din viața utilă a activului."
+msgstr "Perioada de amortizare. Numărul de perioade de amortizare ale activului."
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_GDA.1.String.Text
 msgid  "Calculates the depreciation of an asset for a specific period using the double-declining balance method or declining balance factor."
@@ -6389,7 +6389,7 @@ msgstr "Valoare reziduală"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_GDA.5.String.Text
 msgid  "Salvage: The remaining value of the asset at the end of its life."
-msgstr "Valoarea reziduală: valoarea activului la sfârșitul vieții sale. "
+msgstr "Valoare reziduală: Valoarea rămasă a activului la sfârșitul vieții sale."
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_GDA.6.String.Text
 msgid  "Life"
@@ -6397,7 +6397,7 @@ msgstr "Viață"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_GDA.7.String.Text
 msgid  "Useful life. The number of periods in the useful life of the asset."
-msgstr "Durata de amortizare. Numărul de perioade din viața utilă a activului."
+msgstr "Perioada de amortizare. Numărul de perioade de amortizare ale activului."
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_GDA.8.String.Text
 msgid  "Period"
@@ -6689,7 +6689,7 @@ msgstr ""
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_LAUFZ.7.String.Text
 msgid  "The future value of the investment."
-msgstr "Valoare incorectă a atributului"
+msgstr "Valoarea viitoare a investiției"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_ZGZ.1.String.Text
 msgid  "Interest. Calculates the interest rate which represents the rate of return from an investment."
@@ -6833,7 +6833,7 @@ msgstr "Întoarce TRUE dacă celula este o celulă cu formule."
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_IS_FORMULA.2.String.Text
 msgid  "reference"
-msgstr "La referință"
+msgstr "referință"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_IS_FORMULA.3.String.Text
 msgid  "The cell to be checked."
@@ -7089,7 +7089,7 @@ msgstr "criterii"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_SUM_IF.5.String.Text
 msgid  "The cell range in which the search criteria are given."
-msgstr "Intervalul de celule în care sunt date criteriile de căutare."
+msgstr "Intervalul celulelor în care sunt introduse criteriile de căutare."
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_SUM_IF.6.String.Text
 msgid  "sum_range"
@@ -7229,7 +7229,7 @@ msgstr "Întoarce rădăcina pătrată unui număr."
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_SQRT.2.String.Text
 msgid  "number"
-msgstr "Număr"
+msgstr "număr"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_SQRT.3.String.Text
 msgid  "A positive value for which the square root is to be calculated."
@@ -7609,7 +7609,7 @@ msgstr "Număr"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_LOG.3.String.Text
 msgid  "A value greater than 0 for which the logarithm is to be calculated."
-msgstr "O valoare pozitivă căreia i se calculează logaritmul."
+msgstr "O valoare mai mare ca 0 pentru care trebuie calculat logaritmul."
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_LOG.4.String.Text
 msgid  "Base"
@@ -7757,7 +7757,7 @@ msgstr ""
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_ROUND.5.String.Text
 msgid  "The number of places to which a number is to be rounded."
-msgstr "Numărul de poziții până la care e rotunjit un număr."
+msgstr "Numărul de zecimale la care numărul va fi rotunjit."
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_ROUND_UP.1.String.Text
 msgid  "Rounds a number up to the predefined accuracy."
@@ -7769,7 +7769,7 @@ msgstr "număr"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_ROUND_UP.3.String.Text
 msgid  "The number to be rounded up."
-msgstr "Numărul care trebui rotunjit în plus."
+msgstr "Numărul care trebuie rotunjit în plus."
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_ROUND_UP.4.String.Text
 msgid  "count"
@@ -7809,7 +7809,7 @@ msgstr "Număr"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_EVEN.3.String.Text
 msgid  "The number to be rounded up."
-msgstr "Numărul care trebuie rotunjit în plus. "
+msgstr "Numărul care trebui rotunjit în plus."
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_ODD.1.String.Text
 msgid  "Rounds a positive number up and negative number down to the nearest odd integer."
@@ -7821,7 +7821,7 @@ msgstr "Număr"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_ODD.3.String.Text
 msgid  "The number to be rounded up."
-msgstr "Numărul de rotunjit."
+msgstr "Numărul care trebuie rotunjit în plus. "
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_CEIL.1.String.Text
 msgid  "Rounds a number up to the nearest multiple of significance."
@@ -7993,7 +7993,7 @@ msgstr ""
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_SUM_X2MY2.3.String.Text
 msgid  "First array where the square of the arguments are totalled."
-msgstr "Prima matrice din cele cărora li se însumează pătratele argumentelor. "
+msgstr "Prima matrice căreia i se însumează pătratele argumentelor"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_SUM_X2MY2.4.String.Text
 msgid  "array_y"
@@ -8073,7 +8073,7 @@ msgstr "data_Y"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_RGP.3.String.Text
 msgid  "The Y data array."
-msgstr "Vectorul de date"
+msgstr "Vectorul de date Y"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_RGP.4.String.Text
 msgid  "data_X"
@@ -8081,7 +8081,7 @@ msgstr "data_X"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_RGP.5.String.Text
 msgid  "The X data array."
-msgstr "Vectorul de date X."
+msgstr "Vectorul de date X"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_RGP.6.String.Text
 msgid  "Linear_type"
@@ -8089,7 +8089,7 @@ msgstr ""
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_RGP.7.String.Text
 msgid  "If type = 0 the linears will be calculated through the zero point, or else moved linears."
-msgstr "Dacă tipul este 0, atunci linearii se vor calcula prin punctul zero, altfel vor fi deplasați."
+msgstr "Dacă type = 0 graficul funcției va fi calculat prin punctul zero, sau altfel va fi deplasat."
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_RGP.8.String.Text
 msgid  "stats"
@@ -8097,7 +8097,7 @@ msgstr "statistici"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_RGP.9.String.Text
 msgid  "If parameter = 0 then only the regression coefficient will be calculated, otherwise other values as well."
-msgstr "Dacă parametrul este 0, atunci se calculează doar coeficientul de regresie,altfel se calculează și celealte valori. "
+msgstr "Dacă parametrul = 0 atunci doar coeficientul de regresie va fi calculat, altfel el va fi calculat și pentru alte valori."
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_RKP.1.String.Text
 msgid  "Calculates the parameters of the exponential regression curve as an array."
@@ -8109,7 +8109,7 @@ msgstr ""
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_RKP.3.String.Text
 msgid  "The Y data array."
-msgstr "Vectorul de date Y"
+msgstr "Vectorul de date"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_RKP.4.String.Text
 msgid  "data_X"
@@ -8117,7 +8117,7 @@ msgstr ""
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_RKP.5.String.Text
 msgid  "The X data array."
-msgstr "Vectorul de date"
+msgstr "Vectorul de date X"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_RKP.6.String.Text
 msgid  "Function_type"
@@ -8125,7 +8125,7 @@ msgstr ""
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_RKP.7.String.Text
 msgid  "If type = 0 then the functions will be calculated in the form of y=m^x, or also functions y=b*m^x."
-msgstr "Dacă type = 0 atunci funcția va fi calculată în forma y=m^x, sau altfel ca y=b*m^x,"
+msgstr "Dacă tipul este 0 atunci funcțiile vor fi calculate sub forma y=m^x, sau funcții y=b*m^x"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_RKP.8.String.Text
 msgid  "stats"
@@ -8145,7 +8145,7 @@ msgstr ""
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_TREND.3.String.Text
 msgid  "The Y data array."
-msgstr "Vectorul de date Y."
+msgstr "Vectorul de date Y"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_TREND.4.String.Text
 msgid  "data_X"
@@ -8153,7 +8153,7 @@ msgstr ""
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_TREND.5.String.Text
 msgid  "The X data array as the basis for the regression."
-msgstr "Matricea X este baza regresiei."
+msgstr "Vectorul de date X ca bază pentru regresie."
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_TREND.6.String.Text
 msgid  "new data_X"
@@ -8161,7 +8161,7 @@ msgstr ""
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_TREND.7.String.Text
 msgid  "The array of X data for recalculating the values."
-msgstr "Matricea de date X pentru recalcularea valorilor."
+msgstr "Vectorul de date X pentru recalcularea valorilor."
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_TREND.8.String.Text
 msgid  "Linear_type"
@@ -8181,7 +8181,7 @@ msgstr ""
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_GROWTH.3.String.Text
 msgid  "The Y data array."
-msgstr "Vectorul de date"
+msgstr "Vectorul de date Y."
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_GROWTH.4.String.Text
 msgid  "data_X"
@@ -8289,7 +8289,7 @@ msgstr "număr"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_VAR.3.String.Text
 msgid  "Number 1, number 2, ... are 1 to 30 numerical arguments which portray a sample of a population."
-msgstr "Număr 1, număr 2, ... sunt argumente numerice de la 1 la 30 care caracterizează un eșantion dintr-o populație. "
+msgstr "Număr 1, număr 2, ... sunt argumente numerice de la 1 la 30 care caracterizează un eșantion dintr-o populație."
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_VAR_A.1.String.Text
 msgid  "Returns the variance based on a sample. Text is evaluated as zero."
@@ -8301,7 +8301,7 @@ msgstr "valoare"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_VAR_A.3.String.Text
 msgid  "Value 1; value 2; ... are 1 to 30 arguments representing a sample taken from a basic total population."
-msgstr "Valoare 1, valoare 2,... sunt argumente de la 1 la 30 care reprezintă un eșantion extras dintr-o populație totală simplă."
+msgstr "Valoare 1, valoare 2,... sunt argumente de la 1 la 30 care reprezintă un eșantion extras dintr-o populație totală de bază."
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_VAR_P.1.String.Text
 msgid  "Calculates variance based on the entire population."
@@ -8505,7 +8505,7 @@ msgstr "date"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_PERCENTILE.3.String.Text
 msgid  "The array of the data in the sample."
-msgstr "Matricea de date din exemplu."
+msgstr "Vectorul de date din eșantion."
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_PERCENTILE.4.String.Text
 msgid  "Alpha"
@@ -8525,7 +8525,7 @@ msgstr "date"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_QUARTILE.3.String.Text
 msgid  "The array of the data in the sample."
-msgstr "Vectorul de date din eșantion"
+msgstr "Matricea de date din exemplu."
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_QUARTILE.4.String.Text
 msgid  "Type"
@@ -8545,7 +8545,7 @@ msgstr "date"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_LARGE.3.String.Text
 msgid  "The array of the data in the sample."
-msgstr "Vectorul de date din eșantion."
+msgstr "Vectorul de date din eșantion"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_LARGE.4.String.Text
 msgid  "Rank_c"
@@ -8553,7 +8553,7 @@ msgstr ""
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_LARGE.5.String.Text
 msgid  "The ranking of the value."
-msgstr "Rangul valorii."
+msgstr "Rangul valorii"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_SMALL.1.String.Text
 msgid  "Returns the k-th smallest value of a sample."
@@ -8565,7 +8565,7 @@ msgstr "date"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_SMALL.3.String.Text
 msgid  "The array of the data in the sample."
-msgstr "Vectorul de date din eșantion"
+msgstr "Vectorul de date din eșantion."
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_SMALL.4.String.Text
 msgid  "Rank_c"
@@ -8665,7 +8665,7 @@ msgstr "Raza probabilităților asociate."
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_PROB.6.String.Text
 msgid  "Start"
-msgstr "Început"
+msgstr "Pornește"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_PROB.7.String.Text
 msgid  "The start of the value interval whose probabilities is to be totalled."
@@ -8725,7 +8725,7 @@ msgstr "număr"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_PHI.3.String.Text
 msgid  "The value for which the standard normal distribution is to be calculated."
-msgstr "Valoarea pentru care se calculează distribuția normală standard."
+msgstr "Valoarea pentru care se calculează distribuția normală."
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_GAUSS.1.String.Text
 msgid  "Returns the integral values of the standard normal cumulative distribution."
@@ -8781,7 +8781,7 @@ msgstr "probe"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_BINOM_DIST.5.String.Text
 msgid  "The total number of trials."
-msgstr "Numărul total de probe"
+msgstr "Numărul total de probe."
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_BINOM_DIST.6.String.Text
 msgid  "SP"
@@ -8789,7 +8789,7 @@ msgstr ""
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_BINOM_DIST.7.String.Text
 msgid  "The success probability of a trial."
-msgstr "Probabilitatea de succes a unei probe."
+msgstr "Probabilitatea de succes a unei proble"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_BINOM_DIST.8.String.Text
 msgid  "C"
@@ -8825,7 +8825,7 @@ msgstr ""
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_NEG_BINOM_VERT.7.String.Text
 msgid  "The success probability of a trial."
-msgstr "Probabilitatea de succes a unei probe"
+msgstr "Probabilitatea de succes a unei probe."
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_KRIT_BINOM.1.String.Text
 msgid  "Border arguments of the binomial distribution."
@@ -8869,7 +8869,7 @@ msgstr "Valoarea pentru care se calculează distribuția Poisson. "
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_POISSON_DIST.4.String.Text
 msgid  "mean"
-msgstr "mediu"
+msgstr "medie"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_POISSON_DIST.5.String.Text
 msgid  "Mean. The mean value of the Poisson distribution."
@@ -8881,7 +8881,7 @@ msgstr "C"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_POISSON_DIST.7.String.Text
 msgid  "0 or FALSE calculates the probability density function. Any other value or TRUE or omitted calculates the cumulative distribution function."
-msgstr "Cumulat. C=0 calculează funcția de densitate, C=1 pentru distribuție."
+msgstr "Cumulat. C=0 calculează funcția de densitate, C=1 distribuția."
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_NORM_DIST.1.String.Text
 msgid  "Values of the normal distribution."
@@ -8901,7 +8901,7 @@ msgstr "medie"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_NORM_DIST.5.String.Text
 msgid  "The mean value. The mean value of the normal distribution."
-msgstr "Valoare medie. Valoarea medie a distribuției normale."
+msgstr "Valoarea medie. Valoarea medie a distribuției normale."
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_NORM_DIST.6.String.Text
 msgid  "STDEV"
@@ -8917,7 +8917,7 @@ msgstr "C"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_NORM_DIST.9.String.Text
 msgid  "0 or FALSE calculates the probability density function. Any other value or TRUE or omitted calculates the cumulative distribution function."
-msgstr "Cumulat. C=0 calculează densitatea funcției, C=1 distribuția."
+msgstr "Cumulat. C=0 calculează funcția de densitate, C=1 pentru distribuție."
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_NORM_INV.1.String.Text
 msgid  "Values of the inverse normal distribution."
@@ -9169,7 +9169,7 @@ msgstr "alfa"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_BETA_DIST.5.String.Text
 msgid  "The Alpha parameter of the Beta distribution."
-msgstr "Parametrul alfa al distribuției Beta."
+msgstr "Parametrul Alfa al distribuției Beta"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_BETA_DIST.6.String.Text
 msgid  "beta"
@@ -9181,11 +9181,11 @@ msgstr "Parametrul Beta al distribuției Beta."
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_BETA_DIST.8.String.Text
 msgid  "Start"
-msgstr "Pornește"
+msgstr "Început"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_BETA_DIST.9.String.Text
 msgid  "The starting value for the value interval of the distribution."
-msgstr "Valoarea de start pentru intervalul de valori al distribuției."
+msgstr "Valoarea inițială pentru un interval de valori ale distribuției."
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_BETA_DIST.10.String.Text
 msgid  "End"
@@ -9193,7 +9193,7 @@ msgstr "Sfârșit"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_BETA_DIST.11.String.Text
 msgid  "The final value for the value interval of the distribution."
-msgstr "Valoarea finală pentru intervalul de valori al distribuției"
+msgstr "Valoarea finală pentru un interval de valori ale distribuției."
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_BETA_DIST.12.String.Text
 msgid  "Cumulative"
@@ -9337,7 +9337,7 @@ msgstr ""
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_T_DIST.5.String.Text
 msgid  "The degrees of freedom of the T distribution."
-msgstr "Gradele de libertate ale distribuției T"
+msgstr "Gradele de libertate pentru ditribuția T."
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_T_DIST.6.String.Text
 msgid  "mode"
@@ -9385,7 +9385,7 @@ msgstr ""
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_F_DIST.5.String.Text
 msgid  "The degrees of freedom in the numerator of the F distribution."
-msgstr "Gradele de libertate de la numărătorul distribuției F"
+msgstr "Gradele de libertate în numărătorul distribuției F."
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_F_DIST.6.String.Text
 msgid  "degrees_freedom_2"
@@ -9393,7 +9393,7 @@ msgstr ""
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_F_DIST.7.String.Text
 msgid  "The degrees of freedom in the denominator of the F distribution."
-msgstr "Gradele de libertate de la numitorul distribuției F."
+msgstr "Gradele de libertate în numitorul distribuției F."
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_F_INV.1.String.Text
 msgid  "Values of the inverse F distribution."
@@ -9441,7 +9441,7 @@ msgstr ""
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_CHI_DIST.5.String.Text
 msgid  "The degrees of freedom of the chi square distribution."
-msgstr "Gradele de libertate ale distribuției hi pătrat."
+msgstr "Gradele de libertate în distirbuția hi-pătrat."
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_CHISQ_DIST.1.String.Text
 msgid  "Returns left-tail probability of the cumulative distribution function or values of the probability density function of the chi-square distribution."
@@ -9557,7 +9557,7 @@ msgstr ""
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_VARIATIONEN.5.String.Text
 msgid  "The selection number taken from the elements."
-msgstr "Numărul de selecție luat dintre elemente "
+msgstr "Numărul selectat obținut de la elemente."
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_VARIATIONEN_2.1.String.Text
 msgid  "Returns the number of permutations for a given number of objects (repetition allowed)."
@@ -9665,7 +9665,7 @@ msgstr ""
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_F_TEST.3.String.Text
 msgid  "The first record array."
-msgstr "Matrice deja dimensionată"
+msgstr "Primul vector de date"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_F_TEST.4.String.Text
 msgid  "data_2"
@@ -9673,7 +9673,7 @@ msgstr ""
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_F_TEST.5.String.Text
 msgid  "The second record array."
-msgstr "Matrice deja dimensionată"
+msgstr "Al doilea vector de date"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_T_TEST.1.String.Text
 msgid  "Calculates the T test."
@@ -9685,7 +9685,7 @@ msgstr ""
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_T_TEST.3.String.Text
 msgid  "The first record array."
-msgstr "Prima matrice de înregistrări."
+msgstr "Matrice deja dimensionată"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_T_TEST.4.String.Text
 msgid  "data_2"
@@ -9693,7 +9693,7 @@ msgstr ""
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_T_TEST.5.String.Text
 msgid  "The second record array."
-msgstr "A doua matrice de înregistrări."
+msgstr "Matrice deja dimensionată"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_T_TEST.6.String.Text
 msgid  "mode"
@@ -9721,7 +9721,7 @@ msgstr ""
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_RSQ.3.String.Text
 msgid  "The Y data array."
-msgstr "Vectorul de date Y"
+msgstr "Vectorul de date"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_RSQ.4.String.Text
 msgid  "data_X"
@@ -9729,7 +9729,7 @@ msgstr ""
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_RSQ.5.String.Text
 msgid  "The X data array."
-msgstr "Vectorul de date X"
+msgstr "Vectorul de date X."
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_INTERCEPT.1.String.Text
 msgid  "Returns the intercept of the linear regression line and the Y axis."
@@ -9741,7 +9741,7 @@ msgstr ""
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_INTERCEPT.3.String.Text
 msgid  "The Y data array."
-msgstr "Vectorul de date"
+msgstr "Vectorul de date Y"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_INTERCEPT.4.String.Text
 msgid  "data_X"
@@ -9749,7 +9749,7 @@ msgstr ""
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_INTERCEPT.5.String.Text
 msgid  "The X data array."
-msgstr "Vectorul de date X"
+msgstr "Vectorul de date"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_SLOPE.1.String.Text
 msgid  "Returns the slope of the linear regression line."
@@ -9801,7 +9801,7 @@ msgstr "Data_1"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_PEARSON.3.String.Text
 msgid  "The first record array."
-msgstr "Primul vector de date"
+msgstr "Prima matrice de înregistrări."
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_PEARSON.4.String.Text
 msgid  "Data_2"
@@ -9809,7 +9809,7 @@ msgstr "Data_2"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_PEARSON.5.String.Text
 msgid  "The second record array."
-msgstr "Al doilea vector de date"
+msgstr "A doua matrice de înregistrări."
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_CORREL.1.String.Text
 msgid  "Returns the correlation coefficient."
@@ -9821,7 +9821,7 @@ msgstr "Data_1"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_CORREL.3.String.Text
 msgid  "The first record array."
-msgstr "Matrice deja dimensionată"
+msgstr "Primul vector de date"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_CORREL.4.String.Text
 msgid  "Data_2"
@@ -9829,7 +9829,7 @@ msgstr "Data_2"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_CORREL.5.String.Text
 msgid  "The second record array."
-msgstr "Matrice deja dimensionată"
+msgstr "Al doilea vector de date"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_COVAR.1.String.Text
 msgid  "Calculates the covariance."
@@ -9929,11 +9929,11 @@ msgstr "Întoarce numărul de intervale individuale care aparțin unui interval 
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_AREAS.2.String.Text
 msgid  "reference"
-msgstr "referință"
+msgstr "La referință"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_AREAS.3.String.Text
 msgid  "The reference to a (multiple) range."
-msgstr "Referință la un interval multiplu."
+msgstr "Referința la un interval multiplu."
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_CHOSE.1.String.Text
 msgid  "Selects a value from a list of up to 30 value arguments."
@@ -9961,11 +9961,11 @@ msgstr "Întoarce numărul intern de coloană al unei referințe."
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_COLUMN.2.String.Text
 msgid  "reference"
-msgstr "referință"
+msgstr "La referință"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_COLUMN.3.String.Text
 msgid  "The reference to a cell or a range."
-msgstr "Referința la o celulă sau un interval."
+msgstr "Referință la o celulă sau la un interval"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_ROW.1.String.Text
 msgid  "Defines the internal row number of a reference."
@@ -9973,11 +9973,11 @@ msgstr "Definește numărul intern de rând al unei referințe."
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_ROW.2.String.Text
 msgid  "reference"
-msgstr "La referință"
+msgstr "referință"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_ROW.3.String.Text
 msgid  "The reference to a cell or a range."
-msgstr "Referința la o celulă sau la un interval."
+msgstr "Referința la o celulă sau un interval."
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_TABLE.1.String.Text
 msgid  "Returns the internal sheet number of a reference or a string."
@@ -10165,7 +10165,7 @@ msgstr "Criteriu de căutare"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_LOOKUP.3.String.Text
 msgid  "The value to be used for comparison."
-msgstr "Valoarea folosită la comparare."
+msgstr "Valoarea care va fi utilizată pentru comparare."
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_LOOKUP.4.String.Text
 msgid  "Search vector"
@@ -10513,7 +10513,7 @@ msgstr ""
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_FIND.3.String.Text
 msgid  "The text to be found."
-msgstr "Nici un format de tabel nu a fost găsit."
+msgstr "Textul care trebuie găsit."
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_FIND.4.String.Text
 msgid  "text"
@@ -10521,7 +10521,7 @@ msgstr "text"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_FIND.5.String.Text
 msgid  "The text in which a search is to be made."
-msgstr "Textul în care se va face căutarea."
+msgstr "Textul în care urmează să se realizeze căutarea."
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_FIND.6.String.Text
 msgid  "position"
@@ -10869,7 +10869,7 @@ msgstr "bază de numerație"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_BASE.5.String.Text
 msgid  "The base number for conversion must be in the range 2 - 36."
-msgstr "Numărul bazei pentru conversie trebuie să fie din intervalul 2-36."
+msgstr "Numărul bazei de numerație pentru conversie trebuie să se găsească între 2 și 36."
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_BASE.6.String.Text
 msgid  "Minimum length"
@@ -11637,7 +11637,7 @@ msgstr "Foaia %1"
 
 #: source/ui/src/scstring.src#STR_ACC_CELL_NAME.String.Text
 msgid  "Cell %1"
-msgstr "Celul %1"
+msgstr "Celula %1"
 
 #: source/ui/src/scstring.src#STR_ACC_PREVIEWDOC_NAME.String.Text
 msgid  "Page preview"
@@ -11853,7 +11853,7 @@ msgstr "Definește nume"
 
 #: source/ui/src/namedlg.src#RID_SCDLG_NAMES.BTN_ADD.PushButton.Text
 msgid  "~Add"
-msgstr "~Adăugare"
+msgstr "~Adaugă"
 
 #: source/ui/src/namedlg.src#RID_SCDLG_NAMES.BTN_REMOVE.PushButton.Text
 msgid  "~Delete"
@@ -12545,11 +12545,11 @@ msgstr "For~mate"
 
 #: source/ui/src/miscdlgs.src#RID_SCDLG_DELCONT.BTN_DELNOTES.CheckBox.Text
 msgid  "~Comments"
-msgstr "N~ote"
+msgstr "Not~e"
 
 #: source/ui/src/miscdlgs.src#RID_SCDLG_DELCONT.BTN_DELOBJECTS.CheckBox.Text
 msgid  "~Objects"
-msgstr "O~biecte"
+msgstr "~Obiecte"
 
 #: source/ui/src/miscdlgs.src#RID_SCDLG_DELCONT.FL_FRAME.FixedLine.Text
 msgid  "Selection"
@@ -12973,7 +12973,7 @@ msgstr "mai puțin ca"
 
 #: source/ui/src/condfrmt.src#RID_SCDLG_CONDFORMAT.LB_COND1_2.Default.StringList.item
 msgid  "greater than"
-msgstr "Este mai mare ca"
+msgstr "mai mare ca"
 
 #: source/ui/src/condfrmt.src#RID_SCDLG_CONDFORMAT.LB_COND1_2.Default.StringList.item
 msgid  "less than or equal to"

@@ -125,15 +125,15 @@ msgstr "下標(~B)"
 
 #: inc/globlmn_tmpl.hrc#SID_ATTR_PARA_ADJUST_LEFT.#define.Text
 msgid  "~Left"
-msgstr "左側(~L)"
+msgstr "置左(~L)"
 
 #: inc/globlmn_tmpl.hrc#SID_ATTR_PARA_ADJUST_RIGHT.#define.Text
 msgid  "~Right"
-msgstr "右側(~R)"
+msgstr "置右(~R)"
 
 #: inc/globlmn_tmpl.hrc#SID_ATTR_PARA_ADJUST_CENTER.#define.Text
 msgid  "~Centered"
-msgstr "中央(~C)"
+msgstr "置中(~C)"
 
 #: inc/globlmn_tmpl.hrc#SID_ATTR_PARA_ADJUST_BLOCK.#define.Text
 msgid  "Justified"
@@ -873,7 +873,7 @@ msgstr "恢復 "
 
 #: source/dialog/imapdlg.src#RID_SVXDLG_IMAP.TBX_IMAPDLG1.TBI_ACTIVE.ToolBoxItem.Text
 msgid  "Active"
-msgstr "啟動"
+msgstr "使用中"
 
 #: source/dialog/imapdlg.src#RID_SVXDLG_IMAP.TBX_IMAPDLG1.TBI_MACRO.ToolBoxItem.Text
 msgid  "Macro..."
@@ -2789,7 +2789,7 @@ msgstr "藍灰色"
 
 #: source/dialog/sdstring.src#RID_SVXSTR_ORANGE.String.Text
 msgid  "Orange"
-msgstr "橙色"
+msgstr "桔色"
 
 #: source/dialog/sdstring.src#RID_SVXSTR_ARROW.String.Text
 msgid  "Arrow"
@@ -3921,7 +3921,7 @@ msgstr "照明"
 
 #: source/engine3d/float3d.src#RID_SVXFLOAT_3D.BTN_TEXTURE.ButtonImage.QuickHelpText
 msgid  "Textures"
-msgstr "紋理"
+msgstr "文理"
 
 #: source/engine3d/float3d.src#RID_SVXFLOAT_3D.BTN_MATERIAL.ButtonImage.QuickHelpText
 msgid  "Material"
@@ -3993,7 +3993,7 @@ msgstr "特殊物件"
 
 #: source/engine3d/float3d.src#RID_SVXFLOAT_3D.BTN_NORMALS_FLAT.ButtonImage.QuickHelpText
 msgid  "Flat"
-msgstr "平形"
+msgstr "平坦"
 
 #: source/engine3d/float3d.src#RID_SVXFLOAT_3D.BTN_NORMALS_SPHERE.ButtonImage.QuickHelpText
 msgid  "Spherical"
@@ -4097,7 +4097,7 @@ msgstr "光源 8"
 
 #: source/engine3d/float3d.src#RID_SVXFLOAT_3D.BTN_LIGHT_COLOR.ButtonImage.QuickHelpText
 msgid  "Colors Dialog"
-msgstr "透過顏色對話方塊選擇顏色"
+msgstr "透過顏色方塊選擇顏色"
 
 #: source/engine3d/float3d.src#RID_SVXFLOAT_3D.FT_AMBIENTLIGHT.FixedText.Text
 msgid  "~Ambient light"
@@ -4105,7 +4105,7 @@ msgstr "環境光線(~A)"
 
 #: source/engine3d/float3d.src#RID_SVXFLOAT_3D.BTN_AMBIENT_COLOR.ButtonImage.QuickHelpText
 msgid  "Colors Dialog"
-msgstr "透過顏色方塊選擇顏色"
+msgstr "透過顏色對話方塊選擇顏色"
 
 #: source/engine3d/float3d.src#RID_SVXFLOAT_3D.FL_LIGHT.FixedLine.Text
 msgid  "Illumination"
@@ -5565,7 +5565,7 @@ msgstr "屬性(~I)..."
 
 #: source/gallery2/gallery.src#RID_SVXMN_GALLERY2.MN_ADDMENU.MenuItem.Text
 msgid  "~Insert"
-msgstr "插入(~I)"
+msgstr "加入(~I)"
 
 #: source/gallery2/gallery.src#RID_SVXMN_GALLERY2.MN_ADDMENU.MN_ADD.MenuItem.Text
 msgid  "~Copy"
@@ -6141,7 +6141,7 @@ msgstr "備註"
 
 #: source/items/svxitems.src#RID_SVXITEMS_BRUSHSTYLE_NULL.String.Text
 msgid  "None"
-msgstr "無"
+msgstr "無充填"
 
 #: source/items/svxitems.src#RID_SVXITEMS_BRUSHSTYLE_SOLID.String.Text
 msgid  "Solid"
@@ -7045,7 +7045,7 @@ msgstr "圓弧"
 
 #: source/svdraw/svdstr.src#STR_ObjNameSingulCCUT.String.Text
 msgid  "Circle segment"
-msgstr "圓弧段"
+msgstr "扇形"
 
 #: source/svdraw/svdstr.src#STR_ObjNamePluralCCUT.String.Text
 msgid  "Circle segments"
@@ -7541,19 +7541,19 @@ msgstr "%1 自由翻轉"
 
 #: source/svdraw/svdstr.src#STR_EditShear.String.Text
 msgid  "Distort %1 (slant)"
-msgstr "扭曲(傾斜) %1"
+msgstr "%1 扭曲(傾斜)"
 
 #: source/svdraw/svdstr.src#STR_EditCrook.String.Text
 msgid  "Arrange %1 in circle"
-msgstr "將 %1 編排成圓形"
+msgstr "%1 排序成圓形"
 
 #: source/svdraw/svdstr.src#STR_EditCrookContortion.String.Text
 msgid  "Curve %1 in circle"
-msgstr "將 %1 轉變成圓形"
+msgstr "%1 轉變成圓形"
 
 #: source/svdraw/svdstr.src#STR_EditDistort.String.Text
 msgid  "Distort %1"
-msgstr "扭曲 %1"
+msgstr "%1 自由扭曲"
 
 #: source/svdraw/svdstr.src#STR_EditRipUp.String.Text
 msgid  "Undo %1"
@@ -7689,7 +7689,7 @@ msgstr "%1 合併"
 
 #: source/svdraw/svdstr.src#STR_EditDismantle_Polys.String.Text
 msgid  "Split %1"
-msgstr "分割 %1"
+msgstr "分割 %1 的組合"
 
 #: source/svdraw/svdstr.src#STR_EditDismantle_Lines.String.Text
 msgid  "Split %1"
@@ -8017,7 +8017,7 @@ msgstr "向上"
 
 #: source/svdraw/svdstr.src#STR_ItemValTEXTVADJCENTER.String.Text
 msgid  "Center"
-msgstr "置中"
+msgstr "居中"
 
 #: source/svdraw/svdstr.src#STR_ItemValTEXTVADJBOTTOM.String.Text
 msgid  "Bottom"
@@ -8189,7 +8189,7 @@ msgstr "3D 陰影"
 
 #: source/svdraw/svdstr.src#STR_ItemNam_SHADOWPERSP.String.Text
 msgid  "Perspective shadow"
-msgstr "透視陰影"
+msgstr "前景陰影"
 
 #: source/svdraw/svdstr.src#STR_ItemNam_CAPTIONTYPE.String.Text
 msgid  "Callout type"
@@ -8285,7 +8285,7 @@ msgstr "水平方向文字固定標記"
 
 #: source/svdraw/svdstr.src#STR_ItemNam_TEXT_FITTOSIZE.String.Text
 msgid  "Fit text to frame"
-msgstr "文字對齊框"
+msgstr "文字和訊框對齊"
 
 #: source/svdraw/svdstr.src#STR_ItemNam_GRAFRED.String.Text
 msgid  "Red"

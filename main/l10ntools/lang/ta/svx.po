@@ -354,7 +354,7 @@ msgstr "பிம்பங்களின் வரைபடம் "
 #: inc/globlmn_tmpl.hrc#SID_OBJECT.#define.Text
 #, fuzzy
 msgid  "~Object"
-msgstr "பொருள்"
+msgstr "~பொருள்"
 
 #: inc/globlmn_tmpl.hrc#SID_ATTR_ZOOM.#define.Text
 #, fuzzy
@@ -469,7 +469,7 @@ msgstr "வீடியோ"
 #: inc/globlmn_tmpl.hrc#ITEM_INSERT_OBJECT_MN.SID_MN_INSERT_OBJECT_DLGS.MenuItem.Text
 #, fuzzy
 msgid  "~Object"
-msgstr "~பொருள்"
+msgstr "பொருள்"
 
 #: inc/globlmn_tmpl.hrc#ITEM_INSERT_OBJECT_MN.SID_MN_INSERT_OBJECT_DLGS.SID_INSERT_OBJECT.MenuItem.Text
 #, fuzzy
@@ -1123,7 +1123,7 @@ msgstr "இடைவெளி"
 #: source/dialog/hdft.src#RID_SVXPAGE_HEADER.CB_DYNSPACING.CheckBox.Text
 #, fuzzy
 msgid  "Use d~ynamic spacing"
-msgstr "மாறும் இடைவெளியை பயன்படுத்து (~y)"
+msgstr "Use d~ynamic spacing"
 
 #: source/dialog/hdft.src#RID_SVXPAGE_HEADER.FT_HEIGHT.FixedText.Text
 #, fuzzy
@@ -1469,7 +1469,7 @@ msgstr "மாற்றுதல்"
 #: source/dialog/docrecovery.src#RID_SVXPAGE_DOCRECOVERY_SAVE.FT_SAVE_TITLE.FixedText.Text
 #, fuzzy
 msgid  "%PRODUCTNAME Document Recovery"
-msgstr "%PRODUCTNAME ஆவணத்தை சரிசெய்தல்"
+msgstr "%PRODUCTNAME ஆவண மீட்பு"
 
 #: source/dialog/docrecovery.src#RID_SVXPAGE_DOCRECOVERY_SAVE.FT_SAVE_DESCR.FixedText.Text
 #, fuzzy
@@ -2263,12 +2263,12 @@ msgstr "செங்குத்து எல்லை கோடு"
 #: source/dialog/frmsel.src#RID_SVXSTR_BORDER_CONTROL.ARR_TEXTS.7.ItemList.item
 #, fuzzy
 msgid  "Diagonal border line from top left to bottom right"
-msgstr "மேல் இடதிலிருந்து கீழ் வலது மூலைவிட்ட எல்லை கோடு"
+msgstr "Diagonal border line from top left to bottom right"
 
 #: source/dialog/frmsel.src#RID_SVXSTR_BORDER_CONTROL.ARR_TEXTS.8.ItemList.item
 #, fuzzy
 msgid  "Diagonal border line from bottom left to top right"
-msgstr "கீழ் இடதிலிருந்து மேல் வலது மூலைவிட்ட எல்லை கோடு"
+msgstr "Diagonal border line from bottom left to top right"
 
 #: source/dialog/frmsel.src#RID_SVXSTR_BORDER_CONTROL.ARR_DESCRIPTIONS.0.ItemList.item
 #, fuzzy
@@ -3232,7 +3232,7 @@ msgstr "தொடர்ச்சி"
 #: source/dialog/sdstring.src#RID_SVXSTR_GRADIENT.String.Text
 #, fuzzy
 msgid  "Gradient"
-msgstr "Gradient"
+msgstr "க்ரேடியன்"
 
 #: source/dialog/sdstring.src#RID_SVXSTR_BITMAP.String.Text
 #, fuzzy
@@ -3257,7 +3257,7 @@ msgstr "நிறம்"
 #: source/dialog/sdstring.src#RID_SVXSTR_HATCH.String.Text
 #, fuzzy
 msgid  "Hatching"
-msgstr "பொறித்தல்"
+msgstr "Hatching"
 
 #: source/dialog/sdstring.src#RID_SVXSTR_LINEEND.String.Text
 #, fuzzy
@@ -3307,7 +3307,7 @@ msgstr "ப்ரவுண்"
 #: source/dialog/sdstring.src#RID_SVXSTR_GREY.String.Text
 #, fuzzy
 msgid  "Gray"
-msgstr "சாம்பல்"
+msgstr "Gray"
 
 #: source/dialog/sdstring.src#RID_SVXSTR_LIGHTGREY.String.Text
 #, fuzzy
@@ -4849,8 +4849,9 @@ msgid  "Object-Specific"
 msgstr "Object-Specific"
 
 #: source/engine3d/float3d.src#RID_SVXFLOAT_3D.BTN_NORMALS_FLAT.ButtonImage.QuickHelpText
+#, fuzzy
 msgid  "Flat"
-msgstr "Flat"
+msgstr "தட்டை"
 
 #: source/engine3d/float3d.src#RID_SVXFLOAT_3D.BTN_NORMALS_SPHERE.ButtonImage.QuickHelpText
 #, fuzzy
@@ -4980,7 +4981,7 @@ msgstr "வெளிச்சம் வருமிடம் 8"
 #: source/engine3d/float3d.src#RID_SVXFLOAT_3D.BTN_LIGHT_COLOR.ButtonImage.QuickHelpText
 #, fuzzy
 msgid  "Colors Dialog"
-msgstr "நிறங்கள் உரையாடல்"
+msgstr "நிற உரையாடல்"
 
 #: source/engine3d/float3d.src#RID_SVXFLOAT_3D.FT_AMBIENTLIGHT.FixedText.Text
 #, fuzzy
@@ -4990,7 +4991,7 @@ msgstr "Ambient light"
 #: source/engine3d/float3d.src#RID_SVXFLOAT_3D.BTN_AMBIENT_COLOR.ButtonImage.QuickHelpText
 #, fuzzy
 msgid  "Colors Dialog"
-msgstr "Colors Dialog"
+msgstr "நிறங்கள் உரையாடல்"
 
 #: source/engine3d/float3d.src#RID_SVXFLOAT_3D.FL_LIGHT.FixedLine.Text
 #, fuzzy
@@ -5130,7 +5131,7 @@ msgstr "பொருள் color"
 #: source/engine3d/float3d.src#RID_SVXFLOAT_3D.BTN_MAT_COLOR.ButtonImage.QuickHelpText
 #, fuzzy
 msgid  "Colors Dialog"
-msgstr "நிறங்கள் உரையாடல்"
+msgstr "Colors Dialog"
 
 #: source/engine3d/float3d.src#RID_SVXFLOAT_3D.FT_MAT_EMISSION.FixedText.Text
 #, fuzzy
@@ -6106,17 +6107,17 @@ msgstr "உருப்படியை சேர்த்தல்"
 #: source/form/datanavi.src#RID_SVX_XFORMS_TABPAGES.TB_ITEMS.TBI_ITEM_ADD_ELEMENT.ToolBoxItem.Text
 #, fuzzy
 msgid  "Add Element"
-msgstr "எழுத்துருவைச் சேர்"
+msgstr "உருப்படியை சேர்"
 
 #: source/form/datanavi.src#RID_SVX_XFORMS_TABPAGES.TB_ITEMS.TBI_ITEM_ADD_ATTRIBUTE.ToolBoxItem.Text
 #, fuzzy
 msgid  "Add Attribute"
-msgstr "Add Attribute"
+msgstr "பண்புகளை சேர்"
 
 #: source/form/datanavi.src#RID_SVX_XFORMS_TABPAGES.TB_ITEMS.TBI_ITEM_EDIT.ToolBoxItem.Text
 #, fuzzy
 msgid  "Edit"
-msgstr "திருத்து"
+msgstr "திருத்துதல்"
 
 #: source/form/datanavi.src#RID_SVX_XFORMS_TABPAGES.TB_ITEMS.TBI_ITEM_REMOVE.ToolBoxItem.Text
 #, fuzzy
@@ -6131,12 +6132,12 @@ msgstr "~மாதிரிகள்"
 #: source/form/datanavi.src#RID_SVXWIN_DATANAVIGATOR.MB_MODELS.MID_MODELS_ADD.MenuItem.Text
 #, fuzzy
 msgid  "~Add..."
-msgstr "சேர்த்தல்..."
+msgstr "~சேர்..."
 
 #: source/form/datanavi.src#RID_SVXWIN_DATANAVIGATOR.MB_MODELS.MID_MODELS_EDIT.MenuItem.Text
 #, fuzzy
 msgid  "~Edit..."
-msgstr "திருத்துதல்..."
+msgstr "~திருத்து..."
 
 #: source/form/datanavi.src#RID_SVXWIN_DATANAVIGATOR.MB_MODELS.MID_MODELS_REMOVE.MenuItem.Text
 #, fuzzy
@@ -6146,7 +6147,7 @@ msgstr "~நீக்கு"
 #: source/form/datanavi.src#RID_SVXWIN_DATANAVIGATOR.TC_ITEMS.TID_INSTANCE.PageItem.Text
 #, fuzzy
 msgid  "Instance"
-msgstr "நிகழ்வு"
+msgstr "Instance"
 
 #: source/form/datanavi.src#RID_SVXWIN_DATANAVIGATOR.TC_ITEMS.TID_SUBMISSION.PageItem.Text
 #, fuzzy
@@ -6335,7 +6336,7 @@ msgstr "உருப்படியை சேர்த்தல்"
 #: source/form/datanavi.src#RID_MENU_DATANAVIGATOR.TBI_ITEM_ADD_ELEMENT.MenuItem.Text
 #, fuzzy
 msgid  "Add Element"
-msgstr "Add Element"
+msgstr "எழுத்துருவைச் சேர்"
 
 #: source/form/datanavi.src#RID_MENU_DATANAVIGATOR.TBI_ITEM_ADD_ATTRIBUTE.MenuItem.Text
 #, fuzzy
@@ -7155,8 +7156,9 @@ msgid  "Password protection is not supported when documents are saved in a Micro
 msgstr ""
 
 #: source/items/svxitems.src#RID_ATTR_NAMES.SID_ATTR_ZOOM.ItemList.item
+#, fuzzy
 msgid  "Scale"
-msgstr "Scale"
+msgstr "அளவு"
 
 #: source/items/svxitems.src#RID_ATTR_NAMES.SID_ATTR_BRUSH.ItemList.item
 #, fuzzy
@@ -7224,8 +7226,9 @@ msgid  "Rel. Font size"
 msgstr "தொடர்பு எழுத்துரு அளவு"
 
 #: source/items/svxitems.src#RID_ATTR_NAMES.SID_ATTR_CHAR_COLOR.ItemList.item
+#, fuzzy
 msgid  "Font color"
-msgstr "எழுத்துரு நிறம்"
+msgstr "Font color"
 
 #: source/items/svxitems.src#RID_ATTR_NAMES.SID_ATTR_CHAR_KERNING.ItemList.item
 #, fuzzy
@@ -7328,8 +7331,9 @@ msgid  "Page"
 msgstr "பக்கம்"
 
 #: source/items/svxitems.src#RID_ATTR_NAMES.SID_ATTR_PARA_MODEL.ItemList.item
+#, fuzzy
 msgid  "Page Style"
-msgstr "பக்க தோற்றம்"
+msgstr "Page Style"
 
 #: source/items/svxitems.src#RID_ATTR_NAMES.SID_ATTR_PARA_KEEP.ItemList.item
 #, fuzzy
@@ -7347,8 +7351,9 @@ msgid  "Register-true"
 msgstr "பதிவேடு-உண்மை"
 
 #: source/items/svxitems.src#RID_ATTR_NAMES.SID_ATTR_BRUSH_CHAR.ItemList.item
+#, fuzzy
 msgid  "Character background"
-msgstr "எழுத்து பின்னணி"
+msgstr "Character background"
 
 #: source/items/svxitems.src#RID_ATTR_NAMES.SID_ATTR_CHAR_CJK_FONT.ItemList.item
 #, fuzzy
@@ -9103,12 +9108,12 @@ msgstr "%O ன் திசையை மாற்று"
 #: source/svdraw/svdstr.src#STR_EditMove.String.Text
 #, fuzzy
 msgid  "Move %1"
-msgstr "Move %O"
+msgstr "Move %1"
 
 #: source/svdraw/svdstr.src#STR_EditResize.String.Text
 #, fuzzy
 msgid  "Resize %1"
-msgstr "Resize %O"
+msgstr "Resize %1"
 
 #: source/svdraw/svdstr.src#STR_EditRotate.String.Text
 #, fuzzy
@@ -9323,7 +9328,7 @@ msgstr "Combine %1"
 #: source/svdraw/svdstr.src#STR_EditDismantle_Polys.String.Text
 #, fuzzy
 msgid  "Split %1"
-msgstr "Split %1"
+msgstr "Split %O"
 
 #: source/svdraw/svdstr.src#STR_EditDismantle_Lines.String.Text
 #, fuzzy
@@ -9383,7 +9388,7 @@ msgstr "Geometrically change %O"
 #: source/svdraw/svdstr.src#STR_DragMethMove.String.Text
 #, fuzzy
 msgid  "Move %1"
-msgstr "Move %1"
+msgstr "Move %O"
 
 #: source/svdraw/svdstr.src#STR_DragMethResize.String.Text
 #, fuzzy
@@ -10153,7 +10158,7 @@ msgstr "Object name"
 #: source/svdraw/svdstr.src#STR_ItemNam_STARTANGLE.String.Text
 #, fuzzy
 msgid  "Start angle"
-msgstr "துவக்க கோணம்"
+msgstr "Start angle"
 
 #: source/svdraw/svdstr.src#STR_ItemNam_ENDANGLE.String.Text
 #, fuzzy

@@ -5705,7 +5705,7 @@ msgstr ""
 
 #: source/text/scalc/01/04060105.xhp#par_id3146100.66
 msgid  "The arguments are either logical expressions themselves (TRUE, 1<5, 2+3=7, B8<10) that return logical values, or arrays (A1:C3) containing logical values."
-msgstr "Аргументите или са логически изрази (TRUE, 1<5, 2+3=7, B8<10) с резултат логически стойности, или масиви (A1:C3), съдържащи логически стойности."
+msgstr "Аргументите са или логически изрази (TRUE, 1<5, 2+3=7, B8<10), които връщат логически стойности, или масиви (A1:C3), съдържащи логически стойности."
 
 #: source/text/scalc/01/04060105.xhp#par_id3150538.67
 msgid  "When a function expects a single value, but you entered a cell range, then the value from the cell range is taken that is in the same column or row as the formula."
@@ -6421,7 +6421,7 @@ msgstr "За да получите косинуса на ъгъл в граду�
 
 #: source/text/scalc/01/04060106.xhp#hd_id3153579.154
 msgid  "Examples"
-msgstr "Примери"
+msgstr "Примери:"
 
 #: source/text/scalc/01/04060106.xhp#par_id3147240.155
 msgid  "\<item type=\"input\"\>=COS(PI()/2)\</item\> returns 0, the cosine of PI/2 radians."
@@ -21077,7 +21077,7 @@ msgstr ""
 
 #: source/text/scalc/01/04060199.xhp#tit
 msgid  "Operators in $[officename] Calc"
-msgstr "Занци за операции в $[officename] Calc"
+msgstr "Знаци за операции в $[officename] Calc"
 
 #: source/text/scalc/01/04060199.xhp#bm_id3156445
 msgid  "\<bookmark_value\>formulas; operators\</bookmark_value\>\<bookmark_value\>operators; formula functions\</bookmark_value\>\<bookmark_value\>division sign, see also operators\</bookmark_value\>\<bookmark_value\>multiplication sign, see also operators\</bookmark_value\>\<bookmark_value\>minus sign, see also operators\</bookmark_value\>\<bookmark_value\>plus sign, see also operators\</bookmark_value\>\<bookmark_value\>text operators\</bookmark_value\>\<bookmark_value\>comparisons;operators in Calc\</bookmark_value\>\<bookmark_value\>arithmetical operators\</bookmark_value\>\<bookmark_value\>reference operators\</bookmark_value\>"
@@ -21681,7 +21681,7 @@ msgstr ""
 
 #: source/text/scalc/01/04080000.xhp#tit
 msgid  "Function List"
-msgstr "Списък с функции"
+msgstr "Списък на функциите"
 
 #: source/text/scalc/01/04080000.xhp#bm_id3154126
 msgid  "\<bookmark_value\>formula list window\</bookmark_value\>\<bookmark_value\>function list window\</bookmark_value\>\<bookmark_value\>inserting functions; function list window\</bookmark_value\>"
@@ -31573,7 +31573,7 @@ msgstr ""
 
 #: source/text/scalc/guide/format_value_userdef.xhp#par_id3152596.7
 msgid  "0.0,, \"Million\""
-msgstr "0.0,, \"милиона\""
+msgstr "0,0  \" милиона\" (0.0,, \"милиона\" при английски формат)"
 
 #: source/text/scalc/guide/format_value_userdef.xhp#par_id3144764.8
 msgid  "Click OK."
@@ -31701,7 +31701,7 @@ msgstr "Има различни начини за копиране на форм
 
 #: source/text/scalc/guide/formula_copy.xhp#par_id3150439.30
 msgid  "Select the cell containing the formula."
-msgstr "Изберете клетката съдържаща формулата."
+msgstr "Изберете клетката, съдържаща формулата."
 
 #: source/text/scalc/guide/formula_copy.xhp#par_id3154319.31
 msgid  "Choose \<emph\>Edit - Copy\</emph\>, or press \<switchinline select=\"sys\"\>\<caseinline select=\"MAC\"\>Command\</caseinline\>\<defaultinline\>Ctrl\</defaultinline\>\</switchinline\>+C to copy it."
@@ -33609,7 +33609,7 @@ msgstr ""
 
 #: source/text/scalc/guide/scenario.xhp#tit
 msgid  "Using Scenarios"
-msgstr "Използване на сценарии"
+msgstr "Работа със сценарии"
 
 #: source/text/scalc/guide/scenario.xhp#bm_id3149664
 msgid  "\<bookmark_value\>scenarios; creating/editing/deleting\</bookmark_value\>\<bookmark_value\>opening;scenarios\</bookmark_value\>\<bookmark_value\>selecting;scenarios in Navigator\</bookmark_value\>"

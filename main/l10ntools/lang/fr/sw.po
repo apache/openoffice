@@ -1489,11 +1489,11 @@ msgstr "~Pas d'adaptation"
 
 #: source/ui/app/mn.src#MN_MOUSE_FRAME_BEGIN.MN_WRAP.FN_FRAME_WRAP.MenuItem.Text
 msgid  "~Page Wrap"
-msgstr "~Renvoi relatif à la page"
+msgstr "R~envoi relatif à la page"
 
 #: source/ui/app/mn.src#MN_MOUSE_FRAME_BEGIN.MN_WRAP.FN_FRAME_WRAP_IDEAL.MenuItem.Text
 msgid  "~Optimal Page Wrap"
-msgstr "Renvoi ~dynamique à la page"
+msgstr "R~envoi dynamique à la page"
 
 #: source/ui/app/mn.src#MN_MOUSE_FRAME_BEGIN.MN_WRAP.FN_FRAME_WRAPTHRU.MenuItem.Text
 msgid  "~Wrap Through"
@@ -1505,7 +1505,7 @@ msgstr "À l'a~rrière-plan"
 
 #: source/ui/app/mn.src#MN_MOUSE_FRAME_BEGIN.MN_WRAP.FN_WRAP_ANCHOR_ONLY.MenuItem.Text
 msgid  "~First Paragraph"
-msgstr "~Premier paragraphe"
+msgstr "~1er paragraphe"
 
 #: source/ui/app/mn.src#MN_DRAW_POPUPMENU.String.Text
 msgid  "Graphic"
@@ -2213,7 +2213,7 @@ msgstr "~Contrôles de formulaires"
 
 #: source/ui/config/optdlg.src#TP_OPTPRINT_PAGE.CB_BACKGROUND.CheckBox.Text
 msgid  "Page ba~ckground"
-msgstr "~Arrière-plan de page"
+msgstr "Arrière-plan de ~page"
 
 #: source/ui/config/optdlg.src#TP_OPTPRINT_PAGE.CB_BLACK_FONT.CheckBox.Text
 msgid  "Print text in blac~k"
@@ -2241,7 +2241,7 @@ msgstr "Pag~es de droite"
 
 #: source/ui/config/optdlg.src#TP_OPTPRINT_PAGE.CB_PROSPECT.CheckBox.Text
 msgid  "Broch~ure"
-msgstr "Broch~ure"
+msgstr "Br~ochure"
 
 #: source/ui/config/optdlg.src#TP_OPTPRINT_PAGE.CB_PROSPECT_RTL.CheckBox.Text
 msgid  "Right to Left"
@@ -3237,7 +3237,7 @@ msgstr "Connexion à la source de données..."
 
 #: source/ui/dbui/mmaddressblockpage.src#_ST_NONE_LIST.item1.StringList.item
 msgid  "< none >"
-msgstr "< aucun(e) >"
+msgstr "< aucun >"
 
 #: source/ui/dbui/mmaddressblockpage.src#DLG_MM_ADDRESSBLOCK_PAGE.FI_HEADER.FixedText.Text
 msgid  "Insert address block"
@@ -6089,7 +6089,7 @@ msgstr "Statistiques"
 
 #: source/ui/fldui/fldui.src#STR_AUTHORFLD.String.Text
 msgid  "Author"
-msgstr "Auteur"
+msgstr "Utilisateur"
 
 #: source/ui/fldui/fldui.src#STR_TEMPLNAMEFLD.String.Text
 msgid  "Templates"
@@ -6185,7 +6185,7 @@ msgstr "Enregistrement aléatoire"
 
 #: source/ui/fldui/fldui.src#STR_DBSETNUMBERFLD.String.Text
 msgid  "Record number"
-msgstr "Numéro de l'enregistrement"
+msgstr "Numéro d'enregistrement"
 
 #: source/ui/fldui/fldui.src#STR_PREVPAGEFLD.String.Text
 msgid  "Previous page"
@@ -7921,7 +7921,7 @@ msgstr "Chapitre"
 
 #: source/ui/index/cnttab.src#TP_TOX_SELECT.FT_LEVEL.FixedText.Text
 msgid  "Evaluate up to level"
-msgstr "Évaluation jusqu'au niveau"
+msgstr "Évaluer jusqu'au niveau"
 
 #: source/ui/index/cnttab.src#TP_TOX_SELECT.FL_CREATEFROM.FixedLine.Text
 msgid  "Create from"
@@ -7937,7 +7937,7 @@ msgstr "~Styles supplémentaires"
 
 #: source/ui/index/cnttab.src#TP_TOX_SELECT.ST_USER_ADDSTYLE.String.Text
 msgid  "Styl~es"
-msgstr "Styl~es"
+msgstr "~Styles"
 
 #: source/ui/index/cnttab.src#TP_TOX_SELECT.CB_TOXMARKS.CheckBox.Text
 msgid  "Inde~x marks"
@@ -8561,7 +8561,7 @@ msgstr "Les répertoires 'AutoTexte' sont en lecture seule. Voulez-vous appeler 
 
 #: source/ui/misc/glossary.src#DLG_GLOSSARY.MNU_EDIT.FN_GL_DEFINE.MenuItem.Text
 msgid  "~New"
-msgstr "Nou~veau"
+msgstr "~Nouveau"
 
 #: source/ui/misc/glossary.src#DLG_GLOSSARY.MNU_EDIT.FN_GL_DEFINE_TEXT.MenuItem.Text
 msgid  "New (text only)"
@@ -9461,7 +9461,7 @@ msgstr "A~vant"
 
 #: source/ui/misc/docfnote.src#TP_FOOTNOTEOPTION.FT_SUFFIX.FixedText.Text
 msgid  "~After"
-msgstr "Ap~rès"
+msgstr "A~près"
 
 #: source/ui/misc/docfnote.src#TP_FOOTNOTEOPTION.FT_POS.FixedText.Text
 msgid  "Position"
@@ -9481,11 +9481,11 @@ msgstr "Styles"
 
 #: source/ui/misc/docfnote.src#TP_FOOTNOTEOPTION.FT_PARA_TEMPL.FixedText.Text
 msgid  "Pa~ragraph"
-msgstr "P~aragraphe"
+msgstr "Pa~ragraphe"
 
 #: source/ui/misc/docfnote.src#TP_FOOTNOTEOPTION.FT_PAGE_TEMPL.FixedText.Text
 msgid  "~Page"
-msgstr "~Page"
+msgstr "P~age"
 
 #: source/ui/misc/docfnote.src#TP_FOOTNOTEOPTION.FL_CHAR_TEMPL.FixedLine.Text
 msgid  "Character Styles"
@@ -9493,7 +9493,7 @@ msgstr "Styles de caractères"
 
 #: source/ui/misc/docfnote.src#TP_FOOTNOTEOPTION.FT_ANCHR_CHARFMT.FixedText.Text
 msgid  "Te~xt area"
-msgstr "~Zone de texte"
+msgstr "Zone de ~texte"
 
 #: source/ui/misc/docfnote.src#TP_FOOTNOTEOPTION.FT_TEXT_CHARFMT.FixedText.Text
 msgid  "~Footnote area"
@@ -10953,7 +10953,7 @@ msgstr "Appliquer le style \"Corps de texte\""
 
 #: source/ui/utlui/utlui.src#RID_SHELLRES_AUTOFMTSTRS.STR_AUTOFMTREDL_SET_TMPL_INDENT.String.Text
 msgid  "Set \"Text body indent\" Style"
-msgstr "Appliquer le style \"Retrait de corps de texte\""
+msgstr "Appliquer le style \"Alinéa\""
 
 #: source/ui/utlui/utlui.src#RID_SHELLRES_AUTOFMTSTRS.STR_AUTOFMTREDL_SET_TMPL_NEG_INDENT.String.Text
 msgid  "Set \"Hanging indent\" Style"
@@ -11357,7 +11357,7 @@ msgstr "Brochures"
 
 #: source/ui/utlui/initui.src#STR_AUTH_TYPE_CONFERENCE.String.Text
 msgid  "Conference proceedings"
-msgstr "Rapports de congrès"
+msgstr "Rapports de conférence"
 
 #: source/ui/utlui/initui.src#STR_AUTH_TYPE_INBOOK.String.Text
 msgid  "Book excerpt"

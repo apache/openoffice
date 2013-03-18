@@ -1773,7 +1773,7 @@ msgstr "Merdeer"
 
 #: source/ui/navipi/navipi.src#RID_SCDLG_NAVIGATOR.FT_ROW.FixedText.Text
 msgid  "Row"
-msgstr "Row"
+msgstr "Linenn"
 
 #: source/ui/navipi/navipi.src#RID_SCDLG_NAVIGATOR.ED_ROW.NumericField.QuickHelpText
 msgid  "Row"
@@ -1781,7 +1781,7 @@ msgstr "Row"
 
 #: source/ui/navipi/navipi.src#RID_SCDLG_NAVIGATOR.FT_COL.FixedText.Text
 msgid  "Column"
-msgstr "Column"
+msgstr "Bann"
 
 #: source/ui/navipi/navipi.src#RID_SCDLG_NAVIGATOR.ED_COL.SpinField.QuickHelpText
 msgid  "Column"
@@ -2117,7 +2117,7 @@ msgstr "Text Attributes"
 
 #: source/ui/pagedlg/hfedtdlg.src#RID_HFBASE.BTN_FILE.ImageButton.QuickHelpText
 msgid  "Title"
-msgstr "Titl"
+msgstr "File Name"
 
 #: source/ui/pagedlg/hfedtdlg.src#RID_HFBASE.RID_POPUP_FCOMMAND.FILE_COMMAND_TITEL.MenuItem.Text
 msgid  "Title"
@@ -3017,7 +3017,7 @@ msgstr "Rummañ"
 
 #: source/ui/src/globstr.src#RID_GLOBSTR.STR_UNDO_QUERY.String.Text
 msgid  "Filter"
-msgstr "Silañ"
+msgstr "Sil"
 
 #: source/ui/src/globstr.src#RID_GLOBSTR.STR_UNDO_DBDATA.String.Text
 msgid  "Change Database Range"
@@ -3837,7 +3837,7 @@ msgstr "Embann ur gevreizhenn"
 
 #: source/ui/src/globstr.src#RID_GLOBSTR.STR_NOTES.String.Text
 msgid  "Comments"
-msgstr "Notennoù"
+msgstr "Evezhiadennoù"
 
 #: source/ui/src/globstr.src#RID_GLOBSTR.STR_QUERY_DELTAB.String.Text
 msgid  "Are you sure you want to delete the selected sheet(s)?"
@@ -5285,11 +5285,11 @@ msgstr "Stlennvon"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_DB_COUNT.3.String.Text
 msgid  "The range of cells containing data."
-msgstr "Al lijorennad kelligoù oc'h enderc'hel ar roadennoù."
+msgstr "Lijorenn gelligoù gant ar roadennoù"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_DB_COUNT.4.String.Text
 msgid  "Database field"
-msgstr "Maezienn"
+msgstr "Maezienn SV"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_DB_COUNT.5.String.Text
 msgid  "Indicates which database field (column) is to be used for the search criteria."
@@ -5313,7 +5313,7 @@ msgstr "Stlennvon"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_DB_COUNT_2.3.String.Text
 msgid  "The range of cells containing data."
-msgstr "Al lijorennad kelligoù oc'h enderc'hel ar roadennoù"
+msgstr "Al lijorennad kelligoù oc'h enderc'hel ar roadennoù."
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_DB_COUNT_2.4.String.Text
 msgid  "Database field"
@@ -5341,7 +5341,7 @@ msgstr "Stlennvon"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_DB_AVERAGE.3.String.Text
 msgid  "The range of cells containing data."
-msgstr "Al lijorennad kelligoù oc'h enderc'hel ar roadennoù."
+msgstr "Al lijorennad kelligoù oc'h enderc'hel ar roadennoù"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_DB_AVERAGE.4.String.Text
 msgid  "Database field"
@@ -5645,7 +5645,7 @@ msgstr "Amdreiñ a ra un deiziad skeudennet dindan furm testenn en un niverenn r
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_GET_DATE_VALUE.2.String.Text
 msgid  "text"
-msgstr "Testenn"
+msgstr "Deiziad_testenn"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_GET_DATE_VALUE.3.String.Text
 msgid  "A text enclosed in quotation marks which returns a date in a %PRODUCTNAME date format."
@@ -5657,7 +5657,7 @@ msgstr "Adkas a ra deiziad ar miz (etre 1 ha 31) o taveiñ d'an arguzenn steudri
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_GET_DAY.2.String.Text
 msgid  "Number"
-msgstr "Steudriñv"
+msgstr "Niver"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_GET_DAY.3.String.Text
 msgid  "The internal number for the date."
@@ -5685,7 +5685,7 @@ msgstr "Deiziad nevesañ evit an diforc'h e deizioù"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_GET_DIFF_DATE_360.6.String.Text
 msgid  "Type"
-msgstr "Mod"
+msgstr "Rizh"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_GET_DIFF_DATE_360.7.String.Text
 msgid  "Method used to form differences: Type = 0 denotes US method (NASD), Type = 1 denotes the European method."
@@ -5697,7 +5697,7 @@ msgstr "Adkas a ra an eur (etre 0 ha 23) o taveiñ d'an arguzenn steudriñv."
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_GET_HOUR.2.String.Text
 msgid  "Number"
-msgstr "Steudriñv"
+msgstr "Niver"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_GET_HOUR.3.String.Text
 msgid  "Internal time value"
@@ -5709,7 +5709,7 @@ msgstr "Adkas a ra ar vunutenn (etre 0 ha 59) o taveiñ d'an arguzenn steudriñv
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_GET_MIN.2.String.Text
 msgid  "Number"
-msgstr "Steudriñv"
+msgstr "Niver"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_GET_MIN.3.String.Text
 msgid  "Internal time value."
@@ -5721,7 +5721,7 @@ msgstr "Adkas a ra miz ar bloavezh (etre 1 ha 12) o taveiñ d'an arguzenn steudr
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_GET_MONTH.2.String.Text
 msgid  "Number"
-msgstr "Steudriñv"
+msgstr "Niver"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_GET_MONTH.3.String.Text
 msgid  "The internal number of the date."
@@ -5737,7 +5737,7 @@ msgstr "Adkas a ra an eilenn (etre 0 ha 59) o taveiñ d'an arguzenn steudriñv."
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_GET_SEC.2.String.Text
 msgid  "Number"
-msgstr "Steudriñv"
+msgstr "Niver"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_GET_SEC.3.String.Text
 msgid  "The internal time value."
@@ -5793,7 +5793,7 @@ msgstr "Adkas a ra deiziad ar sizhun (etre 1 ha 7) o taveiñ d'an arguzenn steud
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_GET_DAY_OF_WEEK.2.String.Text
 msgid  "Number"
-msgstr "Steudriñv"
+msgstr "Niver"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_GET_DAY_OF_WEEK.3.String.Text
 msgid  "The internal number for the date."
@@ -5813,7 +5813,7 @@ msgstr "Adkas a ra ar bloaz daveek d'an arguzenn steudriñv."
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_GET_YEAR.2.String.Text
 msgid  "Number"
-msgstr "Steudriñv"
+msgstr "Niver"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_GET_YEAR.3.String.Text
 msgid  "Internal number of the date."
@@ -5845,7 +5845,7 @@ msgstr "Adkas a ra sizhun sant Bikennig ar bloavezh o taveiñ d'an arguzenn steu
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_WEEK.2.String.Text
 msgid  "Number"
-msgstr "Steudriñv"
+msgstr "Niver"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_WEEK.3.String.Text
 msgid  "The internal number of the date."
@@ -5933,7 +5933,7 @@ msgstr "NDM"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_ZW.5.String.Text
 msgid  "Payment period. The total number of periods in which the annuity (pension) is paid."
-msgstr "An niver klok a varevezhioù paeñ eus ar bloaztal."
+msgstr "An niver klok a varevezhioù paeañ eus ar bloaztal."
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_ZW.6.String.Text
 msgid  "PMT"
@@ -6113,7 +6113,7 @@ msgstr "Ar feur kampi dre varevezh."
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_ZINS_Z.4.String.Text
 msgid  "Period"
-msgstr "P"
+msgstr "Marevezh "
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_ZINS_Z.5.String.Text
 msgid  "Periods. The periods for which the compounded interest is to be calculated. P = 1 denotes for the first period, P = NPER for the last one."
@@ -6165,7 +6165,7 @@ msgstr "Ar feur kampi dre varevezh."
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_KAPZ.4.String.Text
 msgid  "Period"
-msgstr "Marevezhioù"
+msgstr "P"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_KAPZ.5.String.Text
 msgid  "Period. The period for which the repayments are to be calculated. Per = 1 denotes for the first period, P = NPER for the last"
@@ -6689,7 +6689,7 @@ msgstr "VC"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_LAUFZ.7.String.Text
 msgid  "The future value of the investment."
-msgstr "Erouezañ a ra gwerzh da zont ur postadur"
+msgstr "Gwerzh da zont ar postañ."
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_ZGZ.1.String.Text
 msgid  "Interest. Calculates the interest rate which represents the rate of return from an investment."
@@ -6957,7 +6957,7 @@ msgstr "Adkas a ra GWIR mard eo GWIR un arguzenn."
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_OR.2.String.Text
 msgid  "Logical value "
-msgstr "Gwerzh_poellek"
+msgstr "Gwerzh poellek"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_OR.3.String.Text
 msgid  "Logical value 1, logical value 2,... are 1 to 30 conditions to be tested and which return either TRUE or FALSE."
@@ -7733,7 +7733,7 @@ msgstr "Erouezañ a ra an niver ma'z eo ret krennañ an dekranneloù dezho."
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_TRUNC.4.String.Text
 msgid  "count"
-msgstr "Nv_dekrann"
+msgstr "Niver"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_TRUNC.5.String.Text
 msgid  "The number of places after the decimal point that are not to be truncated."
@@ -7757,7 +7757,7 @@ msgstr "Niver"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_ROUND.5.String.Text
 msgid  "The number of places to which a number is to be rounded."
-msgstr "An niver a sifroù da gemer e kont da rontaat an arguzenn niver."
+msgstr "An niver a sifroù ma fell deoc'h rontaat an niver dezhañ."
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_ROUND_UP.1.String.Text
 msgid  "Rounds a number up to the predefined accuracy."
@@ -7885,7 +7885,7 @@ msgstr "Adkas a ra ar ranner brasañ boutin."
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_GGT.2.String.Text
 msgid  "Integer "
-msgstr "Niver kevan "
+msgstr "Niver kevan  "
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_GGT.3.String.Text
 msgid  "Integer 1; integer 2,... are integers for which the greatest common divisor is to be calculated."
@@ -8289,7 +8289,7 @@ msgstr "Niver"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_VAR.3.String.Text
 msgid  "Number 1, number 2, ... are 1 to 30 numerical arguments which portray a sample of a population."
-msgstr "Niver 1, niver 2 ... a zo eus 1 da 30 arguzenn niverel a-genglot gant ur boblañs."
+msgstr "Niver 1, niver 2 ... a zo eus 1 da 30 arguzenn niverel a genglot gant standilhoñ ur boblañs."
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_VAR_A.1.String.Text
 msgid  "Returns the variance based on a sample. Text is evaluated as zero."
@@ -8301,7 +8301,7 @@ msgstr "Gwerzh"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_VAR_A.3.String.Text
 msgid  "Value 1; value 2; ... are 1 to 30 arguments representing a sample taken from a basic total population."
-msgstr "Gwerzh 1, Gwerzh 2, ... zo arguzennoù adalek 1 betek 30 o c'hober ur standilhon rumm tud."
+msgstr "Gwerzh 1, Gwerzh 2, ... zo arguzennoù adalek 1 betek 30 o c'hober ur standilhon eus ur rumm tud."
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_VAR_P.1.String.Text
 msgid  "Calculates variance based on the entire population."
@@ -8337,7 +8337,7 @@ msgstr "Niver"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_ST_DEV.3.String.Text
 msgid  "Number 1, number 2, ... are 1 to 30 numerical arguments which portray a sample of a population."
-msgstr "Niver 1, niver 2 ... a zo eus 1 da 30 arguzenn niverel a genglot gant standilhoñ ur boblañs."
+msgstr "Niver 1, niver 2 ... a zo eus 1 da 30 arguzenn niverel a-genglot gant ur boblañs."
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_ST_DEV_A.1.String.Text
 msgid  "Returns the standard deviation based on a sample. Text is evaluated as zero."
@@ -8769,7 +8769,7 @@ msgstr "Gwerzhioù an dasparzhañ binomiek."
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_BINOM_DIST.2.String.Text
 msgid  "X"
-msgstr "S_standilhon"
+msgstr "X"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_BINOM_DIST.3.String.Text
 msgid  "The number of successes in a series of trials."
@@ -8805,7 +8805,7 @@ msgstr "Gwerzhioù an dasparzhañ binomiek nac'hek."
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_NEG_BINOM_VERT.2.String.Text
 msgid  "X"
-msgstr "N_c'hwitadennoù"
+msgstr "S_standilhon"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_NEG_BINOM_VERT.3.String.Text
 msgid  "The number of failures in the trial range."
@@ -9885,7 +9885,7 @@ msgstr "Adkas a ra dave etrezek ur c'hellig evel testenn."
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_ADDRESS.2.String.Text
 msgid  "row"
-msgstr "Linenn"
+msgstr "rann"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_ADDRESS.3.String.Text
 msgid  "The row number of the cell."
@@ -9893,7 +9893,7 @@ msgstr "Niver rann ur c'hellig."
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_ADDRESS.4.String.Text
 msgid  "column"
-msgstr "Bann"
+msgstr "bann"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_ADDRESS.5.String.Text
 msgid  "The column number of the cell."
@@ -10865,11 +10865,11 @@ msgstr "An niver da amdreiñ"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_BASE.4.String.Text
 msgid  "radix"
-msgstr "Gwrizienn "
+msgstr "Diazez"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_BASE.5.String.Text
 msgid  "The base number for conversion must be in the range 2 - 36."
-msgstr "An diazez niverenel ma vo amdroet drezañ a rank bezañ etre 2 ha 36."
+msgstr "An diazez niverennel evit an amdroadur a rank bezañ etre 2 ha 36."
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_BASE.6.String.Text
 msgid  "Minimum length"
@@ -12549,7 +12549,7 @@ msgstr "Notennoù"
 
 #: source/ui/src/miscdlgs.src#RID_SCDLG_DELCONT.BTN_DELOBJECTS.CheckBox.Text
 msgid  "~Objects"
-msgstr "Ergorennoù"
+msgstr "Erg~orennoù"
 
 #: source/ui/src/miscdlgs.src#RID_SCDLG_DELCONT.FL_FRAME.FixedLine.Text
 msgid  "Selection"
@@ -12645,7 +12645,7 @@ msgstr "Davet traoñ"
 
 #: source/ui/src/miscdlgs.src#RID_SCDLG_INSCONT.BTN_MV_RIGHT.RadioButton.Text
 msgid  "~Right"
-msgstr "Davet dehou"
+msgstr "A-zehou"
 
 #: source/ui/src/miscdlgs.src#RID_SCDLG_INSCONT.FL_MOVE.FixedLine.Text
 msgid  "Shift cells"
@@ -13253,7 +13253,7 @@ msgstr "Ar restr n'hall ket bezañ lennet rak ez eus roadennoù dreist al linenn
 
 #: source/ui/src/scerrors.src#RID_ERRHDLSC.SCERR_IMPORT_FILE_ROWCOL & ERRCODE_RES_MASK.String.Text
 msgid  "Format error discovered in the file in sub-document $(ARG1) at $(ARG2)(row,col)."
-msgstr "Fazi mentrezh kejet outi e restr an isteul $(ARG1) war $(ARG2)(li,ba)."
+msgstr "Fazi mentrezh en isteul $(ARG1) ar restr, lec'hiadur $(ARG2)(li, ba)."
 
 #: source/ui/src/scerrors.src#RID_ERRHDLSC.SCERR_IMPORT_FORMAT_ROWCOL & ERRCODE_RES_MASK.String.Text
 msgid  "File format error found at $(ARG1)(row,col)."
@@ -13373,11 +13373,11 @@ msgstr "Lemel k~uit endalc'had..."
 
 #: source/ui/src/hdrcont.src#RID_POPUP_ROWHEADER.FID_ROW_HIDE.MenuItem.Text
 msgid  "~Hide"
-msgstr "M~asklañ"
+msgstr "~Masklañ"
 
 #: source/ui/src/hdrcont.src#RID_POPUP_ROWHEADER.FID_ROW_SHOW.MenuItem.Text
 msgid  "~Show"
-msgstr "Skra~mmañ"
+msgstr "S~krammañ"
 
 #: source/ui/src/hdrcont.src#RID_POPUP_ROWHEADER.SID_PASTE_SPECIAL.MenuItem.Text
 msgid  "P~aste Special..."

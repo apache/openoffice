@@ -725,7 +725,7 @@ msgstr "ही WinWord6 धारिका नाही."
 
 #: source/ui/app/error.src#RID_SW_ERRHDL.ERR_CODE ( ERRCODE_CLASS_READ , ERR_WW6_FASTSAVE_ERR ).String.Text
 msgid  "This file was saved with WinWord in 'Fast Save' mode. Please unmark the WinWord option 'Allow Fast Saves' and save the file again."
-msgstr "ही धारिका WinWord सोबत 'जलद जतन'  अवस्थेत जतन केली गेली. कृपया WinWord  मधील 'जलद जतन परवानगी' हा पर्याय  चिन्हांकित करू नका आणि धारिका परत साठवा."
+msgstr "ही धारिका WinWord सोबत 'जलद जतन'  अवस्थेत जतन केली गेली. कृपया WinWord  मधील 'जलद जतन परवानगी' हा पर्याय  चिन्हांकित करू नका  आणि धारिका परत साठवा."
 
 #: source/ui/app/error.src#RID_SW_ERRHDL.ERR_CODE ( ERRCODE_CLASS_READ , ERR_FORMAT_ROWCOL ).String.Text
 msgid  "File format error found at $(ARG1)(row,col)."
@@ -2443,8 +2443,9 @@ msgid  "Form control~s"
 msgstr "फॉर्मचे कंट्रोल्स् (~s)"
 
 #: source/ui/config/optdlg.src#TP_OPTPRINT_PAGE.CB_BACKGROUND.CheckBox.Text
+#, fuzzy
 msgid  "Page ba~ckground"
-msgstr "पान पार्श्वभूमी (~c)"
+msgstr "पानाची पार्श्वभूमी (~c)"
 
 #: source/ui/config/optdlg.src#TP_OPTPRINT_PAGE.CB_BLACK_FONT.CheckBox.Text
 #, fuzzy
@@ -5536,8 +5537,9 @@ msgid  "Collec~t at end of text"
 msgstr "मजकूराच्या शेवटी जमा करा (~t)"
 
 #: source/ui/dialog/regionsw.src#TP_SECTION_FTNENDNOTES.CB_FTN_NUM.CheckBox.Text
+#, fuzzy
 msgid  "~Restart numbering"
-msgstr "~क्रमांकन पुनः सुरू करा"
+msgstr "क्रमांकन पुनः सुरू करा (~R)"
 
 #: source/ui/dialog/regionsw.src#TP_SECTION_FTNENDNOTES.FT_FTN_OFFSET.FixedText.Text
 #, fuzzy
@@ -11434,8 +11436,9 @@ msgid  "Endnotes"
 msgstr "अंत्यटीपा"
 
 #: source/ui/misc/docfnote.src#TP_FOOTNOTEOPTION.FL_NUM.FixedLine.Text
+#, fuzzy
 msgid  "AutoNumbering"
-msgstr "स्वक्रमांकन"
+msgstr "स्वयंक्रमांकन"
 
 #: source/ui/misc/docfnote.src#TP_FOOTNOTEOPTION.FT_NUMTYPE.FixedText.Text
 #, fuzzy
@@ -12894,8 +12897,9 @@ msgid  "Properties"
 msgstr "गुणधर्म"
 
 #: source/ui/table/tabledlg.src#TP_FORMAT_TABLE.FT_TEXTDIRECTION.FixedText.Text
+#, fuzzy
 msgid  "Text ~direction"
-msgstr "मजकूराची दिशा (~d)"
+msgstr "मजकूर दिशा (~d)"
 
 #: source/ui/table/tabledlg.src#TP_FORMAT_TABLE.LB_TEXTDIRECTION.0.StringList.item
 #, fuzzy
@@ -14541,7 +14545,7 @@ msgstr "सूत्र"
 #: source/ui/utlui/poolfmt.src#STR_POOLFRM_MARGINAL.String.Text
 #, fuzzy
 msgid  "Marginalia"
-msgstr "मार्जिनालिय"
+msgstr "मार्जिनालिया"
 
 #: source/ui/utlui/poolfmt.src#STR_POOLFRM_WATERSIGN.String.Text
 #, fuzzy

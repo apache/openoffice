@@ -4817,7 +4817,7 @@ msgstr "Tha na leanas 'na bhroinn"
 
 #: source/ui/src/filter.src#RID_SCDLG_FILTER.LB_COND1.Default.stringlist.item
 msgid  "Does not contain"
-msgstr "Gun na leanas 'na bhroinn"
+msgstr "As aonais na leanas"
 
 #: source/ui/src/filter.src#RID_SCDLG_FILTER.LB_COND1.Default.stringlist.item
 msgid  "Begins with"
@@ -5877,7 +5877,7 @@ msgstr "An luach làithreach. Àireamhaichidh seo luach làithreach de sheilbhea
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_BW.2.String.Text
 msgid  "Rate"
-msgstr "Luach-rèidh"
+msgstr "Reat"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_BW.3.String.Text
 msgid  "The rate of interest for the period given."
@@ -5921,7 +5921,7 @@ msgstr "Luach san ama ri teachd. Tillidh seo luach an ama ri teachd airson seilb
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_ZW.2.String.Text
 msgid  "Rate"
-msgstr "Reat"
+msgstr "Luach-rèidh"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_ZW.3.String.Text
 msgid  "The rate of interest per period."
@@ -5965,7 +5965,7 @@ msgstr "Ùine pàighidh. Àireamhaichidh seo àireamh nan ùineachan pàighidh a
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_ZZR.2.String.Text
 msgid  "Rate"
-msgstr "Luach-rèidh"
+msgstr "Reat"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_ZZR.3.String.Text
 msgid  "The rate of interest per period."
@@ -6333,7 +6333,7 @@ msgstr "Beatha"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_DIA.7.String.Text
 msgid  "Useful life. The number of periods in the useful life of the asset."
-msgstr "Beatha fheumail. Àireamh nan ùineachan ann am beatha fheumail na maoine."
+msgstr "Beatha fheumail. Àireamhan nan ùineachan a mhaireas maoin feumail."
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_DIA.8.String.Text
 msgid  "Period"
@@ -7005,7 +7005,7 @@ msgstr "Tillidh seo a^b, bunait air a thogail gu cumhachd an easbonaint b."
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_POWER.2.String.Text
 msgid  "Base"
-msgstr "Bunait"
+msgstr "Base"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_POWER.3.String.Text
 msgid  "The base a of the power a^b."
@@ -7733,7 +7733,7 @@ msgstr "An àireamh a tha ri lughdachadh."
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_TRUNC.4.String.Text
 msgid  "count"
-msgstr "àireamh"
+msgstr "cunntas"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_TRUNC.5.String.Text
 msgid  "The number of places after the decimal point that are not to be truncated."
@@ -8409,7 +8409,7 @@ msgstr "àireamh "
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_DEV_SQ.3.String.Text
 msgid  "Number 1, number 2, ... are 1 to 30 numerical arguments which portray a sample."
-msgstr "Tha àireamh 1, àireamh 2, ... 'nan argamaidean eadar 1 is 30 a tha a' riochdachadh sampall."
+msgstr "Tha àireamh 1, àireamh 2, ... 'nan argamaidean (eadar 1 is 30) a tha a' riochdachadh sampall."
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_AVE_DEV.1.String.Text
 msgid  "Returns the average of the absolute deviations of a sample from the mean."
@@ -8457,7 +8457,7 @@ msgstr "àireamh "
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_GEO_MEAN.3.String.Text
 msgid  "Number 1, number 2, ... are 1 to 30 numerical arguments which portray a sample."
-msgstr "Tha àireamh 1, àireamh 2, ... 'nan argamaidean (eadar 1 is 30) a tha a' riochdachadh sampall."
+msgstr "Tha àireamh 1, àireamh 2, ... 'nan argamaidean eadar 1 is 30 a tha a' riochdachadh sampall."
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_HAR_MEAN.1.String.Text
 msgid  "Returns the harmonic mean of a sample."
@@ -8469,7 +8469,7 @@ msgstr "àireamh "
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_HAR_MEAN.3.String.Text
 msgid  "Number 1, number 2, ... are 1 to 30 numerical arguments which portray a sample."
-msgstr "Tha àireamh 1, àireamh 2, ... 'nan argamaidean (eadar 1 is 30) a tha a' riochdachadh sampall."
+msgstr "Tha àireamh 1, àireamh 2, ... 'nan argamaidean eadar 1 is 30 a tha a' riochdachadh sampall."
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_MODAL_VALUE.1.String.Text
 msgid  "Returns the most common value in a sample."
@@ -8505,7 +8505,7 @@ msgstr "dàta"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_PERCENTILE.3.String.Text
 msgid  "The array of the data in the sample."
-msgstr "Arraigh an dàta sa bhall-sampaill."
+msgstr "Arraigh an dàta san t-sampall."
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_PERCENTILE.4.String.Text
 msgid  "Alpha"
@@ -8525,7 +8525,7 @@ msgstr "dàta"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_QUARTILE.3.String.Text
 msgid  "The array of the data in the sample."
-msgstr "Arraigh an dàta san t-sampall."
+msgstr "Arraigh an dàta sa bhall-sampaill."
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_QUARTILE.4.String.Text
 msgid  "Type"
@@ -8545,7 +8545,7 @@ msgstr "dàta"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_LARGE.3.String.Text
 msgid  "The array of the data in the sample."
-msgstr "Arraigh an dàta sa bhall-sampaill."
+msgstr "Arraigh an dàta san t-sampall."
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_LARGE.4.String.Text
 msgid  "Rank_c"
@@ -8685,7 +8685,7 @@ msgstr "Tillidh seo coltachd de thoradh ràiteachais tro mheadhan an sgaoilidh d
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_B.2.String.Text
 msgid  "trials"
-msgstr "deuchainnean"
+msgstr "ràiteachasan"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_B.3.String.Text
 msgid  "The number of trials."
@@ -8777,7 +8777,7 @@ msgstr "Dè cho tric 's a shoirbhicheadh ann an sreath de dheuchainnean."
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_BINOM_DIST.4.String.Text
 msgid  "trials"
-msgstr "ràiteachasan"
+msgstr "deuchainnean"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_BINOM_DIST.5.String.Text
 msgid  "The total number of trials."
@@ -10457,7 +10457,7 @@ msgstr "àireamh"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_CHAR.3.String.Text
 msgid  "The code value for the character."
-msgstr "Luach còd a' charactair."
+msgstr "Còd a' charactair."
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_CLEAN.1.String.Text
 msgid  "Removes all nonprintable characters from text."

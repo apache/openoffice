@@ -1013,7 +1013,7 @@ msgstr "標記樹"
 
 #: source/dialogs/gallery.src#RID_SVXTABDLG_GALLERY.TabDialog.Text
 msgid  "Properties of "
-msgstr "屬性： "
+msgstr "屬性："
 
 #: source/dialogs/gallery.src#RID_SVXTABDLG_GALLERY.1.RID_SVXTABPAGE_GALLERY_GENERAL.PageItem.Text
 msgid  "General"
@@ -2881,7 +2881,7 @@ msgstr "HTTPS 代理伺服器(~S)"
 
 #: source/options/optinet2.src#RID_SVXPAGE_INET_PROXY.FT_HTTPS_PORT.FixedText.Text
 msgid  "P~ort"
-msgstr "埠(~O)"
+msgstr "連接埠(~O)"
 
 #: source/options/optinet2.src#RID_SVXPAGE_INET_PROXY.FT_FTP_PROXY.FixedText.Text
 msgid  "~FTP proxy"
@@ -3409,7 +3409,7 @@ msgstr "文字文件"
 
 #: source/options/optcolor.src#RID_SVXPAGE_COLORCONFIG.CT_COLORCONFIG.WN_SCROLL.FT_WRITERTEXTGRID.FixedText.Text
 msgid  "Grid"
-msgstr "網格"
+msgstr "格線"
 
 #: source/options/optcolor.src#RID_SVXPAGE_COLORCONFIG.CT_COLORCONFIG.WN_SCROLL.CB_WRITERFIELDSHADINGS.CheckBox.Text
 msgid  "Field shadings"
@@ -7662,8 +7662,9 @@ msgid  "Combine"
 msgstr "合併"
 
 #: source/tabpages/autocdlg.src#RID_OFAPAGE_AUTOCORR_REPLACE.FT_SHORT.FixedText.Text
+#, fuzzy
 msgid  "Repla~ce"
-msgstr "取代(~C)"
+msgstr "縮寫(~C)"
 
 #: source/tabpages/autocdlg.src#RID_OFAPAGE_AUTOCORR_REPLACE.FT_REPLACE.FixedText.Text
 #, fuzzy
@@ -8701,7 +8702,7 @@ msgstr "預覽"
 #: source/tabpages/transfrm.src#RID_SVXPAGE_POSITION_SIZE.TabPage.Text
 #, fuzzy
 msgid  "Position and Size"
-msgstr "位置與大小"
+msgstr "位置和大小"
 
 #: source/tabpages/transfrm.src#RID_SVXPAGE_POSITION_SIZE.FL_POSITION.FixedLine.Text
 #, fuzzy
@@ -8711,12 +8712,12 @@ msgstr "位置"
 #: source/tabpages/transfrm.src#RID_SVXPAGE_POSITION_SIZE.FT_POS_X.FixedText.Text
 #, fuzzy
 msgid  "Position ~X"
-msgstr "位置 ~X"
+msgstr "位置 X(~X)"
 
 #: source/tabpages/transfrm.src#RID_SVXPAGE_POSITION_SIZE.FT_POS_Y.FixedText.Text
 #, fuzzy
 msgid  "Position ~Y"
-msgstr "位置 ~Y"
+msgstr "位置 Y(~Y)"
 
 #: source/tabpages/transfrm.src#RID_SVXPAGE_POSITION_SIZE.FT_POSREFERENCE.FixedText.Text
 #, fuzzy
@@ -8961,7 +8962,7 @@ msgstr "度"
 #: source/tabpages/transfrm.src#_POS_SIZE_TEXT.#define.Text
 #, fuzzy
 msgid  "Position and Size"
-msgstr "位置和大小"
+msgstr "位置與大小"
 
 #: source/tabpages/transfrm.src#RID_SVXDLG_TRANSFORM.TabDialog.Text
 #, fuzzy
@@ -9099,8 +9100,9 @@ msgid  "~Width"
 msgstr "寬度(~W)"
 
 #: source/tabpages/grfpage.src#RID_SVXPAGE_GRFCROP.FT_HEIGHTZOOM.FixedText.Text
+#, fuzzy
 msgid  "H~eight"
-msgstr "高度(~E)"
+msgstr "高(~E)"
 
 #: source/tabpages/grfpage.src#RID_SVXPAGE_GRFCROP.FL_SIZE.FixedLine.Text
 #, fuzzy
@@ -9683,8 +9685,9 @@ msgid  "Dotted"
 msgstr "點線"
 
 #: source/tabpages/chardlg.src#RID_SVXPAGE_CHAR_EFFECTS.LB_OVERLINE.CHRDLG_UNDERLINE_BOLDDOTTED.StringList.item
+#, fuzzy
 msgid  "Dotted (Bold)"
-msgstr "點線 (粗體)"
+msgstr "點線粗體"
 
 #: source/tabpages/chardlg.src#RID_SVXPAGE_CHAR_EFFECTS.LB_OVERLINE.CHRDLG_UNDERLINE_DASH.StringList.item
 #, fuzzy
@@ -9692,8 +9695,9 @@ msgid  "Dash"
 msgstr "虛線"
 
 #: source/tabpages/chardlg.src#RID_SVXPAGE_CHAR_EFFECTS.LB_OVERLINE.CHRDLG_UNDERLINE_BOLDDASH.StringList.item
+#, fuzzy
 msgid  "Dash (Bold)"
-msgstr "虛線 (粗體)"
+msgstr "虛線粗體"
 
 #: source/tabpages/chardlg.src#RID_SVXPAGE_CHAR_EFFECTS.LB_OVERLINE.CHRDLG_UNDERLINE_LONGDASH.StringList.item
 #, fuzzy
@@ -9701,8 +9705,9 @@ msgid  "Long Dash"
 msgstr "長虛線"
 
 #: source/tabpages/chardlg.src#RID_SVXPAGE_CHAR_EFFECTS.LB_OVERLINE.CHRDLG_UNDERLINE_BOLDLONGDASH.StringList.item
+#, fuzzy
 msgid  "Long Dash (Bold)"
-msgstr "長虛線 (粗體)"
+msgstr "長虛線粗體"
 
 #: source/tabpages/chardlg.src#RID_SVXPAGE_CHAR_EFFECTS.LB_OVERLINE.CHRDLG_UNDERLINE_DASHDOT.StringList.item
 #, fuzzy
@@ -9710,8 +9715,9 @@ msgid  "Dot Dash"
 msgstr "點虛線"
 
 #: source/tabpages/chardlg.src#RID_SVXPAGE_CHAR_EFFECTS.LB_OVERLINE.CHRDLG_UNDERLINE_BOLDDASHDOT.StringList.item
+#, fuzzy
 msgid  "Dot Dash (Bold)"
-msgstr "點虛線 (粗體)"
+msgstr "點虛線粗體"
 
 #: source/tabpages/chardlg.src#RID_SVXPAGE_CHAR_EFFECTS.LB_OVERLINE.CHRDLG_UNDERLINE_DASHDOTDOT.StringList.item
 #, fuzzy
@@ -9719,8 +9725,9 @@ msgid  "Dot Dot Dash"
 msgstr "雙點虛線"
 
 #: source/tabpages/chardlg.src#RID_SVXPAGE_CHAR_EFFECTS.LB_OVERLINE.CHRDLG_UNDERLINE_BOLDDASHDOTDOT.StringList.item
+#, fuzzy
 msgid  "Dot Dot Dash (Bold)"
-msgstr "雙點虛線 (粗體)"
+msgstr "雙點虛線粗體"
 
 #: source/tabpages/chardlg.src#RID_SVXPAGE_CHAR_EFFECTS.LB_OVERLINE.CHRDLG_UNDERLINE_WAVE.StringList.item
 #, fuzzy
@@ -9728,8 +9735,9 @@ msgid  "Wave"
 msgstr "曲線"
 
 #: source/tabpages/chardlg.src#RID_SVXPAGE_CHAR_EFFECTS.LB_OVERLINE.CHRDLG_UNDERLINE_BOLDWAVE.StringList.item
+#, fuzzy
 msgid  "Wave (Bold)"
-msgstr "曲線 (粗體)"
+msgstr "曲線粗體"
 
 #: source/tabpages/chardlg.src#RID_SVXPAGE_CHAR_EFFECTS.LB_OVERLINE.CHRDLG_UNDERLINE_DOUBLEWAVE.StringList.item
 #, fuzzy

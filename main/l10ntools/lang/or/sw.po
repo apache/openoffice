@@ -737,7 +737,7 @@ msgstr "ଏହା ଗୋଟିଏ WinWord6 ଫାଇଲ ନୁହଁ।"
 #: source/ui/app/error.src#RID_SW_ERRHDL.ERR_CODE ( ERRCODE_CLASS_READ , ERR_WW6_FASTSAVE_ERR ).String.Text
 #, fuzzy
 msgid  "This file was saved with WinWord in 'Fast Save' mode. Please unmark the WinWord option 'Allow Fast Saves' and save the file again."
-msgstr "'ଶୀଘ୍ର ସଞ୍ଚୟ' ଧାରାରେ WinWord ସହିତ ଏହି ଫାଇଲ ସଞ୍ଚିତ ହୋଇଛି। ଦୟାକରି WinWord ବିକଳ୍ପରେ 'ଶୀଘ୍ର ସଞ୍ଚୟକୁ ଅନୁମତି ଦିଅନ୍ତୁ' କୁ ଚିହ୍ନଟକରନାହିଁ ଏବଂ ପୁଣିଥରେ ଫାଇଲକୁ ସଞ୍ଚୟ କରନ୍ତୁ।"
+msgstr "'ଶୀଘ୍ର ସଞ୍ଚୟ' ଧାରାରେ WinWord ସହିତ ଏହି ଫାଇଲ ସଞ୍ଚିତ ହୋଇଛି। ଦୟାକରି WinWord ବିକଳ୍ପରେ 'ଶୀଘ୍ର ସଞ୍ଚୟକୁ ଅନୁମତି ଦିଅନ୍ତୁ' କୁ ଚିହ୍ନଟକରନାହିଁ ଏବଂ ପୁଣିଥରେ ଫାଇଲ ସଞ୍ଚୟ କରନ୍ତୁ।"
 
 #: source/ui/app/error.src#RID_SW_ERRHDL.ERR_CODE ( ERRCODE_CLASS_READ , ERR_FORMAT_ROWCOL ).String.Text
 #, fuzzy
@@ -757,7 +757,7 @@ msgstr "ଏହା ଗୋଟିଏ WinWord97 ଫାଇଲ ନୁହଁ।"
 #: source/ui/app/error.src#RID_SW_ERRHDL.ERR_CODE ( ERRCODE_CLASS_READ , ERR_FORMAT_FILE_ROWCOL ).String.Text
 #, fuzzy
 msgid  "Format error discovered in the file in sub-document $(ARG1) at $(ARG2)(row,col)."
-msgstr "$(ARG2)(row,col) ର ଉପ-ଦଲିଲ $(ARG1) ରେ ସଜ୍ଜିକରଣ ତ୍ରୁଟି ଆବିଷ୍କୃତ ହୋଇଛି।"
+msgstr "$(ARG2)(row,col) ର ଉପଦଲିଲ $(ARG1) ରେ ସଜ୍ଜିକରଣ ତ୍ରୁଟି ପରିଲକ୍ଷିତ ହୋଇଛି।"
 
 #: source/ui/app/error.src#RID_SW_ERRHDL.ERR_CODE ( ERRCODE_CLASS_WRITE , ERR_SWG_WRITE_ERROR ).String.Text
 #, fuzzy
@@ -886,12 +886,12 @@ msgstr "ସମସ୍ତ ଶୈଳୀ"
 #: source/ui/app/app.src#DLG_STYLE_DESIGNER.SFX_STYLE_FAMILY_PARA.SFXSTYLEBIT_USED.FilterList.item
 #, fuzzy
 msgid  "Applied Styles"
-msgstr "ପ୍ରଯୋଗହୋଇଥିବା ଶୈଳୀସବୁ"
+msgstr "ପ୍ରୟୋଗହୋଇଥିବା ଶୈଳୀସବୁ"
 
 #: source/ui/app/app.src#DLG_STYLE_DESIGNER.SFX_STYLE_FAMILY_PARA.SFXSTYLEBIT_USERDEF.FilterList.item
 #, fuzzy
 msgid  "Custom Styles"
-msgstr "ଶୈଳୀଗୁଡିକ ବ୍ଯବସ୍ଥାକରନ୍ତୁ"
+msgstr "ଶୈଳୀଗୁଡିକ ବ୍ଯବସ୍ଥାକର"
 
 #: source/ui/app/app.src#DLG_STYLE_DESIGNER.SFX_STYLE_FAMILY_PARA.SFXSTYLEBIT_AUTO.FilterList.item
 #, fuzzy
@@ -946,12 +946,12 @@ msgstr "ସମସ୍ତ"
 #: source/ui/app/app.src#DLG_STYLE_DESIGNER.SFX_STYLE_FAMILY_CHAR.SFXSTYLEBIT_USED.FilterList.item
 #, fuzzy
 msgid  "Applied Styles"
-msgstr "ପ୍ରଯୋଗହୋଇଥିବା ଶୈଳୀସବୁ"
+msgstr "ପ୍ରୟୋଗହୋଇଥିବା ଶୈଳୀସବୁ"
 
 #: source/ui/app/app.src#DLG_STYLE_DESIGNER.SFX_STYLE_FAMILY_CHAR.SFXSTYLEBIT_USERDEF.FilterList.item
 #, fuzzy
 msgid  "Custom Styles"
-msgstr "ଶୈଳୀଗୁଡିକ ବ୍ଯବସ୍ଥାକର"
+msgstr "ଶୈଳୀଗୁଡିକ ବ୍ଯବସ୍ଥାକରନ୍ତୁ"
 
 #: source/ui/app/app.src#DLG_STYLE_DESIGNER.SFX_STYLE_FAMILY_FRAME.SfxStyleFamilyItem.Text
 #, fuzzy
@@ -1509,7 +1509,7 @@ msgstr "ଅପଟିମାଲ ଉଚ୍ଚତା"
 #: source/ui/app/mn.src#MN_TAB2.MN_SUB_TBLROW.FN_TABLE_BALANCE_ROWS.MenuItem.Text
 #, fuzzy
 msgid  "Space ~Equally"
-msgstr "ସମାନଭାବରେ ଅନ୍ତର ଦିଅ (~E)"
+msgstr "ସମାନଭାବରେ ଅନ୍ତର ଦିଅନ୍ତୁ (~E)"
 
 #: source/ui/app/mn.src#MN_TAB2.MN_SUB_TBLROW.FN_TABLE_SELECT_ROW.MenuItem.Text
 #, fuzzy
@@ -1594,7 +1594,7 @@ msgstr "ପଛକୁ ପଠାଅ"
 #: source/ui/app/mn.src#MN_DRAW5.MN_SUB_ARRANGE.MenuItem.Text
 #, fuzzy
 msgid  "~Arrange"
-msgstr "ଆୟୋଜନ (~A)"
+msgstr "ଆଯୋଜନ"
 
 #: source/ui/app/mn.src#MN_DRAW6.MN_SUB_ARRANGE.MenuItem.Text
 #, fuzzy
@@ -2567,8 +2567,9 @@ msgid  "Form control~s"
 msgstr "ନିୟନ୍ତ୍ରଣଗୁଡ଼ିକରୁ (~s)"
 
 #: source/ui/config/optdlg.src#TP_OPTPRINT_PAGE.CB_BACKGROUND.CheckBox.Text
+#, fuzzy
 msgid  "Page ba~ckground"
-msgstr "ପୃଷ୍ଠା ପୃଷ୍ଠଭୂମି (~c)"
+msgstr "ପୃଷ୍ଠା ପୃଷ୍ଠଭୂମି  (~c)"
 
 #: source/ui/config/optdlg.src#TP_OPTPRINT_PAGE.CB_BLACK_FONT.CheckBox.Text
 #, fuzzy

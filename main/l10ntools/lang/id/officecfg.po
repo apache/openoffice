@@ -321,7 +321,7 @@ msgstr "NamaKategori"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.business.Tables.categories.Fields.categoryname.ShortName
 msgid  "CategName"
-msgstr "NamaKateg"
+msgstr "NamaKat"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.business.Tables.products.Name
 msgid  "Products"
@@ -393,11 +393,11 @@ msgstr "UnitDipesan"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.business.Tables.products.Fields.unitprice.Name
 msgid  "UnitPrice"
-msgstr "HargaUnit"
+msgstr "UnitHarga"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.business.Tables.products.Fields.unitprice.ShortName
 msgid  "UnitPrice"
-msgstr "HargaUnit"
+msgstr "UnitHarga"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.business.Tables.products.Fields.reorderlevel.Name
 msgid  "ReorderLevel"
@@ -485,11 +485,11 @@ msgstr "KodePos"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.business.Tables.suppliers.Fields.stateorprovince.Name
 msgid  "StateOrProvince"
-msgstr "NegBagianAtauProvinsi"
+msgstr "ProvinsiAtauNegaraBagian"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.business.Tables.suppliers.Fields.stateorprovince.ShortName
 msgid  "StateProvi"
-msgstr "NegBagProv"
+msgstr "ProvNegBag"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.business.Tables.suppliers.Fields.countryorregion.Name
 msgid  "CountryOrRegion"
@@ -593,11 +593,11 @@ msgstr "Akhiran"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.business.Tables.mailinglist.Fields.title.Name
 msgid  "Title"
-msgstr "Judul"
+msgstr "Jabatan"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.business.Tables.mailinglist.Fields.title.ShortName
 msgid  "Title"
-msgstr "Judul"
+msgstr "Jabatan"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.business.Tables.mailinglist.Fields.organizationname.Name
 msgid  "OrganizationName"
@@ -909,11 +909,11 @@ msgstr "StatNikah"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.business.Tables.contacts.Fields.spousename.Name
 msgid  "SpouseName"
-msgstr "NamaIstriatauSuami"
+msgstr "NamaPasangan"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.business.Tables.contacts.Fields.spousename.ShortName
 msgid  "SpouseName"
-msgstr "NamaIstriatauSuami"
+msgstr "NamaPasangan"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.business.Tables.contacts.Fields.spousesinterests.Name
 msgid  "SpousesInterests"
@@ -1245,7 +1245,7 @@ msgstr "TanggalLahir"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.business.Tables.employees.Fields.datehired.Name
 msgid  "DateHired"
-msgstr "TglMulaiKerja"
+msgstr "TanggalMulaiKerja"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.business.Tables.employees.Fields.datehired.ShortName
 msgid  "DateHired"
@@ -1293,7 +1293,7 @@ msgstr "IDPengawas"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.business.Tables.employees.Fields.spousename.Name
 msgid  "SpouseName"
-msgstr "NamaPasangan"
+msgstr "NamaIstriatauSuami"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.business.Tables.employees.Fields.spousename.ShortName
 msgid  "SpouseName"
@@ -1365,7 +1365,7 @@ msgstr "NomorPesanPembelian"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.business.Tables.orders.Fields.purchaseordernumber.ShortName
 msgid  "PurchOrdNo"
-msgstr "NoPsnPmblian"
+msgstr "NoPesan"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.business.Tables.orders.Fields.requiredbydate.Name
 msgid  "RequiredByDate"
@@ -1385,7 +1385,7 @@ msgstr "JanjiTgl"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.business.Tables.orders.Fields.shipname.Name
 msgid  "ShipName"
-msgstr "NamaKirim"
+msgstr "NamaTerkirim"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.business.Tables.orders.Fields.shipname.ShortName
 msgid  "ShipName"
@@ -1437,15 +1437,15 @@ msgstr "NomorTeleponTerkirim"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.business.Tables.orders.Fields.shipphonenumber.ShortName
 msgid  "ShipPhonNo"
-msgstr "NoTelpPengirim"
+msgstr "NoTelpKirim"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.business.Tables.orders.Fields.shipdate.Name
 msgid  "ShipDate"
-msgstr "TglDikirim"
+msgstr "TanggalDikirim"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.business.Tables.orders.Fields.shipdate.ShortName
 msgid  "ShipDate"
-msgstr "TanggalDikirimkan"
+msgstr "TglDikirim"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.business.Tables.orders.Fields.shippingmethodID.Name
 msgid  "ShippingMethodID"
@@ -1501,7 +1501,7 @@ msgstr "IDProduk"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.business.Tables.orderdetails.Fields.datesold.Name
 msgid  "DateSold"
-msgstr "TglJual"
+msgstr "TanggalTerjual"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.business.Tables.orderdetails.Fields.datesold.ShortName
 msgid  "DateSold"
@@ -1541,7 +1541,7 @@ msgstr "HargaJual"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.business.Tables.orderdetails.Fields.salestax.Name
 msgid  "SalesTax"
-msgstr "PajakJual"
+msgstr "PajakPenjualan"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.business.Tables.orderdetails.Fields.salestax.ShortName
 msgid  "SalesTax"
@@ -1781,15 +1781,15 @@ msgstr "Salesman"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.business.Tables.invoices.Fields.shipdate.Name
 msgid  "ShipDate"
-msgstr "TglKirim"
+msgstr "TanggalDikirimkan"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.business.Tables.invoices.Fields.shipdate.ShortName
 msgid  "ShipDate"
-msgstr "TanggalPengiriman"
+msgstr "TglKirim"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.business.Tables.invoices.Fields.shippedto.Name
 msgid  "ShippedTo"
-msgstr "DikirimKe"
+msgstr "DikirimkanKe"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.business.Tables.invoices.Fields.shippedto.ShortName
 msgid  "ShippedTo"
@@ -1797,11 +1797,11 @@ msgstr "DikirimKe"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.business.Tables.invoices.Fields.shippedvia.Name
 msgid  "ShippedVia"
-msgstr "DikirimDgn"
+msgstr "DikirimDengan"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.business.Tables.invoices.Fields.shippedvia.ShortName
 msgid  "ShippedVia"
-msgstr "DikirimkanVia"
+msgstr "DikirimDgn"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.business.Tables.invoices.Fields.shippingcost.Name
 msgid  "ShippingCost"
@@ -2157,7 +2157,7 @@ msgstr "WaktuReserv"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.business.Tables.reservations.Fields.depositdue.Name
 msgid  "DepositDue"
-msgstr "JmlDeposit"
+msgstr "JumlahDeposit"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.business.Tables.reservations.Fields.depositdue.ShortName
 msgid  "DepositDue"
@@ -2165,7 +2165,7 @@ msgstr "JmlDeposit"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.business.Tables.reservations.Fields.totaldue.Name
 msgid  "TotalDue"
-msgstr "JmlTotal"
+msgstr "JumlahTotal"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.business.Tables.reservations.Fields.totaldue.ShortName
 msgid  "TotalDue"
@@ -2173,7 +2173,7 @@ msgstr "JmlTotal"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.business.Tables.reservations.Fields.amountpaid.Name
 msgid  "AmountPaid"
-msgstr "JumlahDibayar"
+msgstr "JumlahYgDibayar"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.business.Tables.reservations.Fields.amountpaid.ShortName
 msgid  "AmountPaid"
@@ -2393,7 +2393,7 @@ msgstr "KirimDari"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.business.Tables.deliveries.Fields.shippedvia.Name
 msgid  "ShippedVia"
-msgstr "KirimDgn"
+msgstr "DikirimkanVia"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.business.Tables.deliveries.Fields.shippedvia.ShortName
 msgid  "ShippedVia"
@@ -2409,7 +2409,7 @@ msgstr "KodeLacak"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.business.Tables.deliveries.Fields.shipdate.Name
 msgid  "ShipDate"
-msgstr "TglKirim"
+msgstr "TanggalPengiriman"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.business.Tables.deliveries.Fields.shipdate.ShortName
 msgid  "ShipDate"
@@ -2653,7 +2653,7 @@ msgstr "NoBarKod"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.business.Tables.assets.Fields.dateacquired.Name
 msgid  "DateAcquired"
-msgstr "TanggalPeroleh"
+msgstr "TanggalDiperoleh"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.business.Tables.assets.Fields.dateacquired.ShortName
 msgid  "DateAcquir"
@@ -2669,11 +2669,11 @@ msgstr "TglJual"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.business.Tables.assets.Fields.purchaseprice.Name
 msgid  "PurchasePrice"
-msgstr "HargaBeli"
+msgstr "HargaPembelian"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.business.Tables.assets.Fields.purchaseprice.ShortName
 msgid  "PurchPrice"
-msgstr "HrgaBeli"
+msgstr "HargaBeli"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.business.Tables.assets.Fields.depreciationmethod.Name
 msgid  "DepreciationMethod"
@@ -3109,7 +3109,7 @@ msgstr "NamaPasangan"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.private.Tables.addresses.Fields.nickname.Name
 msgid  "Nickname"
-msgstr "NamaPanggil"
+msgstr "NamaPanggilan"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.private.Tables.addresses.Fields.nickname.ShortName
 msgid  "Nickname"
@@ -3253,15 +3253,15 @@ msgstr "TempatBeli"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.private.Tables.householdinventory.Fields.placepurchased.ShortName
 msgid  "PlacePurch"
-msgstr "TempatBeli"
+msgstr "TmptBeli"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.private.Tables.householdinventory.Fields.purchaseprice.Name
 msgid  "PurchasePrice"
-msgstr "HargaBeli"
+msgstr "HargaPembelian"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.private.Tables.householdinventory.Fields.purchaseprice.ShortName
 msgid  "PurchPrice"
-msgstr "HragaBeli"
+msgstr "HargaBeli"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.private.Tables.householdinventory.Fields.appraisedvalue.Name
 msgid  "AppraisedValue"
@@ -3513,7 +3513,7 @@ msgstr "TglDipotkan"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.private.Tables.plants.Fields.datepruned.Name
 msgid  "DatePruned"
-msgstr "TglPangkas"
+msgstr "TanggalPangkas"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.private.Tables.plants.Fields.datepruned.ShortName
 msgid  "DatePruned"
@@ -3565,7 +3565,7 @@ msgstr "IDFilm"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.private.Tables.photographs.Fields.datetaken.Name
 msgid  "DateTaken"
-msgstr "TglFoto"
+msgstr "TanggalDifoto"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.private.Tables.photographs.Fields.datetaken.ShortName
 msgid  "DateTaken"
@@ -3573,7 +3573,7 @@ msgstr "TglFoto"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.private.Tables.photographs.Fields.timetaken.Name
 msgid  "TimeTaken"
-msgstr "WaktuFoto"
+msgstr "WaktuDifoto"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.private.Tables.photographs.Fields.timetaken.ShortName
 msgid  "TimeTaken"
@@ -3581,7 +3581,7 @@ msgstr "WaktuFoto"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.private.Tables.photographs.Fields.placetaken.Name
 msgid  "PlaceTaken"
-msgstr "TempatFoto"
+msgstr "TempatPengambilanFoto"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.private.Tables.photographs.Fields.placetaken.ShortName
 msgid  "PlaceTaken"
@@ -3589,7 +3589,7 @@ msgstr "TempatFoto"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.private.Tables.photographs.Fields.lensused.Name
 msgid  "LensUsed"
-msgstr "Lensa"
+msgstr "LensaYgDigunakan"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.private.Tables.photographs.Fields.lensused.ShortName
 msgid  "LensUsed"
@@ -3613,7 +3613,7 @@ msgstr "KcptnJepret"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.private.Tables.photographs.Fields.filterused.Name
 msgid  "FilterUsed"
-msgstr "Filter"
+msgstr "FilterYgDigunakan"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.private.Tables.photographs.Fields.filterused.ShortName
 msgid  "FilterUsed"
@@ -4481,7 +4481,7 @@ msgstr "GrProtein"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.private.Tables.dietlog.Fields.gramsfat.Name
 msgid  "GramsFat"
-msgstr "GrLemak"
+msgstr "GramLemak"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.private.Tables.dietlog.Fields.gramsfat.ShortName
 msgid  "GramsFat"
@@ -8833,7 +8833,7 @@ msgstr "Intip"
 
 #: registry/data/org/openoffice/Office/UI/Effects.xcu#Effects.UserInterface.Effects.ooo-entrance-plus.Label
 msgid  "Plus"
-msgstr "Tanda Tambah"
+msgstr "Tambah"
 
 #: registry/data/org/openoffice/Office/UI/Effects.xcu#Effects.UserInterface.Effects.ooo-entrance-random-bars.Label
 msgid  "Random Bars"
@@ -8933,7 +8933,7 @@ msgstr "Buka Lipatan"
 
 #: registry/data/org/openoffice/Office/UI/Effects.xcu#Effects.UserInterface.Effects.ooo-entrance-whip.Label
 msgid  "Whip"
-msgstr "Pecut"
+msgstr "Memecut"
 
 #: registry/data/org/openoffice/Office/UI/Effects.xcu#Effects.UserInterface.Effects.ooo-entrance-ascend.Label
 msgid  "Ascend"
@@ -8965,7 +8965,7 @@ msgstr "Memampat"
 
 #: registry/data/org/openoffice/Office/UI/Effects.xcu#Effects.UserInterface.Effects.ooo-entrance-magnify.Label
 msgid  "Magnify"
-msgstr "Perbesaran"
+msgstr "Membesar"
 
 #: registry/data/org/openoffice/Office/UI/Effects.xcu#Effects.UserInterface.Effects.ooo-entrance-curve-up.Label
 msgid  "Curve Up"
@@ -12021,7 +12021,7 @@ msgstr ""
 
 #: registry/data/org/openoffice/Office/UI/GenericCommands.xcu#GenericCommands.UserInterface.Commands..uno:AlignCenter.Label
 msgid  "Centered"
-msgstr "Tengah"
+msgstr "Rata Tengah"
 
 #: registry/data/org/openoffice/Office/UI/GenericCommands.xcu#GenericCommands.UserInterface.Commands..uno:AlignHorizontalCenter.Label
 msgid  "Align Center Horizontally"
@@ -12253,7 +12253,7 @@ msgstr "Lingkaran"
 
 #: registry/data/org/openoffice/Office/UI/GenericCommands.xcu#GenericCommands.UserInterface.Commands..uno:BasicShapes.circle-pie.Label
 msgid  "Circle Pie"
-msgstr "Pai Lonjong"
+msgstr "Pai Bulat"
 
 #: registry/data/org/openoffice/Office/UI/GenericCommands.xcu#GenericCommands.UserInterface.Commands..uno:BasicShapes.cross.Label
 msgid  "Cross"
@@ -12605,7 +12605,7 @@ msgstr "Baku"
 
 #: registry/data/org/openoffice/Office/UI/GenericCommands.xcu#GenericCommands.UserInterface.Commands..uno:CommonAlignJustified.Label
 msgid  "Justified"
-msgstr "Kiri Kanan"
+msgstr "Rata Kiri Kanan"
 
 #: registry/data/org/openoffice/Office/UI/GenericCommands.xcu#GenericCommands.UserInterface.Commands..uno:CommonAlignLeft.Label
 msgid  "Left"
@@ -15057,7 +15057,7 @@ msgstr ""
 
 #: registry/data/org/openoffice/Office/UI/GenericCommands.xcu#GenericCommands.UserInterface.Commands..uno:Undo.Label
 msgid  "Can't Undo"
-msgstr "Tak Dapat Dibatalkan"
+msgstr "Tidak Dapat Dibatalkan"
 
 #: registry/data/org/openoffice/Office/UI/GenericCommands.xcu#GenericCommands.UserInterface.Commands..uno:UndoAction.Label
 msgid  "Can't Undo"

@@ -589,8 +589,9 @@ msgid  "The end date"
 msgstr "শেষ তাৰিখটো"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Yearfrac.6.String.Text
+#, fuzzy
 msgid  "Basis"
-msgstr "আধাৰ e ৰ কাৰণে ঘাতটো গণনা কৰে । "
+msgstr "Basis"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Yearfrac.7.String.Text
 #, fuzzy
@@ -1033,8 +1034,9 @@ msgid  "The binary number to be converted (as text)"
 msgstr "বাইনেৰী সংখ্যাটো সলনি কৰিবলগীয়া হ'ব (টেক্সট্ হিচাপে)"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Bin2Oct.4.String.Text
+#, fuzzy
 msgid  "Places"
-msgstr "এটা সংখ্যাৰ দশমিক সংখ্যাবোৰ হ্ৰস্ব কৰে ।"
+msgstr "ঠাইবোৰ"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Bin2Oct.5.String.Text
 #, fuzzy
@@ -1910,7 +1912,7 @@ msgstr "কালটো"
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Amordegrc.12.String.Text
 #, fuzzy
 msgid  "Rate"
-msgstr "দিয়া তাৰিখটো"
+msgstr "হাৰ"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Amordegrc.13.String.Text
 #, fuzzy
@@ -1920,7 +1922,7 @@ msgstr "অৱমূল্যনৰ হাৰটো"
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Amordegrc.14.String.Text
 #, fuzzy
 msgid  "Basis"
-msgstr "আধাৰ"
+msgstr "আধাৰ e ৰ কাৰণে ঘাতটো গণনা কৰে । "
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Amordegrc.15.String.Text
 #, fuzzy
@@ -1995,7 +1997,7 @@ msgstr "অৱমূল্যনৰ হাৰটো"
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Amorlinc.14.String.Text
 #, fuzzy
 msgid  "Basis"
-msgstr "আধাৰ"
+msgstr "আধাৰ e ৰ কাৰণে ঘাতটো গণনা কৰে । "
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Amorlinc.15.String.Text
 #, fuzzy
@@ -2070,12 +2072,12 @@ msgstr "বাৰংবাৰতাটো"
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Accrint.14.String.Text
 #, fuzzy
 msgid  "Basis"
-msgstr "আধাৰ"
+msgstr "আধাৰ e ৰ কাৰণে ঘাতটো গণনা কৰে । "
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Accrint.15.String.Text
 #, fuzzy
 msgid  "The basis"
-msgstr "আধাৰ"
+msgstr "ৰূপান্তৰ কৰিবলগীয়া মূল্যটো ।"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Accrintm.1.String.Text
 #, fuzzy
@@ -2125,12 +2127,12 @@ msgstr "বৰ্তমান মূল্যটো"
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Accrintm.10.String.Text
 #, fuzzy
 msgid  "Basis"
-msgstr "আধাৰ e ৰ কাৰণে ঘাতটো গণনা কৰে । "
+msgstr "আধাৰ"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Accrintm.11.String.Text
 #, fuzzy
 msgid  "The basis"
-msgstr "আধাৰ"
+msgstr "ৰূপান্তৰ কৰিবলগীয়া মূল্যটো ।"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Received.1.String.Text
 #, fuzzy
@@ -2150,7 +2152,7 @@ msgstr "নিষ্পত্তি কৰা তাৰিখটোৰ পাছ
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Received.4.String.Text
 #, fuzzy
 msgid  "Maturity"
-msgstr "ম্যাদপূৰ্ণতাৰ প্ৰকাৰটো"
+msgstr "ম্যাদপূৰ্ণতা"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Received.5.String.Text
 #, fuzzy
@@ -2180,12 +2182,12 @@ msgstr "ৰেহাই মূল্য"
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Received.10.String.Text
 #, fuzzy
 msgid  "Basis"
-msgstr "আধাৰ e ৰ কাৰণে ঘাতটো গণনা কৰে । "
+msgstr "আধাৰ"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Received.11.String.Text
 #, fuzzy
 msgid  "The basis"
-msgstr "আধাৰ"
+msgstr "ৰূপান্তৰ কৰিবলগীয়া মূল্যটো ।"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Disc.1.String.Text
 #, fuzzy
@@ -2205,7 +2207,7 @@ msgstr "নিষ্পত্তি কৰা তাৰিখটোৰ পাছ
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Disc.4.String.Text
 #, fuzzy
 msgid  "Maturity"
-msgstr "ম্যাদপূৰ্ণতাৰ প্ৰকাৰটো"
+msgstr "ম্যাদপূৰ্ণতা"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Disc.5.String.Text
 #, fuzzy
@@ -2235,12 +2237,12 @@ msgstr "বৰ্তমান মূল্যটো"
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Disc.10.String.Text
 #, fuzzy
 msgid  "Basis"
-msgstr "আধাৰ e ৰ কাৰণে ঘাতটো গণনা কৰে । "
+msgstr "আধাৰ"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Disc.11.String.Text
 #, fuzzy
 msgid  "The basis"
-msgstr "আধাৰ"
+msgstr "ৰূপান্তৰ কৰিবলগীয়া মূল্যটো ।"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Duration.1.String.Text
 #, fuzzy
@@ -2300,12 +2302,12 @@ msgstr "বাৰংবাৰতাটো"
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Duration.12.String.Text
 #, fuzzy
 msgid  "Basis"
-msgstr "আধাৰ e ৰ কাৰণে ঘাতটো গণনা কৰে । "
+msgstr "আধাৰ"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Duration.13.String.Text
 #, fuzzy
 msgid  "The basis"
-msgstr "আধাৰ"
+msgstr "ৰূপান্তৰ কৰিবলগীয়া মূল্যটো ।"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Effect.1.String.Text
 #, fuzzy

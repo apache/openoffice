@@ -873,7 +873,7 @@ msgstr "恢复撤消命令 "
 
 #: source/dialog/imapdlg.src#RID_SVXDLG_IMAP.TBX_IMAPDLG1.TBI_ACTIVE.ToolBoxItem.Text
 msgid  "Active"
-msgstr "使用中"
+msgstr "使用"
 
 #: source/dialog/imapdlg.src#RID_SVXDLG_IMAP.TBX_IMAPDLG1.TBI_MACRO.ToolBoxItem.Text
 msgid  "Macro..."
@@ -1049,7 +1049,7 @@ msgstr "外侧"
 
 #: source/dialog/swframeposstrings.src#RID_SVXSW_FRAMEPOSITIONS.STR_CENTER_VERT.String.Text
 msgid  "Center"
-msgstr "居中"
+msgstr "垂直居中"
 
 #: source/dialog/swframeposstrings.src#RID_SVXSW_FRAMEPOSITIONS.STR_FROMLEFT.String.Text
 msgid  "From left"
@@ -2733,7 +2733,7 @@ msgstr "绿色"
 
 #: source/dialog/sdstring.src#RID_SVXSTR_CYAN.String.Text
 msgid  "Turquoise"
-msgstr "蓝玉色"
+msgstr "蓝绿色"
 
 #: source/dialog/sdstring.src#RID_SVXSTR_RED.String.Text
 msgid  "Red"
@@ -3993,7 +3993,7 @@ msgstr "特殊对象"
 
 #: source/engine3d/float3d.src#RID_SVXFLOAT_3D.BTN_NORMALS_FLAT.ButtonImage.QuickHelpText
 msgid  "Flat"
-msgstr "平形"
+msgstr "平坦"
 
 #: source/engine3d/float3d.src#RID_SVXFLOAT_3D.BTN_NORMALS_SPHERE.ButtonImage.QuickHelpText
 msgid  "Spherical"
@@ -4097,7 +4097,7 @@ msgstr "光源 8"
 
 #: source/engine3d/float3d.src#RID_SVXFLOAT_3D.BTN_LIGHT_COLOR.ButtonImage.QuickHelpText
 msgid  "Colors Dialog"
-msgstr "颜色对话栏"
+msgstr "借助颜色对话栏选择颜色"
 
 #: source/engine3d/float3d.src#RID_SVXFLOAT_3D.FT_AMBIENTLIGHT.FixedText.Text
 msgid  "~Ambient light"
@@ -4105,7 +4105,7 @@ msgstr "周围光线(~A)"
 
 #: source/engine3d/float3d.src#RID_SVXFLOAT_3D.BTN_AMBIENT_COLOR.ButtonImage.QuickHelpText
 msgid  "Colors Dialog"
-msgstr "颜色对话栏"
+msgstr "借助颜色对话栏选择颜色"
 
 #: source/engine3d/float3d.src#RID_SVXFLOAT_3D.FL_LIGHT.FixedLine.Text
 msgid  "Illumination"
@@ -4217,7 +4217,7 @@ msgstr "对象颜色(~O)"
 
 #: source/engine3d/float3d.src#RID_SVXFLOAT_3D.BTN_MAT_COLOR.ButtonImage.QuickHelpText
 msgid  "Colors Dialog"
-msgstr "借助颜色对话栏选择颜色"
+msgstr "颜色对话栏"
 
 #: source/engine3d/float3d.src#RID_SVXFLOAT_3D.FT_MAT_EMISSION.FixedText.Text
 msgid  "~Illumination color"
@@ -5565,7 +5565,7 @@ msgstr "属性(~I)..."
 
 #: source/gallery2/gallery.src#RID_SVXMN_GALLERY2.MN_ADDMENU.MenuItem.Text
 msgid  "~Insert"
-msgstr "插入(~I)"
+msgstr "加入(~I)"
 
 #: source/gallery2/gallery.src#RID_SVXMN_GALLERY2.MN_ADDMENU.MN_ADD.MenuItem.Text
 msgid  "~Copy"
@@ -7045,7 +7045,7 @@ msgstr "圆弧"
 
 #: source/svdraw/svdstr.src#STR_ObjNameSingulCCUT.String.Text
 msgid  "Circle segment"
-msgstr "扇形"
+msgstr "圆弧段"
 
 #: source/svdraw/svdstr.src#STR_ObjNamePluralCCUT.String.Text
 msgid  "Circle segments"
@@ -7125,11 +7125,11 @@ msgstr "贝赛尔曲线"
 
 #: source/svdraw/svdstr.src#STR_ObjNameSingulFREELINE.String.Text
 msgid  "Freeform Line"
-msgstr "自由形线条"
+msgstr "填色自由形线条"
 
 #: source/svdraw/svdstr.src#STR_ObjNamePluralFREELINE.String.Text
 msgid  "Freeform Lines"
-msgstr "自由形线条"
+msgstr "填色自由形线条"
 
 #: source/svdraw/svdstr.src#STR_ObjNameSingulFREEFILL.String.Text
 msgid  "Freeform Line"
@@ -7525,7 +7525,7 @@ msgstr "旋转 %1"
 
 #: source/svdraw/svdstr.src#STR_EditMirrorHori.String.Text
 msgid  "Flip %1 horizontal"
-msgstr "水平翻转 %1 "
+msgstr "水平翻转 %1"
 
 #: source/svdraw/svdstr.src#STR_EditMirrorVert.String.Text
 msgid  "Flip %1 vertical"
@@ -8017,7 +8017,7 @@ msgstr "向上"
 
 #: source/svdraw/svdstr.src#STR_ItemValTEXTVADJCENTER.String.Text
 msgid  "Center"
-msgstr "居中"
+msgstr "中"
 
 #: source/svdraw/svdstr.src#STR_ItemValTEXTVADJBOTTOM.String.Text
 msgid  "Bottom"

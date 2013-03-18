@@ -193,7 +193,7 @@ msgstr "Үлдэж буй хугацаа: {[1] минут }{[2] секунд}"
 
 #: inc_openoffice/windows/msi_languages/Error.ulf#OOO_ERROR_16
 msgid  "Out of memory. Shut down other applications before retrying."
-msgstr "Санах ойгоос халилаа. Дахин оролдохынхоо өмнө бусад програмуудаа хаана уу."
+msgstr "Санах ойгоос халив. Дахин оролдохын өмнө бусад програмуудаа хаана уу."
 
 #: inc_openoffice/windows/msi_languages/Error.ulf#OOO_ERROR_17
 msgid  "Installer is no longer responding."
@@ -901,11 +901,11 @@ msgstr "IIS-н виртуал лавлахыг устгаж байна..."
 
 #: inc_openoffice/windows/msi_languages/ActionTe.ulf#OOO_ACTIONTEXT_10
 msgid  "Searching for qualifying products"
-msgstr "Тусгай бүтээгдэхүүнүүдийг хайж байна"
+msgstr "Тусгай бүтээгдэхүүнийг хайж байна"
 
 #: inc_openoffice/windows/msi_languages/ActionTe.ulf#OOO_ACTIONTEXT_11
 msgid  "Computing space requirements"
-msgstr "Сул зайн шаардлагуудыг тооцоолж байна"
+msgstr "Зайн шаардлагуудыг тооцоолж байна"
 
 #: inc_openoffice/windows/msi_languages/ActionTe.ulf#OOO_ACTIONTEXT_12
 msgid  "Computing space requirements"
@@ -925,7 +925,7 @@ msgstr "Холбогч үүсгэж байна"
 
 #: inc_openoffice/windows/msi_languages/ActionTe.ulf#OOO_ACTIONTEXT_16
 msgid  "Shortcut: [1]"
-msgstr "Холбогчид: [1]"
+msgstr "Холбогч: [1]"
 
 #: inc_openoffice/windows/msi_languages/ActionTe.ulf#OOO_ACTIONTEXT_17
 msgid  "Deleting services"
@@ -1049,7 +1049,7 @@ msgstr "Бүтээгдэхүүний бүрдэр хэсгүүдийг мэдү�
 
 #: inc_openoffice/windows/msi_languages/ActionTe.ulf#OOO_ACTIONTEXT_47
 msgid  "Feature: [1]"
-msgstr "Бүрдэл хэсгүүд: [1]"
+msgstr "Бүрдэл хэсэг: [1]"
 
 #: inc_openoffice/windows/msi_languages/ActionTe.ulf#OOO_ACTIONTEXT_48
 msgid  "Publishing product information"
@@ -1093,7 +1093,7 @@ msgstr "MIME мэд. бүртгэж байна"
 
 #: inc_openoffice/windows/msi_languages/ActionTe.ulf#OOO_ACTIONTEXT_58
 msgid  "MIME Content Type: [1], Extension: [2]"
-msgstr "MIME агуулгын төрөл: [1], Өргөтгөл: [2]"
+msgstr "MIME Агуулгын төрөл: [1], Өргөтгөл: [2]"
 
 #: inc_openoffice/windows/msi_languages/ActionTe.ulf#OOO_ACTIONTEXT_59
 msgid  "Registering product"
@@ -1137,7 +1137,7 @@ msgstr "Файл: [1], Лавлах: [9]"
 
 #: inc_openoffice/windows/msi_languages/ActionTe.ulf#OOO_ACTIONTEXT_69
 msgid  "Updating environment strings"
-msgstr "Орчны хувьсагчийг шинэчилж байна"
+msgstr "Орчны хувьсагчийг засварлаж байна"
 
 #: inc_openoffice/windows/msi_languages/ActionTe.ulf#OOO_ACTIONTEXT_70
 msgid  "Name: [1], Value: [2], Action [3]"
@@ -1449,19 +1449,19 @@ msgstr "Виндовс суулгагч"
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_3
 msgid  "Cancel"
-msgstr "Цуцлах"
+msgstr "Болих"
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_5
 msgid  "&Look in:"
-msgstr "&Хайх:"
+msgstr "Дараахад &хайх:"
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_6
 msgid  "Browse to the destination folder."
-msgstr "Товлосон хавтсыг гүйлгэн үзэх."
+msgstr "Товлосон хавтсыг гүйлгэн үз."
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_7
 msgid  "{&MSSansBold8}Change Current Destination Folder"
-msgstr "{&MSSansBold8}Одоогийн товлосон хавтсыг солих"
+msgstr "{&MSSansBold8}Идэвхтэй товлосон лавлахыг соль"
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_9
 msgid  "Create new folder|"
@@ -1473,7 +1473,7 @@ msgstr "ОК"
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_12
 msgid  "&Folder name:"
-msgstr "&Хавтасны нэр:"
+msgstr "&Хавтасын нэр:"
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_13
 msgid  "Up one level|"
@@ -1489,7 +1489,7 @@ msgstr "&Өөрчлөх..."
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_18
 msgid  "Cancel"
-msgstr "Цуцлах"
+msgstr "Болих"
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_19
 msgid  "Specify a network location for the server image of the product."
@@ -1697,7 +1697,7 @@ msgstr "&Өөрчлөх..."
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_79
 msgid  "Click Next to install to this folder, or click Change to install to a different folder."
-msgstr "Энэ хавтасанд суулгах бол Үргэлжлүүлэх дээр, өөр хавтасанд суулгах бол Өөрчлөх дээр дарна уу. "
+msgstr "Энэ хавтас дотор суулгахыг хүсвэл Үргэлжлүүлэх харин өөр хавтас дотор суулгахыг хүсвэл Өөрчлөх дээр дарна уу."
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_80
 msgid  "{&MSSansBold8}Database Folder"
@@ -1741,7 +1741,7 @@ msgstr "[INSTALLDIR]"
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_92
 msgid  "Install [ProductName] to:"
-msgstr "[ProductName] дараах руу суулга:"
+msgstr "[ProductName]-г дараах руу суулга:"
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_93
 msgid  "&Next >"
@@ -1753,7 +1753,7 @@ msgstr "Сонгосон бүрдэл хэсгийн суулгацын хувь
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_97
 msgid  "The highlighted volumes do not have enough disk space available for the currently selected features. You can remove files from the highlighted volumes, choose to install less features onto local drives, or select different destination drives."
-msgstr "Сая тэмдэглэсэн бүрдэл хэсгүүдийн хувьд тэмдэглэсэн хөтлөгчид хангалттай дискийн сул зай алга. Та тэмдэглэсэн хөтлөгчөөс файлуудыг устгах, сонгосон боломжуудаа цөөрүүлэх эсвэл өөр товлосон хөтлөгчийг сольж сонгож болно."
+msgstr "Тэмдэглэсэн бүрдэл хэсгийн хувьд сонгосон дискэнд хангалттай сул зай алга. Та сонгосон дискнээсээ файл устгах эсвэл цөөн бүрдэл хэсэг суулгахаар тэмдэглэх эсвэл өөр диск сонгож болно."
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_98
 msgid  "{&MSSansBold8}Disk Space Requirements"
@@ -2041,15 +2041,15 @@ msgstr "Залуурчаас гарахдаа Дуусгах дээр товши
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_188
 msgid  "You can either keep any existing installed elements on your system to continue this installation at a later time or you can restore your system to its original state prior to the installation."
-msgstr "Та суулгацыг хожим үргэлжлүүлэхийн тулд суусан байгаа элементүүдээ устгахгүй үлдээх эсвэл та өөр системээ суулгалтын өмнөх хуучин хэвэнд нь оруулж болно."
+msgstr "Та суулгацыг дараа үргэлжлүүлэхийн тулд одоогоор систем дээрээ суусан байгаа элементүүдийг барьж үлдэж болох бөгөөд эсвэл та суулгацын өмнө таны систем ямар байсан яг тэр төлөвт аваачиж болно."
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_189
 msgid  "Click Restore or Continue Later to exit the wizard."
-msgstr "Залуурчаас гарахдаа Сэргээх эсвэл дараа үргэлжлүүлэх дээр товшино уу."
+msgstr "Залуурчаас гарахдаа та Сэргээх, эсвэл дараа үргэлжлүүлэх дээр товшино уу."
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_190
 msgid  "{&TahomaBold10}Installation Wizard Completed"
-msgstr "{&TahomaBold10}Суулгацын залуурч дууслаа"
+msgstr "{&TahomaBold10}Суулгацын залуурч ажлаа дууслаа"
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_191
 msgid  "The wizard was interrupted before [ProductName] could be completely installed."
@@ -2081,7 +2081,7 @@ msgstr "&Дуусгах"
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_198
 msgid  "{&TahomaBold10}Installation Wizard Completed"
-msgstr "{&TahomaBold10}Суулгацын залуурч төгсөв"
+msgstr "{&TahomaBold10}Суулгацын залуурч дууслаа"
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_199
 msgid  "The Installation Wizard has successfully installed [ProductName]. Click Finish to exit the wizard."

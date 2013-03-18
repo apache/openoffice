@@ -1165,8 +1165,9 @@ msgid  "Creating duplicate files"
 msgstr "Створення повторюваних файлів"
 
 #: inc_openoffice/windows/msi_languages/ActionTe.ulf#OOO_ACTIONTEXT_20
+#, fuzzy
 msgid  "File: [1],  Directory: [9],  Size: [6]"
-msgstr "Файл: [1], Тека: [9], Розмір: [6]"
+msgstr "Файл:[1], Тека: [9], Розмір [6]"
 
 #: inc_openoffice/windows/msi_languages/ActionTe.ulf#OOO_ACTIONTEXT_21
 #, fuzzy
@@ -1289,8 +1290,9 @@ msgid  "Publishing qualified components"
 msgstr "Встановлення додаткових компонентів"
 
 #: inc_openoffice/windows/msi_languages/ActionTe.ulf#OOO_ACTIONTEXT_45
+#, fuzzy
 msgid  "Component ID: [1], Qualifier: [2]"
-msgstr "Компонент ID: [1], Qualifier: [2]"
+msgstr "Компонент: [1], Qualifier: [2]"
 
 #: inc_openoffice/windows/msi_languages/ActionTe.ulf#OOO_ACTIONTEXT_46
 #, fuzzy
@@ -1353,8 +1355,9 @@ msgid  "Registering MIME info"
 msgstr "Реєстрація інформації MIME"
 
 #: inc_openoffice/windows/msi_languages/ActionTe.ulf#OOO_ACTIONTEXT_58
+#, fuzzy
 msgid  "MIME Content Type: [1], Extension: [2]"
-msgstr "Тип контенту MIME: [1], Розширення: [2]"
+msgstr "Тип змісту MIME: [1], Розширення: [2]"
 
 #: inc_openoffice/windows/msi_languages/ActionTe.ulf#OOO_ACTIONTEXT_59
 #, fuzzy
@@ -1402,8 +1405,9 @@ msgid  "Removing duplicated files"
 msgstr "Видалення резервних копій файлів"
 
 #: inc_openoffice/windows/msi_languages/ActionTe.ulf#OOO_ACTIONTEXT_68
+#, fuzzy
 msgid  "File: [1], Directory: [9]"
-msgstr "Файл: [1], Каталог: [9]"
+msgstr "Файл: [1], каталог: [9]"
 
 #: inc_openoffice/windows/msi_languages/ActionTe.ulf#OOO_ACTIONTEXT_69
 #, fuzzy
@@ -1809,8 +1813,9 @@ msgid  "Browse to the destination folder."
 msgstr "Вкажіть теку призначення."
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_7
+#, fuzzy
 msgid  "{&MSSansBold8}Change Current Destination Folder"
-msgstr "{&MSSansBold8}Зміна поточної теки призначення"
+msgstr "{&MSSansBold8}Зміна поточної теки папки призначення"
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_9
 #, fuzzy
@@ -2160,7 +2165,7 @@ msgstr "[INSTALLDIR]"
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_92
 #, fuzzy
 msgid  "Install [ProductName] to:"
-msgstr "Встановити [ProductName] в:"
+msgstr "Встановити [ProductName] у:"
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_93
 #, fuzzy
@@ -2173,8 +2178,9 @@ msgid  "The disk space required for the installation of the selected features."
 msgstr "Вимоги до простору для встановлення обраних компонентів."
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_97
+#, fuzzy
 msgid  "The highlighted volumes do not have enough disk space available for the currently selected features. You can remove files from the highlighted volumes, choose to install less features onto local drives, or select different destination drives."
-msgstr "На виділених дисках бракує місця для встановлення обраних компонентів. Можна видалити файли з виділених дисків, зменшити кількість компонентів, що встановлюються, чи виконати встановлення на інший диск."
+msgstr "На виділених дисках недостатньо місця для встановлення обраних компонентів. Можна видалити файли із виділених дисків, зменшити кількість компонентів, що встановлюються, чи виконати встановлення на інший диск."
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_98
 #, fuzzy
@@ -2543,12 +2549,12 @@ msgstr "Натисніть «Відновити» чи «Продовжити» 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_190
 #, fuzzy
 msgid  "{&TahomaBold10}Installation Wizard Completed"
-msgstr "{&TahomaBold10}Роботу помічника встановлення завершено"
+msgstr "{&TahomaBold10}Робота помічник встановлення завершена"
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_191
 #, fuzzy
 msgid  "The wizard was interrupted before [ProductName] could be completely installed."
-msgstr "Роботу помічника встановлення [ProductName] перервано."
+msgstr "Робота помічника встановлення [ProductName] була перервана."
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_192
 #, fuzzy

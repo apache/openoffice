@@ -169,7 +169,7 @@ msgstr "Невозможно проверить сертификат"
 
 #: source/dialogs/digitalsignaturesdialog.src#RID_XMLSECDLG_DIGSIG.STR_INVALID_SIGNATURE.String.Text
 msgid  "The signatures in this document are invalid"
-msgstr "Подписи к данному документу не верны"
+msgstr "Подписи документа недействительны"
 
 #: source/dialogs/digitalsignaturesdialog.src#RID_XMLSECDLG_DIGSIG.FI_STATE_VALID.FixedText.Text
 msgid  "The signatures in this document are valid"
@@ -265,7 +265,7 @@ msgstr "Серийный номер"
 
 #: source/dialogs/certificateviewer.src#RID_XMLSECTP_DETAILS.STR_SIGALGORITHM.String.Text
 msgid  "Signature Algorithm"
-msgstr "Алгоритм подписи"
+msgstr "Алгоритм подписи сертификата"
 
 #: source/dialogs/certificateviewer.src#RID_XMLSECTP_DETAILS.STR_ISSUER.String.Text
 msgid  "Issuer"

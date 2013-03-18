@@ -2369,7 +2369,7 @@ msgstr "Intervalo de impressão"
 #: source/ui/pagedlg/pagedlg.src#RID_SCDLG_AREAS.LB_PRINTAREA.Default.StringList.item
 #, fuzzy
 msgid  "- none -"
-msgstr "- nenhuma -"
+msgstr "- nenhum -"
 
 #: source/ui/pagedlg/pagedlg.src#RID_SCDLG_AREAS.LB_PRINTAREA.Default.StringList.item
 #, fuzzy
@@ -2617,8 +2617,9 @@ msgid  "Text Attributes"
 msgstr "Atributos de texto"
 
 #: source/ui/pagedlg/hfedtdlg.src#RID_HFBASE.BTN_FILE.ImageButton.QuickHelpText
+#, fuzzy
 msgid  "Title"
-msgstr "Título"
+msgstr "Nome do ficheiro"
 
 #: source/ui/pagedlg/hfedtdlg.src#RID_HFBASE.RID_POPUP_FCOMMAND.FILE_COMMAND_TITEL.MenuItem.Text
 #, fuzzy
@@ -3741,7 +3742,7 @@ msgstr "Ordenar"
 #: source/ui/src/globstr.src#RID_GLOBSTR.STR_UNDO_QUERY.String.Text
 #, fuzzy
 msgid  "Filter"
-msgstr "Filtrar"
+msgstr "Filtro"
 
 #: source/ui/src/globstr.src#RID_GLOBSTR.STR_UNDO_DBDATA.String.Text
 #, fuzzy
@@ -6536,7 +6537,7 @@ msgstr "Base de dados"
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_DB_COUNT.3.String.Text
 #, fuzzy
 msgid  "The range of cells containing data."
-msgstr "O intervalo de células que contêm dados."
+msgstr "O intervalo de células que contém dados."
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_DB_COUNT.4.String.Text
 #, fuzzy
@@ -6571,7 +6572,7 @@ msgstr "Base de dados"
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_DB_COUNT_2.3.String.Text
 #, fuzzy
 msgid  "The range of cells containing data."
-msgstr "O intervalo de células que contêm dados."
+msgstr "O intervalo de células que contém dados."
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_DB_COUNT_2.4.String.Text
 #, fuzzy
@@ -6961,7 +6962,7 @@ msgstr "Número inteiro entre 1583 e 9956 ou 0 e 99 (19xx ou 20xx dependendo da 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_GET_DATE.4.String.Text
 #, fuzzy
 msgid  "month"
-msgstr "mês"
+msgstr "Mês"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_GET_DATE.5.String.Text
 #, fuzzy
@@ -6986,7 +6987,7 @@ msgstr "Devolve um número interno para um texto que contenha um formato de data
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_GET_DATE_VALUE.2.String.Text
 #, fuzzy
 msgid  "text"
-msgstr "texto"
+msgstr "Texto"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_GET_DATE_VALUE.3.String.Text
 #, fuzzy
@@ -7021,7 +7022,7 @@ msgstr "Data_1"
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_GET_DIFF_DATE_360.3.String.Text
 #, fuzzy
 msgid  "The start date for calculating the difference in days."
-msgstr "A data inicial para o cálculo da diferença de dias."
+msgstr "A data inicial para o cálculo da diferença em dias."
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_GET_DIFF_DATE_360.4.String.Text
 #, fuzzy
@@ -7151,7 +7152,7 @@ msgstr "Devolve um número sequencial para um texto apresentado numa possível e
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_GET_TIME_VALUE.2.String.Text
 #, fuzzy
 msgid  "text"
-msgstr "texto"
+msgstr "Texto"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_GET_TIME_VALUE.3.String.Text
 #, fuzzy
@@ -7306,7 +7307,7 @@ msgstr "Pagamentos regulares. O montante constante da anuidade que é pago em ca
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_BW.8.String.Text
 #, fuzzy
 msgid  "FV"
-msgstr "Vf"
+msgstr "FV"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_BW.9.String.Text
 #, fuzzy
@@ -7416,7 +7417,7 @@ msgstr "Valor actual. O valor actual de um fluxo de pagamentos."
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_ZZR.8.String.Text
 #, fuzzy
 msgid  "FV"
-msgstr "VF"
+msgstr "FV"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_ZZR.9.String.Text
 #, fuzzy
@@ -7591,7 +7592,7 @@ msgstr "Período de pagamento. O número total de períodos em que é paga a anu
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_ZINS_Z.8.String.Text
 #, fuzzy
 msgid  "pv"
-msgstr "VA"
+msgstr "pv"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_ZINS_Z.9.String.Text
 #, fuzzy
@@ -7776,7 +7777,7 @@ msgstr "Período de pagamento. O número total de períodos em que é paga a anu
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_KUM_ZINS_Z.6.String.Text
 #, fuzzy
 msgid  "pv"
-msgstr "VA"
+msgstr "pv"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_KUM_ZINS_Z.7.String.Text
 #, fuzzy
@@ -8136,7 +8137,7 @@ msgstr "Valor actual líquido. Calcula o valor actual líquido de um investiment
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_NBW.2.String.Text
 #, fuzzy
 msgid  "RATE"
-msgstr "Taxa"
+msgstr "TAXA"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_NBW.3.String.Text
 #, fuzzy
@@ -8146,7 +8147,7 @@ msgstr "A taxa de desconto durante um período."
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_NBW.4.String.Text
 #, fuzzy
 msgid  "value "
-msgstr "Valor"
+msgstr "valor "
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_NBW.5.String.Text
 #, fuzzy
@@ -8291,7 +8292,7 @@ msgstr "Vf"
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_LAUFZ.7.String.Text
 #, fuzzy
 msgid  "The future value of the investment."
-msgstr "Representa o valor futuro de um investimento."
+msgstr "O valor futuro do investimento."
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_ZGZ.1.String.Text
 #, fuzzy
@@ -8336,7 +8337,7 @@ msgstr "Devolve VERDADEIRO, se o valor é uma referência."
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_IS_REF.2.String.Text
 #, fuzzy
 msgid  "value"
-msgstr "valor"
+msgstr "Valor"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_IS_REF.3.String.Text
 #, fuzzy
@@ -8728,7 +8729,7 @@ msgstr "Devolve a soma de todos os argumentos."
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_SUM.2.String.Text
 #, fuzzy
 msgid  "number "
-msgstr "Número"
+msgstr "Número "
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_SUM.3.String.Text
 #, fuzzy
@@ -8743,7 +8744,7 @@ msgstr "Devolve a soma dos quadrados dos argumentos."
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_SUM_SQ.2.String.Text
 #, fuzzy
 msgid  "number "
-msgstr "Número "
+msgstr "Número"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_SUM_SQ.3.String.Text
 #, fuzzy
@@ -8939,7 +8940,7 @@ msgstr "Devolve a raiz quadrada de um número."
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_SQRT.2.String.Text
 #, fuzzy
 msgid  "number"
-msgstr "Probabilidade"
+msgstr "Número"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_SQRT.3.String.Text
 #, fuzzy
@@ -9004,7 +9005,7 @@ msgstr "Número_2"
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_KOMBIN.5.String.Text
 #, fuzzy
 msgid  "The number of elements selected."
-msgstr "É o número de elementos seleccionados."
+msgstr "O número de elementos seleccionado."
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_KOMBIN_2.1.String.Text
 #, fuzzy
@@ -9174,7 +9175,7 @@ msgstr "Devolve o seno de um número."
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_SIN.2.String.Text
 #, fuzzy
 msgid  "number"
-msgstr "Núm_caracteres"
+msgstr "Número"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_SIN.3.String.Text
 #, fuzzy
@@ -9204,7 +9205,7 @@ msgstr "Devolve a tangente de um número."
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_TAN.2.String.Text
 #, fuzzy
 msgid  "number"
-msgstr "Núm_de_caracteres"
+msgstr "Número"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_TAN.3.String.Text
 #, fuzzy
@@ -9234,7 +9235,7 @@ msgstr "Devolve o seno hiperbólico de um número."
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_SIN_HYP.2.String.Text
 #, fuzzy
 msgid  "number"
-msgstr "Núm_caracteres"
+msgstr "Número"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_SIN_HYP.3.String.Text
 #, fuzzy
@@ -9264,7 +9265,7 @@ msgstr "Devolve a tangente hiperbólica de um número."
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_TAN_HYP.2.String.Text
 #, fuzzy
 msgid  "number"
-msgstr "Núm_vezes"
+msgstr "Número"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_TAN_HYP.3.String.Text
 #, fuzzy
@@ -9546,7 +9547,7 @@ msgstr "Trunca um número para um inteiro, suprimindo-lhe a casa decimal."
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_TRUNC.2.String.Text
 #, fuzzy
 msgid  "number"
-msgstr "número"
+msgstr "Número"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_TRUNC.3.String.Text
 #, fuzzy
@@ -9571,7 +9572,7 @@ msgstr "Arredonda um número para uma quantidade de dígitos predefinida."
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_ROUND.2.String.Text
 #, fuzzy
 msgid  "number"
-msgstr "número"
+msgstr "Número"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_ROUND.3.String.Text
 #, fuzzy
@@ -9586,7 +9587,7 @@ msgstr "Núm_dígitos"
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_ROUND.5.String.Text
 #, fuzzy
 msgid  "The number of places to which a number is to be rounded."
-msgstr "Determina a quantidade de dígitos para a qual se deseja arredondar."
+msgstr "Determina a quantidade de casas decimais para a qual se deseja arredondar."
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_ROUND_UP.1.String.Text
 #, fuzzy
@@ -9601,7 +9602,7 @@ msgstr "Número"
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_ROUND_UP.3.String.Text
 #, fuzzy
 msgid  "The number to be rounded up."
-msgstr "O número que pretende arredondar por excesso."
+msgstr "O número que pretende arredondar."
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_ROUND_UP.4.String.Text
 #, fuzzy
@@ -9776,7 +9777,7 @@ msgstr "Transposição de matriz. Substitui as linhas e colunas de uma matriz."
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_MAT_TRANS.2.String.Text
 #, fuzzy
 msgid  "array"
-msgstr "Matriz 1"
+msgstr "Matriz"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_MAT_TRANS.3.String.Text
 #, fuzzy
@@ -9791,7 +9792,7 @@ msgstr "Multiplicação de matrizes. Devolve o produto matricial de duas matrize
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_MAT_MULT.2.String.Text
 #, fuzzy
 msgid  "array"
-msgstr "Matriz 2"
+msgstr "Matriz 1"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_MAT_MULT.3.String.Text
 #, fuzzy
@@ -9801,7 +9802,7 @@ msgstr "A primeira matriz para obter o produto matricial."
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_MAT_MULT.4.String.Text
 #, fuzzy
 msgid  "array"
-msgstr "Matriz"
+msgstr "Matriz 2"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_MAT_MULT.5.String.Text
 #, fuzzy
@@ -9816,7 +9817,7 @@ msgstr "Devolve o determinante de uma matriz."
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_MAT_DET.2.String.Text
 #, fuzzy
 msgid  "array"
-msgstr "matriz"
+msgstr "Matriz"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_MAT_DET.3.String.Text
 #, fuzzy
@@ -9831,7 +9832,7 @@ msgstr "Devolve a matriz inversa da matriz especificada."
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_MAT_INV.2.String.Text
 #, fuzzy
 msgid  "array"
-msgstr "Matriz_tabela"
+msgstr "Matriz"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_MAT_INV.3.String.Text
 #, fuzzy
@@ -9881,12 +9882,12 @@ msgstr "Matriz_X"
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_SUM_X2MY2.3.String.Text
 #, fuzzy
 msgid  "First array where the square of the arguments are totalled."
-msgstr "Primeira matriz na qual o quadrado dos argumentos será totalizado."
+msgstr "Primeira matriz onde o quadrado dos argumentos será totalizado."
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_SUM_X2MY2.4.String.Text
 #, fuzzy
 msgid  "array_y"
-msgstr "Matriz _Y"
+msgstr "Matriz_Y"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_SUM_X2MY2.5.String.Text
 #, fuzzy
@@ -9911,7 +9912,7 @@ msgstr "Primeira matriz na qual o quadrado dos argumentos será totalizado."
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_SUM_X2DY2.4.String.Text
 #, fuzzy
 msgid  "array_y"
-msgstr "Matriz_Y"
+msgstr "Matriz _Y"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_SUM_X2DY2.5.String.Text
 #, fuzzy
@@ -9951,7 +9952,7 @@ msgstr "Devolve uma distribuição de frequência como matriz vertical."
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_FREQUENCY.2.String.Text
 #, fuzzy
 msgid  "data"
-msgstr "Dados"
+msgstr "Matriz_dados"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_FREQUENCY.3.String.Text
 #, fuzzy
@@ -9981,7 +9982,7 @@ msgstr "Dados_Y"
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_RGP.3.String.Text
 #, fuzzy
 msgid  "The Y data array."
-msgstr "A matriz de dados Y."
+msgstr "A matriz dos dados Y."
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_RGP.4.String.Text
 #, fuzzy
@@ -9991,7 +9992,7 @@ msgstr "Dados_X"
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_RGP.5.String.Text
 #, fuzzy
 msgid  "The X data array."
-msgstr "A matriz de dados X."
+msgstr "A matriz dos dados X."
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_RGP.6.String.Text
 #, fuzzy
@@ -10001,7 +10002,7 @@ msgstr "Tipo_de_rectas"
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_RGP.7.String.Text
 #, fuzzy
 msgid  "If type = 0 the linears will be calculated through the zero point, or else moved linears."
-msgstr "É um valor lógico que determina se a constante b deve ser igual a 0 ou não."
+msgstr "É um valor lógico que determina se a constante b deve ser igual a 0."
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_RGP.8.String.Text
 #, fuzzy
@@ -10026,7 +10027,7 @@ msgstr "Dados_Y"
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_RKP.3.String.Text
 #, fuzzy
 msgid  "The Y data array."
-msgstr "A matriz dos dados y."
+msgstr "A matriz de dados Y."
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_RKP.4.String.Text
 #, fuzzy
@@ -10036,7 +10037,7 @@ msgstr "Dados_X"
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_RKP.5.String.Text
 #, fuzzy
 msgid  "The X data array."
-msgstr "A matriz dos dados x."
+msgstr "A matriz de dados X."
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_RKP.6.String.Text
 #, fuzzy
@@ -10046,7 +10047,7 @@ msgstr "Tipo_de_função"
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_RKP.7.String.Text
 #, fuzzy
 msgid  "If type = 0 then the functions will be calculated in the form of y=m^x, or also functions y=b*m^x."
-msgstr "É um valor lógico que especifica se a constante b deve ser igual a 1."
+msgstr "É um valor lógico que determina se a constante b deve ser igual a 0."
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_RKP.8.String.Text
 #, fuzzy
@@ -10071,7 +10072,7 @@ msgstr "Dados_Y"
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_TREND.3.String.Text
 #, fuzzy
 msgid  "The Y data array."
-msgstr "A matriz dos dados Y."
+msgstr "A matriz de dados Y."
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_TREND.4.String.Text
 #, fuzzy
@@ -10081,7 +10082,7 @@ msgstr "Dados_X"
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_TREND.5.String.Text
 #, fuzzy
 msgid  "The X data array as the basis for the regression."
-msgstr "A matriz de dados X como base para a regressão."
+msgstr "A matriz de dados como base para a regressão."
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_TREND.6.String.Text
 #, fuzzy
@@ -10116,7 +10117,7 @@ msgstr "Dados_Y"
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_GROWTH.3.String.Text
 #, fuzzy
 msgid  "The Y data array."
-msgstr "A matriz dos dados Y."
+msgstr "A matriz de dados Y."
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_GROWTH.4.String.Text
 #, fuzzy
@@ -10156,7 +10157,7 @@ msgstr "Conta quantos números existem numa lista de argumentos."
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_COUNT.2.String.Text
 #, fuzzy
 msgid  "value "
-msgstr "Valor "
+msgstr "Valor"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_COUNT.3.String.Text
 #, fuzzy
@@ -10171,7 +10172,7 @@ msgstr "Conta quantos valores existem na lista de argumentos."
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_COUNT_2.2.String.Text
 #, fuzzy
 msgid  "value "
-msgstr "Valor"
+msgstr "Valor "
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_COUNT_2.3.String.Text
 #, fuzzy
@@ -10186,7 +10187,7 @@ msgstr "Devolve o valor máximo numa lista de argumentos."
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_MAX.2.String.Text
 #, fuzzy
 msgid  "number "
-msgstr "Núm1; núm2;... "
+msgstr "Número "
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_MAX.3.String.Text
 #, fuzzy
@@ -10201,7 +10202,7 @@ msgstr "Devolve o valor máximo numa lista de argumentos. Ao texto é atribuído
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_MAX_A.2.String.Text
 #, fuzzy
 msgid  "value "
-msgstr "Valor "
+msgstr "Valor"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_MAX_A.3.String.Text
 #, fuzzy
@@ -10216,7 +10217,7 @@ msgstr "Devolve o valor mínimo de uma lista de argumentos."
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_MIN.2.String.Text
 #, fuzzy
 msgid  "number "
-msgstr "Número "
+msgstr "Núm1; núm2;... "
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_MIN.3.String.Text
 #, fuzzy
@@ -10231,7 +10232,7 @@ msgstr "Devolve o valor mínimo numa lista de argumentos. Ao texto é atribuído
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_MIN_A.2.String.Text
 #, fuzzy
 msgid  "value "
-msgstr "valor "
+msgstr "Valor "
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_MIN_A.3.String.Text
 #, fuzzy
@@ -10251,7 +10252,7 @@ msgstr "Número "
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_VAR.3.String.Text
 #, fuzzy
 msgid  "Number 1, number 2, ... are 1 to 30 numerical arguments which portray a sample of a population."
-msgstr "Número 1, número 2, ... são argumentos numéricos de 1 a 30 correspondentes a uma parte da população."
+msgstr "Número 1, número 2,... são argumentos numéricos de 1 a 30 correspondentes a uma amostra de população."
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_VAR_A.1.String.Text
 #, fuzzy
@@ -10311,7 +10312,7 @@ msgstr "Número "
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_ST_DEV.3.String.Text
 #, fuzzy
 msgid  "Number 1, number 2, ... are 1 to 30 numerical arguments which portray a sample of a population."
-msgstr "Número 1, número 2, ... são argumentos numéricos de 1 a 30 representando uma população."
+msgstr "Número 1, número 2, ... são argumentos numéricos de 1 a 30 correspondentes a uma parte da população."
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_ST_DEV_A.1.String.Text
 #, fuzzy
@@ -10401,7 +10402,7 @@ msgstr "Número "
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_DEV_SQ.3.String.Text
 #, fuzzy
 msgid  "Number 1, number 2, ... are 1 to 30 numerical arguments which portray a sample."
-msgstr "Número 1, número 2, ... são argumentos numéricos de 1 a 30 que representam uma amostra."
+msgstr "Número 1, número 2;... são argumentos numéricos de 1 a 30 que representam uma amostra."
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_AVE_DEV.1.String.Text
 #, fuzzy
@@ -10461,7 +10462,7 @@ msgstr "Número "
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_GEO_MEAN.3.String.Text
 #, fuzzy
 msgid  "Number 1, number 2, ... are 1 to 30 numerical arguments which portray a sample."
-msgstr "Número 1; número 2;... são argumentos numéricos de 1 a 30 que representam uma amostra."
+msgstr "Número 1, número 2, ... são argumentos numéricos de 1 a 30 que representam uma amostra."
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_HAR_MEAN.1.String.Text
 #, fuzzy
@@ -10476,7 +10477,7 @@ msgstr "Número "
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_HAR_MEAN.3.String.Text
 #, fuzzy
 msgid  "Number 1, number 2, ... are 1 to 30 numerical arguments which portray a sample."
-msgstr "Número 1; número 2;... são argumentos numéricos de 1 a 30 que representam uma amostra."
+msgstr "Número 1, número 2, ... são argumentos numéricos de 1 a 30 que representam uma amostra."
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_MODAL_VALUE.1.String.Text
 #, fuzzy
@@ -10516,12 +10517,12 @@ msgstr "Devolve o quantil alfa de uma amostra."
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_PERCENTILE.2.String.Text
 #, fuzzy
 msgid  "data"
-msgstr "dados"
+msgstr "Dados"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_PERCENTILE.3.String.Text
 #, fuzzy
 msgid  "The array of the data in the sample."
-msgstr "A matriz dos dados na amostra."
+msgstr "A matriz de dados na amostra."
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_PERCENTILE.4.String.Text
 #, fuzzy
@@ -10541,12 +10542,12 @@ msgstr "Devolve um quartil de um conjunto de dados."
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_QUARTILE.2.String.Text
 #, fuzzy
 msgid  "data"
-msgstr "dados"
+msgstr "Dados"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_QUARTILE.3.String.Text
 #, fuzzy
 msgid  "The array of the data in the sample."
-msgstr "A matriz dos dados na amostra."
+msgstr "A matriz de dados na amostra."
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_QUARTILE.4.String.Text
 #, fuzzy
@@ -10566,7 +10567,7 @@ msgstr "Devolve o maior valor k-ésimo de uma série de dados."
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_LARGE.2.String.Text
 #, fuzzy
 msgid  "data"
-msgstr "dados"
+msgstr "Dados"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_LARGE.3.String.Text
 #, fuzzy
@@ -10576,12 +10577,12 @@ msgstr "A matriz de dados na amostra."
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_LARGE.4.String.Text
 #, fuzzy
 msgid  "Rank_c"
-msgstr "MENOR"
+msgstr "MAIOR"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_LARGE.5.String.Text
 #, fuzzy
 msgid  "The ranking of the value."
-msgstr "A posição do valor."
+msgstr "Representa a posição do valor."
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_SMALL.1.String.Text
 #, fuzzy
@@ -10721,7 +10722,7 @@ msgstr "A matriz das probabilidades associadas."
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_PROB.6.String.Text
 #, fuzzy
 msgid  "Start"
-msgstr "Início"
+msgstr "Inicial"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_PROB.7.String.Text
 #, fuzzy
@@ -10746,7 +10747,7 @@ msgstr "Devolve a probabilidade de um resultado de teste utilizando a distribui�
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_B.2.String.Text
 #, fuzzy
 msgid  "trials"
-msgstr "Tentativa_s"
+msgstr "Tentativas"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_B.3.String.Text
 #, fuzzy
@@ -10756,7 +10757,7 @@ msgstr "O número de tentativas."
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_B.4.String.Text
 #, fuzzy
 msgid  "SP"
-msgstr "Probabilidades_s"
+msgstr "Probabilidade_s"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_B.5.String.Text
 #, fuzzy
@@ -10851,7 +10852,7 @@ msgstr "Calcula a distribuição binomial."
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_BINOM_DIST.2.String.Text
 #, fuzzy
 msgid  "X"
-msgstr "Núm_insucessos"
+msgstr "Núm_s"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_BINOM_DIST.3.String.Text
 #, fuzzy
@@ -10861,7 +10862,7 @@ msgstr "O número de sucessos numa série de tentativas."
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_BINOM_DIST.4.String.Text
 #, fuzzy
 msgid  "trials"
-msgstr "Tentativas"
+msgstr "Tentativa_s"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_BINOM_DIST.5.String.Text
 #, fuzzy
@@ -10871,7 +10872,7 @@ msgstr "O número total de tentativas."
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_BINOM_DIST.6.String.Text
 #, fuzzy
 msgid  "SP"
-msgstr "Probabilidade_s"
+msgstr "Probabilidades_s"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_BINOM_DIST.7.String.Text
 #, fuzzy
@@ -10896,7 +10897,7 @@ msgstr "Devolve a distribuição binomial negativa."
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_NEG_BINOM_VERT.2.String.Text
 #, fuzzy
 msgid  "X"
-msgstr "Exemplo_s"
+msgstr "Núm_insucessos"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_NEG_BINOM_VERT.3.String.Text
 #, fuzzy
@@ -11021,12 +11022,12 @@ msgstr "O valor médio. O valor médio da distribuição normal."
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_NORM_DIST.6.String.Text
 #, fuzzy
 msgid  "STDEV"
-msgstr "Desvio_padrão"
+msgstr "DESVPAD"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_NORM_DIST.7.String.Text
 #, fuzzy
 msgid  "Standard deviation. The standard deviation of the normal distribution."
-msgstr "Desvio padrão. O desvio padrão da distribuição normal."
+msgstr "é o desvio padrão da distribuição."
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_NORM_DIST.8.String.Text
 #, fuzzy
@@ -11216,7 +11217,7 @@ msgstr "Cumulativo"
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_EXP_DIST.7.String.Text
 #, fuzzy
 msgid  "Cumulated. C=0 calculates the density function, C=1 the distribution."
-msgstr "Cumulativa. C=0 calcula a função de densidade, C=1 calcula a distribuição."
+msgstr "Cumulativo. C=0 calcula a função de densidade, C=1 calcula a distribuição."
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_GAMMA_DIST.1.String.Text
 #, fuzzy
@@ -11351,7 +11352,7 @@ msgstr "Alfa"
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_BETA_DIST.5.String.Text
 #, fuzzy
 msgid  "The Alpha parameter of the Beta distribution."
-msgstr "é o parâmetro alfa da distribuição-beta."
+msgstr "O parâmetro alfa da distribuição-beta."
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_BETA_DIST.6.String.Text
 #, fuzzy
@@ -11691,7 +11692,7 @@ msgstr "Graus_liberdade"
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_CHI_DIST.5.String.Text
 #, fuzzy
 msgid  "The degrees of freedom of the chi square distribution."
-msgstr "O número de graus de liberdade do Qui-quadrado."
+msgstr "O número de graus de liberdade da distribuição do Qui-quadrado."
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_CHISQ_DIST.1.String.Text
 #, fuzzy
@@ -11751,7 +11752,7 @@ msgstr "Graus_liberdade"
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_CHI_INV.5.String.Text
 #, fuzzy
 msgid  "The degrees of freedom of the chi square distribution."
-msgstr "Os graus de liberdade da distribuição Qui-quadrado."
+msgstr "O número de graus de liberdade do Qui-quadrado."
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_CHISQ_INV.1.String.Text
 #, fuzzy
@@ -11971,7 +11972,7 @@ msgstr "Dados_1"
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_F_TEST.3.String.Text
 #, fuzzy
 msgid  "The first record array."
-msgstr "O primeiro conjunto de dados."
+msgstr "A primeira matriz de dados."
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_F_TEST.4.String.Text
 #, fuzzy
@@ -11981,7 +11982,7 @@ msgstr "Dados_2"
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_F_TEST.5.String.Text
 #, fuzzy
 msgid  "The second record array."
-msgstr "O segundo conjunto de dados."
+msgstr "A segunda matriz de dados."
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_T_TEST.1.String.Text
 #, fuzzy
@@ -11996,7 +11997,7 @@ msgstr "Dados_1"
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_T_TEST.3.String.Text
 #, fuzzy
 msgid  "The first record array."
-msgstr "A primeira matriz de registos."
+msgstr "O primeiro conjunto de dados."
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_T_TEST.4.String.Text
 #, fuzzy
@@ -12006,7 +12007,7 @@ msgstr "Dados_2"
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_T_TEST.5.String.Text
 #, fuzzy
 msgid  "The second record array."
-msgstr "A segunda matriz de registos."
+msgstr "O segundo conjunto de dados."
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_T_TEST.6.String.Text
 #, fuzzy
@@ -12051,7 +12052,7 @@ msgstr "Dados_X"
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_RSQ.5.String.Text
 #, fuzzy
 msgid  "The X data array."
-msgstr "A matriz dos dados X."
+msgstr "A matriz dos dados x."
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_INTERCEPT.1.String.Text
 #, fuzzy
@@ -12076,7 +12077,7 @@ msgstr "Dados_X"
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_INTERCEPT.5.String.Text
 #, fuzzy
 msgid  "The X data array."
-msgstr "A matriz de dados X."
+msgstr "A matriz dos dados X."
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_SLOPE.1.String.Text
 #, fuzzy
@@ -12101,7 +12102,7 @@ msgstr "Dados_X"
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_SLOPE.5.String.Text
 #, fuzzy
 msgid  "The X data array."
-msgstr "A matriz dos dados X."
+msgstr "A matriz de dados X."
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_STEYX.1.String.Text
 #, fuzzy
@@ -12151,7 +12152,7 @@ msgstr "Dados_2"
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_PEARSON.5.String.Text
 #, fuzzy
 msgid  "The second record array."
-msgstr "A segunnda matriz de registos."
+msgstr "A segunda matriz de registos."
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_CORREL.1.String.Text
 #, fuzzy
@@ -12176,7 +12177,7 @@ msgstr "Dados_2"
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_CORREL.5.String.Text
 #, fuzzy
 msgid  "The second record array."
-msgstr "A segunda matriz de registos."
+msgstr "A segunnda matriz de registos."
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_COVAR.1.String.Text
 #, fuzzy
@@ -12306,7 +12307,7 @@ msgstr "Referência"
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_AREAS.3.String.Text
 #, fuzzy
 msgid  "The reference to a (multiple) range."
-msgstr "A referência a um ou vários intervalos de células."
+msgstr "É uma referência a um intervalo (múltiplo)."
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_CHOSE.1.String.Text
 #, fuzzy
@@ -12316,7 +12317,7 @@ msgstr "Selecciona um valor de uma lista com um máximo de 30 argumentos."
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_CHOSE.2.String.Text
 #, fuzzy
 msgid  "Index"
-msgstr "Índice remissivo"
+msgstr "Núm_índice"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_CHOSE.3.String.Text
 #, fuzzy
@@ -12346,7 +12347,7 @@ msgstr "Referência"
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_COLUMN.3.String.Text
 #, fuzzy
 msgid  "The reference to a cell or a range."
-msgstr "A referência a uma célula ou a um intervalo."
+msgstr "A referência a células ou intervalos."
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_ROW.1.String.Text
 #, fuzzy
@@ -12361,7 +12362,7 @@ msgstr "Referência"
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_ROW.3.String.Text
 #, fuzzy
 msgid  "The reference to a cell or a range."
-msgstr "A referência de uma célula ou de um intervalo de células"
+msgstr "A referência a uma célula ou a um intervalo."
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_TABLE.1.String.Text
 #, fuzzy
@@ -12476,7 +12477,7 @@ msgstr "Procura vertical e referência a células indicadas."
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_V_LOOKUP.2.String.Text
 #, fuzzy
 msgid  "Search criterion"
-msgstr "Valor_procurado"
+msgstr "Critério de procura"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_V_LOOKUP.3.String.Text
 #, fuzzy
@@ -12596,7 +12597,7 @@ msgstr "Valor_procurado"
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_LOOKUP.3.String.Text
 #, fuzzy
 msgid  "The value to be used for comparison."
-msgstr "O valor a ser usado para comparação."
+msgstr "O valor a ser utilizado para comparação."
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_LOOKUP.4.String.Text
 #, fuzzy
@@ -12884,7 +12885,7 @@ msgstr "Converte caracteres ASCII e katakana de meia-largura para largura comple
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_JIS.2.String.Text
 #, fuzzy
 msgid  "text"
-msgstr "Texto"
+msgstr "texto"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_JIS.3.String.Text
 #, fuzzy
@@ -12899,7 +12900,7 @@ msgstr "Converte caracteres ASCII e katakana de largura completa para meia-largu
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_ASC.2.String.Text
 #, fuzzy
 msgid  "text"
-msgstr "Texto"
+msgstr "texto"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_ASC.3.String.Text
 #, fuzzy
@@ -12914,12 +12915,12 @@ msgstr "Devolve o código numérico do primeiro carácter de uma cadeia de texto
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_CODE.2.String.Text
 #, fuzzy
 msgid  "text"
-msgstr "texto"
+msgstr "Texto"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_CODE.3.String.Text
 #, fuzzy
 msgid  "This is the text for which the code of the first character is to be found."
-msgstr "Corresponde ao texto para o qual pretende encontrar o código do primeiro carácter."
+msgstr "É o texto para o qual deseja encontrar o código do primeiro carácter."
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_CURRENCY.1.String.Text
 #, fuzzy
@@ -12969,7 +12970,7 @@ msgstr "Elimina do texto todos os caracteres não imprimíveis."
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_CLEAN.2.String.Text
 #, fuzzy
 msgid  "text"
-msgstr "texto"
+msgstr "Texto"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_CLEAN.3.String.Text
 #, fuzzy
@@ -13039,12 +13040,12 @@ msgstr "Texto"
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_FIND.5.String.Text
 #, fuzzy
 msgid  "The text in which a search is to be made."
-msgstr "O texto que contém o texto que deseja localizar."
+msgstr "O texto que contém o texto que pretende localizar."
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_FIND.6.String.Text
 #, fuzzy
 msgid  "position"
-msgstr "Núm_inicial"
+msgstr "Posição_inicial"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_FIND.7.String.Text
 #, fuzzy
@@ -13159,7 +13160,7 @@ msgstr "Texto"
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_VALUE.3.String.Text
 #, fuzzy
 msgid  "The text to be converted to a number."
-msgstr "O texto a converter num número."
+msgstr "O texto a converter em número."
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_TEXT.1.String.Text
 #, fuzzy
@@ -13474,7 +13475,7 @@ msgstr "Raíz"
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_BASE.5.String.Text
 #, fuzzy
 msgid  "The base number for conversion must be in the range 2 - 36."
-msgstr "A base numérica, a partir da qual será efectuada a conversão, terá que estar compreendida entre 2 e 36."
+msgstr "A base numérica para a conversão terá que estar compreendida entre 2 e 36."
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_BASE.6.String.Text
 #, fuzzy
@@ -13524,7 +13525,7 @@ msgstr "Valor"
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_CONVERT.3.String.Text
 #, fuzzy
 msgid  "The value to be converted."
-msgstr "O valor a ser convertido."
+msgstr "O valor a converter."
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_CONVERT.4.String.Text
 #, fuzzy

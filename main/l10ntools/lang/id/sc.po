@@ -3013,7 +3013,7 @@ msgstr "Subtotal"
 
 #: source/ui/src/globstr.src#RID_GLOBSTR.STR_UNDO_SORT.String.Text
 msgid  "Sort"
-msgstr "Pengurutan"
+msgstr "Mengurut"
 
 #: source/ui/src/globstr.src#RID_GLOBSTR.STR_UNDO_QUERY.String.Text
 msgid  "Filter"
@@ -3805,7 +3805,7 @@ msgstr "Rumus"
 
 #: source/ui/src/globstr.src#RID_GLOBSTR.STR_HIDE.String.Text
 msgid  "Hide"
-msgstr "Sembunyikan"
+msgstr "Sembunyi"
 
 #: source/ui/src/globstr.src#RID_GLOBSTR.STR_PRINT.String.Text
 msgid  "Print"
@@ -4073,7 +4073,7 @@ msgstr "Tampilkan"
 
 #: source/ui/src/globstr.src#RID_GLOBSTR.STR_VOBJ_MODE_HIDE.String.Text
 msgid  "Hide"
-msgstr "Sembunyi"
+msgstr "Sembunyikan"
 
 #: source/ui/src/globstr.src#RID_GLOBSTR.STR_SCATTR_PAGE_TOPDOWN.String.Text
 msgid  "Top to bottom"
@@ -4805,11 +4805,11 @@ msgstr "Terkecil"
 
 #: source/ui/src/filter.src#RID_SCDLG_FILTER.LB_COND1.Default.stringlist.item
 msgid  "Largest %"
-msgstr "% lebih besar"
+msgstr "% yang terbesar"
 
 #: source/ui/src/filter.src#RID_SCDLG_FILTER.LB_COND1.Default.stringlist.item
 msgid  "Smallest %"
-msgstr "% lebih kecil"
+msgstr "% yang terkecil"
 
 #: source/ui/src/filter.src#RID_SCDLG_FILTER.LB_COND1.Default.stringlist.item
 msgid  "Contains"
@@ -5281,7 +5281,7 @@ msgstr "Hitung jumlah sel jangkauan data yang isinya cocok dengan kriteria penca
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_DB_COUNT.2.String.Text
 msgid  "Database"
-msgstr "Basi data"
+msgstr "Basis data"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_DB_COUNT.3.String.Text
 msgid  "The range of cells containing data."
@@ -5293,7 +5293,7 @@ msgstr "Kolom basis data"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_DB_COUNT.5.String.Text
 msgid  "Indicates which database field (column) is to be used for the search criteria."
-msgstr "Tandai ruas (kolom) database yang ingin digunakan sebagai kriteria pencarian."
+msgstr "Tandai ruas (kolom) basis data yang ingin digunakan sebagai kriteria pencarian."
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_DB_COUNT.6.String.Text
 msgid  "Search criteria"
@@ -5309,7 +5309,7 @@ msgstr "Hitung berapa sel yang tidak kosong pada jangkauan data yang isinya terk
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_DB_COUNT_2.2.String.Text
 msgid  "Database"
-msgstr "Basi data"
+msgstr "Basis data"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_DB_COUNT_2.3.String.Text
 msgid  "The range of cells containing data."
@@ -5681,7 +5681,7 @@ msgstr "Tanggal_2"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_GET_DIFF_DATE_360.5.String.Text
 msgid  "The end date for calculating the difference in days."
-msgstr "Tanggal akhir untuk menghitung selisih hari."
+msgstr "Tanggal akhir untuk menghitung selisih haris."
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_GET_DIFF_DATE_360.6.String.Text
 msgid  "Type"
@@ -6129,7 +6129,7 @@ msgstr "Periode pembayaran. Total jumlah periode selama anuitas (pensiun) dibaya
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_ZINS_Z.8.String.Text
 msgid  "pv"
-msgstr "pv"
+msgstr "PV"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_ZINS_Z.9.String.Text
 msgid  "Present value. The current value of a series of payments"
@@ -6329,7 +6329,7 @@ msgstr "Salvage: Nilai tersisa dari aset di akhir masa hidupnya."
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_DIA.6.String.Text
 msgid  "Life"
-msgstr "Masahidup"
+msgstr "Masa hidup"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_DIA.7.String.Text
 msgid  "Useful life. The number of periods in the useful life of the asset."
@@ -6365,7 +6365,7 @@ msgstr "Salvage: Nilai tersisa dari aset di akhir masa hidupnya."
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_LIA.6.String.Text
 msgid  "Life"
-msgstr "Masa hidup"
+msgstr "Masahidup"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_LIA.7.String.Text
 msgid  "Useful life. The number of periods in the useful life of the asset."
@@ -6393,7 +6393,7 @@ msgstr "Salvage: Nilai tersisa dari aset di akhir masa hidupnya."
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_GDA.6.String.Text
 msgid  "Life"
-msgstr "Masahidup"
+msgstr "Masa hidup"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_GDA.7.String.Text
 msgid  "Useful life. The number of periods in the useful life of the asset."
@@ -6565,7 +6565,7 @@ msgstr "Nilai netto sekarang. Menghitung nilai bersih saat ini dari suatu invest
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_NBW.2.String.Text
 msgid  "RATE"
-msgstr "SUKU BUNGA"
+msgstr "SUKU"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_NBW.3.String.Text
 msgid  "The rate of discount for one period."
@@ -6957,7 +6957,7 @@ msgstr "Mengembalikan TRUE jika peubah bebas bernilai TRUE."
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_OR.2.String.Text
 msgid  "Logical value "
-msgstr "Nilai logika "
+msgstr "Nilai logikal"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_OR.3.String.Text
 msgid  "Logical value 1, logical value 2,... are 1 to 30 conditions to be tested and which return either TRUE or FALSE."
@@ -7229,7 +7229,7 @@ msgstr "Mengembalikan akar suatu bilangan."
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_SQRT.2.String.Text
 msgid  "number"
-msgstr "jumlah"
+msgstr "bilangan"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_SQRT.3.String.Text
 msgid  "A positive value for which the square root is to be calculated."
@@ -7417,7 +7417,7 @@ msgstr "Mengembalikan nilai sinus."
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_SIN.2.String.Text
 msgid  "number"
-msgstr "jumlah"
+msgstr "bilangan"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_SIN.3.String.Text
 msgid  "The angle in radians for which the sine is to be calculated."
@@ -7441,7 +7441,7 @@ msgstr "Nilai sudut dalam radian yang akan dihitung tangennya."
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_TAN.2.String.Text
 msgid  "number"
-msgstr "jumlah"
+msgstr "bilangan"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_TAN.3.String.Text
 msgid  "The angle in radians for which the tangent is to be calculated."
@@ -7465,7 +7465,7 @@ msgstr "Mengembalikan nilai hiperbolik sinus."
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_SIN_HYP.2.String.Text
 msgid  "number"
-msgstr "jumlah"
+msgstr "bilangan"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_SIN_HYP.3.String.Text
 msgid  "The value for which the hyperbolic sine is to be calculated."
@@ -8409,7 +8409,7 @@ msgstr "bilangan"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_DEV_SQ.3.String.Text
 msgid  "Number 1, number 2, ... are 1 to 30 numerical arguments which portray a sample."
-msgstr "Bilangan 1, bilangan 2, ... 1..30 argumen numerik yang menggambarkan potret sampel."
+msgstr "Bilangan 1, bilangan 2,... 1 hingga 30 argumen numerik yang menggambarkan sampel."
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_AVE_DEV.1.String.Text
 msgid  "Returns the average of the absolute deviations of a sample from the mean."
@@ -8457,7 +8457,7 @@ msgstr "bilangan"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_GEO_MEAN.3.String.Text
 msgid  "Number 1, number 2, ... are 1 to 30 numerical arguments which portray a sample."
-msgstr "Bilangan 1, bilangan 2, ... 1..30 argumen numerik yang mewakili sampel."
+msgstr "Bilangan 1, bilangan 2, ... 1..30 argumen numerik yang menggambarkan potret sampel."
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_HAR_MEAN.1.String.Text
 msgid  "Returns the harmonic mean of a sample."
@@ -8469,7 +8469,7 @@ msgstr "bilangan"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_HAR_MEAN.3.String.Text
 msgid  "Number 1, number 2, ... are 1 to 30 numerical arguments which portray a sample."
-msgstr "Bilangan 1, bilangan 2, ... 1..30 argumen numerik yang memberi potret sampel."
+msgstr "Bilangan 1, bilangan 2, ... 1..30 argumen numerik yang mewakili sampel."
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_MODAL_VALUE.1.String.Text
 msgid  "Returns the most common value in a sample."
@@ -8553,7 +8553,7 @@ msgstr "Rank_c"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_LARGE.5.String.Text
 msgid  "The ranking of the value."
-msgstr "Derajat suatu nilai."
+msgstr "Nilai ranking."
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_SMALL.1.String.Text
 msgid  "Returns the k-th smallest value of a sample."
@@ -8725,7 +8725,7 @@ msgstr "bilangan"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_PHI.3.String.Text
 msgid  "The value for which the standard normal distribution is to be calculated."
-msgstr "Bilangan yang akan dihitung distribusi normal standarnya."
+msgstr "Distribusi normal standar dihitung menggunakan nilai ini."
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_GAUSS.1.String.Text
 msgid  "Returns the integral values of the standard normal cumulative distribution."
@@ -8881,7 +8881,7 @@ msgstr "Kumulatif"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_POISSON_DIST.7.String.Text
 msgid  "0 or FALSE calculates the probability density function. Any other value or TRUE or omitted calculates the cumulative distribution function."
-msgstr "0 atau FALSE mengkalkulasi fungsi densitas probabilitas. Nilai lain atau TRUE atau diabaikan menghitung fungsi distribusi kumulatif."
+msgstr "0 atau FALSE mengkalkulasi probabilitas dari fungsi densitas. Nilai lain atau TRUE atau diabaikan akan menghitung fungsi distribusi kumulatif."
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_NORM_DIST.1.String.Text
 msgid  "Values of the normal distribution."
@@ -8901,7 +8901,7 @@ msgstr "Mean"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_NORM_DIST.5.String.Text
 msgid  "The mean value. The mean value of the normal distribution."
-msgstr "Rerata. Rerata nilai distribusi normal."
+msgstr "Rerata. Rerata nilai distribusi normal"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_NORM_DIST.6.String.Text
 msgid  "STDEV"
@@ -8917,7 +8917,7 @@ msgstr "C"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_NORM_DIST.9.String.Text
 msgid  "0 or FALSE calculates the probability density function. Any other value or TRUE or omitted calculates the cumulative distribution function."
-msgstr "0 atau FALSE akan menghitung probabilitas fungsi densitas. Nilai lain atau TRUE atau diabaikan akan menghitung fungsi distribusi kumulatif."
+msgstr "0 atau FALSE mengkalkulasi fungsi densitas probabilitas. Nilai lain atau TRUE atau diabaikan menghitung fungsi distribusi kumulatif."
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_NORM_INV.1.String.Text
 msgid  "Values of the inverse normal distribution."
@@ -9005,7 +9005,7 @@ msgstr "Kumulatif"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_LOG_NORM_DIST.9.String.Text
 msgid  "0 or FALSE calculates the probability density function. Any other value or TRUE or omitted calculates the cumulative distribution function."
-msgstr "0 atau FALSE mengkalkulasi fungsi densitas probabilitas. Nilai lain atau TRUE atau kosong mengkalkulasi fungsi distribusi kumulatif."
+msgstr "0 atau FALSE mengkalkulasi fungsi densitas probabilitas. Nilai lain atau TRUE atau diabaikan menghitung fungsi distribusi kumulatif."
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_LOG_INV.1.String.Text
 msgid  "Values of the inverse of the lognormal distribution."
@@ -9381,7 +9381,7 @@ msgstr "Bilangan yang akan dihitung distribusi F-nya."
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_F_DIST.4.String.Text
 msgid  "degrees_freedom_1"
-msgstr "derajat_kebebasan_1"
+msgstr "derajat_kebebasan_2"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_F_DIST.5.String.Text
 msgid  "The degrees of freedom in the numerator of the F distribution."
@@ -9665,7 +9665,7 @@ msgstr "Data_1"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_F_TEST.3.String.Text
 msgid  "The first record array."
-msgstr "Larik data pertama."
+msgstr "Larik rekaman pertama."
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_F_TEST.4.String.Text
 msgid  "data_2"
@@ -9673,7 +9673,7 @@ msgstr "Data_2"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_F_TEST.5.String.Text
 msgid  "The second record array."
-msgstr "Larik data kedua."
+msgstr "Larik rekaman kedua."
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_T_TEST.1.String.Text
 msgid  "Calculates the T test."
@@ -9685,7 +9685,7 @@ msgstr "Data_1"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_T_TEST.3.String.Text
 msgid  "The first record array."
-msgstr "Larik rekaman pertama."
+msgstr "Larik data pertama."
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_T_TEST.4.String.Text
 msgid  "data_2"
@@ -9693,7 +9693,7 @@ msgstr "Data_2"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_T_TEST.5.String.Text
 msgid  "The second record array."
-msgstr "Larik rekaman kedua."
+msgstr "Larik data kedua."
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_T_TEST.6.String.Text
 msgid  "mode"
@@ -9933,7 +9933,7 @@ msgstr "referensi"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_AREAS.3.String.Text
 msgid  "The reference to a (multiple) range."
-msgstr "Referensi ke jangkauan (jamak)."
+msgstr "Referensi ke jangkauan jamak."
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_CHOSE.1.String.Text
 msgid  "Selects a value from a list of up to 30 value arguments."
@@ -9965,7 +9965,7 @@ msgstr "referensi"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_COLUMN.3.String.Text
 msgid  "The reference to a cell or a range."
-msgstr "Referensi ke sel atau jangkauan."
+msgstr "Referensi ke sel atau ke jangkauan."
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_ROW.1.String.Text
 msgid  "Defines the internal row number of a reference."
@@ -10165,7 +10165,7 @@ msgstr "Kriteria pencarian"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_LOOKUP.3.String.Text
 msgid  "The value to be used for comparison."
-msgstr "Nilai yang digunakan untuk pembandingan."
+msgstr "Nilai yang digunakan untuk pembadingan."
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_LOOKUP.4.String.Text
 msgid  "Search vector"
@@ -10681,7 +10681,7 @@ msgstr "Banyaknya huruf yang akan diganti."
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_REPLACE.8.String.Text
 msgid  "new text"
-msgstr "teks_baru"
+msgstr "subteks baru"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_REPLACE.9.String.Text
 msgid  "The text to be inserted."
@@ -10869,7 +10869,7 @@ msgstr "basis"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_BASE.5.String.Text
 msgid  "The base number for conversion must be in the range 2 - 36."
-msgstr "Basis untuk konversi bilangan, antara 2 - 36."
+msgstr "Basis bilangan untuk konversi, antara 2 - 36."
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_BASE.6.String.Text
 msgid  "Minimum length"
@@ -10909,7 +10909,7 @@ msgstr "nilai"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_CONVERT.3.String.Text
 msgid  "The value to be converted."
-msgstr "Nilai yang akan diubah."
+msgstr "Nilai yang akan dikonversi."
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_CONVERT.4.String.Text
 msgid  "text"
@@ -11601,7 +11601,7 @@ msgstr "Pilih Lembar Kerja"
 
 #: source/ui/src/scstring.src#STR_DLG_SELECTTABLES_LBNAME.String.Text
 msgid  "~Selected sheets"
-msgstr "~Lembar terpilih"
+msgstr "~Lembar kerja yang dipilih"
 
 #: source/ui/src/scstring.src#STR_REPLCELLSWARN.String.Text
 msgid  "You are pasting data into cells that already contain data.\\nDo you really want to overwrite the existing data?"

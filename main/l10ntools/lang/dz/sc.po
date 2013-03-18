@@ -565,12 +565,12 @@ msgstr "འགོ་བཙུགས།"
 #: source/ui/dbgui/dpgroupdlg.src#RID_SCDLG_DPNUMGROUP.RB_AUTOSTART.RadioButton.Text
 #, fuzzy
 msgid  "~Automatically"
-msgstr "རང་བཞིན་གྱིས་འབད།(~A)"
+msgstr "རང་བཞིན་གྱིས།(~A)"
 
 #: source/ui/dbgui/dpgroupdlg.src#RID_SCDLG_DPNUMGROUP.RB_MANSTART.RadioButton.Text
 #, fuzzy
 msgid  "~Manually at"
-msgstr "དེ་ཁར་་ལག་ཐོག་ལས།(~M)"
+msgstr "དེ་ཁར་ ལག་ཐོག་ལས།(~M)"
 
 #: source/ui/dbgui/dpgroupdlg.src#RID_SCDLG_DPNUMGROUP.FL_END.FixedLine.Text
 #, fuzzy
@@ -580,7 +580,7 @@ msgstr "མཇུག"
 #: source/ui/dbgui/dpgroupdlg.src#RID_SCDLG_DPNUMGROUP.RB_AUTOEND.RadioButton.Text
 #, fuzzy
 msgid  "A~utomatically"
-msgstr "རང་བཞིན་གྱིས་འབད།(~u)"
+msgstr "རང་བཞིན་གྱིས།(~u)"
 
 #: source/ui/dbgui/dpgroupdlg.src#RID_SCDLG_DPNUMGROUP.RB_MANEND.RadioButton.Text
 #, fuzzy
@@ -1014,7 +1014,7 @@ msgstr "ཤུལ་མམ་གྱི་རྣམ་གྲངས།"
 #: source/ui/dbgui/pvfundlg.src#RID_SCDLG_DPDATAFIELD.MoreButton.Text
 #, fuzzy
 msgid  "Data Field"
-msgstr "གནད་སྡུད་ས་སྒོ།"
+msgstr "གནད་སྡུད་ཀྱི་ས་སྒོ"
 
 #: source/ui/dbgui/pvfundlg.src#RID_SCDLG_PIVOTSUBT.ModalDialog.Text
 #, fuzzy
@@ -3655,12 +3655,12 @@ msgstr "རང་འཞིན་གྱི་ཕྱི་ཐིག"
 #: source/ui/src/globstr.src#RID_GLOBSTR.STR_UNDO_SUBTOTALS.String.Text
 #, fuzzy
 msgid  "Subtotals"
-msgstr "བསྡོམས་ཆུང་།"
+msgstr "ཆུང་བསྡོམས།"
 
 #: source/ui/src/globstr.src#RID_GLOBSTR.STR_UNDO_SORT.String.Text
 #, fuzzy
 msgid  "Sort"
-msgstr "དབྱེ་སེལ།"
+msgstr "དབྱེ་གསལ།"
 
 #: source/ui/src/globstr.src#RID_GLOBSTR.STR_UNDO_QUERY.String.Text
 #, fuzzy
@@ -4066,7 +4066,7 @@ msgstr "ཡང་ན།"
 #: source/ui/src/globstr.src#RID_GLOBSTR.STR_TABLE_DEF.String.Text
 #, fuzzy
 msgid  "Sheet"
-msgstr "ལེབ་གྲངས།"
+msgstr "ལོབ་གྲངས།"
 
 #: source/ui/src/globstr.src#RID_GLOBSTR.STR_MOVE_TO_END.String.Text
 #, fuzzy
@@ -4629,7 +4629,7 @@ msgstr "ཉེན་སྐྱོབ།"
 #: source/ui/src/globstr.src#RID_GLOBSTR.STR_FORMULAS.String.Text
 #, fuzzy
 msgid  "Formulas"
-msgstr "མན་ངག་ཚུ།"
+msgstr "མན་ངག"
 
 #: source/ui/src/globstr.src#RID_GLOBSTR.STR_HIDE.String.Text
 #, fuzzy
@@ -5847,7 +5847,7 @@ msgstr "%ཆེ་ཤོས།"
 #: source/ui/src/filter.src#RID_SCDLG_FILTER.LB_COND1.Default.stringlist.item
 #, fuzzy
 msgid  "Smallest %"
-msgstr "%ཆུང་ཤོས།"
+msgstr " %ཆུང་ཤོས།"
 
 #: source/ui/src/filter.src#RID_SCDLG_FILTER.LB_COND1.Default.stringlist.item
 msgid  "Contains"
@@ -6118,7 +6118,7 @@ msgstr "ཁྱབ་ཚད་ནང་ལུ་ཀེར་ཐིག་གི་
 #: source/ui/src/filter.src#RID_SCDLG_FILTER.BTN_UNIQUE.CheckBox.Text
 #, fuzzy
 msgid  "~No duplication"
-msgstr "འཛུན་མ་བཟོ་ནི་མེད།(~N)"
+msgstr "འཛུན་མ་བཟོ་ནི་མེད།"
 
 #: source/ui/src/filter.src#RID_SCDLG_FILTER.BTN_COPY_RESULT.CheckBox.Text
 #, fuzzy
@@ -6143,7 +6143,7 @@ msgstr "དཔེ་གཟུགས།"
 #: source/ui/src/filter.src#RID_SCDLG_FILTER.FT_DBAREA_LABEL.FixedText.Text
 #, fuzzy
 msgid  "Data range:"
-msgstr "གནད་སྡུད་ཁྱབ་ཚད།"
+msgstr "གནད་སྡུད་ཁྱབ་ཚད:"
 
 #: source/ui/src/filter.src#RID_SCDLG_SPEC_FILTER.ModelessDialog.Text
 #, fuzzy
@@ -6163,7 +6163,7 @@ msgstr "བསྐུམ།"
 #: source/ui/src/filter.src#RID_SCDLG_SPEC_FILTER.BTN_CASE.CheckBox.Text
 #, fuzzy
 msgid  "~Case sensitive"
-msgstr "ཡིག་གུ་ཆེ་ཆུང་གི་ཉེན་ཁ།(~C)"
+msgstr "ཡི་གུ་ཆེ་ཆུང་གི་ཉེན་ཁ།"
 
 #: source/ui/src/filter.src#RID_SCDLG_SPEC_FILTER.BTN_REGEXP.CheckBox.Text
 #, fuzzy
@@ -6418,27 +6418,27 @@ msgstr "གནད་སྡུད་གཞི་རྟེན།"
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_DB_COUNT.3.String.Text
 #, fuzzy
 msgid  "The range of cells containing data."
-msgstr "གནད་སྡུད་ཡོད་པའི་ནང་ཐིག་གི་ཁྱབ་ཚད།"
+msgstr "ནང་ཐིག་ཚུ་གི་ཁྱབ་ཚད་ནང་ལུ་ གནད་སྡུད་ཡོད་མི།"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_DB_COUNT.4.String.Text
 #, fuzzy
 msgid  "Database field"
-msgstr "གནད་སྡུད་གཞི་རྟེན་གྱི་ས་སྒོ"
+msgstr "གནད་སྡུད་གཞི་རྟེན་ ས་སྒོ"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_DB_COUNT.5.String.Text
 #, fuzzy
 msgid  "Indicates which database field (column) is to be used for the search criteria."
-msgstr "འཚོལ་ཞིབ་ཁྱད་ཚད་ཀྱི་དོན་ལུ་ གནད་སྡུད་གཞི་རྟེན་གྱི་ས་སྒོ་ (ཀེར་ཐིག)ག་ལག་ལེན་འཐབ་ནི་ཨིན་ན་ བརྡ་སྟོནམ་ཨིན།"
+msgstr "འཚོེལ་ཞིབ་ཁྱབ་ཚད་ཀྱི་དོན་ལུ་ གནད་སྡུད་གཞི་རྟེན་གྱི་ས་སྒོ་(ཀེར་ཐིག)ག་དེ་ ལག་ལེན་འཐབ་ནི་ཨིན་ན་ བརྡ་སྟོནམ་ཨིན།"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_DB_COUNT.6.String.Text
 #, fuzzy
 msgid  "Search criteria"
-msgstr "འཚོལ་ཞིབ་ཀྱི་ཁྱད་ཚད།"
+msgstr "ཁྱད་ཚད་འཚོལ་ཞིབ་འབད།"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_DB_COUNT.7.String.Text
 #, fuzzy
 msgid  "Defines the cell range containing the search criteria."
-msgstr "འཚོལ་ཞིབ་ཁྱད་ཚད་ཡོད་པའི་ ནང་ཐིག་གི་ཁྱབ་ཚད་ངེས་འཛིན་འབདཝ་ཨིན།"
+msgstr "འཚོལ་ཞིབ་ཁྱད་ཚད་ཡོད་མི་ནང་ཐིག་གི་ཁྱབ་ཚད་ ངེས་འཛིན་འབདཝ་ཨིན།"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_DB_COUNT_2.1.String.Text
 #, fuzzy
@@ -6453,17 +6453,17 @@ msgstr "གནད་སྡུད་གཞི་རྟེན།"
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_DB_COUNT_2.3.String.Text
 #, fuzzy
 msgid  "The range of cells containing data."
-msgstr "གནད་སྡུད་ཡོད་མི་ནང་ཐིག་ཚུ་གི་ཁྱབ་ཚད།"
+msgstr "གནད་སྡུད་ཡོད་པའི་ནང་ཐིག་གི་ཁྱབ་ཚད།"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_DB_COUNT_2.4.String.Text
 #, fuzzy
 msgid  "Database field"
-msgstr "གནད་སྡུད་གཞི་རྟེན་གྱི་ས་སྒོ།"
+msgstr "གནད་སྡུད་གཞི་རྟེན་གྱི་ས་སྒོ"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_DB_COUNT_2.5.String.Text
 #, fuzzy
 msgid  "Indicates which database field (column) is to be used for the search criteria."
-msgstr "འཚོལ་ཞིབ་ཁྱད་ཚད་ཀྱི་དོན་ལུ་ གནད་སྡུད་གཞི་རྟེན་གྱི་ས་སྒོ་(ཀེར་ཐིག)ག་ ལག་ལེན་འཐབ་ནི་ཨིན་ན་ བརྡ་སྟོནམ་ཨིན།"
+msgstr "འཚོལ་ཞིབ་ཁྱད་ཚད་ཀྱི་དོན་ལུ་ གནད་སྡུད་གཞི་རྟེན་གྱི་ས་སྒོ་ (ཀེར་ཐིག)ག་ལག་ལེན་འཐབ་ནི་ཨིན་ན་ བརྡ་སྟོནམ་ཨིན།"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_DB_COUNT_2.6.String.Text
 #, fuzzy
@@ -6473,7 +6473,7 @@ msgstr "ཁྱད་ཚད་འཚོལ་ཞིབ་འབད།"
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_DB_COUNT_2.7.String.Text
 #, fuzzy
 msgid  "Defines the cell range containing the search criteria."
-msgstr "འཚོལ་ཞིབ་ཀྱི་ཁྱད་ཚད་ཡོད་མི་ནང་ཐིག་གི་ཁྱབ་ཚད་ ངེས་འཛིན་འབདཝ་ཨིན།"
+msgstr "འཚོལ་ཞིབ་ཁྱད་ཚད་ཡོད་པའི་ ནང་ཐིག་གི་ཁྱབ་ཚད་ངེས་འཛིན་འབདཝ་ཨིན།"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_DB_AVERAGE.1.String.Text
 #, fuzzy
@@ -6488,17 +6488,17 @@ msgstr "གནད་སྡུད་གཞི་རྟེན།"
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_DB_AVERAGE.3.String.Text
 #, fuzzy
 msgid  "The range of cells containing data."
-msgstr "གནད་སྡུད་ཡོད་པའི་ནང་ཐིག་ཚུ་གི་ཁྱབ་ཚད།"
+msgstr "གནད་སྡུད་ཡོད་མི་ནང་ཐིག་ཚུ་གི་ཁྱབ་ཚད།"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_DB_AVERAGE.4.String.Text
 #, fuzzy
 msgid  "Database field"
-msgstr "གནད་སྡུད་གཞི་རྟེན་གྱི་ས་སྒོ"
+msgstr "གནད་སྡུད་གཞི་རྟེན་གྱི་ས་སྒོ།"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_DB_AVERAGE.5.String.Text
 #, fuzzy
 msgid  "Indicates which database field (column) is to be used for the search criteria."
-msgstr "འཚོལ་ཞིབ་ཁྱད་ཚད་ཀྱི་དོན་ལུ་ གནད་སྡུད་གཞི་རྟེན་གྱི་ས་སྒོ་(ཀེར་ཐིག)ག་ལག་ལེན་འཐབ་ནི་ཨིན་ན་ བརྡ་སྟོནམ་ཨིན།"
+msgstr "འཚོལ་ཞིབ་ཁྱད་ཚད་ཀྱི་དོན་ལུ་ གནད་སྡུད་གཞི་རྟེན་གྱི་ས་སྒོ་(ཀེར་ཐིག)ག་ ལག་ལེན་འཐབ་ནི་ཨིན་ན་ བརྡ་སྟོནམ་ཨིན།"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_DB_AVERAGE.6.String.Text
 #, fuzzy
@@ -6508,7 +6508,7 @@ msgstr "འཚོལ་ཞིབ་ཀྱི་ཁྱད་ཚད།"
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_DB_AVERAGE.7.String.Text
 #, fuzzy
 msgid  "Defines the cell range containing the search criteria."
-msgstr "འཚོལ་ཞིབ་ཀྱི་ཁྱད་ཚད་ཡོད་པའི་ ནང་ཐིག་གི་ཁྱབ་ཚད་ ངེས་འཛིན་འབདཝ་ཨིན།"
+msgstr "འཚོལ་ཞིབ་ཀྱི་ཁྱད་ཚད་ཡོད་མི་ནང་ཐིག་གི་ཁྱབ་ཚད་ ངེས་འཛིན་འབདཝ་ཨིན།"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_DB_GET.1.String.Text
 #, fuzzy
@@ -6523,17 +6523,17 @@ msgstr "གནད་སྡུད་གཞི་རྟེན།"
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_DB_GET.3.String.Text
 #, fuzzy
 msgid  "The range of cells containing data."
-msgstr "གནད་སྡུད་ཡོད་པའི་ནང་ཐིག་གི་ཁྱབ་ཚད།"
+msgstr "གནད་སྡུད་ཡོད་པའི་ནང་ཐིག་ཚུ་གི་ཁྱབ་ཚད།"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_DB_GET.4.String.Text
 #, fuzzy
 msgid  "Database field"
-msgstr "གནད་སྡུད་གཞི་རྟེན་གྱི་ས་སྒོ"
+msgstr "གནད་སྡུད་གཞི་རྟེན་གྱི་ས་སྒོ།"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_DB_GET.5.String.Text
 #, fuzzy
 msgid  "Indicates which database field (column) is to be used for the search criteria."
-msgstr "འཚོལ་ཞིབ་ཁྱད་ཚད་ཀྱི་དོན་ལུ་ གནད་སྡུད་གཞི་རྟེན་གྱི་ས་སྒོ་(ཀེར་ཐིག)ག་ལག་ལེན་འཐབ་ནི་ཨན་ན་བརྡ་སྟོནམ་ཨིན།"
+msgstr "འཚོལ་ཞིབ་ཁྱད་ཚད་ཀྱི་དོན་ལུ་ གནད་སྡུད་གཞི་རྟེན་གྱི་ས་སྒོ་(ཀེར་ཐིག)ག་ ལག་ལེན་འཐབ་ནི་ཨིན་ན་ བརྡ་སྟོནམ་ཨིན།"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_DB_GET.6.String.Text
 #, fuzzy
@@ -6543,7 +6543,7 @@ msgstr "ཁྱད་ཚད་འཚོལ་ཞིབ་འབད།"
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_DB_GET.7.String.Text
 #, fuzzy
 msgid  "Defines the cell range containing the search criteria."
-msgstr "འཚོལ་ཞིབ་ཀྱི་ཁྱད་ཚད་ཡོད་པའི་ནང་ཐིག་གི་ཁྱབ་ཚད་ ངེས་འཛིན་འབདཝ་ཨིན།"
+msgstr "འཚོལ་ཞིབ་ཀྱི་ཁྱད་ཚད་ཡོད་མི་ནང་ཐིག་གི་ཁྱབ་ཚད་ ངེས་འཛིན་འབདཝ་ཨིན།"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_DB_MAX.1.String.Text
 #, fuzzy
@@ -6558,17 +6558,17 @@ msgstr "གནད་སྡུད་གཞི་རྟེན།"
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_DB_MAX.3.String.Text
 #, fuzzy
 msgid  "The range of cells containing data."
-msgstr "གནད་སྡུད་ཡོད་པའི་ནང་ཐིག་ཚུ་གི་ཁྱབ་ཚད།"
+msgstr "གནད་སྡུད་ཡོད་པའི་ནང་ཐིག་གི་ཁྱབ་ཚད།"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_DB_MAX.4.String.Text
 #, fuzzy
 msgid  "Database field"
-msgstr "གནད་སྡུད་གཞི་རྟེན་གྱི་ས་སྒོ"
+msgstr "གནད་སྡུད་གཞི་རྟེན་གྱི་ས་སྒོ།"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_DB_MAX.5.String.Text
 #, fuzzy
 msgid  "Indicates which database field (column) is to be used for the search criteria."
-msgstr "འཚོལ་ཞིབ་ཀྱི་ཁྱད་ཚད་ཀྱི་དོན་ལུ་ གནད་སྡུད་གཞི་རྟེན་གྱི་ས་སྒོ་(ཀེར་ཐིག)ག་ལག་ལེན་འཐབ་ནི་ཨིན་ན་ བརྡ་སྟོནམ་ཨིན།"
+msgstr "འཚོལ་ཞིབ་ཁྱད་ཚད་ཀྱི་དོན་ལུ་ གནད་སྡུད་གཞི་རྟེན་གྱི་ས་སྒོ་(ཀེར་ཐིག)ག་ལག་ལེན་འཐབ་ནི་ཨིན་ན་ བརྡ་སྟོནམ་ཨིན།"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_DB_MAX.6.String.Text
 #, fuzzy
@@ -6578,7 +6578,7 @@ msgstr "ཁྱད་ཚད་འཚོལ་ཞིབ་འབད།"
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_DB_MAX.7.String.Text
 #, fuzzy
 msgid  "Defines the cell range containing the search criteria."
-msgstr "འཚོལ་ཞིབ་ཀྱི་གནད་སྡུད་ཡོད་པའི་ནང་ཐིག་གི་ཁྱབ་ཚད་ ངེས་འཛིན་འབདཝ་ཨིན།"
+msgstr "འཚོལ་ཞིབ་ཀྱི་ཁྱད་ཚད་ཡོད་པའི་ ནང་ཐིག་གི་ཁྱབ་ཚད་ ངེས་འཛིན་འབདཝ་ཨིན།"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_DB_MIN.1.String.Text
 #, fuzzy
@@ -6593,7 +6593,7 @@ msgstr "གནད་སྡུད་གཞི་རྟེན།"
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_DB_MIN.3.String.Text
 #, fuzzy
 msgid  "The range of cells containing data."
-msgstr "གནད་སྡུད་ནང་ཡོད་པའི་ནང་ཐིག་གི་ཁྱབ་ཚད།"
+msgstr "གནད་སྡུད་ཡོད་པའི་ནང་ཐིག་གི་ཁྱབ་ཚད།"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_DB_MIN.4.String.Text
 #, fuzzy
@@ -6603,7 +6603,7 @@ msgstr "གནད་སྡུད་གཞི་རྟེན་གྱི་ས་
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_DB_MIN.5.String.Text
 #, fuzzy
 msgid  "Indicates which database field (column) is to be used for the search criteria."
-msgstr "འཚོལ་ཞིབ་ཁྱད་ཚད་ཀྱི་དོན་ལུ་ གནད་སྡུད་གཞི་རྟེན་གྱི་ས་སྒོ་(ཀེར་ཐིག)ག་ ལག་ལེན་འཐབ་ནི་ཨིན་ན་ བརྡ་སྟོནམ་ཨིན།"
+msgstr "འཚོལ་ཞིབ་ཁྱད་ཚད་ཀྱི་དོན་ལུ་ གནད་སྡུད་གཞི་རྟེན་གྱི་ས་སྒོ་(ཀེར་ཐིག)ག་ལག་ལེན་འཐབ་ནི་ཨན་ན་བརྡ་སྟོནམ་ཨིན།"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_DB_MIN.6.String.Text
 #, fuzzy
@@ -6613,7 +6613,7 @@ msgstr "ཁྱད་ཚད་འཚོལ་ཞིབ་འབད།"
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_DB_MIN.7.String.Text
 #, fuzzy
 msgid  "Defines the cell range containing the search criteria."
-msgstr "འཚོལ་ཞིབ་ཁྱད་ཚད་ཡོད་པའི་ནང་ཐིག་ཁྱབ་ཚད་ངེས་འཛིན་འབདཝ་ཨིན།"
+msgstr "འཚོལ་ཞིབ་ཀྱི་ཁྱད་ཚད་ཡོད་པའི་ནང་ཐིག་གི་ཁྱབ་ཚད་ ངེས་འཛིན་འབདཝ་ཨིན།"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_DB_PRODUCT.1.String.Text
 #, fuzzy
@@ -6628,7 +6628,7 @@ msgstr "གནད་སྡུད་གཞི་རྟེན།"
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_DB_PRODUCT.3.String.Text
 #, fuzzy
 msgid  "The range of cells containing data."
-msgstr "གནད་སྡུད་ཡོད་ནང་ཐིག་ཚུ་གི་ཁྱབ་ཚད།"
+msgstr "གནད་སྡུད་ཡོད་པའི་ནང་ཐིག་ཚུ་གི་ཁྱབ་ཚད།"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_DB_PRODUCT.4.String.Text
 #, fuzzy
@@ -6638,7 +6638,7 @@ msgstr "གནད་སྡུད་གཞི་རྟེན་གྱི་ས་
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_DB_PRODUCT.5.String.Text
 #, fuzzy
 msgid  "Indicates which database field (column) is to be used for the search criteria."
-msgstr "འཚོལ་ཞིབ་ཁྱད་ཚད་ཀྱི་དོན་ལུ་ གནད་སྡུད་གཞི་རྟེན་གྱི་ས་སྒོ་(ཀེར་ཐིག་)ག་ལག་ལེན་འཐབ་ནི་ཨིན་ན་ བརྡ་སྟོནམ་ཨིན།"
+msgstr "འཚོལ་ཞིབ་ཀྱི་ཁྱད་ཚད་ཀྱི་དོན་ལུ་ གནད་སྡུད་གཞི་རྟེན་གྱི་ས་སྒོ་(ཀེར་ཐིག)ག་ལག་ལེན་འཐབ་ནི་ཨིན་ན་ བརྡ་སྟོནམ་ཨིན།"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_DB_PRODUCT.6.String.Text
 #, fuzzy
@@ -6648,7 +6648,7 @@ msgstr "ཁྱད་ཚད་འཚོལ་ཞིབ་འབད།"
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_DB_PRODUCT.7.String.Text
 #, fuzzy
 msgid  "Defines the cell range containing the search criteria."
-msgstr "འཚོལ་ཞིབ་ཀྱི་ཁྱད་ཚད་ཡོད་པའི་ ནང་ཐིག་གི་ཁྱབ་ཚད་ངེས་འཛིན་འབདཝ་ཨིན།"
+msgstr "འཚོལ་ཞིབ་ཀྱི་གནད་སྡུད་ཡོད་པའི་ནང་ཐིག་གི་ཁྱབ་ཚད་ ངེས་འཛིན་འབདཝ་ཨིན།"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_DB_STD_DEV.1.String.Text
 #, fuzzy
@@ -6663,7 +6663,7 @@ msgstr "གནད་སྡུད་གཞི་རྟེན།"
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_DB_STD_DEV.3.String.Text
 #, fuzzy
 msgid  "The range of cells containing data."
-msgstr "གནད་སྡུད་ཡོད་པའི་ནང་ཐིག་ཚུ་གི་ཁྱབ་ཚད།"
+msgstr "གནད་སྡུད་ཡོད་པའི་ནང་ཐིག་གི་ཁྱབ་ཚད།"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_DB_STD_DEV.4.String.Text
 #, fuzzy
@@ -6673,7 +6673,7 @@ msgstr "གནད་སྡུད་གཞི་རྟེན་གྱི་ས་
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_DB_STD_DEV.5.String.Text
 #, fuzzy
 msgid  "Indicates which database field (column) is to be used for the search criteria."
-msgstr "འཚོལ་ཞིབ་ཁྱད་ཚད་ཀྱི་དོན་ལུ་ གནད་སྡུད་གཞི་རྟེན་གྱི་ས་སྒོ་(ཀེར་ཐིག)ག་ལག་ལེན་འཐབ་ནི་ཨིན་ན་ བརྡ་སྟོནམ་ཨིན།"
+msgstr "འཚོལ་ཞིབ་ཁྱད་ཚད་ཀྱི་དོན་ལུ་ གནད་སྡུད་གཞི་རྟེན་གྱི་ས་སྒོ་(ཀེར་ཐིག)ག་ ལག་ལེན་འཐབ་ནི་ཨིན་ན་ བརྡ་སྟོནམ་ཨིན།"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_DB_STD_DEV.6.String.Text
 #, fuzzy
@@ -6683,7 +6683,7 @@ msgstr "ཁྱད་ཚད་འཚོལ་ཞིབ་འབད།"
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_DB_STD_DEV.7.String.Text
 #, fuzzy
 msgid  "Defines the cell range containing the search criteria."
-msgstr "འཚོལ་ཞིབ་ཀྱི་ཁྱད་ཚད་ཡོད་པའི་ ནང་ཐིག་གི་ཁྱབ་ཚད་ ངེས་འཛིན་འབདཝ་ཨིན།"
+msgstr "འཚོལ་ཞིབ་ཁྱད་ཚད་ཡོད་པའི་ནང་ཐིག་ཁྱབ་ཚད་ངེས་འཛིན་འབདཝ་ཨིན།"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_DB_STD_DEV_P.1.String.Text
 #, fuzzy
@@ -6708,7 +6708,7 @@ msgstr "གནད་སྡུད་གཞི་རྟེན་གྱི་ས་
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_DB_STD_DEV_P.5.String.Text
 #, fuzzy
 msgid  "Indicates which database field (column) is to be used for the search criteria."
-msgstr "འཚོལ་ཞིབ་ཁྱབ་ཚད་ཀྱི་དོན་ལུ་ གནད་སྡུད་གཞི་རྟེན་གྱི་ས་སྒོ་(ཀེར་ཐིག)ག་ ལག་ལེན་འཐབ་ནི་ཨིན་ན་གི་ བརྡ སྟོནམ་ཨིན།"
+msgstr "འཚོལ་ཞིབ་ཁྱད་ཚད་ཀྱི་དོན་ལུ་ གནད་སྡུད་གཞི་རྟེན་གྱི་ས་སྒོ་(ཀེར་ཐིག་)ག་ལག་ལེན་འཐབ་ནི་ཨིན་ན་ བརྡ་སྟོནམ་ཨིན།"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_DB_STD_DEV_P.6.String.Text
 #, fuzzy
@@ -6718,7 +6718,7 @@ msgstr "ཁྱད་ཚད་འཚོལ་ཞིབ་འབད།"
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_DB_STD_DEV_P.7.String.Text
 #, fuzzy
 msgid  "Defines the cell range containing the search criteria."
-msgstr "འཚོལ་ཞིབ་ཡོད་པའི་ནང་ཐིག་གི་ཁྱབ་ཚད་ངེས་འཛིན་འབད།"
+msgstr "འཚོལ་ཞིབ་ཀྱི་ཁྱད་ཚད་ཡོད་པའི་ ནང་ཐིག་གི་ཁྱབ་ཚད་ངེས་འཛིན་འབདཝ་ཨིན།"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_DB_SUM.1.String.Text
 #, fuzzy
@@ -6753,7 +6753,7 @@ msgstr "ཁྱད་ཚད་འཚོལ་ཞིབ་འབད།"
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_DB_SUM.7.String.Text
 #, fuzzy
 msgid  "Defines the cell range containing the search criteria."
-msgstr "འཚོལ་ཞིབ་ཀྱི་ཁྱད་ཚད་ཡོད་པའི་ནང་ཐིག་གི་ཁྱབ་ཚད་ ངེས་འཛིན་འབདཝ་ཨིན།"
+msgstr "འཚོལ་ཞིབ་ཀྱི་ཁྱད་ཚད་ཡོད་པའི་ ནང་ཐིག་གི་ཁྱབ་ཚད་ ངེས་འཛིན་འབདཝ་ཨིན།"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_DB_VAR.1.String.Text
 #, fuzzy
@@ -6883,12 +6883,12 @@ msgstr "ཚེས་གྲངས་གནས་གོང་དང་མཐུན
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_GET_DAY.2.String.Text
 #, fuzzy
 msgid  "Number"
-msgstr "ཨང་ཡིག"
+msgstr "ཨང་གྲངས།"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_GET_DAY.3.String.Text
 #, fuzzy
 msgid  "The internal number for the date."
-msgstr "ཚེས་གྲངས་ཀྱི་དོན་ལུ་ ནང་འཁོད་ཀྱི་ཨང་གྲངས།"
+msgstr "ཚེས་གྲངས་ཀྱི་དོན་ལུ་ནང་འཁོད་ཀྱི་ཨང་གྲངས།"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_GET_DIFF_DATE_360.1.String.Text
 #, fuzzy
@@ -6898,12 +6898,12 @@ msgstr "ལོ་གཅི་ག་ནང་ལུ་ཉིནམ་༣༦༠-�
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_GET_DIFF_DATE_360.2.String.Text
 #, fuzzy
 msgid  "Date_1"
-msgstr "ཚེས་གྲངས་ ༡ །"
+msgstr "ཚེསགརངས་ ༡ །"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_GET_DIFF_DATE_360.3.String.Text
 #, fuzzy
 msgid  "The start date for calculating the difference in days."
-msgstr "ཉིནམ་གྱི་ཁྱད་པར་རྩིས་སྟོན་ནིའི་དོོན་ལུ་ འགོ་བཙུགས་ཀྱི་ཚེས་གྲངས།"
+msgstr "ཉིནམ་གྱི་ཁྱད་པར་རྩིས་སྟོན་ནིའི་དོན་ལུ་ འགོ་བཙུགས་ཀྱི་ཚེས་གྲངས།"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_GET_DIFF_DATE_360.4.String.Text
 #, fuzzy
@@ -6913,7 +6913,7 @@ msgstr "ཚེས་གྲངས་ ༢ །"
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_GET_DIFF_DATE_360.5.String.Text
 #, fuzzy
 msgid  "The end date for calculating the difference in days."
-msgstr "ཉིནམ་གྱི་ཁྱད་པར་རྩིས་སྟོན་ནིའི་དོན་ལུ་ ཚེས་གྲངས་མཇུག"
+msgstr "ཉིནམ་གྱི་ཁྱད་པར་རྩིས་སྟོན་ནིའི་དོན་ལུ་ མཇུག་བསྡུའི་ཚེས་གྲངས།"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_GET_DIFF_DATE_360.6.String.Text
 #, fuzzy
@@ -6933,7 +6933,7 @@ msgstr "ཆུ་ཚོད་གནས་གོང་གི་དོན་ལུ
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_GET_HOUR.2.String.Text
 #, fuzzy
 msgid  "Number"
-msgstr "ཨང་ཡིག"
+msgstr "ཨང་གྲངས།"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_GET_HOUR.3.String.Text
 #, fuzzy
@@ -6948,7 +6948,7 @@ msgstr "ཆུ་ཚོད་གནས་གོང་གི་དོན་ལུ
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_GET_MIN.2.String.Text
 #, fuzzy
 msgid  "Number"
-msgstr "ཨང་ཡིག"
+msgstr "ཨང་གྲངས།"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_GET_MIN.3.String.Text
 #, fuzzy
@@ -6963,12 +6963,12 @@ msgstr "ཚེས་གྲངས་གནས་གོང་གི་དོན་
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_GET_MONTH.2.String.Text
 #, fuzzy
 msgid  "Number"
-msgstr "ཨང་ཡིག"
+msgstr "ཨང་གྲངས།"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_GET_MONTH.3.String.Text
 #, fuzzy
 msgid  "The internal number of the date."
-msgstr "ཚེས་གྲངས་ཀྱི་ནང་འཁོད་ཨང་གྲངས།"
+msgstr "ཚེས་གྲངས་ཀྱི་ ནང་འཁོད་ཀྱི་ཨང་གྲངས།"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_GET_ACT_TIME.1.String.Text
 #, fuzzy
@@ -6983,7 +6983,7 @@ msgstr "ཆུ་ཚོད་གནས་གོང་གི་དོན་ལུ
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_GET_SEC.2.String.Text
 #, fuzzy
 msgid  "Number"
-msgstr "ཨང་ཡིག"
+msgstr "ཨང་གྲངས།"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_GET_SEC.3.String.Text
 #, fuzzy
@@ -7053,7 +7053,7 @@ msgstr "ཚེས་གྲངས་ཀྱི་དོན་ལུ་ བདུ�
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_GET_DAY_OF_WEEK.2.String.Text
 #, fuzzy
 msgid  "Number"
-msgstr "ཨང་ཡིག"
+msgstr "ཨང་གྲངས།"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_GET_DAY_OF_WEEK.3.String.Text
 #, fuzzy
@@ -7078,7 +7078,7 @@ msgstr "ཚེས་གྲངས་གནས་གོང་གི་ལོ་ད
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_GET_YEAR.2.String.Text
 #, fuzzy
 msgid  "Number"
-msgstr "ཨང་ཡིག"
+msgstr "ཨང་གྲངས།"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_GET_YEAR.3.String.Text
 #, fuzzy
@@ -7118,7 +7118,7 @@ msgstr "བཀོད་དེ་ཡོད་པའི་ཚེས་གྲངས
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_WEEK.2.String.Text
 #, fuzzy
 msgid  "Number"
-msgstr "ཨང་ཡིག"
+msgstr "ཨང་གྲངས།"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_WEEK.3.String.Text
 #, fuzzy
@@ -7158,7 +7158,7 @@ msgstr "ད་ལྟོའི་གནས་གོང་། མ་རྩ་བ�
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_BW.2.String.Text
 #, fuzzy
 msgid  "Rate"
-msgstr "གོང་ཚད།"
+msgstr "གོང་ཚད"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_BW.3.String.Text
 #, fuzzy
@@ -7168,7 +7168,7 @@ msgstr "བཀོད་དེ་ཡེད་པའི་ དུས་ཡུན�
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_BW.4.String.Text
 #, fuzzy
 msgid  "NPER"
-msgstr "ཨེན་པ་ཨི་ཨཱར།"
+msgstr "ཨེན་པི་ཨི་ཨཱར།"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_BW.5.String.Text
 #, fuzzy
@@ -7203,7 +7203,7 @@ msgstr "དབྱེ་བ།"
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_BW.11.String.Text
 #, fuzzy
 msgid  "Type = 1 denotes due at the beginning of the period, = 0 at the end."
-msgstr "དབྱེ་བ་=༡་ གིས་དུས་ཡུན་འགོ་བཙུགས་ཀྱི་སྐབས་ལུ་ འཁྲི་བ་ག་དེ་ཅིག་ཡོདཔ་ཨིན་ན་བརྡ་རྟགས་སྟོནམ་ཨིན།=༠་ མཇུག་ལུ།"
+msgstr "དབྱེ་བ་=༡་གིས་དུས་ཡུན་འགོ་བཙུགས་ཀྱི་སྐབས་ འཁྲི་བ་ག་དེ་ཅིག་ཡོདཔ་ཨིན་ན་ རྡ་སྟོནམ་ཨིན།= ༠་ མཇུག་ལུ།"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_ZW.1.String.Text
 #, fuzzy
@@ -7218,12 +7218,12 @@ msgstr "གོང་ཚད།"
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_ZW.3.String.Text
 #, fuzzy
 msgid  "The rate of interest per period."
-msgstr "དུས་ཡུན་རེ་ལུ་དངུལ་བསྐྱེད་ཀྱི་གོང་ཚད།"
+msgstr "དུས་ཡུན་རེ་ལུ་ དངུལ་བསྐྱེད་ཀྱི་གོང་ཚད།"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_ZW.4.String.Text
 #, fuzzy
 msgid  "NPER"
-msgstr "ཨེན་པི་ཨི་ཨར།"
+msgstr "ཨེན་པི་ཨི་ཨཱར།"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_ZW.5.String.Text
 #, fuzzy
@@ -7238,7 +7238,7 @@ msgstr "པི་ཨེམ་ཊི།"
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_ZW.7.String.Text
 #, fuzzy
 msgid  "Regular payments. The constant annuity to be paid in each period."
-msgstr "དུས་རྒྱུན་གྱི་གླ་དངུལ། དུས་ཡུན་རེ་རེ་བཞིན་སྤྲོད་ནི་ཨིན་མི་ ཆད་མེད་ཀྱི་ལོ་ཕོགས།"
+msgstr "དུས་རྒྱུན་གྱི་གླ་དངུལ། དུས་ཡུན་རེ་ལུ་སྤྲོད་ནི་ཨིན་མི་ཆད་མེད་ཀྱི་ལོ་ཕོགས།"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_ZW.8.String.Text
 #, fuzzy
@@ -7248,7 +7248,7 @@ msgstr "པི་ཝི།"
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_ZW.9.String.Text
 #, fuzzy
 msgid  "Present value. The current value of a series of payments"
-msgstr "ད་ལྟོའི་གནས་གོང་། རྒྱུན་རིམ་གླ་དངུལ་གྱི་ད་ལྟོའི་གནས་གོང་།"
+msgstr "ད་ལྟོའི་གནས་གོང་། གླ་དངུལ་རྒྱུན་རིམ་གྱི་ད་ལྟོའི་གནས་གོང་།"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_ZW.10.String.Text
 #, fuzzy
@@ -7258,7 +7258,7 @@ msgstr "དབྱེ་བ།"
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_ZW.11.String.Text
 #, fuzzy
 msgid  "Type = 1 denotes due at the beginning of the period, = 0 at the end."
-msgstr "དབྱེ་བ་=༡་ གིས་དུས་ཡུན་འགོ་བཙུགས་ཀྱི་སྐབས་ལུ་ འཁྲི་བ་ག་དེ་ཅིག་ཡོདཔ་ཨིན་ན་བརྡ་སྟོནམ་ཨིན།=མཇུག་ལུ།"
+msgstr "དབྱེ་བ་=༡་ གིས་དུས་ཡུན་འགོ་བཙུགས་ཀྱི་སྐབས་ལུ་ འཁྲི་བ་ག་དེ་ཅིག་ཡོདཔ་ཨིན་ན་བརྡ་རྟགས་སྟོནམ་ཨིན།=༠་ མཇུག་ལུ།"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_ZZR.1.String.Text
 #, fuzzy
@@ -7273,7 +7273,7 @@ msgstr "གོང་ཚད།"
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_ZZR.3.String.Text
 #, fuzzy
 msgid  "The rate of interest per period."
-msgstr "དུསཡུན་རེ་ལུ་ དངུལ་བསྐྱེད་ཀྱི་གོང་ཚད།"
+msgstr "དུས་ཡུན་རེ་ལུ་དངུལ་བསྐྱེད་ཀྱི་གོང་ཚད།"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_ZZR.4.String.Text
 #, fuzzy
@@ -7283,7 +7283,7 @@ msgstr "པི་ཨེམ་ཊི།"
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_ZZR.5.String.Text
 #, fuzzy
 msgid  "Regular payments. The constant annuity to be paid in each period."
-msgstr "དུས་རྒྱུན་གྱི་གླ་དངུལ། དུས་ཡུན་རེ་ལུ་སྤྲོད་ནི་ཨིན་མི་ཆད་མེད་ཀྱི་ལོ་ཕོགས།"
+msgstr "དུས་རྒྱུན་གྱི་གླ་དངུལ། དུས་ཡུན་རེ་རེ་བཞིན་སྤྲོད་ནི་ཨིན་མི་ ཆད་མེད་ཀྱི་ལོ་ཕོགས།"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_ZZR.6.String.Text
 #, fuzzy
@@ -7293,7 +7293,7 @@ msgstr "པི་ཝི།"
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_ZZR.7.String.Text
 #, fuzzy
 msgid  "Present value. The current value of a series of payments"
-msgstr "ད་ལྟོའི་གནསཤ་གོང་། གླ་དངུལ་རྒྱུན་རིམ་གྱི་ད་ལྟོའི་གནས་གོང་།"
+msgstr "ད་ལྟོའི་གནས་གོང་། རྒྱུན་རིམ་གླ་དངུལ་གྱི་ད་ལྟོའི་གནས་གོང་།"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_ZZR.8.String.Text
 #, fuzzy
@@ -7303,7 +7303,7 @@ msgstr "ཨེཕ་ཝི།"
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_ZZR.9.String.Text
 #, fuzzy
 msgid  "Future value. The value (end value) to be attained after the final payment."
-msgstr "མ་འོངས་གནས་གོང་། མཇུག་མམ་གླ་དངུལ་གྱི་ཤུལ་ལས་ འཐོབ་ནི་ཨིན་མི་གནས་གོང་(མཇུག་མམ་གྱི་གནས་གོང་།) "
+msgstr "མ་འོངས་གནས་གོང་། མཇུག་མམ་གྱི་གླ་དངུལ་གྱི་ཤུལ་ལས་ འཐོབ་ནི་ཨིན་མི་གནས་གོང་(མཇུག་མམ་གྱི་གནས་གོང་།)"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_ZZR.10.String.Text
 #, fuzzy
@@ -7313,7 +7313,7 @@ msgstr "དབྱེ་བ།"
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_ZZR.11.String.Text
 #, fuzzy
 msgid  "Type = 1 denotes due at the beginning of the period, = 0 at the end."
-msgstr "དབྱེ་བ་=༡་ གིས་དུས་ཡུན་འགོ་བཙུགས་ཀྱི་སྐབས་ལུ་ འཁྲི་བ་ག་དེ་ཅིག་ཡོདཔ་ཨིན་ན་བརྡ་སྟོནམ་ཨིན།=༠་ མཇུག་ལུ།"
+msgstr "དབྱེ་བ་=༡་ གིས་དུས་ཡུན་འགོ་བཙུགས་ཀྱི་སྐབས་ལུ་ འཁྲི་བ་ག་དེ་ཅིག་ཡོདཔ་ཨིན་ན་བརྡ་སྟོནམ་ཨིན།=མཇུག་ལུ།"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_RMZ.1.String.Text
 #, fuzzy
@@ -7328,12 +7328,12 @@ msgstr "གོང་ཚད།"
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_RMZ.3.String.Text
 #, fuzzy
 msgid  "The rate of interest per period."
-msgstr "དུས་ཡུན་རེ་ལུ་ དངུལ་བསྐྱེད་ཀྱི་གོང་ཚད།"
+msgstr "དུསཡུན་རེ་ལུ་ དངུལ་བསྐྱེད་ཀྱི་གོང་ཚད།"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_RMZ.4.String.Text
 #, fuzzy
 msgid  "NPER"
-msgstr "ཨེན་པི་ཨི་ཨཱར།"
+msgstr "ཨེན་པ་ཨི་ཨཱར།"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_RMZ.5.String.Text
 #, fuzzy
@@ -7348,7 +7348,7 @@ msgstr "པི་ཝི།"
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_RMZ.7.String.Text
 #, fuzzy
 msgid  "Present value. The current value of a series of payments"
-msgstr "ད་ལྟོའི་གནས་གོང་། གླ་དངུལ་རྒྱུན་རིམ་གྱི་ད་ལྟོའི་གནས་གོང་།"
+msgstr "ད་ལྟོའི་གནསཤ་གོང་། གླ་དངུལ་རྒྱུན་རིམ་གྱི་ད་ལྟོའི་གནས་གོང་།"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_RMZ.8.String.Text
 #, fuzzy
@@ -7358,7 +7358,7 @@ msgstr "ཨེཕ་ཝི།"
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_RMZ.9.String.Text
 #, fuzzy
 msgid  "Future value. The value (end value) to be attained after the final payment."
-msgstr "མ་འོངས་གནས་གོང་། མཇུག་གི་གླ་དངུལ་གྱི་ཤུལ་ལས་འཐོབ་ནི་ཨིན་མི་གནས་གོང་(མཇུག་གི་གནས་གོང་།)"
+msgstr "མ་འོངས་གནས་གོང་། མཇུག་མམ་གྱི་གླ་དངུལ་གྱི་ཤུལ་ལས་ འཐོབ་ནི་ཨིན་མི་གནས་གོང་(མཇུག་མམ་གྱི་གནས་གོང་།)"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_RMZ.10.String.Text
 #, fuzzy
@@ -7368,7 +7368,7 @@ msgstr "དབྱེ་བ།"
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_RMZ.11.String.Text
 #, fuzzy
 msgid  "Type = 1 denotes due at the beginning of the period, = 0 at the end."
-msgstr "དབྱེ་བ་=༡་ གིས་དུས་ཡུན་འགོ་བཙུགས་ཀྱི་སྐབས་ལུ་ འཁྲི་བ་ག་དེ་ཅིག་ཡོདཔ་ཨིན་ན་གི་བརྡ་སྟོནམ་ཨིན།=༠་ མཇུག་ལུ།"
+msgstr "དབྱེ་བ་=༡་ གིས་དུས་ཡུན་འགོ་བཙུགས་ཀྱི་སྐབས་ལུ་ འཁྲི་བ་ག་དེ་ཅིག་ཡོདཔ་ཨིན་ན་བརྡ་སྟོནམ་ཨིན།=༠་ མཇུག་ལུ།"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_ZINS.1.String.Text
 #, fuzzy
@@ -7423,7 +7423,7 @@ msgstr "དབྱེ་བ།"
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_ZINS.11.String.Text
 #, fuzzy
 msgid  "Type = 1 denotes due at the beginning of the period, = 0 at the end."
-msgstr "བྱེ་བ་=༡་ གིས་དུས་ཡུན་འགོ་བཙུགས་ཀྱི་སྐབས་ལུ་ འཁྲི་བ་ག་དེ་ཅིག་ཡོདཔ་ཨིན་ན་བརྡ་སྟོནམ་ཨིན།=༠་མཇུག་ལུ།"
+msgstr "དབྱེ་བ་=༡་ གིས་དུས་ཡུན་འགོ་བཙུགས་ཀྱི་སྐབས་ལུ་ འཁྲི་བ་ག་དེ་ཅིག་ཡོདཔ་ཨིན་ན་གི་བརྡ་སྟོནམ་ཨིན།=༠་ མཇུག་ལུ།"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_ZINS.12.String.Text
 #, fuzzy
@@ -7498,7 +7498,7 @@ msgstr "དབྱེ་བ།"
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_ZINS_Z.13.String.Text
 #, fuzzy
 msgid  "Type = 1 denotes due at the beginning of the period, = 0 at the end."
-msgstr "བྱེ་བ་=༡་ གིས་དུས་ཡུན་འགོ་བཙུགས་ཀྱི་སྐབས་ལུ་ འཁྲི་བ་ག་དེ་ཅིག་ཡོདཔ་ཨིན་ན་གི་བརྡ་སྟོནམ་ཨིན།=༠་མཇུག་ལུ།"
+msgstr "བྱེ་བ་=༡་ གིས་དུས་ཡུན་འགོ་བཙུགས་ཀྱི་སྐབས་ལུ་ འཁྲི་བ་ག་དེ་ཅིག་ཡོདཔ་ཨིན་ན་བརྡ་སྟོནམ་ཨིན།=༠་མཇུག་ལུ།"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_KAPZ.1.String.Text
 #, fuzzy
@@ -7543,7 +7543,7 @@ msgstr "པི་ཝི།"
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_KAPZ.9.String.Text
 #, fuzzy
 msgid  "The present value. The present value or the amount the annuity is currently worth."
-msgstr "ད་ལྟོའི་གནས་གོང་། ད་ལྟོའི་གནས་གོང་ ཡང་ན་ ལོ་ཕོགས་དངུལ་བསྡོམས་དེ་གིས་ ད་ལྟོ་དེ་ཅིག་གནསཔ་ཨིན།"
+msgstr "ད་ལྟོའི་གནས་གོང་། ད་ལྟོའིི་གནས་གོང་ ཡང་ན་ ལོ་ཕོགས་ཀྱི་དངུལ་བསྡོམས་དེ་གིས་ ད་ལྟོ་དེ་ཅིག་གནསཔ་ཨིན།"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_KAPZ.10.String.Text
 #, fuzzy
@@ -7598,7 +7598,7 @@ msgstr "པི་ཝི།"
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_KUM_KAP_Z.7.String.Text
 #, fuzzy
 msgid  "The present value. The present value or the amount the annuity is currently worth."
-msgstr "ད་ལྟོའི་གནས་གོང་། ད་ལྟོའི་གནས་གོང་ ཡང་ན་ ལོ་ཕོགས་དངུལ་བསྡོམས་དེ་གིས་ ད་ལྟོ་དེ་ཅིག་སྟོནམ་ཨིན།"
+msgstr "ད་ལྟོའི་གནས་གོང་། ད་ལྟོའི་གནས་གོང་ ཡང་ན་ ལོ་ཕོགས་དངུལ་བསྡོམས་དེ་གིས་ ད་ལྟོ་དེ་ཅིག་གནསཔ་ཨིན།"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_KUM_KAP_Z.8.String.Text
 #, fuzzy
@@ -7703,12 +7703,12 @@ msgstr "གསལ་བཀོད་འབད་ཡོད་པའི་དུས
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_DIA.2.String.Text
 #, fuzzy
 msgid  "Cost"
-msgstr "གོང་ཚད།"
+msgstr "རིན་གོང་།"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_DIA.3.String.Text
 #, fuzzy
 msgid  "Acquisition costs. The initial cost of the asset."
-msgstr "ཉོ་བསྒྲུབས་རིན་གོང་། བདོག་གཏད་དེ་གི་འགོ་ཐོག་རིན་གོང་།"
+msgstr "ཉོ་བསྒྲུབས་རིན་གོང་། བདོག་གཏད་ཀྱི་འགོ་ཐོག་གནས་གོང་།"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_DIA.4.String.Text
 #, fuzzy
@@ -7728,7 +7728,7 @@ msgstr "ཚེ་ཡུན།"
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_DIA.7.String.Text
 #, fuzzy
 msgid  "Useful life. The number of periods in the useful life of the asset."
-msgstr "ཕན་ཐོགས་ཅན་གྱི་ཚེ་ཡུན། བདོག་གཏད་ཕན་ཐོག་ཅན་གྱི་ནང་ལུ་ དུས་ཡུན་གྱི་གྱང་ཁ།"
+msgstr "ཕན་ཐོགས་ཅན་གྱི་ཚེ། བདོག་གཏད་ཕན་ཐོག་ཅན་སྦེ་སྡོད་པའི་སྐབས་ཀྱི་ དུས་ཡུན་གྱི་གྱངས་ཁ།"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_DIA.8.String.Text
 #, fuzzy
@@ -7748,7 +7748,7 @@ msgstr "དུས་ཡུན་རེ་ལུ་ ལའི་ནར་གྱ�
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_LIA.2.String.Text
 #, fuzzy
 msgid  "Cost"
-msgstr "གོང་ཚད།"
+msgstr "རིན་གོང་།"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_LIA.3.String.Text
 #, fuzzy
@@ -7773,7 +7773,7 @@ msgstr "ཚེ་ཡུན།"
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_LIA.7.String.Text
 #, fuzzy
 msgid  "Useful life. The number of periods in the useful life of the asset."
-msgstr "ཕན་ཐོག་ཅན་གྱི་ཚེ་ཡུན། བདོག་གཏད་ཀྱི་ཕན་ཐོག་ཅན་གྱི་ཚེ་ཡུན་ནང་ལུ་ དུས་ཡུན་གྱི་གྱང་ཁ།"
+msgstr "ཕན་ཐོགས་ཅན་གྱི་ཚེ། བདོག་གཏད་ཕན་ཐོག་ཅན་སྦེ་སྡོད་པའི་སྐབས་ཀྱི་ དུས་ཡུན་གྱི་གྱངས་ཁ།"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_GDA.1.String.Text
 #, fuzzy
@@ -8173,7 +8173,7 @@ msgstr "ཨེཕ་ཝི།"
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_LAUFZ.7.String.Text
 #, fuzzy
 msgid  "The future value of the investment."
-msgstr "མ་རྩ་བཙུགས་ཡོད་པའིི་མ་འོངས་པའི་གནས་གོང་།"
+msgstr "མ་རྩ་བཙུགས་ཡོད་པའི་མ་འོངས་པའི་གནས་གོང་།"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_ZGZ.1.String.Text
 #, fuzzy
@@ -8223,7 +8223,7 @@ msgstr "གནས་གོང་།"
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_IS_REF.3.String.Text
 #, fuzzy
 msgid  "The value to be tested."
-msgstr "བརྟག་ཞིབ་འབད་ནི་གི་གནས་གོང་།"
+msgstr "བརྟག་ཞིབ་འབད་ནི་གི་ གནས་གོང་།"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_IS_ERR.1.String.Text
 #, fuzzy
@@ -8238,7 +8238,7 @@ msgstr "གནས་གོང་།"
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_IS_ERR.3.String.Text
 #, fuzzy
 msgid  "The value to be tested."
-msgstr "བརྟག་ཞིབ་འབད་ནི་གི་གནས་གོང་།"
+msgstr "བརྟག་ཞིབ་འབད་ནི་གི་ གནས་གོང་།"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_IS_ERROR.1.String.Text
 #, fuzzy
@@ -8253,7 +8253,7 @@ msgstr "གནས་གོང་།"
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_IS_ERROR.3.String.Text
 #, fuzzy
 msgid  "The value to be tested."
-msgstr "བརྟག་ཞིབ་འབད་ནི་གི་ གནས་གོང་།"
+msgstr "བརྟག་ཞིབ་འབད་ནི་གི་གནས་གོང་།"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_IS_EMPTY.1.String.Text
 #, fuzzy
@@ -8268,7 +8268,7 @@ msgstr "གནས་གོང་།"
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_IS_EMPTY.3.String.Text
 #, fuzzy
 msgid  "The value to be tested."
-msgstr "བརྟག་ཞིབ་འབད་དགོ་པའི་གནས་གོང་།"
+msgstr "བརྟག་ཞིབ་འབད་ནི་གི་གནས་གོང་།"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_IS_LOGICAL.1.String.Text
 #, fuzzy
@@ -8283,7 +8283,7 @@ msgstr "གནས་གོང་།"
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_IS_LOGICAL.3.String.Text
 #, fuzzy
 msgid  "The value to be tested."
-msgstr "བརྟག་ཞིབ་འབད་དགོ་པའི་གནས་གོང་།"
+msgstr "བརྟག་ཞིབ་འབད་ནི་གི་ གནས་གོང་།"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_IS_NV.1.String.Text
 #, fuzzy
@@ -8550,7 +8550,7 @@ msgstr "ཨང་གྲངས་ཅིག་གི་གནས་གོང་ཡ
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_ABS.2.String.Text
 #, fuzzy
 msgid  "Number"
-msgstr "ཨང་ཡིག"
+msgstr "ཨང་གྲངས།"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_ABS.3.String.Text
 #, fuzzy
@@ -8564,7 +8564,7 @@ msgstr ""
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_POWER.2.String.Text
 #, fuzzy
 msgid  "Base"
-msgstr "ཞགི་རྟེན།"
+msgstr "གཞི་རྟེན།"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_POWER.3.String.Text
 msgid  "The base a of the power a^b."
@@ -8606,7 +8606,7 @@ msgstr "བསྒྲུབ་རྟགས་ཆ་མཉམ་གྱི་དང
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_SUM.2.String.Text
 #, fuzzy
 msgid  "number "
-msgstr "ཨང་གྲངས།"
+msgstr "ཨང་།"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_SUM.3.String.Text
 #, fuzzy
@@ -8621,7 +8621,7 @@ msgstr "བསྒྲུབ་རྟགས་ཀྱི་གྲུ་བཞི་
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_SUM_SQ.2.String.Text
 #, fuzzy
 msgid  "number "
-msgstr "ཨང་གྲངས་།"
+msgstr "ཨང་གྲངས།"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_SUM_SQ.3.String.Text
 #, fuzzy
@@ -8666,7 +8666,7 @@ msgstr "ཁྱད་ཚད།"
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_SUM_IF.5.String.Text
 #, fuzzy
 msgid  "The cell range in which the search criteria are given."
-msgstr "འཚོལ་ཞིབ་ཀྱི་ཁྱད་ཚད་བཀོད་དེ་ཡོད་པའི་ ནང་ཐིག་གི་ཁྱབ་ཚད།"
+msgstr "འཚོལ་ཞིབ་ཀྱི་ཁྱད་ཚད་བཀོད་དེ་ཡོད་པའི་ནང་ཐིག་གི་ཁྱབ་ཚད།"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_SUM_IF.6.String.Text
 #, fuzzy
@@ -8817,7 +8817,7 @@ msgstr "ཨང་གྲངས་གཅིག་གི་རྩ་གྲངས་
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_SQRT.2.String.Text
 #, fuzzy
 msgid  "number"
-msgstr "ཨང་ཡིག"
+msgstr "ཨང་།"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_SQRT.3.String.Text
 #, fuzzy
@@ -8867,17 +8867,17 @@ msgstr "ཡང་བསྐྱར་མེད་པའི་རྒྱུ་་ར
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_KOMBIN.2.String.Text
 #, fuzzy
 msgid  "number_1"
-msgstr "ཨང་གྲངས་༡།(_1)"
+msgstr "ཨང་གྲངས་ ༡་།(_1)"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_KOMBIN.3.String.Text
 #, fuzzy
 msgid  "The total number of elements."
-msgstr "རྒྱུ་་རྫས་ཀྱི་བསྡོམས།"
+msgstr "རྒྱུ་རྫས་ཀྱི་གྱངས་ཁ་བསྡོམས།"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_KOMBIN.4.String.Text
 #, fuzzy
 msgid  "number_2"
-msgstr "ཨང་གྲངས་ ༢།(_2)"
+msgstr "ཨང་གྲངས་ ༢་།(_2)"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_KOMBIN.5.String.Text
 #, fuzzy
@@ -8897,7 +8897,7 @@ msgstr "ཨང་གྲངས་༡།(_1)"
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_KOMBIN_2.3.String.Text
 #, fuzzy
 msgid  "The total number of elements."
-msgstr "རྒྱུ་རྫས་ཀྱི་བསྡོམས།"
+msgstr "རྒྱུ་རྫས་ཀྱི་གྱངས་ཁ་བསྡོམས།"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_KOMBIN_2.4.String.Text
 #, fuzzy
@@ -8917,7 +8917,7 @@ msgstr "ཨང་ཡིག་ཅི་ག་གི་ཨར་ཀོ་ས་ཡ
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_ARC_COS.2.String.Text
 #, fuzzy
 msgid  "Number"
-msgstr "ཨང་གྲངས།"
+msgstr "ཨང་ཡིག"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_ARC_COS.3.String.Text
 #, fuzzy
@@ -8932,7 +8932,7 @@ msgstr "ཨང་ཡིག་ཨརཀ་ས་ཡིན་དེ་ སླར�
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_ARC_SIN.2.String.Text
 #, fuzzy
 msgid  "Number"
-msgstr "ཨང་གྲངས།"
+msgstr "ཨང་ཡིག"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_ARC_SIN.3.String.Text
 #, fuzzy
@@ -8947,7 +8947,7 @@ msgstr "ཨང་ཡིག་ལུགས་ལྡོག་སྦེ་ཡོད
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_ARC_COS_HYP.2.String.Text
 #, fuzzy
 msgid  "Number"
-msgstr "ཨང་གྲངས།"
+msgstr "ཨང་ཡིག"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_ARC_COS_HYP.3.String.Text
 #, fuzzy
@@ -8962,7 +8962,7 @@ msgstr "ཨང་ཡིག་གི་ལུགས་ལྡོག་རབ་བ
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_ARC_SIN_HYP.2.String.Text
 #, fuzzy
 msgid  "Number"
-msgstr "ཨང་གྲངས།"
+msgstr "ཨང་ཡིག"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_ARC_SIN_HYP.3.String.Text
 #, fuzzy
@@ -8977,7 +8977,7 @@ msgstr "ཨང་ཡིག་གི་ལུགས་ལྡོག་སྦེ་
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_ARC_COT.2.String.Text
 #, fuzzy
 msgid  "Number"
-msgstr "ཨང་གྲངས།"
+msgstr "ཨང་ཡིག"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_ARC_COT.3.String.Text
 #, fuzzy
@@ -8992,7 +8992,7 @@ msgstr "ཨང་ཡིག་གི་ ཨརཀ་ཟུར་རེག་ལ�
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_ARC_TAN.2.String.Text
 #, fuzzy
 msgid  "Number"
-msgstr "ཨང་གྲངས།"
+msgstr "ཨང་ཡིག"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_ARC_TAN.3.String.Text
 #, fuzzy
@@ -9007,7 +9007,7 @@ msgstr "ཨང་གྲངས་ཀྱི་རབ་ ལུགས་ལྡོ�
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_ARC_COT_HYP.2.String.Text
 #, fuzzy
 msgid  "Number"
-msgstr "ཨང་གྲངས།"
+msgstr "ཨང་ཡིག"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_ARC_COT_HYP.3.String.Text
 #, fuzzy
@@ -9022,7 +9022,7 @@ msgstr "ཨང་གྲངས་ཀྱི་ལུགས་ལྡོག་སྦ
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_ARC_TAN_HYP.2.String.Text
 #, fuzzy
 msgid  "Number"
-msgstr "ཨང་གྲངས།"
+msgstr "ཨང་ཡིག"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_ARC_TAN_HYP.3.String.Text
 #, fuzzy
@@ -9037,7 +9037,7 @@ msgstr "ཨང་ཡིག་གི་ཀོ་སིན་ སླར་ལོ�
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_COS.2.String.Text
 #, fuzzy
 msgid  "Number"
-msgstr "ཨང་གྲངས།"
+msgstr "ཨང་ཡིག"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_COS.3.String.Text
 #, fuzzy
@@ -9052,7 +9052,7 @@ msgstr "ཨང་ཡིག་གི་སིན་ སླར་ལོག་ག�
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_SIN.2.String.Text
 #, fuzzy
 msgid  "number"
-msgstr "ཨང་གྲངས།"
+msgstr "ཨང་ཡིག"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_SIN.3.String.Text
 #, fuzzy
@@ -9067,7 +9067,7 @@ msgstr "ཨང་ཡིག་གི་ཟུར་རེག་ལྡོག་ཟ
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_COT.2.String.Text
 #, fuzzy
 msgid  "Number"
-msgstr "ཨང་གྲངས།"
+msgstr "ཨང་ཡིག"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_COT.3.String.Text
 #, fuzzy
@@ -9082,7 +9082,7 @@ msgstr "ཨང་ཡིག་གི་ཊན་ཇནཊི་དེ་ སླ�
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_TAN.2.String.Text
 #, fuzzy
 msgid  "number"
-msgstr "ཨང་གྲངས།"
+msgstr "ཨང་ཡིག"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_TAN.3.String.Text
 #, fuzzy
@@ -9097,7 +9097,7 @@ msgstr "ཨང་ཡིག་ཅིག་གི་རབ་བཏགས་ཅན
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_COS_HYP.2.String.Text
 #, fuzzy
 msgid  "Number"
-msgstr "ཨང་གྲངས།"
+msgstr "ཨང་ཡིག"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_COS_HYP.3.String.Text
 #, fuzzy
@@ -9112,7 +9112,7 @@ msgstr "ཨང་ཡིག་གི་རབ་བཏགས་ཅན་གྱི
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_SIN_HYP.2.String.Text
 #, fuzzy
 msgid  "number"
-msgstr "ཨང་གྲངས།"
+msgstr "ཨང་ཡིག"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_SIN_HYP.3.String.Text
 #, fuzzy
@@ -9127,7 +9127,7 @@ msgstr "ཨང་ཡིག་གི་རབ་བཏགས་ཅན་གྱི
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_COT_HYP.2.String.Text
 #, fuzzy
 msgid  "Number"
-msgstr "ཨང་གྲངས།"
+msgstr "ཨང་ཡིག"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_COT_HYP.3.String.Text
 #, fuzzy
@@ -9142,7 +9142,7 @@ msgstr "ཨང་ཡིག་གི་རབ་བཏགས་ཅན་གྱི
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_TAN_HYP.2.String.Text
 #, fuzzy
 msgid  "number"
-msgstr "ཨང་གྲངས།"
+msgstr "ཨང་ཡིག"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_TAN_HYP.3.String.Text
 #, fuzzy
@@ -9230,7 +9230,7 @@ msgstr "ཁུག་ཟུར་ཚུ་ལུ་ རེ་ཌི་ཡཱན�
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_DEG.2.String.Text
 #, fuzzy
 msgid  "Number"
-msgstr "ཨང་གྲངས།"
+msgstr "ཨང་ཡིག"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_DEG.3.String.Text
 #, fuzzy
@@ -9245,7 +9245,7 @@ msgstr "ཁུག་ཟུར་ཚུ་རེ་ཌི་ཡཱནསི་ལ
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_RAD.2.String.Text
 #, fuzzy
 msgid  "Number"
-msgstr "ཨང་གྲངས།"
+msgstr "ཨང་ཡིག"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_RAD.3.String.Text
 #, fuzzy
@@ -9260,7 +9260,7 @@ msgstr "གཞི་རྩ་ཨི་གི་དོན་ལུ་ བསྒ�
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_EXP.2.String.Text
 #, fuzzy
 msgid  "Number"
-msgstr "ཨང་གྲངས།"
+msgstr "ཨང་ཡིག"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_EXP.3.String.Text
 #, fuzzy
@@ -9275,12 +9275,12 @@ msgstr "སེལ་འཐུ་འབད་ཡོད་པའི་གང་ར
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_LOG.2.String.Text
 #, fuzzy
 msgid  "Number"
-msgstr "ཨང་གྲངས།"
+msgstr "ཨང་ཡིག"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_LOG.3.String.Text
 #, fuzzy
 msgid  "A value greater than 0 for which the logarithm is to be calculated."
-msgstr "མཉམ་གྲངས་རྩིས་སྟོན་དགོ་པའི་དོན་ལུ་ ༠་ལས་སྦོམ་པའི་གནས་གོང་ཅིག"
+msgstr "མཉམ་གྲངས་དེ་རྩིས་སྟོན་དགོ་པའི་དོན་ལུ་ ༠་ལས་སྦོམ་པའི་གནས་གོང་ཅིག"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_LOG.4.String.Text
 #, fuzzy
@@ -9299,7 +9299,7 @@ msgstr "ཨང་ཡིག་གི་རང་བཞིན་གྱི་མཉ
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_LN.2.String.Text
 #, fuzzy
 msgid  "Number"
-msgstr "ཨང་གྲངས།"
+msgstr "ཨང་ཡིག"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_LN.3.String.Text
 #, fuzzy
@@ -9314,7 +9314,7 @@ msgstr "ཨང་ཡིག་ཅིག་གི་ གཞི་རྟེན་-�
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_LOG10.2.String.Text
 #, fuzzy
 msgid  "Number"
-msgstr "ཨང་གྲངས།"
+msgstr "ཨང་ཡིག"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_LOG10.3.String.Text
 #, fuzzy
@@ -9329,7 +9329,7 @@ msgstr "ཨང་ཡིག་ཅི་ག་གི་ཆ་རྐྱེན་ར
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_FACT.2.String.Text
 #, fuzzy
 msgid  "Number"
-msgstr "ཨང་གྲངས།"
+msgstr "ཨང་ཡིག"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_FACT.3.String.Text
 #, fuzzy
@@ -9413,7 +9413,7 @@ msgstr "ཨང་ཡིག"
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_INT.3.String.Text
 #, fuzzy
 msgid  "The number to be rounded down."
-msgstr "མར་སྐོར་ཐེངས་འབད་དགོ་པའི་ཨང་ཡིག"
+msgstr "མར་སྐོར་ཐེངས་འབད་དགོ་ནི་ཨིན་མི་ཨང་ཡིག"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_TRUNC.1.String.Text
 #, fuzzy
@@ -9423,7 +9423,7 @@ msgstr "ཨང་ཡིག་བཅུ་ཚག་གི་ས་གནས་ད
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_TRUNC.2.String.Text
 #, fuzzy
 msgid  "number"
-msgstr "ཨང་གྲངས།"
+msgstr "ཨང་ཡིག"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_TRUNC.3.String.Text
 #, fuzzy
@@ -9448,7 +9448,7 @@ msgstr "སྔ་གོང་ངེས་འཛིན་འབད་ཡོད་
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_ROUND.2.String.Text
 #, fuzzy
 msgid  "number"
-msgstr "ཨང་གྲངས།"
+msgstr "ཨང་ཡིག"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_ROUND.3.String.Text
 #, fuzzy
@@ -9463,7 +9463,7 @@ msgstr "གྱངས་ཁ་རྐྱབས།"
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_ROUND.5.String.Text
 #, fuzzy
 msgid  "The number of places to which a number is to be rounded."
-msgstr "ཨང་གྲངས་སྐོར་ཐེངས་འབད་དགོ་པའི་ས་གནས་ཀྱི་གྱངས་ཁ།"
+msgstr "ཨང་ཡིག་སྐོར་ཐེངས་འབད་དགོ་ནི་ཨིན་མི་ས་གནས་ཀྱི་གྱངས་ཁ།"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_ROUND_UP.1.String.Text
 #, fuzzy
@@ -9473,12 +9473,12 @@ msgstr "འཁྲུལ་མེད་སྔ་གོང་ངེས་འཛི
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_ROUND_UP.2.String.Text
 #, fuzzy
 msgid  "number"
-msgstr "ཨང་གྲངས།"
+msgstr "ཨང་ཡིག"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_ROUND_UP.3.String.Text
 #, fuzzy
 msgid  "The number to be rounded up."
-msgstr "ཡར་སྐོར་ཐེངས་འབད་དགོ་པའི་ཨང་ཡིག"
+msgstr "ཡར་སྐོར་ཐེངས་འབད་ནི་གི་ཨང་ཡིག"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_ROUND_UP.4.String.Text
 #, fuzzy
@@ -9498,12 +9498,12 @@ msgstr "སྔ་གོང་ངེསས་འཛིན་འབད་ཡོད
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_ROUND_DOWN.2.String.Text
 #, fuzzy
 msgid  "number"
-msgstr "ཨང་གྲངས།"
+msgstr "ཨང་ཡིག"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_ROUND_DOWN.3.String.Text
 #, fuzzy
 msgid  "The number to be rounded down."
-msgstr "མར་སྐོར་ཐེངས་འབད་ནི་ཨིན་མིའི་ཨང་ཡིག"
+msgstr "མར་སྐོར་ཐེངས་འབད་དགོ་པའི་ཨང་ཡིག"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_ROUND_DOWN.4.String.Text
 #, fuzzy
@@ -9528,7 +9528,7 @@ msgstr "ཨང་གྲངས།"
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_EVEN.3.String.Text
 #, fuzzy
 msgid  "The number to be rounded up."
-msgstr "ཡར་སྐོར་ཐེངས་འབད་ནི་ཨིན་མིའི་ཨང་ཡིག"
+msgstr "ཡར་སྐོར་ཐེངས་འབད་དགོ་པའི་ཨང་ཡིག"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_ODD.1.String.Text
 #, fuzzy
@@ -9563,7 +9563,7 @@ msgstr "ཡར་སྐོར་ཐེངས་འབད་ནི་ཨིན་
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_CEIL.4.String.Text
 #, fuzzy
 msgid  "Significance"
-msgstr "རྩ་ཆེ་ཧིང་།"
+msgstr "རྩ་ཧིང་།"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_CEIL.5.String.Text
 #, fuzzy
@@ -9753,17 +9753,17 @@ msgstr "ཨེ་རེ་གཉིས་ཀྱི་ གྲུ་བཞིའ�
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_SUM_X2MY2.2.String.Text
 #, fuzzy
 msgid  "array_x"
-msgstr "ཨེ་རེ་ཨེགསི།(_x)"
+msgstr "ཨེ་རེ་ ཨེགསི།(_x)"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_SUM_X2MY2.3.String.Text
 #, fuzzy
 msgid  "First array where the square of the arguments are totalled."
-msgstr "བསྒྲུབ་རྟགས་ཚུ་གི་གྲུ་བཞི་བསྡོམས་རྩིས་སྟོན་སྲོལ་ཡོད་པའི་ ཨེ་རེ་དང་པ།"
+msgstr "སྒྲུབ་རྟགས་ཚུ་གི་གྲུ་བཞི་བསྡོམས་རྩིས་སྟོན་སྲོལ་ཡོད་པའི་ ཨེ་རེ་དང་པ།"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_SUM_X2MY2.4.String.Text
 #, fuzzy
 msgid  "array_y"
-msgstr "ཨེ་རེ་ཝའི།(_y)"
+msgstr "ཨེ་རེ་ ཝའི། (_y)"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_SUM_X2MY2.5.String.Text
 #, fuzzy
@@ -9828,7 +9828,7 @@ msgstr "འབྱུང་ཐེངས་བགོ་བཀྲམ་ཅིག་
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_FREQUENCY.2.String.Text
 #, fuzzy
 msgid  "data"
-msgstr "གནད་སྡུད་།"
+msgstr "གནད་སྡུད།"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_FREQUENCY.3.String.Text
 #, fuzzy
@@ -9853,32 +9853,32 @@ msgstr "ཐིག་གི་རི་གེ་རེ་ཤཱན་གྱི་
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_RGP.2.String.Text
 #, fuzzy
 msgid  "data_Y"
-msgstr "གནད་སྡུད་ ཝའི།(_Y)"
+msgstr "གནད་སྡུད་ཝའི།(_Y)"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_RGP.3.String.Text
 #, fuzzy
 msgid  "The Y data array."
-msgstr "ཝའི་གནད་སྡུད་ཀྱི་ཨེ་རེ།"
+msgstr "གནད་སྡུད་ཝའི་གི་ཨེ་རེ།"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_RGP.4.String.Text
 #, fuzzy
 msgid  "data_X"
-msgstr "གནད་སྡུད་ཨེགསི།(_X)"
+msgstr "གནད་སྡུད་ཨེསི།(_X)"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_RGP.5.String.Text
 #, fuzzy
 msgid  "The X data array."
-msgstr "ཨེགསི་གནད་སྡུད་ཨེ་རེ།"
+msgstr "གནད་སྡུད་ཨེགསི་གི་ཨེ་རེ།"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_RGP.6.String.Text
 #, fuzzy
 msgid  "Linear_type"
-msgstr "ཐིག་གི་དབྱེ་བ།(_t)"
+msgstr "ཐིག་གི་དབྱེ་བ།"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_RGP.7.String.Text
 #, fuzzy
 msgid  "If type = 0 the linears will be calculated through the zero point, or else moved linears."
-msgstr "དབྱེ་བ་=༠་ཨིན་པ་ཅིན་ ཡིག་ཚད་དང་ ཡང་ན་ གཞན་མི་ཅིག་ལུ་སྤོ་བཤུད་འབད་ཡོད་པའི་ཐིག་ཚུ ཀླད་ཀོར་བརྒྱུད་དེ་རྩིས་སྟོན་འོང་།"
+msgstr "དབྱེ་བ་=༠་ཨིན་པ་ཅིན་ ཐིག་དེ་ཚུ་ ཡིག་ཚད་ཀླད་ཀོར་བརྒྱུད་དེ་ རྩིས་སྟོན་ནི་ཨིནམ་ད་ ཡང་ན་ གཞན་ཁ་ལུ་སྤོ་བཤུད་འབད་ཡོད་པའི་ཐིག་ཚུ།"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_RGP.8.String.Text
 #, fuzzy
@@ -9888,7 +9888,7 @@ msgstr "སི་ཊེཊིསི།"
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_RGP.9.String.Text
 #, fuzzy
 msgid  "If parameter = 0 then only the regression coefficient will be calculated, otherwise other values as well."
-msgstr "ཚད་བཟུང་=༠་ཨིན་པ་ཅིན་རྐྱངམ་ཅིག་ རི་གེ་རེ་ཤཱན་གྲངས་རྟགས་དེ་རྩིས་སྟོན་འོང་ དེ་མེན་པ་ཅིན་ གནས་གོང་གཞན་མི་ཡང་རྩིས་སྟོན་འབད་འོང་།"
+msgstr "ཚད་བཟུང་=༠་ཨིན་པ་ཅིན་རྐྱངམ་ཅིག་ རི་གེ་རེ་ཤཱན་གྲངས་རྟགས་དེ་རྩིས་སྟོན་ནི་ཨིནམ་དང་ དེ་མེན་པ་ཅིན་ གནས་གོེང་གཞན་མ་ཚུ་ཡང་རྩིས་སྟོན་འབད་འོང་།"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_RKP.1.String.Text
 #, fuzzy
@@ -9898,22 +9898,22 @@ msgstr "བསྒྱུར་གྲངས་རི་གེ་རེ་ཤཱན
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_RKP.2.String.Text
 #, fuzzy
 msgid  "data_Y"
-msgstr "གནད་སྡུད་ ཝའི།(_Y)"
+msgstr "གནད་སྡུད་ཝའི།(_Y)"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_RKP.3.String.Text
 #, fuzzy
 msgid  "The Y data array."
-msgstr "ཝའི་གནད་སྡུད་ཨེ་རེ།"
+msgstr "གནད་སྡུད་ཝའི་གི་ཨེ་རེ།"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_RKP.4.String.Text
 #, fuzzy
 msgid  "data_X"
-msgstr "གནད་སྡུད་ ཨེགསི།(_X)"
+msgstr "གནད་སྡུད་ཨེགསི།(_X)"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_RKP.5.String.Text
 #, fuzzy
 msgid  "The X data array."
-msgstr "ཨེགསི་གནད་སྡུད་ཨེ་རེ།"
+msgstr "གནད་སྡུད་ཨེགསི་གི་ཨེ་རེ།"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_RKP.6.String.Text
 #, fuzzy
@@ -9923,7 +9923,7 @@ msgstr "ལས་འགན་གྱི་དབྱེ་བ།(_t)"
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_RKP.7.String.Text
 #, fuzzy
 msgid  "If type = 0 then the functions will be calculated in the form of y=m^x, or also functions y=b*m^x."
-msgstr "དབྱེ་བ་=༠་ཨིན་པ་ཅིན་ ལས་འགན་ཚུ་  y=m^x,ཡང་ན་ ལས་འགན་y=b*m^x.གི་རྣམ་པ་ལུ་ རྩིས་སྟོན་འོང་།"
+msgstr "དབྱེ་བ་=༠་ཨིན་པ་ཅིན་ ལས་འགན་དེ་ y=m^x,ཡང་ན་ ལས་འགན་y=b*m^x.གི་རྣམ་པ་སྦེ་རྩིསས་སྟོནམ་ཨིན།"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_RKP.8.String.Text
 #, fuzzy
@@ -9943,22 +9943,22 @@ msgstr "རི་གེ་རེ་ཤཱན་གི་ཐིག་བརྒྱ
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_TREND.2.String.Text
 #, fuzzy
 msgid  "data_Y"
-msgstr "གནད་སྡུད་ ཝའི།(_Y)"
+msgstr "གནད་སྡུད་ཝའི།(_Y)"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_TREND.3.String.Text
 #, fuzzy
 msgid  "The Y data array."
-msgstr "ཝའི་གནད་སྡུད་ཨེ་རེ།"
+msgstr "ཝའི་གནད་སྡུད་ཀྱི་ཨེ་རེ།"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_TREND.4.String.Text
 #, fuzzy
 msgid  "data_X"
-msgstr "གནད་སྡུད་ ཨེགསི།(_X)"
+msgstr "གནད་སྡུད་ཨེགསི།(_X)"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_TREND.5.String.Text
 #, fuzzy
 msgid  "The X data array as the basis for the regression."
-msgstr "གནད་སྡུད་ཨེགསི་དེ་ རི་གེ་རེ་ཤཱན་གཱི་དོན་ལུ་ གཞི་རྩ་བཟུམ་སྦེ་ཨིན།"
+msgstr "ཨེགསི་གནད་སྡུད་ཨེ་རེ་དེ་ རི་གེ་རེ་ཤཱན་དེ་གི་དོན་ལུ་ གཞི་རྩ་བཟུམ་སྦེ་ཨིན།"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_TREND.6.String.Text
 #, fuzzy
@@ -9968,7 +9968,7 @@ msgstr "གནད་སྡུད་གསརཔ་ ཨེགསི།(_X)"
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_TREND.7.String.Text
 #, fuzzy
 msgid  "The array of X data for recalculating the values."
-msgstr "གནས་གོང་རྩིས་སྟོན་ནིའི་དོན་ལུ་ གནད་སྡུད་ཨེགསི་གི་ཨེ་རེ།"
+msgstr "གནས་གོང་ཚུ་རྩིས་སྟོན་ནིའི་དོན་ལུ་ གནད་སྡུད་ཨེགསི་གི་ཨེ་རེ།"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_TREND.8.String.Text
 #, fuzzy
@@ -9988,17 +9988,17 @@ msgstr "བསྒྱུར་གྲངས་རི་གེ་རེ་ཤཱེ
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_GROWTH.2.String.Text
 #, fuzzy
 msgid  "data_Y"
-msgstr "གནད་སྡུད་ ཝའི།(_Y)"
+msgstr "གནད་སྡུད་ཝའི།(_Y)"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_GROWTH.3.String.Text
 #, fuzzy
 msgid  "The Y data array."
-msgstr "ཝའི་གནད་སྡུད་ཨེ་རེ།"
+msgstr "གནད་སྡུད་ཝའི་གི་ཨེ་རེ།"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_GROWTH.4.String.Text
 #, fuzzy
 msgid  "data_X"
-msgstr "གནད་སྡུད་ ཨེགསི།(_X)"
+msgstr "གནད་སྡུད་ཨེགསི།(_X)"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_GROWTH.5.String.Text
 #, fuzzy
@@ -10063,7 +10063,7 @@ msgstr "བསྒྲུབ་རྟགས་ཀྱི་ཐོ་ཡིག་ན
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_MAX.2.String.Text
 #, fuzzy
 msgid  "number "
-msgstr "ཨང་གྲངས།"
+msgstr "ཨང་གྲངས་།"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_MAX.3.String.Text
 #, fuzzy
@@ -10093,7 +10093,7 @@ msgstr "བསྒྲུབ་རྟགས་གི་ཐོ་ཡིག་ནང
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_MIN.2.String.Text
 #, fuzzy
 msgid  "number "
-msgstr "ཨང་ཡིག"
+msgstr "ཨང་གྲངས།"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_MIN.3.String.Text
 #, fuzzy
@@ -10128,7 +10128,7 @@ msgstr "ཨང་གྲངས།"
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_VAR.3.String.Text
 #, fuzzy
 msgid  "Number 1, number 2, ... are 1 to 30 numerical arguments which portray a sample of a population."
-msgstr "ཨང་ཡིང་༡་ ཨང་ཡིག་༢་ ཚུ་ མི་བརློབས་ཅི་ག་གི་དཔེ་ཚད་ཅིག་འདྲ་རིས་བཟོ་མི་ ༡་ལས་༣༠་ཚུན་གྱི་ཨང་གྲངས་ཀྱི་བསྒྲུབ་རྟགས་ཚུ་ཨིན།"
+msgstr "ཨང་གྲངས་༡་ ཨང་གྲངས་༢་ ཚུ་ མི་བརློབས་ཅིག་གི་ དཔེ་ཚད་ཅིག་འདྲ་རིས་བཟོ་མི་ ༡་ལས་༣༠་ཚུན་གྱི་ ཨང་གྲངས་གྱི་བསྒྲུབ་རྟགས་ཚུ་ཨིན།"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_VAR_A.1.String.Text
 #, fuzzy
@@ -10188,7 +10188,7 @@ msgstr "ཨང་གྲངས།"
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_ST_DEV.3.String.Text
 #, fuzzy
 msgid  "Number 1, number 2, ... are 1 to 30 numerical arguments which portray a sample of a population."
-msgstr "ཨག་ཡིག་༡་ ཨང་ཡིག་༢་ ཚུ་ མི་བརློབས་ཀྱི་དཔེ་ཚད་ཅིག་འདྲ་རིས་བཟོ་མི་ ༡་ལས་༣༠་ཚུན་གྱི་ ཨང་གྲངས་ཀྱི་བསྒྲུབ་རྟགས་ཚུ་ཨིན།"
+msgstr "ཨང་ཡིང་༡་ ཨང་ཡིག་༢་ ཚུ་ མི་བརློབས་ཅི་ག་གི་དཔེ་ཚད་ཅིག་འདྲ་རིས་བཟོ་མི་ ༡་ལས་༣༠་ཚུན་གྱི་ཨང་གྲངས་ཀྱི་བསྒྲུབ་རྟགས་ཚུ་ཨིན།"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_ST_DEV_A.1.String.Text
 #, fuzzy
@@ -10278,7 +10278,7 @@ msgstr "ཨང་ཡིག"
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_DEV_SQ.3.String.Text
 #, fuzzy
 msgid  "Number 1, number 2, ... are 1 to 30 numerical arguments which portray a sample."
-msgstr "ཨང་གྲངས་༡་ ཨང་གྲངས་༢་ ཚུ་ དཔེ་ཚད་འདྲ་རིས་བཟོ་མི་ ༡་ལས་༣༠་ཚུན་གྱི་ཨང་གརངས་ཀྱི་ བསྒྲུབ་རྟགས་ཚུ་ཨིན།"
+msgstr "ཨང་ཡིག་༡་ ཨང༌ཡིག་༢་ ཚུ་ དཔེ་ཚད་འདྲ་རིས་བཟོ་མི་༡་ལས་༣༠་ཚུན་གྱི་ ཨང་གྲངས་ཀྱི་བསྒྲུབ་རྟགས་ཚུ་ཨིན།"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_AVE_DEV.1.String.Text
 #, fuzzy
@@ -10338,7 +10338,7 @@ msgstr "ཨང་གྲངས།"
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_GEO_MEAN.3.String.Text
 #, fuzzy
 msgid  "Number 1, number 2, ... are 1 to 30 numerical arguments which portray a sample."
-msgstr "ཨང་གྲངས་༡་ ཨང་གྲངས་༢་ ཚུ་ དཔེ་ཚད་འདྲ་རིས་བཟོ་མི་་ ༡་ལས་༣༠་ཚུན་གྱི་ ཨང་གྲངས་ཀྱི་བསྒྲུབ་རྟགས་ཚུ་ཨིན།"
+msgstr "ཨང་གྲངས་༡་ ཨང་གྲངས་༢་ ཚུ་ དཔེ་ཚད་འདྲ་རིས་བཟོ་མི་ ༡་ལས་༣༠་ཚུན་གྱི་ཨང་གརངས་ཀྱི་ བསྒྲུབ་རྟགས་ཚུ་ཨིན།"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_HAR_MEAN.1.String.Text
 #, fuzzy
@@ -10353,7 +10353,7 @@ msgstr "ཨང་གྲངས།"
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_HAR_MEAN.3.String.Text
 #, fuzzy
 msgid  "Number 1, number 2, ... are 1 to 30 numerical arguments which portray a sample."
-msgstr "ཨང་གྲངས་༡་ ཨང་གྲངས་༢་ ཚུ་ དཔེ་ཚད་འདྲ་རིས་བཟོ་མི་ ཨང་གྲངས་ཀྱི་ བསྒྲུབ་རྟགས་ཚུ་ཨིན།"
+msgstr "ཨང་གྲངས་༡་ ཨང་གྲངས་༢་ ཚུ་ དཔེ་ཚད་འདྲ་རིས་བཟོ་མི་་ ༡་ལས་༣༠་ཚུན་གྱི་ ཨང་གྲངས་ཀྱི་བསྒྲུབ་རྟགས་ཚུ་ཨིན།"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_MODAL_VALUE.1.String.Text
 #, fuzzy
@@ -10368,7 +10368,7 @@ msgstr "ཨང་གྲངས།"
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_MODAL_VALUE.3.String.Text
 #, fuzzy
 msgid  "Number 1, number 2, ... are 1 to 30 numerical arguments which portray a sample."
-msgstr "ཨང་གྲངས་༡་ ཨང་གྲངས་༢་ ཚུ་ དཔེ་ཚད་འདྲ་རིས་བཟོ་མི་  ༡་ལས་༣༠་ཚུན་གྱི་ ཨང་གྲངས་ཀྱི་བསྒྲུབ་རྟགས་ཚུ་ཨིན།"
+msgstr "ཨང་གྲངས་༡་ ཨང་གྲངས་༢་ ཚུ་ དཔེ་ཚད་འདྲ་རིས་བཟོ་མི་ ཨང་གྲངས་ཀྱི་ བསྒྲུབ་རྟགས་ཚུ་ཨིན།"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_MEDIAN.1.String.Text
 #, fuzzy
@@ -10398,7 +10398,7 @@ msgstr "གནད་སྡུད།"
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_PERCENTILE.3.String.Text
 #, fuzzy
 msgid  "The array of the data in the sample."
-msgstr "དཔེ་ཚད་ནང་གི་ གནད་སྡུད་དེ་གི་ ཨེ་རེ།"
+msgstr "དཔེ་ཚད་ནང་གི་ གནད་སྡུད་དེ་གི་ཨེ་རེ།"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_PERCENTILE.4.String.Text
 #, fuzzy
@@ -10423,7 +10423,7 @@ msgstr "གནད་སྡུད།"
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_QUARTILE.3.String.Text
 #, fuzzy
 msgid  "The array of the data in the sample."
-msgstr "དཔེ་ཚད་ནང་གི་ གནད་སྡུད་ཀྱི་ཨེ་རེ།"
+msgstr "དཔེ་ཚད་ནང་གི་ གནད་སྡུད་དེ་གི་ ཨེ་རེ།"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_QUARTILE.4.String.Text
 #, fuzzy
@@ -10448,7 +10448,7 @@ msgstr "གནད་སྡུད།"
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_LARGE.3.String.Text
 #, fuzzy
 msgid  "The array of the data in the sample."
-msgstr "གནད་སྡུད་ནང་གི་ གནད་སྡུད་ཀྱི་ཨེ་རེ། "
+msgstr "དཔེ་ཚད་ནང་གི་ གནད་སྡུད་ཀྱི་ཨེ་རེ།"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_LARGE.4.String.Text
 #, fuzzy
@@ -10458,7 +10458,7 @@ msgstr "གོ་གནས་ཀྱི་རིམ་པ་ སི།(_c)"
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_LARGE.5.String.Text
 #, fuzzy
 msgid  "The ranking of the value."
-msgstr "གནས་གོང་གོ་གནས་ཀྱི་རིམ་པ།"
+msgstr "གནས་གོང་གི་གོ་གནས་རིམ་པ།"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_SMALL.1.String.Text
 #, fuzzy
@@ -10473,7 +10473,7 @@ msgstr "གནད་སྡུད།"
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_SMALL.3.String.Text
 #, fuzzy
 msgid  "The array of the data in the sample."
-msgstr "དཔེ་ཚད་ནང་གི་གནད་སྡུད་ཀྱི་ཨེ་རེ།"
+msgstr "གནད་སྡུད་ནང་གི་ གནད་སྡུད་ཀྱི་ཨེ་རེ། "
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_SMALL.4.String.Text
 #, fuzzy
@@ -10623,7 +10623,7 @@ msgstr "དངོས་པོ་ནང་ན་བཙུགས།"
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_B.2.String.Text
 #, fuzzy
 msgid  "trials"
-msgstr "བརྗེས་བཤུལ།"
+msgstr "རྗེས་བཤུལ།"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_B.3.String.Text
 #, fuzzy
@@ -10668,12 +10668,12 @@ msgstr "སྤྱིར་གཏང་ཚད་ལྡན་བགོ་བཀྲ
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_PHI.2.String.Text
 #, fuzzy
 msgid  "number"
-msgstr "ཨང་ཡིག"
+msgstr "ཨང་གྲངས།"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_PHI.3.String.Text
 #, fuzzy
 msgid  "The value for which the standard normal distribution is to be calculated."
-msgstr "སྤྱིར་གཏང་བགོ་བཀྲམ་ཚད་ལྡན་དེ་ རྩིས་སྟོན་ནི་ཨིན་མིའི་དོན་ལུ་ གནས་གོང་།"
+msgstr "སྤྱིར་གཏང་གི་ཚད་ལྡན་བགོ་བཀྲམ་རྩིས་སྟོན་ནི་ཨིན་མི་གི་དོན་ལུ་ གནས་གོང་།"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_GAUSS.1.String.Text
 #, fuzzy
@@ -10743,7 +10743,7 @@ msgstr "རྗེས་བཤུལ།"
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_BINOM_DIST.5.String.Text
 #, fuzzy
 msgid  "The total number of trials."
-msgstr "བརྗེས་བཤུལ་གྱི་བསྡོམས།"
+msgstr "རྗེས་བཤུལ་གྱི་བསྡོམས།"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_BINOM_DIST.6.String.Text
 #, fuzzy
@@ -10753,7 +10753,7 @@ msgstr "ཨེསི་པི།"
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_BINOM_DIST.7.String.Text
 #, fuzzy
 msgid  "The success probability of a trial."
-msgstr "རྗེས་བཤུལ་ཅིག་གི་ མཐར་འགྱོལ་འབྱུང་ངེས།"
+msgstr "རྗེས་བཤུལ་ཅིག་གི་ མཐར་འཁྱོལ་འབྱུང་ངེས།"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_BINOM_DIST.8.String.Text
 #, fuzzy
@@ -10798,7 +10798,7 @@ msgstr "ཨེསི་པི།"
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_NEG_BINOM_VERT.7.String.Text
 #, fuzzy
 msgid  "The success probability of a trial."
-msgstr "རྗེས་བཤུལ་ཅིག་གི་མཐར་འགྱོལ་འབྱུང་ངེས།"
+msgstr "རྗེས་བཤུལ་ཅིག་གི་ མཐར་འགྱོལ་འབྱུང་ངེས།"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_KRIT_BINOM.1.String.Text
 #, fuzzy
@@ -10891,7 +10891,7 @@ msgstr "འབྲིང་རིམ།"
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_NORM_DIST.5.String.Text
 #, fuzzy
 msgid  "The mean value. The mean value of the normal distribution."
-msgstr "འབྲིང་རིམ་གནས་གོང་།སྤྱིར་གཏང་བགོ་བཀྲམ་དེ་གི་ འབྲིང་རིམ་གནས་གོང་།"
+msgstr "འབྲིང་རིམ་གནས་གོང་། སྤྱིར་གཏང་བགོ་བཀྲམ་དེ་གི་འབྲིང་རིམ་གནས་གོང་།"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_NORM_DIST.6.String.Text
 #, fuzzy
@@ -10901,7 +10901,7 @@ msgstr "ཨེསི་ཊི་ཌི་ཨི་ཝི།"
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_NORM_DIST.7.String.Text
 #, fuzzy
 msgid  "Standard deviation. The standard deviation of the normal distribution."
-msgstr "ཚད་ལྡན་ཁ་བསྒྱུར་བ། སྤྱིར་གཏང་བགོ་བཀྲམ་གྱི་ཚད་ལྡན་ཁ་བསྒྱུར་བ།"
+msgstr "ཚད་ལྡན་གྱི་ཁ་བསྒྱུར་བ། སྤྱིར་གཏང་བགོ་བཀྲམ་དེ་གི་ཚད་ལྡན་ཁ་བསྒྱུར་བ།"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_NORM_DIST.8.String.Text
 #, fuzzy
@@ -11086,7 +11086,7 @@ msgstr "སི།"
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_EXP_DIST.7.String.Text
 #, fuzzy
 msgid  "Cumulated. C=0 calculates the density function, C=1 the distribution."
-msgstr "འདུ་གསོག་འབད་ཡོདཔ། སི་=༠་གིས་འགྲོ་ཡུལ་ལས་འགན་དེ་རྩིས་སྟོནམ་ཨིན་ སི་=༡་གིས་ བགོ་བཀྲམ་དེ་རྩིས་སྟོནམ་ཨིན།"
+msgstr "འདུ་གསོག་འབད་ཡོདཔ། སི་=༠་གིས་འགྲོ་ཡུལ་གྱི་ལས་འགན་དེ་རྩིས་སྟོནམ་ཨིན་ སི་=༡་གིས་ བགོ་བཀྲམ་དེ་རྩིས་སྟོནམ་ཨིན།"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_GAMMA_DIST.1.String.Text
 msgid  "Returns the value of the probability density function or the cumulative distribution function for the Gamma distribution."
@@ -11217,7 +11217,7 @@ msgstr "ཨཱལ་ཕ།"
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_BETA_DIST.5.String.Text
 #, fuzzy
 msgid  "The Alpha parameter of the Beta distribution."
-msgstr "སྔོན་དཔྱད་བགོ་བཀྲམ་དེ་གི་ ཨཱལ་ཕ་ཚད་བཟུང་།"
+msgstr "སྔོན་དཔྱད་བགོ་བཀྲམ་དེ་གི་ཨཱལ་ཕ་ཚད་བཟུང་།"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_BETA_DIST.6.String.Text
 #, fuzzy
@@ -11227,7 +11227,7 @@ msgstr "སྔོན་དཔྱད།"
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_BETA_DIST.7.String.Text
 #, fuzzy
 msgid  "The Beta parameter of the Beta distribution."
-msgstr "སྔོན་དཔྱད་བགོ་བཀྲམ་དེ་གི་ སྔོན་དཔྱད་ཚད་བཟུང་།"
+msgstr "སྔོན་དཔྱད་བགོ་བཀྲམ་དེ་གི་སྔོན་དཔྱད་ཚད་བཟུང་།"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_BETA_DIST.8.String.Text
 #, fuzzy
@@ -11420,12 +11420,12 @@ msgstr "ཊི་བགོ་བཀྲམ་དེ་ རྩིས་སྟོ�
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_T_DIST.4.String.Text
 #, fuzzy
 msgid  "degrees_freedom"
-msgstr "དབྱེ་རིམ་རང་དབང་།(_f)"
+msgstr "དབྱེ་རིམ་ རང་དབང་།(_f)"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_T_DIST.5.String.Text
 #, fuzzy
 msgid  "The degrees of freedom of the T distribution."
-msgstr "ཊི་ བགོ་བཀྲམ་དེ་གི་ རང་དབང་གི་དབྱེ་རིམ།"
+msgstr "ཊི་བགོ་བཀྲམ་དེ་གི་ རང་དབང་གི་དབྱེ་རིམ།"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_T_DIST.6.String.Text
 #, fuzzy
@@ -11480,22 +11480,22 @@ msgstr "ཨེཕ་བགོ་བཀྲམ་དེ་རྩིས་སྟོ
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_F_DIST.4.String.Text
 #, fuzzy
 msgid  "degrees_freedom_1"
-msgstr "དབྱེ་རིམ་ རང་དབང་།(_f_1)"
+msgstr "དབྱེ་རིམ་ དབང་༡།(_f_1)"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_F_DIST.5.String.Text
 #, fuzzy
 msgid  "The degrees of freedom in the numerator of the F distribution."
-msgstr "ཨེཕ་བགོ་བཀྲམ་དེ་གི་དཔྱ་གྲངས་ནང་གི་ རང་དབང་དབྱེ་རིམ།"
+msgstr "ཨེཕ་བགོ་བཀྲམ་དེ་གི་ དཔྱ་གྲངས་དེ་ནང་ རང་དབང་གི་དབྱེ་རིམ།"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_F_DIST.6.String.Text
 #, fuzzy
 msgid  "degrees_freedom_2"
-msgstr "དབྱེ་རིམ་ རང་དབང་༢།( _f_2)"
+msgstr "དབྱེ་རིམ་ རང་དབང་༢།(_f_2)"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_F_DIST.7.String.Text
 #, fuzzy
 msgid  "The degrees of freedom in the denominator of the F distribution."
-msgstr "ཨེཕ་བགོ་བཀྲམ་གྱི་གཞི་གྲངས་དེ་ནང་གི་རང་དབང་དབྱེ་རིམ། "
+msgstr "ཨེཕ་བགོ་བཀྲམ་དེ་གི་གཞི་གྲངས་དེ་ནང་གི་ རང་དབང་དབྱེ་རིམ་ཚུ།"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_F_INV.1.String.Text
 #, fuzzy
@@ -11554,7 +11554,7 @@ msgstr "དབྱེ་རིམ་རང་དབང་།(_f)"
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_CHI_DIST.5.String.Text
 #, fuzzy
 msgid  "The degrees of freedom of the chi square distribution."
-msgstr "ཆི་གྲུ་བཞི་བགོ་བཀྲམ་དེ་གི་རང་དབང་གི་དབྱེ་རིམ།"
+msgstr "ཆི་གྲུ་བཞི་བགོ་བཀྲམ་གྱི་རང་དབང་དབྱེ་རིམ་ཚུ།"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_CHISQ_DIST.1.String.Text
 msgid  "Returns left-tail probability of the cumulative distribution function or values of the probability density function of the chi-square distribution."
@@ -11691,7 +11691,7 @@ msgstr "༢་གྱངས་ཁ་རྐྱབས།(_2)"
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_VARIATIONEN.5.String.Text
 #, fuzzy
 msgid  "The selection number taken from the elements."
-msgstr "རྒྱུ་རྫས་ནང་བཏོན་མིའི་སེལ་འཐུའིི་གྱངས་ཁ།"
+msgstr "རྒྱུ་རྫས་ནང་ལས་བཏོན་མིའི་་སེལ་འཐུའི་གྱངས་ཁ།"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_VARIATIONEN_2.1.String.Text
 #, fuzzy
@@ -11821,7 +11821,7 @@ msgstr "གནད་སྡུད་༡།(_1)"
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_F_TEST.3.String.Text
 #, fuzzy
 msgid  "The first record array."
-msgstr "སྒྲ་འཛིན་དང་པའི་ཨེ་རེ།"
+msgstr "སྒྲ་འཛིན་དང་པམ་གྱི་ཨེ་རེ།"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_F_TEST.4.String.Text
 #, fuzzy
@@ -11831,7 +11831,7 @@ msgstr "གནད་སྡུད་༢།(_2)"
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_F_TEST.5.String.Text
 #, fuzzy
 msgid  "The second record array."
-msgstr "སྒྲ་འཛིན་གཉིས་པའི་ཨེ་རེ།"
+msgstr "སྒྲ་འཛིན་གཉིས་པམ་གྱི་ཨེ་རེ།"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_T_TEST.1.String.Text
 #, fuzzy
@@ -11846,7 +11846,7 @@ msgstr "གནད་སྡུད་༡།(_1)"
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_T_TEST.3.String.Text
 #, fuzzy
 msgid  "The first record array."
-msgstr "སྒྲ་འཛིན་དང་པའི་ཨེ་རེ།"
+msgstr "སྒྲ་འཛིན་དང་པམ་གྱི་ཨེ་རེ།"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_T_TEST.4.String.Text
 #, fuzzy
@@ -11886,7 +11886,7 @@ msgstr "པི་ཡར་སཱོན་ ཐོན་བསྐྱེད་ཡ�
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_RSQ.2.String.Text
 #, fuzzy
 msgid  "data_Y"
-msgstr "གནད་སྡུད་ ཝའི། (_Y)"
+msgstr "གནད་སྡུད་ ཝའི།(_Y)"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_RSQ.3.String.Text
 #, fuzzy
@@ -11896,7 +11896,7 @@ msgstr "ཝའི་གནད་སྡུད་ཨེ་རེ།"
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_RSQ.4.String.Text
 #, fuzzy
 msgid  "data_X"
-msgstr "གནད་སྡུད་ ཨེགསི།(_X)"
+msgstr "གནད་སྡུད་ཨེགསི།(_X)"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_RSQ.5.String.Text
 #, fuzzy
@@ -12096,7 +12096,7 @@ msgstr "ནང་ཐིག་ཅིག་ལུ་གཞི་བསྟུན་
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_ADDRESS.2.String.Text
 #, fuzzy
 msgid  "row"
-msgstr "གྲལ་ཐིག"
+msgstr "གྲལ་ཐིག་"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_ADDRESS.3.String.Text
 #, fuzzy
@@ -12106,7 +12106,7 @@ msgstr "ནང་ཐིག་དེ་གི་གྲལ་དིག་གི་
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_ADDRESS.4.String.Text
 #, fuzzy
 msgid  "column"
-msgstr "ཀེར་ཐིག"
+msgstr "ཀེར་ཐིག་"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_ADDRESS.5.String.Text
 #, fuzzy
@@ -12194,7 +12194,7 @@ msgstr "གཞི་བསྟུན།"
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_COLUMN.3.String.Text
 #, fuzzy
 msgid  "The reference to a cell or a range."
-msgstr "ནང་ཐིག་ཡང་ན་ ཁྱབ་ཚད་ལུ་ གཞི་བསྟུན།"
+msgstr "ནང་ཐིག་ ཡང་ན་ ཁྱབ་ཚད་ཅིག་ལུ་ གཞི་བསྟུན།"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_ROW.1.String.Text
 #, fuzzy
@@ -12209,7 +12209,7 @@ msgstr "གཞི་བསྟུན།"
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_ROW.3.String.Text
 #, fuzzy
 msgid  "The reference to a cell or a range."
-msgstr "ནང་ཐིག་ ཡང་ན་ ཁྱབ་ཚད་ལུ་གཞི་བསྟུན།"
+msgstr "ནང་ཐིག་ཡང་ན་ ཁྱབ་ཚད་ལུ་ གཞི་བསྟུན།"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_TABLE.1.String.Text
 #, fuzzy
@@ -12442,7 +12442,7 @@ msgstr "ཁྱད་ཚད་འཚོལ་ཞིབ་འབད།"
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_LOOKUP.3.String.Text
 #, fuzzy
 msgid  "The value to be used for comparison."
-msgstr "ག་བསྡུར་བརྐྱབ་ནིའི་དོན་ལུ་ ལག་ལེན་འཐབ་ནི་གི་གནས་གོང་།"
+msgstr "ག་བསྡུར་བརྐྱབ་ནིའི་དོན་ལུ་ལག་ལེན་འཐབ་ནི་གི་གནས་གོང་།"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_LOOKUP.4.String.Text
 #, fuzzy
@@ -12867,7 +12867,7 @@ msgstr "ཚིག་ཡིག་འཚོལ།(_t)"
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_FIND.3.String.Text
 #, fuzzy
 msgid  "The text to be found."
-msgstr "འཐོབ་ནི་ཨིན་མི་གི་ཚིག་ཡིག"
+msgstr "མཐོང་ནི་གི་ཚིག་ཡིག"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_FIND.4.String.Text
 #, fuzzy
@@ -13045,7 +13045,7 @@ msgstr "ཚིག་ཡིག་ཡིག་རྒྱུན་གྱི་ནང
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_REPLACE.2.String.Text
 #, fuzzy
 msgid  "Text"
-msgstr "ཚིག་ཡིག་"
+msgstr "ཚིག་ཡིག"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_REPLACE.3.String.Text
 #, fuzzy
@@ -13310,7 +13310,7 @@ msgstr "རྩ་བ།"
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_BASE.5.String.Text
 #, fuzzy
 msgid  "The base number for conversion must be in the range 2 - 36."
-msgstr "གཞི་བསྒྱུར་གྱི་དོན་ལུ་ ཨང་གྲངས་དེ་ ཁྱབ་ཚད་༢་-༣༦་ནང་སྦེ་འོང་དགོཔ་ཨིན།"
+msgstr "གཞི་བསྒྱུར་འབད་ནི་གི་དོན་ལུ་གཞི་རྟེན་ཨང་གྲངས་དེ་ ཁྱབ་ཚད་༢་-༣༦་ནང་ལུ་དགོཔ་ཨིན།"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_BASE.6.String.Text
 #, fuzzy
@@ -14926,7 +14926,7 @@ msgstr ""
 #: source/ui/src/popup.src#RID_POPUP_CELLS.FID_CELL_FORMAT.MenuItem.Text
 #, fuzzy
 msgid  "~Format Cells..."
-msgstr "ནང་ཐིག་ཚུ་རྩ་སྒྲིག་འབད།(~F)"
+msgstr "རྩ་སྒྲིག་ནང་ཐིག་ཚུ།((~F)"
 
 #: source/ui/src/popup.src#RID_POPUP_CELLS.FID_INS_CELL.MenuItem.Text
 #, fuzzy
@@ -15309,7 +15309,7 @@ msgstr "ཚེས་གྲངས་དང་ཆུ་ཚོད།(~D)"
 #: source/ui/src/miscdlgs.src#RID_SCDLG_DELCONT.BTN_DELFORMULAS.CheckBox.Text
 #, fuzzy
 msgid  "~Formulas"
-msgstr "མན་ངག(~F)"
+msgstr "མན་ངག་ཚུ།(~F)"
 
 #: source/ui/src/miscdlgs.src#RID_SCDLG_DELCONT.BTN_DELATTRS.CheckBox.Text
 #, fuzzy
@@ -15834,7 +15834,7 @@ msgstr "གནས་ཚིག ༡(~1)"
 #: source/ui/src/condfrmt.src#RID_SCDLG_CONDFORMAT.LB_COND1_1.Default.StringList.item
 #, fuzzy
 msgid  "Cell value is"
-msgstr "ནང་ཐིག་གནས་གོང་དེ།"
+msgstr "ནང་ཐིག་གི་གནས་གོང་དེ།"
 
 #: source/ui/src/condfrmt.src#RID_SCDLG_CONDFORMAT.LB_COND1_1.Default.StringList.item
 #, fuzzy
@@ -15859,7 +15859,7 @@ msgstr "དེ་ལས་མང་སུ།"
 #: source/ui/src/condfrmt.src#RID_SCDLG_CONDFORMAT.LB_COND1_2.Default.StringList.item
 #, fuzzy
 msgid  "less than or equal to"
-msgstr "དེ་ལས་ཉུང་སུ་ ཡང་ན་ དེ་དང་མཉམ།"
+msgstr "དེ་ལས་ཉུང་སུ་ ཡང་ན་ དེ་དང་མཉམ་པ།"
 
 #: source/ui/src/condfrmt.src#RID_SCDLG_CONDFORMAT.LB_COND1_2.Default.StringList.item
 #, fuzzy
@@ -15869,7 +15869,7 @@ msgstr "དེ་ལས་མང་སུ་ ཡང་ན་ དེ་དང་�
 #: source/ui/src/condfrmt.src#RID_SCDLG_CONDFORMAT.LB_COND1_2.Default.StringList.item
 #, fuzzy
 msgid  "not equal to"
-msgstr "དེ་དང་མཉམ་པ་མིན་འདུག"
+msgstr "དེ་དང་མཉམ༌པ་མིན་འདུག"
 
 #: source/ui/src/condfrmt.src#RID_SCDLG_CONDFORMAT.LB_COND1_2.Default.StringList.item
 #, fuzzy
@@ -15913,7 +15913,7 @@ msgstr "གནས་ཚིག ༢(~2)"
 #: source/ui/src/condfrmt.src#RID_SCDLG_CONDFORMAT.LB_COND2_1.Default.StringList.item
 #, fuzzy
 msgid  "Cell value is"
-msgstr "ནང་ཐིག་གི་གནས་གོང་དེ།"
+msgstr "ནང་ཐིག་གནས་གོང་དེ།"
 
 #: source/ui/src/condfrmt.src#RID_SCDLG_CONDFORMAT.LB_COND2_1.Default.StringList.item
 #, fuzzy
@@ -15938,7 +15938,7 @@ msgstr "དེ་ལས་མང་སུ།"
 #: source/ui/src/condfrmt.src#RID_SCDLG_CONDFORMAT.LB_COND2_2.Default.StringList.item
 #, fuzzy
 msgid  "less than or equal to"
-msgstr "དེ་ལས་ཉུང་སུ་ ཡང་ན དེ་དང་མཉམ་པ།"
+msgstr "དེ་ལས་ཉུང་སུ་ ཡང་ན་ དེ་དང་མཉམ།"
 
 #: source/ui/src/condfrmt.src#RID_SCDLG_CONDFORMAT.LB_COND2_2.Default.StringList.item
 #, fuzzy

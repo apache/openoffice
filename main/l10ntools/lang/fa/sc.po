@@ -225,7 +225,7 @@ msgstr "مجموع ‐ "
 
 #: source/ui/dbgui/pivot.src#RID_SCDLG_PIVOT_LAYOUT.PIVOTSTR_COUNT.String.Text
 msgid  "Count - "
-msgstr "تعداد - "
+msgstr "شمارش- "
 
 #: source/ui/dbgui/pivot.src#RID_SCDLG_PIVOT_LAYOUT.PIVOTSTR_AVG.String.Text
 msgid  "Mean - "
@@ -489,7 +489,7 @@ msgstr "پایان"
 
 #: source/ui/dbgui/dpgroupdlg.src#RID_SCDLG_DPNUMGROUP.RB_AUTOEND.RadioButton.Text
 msgid  "A~utomatically"
-msgstr "به ~طور خودکار"
+msgstr "به~طور خودکار"
 
 #: source/ui/dbgui/dpgroupdlg.src#RID_SCDLG_DPNUMGROUP.RB_MANEND.RadioButton.Text
 msgid  "Ma~nually at"
@@ -501,7 +501,7 @@ msgstr "~گروه کردن بر اساس"
 
 #: source/ui/dbgui/dpgroupdlg.src#RID_SCDLG_DPNUMGROUP.HelpButton.Text
 msgid  "Grouping"
-msgstr "گروه‌بندی"
+msgstr "گروه کردن"
 
 #: source/ui/dbgui/dpgroupdlg.src#RID_SCDLG_DPDATEGROUP.FL_START.FixedLine.Text
 msgid  "Start"
@@ -1530,7 +1530,7 @@ msgstr "محافظت سند"
 #: source/ui/miscdlgs/retypepassdlg.src#RID_SCDLG_RETYPEPASS.FT_DOCSTATUS.FixedText.Text
 #, fuzzy
 msgid  "Status unknown"
-msgstr "وضعیت ناشناخته"
+msgstr "وضعیت‌ ناشناخته"
 
 #: source/ui/miscdlgs/retypepassdlg.src#RID_SCDLG_RETYPEPASS.BTN_RETYPE_DOC.PushButton.Text
 #, fuzzy
@@ -1862,8 +1862,9 @@ msgid  "Navigator"
 msgstr "ناوشگر"
 
 #: source/ui/navipi/navipi.src#RID_SCDLG_NAVIGATOR.FT_ROW.FixedText.Text
+#, fuzzy
 msgid  "Row"
-msgstr "Row"
+msgstr "ردیف"
 
 #: source/ui/navipi/navipi.src#RID_SCDLG_NAVIGATOR.ED_ROW.NumericField.QuickHelpText
 #, fuzzy
@@ -1871,8 +1872,9 @@ msgid  "Row"
 msgstr "Row"
 
 #: source/ui/navipi/navipi.src#RID_SCDLG_NAVIGATOR.FT_COL.FixedText.Text
+#, fuzzy
 msgid  "Column"
-msgstr "Column"
+msgstr "ستون"
 
 #: source/ui/navipi/navipi.src#RID_SCDLG_NAVIGATOR.ED_COL.SpinField.QuickHelpText
 #, fuzzy
@@ -2040,8 +2042,9 @@ msgid  "Print range"
 msgstr "محدودهٔ چاپ"
 
 #: source/ui/pagedlg/pagedlg.src#RID_SCDLG_AREAS.LB_PRINTAREA.Default.StringList.item
+#, fuzzy
 msgid  "- none -"
-msgstr "- هیچکدام-"
+msgstr "- هیچ -"
 
 #: source/ui/pagedlg/pagedlg.src#RID_SCDLG_AREAS.LB_PRINTAREA.Default.StringList.item
 #, fuzzy
@@ -2059,8 +2062,9 @@ msgid  "- selection -"
 msgstr "- انتخاب -"
 
 #: source/ui/pagedlg/pagedlg.src#RID_SCDLG_AREAS.RB_PRINTAREA.ImageButton.QuickHelpText
+#, fuzzy
 msgid  "Shrink"
-msgstr "کاهش اندازه"
+msgstr "کوچک کردن"
 
 #: source/ui/pagedlg/pagedlg.src#RID_SCDLG_AREAS.FL_REPEATROW.FixedLine.Text
 #, fuzzy
@@ -2068,8 +2072,9 @@ msgid  "Rows to repeat"
 msgstr "سطرهائی که باید تکرار شود"
 
 #: source/ui/pagedlg/pagedlg.src#RID_SCDLG_AREAS.LB_REPEATROW.Default.StringList.item
+#, fuzzy
 msgid  "- none -"
-msgstr "- هیچکدام -"
+msgstr "- هیچکدام-"
 
 #: source/ui/pagedlg/pagedlg.src#RID_SCDLG_AREAS.LB_REPEATROW.Default.StringList.item
 #, fuzzy
@@ -2287,8 +2292,9 @@ msgid  "Text Attributes"
 msgstr "ویژگی‌های متن"
 
 #: source/ui/pagedlg/hfedtdlg.src#RID_HFBASE.BTN_FILE.ImageButton.QuickHelpText
+#, fuzzy
 msgid  "Title"
-msgstr "عنوان"
+msgstr "File Name"
 
 #: source/ui/pagedlg/hfedtdlg.src#RID_HFBASE.RID_POPUP_FCOMMAND.FILE_COMMAND_TITEL.MenuItem.Text
 #, fuzzy
@@ -4359,7 +4365,7 @@ msgstr "ویرایش تابع"
 #: source/ui/src/globstr.src#RID_GLOBSTR.STR_NOTES.String.Text
 #, fuzzy
 msgid  "Comments"
-msgstr "توضیحات"
+msgstr "یادداشت‌ها"
 
 #: source/ui/src/globstr.src#RID_GLOBSTR.STR_QUERY_DELTAB.String.Text
 #, fuzzy
@@ -5521,12 +5527,12 @@ msgstr "شامل"
 #: source/ui/src/filter.src#RID_SCDLG_FILTER.LB_COND1.Default.stringlist.item
 #, fuzzy
 msgid  "Does not contain"
-msgstr "شامل نشود"
+msgstr "شامل نیست"
 
 #: source/ui/src/filter.src#RID_SCDLG_FILTER.LB_COND1.Default.stringlist.item
 #, fuzzy
 msgid  "Begins with"
-msgstr "آغاز با"
+msgstr "آغاز شود با"
 
 #: source/ui/src/filter.src#RID_SCDLG_FILTER.LB_COND1.Default.stringlist.item
 #, fuzzy
@@ -5601,12 +5607,12 @@ msgstr "شامل"
 #: source/ui/src/filter.src#RID_SCDLG_FILTER.LB_COND2.Default.stringlist.item
 #, fuzzy
 msgid  "Does not contain"
-msgstr "شامل نیست"
+msgstr "شامل نشود"
 
 #: source/ui/src/filter.src#RID_SCDLG_FILTER.LB_COND2.Default.stringlist.item
 #, fuzzy
 msgid  "Begins with"
-msgstr " آغازها با"
+msgstr "آغاز شود با"
 
 #: source/ui/src/filter.src#RID_SCDLG_FILTER.LB_COND2.Default.stringlist.item
 #, fuzzy
@@ -5821,7 +5827,7 @@ msgstr "~نگه داشتن معیار صافی"
 #: source/ui/src/filter.src#RID_SCDLG_FILTER.RB_COPY_AREA.ImageButton.QuickHelpText
 #, fuzzy
 msgid  "Shrink"
-msgstr "خرد کردن"
+msgstr "خرد شدن"
 
 #: source/ui/src/filter.src#RID_SCDLG_FILTER.FT_DBAREA.FixedText.Text
 #, fuzzy
@@ -14542,7 +14548,7 @@ msgstr "~قالب‌بندی‌ها"
 #: source/ui/src/miscdlgs.src#RID_SCDLG_DELCONT.BTN_DELNOTES.CheckBox.Text
 #, fuzzy
 msgid  "~Comments"
-msgstr "یاد~داشت‌ها"
+msgstr "~یادداشت‌ها"
 
 #: source/ui/src/miscdlgs.src#RID_SCDLG_DELCONT.BTN_DELOBJECTS.CheckBox.Text
 #, fuzzy

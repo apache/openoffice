@@ -6666,7 +6666,7 @@ msgstr ""
 #: source/text/scalc/01/04060106.xhp#par_id679647
 #, fuzzy
 msgid  "To return the angle in degrees, use the DEGREES function."
-msgstr "Để trả về góc theo độ, hãy dùng hàm DEGREES."
+msgstr "Để trả về góc theo độ, dùng hàm DEGREES."
 
 #: source/text/scalc/01/04060106.xhp#hd_id3149882.55
 #, fuzzy
@@ -7534,7 +7534,7 @@ msgstr ""
 #: source/text/scalc/01/04060106.xhp#par_id3445844
 #, fuzzy
 msgid  "If Value is not an integer any digits after the decimal point are ignored. The sign of Value is also ignored."
-msgstr "Giá_trị không phải số nguyên thì bỏ qua bất cứ chữ số nào phía sau dấu thập phân. Dấu (+/-) của Giá_trị cũng bị bỏ qua."
+msgstr "Nếu Giá_trị không phải là một số nguyên thì bỏ qua bất cứ chữ số phía sau dấu thập phân. Dấu (+/-) của giá trị này cũng bị bỏ qua."
 
 #: source/text/scalc/01/04060106.xhp#hd_id3154136.250
 #, fuzzy
@@ -10063,12 +10063,12 @@ msgstr ""
 #: source/text/scalc/01/04060107.xhp#par_idN10C9B
 #, fuzzy
 msgid  "You can find a general introduction to Array functions at the top of this page."
-msgstr "Bạn tìm thấy một giới thiệu chung về các hàm Mảng ở đầu của trang này."
+msgstr "Bạn có thể tìm một giới thiệu chung về các hàm Mảng ở đầu của trang này."
 
 #: source/text/scalc/01/04060107.xhp#hd_id3156162.17
 #, fuzzy
 msgid  "Example"
-msgstr "Ví dụ"
+msgstr "Thí dụ"
 
 #: source/text/scalc/01/04060107.xhp#par_id3150949.18
 #, fuzzy
@@ -11630,7 +11630,7 @@ msgstr "<emph>Tham_chiếu</emph> đại diện tham chiếu đến một ô hay
 #: source/text/scalc/01/04060109.xhp#hd_id3148891.24
 #, fuzzy
 msgid  "Example"
-msgstr "Ví dụ"
+msgstr "Thí dụ"
 
 #: source/text/scalc/01/04060109.xhp#par_id3149946.25
 msgid  "            \<item type=\"input\"\>=AREAS((A1:B3;F2;G1))\</item\> returns 3, as it is a reference to three cells and/or areas. After entry this gets converted to =AREAS((A1:B3~F2~G1))."
@@ -11720,7 +11720,7 @@ msgstr "Dữ liệu được lấy dạng văn bản; không chuyển đổi san
 #: source/text/scalc/01/04060109.xhp#hd_id3149546.35
 #, fuzzy
 msgid  "Example"
-msgstr "Ví dụ"
+msgstr "Thí dụ"
 
 #: source/text/scalc/01/04060109.xhp#par_id3148734.36
 msgid  "            \<item type=\"input\"\>=DDE(\"soffice\";\"c:\\\\office\\\\document\\\\data1.sxc\";\"sheet1.A1\")\</item\> reads the contents of cell A1 in sheet1 of the \<item type=\"productname\"\>%PRODUCTNAME\</item\> Calc spreadsheet data1.sxc."
@@ -11764,7 +11764,7 @@ msgstr ""
 #: source/text/scalc/01/04060109.xhp#hd_id3145248.44
 #, fuzzy
 msgid  "Example"
-msgstr "Ví dụ"
+msgstr "Thí dụ"
 
 #: source/text/scalc/01/04060109.xhp#par_id3146904.45
 msgid  "If cell A1 displays Err:518, the function \<item type=\"input\"\>=ERRORTYPE(A1)\</item\> returns the number 518."
@@ -12770,7 +12770,7 @@ msgstr ""
 #: source/text/scalc/01/04060110.xhp#hd_id3155758.244
 #, fuzzy
 msgid  "Example"
-msgstr "Ví dụ"
+msgstr "Thí dụ"
 
 #: source/text/scalc/01/04060110.xhp#par_id3154621.245
 msgid  "            \<item type=\"input\"\>=ARABIC(\"MXIV\")\</item\> returns 1014"
@@ -12847,7 +12847,7 @@ msgstr ""
 #: source/text/scalc/01/04060110.xhp#hd_id9694814
 #, fuzzy
 msgid  "Example"
-msgstr "Ví dụ"
+msgstr "Thí dụ"
 
 #: source/text/scalc/01/04060110.xhp#par_id3289284
 msgid  "            \<item type=\"input\"\>=BAHTTEXT(12.65)\</item\> returns a string in Thai characters with the meaning of \"Twelve Baht and sixty five Satang\"."
@@ -12891,7 +12891,7 @@ msgstr ""
 #: source/text/scalc/01/04060110.xhp#hd_id3146323.220
 #, fuzzy
 msgid  "Example"
-msgstr "Ví dụ"
+msgstr "Thí dụ"
 
 #: source/text/scalc/01/04060110.xhp#bm_id3156399
 msgid  "\<bookmark_value\>decimal system; converting to\</bookmark_value\>"
@@ -12947,7 +12947,7 @@ msgstr ""
 #: source/text/scalc/01/04060110.xhp#hd_id3152982.207
 #, fuzzy
 msgid  "Example"
-msgstr "Ví dụ"
+msgstr "Thí dụ"
 
 #: source/text/scalc/01/04060110.xhp#par_id3149890.208
 msgid  "            \<item type=\"input\"\>=CHAR(100)\</item\> returns the character d."
@@ -13015,7 +13015,7 @@ msgstr ""
 #: source/text/scalc/01/04060110.xhp#hd_id3154394.8
 #, fuzzy
 msgid  "Example"
-msgstr "Ví dụ"
+msgstr "Thí dụ"
 
 #: source/text/scalc/01/04060110.xhp#par_id3159209.9
 msgid  "            \<item type=\"input\"\>=CODE(\"Hieronymus\")\</item\> returns 72, \<item type=\"input\"\>=CODE(\"hieroglyphic\")\</item\> returns 104."
@@ -13056,7 +13056,7 @@ msgstr ""
 #: source/text/scalc/01/04060110.xhp#hd_id3153110.172
 #, fuzzy
 msgid  "Example"
-msgstr "Ví dụ"
+msgstr "Thí dụ"
 
 #: source/text/scalc/01/04060110.xhp#par_id3150008.173
 msgid  "            \<item type=\"input\"\>=CONCATENATE(\"Good \";\"Morning \";\"Mrs. \";\"Doe\")\</item\> returns: Good Morning Mrs. Doe."
@@ -13101,7 +13101,7 @@ msgstr ""
 #: source/text/scalc/01/04060110.xhp#hd_id3156062.232
 #, fuzzy
 msgid  "Example"
-msgstr "Ví dụ"
+msgstr "Thí dụ"
 
 #: source/text/scalc/01/04060110.xhp#par_id3145355.233
 msgid  "            \<item type=\"input\"\>=DECIMAL(\"17\";10)\</item\> returns 17."
@@ -14854,7 +14854,7 @@ msgstr "Bảng1"
 #: source/text/scalc/01/04060112.xhp#par_id3149820.91
 #, fuzzy
 msgid  "Table number in the upper-left corner of the cell area; numbering starts at 0."
-msgstr "Số thứ tự bảng ở góc trên bên trái vùng ô. Đánh số từ 0"
+msgstr "Số thứ tự bảng ở góc trên bên trái vùng ô. Đánh số từ 0."
 
 #: source/text/scalc/01/04060112.xhp#par_id3163820.92
 #, fuzzy
@@ -14974,7 +14974,7 @@ msgstr "Lỗi"
 #: source/text/scalc/01/04060112.xhp#par_id3159181.115
 #, fuzzy
 msgid  "Error number, where the value 0 is defined as \"no error.\" If the element comes from a formula cell the error value is determined by the formula."
-msgstr "Số thứ tự lỗi, mà giá trị được định nghĩa là « không có lỗi ». Nếu phần tử thuộc về một ô công thức, thì giá trị lỗi được công thức quyết định."
+msgstr "Số thứ tự lỗi, mà giá trị 0 được định nghĩa là « không có lỗi ». Nếu phần tử thuộc về một ô công thưc, thì giá trị được công thức quyết định."
 
 #: source/text/scalc/01/04060112.xhp#par_id3147493.116
 #, fuzzy
@@ -15191,7 +15191,7 @@ msgstr "Lỗi"
 #: source/text/scalc/01/04060112.xhp#par_id3153534.159
 #, fuzzy
 msgid  "Error number, where the value 0 is defined as \"no error.\" If the element comes from a formula cell the error value is determined by the formula."
-msgstr "Số thứ tự lỗi, mà giá trị 0 được định nghĩa là « không có lỗi ». Nếu phần tử thuộc về một ô công thức, thì giá trị lỗi được công thức quyết định."
+msgstr "Số thứ tự lỗi, mà giá trị được định nghĩa là « không có lỗi ». Nếu phần tử thuộc về một ô công thức, thì giá trị lỗi được công thức quyết định."
 
 #: source/text/scalc/01/04060112.xhp#par_id3153311.160
 #, fuzzy
@@ -17587,7 +17587,7 @@ msgstr ""
 #: source/text/scalc/01/04060118.xhp#hd_id3153111.114
 #, fuzzy
 msgid  "Example"
-msgstr "Thí dụ"
+msgstr "Ví dụ"
 
 #: source/text/scalc/01/04060118.xhp#par_id3152999.115
 #, fuzzy
@@ -17658,7 +17658,7 @@ msgstr ""
 #: source/text/scalc/01/04060118.xhp#hd_id3145303.129
 #, fuzzy
 msgid  "Example"
-msgstr "Thí dụ"
+msgstr "Ví dụ"
 
 #: source/text/scalc/01/04060118.xhp#par_id3145350.130
 #, fuzzy
@@ -17733,7 +17733,7 @@ msgstr ""
 #: source/text/scalc/01/04060118.xhp#hd_id3148429.233
 #, fuzzy
 msgid  "Example"
-msgstr "Thí dụ"
+msgstr "Ví dụ"
 
 #: source/text/scalc/01/04060118.xhp#par_id3153927.234
 #, fuzzy
@@ -20069,7 +20069,7 @@ msgstr "Ở đây thì phải sử dụng tên, mảng hay tham chiếu chứa s
 #: source/text/scalc/01/04060181.xhp#hd_id3157906.9
 #, fuzzy
 msgid  "Example"
-msgstr "Thí dụ"
+msgstr "Ví dụ"
 
 #: source/text/scalc/01/04060181.xhp#par_id3148728.10
 #, fuzzy
@@ -20110,7 +20110,7 @@ msgstr ""
 #: source/text/scalc/01/04060181.xhp#hd_id3149254.18
 #, fuzzy
 msgid  "Example"
-msgstr "Thí dụ"
+msgstr "Ví dụ"
 
 #: source/text/scalc/01/04060181.xhp#par_id3149953.19
 #, fuzzy
@@ -20151,7 +20151,7 @@ msgstr ""
 #: source/text/scalc/01/04060181.xhp#hd_id3150334.27
 #, fuzzy
 msgid  "Example"
-msgstr "Thí dụ"
+msgstr "Ví dụ"
 
 #: source/text/scalc/01/04060181.xhp#par_id3154508.28
 #, fuzzy
@@ -21793,7 +21793,7 @@ msgstr ""
 #: source/text/scalc/01/04060184.xhp#par_id9282509
 #, fuzzy
 msgid  "Returns 0 if no numeric value and no error was encountered in the cell range(s) passed as cell reference(s). Text cells are ignored by MIN() and MAX(). The functions MINA() and MAXA() return 0 if no value (numeric or text) and no error was encountered. Passing a literal string argument to MIN() or MAX(), e.g. MIN(\"string\"), still results in an error."
-msgstr "Trả về 0 nếu không gặp giá trị thuộc số hay lỗi trong (những) phạm vi ô được gửi cho hàm dưới dạng tham chiếu ô. Ô văn bản bị bỏ qua bởi hai hàm MIN() (tiểu) và MAX() (đại). Hai hàm MINA() và MAXA() trả về 0 nếu không gặp giá trị (thuộc số hay văn bản) hay lỗi. Gửi một đối số chuỗi nghĩa chữ cho hàm MIN() hay MAX(), e.g. « MIN(\"chuỗi\") », vẫn còn gây ra lỗi."
+msgstr "Trả về 0 nếu không gặp giá trị thuộc số hay lỗi trong (những) phạm vi ô được gửi cho hàm dưới dạng tham chiếu ô. Ô kiểu văn bản bị bỏ qua bởi hai hàm MIN() (tiểu) và MAX() (đại).Những hàm MINA() và MAXA() trả về 0 nếu không gặp giá trị (thuộc số hay văn bản) hay lỗi. Gửi một chuỗi nghĩa chữ cho hàm MIN() hay MAX(), v.d. « MIN(\"chuỗi\") », vẫn còn gây ra lỗi."
 
 #: source/text/scalc/01/04060184.xhp#hd_id3154256.4
 #, fuzzy
@@ -21838,7 +21838,7 @@ msgstr ""
 #: source/text/scalc/01/04060184.xhp#par_id7689443
 #, fuzzy
 msgid  "The functions MINA() and MAXA() return 0 if no value (numeric or text) and no error was encountered."
-msgstr "Hai hàm MINA() và MAXA() trả về 0 nếu không gặp giá trị (thuộc số hay văn bản) hay lỗi."
+msgstr "Hàm MINA() hay MAXA() trả về 0 nếu không gặp giá trị (thuộc số hay văn bản) hay lỗi."
 
 #: source/text/scalc/01/04060184.xhp#hd_id3150516.141
 #, fuzzy
@@ -25155,7 +25155,7 @@ msgstr "Nhấn đôi vào kiểu dáng trong cửa sổ <emph>Kiểu dáng và �
 #: source/text/scalc/01/05100000.xhp#hd_id3153877.4
 #, fuzzy
 msgid  "Cell Styles"
-msgstr "Kiểu dáng Ô"
+msgstr "Kiểu dáng ô"
 
 #: source/text/scalc/01/05100000.xhp#par_id3145801.6
 msgid  "\<ahelp hid=\".uno:ParaStyle\"\>Displays the list of the available Cell Styles for \<link href=\"text/shared/00/00000005.xhp#formatierung\" name=\"indirect cell formatting\"\>indirect cell formatting\</link\>.\</ahelp\>"
@@ -30562,8 +30562,9 @@ msgid  "\<link href=\"text/shared/01/05020300.xhp\" name=\"Format - Cell - Numbe
 msgstr ""
 
 #: source/text/scalc/02/02160000.xhp#tit
+#, fuzzy
 msgid  "Number Format: Add Decimal Place"
-msgstr "Định dạng số: Thêm chữ số thập phân"
+msgstr "Định dạng số : Thêm chữ số thập phân"
 
 #: source/text/scalc/02/02160000.xhp#hd_id3150275.1
 msgid  "\<link href=\"text/scalc/02/02160000.xhp\" name=\"Number Format: Add Decimal Place\"\>Number Format: Add Decimal Place\</link\>"
@@ -30583,8 +30584,9 @@ msgid  "Number Format: Add Decimal Place"
 msgstr "Định dạng số: Thêm chữ số thập phân"
 
 #: source/text/scalc/02/02170000.xhp#tit
+#, fuzzy
 msgid  "Number Format: Delete Decimal Place"
-msgstr "Định dạng số: Xoá bớt chữ số thập phân"
+msgstr "Định dạng số : Xoá bớt chữ số thập phân"
 
 #: source/text/scalc/02/02170000.xhp#hd_id3149164.1
 msgid  "\<link href=\"text/scalc/02/02170000.xhp\" name=\"Number Format: Delete Decimal Place\"\>Number Format: Delete Decimal Place\</link\>"

@@ -5705,7 +5705,7 @@ msgstr ""
 
 #: source/text/scalc/01/04060105.xhp#par_id3146100.66
 msgid  "The arguments are either logical expressions themselves (TRUE, 1<5, 2+3=7, B8<10) that return logical values, or arrays (A1:C3) containing logical values."
-msgstr "Argumenty mohou být logickými hodnotami (PRAVDA, 1<5, 2+3=7, B8<10) nebo mohou označovat oblasti (A1:C3) obsahující logické hodnoty."
+msgstr "Argumenty mohou být logickými hodnotami (TRUE, 1<5, 2+3=7, B8<10) nebo mohou označovat oblasti (A1:C3) obsahující logické hodnoty."
 
 #: source/text/scalc/01/04060105.xhp#par_id3150538.67
 msgid  "When a function expects a single value, but you entered a cell range, then the value from the cell range is taken that is in the same column or row as the formula."
@@ -19557,7 +19557,7 @@ msgstr ""
 
 #: source/text/scalc/01/04060184.xhp#par_id7689443
 msgid  "The functions MINA() and MAXA() return 0 if no value (numeric or text) and no error was encountered."
-msgstr "Funkce MINA() a MAXA() vrátí 0 pokud nebyla vložena žádná hodnota (numerická nebo text) a nebyla nalezena žádná chyba."
+msgstr "Funkce MINA() a MAXA() vrací 0, pokud nebyla nalezena žádná chyba a nebyla vložena hodnota (text nebo číslo)."
 
 #: source/text/scalc/01/04060184.xhp#hd_id3150516.141
 msgid  "Syntax"
@@ -31605,7 +31605,7 @@ msgstr "10200000"
 
 #: source/text/scalc/guide/format_value_userdef.xhp#par_id3147003.15
 msgid  "10.2 Million"
-msgstr "10.2 milion"
+msgstr "10.2 milionu"
 
 #: source/text/scalc/guide/format_value_userdef.xhp#par_id3166426.16
 msgid  "10.2 Million"

@@ -365,22 +365,22 @@ msgstr "ಪಂಗಡಗಳು"
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.business.Tables.categories.Fields.categoryID.Name
 #, fuzzy
 msgid  "CategoryID"
-msgstr "ಪಂಗಡ ID"
+msgstr "ಪಂಗಡID"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.business.Tables.categories.Fields.categoryID.ShortName
 #, fuzzy
 msgid  "CategoryID"
-msgstr "ಪಂಗಡ ID"
+msgstr "ಪಂಗಡID"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.business.Tables.categories.Fields.categoryname.Name
 #, fuzzy
 msgid  "CategoryName"
-msgstr "ಪಂಗಡದ ಹೆಸರು"
+msgstr "ಪಂಗಡದಹೆಸರು"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.business.Tables.categories.Fields.categoryname.ShortName
 #, fuzzy
 msgid  "CategName"
-msgstr "ಪಂಗಡ ಹೆಸರು"
+msgstr "ಪಂಗಡಹೆಸರು"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.business.Tables.products.Name
 #, fuzzy
@@ -388,12 +388,14 @@ msgid  "Products"
 msgstr "ಉತ್ಪನ್ನಗಳು"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.business.Tables.products.Fields.productID.Name
+#, fuzzy
 msgid  "ProductID"
-msgstr "ಉತ್ಪನ್ನ ID"
+msgstr "ಉತ್ಪನ್ನID"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.business.Tables.products.Fields.productID.ShortName
+#, fuzzy
 msgid  "ProductID"
-msgstr "ಉತ್ಪನ್ನ ID"
+msgstr "ಉತ್ಪನ್ನID"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.business.Tables.products.Fields.productname.Name
 #, fuzzy
@@ -418,20 +420,22 @@ msgstr "ಉತ್ಪನ್ನವಿವರಣೆ"
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.business.Tables.products.Fields.categoryID.Name
 #, fuzzy
 msgid  "CategoryID"
-msgstr "ಪಂಗಡದ ID"
+msgstr "ಪಂಗಡID"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.business.Tables.products.Fields.categoryID.ShortName
 #, fuzzy
 msgid  "CategoryID"
-msgstr "ಪಂಗಡ ID"
+msgstr "ಪಂಗಡID"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.business.Tables.products.Fields.supplierID.Name
+#, fuzzy
 msgid  "SupplierID"
-msgstr "ಒದಗಿಸುವವರ ID"
+msgstr "ಒದಗಿಸುವವರID"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.business.Tables.products.Fields.supplierID.ShortName
+#, fuzzy
 msgid  "SupplierID"
-msgstr "ಒದಗಿಸುವವರ ID"
+msgstr "ಒದಗಿಸುವವರID"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.business.Tables.products.Fields.serialnumber.Name
 #, fuzzy
@@ -464,8 +468,9 @@ msgid  "UnitsOrder"
 msgstr "ಆದೇಶದ ವಸ್ತುಗಳು"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.business.Tables.products.Fields.unitprice.Name
+#, fuzzy
 msgid  "UnitPrice"
-msgstr "ವಸ್ತು ಬೆಲೆ"
+msgstr "ವಸ್ತುವಿನ ಬೆಲೆ"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.business.Tables.products.Fields.unitprice.ShortName
 #, fuzzy
@@ -570,7 +575,7 @@ msgstr "ಊರು"
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.business.Tables.suppliers.Fields.postalcode.Name
 #, fuzzy
 msgid  "PostalCode"
-msgstr "ಅಂಚೆಯ ಕೋಡ್"
+msgstr "ಅಂಚೆ ಕೋಡ್"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.business.Tables.suppliers.Fields.postalcode.ShortName
 #, fuzzy
@@ -610,7 +615,7 @@ msgstr "ದೂರವಾಣಿ ಸಂಖ್ಯೆ"
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.business.Tables.suppliers.Fields.faxnumber.Name
 #, fuzzy
 msgid  "FaxNumber"
-msgstr "ಫಾಕ್ಸಿನ ಸಂಖ್ಯೆ"
+msgstr "ಫಾಕ್ಸ್‍ ಸಂಖ್ಯೆ"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.business.Tables.suppliers.Fields.faxnumber.ShortName
 #, fuzzy
@@ -623,8 +628,9 @@ msgid  "PaymentTerms"
 msgstr "ಪಾವತಿ ನಿಯಮಗಳು"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.business.Tables.suppliers.Fields.paymentterms.ShortName
+#, fuzzy
 msgid  "PaymntTerm"
-msgstr "ಪಾವತಿ ನಿಯಮ"
+msgstr "ಪಾವತಿ ನಿಯಮಗಳು"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.business.Tables.suppliers.Fields.emailaddress.Name
 #, fuzzy
@@ -692,12 +698,14 @@ msgid  "MiddleName"
 msgstr "ಮಧ್ಯದ ಹೆಸರು"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.business.Tables.mailinglist.Fields.lastlame.Name
+#, fuzzy
 msgid  "LastName"
-msgstr "ಕೊನೆಯ ಹೆಸರು"
+msgstr "ಕೊನೆ ಹೆಸರು"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.business.Tables.mailinglist.Fields.lastlame.ShortName
+#, fuzzy
 msgid  "LastName"
-msgstr "ಕೊನೆಯ ಹೆಸರು"
+msgstr "ಕೊನೆ ಹೆಸರು"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.business.Tables.mailinglist.Fields.suffix.Name
 #, fuzzy
@@ -842,7 +850,7 @@ msgstr "ರಾಷ್ಟ್ರೀಯತೆ"
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.business.Tables.mailinglist.Fields.dateupdated.Name
 #, fuzzy
 msgid  "DateUpdated"
-msgstr "ಅಪ್‌ಡೇಟ್‌ ಮಾಡಿದ ದಿನಾಂಕ"
+msgstr "ಅಪ್‌ಡೇಟಿನ ದಿನಾಂಕ"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.business.Tables.mailinglist.Fields.dateupdated.ShortName
 #, fuzzy
@@ -957,7 +965,7 @@ msgstr "ಮೊದಲ ಹೆಸರು"
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.business.Tables.contacts.Fields.lastname.Name
 #, fuzzy
 msgid  "LastName"
-msgstr "ಕೊನೆಯ ಹೆಸರು"
+msgstr "ಕೊನೆ ಹೆಸರು"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.business.Tables.contacts.Fields.lastname.ShortName
 #, fuzzy
@@ -1537,12 +1545,12 @@ msgstr "ಕೆಲಸಕ್ಕೆ ತೆಗೆದುಕೊಂಡ ದಿನಾಂ�
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.business.Tables.employees.Fields.departmentID.Name
 #, fuzzy
 msgid  "DepartmentID"
-msgstr "ವಿಭಾಗದ ID"
+msgstr "ವಿಭಾಗ ID"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.business.Tables.employees.Fields.departmentID.ShortName
 #, fuzzy
 msgid  "DeprtmntID"
-msgstr "ವಿಭಾಗದ ID"
+msgstr "ವಿಭಾಗ ID"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.business.Tables.employees.Fields.salary.Name
 #, fuzzy
@@ -1675,8 +1683,9 @@ msgid  "PurchaseOrderNumber"
 msgstr "ಖರೀದಿ ಆದೇಶದ ಸಂಖ್ಯೆ"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.business.Tables.orders.Fields.purchaseordernumber.ShortName
+#, fuzzy
 msgid  "PurchOrdNo"
-msgstr "ಖರೀದಿ ಆದೇಶ ಸಂಖ್ಯೆ"
+msgstr "ಖರೀದಿ ಆದೇಶದ ಸಂಖ್ಯೆ"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.business.Tables.orders.Fields.requiredbydate.Name
 #, fuzzy
@@ -1769,12 +1778,14 @@ msgid  "ShipPhonNo"
 msgstr "ಸಾಗಿಸುವವರ ದೂರವಾಣಿ ಸಂಖ್ಯೆ"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.business.Tables.orders.Fields.shipdate.Name
+#, fuzzy
 msgid  "ShipDate"
-msgstr "ಸಾಗಣೆಯ ದಿನಾಂಕ"
+msgstr "ಸಾಗಾಣಿಕೆಯ ದಿನಾಂಕ"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.business.Tables.orders.Fields.shipdate.ShortName
+#, fuzzy
 msgid  "ShipDate"
-msgstr "ಸಾಗಣೆಯ ದಿನಾಂಕ"
+msgstr "ಸಾಗಾಣಿಕೆಯ ದಿನಾಂಕ"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.business.Tables.orders.Fields.shippingmethodID.Name
 #, fuzzy
@@ -1919,12 +1930,12 @@ msgstr "ಪಾವತಿಗಳು"
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.business.Tables.payments.Fields.paymentID.Name
 #, fuzzy
 msgid  "PaymentID"
-msgstr "ಪಾವತಿಯ ID"
+msgstr "ಪಾವತಿ ID"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.business.Tables.payments.Fields.paymentID.ShortName
 #, fuzzy
 msgid  "PaymentID"
-msgstr "ಪಾವತಿಯ ID"
+msgstr "ಪಾವತಿ ID"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.business.Tables.payments.Fields.customerID.Name
 #, fuzzy
@@ -1959,12 +1970,12 @@ msgstr "ಆದೇಶ ID"
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.business.Tables.payments.Fields.reservationID.Name
 #, fuzzy
 msgid  "ReservationID"
-msgstr "ಮೀಸಲು ID"
+msgstr "ಮೀಸಲಾತಿ ID"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.business.Tables.payments.Fields.reservationID.ShortName
 #, fuzzy
 msgid  "ReservID"
-msgstr "ಮೀಸಲು ID"
+msgstr "ಮೀಸಲಾತಿ ID"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.business.Tables.payments.Fields.memberID.Name
 #, fuzzy
@@ -2214,12 +2225,12 @@ msgstr "ಸಾಗಣೆಯ ಗುರಿ"
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.business.Tables.invoices.Fields.shippedvia.Name
 #, fuzzy
 msgid  "ShippedVia"
-msgstr "ಕಳುಹಿಸಿದ ಮಾರ್ಗ"
+msgstr "ಸಾಗಣೆಯ ಮಾರ್ಗ"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.business.Tables.invoices.Fields.shippedvia.ShortName
 #, fuzzy
 msgid  "ShippedVia"
-msgstr "ಕಳುಹಿಸಿದ ಮಾರ್ಗ"
+msgstr "ಸಾಗಣೆಯ ಮಾರ್ಗ"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.business.Tables.invoices.Fields.shippingcost.Name
 #, fuzzy
@@ -2402,22 +2413,24 @@ msgid  "EmployeeID"
 msgstr "ಕೆಲಸಗಾರ ID"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.business.Tables.projects.Fields.begindate.Name
-msgid  "BeginDate"
-msgstr "ಆರಂಭ ದಿನಾಂಕ"
-
-#: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.business.Tables.projects.Fields.begindate.ShortName
 #, fuzzy
 msgid  "BeginDate"
 msgstr "ಆರಂಭದ ದಿನಾಂಕ"
 
+#: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.business.Tables.projects.Fields.begindate.ShortName
+#, fuzzy
+msgid  "BeginDate"
+msgstr "ಆರಂಭ ದಿನಾಂಕ"
+
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.business.Tables.projects.Fields.enddate.Name
+#, fuzzy
 msgid  "EndDate"
-msgstr "ಮುಕ್ತಾಯ ದಿನಾಂಕ"
+msgstr "ಮುಕ್ತಾಯದ ದಿನಾಂಕ"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.business.Tables.projects.Fields.enddate.ShortName
 #, fuzzy
 msgid  "EndDate"
-msgstr "ಮುಕ್ತಾಯದ ದಿನಾಂಕ"
+msgstr "ಮುಕ್ತಾಯ ದಿನಾಂಕ"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.business.Tables.events.Name
 #, fuzzy
@@ -2435,8 +2448,9 @@ msgid  "EventID"
 msgstr "ಕಾರ್ಯಕ್ರಮ ID"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.business.Tables.events.Fields.eventname.Name
+#, fuzzy
 msgid  "EventName"
-msgstr "ಕಾರ್ಯಕ್ರಮ ಹೆಸರು"
+msgstr "ಕಾರ್ಯಕ್ರಮದ ಹೆಸರು"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.business.Tables.events.Fields.eventname.ShortName
 #, fuzzy
@@ -2496,7 +2510,7 @@ msgstr "ಸ್ಥಳ"
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.business.Tables.events.Fields.begindate.Name
 #, fuzzy
 msgid  "BeginDate"
-msgstr "ಆರಂಭ ದಿನಾಂಕ"
+msgstr "ಆರಂಭದ ದಿನಾಂಕ"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.business.Tables.events.Fields.begindate.ShortName
 #, fuzzy
@@ -2506,7 +2520,7 @@ msgstr "ಆರಂಭ ದಿನಾಂಕ"
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.business.Tables.events.Fields.begintime.Name
 #, fuzzy
 msgid  "BeginTime"
-msgstr "ಆರಂಭ ಸಮಯ"
+msgstr "ಆರಂಭದ ಸಮಯ"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.business.Tables.events.Fields.begintime.ShortName
 #, fuzzy
@@ -2516,17 +2530,17 @@ msgstr "ಆರಂಭ ಸಮಯ"
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.business.Tables.events.Fields.enddate.Name
 #, fuzzy
 msgid  "EndDate"
-msgstr "ಮುಕ್ತಾಯ ದಿನಾಂಕ"
+msgstr "ಮುಕ್ತಾಯದ ದಿನಾಂಕ"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.business.Tables.events.Fields.enddate.ShortName
 #, fuzzy
 msgid  "EndDate"
-msgstr "ಮುಕ್ತಾಯದ ದಿನಾಂಕ"
+msgstr "ಮುಕ್ತಾಯ ದಿನಾಂಕ"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.business.Tables.events.Fields.endtime.Name
 #, fuzzy
 msgid  "EndTime"
-msgstr "ಮುಕ್ತಾಯ ಸಮಯ"
+msgstr "ಮುಕ್ತಾಯದ ಸಮಯ"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.business.Tables.events.Fields.endtime.ShortName
 #, fuzzy
@@ -3251,12 +3265,12 @@ msgstr "ಮಾದರಿ"
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.business.Tables.assets.Fields.modelnumber.Name
 #, fuzzy
 msgid  "ModelNumber"
-msgstr "ಮಾದರಿಯ ಸಂಖ್ಯೆ"
+msgstr "ಮಾದರಿ ಸಂಖ್ಯೆ"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.business.Tables.assets.Fields.modelnumber.ShortName
 #, fuzzy
 msgid  "ModelNo"
-msgstr "ಮಾದರಿಯ ಸಂಖ್ಯೆ"
+msgstr "ಮಾದರಿ ಸಂಖ್ಯೆ"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.business.Tables.assets.Fields.serialnumber.Name
 #, fuzzy
@@ -3436,7 +3450,7 @@ msgstr "ಮೊತ್ತ"
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.business.Tables.transactions.Fields.accountID.Name
 #, fuzzy
 msgid  "AccountID"
-msgstr "ಖಾತೆಯ ID"
+msgstr "ಖಾತೆ ID"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.business.Tables.transactions.Fields.accountID.ShortName
 #, fuzzy
@@ -3551,7 +3565,7 @@ msgstr "ಕಾರ್ಯಗಳು"
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.business.Tables.tasks.Fields.taskID.Name
 #, fuzzy
 msgid  "TaskID"
-msgstr "ಕಾರ್ಯದ ID"
+msgstr "ಕಾರ್ಯ ID"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.business.Tables.tasks.Fields.taskID.ShortName
 #, fuzzy
@@ -3571,7 +3585,7 @@ msgstr "ವಿವರಣೆ"
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.business.Tables.tasks.Fields.startdate.Name
 #, fuzzy
 msgid  "StartDate"
-msgstr "ಆರಂಭ ದಿನಾಂಕ"
+msgstr "ಆರಂಭದ ದಿನಾಂಕ"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.business.Tables.tasks.Fields.startdate.ShortName
 #, fuzzy
@@ -3581,7 +3595,7 @@ msgstr "ಆರಂಭ ದಿನಾಂಕ"
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.business.Tables.tasks.Fields.enddate.Name
 #, fuzzy
 msgid  "EndDate"
-msgstr "ಮುಕ್ತಾಯ ದಿನಾಂಕ"
+msgstr "ಮುಕ್ತಾಯದ ದಿನಾಂಕ"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.business.Tables.tasks.Fields.enddate.ShortName
 #, fuzzy
@@ -3821,7 +3835,7 @@ msgstr "ಹುಟ್ಟಿದ ದಿನಾಂಕ"
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.private.Tables.addresses.Fields.sendcard.Name
 #, fuzzy
 msgid  "SendCard"
-msgstr "ಕಾರ್ಡ್ ಕಳುಹಿಸು"
+msgstr "ಕಾರ್ಡನ್ನು ಕಳುಹಿಸು"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.private.Tables.addresses.Fields.sendcard.ShortName
 #, fuzzy
@@ -3956,7 +3970,7 @@ msgstr "ವಸ್ತು"
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.private.Tables.householdinventory.Fields.itemtype.Name
 #, fuzzy
 msgid  "ItemType"
-msgstr "ವಸ್ತು ಬಗೆ"
+msgstr "ವಸ್ತುವಿನ ಬಗೆ"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.private.Tables.householdinventory.Fields.itemtype.ShortName
 #, fuzzy
@@ -4226,7 +4240,7 @@ msgstr "ಗಿಡಗಳು"
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.private.Tables.plants.Fields.plantID.Name
 #, fuzzy
 msgid  "PlantID"
-msgstr "ಗಿಡ ID"
+msgstr "ಗಿಡದ ID"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.private.Tables.plants.Fields.plantID.ShortName
 #, fuzzy
@@ -4411,7 +4425,7 @@ msgstr "ಫೋಟೋ ID"
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.private.Tables.photographs.Fields.filmID.Name
 #, fuzzy
 msgid  "FilmID"
-msgstr "ಚಲನಚಿತ್ರ ID"
+msgstr "ಚಲನಚಿತ್ರದ ID"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.private.Tables.photographs.Fields.filmID.ShortName
 #, fuzzy
@@ -4431,7 +4445,7 @@ msgstr "ತೆಗೆದ ದಿನಾಂಕ"
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.private.Tables.photographs.Fields.timetaken.Name
 #, fuzzy
 msgid  "TimeTaken"
-msgstr "ತೆಗೆದುಕೊಂಡ ಸಮಯ"
+msgstr "ತೆಗೆದ ಸಮಯ"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.private.Tables.photographs.Fields.timetaken.ShortName
 #, fuzzy
@@ -4481,7 +4495,7 @@ msgstr "ಶಟರ್ ವೇಗ"
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.private.Tables.photographs.Fields.filterused.Name
 #, fuzzy
 msgid  "FilterUsed"
-msgstr "ಬಳಸಿದ ಶೋಧಕ"
+msgstr "ಬಳಸಲಾದ ಶೋಧಕ"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.private.Tables.photographs.Fields.filterused.ShortName
 #, fuzzy
@@ -4501,7 +4515,7 @@ msgstr "ಮಿಂಚು"
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.private.Tables.photographs.Fields.printsize.Name
 #, fuzzy
 msgid  "PrintSize"
-msgstr "ಮುದ್ರಣ ಗಾತ್ರ"
+msgstr "ಮುದ್ರಣದ ಗಾತ್ರ"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.private.Tables.photographs.Fields.printsize.ShortName
 #, fuzzy
@@ -4566,7 +4580,7 @@ msgstr "ಫೋಟೋಗಳ ಸಂಖ್ಯೆ"
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.private.Tables.miniaturefilms.Fields.colorfilm.Name
 #, fuzzy
 msgid  "ColorFilm"
-msgstr "ಬಣ್ಣದ ಚಲನಚಿತ್ರ"
+msgstr "ಬಣ್ಣದ ಚಿತ್ರ"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.private.Tables.miniaturefilms.Fields.colorfilm.ShortName
 #, fuzzy
@@ -4641,7 +4655,7 @@ msgstr "ಸಂಗ್ರಹ ID"
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.private.Tables.dvdcollection.Fields.movietitle.Name
 #, fuzzy
 msgid  "MovieTitle"
-msgstr "ಚಿತ್ರದ ಶೀರ್ಷಿಕೆ"
+msgstr "ಚಲನಚಿತ್ರದ ಶೀರ್ಷಿಕೆ"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.private.Tables.dvdcollection.Fields.movietitle.ShortName
 #, fuzzy
@@ -4691,7 +4705,7 @@ msgstr "ನಿರ್ಮಾಪಕ"
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.private.Tables.dvdcollection.Fields.releaseyear.Name
 #, fuzzy
 msgid  "ReleaseYear"
-msgstr "ಬಿಡುಗಡೆಯ ವರ್ಷ"
+msgstr "ಬಿಡುಗಡೆ ವರ್ಷ"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.private.Tables.dvdcollection.Fields.releaseyear.ShortName
 #, fuzzy
@@ -4941,7 +4955,7 @@ msgstr "ಭಂಡಾರ"
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.private.Tables.library.Fields.bookID.Name
 #, fuzzy
 msgid  "BookID"
-msgstr "ಪುಸ್ತಕ ID"
+msgstr "ಪುಸ್ತಕದ ID"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.private.Tables.library.Fields.bookID.ShortName
 #, fuzzy
@@ -5071,7 +5085,7 @@ msgstr "ಖರೀದಿ ಬೆಲೆ"
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.private.Tables.library.Fields.covertype.Name
 #, fuzzy
 msgid  "CoverType"
-msgstr "ಹೊದಿಕೆ ಬಗೆ"
+msgstr "ಹೊದಿಕೆಯ ಬಗೆ"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.private.Tables.library.Fields.covertype.ShortName
 #, fuzzy
@@ -5516,7 +5530,7 @@ msgstr "ವೈಯಕ್ತಿಕ ID"
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.private.Tables.dietlog.Fields.dietype.Name
 #, fuzzy
 msgid  "DietType"
-msgstr "ಪಥ್ಯ ಬಗೆ"
+msgstr "ಪಥ್ಯದ ಬಗೆ"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.private.Tables.dietlog.Fields.dietype.ShortName
 #, fuzzy
@@ -5566,7 +5580,7 @@ msgstr "ಗ್ರಾ. ಪ್ರೋಟೀನ್"
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.private.Tables.dietlog.Fields.gramsfat.Name
 #, fuzzy
 msgid  "GramsFat"
-msgstr "ಗ್ರಾಮ್ಸ್‍ ಕೊಬ್ಬು"
+msgstr "ಗ್ರಾಮ್ಸ್‍ ಕೊಬ್ಬಿನಂಶ"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.private.Tables.dietlog.Fields.gramsfat.ShortName
 #, fuzzy
@@ -6710,7 +6724,7 @@ msgstr "ನಮೂನೆ..."
 #: registry/data/org/openoffice/Office/UI/DbuCommands.xcu#DbuCommands.UserInterface.Commands..uno:DBNewFormAutoPilot.Label
 #, fuzzy
 msgid  "Form Wizard..."
-msgstr "ಗಾರುಡಿ ನಮೂನೆ..."
+msgstr "ಗಾರುಡಿಯ ನಮೂನೆ..."
 
 #: registry/data/org/openoffice/Office/UI/DbuCommands.xcu#DbuCommands.UserInterface.Commands..uno:DBNewFormAutoPilotWithPreSelection.Label
 #, fuzzy
@@ -10773,12 +10787,12 @@ msgstr "ವಿಭಜಿಸು"
 #: registry/data/org/openoffice/Office/UI/Effects.xcu#Effects.UserInterface.Effects.ooo-entrance-stretchy.Label
 #, fuzzy
 msgid  "Stretchy"
-msgstr "ಎಳೆಯಲಾದ"
+msgstr "ಎಳೆಯಲ್ಪಟ್ಟ"
 
 #: registry/data/org/openoffice/Office/UI/Effects.xcu#Effects.UserInterface.Effects.ooo-entrance-diagonal-squares.Label
 #, fuzzy
 msgid  "Diagonal Squares"
-msgstr "ಕರ್ಣರೇಖೆಯ ಚೌಕಗಳು"
+msgstr "ಕರ್ಣಮಾರ್ಗದ ಚೌಕಗಳು"
 
 #: registry/data/org/openoffice/Office/UI/Effects.xcu#Effects.UserInterface.Effects.ooo-entrance-swivel.Label
 #, fuzzy
@@ -10848,7 +10862,7 @@ msgstr "ತಿರುಗು ಮತ್ತು ವರ್ಧಿಸು"
 #: registry/data/org/openoffice/Office/UI/Effects.xcu#Effects.UserInterface.Effects.ooo-entrance-breaks.Label
 #, fuzzy
 msgid  "Put on the Breaks"
-msgstr "ತಡೆಹಿಡಿ"
+msgstr "ತಡೆಹಿಡಿಯುವಿಕೆ"
 
 #: registry/data/org/openoffice/Office/UI/Effects.xcu#Effects.UserInterface.Effects.ooo-entrance-pinwheel.Label
 #, fuzzy
@@ -10873,12 +10887,12 @@ msgstr "ಎಳೆ"
 #: registry/data/org/openoffice/Office/UI/Effects.xcu#Effects.UserInterface.Effects.ooo-entrance-unfold.Label
 #, fuzzy
 msgid  "Unfold"
-msgstr "ಬಿಚ್ಚಿದ"
+msgstr "ಬಿಚ್ಚು"
 
 #: registry/data/org/openoffice/Office/UI/Effects.xcu#Effects.UserInterface.Effects.ooo-entrance-whip.Label
 #, fuzzy
 msgid  "Whip"
-msgstr "ತಿರುಗು"
+msgstr "ಕಲಕು"
 
 #: registry/data/org/openoffice/Office/UI/Effects.xcu#Effects.UserInterface.Effects.ooo-entrance-ascend.Label
 #, fuzzy
@@ -10933,7 +10947,7 @@ msgstr "ಮಸುಕನ್ನು ಹೆಚ್ಚಿಸು ಮತ್ತು ಗಾ
 #: registry/data/org/openoffice/Office/UI/Effects.xcu#Effects.UserInterface.Effects.ooo-entrance-glide.Label
 #, fuzzy
 msgid  "Glide"
-msgstr "ತೇಲು"
+msgstr "ಜಾರು"
 
 #: registry/data/org/openoffice/Office/UI/Effects.xcu#Effects.UserInterface.Effects.ooo-entrance-expand.Label
 #, fuzzy

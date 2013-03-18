@@ -949,7 +949,7 @@ msgstr "结束"
 
 #: source/text/scalc/01/02110000.xhp#hd_id3150107.20
 msgid  "Toggle"
-msgstr "切换"
+msgstr "转换"
 
 #: source/text/scalc/01/02110000.xhp#par_id3159098.22
 msgid  "\<ahelp hid=\"HID_SC_NAVIPI_ROOT\"\>Toggles the content view. Only the selected Navigator element and its subelements are displayed.\</ahelp\> Click the icon again to restore all elements for viewing."
@@ -1017,7 +1017,7 @@ msgstr ""
 
 #: source/text/scalc/01/02110000.xhp#hd_id3150037.26
 msgid  "Drag Mode"
-msgstr "拖拽模式"
+msgstr "拖拉模式"
 
 #: source/text/scalc/01/02110000.xhp#par_id3157876.28
 msgid  "\<ahelp hid=\"HID_SC_NAVIPI_DROP\"\>Opens a submenu for selecting the drag mode. You decide which action is performed when dragging and dropping an object from the Navigator into a document. Depending on the mode you select, the icon indicates whether a hyperlink, link or a copy is created.\</ahelp\>"
@@ -2473,7 +2473,7 @@ msgstr "若输入的参数是正确的，参数前方就会显示一个蓝点；
 
 #: source/text/scalc/01/04060100.xhp#tit
 msgid  "Functions by Category"
-msgstr "函数（按类别）"
+msgstr "函数分类"
 
 #: source/text/scalc/01/04060100.xhp#bm_id3148575
 msgid  "\<bookmark_value\>functions;listed by category\</bookmark_value\>      \<bookmark_value\>categories of functions\</bookmark_value\>      \<bookmark_value\>list of functions\</bookmark_value\>"
@@ -5709,11 +5709,11 @@ msgstr "参数应该是能返回逻辑值的逻辑表达式 (TRUE, 1<5, 2+3=7, B
 
 #: source/text/scalc/01/04060105.xhp#par_id3150538.67
 msgid  "When a function expects a single value, but you entered a cell range, then the value from the cell range is taken that is in the same column or row as the formula."
-msgstr "如果函数需要单个参数，但输入的是单元格区域，则从单元格区域中选择与公式相同行或列中的值。"
+msgstr "如果函数需要单个值，而您输入的是一个单元格区域，函数将取单元格区域中与公式位于同一行或同一列的单元格的值。"
 
 #: source/text/scalc/01/04060105.xhp#par_id3149128.68
 msgid  "If the entered range is outside of the current column or row of the formula, the function returns the error value #VALUE!"
-msgstr "如果输入的区域超出了公式当前行或列之外，函数将返回错误值 #VALUE!"
+msgstr "如果输入的区域超出了公式当前列或行之外，函数将返回错误值 #VALUE!"
 
 #: source/text/scalc/01/04060105.xhp#hd_id3150374.31
 msgid  "Syntax"
@@ -6057,7 +6057,7 @@ msgstr ""
 
 #: source/text/scalc/01/04060106.xhp#par_id679647
 msgid  "To return the angle in degrees, use the DEGREES function."
-msgstr "可以使用 DEGREES 函数来返回一个角度（用度数表示）。"
+msgstr "要返回用度数表示的角度值，请使用 DEGREES 函数。"
 
 #: source/text/scalc/01/04060106.xhp#hd_id3149882.55
 msgid  "Example"
@@ -6137,7 +6137,7 @@ msgstr ""
 
 #: source/text/scalc/01/04060106.xhp#par_id5834528
 msgid  "To return the angle in degrees, use the DEGREES function."
-msgstr "要返回角度，请使用 DEGREES 函数。"
+msgstr "要返回用度数表示的角度值，请使用 DEGREES 函数。"
 
 #: source/text/scalc/01/04060106.xhp#hd_id3147538.75
 msgid  "Example"
@@ -6213,7 +6213,7 @@ msgstr ""
 
 #: source/text/scalc/01/04060106.xhp#par_id203863
 msgid  "To return the angle in degrees, use the DEGREES function."
-msgstr "要返回角度，请使用 DEGREES 函数。"
+msgstr "可以使用 DEGREES 函数来返回一个角度（用度数表示）。"
 
 #: source/text/scalc/01/04060106.xhp#hd_id3149448.95
 msgid  "Example"
@@ -11489,7 +11489,7 @@ msgstr ""
 
 #: source/text/scalc/01/04060110.xhp#hd_id3153011.241
 msgid  "Syntax"
-msgstr "句法"
+msgstr "语法"
 
 #: source/text/scalc/01/04060110.xhp#par_id3155523.242
 msgid  "ARABIC(\"Text\")"
@@ -12733,7 +12733,7 @@ msgstr ""
 
 #: source/text/scalc/01/04060111.xhp#hd_id3148487.16
 msgid  "Syntax"
-msgstr "<emph>语法</emph>"
+msgstr "语法"
 
 #: source/text/scalc/01/04060111.xhp#par_id3150205.17
 msgid  "ISLEAPYEAR(\"Date\")"
@@ -12773,7 +12773,7 @@ msgstr ""
 
 #: source/text/scalc/01/04060111.xhp#hd_id3154370.23
 msgid  "Syntax"
-msgstr "<emph>语法</emph>"
+msgstr "语法"
 
 #: source/text/scalc/01/04060111.xhp#par_id3146114.24
 msgid  "YEARS(StartDate; EndDate; Type)"
@@ -12805,7 +12805,7 @@ msgstr ""
 
 #: source/text/scalc/01/04060111.xhp#hd_id3151240.30
 msgid  "Syntax"
-msgstr "<emph>语法</emph>"
+msgstr "语法"
 
 #: source/text/scalc/01/04060111.xhp#par_id3146869.31
 msgid  "MONTHS(StartDate; EndDate; Type)"
@@ -12837,7 +12837,7 @@ msgstr ""
 
 #: source/text/scalc/01/04060111.xhp#hd_id3150893.37
 msgid  "Syntax"
-msgstr "<emph>语法</emph>"
+msgstr "语法"
 
 #: source/text/scalc/01/04060111.xhp#par_id3159205.38
 msgid  "ROT13(Text)"
@@ -12985,7 +12985,7 @@ msgstr ""
 
 #: source/text/scalc/01/04060112.xhp#tit
 msgid  "Add-in for Programming in $[officename] Calc"
-msgstr "$[officename] Calc 中用于编程的加载宏"
+msgstr "用于在 $[officename] Calc 中编程的加载宏。"
 
 #: source/text/scalc/01/04060112.xhp#bm_id3151076
 msgid  "\<bookmark_value\>programming; add-ins\</bookmark_value\>\<bookmark_value\>shared libraries; programming\</bookmark_value\>\<bookmark_value\>external DLL functions\</bookmark_value\>\<bookmark_value\>functions; $[officename] Calc add-in DLL\</bookmark_value\>\<bookmark_value\>add-ins; for programming\</bookmark_value\>"
@@ -13325,7 +13325,7 @@ msgstr "Col1"
 
 #: source/text/scalc/01/04060112.xhp#par_id3147541.85
 msgid  "Column number in the upper-left corner of the cell area. Numbering starts at 0."
-msgstr "单元格区域左上角的列号。计数从 0 开始。"
+msgstr "单元格区域左上角的列号。从零开始计数。"
 
 #: source/text/scalc/01/04060112.xhp#par_id3149783.86
 msgid  "2"
@@ -13361,7 +13361,7 @@ msgstr "Col2"
 
 #: source/text/scalc/01/04060112.xhp#par_id3154819.94
 msgid  "Column number in the lower-right corner of the cell area. Numbering starts at 0."
-msgstr "单元格区域右下角的列号。从 0 开始计数。"
+msgstr "单元格区域右下角的列号。从零开始计数。"
 
 #: source/text/scalc/01/04060112.xhp#par_id3145083.95
 msgid  "8"
@@ -13373,7 +13373,7 @@ msgstr "Row2"
 
 #: source/text/scalc/01/04060112.xhp#par_id3150968.97
 msgid  "Row number in the lower-right corner of the cell area; numbering starts at 0."
-msgstr "单元格区右下角的行号，从 0 开始计数。"
+msgstr "单元格区域右下角的行号，从 0 开始计数。"
 
 #: source/text/scalc/01/04060112.xhp#par_id3156133.98
 msgid  "10"
@@ -13385,7 +13385,7 @@ msgstr "Tab2"
 
 #: source/text/scalc/01/04060112.xhp#par_id3147086.100
 msgid  "Table number in the lower-right corner of the cell area; numbering starts at 0."
-msgstr "单元格区域右下角的表格号，从 0 开始计数。"
+msgstr "单元格区右下角的表格编号，从 0 开始计数。"
 
 #: source/text/scalc/01/04060112.xhp#par_id3151270.101
 msgid  "12"
@@ -13397,7 +13397,7 @@ msgstr "Count"
 
 #: source/text/scalc/01/04060112.xhp#par_id3145202.103
 msgid  "Number of the following elements. Empty cells are not counted or passed."
-msgstr "下列元素的数目。空单元格不被记数且不被传送。"
+msgstr "下接的单元数目。空单元格不予计数和传递。"
 
 #: source/text/scalc/01/04060112.xhp#par_id3150879.104
 msgid  "14"
@@ -13421,7 +13421,7 @@ msgstr "Row"
 
 #: source/text/scalc/01/04060112.xhp#par_id3155851.109
 msgid  "Row number of the element; numbering starts at 0."
-msgstr "元素的行号，从 0 开始计数。"
+msgstr "元素的行号，从零开始计数。"
 
 #: source/text/scalc/01/04060112.xhp#par_id3153150.110
 msgid  "18"
@@ -13433,7 +13433,7 @@ msgstr "Tab"
 
 #: source/text/scalc/01/04060112.xhp#par_id3150154.112
 msgid  "Table number of the element; numbering starts at 0."
-msgstr "元素的表格号，从 0 开始计数。"
+msgstr "元素的工作表编号，从零开始计数。"
 
 #: source/text/scalc/01/04060112.xhp#par_id3149289.113
 msgid  "20"
@@ -13501,7 +13501,7 @@ msgstr "Col1"
 
 #: source/text/scalc/01/04060112.xhp#par_id3148447.129
 msgid  "Column number in the upper-left corner of the cell area. Numbering starts at 0."
-msgstr "单元格区域左上角的列号。从 0 开始计数。"
+msgstr "单元格区域左上角的列号。计数从 0 开始。"
 
 #: source/text/scalc/01/04060112.xhp#par_id3145418.130
 msgid  "2"
@@ -13537,7 +13537,7 @@ msgstr "Col2"
 
 #: source/text/scalc/01/04060112.xhp#par_id3149788.138
 msgid  "Column number in the lower-right corner of the cell area. Numbering starts at 0."
-msgstr "单元格区域右下角的列号。 从 0 开始计数。"
+msgstr "单元格区域右下角的列号。从 0 开始计数。"
 
 #: source/text/scalc/01/04060112.xhp#par_id3166450.139
 msgid  "8"
@@ -13549,7 +13549,7 @@ msgstr "Row2"
 
 #: source/text/scalc/01/04060112.xhp#par_id3152949.141
 msgid  "Row number in the lower-right corner of the cell area; numbering starts at 0."
-msgstr "单元格区域右下角的行号，从 0 开始计数。"
+msgstr "单元格区右下角的行号，从 0 开始计数。"
 
 #: source/text/scalc/01/04060112.xhp#par_id3159270.142
 msgid  "10"
@@ -13641,7 +13641,7 @@ msgstr "24"
 
 #: source/text/scalc/01/04060112.xhp#par_id3153702.164
 msgid  "String"
-msgstr "字符串"
+msgstr "String"
 
 #: source/text/scalc/01/04060112.xhp#par_id3154474.165
 msgid  "String with closing zero byte"
@@ -15581,7 +15581,7 @@ msgstr ""
 
 #: source/text/scalc/01/04060118.xhp#tit
 msgid  "Financial Functions Part Three"
-msgstr "金融函数第三部分"
+msgstr "财务函数第三部分"
 
 #: source/text/scalc/01/04060118.xhp#hd_id3146780.1
 msgid  "Financial Functions Part Three"
@@ -18001,7 +18001,7 @@ msgstr "示例"
 
 #: source/text/scalc/01/04060181.xhp#par_id3149953.19
 msgid  "The entries 2, 4, 6 and eight in the Value 1-4 fields are to be counted."
-msgstr "计算 Value 1-4 字段中 2、4、6 和 eight 条目的个数。"
+msgstr "计算字段值 1-4 中的条目 2、4、6 和 eight 条目的个数。"
 
 #: source/text/scalc/01/04060181.xhp#par_id3154558.20
 msgid  "            \<item type=\"input\"\>=COUNT(2;4;6;\"eight\")\</item\> = 3. The count of numbers is therefore 3."
@@ -21125,7 +21125,7 @@ msgstr "1+1"
 
 #: source/text/scalc/01/04060199.xhp#par_id3159204.11
 msgid  "- (Minus)"
-msgstr "-（减号）"
+msgstr "-（负号）"
 
 #: source/text/scalc/01/04060199.xhp#par_id3145362.12
 msgid  "Subtraction"
@@ -21985,7 +21985,7 @@ msgstr ""
 
 #: source/text/scalc/01/05040200.xhp#tit
 msgid  "Optimal Column Width"
-msgstr "最佳列宽"
+msgstr "最佳宽度"
 
 #: source/text/scalc/01/05040200.xhp#bm_id3155628
 msgid  "\<bookmark_value\>spreadsheets; optimal column widths\</bookmark_value\>\<bookmark_value\>columns; optimal widths\</bookmark_value\>\<bookmark_value\>optimal column widths\</bookmark_value\>"
@@ -22393,7 +22393,7 @@ msgstr ""
 
 #: source/text/scalc/01/05080300.xhp#tit
 msgid  "Edit Print Ranges"
-msgstr "编辑打印范围"
+msgstr "编辑打印区域"
 
 #: source/text/scalc/01/05080300.xhp#hd_id3153088.1
 msgid  "Edit Print Ranges"
@@ -23473,7 +23473,7 @@ msgstr ""
 
 #: source/text/scalc/01/12010000.xhp#tit
 msgid  "Define Database Range"
-msgstr "定义数据库范围"
+msgstr "定义区域"
 
 #: source/text/scalc/01/12010000.xhp#hd_id3157909.1
 msgid  "Define Database Range"
@@ -24193,7 +24193,7 @@ msgstr ""
 
 #: source/text/scalc/01/12060000.xhp#tit
 msgid  "Multiple Operations"
-msgstr "多重运算"
+msgstr "多重计算"
 
 #: source/text/scalc/01/12060000.xhp#hd_id3153381.1
 msgid  "Multiple Operations"
@@ -24897,7 +24897,7 @@ msgstr ""
 
 #: source/text/scalc/01/12090103.xhp#tit
 msgid  "Filter"
-msgstr "筛选器"
+msgstr "筛选"
 
 #: source/text/scalc/01/12090103.xhp#hd_id3153970.1
 msgid  "Filter"
@@ -25645,7 +25645,7 @@ msgstr "日期"
 
 #: source/text/scalc/01/12120100.xhp#par_id3150718.27
 msgid  "All numbers corresponding to the condition. The entered values are formatted accordingly the next time the dialog is called up."
-msgstr "全部符合此条件的数字。已输入数值在下一次调用此对话框时被相应格式化。"
+msgstr "全部符合此条件的十进制数值。已输入数值在下次启动这个对话框时被相应地格式化。"
 
 #: source/text/scalc/01/12120100.xhp#par_id3146969.28
 msgid  "Time"
@@ -27717,7 +27717,7 @@ msgstr "浏览电子表格"
 
 #: source/text/scalc/04/01020000.xhp#hd_id3149407.86
 msgid  "Shortcut Keys"
-msgstr "<emph>快捷键</emph>"
+msgstr "快捷键"
 
 #: source/text/scalc/04/01020000.xhp#par_id3153815.87
 msgid  "\<emph\>Effect\</emph\>"
@@ -27741,7 +27741,7 @@ msgstr "将光标移到工作表中最后一个含有数据的单元格。"
 
 #: source/text/scalc/04/01020000.xhp#hd_id3149127.92
 msgid  "Home"
-msgstr "(Home)"
+msgstr "Home"
 
 #: source/text/scalc/04/01020000.xhp#par_id3159205.93
 msgid  "Moves the cursor to the first cell of the current row."
@@ -27749,7 +27749,7 @@ msgstr "将光标移到当前行的第一个单元格。"
 
 #: source/text/scalc/04/01020000.xhp#hd_id3149897.94
 msgid  "End"
-msgstr "End"
+msgstr "(End)"
 
 #: source/text/scalc/04/01020000.xhp#par_id3155095.95
 msgid  "Moves the cursor to the last cell of the current row."

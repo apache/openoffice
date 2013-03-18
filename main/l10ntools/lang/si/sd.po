@@ -625,7 +625,7 @@ msgstr "HTML සැලැස්ම නම් කරන්න"
 
 #: source/ui/accessibility/accessibility.src#SID_SD_A11Y_D_DRAWVIEW_N.String.Text
 msgid  "Drawing View"
-msgstr "ඇදීමේ පෙනුම"
+msgstr "ඇදිමේ දසුන"
 
 #: source/ui/accessibility/accessibility.src#SID_SD_A11Y_D_DRAWVIEW_D.String.Text
 msgid  "This is where you create and edit drawings."
@@ -789,11 +789,11 @@ msgstr "රංගප්‍රයෝගය"
 
 #: source/ui/animations/CustomAnimationDialog.src#DLG_CUSTOMANIMATION.1.RID_TP_CUSTOMANIMATION_DURATION.PageItem.Text
 msgid  "Timing"
-msgstr "කාල නිශ්චය"
+msgstr "කාල නියමය"
 
 #: source/ui/animations/CustomAnimationDialog.src#DLG_CUSTOMANIMATION.1.RID_TP_CUSTOMANIMATION_TEXT.PageItem.Text
 msgid  "Text Animation"
-msgstr "පාඨ පණගැන්වුම"
+msgstr "පෙළ සජීවීකරණය"
 
 #: source/ui/animations/CustomAnimationDialog.src#RID_TP_CUSTOMANIMATION_EFFECT.TabPage.Text
 msgid  "Effect"
@@ -1341,7 +1341,7 @@ msgstr "අලවන්න (~P)"
 
 #: source/ui/annotations/annotations.src#RID_ANNOTATION_CONTEXTMENU.SID_DELETE_POSTIT.MenuItem.Text
 msgid  "~Delete Comment"
-msgstr "කමෙන්ටය මකා දමන්න (~D)"
+msgstr "සටහන මකා දමන්න (~D)"
 
 #: source/ui/annotations/annotations.src#RID_ANNOTATION_CONTEXTMENU.SID_DELETEALLBYAUTHOR_POSTIT.MenuItem.Text
 msgid  "Delete All Comments b~y %1"
@@ -1466,17 +1466,17 @@ msgstr "තීරු (~R)"
 #: source/ui/app/popup2_tmpl.src#RID_GRAPHIC_TABLE_POPUP.DUMMY.SID_TABLE_DISTRIBUTE_ROWS.MenuItem.Text
 #, fuzzy
 msgid  "Space ~Equally"
-msgstr "සම ඉඩකඩ (~E)"
+msgstr "සටහන මකා දමන්න (~D)"
 
 #: source/ui/app/popup2_tmpl.src#RID_GRAPHIC_TABLE_POPUP.DUMMY.SID_TABLE_SELECT_ROW.MenuItem.Text
 #, fuzzy
 msgid  "~Select"
-msgstr "තොරන්න (~S)"
+msgstr "තෝරන්න (~S)"
 
 #: source/ui/app/popup2_tmpl.src#RID_GRAPHIC_TABLE_POPUP.DUMMY.SID_TABLE_INSERT_ROW_DLG.MenuItem.Text
 #, fuzzy
 msgid  "~Insert..."
-msgstr "ඇතුළු කරන්න (~I)"
+msgstr "සියළු සටහන් මකා දමන්න (~A)"
 
 #: source/ui/app/popup2_tmpl.src#RID_GRAPHIC_TABLE_POPUP.DUMMY.SID_TABLE_DELETE_ROW.MenuItem.Text
 #, fuzzy
@@ -1831,7 +1831,7 @@ msgstr "වත්තුව නම්කරන්න"
 #: source/ui/app/strings.src#STR_DESC_NAMEGROUP.String.Text
 #, fuzzy
 msgid  "Name"
-msgstr "නම්"
+msgstr "නම"
 
 #: source/ui/app/strings.src#STR_WARN_PAGE_EXISTS.String.Text
 #, fuzzy
@@ -3754,7 +3754,7 @@ msgstr "මෙවලම්තීරු (~T)"
 #: source/ui/app/toolbox.src#RID_DRAW_VIEWER_TOOLBOX.String.Text
 #, fuzzy
 msgid  "Function Bar (viewing mode)"
-msgstr "ශ්‍රිත තීරුව (පෙන්විමේ ආකාරය)"
+msgstr "ක්‍රියා තීරුව (පෙනීමේ ප්‍රකාරය)"
 
 #: source/ui/app/toolbox.src#RID_GRAPHIC_VIEWER_TOOLBOX.String.Text
 #, fuzzy
@@ -3824,7 +3824,7 @@ msgstr "තෝරන්න (~S)"
 #: source/ui/app/popup.src#RID_DRAW_TABLEOBJ_INSIDE_POPUP.DUMMY.SID_TABLE_INSERT_ROW_DLG.MenuItem.Text
 #, fuzzy
 msgid  "~Insert..."
-msgstr "ඇතුළත් කරන්න... (~I)"
+msgstr "ඇතුළු කරන්න (~I)"
 
 #: source/ui/app/popup.src#RID_DRAW_TABLEOBJ_INSIDE_POPUP.DUMMY.SID_TABLE_DELETE_ROW.MenuItem.Text
 #, fuzzy
@@ -3879,7 +3879,7 @@ msgstr "සියළු ස්ලයිඩවලට යොදවන්න (~A)"
 #: source/ui/app/popup.src#RID_TASKPANE_MASTERPAGESSELECTOR_POPUP.SID_TP_APPLY_TO_SELECTED_SLIDES.MenuItem.Text
 #, fuzzy
 msgid  "Apply to ~Selected Slides"
-msgstr "තේරූ ස්ලයිඩයලට යොදවන්න (~S)"
+msgstr "තේරූ ස්ලයිඩවලට යොදවන්න (~S)"
 
 #: source/ui/app/popup.src#RID_TASKPANE_MASTERPAGESSELECTOR_POPUP.SID_TP_SHOW_LARGE_PREVIEW.MenuItem.Text
 #, fuzzy
@@ -3899,7 +3899,7 @@ msgstr "සියළු ස්ලයිඩවලට යොදවන්න (~A)"
 #: source/ui/app/popup.src#RID_TASKPANE_CURRENT_MASTERPAGESSELECTOR_POPUP.SID_TP_APPLY_TO_SELECTED_SLIDES.MenuItem.Text
 #, fuzzy
 msgid  "Apply to ~Selected Slides"
-msgstr "තේරූ ස්ලයිඩවලට යොදවන්න (~S)"
+msgstr "තේරූ ස්ලයිඩයලට යොදවන්න (~S)"
 
 #: source/ui/app/popup.src#RID_TASKPANE_CURRENT_MASTERPAGESSELECTOR_POPUP.SID_TP_EDIT_MASTER.MenuItem.Text
 #, fuzzy
@@ -4127,8 +4127,9 @@ msgid  "Su~mmary Slide"
 msgstr "සාරාංශ ස්ලයිඩය (~m)"
 
 #: source/ui/app/menuids2_tmpl.src#MN_INSERTLAYER.SID_INSERTLAYER.MenuItem.Text
+#, fuzzy
 msgid  "~Layer..."
-msgstr "ස්තරය... (~L)"
+msgstr "ස්ථරය... (~L)"
 
 #: source/ui/app/menuids2_tmpl.src#MN_INSERT_FLD_DATE_FIX.SID_INSERT_FLD_DATE_FIX.MenuItem.Text
 #, fuzzy
@@ -4346,8 +4347,9 @@ msgid  "~Color"
 msgstr "වර්ණය (~C)"
 
 #: source/ui/app/menuids2_tmpl.src#MN_OUTPUT_QUALITY_GRAYSCALE.SID_OUTPUT_QUALITY_GRAYSCALE.MenuItem.Text
+#, fuzzy
 msgid  "~Grayscale"
-msgstr "අඳුරුවන් පරිමාණය (~G)"
+msgstr "අළුවන් පරිමාණය (~G)"
 
 #: source/ui/app/menuids2_tmpl.src#MN_OUTPUT_QUALITY_BLACKWHITE.SID_OUTPUT_QUALITY_BLACKWHITE.MenuItem.Text
 #, fuzzy
@@ -6029,7 +6031,7 @@ msgstr "තත්ත්වය"
 #: source/ui/dlg/prntopts.src#TP_PRINT_OPTIONS.RBT_COLOR.RadioButton.Text
 #, fuzzy
 msgid  "Default"
-msgstr "පෙරනිමිය"
+msgstr "පෙරනිමි"
 
 #: source/ui/dlg/prntopts.src#TP_PRINT_OPTIONS.RBT_GRAYSCALE.RadioButton.Text
 #, fuzzy

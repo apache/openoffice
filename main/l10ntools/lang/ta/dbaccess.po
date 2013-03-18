@@ -1442,7 +1442,7 @@ msgstr "நிலையான வடிகட்டி"
 #: source/ui/dlg/queryfilter.src#DLG_FILTERCRIT.LB_WHERECOND2.Default.StringList.item
 #, fuzzy
 msgid  "AND"
-msgstr "OR"
+msgstr "AND"
 
 #: source/ui/dlg/queryfilter.src#DLG_FILTERCRIT.LB_WHERECOND2.Default.StringList.item
 #, fuzzy
@@ -1532,7 +1532,7 @@ msgstr "காலியாக அமை (~S)"
 #: source/ui/dlg/RelationDlg.src#DLG_REL_PROPERTIES.RB_CASC_UPD_DEFAULT.RadioButton.Text
 #, fuzzy
 msgid  "Set ~default"
-msgstr "முன்னிருப்பை அமை (~d)"
+msgstr "முன்னிருப்பாக அமை (~d)"
 
 #: source/ui/dlg/RelationDlg.src#DLG_REL_PROPERTIES.FL_CASC_DEL.FixedLine.Text
 #, fuzzy
@@ -1972,7 +1972,7 @@ msgstr "இணைப்பு அமைவுகள்"
 #: source/ui/dlg/dbadmin.src#AUTO_HOST_AND_PORT(AUTO_Y).FT_HOSTNAME.FixedText.Text
 #, fuzzy
 msgid  "~Host name"
-msgstr "புரவலப் பெயர் (~H)"
+msgstr "வழங்கி பெயர் (~H)"
 
 #: source/ui/dlg/dbadmin.src#AUTO_HOST_AND_PORT(AUTO_Y).FT_PORTNUMBER.FixedText.Text
 #, fuzzy
@@ -2705,7 +2705,7 @@ msgstr "dBASE இணைப்பை அமை"
 #: source/ui/dlg/dbadminsetup.src#DLG_DATABASE_WIZARD.STR_PAGETITLE_TEXT.String.Text
 #, fuzzy
 msgid  "Set up a connection to text files"
-msgstr "உரை கோப்புகளுடன் ஒரு இணைப்பை அமை"
+msgstr "dBASE கோப்புகளுக்கான இணைப்பை அமை"
 
 #: source/ui/dlg/dbadminsetup.src#DLG_DATABASE_WIZARD.STR_PAGETITLE_MSACCESS.String.Text
 #, fuzzy
@@ -3874,8 +3874,9 @@ msgid  "Unknown;Text;Number;Date/Time;Date;Time;Yes/No;Currency;Memo;Counter;Ima
 msgstr "தெரியாத;உரை;எண்;தேதி/நேரம்;தேதி;நேரம்;சரி/இல்லை;நோட்டு;குறிப்பு;Counter;படம்;உரை (fix);தசமம்;இருநிலை (fix);இருநிலை;BigInt;இருபக்க;Float;Real; முழுஎண்;Small Integer;Tiny Integer;SQL Null;பொருள்;Distinct;கட்டமைப்பு;புலம்;BLOB;CLOB;REF;OTHER"
 
 #: source/ui/tabledesign/table.src#STR_TABLEDESIGN_UNDO_PRIMKEY.String.Text
+#, fuzzy
 msgid  "Insert/remove primary key"
-msgstr "முதன்மை சாவியை நுழை/அகற்று"
+msgstr "முதன்மை சாவியை நுழை/நீக்கு"
 
 #: source/ui/tabledesign/table.src#STR_VALUE_YES.String.Text
 #, fuzzy

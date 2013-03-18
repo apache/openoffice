@@ -2127,8 +2127,9 @@ msgid  "Navigator"
 msgstr "المستكشف"
 
 #: source/ui/navipi/navipi.src#RID_SCDLG_NAVIGATOR.FT_ROW.FixedText.Text
+#, fuzzy
 msgid  "Row"
-msgstr "صفر"
+msgstr "الصف"
 
 #: source/ui/navipi/navipi.src#RID_SCDLG_NAVIGATOR.ED_ROW.NumericField.QuickHelpText
 #, fuzzy
@@ -2136,8 +2137,9 @@ msgid  "Row"
 msgstr "صفر"
 
 #: source/ui/navipi/navipi.src#RID_SCDLG_NAVIGATOR.FT_COL.FixedText.Text
+#, fuzzy
 msgid  "Column"
-msgstr "عمودد"
+msgstr "العمود"
 
 #: source/ui/navipi/navipi.src#RID_SCDLG_NAVIGATOR.ED_COL.SpinField.QuickHelpText
 #, fuzzy
@@ -2315,8 +2317,9 @@ msgid  "- entire sheet -"
 msgstr "- كامل الورقة -"
 
 #: source/ui/pagedlg/pagedlg.src#RID_SCDLG_AREAS.LB_PRINTAREA.Default.StringList.item
+#, fuzzy
 msgid  "- user defined -"
-msgstr "- يحدده المستخدم -"
+msgstr "- معرفة من قبل المستخدم -"
 
 #: source/ui/pagedlg/pagedlg.src#RID_SCDLG_AREAS.LB_PRINTAREA.Default.StringList.item
 #, fuzzy
@@ -2324,8 +2327,9 @@ msgid  "- selection -"
 msgstr "- التحديد -"
 
 #: source/ui/pagedlg/pagedlg.src#RID_SCDLG_AREAS.RB_PRINTAREA.ImageButton.QuickHelpText
+#, fuzzy
 msgid  "Shrink"
-msgstr "تقلصر"
+msgstr "تقليص"
 
 #: source/ui/pagedlg/pagedlg.src#RID_SCDLG_AREAS.FL_REPEATROW.FixedLine.Text
 #, fuzzy
@@ -10919,7 +10923,7 @@ msgstr "تراكمي"
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_POISSON_DIST.7.String.Text
 #, fuzzy
 msgid  "0 or FALSE calculates the probability density function. Any other value or TRUE or omitted calculates the cumulative distribution function."
-msgstr "تقوم القيمة 0 أو FALSE بحساب دالة الكثافة الاحتمالية. تقوم أي قيمة أخرى أو TRUE أو محذوف بحساب دالة التوزيع التراكمي."
+msgstr "تقوم القيمة 0 أو FALSE بحساب دالة الكثافة الاحتمالية. بينما تقوم أية قيمة أخرى أو TRUE أو تم حذفها بحساب دالة التوزيع التراكمي."
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_NORM_DIST.1.String.Text
 #, fuzzy
@@ -10964,7 +10968,7 @@ msgstr "C"
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_NORM_DIST.9.String.Text
 #, fuzzy
 msgid  "0 or FALSE calculates the probability density function. Any other value or TRUE or omitted calculates the cumulative distribution function."
-msgstr "تقوم القيمة 0 أو FALSE بحساب دالة الكثافة الاحتمالية. بينما تقوم أية قيمة أخرى أو TRUE أو تم حذفها بحساب دالة التوزيع التراكمي."
+msgstr "تقوم القيمة 0 أو FALSE بحساب دالة الكثافة الاحتمالية. تقوم أي قيمة أخرى أو TRUE أو محذوف بحساب دالة التوزيع التراكمي."
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_NORM_INV.1.String.Text
 #, fuzzy
@@ -11074,7 +11078,7 @@ msgstr "تراكمي"
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_LOG_NORM_DIST.9.String.Text
 #, fuzzy
 msgid  "0 or FALSE calculates the probability density function. Any other value or TRUE or omitted calculates the cumulative distribution function."
-msgstr "تقوم القيمة 0 أو FALSE بحساب دالة الكثافة الاحتمالية. بينما تقوم أية قيمة أخرى أو TRUE أو تم حذفها بحساب دالة التوزيع التراكمي."
+msgstr "تقوم القيمة 0 أو FALSE بحساب دالة الكثافة الاحتمالية. تقوم أي قيمة أخرى أو TRUE أو محذوف بحساب دالة التوزيع التراكمي."
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_LOG_INV.1.String.Text
 #, fuzzy
@@ -15092,7 +15096,7 @@ msgstr "~حذف تعليق"
 #: source/ui/src/popup.src#RID_POPUP_CELLS.FID_NOTE_VISIBLE.MenuItem.Text
 #, fuzzy
 msgid  "Sho~w Comment"
-msgstr "~إظهار تعليق"
+msgstr "إ~ظهار تعليق"
 
 #: source/ui/src/popup.src#RID_POPUP_CELLS.SID_CUT.MenuItem.Text
 #, fuzzy

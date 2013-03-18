@@ -1213,7 +1213,7 @@ msgstr ""
 
 #: source/ui/app/mn.src#MN_TEXT_ATTR.MN_FORMAT_ALGN.MenuItem.Text
 msgid  "A~lignment"
-msgstr "י~ישור"
+msgstr "יי~שור"
 
 #: source/ui/app/mn.src#MN_TEXT_ATTR.MN_FORMAT_ALGN.SID_ATTR_PARA_ADJUST_BLOCK.MenuItem.Text
 msgid  "Justified"
@@ -1485,19 +1485,19 @@ msgstr "שבירת שורות"
 
 #: source/ui/app/mn.src#MN_MOUSE_FRAME_BEGIN.MN_WRAP.FN_FRAME_NOWRAP.MenuItem.Text
 msgid  "~No Wrap"
-msgstr "ללא גלילה"
+msgstr "ללא גלישה"
 
 #: source/ui/app/mn.src#MN_MOUSE_FRAME_BEGIN.MN_WRAP.FN_FRAME_WRAP.MenuItem.Text
 msgid  "~Page Wrap"
-msgstr "גלילת דף"
+msgstr "גלישת דף"
 
 #: source/ui/app/mn.src#MN_MOUSE_FRAME_BEGIN.MN_WRAP.FN_FRAME_WRAP_IDEAL.MenuItem.Text
 msgid  "~Optimal Page Wrap"
-msgstr "גלילת דף מיטבית"
+msgstr "גלישת דף מיטבית"
 
 #: source/ui/app/mn.src#MN_MOUSE_FRAME_BEGIN.MN_WRAP.FN_FRAME_WRAPTHRU.MenuItem.Text
 msgid  "~Wrap Through"
-msgstr "גלישת שורות דרך"
+msgstr "גלישה דרך"
 
 #: source/ui/app/mn.src#MN_MOUSE_FRAME_BEGIN.MN_WRAP.FN_FRAME_WRAPTHRU_TRANSP.MenuItem.Text
 msgid  "In ~Background"
@@ -2273,7 +2273,7 @@ msgstr "אחר"
 
 #: source/ui/config/optdlg.src#TP_OPTPRINT_PAGE.CB_PRINTEMPTYPAGES.CheckBox.Text
 msgid  "Print ~automatically inserted blank pages"
-msgstr "הדפס דפים ריקים שנוספו באופן ~אוטומטי"
+msgstr "הדפס דפים ריקים שנוצרו באופן ~אוטומטי"
 
 #: source/ui/config/optdlg.src#TP_OPTPRINT_PAGE.CB_PAPERFROMSETUP.CheckBox.Text
 msgid  "~Paper tray from printer settings"
@@ -5059,8 +5059,9 @@ msgid  "~Restart numbering"
 msgstr "התחלת מספור מחדש"
 
 #: source/ui/dialog/regionsw.src#TP_SECTION_FTNENDNOTES.FT_FTN_OFFSET.FixedText.Text
+#, fuzzy
 msgid  "~Start at"
-msgstr "התחלה ב"
+msgstr "להתחיל ב"
 
 #: source/ui/dialog/regionsw.src#TP_SECTION_FTNENDNOTES.CB_FTN_NUM_FMT.CheckBox.Text
 #, fuzzy
@@ -12420,8 +12421,9 @@ msgid  "Properties"
 msgstr "מאפיינים"
 
 #: source/ui/table/tabledlg.src#TP_FORMAT_TABLE.FT_TEXTDIRECTION.FixedText.Text
+#, fuzzy
 msgid  "Text ~direction"
-msgstr "~כיוון טקסט"
+msgstr "~כיוון הטקסט"
 
 #: source/ui/table/tabledlg.src#TP_FORMAT_TABLE.LB_TEXTDIRECTION.0.StringList.item
 #, fuzzy

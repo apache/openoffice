@@ -1958,7 +1958,7 @@ msgstr "Використовувати каталог для файлових б
 #: source/ui/dlg/dbadmin.src#AUTO_FIXEDLINE_CONNSETTINGS(AUTO_Y).FL_SEPARATOR1.FixedLine.Text
 #, fuzzy
 msgid  "Connection Settings"
-msgstr "Властивості з'єднання"
+msgstr "Параметри з'єднання"
 
 #: source/ui/dlg/dbadmin.src#AUTO_HOST_AND_PORT(AUTO_Y).FT_HOSTNAME.FixedText.Text
 #, fuzzy
@@ -2106,7 +2106,7 @@ msgstr "~Параметри ODBC"
 #: source/ui/dlg/dbadmin.src#PAGE_ADABAS.FL_SEPARATOR1.FixedLine.Text
 #, fuzzy
 msgid  "Connection Settings"
-msgstr "Параметри з'єднання"
+msgstr "Властивості з'єднання"
 
 #: source/ui/dlg/dbadmin.src#PAGE_ADABAS.FT_HOSTNAME.FixedText.Text
 #, fuzzy
@@ -2675,7 +2675,7 @@ msgstr "Паролі не збігаються. Введіть пароль зн
 #: source/ui/dlg/dbadminsetup.src#DLG_DATABASE_WIZARD.ModalDialog.Text
 #, fuzzy
 msgid  "Database Wizard"
-msgstr "Помічник бази даних"
+msgstr "Помічник створення бази даних"
 
 #: source/ui/dlg/dbadminsetup.src#DLG_DATABASE_WIZARD.STR_DBWIZARDTITLE.String.Text
 #, fuzzy
@@ -2695,7 +2695,7 @@ msgstr "Встановлення з'єднання з dBASE"
 #: source/ui/dlg/dbadminsetup.src#DLG_DATABASE_WIZARD.STR_PAGETITLE_TEXT.String.Text
 #, fuzzy
 msgid  "Set up a connection to text files"
-msgstr "Встановлення підключення до текстових файлів"
+msgstr "Встановити з'єднання до текстових файлів"
 
 #: source/ui/dlg/dbadminsetup.src#DLG_DATABASE_WIZARD.STR_PAGETITLE_MSACCESS.String.Text
 #, fuzzy
@@ -3427,8 +3427,9 @@ msgid  "Name"
 msgstr "Назва"
 
 #: source/ui/misc/WizardPages.src#STR_WIZ_TABLE_COPY.String.Text
+#, fuzzy
 msgid  "Copy table"
-msgstr "Копіювання"
+msgstr "Копіювати таблицю"
 
 #: source/ui/misc/WizardPages.src#STR_COPYTABLE_TITLE_COPY.String.Text
 #, fuzzy
@@ -3854,8 +3855,9 @@ msgid  "Unknown;Text;Number;Date/Time;Date;Time;Yes/No;Currency;Memo;Counter;Ima
 msgstr "Невідомо;Текст;Число;Дата/Час;Дата;Час;Логічне;Валюта;Пам'ятка;Лічильник;Зображення;Текст (фікс.);Десяткове;Двійкове (фікс.);Двійкове;Довге ціле;З подвійною точністю;З плаваючою комою;Дійсне;Ціле;Коротке ціле;Tiny Integer;SQL Нуль;Об'єкт;Distinct;Структура;Поле;BLOB;CLOB;REF;OTHER"
 
 #: source/ui/tabledesign/table.src#STR_TABLEDESIGN_UNDO_PRIMKEY.String.Text
+#, fuzzy
 msgid  "Insert/remove primary key"
-msgstr "Вставити / вилучити первинний ключ"
+msgstr "Вставити/вилучити первинний ключ"
 
 #: source/ui/tabledesign/table.src#STR_VALUE_YES.String.Text
 #, fuzzy

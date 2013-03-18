@@ -185,7 +185,7 @@ msgstr "Izaberi od"
 
 #: source/ui/dbgui/pivot.src#RID_SCDLG_PIVOT_LAYOUT.RB_INAREA.ImageButton.QuickHelpText
 msgid  "Shrink"
-msgstr "Smotaj"
+msgstr "Skupi"
 
 #: source/ui/dbgui/pivot.src#RID_SCDLG_PIVOT_LAYOUT.FT_OUTAREA.FixedText.Text
 msgid  "Results to"
@@ -4793,23 +4793,23 @@ msgstr ">="
 
 #: source/ui/src/filter.src#RID_SCDLG_FILTER.LB_COND1.Default.stringlist.item
 msgid  "<>"
-msgstr " <>"
+msgstr "<>"
 
 #: source/ui/src/filter.src#RID_SCDLG_FILTER.LB_COND1.Default.stringlist.item
 msgid  "Largest"
-msgstr "najveće"
+msgstr "Najveći"
 
 #: source/ui/src/filter.src#RID_SCDLG_FILTER.LB_COND1.Default.stringlist.item
 msgid  "Smallest"
-msgstr "najmanje"
+msgstr "Najmanji"
 
 #: source/ui/src/filter.src#RID_SCDLG_FILTER.LB_COND1.Default.stringlist.item
 msgid  "Largest %"
-msgstr "najveći %"
+msgstr "Najveći %"
 
 #: source/ui/src/filter.src#RID_SCDLG_FILTER.LB_COND1.Default.stringlist.item
 msgid  "Smallest %"
-msgstr "najmanji %"
+msgstr "Najmanji %"
 
 #: source/ui/src/filter.src#RID_SCDLG_FILTER.LB_COND1.Default.stringlist.item
 msgid  "Contains"
@@ -8125,7 +8125,7 @@ msgstr "Vrsta_funkcije"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_RKP.7.String.Text
 msgid  "If type = 0 then the functions will be calculated in the form of y=m^x, or also functions y=b*m^x."
-msgstr "Za vrsta = 0, funkcije će biti računate u formi y=m^x ili kao funkcije y=b*m^x."
+msgstr "Ako je vrsta = 0, funkcije će biti računate u formi y=m^x, ili kao funkcije y=b*m^x."
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_RKP.8.String.Text
 msgid  "stats"
@@ -8289,7 +8289,7 @@ msgstr "broj "
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_VAR.3.String.Text
 msgid  "Number 1, number 2, ... are 1 to 30 numerical arguments which portray a sample of a population."
-msgstr "Broj 1, broj 2, ... predstavljaju od 1 do 30 brojčanih argumenata uzorka populacije."
+msgstr "Broj 1, broj 2, ... su od 1 do 30 brojčanih argumenata koji predstavljaju uzorak populacije."
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_VAR_A.1.String.Text
 msgid  "Returns the variance based on a sample. Text is evaluated as zero."
@@ -8301,7 +8301,7 @@ msgstr "vrednost "
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_VAR_A.3.String.Text
 msgid  "Value 1; value 2; ... are 1 to 30 arguments representing a sample taken from a basic total population."
-msgstr "Vrednost 1, vrednost 2, ... predstavljaju od 1 do 30 uzoraka iz osnovne ukupne populacije."
+msgstr "Vrednost 1, vrednost 2,... predstavljaju od 1 do 30 uzoraka iz osnovne ukupne populacije."
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_VAR_P.1.String.Text
 msgid  "Calculates variance based on the entire population."
@@ -8505,7 +8505,7 @@ msgstr "podatak"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_PERCENTILE.3.String.Text
 msgid  "The array of the data in the sample."
-msgstr "Potez podataka  uzorka."
+msgstr "Potez podataka uzorka."
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_PERCENTILE.4.String.Text
 msgid  "Alpha"
@@ -8881,7 +8881,7 @@ msgstr "Kumulativna"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_POISSON_DIST.7.String.Text
 msgid  "0 or FALSE calculates the probability density function. Any other value or TRUE or omitted calculates the cumulative distribution function."
-msgstr "0 ili FALSE (netačno) izračunava funkciju gustine verovatnoće. Bilo koja druga vrednost, TRUE (tačno) ili ako je izostavljeno računa funkciju kumulativne raspodele.  "
+msgstr "0 ili FALSE (netačno) računa funkciju gustine verovatnoće. Bilo koja druga vrednost, TRUE (tačno) ili ako je izostavljeno daje funkciju kumulativne raspodele.  "
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_NORM_DIST.1.String.Text
 msgid  "Values of the normal distribution."
@@ -8917,7 +8917,7 @@ msgstr "C"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_NORM_DIST.9.String.Text
 msgid  "0 or FALSE calculates the probability density function. Any other value or TRUE or omitted calculates the cumulative distribution function."
-msgstr "0 ili FALSE (netačno) izračunava funkciju gustine verovatnoće. Bilo koja druga vrednost, TRUE (tačno) ili ako je izostavljeno računa funkciju kumulativne raspodele."
+msgstr "0 ili FALSE (netačno) izračunava funkciju gustine verovatnoće. Bilo koja druga vrednost, TRUE (tačno) ili ako je izostavljeno računa funkciju kumulativne raspodele.  "
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_NORM_INV.1.String.Text
 msgid  "Values of the inverse normal distribution."
@@ -11601,7 +11601,7 @@ msgstr "Izaberi listove"
 
 #: source/ui/src/scstring.src#STR_DLG_SELECTTABLES_LBNAME.String.Text
 msgid  "~Selected sheets"
-msgstr "~Izabrani listovi"
+msgstr "Štampaj sam~o izabrane listove"
 
 #: source/ui/src/scstring.src#STR_REPLCELLSWARN.String.Text
 msgid  "You are pasting data into cells that already contain data.\\nDo you really want to overwrite the existing data?"

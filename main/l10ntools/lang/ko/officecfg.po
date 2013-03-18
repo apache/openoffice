@@ -309,11 +309,11 @@ msgstr "범주"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.business.Tables.categories.Fields.categoryID.Name
 msgid  "CategoryID"
-msgstr "범주ID"
+msgstr "범주 ID"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.business.Tables.categories.Fields.categoryID.ShortName
 msgid  "CategoryID"
-msgstr "범주ID"
+msgstr "범주 ID"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.business.Tables.categories.Fields.categoryname.Name
 msgid  "CategoryName"
@@ -321,7 +321,7 @@ msgstr "범주이름"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.business.Tables.categories.Fields.categoryname.ShortName
 msgid  "CategName"
-msgstr "범주명"
+msgstr "범주이름"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.business.Tables.products.Name
 msgid  "Products"
@@ -485,7 +485,7 @@ msgstr "우편번호"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.business.Tables.suppliers.Fields.stateorprovince.Name
 msgid  "StateOrProvince"
-msgstr "시/도"
+msgstr "시또는도"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.business.Tables.suppliers.Fields.stateorprovince.ShortName
 msgid  "StateProvi"
@@ -493,7 +493,7 @@ msgstr "시/도"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.business.Tables.suppliers.Fields.countryorregion.Name
 msgid  "CountryOrRegion"
-msgstr "국가또는지역"
+msgstr "국가 또는 지역"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.business.Tables.suppliers.Fields.countryorregion.ShortName
 msgid  "CountryReg"
@@ -593,11 +593,11 @@ msgstr "접미사"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.business.Tables.mailinglist.Fields.title.Name
 msgid  "Title"
-msgstr "제목"
+msgstr "직급"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.business.Tables.mailinglist.Fields.title.ShortName
 msgid  "Title"
-msgstr "제목"
+msgstr "직급"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.business.Tables.mailinglist.Fields.organizationname.Name
 msgid  "OrganizationName"
@@ -641,7 +641,7 @@ msgstr "시/도"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.business.Tables.mailinglist.Fields.countryorregion.Name
 msgid  "CountryOrRegion"
-msgstr "국가/지역"
+msgstr "국가또는지역"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.business.Tables.mailinglist.Fields.countryorregion.ShortName
 msgid  "CountryReg"
@@ -669,7 +669,7 @@ msgstr "휴대폰번호"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.business.Tables.mailinglist.Fields.mobilenumber.ShortName
 msgid  "MobileNo"
-msgstr "휴대폰번호!"
+msgstr "휴대폰번호"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.business.Tables.mailinglist.Fields.emailaddress.Name
 msgid  "EmailAddress"
@@ -737,7 +737,7 @@ msgstr "가입금지불일"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.business.Tables.mailinglist.Fields.duesamount.Name
 msgid  "DuesAmount"
-msgstr "회비"
+msgstr "회비금액"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.business.Tables.mailinglist.Fields.duesamount.ShortName
 msgid  "DuesAmount"
@@ -797,11 +797,11 @@ msgstr "성"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.business.Tables.contacts.Fields.title.Name
 msgid  "Title"
-msgstr "제목"
+msgstr "직급"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.business.Tables.contacts.Fields.title.ShortName
 msgid  "Title"
-msgstr "제목"
+msgstr "직급"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.business.Tables.contacts.Fields.address.Name
 msgid  "Address"
@@ -909,11 +909,11 @@ msgstr "결혼상태"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.business.Tables.contacts.Fields.spousename.Name
 msgid  "SpouseName"
-msgstr "배우자명"
+msgstr "배우자이름"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.business.Tables.contacts.Fields.spousename.ShortName
 msgid  "SpouseName"
-msgstr "배우자이름"
+msgstr "배우자명"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.business.Tables.contacts.Fields.spousesinterests.Name
 msgid  "SpousesInterests"
@@ -933,7 +933,7 @@ msgstr "연락담당자관심분야"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.business.Tables.contacts.Fields.childrennames.Name
 msgid  "ChildrenNames"
-msgstr "자녀이름"
+msgstr "자녀들이름"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.business.Tables.contacts.Fields.childrennames.ShortName
 msgid  "ChildName"
@@ -1093,7 +1093,7 @@ msgstr "직원"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.business.Tables.employees.Fields.employeeID.Name
 msgid  "EmployeeID"
-msgstr "직원작업ID"
+msgstr "직원ID"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.business.Tables.employees.Fields.employeeID.ShortName
 msgid  "EmployeeID"
@@ -1293,11 +1293,11 @@ msgstr "감독자ID"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.business.Tables.employees.Fields.spousename.Name
 msgid  "SpouseName"
-msgstr "배우자명"
+msgstr "배우자이름"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.business.Tables.employees.Fields.spousename.ShortName
 msgid  "SpouseName"
-msgstr "배우자이름"
+msgstr "배우자명"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.business.Tables.employees.Fields.officelocation.Name
 msgid  "OfficeLocation"
@@ -1353,7 +1353,7 @@ msgstr "직원ID"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.business.Tables.orders.Fields.orderdate.Name
 msgid  "OrderDate"
-msgstr "주문일"
+msgstr "주문날짜"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.business.Tables.orders.Fields.orderdate.ShortName
 msgid  "OrderDate"
@@ -1437,15 +1437,15 @@ msgstr "발송전화번호"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.business.Tables.orders.Fields.shipphonenumber.ShortName
 msgid  "ShipPhonNo"
-msgstr "발송자전화번호"
+msgstr "발송전화번호"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.business.Tables.orders.Fields.shipdate.Name
 msgid  "ShipDate"
-msgstr "발송일"
+msgstr "발송날짜"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.business.Tables.orders.Fields.shipdate.ShortName
 msgid  "ShipDate"
-msgstr "발송날짜"
+msgstr "발송일"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.business.Tables.orders.Fields.shippingmethodID.Name
 msgid  "ShippingMethodID"
@@ -1457,11 +1457,11 @@ msgstr "발송방법ID"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.business.Tables.orders.Fields.freightcharge.Name
 msgid  "FreightCharge"
-msgstr "운송료"
+msgstr "운송요금"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.business.Tables.orders.Fields.freightcharge.ShortName
 msgid  "FreightCharge"
-msgstr "화물요금"
+msgstr "운송료"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.business.Tables.orders.Fields.salestaxrate.Name
 msgid  "SalesTaxRate"
@@ -1781,11 +1781,11 @@ msgstr "판매원"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.business.Tables.invoices.Fields.shipdate.Name
 msgid  "ShipDate"
-msgstr "발송일"
+msgstr "발송날짜"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.business.Tables.invoices.Fields.shipdate.ShortName
 msgid  "ShipDate"
-msgstr "발송날짜"
+msgstr "발송일"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.business.Tables.invoices.Fields.shippedto.Name
 msgid  "ShippedTo"
@@ -1949,19 +1949,19 @@ msgstr "직원ID"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.business.Tables.projects.Fields.begindate.Name
 msgid  "BeginDate"
-msgstr "시작일"
+msgstr "시작날짜"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.business.Tables.projects.Fields.begindate.ShortName
 msgid  "BeginDate"
-msgstr "시작날짜"
+msgstr "시작일"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.business.Tables.projects.Fields.enddate.Name
 msgid  "EndDate"
-msgstr "종료일"
+msgstr "종료날짜"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.business.Tables.projects.Fields.enddate.ShortName
 msgid  "EndDate"
-msgstr "종료날짜"
+msgstr "종료일"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.business.Tables.events.Name
 msgid  "Events"
@@ -1977,7 +1977,7 @@ msgstr "이벤트ID"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.business.Tables.events.Fields.eventname.Name
 msgid  "EventName"
-msgstr "이벤트명"
+msgstr "이벤트이름"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.business.Tables.events.Fields.eventname.ShortName
 msgid  "EventName"
@@ -2025,7 +2025,7 @@ msgstr "위치"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.business.Tables.events.Fields.begindate.Name
 msgid  "BeginDate"
-msgstr "시작일"
+msgstr "시작날짜"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.business.Tables.events.Fields.begindate.ShortName
 msgid  "BeginDate"
@@ -2041,11 +2041,11 @@ msgstr "시작시간"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.business.Tables.events.Fields.enddate.Name
 msgid  "EndDate"
-msgstr "종료일"
+msgstr "종료날짜"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.business.Tables.events.Fields.enddate.ShortName
 msgid  "EndDate"
-msgstr "종료날짜"
+msgstr "종료일"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.business.Tables.events.Fields.endtime.Name
 msgid  "EndTime"
@@ -2173,7 +2173,7 @@ msgstr "총금액"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.business.Tables.reservations.Fields.amountpaid.Name
 msgid  "AmountPaid"
-msgstr "지불금액"
+msgstr "지불된금액"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.business.Tables.reservations.Fields.amountpaid.ShortName
 msgid  "AmountPaid"
@@ -2233,7 +2233,7 @@ msgstr "직원ID"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.business.Tables.timebilled.Fields.billingdate.Name
 msgid  "BillingDate"
-msgstr "대금청구일"
+msgstr "대금청구날짜"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.business.Tables.timebilled.Fields.billingdate.ShortName
 msgid  "BillingDate"
@@ -2409,7 +2409,7 @@ msgstr "추적코드"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.business.Tables.deliveries.Fields.shipdate.Name
 msgid  "ShipDate"
-msgstr "발송일"
+msgstr "발송날짜"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.business.Tables.deliveries.Fields.shipdate.ShortName
 msgid  "ShipDate"
@@ -2653,7 +2653,7 @@ msgstr "바코드번호"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.business.Tables.assets.Fields.dateacquired.Name
 msgid  "DateAcquired"
-msgstr "신청일"
+msgstr "신청날짜"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.business.Tables.assets.Fields.dateacquired.ShortName
 msgid  "DateAcquir"
@@ -3101,7 +3101,7 @@ msgstr "결혼상태"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.private.Tables.addresses.Fields.spousename.Name
 msgid  "SpouseName"
-msgstr "배우자명"
+msgstr "배우자이름"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.private.Tables.addresses.Fields.spousename.ShortName
 msgid  "SpouseName"
@@ -3557,11 +3557,11 @@ msgstr "사진ID"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.private.Tables.photographs.Fields.filmID.Name
 msgid  "FilmID"
-msgstr "필름ID"
+msgstr "FilmID"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.private.Tables.photographs.Fields.filmID.ShortName
 msgid  "FilmID"
-msgstr "필름ID"
+msgstr "FilmID"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.private.Tables.photographs.Fields.datetaken.Name
 msgid  "DateTaken"
@@ -3781,11 +3781,11 @@ msgstr "제작자"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.private.Tables.dvdcollection.Fields.releaseyear.Name
 msgid  "ReleaseYear"
-msgstr "발매연도"
+msgstr "개봉연도"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.private.Tables.dvdcollection.Fields.releaseyear.ShortName
 msgid  "ReleasYear"
-msgstr "발매연도"
+msgstr "개봉연도"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.private.Tables.dvdcollection.Fields.rating.Name
 msgid  "Rating"
@@ -3813,7 +3813,7 @@ msgstr "길이"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.private.Tables.dvdcollection.Fields.dateacquired.Name
 msgid  "DateAcquired"
-msgstr "신청날짜"
+msgstr "신청일"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.private.Tables.dvdcollection.Fields.dateacquired.ShortName
 msgid  "DateAcquir"
@@ -3837,11 +3837,11 @@ msgstr "구매가격"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.private.Tables.dvdcollection.Fields.review.Name
 msgid  "Review"
-msgstr "음반평"
+msgstr "영화평"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.private.Tables.dvdcollection.Fields.review.ShortName
 msgid  "Review"
-msgstr "음반평"
+msgstr "영화평"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.private.Tables.dvdcollection.Fields.notes.Name
 msgid  "Notes"
@@ -9613,7 +9613,7 @@ msgstr "은은한 효과"
 
 #: registry/data/org/openoffice/Office/UI/Effects.xcu#Effects.UserInterface.Properties.linesandcurves.Label
 msgid  "Lines and Curves"
-msgstr " 직선 및 곡선 경로"
+msgstr "직선 및 곡선 경로"
 
 #: registry/data/org/openoffice/Office/UI/Effects.xcu#Effects.UserInterface.Properties.vertical.Label
 msgid  "Vertical"
@@ -12021,7 +12021,7 @@ msgstr ""
 
 #: registry/data/org/openoffice/Office/UI/GenericCommands.xcu#GenericCommands.UserInterface.Commands..uno:AlignCenter.Label
 msgid  "Centered"
-msgstr "가운데"
+msgstr "가운데 맞춤"
 
 #: registry/data/org/openoffice/Office/UI/GenericCommands.xcu#GenericCommands.UserInterface.Commands..uno:AlignHorizontalCenter.Label
 msgid  "Align Center Horizontally"
@@ -12249,7 +12249,7 @@ msgstr "실린더"
 
 #: registry/data/org/openoffice/Office/UI/GenericCommands.xcu#GenericCommands.UserInterface.Commands..uno:BasicShapes.circle.Label
 msgid  "Circle"
-msgstr "원"
+msgstr "원형"
 
 #: registry/data/org/openoffice/Office/UI/GenericCommands.xcu#GenericCommands.UserInterface.Commands..uno:BasicShapes.circle-pie.Label
 msgid  "Circle Pie"
@@ -12321,7 +12321,7 @@ msgstr "모서리가 둥근 정사각형"
 
 #: registry/data/org/openoffice/Office/UI/GenericCommands.xcu#GenericCommands.UserInterface.Commands..uno:BasicShapes.round-rectangle.Label
 msgid  "Rectangle, Rounded"
-msgstr "모서리를 둥글린 직사각형"
+msgstr "모서리가 둥근 직사각형"
 
 #: registry/data/org/openoffice/Office/UI/GenericCommands.xcu#GenericCommands.UserInterface.Commands..uno:BasicShapes.trapezoid.Label
 msgid  "Trapezoid"
@@ -12413,7 +12413,7 @@ msgstr ""
 
 #: registry/data/org/openoffice/Office/UI/GenericCommands.xcu#GenericCommands.UserInterface.Commands..uno:CalloutShapes.Label
 msgid  "Callouts"
-msgstr "범례"
+msgstr "설명 도구"
 
 #: registry/data/org/openoffice/Office/UI/GenericCommands.xcu#GenericCommands.UserInterface.Commands..uno:CalloutShapes.cloud-callout.Label
 msgid  "Cloud"
@@ -14861,7 +14861,7 @@ msgstr "텍스트 문서 옵션"
 
 #: registry/data/org/openoffice/Office/UI/GenericCommands.xcu#GenericCommands.UserInterface.Commands..uno:SwitchControlDesignMode.Label
 msgid  "Design Mode On/Off"
-msgstr "디자인 모드 적용/해제"
+msgstr "디자인 모드 적용/적용 안함"
 
 #: registry/data/org/openoffice/Office/UI/GenericCommands.xcu#GenericCommands.UserInterface.Commands..uno:SwitchXFormsDesignMode.Label
 msgid  "Design Mode On/Off"

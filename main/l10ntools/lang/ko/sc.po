@@ -2117,7 +2117,7 @@ msgstr "텍스트 속성"
 
 #: source/ui/pagedlg/hfedtdlg.src#RID_HFBASE.BTN_FILE.ImageButton.QuickHelpText
 msgid  "Title"
-msgstr "제목"
+msgstr "파일 이름"
 
 #: source/ui/pagedlg/hfedtdlg.src#RID_HFBASE.RID_POPUP_FCOMMAND.FILE_COMMAND_TITEL.MenuItem.Text
 msgid  "Title"
@@ -5657,7 +5657,7 @@ msgstr "월의 날짜를 정수로 나타내는 순차적 날짜(1-31)를 구합
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_GET_DAY.2.String.Text
 msgid  "Number"
-msgstr "개수"
+msgstr "숫자"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_GET_DAY.3.String.Text
 msgid  "The internal number for the date."
@@ -8069,7 +8069,7 @@ msgstr "선형 회귀의 매개 변수를 배열 형태로 계산합니다."
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_RGP.2.String.Text
 msgid  "data_Y"
-msgstr "The Y data array."
+msgstr "data_Y"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_RGP.3.String.Text
 msgid  "The Y data array."
@@ -8881,7 +8881,7 @@ msgstr "누적"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_POISSON_DIST.7.String.Text
 msgid  "0 or FALSE calculates the probability density function. Any other value or TRUE or omitted calculates the cumulative distribution function."
-msgstr "0 이나 FALSE 값이면 확률 밀도 함수를 계산합니다.다른 값이나 TRUE, 혹은 빈 값이면 누적 분포 함수를 계산합니다."
+msgstr "0 이나 FALSE 값이면 확률 밀도 함수를 계산합니다. 다른 값이나 TRUE, 혹은 빈 값이면 누적 분포 함수를 계산합니다."
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_NORM_DIST.1.String.Text
 msgid  "Values of the normal distribution."
@@ -9061,7 +9061,7 @@ msgstr "C"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_EXP_DIST.7.String.Text
 msgid  "Cumulated. C=0 calculates the density function, C=1 the distribution."
-msgstr "누적. C=0인 경우에는 밀도 함수를, C=1인 경우에는 분포를 계산합니다."
+msgstr "누적 C=0인 경우에는 밀도 함수를, C=1인 경우에는 분포를 계산합니다."
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_GAMMA_DIST.1.String.Text
 msgid  "Returns the value of the probability density function or the cumulative distribution function for the Gamma distribution."
@@ -12981,7 +12981,7 @@ msgstr "이하"
 
 #: source/ui/src/condfrmt.src#RID_SCDLG_CONDFORMAT.LB_COND1_2.Default.StringList.item
 msgid  "greater than or equal to"
-msgstr "크거나 지정한 조건과 같음"
+msgstr "이상"
 
 #: source/ui/src/condfrmt.src#RID_SCDLG_CONDFORMAT.LB_COND1_2.Default.StringList.item
 msgid  "not equal to"
@@ -12989,11 +12989,11 @@ msgstr "지정한 조건과 다름"
 
 #: source/ui/src/condfrmt.src#RID_SCDLG_CONDFORMAT.LB_COND1_2.Default.StringList.item
 msgid  "between"
-msgstr "다음 날짜 사이"
+msgstr "다음 사이임"
 
 #: source/ui/src/condfrmt.src#RID_SCDLG_CONDFORMAT.LB_COND1_2.Default.StringList.item
 msgid  "not between"
-msgstr "지정한 값 이외"
+msgstr "사이가 아님"
 
 #: source/ui/src/condfrmt.src#RID_SCDLG_CONDFORMAT.RB_COND1_1.ImageButton.QuickHelpText
 msgid  "Shrink"
@@ -13057,7 +13057,7 @@ msgstr "다음 날짜 사이"
 
 #: source/ui/src/condfrmt.src#RID_SCDLG_CONDFORMAT.LB_COND2_2.Default.StringList.item
 msgid  "not between"
-msgstr "지정한 범위 이외"
+msgstr "지정한 값 이외"
 
 #: source/ui/src/condfrmt.src#RID_SCDLG_CONDFORMAT.RB_COND2_1.ImageButton.QuickHelpText
 msgid  "Shrink"

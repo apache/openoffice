@@ -1509,7 +1509,7 @@ msgstr "Statws anhysbys"
 
 #: source/ui/miscdlgs/retypepassdlg.src#RID_SCDLG_RETYPEPASS.BTN_RETYPE_DOC.PushButton.Text
 msgid  "Re-type"
-msgstr "Aildeipio"
+msgstr "Ail deipio"
 
 #: source/ui/miscdlgs/retypepassdlg.src#RID_SCDLG_RETYPEPASS.FL_SHEET.FixedLine.Text
 msgid  "Sheet protection"
@@ -1525,7 +1525,7 @@ msgstr "Statws anhysbys"
 
 #: source/ui/miscdlgs/retypepassdlg.src#RID_SCDLG_RETYPEPASS.BTN_RETYPE_SHEET1.PushButton.Text
 msgid  "Re-type"
-msgstr "Ail deipio"
+msgstr "Aildeipio"
 
 #: source/ui/miscdlgs/retypepassdlg.src#RID_SCDLG_RETYPEPASS.FT_SHEETNAME2.FixedText.Text
 msgid  "Sheet2"
@@ -2117,7 +2117,7 @@ msgstr "Priodweddau Testun"
 
 #: source/ui/pagedlg/hfedtdlg.src#RID_HFBASE.BTN_FILE.ImageButton.QuickHelpText
 msgid  "Title"
-msgstr "Teitl"
+msgstr "Enw Ffeil"
 
 #: source/ui/pagedlg/hfedtdlg.src#RID_HFBASE.RID_POPUP_FCOMMAND.FILE_COMMAND_TITEL.MenuItem.Text
 msgid  "Title"
@@ -4813,7 +4813,7 @@ msgstr "Lleiaf %"
 
 #: source/ui/src/filter.src#RID_SCDLG_FILTER.LB_COND1.Default.stringlist.item
 msgid  "Contains"
-msgstr "Cynnwys"
+msgstr "Yn cynnwys"
 
 #: source/ui/src/filter.src#RID_SCDLG_FILTER.LB_COND1.Default.stringlist.item
 msgid  "Does not contain"
@@ -4877,7 +4877,7 @@ msgstr "Lleiaf %"
 
 #: source/ui/src/filter.src#RID_SCDLG_FILTER.LB_COND2.Default.stringlist.item
 msgid  "Contains"
-msgstr "Cynnwys"
+msgstr "Yn cynnwys"
 
 #: source/ui/src/filter.src#RID_SCDLG_FILTER.LB_COND2.Default.stringlist.item
 msgid  "Does not contain"
@@ -8881,7 +8881,7 @@ msgstr "Cronnus"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_POISSON_DIST.7.String.Text
 msgid  "0 or FALSE calculates the probability density function. Any other value or TRUE or omitted calculates the cumulative distribution function."
-msgstr "Mae 0 neu FALSE yn cyfrifo swyddogaeth dwysedd tebygolrwydd. Bydd unrhyw werth arall neu TRUE neu hepgor yn cyfrifo swyddogaeth dosbarthiad cronnus."
+msgstr "Mae 0 neu gau yn cyfrifo swyddogaeth dwysedd tebygolrwydd. Bydd unrhyw werth arall neu TRUE neu hepgor yn cyfrifo swyddogaeth dosbarthiad cronnus."
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_NORM_DIST.1.String.Text
 msgid  "Values of the normal distribution."
@@ -9393,7 +9393,7 @@ msgstr "degrees_freedom_2"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_F_DIST.7.String.Text
 msgid  "The degrees of freedom in the denominator of the F distribution."
-msgstr "Graddau o ryddid enwadur y dosbarthiad F."
+msgstr "Graddau o ryddid y dosbarthiad T."
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_F_INV.1.String.Text
 msgid  "Values of the inverse F distribution."
@@ -9457,7 +9457,7 @@ msgstr "Y gwerth y mae'r ffwythiant dwysedd tebygolrwydd neu ffwythiant dosrania
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_CHISQ_DIST.4.String.Text
 msgid  "Degrees of Freedom"
-msgstr "Graddau o Ryddid"
+msgstr "Graddau Rhyddid"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_CHISQ_DIST.5.String.Text
 msgid  "The degrees of freedom of the chi-square distribution."
@@ -10617,7 +10617,7 @@ msgstr "testun"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_VALUE.3.String.Text
 msgid  "The text to be converted to a number."
-msgstr "Y testun i'w drosi'n rhif."
+msgstr "Trosi testun i rif."
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_TEXT.1.String.Text
 msgid  "Converts a number to text according to a given format."
@@ -10909,7 +10909,7 @@ msgstr "gwerth"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_CONVERT.3.String.Text
 msgid  "The value to be converted."
-msgstr "Gwerth i'w drosi."
+msgstr "Y gwerth i'w drosi."
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_CONVERT.4.String.Text
 msgid  "text"
@@ -12041,7 +12041,7 @@ msgstr ">="
 
 #: source/ui/src/optsolver.src#RID_SCDLG_OPTSOLVER.LB_OP1.Default.StringList.item
 msgid  "Integer"
-msgstr "Cyfanrif"
+msgstr "&Cyfanrif"
 
 #: source/ui/src/optsolver.src#RID_SCDLG_OPTSOLVER.LB_OP1.Default.StringList.item
 msgid  "Binary"
@@ -12249,7 +12249,7 @@ msgstr "~Dileu Sylw"
 
 #: source/ui/src/popup.src#RID_POPUP_CELLS.FID_NOTE_VISIBLE.MenuItem.Text
 msgid  "Sho~w Comment"
-msgstr "Da~ngos Sylw"
+msgstr "D~angos Sylw"
 
 #: source/ui/src/popup.src#RID_POPUP_CELLS.SID_CUT.MenuItem.Text
 msgid  "Cu~t"
@@ -12985,7 +12985,7 @@ msgstr "mwy na neu gydradd â"
 
 #: source/ui/src/condfrmt.src#RID_SCDLG_CONDFORMAT.LB_COND1_2.Default.StringList.item
 msgid  "not equal to"
-msgstr "heb fod yn hafal â"
+msgstr "heb fod yn gydradd â"
 
 #: source/ui/src/condfrmt.src#RID_SCDLG_CONDFORMAT.LB_COND1_2.Default.StringList.item
 msgid  "between"

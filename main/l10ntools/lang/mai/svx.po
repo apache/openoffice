@@ -373,7 +373,7 @@ msgstr "इन्टरनेट पट्टी"
 
 #: inc/globlmn_tmpl.hrc#SID_TOGGLESTATUSBAR.#define.Text
 msgid  "~Status Bar"
-msgstr "प्रस्थिति पट्टी (~S)"
+msgstr "स्थिति पट्टी (~S)"
 
 #: inc/globlmn_tmpl.hrc#SID_SHOW_IME_STATUS_WINDOW.#define.Text
 msgid  "~Input Method Status"
@@ -965,15 +965,15 @@ msgstr "शीर्षटीका शुरु"
 
 #: source/dialog/hdft.src#RID_SVXPAGE_HEADER.CB_SHARED.CheckBox.Text
 msgid  "Same ~content left/right"
-msgstr "समान सामग्री बामाँ/दहिन्ना"
+msgstr "समान सामग्री बामाँ/दाहिनाँ (~c)"
 
 #: source/dialog/hdft.src#RID_SVXPAGE_HEADER.FT_DIST.FixedText.Text
 msgid  "~Spacing"
-msgstr "स्थान देनाइ"
+msgstr "स्थान देनाइ (~S)"
 
 #: source/dialog/hdft.src#RID_SVXPAGE_HEADER.CB_DYNSPACING.CheckBox.Text
 msgid  "Use d~ynamic spacing"
-msgstr "चालू स्थान प्रयुक्त (~y)"
+msgstr "गतिशील स्थान प्रयुक्त (~y)"
 
 #: source/dialog/hdft.src#RID_SVXPAGE_HEADER.FT_HEIGHT.FixedText.Text
 msgid  "~Height"
@@ -981,7 +981,7 @@ msgstr "उँचाइ (~H)"
 
 #: source/dialog/hdft.src#RID_SVXPAGE_HEADER.CB_HEIGHT_DYN.CheckBox.Text
 msgid  "~AutoFit height"
-msgstr "उँचाइ अपने फिट करू (~A)"
+msgstr "उँचाइसँ ऑटोफिट (~A)"
 
 #: source/dialog/hdft.src#RID_SVXPAGE_HEADER.FL_FRAME.FixedLine.Text
 msgid  "Header"
@@ -1253,7 +1253,7 @@ msgstr ""
 
 #: source/dialog/docrecovery.src#RID_SVXPAGE_DOCRECOVERY_SAVE.FT_SAVE_TITLE.FixedText.Text
 msgid  "%PRODUCTNAME Document Recovery"
-msgstr "%PRODUCTNAME दस्तावेज प्राप्ति"
+msgstr "%PRODUCTNAME दस्तावेज वापसी"
 
 #: source/dialog/docrecovery.src#RID_SVXPAGE_DOCRECOVERY_SAVE.FT_SAVE_DESCR.FixedText.Text
 msgid  "Due to an unexpected error, %PRODUCTNAME crashed. All the files you were working on will now be saved. The next time %PRODUCTNAME is launched, your files will be recovered automatically."
@@ -1893,23 +1893,23 @@ msgstr "बामाँ किनारक रेखा"
 
 #: source/dialog/frmsel.src#RID_SVXSTR_BORDER_CONTROL.ARR_TEXTS.2.ItemList.item
 msgid  "Right border line"
-msgstr "दहिन्ना किनार रेखा"
+msgstr "दहिन्ना किनारक रेखा"
 
 #: source/dialog/frmsel.src#RID_SVXSTR_BORDER_CONTROL.ARR_TEXTS.3.ItemList.item
 msgid  "Top border line"
-msgstr "शीर्ष किनार रेखा"
+msgstr "उप्पर किनारक रेखा"
 
 #: source/dialog/frmsel.src#RID_SVXSTR_BORDER_CONTROL.ARR_TEXTS.4.ItemList.item
 msgid  "Bottom border line"
-msgstr "तल किनार रेखा"
+msgstr "तल किनारक रेखा"
 
 #: source/dialog/frmsel.src#RID_SVXSTR_BORDER_CONTROL.ARR_TEXTS.5.ItemList.item
 msgid  "Horizontal border line"
-msgstr "क्षैतिज किनार रेखा"
+msgstr "क्षैतिज किनारक रेखा"
 
 #: source/dialog/frmsel.src#RID_SVXSTR_BORDER_CONTROL.ARR_TEXTS.6.ItemList.item
 msgid  "Vertical border line"
-msgstr "लंबवत किनार रेखा"
+msgstr "लंबवत किनारक रेखा"
 
 #: source/dialog/frmsel.src#RID_SVXSTR_BORDER_CONTROL.ARR_TEXTS.7.ItemList.item
 msgid  "Diagonal border line from top left to bottom right"
@@ -1917,7 +1917,7 @@ msgstr "उप्पर बामाँसँ नीच्चाँ दहिन
 
 #: source/dialog/frmsel.src#RID_SVXSTR_BORDER_CONTROL.ARR_TEXTS.8.ItemList.item
 msgid  "Diagonal border line from bottom left to top right"
-msgstr "नीच्चाँ बामाँसँ उप्पर दहिन्ना तक तीर्यक किनारक रेखा"
+msgstr "तलवर्ती बामाँसँ शीर्ष दहिन्ना तक विकर्णी किनार रेखा"
 
 #: source/dialog/frmsel.src#RID_SVXSTR_BORDER_CONTROL.ARR_DESCRIPTIONS.0.ItemList.item
 msgid  "Border setting"
@@ -2689,7 +2689,7 @@ msgstr "लगातार"
 
 #: source/dialog/sdstring.src#RID_SVXSTR_GRADIENT.String.Text
 msgid  "Gradient"
-msgstr "झुकाव "
+msgstr "झुकाव"
 
 #: source/dialog/sdstring.src#RID_SVXSTR_BITMAP.String.Text
 msgid  "Bitmap"
@@ -2733,7 +2733,7 @@ msgstr "हरिअर"
 
 #: source/dialog/sdstring.src#RID_SVXSTR_CYAN.String.Text
 msgid  "Turquoise"
-msgstr "टॉरक्लाइज"
+msgstr "टारक्वाइज"
 
 #: source/dialog/sdstring.src#RID_SVXSTR_RED.String.Text
 msgid  "Red"
@@ -3921,7 +3921,7 @@ msgstr "चमकीलापन"
 
 #: source/engine3d/float3d.src#RID_SVXFLOAT_3D.BTN_TEXTURE.ButtonImage.QuickHelpText
 msgid  "Textures"
-msgstr "उभारसभ"
+msgstr "सँरचना"
 
 #: source/engine3d/float3d.src#RID_SVXFLOAT_3D.BTN_MATERIAL.ButtonImage.QuickHelpText
 msgid  "Material"
@@ -5025,7 +5025,7 @@ msgstr "जोड़ू (~A)..."
 
 #: source/form/datanavi.src#RID_SVXWIN_DATANAVIGATOR.MB_MODELS.MID_MODELS_EDIT.MenuItem.Text
 msgid  "~Edit..."
-msgstr "संपादन..."
+msgstr "संपादन करू (~E)..."
 
 #: source/form/datanavi.src#RID_SVXWIN_DATANAVIGATOR.MB_MODELS.MID_MODELS_REMOVE.MenuItem.Text
 msgid  "~Remove"
@@ -5565,7 +5565,7 @@ msgstr "गुण (~i)..."
 
 #: source/gallery2/gallery.src#RID_SVXMN_GALLERY2.MN_ADDMENU.MenuItem.Text
 msgid  "~Insert"
-msgstr "दाखिल करू (~I)"
+msgstr "दिअ' (~I)"
 
 #: source/gallery2/gallery.src#RID_SVXMN_GALLERY2.MN_ADDMENU.MN_ADD.MenuItem.Text
 msgid  "~Copy"
@@ -6141,7 +6141,7 @@ msgstr "नोट"
 
 #: source/items/svxitems.src#RID_SVXITEMS_BRUSHSTYLE_NULL.String.Text
 msgid  "None"
-msgstr "केओ नहि"
+msgstr "कोनो नहि"
 
 #: source/items/svxitems.src#RID_SVXITEMS_BRUSHSTYLE_SOLID.String.Text
 msgid  "Solid"
@@ -6917,7 +6917,7 @@ msgstr "वस्तु घीचू"
 
 #: source/svdraw/svdstr.src#STR_ObjNamePluralNONE.String.Text
 msgid  "draw objects"
-msgstr "वस्तुसभ बनाबू"
+msgstr "वस्तुसभकेँ बनाबू"
 
 #: source/svdraw/svdstr.src#STR_ObjNameSingulGRUP.String.Text
 msgid  "group object"
@@ -7045,7 +7045,7 @@ msgstr "चाप"
 
 #: source/svdraw/svdstr.src#STR_ObjNameSingulCCUT.String.Text
 msgid  "Circle segment"
-msgstr "वृतक खँड"
+msgstr "वृत्त खँड"
 
 #: source/svdraw/svdstr.src#STR_ObjNamePluralCCUT.String.Text
 msgid  "Circle segments"
@@ -7125,7 +7125,7 @@ msgstr "बेजियरक वक्रसभ"
 
 #: source/svdraw/svdstr.src#STR_ObjNameSingulFREELINE.String.Text
 msgid  "Freeform Line"
-msgstr "स्वतँत्रताक पँक्ति"
+msgstr "स्वतँत्र पँक्ति"
 
 #: source/svdraw/svdstr.src#STR_ObjNamePluralFREELINE.String.Text
 msgid  "Freeform Lines"
@@ -8017,7 +8017,7 @@ msgstr "उप्पर"
 
 #: source/svdraw/svdstr.src#STR_ItemValTEXTVADJCENTER.String.Text
 msgid  "Center"
-msgstr "केँद्र"
+msgstr "केंद्र"
 
 #: source/svdraw/svdstr.src#STR_ItemValTEXTVADJBOTTOM.String.Text
 msgid  "Bottom"
@@ -8029,7 +8029,7 @@ msgstr "सम्पूर्ण ऊँचाइक उपयोग करू"
 
 #: source/svdraw/svdstr.src#STR_ItemValTEXTVADJSTRETCH.String.Text
 msgid  "Stretched"
-msgstr "घीँचल"
+msgstr "घींचल"
 
 #: source/svdraw/svdstr.src#STR_ItemValTEXTHADJLEFT.String.Text
 msgid  "Left"
@@ -8233,7 +8233,7 @@ msgstr "स्व रेखा नमाइ"
 
 #: source/svdraw/svdstr.src#STR_ItemNam_ECKENRADIUS.String.Text
 msgid  "Corner radius"
-msgstr "कोनाकेँ त्रिज्या"
+msgstr "कोणीय त्रिज्या"
 
 #: source/svdraw/svdstr.src#STR_ItemNam_TEXT_LEFTDIST.String.Text
 msgid  "Left border spacing"
@@ -8277,7 +8277,7 @@ msgstr "अधिकतम ढ़ांचा चओड़ाइ"
 
 #: source/svdraw/svdstr.src#STR_ItemNam_TEXT_VERTADJUST.String.Text
 msgid  "Vertical text anchor"
-msgstr "लँबवत पाठक एँकर"
+msgstr "लंबवत पाठक एँकर"
 
 #: source/svdraw/svdstr.src#STR_ItemNam_TEXT_HORZADJUST.String.Text
 msgid  "Horizontal text anchor"
@@ -8317,11 +8317,11 @@ msgstr "पारदर्शिता"
 
 #: source/svdraw/svdstr.src#STR_ItemNam_GRAFINVERT.String.Text
 msgid  "Invert"
-msgstr "उनटल"
+msgstr "उनटू"
 
 #: source/svdraw/svdstr.src#STR_ItemNam_GRAFMODE.String.Text
 msgid  "Graphics mode"
-msgstr "आलेखी मोड"
+msgstr "आलेखीय मोड"
 
 #: source/svdraw/svdstr.src#STR_ItemNamSET_MISC.String.Text
 msgid  "Various attributes"
@@ -8701,7 +8701,7 @@ msgstr "लेजन्ड निकास संरेखण"
 
 #: source/svdraw/svdstr.src#SIP_SA_CAPTIONESCISREL.String.Text
 msgid  "Relative exit legend"
-msgstr "सापेक्षिक निकास मोड"
+msgstr "सापेक्षिक निकासक मोड"
 
 #: source/svdraw/svdstr.src#SIP_SA_CAPTIONESCREL.String.Text
 msgid  "Relative exit legend"
@@ -9705,7 +9705,7 @@ msgstr ""
 
 #: source/tbxctrls/lboxctrl.src#RID_SVXSTR_NUM_UNDO_ACTIONS.String.Text
 msgid  "Actions to undo: $(ARG1)"
-msgstr "वापस कएनिहार काज: $(ARG1)"
+msgstr "वापस लेनिहार काज: $(ARG1)"
 
 #: source/tbxctrls/lboxctrl.src#RID_SVXSTR_NUM_UNDO_ACTION.String.Text
 msgid  "Actions to undo: $(ARG1)"
@@ -10033,8 +10033,8 @@ msgstr ""
 
 #: source/unodialogs/textconversiondlgs/chinese_direction_tmpl.hrc#DIRECTION_RADIOBUTTONS( D_XPOS, D_YPOS, D_FULLWIDTH ).RB_TO_SIMPLIFIED.RadioButton.Text
 msgid  "~Traditional Chinese to simplified Chinese"
-msgstr "पारंपरिक चीनीसँ सरल चीनी (~T)"
+msgstr ""
 
 #: source/unodialogs/textconversiondlgs/chinese_direction_tmpl.hrc#DIRECTION_RADIOBUTTONS( D_XPOS, D_YPOS, D_FULLWIDTH ).RB_TO_TRADITIONAL.RadioButton.Text
 msgid  "~Simplified Chinese to traditional Chinese"
-msgstr "सरल चीनीसँ पारंपरिक चीनी (~S)"
+msgstr ""

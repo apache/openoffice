@@ -449,7 +449,7 @@ msgstr "개체(~O)"
 
 #: inc/globlmn_tmpl.hrc#ITEM_INSERT_OBJECT_MN.SID_MN_INSERT_OBJECT_DLGS.SID_INSERT_OBJECT.MenuItem.Text
 msgid  "~OLE Object..."
-msgstr "~OLE 개체..."
+msgstr "OLE 개체(~O)..."
 
 #: inc/globlmn_tmpl.hrc#ITEM_INSERT_OBJECT_MN.SID_MN_INSERT_OBJECT_DLGS.SID_INSERT_MATH.MenuItem.Text
 msgid  "~Formula..."
@@ -1909,7 +1909,7 @@ msgstr "수평 테두리"
 
 #: source/dialog/frmsel.src#RID_SVXSTR_BORDER_CONTROL.ARR_TEXTS.6.ItemList.item
 msgid  "Vertical border line"
-msgstr "수직 테두리선"
+msgstr "수직 테두리"
 
 #: source/dialog/frmsel.src#RID_SVXSTR_BORDER_CONTROL.ARR_TEXTS.7.ItemList.item
 msgid  "Diagonal border line from top left to bottom right"
@@ -2789,7 +2789,7 @@ msgstr "회청색"
 
 #: source/dialog/sdstring.src#RID_SVXSTR_ORANGE.String.Text
 msgid  "Orange"
-msgstr "오렌지"
+msgstr "주황색"
 
 #: source/dialog/sdstring.src#RID_SVXSTR_ARROW.String.Text
 msgid  "Arrow"
@@ -3925,7 +3925,7 @@ msgstr "질감"
 
 #: source/engine3d/float3d.src#RID_SVXFLOAT_3D.BTN_MATERIAL.ButtonImage.QuickHelpText
 msgid  "Material"
-msgstr "재질"
+msgstr "재료"
 
 #: source/engine3d/float3d.src#RID_SVXFLOAT_3D.BTN_UPDATE.ButtonImage.QuickHelpText
 msgid  "Update"
@@ -3989,7 +3989,7 @@ msgstr "기본"
 
 #: source/engine3d/float3d.src#RID_SVXFLOAT_3D.BTN_NORMALS_OBJ.ButtonImage.QuickHelpText
 msgid  "Object-Specific"
-msgstr "개체 특유의"
+msgstr "개체 특유"
 
 #: source/engine3d/float3d.src#RID_SVXFLOAT_3D.BTN_NORMALS_FLAT.ButtonImage.QuickHelpText
 msgid  "Flat"
@@ -5913,7 +5913,7 @@ msgstr "상대적 글꼴 크기"
 
 #: source/items/svxitems.src#RID_ATTR_NAMES.SID_ATTR_CHAR_COLOR.ItemList.item
 msgid  "Font color"
-msgstr "글꼴 색상"
+msgstr "글꼴 색"
 
 #: source/items/svxitems.src#RID_ATTR_NAMES.SID_ATTR_CHAR_KERNING.ItemList.item
 msgid  "Kerning"
@@ -8185,11 +8185,11 @@ msgstr "투명 그림자"
 
 #: source/svdraw/svdstr.src#STR_ItemNam_SHADOW3D.String.Text
 msgid  "3D shadow"
-msgstr "3Ｄ 그림자"
+msgstr "3D 음영"
 
 #: source/svdraw/svdstr.src#STR_ItemNam_SHADOWPERSP.String.Text
 msgid  "Perspective shadow"
-msgstr "원근감있는 음영"
+msgstr "원근감있는 그림자"
 
 #: source/svdraw/svdstr.src#STR_ItemNam_CAPTIONTYPE.String.Text
 msgid  "Callout type"
@@ -8313,7 +8313,7 @@ msgstr "감마"
 
 #: source/svdraw/svdstr.src#STR_ItemNam_GRAFTRANSPARENCE.String.Text
 msgid  "Transparency"
-msgstr "투명"
+msgstr "투명도"
 
 #: source/svdraw/svdstr.src#STR_ItemNam_GRAFINVERT.String.Text
 msgid  "Invert"
@@ -8481,7 +8481,7 @@ msgstr "채우기 비트맵"
 
 #: source/svdraw/svdstr.src#SIP_XA_FILLTRANSPARENCE.String.Text
 msgid  "Transparency"
-msgstr "투명도"
+msgstr "투명"
 
 #: source/svdraw/svdstr.src#SIP_XA_GRADIENTSTEPCOUNT.String.Text
 msgid  "Number of gradient steps"
@@ -9477,7 +9477,7 @@ msgstr "입체면 남동쪽"
 
 #: source/tbxctrls/extrusioncontrols.src#RID_SVXFLOAT_EXTRUSION_DEPTH.DockingWindow.Text
 msgid  "Extrusion Depth"
-msgstr "입체면 깊이"
+msgstr "입체 면 깊이"
 
 #: source/tbxctrls/extrusioncontrols.src#RID_SVXFLOAT_EXTRUSION_DEPTH.STR_CUSTOM.String.Text
 msgid  "~Custom..."

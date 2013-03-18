@@ -489,7 +489,7 @@ msgstr "Конец"
 
 #: source/ui/dbgui/dpgroupdlg.src#RID_SCDLG_DPNUMGROUP.RB_AUTOEND.RadioButton.Text
 msgid  "A~utomatically"
-msgstr "Автоматически"
+msgstr "Автоматический перенос"
 
 #: source/ui/dbgui/dpgroupdlg.src#RID_SCDLG_DPNUMGROUP.RB_MANEND.RadioButton.Text
 msgid  "Ma~nually at"
@@ -773,7 +773,7 @@ msgstr "Функция"
 
 #: source/ui/dbgui/pvfundlg.src#RID_SCDLG_DPDATAFIELD.FT_NAMELABEL.FixedText.Text
 msgid  "Name:"
-msgstr "Название:"
+msgstr "Поле:"
 
 #: source/ui/dbgui/pvfundlg.src#RID_SCDLG_DPDATAFIELD.FL_DISPLAY.FixedLine.Text
 msgid  "Displayed value"
@@ -2117,7 +2117,7 @@ msgstr "Атрибуты текста"
 
 #: source/ui/pagedlg/hfedtdlg.src#RID_HFBASE.BTN_FILE.ImageButton.QuickHelpText
 msgid  "Title"
-msgstr "Заголовок"
+msgstr "Имя файла"
 
 #: source/ui/pagedlg/hfedtdlg.src#RID_HFBASE.RID_POPUP_FCOMMAND.FILE_COMMAND_TITEL.MenuItem.Text
 msgid  "Title"
@@ -3013,7 +3013,7 @@ msgstr "Промежуточные итоги"
 
 #: source/ui/src/globstr.src#RID_GLOBSTR.STR_UNDO_SORT.String.Text
 msgid  "Sort"
-msgstr "Сортировка"
+msgstr "Сортировать"
 
 #: source/ui/src/globstr.src#RID_GLOBSTR.STR_UNDO_QUERY.String.Text
 msgid  "Filter"
@@ -3597,7 +3597,7 @@ msgstr "Верхний колонтитул"
 
 #: source/ui/src/globstr.src#RID_GLOBSTR.STR_FOOTER.String.Text
 msgid  "Footer"
-msgstr "Нижний колонтитул"
+msgstr "Нижний ~колонтитул"
 
 #: source/ui/src/globstr.src#RID_GLOBSTR.STR_TEXTATTRS.String.Text
 msgid  "Text Attributes"
@@ -5645,7 +5645,7 @@ msgstr "Преобразует дату из текстового формата
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_GET_DATE_VALUE.2.String.Text
 msgid  "text"
-msgstr "Текст"
+msgstr "текст"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_GET_DATE_VALUE.3.String.Text
 msgid  "A text enclosed in quotation marks which returns a date in a %PRODUCTNAME date format."
@@ -5777,7 +5777,7 @@ msgstr "Преобразует время из текстового формат
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_GET_TIME_VALUE.2.String.Text
 msgid  "text"
-msgstr "Текст"
+msgstr "текст"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_GET_TIME_VALUE.3.String.Text
 msgid  "A text enclosed in quotation marks which returns a time in a %PRODUCTNAME time format."
@@ -5853,7 +5853,7 @@ msgstr "Внутреннее числовое представление дат�
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_WEEK.4.String.Text
 msgid  "mode"
-msgstr "способ"
+msgstr "режим"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_WEEK.5.String.Text
 msgid  "Indicates the first day of the week (1 = Sunday, other values = Monday)."
@@ -5877,7 +5877,7 @@ msgstr "Вычисляет текущую стоимость инвестици�
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_BW.2.String.Text
 msgid  "Rate"
-msgstr "Процент"
+msgstr "Ставка"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_BW.3.String.Text
 msgid  "The rate of interest for the period given."
@@ -5893,7 +5893,7 @@ msgstr "Общее число периодов платежей."
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_BW.6.String.Text
 msgid  "PMT"
-msgstr "Выплата"
+msgstr "Платёж"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_BW.7.String.Text
 msgid  "Regular payments. The constant amount of annuity that is paid in each period."
@@ -5901,7 +5901,7 @@ msgstr "Фиксированная сумма платежа за каждый �
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_BW.8.String.Text
 msgid  "FV"
-msgstr "КС"
+msgstr "Остаток"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_BW.9.String.Text
 msgid  "Future value. The value (final value) to be attained after the last payment."
@@ -5913,7 +5913,7 @@ msgstr "Тип"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_BW.11.String.Text
 msgid  "Type = 1 denotes due at the beginning of the period, = 0 at the end."
-msgstr "Тип = 1 означает, что плата производится в начале периода, = 0 - в конце периода."
+msgstr "Срок платежа. Значение 1 указывает на то, что плата производится в начале периода, 0 - в конце периода."
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_ZW.1.String.Text
 msgid  "Future value. Returns the future value of an investment based on regular payments and a constant interest rate."
@@ -5921,11 +5921,11 @@ msgstr "Вычисляет будущее значение вклада с по�
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_ZW.2.String.Text
 msgid  "Rate"
-msgstr "Ставка"
+msgstr "Процент"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_ZW.3.String.Text
 msgid  "The rate of interest per period."
-msgstr "Фиксированная процентная ставка за период."
+msgstr "Процент прибыли за период."
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_ZW.4.String.Text
 msgid  "NPER"
@@ -5933,23 +5933,23 @@ msgstr "КПЕР"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_ZW.5.String.Text
 msgid  "Payment period. The total number of periods in which the annuity (pension) is paid."
-msgstr "Общее количество периодов выплат."
+msgstr "Общее число периодов выплат годовой ренты."
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_ZW.6.String.Text
 msgid  "PMT"
-msgstr "Платеж"
+msgstr "Выплата"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_ZW.7.String.Text
 msgid  "Regular payments. The constant annuity to be paid in each period."
-msgstr "Сумма выплат, выполняемая каждый период."
+msgstr "Выплата, производимая в каждый период и не меняющаяся за все время выплаты ренты."
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_ZW.8.String.Text
 msgid  "PV"
-msgstr "НС"
+msgstr "ТЗ"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_ZW.9.String.Text
 msgid  "Present value. The current value of a series of payments"
-msgstr "Единовременная сумма платежа в начале срока"
+msgstr "Текущее значение или общая сумма всех будущих платежей с настоящего момента"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_ZW.10.String.Text
 msgid  "Type"
@@ -5957,7 +5957,7 @@ msgstr "Тип"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_ZW.11.String.Text
 msgid  "Type = 1 denotes due at the beginning of the period, = 0 at the end."
-msgstr "Срок выплат. Значение 1 указывает на то, что плата производится в начале периода, 0 - в конце периода."
+msgstr "Тип = 1 означает, что плата производится в начале периода, = 0 - в конце периода."
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_ZZR.1.String.Text
 msgid  "Payment period. Calculates the number of payment periods for an investment based on regular payments and a constant interest rate."
@@ -5965,11 +5965,11 @@ msgstr "Вычисляет общее количество периодов вы
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_ZZR.2.String.Text
 msgid  "Rate"
-msgstr "Ставка"
+msgstr "Процент"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_ZZR.3.String.Text
 msgid  "The rate of interest per period."
-msgstr "Процент прибыли за период."
+msgstr "Фиксированная процентная ставка за период."
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_ZZR.4.String.Text
 msgid  "PMT"
@@ -5977,23 +5977,23 @@ msgstr "Выплата"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_ZZR.5.String.Text
 msgid  "Regular payments. The constant annuity to be paid in each period."
-msgstr "Сумма платежа за каждый период."
+msgstr "Сумма выплат, выполняемая каждый период."
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_ZZR.6.String.Text
 msgid  "PV"
-msgstr "Сумма"
+msgstr "НС"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_ZZR.7.String.Text
 msgid  "Present value. The current value of a series of payments"
-msgstr "Основная сумма кредита"
+msgstr "Единовременная сумма платежа в начале срока"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_ZZR.8.String.Text
 msgid  "FV"
-msgstr "Остаток"
+msgstr "КС"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_ZZR.9.String.Text
 msgid  "Future value. The value (end value) to be attained after the final payment."
-msgstr "Остаток средств на конец выплат."
+msgstr "Остаток средств, выплачиваемый в конце срока."
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_ZZR.10.String.Text
 msgid  "Type"
@@ -6001,7 +6001,7 @@ msgstr "Тип"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_ZZR.11.String.Text
 msgid  "Type = 1 denotes due at the beginning of the period, = 0 at the end."
-msgstr "Срок выплат. Значение 1 указывает на то, что плата производится в начале периода,  0 - в конце периода."
+msgstr "Срок выплат. Значение 1 указывает на то, что плата производится в начале периода, 0 - в конце периода."
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_RMZ.1.String.Text
 msgid  "Regular payments. Returns the periodic payment of an annuity, based on regular payments and a fixed periodic interest rate."
@@ -6009,11 +6009,11 @@ msgstr "Возвращает величину периодических вып�
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_RMZ.2.String.Text
 msgid  "Rate"
-msgstr "Процент"
+msgstr "Ставка"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_RMZ.3.String.Text
 msgid  "The rate of interest per period."
-msgstr "Процентная ставка за один период."
+msgstr "Фиксированная процентная ставка за период."
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_RMZ.4.String.Text
 msgid  "NPER"
@@ -6021,23 +6021,23 @@ msgstr "КПЕР"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_RMZ.5.String.Text
 msgid  "Payment period. The total number of periods in which the annuity (pension) is paid."
-msgstr "Общее количество платежей."
+msgstr "Общее количество периодов выплат."
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_RMZ.6.String.Text
 msgid  "PV"
-msgstr "Начало"
+msgstr "Сумма"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_RMZ.7.String.Text
 msgid  "Present value. The current value of a series of payments"
-msgstr "Величина единовременной выплаты в начале срока"
+msgstr "Основная сумма кредита"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_RMZ.8.String.Text
 msgid  "FV"
-msgstr "БЗ"
+msgstr "Остаток"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_RMZ.9.String.Text
 msgid  "Future value. The value (end value) to be attained after the final payment."
-msgstr "Остаток средств в конце выплат."
+msgstr "Остаток средств на конец выплат."
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_RMZ.10.String.Text
 msgid  "Type"
@@ -6045,7 +6045,7 @@ msgstr "Тип"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_RMZ.11.String.Text
 msgid  "Type = 1 denotes due at the beginning of the period, = 0 at the end."
-msgstr "Срок выплат. Значение 1 указывает на то, что плата производится в начале периода, 0 - в конце периода."
+msgstr "Срок выплат. Значение 1 указывает на то, что плата производится в начале периода,  0 - в конце периода."
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_ZINS.1.String.Text
 msgid  "Calculates the constant interest rate of an investment with regular payments."
@@ -6057,7 +6057,7 @@ msgstr "КПЕР"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_ZINS.3.String.Text
 msgid  "Payment period. The total number of periods in which the annuity (pension) is paid."
-msgstr "Общее число периодов выплат годовой ренты."
+msgstr "Общее количество платежей."
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_ZINS.4.String.Text
 msgid  "PMT"
@@ -6069,19 +6069,19 @@ msgstr "Сумма платежа за каждый период."
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_ZINS.6.String.Text
 msgid  "PV"
-msgstr "Сумма"
+msgstr "Начало"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_ZINS.7.String.Text
 msgid  "Present value. The current value of a series of payments"
-msgstr "Текущее значение ряда платежей"
+msgstr "Величина единовременной выплаты в начале срока"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_ZINS.8.String.Text
 msgid  "FV"
-msgstr "БЗ"
+msgstr "Остаток"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_ZINS.9.String.Text
 msgid  "Future value. The value (end value) to be attained after the final payment."
-msgstr "Будущая значение, который нужно достичь после последней выплаты."
+msgstr "Остаток средств в конце выплат."
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_ZINS.10.String.Text
 msgid  "Type"
@@ -6089,7 +6089,7 @@ msgstr "Тип"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_ZINS.11.String.Text
 msgid  "Type = 1 denotes due at the beginning of the period, = 0 at the end."
-msgstr "Срок платежей. Значение 1 указывает на то, что плата производится в начале периода, 0 - в конце периода."
+msgstr "Срок выплат. Значение 1 указывает на то, что плата производится в начале периода,  0 - в конце периода."
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_ZINS.12.String.Text
 msgid  "Guess"
@@ -6109,7 +6109,7 @@ msgstr "Процент"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_ZINS_Z.3.String.Text
 msgid  "The rate of interest per period."
-msgstr "Процентная ставка за период."
+msgstr "Процент прибыли за период."
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_ZINS_Z.4.String.Text
 msgid  "Period"
@@ -6181,11 +6181,11 @@ msgstr "Общее число периодов платежей."
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_KAPZ.8.String.Text
 msgid  "PV"
-msgstr "ТЗ"
+msgstr "Сумма"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_KAPZ.9.String.Text
 msgid  "The present value. The present value or the amount the annuity is currently worth."
-msgstr "Текущая стоимость или общая сумма всех будущих платежей с настоящего момента."
+msgstr "Основная сумма кредита."
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_KAPZ.10.String.Text
 msgid  "FV"
@@ -6229,15 +6229,15 @@ msgstr "ТЗ"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_KUM_KAP_Z.7.String.Text
 msgid  "The present value. The present value or the amount the annuity is currently worth."
-msgstr "Текущее значение инвестиции."
+msgstr "Текущая стоимость или общая сумма всех будущих платежей с настоящего момента."
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_KUM_KAP_Z.8.String.Text
 msgid  "S"
-msgstr "Нач_период"
+msgstr "Н"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_KUM_KAP_Z.9.String.Text
 msgid  "The start period. The first period to be taken into account. A = 1 denotes the very first period."
-msgstr "Номер первого периода, учитываемого в вычислениях. Если нач_период равен 1, то это означает самый первый период."
+msgstr "Номер первого периода, учитываемого в вычислениях. Если Н = 1, то это самый первый период."
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_KUM_KAP_Z.10.String.Text
 msgid  "E"
@@ -6565,7 +6565,7 @@ msgstr "Вычисляет чистую приведённую стоимост�
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_NBW.2.String.Text
 msgid  "RATE"
-msgstr "ПРОЦЕНТ"
+msgstr "Процент"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_NBW.3.String.Text
 msgid  "The rate of discount for one period."
@@ -6689,7 +6689,7 @@ msgstr "БЗ"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_LAUFZ.7.String.Text
 msgid  "The future value of the investment."
-msgstr "Будущее значение вложения."
+msgstr "Будущее значение инвестиции."
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_ZGZ.1.String.Text
 msgid  "Interest. Calculates the interest rate which represents the rate of return from an investment."
@@ -6725,7 +6725,7 @@ msgstr "Возвращает TRUE, если значение является с
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_IS_REF.2.String.Text
 msgid  "value"
-msgstr "Аргумент"
+msgstr "Значение"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_IS_REF.3.String.Text
 msgid  "The value to be tested."
@@ -6737,7 +6737,7 @@ msgstr "Возвращает TRUE, если значение является л
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_IS_ERR.2.String.Text
 msgid  "value"
-msgstr "значение"
+msgstr "Значение"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_IS_ERR.3.String.Text
 msgid  "The value to be tested."
@@ -6749,7 +6749,7 @@ msgstr "Возвращает TRUE, если значение является л
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_IS_ERROR.2.String.Text
 msgid  "value"
-msgstr "значение"
+msgstr "Значение"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_IS_ERROR.3.String.Text
 msgid  "The value to be tested."
@@ -6761,7 +6761,7 @@ msgstr "Возвращает TRUE, если значение является с
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_IS_EMPTY.2.String.Text
 msgid  "value"
-msgstr "значение"
+msgstr "Значение"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_IS_EMPTY.3.String.Text
 msgid  "The value to be tested."
@@ -6773,7 +6773,7 @@ msgstr "Возвращает TRUE, если значение является л
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_IS_LOGICAL.2.String.Text
 msgid  "value"
-msgstr "значение"
+msgstr "Значение"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_IS_LOGICAL.3.String.Text
 msgid  "The value to be tested."
@@ -6785,7 +6785,7 @@ msgstr "Возвращает TRUE, если значением является 
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_IS_NV.2.String.Text
 msgid  "value"
-msgstr "значение"
+msgstr "Значение"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_IS_NV.3.String.Text
 msgid  "The value to be tested."
@@ -6797,7 +6797,7 @@ msgstr "Возвращает TRUE, если значение не являетс
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_IS_NON_STRING.2.String.Text
 msgid  "value"
-msgstr "значение"
+msgstr "Значение"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_IS_NON_STRING.3.String.Text
 msgid  "The value to be tested."
@@ -6809,7 +6809,7 @@ msgstr "Возвращает TRUE, если значение является т
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_IS_STRING.2.String.Text
 msgid  "value"
-msgstr "значение"
+msgstr "Значение"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_IS_STRING.3.String.Text
 msgid  "The value to be tested."
@@ -6821,7 +6821,7 @@ msgstr "Возвращает TRUE, если значение является ч
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_IS_VALUE.2.String.Text
 msgid  "value"
-msgstr "значение"
+msgstr "Значение"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_IS_VALUE.3.String.Text
 msgid  "The value to be tested."
@@ -6833,7 +6833,7 @@ msgstr "Возвращает TRUE, если ячейка является яче
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_IS_FORMULA.2.String.Text
 msgid  "reference"
-msgstr "Ссылка"
+msgstr "ссылка"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_IS_FORMULA.3.String.Text
 msgid  "The cell to be checked."
@@ -6857,7 +6857,7 @@ msgstr "Преобразует аргумент в число."
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_N.2.String.Text
 msgid  "value"
-msgstr "Значение"
+msgstr "Аргумент"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_N.3.String.Text
 msgid  "The value to be interpreted as a number."
@@ -7229,7 +7229,7 @@ msgstr "Вычисляет квадратный корень числа."
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_SQRT.2.String.Text
 msgid  "number"
-msgstr "Число"
+msgstr "число"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_SQRT.3.String.Text
 msgid  "A positive value for which the square root is to be calculated."
@@ -7281,7 +7281,7 @@ msgstr "число 2"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_KOMBIN.5.String.Text
 msgid  "The number of elements selected."
-msgstr "Выбранное число элементов."
+msgstr "Выбранное число объектов из каждой комбинации."
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_KOMBIN_2.1.String.Text
 msgid  "Calculates the number of combinations of elements including repetition."
@@ -7417,7 +7417,7 @@ msgstr "Вычисляет синус данного числа."
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_SIN.2.String.Text
 msgid  "number"
-msgstr "Число"
+msgstr "число"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_SIN.3.String.Text
 msgid  "The angle in radians for which the sine is to be calculated."
@@ -7441,7 +7441,7 @@ msgstr "Вычисляет тангенс числа."
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_TAN.2.String.Text
 msgid  "number"
-msgstr "количество"
+msgstr "число"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_TAN.3.String.Text
 msgid  "The angle in radians for which the tangent is to be calculated."
@@ -7465,7 +7465,7 @@ msgstr "Вычисляет гиперболический синус числа.
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_SIN_HYP.2.String.Text
 msgid  "number"
-msgstr "Количество"
+msgstr "число"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_SIN_HYP.3.String.Text
 msgid  "The value for which the hyperbolic sine is to be calculated."
@@ -7489,7 +7489,7 @@ msgstr "Возвращает гиперболический тангенс чи�
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_TAN_HYP.2.String.Text
 msgid  "number"
-msgstr "количество"
+msgstr "число"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_TAN_HYP.3.String.Text
 msgid  "The value for which the hyperbolic tangent is to be calculated."
@@ -7725,7 +7725,7 @@ msgstr "Отбрасывает дробную часть числа."
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_TRUNC.2.String.Text
 msgid  "number"
-msgstr "количество"
+msgstr "число"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_TRUNC.3.String.Text
 msgid  "The number to be truncated."
@@ -7757,7 +7757,7 @@ msgstr "количество"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_ROUND.5.String.Text
 msgid  "The number of places to which a number is to be rounded."
-msgstr "Количество цифр, до которого округляется число."
+msgstr "Количество десятичных разрядов, до которого нужно округлить число."
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_ROUND_UP.1.String.Text
 msgid  "Rounds a number up to the predefined accuracy."
@@ -7845,7 +7845,7 @@ msgstr "Кратное, до которого требуется округли�
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_CEIL.6.String.Text
 msgid  "Mode"
-msgstr "Режим"
+msgstr "Способ"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_CEIL.7.String.Text
 msgid  "If given and not equal to zero then rounded up according to amount when a negative number and significance."
@@ -7909,7 +7909,7 @@ msgstr "Транспонирование матрицы."
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_MAT_TRANS.2.String.Text
 msgid  "array"
-msgstr "массив"
+msgstr "матрица"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_MAT_TRANS.3.String.Text
 msgid  "The array in which the rows and columns have been transposed."
@@ -7921,7 +7921,7 @@ msgstr "Вычисляет произведение двух матриц."
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_MAT_MULT.2.String.Text
 msgid  "array"
-msgstr "массив"
+msgstr "матрица"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_MAT_MULT.3.String.Text
 msgid  "The first array for the array product."
@@ -7929,7 +7929,7 @@ msgstr "Первая матрица для вычисления произвед
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_MAT_MULT.4.String.Text
 msgid  "array"
-msgstr "массив"
+msgstr "матрица"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_MAT_MULT.5.String.Text
 msgid  "The second array having the same number of rows as the first array has columns."
@@ -7941,7 +7941,7 @@ msgstr "Вычисляет определитель матрицы."
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_MAT_DET.2.String.Text
 msgid  "array"
-msgstr "Массив"
+msgstr "матрица"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_MAT_DET.3.String.Text
 msgid  "The array for which the determinant is to be determined."
@@ -7989,7 +7989,7 @@ msgstr "Вычисляет сумму разностей квадратов эл
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_SUM_X2MY2.2.String.Text
 msgid  "array_x"
-msgstr "массив X"
+msgstr "Массив X"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_SUM_X2MY2.3.String.Text
 msgid  "First array where the square of the arguments are totalled."
@@ -7997,7 +7997,7 @@ msgstr "Первый массив, аргументы которого возв�
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_SUM_X2MY2.4.String.Text
 msgid  "array_y"
-msgstr "массив Y"
+msgstr "Массив Y"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_SUM_X2MY2.5.String.Text
 msgid  "Second array where the square of the arguments is to be subtracted."
@@ -8049,7 +8049,7 @@ msgstr "Возвращает частотное распределение в в
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_FREQUENCY.2.String.Text
 msgid  "data"
-msgstr "Данные"
+msgstr "данные"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_FREQUENCY.3.String.Text
 msgid  "The array of the data."
@@ -8069,19 +8069,19 @@ msgstr "Вычисляет параметры линейной регресси�
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_RGP.2.String.Text
 msgid  "data_Y"
-msgstr "Данные Y"
+msgstr "данные Y"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_RGP.3.String.Text
 msgid  "The Y data array."
-msgstr "Массив данных y."
+msgstr "Массив данных Y."
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_RGP.4.String.Text
 msgid  "data_X"
-msgstr "данные X"
+msgstr "данные Х"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_RGP.5.String.Text
 msgid  "The X data array."
-msgstr "Массив данных Х."
+msgstr "Массив данных X."
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_RGP.6.String.Text
 msgid  "Linear_type"
@@ -8113,7 +8113,7 @@ msgstr "Массив данных Y."
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_RKP.4.String.Text
 msgid  "data_X"
-msgstr "данные X"
+msgstr "данные Х"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_RKP.5.String.Text
 msgid  "The X data array."
@@ -8149,7 +8149,7 @@ msgstr "Массив данных Y."
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_TREND.4.String.Text
 msgid  "data_X"
-msgstr "данные X"
+msgstr "данные Х"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_TREND.5.String.Text
 msgid  "The X data array as the basis for the regression."
@@ -8185,7 +8185,7 @@ msgstr "Массив данных y."
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_GROWTH.4.String.Text
 msgid  "data_X"
-msgstr "данные X"
+msgstr "данные Х"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_GROWTH.5.String.Text
 msgid  "The X data array as the basis for the regression."
@@ -8289,7 +8289,7 @@ msgstr "число "
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_VAR.3.String.Text
 msgid  "Number 1, number 2, ... are 1 to 30 numerical arguments which portray a sample of a population."
-msgstr "Число1, число2, ... от 1 до 30 числовых аргументов, соответствующих выборке."
+msgstr "Число 1, число 2, ... от 1 до 30 числовых аргументов, соответствующих выборке из совокупности."
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_VAR_A.1.String.Text
 msgid  "Returns the variance based on a sample. Text is evaluated as zero."
@@ -8337,7 +8337,7 @@ msgstr "число "
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_ST_DEV.3.String.Text
 msgid  "Number 1, number 2, ... are 1 to 30 numerical arguments which portray a sample of a population."
-msgstr "Число1, число2, ... от 1 до 30 числовых аргументов, соответствующих совокупности."
+msgstr "Число1, число2, ... от 1 до 30 числовых аргументов, соответствующих выборке."
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_ST_DEV_A.1.String.Text
 msgid  "Returns the standard deviation based on a sample. Text is evaluated as zero."
@@ -8549,7 +8549,7 @@ msgstr "Массив данных в выборке."
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_LARGE.4.String.Text
 msgid  "Rank_c"
-msgstr "К"
+msgstr "K"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_LARGE.5.String.Text
 msgid  "The ranking of the value."
@@ -8665,7 +8665,7 @@ msgstr "Массив (диапазон) вероятностей значени�
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_PROB.6.String.Text
 msgid  "Start"
-msgstr "А"
+msgstr "A"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_PROB.7.String.Text
 msgid  "The start of the value interval whose probabilities is to be totalled."
@@ -8673,7 +8673,7 @@ msgstr "Нижняя граница интервала."
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_PROB.8.String.Text
 msgid  "End"
-msgstr "В"
+msgstr "B"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_PROB.9.String.Text
 msgid  "The end of the value interval where the probabilities are to be totalled."
@@ -8725,7 +8725,7 @@ msgstr "число"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_PHI.3.String.Text
 msgid  "The value for which the standard normal distribution is to be calculated."
-msgstr "Значение, для которого вычисляется вероятность."
+msgstr "Значение, для которого вычисляется стандартное нормальное распределение."
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_GAUSS.1.String.Text
 msgid  "Returns the integral values of the standard normal cumulative distribution."
@@ -8849,7 +8849,7 @@ msgstr "Вероятность успеха каждого испытания."
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_KRIT_BINOM.6.String.Text
 msgid  "alpha"
-msgstr "альфа"
+msgstr "Альфа"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_KRIT_BINOM.7.String.Text
 msgid  "The border probability that is attained or exceeded."
@@ -8869,7 +8869,7 @@ msgstr "Значение, для которого вычисляется пуа�
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_POISSON_DIST.4.String.Text
 msgid  "mean"
-msgstr "среднее"
+msgstr "Среднее"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_POISSON_DIST.5.String.Text
 msgid  "Mean. The mean value of the Poisson distribution."
@@ -8905,7 +8905,7 @@ msgstr "Среднее значение. Среднее арифметическ
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_NORM_DIST.6.String.Text
 msgid  "STDEV"
-msgstr "STDEV"
+msgstr "СТАНДОТКЛ"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_NORM_DIST.7.String.Text
 msgid  "Standard deviation. The standard deviation of the normal distribution."
@@ -8933,7 +8933,7 @@ msgstr "Значение, для которого вычисляется рас�
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_NORM_INV.4.String.Text
 msgid  "mean"
-msgstr "среднее"
+msgstr "Среднее"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_NORM_INV.5.String.Text
 msgid  "The mean value. The mean value of the normal distribution."
@@ -9077,7 +9077,7 @@ msgstr "Значение, для которого требуется вычис�
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_GAMMA_DIST.4.String.Text
 msgid  "alpha"
-msgstr "альфа"
+msgstr "Альфа"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_GAMMA_DIST.5.String.Text
 msgid  "The Alpha parameter of the Gamma distribution."
@@ -9085,7 +9085,7 @@ msgstr "Параметр Альфа гамма-распределения."
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_GAMMA_DIST.6.String.Text
 msgid  "beta"
-msgstr "бета"
+msgstr "Бета"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_GAMMA_DIST.7.String.Text
 msgid  "The Beta parameter of the Gamma distribution."
@@ -9113,7 +9113,7 @@ msgstr "Значение вероятности, для которого выч�
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_GAMMA_INV.4.String.Text
 msgid  "alpha"
-msgstr "альфа"
+msgstr "Альфа"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_GAMMA_INV.5.String.Text
 msgid  "The Alpha (shape) parameter of the Gamma distribution."
@@ -9121,7 +9121,7 @@ msgstr "Параметр Альфа (shape) гамма-распределени�
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_GAMMA_INV.6.String.Text
 msgid  "beta"
-msgstr "бета"
+msgstr "Бета"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_GAMMA_INV.7.String.Text
 msgid  "The Beta (scale) parameter of the Gamma distribution."
@@ -9185,11 +9185,11 @@ msgstr "A"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_BETA_DIST.9.String.Text
 msgid  "The starting value for the value interval of the distribution."
-msgstr "Нижняя граница интервала распределения."
+msgstr "Верхняя граница интервала распределения."
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_BETA_DIST.10.String.Text
 msgid  "End"
-msgstr "B"
+msgstr "В"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_BETA_DIST.11.String.Text
 msgid  "The final value for the value interval of the distribution."
@@ -9337,7 +9337,7 @@ msgstr "степени свободы"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_T_DIST.5.String.Text
 msgid  "The degrees of freedom of the T distribution."
-msgstr "Число степеней свободы распределения T."
+msgstr "Количество степеней свободы распределения T."
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_T_DIST.6.String.Text
 msgid  "mode"
@@ -9725,7 +9725,7 @@ msgstr "Массив данных Y."
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_RSQ.4.String.Text
 msgid  "data_X"
-msgstr "данные Х"
+msgstr "данные X"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_RSQ.5.String.Text
 msgid  "The X data array."
@@ -9913,7 +9913,7 @@ msgstr "A1"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_ADDRESS.9.String.Text
 msgid  "The reference style: 0 or FALSE means R1C1 style, any other value or omitted means A1 style."
-msgstr "Стиль ссылок: 0 или FALSE означает стиль R1C1, остальные значения или пропущенное значение означает стиль A1."
+msgstr "Стиль ссылки: 0 или FALSE означает стиль R1C1, любое другое значение или отсутствие значения - стиль A1."
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_ADDRESS.10.String.Text
 msgid  "sheet"
@@ -10513,7 +10513,7 @@ msgstr "найти_текст"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_FIND.3.String.Text
 msgid  "The text to be found."
-msgstr "Текст, который необходимо найти."
+msgstr "Текст, который следует найти."
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_FIND.4.String.Text
 msgid  "text"
@@ -10521,7 +10521,7 @@ msgstr "текст"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_FIND.5.String.Text
 msgid  "The text in which a search is to be made."
-msgstr "Текст, в котором ведётся поиск."
+msgstr "Текст, в котором следует искать."
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_FIND.6.String.Text
 msgid  "position"
@@ -12533,7 +12533,7 @@ msgstr "Числа"
 
 #: source/ui/src/miscdlgs.src#RID_SCDLG_DELCONT.BTN_DELDATETIME.CheckBox.Text
 msgid  "~Date & time"
-msgstr "Дата и время"
+msgstr "Дату и время"
 
 #: source/ui/src/miscdlgs.src#RID_SCDLG_DELCONT.BTN_DELFORMULAS.CheckBox.Text
 msgid  "~Formulas"
@@ -12645,7 +12645,7 @@ msgstr "Вниз"
 
 #: source/ui/src/miscdlgs.src#RID_SCDLG_INSCONT.BTN_MV_RIGHT.RadioButton.Text
 msgid  "~Right"
-msgstr "В~право"
+msgstr "Вправо"
 
 #: source/ui/src/miscdlgs.src#RID_SCDLG_INSCONT.FL_MOVE.FixedLine.Text
 msgid  "Shift cells"

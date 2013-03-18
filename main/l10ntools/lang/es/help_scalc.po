@@ -113,7 +113,7 @@ msgstr ""
 
 #: source/text/scalc/00/00000402.xhp#par_id3155306.18
 msgid  "Open context menu for a sheet tab"
-msgstr "Abra el menú contextual para una pestaña de la hoja"
+msgstr "Abra el menú contextual de las pestañas de la hoja de cálculo"
 
 #: source/text/scalc/00/00000402.xhp#par_id3146119.14
 msgid  "Choose \<emph\>Edit – Sheets – Move/Copy\</emph\>"
@@ -1569,7 +1569,7 @@ msgstr ""
 
 #: source/text/scalc/01/02150000.xhp#tit
 msgid  "Deleting Contents"
-msgstr "Borrar contenido"
+msgstr "Eliminar contenidos"
 
 #: source/text/scalc/01/02150000.xhp#bm_id3143284
 msgid  "\<bookmark_value\>deleting; cell contents\</bookmark_value\>\<bookmark_value\>cells; deleting contents\</bookmark_value\>\<bookmark_value\>spreadsheets; deleting cell contents\</bookmark_value\>\<bookmark_value\>cell contents; deleting\</bookmark_value\>"
@@ -3357,7 +3357,7 @@ msgstr ""
 
 #: source/text/scalc/01/04060102.xhp#tit
 msgid  "Date & Time Functions"
-msgstr "Funciones de fecha y hora"
+msgstr "Categoría fecha y hora"
 
 #: source/text/scalc/01/04060102.xhp#bm_id3154536
 msgid  "\<bookmark_value\>date and time functions\</bookmark_value\>\<bookmark_value\>functions; date & time\</bookmark_value\>\<bookmark_value\>Function Wizard; date & time\</bookmark_value\>"
@@ -3537,7 +3537,7 @@ msgstr ""
 
 #: source/text/scalc/01/04060103.xhp#tit
 msgid  "Financial Functions Part One"
-msgstr "Funciones financieras, Parte Uno"
+msgstr "Funciones financieras, primera parte"
 
 #: source/text/scalc/01/04060103.xhp#bm_id3143284
 msgid  "\<bookmark_value\>financial functions\</bookmark_value\>      \<bookmark_value\>functions; financial functions\</bookmark_value\>      \<bookmark_value\>Function Wizard; financial\</bookmark_value\>      \<bookmark_value\>amortizations, see also depreciations\</bookmark_value\>"
@@ -5349,7 +5349,7 @@ msgstr ""
 
 #: source/text/scalc/01/04060104.xhp#hd_id3151255.136
 msgid  "TYPE"
-msgstr "TYPE"
+msgstr "TIPO"
 
 #: source/text/scalc/01/04060104.xhp#par_id3155900.137
 msgid  "\<ahelp hid=\"HID_FUNC_TYP\"\>Returns the type of value.\</ahelp\>"
@@ -5709,7 +5709,7 @@ msgstr "Los argumentos son expresiones lógicas (VERDADERO, 1<5, 2+3=7, B8<10) q
 
 #: source/text/scalc/01/04060105.xhp#par_id3150538.67
 msgid  "When a function expects a single value, but you entered a cell range, then the value from the cell range is taken that is in the same column or row as the formula."
-msgstr "Cuando una función espera un valor simple pero se ha introducido un área de celdas, se selecciona el valor del área de celdas que se encuentre en la misma fila o columna que la fórmula."
+msgstr "Cuando una función espera un valor simple pero se ha introducido un rango de celdas, se selecciona el valor del rango de celdas que se encuentre en la misma fila o columna que la fórmula."
 
 #: source/text/scalc/01/04060105.xhp#par_id3149128.68
 msgid  "If the entered range is outside of the current column or row of the formula, the function returns the error value #VALUE!"
@@ -6057,7 +6057,7 @@ msgstr ""
 
 #: source/text/scalc/01/04060106.xhp#par_id679647
 msgid  "To return the angle in degrees, use the DEGREES function."
-msgstr "Para volver el ángulo en grados, use la función GRADOS."
+msgstr "Para obtener el ángulo en grados, use la función GRADOS."
 
 #: source/text/scalc/01/04060106.xhp#hd_id3149882.55
 msgid  "Example"
@@ -6137,7 +6137,7 @@ msgstr ""
 
 #: source/text/scalc/01/04060106.xhp#par_id5834528
 msgid  "To return the angle in degrees, use the DEGREES function."
-msgstr "Para volver el ángulo en grados, use la función GRADOS."
+msgstr "Para obtener el ángulo en grados, use la función GRADOS."
 
 #: source/text/scalc/01/04060106.xhp#hd_id3147538.75
 msgid  "Example"
@@ -10317,7 +10317,7 @@ msgstr ""
 
 #: source/text/scalc/01/04060109.xhp#tit
 msgid  "Spreadsheet Functions"
-msgstr "Funciones de hoja de cálculo"
+msgstr "Funciones de la hoja de cálculo"
 
 #: source/text/scalc/01/04060109.xhp#bm_id3148522
 msgid  "\<bookmark_value\>spreadsheets; functions\</bookmark_value\>      \<bookmark_value\>Function Wizard; spreadsheets\</bookmark_value\>      \<bookmark_value\>functions; spreadsheets\</bookmark_value\>"
@@ -11501,7 +11501,7 @@ msgstr ""
 
 #: source/text/scalc/01/04060110.xhp#hd_id3155758.244
 msgid  "Example"
-msgstr "Ejemplo:"
+msgstr "Ejemplo"
 
 #: source/text/scalc/01/04060110.xhp#par_id3154621.245
 msgid  "            \<item type=\"input\"\>=ARABIC(\"MXIV\")\</item\> returns 1014"
@@ -13373,7 +13373,7 @@ msgstr "Fila2"
 
 #: source/text/scalc/01/04060112.xhp#par_id3150968.97
 msgid  "Row number in the lower-right corner of the cell area; numbering starts at 0."
-msgstr "Número de fila de la esquina inferior derecha del área de celdas, contado a partir de 0."
+msgstr "Número de fila de la esquina inferior derecha del rango de celdas, contado a partir de 0."
 
 #: source/text/scalc/01/04060112.xhp#par_id3156133.98
 msgid  "10"
@@ -13417,7 +13417,7 @@ msgstr "16"
 
 #: source/text/scalc/01/04060112.xhp#par_id3150261.108
 msgid  "Row"
-msgstr "Row"
+msgstr "Fila"
 
 #: source/text/scalc/01/04060112.xhp#par_id3155851.109
 msgid  "Row number of the element; numbering starts at 0."
@@ -13865,7 +13865,7 @@ msgstr "Elemento siguiente"
 
 #: source/text/scalc/01/04060115.xhp#tit
 msgid  "Add-in Functions, List of Analysis Functions Part One"
-msgstr "Funciones add-in, lista de funciones de análisis, primera parte"
+msgstr "Funciones Add-in, Lista de funciones de análisis Primera parte"
 
 #: source/text/scalc/01/04060115.xhp#bm_id3152871
 msgid  "\<bookmark_value\>add-ins; analysis functions\</bookmark_value\>\<bookmark_value\>analysis functions\</bookmark_value\>"
@@ -14429,7 +14429,7 @@ msgstr ""
 
 #: source/text/scalc/01/04060116.xhp#tit
 msgid  "Add-in Functions, List of Analysis Functions Part Two"
-msgstr "Funciones add-in, lista de funciones de análisis, segunda parte"
+msgstr "Categoría Add-in, lista de las funciones de análisis, parte 2"
 
 #: source/text/scalc/01/04060116.xhp#bm_id3145074
 msgid  "\<bookmark_value\>imaginary numbers in analysis functions\</bookmark_value\>      \<bookmark_value\>complex numbers in analysis functions\</bookmark_value\>"
@@ -15581,7 +15581,7 @@ msgstr ""
 
 #: source/text/scalc/01/04060118.xhp#tit
 msgid  "Financial Functions Part Three"
-msgstr "Funciones financieras, tercera parte"
+msgstr "Categoría finanzas, parte 3"
 
 #: source/text/scalc/01/04060118.xhp#hd_id3146780.1
 msgid  "Financial Functions Part Three"
@@ -16689,7 +16689,7 @@ msgstr ""
 
 #: source/text/scalc/01/04060119.xhp#tit
 msgid  "Financial Functions Part Two"
-msgstr "Funciones financieras, segunda parte"
+msgstr "Categoría finanzas, parte 2"
 
 #: source/text/scalc/01/04060119.xhp#hd_id3149052.1
 msgid  "Financial Functions Part Two"
@@ -18001,7 +18001,7 @@ msgstr "Ejemplo"
 
 #: source/text/scalc/01/04060181.xhp#par_id3149953.19
 msgid  "The entries 2, 4, 6 and eight in the Value 1-4 fields are to be counted."
-msgstr " Las entradas 2, 4, 6 y ocho en el valor de los campos 1-4 han de ser contados."
+msgstr "Las entradas 2, 4, 6 y 8 en el valor de los campos 1-4 han de ser contados."
 
 #: source/text/scalc/01/04060181.xhp#par_id3154558.20
 msgid  "            \<item type=\"input\"\>=COUNT(2;4;6;\"eight\")\</item\> = 3. The count of numbers is therefore 3."
@@ -19517,7 +19517,7 @@ msgstr ""
 
 #: source/text/scalc/01/04060184.xhp#par_id9282509
 msgid  "Returns 0 if no numeric value and no error was encountered in the cell range(s) passed as cell reference(s). Text cells are ignored by MIN() and MAX(). The functions MINA() and MAXA() return 0 if no value (numeric or text) and no error was encountered. Passing a literal string argument to MIN() or MAX(), e.g. MIN(\"string\"), still results in an error."
-msgstr "Devuelve 0 si no ha encontrado un valor numérico y un error en el(los) rango(s) de celdas pasando como referencia(s) de celda(s). Las celdas de Texto son ignoradas por MÍN() y MÁX(). Las funciones MÍNA() y MÁXA() devuelven 0 si no encuentran un valor (numérico o texto) y un error. Pasando un argumento de cadena literal para MIN() o MAX(), por ejemplo. MÍN(\"cadena\"), sigue resultando en un error."
+msgstr "Devuelve 0 si el valor no es numérico y no se encontró error en el rango(s) de celdas definidas como celdas de referencia(s). La celdas con texto son ignoradas por MÍNIMO() y MÁXIMO(). Las funciones MÍNIMOA() y MÁXIMOA() devuelven 0 si el valor no es (numérico o texto) y no se encontró error. Pasar como argumento una cadena de caracteres a la función MÍNIMO() o MÁXIMO(), ej: MÍNIMO(\"caracteres\"), el resultado será un error."
 
 #: source/text/scalc/01/04060184.xhp#hd_id3154256.4
 msgid  "Syntax"
@@ -19557,7 +19557,7 @@ msgstr ""
 
 #: source/text/scalc/01/04060184.xhp#par_id7689443
 msgid  "The functions MINA() and MAXA() return 0 if no value (numeric or text) and no error was encountered."
-msgstr "Las funciones MÍNA() and MÁXA() devuelven 0 si no hay valor (numérico o texto) y si no se ha encontrado error."
+msgstr "Las funciones MÍNA() y MÁXA() devuelven 0 si no encuentran un valor (numérico o texto) y un error."
 
 #: source/text/scalc/01/04060184.xhp#hd_id3150516.141
 msgid  "Syntax"
@@ -21557,7 +21557,7 @@ msgstr ""
 
 #: source/text/scalc/01/04070300.xhp#tit
 msgid  "Creating Names"
-msgstr "Crear nombres"
+msgstr "Creación de nombres"
 
 #: source/text/scalc/01/04070300.xhp#bm_id3147264
 msgid  "\<bookmark_value\>cell ranges;creating names automatically\</bookmark_value\>\<bookmark_value\>names; for cell ranges\</bookmark_value\>"
@@ -21765,7 +21765,7 @@ msgstr ""
 
 #: source/text/scalc/01/05020000.xhp#tit
 msgid  "Format Cells"
-msgstr "Formato de celdas"
+msgstr "Formateado de celdas"
 
 #: source/text/scalc/01/05020000.xhp#bm_id3148663
 msgid  "\<bookmark_value\>cell attributes\</bookmark_value\>\<bookmark_value\>attributes;cells\</bookmark_value\>\<bookmark_value\>formatting;cells\</bookmark_value\>\<bookmark_value\>cells;formatting dialog\</bookmark_value\>"
@@ -21869,7 +21869,7 @@ msgstr ""
 
 #: source/text/scalc/01/05030200.xhp#tit
 msgid  "Optimal Row Heights"
-msgstr "Altura óptima de filas"
+msgstr "Altura de fila óptima"
 
 #: source/text/scalc/01/05030200.xhp#bm_id3148491
 msgid  "\<bookmark_value\>sheets; optimal row heights\</bookmark_value\>\<bookmark_value\>rows; optimal heights\</bookmark_value\>\<bookmark_value\>optimal row heights\</bookmark_value\>"
@@ -21985,7 +21985,7 @@ msgstr ""
 
 #: source/text/scalc/01/05040200.xhp#tit
 msgid  "Optimal Column Width"
-msgstr "Ancho óptimo de columnas"
+msgstr "Ancho de columna óptimo"
 
 #: source/text/scalc/01/05040200.xhp#bm_id3155628
 msgid  "\<bookmark_value\>spreadsheets; optimal column widths\</bookmark_value\>\<bookmark_value\>columns; optimal widths\</bookmark_value\>\<bookmark_value\>optimal column widths\</bookmark_value\>"
@@ -22053,7 +22053,7 @@ msgstr ""
 
 #: source/text/scalc/01/05050100.xhp#tit
 msgid  "Rename Sheet"
-msgstr "Cambiar nombre a la hoja"
+msgstr "Cambiar nombre de hoja"
 
 #: source/text/scalc/01/05050100.xhp#bm_id3147336
 msgid  "\<bookmark_value\>worksheet names\</bookmark_value\>\<bookmark_value\>changing; sheet names\</bookmark_value\>\<bookmark_value\>sheets; renaming\</bookmark_value\>"
@@ -22085,7 +22085,7 @@ msgstr ""
 
 #: source/text/scalc/01/05050300.xhp#tit
 msgid  "Show Sheet"
-msgstr "Mostrar hoja"
+msgstr "Mostrar hoja de cálculo"
 
 #: source/text/scalc/01/05050300.xhp#bm_id3148946
 msgid  "\<bookmark_value\>sheets; displaying\</bookmark_value\>\<bookmark_value\>displaying; sheets\</bookmark_value\>"
@@ -22129,7 +22129,7 @@ msgstr "Si las celdas combinadas tienen contenido se muestra un diálogo de segu
 
 #: source/text/scalc/01/05070000.xhp#tit
 msgid  "Page Style"
-msgstr "Estilos de página"
+msgstr "Estilo de hoja"
 
 #: source/text/scalc/01/05070000.xhp#hd_id3157910.1
 msgid  "Page Style"
@@ -22393,7 +22393,7 @@ msgstr ""
 
 #: source/text/scalc/01/05080300.xhp#tit
 msgid  "Edit Print Ranges"
-msgstr "Editar imprimir rangos"
+msgstr "Editar Imprimir rangos"
 
 #: source/text/scalc/01/05080300.xhp#hd_id3153088.1
 msgid  "Edit Print Ranges"
@@ -22493,7 +22493,7 @@ msgstr "Haga doble clic en el estilo en la ventana Estilo y formato."
 
 #: source/text/scalc/01/05100000.xhp#hd_id3153877.4
 msgid  "Cell Styles"
-msgstr "Estilo de celda"
+msgstr "Estilos de celda"
 
 #: source/text/scalc/01/05100000.xhp#par_id3145801.6
 msgid  "\<ahelp hid=\".uno:ParaStyle\"\>Displays the list of the available Cell Styles for \<link href=\"text/shared/00/00000005.xhp#formatierung\" name=\"indirect cell formatting\"\>indirect cell formatting\</link\>.\</ahelp\>"
@@ -22561,7 +22561,7 @@ msgstr ""
 
 #: source/text/scalc/01/05100000.xhp#hd_id3153975.16
 msgid  "New Style from Selection"
-msgstr "Nuevo estilo a partir de selección"
+msgstr "Nuevo estilo a partir de la selección"
 
 #: source/text/scalc/01/05100000.xhp#par_id3149499.18
 msgid  "\<ahelp hid=\"HID_TEMPLDLG_NEWBYEXAMPLE\"\>Creates a new style based on the formatting of a selected object.\</ahelp\> Assign a name for the style in the \<link href=\"text/shared/01/05140100.xhp\" name=\"Create Style\"\>Create Style\</link\> dialog."
@@ -22645,7 +22645,7 @@ msgstr ""
 
 #: source/text/scalc/01/05110000.xhp#hd_id3150044.7
 msgid  "More"
-msgstr "Opciones <<"
+msgstr "Opciones"
 
 #: source/text/scalc/01/05110000.xhp#par_id3146920.8
 msgid  "\<ahelp hid=\"SC:MOREBUTTON:RID_SCDLG_AUTOFORMAT:BTN_MORE\"\>Opens the \<emph\>Formatting\</emph\> section, which displays the formatting overrides that can be applied to the spreadsheet. Deselecting an option keeps the format of the current spreadsheet for that format type.\</ahelp\>"
@@ -22729,7 +22729,7 @@ msgstr ""
 
 #: source/text/scalc/01/05120000.xhp#tit
 msgid  "Conditional Formatting"
-msgstr "Formateado condicionado"
+msgstr "Formateado condicional"
 
 #: source/text/scalc/01/05120000.xhp#hd_id3155132.1
 msgid  "Conditional Formatting"
@@ -23089,7 +23089,7 @@ msgstr ""
 
 #: source/text/scalc/01/06040000.xhp#tit
 msgid  "Goal Seek"
-msgstr "Búsqueda del valor destino"
+msgstr "Buscar valor destino"
 
 #: source/text/scalc/01/06040000.xhp#hd_id3155629.1
 msgid  "Goal Seek"
@@ -23241,7 +23241,7 @@ msgstr ""
 
 #: source/text/scalc/01/06060100.xhp#tit
 msgid  "Protecting Sheet"
-msgstr "Proteger hoja"
+msgstr "Proteger tabla"
 
 #: source/text/scalc/01/06060100.xhp#hd_id3153087.1
 msgid  "Protecting Sheet"
@@ -24625,7 +24625,7 @@ msgstr ""
 
 #: source/text/scalc/01/12090100.xhp#tit
 msgid  "Select Source"
-msgstr "Seleccionar origen"
+msgstr "Seleccionar fuente"
 
 #: source/text/scalc/01/12090100.xhp#hd_id3153663.1
 msgid  "Select Source"
@@ -24677,7 +24677,7 @@ msgstr ""
 
 #: source/text/scalc/01/12090101.xhp#tit
 msgid  "Select Data Source"
-msgstr "Seleccionar origen de datos"
+msgstr "Seleccionar fuente de datos"
 
 #: source/text/scalc/01/12090101.xhp#hd_id3143268.1
 msgid  "Select Data Source"
@@ -24897,7 +24897,7 @@ msgstr ""
 
 #: source/text/scalc/01/12090103.xhp#tit
 msgid  "Filter"
-msgstr "Filtrar"
+msgstr "Filtro"
 
 #: source/text/scalc/01/12090103.xhp#hd_id3153970.1
 msgid  "Filter"
@@ -25645,7 +25645,7 @@ msgstr "Fecha"
 
 #: source/text/scalc/01/12120100.xhp#par_id3150718.27
 msgid  "All numbers corresponding to the condition. The entered values are formatted accordingly the next time the dialog is called up."
-msgstr "Todos los números que respondan a la condición. Los valores registrados se formatean correspondientemente la próxima vez que se active el diálogo."
+msgstr "Todos los números que respondan a la condición. Los valores registrados se formatean correspondientemente la próxima vez que se abra el diálogo."
 
 #: source/text/scalc/01/12120100.xhp#par_id3146969.28
 msgid  "Time"
@@ -27297,7 +27297,7 @@ msgstr "Formato numérico: Agregar decimal"
 
 #: source/text/scalc/02/02170000.xhp#tit
 msgid  "Number Format: Delete Decimal Place"
-msgstr "Formato numérico: Eliminar decimal"
+msgstr "Formato numérico: Eliminar decimales"
 
 #: source/text/scalc/02/02170000.xhp#hd_id3149164.1
 msgid  "\<link href=\"text/scalc/02/02170000.xhp\" name=\"Number Format: Delete Decimal Place\"\>Number Format: Delete Decimal Place\</link\>"
@@ -27441,7 +27441,7 @@ msgstr "Cancelar"
 
 #: source/text/scalc/02/06070000.xhp#tit
 msgid  "Accept"
-msgstr "Aceptar"
+msgstr "Aplicar"
 
 #: source/text/scalc/02/06070000.xhp#bm_id3143267
 msgid  "\<bookmark_value\>formula bar; accepting inputs\</bookmark_value\>\<bookmark_value\>functions; accepting input icon\</bookmark_value\>"
@@ -27717,7 +27717,7 @@ msgstr "Navegar por una hoja de cálculo"
 
 #: source/text/scalc/04/01020000.xhp#hd_id3149407.86
 msgid  "Shortcut Keys"
-msgstr "Combinación de teclas"
+msgstr "Teclas rápidas"
 
 #: source/text/scalc/04/01020000.xhp#par_id3153815.87
 msgid  "\<emph\>Effect\</emph\>"
@@ -27741,7 +27741,7 @@ msgstr "Desplaza el cursor a la última celda que contiene datos."
 
 #: source/text/scalc/04/01020000.xhp#hd_id3149127.92
 msgid  "Home"
-msgstr "(Inicio)"
+msgstr "Inicio"
 
 #: source/text/scalc/04/01020000.xhp#par_id3159205.93
 msgid  "Moves the cursor to the first cell of the current row."
@@ -27749,7 +27749,7 @@ msgstr "Desplaza el cursor a la primera celda de la fila actual."
 
 #: source/text/scalc/04/01020000.xhp#hd_id3149897.94
 msgid  "End"
-msgstr "Fin"
+msgstr "(Fin)"
 
 #: source/text/scalc/04/01020000.xhp#par_id3155095.95
 msgid  "Moves the cursor to the last cell of the current row."
@@ -29705,7 +29705,7 @@ msgstr "Las celdas se filtraron con Filtros automáticos, filtros predeterminado
 
 #: source/text/scalc/guide/cellcopy.xhp#par_id3150044.7
 msgid  "Copy, delete, move, or format a selection of currently visible cells."
-msgstr "Copie, elimine, mueva o aplique formato a una selección de celdas visibles."
+msgstr "Copia, borra, mueve o da formato a la selección de celdas actualmente visibles."
 
 #: source/text/scalc/guide/cellcopy.xhp#par_id3146918.8
 msgid  "Only the visible cells of the selection are copied, deleted, moved, or formatted."

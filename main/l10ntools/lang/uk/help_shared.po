@@ -61478,7 +61478,7 @@ msgstr "Редагувати вузли"
 #: source/text/shared/main0227.xhp#hd_id3146976.45
 #, fuzzy
 msgid  "Move Points"
-msgstr "Перемістити вузли"
+msgstr "Переміщувати вузли"
 
 #: source/text/shared/main0227.xhp#par_id3147435.46
 msgid  "\<ahelp hid=\".uno:BezierMove\"\>Activates a mode in which you can move points.\</ahelp\> The mouse pointer displays a small empty square when resting on a point. Drag that point to another location. The curve on both sides of the point follows the movement; the section of the curve between the next points changes shape."
@@ -61564,7 +61564,7 @@ msgstr "Розділити криву"
 #: source/text/shared/main0227.xhp#hd_id3150345.62
 #, fuzzy
 msgid  "Convert To Curve"
-msgstr "Перетворення на криву"
+msgstr "Перетворити на криву"
 
 #: source/text/shared/main0227.xhp#par_id3148420.63
 msgid  "\<ahelp hid=\".uno:BezierConvert\"\>Converts a curve into a straight line or converts a straight line into a curve.\</ahelp\> If you select a single point, the curve before the point will be converted. If two points are selected, the curve between both points will be converted. If you select more than two points, each time you click this icon, a different portion of the curve will be converted. If necessary, round points are converted into corner points and corner points are converted into round points."
@@ -61587,7 +61587,7 @@ msgstr "Перетворення на криву"
 #: source/text/shared/main0227.xhp#hd_id3153199.66
 #, fuzzy
 msgid  "Corner Point"
-msgstr "Кутова вузли"
+msgstr "Кутовий вузол"
 
 #: source/text/shared/main0227.xhp#par_id3148460.67
 msgid  "\<ahelp hid=\".uno:BezierEdge\"\>Converts the selected point or points into corner points.\</ahelp\> Corner points have two movable control points, which are independent from each other. A curved line, therefore, does not go straight through a corner point, but forms a corner."
@@ -61605,7 +61605,7 @@ msgstr "Кутова вузли"
 #: source/text/shared/main0227.xhp#hd_id3166436.27
 #, fuzzy
 msgid  "Smooth Transition"
-msgstr "Гладкий перенос"
+msgstr "Гладкий прохід"
 
 #: source/text/shared/main0227.xhp#par_id3155510.29
 msgid  "\<ahelp hid=\".uno:BezierSmooth\"\>Converts a corner point or symmetrical point into a smooth point.\</ahelp\> Both control points of the corner point are aligned in parallel, and can only be moved simultaneously. The control points may differentiate in length, allowing you to vary the degree of curvature."

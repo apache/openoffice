@@ -1773,7 +1773,7 @@ msgstr "Жолоодлого"
 
 #: source/ui/navipi/navipi.src#RID_SCDLG_NAVIGATOR.FT_ROW.FixedText.Text
 msgid  "Row"
-msgstr "Row"
+msgstr "Мөр"
 
 #: source/ui/navipi/navipi.src#RID_SCDLG_NAVIGATOR.ED_ROW.NumericField.QuickHelpText
 msgid  "Row"
@@ -1781,7 +1781,7 @@ msgstr "Row"
 
 #: source/ui/navipi/navipi.src#RID_SCDLG_NAVIGATOR.FT_COL.FixedText.Text
 msgid  "Column"
-msgstr "Column"
+msgstr "Багана"
 
 #: source/ui/navipi/navipi.src#RID_SCDLG_NAVIGATOR.ED_COL.SpinField.QuickHelpText
 msgid  "Column"
@@ -2117,7 +2117,7 @@ msgstr "Text Attributes"
 
 #: source/ui/pagedlg/hfedtdlg.src#RID_HFBASE.BTN_FILE.ImageButton.QuickHelpText
 msgid  "Title"
-msgstr "Гарчиг"
+msgstr "Title"
 
 #: source/ui/pagedlg/hfedtdlg.src#RID_HFBASE.RID_POPUP_FCOMMAND.FILE_COMMAND_TITEL.MenuItem.Text
 msgid  "Title"
@@ -2905,7 +2905,7 @@ msgstr "Устгах"
 
 #: source/ui/src/globstr.src#RID_GLOBSTR.STR_UNDO_SELATTR.String.Text
 msgid  "Attributes"
-msgstr "Атрибут"
+msgstr "Атрибутууд"
 
 #: source/ui/src/globstr.src#RID_GLOBSTR.STR_UNDO_SELATTRLINES.String.Text
 msgid  "Attributes/Lines"
@@ -2973,11 +2973,11 @@ msgstr "Мөр таслалтыг устгах"
 
 #: source/ui/src/globstr.src#RID_GLOBSTR.STR_UNDO_DOOUTLINE.String.Text
 msgid  "View Details"
-msgstr "Тодруулга харах"
+msgstr "Тодруулгыг харах"
 
 #: source/ui/src/globstr.src#RID_GLOBSTR.STR_UNDO_REDOOUTLINE.String.Text
 msgid  "Hide details"
-msgstr "Тодруулга далдлах"
+msgstr "Тодруулгыг далдлах"
 
 #: source/ui/src/globstr.src#RID_GLOBSTR.STR_UNDO_MAKEOUTLINE.String.Text
 msgid  "Group"
@@ -3837,7 +3837,7 @@ msgstr "Функц засах"
 
 #: source/ui/src/globstr.src#RID_GLOBSTR.STR_NOTES.String.Text
 msgid  "Comments"
-msgstr "Тэмдэглэл"
+msgstr "Тайлбар"
 
 #: source/ui/src/globstr.src#RID_GLOBSTR.STR_QUERY_DELTAB.String.Text
 msgid  "Are you sure you want to delete the selected sheet(s)?"
@@ -4085,7 +4085,7 @@ msgstr "Зүүнээс баруун"
 
 #: source/ui/src/globstr.src#RID_GLOBSTR.STR_SCATTR_PAGE_NOTES.String.Text
 msgid  "Comments"
-msgstr "Зөвлөмж"
+msgstr "Тэмдэглэл"
 
 #: source/ui/src/globstr.src#RID_GLOBSTR.STR_SCATTR_PAGE_GRID.String.Text
 msgid  "Grid"
@@ -5045,7 +5045,7 @@ msgstr "Муж ~баганын тэмдэглээс агуулж байна"
 
 #: source/ui/src/filter.src#RID_SCDLG_FILTER.BTN_UNIQUE.CheckBox.Text
 msgid  "~No duplication"
-msgstr "~Давхцалгүй"
+msgstr "~Давхардалтгүй"
 
 #: source/ui/src/filter.src#RID_SCDLG_FILTER.BTN_COPY_RESULT.CheckBox.Text
 msgid  "Copy ~results to..."
@@ -5053,7 +5053,7 @@ msgstr "Ү~р дүнг хуулах..."
 
 #: source/ui/src/filter.src#RID_SCDLG_FILTER.BTN_DEST_PERS.CheckBox.Text
 msgid  "~Keep filter criteria"
-msgstr "~Шүүлтүүрийн шалгуурыг хадгал "
+msgstr "~Тогтмол"
 
 #: source/ui/src/filter.src#RID_SCDLG_FILTER.RB_COPY_AREA.ImageButton.QuickHelpText
 msgid  "Shrink"
@@ -5301,7 +5301,7 @@ msgstr "Хайлтын нөхцөл"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_DB_COUNT.7.String.Text
 msgid  "Defines the cell range containing the search criteria."
-msgstr "Хайлтын нөхцөл агуулах нүдний мужийг тодорхойл. "
+msgstr "Хайлтын нөхцөл агуулах нүдний мужийг тодорхойлох."
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_DB_COUNT_2.1.String.Text
 msgid  "Counts all non-blank cells of a data range where the content corresponds to the search criteria."
@@ -5657,7 +5657,7 @@ msgstr "Огнооны утгатай харьцуулахаар сарын да
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_GET_DAY.2.String.Text
 msgid  "Number"
-msgstr "тоо"
+msgstr "Тоо"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_GET_DAY.3.String.Text
 msgid  "The internal number for the date."
@@ -5673,7 +5673,7 @@ msgstr "Огноо_1"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_GET_DIFF_DATE_360.3.String.Text
 msgid  "The start date for calculating the difference in days."
-msgstr "Өдрийн зөрүүн эрт огноо."
+msgstr "Өдрүүдийн зөрөөг тооцоолж эхлэлийн огноог гаргана."
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_GET_DIFF_DATE_360.4.String.Text
 msgid  "Date_2"
@@ -5681,7 +5681,7 @@ msgstr "Огноо_2"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_GET_DIFF_DATE_360.5.String.Text
 msgid  "The end date for calculating the difference in days."
-msgstr "Өдрийн зөрүүн орой огноо."
+msgstr "Өдрүүдийн зөрөөг тооцоолж төгсгөлийн огноог гаргана."
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_GET_DIFF_DATE_360.6.String.Text
 msgid  "Type"
@@ -5853,7 +5853,7 @@ msgstr "Огнооны дотоод тоон утга."
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_WEEK.4.String.Text
 msgid  "mode"
-msgstr "давтагдсан дундаж"
+msgstr "горим"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_WEEK.5.String.Text
 msgid  "Indicates the first day of the week (1 = Sunday, other values = Monday)."
@@ -5901,7 +5901,7 @@ msgstr "Тогтмол төлбөр. Үе бүрт нь  жил тутмын т�
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_BW.8.String.Text
 msgid  "FV"
-msgstr "ИҮ"
+msgstr "FV"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_BW.9.String.Text
 msgid  "Future value. The value (final value) to be attained after the last payment."
@@ -5913,7 +5913,7 @@ msgstr "Төрөл"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_BW.11.String.Text
 msgid  "Type = 1 denotes due at the beginning of the period, = 0 at the end."
-msgstr "Төрөл = 1 нь мөчлөг эхэлж байна гэдгийг заана, = 0 нь мөчлөгийн төгсгөлийг заана."
+msgstr "Төрөл = 1 нь үе эхэлж байна гэдгийг заана, = 0 нь үеийн төгсгөлийг заана."
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_ZW.1.String.Text
 msgid  "Future value. Returns the future value of an investment based on regular payments and a constant interest rate."
@@ -5925,7 +5925,7 @@ msgstr "Хүү"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_ZW.3.String.Text
 msgid  "The rate of interest per period."
-msgstr "Мөчлөг тутмын хүүний түвшин."
+msgstr "Үе тутмын хүүний түвшин."
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_ZW.4.String.Text
 msgid  "NPER"
@@ -5933,7 +5933,7 @@ msgstr "NPER"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_ZW.5.String.Text
 msgid  "Payment period. The total number of periods in which the annuity (pension) is paid."
-msgstr "Төлбөрийн мөчлөг. Жил тутмын төлбөр (тэтгэмж) хийх мөчлөгийн нийт тоо."
+msgstr "Төлбөрийн мөчлөг. Жил тутмын төлбөр (тэтгэмж) хийгдэх мөчлөгүүдийн нийт тоо."
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_ZW.6.String.Text
 msgid  "PMT"
@@ -5969,7 +5969,7 @@ msgstr "Хүү"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_ZZR.3.String.Text
 msgid  "The rate of interest per period."
-msgstr "Үе тутмын хүүгийн түвшин."
+msgstr "Үе тутмын хүүний түвшин."
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_ZZR.4.String.Text
 msgid  "PMT"
@@ -5993,7 +5993,7 @@ msgstr "FV"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_ZZR.9.String.Text
 msgid  "Future value. The value (end value) to be attained after the final payment."
-msgstr "Цаашдын үнэ.Төгсгөлийн төлбөрийн дараагаар эцсийн үнэ тогтоолт."
+msgstr "Цаашдын үнэ.Төгсгөлийн төлбөрийн дараагаар сүүлийн үнэ тогтоолт."
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_ZZR.10.String.Text
 msgid  "Type"
@@ -6093,7 +6093,7 @@ msgstr "Төрөл = 1 нь үе эхэлж байна гэдгийг заана
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_ZINS.12.String.Text
 msgid  "Guess"
-msgstr "Таамаг утга"
+msgstr "Таамаг"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_ZINS.13.String.Text
 msgid  "Guess. The estimate of the interest rate for the iterative calculating method."
@@ -6113,7 +6113,7 @@ msgstr "Мөчлөг тутмын хүүний түвшин."
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_ZINS_Z.4.String.Text
 msgid  "Period"
-msgstr "Мөчлөг"
+msgstr "Үе"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_ZINS_Z.5.String.Text
 msgid  "Periods. The periods for which the compounded interest is to be calculated. P = 1 denotes for the first period, P = NPER for the last one."
@@ -6129,7 +6129,7 @@ msgstr "Төлбөрийн мөчлөг. Жил тутмын төлбөр (тэ�
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_ZINS_Z.8.String.Text
 msgid  "pv"
-msgstr "PV"
+msgstr "оү"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_ZINS_Z.9.String.Text
 msgid  "Present value. The current value of a series of payments"
@@ -6165,7 +6165,7 @@ msgstr "Тайлангийн үеийн хүүний түвшин."
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_KAPZ.4.String.Text
 msgid  "Period"
-msgstr "Мөчлөг"
+msgstr "Үе"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_KAPZ.5.String.Text
 msgid  "Period. The period for which the repayments are to be calculated. Per = 1 denotes for the first period, P = NPER for the last"
@@ -6313,7 +6313,7 @@ msgstr "Тодорхой нэг мөчлөгт хөрөнгийн (элэгдэ�
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_DIA.2.String.Text
 msgid  "Cost"
-msgstr "Өртөг"
+msgstr "Үнэ"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_DIA.3.String.Text
 msgid  "Acquisition costs. The initial cost of the asset."
@@ -6321,7 +6321,7 @@ msgstr "Худалдан авалтын өртөг. Хөрөнгийн анхн�
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_DIA.4.String.Text
 msgid  "Salvage"
-msgstr "Үлдэх өртөг"
+msgstr "Үлдэгдэл"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_DIA.5.String.Text
 msgid  "Salvage: The remaining value of the asset at the end of its life."
@@ -6329,7 +6329,7 @@ msgstr "Үлдэх өртөг. Хөрөнгийн ашиглагдах хуга�
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_DIA.6.String.Text
 msgid  "Life"
-msgstr "Амьдрал"
+msgstr "Амьдрах"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_DIA.7.String.Text
 msgid  "Useful life. The number of periods in the useful life of the asset."
@@ -6337,7 +6337,7 @@ msgstr "Ашиглагдах хугацаа. Хөрөнгийн ашиглагд
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_DIA.8.String.Text
 msgid  "Period"
-msgstr "Мөчлөг"
+msgstr "Үе"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_DIA.9.String.Text
 msgid  "Period. The depreciation period which must have the same time unit as average useful life."
@@ -6533,7 +6533,7 @@ msgstr "Нэрлэсэн хүү"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_EFFEKTIV.4.String.Text
 msgid  "P"
-msgstr "М"
+msgstr "P"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_EFFEKTIV.5.String.Text
 msgid  "Periods. The number of interest payments per year."
@@ -6573,7 +6573,7 @@ msgstr "Нэг мөчлөгийн хөнгөлөлтийн түвшин."
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_NBW.4.String.Text
 msgid  "value "
-msgstr "утга "
+msgstr "утга"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_NBW.5.String.Text
 msgid  "Value 1, value 2,... are 1 to 30 arguments representing payments and income."
@@ -6833,7 +6833,7 @@ msgstr "Хэрэв нүд томьёоны нүд бол ҮНЭН буцаана
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_IS_FORMULA.2.String.Text
 msgid  "reference"
-msgstr "хамаарал"
+msgstr "заалт"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_IS_FORMULA.3.String.Text
 msgid  "The cell to be checked."
@@ -7041,7 +7041,7 @@ msgstr "Бүх аргументын нийлбэрийг буцаана."
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_SUM.2.String.Text
 msgid  "number "
-msgstr "тоо "
+msgstr "тоо"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_SUM.3.String.Text
 msgid  "Number 1, number 2, ... are 1 to 30 arguments whose total is to be calculated."
@@ -7053,7 +7053,7 @@ msgstr "Аргументуудын квадратуудын нийлбэрийг
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_SUM_SQ.2.String.Text
 msgid  "number "
-msgstr "тоо "
+msgstr "тоо"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_SUM_SQ.3.String.Text
 msgid  "Number 1, number 2,... are 1 to 30 arguments for which the sum of the squares is to be calculated."
@@ -7273,7 +7273,7 @@ msgstr "тоо_1"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_KOMBIN.3.String.Text
 msgid  "The total number of elements."
-msgstr "Нийт элементийн тоо."
+msgstr "Элементүүдийн нийт тоо."
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_KOMBIN.4.String.Text
 msgid  "number_2"
@@ -7293,7 +7293,7 @@ msgstr "тоо_1"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_KOMBIN_2.3.String.Text
 msgid  "The total number of elements."
-msgstr "Нийт элементийн тоо."
+msgstr "Элементүүдийн нийт тоо."
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_KOMBIN_2.4.String.Text
 msgid  "number_2"
@@ -7609,7 +7609,7 @@ msgstr "Тоо"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_LOG.3.String.Text
 msgid  "A value greater than 0 for which the logarithm is to be calculated."
-msgstr "Бодогдох логарифмын утга 0 их байна."
+msgstr "Бодогдох логарифмын утга 0 -ээс их байна."
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_LOG.4.String.Text
 msgid  "Base"
@@ -7757,7 +7757,7 @@ msgstr "тоо хэмжээ"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_ROUND.5.String.Text
 msgid  "The number of places to which a number is to be rounded."
-msgstr "Бүхэлтгэх тооны байрлалын дугаар."
+msgstr "Бүхэлгэх ёстой орны тоо."
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_ROUND_UP.1.String.Text
 msgid  "Rounds a number up to the predefined accuracy."
@@ -7769,7 +7769,7 @@ msgstr "тоо"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_ROUND_UP.3.String.Text
 msgid  "The number to be rounded up."
-msgstr "Бүхэлтгэх ёстой тоо."
+msgstr "Дээш бүхэлтгэх ёстой тоо."
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_ROUND_UP.4.String.Text
 msgid  "count"
@@ -8237,7 +8237,7 @@ msgstr "Аргументын жагсаалтын хамгийн их тоог �
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_MAX.2.String.Text
 msgid  "number "
-msgstr "тоо "
+msgstr "тоо"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_MAX.3.String.Text
 msgid  "Number 1, number 2, ... are 1 to 30 numerical arguments for which the largest number is to be determined."
@@ -8261,7 +8261,7 @@ msgstr "Аргументын жагсаалтын хамгийн бага тоо
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_MIN.2.String.Text
 msgid  "number "
-msgstr "тоо "
+msgstr "тоо"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_MIN.3.String.Text
 msgid  "Number 1, number 2, ... are 1 to 30 numerical arguments for which the smallest number is to be determined."
@@ -8285,7 +8285,7 @@ msgstr "Түүвэр дээр суурилан дундаж квадрат ха�
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_VAR.2.String.Text
 msgid  "number "
-msgstr "тоо"
+msgstr "тоо "
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_VAR.3.String.Text
 msgid  "Number 1, number 2, ... are 1 to 30 numerical arguments which portray a sample of a population."
@@ -8309,7 +8309,7 @@ msgstr "Нэлэнхүй дээр суурилан дундаж квадрат �
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_VAR_P.2.String.Text
 msgid  "number "
-msgstr "тоо"
+msgstr "тоо "
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_VAR_P.3.String.Text
 msgid  "Number 1, number 2, ... are 1 to 30 numerical arguments which represent a population."
@@ -8333,7 +8333,7 @@ msgstr "Түүвэр дээр суурилан стандарт хазайлты
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_ST_DEV.2.String.Text
 msgid  "number "
-msgstr "тоо"
+msgstr "тоо "
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_ST_DEV.3.String.Text
 msgid  "Number 1, number 2, ... are 1 to 30 numerical arguments which portray a sample of a population."
@@ -8357,7 +8357,7 @@ msgstr "Нэлэнхүй дээр суурилан стандарт хазайл
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_ST_DEV_P.2.String.Text
 msgid  "number "
-msgstr "тоо "
+msgstr "тоо"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_ST_DEV_P.3.String.Text
 msgid  "Number 1, number 2, ... are 1 to 30 numerical arguments which portray a sample of a population."
@@ -8381,7 +8381,7 @@ msgstr "Түүврийн дундажийг буцаана."
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_AVERAGE.2.String.Text
 msgid  "number "
-msgstr "тоо"
+msgstr "тоо "
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_AVERAGE.3.String.Text
 msgid  "Number 1, number 2;...are 1 to 30 numeric arguments representing a population sample."
@@ -8725,7 +8725,7 @@ msgstr "тоо"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_PHI.3.String.Text
 msgid  "The value for which the standard normal distribution is to be calculated."
-msgstr "Стандарт нормал тархалтыг нь тооцоологдох утга."
+msgstr "Стандарт энгийн тархалт нь бодогдох утга."
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_GAUSS.1.String.Text
 msgid  "Returns the integral values of the standard normal cumulative distribution."
@@ -8793,7 +8793,7 @@ msgstr "Туршилтын Амжилтын  магадлал."
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_BINOM_DIST.8.String.Text
 msgid  "C"
-msgstr "K"
+msgstr "C"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_BINOM_DIST.9.String.Text
 msgid  "Cumulated. C=0 calculates the individual probability, C=1 the cumulated probability."
@@ -8869,7 +8869,7 @@ msgstr "Пуоссоны тархалтыг тооцоолох утга."
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_POISSON_DIST.4.String.Text
 msgid  "mean"
-msgstr "дундаж утга"
+msgstr "дундаж"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_POISSON_DIST.5.String.Text
 msgid  "Mean. The mean value of the Poisson distribution."
@@ -8877,7 +8877,7 @@ msgstr "Дундаж утга. Пуоссоны тархалтын дундаж 
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_POISSON_DIST.6.String.Text
 msgid  "Cumulative"
-msgstr "C"
+msgstr "K"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_POISSON_DIST.7.String.Text
 msgid  "0 or FALSE calculates the probability density function. Any other value or TRUE or omitted calculates the cumulative distribution function."
@@ -8913,7 +8913,7 @@ msgstr "Стандарт хазайлт. Энгийн тархалтын ста�
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_NORM_DIST.8.String.Text
 msgid  "C"
-msgstr "C"
+msgstr "K"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_NORM_DIST.9.String.Text
 msgid  "0 or FALSE calculates the probability density function. Any other value or TRUE or omitted calculates the cumulative distribution function."
@@ -8933,7 +8933,7 @@ msgstr "Урвуу энгийн тархалтыг тооцоолох магад
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_NORM_INV.4.String.Text
 msgid  "mean"
-msgstr "дундаж утга"
+msgstr "дундаж"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_NORM_INV.5.String.Text
 msgid  "The mean value. The mean value of the normal distribution."
@@ -9929,11 +9929,11 @@ msgstr "(үржвэр) мужид харъяалагдах нэгж мужууд
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_AREAS.2.String.Text
 msgid  "reference"
-msgstr "заалт"
+msgstr "хамаарал"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_AREAS.3.String.Text
 msgid  "The reference to a (multiple) range."
-msgstr "(Үржвэр) мужийн заалт."
+msgstr "Үржвэр мужийн холбоо."
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_CHOSE.1.String.Text
 msgid  "Selects a value from a list of up to 30 value arguments."
@@ -9941,7 +9941,7 @@ msgstr "30 хүртэлх аргументуудаас нэгэн утга со�
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_CHOSE.2.String.Text
 msgid  "Index"
-msgstr "Индекс"
+msgstr "индекс"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_CHOSE.3.String.Text
 msgid  "The index of the value (1..30) selected."
@@ -9965,7 +9965,7 @@ msgstr "заалт"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_COLUMN.3.String.Text
 msgid  "The reference to a cell or a range."
-msgstr "Нүд эсвэл мужийн заалт."
+msgstr "Нүд эсвэл мужийн заалт"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_ROW.1.String.Text
 msgid  "Defines the internal row number of a reference."
@@ -10401,7 +10401,7 @@ msgstr "бичвэр"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_JIS.3.String.Text
 msgid  "The text to convert."
-msgstr "Хөрвүүлэх бичвэр"
+msgstr "Хөрвүүлэх бичвэр."
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_ASC.1.String.Text
 msgid  "Converts full-width ASCII and katakana characters to half-width."
@@ -10909,7 +10909,7 @@ msgstr "утга"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_CONVERT.3.String.Text
 msgid  "The value to be converted."
-msgstr "Хувиргах утга."
+msgstr "Хөрвүүлэх утга."
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_CONVERT.4.String.Text
 msgid  "text"
@@ -12249,7 +12249,7 @@ msgstr "Тэмдэглэл ~устгах"
 
 #: source/ui/src/popup.src#RID_POPUP_CELLS.FID_NOTE_VISIBLE.MenuItem.Text
 msgid  "Sho~w Comment"
-msgstr "~Тэмдэглэл харуул"
+msgstr "Тэмдэглэл ү~зүүл"
 
 #: source/ui/src/popup.src#RID_POPUP_CELLS.SID_CUT.MenuItem.Text
 msgid  "Cu~t"
@@ -12541,15 +12541,15 @@ msgstr "~Томьёо"
 
 #: source/ui/src/miscdlgs.src#RID_SCDLG_DELCONT.BTN_DELATTRS.CheckBox.Text
 msgid  "For~mats"
-msgstr "Хэ~лбэржүүлэлт"
+msgstr "~Хэлбэр"
 
 #: source/ui/src/miscdlgs.src#RID_SCDLG_DELCONT.BTN_DELNOTES.CheckBox.Text
 msgid  "~Comments"
-msgstr "~Тэмдэглэл"
+msgstr "~Зөвлөмж"
 
 #: source/ui/src/miscdlgs.src#RID_SCDLG_DELCONT.BTN_DELOBJECTS.CheckBox.Text
 msgid  "~Objects"
-msgstr "~Объектууд"
+msgstr "~Объект"
 
 #: source/ui/src/miscdlgs.src#RID_SCDLG_DELCONT.FL_FRAME.FixedLine.Text
 msgid  "Selection"

@@ -1130,7 +1130,7 @@ msgstr ""
 #: source/text/scalc/01/02120100.xhp#tit
 #, fuzzy
 msgid  "Header/Footer"
-msgstr "Topptekst/Bunntekst"
+msgstr "Topptekst/bunntekst"
 
 #: source/text/scalc/01/02120100.xhp#bm_id3153360
 msgid  "\<bookmark_value\>page styles; headers\</bookmark_value\>         \<bookmark_value\>page styles; footers\</bookmark_value\>         \<bookmark_value\>headers; defining\</bookmark_value\>         \<bookmark_value\>footers; defining\</bookmark_value\>         \<bookmark_value\>file names in headers/footers\</bookmark_value\>         \<bookmark_value\>changing;dates, automatically\</bookmark_value\>         \<bookmark_value\>dates;updating automatically\</bookmark_value\>         \<bookmark_value\>automatic date updates\</bookmark_value\>"
@@ -5831,7 +5831,7 @@ msgstr ""
 #: source/text/scalc/01/04060104.xhp#hd_id3151255.136
 #, fuzzy
 msgid  "TYPE"
-msgstr "TYPE"
+msgstr "TYPE (TYPE på engelsk)"
 
 #: source/text/scalc/01/04060104.xhp#par_id3155900.137
 msgid  "\<ahelp hid=\"HID_FUNC_TYP\"\>Returns the type of value.\</ahelp\>"
@@ -6251,17 +6251,17 @@ msgstr ""
 #: source/text/scalc/01/04060105.xhp#par_id3146100.66
 #, fuzzy
 msgid  "The arguments are either logical expressions themselves (TRUE, 1<5, 2+3=7, B8<10) that return logical values, or arrays (A1:C3) containing logical values."
-msgstr "Argumentene er enten logiske uttrykk i seg selv (SANN, 1<5, 2+3=7, B8<10) som gir logiske verdier, eller celleområder (A1:C3) som inneholder logiske verdier."
+msgstr "Argumentene er enten logiske uttrykk i seg selv (SAND, 1<5, 2+3=7, B8<10) som gir logiske verdier, eller celleområder (A1:C3) som inneholder logiske verdier."
 
 #: source/text/scalc/01/04060105.xhp#par_id3150538.67
 #, fuzzy
 msgid  "When a function expects a single value, but you entered a cell range, then the value from the cell range is taken that is in the same column or row as the formula."
-msgstr "Når en funksjon forventer en enkelt verdi, men du skriver inn et celleområde, vil verdien fra cellen i den samme kolonnen eller raden som formelen bli benyttet."
+msgstr "Når en funksjon forventer en enkelt verdi, men du skriver inn et celleområde, vil verdien fra cella i samme kolonne eller rad som formelen bli benyttet."
 
 #: source/text/scalc/01/04060105.xhp#par_id3149128.68
 #, fuzzy
 msgid  "If the entered range is outside of the current column or row of the formula, the function returns the error value #VALUE!"
-msgstr "Hvis det angitte området ligger utenfor den valgte kolonnen eller raden avformelen, vil funksjonen returnere feilverdien #VERDI!"
+msgstr "Hvis det oppgitte området ligger utenfor den valgte kolonnen eller raden fra formelen, vil funksjonen returnere feilverdien #VERDI!"
 
 #: source/text/scalc/01/04060105.xhp#hd_id3150374.31
 #, fuzzy
@@ -6553,7 +6553,7 @@ msgstr ""
 #: source/text/scalc/01/04060106.xhp#hd_id3154843.35
 #, fuzzy
 msgid  "Syntax"
-msgstr "Eksempel"
+msgstr "Syntaks"
 
 #: source/text/scalc/01/04060106.xhp#par_id3147475.36
 #, fuzzy
@@ -6597,7 +6597,7 @@ msgstr ""
 #: source/text/scalc/01/04060106.xhp#hd_id3145144.44
 #, fuzzy
 msgid  "Syntax"
-msgstr "Syntax"
+msgstr "Syntaks"
 
 #: source/text/scalc/01/04060106.xhp#par_id3153931.45
 #, fuzzy
@@ -6647,7 +6647,7 @@ msgstr ""
 #: source/text/scalc/01/04060106.xhp#par_id679647
 #, fuzzy
 msgid  "To return the angle in degrees, use the DEGREES function."
-msgstr "For å returnere vinkelen i grader, bruk GRADER-funksjonen."
+msgstr "For å returnere vinkelen i grader, bruk bruk GRADER-funksjonen."
 
 #: source/text/scalc/01/04060106.xhp#hd_id3149882.55
 #, fuzzy
@@ -6737,7 +6737,7 @@ msgstr ""
 #: source/text/scalc/01/04060106.xhp#par_id5834528
 #, fuzzy
 msgid  "To return the angle in degrees, use the DEGREES function."
-msgstr "vinkelenFor å returnere vinkelen i grader, bruk GRADER-funksjonen."
+msgstr "For å returnere vinkelen i grader, bruk GRADER-funksjonen."
 
 #: source/text/scalc/01/04060106.xhp#hd_id3147538.75
 #, fuzzy
@@ -12725,7 +12725,7 @@ msgstr ""
 #: source/text/scalc/01/04060110.xhp#hd_id3155758.244
 #, fuzzy
 msgid  "Example"
-msgstr "Opp"
+msgstr "Eksempel"
 
 #: source/text/scalc/01/04060110.xhp#par_id3154621.245
 msgid  "            \<item type=\"input\"\>=ARABIC(\"MXIV\")\</item\> returns 1014"
@@ -24138,7 +24138,7 @@ msgstr ""
 #: source/text/scalc/01/05050100.xhp#tit
 #, fuzzy
 msgid  "Rename Sheet"
-msgstr "Gi arket et nytt navn"
+msgstr "Endre arknavn"
 
 #: source/text/scalc/01/05050100.xhp#bm_id3147336
 msgid  "\<bookmark_value\>worksheet names\</bookmark_value\>\<bookmark_value\>changing; sheet names\</bookmark_value\>\<bookmark_value\>sheets; renaming\</bookmark_value\>"
@@ -31329,8 +31329,9 @@ msgid  "514"
 msgstr "514"
 
 #: source/text/scalc/05/02140000.xhp#par_id3157904.46
+#, fuzzy
 msgid  "Internal overflow"
-msgstr "Intern tekstoverflyt"
+msgstr "Intern overflyt"
 
 #: source/text/scalc/05/02140000.xhp#par_id3149352.47
 #, fuzzy

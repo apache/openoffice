@@ -113,7 +113,7 @@ msgstr ""
 
 #: source/text/scalc/00/00000402.xhp#par_id3155306.18
 msgid  "Open context menu for a sheet tab"
-msgstr "시트 탭의 콘텍스트 메뉴 열기"
+msgstr "시트 탭의 콘텍스트 메뉴"
 
 #: source/text/scalc/00/00000402.xhp#par_id3146119.14
 msgid  "Choose \<emph\>Edit – Sheets – Move/Copy\</emph\>"
@@ -345,7 +345,7 @@ msgstr ""
 
 #: source/text/scalc/00/00000405.xhp#tit
 msgid  "Format Menu"
-msgstr "메뉴 서식"
+msgstr "서식 메뉴"
 
 #: source/text/scalc/00/00000405.xhp#hd_id3150769.1
 msgid  "Format Menu"
@@ -1017,7 +1017,7 @@ msgstr ""
 
 #: source/text/scalc/01/02110000.xhp#hd_id3150037.26
 msgid  "Drag Mode"
-msgstr "드래그 모드"
+msgstr "끌기 모드"
 
 #: source/text/scalc/01/02110000.xhp#par_id3157876.28
 msgid  "\<ahelp hid=\"HID_SC_NAVIPI_DROP\"\>Opens a submenu for selecting the drag mode. You decide which action is performed when dragging and dropping an object from the Navigator into a document. Depending on the mode you select, the icon indicates whether a hyperlink, link or a copy is created.\</ahelp\>"
@@ -4657,7 +4657,7 @@ msgstr "현재 작업 환경에 대한 관련 정보를 반환합니다. 이 함
 
 #: source/text/scalc/01/04060104.xhp#hd_id7693411
 msgid  "Syntax"
-msgstr "구문ㄴ"
+msgstr "구문"
 
 #: source/text/scalc/01/04060104.xhp#par_id3928952
 msgid  "INFO(\"Type\")"
@@ -6829,7 +6829,7 @@ msgstr ""
 
 #: source/text/scalc/01/04060106.xhp#par_id3445844
 msgid  "If Value is not an integer any digits after the decimal point are ignored. The sign of Value is also ignored."
-msgstr "주어진 값이 정수가 아닐 경우 소수점 밑은 무시됩니다. 값의 부호 또한 무시됩니다."
+msgstr "만일 <emph>값</emph>가 정수가 아니면 소수점 이하의 값은 무시됩니다. 값의 부호도 무시됩니다."
 
 #: source/text/scalc/01/04060106.xhp#hd_id3154136.250
 msgid  "Example"
@@ -8893,7 +8893,7 @@ msgstr "B (수식)"
 
 #: source/text/scalc/01/04060107.xhp#par_idN10B75
 msgid  "B (result)"
-msgstr "B (결과)"
+msgstr "B(결과)"
 
 #: source/text/scalc/01/04060107.xhp#par_idN10D79
 msgid  "1"
@@ -11501,7 +11501,7 @@ msgstr ""
 
 #: source/text/scalc/01/04060110.xhp#hd_id3155758.244
 msgid  "Example"
-msgstr "예:"
+msgstr "예"
 
 #: source/text/scalc/01/04060110.xhp#par_id3154621.245
 msgid  "            \<item type=\"input\"\>=ARABIC(\"MXIV\")\</item\> returns 1014"
@@ -13385,7 +13385,7 @@ msgstr "Tab2"
 
 #: source/text/scalc/01/04060112.xhp#par_id3147086.100
 msgid  "Table number in the lower-right corner of the cell area; numbering starts at 0."
-msgstr "셀 영역 오른쪽 하단 모서리의 테이블 번호, 0부터 계산."
+msgstr "셀 영역 오른쪽 하단 모서리의 테이블 번호; 번호 매기기는 0부터 시작합니다."
 
 #: source/text/scalc/01/04060112.xhp#par_id3151270.101
 msgid  "12"
@@ -13397,7 +13397,7 @@ msgstr "Count"
 
 #: source/text/scalc/01/04060112.xhp#par_id3145202.103
 msgid  "Number of the following elements. Empty cells are not counted or passed."
-msgstr "다음 요소의 갯수. 비어있는 셀은 계산에 포함되지도 않고 전달되지도 않습니다."
+msgstr "다음 요소의 개수입니다. 빈 셀은 계산되거나 전달되지 않습니다."
 
 #: source/text/scalc/01/04060112.xhp#par_id3150879.104
 msgid  "14"
@@ -13445,7 +13445,7 @@ msgstr "Error"
 
 #: source/text/scalc/01/04060112.xhp#par_id3159181.115
 msgid  "Error number, where the value 0 is defined as \"no error.\" If the element comes from a formula cell the error value is determined by the formula."
-msgstr "0값이 \"오류 없음\"에 사용될 때의 오류 번호입니다. 요소가 수식-셀에서 얻어지는 경우 오류값은 수식에 의해 지정됩니다."
+msgstr "0 값이 \"오류 없음\"에 사용되는 경우의 오류 번호입니다. 이 요소가 수식 셀에서 얻어지는 경우 오류 값은 수식에 의해 결정됩니다."
 
 #: source/text/scalc/01/04060112.xhp#par_id3147493.116
 msgid  "22"
@@ -13561,7 +13561,7 @@ msgstr "Tab2"
 
 #: source/text/scalc/01/04060112.xhp#par_id3153747.144
 msgid  "Table number in the lower-right corner of the cell area; numbering starts at 0."
-msgstr "셀 영역 오른쪽 모서리의 테이블 번호, 0부터 계산."
+msgstr "셀 영역 오른쪽 하단 모서리의 테이블 번호, 0부터 계산."
 
 #: source/text/scalc/01/04060112.xhp#par_id3149924.145
 msgid  "12"
@@ -13573,7 +13573,7 @@ msgstr "Count"
 
 #: source/text/scalc/01/04060112.xhp#par_id3148621.147
 msgid  "Number of the following elements. Empty cells are not counted or passed."
-msgstr "다음 요소의 갯수. 비어 있는 셀은 계산에 포함되지도 않고 전달되지도 않습니다."
+msgstr "다음 요소의 갯수. 비어있는 셀은 계산에 포함되지도 않고 전달되지도 않습니다."
 
 #: source/text/scalc/01/04060112.xhp#par_id3148467.148
 msgid  "14"
@@ -13621,7 +13621,7 @@ msgstr "Error"
 
 #: source/text/scalc/01/04060112.xhp#par_id3153534.159
 msgid  "Error number, where the value 0 is defined as \"no error.\" If the element comes from a formula cell the error value is determined by the formula."
-msgstr "0 값이 \"오류 없음\"에 사용될 때의 오류 번호. 이 요소가 수식-셀에서 얻어지는 경우 오류값은 수식에 의해 지정됩니다."
+msgstr "0값이 \"오류 없음\"에 사용될 때의 오류 번호입니다. 요소가 수식-셀에서 얻어지는 경우 오류값은 수식에 의해 지정됩니다."
 
 #: source/text/scalc/01/04060112.xhp#par_id3153311.160
 msgid  "22"
@@ -14013,7 +14013,7 @@ msgstr ""
 
 #: source/text/scalc/01/04060115.xhp#hd_id3149250.22
 msgid  "Example"
-msgstr "예"
+msgstr "미리 보기"
 
 #: source/text/scalc/01/04060115.xhp#par_id3145138.23
 msgid  "\<item type=\"input\"\>=BIN2DEC(1100100)\</item\> returns 100."
@@ -14049,7 +14049,7 @@ msgstr "자리는 출력될 수의 자리수입니다."
 
 #: source/text/scalc/01/04060115.xhp#hd_id3155829.30
 msgid  "Example"
-msgstr "미리 보기"
+msgstr "예"
 
 #: source/text/scalc/01/04060115.xhp#par_id3149686.31
 msgid  "\<item type=\"input\"\>=BIN2HEX(1100100;6)\</item\> returns 000064."
@@ -14477,7 +14477,7 @@ msgstr ""
 
 #: source/text/scalc/01/04060116.xhp#hd_id3149697.49
 msgid  "Example"
-msgstr "미리 보기"
+msgstr "예"
 
 #: source/text/scalc/01/04060116.xhp#par_id3143222.50
 msgid  "            \<item type=\"input\"\>=IMABS(\"5+12j\")\</item\> returns 13."
@@ -14505,7 +14505,7 @@ msgstr "IMAGINARY(\"ComplexNumber\")"
 
 #: source/text/scalc/01/04060116.xhp#hd_id3151193.56
 msgid  "Example"
-msgstr "예"
+msgstr "미리 보기"
 
 #: source/text/scalc/01/04060116.xhp#par_id3155592.57
 msgid  "            \<item type=\"input\"\>=IMAGINARY(\"4+3j\")\</item\> returns 3."
@@ -14537,7 +14537,7 @@ msgstr ""
 
 #: source/text/scalc/01/04060116.xhp#hd_id3149048.64
 msgid  "Example"
-msgstr "미리 보기"
+msgstr "예"
 
 #: source/text/scalc/01/04060116.xhp#par_id3151393.65
 msgid  "            \<item type=\"input\"\>=IMPOWER(\"2+3i\";2)\</item\> returns -5+12i."
@@ -14565,7 +14565,7 @@ msgstr "IMARGUMENT(\"ComplexNumber\")"
 
 #: source/text/scalc/01/04060116.xhp#hd_id3153019.71
 msgid  "Example"
-msgstr "예"
+msgstr "미리 보기"
 
 #: source/text/scalc/01/04060116.xhp#par_id3159125.72
 msgid  "            \<item type=\"input\"\>=IMARGUMENT(\"3+4j\")\</item\> returns 0.927295."
@@ -19517,7 +19517,7 @@ msgstr ""
 
 #: source/text/scalc/01/04060184.xhp#par_id9282509
 msgid  "Returns 0 if no numeric value and no error was encountered in the cell range(s) passed as cell reference(s). Text cells are ignored by MIN() and MAX(). The functions MINA() and MAXA() return 0 if no value (numeric or text) and no error was encountered. Passing a literal string argument to MIN() or MAX(), e.g. MIN(\"string\"), still results in an error."
-msgstr "셀 참조로 전달된 셀 범위에 숫자값이 없거나 오류가 없으면 0을 반환합니다. MIN() 함수와 MAX() 함수는 텍스트 셀을 무시합니다. MINA() 함수와 MAXA() 함수는 값(숫자나 텍스트)이 없거나 오류가 없으면 0을 반환합니다. MIN() 나 MAX() 함수의 경우 MIN(\"Text\")과 같이 문자열을 만나면 오류를 반환합니다."
+msgstr "셀 참조가 가리키는 셀 범위에 숫자값이 없거나 오류가 없으면 0을 반환합니다. MIN() 함수와 MAX() 함수는 텍스트 셀을 무시합니다. MINA() 함수와 MAXA() 함수는 숫자값이나 텍스트가 없거나 오류가 없으면 0을 반환합니다. MIN() 나 MAX() 함수의 경우 MIN(\"Text\")과 같이 문자열을 만나면 오류값을 반환합니다."
 
 #: source/text/scalc/01/04060184.xhp#hd_id3154256.4
 msgid  "Syntax"
@@ -21077,7 +21077,7 @@ msgstr ""
 
 #: source/text/scalc/01/04060199.xhp#tit
 msgid  "Operators in $[officename] Calc"
-msgstr "$[officename] Calc 연산자"
+msgstr "$[officename] Calc의 연산자"
 
 #: source/text/scalc/01/04060199.xhp#bm_id3156445
 msgid  "\<bookmark_value\>formulas; operators\</bookmark_value\>\<bookmark_value\>operators; formula functions\</bookmark_value\>\<bookmark_value\>division sign, see also operators\</bookmark_value\>\<bookmark_value\>multiplication sign, see also operators\</bookmark_value\>\<bookmark_value\>minus sign, see also operators\</bookmark_value\>\<bookmark_value\>plus sign, see also operators\</bookmark_value\>\<bookmark_value\>text operators\</bookmark_value\>\<bookmark_value\>comparisons;operators in Calc\</bookmark_value\>\<bookmark_value\>arithmetical operators\</bookmark_value\>\<bookmark_value\>reference operators\</bookmark_value\>"
@@ -21101,15 +21101,15 @@ msgstr "이 연산자는 숫자상의 결과를 제공합니다"
 
 #: source/text/scalc/01/04060199.xhp#par_id3144768.5
 msgid  "Operator"
-msgstr "<emph>연산자</emph>"
+msgstr "연산자"
 
 #: source/text/scalc/01/04060199.xhp#par_id3157982.6
 msgid  "Name"
-msgstr "<emph>이름</emph>"
+msgstr "이름"
 
 #: source/text/scalc/01/04060199.xhp#par_id3159096.7
 msgid  "Example"
-msgstr "<emph>보기</emph>"
+msgstr "예"
 
 #: source/text/scalc/01/04060199.xhp#par_id3149126.8
 msgid  "+ (Plus)"
@@ -21205,7 +21205,7 @@ msgstr "이 연산자는 진리값 TRUE 또는 WRONG을 제공합니다."
 
 #: source/text/scalc/01/04060199.xhp#par_id3149889.31
 msgid  "Operator"
-msgstr "연산자"
+msgstr "<emph>연산자</emph>"
 
 #: source/text/scalc/01/04060199.xhp#par_id3150743.32
 msgid  "Name"
@@ -22645,7 +22645,7 @@ msgstr ""
 
 #: source/text/scalc/01/05110000.xhp#hd_id3150044.7
 msgid  "More"
-msgstr "추가 <<"
+msgstr "자세히"
 
 #: source/text/scalc/01/05110000.xhp#par_id3146920.8
 msgid  "\<ahelp hid=\"SC:MOREBUTTON:RID_SCDLG_AUTOFORMAT:BTN_MORE\"\>Opens the \<emph\>Formatting\</emph\> section, which displays the formatting overrides that can be applied to the spreadsheet. Deselecting an option keeps the format of the current spreadsheet for that format type.\</ahelp\>"
@@ -27277,7 +27277,7 @@ msgstr ""
 
 #: source/text/scalc/02/02160000.xhp#tit
 msgid  "Number Format: Add Decimal Place"
-msgstr "숫자 서식: 소수점 자리 추가"
+msgstr "숫자 서식: 소수점 이하 자릿수 추가"
 
 #: source/text/scalc/02/02160000.xhp#hd_id3150275.1
 msgid  "\<link href=\"text/scalc/02/02160000.xhp\" name=\"Number Format: Add Decimal Place\"\>Number Format: Add Decimal Place\</link\>"
@@ -27297,7 +27297,7 @@ msgstr "숫자 서식: 소수점 자리 추가"
 
 #: source/text/scalc/02/02170000.xhp#tit
 msgid  "Number Format: Delete Decimal Place"
-msgstr "숫자 서식: 소수점 자리 삭제"
+msgstr "숫자 서식: 소수점 이하 자릿수 삭제"
 
 #: source/text/scalc/02/02170000.xhp#hd_id3149164.1
 msgid  "\<link href=\"text/scalc/02/02170000.xhp\" name=\"Number Format: Delete Decimal Place\"\>Number Format: Delete Decimal Place\</link\>"
@@ -27441,7 +27441,7 @@ msgstr "취소"
 
 #: source/text/scalc/02/06070000.xhp#tit
 msgid  "Accept"
-msgstr "적용"
+msgstr "동의"
 
 #: source/text/scalc/02/06070000.xhp#bm_id3143267
 msgid  "\<bookmark_value\>formula bar; accepting inputs\</bookmark_value\>\<bookmark_value\>functions; accepting input icon\</bookmark_value\>"
@@ -27741,7 +27741,7 @@ msgstr "커서를 데이터가 포함된 시트의 마지막 셀로 이동합니
 
 #: source/text/scalc/04/01020000.xhp#hd_id3149127.92
 msgid  "Home"
-msgstr "<Home> 키"
+msgstr "(Pos1)"
 
 #: source/text/scalc/04/01020000.xhp#par_id3159205.93
 msgid  "Moves the cursor to the first cell of the current row."
@@ -27749,7 +27749,7 @@ msgstr "커서를 현재 행의 첫 번째 셀로 이동합니다."
 
 #: source/text/scalc/04/01020000.xhp#hd_id3149897.94
 msgid  "End"
-msgstr "<End>"
+msgstr "<End> 키"
 
 #: source/text/scalc/04/01020000.xhp#par_id3155095.95
 msgid  "Moves the cursor to the last cell of the current row."
@@ -28577,7 +28577,7 @@ msgstr "516"
 
 #: source/text/scalc/05/02140000.xhp#par_id3147423.52
 msgid  "Internal syntax error"
-msgstr "내부적 구문 오류"
+msgstr "내부 구문 오류"
 
 #: source/text/scalc/05/02140000.xhp#par_id3148437.53
 msgid  "Matrix is expected on the calculation stack, but is not available."
@@ -29705,7 +29705,7 @@ msgstr "셀은 자동 필터, 표준 필터, 고급 필터를 사용하여 필�
 
 #: source/text/scalc/guide/cellcopy.xhp#par_id3150044.7
 msgid  "Copy, delete, move, or format a selection of currently visible cells."
-msgstr "볼 수 있는 셀을 <emph>복사</emph>하거나 <emph>이동</emph>합니다."
+msgstr "클립보드에 복사하여 붙여넣기, 중간 마우스 버튼 사용, <Ctrl> 키를 누른 상태에서 끌어 놓기의 방법으로 표시된 셀을 복사할 수 있습니다."
 
 #: source/text/scalc/guide/cellcopy.xhp#par_id3146918.8
 msgid  "Only the visible cells of the selection are copied, deleted, moved, or formatted."
@@ -31605,7 +31605,7 @@ msgstr "10200000"
 
 #: source/text/scalc/guide/format_value_userdef.xhp#par_id3147003.15
 msgid  "10.2 Million"
-msgstr "1천 2십만"
+msgstr "10.2 백만"
 
 #: source/text/scalc/guide/format_value_userdef.xhp#par_id3166426.16
 msgid  "10.2 Million"
@@ -34601,7 +34601,7 @@ msgstr "이것은 1/1/30 이상의 날짜를 입력할 경우 이 날짜가 내�
 
 #: source/text/scalc/main0000.xhp#tit
 msgid  "Welcome to the $[officename] Calc Help"
-msgstr "$[officename] Calc 도움말에 오신 것을 환영합니다"
+msgstr "$[officename] Calc 도움말에 오신 것을 환영합니다."
 
 #: source/text/scalc/main0000.xhp#hd_id3147338.1
 msgid  "Welcome to the $[officename] Calc Help"

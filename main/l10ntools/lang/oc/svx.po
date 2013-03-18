@@ -581,7 +581,7 @@ msgstr "Editar l'estil de paragraf..."
 
 #: inc/globlmn_tmpl.hrc#SID_GROUP.#define.Text
 msgid  "~Group"
-msgstr "~Grop"
+msgstr "Acam~par"
 
 #: inc/globlmn_tmpl.hrc#SID_UNGROUP.#define.Text
 msgid  "~Ungroup"
@@ -1001,7 +1001,7 @@ msgstr "Activar l'~entèsta"
 #: source/dialog/hdft.src#RID_SVXPAGE_HEADER.CB_SHARED.CheckBox.Text
 #, fuzzy
 msgid  "Same ~content left/right"
-msgstr "~Contengut identic a esquèrra/drech"
+msgstr "~Contengut identic a esquèrra/drecha"
 
 #: source/dialog/hdft.src#RID_SVXPAGE_HEADER.FT_DIST.FixedText.Text
 #, fuzzy
@@ -3261,7 +3261,7 @@ msgstr "Grid blau"
 #: source/dialog/sdstring.src#RID_SVXSTR_ORANGE.String.Text
 #, fuzzy
 msgid  "Orange"
-msgstr "Rovilh"
+msgstr "Irange"
 
 #: source/dialog/sdstring.src#RID_SVXSTR_ARROW.String.Text
 #, fuzzy
@@ -3286,7 +3286,7 @@ msgstr "- pas cap -"
 #: source/dialog/sdstring.src#RID_SVXSTR_TRANSPARENCE.String.Text
 #, fuzzy
 msgid  "Transparency"
-msgstr "Transparéncia"
+msgstr "Transparent"
 
 #: source/dialog/sdstring.src#RID_SVXSTR_CENTERED.String.Text
 #, fuzzy
@@ -4653,8 +4653,9 @@ msgid  "Geometry"
 msgstr "Geometria"
 
 #: source/engine3d/float3d.src#RID_SVXFLOAT_3D.BTN_REPRESENTATION.ButtonImage.QuickHelpText
+#, fuzzy
 msgid  "Shading"
-msgstr "Representacion"
+msgstr "Ombras"
 
 #: source/engine3d/float3d.src#RID_SVXFLOAT_3D.BTN_LIGHT.ButtonImage.QuickHelpText
 #, fuzzy
@@ -4717,8 +4718,9 @@ msgid  "~Rotation angle"
 msgstr "~Angle de rotacion"
 
 #: source/engine3d/float3d.src#RID_SVXFLOAT_3D.MTR_END_ANGLE.MetricField.CustomUnitText
+#, fuzzy
 msgid  " degree(s)"
-msgstr " graus"
+msgstr " grau(s)"
 
 #: source/engine3d/float3d.src#RID_SVXFLOAT_3D.FT_DEPTH.FixedText.Text
 #, fuzzy
@@ -6012,8 +6014,9 @@ msgid  "Add Element"
 msgstr "Apondre un element"
 
 #: source/form/datanavi.src#RID_SVX_XFORMS_TABPAGES.TB_ITEMS.TBI_ITEM_ADD_ATTRIBUTE.ToolBoxItem.Text
+#, fuzzy
 msgid  "Add Attribute"
-msgstr "Apondre un attribut"
+msgstr "Apondre un atribut"
 
 #: source/form/datanavi.src#RID_SVX_XFORMS_TABPAGES.TB_ITEMS.TBI_ITEM_EDIT.ToolBoxItem.Text
 #, fuzzy
@@ -6701,12 +6704,14 @@ msgid  "Propert~ies..."
 msgstr "Propr~ietats..."
 
 #: source/gallery2/gallery.src#RID_SVXMN_GALLERY2.MN_ADDMENU.MenuItem.Text
+#, fuzzy
 msgid  "~Insert"
-msgstr "~Empegar"
+msgstr "~Inserir"
 
 #: source/gallery2/gallery.src#RID_SVXMN_GALLERY2.MN_ADDMENU.MN_ADD.MenuItem.Text
+#, fuzzy
 msgid  "~Copy"
-msgstr "~Copiar"
+msgstr "~Còpia"
 
 #: source/gallery2/gallery.src#RID_SVXMN_GALLERY2.MN_ADDMENU.MN_ADD_LINK.MenuItem.Text
 #, fuzzy
@@ -7055,8 +7060,9 @@ msgid  "Password protection is not supported when documents are saved in a Micro
 msgstr ""
 
 #: source/items/svxitems.src#RID_ATTR_NAMES.SID_ATTR_ZOOM.ItemList.item
+#, fuzzy
 msgid  "Scale"
-msgstr "Escala"
+msgstr "Zoom"
 
 #: source/items/svxitems.src#RID_ATTR_NAMES.SID_ATTR_BRUSH.ItemList.item
 #, fuzzy
@@ -8829,8 +8835,9 @@ msgid  "Frame"
 msgstr "Quadre"
 
 #: source/svdraw/svdstr.src#STR_ObjNameSingulEDGE.String.Text
+#, fuzzy
 msgid  "Object Connectors"
-msgstr "Connectors d'objècte"
+msgstr "Connectors d'objèctes"
 
 #: source/svdraw/svdstr.src#STR_ObjNamePluralEDGE.String.Text
 #, fuzzy
@@ -9013,12 +9020,14 @@ msgid  "Resize %1"
 msgstr "Redimensionar %1"
 
 #: source/svdraw/svdstr.src#STR_EditRotate.String.Text
+#, fuzzy
 msgid  "Rotate %1"
-msgstr "Rotacion %1"
+msgstr "Rotacion de %1"
 
 #: source/svdraw/svdstr.src#STR_EditMirrorHori.String.Text
+#, fuzzy
 msgid  "Flip %1 horizontal"
-msgstr "Revirar %1 orizontalament"
+msgstr "Revirar %1 orizontalement"
 
 #: source/svdraw/svdstr.src#STR_EditMirrorVert.String.Text
 #, fuzzy
@@ -9031,8 +9040,9 @@ msgid  "Flip %1 diagonal"
 msgstr "Revirar %1 diagonalament"
 
 #: source/svdraw/svdstr.src#STR_EditMirrorFree.String.Text
+#, fuzzy
 msgid  "Flip %1 freehand"
-msgstr "Revirar %1 liurament"
+msgstr "Revirar %1 a man levada"
 
 #: source/svdraw/svdstr.src#STR_EditShear.String.Text
 #, fuzzy
@@ -9555,8 +9565,9 @@ msgid  "on"
 msgstr "activat"
 
 #: source/svdraw/svdstr.src#STR_ItemValOFF.String.Text
+#, fuzzy
 msgid  "off"
-msgstr "desactivada"
+msgstr "desactivat"
 
 #: source/svdraw/svdstr.src#STR_ItemValYES.String.Text
 #, fuzzy
@@ -9834,8 +9845,9 @@ msgid  "Vertical shadow outline"
 msgstr "Decalatge vertical de l'ombra"
 
 #: source/svdraw/svdstr.src#STR_ItemNam_SHADOWTRANSPARENCE.String.Text
+#, fuzzy
 msgid  "Shadow transparency"
-msgstr "Transparéncia de l'ombra"
+msgstr "Transparéncia d'ombra"
 
 #: source/svdraw/svdstr.src#STR_ItemNam_SHADOW3D.String.Text
 #, fuzzy
@@ -9988,8 +10000,9 @@ msgid  "Brightness"
 msgstr "Luminositat"
 
 #: source/svdraw/svdstr.src#STR_ItemNam_GRAFCONTRAST.String.Text
+#, fuzzy
 msgid  "Contrast"
-msgstr "Contraste"
+msgstr "Contrast"
 
 #: source/svdraw/svdstr.src#STR_ItemNam_GRAFGAMMA.String.Text
 #, fuzzy
@@ -10042,8 +10055,9 @@ msgid  "Le~vel"
 msgstr "Ni~vèl"
 
 #: source/svdraw/svdstr.src#STR_ItemNam_OBJECTNAME.String.Text
+#, fuzzy
 msgid  "Object name"
-msgstr "Nom d'objècte"
+msgstr "Nom de l'objècte"
 
 #: source/svdraw/svdstr.src#STR_ItemNam_STARTANGLE.String.Text
 #, fuzzy

@@ -561,7 +561,7 @@ msgstr "~Byt namn..."
 
 #: source/customize/cfg.src#TEXT_DELETE.#define.Text
 msgid  "Delete..."
-msgstr "Ta bort..."
+msgstr "Radera..."
 
 #: source/customize/cfg.src#TEXT_DELETE_NODOTS.#define.Text
 msgid  "Delete"
@@ -757,7 +757,7 @@ msgstr "Det finns inga fler kommandon i verktygsraden. Vill du ta bort verktygsr
 
 #: source/customize/cfg.src#QBX_CONFIRM_RESET.QueryBox.Message
 msgid  "The menu configuration for %SAVE IN SELECTION% will be reset to the factory settings. Do you want to continue?"
-msgstr "Menykonfigurationen av %SAVE IN SELECTION% återställs till fabriksinställningarna. Vill du fortsätta?"
+msgstr "Menyinställningarna för %SAVE IN SELECTION% återställs till standardinställningarna. Vill du fortsätta?"
 
 #: source/customize/cfg.src#RID_SVXSTR_CONFIRM_MENU_RESET.String.Text
 msgid  "The menu configuration for %SAVE IN SELECTION% will be reset to the factory settings. Do you want to continue?"
@@ -1789,7 +1789,7 @@ msgstr "Redigera..."
 
 #: source/dialogs/hangulhanjadlg.src#RID_SVX_MDLG_HANGULHANJA_OPT.PB_HHO_DELETE.PushButton.Text
 msgid  "Delete"
-msgstr "Ta bort"
+msgstr "Radera"
 
 #: source/dialogs/hangulhanjadlg.src#RID_SVX_MDLG_HANGULHANJA_NEWDICT.ModalDialog.Text
 msgid  "New Dictionary"
@@ -2677,7 +2677,7 @@ msgstr "~Likhetssökning"
 
 #: source/dialogs/fmsearch.src#RID_SVXDLG_SEARCHFORM.PB_APPROXSETTINGS.PushButton.Text
 msgid  "..."
-msgstr "..."
+msgstr "~..."
 
 #: source/dialogs/fmsearch.src#RID_SVXDLG_SEARCHFORM.CB_HALFFULLFORMS.CheckBox.Text
 msgid  "Match character width"
@@ -4985,7 +4985,7 @@ msgstr "~Namn"
 
 #: source/options/optdict.src#RID_SFXDLG_NEWDICT.FT_DICTLANG.FixedText.Text
 msgid  "~Language"
-msgstr "S~pråk"
+msgstr "~Språk"
 
 #: source/options/optdict.src#RID_SFXDLG_NEWDICT.BTN_EXCEPT.CheckBox.Text
 msgid  "~Exception (-)"
@@ -5617,7 +5617,7 @@ msgstr "Aritmetisk"
 
 #: source/tabpages/tabarea.src#RID_SVXPAGE_TRANSPARENCE.LB_TRGR_GRADIENT_TYPES.Default.StringList.item
 msgid  "Axial"
-msgstr "Axiell"
+msgstr "Axial"
 
 #: source/tabpages/tabarea.src#RID_SVXPAGE_TRANSPARENCE.LB_TRGR_GRADIENT_TYPES.Default.StringList.item
 msgid  "Radial"
@@ -5693,7 +5693,7 @@ msgstr "Skraffering"
 
 #: source/tabpages/tabarea.src#RID_SVXPAGE_AREA.LB_AREA_TYPE.Default.StringList.item
 msgid  "Bitmap"
-msgstr "Bitmapp"
+msgstr "Bitmap"
 
 #: source/tabpages/tabarea.src#RID_SVXPAGE_AREA.FL_STEPCOUNT.FixedLine.Text
 msgid  "Increments"
@@ -7649,7 +7649,7 @@ msgstr "Justering"
 
 #: source/tabpages/paragrph.src#RID_SVXPAGE_ALIGN_PARAGRAPH.FL_ALIGN.FixedLine.Text
 msgid  "Options"
-msgstr "Tillägg"
+msgstr "Alternativ"
 
 #: source/tabpages/paragrph.src#RID_SVXPAGE_ALIGN_PARAGRAPH.BTN_LEFTALIGN.RadioButton.Text
 msgid  "~Left"
@@ -7665,7 +7665,7 @@ msgstr "C~entrerat"
 
 #: source/tabpages/paragrph.src#RID_SVXPAGE_ALIGN_PARAGRAPH.BTN_JUSTIFYALIGN.RadioButton.Text
 msgid  "Justified"
-msgstr "Marginaljusterad"
+msgstr "~Marginaljustering"
 
 #: source/tabpages/paragrph.src#RID_SVXPAGE_ALIGN_PARAGRAPH.ST_LEFTALIGN_ASIAN.String.Text
 msgid  "~Left/Top"
@@ -8073,7 +8073,7 @@ msgstr "Förhandsgranskning"
 
 #: source/tabpages/transfrm.src#RID_SVXPAGE_POSITION_SIZE.TabPage.Text
 msgid  "Position and Size"
-msgstr "Placering och storlek"
+msgstr "Position och storlek"
 
 #: source/tabpages/transfrm.src#RID_SVXPAGE_POSITION_SIZE.FL_POSITION.FixedLine.Text
 msgid  "Position"
@@ -8281,7 +8281,7 @@ msgstr " grader"
 
 #: source/tabpages/transfrm.src#_POS_SIZE_TEXT.#define.Text
 msgid  "Position and Size"
-msgstr "Position och storlek"
+msgstr "Placering och storlek"
 
 #: source/tabpages/transfrm.src#RID_SVXDLG_TRANSFORM.TabDialog.Text
 msgid  "Position and Size"
@@ -8389,11 +8389,11 @@ msgstr "Skalning"
 
 #: source/tabpages/grfpage.src#RID_SVXPAGE_GRFCROP.FT_WIDTHZOOM.FixedText.Text
 msgid  "~Width"
-msgstr "~Bredd"
+msgstr "Br~edd"
 
 #: source/tabpages/grfpage.src#RID_SVXPAGE_GRFCROP.FT_HEIGHTZOOM.FixedText.Text
 msgid  "H~eight"
-msgstr "Höj~d"
+msgstr "H~öjd"
 
 #: source/tabpages/grfpage.src#RID_SVXPAGE_GRFCROP.FL_SIZE.FixedLine.Text
 msgid  "Image size"
@@ -8765,7 +8765,7 @@ msgstr "Färg"
 
 #: source/tabpages/chardlg.src#RID_SVXPAGE_CHAR_NAME.FT_COLOR2.FixedText.Text
 msgid  "Font ~color"
-msgstr "Tecken~färg"
+msgstr "Teckenfär~g"
 
 #: source/tabpages/chardlg.src#RID_SVXPAGE_CHAR_NAME.STR_CHARNAME_NOSTYLE.String.Text
 msgid  "No %1"

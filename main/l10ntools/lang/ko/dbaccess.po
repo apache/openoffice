@@ -541,7 +541,7 @@ msgstr "전체 진행률:"
 
 #: source/ext/macromigration/macromigration.src#TP_MIGRATE.FT_OBJECT_COUNT_PROGRESS.FixedText.Text
 msgid  "document $current$ of $overall$"
-msgstr "$overall$의 문서 $current$"
+msgstr "문서 $current$/$overall$"
 
 #: source/ext/macromigration/macromigration.src#TP_MIGRATE.FT_MIGRATION_DONE.FixedText.Text
 msgid  "All forms and reports have been successfully processed. Press 'Next' to show a detailed summary."
@@ -725,7 +725,7 @@ msgstr "양식..."
 
 #: source/ui/app/app.src#RID_MENU_APP_NEW.SID_APP_NEW_REPORT.MenuItem.Text
 msgid  "Report..."
-msgstr "보고..."
+msgstr "보고서..."
 
 #: source/ui/app/app.src#RID_MENU_APP_NEW.SID_DB_NEW_VIEW_SQL.MenuItem.Text
 msgid  "View (Simple)..."
@@ -1269,7 +1269,7 @@ msgstr "%PRODUCTNAME Base"
 
 #: source/ui/dlg/sqlmessage.src#DLG_SQLEXCEPTIONCHAIN.FL_DETAILS.FixedLine.Text
 msgid  "Details"
-msgstr "자세히"
+msgstr "상세"
 
 #: source/ui/dlg/sqlmessage.src#DLG_SQLEXCEPTIONCHAIN.FT_ERRORLIST.FixedText.Text
 msgid  "Error ~list:"

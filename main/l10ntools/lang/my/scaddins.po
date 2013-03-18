@@ -579,8 +579,9 @@ msgid  "The start date"
 msgstr "အစ ရက်စွဲ"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Yearfrac.4.String.Text
+#, fuzzy
 msgid  "End date"
-msgstr "အစ ရက်စွဲ"
+msgstr "အဆုံး ရက်စွဲ"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Yearfrac.5.String.Text
 #, fuzzy
@@ -590,7 +591,7 @@ msgstr "အဆုံး ရက်စွဲ"
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Yearfrac.6.String.Text
 #, fuzzy
 msgid  "Basis"
-msgstr "အ​ခြေခံ"
+msgstr "အခြေခံ"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Yearfrac.7.String.Text
 #, fuzzy
@@ -2056,7 +2057,7 @@ msgstr "ပါ"
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Accrint.11.String.Text
 #, fuzzy
 msgid  "The par value"
-msgstr "တန်ဖိုးတစ်ခု"
+msgstr "ပါတန်ဖိုး"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Accrint.12.String.Text
 #, fuzzy
@@ -2076,7 +2077,7 @@ msgstr "အခြေခံ"
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Accrint.15.String.Text
 #, fuzzy
 msgid  "The basis"
-msgstr "အ​ခြေခံ"
+msgstr "အခြေခံ"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Accrintm.1.String.Text
 #, fuzzy
@@ -2151,12 +2152,12 @@ msgstr "နေရာချထားသည်"
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Received.4.String.Text
 #, fuzzy
 msgid  "Maturity"
-msgstr "ကြွေးပေးရန်အချိန်စေ့သည်"
+msgstr "ကြွေးပေးရန်အချိန်စေ့ခြင်း"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Received.5.String.Text
 #, fuzzy
 msgid  "The maturity"
-msgstr "ကြွေးပေးးရန်အချိန်စေ့ခြင်း"
+msgstr "ကြွေးပေးရန်အချိန်စေ့ခြင်း"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Received.6.String.Text
 #, fuzzy
@@ -2211,7 +2212,7 @@ msgstr "ကြွေးပေးရန်အချိန်စေ့ခြင်
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Disc.5.String.Text
 #, fuzzy
 msgid  "The maturity"
-msgstr "ကြွေးပေးရန်အချိန်စေ့ခြင်း"
+msgstr "ကြွေးပေးးရန်အချိန်စေ့ခြင်း"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Disc.6.String.Text
 #, fuzzy
@@ -2266,7 +2267,7 @@ msgstr "ကြွေးပေးရန်အချိန်စေ့ခြင်
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Duration.5.String.Text
 #, fuzzy
 msgid  "The maturity"
-msgstr "ကြွေးပေးရန်အချိန်စေ့သည်"
+msgstr "ကြွေးပေးရန်အချိန်စေ့ခြင်း"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Duration.6.String.Text
 #, fuzzy
@@ -2371,27 +2372,27 @@ msgstr "လက်ရှိတန်ဖိုး"
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Cumprinc.8.String.Text
 #, fuzzy
 msgid  "Start period"
-msgstr "အစ ကာလ"
+msgstr "အစပြုကာလ"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Cumprinc.9.String.Text
 #, fuzzy
 msgid  "The start period"
-msgstr "အစ ကာလ"
+msgstr "အစပြုကာလ"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Cumprinc.10.String.Text
 #, fuzzy
 msgid  "End period"
-msgstr "အဆုံး ကာလ"
+msgstr "အဆုံးသတ်ကာလ"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Cumprinc.11.String.Text
 #, fuzzy
 msgid  "The end period"
-msgstr "အဆုံး ကာလ"
+msgstr "အဆုံးသတ်ကာလ"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Cumprinc.12.String.Text
 #, fuzzy
 msgid  "Type"
-msgstr "ပုံသဏ္ဍာန်"
+msgstr "အမျိုးအစား"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Cumprinc.13.String.Text
 #, fuzzy
@@ -2486,7 +2487,7 @@ msgstr "ကြွေးပေးရန်အချိန်စေ့သည်"
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Price.5.String.Text
 #, fuzzy
 msgid  "The maturity"
-msgstr "ကြွေးပေးရန်အချိန်စေ့ခြင်း"
+msgstr "ကြွေးပေးရန်အချိန်စေ့သည်"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Price.6.String.Text
 #, fuzzy
@@ -3996,7 +3997,7 @@ msgstr "ရက်စွဲ"
 #: source/datefunc/datefunc.src#RID_DATE_FUNCTION_DESCRIPTIONS.DATE_FUNCDESC_IsLeapYear.3.String.Text
 #, fuzzy
 msgid  "Any day in the desired year"
-msgstr "ဆန္ဒရှိသောနှစ်အတွင်းမှကြိုက်နှစ်သက်ရာရက်"
+msgstr "ဆန္ဒရှိသောနှစ်အတွင်းမှကြိက်နှစ်သက်ရာရက်"
 
 #: source/datefunc/datefunc.src#RID_DATE_FUNCTION_DESCRIPTIONS.DATE_FUNCDESC_DaysInMonth.1.String.Text
 #, fuzzy

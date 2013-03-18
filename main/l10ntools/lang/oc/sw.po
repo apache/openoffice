@@ -109,7 +109,7 @@ msgstr "Convertir tablèu -> tèxte"
 
 #: source/core/undo/undo.src#STR_COPY_UNDO.String.Text
 msgid  "Copy: $1"
-msgstr "Copiar : $1"
+msgstr "Copia : $1"
 
 #: source/core/undo/undo.src#STR_REPLACE_UNDO.String.Text
 msgid  "Replace $1 $2 $3"
@@ -261,7 +261,7 @@ msgstr "Arrestar"
 
 #: source/core/undo/undo.src#STR_AUTOCORRECT.String.Text
 msgid  "AutoCorrect"
-msgstr "Autocorreccion"
+msgstr "CorreccionAuto"
 
 #: source/core/undo/undo.src#STR_MERGE_TABLE.String.Text
 msgid  "Merge table"
@@ -741,7 +741,7 @@ msgstr "Es pas un fichièr WinWord97."
 
 #: source/ui/app/error.src#RID_SW_ERRHDL.ERR_CODE ( ERRCODE_CLASS_READ , ERR_FORMAT_FILE_ROWCOL ).String.Text
 msgid  "Format error discovered in the file in sub-document $(ARG1) at $(ARG2)(row,col)."
-msgstr "Error de format dins lo fichièr del sosdocument $(ARG1) a $(ARG2)(row,col)."
+msgstr "Error de format descobrida dins lo fichièr del sosdocument $(ARG1) a $(ARG2)(row,col)."
 
 #: source/ui/app/error.src#RID_SW_ERRHDL.ERR_CODE ( ERRCODE_CLASS_WRITE , ERR_SWG_WRITE_ERROR ).String.Text
 msgid  "Error writing file."
@@ -753,11 +753,11 @@ msgstr "Marrida version del document AutoText."
 
 #: source/ui/app/error.src#RID_SW_ERRHDL.ERR_CODE ( ERRCODE_CLASS_WRITE , ERR_WRITE_ERROR_FILE ).String.Text
 msgid  "Error in writing sub-document $(ARG1)."
-msgstr "Error dins l'escritura del sosdocument $(ARG1)."
+msgstr "Error pendent l'escritura del sosdocument $(ARG1)."
 
 #: source/ui/app/error.src#RID_SW_ERRHDL.ERR_CODE ( ERRCODE_CLASS_READ , ERR_SWG_INTERNAL_ERROR ).String.Text
 msgid  "Internal error in %PRODUCTNAME Writer file format."
-msgstr "Error intèrna dins un format del fichièr Writer %PRODUCTNAME."
+msgstr "Error intèrna dins lo format de fichièr Writer %PRODUCTNAME."
 
 #: source/ui/app/error.src#RID_SW_ERRHDL.ERR_CODE ( ERRCODE_CLASS_WRITE , ERR_SWG_INTERNAL_ERROR ).String.Text
 msgid  "Internal error in %PRODUCTNAME Writer file format."
@@ -1530,7 +1530,7 @@ msgstr "Editar lo contorn..."
 #: source/ui/app/mn.src#MN_MOUSE_FRAME_BEGIN.MN_WRAP.MenuItem.Text
 #, fuzzy
 msgid  "~Wrap"
-msgstr "Adaptacion"
+msgstr "Adaptacion del tèxte"
 
 #: source/ui/app/mn.src#MN_MOUSE_FRAME_BEGIN.MN_WRAP.FN_FRAME_NOWRAP.MenuItem.Text
 #, fuzzy
@@ -1540,7 +1540,7 @@ msgstr "Pas d'adaptacion"
 #: source/ui/app/mn.src#MN_MOUSE_FRAME_BEGIN.MN_WRAP.FN_FRAME_WRAP.MenuItem.Text
 #, fuzzy
 msgid  "~Page Wrap"
-msgstr "Adaptacion a la ~pagina"
+msgstr "Adaptacion a la pagina"
 
 #: source/ui/app/mn.src#MN_MOUSE_FRAME_BEGIN.MN_WRAP.FN_FRAME_WRAP_IDEAL.MenuItem.Text
 #, fuzzy
@@ -1555,7 +1555,7 @@ msgstr "Adaptacion a travèrs"
 #: source/ui/app/mn.src#MN_MOUSE_FRAME_BEGIN.MN_WRAP.FN_FRAME_WRAPTHRU_TRANSP.MenuItem.Text
 #, fuzzy
 msgid  "In ~Background"
-msgstr "Dins segond plan"
+msgstr "Al segond plan"
 
 #: source/ui/app/mn.src#MN_MOUSE_FRAME_BEGIN.MN_WRAP.FN_WRAP_ANCHOR_ONLY.MenuItem.Text
 #, fuzzy
@@ -2073,8 +2073,9 @@ msgid  "Outline & Numbering"
 msgstr "Contorn & numeracion"
 
 #: source/ui/chrdlg/paradlg.src#DLG_PARA.1.TP_TABULATOR.PageItem.Text
+#, fuzzy
 msgid  "Tabs"
-msgstr "Tabulacions"
+msgstr "Onglets"
 
 #: source/ui/chrdlg/paradlg.src#DLG_PARA.1.TP_DROPCAPS.PageItem.Text
 #, fuzzy
@@ -2442,8 +2443,9 @@ msgid  "Form control~s"
 msgstr "Contraròtles de formulari"
 
 #: source/ui/config/optdlg.src#TP_OPTPRINT_PAGE.CB_BACKGROUND.CheckBox.Text
+#, fuzzy
 msgid  "Page ba~ckground"
-msgstr "Segond plan de pagina"
+msgstr "Segond plan de la pagina"
 
 #: source/ui/config/optdlg.src#TP_OPTPRINT_PAGE.CB_BLACK_FONT.CheckBox.Text
 #, fuzzy
@@ -3944,8 +3946,9 @@ msgid  "2. Customi~ze salutation"
 msgstr "2. Personalizar las salutacions"
 
 #: source/ui/dbui/mmaddressblockpage.src#DLG_MM_CUSTOMIZEADDRESSBLOCK.FI_PREVIEW.FixedText.Text
+#, fuzzy
 msgid  "Preview"
-msgstr "Previzualisacion"
+msgstr "Previsualizacion"
 
 #: source/ui/dbui/mmaddressblockpage.src#DLG_MM_CUSTOMIZEADDRESSBLOCK.ST_SALUTATION.String.Text
 #, fuzzy
@@ -4683,8 +4686,9 @@ msgid  "Start from ~existing document"
 msgstr "Començar dempuèi lo document ~existissent"
 
 #: source/ui/dbui/mmdocselectpage.src#DLG_MM_DOCSELECT_PAGE.PB_LOADDOC.PushButton.Text
+#, fuzzy
 msgid  "B~rowse..."
-msgstr "~Percórrer..."
+msgstr "Percórrer..."
 
 #: source/ui/dbui/mmdocselectpage.src#DLG_MM_DOCSELECT_PAGE.RB_LOADTEMPLATE.RadioButton.Text
 #, fuzzy
@@ -5475,8 +5479,9 @@ msgid  "Indents"
 msgstr "Alinèas"
 
 #: source/ui/dialog/regionsw.src#DLG_INSERT_SECTION.1.TP_BACKGROUND.PageItem.Text
+#, fuzzy
 msgid  "Background"
-msgstr "Rèire plans"
+msgstr "Rèire plan"
 
 #: source/ui/dialog/regionsw.src#DLG_INSERT_SECTION.1.TP_SECTION_FTNENDNOTES.PageItem.Text
 #, fuzzy
@@ -6414,8 +6419,9 @@ msgid  "Position"
 msgstr "Posicion"
 
 #: source/ui/envelp/envfmt.src#TP_ENV_FMT.TXT_ADDR_LEFT.FixedText.Text
+#, fuzzy
 msgid  "from left"
-msgstr "d'esquèrra"
+msgstr "de l'esquèrra"
 
 #: source/ui/envelp/envfmt.src#TP_ENV_FMT.TXT_ADDR_TOP.FixedText.Text
 #, fuzzy
@@ -7382,8 +7388,9 @@ msgid  "Any record"
 msgstr "Que que siá l'enregistrament"
 
 #: source/ui/fldui/fldui.src#STR_DBSETNUMBERFLD.String.Text
+#, fuzzy
 msgid  "Record number"
-msgstr "Numèro d'enregistrament"
+msgstr "Numèro de l'enregistrament"
 
 #: source/ui/fldui/fldui.src#STR_PREVPAGEFLD.String.Text
 #, fuzzy
@@ -8080,8 +8087,9 @@ msgid  "Asian Layout"
 msgstr "Disposicion asiatica"
 
 #: source/ui/fmtui/tmpdlg.src#DLG_TEMPLATE_1.1.TP_BACKGROUND.PageItem.Text
+#, fuzzy
 msgid  "Background"
-msgstr "Fons"
+msgstr "Segond plan"
 
 #: source/ui/fmtui/tmpdlg.src#DLG_TEMPLATE_2.TabDialog.Text
 #, fuzzy
@@ -9547,8 +9555,9 @@ msgid  "Chapter"
 msgstr "Capítol"
 
 #: source/ui/index/cnttab.src#TP_TOX_SELECT.FT_LEVEL.FixedText.Text
+#, fuzzy
 msgid  "Evaluate up to level"
-msgstr "Evaluar cap al nivèl"
+msgstr "Evaluar fins al nivèl"
 
 #: source/ui/index/cnttab.src#TP_TOX_SELECT.FL_CREATEFROM.FixedLine.Text
 #, fuzzy
@@ -9566,8 +9575,9 @@ msgid  "~Additional Styles"
 msgstr "Estils ~suplementaris"
 
 #: source/ui/index/cnttab.src#TP_TOX_SELECT.ST_USER_ADDSTYLE.String.Text
+#, fuzzy
 msgid  "Styl~es"
-msgstr "Estils"
+msgstr "Esti~ls"
 
 #: source/ui/index/cnttab.src#TP_TOX_SELECT.CB_TOXMARKS.CheckBox.Text
 #, fuzzy
@@ -11428,8 +11438,9 @@ msgid  "Endnotes"
 msgstr "Nòtas de fin"
 
 #: source/ui/misc/docfnote.src#TP_FOOTNOTEOPTION.FL_NUM.FixedLine.Text
+#, fuzzy
 msgid  "AutoNumbering"
-msgstr "Autonumeracion"
+msgstr "Numerotacion automatica"
 
 #: source/ui/misc/docfnote.src#TP_FOOTNOTEOPTION.FT_NUMTYPE.FixedText.Text
 #, fuzzy
@@ -11507,8 +11518,9 @@ msgid  "Character Styles"
 msgstr "Estils de caractèr"
 
 #: source/ui/misc/docfnote.src#TP_FOOTNOTEOPTION.FT_ANCHR_CHARFMT.FixedText.Text
+#, fuzzy
 msgid  "Te~xt area"
-msgstr "~Airal de tèxte"
+msgstr "Airal de tè~xte"
 
 #: source/ui/misc/docfnote.src#TP_FOOTNOTEOPTION.FT_TEXT_CHARFMT.FixedText.Text
 #, fuzzy
@@ -12310,8 +12322,9 @@ msgid  "Frame"
 msgstr "Quadre"
 
 #: source/ui/shells/shells.src#STR_SHELLNAME_GRAPHIC.String.Text
+#, fuzzy
 msgid  "Graphics"
-msgstr "Grafisme"
+msgstr "Imatges"
 
 #: source/ui/shells/shells.src#STR_SHELLNAME_OBJECT.String.Text
 #, fuzzy
@@ -13327,7 +13340,7 @@ msgstr "Aplicar l'estil \"Còs de tèxt\""
 #: source/ui/utlui/utlui.src#RID_SHELLRES_AUTOFMTSTRS.STR_AUTOFMTREDL_SET_TMPL_INDENT.String.Text
 #, fuzzy
 msgid  "Set \"Text body indent\" Style"
-msgstr "Aplicar l'estil \"Alinèa de còs de tèxte\""
+msgstr "Aplicar l'estil \"Alinèa\""
 
 #: source/ui/utlui/utlui.src#RID_SHELLRES_AUTOFMTSTRS.STR_AUTOFMTREDL_SET_TMPL_NEG_INDENT.String.Text
 #, fuzzy
@@ -13442,7 +13455,7 @@ msgstr "Quadres de tèxte"
 #: source/ui/utlui/utlui.src#STR_CONTENT_TYPE_GRAPHIC.String.Text
 #, fuzzy
 msgid  "Graphics"
-msgstr "Imatges"
+msgstr "Imtges"
 
 #: source/ui/utlui/utlui.src#STR_CONTENT_TYPE_OLE.String.Text
 #, fuzzy
@@ -14180,7 +14193,7 @@ msgstr "Bascuolar"
 #: source/ui/utlui/navipi.src#DLG_NAVIGATION_PI.TB_GLOBAL.FN_GLOBAL_EDIT.ToolBoxItem.Text
 #, fuzzy
 msgid  "Edit"
-msgstr "Edicion"
+msgstr "Editar"
 
 #: source/ui/utlui/navipi.src#DLG_NAVIGATION_PI.TB_GLOBAL.FN_GLOBAL_UPDATE.ToolBoxItem.Text
 #, fuzzy
@@ -14534,7 +14547,7 @@ msgstr "Formula"
 #: source/ui/utlui/poolfmt.src#STR_POOLFRM_MARGINAL.String.Text
 #, fuzzy
 msgid  "Marginalia"
-msgstr "Nòtas de marge"
+msgstr "Nòta en marge"
 
 #: source/ui/utlui/poolfmt.src#STR_POOLFRM_WATERSIGN.String.Text
 #, fuzzy

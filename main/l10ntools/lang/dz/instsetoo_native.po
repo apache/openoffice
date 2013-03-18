@@ -233,7 +233,7 @@ msgstr "ཆུ་ཚོད་ལྷག་ལུས་: {[1] minutes }{[2] སྐ
 #: inc_openoffice/windows/msi_languages/Error.ulf#OOO_ERROR_16
 #, fuzzy
 msgid  "Out of memory. Shut down other applications before retrying."
-msgstr "དྲན་ཚད་ཀྱི་བདའ་མ་ཟུནམ། འབད་རྩོལ་མ་འབད་བའི་ཧེ་མ་ གློག་རིམ་གཞན་ཚུ་ཁ་བསྡམས།"
+msgstr "དྲན་ཚད་ཀྱི་བདའ་མ་ཛུནམ། སླར་འབད་རྩོལ་མ་བསྐྱེད་པའི་ཧེ་མ་ གློག་རིམ་གཞན་ཚུ་ སྒོ་བསྡམས།"
 
 #: inc_openoffice/windows/msi_languages/Error.ulf#OOO_ERROR_17
 #, fuzzy
@@ -1102,7 +1102,7 @@ msgstr "ལག་ལེན་འཐབ་བཏུབ་མི་ཚུ་ བ�
 #: inc_openoffice/windows/msi_languages/ActionTe.ulf#OOO_ACTIONTEXT_7
 #, fuzzy
 msgid  "File: [1]"
-msgstr "ཡིག་སྣོད་: [1]"
+msgstr "ཡིག་སྣོད: [1]"
 
 #: inc_openoffice/windows/msi_languages/ActionTe.ulf#OOO_ACTIONTEXT_8
 #, fuzzy
@@ -1117,12 +1117,12 @@ msgstr "ཨའི་ཨའི་ཨེསི་ བར་ཅུ་ཡལ་ ར�
 #: inc_openoffice/windows/msi_languages/ActionTe.ulf#OOO_ACTIONTEXT_10
 #, fuzzy
 msgid  "Searching for qualifying products"
-msgstr "ཁྱོད་ཆོས་ཚང་བའི་ཐོན་སྐྱེད་ འཚོལ་དོ།"
+msgstr "ཁྱད་ཆོས་ཚང་མི་ཐོན་སྐྱེད་ཚུ་འཚོལ་དོ།"
 
 #: inc_openoffice/windows/msi_languages/ActionTe.ulf#OOO_ACTIONTEXT_11
 #, fuzzy
 msgid  "Computing space requirements"
-msgstr "གློག་རིག་གི་བར་སྟོང་དགོས་མཁོ།"
+msgstr "གློག་རིག་ནང་བཙུགས་ནིའི་ བར་སྟོང་དགོས་མཁོ།"
 
 #: inc_openoffice/windows/msi_languages/ActionTe.ulf#OOO_ACTIONTEXT_12
 #, fuzzy
@@ -1147,7 +1147,7 @@ msgstr "མགྱོགས་ཐབས་གསར་བསྐྲུན་འབ
 #: inc_openoffice/windows/msi_languages/ActionTe.ulf#OOO_ACTIONTEXT_16
 #, fuzzy
 msgid  "Shortcut: [1]"
-msgstr "མགྱོགས་ཐབས་[1]"
+msgstr "གྱོགས་ཐབས་: [1]"
 
 #: inc_openoffice/windows/msi_languages/ActionTe.ulf#OOO_ACTIONTEXT_17
 #, fuzzy
@@ -1157,7 +1157,7 @@ msgstr "ཞབས་ཏོག་ཚུ་བཏོན་གཏང་དོ།"
 #: inc_openoffice/windows/msi_languages/ActionTe.ulf#OOO_ACTIONTEXT_18
 #, fuzzy
 msgid  "Service: [1]"
-msgstr "ཞབས་ཏོག་: [1]"
+msgstr "ཞབས་ཏོག: [1]"
 
 #: inc_openoffice/windows/msi_languages/ActionTe.ulf#OOO_ACTIONTEXT_19
 #, fuzzy
@@ -1167,7 +1167,7 @@ msgstr "ཡིག་སྣོད་རྫུན་མ་ཚུ་ གསར་�
 #: inc_openoffice/windows/msi_languages/ActionTe.ulf#OOO_ACTIONTEXT_20
 #, fuzzy
 msgid  "File: [1],  Directory: [9],  Size: [6]"
-msgstr "ཡིག་སྣོད: [1] སྣོད་ཐོ: [9]  ཚད: [6]"
+msgstr "ཡིག་སྣོད་: [1]  སྣོད་ཐོ: [9]  ཚད་: [6]"
 
 #: inc_openoffice/windows/msi_languages/ActionTe.ulf#OOO_ACTIONTEXT_21
 #, fuzzy
@@ -1212,7 +1212,7 @@ msgstr "ཡིག་སྣོད་གསརཔ་ འདྲ་བཤུས་�
 #: inc_openoffice/windows/msi_languages/ActionTe.ulf#OOO_ACTIONTEXT_29
 #, fuzzy
 msgid  "File: [1],  Directory: [9],  Size: [6]"
-msgstr "ཡིག་སྣོད་: [1]  སྣོད་ཐོ་: [9]  ཚད་: [6]"
+msgstr "ཡིག་སྣོད: [1] སྣོད་ཐོ: [9]  ཚད: [6]"
 
 #: inc_openoffice/windows/msi_languages/ActionTe.ulf#OOO_ACTIONTEXT_30
 #, fuzzy
@@ -1292,7 +1292,7 @@ msgstr "ཁྱད་ཆོས་ཚང་མི་ཆ་ཤས་ དེབ་�
 #: inc_openoffice/windows/msi_languages/ActionTe.ulf#OOO_ACTIONTEXT_45
 #, fuzzy
 msgid  "Component ID: [1], Qualifier: [2]"
-msgstr "ཆ་ཤས་ཨའི་ཌི་: [1], ཁྱད་ཆོས་ཚང་མི་: [2]"
+msgstr "ཆ་ཤས་ ཨའི་ཌི་: [1] ཁྱད་ཆོས་ཚང་མི: [2]"
 
 #: inc_openoffice/windows/msi_languages/ActionTe.ulf#OOO_ACTIONTEXT_46
 #, fuzzy
@@ -1317,7 +1317,7 @@ msgstr "དབྱེ་རིགས་སར་བར་ ཐོ་འགོད�
 #: inc_openoffice/windows/msi_languages/ActionTe.ulf#OOO_ACTIONTEXT_50
 #, fuzzy
 msgid  "Class ID: [1]"
-msgstr "དབྱེ་རིགས་ ཨའི་ཌི་: [1]"
+msgstr "དབྱེ་རིགས་ ཨའི་ཌི: [1]"
 
 #: inc_openoffice/windows/msi_languages/ActionTe.ulf#OOO_ACTIONTEXT_51
 #, fuzzy
@@ -1337,7 +1337,7 @@ msgstr "རྒྱ་བསྐྱེད་ སར་བར་ཐོ་འགོ�
 #: inc_openoffice/windows/msi_languages/ActionTe.ulf#OOO_ACTIONTEXT_54
 #, fuzzy
 msgid  "Extension: [1]"
-msgstr "རྒྱ་བསྐྱེད་: [1]"
+msgstr "རྒྱ་བསྐྱེད: [1]"
 
 #: inc_openoffice/windows/msi_languages/ActionTe.ulf#OOO_ACTIONTEXT_55
 #, fuzzy
@@ -1347,7 +1347,7 @@ msgstr "ཡིག་གཟུགས་ཐོ་འགོད་འབད་དོ
 #: inc_openoffice/windows/msi_languages/ActionTe.ulf#OOO_ACTIONTEXT_56
 #, fuzzy
 msgid  "Font: [1]"
-msgstr "ཡིག་གཟུགས་: [1]"
+msgstr "ཡིག་གཟུགས: [1]"
 
 #: inc_openoffice/windows/msi_languages/ActionTe.ulf#OOO_ACTIONTEXT_57
 #, fuzzy
@@ -1357,7 +1357,7 @@ msgstr "ཨེམ་ཨའི་ཨེམ་ཨི་ བརྡ་དོན་ �
 #: inc_openoffice/windows/msi_languages/ActionTe.ulf#OOO_ACTIONTEXT_58
 #, fuzzy
 msgid  "MIME Content Type: [1], Extension: [2]"
-msgstr "ཨེམ་ཨའི་ཨེམ་ཨི་ ནང་དོན་གྱི་དབྱེ་བ་: [1], རྒྱ་བསྐྱེད་: [2]"
+msgstr "MIME ནང་དོན་གྱི་དབྱེ་བ: [1], རྒྱ་བསྐྱེད: [2]"
 
 #: inc_openoffice/windows/msi_languages/ActionTe.ulf#OOO_ACTIONTEXT_59
 #, fuzzy
@@ -1407,17 +1407,17 @@ msgstr "ཡིག་སྣོད་རྫུན་མ་བཟོ་ཡོད་
 #: inc_openoffice/windows/msi_languages/ActionTe.ulf#OOO_ACTIONTEXT_68
 #, fuzzy
 msgid  "File: [1], Directory: [9]"
-msgstr "ཡིག་སྣོད་: [1], སྣོད་ཐོ: [9]"
+msgstr "ཡིག་སྣོད: [1], སྣོད་ཐོ: [9]"
 
 #: inc_openoffice/windows/msi_languages/ActionTe.ulf#OOO_ACTIONTEXT_69
 #, fuzzy
 msgid  "Updating environment strings"
-msgstr "མཐའ་འཁོར་གྱི་ཡིག་རྒྱུན་ དུས་མཐུན་བཟོ་དོ།"
+msgstr "མཐའ་འཁོར་གྱི་ཡིག་རྒྱུན་དུས་མཐུན་བཟོ་དོ།"
 
 #: inc_openoffice/windows/msi_languages/ActionTe.ulf#OOO_ACTIONTEXT_70
 #, fuzzy
 msgid  "Name: [1], Value: [2], Action [3]"
-msgstr "མིང་: [1], གནས་གོང་: [2], བྱ་བ [3]"
+msgstr "མིང་: [1], གནས་གོང་: [2], བྱ་བ་ [3]"
 
 #: inc_openoffice/windows/msi_languages/ActionTe.ulf#OOO_ACTIONTEXT_71
 #, fuzzy
@@ -1457,7 +1457,7 @@ msgstr "ཨའི་ཨེན་ཨའི་ ཡིག་སྣོད་ཐོ�
 #: inc_openoffice/windows/msi_languages/ActionTe.ulf#OOO_ACTIONTEXT_78
 #, fuzzy
 msgid  "File: [1],  Section: [2],  Key: [3], Value: [4]"
-msgstr "ཡིག་སྣོད་: [1],  དབྱེ་ཚན་: [2],  གཙོ་བོ་: [3], གནས་གོང་: [4]"
+msgstr "ཡིག་སྣོད་:[1],  དབྱེ་ཚན: [2],  གཙོ་བོ་: [3], གནས་གོང་: [4]"
 
 #: inc_openoffice/windows/msi_languages/ActionTe.ulf#OOO_ACTIONTEXT_79
 #, fuzzy
@@ -1517,7 +1517,7 @@ msgstr "ཚད་གཞི་ ཐོ་འགོད་འབད་དོ།"
 #: inc_openoffice/windows/msi_languages/ActionTe.ulf#OOO_ACTIONTEXT_90
 #, fuzzy
 msgid  "File: [1], Folder: [2]"
-msgstr "ཡིག་སྣོད་: [1], སྣོད་འཛིན: [2]"
+msgstr "ཡིག་སྣོད་: [1], སྣོད་འཛིན་: [2]"
 
 #: inc_openoffice/windows/msi_languages/ActionTe.ulf#OOO_ACTIONTEXT_91
 #, fuzzy
@@ -1542,7 +1542,7 @@ msgstr "ཞབས་ཏོག་ཚུ་ འགོ་བཙུགས་དོ�
 #: inc_openoffice/windows/msi_languages/ActionTe.ulf#OOO_ACTIONTEXT_95
 #, fuzzy
 msgid  "Service: [1]"
-msgstr "ཞབས་ཏོག: [1]"
+msgstr "ཞབས་ཏོག་: [1]"
 
 #: inc_openoffice/windows/msi_languages/ActionTe.ulf#OOO_ACTIONTEXT_96
 #, fuzzy
@@ -1805,7 +1805,7 @@ msgstr "ཆ་མེད།"
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_5
 #, fuzzy
 msgid  "&Look in:"
-msgstr "ནང་ན་ བལྟ།(&L)"
+msgstr "ནང་ན་བལྟ།(&L)"
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_6
 #, fuzzy
@@ -1815,7 +1815,7 @@ msgstr "འགྲོ་ཡུལ་སྣོད་འཛིན་ལུ་ བ�
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_7
 #, fuzzy
 msgid  "{&MSSansBold8}Change Current Destination Folder"
-msgstr "{&MSSansBold8} ད་ལྟོའི་འགྲོ་ཡུལ་སྣོད་འཛིན་ བསྒྱུར་བཅོས་འབད།"
+msgstr "{&MSSansBold8}ད་ལྟོའི་འགྲོ་ཡུལ་སྣོད་འཛིན་ བསྒྱུར་བཅོས་འབད།"
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_9
 #, fuzzy
@@ -1840,7 +1840,7 @@ msgstr "ཡར་གནས་རིམ་གཅིག"
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_14
 #, fuzzy
 msgid  "< &Back"
-msgstr "< རྒྱབ།"
+msgstr "< རྒྱབ།(&B)"
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_17
 #, fuzzy
@@ -1870,7 +1870,7 @@ msgstr "{&MSSansBold8}ཡོངས་འབྲེལ་གནས་ཁོངས�
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_22
 #, fuzzy
 msgid  "&Install"
-msgstr "གཞི་བཙུགས།"
+msgstr "གཞི་བཙུགས།(&I)"
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_23
 #, fuzzy
@@ -1880,7 +1880,7 @@ msgstr "ཡོངས་འབྲེལ་གནས་ཁོངས།(&N)"
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_24
 #, fuzzy
 msgid  "< &Back"
-msgstr "< རྒྱབ་ཁར།(&B)"
+msgstr "< རྒྱབ།"
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_25
 #, fuzzy
@@ -1890,12 +1890,12 @@ msgstr "ཆ་མེད།"
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_26
 #, fuzzy
 msgid  "&Next >"
-msgstr "ཤུལ་མམ།>(&N)"
+msgstr "ཤུལ་མམ(&N) >"
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_27
 #, fuzzy
 msgid  "{&TahomaBold10}Welcome to the Installation Wizard for [ProductName]"
-msgstr "{&TahomaBold10} [ProductName] གི་དོན་ལུ་ ཝི་ཛརཌི་གཞི་བཙུགས་ནང་ བྱོན་པ་ལེགས་སོ་ཡོད།"
+msgstr "{&TahomaBold10} [ProductName]གི་དོན་ལུ་ ཝི་ཛརཌི་གཞི་བཙུགས་ལུ་ བྱོན་པ་ལེགས་སོ་ཡོད།"
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_28
 #, fuzzy
@@ -1905,7 +1905,7 @@ msgstr "ཝི་ཛརཌི་ གཞི་བཙུགས་འབད་མ�
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_29
 #, fuzzy
 msgid  "&No"
-msgstr "མི་བཏུབ།(&N)"
+msgstr "མེན།(&N)"
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_30
 #, fuzzy
@@ -1915,12 +1915,12 @@ msgstr "ཁྱོད་ཀྱིས [ProductName] གཞི་བཙུགས་
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_31
 #, fuzzy
 msgid  "&Yes"
-msgstr "ཨིན།"
+msgstr "ཨིན།(&Y)"
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_32
 #, fuzzy
 msgid  "< &Back"
-msgstr "<རྒྱབ།(&B)"
+msgstr "< རྒྱབ་ཁར།(&B)"
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_35
 #, fuzzy
@@ -1965,7 +1965,7 @@ msgstr "ལག་ལེན་པའི་མིང་།(&U)"
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_43
 #, fuzzy
 msgid  "&Next >"
-msgstr "ཤུལ་མམ་ > (&N)"
+msgstr "ཤུལ་མམ།>(&N)"
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_45
 #, fuzzy
@@ -1975,7 +1975,7 @@ msgstr "ཨང་རིམ་གྱངས་ཁ།(&S)"
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_46
 #, fuzzy
 msgid  "< &Back"
-msgstr "< རྒྱབ།(&B)"
+msgstr "<རྒྱབ།(&B)"
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_49
 #, fuzzy
@@ -2035,7 +2035,7 @@ msgstr "<selected feature path>"
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_60
 #, fuzzy
 msgid  "&Next >"
-msgstr "ཤུལ་མམ།>(&N)"
+msgstr "ཤུལ་མམ་ > (&N)"
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_61
 #, fuzzy
@@ -2095,7 +2095,7 @@ msgstr "ཉེ་གནས་སྲ་འཁོར་ལུ་ ཡན་ལག�
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_74
 #, fuzzy
 msgid  "< &Back"
-msgstr "<རྒྱབ།(&B)"
+msgstr "< རྒྱབ།(&B)"
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_77
 #, fuzzy
@@ -2110,7 +2110,7 @@ msgstr "བསྒྱུར་བཅོས།(&C)"
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_79
 #, fuzzy
 msgid  "Click Next to install to this folder, or click Change to install to a different folder."
-msgstr "སྣོད་འཛིན་འདི་གཞི་བཙུགས་འབད་ནིའི་དོན་ལུ་ ཤུལ་མམ་ལུ་ཨེབ་གཏང་འབད་ནི་དང་ ཡང་ན་ སྣོད་འཛིན་སོ་སོ་ལུ་གཞི་བཙུགས་འབད་ནིའི་དོན་ལུ་་ཨེབ་གཏང་འབད།"
+msgstr "སྣོད་འཛིན་འདི་གཞི་བཙུགས་འབད་ནིའི་དོན་ལུ་ ཤུལ་མམ་ལུ་ ཨེབ་གཏང་འབད་ནི་དང་ ཡང་ན་ སྣོད་འཛིན་སོ་སོ་ལུ་གཞི་བཙུགས་འབད་ནིའི་དོན་ལུ་ བསྒྱུར་བཅོས་ལུ་ ཨེབ་གཏང་འབད།"
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_80
 #, fuzzy
@@ -2130,12 +2130,12 @@ msgstr "དེ་ལུ་[ProductName] གནད་སྡུད་གཞི་�
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_83
 #, fuzzy
 msgid  "&Next >"
-msgstr "ཤུལ་མམ་ > (&N)"
+msgstr "ཤུལ་མམ།>(&N)"
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_84
 #, fuzzy
 msgid  "< &Back"
-msgstr "< རྒྱབ།(&B)"
+msgstr "<རྒྱབ།(&B)"
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_87
 #, fuzzy
@@ -2165,12 +2165,12 @@ msgstr "[INSTALLDIR]"
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_92
 #, fuzzy
 msgid  "Install [ProductName] to:"
-msgstr "དེ་ལུ་[ProductName]གཞི་བཙུགས་འབད།"
+msgstr "དེ་ལུ་[ProductName]གཞི་བཙུགས་འབད།:"
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_93
 #, fuzzy
 msgid  "&Next >"
-msgstr "ཤུལ་མམ། > (&N)"
+msgstr "ཤུལ་མམ།>(&N)"
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_96
 #, fuzzy
@@ -2180,7 +2180,7 @@ msgstr "སེལ་འཐུ་འབད་ཡོད་མི་ཁྱད་ར
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_97
 #, fuzzy
 msgid  "The highlighted volumes do not have enough disk space available for the currently selected features. You can remove files from the highlighted volumes, choose to install less features onto local drives, or select different destination drives."
-msgstr "གཙོ་དམིགས་འབད་ཡོད་མི་ སྦུང་ཚད་ལུ་ ད་ལྟོ་སེལ་འཐུ་འབད་ཡོད་མི་ཁྱད་རྣམ་གྱི་དོན་ལུ་ལང་ཚུགས་པའི་ བར་སྟོང་མིན་འདུག ཁྱོད་ཀྱིས་ཡིག་སྣོད་ཚུ་ གཙོ་དམིགས་འབད་ཡོད་མི་སྦུང་ཚད་ནང་ལས་རྩ་བསྐྲད་གཏང་ཚུགས། ཉེ་གནས་འདྲེན་འཕྲུལ་ནང་ལུ་ ཁྱད་རྣམ་ཉུང་སུ་གཞི་བཙུགས་འབད་ནིའི་དོན་ལུ་ གདམ་ཁ་རྐྱབས་ ཡང་ན་ འགྲོ་ཡུལ་གྱི་འདྲེན་འཕྲུལ་སོ་སོ་སེལ་འཐུ་འབད།"
+msgstr "ད་ལྟོ་སེལ་འཐུ་འབད་ཡོད་མི་ཁྱད་རྣམ་གྱི་དོན་ལུ་ གཙོ་དམིགས་འབད་ཡོད་མི་སྦུང་ཚད་ལུ་ ཌིཀསི་གི་བར་སྟོང་ལངམ་སྦེ་ཐོབ་མི་ཚུགས། ཁྱོད་ཀྱིས་གཙོ་དམིགས་འབད་ཡོད་མི་སྦུང་ཚད་ནང་ལས་ ཡིག་སྣོད་རྩ་བསྐྲད་གཏང་། ཁྱད་རྣམ་ཉུང་སུ་སྦེ་ ཉེ་གནས་སྲ་འཁོར་ནང་ལུ་གཞི་བཙུགས་འབད་ནིའི་དོན་ལུ་ གདམ་ཁ་རྐྱབས་ ཡང་ན་ འགྲོ་ཡུལ་སོ་སོའི་འདྲེན་འཕྲུལ་སེལ་འཐུ་འབད།"
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_98
 #, fuzzy
@@ -2215,7 +2215,7 @@ msgstr "ཕྱིར་ཐོན།(&E)"
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_107
 #, fuzzy
 msgid  "&Ignore"
-msgstr "སྣང་མེད་བཞག(&I)"
+msgstr "སྣང་མེད་བཞག།(&I)"
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_108
 #, fuzzy
@@ -2265,7 +2265,7 @@ msgstr "ཡར་ གནས་རིམ་གཅིག |"
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_122
 #, fuzzy
 msgid  "< &Back"
-msgstr "<རྒྱབ།(&B)"
+msgstr "< རྒྱབ།(&B)"
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_123
 #, fuzzy
@@ -2279,12 +2279,12 @@ msgstr ""
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_125
 #, fuzzy
 msgid  "&Next >"
-msgstr "ཤུལ་མམ། >(&N)"
+msgstr "ཤུལ་མམ་ > (&N)"
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_126
 #, fuzzy
 msgid  "{&TahomaBold10}Welcome to the Installation Wizard for [ProductName]"
-msgstr "{&TahomaBold10}[ProductName]གི་དོན་ལུ་ ཝི་ཛརཌི་གཞི་བཙུགས་ལུ་བྱོན་པ་ལེགས་སོ་ཡོད།"
+msgstr "{&TahomaBold10} [ProductName] གི་དོན་ལུ་ ཝི་ཛརཌི་གཞི་བཙུགས་ནང་ བྱོན་པ་ལེགས་སོ་ཡོད།"
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_127
 #, fuzzy
@@ -2294,7 +2294,7 @@ msgstr "ཝི་ཛརཌི་གཞི་བཙུགས་ཀྱིས་ �
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_128
 #, fuzzy
 msgid  "< &Back"
-msgstr "<རྒྱབ།(&B)"
+msgstr "< རྒྱབ།(&B)"
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_131
 #, fuzzy
@@ -2314,12 +2314,12 @@ msgstr "{&MSSansBold8}ཆོག་ཐམ་གན་འཛིན།"
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_134
 #, fuzzy
 msgid  "&Next >"
-msgstr "ཤུལ་མམ།>(&N)"
+msgstr "ཤུལ་མམ། > (&N)"
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_135
 #, fuzzy
 msgid  "< &Back"
-msgstr "<རྒྱབ།(&B)"
+msgstr "< རྒྱབ།(&B)"
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_138
 #, fuzzy
@@ -2339,7 +2339,7 @@ msgstr "{&MSSansBold8}ལས་རིམ་རྒྱུན་སྐྱོང་�
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_141
 #, fuzzy
 msgid  "&Next >"
-msgstr "ཤུལ་མམ།>(&N)"
+msgstr "ཤུལ་མམ། >(&N)"
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_143
 #, fuzzy
@@ -2359,7 +2359,7 @@ msgstr "ཁྱོད་ཀྱི་གློག་རིག་ནང་ལས་
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_146
 #, fuzzy
 msgid  "< &Back"
-msgstr "< རྒྱབ།(&B)"
+msgstr "<རྒྱབ།(&B)"
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_147
 #, fuzzy
@@ -2369,12 +2369,12 @@ msgstr "ཆ་མེད།"
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_148
 #, fuzzy
 msgid  "&Next >"
-msgstr "རྒྱབ།>(&N)"
+msgstr "ཤུལ་མམ།>(&N)"
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_149
 #, fuzzy
 msgid  "{&TahomaBold10}Welcome to the Installation Wizard for [ProductName]"
-msgstr "{&TahomaBold10}[ProductName]གི་དོན་ལུ་ གཞི་བཙུགས་ཝི་ཛརཌི་ལུ་བྱོན་པ་ལེགས་སོ་ཡོད།"
+msgstr "{&TahomaBold10}[ProductName]གི་དོན་ལུ་ ཝི་ཛརཌི་གཞི་བཙུགས་ལུ་བྱོན་པ་ལེགས་སོ་ཡོད།"
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_150
 #, fuzzy
@@ -2409,7 +2409,7 @@ msgstr "བཏུབ།"
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_158
 #, fuzzy
 msgid  "< &Back"
-msgstr "<རྒྱབ།(&B)"
+msgstr "< རྒྱབ།(&B)"
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_159
 #, fuzzy
@@ -2534,22 +2534,22 @@ msgstr "ཁྱོད་ཀྱི་ལས་རིམ་དེ་ ལེགས�
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_187
 #, fuzzy
 msgid  "Click Finish to exit the wizard."
-msgstr "ཝི་ཛརཌི་ཕྱིར་ཐོན་འབད་ནིའི་དོན་ལུ་ མཇུག་བསྡུ་ལུ་ཨེབ་གཏང་འབད།"
+msgstr "ཝི་ཛརཌི་ཕྱིར་ཐོན་འབད་ནིའི་དོན་ལུ་ མཇུག་བསྡུ་ལུ་ ཨེབ་གཏང་འབད་གནང་།"
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_188
 #, fuzzy
 msgid  "You can either keep any existing installed elements on your system to continue this installation at a later time or you can restore your system to its original state prior to the installation."
-msgstr "གཞི་བཙུགས་འདི་ ཤུལ་ལས་འཕྲོ་མཐུད་ནིའི་དོན་ལུ་ ད་ལྟོ་གཞི་བཙུགས་འབད་ཡོད་མི་རྒྱུ་རྫས་ཚུ་ ཁྱོད་ཀྱིས་ ཁྱོད་རའི་རིམ་ལུགས་གུར་བཞག ཡང་ན་ ཁྱོད་ཀྱིས་ ཁྱོད་རའི་རིམ་ལུགས་ཚུ་ གཞི་བཙུགས་མ་འབད་བའི་སྔོན་མ་ གནས་ལུགས་ངོ་མ་དེ་ལུ་སོར་ཆུད་འབད་ཚུགས།"
+msgstr "གཞི་བཙུགས་འདི་ ཤུལ་ལས་འཕྲོ་མཐུད་ནིའི་དོན་ལུ་ ད་ལྟོ་གཞི་བཙུགས་འབད་ཡོད་མི་རྒྱུ་རྫས་ཚུ་ ཁྱོད་ཀྱིས་ཁྱོད་རའི་རིམ་ལུགས་གུར་བཞག ཡང་ན་ ཁྱོད་ཀྱིས་ ཁྱོད་རའི་རིམ་ལུགས་ཚུ་ གཞི་བཙུགས་མ་འབད་བའི་སྔོན་མ་གནས་ལུགས་ངོ་མ་དེ་ལུ་སོར་ཆུད་འབད་ཚུགས།"
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_189
 #, fuzzy
 msgid  "Click Restore or Continue Later to exit the wizard."
-msgstr "ཝི་ཛརཌི་ཕྱིར་ཐོན་འབད་ནིའི་དོན་ལུ་ སོར་ཆུད་ ཡང་ན་ ཤུལ་ལས་འཕྲོ་མཐུད་འབད་ ལུ་ཨེབ་གཏང་འབད།"
+msgstr "ཝི་ཛརཌི་ཕྱིར་ཐོན་འབད་ནིའི་དོན་ལུ་ སོར་ཆུད་ ཡང་ན་ ཤུལ་མ་འཕྲོ་མཐུད་ ལུ་ཨེབ་གཏང་འབད།"
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_190
 #, fuzzy
 msgid  "{&TahomaBold10}Installation Wizard Completed"
-msgstr "{&TahomaBold10}གཞི་བཙུགས་ཝི་ཛརཌི་མཇུག་བསྡུ་ཡོདཔ།"
+msgstr "{&TahomaBold10}ཝི་ཛརཌི་གཞི་བཙུགས་ མཇུག་བསྡུ་ཡི།"
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_191
 #, fuzzy
@@ -2589,7 +2589,7 @@ msgstr "མཇུག་བསྡུ་ནི།(&F)"
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_198
 #, fuzzy
 msgid  "{&TahomaBold10}Installation Wizard Completed"
-msgstr "{&TahomaBold10}གཞི་བཙུགས་ཝི་ཛརཌི་ མཇུག་བསྡུ་ཡི།"
+msgstr "{&TahomaBold10}གཞི་བཙུགས་ཝི་ཛརཌི་མཇུག་བསྡུ་ཡོདཔ།"
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_199
 #, fuzzy
@@ -2669,7 +2669,7 @@ msgstr "ཆ་མེད།"
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_216
 #, fuzzy
 msgid  "&Next >"
-msgstr "ཤུལ་མམ། >(&N)"
+msgstr "ཤུལ་མམ།>(&N)"
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_217
 #, fuzzy
@@ -2784,7 +2784,7 @@ msgstr "གནས་ཚད།"
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_242
 #, fuzzy
 msgid  "&Next >"
-msgstr "ཤུལ་མམ།>(&N)"
+msgstr "རྒྱབ།>(&N)"
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_244
 #, fuzzy

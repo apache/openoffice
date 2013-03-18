@@ -363,12 +363,14 @@ msgid  "Categories"
 msgstr "Κατηγορίες"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.business.Tables.categories.Fields.categoryID.Name
+#, fuzzy
 msgid  "CategoryID"
-msgstr "Κωδ.Κατηγορίας"
+msgstr "Κωδικός_κατηγορίας"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.business.Tables.categories.Fields.categoryID.ShortName
+#, fuzzy
 msgid  "CategoryID"
-msgstr "Κωδ.Κατηγορίας"
+msgstr "Κωδικός_κατηγορίας"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.business.Tables.categories.Fields.categoryname.Name
 #, fuzzy
@@ -593,7 +595,7 @@ msgstr "Πόλη/Περιοχή"
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.business.Tables.suppliers.Fields.countryorregion.Name
 #, fuzzy
 msgid  "CountryOrRegion"
-msgstr "Χώρα/περιοχή_"
+msgstr "Χώρα/περιοχή"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.business.Tables.suppliers.Fields.countryorregion.ShortName
 #, fuzzy
@@ -778,7 +780,7 @@ msgstr "Πόλη/Περιοχή"
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.business.Tables.mailinglist.Fields.countryorregion.Name
 #, fuzzy
 msgid  "CountryOrRegion"
-msgstr "Χώρα/περιοχή"
+msgstr "Χώρα/περιοχή_"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.business.Tables.mailinglist.Fields.countryorregion.ShortName
 #, fuzzy
@@ -1103,12 +1105,12 @@ msgstr "Κωδικός_Κατηγορίας_Επαφής"
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.business.Tables.contacts.Fields.maritalstatus.Name
 #, fuzzy
 msgid  "MaritalStatus"
-msgstr "Οικ.Κατάσταση"
+msgstr "Οικ._Κατάσταση"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.business.Tables.contacts.Fields.maritalstatus.ShortName
 #, fuzzy
 msgid  "MaritlStat"
-msgstr "Οικ.Κατάσταση"
+msgstr "Οικ._Κατάσταση"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.business.Tables.contacts.Fields.spousename.Name
 #, fuzzy
@@ -1548,7 +1550,7 @@ msgstr "IDΤμήματος"
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.business.Tables.employees.Fields.departmentID.ShortName
 #, fuzzy
 msgid  "DeprtmntID"
-msgstr "IDΤμήματος"
+msgstr "Κωδ_Τμήματος"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.business.Tables.employees.Fields.salary.Name
 #, fuzzy
@@ -1998,12 +2000,12 @@ msgstr "Κωδ._εγγραφής"
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.business.Tables.payments.Fields.projectID.Name
 #, fuzzy
 msgid  "ProjectID"
-msgstr "Κωδ.Έργασίας"
+msgstr "Κωδ.Έργου"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.business.Tables.payments.Fields.projectID.ShortName
 #, fuzzy
 msgid  "ProjectID"
-msgstr "Κωδ.Έργασίας"
+msgstr "Κωδ.Έργου"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.business.Tables.payments.Fields.paymentamount.Name
 #, fuzzy
@@ -3293,7 +3295,7 @@ msgstr "Νο_Barcode"
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.business.Tables.assets.Fields.dateacquired.Name
 #, fuzzy
 msgid  "DateAcquired"
-msgstr "Η.νία_υποβολής"
+msgstr "Η.νία_αγοράς"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.business.Tables.assets.Fields.dateacquired.ShortName
 #, fuzzy
@@ -3563,12 +3565,12 @@ msgstr "Εργασία"
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.business.Tables.tasks.Fields.taskID.Name
 #, fuzzy
 msgid  "TaskID"
-msgstr "Κωδ._έργου_υπαλλήλου"
+msgstr "Κωδ_έργου"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.business.Tables.tasks.Fields.taskID.ShortName
 #, fuzzy
 msgid  "TaskID"
-msgstr "Κωδ._έργου_υπαλλήλου"
+msgstr "Κωδ_έργου"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.business.Tables.tasks.Fields.description.Name
 #, fuzzy
@@ -11730,7 +11732,7 @@ msgstr "Σεμνά"
 #: registry/data/org/openoffice/Office/UI/Effects.xcu#Effects.UserInterface.Properties.exciting.Label
 #, fuzzy
 msgid  "Exciting"
-msgstr "Ενθουσιώδη"
+msgstr "Ενθουσιώδες"
 
 #: registry/data/org/openoffice/Office/UI/Effects.xcu#Effects.UserInterface.Properties.subtle.Label
 #, fuzzy
@@ -14523,7 +14525,7 @@ msgstr ""
 #: registry/data/org/openoffice/Office/UI/GenericCommands.xcu#GenericCommands.UserInterface.Commands..uno:AddDateField.Label
 #, fuzzy
 msgid  "Date Field"
-msgstr "Πεδίο ημερομηνίας "
+msgstr "Πεδίο ημερομηνίας"
 
 #: registry/data/org/openoffice/Office/UI/GenericCommands.xcu#GenericCommands.UserInterface.Commands..uno:AddDirect.Label
 msgid  "New"
@@ -16518,7 +16520,7 @@ msgstr ""
 #: registry/data/org/openoffice/Office/UI/GenericCommands.xcu#GenericCommands.UserInterface.Commands..uno:ImageControl.Label
 #, fuzzy
 msgid  "Image Control"
-msgstr "Στοιχείο ελέγχου εικόνας"
+msgstr "Πεδίο ελέγχου εικόνας"
 
 #: registry/data/org/openoffice/Office/UI/GenericCommands.xcu#GenericCommands.UserInterface.Commands..uno:ImageMapDialog.Label
 #, fuzzy

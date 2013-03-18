@@ -365,22 +365,22 @@ msgstr "Категорије"
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.business.Tables.categories.Fields.categoryID.Name
 #, fuzzy
 msgid  "CategoryID"
-msgstr "ИБ_кат"
+msgstr "ИБ_категорије"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.business.Tables.categories.Fields.categoryID.ShortName
 #, fuzzy
 msgid  "CategoryID"
-msgstr "ИБ_категорије"
+msgstr "ИБ_кат"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.business.Tables.categories.Fields.categoryname.Name
 #, fuzzy
 msgid  "CategoryName"
-msgstr "Име категорије"
+msgstr "Име_категорије"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.business.Tables.categories.Fields.categoryname.ShortName
 #, fuzzy
 msgid  "CategName"
-msgstr "Име катег."
+msgstr "Име_кат"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.business.Tables.products.Name
 #, fuzzy
@@ -390,12 +390,12 @@ msgstr "Производи"
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.business.Tables.products.Fields.productID.Name
 #, fuzzy
 msgid  "ProductID"
-msgstr "ИБ_про"
+msgstr "ИБ_производа"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.business.Tables.products.Fields.productID.ShortName
 #, fuzzy
 msgid  "ProductID"
-msgstr "ИБ_производа"
+msgstr "ИБ_про"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.business.Tables.products.Fields.productname.Name
 #, fuzzy
@@ -420,22 +420,22 @@ msgstr "Опис_про"
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.business.Tables.products.Fields.categoryID.Name
 #, fuzzy
 msgid  "CategoryID"
-msgstr "ИБ_кат"
+msgstr "ИБ_категорије"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.business.Tables.products.Fields.categoryID.ShortName
 #, fuzzy
 msgid  "CategoryID"
-msgstr "ИБ категорије"
+msgstr "ИБ_кат"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.business.Tables.products.Fields.supplierID.Name
 #, fuzzy
 msgid  "SupplierID"
-msgstr "ИБ_доб"
+msgstr "ИБ_добављача"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.business.Tables.products.Fields.supplierID.ShortName
 #, fuzzy
 msgid  "SupplierID"
-msgstr "ИБ_добављача"
+msgstr "ИБ_доб"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.business.Tables.products.Fields.serialnumber.Name
 #, fuzzy
@@ -445,7 +445,7 @@ msgstr "Серијски_број"
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.business.Tables.products.Fields.serialnumber.ShortName
 #, fuzzy
 msgid  "SerialNo"
-msgstr "СеријскиБр"
+msgstr "Сер_бр"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.business.Tables.products.Fields.unitsinstock.Name
 #, fuzzy
@@ -470,12 +470,12 @@ msgstr "Јед_пор"
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.business.Tables.products.Fields.unitprice.Name
 #, fuzzy
 msgid  "UnitPrice"
-msgstr "Јед_цена"
+msgstr "Јединична_цена"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.business.Tables.products.Fields.unitprice.ShortName
 #, fuzzy
 msgid  "UnitPrice"
-msgstr "Јединична_цена"
+msgstr "Јед_цена"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.business.Tables.products.Fields.reorderlevel.Name
 #, fuzzy
@@ -500,7 +500,7 @@ msgstr "Прекинут"
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.business.Tables.products.Fields.leadtime.Name
 #, fuzzy
 msgid  "LeadTime"
-msgstr "В_време"
+msgstr "Водеће_време"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.business.Tables.products.Fields.leadtime.ShortName
 #, fuzzy
@@ -515,7 +515,7 @@ msgstr "Добављачи"
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.business.Tables.suppliers.Fields.supplierID.Name
 #, fuzzy
 msgid  "SupplierID"
-msgstr "ИБ_доб"
+msgstr "ИБ_добављача"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.business.Tables.suppliers.Fields.supplierID.ShortName
 #, fuzzy
@@ -575,72 +575,72 @@ msgstr "Град"
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.business.Tables.suppliers.Fields.postalcode.Name
 #, fuzzy
 msgid  "PostalCode"
-msgstr "Поштански број"
+msgstr "ПТТ_број"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.business.Tables.suppliers.Fields.postalcode.ShortName
 #, fuzzy
 msgid  "PostalCode"
-msgstr "Поштански број"
+msgstr "ПТТ_број"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.business.Tables.suppliers.Fields.stateorprovince.Name
 #, fuzzy
 msgid  "StateOrProvince"
-msgstr "Држава или покрајина"
+msgstr "Држава_или_покрајина"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.business.Tables.suppliers.Fields.stateorprovince.ShortName
 #, fuzzy
 msgid  "StateProvi"
-msgstr "Држ. или покр."
+msgstr "Држ_покр"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.business.Tables.suppliers.Fields.countryorregion.Name
 #, fuzzy
 msgid  "CountryOrRegion"
-msgstr "Земља или регион"
+msgstr "Земља_или_регион"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.business.Tables.suppliers.Fields.countryorregion.ShortName
 #, fuzzy
 msgid  "CountryReg"
-msgstr "Зем. или рег."
+msgstr "Земљ_рег"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.business.Tables.suppliers.Fields.phonenumber.Name
 #, fuzzy
 msgid  "PhoneNumber"
-msgstr "Број телефона"
+msgstr "Број_телефона"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.business.Tables.suppliers.Fields.phonenumber.ShortName
 #, fuzzy
 msgid  "PhoneNo"
-msgstr "Бр. тел."
+msgstr "Бр_тел"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.business.Tables.suppliers.Fields.faxnumber.Name
 #, fuzzy
 msgid  "FaxNumber"
-msgstr "Број факса"
+msgstr "Број_факса"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.business.Tables.suppliers.Fields.faxnumber.ShortName
 #, fuzzy
 msgid  "FaxNo"
-msgstr "Бр. факса"
+msgstr "Бр_факса"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.business.Tables.suppliers.Fields.paymentterms.Name
 #, fuzzy
 msgid  "PaymentTerms"
-msgstr "Услови плаћања"
+msgstr "Услови_плаћања"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.business.Tables.suppliers.Fields.paymentterms.ShortName
 #, fuzzy
 msgid  "PaymntTerm"
-msgstr "Усл. плаћ."
+msgstr "Усл_плаћ"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.business.Tables.suppliers.Fields.emailaddress.Name
 #, fuzzy
 msgid  "EmailAddress"
-msgstr "Е-адреса"
+msgstr "Е_адреса"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.business.Tables.suppliers.Fields.emailaddress.ShortName
 #, fuzzy
 msgid  "EmailAddr"
-msgstr "Е-адр."
+msgstr "Е_адр"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.business.Tables.suppliers.Fields.notes.Name
 #, fuzzy
@@ -690,12 +690,12 @@ msgstr "Име"
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.business.Tables.mailinglist.Fields.middlename.Name
 #, fuzzy
 msgid  "MiddleName"
-msgstr "Сред_име"
+msgstr "Средње име"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.business.Tables.mailinglist.Fields.middlename.ShortName
 #, fuzzy
 msgid  "MiddleName"
-msgstr "Средње_име"
+msgstr "Сред_име"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.business.Tables.mailinglist.Fields.lastlame.Name
 #, fuzzy
@@ -720,12 +720,12 @@ msgstr "Суфикс"
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.business.Tables.mailinglist.Fields.title.Name
 #, fuzzy
 msgid  "Title"
-msgstr "Наслов"
+msgstr "Звање"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.business.Tables.mailinglist.Fields.title.ShortName
 #, fuzzy
 msgid  "Title"
-msgstr "Наслов"
+msgstr "Звање"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.business.Tables.mailinglist.Fields.organizationname.Name
 #, fuzzy
@@ -810,12 +810,12 @@ msgstr "Бр_факса"
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.business.Tables.mailinglist.Fields.mobilenumber.Name
 #, fuzzy
 msgid  "MobileNumber"
-msgstr "Мобилни телефон"
+msgstr "Мобилни_телефон"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.business.Tables.mailinglist.Fields.mobilenumber.ShortName
 #, fuzzy
 msgid  "MobileNo"
-msgstr "Бр. моб."
+msgstr "Бр_моб"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.business.Tables.mailinglist.Fields.emailaddress.Name
 #, fuzzy
@@ -830,12 +830,12 @@ msgstr "Е_адр"
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.business.Tables.mailinglist.Fields.birthdate.Name
 #, fuzzy
 msgid  "Birthdate"
-msgstr "Дат_рођ"
+msgstr "Датум_рођења"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.business.Tables.mailinglist.Fields.birthdate.ShortName
 #, fuzzy
 msgid  "Birthdate"
-msgstr "Датум_рођења"
+msgstr "Дат_рођ"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.business.Tables.mailinglist.Fields.nationality.Name
 #, fuzzy
@@ -850,7 +850,7 @@ msgstr "Националност"
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.business.Tables.mailinglist.Fields.dateupdated.Name
 #, fuzzy
 msgid  "DateUpdated"
-msgstr "Датум освежавања"
+msgstr "Датум_освежавања"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.business.Tables.mailinglist.Fields.dateupdated.ShortName
 #, fuzzy
@@ -860,7 +860,7 @@ msgstr "Датум_осв"
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.business.Tables.mailinglist.Fields.datejoined.Name
 #, fuzzy
 msgid  "DateJoined"
-msgstr "Дат_прис"
+msgstr "Датум_приступа"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.business.Tables.mailinglist.Fields.datejoined.ShortName
 #, fuzzy
@@ -900,7 +900,7 @@ msgstr "Дат_отпл"
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.business.Tables.mailinglist.Fields.duesamount.Name
 #, fuzzy
 msgid  "DuesAmount"
-msgstr "Изн_досп"
+msgstr "Износи_доспећа"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.business.Tables.mailinglist.Fields.duesamount.ShortName
 #, fuzzy
@@ -945,7 +945,7 @@ msgstr "Контакти"
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.business.Tables.contacts.Fields.contactID.Name
 #, fuzzy
 msgid  "ContactID"
-msgstr "ИБ_конт"
+msgstr "ИБ_контакта"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.business.Tables.contacts.Fields.contactID.ShortName
 #, fuzzy
@@ -1085,12 +1085,12 @@ msgstr "Ословљавање"
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.business.Tables.contacts.Fields.birthdate.Name
 #, fuzzy
 msgid  "Birthdate"
-msgstr "Дат_рођ"
+msgstr "Датум_рођења"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.business.Tables.contacts.Fields.birthdate.ShortName
 #, fuzzy
 msgid  "Birthdate"
-msgstr "Датум_рођења"
+msgstr "Дат_рођ"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.business.Tables.contacts.Fields.contacttypeID.Name
 #, fuzzy
@@ -1105,22 +1105,22 @@ msgstr "В_конт"
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.business.Tables.contacts.Fields.maritalstatus.Name
 #, fuzzy
 msgid  "MaritalStatus"
-msgstr "Брачно стање"
+msgstr "Брачно_стање"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.business.Tables.contacts.Fields.maritalstatus.ShortName
 #, fuzzy
 msgid  "MaritlStat"
-msgstr "Брач. ст."
+msgstr "Брач_ст"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.business.Tables.contacts.Fields.spousename.Name
 #, fuzzy
 msgid  "SpouseName"
-msgstr "Име_супр"
+msgstr "Име_супружника"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.business.Tables.contacts.Fields.spousename.ShortName
 #, fuzzy
 msgid  "SpouseName"
-msgstr "Име_супружника"
+msgstr "Име_супр"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.business.Tables.contacts.Fields.spousesinterests.Name
 #, fuzzy
@@ -1145,12 +1145,12 @@ msgstr "Интер_конт"
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.business.Tables.contacts.Fields.childrennames.Name
 #, fuzzy
 msgid  "ChildrenNames"
-msgstr "Имена деце"
+msgstr "Имена_деце"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.business.Tables.contacts.Fields.childrennames.ShortName
 #, fuzzy
 msgid  "ChildName"
-msgstr "Име детета"
+msgstr "Имена_деце"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.business.Tables.contacts.Fields.photo.Name
 #, fuzzy
@@ -1180,12 +1180,12 @@ msgstr "Клијенти"
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.business.Tables.customers.Fields.customerID.Name
 #, fuzzy
 msgid  "CustomerID"
-msgstr "ИБ_мушт"
+msgstr "ИБ_муштерије"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.business.Tables.customers.Fields.customerID.ShortName
 #, fuzzy
 msgid  "CustomerID"
-msgstr "ИБ_муштерије"
+msgstr "ИБ_мушт"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.business.Tables.customers.Fields.companyname.Name
 #, fuzzy
@@ -1345,12 +1345,12 @@ msgstr "Запослени"
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.business.Tables.employees.Fields.employeeID.Name
 #, fuzzy
 msgid  "EmployeeID"
-msgstr "ИБ_запосл"
+msgstr "ИБ_запосленог"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.business.Tables.employees.Fields.employeeID.ShortName
 #, fuzzy
 msgid  "EmployeeID"
-msgstr "ИБ_запосленог"
+msgstr "ИБ_запосл"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.business.Tables.employees.Fields.firstname.Name
 #, fuzzy
@@ -1365,7 +1365,7 @@ msgstr "Име"
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.business.Tables.employees.Fields.middlename.Name
 #, fuzzy
 msgid  "MiddleName"
-msgstr "Сред_име"
+msgstr "Средње_име"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.business.Tables.employees.Fields.middlename.ShortName
 #, fuzzy
@@ -1525,17 +1525,17 @@ msgstr "Бр_моб"
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.business.Tables.employees.Fields.birthdate.Name
 #, fuzzy
 msgid  "Birthdate"
-msgstr "Дат_рођ"
+msgstr "Датум_рођења"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.business.Tables.employees.Fields.birthdate.ShortName
 #, fuzzy
 msgid  "Birthdate"
-msgstr "Датум рођења"
+msgstr "Дат_рођ"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.business.Tables.employees.Fields.datehired.Name
 #, fuzzy
 msgid  "DateHired"
-msgstr "Дат_зап"
+msgstr "Датум_запослења"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.business.Tables.employees.Fields.datehired.ShortName
 #, fuzzy
@@ -1545,12 +1545,12 @@ msgstr "Дат_зап"
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.business.Tables.employees.Fields.departmentID.Name
 #, fuzzy
 msgid  "DepartmentID"
-msgstr "ИБ одељка"
+msgstr "ИБ_одељка"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.business.Tables.employees.Fields.departmentID.ShortName
 #, fuzzy
 msgid  "DeprtmntID"
-msgstr "ИБ одељ."
+msgstr "ИБ_одељ"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.business.Tables.employees.Fields.salary.Name
 #, fuzzy
@@ -1595,12 +1595,12 @@ msgstr "ИБ_надз"
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.business.Tables.employees.Fields.spousename.Name
 #, fuzzy
 msgid  "SpouseName"
-msgstr "Име_супр"
+msgstr "Име_супружника"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.business.Tables.employees.Fields.spousename.ShortName
 #, fuzzy
 msgid  "SpouseName"
-msgstr "Име супружника"
+msgstr "Име_супр"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.business.Tables.employees.Fields.officelocation.Name
 #, fuzzy
@@ -1640,37 +1640,37 @@ msgstr "Поруџбине"
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.business.Tables.orders.Fields.orderID.Name
 #, fuzzy
 msgid  "OrderID"
-msgstr "ИБ_пор"
+msgstr "ИБ_поруџбе"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.business.Tables.orders.Fields.orderID.ShortName
 #, fuzzy
 msgid  "OrderID"
-msgstr "ИБ_поруџбе"
+msgstr "ИБ_пор"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.business.Tables.orders.Fields.customerID.Name
 #, fuzzy
 msgid  "CustomerID"
-msgstr "ИБ_мушт"
+msgstr "ИБ_муштерије"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.business.Tables.orders.Fields.customerID.ShortName
 #, fuzzy
 msgid  "CustomerID"
-msgstr "ИБ_муштерије"
+msgstr "ИБ_мушт"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.business.Tables.orders.Fields.employeeID.Name
 #, fuzzy
 msgid  "EmployeeID"
-msgstr "ИБ_запосл"
+msgstr "ИБ_запосленог"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.business.Tables.orders.Fields.employeeID.ShortName
 #, fuzzy
 msgid  "EmployeeID"
-msgstr "ИБ запосленог"
+msgstr "ИБ_запосл"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.business.Tables.orders.Fields.orderdate.Name
 #, fuzzy
 msgid  "OrderDate"
-msgstr "Дат_пор"
+msgstr "Датум_поруџбе"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.business.Tables.orders.Fields.orderdate.ShortName
 #, fuzzy
@@ -1680,12 +1680,12 @@ msgstr "Дат_пор"
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.business.Tables.orders.Fields.purchaseordernumber.Name
 #, fuzzy
 msgid  "PurchaseOrderNumber"
-msgstr "Број поруџбенице"
+msgstr "Број_поруџбенице"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.business.Tables.orders.Fields.purchaseordernumber.ShortName
 #, fuzzy
 msgid  "PurchOrdNo"
-msgstr "Бр. пор."
+msgstr "Бр_пор"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.business.Tables.orders.Fields.requiredbydate.Name
 #, fuzzy
@@ -1710,7 +1710,7 @@ msgstr "Обећ_дат"
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.business.Tables.orders.Fields.shipname.Name
 #, fuzzy
 msgid  "ShipName"
-msgstr "Име_пош"
+msgstr "Име_пошиљке"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.business.Tables.orders.Fields.shipname.ShortName
 #, fuzzy
@@ -1730,7 +1730,7 @@ msgstr "Адр_пош"
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.business.Tables.orders.Fields.shipcity.Name
 #, fuzzy
 msgid  "ShipCity"
-msgstr "Град_пош"
+msgstr "Град_пошиљке"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.business.Tables.orders.Fields.shipcity.ShortName
 #, fuzzy
@@ -1775,17 +1775,17 @@ msgstr "Број_телефона_пошиљке"
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.business.Tables.orders.Fields.shipphonenumber.ShortName
 #, fuzzy
 msgid  "ShipPhonNo"
-msgstr "Бр. тел. пошиљ."
+msgstr "Бр_тел_пош"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.business.Tables.orders.Fields.shipdate.Name
 #, fuzzy
 msgid  "ShipDate"
-msgstr "Дат_пош"
+msgstr "Датум_пошиљке"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.business.Tables.orders.Fields.shipdate.ShortName
 #, fuzzy
 msgid  "ShipDate"
-msgstr "Датум пошиљке"
+msgstr "Дат_пош"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.business.Tables.orders.Fields.shippingmethodID.Name
 #, fuzzy
@@ -1800,7 +1800,7 @@ msgstr "ИБ_нач_исп"
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.business.Tables.orders.Fields.freightcharge.Name
 #, fuzzy
 msgid  "FreightCharge"
-msgstr "Цена возарине"
+msgstr "Цена_возарине"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.business.Tables.orders.Fields.freightcharge.ShortName
 #, fuzzy
@@ -1835,32 +1835,32 @@ msgstr "ИБ_дет_пор"
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.business.Tables.orderdetails.Fields.orderID.Name
 #, fuzzy
 msgid  "OrderID"
-msgstr "ИБ_пор"
+msgstr "ИБ_поруџбе"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.business.Tables.orderdetails.Fields.orderID.ShortName
 #, fuzzy
 msgid  "OrderID"
-msgstr "ИБ поруџбине"
+msgstr "ИБ_поруџбе"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.business.Tables.orderdetails.Fields.productID.Name
 #, fuzzy
 msgid  "ProductID"
-msgstr "ИБ_произ"
+msgstr "ИБ_производа"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.business.Tables.orderdetails.Fields.productID.ShortName
 #, fuzzy
 msgid  "ProductID"
-msgstr "ИБ производа"
+msgstr "ИБ_произ"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.business.Tables.orderdetails.Fields.datesold.Name
 #, fuzzy
 msgid  "DateSold"
-msgstr "Дат_прод"
+msgstr "Датум_продаје"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.business.Tables.orderdetails.Fields.datesold.ShortName
 #, fuzzy
 msgid  "DateSold"
-msgstr "Датум продаје"
+msgstr "Дат_прод"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.business.Tables.orderdetails.Fields.quantity.Name
 #, fuzzy
@@ -1875,12 +1875,12 @@ msgstr "Количина"
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.business.Tables.orderdetails.Fields.unitprice.Name
 #, fuzzy
 msgid  "UnitPrice"
-msgstr "Јед_цена"
+msgstr "Јединична_цена"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.business.Tables.orderdetails.Fields.unitprice.ShortName
 #, fuzzy
 msgid  "UnitPrice"
-msgstr "Цена по јединици"
+msgstr "Јед_цена"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.business.Tables.orderdetails.Fields.discount.Name
 #, fuzzy
@@ -1895,7 +1895,7 @@ msgstr "Попуст"
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.business.Tables.orderdetails.Fields.saleprice.Name
 #, fuzzy
 msgid  "SalePrice"
-msgstr "Прод_цена"
+msgstr "Продајна_цена"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.business.Tables.orderdetails.Fields.saleprice.ShortName
 #, fuzzy
@@ -1905,7 +1905,7 @@ msgstr "Прод_цена"
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.business.Tables.orderdetails.Fields.salestax.Name
 #, fuzzy
 msgid  "SalesTax"
-msgstr "Пор_пром"
+msgstr "Порез_на_промет"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.business.Tables.orderdetails.Fields.salestax.ShortName
 #, fuzzy
@@ -1930,22 +1930,22 @@ msgstr "Плаћања"
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.business.Tables.payments.Fields.paymentID.Name
 #, fuzzy
 msgid  "PaymentID"
-msgstr "ИБ_плаћ"
+msgstr "ИБ_плаћања"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.business.Tables.payments.Fields.paymentID.ShortName
 #, fuzzy
 msgid  "PaymentID"
-msgstr "ИБ плаћања"
+msgstr "ИБ_плаћ"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.business.Tables.payments.Fields.customerID.Name
 #, fuzzy
 msgid  "CustomerID"
-msgstr "ИБ_мушт"
+msgstr "ИБ_муштерије"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.business.Tables.payments.Fields.customerID.ShortName
 #, fuzzy
 msgid  "CustomerID"
-msgstr "ИБ муштерије"
+msgstr "ИБ_мушт"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.business.Tables.payments.Fields.workorderID.Name
 #, fuzzy
@@ -1960,12 +1960,12 @@ msgstr "ИБ_рад_нал"
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.business.Tables.payments.Fields.orderID.Name
 #, fuzzy
 msgid  "OrderID"
-msgstr "ИБ поруџбе"
+msgstr "ИБ_поруџбе"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.business.Tables.payments.Fields.orderID.ShortName
 #, fuzzy
 msgid  "OrderID"
-msgstr "ИБ поруџбе"
+msgstr "ИБ_пор"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.business.Tables.payments.Fields.reservationID.Name
 #, fuzzy
@@ -2280,7 +2280,7 @@ msgstr "ИБ фактуре"
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.business.Tables.invoicedetails.Fields.orderID.Name
 #, fuzzy
 msgid  "OrderID"
-msgstr "ИБ поруџбе"
+msgstr "ИБ поруџбине"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.business.Tables.invoicedetails.Fields.orderID.ShortName
 #, fuzzy
@@ -3280,7 +3280,7 @@ msgstr "Серијски број"
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.business.Tables.assets.Fields.serialnumber.ShortName
 #, fuzzy
 msgid  "SerialNo"
-msgstr "Серијски бр."
+msgstr "СеријскиБр"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.business.Tables.assets.Fields.barcodenumber.Name
 #, fuzzy
@@ -8243,7 +8243,7 @@ msgstr ""
 #: registry/data/org/openoffice/Office/UI/DrawImpressCommands.xcu#DrawImpressCommands.UserInterface.Popups..uno:SlideShowMenu.Label
 #, fuzzy
 msgid  "~Slide Show"
-msgstr "~Ток презентације"
+msgstr "~Покрени"
 
 #: registry/data/org/openoffice/Office/UI/DrawImpressCommands.xcu#DrawImpressCommands.UserInterface.Popups..uno:SnapLinesMenu.Label
 msgid  "Guides"
@@ -9449,7 +9449,7 @@ msgstr "Директни курсор"
 #: registry/data/org/openoffice/Office/UI/WriterCommands.xcu#WriterCommands.UserInterface.Commands..uno:ShiftBackspace.Label
 #, fuzzy
 msgid  "Backspace"
-msgstr "Тастер Backspace"
+msgstr "Брисање уназад"
 
 #: registry/data/org/openoffice/Office/UI/WriterCommands.xcu#WriterCommands.UserInterface.Commands..uno:ShowBookview.Label
 #, fuzzy
@@ -10787,7 +10787,7 @@ msgstr "Подели"
 #: registry/data/org/openoffice/Office/UI/Effects.xcu#Effects.UserInterface.Effects.ooo-entrance-stretchy.Label
 #, fuzzy
 msgid  "Stretchy"
-msgstr "Издужи"
+msgstr "Растегљиво"
 
 #: registry/data/org/openoffice/Office/UI/Effects.xcu#Effects.UserInterface.Effects.ooo-entrance-diagonal-squares.Label
 #, fuzzy
@@ -10817,7 +10817,7 @@ msgstr "Брисање"
 #: registry/data/org/openoffice/Office/UI/Effects.xcu#Effects.UserInterface.Effects.ooo-entrance-zoom.Label
 #, fuzzy
 msgid  "Zoom"
-msgstr "Увећај"
+msgstr "Увећање"
 
 #: registry/data/org/openoffice/Office/UI/Effects.xcu#Effects.UserInterface.Effects.ooo-entrance-random.Label
 #, fuzzy
@@ -16205,7 +16205,7 @@ msgstr "Палета боја"
 #: registry/data/org/openoffice/Office/UI/GenericCommands.xcu#GenericCommands.UserInterface.Commands..uno:GoDown.Label
 #, fuzzy
 msgid  "Move Down"
-msgstr "Помери наниже"
+msgstr "Помери надоле"
 
 #: registry/data/org/openoffice/Office/UI/GenericCommands.xcu#GenericCommands.UserInterface.Commands..uno:GoDownBlock.Label
 #, fuzzy
@@ -16295,7 +16295,7 @@ msgstr "Изабери до почетка датотеке"
 #: registry/data/org/openoffice/Office/UI/GenericCommands.xcu#GenericCommands.UserInterface.Commands..uno:GoUp.Label
 #, fuzzy
 msgid  "Move Up"
-msgstr "Помери навише"
+msgstr "Помери нагоре"
 
 #: registry/data/org/openoffice/Office/UI/GenericCommands.xcu#GenericCommands.UserInterface.Commands..uno:GoUpBlock.Label
 #, fuzzy
@@ -16340,7 +16340,7 @@ msgstr "Зелена"
 #: registry/data/org/openoffice/Office/UI/GenericCommands.xcu#GenericCommands.UserInterface.Commands..uno:GrafInvert.Label
 #, fuzzy
 msgid  "Invert"
-msgstr "Замени боје"
+msgstr "Преврни"
 
 #: registry/data/org/openoffice/Office/UI/GenericCommands.xcu#GenericCommands.UserInterface.Commands..uno:GrafLuminance.Label
 #, fuzzy

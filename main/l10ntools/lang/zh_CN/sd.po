@@ -53,7 +53,7 @@ msgstr "定量线"
 
 #: source/core/glob.src#STR_PAGE.String.Text
 msgid  "Slide"
-msgstr "幻灯片"
+msgstr "页"
 
 #: source/core/glob.src#STR_PAGE_NAME.String.Text
 msgid  "Page"
@@ -341,7 +341,7 @@ msgstr "在 $(ARG1)(row,col) 处发现文件格式错误。"
 
 #: source/core/glob.src#RID_SD_ERRHDL.ERR_CODE ( ERRCODE_CLASS_READ , ERR_FORMAT_FILE_ROWCOL ).String.Text
 msgid  "Format error discovered in the file in sub-document $(ARG1) at position $(ARG2)(row,col)."
-msgstr "在文件的子文档 $(ARG1) 中发现格式错误，位置在 $(ARG2)（行，列）。"
+msgstr "在文件的子文档 $(ARG1) 内的 $(ARG2)(row,col) 处发现格式错误。"
 
 #: source/core/glob.src#RID_SD_ERRHDL.ERR_CODE ( ERRCODE_CLASS_READ , WARN_FORMAT_FILE_ROWCOL ).String.Text
 msgid  "Format error discovered in the file in sub-document $(ARG1) at position $(ARG2)(row,col)."
@@ -1617,7 +1617,7 @@ msgstr "大纲视图"
 
 #: source/ui/app/strings.src#STR_NOTES_MODE.String.Text
 msgid  "Notes"
-msgstr "备注视图"
+msgstr "备注"
 
 #: source/ui/app/strings.src#STR_HANDOUT_MODE.String.Text
 msgid  "Handout"
@@ -1797,7 +1797,7 @@ msgstr "分层"
 
 #: source/ui/app/strings.src#STR_UNDO_DELETEPAGES.String.Text
 msgid  "Delete slides"
-msgstr "删除页面"
+msgstr "删除幻灯片"
 
 #: source/ui/app/strings.src#STR_UNDO_INSERTPAGES.String.Text
 msgid  "Insert slides"

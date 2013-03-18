@@ -888,7 +888,7 @@ msgstr "Restaurar"
 #: source/dialog/imapdlg.src#RID_SVXDLG_IMAP.TBX_IMAPDLG1.TBI_ACTIVE.ToolBoxItem.Text
 #, fuzzy
 msgid  "Active"
-msgstr "~Activo"
+msgstr "Activo"
 
 #: source/dialog/imapdlg.src#RID_SVXDLG_IMAP.TBX_IMAPDLG1.TBI_MACRO.ToolBoxItem.Text
 #, fuzzy
@@ -1001,7 +1001,7 @@ msgstr "Activar ~cabeçalho"
 #: source/dialog/hdft.src#RID_SVXPAGE_HEADER.CB_SHARED.CheckBox.Text
 #, fuzzy
 msgid  "Same ~content left/right"
-msgstr "Mesmo ~conteúdo esquerda/direita"
+msgstr "~Mesmo conteúdo esquerda/direita"
 
 #: source/dialog/hdft.src#RID_SVXPAGE_HEADER.FT_DIST.FixedText.Text
 #, fuzzy
@@ -1021,7 +1021,7 @@ msgstr "~Altura"
 #: source/dialog/hdft.src#RID_SVXPAGE_HEADER.CB_HEIGHT_DYN.CheckBox.Text
 #, fuzzy
 msgid  "~AutoFit height"
-msgstr "Ajuste dinâmico da altura"
+msgstr "Ajuste di~nâmico da altura"
 
 #: source/dialog/hdft.src#RID_SVXPAGE_HEADER.FL_FRAME.FixedLine.Text
 #, fuzzy
@@ -1684,7 +1684,7 @@ msgstr "..."
 #: source/dialog/ctredlin.src#SID_REDLIN_FILTER_PAGE.CB_COMMENT.CheckBox.Text
 #, fuzzy
 msgid  "Comment"
-msgstr "Descrição"
+msgstr "D~escrição"
 
 #: source/dialog/ctredlin.src#SID_REDLIN_FILTER_PAGE.STR_DATE_COMBOX.String.Text
 msgid  "Date Condition"
@@ -2132,7 +2132,7 @@ msgstr "Menos ~opções"
 #: source/dialog/frmsel.src#RID_SVXSTR_BORDER_CONTROL.ARR_TEXTS.0.ItemList.item
 #, fuzzy
 msgid  "Border setting"
-msgstr "Definição de contorno"
+msgstr "Definição do contorno"
 
 #: source/dialog/frmsel.src#RID_SVXSTR_BORDER_CONTROL.ARR_TEXTS.1.ItemList.item
 #, fuzzy
@@ -2147,7 +2147,7 @@ msgstr "Linha de contorno direita"
 #: source/dialog/frmsel.src#RID_SVXSTR_BORDER_CONTROL.ARR_TEXTS.3.ItemList.item
 #, fuzzy
 msgid  "Top border line"
-msgstr "Linha de contorno superior"
+msgstr "Linha de controno superior"
 
 #: source/dialog/frmsel.src#RID_SVXSTR_BORDER_CONTROL.ARR_TEXTS.4.ItemList.item
 #, fuzzy
@@ -4753,8 +4753,9 @@ msgid  "Object-Specific"
 msgstr "Específico do objecto"
 
 #: source/engine3d/float3d.src#RID_SVXFLOAT_3D.BTN_NORMALS_FLAT.ButtonImage.QuickHelpText
+#, fuzzy
 msgid  "Flat"
-msgstr "plano"
+msgstr "Plano"
 
 #: source/engine3d/float3d.src#RID_SVXFLOAT_3D.BTN_NORMALS_SPHERE.ButtonImage.QuickHelpText
 #, fuzzy
@@ -6567,8 +6568,9 @@ msgid  "Gallery"
 msgstr "Galeria"
 
 #: source/gallery2/gallery.src#RID_SVXSTR_GALLERY_ACTUALIZE_PROGRESS.String.Text
+#, fuzzy
 msgid  "Update"
-msgstr "Ac~tualizar"
+msgstr "Actualizar"
 
 #: source/gallery2/gallery.src#RID_SVXSTR_GALLERY_FOPENERROR.String.Text
 #, fuzzy
@@ -6702,12 +6704,14 @@ msgid  "Propert~ies..."
 msgstr "~Propriedades ..."
 
 #: source/gallery2/gallery.src#RID_SVXMN_GALLERY2.MN_ADDMENU.MenuItem.Text
+#, fuzzy
 msgid  "~Insert"
-msgstr "~Inserir"
+msgstr "~Adicionar"
 
 #: source/gallery2/gallery.src#RID_SVXMN_GALLERY2.MN_ADDMENU.MN_ADD.MenuItem.Text
+#, fuzzy
 msgid  "~Copy"
-msgstr "~Copiar"
+msgstr "~Cópia"
 
 #: source/gallery2/gallery.src#RID_SVXMN_GALLERY2.MN_ADDMENU.MN_ADD_LINK.MenuItem.Text
 #, fuzzy
@@ -7056,8 +7060,9 @@ msgid  "Password protection is not supported when documents are saved in a Micro
 msgstr ""
 
 #: source/items/svxitems.src#RID_ATTR_NAMES.SID_ATTR_ZOOM.ItemList.item
+#, fuzzy
 msgid  "Scale"
-msgstr "Ampliação"
+msgstr "Escala"
 
 #: source/items/svxitems.src#RID_ATTR_NAMES.SID_ATTR_BRUSH.ItemList.item
 #, fuzzy
@@ -7230,8 +7235,9 @@ msgid  "Page"
 msgstr "Página"
 
 #: source/items/svxitems.src#RID_ATTR_NAMES.SID_ATTR_PARA_MODEL.ItemList.item
+#, fuzzy
 msgid  "Page Style"
-msgstr "Estilo da Página"
+msgstr "Estilo de página"
 
 #: source/items/svxitems.src#RID_ATTR_NAMES.SID_ATTR_PARA_KEEP.ItemList.item
 #, fuzzy
@@ -7249,8 +7255,9 @@ msgid  "Register-true"
 msgstr "Registo"
 
 #: source/items/svxitems.src#RID_ATTR_NAMES.SID_ATTR_BRUSH_CHAR.ItemList.item
+#, fuzzy
 msgid  "Character background"
-msgstr "Fundo do carácter"
+msgstr "Fundo de caracteres"
 
 #: source/items/svxitems.src#RID_ATTR_NAMES.SID_ATTR_CHAR_CJK_FONT.ItemList.item
 #, fuzzy
@@ -7408,8 +7415,9 @@ msgid  "Note"
 msgstr "Anotação"
 
 #: source/items/svxitems.src#RID_SVXITEMS_BRUSHSTYLE_NULL.String.Text
+#, fuzzy
 msgid  "None"
-msgstr "Sem"
+msgstr "Nenhum"
 
 #: source/items/svxitems.src#RID_SVXITEMS_BRUSHSTYLE_SOLID.String.Text
 #, fuzzy
@@ -8409,8 +8417,9 @@ msgid  "Circle sectors"
 msgstr "Sectores de círculo"
 
 #: source/svdraw/svdstr.src#STR_ObjNameSingulCARC.String.Text
+#, fuzzy
 msgid  "Arc"
-msgstr "Arco de círculo"
+msgstr "Arco"
 
 #: source/svdraw/svdstr.src#STR_ObjNamePluralCARC.String.Text
 #, fuzzy
@@ -8578,8 +8587,9 @@ msgid  "Periodic Splines"
 msgstr "Splines periódicos"
 
 #: source/svdraw/svdstr.src#STR_ObjNameSingulTEXT.String.Text
+#, fuzzy
 msgid  "Text Frame"
-msgstr "Molduras de texto"
+msgstr "Moldura de texto"
 
 #: source/svdraw/svdstr.src#STR_ObjNamePluralTEXT.String.Text
 #, fuzzy
@@ -9815,8 +9825,9 @@ msgid  "Arc"
 msgstr "Arco de círculo"
 
 #: source/svdraw/svdstr.src#STR_ItemNam_SHADOW.String.Text
+#, fuzzy
 msgid  "Shadow"
-msgstr "Sombreado"
+msgstr "Sombras"
 
 #: source/svdraw/svdstr.src#STR_ItemNam_SHADOWCOLOR.String.Text
 #, fuzzy
@@ -9839,12 +9850,14 @@ msgid  "Shadow transparency"
 msgstr "Transparência da sombra"
 
 #: source/svdraw/svdstr.src#STR_ItemNam_SHADOW3D.String.Text
+#, fuzzy
 msgid  "3D shadow"
-msgstr "Sombra 3D"
+msgstr "Sombreado 3D"
 
 #: source/svdraw/svdstr.src#STR_ItemNam_SHADOWPERSP.String.Text
+#, fuzzy
 msgid  "Perspective shadow"
-msgstr "Sombra em perspectiva"
+msgstr "Perspectiva da sombra"
 
 #: source/svdraw/svdstr.src#STR_ItemNam_CAPTIONTYPE.String.Text
 #, fuzzy
@@ -9992,8 +10005,9 @@ msgid  "Contrast"
 msgstr "Contraste"
 
 #: source/svdraw/svdstr.src#STR_ItemNam_GRAFGAMMA.String.Text
+#, fuzzy
 msgid  "Gamma"
-msgstr "Gama"
+msgstr "Gamma"
 
 #: source/svdraw/svdstr.src#STR_ItemNam_GRAFTRANSPARENCE.String.Text
 #, fuzzy
@@ -10046,8 +10060,9 @@ msgid  "Object name"
 msgstr "Nome do objecto"
 
 #: source/svdraw/svdstr.src#STR_ItemNam_STARTANGLE.String.Text
+#, fuzzy
 msgid  "Start angle"
-msgstr "Ângulo inicial"
+msgstr "Ângulo de partida"
 
 #: source/svdraw/svdstr.src#STR_ItemNam_ENDANGLE.String.Text
 #, fuzzy

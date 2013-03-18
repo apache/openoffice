@@ -757,7 +757,7 @@ msgstr "Nun hai más comandos na barra de ferramientes. ¿Quies desaniciar la ba
 
 #: source/customize/cfg.src#QBX_CONFIRM_RESET.QueryBox.Message
 msgid  "The menu configuration for %SAVE IN SELECTION% will be reset to the factory settings. Do you want to continue?"
-msgstr "La configuración de menú de %SAVE IN SELECTION% s restaurase al estáu orixinal. ¿Quies continuar?"
+msgstr "La configuración de menú %SAVE IN SELECTION% se va restaurase al so estáu orixinal. ¿Quies continuar?"
 
 #: source/customize/cfg.src#RID_SVXSTR_CONFIRM_MENU_RESET.String.Text
 msgid  "The menu configuration for %SAVE IN SELECTION% will be reset to the factory settings. Do you want to continue?"
@@ -2121,7 +2121,7 @@ msgstr "Crear dende ~ficheru"
 
 #: source/dialogs/svuidlg.src#MD_INSERT_OLEOBJECT.BTN_FILEPATH.PushButton.Text
 msgid  "~Search..."
-msgstr "~Gueta..."
+msgstr "~Gueta"
 
 #: source/dialogs/svuidlg.src#MD_INSERT_OLEOBJECT.CB_FILELINK.CheckBox.Text
 msgid  "~Link to file"
@@ -5625,7 +5625,7 @@ msgstr "Radial"
 
 #: source/tabpages/tabarea.src#RID_SVXPAGE_TRANSPARENCE.LB_TRGR_GRADIENT_TYPES.Default.StringList.item
 msgid  "Ellipsoid"
-msgstr "Elipsoide"
+msgstr "Elipses"
 
 #: source/tabpages/tabarea.src#RID_SVXPAGE_TRANSPARENCE.LB_TRGR_GRADIENT_TYPES.Default.StringList.item
 msgid  "Quadratic"
@@ -5897,7 +5897,7 @@ msgstr "Guardar llista de mapa de bits"
 
 #: source/tabpages/tabarea.src#RID_SVXPAGE_GRADIENT.TabPage.Text
 msgid  "Gradients"
-msgstr "Gradientes"
+msgstr "Gradiantes"
 
 #: source/tabpages/tabarea.src#RID_SVXPAGE_GRADIENT.FL_PROP.FixedLine.Text
 msgid  "Properties"
@@ -7129,7 +7129,7 @@ msgstr "Completáu de pallabres"
 
 #: source/tabpages/autocdlg.src#RID_OFA_AUTOCORR_DLG.1.RID_OFAPAGE_SMARTTAG_OPTIONS.PageItem.Text
 msgid  "Smart Tags"
-msgstr "Etiquetes intelixentes"
+msgstr "Etiquetes Intelixentes"
 
 #: source/tabpages/autocdlg.src#RID_OFA_AUTOCORR_DLG.FT_LANG.FixedText.Text
 msgid  "Replacements and exceptions for language:"
@@ -7237,7 +7237,7 @@ msgstr "Combinar"
 
 #: source/tabpages/autocdlg.src#RID_OFAPAGE_AUTOCORR_REPLACE.FT_SHORT.FixedText.Text
 msgid  "Repla~ce"
-msgstr "Troc~ar"
+msgstr "Tro~car"
 
 #: source/tabpages/autocdlg.src#RID_OFAPAGE_AUTOCORR_REPLACE.FT_REPLACE.FixedText.Text
 msgid  "~With:"
@@ -7665,7 +7665,7 @@ msgstr "~Centráu"
 
 #: source/tabpages/paragrph.src#RID_SVXPAGE_ALIGN_PARAGRAPH.BTN_JUSTIFYALIGN.RadioButton.Text
 msgid  "Justified"
-msgstr "Xustificáu"
+msgstr "~Xustificáu"
 
 #: source/tabpages/paragrph.src#RID_SVXPAGE_ALIGN_PARAGRAPH.ST_LEFTALIGN_ASIAN.String.Text
 msgid  "~Left/Top"
@@ -8241,7 +8241,7 @@ msgstr "Ángulu de Rotación"
 
 #: source/tabpages/transfrm.src#RID_SVXPAGE_ANGLE.FT_ANGLE.FixedText.Text
 msgid  "~Angle"
-msgstr "Á~ngulu"
+msgstr "Án~gulu"
 
 #: source/tabpages/transfrm.src#RID_SVXPAGE_ANGLE.MTR_FLD_ANGLE.MetricField.CustomUnitText
 msgid  " degrees"
@@ -8389,7 +8389,7 @@ msgstr "Escala"
 
 #: source/tabpages/grfpage.src#RID_SVXPAGE_GRFCROP.FT_WIDTHZOOM.FixedText.Text
 msgid  "~Width"
-msgstr "An~chor"
+msgstr "~Anchor"
 
 #: source/tabpages/grfpage.src#RID_SVXPAGE_GRFCROP.FT_HEIGHTZOOM.FixedText.Text
 msgid  "H~eight"
@@ -8765,7 +8765,7 @@ msgstr "Colores"
 
 #: source/tabpages/chardlg.src#RID_SVXPAGE_CHAR_NAME.FT_COLOR2.FixedText.Text
 msgid  "Font ~color"
-msgstr "~Color de fonte"
+msgstr "~Color de la fonte"
 
 #: source/tabpages/chardlg.src#RID_SVXPAGE_CHAR_NAME.STR_CHARNAME_NOSTYLE.String.Text
 msgid  "No %1"
@@ -8845,7 +8845,7 @@ msgstr "(Ensin)"
 
 #: source/tabpages/chardlg.src#RID_SVXPAGE_CHAR_EFFECTS.LB_OVERLINE.CHRDLG_UNDERLINE_SINGLE.StringList.item
 msgid  "Single"
-msgstr "Simple"
+msgstr "Cenciellu"
 
 #: source/tabpages/chardlg.src#RID_SVXPAGE_CHAR_EFFECTS.LB_OVERLINE.CHRDLG_UNDERLINE_DOUBLE.StringList.item
 msgid  "Double"
@@ -8861,7 +8861,7 @@ msgstr "Puntiáu"
 
 #: source/tabpages/chardlg.src#RID_SVXPAGE_CHAR_EFFECTS.LB_OVERLINE.CHRDLG_UNDERLINE_BOLDDOTTED.StringList.item
 msgid  "Dotted (Bold)"
-msgstr "Punteáu (Negrina)"
+msgstr "Puntiáu negrina"
 
 #: source/tabpages/chardlg.src#RID_SVXPAGE_CHAR_EFFECTS.LB_OVERLINE.CHRDLG_UNDERLINE_DASH.StringList.item
 msgid  "Dash"
@@ -8869,43 +8869,43 @@ msgstr "Guión"
 
 #: source/tabpages/chardlg.src#RID_SVXPAGE_CHAR_EFFECTS.LB_OVERLINE.CHRDLG_UNDERLINE_BOLDDASH.StringList.item
 msgid  "Dash (Bold)"
-msgstr "Guión (Negrina)"
+msgstr "Trazu negrina"
 
 #: source/tabpages/chardlg.src#RID_SVXPAGE_CHAR_EFFECTS.LB_OVERLINE.CHRDLG_UNDERLINE_LONGDASH.StringList.item
 msgid  "Long Dash"
-msgstr "Guión Llargu"
+msgstr "Trazu llargu"
 
 #: source/tabpages/chardlg.src#RID_SVXPAGE_CHAR_EFFECTS.LB_OVERLINE.CHRDLG_UNDERLINE_BOLDLONGDASH.StringList.item
 msgid  "Long Dash (Bold)"
-msgstr "Guión Llargu (Negrina)"
+msgstr "Trazu negrina llargu"
 
 #: source/tabpages/chardlg.src#RID_SVXPAGE_CHAR_EFFECTS.LB_OVERLINE.CHRDLG_UNDERLINE_DASHDOT.StringList.item
 msgid  "Dot Dash"
-msgstr "Puntu Guión"
+msgstr "Puntu trazu"
 
 #: source/tabpages/chardlg.src#RID_SVXPAGE_CHAR_EFFECTS.LB_OVERLINE.CHRDLG_UNDERLINE_BOLDDASHDOT.StringList.item
 msgid  "Dot Dash (Bold)"
-msgstr "Puntu Guión (Negrina)"
+msgstr "Puntu trazu negrina"
 
 #: source/tabpages/chardlg.src#RID_SVXPAGE_CHAR_EFFECTS.LB_OVERLINE.CHRDLG_UNDERLINE_DASHDOTDOT.StringList.item
 msgid  "Dot Dot Dash"
-msgstr "Puntu Puntu Guión"
+msgstr "Puntu puntu trazu"
 
 #: source/tabpages/chardlg.src#RID_SVXPAGE_CHAR_EFFECTS.LB_OVERLINE.CHRDLG_UNDERLINE_BOLDDASHDOTDOT.StringList.item
 msgid  "Dot Dot Dash (Bold)"
-msgstr "Puntu Puntu Guión (Negrina)"
+msgstr "Puntu puntu trazu negrina"
 
 #: source/tabpages/chardlg.src#RID_SVXPAGE_CHAR_EFFECTS.LB_OVERLINE.CHRDLG_UNDERLINE_WAVE.StringList.item
 msgid  "Wave"
-msgstr "Onda"
+msgstr "Ondulada"
 
 #: source/tabpages/chardlg.src#RID_SVXPAGE_CHAR_EFFECTS.LB_OVERLINE.CHRDLG_UNDERLINE_BOLDWAVE.StringList.item
 msgid  "Wave (Bold)"
-msgstr "Onda (Negrina)"
+msgstr "Ondulada negrina"
 
 #: source/tabpages/chardlg.src#RID_SVXPAGE_CHAR_EFFECTS.LB_OVERLINE.CHRDLG_UNDERLINE_DOUBLEWAVE.StringList.item
 msgid  "Double Wave"
-msgstr "Ondulación Duble"
+msgstr "Ondulada duble"
 
 #: source/tabpages/chardlg.src#RID_SVXPAGE_CHAR_EFFECTS.FT_OVERLINE_COLOR.FixedText.Text
 msgid  "O~verline color"

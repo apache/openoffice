@@ -37,7 +37,7 @@ msgstr "རྒྱབ་གཞི།"
 
 #: source/core/glob.src#STR_LAYER_BCKGRNDOBJ.String.Text
 msgid  "Background objects"
-msgstr "རྒྱབ་གཞི་དངོས་པོ་ཚུ།"
+msgstr "རྒྱབ་གཞིའི་དངོས་པོ་ཚུ།"
 
 #: source/core/glob.src#STR_LAYER_LAYOUT.String.Text
 msgid  "Layout"
@@ -197,7 +197,7 @@ msgstr "གུལུ་ པོའིནཊིསི་ གི་ཐབས་ལ�
 
 #: source/core/glob.src#STR_LAYOUT_DEFAULT_NAME.String.Text
 msgid  "Default"
-msgstr "སྔོན་སྒྲིག་"
+msgstr "སྔོན་སྒྲིག"
 
 #: source/core/glob.src#STR_LAYOUT_DEFAULT_TITLE_NAME.String.Text
 msgid  "Title"
@@ -341,7 +341,7 @@ msgstr "$(ARG1)(row,col) ལུ་ཡིག་སྣོད་རྩ་སྒྲ�
 
 #: source/core/glob.src#RID_SD_ERRHDL.ERR_CODE ( ERRCODE_CLASS_READ , ERR_FORMAT_FILE_ROWCOL ).String.Text
 msgid  "Format error discovered in the file in sub-document $(ARG1) at position $(ARG2)(row,col)."
-msgstr "$(ARG2)(row,col) གནས་ས་ལུ་ཡན་ལག་ཡིག་ཆ་$(ARG1)ནང་ཡིག་ཆ་ནང་གསར་རྙེད་འབད་ཡོད་པའི་རྩ་སྒྲིག་འཛོལ་བ།"
+msgstr "$(ARG2)(row,col) གནས་ས་ལུ་ཡན་ལག་ཡིག་ཆ་$(ARG1) ནང་ཡིག་སྣོད་ནང་གསར་རྙེད་འབད་ཡོད་པའི་རྩ་སྒྲིག་འཛོལ་བ།"
 
 #: source/core/glob.src#RID_SD_ERRHDL.ERR_CODE ( ERRCODE_CLASS_READ , WARN_FORMAT_FILE_ROWCOL ).String.Text
 msgid  "Format error discovered in the file in sub-document $(ARG1) at position $(ARG2)(row,col)."
@@ -413,7 +413,7 @@ msgstr "ཚད་ལྡན་ ཨེཆ་ཊི་ཨེམ་ཨེལ་ ག�
 
 #: source/filter/html/pubdlg.src#DLG_PUBLISHING.PAGE2_KIOSK.RadioButton.Text
 msgid  "~Automatic"
-msgstr "རང་བཞིན།(A)"
+msgstr "རང་བཞིན་གྱི།་"
 
 #: source/filter/html/pubdlg.src#DLG_PUBLISHING.PAGE2_WEBCAST.RadioButton.Text
 msgid  "~WebCast"
@@ -1013,7 +1013,7 @@ msgstr "སྦོམ་མི།"
 
 #: source/ui/animations/CustomAnimation.src#RID_CUSTOMANIMATION_FONTSIZE_POPUP.CM_SIZE_400.MenuItem.Text
 msgid  "Extra large"
-msgstr "སྦོམ་་ཐེབས།"
+msgstr "སྦོམ་ཐེབས།"
 
 #: source/ui/animations/CustomAnimation.src#RID_CUSTOMANIMATION_SCALE_POPUP.CM_SIZE_25.MenuItem.Text
 msgid  "Tiny"
@@ -1656,7 +1656,7 @@ msgstr "མཐའ་ཐིག"
 #: source/ui/app/strings.src#STR_NOTES_MODE.String.Text
 #, fuzzy
 msgid  "Notes"
-msgstr "དྲན་ཚིག་ཚུ།"
+msgstr "དྲན་འཛིན་ཚུ།"
 
 #: source/ui/app/strings.src#STR_HANDOUT_MODE.String.Text
 #, fuzzy
@@ -3208,12 +3208,12 @@ msgstr "ཕྲང་སྒྲིག།(~l)"
 #: source/ui/app/menuids_tmpl.src#MN_TEXT_ALIGN.DUMMY.SID_ATTR_PARA_ADJUST_LEFT.MenuItem.Text
 #, fuzzy
 msgid  "~Left"
-msgstr "གཡོན།(~L)"
+msgstr "ལྷག་ལུས།(~L)"
 
 #: source/ui/app/menuids_tmpl.src#MN_TEXT_ALIGN.DUMMY.SID_ATTR_PARA_ADJUST_RIGHT.MenuItem.Text
 #, fuzzy
 msgid  "~Right"
-msgstr "གཡོན།(~R)"
+msgstr "གཡས།(~R)"
 
 #: source/ui/app/menuids_tmpl.src#MN_TEXT_ALIGN.DUMMY.SID_ATTR_PARA_ADJUST_CENTER.MenuItem.Text
 #, fuzzy
@@ -3248,7 +3248,7 @@ msgstr "གཡས།(~R)"
 #: source/ui/app/menuids_tmpl.src#MN_OBJECT_ALIGN.SID_OBJECT_ALIGN.SID_OBJECT_ALIGN_UP.MenuItem.Text
 #, fuzzy
 msgid  "~Top"
-msgstr "མགོ(~T)"
+msgstr "སྤྱི་ཏོག(~T)"
 
 #: source/ui/app/menuids_tmpl.src#MN_OBJECT_ALIGN.SID_OBJECT_ALIGN.SID_OBJECT_ALIGN_MIDDLE.MenuItem.Text
 #, fuzzy
@@ -3258,7 +3258,7 @@ msgstr "དབུས།(~e)"
 #: source/ui/app/menuids_tmpl.src#MN_OBJECT_ALIGN.SID_OBJECT_ALIGN.SID_OBJECT_ALIGN_DOWN.MenuItem.Text
 #, fuzzy
 msgid  "~Bottom"
-msgstr "མཇུག(~B)"
+msgstr "མཇུག(གཤམ)(~B)"
 
 #: source/ui/app/menuids_tmpl.src#MN_CLOSE_OBJECT.SID_OBJECT_CLOSE.MenuItem.Text
 #, fuzzy
@@ -3732,7 +3732,7 @@ msgstr "ལག་ཆས་ཕྲ་རིང་།(~T)"
 #: source/ui/app/toolbox.src#RID_DRAW_VIEWER_TOOLBOX.String.Text
 #, fuzzy
 msgid  "Function Bar (viewing mode)"
-msgstr "ལས་འགན་ཕྲ་རིང་།(ཐབས་ལམ་སྟོན་དོ།)"
+msgstr "ལས་འགན་ཕྲ་རིང་། (ཐབས་ལམ་སྟོན་དོ།)"
 
 #: source/ui/app/toolbox.src#RID_GRAPHIC_VIEWER_TOOLBOX.String.Text
 #, fuzzy
@@ -3846,7 +3846,7 @@ msgstr "བཤུད་བརྙན་ག་རལུ་འཇུག་བཅོ
 #: source/ui/app/popup.src#RID_TASKPANE_MASTERPAGESSELECTOR_POPUP.SID_TP_APPLY_TO_SELECTED_SLIDES.MenuItem.Text
 #, fuzzy
 msgid  "Apply to ~Selected Slides"
-msgstr "སེལ་འཐུའི་བཤུད་བརྙན་ཚུ་ལུ་འཇུག་བཅོས་འབད།(~S)"
+msgstr "སེལ་འཐུའི་་བཤུད་བརྙན་ཚུ་ལུ་འཇུག་བཅོས་འབད།(~S)"
 
 #: source/ui/app/popup.src#RID_TASKPANE_MASTERPAGESSELECTOR_POPUP.SID_TP_SHOW_LARGE_PREVIEW.MenuItem.Text
 #, fuzzy
@@ -4313,8 +4313,9 @@ msgid  "~Color"
 msgstr "ཚོས་གཞི།(~C)"
 
 #: source/ui/app/menuids2_tmpl.src#MN_OUTPUT_QUALITY_GRAYSCALE.SID_OUTPUT_QUALITY_GRAYSCALE.MenuItem.Text
+#, fuzzy
 msgid  "~Grayscale"
-msgstr "གེརེ་སིཀེལ།(~G)"
+msgstr "གེལེ་སིཀེལ།(~G)"
 
 #: source/ui/app/menuids2_tmpl.src#MN_OUTPUT_QUALITY_BLACKWHITE.SID_OUTPUT_QUALITY_BLACKWHITE.MenuItem.Text
 #, fuzzy
@@ -4322,8 +4323,9 @@ msgid  "~Black and White"
 msgstr "གནགཔ་དང་དཀརཔོ།(~B)"
 
 #: source/ui/app/menuids2_tmpl.src#MN_OUTPUT_QUALITY_CONTRAST.SID_OUTPUT_QUALITY_CONTRAST.MenuItem.Text
+#, fuzzy
 msgid  "~High Contrast"
-msgstr "ཚོན་མདངས་མཐོ་བ།(~H)"
+msgstr "ཚོན་མདངས་ཆེ་བ།(~H)"
 
 #: source/ui/app/menuids2_tmpl.src#MN_PREVIEW_QUALITY_COLOR.SID_PREVIEW_QUALITY_COLOR.MenuItem.Text
 #, fuzzy

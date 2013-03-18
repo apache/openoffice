@@ -309,11 +309,11 @@ msgstr "Flokkar"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.business.Tables.categories.Fields.categoryID.Name
 msgid  "CategoryID"
-msgstr "FlokkAuðk"
+msgstr "FlokkaAuðkenni"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.business.Tables.categories.Fields.categoryID.ShortName
 msgid  "CategoryID"
-msgstr "FlokkAuðkenni"
+msgstr "FlokkAuðk"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.business.Tables.categories.Fields.categoryname.Name
 msgid  "CategoryName"
@@ -329,11 +329,11 @@ msgstr "Vörur"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.business.Tables.products.Fields.productID.Name
 msgid  "ProductID"
-msgstr "VöruNr"
+msgstr "Vörunúmer"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.business.Tables.products.Fields.productID.ShortName
 msgid  "ProductID"
-msgstr "Vörunúmer"
+msgstr "VöruNr"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.business.Tables.products.Fields.productname.Name
 msgid  "ProductName"
@@ -353,19 +353,19 @@ msgstr "Vörulýs"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.business.Tables.products.Fields.categoryID.Name
 msgid  "CategoryID"
-msgstr "FlokkAuðk"
+msgstr "FlokkAuðkenni"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.business.Tables.products.Fields.categoryID.ShortName
 msgid  "CategoryID"
-msgstr "FlokkAuðkenni"
+msgstr "FlokkAuðk"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.business.Tables.products.Fields.supplierID.Name
 msgid  "SupplierID"
-msgstr "BirgðasaliAuðk"
+msgstr "BirgðasaliAuðkenni"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.business.Tables.products.Fields.supplierID.ShortName
 msgid  "SupplierID"
-msgstr "BirgðasaliAuðkenni"
+msgstr "BirgðasaliAuðk"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.business.Tables.products.Fields.serialnumber.Name
 msgid  "Serialnumber"
@@ -393,11 +393,11 @@ msgstr "FjöldiPant"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.business.Tables.products.Fields.unitprice.Name
 msgid  "UnitPrice"
-msgstr "EinVerð"
+msgstr "EiningaVerð"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.business.Tables.products.Fields.unitprice.ShortName
 msgid  "UnitPrice"
-msgstr "EiningaVerð"
+msgstr "EinVerð"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.business.Tables.products.Fields.reorderlevel.Name
 msgid  "ReorderLevel"
@@ -417,7 +417,7 @@ msgstr "Hætt"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.business.Tables.products.Fields.leadtime.Name
 msgid  "LeadTime"
-msgstr "AfgreiðTími"
+msgstr "Afgreiðslutími"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.business.Tables.products.Fields.leadtime.ShortName
 msgid  "LeadTime"
@@ -429,7 +429,7 @@ msgstr "Birgðasalar"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.business.Tables.suppliers.Fields.supplierID.Name
 msgid  "SupplierID"
-msgstr "BirgAuðk"
+msgstr "BirgðasaliAuðkenni"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.business.Tables.suppliers.Fields.supplierID.ShortName
 msgid  "SupplierID"
@@ -461,11 +461,11 @@ msgstr "TitillTeng"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.business.Tables.suppliers.Fields.address.Name
 msgid  "Address"
-msgstr "Heimilisf"
+msgstr "Heimilisfang"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.business.Tables.suppliers.Fields.address.ShortName
 msgid  "Address"
-msgstr "Heimilisfang"
+msgstr "Heimilisf"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.business.Tables.suppliers.Fields.city.Name
 msgid  "City"
@@ -477,11 +477,11 @@ msgstr "Borg"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.business.Tables.suppliers.Fields.postalcode.Name
 msgid  "PostalCode"
-msgstr "PóstNr"
+msgstr "Póstnúmer"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.business.Tables.suppliers.Fields.postalcode.ShortName
 msgid  "PostalCode"
-msgstr "Póstnúmer"
+msgstr "PóstNr"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.business.Tables.suppliers.Fields.stateorprovince.Name
 msgid  "StateOrProvince"
@@ -533,11 +533,11 @@ msgstr "Tölvupóstf"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.business.Tables.suppliers.Fields.notes.Name
 msgid  "Notes"
-msgstr "Athugas"
+msgstr "Athugasemdir"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.business.Tables.suppliers.Fields.notes.ShortName
 msgid  "Notes"
-msgstr "Athugasemdir"
+msgstr "Athugas"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.business.Tables.mailinglist.Name
 msgid  "MailingList"
@@ -553,7 +553,7 @@ msgstr "PóstlistAuðk"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.business.Tables.mailinglist.Fields.prefix.Name
 msgid  "Prefix"
-msgstr "Forsk"
+msgstr "Forskeyti"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.business.Tables.mailinglist.Fields.prefix.ShortName
 msgid  "Prefix"
@@ -609,11 +609,11 @@ msgstr "NafnFyrirtæki"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.business.Tables.mailinglist.Fields.address.Name
 msgid  "Address"
-msgstr "Heimilisf"
+msgstr "Heimilisfang"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.business.Tables.mailinglist.Fields.address.ShortName
 msgid  "Address"
-msgstr "Heimilisfang"
+msgstr "Heimilisf"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.business.Tables.mailinglist.Fields.city.Name
 msgid  "City"
@@ -625,11 +625,11 @@ msgstr "Borg"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.business.Tables.mailinglist.Fields.postalcode.Name
 msgid  "PostalCode"
-msgstr "PóstNr"
+msgstr "Póstnúmer"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.business.Tables.mailinglist.Fields.postalcode.ShortName
 msgid  "PostalCode"
-msgstr "Póstnúmer"
+msgstr "PóstNr"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.business.Tables.mailinglist.Fields.stateorprovince.Name
 msgid  "StateOrProvince"
@@ -681,11 +681,11 @@ msgstr "Tölvupóstf"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.business.Tables.mailinglist.Fields.birthdate.Name
 msgid  "Birthdate"
-msgstr "Fæðingardag"
+msgstr "Fæðingardagur"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.business.Tables.mailinglist.Fields.birthdate.ShortName
 msgid  "Birthdate"
-msgstr "Fæðingardagur"
+msgstr "Fæðingardag"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.business.Tables.mailinglist.Fields.nationality.Name
 msgid  "Nationality"
@@ -705,7 +705,7 @@ msgstr "DagsUppf"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.business.Tables.mailinglist.Fields.datejoined.Name
 msgid  "DateJoined"
-msgstr "DagsÁskrift"
+msgstr "DagsetningÁskriftar"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.business.Tables.mailinglist.Fields.datejoined.ShortName
 msgid  "DateJoined"
@@ -737,7 +737,7 @@ msgstr "ÁheitBorgDags"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.business.Tables.mailinglist.Fields.duesamount.Name
 msgid  "DuesAmount"
-msgstr "UpphSkuld"
+msgstr "UpphæðSkuldar"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.business.Tables.mailinglist.Fields.duesamount.ShortName
 msgid  "DuesAmount"
@@ -761,11 +761,11 @@ msgstr "Mynd"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.business.Tables.mailinglist.Fields.notes.Name
 msgid  "Notes"
-msgstr "Athugas"
+msgstr "Athugasemdir"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.business.Tables.mailinglist.Fields.notes.ShortName
 msgid  "Notes"
-msgstr "Athugasemdir"
+msgstr "Athugas"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.business.Tables.contacts.Name
 msgid  "Contacts"
@@ -773,7 +773,7 @@ msgstr "Tengiliðir"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.business.Tables.contacts.Fields.contactID.Name
 msgid  "ContactID"
-msgstr "TengilAuðk"
+msgstr "TengiliðaAuðkenni"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.business.Tables.contacts.Fields.contactID.ShortName
 msgid  "ContactID"
@@ -805,11 +805,11 @@ msgstr "Titill"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.business.Tables.contacts.Fields.address.Name
 msgid  "Address"
-msgstr "Heimilisf"
+msgstr "Heimilisfang"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.business.Tables.contacts.Fields.address.ShortName
 msgid  "Address"
-msgstr "Heimilisfang"
+msgstr "Heimilisf"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.business.Tables.contacts.Fields.city.Name
 msgid  "City"
@@ -821,11 +821,11 @@ msgstr "Borg"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.business.Tables.contacts.Fields.postalcode.Name
 msgid  "PostalCode"
-msgstr "PóstNr"
+msgstr "Póstnúmer"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.business.Tables.contacts.Fields.postalcode.ShortName
 msgid  "PostalCode"
-msgstr "Póstnúmer"
+msgstr "PóstNr"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.business.Tables.contacts.Fields.stateorprovince.Name
 msgid  "StateOrProvince"
@@ -885,11 +885,11 @@ msgstr "Ávarp"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.business.Tables.contacts.Fields.birthdate.Name
 msgid  "Birthdate"
-msgstr "Fæðingard"
+msgstr "Fæðingardagur"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.business.Tables.contacts.Fields.birthdate.ShortName
 msgid  "Birthdate"
-msgstr "Fæðingardagur"
+msgstr "Fæðingard"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.business.Tables.contacts.Fields.contacttypeID.Name
 msgid  "ContactTypeID"
@@ -905,7 +905,7 @@ msgstr "Hjúskaparstaða"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.business.Tables.contacts.Fields.maritalstatus.ShortName
 msgid  "MaritlStat"
-msgstr "HjúskapSt"
+msgstr "HjúskapStaða"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.business.Tables.contacts.Fields.spousename.Name
 msgid  "SpouseName"
@@ -937,7 +937,7 @@ msgstr "NöfnBarna"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.business.Tables.contacts.Fields.childrennames.ShortName
 msgid  "ChildName"
-msgstr "NöfnBarna"
+msgstr "NafnBarns"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.business.Tables.contacts.Fields.photo.Name
 msgid  "Photo"
@@ -949,11 +949,11 @@ msgstr "Mynd"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.business.Tables.contacts.Fields.notes.Name
 msgid  "Notes"
-msgstr "Athugas"
+msgstr "Athugasemdir"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.business.Tables.contacts.Fields.notes.ShortName
 msgid  "Notes"
-msgstr "Athugasemdir"
+msgstr "Athugas"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.business.Tables.customers.Name
 msgid  "Customers"
@@ -961,11 +961,11 @@ msgstr "Viðskiptavinir"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.business.Tables.customers.Fields.customerID.Name
 msgid  "CustomerID"
-msgstr "ViðskiptavAuðk"
+msgstr "ViðskiptavinaAuðkenni"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.business.Tables.customers.Fields.customerID.ShortName
 msgid  "CustomerID"
-msgstr "ViðskiptavinaAuðkenni"
+msgstr "ViðskiptavAuðk"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.business.Tables.customers.Fields.companyname.Name
 msgid  "CompanyName"
@@ -1001,11 +1001,11 @@ msgstr "Deild"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.business.Tables.customers.Fields.address.Name
 msgid  "Address"
-msgstr "Heimilisf"
+msgstr "Heimilisfang"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.business.Tables.customers.Fields.address.ShortName
 msgid  "Address"
-msgstr "Heimilisfang"
+msgstr "Heimilisf"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.business.Tables.customers.Fields.city.Name
 msgid  "City"
@@ -1017,11 +1017,11 @@ msgstr "Borg"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.business.Tables.customers.Fields.postalcode.Name
 msgid  "PostalCode"
-msgstr "PóstNr"
+msgstr "Póstnúmer"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.business.Tables.customers.Fields.postalcode.ShortName
 msgid  "PostalCode"
-msgstr "Póstnúmer"
+msgstr "PóstNr"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.business.Tables.customers.Fields.stateorprovince.Name
 msgid  "StateOrProvince"
@@ -1081,11 +1081,11 @@ msgstr "Titill"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.business.Tables.customers.Fields.notes.Name
 msgid  "Notes"
-msgstr "Athugas"
+msgstr "Athugasemdir"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.business.Tables.customers.Fields.notes.ShortName
 msgid  "Notes"
-msgstr "Athugasemdir"
+msgstr "Athugas"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.business.Tables.employees.Name
 msgid  "Employees"
@@ -1093,11 +1093,11 @@ msgstr "Starfsmenn"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.business.Tables.employees.Fields.employeeID.Name
 msgid  "EmployeeID"
-msgstr "StarfsmannAuðk"
+msgstr "StarfsmannaAuðkenni"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.business.Tables.employees.Fields.employeeID.ShortName
 msgid  "EmployeeID"
-msgstr "StarfsmannaAuðkenni"
+msgstr "StarfsmannAuðk"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.business.Tables.employees.Fields.firstname.Name
 msgid  "FirstName"
@@ -1173,11 +1173,11 @@ msgstr "Viðbót"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.business.Tables.employees.Fields.address.Name
 msgid  "Address"
-msgstr "Heimilisf"
+msgstr "Heimilisfang"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.business.Tables.employees.Fields.address.ShortName
 msgid  "Address"
-msgstr "Heimilisfang"
+msgstr "Heimilisf"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.business.Tables.employees.Fields.city.Name
 msgid  "City"
@@ -1189,11 +1189,11 @@ msgstr "Borg"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.business.Tables.employees.Fields.postalcode.Name
 msgid  "PostalCode"
-msgstr "PóstNr"
+msgstr "Póstnúmer"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.business.Tables.employees.Fields.postalcode.ShortName
 msgid  "PostalCode"
-msgstr "Póstnúmer"
+msgstr "PóstNr"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.business.Tables.employees.Fields.stateorprovince.Name
 msgid  "StateOrProvince"
@@ -1237,11 +1237,11 @@ msgstr "FarsímaNr"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.business.Tables.employees.Fields.birthdate.Name
 msgid  "Birthdate"
-msgstr "Fæðingardag"
+msgstr "Fæðingardagur"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.business.Tables.employees.Fields.birthdate.ShortName
 msgid  "Birthdate"
-msgstr "Fæðingardagur"
+msgstr "Fæðingardag"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.business.Tables.employees.Fields.datehired.Name
 msgid  "DateHired"
@@ -1317,11 +1317,11 @@ msgstr "Mynd"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.business.Tables.employees.Fields.notes.Name
 msgid  "Notes"
-msgstr "Athugas"
+msgstr "Athugasemdir"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.business.Tables.employees.Fields.notes.ShortName
 msgid  "Notes"
-msgstr "Athugasemdir"
+msgstr "Athugas"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.business.Tables.orders.Name
 msgid  "Orders"
@@ -1329,31 +1329,31 @@ msgstr "Pantanir"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.business.Tables.orders.Fields.orderID.Name
 msgid  "OrderID"
-msgstr "PöntunarNr"
+msgstr "Pöntunarnúmer"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.business.Tables.orders.Fields.orderID.ShortName
 msgid  "OrderID"
-msgstr "Pöntunarnúmer"
+msgstr "PöntunarNr"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.business.Tables.orders.Fields.customerID.Name
 msgid  "CustomerID"
-msgstr "ViðskiptavAuðk"
+msgstr "ViðskiptavinaAuðkenni"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.business.Tables.orders.Fields.customerID.ShortName
 msgid  "CustomerID"
-msgstr "ViðskiptavinaAuðkenni"
+msgstr "ViðskiptavAuðk"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.business.Tables.orders.Fields.employeeID.Name
 msgid  "EmployeeID"
-msgstr "StarfsmannAuðk"
+msgstr "StarfsmannaAuðkenni"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.business.Tables.orders.Fields.employeeID.ShortName
 msgid  "EmployeeID"
-msgstr "StarfsmannaAuðkenni"
+msgstr "StarfsmannAuðk"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.business.Tables.orders.Fields.orderdate.Name
 msgid  "OrderDate"
-msgstr "PöntunarDags"
+msgstr "PöntunarDagsetning"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.business.Tables.orders.Fields.orderdate.ShortName
 msgid  "OrderDate"
@@ -1385,7 +1385,7 @@ msgstr "ÁætluðDags"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.business.Tables.orders.Fields.shipname.Name
 msgid  "ShipName"
-msgstr "SendNafn"
+msgstr "Sendingarnafn"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.business.Tables.orders.Fields.shipname.ShortName
 msgid  "ShipName"
@@ -1401,7 +1401,7 @@ msgstr "SendHeimilisf"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.business.Tables.orders.Fields.shipcity.Name
 msgid  "ShipCity"
-msgstr "SendBorg"
+msgstr "SendingarBorg"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.business.Tables.orders.Fields.shipcity.ShortName
 msgid  "ShipCity"
@@ -1441,11 +1441,11 @@ msgstr "SendSímaNr"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.business.Tables.orders.Fields.shipdate.Name
 msgid  "ShipDate"
-msgstr "SendingarDags"
+msgstr "SendingarDagsetning"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.business.Tables.orders.Fields.shipdate.ShortName
 msgid  "ShipDate"
-msgstr "SendingarDagsetning"
+msgstr "SendingarDags"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.business.Tables.orders.Fields.shippingmethodID.Name
 msgid  "ShippingMethodID"
@@ -1485,19 +1485,19 @@ msgstr "PöntunUpplAuðk"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.business.Tables.orderdetails.Fields.orderID.Name
 msgid  "OrderID"
-msgstr "PöntunarNr"
+msgstr "Pöntunarnúmer"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.business.Tables.orderdetails.Fields.orderID.ShortName
 msgid  "OrderID"
-msgstr "PöntunarNr"
+msgstr "Pöntunarnúmer"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.business.Tables.orderdetails.Fields.productID.Name
 msgid  "ProductID"
-msgstr "VöruNr"
+msgstr "Vörunúmer"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.business.Tables.orderdetails.Fields.productID.ShortName
 msgid  "ProductID"
-msgstr "Vörunúmer"
+msgstr "VöruNr"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.business.Tables.orderdetails.Fields.datesold.Name
 msgid  "DateSold"
@@ -1517,15 +1517,15 @@ msgstr "Fjöldi"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.business.Tables.orderdetails.Fields.unitprice.Name
 msgid  "UnitPrice"
-msgstr "EinVerð"
+msgstr "EiningaVerð"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.business.Tables.orderdetails.Fields.unitprice.ShortName
 msgid  "UnitPrice"
-msgstr "EiningaVerð"
+msgstr "EinVerð"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.business.Tables.orderdetails.Fields.discount.Name
 msgid  "Discount"
-msgstr "Afsl"
+msgstr "Afsláttur"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.business.Tables.orderdetails.Fields.discount.ShortName
 msgid  "Discount"
@@ -1533,7 +1533,7 @@ msgstr "Afsláttur"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.business.Tables.orderdetails.Fields.saleprice.Name
 msgid  "SalePrice"
-msgstr "Söluv"
+msgstr "Söluverð"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.business.Tables.orderdetails.Fields.saleprice.ShortName
 msgid  "SalePrice"
@@ -1541,7 +1541,7 @@ msgstr "Söluv"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.business.Tables.orderdetails.Fields.salestax.Name
 msgid  "SalesTax"
-msgstr "Sölusk"
+msgstr "Söluskattur"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.business.Tables.orderdetails.Fields.salestax.ShortName
 msgid  "SalesTax"
@@ -1549,7 +1549,7 @@ msgstr "Sölusk"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.business.Tables.orderdetails.Fields.linetotal.Name
 msgid  "LineTotal"
-msgstr "Heildarlínufj"
+msgstr "Heildarlínufjöldi"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.business.Tables.orderdetails.Fields.linetotal.ShortName
 msgid  "LineTotal"
@@ -1561,19 +1561,19 @@ msgstr "Greiðslur"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.business.Tables.payments.Fields.paymentID.Name
 msgid  "PaymentID"
-msgstr "GreiðsluAuðk"
+msgstr "GreiðsluAuðkenni"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.business.Tables.payments.Fields.paymentID.ShortName
 msgid  "PaymentID"
-msgstr "GreiðsluAuðkenni"
+msgstr "GreiðsluAuðk"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.business.Tables.payments.Fields.customerID.Name
 msgid  "CustomerID"
-msgstr "ViðskiptavAuðk"
+msgstr "ViðskiptavinaAuðkenni"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.business.Tables.payments.Fields.customerID.ShortName
 msgid  "CustomerID"
-msgstr "ViðskiptavinaAuðkenni"
+msgstr "ViðskiptavAuðk"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.business.Tables.payments.Fields.workorderID.Name
 msgid  "WorkorderID"
@@ -1585,7 +1585,7 @@ msgstr "VerkbeiðnAuð"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.business.Tables.payments.Fields.orderID.Name
 msgid  "OrderID"
-msgstr "PöntunarNr"
+msgstr "Pöntunarnúmer"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.business.Tables.payments.Fields.orderID.ShortName
 msgid  "OrderID"
@@ -1601,7 +1601,7 @@ msgstr "PöntunAuðk"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.business.Tables.payments.Fields.memberID.Name
 msgid  "MemberID"
-msgstr "FélagsNr"
+msgstr "Félagsnúmer"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.business.Tables.payments.Fields.memberID.ShortName
 msgid  "MemberID"
@@ -1617,11 +1617,11 @@ msgstr "SkránAuðk"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.business.Tables.payments.Fields.projectID.Name
 msgid  "ProjectID"
-msgstr "VerkefnisNr"
+msgstr "Verkefnisnúmer"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.business.Tables.payments.Fields.projectID.ShortName
 msgid  "ProjectID"
-msgstr "Verkefnisnúmer"
+msgstr "VerkefnisNr"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.business.Tables.payments.Fields.paymentamount.Name
 msgid  "PaymentAmount"
@@ -1673,7 +1673,7 @@ msgstr "KKortNr"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.business.Tables.payments.Fields.cardholder.Name
 msgid  "Cardholder"
-msgstr "HandhKort"
+msgstr "HandhafiKorts"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.business.Tables.payments.Fields.cardholder.ShortName
 msgid  "Cardholder"
@@ -1713,11 +1713,11 @@ msgstr "GreiðslAðfAuðk"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.business.Tables.payments.Fields.notes.Name
 msgid  "Notes"
-msgstr "Athugas"
+msgstr "Athugasemdir"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.business.Tables.payments.Fields.notes.ShortName
 msgid  "Notes"
-msgstr "Athugasemdir"
+msgstr "Athugas"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.business.Tables.invoices.Name
 msgid  "Invoices"
@@ -1725,35 +1725,35 @@ msgstr "Reikningar"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.business.Tables.invoices.Fields.invoiceID.Name
 msgid  "InvoiceID"
-msgstr "ReikningsNr"
+msgstr "Reikningsnúmer"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.business.Tables.invoices.Fields.invoiceID.ShortName
 msgid  "InvoiceID"
-msgstr "Reikningsnúmer"
+msgstr "ReikningsNr"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.business.Tables.invoices.Fields.customerID.Name
 msgid  "CustomerID"
-msgstr "ViðskiptavAuðk"
+msgstr "ViðskiptavinaAuðkenni"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.business.Tables.invoices.Fields.customerID.ShortName
 msgid  "CustomerID"
-msgstr "ViðskiptavinurAuðkenni"
+msgstr "ViðskiptavAuðk"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.business.Tables.invoices.Fields.employeeID.Name
 msgid  "EmployeeID"
-msgstr "StarfsmannAuðk"
+msgstr "StarfsmannaAuðkenni"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.business.Tables.invoices.Fields.employeeID.ShortName
 msgid  "EmployeeID"
-msgstr "StarfsmannaAuðkenni"
+msgstr "StarfsmannAuðk"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.business.Tables.invoices.Fields.deliveryID.Name
 msgid  "DeliveryID"
-msgstr "SendAuðk"
+msgstr "SendingarAuðkenni"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.business.Tables.invoices.Fields.deliveryID.ShortName
 msgid  "DeliveryID"
-msgstr "SendingarAuðkenni"
+msgstr "SendAuðk"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.business.Tables.invoices.Fields.status.Name
 msgid  "Status"
@@ -1781,11 +1781,11 @@ msgstr "Sölum"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.business.Tables.invoices.Fields.shipdate.Name
 msgid  "ShipDate"
-msgstr "SendingarDags"
+msgstr "SendingarDagsetning"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.business.Tables.invoices.Fields.shipdate.ShortName
 msgid  "ShipDate"
-msgstr "SendingarDagsetning"
+msgstr "SendingarDags"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.business.Tables.invoices.Fields.shippedto.Name
 msgid  "ShippedTo"
@@ -1797,11 +1797,11 @@ msgstr "SentTil"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.business.Tables.invoices.Fields.shippedvia.Name
 msgid  "ShippedVia"
-msgstr "SentGegn"
+msgstr "SentGegnum"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.business.Tables.invoices.Fields.shippedvia.ShortName
 msgid  "ShippedVia"
-msgstr "SentGegnum"
+msgstr "SentGegn"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.business.Tables.invoices.Fields.shippingcost.Name
 msgid  "ShippingCost"
@@ -1813,11 +1813,11 @@ msgstr "SendKost"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.business.Tables.invoices.Fields.notes.Name
 msgid  "Notes"
-msgstr "Athugas"
+msgstr "Athugasemdir"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.business.Tables.invoices.Fields.notes.ShortName
 msgid  "Notes"
-msgstr "Athugasemdir"
+msgstr "Athugas"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.business.Tables.invoicedetails.Name
 msgid  "InvoiceDetails"
@@ -1833,7 +1833,7 @@ msgstr "ReiknUpplAuðk"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.business.Tables.invoicedetails.Fields.invoiceID.Name
 msgid  "InvoiceID"
-msgstr "ReikningNr"
+msgstr "Reikningsnúmer"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.business.Tables.invoicedetails.Fields.invoiceID.ShortName
 msgid  "InvoiceID"
@@ -1849,7 +1849,7 @@ msgstr "PöntunarNr"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.business.Tables.invoicedetails.Fields.productID.Name
 msgid  "ProductID"
-msgstr "VöruNr"
+msgstr "Vörunúmer"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.business.Tables.invoicedetails.Fields.productID.ShortName
 msgid  "ProductID"
@@ -1893,11 +1893,11 @@ msgstr "Verkefni"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.business.Tables.projects.Fields.projectID.Name
 msgid  "ProjectID"
-msgstr "VerkNr"
+msgstr "Verkefnisnúmer"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.business.Tables.projects.Fields.projectID.ShortName
 msgid  "ProjectID"
-msgstr "Verkefnisnúmer"
+msgstr "VerkNr"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.business.Tables.projects.Fields.projectname.Name
 msgid  "ProjectName"
@@ -1917,7 +1917,7 @@ msgstr "VerkefniLýs"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.business.Tables.projects.Fields.clientID.Name
 msgid  "ClientID"
-msgstr "ViðskVinNr"
+msgstr "Viðskiptavinarnúmer"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.business.Tables.projects.Fields.clientID.ShortName
 msgid  "ClientID"
@@ -1941,27 +1941,27 @@ msgstr "ÁætlHeildKost"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.business.Tables.projects.Fields.employeeID.Name
 msgid  "EmployeeID"
-msgstr "StarfsmannAuðk"
+msgstr "StarfsmannaAuðkenni"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.business.Tables.projects.Fields.employeeID.ShortName
 msgid  "EmployeeID"
-msgstr "StarfsmannaAuðkenni"
+msgstr "StarfsmannAuðk"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.business.Tables.projects.Fields.begindate.Name
 msgid  "BeginDate"
-msgstr "ByrjunarDags"
+msgstr "ByrjunarDagsetning"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.business.Tables.projects.Fields.begindate.ShortName
 msgid  "BeginDate"
-msgstr "ByrjunarDagsetning"
+msgstr "ByrjunarDags"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.business.Tables.projects.Fields.enddate.Name
 msgid  "EndDate"
-msgstr "EndaDags"
+msgstr "EndaDagsetning"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.business.Tables.projects.Fields.enddate.ShortName
 msgid  "EndDate"
-msgstr "EndaDagsetning"
+msgstr "EndaDags"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.business.Tables.events.Name
 msgid  "Events"
@@ -1969,11 +1969,11 @@ msgstr "Atburðir"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.business.Tables.events.Fields.eventID.Name
 msgid  "EventID"
-msgstr "AtburðAuðk"
+msgstr "AtburðaAuðkenni"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.business.Tables.events.Fields.eventID.ShortName
 msgid  "EventID"
-msgstr "AtburðaAuðkenni"
+msgstr "AtburðAuðk"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.business.Tables.events.Fields.eventname.Name
 msgid  "EventName"
@@ -2001,11 +2001,11 @@ msgstr "AtburðTegAuðk"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.business.Tables.events.Fields.employeeID.Name
 msgid  "EmployeeID"
-msgstr "StarfsmannAuðk"
+msgstr "StarfsmannaAuðkenni"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.business.Tables.events.Fields.employeeID.ShortName
 msgid  "EmployeeID"
-msgstr "StarfsmannaAuðkenni"
+msgstr "StarfsmannAuðk"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.business.Tables.events.Fields.status.Name
 msgid  "Status"
@@ -2025,7 +2025,7 @@ msgstr "Staðsetning"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.business.Tables.events.Fields.begindate.Name
 msgid  "BeginDate"
-msgstr "ByrjunDags"
+msgstr "ByrjunarDagsetning"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.business.Tables.events.Fields.begindate.ShortName
 msgid  "BeginDate"
@@ -2033,7 +2033,7 @@ msgstr "ByrjunDags"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.business.Tables.events.Fields.begintime.Name
 msgid  "BeginTime"
-msgstr "ByrjunTími"
+msgstr "ByrjunarTími"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.business.Tables.events.Fields.begintime.ShortName
 msgid  "BeginTime"
@@ -2041,11 +2041,11 @@ msgstr "ByrjunTími"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.business.Tables.events.Fields.enddate.Name
 msgid  "EndDate"
-msgstr "EndaDags"
+msgstr "EndaDagsetning"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.business.Tables.events.Fields.enddate.ShortName
 msgid  "EndDate"
-msgstr "EndaDagsetning"
+msgstr "EndaDags"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.business.Tables.events.Fields.endtime.Name
 msgid  "EndTime"
@@ -2065,7 +2065,7 @@ msgstr "StarfsfólkKröf"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.business.Tables.events.Fields.confirmation.Name
 msgid  "Confirmation"
-msgstr "Staðf"
+msgstr "Staðfesting"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.business.Tables.events.Fields.confirmation.ShortName
 msgid  "Confirmation"
@@ -2089,11 +2089,11 @@ msgstr "KostMann"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.business.Tables.events.Fields.notes.Name
 msgid  "Notes"
-msgstr "Athugas"
+msgstr "Athugasemdir"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.business.Tables.events.Fields.notes.ShortName
 msgid  "Notes"
-msgstr "Athugasemdir"
+msgstr "Athugas"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.business.Tables.reservations.Name
 msgid  "Reservations"
@@ -2109,15 +2109,15 @@ msgstr "PöntunAuðk"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.business.Tables.reservations.Fields.customerID.Name
 msgid  "CustomerID"
-msgstr "ViðskiptavAuðk"
+msgstr "ViðskiptavinurAuðkenni"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.business.Tables.reservations.Fields.customerID.ShortName
 msgid  "CustomerID"
-msgstr "ViðskiptavinaAuðkenni"
+msgstr "ViðskiptavAuðk"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.business.Tables.reservations.Fields.eventID.Name
 msgid  "EventID"
-msgstr "AtburðAuðk"
+msgstr "AtburðaAuðkenni"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.business.Tables.reservations.Fields.eventID.ShortName
 msgid  "EventID"
@@ -2125,11 +2125,11 @@ msgstr "AtburðAuðk"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.business.Tables.reservations.Fields.employeeID.Name
 msgid  "EmployeeID"
-msgstr "StarfsmannAuðk"
+msgstr "StarfsmannaAuðkenni"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.business.Tables.reservations.Fields.employeeID.ShortName
 msgid  "EmployeeID"
-msgstr "StarfsmannaAuðkenni"
+msgstr "StarfsmannAuðk"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.business.Tables.reservations.Fields.quantityreserved.Name
 msgid  "QuantityReserved"
@@ -2165,7 +2165,7 @@ msgstr "Skuld"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.business.Tables.reservations.Fields.totaldue.Name
 msgid  "TotalDue"
-msgstr "HeildSkuld"
+msgstr "Heildarskuld"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.business.Tables.reservations.Fields.totaldue.ShortName
 msgid  "TotalDue"
@@ -2173,7 +2173,7 @@ msgstr "HeildSkuld"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.business.Tables.reservations.Fields.amountpaid.Name
 msgid  "AmountPaid"
-msgstr "GreiddUpph"
+msgstr "GreiddUpphæð"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.business.Tables.reservations.Fields.amountpaid.ShortName
 msgid  "AmountPaid"
@@ -2189,11 +2189,11 @@ msgstr "Staðf"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.business.Tables.reservations.Fields.notes.Name
 msgid  "Notes"
-msgstr "Athugas"
+msgstr "Athugasemdir"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.business.Tables.reservations.Fields.notes.ShortName
 msgid  "Notes"
-msgstr "Athugasemdir"
+msgstr "Athugas"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.business.Tables.timebilled.Name
 msgid  "TimeBilled"
@@ -2209,15 +2209,15 @@ msgstr "ÚtskuldAuðk"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.business.Tables.timebilled.Fields.customerID.Name
 msgid  "CustomerID"
-msgstr "ViðskiptavAuðk"
+msgstr "ViðskiptavinaAuðkenni"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.business.Tables.timebilled.Fields.customerID.ShortName
 msgid  "CustomerID"
-msgstr "ViðskiptavinaAuðkenni"
+msgstr "ViðskiptavAuðk"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.business.Tables.timebilled.Fields.projectID.Name
 msgid  "ProjectID"
-msgstr "VerkefnisNr"
+msgstr "Verkefnisnúmer"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.business.Tables.timebilled.Fields.projectID.ShortName
 msgid  "ProjectID"
@@ -2225,15 +2225,15 @@ msgstr "VerkefnisNr"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.business.Tables.timebilled.Fields.employeeID.Name
 msgid  "EmployeeID"
-msgstr "StarfsmannaAuðk"
+msgstr "StarfsmannaAuðkenni"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.business.Tables.timebilled.Fields.employeeID.ShortName
 msgid  "EmployeeID"
-msgstr "StarfsmannaAuðkenni"
+msgstr "StarfsmannaAuðk"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.business.Tables.timebilled.Fields.billingdate.Name
 msgid  "BillingDate"
-msgstr "ÚtskuldDags"
+msgstr "Útskuldunardagsetning"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.business.Tables.timebilled.Fields.billingdate.ShortName
 msgid  "BillingDate"
@@ -2257,11 +2257,11 @@ msgstr "ÚtskuldKlst"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.business.Tables.timebilled.Fields.notes.Name
 msgid  "Notes"
-msgstr "Athugas"
+msgstr "Athugasemdir"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.business.Tables.timebilled.Fields.notes.ShortName
 msgid  "Notes"
-msgstr "Athugasemdir"
+msgstr "Athugas"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.business.Tables.expenses.Name
 msgid  "Expenses"
@@ -2269,7 +2269,7 @@ msgstr "Útgjöld"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.business.Tables.expenses.Fields.expenseID.Name
 msgid  "ExpenseID"
-msgstr "ÚtgjaldaAuðk"
+msgstr "ÚtgjaldaAuðkenni"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.business.Tables.expenses.Fields.expenseID.ShortName
 msgid  "ExpenseID"
@@ -2293,15 +2293,15 @@ msgstr "Tilgangur"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.business.Tables.expenses.Fields.employeeID.Name
 msgid  "EmployeeID"
-msgstr "StarfsmannaAuðk"
+msgstr "StarfsmannaAuðkenni"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.business.Tables.expenses.Fields.employeeID.ShortName
 msgid  "EmployeeID"
-msgstr "StarfsmannaAuðkenni"
+msgstr "StarfsmannaAuðk"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.business.Tables.expenses.Fields.datepurchased.Name
 msgid  "DatePurchased"
-msgstr "Kaupdagur"
+msgstr "DagsetningKeypt"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.business.Tables.expenses.Fields.datepurchased.ShortName
 msgid  "DatePurchd"
@@ -2341,11 +2341,11 @@ msgstr "GreiðslAðferð"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.business.Tables.expenses.Fields.notes.Name
 msgid  "Notes"
-msgstr "Athugas"
+msgstr "Athugasemdir"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.business.Tables.expenses.Fields.notes.ShortName
 msgid  "Notes"
-msgstr "Athugasemdir"
+msgstr "Athugas"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.business.Tables.deliveries.Name
 msgid  "Deliveries"
@@ -2353,7 +2353,7 @@ msgstr "Sendingar"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.business.Tables.deliveries.Fields.deliveryID.Name
 msgid  "DeliveryID"
-msgstr "SendAuðk"
+msgstr "SendingarAuðkenni"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.business.Tables.deliveries.Fields.deliveryID.ShortName
 msgid  "DeliveryID"
@@ -2361,7 +2361,7 @@ msgstr "SendAuðk"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.business.Tables.deliveries.Fields.customerID.Name
 msgid  "CustomerID"
-msgstr "ViðskiptavAuðk"
+msgstr "ViðskiptavinaAuðkenni"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.business.Tables.deliveries.Fields.customerID.ShortName
 msgid  "CustomerID"
@@ -2377,11 +2377,11 @@ msgstr "PöntunarNr"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.business.Tables.deliveries.Fields.employeeID.Name
 msgid  "EmployeeID"
-msgstr "StarfsmAuðk"
+msgstr "StarfsmannaAuðkenni"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.business.Tables.deliveries.Fields.employeeID.ShortName
 msgid  "EmployeeID"
-msgstr "StarfsmannaAuðkenni"
+msgstr "StarfsmAuðk"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.business.Tables.deliveries.Fields.shippedfrom.Name
 msgid  "ShippedFrom"
@@ -2393,7 +2393,7 @@ msgstr "SentFrá"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.business.Tables.deliveries.Fields.shippedvia.Name
 msgid  "ShippedVia"
-msgstr "SentGegn"
+msgstr "SentGegnum"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.business.Tables.deliveries.Fields.shippedvia.ShortName
 msgid  "ShippedVia"
@@ -2409,7 +2409,7 @@ msgstr "FylgiNr"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.business.Tables.deliveries.Fields.shipdate.Name
 msgid  "ShipDate"
-msgstr "SendingDags"
+msgstr "SendingarDagsetning"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.business.Tables.deliveries.Fields.shipdate.ShortName
 msgid  "ShipDate"
@@ -2513,7 +2513,7 @@ msgstr "SóttStaðs"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.business.Tables.deliveries.Fields.pickupdate.Name
 msgid  "PickUpDate"
-msgstr "SóttDags"
+msgstr "SóttDagsetning"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.business.Tables.deliveries.Fields.pickupdate.ShortName
 msgid  "PickUpDate"
@@ -2529,7 +2529,7 @@ msgstr "SóttTími"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.business.Tables.deliveries.Fields.receivedby.Name
 msgid  "ReceivedBy"
-msgstr "MóttekAf"
+msgstr "MóttekiðAf"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.business.Tables.deliveries.Fields.receivedby.ShortName
 msgid  "ReceivedBy"
@@ -2545,11 +2545,11 @@ msgstr "Farmgj"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.business.Tables.deliveries.Fields.notes.Name
 msgid  "Notes"
-msgstr "Athugas"
+msgstr "Athugasemdir"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.business.Tables.deliveries.Fields.notes.ShortName
 msgid  "Notes"
-msgstr "Athugasemdir"
+msgstr "Athugas"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.business.Tables.assets.Name
 msgid  "Assets"
@@ -2557,7 +2557,7 @@ msgstr "Eignir"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.business.Tables.assets.Fields.assetID.Name
 msgid  "AssetID"
-msgstr "EignAuðk"
+msgstr "EignAuðkenni"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.business.Tables.assets.Fields.assetID.ShortName
 msgid  "AssetID"
@@ -2573,11 +2573,11 @@ msgstr "Lýsing"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.business.Tables.assets.Fields.employeeID.Name
 msgid  "EmployeeID"
-msgstr "StarfsmAuðk"
+msgstr "StarfsmannaAuðkenni"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.business.Tables.assets.Fields.employeeID.ShortName
 msgid  "EmployeeID"
-msgstr "StarfsmannaAuðkenni"
+msgstr "StarfsmAuðk"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.business.Tables.assets.Fields.assetcategoryID.Name
 msgid  "AssetCategoryID"
@@ -2589,7 +2589,7 @@ msgstr "EignFlokkAuðk"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.business.Tables.assets.Fields.statusID.Name
 msgid  "StatusID"
-msgstr "StöðuAuðk"
+msgstr "StöðuAuðkenni"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.business.Tables.assets.Fields.statusID.ShortName
 msgid  "StatusID"
@@ -2605,7 +2605,7 @@ msgstr "DeildAuðk"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.business.Tables.assets.Fields.vendorID.Name
 msgid  "VendorID"
-msgstr "SöluaðAuðk"
+msgstr "SöluaðilaAuðkenni"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.business.Tables.assets.Fields.vendorID.ShortName
 msgid  "VendorID"
@@ -2629,7 +2629,7 @@ msgstr "Módel"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.business.Tables.assets.Fields.modelnumber.Name
 msgid  "ModelNumber"
-msgstr "Módelnúmer"
+msgstr "MódelNúmer"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.business.Tables.assets.Fields.modelnumber.ShortName
 msgid  "ModelNo"
@@ -2637,7 +2637,7 @@ msgstr "MódelNr"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.business.Tables.assets.Fields.serialnumber.Name
 msgid  "SerialNumber"
-msgstr "Raðnúmer"
+msgstr "RaðNúmer"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.business.Tables.assets.Fields.serialnumber.ShortName
 msgid  "SerialNo"
@@ -2653,11 +2653,11 @@ msgstr "StrikamerkiNr"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.business.Tables.assets.Fields.dateacquired.Name
 msgid  "DateAcquired"
-msgstr "DagsetningNáð"
+msgstr "DagsetningMóttekið"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.business.Tables.assets.Fields.dateacquired.ShortName
 msgid  "DateAcquir"
-msgstr "DagsNáð"
+msgstr "DagsMótt"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.business.Tables.assets.Fields.datesold.Name
 msgid  "DateSold"
@@ -2709,7 +2709,7 @@ msgstr "NúvGildi"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.business.Tables.assets.Fields.comments.Name
 msgid  "Comments"
-msgstr "Athugas"
+msgstr "Athugasemdir"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.business.Tables.assets.Fields.comments.ShortName
 msgid  "Comments"
@@ -2737,7 +2737,7 @@ msgstr "FærsluAuðk"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.business.Tables.transactions.Fields.paymentID.Name
 msgid  "PaymentID"
-msgstr "GreiðsluAuðk"
+msgstr "GreiðsluAuðkenni"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.business.Tables.transactions.Fields.paymentID.ShortName
 msgid  "PaymentID"
@@ -2753,7 +2753,7 @@ msgstr "FærsluNr"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.business.Tables.transactions.Fields.date.Name
 msgid  "Date"
-msgstr "Dags"
+msgstr "Dagsetning"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.business.Tables.transactions.Fields.date.ShortName
 msgid  "Date"
@@ -2777,11 +2777,11 @@ msgstr "Magn"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.business.Tables.transactions.Fields.accountID.Name
 msgid  "AccountID"
-msgstr "ReiknAuðk"
+msgstr "ReikningsAuðkenni"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.business.Tables.transactions.Fields.accountID.ShortName
 msgid  "AccountID"
-msgstr "ReikningsAuðkenni"
+msgstr "ReiknAuðk"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.business.Tables.transactions.Fields.referencenumber.Name
 msgid  "ReferenceNumber"
@@ -2857,11 +2857,11 @@ msgstr "Skattskylt"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.business.Tables.transactions.Fields.notes.Name
 msgid  "Notes"
-msgstr "Athugas"
+msgstr "Athugasemdir"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.business.Tables.transactions.Fields.notes.ShortName
 msgid  "Notes"
-msgstr "Athugasemdir"
+msgstr "Athugas"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.business.Tables.tasks.Name
 msgid  "Tasks"
@@ -2869,11 +2869,11 @@ msgstr "Verk"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.business.Tables.tasks.Fields.taskID.Name
 msgid  "TaskID"
-msgstr "VerkAuðk"
+msgstr "VerkAuðkenni"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.business.Tables.tasks.Fields.taskID.ShortName
 msgid  "TaskID"
-msgstr "VerkefnisAuðkenni"
+msgstr "VerkAuðk"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.business.Tables.tasks.Fields.description.Name
 msgid  "Description"
@@ -2885,7 +2885,7 @@ msgstr "Lýsing"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.business.Tables.tasks.Fields.startdate.Name
 msgid  "StartDate"
-msgstr "ByrjunDags"
+msgstr "ByrjunarDagsetning"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.business.Tables.tasks.Fields.startdate.ShortName
 msgid  "StartDate"
@@ -2893,7 +2893,7 @@ msgstr "ByrjunDags"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.business.Tables.tasks.Fields.enddate.Name
 msgid  "EndDate"
-msgstr "EndaDags"
+msgstr "EndaDagsetning"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.business.Tables.tasks.Fields.enddate.ShortName
 msgid  "EndDate"
@@ -2901,11 +2901,11 @@ msgstr "EndaDags"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.business.Tables.tasks.Fields.notes.Name
 msgid  "Notes"
-msgstr "Athugas"
+msgstr "Athugasemdir"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.business.Tables.tasks.Fields.notes.ShortName
 msgid  "Notes"
-msgstr "Athugasemdir"
+msgstr "Athugas"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.business.Tables.employeestasks.Name
 msgid  "EmployeesTasks"
@@ -2921,7 +2921,7 @@ msgstr "StarfsVerkAuðk"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.business.Tables.employeestasks.Fields.employeeID.Name
 msgid  "EmployeeID"
-msgstr "StarfsmannAuðk"
+msgstr "StarfsmannaAuðkenni"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.business.Tables.employeestasks.Fields.employeeID.ShortName
 msgid  "EmployeeID"
@@ -2929,7 +2929,7 @@ msgstr "StarfsmannAuðk"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.business.Tables.employeestasks.Fields.taskID.Name
 msgid  "TaskID"
-msgstr "VerkAuðk"
+msgstr "VerkefnisAuðkenni"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.business.Tables.employeestasks.Fields.taskID.ShortName
 msgid  "TaskID"
@@ -2945,11 +2945,11 @@ msgstr "Flokkar"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.private.Tables.categories.Fields.categoryID.Name
 msgid  "CategoryID"
-msgstr "FlokkAuðk"
+msgstr "FlokkAuðkenni"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.private.Tables.categories.Fields.categoryID.ShortName
 msgid  "CategoryID"
-msgstr "FlokkaAuðkenni"
+msgstr "FlokkAuðk"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.private.Tables.categories.Fields.categoryname.Name
 msgid  "CategoryName"
@@ -2965,7 +2965,7 @@ msgstr "Heimilisföng"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.private.Tables.addresses.Fields.addressID.Name
 msgid  "AddressID"
-msgstr "HeimilsfAuðk"
+msgstr "HeimilsfangAuðkenni"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.private.Tables.addresses.Fields.addressID.ShortName
 msgid  "AddressID"
@@ -2997,7 +2997,7 @@ msgstr "Titill"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.private.Tables.addresses.Fields.address.Name
 msgid  "Address"
-msgstr "Heimilisf"
+msgstr "Heimilisfang"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.private.Tables.addresses.Fields.address.ShortName
 msgid  "Address"
@@ -3013,7 +3013,7 @@ msgstr "Borg"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.private.Tables.addresses.Fields.postalcode.Name
 msgid  "PostalCode"
-msgstr "PóstNr"
+msgstr "Póstnúmer"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.private.Tables.addresses.Fields.postalcode.ShortName
 msgid  "PostalCode"
@@ -3077,11 +3077,11 @@ msgstr "Ávarp"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.private.Tables.addresses.Fields.birthdate.Name
 msgid  "Birthdate"
-msgstr "Fæðingardag"
+msgstr "Fæðingardagur"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.private.Tables.addresses.Fields.birthdate.ShortName
 msgid  "Birthdate"
-msgstr "Fæðingardagur"
+msgstr "Fæðingardag"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.private.Tables.addresses.Fields.sendcard.Name
 msgid  "SendCard"
@@ -3141,11 +3141,11 @@ msgstr "Mynd"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.private.Tables.addresses.Fields.notes.Name
 msgid  "Notes"
-msgstr "Athugas"
+msgstr "Athugasemdir"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.private.Tables.addresses.Fields.notes.ShortName
 msgid  "Notes"
-msgstr "Athugasemdir"
+msgstr "Athugas"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.private.Tables.addresses.Fields.dateupdated.Name
 msgid  "DateUpdated"
@@ -3169,7 +3169,7 @@ msgstr "BirgðaskrAuðk"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.private.Tables.householdinventory.Fields.categoryID.Name
 msgid  "CategoryID"
-msgstr "FlokkAuðk"
+msgstr "FlokkaAuðkenni"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.private.Tables.householdinventory.Fields.categoryID.ShortName
 msgid  "CategoryID"
@@ -3177,7 +3177,7 @@ msgstr "FlokkAuðk"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.private.Tables.householdinventory.Fields.roomID.Name
 msgid  "RoomID"
-msgstr "HerbergAuðk"
+msgstr "HerbergisAuðkenni"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.private.Tables.householdinventory.Fields.roomID.ShortName
 msgid  "RoomID"
@@ -3193,7 +3193,7 @@ msgstr "Atriði"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.private.Tables.householdinventory.Fields.itemtype.Name
 msgid  "ItemType"
-msgstr "TegunAtriði"
+msgstr "TegundAtriðis"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.private.Tables.householdinventory.Fields.itemtype.ShortName
 msgid  "ItemType"
@@ -3245,7 +3245,7 @@ msgstr "DagsetningKeypt"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.private.Tables.householdinventory.Fields.datepurchased.ShortName
 msgid  "DatePurch"
-msgstr "Kaupdag"
+msgstr "DagsKeypt"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.private.Tables.householdinventory.Fields.placepurchased.Name
 msgid  "PlacePurchased"
@@ -3281,11 +3281,11 @@ msgstr "Trygging"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.private.Tables.householdinventory.Fields.notes.Name
 msgid  "Notes"
-msgstr "Athugas"
+msgstr "Athugasemdir"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.private.Tables.householdinventory.Fields.notes.ShortName
 msgid  "Notes"
-msgstr "Athugasemdir"
+msgstr "Athugas"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.private.Tables.recipes.Name
 msgid  "Recipes"
@@ -3293,7 +3293,7 @@ msgstr "Uppskriftir"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.private.Tables.recipes.Fields.recipeID.Name
 msgid  "RecipeID"
-msgstr "UppskrifAuðk"
+msgstr "UppskriftaAuðkenni"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.private.Tables.recipes.Fields.recipeID.ShortName
 msgid  "RecipeID"
@@ -3325,7 +3325,7 @@ msgstr "Uppruni"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.private.Tables.recipes.Fields.whichmeal.Name
 msgid  "WhichMeal"
-msgstr "HvaðaMat"
+msgstr "HvaðaMatur"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.private.Tables.recipes.Fields.whichmeal.ShortName
 msgid  "WhichMeal"
@@ -3397,11 +3397,11 @@ msgstr "Áhöld"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.private.Tables.recipes.Fields.notes.Name
 msgid  "Notes"
-msgstr "Athugas"
+msgstr "Athugasemdir"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.private.Tables.recipes.Fields.notes.ShortName
 msgid  "Notes"
-msgstr "Athugasemdir"
+msgstr "Athugas"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.private.Tables.plants.Name
 msgid  "Plants"
@@ -3409,7 +3409,7 @@ msgstr "Plöntur"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.private.Tables.plants.Fields.plantID.Name
 msgid  "PlantID"
-msgstr "PlöntuAuðk"
+msgstr "PlöntuAuðkenni"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.private.Tables.plants.Fields.plantID.ShortName
 msgid  "PlantID"
@@ -3441,7 +3441,7 @@ msgstr "Tegund"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.private.Tables.plants.Fields.flowering.Name
 msgid  "Flowering"
-msgstr "Blómstran"
+msgstr "Blómstrandi"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.private.Tables.plants.Fields.flowering.ShortName
 msgid  "Flowering"
@@ -3485,7 +3485,7 @@ msgstr "Kaupdagur"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.private.Tables.plants.Fields.datepurchased.ShortName
 msgid  "DatePurch"
-msgstr "DagsKeypt"
+msgstr "Kaupdag"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.private.Tables.plants.Fields.placepurchased.Name
 msgid  "PlacePurchased"
@@ -3513,7 +3513,7 @@ msgstr "DagsUmpott"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.private.Tables.plants.Fields.datepruned.Name
 msgid  "DatePruned"
-msgstr "DagsSnyrting"
+msgstr "DagsetningSnyrtingar"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.private.Tables.plants.Fields.datepruned.ShortName
 msgid  "DatePruned"
@@ -3537,11 +3537,11 @@ msgstr "Mynd"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.private.Tables.plants.Fields.notes.Name
 msgid  "Notes"
-msgstr "Athugas"
+msgstr "Athugasemdir"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.private.Tables.plants.Fields.notes.ShortName
 msgid  "Notes"
-msgstr "Athugasemdir"
+msgstr "Athugas"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.private.Tables.photographs.Name
 msgid  "Photographs"
@@ -3549,7 +3549,7 @@ msgstr "Ljósmyndir"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.private.Tables.photographs.Fields.photoID.Name
 msgid  "PhotoID"
-msgstr "LjósmyndAuðk"
+msgstr "LjósmyndaAuðkenni"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.private.Tables.photographs.Fields.photoID.ShortName
 msgid  "PhotoID"
@@ -3557,15 +3557,15 @@ msgstr "LjósmyndAuðk"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.private.Tables.photographs.Fields.filmID.Name
 msgid  "FilmID"
-msgstr "KvikmyndAuðk"
+msgstr "KvikmyndaAuðkenni"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.private.Tables.photographs.Fields.filmID.ShortName
 msgid  "FilmID"
-msgstr "KvikmyndaAuðkenni"
+msgstr "KvikmyndAuðk"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.private.Tables.photographs.Fields.datetaken.Name
 msgid  "DateTaken"
-msgstr "DagsMyndatök"
+msgstr "DagsetningMyndatöku"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.private.Tables.photographs.Fields.datetaken.ShortName
 msgid  "DateTaken"
@@ -3573,7 +3573,7 @@ msgstr "DagsMyndatök"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.private.Tables.photographs.Fields.timetaken.Name
 msgid  "TimeTaken"
-msgstr "TímiMyndatök"
+msgstr "TímiMyndatöku"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.private.Tables.photographs.Fields.timetaken.ShortName
 msgid  "TimeTaken"
@@ -3581,7 +3581,7 @@ msgstr "TímiMyndatök"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.private.Tables.photographs.Fields.placetaken.Name
 msgid  "PlaceTaken"
-msgstr "StaðsMyndatök"
+msgstr "StaðsetningMyndatöku"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.private.Tables.photographs.Fields.placetaken.ShortName
 msgid  "PlaceTaken"
@@ -3637,11 +3637,11 @@ msgstr "Prentstærð"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.private.Tables.photographs.Fields.notes.Name
 msgid  "Notes"
-msgstr "Athugas"
+msgstr "Athugasemdir"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.private.Tables.photographs.Fields.notes.ShortName
 msgid  "Notes"
-msgstr "Athugasemdir"
+msgstr "Athugas"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.private.Tables.miniaturefilms.Name
 msgid  "MiniatureFilms"
@@ -3649,7 +3649,7 @@ msgstr "Stuttmyndir"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.private.Tables.miniaturefilms.Fields.filmID.Name
 msgid  "FilmID"
-msgstr "KvikmyndaAuðk"
+msgstr "KvikmyndaAuðkenni"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.private.Tables.miniaturefilms.Fields.filmID.ShortName
 msgid  "FilmID"
@@ -3721,11 +3721,11 @@ msgstr "Myndavél"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.private.Tables.miniaturefilms.Fields.notes.Name
 msgid  "Notes"
-msgstr "Athugas"
+msgstr "Athugasemdir"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.private.Tables.miniaturefilms.Fields.notes.ShortName
 msgid  "Notes"
-msgstr "Athugasemdir"
+msgstr "Athugas"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.private.Tables.dvdcollection.Name
 msgid  "DVD-Collection"
@@ -3741,7 +3741,7 @@ msgstr "SafnAuðk"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.private.Tables.dvdcollection.Fields.movietitle.Name
 msgid  "MovieTitle"
-msgstr "KvikmHeiti"
+msgstr "Kvikmyndaheiti"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.private.Tables.dvdcollection.Fields.movietitle.ShortName
 msgid  "MovieTitle"
@@ -3749,11 +3749,11 @@ msgstr "KvikmHeiti"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.private.Tables.dvdcollection.Fields.actress.Name
 msgid  "Genre"
-msgstr "Flokkur"
+msgstr "Tegund"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.private.Tables.dvdcollection.Fields.actress.ShortName
 msgid  "Genre"
-msgstr "Flokkur"
+msgstr "Tegund"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.private.Tables.dvdcollection.Fields.actor.Name
 msgid  "Actor"
@@ -3773,11 +3773,11 @@ msgstr "Leikstjóri"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.private.Tables.dvdcollection.Fields.producer.Name
 msgid  "Producer"
-msgstr "Framleið"
+msgstr "Framleiðandi"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.private.Tables.dvdcollection.Fields.producer.ShortName
 msgid  "Producer"
-msgstr "Framleiðandi"
+msgstr "Framleið"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.private.Tables.dvdcollection.Fields.releaseyear.Name
 msgid  "ReleaseYear"
@@ -3845,11 +3845,11 @@ msgstr "Umsögn"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.private.Tables.dvdcollection.Fields.notes.Name
 msgid  "Notes"
-msgstr "Athugas"
+msgstr "Athugasemdir"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.private.Tables.dvdcollection.Fields.notes.ShortName
 msgid  "Notes"
-msgstr "Athugasemdir"
+msgstr "Athugas"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.private.Tables.cdcollection.Name
 msgid  "CD-Collection"
@@ -3873,7 +3873,7 @@ msgstr "Plötutitill"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.private.Tables.cdcollection.Fields.artist.Name
 msgid  "Artist"
-msgstr "Listamaðr"
+msgstr "Listamaður"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.private.Tables.cdcollection.Fields.artist.ShortName
 msgid  "Artist"
@@ -3897,7 +3897,7 @@ msgstr "Plötuútg"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.private.Tables.cdcollection.Fields.producer.Name
 msgid  "Producer"
-msgstr "Framl"
+msgstr "Framleiðandi"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.private.Tables.cdcollection.Fields.producer.ShortName
 msgid  "Producer"
@@ -3969,11 +3969,11 @@ msgstr "Umsögn"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.private.Tables.cdcollection.Fields.notes.Name
 msgid  "Notes"
-msgstr "Athugas"
+msgstr "Athugasemdir"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.private.Tables.cdcollection.Fields.notes.ShortName
 msgid  "Notes"
-msgstr "Athugasemdir"
+msgstr "Athugas"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.private.Tables.library.Name
 msgid  "Library"
@@ -3981,7 +3981,7 @@ msgstr "Aðgerðasafn"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.private.Tables.library.Fields.bookID.Name
 msgid  "BookID"
-msgstr "BókAuðk"
+msgstr "BókAuðkenni"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.private.Tables.library.Fields.bookID.ShortName
 msgid  "BookID"
@@ -4005,11 +4005,11 @@ msgstr "Flokkur"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.private.Tables.library.Fields.authorID.Name
 msgid  "AuthorID"
-msgstr "HöfundaAuðk"
+msgstr "HöfundaAuðkenni"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.private.Tables.library.Fields.authorID.ShortName
 msgid  "AuthorID"
-msgstr "HöfundaAuðkenni"
+msgstr "HöfundaAuðk"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.private.Tables.library.Fields.copyrightyear.Name
 msgid  "CopyrightYear"
@@ -4085,7 +4085,7 @@ msgstr "KaupVerð"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.private.Tables.library.Fields.covertype.Name
 msgid  "CoverType"
-msgstr "Káputeg"
+msgstr "Káputegund"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.private.Tables.library.Fields.covertype.ShortName
 msgid  "CoverType"
@@ -4101,11 +4101,11 @@ msgstr "ÚtgáfuNr"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.private.Tables.library.Fields.notes.Name
 msgid  "Notes"
-msgstr "Athugas"
+msgstr "Athugasemdir"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.private.Tables.library.Fields.notes.ShortName
 msgid  "Notes"
-msgstr "Athugasemdir"
+msgstr "Athugas"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.private.Tables.authors.Name
 msgid  "Authors"
@@ -4113,7 +4113,7 @@ msgstr "Höfundar"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.private.Tables.authors.Fields.authorID.Name
 msgid  "AuthorID"
-msgstr "HöfundAuðk"
+msgstr "HöfundaAuðkenni"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.private.Tables.authors.Fields.authorID.ShortName
 msgid  "AuthorID"
@@ -4145,7 +4145,7 @@ msgstr "Þjóðerni"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.private.Tables.authors.Fields.birthdate.Name
 msgid  "Birthdate"
-msgstr "Fæðingardag"
+msgstr "Fæðingardagur"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.private.Tables.authors.Fields.birthdate.ShortName
 msgid  "Birthdate"
@@ -4153,7 +4153,7 @@ msgstr "Fæðingardag"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.private.Tables.authors.Fields.birthplace.Name
 msgid  "Birthplace"
-msgstr "Fæðingarst"
+msgstr "Fæðingarstaður"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.private.Tables.authors.Fields.birthplace.ShortName
 msgid  "Birthplace"
@@ -4193,11 +4193,11 @@ msgstr "Mynd"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.private.Tables.authors.Fields.notes.Name
 msgid  "Notes"
-msgstr "Athugas"
+msgstr "Athugasemdir"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.private.Tables.authors.Fields.notes.ShortName
 msgid  "Notes"
-msgstr "Athugasemdir"
+msgstr "Athugas"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.private.Tables.accounts.Name
 msgid  "Accounts"
@@ -4205,11 +4205,11 @@ msgstr "Reikningar"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.private.Tables.accounts.Fields.accountID.Name
 msgid  "AccountID"
-msgstr "ReikningAuðk"
+msgstr "ReikningsAuðkenni"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.private.Tables.accounts.Fields.accountID.ShortName
 msgid  "AccountID"
-msgstr "ReikningsAuðkenni"
+msgstr "ReikningAuðk"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.private.Tables.accounts.Fields.accountnumber.Name
 msgid  "AccountNumber"
@@ -4253,11 +4253,11 @@ msgstr "Lýsing"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.private.Tables.accounts.Fields.notes.Name
 msgid  "Notes"
-msgstr "Athugas"
+msgstr "Athugasemdir"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.private.Tables.accounts.Fields.notes.ShortName
 msgid  "Notes"
-msgstr "Athugasemdir"
+msgstr "Athugas"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.private.Tables.investments.Name
 msgid  "Investments"
@@ -4273,7 +4273,7 @@ msgstr "FjárfestAuðk"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.private.Tables.investments.Fields.accountID.Name
 msgid  "AccountID"
-msgstr "ReikningAuðk"
+msgstr "ReikningsAuðkenni"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.private.Tables.investments.Fields.accountID.ShortName
 msgid  "AccountID"
@@ -4313,11 +4313,11 @@ msgstr "Hlutabréfeign"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.private.Tables.investments.Fields.notes.Name
 msgid  "Notes"
-msgstr "Athugas"
+msgstr "Athugasemdir"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.private.Tables.investments.Fields.notes.ShortName
 msgid  "Notes"
-msgstr "Athugasemdir"
+msgstr "Athugas"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.private.Tables.exerciselog.Name
 msgid  "ExerciseLog"
@@ -4325,19 +4325,19 @@ msgstr "Líkamsræktardagbók"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.private.Tables.exerciselog.Fields.exerciselogID.Name
 msgid  "LogID"
-msgstr "SkráningAuðk"
+msgstr "SkráningarAuðkenni"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.private.Tables.exerciselog.Fields.exerciselogID.ShortName
 msgid  "LogID"
-msgstr "SkráningarAuðkenni"
+msgstr "SkráningAuðk"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.private.Tables.exerciselog.Fields.personID.Name
 msgid  "PersonID"
-msgstr "NotandAuðk"
+msgstr "NotandaAuðkenni"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.private.Tables.exerciselog.Fields.personID.ShortName
 msgid  "PersonID"
-msgstr "NotandaAuðkenni"
+msgstr "NotandAuðk"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.private.Tables.exerciselog.Fields.activity.Name
 msgid  "Activity"
@@ -4405,7 +4405,7 @@ msgstr "HitaeinBrennt"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.private.Tables.exerciselog.Fields.hourssleep.Name
 msgid  "HoursSleep"
-msgstr "KlstSofið"
+msgstr "KlukkustundirSofið"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.private.Tables.exerciselog.Fields.hourssleep.ShortName
 msgid  "HoursSleep"
@@ -4413,11 +4413,11 @@ msgstr "KlstSofið"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.private.Tables.exerciselog.Fields.notes.Name
 msgid  "Notes"
-msgstr "Athugas"
+msgstr "Athugasemdir"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.private.Tables.exerciselog.Fields.notes.ShortName
 msgid  "Notes"
-msgstr "Athugasemdir"
+msgstr "Athugas"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.private.Tables.dietlog.Name
 msgid  "DietLog"
@@ -4425,7 +4425,7 @@ msgstr "Megrunardagbók"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.private.Tables.dietlog.Fields.dietlogID.Name
 msgid  "LogID"
-msgstr "SkráningAuðk"
+msgstr "SkráningarAuðkenni"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.private.Tables.dietlog.Fields.dietlogID.ShortName
 msgid  "LogID"
@@ -4433,7 +4433,7 @@ msgstr "SkráningAuðk"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.private.Tables.dietlog.Fields.personID.Name
 msgid  "PersonID"
-msgstr "NotandAuðk"
+msgstr "NotandaAuðkenni"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.private.Tables.dietlog.Fields.personID.ShortName
 msgid  "PersonID"
@@ -4441,7 +4441,7 @@ msgstr "NotandAuðk"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.private.Tables.dietlog.Fields.dietype.Name
 msgid  "DietType"
-msgstr "MegrunTeg"
+msgstr "Megrunartegund"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.private.Tables.dietlog.Fields.dietype.ShortName
 msgid  "DietType"
@@ -4481,7 +4481,7 @@ msgstr "GrPrótein"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.private.Tables.dietlog.Fields.gramsfat.Name
 msgid  "GramsFat"
-msgstr "GrFita"
+msgstr "GrömmFita"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.private.Tables.dietlog.Fields.gramsfat.ShortName
 msgid  "GramsFat"
@@ -4513,7 +4513,7 @@ msgstr "Vítamín"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.private.Tables.dietlog.Fields.notes.Name
 msgid  "Notes"
-msgstr "Athugas"
+msgstr "Athugasemdir"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.private.Tables.dietlog.Fields.notes.ShortName
 msgid  "Notes"
@@ -8929,11 +8929,11 @@ msgstr "Þráður"
 
 #: registry/data/org/openoffice/Office/UI/Effects.xcu#Effects.UserInterface.Effects.ooo-entrance-unfold.Label
 msgid  "Unfold"
-msgstr "Tínast burt"
+msgstr "Breiða úr"
 
 #: registry/data/org/openoffice/Office/UI/Effects.xcu#Effects.UserInterface.Effects.ooo-entrance-whip.Label
 msgid  "Whip"
-msgstr "Hræra"
+msgstr "Slá"
 
 #: registry/data/org/openoffice/Office/UI/Effects.xcu#Effects.UserInterface.Effects.ooo-entrance-ascend.Label
 msgid  "Ascend"
@@ -8985,7 +8985,7 @@ msgstr "Þenja út"
 
 #: registry/data/org/openoffice/Office/UI/Effects.xcu#Effects.UserInterface.Effects.ooo-entrance-flip.Label
 msgid  "Flip"
-msgstr "Fletta"
+msgstr "Spegla"
 
 #: registry/data/org/openoffice/Office/UI/Effects.xcu#Effects.UserInterface.Effects.ooo-entrance-fold.Label
 msgid  "Fold"
@@ -9593,7 +9593,7 @@ msgstr "Víxla bið af/á"
 
 #: registry/data/org/openoffice/Office/UI/Effects.xcu#Effects.UserInterface.Properties.basic.Label
 msgid  "Basic"
-msgstr "Grunnur"
+msgstr "Einfalt"
 
 #: registry/data/org/openoffice/Office/UI/Effects.xcu#Effects.UserInterface.Properties.special.Label
 msgid  "Special"
@@ -9601,7 +9601,7 @@ msgstr "Sérstakt"
 
 #: registry/data/org/openoffice/Office/UI/Effects.xcu#Effects.UserInterface.Properties.moderate.Label
 msgid  "Moderate"
-msgstr "Miðlungs"
+msgstr "Hóflegt"
 
 #: registry/data/org/openoffice/Office/UI/Effects.xcu#Effects.UserInterface.Properties.exciting.Label
 msgid  "Exciting"
@@ -12305,7 +12305,7 @@ msgstr "Ferningur"
 
 #: registry/data/org/openoffice/Office/UI/GenericCommands.xcu#GenericCommands.UserInterface.Commands..uno:BasicShapes.rectangle.Label
 msgid  "Rectangle"
-msgstr "Ferhyrningur"
+msgstr "Rétthyrningur"
 
 #: registry/data/org/openoffice/Office/UI/GenericCommands.xcu#GenericCommands.UserInterface.Commands..uno:BasicShapes.right-triangle.Label
 msgid  "Right Triangle"
@@ -12321,7 +12321,7 @@ msgstr "Ferningur, rúnnaður"
 
 #: registry/data/org/openoffice/Office/UI/GenericCommands.xcu#GenericCommands.UserInterface.Commands..uno:BasicShapes.round-rectangle.Label
 msgid  "Rectangle, Rounded"
-msgstr "Ferhyrningur, rúnnaður"
+msgstr "Rétthyrningur, rúnnaður"
 
 #: registry/data/org/openoffice/Office/UI/GenericCommands.xcu#GenericCommands.UserInterface.Commands..uno:BasicShapes.trapezoid.Label
 msgid  "Trapezoid"
@@ -12873,7 +12873,7 @@ msgstr "Texti"
 
 #: registry/data/org/openoffice/Office/UI/GenericCommands.xcu#GenericCommands.UserInterface.Commands..uno:Edit.Label
 msgid  "Text Box"
-msgstr "Textakassi"
+msgstr "Textareitur"
 
 #: registry/data/org/openoffice/Office/UI/GenericCommands.xcu#GenericCommands.UserInterface.Commands..uno:EditDoc.Label
 msgid  "Edit File"
@@ -13773,7 +13773,7 @@ msgstr "Setja inn textamiða"
 
 #: registry/data/org/openoffice/Office/UI/GenericCommands.xcu#GenericCommands.UserInterface.Commands..uno:InsertListbox.Label
 msgid  "List Box"
-msgstr "Listasvæði"
+msgstr "Listareitur"
 
 #: registry/data/org/openoffice/Office/UI/GenericCommands.xcu#GenericCommands.UserInterface.Commands..uno:InsertMath.Label
 msgid  "Formula..."

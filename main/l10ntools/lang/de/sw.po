@@ -37,11 +37,11 @@ msgstr "unmöglich"
 
 #: source/core/undo/undo.src#STR_DELETE_UNDO.String.Text
 msgid  "Delete $1"
-msgstr "$1 entfernen"
+msgstr "Löschen: $1"
 
 #: source/core/undo/undo.src#STR_INSERT_UNDO.String.Text
 msgid  "Insert $1"
-msgstr "$1 einfügen"
+msgstr "Einfügen: $1"
 
 #: source/core/undo/undo.src#STR_OVR_UNDO.String.Text
 msgid  "Overwrite: $1"
@@ -2201,7 +2201,7 @@ msgstr "~Maßeinheit"
 
 #: source/ui/config/optdlg.src#TP_OPTPRINT_PAGE.FL_1.FixedLine.Text
 msgid  "Contents"
-msgstr "Inhalte"
+msgstr "Inhalt"
 
 #: source/ui/config/optdlg.src#TP_OPTPRINT_PAGE.CB_PGRF.CheckBox.Text
 msgid  "~Pictures and objects"
@@ -2645,7 +2645,7 @@ msgstr "Einfügen"
 
 #: source/ui/config/redlopt.src#TP_REDLINE_OPT.FT_INS_ATTR.FixedText.Text
 msgid  "Attributes"
-msgstr "A~ttribute"
+msgstr "Attribute"
 
 #: source/ui/config/redlopt.src#TP_REDLINE_OPT.LB_INS_ATTR.item1.StringList.item
 msgid  "[None]"
@@ -3237,7 +3237,7 @@ msgstr "Mit Datenquelle verbinden..."
 
 #: source/ui/dbui/mmaddressblockpage.src#_ST_NONE_LIST.item1.StringList.item
 msgid  "< none >"
-msgstr "<keine>"
+msgstr "< leer >"
 
 #: source/ui/dbui/mmaddressblockpage.src#DLG_MM_ADDRESSBLOCK_PAGE.FI_HEADER.FixedText.Text
 msgid  "Insert address block"
@@ -4545,7 +4545,7 @@ msgstr "Aus~blenden"
 
 #: source/ui/dialog/regionsw.src#FL_HIDE_TEXT.#define.Text
 msgid  "Hide"
-msgstr "Verstecken"
+msgstr "Ausblenden"
 
 #: source/ui/dialog/regionsw.src#CB_CONDITION_TEXT.#define.Text
 msgid  "~With Condition"
@@ -4701,11 +4701,11 @@ msgstr "am ~Textende sammeln"
 
 #: source/ui/dialog/regionsw.src#TP_SECTION_FTNENDNOTES.CB_FTN_NUM.CheckBox.Text
 msgid  "~Restart numbering"
-msgstr "~Nummer neu starten"
+msgstr "Nummer neu ~starten"
 
 #: source/ui/dialog/regionsw.src#TP_SECTION_FTNENDNOTES.FT_FTN_OFFSET.FixedText.Text
 msgid  "~Start at"
-msgstr "~Beginn bei"
+msgstr "Be~ginn bei"
 
 #: source/ui/dialog/regionsw.src#TP_SECTION_FTNENDNOTES.CB_FTN_NUM_FMT.CheckBox.Text
 msgid  "Custom ~format"
@@ -4713,11 +4713,11 @@ msgstr "eigenes ~Format"
 
 #: source/ui/dialog/regionsw.src#TP_SECTION_FTNENDNOTES.FT_FTN_PREFIX.FixedText.Text
 msgid  "Be~fore"
-msgstr "~Davor"
+msgstr "Da~vor"
 
 #: source/ui/dialog/regionsw.src#TP_SECTION_FTNENDNOTES.FT_FTN_SUFFIX.FixedText.Text
 msgid  "Aft~er"
-msgstr "Dah~inter"
+msgstr "Dahinte~r"
 
 #: source/ui/dialog/regionsw.src#TP_SECTION_FTNENDNOTES.FL_END.FixedLine.Text
 msgid  "Endnotes"
@@ -5409,11 +5409,11 @@ msgstr "Position"
 
 #: source/ui/envelp/envfmt.src#TP_ENV_FMT.TXT_ADDR_LEFT.FixedText.Text
 msgid  "from left"
-msgstr "von ~links"
+msgstr "v~on links"
 
 #: source/ui/envelp/envfmt.src#TP_ENV_FMT.TXT_ADDR_TOP.FixedText.Text
 msgid  "from top"
-msgstr "vo~n oben"
+msgstr "~von oben"
 
 #: source/ui/envelp/envfmt.src#TP_ENV_FMT.TXT_ADDR_FORMAT.FixedText.Text
 msgid  "Format"
@@ -5737,7 +5737,7 @@ msgstr "Etikettenformat speichern"
 
 #: source/ui/envelp/envlop.src#DLG_ENV.TabDialog.Text
 msgid  "Envelope"
-msgstr "Briefumschlag"
+msgstr "Umschlag"
 
 #: source/ui/envelp/envlop.src#DLG_ENV.1.TP_ENV_ENV.PageItem.Text
 msgid  "Envelope"
@@ -6089,7 +6089,7 @@ msgstr "Statistik"
 
 #: source/ui/fldui/fldui.src#STR_AUTHORFLD.String.Text
 msgid  "Author"
-msgstr "Benutzer"
+msgstr "Autor"
 
 #: source/ui/fldui/fldui.src#STR_TEMPLNAMEFLD.String.Text
 msgid  "Templates"
@@ -6185,7 +6185,7 @@ msgstr "Beliebiger Datensatz"
 
 #: source/ui/fldui/fldui.src#STR_DBSETNUMBERFLD.String.Text
 msgid  "Record number"
-msgstr "Satznummer"
+msgstr "Datensatznummer"
 
 #: source/ui/fldui/fldui.src#STR_PREVPAGEFLD.String.Text
 msgid  "Previous page"
@@ -6257,7 +6257,7 @@ msgstr "Absätze"
 
 #: source/ui/fldui/fldui.src#FLD_STAT_GRF.String.Text
 msgid  "Graphics"
-msgstr "Grafik"
+msgstr "Grafiken"
 
 #: source/ui/fldui/fldui.src#FLD_STAT_OBJ.String.Text
 msgid  "Objects"
@@ -6673,7 +6673,7 @@ msgstr "F~ormat"
 
 #: source/ui/fldui/fldfunc.src#TP_FLD_FUNC.FT_FUNCNAME.FixedText.Text
 msgid  "Na~me"
-msgstr "Name"
+msgstr "Na~me"
 
 #: source/ui/fldui/fldfunc.src#TP_FLD_FUNC.FT_FUNCVALUE.FixedText.Text
 msgid  "~Value"
@@ -6733,7 +6733,7 @@ msgstr "Schrift"
 
 #: source/ui/fmtui/tmpdlg.src#DLG_TEMPLATE_1.1.TP_CHAR_EXT.PageItem.Text
 msgid  "Font Effects"
-msgstr "Schrifteffekte"
+msgstr "Schrifteffekt"
 
 #: source/ui/fmtui/tmpdlg.src#DLG_TEMPLATE_1.1.TP_CHAR_POS.PageItem.Text
 msgid  "Position"
@@ -6853,7 +6853,7 @@ msgstr "Typ"
 
 #: source/ui/fmtui/tmpdlg.src#DLG_TEMPLATE_3.1.TP_FRM_ADD.PageItem.Text
 msgid  "Options"
-msgstr "Optionen"
+msgstr "Zusätze"
 
 #: source/ui/fmtui/tmpdlg.src#DLG_TEMPLATE_3.1.TP_FRM_WRAP.PageItem.Text
 msgid  "Wrap"
@@ -6881,7 +6881,7 @@ msgstr "Bullets"
 
 #: source/ui/fmtui/tmpdlg.src#DLG_TEMPLATE_5.1.RID_SVXPAGE_PICK_SINGLE_NUM.PageItem.Text
 msgid  "Numbering Style"
-msgstr "Nummerierungsvorlage"
+msgstr "Nummerierungsart"
 
 #: source/ui/fmtui/tmpdlg.src#DLG_TEMPLATE_5.1.RID_SVXPAGE_PICK_NUM.PageItem.Text
 msgid  "Outline"
@@ -6905,7 +6905,7 @@ msgstr "Nummerierungsvorlage"
 
 #: source/ui/frmdlg/frmpage.src#DLG_FRM_STD.TabDialog.Text
 msgid  "Frame"
-msgstr "Rahmen"
+msgstr "~Frame"
 
 #: source/ui/frmdlg/frmpage.src#DLG_FRM_STD.1.TP_FRM_STD.PageItem.Text
 msgid  "Type"
@@ -7117,7 +7117,7 @@ msgstr "Position"
 
 #: source/ui/frmdlg/frmpage.src#TP_GRF_EXT.FL_CONNECT.FixedLine.Text
 msgid  "Link"
-msgstr "Verknüpfen"
+msgstr "Verknüpfung"
 
 #: source/ui/frmdlg/frmpage.src#TP_GRF_EXT.FT_CONNECT.FixedText.Text
 msgid  "~File name"
@@ -7337,7 +7337,7 @@ msgstr "Abstände"
 
 #: source/ui/frmdlg/column.src#TP_COLUMN.TabPage.Text
 msgid  "Columns"
-msgstr "Spalten"
+msgstr "~Spalten"
 
 #: source/ui/frmdlg/column.src#TP_COLUMN.FT_NUMBER.FixedText.Text
 msgid  "Columns"
@@ -7545,7 +7545,7 @@ msgstr "Der Spaltenabstand ist zu groß für die Spaltenbreite."
 
 #: source/ui/frmdlg/cption.src#DLG_CAPTION.ModalDialog.Text
 msgid  "Caption"
-msgstr "~Beschriftungstext"
+msgstr "Beschriftung"
 
 #: source/ui/frmdlg/cption.src#DLG_CAPTION.BTN_AUTOCAPTION.PushButton.Text
 msgid  "AutoCaption..."
@@ -7557,7 +7557,7 @@ msgstr "~Optionen..."
 
 #: source/ui/frmdlg/cption.src#DLG_CAPTION.TXT_TEXT.FixedText.Text
 msgid  "Caption"
-msgstr "Beschriftung"
+msgstr "~Beschriftungstext"
 
 #: source/ui/frmdlg/cption.src#DLG_CAPTION.FL_SETTINGS.FixedLine.Text
 msgid  "Properties"
@@ -7589,11 +7589,11 @@ msgstr "~Position"
 
 #: source/ui/frmdlg/cption.src#DLG_CAPTION.STR_BEGINNING.String.Text
 msgid  "Above"
-msgstr "Am Anfang"
+msgstr "Oberhalb"
 
 #: source/ui/frmdlg/cption.src#DLG_CAPTION.STR_END.String.Text
 msgid  "Below"
-msgstr "Am Ende"
+msgstr "Unterhalb"
 
 #: source/ui/frmdlg/cption.src#DLG_CAPTION.STR_ABOVE.String.Text
 msgid  "Above"
@@ -7605,7 +7605,7 @@ msgstr "Am Ende"
 
 #: source/ui/frmdlg/cption.src#DLG_CAPTION.STR_CATEGORY_NONE.String.Text
 msgid  "<None>"
-msgstr "<Keine>"
+msgstr "<keine>"
 
 #: source/ui/frmdlg/cption.src#DLG_SEQUENCE_OPTION.ModalDialog.Text
 msgid  "Options"
@@ -8149,7 +8149,7 @@ msgstr "Eintrag"
 
 #: source/ui/index/cnttab.src#TP_TOX_ENTRY.WIN_TOKEN.STR_TOKEN_HELP_TAB_STOP.String.Text
 msgid  "Tab stop"
-msgstr "Tabulator"
+msgstr "~Tabulator"
 
 #: source/ui/index/cnttab.src#TP_TOX_ENTRY.WIN_TOKEN.STR_TOKEN_HELP_TEXT.String.Text
 msgid  "Text"
@@ -8333,7 +8333,7 @@ msgstr "Sortierschlüssel"
 
 #: source/ui/index/cnttab.src#TP_TOX_ENTRY.STR_NOSORTKEY.String.Text
 msgid  "<None>"
-msgstr "<Keine>"
+msgstr "<Keiner>"
 
 #: source/ui/index/cnttab.src#TP_TOX_ENTRY.STR_NO_CHAR_STYLE.String.Text
 msgid  "<None>"
@@ -9345,11 +9345,11 @@ msgstr "Schlüssel ~2"
 
 #: source/ui/misc/srtdlg.src#DLG_SORTING.RB_UP2.RadioButton.Text
 msgid  "Ascending"
-msgstr "Aufstei~gend"
+msgstr "A~ufsteigend"
 
 #: source/ui/misc/srtdlg.src#DLG_SORTING.RB_DN2.RadioButton.Text
 msgid  "Descending"
-msgstr "Absteigen~d"
+msgstr "Ab~steigend"
 
 #: source/ui/misc/srtdlg.src#DLG_SORTING.CB_KEY3.CheckBox.Text
 msgid  "Key ~3"
@@ -10601,7 +10601,7 @@ msgstr "Eigenschaften"
 
 #: source/ui/table/tabledlg.src#TP_FORMAT_TABLE.FT_TEXTDIRECTION.FixedText.Text
 msgid  "Text ~direction"
-msgstr "Textfluss"
+msgstr "~Textfluss"
 
 #: source/ui/table/tabledlg.src#TP_FORMAT_TABLE.LB_TEXTDIRECTION.0.StringList.item
 msgid  "Left-to-right"
@@ -10953,7 +10953,7 @@ msgstr "Setze Vorlage \"Textkörper\""
 
 #: source/ui/utlui/utlui.src#RID_SHELLRES_AUTOFMTSTRS.STR_AUTOFMTREDL_SET_TMPL_INDENT.String.Text
 msgid  "Set \"Text body indent\" Style"
-msgstr "Setze Vorlage \"Textkörper Einrückung\""
+msgstr "Setze Vorlage \"Textkörper Einzug\""
 
 #: source/ui/utlui/utlui.src#RID_SHELLRES_AUTOFMTSTRS.STR_AUTOFMTREDL_SET_TMPL_NEG_INDENT.String.Text
 msgid  "Set \"Hanging indent\" Style"
@@ -11045,7 +11045,7 @@ msgstr "Textrahmen"
 
 #: source/ui/utlui/utlui.src#STR_CONTENT_TYPE_GRAPHIC.String.Text
 msgid  "Graphics"
-msgstr "Grafik"
+msgstr "Grafiken"
 
 #: source/ui/utlui/utlui.src#STR_CONTENT_TYPE_OLE.String.Text
 msgid  "OLE objects"
@@ -11357,7 +11357,7 @@ msgstr "Broschüre"
 
 #: source/ui/utlui/initui.src#STR_AUTH_TYPE_CONFERENCE.String.Text
 msgid  "Conference proceedings"
-msgstr "Tagungsbericht"
+msgstr "Konferenzbericht"
 
 #: source/ui/utlui/initui.src#STR_AUTH_TYPE_INBOOK.String.Text
 msgid  "Book excerpt"
@@ -11413,23 +11413,23 @@ msgstr "WWW-Dokument"
 
 #: source/ui/utlui/initui.src#STR_AUTH_TYPE_CUSTOM1.String.Text
 msgid  "User-defined1"
-msgstr "Benutzertyp1"
+msgstr "Benutzerfeld1"
 
 #: source/ui/utlui/initui.src#STR_AUTH_TYPE_CUSTOM2.String.Text
 msgid  "User-defined2"
-msgstr "Benutzertyp2"
+msgstr "Benutzerfeld2"
 
 #: source/ui/utlui/initui.src#STR_AUTH_TYPE_CUSTOM3.String.Text
 msgid  "User-defined3"
-msgstr "Benutzertyp3"
+msgstr "Benutzerfeld3"
 
 #: source/ui/utlui/initui.src#STR_AUTH_TYPE_CUSTOM4.String.Text
 msgid  "User-defined4"
-msgstr "Benutzertyp4"
+msgstr "Benutzerfeld4"
 
 #: source/ui/utlui/initui.src#STR_AUTH_TYPE_CUSTOM5.String.Text
 msgid  "User-defined5"
-msgstr "Benutzertyp5"
+msgstr "Benutzerfeld5"
 
 #: source/ui/utlui/initui.src#STR_AUTH_FIELD_IDENTIFIER.String.Text
 msgid  "Short name"

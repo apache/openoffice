@@ -198,7 +198,7 @@ msgstr "Изабери од"
 #: source/ui/dbgui/pivot.src#RID_SCDLG_PIVOT_LAYOUT.RB_INAREA.ImageButton.QuickHelpText
 #, fuzzy
 msgid  "Shrink"
-msgstr "Смотај"
+msgstr "Скупи"
 
 #: source/ui/dbgui/pivot.src#RID_SCDLG_PIVOT_LAYOUT.FT_OUTAREA.FixedText.Text
 #, fuzzy
@@ -5926,27 +5926,27 @@ msgstr ">="
 #: source/ui/src/filter.src#RID_SCDLG_FILTER.LB_COND1.Default.stringlist.item
 #, fuzzy
 msgid  "<>"
-msgstr " <>"
+msgstr "<>"
 
 #: source/ui/src/filter.src#RID_SCDLG_FILTER.LB_COND1.Default.stringlist.item
 #, fuzzy
 msgid  "Largest"
-msgstr "највеће"
+msgstr "Највећи"
 
 #: source/ui/src/filter.src#RID_SCDLG_FILTER.LB_COND1.Default.stringlist.item
 #, fuzzy
 msgid  "Smallest"
-msgstr "најмање"
+msgstr "Најмањи"
 
 #: source/ui/src/filter.src#RID_SCDLG_FILTER.LB_COND1.Default.stringlist.item
 #, fuzzy
 msgid  "Largest %"
-msgstr "највећи %"
+msgstr "Највећи %"
 
 #: source/ui/src/filter.src#RID_SCDLG_FILTER.LB_COND1.Default.stringlist.item
 #, fuzzy
 msgid  "Smallest %"
-msgstr "најмањи %"
+msgstr "Најмањи %"
 
 #: source/ui/src/filter.src#RID_SCDLG_FILTER.LB_COND1.Default.stringlist.item
 #, fuzzy
@@ -10051,7 +10051,7 @@ msgstr "Врста_функције"
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_RKP.7.String.Text
 #, fuzzy
 msgid  "If type = 0 then the functions will be calculated in the form of y=m^x, or also functions y=b*m^x."
-msgstr "Ако је врста = 0, функције ће бити рачунате у форми y=m^x, или као функције y=b*m^x."
+msgstr "За врста = 0, функције ће бити рачунате у форми y=m^x или као функције y=b*m^x."
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_RKP.8.String.Text
 #, fuzzy
@@ -10256,7 +10256,7 @@ msgstr "број "
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_VAR.3.String.Text
 #, fuzzy
 msgid  "Number 1, number 2, ... are 1 to 30 numerical arguments which portray a sample of a population."
-msgstr "Број 1, број 2, ... су од 1 до 30 бројчаних аргумената који представљају узорак популације."
+msgstr "Број 1, број 2, ... представљају од 1 до 30 бројчаних аргумената узорка популације."
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_VAR_A.1.String.Text
 #, fuzzy
@@ -10271,7 +10271,7 @@ msgstr "вредност "
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_VAR_A.3.String.Text
 #, fuzzy
 msgid  "Value 1; value 2; ... are 1 to 30 arguments representing a sample taken from a basic total population."
-msgstr "Вредност 1, вредност 2,... представљају од 1 до 30 узорака из основне укупне популације."
+msgstr "Вредност 1, вредност 2, ... представљају од 1 до 30 узорака из основне укупне популације."
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_VAR_P.1.String.Text
 #, fuzzy
@@ -10526,7 +10526,7 @@ msgstr "податак"
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_PERCENTILE.3.String.Text
 #, fuzzy
 msgid  "The array of the data in the sample."
-msgstr "Потез података  узорка."
+msgstr "Потез података узорка."
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_PERCENTILE.4.String.Text
 #, fuzzy
@@ -10551,7 +10551,7 @@ msgstr "податак"
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_QUARTILE.3.String.Text
 #, fuzzy
 msgid  "The array of the data in the sample."
-msgstr "Потез података узорка."
+msgstr "Потез података  узорка."
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_QUARTILE.4.String.Text
 #, fuzzy
@@ -10996,7 +10996,7 @@ msgstr "Кумулативна"
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_POISSON_DIST.7.String.Text
 #, fuzzy
 msgid  "0 or FALSE calculates the probability density function. Any other value or TRUE or omitted calculates the cumulative distribution function."
-msgstr "0 или FALSE (нетачно) израчунава функцију густине вероватноће. Било која друга вредност, TRUE (тачно) или ако је изостављено рачуна функцију кумулативне расподеле."
+msgstr "0 или FALSE (нетачно) израчунава функцију густине вероватноће. Било која друга вредност, TRUE (тачно) или ако је изостављено рачуна функцију кумулативне расподеле.  "
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_NORM_DIST.1.String.Text
 #, fuzzy
@@ -11041,7 +11041,7 @@ msgstr "C"
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_NORM_DIST.9.String.Text
 #, fuzzy
 msgid  "0 or FALSE calculates the probability density function. Any other value or TRUE or omitted calculates the cumulative distribution function."
-msgstr "0 или FALSE (нетачно) израчунава функцију густине вероватноће. Било која друга вредност, TRUE (тачно) или ако је изостављено рачуна функцију кумулативне расподеле.  "
+msgstr "0 или FALSE (нетачно) израчунава функцију густине вероватноће. Било која друга вредност, TRUE (тачно) или ако је изостављено рачуна функцију кумулативне расподеле."
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_NORM_INV.1.String.Text
 #, fuzzy
@@ -11151,7 +11151,7 @@ msgstr "Кумулативна"
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_LOG_NORM_DIST.9.String.Text
 #, fuzzy
 msgid  "0 or FALSE calculates the probability density function. Any other value or TRUE or omitted calculates the cumulative distribution function."
-msgstr "0 или FALSE (нетачно) рачуна функцију густине вероватноће. Било која друга вредност, TRUE (тачно) или ако је изостављено даје функцију кумулативне расподеле.  "
+msgstr "0 или FALSE (нетачно) израчунава функцију густине вероватноће. Било која друга вредност, TRUE (тачно) или ако је изостављено рачуна функцију кумулативне расподеле.  "
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_LOG_INV.1.String.Text
 #, fuzzy
@@ -14371,7 +14371,7 @@ msgstr "Изабери листове"
 #: source/ui/src/scstring.src#STR_DLG_SELECTTABLES_LBNAME.String.Text
 #, fuzzy
 msgid  "~Selected sheets"
-msgstr "Штампај сам~о изабране листове"
+msgstr "~Изабрани листови"
 
 #: source/ui/src/scstring.src#STR_REPLCELLSWARN.String.Text
 msgid  "You are pasting data into cells that already contain data.\\nDo you really want to overwrite the existing data?"

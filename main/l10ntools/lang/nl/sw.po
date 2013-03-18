@@ -725,7 +725,7 @@ msgstr "Dit bestand is geen WinWord6-bestand."
 
 #: source/ui/app/error.src#RID_SW_ERRHDL.ERR_CODE ( ERRCODE_CLASS_READ , ERR_WW6_FASTSAVE_ERR ).String.Text
 msgid  "This file was saved with WinWord in 'Fast Save' mode. Please unmark the WinWord option 'Allow Fast Saves' and save the file again."
-msgstr "Dit bestand is met de WinWord optie \"Snel opslaan\" opgeslagen. Schakel in WinWord de optie \"Snel opslaan toestaan\" uit en sla het bestand opnieuw op met WinWord."
+msgstr "Dit bestand is met de WinWord-optie \"Snel opslaan\" opgeslagen. Schakel in WinWord de optie \"Snel opslaan toestaan\" uit en sla het bestand opnieuw op met WinWord."
 
 #: source/ui/app/error.src#RID_SW_ERRHDL.ERR_CODE ( ERRCODE_CLASS_READ , ERR_FORMAT_ROWCOL ).String.Text
 msgid  "File format error found at $(ARG1)(row,col)."
@@ -865,7 +865,7 @@ msgstr "Hoofdstukopmaakprofielen"
 
 #: source/ui/app/app.src#DLG_STYLE_DESIGNER.SFX_STYLE_FAMILY_PARA.SWSTYLEBIT_LIST.FilterList.item
 msgid  "List Styles"
-msgstr "Lijstopmaakprofielen"
+msgstr "Opmaakprofielen voor nummering"
 
 #: source/ui/app/app.src#DLG_STYLE_DESIGNER.SFX_STYLE_FAMILY_PARA.SWSTYLEBIT_IDX.FilterList.item
 msgid  "Index Styles"
@@ -2645,7 +2645,7 @@ msgstr "Invoegingen"
 
 #: source/ui/config/redlopt.src#TP_REDLINE_OPT.FT_INS_ATTR.FixedText.Text
 msgid  "Attributes"
-msgstr "Attr~ibuten"
+msgstr "Attri~buten"
 
 #: source/ui/config/redlopt.src#TP_REDLINE_OPT.LB_INS_ATTR.item1.StringList.item
 msgid  "[None]"
@@ -2693,7 +2693,7 @@ msgstr "Achtergrondkleur"
 
 #: source/ui/config/redlopt.src#TP_REDLINE_OPT.FT_INS_COL.FixedText.Text
 msgid  "Color"
-msgstr "K~leur"
+msgstr "Kl~eur"
 
 #: source/ui/config/redlopt.src#TP_REDLINE_OPT.WIN_INS.Window.Text
 msgid  "Insert"
@@ -2705,11 +2705,11 @@ msgstr "Verwijderen"
 
 #: source/ui/config/redlopt.src#TP_REDLINE_OPT.FT_DEL_ATTR.FixedText.Text
 msgid  "Attributes"
-msgstr "Attributen"
+msgstr "Attr~ibuten"
 
 #: source/ui/config/redlopt.src#TP_REDLINE_OPT.FT_DEL_COL.FixedText.Text
 msgid  "Color"
-msgstr "~Kleur"
+msgstr "K~leur"
 
 #: source/ui/config/redlopt.src#TP_REDLINE_OPT.WIN_DEL.Window.Text
 msgid  "Delete"
@@ -4701,7 +4701,7 @@ msgstr "Aan einde van ~tekst verzamelen"
 
 #: source/ui/dialog/regionsw.src#TP_SECTION_FTNENDNOTES.CB_FTN_NUM.CheckBox.Text
 msgid  "~Restart numbering"
-msgstr "Nieuwe n~ummering"
+msgstr "~Nieuwe nummering"
 
 #: source/ui/dialog/regionsw.src#TP_SECTION_FTNENDNOTES.FT_FTN_OFFSET.FixedText.Text
 msgid  "~Start at"
@@ -5409,11 +5409,11 @@ msgstr "Positie"
 
 #: source/ui/envelp/envfmt.src#TP_ENV_FMT.TXT_ADDR_LEFT.FixedText.Text
 msgid  "from left"
-msgstr "vanaf ~links"
+msgstr "~vanaf links"
 
 #: source/ui/envelp/envfmt.src#TP_ENV_FMT.TXT_ADDR_TOP.FixedText.Text
 msgid  "from top"
-msgstr "vanaf ~boven"
+msgstr "vanaf boven"
 
 #: source/ui/envelp/envfmt.src#TP_ENV_FMT.TXT_ADDR_FORMAT.FixedText.Text
 msgid  "Format"
@@ -5489,7 +5489,7 @@ msgstr "Zaak"
 
 #: source/ui/envelp/label.src#DLG_LAB.1.TP_LAB_FMT.PageItem.Text
 msgid  "Format"
-msgstr "Formaat"
+msgstr "Grootte"
 
 #: source/ui/envelp/label.src#DLG_LAB.1.TP_LAB_PRT.PageItem.Text
 msgid  "Options"
@@ -5593,7 +5593,7 @@ msgstr "Titel/beroep"
 
 #: source/ui/envelp/label.src#TP_PRIVATE_DATA.FT_PHONE_MOBILE.FixedText.Text
 msgid  "Phone/Mobile"
-msgstr "Telefoon/mobiel"
+msgstr "Telefoon/Mobiel"
 
 #: source/ui/envelp/label.src#TP_PRIVATE_DATA.FT_FAX.FixedText.Text
 msgid  "Fa~x"
@@ -6881,7 +6881,7 @@ msgstr "Opsommingstekens"
 
 #: source/ui/fmtui/tmpdlg.src#DLG_TEMPLATE_5.1.RID_SVXPAGE_PICK_SINGLE_NUM.PageItem.Text
 msgid  "Numbering Style"
-msgstr "Lijstopmaakprofiel"
+msgstr "Opmaakprofiel voor nummering"
 
 #: source/ui/fmtui/tmpdlg.src#DLG_TEMPLATE_5.1.RID_SVXPAGE_PICK_NUM.PageItem.Text
 msgid  "Outline"
@@ -6905,7 +6905,7 @@ msgstr "Lijstopmaakprofiel"
 
 #: source/ui/frmdlg/frmpage.src#DLG_FRM_STD.TabDialog.Text
 msgid  "Frame"
-msgstr "~Frame"
+msgstr "Frame"
 
 #: source/ui/frmdlg/frmpage.src#DLG_FRM_STD.1.TP_FRM_STD.PageItem.Text
 msgid  "Type"
@@ -7589,11 +7589,11 @@ msgstr "Positie"
 
 #: source/ui/frmdlg/cption.src#DLG_CAPTION.STR_BEGINNING.String.Text
 msgid  "Above"
-msgstr "Boven"
+msgstr "Aan begin"
 
 #: source/ui/frmdlg/cption.src#DLG_CAPTION.STR_END.String.Text
 msgid  "Below"
-msgstr "Beneden"
+msgstr "Aan einde"
 
 #: source/ui/frmdlg/cption.src#DLG_CAPTION.STR_ABOVE.String.Text
 msgid  "Above"
@@ -8149,7 +8149,7 @@ msgstr "Item"
 
 #: source/ui/index/cnttab.src#TP_TOX_ENTRY.WIN_TOKEN.STR_TOKEN_HELP_TAB_STOP.String.Text
 msgid  "Tab stop"
-msgstr "~Tabstop"
+msgstr "Tabstop"
 
 #: source/ui/index/cnttab.src#TP_TOX_ENTRY.WIN_TOKEN.STR_TOKEN_HELP_TEXT.String.Text
 msgid  "Text"
@@ -8513,7 +8513,7 @@ msgstr "~Naam"
 
 #: source/ui/misc/glossary.src#DLG_GLOSSARY.FT_SHORTNAME.FixedText.Text
 msgid  "~Shortcut"
-msgstr "Af~korting"
+msgstr "~Afkorting"
 
 #: source/ui/misc/glossary.src#DLG_GLOSSARY.LB_BIB.ST_READONLY.String.Text
 msgid  "read-only"
@@ -8561,7 +8561,7 @@ msgstr "Voor de mappen van 'AutoTekst' bestaan geen schrijfrechten. Wilt u het d
 
 #: source/ui/misc/glossary.src#DLG_GLOSSARY.MNU_EDIT.FN_GL_DEFINE.MenuItem.Text
 msgid  "~New"
-msgstr "~Nieuw"
+msgstr "N~ieuw"
 
 #: source/ui/misc/glossary.src#DLG_GLOSSARY.MNU_EDIT.FN_GL_DEFINE_TEXT.MenuItem.Text
 msgid  "New (text only)"
@@ -9457,7 +9457,7 @@ msgstr "Per document"
 
 #: source/ui/misc/docfnote.src#TP_FOOTNOTEOPTION.FT_PREFIX.FixedText.Text
 msgid  "~Before"
-msgstr "Er~voor"
+msgstr "~Ervoor"
 
 #: source/ui/misc/docfnote.src#TP_FOOTNOTEOPTION.FT_SUFFIX.FixedText.Text
 msgid  "~After"
@@ -9501,7 +9501,7 @@ msgstr "Voetnoten~gebied"
 
 #: source/ui/misc/docfnote.src#TP_FOOTNOTEOPTION.FL_CONT.FixedLine.Text
 msgid  "Continuation notice"
-msgstr "Verwijstekst bij voetnoten verdeeld over meer dan één pagina"
+msgstr "Verwijzing naar volgende pagina"
 
 #: source/ui/misc/docfnote.src#TP_FOOTNOTEOPTION.FT_CONT.FixedText.Text
 msgid  "End ~of footnote"
@@ -10953,7 +10953,7 @@ msgstr "Opmaakprofiel 'Tekstblok' instellen"
 
 #: source/ui/utlui/utlui.src#RID_SHELLRES_AUTOFMTSTRS.STR_AUTOFMTREDL_SET_TMPL_INDENT.String.Text
 msgid  "Set \"Text body indent\" Style"
-msgstr "Opmaakprofiel 'Tekstblok inspringen' instellen"
+msgstr "Opmaakprofiel '1e regel inspringen' instellen"
 
 #: source/ui/utlui/utlui.src#RID_SHELLRES_AUTOFMTSTRS.STR_AUTOFMTREDL_SET_TMPL_NEG_INDENT.String.Text
 msgid  "Set \"Hanging indent\" Style"
@@ -11297,7 +11297,7 @@ msgstr "%s-klik om de hyperlink te openen"
 
 #: source/ui/utlui/initui.src#RID_SW_SHELLRES.FLD_DOCINFO_TITEL.String.Text
 msgid  "Title"
-msgstr "Tit~el"
+msgstr "Titel"
 
 #: source/ui/utlui/initui.src#RID_SW_SHELLRES.FLD_DOCINFO_THEMA.String.Text
 msgid  "Subject"
@@ -11413,23 +11413,23 @@ msgstr "WWW-document"
 
 #: source/ui/utlui/initui.src#STR_AUTH_TYPE_CUSTOM1.String.Text
 msgid  "User-defined1"
-msgstr "Gebruikersveld~1 ;"
+msgstr "Gebruikerstype1"
 
 #: source/ui/utlui/initui.src#STR_AUTH_TYPE_CUSTOM2.String.Text
 msgid  "User-defined2"
-msgstr "Gebruikersveld~2 ;"
+msgstr "Gebruikerstype2"
 
 #: source/ui/utlui/initui.src#STR_AUTH_TYPE_CUSTOM3.String.Text
 msgid  "User-defined3"
-msgstr "Gebruikersveld~3 ;"
+msgstr "Gebruikerstype3"
 
 #: source/ui/utlui/initui.src#STR_AUTH_TYPE_CUSTOM4.String.Text
 msgid  "User-defined4"
-msgstr "Gebruikersveld~4 ;"
+msgstr "Gebruikerstype4"
 
 #: source/ui/utlui/initui.src#STR_AUTH_TYPE_CUSTOM5.String.Text
 msgid  "User-defined5"
-msgstr "Gebruikersveld~5"
+msgstr "Gebruikerstype5"
 
 #: source/ui/utlui/initui.src#STR_AUTH_FIELD_IDENTIFIER.String.Text
 msgid  "Short name"

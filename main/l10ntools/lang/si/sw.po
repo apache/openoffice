@@ -261,7 +261,7 @@ msgstr "උපලක්ෂණ නවත්වන්න"
 
 #: source/core/undo/undo.src#STR_AUTOCORRECT.String.Text
 msgid  "AutoCorrect"
-msgstr "ස්වයං නිවැරදි කිරීම"
+msgstr "ස්වයං නිවැරදි කරන්න"
 
 #: source/core/undo/undo.src#STR_MERGE_TABLE.String.Text
 msgid  "Merge table"
@@ -725,7 +725,7 @@ msgstr "මෙය WinWord6 ගොනුවක් නොවේ."
 
 #: source/ui/app/error.src#RID_SW_ERRHDL.ERR_CODE ( ERRCODE_CLASS_READ , ERR_WW6_FASTSAVE_ERR ).String.Text
 msgid  "This file was saved with WinWord in 'Fast Save' mode. Please unmark the WinWord option 'Allow Fast Saves' and save the file again."
-msgstr "මෙම ගොනුව WinWord සමඟ 'ඉක්මන් සුරැකීම' ප්‍රකාරයෙන් සුරැකී ඇත. කරුණාකර 'ඉක්මන් සුරැකීම් වලට ඉඩ දෙන්න' WinWord අභිරුචියේ සළකුණ ඉවත් කර ගොනුව නැවත සුරකින්න."
+msgstr "මෙම ගොනුව WinWord සමඟ 'ඉක්මන් සුරැකීම' ප්‍රකාරයෙන් සුරැකී ඇත. කරුණාකර 'ඉක්මන් සුරැකීම් වලට ඉඩ දෙන්න' WinWord අභිරුචියෙන් සළකුණ ඉවත් කර ගොනුව නැවත සුරකින්න."
 
 #: source/ui/app/error.src#RID_SW_ERRHDL.ERR_CODE ( ERRCODE_CLASS_READ , ERR_FORMAT_ROWCOL ).String.Text
 msgid  "File format error found at $(ARG1)(row,col)."
@@ -5829,7 +5829,7 @@ msgstr "චිත්‍රක සුරකින්න..."
 #: source/ui/docvw/docvw.src#MN_READONLY_POPUP.MN_READONLY_GRAPHICTOGALLERY.MN_READONLY_TOGALLERYLINK.MenuItem.Text
 #, fuzzy
 msgid  "As Link"
-msgstr "සබැඳියක් ලෙස"
+msgstr "ඈඳුමක් ලෙස"
 
 #: source/ui/docvw/docvw.src#MN_READONLY_POPUP.MN_READONLY_GRAPHICTOGALLERY.MN_READONLY_TOGALLERYCOPY.MenuItem.Text
 #, fuzzy
@@ -8522,8 +8522,9 @@ msgid  "Position"
 msgstr "පිහිටීම"
 
 #: source/ui/frmdlg/frmpage.src#TP_GRF_EXT.FL_CONNECT.FixedLine.Text
+#, fuzzy
 msgid  "Link"
-msgstr "ඈඳන්න"
+msgstr "සබඳින්න"
 
 #: source/ui/frmdlg/frmpage.src#TP_GRF_EXT.FT_CONNECT.FixedText.Text
 #, fuzzy
@@ -11496,8 +11497,9 @@ msgid  "~Footnote area"
 msgstr "පාදම සටහන් ප්‍රදේශය (~F)"
 
 #: source/ui/misc/docfnote.src#TP_FOOTNOTEOPTION.FL_CONT.FixedLine.Text
+#, fuzzy
 msgid  "Continuation notice"
-msgstr "තව ඉදිරියට ඇති බව දැන්වීම"
+msgstr "තවත් ඉදිරියට ඇති බව දැන්වීම"
 
 #: source/ui/misc/docfnote.src#TP_FOOTNOTEOPTION.FT_CONT.FixedText.Text
 #, fuzzy
@@ -11920,8 +11922,9 @@ msgid  "Wrong table formula"
 msgstr "වැරදි වගු සූත්‍රය"
 
 #: source/ui/ribbar/workctrl.src#RID_SCROLL_NAVIGATION_WIN.String.Text
+#, fuzzy
 msgid  "Navigation"
-msgstr "සංචාලනය"
+msgstr "සංවාලනය"
 
 #: source/ui/ribbar/workctrl.src#STR_IMGBTN_TBL_DOWN.String.Text
 #, fuzzy

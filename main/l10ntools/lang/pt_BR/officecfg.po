@@ -393,11 +393,11 @@ msgstr "UnidPedid"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.business.Tables.products.Fields.unitprice.Name
 msgid  "UnitPrice"
-msgstr "PrecoUnit"
+msgstr "PrecoUnid"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.business.Tables.products.Fields.unitprice.ShortName
 msgid  "UnitPrice"
-msgstr "PrecoUnitario"
+msgstr "PrecoUnit"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.business.Tables.products.Fields.reorderlevel.Name
 msgid  "ReorderLevel"
@@ -461,11 +461,11 @@ msgstr "TitCont"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.business.Tables.suppliers.Fields.address.Name
 msgid  "Address"
-msgstr "Endereco"
+msgstr "Endereço"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.business.Tables.suppliers.Fields.address.ShortName
 msgid  "Address"
-msgstr "Endereco"
+msgstr "Endereço"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.business.Tables.suppliers.Fields.city.Name
 msgid  "City"
@@ -489,7 +489,7 @@ msgstr "EstadoOuProvincia"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.business.Tables.suppliers.Fields.stateorprovince.ShortName
 msgid  "StateProvi"
-msgstr "EstadoProv"
+msgstr "EstProv"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.business.Tables.suppliers.Fields.countryorregion.Name
 msgid  "CountryOrRegion"
@@ -533,7 +533,7 @@ msgstr "EndEmail"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.business.Tables.suppliers.Fields.notes.Name
 msgid  "Notes"
-msgstr "uNotas"
+msgstr "Notas"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.business.Tables.suppliers.Fields.notes.ShortName
 msgid  "Notes"
@@ -569,11 +569,11 @@ msgstr "Nome"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.business.Tables.mailinglist.Fields.middlename.Name
 msgid  "MiddleName"
-msgstr "SegundoNome"
+msgstr "SegNome"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.business.Tables.mailinglist.Fields.middlename.ShortName
 msgid  "MiddleName"
-msgstr "SegundoNome"
+msgstr "SegNome"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.business.Tables.mailinglist.Fields.lastlame.Name
 msgid  "LastName"
@@ -609,11 +609,11 @@ msgstr "NomeOrg"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.business.Tables.mailinglist.Fields.address.Name
 msgid  "Address"
-msgstr "Endereço"
+msgstr "Endereco"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.business.Tables.mailinglist.Fields.address.ShortName
 msgid  "Address"
-msgstr "Endereço"
+msgstr "Endereco"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.business.Tables.mailinglist.Fields.city.Name
 msgid  "City"
@@ -681,7 +681,7 @@ msgstr "EndEmail"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.business.Tables.mailinglist.Fields.birthdate.Name
 msgid  "Birthdate"
-msgstr "2DataNasc"
+msgstr "DataNascimento"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.business.Tables.mailinglist.Fields.birthdate.ShortName
 msgid  "Birthdate"
@@ -689,11 +689,11 @@ msgstr "DataNascimento"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.business.Tables.mailinglist.Fields.nationality.Name
 msgid  "Nationality"
-msgstr "Nacional"
+msgstr "Nacionalidade"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.business.Tables.mailinglist.Fields.nationality.ShortName
 msgid  "Nationality"
-msgstr "Nacionalidade"
+msgstr "Nacional"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.business.Tables.mailinglist.Fields.dateupdated.Name
 msgid  "DateUpdated"
@@ -805,11 +805,11 @@ msgstr "Titulo"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.business.Tables.contacts.Fields.address.Name
 msgid  "Address"
-msgstr "Endereco"
+msgstr "Endereço"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.business.Tables.contacts.Fields.address.ShortName
 msgid  "Address"
-msgstr "Endereco"
+msgstr "Endereço"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.business.Tables.contacts.Fields.city.Name
 msgid  "City"
@@ -905,15 +905,15 @@ msgstr "EstadoCivil"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.business.Tables.contacts.Fields.maritalstatus.ShortName
 msgid  "MaritlStat"
-msgstr "EstCivil"
+msgstr "EstCiv"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.business.Tables.contacts.Fields.spousename.Name
 msgid  "SpouseName"
-msgstr "NomeConjuge"
+msgstr "NomeConj"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.business.Tables.contacts.Fields.spousename.ShortName
 msgid  "SpouseName"
-msgstr "NomeConjuge"
+msgstr "NomeConj"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.business.Tables.contacts.Fields.spousesinterests.Name
 msgid  "SpousesInterests"
@@ -1093,11 +1093,11 @@ msgstr "Funcionarios"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.business.Tables.employees.Fields.employeeID.Name
 msgid  "EmployeeID"
-msgstr "IDFunc"
+msgstr "IDFuncionario"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.business.Tables.employees.Fields.employeeID.ShortName
 msgid  "EmployeeID"
-msgstr "IDFunc"
+msgstr "IDFuncionario"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.business.Tables.employees.Fields.firstname.Name
 msgid  "FirstName"
@@ -1365,7 +1365,7 @@ msgstr "NumeroOrdemCompra"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.business.Tables.orders.Fields.purchaseordernumber.ShortName
 msgid  "PurchOrdNo"
-msgstr "NumOrdCompr"
+msgstr "NumOrdCom"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.business.Tables.orders.Fields.requiredbydate.Name
 msgid  "RequiredByDate"
@@ -1401,7 +1401,7 @@ msgstr "EndDest"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.business.Tables.orders.Fields.shipcity.Name
 msgid  "ShipCity"
-msgstr "CidadDest"
+msgstr "CidadeDestino"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.business.Tables.orders.Fields.shipcity.ShortName
 msgid  "ShipCity"
@@ -1437,7 +1437,7 @@ msgstr "NumeroTelefoneDest"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.business.Tables.orders.Fields.shipphonenumber.ShortName
 msgid  "ShipPhonNo"
-msgstr "NumFoneRemet"
+msgstr "NumFoneDest"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.business.Tables.orders.Fields.shipdate.Name
 msgid  "ShipDate"
@@ -1517,7 +1517,7 @@ msgstr "Quantidade"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.business.Tables.orderdetails.Fields.unitprice.Name
 msgid  "UnitPrice"
-msgstr "PrecoUnit"
+msgstr "PrecoUnitario"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.business.Tables.orderdetails.Fields.unitprice.ShortName
 msgid  "UnitPrice"
@@ -1561,11 +1561,11 @@ msgstr "Pagamentos"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.business.Tables.payments.Fields.paymentID.Name
 msgid  "PaymentID"
-msgstr "IDPagamento"
+msgstr "IDPagto"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.business.Tables.payments.Fields.paymentID.ShortName
 msgid  "PaymentID"
-msgstr "IDPagamento"
+msgstr "IDPagto"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.business.Tables.payments.Fields.customerID.Name
 msgid  "CustomerID"
@@ -3085,7 +3085,7 @@ msgstr "DataNascimento"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.private.Tables.addresses.Fields.sendcard.Name
 msgid  "SendCard"
-msgstr "EnvCart"
+msgstr "EnviarCartao"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.private.Tables.addresses.Fields.sendcard.ShortName
 msgid  "SendCard"
@@ -3573,7 +3573,7 @@ msgstr "DataTomada"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.private.Tables.photographs.Fields.timetaken.Name
 msgid  "TimeTaken"
-msgstr "HoraTomad"
+msgstr "HoraTomada"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.private.Tables.photographs.Fields.timetaken.ShortName
 msgid  "TimeTaken"
@@ -8953,7 +8953,7 @@ msgstr "Descida"
 
 #: registry/data/org/openoffice/Office/UI/Effects.xcu#Effects.UserInterface.Effects.ooo-entrance-sling.Label
 msgid  "Sling"
-msgstr "Arremessar"
+msgstr "Laço"
 
 #: registry/data/org/openoffice/Office/UI/Effects.xcu#Effects.UserInterface.Effects.ooo-entrance-spin-in.Label
 msgid  "Spin In"
@@ -12993,7 +12993,7 @@ msgstr "Ativar/Desativar extrusão"
 
 #: registry/data/org/openoffice/Office/UI/GenericCommands.xcu#GenericCommands.UserInterface.Commands..uno:FileControl.Label
 msgid  "File Selection"
-msgstr "Seleção de arquivos"
+msgstr "Seleção de arquivo"
 
 #: registry/data/org/openoffice/Office/UI/GenericCommands.xcu#GenericCommands.UserInterface.Commands..uno:FileDocument.Label
 msgid  "File Document"

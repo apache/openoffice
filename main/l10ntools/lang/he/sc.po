@@ -185,7 +185,7 @@ msgstr "אזור בחירה"
 
 #: source/ui/dbgui/pivot.src#RID_SCDLG_PIVOT_LAYOUT.RB_INAREA.ImageButton.QuickHelpText
 msgid  "Shrink"
-msgstr "Shrink"
+msgstr "כיווץ"
 
 #: source/ui/dbgui/pivot.src#RID_SCDLG_PIVOT_LAYOUT.FT_OUTAREA.FixedText.Text
 msgid  "Results to"
@@ -501,7 +501,7 @@ msgstr "קבץ לפי"
 
 #: source/ui/dbgui/dpgroupdlg.src#RID_SCDLG_DPNUMGROUP.HelpButton.Text
 msgid  "Grouping"
-msgstr "קיבוץ"
+msgstr "קבוצות"
 
 #: source/ui/dbgui/dpgroupdlg.src#RID_SCDLG_DPDATEGROUP.FL_START.FixedLine.Text
 msgid  "Start"
@@ -5339,20 +5339,24 @@ msgid  "Value"
 msgstr "ערך"
 
 #: source/ui/src/filter.src#RID_SCDLG_FILTER.LB_OP1.Default.StringList.item
+#, fuzzy
 msgid  "AND"
-msgstr "AND"
+msgstr "ו"
 
 #: source/ui/src/filter.src#RID_SCDLG_FILTER.LB_OP1.Default.StringList.item
+#, fuzzy
 msgid  "OR"
-msgstr "OR"
+msgstr "או"
 
 #: source/ui/src/filter.src#RID_SCDLG_FILTER.LB_OP2.Default.StringList.item
+#, fuzzy
 msgid  "AND"
-msgstr "AND"
+msgstr "ו"
 
 #: source/ui/src/filter.src#RID_SCDLG_FILTER.LB_OP2.Default.StringList.item
+#, fuzzy
 msgid  "OR"
-msgstr "OR"
+msgstr "או"
 
 #: source/ui/src/filter.src#RID_SCDLG_FILTER.LB_OP3.Default.StringList.item
 #, fuzzy
@@ -5405,20 +5409,24 @@ msgid  "<>"
 msgstr "<>"
 
 #: source/ui/src/filter.src#RID_SCDLG_FILTER.LB_COND1.Default.stringlist.item
+#, fuzzy
 msgid  "Largest"
-msgstr "הכי גדול"
+msgstr "הגדול ביותר"
 
 #: source/ui/src/filter.src#RID_SCDLG_FILTER.LB_COND1.Default.stringlist.item
+#, fuzzy
 msgid  "Smallest"
-msgstr "הכי קטן"
+msgstr "הקטן ביותר"
 
 #: source/ui/src/filter.src#RID_SCDLG_FILTER.LB_COND1.Default.stringlist.item
+#, fuzzy
 msgid  "Largest %"
-msgstr "הכי גדול %‏"
+msgstr "הגדול ביותר %‏"
 
 #: source/ui/src/filter.src#RID_SCDLG_FILTER.LB_COND1.Default.stringlist.item
+#, fuzzy
 msgid  "Smallest %"
-msgstr "הכי קטן %‏"
+msgstr "הקטן ביותר %‏"
 
 #: source/ui/src/filter.src#RID_SCDLG_FILTER.LB_COND1.Default.stringlist.item
 #, fuzzy
@@ -5496,8 +5504,9 @@ msgid  "Largest %"
 msgstr "הגדול ביותר %‏"
 
 #: source/ui/src/filter.src#RID_SCDLG_FILTER.LB_COND2.Default.stringlist.item
+#, fuzzy
 msgid  "Smallest %"
-msgstr "הקטן ביותרן %‏"
+msgstr "הקטן ביותר %‏"
 
 #: source/ui/src/filter.src#RID_SCDLG_FILTER.LB_COND2.Default.stringlist.item
 #, fuzzy
@@ -6477,7 +6486,7 @@ msgstr "מחזירה את היום של החודש (1-31) של התאריך הנ
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_GET_DAY.2.String.Text
 #, fuzzy
 msgid  "Number"
-msgstr "number"
+msgstr "מספר"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_GET_DAY.3.String.Text
 #, fuzzy
@@ -8414,7 +8423,7 @@ msgstr "מחזירה את השורש של מספר נתון.‏"
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_SQRT.2.String.Text
 #, fuzzy
 msgid  "number"
-msgstr "number"
+msgstr "מספר"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_SQRT.3.String.Text
 #, fuzzy
@@ -8649,7 +8658,7 @@ msgstr "מחזירה את סינוס של מספר נתון.‏"
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_SIN.2.String.Text
 #, fuzzy
 msgid  "number"
-msgstr "מספר"
+msgstr "number"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_SIN.3.String.Text
 #, fuzzy
@@ -8679,7 +8688,7 @@ msgstr "מחזירה את הטאנג'נט של מספר נתון.‏"
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_TAN.2.String.Text
 #, fuzzy
 msgid  "number"
-msgstr "מספר"
+msgstr "number"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_TAN.3.String.Text
 #, fuzzy
@@ -8709,7 +8718,7 @@ msgstr "מחזירה את הסינוס ההיפרבולי של מספר נתון
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_SIN_HYP.2.String.Text
 #, fuzzy
 msgid  "number"
-msgstr "מספר"
+msgstr "number"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_SIN_HYP.3.String.Text
 #, fuzzy
@@ -8739,7 +8748,7 @@ msgstr "מחזירה את הטאנג'נט ההיפרבולי של מספר נת�
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_TAN_HYP.2.String.Text
 #, fuzzy
 msgid  "number"
-msgstr "מספר"
+msgstr "number"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_TAN_HYP.3.String.Text
 #, fuzzy
@@ -12490,7 +12499,7 @@ msgstr "מחפשת מחזורת טקסט בתוך מחרוזת אחרת‫ (הב
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_FIND.2.String.Text
 #, fuzzy
 msgid  "find_text"
-msgstr "find_text"
+msgstr "מצא_טקסט"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_FIND.3.String.Text
 #, fuzzy

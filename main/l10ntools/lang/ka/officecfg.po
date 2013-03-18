@@ -363,18 +363,19 @@ msgid  "Categories"
 msgstr "კატეგორიები"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.business.Tables.categories.Fields.categoryID.Name
+#, fuzzy
 msgid  "CategoryID"
-msgstr "ProductID"
+msgstr "CategoryID"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.business.Tables.categories.Fields.categoryID.ShortName
 #, fuzzy
 msgid  "CategoryID"
-msgstr "DateUpdated"
+msgstr "CategoryID"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.business.Tables.categories.Fields.categoryname.Name
 #, fuzzy
 msgid  "CategoryName"
-msgstr "CategoryID"
+msgstr "კატეგორიის სახლეი"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.business.Tables.categories.Fields.categoryname.ShortName
 #, fuzzy
@@ -644,12 +645,12 @@ msgstr "EmailAddr"
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.business.Tables.suppliers.Fields.notes.Name
 #, fuzzy
 msgid  "Notes"
-msgstr "შენიშვნები "
+msgstr "შენიშვნები"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.business.Tables.suppliers.Fields.notes.ShortName
 #, fuzzy
 msgid  "Notes"
-msgstr "შენიშვნები "
+msgstr "შენიშვნები"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.business.Tables.mailinglist.Name
 #, fuzzy
@@ -839,12 +840,12 @@ msgstr "დაბადების თარიღი"
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.business.Tables.mailinglist.Fields.nationality.Name
 #, fuzzy
 msgid  "Nationality"
-msgstr "ეროვნულობა"
+msgstr "ეროვნება"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.business.Tables.mailinglist.Fields.nationality.ShortName
 #, fuzzy
 msgid  "Nationality"
-msgstr "ეროვნება"
+msgstr "ეროვნულობა"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.business.Tables.mailinglist.Fields.dateupdated.Name
 #, fuzzy
@@ -1344,7 +1345,7 @@ msgstr "თანამშრომლები"
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.business.Tables.employees.Fields.employeeID.Name
 #, fuzzy
 msgid  "EmployeeID"
-msgstr "EndDate"
+msgstr "EmployeeID"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.business.Tables.employees.Fields.employeeID.ShortName
 #, fuzzy
@@ -1549,7 +1550,7 @@ msgstr "DepartmentID"
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.business.Tables.employees.Fields.departmentID.ShortName
 #, fuzzy
 msgid  "DeprtmntID"
-msgstr "DeprtmntID"
+msgstr "DepartmentID"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.business.Tables.employees.Fields.salary.Name
 #, fuzzy
@@ -2164,7 +2165,7 @@ msgstr "EmployeeID"
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.business.Tables.invoices.Fields.deliveryID.Name
 #, fuzzy
 msgid  "DeliveryID"
-msgstr "DeliveryID"
+msgstr "EmployeeID"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.business.Tables.invoices.Fields.deliveryID.ShortName
 #, fuzzy
@@ -4034,7 +4035,7 @@ msgstr "DatePurchased"
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.private.Tables.householdinventory.Fields.datepurchased.ShortName
 #, fuzzy
 msgid  "DatePurch"
-msgstr "DatePurch "
+msgstr "DatePurch"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.private.Tables.householdinventory.Fields.placepurchased.Name
 #, fuzzy
@@ -4619,7 +4620,7 @@ msgstr "DevelopdBy"
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.private.Tables.miniaturefilms.Fields.camera.Name
 #, fuzzy
 msgid  "Camera"
-msgstr "შენიშვნები"
+msgstr "კამერა"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.private.Tables.miniaturefilms.Fields.camera.ShortName
 #, fuzzy
@@ -4704,12 +4705,12 @@ msgstr "პროდიუსერი"
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.private.Tables.dvdcollection.Fields.releaseyear.Name
 #, fuzzy
 msgid  "ReleaseYear"
-msgstr "ReleaseYear"
+msgstr "გამოშვების წელი"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.private.Tables.dvdcollection.Fields.releaseyear.ShortName
 #, fuzzy
 msgid  "ReleasYear"
-msgstr "ReleasYear"
+msgstr "გამოშვების წელი"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.private.Tables.dvdcollection.Fields.rating.Name
 #, fuzzy
@@ -5169,7 +5170,7 @@ msgstr "დაბადების თარიღი"
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.private.Tables.authors.Fields.birthplace.Name
 #, fuzzy
 msgid  "Birthplace"
-msgstr "დაბადების ადგილი"
+msgstr "დაბადების ადგილი "
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.private.Tables.authors.Fields.birthplace.ShortName
 #, fuzzy
@@ -8418,7 +8419,7 @@ msgstr "ერთი დონით ჩამოქვეითება ქვ
 #: registry/data/org/openoffice/Office/UI/WriterCommands.xcu#WriterCommands.UserInterface.Commands..uno:DelLine.Label
 #, fuzzy
 msgid  "Delete Row"
-msgstr "სტრიქონის წაშლა"
+msgstr "სტრიქონის ჩასმა"
 
 #: registry/data/org/openoffice/Office/UI/WriterCommands.xcu#WriterCommands.UserInterface.Commands..uno:DelToEndOfLine.Label
 #, fuzzy
@@ -10694,7 +10695,7 @@ msgstr "გაძლიერება"
 #: registry/data/org/openoffice/Office/UI/Effects.xcu#Effects.UserInterface.Effects.ooo-entrance-flash-once.Label
 #, fuzzy
 msgid  "Flash Once"
-msgstr "ერტხელ ციმციმი"
+msgstr "ერთმაგი ციმციმი"
 
 #: registry/data/org/openoffice/Office/UI/Effects.xcu#Effects.UserInterface.Effects.ooo-entrance-peek-in.Label
 msgid  "Peek In"
@@ -10708,7 +10709,7 @@ msgstr "პლიუსი"
 #: registry/data/org/openoffice/Office/UI/Effects.xcu#Effects.UserInterface.Effects.ooo-entrance-random-bars.Label
 #, fuzzy
 msgid  "Random Bars"
-msgstr "შემთხვევითი ზოლები"
+msgstr "შემთხვევითი ზოლი"
 
 #: registry/data/org/openoffice/Office/UI/Effects.xcu#Effects.UserInterface.Effects.ooo-entrance-spiral-in.Label
 msgid  "Spiral In"
@@ -10727,7 +10728,7 @@ msgstr "წელვადი"
 #: registry/data/org/openoffice/Office/UI/Effects.xcu#Effects.UserInterface.Effects.ooo-entrance-diagonal-squares.Label
 #, fuzzy
 msgid  "Diagonal Squares"
-msgstr "დიაგონალური უჯრედები"
+msgstr "ჭადრაკული"
 
 #: registry/data/org/openoffice/Office/UI/Effects.xcu#Effects.UserInterface.Effects.ooo-entrance-swivel.Label
 #, fuzzy
@@ -10757,7 +10758,7 @@ msgstr "გადიდება"
 #: registry/data/org/openoffice/Office/UI/Effects.xcu#Effects.UserInterface.Effects.ooo-entrance-random.Label
 #, fuzzy
 msgid  "Random Effects"
-msgstr "შემთხვევითი ეფექტები"
+msgstr "შემთხვევითი ეფექტი"
 
 #: registry/data/org/openoffice/Office/UI/Effects.xcu#Effects.UserInterface.Effects.ooo-entrance-boomerang.Label
 #, fuzzy
@@ -10767,7 +10768,7 @@ msgstr "ბუმერანგი"
 #: registry/data/org/openoffice/Office/UI/Effects.xcu#Effects.UserInterface.Effects.ooo-entrance-bounce.Label
 #, fuzzy
 msgid  "Bounce"
-msgstr "არეკვლა"
+msgstr "რიკოშეტი"
 
 #: registry/data/org/openoffice/Office/UI/Effects.xcu#Effects.UserInterface.Effects.ooo-entrance-colored-lettering.Label
 #, fuzzy
@@ -10777,7 +10778,7 @@ msgstr "ფერადი ასოებით"
 #: registry/data/org/openoffice/Office/UI/Effects.xcu#Effects.UserInterface.Effects.ooo-entrance-movie-credits.Label
 #, fuzzy
 msgid  "Movie Credits"
-msgstr "ფილმის ავტორები"
+msgstr "ფილმის შემქმნელები"
 
 #: registry/data/org/openoffice/Office/UI/Effects.xcu#Effects.UserInterface.Effects.ooo-entrance-ease-in.Label
 msgid  "Ease In"
@@ -10820,7 +10821,7 @@ msgstr "ნაკადი"
 #: registry/data/org/openoffice/Office/UI/Effects.xcu#Effects.UserInterface.Effects.ooo-entrance-unfold.Label
 #, fuzzy
 msgid  "Unfold"
-msgstr "გაშლა"
+msgstr "გაშლადი"
 
 #: registry/data/org/openoffice/Office/UI/Effects.xcu#Effects.UserInterface.Effects.ooo-entrance-whip.Label
 #, fuzzy
@@ -10830,12 +10831,12 @@ msgstr "წკეპლა"
 #: registry/data/org/openoffice/Office/UI/Effects.xcu#Effects.UserInterface.Effects.ooo-entrance-ascend.Label
 #, fuzzy
 msgid  "Ascend"
-msgstr "ამაღლება"
+msgstr "აღმავლა"
 
 #: registry/data/org/openoffice/Office/UI/Effects.xcu#Effects.UserInterface.Effects.ooo-entrance-center-revolve.Label
 #, fuzzy
 msgid  "Center Revolve"
-msgstr "ცენტრალური ტრიალი"
+msgstr "ცენტრზე ტრიალი"
 
 #: registry/data/org/openoffice/Office/UI/Effects.xcu#Effects.UserInterface.Effects.ooo-entrance-fade-in-and-swivel.Label
 #, fuzzy
@@ -10845,12 +10846,12 @@ msgstr "თანდათანობითი გამოჩენა და 
 #: registry/data/org/openoffice/Office/UI/Effects.xcu#Effects.UserInterface.Effects.ooo-entrance-descend.Label
 #, fuzzy
 msgid  "Descend"
-msgstr "დადაბლება"
+msgstr "დაღმავლა"
 
 #: registry/data/org/openoffice/Office/UI/Effects.xcu#Effects.UserInterface.Effects.ooo-entrance-sling.Label
 #, fuzzy
 msgid  "Sling"
-msgstr "გადაგდება"
+msgstr "გადმოგდება"
 
 #: registry/data/org/openoffice/Office/UI/Effects.xcu#Effects.UserInterface.Effects.ooo-entrance-spin-in.Label
 #, fuzzy
@@ -11490,7 +11491,7 @@ msgstr "დიაგონალურად მაღლა მარჯვნ�
 #: registry/data/org/openoffice/Office/UI/Effects.xcu#Effects.UserInterface.Effects.ooo-motionpath-down.Label
 #, fuzzy
 msgid  "Down"
-msgstr "ქვევით"
+msgstr "დაბლა"
 
 #: registry/data/org/openoffice/Office/UI/Effects.xcu#Effects.UserInterface.Effects.ooo-motionpath-funnel.Label
 #, fuzzy
@@ -11530,7 +11531,7 @@ msgstr "ჩართვა მარჯვნივ"
 #: registry/data/org/openoffice/Office/UI/Effects.xcu#Effects.UserInterface.Effects.ooo-motionpath-up.Label
 #, fuzzy
 msgid  "Up"
-msgstr "ზევით"
+msgstr "ზემოთ"
 
 #: registry/data/org/openoffice/Office/UI/Effects.xcu#Effects.UserInterface.Effects.ooo-motionpath-wave.Label
 #, fuzzy
@@ -11660,7 +11661,7 @@ msgstr "დახვეწილი"
 #: registry/data/org/openoffice/Office/UI/Effects.xcu#Effects.UserInterface.Properties.linesandcurves.Label
 #, fuzzy
 msgid  "Lines and Curves"
-msgstr "ხაზები და მრუდეები"
+msgstr "ხაზები და მრუდები"
 
 #: registry/data/org/openoffice/Office/UI/Effects.xcu#Effects.UserInterface.Properties.vertical.Label
 #, fuzzy
@@ -14406,7 +14407,7 @@ msgstr ""
 #: registry/data/org/openoffice/Office/UI/GenericCommands.xcu#GenericCommands.UserInterface.Commands..uno:AddDateField.Label
 #, fuzzy
 msgid  "Date Field"
-msgstr "თარიღის ველი"
+msgstr "მონაცემთა ველი"
 
 #: registry/data/org/openoffice/Office/UI/GenericCommands.xcu#GenericCommands.UserInterface.Commands..uno:AddDirect.Label
 msgid  "New"
@@ -14438,7 +14439,7 @@ msgstr ""
 #: registry/data/org/openoffice/Office/UI/GenericCommands.xcu#GenericCommands.UserInterface.Commands..uno:AlignCenter.Label
 #, fuzzy
 msgid  "Centered"
-msgstr "ცენტრში"
+msgstr "ცენტრირება"
 
 #: registry/data/org/openoffice/Office/UI/GenericCommands.xcu#GenericCommands.UserInterface.Commands..uno:AlignHorizontalCenter.Label
 msgid  "Align Center Horizontally"
@@ -14695,7 +14696,7 @@ msgstr "მაკროს შეწყვეტა"
 #: registry/data/org/openoffice/Office/UI/GenericCommands.xcu#GenericCommands.UserInterface.Commands..uno:BasicIDEAppear.Label
 #, fuzzy
 msgid  "Edit Macros"
-msgstr "მაკროს რედაქტირება"
+msgstr "მაკროების რედაქტირება"
 
 #: registry/data/org/openoffice/Office/UI/GenericCommands.xcu#GenericCommands.UserInterface.Commands..uno:BasicShapes.Label
 #, fuzzy
@@ -14720,7 +14721,7 @@ msgstr "წრე"
 #: registry/data/org/openoffice/Office/UI/GenericCommands.xcu#GenericCommands.UserInterface.Commands..uno:BasicShapes.circle-pie.Label
 #, fuzzy
 msgid  "Circle Pie"
-msgstr "წრიული დიგრამა"
+msgstr "წრიული დიაგრამა"
 
 #: registry/data/org/openoffice/Office/UI/GenericCommands.xcu#GenericCommands.UserInterface.Commands..uno:BasicShapes.cross.Label
 #, fuzzy
@@ -14785,7 +14786,7 @@ msgstr "კვადრატი"
 #: registry/data/org/openoffice/Office/UI/GenericCommands.xcu#GenericCommands.UserInterface.Commands..uno:BasicShapes.rectangle.Label
 #, fuzzy
 msgid  "Rectangle"
-msgstr "ოთკუთხედი"
+msgstr "მართლკუთხედი"
 
 #: registry/data/org/openoffice/Office/UI/GenericCommands.xcu#GenericCommands.UserInterface.Commands..uno:BasicShapes.right-triangle.Label
 #, fuzzy
@@ -14805,7 +14806,7 @@ msgstr "კვადრატი, მომრგვალებული"
 #: registry/data/org/openoffice/Office/UI/GenericCommands.xcu#GenericCommands.UserInterface.Commands..uno:BasicShapes.round-rectangle.Label
 #, fuzzy
 msgid  "Rectangle, Rounded"
-msgstr "ოთკუთხედი, მომრგვალებული"
+msgstr "მართლკუთხედი, მომრგვალებული"
 
 #: registry/data/org/openoffice/Office/UI/GenericCommands.xcu#GenericCommands.UserInterface.Commands..uno:BasicShapes.trapezoid.Label
 #, fuzzy
@@ -14921,7 +14922,7 @@ msgstr "მიმთითებლები"
 #: registry/data/org/openoffice/Office/UI/GenericCommands.xcu#GenericCommands.UserInterface.Commands..uno:CalloutShapes.cloud-callout.Label
 #, fuzzy
 msgid  "Cloud"
-msgstr "ღუბელი"
+msgstr "ღრუბელი"
 
 #: registry/data/org/openoffice/Office/UI/GenericCommands.xcu#GenericCommands.UserInterface.Commands..uno:CalloutShapes.line-callout-1.Label
 #, fuzzy
@@ -15322,7 +15323,7 @@ msgstr ""
 #: registry/data/org/openoffice/Office/UI/GenericCommands.xcu#GenericCommands.UserInterface.Commands..uno:CurrencyField.Label
 #, fuzzy
 msgid  "Currency Field"
-msgstr "ვალუტის ველი"
+msgstr "ველუტის ველი"
 
 #: registry/data/org/openoffice/Office/UI/GenericCommands.xcu#GenericCommands.UserInterface.Commands..uno:CurrentDate.Label
 #, fuzzy
@@ -16212,7 +16213,7 @@ msgstr "მწვანე"
 #: registry/data/org/openoffice/Office/UI/GenericCommands.xcu#GenericCommands.UserInterface.Commands..uno:GrafInvert.Label
 #, fuzzy
 msgid  "Invert"
-msgstr "ინვერსია"
+msgstr "გადატრიალება"
 
 #: registry/data/org/openoffice/Office/UI/GenericCommands.xcu#GenericCommands.UserInterface.Commands..uno:GrafLuminance.Label
 #, fuzzy
@@ -16522,7 +16523,7 @@ msgstr "სათაურების ჩასმა"
 #: registry/data/org/openoffice/Office/UI/GenericCommands.xcu#GenericCommands.UserInterface.Commands..uno:InsertListbox.Label
 #, fuzzy
 msgid  "List Box"
-msgstr "სიის სარკმელი"
+msgstr "სიის ველი"
 
 #: registry/data/org/openoffice/Office/UI/GenericCommands.xcu#GenericCommands.UserInterface.Commands..uno:InsertMath.Label
 msgid  "Formula..."
@@ -16565,7 +16566,7 @@ msgstr ""
 #: registry/data/org/openoffice/Office/UI/GenericCommands.xcu#GenericCommands.UserInterface.Commands..uno:InsertPatternField.Label
 #, fuzzy
 msgid  "Pattern Field"
-msgstr "ნიმუშის ველი"
+msgstr "ნუმუშის ველი"
 
 #: registry/data/org/openoffice/Office/UI/GenericCommands.xcu#GenericCommands.UserInterface.Commands..uno:InsertPlugin.Label
 msgid  "Plug-in..."
@@ -17163,7 +17164,7 @@ msgstr ""
 #: registry/data/org/openoffice/Office/UI/GenericCommands.xcu#GenericCommands.UserInterface.Commands..uno:RadioButton.Label
 #, fuzzy
 msgid  "Option Button"
-msgstr "პარამეტრების ღილაკი"
+msgstr "პარამტრების ღილაკი"
 
 #: registry/data/org/openoffice/Office/UI/GenericCommands.xcu#GenericCommands.UserInterface.Commands..uno:Radiobutton.Label
 #, fuzzy
@@ -17577,7 +17578,7 @@ msgstr ""
 #: registry/data/org/openoffice/Office/UI/GenericCommands.xcu#GenericCommands.UserInterface.Commands..uno:SpinButton.Label
 #, fuzzy
 msgid  "Spin Button"
-msgstr "ბიჯური რეგულატორის ღილაკი"
+msgstr "ბიჯური რეგულატორი"
 
 #: registry/data/org/openoffice/Office/UI/GenericCommands.xcu#GenericCommands.UserInterface.Commands..uno:Spinbutton.Label
 #, fuzzy
@@ -18000,7 +18001,7 @@ msgstr ""
 #: registry/data/org/openoffice/Office/UI/GenericCommands.xcu#GenericCommands.UserInterface.Commands..uno:Undo.Label
 #, fuzzy
 msgid  "Can't Undo"
-msgstr "დაბრუნება შეუძლებელია"
+msgstr "გაუქმება შეუძლებელია"
 
 #: registry/data/org/openoffice/Office/UI/GenericCommands.xcu#GenericCommands.UserInterface.Commands..uno:UndoAction.Label
 #, fuzzy

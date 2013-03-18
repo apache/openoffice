@@ -42,7 +42,7 @@ msgstr "Заједница корисника пакета OpenOffice.org"
 #: inc_openoffice/windows/msi_languages/Property.ulf#OOO_ARPHELPLINKTEMPLATE
 #, fuzzy
 msgid  "http://www.openoffice.org"
-msgstr "http://sr.openoffice.org"
+msgstr "http://sr.openoffice.org/podrska.html"
 
 #: inc_openoffice/windows/msi_languages/Property.ulf#OOO_ARPHELPTELEPHONETEMPLATE
 #, fuzzy
@@ -1115,8 +1115,9 @@ msgid  "Removing IIS Virtual Roots..."
 msgstr "Уклањам IIS виртуелна места..."
 
 #: inc_openoffice/windows/msi_languages/ActionTe.ulf#OOO_ACTIONTEXT_10
+#, fuzzy
 msgid  "Searching for qualifying products"
-msgstr "Тражим одговарајуће инсталације"
+msgstr "Тражим одговарајуће производе"
 
 #: inc_openoffice/windows/msi_languages/ActionTe.ulf#OOO_ACTIONTEXT_11
 #, fuzzy
@@ -1414,8 +1415,9 @@ msgid  "Updating environment strings"
 msgstr "Освежавам променљиве окружења"
 
 #: inc_openoffice/windows/msi_languages/ActionTe.ulf#OOO_ACTIONTEXT_70
+#, fuzzy
 msgid  "Name: [1], Value: [2], Action [3]"
-msgstr "Име: [1], вредност: [2], акција: [3]"
+msgstr "Име: [1], Вредност: [2], Акција: [3]"
 
 #: inc_openoffice/windows/msi_languages/ActionTe.ulf#OOO_ACTIONTEXT_71
 #, fuzzy
@@ -1453,8 +1455,9 @@ msgid  "Removing INI file entries"
 msgstr "Уклањам уносе у иницијалне датотеке"
 
 #: inc_openoffice/windows/msi_languages/ActionTe.ulf#OOO_ACTIONTEXT_78
+#, fuzzy
 msgid  "File: [1],  Section: [2],  Key: [3], Value: [4]"
-msgstr "Датотека: [1], одељак: [2], кључ: [3], вредност: [4]"
+msgstr "Датотека: [1], Одељак: [2], Кључ: [3], Вредност: [4]"
 
 #: inc_openoffice/windows/msi_languages/ActionTe.ulf#OOO_ACTIONTEXT_79
 #, fuzzy
@@ -1866,8 +1869,9 @@ msgid  "{&MSSansBold8}Network Location"
 msgstr "{&MSSansBold8}Мрежно место"
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_22
+#, fuzzy
 msgid  "&Install"
-msgstr "&Инсталирај"
+msgstr "&Инсталација"
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_23
 #, fuzzy
@@ -2175,8 +2179,9 @@ msgid  "The disk space required for the installation of the selected features."
 msgstr "Неопходан простор на диску за инсталацију изабраних делова."
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_97
+#, fuzzy
 msgid  "The highlighted volumes do not have enough disk space available for the currently selected features. You can remove files from the highlighted volumes, choose to install less features onto local drives, or select different destination drives."
-msgstr "Означена места немају довољно простора на диску за тренутно изабране делове. Можете уклонити датотеке из означених места, изабрати мање делова за инсталацију на локални диск или изабрати друге одредишне дискове."
+msgstr "Означена места немају довољно слободног простора за тренутно изабране делове. Можете уклонити датотеке из означених места, изабрати мање делова за инсталацију на локални диск или изабрати друге одредишне дискове."
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_98
 #, fuzzy
@@ -2533,12 +2538,14 @@ msgid  "Click Finish to exit the wizard."
 msgstr "Кликом на „Заврши“ напуштате помоћника."
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_188
+#, fuzzy
 msgid  "You can either keep any existing installed elements on your system to continue this installation at a later time or you can restore your system to its original state prior to the installation."
-msgstr "Можете сачувати постојеће елементе који су инсталирани на систему да бисте ово инсталирање наставили касније или можете повратити систем у стање у коме је био пре инсталирања."
+msgstr "Можете сачувати постојеће инсталиране елементе на систему да бисте наставили ову инсталацију касније или можете повратити систем у стање у коме је био пре инсталације."
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_189
+#, fuzzy
 msgid  "Click Restore or Continue Later to exit the wizard."
-msgstr "Кликом на „Поврати“ или „Настави касније“ напуштате помоћника."
+msgstr "Кликом на „Поврати“ или „Настави касније“ напустићете помоћника."
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_190
 #, fuzzy

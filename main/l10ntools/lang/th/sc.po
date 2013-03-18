@@ -560,12 +560,12 @@ msgstr "เ~พิ่ม"
 #: source/ui/dbgui/dpgroupdlg.src#RID_SCDLG_DPNUMGROUP.FL_START.FixedLine.Text
 #, fuzzy
 msgid  "Start"
-msgstr "เริ่มต้น"
+msgstr "Start"
 
 #: source/ui/dbgui/dpgroupdlg.src#RID_SCDLG_DPNUMGROUP.RB_AUTOSTART.RadioButton.Text
 #, fuzzy
 msgid  "~Automatically"
-msgstr "โดย~อัตโนมัติ"
+msgstr "โ~ดยอัตโนมัติ"
 
 #: source/ui/dbgui/dpgroupdlg.src#RID_SCDLG_DPNUMGROUP.RB_MANSTART.RadioButton.Text
 #, fuzzy
@@ -660,7 +660,7 @@ msgstr "ป้อนตัวช่วย"
 #: source/ui/dbgui/validate.src#TAB_DLG_VALIDATION.1.TP_VALIDATION_ERROR.PageItem.Text
 #, fuzzy
 msgid  "Error Alert"
-msgstr "เตือนข้อผิดพลาด"
+msgstr "คำเตือนข้อผิดพลาด"
 
 #: source/ui/dbgui/validate.src#TAB_DLG_VALIDATION.PageItem.Text
 #, fuzzy
@@ -1014,7 +1014,7 @@ msgstr "- รายการถัดไป -"
 #: source/ui/dbgui/pvfundlg.src#RID_SCDLG_DPDATAFIELD.MoreButton.Text
 #, fuzzy
 msgid  "Data Field"
-msgstr "เขตข้อมูล"
+msgstr "เขตข้อมูลของข้อมูล"
 
 #: source/ui/dbgui/pvfundlg.src#RID_SCDLG_PIVOTSUBT.ModalDialog.Text
 #, fuzzy
@@ -3665,7 +3665,7 @@ msgstr "เรียงลำดับ"
 #: source/ui/src/globstr.src#RID_GLOBSTR.STR_UNDO_QUERY.String.Text
 #, fuzzy
 msgid  "Filter"
-msgstr "ตัวแปลง"
+msgstr "ตัวกรอง"
 
 #: source/ui/src/globstr.src#RID_GLOBSTR.STR_UNDO_DBDATA.String.Text
 #, fuzzy
@@ -6138,7 +6138,7 @@ msgstr "Shrink"
 #: source/ui/src/filter.src#RID_SCDLG_FILTER.FT_DBAREA.FixedText.Text
 #, fuzzy
 msgid  "dummy"
-msgstr "หุ่น"
+msgstr "ดัมมี"
 
 #: source/ui/src/filter.src#RID_SCDLG_FILTER.FT_DBAREA_LABEL.FixedText.Text
 #, fuzzy
@@ -6418,7 +6418,7 @@ msgstr "ฐานข้อมูล"
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_DB_COUNT.3.String.Text
 #, fuzzy
 msgid  "The range of cells containing data."
-msgstr "ช่วงของช่องมีข้อมูลอยู่"
+msgstr "ช่วงของช่องมีข้อมูล"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_DB_COUNT.4.String.Text
 #, fuzzy
@@ -6428,17 +6428,17 @@ msgstr "เขตข้อมูลของฐานข้อมูล"
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_DB_COUNT.5.String.Text
 #, fuzzy
 msgid  "Indicates which database field (column) is to be used for the search criteria."
-msgstr "ระบุว่าไม่ใช้เขตข้อมูลของฐานข้อมูล (คอลัมน์) สำหรับเกณฑ์การค้นหา"
+msgstr "ระบุว่าไม่ใช้เขตข้อมูลของฐานข้อมูล (คอลัมน์) สำหรับเกณฑ์ในการค้นหา"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_DB_COUNT.6.String.Text
 #, fuzzy
 msgid  "Search criteria"
-msgstr "เกณฑ์การค้นหา"
+msgstr "เกณฑ์ในการค้นหา"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_DB_COUNT.7.String.Text
 #, fuzzy
 msgid  "Defines the cell range containing the search criteria."
-msgstr "กำหนดช่วงช่องมีเกณฑ์การค้นหา"
+msgstr "กำหนดช่วงของช่องมีเกณฑ์ในการค้นหา"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_DB_COUNT_2.1.String.Text
 #, fuzzy
@@ -6453,7 +6453,7 @@ msgstr "ฐานข้อมูล"
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_DB_COUNT_2.3.String.Text
 #, fuzzy
 msgid  "The range of cells containing data."
-msgstr "ช่วงของช่องมีข้อมูลอยู่"
+msgstr "ช่วงของช่องมีข้อมูล"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_DB_COUNT_2.4.String.Text
 #, fuzzy
@@ -6463,7 +6463,7 @@ msgstr "เขตข้อมูลของฐานข้อมูล"
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_DB_COUNT_2.5.String.Text
 #, fuzzy
 msgid  "Indicates which database field (column) is to be used for the search criteria."
-msgstr "ระบุว่าใช้เขตข้อมูลของฐานข้อมูล (คอลัมน์) สำหรับเกณฑ์การค้นหา"
+msgstr "ระบุว่าไม่ใช้เขตข้อมูลของฐานข้อมูล (คอลัมน์) สำหรับเกณฑ์การค้นหา"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_DB_COUNT_2.6.String.Text
 #, fuzzy
@@ -6473,7 +6473,7 @@ msgstr "เกณฑ์การค้นหา"
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_DB_COUNT_2.7.String.Text
 #, fuzzy
 msgid  "Defines the cell range containing the search criteria."
-msgstr "กำหนดช่วงของช่องมีเกณฑ์การค้นหา"
+msgstr "กำหนดช่วงช่องมีเกณฑ์การค้นหา"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_DB_AVERAGE.1.String.Text
 #, fuzzy
@@ -6498,7 +6498,7 @@ msgstr "เขตข้อมูลของฐานข้อมูล"
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_DB_AVERAGE.5.String.Text
 #, fuzzy
 msgid  "Indicates which database field (column) is to be used for the search criteria."
-msgstr "ระบุว่าใช้เขตข้อมูลของฐานข้อมูล (คอลัมน์) สำหรับเกณฑ์การค้นหา"
+msgstr "ระบุว่าไม่ใช้เขตข้อมูลของฐานข้อมูล (คอลัมน์) สำหรับเกณฑ์การค้นหา"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_DB_AVERAGE.6.String.Text
 #, fuzzy
@@ -6508,7 +6508,7 @@ msgstr "เกณฑ์การค้นหา"
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_DB_AVERAGE.7.String.Text
 #, fuzzy
 msgid  "Defines the cell range containing the search criteria."
-msgstr "กำหนดช่วงของช่องมีเกณฑ์การค้นหา"
+msgstr "กำหนดช่วงช่องมีเกณฑ์การค้นหา"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_DB_GET.1.String.Text
 #, fuzzy
@@ -6543,7 +6543,7 @@ msgstr "เกณฑ์การค้นหา"
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_DB_GET.7.String.Text
 #, fuzzy
 msgid  "Defines the cell range containing the search criteria."
-msgstr "ระบุช่วงของช่องมีเกณฑ์การค้นหา"
+msgstr "กำหนดช่วงช่องมีเกณฑ์การค้นหา"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_DB_MAX.1.String.Text
 #, fuzzy
@@ -6883,7 +6883,7 @@ msgstr "ส่งกลับวันที่ของเดือนตาม
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_GET_DAY.2.String.Text
 #, fuzzy
 msgid  "Number"
-msgstr "Number"
+msgstr "ตัวเลข"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_GET_DAY.3.String.Text
 #, fuzzy
@@ -6968,7 +6968,7 @@ msgstr "ตัวเลข"
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_GET_MONTH.3.String.Text
 #, fuzzy
 msgid  "The internal number of the date."
-msgstr "ตัวเลขภายในของวันที่"
+msgstr "จำนวนวันที่ภายใน"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_GET_ACT_TIME.1.String.Text
 #, fuzzy
@@ -7203,7 +7203,7 @@ msgstr "ชนิด"
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_BW.11.String.Text
 #, fuzzy
 msgid  "Type = 1 denotes due at the beginning of the period, = 0 at the end."
-msgstr "ชนิด = 1 แทนงวดเริ่มต้น, = 0 งวดสุดท้าย"
+msgstr "ชนิด = 1 แทนครบกำหนดงวดเริ่มต้น, = 0 งวดสุดท้าย"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_ZW.1.String.Text
 #, fuzzy
@@ -7228,7 +7228,7 @@ msgstr "NPER"
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_ZW.5.String.Text
 #, fuzzy
 msgid  "Payment period. The total number of periods in which the annuity (pension) is paid."
-msgstr "งวดการจ่ายเงิน จำนวนงวดทั้งหมดในเงินรายปี (เงินบำเหน็จ) ที่จ่าย"
+msgstr "งวดการจ่ายเงิน จำนวนงวดทั้งหมดที่จ่ายเงินรายปี (เงินบำเหน็จ) "
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_ZW.6.String.Text
 #, fuzzy
@@ -7238,7 +7238,7 @@ msgstr "PMT"
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_ZW.7.String.Text
 #, fuzzy
 msgid  "Regular payments. The constant annuity to be paid in each period."
-msgstr "การจ่ายเงินปกติ เงินรายปีคงที่ที่จ่ายในแต่ละงวด"
+msgstr "การจ่ายเงินปกติ เงินรายปีคงที่ที่จ่ายในแต่ละปี"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_ZW.8.String.Text
 #, fuzzy
@@ -7258,7 +7258,7 @@ msgstr "ชนิด"
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_ZW.11.String.Text
 #, fuzzy
 msgid  "Type = 1 denotes due at the beginning of the period, = 0 at the end."
-msgstr "ชนิด = 1 แทนครบกำหนดงวดเริ่มต้น, = 0 งวดสุดท้าย"
+msgstr "ชนิด = 1 แทนงวดเริ่มต้น, = 0 งวดสุดท้าย"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_ZZR.1.String.Text
 #, fuzzy
@@ -7303,7 +7303,7 @@ msgstr "FV"
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_ZZR.9.String.Text
 #, fuzzy
 msgid  "Future value. The value (end value) to be attained after the final payment."
-msgstr "ค่าของอนาคต ค่า(ค่าสุดท้าย) ที่ได้รับหลังจากการจ่ายเงินครั้งสุดท้าย"
+msgstr "ค่าของอนาคต ค่า (ค่าสุดท้าย) ที่ได้รับหลังจากการจ่ายเงินครั้งสุดท้าย"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_ZZR.10.String.Text
 #, fuzzy
@@ -7313,7 +7313,7 @@ msgstr "ชนิด"
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_ZZR.11.String.Text
 #, fuzzy
 msgid  "Type = 1 denotes due at the beginning of the period, = 0 at the end."
-msgstr "ชนิด = 1 หมายถึงครบกำหนดงวดเริ่มต้น, ส่วน 0 คือ งวดสุดท้าย"
+msgstr "ชนิด = 1 แทนครบกำหนดงวดเริ่มต้น, = 0 งวดสุดท้าย"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_RMZ.1.String.Text
 #, fuzzy
@@ -7338,7 +7338,7 @@ msgstr "NPER"
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_RMZ.5.String.Text
 #, fuzzy
 msgid  "Payment period. The total number of periods in which the annuity (pension) is paid."
-msgstr "งวดการจ่ายเงิน จำนวนงวดทั้งหมดในเงินรายปี (เงินบำเหน็จ) ที่จ่าย "
+msgstr "งวดการจ่ายเงิน จำนวนงวดทั้งหมดในเงินรายปี (เงินบำเหน็จ) ที่จ่าย"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_RMZ.6.String.Text
 #, fuzzy
@@ -7368,7 +7368,7 @@ msgstr "ชนิด"
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_RMZ.11.String.Text
 #, fuzzy
 msgid  "Type = 1 denotes due at the beginning of the period, = 0 at the end."
-msgstr "ชนิด = 1 หมายถึงครบกำหนดงวดเริ่มต้น, ส่วน 0  คือ งวดสุดท้าย"
+msgstr "ชนิด = 1 หมายถึงครบกำหนดงวดเริ่มต้น, ส่วน 0 คือ งวดสุดท้าย"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_ZINS.1.String.Text
 #, fuzzy
@@ -7423,7 +7423,7 @@ msgstr "ชนิด"
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_ZINS.11.String.Text
 #, fuzzy
 msgid  "Type = 1 denotes due at the beginning of the period, = 0 at the end."
-msgstr "ชนิด = 1 แทนงวดเริ่มต้น, = 0 งวดสุดท้าย"
+msgstr "ชนิด = 1 หมายถึงครบกำหนดงวดเริ่มต้น, ส่วน 0  คือ งวดสุดท้าย"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_ZINS.12.String.Text
 #, fuzzy
@@ -7498,7 +7498,7 @@ msgstr "ชนิด"
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_ZINS_Z.13.String.Text
 #, fuzzy
 msgid  "Type = 1 denotes due at the beginning of the period, = 0 at the end."
-msgstr "ชนิด = 1 หมายถึงครบกำหนดงวดเริ่มต้น, ส่วน 0 คือ งวดสุดท้าย"
+msgstr "ชนิด = 1 แทนงวดเริ่มต้น, = 0 งวดสุดท้าย"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_KAPZ.1.String.Text
 #, fuzzy
@@ -7543,7 +7543,7 @@ msgstr "PV"
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_KAPZ.9.String.Text
 #, fuzzy
 msgid  "The present value. The present value or the amount the annuity is currently worth."
-msgstr "ค่าปัจจุบัน ค่าปัจจุบันหรือจำนวนเงินรายปที่มีค่าในปัจจุบัน"
+msgstr "ค่าปัจจุบัน ค่าปัจจุบันหรือจำนวนเงินรายปีที่มีค่าในปัจจุบัน"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_KAPZ.10.String.Text
 #, fuzzy
@@ -7563,7 +7563,7 @@ msgstr "ชนิด"
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_KAPZ.13.String.Text
 #, fuzzy
 msgid  "Type = 1 denotes due at the beginning of the period, = 0 at the end."
-msgstr "ชนิด = 1 แทนครบกำหนดงวดเริ่มต้น, = 0 งวดสุดท้าย"
+msgstr "ชนิด = 1 หมายถึงครบกำหนดงวดเริ่มต้น, ส่วน 0 คือ งวดสุดท้าย"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_KUM_KAP_Z.1.String.Text
 #, fuzzy
@@ -7718,7 +7718,7 @@ msgstr "เงินชดเชย"
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_DIA.5.String.Text
 #, fuzzy
 msgid  "Salvage: The remaining value of the asset at the end of its life."
-msgstr "เงินชดเชย: ค่าของสินทรัพย์ที่ยังเหลืออยู่ ณ จุดสิ้นสุดของอายุการใช้งาน"
+msgstr "เงินชดเชย: ค่าของสินทรัพย์ที่เหลืออยู่ ณ จุดสิ้นสุดของอายุการใช้งานของมัน"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_DIA.6.String.Text
 #, fuzzy
@@ -7728,7 +7728,7 @@ msgstr "อายุการใช้งาน"
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_DIA.7.String.Text
 #, fuzzy
 msgid  "Useful life. The number of periods in the useful life of the asset."
-msgstr "อายุการใช้งานที่ใช้ประโยชน์ จำนวนช่วงในอายุที่ใช้ประโยชน์ของสินทรัพย์"
+msgstr "อายุการใช้งานที่ใช้ประโยชน์ จำนวนงวดในอายุการใช้งานที่ใช้ประโยชน์ของสินทรัพย์"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_DIA.8.String.Text
 #, fuzzy
@@ -7763,7 +7763,7 @@ msgstr "เงินชดเชย"
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_LIA.5.String.Text
 #, fuzzy
 msgid  "Salvage: The remaining value of the asset at the end of its life."
-msgstr "เงินชดเชย: ค่าที่เหลืออยู่ของสินทรัพย์ที่จุดสิ้นสุดของอายุการใช้งาน"
+msgstr "เงินชดเชย: ค่าของสินทรัพย์ที่เหลืออยู่ ณ จุดสิ้นสุดของอายุการใช้งานของมัน"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_LIA.6.String.Text
 #, fuzzy
@@ -8223,7 +8223,7 @@ msgstr "ค่า"
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_IS_REF.3.String.Text
 #, fuzzy
 msgid  "The value to be tested."
-msgstr "ค่าถูกทดสอบ"
+msgstr "ค่าที่ถูกทดสอบ"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_IS_ERR.1.String.Text
 #, fuzzy
@@ -8238,7 +8238,7 @@ msgstr "ค่า"
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_IS_ERR.3.String.Text
 #, fuzzy
 msgid  "The value to be tested."
-msgstr "ค่าถูกทดสอบ"
+msgstr "ค่าที่ถูกทดสอบ"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_IS_ERROR.1.String.Text
 #, fuzzy
@@ -8872,7 +8872,7 @@ msgstr "เลข_1"
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_KOMBIN.3.String.Text
 #, fuzzy
 msgid  "The total number of elements."
-msgstr "จำนวนองค์ประกอบทั้งหมด"
+msgstr "รวมจำนวนองค์ประกอบทั้งหมด"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_KOMBIN.4.String.Text
 #, fuzzy
@@ -8897,7 +8897,7 @@ msgstr "เลข_1"
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_KOMBIN_2.3.String.Text
 #, fuzzy
 msgid  "The total number of elements."
-msgstr "จำนวนองค์ประกอบทั้งหมด"
+msgstr "รวมจำนวนองค์ประกอบทั้งหมด"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_KOMBIN_2.4.String.Text
 #, fuzzy
@@ -9280,7 +9280,7 @@ msgstr "ตัวเลข"
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_LOG.3.String.Text
 #, fuzzy
 msgid  "A value greater than 0 for which the logarithm is to be calculated."
-msgstr "ค่ามากกว่า 0 สำหรับลอการิธึมที่ใช้ในการคำนวณ"
+msgstr "ค่ามากกว่า 0 สำหรับอัลกอริธึมที่ใช้ในการคำนวณ"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_LOG.4.String.Text
 #, fuzzy
@@ -9413,7 +9413,7 @@ msgstr "ตัวเลข"
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_INT.3.String.Text
 #, fuzzy
 msgid  "The number to be rounded down."
-msgstr "ตัวเลขที่ปัดเศษลง"
+msgstr "ตัวเลขที่ถูกปัดเศษลง"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_TRUNC.1.String.Text
 #, fuzzy
@@ -9463,7 +9463,7 @@ msgstr "นับ"
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_ROUND.5.String.Text
 #, fuzzy
 msgid  "The number of places to which a number is to be rounded."
-msgstr "จำนวนตำแหน่งที่จะปัดเศษตัวเลข"
+msgstr "จำนวนตำแหน่งที่จะปัดเศษ"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_ROUND_UP.1.String.Text
 #, fuzzy
@@ -9758,7 +9758,7 @@ msgstr "อาเรย์_x"
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_SUM_X2MY2.3.String.Text
 #, fuzzy
 msgid  "First array where the square of the arguments are totalled."
-msgstr "อาเรย์แรกที่รวมกำลังสองของอาร์กิวเม้นท์"
+msgstr "อาเรย์แรกที่รวมกำลังสองของอาร์กิวเม้นท์ทั้งหมด"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_SUM_X2MY2.4.String.Text
 #, fuzzy
@@ -9868,12 +9868,12 @@ msgstr "ข้อมูล_X"
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_RGP.5.String.Text
 #, fuzzy
 msgid  "The X data array."
-msgstr "อาเรย์ข้อมูล X"
+msgstr "อาเรย์ข้อมูล X "
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_RGP.6.String.Text
 #, fuzzy
 msgid  "Linear_type"
-msgstr "เส้นตรง_ชนิด"
+msgstr "ชนิด_เส้นตรง"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_RGP.7.String.Text
 #, fuzzy
@@ -9888,7 +9888,7 @@ msgstr "สถิติ"
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_RGP.9.String.Text
 #, fuzzy
 msgid  "If parameter = 0 then only the regression coefficient will be calculated, otherwise other values as well."
-msgstr "ถ้าพารามิเตอร์ = 0 จากนั้นให้คำนวณค่าสัมประสิทธิ์แบบถดถอยเท่านั้น, ค่าอื่นๆ ก็เหมือนกัน"
+msgstr "ถ้าพารามิเตอร์ = 0 ให้คำนวณสัมประสิทธิ์การถดถอยอย่างเดียว, ค่าอื่นๆ ก็เหมือนกัน"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_RKP.1.String.Text
 #, fuzzy
@@ -10128,7 +10128,7 @@ msgstr "ตัวเลข "
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_VAR.3.String.Text
 #, fuzzy
 msgid  "Number 1, number 2, ... are 1 to 30 numerical arguments which portray a sample of a population."
-msgstr "เลข 1, เลข 2, ... อยู่ในอาร์กิวเม้นท์แบบตัวเลข 1 ถึง 30  ที่อธิบายกลุ่มตัวอย่างของประชากร"
+msgstr "Number 1, number 2, ... are 1 to 30 numerical arguments which portray a sample of a population.เลข 1, เลข 2, ... อยู่ในอาร์กิวเม้นท์แบบตัวเลข 1 ถึง 30  ที่อธิบายกลุ่มตัวอย่างของประชากร"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_VAR_A.1.String.Text
 #, fuzzy
@@ -10278,7 +10278,7 @@ msgstr "ตัวเลข "
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_DEV_SQ.3.String.Text
 #, fuzzy
 msgid  "Number 1, number 2, ... are 1 to 30 numerical arguments which portray a sample."
-msgstr "เลข 1, เลข 2, ... อยู่ในอาร์กิวเม้นท์ที่เป็นตัวเลข 1 ถึง 30  ที่อธิบายกลุ่มตัวอย่าง"
+msgstr "เลข 1, เลข 2, ... อยู่ในอาร์กิวเม้นท์แบบตัวเลข 1 ถึง 30  ที่อธิบายกลุ่มตัวอย่าง"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_AVE_DEV.1.String.Text
 #, fuzzy
@@ -10338,7 +10338,7 @@ msgstr "ตัวเลข "
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_GEO_MEAN.3.String.Text
 #, fuzzy
 msgid  "Number 1, number 2, ... are 1 to 30 numerical arguments which portray a sample."
-msgstr "เลข 1, เลข 2, ... อยู่ในอาร์กิวเม้นท์ที่เป็นตัวเลข 1 ถึง 30  ที่อธิบายกลุ่มตัวอย่าง"
+msgstr "เลข 1, เลข 2, ... อยู่ในอาร์กิวเม้นท์แบบตัวเลข 1 ถึง 30  ที่อธิบายกลุ่มตัวอย่าง"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_HAR_MEAN.1.String.Text
 #, fuzzy
@@ -10623,7 +10623,7 @@ msgstr "ส่งกลับความน่าจะเป็นของก
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_B.2.String.Text
 #, fuzzy
 msgid  "trials"
-msgstr "การทดลอง"
+msgstr "ทดลอง"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_B.3.String.Text
 #, fuzzy
@@ -10673,7 +10673,7 @@ msgstr "ตัวเลข"
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_PHI.3.String.Text
 #, fuzzy
 msgid  "The value for which the standard normal distribution is to be calculated."
-msgstr "ค่าสำหรับคำนวณการกระจายปกติแบบมาตรฐาน"
+msgstr "ค่าสำหรับคำนวณการแจกแจงปกติมาตรฐาน"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_GAUSS.1.String.Text
 #, fuzzy
@@ -10743,7 +10743,7 @@ msgstr "การทดลอง"
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_BINOM_DIST.5.String.Text
 #, fuzzy
 msgid  "The total number of trials."
-msgstr "จำนวนการทดลองทั้งหมด"
+msgstr "จำนวนทั้งหมดของการทดลอง"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_BINOM_DIST.6.String.Text
 #, fuzzy
@@ -10753,7 +10753,7 @@ msgstr "SP"
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_BINOM_DIST.7.String.Text
 #, fuzzy
 msgid  "The success probability of a trial."
-msgstr "ความน่าจะเป็นของความสำเร็จของการทดลอง"
+msgstr "ความน่าจะเป็นในความสำเร็จของการทดลอง"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_BINOM_DIST.8.String.Text
 #, fuzzy
@@ -10896,12 +10896,12 @@ msgstr "ค่าเฉลี่ย  ค่าเฉลี่ยของกา�
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_NORM_DIST.6.String.Text
 #, fuzzy
 msgid  "STDEV"
-msgstr "ส่วนเบี่ยงเบนมาตรฐาน"
+msgstr "ส่วนเบี่ยงเบนมาตรฐาน "
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_NORM_DIST.7.String.Text
 #, fuzzy
 msgid  "Standard deviation. The standard deviation of the normal distribution."
-msgstr "ส่วนเบี่ยงเบนมาตรฐาน  ส่วนเบี่ยงเบนมาตรฐานของการกระจายปกติ"
+msgstr "ส่วนเบี่ยงเบนมาตรฐาน   ส่วนเบี่ยงเบนมาตรฐานของการกระจายปกติ"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_NORM_DIST.8.String.Text
 #, fuzzy
@@ -10940,7 +10940,7 @@ msgstr "ค่าเฉลี่ย  ค่าเฉลี่ยของกา�
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_NORM_INV.6.String.Text
 #, fuzzy
 msgid  "STDEV"
-msgstr "ส่วนเบี่ยงเบนมาตรฐาน"
+msgstr "ส่วนเบี่ยงเบนมาตรฐาน "
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_NORM_INV.7.String.Text
 #, fuzzy
@@ -12324,7 +12324,7 @@ msgstr "ค้นหาตามแนวตั้งและอ้างไป
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_V_LOOKUP.2.String.Text
 #, fuzzy
 msgid  "Search criterion"
-msgstr "เกณฑ์การค้นหา"
+msgstr "ค้นหาเกณฑ์"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_V_LOOKUP.3.String.Text
 #, fuzzy
@@ -13045,7 +13045,7 @@ msgstr "แทนที่ตัวอักษรในสายอักขร
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_REPLACE.2.String.Text
 #, fuzzy
 msgid  "Text"
-msgstr "Text"
+msgstr "ข้อความ"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_REPLACE.3.String.Text
 #, fuzzy
@@ -13310,7 +13310,7 @@ msgstr "ฐาน"
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_BASE.5.String.Text
 #, fuzzy
 msgid  "The base number for conversion must be in the range 2 - 36."
-msgstr "เลขฐานสำหรับการแปลงต้องอยู่ในช่วง 2 - 36"
+msgstr "เลขฐานสำหรับแปลงต้องอยู่ในช่วง 2 - 36"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_BASE.6.String.Text
 #, fuzzy

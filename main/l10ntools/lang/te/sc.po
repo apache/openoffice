@@ -5952,7 +5952,7 @@ msgstr "కలిగియుండుట"
 #: source/ui/src/filter.src#RID_SCDLG_FILTER.LB_COND1.Default.stringlist.item
 #, fuzzy
 msgid  "Does not contain"
-msgstr "ఇది కలిగిలేని"
+msgstr "కలిగిలేనిది"
 
 #: source/ui/src/filter.src#RID_SCDLG_FILTER.LB_COND1.Default.stringlist.item
 #, fuzzy
@@ -6032,7 +6032,7 @@ msgstr "కలిగియుండుట"
 #: source/ui/src/filter.src#RID_SCDLG_FILTER.LB_COND2.Default.stringlist.item
 #, fuzzy
 msgid  "Does not contain"
-msgstr "కలిగిలేనిది"
+msgstr "ఇది కలిగిలేని"
 
 #: source/ui/src/filter.src#RID_SCDLG_FILTER.LB_COND2.Default.stringlist.item
 #, fuzzy
@@ -10987,12 +10987,12 @@ msgstr "మాధ్యమం.Poisson distribution యొక్కమాధ్�
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_POISSON_DIST.6.String.Text
 #, fuzzy
 msgid  "Cumulative"
-msgstr "సంచిత"
+msgstr "పేరుకుపోయిన"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_POISSON_DIST.7.String.Text
 #, fuzzy
 msgid  "0 or FALSE calculates the probability density function. Any other value or TRUE or omitted calculates the cumulative distribution function."
-msgstr "0 లేదా అసత్యం సంభావ్యతా సాంద్రపు కార్యమును లెక్కిస్తుంది. ఏ యితర విలువైనా లేదా సత్యము లేదా వదిలివేసినది సంచిత పంపిణీ కార్యమును లెక్కిస్తుంది."
+msgstr "0 లేదా అసత్యం సంభావ్యతా సాంద్రపు కార్యమును లెక్కిస్తుంది. ఏ యితర విలువైనా లేదా సత్యము లేదా వదిలివేసినది పేరుకుపోయిన పంపిణీ కార్యమును లెక్కిస్తుంది."
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_NORM_DIST.1.String.Text
 #, fuzzy
@@ -11037,7 +11037,7 @@ msgstr "C"
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_NORM_DIST.9.String.Text
 #, fuzzy
 msgid  "0 or FALSE calculates the probability density function. Any other value or TRUE or omitted calculates the cumulative distribution function."
-msgstr "0 లేదా అసత్యం సంభావ్యతా సాంద్రపు కార్యమును లెక్కిస్తుంది. ఏ యితర విలువైనా లేదా సత్యము లేదా వదిలివేసినది పేరుకుపోయిన పంపిణీ కార్యమును లెక్కిస్తుంది."
+msgstr "0 లేదా అసత్యం సంభావ్యతా సాంద్రపు కార్యమును లెక్కిస్తుంది. ఏ యితర విలువైనా లేదా సత్యము లేదా వదిలివేసినది సంచిత పంపిణీ కార్యమును లెక్కిస్తుంది."
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_NORM_INV.1.String.Text
 #, fuzzy
@@ -11142,12 +11142,12 @@ msgstr "లాగ్ సాధారణ పంపిణీ యొక్క ప�
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_LOG_NORM_DIST.8.String.Text
 #, fuzzy
 msgid  "Cumulative"
-msgstr "పేరుకుపోయిన"
+msgstr "సంచిత"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_LOG_NORM_DIST.9.String.Text
 #, fuzzy
 msgid  "0 or FALSE calculates the probability density function. Any other value or TRUE or omitted calculates the cumulative distribution function."
-msgstr "0 లేదా అసత్యం సంభావ్యతా సాంద్రపు కార్యమును లెక్కిస్తుంది. ఏ యితర విలువైనా లేదా సత్యము లేదా వదిలివేసినది పేరుకుపోయిన పంపిణీ కార్యమును లెక్కిస్తుంది."
+msgstr "0 లేదా అసత్యం సంభావ్యతా సాంద్రపు కార్యమును లెక్కిస్తుంది. ఏ యితర విలువైనా లేదా సత్యము లేదా వదిలివేసినది సంచిత పంపిణీ కార్యమును లెక్కిస్తుంది."
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_LOG_INV.1.String.Text
 #, fuzzy
@@ -15709,7 +15709,7 @@ msgstr "లోతు"
 #: source/ui/src/miscdlgs.src#RID_SCDLG_COL_MAN.BTN_DEFVAL.CheckBox.Text
 #, fuzzy
 msgid  "~Default value"
-msgstr " అప్రమేయ విలువ (~D)"
+msgstr "అప్రమేయ విలువ (~D)"
 
 #: source/ui/src/miscdlgs.src#RID_SCDLG_COL_OPT.ModalDialog.Text
 #, fuzzy
@@ -15724,7 +15724,7 @@ msgstr "జతచేయి"
 #: source/ui/src/miscdlgs.src#RID_SCDLG_COL_OPT.BTN_DEFVAL.CheckBox.Text
 #, fuzzy
 msgid  "~Default value"
-msgstr " అప్రమేయ విలువ (~D)"
+msgstr "అప్రమేయ విలువ (~D)"
 
 #: source/ui/src/miscdlgs.src#RID_SCDLG_ROW_MAN.ModalDialog.Text
 #, fuzzy

@@ -37,11 +37,11 @@ msgstr "hin danda'amu"
 
 #: source/core/undo/undo.src#STR_DELETE_UNDO.String.Text
 msgid  "Delete $1"
-msgstr "Haqi $1"
+msgstr "$1 Haqi"
 
 #: source/core/undo/undo.src#STR_INSERT_UNDO.String.Text
 msgid  "Insert $1"
-msgstr "Saagi $1"
+msgstr "$1 Saagi"
 
 #: source/core/undo/undo.src#STR_OVR_UNDO.String.Text
 msgid  "Overwrite: $1"
@@ -741,7 +741,7 @@ msgstr "Kuni faayilii WinWord97 miti."
 
 #: source/ui/app/error.src#RID_SW_ERRHDL.ERR_CODE ( ERRCODE_CLASS_READ , ERR_FORMAT_FILE_ROWCOL ).String.Text
 msgid  "Format error discovered in the file in sub-document $(ARG1) at $(ARG2)(row,col)."
-msgstr "Dogoggorri dhangii faayilii galmee-xiqqaa $(ARG1) $(ARG2)(row,col) irratti argame"
+msgstr "Dogoggorri dhangii faayilii galmee-xiqqaa $(ARG1) $(ARG2)(row,col) irratti argame."
 
 #: source/ui/app/error.src#RID_SW_ERRHDL.ERR_CODE ( ERRCODE_CLASS_WRITE , ERR_SWG_WRITE_ERROR ).String.Text
 msgid  "Error writing file."
@@ -1530,7 +1530,7 @@ msgstr "Sararroo Gulaali..."
 #: source/ui/app/mn.src#MN_MOUSE_FRAME_BEGIN.MN_WRAP.MenuItem.Text
 #, fuzzy
 msgid  "~Wrap"
-msgstr "Maraa"
+msgstr "Mari"
 
 #: source/ui/app/mn.src#MN_MOUSE_FRAME_BEGIN.MN_WRAP.FN_FRAME_NOWRAP.MenuItem.Text
 #, fuzzy
@@ -1555,7 +1555,7 @@ msgstr "Keessa Mari"
 #: source/ui/app/mn.src#MN_MOUSE_FRAME_BEGIN.MN_WRAP.FN_FRAME_WRAPTHRU_TRANSP.MenuItem.Text
 #, fuzzy
 msgid  "In ~Background"
-msgstr "Keessa Duubbee"
+msgstr "Buuba Keessatti"
 
 #: source/ui/app/mn.src#MN_MOUSE_FRAME_BEGIN.MN_WRAP.FN_WRAP_ANCHOR_ONLY.MenuItem.Text
 #, fuzzy
@@ -3688,8 +3688,9 @@ msgid  "Connecting to data source..."
 msgstr "Madda deetaatti waliindhaan jira..."
 
 #: source/ui/dbui/mmaddressblockpage.src#_ST_NONE_LIST.item1.StringList.item
+#, fuzzy
 msgid  "< none >"
-msgstr "< homaa >"
+msgstr "< Homaa >"
 
 #: source/ui/dbui/mmaddressblockpage.src#DLG_MM_ADDRESSBLOCK_PAGE.FI_HEADER.FixedText.Text
 #, fuzzy
@@ -5524,8 +5525,9 @@ msgid  "Be~fore"
 msgstr "Dura"
 
 #: source/ui/dialog/regionsw.src#TP_SECTION_FTNENDNOTES.FT_FTN_SUFFIX.FixedText.Text
+#, fuzzy
 msgid  "Aft~er"
-msgstr "Booda"
+msgstr "Booddee"
 
 #: source/ui/dialog/regionsw.src#TP_SECTION_FTNENDNOTES.FL_END.FixedLine.Text
 #, fuzzy
@@ -5824,7 +5826,7 @@ msgstr "Akka Geessituutti"
 #: source/ui/docvw/docvw.src#MN_READONLY_POPUP.MN_READONLY_GRAPHICTOGALLERY.MN_READONLY_TOGALLERYCOPY.MenuItem.Text
 #, fuzzy
 msgid  "Copy"
-msgstr "Garagalchii"
+msgstr "Garagalchi"
 
 #: source/ui/docvw/docvw.src#MN_READONLY_POPUP.MN_READONLY_GRAPHICTOGALLERY.MenuItem.Text
 #, fuzzy
@@ -6609,8 +6611,9 @@ msgid  "Title/~Profession"
 msgstr "Mataduree/Kaamayaa"
 
 #: source/ui/envelp/label.src#TP_PRIVATE_DATA.FT_PHONE_MOBILE.FixedText.Text
+#, fuzzy
 msgid  "Phone/Mobile"
-msgstr "Bilbilaa/Mobaayilii"
+msgstr "Bilbilaa/Mobile"
 
 #: source/ui/envelp/label.src#TP_PRIVATE_DATA.FT_FAX.FixedText.Text
 #, fuzzy
@@ -7349,7 +7352,7 @@ msgstr "Kuusaa kamuu"
 #: source/ui/fldui/fldui.src#STR_DBSETNUMBERFLD.String.Text
 #, fuzzy
 msgid  "Record number"
-msgstr "Lakkoofsa Kuusaa"
+msgstr "Lakkoofsa kuusa"
 
 #: source/ui/fldui/fldui.src#STR_PREVPAGEFLD.String.Text
 #, fuzzy
@@ -8031,8 +8034,9 @@ msgid  "Font"
 msgstr "Bocquu"
 
 #: source/ui/fmtui/tmpdlg.src#DLG_TEMPLATE_1.1.TP_CHAR_EXT.PageItem.Text
+#, fuzzy
 msgid  "Font Effects"
-msgstr "Galteewwan Bocquu"
+msgstr "Galtee Bocquuwwanii"
 
 #: source/ui/fmtui/tmpdlg.src#DLG_TEMPLATE_1.1.TP_CHAR_POS.PageItem.Text
 #, fuzzy
@@ -8115,8 +8119,9 @@ msgid  "Background"
 msgstr "Duubbee"
 
 #: source/ui/fmtui/tmpdlg.src#DLG_TEMPLATE_2.1.TP_BORDER.PageItem.Text
+#, fuzzy
 msgid  "Borders"
-msgstr "Handaaraa"
+msgstr "Handaaraalee"
 
 #: source/ui/fmtui/tmpdlg.src#DLG_TEMPLATE_2.1.TP_CONDCOLL.PageItem.Text
 #, fuzzy
@@ -11476,7 +11481,7 @@ msgstr "Haalatoota Arfii"
 #: source/ui/misc/docfnote.src#TP_FOOTNOTEOPTION.FT_ANCHR_CHARFMT.FixedText.Text
 #, fuzzy
 msgid  "Te~xt area"
-msgstr "Bakka barruu"
+msgstr "Bal'ina barruu"
 
 #: source/ui/misc/docfnote.src#TP_FOOTNOTEOPTION.FT_TEXT_CHARFMT.FixedText.Text
 #, fuzzy
@@ -13296,7 +13301,7 @@ msgstr "Haalata \"Ijbarruu\" Qindeessi"
 #: source/ui/utlui/utlui.src#RID_SHELLRES_AUTOFMTSTRS.STR_AUTOFMTREDL_SET_TMPL_INDENT.String.Text
 #, fuzzy
 msgid  "Set \"Text body indent\" Style"
-msgstr "Haalata \"Galuumsa Ijbarruu\" Qindeessi"
+msgstr "Haalata \"Galuumsa Ijbarruu \" Qindeessi"
 
 #: source/ui/utlui/utlui.src#RID_SHELLRES_AUTOFMTSTRS.STR_AUTOFMTREDL_SET_TMPL_NEG_INDENT.String.Text
 #, fuzzy
@@ -14501,7 +14506,7 @@ msgstr "Foormulaa"
 #: source/ui/utlui/poolfmt.src#STR_POOLFRM_MARGINAL.String.Text
 #, fuzzy
 msgid  "Marginalia"
-msgstr "Maarjinaala"
+msgstr "Marjinaaliyaa"
 
 #: source/ui/utlui/poolfmt.src#STR_POOLFRM_WATERSIGN.String.Text
 #, fuzzy
@@ -14771,7 +14776,7 @@ msgstr "Dhuma tarree 3"
 #: source/ui/utlui/poolfmt.src#STR_POOLCOLL_BUL_LEVEL3.String.Text
 #, fuzzy
 msgid  "List 3"
-msgstr "Tarree 3"
+msgstr "Tarree 3 "
 
 #: source/ui/utlui/poolfmt.src#STR_POOLCOLL_BUL_LEVEL3E.String.Text
 #, fuzzy
@@ -14811,7 +14816,7 @@ msgstr "Eegala tarree 5"
 #: source/ui/utlui/poolfmt.src#STR_POOLCOLL_BUL_LEVEL5.String.Text
 #, fuzzy
 msgid  "List 5"
-msgstr "Tarree 5"
+msgstr "Tarree 5 "
 
 #: source/ui/utlui/poolfmt.src#STR_POOLCOLL_BUL_LEVEL5E.String.Text
 #, fuzzy
@@ -14876,7 +14881,7 @@ msgstr "Miiljalee"
 #: source/ui/utlui/poolfmt.src#STR_POOLCOLL_ENDNOTE.String.Text
 #, fuzzy
 msgid  "Endnote"
-msgstr "Ibsa Dabalataa"
+msgstr "Ibsa dabalataa"
 
 #: source/ui/utlui/poolfmt.src#STR_POOLCOLL_LABEL.String.Text
 #, fuzzy

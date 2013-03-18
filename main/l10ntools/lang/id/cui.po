@@ -1573,7 +1573,7 @@ msgstr "~Masukkan passwork untuk membuka"
 
 #: source/dialogs/passwdomdlg.src#RID_DLG_PASSWORD_TO_OPEN_MODIFY.FT_REENTER_PASSWD_TO_OPEN.FixedText.Text
 msgid  "Confirm password"
-msgstr "Konfirmasi Password"
+msgstr "Konfirmasi password"
 
 #: source/dialogs/passwdomdlg.src#RID_DLG_PASSWORD_TO_OPEN_MODIFY.FT_PASSWD_NOTE.FixedText.Text
 msgid  "Note: After a password has been set, the document will only open with the password. Should you lose the password, there will be no way to recover the document. Please also note that this password is case-sensitive."
@@ -5869,8 +5869,9 @@ msgid  "~Spacing"
 msgstr "~Spasi"
 
 #: source/tabpages/tabarea.src#RID_SVXPAGE_HATCH.FT_LINE_ANGLE.FixedText.Text
+#, fuzzy
 msgid  "A~ngle"
-msgstr "Sudu~t"
+msgstr "~Sudut"
 
 #: source/tabpages/tabarea.src#RID_SVXPAGE_HATCH.MTR_FLD_ANGLE.MetricField.CustomUnitText
 #, fuzzy
@@ -8931,7 +8932,7 @@ msgstr "Sudut Putar"
 #: source/tabpages/transfrm.src#RID_SVXPAGE_SLANT.TabPage.Text
 #, fuzzy
 msgid  "Slant & Corner Radius"
-msgstr "Radius & Kemiringan Sudut"
+msgstr "Kemiringan & Radius Sudut"
 
 #: source/tabpages/transfrm.src#RID_SVXPAGE_SLANT.FL_RADIUS.FixedLine.Text
 #, fuzzy
@@ -9564,8 +9565,9 @@ msgid  "Color"
 msgstr "Warna"
 
 #: source/tabpages/chardlg.src#RID_SVXPAGE_CHAR_NAME.FT_COLOR2.FixedText.Text
+#, fuzzy
 msgid  "Font ~color"
-msgstr "W~arna huruf"
+msgstr "Warna huru~f"
 
 #: source/tabpages/chardlg.src#RID_SVXPAGE_CHAR_NAME.STR_CHARNAME_NOSTYLE.String.Text
 #, fuzzy
@@ -9688,20 +9690,24 @@ msgid  "Dotted (Bold)"
 msgstr "Titik-titik (Tebal)"
 
 #: source/tabpages/chardlg.src#RID_SVXPAGE_CHAR_EFFECTS.LB_OVERLINE.CHRDLG_UNDERLINE_DASH.StringList.item
+#, fuzzy
 msgid  "Dash"
-msgstr "Garis"
+msgstr "Garis putus-putus"
 
 #: source/tabpages/chardlg.src#RID_SVXPAGE_CHAR_EFFECTS.LB_OVERLINE.CHRDLG_UNDERLINE_BOLDDASH.StringList.item
+#, fuzzy
 msgid  "Dash (Bold)"
-msgstr "Garis (Tebal)"
+msgstr "Garis-garis (Tebal)"
 
 #: source/tabpages/chardlg.src#RID_SVXPAGE_CHAR_EFFECTS.LB_OVERLINE.CHRDLG_UNDERLINE_LONGDASH.StringList.item
+#, fuzzy
 msgid  "Long Dash"
-msgstr "Garis Panjang"
+msgstr "Garis-garis Panjang"
 
 #: source/tabpages/chardlg.src#RID_SVXPAGE_CHAR_EFFECTS.LB_OVERLINE.CHRDLG_UNDERLINE_BOLDLONGDASH.StringList.item
+#, fuzzy
 msgid  "Long Dash (Bold)"
-msgstr "Garis Panjang (Tebal)"
+msgstr "Garis-garis Panjang (Tebal)"
 
 #: source/tabpages/chardlg.src#RID_SVXPAGE_CHAR_EFFECTS.LB_OVERLINE.CHRDLG_UNDERLINE_DASHDOT.StringList.item
 #, fuzzy

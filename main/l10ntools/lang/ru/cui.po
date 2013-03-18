@@ -1013,7 +1013,7 @@ msgstr "Отметить дерево"
 
 #: source/dialogs/gallery.src#RID_SVXTABDLG_GALLERY.TabDialog.Text
 msgid  "Properties of "
-msgstr "Свойства: "
+msgstr "Свойства "
 
 #: source/dialogs/gallery.src#RID_SVXTABDLG_GALLERY.1.RID_SVXTABPAGE_GALLERY_GENERAL.PageItem.Text
 msgid  "General"
@@ -1245,7 +1245,7 @@ msgstr "Фрейм"
 
 #: source/dialogs/hyperdlg.src#RID_SVXPAGE_HYPERLINK_INTERNET.FT_FORM.FixedText.Text
 msgid  "F~orm"
-msgstr "Форма"
+msgstr "Элемент"
 
 #: source/dialogs/hyperdlg.src#RID_SVXPAGE_HYPERLINK_INTERNET.LB_FORM.Default.StringList.item
 msgid  "Text"
@@ -2009,11 +2009,11 @@ msgstr "Редактирование связей"
 
 #: source/dialogs/svuidlg.src#MD_UPDATE_BASELINKS.FT_FILES.FixedText.Text
 msgid  "Source file"
-msgstr "Исходный файл:"
+msgstr "Исходный файл"
 
 #: source/dialogs/svuidlg.src#MD_UPDATE_BASELINKS.FT_LINKS.FixedText.Text
 msgid  "Element:"
-msgstr "Элемент:"
+msgstr "Элемент"
 
 #: source/dialogs/svuidlg.src#MD_UPDATE_BASELINKS.FT_TYPE.FixedText.Text
 msgid  "Type"
@@ -2025,7 +2025,7 @@ msgstr "Состояние"
 
 #: source/dialogs/svuidlg.src#MD_UPDATE_BASELINKS.1.CancelButton.Text
 msgid  "~Close"
-msgstr "~Закрыть"
+msgstr "Закрыть"
 
 #: source/dialogs/svuidlg.src#MD_UPDATE_BASELINKS.PB_UPDATE_NOW.PushButton.Text
 msgid  "~Update"
@@ -2881,7 +2881,7 @@ msgstr "Прокси HTTP~S"
 
 #: source/options/optinet2.src#RID_SVXPAGE_INET_PROXY.FT_HTTPS_PORT.FixedText.Text
 msgid  "P~ort"
-msgstr "Пор~т"
+msgstr "П~орт"
 
 #: source/options/optinet2.src#RID_SVXPAGE_INET_PROXY.FT_FTP_PROXY.FixedText.Text
 msgid  "~FTP proxy"
@@ -4985,7 +4985,7 @@ msgstr "Имя"
 
 #: source/options/optdict.src#RID_SFXDLG_NEWDICT.FT_DICTLANG.FixedText.Text
 msgid  "~Language"
-msgstr "~Язык"
+msgstr "Я~зык"
 
 #: source/options/optdict.src#RID_SFXDLG_NEWDICT.BTN_EXCEPT.CheckBox.Text
 msgid  "~Exception (-)"
@@ -5633,7 +5633,7 @@ msgstr "Квадратный"
 
 #: source/tabpages/tabarea.src#RID_SVXPAGE_TRANSPARENCE.LB_TRGR_GRADIENT_TYPES.Default.StringList.item
 msgid  "Square"
-msgstr "Квадратный"
+msgstr "Прямоугольный"
 
 #: source/tabpages/tabarea.src#RID_SVXPAGE_TRANSPARENCE.FT_TRGR_CENTER_X.FixedText.Text
 msgid  "Center ~X"
@@ -5653,7 +5653,7 @@ msgstr " градусов"
 
 #: source/tabpages/tabarea.src#RID_SVXPAGE_TRANSPARENCE.FT_TRGR_BORDER.FixedText.Text
 msgid  "~Border"
-msgstr "Поле"
+msgstr "Конту~р"
 
 #: source/tabpages/tabarea.src#RID_SVXPAGE_TRANSPARENCE.FT_TRGR_START_VALUE.FixedText.Text
 msgid  "~Start value"
@@ -6749,7 +6749,7 @@ msgstr "По левому краю"
 
 #: source/tabpages/numpages.src#RID_SVXPAGE_NUM_OPTIONS.LB_ALIGN.item2.StringList.item
 msgid  "Centered"
-msgstr "В центре"
+msgstr "По центру"
 
 #: source/tabpages/numpages.src#RID_SVXPAGE_NUM_OPTIONS.LB_ALIGN.item3.StringList.item
 msgid  "Right"
@@ -7237,7 +7237,7 @@ msgstr "Объединить"
 
 #: source/tabpages/autocdlg.src#RID_OFAPAGE_AUTOCORR_REPLACE.FT_SHORT.FixedText.Text
 msgid  "Repla~ce"
-msgstr "Заменить"
+msgstr "~Заменять:"
 
 #: source/tabpages/autocdlg.src#RID_OFAPAGE_AUTOCORR_REPLACE.FT_REPLACE.FixedText.Text
 msgid  "~With:"
@@ -7665,7 +7665,7 @@ msgstr "По ~центру"
 
 #: source/tabpages/paragrph.src#RID_SVXPAGE_ALIGN_PARAGRAPH.BTN_JUSTIFYALIGN.RadioButton.Text
 msgid  "Justified"
-msgstr "По ширине"
+msgstr "По ~ширине"
 
 #: source/tabpages/paragrph.src#RID_SVXPAGE_ALIGN_PARAGRAPH.ST_LEFTALIGN_ASIAN.String.Text
 msgid  "~Left/Top"
@@ -8077,7 +8077,7 @@ msgstr "Положение и размер"
 
 #: source/tabpages/transfrm.src#RID_SVXPAGE_POSITION_SIZE.FL_POSITION.FixedLine.Text
 msgid  "Position"
-msgstr "~Положение"
+msgstr "Положение"
 
 #: source/tabpages/transfrm.src#RID_SVXPAGE_POSITION_SIZE.FT_POS_X.FixedText.Text
 msgid  "Position ~X"
@@ -8637,7 +8637,7 @@ msgstr "Начертание"
 
 #: source/tabpages/chardlg.src#RID_SVXPAGE_CHAR_NAME.LB_WEST_STYLE.item1.StringList.item
 msgid  "Normal"
-msgstr "Обычное"
+msgstr "Обычный"
 
 #: source/tabpages/chardlg.src#RID_SVXPAGE_CHAR_NAME.LB_WEST_STYLE.item2.StringList.item
 msgid  "Italic"
@@ -8645,7 +8645,7 @@ msgstr "Курсив"
 
 #: source/tabpages/chardlg.src#RID_SVXPAGE_CHAR_NAME.LB_WEST_STYLE.item3.StringList.item
 msgid  "Bold"
-msgstr "Жирное"
+msgstr "Полужирный"
 
 #: source/tabpages/chardlg.src#RID_SVXPAGE_CHAR_NAME.LB_WEST_STYLE.item4.StringList.item
 msgid  "Bold italic"
@@ -8661,7 +8661,7 @@ msgstr "Курсив"
 
 #: source/tabpages/chardlg.src#RID_SVXPAGE_CHAR_NAME.LB_WEST_STYLE_NOCJK.item3.StringList.item
 msgid  "Bold"
-msgstr "Жирное"
+msgstr "Полужирный"
 
 #: source/tabpages/chardlg.src#RID_SVXPAGE_CHAR_NAME.LB_WEST_STYLE_NOCJK.item4.StringList.item
 msgid  "Bold italic"

@@ -2117,7 +2117,7 @@ msgstr "Tekstattributen"
 
 #: source/ui/pagedlg/hfedtdlg.src#RID_HFBASE.BTN_FILE.ImageButton.QuickHelpText
 msgid  "Title"
-msgstr "Titel"
+msgstr "Bestandsnaam"
 
 #: source/ui/pagedlg/hfedtdlg.src#RID_HFBASE.RID_POPUP_FCOMMAND.FILE_COMMAND_TITEL.MenuItem.Text
 msgid  "Title"
@@ -5053,7 +5053,7 @@ msgstr "~Resultaten kopiëren naar..."
 
 #: source/ui/src/filter.src#RID_SCDLG_FILTER.BTN_DEST_PERS.CheckBox.Text
 msgid  "~Keep filter criteria"
-msgstr "~Filtercriteria behouden"
+msgstr "~Persistent"
 
 #: source/ui/src/filter.src#RID_SCDLG_FILTER.RB_COPY_AREA.ImageButton.QuickHelpText
 msgid  "Shrink"
@@ -5625,7 +5625,7 @@ msgstr "Een geheel getal tussen 1583 en 9956, of tussen 0 en 19 (19xx of 20xx ov
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_GET_DATE.4.String.Text
 msgid  "month"
-msgstr "MA"
+msgstr "maand"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_GET_DATE.5.String.Text
 msgid  "An integer between 1 and 12 representing the month."
@@ -5645,7 +5645,7 @@ msgstr "Levert een intern getal voor een tekst die een mogelijke datumnotatie he
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_GET_DATE_VALUE.2.String.Text
 msgid  "text"
-msgstr "tekst"
+msgstr "Tekst"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_GET_DATE_VALUE.3.String.Text
 msgid  "A text enclosed in quotation marks which returns a date in a %PRODUCTNAME date format."
@@ -5657,11 +5657,11 @@ msgstr "Converteert de huidige dag van de maand naar een geheel getal tussen 1 e
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_GET_DAY.2.String.Text
 msgid  "Number"
-msgstr "getal"
+msgstr "Getal"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_GET_DAY.3.String.Text
 msgid  "The internal number for the date."
-msgstr "Het interne getal voor de datum."
+msgstr "Intern getal voor de datum."
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_GET_DIFF_DATE_360.1.String.Text
 msgid  "Calculates the number of days between two dates based on a 360-day year."
@@ -5685,7 +5685,7 @@ msgstr "Einddatum ter berekening van het verschil in dagen."
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_GET_DIFF_DATE_360.6.String.Text
 msgid  "Type"
-msgstr "Methode"
+msgstr "Type"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_GET_DIFF_DATE_360.7.String.Text
 msgid  "Method used to form differences: Type = 0 denotes US method (NASD), Type = 1 denotes the European method."
@@ -5777,7 +5777,7 @@ msgstr "Converteert een datum in de vorm van tekst te naar een serieel getal."
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_GET_TIME_VALUE.2.String.Text
 msgid  "text"
-msgstr "tekst"
+msgstr "Tekst"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_GET_TIME_VALUE.3.String.Text
 msgid  "A text enclosed in quotation marks which returns a time in a %PRODUCTNAME time format."
@@ -5801,7 +5801,7 @@ msgstr "Het interne getal voor de datum."
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_GET_DAY_OF_WEEK.4.String.Text
 msgid  "Type"
-msgstr "Type"
+msgstr "Methode"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_GET_DAY_OF_WEEK.5.String.Text
 msgid  "Fixes the beginning of the week and the type of calculation to be used."
@@ -5893,7 +5893,7 @@ msgstr "Betalingsperiode. Het totale aantal perioden waarin de annuïteit wordt 
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_BW.6.String.Text
 msgid  "PMT"
-msgstr "Bet"
+msgstr "RMB"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_BW.7.String.Text
 msgid  "Regular payments. The constant amount of annuity that is paid in each period."
@@ -5909,11 +5909,11 @@ msgstr "Toekomstige waarde. De waarde (eindwaarde) die na de laatste betaling mo
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_BW.10.String.Text
 msgid  "Type"
-msgstr "V"
+msgstr "Type"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_BW.11.String.Text
 msgid  "Type = 1 denotes due at the beginning of the period, = 0 at the end."
-msgstr "Vervaldatum. V = 1 geeft aan dat de betaling moet worden verricht aan het begin van een periode, V = 0 aan het einde."
+msgstr "Type = 1 betekent verval aan het begin van een periode, Type = 0 aan het einde."
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_ZW.1.String.Text
 msgid  "Future value. Returns the future value of an investment based on regular payments and a constant interest rate."
@@ -5925,7 +5925,7 @@ msgstr "Tarief"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_ZW.3.String.Text
 msgid  "The rate of interest per period."
-msgstr "De rentevoet per periode."
+msgstr "De rentevoet per termijn."
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_ZW.4.String.Text
 msgid  "NPER"
@@ -5933,15 +5933,15 @@ msgstr "APER"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_ZW.5.String.Text
 msgid  "Payment period. The total number of periods in which the annuity (pension) is paid."
-msgstr "Betalingsperiode. Het totaalaantal perioden waarin de annuïteit (het pensioen) betaald moet worden."
+msgstr "Betalingsperiode. Het totale aantal perioden waarin de annuïteit (het pensioen) betaald wordt."
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_ZW.6.String.Text
 msgid  "PMT"
-msgstr "bet"
+msgstr "Bet"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_ZW.7.String.Text
 msgid  "Regular payments. The constant annuity to be paid in each period."
-msgstr "De betaling die per termijn wordt verricht."
+msgstr "Regelmatige betalingen. De constante annuïteit die in elke periode betaald moet worden."
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_ZW.8.String.Text
 msgid  "PV"
@@ -5953,11 +5953,11 @@ msgstr "Huidige waarde. De huidige waarde van een reeks betalingen"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_ZW.10.String.Text
 msgid  "Type"
-msgstr "T"
+msgstr "V"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_ZW.11.String.Text
 msgid  "Type = 1 denotes due at the beginning of the period, = 0 at the end."
-msgstr "Type = 1 geeft aan dat de betaling moet worden verricht aan het begin van de periode, = 0 aan het einde."
+msgstr "Vervaldatum. V = 1 geeft aan dat de betaling moet worden verricht aan het begin van een periode, V = 0 aan het einde."
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_ZZR.1.String.Text
 msgid  "Payment period. Calculates the number of payment periods for an investment based on regular payments and a constant interest rate."
@@ -5969,7 +5969,7 @@ msgstr "Tarief"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_ZZR.3.String.Text
 msgid  "The rate of interest per period."
-msgstr "De rentevoet per periode."
+msgstr "De rentevoet per termijn."
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_ZZR.4.String.Text
 msgid  "PMT"
@@ -5977,7 +5977,7 @@ msgstr "bet"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_ZZR.5.String.Text
 msgid  "Regular payments. The constant annuity to be paid in each period."
-msgstr "Regelmatige betaling. De constante annuïteit die elke periode wordt betaald."
+msgstr "De betaling die per termijn wordt verricht."
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_ZZR.6.String.Text
 msgid  "PV"
@@ -5993,15 +5993,15 @@ msgstr "TW"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_ZZR.9.String.Text
 msgid  "Future value. The value (end value) to be attained after the final payment."
-msgstr "Toekomstige waarde. De toekomstige waarde (eindwaarde) die u wilt bereiken als de laatste betaling is verricht."
+msgstr "De toekomstige waarde (eindwaarde) die u wilt bereiken als de laatste betaling is verricht."
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_ZZR.10.String.Text
 msgid  "Type"
-msgstr "Wissel"
+msgstr "V"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_ZZR.11.String.Text
 msgid  "Type = 1 denotes due at the beginning of the period, = 0 at the end."
-msgstr "Vervaldatum. V = 1 geeft aan dat de betaling moet worden verricht aan het begin van een periode, V =0 aan het einde."
+msgstr "Type = 1 geeft aan dat de betaling moet worden verricht aan het begin van de periode, = 0 aan het einde."
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_RMZ.1.String.Text
 msgid  "Regular payments. Returns the periodic payment of an annuity, based on regular payments and a fixed periodic interest rate."
@@ -6013,7 +6013,7 @@ msgstr "Tarief"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_RMZ.3.String.Text
 msgid  "The rate of interest per period."
-msgstr "De rentevoet per termijn."
+msgstr "De rentevoet per periode."
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_RMZ.4.String.Text
 msgid  "NPER"
@@ -6021,7 +6021,7 @@ msgstr "APER"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_RMZ.5.String.Text
 msgid  "Payment period. The total number of periods in which the annuity (pension) is paid."
-msgstr "Betalingsperiode. Het totale aantal perioden waarin de annuïteit (het pensioen) betaald wordt."
+msgstr "Betalingsperiode. Het totaalaantal perioden waarin de annuïteit (het pensioen) betaald moet worden."
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_RMZ.6.String.Text
 msgid  "PV"
@@ -6037,15 +6037,15 @@ msgstr "TW"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_RMZ.9.String.Text
 msgid  "Future value. The value (end value) to be attained after the final payment."
-msgstr "De toekomstige waarde (eindwaarde) die u wilt bereiken als de laatste betaling is verricht."
+msgstr "Toekomstige waarde. De toekomstige waarde (eindwaarde) die u wilt bereiken als de laatste betaling is verricht."
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_RMZ.10.String.Text
 msgid  "Type"
-msgstr "Type"
+msgstr "V"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_RMZ.11.String.Text
 msgid  "Type = 1 denotes due at the beginning of the period, = 0 at the end."
-msgstr "Vervaldatum. V = 1 geeft aan dat de betaling moet worden verricht aan het begin van een periode, V =0 aan het einde."
+msgstr "Type = 1 geeft aan dat de betaling moet worden verricht aan het begin van de periode, = 0 aan het einde."
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_ZINS.1.String.Text
 msgid  "Calculates the constant interest rate of an investment with regular payments."
@@ -6085,11 +6085,11 @@ msgstr "De toekomstige waarde (eindwaarde) die u wilt bereiken als de laatste be
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_ZINS.10.String.Text
 msgid  "Type"
-msgstr "Volgorde"
+msgstr "V"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_ZINS.11.String.Text
 msgid  "Type = 1 denotes due at the beginning of the period, = 0 at the end."
-msgstr "Vervaldatum. V = 0 geeft aan dat de betaling moet worden voldaan aan het begin van een periode, V = 1 aan het einde."
+msgstr "Vervaldatum. V = 1 geeft aan dat de betaling moet worden verricht aan het begin van een periode, V =0 aan het einde."
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_ZINS.12.String.Text
 msgid  "Guess"
@@ -6109,11 +6109,11 @@ msgstr "Tarief"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_ZINS_Z.3.String.Text
 msgid  "The rate of interest per period."
-msgstr "De rentevoet per termijn."
+msgstr "De rentevoet per periode."
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_ZINS_Z.4.String.Text
 msgid  "Period"
-msgstr "TB"
+msgstr "P"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_ZINS_Z.5.String.Text
 msgid  "Periods. The periods for which the compounded interest is to be calculated. P = 1 denotes for the first period, P = NPER for the last one."
@@ -6145,11 +6145,11 @@ msgstr "De toekomstige waarde (eindwaarde) die u wilt bereiken als de laatste be
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_ZINS_Z.12.String.Text
 msgid  "Type"
-msgstr "Type"
+msgstr "V"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_ZINS_Z.13.String.Text
 msgid  "Type = 1 denotes due at the beginning of the period, = 0 at the end."
-msgstr "Geeft aan wanneer betalingen voldaan moeten worden. T = 1 betekent aan het begin van een periode, T = 0 aan het einde."
+msgstr "Vervaldatum. V = 1 geeft aan dat de betaling moet worden verricht aan het begin van een periode, V =0 aan het einde."
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_KAPZ.1.String.Text
 msgid  "Repayment. Calculates the repayment amount for a period for an investment whereby the payments are at regular intervals and the interest rate constant."
@@ -6165,7 +6165,7 @@ msgstr "De rentevoet per termijn."
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_KAPZ.4.String.Text
 msgid  "Period"
-msgstr "termijn"
+msgstr "P"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_KAPZ.5.String.Text
 msgid  "Period. The period for which the repayments are to be calculated. Per = 1 denotes for the first period, P = NPER for the last"
@@ -6185,7 +6185,7 @@ msgstr "HW"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_KAPZ.9.String.Text
 msgid  "The present value. The present value or the amount the annuity is currently worth."
-msgstr "Huidige waarde is het totaalbedrag dat een reeks toekomstige betalingen op dit moment waard is."
+msgstr "Huidige waarde. De huidige waarde is het totale bedrag dat een reeks toekomstige betalingen op dit moment waard is."
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_KAPZ.10.String.Text
 msgid  "FV"
@@ -6197,11 +6197,11 @@ msgstr "Toekomstige waarde. De waarde (eindwaarde) die bij de laatste betaling m
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_KAPZ.12.String.Text
 msgid  "Type"
-msgstr "Type"
+msgstr "V"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_KAPZ.13.String.Text
 msgid  "Type = 1 denotes due at the beginning of the period, = 0 at the end."
-msgstr "Vervaldatum. V = 0 geeft aan dat de betaling moet worden verricht aan het begin van een periode, V = 1 aan het einde."
+msgstr "Vervaldatum. V = 0 geeft aan dat de betaling moet worden voldaan aan het begin van een periode, V = 1 aan het einde."
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_KUM_KAP_Z.1.String.Text
 msgid  "Cumulative Capital. Calculates the total amount of the repayment share in a period for an investment with constant interest rate."
@@ -6237,11 +6237,11 @@ msgstr "B"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_KUM_KAP_Z.9.String.Text
 msgid  "The start period. The first period to be taken into account. A = 1 denotes the very first period."
-msgstr "Begintermijn. De eerste termijn die in de berekening wordt opgenomen. B = 1 is de allereerste termijn."
+msgstr "Begintermijn. De eerste termijn die in de berekening wordt opgenomen. A = 1 is de allereerste termijn."
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_KUM_KAP_Z.10.String.Text
 msgid  "E"
-msgstr "ET<|>I"
+msgstr "ET"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_KUM_KAP_Z.11.String.Text
 msgid  "End period. The last period to be taken into account."
@@ -6317,7 +6317,7 @@ msgstr "AW"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_DIA.3.String.Text
 msgid  "Acquisition costs. The initial cost of the asset."
-msgstr "Aanschafwaarde. De aanschafkosten van het artikel."
+msgstr "Aanschafwaarde. De aanschafprijs van het artikel."
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_DIA.4.String.Text
 msgid  "Salvage"
@@ -6325,7 +6325,7 @@ msgstr "RW"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_DIA.5.String.Text
 msgid  "Salvage: The remaining value of the asset at the end of its life."
-msgstr "Restwaarde. De restwaarde aan het einde van de levensduur."
+msgstr "Restwaarde: De resterende waarde aan het einde van de afschrijving."
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_DIA.6.String.Text
 msgid  "Life"
@@ -6333,7 +6333,7 @@ msgstr "LD"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_DIA.7.String.Text
 msgid  "Useful life. The number of periods in the useful life of the asset."
-msgstr "Levensduur. Het aantal termijnen waarover het artikel wordt afgeschreven."
+msgstr "Levensduur. Het aantal perioden waarover het artikel wordt afgeschreven."
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_DIA.8.String.Text
 msgid  "Period"
@@ -6361,7 +6361,7 @@ msgstr "RW"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_LIA.5.String.Text
 msgid  "Salvage: The remaining value of the asset at the end of its life."
-msgstr "Restwaarde. De waarde aan het einde van de levensduur."
+msgstr "Restwaarde. De restwaarde aan het einde van de levensduur."
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_LIA.6.String.Text
 msgid  "Life"
@@ -6389,7 +6389,7 @@ msgstr "RW"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_GDA.5.String.Text
 msgid  "Salvage: The remaining value of the asset at the end of its life."
-msgstr "Restwaarde. De restwaarde na het verstrijken van de levensduur."
+msgstr "Restwaarde. De waarde aan het einde van de levensduur."
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_GDA.6.String.Text
 msgid  "Life"
@@ -6573,7 +6573,7 @@ msgstr "Berekent discontovoet voor een periode."
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_NBW.4.String.Text
 msgid  "value "
-msgstr "Waarde"
+msgstr "waarde "
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_NBW.5.String.Text
 msgid  "Value 1, value 2,... are 1 to 30 arguments representing payments and income."
@@ -6585,7 +6585,7 @@ msgstr "Berekent de actuariële rentevoet bij een investering zonder kosten of w
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_IKV.2.String.Text
 msgid  "Values"
-msgstr "waarden"
+msgstr "Waarden"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_IKV.3.String.Text
 msgid  "An array or reference to cells whose contents correspond to the payments. "
@@ -6729,7 +6729,7 @@ msgstr "Waarde"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_IS_REF.3.String.Text
 msgid  "The value to be tested."
-msgstr "De waarde die wilt testen."
+msgstr "De waarde die u wilt testen."
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_IS_ERR.1.String.Text
 msgid  "Returns TRUE if the value is an error value not equal to #N/A."
@@ -7089,7 +7089,7 @@ msgstr "Criteria"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_SUM_IF.5.String.Text
 msgid  "The cell range in which the search criteria are given."
-msgstr "Cellenbereik waarin de zoekcriteria zijn aangegeven."
+msgstr "Cellenbereik waarin de zoekcriteria worden aangegeven."
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_SUM_IF.6.String.Text
 msgid  "sum_range"
@@ -7229,7 +7229,7 @@ msgstr "Geeft als resultaat de vierkantswortel van een getal."
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_SQRT.2.String.Text
 msgid  "number"
-msgstr "Aantal"
+msgstr "Getal"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_SQRT.3.String.Text
 msgid  "A positive value for which the square root is to be calculated."
@@ -7281,7 +7281,7 @@ msgstr "Aantal_2"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_KOMBIN.5.String.Text
 msgid  "The number of elements selected."
-msgstr "Het aantal geselecteerde elementen in elke combinatie."
+msgstr "Het aantal elementen dat geselecteerd is."
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_KOMBIN_2.1.String.Text
 msgid  "Calculates the number of combinations of elements including repetition."
@@ -7417,7 +7417,7 @@ msgstr "Berekent de sinus van een getal."
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_SIN.2.String.Text
 msgid  "number"
-msgstr "Aantal"
+msgstr "Getal"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_SIN.3.String.Text
 msgid  "The angle in radians for which the sine is to be calculated."
@@ -7441,7 +7441,7 @@ msgstr "Berekent de tangens van een getal."
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_TAN.2.String.Text
 msgid  "number"
-msgstr "Aantal"
+msgstr "Getal"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_TAN.3.String.Text
 msgid  "The angle in radians for which the tangent is to be calculated."
@@ -7717,7 +7717,7 @@ msgstr "Getal"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_INT.3.String.Text
 msgid  "The number to be rounded down."
-msgstr "Het getal dat naar beneden moet worden afgerond."
+msgstr "Het getal dat naar beneden wordt afgerond."
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_TRUNC.1.String.Text
 msgid  "Truncates the decimal places of a number."
@@ -7769,7 +7769,7 @@ msgstr "Getal"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_ROUND_UP.3.String.Text
 msgid  "The number to be rounded up."
-msgstr "Het getal dat naar boven afgerond wordt."
+msgstr "Het getal dat naar boven wordt afgerond."
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_ROUND_UP.4.String.Text
 msgid  "count"
@@ -7789,7 +7789,7 @@ msgstr "Getal"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_ROUND_DOWN.3.String.Text
 msgid  "The number to be rounded down."
-msgstr "Het getal dat naar beneden wordt afgerond."
+msgstr "Het getal dat naar beneden moet worden afgerond."
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_ROUND_DOWN.4.String.Text
 msgid  "count"
@@ -7809,7 +7809,7 @@ msgstr "Getal"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_EVEN.3.String.Text
 msgid  "The number to be rounded up."
-msgstr "Het getal dat wordt afgerond."
+msgstr "Het getal dat naar boven afgerond wordt."
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_ODD.1.String.Text
 msgid  "Rounds a positive number up and negative number down to the nearest odd integer."
@@ -7821,7 +7821,7 @@ msgstr "Getal"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_ODD.3.String.Text
 msgid  "The number to be rounded up."
-msgstr "Het getal dat naar boven moet worden afgerond."
+msgstr "Het getal dat wordt afgerond."
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_CEIL.1.String.Text
 msgid  "Rounds a number up to the nearest multiple of significance."
@@ -7845,7 +7845,7 @@ msgstr "Het getal, op een veelvoud waarvan de waarde wordt afgerond."
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_CEIL.6.String.Text
 msgid  "Mode"
-msgstr "modus"
+msgstr "Modus"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_CEIL.7.String.Text
 msgid  "If given and not equal to zero then rounded up according to amount when a negative number and significance."
@@ -8089,7 +8089,7 @@ msgstr "Lijn_type"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_RGP.7.String.Text
 msgid  "If type = 0 the linears will be calculated through the zero point, or else moved linears."
-msgstr "Indien type = 0 dan worden de lijnen door het nulpunt berekend. Ook verschoven lijnen zijn mogelijk."
+msgstr "Indien type=0 dan worden de lijnen door het nulpunt berekend; verschoven lijnen zijn ook mogelijk."
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_RGP.8.String.Text
 msgid  "stats"
@@ -8097,7 +8097,7 @@ msgstr "Parameter"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_RGP.9.String.Text
 msgid  "If parameter = 0 then only the regression coefficient will be calculated, otherwise other values as well."
-msgstr "Indien parameter=0 worden alleen de regressiecoëfficiënten berekend; andere waarden zijn ook mogelijk."
+msgstr "Indien parameter=0 dan worden alleen de regressiecoëfficiënten berekend; ook andere waarden zijn mogelijk."
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_RKP.1.String.Text
 msgid  "Calculates the parameters of the exponential regression curve as an array."
@@ -8125,7 +8125,7 @@ msgstr "Functie_type"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_RKP.7.String.Text
 msgid  "If type = 0 then the functions will be calculated in the form of y=m^x, or also functions y=b*m^x."
-msgstr "Is Type=0, dan worden functies van de vorm y=m^x berekend, verder ook functies y=b*m^x."
+msgstr "Indien Type=0, worden functies berekend waarbij y=m^x. Ook functies waarbij y=b*m^x."
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_RKP.8.String.Text
 msgid  "stats"
@@ -8161,7 +8161,7 @@ msgstr "Nieuwe_gegevens_X"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_TREND.7.String.Text
 msgid  "The array of X data for recalculating the values."
-msgstr "De matrix van de X-gegevens ter berekening van nieuwe waarden."
+msgstr "De matrix van de X-gegevens voor de herberekening van waarden."
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_TREND.8.String.Text
 msgid  "Linear_type"
@@ -8213,7 +8213,7 @@ msgstr "Telt hoeveel getallen een lijst met argumenten bevat."
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_COUNT.2.String.Text
 msgid  "value "
-msgstr "waarde"
+msgstr "Waarde"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_COUNT.3.String.Text
 msgid  "Value 1, value 2, ... are 1 to 30 arguments containing different data types but where only numbers are counted."
@@ -8225,7 +8225,7 @@ msgstr "Telt hoeveel waarden een lijst met argumenten bevat."
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_COUNT_2.2.String.Text
 msgid  "value "
-msgstr "waarde"
+msgstr "Waarde"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_COUNT_2.3.String.Text
 msgid  "Value 1, value 2, ... are 1 to 30 arguments representing the values to be counted."
@@ -8249,7 +8249,7 @@ msgstr "Geeft als resultaat de maximale waarde in een reeks van argumenten. Teks
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_MAX_A.2.String.Text
 msgid  "value "
-msgstr "Waarde"
+msgstr "waarde"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_MAX_A.3.String.Text
 msgid  "Value 1, value 2,    are 1 to 30 arguments whose largest value is to be determined."
@@ -8289,7 +8289,7 @@ msgstr "Getal"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_VAR.3.String.Text
 msgid  "Number 1, number 2, ... are 1 to 30 numerical arguments which portray a sample of a population."
-msgstr "Getal 1; Getal 2;... zijn 1 tot 30 numerieke argumenten die resulteren uit een steekproef onder een populatie."
+msgstr "Getal 1; Getal 2;... zijn 1tot 30 numerieke argumenten die resulteren uit een steekproef onder een populatie."
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_VAR_A.1.String.Text
 msgid  "Returns the variance based on a sample. Text is evaluated as zero."
@@ -8337,7 +8337,7 @@ msgstr "Getal"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_ST_DEV.3.String.Text
 msgid  "Number 1, number 2, ... are 1 to 30 numerical arguments which portray a sample of a population."
-msgstr "Getal 1; Getal 2;... zijn 1 tot 30 numerieke argumenten die betrekking hebben op een populatie."
+msgstr "Getal 1; Getal 2;... zijn 1 tot 30 numerieke argumenten die resulteren uit een steekproef onder een populatie."
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_ST_DEV_A.1.String.Text
 msgid  "Returns the standard deviation based on a sample. Text is evaluated as zero."
@@ -8553,7 +8553,7 @@ msgstr "Rang_c"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_LARGE.5.String.Text
 msgid  "The ranking of the value."
-msgstr "De rang van de waarde."
+msgstr "De rangwaarde."
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_SMALL.1.String.Text
 msgid  "Returns the k-th smallest value of a sample."
@@ -8693,7 +8693,7 @@ msgstr "Aantal tests."
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_B.4.String.Text
 msgid  "SP"
-msgstr "K"
+msgstr "Kans"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_B.5.String.Text
 msgid  "The individual probability of a trial result."
@@ -8725,7 +8725,7 @@ msgstr "Getal"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_PHI.3.String.Text
 msgid  "The value for which the standard normal distribution is to be calculated."
-msgstr "De waarde waarvan u de cumulatieve standaardnormale verdeling wilt berekenen."
+msgstr "De waarde waarvan de standaardnormale verdeling wordt berekend."
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_GAUSS.1.String.Text
 msgid  "Returns the integral values of the standard normal cumulative distribution."
@@ -8781,15 +8781,15 @@ msgstr "N"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_BINOM_DIST.5.String.Text
 msgid  "The total number of trials."
-msgstr "Het totale aantal experimenten."
+msgstr "Het totale aantal tests."
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_BINOM_DIST.6.String.Text
 msgid  "SP"
-msgstr "Kans"
+msgstr "K"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_BINOM_DIST.7.String.Text
 msgid  "The success probability of a trial."
-msgstr "De kans op een gunstige uitkomst."
+msgstr "De kans op succes bij een experiment."
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_BINOM_DIST.8.String.Text
 msgid  "C"
@@ -8821,7 +8821,7 @@ msgstr "Het aantal gunstige uitkomsten in een reeks van experimenten."
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_NEG_BINOM_VERT.6.String.Text
 msgid  "SP"
-msgstr "K"
+msgstr "Kans"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_NEG_BINOM_VERT.7.String.Text
 msgid  "The success probability of a trial."
@@ -8877,11 +8877,11 @@ msgstr "De gemiddelde waarde van de Poisson-verdeling."
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_POISSON_DIST.6.String.Text
 msgid  "Cumulative"
-msgstr "Cumulatieve"
+msgstr "Cumulatief"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_POISSON_DIST.7.String.Text
 msgid  "0 or FALSE calculates the probability density function. Any other value or TRUE or omitted calculates the cumulative distribution function."
-msgstr "0 of ONWAAR berekent de kansdichtheidsfunctie. Elke andere waarde of WAAR of weggelaten berekent de cumulatieve verdelingsfunctie."
+msgstr "0 of ONWAAR berekent de functie kansdichtheid. Elke andere waarde of WAAR of weggelaten berekent de cumulatieve verdelingsfunctie."
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_NORM_DIST.1.String.Text
 msgid  "Values of the normal distribution."
@@ -8901,7 +8901,7 @@ msgstr "Gemiddelde"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_NORM_DIST.5.String.Text
 msgid  "The mean value. The mean value of the normal distribution."
-msgstr "De gemiddelde waarde van de verdeling."
+msgstr "De gemiddelde waarde van de normale verdeling."
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_NORM_DIST.6.String.Text
 msgid  "STDEV"
@@ -8917,7 +8917,7 @@ msgstr "C"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_NORM_DIST.9.String.Text
 msgid  "0 or FALSE calculates the probability density function. Any other value or TRUE or omitted calculates the cumulative distribution function."
-msgstr "0 of ONWAAR berekent de functie kansdichtheid. Elke andere waarde of WAAR of weggelaten berekent de cumulatieve verdelingsfunctie."
+msgstr "0 of ONWAAR berekent de kansdichtheidsfunctie. Elke andere waarde of WAAR of weggelaten berekent de cumulatieve verdelingsfunctie."
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_NORM_INV.1.String.Text
 msgid  "Values of the inverse normal distribution."
@@ -9441,7 +9441,7 @@ msgstr "Vrijheidsgraden"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_CHI_DIST.5.String.Text
 msgid  "The degrees of freedom of the chi square distribution."
-msgstr "De vrijheidsgraden van de chi-kwadraatverdeling."
+msgstr "Het aantal vrijheidsgraden van de chi-kwadraatsverdeling."
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_CHISQ_DIST.1.String.Text
 msgid  "Returns left-tail probability of the cumulative distribution function or values of the probability density function of the chi-square distribution."
@@ -9489,7 +9489,7 @@ msgstr "Vrijheidsgraden"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_CHI_INV.5.String.Text
 msgid  "The degrees of freedom of the chi square distribution."
-msgstr "Het aantal vrijheidsgraden van de chi-kwadraatsverdeling."
+msgstr "De vrijheidsgraden van de chi-kwadraatverdeling."
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_CHISQ_INV.1.String.Text
 msgid  "Values of the inverse of CHISQDIST(x;DegreesOfFreedom;TRUE())."
@@ -9913,7 +9913,7 @@ msgstr "A1"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_ADDRESS.9.String.Text
 msgid  "The reference style: 0 or FALSE means R1C1 style, any other value or omitted means A1 style."
-msgstr "De verwijzingsopmaak: 0 of ONWAAR betekent de opmaak R1C1, elke andere waarde of weggelaten betekent de opmaak A1."
+msgstr "De verwijzingsopmaak: 0 of ONWAAR betekent opmaakprofiel R1C1, elke andere waarde of weggelaten betekent opmaakprofiel A1."
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_ADDRESS.10.String.Text
 msgid  "sheet"
@@ -9933,7 +9933,7 @@ msgstr "Verwijzing"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_AREAS.3.String.Text
 msgid  "The reference to a (multiple) range."
-msgstr "De verwijzing naar een (meervoudig) celbereik."
+msgstr "De verwijzing naar een (meervoudig) bereik."
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_CHOSE.1.String.Text
 msgid  "Selects a value from a list of up to 30 value arguments."
@@ -9965,7 +9965,7 @@ msgstr "Verwijzing"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_COLUMN.3.String.Text
 msgid  "The reference to a cell or a range."
-msgstr "De verwijzing naar een cel of een cellenbereik."
+msgstr "Verwijzing naar een cel of een bereik."
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_ROW.1.String.Text
 msgid  "Defines the internal row number of a reference."
@@ -9977,7 +9977,7 @@ msgstr "Verwijzing"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_ROW.3.String.Text
 msgid  "The reference to a cell or a range."
-msgstr "De verwijzing naar een cel of een bereik."
+msgstr "De verwijzing naar een cel of een cellenbereik."
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_TABLE.1.String.Text
 msgid  "Returns the internal sheet number of a reference or a string."
@@ -10397,7 +10397,7 @@ msgstr "Converteert halve breedte ASCII- en katakana-tekens naar volle breedte."
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_JIS.2.String.Text
 msgid  "text"
-msgstr "Tekst"
+msgstr "tekst"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_JIS.3.String.Text
 msgid  "The text to convert."
@@ -10409,7 +10409,7 @@ msgstr "Converteert volle breedte ASCII- en katakana-tekens naar halve breedte."
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_ASC.2.String.Text
 msgid  "text"
-msgstr "Tekst"
+msgstr "tekst"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_ASC.3.String.Text
 msgid  "The text to convert."
@@ -10421,7 +10421,7 @@ msgstr "Geeft een numerieke code voor het eerste teken in een tekenreeks."
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_CODE.2.String.Text
 msgid  "text"
-msgstr "tekst"
+msgstr "Tekst"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_CODE.3.String.Text
 msgid  "This is the text for which the code of the first character is to be found."
@@ -10657,7 +10657,7 @@ msgstr "Vervangt tekens in een tekenreeks door een andere tekenreeks."
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_REPLACE.2.String.Text
 msgid  "Text"
-msgstr "tekst"
+msgstr "Tekst"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_REPLACE.3.String.Text
 msgid  "The text in which some characters are to be replaced."
@@ -10681,7 +10681,7 @@ msgstr "Het aantal tekens dat wordt vervangen."
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_REPLACE.8.String.Text
 msgid  "new text"
-msgstr "Vervangende tekst"
+msgstr "Nieuwe tekst"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_REPLACE.9.String.Text
 msgid  "The text to be inserted."
@@ -10865,11 +10865,11 @@ msgstr "Het te converteren getal."
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_BASE.4.String.Text
 msgid  "radix"
-msgstr "radix"
+msgstr "Radix"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_BASE.5.String.Text
 msgid  "The base number for conversion must be in the range 2 - 36."
-msgstr "De basis van het getalsysteem waaruit wordt geconverteerd moet tussen 2 - 36 liggen."
+msgstr "De getalwaarde waarnaar wordt geconverteerd moet tussen 2 - 36 liggen."
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_BASE.6.String.Text
 msgid  "Minimum length"
@@ -10953,7 +10953,7 @@ msgstr "Berekent de waarde van een Romeins cijfer."
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_ARABIC.2.String.Text
 msgid  "Text"
-msgstr "Tekst"
+msgstr "tekst"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_ARABIC.3.String.Text
 msgid  "The text that represents a Roman numeral."
@@ -12225,7 +12225,7 @@ msgstr "Stan~daardopmaak"
 
 #: source/ui/src/popup.src#RID_POPUP_CELLS.FID_CELL_FORMAT.MenuItem.Text
 msgid  "~Format Cells..."
-msgstr "~Cellen opmaken..."
+msgstr "Cellen ~opmaken..."
 
 #: source/ui/src/popup.src#RID_POPUP_CELLS.FID_INS_CELL.MenuItem.Text
 msgid  "~Insert..."
@@ -12645,7 +12645,7 @@ msgstr "Naar ~beneden"
 
 #: source/ui/src/miscdlgs.src#RID_SCDLG_INSCONT.BTN_MV_RIGHT.RadioButton.Text
 msgid  "~Right"
-msgstr "~Rechts"
+msgstr "Naar re~chts"
 
 #: source/ui/src/miscdlgs.src#RID_SCDLG_INSCONT.FL_MOVE.FixedLine.Text
 msgid  "Shift cells"

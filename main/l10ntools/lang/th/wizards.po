@@ -421,7 +421,7 @@ msgstr "~ถัดไป >"
 
 #: source/formwizard/dbwizres.src#RID_COMMON_START + 15.String.Text
 msgid  "~Help"
-msgstr "~Help"
+msgstr "~ช่วยเหลือ"
 
 #: source/formwizard/dbwizres.src#RID_COMMON_START + 16.String.Text
 msgid  "Steps"
@@ -732,9 +732,8 @@ msgid  "~Page Styles"
 msgstr "ลักษณะ~หน้า"
 
 #: source/formwizard/dbwizres.src#RID_DB_FORM_WIZARD_START + 80.String.Text
-#, fuzzy
 msgid  "Field selection"
-msgstr "เลือกเขตข้อมูล"
+msgstr "การเลือกเขตข้อมูล"
 
 #: source/formwizard/dbwizres.src#RID_DB_FORM_WIZARD_START + 81.String.Text
 msgid  "Set up a subform"
@@ -810,7 +809,7 @@ msgstr ""
 
 #: source/formwizard/dbwizres.src#RID_DB_QUERY_WIZARD_START + 0.String.Text
 msgid  "Query Wizard"
-msgstr "Query Wizard"
+msgstr "ตัวช่วยสร้างข้อคำถาม"
 
 #: source/formwizard/dbwizres.src#RID_DB_QUERY_WIZARD_START + 1.String.Text
 msgid  "Query"
@@ -825,9 +824,8 @@ msgid  "~Tables"
 msgstr "~ตาราง"
 
 #: source/formwizard/dbwizres.src#RID_DB_QUERY_WIZARD_START + 4.String.Text
-#, fuzzy
 msgid  "A~vailable fields"
-msgstr "เขตข้อมูลที่ใช้งานได้"
+msgstr "เ~ขตข้อมูลที่มีอยู่"
 
 #: source/formwizard/dbwizres.src#RID_DB_QUERY_WIZARD_START + 5.String.Text
 msgid  "Name ~of the query"
@@ -876,7 +874,7 @@ msgstr "~จัดกลุ่มตาม"
 #: source/formwizard/dbwizres.src#RID_DB_QUERY_WIZARD_START + 19.String.Text
 #, fuzzy
 msgid  "Field"
-msgstr "Field"
+msgstr "เขตข้อมูล"
 
 #: source/formwizard/dbwizres.src#RID_DB_QUERY_WIZARD_START + 20.String.Text
 #, fuzzy
@@ -1246,7 +1244,7 @@ msgstr "เลือกโครงร่าง"
 #: source/formwizard/dbwizres.src#RID_DB_REPORT_WIZARD_START + 14.String.Text
 #, fuzzy
 msgid  "Create report"
-msgstr "สร้างรายงาน"
+msgstr "บันทึกรายงาน"
 
 #: source/formwizard/dbwizres.src#RID_DB_REPORT_WIZARD_START + 15.String.Text
 #, fuzzy
@@ -1466,7 +1464,7 @@ msgstr "ป้ายชื่อ"
 #: source/formwizard/dbwizres.src#RID_DB_REPORT_WIZARD_START + 71.String.Text
 #, fuzzy
 msgid  "Field"
-msgstr "เขตข้อมูล"
+msgstr "Field"
 
 #: source/formwizard/dbwizres.src#RID_DB_REPORT_WIZARD_START + 72.String.Text
 #, fuzzy
@@ -1546,7 +1544,7 @@ msgstr "~ผู้แต่ง:"
 #: source/formwizard/dbwizres.src#RID_DB_REPORT_WIZARD_START + 88.String.Text
 #, fuzzy
 msgid  "Date:"
-msgstr "วันที่: "
+msgstr "วันที่:"
 
 #: source/formwizard/dbwizres.src#RID_DB_REPORT_WIZARD_START + 89.String.Text
 #, fuzzy
@@ -1721,7 +1719,7 @@ msgstr "ยินดีด้วย คุณได้ใส่ข้อมู�
 #: source/formwizard/dbwizres.src#RID_DB_TABLE_WIZARD_START + 36.String.Text
 #, fuzzy
 msgid  "What do you want to do next?"
-msgstr "คุณต้องการดำเนินการอะไรต่อไป ?"
+msgstr "คุณต้องการทำอะไรในลำดับถัดไป ? "
 
 #: source/formwizard/dbwizres.src#RID_DB_TABLE_WIZARD_START + 37.String.Text
 #, fuzzy
@@ -1830,12 +1828,12 @@ msgstr "~Use letterhead paper with pre-printed elements"
 #: source/formwizard/dbwizres.src#RID_LETTERWIZARDDIALOG_START + 7.String.Text
 #, fuzzy
 msgid  "~Logo"
-msgstr "~Logo"
+msgstr "โ~ลโก้"
 
 #: source/formwizard/dbwizres.src#RID_LETTERWIZARDDIALOG_START + 8.String.Text
 #, fuzzy
 msgid  "Return address"
-msgstr "ที่อยู่ที่ถูกส่งค่ากลับมา"
+msgstr "ที่อยู่ส่งกลับ"
 
 #: source/formwizard/dbwizres.src#RID_LETTERWIZARDDIALOG_START + 9.String.Text
 #, fuzzy
@@ -1845,12 +1843,12 @@ msgstr "~รวมข้อความท้ายกระดาษ"
 #: source/formwizard/dbwizres.src#RID_LETTERWIZARDDIALOG_START + 10.String.Text
 #, fuzzy
 msgid  "~Return address in envelope window"
-msgstr "~Return address in envelope window"
+msgstr "~ที่อยู่ส่งกลับในหน้าต่างซองจดหมาย"
 
 #: source/formwizard/dbwizres.src#RID_LETTERWIZARDDIALOG_START + 11.String.Text
 #, fuzzy
 msgid  "~Logo"
-msgstr "โ~ลโก้"
+msgstr "~Logo"
 
 #: source/formwizard/dbwizres.src#RID_LETTERWIZARDDIALOG_START + 12.String.Text
 #, fuzzy
@@ -1865,7 +1863,7 @@ msgstr "Letter Signs"
 #: source/formwizard/dbwizres.src#RID_LETTERWIZARDDIALOG_START + 14.String.Text
 #, fuzzy
 msgid  "S~ubject line"
-msgstr "~เส้นหัวข้อ"
+msgstr "เ~ส้นเรื่อง"
 
 #: source/formwizard/dbwizres.src#RID_LETTERWIZARDDIALOG_START + 15.String.Text
 #, fuzzy
@@ -1890,7 +1888,7 @@ msgstr "~ท้ายกระดาษ"
 #: source/formwizard/dbwizres.src#RID_LETTERWIZARDDIALOG_START + 19.String.Text
 #, fuzzy
 msgid  "~Use user data for return address"
-msgstr "ใ~ช้ข้อมูลผู้ใช้สำหรับที่อยู่ส่งกลับ"
+msgstr "~ใช้ข้อมูลผู้ใช้สำหรับที่อยู่ส่งกลับ"
 
 #: source/formwizard/dbwizres.src#RID_LETTERWIZARDDIALOG_START + 20.String.Text
 #, fuzzy
@@ -1905,12 +1903,12 @@ msgstr "ใช้ตัวยึดตำแหน่งสำหรับที
 #: source/formwizard/dbwizres.src#RID_LETTERWIZARDDIALOG_START + 22.String.Text
 #, fuzzy
 msgid  "Use address database for ~mail merge"
-msgstr "ใ~ช้ฐานข้อมูลที่อยู่สำหรับจดหมายเวียน"
+msgstr "ใช้~ฐานข้อมูลที่อยู่สำหรับจดหมายเวียน"
 
 #: source/formwizard/dbwizres.src#RID_LETTERWIZARDDIALOG_START + 23.String.Text
 #, fuzzy
 msgid  "Include ~only on second and following pages"
-msgstr "ใส่เ~ฉพาะบนหน้าที่สองและต่อๆ ไป"
+msgstr "รวมเ~ฉพาะบนหน้าที่สองและต่อๆ ไป"
 
 #: source/formwizard/dbwizres.src#RID_LETTERWIZARDDIALOG_START + 24.String.Text
 #, fuzzy
@@ -1935,17 +1933,17 @@ msgstr "~ทำการปรับเปลี่ยนต้นแบบจ�
 #: source/formwizard/dbwizres.src#RID_LETTERWIZARDDIALOG_START + 28.String.Text
 #, fuzzy
 msgid  "Page design"
-msgstr "Page design"
+msgstr "การออกแบบหน้ากระดาษ"
 
 #: source/formwizard/dbwizres.src#RID_LETTERWIZARDDIALOG_START + 29.String.Text
 #, fuzzy
 msgid  "Page design"
-msgstr "การออกแบบหน้ากระดาษ"
+msgstr "Page design"
 
 #: source/formwizard/dbwizres.src#RID_LETTERWIZARDDIALOG_START + 30.String.Text
 #, fuzzy
 msgid  "Page design"
-msgstr "Page design"
+msgstr "การออกแบบหน้ากระดาษ"
 
 #: source/formwizard/dbwizres.src#RID_LETTERWIZARDDIALOG_START + 31.String.Text
 #, fuzzy
@@ -1965,17 +1963,17 @@ msgstr "ความ~กว้าง: "
 #: source/formwizard/dbwizres.src#RID_LETTERWIZARDDIALOG_START + 34.String.Text
 #, fuzzy
 msgid  "S~pacing to left margin:"
-msgstr "S~pacing to left margin:"
+msgstr "~การเว้นวรรคจากขอบด้านซ้าย:"
 
 #: source/formwizard/dbwizres.src#RID_LETTERWIZARDDIALOG_START + 35.String.Text
 #, fuzzy
 msgid  "Spacing ~to top margin:"
-msgstr "Spacing ~to top margin:"
+msgstr "~การเว้นวรรคจากขอบด้านบน:"
 
 #: source/formwizard/dbwizres.src#RID_LETTERWIZARDDIALOG_START + 36.String.Text
 #, fuzzy
 msgid  "Height:"
-msgstr "Height:"
+msgstr "ความสูง:"
 
 #: source/formwizard/dbwizres.src#RID_LETTERWIZARDDIALOG_START + 37.String.Text
 #, fuzzy
@@ -2010,12 +2008,12 @@ msgstr "ที่อยู่ของผู้ส่ง"
 #: source/formwizard/dbwizres.src#RID_LETTERWIZARDDIALOG_START + 43.String.Text
 #, fuzzy
 msgid  "Name:"
-msgstr "ชื่อ : "
+msgstr "ชื่อ: "
 
 #: source/formwizard/dbwizres.src#RID_LETTERWIZARDDIALOG_START + 44.String.Text
 #, fuzzy
 msgid  "Street:"
-msgstr "ถนน : "
+msgstr "ถนน: "
 
 #: source/formwizard/dbwizres.src#RID_LETTERWIZARDDIALOG_START + 45.String.Text
 #, fuzzy
@@ -2030,7 +2028,7 @@ msgstr "ที่อยู่ของผู้รับ"
 #: source/formwizard/dbwizres.src#RID_LETTERWIZARDDIALOG_START + 47.String.Text
 #, fuzzy
 msgid  "Footer"
-msgstr "Footer"
+msgstr "ท้ายกระดาษ"
 
 #: source/formwizard/dbwizres.src#RID_LETTERWIZARDDIALOG_START + 48.String.Text
 #, fuzzy
@@ -2050,7 +2048,7 @@ msgstr "ชื่อต้นแบบ:"
 #: source/formwizard/dbwizres.src#RID_LETTERWIZARDDIALOG_START + 51.String.Text
 #, fuzzy
 msgid  "Location and file name:"
-msgstr "ตำแหน่งและชื่อไฟล์:"
+msgstr "ตำแหน่งและชื่อของแฟ้ม:"
 
 #: source/formwizard/dbwizres.src#RID_LETTERWIZARDDIALOG_START + 52.String.Text
 #, fuzzy
@@ -2140,7 +2138,7 @@ msgstr "ผู้รับและผู้ส่ง"
 #: source/formwizard/dbwizres.src#RID_LETTERWIZARDROADMAP_START + 5.String.Text
 #, fuzzy
 msgid  "Footer"
-msgstr "ท้ายกระดาษ"
+msgstr "Footer"
 
 #: source/formwizard/dbwizres.src#RID_LETTERWIZARDROADMAP_START + 6.String.Text
 #, fuzzy
@@ -2240,7 +2238,7 @@ msgstr "ที่อยู่ที่ถูกส่งค่ากลับม
 #: source/formwizard/dbwizres.src#RID_FAXWIZARDDIALOG_START + 19.String.Text
 #, fuzzy
 msgid  "Name:"
-msgstr "ชื่อ: "
+msgstr "ชื่อ : "
 
 #: source/formwizard/dbwizres.src#RID_FAXWIZARDDIALOG_START + 20.String.Text
 #, fuzzy
@@ -2280,7 +2278,7 @@ msgstr "ตำแหน่งและชื่อไฟล์:"
 #: source/formwizard/dbwizres.src#RID_FAXWIZARDDIALOG_START + 27.String.Text
 #, fuzzy
 msgid  "What do you want to do next?"
-msgstr "คุณต้องการทำอะไรในลำดับถัดไป ? "
+msgstr "คุณต้องการดำเนินการอะไรต่อไป ?"
 
 #: source/formwizard/dbwizres.src#RID_FAXWIZARDDIALOG_START + 28.String.Text
 #, fuzzy
@@ -2305,7 +2303,7 @@ msgstr "กรอกข้อความสำหรับท้ายกระ
 #: source/formwizard/dbwizres.src#RID_FAXWIZARDDIALOG_START + 32.String.Text
 #, fuzzy
 msgid  "Choose a name and save the template"
-msgstr "เลือกชื่อและบันทึกแม่แบบ"
+msgstr "เลือกชื่อและบันทึกต้นแบบ"
 
 #: source/formwizard/dbwizres.src#RID_FAXWIZARDDIALOG_START + 33.String.Text
 #, fuzzy
@@ -3285,12 +3283,12 @@ msgstr "การขอให้มีการประชุมโดย"
 #: source/formwizard/dbwizres.src#RID_AGENDAWIZARDDIALOG_START +25.String.Text
 #, fuzzy
 msgid  "Chairperson"
-msgstr "ประธานที่ประชุม"
+msgstr "ประธานในที่ประชุม"
 
 #: source/formwizard/dbwizres.src#RID_AGENDAWIZARDDIALOG_START +26.String.Text
 #, fuzzy
 msgid  "Minute keeper"
-msgstr "คนบันทึกการประชุม"
+msgstr "ผู้บันทึกการประชุม"
 
 #: source/formwizard/dbwizres.src#RID_AGENDAWIZARDDIALOG_START +27.String.Text
 #, fuzzy
@@ -3305,7 +3303,7 @@ msgstr "ผู้เข้าร่วมประชุม"
 #: source/formwizard/dbwizres.src#RID_AGENDAWIZARDDIALOG_START +29.String.Text
 #, fuzzy
 msgid  "Observers"
-msgstr "ผู้สังเกตการณ์"
+msgstr "ผู้สังเกต"
 
 #: source/formwizard/dbwizres.src#RID_AGENDAWIZARDDIALOG_START +30.String.Text
 #, fuzzy

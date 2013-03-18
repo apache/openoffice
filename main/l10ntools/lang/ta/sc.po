@@ -204,7 +204,7 @@ msgstr "இதிலிருந்து தேர்ந்தெடுத்�
 #: source/ui/dbgui/pivot.src#RID_SCDLG_PIVOT_LAYOUT.RB_INAREA.ImageButton.QuickHelpText
 #, fuzzy
 msgid  "Shrink"
-msgstr "குறுக்குதல்"
+msgstr "குறுக்கு"
 
 #: source/ui/dbgui/pivot.src#RID_SCDLG_PIVOT_LAYOUT.FT_OUTAREA.FixedText.Text
 #, fuzzy
@@ -319,7 +319,7 @@ msgstr "~வெளிப்புற மூலம்/இடைமுகம்"
 #: source/ui/dbgui/dapitype.src#RID_SCDLG_DAPITYPE.FL_FRAME.FixedLine.Text
 #, fuzzy
 msgid  "Selection"
-msgstr "தேர்வு"
+msgstr "தேர்ந்தெடுப்பு"
 
 #: source/ui/dbgui/dapitype.src#RID_SCDLG_DAPITYPE.FixedLine.Text
 #, fuzzy
@@ -354,7 +354,7 @@ msgstr "~கடவுச்சொல்"
 #: source/ui/dbgui/dapitype.src#RID_SCDLG_DAPISERVICE.FL_FRAME.FixedLine.Text
 #, fuzzy
 msgid  "Selection"
-msgstr "தேர்ந்தெடுப்பு"
+msgstr "தேர்வு"
 
 #: source/ui/dbgui/dapitype.src#RID_SCDLG_DAPISERVICE.FixedLine.Text
 #, fuzzy
@@ -570,7 +570,7 @@ msgstr "தானாக (~A)"
 #: source/ui/dbgui/dpgroupdlg.src#RID_SCDLG_DPNUMGROUP.RB_MANSTART.RadioButton.Text
 #, fuzzy
 msgid  "~Manually at"
-msgstr "இதில் கைமுறையாக (~M) "
+msgstr "இதில் கைமுறையாக (~M)"
 
 #: source/ui/dbgui/dpgroupdlg.src#RID_SCDLG_DPNUMGROUP.FL_END.FixedLine.Text
 #, fuzzy
@@ -2361,7 +2361,7 @@ msgstr "அச்சு வீச்சு"
 #: source/ui/pagedlg/pagedlg.src#RID_SCDLG_AREAS.LB_PRINTAREA.Default.StringList.item
 #, fuzzy
 msgid  "- none -"
-msgstr "- ஒன்றுமில்லை -"
+msgstr "-ஒன்றுமில்லை -"
 
 #: source/ui/pagedlg/pagedlg.src#RID_SCDLG_AREAS.LB_PRINTAREA.Default.StringList.item
 #, fuzzy
@@ -2371,7 +2371,7 @@ msgstr "- entire sheet -"
 #: source/ui/pagedlg/pagedlg.src#RID_SCDLG_AREAS.LB_PRINTAREA.Default.StringList.item
 #, fuzzy
 msgid  "- user defined -"
-msgstr "- பயனர் குறிப்பீடு -"
+msgstr "- பயனர் வரையறுத்தது -"
 
 #: source/ui/pagedlg/pagedlg.src#RID_SCDLG_AREAS.LB_PRINTAREA.Default.StringList.item
 #, fuzzy
@@ -2381,7 +2381,7 @@ msgstr "- selection -"
 #: source/ui/pagedlg/pagedlg.src#RID_SCDLG_AREAS.RB_PRINTAREA.ImageButton.QuickHelpText
 #, fuzzy
 msgid  "Shrink"
-msgstr "குறுக்கம்"
+msgstr "சுருக்கு"
 
 #: source/ui/pagedlg/pagedlg.src#RID_SCDLG_AREAS.FL_REPEATROW.FixedLine.Text
 #, fuzzy
@@ -2904,7 +2904,7 @@ msgstr "பொ~ருட்கள்/வரைவியல்"
 #: source/ui/src/optdlg.src#RID_SCPAGE_CONTENT.LB_OBJGRF.Default.StringList.item
 #, fuzzy
 msgid  "Show"
-msgstr "காட்டுதல்"
+msgstr "காட்டவும்"
 
 #: source/ui/src/optdlg.src#RID_SCPAGE_CONTENT.LB_OBJGRF.Default.StringList.item
 #, fuzzy
@@ -3723,12 +3723,12 @@ msgstr "AutoOutline"
 #: source/ui/src/globstr.src#RID_GLOBSTR.STR_UNDO_SUBTOTALS.String.Text
 #, fuzzy
 msgid  "Subtotals"
-msgstr "Subtotals"
+msgstr "துணைமொத்தம்"
 
 #: source/ui/src/globstr.src#RID_GLOBSTR.STR_UNDO_SORT.String.Text
 #, fuzzy
 msgid  "Sort"
-msgstr "வரிசை"
+msgstr "வரிசைப்படுத்து"
 
 #: source/ui/src/globstr.src#RID_GLOBSTR.STR_UNDO_QUERY.String.Text
 #, fuzzy
@@ -4711,7 +4711,7 @@ msgstr "சூத்திரங்கள்"
 #: source/ui/src/globstr.src#RID_GLOBSTR.STR_HIDE.String.Text
 #, fuzzy
 msgid  "Hide"
-msgstr "மறைக்கவும்"
+msgstr "மறைத்தல்"
 
 #: source/ui/src/globstr.src#RID_GLOBSTR.STR_PRINT.String.Text
 #, fuzzy
@@ -5040,7 +5040,7 @@ msgstr "காட்டவும்"
 #: source/ui/src/globstr.src#RID_GLOBSTR.STR_VOBJ_MODE_HIDE.String.Text
 #, fuzzy
 msgid  "Hide"
-msgstr "மறைத்தல்"
+msgstr "மறைக்கவும்"
 
 #: source/ui/src/globstr.src#RID_GLOBSTR.STR_SCATTR_PAGE_TOPDOWN.String.Text
 #, fuzzy
@@ -5823,7 +5823,7 @@ msgstr "நிலையான வடிப்பி"
 #: source/ui/src/filter.src#RID_SCDLG_FILTER.FT_OP.FixedText.Text
 #, fuzzy
 msgid  "Operator"
-msgstr "குறியீடு"
+msgstr "இயக்குபவர்"
 
 #: source/ui/src/filter.src#RID_SCDLG_FILTER.FT_FIELD.FixedText.Text
 #, fuzzy
@@ -5913,52 +5913,52 @@ msgstr "<>"
 #: source/ui/src/filter.src#RID_SCDLG_FILTER.LB_COND1.Default.stringlist.item
 #, fuzzy
 msgid  "Largest"
-msgstr "பெரியதானது"
+msgstr "பெரியது"
 
 #: source/ui/src/filter.src#RID_SCDLG_FILTER.LB_COND1.Default.stringlist.item
 #, fuzzy
 msgid  "Smallest"
-msgstr "சிறியதானது"
+msgstr "சிறியது"
 
 #: source/ui/src/filter.src#RID_SCDLG_FILTER.LB_COND1.Default.stringlist.item
 #, fuzzy
 msgid  "Largest %"
-msgstr "பெரிதான %"
+msgstr "பெரியதான %"
 
 #: source/ui/src/filter.src#RID_SCDLG_FILTER.LB_COND1.Default.stringlist.item
 #, fuzzy
 msgid  "Smallest %"
-msgstr "Smallest %"
+msgstr "சிறியதான %"
 
 #: source/ui/src/filter.src#RID_SCDLG_FILTER.LB_COND1.Default.stringlist.item
 #, fuzzy
 msgid  "Contains"
-msgstr "கொண்டுள்ள"
+msgstr "கொண்டுள்ளது"
 
 #: source/ui/src/filter.src#RID_SCDLG_FILTER.LB_COND1.Default.stringlist.item
 #, fuzzy
 msgid  "Does not contain"
-msgstr "இல்லாத"
+msgstr "கொண்டிருக்கவில்லை"
 
 #: source/ui/src/filter.src#RID_SCDLG_FILTER.LB_COND1.Default.stringlist.item
 #, fuzzy
 msgid  "Begins with"
-msgstr "இதனுடன் துவங்குகிறது"
+msgstr "இதனுடன் துவங்குதல்"
 
 #: source/ui/src/filter.src#RID_SCDLG_FILTER.LB_COND1.Default.stringlist.item
 #, fuzzy
 msgid  "Does not begin with"
-msgstr "இதனுடன் துவங்காத"
+msgstr "இதனுடன் துவங்கவில்லை"
 
 #: source/ui/src/filter.src#RID_SCDLG_FILTER.LB_COND1.Default.stringlist.item
 #, fuzzy
 msgid  "Ends with"
-msgstr "இதனுடன் முடிகிற"
+msgstr "இதனுடன் முடிகிறது"
 
 #: source/ui/src/filter.src#RID_SCDLG_FILTER.LB_COND1.Default.stringlist.item
 #, fuzzy
 msgid  "Does not end with"
-msgstr "இதனுடன் முடியாத"
+msgstr "இதனுடன் முடியவில்லை"
 
 #: source/ui/src/filter.src#RID_SCDLG_FILTER.LB_COND2.Default.stringlist.item
 #, fuzzy
@@ -5993,17 +5993,17 @@ msgstr "<>"
 #: source/ui/src/filter.src#RID_SCDLG_FILTER.LB_COND2.Default.stringlist.item
 #, fuzzy
 msgid  "Largest"
-msgstr "பெரியதான"
+msgstr "பெரியதானது"
 
 #: source/ui/src/filter.src#RID_SCDLG_FILTER.LB_COND2.Default.stringlist.item
 #, fuzzy
 msgid  "Smallest"
-msgstr "சிறியதான"
+msgstr "சிறியதானது"
 
 #: source/ui/src/filter.src#RID_SCDLG_FILTER.LB_COND2.Default.stringlist.item
 #, fuzzy
 msgid  "Largest %"
-msgstr "Largest %"
+msgstr "பெரிதான %"
 
 #: source/ui/src/filter.src#RID_SCDLG_FILTER.LB_COND2.Default.stringlist.item
 #, fuzzy
@@ -6018,12 +6018,12 @@ msgstr "கொண்டுள்ளது"
 #: source/ui/src/filter.src#RID_SCDLG_FILTER.LB_COND2.Default.stringlist.item
 #, fuzzy
 msgid  "Does not contain"
-msgstr "இல்லாத"
+msgstr "கொண்டிருக்கவில்லை"
 
 #: source/ui/src/filter.src#RID_SCDLG_FILTER.LB_COND2.Default.stringlist.item
 #, fuzzy
 msgid  "Begins with"
-msgstr "இதனுடன் துவங்கிற"
+msgstr "இதனுடன் துவங்குகிறது"
 
 #: source/ui/src/filter.src#RID_SCDLG_FILTER.LB_COND2.Default.stringlist.item
 #, fuzzy
@@ -6073,17 +6073,17 @@ msgstr "<>"
 #: source/ui/src/filter.src#RID_SCDLG_FILTER.LB_COND3.Default.stringlist.item
 #, fuzzy
 msgid  "Largest"
-msgstr "பெரியதானது"
+msgstr "பெரியதான"
 
 #: source/ui/src/filter.src#RID_SCDLG_FILTER.LB_COND3.Default.stringlist.item
 #, fuzzy
 msgid  "Smallest"
-msgstr "சிறியதானது"
+msgstr "சிறியதான"
 
 #: source/ui/src/filter.src#RID_SCDLG_FILTER.LB_COND3.Default.stringlist.item
 #, fuzzy
 msgid  "Largest %"
-msgstr "பெரியதான %"
+msgstr "Largest %"
 
 #: source/ui/src/filter.src#RID_SCDLG_FILTER.LB_COND3.Default.stringlist.item
 #, fuzzy
@@ -6103,7 +6103,7 @@ msgstr "இல்லாத"
 #: source/ui/src/filter.src#RID_SCDLG_FILTER.LB_COND3.Default.stringlist.item
 #, fuzzy
 msgid  "Begins with"
-msgstr "இதனுடன் துவங்குதல்"
+msgstr "இதனுடன் துவங்கிற"
 
 #: source/ui/src/filter.src#RID_SCDLG_FILTER.LB_COND3.Default.stringlist.item
 #, fuzzy
@@ -6223,7 +6223,7 @@ msgstr "வரம்பு நிரல் தலைப்புகளை கொ
 #: source/ui/src/filter.src#RID_SCDLG_FILTER.BTN_UNIQUE.CheckBox.Text
 #, fuzzy
 msgid  "~No duplication"
-msgstr "போலியில்லாத (~N)"
+msgstr "போலி இல்லாத (~N)"
 
 #: source/ui/src/filter.src#RID_SCDLG_FILTER.BTN_COPY_RESULT.CheckBox.Text
 #, fuzzy
@@ -6268,7 +6268,7 @@ msgstr "சுருக்கு"
 #: source/ui/src/filter.src#RID_SCDLG_SPEC_FILTER.BTN_CASE.CheckBox.Text
 #, fuzzy
 msgid  "~Case sensitive"
-msgstr "நிலை நுட்பம் (~C)"
+msgstr "~எழுத்துணர்வு"
 
 #: source/ui/src/filter.src#RID_SCDLG_SPEC_FILTER.BTN_REGEXP.CheckBox.Text
 #, fuzzy
@@ -6323,7 +6323,7 @@ msgstr "வடிப்பி"
 #: source/ui/src/filter.src#RID_SCDLG_PIVOTFILTER.FT_OP.FixedText.Text
 #, fuzzy
 msgid  "Operator"
-msgstr "இயக்குபவர்"
+msgstr "குறியீடு"
 
 #: source/ui/src/filter.src#RID_SCDLG_PIVOTFILTER.FT_FIELD.FixedText.Text
 #, fuzzy
@@ -6528,7 +6528,7 @@ msgstr "The range of cells containing data."
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_DB_COUNT.4.String.Text
 #, fuzzy
 msgid  "Database field"
-msgstr "தரவுத்தளப் புலம்"
+msgstr "தரவுத்தள புலம்"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_DB_COUNT.5.String.Text
 #, fuzzy
@@ -6563,7 +6563,7 @@ msgstr "The range of cells containing data."
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_DB_COUNT_2.4.String.Text
 #, fuzzy
 msgid  "Database field"
-msgstr "தரவுத்தள புலம்"
+msgstr "தரவுத்தளப் புலம்"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_DB_COUNT_2.5.String.Text
 #, fuzzy
@@ -6988,7 +6988,7 @@ msgstr "Returns the sequential date of the month as an integer (1-31) in relatio
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_GET_DAY.2.String.Text
 #, fuzzy
 msgid  "Number"
-msgstr "எண்ணிக்கை"
+msgstr "எண்"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_GET_DAY.3.String.Text
 #, fuzzy
@@ -7023,7 +7023,7 @@ msgstr "The end date for calculating the difference in days."
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_GET_DIFF_DATE_360.6.String.Text
 #, fuzzy
 msgid  "Type"
-msgstr "Type"
+msgstr "வகை"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_GET_DIFF_DATE_360.7.String.Text
 #, fuzzy
@@ -7233,7 +7233,7 @@ msgstr "The internal number of the date."
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_WEEK.4.String.Text
 #, fuzzy
 msgid  "mode"
-msgstr "முறைமை"
+msgstr "முறை"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_WEEK.5.String.Text
 #, fuzzy
@@ -7323,7 +7323,7 @@ msgstr "விலை"
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_ZW.3.String.Text
 #, fuzzy
 msgid  "The rate of interest per period."
-msgstr " The rate of interest per period."
+msgstr "The rate of interest per period."
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_ZW.4.String.Text
 #, fuzzy
@@ -7830,7 +7830,7 @@ msgstr "வாழ்க்கை"
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_DIA.7.String.Text
 #, fuzzy
 msgid  "Useful life. The number of periods in the useful life of the asset."
-msgstr "Useful life. The number of periods in the useful life of the asset."
+msgstr "பயனுள்ள வாழ்க்கை."
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_DIA.8.String.Text
 #, fuzzy
@@ -7875,7 +7875,7 @@ msgstr "வாழ்க்கை"
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_LIA.7.String.Text
 #, fuzzy
 msgid  "Useful life. The number of periods in the useful life of the asset."
-msgstr "Useful life. The number of periods in the useful life of the asset."
+msgstr "பயனுள்ள வாழ்க்கை."
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_GDA.1.String.Text
 #, fuzzy
@@ -7910,7 +7910,7 @@ msgstr "வாழ்க்கை"
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_GDA.7.String.Text
 #, fuzzy
 msgid  "Useful life. The number of periods in the useful life of the asset."
-msgstr "பயனுள்ள வாழ்க்கை."
+msgstr "Useful life. The number of periods in the useful life of the asset."
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_GDA.8.String.Text
 #, fuzzy
@@ -8128,7 +8128,7 @@ msgstr "The rate of discount for one period."
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_NBW.4.String.Text
 #, fuzzy
 msgid  "value "
-msgstr "மதிப்பு"
+msgstr "மதிப்பு "
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_NBW.5.String.Text
 #, fuzzy
@@ -8317,7 +8317,7 @@ msgstr "Returns TRUE if value is a reference."
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_IS_REF.2.String.Text
 #, fuzzy
 msgid  "value"
-msgstr "value"
+msgstr "மதிப்பு"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_IS_REF.3.String.Text
 #, fuzzy
@@ -8452,7 +8452,7 @@ msgstr "Returns TRUE if the cell is a formula cell."
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_IS_FORMULA.2.String.Text
 #, fuzzy
 msgid  "reference"
-msgstr "reference"
+msgstr "குறிப்பு"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_IS_FORMULA.3.String.Text
 #, fuzzy
@@ -8709,7 +8709,7 @@ msgstr "Returns the sum of all arguments."
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_SUM.2.String.Text
 #, fuzzy
 msgid  "number "
-msgstr "எண்"
+msgstr "எண் "
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_SUM.3.String.Text
 #, fuzzy
@@ -8724,7 +8724,7 @@ msgstr "Returns the sum of the squares of the arguments."
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_SUM_SQ.2.String.Text
 #, fuzzy
 msgid  "number "
-msgstr "எண்"
+msgstr "எண் "
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_SUM_SQ.3.String.Text
 #, fuzzy
@@ -8975,7 +8975,7 @@ msgstr "எண்_1"
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_KOMBIN.3.String.Text
 #, fuzzy
 msgid  "The total number of elements."
-msgstr "மொத்த உருப்படிகளின் எண்ணிக்கை."
+msgstr "உருப்படிகளின் மொத்த எண்ணிக்கை."
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_KOMBIN.4.String.Text
 #, fuzzy
@@ -9757,7 +9757,7 @@ msgstr "Array transposition. Exchanges the rows and columns of an aray."
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_MAT_TRANS.2.String.Text
 #, fuzzy
 msgid  "array"
-msgstr "array"
+msgstr "அணி"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_MAT_TRANS.3.String.Text
 #, fuzzy
@@ -9772,7 +9772,7 @@ msgstr "Array multiplication. Returns the product of two arrays."
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_MAT_MULT.2.String.Text
 #, fuzzy
 msgid  "array"
-msgstr "array"
+msgstr "அணி"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_MAT_MULT.3.String.Text
 #, fuzzy
@@ -9782,7 +9782,7 @@ msgstr "The first array for the array product."
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_MAT_MULT.4.String.Text
 #, fuzzy
 msgid  "array"
-msgstr "array"
+msgstr "அணி"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_MAT_MULT.5.String.Text
 #, fuzzy
@@ -9957,7 +9957,7 @@ msgstr "Calculates parameters of the linear regression as an array."
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_RGP.2.String.Text
 #, fuzzy
 msgid  "data_Y"
-msgstr "தரவ_Y"
+msgstr "data_Y"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_RGP.3.String.Text
 #, fuzzy
@@ -9967,7 +9967,7 @@ msgstr "The Y data array."
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_RGP.4.String.Text
 #, fuzzy
 msgid  "data_X"
-msgstr "தரவு_X"
+msgstr "data_X"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_RGP.5.String.Text
 #, fuzzy
@@ -10002,7 +10002,7 @@ msgstr "Calculates the parameters of the exponential regression curve as an arra
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_RKP.2.String.Text
 #, fuzzy
 msgid  "data_Y"
-msgstr "தரவு_Y"
+msgstr "data_Y"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_RKP.3.String.Text
 #, fuzzy
@@ -10012,7 +10012,7 @@ msgstr "The Y data array."
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_RKP.4.String.Text
 #, fuzzy
 msgid  "data_X"
-msgstr "தரவு_X"
+msgstr "data_X"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_RKP.5.String.Text
 #, fuzzy
@@ -10047,7 +10047,7 @@ msgstr "Calculates points along a regression line."
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_TREND.2.String.Text
 #, fuzzy
 msgid  "data_Y"
-msgstr "தரவு_Y"
+msgstr "தரவ_Y"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_TREND.3.String.Text
 #, fuzzy
@@ -10092,7 +10092,7 @@ msgstr "Calculates points on the exponential regression function."
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_GROWTH.2.String.Text
 #, fuzzy
 msgid  "data_Y"
-msgstr "தரவு_Y"
+msgstr "data_Y"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_GROWTH.3.String.Text
 #, fuzzy
@@ -10137,7 +10137,7 @@ msgstr "Counts how many numbers are in the list of arguments."
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_COUNT.2.String.Text
 #, fuzzy
 msgid  "value "
-msgstr "மதிப்பு "
+msgstr "மதிப்பு"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_COUNT.3.String.Text
 #, fuzzy
@@ -10152,7 +10152,7 @@ msgstr "Counts how many values are in the list of arguments."
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_COUNT_2.2.String.Text
 #, fuzzy
 msgid  "value "
-msgstr "மதிப்பு"
+msgstr "மதிப்பு "
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_COUNT_2.3.String.Text
 #, fuzzy
@@ -10167,7 +10167,7 @@ msgstr "Returns the maximum value in a list of arguments."
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_MAX.2.String.Text
 #, fuzzy
 msgid  "number "
-msgstr "எண் "
+msgstr "எண்"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_MAX.3.String.Text
 #, fuzzy
@@ -10182,7 +10182,7 @@ msgstr "Returns the maximum value in a list of arguments. Text is evaluated as Z
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_MAX_A.2.String.Text
 #, fuzzy
 msgid  "value "
-msgstr "மதிப்பு "
+msgstr "மதிப்பு"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_MAX_A.3.String.Text
 #, fuzzy
@@ -10507,7 +10507,7 @@ msgstr "The array of the data in the sample."
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_PERCENTILE.4.String.Text
 #, fuzzy
 msgid  "Alpha"
-msgstr "ஆல்ஃபா"
+msgstr "ஆல்பா"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_PERCENTILE.5.String.Text
 #, fuzzy
@@ -10667,7 +10667,7 @@ msgstr "The array of the data in the sample."
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_TRIM_MEAN.4.String.Text
 #, fuzzy
 msgid  "Alpha"
-msgstr "ஆல்பா"
+msgstr "ஆல்ஃபா"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_TRIM_MEAN.5.String.Text
 #, fuzzy
@@ -10727,7 +10727,7 @@ msgstr "Returns the probability of a trial result using binomial distribution."
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_B.2.String.Text
 #, fuzzy
 msgid  "trials"
-msgstr "வெள்ளோட்டங்கள்"
+msgstr "வெள்ளோடங்கள்"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_B.3.String.Text
 #, fuzzy
@@ -10842,7 +10842,7 @@ msgstr "The number of successes in a series of trials."
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_BINOM_DIST.4.String.Text
 #, fuzzy
 msgid  "trials"
-msgstr "வெள்ளோடங்கள்"
+msgstr "வெள்ளோட்டங்கள்"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_BINOM_DIST.5.String.Text
 #, fuzzy
@@ -10966,7 +10966,7 @@ msgstr "Mean. The mean value of the Poisson distribution."
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_POISSON_DIST.6.String.Text
 #, fuzzy
 msgid  "Cumulative"
-msgstr "திரளாகச் சேர்த்தல்"
+msgstr "Cumulative"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_POISSON_DIST.7.String.Text
 #, fuzzy
@@ -11121,7 +11121,7 @@ msgstr "The standard deviation of the log normal distribution. It is set to 1 if
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_LOG_NORM_DIST.8.String.Text
 #, fuzzy
 msgid  "Cumulative"
-msgstr "Cumulative"
+msgstr "திரளாகச் சேர்த்தல்"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_LOG_NORM_DIST.9.String.Text
 #, fuzzy
@@ -11543,7 +11543,7 @@ msgstr "The degrees of freedom of the T distribution."
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_T_DIST.6.String.Text
 #, fuzzy
 msgid  "mode"
-msgstr "முறை"
+msgstr "முறைமை"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_T_DIST.7.String.Text
 #, fuzzy
@@ -11988,7 +11988,7 @@ msgstr "The second record array."
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_T_TEST.6.String.Text
 #, fuzzy
 msgid  "mode"
-msgstr "முறைமை"
+msgstr "முறை"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_T_TEST.7.String.Text
 #, fuzzy
@@ -12013,7 +12013,7 @@ msgstr "பியர்ஸன் தொடர்பு குணகத்த�
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_RSQ.2.String.Text
 #, fuzzy
 msgid  "data_Y"
-msgstr "தரவ_Y"
+msgstr "தரவு_Y"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_RSQ.3.String.Text
 #, fuzzy
@@ -12278,7 +12278,7 @@ msgstr "தனிப்பட்ட வீச்சுக்களுக்க�
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_AREAS.2.String.Text
 #, fuzzy
 msgid  "reference"
-msgstr "குறிப்பு"
+msgstr "reference"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_AREAS.3.String.Text
 #, fuzzy
@@ -13898,7 +13898,7 @@ msgstr "உயரம்"
 #: source/ui/src/scstring.src#STR_OPT_ROWHEIGHT.String.Text
 #, fuzzy
 msgid  "Add"
-msgstr "சேர்"
+msgstr "சேர்த்தல்"
 
 #: source/ui/src/scstring.src#STR_ROWHEIGHT_TITLE.String.Text
 #, fuzzy
@@ -14578,7 +14578,7 @@ msgstr "சூத்திரங்கள்"
 #: source/ui/src/tabopdlg.src#RID_SCDLG_TABOP.RB_FORMULARANGE.ImageButton.QuickHelpText
 #, fuzzy
 msgid  "Shrink"
-msgstr "இணைக்கப்பட்டது"
+msgstr "சுருக்கு"
 
 #: source/ui/src/tabopdlg.src#RID_SCDLG_TABOP.FT_ROWCELL.FixedText.Text
 #, fuzzy
@@ -14588,7 +14588,7 @@ msgstr "~வரிசை உள்ளீட்டு சிற்றறை"
 #: source/ui/src/tabopdlg.src#RID_SCDLG_TABOP.RB_ROWCELL.ImageButton.QuickHelpText
 #, fuzzy
 msgid  "Shrink"
-msgstr "சுருக்கு"
+msgstr "இணைக்கப்பட்டது"
 
 #: source/ui/src/tabopdlg.src#RID_SCDLG_TABOP.FT_COLCELL.FixedText.Text
 #, fuzzy
@@ -14883,7 +14883,7 @@ msgstr "இயல் எண்"
 #: source/ui/src/optsolver.src#RID_SCDLG_OPTSOLVER.LB_OP1.Default.StringList.item
 #, fuzzy
 msgid  "Binary"
-msgstr "பைனரி"
+msgstr "Binary"
 
 #: source/ui/src/optsolver.src#RID_SCDLG_OPTSOLVER.IB_RIGHT1.ImageButton.QuickHelpText
 #, fuzzy
@@ -14923,7 +14923,7 @@ msgstr "இயல் எண்"
 #: source/ui/src/optsolver.src#RID_SCDLG_OPTSOLVER.LB_OP2.Default.StringList.item
 #, fuzzy
 msgid  "Binary"
-msgstr "Binary"
+msgstr "பைனரி"
 
 #: source/ui/src/optsolver.src#RID_SCDLG_OPTSOLVER.IB_RIGHT2.ImageButton.QuickHelpText
 #, fuzzy
@@ -16068,7 +16068,7 @@ msgstr "இடையில் இல்லை"
 #: source/ui/src/condfrmt.src#RID_SCDLG_CONDFORMAT.RB_COND1_1.ImageButton.QuickHelpText
 #, fuzzy
 msgid  "Shrink"
-msgstr "இணைப்பு"
+msgstr "இணைக்கப்பட்டது"
 
 #: source/ui/src/condfrmt.src#RID_SCDLG_CONDFORMAT.FT_COND1_AND.FixedText.Text
 #, fuzzy
@@ -16078,7 +16078,7 @@ msgstr "மற்றும்"
 #: source/ui/src/condfrmt.src#RID_SCDLG_CONDFORMAT.RB_COND1_2.ImageButton.QuickHelpText
 #, fuzzy
 msgid  "Shrink"
-msgstr "சுருக்கு"
+msgstr "இணைப்பு"
 
 #: source/ui/src/condfrmt.src#RID_SCDLG_CONDFORMAT.FT_COND1_TEMPLATE.FixedText.Text
 #, fuzzy
@@ -16148,7 +16148,7 @@ msgstr "இடையில் இல்லை"
 #: source/ui/src/condfrmt.src#RID_SCDLG_CONDFORMAT.RB_COND2_1.ImageButton.QuickHelpText
 #, fuzzy
 msgid  "Shrink"
-msgstr "சுருக்கு"
+msgstr "இணைப்பு"
 
 #: source/ui/src/condfrmt.src#RID_SCDLG_CONDFORMAT.FT_COND2_AND.FixedText.Text
 #, fuzzy

@@ -41,7 +41,7 @@ msgstr "Avdelning för teknisk support"
 
 #: inc_openoffice/windows/msi_languages/Property.ulf#OOO_ARPHELPLINKTEMPLATE
 msgid  "http://www.openoffice.org"
-msgstr "http://www.openoffice.org"
+msgstr "http://openoffice.apache.org"
 
 #: inc_openoffice/windows/msi_languages/Property.ulf#OOO_ARPHELPTELEPHONETEMPLATE
 msgid  "x-xxx-xxx-xxx"
@@ -49,7 +49,7 @@ msgstr "x-xxx-xxx-xxx"
 
 #: inc_openoffice/windows/msi_languages/Property.ulf#OOO_ARPURLINFOABOUTTEMPLATE
 msgid  "http://www.openoffice.org"
-msgstr "http://sv.openoffice.org"
+msgstr "http://www.openoffice.org"
 
 #: inc_openoffice/windows/msi_languages/Property.ulf#OOO_ARPURLUPDATEINFOTEMPLATE
 msgid  "http://www.openoffice.org"
@@ -933,7 +933,7 @@ msgstr "Tar bort tjänster"
 
 #: inc_openoffice/windows/msi_languages/ActionTe.ulf#OOO_ACTIONTEXT_18
 msgid  "Service: [1]"
-msgstr "Tjänsten: [1]"
+msgstr "Tjänst: [1]"
 
 #: inc_openoffice/windows/msi_languages/ActionTe.ulf#OOO_ACTIONTEXT_19
 msgid  "Creating duplicate files"
@@ -941,7 +941,7 @@ msgstr "Skapar dubblettfiler"
 
 #: inc_openoffice/windows/msi_languages/ActionTe.ulf#OOO_ACTIONTEXT_20
 msgid  "File: [1],  Directory: [9],  Size: [6]"
-msgstr "Fil: [1], Katalog: [9], Storlek: [6]"
+msgstr "Fil: [1],  Katalog: [9],  Storlek: [6]"
 
 #: inc_openoffice/windows/msi_languages/ActionTe.ulf#OOO_ACTIONTEXT_21
 msgid  "Computing space requirements"
@@ -977,7 +977,7 @@ msgstr "Kopierar nya filer"
 
 #: inc_openoffice/windows/msi_languages/ActionTe.ulf#OOO_ACTIONTEXT_29
 msgid  "File: [1],  Directory: [9],  Size: [6]"
-msgstr "Fil: [1],  Katalog: [9],  Storlek: [6]"
+msgstr "Fil: [1], Katalog: [9], Storlek: [6]"
 
 #: inc_openoffice/windows/msi_languages/ActionTe.ulf#OOO_ACTIONTEXT_30
 msgid  "Installing ODBC components"
@@ -1133,7 +1133,7 @@ msgstr "Tar bort dubblerade filer"
 
 #: inc_openoffice/windows/msi_languages/ActionTe.ulf#OOO_ACTIONTEXT_68
 msgid  "File: [1], Directory: [9]"
-msgstr "Fil: [1], Katalog: [9]"
+msgstr "Fil: [1],  Katalog: [9]"
 
 #: inc_openoffice/windows/msi_languages/ActionTe.ulf#OOO_ACTIONTEXT_69
 msgid  "Updating environment strings"
@@ -1157,7 +1157,7 @@ msgstr "Tar bort filer"
 
 #: inc_openoffice/windows/msi_languages/ActionTe.ulf#OOO_ACTIONTEXT_74
 msgid  "File: [1], Directory: [9]"
-msgstr "Fil: [1],  Katalog: [9]"
+msgstr "Fil: [1], Katalog: [9]"
 
 #: inc_openoffice/windows/msi_languages/ActionTe.ulf#OOO_ACTIONTEXT_75
 msgid  "Removing folders"
@@ -1241,7 +1241,7 @@ msgstr "Startar tjänster"
 
 #: inc_openoffice/windows/msi_languages/ActionTe.ulf#OOO_ACTIONTEXT_95
 msgid  "Service: [1]"
-msgstr "Tjänst: [1]"
+msgstr "Tjänsten: [1]"
 
 #: inc_openoffice/windows/msi_languages/ActionTe.ulf#OOO_ACTIONTEXT_96
 msgid  "Stopping services"
@@ -1481,11 +1481,11 @@ msgstr "Upp en nivå|"
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_14
 msgid  "< &Back"
-msgstr "< &Bakåt"
+msgstr "< &Föregående"
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_17
 msgid  "&Change..."
-msgstr "&Bläddra..."
+msgstr "B&yt…"
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_18
 msgid  "Cancel"
@@ -1513,7 +1513,7 @@ msgstr "{&Tahoma8}&Nätverkskatalog:"
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_24
 msgid  "< &Back"
-msgstr "< &Föregående"
+msgstr "< &Bakåt"
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_25
 msgid  "Cancel"
@@ -1525,7 +1525,7 @@ msgstr "&Nästa >"
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_27
 msgid  "{&TahomaBold10}Welcome to the Installation Wizard for [ProductName]"
-msgstr "{&TahomaBold10}Väkommen till installationsguiden för [ProductName]"
+msgstr "{&TahomaBold10}Välkommen till installationsguiden för [ProductName]"
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_28
 msgid  "The Installation Wizard will create a server image of [ProductName] at a specified network location. To continue, click Next."
@@ -1545,7 +1545,7 @@ msgstr "&Ja"
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_32
 msgid  "< &Back"
-msgstr "< &Föregående"
+msgstr "< &Bakåt"
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_35
 msgid  "Cancel"
@@ -1589,7 +1589,7 @@ msgstr "&Serienummer:"
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_46
 msgid  "< &Back"
-msgstr "< &Föregående"
+msgstr "< &Bakåt"
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_49
 msgid  "Cancel"
@@ -1597,7 +1597,7 @@ msgstr "Avbryt"
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_50
 msgid  "&Change..."
-msgstr "B&yt..."
+msgstr "&Bläddra..."
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_51
 msgid  "&Space"
@@ -1685,7 +1685,7 @@ msgstr "{&Tahoma8}Kommer att ha några underfunktioner installerade på hårddis
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_74
 msgid  "< &Back"
-msgstr "< &Föregående"
+msgstr "< &Bakåt"
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_77
 msgid  "Cancel"
@@ -1717,7 +1717,7 @@ msgstr "&Nästa >"
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_84
 msgid  "< &Back"
-msgstr "< &Föregående"
+msgstr "< &Bakåt"
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_87
 msgid  "Cancel"
@@ -1821,7 +1821,7 @@ msgstr "Upp en nivå|"
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_122
 msgid  "< &Back"
-msgstr "< &Föregående"
+msgstr "< &Bakåt"
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_123
 msgid  "Cancel"
@@ -1845,7 +1845,7 @@ msgstr "Installationsguiden installerar [ProductName] på datorn. Klicka på Nä
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_128
 msgid  "< &Back"
-msgstr "< &Bakåt"
+msgstr "< &Föregående"
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_131
 msgid  "Cancel"
@@ -1865,7 +1865,7 @@ msgstr "&Nästa >"
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_135
 msgid  "< &Back"
-msgstr "< &Bakåt"
+msgstr "< &Föregående"
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_138
 msgid  "Cancel"
@@ -1897,7 +1897,7 @@ msgstr "Ta bort [ProductName] från datorn."
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_146
 msgid  "< &Back"
-msgstr "< &Bakåt"
+msgstr "< &Föregående"
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_147
 msgid  "Cancel"
@@ -1937,7 +1937,7 @@ msgstr "OK"
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_158
 msgid  "< &Back"
-msgstr "< &Bakåt"
+msgstr "< &Föregående"
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_159
 msgid  "Cancel"
@@ -1957,7 +1957,7 @@ msgstr "Installationsguiden installerar korrigeringen för [ProductName] på dat
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_163
 msgid  "< &Back"
-msgstr "< &Bakåt"
+msgstr "< &Föregående"
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_166
 msgid  "Cancel"
@@ -1993,7 +1993,7 @@ msgstr "&Installera"
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_174
 msgid  "< &Back"
-msgstr "< &Bakåt"
+msgstr "< &Föregående"
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_177
 msgid  "Cancel"
@@ -2029,7 +2029,7 @@ msgstr "Avbryt"
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_185
 msgid  "&Finish"
-msgstr "{&Tahoma8}&Slutför"
+msgstr "&Slutför"
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_186
 msgid  "Your system has not been modified. To complete installation at another time, please run setup again."
@@ -2049,7 +2049,7 @@ msgstr "Klicka på Återställ eller Fortsätt senare för att avsluta guiden."
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_190
 msgid  "{&TahomaBold10}Installation Wizard Completed"
-msgstr "{&TahomaBold10}Installationsguiden slutförd"
+msgstr "{&TahomaBold10}Installationsguiden har slutförts"
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_191
 msgid  "The wizard was interrupted before [ProductName] could be completely installed."
@@ -2077,11 +2077,11 @@ msgstr "Öppna filen Viktigt"
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_197
 msgid  "&Finish"
-msgstr "&Slutför"
+msgstr "{&Tahoma8}&Slutför"
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_198
 msgid  "{&TahomaBold10}Installation Wizard Completed"
-msgstr "{&TahomaBold10}Installationsguiden har slutförts"
+msgstr "{&TahomaBold10}Installationsguiden slutförd"
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_199
 msgid  "The Installation Wizard has successfully installed [ProductName]. Click Finish to exit the wizard."

@@ -1663,7 +1663,7 @@ msgstr "~null အသုံးပြုပါ"
 #: source/ui/dlg/RelationDlg.src#DLG_REL_PROPERTIES.RB_CASC_UPD_DEFAULT.RadioButton.Text
 #, fuzzy
 msgid  "Set ~default"
-msgstr "~ပုံသေ အသုံးပြုပါ"
+msgstr "~နဂိုမူလအသုံးပြုပါ"
 
 #: source/ui/dlg/RelationDlg.src#DLG_REL_PROPERTIES.FL_CASC_DEL.FixedLine.Text
 #, fuzzy
@@ -1698,22 +1698,22 @@ msgstr "စနစ်တကျစီထားပါ"
 #: source/ui/dlg/queryorder.src#DLG_ORDERCRIT.LB_ORDERVALUE1.Default.StringList.item
 #, fuzzy
 msgid  "ascending"
-msgstr "ငယ်စဉ်ကြီးလိုက်စီခြင်း"
+msgstr "ငယ်စဉ်ကြီးလိုက်စီပါ"
 
 #: source/ui/dlg/queryorder.src#DLG_ORDERCRIT.LB_ORDERVALUE1.Default.StringList.item
 #, fuzzy
 msgid  "descending"
-msgstr "ကြီးစဉ်ငယ်လိုက်စီခြင်း"
+msgstr "ကြီးစဉ်ငယ်လိုက်စီပါ"
 
 #: source/ui/dlg/queryorder.src#DLG_ORDERCRIT.LB_ORDERVALUE2.Default.StringList.item
 #, fuzzy
 msgid  "ascending"
-msgstr "ငယ်စဉ်ကြီးလိုက်စီပါ"
+msgstr "ငယ်စဉ်ကြီးလိုက်စီခြင်း"
 
 #: source/ui/dlg/queryorder.src#DLG_ORDERCRIT.LB_ORDERVALUE2.Default.StringList.item
 #, fuzzy
 msgid  "descending"
-msgstr "ကြီးစဉ်ငယ်လိုက်စီပါ"
+msgstr "ကြီးစဉ်ငယ်လိုက်စီခြင်း"
 
 #: source/ui/dlg/queryorder.src#DLG_ORDERCRIT.LB_ORDERVALUE3.Default.StringList.item
 #, fuzzy
@@ -2099,7 +2099,7 @@ msgstr "ဒေတာဘေ့စ်အခြေခံဖိုင်အတွက
 #: source/ui/dlg/dbadmin.src#AUTO_FIXEDLINE_CONNSETTINGS(AUTO_Y).FL_SEPARATOR1.FixedLine.Text
 #, fuzzy
 msgid  "Connection Settings"
-msgstr "ချိတ်ဆက်မှုအတွက် ပြင်ဆင်ချိန်ညှိမှုများ"
+msgstr "အချိတ်အဆက် ပြင်ဆင်ချိန်ညှိမှုများ"
 
 #: source/ui/dlg/dbadmin.src#AUTO_HOST_AND_PORT(AUTO_Y).FT_HOSTNAME.FixedText.Text
 #, fuzzy
@@ -2109,7 +2109,7 @@ msgstr "~အိမ်ရှင်အမည်"
 #: source/ui/dlg/dbadmin.src#AUTO_HOST_AND_PORT(AUTO_Y).FT_PORTNUMBER.FixedText.Text
 #, fuzzy
 msgid  "~Port number"
-msgstr "~ပေါ့ထ် နံပါတ်"
+msgstr "~ပေါ့ထ်နံပါတ်"
 
 #: source/ui/dlg/dbadmin.src#DLG_DATABASE_ADMINISTRATION.STR_PAGETITLE_GENERAL.String.Text
 #, fuzzy
@@ -2247,7 +2247,7 @@ msgstr "ODBC~ ရွေးပိုင်ခွင့်များ"
 #: source/ui/dlg/dbadmin.src#PAGE_ADABAS.FL_SEPARATOR1.FixedLine.Text
 #, fuzzy
 msgid  "Connection Settings"
-msgstr "အချိတ်အဆက် ပြင်ဆင်ချိန်ညှိမှုများ"
+msgstr "ချိတ်ဆက်မှုအတွက် ပြင်ဆင်ချိန်ညှိမှုများ"
 
 #: source/ui/dlg/dbadmin.src#PAGE_ADABAS.FT_HOSTNAME.FixedText.Text
 #, fuzzy
@@ -2297,7 +2297,7 @@ msgstr "MySQL JDBC ဒရိုင်ဘာအမျိုးအစား"
 #: source/ui/dlg/dbadmin.src#PAGE_MYSQL_JDBC.PB_TESTDRIVERCLASS.PushButton.Text
 #, fuzzy
 msgid  "Test class"
-msgstr "အမျိုးအစား စစ်ဆေးပါ"
+msgstr "အမျိုးအစားစစ်ဆေးပါ"
 
 #: source/ui/dlg/dbadmin.src#PAGE_MYSQL_NATIVE.FL_SEPARATOR2.FixedLine.Text
 #, fuzzy
@@ -2837,7 +2837,7 @@ msgstr "dBASE ချိတ်ဆက်မှု ဆော့ဖ်ဝဲလ် �
 #: source/ui/dlg/dbadminsetup.src#DLG_DATABASE_WIZARD.STR_PAGETITLE_TEXT.String.Text
 #, fuzzy
 msgid  "Set up a connection to text files"
-msgstr "စာသားဖိုင်များသို့စတင်ချိတ်ဆက်အသုံးပြုပါ"
+msgstr "စာသားဖိုင်များသို့ စတင်ချိတ်ဆက်အသုံးပြုပါ"
 
 #: source/ui/dlg/dbadminsetup.src#DLG_DATABASE_WIZARD.STR_PAGETITLE_MSACCESS.String.Text
 #, fuzzy
@@ -4156,8 +4156,9 @@ msgid  "~Entry required"
 msgstr "လိုအပ်သည့် အဝင်"
 
 #: source/ui/tabledesign/table.src#STR_TEXT_LENGTH.String.Text
+#, fuzzy
 msgid  "~Length"
-msgstr "~အလျား"
+msgstr "အလျား"
 
 #: source/ui/tabledesign/table.src#STR_NUMERIC_TYPE.String.Text
 #, fuzzy

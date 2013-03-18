@@ -37,7 +37,7 @@ msgstr "Arkaplan"
 
 #: source/core/glob.src#STR_LAYER_BCKGRNDOBJ.String.Text
 msgid  "Background objects"
-msgstr "Arkaplan nesneleri"
+msgstr "Arkaplan Nesneleri"
 
 #: source/core/glob.src#STR_LAYER_LAYOUT.String.Text
 msgid  "Layout"
@@ -341,7 +341,7 @@ msgstr "$(ARG1)(satır,sütun)  adresinde dosya biçim hatası bulundu"
 
 #: source/core/glob.src#RID_SD_ERRHDL.ERR_CODE ( ERRCODE_CLASS_READ , ERR_FORMAT_FILE_ROWCOL ).String.Text
 msgid  "Format error discovered in the file in sub-document $(ARG1) at position $(ARG2)(row,col)."
-msgstr "Alt belge $(ARG1) da $(ARG2)(row,col) pozisyonunda dosya biçim hatası bulundu."
+msgstr "Alt döküman $(ARG1) içinde $(ARG2)(row,col) konumunda dosya biçim hatası bulundu."
 
 #: source/core/glob.src#RID_SD_ERRHDL.ERR_CODE ( ERRCODE_CLASS_READ , WARN_FORMAT_FILE_ROWCOL ).String.Text
 msgid  "Format error discovered in the file in sub-document $(ARG1) at position $(ARG2)(row,col)."
@@ -1481,7 +1481,7 @@ msgstr "~Ekle..."
 #: source/ui/app/popup2_tmpl.src#RID_GRAPHIC_TABLE_POPUP.DUMMY.SID_TABLE_DELETE_ROW.MenuItem.Text
 #, fuzzy
 msgid  "~Delete"
-msgstr "Sil"
+msgstr "S~il"
 
 #: source/ui/app/popup2_tmpl.src#RID_GRAPHIC_TABLE_POPUP.DUMMY.MenuItem.Text
 #, fuzzy
@@ -3881,7 +3881,7 @@ msgstr "~Bütün Slaytlara Uygula"
 #: source/ui/app/popup.src#RID_TASKPANE_MASTERPAGESSELECTOR_POPUP.SID_TP_APPLY_TO_SELECTED_SLIDES.MenuItem.Text
 #, fuzzy
 msgid  "Apply to ~Selected Slides"
-msgstr "Seçilmiş ~Slaytlara Uygula"
+msgstr "~Seçilmiş Slaytlara Uygula"
 
 #: source/ui/app/popup.src#RID_TASKPANE_MASTERPAGESSELECTOR_POPUP.SID_TP_SHOW_LARGE_PREVIEW.MenuItem.Text
 #, fuzzy
@@ -4354,8 +4354,9 @@ msgid  "~Grayscale"
 msgstr "Gri tonlama"
 
 #: source/ui/app/menuids2_tmpl.src#MN_OUTPUT_QUALITY_BLACKWHITE.SID_OUTPUT_QUALITY_BLACKWHITE.MenuItem.Text
+#, fuzzy
 msgid  "~Black and White"
-msgstr "Siyah ve Beyaz"
+msgstr "Siyah beyaz"
 
 #: source/ui/app/menuids2_tmpl.src#MN_OUTPUT_QUALITY_CONTRAST.SID_OUTPUT_QUALITY_CONTRAST.MenuItem.Text
 #, fuzzy

@@ -233,7 +233,7 @@ msgstr "ကျန်သော အချိန် - {[1] မိနစ် }[2] စ
 #: inc_openoffice/windows/msi_languages/Error.ulf#OOO_ERROR_16
 #, fuzzy
 msgid  "Out of memory. Shut down other applications before retrying."
-msgstr "မှတ်ဉာဏ်ပြင်ပ။ ပြန်လည်မကြိုးစားခင် အခြားအသုံးပြုသော ပရိုဂရမ်များ ပိတ်ပါ။"
+msgstr "မှတ်ဉာဏ်ပြင်ပ။ ပြန်မကြိုးစားခင် အခြား အသုံးပြုချ ပရိုဂရမ်များကို ပိတ်ပါ။"
 
 #: inc_openoffice/windows/msi_languages/Error.ulf#OOO_ERROR_17
 #, fuzzy
@@ -873,7 +873,7 @@ msgstr "ဤလက္ခဏာရပ်များနှင့် လက္ခ�
 #: inc_openoffice/windows/msi_languages/UIText.ulf#OOO_UITEXT_10
 #, fuzzy
 msgid  "This feature will be installed to run from CD."
-msgstr "စီဒီမှ အသုံးပြုရန် ဤလက္ခဏာရပ်များ ထည့်သွင်းလိမ့်မည်။"
+msgstr "စီဒီတွင် အသုံးပြုရန် ဤလက္ခဏာရပ်များ ထည့်သွင်းလိမ့်မည်။"
 
 #: inc_openoffice/windows/msi_languages/UIText.ulf#OOO_UITEXT_11
 #, fuzzy
@@ -1118,7 +1118,7 @@ msgstr "IIS ပကတိနီးပါး ရင်းမြစ်များ 
 #: inc_openoffice/windows/msi_languages/ActionTe.ulf#OOO_ACTIONTEXT_10
 #, fuzzy
 msgid  "Searching for qualifying products"
-msgstr "အရည်သွေးပြည့်ထုတ်ကုန်များ ရှာဖွေခြင်း"
+msgstr "အရည်အသွေးပြည့်ထုတ်ကုန်များ ရှာဖွေနေသည်"
 
 #: inc_openoffice/windows/msi_languages/ActionTe.ulf#OOO_ACTIONTEXT_11
 #, fuzzy
@@ -1168,7 +1168,7 @@ msgstr "မူပွားဖိုင်များ ဖန်တီးထာ�
 #: inc_openoffice/windows/msi_languages/ActionTe.ulf#OOO_ACTIONTEXT_20
 #, fuzzy
 msgid  "File: [1],  Directory: [9],  Size: [6]"
-msgstr "ဖိုင်- [1]၊ ဒိုင်ယာထရီ - [9]၊ အရွယ်အစား - [6]"
+msgstr "ဖိုင်-[1]၊ ဒိုင်ယာထရီ [9]၊ အရွယ်အစား - [6]"
 
 #: inc_openoffice/windows/msi_languages/ActionTe.ulf#OOO_ACTIONTEXT_21
 #, fuzzy
@@ -1213,7 +1213,7 @@ msgstr "ဖိုင်အသစ်များ မိတ္တူကူးယ�
 #: inc_openoffice/windows/msi_languages/ActionTe.ulf#OOO_ACTIONTEXT_29
 #, fuzzy
 msgid  "File: [1],  Directory: [9],  Size: [6]"
-msgstr "ဖိုင်-[1]၊ အညွှန်း-[9]၊ အရွယ်အစား-[6]"
+msgstr "ဖိုင်- [1]၊ ဒိုင်ယာထရီ - [9]၊ အရွယ်အစား - [6]"
 
 #: inc_openoffice/windows/msi_languages/ActionTe.ulf#OOO_ACTIONTEXT_30
 #, fuzzy
@@ -1293,7 +1293,7 @@ msgstr "အရည်အသွေး ပြည့်မီသော အစိတ�
 #: inc_openoffice/windows/msi_languages/ActionTe.ulf#OOO_ACTIONTEXT_45
 #, fuzzy
 msgid  "Component ID: [1], Qualifier: [2]"
-msgstr "အစိတ်အပိုင်း အိုင်ဒီ - [1] အရည်အသွေးပြည့်၀မှု- [2]"
+msgstr "အစိတ်အပိုင်းအိုင်ဒီ-[1]၊ အရည်အသွေးပြည့်မှု-[2]"
 
 #: inc_openoffice/windows/msi_languages/ActionTe.ulf#OOO_ACTIONTEXT_46
 #, fuzzy
@@ -1303,7 +1303,7 @@ msgstr "ထုတ်ကုန် အင်္ဂါရပ်များ ထု�
 #: inc_openoffice/windows/msi_languages/ActionTe.ulf#OOO_ACTIONTEXT_47
 #, fuzzy
 msgid  "Feature: [1]"
-msgstr "အင်္ဂါရပ် - [1]"
+msgstr "အင်္ဂါရပ်-[1]"
 
 #: inc_openoffice/windows/msi_languages/ActionTe.ulf#OOO_ACTIONTEXT_48
 #, fuzzy
@@ -1318,7 +1318,7 @@ msgstr "ဆာဗာအမျိုးအစားများ မှတ်ပ�
 #: inc_openoffice/windows/msi_languages/ActionTe.ulf#OOO_ACTIONTEXT_50
 #, fuzzy
 msgid  "Class ID: [1]"
-msgstr "အမျိုးအစားအိုင်ဒီ - [1]"
+msgstr "အမျိုးအစား အိုင်ဒီ-[1]"
 
 #: inc_openoffice/windows/msi_languages/ActionTe.ulf#OOO_ACTIONTEXT_51
 #, fuzzy
@@ -1338,7 +1338,7 @@ msgstr "ဆာဗာများတိုးချဲ့မှု မှတ်�
 #: inc_openoffice/windows/msi_languages/ActionTe.ulf#OOO_ACTIONTEXT_54
 #, fuzzy
 msgid  "Extension: [1]"
-msgstr "တိုးချဲ့ခြင်း - [1]"
+msgstr "တိုးချဲ့မှု-[1]"
 
 #: inc_openoffice/windows/msi_languages/ActionTe.ulf#OOO_ACTIONTEXT_55
 #, fuzzy
@@ -1358,7 +1358,7 @@ msgstr "မှတ်တမ်းတင်သည့် MIME သတင်း အ�
 #: inc_openoffice/windows/msi_languages/ActionTe.ulf#OOO_ACTIONTEXT_58
 #, fuzzy
 msgid  "MIME Content Type: [1], Extension: [2]"
-msgstr "MIME မာတိကာပုံစံ- [1]၊ တိုးချဲ့ခြင်း -[2]"
+msgstr "MIME မာတိကာ ပုံစံ - [1]၊ တိုးချဲ့ခြင်း -[2]"
 
 #: inc_openoffice/windows/msi_languages/ActionTe.ulf#OOO_ACTIONTEXT_59
 #, fuzzy
@@ -1418,7 +1418,7 @@ msgstr "စာကြောင်းဝန်းကျင်၏ နောက်�
 #: inc_openoffice/windows/msi_languages/ActionTe.ulf#OOO_ACTIONTEXT_70
 #, fuzzy
 msgid  "Name: [1], Value: [2], Action [3]"
-msgstr "အမည်-[1]၊ တန်ဖိုး-[2]၊ လုပ်ဆောင်ချက်[3]"
+msgstr "အမည်-[1]၊တန်ဖိုး-[2]၊လုပ်ဆောင်ချက်[3]"
 
 #: inc_openoffice/windows/msi_languages/ActionTe.ulf#OOO_ACTIONTEXT_71
 #, fuzzy
@@ -1812,12 +1812,12 @@ msgstr "&တွင်ကြည့်ပါ-"
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_6
 #, fuzzy
 msgid  "Browse to the destination folder."
-msgstr "ဖိုင်တွဲ သွားရမည့် နေရာသို့  ရှာကြည့်ပါ"
+msgstr "ဖိုင်တွဲ သွားရမည့် နေရာသို့ ရှာကြည့်ပါ။"
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_7
 #, fuzzy
 msgid  "{&MSSansBold8}Change Current Destination Folder"
-msgstr "{&PadaukBold8}လက်ရှိသွားရမည့် နေရာဖိုင်တွဲ ပြောင်းပါ"
+msgstr "{&MSSansBold8} လက်ရှိ မူလဖိုဒါကို ပြောင်းလဲသည်"
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_9
 #, fuzzy
@@ -1832,7 +1832,7 @@ msgstr "အိုကေ"
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_12
 #, fuzzy
 msgid  "&Folder name:"
-msgstr "ဖိုင်တွဲ အမည်-"
+msgstr "&ဖိုင်တွဲ အမည်-"
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_13
 #, fuzzy
@@ -1872,7 +1872,7 @@ msgstr "{&PadaukBold8}ကွန်ယက်စနစ်နေရာ"
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_22
 #, fuzzy
 msgid  "&Install"
-msgstr "&ထည့်သွင်းပါ"
+msgstr "& ထည့်သွင်းပါ"
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_23
 #, fuzzy
@@ -1892,12 +1892,12 @@ msgstr "ရုတ်သိမ်းပါ"
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_26
 #, fuzzy
 msgid  "&Next >"
-msgstr "&နောက်ထပ်>"
+msgstr "&နောက်ထပ် >"
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_27
 #, fuzzy
 msgid  "{&TahomaBold10}Welcome to the Installation Wizard for [ProductName]"
-msgstr "{&TahomaBold10} [ProductName] အတွက် လမ်းညွှန်၀ဇ္ဇတ် ထည့်သွင်းမှုကို ကြိုဆိုပါ၏"
+msgstr "{&TahomaBold10} [ProductName] အတွက် လမ်းညွှန်၀ဇ္ဇတ်ထည့်သွင်းမှုကို ကြိုဆိုပါ၏"
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_28
 #, fuzzy
@@ -1967,7 +1967,7 @@ msgstr "&အသုံးပြုသူ အမည်-"
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_43
 #, fuzzy
 msgid  "&Next >"
-msgstr "နောက်ထပ် >"
+msgstr "&နောက်ထပ် >"
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_45
 #, fuzzy
@@ -2037,7 +2037,7 @@ msgstr "<ရွေးချယ်ထားသည့် အင်္ဂါရပ�
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_60
 #, fuzzy
 msgid  "&Next >"
-msgstr "&နောက်ထပ်>"
+msgstr "&နောက်ထပ် >"
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_61
 #, fuzzy
@@ -2112,7 +2112,7 @@ msgstr "&ပြောင်းလဲပါ..."
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_79
 #, fuzzy
 msgid  "Click Next to install to this folder, or click Change to install to a different folder."
-msgstr "ဤဖိုင်တွဲကို ထည့်သွင်းရန် (နောက်ထပ်)ကို ကလစ်နှိပ်ပါ။  (သို့) အခြား ဖိုင်တွဲတစ်ခု ထည့်သွင်းရန် (ပြောင်းလဲရန်)ကို ကလစ်နှိပ်ပါ။"
+msgstr "ဤဖိုင်တွဲကို ထည့်သွင်းရန် (နောက်ထပ်)ကို ကလစ်နှိပ်ပါ။ (သို့) အခြား ဖိုင်တွဲတစ်ခု ထည့်သွင်းရန် (ပြောင်းလဲရန်)ကို ကလစ်နှိပ်ပါ။"
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_80
 #, fuzzy
@@ -2167,7 +2167,7 @@ msgstr "[INSTALLDIR]"
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_92
 #, fuzzy
 msgid  "Install [ProductName] to:"
-msgstr "သို့ [ProductName] ကိုထည့်သွင်းပါ-"
+msgstr "သို့ [ProductName] ထည့်သွင်းပါ"
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_93
 #, fuzzy
@@ -2182,7 +2182,7 @@ msgstr "ရွေးချယ်ထားသည့် အင်္ဂါရပ�
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_97
 #, fuzzy
 msgid  "The highlighted volumes do not have enough disk space available for the currently selected features. You can remove files from the highlighted volumes, choose to install less features onto local drives, or select different destination drives."
-msgstr "လက်ရှိ ရွေးချယ်ထားသည့် အင်္ဂါရပ်များအတွက် ဒစ်ခ် နေရာလွတ် မလုံလောက်ပါ။ အသားပေးထားသည့် အတွဲများမှ ဖိုင်များ ဖယ်ရှားနိုင်သည်၊ အတွင်းရှိ ဒရိုက်များပေါ်သို့ တင်ပို့ရန် အင်္ဂါရပ်အနည်းငယ်ကို ရွေးချယ်ပါ (သို့) အခြားဦတည်သွားရမည့် ဒရိုက်များကို ရွေးချယ်သတ်မှတ်ပါ။"
+msgstr "လက်ရှိ ရွေးချယ်ထားသည့် အင်္ဂါရပ်များအတွက် ဒစ်ခ်နေရာ မလုံလောက်ပါ။ အသားပေးထားသည့် အတွဲများမှ ဖိုင်များကို ဖယ်ရှားနိုင်သည်၊ အတွင်းရှိ ဒရိုက်များပေါ်သို့ လက္ခဏာရပ်ငယ်များ ထည့်သွင်းရန် ရွေးချယ်ပါ (သို့) အခြား ဒရိုက်များကို ရွေးချယ်ပါ။"
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_98
 #, fuzzy
@@ -2217,7 +2217,7 @@ msgstr "&ထွက်ပါ"
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_107
 #, fuzzy
 msgid  "&Ignore"
-msgstr "&လစ်လျူရှုပါ"
+msgstr "&လစ်လျူရှုပါ\t"
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_108
 #, fuzzy
@@ -2286,7 +2286,7 @@ msgstr "&နောက်ထပ် >"
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_126
 #, fuzzy
 msgid  "{&TahomaBold10}Welcome to the Installation Wizard for [ProductName]"
-msgstr "{&PadaukBold10} [ProductName] ထည့်သွင်းခြင်း လမ်းညွှန်၀ဇ္ဇတ်ကို ကြိုဆိုပါ၏"
+msgstr "{&TahomaBold10} [ProductName] အတွက် လမ်းညွှန်၀ဇ္ဇတ် ထည့်သွင်းမှုကို ကြိုဆိုပါ၏"
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_127
 #, fuzzy
@@ -2536,12 +2536,12 @@ msgstr "သင့်နည်းစနစ်ကို အထူးမပြု�
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_187
 #, fuzzy
 msgid  "Click Finish to exit the wizard."
-msgstr "ဝဇ္ဇတ်မှ ထွက်ရန် ’ပြီးစီးပြီ’ ကို ကလစ်နှိပ်ပါ။"
+msgstr "ဝိဇ္ဇတ်မှ ထွက်ရန် ’ပြီးစီးပြီ’ ကို ကလစ်နှိပ်ပါ။"
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_188
 #, fuzzy
 msgid  "You can either keep any existing installed elements on your system to continue this installation at a later time or you can restore your system to its original state prior to the installation."
-msgstr "နောင်တချိန်တွင် သင့်ကွန်ပျူတာပေါ်ရှိ ဤထည့်သွင်းမှုများ ဆက်လက်လုပ်ဆောင်နိုင်ရန် ရှိပြီး အချက်အလက်ထည့်သွင်းမှုများကို ထိန်းသိမ်းပါ။ (သို့) ထည့်သွင်းမှု မပြုမီက သင့်စနစ်၏ နဂိုမူလ အခြေအနေများကို ထိန်သိမ်းထားနိုင်သည်။"
+msgstr "နောင်တချိန်တွင် သင့်ကွန်ပျူတာပေါ်ရှိ ဤထည့်သွင်းမှုများ ဆက်လက်လုပ်ဆောင်နိုင်ရန် ရှိပြီး အချက်အလက်ထည့်သွင်းမှုများကို ထိန်းသိမ်းပါ။(သို့)ထည့်သွင်းမှု မပြုမီက သင့်စနစ်၏ နဂိုမူလ အခြေအနေများကို ထိန်သိမ်းထားနိုင်သည်။"
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_189
 #, fuzzy
@@ -2551,12 +2551,12 @@ msgstr "၀ဇ္ဇတ်မှ ထွက်ရန် ‘ထိန်းသိ�
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_190
 #, fuzzy
 msgid  "{&TahomaBold10}Installation Wizard Completed"
-msgstr "{&PadaukBold10} ဝိဇ္ဇတ်ထည့်သွင်းခြင်း ပြီးပြည့်စုံပြီ"
+msgstr "{&TahomaBold10} ထည့်သွင်းမှု လမ်းညွှန်၀ဇ္ဇတ် ပြည့်စုံပြီ"
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_191
 #, fuzzy
 msgid  "The wizard was interrupted before [ProductName] could be completely installed."
-msgstr "[ProductName] ထည့်သွင်းမှု ပြည့်စုံပြီးနောက် ၀ဇ္ဇတ်မှ ကြားဖြတ်ဝင်ရောက်ခဲ့သည်။"
+msgstr "[ProductName] ထည့်သွင်းမှု မပြည့်စုံမီ ၀ဇ္ဇတ်မှ ကြားဖြတ်ဝင်ရောက်ခဲ့သည်။"
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_192
 #, fuzzy

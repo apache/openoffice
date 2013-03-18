@@ -37,7 +37,7 @@ msgstr "olanaksız"
 
 #: source/core/undo/undo.src#STR_DELETE_UNDO.String.Text
 msgid  "Delete $1"
-msgstr "$1 Ekle"
+msgstr "$1 Sil"
 
 #: source/core/undo/undo.src#STR_INSERT_UNDO.String.Text
 msgid  "Insert $1"
@@ -741,7 +741,7 @@ msgstr "Bu dosya WinWord97 dosyası değil"
 
 #: source/ui/app/error.src#RID_SW_ERRHDL.ERR_CODE ( ERRCODE_CLASS_READ , ERR_FORMAT_FILE_ROWCOL ).String.Text
 msgid  "Format error discovered in the file in sub-document $(ARG1) at $(ARG2)(row,col)."
-msgstr "Dosya biçim hatası $(ARGI)(satır, sütun) bulundu"
+msgstr "Alt metin $(ARG1) içerisinde $(ARG2)(satır,sütun) da dosya biçim hatası meydana geldi."
 
 #: source/ui/app/error.src#RID_SW_ERRHDL.ERR_CODE ( ERRCODE_CLASS_WRITE , ERR_SWG_WRITE_ERROR ).String.Text
 msgid  "Error writing file."
@@ -1385,7 +1385,7 @@ msgstr "En Uygun Yükseklik"
 #: source/ui/app/mn.src#MN_TAB2.MN_SUB_TBLROW.FN_TABLE_BALANCE_ROWS.MenuItem.Text
 #, fuzzy
 msgid  "Space ~Equally"
-msgstr "Eşit Dağılım"
+msgstr "~Eşit Dağılım"
 
 #: source/ui/app/mn.src#MN_TAB2.MN_SUB_TBLROW.FN_TABLE_SELECT_ROW.MenuItem.Text
 #, fuzzy
@@ -1560,7 +1560,7 @@ msgstr "Arkaplanda"
 #: source/ui/app/mn.src#MN_MOUSE_FRAME_BEGIN.MN_WRAP.FN_WRAP_ANCHOR_ONLY.MenuItem.Text
 #, fuzzy
 msgid  "~First Paragraph"
-msgstr "İlk paragraf"
+msgstr "İlk Paragraf"
 
 #: source/ui/app/mn.src#MN_DRAW_POPUPMENU.String.Text
 #, fuzzy
@@ -5443,8 +5443,9 @@ msgid  "Section"
 msgstr "Bölüm"
 
 #: source/ui/dialog/regionsw.src#DLG_INSERT_SECTION.1.TP_COLUMN.PageItem.Text
+#, fuzzy
 msgid  "Columns"
-msgstr "Sütun"
+msgstr "Sütunlar"
 
 #: source/ui/dialog/regionsw.src#DLG_INSERT_SECTION.1.TP_SECTION_INDENTS.PageItem.Text
 #, fuzzy
@@ -5532,8 +5533,9 @@ msgid  "Be~fore"
 msgstr "Ön~ce"
 
 #: source/ui/dialog/regionsw.src#TP_SECTION_FTNENDNOTES.FT_FTN_SUFFIX.FixedText.Text
+#, fuzzy
 msgid  "Aft~er"
-msgstr "~Sonra"
+msgstr "Sonr~a"
 
 #: source/ui/dialog/regionsw.src#TP_SECTION_FTNENDNOTES.FL_END.FixedLine.Text
 #, fuzzy
@@ -5827,7 +5829,7 @@ msgstr "Grafiği Kaydet..."
 #: source/ui/docvw/docvw.src#MN_READONLY_POPUP.MN_READONLY_GRAPHICTOGALLERY.MN_READONLY_TOGALLERYLINK.MenuItem.Text
 #, fuzzy
 msgid  "As Link"
-msgstr "Bağlantı olarak"
+msgstr "Bağlantı Olarak"
 
 #: source/ui/docvw/docvw.src#MN_READONLY_POPUP.MN_READONLY_GRAPHICTOGALLERY.MN_READONLY_TOGALLERYCOPY.MenuItem.Text
 #, fuzzy
@@ -8630,8 +8632,9 @@ msgid  "~Previous link"
 msgstr "~Önceki bağlantı"
 
 #: source/ui/frmdlg/frmpage.src#TP_FRM_ADD.LB_PREV.item1.StringList.item
+#, fuzzy
 msgid  "<None>"
-msgstr "<Hiçbiri>"
+msgstr "<Hiçbiri)"
 
 #: source/ui/frmdlg/frmpage.src#TP_FRM_ADD.FT_NEXT.FixedText.Text
 #, fuzzy
@@ -9127,8 +9130,9 @@ msgid  "Below"
 msgstr "Altta"
 
 #: source/ui/frmdlg/cption.src#DLG_CAPTION.STR_CATEGORY_NONE.String.Text
+#, fuzzy
 msgid  "<None>"
-msgstr "Hiçbiri"
+msgstr "<Hiçbiri>"
 
 #: source/ui/frmdlg/cption.src#DLG_SEQUENCE_OPTION.ModalDialog.Text
 #, fuzzy
@@ -9146,8 +9150,9 @@ msgid  "~Level"
 msgstr "D~üzey"
 
 #: source/ui/frmdlg/cption.src#DLG_SEQUENCE_OPTION.LB_LEVEL.item1.StringList.item
+#, fuzzy
 msgid  "<None>"
-msgstr "<Hiçbiri>"
+msgstr "Hiçbiri"
 
 #: source/ui/frmdlg/cption.src#DLG_SEQUENCE_OPTION.FT_SEPARATOR.FixedText.Text
 #, fuzzy
@@ -9540,8 +9545,9 @@ msgid  "~Additional Styles"
 msgstr "~Ek Biçemler"
 
 #: source/ui/index/cnttab.src#TP_TOX_SELECT.ST_USER_ADDSTYLE.String.Text
+#, fuzzy
 msgid  "Styl~es"
-msgstr "~Biçemler"
+msgstr "Biçeml~er"
 
 #: source/ui/index/cnttab.src#TP_TOX_SELECT.CB_TOXMARKS.CheckBox.Text
 #, fuzzy
@@ -11413,7 +11419,7 @@ msgstr "Numaralama"
 #: source/ui/misc/docfnote.src#TP_FOOTNOTEOPTION.FT_OFFSET.FixedText.Text
 #, fuzzy
 msgid  "~Start at"
-msgstr "Başlangıç"
+msgstr "~Başlangıç"
 
 #: source/ui/misc/docfnote.src#TP_FOOTNOTEOPTION.FT_NUMCOUNT.FixedText.Text
 #, fuzzy
@@ -11438,12 +11444,12 @@ msgstr "Her belge için"
 #: source/ui/misc/docfnote.src#TP_FOOTNOTEOPTION.FT_PREFIX.FixedText.Text
 #, fuzzy
 msgid  "~Before"
-msgstr "Önce"
+msgstr "~Önce"
 
 #: source/ui/misc/docfnote.src#TP_FOOTNOTEOPTION.FT_SUFFIX.FixedText.Text
 #, fuzzy
 msgid  "~After"
-msgstr "Sonra"
+msgstr "~Sonra"
 
 #: source/ui/misc/docfnote.src#TP_FOOTNOTEOPTION.FT_POS.FixedText.Text
 #, fuzzy
@@ -11468,12 +11474,12 @@ msgstr "Biçemler"
 #: source/ui/misc/docfnote.src#TP_FOOTNOTEOPTION.FT_PARA_TEMPL.FixedText.Text
 #, fuzzy
 msgid  "Pa~ragraph"
-msgstr "Paragraf"
+msgstr "Pa~ragraf"
 
 #: source/ui/misc/docfnote.src#TP_FOOTNOTEOPTION.FT_PAGE_TEMPL.FixedText.Text
 #, fuzzy
 msgid  "~Page"
-msgstr "Sayfa"
+msgstr "~Sayfa"
 
 #: source/ui/misc/docfnote.src#TP_FOOTNOTEOPTION.FL_CHAR_TEMPL.FixedLine.Text
 #, fuzzy
@@ -11483,7 +11489,7 @@ msgstr "Karakter Biçemleri"
 #: source/ui/misc/docfnote.src#TP_FOOTNOTEOPTION.FT_ANCHR_CHARFMT.FixedText.Text
 #, fuzzy
 msgid  "Te~xt area"
-msgstr "Metin alanı"
+msgstr "Metin a~lanı"
 
 #: source/ui/misc/docfnote.src#TP_FOOTNOTEOPTION.FT_TEXT_CHARFMT.FixedText.Text
 #, fuzzy
@@ -13872,24 +13878,29 @@ msgid  "WWW document"
 msgstr "WWW belgesi"
 
 #: source/ui/utlui/initui.src#STR_AUTH_TYPE_CUSTOM1.String.Text
+#, fuzzy
 msgid  "User-defined1"
-msgstr "Kullanıcı tanımlı 1"
+msgstr "Kullanıcı tanımlı1"
 
 #: source/ui/utlui/initui.src#STR_AUTH_TYPE_CUSTOM2.String.Text
+#, fuzzy
 msgid  "User-defined2"
-msgstr "Kullanıcı tanımlı 2"
+msgstr "Kullanıcı tanımlı2"
 
 #: source/ui/utlui/initui.src#STR_AUTH_TYPE_CUSTOM3.String.Text
+#, fuzzy
 msgid  "User-defined3"
-msgstr "Kullanıcı tanımlı 3"
+msgstr "Kullanıcı tanımlı3"
 
 #: source/ui/utlui/initui.src#STR_AUTH_TYPE_CUSTOM4.String.Text
+#, fuzzy
 msgid  "User-defined4"
-msgstr "Kullanıcı tanımlı 4"
+msgstr "Kullanıcı tanımlı4"
 
 #: source/ui/utlui/initui.src#STR_AUTH_TYPE_CUSTOM5.String.Text
+#, fuzzy
 msgid  "User-defined5"
-msgstr "Kullanıcı tanımlı 5"
+msgstr "Kullanıcı tanımlı5"
 
 #: source/ui/utlui/initui.src#STR_AUTH_FIELD_IDENTIFIER.String.Text
 #, fuzzy

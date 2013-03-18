@@ -457,7 +457,7 @@ msgstr "จำนวนวันทำงานก่อนหรือหลั
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Workday.6.String.Text
 msgid  "Holidays"
-msgstr "วันหยุดนักขัตฤกษ์"
+msgstr "วันหยุด"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Workday.7.String.Text
 msgid  "List of date values of days off (vacation, holidays, etc.)"
@@ -661,7 +661,7 @@ msgstr "เศษ"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Quotient.3.String.Text
 msgid  "The dividend"
-msgstr "จำนวนที่ถูกหาร"
+msgstr "ตัวตั้งหาร"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Quotient.4.String.Text
 msgid  "Denominator"
@@ -837,7 +837,7 @@ msgstr "ตัวเลข"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Bin2Oct.3.String.Text
 msgid  "The binary number to be converted (as text)"
-msgstr "แปลงเลขฐานสอง (เป็นข้อความ)"
+msgstr "แปลงตัวเลขฐานสอง (เป็นข้อความ)"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Bin2Oct.4.String.Text
 msgid  "Places"
@@ -941,7 +941,7 @@ msgstr "ตัวเลข"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Dec2Bin.3.String.Text
 msgid  "The decimal integer to be converted"
-msgstr "แปลงจำนวนเต็มฐานสิบ"
+msgstr "แปลงเลขฐานสิบ"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Dec2Bin.4.String.Text
 msgid  "Places"
@@ -981,7 +981,7 @@ msgstr "ตัวเลข"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Dec2Oct.3.String.Text
 msgid  "The decimal number"
-msgstr "ตัวเลขมีทศนิยม"
+msgstr "เลขฐานสิบ"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Dec2Oct.4.String.Text
 msgid  "Places"
@@ -1517,7 +1517,7 @@ msgstr "หน่วยวัดสำหรับผลลัพธ์"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Amordegrc.1.String.Text
 msgid  "Returns the prorated linear depreciation of an asset for each accounting period"
-msgstr "ส่งกลับค่าเสื่อมราคาของสินทรัพย์แบบเส้นตรงตามสัดส่วนสำหรับแต่ละงวดบัญชี"
+msgstr "ส่งกลับค่าเสื่อมราคาสินทรัพย์แบบเส้นตรงตามสัดส่วนสำหรับแต่ละงวดบัญชี"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Amordegrc.2.String.Text
 msgid  "Cost"
@@ -1657,11 +1657,11 @@ msgstr "วันแรกของดอกเบี้ยเงินประ
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Accrint.6.String.Text
 msgid  "Settlement"
-msgstr "ชำระบัญชีี้"
+msgstr "ชำระบัญชี"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Accrint.7.String.Text
 msgid  "The settlement"
-msgstr "ชำระบัญชีี้"
+msgstr "ชำระบัญชี"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Accrint.8.String.Text
 msgid  "Rate"
@@ -1673,7 +1673,7 @@ msgstr "อัตรา"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Accrint.10.String.Text
 msgid  "Par"
-msgstr "พาร์"
+msgstr "ค่าพาร์"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Accrint.11.String.Text
 msgid  "The par value"
@@ -1709,11 +1709,11 @@ msgstr "วันที่มีผล"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Accrintm.4.String.Text
 msgid  "Settlement"
-msgstr "ชำระบัญชีี้"
+msgstr "ชำระบัญชี"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Accrintm.5.String.Text
 msgid  "The settlement"
-msgstr "ชำระบัญชีี้"
+msgstr "ชำระบัญชี"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Accrintm.6.String.Text
 msgid  "Rate"
@@ -1745,11 +1745,11 @@ msgstr "ส่งกลับจำนวนเงินที่จ่าย �
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Received.2.String.Text
 msgid  "Settlement"
-msgstr "ชำระบัญชีี้"
+msgstr "ชำระบัญชี"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Received.3.String.Text
 msgid  "The settlement"
-msgstr "ชำระบัญชี"
+msgstr "ชำระบัญชีี้"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Received.4.String.Text
 msgid  "Maturity"
@@ -1761,11 +1761,11 @@ msgstr "ครบกำหนด"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Received.6.String.Text
 msgid  "Investment"
-msgstr "การลงทุน"
+msgstr "ลงทุน"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Received.7.String.Text
 msgid  "The investment"
-msgstr "การลงทุน"
+msgstr "ลงทุน"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Received.8.String.Text
 msgid  "Discount"
@@ -1789,11 +1789,11 @@ msgstr "ส่งกลับอัตราส่วนลดสำหรับ
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Disc.2.String.Text
 msgid  "Settlement"
-msgstr "ชำระบัญชีี้"
+msgstr "ชำระบัญชี"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Disc.3.String.Text
 msgid  "The settlement"
-msgstr "ชำระบัญชีี้"
+msgstr "ชำระบัญชี"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Disc.4.String.Text
 msgid  "Maturity"
@@ -1833,11 +1833,11 @@ msgstr "ส่งกลับ Macauley ประจำปีระยะเว�
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Duration.2.String.Text
 msgid  "Settlement"
-msgstr "ชำระบัญชีี้"
+msgstr "ชำระบัญชี"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Duration.3.String.Text
 msgid  "The settlement"
-msgstr "ชำระบัญชีี้"
+msgstr "ชำระบัญชี"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Duration.4.String.Text
 msgid  "Maturity"
@@ -1937,11 +1937,11 @@ msgstr "งวดเริ่มต้น"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Cumprinc.10.String.Text
 msgid  "End period"
-msgstr "งวดสุดท้าย"
+msgstr "งวดสิ้นสุด"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Cumprinc.11.String.Text
 msgid  "The end period"
-msgstr "งวดสุดท้าย"
+msgstr "งวดสิ้นสุด"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Cumprinc.12.String.Text
 msgid  "Type"
@@ -2009,11 +2009,11 @@ msgstr "ส่งกลับราคาต่อ 100 หน่วยเงิ�
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Price.2.String.Text
 msgid  "Settlement"
-msgstr "ชำระบัญชีี้"
+msgstr "ชำระบัญชี"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Price.3.String.Text
 msgid  "The settlement"
-msgstr "ชำระบัญชีี้"
+msgstr "ชำระบัญชี"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Price.4.String.Text
 msgid  "Maturity"
@@ -2073,7 +2073,7 @@ msgstr "ชำระบัญชี"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Pricedisc.3.String.Text
 msgid  "The settlement"
-msgstr "ชำระบัญชี"
+msgstr "ชำระบัญชีี้"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Pricedisc.4.String.Text
 msgid  "Maturity"
@@ -2117,7 +2117,7 @@ msgstr "ชำระบัญชีี้"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Pricemat.3.String.Text
 msgid  "The settlement"
-msgstr "ชำระบัญชี"
+msgstr "ชำระบัญชีี้"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Pricemat.4.String.Text
 msgid  "Maturity"
@@ -2169,7 +2169,7 @@ msgstr "ชำระบัญชี"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Mduration.3.String.Text
 msgid  "The settlement"
-msgstr "ชำระบัญชีี้"
+msgstr "ชำระบัญชี"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Mduration.4.String.Text
 msgid  "Maturity"
@@ -2281,7 +2281,7 @@ msgstr "ชำระบัญชีี้"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Yield.3.String.Text
 msgid  "The settlement"
-msgstr "ชำระบัญชี"
+msgstr "ชำระบัญชีี้"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Yield.4.String.Text
 msgid  "Maturity"
@@ -2545,7 +2545,7 @@ msgstr "คูปองแรก"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Oddfprice.9.String.Text
 msgid  "The first coupon date"
-msgstr "วันที่แรกของคูปอง"
+msgstr "วันที่ของคูปองแรก"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Oddfprice.10.String.Text
 msgid  "Rate"

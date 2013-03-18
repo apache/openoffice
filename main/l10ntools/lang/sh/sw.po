@@ -1433,7 +1433,7 @@ msgstr "~Zakloni"
 
 #: source/ui/app/mn.src#MN_DRAW5.MN_SUB_ARRANGE.MenuItem.Text
 msgid  "~Arrange"
-msgstr "~Redosled"
+msgstr "~Raspored"
 
 #: source/ui/app/mn.src#MN_DRAW6.MN_SUB_ARRANGE.MenuItem.Text
 msgid  "~Arrange"
@@ -2189,7 +2189,7 @@ msgstr "~Kodovi polja"
 
 #: source/ui/config/optdlg.src#TP_CONTENT_OPT.CB_POSTIT.CheckBox.Text
 msgid  "~Comments"
-msgstr "Ako je uključeno biće štampane automatski ubačene prazne stranice. Opcija je preporučena za dvostranu štampu. Na primer, u knjizi stil prvog pasusa poglavlja je postavljen da uvek započne na neparnoj stranici. Ako se prethodno poglavlje završava na neparnoj stranici, %PRODUCTNAME će između njih da ubaci praznu parnu parnu stranicu. Ova opcija određuje da li ta ubačena stranica da bude odštampana ili ne."
+msgstr "~Komentari"
 
 #: source/ui/config/optdlg.src#TP_CONTENT_OPT.FL_SETTINGS.FixedLine.Text
 msgid  "Settings"
@@ -2209,19 +2209,19 @@ msgstr "~Slike i objekti"
 
 #: source/ui/config/optdlg.src#TP_OPTPRINT_PAGE.CB_CTRLFLD.CheckBox.Text
 msgid  "Form control~s"
-msgstr "~Skriven tekst"
+msgstr "Kontrole obra~sca"
 
 #: source/ui/config/optdlg.src#TP_OPTPRINT_PAGE.CB_BACKGROUND.CheckBox.Text
 msgid  "Page ba~ckground"
-msgstr "Pozadina ~stranice"
+msgstr "Pozadina stranice"
 
 #: source/ui/config/optdlg.src#TP_OPTPRINT_PAGE.CB_BLACK_FONT.CheckBox.Text
 msgid  "Print text in blac~k"
-msgstr "~Mestodržači i polja za tekst"
+msgstr "Štampaj tekst ~crno"
 
 #: source/ui/config/optdlg.src#TP_OPTPRINT_PAGE.CB_HIDDEN_TEXT.CheckBox.Text
 msgid  "Hidden te~xt"
-msgstr "Sl~ike i druga grafika"
+msgstr "~Skriven tekst"
 
 #: source/ui/config/optdlg.src#TP_OPTPRINT_PAGE.CB_TEXT_PLACEHOLDER.CheckBox.Text
 msgid  "Text ~placeholder"
@@ -2229,7 +2229,7 @@ msgstr "~Mestodržač teksta"
 
 #: source/ui/config/optdlg.src#TP_OPTPRINT_PAGE.FL_2.FixedLine.Text
 msgid  "Pages"
-msgstr "Ako je uključeno biće štampani nazivi polja i drugih mestodržača za tekst. Isključite opciju za praznu štampu mestodržača."
+msgstr "Stranice"
 
 #: source/ui/config/optdlg.src#TP_OPTPRINT_PAGE.CB_LEFTP.CheckBox.Text
 msgid  "~Left pages"
@@ -2241,7 +2241,7 @@ msgstr "~Desne stranice"
 
 #: source/ui/config/optdlg.src#TP_OPTPRINT_PAGE.CB_PROSPECT.CheckBox.Text
 msgid  "Broch~ure"
-msgstr "Na kraju dokumenta"
+msgstr "~Brošura"
 
 #: source/ui/config/optdlg.src#TP_OPTPRINT_PAGE.CB_PROSPECT_RTL.CheckBox.Text
 msgid  "Right to Left"
@@ -2273,7 +2273,7 @@ msgstr "Ostalo"
 
 #: source/ui/config/optdlg.src#TP_OPTPRINT_PAGE.CB_PRINTEMPTYPAGES.CheckBox.Text
 msgid  "Print ~automatically inserted blank pages"
-msgstr "Kontrole obra~sca"
+msgstr "Štampaj ~automatski ubačene prazne stranice"
 
 #: source/ui/config/optdlg.src#TP_OPTPRINT_PAGE.CB_PAPERFROMSETUP.CheckBox.Text
 msgid  "~Paper tray from printer settings"
@@ -6917,11 +6917,11 @@ msgstr "Opcije"
 
 #: source/ui/frmdlg/frmpage.src#DLG_FRM_STD.1.TP_FRM_WRAP.PageItem.Text
 msgid  "Wrap"
-msgstr "Prelamanje"
+msgstr "Prebacivanje"
 
 #: source/ui/frmdlg/frmpage.src#DLG_FRM_STD.1.TP_FRM_URL.PageItem.Text
 msgid  "Hyperlink"
-msgstr "Veza"
+msgstr "Hiperveza"
 
 #: source/ui/frmdlg/frmpage.src#DLG_FRM_STD.1.TP_BORDER.PageItem.Text
 msgid  "Borders"
@@ -7605,7 +7605,7 @@ msgstr "Ispod"
 
 #: source/ui/frmdlg/cption.src#DLG_CAPTION.STR_CATEGORY_NONE.String.Text
 msgid  "<None>"
-msgstr "<Nema>"
+msgstr "<Nijedna>"
 
 #: source/ui/frmdlg/cption.src#DLG_SEQUENCE_OPTION.ModalDialog.Text
 msgid  "Options"
@@ -8009,7 +8009,7 @@ msgstr "~Novo..."
 
 #: source/ui/index/cnttab.src#TP_TOX_SELECT.MB_AUTOMARK.MN_AUTOMARK_EDIT.MenuItem.Text
 msgid  "~Edit..."
-msgstr "~Uređivanje..."
+msgstr "~Uredi..."
 
 #: source/ui/index/cnttab.src#TP_TOX_SELECT.MB_AUTOMARK.MenuItem.Text
 msgid  "~File"
@@ -8561,7 +8561,7 @@ msgstr "Fascikle „autoteksta“ su samo za čitanje. Želite li da pozovete pr
 
 #: source/ui/misc/glossary.src#DLG_GLOSSARY.MNU_EDIT.FN_GL_DEFINE.MenuItem.Text
 msgid  "~New"
-msgstr "~Novi"
+msgstr "~Nova"
 
 #: source/ui/misc/glossary.src#DLG_GLOSSARY.MNU_EDIT.FN_GL_DEFINE_TEXT.MenuItem.Text
 msgid  "New (text only)"
@@ -10613,7 +10613,7 @@ msgstr "Zdesna ulevo"
 
 #: source/ui/table/tabledlg.src#TP_FORMAT_TABLE.LB_TEXTDIRECTION.4.StringList.item
 msgid  "Use superordinate object settings"
-msgstr "Koristi podešavanja nadređenog objekta"
+msgstr "Koristi podešavanja podređenog objekta"
 
 #: source/ui/table/tabledlg.src#TP_TABLE_COLUMN.CB_MOD_TBL.CheckBox.Text
 msgid  "Adapt table ~width"
@@ -11413,23 +11413,23 @@ msgstr "WWW dokument"
 
 #: source/ui/utlui/initui.src#STR_AUTH_TYPE_CUSTOM1.String.Text
 msgid  "User-defined1"
-msgstr "Korisnički-definisano1"
+msgstr "Posebno1"
 
 #: source/ui/utlui/initui.src#STR_AUTH_TYPE_CUSTOM2.String.Text
 msgid  "User-defined2"
-msgstr "Korisnički-definisano2"
+msgstr "Posebno2"
 
 #: source/ui/utlui/initui.src#STR_AUTH_TYPE_CUSTOM3.String.Text
 msgid  "User-defined3"
-msgstr "Korisnički-definisano3"
+msgstr "Posebno3"
 
 #: source/ui/utlui/initui.src#STR_AUTH_TYPE_CUSTOM4.String.Text
 msgid  "User-defined4"
-msgstr "Korisnički-definisano4"
+msgstr "Posebno4"
 
 #: source/ui/utlui/initui.src#STR_AUTH_TYPE_CUSTOM5.String.Text
 msgid  "User-defined5"
-msgstr "Korisnički-definisano5"
+msgstr "Posebno5"
 
 #: source/ui/utlui/initui.src#STR_AUTH_FIELD_IDENTIFIER.String.Text
 msgid  "Short name"
@@ -11933,7 +11933,7 @@ msgstr "Oznake"
 
 #: source/ui/utlui/poolfmt.src#STR_POOLCOLL_STANDARD.String.Text
 msgid  "Default"
-msgstr "Podrazumevano"
+msgstr "Podrazumevani"
 
 #: source/ui/utlui/poolfmt.src#STR_POOLCOLL_TEXT.String.Text
 msgid  "Text body"
@@ -11969,7 +11969,7 @@ msgstr "Lista"
 
 #: source/ui/utlui/poolfmt.src#STR_POOLCOLL_REGISTER_BASE.String.Text
 msgid  "Index"
-msgstr "Popis"
+msgstr "Indeks"
 
 #: source/ui/utlui/poolfmt.src#STR_POOLCOLL_CONFRONTATION.String.Text
 msgid  "List Indent"

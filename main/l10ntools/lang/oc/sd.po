@@ -1313,7 +1313,7 @@ msgstr "Cap de transicion"
 
 #: source/ui/annotations/annotations.src#RID_ANNOTATION_CONTEXTMENU.SID_REPLYTO_POSTIT.MenuItem.Text
 msgid  "~Reply"
-msgstr "~Responsa"
+msgstr "~Respondre"
 
 #: source/ui/annotations/annotations.src#RID_ANNOTATION_CONTEXTMENU.SID_ATTR_CHAR_WEIGHT.MenuItem.Text
 msgid  "~Bold"
@@ -1341,7 +1341,7 @@ msgstr "Pegar"
 
 #: source/ui/annotations/annotations.src#RID_ANNOTATION_CONTEXTMENU.SID_DELETE_POSTIT.MenuItem.Text
 msgid  "~Delete Comment"
-msgstr "Escafar comentari"
+msgstr "Escafar lo comentari"
 
 #: source/ui/annotations/annotations.src#RID_ANNOTATION_CONTEXTMENU.SID_DELETEALLBYAUTHOR_POSTIT.MenuItem.Text
 msgid  "Delete All Comments b~y %1"
@@ -1457,7 +1457,7 @@ msgstr "~Linha"
 
 #: source/ui/app/popup2_tmpl.src#RID_GRAPHIC_TABLE_POPUP.DUMMY.SID_TABLE_DISTRIBUTE_ROWS.MenuItem.Text
 msgid  "Space ~Equally"
-msgstr "~Espaci regular"
+msgstr "~Repartir regularament"
 
 #: source/ui/app/popup2_tmpl.src#RID_GRAPHIC_TABLE_POPUP.DUMMY.SID_TABLE_SELECT_ROW.MenuItem.Text
 msgid  "~Select"
@@ -3224,12 +3224,14 @@ msgid  "A~lignment"
 msgstr "A~linhament"
 
 #: source/ui/app/menuids_tmpl.src#MN_TEXT_ALIGN.DUMMY.SID_ATTR_PARA_ADJUST_LEFT.MenuItem.Text
+#, fuzzy
 msgid  "~Left"
-msgstr "A ~l'esquèrra"
+msgstr "A ~esquèrra"
 
 #: source/ui/app/menuids_tmpl.src#MN_TEXT_ALIGN.DUMMY.SID_ATTR_PARA_ADJUST_RIGHT.MenuItem.Text
+#, fuzzy
 msgid  "~Right"
-msgstr "A ~Drecha"
+msgstr "A ~drecha"
 
 #: source/ui/app/menuids_tmpl.src#MN_TEXT_ALIGN.DUMMY.SID_ATTR_PARA_ADJUST_CENTER.MenuItem.Text
 #, fuzzy
@@ -3257,12 +3259,14 @@ msgid  "~Centered"
 msgstr "~Centrat"
 
 #: source/ui/app/menuids_tmpl.src#MN_OBJECT_ALIGN.SID_OBJECT_ALIGN.SID_OBJECT_ALIGN_RIGHT.MenuItem.Text
+#, fuzzy
 msgid  "~Right"
-msgstr "A ~drecha"
+msgstr "A ~Drecha"
 
 #: source/ui/app/menuids_tmpl.src#MN_OBJECT_ALIGN.SID_OBJECT_ALIGN.SID_OBJECT_ALIGN_UP.MenuItem.Text
+#, fuzzy
 msgid  "~Top"
-msgstr "Amon~t"
+msgstr "En ~naut"
 
 #: source/ui/app/menuids_tmpl.src#MN_OBJECT_ALIGN.SID_OBJECT_ALIGN.SID_OBJECT_ALIGN_MIDDLE.MenuItem.Text
 #, fuzzy
@@ -3275,8 +3279,9 @@ msgid  "~Bottom"
 msgstr "En ~bas"
 
 #: source/ui/app/menuids_tmpl.src#MN_CLOSE_OBJECT.SID_OBJECT_CLOSE.MenuItem.Text
+#, fuzzy
 msgid  "Close ~Object"
-msgstr "~Tampar l'objècte"
+msgstr "Tampar l'~objècte"
 
 #: source/ui/app/menuids_tmpl.src#MN_BEZIER.SID_BEZIER_EDIT.MenuItem.Text
 #, fuzzy
@@ -3714,8 +3719,9 @@ msgid  "~Hide Slide"
 msgstr "A~magar la diàpo"
 
 #: source/ui/app/menuids3_tmpl.src#MN_GROUP_IMPRESS.SID_GROUP.MenuItem.Text
+#, fuzzy
 msgid  "~Group"
-msgstr "~Grop"
+msgstr "~Gropar"
 
 #: source/ui/app/menuids3_tmpl.src#MN_UNGROUP_IMPRESS.SID_UNGROUP.MenuItem.Text
 #, fuzzy
@@ -4118,8 +4124,9 @@ msgid  "Su~mmary Slide"
 msgstr "Diàpo de ~resumit"
 
 #: source/ui/app/menuids2_tmpl.src#MN_INSERTLAYER.SID_INSERTLAYER.MenuItem.Text
+#, fuzzy
 msgid  "~Layer..."
-msgstr "J~aç..."
+msgstr "~Jaç..."
 
 #: source/ui/app/menuids2_tmpl.src#MN_INSERT_FLD_DATE_FIX.SID_INSERT_FLD_DATE_FIX.MenuItem.Text
 #, fuzzy
@@ -4347,8 +4354,9 @@ msgid  "~Black and White"
 msgstr "~Blanc e negre"
 
 #: source/ui/app/menuids2_tmpl.src#MN_OUTPUT_QUALITY_CONTRAST.SID_OUTPUT_QUALITY_CONTRAST.MenuItem.Text
+#, fuzzy
 msgid  "~High Contrast"
-msgstr "Con~trast elevat"
+msgstr "Contraste elevat"
 
 #: source/ui/app/menuids2_tmpl.src#MN_PREVIEW_QUALITY_COLOR.SID_PREVIEW_QUALITY_COLOR.MenuItem.Text
 #, fuzzy
@@ -5162,7 +5170,7 @@ msgstr "Linha"
 #: source/ui/dlg/prltempl.src#TAB_PRES_LAYOUT_TEMPLATE.1.RID_SVXPAGE_AREA.PageItem.Text
 #, fuzzy
 msgid  "Area"
-msgstr "Airal"
+msgstr "Emplenatge"
 
 #: source/ui/dlg/prltempl.src#TAB_PRES_LAYOUT_TEMPLATE.1.RID_SVXPAGE_SHADOW.PageItem.Text
 #, fuzzy
@@ -6020,7 +6028,7 @@ msgstr "Qualitat"
 #: source/ui/dlg/prntopts.src#TP_PRINT_OPTIONS.RBT_COLOR.RadioButton.Text
 #, fuzzy
 msgid  "Default"
-msgstr "Estandard"
+msgstr "Per defaut"
 
 #: source/ui/dlg/prntopts.src#TP_PRINT_OPTIONS.RBT_GRAYSCALE.RadioButton.Text
 #, fuzzy
@@ -6427,8 +6435,9 @@ msgid  "Original size"
 msgstr "Talha d'origina"
 
 #: source/ui/view/DocumentRenderer.src#_STR_IMPRESS_PRINT_UI_OPTIONS._STR_IMPRESS_PRINT_UI_PAGE_OPTIONS_CHOICES.item2.ItemList.item
+#, fuzzy
 msgid  "Fit to printable page"
-msgstr "Adaptar a la pagina d'estampar"
+msgstr "Adaptar a la pagina d'estampa"
 
 #: source/ui/view/DocumentRenderer.src#_STR_IMPRESS_PRINT_UI_OPTIONS._STR_IMPRESS_PRINT_UI_PAGE_OPTIONS_CHOICES.item3.ItemList.item
 #, fuzzy

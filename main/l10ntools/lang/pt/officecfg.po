@@ -380,7 +380,7 @@ msgstr "NomeDaCategoria"
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.business.Tables.categories.Fields.categoryname.ShortName
 #, fuzzy
 msgid  "CategName"
-msgstr "NomeCateg"
+msgstr "NomeDaCateg"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.business.Tables.products.Name
 #, fuzzy
@@ -610,12 +610,12 @@ msgstr "NúmeroDeTelefone"
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.business.Tables.suppliers.Fields.phonenumber.ShortName
 #, fuzzy
 msgid  "PhoneNo"
-msgstr "NºDeTelefone"
+msgstr "NºTelefone"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.business.Tables.suppliers.Fields.faxnumber.Name
 #, fuzzy
 msgid  "FaxNumber"
-msgstr "FaxNumber"
+msgstr "NúmeroDoFax"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.business.Tables.suppliers.Fields.faxnumber.ShortName
 #, fuzzy
@@ -625,12 +625,12 @@ msgstr "NºFax"
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.business.Tables.suppliers.Fields.paymentterms.Name
 #, fuzzy
 msgid  "PaymentTerms"
-msgstr "PaymentTerms"
+msgstr "TermosDoPagamento"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.business.Tables.suppliers.Fields.paymentterms.ShortName
 #, fuzzy
 msgid  "PaymntTerm"
-msgstr "PaymntTerm"
+msgstr "TermoDoPagamento"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.business.Tables.suppliers.Fields.emailaddress.Name
 #, fuzzy
@@ -1150,7 +1150,7 @@ msgstr "NomeDeCrianças"
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.business.Tables.contacts.Fields.childrennames.ShortName
 #, fuzzy
 msgid  "ChildName"
-msgstr "NomeDeCrianças"
+msgstr "NomeCrianças"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.business.Tables.contacts.Fields.photo.Name
 #, fuzzy
@@ -1550,7 +1550,7 @@ msgstr "CódigoDoDepartamento"
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.business.Tables.employees.Fields.departmentID.ShortName
 #, fuzzy
 msgid  "DeprtmntID"
-msgstr "CódDepart"
+msgstr "CódigoDoDepart"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.business.Tables.employees.Fields.salary.Name
 #, fuzzy
@@ -1680,7 +1680,7 @@ msgstr "DataDaEncomenda"
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.business.Tables.orders.Fields.purchaseordernumber.Name
 #, fuzzy
 msgid  "PurchaseOrderNumber"
-msgstr "NúmPedidoCompra"
+msgstr "NúmeroPedidoCompra"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.business.Tables.orders.Fields.purchaseordernumber.ShortName
 #, fuzzy
@@ -1775,7 +1775,7 @@ msgstr "TelefoneDoDestinatário"
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.business.Tables.orders.Fields.shipphonenumber.ShortName
 #, fuzzy
 msgid  "ShipPhonNo"
-msgstr "Telef.Transitário"
+msgstr "TelefoneDoDestinatário"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.business.Tables.orders.Fields.shipdate.Name
 #, fuzzy
@@ -1800,7 +1800,7 @@ msgstr "CódigoMétodoEnvio"
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.business.Tables.orders.Fields.freightcharge.Name
 #, fuzzy
 msgid  "FreightCharge"
-msgstr "TaxaDoFrete"
+msgstr "TaxaCarga"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.business.Tables.orders.Fields.freightcharge.ShortName
 #, fuzzy
@@ -1855,12 +1855,12 @@ msgstr "CódigoDoProduto"
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.business.Tables.orderdetails.Fields.datesold.Name
 #, fuzzy
 msgid  "DateSold"
-msgstr "DateSold"
+msgstr "DataDaVenda"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.business.Tables.orderdetails.Fields.datesold.ShortName
 #, fuzzy
 msgid  "DateSold"
-msgstr "DataDaVenda"
+msgstr "DateSold"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.business.Tables.orderdetails.Fields.quantity.Name
 #, fuzzy
@@ -2000,7 +2000,7 @@ msgstr "CódigoDeRegisto"
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.business.Tables.payments.Fields.projectID.Name
 #, fuzzy
 msgid  "ProjectID"
-msgstr "CódigoDoProjecto"
+msgstr "CódigDoProjecto"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.business.Tables.payments.Fields.projectID.ShortName
 #, fuzzy
@@ -2035,7 +2035,7 @@ msgstr "MétodoDePagamento"
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.business.Tables.payments.Fields.paymentmethod.ShortName
 #, fuzzy
 msgid  "PaymntMeth"
-msgstr "MétPagam"
+msgstr "MétodoPagamento"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.business.Tables.payments.Fields.checknumber.Name
 #, fuzzy
@@ -2415,12 +2415,12 @@ msgstr "CódigoDoFuncionário"
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.business.Tables.projects.Fields.begindate.Name
 #, fuzzy
 msgid  "BeginDate"
-msgstr "DataDoInício"
+msgstr "DataDeInício"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.business.Tables.projects.Fields.begindate.ShortName
 #, fuzzy
 msgid  "BeginDate"
-msgstr "DataDoInício"
+msgstr "DataDeInício"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.business.Tables.projects.Fields.enddate.Name
 #, fuzzy
@@ -3450,12 +3450,12 @@ msgstr "Montante"
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.business.Tables.transactions.Fields.accountID.Name
 #, fuzzy
 msgid  "AccountID"
-msgstr "CódigodaConta"
+msgstr "CódigoDaConta"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.business.Tables.transactions.Fields.accountID.ShortName
 #, fuzzy
 msgid  "AccountID"
-msgstr "CódigodaConta"
+msgstr "CódigoDaConta"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.business.Tables.transactions.Fields.referencenumber.Name
 #, fuzzy
@@ -4035,7 +4035,7 @@ msgstr "DataDaCompra"
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.private.Tables.householdinventory.Fields.datepurchased.ShortName
 #, fuzzy
 msgid  "DatePurch"
-msgstr "DatePurch"
+msgstr "DataDaCompra"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.private.Tables.householdinventory.Fields.placepurchased.Name
 #, fuzzy
@@ -4135,12 +4135,12 @@ msgstr "Origem"
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.private.Tables.recipes.Fields.whichmeal.Name
 #, fuzzy
 msgid  "WhichMeal"
-msgstr "QueRefeição"
+msgstr "QualRefeição"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.private.Tables.recipes.Fields.whichmeal.ShortName
 #, fuzzy
 msgid  "WhichMeal"
-msgstr "QueRefeição"
+msgstr "QualRefeição"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.private.Tables.recipes.Fields.vegetarian.Name
 #, fuzzy
@@ -4695,12 +4695,12 @@ msgstr "Realizador"
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.private.Tables.dvdcollection.Fields.producer.Name
 #, fuzzy
 msgid  "Producer"
-msgstr "Produtora"
+msgstr "Produtor"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.private.Tables.dvdcollection.Fields.producer.ShortName
 #, fuzzy
 msgid  "Producer"
-msgstr "Produtora"
+msgstr "Produtor"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.private.Tables.dvdcollection.Fields.releaseyear.Name
 #, fuzzy
@@ -5395,12 +5395,12 @@ msgstr "CódigoDoRegisto"
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.private.Tables.exerciselog.Fields.personID.Name
 #, fuzzy
 msgid  "PersonID"
-msgstr "MúmeroDeIdentificaçãoDaPessoa"
+msgstr "NúmeroDeIdentificaçãoDaPessoa"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.private.Tables.exerciselog.Fields.personID.ShortName
 #, fuzzy
 msgid  "PersonID"
-msgstr "MúmeroDeIdentificaçãoDaPessoa"
+msgstr "NúmeroDeIdentificaçãoDaPessoa"
 
 #: registry/data/org/openoffice/Office/TableWizard.xcu#TableWizard.TableWizard.private.Tables.exerciselog.Fields.activity.Name
 #, fuzzy
@@ -10732,7 +10732,7 @@ msgstr "Xadrez"
 #: registry/data/org/openoffice/Office/UI/Effects.xcu#Effects.UserInterface.Effects.ooo-entrance-circle.Label
 #, fuzzy
 msgid  "Circle"
-msgstr "Círculo"
+msgstr "Círculo "
 
 #: registry/data/org/openoffice/Office/UI/Effects.xcu#Effects.UserInterface.Effects.ooo-entrance-fly-in-slow.Label
 #, fuzzy
@@ -11722,7 +11722,7 @@ msgstr "Básicos"
 #: registry/data/org/openoffice/Office/UI/Effects.xcu#Effects.UserInterface.Properties.special.Label
 #, fuzzy
 msgid  "Special"
-msgstr "Especiais"
+msgstr "Especial"
 
 #: registry/data/org/openoffice/Office/UI/Effects.xcu#Effects.UserInterface.Properties.moderate.Label
 #, fuzzy
@@ -12362,7 +12362,7 @@ msgstr "Básicos"
 #: registry/data/org/openoffice/Office/UI/Effects.xcu#Effects.Presets.Entrance.special.Label
 #, fuzzy
 msgid  "Special"
-msgstr "Especial"
+msgstr "Especiais"
 
 #: registry/data/org/openoffice/Office/UI/Effects.xcu#Effects.Presets.Entrance.moderate.Label
 #, fuzzy
@@ -14833,7 +14833,7 @@ msgstr "Cilindro"
 #: registry/data/org/openoffice/Office/UI/GenericCommands.xcu#GenericCommands.UserInterface.Commands..uno:BasicShapes.circle.Label
 #, fuzzy
 msgid  "Circle"
-msgstr "Círculo "
+msgstr "Círculo"
 
 #: registry/data/org/openoffice/Office/UI/GenericCommands.xcu#GenericCommands.UserInterface.Commands..uno:BasicShapes.circle-pie.Label
 #, fuzzy
@@ -15034,7 +15034,7 @@ msgstr ""
 #: registry/data/org/openoffice/Office/UI/GenericCommands.xcu#GenericCommands.UserInterface.Commands..uno:CalloutShapes.Label
 #, fuzzy
 msgid  "Callouts"
-msgstr "Legenda"
+msgstr "Chamadas"
 
 #: registry/data/org/openoffice/Office/UI/GenericCommands.xcu#GenericCommands.UserInterface.Commands..uno:CalloutShapes.cloud-callout.Label
 #, fuzzy

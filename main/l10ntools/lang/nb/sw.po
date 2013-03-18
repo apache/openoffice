@@ -725,7 +725,7 @@ msgstr "Dette er ikke en WinWord6-fil."
 
 #: source/ui/app/error.src#RID_SW_ERRHDL.ERR_CODE ( ERRCODE_CLASS_READ , ERR_WW6_FASTSAVE_ERR ).String.Text
 msgid  "This file was saved with WinWord in 'Fast Save' mode. Please unmark the WinWord option 'Allow Fast Saves' and save the file again."
-msgstr "Denne fila ble lagret i WinWords «hurtiglagringsmodus». Slå av WinWord-valget «Tillat hurtiglagring», og lagre fila på nytt."
+msgstr "Denne fila ble lagret i WinWord's «hurtiglagringsmodus». Slå av WinWord-valget «Tillat hurtiglagring» og lagre fila på nytt."
 
 #: source/ui/app/error.src#RID_SW_ERRHDL.ERR_CODE ( ERRCODE_CLASS_READ , ERR_FORMAT_ROWCOL ).String.Text
 msgid  "File format error found at $(ARG1)(row,col)."
@@ -1213,7 +1213,7 @@ msgstr "Senket skrift"
 
 #: source/ui/app/mn.src#MN_TEXT_ATTR.MN_FORMAT_ALGN.MenuItem.Text
 msgid  "A~lignment"
-msgstr "~Justering"
+msgstr "J~ustering"
 
 #: source/ui/app/mn.src#MN_TEXT_ATTR.MN_FORMAT_ALGN.SID_ATTR_PARA_ADJUST_BLOCK.MenuItem.Text
 msgid  "Justified"
@@ -2189,7 +2189,7 @@ msgstr "~Feltkoder"
 
 #: source/ui/config/optdlg.src#TP_CONTENT_OPT.CB_POSTIT.CheckBox.Text
 msgid  "~Comments"
-msgstr "Hvis dette valget er slått på, vil automatisk innsatte tomme sider bli skrevet ut. Dette er det beste valget hvis utskriften er tosidig. For eksempel, i en bok, vil en \\ \"kapittel\\\"-sidestil alltid starte med en oddetallside. Hvis det forrige kapittelet slutter på en oddetallside, vil %PRODUCTNAME sette inn en tom partallside. Dette valget bestemmer om denne partallsiden skal skrives ut eller ikke."
+msgstr "~Merknader"
 
 #: source/ui/config/optdlg.src#TP_CONTENT_OPT.FL_SETTINGS.FixedLine.Text
 msgid  "Settings"
@@ -2209,7 +2209,7 @@ msgstr "~Bilder og objekter"
 
 #: source/ui/config/optdlg.src#TP_OPTPRINT_PAGE.CB_CTRLFLD.CheckBox.Text
 msgid  "Form control~s"
-msgstr "~Skjult tekst"
+msgstr "~Kontrollelementer"
 
 #: source/ui/config/optdlg.src#TP_OPTPRINT_PAGE.CB_BACKGROUND.CheckBox.Text
 msgid  "Page ba~ckground"
@@ -2217,11 +2217,11 @@ msgstr "~Sidebakgrunn"
 
 #: source/ui/config/optdlg.src#TP_OPTPRINT_PAGE.CB_BLACK_FONT.CheckBox.Text
 msgid  "Print text in blac~k"
-msgstr "~Plassholder for tekst"
+msgstr "Skriv ut i s~vart"
 
 #: source/ui/config/optdlg.src#TP_OPTPRINT_PAGE.CB_HIDDEN_TEXT.CheckBox.Text
 msgid  "Hidden te~xt"
-msgstr "~Bilder og andre grafiske objekter"
+msgstr "Skjult te~kst"
 
 #: source/ui/config/optdlg.src#TP_OPTPRINT_PAGE.CB_TEXT_PLACEHOLDER.CheckBox.Text
 msgid  "Text ~placeholder"
@@ -2229,7 +2229,7 @@ msgstr "~Plassholder for tekst"
 
 #: source/ui/config/optdlg.src#TP_OPTPRINT_PAGE.FL_2.FixedLine.Text
 msgid  "Pages"
-msgstr "Slå på dette valget for skrive ut tekstplassholdere. Slå av valget slik at plassholderne forblir blanke i utskriften."
+msgstr "Sider"
 
 #: source/ui/config/optdlg.src#TP_OPTPRINT_PAGE.CB_LEFTP.CheckBox.Text
 msgid  "~Left pages"
@@ -2241,7 +2241,7 @@ msgstr "~Høyresider"
 
 #: source/ui/config/optdlg.src#TP_OPTPRINT_PAGE.CB_PROSPECT.CheckBox.Text
 msgid  "Broch~ure"
-msgstr "~Sist i dok~umentet"
+msgstr "Br~osjyre"
 
 #: source/ui/config/optdlg.src#TP_OPTPRINT_PAGE.CB_PROSPECT_RTL.CheckBox.Text
 msgid  "Right to Left"
@@ -2273,7 +2273,7 @@ msgstr "Annet"
 
 #: source/ui/config/optdlg.src#TP_OPTPRINT_PAGE.CB_PRINTEMPTYPAGES.CheckBox.Text
 msgid  "Print ~automatically inserted blank pages"
-msgstr "~Kontrollelementer"
+msgstr "Skriv ut ~automatisk innsatte tomme sider"
 
 #: source/ui/config/optdlg.src#TP_OPTPRINT_PAGE.CB_PAPERFROMSETUP.CheckBox.Text
 msgid  "~Paper tray from printer settings"
@@ -3237,7 +3237,7 @@ msgstr "Kobler til datakilde …"
 
 #: source/ui/dbui/mmaddressblockpage.src#_ST_NONE_LIST.item1.StringList.item
 msgid  "< none >"
-msgstr "< ingen >"
+msgstr "< ingen >"
 
 #: source/ui/dbui/mmaddressblockpage.src#DLG_MM_ADDRESSBLOCK_PAGE.FI_HEADER.FixedText.Text
 msgid  "Insert address block"

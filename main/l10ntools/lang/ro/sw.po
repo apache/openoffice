@@ -37,11 +37,11 @@ msgstr "nu este posibil"
 
 #: source/core/undo/undo.src#STR_DELETE_UNDO.String.Text
 msgid  "Delete $1"
-msgstr "Ștergere $1"
+msgstr "Șterge $1"
 
 #: source/core/undo/undo.src#STR_INSERT_UNDO.String.Text
 msgid  "Insert $1"
-msgstr "Inserare $1"
+msgstr "Inserează $1"
 
 #: source/core/undo/undo.src#STR_OVR_UNDO.String.Text
 msgid  "Overwrite: $1"
@@ -417,7 +417,7 @@ msgstr "Tabel/index schimbat"
 
 #: source/core/undo/undo.src#STR_START_QUOTE.String.Text
 msgid  "'"
-msgstr "„"
+msgstr "”"
 
 #: source/core/undo/undo.src#STR_END_QUOTE.String.Text
 msgid  "'"
@@ -741,7 +741,7 @@ msgstr "Acesta nu este un fișier WinWord97"
 
 #: source/ui/app/error.src#RID_SW_ERRHDL.ERR_CODE ( ERRCODE_CLASS_READ , ERR_FORMAT_FILE_ROWCOL ).String.Text
 msgid  "Format error discovered in the file in sub-document $(ARG1) at $(ARG2)(row,col)."
-msgstr "S-a descoperit o eroare de formatare în fișierul din sub-documentul $(ARG1) la $(ARG2)(row,col)."
+msgstr "Eroare de format descoperită în fișier în subdocumentul $(ARG1) la $(ARG2) (rând,coloană)."
 
 #: source/ui/app/error.src#RID_SW_ERRHDL.ERR_CODE ( ERRCODE_CLASS_WRITE , ERR_SWG_WRITE_ERROR ).String.Text
 msgid  "Error writing file."
@@ -1433,7 +1433,7 @@ msgstr "~Trimite mai în spate"
 
 #: source/ui/app/mn.src#MN_DRAW5.MN_SUB_ARRANGE.MenuItem.Text
 msgid  "~Arrange"
-msgstr "~Aranjează"
+msgstr "~Aranjare"
 
 #: source/ui/app/mn.src#MN_DRAW6.MN_SUB_ARRANGE.MenuItem.Text
 msgid  "~Arrange"
@@ -1481,7 +1481,7 @@ msgstr "~Editează conturul..."
 
 #: source/ui/app/mn.src#MN_MOUSE_FRAME_BEGIN.MN_WRAP.MenuItem.Text
 msgid  "~Wrap"
-msgstr "Îm~pachetează"
+msgstr "~Împachetează"
 
 #: source/ui/app/mn.src#MN_MOUSE_FRAME_BEGIN.MN_WRAP.FN_FRAME_NOWRAP.MenuItem.Text
 msgid  "~No Wrap"
@@ -1897,7 +1897,7 @@ msgstr "Paragraf"
 
 #: source/ui/chrdlg/paradlg.src#DLG_PARA.1.TP_PARA_STD.PageItem.Text
 msgid  "Indents & Spacing"
-msgstr "Spațiere și alinieri"
+msgstr "Spațiere paragrafări"
 
 #: source/ui/chrdlg/paradlg.src#DLG_PARA.1.TP_PARA_ALIGN.PageItem.Text
 msgid  "Alignment"
@@ -2649,7 +2649,7 @@ msgstr "Atribute"
 
 #: source/ui/config/redlopt.src#TP_REDLINE_OPT.LB_INS_ATTR.item1.StringList.item
 msgid  "[None]"
-msgstr "[Niciunul]"
+msgstr "[Nimic]"
 
 #: source/ui/config/redlopt.src#TP_REDLINE_OPT.LB_INS_ATTR.item2.StringList.item
 msgid  "Bold"
@@ -2893,7 +2893,7 @@ msgstr "Folosește modul de pagină pătrată pentru grila de text"
 
 #: source/ui/config/optload.src#TP_OPTCAPTION_PAGE.TabPage.Text
 msgid  "Caption"
-msgstr "Subtitrare"
+msgstr "Titlu"
 
 #: source/ui/config/optload.src#TP_OPTCAPTION_PAGE.FT_OBJECTS.FixedText.Text
 msgid  "Add captions automatically\\nwhen inserting:"
@@ -2961,7 +2961,7 @@ msgstr "Nivel"
 
 #: source/ui/config/optload.src#TP_OPTCAPTION_PAGE.LB_LEVEL.item1.StringList.item
 msgid  "None"
-msgstr "Nimic"
+msgstr "Niciunul"
 
 #: source/ui/config/optload.src#TP_OPTCAPTION_PAGE.FT_SEPARATOR.FixedText.Text
 msgid  "Separator"
@@ -6061,7 +6061,7 @@ msgstr "Editează câmpuri"
 
 #: source/ui/fldui/fldui.src#STR_DATEFLD.String.Text
 msgid  "Date"
-msgstr "Data"
+msgstr "Dată"
 
 #: source/ui/fldui/fldui.src#STR_TIMEFLD.String.Text
 msgid  "Time"
@@ -7545,7 +7545,7 @@ msgstr "Spațierea coloanei depășește lărgimea coloanei."
 
 #: source/ui/frmdlg/cption.src#DLG_CAPTION.ModalDialog.Text
 msgid  "Caption"
-msgstr "Subtitrare"
+msgstr "Titlu"
 
 #: source/ui/frmdlg/cption.src#DLG_CAPTION.BTN_AUTOCAPTION.PushButton.Text
 msgid  "AutoCaption..."
@@ -7605,7 +7605,7 @@ msgstr "Dedesubt"
 
 #: source/ui/frmdlg/cption.src#DLG_CAPTION.STR_CATEGORY_NONE.String.Text
 msgid  "<None>"
-msgstr "<Niciunul>"
+msgstr "<Niciuna>"
 
 #: source/ui/frmdlg/cption.src#DLG_SEQUENCE_OPTION.ModalDialog.Text
 msgid  "Options"
@@ -8009,7 +8009,7 @@ msgstr "~Creează..."
 
 #: source/ui/index/cnttab.src#TP_TOX_SELECT.MB_AUTOMARK.MN_AUTOMARK_EDIT.MenuItem.Text
 msgid  "~Edit..."
-msgstr "~Editează..."
+msgstr "~Editare..."
 
 #: source/ui/index/cnttab.src#TP_TOX_SELECT.MB_AUTOMARK.MenuItem.Text
 msgid  "~File"
@@ -8245,7 +8245,7 @@ msgstr "Interval numere și descriere"
 
 #: source/ui/index/cnttab.src#TP_TOX_ENTRY.FT_ENTRY_NO.FixedText.Text
 msgid  "Format"
-msgstr "Format"
+msgstr "Formatare"
 
 #: source/ui/index/cnttab.src#TP_TOX_ENTRY.LB_ENTRY_NO.item1.StringList.item
 msgid  "Number"
@@ -9349,7 +9349,7 @@ msgstr "Crescător"
 
 #: source/ui/misc/srtdlg.src#DLG_SORTING.RB_DN2.RadioButton.Text
 msgid  "Descending"
-msgstr "Descrescător"
+msgstr "descrescător"
 
 #: source/ui/misc/srtdlg.src#DLG_SORTING.CB_KEY3.CheckBox.Text
 msgid  "Key ~3"
@@ -9489,7 +9489,7 @@ msgstr "~Pagină"
 
 #: source/ui/misc/docfnote.src#TP_FOOTNOTEOPTION.FL_CHAR_TEMPL.FixedLine.Text
 msgid  "Character Styles"
-msgstr "Stiluri caracter"
+msgstr "Stiluri de caractere"
 
 #: source/ui/misc/docfnote.src#TP_FOOTNOTEOPTION.FT_ANCHR_CHARFMT.FixedText.Text
 msgid  "Te~xt area"
@@ -10953,7 +10953,7 @@ msgstr "Configurează stilul pentru \"Corp text\"\"\""
 
 #: source/ui/utlui/utlui.src#RID_SHELLRES_AUTOFMTSTRS.STR_AUTOFMTREDL_SET_TMPL_INDENT.String.Text
 msgid  "Set \"Text body indent\" Style"
-msgstr "Configurează \"Aliniere corp text\" "
+msgstr "Configurează stil \"aliniere corp text\" "
 
 #: source/ui/utlui/utlui.src#RID_SHELLRES_AUTOFMTSTRS.STR_AUTOFMTREDL_SET_TMPL_NEG_INDENT.String.Text
 msgid  "Set \"Hanging indent\" Style"
@@ -11413,7 +11413,7 @@ msgstr "Document WWW"
 
 #: source/ui/utlui/initui.src#STR_AUTH_TYPE_CUSTOM1.String.Text
 msgid  "User-defined1"
-msgstr "Definit de utilizator 1"
+msgstr "Definit de utilizator1"
 
 #: source/ui/utlui/initui.src#STR_AUTH_TYPE_CUSTOM2.String.Text
 msgid  "User-defined2"
@@ -11585,7 +11585,7 @@ msgstr "Înainte"
 
 #: source/ui/utlui/navipi.src#DLG_NAVIGATION_PI.TB_CONTENT.FN_DROP_REGION.ToolBoxItem.Text
 msgid  "Drag Mode"
-msgstr "Mod tragere"
+msgstr "Mod Tragere"
 
 #: source/ui/utlui/navipi.src#DLG_NAVIGATION_PI.TB_CONTENT.FN_ITEM_UP.ToolBoxItem.Text
 msgid  "Promote Chapter"
