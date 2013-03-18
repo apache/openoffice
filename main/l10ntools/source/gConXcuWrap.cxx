@@ -167,9 +167,9 @@ void convert_xcu::stopCollectData(char *syyText)
     }
 #endif
   }
-  else
-    if (useText.size())
-      mcMemory.setSourceKey(miLineNo, msSourceFile, useKey, useText);
+
+  if (useText.size())
+    mcMemory.setSourceKey(miLineNo, msSourceFile, useKey, useText);
 }  
 
 

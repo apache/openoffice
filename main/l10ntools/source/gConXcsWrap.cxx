@@ -153,8 +153,7 @@ void convert_xcs::stopCollectData(char *syyText)
     }
 #endif
   }
-  else
-    mcMemory.setSourceKey(miLineNo, msSourceFile, sKey, sText);
 
+  mcMemory.setSourceKey(miLineNo, msSourceFile, sKey, sText);
   mbCollectingData = false;
 }  
