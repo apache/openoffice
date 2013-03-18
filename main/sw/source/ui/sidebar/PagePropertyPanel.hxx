@@ -210,6 +210,8 @@ namespace sw { namespace sidebar {
         ::boost::scoped_ptr< ::svx::sidebar::Popup > mpSizePopup;
         ::boost::scoped_ptr< ::svx::sidebar::Popup > mpColumnPopup;
 
+        bool mbInvalidateSIDAttrPageOnSIDAttrPageSizeNotify;
+
         // handler for popup toolboxes to show the popups
         DECL_LINK(ClickOrientationHdl, ToolBox* );
         DECL_LINK(ClickMarginHdl, ToolBox* );

@@ -152,8 +152,11 @@ PagePropertyPanel::PagePropertyPanel(
     , mpMarginPopup()
     , mpSizePopup()
     , mpColumnPopup()
+
+    , mbInvalidateSIDAttrPageOnSIDAttrPageSizeNotify( false )
 {
     Initialize();
+    mbInvalidateSIDAttrPageOnSIDAttrPageSizeNotify = true;
     FreeResource();
 }
 
@@ -563,7 +566,10 @@ void PagePropertyPanel::NotifyItemUpdate(
         break;
 
     case SID_ATTR_PAGE_SIZE:
-        mpBindings->Invalidate( SID_ATTR_PAGE, sal_True, sal_False );
+        if ( mbInvalidateSIDAttrPageOnSIDAttrPageSizeNotify )
+        {
+            mpBindings->Invalidate( SID_ATTR_PAGE, sal_True, sal_False );
+        }
         if ( eState >= SFX_ITEM_AVAILABLE &&
              pState && pState->ISA(SvxSizeItem) )
         {
