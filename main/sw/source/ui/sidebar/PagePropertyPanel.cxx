@@ -358,7 +358,6 @@ void PagePropertyPanel::ExecuteOrientationChange( const sal_Bool bLandscape )
 void PagePropertyPanel::ClosePageOrientationPopup()
 {
     mpOrientationPopup->Hide();
-    mpOrientationPopup.reset( 0 );
 }
 
 
@@ -421,7 +420,6 @@ IMPL_LINK( PagePropertyPanel, ClickMarginHdl, ToolBox*, pToolBox )
 void PagePropertyPanel::ClosePageMarginPopup()
 {
     mpMarginPopup->Hide();
-    mpMarginPopup.reset( 0 );
 }
 
 
@@ -467,7 +465,6 @@ IMPL_LINK( PagePropertyPanel, ClickSizeHdl, ToolBox*, pToolBox )
 void PagePropertyPanel::ClosePageSizePopup()
 {
     mpSizePopup->Hide();
-    mpSizePopup.reset( 0 );
 }
 
 
@@ -506,7 +503,6 @@ IMPL_LINK( PagePropertyPanel, ClickColumnHdl, ToolBox*, pToolBox )
 void PagePropertyPanel::ClosePageColumnPopup()
 {
     mpColumnPopup->Hide();
-    mpColumnPopup.reset( 0 );
 }
 
 
